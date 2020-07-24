@@ -16,7 +16,7 @@ Having two-factor authentication activated helps to protect your Hosted Private 
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) with the [**advanced security** option](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/sddc/), (included in PCI-DSS and HDS offers)
+- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/) with the [**advanced security** option](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/safety-compliance/sddc/), (included in PCI-DSS and HDS offers)
 - a mobile device (smartphone) and authentication application (e.g. Google Authenticator, Authy, OTP Auth, etc.)
 
 ## Instructions
