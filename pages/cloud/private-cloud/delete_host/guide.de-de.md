@@ -42,7 +42,7 @@ Sie können den Fortschritt der Aktivierung des Wartungsmodus im Bereich `Recent
 
 ### Host-Server löschen
 
-Der Host-Server befindet sich jetzt im Wartungsmodus. Klicken Sie nun mit der rechten Maustaste auf den Server und wählen Sie `OVHcloud`{.action} und dann `Remove Host`{.action} aus.
+Der Host-Server befindet sich jetzt im Wartungsmodus. Klicken Sie nun mit der rechten Maustaste auf den Server und wählen Sie `OVHcloud`{.action} und dann `Remove this host`{.action} aus.
 
 ![Host-Server entfernen](images/removehost04.png){.thumbnail}
 
