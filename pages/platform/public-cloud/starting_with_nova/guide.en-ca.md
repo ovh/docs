@@ -20,8 +20,8 @@ For example, you can start creating an additional instance when your monitoring 
 
 Please refer to the following guides:
 
-[Preparing an environment for using the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/){.external}
-[Setting OpenStack environment variables](../set-openstack-environment-variables/){.external}
+- [Preparing an environment for using the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/){.external}
+- [Setting OpenStack environment variables](../set-openstack-environment-variables/){.external}
 
 ## Nova Documentation
 

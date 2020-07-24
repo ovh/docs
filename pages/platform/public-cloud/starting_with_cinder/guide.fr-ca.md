@@ -74,15 +74,15 @@ Optional arguments:
 ### Creation d'un volume haute performance
 - Lister les types de volumes : 
 
-```
+```sh
 admin@serveur-1:~$ cinder type-list
-+--------------------------------------+------------+
++--------------------------------------+------------+ 
 |                  ID                  |    Name    |
 +--------------------------------------+------------+
 | 07673884-d6f0-49b0-8bfb-1cec1b6f3905 | high-speed |
 | 28b78be3-5e7b-480a-b20d-3c0d3e144c70 |  classic   | 
 +--------------------------------------+------------+
-
+```
 - Créer le volume de type high-speed de 10GB nommé volume1 :
 
 ```bash
