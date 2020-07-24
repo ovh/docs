@@ -16,7 +16,7 @@ La Fonction **DRS** (Distributed Ressource Scheduler) est disponible dans un clu
 
 ## Prérequis
 
-- Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external}.
 - Être connecté à votre [interface vSphere](../connexion-interface-vsphere/).
 
 ## En pratique
