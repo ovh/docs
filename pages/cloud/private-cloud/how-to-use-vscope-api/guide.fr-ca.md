@@ -6,7 +6,7 @@ section: 'Services et options OVH'
 order: 1
 ---
 
-**Dernière mise à jour le 25/11/2019**
+**Dernière mise à jour le 24/07/2020**
 
 ## Objectif
 
@@ -20,7 +20,7 @@ Ces informations sont également disponibles via l'APIv6 et l'API Metrics.
 
 ## Prérequis
 
-- une [infrastructure Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
+- une [infrastructure Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/)
 - être connecté à l'interface de gestion vScope
 
 ## En pratique
