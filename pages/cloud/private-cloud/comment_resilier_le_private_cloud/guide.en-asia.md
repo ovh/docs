@@ -16,8 +16,8 @@ If your Private Cloud offer no longer suits you, or if you have ordered a new in
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/asia/enterprise/products/hosted-private-cloud/)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
@@ -30,7 +30,7 @@ The Private Cloud offer is without obligation. However, as laid out in the [Spec
 
 ### Step 1: Request termination from the OVHcloud Control Panel
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to `Server`{.action} (1), click on `Private Cloud`{.action} (2) and select your offer from the list (3).
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, go to `Server`{.action} (1), click on `Private Cloud`{.action} (2) and select your offer from the list (3).
 
 In the "Service management" section of the "General Information" tab, click the button `...`{.action} (4) to the right of the renewal date. Finally, click on `Delete the service`{.action} (5).
 
