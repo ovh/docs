@@ -15,7 +15,7 @@ Through the secure interface, you can validate sensitive operations (such as cha
 
 ## Requirements
 
-- an infrastructure with the [**advanced security** option](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/sddc/), which allows validation (this is included in the [PCI DSS plan](https://www.ovhcloud.com/en-gb/enterprise/solutions/certified-cloud-solutions/financial-data-hosting-pci-dss/) and the [healthcare solution](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/hds/))
+- an infrastructure with the [**advanced security** option](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/safety-compliance/sddc/), which allows validation (this is included in the [PCI DSS plan](https://www.ovhcloud.com/en-ie/enterprise/solutions/certified-cloud-solutions/financial-data-hosting-pci-dss/) and the [healthcare solution](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/safety-compliance/hds/))
 - access to the secure interface of the Private Cloud concerned, i.e. `https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/` (be careful not to forget the final "/" of the address)
 
 ## Instructions
