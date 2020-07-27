@@ -1,111 +1,110 @@
 ---
-title: Modify the hardware configuration of your virtual machine
-excerpt: ''
+title: Modifying virtual machine resources
 slug: modify_the_hardware_configuration_of_your_virtual_machine
-legacy_guide_number: g587
+excerpt: Find out how to scale your virtual machine
+section: Virtual machine management
+order: 3
 ---
 
+**Last updated 25th June 2020**
 
-## 
-In this guide we will highlight the settings that can be modified on a virtual machine ("edit settings" on VMware).
+## Objective
 
-You must first create a virtual machine using the following 
-guide:- []({legacy}607)
+Once you have created your virtual machine (VM), its resources are not permanently set. They can be reallocated to make your infrastructure more agile, with some restrictions.
 
-
-## 
-All the modifications described below must be performed from your private cloud using vSphere by right clicking on the virtual machine, then clicking "Edit Settings"
+**This guide will explain how to scale your virtual machine.**
 
 
-## Memory (RAM)
-The allocation of RAM may be modified at any time provided that the machine is off. (VMware Hot Add gives the functionality of performing this operation on a machine that is on a from a host L).
+## Requirements
 
-To do this, move the cursor on screen to your desired memory:
-
-![](images/img_53.jpg){.thumbnail}
-For instructions on Hot Add, visit 
-[here](#CONFIG_AND_ADVANCED_OPTIONS)
+- a virtual machine, created on a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+- a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager))
 
 
-## The processor (CPU)
-You can change the number of CPUs allocated to the virtual machine when the machine is off (you can do with when the machine is on from a Host L using the VMware Hot Add functionality)
+## Instructions
 
-![](images/img_54.jpg){.thumbnail}
-For instructions on Hot Add, visit 
-[here](#CONFIG_AND_ADVANCED_OPTIONS)
+All the modifications described below must be made from your Private Cloud on vSphere by right-clicking on a VM, then on `Edit Settings`{.action}.
 
+![Editing resources](images/hardware01.png){.thumbnail}
 
-## Graphics card
-You can change the following settings of the video card:
+In this menu, you can increase your virtual machine’s resources.
 
-- automatic detection;
-- manual resolution selection;
-- the number of MBs reserved for video RAM.
+![Editing resources](images/hardware02.png){.thumbnail}
+
+For more information on the option to add devices, please refer to the [section below](./#adding-a-device).
 
 
+### The processor (CPU)
 
-![](images/img_55.jpg){.thumbnail}
+The number of CPUs will be limited to the slots available on the host.
 
+If your virtual machine migrates to a host with fewer processors than those allocated to your machine, the "CPU ready" status of the VM will rise, which will result in performance loss.
 
-## Hard drive
-You can change the virtual disk space on your machine by changing the allocated space:
+![Add a CPU](images/hardware03.png){.thumbnail}
 
-![](images/img_56.jpg){.thumbnail}
-You can also select the type of drive (SATA or IDE) and the type of storage (persistent or non-persistent).
+You can also set a specific frequency (minimum and maximum) and choose the number of cores per socket.
 
-Persistent storage allows you to store data when rebooting a machine.
-With non-persistent storage, the data is not maintained: if the machine is rebooted, all the data is erased.
+If you tick the `Enable CPU Hot Add`{.action} box, you can modify these values while the virtual machine is running.
 
-With the "Add ..." button, you can add a second drive on the machine any time the VM is on or off.
+Depending on the operating system you are using, hot adding may not work, and could cause a malfunction on the host.
 
+You can assign a minimum number of *MHz* to your virtual machine.
 
-## CD / DVD reader
-It allows you to easily mount an image of your datastore:
-
-![](images/img_62.jpg){.thumbnail}
-
-## IMPORTANT! ! !
-It is necessary to check the "Connect at power on" so that the reader is detected and then your iso is powered.
+The limit, which is unlimited by default, allows you to restrict your virtual machine’s processor to a value in *MHz*. You can, for example, limit a developer virtual machine.
 
 
-## NIC
-This allows you to choose the type of card you want to configure on the virtual machine and the connection type (or VM Network LocalportGroup).
+### Memory (RAM)
 
-With the VM Network you can put a virtual machine on the public network (with a RIPE IP) or on a local network between the hosts.
+As with the CPU, the RAM capacity is limited to the host’s resources.
 
-The LocalPortGroup only allows communication via a private network, and is limited to the host (only a single VM host can communicate with each other).
+You can assign RAM so that your virtual machine always has a minimum amount of RAM reserved.
 
-You can use the following guide for the configuration:
-
-
-- []({legacy}582)
+![Add memory](images/hardware04.png){.thumbnail}
 
 
+### The hard disk
 
-![](images/img_63.jpg){.thumbnail}
+You can increase the hard disk size according to the space left in the datastore used by the virtual machine.
+
+![Add storage](images/hardware05.png){.thumbnail}
+
+We recommend that you use SCSI disk controllers rather than IDE ones, as you cannot, for example, perform backups via Veeam with IDE controllers.
+
+You can also select the disk mode:
+
+- `Dependent`: includes the disk during snapshots
+
+- `Independent - persistent`: allows you to store data when you reboot a machine, but this is not taken into account during a snapshot
+
+- `Independent - non-persistent`: is unique in that it does not save data: if you reboot the machine, all the data will be deleted.
 
 
-## General options
-This option lets you change the type of machine selected when creating the VM, or to simply change the name afterwards.
+### The network adapter
+
+You can modify your virtual machine’s network adapter, the connection to the adapter when starting up the virtual machine, and the adapter type. You can also verify the port ID and your MAC address.
+
+![Add network](images/hardware06.png){.thumbnail}
+
+This interface is useful in the event of a network malfunction. You can verify that the *port ID* corresponds to the ID listed in the `Networking`{.action} and `Ports`{.action} tabs for that adapter.
 
 
-## vApp Options
-This option allows you to precisely define the type of IP you want or the OVF settings of the virtual machine.
+### The CD/DVD drive
+
+A virtual CD/DVD drive allows you, for example, to mount ISO images on your virtual machine.
+
+![Add a CD/DVD reader](images/hardware07.png){.thumbnail}
+
+We recommend that you delete the CD/DVD drive after using it, as it could in fact prevent the virtual machine from being moved.
 
 
-## VMware Tools
-This section allows you to manage the actions, of the buttons used by VMware tools.
-The "Stop" button for example, can perform a shut down on the VM, or a power off.
+### Adding a device
 
+At the bottom of this window, you can add additional devices.
 
-## Advanced options
-Advanced options allow you to fine tune your machine. In this section you can enable or disable the addition of hot CPU and RAM, thanks to the "Memory/CPU Hotplug". However, this option requires having at least one host L or higher.
+You can add disks from another datastore, or network adapters, if you need to use several private networks.
 
-A second option is called the "Swapfile Location". By default, OVH configures this option to place the swap file to the virtual machine directly on the host. In the case were it is a Private Cloud, it's placed on the SSD. Using this configuration, you will have better  read / write performances.
+![Add devices](images/hardware08.png){.thumbnail}
 
-However, if for example you configure a virtual machine with 12GB of RAM, VMware will automatically place a 12GB swap file on the local storage of 30GB. The disk risks becoming full very quickly.
+## Go further
 
-Also note that if you use this option, you will no longer benefit from the protection that the Hot Add functionality provides.
-
-For this you can change the option so that the swap file is still linked to the vm and then placed on the NAS with the .vmx and .vmdk.
-
+Join our community of users on <https://community.ovh.com/en/>.

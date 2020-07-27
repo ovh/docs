@@ -1,23 +1,24 @@
 ---
-title: 'Se connecter en SFTP'
+title: Se connecter en SFTP
 slug: connexion-en-sftp
-excerpt: 'Apprenez à vous connecter à votre Cloud Privé en SFTP'
-section: 'Premiers pas'
+excerpt: Apprenez à vous connecter à votre Private Cloud en SFTP
+section: Premiers pas
+order: 3
 ---
 
-**Dernière mise à jour le 2018/11/14**
+**Dernière mise à jour le 25/06/2020**
 
 ## Objectif
 
 La connexion à vos datastores via SFTP (Secure File Transfert Protocol) vous permet d'ajouter des fichiers sauvegardés localement à votre infrastructure. Vous pouvez vous connecter à partir d'une interface graphique grâce à des logiciels tels que FileZilla, disponible sous Windows et Mac. Vous pouvez également vous connecter en ligne de commande depuis votre système d'exploitation Linux.
 
-Ce système vous permettra d'accéder uniquement au dossier « upload-vpn » de vos datastores. Les fichiers se trouvant hors de ce dossier ne seront pas accessibles par le biais de cette méthode.
+Ce système vous permettra d'accéder uniquement au dossier « upload-vpn » de vos datastores. Les fichiers se trouvant hors de ce dossier ne seront pas accessibles par le biais de cette méthode.
 
 **Ce guide vous explique comment vous connecter en SFTP via une interface graphique ou en ligne de commande.**
 
 ## Prérequis
 
-- Posséder un utilisateur actif créé depuis l’[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Posséder un utilisateur actif créé depuis l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 
@@ -64,23 +65,23 @@ sftp> pcc-000714
 Utilisez la commande `put` pour exporter des fichiers de votre datastore vers votre poste local.
 
 ```sh
-sftp> put /home/ubuntu-16.04.3-server-amd64.iso
-/datastore/pcc-000714/ubuntu-16.04.3-server-amd64.iso  
+sftp> put /home/ubuntu-18.04-server-amd64.iso
+/datastore/pcc-000714/ubuntu-18.04-server-amd64.iso  
 ```
 
 Utilisez la commande `get` pour importer des fichiers de votre poste local vers votre datastore.
 
 ```sh
-sftp> get /datastore/pcc-00714/ubuntu-16.04.3-server-amd64.iso /home/
+sftp> get /datastore/pcc-00714/ubuntu-18.04-server-amd64.iso /home/
 ```
 
 La commande `exit` vous permet de fermer la connexion.
 
 ### Aperçu depuis vSphere
 
-Dans votre interface vSphere, vous pourrez voir le contenu de ce que vous venez d’envoyer en parcourant votre datastore. Pour cela, cliquez sur le datastore souhaité dans le dossier « upload-vpn » :
+Dans votre interface vSphere, vous pourrez voir le contenu de ce que vous venez d’envoyer en parcourant votre datastore. Pour cela, cliquez sur le datastore souhaité dans le dossier « upload-vpn » :
 
-![Connexion SFTP via vSphere](images/connection_sftp_browse_datastore.png){.thumbnail}
+![Connexion SFTP via vSphere](images/sftpconnection.png){.thumbnail}
 
 ## Aller plus loin
 

@@ -1,50 +1,59 @@
 ---
 title: Logging in to the vSphere interface
 slug: login-vsphere-interface
-excerpt: Learn about the different ways you can log in to vSphere
-section: Getting started
+excerpt: Find out about the different ways you can log in to vSphere
+section: 'Getting started'
+order: 2
 ---
 
-**Last updated 1/02/2018**
+**Last updated 25th June 2020**
 
 ## Objective
 
-**This guide will show you the different ways to log in to vSphere.**
+**This guide explains the different ways to connect to the vSphere client.**
 
 ## Requirements
 
-- You must be an administrative contact of a Private Cloud that receives login credentials.
-- You must have created an active user account in the Control Panel.
+- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) of which you are an administrative contact (to receive login credentials)
+- a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager))
 
 
 ## Instructions
 
-### Recovering credentials
+### Retrieving credentials
 
-Login credentials are sent out by email when the Private Cloud is created, when a password is changed or when a user profile is created.
+Login credentials are sent out by email when the Private Cloud service is created, when a password is changed or when a user profile is created.
 
 ```
 Name/IP address: pcc-xxx-xxx-xxx-xxx.ovh.com Username: admin password: xxxxxx
 ```
 
-This VMware document lists the different ports that you must open on your firewall, to access the console, for example: [Access the console](https://kb.vmware.com/kb/1012382){.external}.
+To ensure access, please refer to the VMware documentation, in which the different ports to be opened in your firewall are listed: [Client access](https://kb.vmware.com/kb/1012382){.external}.
 
 
-### Using the thick vSphere client
+### Using the HTML5 web client
 
-First, download the vSphere client installation file. You will find the link in the user creation email.
+The HTML5 web client is available on the Private Cloud web interface at this URL: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/ui> (replace pcc-xxx-xxx-xxx-xxx.ovh.com with your Private Cloud address).
 
-The web client is available on the Private Cloud web interface at this URL: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> (replace *pcc-xxx-xx-xx-xxx.ovh.com* with your Private Cloud address).
+![Connecting to vSphere HTML5](images/connection_interface_w_html5.png){.thumbnail}
 
-Once you have downloaded the file, run it. The installation will begin. Initially, the installation wizard will prompt you to select the language you want to use, and accept the VMware terms of use.
+You will arrive at this interface:
 
-Once the installation is complete, the wizard will suggest connecting to the Private Cloud by entering the information you gave previously.
+![Connecting to vSphere HTML5](images/vsphere-client-html5.png){.thumbnail}
 
-![Connecting to the thick client](images/connexion_client_l.png){.thumbnail}
+The `Home`{.action} page provides accces to the main menus of your vCenter. You will be able to perform various actions, such as:
 
-### Using the web client
+- deploying a virtual machine by going to `Hosts and Clusters`{.action}
+- browsing your datastores.
 
-The web client is available on the Private Cloud web interface at this URL: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client>(replace pcc-xxx-xx-xx-xxx.ovh.com with your Private Cloud address).
+> [!warning]
+>
+> *NSX Edge* management is not yet available in the web client.
+>
+
+### Using the Flash web client
+
+The Flash web client is available on the Private Cloud web interface at this URL: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> (replace pcc-xxx-xxx-xxx-xxx.ovh.com with your Private Cloud address).
 
 Log in using the credentials that were sent to you:
 
@@ -57,8 +66,8 @@ You can then access this interface:
 On the `Home`{.action} page you can find your vCenter main menus. You will be able to perform a number of actions, such as:
 
 - deploying a virtual machine by going to `Hosts and Clusters`{.action}
-- using NSX by going to `Network & Security`{.action} (if you have this option)
-- browsing your data stores
+- if you have this option, using NSX by going to `Networking & Security`{.action}
+- browsing your data stores.
 
 
 ## Go further

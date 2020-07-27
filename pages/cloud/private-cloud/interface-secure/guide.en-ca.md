@@ -5,22 +5,22 @@ excerpt: 'Find out how to use the secure interface to confirm sensitive operatio
 section: 'OVH services and options'
 ---
 
-**Last updated 31st January 2019**
+**Last updated 29th June 2020**
 
 ## Objective
 
-Through the secure interface, you can validate sensitive operations (such as changing passwords, adding a user, etc.) performed by users or third-parties on your Private Cloud PCI-DSS.
+Through the secure interface, you can validate sensitive operations (such as changing passwords, adding a user, etc.) performed by users or third-parties on your Private Cloud Healthcare (HDS) or PCI DSS.
 
 **Find out how to use the secure interface to validate sensitive operations.**
 
 ## Requirements
 
-- an infrastructure with the **advanced security** option, which allows validation (this is included in the [PCI-DSS](https://www.ovh.co.uk/private-cloud/payment-infrastructure/){.external} plan)
-- access to the secure interface of the Private Cloud concerned, e.g.: `https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/` (be careful not to forget the final "/" of the address)
+- an infrastructure with the [**advanced security** option](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/sddc/), which allows validation (this is included in the [PCI DSS plan](https://www.ovhcloud.com/en-gb/enterprise/solutions/certified-cloud-solutions/financial-data-hosting-pci-dss/) and the [healthcare solution](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/hds/))
+- access to the secure interface of the Private Cloud concerned, i.e. `https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/` (be careful not to forget the final "/" of the address)
 
 ## Instructions
 
-The validation of "sensitive" operations from the secure interface is only possible for users with the **token validator** permission. The admin already has this privilege, since it is required to activate the **advanced security** option. Note that it is also possible to grant this permission to other users via the OVH Control Panel. Refer to our [Introduction to the OVH Private Cloud Control Panel](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/) documentation, if necessary.
+The validation of "sensitive" operations from the secure interface is only possible for users with the **token validator** permission. The admin already has this privilege, since it is required to activate the **advanced security** option. Note that it is also possible to grant this permission to other users via the OVHcloud Control Panel. Refer to our [Introduction to the OVHcloud Private Cloud Control Panel](../control-panel-ovh-private-cloud/) documentation, if necessary.
 
 From the secure interface, you can perform three operations. Please refer to the relevant section of this guide, depending on how you wish to proceed: 
 
@@ -43,13 +43,13 @@ Here is an example of an SMS that would be sent:
 
 ![First SMS](images/SMS1.png){.thumbnail}
 
-As you will see, this message contains: 
+This message contains: 
 
 - the user with the **token validator** permission who received the SMS. This can help you manage the tokens to be validated if you have entered your phone number in several user accounts.
 - the name of the operation that requires validation
 - the operation ID
 - validation token
-- a link to validate the operation (please note, if your phone is not connected to a network whose [IP is authorised](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/#security), the page will not appear).
+- a link to validate the operation (please note, if your phone is not connected to a network whose [IP is authorised](../control-panel-ovh-private-cloud/#security), the page will not appear).
 
 To validate the operation, log in via the link shown in the message. Then go to the `Operation Validation`{.action} section.
 
@@ -80,7 +80,7 @@ Any user can change their password, even without **token validator** permissions
 > If the user no longer has their password, they must ask another user with the **token validator** permission to make the change for them, via the [password reset](./#reset-a-password) procedure.
 > 
 
-To change a user's password, log in to the secure interface (for example: `https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/`) and click the `Change Password`{.action} button.
+To change a user's password, log in to the secure interface (`https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/`) and click the `Change Password`{.action} button.
 
 ![Change Password](images/changePassword.png){.thumbnail}
 
@@ -99,7 +99,7 @@ This procedure is only available to users with the **token validator** permissio
 > If a user who does not have the **token validator** permission loses their password, they will have to ask a user with this privilege to reset it.
 > 
 
-To reset a user's password, log in to the secure interface (for example: `https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/`) and click the `Password lost`{.action} button.
+To reset a user's password, log in to the secure interface (`https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/`) and click the `Password lost`{.action} button.
 
 ![Password Lost](images/passwordLost.png){.thumbnail}
 

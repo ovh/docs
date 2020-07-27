@@ -3,9 +3,10 @@ title: Se connecter à l’interface vSphere
 slug: connexion-interface-vsphere
 excerpt: Découvrez les différentes façons de se connecter à vSphere
 section: Premiers pas
+order: 2
 ---
 
-**Dernière mise à jour le 2018/01/25**
+**Dernière mise à jour le 25/06/2020**
 
 ## Objectif
 
@@ -13,8 +14,8 @@ section: Premiers pas
 
 ## Prérequis
 
-- Être contact administrateur du Cloud Privé, celui-ci recevant les identifiants de connexion.
-- Avoir un utilisateur actif créé depuis l'espace client.
+- Être contact administrateur du Private Cloud, celui-ci recevant les identifiants de connexion.
+- Avoir créé un utilisateur actif dans l'espace client.
 
 
 ## En pratique
@@ -29,22 +30,29 @@ adresse IP/Nom : pcc-xxx-xxx-xxx-xxx.ovh.com nom d’utilisateur : admin mot de 
 
 Ce document de VMware répertorie les différents ports que vous devez ouvrir sur votre pare-feu pour, par exemple, accéder à la console : [Accès console](https://kb.vmware.com/kb/1012382){.external-link}
 
+### Utilisation du web client HTML5
 
-### Utilisation du vSphere client lourd
+Le web client HTML5 est disponible sur l’interface web de votre Private Cloud à l’adresse : <https://pcc-xxx-xxx-xxx-xxx.ovh.com/ui> (remplacez pcc-xxx-xx-xx-xxx.ovh.com par l’adresse de votre Private Cloud).
 
-Téléchargez d'abord le fichier d’installation du vSphere client. Le lien figure dans le courriel de création d’un utilisateur.
+![Connexion à l'interface vSphere HTML5](images/connection_interface_w_html5.png){.thumbnail}
 
-Vous pouvez également l'obtenir à l'adresse : <https://pcc-xxx-xxx-xxx-xxx.ovh.com/client/VMware-viclient.exe>.
+Vous accéderez ensuite à cette interface :
 
-Une fois le fichier téléchargé, exécutez-le. L’installation démarre. Dans un premier temps, l’assistant vous demande de sélectionner votre langue puis d’accepter les conditions d’utilisation de VMware.
+![Connexion à l'interface vSphere HTML5](images/vsphere-client-html5.png){.thumbnail}
 
-Lorsque l’installation est terminée, l’assistant vous propose de vous connecter à votre Cloud Privé en saisissant les informations précédemment reçues.
+La page `Home`{.action} permet de retrouver les grands menus de votre vCenter. Vous allez pouvoir effectuer différentes actions, telles que :
 
-![Connexion au client lourd](images/connexion_client_l.png){.thumbnail}
+- Déployer une machine virtuelle en allant dans `Hosts and Clusters`{.action} ;
+- Parcourir vos datastores.
 
-### Utilisation du web client
+> [!warning]
+>
+> La gestion des appliances *NSX Edge* n'est pas encore possible dans ce client web.
+>
 
-Le web client est disponible sur l’interface web de votre Private Cloud à l’adresse : <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> (remplacez pcc-xxx-xx-xx-xxx.ovh.com par l’adresse de votre Cloud Privé).
+### Utilisation du web client flash
+
+Le web client flash est disponible sur l’interface web de votre Private Cloud à l’adresse : <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> (remplacez pcc-xxx-xx-xx-xxx.ovh.com par l’adresse de votre Private Cloud).
 
 Connectez-vous avec les identifiants qui vous ont été transmis :
 
@@ -56,9 +64,9 @@ Vous accéderez ensuite à cette interface :
 
 La page `Home`{.action} permet de retrouver les grands menus de votre vCenter. Vous allez pouvoir effectuer différentes actions, telles que :
 
-- déployer une machine virtuelle en allant dans `Hosts and Clusters`{.action} ;
-- si vous bénéficiez de cette option, [utiliser NSX](https://docs.ovh.com/fr/private-cloud/getting-started-with-nsx/){.external} en allant dans `Network & Security`{.action} ;
-- parcourir vos datastores.
+- Déployer une machine virtuelle en allant dans `Hosts and Clusters`{.action} ;
+- Si vous bénéficiez de cette option, utiliser NSX en allant dans `Network & Security`{.action} ;
+- Parcourir vos datastores.
 
 
 ## Aller plus loin
