@@ -80,5 +80,5 @@ Usted deberá abonar cualquier saldo pendiente en los 7 días siguientes a parti
 
 ## ¿Su pregunta no aparece entre las preguntas frecuentes?
 
-Contáctenos por correo electrónico <https://www.ovh.com/us/es/soporte/contacto/>`__, o por teléfono al 1-855-684-5463 (sin costo). Nuestro equipo está a su disposición 24x7. 
+Contáctenos por correo electrónico <https://www.ovh.com/world/es/soporte/contacto/>`__, o por teléfono al 1-855-684-5463 (sin costo). Nuestro equipo está a su disposición 24x7. 
 

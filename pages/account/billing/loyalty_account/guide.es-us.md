@@ -4,6 +4,7 @@ excerpt: Aprenda a utilizar la cuenta de fidelidad de OVH
 slug: cuenta_de_fidelidad
 legacy_guide_number: g1875
 section: Primeros pasos
+hidden: true
 ---
 
 

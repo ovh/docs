@@ -11,12 +11,12 @@ section: 'Pedidos, facturas y servicios'
 En el área de cliente de OVHcloud, puede registrar y gestionar diferentes formas de pago.
 
 ## Requisitos
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 - Disponer de un medio de pago válido.
 
 ## Procedimiento
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha y, seguidamente, seleccione `Forma de pago`{.action}.
+Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha y, seguidamente, seleccione `Forma de pago`{.action}.
 
 ![manage-payment-methods](images/hubpayment.png){.thumbnail}
 
@@ -77,7 +77,7 @@ La forma de pago por defecto no puede eliminarse. Si quiere eliminarla, debe est
 
 ### Eliminar una forma de pago a través de las API OVHcloud
 
-La eliminación de una forma de pago puede realizarse a través de las API conectándose a [https://eu.api.ovh.com/](https://eu.api.ovh.com/){.external}.
+La eliminación de una forma de pago puede realizarse a través de las API conectándose a [https://ca.api.ovh.com/](https://ca.api.ovh.com/){.external}.
 
 En primer lugar, debe obtener el id. de la forma de pago: 
 
