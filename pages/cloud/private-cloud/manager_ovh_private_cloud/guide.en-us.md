@@ -16,7 +16,7 @@ The OVHcloud Hosted Private Cloud Control Panel enables you to easily manage the
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/)
+- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
 
@@ -182,7 +182,7 @@ This tab allows you to activate Windows SPLA licences for your data centre by cl
 
 ![Windows SPLA Licence](images/controlpanel10.png){.thumbnail}
 
-You can find more information on the [pricing page](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/images-licenses/).
+You can find more information on the [pricing page](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/images-licenses/).
 
 
 ### Data centre view 
