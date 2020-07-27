@@ -1,6 +1,6 @@
 ---
 title: 'Starting with Glace API'
-excerpt: 'Find out how to use Glance and the OpenStack API
+excerpt: 'Find out how to use Glance and the OpenStack API'
 slug: starting-with-glance
 section: Openstack
 order: 5
