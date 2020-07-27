@@ -7,7 +7,7 @@ section: NAS
 
 
 ## Requirements
-The Network Attached Storage (NAS) is a file server connected to a network whose main function is the sotcking of data in a centralized volume for heterogeneous network clients.
+The Network Attached Storage (NAS) is a file server connected to a network whose main function is the stocking of data in a centralized volume for heterogeneous network clients.
 
 To order and configure a NAS-HA, you must:
 
