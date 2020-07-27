@@ -6,7 +6,7 @@ legacy_guide_number: '1442308'
 section: 'Funkcjonalności OVH'
 ---
 
-**Ostatnia aktualizacja z dnia 10-12-2018**
+**Ostatnia aktualizacja z dnia 24-07-2020**
 
 ## Wprowadzenie
 
@@ -16,7 +16,7 @@ W niektórych przypadkach może zaistnieć potrzeba usunięcia serwera hosta z T
 
 ## Wymagania początkowe
 
-* Posiadanie oferty [Private Cloud](https://www.ovh.pl/private-cloud/){.external}
+* Posiadanie oferty [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}
 * Dostęp do interfejsu zarządzania vSphere
 
 
@@ -28,35 +28,35 @@ Usunięcie hosta składa się z dwóch etapów: przełączenie serwera w tryb ko
 
 Po zalogowaniu się do klienta vSphere przejdź do listy Twoich serwerów hostów i klastrów. Wybierz odpowiedni host, klikając prawym przyciskiem myszy, następnie wybierz `Maintenance Mode`{.action} i `Enter Maintenance Mode`{.action}. Jeśli wirtualne maszyny działają na tym serwerze, zostaną automatycznie zarejestrowane na innym serwerze hosta w Twoim klastrze (przy włączonych trybach HA i DRS).
 
-![Włączenie trybu konserwacja](images/hostmaintenancemode.png){.thumbnail}
+![Włączenie trybu konserwacja](images/removehost01.png){.thumbnail}
 
 Włączenie trybu konserwacji wymaga dodatkowego potwierdzenia. Zapoznaj się z komunikatem i potwierdź operację.
 
-![Potwierdzenie trybu konserwacji](images/confirmmaintenanceMode.png){.thumbnail}
+![Potwierdzenie trybu konserwacji](images/removehost02.png){.thumbnail}
 
 
 Możesz monitorować postęp uruchamiania trybu konserwacji w sekcji `Recent Tasks`.
 
-![Monitoring trybu konserwacji](images/taskmaintenancemode.png){.thumbnail}
+![Monitoring trybu konserwacji](images/removehost03.png){.thumbnail}
 
 
 ### Usunięcie serwera hosta
 
-Serwer hosta znajduje się teraz w trybie konserwacji. Kliknij prawym przyciskiem myszy, po czym wybierz `OVH Private Cloud`{.action}, a następnie `Remove OVH Host`{.action}
+Serwer hosta znajduje się teraz w trybie konserwacji. Kliknij prawym przyciskiem myszy, po czym wybierz `OVHcloud`{.action}, a następnie `Remove this host`{.action}
 
-![Usuń serwer hosta](images/removeovhhost_01.png){.thumbnail}
+![Usuń serwer hosta](images/removehost04.png){.thumbnail}
 
 W oknie, które się pojawi potwierdź usunięcie za pomocą przycisku `Next`{.action}.
 
-![Potwierdzenie usunięcia hosta](images/removeovhhost_02.png){.thumbnail}
+![Potwierdzenie usunięcia hosta](images/removehost05.png){.thumbnail}
 
 Żądanie usunięcia hosta jest w tym momencie przetwarzane.
 
-![Potwierdzenie usunięcia hosta](images/removeovhhost_03.png){.thumbnail}
+![Potwierdzenie usunięcia hosta](images/removehost06.png){.thumbnail}
 
 Możesz monitorować postęp usuwania serwera hosta w sekcji `Recent Tasks`.
 
-![Zadanie monitorowania usunięcia hosta](images/taskremovehost.png){.thumbnail}
+![Zadanie monitorowania usunięcia hosta](images/removehost07.png){.thumbnail}
 
 W ciągu kilku minut serwer hosta zostanie usunięty i nie będzie już widoczny. 
 

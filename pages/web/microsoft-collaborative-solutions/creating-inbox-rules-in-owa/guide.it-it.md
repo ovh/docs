@@ -2,7 +2,8 @@
 title: 'Creare regole di posta in arrivo in Outlook Web App (OWA)'
 slug: creare-regole-posta-in-arrivo-in-owa
 excerpt: 'Come impostare l’inoltro delle email e creare filtri in OWA'
-section: '“Outlook Web Access”'
+section: 'Outlook Web Application (OWA)'
+order: 1
 ---
 
 **Ultimo aggiornamento 11/03/2020**
@@ -17,7 +18,7 @@ Tramite l’opzione “Regole Posta in arrivo” è possibile creare una serie d
 
 ## Prerequisiti
 
-- Disporre di una soluzione di posta elettronica OVHcloud attiva (**MX Plan**, disponibile nell'ambito delle nostre offerte di [hosting Web](https://www.ovh.it/hosting-web), inclusa in un [hosting gratuito Start10M](https://www.ovh.it/domini/offerta_hosting_start10m.xml) oppure ordinata separatamente con una soluzione indipendente; [Hosted Exchange**](https://www.ovh.it/emails/hosted-exchange/)o ancora [Email Pro**](https://www.ovh.it/emails/email-pro))
+- Disporre di una soluzione di posta elettronica OVHcloud attiva (**MX Plan**, disponibile nell'ambito delle nostre offerte di [hosting Web](https://www.ovh.it/hosting-web), inclusa in un [hosting gratuito Start10M](https://www.ovh.it/domini/offerta_hosting_start10m.xml) oppure ordinata separatamente con una soluzione indipendente; [**Hosted Exchange**](https://www.ovh.it/emails/hosted-exchange/)o ancora [**Email Pro**](https://www.ovh.it/emails/email-pro))
 - Disporre delle credenziali di accesso dell’indirizzo email da configurare
 
 
@@ -102,7 +103,7 @@ Ricordati che non è possibile segnalare i falsi positivi direttamente da Outloo
 
 ## Per saperne di più 
 
-[ Exchange 2016: imposta una risposta automatica con OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_imposta_una_risposta_automatica_con_owa)
+[Exchange 2016: imposta una risposta automatica con OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_imposta_una_risposta_automatica_con_owa)
 
 [Condividi un calendario con la Webmail OWA](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_2016_condividi_un_calendario_con_la_webmail_owa//)
 

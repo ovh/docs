@@ -6,7 +6,7 @@ legacy_guide_number: '7766789'
 section: 'Funcionalidades da OVH'
 ---
 
-**Última atualização: 27/11/2018**
+**Última atualização: 24/07/2020**
 
 ## Sumário
 
@@ -17,7 +17,7 @@ Existem casos em que pode ser útil eliminar um datastore do cluster, por exempl
 
 ## Requisitos
 
-* Dispor do serviço [Private Cloud](https://www.ovh.com/pt/private-cloud/){.external}.
+* Dispor do serviço [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}.
 * Aceder à interface de gestão vSphere.
 
 
@@ -29,22 +29,22 @@ Existem casos em que pode ser útil eliminar um datastore do cluster, por exempl
 > 
 
 
-Para eliminar um datastore, aceda ao armazenamento da sua plataforma na janela `Storage`{.action} da coluna à esquerda. Depois, clique com o botão direito sobre o datastore correspondente e selecione `OVH Private Cloud`{.action} e, a seguir, `Remove storage`{.action}.
+Para eliminar um datastore, aceda ao armazenamento da sua plataforma na janela `Storage`{.action} da coluna à esquerda. Depois, clique com o botão direito sobre o datastore correspondente e selecione `OVHcloud`{.action} e, a seguir, `Remove storage`{.action}.
 
-![Seleção do datastore](images/removestorage_01.png){.thumbnail}
+![Seleção do datastore](images/removedatastore01.png){.thumbnail}
 
 Na nova janela que irá aparecer, confirme que pretende eliminar o datastore clicando em `Next`{.action}.
 
-![Confirmação da eliminação](images/removestorage_02.png){.thumbnail}
+![Confirmação da eliminação](images/removedatastore02.png){.thumbnail}
 
 O pedido de eliminação é imediatamente processado.
 
-![Eliminação validada](images/removestorage_03.png){.thumbnail}
+![Eliminação validada](images/removedatastore03.png){.thumbnail}
 
 
 É possível seguir o progresso da operação através da secção `Recent Tasks`{.action}.
 
-![Progresso da operação de eliminação](images/removedatastore.png){.thumbnail}
+![Progresso da operação de eliminação](images/removedatastore04.png){.thumbnail}
 
 
 ## Quer saber mais?

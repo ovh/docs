@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak usunąć przestrzeń datastore z Twojej infrastruktu
 section: 'Funkcjonalności OVH'
 ---
 
-**Ostatnia aktualizacja z dnia 06-12-2018**
+**Ostatnia aktualizacja z dnia 24-07-2020**
 
 ## Wprowadzenie
 
@@ -16,7 +16,7 @@ W niektórych przypadkach może zaistnieć potrzeba usunięcia datastore z Twoje
 
 ## Wymagania początkowe
 
-* Posiadanie oferty [Private Cloud](https://www.ovh.pl/private-cloud/){.external}
+* Posiadanie oferty [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}
 * Dostęp do interfejsu zarządzania vSphere
 
 
@@ -28,22 +28,22 @@ W niektórych przypadkach może zaistnieć potrzeba usunięcia datastore z Twoje
 > 
 
 
-Aby usunąć datastore, najpierw kliknij prawym przyciskiem myszy na wybrany zasób. Wybierz `OVH Private Cloud`{.action}, następnie `Remove storage`{.action}.
+Aby usunąć datastore, najpierw kliknij prawym przyciskiem myszy na wybrany zasób. Wybierz `OVHcloud`{.action}, następnie `Remove storage`{.action}.
 
-![Wybór datastore](images/removestorage_01.png){.thumbnail}
+![Wybór datastore](images/removedatastore01.png){.thumbnail}
 
 Otworzy się okno służące do potwierdzenia usunięcia datastora. Kliknij `Next`{.action}.
 
-![Potwierdzenie usunięcia datastore](images/removestorage_02.png){.thumbnail}
+![Potwierdzenie usunięcia datastore](images/removedatastore02.png){.thumbnail}
 
 Żądanie usunięcia przestrzeni datastore jest w tym momencie przetwarzane.
 
-![Usunięcie datastore potwierdzone](images/removestorage_03.png){.thumbnail}
+![Usunięcie datastore potwierdzone](images/removedatastore03.png){.thumbnail}
 
 
 Możesz monitorować postęp usuwania datastora w sekcji Ostatnie zadania.
 
-![Zadanie monitorowania usunięcia datastore](images/removedatastore.png){.thumbnail}
+![Zadanie monitorowania usunięcia datastore](images/removedatastore04.png){.thumbnail}
 
 
 ## Sprawdź również

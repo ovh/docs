@@ -6,7 +6,7 @@ section: vRack
 order: 2
 ---
 
-**Last updated 20th July 2020**
+**Last updated 27th July 2020**
 
 ## Objective
 
@@ -326,7 +326,7 @@ Once logged in to the [OVHcloud APIv6 interface](https://api.ovh.com/), follow t
 > @api {GET} /cloud/project
 >
 
-###### Retrieving the networkID of the public network (EXT-NET)
+###### Retrieving the networkID of the public network (Ext-Net)
 
 > [!api]
 >
@@ -361,7 +361,7 @@ Once logged in to the [OVHcloud APIv6 interface](https://api.ovh.com/), follow t
 >
 
 > [!primary]
-> Vous pouvez limiter la liste en indiquant la zone de création de votre instance
+> You can limit the list by specifying the creation region of your instance.
 
 ###### Retrieving your OpenStack SSH key ID (sshKeyId)
 
@@ -394,7 +394,7 @@ You will need to fill in at least the following fields:
 |flavorId|ID of the instance type (example: S1-2, B2-7, WIN-R2-15...)|
 |imageId|ID of the image for the deployment (example: Debian 9, Centos 7...)|
 |name|name for your instance.|
-|networks|In the "networkId" section, indicate the public network identifier (Ext-net) or your VLAN (pn-xxxxxx_yy). You can click the "+" button to add more networks.|
+|networks|In the "networkId" section, indicate the public network identifier (Ext-Net) or your VLAN (pn-xxxxxx_yy). You can click the "+" button to add more networks.|
 |region|Region for your instance deployment (example: GRA5)|
 |sshKeyId|ID of your OpenStack SSH key|
 
@@ -405,8 +405,8 @@ Once the call is complete, if all information is correctly filled in, the instan
 > Depending on operating systems, you will need to manually configure your private network interfaces to be considered.
 ><br>Because OpenStack is unable to prioritise the public interface of the vRack interface, the vRack interface may sometimes pass as the default route.
 ><br>The direct consequence is that the instance is unreachable from a public IP.
-><br>One or more reboots of the instance from the client space can resolve this situation.
-><br>The other solution is to connect to the instance via from another of your servers in the same private network. You can also correct the network configuration of the instance through Rescue mode.
+><br>One or more reboots of the instance from the Control Panel can resolve this situation.
+><br>The other solution is to connect to the instance via another server in the same private network. You can also correct the network configuration of the instance through Rescue mode.
 >
 
 #### In case of an existing instance
@@ -440,7 +440,7 @@ For example, if you have a public interface *eth0*, you will add the interface *
 > @api {GET} /cloud/project/{serviceName}/instance
 >
 
-###### Retrieving the networkID of the public network (EXT-NET)
+###### Retrieving the networkID of the public network (Ext-Net)
 
 > [!api]
 >
@@ -472,13 +472,13 @@ You will need to fill in at least the following fields:
 |---|---| 
 |serviceName|ID of the Public Cloud project|
 |instanceId|ID of the instance|
-|networkId|Enter the public network identifier (Ext-net) or your VLAN (pn-xxxxxx_yy)|
+|networkId|Enter the public network identifier (Ext-Net) or your VLAN (pn-xxxxxx_yy)|
 |ip|Define a specific IP (only works for private interfaces)|
 
 Once the call is complete, if all information is correctly filled in, a new interface will be added to your instance.
 
 > [!primary]
-> Your OVHcloud instance will have a new network interface in addition to the public interface (Ext-net).
+> Your OVHcloud instance will have a new network interface in addition to the public interface (Ext-Net).
 ><br>In the instance summary, you can see the private IP address that is automatically assigned to your interface.
 ><br>It is your responsibility to correctly configure the interface through DHCP or by using the proper IP addresses through a static IP configuration.
 >
@@ -505,7 +505,7 @@ You will need to fill in at least the following fields:
 |---|---| 
 |serviceName|ID of the Public Cloud project|
 |instanceId|ID of the instance|
-|networkId|Enter the public network identifier (Ext-net) or your VLAN (pn-xxxxxx_yy)|
+|networkId|Enter the public network identifier (Ext-Net) or your VLAN (pn-xxxxxx_yy)|
 
 
 ## Go further

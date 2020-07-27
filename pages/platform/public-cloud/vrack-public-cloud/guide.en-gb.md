@@ -6,7 +6,7 @@ section: vRack
 order: 1
 ---
 
-**Last updated 20th July 2020**
+**Last updated 27th July 2020**
 
 ## Objective
 
@@ -212,9 +212,9 @@ openstack network list
 +--------------------------------------+------------+-------------------------------------+
 | ID                                   | Name       | Subnets                             |
 +--------------------------------------+------------+-------------------------------------+
-| 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | MonVLAN-42 | xxxxxxxx-yyyy-xxxx-yyyy-xxxxxxxxxxxx|
+| 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | MyVLAN-42 | xxxxxxxx-yyyy-xxxx-yyyy-xxxxxxxxxxxx|
 | 34567890-12ab-cdef-xxxx-xxxxxxxxxxxx | Ext-Net    | zzzzzzzz-yyyy-xxxx-yyyy-xxxxxxxxxxxx|
-| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MonVlan_0  | yyyyyyyy-xxxx-xxxx-yyyy-xxxxxxxxxxxx|
+| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN_0  | yyyyyyyy-xxxx-xxxx-yyyy-xxxxxxxxxxxx|
 +--------------------------------------+------------+-------------------------------------+
 ```
 
@@ -226,9 +226,9 @@ nova net-list
 +--------------------------------------+------------+------+
 | ID                                   | Label      | CIDR |
 +--------------------------------------+------------+------+
-| 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | MonVLAN-42 | None |
+| 12345678-90ab-cdef-xxxx-xxxxxxxxxxxx | MyVLAN-42 | None |
 | 34567890-12ab-cdef-xxxx-xxxxxxxxxxxx | Ext-Net    | None |
-| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MonVlan_0  | None |
+| 67890123-4abc-ef12-xxxx-xxxxxxxxxxxx | MyVLAN_0  | None |
 +--------------------------------------+------------+------+
 ```
 
