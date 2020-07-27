@@ -16,7 +16,7 @@ If your Private Cloud offer no longer suits you, or if you have ordered a new in
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
@@ -50,7 +50,7 @@ You will then receive a confirmation notice of your request. The procedure for c
 
 Following your request, a termination confirmation email is sent to you at the address linked to the OVHcloud account.
 
-You can also find this email in your OVHcloud client space. Click on your name at the top right and then on `Service emails`{.action}.
+You can also find this email in your OVHcloud Control Panel. Click on your name at the top right and then on `Service emails`{.action}.
 
 ![Cancellation validation](images/resiliation4.png){.thumbnail}
 
