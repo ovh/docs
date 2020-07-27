@@ -16,8 +16,8 @@ Si votre offre Private Cloud ne vous convient plus, ou que vous avez commandé u
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Server`{.action} puis `Private Cloud`{.action}.
-- Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} dans la partie `Server`{.action} puis `Private Cloud`{.action}.
+- Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external}.
 
 
 ## En pratique
@@ -31,7 +31,7 @@ L'offre Private Cloud est sans engagement. Cependant, comme indiqué dans les [C
 
 ### Étape 1 : demander la résiliation depuis l'espace client OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, accédez à la section `Server`{.action} (1), cliquez sur `Private Cloud`{.action} (2) et sélectionnez votre offre dans la liste (3).
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, accédez à la section `Server`{.action} (1), cliquez sur `Private Cloud`{.action} (2) et sélectionnez votre offre dans la liste (3).
 
 Dans le tableau « Gestion du service » de l'onglet « Informations Générales », cliquez sur le bouton `...`{.action} (4) à droite de la date de renouvellement. Cliquez enfin sur `Supprimer le service`{.action} (5).
 
