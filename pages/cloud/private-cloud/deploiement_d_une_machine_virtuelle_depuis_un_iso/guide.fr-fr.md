@@ -4,6 +4,7 @@ slug: deploiement-d-une-machine-virtuelle-depuis-un-iso
 legacy_guide_number: '7766994'
 section: Gestion des machines virtuelles
 order: 01
+hidden: true
 ---
 
 **Dernière mise à jour le 14/02/2019**
