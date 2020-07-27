@@ -166,6 +166,4 @@ Now that everything is ready, all that remains is to use docker as usual, swarm 
 
 ## Go further
 
-Join our community of users on https://community.ovh.com/en/
-
 Join our community of users on <https://community.ovh.com/en/>.
