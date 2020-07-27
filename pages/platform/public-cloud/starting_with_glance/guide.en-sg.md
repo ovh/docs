@@ -69,7 +69,7 @@ Optional arguments:
 admin@server-1:~$ glance image-create --name Gentoo --disk-format qcow2 --container-formate bare --file gentoo.qcow2
 ```
 
-List avaailable images:
+List available images:
 
 ```sh
 admin@server-1:~$ glance image-list
