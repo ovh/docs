@@ -17,13 +17,13 @@ hidden: true
 
 ## Prérequis
 
-* Avoir accès à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
 ### Créer un projet
 
-Connectez-vous à votre [Espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Une fois connecté, cliquez sur le menu `Cloud`{.action}.
+Connectez-vous à votre [Espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Une fois connecté, cliquez sur le menu `Cloud`{.action}.
 
 ![menu cloud](images/menu.png){.thumbnail}
 
@@ -31,13 +31,13 @@ Ensuite, cliquez sur le bouton `Commander`{.action}.
 
 ![bouton commander](images/order-button.png){.thumbnail}
 
-Sous le menu 'Commander', cliquez sur Projet cloud.
+Sous le menu 'Commander', cliquez sur `Projet cloud`.
 
-![commander projet cloud](images/order-cloud-project.png){.thumbnail}
+![commander projet cloud](images/order-cloud-project_2020.png){.thumbnail}
 
 Vous devez maintenant donner un nom au projet et choisir un moyen de paiement.
 
-![détails du projet](images/project-details.png){.thumbnail}
+![détails du projet](images/project-details_2020.png){.thumbnail}
 
 ### Choisir un moyen de paiement
 
@@ -49,46 +49,39 @@ C’est la méthode la plus simple. Quand vous enregistrez une carte bancaire, v
 
 * une carte de débit/crédit
 * un compte de Paypal
-* un compte bancaire
+
 
 > [!primary]
 >
-S’il s’agit de votre premier paiement avec OVH, nous n’accepterons que des cartes de crédit 3-D Secure.
+S’il s’agit de votre premier paiement avec OVHcloud, nous n’accepterons que des cartes de crédit 3-D Secure.
 >
 
-Sélectionnez votre moyen de paiement désiré parmi ceux de la liste et cliquez sur le bouton `Ajouter`{.action}.
+Sélectionnez votre moyen de paiement désiré parmi ceux de la liste et cliquez sur le bouton `Créer mon project`{.action}.
 
-![Enregistrer une carte bancaire](images/register-bank-card-01.png){.thumbnail}
+![Enregistrer une carte bancaire](images/register-bank-card-01_2020.png){.thumbnail}
 
 Une fois que vous avez cliqué sur le bouton `Ajouter`{.action}, vous serez invité à terminer la configuration de votre moyen de paiement, comme indiqué ci-dessous.
 
-![Enregistrer une carte bancaire](images/register-bank-card-02.png){.thumbnail}
 
 #### Acheter du crédit cloud
 
-Vous pouvez aussi payer pour votre [Public Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} avec du crédit cloud. Le paiement initial de crédit cloud sera de de 30€. Toutes les ressources que vous utiliserez après cela consommeront votre crédit. Lorsque votre crédit est épuisé, vous pouvez en acheter davantage en utilisant n’importe quel moyen de paiement accepté.
+Vous pouvez aussi payer pour votre [Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external} avec du crédit cloud. Le paiement initial de crédit cloud sera de de 30€. Toutes les ressources que vous utiliserez après cela consommeront votre crédit. Lorsque votre crédit est épuisé, vous pouvez en acheter davantage en utilisant n’importe quel moyen de paiement accepté.
 
 Le crédit cloud est non transférable ou remboursable. Il n'a aucune valeur monétaire et, s'il n'est pas utilisé dans les 13 mois, il sera perdu.
-
-![crédit cloud](images/img_4658.jpg){.thumbnail}
 
 #### Utiliser un bon de paiement
 
 Si vous avez un code promotionnel, vous pouvez l'ajouter au cours de cette étape pour payer vos ressources. La durée du bon peut varier.
 
-![bon](images/img_4661.jpg){.thumbnail}
+![bon](images/voucher_2020.png){.thumbnail}
  
 Une fois votre projet créé, il sera disponible dans le menu de gauche.
 
 ### Ajouter une instance ou du stockage
 
-Pour ajouter des ressources à votre nouveau projet, cliquez sur le bouton `Actions`{.action} sous l'onglet `Infrastructure`{.action}.
+Pour ajouter des ressources à votre nouveau projet, cliquez sur le bouton `Ajouter un serveur`{.action} ou `Ajouter un disque`{.action}.
 
-![ajouter une ressource](images/add-a-resource-01.png){.thumbnail}
-
-Ensuite, dans le menu déroulant, sélectionnez `Ajouter un serveur`{.action} ou `Ajouter un disque`{.action}.
-
-![ajouter une ressource](images/add-a-resource-02.png){.thumbnail}
+![ajouter une ressource](images/add-a-resource-01_2020.png){.thumbnail}
 
 
 ## Aller plus loin

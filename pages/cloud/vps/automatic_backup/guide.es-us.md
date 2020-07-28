@@ -4,6 +4,7 @@ excerpt: ''
 slug: backup_automatizado
 legacy_guide_number: g1486
 section: Miscelánea
+hidden: true
 ---
 
 

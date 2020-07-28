@@ -198,7 +198,7 @@ Le recomendamos que cree y adapte las reglas del firewall en función de su uso.
 
 OVHcloud pone a disposición de sus clientes un firewall de red en la entrada de la infraestructura. Activándolo y configurándolo correctamente es posible bloquear determinados protocolos antes incluso de que lleguen al servidor.
 
-Para más información sobre el firewall de red, consulte esta [guía](https://docs.ovh.com/es/dedicated/firewall-de-red/){.external}.
+Para más información sobre el firewall de red, consulte esta [guía](../dedicated/firewall-de-red/){.external}.
 
 ### Guardar copia de seguridad del sistema y los datos
 
@@ -210,10 +210,10 @@ La protección de los datos es un aspecto fundamental. Por eso, OVHcloud ofrece 
 - La opción **Backup automatizado** permite planificar una copia de seguridad diaria del VPS (exceptuando los discos adicionales), que es exportada y replicada tres veces antes de estar disponible en el área de cliente. Está disponible en los VPS Cloud y VPS Cloud RAM.
 - La opción **Backup Storage** permite transferir y recuperar archivos manualmente en un espacio en disco dedicado. Para adaptarse a los métodos de acceso de los usuarios de los distintos sistemas operativos, OVHcloud pone a su disposición los siguientes protocolos de transferencia: FTP, NFS y CIFS. De este modo, podrá proteger sus datos en caso de interrupción del servicio. Esta opción está disponible en los VPS Cloud y VPS Cloud RAM.
 
-Para más información sobre nuestras soluciones de backup para VPS, visite la página <https://www.ovhcloud.com/es/vps/>.
+Para más información sobre nuestras soluciones de backup para VPS, visite la página <https://www.ovh.com/world/es/vps/>.
 
 ## Más información
 
-[El firewall de red](https://docs.ovh.com/es/dedicated/firewall-de-red/){.external}
+[El firewall de red](../dedicated/firewall-de-red/){.external}
 
 Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://ovh.es/community/){.external}.
