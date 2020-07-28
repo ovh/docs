@@ -26,7 +26,7 @@ OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private network so
 
 ### Step 1: Activating and managing a vRack
 
-Log in to the OVHcloud APIv6 interface according to the relvant guide ([First steps with the OVHcloud API](../../api/first-steps-with-ovh-api/)) and follow these steps:
+Log in to the OVHcloud APIv6 interface according to the relevant guide ([First steps with the OVHcloud API](../../api/first-steps-with-ovh-api/)) and follow these steps:
 
 #### Creating the cart
 
@@ -115,7 +115,7 @@ Once the free order has been validated, it may take a few minutes for the vRack 
 
 Once the vRack is active, you will need to integrate your Public Cloud project(s) into the vRack.
 
-Log in to the OVHcloud APIv6 interface according to the relvant guide ([First steps with the OVHcloud API](../../api/first-steps-with-ovh-api/)).
+Log in to the OVHcloud APIv6 interface according to the relevant guide ([First steps with the OVHcloud API](../../api/first-steps-with-ovh-api/)).
 
 In case the project ID is unknown, the calls below allow you to retrieve it.
 
