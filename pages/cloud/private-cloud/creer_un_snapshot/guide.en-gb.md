@@ -51,9 +51,9 @@ Right-click on your VM then choose `Snapshots`{.action} and finally `Take Snapsh
 
 You must now specify the name you want to assign to this snapshot, its description, and if you want the VM memory to be included in the snapshot as well.
 
-Here you can make a snapshot with or without the RAM used by the VM. If you integrate the RAM into the snapshot, this will increase the time it takes to complete the task, but it will prevent you from having to reboot when restoring the snapshot.
+Here you can make a snapshot with or without the RAM used by the VM. If you integrate the RAM into the snapshot, this will increase the time it takes to complete the task, but it will prevent an otherwise necessary reboot when restoring the snapshot.
 
-Otherwise, since the RAM is not backed up, the task will be faster, but a reboot of the VM will be necessary in case of a recovery.
+Without having to backup the RAM, the task will be faster, but rebooting the VM will be necessary in case of a recovery.
 
 ![Configure snapshot](images/snapshot02.png){.thumbnail}
 
