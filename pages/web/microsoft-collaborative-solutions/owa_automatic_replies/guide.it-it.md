@@ -1,5 +1,5 @@
 ---
-title: '‘Imposta risposte automatiche con OWA’'
+title: 'Imposta risposte automatiche con OWA'
 excerpt: 'Scopri come impostare risposte automatiche con OWA'
 slug: exchange_2016_imposta_una_risposta_automatica_con_owa
 legacy_guide_number: g1922
@@ -15,12 +15,10 @@ Questa funzionalità di Exchange consente di impostare risposte automatiche alle
 
 **Scopri come abilitare le risposte automatiche utilizzando Outlook Web App (OWA).**
 
-
 ## Prerequisiti
 
 - Disporre di una [soluzione Exchange OVHcloud](https://www.ovh.it/emails/hosted-exchange) attiva
 - Accedere all’account Exchange (indirizzo email e password)
-
 
 ## Procedura
 

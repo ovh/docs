@@ -1,5 +1,5 @@
 ---
-title: '‘Guida all’utilizzo di Outlook Web App con un account Exchange’'
+title: 'Guida all’utilizzo di Outlook Web App con un account Exchange'
 excerpt: 'Scopri come gestire il tuo indirizzo Exchange utilizzando la Webmail OWA'
 slug: exchange_2016_guida_allutilizzo_di_outlook_web_app
 legacy_guide_number: g1918
@@ -199,7 +199,7 @@ Puoi quindi consultare la visualizzazione ad albero delle "Opzioni" sul lato sin
 
 ## Per saperne di più
 
-[Impostare risposte automatiche con OWA](../exchange_2016_imposta_una_risposta_automatica_con_owa)
+[Impostare risposte automatiche con OWA](../exchange_2016_imposta_una_risposta_automatica_con_owa/)
 
 [Condividere una cartella con la Webmail OWA](../exchange_2016_condividi_una_cartella_con_la_webmail_owa/)
 
