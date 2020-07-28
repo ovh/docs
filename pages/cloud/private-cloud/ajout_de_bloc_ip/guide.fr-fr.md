@@ -75,17 +75,30 @@ Utilisez l'appel API suivant :
 > @api {POST} /ip/{ip}/move
 > 
 
-> [!primary]
->
-> Il est impératif de renseigner telle quelle la valeur « newPrimaryIp » dans le champ `nexthop` comme dans l'image ci-dessous.
->
-> ![champ nexthop](images/move-api.png){.thumbnail}
->
+Les champs doivent être complétés ainsi :
+
+- ipBlock : bloc IP avec le /mask
+- nexthop « newPrimaryIp » (sensible a la casse)
+- to : HPC de destination sous la forme pcc-XXX-XXX-XXX-XXX
+
+![champ nexthop](images/move-api.png){.thumbnail}
+
 
 Le résultat sera sous cette forme :
 
 ![champ nexthop](images/api-result.png){.thumbnail}
 
+Utilisez ensuite cet appel API pour déplacer l'IP dans le parking des IPS :
+
+> [!api]
+>
+> @api {POST} /ip/{ip}/park
+> 
+
+> [!warning]
+>
+> Cet appel coupe le réseau sur les VMs qui utilisent les IPs en question.
+>
 
 ## Aller plus loin
 
