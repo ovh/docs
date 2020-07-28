@@ -54,7 +54,7 @@ In base alle necessità, sono disponibili diverse operazioni:
 
 ![Fault Tolerance](images/FT5.png){.thumbnail}
 
-La [modalità resilienza](https://docs.ovh.com/it/private-cloud/modalita-resilienza/){.external-link} di OVHcloud è una funzionalità utile per testare la massima disponibilità della macchine virtuali in **Fault Tolerance**.
+La [modalità resilienza](https://docs.ovh.com/it/private-cloud/modalita-resilienza/){.external-link} di OVHcloud è una funzionalità utile per testare la massima disponibilità delle macchine virtuali in **Fault Tolerance**.
 
 ## Azioni non supportate e incompatibilità
 
