@@ -34,11 +34,11 @@ Per attivare l’opzione **Fault Tolerance**, clicca con il tasto destro sulla m
 
 Si apre una nuova finestra di configurazione in cui è possibile selezionare i parametri della macchina virtuale secondaria.
 
-Datastore
+- Datastore
 
 ![Fault Tolerance](images/FT1.png){.thumbnail}
 
-Host 
+- Host 
 
 ![Fault Tolerance](images/FT2.png){.thumbnail}
 
@@ -54,7 +54,7 @@ In base alle necessità, sono disponibili diverse operazioni:
 
 ![Fault Tolerance](images/FT5.png){.thumbnail}
 
-La [modalità resilienza](https://docs.ovh.com/it/private-cloud/modalita-resilienza/){.external-link} di OVHcloud è una funzionalità utile per testare la massima disponibilità della macchina virtuali in**Fault Tolerance**.
+La [modalità resilienza](https://docs.ovh.com/it/private-cloud/modalita-resilienza/){.external-link} di OVHcloud è una funzionalità utile per testare la massima disponibilità della macchine virtuali in **Fault Tolerance**.
 
 ## Azioni non supportate e incompatibilità
 
