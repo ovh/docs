@@ -28,7 +28,7 @@ order: 2
  }
 </style>
 
-**Last updated July 28<sup>th</sup> July, 2020.**
+**Last updated July 29<sup>th</sup> July, 2020.**
 
 
 ## Objective
@@ -148,13 +148,14 @@ To list node pools, you can use:
 kubectl get nodepools
 ```
 
-In my case I have one node pool in my cluster, called `my-node-pool`, with 3 B2-7 nodes:
+In my case I have one node pool in my cluster, called `my-node-pool`, with 2 B2-7 nodes:
 
 <pre class="console"><code>$ kubectl get nodepools
-NAME           FLAVOR   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
-my-node-pool   b2-7     3                                            0     100   24h
+NAME            FLAVOR   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
+nodepool-b7-2   b2-7     2         2         2            2           0     100   22d
 </code></pre>
 
+You can see the state of the node pool, how many nodes you want in the pool (`DESIRED`), how many actually are (`CURRENT`), how many of them are up-to-date (`UP-TO-DATE`) and how many are available to be used (`AVAILABLE`).
 
 ## Create a node pool
 
@@ -188,9 +189,18 @@ nodepool.kube.cloud.ovh.com/my-new-node-pool created
 
 $ kubectl get nodepools
 NAME               FLAVOR   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
-my-new-node-pool   b2-7     3                                            0     100   43s
-my-node-pool       b2-7     3                                            0     100   24h
+my-new-node-pool   b2-7     3                                            0     100   3s
+nodepool-b7-2      b2-7     2         2         2            2           0     100   22d                                          0     100   24h
 </code></pre>
+
+At the beginning the new node pool is empty, but if you wait a few seconds, you will see how the nodes are progressively created and made available (one after another)...
+
+<pre class="console"><code>$ kubectl get nodepools
+NAME               FLAVOR   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
+my-new-node-pool   b2-7     3         3         3            0           0     100   65s
+nodepool-b7-2      b2-7     2         2         2            2           0     100   22d
+</code></pre>
+
 
 
 
