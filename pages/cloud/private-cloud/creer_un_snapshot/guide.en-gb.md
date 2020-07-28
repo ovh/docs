@@ -7,7 +7,7 @@ section: Maintenance and monitoring
 order: 08
 ---
 
-**Last updated 8th July 2020**
+**Last updated 28th July 2020**
 
 ## Objective
 
@@ -26,7 +26,7 @@ Snapshots are useful when you need to return to the same state multiple times, w
 
 This allows you to preserve the basic state of a VM before migrating it to another type of operation.
 
-While snapshots provide a "snapshot" image of the disk that can be used by backup solutions (Veeam, Nakivo), regular erasure of the snapshots made is recommended. If you have a large number of snapshots, they will take up a lot of disk space and penalise the VM in terms of performance.
+While snapshots provide a "snapshot" image of the disk, regular erasure of the snapshots made is recommended. If you have a large number of snapshots, they will take up a lot of disk space and penalise the VM in terms of performance.
 
 > [!primary]
 > 
@@ -72,6 +72,18 @@ All VM snapshots can be removed in one operation by clicking `Delete All`{.actio
 ### Restoring a snapshot
 
 In the snapshot manager, select the snapshot to restore and click `Restore`{.action}.
+
+### Consolidate snapshots
+
+The presence of redundant disks can affect the performance of virtual machines.
+
+Snapshot consolidation is useful when snapshot disks fail to compress after a delete operation. After consolidation, redundant disks are removed, improving virtual machine performance and saving storage space.
+
+To perform a consolidation, right-click on the VM, then choose `Snapshots`{.action} and finally `Consolidate`{.action}
+
+![snapshots](images/consolidate.png){.thumbnail}
+
+You can find more information about consolidation on the [VMware documentation](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-2F4A6D8B-33FF-4C6B-9B02-C984D151F0D5.html){.external}.
 
 ## Go further
 
