@@ -13,14 +13,16 @@ order: 01
 
 Un bloc IP peut vous servir à rendre vos services accessibles sur Internet. 
 
-**Ce guide explique comment commander un bloc IP associé à votre Private Cloud.**
+**Ce guide explique comment commander, ajouter et migrer un bloc IP associé à votre Hosted Private Cloud.**
 
 ## Prérequis
 
 * Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
-* Posséder une [infrastructure Private Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} sur votre compte OVHcloud.
+* Posséder une [infrastructure Hosted Private Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} sur votre compte OVHcloud.
 
 ## En pratique
+
+## Commander un bloc IP
 
 Pour commander un bloc IP supplémentaire pour votre **Private Cloud** , dirigez-vous sur votre espace client OVHcloud. Dans la section `Serveur`, cliquez sur la rubrique `IP` dans la colonne de gauche puis cliquez sur `Commander des IP additionnelles`{.action}. Sélectionnez ensuite votre **Private Cloud** dans le menu déroulant avant de passer à l'étape suivante.
 
@@ -44,10 +46,10 @@ Plusieurs champs seront à remplir pour la création de votre bloc IP
 
 > [!primary]
 >
-> N'hésitez pas à consulter notre guide sur le [plugin OVH Network](https://docs.ovh.com/fr/private-cloud/plugin-ovh-network/){.external-link} afin de savoir quelles sont les IPs réservées de votre bloc ainsi que leur utilisation.
+> N'hésitez pas à consulter notre guide sur le [plugin OVHcloud Network](https://docs.ovh.com/fr/private-cloud/plugin-ovh-network/){.external-link} afin de savoir quelles sont les IPs réservées de votre bloc ainsi que leur utilisation.
 >
 
-- Pays du bloc IP, important dans certains cas pour le référencement de vos services (un site à affluence française aura un meilleure référencement en France si l'IP est française également)
+- Pays du bloc IP, important dans certains cas pour le référencement de vos services (un site à affluence française aura un meilleur référencement en France si l'IP est française également)
 - Nom du réseau (Information visible dans le whois du bloc ip).
 - Nombre de clients estimés (Combient de clients finaux seront hébérgés sur ces IPs).
 - Description du réseau (Information visible dans le whois du bloc ip).
@@ -61,6 +63,29 @@ Plusieurs champs seront à remplir pour la création de votre bloc IP
 >
 
 Après avoir confirmé la dernière étape, vous obtenez le bon de commande de votre bloc IP. Si celui-ci est conforme à votre souhait, il vous suffit de le payer avec les moyens de paiement proposés en bas de page afin que celui-ci soit livré.
+
+### Migrer un bloc IP entre deux Hosted Private Cloud
+
+La migration d'un bloc d'IP nécessite de déplacer manuellement les blocs via l'APIv6 OVHcloud.
+
+Utilisez l'appel API suivant :
+
+> [!api]
+>
+> @api {POST} /ip/{ip}/move
+> 
+
+> [!primary]
+>
+> Il est impératif de renseigner telle quelle la valeur « newPrimaryIp » dans le champ `nexthop` comme dans l'image ci-dessous.
+>
+> ![champ nexthop](images/move-api.png){.thumbnail}
+>
+
+Le résultat sera sous cette forme :
+
+![champ nexthop](images/api-result.png){.thumbnail}
+
 
 ## Aller plus loin
 
