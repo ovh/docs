@@ -77,7 +77,7 @@ Utilisez l'appel API suivant :
 
 Les champs doivent être complétés ainsi :
 
-- ipBlock : bloc IP avec le /mask
+- ip : bloc IP avec le /mask
 - nexthop « newPrimaryIp » (sensible a la casse)
 - to : HPC de destination sous la forme pcc-XXX-XXX-XXX-XXX
 
