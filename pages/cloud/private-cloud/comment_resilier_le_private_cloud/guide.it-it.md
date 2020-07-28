@@ -37,7 +37,7 @@ Nel riquadro “Gestisci il servizio” disponibile nella scheda “Informazioni
 
 ![Disattivazione dallo Spazio Cliente](images/resiliation1.png){.thumbnail}
 
-Ricordiamo che, una volta confermata, l’operazione di eliminazione comporta la rimozione definitiva di tutti i dati presenti sull’infrastruttura. In caso di disattivazione prima della fine del mese non è inoltre previsto alcun rimborso dell’importo pagato.
+Ricordiamo che, una volta confermata, l’operazione di eliminazione comporta la rimozione definitiva di tutti i dati presenti sull’infrastruttura. In caso di disattivazione prima della fine del mese non è inoltre previsto alcun rimborso.
 
 Clicca su `Conferma`{.action} per completare l’operazione.
 
