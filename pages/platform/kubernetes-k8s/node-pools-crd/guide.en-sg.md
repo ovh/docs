@@ -202,6 +202,72 @@ nodepool-b7-2      b2-7     2         2         2            2           0     1
 </code></pre>
 
 
+## Editing the node pool size
+
+To upsize or downsize your node pool, you can use simply edit the YAML file and re-apply  it.
+For example, raise the `desiredNodes` to 5 in `new-nodepool.yaml` and apply the file:
+
+<pre class="console"><code>$ kubectl apply -f examples/new-nodepool.yaml
+nodepool.kube.cloud.ovh.com/my-new-node-pool configured
+
+$ kubectl get nodepools
+NAME               FLAVOR   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
+my-new-node-pool   b2-7     5         3         3            3           0     100   115m
+nodepool-b7-2      b2-7     2         2         2            2           0     100   22d
+</code></pre>
+
+The `DESIRED` number of nodes has changed, and the two additional nodes will be created.
+
+Then, after some minutes:
+
+<pre class="console"><code>$ kubectl get nodepools
+NAME               FLAVOR   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
+my-new-node-pool   b2-7     5         5         5            3           0     100   117m
+nodepool-b7-2      b2-7     2         2         2            2           0     100   22d
+
+$ kubectl get nodepools
+NAME               FLAVOR   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
+my-new-node-pool   b2-7     5         5         5            5           0     100   120m
+nodepool-b7-2      b2-7     2         2         2            2           0     100   22d
+</code></pre>
+
+You can also use `kubectl scale —replicas=X` to change the number of desired nodes. For example, let's resize it back to 2 nodes:
+
+```bash
+kubectl scale --replicas=2 nodepool my-new-node-pool
+```
 
 
+<pre class="console"><code>$ kubectl scale --replicas=2 nodepool my-new-node-pool
+nodepool.kube.cloud.ovh.com/my-new-node-pool scaled
 
+$ kubectl get nodepools
+NAME               FLAVOR   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
+my-new-node-pool   b2-7     2         5         5            5           0     100   129m
+nodepool-b7-2      b2-7     2         2         2            2           0     100   22d
+</code></pre>
+
+Then, after some minutes:
+
+<pre class="console"><code>$ kubectl get nodepools
+NAME               FLAVOR   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
+my-new-node-pool   b2-7     2         2         2            2           0     100   133m
+nodepool-b7-2      b2-7     2         2         2            2           0     100   22d
+</code></pre>
+
+
+## Deleting a node pool
+
+You can simply use `kubectl` to delete a node pool, as any other Kubernetes resource:
+
+```bash
+kubectl delete nodepool my-new-node-pool
+```
+
+## Go further
+
+To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes site](https://www.ovh.com/public-cloud/kubernetes/).
+
+Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [deploying an application](../deploying_an_application/deploying_an_application/).
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
