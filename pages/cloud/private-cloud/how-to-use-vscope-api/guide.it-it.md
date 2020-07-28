@@ -66,10 +66,7 @@ Per recuperarle tramite APIv6 è necessario eseguire queste tre chiamate:
 
 ### Ottieni lo storico dei dati (Graphs)
 
-Per effettuare questa operazione è possibile utilizzare il servizio **Metrics Data Platforms**:
-
-grazie ai protocolli Opentsdb e WARP10 i dati possono essere recuperati sotto forma di punti utilizzabili tramite applicazione o visualizzabili direttamente con il rendering desiderato.
-
+Per effettuare questa operazione è possibile utilizzare il servizio **Metrics Data Platforms**: grazie ai protocolli Opentsdb e WARP10 i dati possono essere recuperati sotto forma di punti utilizzabili tramite applicazione o visualizzabili direttamente con il rendering desiderato.
 
 La procedura descritta in questa guida è relativa all’utilizzo del protocollo Opentsdb per la visualizzazione grezza dei dati acquisiti, senza rappresentazione grafica.
 
