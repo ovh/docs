@@ -17,7 +17,7 @@ Vous pouvez prendre un snapshot d'une machine virtuelle. Une fois que vous avez 
 
 ## Prérequis
 
-- Posséder un produit [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
 - Être connecté au client vSphere HTML
 
 ## En pratique
@@ -26,7 +26,7 @@ Les snapshots sont utiles quand vous devez retourner à plusieurs reprises au m�
 
 Vous pouvez ainsi préserver l’état de base d’une VM avant de la faire migrer vers un autre type de fonctionnement. 
 
-Bien que les snapshots fournissent une image « instantanée » du disque, utilisables par les solutions de sauvegarde (Veeam, Nakivo), l'effacement régulier des snapshots présents est conseillé. En effet, si vous avez un grand nombre de snapshots, ceux-ci mobiliseront beaucoup d’espace-disque et pénalisent la VM en terme de performances.
+Bien que les snapshots fournissent une image « instantanée » du disque, l'effacement régulier des snapshots présents est conseillé. En effet, si vous avez un grand nombre de snapshots, ceux-ci mobiliseront beaucoup d’espace-disque et pénalisent la VM en terme de performances.
 
 > [!primary]
 > 
@@ -59,7 +59,7 @@ Dans le cas contraire, puisque la RAM n’est pas sauvegardée, la tâche sera p
 
 ### Gestion des snapshots
 
-Vous pouvez retrouver l’ensemble des snapshots d’une VM dans le gestionnaire des snapshots. Pour cela, faites un clic droit sur la VM puis choisissez `Snapshot`{.action} et enfin `Gérer les snapshots`{.action} :
+Vous pouvez retrouver l’ensemble des snapshots d’une VM dans le gestionnaire des snapshots. Pour cela, faites un clic droit sur la VM puis choisissez `Snapshots`{.action} et enfin `Gérer les snapshots`{.action} :
 
 ![gerer snapshots](images/snapshot03.png){.thumbnail}
 
@@ -72,6 +72,18 @@ Il est possible de supprimer tous les snapshots de la VM en une seule opération
 ### Restaurer un snapshot
 
 Dans le gestionnaire des snapshots, sélectionnez le snapshot à restaurer et cliquez sur `Restaurer`{.action}
+
+### Consolider les snapshots
+
+La présence de disques redondants peut nuire aux performances des machines virtuelles.
+
+La consolidation des snapshots est utile lorsque les disques de snapshots ne parviennent pas à se compresser après une opération de suppression. Après la consolidation, les disques redondants sont supprimés, ce qui améliore les performances des machines virtuelles et permet d'économiser de l'espace de stockage.
+
+Pour effectuer une consolidation, faites un clic droit sur la VM puis choisissez `Snapshots`{.action} et enfin `Consolider`{.action}
+
+![consolidate snapshots](images/consolidate.png){.thumbnail}
+
+Vous trouverez plus d'informations sur [la documentation de VMware](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.vm_admin.doc/GUID-2F4A6D8B-33FF-4C6B-9B02-C984D151F0D5.html){.external}.
 
 ## Aller plus loin
 
