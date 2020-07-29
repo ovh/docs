@@ -13,7 +13,7 @@ hidden: true
 
 Horizon is the native OpenStack web interface to it's services (Nova, swift, glance, etc.). You have the option of using this interface as well as the OVHcloud Control Panel.
 
-**This guide provides some basic information on the basic functions of the Horizon interface.**
+**This guide provides some information on the basic functions of the Horizon interface.**
 
 ## Requirements
 
