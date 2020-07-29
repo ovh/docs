@@ -30,7 +30,7 @@ Once you have your Openstack username and password, you can login at <https://ho
 
 Before making any changes, be sure that you are working on the correct region. Click the Region on top and make your selection.
 
-![horizon region](images/choose_region.png]{.thumbnail}
+![horizon region](images/choose_region.png){.thumbnail}
 
 ### Compute
 
@@ -50,7 +50,8 @@ To access this page click on the `Compute`{.action} and then click on `Instances
 
 To create a new instance, click on the `Launch Instance`{.action} buutton.
 
-![create instance](images/create_instance){.thumbnail)
+![create instance](images/create_instance.png){.thumbnail)
+
 
 You will then need to fill in the information requested. If you need to do so, you can use the table below to fill in the fields. Please note that this grid is not exhaustive.
 
