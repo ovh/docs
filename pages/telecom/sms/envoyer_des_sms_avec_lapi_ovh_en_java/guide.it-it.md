@@ -328,18 +328,6 @@ Se il tuo SMS non ha carattere pubblicitario, puoi, mediante il parametro noStop
 Se il tuo SMS ha carattere pubblicitario, puoi inviare SMS solamente dalle 8:00 alle 20:00, dal lunedì al venerdì.
 
 
-#### Dimensioni degli SMS a carattere commerciale
-
-Un SMS a carattere commerciale deve obbligatoriamente includere la dicitura STOP Questa contiene 11 caratteri e viene automaticamente dedotta dai 160 caratteri di base del 1° SMS.
-La tabella qui di seguito indica quindi il numero massimo di caratteri autorizzati per gli SMS a carattere commerciale. 
-
-Esempio: in codifica 7 bit, se il tuo messaggio ha più di 149 caratteri, verrà inviato in 2 SMS e avrà dunque un costo di 2 crediti.
-
-| Codifica | 1er SMS | 2° SMS e successivi  |
-|---|---|---|
-| 7 bit (norma GSM 03.38) | 149 caratteri | 153 caratteri |
-| Unicode | 59 caratteri | 70 caratteri  |
-
 ## Per saperne di più
 
 La console di API ([https://api.ovh.com/console/#/sms](https://api.ovh.com/console/#/sms)) ti permetterà di scoprire altri metodi per facilitare l’integrazione di servizi SMS quali: SMS che permettono la risposta (unicamente per gli account OVHcloud in Francia), invio in massa con file CSV, mailing o con conferma di ricezione...
