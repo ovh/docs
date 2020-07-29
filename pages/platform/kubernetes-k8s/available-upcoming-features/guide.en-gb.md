@@ -5,7 +5,7 @@ slug: available-upcoming-features
 section: Technical resources
 ---
 
-**Last updated May 20, 2020.**
+**Last updated July 26th, 2020.**
 
 We list here the most frequently requested OVHcloud Managed Kubernetes features that are currently available or planned in the upcoming year.
 
@@ -17,6 +17,7 @@ We list here the most frequently requested OVHcloud Managed Kubernetes features 
 - **RBAC** Use the standard [RBAC authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/){.external} mode to distribute rights within your organization and/or assure compatibility with specific applications.
 - **New versions** : We support upcoming versions, during the quarter following their official release. We also propose managed version upgrades.
 - **Localisation choice** : We offer you the possibility to choose one of multiple OVH Public Cloud datacenters at cluster creation. We currently propose the service in France (GRA) and Canada (BHS). During 2020 we will add other OVH Public Cloud datacenters at cluster creation.
+- **Node pools**: In your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (group of nodes sharing the same configuration).  
 
 ### Planned features
 
