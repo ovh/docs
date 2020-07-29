@@ -6,7 +6,7 @@ section: 'Opções de backup'
 order: 1
 ---
 
-**Última atualização: 22 de abril de 2020**
+**Última atualização: 29 de julho de 2020**
 
 
 ## Sumário
@@ -50,10 +50,77 @@ Uma vez que apenas é permitido ter um snapshot ativado de cada vez, o snapshot 
 
 Se tem a certeza que pretende restaurar o estado do seu alojamento VPS de acordo com o snapshot, clique em `Restaurar snapshot`{.action} e confirme na janela de pop-up.
 
+### Boas práticas para a criação de uma snapshot
+
+#### Configuração do agente QEMU num VPS
+
+As snapshots são imagens instantâneas do seu sistema em execução (“live snapshots”). Para garantir a disponibilidade do seu sistema aquando da criação da snapshot, o agente QEMU é utilizado para preparar o sistema de ficheiros ao processo.
+
+O *qemu-guest-agent* necessário não está instalado por predefinição na maioria das distribuições. Além disso, as restrições de licença podem impedir a OVHcloud de o incluir nas imagens de SO disponíveis. Por consequente, recomenda-se que verifique e instale o agente caso não esteja ativo no seu VPS. Ligue-se ao seu VPS em SSH e siga as instruções abaixo, em função do seu sistema operativo.
+
+##### **Distribuições Debian (Debian, Ubuntu)**
+
+Utilize o seguinte comando para verificar se o sistema está corretamente configurado para as snapshots:
+
+```
+$ file /dev/virtio-ports/org.qemu.guest_agent.0
+/dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
+```
+
+Se o resultado for diferente (“No such file or directory”), instale a última versão do pacote:
+
+```
+$ sudo apt-get update
+$ sudo apt-get install qemu-guest-agent
+```
+
+Inicie o serviço para garantir que está a ser executado:
+
+```
+$ sudo service qemu-guest-agent start
+```
+
+##### **Distribuições Redhat (CentOS, Fedora)**
+
+Utilize o seguinte comando para verificar se o sistema está corretamente configurado para as snapshots:
+
+```
+$ file /dev/virtio-ports/org.qemu.guest_agent.0
+/dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
+```
+
+Se o resultado for diferente (“No such file or directory”), instale e ative o agente:
+
+```
+$ sudo yum install qemu-guest-agent
+$ sudo chkconfig qemu-guest-agent on
+```
+
+Inicie o agente e verifique que está a ser executado:
+
+```
+$ sudo service qemu-guest-agent start
+$ sudo service qemu-guest-agent status
+```
+
+##### **Windows**
+
+Pode instalar o agente através de um ficheiro MSI, disponível no site do projeto Fedora: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
+
+Verifique que o serviço está a ser executado graças ao seguinte comando powershell:
+
+```
+PS C:\Users\Administrator> Get-Service QEMU-GA
+
+Status   Name               DisplayName
+------   ----               -----------
+Running  QEMU-GA            QEMU Guest Agent
+```
+
 
 ## Saiba mais
 
-[Utilizar backups automáticos num alojamento VPS](https://docs.ovh.com/gb/en/vps/using-automated-backups-on-a-vps)
+[Utilizar backups automáticos num alojamento VPS](../utilizar-backups-automaticos-num-alojamento-vps/)
 
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

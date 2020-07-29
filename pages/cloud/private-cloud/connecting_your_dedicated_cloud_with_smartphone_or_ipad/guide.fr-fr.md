@@ -5,6 +5,7 @@ legacy_guide_number: '1441991'
 space_key: VS
 space_name: vSphere as a Service
 section: Premiers pas
+hidden: true
 ---
 
 
