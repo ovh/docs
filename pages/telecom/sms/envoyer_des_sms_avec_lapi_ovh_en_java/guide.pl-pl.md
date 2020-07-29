@@ -328,18 +328,6 @@ Jeśli Twoja wiadomość SMS nie ma charakteru reklamowego, za pośrednictwem pa
 Jeśli Twoje wiadomości SMS mają charakter reklamowy, możesz je wysyłać wyłącznie od poniedziałku do soboty, od 8:00 do 20:00.
 
 
-#### Rozmiar wiadomości SMS o charakterze handlowym
-
-Wiadomość SMS o charakterze handlowym obowiązkowo musi zawierać opcję STOP. Zawiera ona 11 znaków i jest automatycznie odliczana z podstawowych 160 znaków pierwszej wiadomości SMS.
-Poniższa tabela wskazuje maksymalną liczbę znaków dozwoloną w przypadku wiadomości SMS o charakterze handlowym. 
-
-Przykład: w przypadku kodowania 7-bitowego, jeśli Twoja wiadomość zawiera więcej niż 149 znaków, zostanie wysłana jako 2 wiadomości SMS i wobec tego zużyje 2 zasilenia.
-
-| Kodowanie | Pierwszy SMS | Drugi SMS i kolejne  |
-|---|---|---|
-| 7-bitowe (norma GSM 03.38) | 149 znaków | 153 znaki |
-| Unicode | 59 znaków | 70 znaków  |
-
 ## Sprawdź również
 
 W konsoli API ([https://api.ovh.com/console/#/sms](https://api.ovh.com/console/#/sms)) możesz odkryć inne metody ułatwiające integrację usług SMS, takie jak: wiadomości SMS umożliwiające otrzymanie odpowiedzi (dotyczy wyłącznie kont OVHcloud we Francji), masowa wysyłka przy użyciu pliku CSV, wysyłki reklamowe, monitorowanie potwierdzeń odbioru itd.
