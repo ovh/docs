@@ -1,10 +1,12 @@
 ---
-title: 'Wie das API von vScope verwenden'
+title: „Das API von vScope verwenden“
 slug: vscopeapi
-excerpt: 'Das API vScope ermöglicht Ihnen, die Aufnahmedaten in Ihren Anwendungen zu verwenden'
+excerpt: „Das API vScope ermöglicht Ihnen, die Monitoringdaten in Ihren Anwendungen zu verwenden“
+section: „OVHcloud Dienstleistungen und Optionen“
+order: 1
 ---
 
-**Stand 25.11.2019**
+**Letzte Aktualisierung am 29.07.2020**
 
 ## Ziel
 
@@ -16,12 +18,17 @@ Diese Informationen sind auch über APIv6 und API Metrics verfügbar.
 
 **Dieses Handbuch beschreibt die Verwendung dieser APIs**.
 
-## Beschreibung
+## Voraussetzungen
 
-Der vScope stellt zwei Informationsarten zur Verfügung:
+- eine [Hosted Private Cloud Infrastruktur](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/)
+- Sie sind im Verwaltungsinterface von vScope eingeloggt
 
-- Live- **Informationen**, die den Informationen der verschiedenen Bestandteile an einem Moment T entsprechen.
-- Grafiken, die die vergangenen Daten der Leistung der verschiedenen Bestandteile wiederspiegeln. Beispiel: CPU, RAM einer virtuellen Maschine.
+## Praktische Anwendung
+
+Das Tool vScope stellt zwei Arten von Informationen zur Verfügung:
+
+- **Live-**Informationen, die den Daten der verschiedenen Bestandteile an einem Moment T entsprechen.
+- Grafiken, die die vergangenen Daten der Leistung der verschiedenen Bestandteile wiederspiegeln. Zum Beispiel: CPU, RAM einer virtuellen Maschine.
 
 
 ### Die Live-**Daten**sammeln
@@ -61,12 +68,12 @@ Die Verwendung des API geschieht über drei APIv--Anrufe:
 
 ### die historischen Daten sammeln (Grafiken)
 
-Um die historischen Daten (Grafiken) zu sammeln und zu verwenden verwenden wir das Produkt **Metrics Data Platforms**.
+Um die historischen Daten (Grafiken) zu sammeln und zu verwenden, nutzen wir das Produkt **Metrics Data Platforms**.
 
-Wir können über das Protokoll Opentsdb oder WARP10 Ihre Daten in der Form von Punkten wieder erlangen. Sie können diese Punkte über Ihre Anwendung auswerten oder sie der gewünschten Wiedergabe gemäß anzeigen.
+Über das Protokoll Opentsdb oder WARP10 können Sie Ihre Daten in Form von Punkten abrufen. Sie können diese Punkte über Ihre Anwendung auswerten oder sie der gewünschten Wiedergabe gemäß anzeigen.
 
 
-Dieser Artikel deckt die Verwendung des Opentsdb-Protokolls für die unbearbeitete Anzeige von Daten (keine grafische Wiedergabe) ab.
+Dieser Artikel deckt die Verwendung des Protokolls Opentsdb für die unbearbeitete Anzeige von Daten (keine grafische Wiedergabe) ab.
 
 Um die **Metrics Data Platforms** verwenden zu können, müssen Sie ein Token der Auslesung erhalten. Mit der neuen Version von vScope besitzt jeder Nutzer der Infrastruktur ein Token der Auslesung. 
 
@@ -74,7 +81,7 @@ Für den gewünschten Nutzer verwenden Sie den folgenden Anruf APIv6, um den Tok
 
 > [!api]
 > 
-> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/getVscopeMetricsToken
+> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
 > 
 
 Ihr Token befindet sich im Feld **token** des Ergebnisses.
@@ -169,7 +176,7 @@ Beispiel:
 [
     {
         "metric":"vscope.host.mem.usage.perc",
-        | tags             |                                                                                                                                                                                           |
+        "tags":{
             "datacenter":"pcc-37-187-228-180_datacenter869",
             "env":"prod",
             "host":"172.17.86.51"
@@ -262,4 +269,4 @@ Für mehr Details zu den Ersuchen OpenTSDB können Sie in der folgenden Dokument
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.
