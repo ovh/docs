@@ -1,55 +1,68 @@
 ---
-title: 'Exchange 2016: Crear un contestador con el webmail OWA'
-excerpt: 'Exchange 2016: Crear un contestador con el webmail OWA'
+title: 'Crear respuestas automáticas en OWA'
+excerpt: 'Cómo configurar respuestas automáticas en OWA'
 slug: exchange_2016_crear_un_contestador_con_el_webmail_owa
+section: 'Outlook Web Application (OWA)'
 legacy_guide_number: g1922
-section: Outlook Web Application (OWA)
+order: 3
 ---
 
+**Última actualización: 28/07/2020**
 
-## Introducción
-Con esta funcionalidad podrá crear contestadores en caso de no estar disponible o respuestas automáticas para situaciones concretas.
+## Objetivo
 
+Esta herramienta de Exchange le permite configurar respuestas automáticas, de manera de responder a los mensajes de correo electrónico enviados a su cuenta en función de diversos casos de uso, por ejemplo, un mensaje de fuera de la oficina <i>(out-of-office</i>).
 
-## Cómo crear un contestador o una respuesta automática
-
-## Creación
-Conéctese a su cuenta Exchange mediante la interfaz [Outlook Web App (OWA)](https://ex.mail.ovh.net/owa/). Una vez se haya conectado, abra el menú de «Configuración» haciendo clic en el icono con forma de engranaje y, a continuación, seleccione «Respuestas automáticas». 
-
-También puede acceder desde el menú «Configuración» > «Opciones» > «Correo» > «Respuestas automáticas».
-
-![](images/img_2946.jpg){.thumbnail}
-Llegará a la siguiente pantalla: 
-
-Seleccione «Enviar respuestas automáticas» y, si lo desea, establezca la franja horaria en la que desea que se envíen las respuestas automáticas.
-
-Redacte el contenido del mensaje y edite el formato (tamaño, tipografía, inserción de enlaces, etc.).
-
-![](images/img_2947.jpg){.thumbnail}
-
-## Tipos de respuestas
-Puede establecer a quién quiere que se envíen los mensajes de respuesta automática (o contestadores):
+**Descubra cómo activar las respuestas automáticas mediante Outlook en la web (OWA).**
 
 
-- Únicamente a los remitentes internos de su organización.
+## Requisitos
+
+- Tener una [solución de Exchange en OVHcloud](https://www.ovh.es/emails/hosted-exchange/) ya configurada.
+- Tener acceso a la cuenta de Exchange (dirección de correo electrónico y contraseña).
 
 
-Las respuestas automáticas solo se enviarán a los usuarios Exchange de su plataforma. 
+## Procedimiento
+
+### Activar la herramienta
+
+Inicie sesión en su cuenta de Exchange a través del [correo electrónico basado en la web de OVHcloud](https://www.ovh.es/mail/). Haga clic en el símbolo del engranaje en la parte superior derecha para desplegar el menú «Opciones» y seleccione `«Respuestas automáticas»`{.action}.
+
+![owaoptions](images/exchange-autorep-step1.png){.thumbnail}
+
+En esta interfaz, simplemente active la herramienta seleccionando `«Enviar respuestas automáticas»`{.action}. Puede especificar un periodo de tiempo exacto en los campos siguientes o activarla de forma indefinida. Si no se especifican las horas de inicio y de finalización, se deberá desactivar manualmente la herramienta. 
+
+Escriba su mensaje en el cuadro de edición y confirme con el botón `«Guardar»`{.action} que se encuentra en la parte superior izquierda.
+
+![owaautoreply](images/exchange-autorep-step2.png){.thumbnail}
 
 
-- Tanto a los remitentes internos como a los externos a su organización.
+### Tipos de respuestas
+
+Las instrucciones anteriores se aplican a los mensajes de correo electrónico enviados por los usuarios de su servicio de Exchange. Puede crear un mensaje distinto para todos los demás usuarios si marca la casilla «Enviar mensajes de respuesta automática a remitentes fuera de mi empresa». Entonces tendrá dos opciones adicionales de respuesta automática:
+
+- **«Enviar respuestas solo a los remitentes en mi lista de contactos»**: únicamente sus contactos recibirán un mensaje.
+
+- **«Enviar respuestas automáticas a todos los remitentes externos»**: todas las personas que le envíen mensajes de correo electrónico durante su ausencia recibirán un mensaje.
+
+Puede escribir un mensaje alternativo para los remitentes externos en el segundo cuadro de edición. Por ejemplo, un caso típico de uso sería responder con el primer mensaje a sus colegas y con el segundo, a amigos, clientes o cualquier otra persona que pueda contactarle.
+
+![owaaddreply](images/exchange-autorep-step3.png){.thumbnail}
 
 
-Puede utilizar estas reglas para, por ejemplo, configurar una respuesta automática específica para los miembros de su organización (sus colegas) y otra diferente para las personas externas a su organización (clientes, amigos, etc.).
+### Información adicional
 
-![](images/img_2948.jpg){.thumbnail}
+- Aunque tenga activada la función de respuesta automática, seguirá recibiendo sus mensajes de correo electrónico en la bandeja de entrada como de costumbre.
+
+- Cada remitente recibirá una sola respuesta automática para evitar bucles de correo electrónico y correos no deseados.
 
 
-## Información adicional
-Cuando hay una respuesta automática activa, los mensajes se reciben con normalidad y se transmiten a su bandeja de entrada. 
+## Más información
 
-Cuando establece una franja horaria para la activación de las respuestas automáticas, aparece un nuevo botón en la barra azul superior con el que podrá desactivar la funcionalidad de respuesta automática.
+[Usar Outlook en la web (OWA) con una cuenta de Exchange](../exchange_2016_guia_de_uso_de_outlook_web_app/)
 
-![](images/img_2949.jpg){.thumbnail}
-Atención: Para evitar el spam, la respuesta automática solo se envía una vez a cada remitente.
+[Delegar permisos en una cuenta de Exchange](../exchange_2013_dar_permisos_full_access_a_una_cuenta/)
 
+[Compartir calendarios en OWA](../exchange_2016_compartir_un_calendario_con_el_webmail_owa/)
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
