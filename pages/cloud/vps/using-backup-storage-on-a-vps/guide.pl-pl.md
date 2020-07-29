@@ -6,7 +6,7 @@ section: 'Opcje kopii zapasowych'
 order: 1
 ---
 
-**Ostatnia aktualizacja: 22-04-2020**
+**Ostatnia aktualizacja: 29-07-2020**
 
 
 ## Wprowadzenie
@@ -120,7 +120,7 @@ Running  QEMU-GA            QEMU Guest Agent
 
 ## Sprawdź również
 
-[Korzystanie z automatycznych kopii zapasowych na prywatnym serwerze wirtualnym](https://docs.ovh.com/gb/en/vps/using-automated-backups-on-a-vps)
+[Korzystanie z automatycznych kopii zapasowych na prywatnym serwerze wirtualnym](../uzywanie-automatyczne-kopie-zapasowe-vps/)
 
 
 Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
