@@ -132,7 +132,7 @@ Snapshot frequency can be managed from your customer control panel. You can choo
 - Weekly. 
 
 
-At any time you can also create manual snapshots, keep them with no time limit or delete them. This feature is available in your [OVH customer control panel](https://ca.ovh.com/auth/?action=gotomanager){.external} or through the[API](https://api.ovh.com/){.external}:
+At any time you can also create manual snapshots, keep them with no time limit or delete them. This feature is available in your [OVH customer control panel](https://ca.ovh.com/auth/?action=gotomanager){.external} or through the[API](https://ca.api.ovh.com/){.external}:
 
 > [!api]
 >

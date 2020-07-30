@@ -16,8 +16,8 @@ rClone étant un logiciel de synchronisation externe, les détails d'utilisation
 
 ## Prérequis
 
-- Avoir créé son container *Stockage d’objet* (depuis l'espace client ou depuis [Horizon](https://docs.ovh.com/fr/public-cloud/creer-un-conteneur-dobjets/){.external}.
-- Avoir créé un [utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/){.external}.
+- Avoir créé son container *Stockage d’objet* (depuis [l'espace client])(https://docs.ovh.com/fr/public-cloud/creer-un-conteneur-dobjets/){.external}.
+- Avoir créé un [utilisateur OpenStack](https://docs.ovh.com/ca/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/){.external}.
 
 ## En pratique
 
@@ -25,7 +25,7 @@ Une fois votre conteneur et votre utilisateur OpenStack créés, il vous reste d
 
 - Récupérer le fichier de configuration pour rClone :
 
-Une fois votre [utilisateur OpenStack](https://docs.ovh.com/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/){.external} créé vous pourrez choisir, dans votre espace client, de récupérer le fichier de configuration nécessaire pour rClone.
+Une fois votre [utilisateur OpenStack](https://docs.ovh.com/ca/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/){.external} créé vous pourrez choisir, dans votre espace client, de récupérer le fichier de configuration nécessaire pour rClone.
 
 Pour cela, quand vous êtes sur la page des utilisateurs OpenStack dans votre espace client, cliquez sur la clé à molette à droite de l'utilisateur puis sur `Télécharger un fichier de configuration rClone`{.external}.
 

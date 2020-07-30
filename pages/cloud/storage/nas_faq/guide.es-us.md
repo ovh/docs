@@ -126,7 +126,7 @@ La frecuencia de los snapshots puede configurarse desde el área de cliente. Pue
 - cada tres días
 - semanal 
 
-Además, en cualquier momento puede crear snapshots manuales, que podrá conservar sin limitación de tiempo o eliminar cuando desee. Esta funcionalidad está disponible en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager) o la [API de OVH](https://api.ovh.com/):
+Además, en cualquier momento puede crear snapshots manuales, que podrá conservar sin limitación de tiempo o eliminar cuando desee. Esta funcionalidad está disponible en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager) o la [API de OVH](https://ca.api.ovh.com/):
 
 > [!api]
 >

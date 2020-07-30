@@ -21,8 +21,8 @@ Esta guía explica cómo montar un contenedor de objetos como sistema de archivo
 Para seguir todos los pasos de esta guía es necesario:
 
 
-- [Crear un acceso a Horizon](../platform/public-cloud/create_and_delete_a_user/guide.es-us.md){.ref}
-- [Añadir espacios de almacenamiento](../platform/public-cloud/add_storage_space/guide.es-us.md){.ref}
+- [Crear un acceso](https://docs.ovh.com/us/es/public-cloud/crear-y-eliminar-un-usuario-de-openstack/)
+- [Añadir espacios de almacenamiento](https://docs.ovh.com/us/es/storage/horizon_crear_un_contenedor_de_objetos/)
 
 
 
