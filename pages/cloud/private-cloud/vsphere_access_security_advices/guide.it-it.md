@@ -1,69 +1,73 @@
 ---
-title: 'Buone prassi di sicurezza sul client vSphere Web'
-slug: rendere-piu-sicuro-accesso-vsphere-web
-excerpt: 'Scopri come rendere più sicuro l’accesso al tuo client vSphere Web'
-section: 'Per iniziare'
+title: Best practice di sicurezza per il client vSphere Web
+slug: sicurezza-accesso-vsphere-web
+excerpt: Come proteggere l’accesso al client vSphere Web
+section: Informazioni Meltdown e Spectre
+order: 01
 ---
 
-**Ultimo aggiornamento: 23/08/2018**
+**Ultimo aggiornamento: 30/06/2020**
 
 ## Obiettivo
 
-Per garantire l’integrità della tua infrastruttura, è opportuno restringerne l’accesso. Per fare ciò, ti proponiamo vari metodi. 
+Per assicurare un livello di sicurezza ottimale di un’infrastruttura, limitare gli accessi potrebbe rivelarsi la scelta più giusta. Questa operazione può essere eseguita con diversi metodi. 
 
-**Questa guida ti mostra come rendere rapidamente e facilmente più sicuro l’accesso al tuo client vSphere grazie ad alcuni nostri consigli.** 
-
+**Questa guida fornisce alcuni consigli utili per rendere più sicuro l’accesso al client vSphere in modo semplice e rapido.**
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
-
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Procedura
 
 ### Controlla gli accessi tramite IP
 
-Il primo consiglio riguarda la restrizione di accesso tramite IP. Ti consigliamo di operare sempre con un sistema di registrazione su whitelist. Questa tecnica si basa sul principio del divieto di tutti gli indirizzi IP, con eccezione per gli indirizzi che possono avere accesso alla tua infrastruttura. 
+Il primo consiglio è relativo alla restrizione dell’accesso tramite IP, per cui suggeriamo di utilizzare un sistema di registrazione basato su <i>whitelist</i>. Questa tecnica consiste nel rifiutare di default l’accesso a tutti gli indirizzi IP e aggiungere gli indirizzi autorizzati a connettersi all’infrastruttura.
 
-Questa azione è possibile direttamente dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Dopo aver effettuato l’accesso alla sezione Private Cloud, vai su `Sicurezza`{.action}. Comparirà una tabella sulla quale potrai vedere gli indirizzi IP autorizzati o rifiutati. Per aggiungerne di nuovi, clicca a destra su `Aggiungi IP`{.action}: 
+Questa operazione è disponibile nello [Spazio Clienti OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Accedi alla sezione Private Cloud, seleziona il servizio in questione e clicca sulla scheda `Sicurezza`{.action}: compare una tabella che mostra gli indirizzi IP autorizzati o bloccati. Per aggiungerne di nuovi, clicca sul pulsante `Aggiungi IP`{.action} a destra:
 
-![Aggiunta IP](images/adding_ip.png){.thumbnail}
+![Aggiunta di IP](images/adding_ip.png){.thumbnail}
 
 
 ### Crea utenti specifici
 
-Ti consigliamo vivamente di creare un account utente per ogni persona che accede alla tua infrastruttura. Anche questa operazione si effettua nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, ma questa volta dalla scheda `Utenti`{.action}. Per aggiungerne di nuovi, clicca sul pulsante a destra: `Crea un utente`{.action}.
+Consigliamo vivamente di creare un accesso personale per ogni utente che ha bisogno di accedere all’infrastruttura. Anche questa operazione è disponibile nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}\: accedi alla scheda `Utenti`{.action} e clicca sul pulsante [Crea un utente](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ![Utenti](images/users.png){.thumbnail}
 
-Per creare di un account utente è necessario inserire una password. 
+
+Durante la creazione dell’account utente, sarà necessario impostare una password.
 
 > [!primary]
 >
-> Per rendere più sicuri i tuoi dati, la tua password deve possedere le seguenti caratteristiche:
+> Per una protezione ottimale dei dati, la password deve possedere alcuni requisiti specifici:
 >
-> - contenere minimo otto caratteri
-> - contenere minimo tre tipi di caratteri
+> - contenere almeno 8 caratteri
+> - contenere almeno 3 tipi di caratteri
 > - non essere tratta dal dizionario
-> - non deve contenere informazioni personali (il tuo nome, cognome o data di nascita)
-> - non deve essere utilizzata per molteplici utenti
-> - essere archiviata in un password manager
-> - essere cambiata ogni tre mesi
+> - non contenere informazioni personali (nome, cognome o data di nascita)
+> - non essere utilizzata per più accessi
+> - essere salvata in un <i>password manager</i>
+> - essere cambiata ogni 3 mesi
 > - essere diversa dalle password precedenti
 >
 
-In seguito potrai gestire i diritti di ogni utente cliccando sulla ruota dentata a destra di ciascun nome utente: 
+In seguito sarà possibile gestire i diritti di ogni account cliccando sul pulsante `...`{.action} in corrispondenza dei diversi utenti:
 
-![Modifica delle impostazioni utente](images/users_edit.png){.thumbnail}
+![Modifica dei parametri degli utenti](images/users_edit.png){.thumbnail}
 
-### Limitare i tempi di sessione
+### Limita la durata delle sessioni
 
-Al termine dell’utilizzo, si consiglia sempre di chiudere la sessione aperta con il tuo account. Per limitare i tempi di connessione, è possibile impostare un timeout per la scadenza della sessione. 
+Al termine dell’utilizzo, consigliamo di chiudere la sessione aperta con l’account utilizzato.   Per limitare la durata delle connessioni è possibile impostare la scadenza della sessione.
 
-Puoi compiere questa operazione dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Dopo l’accesso al tuo Private Cloud, seleziona `Sicurezza`{.action}. Clicca sul tasto `Modifica il timeout di sessione`{.action} situato a destra. La finestra che si apre ti permetterà di stabilire la durata (in minuti) di una sessione. 
+Questa operazione è disponibile nello [Spazio Clienti OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Accedi alla sezione Private Cloud, seleziona la scheda `Sicurezza`{.action} e clicca sul pulsante `Modifica la durata di una sessione `{.action} a destra.
+
+![Scadenza della sessione](images/security-expiration.png){.thumbnail}
+
+A questo punto, inserisci il numero di minuti di validità di una sessione.
 
 ![Scadenza della sessione](images/expiration.png){.thumbnail}
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo [https://www.ovh.it/community/](https://www.ovh.it/community/){.external}.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
