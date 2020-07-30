@@ -17,8 +17,8 @@ Un bloc IP peut vous servir à rendre vos services accessibles sur Internet.
 
 ## Prérequis
 
-* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
-* Posséder une [infrastructure Hosted Private Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} sur votre compte OVHcloud.
+* Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+* Posséder une [infrastructure Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external} sur votre compte OVHcloud.
 
 ## En pratique
 
@@ -46,7 +46,7 @@ Plusieurs champs seront à remplir pour la création de votre bloc IP
 
 > [!primary]
 >
-> N'hésitez pas à consulter notre guide sur le [plugin OVHcloud Network](https://docs.ovh.com/fr/private-cloud/plugin-ovh-network/){.external-link} afin de savoir quelles sont les IPs réservées de votre bloc ainsi que leur utilisation.
+> N'hésitez pas à consulter notre guide sur le [plugin OVHcloud Network](../plugin-ovh-network/){.external-link} afin de savoir quelles sont les IPs réservées de votre bloc ainsi que leur utilisation.
 >
 
 - Pays du bloc IP, important dans certains cas pour le référencement de vos services (un site à affluence française aura un meilleur référencement en France si l'IP est française également)
@@ -100,7 +100,7 @@ Utilisez ensuite cet appel API pour déplacer l'IP dans le parking des IPS :
 > Cet appel coupe le réseau sur les VMs qui utilisent les IPs en question.
 >
 
-Vous pourrez suivre le déplacement du bloc IP depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Server`{.action} puis `Private Cloud`{.action}. Cliquez sur votre service Hosted Private Cloud puis sur l'onglet `Operations`{.action}.
+Vous pourrez suivre le déplacement du bloc IP depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} dans la partie `Server`{.action} puis `Private Cloud`{.action}. Cliquez sur votre service Hosted Private Cloud puis sur l'onglet `Operations`{.action}.
 
 La référence de l'opération est « removeIpRipeBlock ».
 
