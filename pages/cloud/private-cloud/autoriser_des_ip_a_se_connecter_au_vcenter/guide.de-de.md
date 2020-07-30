@@ -1,6 +1,6 @@
 ---
 title: Die Verbindung von IPs mit dem vCenter erlauben
-slug: autoriser-des-ip-a-se-connecter-au-vcenter
+slug: verbindung-von-ip-zum-vcenter-erlauben
 section: Funktionen von OVHcloud
 ---
 
