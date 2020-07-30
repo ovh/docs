@@ -18,7 +18,7 @@ Un bloc IP peut vous servir à rendre vos services accessibles sur Internet.
 ## Prérequis
 
 * Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
-* Posséder une [infrastructure Hosted Private Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} sur votre compte OVHcloud.
+* Posséder une [infrastructure Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external} sur votre compte OVHcloud.
 
 ## En pratique
 

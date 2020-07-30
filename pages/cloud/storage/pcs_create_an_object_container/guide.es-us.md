@@ -15,7 +15,7 @@ Esta guía explica cómo crearlo desde el panel Horizon de OpenStack.
 
 ## Requisitos:
 
-Para seguir todos los pasos de esta guía, es necesario [crear un acceso a Horizon](../acceder_a_la_consola_de_una_instancia){.ref} previamente.
+Para seguir todos los pasos de esta guía, es necesario [crear un acceso a Horizon](https://docs.ovh.com/us/es/public-cloud/crear-y-eliminar-un-usuario-de-openstack/){.ref} previamente.
 
 
 ## 

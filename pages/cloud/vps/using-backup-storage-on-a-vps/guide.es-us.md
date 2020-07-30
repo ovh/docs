@@ -22,13 +22,13 @@ Antes de aplicar las opciones de copia de seguridad, le recomendamos que consult
 
 ## Requisitos
 
-- Tener acceso al [panel de control de OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
-- Tener un [servicio de servidor virtual privado (VPS)](https://www.ovhcloud.com/es-es/vps/) de OVHcloud configurado.
+- Tener acceso al [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
+- Tener un [servicio de servidor virtual privado (VPS)](https://www.ovh.com/world/es/vps/) de OVHcloud configurado.
 
 
 ## Procedimiento
 
-Inicie sesión en el [área de cliente de OVHcloud para acceder al panel de control](https://www.ovh.com/auth/?action=gotomanager), navegue hasta la sección «Servidor» y seleccione su servidor en la barra lateral de la izquierda (debajo de `VPS`{.action}).
+Inicie sesión en el [área de cliente de OVHcloud para acceder al panel de control](https://ca.ovh.com/auth/?action=gotomanager), navegue hasta la sección «Servidor» y seleccione su servidor en la barra lateral de la izquierda (debajo de `VPS`{.action}).
 
 ### Paso 1: Suscribirse a la opción «Instantáneas»
 

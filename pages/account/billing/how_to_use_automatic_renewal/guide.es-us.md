@@ -16,14 +16,14 @@ Tiene la posibilidad de administrar la renovación y la baja de sus servicios en
 
 > [!primary]
 >
-> Tenga en cuenta que —en función de su lugar de residencia y de la legislación vigente, así como de los servicios contratados— es posible que algunas secciones de esta guía sean diferentes o no se apliquen a su caso particular. En caso de duda, consulte sus contratos suscritos con OVHcloud, a los que puede acceder en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, acceda a `«Mis servicios»`{.action} y, seguidamente, a `Mis contratos`{.action}.
+> Tenga en cuenta que —en función de su lugar de residencia y de la legislación vigente, así como de los servicios contratados— es posible que algunas secciones de esta guía sean diferentes o no se apliquen a su caso particular. En caso de duda, consulte sus contratos suscritos con OVHcloud, a los que puede acceder en el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager){.external}. Para ello, acceda a `«Mis servicios»`{.action} y, seguidamente, a `Mis contratos`{.action}.
 >
 
 
 ## Requisitos
 
-- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Tener servicios de OVH activos.
+- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Tener servicios de OVHcloud activos.
 - Ser el contacto de facturación de sus servicios OVHcloud
 
 ## Procedimiento
@@ -34,15 +34,15 @@ Sin embargo, también es posible configurar ciertos productos (dominios, alojami
 
 Le recomendamos que lea las guías siguientes, centrándose particularmente en las operaciones que desee realizar. 
 
-- [ Consultar el estado de renovación de los servicios. ](https://docs.ovh.com/es/billing/renovacion-automatica-ovh/#consultar-el-estado-de-la-renovacion-de-los-servicios){.external} Esta guía explica cómo comprobar si un servicio tiene activada la renovación automática, así como la fecha en la que se renovará o expirará.
+- [ Consultar el estado de renovación de los servicios. ](../billing/renovacion-automatica-ovh/#consultar-el-estado-de-la-renovacion-de-los-servicios){.external} Esta guía explica cómo comprobar si un servicio tiene activada la renovación automática, así como la fecha en la que se renovará o expirará.
 
-- [Gestionar la renovación de los servicios.](https://docs.ovh.com/es/billing/renovacion-automatica-ovh/#la-renovacion-en-ovhcloud){.external} Esta guía explica cómo activar o desactivar la renovación automática o modificar la frecuencia de pago de un servicio. También explica cómo pagar las renovaciones antes de su expiración.
+- [Gestionar la renovación de los servicios.](../billing/renovacion-automatica-ovh/#la-renovacion-en-ovhcloud){.external} Esta guía explica cómo activar o desactivar la renovación automática o modificar la frecuencia de pago de un servicio. También explica cómo pagar las renovaciones antes de su expiración.
 
-- [Configurar las formas de pago.](https://docs.ovh.com/es/billing/gestionar-formas-de-pago/){.external} Esta guía explica cómo asegurarse de disponer de una forma de pago registrada para abonar las próximas renovaciones. También puede añadir nuevas formas de pago o eliminar las existentes en función de sus necesidades.
+- [Configurar las formas de pago.](../billing/gestionar-formas-de-pago/){.external} Esta guía explica cómo asegurarse de disponer de una forma de pago registrada para abonar las próximas renovaciones. También puede añadir nuevas formas de pago o eliminar las existentes en función de sus necesidades.
 
 ### Acceder a la configuración de los servicios
 
-Tras haber iniciado sesión en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `Productos y servicios`{.action}.
+Tras haber iniciado sesión en el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `Productos y servicios`{.action}.
 
 ![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 

@@ -86,7 +86,7 @@ $1$d3705e8afb27a0d2970a322b96550abfc67bb798
 
 To avoid replay, you can see that the signature includes the current timestamp in the preceding paragraph.
 
-In order to be able to function, even if your machine is not up-to-date, you can retrieve the "OVH" time carrying out a `GET` on the following URL: <https://eu.api.ovh.com/1.0/auth/time>.
+In order to be able to function, even if your machine is not up-to-date, you can retrieve the "OVH" time carrying out a `GET` on the following URL: <https://ca.api.ovh.com/1.0/auth/time>.
 
 ```sh
 $ curl https://ca.api.ovh.com/1.0/auth/time
@@ -115,7 +115,7 @@ https://ca.api.ovh.com/1.0/domains/
 
 In order to simplify the development of your applications, OVH provides you with wrappers in several languages. Using them will allow you to not to care about the signature calculation, and focus on the development of your application.
 
-- *Perl*: <https://eu.api.ovh.com/wrappers/OvhApi-perl-1.1.zip>
+- *Perl*: <https://ca.api.ovh.com/wrappers/OvhApi-perl-1.1.zip>
 - *Python*: <https://github.com/ovh/python-ovh>
 - *PHP*: <https://github.com/ovh/php-ovh>
 - *Node.js*: <https://github.com/ovh/node-ovh>

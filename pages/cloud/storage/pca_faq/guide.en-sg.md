@@ -7,7 +7,7 @@ section: Public Cloud Archive
 
 
 ## Preamble
-OVH Cloud Archive is based on Openstack Swift. Even though OVH leads the effort to ease the use of object storage, it forcibly inherits core concepts that may appear suprising to a new user. This guide will answer most frequent questioning users have.
+OVH Cloud Archive is based on Openstack Swift. Even though OVH leads the effort to ease the use of object storage, it forcibly inherits core concepts that may appear surprising to a new user. This guide will answer most frequent questioning users have.
 
 
 ## Questions

@@ -23,10 +23,10 @@ El protocolo de internet versión 6 (**IPv6**) es la última versión del protoc
 
 ## Requisitos
 
-- Tener un [VPS de OVHcloud](https://www.ovhcloud.com/es/vps/){.external}.
+- Tener un [VPS de OVHcloud](https://www.ovh.com/world/es/vps/){.external}.
 - Estar conectado al VPS por SSH (acceso *root*).
 - Tener conocimientos básicos de redes.
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Procedimiento
 
@@ -44,20 +44,20 @@ Antes de empezar, le recomendamos que eche un vistazo a la siguiente tabla, que 
 
 En primer lugar, es necesario conocer la dirección IPV6 y la puerta de enlace IPv6 asignadas al servidor. Existen dos formas de obtener esta información:
 
-- [Desde el área de cliente](https://docs.ovh.com/es/vps/configurar-ipv6/#desde-el-area-de-cliente)
-- [A través de la API](https://docs.ovh.com/es/vps/configurar-ipv6/#a-traves-de-la-api)
+- [Desde el área de cliente](../configurar-ipv6/#desde-el-area-de-cliente)
+- [A través de la API](../configurar-ipv6/#a-traves-de-la-api)
 
 #### Desde el área de cliente
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Cloud`{.action}. En la columna izquierda, haga clic en `Servidores`{.action} y seleccione el VPS correspondiente. Por defecto, se abrirá la pestaña `Inicio`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, en la sección `Cloud`{.action}. En la columna izquierda, haga clic en `Servidores`{.action} y seleccione el VPS correspondiente. Por defecto, se abrirá la pestaña `Inicio`{.action}.
 
-En el apartado **IP** podrá ver la dirección IPv6 y la puerta de enlace IPv6 asignadas al VPS. Anótelas y continúe en el apartado [2. Aplicar la configuración IPv6](https://docs.ovh.com/es/vps/configurar-ipv6/#2-aplicar-la-configuracion-ipv6_1){.external}.
+En el apartado **IP** podrá ver la dirección IPv6 y la puerta de enlace IPv6 asignadas al VPS. Anótelas y continúe en el apartado [2. Aplicar la configuración IPv6](../configurar-ipv6/#2-aplicar-la-configuracion-ipv6_1){.external}.
 
 ![Configuración IPv6](images/configure-ipv6-step1.png){.thumbnail}
 
 #### A través de la API
 
-Vaya a la página <https://api.ovh.com/console/> y conéctese a la API de OVHcloud con su ID de cliente y contraseña. Utilice las llamadas a la API que se indican a continuación.
+Vaya a la página <https://ca.api.ovh.com/console/> y conéctese a la API de OVHcloud con su ID de cliente y contraseña. Utilice las llamadas a la API que se indican a continuación.
 
 Para obtener la dirección IPv6 asignada al VPS:
 
@@ -73,18 +73,18 @@ Para obtener la puerta de enlace IPv6 asignada al VPS:
 > @api {GET} /vps/{serviceName}/ips/{ipAddress}
 >
 
-Anótelas y continúe en el apartado [2. Aplicar la configuración IPv6](https://docs.ovh.com/fr/vps/configurer-ipv6/#etape-2-appliquer-la-configuration-ipv6_1){.external}.
+Anótelas y continúe en el apartado [2. Aplicar la configuración IPv6](../configurer-ipv6/#etape-2-appliquer-la-configuration-ipv6_1){.external}.
 
 ### 2. Aplicar la configuración IPv6
 
-Una vez que disponga de la información necesaria para configurar la IPv6, conéctese al VPS por SSH. Si lo necesita, puede consultar la guía [Introducción al SSH](https://docs.ovh.com/es/dedicated/introduccion-ssh/){.external}.
+Una vez que disponga de la información necesaria para configurar la IPv6, conéctese al VPS por SSH. Si lo necesita, puede consultar la guía [Introducción al SSH](../dedicated/introduccion-ssh/){.external}.
 
 Existen varias formas de aplicar la configuración IPv6. Utilice los siguientes enlaces para ir directamente a la necesite, según su caso:
 
-- [Aplicación no persistente](https://docs.ovh.com/es/vps/configurar-ipv6/#aplicacion-no-persistente)
-- [Aplicación persistente en Debian y derivados (Ubuntu, Crunchbang, SteamOS…)](https://docs.ovh.com/es/vps/configurar-ipv6/#aplicacion-persistente-en-debian-y-derivados-ubuntu-crunchbang-steamos)
-- [Aplicación persistente en Red Hat y derivados (CentOS, ClearOS…)](https://docs.ovh.com/es/vps/configurar-ipv6/#aplicacion-persistente-en-red-hat-y-derivados-centos-clearos_1)
-- [Aplicación persistente en Windows Server](https://docs.ovh.com/es/vps/configurar-ipv6/#aplicacion-persistente-en-windows-server)
+- [Aplicación no persistente](../configurar-ipv6/#aplicacion-no-persistente)
+- [Aplicación persistente en Debian y derivados (Ubuntu, Crunchbang, SteamOS…)](../configurar-ipv6/#aplicacion-persistente-en-debian-y-derivados-ubuntu-crunchbang-steamos)
+- [Aplicación persistente en Red Hat y derivados (CentOS, ClearOS…)](../configurar-ipv6/#aplicacion-persistente-en-red-hat-y-derivados-centos-clearos_1)
+- [Aplicación persistente en Windows Server](../configurar-ipv6/#aplicacion-persistente-en-windows-server)
 
 #### Aplicación no persistente
 
@@ -120,8 +120,8 @@ En algunos casos (como Debian 9), es posible que el método arriba indicado no e
 
 Continúe esta guía en el método correspondiente según su caso:
 
-- [Configuración del archivo «interfaces»](https://docs.ovh.com/es/vps/configurar-ipv6/#configuracion-del-archivo-interfaces)
-- [Configuración mediante la utilidad Netplan](https://docs.ovh.com/es/vps/configurar-ipv6/#configuracion-mediante-la-utilidad-netplan)
+- [Configuración del archivo «interfaces»](../configurar-ipv6/#configuracion-del-archivo-interfaces)
+- [Configuración mediante la utilidad Netplan](../configurar-ipv6/#configuracion-mediante-la-utilidad-netplan)
 
 #####  Configuración del archivo «interfaces»
 

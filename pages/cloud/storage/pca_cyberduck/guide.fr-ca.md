@@ -18,7 +18,7 @@ Ce guide vous expliquera comment configurer Cyberduck afin de pouvoir gérer vot
 
 ### Prérequis
 
-- Un utilisateur Horizon configuré : voir le [guide](../../horizon){.ref}
+- Un utilisateur Horizon configuré : voir le [guide](https://docs.ovh.com/ca/fr/public-cloud/creation-et-suppression-dun-utilisateur-openstack/)
 - Le Tenant identifiant de votre project, l'identifiant utilisateur. Cette information est récupérable en naviguant dans un conteneur dans l’espace client
 - Le mote pass de votre utilisateur
 

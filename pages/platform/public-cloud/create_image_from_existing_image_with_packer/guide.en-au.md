@@ -17,7 +17,7 @@ You'll need an [OVHcloud Public Cloud](https://www.ovh.com.au/public-cloud/insta
 
 ### Install Packer
 
-Packer can be downloaded from the official website (curently [here](https://www.packer.io/downloads.html) ) and you'll need to `unzip` it.
+Packer can be downloaded from the official website (currently [here](https://www.packer.io/downloads.html) ) and you'll need to `unzip` it.
 
 For Linux 64bits
 
@@ -36,7 +36,7 @@ apt-get install jq
 
 ### Fetch your openrc.sh configuration
 
-From [OVHcloud Control Panel](https://caovh.com/auth/?action=gotomanager), fetch your `openrc.sh` configuration file. You can fetch it from OpenStack menu entry in the left panel and under the `...` button on the right `Download an OpenStack configuration file`. You might need to create an OpenStack user before.
+From [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), fetch your `openrc.sh` configuration file. You can fetch it from OpenStack menu entry in the left panel and under the `...` button on the right `Download an OpenStack configuration file`. You might need to create an OpenStack user before.
 
 ### Install openstack command line client
 

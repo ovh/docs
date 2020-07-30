@@ -3,6 +3,7 @@ title: Gestionar los contactos de los servicios
 slug: gestion-de-los-contactos
 excerpt: Cómo gestionar los distintos contactos de los servicios de OVH
 section: Primeros pasos
+hidden: true
 ---
 
 **Última actualización: 03/01/2019** 
