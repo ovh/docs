@@ -104,7 +104,7 @@ To suspend an instance, click on the `Actions` menu and select `Suspend Instance
 
 > [!success]
 >
-> To restart the instance, select the `Resumme Instance`{.action} from the `Actions` menu.
+> To restart the instance, select the `Resume Instance`{.action} from the `Actions` menu.
 >
 
 ###### Pausing an instance
