@@ -22,8 +22,8 @@ Esta guía explica cómo configurar Cyberduck para gestionar el Object Storage d
 Para seguir todos los pasos de esta guía es necesario disponer de:
 
 
-- un usuario de Horizon configurado ([cómo crear un acceso a Horizon](../acceder-a-la-console-dune-instance-dans-horizon){.ref};
-- el identificador de su proyecto y su usuario, que puede obtener en el menú [«Acceso y seguridad»](../acces-et-securite-dans-horizon){.ref} de Horizon, descargando el archivo OpenRC.
+- un usuario de Horizon configurado ([cómo crear un acceso a Horizon](https://docs.ovh.com/us/es/public-cloud/crear-y-eliminar-un-usuario-de-openstack/){.ref};
+- el identificador de su proyecto y su usuario, que puede obtener en el menú [«Acceso y seguridad»](https://docs.ovh.com/us/en/public-cloud/access_and_security_in_horizon/){.ref} de Horizon, descargando el archivo OpenRC.
 
 
 

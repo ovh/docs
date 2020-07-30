@@ -1,9 +1,10 @@
 ---
-title: 'Todo sobre el ID de cliente de OVH'
+title: 'Todo sobre el ID de cliente de OVHcloud'
 slug: todo-sobre-el-id-de-cliente
 legacy_guide_number: 2123
 excerpt: 'Esta guía explica para qué sirve el ID de cliente y cómo podemos obtenerlo'
 section: 'Primeros pasos'
+hidden: true
 ---
 
 ## ¿Para qué sirve?
@@ -13,7 +14,7 @@ El ID de cliente (también llamado NIC Handle) permite:
 - identificarse rápidamente para acceder a los servicios de atención al cliente y facilitar el tratamiento de sus solicitudes;
 - administrar fácilmente todos sus servicios desde el área de cliente.
 
-Tiene el siguiente formato: **dm429850-OVH**
+Tiene el siguiente formato: **dm429850-ovhd**
 
 
 ## ¿Cómo crear un ID de cliente?

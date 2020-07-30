@@ -12,13 +12,13 @@ Al realizar el upgrade de un VPS, es posible que tenga que reparticionar su espa
 
 > [!warning]
 >
-> El reparticionamiento de un VPS puede dañar los datos que contiene de forma definitiva. OVH no podrá ser considerado responsable de su deterioro o pérdida. Antes de realizar cualquier acción, le recomendamos que haga una copia de seguridad de sus datos.
+> El reparticionamiento de un VPS puede dañar los datos que contiene de forma definitiva. OVHcloud no podrá ser considerado responsable de su deterioro o pérdida. Antes de realizar cualquier acción, le recomendamos que haga una copia de seguridad de sus datos.
 >
 
 ## Requisitos
 
 - Tener acceso al VPS por SSH (acceso *root*).
-- Haber reiniciado el servidor en [modo de rescate](https://docs.ovh.com/es/vps/rescue/){.external}.
+- Haber reiniciado el servidor en [modo de rescate](../rescue/){.external}.
 
 ## Procedimiento
 
@@ -32,7 +32,7 @@ Ampliar una partición puede provocar la pérdida de datos, por lo que **le reco
 
 ### Desmontar la partición
 
-Una vez que se haya conectado al VPS en [modo de rescate](https://docs.ovh.com/es/vps/rescue/), la partición se montará automáticamente. Para poder redimensionarla, primero deberá desmontarla. Si ya conoce el nombre de la partición, puede saltarse esta etapa. Si no lo conoce, utilice el siguiente comando:
+Una vez que se haya conectado al VPS en [modo de rescate](../rescue/), la partición se montará automáticamente. Para poder redimensionarla, primero deberá desmontarla. Si ya conoce el nombre de la partición, puede saltarse esta etapa. Si no lo conoce, utilice el siguiente comando:
 
 ```sh
 lsblk
@@ -72,7 +72,7 @@ Pass 5: Checking group summary information
 
 Si encuentra un error, deberá adoptar las medidas adecuadas en cada caso. Estos son algunos de los errores más frecuentes:
 
-- **bad magic number in superblock**: No continúe. Para solucionar este problema, consulte el apartado [Cómo solucionar los errores «bad magic number in superblock»](https://docs.ovh.com/es/vps/reparticionar-vps-tras-upgrade/#como-solucionar-los-errores-bad-magic-number-in-superblock){.external} de esta guía.
+- **bad magic number in superblock**: No continúe. Para solucionar este problema, consulte el apartado [Cómo solucionar los errores «bad magic number in superblock»](../reparticionar-vps-tras-upgrade/#como-solucionar-los-errores-bad-magic-number-in-superblock){.external} de esta guía.
 
 - **/dev/vdb1 has unsupported feature(s): metadata_csum**, seguido de **e2fsck: Get a newer version of e2fsck!**: Actualice **e2fsck**. Si la última versión no está disponible a través de **apt** o cualquier otro gestor de paquetes, deberá compilarla a partir del código fuente.
 
@@ -228,4 +228,4 @@ fsck -b 32768 /dev/sdb1
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/){.external}.

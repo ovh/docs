@@ -18,14 +18,12 @@ You can enable two-factor authentication (2FA). This is linked to your username-
 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 - a smartphone (for the SMS method), a smartphone or tablet (for the mobile application method), or a Universal Second Factor (U2F) security key
-- an understanding of the [password management recommendations for accessing your account](https://docs.ovh.com/ca/en/customer/manage-password/)
+- an understanding of the [password management recommendations for accessing your account](../manage-password/)
 
 ## Instructions
 
 You can enable one or more two-factor authentication methods to secure and control access to the OVHcloud Control Panel.
-We offer three different methods:
-
-- **via SMS**. Enter your mobile phone number. You will be sent a one-time code via SMS each time you try to log in to your OVHcloud account. The main advantage of this method is that the code you use is sent to a device separate to your computer. If your computer’s security is compromised by malware, for example, your account will remain secure. However, it is important to keep in mind that you need sufficient network coverage to receive SMS messages.
+We offer two different methods:
 
 - **via an OTP mobile application**. Install an OTP mobile application on to your Android or iOS smartphone or tablet. Next, link the application to your OVHcloud account. Each time you try to log in to your account, the application will generate a one-time code valid for a short time period.
 Once you have linked the application to your account, your device no longer needs an internet connection for the codes to be generated.
@@ -35,8 +33,8 @@ Once you have linked the application to your account, your device no longer need
 
 ### Step 1: Enable your first two-factor authentication method.
 
-- [Enabling two-factor authentication via mobile application](https://docs.ovh.com/ca/en/customer/enable-two-factor-authentication-via-mobile-application/)
-- [Enabling two-factor authentication via security key](https://docs.ovh.com/ca/en/customer/enable-two-factor-authentication-via-security-key/)
+- [Enabling two-factor authentication via mobile application](../enable-two-factor-authentication-via-mobile-application/)
+- [Enabling two-factor authentication via security key](../enable-two-factor-authentication-via-security-key/)
 
 Once you have added your first method, you can also add one or two other methods, so that you have more choice in how you log in to your account.
 

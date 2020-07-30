@@ -9,10 +9,10 @@ There are different ways to use your Ceph cluster. We'll describe how to map you
 
 You must first ensure that you have done those steps :
 
-- [Create a pool](../guide.en-au.md){.ref}
-- [Create a user](../guide.en-au.md){.ref}
-- [Add rights to a user on a pool](../guide.en-au.md){.ref}
-- [Add an IP ACL](../guide.en-au.md){.ref} to allow your server to contact the cluster
+- [Create a pool](https://docs.ovh.com/ca/en/storage/ceph/create-a-pool/)
+- [Create a user](https://docs.ovh.com/ca/en/storage/ceph/create-a-user/)
+- [Add rights to a user on a pool](https://docs.ovh.com/ca/en/storage/ceph/change-user-rights/)
+- [Add an IP ACL](https://docs.ovh.com/ca/en/storage/ceph/create-an-ip-acl/) to allow your server to contact the cluster
 
 
 ## Ceph installation
@@ -54,9 +54,9 @@ Create the file /etc/ceph/ceph.client.<ceph_user_name>.keyring
 2. key = <my_user_key>
 ```
 
-<mon_X_IP> has to be replaced by monitors IP you can find on your [Ceph as a Service manager.](https://www.ovh.com/manager/sunrise/caas/index.html#/caas){.external}.
+<mon_X_IP> has to be replaced by monitors IP you can find on your [Ceph as a Service manager.](https://ca.ovh.com/manager/){.external}.
 
-<my_user_key> has to be replaced by the users's key you can find on your [Ceph as a Service manager.](https://www.ovh.com/manager/sunrise/caas/index.html#/caas){.external}.
+<my_user_key> has to be replaced by the users's key you can find on your [Ceph as a Service manager.](https://ca.ovh.com/manager/){.external}.
 
 
 ## Configuration check

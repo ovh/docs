@@ -1,7 +1,7 @@
 ---
-title: 'Gérer ses commandes OVH'
+title: 'Gérer ses commandes OVHcloud'
 slug: gerer-ses-commandes-ovh
-excerpt: 'Découvrez comment gérer vos commandes chez OVH'
+excerpt: 'Découvrez comment gérer vos commandes chez OVHcloud'
 section: 'Gérer ses commandes, factures et services'
 ---
 
@@ -9,19 +9,19 @@ section: 'Gérer ses commandes, factures et services'
 
 ## Objectif
 
-Une commande chez OVH passe par différents états, que vous pouvez suivre dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Une commande chez OVHcloud passe par différents états, que vous pouvez suivre dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 **Ce guide vous explique comment comprendre votre bon de commande et ses différents états.**
 
 > [!primary]
 >
-> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVH disponibles dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}, rubrique `Mes services`{.action} puis `Mes contrats`{.action}.
+> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}, rubrique `Mes services`{.action} puis `Mes contrats`{.action}.
 >
 
 ## Prérequis
 
-- Être connecté à l’[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
-- Avoir passé au moins une commande chez OVH.
+- Être connecté à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Avoir passé au moins une commande chez OVHcloud.
 
 
 ##  En pratique
@@ -30,26 +30,26 @@ Une commande chez OVH passe par différents états, que vous pouvez suivre dans 
 
 Le bon de commande est créé au moment du passage d'une commande. Il liste les produits commandés, leur prix et reprend les éventuelles réductions commerciales dont vous pourriez bénéficier.
 
-![Bon de commande OVH](images/order_ovh.png){.thumbnail}
+![Bon de commande OVHcloud](images/order_ovh_ca.png){.thumbnail}
 
 |Numéro|Description|
 |---|---|
 |1|Toutes les informations liées au bon de commande sont reprises ici : son numéro, sa date de création ainsi que sa date d'expiration. Il convient de noter que les bons de commande expirés n'apparaîtront plus dans votre espace client.|
-|2|Si vous êtes connecté à votre espace client lors de la commande, le contact facturation apparaîtra à cet endroit. Pour plus d'information sur les différents contacts, reportez-vous à [cette documentation](https://docs.ovh.com/ca/fr/customer/gestion-des-contacts/){.external}.|
+|2|Si vous êtes connecté à votre espace client lors de la commande, le contact facturation apparaîtra à cet endroit. Pour plus d'information sur les différents contacts, reportez-vous à [cette documentation](../customer/gestion-des-contacts/){.external}.|
 |3|Si vous avez enregistré un moyen de paiement en tant que moyen de paiement par défaut, il vous sera proposé à cet endroit. Dans le cadre d'un renouvellement automatique, un moyen de paiement par défaut est nécessaire.|
 |4|Vous trouverez ici les moyens de paiement disponibles. Ne vous seront proposés que les moyens de paiement autorisés dans le pays d'origine du compte ou ceux liés au type de compte enregistré.|
 
 
-Vous pouvez à tout moment retrouver votre bon de commande dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} comme expliqué dans la partie suivante.
+Vous pouvez à tout moment retrouver votre bon de commande dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} comme expliqué dans la partie suivante.
 
 
-### Accéder aux bons de commandes dans l'espace client OVH
+### Accéder aux bons de commandes dans l'espace client OVHcloud
 
-Pour accéder au panneau de gestion des commandes, il vous suffit de cliquer en haut à droite dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} sur votre prénom, puis sur `Mes commandes`{.action}.
+Pour accéder au panneau de gestion des commandes, il vous suffit de cliquer en haut à droite dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} sur votre prénom, puis sur `Mes commandes`{.action}.
 
-![Espace client](images/customer_panel_order.png){.thumbnail}
+![Espace client](images/customer_panel_order_ca.png){.thumbnail}
 
-Vous arriverez alors sur une page récapitulant les différentes commandes non expirées passées sur votre compte OVH.
+Vous arriverez alors sur une page récapitulant les différentes commandes non expirées passées sur votre compte OVHcloud.
 
 ![Récpitulatif des commandes](images/order_recap.png){.thumbnail}
 
@@ -72,14 +72,14 @@ Voici les différents états de commande :
 
 Dans le cas d'un bon de commande dont la livraison est en cours ou en attente de paiement, il est possible de le visualiser. Pour cela il suffit de cliquer sur `...`{.action} puis `Voir la commande au format HTML`{.action}.
 
-![Récapitulatif des commandes](images/html_order.png){.thumbnail}
+![Récapitulatif des commandes](images/html_order_ca.png){.thumbnail}
 
 
 ### Appliquer le droit de rétractation
 
 Nos [conditions Générales de Service](https://www.ovh.com/ca/fr/support/documents_legaux/Conditions_generales_de_Service.pdf){.action} précisent les modalités d'application du droit de rétractation.
 
-Si les critères d'éligibilité à ce délai de rétractation sont remplis, il peut être mis en application directement depuis [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}. Pour cela, procédez comme pour visualiser un bon de commande, mais au lieu de choisir `Voir la commande au format HTML`{.action}, choisissez `Annuler la commande`{.action}.
+Si les critères d'éligibilité à ce délai de rétractation sont remplis, il peut être mis en application directement depuis [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Pour cela, procédez comme pour visualiser un bon de commande, mais au lieu de choisir `Voir la commande au format HTML`{.action}, choisissez `Annuler la commande`{.action}.
 
 ![Annulation d'une commande](images/cancel_order.png){.thumbnail}
 
