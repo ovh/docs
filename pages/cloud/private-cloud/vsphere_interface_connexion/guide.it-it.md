@@ -28,7 +28,7 @@ Le credenziali di accesso vengono inviate via email durante la creazione di un s
 Indirizzo IP/Nome: pcc-xxx-xxx-xxx-xxx.ovh.com Nome utente: admin Password: xxxxxx
 ```
 
-Per assicurarsi di poter effettuare l’accesso, consulta la documentazione VMware in cui sono elencate le diverse porte da aprire nel firewall: [Accesso alla console](https://kb.vmware.com/kb/1012382){.external-link}
+Per assicurarsi di poter effettuare l’accesso, consulta la documentazione VMware in cui sono elencate le diverse porte da aprire nel firewall: [Accesso al terminale](https://kb.vmware.com/kb/1012382){.external-link}
 
 ### Utilizza il client Web HTML5
 
@@ -71,4 +71,4 @@ La pagina `Home`{.action} fornisce l’accesso ai menu principali del vCenter, c
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
