@@ -46,9 +46,9 @@ Per ripristinare `/` in modalità *lettura-scrittura*, è necessario riavviare l
 
 Di default, su Linux il *timeout* delle periferiche SCSI è pari a 30 secondi.
 
-Nei VMware Tools questa durata è aumentata a 180 secondi,
+Nei VMware Tools questa durata è aumentata a 180 secondi, ma consigliamo di incrementarla ulteriormente a 3600 secondi. 
 
-ma consigliamo di incrementarla ulteriormente a 3600 secondi. Il comando seguente permette di eseguire questa operazione per la sessione corrente:
+Il comando seguente permette di eseguire questa operazione per la sessione corrente:
 
 ```sh
 >     $ echo 3600 > /sys/block/`basename /dev/sda`/device/timeout
