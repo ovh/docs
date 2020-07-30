@@ -54,7 +54,7 @@ Create the file /etc/ceph/ceph.client.<ceph_user_name>.keyring
 2. key = <my_user_key>
 ```
 
-<mon_X_IP> has to be replaced by monitors IP you can find on the [Cloud Disk Array manager](https://www.ovh.com/manager/cloud/index.html){.external}. Under 'Platforms and services' select your Ceph cluster.
+<mon_X_IP> has to be replaced by monitors IP you can find on the [Cloud Disk Array manager](https://ca.ovh.com/manager/){.external}. Under 'Platforms and services' select your Ceph cluster.
 
 <my_user_key> has to be replaced by the users's key you can find on your Cloud Disk Array manager.
 
