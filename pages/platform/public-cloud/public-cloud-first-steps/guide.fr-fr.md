@@ -12,7 +12,7 @@ order: 0
 
 Les instances Pubic Cloud OVHcloud nécessitent une approche différente de celle d'une solution de serveur dédiée ou VPS.
 
-**Ce guide vous guide dans les premières étapes de la création et de la connexion à une instance Public Cloud.**
+**Ce guide vous présente les premières étapes de la création et de la connexion à une instance Public Cloud.**
 
 ## Prérequis
 
