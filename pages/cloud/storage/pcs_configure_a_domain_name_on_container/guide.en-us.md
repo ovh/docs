@@ -13,7 +13,7 @@ This guide shows you how to configure a domain on your container.
 
 
 ### Prerequisites
-- [Have a storage space](../add_storage_space){.ref}
+- [Have a storage space](https://docs.ovh.com/us/en/storage/create_an_object_container/){.ref}
 - A domain name
 
 

@@ -18,8 +18,8 @@ This guide shows you how to set up an object container as file system.
 
 ## Prerequisites
 
-- [Configure user access to Horizon](../platform/public-cloud/create_and_delete_a_user/guide.en-asia.md){.ref}
-- [Add storage space](../platform/public-cloud/add_storage_space/guide.en-asia.md){.ref}
+- [Configure user](https://docs.ovh.com/asia/en/public-cloud/set-openstack-environment-variables/)
+- [Add storage space](https://docs.ovh.com/asia/en/storage/create_an_object_container/)
 
 
 
@@ -47,7 +47,7 @@ fs-passphrase: PASSPHRASE
 OS_PROJECT_ID, OS_USERNAME and OS_PASSWORD parameters can be found in your OpenRC file.
 You can follow this guide below in order to retrieve it:
 
-- [Access and Security in Horizon]({legacy}1774)
+- [Access and Security in Horizon](https://docs.ovh.com/asia/en/public-cloud/access_and_security_in_horizon/)
 
 
 The REGION_NAME and CT_NAME arguments can be adapted according the name and location of your object container. 

@@ -11,8 +11,8 @@ Si vous souhaitez déplacer vos objets d'un data center à un autre, ou même d'
 
 
 ### Prérequis
-- [Préparez l'environnement pour utiliser l'API OpenStack](https://www.ovh.com/fr/g1851.preparer_lenvironnement_pour_utiliser_lapi_openstack){.external} avec le client swift
-- [Chargez les variables d'environnement OpenStack](https://www.ovh.com/fr/g1852.charger_les_variables_denvironnement_openstack){.external}
+- [Préparez l'environnement pour utiliser l'API OpenStack](https://docs.ovh.com/ca/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/){.external} avec le client swift
+- [Chargez les variables d'environnement OpenStack](https://docs.ovh.com/ca/fr/public-cloud/charger-les-variables-denvironnement-openstack/){.external}
 - 2 conteneurs d'objets dans 2 data-centres différents
 
 

@@ -13,8 +13,8 @@ This is compatible with OVH Public Cloud Object Storage and lets you back up you
 
 
 ### Prerequisites
-- [Add storage space](../add_storage_space){.ref}
-- [Configure user access to Horizon](../creation-and-deletion-of-openstack-user){.ref}
+- [Add storage space](https://docs.ovh.com/au/en/storage/create_an_object_container/)
+- [Configure user](https://docs.ovh.com/au/en/public-cloud/set-openstack-environment-variables/#instructions)
 
 
 ## DiskStation Manager 6.0 configuration
