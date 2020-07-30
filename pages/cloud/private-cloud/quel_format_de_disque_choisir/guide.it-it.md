@@ -21,7 +21,7 @@ VMware propone 3 diverse tipologie di disco per le macchine virtuali.
 
 Il *Thin provisioning* è un tipo di disco che utilizza esclusivamente lo spazio necessario sul datastore e che aumenta in base alle necessità.
 
-In questo modo è possibile assegnare un disco da 1 TB che sarà riconosciuto come 1 TB dal sistema operativo della VM ma che occuperà sul datastore solo lo spazio utilizzato dal *guest OS* (ad esempio 20 GB). 
+In questo modo è possibile assegnare un disco da 1 TB che sarà riconosciuto come 1 TB dal sistema operativo della VM ma occuperà sul datastore solo lo spazio utilizzato dal *guest OS* (ad esempio 20 GB). 
 
 Questo significa che a un datastore da 1,2 TB può essere assegnata una capacità di 50 TB (50 VM da 1 TB) che occuperà solo 1 TB (nel nostro esempio, 20 GB occupati/VM).
 
@@ -71,4 +71,4 @@ Sullo storage vSan è possibile scegliere uno qualsiasi dei 3 formati.
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
