@@ -87,7 +87,7 @@ The result will be in this form:
 
 ![nexthop field](images/api-result.png){.thumbnail}
 
-Then use this API call to move the IP into the IPS parking lot:
+Then use this API call to move the IP addresses to "IP parking":
 
 > [!api]
 >
