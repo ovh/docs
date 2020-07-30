@@ -17,7 +17,7 @@ Vous pouvez prendre un snapshot d'une machine virtuelle. Une fois que vous avez 
 
 ## Prérequis
 
-- Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external}.
 - Être connecté au client vSphere HTML
 
 ## En pratique
