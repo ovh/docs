@@ -77,8 +77,6 @@ Si les adresses IP publiques attachées au HPC d'origine sont nécessaires sur l
 
 Consultez notre guide pour [migrer des blocs IP entre deux services Hosted Private Cloud](../ajout-de-bloc-ip/#migrer-un-bloc-ip-entre-deux-hosted-private-cloud).
 
---Vidéo 3--
-
 ### Contexte VMware :
 
 #### Configuration des clusters
