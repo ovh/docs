@@ -5,7 +5,7 @@ order: 1
 section: Visualize your logs
 ---
 
-**Last updated 29th July, 2019**
+**Last updated 27th July, 2020**
 
 ## Objective
 
@@ -17,7 +17,6 @@ section: Visualize your logs
 This is what you need to know to get you started:
 
 - you are already sending logs on a stream you own [see the quick start tutorial](../quick_start/guide.fr-fr.md){.ref}
-- You have ordered the Kibana AAS or the Alias Option.
 - Your have access to the port 9200 to your cluster (head to the **Home** page in manager to know the address of your cluster).
 
 After some training you will be able to create this kind of dashboard: 
@@ -41,12 +40,12 @@ To access your logs from Grafana, you will need to setup an Elasticsearch Alias 
 
 ![Alias creation](images/alias.png){.thumbnail}
 
-So here you go, now Logs Data Platform knows what is the stream you want to browse. Now let’s configure Grafana and see if it works!
+So here you go, now Logs Data Platform knows what stream you want to browse. Now let’s configure Grafana and see if it works!
 
 
 ### Setup your own grafana
 
-Get the latest Grafana release here: [http://grafana.org/download/](http://grafana.org/download/){.external} (v6.2.5 2019-06-25 at the time of writing).
+Get the latest Grafana release here: [http://grafana.org/download/](http://grafana.org/download/){.external} (v7.1.1 2020-07-24 at the time of writing).
 Then follow the Grafana installation guide according your platform: [http://docs.grafana.org/installation/](http://docs.grafana.org/installation/){.external}
 
 ### Launch it!
@@ -63,7 +62,7 @@ If everything is setup properly, launch your favorite browser, and point it to [
 > - Set your Logs Data Platforms credentials for Basic auth values
 > - Set your Logs Data Platforms alias name as Grafana Index name value
 > - Change default Time field name to timestamp
-> - Set **6.x** as Elasticsearch version
+> - Set **6.0+** as Elasticsearch version
 > - Register your data source and test it.
 > 
 
@@ -82,5 +81,5 @@ If you want to know what you can do with Grafana and Elasticsearch, you can fly 
 
 - Getting Started: [Quick Start](../quick_start/guide.fr-fr.md){.ref}
 - Documentation: [Guides](../product.fr-fr.md){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

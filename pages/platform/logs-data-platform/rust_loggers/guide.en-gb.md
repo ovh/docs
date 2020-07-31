@@ -5,13 +5,13 @@ order: 30
 section: Logging libraries
 ---
 
-**Last updated 24th April, 2019**
+**Last updated 27th July, 2020**
 
 ## Objective
 
 This guide will show you how to push your logs to Logs Data Platform using Rust.
 
-Rust has a logging implementation ([log](https://docs.rs/log/*/log/){.external}) which is widely used. OVH has implemented this system to support the [GELF format](http://docs.graylog.org/en/latest/pages/gelf.html#gelf-payload-specification){.external}:
+Rust has a logging implementation ([log](https://docs.rs/log/*/log/){.external}) which is widely used. OVHcloud has implemented this system to support the [GELF format](http://docs.graylog.org/en/latest/pages/gelf.html#gelf-payload-specification){.external}:
 
 - **gelf_logger**: This is a minimal logger.
 - **log4rs-gelf**: Based on _gelf_logger_, this implementation is compatible with the complex configurable framework [log4rs](https://docs.rs/log4rs/*/log4rs/){.external}.
@@ -152,4 +152,4 @@ You could also look at the [generated API documentation](https://docs.rs/log4rs-
 - Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
 - Documentation: [Guides](../product.en-gb.md){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

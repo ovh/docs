@@ -5,7 +5,7 @@ order: 10
 section: Logging libraries
 ---
 
-**Last updated 10th April, 2019**
+**Last updated 29th July, 2020**
 
 ## Objective
 
@@ -151,4 +151,5 @@ ltsv_logger.info("Bonjour '%s'", 'John', extra={"lang": 'fr'})
 - Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
 - Documentation: [Guides](../product.fr-fr.md){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+

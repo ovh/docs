@@ -6,11 +6,11 @@ section: Use cases
 excerpt: Monitor and analyze your web applications with HAProxy and Logs Data Platform.
 ---
 
-**Last updated 10th April, 2019**
+**Last updated 27th July, 2020**
 
 ## Objective
 
-[HAProxy](http://www.haproxy.org/){.external} is the de-facto standard load balancer for your TCP and HTTP based applications. This French software provides high availability, load balancing, and proxying with high performance, unprecedented reliability and a very fair price (it's completely free and open-source). It is used by the world most visited web sites and is also heavily used internally at OVH and in some of our products.
+[HAProxy](http://www.haproxy.org/){.external} is the de-facto standard load balancer for your TCP and HTTP based applications. This French software provides high availability, load balancing, and proxying with high performance, unprecedented reliability and a very fair price (it's completely free and open-source). It is used by the world most visited web sites and is also heavily used internally at OVHcloud and in some of our products.
 
 HAProxy has a lot of features and because it is located between your infrastructure and your clients, it can give you a lot of information about either of them. Logs Data Platform helps you to exploit this data and can answer to a lot of your questions:
 
@@ -49,7 +49,7 @@ Here is an example of a log line with the HTTP log format :
  haproxy[14389]: 5.196.2.38:39527 [03/Nov/2015:06:25:25.105] services~ api/api 4599/0/0/428/5027 304 320 - - ---- 1/1/0/1/0 0/0 "GET /v1/service HTTP/1.1"
 ```
 
-Every block of this line (including the dashes characters) gives one piece of information about the terminated connection. On this single line you have information about the process, its pid, the client ip, the client port, the date of the opening of the connection, the frontend, backend and server names, timers in milliseconds waiting for the client, process buffers, and server, the status code, the number of bytes read, the cookies information, the termination state, the number of concurrent connection respectively on the process, the frontend, the backend and the servers, the number of retries, the backend queue number and finally the request itself. You can visit the chapter 8 [on HAProxy Documentation](http://www.haproxy.org/download/1.6/doc/configuration.txt){.external} to have a detailed description on all these formats and on the available fields.
+Every block of this line (including the dashes characters) gives one piece of information about the terminated connection. On this single line you have information about the process, its pid, the client ip, the client port, the date of the opening of the connection, the frontend, backend and server names, timers in milliseconds waiting for the client, process buffers, and server, the status code, the number of bytes read, the cookies information, the termination state, the number of concurrent connection respectively on the process, the frontend, the backend and the servers, the number of retries, the backend queue number and finally the request itself. You can visit the chapter 8 [on HAProxy Documentation](http://www.haproxy.org/download/2.3/doc/configuration.txt){.external} to have a detailed description on all these formats and the available fields.
 
 To activate the logging on HAProxy you must set a global **log** option on the **/etc/haproxy/haproxy.cfg**.
 
@@ -81,11 +81,14 @@ This option tells HAProxy to route logs to the **/dev/log** socket with differen
    server lb-cloud-2 192.168.XXX.XXX:53100 check port 53100 weight 10
 ```
 
+
+We can send logs to Logs Data Platform by using several softwares. One of them is Rsyslog, the other one is Filebeat. You're free to use whichever method looks more familiar to you. 
+
 ### Rsyslog&#58;
 
 [Rsyslog](http://www.rsyslog.com){.external} is a fast log processor fully compatible with the syslog protocol. It has evolved into a generic collector able to accept entries from a lot of different inputs, transform them and finally send them to various destinations. Installation and configuration documentation can be found at the official website. Head to [http://www.rsyslog.com/doc/v8-stable/](http://www.rsyslog.com/doc/v8-stable/){.external} for detailed information.
 
-To send HAProxy logs to Logs Data Platform, we will use several methods: a [dedicated Logstash collector](../logstash_input/guide.fr-fr.md){.ref} and the plain [LTSV format](http://ltsv.org){.external}. The first method is the least intrusive and can be used when you need Logstash processing of your logs (for example to anonymize some logs under some conditions. The second method should be preferred when you have a high traffic website (at least 1000 requests by second.).
+To send HAProxy logs with RSyslog, we will use several methods: a [dedicated Logstash collector](../logstash_input/guide.fr-fr.md){.ref} and the plain [LTSV format](http://ltsv.org){.external}. The first method is the least intrusive and can be used when you need Logstash processing of your logs (for example to anonymize some logs under some conditions). The second method should be preferred when you have a high traffic website (at least 1000 requests by second.). 
 
 For both methods you will need our SSL certificate to enable TLS communication. Some Debian Linux distributions need you to install the package **rsyslog-gnutls** to enable SSL.
 
@@ -97,7 +100,7 @@ Once you have activated the tcp or http logs of your HAProxy instance, you must 
 
 #### Logstash collector configuration
 
-As you may guess we have to configure the Logstash collector with some clever [Grok filters](https://www.elastic.co/guide/en/logstash/6.7/plugins-filters-grok.html){.external} to make the collector be aware of our [field naming convention](../field_naming_conventions/guide.fr-fr.md){.ref}. The collector will accept logs in a generic [TCP input](https://www.elastic.co/guide/en/logstash/6.7/plugins-inputs-tcp.html){.external} and use grok filters to extract the information. Thanks to the wizard feature, you won't even need to copy and paste the following configuration snippets, but they are still given for reference purpose.
+As you may guess we have to configure the Logstash collector with some clever [Grok filters](https://www.elastic.co/guide/en/logstash/6.7/plugins-filters-grok.html){.external} to make the collector be aware of our [field naming convention](../field_naming_conventions/guide.fr-fr.md){.ref}. The collector will accept logs in a generic [TCP input](https://www.elastic.co/guide/en/logstash/7.x/plugins-inputs-tcp.html){.external} and use grok filters to extract the information. Thanks to the wizard feature, you won't even need to copy and paste the following configuration snippets, but they are still given for reference purpose.
 
 Here is the Logstash input configuration:
 
@@ -207,7 +210,7 @@ For the first action you will need the collector certificate and its hostname, y
 
 ![collector\_menu](images/collector_info.png){.thumbnail}
 
-Copy the certificate in a file **logstash.pem** and copy the hostname and your port. Depending of your flavor of rsylog and HAProxy, your configuration file may be already present at a particular location. If you do not have any HAProxy related file in the directory **/etc/rsyslog.d/**, create a new file in this directory. if the directory does not exist , simply edit the **/etc/rsyslog.conf** file. Don't hesitate to review [the rsyslog documentation](http://www.rsyslog.com/doc/master/configuration/index.html){.external} to have more information. On Debian flavors for example, if you used the rsyslog and HAProxy packages you may have a file located in **/etc/rsyslog.d/46-haproxy.conf**. In that case, you should prefer editing this file.
+Copy the certificate in a file **logstash.pem** and copy the hostname and your port. Depending of your flavor of rsylog and HAProxy, your configuration file may be already present at a particular location. If you do not have any HAProxy related file in the directory **/etc/rsyslog.d/**, create a new file in this directory. If the directory does not exist , simply edit the **/etc/rsyslog.conf** file. Don't hesitate to review [the rsyslog documentation](http://www.rsyslog.com/doc/master/configuration/index.html){.external} to have more information. On Debian flavors for example, if you used the rsyslog and HAProxy packages you may have a file located in **/etc/rsyslog.d/46-haproxy.conf**. In that case, you should prefer editing this file.
 
 ```text hl_lines="4 10"
  $AddUnixListenSocket /var/lib/haproxy/dev/log
@@ -244,7 +247,7 @@ This format not only define which values are logged but also the final name of t
 
 #### Rsyslog template configuration
 
-Rsyslog configuration will be enhanced by using a LTSV template instead of the default configuration. If you have configured your own Flowgger collector on Logs Data Platform, use its certificate and hostname. If you want to use the global LTSV input of your cluster, head to the **Home page** to copy your cluster certificate and get your LTSV endpoint port. You should choose the **LTSV line** port for this use case. One of the downside of using the global input is that you will have to provide the token of your stream in a X-OVH-TOKEN field. Navigate to the **Stream page** on the OVH Manager to retrieve your token.
+Rsyslog configuration will be enhanced by using a LTSV template instead of the default configuration. If you have configured your own Flowgger collector on Logs Data Platform, use its certificate and hostname. If you want to use the global LTSV input of your cluster, head to the **Home page** to copy your cluster certificate and get your LTSV endpoint port. You should choose the **LTSV line** port for this use case. One of the downside of using the global input is that you will have to provide the token of your stream in a X-OVH-TOKEN field. Navigate to the **Stream page** on the OVHcloud Manager to retrieve your token.
 
 Here is the rsyslog configuration:
 
@@ -293,6 +296,54 @@ if $programname startswith 'haproxy' then /var/log/haproxy.log
 
 In this configuration, we added some $Action directives to have a more robust configuration and never lose messages when there is a network issue for example. As we mentioned before, you should replace the $DefaultNetstreamDriverCAFile path to your endpoint certificate path. This setup uses two templates that are used in two different cases. The first one is when the incoming message is a LTSV one. We detect it by looking for tabulations characters in the message. If there is no tabulation, we use the second template: it means it is an unexpected message and to not lose it, we enclose it in a dedicated message: field. These templates add some information like the token. You should put your own stream token in both template and you can also add any custom field.
 
+
+### Filebeat
+
+[Filebeat](https://www.elastic.co/fr/downloads/beats/filebeat-oss){.external} and its HAProxy module allow you to bypass the log formatting step entirely. You will still need RSyslog or any equivalent software to retrieve the logs from HAProxy. On Debian/Ubuntu, the HAProxy package will also setup the rsyslog configuration file at the following path **/etc/rsyslog.d/49-haproxy.conf**. You may have to restart Rsyslog to see logs appearing in the default path **/var/log/haproxy.log**.
+
+After you have downloaded filebeat, you need to enable the HAProxy module by running the following command:
+
+```shell-session
+sudo filebeat modules enable haproxy
+```
+
+
+Edit your filebeat.yml configuration file to include the following snippet to enable log file reading in the module and to configure filebeat with our special Elasticsearch input.
+
+```yaml
+filebeat.modules:
+- module: haproxy
+  log:
+    enabled: true
+    var.paths: ["/var/log/haproxy.log"]
+    var.input: "file"
+
+fields_under_root: true
+fields:
+  X-OVH-TOKEN: <your-stream-token>
+
+setup.template.enabled: false
+
+output.elasticsearch:
+  # Array of hosts to connect to.
+  hosts: ["<your-cluster>.logs.ovh.com:9200"]
+
+  # Protocol - either `http` (default) or `https`.
+  #protocol: "https"
+
+  # Authentication credentials - either API key or username/password.
+  username: "<your-ldp-username-or-your-token>"
+  password: "<your-password-or-token>"
+  index: "ldp-logs"
+
+```
+
+In this configuration you have to replace the token by your X-OVH-TOKEN value of your destination stream. Note that you also got to indicate the username and password or your [token](../tokens_logs_data_platform/guide.fr-fr.md){.ref}. Don't change the destination index **ldp-logs**. Start your filebeat and head to Logs Data Platform to start analyzing your logs. 
+
+```shell-session
+$ sudo systemctl enable filebeat
+$ sudo systemctl start filebeat
+
 ### Dashboard and alerts
 
 Here is an example of a dashboard that you can craft from the HAProxy logs. HAProxy logs give you a lot of information about your application and infrastructure. It's up to you to exploit them in whichever way suits you best. You can also configure some [alerts](../alerting/guide.fr-fr.md){.ref} to warn you when a backend is down or is not responding properly.
@@ -305,5 +356,5 @@ Here is an example of a dashboard that you can craft from the HAProxy logs. HAPr
 
 - Getting Started: [Quick Start](../quick_start/guide.fr-fr.md){.ref}
 - Documentation: [Guides](../product.fr-fr.md){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

@@ -6,17 +6,17 @@ excerpt: All the logs of your pods in one place
 section: Use cases
 ---
 
-**Last updated 8th August, 2019**
+**Last updated 27th July, 2020**
 
 ## Objective 
 
-[Kubernetes](https://kubernetes.io/){.external} is the de facto standard to manage containerized applications on cloud platforms. It is open source, has a large ecosystem, and has a ever growing community. Kubernetes is great but once your containers go live in the cloud, you still want to monitor their behavior. The more containers you have, the more difficult it can be to navigate through the logs and have a clear picture of what's happening. How can you centralize all your Kubernetes pods logs in one place and analyze them easily ? By using Logs Data Platform with the help of Fluent Bit. [Fluent Bit](http://fluentbit.io/) is a fast and lightweight log processor and forwarder. It is open source, cloud oriented and a part of the [Fluentd](http://fluentd.org/){.external} ecosystem. This tutorial will help you to configure it for Logs Data Platform, you can of course apply it to our [fully managed Kubernetes offer](https://www.ovh.com/fr/public-cloud/kubernetes/){.external}.
+[Kubernetes](https://kubernetes.io/){.external} is the de facto standard to manage containerized applications on cloud platforms. It is open source, has a large ecosystem, and has a ever growing community. Kubernetes is great but once your containers go live in the cloud, you still want to monitor their behavior. The more containers you have, the more difficult it can be to navigate through the logs and have a clear picture of what's happening. How can you centralize all your Kubernetes pods logs in one place and analyze them easily ? By using Logs Data Platform with the help of Fluent Bit. [Fluent Bit](http://fluentbit.io/) is a fast and lightweight log processor and forwarder. It is open source, cloud oriented and a part of the [Fluentd](http://fluentd.org/){.external} ecosystem. This tutorial will help you to configure it for Logs Data Platform, you can of course apply it to our [fully managed Kubernetes offer](https://www.ovh.co.uk/public-cloud/kubernetes/){.external}.
 
 ## Requirements 
 
 Note that in order to complete this tutorial, you should have at least:
 
-- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- [Activated your Logs Data Platform account.](https://www.ovh.co.uk/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
 - [Created at least one Stream and get its token.](../quick_start/guide.fr-fr.md){.ref}
 - A working kubernetes cluster with some pods already logging to stdout. 
 - 15 minutes. 
@@ -59,13 +59,13 @@ there is several methods to create a secret in Kubernetes, for brevity sake, we 
 kubectl --namespace logging create secret generic ldp-token --from-literal=ldp-token=<your-token-value>
 ```
 
-We create a *ldp-token* secret with only one key named *ldp-token* as the value of our token. Replace the *ldp-token* value with the value of your token.
+We create a *ldp-token* secret with only one key named *ldp-token* as the value of our token. Replace the *ldp-token* value with the value of your token. 
 
 #### ConfigMap File
 
 Even if it is undocumented, Fluent Bit supports [GELF](https://docs.graylog.org/en/stable/pages/gelf.html){.external} as a standard output with udp,tcp and TLS protocols out of the box. We will modify the proposed file of the documentation to parse and convert Fluent Bit logs to GELF:
 
-```yaml hl_lines="103 113"
+```yaml
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -144,6 +144,7 @@ data:
         Host            ${FLUENT_LDP_HOST}
         Port            ${FLUENT_LDP_PORT}
         Mode            tls
+	tls             On
         Compress        False
 
   parsers.conf: |
@@ -209,7 +210,7 @@ The final part of the file is some parsers that you can use to create structured
 
 To upload the configuration file use the following command 
 
-```shell-session 
+```shell-session
 kubectl create -f fluent-bit-configmap.yaml
 ```
 
@@ -291,12 +292,12 @@ spec:
 In this file you must specify the address of your cluster (here **gra2.logs.ovh.com** for example) and the port of the GELF TLS input (here **12202**). You will find these information at the **Home** page of your Logs Data Platform manager. 
 
 Upload this file with the following command:
-```shell-session 
+```shell-session
 kubectl create -f fluent-bit-ds.yaml
 ```
 
 Verify that the pods are running correctly with the command: 
-```shell-session 
+```shell-session
 kubectl get pods --namespace logging 
 ```
 
@@ -311,6 +312,4 @@ And that's it. Your kubernetes activity is now perfectly logged in one place. Ha
 - Getting Started: [Quick Start](../quick_start/guide.fr-fr.md){.ref}
 - Documentation: [Guides](../product.fr-fr.md){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
-
-
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
