@@ -25,7 +25,7 @@ Après avoir créé une machine virtuelle (VM) dans votre infrastructure, vous p
 
 Vous pouvez récupérer les informations de votre bloc d'adresses IP publiques directement depuis le client vSphere, en vous rendant dans la section `Hôtes et clusters`{.action}. Cliquez ensuite sur votre datacentre et choisissez l’onglet `Configurer`{.action}. Cliquez alors sur `Réseau`{.action} en dessous de `OVHcloud`.
 
-![Configuration sur l'OVH Network](images/01config_ip_ovh_network.png){.thumbnail}
+![Configuration sur l'OVHcloud Network](images/01config_ip_ovh_network.png){.thumbnail}
 
 Sur chaque bloc livré par OVHcloud, 5 adresses IP sont réservées à la configuration du réseau et ne doivent jamais être utilisées pour vos machines virtuelles. Il s'agit de la première et des quatre dernières IP du bloc.
 
@@ -90,7 +90,7 @@ Serveur DNS : 213.186.33.99
 
 ### Configurer une IP privée
 
-La configuration d'une IP privée est similaire à celle d'une IP publique. Vous devez toutefois utiliser la carte réseau configurée pour votre VLAN ou votre VXLAN.
+La configuration d'une IP privée est similaire à celle d'une IP publique. Vous devez toutefois utiliser la carte réseau configurée pour votre VLAN ou votre VxLAN.
 
 Dans le choix de votre interface, vous pouvez éditer les paramètres suivants :
 
@@ -111,7 +111,7 @@ Dans les paramètres de votre machine virtuelle, vous pouvez utiliser un VLAN ou
 
 Dans les paramètres de votre machine virtuelle, vous devez utiliser un VxLAN :
 
-![VXLAN sur Private Cloud](images/06vxlan.png){.thumbnail}
+![VxLAN sur Private Cloud](images/06vxlan.png){.thumbnail}
 
 #### Linux
 
