@@ -4,6 +4,7 @@ excerpt: Découvrez comment gérer tous les aspects liés à la migration d'un s
 slug: hpc-migration
 section: Premiers pas
 order: 6
+hidden: true
 ---
 
 **Dernière mise à jour le 31/07/2020**
@@ -30,25 +31,25 @@ Nous aborderons dans ce guide les notions de **Hosted Private Cloud d'origine (H
 
 #### Sécurité
 
-##### Contexte de connexion au HPC
+##### **Contexte de connexion au HPC**
 
 Pour vous connecter à la plateforme VMware, vous pouvez choisir de bloquer l'accès au vSphere par défaut. Pour cela, consultrez notre guide sur la [politique d'accès au vCenter](../changer-la-politique-d-acces-au-vcenter/).
 
 Suite au changement de politique d'accès, si celle-ci est passée en « restreinte », il faut bien sûr appliquer les mêmes IPs de connexion sur le HPC de destination que sur le service HPC d'origine.
 
-##### Utilisateurs du HPC
+##### **Utilisateurs du HPC**
 
 Dans le cycle de vie du HPC d'origine, une liste d'utilisateurs peut avoir été créée pour des besoins métiers, ou des besoins organisationnels. Vous devez donc les créer à nouveau sur le HPC de destination et leur attribuer les droits adéquats, en fonction de la configuration du HPC de destination.
 
 Consultez à cet effet nos guides pour [changer les droits d'un utilisateur](../changer-les-droits-d-un-utilisateur/), [modifier le mot de passe d'un utilisateur](../changement-du-mot-de-passe-utilisateur/) et [associer un e-mail à un utilisateur](../associer-email-a-un-utilisateur/).
 
-##### KMS
+##### **KMS**
 
 Si des machines virtuelles sont protégées par un chiffrement et que cela constitue un prérequis pour le HPC de destination, il sera nécessaire de recréer le contexte de chiffrement sur ce dernier.
 
 Consultez donc notre guide sur l'[activation du chiffrement des machines virtuelles](../vm-encrypt/) afin d'activer le KMS sur le HPC de destination.
 
-##### Certifications
+##### **Certifications**
 
 Pour des raisons de conformité, les options [PCI DSS](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/pci-dss/) et [HDS](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/hds/)  peuvent avoir été activées sur le HPC d'origine.
 
@@ -56,7 +57,7 @@ Ces options doivent donc être réactivées sur le HPC de destination. À cet ef
 
 #### Réseau
 
-##### vRack
+##### **vRack**
 
 > [!warning]
 >
@@ -65,7 +66,7 @@ Ces options doivent donc être réactivées sur le HPC de destination. À cet ef
 
 Vous pouvez, dans le cadre d'une migration lier vos services HPC au sein du même vRack. Consultez notre guide sur [l'utilisation du Private Cloud au sein d'un vRack](../utiliser-le-private-cloud-au-sein-d-un-vrack/).
 
-##### Réseau public
+##### **Réseau public**
 
 > [!warning]
 >
@@ -82,15 +83,15 @@ Consultez notre guide pour [migrer des blocs IP entre deux services Hosted Priva
 
 #### Configuration des clusters
 
-##### Configuration de VMware HA
+##### **Configuration de VMware HA**
 
 La migration implique de refaire la configuration du VMware High Availability (HA), notamment l'ordre et la priorité de boot. Consultez [notre guide sur sa configuration](../vmware-ha-high-availability/).
 
-##### Configuration de VMware DRS
+##### **Configuration de VMware DRS**
 
 La migration implique de refaire la configuration de la fonction VMware DRS (Distributed Resource Scheduler), notamment les groupes de hosts et de VMs. Consultez [notre guide sur sa configuration](../vmware-drs-distributed-ressource-scheduler-new/).
 
-##### Pools de ressources
+##### **Pools de ressources**
 
 La migration nécessite de refaire les pools de ressources comprenant les réservations, les partages et les vApp.
 
@@ -120,9 +121,11 @@ La vidéo ci-dessous vous détaillera comment configurer un HPC avec la solution
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/f8ufrsP4PQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+
 La vidéo suivante vous détaillera quant à elle comment faire une réplication de votre infrastructure HPC avec la solution Veeam Backup & Replication.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NqNtKrJSH8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 Vous pouvez également consulter [la documentation de Veeam](https://www.veeam.com/veeam_backup_10_0_user_guide_vsphere_pg.pdf){.external}.
 
