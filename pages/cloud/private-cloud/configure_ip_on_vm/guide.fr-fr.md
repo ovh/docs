@@ -6,7 +6,7 @@ section: 'Gestion des machines virtuelles'
 order: 5
 ---
 
-**Dernière mise à jour le 28/11/2017**
+**Dernière mise à jour le 31/07/2020**
 
 ## Objectif
 
@@ -23,25 +23,25 @@ Après avoir créé une machine virtuelle (VM) dans votre infrastructure, vous p
 
 ### Récupérer les informations
 
-Vous pouvez récupérer les informations de votre bloc d'adresses IP publiques directement depuis le client vSphere, en vous rendant dans la section `Hosts and Clusters”`{.action}. Cliquez ensuite sur votre cluster et choisissez l’onglet `Manage`{.action} puis `OVH Network`{.action}.
+Vous pouvez récupérer les informations de votre bloc d'adresses IP publiques directement depuis le client vSphere, en vous rendant dans la section `Hôtes et clusters`{.action}. Cliquez ensuite sur votre datacentre et choisissez l’onglet `Configurer`{.action}. Cliquez alors sur `Réseau`{.action} en dessous de `OVHcloud`.
 
-![Configuration sur l'OVH Network](images/config_ip_ovh_network.jpg){.thumbnail}
+![Configuration sur l'OVHcloud Network](images/01config_ip_ovh_network.png){.thumbnail}
 
-Sur chaque bloc livré par OVH, 5 adresses IP sont réservées à la configuration du réseau et ne doivent jamais être utilisées pour vos machines virtuelles. Il s'agit de la première et des quatre dernières IP du bloc.
+Sur chaque bloc livré par OVHcloud, 5 adresses IP sont réservées à la configuration du réseau et ne doivent jamais être utilisées pour vos machines virtuelles. Il s'agit de la première et des quatre dernières IP du bloc.
 
 Un bloc IP Private Cloud est organisé comme suit :
 
 - la première adresse IP marquée comme réservée (`Reserved`) correspond à l'adresse de réseau ;
 - les IP suivantes sont utilisables pour vos machines virtuelles. Elles sont indiquées comme disponibles (`Available`) si aucune VM ne les exploite ou comme utilisées (`Used`) dans le cas contraire ;
-- les quatre dernières IP du bloc sont réservées, deux sont dédiées aux routeurs OVH pour le fonctionnement du bloc et les deux autres sont employées pour la passerelle et le broadcast.
+- les quatre dernières IP du bloc sont réservées, deux sont dédiées aux routeurs OVHcloud pour le fonctionnement du bloc et les deux autres sont employées pour la passerelle et le broadcast.
 
-![Configuration avancée sur l'OVH Network](images/config_ip_ovh_network_advanced.jpg){.thumbnail}
+![Configuration avancée sur l'OVH Network](images/02config_ip_ovh_network_advanced.png){.thumbnail}
 
 ### Configurer une IP publique
 
 Afin de configurer une IP publique sur votre machine virtuelle, vous devez au préalable avoir choisi l’interface `VMNetwork`{.action} dans les paramètres de la carte réseau de votre VM :
 
-![VMNetwork](images/vmnetwork.PNG){.thumbnail}
+![VMNetwork](images/03vmnetwork.ong){.thumbnail}
 
 #### Linux
 
@@ -90,26 +90,28 @@ Serveur DNS : 213.186.33.99
 
 ### Configurer une IP privée
 
-La configuration d'une IP privée est similaire à celle d'une IP publique. Vous devez toutefois utiliser la carte réseau configurée pour votre VLAN ou votre VXLAN.
+La configuration d'une IP privée est similaire à celle d'une IP publique. Vous devez toutefois utiliser la carte réseau configurée pour votre VLAN ou votre VxLAN.
 
 Dans le choix de votre interface, vous pouvez éditer les paramètres suivants :
 
-- sur un SDDC, une interface de VLAN (10 à 20 par défaut, vous pouvez en créer davantage en consultant [ce guide](https://docs.ovh.com/fr/private-cloud/creation-vlan/){.external} ;
+- sur un SDDC, une interface de VLAN (10 à 20 par défaut et liés au vRack, vous pouvez en créer davantage en consultant [ce guide](../creation-vlan-vxlan/)) et une interface VxLAN interne au HPC ;
 
-- sur un Private Cloud, une interface VXLAN (vxw-dvs…). Si vous avez besoin de plus de VXLAN, vous pouvez ouvrir un ticket auprès du support.
+- sur un Dedicated Cloud, une interface VxLAN (vxw-dvs…). Si vous avez besoin de plus de VxLAN, vous pouvez ouvrir un ticket auprès du support.
 
 
 #### SDDC
 
-Dans les paramètres de votre machine virtuelle, vous devez utiliser un VLAN :
+Dans les paramètres de votre machine virtuelle, vous pouvez utiliser un VLAN ou VxLAN :
 
-![VLAN pour SDDC](images/vlan.PNG){.thumbnail}
+![VLAN pour SDDC](images/04vlanBis.png){.thumbnail}
 
-#### Private Cloud
+![VLAN pour SDDC](images/05vlan.png){.thumbnail}
 
-Dans les paramètres de votre machine virtuelle, vous devez utiliser un VXLAN :
+#### Dedicated Cloud
 
-![VXLAN sur Private Cloud](images/vxlan.PNG){.thumbnail}
+Dans les paramètres de votre machine virtuelle, vous devez utiliser un VxLAN :
+
+![VxLAN sur Private Cloud](images/06vxlan.png){.thumbnail}
 
 #### Linux
 
