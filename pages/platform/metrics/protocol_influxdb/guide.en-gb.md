@@ -6,7 +6,7 @@ section: Protocol
 order: 4
 ---
 
-**Last updated 07 November, 2019**
+**Last updated 31 July, 2020**
 
 > [!warning]
 >
@@ -59,7 +59,33 @@ To push data to the platform, you will need a **WRITE TOKEN**. Use Basic Auth di
      'cpu_load_short,host=server01,region=us-west value=0.64 1434055562000000000'
 ```
 
-## How to query data
+#### Pushing datapoints using python
+
+You can use the native [Influx python client](https://influxdb-python.readthedocs.io/en/latest/include-readme.html){.external} to push Influx Data on Metrics:
+
+```python
+from influxdb import InfluxDBClient
+json_body = [
+    {
+        "measurement": "measurement",
+        "tags": {
+            "host": "server01"
+        },
+        "time": "2020-07-30T11:00:00Z",
+        "fields": {
+            "series": 0.64
+        }
+    }
+]
+
+client = InfluxDBClient(host="influxdb.gra1.metrics.ovh.net", port=443, username="metrics", password="WRITE_TOKEN", database="metrics", ssl=True)
+res = client.write_points(json_body)
+print(res)
+```
+
+If `res` result is `True`, then you have correctly pushed your Influx data on the Metrics Data Platform.
+
+### How to query data
 
 InfluxDB has its own Query DSL, that mimics SQL without being plain ANSI SQL.
 
@@ -67,11 +93,42 @@ InfluxDB has its own Query DSL, that mimics SQL without being plain ANSI SQL.
  SELECT <field_key>[,<field_key>,<tag_key>] FROM <measurement_name>[,<measurement_name>]
 ```
 
-### Authentification
+#### Authentification
 
 To query data to the platform, you will need a READ TOKEN. Use Basic Auth directly inside the URL to pass it properly, like this :
 
 https://metrics:[READ_TOKEN]@influxdb.[region].metrics.ovh.net
+
+#### Query using cURL
+
+A quick example to use InfluxQL on Metrics with cURL would be:
+
+```sh
+curl --request GET \
+  --url 'https://m:READ_TOKEN@influxdb.gra1.metrics.ovh.net/query?q=SELECT%20%22used_percent%22%20FROM%20%22disk%22%20WHERE%20%20time%20%3E%3D%20now()%20-%2020m&=%20'
+```
+
+This will execute the following InfluxQL query:
+
+```InfluxQL
+SELECT "used_percent" FROM "disk" WHERE  time >= now() - 20m
+```
+
+For the one used to query Influx, you will notice that the `db` mandatory parameter of Influx is not set in this query. With Metrics the database field is optional, as Metrics does not rely on databases to store its metrics. If you need segmentation, you can use different Metrics project or isolate with an additional label.
+
+#### Query using python
+
+You can use the native [Influx python client](https://influxdb-python.readthedocs.io/en/latest/include-readme.html){.external} to query Metrics with InfluxQL:
+
+```python
+from influxdb import InfluxDBClient
+query = 'SELECT "series" FROM "measurement" WHERE time > now() - 1d;'
+
+client = InfluxDBClient(host="influxdb.gra1.metrics.ovh.net", port=443, username="metrics", password="READ_TOKEN", database="metrics", ssl=True)
+result = client.query(query)
+
+print("Result: {0}".format(result))
+```
 
 ### Data Exploration
 
@@ -253,23 +310,6 @@ Example:
 ```influxQL
 SELECT mean("disk.used_percent") FROM "" WHERE  time >= now() - 6h AND _separator = "" GROUP BY time(1h) fill(null)
 ```
-
-### Query using cURL
-
-A quick example to use InfluxQL on Metrics with cURL would be:
-
-```sh
-curl --request GET \
-  --url 'https://m:READ_TOKEN@influxdb.gra1.metrics.ovh.net/query?q=SELECT%20%22used_percent%22%20FROM%20%22disk%22%20WHERE%20%20time%20%3E%3D%20now()%20-%2020m&=%20'
-```
-
-This will execute the following InfluxQL query:
-
-```InfluxQL
-SELECT "used_percent" FROM "disk" WHERE  time >= now() - 20m
-```
-
-For the one used to query Influx, you will notice that the `db` mandatory parameter of Influx is not set in this query. With Metrics the database field is optional, as Metrics does not rely on databases to store its metrics. If you need segmentation, you can use different Metrics project or isolate with an additional label.
 
 ### Set up InfluxDB on Grafana
 
