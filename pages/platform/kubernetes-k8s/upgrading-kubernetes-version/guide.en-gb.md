@@ -1,8 +1,8 @@
 ---
-title: 'Upgrading Kubernetes version on an OVHcloud Managed Kubernetes cluster'
+title: Upgrading Kubernetes version on an OVHcloud Managed Kubernetes cluster
 slug: upgrading-kubernetes-version
 excerpt: ''
-section: 'User guides'
+section: User guides
 ---
 
 <style>
