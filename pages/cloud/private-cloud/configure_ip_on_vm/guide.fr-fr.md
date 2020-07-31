@@ -94,14 +94,14 @@ La configuration d'une IP privée est similaire à celle d'une IP publique. Vous
 
 Dans le choix de votre interface, vous pouvez éditer les paramètres suivants :
 
-- sur un SDDC, une interface de VLAN (10 à 20 par défaut, vous pouvez en créer davantage en consultant [ce guide](../creation-vlan-vxlan/) ;
+- sur un SDDC, une interface de VLAN (10 à 20 par défaut et liés au vRack, vous pouvez en créer davantage en consultant [ce guide](../creation-vlan-vxlan/)) et une interface VxLAN interne au HPC ;
 
-- sur un Dedicated Cloud, une interface VXLAN (vxw-dvs…). Si vous avez besoin de plus de VXLAN, vous pouvez ouvrir un ticket auprès du support.
+- sur un Dedicated Cloud, une interface VxLAN (vxw-dvs…). Si vous avez besoin de plus de VxLAN, vous pouvez ouvrir un ticket auprès du support.
 
 
 #### SDDC
 
-Dans les paramètres de votre machine virtuelle, vous devez utiliser un VLAN :
+Dans les paramètres de votre machine virtuelle, vous pouvez utiliser un VLAN ou VxLAN :
 
 ![VLAN pour SDDC](images/04vlanBis.png){.thumbnail}
 
@@ -109,7 +109,7 @@ Dans les paramètres de votre machine virtuelle, vous devez utiliser un VLAN :
 
 #### Dedicated Cloud
 
-Dans les paramètres de votre machine virtuelle, vous devez utiliser un VXLAN :
+Dans les paramètres de votre machine virtuelle, vous devez utiliser un VxLAN :
 
 ![VXLAN sur Private Cloud](images/06vxlan.png){.thumbnail}
 
