@@ -122,12 +122,12 @@ La vidéo ci-dessous vous détaillera comment configurer un HPC avec la solution
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/f8ufrsP4PQw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-La vidéo suivante vous détaillera quant à elle comment faire une réplication de votre infrastructure HPC avec la solution Veeam Backup & Replication.
+<br>La vidéo suivante vous détaillera quant à elle comment faire une réplication de votre infrastructure HPC avec la solution Veeam Backup & Replication.
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/NqNtKrJSH8w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-Vous pouvez également consulter [la documentation de Veeam](https://www.veeam.com/veeam_backup_10_0_user_guide_vsphere_pg.pdf){.external}.
+<br>Vous pouvez également consulter [la documentation de Veeam](https://www.veeam.com/veeam_backup_10_0_user_guide_vsphere_pg.pdf){.external}.
 
 #### vSAN
 
