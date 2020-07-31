@@ -6,7 +6,7 @@ excerpt: Get to know what is happening on your websites in real time.
 section: Use cases
 ---
 
-**Last updated 10th April, 2019**
+**Last updated 27th July, 2020**
 
 ## Objective
 
@@ -52,7 +52,7 @@ In order to follow this guide you will need:
 
 We will configure one virtual Host to send all of its logs to your stream, you will have to repeat this configuration to every stream in order to make it work.
 
-We use the CustomLog format directive to transform Apache logs in LTSV format and ship them to the Logs Data Platform with the proper OVH token. Note that 3 fields are mandatory with the LTSV format; host, message and time (in the RFC 3339 format). Refer to the examples below to learn how to fill in these fields. Please create the file **/etc/httpd/conf.d/ldp.conf** or **/etc/apache2/conf.d/ldp.conf** (it depends of your distribution) and insert the following:
+We use the CustomLog format directive to transform Apache logs in LTSV format and ship them to the Logs Data Platform with the proper OVHcloud token. Note that 3 fields are mandatory with the LTSV format; host, message and time (in the RFC 3339 format). Refer to the examples below to learn how to fill in these fields. Please create the file **/etc/httpd/conf.d/ldp.conf** or **/etc/apache2/conf.d/ldp.conf** (it depends of your distribution) and insert the following:
 
 ```ApacheConf hl_lines="1 2"
  LogFormat "X-OVH-TOKEN:XXXXXXXXXXX\tdomain:%V\thost:%h\tserver:%A\ttime:%{sec}t\tident:%l\tuser:%u\tmethod:%m\tpath:%U%q\tprotocol:%H\tstatus_int:%>s\tsize_int:%b\treferer:%{Referer}i\tagent:%{User-Agent}i\tresponse_time_int:%D\tcookie:%{cookie}i\tset_cookie:%{Set-Cookie}o\tmessage:%h %l %u %t \"%r\" %>s %b\n" combined_ltsv
@@ -172,12 +172,12 @@ The full list of logs formats that can be used in Apache are described here [mod
 
 ### Using Filebeat
 
-The latest releases of **Filebeat** have a turnkey module for **Apache2**. This solution has the merit of being simple to configure but requires the presence of a logstash that we propose to host.
-The complete procedure of its installation is described [on this page](../alerting/guide.fr-fr.md){.ref}.
+The latest releases of **Filebeat** have a dedicated module for **Apache2**. This solution is ready-to-use to configure and is more production-ready.
+The complete procedure of its installation is described [on this page](../alerting/guide.fr-fr.md){.ref} in the Apache logs use case.
 
 ## Go further
 
 - Getting Started: [Quick Start](../quick_start/guide.fr-fr.md){.ref}
 - Documentation: [Guides](../product.fr-fr.md){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

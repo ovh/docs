@@ -5,15 +5,15 @@ order: 01
 section: Use cases
 ---
 
-**Last updated 5th February, 2020**
+**Last updated 24th July, 2020**
 
 ## Objective
 
 [Filebeat](https://github.com/elastic/beats/tree/master/filebeat){.external} is an open source file harvester, used to fetch logs files and can be easily setup to feed them into Logs Data Platform.
 
-The main benefits of Filebeat are his very resilient protocol to send logs and his variety of modules ready-to-use for the most common applications.
+The main benefits of Filebeat are it's resilient protocol to send logs, and a variety of modules ready-to-use for the most common applications.
 
-This guide will describe how to setup Filebeat OSS on your system to forward your logs on Logs Data Platform. It will also present you with some configuration setup you can use to further structure your logs.
+This guide will describe how to setup Filebeat OSS on your system for forwarding your logs on Logs Data Platform. It will also present you with some configuration setup useful to further structure your logs.
 
 ## Requirements
 
@@ -32,7 +32,7 @@ You can decide to setup Filebeat OSS from a package or to compile it from source
 
 For this part, head to [Filebeat OSS download website](https://www.elastic.co/fr/downloads/past-releases#filebeat-oss){.external} to download the best version for your distribution.
 
-The following configuration files have been tested on the latest version of Filebeat OSS available at the time of writing (**7.5.2**).
+The following configuration files have been tested on the latest version of Filebeat OSS available at the time of writing (**7.8**).
 
 The package will install the config file in the following directory: `/etc/filebeat/filebeat.yml`.
 
@@ -189,13 +189,13 @@ processors:
 To enable the apache2 support on Filebeat, call the following command:
 
 ```shell-session
-$ ldp@ubuntu:~$ sudo filebeat modules enable apache2
+$ ldp@ubuntu:~$ sudo filebeat modules enable apache
 ```
 
-It will generate a new module file: **/etc/filebeat/modules.d/apache2.yml**, please change it to include all your apache2 access/error path files:
+It will generate a new module file: **/etc/filebeat/modules.d/apache.yml**, please change it to include all your apache2 access/error path files:
 
-```yaml hl_lines="8 16"
-- module: apache2
+```yaml
+- module: apache
   # Access logs
   access:
     enabled: true
@@ -264,15 +264,15 @@ Note the type value (apache or syslog or apache-error) that indicates the source
 
 ### Conclusion and useful resources
 
-Filebeat is a really useful tool to send the content of your current log files to Logs Data Platform. It offers a clean and easy way to send your logs without changing the configuration of your software. Don't hesitate to check the links below to master this tool.
+Filebeat is a handy tool to send the content of your current log files to Logs Data Platform. It offers a clean and easy way to send your logs without changing the configuration of your software. Don't hesitate to check the links below to master this tool.
 
 - Configuration's details: [https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration-details.html](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration-details.html){.external}
 - Getting started: [https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-getting-started.html](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-getting-started.html){.external}
 - Learn how to configure Filebeat and Logstash to add your own extra filters: [All you have to know about the Logstash Collector on Logs Data Platform!](../logstash_input/guide.en-gb.md){.ref}
 
-## Go further
+## Going further
 
 - Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
 - Documentation: [Guides](../product.en-gb.md){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

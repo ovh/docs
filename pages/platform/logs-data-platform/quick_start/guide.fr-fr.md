@@ -5,7 +5,7 @@ order: 1
 section: Get Started 
 ---
 
-**Last updated 20th March 2019**
+**Last updated 17th July 2020**
 
 ## Objective
 
@@ -15,36 +15,44 @@ Welcome to the quick start tutorial of the Logs Data Platform. This Quick start 
 
 ### Welcome to Logs Data Platform
 
-First, you will have to order [one of the Logs Data Platform plans](https://www.ovh.com/fr/data-platforms/logs){.external}. We have a free plan so you can test this tutorial! Once the order is complete you will be able to play with Logs Data Platform (LDP).
+First, you will have to create a new account on [the Logs Data Platform page](https://www.ovh.com/fr/data-platforms/logs){.external}. Creating an account is totally free. With the pay-as-you-go pricing model of Logs Data Platform you pay only what you use. 
 
 - Log into the [ovh.com Manager](https://www.ovh.com/manager){.external}, and navigate to the Cloud section located at the top left in the header.
 - Once you have created your credentials, the main interface will appear :
 
 ![Main interface](images/manager_start.png){.thumbnail}
 
-Your Logs Data Platform username is located on the bottom left of the page, in the **Configuration** panel. In this section, you can also :
+Your Logs Data Platform username is located on the bottom left of the page, in the **Configuration** panel (as shown in the red square on the capture). In this section, you can also :
 
-1. Review your plan and options
-2. Change your service name
-3. Reset your password of your LDP current account.
+1. Identify your assigned access point for this account and your LDP username. 
+2. Reset your password of your LDP account.
+3. Edit your LDP access tokens (more on this functionality [here](../tokens_logs_data_platform/guide.fr-fr.md){.ref}). 
 
-On this interface you can see the configuration menu of the two main items :
+
+The main page allows you also to consult the SSL certificates used on your access point in the **SSL Configuration panel**. This panel lets you also review the available ports and formats supported.
+The **Subscription panel** allows you to change the displayed name of your account which can be useful in the case you have multiples accounts tied to the same OVHcloud nic. 
+
+
+At the top of the page, you can see the configuration menu of the two main items:
 
 1. The **Data streams** are the recipients of your logs. When you send a log with the right stream token, it arrives automatically to your stream in an awesome software named Graylog. When you access your stream in Graylog you will be able to search your logs and immediately analyze them.
 2. The **Dashboard** is the global view of your logs, A Dashboard is an efficient way to exploit your logs and to view global information like metrics and trends about your data without being overwhelmed by the logs details.
 
 Below them, you have access to different sections :
 
-3. The **Data-gathering tools** will allow you to ask OVH to host your own dedicated collector like Logstash or Flowgger.
-4. The **Users Roles** will give you the control over who can read and access your streams or dashboard.
-5. The **Index** will allow you to create your dedicated Elasticsearch Index or retrieve the ones used to store your Kibana settings.
-6. The **Aliases** will allow you to access your data directly from your Kibana or using an Elasticsearch query.
+3. The **Data-gathering tools** tab, allows requesting OVHcloud to host your own dedicated collector like Logstash or Flowgger.
+4. The **Index** tab, allows creating your dedicated Elasticsearch Index or retrieve the ones used to store your Kibana settings.
+5. The **Aliases** tab, provides access to your data directly from your Kibana or using an Elasticsearch query.
+6. The **Kibana** tab, creates your personal Kibana Instance, in order to exploit the aliases and index from the powerful Kibana interface. 
+7. The **Users Roles**, allows access rights modification of your streams or dashboard.
 
 ### Let's send some logs!
 
-- The first step to use the Logs Data Platform is to create a stream and to get your token. Creating a stream is really simple: click on the link  **Add data stream**  in the data stream panel. It will then redirect to a page where you can add a name and a description to your stream:
+- Firstly create a stream in order to get your token using:  **Add data stream**  in the data stream panel, you shall be redirected to the page where one can add a name and a description to the stream:
 
 ![new Stream](images/newStream.png){.thumbnail}
+
+On the same page you can enable the live-tail websocket feature, enabling the indexation of your logs to explore them in Graylog, choose the retention of the data in this stream, limit the amount of logs stored in this stream to control your budget. 
 
 - Once you have done this, click on the blue button  **Save**  and that's it! You have created your first stream. The button will redirect you to the stream page where you will be able to copy the X-OVH-TOKEN token. This value is the only token you will need to route logs to your stream. Under this token, you will have a list of your created streams.
 
@@ -58,25 +66,26 @@ The menu **"..."** at the right gives you several features:
 - **Monitor in real-time** allows you to see the logs incoming into your stream in real-time. Note that Graylog also provides this functionality. On this page you can also **Test** different log formats from your computer to your stream. [More about](../ldp_tail/guide.fr-fr.md){.ref}
 - **Manage alerts** allows you to define your alert conditions on the logs routed to the stream. [More about](../alerting/guide.fr-fr.md){.ref}
 - **Archives** allows you to download the cold stored archives. [More about](../cold_storage/guide.fr-fr.md){.ref}
-- **Remove** Deletes your stream from the system and all related content.
+- **Delete** Deletes your stream from the system and all related content.
 
 Logs Data Platform supports several logs formats, each one of them has its own advantages and disadvantages. Here are the different formats available
 
 - **GELF**: This is the native format of logs used by Graylog. This JSON format will allow you to send logs really easily. See: [http://docs.graylog.org/en/latest/pages/gelf.html](http://docs.graylog.org/en/latest/pages/gelf.html){.external}. The GELF input only accept a null ('') delimiter.
 - **LTSV**: this simple format is very efficient and is still human readable. you can learn more about it [here](http://ltsv.org){.external}. LTSV has two inputs that accept a line delimiter or a null delimiter.
-- **RFC 5424**: This format is one of the most commonly used by logs utility like syslog. It is extensible enough to allow you to send all your data. More information about it can be found at this link: [RFC
+- **RFC 5424**: This format is commonly used by logs utility such as syslog. It is extensible enough to allow you to send all your data. More information about it can be found at this link: [RFC
 5424](https://tools.ietf.org/html/rfc5424){.external}.
-- **Cap'n'Proto**: The most efficient log format. this is a binary format that will allows you to maintain a low footprint and high speed performance. If you want to know more about it, check the official website: [Cap'n'Proto](https://capnproto.org/){.external}.
+- **Cap'n'Proto**: The most efficient log format. this is a binary format that allows you to maintain a low footprint and high speed performance. For more information, check out the official website: [Cap'n'Proto](https://capnproto.org/){.external}.
+- **Beats**: A secure and reliable protocol used by the beats family in the Elasticsearch ecosystem (Ex: [Filebeat](../filebeat_logs/guide.fr-fr.md){.ref}, [Metricbeat](https://www.elastic.co/beats/metricbeat){.external}, [Winlogbeat](https://www.elastic.co/beats/winlogbeat){.external}).
 
 Here are the ports you can use on your cluster to send your logs. You can either use the secured ones with SSL Enabled (TLS >= 1.1) or use the plain unsecured ones if you can't use a SSL transport.
 
-||Syslog RFC5424|Gelf|LTSV line|LTSV nul|Cap’n’Proto|
-|---|---|---|---|---|---|
-|TCP/TLS|6514|12202|12201|12200|12204|
-|TCP|514|2202|2201|2200|2204|
-|UDP|514|2202|2201|2200|2204|
+||Syslog RFC5424|Gelf|LTSV line|LTSV nul|Cap’n’Proto|Beats|
+|---|---|---|---|---|---|---|
+|TCP/TLS|6514|12202|12201|12200|12204|5044|
+|TCP|514|2202|2201|2200|2204|---|
+|UDP|514|2202|2201|2200|2204|---|
 
-You can retrieve the ports and the address of your cluster at the **Home** page
+As said before, you can retrieve the ports and the address of your cluster at the **Home** page (in the **SSL Configuration** panel). 
 
 ![About page](images/about.png){.thumbnail}
 
@@ -132,15 +141,15 @@ some_metric_num:42
 
 Press `Enter`{.action} or click on the Green button to launch the search and wait for your results.
 
-You can also search some part of your message by entering:
+It's possible to search some part of your message by entering:
 
 ```
 helps going
 ```
 
-It will give you all the messages that contains the terms 'helps' and 'going'.
+Giving you all the messages that contains the terms 'helps' and 'going'.
 
-Graylog allows you to extensively search through your logs without compromising usability. If you want to know more about how to craft relevant searches on Graylog, head to [Graylog Search Documentation](http://docs.graylog.org/en/2.0/pages/queries.html){.external}.
+Graylog allows you to extensively search through your logs without compromising usability. For more information about how to craft relevant searches on Graylog, please visit [Graylog Search Documentation](http://docs.graylog.org/en/2.0/pages/queries.html){.external}.
 
 Send several logs with different values for user_id, for example. At the left of the page you will see the fields present in your stream, you can click on the user_id checkbox to display all the values for this field along the logs.
 
@@ -153,7 +162,7 @@ Let's go back to the Logs Data Platform manager, we will now create a Dashboard 
 
 At first, your dashboard is sad and empty but we will fill it really soon with some awesome widgets ;-). To do that, get back to your stream: you can use the link on graylog (under the Stream tab) or the link on your console as you wish. Let's say you want all the user Ids for which the value some_metric is above 30, first. you search for this data:
 
-- in the search bar, enter this: `some_metric_num:>30`
+- in the search bar, enter the following: `some_metric_num:>30`
 - select above the search bar, the relative range of time you want to use in your widgets. If you want your widget to display the value for the last hour, select "Search in the last Hour".
 - On the left panel, unroll the user_id menu (by clicking on the blue triangle at the left) and select Quick Values. It will then display a nice widget with the distribution of the most frequent user_ids.
 
@@ -171,10 +180,8 @@ Mixing various widgets on the same dashboard give to this feature all its sense.
 
 ![critical Dashboard 2](images/critical-dashboard-2.png)
 
----
 
-## Go further
-
+## Going further
 We have only scratched the surface of what Logs Data Platform can do for you. you will find soon enough how to:
 
 - [Send correctly formatted logs to use custom types as number, boolean and other stuffs](../field_naming_conventions/guide.fr-fr.md){.ref}
@@ -184,5 +191,5 @@ We have only scratched the surface of what Logs Data Platform can do for you. yo
 - If you want to master Graylog, this is the place to go: [Graylog documentation](http://docs.graylog.org/en/2.0/pages/queries.html){.external}
 - Getting Started: [Quick Start](./guide.fr-fr.md){.ref}
 - Documentation: [Guides](../product.fr-fr.md){.ref}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
-- Join our community of users on [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+- Join our community of users on [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
