@@ -1,8 +1,8 @@
 ---
-title: 'Resetting an OVHcloud Managed Kubernetes cluster'
-excerpt: 'Find out how to reset an OVHcloud Managed Kubernetes cluster'
+title: Resetting an OVHcloud Managed Kubernetes cluster
+excerpt: Find out how to reset an OVHcloud Managed Kubernetes cluster
 slug: resetting-a-cluster
-section: 'User guides'
+section: User guides
 ---
 
 **Last updated September 5th, 2019.**
