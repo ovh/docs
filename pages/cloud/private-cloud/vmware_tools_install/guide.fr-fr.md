@@ -45,7 +45,7 @@ Cette méthode d'installation est valide à minima pour les versions de GNU/Linu
 
 Afin de monter le disque des VMware tools depuis le web client Vsphere, faites un clic droit sur la VM, puis cliquez sur `Guest OS`{.action} et enfin sur `Install VMware Tools`{.action}. 
 
-![installer VMware Tools](images/01tools.png){.thumbnail}
+![installer VMware Tools](images/tools.png){.thumbnail}
 
 Montez ensuite le volume activé par la commande :
 
