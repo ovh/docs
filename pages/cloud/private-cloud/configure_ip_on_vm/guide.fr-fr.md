@@ -41,7 +41,7 @@ Un bloc IP Private Cloud est organisé comme suit :
 
 Afin de configurer une IP publique sur votre machine virtuelle, vous devez au préalable avoir choisi l’interface `VMNetwork`{.action} dans les paramètres de la carte réseau de votre VM :
 
-![VMNetwork](images/03vmnetwork.ong){.thumbnail}
+![VMNetwork](images/03vmnetwork.png){.thumbnail}
 
 #### Linux
 

@@ -1,104 +1,105 @@
 ---
-title: 'Zarządzanie polityką bezpieczeństwa Exchange'
+title: 'Zarządzanie polityką bezpieczeństwa usługi e-mail'
 slug: zarzadzanie-polityka-bezpieczenstwa-exchange
-excerpt: 'Dowiedz się, jak zarządzać polityką bezpieczeństwa dla usługi Exchange'
+excerpt: 'Dowiedz się, jak zarządzać polityką bezpieczeństwa usługi e-mail'
 section: 'Pierwsze kroki z usługą Exchange'
 order: 6
 ---
 
-**Ostatnia aktualizacja z dnia 2019-09-10**
+**Ostatnia aktualizacja z dnia 03-08-2020**
 
 ## Wprowadzenie
 
-Usługa Microsoft Exchange umożliwia korzystanie z profesjonalnych kont e-mail, które ułatwiają pracę zespołową dzięki kilku funkcjonalnościom. Aby zapewnić ochronę tego środowiska, możesz zarządzać globalnymi ustawieniami zabezpieczeń dla kont Exchange.
+Usługi e-mail OVHcloud umożliwiają korzystanie z profesjonalnych kont e-mail. Aby zapewnić ochronę tego środowiska, możesz zarządzać globalnymi ustawieniami zabezpieczeń dla kont e-mail.
 
-**Dowiedz się, jak zarządzać polityką bezpieczeństwa dla usługi Exchange.**
+**Dowiedz się, jak zarządzać polityką bezpieczeństwa usługi e-mail.**
 
 ## Wymagania początkowe
 
-- Posiadanie usługi [Exchange](https://www.ovh.pl/emaile/hosted-exchange/){.external}
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager), sekcja `Web`{.action}
+- Posiadanie usługi [e-mail OVHcloud](https://www.ovh.pl/emaile/){.external}
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), sekcja `Web`{.action}
 
 ## W praktyce
 
-Zarządzanie polityką bezpieczeństwa usługi Exchange może dotyczyć czterech aspektów:
+Zarządzanie polityką bezpieczeństwa usługi e-mail może wiązać się z czterema aspektami:
 
-- wzmocnienie bezpieczeństwa kont Exchange podczas próby logowania przez użytkowników,
-- ustanowienie bardziej złożonych haseł dla kont usługi Exchange,
-- wzmocnienie weryfikacji wiadomości przychodzących na serwery OVH i na Twoje konta Exchange,
-- zdefiniowanie, jak wiadomości „niechciane” będą się wyświetlały na Twoich kontach Exchange.
+- wzmocnienie bezpieczeństwa kont e-mail podczas próby logowania przez użytkowników;
+- ustanowienie bardziej złożonych haseł dla kont usługi e-mail;
+- wzmocnienie weryfikacji wiadomości przychodzących na serwery OVH i na Twoje konta e-mail (dotyczy wyłącznie kont [Exchange](https://www.ovh.pl/emaile/hosted-exchange/){.external});
+- zdefiniowanie, jak wiadomości „niechciane” będą wyświetlane w Twoich skrzynkach e-mail (dotyczy wyłącznie kont [Exchange](https://www.ovh.pl/emaile/hosted-exchange/){.external}).
 
-Aby uzyskać dostęp do polityki bezpieczeństwa usługi Exchange, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager) i przejdź do sekcji „Web”. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, kliknij `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
+Aby przejść do polityki bezpieczeństwa usługi e-mail, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i przejdź do sekcji `Web`{.action}. 
 
-Na stronie, która się wyświetli kliknij zakładkę `Więcej`{.action}, a następnie `Zarządzaj polityką bezpieczeństwa`{.action}.
-
-![exchangesecurity](images/exchange-security-step1.png){.external}
+|E-maile i E-mail Pro|Exchange| 
+|---|---| 
+|W kolumnie po lewej stronie kliknij pozycję `E-maile`{.action} lub `E-mail Pro`{.action} i wybierz odpowiednią ofertę. Kliknij kartę `Plus`, a następnie `Zarządzaj polityką bezpieczeństwa`{.action}.|W kolumnie po lewej stronie kliknij pozycję `Microsoft`{.action}, następnie `Exchange`{.action} i wybierz odpowiednią ofertę. Kliknij kartę `Plus +`, a następnie `Zarządzaj polityką bezpieczeństwa`{.action}.|
+|![exchangesecurity](images/manage-security01.png){.thumbnail}|![exchangesecurity](images/manage-security02.png){.thumbnail}|
 
 Następnie przejdź do aspektów, które chcesz zmodyfikować.
 
-|Aspekt|Opis | 
+|Aspekt|Opis| 
 |---|---| 
-|[Wzmocnienie bezpieczeństwa logowania](./#wzmocnienie-bezpieczenstwa-logowania){.external}|Określ, czy konta mają być blokowane po pewnej liczbie nieudanych prób logowania.|
+|[Wzmocnienie bezpieczeństwa danych](./#wzmocnienie-bezpieczenstwa-danych){.external}|Określ, czy konta mają być blokowane po pewnej liczbie nieudanych prób logowania.|
 |[Ustanowienie bardziej złożonego hasła](./#ustanowienie-bardziej-zlozonego-hasla){.external}|Ustaw wymaganie złożoności oraz reguły zmiany hasła.|
-|[Wzmocnienie weryfikacji wiadomości przychodzących](./#wzmocnienie-weryfikacji-wiadomosci-przychodzacych){.external}|Określ, czy serwery OVH mają sprawdzać, czy otrzymane wiadomości pochodzą z legalnego źródła wysyłki (weryfikacje DKIM i/lub SPF).|
-|[Określenie sposobu wyświetlania niechcianych wiadomości](./#okreslenie-sposobu-wyswietlania-niechcianych-wiadomosci){.external}|Określ, czy niechciane wiadomości mają zawierać tag pozwalający je zidentyfikować i automatycznie przenieść do kosza.|
+|[Wzmocnienie weryfikacji wiadomości przychodzących (dotyczy wyłącznie usługi Exchange)](./#wzmocnienie-weryfikacji-wiadomosci-przychodzacych-dotyczy-wylacznie-uslugi-exchange){.external}|Określ, czy serwery OVH mają sprawdzać, czy otrzymane wiadomości pochodzą z dozwolonego źródła (weryfikacje DKIM i/lub SPF).|
+|[Określenie sposobu wyświetlania niechcianych wiadomości (dotyczy wyłącznie usługi Exchange)](./#okreslenie-sposobu-wyswietlania-niechcianych-wiadomosci-dotyczy-wylacznie-uslugi-exchange){.external}|Określ, czy niechciane wiadomości mają zawierać tag pozwalający je zidentyfikować, czy też automatycznie trafiać do kosza.|
 
-### Wzmocnienie bezpieczeństwa logowania
+### Wzmocnienie bezpieczeństwa danych
 
-Możesz ustalić, czy konta Exchange mają być blokowane po określonej liczbie nieudanych prób logowania.
+Możesz ustalić, czy konta e-mail mają być blokowane po określonej liczbie nieudanych prób logowania.
 
-W tym celu, na stronie, która się wyświetla wprowadź informacje wymienione w poniższej tabeli:
+W tym celu uzupełnij informacje podane w poniższej tabeli:
 
-|Informacja|Opis | 
+|Informacja|Opis| 
 |---|---| 
-|Próg blokady|Określ liczbę nieudanych prób logowania, po której konto zostanie zablokowane. Wpisz „0”, jeśli nie chcesz ustalać progu blokady.|
+|Próg blokady|Określi liczbę nieudanych prób logowania, po której konto zostanie zablokowane. Wpisz „0”, jeśli nie chcesz ustalać progu blokady.|
 |Czas resetowania|Pole to pojawia się jedynie, gdy został ustalony próg blokady. Określ czas, po którym licznik nieudanych prób logowania zostanie zresetowany.|
-|Czas blokowania|Pole to pojawia się jedynie, gdy został ustalony próg blokady. Określ czas, przez jaki konto Exchange pozostanie zablokowane, jeśli osiągnięty zostanie próg blokady.|
+|Czas blokowania|Pole to pojawia się jedynie, gdy został ustalony próg blokady. Określ czas, przez jaki konto e-mail pozostanie zablokowane, jeśli osiągnięty zostanie próg blokady.|
 
-Po uzupełnieniu tych informacji możesz zatwierdzić zmiany, klikając `Dalej`{.action}, a następnie `Zatwierdź`{.action}. Możesz również przejść do następnej części.
+Po uzupełnieniu tych informacji możesz zatwierdzić zmiany, klikając `Dalej`{.action}, a następnie `Zatwierdź`{.action} w przypadku ofert „E-maile” i „E-mail Pro”. W przypadku oferty Exchange kliknij `Zapisz zmiany`{.action}.
 
 ### Ustanowienie bardziej złożonego hasła
 
 Ustaw wymaganie złożoności oraz reguły zmiany hasła.
 
-W tym celu, na stronie, która się wyświetla wprowadź informacje wymienione w poniższej tabeli:
+W tym celu uzupełnij informacje podane w poniższej tabeli:
 
-|Informacja|Opis | 
+|Informacja|Opis| 
 |---|---| 
-|Wymagania dotyczące złożoności hasła|Pozwala ustalić reguły dotyczące złożoności hasła:<br> \- nie może zawierać nazwy konta użytkownika ani jej części<br> \- musi zawierać co najmniej 6 znaków<br> \- musi zawierać duże i małe litery, znaki specjalne (np. !, $, etc.) oraz cyfry.|
-|Blokada zmiany hasła|Umożliwia ustawienie minimalnego czasu ważności haseł ustanowionych dla kont Exchange. Oznacza to, że użytkownicy będą musieli odczekać określoną liczbę dni, zanim zmienią hasło.|
-|Maksymalny czas ważności hasła|Umożliwia ustawienie maksymalnego czasu ważności haseł ustanowionych dla kont Exchange. Oznacza to, że użytkownicy będą musieli zmienić hasło po upływie określonego terminu.|
-|Zachowanie historii hasła|Pole to pojawia się tylko wtedy, gdy określony został maksymalny czas ważności hasła. Określ, ile razy poprzednie hasła mogą być ponownie użyte i w ciągu jakiego czasu.|
+|Wymagania dotyczące złożoności hasła|Pozwala ustalić reguły dotyczące złożoności hasła:<br> \- nie może zawierać nazwy konta użytkownika ani jej części;<br> \- musi zawierać co najmniej 6 znaków;<br> \- musi zawierać duże i małe litery, znaki specjalne (np. !, $, etc.) oraz cyfry.|
+|Blokada zmiany hasła|Umożliwia ustawienie minimalnego czasu ważności haseł ustanowionych dla kont e-mail. Użytkownicy będą musieli odczekać określoną liczbę dni, zanim zmienią hasło.|
+|Maksymalny czas ważności hasła|Umożliwia ustawienie maksymalnego czasu ważności haseł ustanowionych dla kont e-mail. Użytkownicy będą musieli zmienić hasło po upływie określonego terminu.|
+|Zachowanie historii hasła (dotyczy wyłącznie usługi Exchange)|Pole to pojawia się tylko wtedy, gdy określony został maksymalny czas ważności hasła. Określ okres, wyrażony w dniach, po upływie którego można ponownie użyć poprzednich haseł.|
 |Minimalna długość hasła|Umożliwia ustawienie minimalnej długości haseł, jeśli użytkownik chce je zmieniać.|
 
-Po uzupełnieniu tych informacji możesz zatwierdzić zmiany, klikając `Dalej`{.action}, a następnie `Zatwierdź`{.action}. Możesz również przejść do następnej części.
+Po uzupełnieniu tych informacji możesz zatwierdzić zmiany, klikając `Dalej`{.action}, a następnie `Zatwierdź`{.action} w przypadku ofert „E-maile” i „E-mail Pro”. W przypadku oferty Exchange kliknij `Zapisz zmiany`{.action}.
 
-### Wzmocnienie weryfikacji wiadomości przychodzących
+### Wzmocnienie weryfikacji wiadomości przychodzących (dotyczy wyłącznie usługi Exchange)
 
-Możesz określić, czy serwery OVH mają sprawdzać, czy wiadomości spływające na konta Exchange pochodzą z legalnego źródła wysyłki (weryfikacje DKIM i/lub SPF).
+Możesz określić, czy serwery OVH mają sprawdzać, czy wiadomości spływające na konta e-mail pochodzą z dozwolonego źródła wysyłki (weryfikacje DKIM i/lub SPF).
 
-W tym celu, na stronie, która się wyświetla wprowadź informacje wymienione w poniższej tabeli:
+W tym celu zaznacz żądane pola w poniższej tabeli:
 
-|Informacja|Opis | 
+|Informacja|Opis| 
 |---|---| 
-|Aktywacja weryfikacji podpisu DKIM|Określ, czy serwery OVH mają weryfikować podpis DKIM pod wiadomościami, które spływają na Twoje konta Exchange. Czynność ta gwarantuje autentyczność domeny nadawcy oraz że wiadomość jest kompletna. Umożliwia również identyfikację wiadomości pochodzących z nielegalnych źródeł i oznaczenie ich jako spam.|
+|Aktywacja weryfikacji podpisu DKIM|Określ, czy serwery OVH mają weryfikować podpis DKIM pod wiadomościami, które spływają na Twoje konta Exchange. Czynność ta gwarantuje autentyczność domeny nadawcy i integralność wiadomości. Umożliwia również identyfikację wiadomości pochodzących z nielegalnych źródeł i oznaczenie ich jako spam.|
 |Aktywacja weryfikacji ochrony SPF|Określ, czy serwery OVH powinny weryfikować, czy źródło wysyłki spływających do Ciebie wiadomości jest zapisane w rekordzie SPF domeny nadawcy. Weryfikacja ta może pomóc w identyfikacji wiadomości pochodzących z nielegalnych źródeł. Wiadomości takie będą oznaczane jako spam.|
 
-Po uzupełnieniu tych informacji możesz zatwierdzić zmiany, klikając `Dalej`{.action}, a następnie `Zatwierdź`{.action}. Możesz również przejść do następnej części.
+Po dokonaniu wyboru zatwierdź zmiany, klikając polecenie `Zapisz zmiany`{.action}.
 
-### Określenie sposobu wyświetlania niechcianych wiadomości
+### Określenie sposobu wyświetlania niechcianych wiadomości (dotyczy wyłącznie usługi Exchange)
 
-Czynność ta pozwala określić, czy niechciane wiadomości, które spływają na konta Exchange mają zawierać tag pozwalający je zidentyfikować i automatycznie przenieść do kosza.
+Czynność ta pozwala określić, czy niechciane wiadomości, które spływają na konta e-mail mają zawierać tag pozwalający je zidentyfikować, bądź też automatycznie przenieść do kosza.
 
-W tym celu, na stronie, która się wyświetla wprowadź informacje wymienione w poniższej tabeli:
+W tym celu zaznacz żądane pola w poniższej tabeli:
 
-|Informacja|Opis | 
+|Informacja|Opis| 
 |---|---| 
-|Identyfikacja niechcianych wiadomości.|Określ, czy serwery OVH mają dodawać tag pozwalający zidentyfikować niechciane wiadomości jako spam.|
+|Identyfikacja niechcianych wiadomości.|Określ, czy serwery OVH mają dodać tag pozwalający zidentyfikować niechciane wiadomości jako spam.|
 |Przenoszenie niechcianych wiadomości do kosza.|Określ, czy serwery OVH mają automatycznie przenosić niechciane wiadomości do kosza.|
 
-Po uzupełnieniu tych informacji możesz zatwierdzić zmiany, klikając `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
+Po dokonaniu wyboru zatwierdź zmiany, klikając polecenie `Zapisz zmiany`{.action}.
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com>.
