@@ -1,616 +1,210 @@
 ---
-title: 'Przewodnik dotyczący korzystania z Outlook Web App (OWA)'
+title: 'Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange'
 slug: exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app
-excerpt: 'Exchange 2016: przewodnik dotyczący korzystania z Outlook Web App'
-section: 'Outlook Web Application (Aplikacja WWW)'
+excerpt: 'Dowiedz się, jak zarządzać adresem programu Exchange przy użyciu interfejsu OWA webmail'
+section: 'Outlook Web Application (OWA)'
+order: 1
 legacy_guide_number: g1918
 ---
 
-**Czym jest Outlook Web App (OWA)?**
+**Ostatnia aktualizacja: 03-08-2020**
 
-OWA to webmail dla usługi Exchange 2013. Interfejs ten pozwala na sprawdzanie i używanie konta Exchange jak również na korzystanie z różnych funkcji tego konta z poziomu klasycznej strony internetowej.
-Interfejs ten jest bardzo praktyczny, jeśli nie masz kompatybilnego programu pocztowego do konfigurowania i używania konta Exchange.
+## Wprowadzenie
 
-**Gdzie i jak można się zalogować do OWA?**
+Dzięki usłudze OVHcloud Hosted Exchange można wysyłać oraz odbierać e-maile przy użyciu wybranego urządzenia i klienta poczty. Aby umożliwić dostęp do konta z dowolnego miejsca przy użyciu przeglądarki, OVHcloud udostępnia klient poczty e-mail online o nazwie Outlook Web Application (OWA). [Strona logowania do interfejsu webmail](https://www.ovh.pl/mail/) zapewnia dostęp do odpowiednich interfejsów OWA dla wszystkich aktywnych kont e-mail w ramach usług MX Plan, E-mail Pro i Hosted Exchange.
 
-Adres poczty elektronicznej to adres Exchange, do którego chcesz się zalogować.
+**Dowiedz się, jak wykonać typowe działania dotyczące adresu e-mail w interfejsie OWA.**
 
-Hasło zostało zdefiniowane podczas tworzenia konta Exchange w [panelu klienta](https://www.ovh.com/manager/web/login.html).
+## Wymagania początkowe
 
-Oferta Hosted Exchange:
+- skonfigurowane rozwiązanie poczty elektronicznej OVHcloud (**usługa MX Plan** dostępna w ramach [hostingu WWW](https://www.ovh.pl/hosting/), zawarta w [bezpłatnym hostingu Start10M](https://www.ovh.pl/domeny/oferta_serwer_start10m.xml) lub zamówiona oddzielnie jako rozwiązanie autonomiczne; [**Hosted Exchange**](https://www.ovh.pl/emaile/hosted-exchange/) lub [**E-mail Pro**](https://www.ovh.pl/emaile/email-pro/))
+- dane do logowania dla adresu e-mail, który chcesz skonfigurować
 
-- [https://ex.mail.ovh.net](https://ex.mail.ovh.net)
-- [https://ex2.mail.ovh.net](https://ex2.mail.ovh.net)
-- [https://ex3.mail.ovh.net](https://ex3.mail.ovh.net)
+## W praktyce
 
-Oferta Private Exchange: URL dostępowy zależy od nazwy hosta serwera. Został on zdefiniowany podczas tworzenia usługi.
+Ten przewodnik zawiera informacje o zwykłych zadaniach dotyczących konta e-mail, które są dostępne w interfejsie OWA webmail. Ponieważ interfejs nie został opracowany przez OVHcloud, nie możemy udostępnić konkretnych instrukcji dotyczących ustawień, których nie obejmuje ten przewodnik. Przygotowaliśmy natomiast dodatkowe przewodniki dotyczące funkcji programu Exchange i można je znaleźć w poniższej sekcji [**Sprawdź również**](./#sprawdz-rowniez_1).
 
-![](images/img_2884.jpg){.thumbnail}
 
-Przy pierwszym logowaniu do OWA należy zdefiniować strefę czasową.
+> [!primary]
+>
+> Instrukcji przedstawionych po dwóch pierwszych krokach nie trzeba wykonywać w konkretnej kolejności. Pasek nawigacji znajdujący się po lewej stronie przewodnika umożliwia przejście do fragmentów przydatnych w danym przypadku.
+>
 
-![](images/img_2885.jpg){.thumbnail}
+### 1. Dostęp do interfejsu OWA webmail
 
-## Outlook Web App 2016
+Aby zalogować się do interfejsu OWA webmail przy użyciu swojego adresu e-mail, przejdź do ogólnej [strony logowania do interfejsu webmail](https://www.ovh.pl/mail/). Wpisz pełny adres e-mail i hasło, a następnie kliknij przycisk `Zaloguj`{.action}.
 
-### Poczta
-Po zalogowaniu domyślnie wyświetli się sekcja poczty elektronicznej. 
+![useowa](images/owa_exchange_step1.png){.thumbnail}
 
-Jeśli znajdujesz się w innej sekcji (Kalendarz, Kontakty, Zadania), w każdej chwili możesz przejść do sekcji Poczta.
+Jeśli pierwszy raz logujesz się do interfejsu OWA webmail przy użyciu danego adresu e-mail, pojawi się monit o ustawienie języka interfejsu i strefy czasowej. Kliknij przycisk `Zapisz`{.action}, aby kontynuować.
 
-Należy kliknąć na niebieski kwadrat w lewym górnym rogu, aby uzyskać dostęp do innych sekcji.
+![useowa](images/owa_exchange_step2.png){.thumbnail}
 
-![](images/img_2906.jpg){.thumbnail}
-Aby utworzyć nową wiadomość, kliknij na "Nowa".
+Od tej pory po zalogowaniu domyślnie będzie wyświetlany widok skrzynki odbiorczej.
 
-![](images/img_2907.jpg){.thumbnail}
-Gdy klikniesz na czarną strzałkę, pojawią się 2 opcje:
+![useowa](images/owa_exchange_step3.png){.thumbnail}
 
+### 2. Zaznajomienie z widokiem interfejsu OWA
 
-- Wiadomość e-mail
-- Zdarzenie kalendarza
+Interfejs OWA ma kilka sekcji. W poznaniu ich pomogą poniższa tabela i obrazy.
 
+|Części|Opis|  
+|---|---|  
+|Sekcja górna (1)|Zawiera dwa paski z kartami: pierwszy umożliwia dostęp do ustawień ogólnych (takich jak [sekcja opcji](./#dostep-do-sekcji-opcji)), a drugi służy do wykonywania konkretnych działań przy użyciu adresu (na przykład wysyłania e-maili lub odpowiadania na nie).|  
+|Lewa strona (2)|Tutaj znajduje się lista folderów na potrzeby Twojego adresu e-mail. Jest widoczna w formie drzewa menu, które można rozwinąć lub ukryć.|
+|Część środkowa (3)|Zawiera listę wiadomości (przeczytanych i nieprzeczytanych) z folderu wybranego w lewym menu. W tej sekcji mogą też być widoczne wyniki wyszukiwania.|
+|Prawa strona (4)|Gdy wybrano e-mail, po prawej jest widoczne okienko odczytu.|
 
+![useowa](images/owa_exchange_step4.png){.thumbnail}
 
-![](images/img_2908.jpg){.thumbnail}
-W kolumnie z lewej strony znajdują się katalogi systemowe i inne katalogi spersonalizowane ("Katalog TEST" w naszym przykładzie).
+Rozmiar sekcji pionowych można zmienić, klikając i przeciągając ich linie obramowania.
 
-![](images/img_2909.jpg){.thumbnail}
+### Wyświetlanie e-maili
 
+Aby wyświetlić e-maile, wybierz folder po lewej stronie. Wiadomości przychodzące, których nie uwzględnią reguły skrzynki odbiorczej, pojawią się w folderze „Skrzynka odbiorcza”. Aby dowiedzieć się, czy masz nowe e-maile, sprawdź liczbę widoczną obok danego folderu.
 
-#### Nowa wiadomość
-Możesz na przykład dodawać załączniki do e-maila, korzystać z [dodatkowych aplikacji](http://office.microsoft.com/fr-fr/store/applications-pour-outlook-FX102825292.aspx?app=outlook.exe)
-związanych z interfejsem OWA, lub włączyć potwierdzenie odbioru lub potwierdzenie przeczytania wiadomości.
+![useowa](images/owa_exchange_step5.png){.thumbnail}
 
+Aby przeczytać e-mail, wybierz jego folder. Kliknij e-mail, aby wyświetlić jego treść w sekcji odczytu. Wiadomości nieprzeczytane mają inny kolor, co pozwala odróżnić je od przeczytanych.
 
-W interfejsie znajdziesz również klasyczne opcje edycji treści (rozmiar, kolor, itp).
+![useowa](images/owa_exchange_step6.png){.thumbnail}
 
-Dodatkowe informacje
-Rozmiar załącznika w OWA jest ograniczony do 35 MB. Aplikacja do synchronizacji ActiveSync narzuca dla załączników ograniczenie do 10 MB (głównie w przypadku smartphone'ów kompatybilnych z ActiveSync). W przypadku korzystania z kompatybilnego programu do obsługi poczty (na przykład Outlook) rozmiar załącznika to maksymalnie 100 MB.
+### Wysyłanie i odpowiadanie
 
-![](images/img_2911.jpg){.thumbnail}
+**Aby wysłać nowy e-mail**, kliknij przycisk `Nowy`{.action} w górnej części interfejsu webmail. Po prawej stronie pojawi się okienko edycji. Wypełnij pola e-maila (odbiorcy, temat, treść, załączniki). Gdy wiadomość będzie gotowa do wysłania, kliknij przycisk `Wyślij`{.action}.
 
+![useowa](images/owa_exchange_step7.png){.thumbnail}
 
-#### Katalogi systemowe i katalogi spersonalizowane
-Domyślnie dostępne są takie katalogi systemowe:
+**Aby odpowiedzieć na e-mail**, [najpierw kliknij go](./#wyswietlanie-e-maili) w celu wyświetlenia. Następnie kliknij przycisk `Odpowiedz wszystkim`{.action}. Jeśli natomiast chcesz odpowiedzieć tylko nadawcy e-maila (pomijając odbiorców kopii), kliknij przycisk strzałki w dół.
 
+![useowa](images/owa_exchange_step8.png){.thumbnail}
 
-- Skrzynka odbiorcza
-- Wersje robocze
-- Elementy wysłane
-- Elementy usunięte
-- Wiadomości - śmieci
-- RSS
-- Notatki
+Gdy wybierzesz działanie odpowiedzi, nad e-mailem pojawi się edytor szybkiej odpowiedzi. Ułóż odpowiedź, a kiedy e-mail będzie gotowy do wysłania, kliknij przycisk `Wyślij`{.action}. Aby wyświetlić wszystkie opcje odpowiedzi (takie jak dodanie podpisu), najpierw trzeba w pełni rozwinąć okienko edycji, klikając symbol dwóch strzałek.
 
+![useowa](images/owa_exchange_step9.png){.thumbnail}
 
+### Porządkowanie skrzynki odbiorczej
 
-![](images/img_2912.jpg){.thumbnail}
-Nie można zmienić nazwy, przenieść lub usunąć katalogu systemowego. Nie można zmienić tych reguł.
+Interfejs OWA umożliwia porządkowanie skrzynki odbiorczej. Możesz
 
-Klikając prawym przyciskiem myszy na nazwę konta Exchange lub na katalog, pojawiają się różne opcje:
+- [tworzyć foldery i podfoldery](./#tworzenie-folderu)
+- [przenosić e-maile](./#przenoszenie-e-maili)
+- [ustawiać reguły](./#tworzenie-reguł-skrzynki-odbiorczej), aby po odebraniu nowego e-maila automatycznie były wykonywane konkretne działania
 
-Utwórz nowy folder: tworzy katalog w miejscu, w którym wykonano kliknięcie. W naszym przykładzie katalog zostanie utworzony na tym samym poziomie, na którym są dostępne katalogi systemowe.
+#### Tworzenie folderu
 
-Zmień nazwę: pozwala na zmianę nazwy spersonalizowanego katalogu.
+Aby utworzyć nowy folder, kliknij prawym przyciskiem myszy nazwę adresu e-mail w drzewie folderów i wybierz pozycję `Utwórz nowy folder`{.action}. W taki sam sposób możesz utworzyć podfolder w istniejących folderach (`Utwórz nowy podfolder`{.action}). 
 
-Usuń: usuwa spersonalizowany katalog.
+![useowa](images/owa_exchange_step10.png){.thumbnail}
 
-Opróżnij folder: czyści katalog systemowy lub spersonalizowany. Zawartość zostanie przeniesiona do katalogu "Elementy usunięte".
+#### Przenoszenie e-maili
 
-Dodaj do ulubionych: dodaje wybrany katalog do części "Ulubione".
+**Aby przenieść e-mail**, po prostu przeciągnij go i upuść w folderze docelowym lub kliknij go prawym przyciskiem myszy i wybierz pozycję `Przenieś`{.action}.
+**Aby przenieść wiele e-maili** jednocześnie, wybierz je przez zaznaczenie pól wyboru i kliknij pozycję `Przenieś`{.action} (po prawej stronie) lub `Przenieś do`{.action} (w górnej sekcji). Następnie wybierz folder docelowy.
 
-Przenieś: przenosi wybrane spersonalizowane katalogi do innego katalogu.
+![useowa](images/owa_exchange_step11.png){.thumbnail}
 
-Oznacz wszystkie jako przeczytane: oznacza wszystkie nieprzeczytane e-maile z danego katalogu jako przeczytane.
+#### Tworzenie reguł skrzynki odbiorczej
 
-Dodaj folder udostępniony: dodaje dostęp do danego katalogu, który inny użytkownik platformy Exchange z Tobą współdzieli (opcja ta nie pojawia się podczas kliknięcia prawym przyciskiem myszy na katalog systemowy lub spersonalizowany).
+Aby zarządzać regułami, kliknij ikonę koła zębatego u góry, a następnie kliknij pozycję `Opcje`{.action}.
 
-Uprawnienia: pozwala na przyznanie dostępu do wybranego katalogu systemowego lub spersonalizowanego innemu użytkownikowi Twojej platformy Exchange. Po dodaniu uprawnień użytkownik ten musi skorzystać z funkcji dodania katalogu w OWA dla swojego konta Exchange (Dodaj folder udostępniony).
+![useowa](images/owa_exchange_step12.png){.thumbnail}
 
+Zostanie wyświetlona nowa strona, na której kliknij pozycję `Skrzynka odbiorcza i reguły oczyszczania`{.action} w lewym menu. W widoku drzewa „Opcje” ten element jest widoczny po rozwinięciu kolejno pozycji „Poczta” i „Automatyczne przetwarzanie”. W tym obszarze można tworzyć, edytować i usuwać reguły oraz przenosić je na liście. 
 
-#### Zawartość katalogu
-Chodzi tutaj o wyświetlenie zawartości wybranego katalogu. W naszym przykładzie jest to katalog systemowy "Skrzynka odbiorcza". Zawiera on dwa e-maile testowe.
+Aby dodać nową regułę, kliknij przycisk `+`{.action}. 
 
-W górnej części tej kolumny znajduje się opcja wyszukiwania e-maili i kontaktów:
+![useowa](images/owa_exchange_step13.png){.thumbnail}
 
-Wszystkie: wyświetla wszystkie e-maile.
+Podaj wymagane informacje w zależności od działania, które ma wykonywać reguła. Na koniec kliknij `OK`{.action}. 
 
-Nieprzeczytane: wyświetla tylko e-maile nie przeczytane.
+![useowa](images/owa_exchange_step14.png){.thumbnail}
 
-Do mnie: wyświetla tylko e-maile zaadresowane bezpośrednio do Ciebie.
+Szczegółowe instrukcje tworzenia reguł skrzynki odbiorczej zawiera przewodnik: [Tworzenie reguł skrzynki odbiorczej w aplikacji OWA](../tworzenie-regul-skrzynki-odbiorczej-w-owa/).
 
-Oflagowane: wyświetla tylko e-maile ze wskaźnikiem (symbol ⚐ na końcu tytułu e-maila)
+### Zarządzanie listą kontaktów
 
-Sortuj według: pozwala na zarządzanie wyświetlaniem e-maili za pomocą różnych systemów sortowania (data, adresat, rozmiar, itp.).
+Aby zarządzać listą kontaktów, kliknij niebieski przycisk „uruchamiania” w lewym górnym rogu, a następnie kliknij ikonę `Kontakty`{.action}.
 
-![](images/img_2913.jpg){.thumbnail}
+![useowa](images/owa_exchange_step15.png){.thumbnail}
 
-#### Opcje e-mail
-Oto różne opcje dostępne po kliknięciu na e-mail prawym przyciskiem myszy:
+Zostanie wyświetlona nowa strona, na której można dodać nowy kontakt, utworzyć listę kontaktów lub usunąć istniejące kontakty.
 
+**Aby dodać nowy kontakt**, kliknij przycisk `Nowy`{.action} i wpisz informacje o kontakcie do dodania. Po ich wprowadzeniu kliknij przycisk `Zapisz`{.action}.
 
-Odpowiedz: opcja odpowiedzi do nadawcy e-maila.
+![useowa](images/owa_exchange_step16.png){.thumbnail}
 
-Odpowiedz wszystkim: odpowiedz wszystkim osobom, które otrzymały e-mail i które znajdują się w polu « Do ».
+**Aby utworzyć listę kontaktów**, kliknij przycisk strzałki w dół obok przycisku „Nowy”, a następnie kliknij pozycję `Lista kontaktów`{.action}. Nadaj liście nazwę, dodaj do niej kontakty, a następnie kliknij przycisk `Zapisz`{.action}.
 
-Prześlij dalej: przekaż cały e-mail wraz z załącznikiem.
+![useowa](images/owa_exchange_step17.png){.thumbnail}
 
-Usuń: usuwa wybrany e-mail.
+### Zmiana hasła
 
-Archiwizuj: Archiwizuje e-mail
+Po zalogowaniu do interfejsu OWA możesz zmienić hasło do konta. W tym celu kliknij ikonę koła zębatego u góry, a następnie kliknij pozycję `Opcje`{.action}.
 
-Oznacz jako przeczytane: oznacza wybrany e-mail jako przeczytany.
+![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-Przypnij: przypina e-mail do skrzynki e-mail.
+Na nowej stronie rozwiń kartę „Ogólne” w drzewie po lewej, a następnie kliknij pozycję `Moje konto`{.action}. Na koniec kliknij przycisk `Zmień hasło`{.action}.
 
-Oznacz jako zakończone: ta opcja pojawia się tylko, gdy wskaźnik (⚐) został wcześniej przypisany do e-maila i pozwala na oznaczenie e-maila jako zakończony.
+![useowa](images/owa_exchange_step18.png){.thumbnail}
 
-Oznacz jako wiadomość-śmieć: oznacza wybraną wiadomość i jej nadawcę jako niechciane. E-mail jest umieszczany automatycznie w katalogu systemowym "Wiadomości=śmieci".
+Zostanie wyświetlone nowe okno. Wpisz w nim bieżące hasło. Następnie wpisz nowe hasło i podaj je ponownie, aby potwierdzić. Kliknij przycisk `Zapisz`{.action}, aby zapisać nowe hasło.
 
-Ignoruj: ignoruje wybrany e-mail i przypisana korespondencję. E-mail i korespondencja zostaną umieszczone w katalogu systemowym "Elementy usunięte". Kolejne e-maile wysłane w ramach tej korespondencji będą automatycznie umieszczane w tym katalogu.
+> [!primary]
+>
+> Wprowadź nowe hasło na każdym urządzeniu (na przykład kliencie poczty e-mail), z którego uzyskujesz dostęp do tego konta. W przypadku problemów z hasłem skontaktuj się z administratorem usługi.
+>
 
-Przenieś: przenosi wybrany e-mail do wybranego katalogu.
+![useowa](images/owa_exchange_step19.png){.thumbnail}
 
-Kategoryzuj: umieszcza e-mail w kategorii przypisując mu kolor. Można również zarządzać kategoriami i zmieniać używane kolory.
+### Dodawanie odpowiedzi automatycznej
 
-Utwórz regułę: tworzy regułę skrzynki odbiorczej i określa zachowanie konta Exchange w przypadku przetwarzania kolejnych otrzymanych e-maili.
+W interfejsie OWA możesz utworzyć odpowiedź automatyczną z Twojego adresu e-mail, aby podczas nieobecności nie pozostawiać e-maili bez odpowiedzi. W tym celu kliknij ikonę koła zębatego u góry, a następnie kliknij pozycję `Odpowiedzi automatyczne`{.action}.
 
-![](images/img_2914.jpg){.thumbnail}
+![useowa](images/owa_exchange_step20.png){.thumbnail}
 
+W wyświetlonym oknie zaznacz opcję „Wysyłaj odpowiedzi automatyczne”. Możesz też ustawić różne kryteria automatycznych odpowiedzi:
+\- wysyłanie e-maili z automatyczną odpowiedzią w stałych przedziałach czasu lub ciągle, aż do ręcznego wyłączenia,
+\- którzy nadawcy będą otrzymywać e-maile z automatyczną odpowiedzią (tylko nadawcy wewnętrzni lub również nadawcy zewnętrzni).
 
-#### Zawartość e-maila
-Odnajdziesz tutaj zawartość wybranego e-maila, zdjęcie profilu nadawcy e-maila, datę i godzinę otrzymania wiadomości i różne dodatkowe opcje:
+Podaj wymagane informacje w zależności od działania, które ma być wykonywane. Po ich wprowadzeniu kliknij przycisk `OK`{.action}.
 
-Odpowiedz wszystkim: odpowiedz wszystkim osobom, które otrzymały e-mail i które znajdują się w polu « Do ».
+![useowa](images/owa_exchange_step21.png){.thumbnail}
 
-Więcej operacji (reprezentowane przez « ... ») : pozwala na wyświetlenie dodatkowych opcji.
+Szczegółowe instrukcje tworzenia odpowiedzi automatycznych zawiera przewodnik: [Tworzenie odpowiedzi automatycznych w interfejsie OWA](../exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa/).
 
-![](images/img_2916.jpg){.thumbnail}
+### Dodawanie podpisu
 
-#### Dodatkowe opcje:
-Odpowiedz: opcja odpowiedzi do nadawcy e-maila.
+Aby dodać podpis e-maila, kliknij ikonę koła zębatego u góry, a następnie kliknij pozycję `Opcje`{.action}.
 
-Odpowiedz wszystkim: odpowiedz wszystkim osobom, które otrzymały e-mail i które znajdują się w polu « Do ».
+![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-Prześlij dalej: przekaż cały e-mail do innej skrzynki e-mail.
+Na nowej stronie (po lewej) kliknij pozycję `Podpis wiadomości e-mail`{.action}. W drzewie opcji ten element znajduje się pod pozycjami „Poczta” i „Układ”. W tym obszarze można włączyć, wyłączyć i edytować podpis.
 
-Odpowiedz wszystkim za pomocą spotkania: tworzy zlecenie spotkania, które powinno zostać zaakceptowane przez zaproszone osoby.
+![useowa](images/owa_exchange_step22.png){.thumbnail}
 
-Odpowiedz za pomocą wiadomości błyskawicznych: ta opcja nie jest jeszcze dostępna. Jest to funkcja, która zostanie wprowadzona wraz z aplikacją Lync.
+Przygotuj podpis elektroniczny w polu edytora. Możesz określić, czy podpis ma być dołączany domyślnie tylko do nowych e-maili, czy też do odpowiedzi i wiadomości przesłanych dalej. Na koniec kliknij przycisk `Zapisz`{.action}, aby potwierdzić.
 
-Odpowiedz wszystkim za pomocą wiadomości błyskawicznych: ta opcja nie jest jeszcze dostępna. Jest to funkcja, która zostanie wprowadzona wraz z aplikacją Lync.
+Instrukcje dotyczące tworzenia automatycznych podpisów przy użyciu szablonów dla domeny zawiera przewodnik: [Automatyczny podpis](../exchange_20132016_automatyczny_podpis_-_disclaimer/).
 
-Usuń: usuwa wybrany e-mail.
+### Dostęp do sekcji opcji
 
-Usuń wszystkie wiadomości od nadawcy: usuwa wszystkie wiadomości od wybranego nadawcy.
+Aby uzyskać dostęp do wszystkich ustawień, kliknij ikonę koła zębatego u góry, a następnie kliknij pozycję `Opcje`{.action}.
 
-Oznacz jako wiadomość-śmieć: oznacza wybraną wiadomość i jej nadawcę jako niechciane. E-mail jest umieszczany automatycznie w katalogu systemowym "Wiadomości=śmieci".
+![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-Oznacz jako nie przeczytane: oznacza wybrany e-mail jako nie przeczytany.
+Po lewej stronie pojawi się drzewo menu „Opcje”. W tym widoku można dostosować układ i zachowanie konta e-mail. Niektóre opcje konta mogą być wyłączone po stronie OVH ze względów bezpieczeństwa.
 
-Drukuj: otwiera wybrany e-mail w dodatkowym oknie, abyś mógł rozpocząć drukowanie.
+![useowa](images/owa_exchange_step23.png){.thumbnail}
 
-Wyświetl szczegóły wiadomości: wyświetla nagłówek wybranej wiadomości. Opcja ta pozwala na obserwowanie trasy e-maila (serwer, data, godzina, itp.) aż do przyjęcia wiadomości przez nasze serwery. W niektórych przypadkach pomoc techniczna może poprosić Cię o przesłanie nagłówka wiadomości.
+## Sprawdź również
 
-Otwórz w osobnym oknie: otwiera wybrany e-mail w osobnym oknie.
+[Tworzenie odpowiedzi automatycznych w interfejsie OWA](../exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa/)
 
-![](images/img_2917.jpg){.thumbnail}
+[Współdzielenie katalogu w interfejsie OWA](../exchange_2016_wspoldzielenie_katalogu_poprzez_webmail_owa/)
 
-### Kalendarz
+[Współdzielenie kalendarza w interfejsie OWA](../exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa/)
 
-#### Informacje ogólne
-Przycisk "Kalendarz" pozwala na sprawdzanie, zarządzanie i tworzenie kalendarzy. Sekcja ta pozwala również na dostęp do kalendarzy współdzielonych.
+[Korzystanie z grup (mailing listy) dostępnych z kontem Exchange](../exchange_20132016_korzystanie_z_grup_wewnetrzne_grupy_dyskusyjne/)
 
-![](images/img_2918.jpg){.thumbnail}
-
-
-#### Nowy
-Przycisk ten pozwala na dodanie wydarzenia do kalendarza lub do współdzielonego kalendarza.
-
-Znajdziesz tu różne opcje związane z treścią wydarzenia dodanego do wybranego kalendarza.
-
-![](images/img_2919.jpg){.thumbnail}
-
-### Kontakty
-
-#### Informacje ogólne
-Przycisk "Kontakty" pozwala na wyświetlenie kontaktów i na tworzenie kontaktów i katalogów kontaktów związanych z kontem Exchange.
-
-![](images/img_2920.jpg){.thumbnail}
-W kolumnie z lewej strony znajdują się kontakty związane z kontem Exchange oraz kontakty związane z platformą Exchange i adresy kont zasobów.
-
-![](images/img_2921.jpg){.thumbnail}
-
-
-#### Nowy
-Przycisk ten pozwala na utworzenie nowego kontaktu lub nowej grupy kontaktów.
-
-![](images/img_2924.jpg){.thumbnail}
-Dane kontaktu;
-
-Podczas tworzenia nowego kontaktu będziesz mógł dodać dodatkowe informacje takie jak nazwisko, imię, telefon, itp.
-
-![](images/img_2922.jpg){.thumbnail}
-
-#### Grupa kontaktów
-Podczas tworzenia grupy kontaktów będziesz mógł dodać członków grupy. Chodzi o adresy e-mail związane z książką adresową lub adresy zewnętrzne, które można wpisać ręcznie.
-Następnie możesz wysłać e-mail do grupy kontaktów. E-mail zostanie wysłany do wszystkich członków grupy.
-
-![](images/img_2925.jpg){.thumbnail}
-
-#### Dodatkowe informacje
-OWA nie pozwala na współdzielenie kontaktów. Do tego typu operacji niezbędny jest kompatybilny program pocztowy (na przykład Outlook).
-
-### Zadania
-
-#### Informacje ogólne
-Przycisk Zadania pozwala na tworzenie, zarządzanie i wyświetlanie zadań związanych z kontem Exchange.
-
-Środkowa kolumna wyświetla zawartość wybranego katalogu zadań a kolumna z prawej strony wyświetla szczegóły wybranego zadania.
-
-![](images/img_2926.jpg){.thumbnail}
-
-
-#### Nowa
-Ten przycisk pozwala na utworzenie nowego zadania w wybranym katalogu zadań, na wybranie tematu oraz dodatkowych informacji (temat, termin, procent zaawansowanie, itp.).
-
-![](images/img_2928.jpg){.thumbnail}
-
-#### Katalog zadań
-W kolumnie z lewej strony znajdują się katalogi zadań. Możesz kliknąć prawym przyciskiem myszy na menu "Moje zadania", aby utworzyć spersonalizowany katalog zadań.
-
-![](images/img_2929.jpg){.thumbnail}
-
-#### Dodatkowe informacje
-OWA nie pozwala na współdzielenie zadań. Do tego typu operacji niezbędny jest kompatybilny program pocztowy (na przykład Outlook).
-
-
-### Opcje
-Przycisk ten pozwala na dostęp do poniższych opcji:
-
-
-- Zmień: zmienia zdjęcie profilu konta Exchange.
-
-- Otwórz inną skrzynkę pocztową:/b] skorzystaj z przewodnika:
-
-[]({legacy}1249)
-
-- Wyloguj: wylogowuje z konta Exchange i wyświetla stronę logowania do OWA.
-
-
-
-![](images/img_2931.jpg){.thumbnail}
-
-#### Zdjęcie profilu
-Kliknij na przycisk "Zmień" i wybierz ze swojego komputera zdjęcie dla swojego profilu.
-
-
-#### Opcje
-W tej części masz dostęp do ustawień konta Exchange i do dodatkowych opcji:
-
-Odśwież: aktualizuje konto Exchange. Jeśli dana osoba wysyła e-mail, skorzystaj z tego przycisku, aby odświeżyć odbieranie.
-
-Zarządzanie aplikacjami: sekcja ta pozwala na zarządzanie i dodawanie do OWA dodatkowych aplikacji (pluginów). Niektóre aplikacje są instalowane domyślnie przez naszych administratorów i nie mogą zostać usunięte.
-
-Ustawienia offline: włącza lub wyłącza dostęp do konta Exchange w trybie offline. Opcja ta jest użyteczna, jeśli chcesz sprawdzić konto Exchange w sytuacji, gdy nie masz dostępu do Internetu.
-
-Zmień motyw: zmienia motyw i kolory w OWA.
-
-Opcje: wyświetla dodatkowe opcje konta Exchange.
-
-![](images/img_2932.jpg){.thumbnail}
-« Pomoc » (w formie znaku zapytania): Pomoc Microsoft.
-
-![](images/img_2933.jpg){.thumbnail}
-
-#### Dodatkowe opcje konta Exchange
-W tej sekcji znajdziesz poniższe opcje:
-
-Ogólne: ogólne informacje na temat konta Exchange. Możesz zmienić hasło do konta Exchange i masz możliwość zmiany niektórych informacji.
-
-
-- Informacje uzupełniające: zmiana nazwiska, imienia, nazwy i adresu Exchange jest możliwa tylko w [panelu klienta](https://www.ovh.com/manager/web/login.html).
-
-Poczta: tutaj możesz zdefiniować reguły skrzynki odbiorczej, automatyczne odpowiedzi i sprawdzać raporty związane z kontem Exchange.
-
-Kalendarz: możesz zmienić kilka opcji swojego kalendarza: powiadomienia, przypomnienia...
-
-
-![](images/img_2934.jpg){.thumbnail}
-
-
-#### Integracja obrazka
-Obrazek musi być zainstalowany online i musi być dostępny z poziomu przeglądarki internetowej. Przeniesienie obrazka przechowywanego lokalnie nie zadziała.
-W menu "Opcje" otwórz menu "Poczta", "Układ" i "Podpis wiadomości e-mail".
-
-Otwórz przeglądarkę internetową i wpisz adres swojego obrazka. 
-
-Kliknij na obrazek i przenieś obrazek do ramki podpisu.
-
-![](images/img_4261.jpg){.thumbnail}
-Oto obrazek przeniesiony do sekcji podpisu. Klikając na obrazek można "zmienić jego rozmiar".
-
-![](images/img_4263.jpg){.thumbnail}
-Zaznacz: "Automatycznie dodawaj mój podpis do nowych redagowanych wiadomości".
-
-[Office Store](https://store.office.com/fr) pozwala na odnalezienie dodatkowych aplikacji. Nie wszystkie aplikacje będą mogły zostać domyślnie dodane. Niektóre z nich wymagają uprawnień administratora. Jeśli chcesz zainstalować aplikację, która wymaga uprawnień administratora, skontaktuj się z pomocą Exchange, abyśmy mogli sprawdzić to zapytanie.
-
-
-
-
-## Outlook Web App 2013
-
-### Poczta elektroniczna
-Przycisk dotyczący poczty elektronicznej pozwala na wyświetlenie skrzynki e-mail Exchange. 
-
-W kolumnie z lewej strony znajduje się przycisk do tworzenia nowych wiadomości jak również katalogi systemowe i inne katalogi spersonalizowane ("Dossier TEST" w naszym przykładzie).
-
-Znak «  pod przyciskiem "Nowa wiadomość" pozwala na ukrycie całej kolumny (poza "Nowa wiadomość").
-
-![](images/img_2070.jpg){.thumbnail}
-
-
-#### Nowa wiadomość
-Możesz wprowadzać załączniki do e-maila, korzystać z [dodatkowych aplikacji](http://office.microsoft.com/fr-fr/store/applications-pour-outlook-FX102825292.aspx?app=outlook.exe) związanych z interfejsem OWA lub włączyć potwierdzenie odbioru lub potwierdzenie przeczytania wiadomości. 
-
-W interfejsie znajdziesz również klasyczne opcje edycji treści (rozmiar, kolor, itp).
-
-Dodatkowe informacje
-Rozmiar załącznika przesyłanego przez OWA jest ograniczony do 35MB. Aplikacja do synchronizacji ActiveSync narzuca ograniczenie do 10 MB (głównie w przypadku smartphone'ów kompatybilnych z ActiveSync). W przypadku korzystania z kompatybilnego programu do obsługi poczty (na przykład Outlook) rozmiar załącznika to maksymalnie 100 MB.
-
-![](images/img_2071.jpg){.thumbnail}
-
-
-#### Katalogi systemowe i katalogi spersonalizowane
-Domyślnie dostępne są takie katalogi systemowe:
-
-
-- Skrzynka odbiorcza
-- Robocze
-- Elementy wysłane
-- Elementy usunięte
-- Abonament RSS
-- Niechciana poczta
-- RSS
-- Notatnik
-
-Nie można zmienić nazwy, przenieść lub usunąć katalogu systemowego. Nie można zmienić tych reguł.
-
-
-Klikającprawym przyciskiem myszy na nazwę konta Exchange lub na katalog, pojawiają się różne opcje:
-
-Utwórz katalog: tworzy katalog w miejscu, w którym wykonano kliknięcie. W naszym przykładzie katalog zostanie utworzony na tym samym poziomie, na którym są dostępne katalogi systemowe.
-
-Zmień nazwę: pozwala na zmianę nazwy spersonalizowanego katalogu.
-
-usuń: usuwa spersonalizowany katalog.
-
-Wyczyść: czyści katalog systemowy lub spersonalizowany. Zawartość zostanie przeniesiona do katalogu "Elementy usunięte".
-
-Dodaj do ulubionych: dodaje wybrany katalog do części "Ulubione".
-
-Przenieś:przenosi wybrane spersonalizowane katalogi do innego katalogu.
-
-Zaznacz wszystko jako przeczytane: oznacza wszystkie nieprzeczytane e-maile z danego katalogu jako przeczytane.
-
-Dodaj współdzielony katalog: dodaje dostęp do danego katalogu, który inny użytkownik platformy Exchange z Tobą współdzieli (opcja ta nie pojawia się podczas kliknięcia prawym przyciskiem myszy na katalog systemowy lub spersonalizowany).
-
-Autoryzacje: pozwala na przyznanie dostępu do wybranego katalogu systemowego lub spersonalizowanego innemu użytkownikowi Twojej platformy Exchange. Po dodaniu uprawnień użytkownik ten musi skorzystać z funkcji dodania katalogu w OWA dla swojego konta Exchange (Dodaj współdzielony katalog).
-
-![](images/img_2072.jpg){.thumbnail}
-
-
-#### Zawartość katalogu
-Chodzi tutaj o wyświetlenie zawartości wybranego katalogu. W naszym przykładzie jest to katalog systemowy "Skrzynka odbiorcza". Zawiera on dwa e-maile testowe. 
-
-W górnej części tej kolumny znajduje się opcja wyszukiwania e-maili i kontaktów:
-
-Korespondencja według daty: pozwala na zarządzanie wyświetlaniem e-maili za pomocą różnych systemów sortowania (data, adresat, rozmiar, itp.).
-
-Wszystko: wyświetla wszystkie e-maile.
-
-Nie przeczytane: wyświetla tylko e-maile nie przeczytane.
-
-Do mnie: wyświetla tylko e-maile zaadresowane bezpośrednio do Ciebie.
-
-Ze wskaźnikiem: wyświetla tylko e-maile ze wskaźnikiem (symbol ⚐ na końcu tytułu e-maila).
-
-![](images/img_2075.jpg){.thumbnail}
-
-#### Opcje e-mail
-Oto różne opcje dostępne po kliknięciu na e-mail prawym przyciskiem myszy:
-
-Usuń: usuwa wybrany e-mail.
-
-Oznacz jako przeczytane: oznacza wybrany e-mail jako przeczytany.
-
-Oznacz jako zakończone: ta opcja pojawia się tylko, gdy wskaźnik (⚐) został wcześniej przypisany do e-maila i pozwala na oznaczenie e-maila jako zakończony.
-
-Przenieś: przenosi wybrany e-mail do wybranego katalogu. 
-
-Zignoruj: ignoruje wybrany e-mail i przypisana korespondencję. E-mail i korespondencja zostaną umieszczone w katalogu systemowym "Elementy usunięte". Kolejne e-maile wysłane w ramach tej korespondencji będą automatycznie umieszczane w tym katalogu.
-
-Podział na kategorie: umieszcza e-mail w kategorii przypisując mu kolor. Można również zarządzać kategoriami i zmieniać używane kolory. 
-
-Utwórz regułę: tworzy regułę skrzynki odbiorczej i określa zachowanie konta Exchange w przypadku przetwarzania kolejnych otrzymanych e-maili. 
-
-Oznacz jako niechciane: oznacza wybraną wiadomość i jej nadawcę jako niechciane. E-mail jest umieszczany automatycznie w katalogu systemowym "Niechciana poczta elektroniczna". W części "Ustawienia", "Opcje", "Blokowanie lub autoryzowanie" odnajdziesz listę użytkowników zaakceptowanych i zablokowanych.
-
-![](images/img_2076.jpg){.thumbnail}
-
-
-#### Zawartość e-maila
-Odnajdziesz tutaj zawartość wybranego e-maila, zdjęcie profilu nadawcy e-maila, datę i godzinę otrzymania wiadomości i różne dodatkowe opcje:
-
-Odpowiedz: opcja odpowiedzi do nadawcy e-maila.
-
-Odpowiedz wszystkim: odpowiedz wszystkim osobom, które otrzymały e-mail i które znajdują się w polu « Do ».
-
-Przekaż: przekaż cały e-mail wraz z załącznikiem.
-
-Więcej operacji (reprezentowane przez « ... ») : pozwala na wyświetlenie dodatkowych opcji.
-
-![](images/img_2077.jpg){.thumbnail}
-
-#### Dodatkowe opcje:
-Odpowiedz za pomocą natychmiastowej wiadomości: ta opcja nie jest jeszcze dostępna. Jest to funkcja, która zostanie wprowadzona wraz z aplikacją Lync. 
-
-Odpowiedz wszystkim za pomocą natychmiastowej wiadomości: ta opcja nie jest jeszcze dostępna. Jest to funkcja, która zostanie wprowadzona wraz z aplikacją Lync.
-
-Usuń: usuwa wybrany e-mail.
-
-Podział na kategorie: umieszcza e-mail w kategorii przypisując mu kolor. Można również zarządzać kategoriami i zmieniać używane kolory. 
-
- Oznacz jako niechciane: oznacza wybraną wiadomość i jej nadawcę jako niechciane. E-mail jest umieszczany automatycznie w katalogu systemowym "Niechciana poczta elektroniczna". W części "Ustawienia", "Opcje", "Blokowanie lub autoryzowanie" odnajdziesz listę użytkowników zaakceptowanych i zablokowanych.
-
-Otwórz w osobnym oknie: otwiera wybrany e-mail w osobnym oknie.
-
-Wydrukuj: otwiera wybrany e-mail w dodatkowym oknie, abyś mógł rozpocząć drukowanie.
-
-Utwórz regułę: tworzy regułę skrzynki odbiorczej i określa zachowanie konta Exchange w przypadku przetwarzania kolejnych otrzymanych e-maili. 
-
-Wyświetl szczegóły wiadomości: wyświetla nagłówek wybranej wiadomości. Opcja ta pozwala na obserwowanie trasy e-maila (serwer, data, godzina, itp.) aż do przyjęcia wiadomości przez nasze serwery. W niektórych przypadkach pomoc techniczna może poprosić Cię o przesłanie nagłówka wiadomości.
-
-![](images/img_2081.jpg){.thumbnail}
-
-### Kalendarz
-
-#### Informacje ogólne
-Przycisk "Kalendarz" pozwala na sprawdzanie, zarządzanie i tworzenie kalendarzy. Sekcja ta pozwala również na dostęp do kalendarzy współdzielonych.
-
-Przewodnik dotyczący tej funkcjonalności:
-[]({legacy}1248)
-
-![](images/img_2082.jpg){.thumbnail}
-
-
-#### Nowe wydarzenie
-Przycisk ten pozwala na dodanie wydarzenia do kalendarza lub do współdzielonego kalendarza.
-
-![](images/img_2083.jpg){.thumbnail}
-
-### Osoby
-
-#### Informacje ogólne
-Przycisk "Osoby" pozwala na wyświetlenie kontaktów i na tworzenie kontaktów i katalogów kontaktów związanych z kontem Exchange.
-
-W kolumnie z lewej strony znajdują się kontakty związane z kontem Exchange oraz kontakty związane z platformą Exchange i adresy kont zasobów:
-
-![](images/img_2084.jpg){.thumbnail}
-
-
-#### Nowy
-Przycisk ten pozwala na utworzenie nowego kontaktu lub nowej grupy kontaktów.
-
-![](images/img_2085.jpg){.thumbnail}
-
-#### Dane kontaktu
-Podczas tworzenia nowego kontaktu będziesz mógł dodać dodatkowe informacje takie jak nazwisko, imię, telefon, itp.
-
-![](images/img_2086.jpg){.thumbnail}
-
-#### Grupa kontaktów
-Podczas tworzenia grupy kontaktów będziesz mógł dodać członków grupy. Chodzi o adresy e-mail związane z książką adresową lub adresy zewnętrzne, które można wpisać ręcznie. 
-
-Następnie możesz wysłać e-mail do grupy kontaktów. E-mail zostanie wysłany do wszystkich członków grupy.
-
-![](images/img_2087.jpg){.thumbnail}
-
-#### Dodatkowe informacje
-OWA nie pozwala na współdzielenie kontaktów. Do tego typu operacji niezbędny jest kompatybilny program pocztowy (na przykład Outlook). Zapoznaj się z tym przewodnikiem:
-[]({legacy}1251)
-
-### Zadania
-
-#### Informacje ogólne
-Przycisk Zadania pozwala na tworzenie, zarządzanie i wyświetlanie zadań związanych z kontem Exchange.
-
-Środkowa kolumna wyświetla zawartość wybranego katalogu zadań a kolumna z prawej strony wyświetla szczegóły wybranego zadania.
-
-![](images/img_2088.jpg){.thumbnail}
-
-
-#### Nowe zadanie
-Ten przycisk pozwala na utworzenie nowego zadania w wybranym katalogu zadań, na wybranie tematu oraz dodatkowych informacji (temat, termin, procent zaawansowanie, itp.).
-
-![](images/img_2089.jpg){.thumbnail}
-
-#### Katalog zadań
-W kolumnie z lewej strony znajdują się katalogi zadań. Możesz kliknąć  prawym przyciskiem myszy na menu "Moje zadania", aby utworzyć spersonalizowany katalog zadań.
-
-![](images/img_2090.jpg){.thumbnail}
-
-#### Dodatkowe informacje
-OWA nie pozwala na współdzielenie zadań. Do tego typu operacji niezbędny jest kompatybilny program pocztowy (na przykład Outlook).
-
-
-### Opcje
-Przycisk ten pozwala na dostęp do poniższych opcji:
-
-
-- Zmień: zmienia zdjęcie profilu konta Exchange.
-
-- Otwórz skrzynkę: skorzystaj z przewodnika;
-
-[]({legacy}1249)
-
-- Wyloguj się: wylogowuje z konta Exchange i wyświetla stronę logowania do OWA.
-
-
-
-![](images/img_2091.jpg){.thumbnail}
-
-#### Zdjęcie profilu
-Kliknij na przycisk "Przeglądaj" i wybierz ze swojego komputera zdjecie dla swojego profilu.
-
-![](images/img_2092.jpg){.thumbnail}
-
-
-#### Opcje
-W tej części masz dostęp do ustawień konta Exchange i do dodatkowych opcji:
-
-Aktualizuj: aktualizuje konto Exchange. Jeśli dana osoba wysyła e-mail, skorzystaj z tego przycisku, aby odświeżyć odbieranie.
-
-Zdefiniuj automatyczne odpowiedzi: uruchamia autorespondery dla Twojego konta Exchange.
-
-Ustawienia wyświetlania: zmiany parametrów wyświetlania w interfejsie OWA. 
-
-Zarządzanie aplikacjami: sekcja ta pozwala na zarządzanie i dodawanie do OWA dodatkowych aplikacji (pluginów). Niektóre aplikacje są instalowane domyślnie przez naszych administratorów i nie mogą zostać usunięte. 
-
-Ustawienia offline: włącza lub wyłącza dostęp do konta Exchange w trybie offline. Opcja ta jest użyteczna, jeśli chcesz sprawdzić konto Exchange w sytuacji, gdy nie masz dostępu do Internetu. 
-
-Zmień motyw: zmienia motyw i kolory w OWA.
-
-Zmień hasło: zmienia hasło do konta Exchange. Do tek operacji możesz również skorzystać z [panelu klienta](https://www.ovh.com/manager/web/login.html).
-
-Opcje: wyświetla dodatkowe opcje konta Exchange. 
-
-« Pomoc » (w formie znaku zapytania): Pomoc Microsoft.
-
-![](images/img_2093.jpg){.thumbnail}
-
-### Dodatkowe opcje konta Exchange
-W tej sekcji znajdziesz poniższe opcje:
-
-Konto: ogólne informacje na temat konta Exchange. Możesz zmienić hasło do konta Exchange i masz możliwość zmiany niektórych informacji. 
-
-
-- Informacje uzupełniające: zmiana nazwiska, imienia, nazwy i adresu Exchange jest możliwa tylko w [panelu klienta](https://www.ovh.com/manager/web/login.html).
-
-Organizowanie poczty elektronicznej: tutaj możesz zdefiniować reguły skrzynki odbiorczej, automatyczne odpowiedzi i sprawdzać raporty związane z kontem Exchange. 
-
-Skrzynki pocztowe strony: ta opcja nie jest aktualnie dostępna. Zostanie ona wprowadzona wraz z wprowadzeniem aplikacji Lync.
-
-Parametry: inne parametry poczty elektronicznej, wyświetlania, opcji wiadomości, kalendarzy, opcji regionalnych, zmiana hasła do konta Exchange. 
-
-Telefon: w tej sekcji możesz sprawdzić przenośne urządzenia peryferyjne, na których jest skonfigurowane Twoje konto Exchange. Możesz usunąć urządzenie z listy, zresetować je lub je zablokować. 
-
-Blokowanie lub autoryzowanie : w tej części możesz zarządzać nadawcami i odbiorcami zaakceptowanych lub zablokowanych e-maili. gdy oznaczysz e-mail jako niechciany, nadawca e-maila zostanie zablokowany i umieszczony w tej sekcji.
-
-Aplikacja: w tej sekcji możesz dodawać aplikacje (lub pluginy) do OWA. Niektóre aplikacje są instalowane domyślnie przez naszych administratorów i nie mogą zostać usunięte. 
-
-Dodatkowe informacje: [Office Store](http://office.microsoft.com/fr-fr/store/applications-pour-outlook-FX102825292.aspx?app=outlook.exe) pozwala na odnalezienie dodatkowych aplikacji. Nie wszystkie aplikacje będą mogły zostać domyślnie dodane. Niektóre z nich wymagają uprawnień administratora. Jeśli chcesz zainstalować aplikację, która wymaga uprawnień administratora, skontaktuj się z pomocą Exchange, abyśmy mogli sprawdzić to zapytanie.
-
-
-![](images/img_2094.jpg){.thumbnail}
+Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
