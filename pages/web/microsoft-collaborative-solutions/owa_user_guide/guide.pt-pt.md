@@ -1,623 +1,210 @@
 ---
-title: 'Exchange 2016: guia de utilização do Outlook Web App'
-excerpt: Guia de utilização do Outlook Web App
+title: 'Utilizar o Outlook Web App com uma conta Exchange'
+excerpt: 'Saiba como gerir o seu endereço Exchange utilizando o webmail OWA'
 slug: exchange_2016_guia_de_utilizacao_do_outlook_web_app
 legacy_guide_number: g1918
+section: 'Outlook Web Application (OWA)'
+order: 1
 ---
 
+**Última atualização: 03/08/2020**
 
-**O que é o Outlook Web App (OWA)?**
+## Sumário
 
-OWA corresponde ao webmail Exchange. Esta interface permite-lhe consultar e utilizar a sua conta Exchange bem como as diversas funcionalidades associadas a partir de uma página Web clássica.
+Com o OVHcloud Hosted Exchange pode enviar e receber e-mails utilizando um dispositivo e um cliente à sua escolha. Para aceder a uma conta a partir de qualquer local através do seu browser, a OVHcloud disponibiliza-lhe um cliente de e-mail online denominado Outlook Web Application (OWA). A nossa [página de login](https://www.ovh.pt/mail/) é o único ponto de acesso à interface OWA para todas as contas de e-mail ativas no MX Plan, Email Pro e Hosted Exchange.
 
-Esta interface é muito prática se não dispuser de um software de e-mails compatível com a configuração e utilização de uma conta Exchange.
+**Este guia explica-lhe como desempenhar ações comuns com o seu endereço de e-mail na interface OWA.**
 
-**Onde e como me posso ligar ao OWA?**
+## Requisitos
 
-O endereço do OWA corresponde ao endereço Exchange completo que deseja consultar.
+- uma solução de e-mail OVHcloud já configurada (**MX Plan**, disponível como parte dos nossos [planos Web Hosting](https://www.ovh.pt/alojamento-partilhado/), incluída num [alojamento Start10M gratuito](https://www.ovh.pt/dominios/oferta_alojamento_start10m.xml) ou encomendada separadamente como solução autónoma; [**Hosted Exchange**](https://www.ovh.pt/emails/hosted-exchange/) ou [**E-mail Pro**](https://www.ovh.pt/emails/email-pro/))
+- credenciais de login para o endereço de e-mail que deseja configurar
 
-A password corresponde aquela que definiu aquando da criação do endereço Exchange no seu [Espaço Cliente web](https://www.ovh.com/manager/web/login.html).
+## Instruções
 
-Oferta Hosted Exchange:
+Este guia fornece-lhe informações mais detalhadas sobre as habituais tarefas associadas à sua conta de e-mail disponível no webmail OWA. No entanto, uma vez que esta interface não foi criada pela OVHcloud, não temos capacidade de disponibilizar instruções específicas sobre quaisquer configurações não mencionadas neste guia. Relativamente às funcionalidades Exchange, preparámos alguns guias adicionais que pode encontrar mais abaixo, na secção [**Vá mais longe**](./#saiba-mais_1).
 
-- [https://ex.mail.ovh.net](https://ex.mail.ovh.net)
-- [https://ex2.mail.ovh.net](https://ex2.mail.ovh.net)
-- [https://ex3.mail.ovh.net](https://ex3.mail.ovh.net)
 
-Oferta Private Exchange: O URL de acesso dependerá do nome do host do seu servidor definido na criação do serviço.
+> [!primary]
+>
+> Após as duas primeiras etapas, as instruções não têm de ser consideradas de acordo com uma ordem particular. Pode usar a barra de navegação situada à esquerda neste guia para aceder facilmente aos parágrafos que considerar mais úteis.
+>
 
-![](images/img_2884.jpg){.thumbnail}
+### 1. Aceder ao webmail OWA
 
-Aquando da primeira ligação ao OWA será necessário definir o seu fuso horário.
+Para entrar no webmail OWA através do seu endereço de e-mail, aceda à [página de login](https://www.ovh.pt/mail/) geral. Introduza o seu endereço de e-mail e palavra-passe e clique no botão `Login`{.action}.
 
-![](images/img_2885.jpg){.thumbnail}
+![useowa](images/owa_exchange_step1.png){.thumbnail}
 
-## Outlook Web App 2016
+Se está a efetuar o login no webmail OWA pela primeira vez com este endereço de e-mail, ser-lhe-á solicitado que configure o idioma e o fuso horário na interface. Clique em `Guardar`{.action} para continuar.
 
-### E-mails
-De forma padrão, e aquando da sua ligação, a secção de E-mails é apresentada.
+![useowa](images/owa_exchange_step2.png){.thumbnail}
 
-Se navegar numa outra secção: Calendário, Contactos, Trabalhos, é possível voltar à secção E-mails.
+A partir de agora, a sua caixa de correio irá aparecer por defeito sempre que iniciar a sessão.
 
-Basta clicar no quadrado azul no canto superior esquerdo para ter acesso às diferentes secções.
+![useowa](images/owa_exchange_step3.png){.thumbnail}
 
-![](images/img_2906.jpg){.thumbnail}
-Para a criação de novas mensagens: queira clicar em "Novo"
+### 2. Compreender a estrutura OWA
 
-![](images/img_2907.jpg){.thumbnail}
-Se clicar na flecha preta terá 2 opções:
+Existem várias secções na interface OWA. Para as conhecer melhor, consulte o quadro e a imagem que se seguem.
 
+|Componentes|Descrição|  
+|---|---|  
+|Secção superior (1)|Contém duas barras de separadores: a primeira permite o acesso às configurações gerais (tais como [a secção de opções](./#aceder-a-seccao-de-opcoes)), e a segunda pode ser utilizada para realizar ações específicas com o seu endereço (como enviar ou responder a e-mails).|  
+|Lado esquerdo (2)|Exibe a lista de pastas relativas ao seu endereço de e-mail. Estas são visualizadas numa estrutura em árvore que se pode expandir ou ocultar.|
+|Segmento central (3)|Exibe a lista de mensagens (lidas e não lidas) da pasta selecionada no menu à esquerda. Esta secção pode igualmente exibir os resultados de pesquisa.|
+|Lado direito (4)|Exibe o painel de leitura quando um e-mail foi selecionado.|
 
-- E-mail eletrónico
+![useowa](images/owa_exchange_step4.png){.thumbnail}
 
-- Evento de calendário
+Tenha em atenção que pode alterar o tamanho das secções verticais clicando e arrastando as suas linhas de contorno.
 
+### Visualizar e-mails
 
+Para visualizar os seus e-mails, selecione uma pasta do lado esquerdo. Os e-mails que chegarem à sua caixa de correio e não forem tratados pelas regras inbox entrarão na pasta “inbox”. Para ver se recebeu novos e-mails, verifique se aparece um número junto à respetiva pasta.
 
-![](images/img_2908.jpg){.thumbnail}
-Na coluna da esquerda encontrará as pastas do sistema e outras pastas personalizadas ("Pasta TEST" no nosso exemplo).
+![useowa](images/owa_exchange_step5.png){.thumbnail}
 
-![](images/img_2909.jpg){.thumbnail}
+Para ler um e-mail, selecione a sua pasta se necessário. De seguida, clique no e-mail para abrir o seu conteúdo na secção de leitura. As mensagens não lidas aparecerão com outra cor para as diferenciar das que já foram lidas.
 
+![useowa](images/owa_exchange_step6.png){.thumbnail}
 
-#### Nova mensagem
-Poderá, por exemplo, introduzir um anexo ao seu e-mail, utilizar [aplicações suplementares](http://office.microsoft.com/fr-fr/store/applications-pour-outlook-FX102825292.aspx?app=outlook.exe) associadas ao OWA, ou ainda ativar alertas de receção e leitura.
+### Enviar e responder
 
-Encontrará igualmente as opções clássicas de edição de conteúdo (tamanho, cor, etc..).
+**Para enviar um novo e-mail**, clique no botão `Novo`{.action} situado na parte superior da interface de webmail. O painel de edição irá surgir no lado direito. Preencha os campos necessários (destinatários, assunto, corpo da mensagem, anexos). Quando terminar, clique no botão `Enviar`{.action}.
 
-Informações complementares 
-O tamanho de um anexo através OWA está limitado a 35 MB. A aplicação da sincronização ActiveSync impõe uma limitação de 10 MB nos anexos (principalmente nos smartphones compatíveis com ActiveSync). Ao utilizar um software de e-mails compatível (Outlook por exemplo), o tamanho de um anexo é de 100 MB máximo.
+![useowa](images/owa_exchange_step7.png){.thumbnail}
 
-![](images/img_2911.jpg){.thumbnail}
+**Para responder a um e-mail**, [clique nele primeiro](./#visualizar-e-mails) para exibir o respetivo conteúdo. De seguida, clique no botão `Responder a todos`{.action}. Use a seta para baixo se quiser apenas responder ao remetente do e-mail (deixando de fora qualquer outro destinatário incluído).
 
+![useowa](images/owa_exchange_step8.png){.thumbnail}
 
-#### As pastas de sistema de pastas personalizadas
-De forma padrão, as pastas de sistema que observará serão:
+Ao escolher responder, aparecerá um editor de resposta rápida sobre o e-mail. Escreva a sua mensagem e, quando estiver pronto para enviar o seu e-mail, clique em `Enviar`{.action}. Note que, para aceder a todas as opções de resposta (como adicionar uma assinatura), o editor deve ser primeiro alargado, clicando no símbolo de seta dupla.
 
+![useowa](images/owa_exchange_step9.png){.thumbnail}
 
-- Caixa de receção
-- Lixeira
-- Itens enviados
-- Itens eliminados
-- SPAM (correio indesejado)
-- Fluxo RSS
-- Notas
+### Organizar a sua caixa de entrada
 
+O OWA disponibiliza várias formas de organizar a sua caixa de entrada (inbox). Pode:
 
+- [criar pastas e subpastas](./#criar-uma-pasta)
+- [mover e-mails](./#mover-e-mails)
+- [configurar regras](./#criar-regras-inbox) para que algumas ações sejam realizadas automaticamente quando um novo e-mail é recebido
 
-![](images/img_2912.jpg){.thumbnail}
-Uma pasta de sistema não pode ser renomeada, movida ou eliminada. Tratam-se de regras fixas e não parametrizáveis.
+#### Criar uma pasta
 
-Ao efetuar um clique direito no nome de apresentação da sua conta Exchange ou numa pasta, ser-lhe-ão propostas várias opções:
+Para criar uma pasta, clique com o botão direito do rato no seu endereço de e-mail na árvore de pastas e, de seguida, selecione `Criar nova pasta`{.action}. Pode ainda criar subpastas dentro das pastas existentes selecionando (`Criar nova subpasta`{.action}). 
 
-Criar uma pasta: crie uma pasta no diretorio onde o clique direito foi efetuado. No nosso exemplo a pasta será criada ao mesmo nível que as outras pastas de sistema.
+![useowa](images/owa_exchange_step10.png){.thumbnail}
 
-Renomear: renomeia uma pasta personalizada.
+#### Mover e-mails
 
-Eliminar: elimina uma pasta personalizada.
+**Para mover um e-mail**, basta arrastá-lo e largá-lo na pasta pretendida ou clicar nele com o botão direito do rato e selecionar `Mover`{.action}.
+**Para mover vários e-mails** de uma vez, selecione-os e clique em `Mover`{.action} (do lado direito) ou em `Mover para`{.action} (na secção superior). Por fim, escolha a pasta de destino.
 
-Esvaziar pasta: esvazia uma pasta de sistema ou personalizada. Todo o conteúdo será transferido para os "Itens eliminados"
+![useowa](images/owa_exchange_step11.png){.thumbnail}
 
-Adicionar aos favoritos: adiciona a pasta seleciona na parte "Favoritos".
+#### Criar regras inbox
 
-Mover: move a pasta personalizada selecionada para uma outra pasta.
+Para gerir as regras, clique no ícone de engrenagem na parte superior e, de seguida, em `Opções`{.action}.
 
-Marcar tudo como lido: marca todos os e-mails não lidos de uma pasta como lidos.
+![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-Adicionar uma pasta partilhada: adiciona o acesso a uma pasta que um outro utilizador da sua plataforma Exchange partilhou consigo (esta opção não aparece quando efetua um clique direito numa pasta de sistema ou pasta personalizada).
+Na nova página exibida, clique em `Regras inbox e varrimento`{.action} no menu situado à esquerda. Na vista de árvore do menu “Opções”, pode encontrá-lo clicando em “Mail” e, de seguida, em “Processamento automático”. A partir daqui, pode criar, editar, apagar e mover regras da lista. 
 
-Autorizações: permite dar autorizações de acesso a um outro utilizador da sua plataforma Exchange à pasta de sistema ou pasta personalizada seleciona. Quando as autorizações são atribuídas, o utilizador com o qual partilhou deverá efetuar o procedimento descrito anteriormente (Adicionar uma pasta partilhada) através do OWA da sua conta Exchange.
+Para adicionar uma nova regra, clique no botão `+`{.action}. 
 
+![useowa](images/owa_exchange_step13.png){.thumbnail}
 
-#### O conteúdo de uma pasta
-Trata aqui da apresentação do conteúdo da pasta escolhida. No nosso exemplo, é a pasta sistema "Caixa de receção" que é selecionado. Esta contém dois e-mails de teste.
+Preencha a informação solicitada consoante a regra que pretende que seja executada. De seguida, clique em `OK`{.action}. 
 
-Encontrará no topo dessa coluna um motor de pesquisa para encontrar esses e-mails ou contactos, bem como diferentes opções de categorização:
+![useowa](images/owa_exchange_step14.png){.thumbnail}
 
-Todas: apresentação de todos os e-mails.
+Para instruções mais detalhadas sobre como criar regras inbox, consulte o nosso guia: [Criar regras inbox no OWA](../criar-regras-inbox-no-owa/).
 
-Não lidas: apresenta unicamente os e-mails não lidos.
+### Gerir uma lista de contactos
 
-Para mim: apresenta unicamente os e-mails que lhe serão diretamente endereçados.
+Para gerir os seus contactos, clique no botão azul “iniciador de aplicações” situado na parte superior e, de seguida, em `Contactos`{.action}.
 
-Com o indicador: apresenta unicamente os e-mails com um indicador (símbolo ⚐ ao lado do título do e-mail).
+![useowa](images/owa_exchange_step15.png){.thumbnail}
 
-Triado por permite-lhe gerir a apresentação dos e-mails pelos diferentes sistemas de triagem (Data, Destinatário, Tamanho, etc...).
+Nesta nova página, pode adicionar um novo contacto, criar uma lista de contactos e remover os contactos existentes.
 
-![](images/img_2913.jpg){.thumbnail}
+**Para adicionar um novo contacto**, clique em `Novo`{.action} e introduza os detalhes do contacto que deseja adicionar. Quando terminar, clique em `Guardar`{.action}.
 
-#### Opção de e-mail
-Veja igualmente as diferentes opções disponíveis quando efetua um clique direito num e-mail:
+![useowa](images/owa_exchange_step16.png){.thumbnail}
 
-Responder: Permite responder ao último remetente.
+**Para criar uma lista de contactos**, clique no botão com a seta para baixo, situado junto a “Novo” e, de seguida, em `Lista de contactos`{.action}. Dê um nome à lista, adicione os contactos e, por fim, clique em `Guardar`{.action}.
 
-Responder a todos: Permite responder a todas as pessoas incluídas no campo Para e cc.
+![useowa](images/owa_exchange_step17.png){.thumbnail}
 
-Transferir: Transfere o e-mail para outra caixa de e-mail.
+### Alterar a palavra-passe
 
-Eliminar: Elimina o e-mail selecionado.
+Pode alterar a palavra-passe da sua conta quando tiver iniciado uma sessão no OWA. Para o fazer, clique no ícone de engrenagem situado na parte superior e, de seguida, em `Opções`{.action}.
 
-Arquivar: Arquiva o e-mail numa pasta "Arquivos". É possível personalizar o nome dessa pasta.
+![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-Marcar como não lido: Marca como não lido o e-mail selecionado.
+Na nova página, expanda o separador “Geral” na árvore situada do lado esquerdo e, de seguida, clique em `A minha conta`{.action}. Por fim, clique em `Alterar palavra-passe`{.action}.
 
-Afixar: Coloca o e-mail em primeiro lugar na caixa de e-mail. Se o elemento estiver afixado, a opção no menu será "Remover (para desafixar)".
+![useowa](images/owa_exchange_step18.png){.thumbnail}
 
-Marcar como terminado: Esta opção somente aparece quando um indicador (⚐) foi colocado no e.-mail e permite marcá-lo então como terminado.
+Na janela seguinte, introduza a sua palavra-passe atual. De seguida, introduza a sua nova palavra-passe, voltando a reintroduzi-la para confirmar. Clique no botão `Guardar`{.action} para guardar a nova palavra-passe.
 
-Marcar como lixo: Marca como indesejado o e-mail selecionado e o seu retemente. O e-mail será automaticamente colocado na pasta sistema "Spam (Correio indesejado). Poderá encontrar a lista dos utilizadores aprovados ou bloqueados na secção "Parâmetros" (simbolizado com a roda dentada), "Opções", "contas", "Bloquear ou autorizar".
+> [!primary]
+>
+> Lembre-se também de voltar a introduzir a sua nova palavra-passe em qualquer dispositivo que use para aceder a esta conta. Caso tenha algum problema com a sua palavra-passe, contacte o administrador responsável pelo seu serviço.
+>
 
-Ignorar: Ignora o e-mail selecionado e a conversa associada. O e-mail e a conversação serão então colocados na pasta de sistema "Elementos eliminados". Os futuros e-mails serão enviados nesta conversação serão automaticamente colocados na pasta de sistema "Elementos eliminados".
+![useowa](images/owa_exchange_step19.png){.thumbnail}
 
-Mover: Move o e-mail selecionado numa pasta específica.
+### Adicionar uma resposta automática
 
-Categorizar: Categoriza o e-mail selecionado ao associar-lhe uma cor. É igualmente possível gerir as suas categorias e modificar as cores utilizadas.
+Na interface OWA, pode criar uma resposta automática para o seu endereço de e-mail, de forma a não deixar qualquer e-mail sem resposta durante a sua ausência. Para o fazer, clique no ícone de engrenagem situado na parte superior e, de seguida, em `Resposta automática`{.action}.
 
-Criar uma regra: Cria uma regra de caixa de receção e determina o comportamento que a sua conta Exchange adotará no tratamento de futuros e-mails recebidos.
+![useowa](images/owa_exchange_step20.png){.thumbnail}
 
-![](images/img_2914.jpg){.thumbnail}
+Na janela exibida, selecione a opção "Enviar respostas automáticas". Pode então configurar o sistema de resposta automática para obedecer a alguns critérios:
+\- enviar e-mails de resposta automática durante um período de tempo predefinido, ou de uma forma contínua até que seja manualmente desativado
+\- definir que remetentes irão receber os e-mails de resposta automática (apenas os remetentes internos ou incluir os remetentes externos)
 
+Preencha a informação solicitada dependendo da ação que deseja ver concluída. Quando terminar, clique em `OK`{.action}.
 
-#### O conteúdo de um e-mail
-Encontrará aqui a apresentação do conteúdo do e-mail escolhido, a foto do perfil do remetente do e-mail, a data e hora da receção do e-mail e diferentes opções suplementares:
+![useowa](images/owa_exchange_step21.png){.thumbnail}
 
-Responder a todos: Responde a todas as pessoas que receberam o e-mail e estão presentes no campo "Para».
+Para instruções mais detalhadas sobre como criar respostas automáticas, consulte o nosso guia: [Criar respostas automáticas no OWA](../exchange_2016_como_configurar_respostas_automaticas_no_owa).
 
-Mais ações (representado por «v») : Permite apresentar as opções suplementares.
+### Adicionar assinatura
 
-![](images/img_2916.jpg){.thumbnail}
+Para adicionar uma assinatura ao seu e-mail, clique no ícone de engrenagem situado na parte superior e, de seguida, em `Opções`{.action}.
 
-#### Opção de e-mail
-Veja igualmente as diferentes opções disponíveis quando efetua um clique direito num e-mail:
+![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-Responder: Permite responder ao último remetente.
+No lado esquerdo da nova página, clique em `Assinatura e-mail`{.action}. Na árvore de opções, encontrará esta opção selecionando “Mail” e depois “Estrutura”. A partir daqui, pode gerir, desativar e editar a assinatura.
 
-Responder a todos: Permite responder a todas as pessoas incluídas no campo Para e cc.
+![useowa](images/owa_exchange_step22.png){.thumbnail}
 
-Transferir: Transfere o e-mail para outra caixa de e-mail.
+Componha a sua assinatura eletrónica no editor de texto. Pode especificar se deseja incluir a assinatura por defeito apenas nos novos e-mails ou também nas respostas e reencaminhamentos efetuados. Quando terminar, clique em `Guardar`{.action} para confirmar.
 
-Responder a todos por reunião: Cria um pedido de reunião sujeito à aceitação por parte das diferentes pessoas envolvidas.
+Para mais instruções sobre como criar assinaturas automáticas através da utilização de modelos padronizados, consulte o nosso guia: [Criar assinaturas automáticas](../exchange_20132016_assinatura_automatica_-_disclaimer/).
 
-Responder por mensagens instantânea: Esta opção não está de momento disponível. Trata-se de uma funcionalidade que será implementada com a chegada da aplicação Lync.
+### Aceder à secção de opções
 
-Responder a todos por mensagem instantânea: Esta opção não está de momento disponível. Trata-se de uma funcionalidade que será implementada com a chegada da aplicação Lync.
+Para aceder a todas as suas configurações, clique no ícone de engrenagem situado na parte superior e, de seguida, em `Opções`{.action}.
 
-Eliminar: Elimina o e-mail selecionado.
+![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-Eliminar todas as mensagens de: elimina todos os e-mails de um remetente.
+Depois aceda à vista de árvore do menu “Opções” situado do lado esquerdo da página. Aqui poderá fazer mais ajustes à estrutura e ao comportamento da sua conta de e-mail. Tenha em atenção que algumas opções da conta podem ser desativadas por nós por razões de segurança.
 
-Marcar como lixo: Marca como indesejado o e-mail selecionado e o seu retemente. O e-mail será automaticamente colocado na pasta sistema "Spam (Correio indesejado). Poderá encontrar a lista dos utilizadores aprovados ou bloqueados na secção "Parâmetros" (simbolizado com a roda dentada), "Opções", "contas", "Bloquear ou autorizar".
+![useowa](images/owa_exchange_step23.png){.thumbnail}
 
-Marcar como não lido: Marca como não lido o e-mail selecionado.
+## Saiba mais
 
-Imprimir: Abre o e-mail selecionado numa janela suplementar a fim de permitir que lance um pedido de impressão.
+[Criar respostas automáticas no OWA](../exchange_2016_como_configurar_respostas_automaticas_no_owa)
 
-Ver detalhes da mensagem: Apresenta os cabeçalhos do e-mail selecionado. Esta opção permite-lhe observar o caminho percorrido por um e-mail (servidor utilizado, data, hora, etc..) até chegar aos nossos servidores. O nosso suporte técnico pedirá este elemento para efetuar diagnósticos.
+[Partilhar uma pasta através do webmail OWA](../exchange_2016_partilhar_uma_pasta_atraves_do_webmail_owa/)
 
-Abrir numa janela separada: Abre o e-mail selecionado numa janela separada.
+[Partilhar calendários em OWA](../exchange_2016_partilhar_um_calendario_atraves_do_webmail_owa/)
 
-![](images/img_2917.jpg){.thumbnail}
+[Utilização de grupos de difusão (mailing lists)](../exchange_20132016_utilizacao_de_grupos_de_difusao_mailing_list/)
 
-### Calendário
-
-#### Generalidades
-O botão "Calendário" permite-lhe consultar, gerir ou criar calendários. Esta secção permite-lhe igualmente aceder aos calendários partilhados ou de iniciar partilhas de calendários.
-
-![](images/img_2918.jpg){.thumbnail}
-
-
-#### Novo
-Este botão permite-lhe adicionar um evento no seu calendário ou num calendário partilhado.
-
-Tal como quando escreve um novo e-mail, encontrará várias opções associadas à edição do conteúdo do evento que pretende adicionar ao calendário selecionado.
-
-![](images/img_2919.jpg){.thumbnail}
-
-### Contactos
-
-#### Generalidades
-O botão "Contactos" permite-lhe apresentar os contactos e permite-lhe criar contactos ou pastas de contactos associados à sua conta Exchange.
-
-![](images/img_2920.jpg){.thumbnail}
-É na coluna à esquerda que encontrará os contactos associados à sua conta Exchange mas igualmente os contactos associados à plataforma Exchange (ou ao diretório de contactos global) bem como os endereços das contas de recursos na seção "Anuário".
-
-![](images/img_2921.jpg){.thumbnail}
-
-
-#### Novo
-Este botão permite-lhe criar um novo contacto ou um lista de contactos.
-
-![](images/img_2924.jpg){.thumbnail}
-Dados do contacto:
-
-A criação de um novo contacto propõe-lhe que adicione informações complementares tais como o nome, apelido, telefone, etc...
-
-![](images/img_2922.jpg){.thumbnail}
-
-#### Grupo de contacto
-A criação de um grupo de contactos propõe-lhe a adição de membros. Tratam-se de endereços de e-mail associados à sua lista de contactos ou endereços ext4ernos que poderá adicional manualmente.
-Poderá de seguida enviar um e-mail ao seu grupo de contactos. O e-mail será depois distribuído ao conjunto dos membros que anteriormente adicionou.
-
-![](images/img_2925.jpg){.thumbnail}
-
-#### Informações complementares
-O OWA não permite que inicie a partilha de contactos. Terá de efetuar essa partilha através de um software compaatível (Outlook por exemplo).
-
-### Tarefas
-
-#### Generalidades
-O botão Tarefas permite-lhe criar, gerir e apresentar as tarefas associadas à sua conta Exchange.
-
-A coluna do meio apresentará o conteúdo da pasta da tarefa escolhida e a coluna à direita os detalhes da tarefa escolhida.
-
-![](images/img_2926.jpg){.thumbnail}
-
-
-#### Nova tarefa
-Este botão permite-lhe criar uma nova tarefa na pasta das tarefas selecionadas, de escolher o seu assunto, a sua conclusão e de adicionar detalhes suplementares tais como sujeito, a data de conclusão, a percentagem concluída, etc...
-
-![](images/img_2928.jpg){.thumbnail}
-
-#### Pasta tarefas
-Pode observar na coluna à esquerda o conjunto das pastas de tarefas. Poderá ainda, se desejar e com um clique direito no menu "As minhas tarefas", criar uma pasta de tarefas personalizada.
-
-![](images/img_2929.jpg){.thumbnail}
-
-#### Informações complementares
-O OWA não permite que inicie a partilha de tarefas. Terá de efetuar essa partilha através de um software compaatível (Outlook por exemplo).
-
-
-### Opções
-Este botão permite-lhe aceder às seguintes opções:
-
-
-- Alterar: Modifica a foto de perfil da sua conta Exchange.
-
-- Abrir outra caixa de correio...: consulte o seguinte guia:
-
-[]({legacy}1249)
-
-- Terminar sessão: Desliga a sua conta Exchange e apresenta a página de autenticação do OWA.
-
-
-
-![](images/img_2931.jpg){.thumbnail}
-
-#### Foto de perfil
-Clique no botão "Modificar" e depois escolha no seu computador a foto apresentar no seu perfil.
-
-
-#### Opções
-Aceda aqui aos parâmetros gerais da sua conta Exchange e às opções suplementares. As opções são:
-
-Atualizar: atualiza a conta Exchange. Se por exemplo uma pessoa lhe envia um e-mail, utilize esse botão para atualizar a receção/envio de e-mails.
-
-Gerir as aplicações: Esta seção permite-lhe gerir ou adicionar ao OWA aplicações suplementares (ou plugins). Certas aplicações são instadas de forma padrão pelos nossos administradores e não poderão ser eliminados.
-
-Parâmetros offline: Ativa ou desativa o acesso à sua conta Exchange em modo offline. Esta opção é prática se deseja consultar a sua conta Exchange mesmo quando não dispõe de acesso à Internet.
-
-Modificar o tema: Modifica o tema e as coras do OWA.
-
-Opções: Apresenta as opções suplementares da sua conta Exchange. Detalharemos as mesmas na seção seguinte.
-
-![](images/img_2932.jpg){.thumbnail}
-« Ajuda » (representado pelo ícone "ponto de interrogação"): Ajuda Microsoft.
-
-![](images/img_2933.jpg){.thumbnail}
-
-#### Opções suplementares da sua conta Exchange
-Encontrará nesta seção as seguintes opções>:
-
-Geral: pode consultar aqui as informações gerais da sua conta Exchange e da interface OWA. Poderá igualmente modificar a password da sua conta Exchange e tem ainda a possibilidade de modificar certas informações.
-
-
-- Informação complementar: A modificação do nome, apelido, nome a ser apresentado e o endereço Exchange somente podeao ser alterados a partir do seu [Espaço Cliente Web](https://www.ovh.com/manager/web/login.html).
-
-Correio: Defina aqui as regras da caixa de e-mail, as respostas automáticas e consulte os relatórios associados à sua conta Exchange.
-
-Calendário: Poderá modificar aqui as várias opções do seu calendário, tais como: notificações, lembretes...
-
-
-![](images/img_2934.jpg){.thumbnail}
-
-
-#### Integração de uma imagem
-A sua imagem deverá estar alojada online e acessível a partir de um browser.
-Um copiar/colar da imagem armazenada localmente no seu computador não funcionará.
-No menu "Options" como indicado em baixo, clique no menu "Correio" e aceda depois a "Disposição" e no final clique em "Assinatura eletrónica".
-
-Abra o seu browser e introduza o endereço da sua imagem (ex: www.oseudominio.com/nome-image,)
-
-Clique na sua imagem e efetue um copiar/colocar no quadrado da assinatura.
-
-![](images/img_4261.jpg){.thumbnail}
-Veja uma imagem colada na secção assinatura. É possível que a "redimensione" ao clicar diretamente na imagem.
-
-![](images/img_4263.jpg){.thumbnail}
-Selecione a opção: "Adicionar automaticamente a minha assinatura às mensagens que envio"
-
-
-#### Informações complementares
-[A "office Store"](https://store.office.com/fr) permite-lhe encontrar aplicações suplementares. Todas as aplicações não poderão, de forma padrão, ser adicionadas. Algumas delas requerem autorização do administrador. Se deseja instalar uma aplicação que requer a autorização de um administrador queira contactar o nosso suporte Exchange para que possamos analisar o seu pedido.
-
-
-
-
-
-## Outlook Web App 2013
-
-### Mensagens
-O botão Mensagens permite-lhe apresentar a sua caixa de e-mail Exchange. 
-
-Encontra no menu à esquerda o botão de criação de novos e-mails bem como as pastas do sistema ou outras pastas personalizadas ("Pasta TEST" no nosso exemplo).
-
-O sinal «  ao lado de "Nova mensagem" permite-lhe ocultar toda a coluna (exceto "Nova mensagem").
-
-![](images/img_2070.jpg){.thumbnail}
-
-
-#### Nova mensagem
-Poderá, por exemplo, adicionar um anexo ao seu e-mai,l utilizar [aplicações suplementares](http://office.microsoft.com/fr-fr/store/applications-pour-outlook-FX102825292.aspx?app=outlook.exe) associados ao OWA, ou ainda ativar o aviso de receção ou de leitura.
-
-Encontra igualmente as opções clássicas de edição de conteúdo (tamanho, cor, etc..).
-
-Informações complementares 
-O tamanho de um anexo via OWA está limitado a 35MB. A aplicação de sincronização ActiveSync impõe uma limitação de 10 MB nos anexos (principalmente nos smartphones compatíveis com o ActiveSync). Ao utilizar um software de e-mails compatível (o Outlook por exemplo), o tamanho do anexo é de 100 MB no máximo.
-
-![](images/img_2071.jpg){.thumbnail}
-
-
-#### As pastas do sistema e pastas personalizadas
-De forma padrão queira ver as pastas de sistemas que irá consultar:
-
-
-- Caixa de receção
-- Rascunhos
-- Elementos enviados
-- Elementos eliminados
-- Subscrições RSS
-- SPAM
-- Fluxos RSS
-- Notas
-
-Uma pasta de sistema não pode ser renomeada, movida ou eliminada. Tratam-se de regras fixas e não modificáveis.
-
-
-Ao realizar um clique direito no nome de apresentação da sua conta Exchange ou numa pasta serão propostas várias opções:
-
-Criar uma pasta: cria uma pasta onde o clique direito foi efetuado. No nosso exemplo a pasta será criada ao mesmo nível que as outras pastas de sistema.
-
-Renomear: renomear uma pasta personalizada.
-
-Eliminar: eliminar uma pasta personalizada.
-
-Limpar: limpar uma pasta de sistema ou personalizada. Toido o conteúdo será transferido para os "Elementos eliminados"
-
-Adicionar aos favoritos: adiciona a pasta selecionada na parte "Favoritos".
-
-Mover: mover a pasta selecionada para uma outra pasta.
-
-Marcar tudo como lido: marca todos os e-mails não lidos como lidos.
-
-Adicionar uma pasta partilhada: adiciona o acesso a uma pasta que um outro utilizador da sua plataforma Exchange partilhou consigo (esta opção não aparece quando efetua um clique direito num pasta de sistema ou personalizada).
-
-Autorizações: permite dar autorizações de acesso a um outro utilizador da sua plataforma Exchange a uma pasta de sistema ou personalizada que foi selecionada. Quando as autorizações são atribuídas, o utilizador com o qual partilha é efetuada deve utilizar a função descrita anteriormente (Adicionar uma pasta partilhada) através do OWA da sua conta Exchange.
-
-![](images/img_2072.jpg){.thumbnail}
-
-
-#### O conteúdo de uma pasta
-Trata-se da apresentação do conteúdo da pasta selecionada. No nosso exemplo trata-se da pasta do sistema "Caixa de receção" que foi selecionada. Esta contém dois e-mails de teste.
-
-Encontra no topo dessa coluna um motor de pesquisa para encontrar os e-mails ou os contactos bem como diferentes opções de classe:
-
-Conversas por data: permite-lhe gerir a apresentação dos e-mails por diversos sistemas de triagem (Data, Destinatário, Marca, Tamanho, etc...).
-
-Todos: apresenta todos os e-mails.
-
-Não lidas: apresenta unicamente os e-mails não lidas.
-
-Para mim: apresenta unicamente os e-mails que lhe foram endereçados diretamente.
-
-Com indicador: apresenta unicamente os e-mails com um indicador (símbolo ⚐ no inicio do titulo do e-mail).
-
-![](images/img_2075.jpg){.thumbnail}
-
-#### Opção do e-mail
-Veja igualmente as diferentes opções disponíveis aquando de um clique direito no e-mail:
-
-Eliminar: elimina o e-mail selecionado.
-
-Marcar como lido: marca como lido o e-mail selecionado.
-
-Marcar como terminado: esta opção somente aparece quando foi colocado no e-mail um indicador (⚐) e que o permite marcar como terminado.
-
-Mover: mover a pasta selecionada para uma outra pasta.
-
-Ignorar: ignora o e-mail selecionado e a conversa associada. O e-mail e a conversão serão colocados na pasta de sistema "Elementos eliminados". Os futuros e-mails para esta mesma conversação serão colocados automaticamente na pasta de sistema "Elementos eliminados".
-
-Categorizar: categoriza o e-mail selecionado ao associá-lo a uma cor. É possível gerir as suas categorias e modificar as cores utilizadas.
-
-Criar uma regra: cria uma regra de caixa de receção e determina o comportamento que a sua conta Exchange adotará para o tratamento de futuros e-mails recebidos.
-
-Marcar como SPAM: marca como não desejado o e-mail selecionado e o seu remetente. O e-mail é colocado automaticamente na pasta de sistema "SPAM". Poderá recuperar a lista dos utilizadores aprovados ou bloqueados na parte "Parâmetros" (simbolizado pela roda dentada), "Opções", "Bloquear ou autorizar".
-
-![](images/img_2076.jpg){.thumbnail}
-
-
-#### O conteúdo de um e-mail
-Encontra aqui a apresentação do conteúdo do e-mail escolhido, a foto de perfil do retemente do e-mail, a data e hora da receção do e-mail e algumas opções suplementares.
-
-Responder: responde ao remetente do e-mail.
-
-Responder a todos: responde a todas as pessoas que receberam o e-mail e estão presentes no campo « À ».
-
-Transferir: transfere o e-mail na íntegra, anexos incluídos.
-
-Mais ações (representado por « ... »): permite apresentar as opções suplementares.
-
-![](images/img_2077.jpg){.thumbnail}
-
-#### Opções suplementares:
-Responde por mensagem instantânea: esta opção ainda não se encontra disponível. Trata-se de uma funcionalidade que estará em breve disponível com a chegada da aplicação Lync.
-
-Responder a todos por mensagem instantânea: esta opção ainda não se encontra disponível. Trata-se de uma funcionalidade que estará em breve disponível com a chegada da aplicação Lync.
-
-Eliminar: elimina o e-mail selecionado.
-
-Categorizar: categoriza o e-mail selecionado ao associá-lo a uma cor. É possível gerir as suas categorias e modificar as cores utilizadas.
-
-Marcar como SPAM: marca como não desejado o e-mail selecionado e o seu remetente. O e-mail é colocado automaticamente na pasta de sistema "SPAM". Poderá recuperar a lista dos utilizadores aprovados ou bloqueados na parte "Parâmetros" (simbolizado pela roda dentada), "Opções", "Bloquear ou autorizar".
-
-Abrir numa janela separada: abre o e-mail selecionado numa janela suplementar.
-
-Imprimir: abre o e-mail selecionado numa janela suplementar para que possa efetuar o pedido de impressão.
-
-Criar uma regra: cria uma regra de caixa de receção e determina o comportamento que a sua conta Exchange adotará para o tratamento de futuros e-mails recebidos.
-
-Apresentar os detalhes da mensagem: apresenta o cabeçalho do e-mail selecionado. Esta opção permite-lhe observar o caminho que o e-mail fez para chegar aos nossos servidores (servidor utilizado, data, hora, etc..). O nosso suporte técnico poderá pedir-lhe estes detalhes em alguns diangósticos.
-
-![](images/img_2081.jpg){.thumbnail}
-
-### Calendário
-
-#### Generalidades
-O botão "Calendário" permite-le consultar, gerir ou criar os seus calendários. Esta secção permite-lhe igualmente aceder aos calendários partilhados ou dar inicio à partilha de calendários.
-
-Têm à sua disposição um guia para esta última funcionalidade:
-[]({legacy}1248)
-
-![](images/img_2082.jpg){.thumbnail}
-
-
-#### Novo evento
-Este botão permite-lhe adicionar um evento ao seu calendário ou ao calendário partilhado.
-
-Tudo como se escrevesse um novo e-mail, ou seja, encontrará diversas opções associadas à edição do conteúido do evento a adicionar ao calendário associado.
-
-![](images/img_2083.jpg){.thumbnail}
-
-### Pessoas
-
-#### Generalidades
-O botão "Pessoas" permite-lhe apresentar os contactos ou criar contactos ou pastas de contactos associadas à sua conta Exchange.
-
-É na coluna à esquerda que irá encontrar os contactos associados à sua conta Exchange mas igualmente os contactos associados à plataforma Exchange (ou à lista de endereços global) bem como os endereços das contas de recursos:
-
-![](images/img_2084.jpg){.thumbnail}
-
-
-#### Novo
-Este botão permite-lhe adicionar um novo contacto ou um novo grupo de contactos.
-
-![](images/img_2085.jpg){.thumbnail}
-
-#### Dados do contacto
-A criação de um novo contacto propõe-lhe que adicione informações complementares como o nome, apelido, o número de telefone, etc...
-
-![](images/img_2086.jpg){.thumbnail}
-
-#### Grupo de contacto
-A criação de um grupo de contacto propõe-lhe adicionar membros ao mesmo. Tratam-se de endereços de e-mails associados à sua lista de endereços ou a endereços externos que deseje adicionar manualmente.
-
-Poderá de seguida decidir enviar um e-mail ao seu grupo de contactos. O e-mail será distribuído ao conjunto dos membros que adicionou anteriormente.
-
-![](images/img_2087.jpg){.thumbnail}
-
-#### Informações complementares
-O OWA não permite iniciar partilha de contactos. Deverá utilizar um software compatível (O Outlook, por exemplo) para que possa efetuar a partilha. Queira consultar o seguinte guia:
-[]({legacy}1251)
-
-### Trabalhos
-
-#### Generalidades
-O botão Trabalhos permite-lhe criar, gerir e apresentar os trabalhos associados à sua conta Exchange.
-
-A coluna do meio apresentará o conteúdo da pasta de trabalhos escolhida e a coluna à direita apresenta os detalhes do trabalho selecionado.
-
-![](images/img_2088.jpg){.thumbnail}
-
-
-#### Novo trabalho
-Este botão permite que crie um novo trabalho na pasta de trabalhos selecionados, escolher o seu sujeito, a sua maturidade e adicionar detalhes suplementares como o assunto, a data de inicio, a percentagem de avanço, etc...
-
-![](images/img_2089.jpg){.thumbnail}
-
-#### Pasta trabalhos
-Poderá consultar na coluna à esquerda o conjunto das pastas de trabalhos. Poderá efetuar um clique direito no menu "Os meus trabalhos" para criar uma pasta de trabalhos personalizadas.
-
-![](images/img_2090.jpg){.thumbnail}
-
-#### Informações complementares
-O OWA não permite iniciar partilha de trabalhos. Deverá utilizar um software compatível (O Outlook, por exemplo) para que possa efetuar essa ação.
-
-
-### Opções
-Esse botão permite-lhe aceder às seguintes opções:
-
-
-- Modificar: modifica a foto de perfil da sua conta Exchange.
-
-- Abrir uma caixa de receção: consulte o seguinte guia para realizar essa ação:
-
-[]({legacy}1249)
-
-- Desligar: desligue a conta Exchange e apresenta a página de autenticação do OWA.
-
-
-
-![](images/img_2091.jpg){.thumbnail}
-
-#### Foto de perfil
-Clique no botão "Procurar" e depois escolha a sua pasta de fotos a apresentar no seu perfil.
-
-![](images/img_2092.jpg){.thumbnail}
-
-
-#### Opções
-Queira aceder aqui aos parâmetros gerais da sua conta Exchange e às opções suplementares. Vamos detalhá-las:
-
-Atualizar: atualiza a conta Exchange. Para saber se alguém lhe enviou um e-mail queira utilizar esse botão. Ele irá atualizar a caixa de e-mail.
-
-Definir respostas automáticas: implementar respostas automática para a sua conta Exchange.
-
-Parâmetros de apresentação: modificação dos parâmetros de apresentação da interface OWA. Disposição dos e-mails, parâmetros de conversas de e-mails, apresentação do painel de leitura do e-mail, ativação da versão light do OWA, sinalização Microsoft.
-
-Gerir as aplicações: esta secção permite-lhe gerir e adicionar ao OWA aplicações suplementares (plugins). Certas aplicações são instaladas de forma padrão pelos nossos administradores e não podem ser eliminadas.
-
-Parâmetros offline: ativa ou desativa o acesso à sua conta Exchange em modo offline. Esta opção é prática caso deseje consultar a sua conta Exchange mesmo quando não se pode ligar à Internet.
-
-Modificar o tema: modifica o tema e as cores do OWA.
-
-Modificar a password: modifica a password da sua conta Exchange. Poderá utilizar igualmente o [espaço cliente web](https://www.ovh.com/manager/web/login.html) para esta ação.
-
-Opções: apresenta as opções suplementares da sua conta Exchange. Iremos detalhar essas opções na seçcão a seguir.
-
-«Ajuda » (representado pelo ícone em forma de ponto de interrogação): Ajuda Microsoft.
-
-![](images/img_2093.jpg){.thumbnail}
-
-#### Opções suplementares da sua conta Exchange.
-Encontra nesta secção as seguintes opções:
-
-Conta: pode consultar aqui as informações gerais da sua conta Exchange. Poderá igualmente modificar a password da sua conta Exchange e terá a possibilidade de modificar certas informações.
-
-
-- Informação complementar: a modificação do nome, apelido, nome a apresentar e o endereço Exchange poderá unicamente ser efetuado no seu [espaço cliente web](https://www.ovh.com/manager/web/login.html).
-
-Organizar os e-mails: defina aqui as regras da caixa de receção, as respostas automáticas e consulte os relatórios associados à sua conta Exchange.
-
-Caixas de correio local: esta opção ainda não se encontra disponível. Trata-se de uma funcionalidade que estará em breve disponível com a chegada da aplicação Lync.
-
-Parâmetros: outros parâmetros do seu endereço de e-mail e a sua apresentação, opções de mensagens, calendários, opções regionais, modificação da password da conta Exchange.
-
-Telefone: consulte aqui os periféricos portáteis onde a sua conta Exchange está configurada. Poderá ainda eliminar um periférico da lista, reinicializá-lo por completo à distância ou bloqueá-lo.
-
-Bloquear ou autorizar: pode gerir aqui os remetentes ou destinatários dos e-mails autorizados ou bloqueados. Quando considera um e-mail como SPAM, o remetente do e-mail será bloqueado e será colocado nesta secção.
-
-Aplicação: adicione aqui aplicações suplementares (plugins) ao seu OWA. Certas aplicações são instaladas de forma padrão pelos nossos administradores e não podem ser eliminadas.
-
-Informações complementares: [l'Office Store](http://office.microsoft.com/fr-fr/store/applications-pour-outlook-FX102825292.aspx?app=outlook.exe) permite-lhe recuperar as aplicações suplementares. Todas as aplicações não serão adicionadas de forma padrão. Algumas delas podem necessitar de permissões de administrador. Se desejar instalar uma aplicação que requeira autorização de administrador, queira contactar o nosso suporte Exchange para que possamos analisar o seu pedido.
-
-
-![](images/img_2094.jpg){.thumbnail}
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
