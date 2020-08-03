@@ -1,622 +1,210 @@
 ---
-title: 'Guía de uso de Outlook Web App'
-excerpt: 'Exchange 2016: Guía de uso de Outlook Web App'
+title: 'Usar Outlook Web App con una cuenta Exchange'
+excerpt: 'Aprenda a gestionar su dirección Exchange con el webmail de OWA'
 slug: exchange_2016_guia_de_uso_de_outlook_web_app
 legacy_guide_number: g1918
 section: 'Outlook Web Application (OWA)'
+order: 1
 ---
 
+**Última actualización: 3/8/2020**
 
-**¿Qué es Outlook Web App (OWA)?**
+## Objetivo
 
-Outlook Web App (OWA) es el webmail para Exchange. Con OWA podrá consultar y utilizar su cuenta Exchange y sus diversas funcionalidades desde una página de internet.
+Con el servicio Hosted Exchange de OVHcloud puede enviar y recibir correo utilizando el dispositivo y el cliente de correo que usted desee. Para poder iniciar sesión en una cuenta desde cualquier lugar a través de un navegador, OVHcloud ofrece un cliente de correo online llamado Outlook Web Application (OWA). Nuestra [página de inicio de sesión de webmail](https://www.ovh.es/mail/) es el único punto de acceso al OWA correspondiente para todas las cuentas activas de correo en MX Plan, Email Pro y Hosted Exchange.
 
-Esta interfaz es muy práctica si no tiene un cliente de correo de escritorio compatible para configurar y utilizar su cuenta Exchange.
+**En esta guía aprenderá a realizar las acciones más habituales con su dirección de correo en la interfaz de OWA.**
 
-**¿Dónde y cómo conectarse a OWA?**
+## Requisitos
 
-La dirección de correo corresponderá a la dirección Exchange completa que usted desee consultar. 
+- Tener una solución de correo electrónico de OVHcloud configurada (**solución MX Plan**, disponible como parte de nuestros [planes de hospedaje web](https://www.ovh.es/hosting/), incluida en un [alojamiento Start10M gratuito](https://www.ovh.es/dominios/oferta_hosting_start10m.xml) o contratada por separado como una solución independiente; [**Hosted Exchange**](https://www.ovh.es/emails/hosted-exchange/) o [**Email Pro**](https://www.ovh.es/emails/email-pro/))
+- Tener las credenciales de acceso de la dirección de correo electrónico que quiere configurar
 
-La contraseña será la misma que definió durante la creación de su dirección Exchange en su [área de cliente](https://www.ovh.com/manager/web/login.html).
+## Procedimiento
 
-Para el servicio Hosted Exchange:
+Esta guía le permitirá comprender mejor las tareas más habituales de la cuenta de correo disponibles en el webmail de OWA. Sin embargo, como esta interfaz no ha sido creada originalmente por OVHcloud, no podemos proporcionarle instrucciones específicas sobre ninguna configuración que no aparezca en esta guía. En cuanto a las funcionalidades de Exchange, hemos preparado unas guías adicionales que podrá encontrar en la sección [**Más información**](./#mas-informacion_1).
 
-- [https://ex.mail.ovh.net](https://ex.mail.ovh.net).
-- [https://ex2.mail.ovh.net](https://ex2.mail.ovh.net).
-- [https://ex3.mail.ovh.net](https://ex3.mail.ovh.net).
 
-Para el servicio Private Exchange: La URL de acceso dependerá del nombre de host de su servidor que haya indicado al crear el servicio.
+> [!primary]
+>
+> Después de los dos primeros pasos, no es necesario seguir las instrucciones en un orden concreto. Puede utilizar la barra de navegación de la izquierda de esta guía para saltar al párrafo que más le interese.
+>
 
-![](images/img_2884.jpg){.thumbnail}
+### 1. Acceder a OWA
 
-Cuando se conecte a OWA por primera vez, deberá configurar su zona horaria.
+Para acceder al webmail de OWA con su dirección de correo electrónico, diríjase a la [página de inicio de sesión](https://www.ovh.es/mail/). Introduzca su dirección de correo electrónico completa y su contraseña, y haga clic en el botón `Iniciar sesión`{.action}.
 
-![](images/img_2885.jpg){.thumbnail}
+![useowa](images/owa_exchange_step1.png){.thumbnail}
 
-## Outlook Web App 2016
+Si es la primera vez que accede a esta dirección de correo a través del webmail de OWA, se le pedirá que configure el idioma y la zona horaria. Haga clic en `Guardar`{.action} para continuar.
 
-### Correo
-Al conectarse, accede por defecto a la sección de Correo. 
+![useowa](images/owa_exchange_step2.png){.thumbnail}
 
-Si está navegando en otra sección (Calendario, Contactos, Tareas) podrá volver en cualquier momento a la sección de Correo. 
+De aquí en adelante, tras iniciar sesión, accederá por defecto a su bandeja de entrada.
 
-Haga clic en el cuadrado azul situado en la esquina superior izquierda para acceder a las distintas secciones.
+![useowa](images/owa_exchange_step3.png){.thumbnail}
 
-![](images/img_2906.jpg){.thumbnail}
-Para crear un nuevo mensaje, haga clic en «Nuevo».
+### 2. Comprender la disposición de OWA
 
-![](images/img_2907.jpg){.thumbnail}
-Si hace clic en la flecha negra, podrá acceder a dos opciones: 
+Existen varias secciones en la interfaz de OWA. Por favor, consulte la tabla y la imagen siguientes para familiarizase con ellas.
 
+|Secciones|Descripción|  
+|---|---|  
+|Parte superior (1)|Contiene dos barras de pestaña: la primera permite acceder a la configuración general (como la [sección de opciones](./#acceder-a-la-seccion-de-opciones)), y la segunda se utiliza para acceder a acciones específicas con su dirección de correo (como enviar o responder correos electrónicos).|  
+|Barra lateral izquierda (2)|Muestra la lista de carpetas de su dirección de correo. Aparecen en un árbol de carpetas que se puede expandir u ocultar.|
+|Parte central (3)|Muestra la lista de mensajes (leídos y no leídos) de la carpeta seleccionada en el menú de la izquierda. En esta sección también se muestran los resultados de una búsqueda.|
+|Barra lateral derecha (4)|Muestra el panel de lectura cuando se ha seleccionado un correo electrónico.|
 
-- Mensaje de correo electrónico. 
+![useowa](images/owa_exchange_step4.png){.thumbnail}
 
-- Evento de calendario.
+Puede cambiar el tamaño de las secciones verticales haciendo clic en las líneas de los bordes y arrastrándolas.
 
+### Visualizar los correos electrónicos
 
+Para ver sus correos, seleccione una carpeta de la barra de la izquierda. Los correos entrantes que no sigan ninguna regla de la bandeja de entrada llegarán a la carpeta «Bandeja de entrada». Para ver si ha recibido algún correo nuevo, compruebe si aparece un número junto a la carpeta correspondiente.
 
-![](images/img_2908.jpg){.thumbnail}
-En la columna de la izquierda se muestran las carpetas del sistema y las carpetas personalizadas (en el ejemplo de la imagen, «Dossier TEST»).
+![useowa](images/owa_exchange_step5.png){.thumbnail}
 
-![](images/img_2909.jpg){.thumbnail}
+Para leer un correo, seleccione la carpeta correspondiente en caso necesario. Haga clic en el correo para mostrar su contenido en la sección de lectura. Los mensajes no leídos aparecen en un color diferente para diferenciarlos de los mensajes leídos.
 
+![useowa](images/owa_exchange_step6.png){.thumbnail}
 
-#### Correo nuevo
-Para adjuntar archivos a su mensaje, puede utilizar las [aplicaciones adicionales](https://store.office.com/appshome.aspx?productgroup=Outlook&ui=es-ES&rs=es-ES&ad=ES) para OWA o activar la confirmación de entrega o de lectura.
+### Enviar y responder
 
-Asimismo, encontrará las opciones tradicionales de edición de contenidos (fuente, tamaño, color, etc.).
+**Para enviar un correo nuevo**, haga clic en `Nuevo`{.action} en la parte superior de la interfaz del webmail. El panel de edición aparecerá en el lado derecho. Complete los campos del correo (destinatarios, asunto, cuerpo del mensaje, archivos adjuntos). Cuando el correo esté listo, haga clic en el botón `Enviar`{.action}.
 
-Más información
+![useowa](images/owa_exchange_step7.png){.thumbnail}
 
-En OWA, el tamaño de los archivos adjuntos está limitado a 35 MB. La aplicación de sincronización ActiveSync tiene una limitación de 10 MB para los archivos adjuntos (principalmente en los smartphones compatibles con ActiveSync). Utilizando un cliente de escritorio compatible (por ejemplo, Outlook) el tamaño máximo de los archivos adjuntos es de 100 MB.
+**Para responder a un correo**, [pulse sobre él](./#visualizar-los-correos-electronicos) para visualizarlo. A continuación, haga clic en el botón `Responder a todos`{.action}. Utilice el botón de flecha hacia abajo si solo desea responder al remitente del correo (eliminando a cualquier destinatario que esté en copia).
 
-![](images/img_2911.jpg){.thumbnail}
+![useowa](images/owa_exchange_step8.png){.thumbnail}
 
+Cuando elige responder, el editor de respuesta rápida aparece encima del correo. Escriba su respuesta en esta sección y una vez que haya terminado, haga clic en `Enviar`{.action}. Tenga en cuenta que si quiere añadir cualquier opción de respuesta (como, por ejemplo, adjuntar una firma), debe abrir primero el panel de edición al completo haciendo clic en el símbolo de flecha doble.
 
-#### Carpetas del sistema y carpetas personalizadas
-Las carpetas por defecto del sistema que podrá ver son las siguientes:
+![useowa](images/owa_exchange_step9.png){.thumbnail}
 
+### Organizar su bandeja de entrada
 
-- Bandeja de entrada
-- Borradores
-- Elementos enviados
-- Elementos eliminados
-- Fuentes RSS
-- Correo no deseado
-- Notas
+OWA le permite organizar su bandeja de entrada de distintas formas. Puede
 
+- [crear carpetas y subcarpetas](./#crear-una-carpeta)
+- [mover correos](./#mover-correos)
+- [crear reglas](./#crear-reglas-de-la-bandeja-de-entrada) para determinar las acciones que se realizarán de manera automática cuando llegue un correo nuevo
 
+#### Crear una carpeta
 
-![](images/img_2912.jpg){.thumbnail}
-No es posible renombrar, mover o eliminar las carpetas del sistema. Estas se rigen por reglas fijas y no modificables.
+Para crear una carpeta nueva, haga clic derecho sobre el nombre de su dirección de correo en el árbol de carpetas y seleccione `Crear carpeta nueva`{.action}. Puede crear subcarpetas en carpetas existentes de la misma formar (`Crear subcarpeta nueva`{.action}). 
 
-Haciendo clic derecho en el nombre de su cuenta Exchange o en una carpeta, aparecerán las siguientes opciones:
+![useowa](images/owa_exchange_step10.png){.thumbnail}
 
-Crear carpeta nueva: Crea una carpeta en la ubicación en la que haya hecho clic derecho. En el ejemplo de la imagen se creará al mismo nivel que las demás carpetas del sistema.
+#### Mover correos
 
-Cambiar nombre: Renombra una carpeta personalizada.
+**Para mover un correo**, puede simplemente arrastrarlo y soltarlo en la carpeta de destino o hacer clic derecho sobre él y seleccionar `Mover`{.action}.
+**Para mover varios correos** a la vez, selecciónelos marcando sus casillas de verificación, y haga clic en `Mover`{.action} (en la barra lateral derecha) o en `Mover a`{.action}(en la sección superior). A continuación, seleccione la carpeta de destino.
 
-Eliminar: Elimina una carpeta personalizada.
+![useowa](images/owa_exchange_step11.png){.thumbnail}
 
-Vaciar carpeta: Vacía una carpeta del sistema o personalizada. Todo su contenido se trasladará a «Elementos eliminados». 
+#### Crear reglas de la bandeja de entrada
 
-Agregar a favoritos: Añade la carpeta seleccionada a la zona «Favoritos». 
+Para gestionar las reglas, haga clic en el símbolo de engranaje en la parte superior, y después en`Opciones`{.action}.
 
-Mover: Traslada la carpeta personalizada seleccionada a otra carpeta.
+![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-Marcar todos como leídos: Marca todos los mensajes no leídos de una carpeta como leídos.
+En la página nueva que aparece, seleccione `Reglas de la bandeja de entrada y de limpieza`{.action} del menú de la izquierda. En el árbol de «Opciones» puede encontrar este elemento dentro de «Correo», en «Procesamiento automático». Desde aquí puede crear, editar, eliminar y mover reglas en la lista. 
 
-Agregar carpeta compartida: Crea el acceso a una carpeta que otro usuario de la misma plataforma Exchange haya compartido con usted (esta opción no aparece al hacer clic derecho en una carpeta del sistema o personalizada).
+Para añadir una nueva regla, haga clic en el botón `+`{.action}. 
 
-Permisos: Permite autorizar a otro usuario de la misma plataforma Exchange para que acceda a la carpeta del sistema o personalizada que haya seleccionado. Una vez concedidos los permisos, el usuario con el que se ha compartido la carpeta debe utilizar la funcionalidad anterior («Agregar carpeta compartida») de su cuenta Exchange con OWA.
+![useowa](images/owa_exchange_step13.png){.thumbnail}
 
+Rellene la información solicitada según la acción que quiere que lleve a cabo la regla. Después, haga clic en `OK`{.action}. 
 
-#### Contenido de una carpeta
-En la imagen puede ver cómo se muestra el contenido de la carpeta seleccionada. En este caso se trata de la carpeta del sistema «Bandeja de entrada», que contiene dos mensajes de prueba.
+![useowa](images/owa_exchange_step14.png){.thumbnail}
 
-En la parte superior de esta columna encontrará un campo de búsqueda de mensajes de correo o contactos, así como varias opciones de clasificación: 
+Para obtener instrucciones más detalladas sobre la creación de reglas de la bandeja de entrada, consulte nuestra guía: [Crear reglas de la bandeja de entrada en OWA](../crear-reglas-de-bandeja-de-entrada-en-owa/).
 
-Todos: Muestra todos los mensajes.
+### Gestionar una lista de contactos
 
-Sin leer: Solo muestra los mensajes no leídos.
+Para gestionar sus contactos, haga clic en el botón azul del «lanzador de aplicaciones» de la parte superior, y haga clic en `Personas`{.action}.
 
-Para mí: Solo muestra los mensajes directamente dirigidos a usted.
+![useowa](images/owa_exchange_step15.png){.thumbnail}
 
-Marcados: Solo muestra los mensajes con un indicador (símbolo ⚐ al final del asunto del mensaje).
+En la página que aparece, puede añadir nuevos contactos, crear una lista de contactos o eliminar contactos existentes.
 
-Ordenar por Permite cambiar el orden en el que aparecen los mensajes: por fecha, destinatario, marcados, tamaño, etc.
+**Para añadir un nuevo contacto**, haga clic en `Nuevo`{.action} e introduzca la información del contacto que desea añadir. Una vez hecho esto, haga clic en `Guardar`{.action}.
 
-![](images/img_2913.jpg){.thumbnail}
+![useowa](images/owa_exchange_step16.png){.thumbnail}
 
-#### Opciones del mensaje
-A continuación, se describen las distintas opciones disponibles al hacer clic derecho en un mensaje: 
+**Para crear una lista de contactos**, haga clic en el icono de la flecha desplegable junto a «Nuevo» y haga clic en `Lista de contactos`{.action}. Asígnele un nombre a la lista, añada los contactos y haga clic en `Guardar`{.action}.
 
-Responder: Permite responder al último remitente.
+![useowa](images/owa_exchange_step17.png){.thumbnail}
 
-Responder a todos: Permite responder a todas las personas incluidas en los campos A y CC.  
+### Cambiar la contraseña
 
-Reenviar: Transfiere el correo a otra cuenta de correo. 
+Puede cambiar la contraseña de su cuenta cuando haya iniciado sesión en OWA. Para ello, haga clic en el símbolo de engranaje en la parte superior, y después en`Opciones`{.action}.
 
-Eliminar: Elimina el mensaje seleccionado.
+![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-Archivar: Archiva el correo en una carpeta llamada Archivo. Puede personalizar el nombre de esta carpeta. 
+En la página que aparece, amplíe la pestaña «General» en el árbol de opciones de la barra de la izquierda y haga clic en `Mi cuenta`{.action}. Finalmente, haga clic en `Cambiar contraseña`{.action}.
 
-Marcar como no leído: Marca como no leído el mensaje seleccionado.
+![useowa](images/owa_exchange_step18.png){.thumbnail}
 
-Anclar: Ancla el mensaje de correo en la cuenta de correo. Si el elemento está anclado, la opción en el menú será «Desanclar». 
+En la nueva ventana emergente, introduzca su contraseña actual. A continuación, introduzca la nueva contraseña, y escríbala de nuevo para confirmarla. Haga clic en el botón `Guardar`{.action} para guardar la nueva contraseña.
 
-Marcar como completado: Esta opción solo aparece cuando el mensaje se ha marcado previamente para seguimiento (indicador ⚐ al final del asunto) y permite marcarlo como finalizado.
+> [!primary]
+>
+> Recuerde que debe introducir la nueva contraseña en todos los dispositivos que utilice, es decir, en los clientes de correo que utilice para acceder a esta cuenta. Si tiene algún problema con su contraseña, póngase en contacto con el administrador del servicio.
+>
 
-Marcar como no deseado: Marca como no deseados el mensaje seleccionado y su remitente. El mensaje se mueve automáticamente a la carpeta del sistema «Correo no deseado». En «Configuración» (icono con forma de engranaje) > «Opciones» > «Cuentas» > «Bloquear o permitir» puede ver la lista de usuarios bloqueados o autorizados.
+![useowa](images/owa_exchange_step19.png){.thumbnail}
 
-Ignorar: Ignora el mensaje seleccionado y la conversación asociada. Tanto el mensaje como la conversación se trasladan a la carpeta del sistema «Elementos eliminados» y los futuros mensajes recibidos de esa misma conversación se moverán automáticamente a la carpeta del sistema «Elementos eliminados».
+### Añadir una respuesta automática
 
-Mover: Mueve el mensaje seleccionado a una carpeta específica.
+En OWA puede crear una respuesta automática en su dirección de correo para no dejar correos sin responder durante su ausencia. Para ello, haga clic en el símbolo de engranaje en la parte superior, y después en`Respuestas automáticas`{.action}.
 
-Categorizar: Asigna una categoría al mensaje seleccionado asociándole un color. Es posible modificar las categorías y cambiar los colores utilizados.
+![useowa](images/owa_exchange_step20.png){.thumbnail}
 
-Crear regla: Crea una regla para la bandeja de entrada y determina el comportamiento que adoptará la cuenta Exchange para gestionar los futuros mensajes de correo recibidos.
+En la ventana que aparece, seleccione la opción «Enviar respuestas automáticas». Aquí podrá configurar el contestador automático para que se adapte a varios criterios:
+\- Enviar correos electrónicos de respuesta automática durante un intervalo de tiempo determinado, o de forma continua hasta que se desactive manualmente.
+\- Definir los remitentes que recibirán correos de respuesta automática (solo remitentes internos, o incluir remitentes externos).
 
-![](images/img_2914.jpg){.thumbnail}
+Rellene la información solicitada según la acción que quiere que se lleve a cabo. Una vez hecho esto, haga clic en OK.
 
+![useowa](images/owa_exchange_step21.png){.thumbnail}
 
-#### Contenido de un mensaje
-En la imagen puede ver cómo se muestra el contenido del mensaje seleccionado, la fotografía del remitente del mensaje, la fecha y hora de recepción del mensaje y otras opciones que se detallan a continuación: 
+Para obtener instrucciones más detalladas sobre la creación de respuestas automáticas, consulte nuestra guía: [Crear respuestas automáticas en OWA](../exchange_2016_crear_un_contestador_con_el_webmail_owa/).
 
-Responder a todos: Responder a todas las personas que han recibido el mensaje y aparecen en el campo «Para:»
+### Añadir una firma
 
-Más acciones (representado por «v»): Permite mostrar las acciones adicionales.
+Para añadir una firma, haga clic en el símbolo de engranaje en la parte superior, y después en`Opciones`{.action}.
 
-![](images/img_2916.jpg){.thumbnail}
+![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-#### Más acciones:
-Responder: Permite responder a la última persona que haya respondido al mensaje. 
+En la barra de la izquierda de la página nueva, haga clic en `Firma de correo electrónico`{.action}. En el árbol de opciones, este elemento se encuentra en «Correo», en «Disposición». En esta sección puede activar, desactivar y editar la firma.
 
-Responder a todos: Permite responder a todas las personas que han recibido el correo y las incluidas en los campos A y CC.  
+![useowa](images/owa_exchange_step22.png){.thumbnail}
 
-Reenviar: Transfiere el correo a otra cuenta de correo.
+Introduzca su firma electrónica en el cuadro de edición. Puede especificar si quiere incluir la firma por defecto solo en los correos nuevos o también en respuestas o correos reenviados. Una vez haya terminado, haga clic en `Guardar`{.action} para confirmar.
 
-Responder a todos con una reunión: Crea una solicitud de reunión pendiente de aceptación por parte de las diferentes personas invitadas.
+Para obtener instrucciones sobre la creación de firmas automáticas mediante el uso de plantillas para todos los dominios, consulte nuestra guía: [Creación de firmas automáticas](../exchange_20132016_firma_automatica_disclaimer/).
 
-Responder por MI: La opción de responder por mensaje instantáneo aún no está disponible. Esta funcionalidad se activará próximamente con la llegada de la aplicación Lync.
+### Acceder a la sección de opciones
 
-Responder a todos por MI: La opción de responder a todos por mensaje instantáneo aún no está disponible. Esta funcionalidad se activará próximamente con la llegada de la aplicación Lync.
+Para acceder a todos los ajustes, haga clic en el símbolo de engranaje en la parte superior, y después en`Opciones`{.action}.
 
-Eliminar: Elimina el mensaje seleccionado. 
+![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-Eliminar todos los mensajes de: Elimina todos los mensajes de un remitente. 
+Puede navegar por el árbol de «Opciones» de la parte izquierda de la página. Desde esta sección podrá realizar más ajustes en cuanto a la disposición y comportamiento de su cuenta de correo electrónico. Tenga en cuenta que algunas de las opciones de la cuenta pueden estar desactivadas por nuestra parte por razones de seguridad.
 
-Marcar como no deseado: Marca como no deseados el mensaje seleccionado y su remitente. El mensaje se mueve automáticamente a la carpeta del sistema «Correo no deseado». En «Configuración» (icono con forma de engranaje) > «Opciones» > «Cuentas» > «Bloquear o permitir» puede ver la lista de usuarios bloqueados o autorizados.
+![useowa](images/owa_exchange_step23.png){.thumbnail}
 
-Marcar como no leído: Marca como no leído el mensaje seleccionado.
+## Más información
 
-Imprimir: Abre el mensaje seleccionado en una nueva ventana desde donde podrá imprimirlo.
+[Crear respuestas automáticas en OWA](../exchange_2016_crear_un_contestador_con_el_webmail_owa/)
 
-Ver detalles de mensaje: Muestra la cabecera del mensaje seleccionado. Esta opción permite ver el camino recorrido por un mensaje (servidor utilizado, fecha, hora, etc.) hasta que llega a nuestros servidores. Nuestro soporte técnico podría pedirle que le facilitara la cabecera del mensaje para realizar determinados diagnósticos.
+[Compartir carpetas en OWA](../exchange_2016_compartir_una_carpeta_con_el_webmail_owa/)
 
-Abrir en una ventana independiente: Abre el mensaje seleccionado en una nueva ventana.
+[Compartir calendarios en OWA](../exchange_2016_compartir_un_calendario_con_el_webmail_owa/)
 
-![](images/img_2917.jpg){.thumbnail}
+[Crear grupos de contactos](../exchange_20132016_uso_de_los_grupos_listas_de_correo/)
 
-### Calendario
-
-#### Introducción
-El menú «Calendario» permite consultar, gestionar o crear calendarios. También permite acceder a los calendarios compartidos o compartir calendarios propios.
-
-![](images/img_2918.jpg){.thumbnail}
-
-
-#### Nuevo
-Con el botón «Nuevo», situado en la columna izquierda, puede añadir un evento a su calendario o a un calendario compartido.
-
-Al igual que para redactar un nuevo mensaje de correo, aparecerán diversas opciones relacionadas con la edición del contenido del evento que se añadirá posteriormente al calendario seleccionado.
-
-![](images/img_2919.jpg){.thumbnail}
-
-### Contactos
-
-#### Introducción
-El menú «Contactos» muestra los contactos y permite crear nuevos contactos o carpetas de contactos asociados a la cuenta Exchange.
-
-![](images/img_2920.jpg){.thumbnail}
-En la columna izquierda podrá ver los contactos de su cuenta Exchange, seguidos de los contactos de la plataforma Exchange (o libreta global de direcciones), así como las direcciones de las cuentas de recursos en la sección «Directorio».
-
-![](images/img_2921.jpg){.thumbnail}
-
-
-#### Nuevo
-Este botón le permite crear un nuevo contacto o grupo de contactos.
-
-![](images/img_2924.jpg){.thumbnail}
-Crear contacto 
-
-Al crear un nuevo contacto, podrá indicar su nombre, apellidos, teléfono, etc.
-
-![](images/img_2922.jpg){.thumbnail}
-
-#### Crear grupo
-Si crea un grupo de contactos, podrá añadir miembros al grupo indicando su dirección de correo. Puede buscar las direcciones entre los contactos o en el directorio, o introducir direcciones externas manualmente. 
-
-A continuación, puede enviar un mensaje al grupo de contactos. El mensaje se distribuirá por correo electrónico a todos los miembros que haya añadido anteriormente.
-
-![](images/img_2925.jpg){.thumbnail}
-
-#### Más información
-OWA no permite compartir contactos. Para ello deberá utilizar un cliente de correo compatible (Outlook, por ejemplo).
-
-### Tareas
-
-#### Introducción
-El menú «Tareas» permite crear, gestionar y mostrar las tareas asociadas a la cuenta Exchange.
-
-La columna central muestra el contenido de la carpeta de tareas seleccionada y la columna derecha, los detalles de la tarea seleccionada.
-
-![](images/img_2926.jpg){.thumbnail}
-
-
-#### Nuevo
-Este botón permite crear una nueva tarea en la carpeta de tareas seleccionada, indicar su asunto, la fecha de vencimiento y añadir detalles como el asunto, la fecha de vencimiento, el porcentaje completado, etc.
-
-![](images/img_2928.jpg){.thumbnail}
-
-#### Carpeta de tareas
-En la columna izquierda puede ver todas las carpetas de tareas. 
-
-Para crear una carpeta personalizada, haga clic derecho en «Mis tareas» y seleccione «Crear carpeta nueva».
-
-![](images/img_2929.jpg){.thumbnail}
-
-#### Más información
-OWA no permite compartir tareas. Para ello deberá utilizar un cliente de correo compatible (Outlook, por ejemplo).
-
-
-### Opciones
-Haciendo clic en el nombre de visualización de la cuenta puede acceder a las siguientes opciones: 
-
-
-- Cambiar: Cambia la foto de perfil de la cuenta Exchange. 
-
-- Abrir otro buzón: Para más información sobre esta opción, consulte la guía específica: 
-
-[]({legacy}1249)
-
-- Cerrar sesión: Desconecta la cuenta Exchange y muestra la página de inicio de sesión de OWA.
-
-
-
-![](images/img_2931.jpg){.thumbnail}
-
-#### Imagen de perfil
-Haga clic en el botón «Cambiar» y seleccione en su equipo la foto que quiere mostrar en el perfil.
-
-
-#### Opciones
-Haciendo clic en el icono con forma de engranaje accederá a los ajustes de configuración general de la cuenta Exchange y a las opciones adicionales. A continuación, detallamos los posibles ajustes de configuración:
-
-Actualizar: Actualiza la cuenta Exchange. Por ejemplo, si una persona le envía un mensaje, utilice este botón para forzar la recepción.
-
-Administrar aplicaciones: Permite gestionar o añadir a OWA aplicaciones adicionales (plugins). Algunas aplicaciones han sido instaladas por defecto por nuestros administradores y no pueden eliminarse.
-
-Configuración sin conexión: Activa o desactiva el acceso sin conexión a la cuenta Exchange. Esta opción es práctica si desea consultar su cuenta Exchange sin estar conectado a internet.
-
-Cambiar tema: Permite cambiar el tema y los colores de OWA.
-
-Opciones: Muestra las opciones adicionales de la cuenta Exchange, que se detallan en el siguiente apartado.
-
-![](images/img_2932.jpg){.thumbnail}
-Ayuda: Representado por el icono con forma de interrogación, abre una página con el sistema de ayuda de Microsoft.
-
-![](images/img_2933.jpg){.thumbnail}
-
-### Más opciones adicionales de la cuenta Exchange
-En esta sección podrá acceder a las siguientes opciones: 
-
-General: En esta sección se muestra la información general de su cuenta Exchange y de la interfaz OWA. También puede modificar la contraseña de su cuenta Exchange, así como determinados datos. 
-
-
-- Información adicional: Tan solo podrá modificar su nombre, apellidos, nombre para mostrar y dirección de Exchange desde su [área de cliente web](https://www.ovh.com/manager/web/login.html). 
-
-Correo: En esta sección puede definir las reglas de su bandeja de entrada, las respuestas automáticas y consultar los informes de su cuenta Exchange. 
-
-Calendario: Esta sección le permite modificar varias opciones de su calendario como las notificaciones, los recordatorios, etc.
-
-
-![](images/img_2934.jpg){.thumbnail}
-
-En la [Tienda Office ](https://store.office.com/es) podrá acceder a las aplicaciones adicionales. No podrá añadir todas las aplicaciones por defecto, ya que algunas de estas requieren permisos de administrador. Si desea instalar una aplicación que requiere permiso de administrador, puede ponerse en contacto con el soporte de Exchange para que estudie su solicitud.
-
-
-
-## Outlook Web App 2013
-
-### Correo
-El menú «Correo» muestra su buzón de correo Exchange.
-
-En la columna izquierda encontrará el botón para crear nuevos mensajes, seguido de las carpetas del sistema y otras carpetas personalizadas (en el ejemplo de la imagen, «Dossier TEST»).
-
-El símbolo << situado bajo el botón «Correo nuevo» permite ocultar toda la columna excepto el botón «Correo nuevo».
-
-![](images/img_2070.jpg){.thumbnail}
-
-
-#### Correo nuevo
-Puede adjuntar archivos a su mensaje, utilizar [aplicaciones](https://store.office.com/appshome.aspx?productgroup=Outlook&ui=es-ES&rs=es-ES&ad=ES) adicionales para OWA o activar la confirmación de entrega o de lectura.
-
-Asimismo, encontrará las opciones tradicionales de edición de contenidos (fuente, tamaño, color, etc.).
-
-Más información
-En OWA, el tamaño de los archivos adjuntos está limitado a 35 MB. La aplicación de sincronización ActiveSync tiene una limitación de 10 MB para los archivos adjuntos (principalmente en los smartphones compatibles con ActiveSync). Utilizando un cliente de escritorio compatible (por ejemplo, Outlook, el tamaño máximo de los archivos adjuntos es de 100 MB.
-
-![](images/img_2071.jpg){.thumbnail}
-
-
-#### Carpetas del sistema y carpetas personalizadas
-Las carpetas por defecto del sistema que podrá ver son las siguientes:
-
-
-- Inbox: Bandeja de entrada
-- Drafts: Borradores
-- Sent Items: Enviados
-- Deleted Items: Eliminados
-- Fuentes RSS
-- Junk Email: Correo no deseado
-- Notes: Notas
-
-No es posible renombrar, mover o eliminar las carpetas del sistema. Estas se rigen por reglas fijas y no modificables.
-
-
-Haciendo clic derecho en el nombre de su cuenta Exchange o en una carpeta, aparecerán las siguientes opciones:
-
-crear carpeta nueva: Crea una carpeta en la ubicación en la que haya hecho clic derecho. En el ejemplo de la imagen se creará al mismo nivel que las demás carpetas del sistema.
-
-cambiar nombre: Renombra una carpeta personalizada.
-
-eliminar: Elimina una carpeta personalizada.
-
-vaciar: Vacía una carpeta del sistema o personalizada. Todo su contenido se trasladará a «Trash».
-
-agregar a favoritos: Añade la carpeta seleccionada a la zona «Favoritos». 
-
-mover: Traslada la carpeta personalizada seleccionada a otra carpeta.
-
-marcar todos como leídos: Marca todos los mensajes no leídos de una carpeta como leídos.
-
-agregar carpeta compartida: Crea el acceso a una carpeta que otro usuario de la misma plataforma Exchange haya compartido con usted (esta opción no aparece al hacer clic derecho en una carpeta del sistema o personalizada).
-
-permisos: Permite autorizar a otro usuario de la misma plataforma Exchange para que acceda a la carpeta del sistema o personalizada que haya seleccionado. Una vez concedidos los permisos, el usuario con el que se ha compartido la carpeta debe utilizar la funcionalidad anterior («agregar carpeta compartida») de su cuenta Exchange con OWA.
-
-![](images/img_2072.jpg){.thumbnail}
-
-
-#### Contenido de una carpeta
-En la imagen puede ver cómo se muestra el contenido de la carpeta seleccionada. En este caso se trata de la carpeta del sistema «Inbox», que contiene dos mensajes de prueba.
-
-En la parte superior de esta columna encontrará un campo de búsqueda de mensajes de correo o contactos, así como varias opciones de clasificación: 
-
-CONVERSACIONES POR FECHA: Permite cambiar el orden en que aparecen los mensajes: por fecha, remitente, marcados, tamaño, etc.).
-
-todo: Muestra todos los mensajes.
-
-no leídos: Solo muestra los mensajes no leídos.
-
-para mí: Solo muestra los mensajes directamente dirigidos a usted.
-
-marcados: Solo muestra los mensajes con un indicador (símbolo ⚐ al final del asunto del mensaje).
-
-![](images/img_2075.jpg){.thumbnail}
-
-#### Opciones del mensaje
-A continuación se describen las distintas opciones disponibles al hacer clic derecho en un mensaje: 
-
-eliminar: Elimina el mensaje seleccionado.
-
-marcar como no leído: Marca como leído el mensaje seleccionado.
-
-marcar: Permite marcar un mensaje para seguimiento.
-
-marcar como completado: Esta opción solo aparece cuando el mensaje se ha marcado previamente para seguimiento (indicador ⚐ al final del asunto) y permite marcarlo como finalizado.
-
-mover: Traslada el mensaje seleccionado a una carpeta específica.
-
-ignorar: Ignora el mensaje seleccionado y la conversación asociada. Tanto el mensaje como la conversación se trasladan a la carpeta del sistema «Deleted Items» y los futuros emails recibidos de esa misma conversación se moverán automáticamente a la carpeta del sistema «Deleted Items».
-
-categorizar: Asigna una categoría al mensaje seleccionado asociándole un color. Es posible modificar las categorías y cambiar los colores utilizados.
-
-crear regla: Crea una regla para la bandeja de entrada y determina el comportamiento que adoptará la cuenta Exchange para gestionar los futuros emails recibidos.
-
-marcar como no deseado: Marca como no deseados el mensaje seleccionado y su remitente. El mensaje se mueve automáticamente a la carpeta del sistema «Junk Email». En «Configuración» (icono con forma de engranaje) > «Opciones» > «bloquear o permitir» puede ver la lista de usuarios bloqueados o autorizados.
-
-![](images/img_2076.jpg){.thumbnail}
-
-
-#### Contenido de un mensaje
-En la imagen puede ver cómo se muestra el contenido del mensaje seleccionado, la fotografía del remitente del mensaje, la fecha y hora de recepción del mensaje y otras opciones que se detallan a continuación:
-
-RESPONDER: Responder al remitente del mensaje.
-
-RESPONDER A TODOS: Responder a todas las personas que han recibido el mensaje y aparecen en el campo «Para:».
-
-REENVIAR: Transfiere todo el contenido del mensaje, incluidos los archivos adjuntos.
-
-Más acciones (representado por «...»): Permite mostrar las acciones adicionales.
-
-![](images/img_2077.jpg){.thumbnail}
-
-#### Más acciones
-responder por MI: La opción de responder por mensaje instantáneo aún no está disponible. Esta funcionalidad se activará próximamente con la llegada de la aplicación Lync.
-
-responder a todos por MI: La opción de responder a todos por mensaje instantáneo aún no está disponible. Esta funcionalidad se activará próximamente con la llegada de la aplicación Lync.
-
-eliminar: Elimina el mensaje seleccionado.
-
-categorizar: Asigna una categoría al mensaje seleccionado asociándole un color. Es posible modificar las categorías y cambiar los colores utilizados.
-
-marcar como no deseado: Marca como no deseados el mensaje seleccionado y su remitente. El mensaje se mueve automáticamente a la carpeta del sistema «Junk Email». En «Configuración» (icono con forma de engranaje) > «Opciones» > «bloquear o permitir» puede ver la lista de usuarios bloqueados o autorizados.
-
-abrir en una ventana independiente: Abre el mensaje seleccionado en una nueva ventana.
-
-imprimir: Abre el mensaje seleccionado en una nueva ventana desde donde podrá imprimirlo.
-
-crear regla: Crea una regla para la bandeja de entrada y determina el comportamiento que adoptará la cuenta Exchange para gestionar los futuros emails recibidos.
-
-ver detalles del mensaje: Muestra la cabecera del mensaje seleccionado. Esta opción permite ver el camino recorrido por un email (servidor utilizado, fecha, hora, etc.) hasta que llega a nuestros servidores. Nuestro soporte técnico podría pedirle que le facilitara la cabecera del mensaje para realizar determinados diagnósticos.
-
-![](images/img_2081.jpg){.thumbnail}
-
-### Calendario
-
-#### Introducción
-El menú «Calendario» permite consultar, gestionar o crear calendarios. También permite acceder a los calendarios compartidos o compartir calendarios propios.
-
-Para más información sobre esta última funcionalidad, consulte la guía específica:
-
-- []({legacy}1248)
-
-
-
-![](images/img_2082.jpg){.thumbnail}
-
-
-#### Nuevo evento
-Con el botón «nuevo evento», situado en la columna izquierda, puede añadir un evento a su calendario o a un calendario compartido.
-
-Al igual que para redactar un nuevo mensaje de correo, aparecerán diversas opciones relacionadas con la edición del contenido del evento que se añadirá posteriormente al calendario seleccionado.
-
-![](images/img_2083.jpg){.thumbnail}
-
-### Contactos
-
-#### Introducción
-El menú «Contactos» muestra los contactos y permite crear nuevos contactos o carpetas de contactos asociados a la cuenta Exchange.
-
-En la columna izquierda podrá ver los contactos de su cuenta Exchange, seguidos de los contactos de la plataforma Exchange (o libreta global de direcciones), así como las direcciones de las cuentas de recursos.
-
-![](images/img_2084.jpg){.thumbnail}
-
-
-#### Nuevo
-El botón «nuevo» permite crear un nuevo contacto o grupo de contactos.
-
-![](images/img_2085.jpg){.thumbnail}
-
-#### Crear contacto
-Al crear un nuevo contacto, podrá indicar su nombre, apellidos, teléfono...
-
-![](images/img_2086.jpg){.thumbnail}
-
-#### Crear grupo
-Si crea un grupo de contactos, podrá añadir miembros al grupo indicando su dirección de correo. Puede buscar las direcciones entre los contactos o en el directorio, o introducir direcciones externas manualmente.
-
-A continuación, puede enviar un mensaje al grupo de contactos. El mensaje se distribuirá por correo electrónico a todos los miembros que haya añadido anteriormente.
-
-![](images/img_2087.jpg){.thumbnail}
-
-#### Más información
-OWA no permite compartir contactos. Para ello deberá utilizar un cliente de correo compatible (como Outlook).
-
-Consulte la siguiente guía: 
-
-- []({legacy}1251)
-
-
-### Tareas
-
-#### Introducción
-El menú «Tareas» permite crear, gestionar y mostrar las tareas asociadas a la cuenta Exchange.
-
-La columna central muestra el contenido de la carpeta de tareas seleccionada y la columna derecha, los detalles de la tarea seleccionada.
-
-![](images/img_2088.jpg){.thumbnail}
-
-
-#### Nueva tarea
-El botón «nueva tarea» permite crear una nueva tarea en la carpeta de tareas seleccionada, indicar su asunto, la fecha de vencimiento y añadir detalles como la fecha de inicio, el estado, el porcentaje de progreso...
-
-![](images/img_2089.jpg){.thumbnail}
-
-#### Carpetas de tareas
-En la columna izquierda puede ver todas las carpetas de tareas. 
-
-Para crear una carpeta personalizada, haga clic derecho en «Mis tareas» y seleccione «crear carpeta nueva».
-
-![](images/img_2090.jpg){.thumbnail}
-
-#### Más información
-OWA no permite compartir tareas. Para ello deberá utilizar un cliente de correo compatible (como Outlook).
-
-
-### Opciones
-Haciendo clic en el nombre de visualización de la cuenta, puede acceder a las siguientes opciones:
-
-cambiar: Cambia la foto de perfil de la cuenta Exchange.
-
-Abrir otro buzón: Para más información sobre esta opción, consulte la guía específica: 
-
-- []({legacy}1249)
-
-Cerrar sesión: Desconecta la cuenta Exchange y muestra la página de inicio de sesión de OWA.
-
-
-![](images/img_2091.jpg){.thumbnail}
-
-#### Imagen de perfil
-Haga clic en el botón «seleccionar foto» y elija en su equipo la foto que quiere mostrar en su perfil.
-
-![](images/img_2092.jpg){.thumbnail}
-
-
-#### Opciones
-Haciendo clic en el icono con forma de engranaje accederá a los ajustes de configuración general de la cuenta Exchange y a las opciones adicionales. A continuación detallamos los posibles ajustes de configuración:
-
-Actualizar: Actualiza la cuenta Exchange. Por ejemplo, si una persona le envía un mensaje, utilice este botón para forzar la recepción.
-
-Establecer respuestas automáticas: Activa los mensajes de respuesta  automática (contestador) para la cuenta Exchange.
-
-- []({legacy}1569)
-
-Configuración de pantalla: Permite cambiar la configuración de la interfaz OWA: diseño de la lista de mensajes, de las conversaciones, del panel de lectura de los mensajes, activación de la versión ligera de OWA y envío de informes a Microsoft.
-
-Administrar aplicaciones: Permite gestionar o añadir a OWA aplicaciones adicionales (plugins). Algunas aplicaciones han sido instaladas por defecto por nuestros administradores y no pueden eliminarse.
-
-Configuración sin conexión: Activa o desactiva el acceso sin conexión a la cuenta Exchange. Esta opción es práctica si desea consultar su cuenta Exchange sin estar conectado a internet.
-
-Cambiar tema: Permite cambiar el tema y los colores de OWA.
-
-Cambiar contraseña: Permite cambiar la contraseña de la cuenta Exchange. También es posible cambiar la contraseña desde el [área de cliente web](https://www.ovh.com/manager/web/login.html).
-
-Opciones: Muestra las opciones adicionales de la cuenta Exchange, que se detallan en el siguiente apartado.
-
-Ayuda: Representado por el icono con forma de interrogación, abre una página con el sistema de ayuda de Microsoft.
-
-
-![](images/img_2093.jpg){.thumbnail}
-
-### Más opciones de la cuenta Exchange
-Haciendo clic en «Opciones», se abren las siguientes opciones:
-
-cuenta: En esta pantalla podrá ver la información general de la cuenta Exchange. También podrá cambiar la contraseña de la cuenta exchange y editar la información del perfil (tenga en cuenta que algunos datos, como nombre, apellidos, nombre para mostrar y dirección Exchange solo pueden cambiarse desde el [área de cliente web](https://www.ovh.com/manager/web/login.html).
-
-organizar correo electrónico: Aquí puede indicar las reglas de la bandeja de entrada y las respuestas automáticas y consultar los informes de entrega asociados a su cuenta Exchange.
-
-buzones del sitio: Esta opción aún no está disponible. La funcionalidad se activará próximamente con la llegada de la aplicación Lync.
-
-configuración: Más opciones de configuración del correo, los mensajes, los calendarios, las opciones regionales y cambio de la contraseña de la cuenta Exchange.
-
-teléfono: Aquí puede ver los dispositivos móviles en los que ha configurado su cuenta Exchange. Puede eliminar un dispositivo de la lista, eliminar de forma remota los datos o bloquearlo.
-
-bloquear o permitir: Aquí puede administrar los remitentes o destinatarios de los mensajes autorizados o bloqueados. Cuando marque un mensaje como correo no deseado, su remitente se bloqueará y aparecerá en esta sección.
-
-aplicaciones: Aquí puede añadir aplicaciones (plugins) para su OWA. Algunas aplicaciones han sido instaladas por defecto por nuestros administradores y no pueden eliminarse. En la [tienda de aplicaciones para Office](https://store.office.com/appshome.aspx?productgroup=Outlook&ui=es-ES&rs=es-ES&ad=ES) encontrará todas las aplicaciones adicionales. No todas las aplicaciones pueden añadirse por defecto; para algunas es necesario tener permisos de administrador. Si quiere instalar una aplicación que requiere permisos de administrador, contacte con nuestro soporte para que podamos estudiar su solicitud.
-
-![](images/img_2094.jpg){.thumbnail}
-
-En determinadas condiciones, podemos encargarnos de realizar ciertas intervenciones relacionadas con su servicio Exchange a través de una intervención de pago.
-
-En esta guía puede consultar las distintas intervenciones que puede realizar OVH:
-
-- []({legacy}1687)
-
-
-Para solicitar una intervención de pago, consulte la guía anterior para conocer el procedimiento a seguir.
-
-![](images/img_2516.jpg){.thumbnail}
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
