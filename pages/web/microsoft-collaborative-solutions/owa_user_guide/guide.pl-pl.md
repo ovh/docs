@@ -89,7 +89,7 @@ Interfejs OWA umożliwia porządkowanie skrzynki odbiorczej. Możesz
 
 - [tworzyć foldery i podfoldery](./#tworzenie-folderu)
 - [przenosić e-maile](./#przenoszenie-e-maili)
-- [ustawiać reguły](./#tworzenie-reguł-skrzynki-odbiorczej), aby po odebraniu nowego e-maila automatycznie były wykonywane konkretne działania
+- [ustawiać reguły](./#tworzenie-regul-skrzynki-odbiorczej), aby po odebraniu nowego e-maila automatycznie były wykonywane konkretne działania
 
 #### Tworzenie folderu
 
