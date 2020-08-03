@@ -6,23 +6,25 @@ section: Gestion des machines virtuelles
 order: 02
 ---
 
-**Dernière mise à jour le 29/01/2019**
+**Dernière mise à jour le 03/08/2020**
 
 ## Objectif
 
-OVH propose des templates Linux, Windows Server et Windows SQL server (au format OVF) que vous pouvez déployer directement depuis votre client lourd vSphere (version 5.5 et 6.0) et depuis le client Web (flash et HTML 5 sur version 6.5).
+OVHcloud propose des templates Linux, Windows Server et Windows SQL server (au format OVF) que vous pouvez déployer directement depuis votre client Web (HTML 5).
+
+Les VM Windows déployées à partir d'un template utilisent automatiquement les licences SPLA fournies par OVHcloud. Le déploiement d'une VM Windows déclenchera donc automatiquement une facturation supplémentaire.
 
 **Ce guide vous explique où trouver les sources et comment procéder au déploiement.**
 
 > [!primary]
 > 
-> Retrouvez sur cette [page](https://www.ovh.com/fr/private-cloud/options/images-licences.xml){.external} les tarifs des images proposées par OVH.
+> Retrouvez sur cette [page](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/images-licenses/){.external} les tarifs des images proposées par OVH.
 >
 
 ## Prérequis
 
-- Avoir accès au client Web ou au client lourd selon la version utilisée.
-- [Avoir activé les licences Windows](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/#licence-windows){.external} depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (onglet `Licence Widows`{.action} du datacenter) 
+- Avoir accès au client Web (HTML5)
+- [Avoir activé les licences Windows](../manager-ovh-private-cloud/#licence-windows){.external} depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 
 ## En pratique
@@ -44,45 +46,45 @@ Sélectionnez le template souhaité, une fenêtre s'ouvrira et vous proposera le
 
 Une fois connecté au client web vSphere, rendez-vous sur la page `Hôtes et clusters`{.action} puis faites un clic droit sur votre datacenter et cliquez sur `Déployer le modèle OVF...`{.action} :
 
-![Nom de photo](images/selectdeploy.png){.thumbnail}
+![Nom de photo](images/01selectdeploy.png){.thumbnail}
 
 Le menu contextuel s'ouvre, la configuration du déploiement va pouvoir commencer. Dans la première étape, il faut ajouter le lien que vous avez récupéré précédemment :
 
-![Nom de photo](images/puturl.png){.thumbnail}
+![Nom de photo](images/02puturl.png){.thumbnail}
 
 L'étape suivante vous permet de choisir le datacenter :
 
-![Nom de photo](images/selectdatacenter.png){.thumbnail}
+![Nom de photo](images/03selectdatacenter.png){.thumbnail}
 
 Choisissez ensuite le cluster dans lequel la machine virtuelle va être déployée :
 
-![Nom de photo](images/selectcluster.png){.thumbnail}
+![Nom de photo](images/04selectcluster.png){.thumbnail}
 
 Vous retrouvez tous les détails du template et, notamment, le mot de passe par défaut. Pour des raisons de sécurité, il est important de le changer dès votre première connexion :
 
-![Nom de photo](images/detailstemplate.png){.thumbnail}
+![Nom de photo](images/05detailstemplate.png){.thumbnail}
 
 Choisissez le datastore dans lequel la machine virtuelle va être stockée ainsi que le format du disque :
 
-![Nom de photo](images/selectdatastore.png){.thumbnail}
+![Nom de photo](images/06selectdatastore.png){.thumbnail}
 
 Vous devez maintenant choisir le réseau qui sera utilisé.
 
-![Nom de photo](images/selectnetwork.png){.thumbnail}
+![Nom de photo](images/07selectnetwork.png){.thumbnail}
 
 La configuration est quasiment terminée, vous avez accès à un résumé de la configuration souhaitée :
 
-![Nom de photo](images/resume.png){.thumbnail}
+![Nom de photo](images/08resume.png){.thumbnail}
 
 Après avoir cliqué sur `Terminer`{.action}, une tâche est créée et vous permet de suivre le déploiement :
 
-![Nom de photo](images/startdeploy.png){.thumbnail}
+![Nom de photo](images/09startdeploy.png){.thumbnail}
 
 Une fois le déploiement terminé, vous pouvez fermer cette fenêtre.
 
 Vous retrouvez alors la machine virtuelle déployée dans votre inventaire.
 
-![Nom de photo](images/inventory.png){.thumbnail}
+![Nom de photo](images/10inventory.png){.thumbnail}
 
 ### Finalisation de l'installation pour SQL Server
 
