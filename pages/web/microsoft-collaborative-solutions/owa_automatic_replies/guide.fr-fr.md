@@ -37,7 +37,7 @@ Pour activer la fonctionnalité, il suffit de sélectionner `Envoyer des répons
 > Si vous ne spécifiez pas d'heure de début et d'heure de fin, la réponse automatique devra être désactivée manuellement par vos soins.
 >
 
-Saisissez votre message dans la boîte d'éditeur et confirmez avec le bouton `OK`{.action} situé en haut à gauche.
+Saisissez votre message dans la boîte d'édition et confirmez avec le bouton `OK`{.action} situé en haut à gauche.
 
 ![owa répondeur automatique](images/exchange-autorep-step2.png){.thumbnail}
 
