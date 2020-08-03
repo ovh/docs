@@ -136,13 +136,15 @@ Le `Netflow` est desactivé (rapport d'activité sur les flux de trafic)
 
 ![netflow](images/14network7.png){.thumbnail}
 
-Enfin la finalisation de la création du `PortGroup` avec la possibilité de définir une description avec la gestion des politiques de droits suite à la création de celui-ci.
+Laissez la valeur `Block All Ports` à « No ».
 
 ![finalisation portgroup](images/15network9.png){.thumbnail}
 
+Un résumé des modifications vous est alors présenté. Cliquez sur `Terminer` pour confirmer la création.
+
 ![finalisation portgroup](images/16network10.png){.thumbnail}
 
-Nous constatons que le **VLAN21** est bien disponible et fonctionnel.
+Nous constatons ici que le **VLAN21** est bien disponible et fonctionnel.
 
 ![vlan créé](images/17network11.png){.thumbnail}
 
