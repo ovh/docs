@@ -2,16 +2,15 @@
 title: 'Installation des VMware Tools'
 slug: installation-des-vmware-tools
 excerpt: 'Découvrez comment installer les VMware tools sur Linux ou Windows'
-legacy_guide_number: '7766427'
 section: 'Gestion des machines virtuelles'
 order: 6
 ---
 
-**Dernière mise à jour le 28/01/2019**
+**Dernière mise à jour le 03/08/2020**
 
-## Objectifs
+## Objectif
 
-Les VMware Tools améliore les performances d'une machine virtuelle et permet d'utiliser un grand nombre de ses fonctions d'utilisation simples dans les produits VMware.
+Les VMware Tools améliorent les performances d'une machine virtuelle et permettent d'utiliser un grand nombre de ses fonctionnalités simples dans les produits VMware.
 
 **Ce guide expose les différentes étapes à suivre afin de procéder à leur installation**
 
@@ -19,9 +18,9 @@ Les VMware Tools améliore les performances d'une machine virtuelle et permet d'
 
 La procédure d'installation des VMware Tools varie en fonction du système d'exploitation de la machine virtuelle. Pour obtenir des informations concernant la procédure spécifique à chaque OS, consultez la [documentation VMware concernant les VMware Tools](https://kb.vmware.com/s/article/1014294){.external-link}.
 
-## Linux
+### Linux
 
-### Versions récentes
+#### Versions récentes
 
 La plupart des distributions Linux récentes proposent l'installation des VMware Tools via leurs systèmes de gestion de paquets, sous le nom [*Open VM Tools*](https://kb.vmware.com/s/article/2073803){.external-link}.
 
@@ -42,19 +41,19 @@ Cette méthode d'installation est valide à minima pour les versions de GNU/Linu
 - SUSE Linux Enterprise 11 SP4 et supérieur
 
 
-### Anciennes Versions
+#### Anciennes Versions
 
-Monter le disque des VMware tools depuis le web client Vsphere, faites un clic droit sur la VM, puis sélectionner "Guest OS" en validant l’option « Install VMware Tools » :
+Afin de monter le disque des VMware tools depuis le web client Vsphere, faites un clic droit sur la VM, puis cliquez sur `Guest OS`{.action} et enfin sur `Install VMware Tools`{.action}. 
 
-![](images/tools.png){.thumbnail}
+![installer VMware Tools](images/01tools.png){.thumbnail}
 
-Ensuite, monter le volume activé par la commande :
+Montez ensuite le volume activé par la commande :
 
 ```sh
 >     # mount /dev/cdrom /mnt
 ```
 
-Puis, décompresser l’archive des VMwareTools. Ici, dans /tmp.
+Puis décompressez l’archive des VMwareTools. Ici, dans /tmp.
 
 ```sh
 > cd /tmp 
@@ -63,22 +62,22 @@ Puis, décompresser l’archive des VMwareTools. Ici, dans /tmp.
 > ./vmware-install.pl default
 ```
 
-> [!success]
+> [!primary]
 >
-> Petite astuce si vous voulez répondre par défaut aux réponses proposées et ne pas être prompté, rajouter "default" en argument à la ligne d'installation
+> Si vous voulez répondre par défaut aux réponses proposées et ne pas être interrompu pendant l'installation, rajoutez « default » en argument à la ligne d'installation.
 > 
 
 Une fois l’installation finalisée, le disque des tools sera automatiquement désinscrit du système.
 
-## Windows
+### Windows
 
-Une fois le volume monté via l’option « Install/Upgrade VMware Tools », retrouver le disque dans le "poste de travail" de votre VM. Faire un double clic sur celui-ci afin de lancer l’installation des Tools :
+Une fois le volume monté via l’option « Install/Upgrade VMware Tools », retrouvez le disque dans le « poste de travail » de votre VM. Faire un double clic sur celui-ci afin de lancer l’installation des Tools :
 
-![](images/windows.jpg){.thumbnail}
+![VMware tools windows](images/windows.jpg){.thumbnail}
 
-L'assistant d'installation va alors se lancer pour demander d'accepter les licences et le type d'installation à choisir (Nous vous conseillons l'installation Complète).
+L'assistant d'installation va alors se lancer pour demander d'accepter les licences et le type d'installation à choisir (Nous vous conseillons l'installation complète).
 
-Une fois l'installation terminée il vous proposera de redémarrer la machine pour prendre en compte les modifications. Le lecteur CD sera automatiquement démonté à la fin de l'installation
+Une fois l'installation terminée, il vous proposera de redémarrer la machine pour prendre en compte les modifications. Le lecteur CD sera automatiquement démonté à la fin de l'installation.
 
 ## Aller plus loin
 
