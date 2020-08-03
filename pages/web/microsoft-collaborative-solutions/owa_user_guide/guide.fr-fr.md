@@ -17,14 +17,14 @@ Avec OVHcloud Hosted Exchange, vous pouvez envoyer et recevoir vos e-mails à pa
 
 ## Prérequis
 
-- Disposer d'une solution e-mail OVHcloud doit avoir été configurée au préalable (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovh.com/fr/hebergement-web/), incluse dans un [hébergement Start10M gratuit](https://www.ovh.com/fr/domaines/offre_hebergement_start10m.xml) ou commandée séparément comme solution autonome, telles que[**Hosted Exchange**](https://www.ovh.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovh.com/fr/emails/email-pro/))
+- Disposer d'une solution e-mail OVHcloud doit avoir été configurée au préalable (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovh.com/fr/hebergement-web/), incluse dans un [hébergement Start10M gratuit](https://www.ovh.com/fr/domaines/offre_hebergement_start10m.xml) ou commandée séparément comme solution autonome, telles que [**Hosted Exchange**](https://www.ovh.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovh.com/fr/emails/email-pro/))
 - Connaître les identifiants de connexion de l’adresse e-mail que vous souhaitez configurer
 
 ## En pratique
 
 Ce guide vous permettra de mieux comprendre les tâches habituelles disponibles dans un compte de messagerie sous OWA. Cependant, comme cette interface n'a pas été créée à l'origine par OVHcloud, nous ne pouvons pas fournir des instructions spécifiques sur les paramètres non abordés dans ce guide. 
 
-Concernant les fonctionnalités spécifiques à Exchange, vous pourrez retrouver quelques guides supplémentaires dans la section [Aller plus loin](./#aller-plus-loin) en bas de ce guide.
+Concernant les fonctionnalités spécifiques à Exchange, vous pourrez retrouver quelques guides supplémentaires dans la section [Aller plus loin](./#aller-plus-loin_1) en bas de ce guide.
 
 
 > [!primary]
@@ -77,7 +77,7 @@ Pour **envoyer un nouveau message**, cliquez sur l'icône `Nouveau`{.action} en 
 
 ![useowa](images/owa_exchange_step7.png){.thumbnail}
 
-Pour **répondre à un message**, [cliquez d'abord](./#afficher-les-emails) sur celui-ci pour l'afficher. Cliquez ensuite sur `Répondre à tous`{.action}. Par contre, utilisez le bouton flèche vers le bas si vous souhaitez uniquement répondre à l'expéditeur de l’e-mail (excluant tout destinataire mis en copie).
+Pour **répondre à un message**, [cliquez d'abord](./#afficher-les-e-mails) sur celui-ci pour l'afficher. Cliquez ensuite sur `Répondre à tous`{.action}. Par contre, utilisez le bouton flèche vers le bas si vous souhaitez uniquement répondre à l'expéditeur de l’e-mail (excluant tout destinataire mis en copie).
 
 ![useowa](images/owa_exchange_step8.png){.thumbnail}
 
@@ -90,7 +90,7 @@ Lorsque vous choisissez de répondre, l'éditeur de réponse rapide apparaîtra 
 OWA propose plusieurs façons d'organiser votre messagerie. Vous pouvez :
 
 - [créer des dossiers et des sous-dossiers](./#creer-un-dossier),
-- [déplacer des e-mails](./#deplacer-des-emails),
+- [déplacer des e-mails](./#deplacer-des-e-mails),
 - [définir des règles](./#creer-des-regles-de-gestion-de-la-messagerie) afin d’effectuer automatiquement des actions dès la réception d'un nouvel e-mail.
 
 #### Créer un dossier

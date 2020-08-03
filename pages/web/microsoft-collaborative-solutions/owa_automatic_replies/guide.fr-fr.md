@@ -46,9 +46,9 @@ Saisissez votre message dans la boîte d'édition et confirmez avec le bouton `O
 
 Les instructions ci-dessus s'appliquent aux e-mails envoyés par les utilisateurs de votre service Exchange. Vous pouvez composer un message différent pour tous les autres en cochant la case « Envoyer des réponses automatiques aux expéditeurs externes ». Vous aurez alors deux autres possibilités de réponse automatique :
 
-- **« Envoyer des réponses uniquement aux expéditeurs figurant dans ma liste de contacts »**: Seuls vos contacts recevront un message.
+- **Envoyer des réponses uniquement aux expéditeurs figurant dans ma liste de contacts** : Seuls vos contacts recevront un message.
 
-- **« Envoyer des réponses automatiques à tous les expéditeurs externes »**: Toute personne vous envoyant des e-mails pendant votre absence recevra un message.
+- **Envoyer des réponses automatiques à tous les expéditeurs externes** : Toute personne vous envoyant des e-mails pendant votre absence recevra un message.
 
 Un message alternatif pour les expéditeurs externes peut être saisi dans la deuxième boîte d'édition. Vous pouvez par exemple répondre par le premier message à vos collègues et par le second à vos amis, clients ou toute autre personne qui pourrait vous contacter.
 
