@@ -12,7 +12,11 @@ order: 6
 
 Les VMware Tools améliorent les performances d'une machine virtuelle et permettent d'utiliser un grand nombre de ses fonctionnalités simples dans les produits VMware.
 
-**Ce guide expose les différentes étapes à suivre afin de procéder à leur installation**
+**Ce guide expose les différentes étapes à suivre afin de procéder à leur installation.**
+
+## Prérequis
+
+- Avoir accès au client Web (HTML5)
 
 ## En pratique
 
