@@ -4,8 +4,7 @@ excerpt: 'Hier erfahren Sie, wie Sie den Fehler „Seite nicht installiert“ be
 id: '1585'
 slug: webhosting_fehler_-_webseite_ist_nicht_installiert
 legacy_guide_number: g1585
-section: Webhosting-Konfiguration
-order: 2
+section: 'Webhosting-Konfiguration'
 ---
 
 **Stand 07.12.2018**
