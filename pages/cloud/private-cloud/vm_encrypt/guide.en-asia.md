@@ -148,7 +148,7 @@ From the vCenter where we added the KMS server
 
 > [!warning]
 >
-> Make sure that the certificate is not encrypted with a password when we download the certificate from the KMS. Example: If you create a user, create a user without a password and download the certificate for the KMS user and download the certificate.
+> Make sure that the certificate is not encrypted with a password when we download the certificate from the KMS. Example: If you create a user, create a user without a password and download the certificate for the KMS user.
 >
 
 ![](images/vm-encrypt_02.png){.thumbnail}
