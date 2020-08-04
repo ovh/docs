@@ -1,9 +1,10 @@
 ---
 title: FAQ - Migrate to the latest versions of PHP
 excerpt: FAQ - Migrate to the latest versions of PHP
-id: '1758'
 slug: faq_-_migrate_to_the_latest_versions_of_php
 legacy_guide_number: g1758
+section: 'Redirection and authentication'
+hidden: true
 ---
 
 
