@@ -1,8 +1,9 @@
 ---
-title: '.htaccess, URL rewriting using mod_rewrite'
-excerpt: Mod_rewrite is available at OVH on all web hosting packages (apart from 20gp packages)
+title: 'URL rewriting using mod_rewrite'
+excerpt: Find out how to use .htaccess to rewrite URLs
 slug: htaccess_url_rewriting_using_mod_rewrite
 legacy_guide_number: g1971
+section: 'Redirection and authentication'
 ---
 
 
@@ -51,7 +52,7 @@ Rewriterule ^(.*) http://www.example.com/$1 [QSA,L,R=301]
 
 ## Redirect to a particular folder without displaying the folder in question
 
-- If your website is not in the target folder, this will force all requests to use www.example.com, when in reality the page is called: ww.example.com/MySite
+- If your website is not in the target folder, this will force all requests to use www.example.com, when in reality the page is called: www.example.com/MySite
 
 
 ```
@@ -106,8 +107,4 @@ RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.example.com/$1 [R,L]
 ```
-
-
-## 
-To find out all about the .htaccess file: [Click here](https://docs.ovh.com/gb/en/hosting/all_about_the_htaccess_file/)
 
