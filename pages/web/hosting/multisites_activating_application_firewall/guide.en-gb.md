@@ -1,8 +1,9 @@
 ---
-title: 'Web hosting: Activating an application firewall'
-excerpt: 'Web hosting: Activating an application firewall'
+title: 'Activating an application firewall'
+excerpt: 'Find out how to activate the application firewall for a Web Hosting'
 id: '1937'
 slug: web_hosting_activating_an_application_firewall
+section: 'Web Hosting configuration'
 legacy_guide_number: g1937
 ---
 
