@@ -10,7 +10,7 @@ order: 02
 
 ## Objectif
 
-Dans une infrastructure Private Cloud, vous diposez de base de 10 VxLAN (SDDC et Dedicated Cloud) fournit par NSX, et de 11 VLAN (SDDC) fournit avec le vRack.
+Dans une infrastructure Private Cloud, vous disposez de base de 10 VxLAN (SDDC et Dedicated Cloud) fournis par NSX, et de 11 VLAN (SDDC) fournis avec le vRack.
 
 **Ce guide montre la création de V(x)LAN supplémentaires**
 
@@ -22,7 +22,7 @@ Dans une infrastructure Private Cloud, vous diposez de base de 10 VxLAN (SDDC et
 
 Dans les offres Private Cloud, vous disposez d'un switch virtuel distribué (vDS) pour les **Dedicated Cloud** et de deux switchs virtuels distribués pour les **SDDC**. 
 
-Ces *vDS* comporte plusieurs *portGroup* ayant chacun leur utilité.
+Ces *vDS* comportent plusieurs *portGroup* ayant chacun leur utilité.
 
 Le premier vDS commun aux deux offres dispose de deux types de *portGroup* : 
 
@@ -31,15 +31,15 @@ Le premier vDS commun aux deux offres dispose de deux types de *portGroup* :
 
 Le second vDS, disponible uniquement sur SDDC dispose d'un seul type de *portGroup* : 
 
-- Des VLAN permettant d'isoler des communications privées à l'intérieur du Private Cloud et entre les différents services OVH compatibles vRack (Serveur dédié, Public Cloud...). 
+- Des VLAN permettant d'isoler des communications privées à l'intérieur du Private Cloud et entre les différents services OVHcloud compatibles vRack (Serveur dédié, Public Cloud...). 
 
 ### VxLan - NSX 
 
 Dans les offres SDDC et Dedicated Cloud vous disposez d'un premier switch virtuel. 
 
-Sur ce switch, 10 VxLAN sont crée de base. En donnant le droit `NSX` dans [la gestion des utilisateurs de votre espace client](https://docs.ovh.com/fr/private-cloud/manager-ovh-private-cloud/#utilisateurs){.external-link}, vous pourrez accèder à l'interface NSX et ansi créer des VxLAN supplémentaires.
+Sur ce switch, 10 VxLAN sont créés de base. En donnant le droit `NSX` dans [la gestion des utilisateurs de votre espace client](../manager-ovh-private-cloud/#utilisateurs), vous pourrez accéder à l'interface NSX et ansi créer des VxLAN supplémentaires.
 
-En premier lieu rendez vous dans la vue `Mise en réseau et sécurité` de votre client vSphere, et rendez vous dans `Commutateurs logiques`{.action}.
+En premier lieu, rendez vous dans la vue `Mise en réseau et sécurité` de votre client vSphere puis cliquez sur `Commutateurs logiques`{.action}.
 
 Cliquez sur le bouton `+`{.action} pour commencer la création :
 
