@@ -1,6 +1,6 @@
 ---
-title: 'Mettre en place un répondeur automatique depuis l’interface OWA'
-excerpt: Découvrez comment mettre en place une réponse automatique sous OWA
+title: 'Mettre en place un répondeur depuis l''interface OWA'
+excerpt: guide mise en place d'un répondeur sous owa
 slug: exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa
 legacy_guide_number: g1922
 section: 'Utilisation d''Outlook Web Application (OWA)'
@@ -18,7 +18,7 @@ Cette fonctionnalité d’Exchange vous permet de configurer des réponses autom
 
 ## Prérequis
 
-- Avoir installé une [solution OVHcloud Exchange](https://www.ovh.com/fr/emails/hosted-exchange/) 
+- Avoir installé une [solution OVHcloud Exchange](https://www.ovh.com/ca/fr/emails/hosted-exchange/) 
 - Avoir accès à votre compte Exchange (adresse e-mail et mot de passe)
 
 
@@ -26,7 +26,7 @@ Cette fonctionnalité d’Exchange vous permet de configurer des réponses autom
 
 ### Activer la fonctionnalité
 
-Connectez-vous à votre compte Exchange via le [webmail OVHcloud](https://www.ovh.com/fr/mail/). Cliquez sur l’icône d'engrenage en haut à droite pour afficher le menu « Options » et sélectionnez `Réponses automatiques`{.action}.
+Connectez-vous à votre compte Exchange via le [webmail OVHcloud](https://www.ovh.com/ca/fr/mail/). Cliquez sur l’icône d'engrenage en haut à droite pour afficher le menu « Options » et sélectionnez `Réponses automatiques`{.action}.
 
 ![owa options](images/exchange-autorep-step1.png){.thumbnail}
 
@@ -44,7 +44,7 @@ Saisissez votre message dans la boîte d'édition et confirmez avec le bouton `O
 
 ### Définir le type de réponses
 
-Les instructions ci-dessus s'appliquent aux e-mails envoyés par les utilisateurs de votre service Exchange. Vous pouvez composer un message différent pour tous les autres en cochant la case « Envoyer des réponses automatiques aux expéditeurs externes ». Vous aurez alors deux autres possibilités de réponse automatique :
+Les instructions ci-dessus s'appliquent aux e-mails envoyés par les utilisateurs de votre service Exchange. Vous pouvez composer un message différent pour tous les autres en cochant la case « Envoyer des réponses automatiques aux expéditeurs externes ». Vous aurez alors deux autres possibilités de réponse automatique :
 
 - **Envoyer des réponses uniquement aux expéditeurs figurant dans ma liste de contacts** : Seuls vos contacts recevront un message.
 
@@ -55,7 +55,7 @@ Un message alternatif pour les expéditeurs externes peut être saisi dans la de
 ![owa ajout de réponse](images/exchange-autorep-step3.png){.thumbnail}
 
 
-### Informations supplémentaires :
+### Informations supplémentaires :
 
 - Vous recevrez, comme d'habitude, vos e-mails dans votre boîte de réception, même si les réponses automatiques sont activées.
 
@@ -65,8 +65,6 @@ Un message alternatif pour les expéditeurs externes peut être saisi dans la de
 ## Aller plus loin
 
 [ Consulter son compte Exchange depuis l’interface OWA](../exchange-2016-guide-utilisation-outlook-web-app/)
-
-[Déléguer des droits sur un compte Exchange](../exchange-donner-les-droits-full-access-sur-un-compte/)
 
 [Partager des calendriers via l’interface OWA](../exchange-2016-partager-un-calendrier-via-le-webmail-owa/)
 

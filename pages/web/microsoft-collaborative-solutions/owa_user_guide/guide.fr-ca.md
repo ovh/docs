@@ -1,5 +1,5 @@
 ---
-title: 'Consulter son compte Exchange depuis l’interface OWA'
+title: 'Consulter son compte Exchange depuis l''interface OWA'
 slug: exchange-2016-guide-utilisation-outlook-web-app
 legacy_guide_number: 1918
 excerpt: 'Retrouvez ici le detail concernant Outlook Web App pour Exchange '
@@ -7,17 +7,17 @@ section: 'Utilisation d''Outlook Web Application (OWA)'
 order: 1
 ---
 
-**Dernière mise à jour le 03/08/2020**
+**Dernière mise à jour le 04/08/2020**
 
 ## Objectif
 
-Avec OVHcloud Hosted Exchange, vous pouvez envoyer et recevoir vos e-mails à partir d’un appareil et d’un logiciel client de votre choix. OVHcloud fournit un service de messagerie en ligne appelé Outlook Web Application (OWA) qui permet, via un navigateur web, d’accéder à un compte, quel que soit l’endroit. Tous les comptes de messagerie actifs sur MX Plan, Email Pro et Hosted Exchange ont un seul point d’accès à l’interface OWA qui leur correspond : notre page de [connexion au webmail](https://www.ovh.com/fr/mail/).
+Avec OVHcloud Hosted Exchange, vous pouvez envoyer et recevoir vos e-mails à partir d’un appareil et d’un logiciel client de votre choix. OVHcloud fournit un service de messagerie en ligne appelé Outlook Web Application (OWA) qui permet, via un navigateur web, d’accéder à un compte, quel que soit l’endroit. Tous les comptes de messagerie actifs sur MX Plan, Email Pro et Hosted Exchange ont un seul point d’accès à l’interface OWA qui leur correspond : notre page de [connexion au webmail](https://www.ovh.com/ca/fr/mail/).
 
 **Ce guide explique comment effectuer des actions courantes avec votre adresse électronique depuis l'interface OWA.**
 
 ## Prérequis
 
-- Disposer d'une solution e-mail OVHcloud qui doit avoir été configurée au préalable (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovh.com/fr/hebergement-web/), incluse dans un [hébergement Start10M gratuit](https://www.ovh.com/fr/domaines/offre_hebergement_start10m.xml) ou commandée séparément comme solution autonome, telles que [**Hosted Exchange**](https://www.ovh.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovh.com/fr/emails/email-pro/))
+- Disposer d'une solution e-mail OVHcloud, proposée parmi nos [offres d’hébergement web](https://www.ovh.com/ca/fr/hebergement-web/) ou commandée séparément comme solution autonome telle que [**Hosted Exchange**](https://www.ovh.com/ca/fr/emails/hosted-exchange/)
 - Connaître les identifiants de connexion de l’adresse e-mail que vous souhaitez configurer
 
 ## En pratique
@@ -34,7 +34,7 @@ Concernant les fonctionnalités spécifiques à Exchange, vous pourrez retrouver
 
 ### Étape 1 : Se connecter à OWA
 
-Pour vous connecter à OWA avec votre adresse e-mail, ouvrez la page de [connexion au webmail](https://www.ovh.com/fr/mail/). Saisissez entièrement votre adresse e-mail et votre mot de passe. Ensuite, cliquez sur `Connexion`{.action}.
+Pour vous connecter à OWA avec votre adresse e-mail, ouvrez la page de [connexion au webmail](https://www.ovh.com/ca/fr/mail/). Saisissez entièrement votre adresse e-mail et votre mot de passe. Ensuite, cliquez sur `Connexion`{.action}.
 
 ![useowa](images/owa_exchange_step1.png){.thumbnail}
 
@@ -63,7 +63,7 @@ Notez que vous pouvez modifier la taille des sections verticales en cliquant et 
 
 ### Afficher les e-mails
 
-Pour consulter vos e-mails, sélectionnez un dossier sur le côté gauche. Les e-mails entrants qui ne sont pas traités par les règles de messagerie s’afficheront dans le dossier « Boîte de réception ». Pour savoir si vous avez reçu de nouveaux e-mails, vérifiez si un numéro apparaît à côté du dossier correspondant.
+Pour consulter vos e-mails, sélectionnez un dossier sur le côté gauche. Les e-mails entrants qui ne sont pas traités par les règles de messagerie s’afficheront dans le dossier « Boîte de réception ». Pour savoir si vous avez reçu de nouveaux e-mails, vérifiez si un numéro apparaît à côté du dossier correspondant.
 
 ![useowa](images/owa_exchange_step5.png){.thumbnail}
 
@@ -87,7 +87,7 @@ Lorsque vous choisissez de répondre, l'éditeur de réponse rapide apparaîtra 
 
 ### Organiser votre messagerie
 
-OWA propose plusieurs façons d'organiser votre messagerie. Vous pouvez :
+OWA propose plusieurs façons d'organiser votre messagerie. Vous pouvez :
 
 - [créer des dossiers et des sous-dossiers](./#creer-un-dossier),
 - [déplacer des e-mails](./#deplacer-des-e-mails),
@@ -126,7 +126,7 @@ Pour des instructions plus détaillées sur la création des règles de gestion 
 
 ### Gérer une liste de contacts
 
-Pour gérer vos contacts, cliquez d’abord sur le bouton bleu du « App launcher » en haut de la page, ensuite sur `Contacts`{.action}.
+Pour gérer vos contacts, cliquez d’abord sur le bouton bleu du « App launcher » en haut de la page, ensuite sur `Contacts`{.action}.
 
 ![useowa](images/owa_exchange_step15.png){.thumbnail}
 
@@ -136,7 +136,7 @@ Pour **ajouter un nouveau contact**, cliquez sur `Nouveau`{.action}, et introdui
 
 ![useowa](images/owa_exchange_step16.png){.thumbnail}
 
-Pour **créer une liste de contacts**, cliquez sur la flèche vers le bas à côté de « Nouveau », puis cliquez sur `Liste de contacts`{.action}. Donnez-lui un nom, ajoutez-y des contacts et cliquez sur `Enregistrer`{.action}.
+Pour **créer une liste de contacts**, cliquez sur la flèche vers le bas à côté de « Nouveau », puis cliquez sur `Liste de contacts`{.action}. Donnez-lui un nom, ajoutez-y des contacts et cliquez sur `Enregistrer`{.action}.
 
 ![useowa](images/owa_exchange_step17.png){.thumbnail}
 
@@ -146,7 +146,7 @@ Vous pouvez modifier le mot de passe de votre compte lorsque vous êtes connect�
 
 ![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-Sur la nouvelle page, développez l'onglet « Général » dans l'arborescence de gauche, puis cliquez sur `Mon compte`{.action}. Enfin, cliquez sur `Modifier votre mot de passe`{.action}.
+Sur la nouvelle page, développez l'onglet « Général » dans l'arborescence de gauche, puis cliquez sur `Mon compte`{.action}. Enfin, cliquez sur `Modifier votre mot de passe`{.action}.
 
 ![useowa](images/owa_exchange_step18.png){.thumbnail}
 
@@ -165,7 +165,7 @@ Sous OWA, vous pouvez créer un répondeur automatique dans votre messagerie afi
 
 ![useowa](images/owa_exchange_step20.png){.thumbnail}
 
-Dans la fenêtre qui s’ouvre, sélectionnez l’option « Envoyer des réponses automatiques ». Vous pouvez alors paramétrer le répondeur automatique pour qu'il réponde à plusieurs critères tels que :
+Dans la fenêtre qui s’ouvre, sélectionnez l’option « Envoyer des réponses automatiques ». Vous pouvez alors paramétrer le répondeur automatique pour qu'il réponde à plusieurs critères tels que :
 
 - envoyer des e-mails de réponse automatique pendant un intervalle de temps fixe, ou en continu jusqu'à ce qu'il soit désactivé manuellement
 - définir les expéditeurs qui recevront les e-mails de réponse automatique (expéditeurs internes uniquement, ou inclure les expéditeurs externes)
@@ -182,7 +182,7 @@ Pour ajouter une signature électronique, cliquez sur l'icône de l'engrenage en
 
 ![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-Sur le côté gauche de la nouvelle page, cliquez sur `Signature électronique`{.action}. Dans les options de l’arborescence, cet élément se trouve sous « Courrier » et « Disposition ». À partir de là, vous pouvez activer, désactiver et modifier la signature.
+Sur le côté gauche de la nouvelle page, cliquez sur `Signature électronique`{.action}. Dans les options de l’arborescence, cet élément se trouve sous « Courrier » et « Disposition ». À partir de là, vous pouvez activer, désactiver et modifier la signature.
 
 ![useowa](images/owa_exchange_step22.png){.thumbnail}
 
@@ -196,7 +196,7 @@ Pour accéder à tous vos paramètres, cliquez sur l'icône d’engrenage en hau
 
 ![useowa](images/owa_exchange_step12.png){.thumbnail}
 
-Vous pouvez ensuite naviguer dans l'arborescence « Options » sur le côté gauche de la page. D'autres ajustements sur la présentation et le comportement de votre compte de messagerie peuvent être effectués à partir de cette page. Veuillez noter que pour des raisons de sécurité, certaines options du compte peuvent être désactivées par OVHcloud.
+Vous pouvez ensuite naviguer dans l'arborescence « Options » sur le côté gauche de la page. D'autres ajustements sur la présentation et le comportement de votre compte de messagerie peuvent être effectués à partir de cette page. Veuillez noter que pour des raisons de sécurité, certaines options du compte peuvent être désactivées par OVHcloud.
 
 ![useowa](images/owa_exchange_step23.png){.thumbnail}
 
@@ -208,7 +208,4 @@ Vous pouvez ensuite naviguer dans l'arborescence « Options » sur le côté g
 
 [Partager des calendriers via l’interface OWA](../exchange-2016-partager-un-calendrier-via-le-webmail-owa/)
 
-[Créer un groupe de contacts](../exchange-utilisation-des-groupes-mailing-list/)
-
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
-
