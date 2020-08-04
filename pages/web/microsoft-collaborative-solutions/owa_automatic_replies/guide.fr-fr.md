@@ -70,4 +70,4 @@ Un message alternatif pour les expéditeurs externes peut être saisi dans la de
 
 [Partager des calendriers via l’interface OWA](../exchange-2016-partager-un-calendrier-via-le-webmail-owa/)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
