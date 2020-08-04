@@ -127,7 +127,7 @@ Clicca su `Trust`{.action} per convalidare il certificato.
 
 Scegli le seguenti opzioni:
 
-|Nome dell'opzione|Descrizione|
+|Nome|Descrizione|
 |---|---|
 |KMS cluster|Seleziona “Create new cluster” per ottenerne uno nuovo. Se esiste già un cluster, è possibile selezionarlo.|
 |Cluster name|Nome del cluster KMS. Questa informazione potrebbe essere necessaria per connettersi al KMS in caso di irraggiungibilità del cluster. È molto importante che il nome del cluster sia univoco e rappresentativo di questo elemento.|
