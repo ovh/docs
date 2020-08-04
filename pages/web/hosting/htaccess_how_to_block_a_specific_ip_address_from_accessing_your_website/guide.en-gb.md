@@ -1,8 +1,9 @@
 ---
-title: '.htaccess, how to block a specific IP address from accessing your website'
-excerpt: How to block a specific IP address from accessing your website
+title: 'Blocking a specific IP address from accessing your website'
+excerpt: How to block a specific IP address with .htaccess
 slug: htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website
 legacy_guide_number: g1970
+section: 'Redirection and authentication'
 ---
 
 You just have to create a file called .htaccess and place it in the www folder (or in a particular directory that you wish to restrict access to).
@@ -81,9 +82,4 @@ deny from all
 allow from 192.168
 ```
 
-
-
-
-## 
-Find out more about the .htaccess file in the following guide: [Click here](https://www.ovh.co.uk/g1967.mutualise_tout_sur_le_fichier_htaccess)
 
