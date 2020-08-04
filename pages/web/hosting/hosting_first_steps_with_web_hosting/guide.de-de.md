@@ -155,11 +155,11 @@ Wenn Sie mehr Informationen über die Verwendung von RoundCube benötigen, werfe
 
 ## Weiterführende Informationen
 
-[Migration Ihrer Website und E-Mails zu OVH](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/){.external}
+[Migration Ihrer Website und E-Mails zu OVH](../migration-ihrer-website-zu-ovh/){.external}
 
-[Meine Seite online stellen](https://docs.ovh.com/de/hosting/webhosting_meine_seite_online_stellen/){.external}
+[Meine Seite online stellen](../webhosting_meine_seite_online_stellen/){.external}
 
-[Installation Ihrer Website mit 1-Klick-Modulen](https://docs.ovh.com/de/hosting/webhosting_installation_von_webhosting-modulen/){.external}
+[Installation Ihrer Website mit 1-Klick-Modulen](../webhosting_installation_von_webhosting-modulen/){.external}
 
 [Eine E-Mail-Adresse erstellen](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external}
 
