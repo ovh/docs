@@ -7,7 +7,7 @@ section: 'Utilisation d''Outlook Web Application (OWA)'
 order: 1
 ---
 
-**Dernière mise à jour le 26/02/2020**
+**Dernière mise à jour le 03/08/2020**
 
 ## Objectif
 
@@ -17,7 +17,7 @@ Avec OVHcloud Hosted Exchange, vous pouvez envoyer et recevoir vos e-mails à pa
 
 ## Prérequis
 
-- Disposer d'une solution e-mail OVHcloud doit avoir été configurée au préalable (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovh.com/fr/hebergement-web/), incluse dans un [hébergement Start10M gratuit](https://www.ovh.com/fr/domaines/offre_hebergement_start10m.xml) ou commandée séparément comme solution autonome, telles que [**Hosted Exchange**](https://www.ovh.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovh.com/fr/emails/email-pro/))
+- Disposer d'une solution e-mail OVHcloud qui doit avoir été configurée au préalable (**MX Plan**, proposée parmi nos [offres d’hébergement web](https://www.ovh.com/fr/hebergement-web/), incluse dans un [hébergement Start10M gratuit](https://www.ovh.com/fr/domaines/offre_hebergement_start10m.xml) ou commandée séparément comme solution autonome, telles que [**Hosted Exchange**](https://www.ovh.com/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovh.com/fr/emails/email-pro/))
 - Connaître les identifiants de connexion de l’adresse e-mail que vous souhaitez configurer
 
 ## En pratique
