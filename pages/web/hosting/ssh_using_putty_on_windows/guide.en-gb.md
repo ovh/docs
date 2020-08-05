@@ -1,9 +1,9 @@
 ---
-title: 'Web hosting: Using PuTTy on Windows'
-excerpt: 'Web hosting: Using PuTTy on Windows'
-id: '1964'
+title: 'Using PuTTy for Windows'
+excerpt: 'Using PuTTy for Windows'
 slug: web_hosting_using_putty_on_windows
 legacy_guide_number: g1964
+section: 'FTP and SSH'
 ---
 
 

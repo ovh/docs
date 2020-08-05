@@ -1,14 +1,16 @@
 ---
-title: 'Webhosting: SSH auf Ihren Webhostings'
+title: 'Verwendung von SSH mit einem Webhosting'
 excerpt: 'Webhosting: SSH auf Ihren Webhostings'
 id: '1962'
 slug: webhosting_ssh_auf_ihren_webhostings
 legacy_guide_number: g1962
+section: 'FTP und SSH'
+order: 4
 ---
 
 
 ## Was ist SSH und welche Vorteile bietet es?
-Die Nutzung von SSH ist ab den PRO Angeboten möglich (für die [alten Hosting Angebote](https://www.ovh.de/hosting/alte_hosting_angebote.xml) an PLAN).
+Die Nutzung von SSH ist ab den PRO Angeboten möglich (für die [alten Hosting Angebote](https://www.ovh.de/hosting/alte_hosting_angebote.xml) ab PLAN).
 
 ACHTUNG: Bei den alten Angeboten ist der Zugriff nur über das primäre FTP-Konto möglich, zusätzliche FTP-Nutzer haben also keinen Zugriff auf SSH.
 

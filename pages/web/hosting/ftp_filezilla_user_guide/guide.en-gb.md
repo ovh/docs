@@ -1,8 +1,8 @@
 ---
-title: 'Web hosting: FileZilla user guide'
+title: 'Using FileZilla'
 slug: web_hosting_filezilla_user_guide
-excerpt: 'How to use FileZilla'
-id: '1380'
+excerpt: 'FileZilla user guide'
+section: 'FTP and SSH'
 legacy_guide_number: g1380
 ---
 
@@ -18,7 +18,7 @@ Go to the [FileZilla](https://filezilla-project.org/) website to download it.
 
 ## Interface
 
-## The [b][red]Zone 1[/red][/b] provides information on the status of the connection, transfers, connection errors, etc..
+Zone 1 provides information on the status of the connection, transfers, connection errors, etc.
 Generally the information is not important.
 
 Zone 2 shows the path of the site folder on your computer.

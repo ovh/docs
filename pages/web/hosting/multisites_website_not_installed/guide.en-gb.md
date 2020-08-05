@@ -2,8 +2,7 @@
 title: 'Resolving a “Website not installed” error'
 excerpt: 'Find out how to resolve a “Website not installed” error'
 slug: web_hosting_error_-_website_not_installed
-section: 'Configuring the Web Hosting plan'
-order: 2
+section: 'Web Hosting configuration'
 ---
 
 

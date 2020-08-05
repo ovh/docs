@@ -3,6 +3,8 @@ title: 'Webhosting: FAQ zur Migration auf die aktuellen PHP Versionen'
 excerpt: FAQ zur Migration auf die aktuellen PHP Versionen
 slug: webhosting_faq_zur_migration_auf_die_aktuellen_php_versionen
 legacy_guide_number: g1758
+section: 'PHP'
+hidden: true
 ---
 
 

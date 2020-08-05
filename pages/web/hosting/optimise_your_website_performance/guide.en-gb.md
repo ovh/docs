@@ -1,8 +1,10 @@
 ---
-title: 'Optimise your website’s performance'
+title: 'Optimising your website’s performance'
 excerpt: 'Find out how to analyse latency on your website and how to improve it'
 slug: web_hosting_optimise_your_website_performance
 legacy_guide_number: g1396
+section: 'Website optimisation'
+order: 1
 ---
 
 **Last updated 5th February 2020**

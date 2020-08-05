@@ -1,14 +1,14 @@
 ---
-title: What else can you do with the .htaccess file?
-excerpt: This guide explains how else you can use the .htaccess file
-id: '1972'
+title: Using .htaccess for advanced purposes
+excerpt: Find out what else you can do with the .htaccess file
 slug: what_else_can_you_do_with_the_htaccess_file
 legacy_guide_number: g1972
+section: 'Redirection and authentication'
 ---
 
 
 ## Prevent the content of a directory from being listed
-To prevent users from listing all the files contained in a directory in the absence of an index (.cgi, .html, .php etc ....), create an .htaccess file containing the following line:
+To prevent users from listing all the files contained in a directory in the absence of an index (.cgi, .html, .php etc.), create an .htaccess file containing the following line:
 
 
 ```
@@ -81,7 +81,7 @@ If that doesn't work, check the Internet Explorer properties > Advanced tab and 
 
 
 ## Specify a different index file
-The server default for a directory's default file is index.html, index.htm or index.php. If you want to set your DirectoryIndex to another file,you can insert the code format to your .htaccess file:
+The server default for a directory's default file is index.html, index.htm or index.php. If you want to set your DirectoryIndex to another file, you can insert the code format to your .htaccess file:
 
 
 ```
@@ -101,12 +101,4 @@ DirectoryIndex home.html
 
 ## Redirections
 To do this, click on: [This link](https://www.ovh.co.uk/g1339.redirection-nom-de-domaine#redirection_web_via_le_htaccess)
-
-
-## URL rewriting
-For URL rewriting, click on: [This link](https://www.ovh.co.uk/g1971.reecriture_durl_grace_au_mod_rewrite)
-
-
-## 
-Find out all about the .htaccess file [Here](https://www.ovh.co.uk/g1967.mutualise_tout_sur_le_fichier_htaccess)
 

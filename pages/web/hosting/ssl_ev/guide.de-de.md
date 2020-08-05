@@ -1,7 +1,8 @@
 ---
 title: Ein EV SSL-Zertifikat auf Ihrer Website einrichten
 slug: ev-ssl
-excerpt: Das EV SSL-Zertifikat garantiert Ihren Nutzern die rechtliche Existenz des Unternehmens und belegt die absolute Vertrauenswurdigkeit Ihrer Seite - auch fur Einkaufe im Internet.
+excerpt: Das EV SSL-Zertifikat garantiert Ihren Nutzern die rechtliche Existenz des Unternehmens und belegt die absolute Vertrauenswürdigkeit Ihrer Seite
+section: 'SSL'
 ---
 
 

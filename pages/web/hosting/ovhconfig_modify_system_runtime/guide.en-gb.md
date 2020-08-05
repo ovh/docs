@@ -2,6 +2,7 @@
 title: 'Modifying the configuration of a Web Hosting plan'
 slug: modify_your_web_hosting_systems_runtime_environment
 excerpt: 'Find out how to modify the configuration of an OVH Web Hosting plan'
+section: 'Web Hosting configuration'
 legacy_guide_number: g2149
 ---
 

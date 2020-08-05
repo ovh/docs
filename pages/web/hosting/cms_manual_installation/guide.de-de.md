@@ -1,9 +1,10 @@
 ---
 title: 'Manuelle Installation eines CMS auf Ihrem Webhosting'
 excerpt: 'Erfahren Sie mehr über einige der kompatiblen CMS für Webhostings'
-id: '1375'
 slug: webhosting_manuelle_installation_eines_cms_systems
 legacy_guide_number: g1375
+section: 'CMS'
+order: 2
 ---
 
 **Letzte Aktualisierung am 04.02.2020**
