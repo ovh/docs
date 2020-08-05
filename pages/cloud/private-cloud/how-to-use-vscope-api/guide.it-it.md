@@ -45,21 +45,21 @@ Per recuperarle tramite APIv6 è necessario eseguire queste tre chiamate:
 
 #### Filer
 
-> \[!api]
+> [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
 >
 
 #### Host
 
-> \[!api]
+> [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}
 > 
 
 #### Macchine virtuali
 
-> \[!api]
+> [!api]
 > 
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
 > 
@@ -74,7 +74,7 @@ Per accedere al servizio **Metrics Data Platforms** è necessario disporre di un
 
 Per recuperare il codice di un utente specifico, effettua questa chiamata APIv6:
 
-> \[!api]
+> [!api]
 > 
 > @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
 > 
