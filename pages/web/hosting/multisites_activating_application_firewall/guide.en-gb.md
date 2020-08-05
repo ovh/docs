@@ -1,5 +1,5 @@
 ---
-title: 'Activating an application firewall'
+title: 'Activating the application firewall'
 excerpt: 'Find out how to activate the application firewall for a Web Hosting'
 id: '1937'
 slug: web_hosting_activating_an_application_firewall
