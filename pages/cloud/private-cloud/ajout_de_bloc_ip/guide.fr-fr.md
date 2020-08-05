@@ -7,7 +7,7 @@ section: Fonctionnalités OVH
 order: 01
 ---
 
-**Dernière mise à jour le 25/06/2020**
+**Dernière mise à jour le 05/08/2020**
 
 ## Objectif
 
@@ -65,6 +65,10 @@ Plusieurs champs seront à remplir pour la création de votre bloc IP
 Après avoir confirmé la dernière étape, vous obtenez le bon de commande de votre bloc IP. Si celui-ci est conforme à votre souhait, il vous suffit de le payer avec les moyens de paiement proposés en bas de page afin que celui-ci soit livré.
 
 ### Migrer un bloc IP entre deux Hosted Private Cloud
+
+<br>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
 
 La migration d'un bloc d'IP nécessite de déplacer manuellement les blocs via l'APIv6 OVHcloud.
 
