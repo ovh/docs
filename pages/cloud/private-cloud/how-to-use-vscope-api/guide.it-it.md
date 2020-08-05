@@ -1,27 +1,32 @@
 ---
-title: 'Utilizzare l’API di vScope'
+title: Utilizzare l’API di vScope
 slug: vscopeapi
 excerpt: 'Come utilizzare i dati di monitoraggio nelle tue applicazioni tramite l’API vScope'
 section: 'Servizi e opzioni OVH'
 order: 1
 ---
 
-**Ultimo aggiornamento: 09/12/2019**
+**Ultimo aggiornamento: 25/11/2019**
 
 ## Obiettivo
 
-Per ogni servizio Private Cloud, OVHcloud mette a disposizione il tool VScope, uno strumento di monitoraggio per macchine virtuali e infrastrutture.
+Per ogni servizio Private Cloud, OVHcloud mette a disposizione il tool **vScope**, uno strumento di monitoraggio per macchine virtuali e infrastrutture.
 
-Si tratta di una pagina Web che contiene tutte le informazioni utili relative alle proprie risorse, disponibili anche via APIv6 e API Metrics.
+È una pagina Web che contiene tutte le informazioni utili relative alle proprie risorse, disponibili anche via APIv6 e API Metrics.
 
 **Questa guida ti mostra come recuperare i valori monitorati via API.**
+
+## Prerequisiti
+
+- Un’[infrastruttura Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/)
+- Essere connesso all’interfaccia di gestione vScope
 
 ## Procedura
 
 vScope mette a disposizione due tipi di informazioni:
 
 - **dati live**, relativi allo stato dei diversi componenti in un istante T
-- **grafici**, che rappresentano lo storico delle prestazioni dei diversi componenti (ad esempio, CPU e RAM di una macchina virtuale)
+- grafici, che rappresentano lo storico delle prestazioni dei diversi componenti (ad esempio, CPU e RAM di una macchina virtuale)
 
 
 ### Raccogli i dati live
@@ -40,21 +45,21 @@ Per recuperarle tramite APIv6 è necessario eseguire queste tre chiamate:
 
 #### Filer
 
-> [!api]
+> \[!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
 >
 
 #### Host
 
-> [!api]
+> \[!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}
 > 
 
 #### Macchine virtuali
 
-> [!api]
+> \[!api]
 > 
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
 > 
@@ -67,9 +72,9 @@ La procedura descritta in questa guida è relativa all’utilizzo del protocollo
 
 Per accedere al servizio **Metrics Data Platforms** è necessario disporre di un token di lettura: la nuova versione di vScope, infatti, ne prevede uno per ogni utilizzatore dell’infrastruttura. 
 
-Per recuperare il codice di lettura di un utente specifico, effettua questa chiamata APIv6: 
+Per recuperare il codice di un utente specifico, effettua questa chiamata APIv6:
 
-> [!api]
+> \[!api]
 > 
 > @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
 > 
@@ -100,8 +105,8 @@ Per ogni tipo di componente è disponibile una lista di metriche, che richiede u
 | vscope.host.mem.usage.perc | Percentuale di utilizzo della memoria dell’host | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- host: 172.17.86.51 |
 | vscope.host.net.tx | Utilizzo della rete dell’host in uscita | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- host: 172.17.86.51<br>\- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
 | vscope.host.net.rx | Utilizzo della rete dell’host in entrata | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- host: 172.17.86.51<br>\- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
-| vscope.host.net.packetstx | Numero di pacchetti di rete trasmessi dall’host | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- host: 172.17.86.51<br>\- nicname: vmnic0/vmnic1/vmnic2/vmnic3 |
-| vscope.host.net.packetsrx | Numero di pacchetti di rete ricevuti dall’host | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- host: 172.17.86.51<br>\- nicname: vmnic0/vmnic1/vmnic2/vmnic3 |
+| vscope.host.net.packetstx | Numero di pacchetti di rete trasmessi dall’host | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- host: 172.17.86.51<br>\- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
+| vscope.host.net.packetsrx | Numero di pacchetti di rete ricevuti dall’host | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- host: 172.17.86.51<br>\- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
 
 #### Macchine Virtuali
 
@@ -149,7 +154,7 @@ Ecco la descrizione dei campi impiegati:
 
 - read: user utilizzato per effettuare la richiesta (sarà sempre “read”)
 - XXXXXXXXXXXX_XXXXXXXXXXXZZZZZZZZZZZ_YYYYYYYYYYYYYY-XXXXXXXXX: token recuperato precedentemente via APIv6
-- opentsdb.gra1-ovh.metrics.ovh.net: endpoint OpenTSDB, anch’esso recuperato via APIv6. Questo endpoint può variare in base alla localizzazione
+- opentsdb.gra1-ovh.metrics.ovh.net: endpoint OpenTSDB, anch’esso recuperato via APIv6. Questo endpoint può variare in base alla localizzazione.
 - start: timestamp corrispondente alla data di inizio della richiesta
 - queries: tabella con le metriche da recuperare (con una sola richiesta è possibile recuperare più metriche)
 - metric: nome della metrica da recuperare
@@ -159,7 +164,7 @@ Ecco la descrizione dei campi impiegati:
 
 Questa lista di parametri non è esaustiva e, oltre a quelli indicati, ne sono disponibili altri. Per maggiori informazioni, consulta la documentazione ufficiale dell’API OpenTSDB.
 
-Il risultato restituito sarà un file JSON con il riepilogo della richiesta e, nei campi **dps**, i timestamp associati ai diversi valori. 
+Il risultato restituito sarà un file json con il riepilogo della richiesta e, nei campi **dps**, i timestamp associati ai diversi valori. 
 Esempio:
 
 ```json
@@ -259,4 +264,5 @@ Per maggiori informazioni sulle richieste OpenTSDB, consulta la documentazione d
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+
