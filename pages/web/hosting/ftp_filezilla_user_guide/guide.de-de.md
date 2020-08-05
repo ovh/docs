@@ -1,9 +1,9 @@
 ---
-title: 'Webhosting: Hilfe zur Verwendung von FileZilla'
+title: 'Verwendung von FileZilla'
 slug: webhosting_hilfe_zur_verwendung_von_filezilla
 excerpt: 'In dieser Hilfe wird die Verwendung des FileZilla FTP-Programms beschrieben.'
-id: '1380'
 legacy_guide_number: g1380
+section: 'FTP und SSH'
 ---
 
 ## Vorstellung
