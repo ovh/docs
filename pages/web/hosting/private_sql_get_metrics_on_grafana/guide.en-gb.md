@@ -1,12 +1,11 @@
 ---
-title: Get Private SQL metrics on Grafana
-excerpt: Get Private SQL metrics on Grafana
+title: Using Grafana
+excerpt: How to get Private SQL metrics on Grafana
 slug: get_private_sql_metrics_on_grafana
 legacy_guide_number: g2057
+section: 'Private SQL'
 ---
 
-
-## 
 
 ## What is Docker?
 Docker is an open-source project that automates the deployment of applications within software containers.

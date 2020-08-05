@@ -4,7 +4,7 @@ excerpt: 'In dieser Anleitung erfahren Sie, wie Sie ein Backup in die Datenbank 
 id: '1393'
 slug: webhosting_import_einer_mysql-datenbank
 legacy_guide_number: g1393
-section: Datenbanken
+section: 'Datenbanken'
 order: 4
 ---
 

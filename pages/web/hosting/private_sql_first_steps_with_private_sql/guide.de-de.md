@@ -2,7 +2,8 @@
 title: Erste Schritte mit SQL Private
 slug: erste-schritte-mit-sql-private
 excerpt: Hier erfahren Sie, wie Sie Ihre SQL Private Datenbanken verwenden
-section: SQL Private
+section: 'SQL Private'
+order: 1
 ---
 
 **Stand 12.03.2018**
