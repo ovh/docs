@@ -54,7 +54,7 @@ Vous pouvez configurer jusqu'à **20 règles par adresse IP**.
 >
 > Le pare-feu s’active automatiquement à chaque attaque DDoS et ne peut pas être désactivé avant la fin de l'attaque. C'est pourquoi il est important de maintenir à jour les règles de pare-feu.
 > Par défaut, vous n’avez pas de règles configurées. Toutes les connexions peuvent donc être établies.
-> Si vous en possédez, nous vous recommandons de les vérifier régulièrement, même si le pare-feu est désactivé.
+> Si vous avez déjà des règles, nous vous recommandons de les vérifier régulièrement, même si le pare-feu est désactivé.
 > 
 
 
