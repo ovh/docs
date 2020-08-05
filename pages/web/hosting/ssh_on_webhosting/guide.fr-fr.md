@@ -57,7 +57,7 @@ Dès lors, il existe deux possibilités pour vous connecter selon la méthode qu
 #### 3.1 Depuis un terminal
 
 > [!warning]
-> Il n'y a pas d'accès « super utilisateur » (ou « root ») via SSH sur nos hébergement mutualisé.
+> Il n'y a pas d'accès « super utilisateur » (ou « root ») via SSH sur nos offres d'hébergement mutualisé.
 
 Une fois le terminal ouvert, utilisez la commande suivante en remplaçant les éléments « sshlogin », « sshserver » et « connectionport » par ceux correspondant à vos identifiants SSH. 
 
