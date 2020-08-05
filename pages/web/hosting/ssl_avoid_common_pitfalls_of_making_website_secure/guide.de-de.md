@@ -1,9 +1,10 @@
 ---
-title: SSL-Probleme mit meiner Webseite vermeiden
-excerpt: SSL-Probleme mit meiner Webseite vermeiden
+title: SSL-Probleme mit einer Webseite vermeiden
+excerpt: SSL-Probleme mit einer Webseite vermeiden
 id: '2220'
 slug: ssl-probleme_mit_meiner_webseite_vermeiden
 legacy_guide_number: g2220
+section: 'SSL'
 ---
 
 
