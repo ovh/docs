@@ -109,6 +109,6 @@ You can also modify an individual DNS record’s TTL. You can only do this for o
 
 [Adding an SPF record to your domain name’s configuration](../domains/web_hosting_the_spf_record/){.external}.
 
-[Protect your data from DNS cache poisoning with DNSSEC](https://www.ovh.com/asia/domains/dnssec_service.xml){.external}.
+[Protect your data from DNS cache poisoning with DNSSEC](https://www.ovh.com/world/domains/dnssec_service.xml){.external}.
 
 Join our community of users on <https://community.ovh.com/en/>.

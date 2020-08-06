@@ -49,7 +49,7 @@ Because of this, we offer two different types of migration procedure:
 
 #### Step 1: Order your OVHcloud web hosting plan
 
-Order your web hosting plan from the [OVHcloud](https://www.ovh.com/asia/){.external} website. Ensure that you do not submit a domain name transfer request — you will do this at a later stage. Once your payment has been received, your web hosting plan will be set up. You will receive a confirmation email once it has been set up.
+Order your web hosting plan from the [OVHcloud](https://www.ovh.com/world/){.external} website. Ensure that you do not submit a domain name transfer request — you will do this at a later stage. Once your payment has been received, your web hosting plan will be set up. You will receive a confirmation email once it has been set up.
 
 #### Step 2: Transfer your website
 
@@ -100,7 +100,7 @@ Now, you just need to transfer your domain name to OVHcloud! You will need to ca
 |---|---|---|
 |1|Unlock your domain|When a domain is locked, it cannot be transferred to another registrar like OVHcloud. For this reason, you will need to unlock it in advance through your current domain name registrar.|
 |2|Retrieve the transfer code|The transfer code will be issued by your current domain name registrar when you unlock your domain.|
-|3|Submit the transfer order with OVHcloud|On the [OVHcloud](https://www.ovh.com/asia){.external} website, submit your transfer order. You will need to enter the transfer code you have received.|
+|3|Submit the transfer order with OVHcloud|On the [OVHcloud](https://www.ovh.com/world){.external} website, submit your transfer order. You will need to enter the transfer code you have received.|
 |4|Pay for the order|Once your payment has been received, the domain name transfer process will begin.|
 |5|Validate, or await validation of the transfer|This step will vary, depending on your domain name extension. When validation is required, an email request will usually be sent which will explain the procedure. You will need to follow these steps, which will finish with a transfer request confirmation.| 
 
@@ -116,7 +116,7 @@ You will need to follow several sub-steps to do this:
 |---|---|---|
 |1|Unlock your domain|When a domain is locked, it cannot be transferred to another registrar like OVHcloud. For this reason, you will need to unlock it in advance through your current domain name registrar.|
 |2|Retrieve the transfer code|The transfer code will be issued by your current domain name registrar when you unlock your domain.|
-|3|Complete the order with OVHcloud|On the [OVHcloud](https://www.ovh.com/asia){.external} website, submit your domain name transfer order and order your web hosting plan. You will need to enter the transfer code you have received. When you choose your DNS servers, enter your current service provider’s DNS servers.|
+|3|Complete the order with OVHcloud|On the [OVHcloud](https://www.ovh.com/world){.external} website, submit your domain name transfer order and order your web hosting plan. You will need to enter the transfer code you have received. When you choose your DNS servers, enter your current service provider’s DNS servers.|
 |4|Pay for the order|Once your payment has been received, the domain name transfer process will begin and your web hosting plan will be set up. **Depending on your domain name registrar’s internal policy, your domain name’s DNS servers may be suspended, making all services associated with your domain name (i.e. your website and email addresses) inaccessible.**|
 |5|Validate, or await validation of the transfer|This step will vary, depending on your domain name extension. When validation is required, an email request will usually be sent which will explain the procedure. You will need to follow these steps, which will finish with a transfer request confirmation.|
 

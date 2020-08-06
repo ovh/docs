@@ -15,8 +15,8 @@ You can host several websites on a single Web Hosting plan, and you can do this 
 
 ## Requirements
 
-- a compatible [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/){.external}
-- one or more [domain names](https://www.ovh.com/asia/domains/){.external}
+- a compatible [OVHcloud Web Hosting plan](https://www.ovh.com/world/web-hosting/){.external}
+- one or more [domain names](https://www.ovh.com/world/domains/){.external}
 - the rights to modify configuration for the domains (via their DNS zones)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
@@ -56,17 +56,17 @@ If the domain name does not appear in the list, it is considered external (to yo
 > This step only applies if you have selected “Add an OVHcloud-registered domain”. For non-OVHcloud registered domain names, go to [Step 3.2: Add a non-OVHcloud registered domain name](./#step-32-add-an-non-ovhcloud-registered-domain){.external}.
 >
 
-You will now need to customise the way you add your domain. Depending on the [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/){.external} you have purchased, some options may not be available.
+You will now need to customise the way you add your domain. Depending on the [OVHcloud Web Hosting plan](https://www.ovh.com/world/web-hosting/){.external} you have purchased, some options may not be available.
 
 |Information|Description|
 |---|---|
 |Domain|The domain that you have selected will be automatically entered by default. You can also add subdomains (e.g. blog.mypersonaldomain.ovh), and create the corresponding www subdomain at the same time (e.g. www.mypersonaldomain.ovh). This domain will be the website that you want to put online.|
 |Root directory|Defines the directory where the domain will be hosted on your storage space. This space is where the website files will be put online. For example, for blog.mypersonaldomain.ovh, the root directory will be ‘blog’. If the directory does not exist, it will be created automatically.|
 |Enable IPv6|Enables IPv6 protocol on the selected domain.|
-|SSL|Provides you with a secure connection (HTTPS://) on the selected domain. Find out more about this on [our SSL page](https://www.ovh.com/asia/web-hosting/shared-ssl.xml){.external}. By enabling SSL and the CDN (Content Delivery Network), you can also benefit from **HTTP2** protocol (HTTP2 enabled by default on Gravelines).|
-|Enable CDN|Enables the CDN (which replicates and caches your website’s static elements, e.g. images) on the selected domain. To find out more about this, go to [our CDN page](https://www.ovh.com/asia/web-hosting/cdn.xml){.external}. By enabling SSL and the CDN, you can also benefit from **HTTP2** protocol (HTTP2 enabled by default on Gravelines).|
-|Enable firewall|Enables a firewall (request analysis) for the selected domain. To find out more about this, go to [our ModSecurity page](https://www.ovh.com/asia/web-hosting/mod_security.xml){.external}.|
-|Separate logs|Activates a new space for logs on the selected domain. You will need to choose a domain name from the list. The selected domain will be used as an access name for this new space.  To find out more about this, go to [our Web Statistics page](https://www.ovh.com/asia/web-hosting/website_statistics.xml){.external}.|
+|SSL|Provides you with a secure connection (HTTPS://) on the selected domain. Find out more about this on [our SSL page](https://www.ovh.com/world/web-hosting/shared-ssl.xml){.external}. By enabling SSL and the CDN (Content Delivery Network), you can also benefit from **HTTP2** protocol (HTTP2 enabled by default on Gravelines).|
+|Enable CDN|Enables the CDN (which replicates and caches your website’s static elements, e.g. images) on the selected domain. To find out more about this, go to [our CDN page](https://www.ovh.com/world/web-hosting/cdn.xml){.external}. By enabling SSL and the CDN, you can also benefit from **HTTP2** protocol (HTTP2 enabled by default on Gravelines).|
+|Enable firewall|Enables a firewall (request analysis) for the selected domain. To find out more about this, go to [our ModSecurity page](https://www.ovh.com/world/web-hosting/mod_security.xml){.external}.|
+|Separate logs|Activates a new space for logs on the selected domain. You will need to choose a domain name from the list. The selected domain will be used as an access name for this new space.  To find out more about this, go to [our Web Statistics page](https://www.ovh.com/world/web-hosting/website_statistics.xml){.external}.|
 
 Once you have entered this information, click `Next`{.action}. Then check the summary that pops up.
 
@@ -88,7 +88,7 @@ Now that you have added the domain name, go to [Step 4: Put your website online]
 > You will only need to follow this step if you have selected “Add a non-OVHcloud registered domain name” (domains registered with a domain registrar other than OVHcloud, which you cannot manage from the OVHcloud Control Panel). For an OVHcloud-registered domain, go back to [Step 3.1: Add an OVHcloud-registered domain](./#step-31-add-an-ovhcloud-registered-domain){.external}.
 >
 
-You will now need to customise the way you add your domain. Please note that some of the options included in your [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/){.external} cannot be enabled during this process. You will need to finalise this operation in order to activate the options, by changing the Multisite configuration when it is added.
+You will now need to customise the way you add your domain. Please note that some of the options included in your [OVHcloud Web Hosting plan](https://www.ovh.com/world/web-hosting/){.external} cannot be enabled during this process. You will need to finalise this operation in order to activate the options, by changing the Multisite configuration when it is added.
 
 |Information|Description|
 |---|---|
@@ -130,7 +130,7 @@ However, if you would like to set up your website manually, you can put it onlin
 >
 > If you would like to add several websites, you will need to repeat this step as required.
 >
-> We recommend taking care with the number of websites you host on your Web Hosting plan. The more websites you host, the higher the demand will be on your allocated resources. [Our Web Hosting page](https://www.ovh.com/asia/web-hosting/){.external} shows the number of websites you can host on your plan.
+> We recommend taking care with the number of websites you host on your Web Hosting plan. The more websites you host, the higher the demand will be on your allocated resources. [Our Web Hosting page](https://www.ovh.com/world/web-hosting/){.external} shows the number of websites you can host on your plan.
 >
 
 

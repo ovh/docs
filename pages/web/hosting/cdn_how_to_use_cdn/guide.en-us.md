@@ -24,7 +24,7 @@ In order for this to work, each server stores a part of your website in its cach
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
-- an [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/)
+- an [OVHcloud Web Hosting plan](https://www.ovh.com/world/web-hosting/)
 
 ## Instructions
 
