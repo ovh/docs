@@ -16,7 +16,7 @@ order: 05
 
 ## Procedura
 
-### Spostare il disco di una macchina virtuale
+### Sposta il disco di una macchina virtuale
 
 Per migrare i file di una macchina virtuale verso un altro datastore, è sufficiente cliccare con il tasto destro sulla VM in uso e selezionare `Migrate...`
 
