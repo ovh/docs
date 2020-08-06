@@ -18,7 +18,7 @@ Si quiere utilizar su [servidor dedicado](https://www.ovh.com/world/es/servidore
 
 * Tener un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/){.external} con Windows instalado.
 * Disponer de un [dominio](https://www.ovh.com/world/es/dominios/){.external} y poder administrarlo desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
-* Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## Procedimiento

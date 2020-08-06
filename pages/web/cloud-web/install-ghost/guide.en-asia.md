@@ -27,13 +27,13 @@ In this tutorial, we will set up a blog with Ghost on an OVH Cloud Web platform,
 - a [Cloud Web hosting plan](https://www.ovh.co.uk/web-hosting/cloud-web.xml){.external}
 - Node.js enabled as a runtime environment
 - the domain name added as a multisite, and Node.js defined as its runtime environment
-- access to the `Web`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the `Web`{.action} section of the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
 ### Step 1: Enable Node.js as a runtime environment.
 
-To access your Cloud Web hosting plan’s runtime environments, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click Web hosting in the services bar on the left-hand side, then choose the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime software applications`{.action} tab.
+To access your Cloud Web hosting plan’s runtime environments, log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Click Web hosting in the services bar on the left-hand side, then choose the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime software applications`{.action} tab.
 
 The table that appears will list the runtime environments currently added. Check that Node.js has been enabled as the runtime environment. If it has been enabled, proceed to step 2: [Link Node.js to a multisite](./#step-2-link-nodejs-to-a-multisite).
 
@@ -249,7 +249,7 @@ You have now finished installing and configuring Ghost. You now just need to res
 
 ### Step 7: Restart the Node.js daemon.
 
-To restart the Node.js daemon, go back to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Go to the `Multisite`{.action} tab, click on the cogwheel button to the right of the domain name concerned, then click `Restart`{.action}.
+To restart the Node.js daemon, go back to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Go to the `Multisite`{.action} tab, click on the cogwheel button to the right of the domain name concerned, then click `Restart`{.action}.
 
 Once you have done this, your application will be accessible via the domain name you have selected in your multisite’s configuration.
 

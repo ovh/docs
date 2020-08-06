@@ -16,7 +16,7 @@ Cada servicio de OVH suele tener asociados distintos contactos. Estos contactos 
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 - Tener acceso a la dirección de correo electrónico que se indica en el perfil de su cuenta.
 - Tener los permisos necesarios sobre el servicio correspondiente.
 - Conocer el ID de cliente del nuevo contacto (para poder modificarlo).
@@ -27,7 +27,7 @@ Cada servicio de OVH suele tener asociados distintos contactos. Estos contactos 
 
 ### Acceder a la gestión de los contactos 
 
-En el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `Mis contactos`{.action} en el menú de la izquierda.
+En el [área de cliente de OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `Mis contactos`{.action} en el menú de la izquierda.
 
 ![Gestión de contactos](images/contactmanagement0.png){.thumbnail}
 
@@ -91,7 +91,7 @@ En caso de que uno de los contactos no haya recibido el mensaje de correo electr
 
 ![Gestión de contactos](images/contactmanagement5.png){.thumbnail}
 
-Si solo uno de los contactos valida la solicitud de cambio, aparecerá un mensaje informándole de que la solicitud está pendiente de validación por parte del otro contacto. Asimismo, si el contacto acaba de validar la solicitud de cambio, es posible que la información que se muestra en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} tarde unos minutos en actualizarse.
+Si solo uno de los contactos valida la solicitud de cambio, aparecerá un mensaje informándole de que la solicitud está pendiente de validación por parte del otro contacto. Asimismo, si el contacto acaba de validar la solicitud de cambio, es posible que la información que se muestra en el [área de cliente de OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} tarde unos minutos en actualizarse.
 
 ![Gestión de contactos](images/contactmanagement6.png){.thumbnail}
 

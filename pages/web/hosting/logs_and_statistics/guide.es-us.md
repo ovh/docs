@@ -9,7 +9,7 @@ section: Optimización del sitio web
 
 
 ## Conexión al área de cliente
-Conéctese al [área de cliente](hhttps://www.ovh.com/auth/?action=gotomanager) con su ID de cliente y contraseña.
+Conéctese al [área de cliente](hhttps://ca.ovh.com/auth/?action=gotomanager) con su ID de cliente y contraseña.
 
 Seleccione el dominio para el que quiera consultar las estadísticas, en la sección «Alojamientos» del menú de la izquierda.
 

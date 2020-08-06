@@ -17,7 +17,7 @@ Vous avez la possibilité de créer à tout moment une sauvegarde d'une instance
 ## Prérequis
 
 - [Avoir créé une instance Public Cloud depuis votre compte](../creer-instance-espace-client/).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 

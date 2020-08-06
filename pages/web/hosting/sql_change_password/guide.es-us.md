@@ -17,7 +17,7 @@ Una base de datos (también llamada *database*, DB o BD) permite almacenar eleme
 ## Requisitos
 
 - Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.es/hosting/){.external}.
-- Tener acceso a la gestión del alojamiento web desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Tener acceso a la gestión del alojamiento web desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 > [!warning]
 >
@@ -41,7 +41,7 @@ En la actualidad, prácticamente todos los sistemas de gestión de contenidos ut
 
 ### 2. Acceder a la administración de las bases de datos del alojamiento
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting.
 

@@ -18,9 +18,9 @@ A menudo, cuando no es posible enviar o recibir un mensaje de correo electrónic
 
 Al enviar un mensaje de correo electrónico en su cuenta de correo, ¿recibe un mensaje de error? En caso afirmativo, analice con atención este mensaje, ya que podría indicarle el motivo del fallo (buzón lleno, no existente...). 
 
-También puede comprobar si el dominio está entregando los mensajes en el destino correcto. Para ello, desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager), seleccione la zona DNS del dominio y compruebe la configuración de los registros MX. Estos registros deben estar en formato «mx*.mail.ovh.net.» (sustituya * por un número entre 0 y 3). Si los registros MX son diferentes, es posible que tenga una solución de correo con un operador diferente a OVHcloud. 
+También puede comprobar si el dominio está entregando los mensajes en el destino correcto. Para ello, desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager), seleccione la zona DNS del dominio y compruebe la configuración de los registros MX. Estos registros deben estar en formato «mx*.mail.ovh.net.» (sustituya * por un número entre 0 y 3). Si los registros MX son diferentes, es posible que tenga una solución de correo con un operador diferente a OVHcloud. 
  
-**Ideas y consejos**:  Si no puede conectarte a su [webmail](https://www.ovh.com/world/es/mail/){.external}, puede que la contraseña no sea la correcta. Compruébela y, si fuera necesario, modifíquela desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Para más información, consulte la siguiente documentación: [Uso avanzado del correo de OVHcloud](../uso_avanzado_del_correo_de_ovh).
+**Ideas y consejos**:  Si no puede conectarte a su [webmail](https://www.ovh.com/world/es/mail/){.external}, puede que la contraseña no sea la correcta. Compruébela y, si fuera necesario, modifíquela desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager). Para más información, consulte la siguiente documentación: [Uso avanzado del correo de OVHcloud](../uso_avanzado_del_correo_de_ovh).
  
 ### ¿Cómo configurar mi dirección de correo electrónico y utilizarla con el webmail? 
 
@@ -32,20 +32,20 @@ Gracias al [webmail](https://www.ovh.com/world/es/mail/){.external}, podrá acce
 
 ### ¿Cómo gestionar mis servicios de correo electrónico? 
 
-Puede gestionar todas sus direcciones de correo electrónico desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Una vez conectado, acceda al producto correspondiente. Puede modificar la contraseña de sus direcciones de correo, comprobar el porcentaje de capacidad utilizado, crear nuevas direcciones o eliminar las existentes. 
+Puede gestionar todas sus direcciones de correo electrónico desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager). Una vez conectado, acceda al producto correspondiente. Puede modificar la contraseña de sus direcciones de correo, comprobar el porcentaje de capacidad utilizado, crear nuevas direcciones o eliminar las existentes. 
 
-**Ideas y consejos**: En los planes de correo electrónico MX Plan, puede delegar la gestión de una cuenta de correo a otra cuenta de OVHcloud, pero manteniendo el control de la misma. Para ello, solo tiene que configurar una delegación desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Acceda a la sección `Correo electrónico` en la columna de la izquierda y seleccione el dominio correspondiente. A continuación, abra la pestaña `Correo electrónico`{.action} y, a continuación, seleccione una opción:
+**Ideas y consejos**: En los planes de correo electrónico MX Plan, puede delegar la gestión de una cuenta de correo a otra cuenta de OVHcloud, pero manteniendo el control de la misma. Para ello, solo tiene que configurar una delegación desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager). Acceda a la sección `Correo electrónico` en la columna de la izquierda y seleccione el dominio correspondiente. A continuación, abra la pestaña `Correo electrónico`{.action} y, a continuación, seleccione una opción:
 
 * `Gestionar los elementos compartidos por todas las direcciones de correo electrónico`{.action}  en el lado derecho si desea delegar la administración de todas las cuentas de este dominio.
 * `Gestión de la delegación`{.action} si desea delegar la gestión de una cuenta específica (haga clic en `...`{.action} junto a la cuenta).
 
 ### ¿Cómo limitar la recepción de spam? 
 
-Si desea limitar la recepción del spam, puede configurar filtros de correo (llamados «Filtros» en la solución MX Plan) para eliminar o mover estos mensajes de correo a la carpeta de correo no deseado. Para ello, desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager), acceda a la sección `Correo electrónico` en la columna de la izquierda y seleccione el dominio correspondiente. A continuación, abra la pestaña `Correo electrónico`{.action} y, en la columna «Filtros», haga clic en el icono de «Gestión de los filtros de la cuenta». 
+Si desea limitar la recepción del spam, puede configurar filtros de correo (llamados «Filtros» en la solución MX Plan) para eliminar o mover estos mensajes de correo a la carpeta de correo no deseado. Para ello, desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager), acceda a la sección `Correo electrónico` en la columna de la izquierda y seleccione el dominio correspondiente. A continuación, abra la pestaña `Correo electrónico`{.action} y, en la columna «Filtros», haga clic en el icono de «Gestión de los filtros de la cuenta». 
 
 Si no ve esta columna, se pueden crear filtros de correo basura configurando reglas de la bandeja de entrada en el [webmail](https://www.ovh.com/world/es/mail/){.external}. Consulte [esta guía](../../microsoft-collaborative-solutions/crear-reglas-de-bandeja-de-entrada-en-owa/#ejemplo-2-filtrado-de-mensajes-de-correo-electronico-no-deseados-spam) para obtener instrucciones detalladas. 
 
-**Ideas y consejos**:  Si configura un filtro para limitar la recepción de spam, es posible que los correos electrónicos legítimos también sean considerados como spam («falsos positivos»). En ese caso, le recomendamos que abra un tíquet de asistencia en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Nuestro equipo de soporte adoptará las medidas necesarias para que estos correos legítimos no sean considerados como spam.
+**Ideas y consejos**:  Si configura un filtro para limitar la recepción de spam, es posible que los correos electrónicos legítimos también sean considerados como spam («falsos positivos»). En ese caso, le recomendamos que abra un tíquet de asistencia en su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager). Nuestro equipo de soporte adoptará las medidas necesarias para que estos correos legítimos no sean considerados como spam.
 
 ### ¿La solución Office 365 Pro Plus incluye licencia Skype? 
 
