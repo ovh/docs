@@ -9,9 +9,9 @@ section: 'Network Management'
 
 ## Objective
 
-The [vRack](https://www.ovh.com/sg/solutions/vrack/){.external} allows you to configure private network addressing between two or more OVHcloud [Dedicated Servers](https://www.ovh.com/sg/dedicated_servers/){.external}. But it also allows you to add [Public Cloud instances](https://www.ovh.com/sg/public-cloud/instances/){.external} to your private network so that you can create an infrastructure of both physical and virtual resources.
+The [vRack](https://www.ovh.com/sg/solutions/vrack/){.external} allows you to configure private network addressing between two or more OVHcloud [Dedicated Servers](https://www.ovh.com/sg/dedicated_servers/){.external}. But it also allows you to add [Public Cloud instances](https://www.ovhcloud.com/en-sg/public-cloud/){.external} to your private network so that you can create an infrastructure of both physical and virtual resources.
 
-**This guide will show you how to configure private networking between a [Public Cloud instance](https://www.ovh.com/sg/public-cloud/instances/){.external} and a [Dedicated Server](https://www.ovh.com/sg/dedicated_servers/){.external}.**
+**This guide will show you how to configure private networking between a [Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/){.external} and a [Dedicated Server](https://www.ovh.com/sg/dedicated_servers/){.external}.**
 
 
 ## Requirements
@@ -76,7 +76,7 @@ Finally, choose your billing period  and then click the `Create an instance`{.ac
 
 ### Configure your network interfaces
 
-Next, configure the the network interfaces on your new [Public Cloud instance](https://www.ovh.com/sg/public-cloud/instances/){.external} and [Dedicated Server](https://www.ovh.com/sg/dedicated_servers/){.external} using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/){.external}.
+Next, configure the the network interfaces on your new [Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/){.external} and [Dedicated Server](https://www.ovh.com/sg/dedicated_servers/){.external} using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/){.external}.
 
 
 ## Go further
