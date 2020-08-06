@@ -47,7 +47,7 @@ Dans le cas contraire, pour réaliser la manipulation, connectez-vous à votre [
 >
 > Votre compte OVHcloud doit préalablement être contact administrateur et contact technique du service E-mail Pro ou Exchange vers lequel vous migrez.
 >
-> Pour plus plus d'information sur les changements de contacts, consulter notre guide [ « Gérer les contacts de ses services »](https://docs.ovh.com/fr/customer/gestion-des-contacts/){.external}.
+> Pour plus plus d'information sur les changements de contacts, consulter notre guide [« Gérer les contacts de ses services »](https://docs.ovh.com/fr/customer/gestion-des-contacts/){.external}.
 
 La migration peut être effectuée depuis deux interfaces :
 - **celle de l'assistant de configuration Hosted Exchange**, uniquement si vous venez de commander un service Hosted Exchange et que vous n'avez encore rien paramétré sur ce dernier ;
@@ -109,5 +109,11 @@ Si vous avez configuré l'un des comptes migrés sur un client de messagerie (co
 >
 
 ## Aller plus loin
+
+[Gérer les contacts de ses services](https://docs.ovh.com/fr/customer/gestion-des-contacts/){.external}.
+
+[Guides E-mail Pro](https://docs.ovh.com/fr/emails-pro/){.external}.
+
+[Guides Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
