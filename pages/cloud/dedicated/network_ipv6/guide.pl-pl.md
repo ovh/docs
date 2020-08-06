@@ -46,9 +46,9 @@ Jeśli instalujesz serwer przy użyciu udostępnionego przez OVHcloud szablonu s
 >
 > Przed wykonaniem poniższych kroków zalecamy wyłączenie narzędzi autoconf IPv6 i anonsowania routera, aby zapobiec wystąpieniu znanych problemów. W tym celu należy dodać następujące wiersze do pliku `sysctl.conf`, który znajduje się w katalogu /etc/sysctl.conf:
 > 
-> `net.IPv6.conf.all.autoconf=0`
+> `net.ipv6.conf.all.autoconf=0`
 > 
-> `net.IPv6.conf.all.accept_ra=0`
+> `net.ipv6.conf.all.accept_ra=0`
 > 
 > Po dodaniu wierszy można zastosować te reguły, wykonując następujące polecenie: `sh sysctl -p`.
 > 
