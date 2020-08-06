@@ -17,7 +17,7 @@ Il metodo di autenticazione a due fattori consente di proteggere l’accesso al 
 ## Prerequisiti
 
 - Disporre di un’infrastruttura [Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/) con l’opzione di [sicurezza avanzata](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) (inclusa nei servizi PCI-DSS e HDS)
-- Disporre di uno smartphone e di una applicazione di autenticazione (ad esempio Google Authenticator, Authy, OTP Auth...)
+- Disporre di uno smartphone e di un'applicazione di autenticazione (ad esempio Google Authenticator, Authy, OTP Auth...)
 
 ## Procedura
 
@@ -83,7 +83,7 @@ L’unica differenza consisterà nell’autonomia dell’utente per confermare i
 
 Queste applicazioni devono essere precedentemente autorizzate attraverso una politica di accesso al vCenter che può essere configurata nello [Spazio Cliente]( https://docs.ovh.com/it/private-cloud/spazio-cliente-private-cloud-ovh/#sicurezza).
 
-Queste applicazioni potranno accedere alle nostre infrastrutture ma non necessariamente supportare l’autenticazione a due fattori.
+Queste applicazioni potranno accedere alle nostre infrastrutture ma non supporteranno necessariamente l’autenticazione a due fattori.
 
 In questo caso sarà necessario creare una *whitelist* specifica per il *bypass* della doppia autenticazione.
 
