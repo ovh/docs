@@ -47,7 +47,8 @@ Dans le cas contraire, pour réaliser la manipulation, connectez-vous à votre [
 >
 > Votre compte OVHcloud doit préalablement être contact administrateur et contact technique du service E-mail Pro ou Exchange vers lequel vous migrez.
 >
-> Pour plus plus d'information sur les changements de contacts, consulter notre guide [« Gérer les contacts de ses services »](https://docs.ovh.com/fr/customer/gestion-des-contacts/){.external}.
+> Pour plus plus d'information sur les changements de contacts, consultez notre guide pour [gérer les contacts de ses services](../../customer/gestion-des-contacts/).
+>
 
 La migration peut être effectuée depuis deux interfaces :
 - **celle de l'assistant de configuration Hosted Exchange**, uniquement si vous venez de commander un service Hosted Exchange et que vous n'avez encore rien paramétré sur ce dernier ;
@@ -70,13 +71,13 @@ Si l'assistant de configuration ne s'affiche pas, les informations générales d
 
 #### Migration depuis l'interface MX Plan
 
-Pour réaliser la migration depuis cette interface, rendez-vous dans la section `E-mails`{.action} dans la barre de services à gauche de votre espace client OVHcloud. Choisissez alors le service portant le nom de domaine de vos adresses e-mail. Cliquez sur le logo en forme de roue dentée sur la ligne du compte e-mail concerné (également appelé compte source) puis sur `Migrer le compte`{.action}.
+Pour réaliser la migration depuis cette interface, rendez-vous dans la section `E-mails`{.action} dans la barre de services à gauche de votre espace client OVHcloud. Choisissez alors le service portant le nom de domaine de vos adresses e-mail. Cliquez sur le logo en forme d'engrenage sur la ligne du compte e-mail concerné (également appelé compte source) puis sur `Migrer le compte`{.action}.
 
 ![exchange](images/access_the_migration_tool.png){.thumbnail}
 
 Dans la fenêtre qui s'affiche, sélectionnez le service de destination (celui vers lequel vous souhaitez migrer l'adresse) puis cliquez sur `Suivant`{.action}. S'il possède au minimum un compte « libre » (c'est-à-dire encore non paramétré), la migration s'effectuera vers l'un de ces comptes. Dès lors, prenez connaissance des informations qui s'affichent, validez-les, puis cliquez sur `Suivant`{.action} afin de poursuivre la manipulation.
 
-Si vous ne possédez pas de compte « libre », un bouton `Commander des comptes`{.action} apparaîtra. Suivez les étapes, puis patientez le temps que ceux-ci soient installés pour effectuer de nouveau la manipulation.
+Si vous ne possédez pas de compte « libre », un bouton `Commander des comptes`{.action} apparaîtra. Suivez les étapes, puis patientez le temps que les comptes soient installés pour effectuer de nouveau la manipulation.
 
 Confirmez enfin le mot de passe de l'adresse e-mail source (celle que vous voulez migrer), puis cliquez sur `Migrer`{.action}. Cette manipulation sera à répéter autant de fois que nécessaire pour la migration d'autres comptes.
 
@@ -84,7 +85,7 @@ Confirmez enfin le mot de passe de l'adresse e-mail source (celle que vous voule
 
 ### Étape 4 : vérifier ou modifier la configuration de votre domaine
 
-À cette étape, vos adresses e-mail doivent déjà être migrées et fonctionnelles. De plus, nous vous invitons à vous assurer que la configuration de votre domaine est correcte en consultant votre espace client.
+À cette étape, vos adresses e-mail doivent déjà être migrées et fonctionnelles. Par sécurité, nous vous invitons à vous assurer que la configuration de votre domaine est correcte en consultant votre espace client.
 
 Pour cela, sélectionnez le service E-mail Pro ou Exchange concerné dans la barre de services à gauche, puis rendez-vous sur l'onglet `Domaines associés`{.action}. Dans le tableau qui s'affiche, la colonne « Diagnostic » vous permettra de voir si la configuration DNS est correcte : une pastille rouge apparaît si la configuration doit être modifiée.
 
