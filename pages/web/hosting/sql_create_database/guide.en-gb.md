@@ -127,6 +127,6 @@ After the database has been optimised (purged), you can recalculate its quota in
 
 [Importing a backup into a Web Hosting plan database](../web_hosting_guide_to_importing_a_mysql_database)
 
-[Optimise your website’s performance](../web_hosting_optimise_your_website_performance)
+[Optimising your website’s performance](../web_hosting_optimise_your_website_performance)
 
 Join our community of users on <https://community.ovh.com/en/>.
