@@ -28,7 +28,7 @@ Il menu propone diverse opzioni di **vMotion**. Nel nostro esempio, migreremo se
 
 L’opzione “Change compute resource only” permette invece di migrare la VM su un altro host.  
 
-Questa operazione, chiamata **vMotion**, è ciò che descriveremo in [questa guida](../vmware-vmotion-new/).
+Questa operazione, chiamata **vMotion**, è descritta in [questa guida](../vmware-vmotion-new/).
 
 ![scelta di vMotion](images/VmotionStorage2.png){.thumbnail}
 
