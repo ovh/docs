@@ -11,7 +11,7 @@ section: Funzionalità OVH
 
 All’utente vSphere di un servizio Private Cloud è possibile associare cognome, nome, numero di telefono e indirizzo email. Quest’ultimo elemento consente, in particolare, di utilizzare il sistema di convalida tramite token.
 
-**Questa guida ti mostra come collegare un indirizzo di posta elettronica al tuo utente vSphere**
+**Questa guida ti mostra come collegare un indirizzo di posta elettronica al tuo utente vSphere.**
 
 ## Prerequisiti
 
@@ -34,7 +34,7 @@ Si apre questa finestra:
 
 È possibile definire cognome, nome, numero di telefono e indirizzo email.
 
-Questa finestra permette anche di aggiungere permessi di modifica per indirizzi **IP**, IP Failover**, **Interfaccia NSX** e attivare il ruolo di **Token validator**, utilizzato per approvare alcune azioni sensibili sulle infrastrutture con opzione di **Sicurezza avanzata** attiva.
+Questa finestra permette anche di aggiungere permessi di modifica per indirizzi **IP**, **IP Failover**, **Interfaccia NSX** e attivare il ruolo di **Token validator**, utilizzato per approvare alcune azioni sensibili sulle infrastrutture con opzione di **Sicurezza avanzata** attiva.
 
 Clicca su `Conferma`{.action} per applicare le modifiche.
 
