@@ -28,11 +28,11 @@ Es necesario:
 
 
 - Tener un servicio de correo [MX Plan](https://www.ovh.com/world/es/productos/mxplan.xml) o un [plan de hosting](https://www.ovh.com/world/es/hosting/).
-- Tener acceso al [área de cliente](https://www.ovh.com/auth/?action=gotomanager) de OVHcloud.
+- Tener acceso al [área de cliente](https://ca.ovh.com/auth/?action=gotomanager) de OVHcloud.
 
 
 ## ¿Dónde se configuran los filtros de correo?
-Para empezar, conéctese al [área de cliente](https://www.ovh.com/auth/?action=gotomanager).
+Para empezar, conéctese al [área de cliente](https://ca.ovh.com/auth/?action=gotomanager).
 
 Seleccione en la columna izquierda el dominio al que está asociado el servicio de correo.
 

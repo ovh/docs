@@ -18,7 +18,7 @@ La página «Sitio no instalado» se muestra cuando la configuración DNS del do
 - Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}.
 - Poder administrar el [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external} en el que está alojado el sitio web.
 - Poder administrar la configuración del dominio correspondiente (es decir, su zona DNS).
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Procedimiento
 
@@ -33,7 +33,7 @@ A continuación se explica cómo comprobar la configuración en ambos casos para
 
 ### 1. Comprobar la configuración del alojamiento web (multisitio)
 
-Para comprobar que el dominio se ha añadido correctamente como multisitio al alojamiento, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento en el que esté alojado el sitio web que muestra la página «Sitio no instalado». A continuación, abra la pestaña `Multisitio`{.action}.
+Para comprobar que el dominio se ha añadido correctamente como multisitio al alojamiento, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento en el que esté alojado el sitio web que muestra la página «Sitio no instalado». A continuación, abra la pestaña `Multisitio`{.action}.
 
 Se mostrará una tabla que contiene todos los dominios añadidos al alojamiento como multisitio. Puede utilizar el campo de búsqueda para encontrar fácilmente el dominio en cuestión.
 
@@ -57,14 +57,14 @@ Esta información le permitirá comprobar la configuración DNS del dominio. Par
 
 > [!primary]
 >
-> Si el dominio está registrado con OVHcloud, compruebe que utiliza nuestra configuración. En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en` Dominios`{.action} en la columna izquierda y seleccione el dominio. A continuación, abra la pestaña `Servidores DNS`{.action}.
+> Si el dominio está registrado con OVHcloud, compruebe que utiliza nuestra configuración. En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en` Dominios`{.action} en la columna izquierda y seleccione el dominio. A continuación, abra la pestaña `Servidores DNS`{.action}.
 >
 
 Según la configuración que utilice el dominio, puede realizar la comprobación de dos formas distintas:
 
 - **Si el dominio no utiliza la configuración de OVHcloud** (es decir, si no utiliza los servidores DNS de OVHcloud), deberá realizar la comprobación que se describe más abajo desde el panel que le ofrezca su proveedor para gestionar sus servidores DNS.
 
-- **Si el dominio utiliza la configuración de OVHcloud** (es decir, sus servidores DNS), puede realizar la comprobación desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, seleccione el dominio en la columna izquierda y abra la pestaña `Zona DNS`{.action}. Se mostrará una tabla que contiene la configuración DNS, con los distintos registros de su dominio (cada línea representa un registro distinto). Puede filtrar el contenido por tipo de registro o por dominio.
+- **Si el dominio utiliza la configuración de OVHcloud** (es decir, sus servidores DNS), puede realizar la comprobación desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Para ello, seleccione el dominio en la columna izquierda y abra la pestaña `Zona DNS`{.action}. Se mostrará una tabla que contiene la configuración DNS, con los distintos registros de su dominio (cada línea representa un registro distinto). Puede filtrar el contenido por tipo de registro o por dominio.
 
 ![Sitio no instalado](images/site-not-installed-edit-ovh-dns-zone.png){.thumbnail}
 

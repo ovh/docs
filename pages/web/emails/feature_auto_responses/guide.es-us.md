@@ -16,7 +16,7 @@ section: Gestión de la cuenta de correo
 
 ## Conexión al área de cliente
 
-- Conéctese al [área de cliente](https://www.ovh.com/auth/?action=gotomanager) e introduzca su ID de cliente y contraseña.
+- Conéctese al [área de cliente](https://ca.ovh.com/auth/?action=gotomanager) e introduzca su ID de cliente y contraseña.
 
 
 

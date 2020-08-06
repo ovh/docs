@@ -28,7 +28,7 @@ Il est possible d’importer une adresse IP Failover liée à un autre service O
 
 ## En pratique
 
-Tout d’abord, connectez-vous à votre [Espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le menu `Public Cloud`{.action} puis sur votre `Projet`{.action}.
+Tout d’abord, connectez-vous à votre [Espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le menu `Public Cloud`{.action} puis sur votre `Projet`{.action}.
 
 Ensuite, sélectionnez `Failover IP`{.action} dans la section Network.
 
