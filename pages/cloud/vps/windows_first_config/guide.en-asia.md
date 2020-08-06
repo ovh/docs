@@ -16,7 +16,7 @@ When you install Windows Server on a [VPS]({ovh_www}/vps/){.external}, the conne
 ## Requirements
 
 * a [VPS]({ovh_www}/vps/){.external} with Windows Server installed
-* access to the OVH [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* access to the OVH [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 

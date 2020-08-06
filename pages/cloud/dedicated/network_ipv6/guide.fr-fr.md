@@ -1,8 +1,8 @@
 ---
-title: Configurer IPv6 sur un serveur dédié
+title: 'Configurer IPv6 sur un serveur dédié'
 slug: network-ipv6
-excerpt: Decouvrez comment configurer des adresses IPv6 sur notre infrastructure.
-section: Réseau & IP
+excerpt: 'Decouvrez comment configurer des adresses IPv6 sur notre infrastructure.'
+section: 'Réseau & IP'
 ---
 
 **Dernière mise à jour le 19/05/2020**
@@ -45,9 +45,9 @@ En installant votre serveur à l’aide d’un modèle de système d’exploitat
 >
 > Avant de suivre les étapes ci-dessous, nous vous recommandons fortement de désactiver l’autoconf IPv6 et l’annonce de routage afin d’éviter des problèmes déjà connus. Vous pouvez le faire en ajoutant les lignes suivantes à votre fichier `sysctl.conf`, fichier se trouvant dans /etc/sysctl.conf :
 > 
-> `net.IPv6.conf.all.autoconf=0`
+> `net.ipv6.conf.all.autoconf=0`
 > 
-> `net.IPv6.conf.all.accept_ra=0`
+> `net.ipv6.conf.all.accept_ra=0`
 > 
 > Une fois que cela a été fait, vous pouvez appliquer ces règles en exécutant la commande suivante : `sh sysctl -p`.
 > 

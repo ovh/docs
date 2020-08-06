@@ -15,7 +15,7 @@ Desde el área de cliente puede consultar, administrar y abonar sus facturas en 
 
 > [!primary]
 >
-> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicio en cuestión, es posible que algunos apartados de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVHcloud aplicables, que encontrará en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, haga clic en su nombre en la esquina superior derecha y seleccione `Productos y servicios`{.action}. En la página de administración de sus servicios, haga clic en `Contratos`{.action}.
+> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicio en cuestión, es posible que algunos apartados de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVHcloud aplicables, que encontrará en el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager){.external}. Para ello, haga clic en su nombre en la esquina superior derecha y seleccione `Productos y servicios`{.action}. En la página de administración de sus servicios, haga clic en `Contratos`{.action}.
 >
 
 ## Requisitos
@@ -113,7 +113,7 @@ En cualquiera de los casos, confirme haciendo clic en el botón `Abonar el impor
 
 ### Consultar los pagos
 
-Puede realizar un seguimiento de los pagos en la sección de facturación del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la pestaña `Seguimiento de los pagos`{.action}. La página muestra los pagos de facturas realizados con la forma de pago configurada en el área de cliente. La referencia de los justificantes de pago siempre empieza por «PA_ES».
+Puede realizar un seguimiento de los pagos en la sección de facturación del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, en la pestaña `Seguimiento de los pagos`{.action}. La página muestra los pagos de facturas realizados con la forma de pago configurada en el área de cliente. La referencia de los justificantes de pago siempre empieza por «PA_ES».
 
 ![Seguimiento de los pagos](images/payment_tracking.png){.thumbnail}
 

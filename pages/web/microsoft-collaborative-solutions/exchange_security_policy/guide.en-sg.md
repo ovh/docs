@@ -17,7 +17,7 @@ With the Exchange service, you can set up professional email addresses, and use 
 ## Requirements
 
 - an [Exchange](https://www.ovh.co.uk/emails/){.external} service
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
@@ -28,7 +28,7 @@ The security policy management of your Exchange service has four aspects:
 - strengthening the verification of incoming messages on our servers and to your Exchange addresses
 - defining how the so-called "unwanted" messages will be displayed in your Exchange addresses
 
-To access the security policy of your Exchange service, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager) and make sure you are in the "Web" section. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}, and finally, select the Exchange service concerned.
+To access the security policy of your Exchange service, log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and make sure you are in the "Web" section. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}, and finally, select the Exchange service concerned.
 
 On the page that appears, click on the `More +`{.action} tab, and then on `Manage Security Policy`{.action}.
 

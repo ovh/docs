@@ -46,9 +46,9 @@ Se está a usar um template Linux fornecido pela OVHcloud para instalar o servid
 >
 > Antes de seguir os próximos passos, recomendamos que desative a autoconfiguração de IPv6 e o router advertising para evitar certos problemas. Pode fazê-lo acrescentando as seguintes linhas ao ficheiro `sysctl.conf`, localizado em /etc/sysctl.conf:
 > 
-> `net.IPv6.conf.all.autoconf=0`
+> `net.ipv6.conf.all.autoconf=0`
 > 
-> `net.IPv6.conf.all.accept_ra=0`
+> `net.ipv6.conf.all.accept_ra=0`
 > 
 > Uma vez realizada esta ação, pode aplicar estas regras executando o comando: `sh sysctl -p`.
 > 
