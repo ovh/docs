@@ -16,7 +16,7 @@ Tutti gli elementi di un Private Cloud consentono la creazione di alert: datacen
 
 ## Prerequisiti
 
-- Disporre di un servizio [Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external} attivo
+- Disporre di un servizio [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external} attivo
 - Avere accesso all’[interfaccia vSphere](../connexion-interface-vsphere/)
 
 ## Procedura
