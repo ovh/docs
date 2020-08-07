@@ -62,7 +62,7 @@ You can simply access APIs from [our web page](https://ca.api.ovh.com/), but als
 
 This way, you can freely automate basic tasks with scripts, optimize your own functions, etc...
 
-See the guide [First Steps with OVHcloud APIs](../../api/first-steps-with-ovh-api/s/) to learn how to use the OVHcloud API.
+See the guide [First Steps with OVHcloud APIs](../../api/first-steps-with-ovh-api/) to learn how to use the OVHcloud API.
 
 ### OpenStack API
 

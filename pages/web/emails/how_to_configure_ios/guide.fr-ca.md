@@ -106,7 +106,7 @@ OVHcloud propose une application web permettant d'accéder à votre adresse e-ma
 
 ## Aller plus loin
 
-[Configurer son compte E-mail Pro sur un iPhone ou un iPad](../../emails-pro/configuration-iphone/){.external}.
+
 
 [Configurer son compte Exchange sur un iPhone ou un iPad](../../microsoft-collaborative-solutions/exchange-configuration-automatique-sous-ios-iphone-ipad/){.external}.
 

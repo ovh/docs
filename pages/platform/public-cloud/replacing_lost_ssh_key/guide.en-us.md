@@ -82,6 +82,6 @@ Once this change has taken place and been backed up, you need to reboot your ins
 
 ## Go further
 
-[Become root and select a password](../become_root_and_select_a_password/){.external}
+[Become root and select a password](../become_the_root_user_and_select_a_password/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.
