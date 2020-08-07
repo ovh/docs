@@ -22,13 +22,13 @@ In your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (gr
 
 When you create your cluster, it's created with a default node pool. Then, you can modify the size of this node pool, or add additional node pools of different sizes and types.
 
-In this guide we explain how to do some basic operations with nodes and node pools using the [OVH Cloud Manager](https://www.ovh.com/manager/cloud/): adding nodes to an existing node pool, creating a new node pool...
+In this guide we explain how to do some basic operations with nodes and node pools using the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager): adding nodes to an existing node pool, creating a new node pool...
 
 ## Editing nodes to an existing node pool
 
 ### Step 1 - Editing nodes to an existing node pool using the OVH Cloud Manager
 
-Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Platforms and services* menu in the [OVH Cloud Manager](https://www.ovh.com/manager/cloud/)
+Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Platforms and services* menu in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
 ![Access to the administration UI](images/managing_nodes-01.png){.thumbnail}
 
