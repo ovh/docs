@@ -101,7 +101,7 @@ Par exemple, un paquet pour le port 80/TCP sera capturé par la règle 2 et les 
 
 > [!warning]
 >
-> Si notre solution anti-DDoS limite une attaque, votre Firewall Network s'activera automatiquement, même si vous l'avez désactivé par défaut. Si vous souhaitez qu'aucune règle ne soit appliquée durant une attaque, il faudra les supprimer.
+> Si notre solution anti-DDoS limite une attaque, votre Firewall Network s'activera automatiquement, même si vous l'avez désactivé par défaut. Si vous souhaitez qu'aucune règle ne soit appliquée durant une attaque, vous devez supprimer toute règle préalablement créée.
 > 
 
 ## Aller plus loin
