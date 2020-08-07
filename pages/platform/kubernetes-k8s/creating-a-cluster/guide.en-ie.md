@@ -40,7 +40,7 @@ A OVHcloud Public Cloud project.
 
 ## Instructions
 
-Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Containers and Orchestration* menu in the [OVH Cloud Manager](https://www.ovh.com/manager/cloud/), then go to the *Managed Kubernetes Service* category and click on *Create a cluster* button.
+Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Containers and Orchestration* menu in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/manager/cloud/), then go to the *Managed Kubernetes Service* category and click on *Create a cluster* button.
 
 ![Create a cluster](images/creating-a-cluster-01.png){.thumbnail}
 
