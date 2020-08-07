@@ -37,7 +37,7 @@ order: 8
 - Apply and enforce policies on distributes services
 - Monitor the services gathering metrics, logs and traces
 
-In this tutorial we are going to install Istio on a freshly created OVHcloud Managed Kubernetes Service cluster. You can use the *Reset cluster* function on your [OVH Cloud Manager](https://www.ovh.com/manager/cloud/){.external} to reinitialize your cluster before following this tutorial.
+In this tutorial we are going to install Istio on a freshly created OVHcloud Managed Kubernetes Service cluster. You can use the *Reset cluster* function on your [OVH Cloud Manager](https://ca.ovh.com/auth/?action=gotomanager){.external} to reinitialize your cluster before following this tutorial.
 
 
 ## Before you begin
