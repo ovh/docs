@@ -514,6 +514,6 @@ You will need to enter at least the following fields:
 
 [Configuring vRack with the Public Cloud](../public-cloud-vrack)
 
-[First steps with the API](../../first-steps-with-ovh-api/)
+[First steps with the API](../../api/first-steps-with-ovh-api/)
 
 Join our community of users on <https://community.ovh.com/en/>.

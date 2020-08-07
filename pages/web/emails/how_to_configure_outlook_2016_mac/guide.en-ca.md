@@ -80,8 +80,8 @@ OVHcloud also offers a web application that you can use to consult your email fr
 
 ## Go further
 
-[Configuring your Email Pro account in Outlook 2016 for Mac](../../emails-pro/configuration-outlook-2016-mac/)
 
-[Configuring your Exchange account in Outlook 2016 for Mac](../../microsoft-collaborative-solutions/configuration-outlook-2016-mac/)
+
+[Configuring your Exchange account in Outlook 2016 for Mac](../../microsoft-collaborative-solutions/exchange-configuration-outlook-2016-mac)
 
 Join our community of users on <https://community.ovh.com/en/>.

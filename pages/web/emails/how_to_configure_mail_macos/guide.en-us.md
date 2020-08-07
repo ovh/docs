@@ -93,7 +93,7 @@ OVHcloud also has a web application you can use to access your email account via
 
 ## Go further
 
-[Configuring your Email Pro account on the macOS Mail app](../../emails-pro/configuring-email-pro-macos-mail/)
+
 
 [Configuring your Exchange account on the macOS Mail app](../../microsoft-collaborative-solutions/exchange-automatic-configuration-on-mail-mac/)
 

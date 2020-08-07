@@ -98,8 +98,6 @@ OVHcloud also has a web application you can use to access your email account fro
 
 ## Go further
 
-[Configuring an Email Pro account on iPhone and iPad](../../emails-pro/iphone-configuration/)
 
-[Configuring an Exchange account on iPhone and iPad](../../microsoft-collaborative-solutions/exchange_2013_how_to_configure_on_ios_iphoneipad/)
 
 Join our community of users on <https://community.ovh.com/en/>.
