@@ -35,9 +35,9 @@ In questa interfaccia vengono mostrati i blocchi IP e le informazioni di base ad
 In questo modo è possibile anche verificare il “reverse” di ogni indirizzo e la sua destinazione. Alcuni indirizzi sono contrassegnati come “Reserved”. Assicurati di non utilizzare questi **cinque indirizzi IP riservati alla configurazione del blocco e all’alta disponibilità**:
 
 - il primo IP, che annuncia il blocco sul router
-- l’ultimo IP, che corrisponde a quello di broadcast
-- il penultimo IP, che corrisponde al gateway
-- i due IP prima del gateway, che vengono utilizzati sui router come HSRP (Hot Standby Router Protocol)
+- l’ultimo IP, che corrisponde a quello di **broadcast**
+- il penultimo IP, che corrisponde al **gateway**
+- i due IP prima del gateway, che vengono utilizzati sui router come **HSRP** (Hot Standby Router Protocol)
 
 > [!warning]
 > Alcune configurazioni con un firewall virtuale non permettono di risalire agli indirizzi MAC se il protocollo ARP non è autorizzato.
@@ -51,7 +51,7 @@ Inserisci il “reverse” e clicca su `Confirm`{.action}: il nuovo valore appar
 
 > [!primary]
 >
-> Questo processo di configurazione è disponibile anche nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) 
+> Questo processo di configurazione è disponibile anche nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). 
 > 
 
 ## Per saperne di più
