@@ -25,7 +25,7 @@ Per garantire la continuità di servizio anche in caso di malfunzionamento di un
 
 Al momento della consegna di questa macchina, viene inviata un’email con tutte le informazioni associate e l’indirizzo IP che permette di individuarla facilmente nell’interfaccia vSphere.
 
-Il servizio HA ([High Availability](../vmware-ha-high-availability) di VMware è abilitato di default sul cluster. Nel caso in cui sia stato lasciato attivo, le macchine virtuali si riavvieranno automaticamente. Se il servizio DRS (Distributed Ressources Scheduler) è attivo e configurato in modalità “fully automated”, anche la distribuzione del carico sugli host del cluster verrà eseguita in modo automatico.
+Il servizio [High Availability (HA)](../vmware-ha-high-availability) di VMware è abilitato di default sul cluster. Nel caso in cui sia stato lasciato attivo, le macchine virtuali si riavvieranno automaticamente. Se il servizio DRS (Distributed Ressources Scheduler) è attivo e configurato in modalità “fully automated”, anche la distribuzione del carico sugli host del cluster verrà eseguita in modo automatico.
 
 > [!warning]
 > 
