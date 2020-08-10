@@ -52,7 +52,7 @@ Introduzca a continuación la configuración del servidor POP (servidor de entra
 |---|---| 
 |Nombre de usuario|Introduzca la dirección de correo electrónico completa.|  
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
-|Servidor POP|Introduzca el servidor **ssl0.ovh.net**.|
+|Servidor POP|Introduzca el servidor **pop.mail.ovh.ca**.|
 |Puerto|Seleccione el puerto **995**.|
 
 Estas son las opciones que puede elegir:
@@ -79,7 +79,7 @@ Introduzca a continuación la configuración del servidor SMTP (servidor de sali
 
 |Campo|Descripción| 
 |---|---| 
-|Servidor SMTP|Introduzca el servidor **ssl0.ovh.net**.|
+|Servidor SMTP|Introduzca el servidor **smtp.mail.ovh.ca**.|
 |Puerto|Seleccione el puerto **587**.|
 |Nombre de usuario|Introduzca la dirección de correo electrónico completa.|  
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|

@@ -49,7 +49,7 @@ Then fill in the information requested.
 
 |Information|Description|
 |---|---|
-|Server|Enter the server “ssl0.ovh.net”.|
+|Server|Enter the server “imap.mail.ovh.ca”.|
 |Port|Enter port “993”.|
 |Encryption method|Select “SSL/TLS”.|
 |Require authentication|Do not tick the “Require secure password authentication (SPA) on connection” box.|
@@ -58,7 +58,7 @@ Then fill in the information requested.
 
 |Information|Description|
 |---|---|
-|Server|Enter the server “ssl0.ovh.net”.|
+|Server|Enter the server “smtp.mail.ovh.ca”.|
 |Port|Enter port “465”.|
 |Encryption method|Select “SSL/TLS”.|
 |Require authentication|Do not tick the “Require secure password authentication (SPA) on connection” box.|
@@ -75,15 +75,15 @@ If you need to enter any settings manually in your account preferences, the tech
 
 |Server type|Server name|Encryption method|Port|
 |---|---|---|---|
-|Incoming|ssl0.ovh.net|SSL/TLS|993|
-|Outgoing|ssl0.ovh.net|SSL/TLS|465|
+|Incoming|imap.mail.ovh.ca|SSL/TLS|993|
+|Outgoing|smtp.mail.ovh.ca|SSL/TLS|465|
 
 - **For POP configuration**
 
 |Server type|Server name|Encryption method|Port|
 |---|---|---|---|
-|Incoming|ssl0.ovh.net|SSL/TLS|995|
-|Outgoing|ssl0.ovh.net|SSL/TLS|465|
+|Incoming|pop.mail.ovh.ca|SSL/TLS|995|
+|Outgoing|smtp.mail.ovh.ca|SSL/TLS|465|
 
 ### Step 2: Use the email address
 

@@ -50,7 +50,7 @@ Introduzca los ajustes del servidor de entrada.
 |---|---| 
 |Nombre de usuario|Introduzca la dirección de correo electrónico completa.|  
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
-|Servidor|Introduzca el servidor **ssl0.ovh.net**.|
+|Servidor|Introduzca el servidor **imap.mail.ovh.ca**.|
 
 Haga clic en `Siguiente`{.action} e introduzca los parámetros del servidor de salida:
 
@@ -59,7 +59,7 @@ Haga clic en `Siguiente`{.action} e introduzca los parámetros del servidor de s
 |Exigir inicio de sesión|Asegúrese de que esta opción esté activada.|
 |Nombre de usuario|Introduzca la dirección de correo electrónico completa.|  
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
-|Servidor SMTP|Introduzca el servidor **ssl0.ovh.net**.|
+|Servidor SMTP|Introduzca el servidor **smtp.mail.ovh.ca**.|
 
 A continuación, pulse `Siguiente`{.action}. Si los datos introducidos son correctos, la aplicación se conectará a la cuenta.
 
@@ -75,15 +75,15 @@ Si la aplicación le pide que introduzca de forma manual algunos datos en las pr
 
 |Tipo de servidor|Nombre del servidor|Tipo de seguridad|Puerto|
 |---|---|---|---|
-|Entrante|ssl0.ovh.net|SSL/TLS|993|
-|Saliente|ssl0.ovh.net|SSL/TLS|465|
+|Entrante|imap.mail.ovh.ca|SSL/TLS|993|
+|Saliente|smtp.mail.ovh.ca|SSL/TLS|465|
 
 **Configuración en POP**
 
 |Tipo de servidor|Nombre del servidor|Tipo de seguridad|Puerto|
 |---|---|---|---|
-|Entrante|ssl0.ovh.net|SSL/TLS|995|
-|Saliente|ssl0.ovh.net|SSL/TLS|465|
+|Entrante|pop.mail.ovh.ca|SSL/TLS|995|
+|Saliente|smtp.mail.ovh.ca|SSL/TLS|465|
 
 ### 2. Utilizar la dirección de correo electrónico
 

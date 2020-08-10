@@ -46,9 +46,9 @@ Cumplimente la información de su cuenta:
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
 |Nombre de cuenta|Introduzca un nombre que le permita diferenciar su cuenta del resto de cuentas de su aplicación Correo.|
 |Enviar mensajes con este nombre|Introduzca el nombre que quiera que figure como remitente cuando envíe mensajes de correo desde esa dirección.|
-|Servidor de correo entrante|Introduzca el servidor **ssl0.ovh.net:993**.|
+|Servidor de correo entrante|Introduzca el servidor **imap.mail.ovh.ca:993**.|
 |Tipo de cuenta|Le recomendamos que utilice **IMAP4**. También puede elegir **POP3** (almacenamiento de mensajes de correo en local en su aplicación Correo) en el menú desplegable.|
-|Servidor de correo saliente (SMTP)|Introduzca el servidor **ssl0.ovh.net:465**.|
+|Servidor de correo saliente (SMTP)|Introduzca el servidor **smtp.mail.ovh.ca:465**.|
 
 Asegúrese de que las siguientes casillas estén marcadas:
 
@@ -69,15 +69,15 @@ Si la aplicación le pide que introduzca de forma manual algunos datos técnicos
 
 |Tipo de servidor|Nombre del servidor|SSL|Puerto|
 |---|---|---|---|
-|Entrante|ssl0.ovh.net|Sí|993|
-|Saliente|ssl0.ovh.net|Sí|465|
+|Entrante|imap.mail.ovh.ca|Sí|993|
+|Saliente|smtp.mail.ovh.ca|Sí|465|
 
 **Configuración en POP**
 
 |Tipo de servidor|Nombre del servidor|SSL|Puerto|
 |---|---|---|---|
-|Entrante|ssl0.ovh.net|Sí|995|
-|Saliente|ssl0.ovh.net|Sí|465|
+|Entrante|pop.mail.ovh.ca|Sí|995|
+|Saliente|smtp.mail.ovh.ca|Sí|465|
 
 ### 2. Utilizar la dirección de correo electrónico
 

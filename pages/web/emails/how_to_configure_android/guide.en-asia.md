@@ -51,7 +51,7 @@ Enter the incoming server settings:
 |---|---| 
 |Username|Enter your full email address.|  
 |Password|Enter the password for your email address.|
-|Server|Enter the server “ssl0.ovh.net”.|
+|Server|Enter the server “imap.mail.ovh.ca”.|
 
 Tap `Next`{.action}, then enter the outgoing server settings:
 
@@ -60,7 +60,7 @@ Tap `Next`{.action}, then enter the outgoing server settings:
 |Request a connection|Ensure that this button is enabled.|
 |Username|Enter your full email address.|  
 |Password|Enter the password for your email address.|
-|SMTP server|Enter the server “ssl0.ovh.net”.|
+|SMTP server|Enter the server “smtp.mail.ovh.ca”.|
 
 Then tap `Next`{.action}. If all the information you have entered is correct, you will be able to log in to your account straight away.
 
@@ -76,19 +76,19 @@ If you need to enter any settings manually in your account preferences, the tech
 
 |Server type|Server name|Security type|Port|
 |---|---|---|---|
-|Incoming|ssl0.ovh.net|SSL/TLS|993|
-|Outgoing|ssl0.ovh.net|SSL/TLS|465|
+|Incoming|imap.mail.ovh.ca|SSL/TLS|993|
+|Outgoing|smtp.mail.ovh.ca|SSL/TLS|465|
 
 - **for POP configuration**
 
 |Server type|Server name|Security type|Port|
 |---|---|---|---|
-|Incoming|ssl0.ovh.net|SSL/TLS|995|
-|Outgoing|ssl0.ovh.net|SSL/TLS|465|
+|Incoming|pop.mail.ovh.ca|SSL/TLS|995|
+|Outgoing|smtp.mail.ovh.ca|SSL/TLS|465|
 
 ### Step 2: Use the email address
 
-Once you have configured your email address, you can start using it! You can now send and receive emails.
+Once you have configured }your email address, you can start using it! You can now send and receive emails.
 
 OVHcloud also has a web application you can use to access your email account from your browser, via the following address: <https://www.ovh.com/asia/mail>. You can log in using your email credentials.
 

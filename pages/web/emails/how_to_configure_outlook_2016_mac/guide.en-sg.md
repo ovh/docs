@@ -45,9 +45,9 @@ Enter your email address, then click `Continue`{.action}. For the provider, clic
 |Mail address|Enter a name that will distinguish this account from any other accounts added in your Outlook app.|
 |Username|Enter your full email address.|
 |Password|Enter the password for your email address.|
-|Incoming server|Enter the server “ssl0.ovh.net”. Leave the **Use SSL to connect** box ticked.|
+|Incoming server|Enter the server “imap.mail.ovh.ca”. Leave the **Use SSL to connect** box ticked.|
 |Incoming port|Enter port 993.|
-|Outgoing server|Enter the server “ssl0.ovh.net”. Leave the **Use SSL to connect** box ticked.|
+|Outgoing server|Enter the server “smtp.mail.ovh.ca”. Leave the **Use SSL to connect** box ticked.|
 |Outgoing port|Enter port 465.|
 
 Once you have entered this information, click `Next`{.action}. If the information is correct, Outlook will successfully connect to the account.
@@ -62,15 +62,15 @@ If you need to enter any settings manually in your account preferences, the tech
 
 |Server type|Server name|SSL|Port|
 |---|---|---|---|
-|Incoming|ssl0.ovh.net|Yes|993|
-|Outgoing|ssl0.ovh.net|Yes|465|
+|Incoming|imap.mail.ovh.ca|Yes|993|
+|Outgoing|smtp.mail.ovh.ca|Yes|465|
 
 - **POP configuration**
 
 |Server type|Server name|SSL|Port|
 |---|---|---|---|
-|Incoming|ssl0.ovh.net|Yes|995|
-|Outgoing|ssl0.ovh.net|Yes|465|
+|Incoming|pop.mail.ovh.ca|Yes|995|
+|Outgoing|smtp.mail.ovh.ca|Yes|465|
 
 ### Step 2: Use the email address
 
