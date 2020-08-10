@@ -17,6 +17,11 @@ Vous pouvez ainsi proposer à vos appelants, via la seule composition de votre n
 
 **Apprenez à configurer un CCS sur votre numéro alias depuis votre espace client OVHcloud.**
 
+> [!warning]
+>
+> La configuration Contact Center Solution est une offre en beta. Son fonctionnement ne peut donc être garanti par les équipes de OVHcloud. De même, en cas de difficulté, nos équipes du support vous inviteront à appliquer une configuration de type « File d'appels » ou « Serveur vocal interactif » sur votre numéro.
+> 
+
 ## Prérequis
 
 - Disposer d'un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/){.external}.
