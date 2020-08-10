@@ -13,7 +13,7 @@ hidden: true
 
 Le Contact Center Solution (CCS) est la configuration la plus complète applicable à un numéro alias. Elle permet par exemple de combiner les configurations avancées que sont la [file d'appels](https://docs.ovh.com/fr/voip/les-files-d-appels/) et le [serveur vocal interactif (SVI)](https://docs.ovh.com/fr/voip/svi-serveur-vocal-interactif/).
 
-Vous pouvez ainsi proposer à vos appelants, via la seule composition de votre numéro principal, un choix de touches pour joindre chaque service de votre entreprise, chaque touche composée faisant sonner un ensemble de lignes selon une stratégie que vous définissez depuis l'espace client OVHcloud.
+Vous pouvez par exemple proposer à vos appelants, via la seule composition de votre numéro principal, un choix de touches pour joindre chaque service de votre entreprise, chaque touche composée faisant sonner un ensemble de lignes selon une stratégie que vous définissez depuis l'espace client OVHcloud.
 
 **Apprenez à configurer un CCS sur votre numéro alias depuis votre espace client OVHcloud.**
 
