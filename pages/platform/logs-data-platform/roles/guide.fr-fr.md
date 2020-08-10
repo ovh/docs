@@ -12,7 +12,7 @@ section: Features
 ## Overview 
 
 Logs policies are often decisions taken by an entire team not individuals.Collaboration remains an utmost priority for Logs Data Platform, following this strategy it shall enable everyone share data in a easy and secure manner. 
-Log policies also affect sevral teams regarding access rights, for instance the Product managers can access some data but be denied to access security logs. That's why we decided to provide a [Role Based Access Control](https://en.wikipedia.org/wiki/Role-based_access_control){.external) to users to configure access rights. This document will expose you how you can use this system to configure access rights. 
+Log policies also affect sevral teams regarding access rights, for instance the Product managers can access some data but be denied to access security logs. That's why we decided to provide a [Role Based Access Control](https://en.wikipedia.org/wiki/Role-based_access_control){.external} to users to configure access rights. This document will expose you how you can use this system to configure access rights. 
 
 
 ## Creating a Role
@@ -40,16 +40,21 @@ Some items can be shared in read-only whereas others can be shared with a write 
 - **Dashboards**: Graylog Dashboards can be shared **read-only or read-write**. With the read-write access, the users in the role can add, modify and remove widgets of a dashboard. 
 - **Index **: Elasticsearch indices can be shared **read-only or read-write**. With the read-write access, users in the role can add, modify and delete documents in the index. They can also alter the mapping.
 - **Aliases**: Elasticsearch Aliases are **read-only**. They can only be used to read the data attached to them.
-- **Kibana**: Kibana can be shared **read-only or read-write**. If Kibana is read-only, users have access to the Kibana but cannot modify it. If Kibana is read-write, they can modify teh dashboards or the visualizations or any other Kibana feature or setting.
+- **Kibana**: Kibana can be shared **read-only or read-write**. If Kibana is read-only, users have access to the Kibana but cannot modify it. If Kibana is read-write, they can modify the dashboards or the visualizations or any other Kibana feature or setting.
 
-Note that to give access to data (index or aliases) explored through Kibana to a user, youneed to give at least **read** rights to both the instance and to the data explored. Select the items you want to share in the role and they will switch from the **avalaible** column to the **selected** column. Go back to the **roles** page to manage the users in the defined role. 
+> [!primary]
+> Note that to give access to data (index or aliases) explored through Kibana to a user, you need to give at least **read** rights to **both** the instance and to the data explored. 
+
+
+Select the items you want to share in the role and they will switch from the **avalaible** column to the **selected** column. Go back to the **roles** page to manage the users in the defined role. 
+
 
 ![menu\_permission](images/permissions_page.png){.thumbnail}
 
 ## Managing members
 
 To manage the members of a role, use the same **...** menu to navigate to the **Manage members** page. Click on `Add a member`{.action} to add a new member for this role. 
- In the username box you must add a ldp username. Any person who have a Logs Data Platform service can be added to the role even if their primary cluster is different from yours. 
+ In the username box you must add a **Logs Data Platform username**. The ldp username can be found in the **Home** panel of your manager int the **General** section. Logs Any person who have a Logs Data Platform service can be added to the role even if their primary cluster is different from yours. 
 
 Once a member has been added, he will see the relevant page the item that have been shared to him with an indication on the **Shared** column. The available actions will be displayed to him in the **...** menu. 
 

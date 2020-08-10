@@ -50,11 +50,11 @@ Whatever method you use, you will be able to query and visualize your documents 
 
 #### Index some data
 
-Logs Data Platform Elasticsearch indices are compatible with the [Elasticsearch REST API](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/docs.html){.external}. Therefore, you can use simple http requests to index and search your data. The api is accessible behind a secured https endpoint with mandatory authentication. We recommend that you use [tokens](../tokens_logs_data_platform/guide.en-gb.md){.ref} to authenticate yourself. You can retrieve the endpoint of the API at the **Home** page of your service. Here is a simple example to index a document with curl with an index on the cluster `graX.logs.ovh.com`.
+Logs Data Platform Elasticsearch indices are compatible with the [Elasticsearch REST API](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/docs.html){.external}. Therefore, you can use simple http requests to index and search your data. The api is accessible behind a secured https endpoint with mandatory authentication. We recommend that you use [tokens](../tokens_logs_data_platform/guide.en-gb.md){.ref} to authenticate yourself. You can retrieve the endpoint of the API at the **Home** page of your service. Here is a simple example to index a document with curl with an index on the cluster `<ldp-cluster>.logs.ovh.com`.
 
 
 ```shell-session
-$ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1' -d '{ "user" : "Oles", "company" : "OVH", "message" : "Hello World !", "post_date" : "1999-11-02T23:01:00" }'
+$ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1' -d '{ "user" : "Oles", "company" : "OVH", "message" : "Hello World !", "post_date" : "1999-11-02T23:01:00" }'
 ```
 
 Here is a quick explanation of this command:
@@ -90,14 +90,14 @@ This command will return with a simple payload indicating if the document has be
 There are multiple ways to search your data, this is one area where the Elasticsearch REST API excels. You can either get your data directly by using a GET request, or search it with the Search APIs. To get your document indexed previously, use the following curl request:
 
 ```shell-session
-$ curl -XGET -u <your-token-value>:token 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1'
+$ curl -XGET -u <your-token-value>:token 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1'
 {"_id":"1","_index":"logs-<username>-i-<suffix>","_primary_term":1,"_seq_no":0,"_source":{"company":"OVH","message":"Hello World !","post_date":"1999-11-02T23:01:00","user":"Oles"},"_type":"_doc","_version":1,"found":true}
 ```
 
 To issue a simple search you can either use the [Query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/query-dsl.html){.external} or a [URI search.](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/search-uri-request.html){.external}. Here is a simple example with an URI search:
 
 ```shell-session
-$ curl -XGET -u <your-token-value>:token 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_search?q=user:Oles'
+$ curl -XGET -u <your-token-value>:token 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_search?q=user:Oles'
 {"_shards":{"failed":0,"skipped":0,"successful":1,"total":1},"hits":{"hits":[{"_id":"1","_index":"newindice","_score":0.2876821,"_source":{"company":"OVH","message":"Hello World !","post_date":"1999-11-02T23:01:00","user":"Oles"},"_type":"_doc"}],"max_score":0.2876821,"total":1},"timed_out":false,"took":31}
 ```
 
@@ -166,13 +166,13 @@ A bulk request is a succession of JSON objects with this structure:
 You can in one request ask Elasticsearch to index, update, delete several documents. Save the content of the previous commands in a file named **bulk** and use the following call to index these 3 users:
 
 ```shell-session
-$ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_bulk' --data-binary "@bulk"
+$ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_bulk' --data-binary "@bulk"
 ```
 
 This call will take the content of the bulk file and execute each index operation. Note that you have to use the option **--data-binary** and no **-d** to preserve the newline after each JSON. You can check that your data are properly indexed with the following call:
 
 ```shell-session
-$ curl -u <your-token-value>:token -XGET 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/_search?pretty=true'
+$ curl -u <your-token-value>:token -XGET 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/_search?pretty=true'
 ```
 
 This will give you back the documents of your index:
@@ -365,7 +365,7 @@ It is not possible to change the number of shards of one index. So you will have
 Note that you can monitor yourself the size of the index by using the following curl query:
 
 ```shell-session
-$ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_stats/store?pretty' --data-binary "@bulk"
+$ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_stats/store?pretty' --data-binary "@bulk"
 ```
 
 This command will give you a document with the following format:
