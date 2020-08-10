@@ -31,7 +31,7 @@ Vous pouvez ainsi proposer à vos appelants, via la seule composition de votre n
 
 |Nom|Définition|
 |---|---|
-|Agent|Un agent est une ligne téléphonique, interne au compte ou externe, en capacité de sonner lorsque le numéro alias sera appelé.|
+|Agent|Un agent est une ligne téléphonique, interne au compte OVHcloud ou externe à celui-ci, en capacité de sonner lorsque le numéro alias sera appelé.|
 |File|Une file est un groupe d'agents, sur le principe de la [file d'appels](../les-files-d-appels/). La file permet de faire sonner ces agents selon une stratégie à définir.|
 |Menu interactif|Un menu interactif propose à l'appelant des choix de touches pour faire sonner un agent/une file ou jouer un son, sur le principe du [serveur vocal interactif (SVI)](../svi-serveur-vocal-interactif/).|
 |TTS|Un Text-To-Speech (TTS) est un son créé à partir d'un texte que vous définissez dans l'espace client OVHcloud.|
@@ -101,6 +101,7 @@ Pour ajouter une ligne SIP interne (1), cliquez sur la loupe à droite du champ 
 Pour ajouter une ligne externe (2), renseignez son numéro au format international (0033xxxxxxxxx pour la France) dans le champ « Numéro » puis validez l'ajout de chaque ligne en cliquant sur `Ajouter un agent`{.action}.
 
 > [!warning]
+> L'ajout d'une ligne externe peut occasionner des frais car un appel reçu par celle-ci sera comptabilisé en hors-forfait. Vous pouvez consulter nos tarifs hors-forfait en vigueur sur [cette page](https://www.ovhtelecom.fr/telephonie/decouvrez/tarifs_telephonie.xml){.external}.
 >
 
 ![contact-center-solution](images/ccs-step3-1-2.png){.thumbnail}
