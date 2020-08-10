@@ -144,7 +144,7 @@ data:
         Host            ${FLUENT_LDP_HOST}
         Port            ${FLUENT_LDP_PORT}
         Mode            tls
-	tls             On
+        tls             On
         Compress        False
 
   parsers.conf: |
