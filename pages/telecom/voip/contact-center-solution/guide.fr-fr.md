@@ -236,7 +236,7 @@ Après avoir cliqué sur `Jours exceptionnels`{.action} depuis la fenêtre de co
 
 Vous devez à présent configurer le créneau que vous venez de sélectionner (ou vous assurer que celui-ci l'est correctement). Pour cela, cliquez sur le bouton `...`{.action} le plus proche des appels entrants, puis choisissez `Gérer les créneaux exceptionnels`{.action}.
 
-![CCS configuration](images/ccs-step5-1-4.png.png){.thumbnail}
+![CCS configuration](images/ccs-step5-1-4.png){.thumbnail}
 
 La page de gestion des fermetures exceptionnelles apparaît alors. Dans la partie `Planification des jours de fermeture`, positionnez vos fermetures exceptionnelles sur le calendrier en cliquant sur les jours concernés. Complétez les informations demandées :
 
@@ -262,14 +262,6 @@ Après avoir cliqué sur `Plages horaires génériques`{.action} depuis la fenê
 Configurez maintenant les plages horaires qui correspondent à vos besoins. Pour cela, renseignez l'heure de début et l'heure de fin dans les zones prévues à cet effet. Utilisez ensuite le bouton `+`{.action} pour les ajouter. Une fois le paramétrage terminé, utilisez le bouton `<`{.action} situé dans la partie supérieure de la fenêtre des plages horaires génériques, puis cliquez sur le bouton `Modifier`{.action}.
 
 ![contact-center-solution](images/ccs-step5-2.gif){.thumbnail}
-
-L'exemple ci-dessous reprend ainsi les horaires suivants :
-- 08h00 à 12h00 du lundi au vendredi;
-- 13h00 à 19h00 du lundi au vendredi;
-- 09h00 à 12h00 le samedi.
-
-![contact-center-solution](images/ccs-step5-2-2.png){.thumbnail}
-
 
 ##### **Condition de « Filtrages d'appels »**
 
