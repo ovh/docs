@@ -17,11 +17,11 @@ We list here the most frequently requested OVHcloud Managed Kubernetes features 
 - **RBAC** Use the standard [RBAC authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/){.external} mode to distribute rights within your organization and/or assure compatibility with specific applications.
 - **Pod autoscaling** Use the  [standard horizontal pod autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/){.external} to distribute dynamically your containerized workloads on a given set of worker nodes.
 - **Node pools management**: Easily [resize you cluster through our UI or directly using standard Kubernetes tooling by editing a Nodepool CRD ](../node-pools-crd/) .
-- **Localisation choice** : We offer you the possibility to choose one of multiple OVH Public Cloud datacenters at cluster creation. We currently propose the service in France (GRA and SBG) and Canada (BHS). We will progressively open Managed Kubernetes Service in all OVHcloud Public Cloud regions.
+- **Localisation choice** : We offer you the possibility to choose one of multiple OVHcloud Public Cloud datacenters at cluster creation. We currently propose the service in France (GRA and SBG) and Canada (BHS). We will progressively open Managed Kubernetes Service in all OVHcloud Public Cloud regions.
 
 ### Planned features
 
-- **vRack** : Currently, all traffic between you nodes is encrypted but transit through OVH public network. We will offer private clusters in OVH private network (vRack) later in the year.
+- **vRack** : Currently, all traffic between you nodes is encrypted but transit through OVHcloud public network. We will offer private clusters in OVHcloud private network (vRack) later in the year.
 - **Integrated RWX persistent storage** : Currently, we support dynamic persistent storage with block storage, that can only be attached to a single worker node at a time. We will later offer FSaaS that will support ReadWriteMany. Note that in the meantine, you can [configure Managed Kubernetes to work with OVHcloud NAS-HA ](../Configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha/) .
 - **NodePools autoscaling (cluster autoscaler)** : Additionnaly to pod autoscaling, we will provide you the concept of node pools autoscaling, allowing your cluster to grow automatically between your user-defined limits.
 - **Bare metal worker nodes** : We will integrate bare metal (physical machines) servers in the worker nodes choice. Users looking for extreme local storage IOPS performance can [use Managed Kubernetes on instances with dedicated NVMe disks](../formating-nvme-disk-on-iops-nodes/) .
