@@ -35,7 +35,7 @@ A purchase order is generated when you place an order. It lists the products ord
 |Number|Description|
 |---|---|
 |1|All of the information related to the purchase order is listed here: its number, its creation date and its expiry date. Please note that expired purchase orders will no longer appear in the OVHcloud Control Panel.|
-|2|If you are logged into the Control Panel when you place the order, the billing contact will appear here. For further information on the different contact types, please read  [this guide](../customer/managing-contacts/){.external}.|
+|2|If you are logged into the Control Panel when you place the order, the billing contact will appear here. For further information on the different contact types, please read  [this guide](../../customer/managing-contacts/){.external}.|
 |3|If you have set a default payment method, it will be offered here. If your product is renewed automatically, a default payment method is required.|
 |4|Here, you will find the available payment methods. We can only offer the payment methods authorised in the account’s country of origin, or those linked to the account type.|
 

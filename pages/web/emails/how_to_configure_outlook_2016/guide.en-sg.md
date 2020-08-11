@@ -94,7 +94,4 @@ OVHcloud also has a web application you can use to access your email account fro
 ## Go further
 
 
-
-[Configuring your Exchange account in Outlook 2016 for Windows](../../microsoft-collaborative-solutions/configuration-outlook-2016/)
-
 Join our community of users on <https://community.ovh.com/en/>.
