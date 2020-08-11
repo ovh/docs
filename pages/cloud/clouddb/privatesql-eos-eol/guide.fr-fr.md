@@ -11,6 +11,9 @@ Les produits couverts par ces annonces de fin de vente et de fin de vie sont les
 |---|---|---|---|
 |MariaDB 10.1|2019-07-29|2020-04-17|2020-10-17|
 |MariaDB 10.2|À définir|À définir|À définir|
+|MariaDB 10.3|À définir|À définir|À définir|
+|MariaDB 10.4|À définir|À définir|À définir|
+|MariaDB 10.5|À définir|À définir|À définir|
 |MongoDB 4|2019-07-29|2019-02-25|À définir|
 |MySQL 5.5|2019-07-29|2018-08-02|2020-01-28|
 |MySQL 5.6|2019-07-29|2020-08-02|2021-02-01|
