@@ -59,7 +59,7 @@ Renseignez les paramètres du serveur entrant :
 |---|---| 
 |Nom d'utilisateur|Renseignez l'adresse e-mail complète.|  
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|
-|Serveur|Renseignez le serveur « ssl0.ovh.net ».|
+|Serveur|Renseignez le serveur « imap.mail.ovh.ca ».|
 
 Appuyez sur `Suivante`{.action} puis renseignez les paramètres du serveur sortant :
 
@@ -68,7 +68,7 @@ Appuyez sur `Suivante`{.action} puis renseignez les paramètres du serveur sorta
 |Exiger une connexion|Assurez-vous de bien laisser ce bouton enclenché.|
 |Nom d'utilisateur|Renseignez l'adresse e-mail complète.|  
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|
-|Serveur SMTP|Renseignez le serveur « ssl0.ovh.net ».|
+|Serveur SMTP|Renseignez le serveur « smtp.mail.ovh.ca ».|
 
 Appuyez maintenant sur `Suivante`{.action}. Si les informations renseignées sont correctes, la connexion au compte réussira.
 
@@ -84,15 +84,15 @@ Si vous devez renseigner manuellement des champs techniques dans les préférenc
 
 |Type de serveur|Nom du serveur|Type de sécurité|Port|
 |---|---|---|---|
-|Entrant|ssl0.ovh.net|SSL/TLS|993|
-|Sortant|ssl0.ovh.net|SSL/TLS|465|
+|Entrant|imap.mail.ovh.ca|SSL/TLS|993|
+|Sortant|smtp.mail.ovh.ca|SSL/TLS|465|
 
 - **pour une configuration en POP**
 
 |Type de serveur|Nom du serveur|Type de sécurité|Port|
 |---|---|---|---|
-|Entrant|ssl0.ovh.net|SSL/TLS|995|
-|Sortant|ssl0.ovh.net|SSL/TLS|465|
+|Entrant|pop.mail.ovh.ca|SSL/TLS|995|
+|Sortant|smtp.mail.ovh.ca|SSL/TLS|465|
 
 ### Étape 2 : utiliser l'adresse e-mail
 

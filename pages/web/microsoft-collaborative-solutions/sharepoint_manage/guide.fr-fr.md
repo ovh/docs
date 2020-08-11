@@ -7,7 +7,7 @@ section: Sharepoint
 order: 1
 ---
 
-**Dernière mise à jour le 15/04/2020**
+**Dernière mise à jour le 11/08/2020**
 
 ## Objectif
 
@@ -107,6 +107,22 @@ Par défaut, un compte bénéficiant d'une licence n'a pas les droits administra
 Sur les deux types de plateformes SharePoint, vous retrouvez le bouton `Rétablir droits administrateur`{.action} dans l'onglet `Utilisateur`. Il permet de remettre en place les droits administrateur de la plateforme en cas de mauvaise manipulation depuis l'interface SharePoint.
 
 ![sharepoint](images/order-manage-sharepoint-09.png){.thumbnail}
+
+#### **Editer les fichiers Office 365 en ligne**
+
+Il est possible d'éditer directement en ligne vos fichiers Office 365 tel qu'un fichier *.docx* ou *.xls*.
+
+Pour cela vous devez posséder une licence Office 365 valide et le confirmer dans votre espace client OVHcloud.
+
+Dirigez-vous dans l'onglet `Utilisateurs` de votre plateforme puis cliquez sur `...`{.action} à droite du compte et enfin sur `Ajouter une licence Office`{.action}
+
+![sharepoint](images/order-manage-sharepoint-10.png){.thumbnail}
+
+Cliquez sur `valider`{.action} après avoir confirmé que vous possédez bien une licence Office 365.
+
+![sharepoint](images/order-manage-sharepoint-11.png){.thumbnail}
+
+Il vous sera ensuite possible d'éditer vos fichiers Office 365 directement depuis l'interface web de votre sharepoint.
 
 ## Aller plus loin
 

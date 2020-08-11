@@ -57,8 +57,8 @@ A continuación, haga clic en el botón `Iniciar sesión`{.action}. Aparecerá u
 |Campo|Descripción|
 |---|---|
 |Tipo de cuenta|Le recomendamos que utilice **IMAP** (opción por defecto). También puede elegir **POP** (almacenamiento de los mensajes de correo en local en su aplicación Mail) en el menú desplegable.|
-|Servidor de correo entrante|Introduzca el servidor **ssl0.ovh.net**.|
-|Servidor de correo saliente|Introduzca el servidor **ssl0.ovh.net**.|
+|Servidor de correo entrante|Introduzca el servidor **imap.mail.ovh.ca**.|
+|Servidor de correo saliente|Introduzca el servidor **smtp.mail.ovh.ca**.|
 
 Haga de nuevo clic en `Iniciar sesión`{.action}. Si los datos introducidos son correctos, la aplicación se conectará a la cuenta.
 
@@ -74,15 +74,15 @@ Si la aplicación le pide que introduzca de forma manual algunos datos técnicos
 
 |Tipo de servidor|Nombre del servidor|SSL|Puerto|
 |---|---|---|---|
-|Entrante|ssl0.ovh.net|Sí|993|
-|Saliente|ssl0.ovh.net|Sí|465| 
+|Entrante|imap.mail.ovh.ca|Sí|993|
+|Saliente|smtp.mail.ovh.ca|Sí|465| 
 
 **Configuración en POP**
 
 |Tipo de servidor|Nombre del servidor|SSL|Puerto|
 |---|---|---|---|
-|Entrante|ssl0.ovh.net|Sí|995|
-|Saliente|ssl0.ovh.net|Sí|465|
+|Entrante|pop.mail.ovh.ca|Sí|995|
+|Saliente|smtp.mail.ovh.ca|Sí|465|
 
 ### 2. Utilizar la dirección de correo electrónico
 
