@@ -55,9 +55,9 @@ Renseignez à présent les informations demandées :
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|
 |Nom du compte|Précisez le nom vous permettant de reconnaître ce compte parmi d'autres affichés dans votre application Courrier.|
 |Envoyer vos messages en utilisant ce nom|Renseignez le nom qui s'affichera dans le champ d'expéditeur lorsque des e-mails seront envoyés avec cette adresse.|
-|Serveur de courrier entrant|Renseignez le serveur « ssl0.ovh.net:993 ».|
+|Serveur de courrier entrant|Renseignez le serveur « imap.mail.ovh.ca:993 ».|
 |Type de compte|Nous vous conseillons une utilisation en **IMAP4**. Vous pouvez cependant sélectionner **POP** (stockage des e-mails en local sur votre application Mail) dans le menu déroulant.|
-|Serveur de courrier sortant|Renseignez le serveur « ssl0.ovh.net:465 ».|
+|Serveur de courrier sortant|Renseignez le serveur « smtp.mail.ovh.ca:465 ».|
 
 Assurez-vous que les cases sont bien cochées pour les choix suivants :
 
@@ -78,15 +78,15 @@ Si vous êtes amené à renseigner manuellement des champs techniques dans les p
 
 |Type de serveur|Nom du serveur|SSL|Port|
 |---|---|---|---|
-|Entrant|ssl0.ovh.net|Oui|993|
-|Sortant|ssl0.ovh.net|Oui|465|
+|Entrant|imap.mail.ovh.ca|Oui|993|
+|Sortant|smtp.mail.ovh.ca|Oui|465|
 
 - **Pour une configuration en POP**
 
 |Type de serveur|Nom du serveur|SSL|Port|
 |---|---|---|---|
-|Entrant|ssl0.ovh.net|Oui|995|
-|Sortant|ssl0.ovh.net|Oui|465|
+|Entrant|pop.mail.ovh.ca|Oui|995|
+|Sortant|smtp.mail.ovh.ca|Oui|465|
 
 ### Étape 2 : utiliser l'adresse e-mail
 

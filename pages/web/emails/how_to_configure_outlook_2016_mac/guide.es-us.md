@@ -51,9 +51,9 @@ Introduzca su dirección de correo electrónico y haga clic en `Continuar`{.acti
 |Dirección de correo electrónico|Introduzca un nombre que le permita diferenciar su cuenta del resto de cuentas de su aplicación Outlook.|
 |Nombre de usuario|Introduzca la dirección de correo electrónico completa.|
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
-|Servidor de entrada|Introduzca el servidor **ssl0.ovh.net**. Deje marcada la casilla **Usar SSL para conectar (recomendado)**.|
+|Servidor de entrada|Introduzca el servidor **imap.mail.ovh.ca**. Deje marcada la casilla **Usar SSL para conectar (recomendado)**.|
 |Puerto de entrada|Introduzca el puerto **993**.|
-|Servidor de salida|Introduzca el servidor **ssl0.ovh.net**. Deje marcada la casilla **Usar SSL para conectar (recomendado)**.|
+|Servidor de salida|Introduzca el servidor **smtp.mail.ovh.ca**. Deje marcada la casilla **Usar SSL para conectar (recomendado)**.|
 |Puerto de salida|Introduzca el puerto **465**.|
 
 Una vez introducidos los datos, haga clic en el botón `Agregar cuenta`{.action}. Si son correctos, la aplicación se conectará a la cuenta.
@@ -68,15 +68,15 @@ En caso de que la aplicación le pida que introduzca de forma manual algunos dat
 
 |Tipo de servidor|Nombre del servidor|SSL|Puerto|
 |---|---|---|---|
-|Entrante|ssl0.ovh.net|Sí|993|
-|Saliente|ssl0.ovh.net|Sí|465|
+|Entrante|imap.mail.ovh.ca|Sí|993|
+|Saliente|smtp.mail.ovh.ca|Sí|465|
 
 **Configuración en POP**
 
 |Tipo de servidor|Nombre del servidor|SSL|Puerto|
 |---|---|---|---|
-|Entrante|ssl0.ovh.net|Sí|995|
-|Saliente|ssl0.ovh.net|Sí|465|
+|Entrante|pop.mail.ovh.ca|Sí|995|
+|Saliente|smtp.mail.ovh.ca|Sí|465|
 
 ### 2. Utilizar la dirección de correo electrónico
 

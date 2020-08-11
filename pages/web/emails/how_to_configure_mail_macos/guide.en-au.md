@@ -58,8 +58,8 @@ Click on the `Log in`{.action} button. A message will appear, prompting you to c
 |Information|Description|
 |---|---|
 |Account type|We recommend using **IMAP** (selected by default). You can also select **POP** (in which your emails will be stored locally, on your Mail app) in the drop-down menu.|
-|Incoming server|Enter the following server: ssl0.ovh.net.|
-|Outgoing server|Enter the following server: ssl0.ovh.net.|
+|Incoming server|Enter the following server: imap.mail.ovh.ca.|
+|Outgoing server|Enter the following server: smtp.mail.ovh.ca.|
 
 Click again on the `Log in`{.action} button. If all the information you have entered is correct, you will be able to log in to your account straight away.
 
@@ -75,15 +75,15 @@ If you need to enter any settings manually in your account preferences, the tech
 
 |Server type|Server name|SSL|Port|
 |---|---|---|---|
-|Incoming|ssl0.ovh.net|Yes|993|
-|Outgoing|ssl0.ovh.net|Yes|465| 
+|Incoming|imap.mail.ovh.ca|Yes|993|
+|Outgoing|smtp.mail.ovh.ca|Yes|465| 
 
 - **for POP configuration**
 
 |Server type|Server name|SSL|Port|
 |---|---|---|---|
-|Incoming|ssl0.ovh.net|Yes|995|
-|Outgoing|ssl0.ovh.net|Yes|465|
+|Incoming|pop.mail.ovh.ca|Yes|995|
+|Outgoing|smtp.mail.ovh.ca|Yes|465|
 
 ### Step 2: Start using your email address
 

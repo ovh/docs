@@ -76,7 +76,7 @@ You will need to set up your email address on the device you want to check your 
 
 |Windows|Outlook|Apple|Android|Other|
 |---|---|---|---|---|
-|[Windows 10 Mail](../mail-configuration-windows-10/)|[Outlook 2016](../configuration-outlook-2016/)|[macOS Mail](../guide-configuring-mail-on-macos/)|[Android](../configuration-android/)}|[Gmail online interface](../gmail-configuration/)|
+|[Windows 10 Mail](../mail-configuration-windows-10/)|[Outlook 2016](../configuration-outlook-2016/)|[macOS Mail](../guide-configuring-mail-on-macos/)|[Android](../configuration-android/)|[Gmail online interface](../gmail-configuration/)|
 | | |[iPhone and iPad](../email_hosting_iphone_ios_91_configuration/){.external}| | |
 
 If you simply need the information required to configure your email account, the settings to use are listed below:
@@ -85,15 +85,15 @@ If you simply need the information required to configure your email account, the
 
 |Server type|Server name|Port (with SSL)|Port (without SSL)|
 |---|---|---|---|
-|Incoming|SSL0.OVH.NET|993|143|
-|Outgoing|SSL0.OVH.NET|465|587|
+|Incoming|imap.mail.ovh.ca|993|143|
+|Outgoing|smtp.mail.ovh.ca|465|587|
 
 - **For POP configuration**
 
 |Server type|Server name|Port (with SSL)|Port (without SSL)|
 |---|---|---|---|
-|Incoming|SSL0.OVH.NET|995|110|
-|Outgoing|SSL0.OVH.NET|465|587|
+|Incoming|pop.mail.ovh.ca|995|110|
+|Outgoing|smtp.mail.ovh.ca|465|587|
 
 > [!warning]
 >
@@ -152,15 +152,15 @@ If you simply need the information required to configure your email account, the
 
 |Server type|Server name|Port (with SSL)|Port (without SSL)|
 |---|---|---|---|
-|Incoming|SSL0.OVH.NET|993|143|
-|Outgoing|SSL0.OVH.NET|465|587|
+|Incoming|imap.mail.ovh.ca|993|143|
+|Outgoing|smtp.mail.ovh.caT|465|587|
 
 - **For POP configuration**
 
 |Server type|Server name|Port (with SSL)|Port (without SSL)|
 |---|---|---|---|
-|Incoming|SSL0.OVH.NET|995|110|
-|Outgoing|SSL0.OVH.NET|465|587|
+|Incoming|pop.mail.ovh.ca|995|110|
+|Outgoing|smtp.mail.ovh.caT|465|587|
 
 > [!warning]
 >
