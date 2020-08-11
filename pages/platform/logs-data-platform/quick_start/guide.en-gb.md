@@ -26,7 +26,7 @@ Your Logs Data Platform username is located on the bottom left of the page, in t
 
 1. Identify your assigned access point for this account and your LDP username. 
 2. Reset your password of your LDP account.
-3. Edit your LDP access tokens (more on this functionality [here](../tokens_logs_data_platform/guide.fr-fr.md){.ref}). 
+3. Edit your LDP access tokens (more on this functionality [here](../tokens_logs_data_platform/){.ref}). 
 
 
 The main page allows you also to consult the SSL certificates used on your access point in the **SSL Configuration panel**. This panel lets you also review the available ports and formats supported.
@@ -63,9 +63,9 @@ The menu **"..."** at the right gives you several features:
 - **Edit** allows you to edit the name and the description of your Stream.
 - **Graylog access** gives you a direct access to your stream and its logs.
 - **Copy the write token** allows you to retrieve your token and to use it in your different logs collector.
-- **Monitor in real-time** allows you to see the logs incoming into your stream in real-time. Note that Graylog also provides this functionality. On this page you can also **Test** different log formats from your computer to your stream. [More about](../ldp_tail/guide.fr-fr.md){.ref}
-- **Manage alerts** allows you to define your alert conditions on the logs routed to the stream. [More about](../alerting/guide.fr-fr.md){.ref}
-- **Archives** allows you to download the cold stored archives. [More about](../cold_storage/guide.fr-fr.md){.ref}
+- **Monitor in real-time** allows you to see the logs incoming into your stream in real-time. Note that Graylog also provides this functionality. On this page you can also **Test** different log formats from your computer to your stream. [More about](../ldp_tail/){.ref}
+- **Manage alerts** allows you to define your alert conditions on the logs routed to the stream. [More about](../alerting/){.ref}
+- **Archives** allows you to download the cold stored archives. [More about](../cold_storage/){.ref}
 - **Delete** Deletes your stream from the system and all related content.
 
 Logs Data Platform supports several logs formats, each one of them has its own advantages and disadvantages. Here are the different formats available
@@ -75,7 +75,7 @@ Logs Data Platform supports several logs formats, each one of them has its own a
 - **RFC 5424**: This format is commonly used by logs utility such as syslog. It is extensible enough to allow you to send all your data. More information about it can be found at this link: [RFC
 5424](https://tools.ietf.org/html/rfc5424){.external}.
 - **Cap'n'Proto**: The most efficient log format. this is a binary format that allows you to maintain a low footprint and high speed performance. For more information, check out the official website: [Cap'n'Proto](https://capnproto.org/){.external}.
-- **Beats**: A secure and reliable protocol used by the beats family in the Elasticsearch ecosystem (Ex: [Filebeat](../filebeat_logs/guide.fr-fr.md){.ref}, [Metricbeat](https://www.elastic.co/beats/metricbeat){.external}, [Winlogbeat](https://www.elastic.co/beats/winlogbeat){.external}).
+- **Beats**: A secure and reliable protocol used by the beats family in the Elasticsearch ecosystem (Ex: [Filebeat](../filebeat_logs/){.ref}, [Metricbeat](https://www.elastic.co/beats/metricbeat){.external}, [Winlogbeat](https://www.elastic.co/beats/winlogbeat){.external}).
 
 Here are the ports you can use on your cluster to send your logs. You can either use the secured ones with SSL Enabled (TLS >= 1.1) or use the plain unsecured ones if you can't use a SSL transport.
 
@@ -184,12 +184,12 @@ Mixing various widgets on the same dashboard give to this feature all its sense.
 ## Going further
 We have only scratched the surface of what Logs Data Platform can do for you. you will find soon enough how to:
 
-- [Send correctly formatted logs to use custom types as number, boolean and other stuffs](../field_naming_conventions/guide.fr-fr.md){.ref}
-- [Configure your syslog-ng to send your Linux logs to Logs Data Platform.](../how_to_log_your_linux/guide.fr-fr.md){.ref}
+- [Send correctly formatted logs to use custom types as number, boolean and other stuffs](../field_naming_conventions/){.ref}
+- [Configure your syslog-ng to send your Linux logs to Logs Data Platform.](../how_to_log_your_linux/){.ref}
 - Using roles to allow other users of the platform to let them see yours beautiful Dashboards or let them dig in your Streams instead of doing it for them.
-- [Using Kibana and aliases to unleash the power of elasticsearch](../using_kibana_with_logs/guide.fr-fr.md){.ref}
+- [Using Kibana and aliases to unleash the power of elasticsearch](../using_kibana_with_logs/){.ref}
 - If you want to master Graylog, this is the place to go: [Graylog documentation](http://docs.graylog.org/en/2.0/pages/queries.html){.external}
-- Getting Started: [Quick Start](./guide.fr-fr.md){.ref}
+- Getting Started: [Quick Start](./){.ref}
 - Documentation: [Guides](../product.fr-fr.md){.ref}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
 - Join our community of users on [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}

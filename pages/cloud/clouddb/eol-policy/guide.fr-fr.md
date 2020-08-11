@@ -11,11 +11,11 @@ Les bases de données managées OVH sont basées sur plusieurs versions majeures
 
 Les produits couverts par cette politique de fin de vie sont :
 
-- Les services Cloud Databases Publiques, instances SGBD dédiées joignables via le réseau publique ([voir les annonces](../clouddb-eos-eol/guide.fr-fr.md)).
+- Les services Cloud Databases Publiques, instances SGBD dédiées joignables via le réseau publique ([voir les annonces](../clouddb-eos-eol/)).
 
-- Les services Cloud Databases Web Hosting (également connues sous le nom de services SQLPrivé), instances SGBD dédiées joignables via le réseau Web Hosting ([voir les annonces](../privatesql-eos-eol/guide.fr-fr.md)).
+- Les services Cloud Databases Web Hosting (également connues sous le nom de services SQLPrivé), instances SGBD dédiées joignables via le réseau Web Hosting ([voir les annonces](../privatesql-eos-eol/)).
 
-- Les services SharedSQL Web Hosting, bases de données MySQL joignables via le réseau Web Hosting ([voir les annonces](../sharedsql-eos-eol/guide.fr-fr.md)).
+- Les services SharedSQL Web Hosting, bases de données MySQL joignables via le réseau Web Hosting ([voir les annonces](../sharedsql-eos-eol/)).
 
 # Définitions et lignes directrices de la politique de fin de vie
 

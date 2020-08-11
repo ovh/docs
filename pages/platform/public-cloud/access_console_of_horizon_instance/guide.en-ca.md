@@ -21,7 +21,7 @@ In the event of loss of access to your instance, wether caused by a configuratio
 
 - [Configure user access to Horizon](../configure_user_access_to_horizon/)
 - An already created instance
-- [A root password](../become_root_and_change_password){.external}  created on the instance.
+- [A root password](../become_the_root_user_and_select_a_password/){.external}  created on the instance.
 
 ## Instructions
 

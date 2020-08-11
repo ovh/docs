@@ -20,7 +20,7 @@ Ce guide vous explique comment créer un volume supplémentaire puis comment le 
 
 
 ### Prérequis
-- Disposer d'une [instance Public Cloud](../guide.fr-fr.md){.ref}
+- Disposer d'une [instance Public Cloud](../){.ref}
 
 
 ## Création du volume

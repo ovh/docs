@@ -74,7 +74,7 @@ Les sauvegardes ne sont que l’un des éléments à prévoir en cas d’attaque
 
 Dans ce cas, il est préférable d’effectuer une réinstallation complète du site web et de renvoyer les données de la base, ainsi que les fichiers générés et uploadés par les clients. Dans le cas de rondcoin, cela reviendrait à redéployer le code source de l’application depuis zéro, puis de renvoyer les images des petites annonces afin de redéployer la base de données avec les informations des clients. Bien entendu, il s’agit de stratégies qui varient fortement en fonction de chaque site web.
 
-Demain, nous reviendrons aux fonctionnalités de rondcoin et nous verrons [comment envoyer des e-mails](../day13/guide.fr-fr.md){.ref} à ses clients de manière efficace avec les hébergements web d’OVH.
+Demain, nous reviendrons aux fonctionnalités de rondcoin et nous verrons [comment envoyer des e-mails](../day13/){.ref} à ses clients de manière efficace avec les hébergements web d’OVH.
 
 À demain !
 

@@ -73,6 +73,5 @@ Once the two recipients confirm their agreement via email, the domain name holde
 
 ## Go further
 
-[Managing contacts for your services](../.../customer/managing-contacts/)
 
 Join our community of users on https://community.ovh.com/en/.
