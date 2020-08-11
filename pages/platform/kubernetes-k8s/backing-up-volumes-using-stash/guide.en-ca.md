@@ -269,7 +269,7 @@ Download pre-build binaries from [`stashed/cli`](https://github.com/stashed/cli/
 
 A detailed explanation of Volume Snapshot with Stash is available in the [official documentation](https://stash.run/docs/v0.9.0-rc.6/guides/latest/volumesnapshot/overview/).
 
-In Kubernetes, a [VolumeSnapshot](<(https://kubernetes.io/docs/concepts/storage/volume-snapshots/)>) represents a snapshot of a volume on a storage system. It was introduced as an Alpha feature in Kubernetes v1.12 and has been promoted to an Beta feature in Kubernetes 1.17.
+In Kubernetes, a [VolumeSnapshot](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) represents a snapshot of a volume on a storage system. It was introduced as an Alpha feature in Kubernetes v1.12 and has been promoted to an Beta feature in Kubernetes 1.17.
 
 In order to support `VolumeSnapshot`, your `PersistenVolumes` need to use a StorageClass with a [CSI](https://github.com/container-storage-interface/spec) driver that supports the feature. Currently OVHcloud Managed Kubernetes cluster propose you two of these `StorageClasses`: `csi-cinder-classic` and `csi-cinder-high-speed`.
 

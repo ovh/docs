@@ -21,7 +21,7 @@ Pas d'inquiétude, nous allons détailler tout ça.
 ### Instance
 Le terme instance est souvent employé pour parler tout simplement de serveurs d'un service de cloud computing. Il arrive également que l'on parle de serveur cloud.
 
-Dans tous les cas il s'agit de la même chose ; un serveur gérer par une plateforme de cloud computing en permettant une utilisation "**as a Service**". L'utilisateur bénéficie alors d'un mode de facturation type ["Pay as you go"](../guide.fr-fr.md){.ref} et d'une API permettant de piloter l'infrastructure par des outils compatibles.
+Dans tous les cas il s'agit de la même chose ; un serveur gérer par une plateforme de cloud computing en permettant une utilisation "**as a Service**". L'utilisateur bénéficie alors d'un mode de facturation type ["Pay as you go"](../){.ref} et d'une API permettant de piloter l'infrastructure par des outils compatibles.
 
 À noter que, même si le plus souvent une instance est un serveur virtuel comme c'est le cas dans l'offre Public Cloud d'OVH, il peut très bien s'agir d'autre chose comme un serveur physique.
 

@@ -265,7 +265,7 @@ Once you delete data in metrics, you will not be able to retrieve them. Be caref
 
 ## Go further
 
-- To learn more about pushing and querying with OpenTSDB, you can follow our protocol guide [use OpenTSDB](../protocol_opentsdb/guide.fr-fr.md){.ref}.
+- To learn more about pushing and querying with OpenTSDB, you can follow our protocol guide [use OpenTSDB](../protocol_opentsdb/){.ref}.
 - Documentation: [Guides](../product.fr-fr.md){.ref}
 - Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}

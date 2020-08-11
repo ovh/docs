@@ -23,12 +23,12 @@ Each protocol provides different capabilities. Some will be easier than others b
 
 | Protocol   | Push                         | Query                        | Protocol documentation                                            | Features                                                                          | Corresponding Open Source project                                                                   |
 | ---------- | ---------------------------- | ---------------------------- | ----------------------------------------------------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| InfluxDB   | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | [Metrics Influx](../protocol_influxdb/guide.fr-fr.md){.ref}       | <i class="fas fa-star"></i>                                                       | [https://docs.influxdata.com/influxdb/v1.7/](https://docs.influxdata.com/influxdb/v1.7/){.external} |
-| OpenTSDB   | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | [Metrics OpenTSDB](../protocol_opentsdb/guide.fr-fr.md){.ref}     | <i class="fas fa-star"><i class="fas fa-star">                                    | [http://opentsdb.net/](http://opentsdb.net/){.external}                                             |
-| Graphite   | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | [Metrics Graphite](../protocol_graphite/guide.fr-fr.md){.ref}     | <i class="fas fa-star"><i class="fas fa-star"></i>                                | [https://graphiteapp.org/](https://graphiteapp.org/){.external}                                     |
-| Metrics2.0 | <i class="fas fa-check"></i> | <i class="fas fa-times"></i> | [Metrics 2.0 spec](../protocol_opentsdb/guide.fr-fr.md){.ref}     | <i class="fas fa-star"><i class="fas fa-star">                                    | [http://metrics20.org/](http://metrics20.org/){.external}                                           |
-| Prometheus | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | [Metrics Prometheus](../protocol_prometheus/guide.fr-fr.md){.ref} | <i class="fas fa-star"></i><i class="fas fa-star"></i>                            | [https://prometheus.io/](https://prometheus.io/){.external}                                         |
-| Warp 10™   | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | [Metrics Warp 10™](../protocol_warp10/guide.fr-fr.md){.ref}       | <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> | [https://warp10.io/](https://warp10.io/){.external}                                                 |
+| InfluxDB   | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | [Metrics Influx](../protocol_influxdb/){.ref}       | <i class="fas fa-star"></i>                                                       | [https://docs.influxdata.com/influxdb/v1.7/](https://docs.influxdata.com/influxdb/v1.7/){.external} |
+| OpenTSDB   | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | [Metrics OpenTSDB](../protocol_opentsdb/){.ref}     | <i class="fas fa-star"><i class="fas fa-star">                                    | [http://opentsdb.net/](http://opentsdb.net/){.external}                                             |
+| Graphite   | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | [Metrics Graphite](../protocol_graphite/){.ref}     | <i class="fas fa-star"><i class="fas fa-star"></i>                                | [https://graphiteapp.org/](https://graphiteapp.org/){.external}                                     |
+| Metrics2.0 | <i class="fas fa-check"></i> | <i class="fas fa-times"></i> | [Metrics 2.0 spec](../protocol_opentsdb/){.ref}     | <i class="fas fa-star"><i class="fas fa-star">                                    | [http://metrics20.org/](http://metrics20.org/){.external}                                           |
+| Prometheus | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | [Metrics Prometheus](../protocol_prometheus/){.ref} | <i class="fas fa-star"></i><i class="fas fa-star"></i>                            | [https://prometheus.io/](https://prometheus.io/){.external}                                         |
+| Warp 10™   | <i class="fas fa-check"></i> | <i class="fas fa-check"></i> | [Metrics Warp 10™](../protocol_warp10/){.ref}       | <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> | [https://warp10.io/](https://warp10.io/){.external}                                                 |
 
 Most of the protocols don't include **authentification**, so **you need to add the tokens in the Basic Auth field.**
 
@@ -41,7 +41,7 @@ If you're wondering which protocol to choose, here is a simple guideline :
 
 ### Authentification and endpoints
 
-Metrics has builtin security to secure your data. In the [Start section](../metrics_order/guide.fr-fr.md){.ref} you've learnt where to get them from the manager. We've generated a default pair of **tokens** :
+Metrics has builtin security to secure your data. In the [Start section](../metrics_order/){.ref} you've learnt where to get them from the manager. We've generated a default pair of **tokens** :
 
 - a **READ** token to Query
 - a **WRITE** token to Push Data

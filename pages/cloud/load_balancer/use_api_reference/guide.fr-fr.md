@@ -16,7 +16,7 @@ Cette section décrit brièvement les principales fonctions de l'API pour l'OVH 
 > Attention, pour des raisons de compatibilité le point d'entrée de l'ancien système OVH Load Balancer est toujours présent dans l'API /ip/loadBalancing , à ne pas confondre avec le nouveau /ipLoadbalancing.
 > 
 
-Pour une référence complète aux fonctions de l'API du service OVH Load Balancer, c'est [](../use_api_details/guide.fr-fr.md){.ref}
+Pour une référence complète aux fonctions de l'API du service OVH Load Balancer, c'est [](../use_api_details/){.ref}
 
 
 > [!primary]

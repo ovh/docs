@@ -96,4 +96,4 @@ En fonction de la clef utilisée, il se peut que l'interface usb0 ne s'affiche p
 ## Politique d'agrégation
 Afin de ne pas dépasser votre **quota de DATA** 3G/4G, vous pouvez utiliser cette connexion en mode **backup** afin qu'elle ne soit solicitée qu'en cas de coupure des autres liens.
 
-Pour ce faire, veuillez suivre ce guide : [Désactivez ou passez une de vos connexions en backup](../middle_desactivez_ou_passez_une_de_vos_connexions_en_backup/guide.fr-fr.md){.ref}
+Pour ce faire, veuillez suivre ce guide : [Désactivez ou passez une de vos connexions en backup](../middle_desactivez_ou_passez_une_de_vos_connexions_en_backup/){.ref}

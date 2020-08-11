@@ -8,14 +8,14 @@ order: 5
 
 
 ## Préambule
-Vous avez probablement [créé un nouveau volume additionnel](../guide.fr-fr.md){.ref}, ou disque additionnel.
+Vous avez probablement [créé un nouveau volume additionnel](../){.ref}, ou disque additionnel.
 
 Ce guide vous explique comment créer un disque supplémentaire puis le rattacher sur l'une de vos instances.
 
 
 ### Prérequis
-- Une [instance](../guide.fr-fr.md){.ref}
-- Un [volume additionnel](../guide.fr-fr.md){.ref} rattaché
+- Une [instance](../){.ref}
+- Un [volume additionnel](../){.ref} rattaché
 
 
 ## Montage du disque
