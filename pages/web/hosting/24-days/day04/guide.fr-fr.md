@@ -10,7 +10,7 @@ L'aventure mypersonaldomain.ovh est sur le point de commencer. Les équipes de d
 
 Sur ce blog, l’équipe parlera des coulisses du développement du site, ainsi que des actualités plus marketing ; présence sur des événements, révélation des nouvelles fonctionnalités, etc.
 
-Après la lecture du [jour 2](../day02/guide.fr-fr.md){.ref}, l’équipe a décidé d’ouvrir le blog sur le sous-domaine blog.mypersonaldomain.ovh, mais aussi d’enregistrer le domaine rondcoin.tech  et de le rediriger vers le blog.
+Après la lecture du [jour 2](../day02/){.ref}, l’équipe a décidé d’ouvrir le blog sur le sous-domaine blog.mypersonaldomain.ovh, mais aussi d’enregistrer le domaine rondcoin.tech  et de le rediriger vers le blog.
 
 > [!warning]
 >
@@ -131,7 +131,7 @@ OVH gère tout cela à votre place, et vous pouvez configurer une redirection 30
 
 La propagation de la configuration DNS peut prendre entre cinq minutes et quelques heures en fonction du cache DNS des différents fournisseurs d’accès à Internet. Une fois que ceux-ci seront à jour, l’adresse [http://rondcoin.tech](http://rondcoin.tech){.external} redirigera vers [http://blog.mypersonaldomain.ovh](http://blog.mypersonaldomain.ovh){.external}
 
-L’équipe de communication du Rondcoin est plutôt fière d’avoir terminé la mise en place du blog et travaille désormais à la rédaction de contenu. Cependant, le site n’est pas encore en ligne et mypersonaldomain.ovh redirige toujours vers une page par défaut de OVH. Nous verrons demain comment [mettre en ligne le site](../day05/guide.fr-fr.md){.ref} que l’on a développé en utilisant FTP.
+L’équipe de communication du Rondcoin est plutôt fière d’avoir terminé la mise en place du blog et travaille désormais à la rédaction de contenu. Cependant, le site n’est pas encore en ligne et mypersonaldomain.ovh redirige toujours vers une page par défaut de OVH. Nous verrons demain comment [mettre en ligne le site](../day05/){.ref} que l’on a développé en utilisant FTP.
 
 À demain
 

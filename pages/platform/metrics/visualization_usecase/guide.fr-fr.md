@@ -40,7 +40,7 @@ Following tools are all compatible with Metrics Data Platform. This is not exhau
 
 ## Go further
 
-- You can learn how to configure a Grafana source by following [this guide](../visualization_grafana/guide.fr-fr.md){.ref}.
+- You can learn how to configure a Grafana source by following [this guide](../visualization_grafana/){.ref}.
 - Documentation: [Guides](../product.en-gb.md){.ref}
 - Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}

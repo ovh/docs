@@ -63,7 +63,7 @@ This example configure a filter on exported metrics.
 
 ### Beamium configuration
 
-We will use Beamium to forward data to Metrics Data Platform as documented [Here](../source_beamium/guide.fr-fr.md){.ref}.
+We will use Beamium to forward data to Metrics Data Platform as documented [Here](../source_beamium/){.ref}.
 
 ```yaml
 scrapers:

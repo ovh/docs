@@ -21,7 +21,7 @@ OVHcloud provides you with a space where you can view, manage and pay your vario
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
-- access as a billing contact for your service (you can read more about the different contact types in our guide to [Managing contacts for your services](../customer/managing-contacts/){.external})
+- access as a billing contact for your service (you can read more about the different contact types in our guide to [Managing contacts for your services](../../customer/managing-contacts/){.external})
 
 
 ## Instructions
