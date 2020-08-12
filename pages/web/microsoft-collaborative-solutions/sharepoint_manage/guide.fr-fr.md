@@ -45,9 +45,7 @@ Pour consulter cet e-mail, connectez-vous à votre [espace client OVHcloud](http
 
 Pour débuter cette configuration, dirigez-vous dans la section `Web` de votre espace client. Cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Sharepoint`{.action} et sélectionnez la plateforme SharePoint concernée.
 
-Définissez le nom de votre plateforme dans la case « URL du SharePoint » puis cliquez sur `Valider l'URL`{.action}
-
-![sharepoint](images/order-manage-sharepoint-04.png){.thumbnail}  
+Définissez le nom de votre plateforme dans la case « URL du SharePoint » puis cliquez sur `Valider l'URL`{.action} 
 
 > [!warning]
 >
@@ -67,7 +65,7 @@ Dirigez-vous dans l'onglet `Domaines` et cliquez sur `Ajouter un domaine`{.actio
 
 - Si vous choisissez un nom de domaine présent dans votre espace client, celui-ci sera automatiquement validé, il ne vous restera plus qu'à configurer vos utilisateurs.
  
-- Si vous choisissez un nom de domaine externe, il est nécessaire d'ajouter un enregistrement CNAME dans la zone DNS du nom de domaine pour le valider sur la plateforme SharePoint. L'enregistrement CNAME à renseigner est accessible en cliquant sur l'icône d'information à côté de la mention « Validation de domaine en cours », comme ci-dessous.
+- Si vous choisissez un nom de domaine externe, il est nécessaire d'ajouter un enregistrement CNAME dans la zone DNS du nom de domaine pour le valider sur la plateforme SharePoint. L'enregistrement CNAME à renseigner est accessible en cliquant sur l'icône d'information `i` à côté de la mention « Validation de domaine en cours », comme ci-dessous.
 
 
 ![sharepoint](images/order-manage-sharepoint-05.png){.thumbnail}
