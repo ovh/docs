@@ -3,7 +3,7 @@ title: Query Deployed Model
 slug: query-model
 excerpt: Learn how to query deployed model
 section: Tutorials
-order: 4
+order: 6
 ---
 *Last updated 7th February, 2020.*
 
@@ -171,8 +171,8 @@ curl \
 }
 ```
 
-In this example, our model predicts the **output\_label** for our
-**input item** to be `0` with the following probabilities :
+In this example, our model predicts the **output_label** for our **input
+item** to be `0` with the following probabilities :
 
 -   88% of chance to be `0`
 -   12% of chance to be `1`
@@ -235,13 +235,13 @@ curl \
 }
 ```
 
-In this example, our model predicts the **output\_label** for our
-**first input item** to be `0` with the following probabilities :
+In this example, our model predicts the **output_label** for our **first
+input item** to be `0` with the following probabilities :
 
 -   88% of chance to be `0`
 -   12% of chance to be `1`
 
-It also predicts the **output\_label** for our **second input item** to
+It also predicts the **output_label** for our **second input item** to
 be `1` with the following probabilities :
 
 -   1% of chance to be `0`
