@@ -17,13 +17,13 @@ La solución de alojamiento web permite disfrutar de direcciones de correo elect
 ## Requisitos
 
 - Tener una solución MX Plan  (incluida en un [plan de hosting de OVHcloud]({ovh_www}/hosting/){.external}, en un [alojamiento gratuito Start 10M]({ovh_www}/dominios/oferta_hosting_start10m.xml){.external} o contratada por separado).
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}.
 
 ## Procedimiento
 
-Una vez que el MX Plan haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente]({ovh_www}/mxplan-migration/){.external}, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
+Una vez que el MX Plan haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente]({ovh_www}/mxplan-migration/){.external}, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
 
-Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio correspondiente. Siga leyendo esta guía en función de su versión:
+Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio correspondiente. Siga leyendo esta guía en función de su versión:
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
@@ -88,15 +88,15 @@ A continuación se indican los parámetros necesarios para configurar una cuenta
 
 |Tipo de servidor|Nombre del servidor|Puerto (con SSL)|Puerto (sin SSL)|
 |---|---|---|---|
-|Entrante|SSL0.OVH.NET|993|143|
-|Saliente|SSL0.OVH.NET|465|587|
+|Entrante|imap.mail.ovh.ca|993|143|
+|Saliente|smtp.mail.ovh.ca|465|587|
 
 - **Configuración en POP**
 
 |Tipo de servidor|Nombre del servidor|Puerto (con SSL)|Puerto (sin SSL)|
 |---|---|---|---|
-|Entrante|SSL0.OVH.NET|995|110|
-|Saliente|SSL0.OVH.NET|465|587|
+|Entrante|pop.mail.ovh.ca|995|110|
+|Saliente|smtp.mail.ovh.ca|465|587|
 
 > [!warning]
 >
@@ -160,15 +160,15 @@ A continuación se indican los parámetros necesarios para configurar una cuenta
 
 |Tipo de servidor|Nombre del servidor|Puerto (con SSL)|Puerto (sin SSL)|
 |---|---|---|---|
-|Entrante|SSL0.OVH.NET|993|143|
-|Saliente|SSL0.OVH.NET|465|587|
+|Entrante|imap.mail.ovh.ca|993|143|
+|Saliente|smtp.mail.ovh.ca|465|587|
 
 - **Configuración en POP**
 
 |Tipo de servidor|Nombre del servidor|Puerto (con SSL)|Puerto (sin SSL)|
 |---|---|---|---|
-|Entrante|SSL0.OVH.NET|995|110|
-|Saliente|SSL0.OVH.NET|465|587|
+|Entrante|pop.mail.ovh.ca|995|110|
+|Saliente|smtp.mail.ovh.ca|465|587|
 
 > [!warning]
 >

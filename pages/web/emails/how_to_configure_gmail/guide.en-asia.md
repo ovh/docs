@@ -53,7 +53,7 @@ Now enter the settings for the POP server (incoming server) of your OVHcloud ema
 |---|---| 
 |Username|Enter your **full** email address.|  
 |Password|Enter the password for your email address.|
-|POP server|Enter the server “ssl0.ovh.net”.|
+|POP server|Enter the server “pop.mail.ovh.ca”.|
 |Port|Select port 995.|
 
 Regarding the options you can select:
@@ -80,7 +80,7 @@ Now enter the settings for the SMTP server (outgoing server) of your OVHcloud em
 
 |Information|Description| 
 |---|---| 
-|SMTP server|Enter the server “ssl0.ovh.net”.|
+|SMTP server|Enter the server “smtp.mail.ovh.ca”.|
 |Port|Select port 587.|
 |Username|Enter your **full** email address.|  
 |Password|Enter the password for your email address.|

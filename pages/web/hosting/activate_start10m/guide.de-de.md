@@ -3,7 +3,6 @@ title: 'Das kostenlose Start 10M Hosting aktivieren'
 slug: start10m-aktivieren
 excerpt: 'Erfahren Sie hier, wie Sie Ihr Start 10M Hosting aktivieren'
 section: 'Erste Schritte'
-order: 2
 ---
 
 **Letzte Aktualisierung am 05.05.2020**

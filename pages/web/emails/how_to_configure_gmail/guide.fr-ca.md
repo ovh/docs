@@ -53,7 +53,7 @@ Indiquez maintenant les paramètres du serveur POP (serveur entrant) de votre ad
 |---|---| 
 |Nom d'utilisateur|Renseignez l'adresse e-mail **complète**.|  
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|
-|Serveur POP|Renseignez le serveur « ssl0.ovh.net ».|
+|Serveur POP|Renseignez le serveur « pop.mail.ovh.ca ».|
 |Port|Sélectionnez le port « 995 ».|
 
 Concernant les choix que vous pouvez cocher :
@@ -80,7 +80,7 @@ Indiquez maintenant les paramètres du serveur SMTP (serveur sortant) de votre a
 
 |Information|Description| 
 |---|---| 
-|Serveur SMTP|Renseignez le serveur « ssl0.ovh.net ».|
+|Serveur SMTP|Renseignez le serveur « smtp.mail.ovh.ca ».|
 |Port|Sélectionnez le port « 587 ».|
 |Nom d'utilisateur|Renseignez l'adresse e-mail **complète**.|  
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|

@@ -70,7 +70,7 @@ Select your Model, Region, and Image. Then choose your Private Network.
 
 ![Create an instance](images/pci-02_2020.png){.thumbnail}
 
-Finally, choose your billing period  and then click the `Create an instance`{.action} button. For detailed information on the various options, please refer to this guide: [Create an instance in your OVHcloud customer account](../public-cloud/create_an_instance_in_your_ovh_customer_account/){.external}.
+Finally, choose your billing period  and then click the `Create an instance`{.action} button. For detailed information on the various options, please refer to this guide: [Create an instance in your OVHcloud customer account](../../public-cloud/create_an_instance_in_your_ovh_customer_account/){.external}.
 
 
 ### Configure your network interfaces

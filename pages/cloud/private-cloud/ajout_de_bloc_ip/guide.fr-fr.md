@@ -7,7 +7,7 @@ section: Fonctionnalités OVH
 order: 01
 ---
 
-**Dernière mise à jour le 25/06/2020**
+**Dernière mise à jour le 05/08/2020**
 
 ## Objectif
 

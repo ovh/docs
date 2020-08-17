@@ -17,14 +17,14 @@ Esta guía explica cómo empezar con un SQL Privado.
 
 - Tener un SQL Privado (incluido en un [plan de hosting](https://www.ovh.com/world/es/hosting/){.external} o contratado como [opción SQL](https://www.ovh.com/world/es/hosting/opciones-sql.xml){.external}).
 - Tener un [plan de hosting ](https://www.ovh.com/world/es/hosting/){.external} alojado en el mismo datacenter que el SQL Privado (puede consultar dicha información en el área de cliente de OVHcloud).
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## Procedimiento
 
 ### Ver la información general de la instancia
 
-En la columna izquierda del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Bases de datos`{.action} y seleccione el servicio de bases de datos correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
+En la columna izquierda del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Bases de datos`{.action} y seleccione el servicio de bases de datos correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
 
 > [!primary]
 >

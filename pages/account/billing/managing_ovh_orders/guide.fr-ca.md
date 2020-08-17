@@ -35,7 +35,7 @@ Le bon de commande est créé au moment du passage d'une commande. Il liste les 
 |Numéro|Description|
 |---|---|
 |1|Toutes les informations liées au bon de commande sont reprises ici : son numéro, sa date de création ainsi que sa date d'expiration. Il convient de noter que les bons de commande expirés n'apparaîtront plus dans votre espace client.|
-|2|Si vous êtes connecté à votre espace client lors de la commande, le contact facturation apparaîtra à cet endroit. Pour plus d'information sur les différents contacts, reportez-vous à [cette documentation](../customer/gestion-des-contacts/){.external}.|
+|2|Si vous êtes connecté à votre espace client lors de la commande, le contact facturation apparaîtra à cet endroit. Pour plus d'information sur les différents contacts, reportez-vous à [cette documentation](../../customer/gestion-des-contacts/){.external}.|
 |3|Si vous avez enregistré un moyen de paiement en tant que moyen de paiement par défaut, il vous sera proposé à cet endroit. Dans le cadre d'un renouvellement automatique, un moyen de paiement par défaut est nécessaire.|
 |4|Vous trouverez ici les moyens de paiement disponibles. Ne vous seront proposés que les moyens de paiement autorisés dans le pays d'origine du compte ou ceux liés au type de compte enregistré.|
 

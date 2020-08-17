@@ -24,7 +24,7 @@ Esta gua explica cómo reiniciar un VPS en modo de rescate.
 
 ## Requisitos
 
-- Tener acceso al [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Tener acceso al [área de cliente](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## Procedimiento

@@ -1,8 +1,9 @@
 ---
-title: 'Shared: View my website’s logs and statistics'
-excerpt: Access your website's statistics
+title: 'Accessing a website’s logs and statistics'
+excerpt: Find out how to use your website's statistics
 slug: shared_view_my_websites_logs_and_statistics
 legacy_guide_number: g1344
+section: 'Website optimisation'
 ---
 
 

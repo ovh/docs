@@ -60,7 +60,7 @@ Si vous souhaitez commander, rendez-vous sur le site d’OVH : [https://www.ovh.
 
 Vous pourrez alors commander votre site web avec votre nom de domaine. Plusieurs options vous seront proposées lors de la commande de votre hébergement web. Nous reviendrons sur chacune d'entre elle d'ici Noël.
 
-Maintenant que vous avez commandé tous les éléments nécessaires au bon fonctionnement de mypersonaldomain.ovh, il est possible de commencer à mettre en ligne vos premières pages. Nous débuterons demain par la [publication d’un blog](../day04/guide.fr-fr.md){.ref}. , pour que l’équipe puisse, avant l’ouverture officielle du site, commencer à communiquer.
+Maintenant que vous avez commandé tous les éléments nécessaires au bon fonctionnement de mypersonaldomain.ovh, il est possible de commencer à mettre en ligne vos premières pages. Nous débuterons demain par la [publication d’un blog](../day04/){.ref}. , pour que l’équipe puisse, avant l’ouverture officielle du site, commencer à communiquer.
 
 À demain
 

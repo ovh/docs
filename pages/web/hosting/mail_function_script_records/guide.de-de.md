@@ -1,9 +1,9 @@
 ---
-title: 'Automatische E-Mails Ihres Webhostings verwalten'
-excerpt: 'In dieser Anleitung erfahren Sie, wie Sie über Ihr OVH Webhosting versendete automatische E-Mails verfolgen und verwalten.'
+title: 'Automatische E-Mails eines Webhostings verwalten'
+excerpt: 'In dieser Anleitung erfahren Sie, wie Sie über ein Webhosting versendete automatische E-Mails verfolgen und verwalten'
 slug: webhosting_verwaltung_automatischer_e-mails
 legacy_guide_number: g1974
-section: Diagnose
+section: 'Diagnose'
 ---
 
 **Stand 24.09.2018**

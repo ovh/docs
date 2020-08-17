@@ -65,7 +65,7 @@ Para establecer la conexión con el servidor remoto, introduzca los siguientes d
 |Contraseña del usuario FTP|Es la contraseña asociada al usuario FTP.<br>Según el cliente FTP utilizado, puede denominarse «contraseña» o «password».|
 |Puerto de conexión|Este campo suele autocompletarse. Si tuviera que rellenarlo:<br>- utilice el puerto 21 para conectarse mediante el protocolo FTP;<br>- utilice el puerto 22 para conectarse mediante el protocolo SFTP (en caso de que esté activado).|
 
-Si no dispone de esta información, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} en la sección **Web** y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Se mostrará la información relativa a su espacio de almacenamiento, así como una tabla con los usuarios FTP y SSH creados en el alojamiento.
+Si no dispone de esta información, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} en la sección **Web** y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Se mostrará la información relativa a su espacio de almacenamiento, así como una tabla con los usuarios FTP y SSH creados en el alojamiento.
 
 Cuando haya completado todos los datos, haga clic en «Conexión rápida» para establecer la conexión con el servidor.
 

@@ -90,7 +90,7 @@ Pour cela, il faut créer un script qui lance notre ligne de commande. Nous allo
 
 Nous avons maintenant un système automatisé qui vide la base de données tous les jours. Vous pouvez désormais imaginer tous les scripts que vous pouvez déporter en tâches planifiées afin d’améliorer les performances de chargement de votre site web. Des CMS comme WordPress et Prestashop bénéficient aussi de mise en cache à effectuer en cron, afin d’accélérer le chargement des pages. Renseignez-vous dans à ce sujet dans les documentations respectives de ces CMS.
 
-Demain, nous verrons un autre point important des sites et applications web en 2016 : [l’activation du protocole HTTPS](../day16/guide.fr-fr.md){.ref}, que est possible gratuitement chez OVH grâce à Let’s encrypt.
+Demain, nous verrons un autre point important des sites et applications web en 2016 : [l’activation du protocole HTTPS](../day16/){.ref}, que est possible gratuitement chez OVH grâce à Let’s encrypt.
 
 À demain !
 

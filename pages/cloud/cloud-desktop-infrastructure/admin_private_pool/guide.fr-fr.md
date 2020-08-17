@@ -6,7 +6,7 @@ section: Tutoriels
 ---
 
 Afin d'accéder à vos desks uniquement par votre réseau interne, il est possible de déployer un pool privé.
-Pour cela, il faudra mettre en place votre réseau d'interconnexion à l'aide de ce [guide](../interconnection_equipment/guide.fr-fr.md){.ref}.
+Pour cela, il faudra mettre en place votre réseau d'interconnexion à l'aide de ce [guide](../interconnection_equipment/){.ref}.
 
 ## Procedure
 

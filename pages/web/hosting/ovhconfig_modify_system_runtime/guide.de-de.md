@@ -3,7 +3,7 @@ title: 'Konfiguration Ihres Webhostings bearbeiten'
 slug: die_laufzeitumgebung_meines_webhostings_andern
 excerpt: 'Hier erfahren Sie, wie Sie die Konfiguration Ihres OVH Webhostings bearbeiten.'
 legacy_guide_number: g2149
-order: 3
+section: 'Webhosting-Konfiguration'
 ---
 
 **Stand 08.10.2018**

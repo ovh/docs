@@ -16,7 +16,7 @@ Lorsque vous stockez des données sur PCA, celles-ci sont directement gelées et
 
 ![public-cloud](images/PCA-unlock-1-fr.png){.thumbnail}
 
-Une fois que le procédé débuté, un délai apparaîtra à la place du bouton "dégeler". Votre fichier sera alors disponible au téléchargement à l'issue de ce délai. Enfin votre fichier est accessible à l'issue du délai. Vous pouvez ainsi entammer le téléchargement directement par le navigateur ou via un[client Swift/SFTP/SCP](../pca_sftp/guide.fr-fr.md){.ref}
+Une fois que le procédé débuté, un délai apparaîtra à la place du bouton "dégeler". Votre fichier sera alors disponible au téléchargement à l'issue de ce délai. Enfin votre fichier est accessible à l'issue du délai. Vous pouvez ainsi entammer le téléchargement directement par le navigateur ou via un[client Swift/SFTP/SCP](../pca_sftp/){.ref}
 
 
 ![public-cloud](images/PCA-unlock-2-fr.png){.thumbnail}

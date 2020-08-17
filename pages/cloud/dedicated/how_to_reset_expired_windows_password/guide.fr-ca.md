@@ -17,7 +17,7 @@ Lorsque vous installez ou réinstallez un système d'exploitation Windows, tous 
 ## Prérequis
 
 * Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external} avec Windows installé.
-* Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Être connecté à l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 

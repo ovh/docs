@@ -46,9 +46,9 @@ Se per installare il tuo server utilizzi un template per il SO Linux fornito da 
 >
 > Prima di seguire i passaggi qui indicati, consigliamo vivamente di disabilitare l’auto-configurazione dell’IPv6 e gli annunci del router per non incorrere in problemi noti. Puoi farlo aggiungendo le righe che seguono al tuo file `sysctl.conf`, che trovi in /etc/sysctl.conf:
 > 
-> `net.IPv6.conf.all.autoconf=0`
+> `net.ipv6.conf.all.autoconf=0`
 > 
-> `net.IPv6.conf.all.accept_ra=0`
+> `net.ipv6.conf.all.accept_ra=0`
 > 
 > Dopodiché, puoi applicare queste regole con il comando che segue: `sh sysctl -p`.
 > 

@@ -3,7 +3,7 @@ title: 'Backup einer Webhosting-Datenbank exportieren'
 excerpt: 'Hier erfahren Sie, wie Sie ein Backup einer Datenbank Ihres OVH Webhostings exportieren.'
 slug: webhosting_hilfe_zum_export_von_datenbanken
 legacy_guide_number: g1394
-section: Datenbanken
+section: 'Datenbanken'
 order: 3
 ---
 

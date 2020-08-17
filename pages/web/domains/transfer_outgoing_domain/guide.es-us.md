@@ -17,7 +17,7 @@ La transferencia de un dominio permite cambiar el agente registrador que lo gest
 ## Requisitos
 - Tener un dominio registrado en OVHcloud.
 - Estar facultado para solicitar la transferencia del dominio. El propietario y las personas que lo administren deben haber sido informados.
-- Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 - El dominio debe haber sido creado más de 61 días antes, y no debe haber sido transferido ni haber cambiado de propietario durante ese período.
 
 > [!primary]
@@ -29,7 +29,7 @@ La transferencia de un dominio permite cambiar el agente registrador que lo gest
 
 ### 1. Desactivar la protección contra la transferencia del dominio
 
-Para desactivar la protección de OVHcloud contra la transferencia del dominio, también desde el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio. En la pestaña `Información general`{.action}, desmarque la opción `Protección contra la transferencia`{.action} y haga clic en `Aceptar`{.action}.
+Para desactivar la protección de OVHcloud contra la transferencia del dominio, también desde el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio. En la pestaña `Información general`{.action}, desmarque la opción `Protección contra la transferencia`{.action} y haga clic en `Aceptar`{.action}.
 
 > [!primary]
 >
