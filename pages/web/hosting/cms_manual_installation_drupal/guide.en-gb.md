@@ -1,9 +1,9 @@
 ---
-title: 'CMS, manually install Drupal'
+title: 'Installing Drupal manually'
 excerpt: How to install Drupal manually
-id: '1976'
 slug: cms_manually_install_drupal
 legacy_guide_number: g1976
+section: 'CMS'
 ---
 
 

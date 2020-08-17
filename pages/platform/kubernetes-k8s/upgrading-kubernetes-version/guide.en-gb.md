@@ -57,7 +57,7 @@ Once the update has been performed, you cannot revert to the previous version.
 
 ### Step 1 - Ask for a minor version upgrade on the OVH Cloud Manager 
 
-1. Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Managed Kubernetes Service* menu in the [OVH Cloud Manager](https://www.ovh.com/manager/cloud/)
+1. Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Managed Kubernetes Service* menu in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/manager/cloud/)
 
 
     ![Access to the administration UI](images/upgrading-kubernetes-version-000.jpg){.thumbnail}

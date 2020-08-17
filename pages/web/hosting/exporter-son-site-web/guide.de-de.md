@@ -3,7 +3,6 @@ title: 'Ihre Webseite exportieren'
 slug: website-exportieren
 excerpt: 'Eine OVHcloud Webseite exportieren'
 section: 'Erste Schritte'
-order: 2
 ---
 
 **Letzte Aktualisierung am 14.01.2020**

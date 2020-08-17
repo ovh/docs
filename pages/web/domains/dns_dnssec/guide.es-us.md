@@ -18,7 +18,7 @@ Los servidores DNS alojan la configuración DNS de los dominios. Normalmente, es
 
 - Tener un dominio registrado en OVHcloud.
 - El dominio debe tener una extensión compatible con DNSSEC.
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}.
 
 ## Procedimiento
 
@@ -30,12 +30,12 @@ Existen dos formas de activar DNSSEC:
 
 > [!primary]
 >
-> Puede comprobar si su dominio utiliza la configuración DNS de OVH directamente desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente. A continuación, abra la pestaña `Servidores DNS`{.action}.
+> Puede comprobar si su dominio utiliza la configuración DNS de OVH directamente desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Para ello, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente. A continuación, abra la pestaña `Servidores DNS`{.action}.
 >
 
 ### 1. Acceder a la gestión del dominio
 
-En la sección **Web** del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente.
+En la sección **Web** del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente.
 
 Se mostrará la información general del dominio. 
 

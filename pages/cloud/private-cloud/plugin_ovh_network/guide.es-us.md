@@ -46,7 +46,7 @@ Para indicarle al plugin de OVH que las IP públicas ya están en uso, es necesa
 >
 
 
-A continuación puede configurar los registros inversos de las IP, por ejemplo, para un servidor de correo. También puede realizar esta configuración desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} y la [API de OVH](https://api.ovh.com/){.external}. Haga clic en los tres puntos situados al principio de la línea correspondiente a la IP y seleccione `Edit Reverse`{.action}.
+A continuación puede configurar los registros inversos de las IP, por ejemplo, para un servidor de correo. También puede realizar esta configuración desde el [área de cliente de OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} y la [API de OVH](https://api.ovh.com/){.external}. Haga clic en los tres puntos situados al principio de la línea correspondiente a la IP y seleccione `Edit Reverse`{.action}.
 
 ![Botón Edit Reverse](images/network_04.png){.thumbnail}
 

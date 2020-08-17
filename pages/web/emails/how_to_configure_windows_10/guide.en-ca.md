@@ -43,9 +43,9 @@ Enter the information requested:
 |Password|Enter the password for your email address.|
 |User name|Enter a name that will distinguish this account from any other accounts shown in your Mail app.|
 |Send your messages using this name|Enter the name that you wish to be displayed in the sender field when sending emails from this address.|
-|Incoming email server|Enter the server “ssl0.ovh.net:993”.|
+|Incoming email server|Enter the server “imap.mail.ovh.ca:993”.|
 |Account type|We recommend using **IMAP4**. You can also select **POP** (in which emails are stored locally on your Mail app) in the drop-down menu.|
-|Outgoing email server|Enter the server “ssl0.ovh.net:465”.|
+|Outgoing email server|Enter the server “smtp.mail.ovh.ca:465”.|
 
 Make sure that the checkboxes are ticked for the following options:
 
@@ -66,15 +66,15 @@ If you need to enter any settings manually in your account preferences, the tech
 
 |Server type|Server name|SSL|Port|
 |---|---|---|---|
-|Incoming|ssl0.ovh.net|Yes|993|
-|Outgoing|ssl0.ovh.net|Yes|465|
+|Incoming|imap.mail.ovh.ca|Yes|993|
+|Outgoing|smtp.mail.ovh.ca|Yes|465|
 
 - **For POP configuration**
 
 |Server type|Server name|SSL|Port|
 |---|---|---|---|
-|Incoming|ssl0.ovh.net|Yes|995|
-|Outgoing|ssl0.ovh.net|Yes|465|
+|Incoming|pop.mail.ovh.ca|Yes|995|
+|Outgoing|smtp.mail.ovh.ca|Yes|465|
 
 ### Step 2: Use the email address
 
@@ -84,7 +84,6 @@ OVHcloud also has a web application you can use to access your email account fro
  
 ## Go further
 
-[Configuring your Email Pro account in the Mail app for Windows](../../emails-pro/mail-configuration-windows-10/){.external}
 
 [Configuring your Exchange account in the Mail app for Windows](../../microsoft-collaborative-solutions/mail-configuration-windows-10/){.external}
 

@@ -54,9 +54,9 @@ Renseignez à présent votre adresse e-mail puis cliquez sur `Continuer`{.action
 |Adresse de courrier|Renseignez un nom vous permettant de reconnaître ce compte parmi d'autres affichés dans votre application Outlook.|
 |Nom d'utilisateur|Renseignez l'adresse e-mail complète.|
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|
-|Serveur entrant|Renseignez le serveur « ssl0.ovh.net ». Laissez cochée la case **Utiliser SSL pour se connecter**.|
+|Serveur entrant|Renseignez le serveur « imap.mail.ovh.ca ». Laissez cochée la case **Utiliser SSL pour se connecter**.|
 |Port entrant|Renseignez le port « 993 ».|
-|Serveur sortant|Renseignez le serveur « ssl0.ovh.net ». Laissez cochée la case **Utiliser SSL pour se connecter**.|
+|Serveur sortant|Renseignez le serveur « smtp.mail.ovh.ca ». Laissez cochée la case **Utiliser SSL pour se connecter**.|
 |Port sortant|Renseignez le port « 465 ».|
 
 Une fois les informations complétées, cliquez sur `Ajouter un compte`{.action}. Si celles-ci sont correctes, la connexion au compte réussira.
@@ -71,15 +71,15 @@ Si vous devez renseigner manuellement des champs techniques dans les préférenc
 
 |Type de serveur|Nom du serveur|SSL|Port|
 |---|---|---|---|
-|Entrant|ssl0.ovh.net|Oui|993|
-|Sortant|ssl0.ovh.net|Oui|465|
+|Entrant|imap.mail.ovh.ca|Oui|993|
+|Sortant|smtp.mail.ovh.ca|Oui|465|
 
 - **Pour une configuration en POP**
 
 |Type de serveur|Nom du serveur|SSL|Port|
 |---|---|---|---|
-|Entrant|ssl0.ovh.net|Oui|995|
-|Sortant|ssl0.ovh.net|Oui|465|
+|Entrant|pop.mail.ovh.ca|Oui|995|
+|Sortant|smtp.mail.ovh.ca|Oui|465|
 
 ### Étape 2 : utiliser l'adresse e-mail
 

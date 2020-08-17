@@ -18,13 +18,13 @@ Las bases de datos, que hoy en día se utilizan en la mayoría de los sistemas d
 
 - Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}.
 - Disponer de una base de datos creada en un [alojamiento web de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}.
-- Según el método de backup utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} o disponer de las claves necesarias para conectarse a la base de datos.
+- Según el método de backup utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} o disponer de las claves necesarias para conectarse a la base de datos.
 
 ## Procedimiento
 
 Antes de empezar, deberá elegir el método que quiera utilizar para exportar la copia de seguridad de la base de datos. Existen diversas opciones con distinto nivel de dificultad técnica:
 
-- **Utilizar la herramienta de backup de OVHcloud**: Esta solución permite exportar la copia de seguridad de una base de datos desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Es la solución más accesible, ya que no requiere conocimientos técnicos.
+- **Utilizar la herramienta de backup de OVHcloud**: Esta solución permite exportar la copia de seguridad de una base de datos desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Es la solución más accesible, ya que no requiere conocimientos técnicos.
 
 - **Realizar la copia de seguridad desde la herramienta web phpMyAdmin**: Para ello, deberá conectarse a phpMyAdmin. Esta operación requiere conocimientos de la interfaz phpMyAdmin.
 
@@ -45,7 +45,7 @@ Continúe leyendo esta guía en el apartado correspondiente al método de backup
 
 ### Exportar una copia de seguridad desde el área de cliente
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting. Desde esa página podrá realizar una nueva copia de seguridad o restaurar una copia de seguridad ya realizada.
 
@@ -75,7 +75,7 @@ Para descargar una copia de seguridad, haga clic en los tres puntos situados al 
 
 ### Exportar una copia de seguridad desde la herramienta web phpMyAdmin
 
-En primer lugar, deberá acceder a phpMyAdmin. Para ello, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+En primer lugar, deberá acceder a phpMyAdmin. Para ello, conéctese al [área de cliente de OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
 Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting. Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos y seleccione `Acceder a phpMyAdmin`{.action}.
 

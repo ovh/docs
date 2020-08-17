@@ -21,7 +21,7 @@ La version de Drupal utilisée dans ce guide est la versions 7.41.
 
 **La version 8 de Drupal est compatible avec les hébergements mutualisés, il vous suffit d'être en version stable.**
 
-Plus d'informations [dans ce guide](../modifier_environnement_execution_hebergement_web_optmisation/guide.fr-fr.md){.ref}.
+Plus d'informations [dans ce guide](../modifier_environnement_execution_hebergement_web_optmisation/){.ref}.
 
 Si vous souhaitez installer d'autres modules/CMS, consultez [ce guide]({legacy}1375){.ref}.
 

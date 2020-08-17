@@ -22,13 +22,13 @@ De este modo, todos los mensajes de correo que lleguen a una redirección se env
 
 ## Requisitos
 
-- Tener acceso al [área de cliente](https://www.ovh.com/auth/?action=gotomanager). 
+- Tener acceso al [área de cliente](https://ca.ovh.com/auth/?action=gotomanager). 
 - Si ya utiliza cuentas de correo de OVH, pase al siguiente apartado. 
 
 
 ## ¿Dónde se configuran las redirecciones de correo?
 
-- Conéctese a su [área de cliente](https://www.ovh.com/auth/?action=gotomanager).
+- Conéctese a su [área de cliente](https://ca.ovh.com/auth/?action=gotomanager).
 - Haga clic en la sección «Correo electrónico».
 
 

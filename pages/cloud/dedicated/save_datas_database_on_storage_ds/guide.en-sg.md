@@ -17,7 +17,7 @@ In this guide, we will show you how to configure an OVHcloud Storage Server to s
 ## Requirements
 
 - an [OVHcloud Storage Server](https://www.ovh.com/sg/dedicated_servers/storage/){.external}
-- a production infrastructure ([VPS](https://www.ovh.com/sg/vps/){.external}, [Dedicated Servers](https://www.ovh.com/sg/dedicated_servers/){.external}, [Public Cloud](https://www.ovh.com/sg/public-cloud/instances/){.external}, etc.)
+- a production infrastructure ([VPS](https://www.ovh.com/sg/vps/){.external}, [Dedicated Servers](https://www.ovh.com/sg/dedicated_servers/){.external}, [Public Cloud](https://www.ovhcloud.com/en-sg/public-cloud/){.external}, etc.)
 - an SSH connection between the Storage Servers and production infrastructure
 - a private network between your servers ([OVHcloud vRack](https://www.ovh.com/sg/solutions/vrack/){.external}) is recommended
 - To follow this guide you need knowledge of: Linux administration, logging in via SSH, connecting to/backing up databases, installing operating systems (here we’re using Debian 9.4).

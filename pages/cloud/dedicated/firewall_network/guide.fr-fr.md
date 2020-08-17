@@ -5,11 +5,11 @@ excerpt: 'Découvrez comment configurer votre Firewall Network'
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 14/06/2019**
+**Dernière mise à jour le 05/08/2020**
 
 ## Objectif
 
-Pour protéger son infrastructure globale et les serveurs de ses clients, OVH propose un pare-feu paramétrable et intégré à la solution **Anti-DDoS** : le Firewall Network. Cette option vous permet de limiter l'exposition de votre service aux attaques provenant du réseau public.
+Pour protéger son infrastructure globale et les serveurs de ses clients, OVHcloud propose un pare-feu paramétrable et intégré à la solution **Anti-DDoS** : le Firewall Network. Cette option vous permet de limiter l'exposition de votre service aux attaques provenant du réseau public.
 
 **Ce guide vous explique comment configurer votre Firewall Network.**
 
@@ -21,11 +21,10 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVH pr
 
 ![Le VAC en détail](images/vac-inside.png){.thumbnail}
 
-
 ## Prérequis
 
-- Posséder un service OVH bénéficiant d’un Firewall Network ([ serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, [ VPS](https://www.ovh.com/fr/vps/){.external},[ instance Public Cloud](https://www.ovh.com/fr/public-cloud/){.external}, [Private Cloud[IP fail-over](https://www.ovh.com/fr/serveurs_dedies/ip_failover.xml){.external}, etc.)
-- Avoir accès à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Posséder un service OVHcloud bénéficiant d’un Firewall Network ([serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, [VPS](https://www.ovh.com/fr/vps/){.external},[instance Public Cloud](https://www.ovh.com/fr/public-cloud/){.external}, [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), [IP fail-over](https://www.ovh.com/fr/serveurs_dedies/ip_failover.xml){.external}, etc.)
+- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## En pratique
@@ -37,15 +36,15 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVH pr
 > Le Firewall Network protège les adresses IP associées à une machine. Vous devez donc configurer chaque adresse IP indépendamment. Une configuration globale du serveur est impossible.
 > 
 
-`{.action}Connectez-vous à[ l’espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, accédez à la section `IP`{.action} et cliquez sur ` ...  pour activer le pare-feu sur une adresse IPv4.
+Connectez-vous à[ l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, accédez à la section `IP`{.action} et cliquez sur `...`{.action} pour activer le pare-feu sur une adresse IPv4.
 
 ![Activation du Firewall Network](images/firewall_creation.png){.thumbnail}
 
-Vous serez alors invité à confirmer votre action.
+Confirmez votre action.
 
 ![Confirmation](images/creationvalid.png){.thumbnail}
 
-Cliquez ensuite sur ` Activer le firewall`{.action} (1), puis sur ` Configurer le firewall`{.action} (2) pour commencer le paramétrage.
+Cliquez ensuite sur `Activer le firewall`{.action} (1), puis sur ` Configurer le firewall`{.action} (2) pour commencer le paramétrage.
 
 ![Activation de la configuration](images/activationconfig.png){.thumbnail}
 
@@ -55,14 +54,14 @@ Vous pouvez configurer jusqu'à **20 règles par adresse IP**.
 >
 > Le pare-feu s’active automatiquement à chaque attaque DDoS et ne peut pas être désactivé avant la fin de l'attaque. C'est pourquoi il est important de maintenir à jour les règles de pare-feu.
 > Par défaut, vous n’avez pas de règles configurées. Toutes les connexions peuvent donc être établies.
-> Si vous en possédez, nous vous recommandons de les vérifier régulièrement, même si le pare-feu est désactivé.
+> Si vous avez déjà des règles, nous vous recommandons de les vérifier régulièrement, même si le pare-feu est désactivé.
 > 
 
 
 > [!primary]
 >
 > - La fragmentation UDP est bloquée (DROP) par défaut. Lorsque vous activez le Firewall Network, n'oubliez pas de configurer correctement votre unité de transmission maximale (<i>Maximum Transmission Unit</i> ou MTU) si vous utilisez un VPN. Par exemple, sur OpenVPN, vous pouvez cocher `MTU test`{.action} .
-> - Le Firewall Network n'est pas pris en compte au sein du réseau OVH. Par conséquent, les règles configurées n'affectent pas les connexions de ce réseau interne.
+> - Le Firewall Network n'est pas pris en compte au sein du réseau OVHcloud. Par conséquent, les règles configurées n'affectent pas les connexions de ce réseau interne.
 >
 
 
@@ -74,7 +73,7 @@ Pour ajouter une règle, cliquez sur ` Ajouter une règle`{.action}.
 
 Pour chaque règle, vous devez choisir :
 - une priorité (de 0 à 19, 0 étant la première règle à appliquer) ;
-- une action (`Autoriser`{.action} ou ` Refuser`{.action}) ;
+- une action (`Autoriser`{.action} ou `Refuser`{.action}) ;
 - le protocole ;
 - une adresse IP (facultatif) ;
 - le port source (TCP uniquement) ;
@@ -102,7 +101,7 @@ Par exemple, un paquet pour le port 80/TCP sera capturé par la règle 2 et les 
 
 > [!warning]
 >
-> Si notre solution anti-DDoS limite une attaque, votre Firewall Network sera activé, même si vous l'avez désactivé par défaut. Si vous souhaitez le désactiver, n'oubliez pas de supprimer vos règles.
+> Si notre solution anti-DDoS limite une attaque, votre Firewall Network s'activera automatiquement, même si vous l'avez désactivé par défaut. Si vous souhaitez qu'aucune règle ne soit appliquée durant une attaque, vous devez supprimer toute règle préalablement créée.
 > 
 
 ## Aller plus loin

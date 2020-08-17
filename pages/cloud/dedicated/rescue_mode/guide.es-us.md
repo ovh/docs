@@ -22,7 +22,7 @@ El modo *rescue* o modo de rescate permite arrancar un servidor dedicado sobre u
 
 ## Procedimiento
 
-Para activar el modo de rescate, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager/){.external} y vaya a la sección `Dedicado`{.action}. En la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccione el servidor. Abra la pestaña `Estado del servidor`{.action}. En el recuadro **Información general**, haga clic en el botón `···`{.action} del apartado **Boot** y seleccione `Editar`{.action} para cambiar el modo de arranque.
+Para activar el modo de rescate, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager/){.external} y vaya a la sección `Dedicado`{.action}. En la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccione el servidor. Abra la pestaña `Estado del servidor`{.action}. En el recuadro **Información general**, haga clic en el botón `···`{.action} del apartado **Boot** y seleccione `Editar`{.action} para cambiar el modo de arranque.
 
 ![Cambiar el modo de arranque](images/rescue-mode-01.png){.thumbnail}
 
@@ -112,7 +112,7 @@ rescue:~# mount /dev/hda1 /mnt/
 
 #### Acceder a WinRescue
 
-Una vez reiniciado el servidor, recibirá por correo electrónico las claves de acceso en modo de rescate. Para acceder en modo WinRescue, deberá descargar e instalar una consola VNC o utilizar el módulo **IPMI** del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager/){.external}.
+Una vez reiniciado el servidor, recibirá por correo electrónico las claves de acceso en modo de rescate. Para acceder en modo WinRescue, deberá descargar e instalar una consola VNC o utilizar el módulo **IPMI** del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager/){.external}.
 
 ![WinRescue Windows](images/rescue-mode-06.png){.thumbnail}
 

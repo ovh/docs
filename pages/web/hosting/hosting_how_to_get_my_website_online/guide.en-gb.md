@@ -148,10 +148,10 @@ As a reminder, if you encounter any difficulties publishing your website, we rec
 
 ## Go further
 
-[Migrating your website and emails to OVH](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}
+[Migrating your website and emails to OVH](../migrating-website-to-ovh/){.external}
 
-[Setting up your website with 1-click modules](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/){.external}
+[Setting up your website with 1-click modules](../web_hosting_web_hosting_modules/){.external}
 
-[Modifying an FTP user password](https://docs.ovh.com/gb/en/hosting/modify-ftp-user-password/){.external}
+[Modifying an FTP user password](../modify-ftp-user-password/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

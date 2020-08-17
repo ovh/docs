@@ -15,7 +15,7 @@ La consola KVM permite establecer una conexión directa con un VPS sin necesidad
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Procedimiento
 

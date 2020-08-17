@@ -17,7 +17,7 @@ model into an [ONNX](https://onnx.ai/) file.
 
 ## Requirements
 
--   A python environement with
+-   A python environment with
     [Scikit-learn](https://scikit-learn.org/stable/) installed
 
 ## Convert a simple model into ONNX
@@ -93,7 +93,7 @@ Your model is now serialized on you local file system in the
     documentation](http://onnx.ai/sklearn-onnx/index.html). For example,
     you can find information about how to serialize [a complex
     scikit-learn pipeline](http://onnx.ai/sklearn-onnx/pipeline.html)
--   You can check the [OVHcloud documention on how to deploy custom
+-   You can check the [OVHcloud documentation on how to deploy custom
     models](../deploy-serialized-models).
 -   You can check the [supported compatibilities for ONNX
     models](../compatibility-matrix)

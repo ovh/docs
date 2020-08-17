@@ -1,9 +1,10 @@
 ---
-title: 'Webhosting: Wie Sie Ihre Datenbank von SQL 4 auf MySQL 5.5 migrieren'
-excerpt: 'Webhosting: Wie Sie Ihre Datenbank von SQL 4 auf MySQL 5.5 migrieren'
+title: 'Migration einer Datenbank von SQL 4 auf MySQL 5.5'
+excerpt: 'Migration einer Datenbank von SQL 4 auf MySQL 5.5'
 id: '1957'
 slug: webhosting_wie_sie_ihre_datenbank_von_sql_4_auf_mysql_55_migrieren
 legacy_guide_number: g1957
+section: 'Datenbanken'
 ---
 
 

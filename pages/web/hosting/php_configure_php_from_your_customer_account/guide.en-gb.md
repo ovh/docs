@@ -1,9 +1,9 @@
 ---
-title: 'Hosting: How to configure PHP from your customer account'
-excerpt: Configure PHP from your customer account
-id: '1999'
+title: 'Configuring PHP from your customer account'
+excerpt: Find out how to configure PHP from your customer account
 slug: hosting_how_to_configure_php_from_your_customer_account
 legacy_guide_number: g1999
+section: 'PHP'
 ---
 
 
@@ -145,7 +145,4 @@ magic_quotes_gpc
 
 ## I am having trouble migrating, what should I do?
 Our customer support team cannot migrate your version of PHP for your, however they can guide you with your update (whether you are doing it via the customer account or via the .ovhconfig file). Our support team cannot be held accountable for any malfunctions.
-
-## Need help?
-Find a web provider among our partners who will be able to help you with your site migration: [http://www.ovh.biz/](http://www.ovh.biz/).
 

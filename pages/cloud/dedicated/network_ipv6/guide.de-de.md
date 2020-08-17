@@ -46,9 +46,9 @@ Falls Sie für die Installation Ihres Servers ein Linux-OS-Template von OVHcloud
 >
 > Es wird ausdrücklich empfohlen, dass Sie vor Befolgen der nachstehenden Schritte die IPv6-Autokonfiguration und -Router-Ankündigung deaktivieren. Fügen Sie hierzu die folgenden Zeilen zu Ihrer `sysctl.conf`-Datei, die sich in /etc/sysctl.conf befindet:
 > 
-> `net.IPv6.conf.all.autoconf=0`
+> `net.ipv6.conf.all.autoconf=0`
 > 
-> `net.IPv6.conf.all.accept_ra=0`
+> `net.ipv6.conf.all.accept_ra=0`
 > 
 > Anschließend können Sie diese Regeln über folgenden Befehl anwenden: `sh sysctl -p`.
 > 

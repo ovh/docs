@@ -1,8 +1,9 @@
 ---
-title: 'Webhosting: Häufige FTP-Probleme'
+title: 'Häufige FTP-Probleme'
 slug: webhosting_haufige_ftp-probleme
 excerpt: 'Webhosting: Häufige FTP-Probleme'
 legacy_guide_number: g1996
+section: 'FTP und SSH'
 ---
 
 ## Ich habe meine Dateien mit einer FTP-Programm übertragen, aber es wird nichts angezeigt.

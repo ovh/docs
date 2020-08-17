@@ -1,9 +1,8 @@
 ---
-title: 'Webhosting: Automatisierte Aufgaben / Cron'
-excerpt: 'Webhosting: Automatisierte Aufgaben / Cron'
-id: '1990'
+title: 'Automatische Tasks mit einem Webhosting verwenden'
+excerpt: 'Erfahren Sie hier, wie automatisierte Aufgaben (CRON) eingesetzt werden können'
 slug: webhosting_automatisierte_aufgaben_cron
-legacy_guide_number: g1990
+section: 'Automatische Tasks (CRON)'
 ---
 
 

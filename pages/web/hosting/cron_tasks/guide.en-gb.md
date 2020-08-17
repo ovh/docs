@@ -1,9 +1,9 @@
 ---
-title: 'Hosting: Automated tasks/Cron'
-excerpt: 'Hosting: Automated tasks/Cron'
-id: '1990'
+title: 'Using automated tasks on a Web Hosting plan'
+excerpt: 'Find out how to use automated tasks/Cron'
 slug: hosting_automated_taskscron
 legacy_guide_number: g1990
+section: 'Automated tasks (CRON)'
 ---
 
 

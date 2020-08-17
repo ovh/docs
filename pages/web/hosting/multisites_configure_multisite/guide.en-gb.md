@@ -3,6 +3,7 @@ title: 'Hosting multiple websites on your Web Hosting plan'
 slug: multisites-configuring-multiple-websites
 excerpt: 'Find out how to host several websites on your Web Hosting plan'
 section: 'Getting started'
+order: 3
 ---
 
 **Last updated 12th September 2018**
@@ -137,10 +138,10 @@ However, if you would like to set up your website manually, you can put it onlin
 
 ## Go further
 
-[Setting up your website with 1-click modules](https://docs.ovh.com/gb/en/hosting/web_hosting_web_hosting_modules/){.external}.
+[Setting up your website with 1-click modules](../web_hosting_web_hosting_modules/){.external}.
 
 [Editing an OVH DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
-[Publishing a website on your Web Hosting space](https://docs.ovh.com/gb/en/hosting/web_hosting_how_to_get_my_website_online/){.external}.
+[Publishing a website on your Web Hosting space](../web_hosting_how_to_get_my_website_online/){.external}.
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

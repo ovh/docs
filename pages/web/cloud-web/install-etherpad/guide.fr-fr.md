@@ -83,7 +83,7 @@ Dans la fenêtre qui s'affiche, complétez les informations demandées selon vot
 |Dossier racine|etherpad|
 |Moteur d'exécution|NodeJS 8|
 
-En ce qui concerne les options supplémentaires, choisissez celles que vous souhaitez activer. Une fois les informations complétées, cliquez sur `Suivant`{.action}, puis finalisez la manipulation. Cet ajout peut prendre jusqu’à une heure. Cependant, la modification de la configuration DNS peut prendre jusqu'à 24 heures avant d’être pleinement effective. Si vous souhaitez obtenir plus d'informations sur la gestion des multisites, reportez-vous à notre guide « [Partager son hébergement entre plusieurs sites](../../multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external} ».
+En ce qui concerne les options supplémentaires, choisissez celles que vous souhaitez activer. Une fois les informations complétées, cliquez sur `Suivant`{.action}, puis finalisez la manipulation. Cet ajout peut prendre jusqu’à une heure. Cependant, la modification de la configuration DNS peut prendre jusqu'à 24 heures avant d’être pleinement effective. Si vous souhaitez obtenir plus d'informations sur la gestion des multisites, reportez-vous à notre guide « [Partager son hébergement entre plusieurs sites](../../hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external} ».
 
 ![etherpadcloudweb](images/etherpad-cloud-web-step4.png){.thumbnail}
 

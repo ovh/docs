@@ -76,7 +76,7 @@ Pour configurer ce multisite, il vous suffit de :
 - validez les changements, puis attendez quelques minutes que le déploiement soit effectué sur l’ensemble de l’infrastructure. Votre API sera disponible dans [https://api.mypersonaldomain.ovh/api](https://api.mypersonaldomain.ovh/api){.external}
 - Si vous voulez essayer votre API, rendez-vous sur [https://api.mypersonaldomain.ovh/api/offer](https://api.mypersonaldomain.ovh/api/offer){.external} qui liste l’ensemble des petites annonces disponibles sur le site. Vous pouvez aussi vous connecter en Oauth2 afin de supprimer vos annonces si vous le souhaitez. Vous pouvez, pour cela, vous créer un token temporaire ou vous connecter en respectant le standard Oauth auprès de l’API.
 
-Rondcoin commence désormais à avoir de l’audience grâce aux applications créées par les développeurs utilisant l’API. Maintenant que le projet prend de l’ampleur, il est temps de penser aux [solutions de backup](../day12/guide.fr-fr.md){.ref}, pour préserver le service en cas d’incident. Nous verrons demain les solutions offertes par l’hébergement web.
+Rondcoin commence désormais à avoir de l’audience grâce aux applications créées par les développeurs utilisant l’API. Maintenant que le projet prend de l’ampleur, il est temps de penser aux [solutions de backup](../day12/){.ref}, pour préserver le service en cas d’incident. Nous verrons demain les solutions offertes par l’hébergement web.
 
 À demain !
 
