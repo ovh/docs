@@ -1,5 +1,5 @@
 ---
-Titre : 'configuration des MTU'
+title : 'configuration des MTU'
 Slug : 'carte reseau'
 Excerpt : 'Découvrez comment configurer les JUMBO frames'
 section : 'Utilisation Debutante'
