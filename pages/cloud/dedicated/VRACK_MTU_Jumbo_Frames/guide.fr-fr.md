@@ -32,11 +32,7 @@ Editez le fichier <u>/etc/network/interface</u> et ajoutez-y les lignes suivante
 <p><b>#pour une interface gérée par DHCP</b><br/>
 Auto nom de l’interface<br/>
 Iface nom de l’interface inet dhcp<br/>
-Pre-up  /bin/ip  link set dev nom de l’interface up mtu 9000</p>
-
-
-<b>Attention !</b> <br/>
-Bien verifier le chemin du binaire <b>« ip »</b>. Dans certaines distribution il peut se trouver dans <u>/usr/bin/ip</u>.
+Pre-up  /sbin/ip  link set dev nom de l’interface up mtu 9000</p>
 
 
 ## Aller plus loin
