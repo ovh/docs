@@ -1,5 +1,5 @@
 ---
-Title : 'Jumbo Frame settings'
+title : 'Jumbo Frame settings'
 Slug : 'Vrack'
 Excerpt : 'How to set JUMBO frames'
 Section : 'Beginner'
