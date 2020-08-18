@@ -3,7 +3,7 @@ title: Query Deployed Model
 slug: query-model
 excerpt: Learn how to query deployed model
 section: Tutorials
-order: 6
+order: 7
 ---
 *Last updated 7th February, 2020.*
 
