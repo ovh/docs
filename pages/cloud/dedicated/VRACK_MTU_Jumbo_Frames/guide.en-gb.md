@@ -1,8 +1,8 @@
 ---
-title:'Jumbo Frame settings'
-Slug : 'Vrack'
-Excerpt : 'How to set JUMBO frames'
-Section : 'Beginner'
+title: 'Jumbo Frame settings'
+slug: 'Vrack'
+excerpt: 'How to set JUMBO frames'
+section: 'Beginner'
 ---
 
 **Last updated 17 August 2020**
