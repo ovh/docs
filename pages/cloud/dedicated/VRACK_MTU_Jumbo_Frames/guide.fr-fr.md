@@ -1,8 +1,8 @@
 ---
-title : 'configuration des MTU'
-Slug : 'carte reseau'
-Excerpt : 'Découvrez comment configurer les JUMBO frames'
-section : 'Utilisation Debutante'
+title:'configuration des MTU'
+Slug:'carte reseau'
+Excerpt:'Découvrez comment configurer les JUMBO frames'
+section:'Utilisation Debutante'
 ---
 
 **Derniére mise à jour le 17/08/2020
