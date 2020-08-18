@@ -32,10 +32,7 @@ Edit the file <u>/etc/network/interface</u> and add the following lines : <br/>
 <p><b>#for a DHCP managed interface</b><br/>
 Auto <u>Iface name</u> <br/>
 Iface <u>Iface name</u> inet dhcp <br/>
-Pre-up  /bin/ip  link set dev <u>Iface name</u> up mtu 9000</p>
-
-<b>Attention !</b> <br/>
-Be sure of the binary <b>« ip »</b> path. For some distro, it could be <u>/usr/bin/ip</u>.
+Pre-up  /sbin/ip  link set dev <u>Iface name</u> up mtu 9000</p>
 
 ## Go Further
 Join our community of users on <https://community.ovh.com/en/>.
