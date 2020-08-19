@@ -17,7 +17,7 @@ section: Use cases
 Note that in order to complete this tutorial, you should have at least:
 
 - [Activated your Logs Data Platform account.](https://www.ovh.co.uk/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
-- [Created at least one Stream and get its token.](../quick_start/){.ref}
+- [Created at least one Stream and get its token.](../quick_start)
 - A working kubernetes cluster with some pods already logging to stdout. 
 - 15 minutes. 
 
@@ -309,7 +309,7 @@ And that's it. Your kubernetes activity is now perfectly logged in one place. Ha
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/){.ref}
-- Documentation: [Guides](../product.fr-fr.md){.ref}
+- Getting Started: [Quick Start](../quick_start)
+- Documentation: [Guides](../)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
