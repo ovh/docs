@@ -10,7 +10,7 @@ section: Use cases
 
 ## Objective 
 
-[ElastAlert](https://github.com/Yelp/elastalert){.external} is an alerting framework designed by Yelp, able to detect anomalies, spikes, or other patterns of interest. It is production-ready and is one of the standard of alerting in the Elasticsearch ecosystem. As stated in their documentation : "If you can see it in Kibana, ElastAlert can alert on it." In this document you will learn how to deploy this component on Logs Data Platform thanks to its compability with Elasticsearch through [aliases](../using_kibana_with_logs/guide.fr-fr.md){.ref} and [indexes](../index_as_a_service/guide.fr-fr.md){.ref}. Logs Data Platform also allows you to host ElastAlert meta-indices on Logs Data Platform..
+[ElastAlert](https://github.com/Yelp/elastalert){.external} is an alerting framework designed by Yelp, able to detect anomalies, spikes, or other patterns of interest. It is production-ready and is one of the standard of alerting in the Elasticsearch ecosystem. As stated in their documentation : "If you can see it in Kibana, ElastAlert can alert on it." In this document you will learn how to deploy this component on Logs Data Platform thanks to its compability with Elasticsearch through [aliases](../using_kibana_with_logs) and [indexes](../index_as_a_service). Logs Data Platform also allows you to host ElastAlert meta-indices on Logs Data Platform..
 
 ## Requirements 
 
@@ -197,7 +197,7 @@ To launch ElastAlert, use the following command :
 $ elastalert --config config.yml
 ```
 
-To test your alert you can use the following curl command sending logs to our [Elasticsearch endpoint](../ldp_index/guide.fr-fr.md){.external}: 
+To test your alert you can use the following curl command sending logs to our [Elasticsearch endpoint](../ldp_index){.external}: 
 
 
 ```shell-session
@@ -211,7 +211,7 @@ ElastAlert has a lot of integrations for alerting including Email, JIRA, OpsGeni
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.fr-fr.md){.ref}
-- Documentation: [Guides](../product.fr-fr.md){.ref}
+- Getting Started: [Quick Start](../quick_start)
+- Documentation: [Guides](../)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
