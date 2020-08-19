@@ -3,7 +3,7 @@ title: Describe Deployed Model Inputs and Outputs
 slug: describe-model
 excerpt: Learn how to describe model inputs and outputs
 section: Tutorials
-order: 5
+order: 6
 ---
 *Last updated 7th February, 2020.*
 
