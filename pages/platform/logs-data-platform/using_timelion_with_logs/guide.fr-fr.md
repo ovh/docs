@@ -103,7 +103,7 @@ We have only scratched the surface of what you can do with Timelion. Head to the
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/){.ref}
-- Documentation: [Guides](../product.fr-fr.md){.ref}
+- Getting Started: [Quick Start](../quick_start)
+- Documentation: [Guides](../)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
