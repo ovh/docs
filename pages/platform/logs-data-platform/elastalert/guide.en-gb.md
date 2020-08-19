@@ -10,7 +10,7 @@ section: Use cases
 
 ## Objective 
 
-[ElastAlert](https://github.com/Yelp/elastalert){.external} is an alerting framework designed by Yelp, able to detect anomalies, spikes, or other patterns of interest. It is production-ready and is a well known standard of alerting in the Elasticsearch ecosystem. As stated in their documentation : "If you can see it in Kibana, ElastAlert can alert on it." In this document you will learn how to deploy this component on Logs Data Platform thanks to its compability with Elasticsearch through [aliases](../using_kibana_with_logs/guide.en-gb.md){.ref} and [indexes](../index_as_a_service/guide.en-gb.md){.ref}. Logs Data Platform also allows you to host ElastAlert meta-indices on Logs Data Platform..
+[ElastAlert](https://github.com/Yelp/elastalert){.external} is an alerting framework designed by Yelp, able to detect anomalies, spikes, or other patterns of interest. It is production-ready and is a well known standard of alerting in the Elasticsearch ecosystem. As stated in their documentation : "If you can see it in Kibana, ElastAlert can alert on it." In this document you will learn how to deploy this component on Logs Data Platform thanks to its compability with Elasticsearch through [aliases](../using_kibana_with_logs) and [indexes](../index_as_a_service). Logs Data Platform also allows you to host ElastAlert meta-indices on Logs Data Platform..
 
 ## Requirements 
 
@@ -76,7 +76,7 @@ you should pay attention to the following points:
 
 - The **<ldp-cluster>** must be the one assigned to you (find on the **Home** page of the LDP Manager).
 - **<username>** is the username use to connect to the API or to the Logs Data Platform interfaces (Graylog or Kibana). 
-- **<password>** is the associated password. You can use [tokens](../tokens_logs_data_platform/guide.en-gb.md){.ref} in place of the couple username/password for your credentials.
+- **<password>** is the associated password. You can use [tokens](../tokens_logs_data_platform) in place of the couple username/password for your credentials.
 - The **--index** is the most important her since you **must** follow the index naming convention of Logs Data Platform. Use the presented form **<username>-i-** as a base name for your meta-indices. **<suffix>** can be personalized to any alphanumeric characters. 
 
 This command will create all 5 indices and place the mapping on them. All you need after is to create the ElastAlert configuration file and some rule. 
@@ -197,7 +197,7 @@ To launch ElastAlert, use the following command :
 $ elastalert --config config.yml
 ```
 
-To test your alert you can use the following curl command sending logs to our [Elasticsearch endpoint](../ldp_index/guide.en-gb.md){.external}: 
+To test your alert you can use the following curl command sending logs to our [Elasticsearch endpoint](../ldp_index){.external}: 
 
 
 ```shell-session
@@ -211,7 +211,7 @@ ElastAlert has a lot of integrations for alerting including Email, JIRA, OpsGeni
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
-- Documentation: [Guides](../product.en-gb.md){.ref}
+- Getting Started: [Quick Start](../quick_start)
+- Documentation: [Guides](../)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
