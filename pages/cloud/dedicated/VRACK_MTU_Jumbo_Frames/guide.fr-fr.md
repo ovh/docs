@@ -1,39 +1,65 @@
 ---
-title:'configuration des MTU'
-Slug:'carte reseau'
-Excerpt:'Découvrez comment configurer les JUMBO frames'
-section:'Utilisation Debutante'
+title: 'Configuration des trames Jumbo dans le vRack'
+slug: 'network-jumbo'
+excerpt: 'Découvrez comment configurer les jumbo frames dans le vRack'
+section: 'vRack'
 ---
 
-**Derniére mise à jour le 17/08/2020
-
+**Derniére mise à jour le 17/08/2020**
 
 ## Objectif
 
-Configurer votre distribution Linux à utiliser les JUMBO FRAMES.
+Les trames Jumbo sont des trames Ethernet dont la charge utile est supérieure à 1500 octets et qui peut aller jusqu'à 9000 octets. Leur utilisation permet de minimiser le temps de traitement du routage. Dans le cas du vRack, cela optimisera le trafic sur celui-ci.
 
-## Pré requis
+**Découvrez comment configurer votre distribution Linux pour qu'elle utilise les jumbo frames au sein du vRack.**
 
-La connectivité réseau et les droits root.
+## Prérequis
 
-A savoir : la taille MTU doit être identique sur tous les hôtes d'un même sous-réseau. 
+- Posséder un [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
+- Être connecté en SSH (accès root) sous Linux
+
+> [!primary]
+>
+> La taille MTU doit être identique sur tous les hôtes d'un même sous-réseau. 
+>
 
 ## En pratique
 
-<b> Vérifier sa MTU : <br/></b> 
+### Vérifier sa MTU : 
+
+```sh
 ip link show | grep mtu
+```
 
-<b> Définir une nouvelle taille et tester la commande :</b>  
-ip link set nom de l’interface mtu 9000
+### Définir une nouvelle taille et tester la commande 
 
-<b> Pour rendre le changement permanent : </b><br/> 
-Editez le fichier <u>/etc/network/interface</u> et ajoutez-y les lignes suivantes :
+```sh
+ip link set <nom de l’interface> mtu 9000
+```
 
-<p><b>#pour une interface gérée par DHCP</b><br/>
-Auto nom de l’interface<br/>
-Iface nom de l’interface inet dhcp<br/>
-Pre-up  /sbin/ip  link set dev nom de l’interface up mtu 9000</p>
+### Rendre le changement permanent 
 
+Editez le fichier `/etc/network/interface` et ajoutez-y les lignes suivantes :
+
+#### Pour une interface gérée par DHCP
+
+```sh
+Auto <nom de l’interface>
+
+Iface <nom de l’interface> inet dhcp
+
+  Pre-up /sbin/ip link set dev nom de l’interface up mtu 9000</p>
+```
+
+#### Pour une interface en IP fixe
+
+```sh
+Auto <nom de l’interface>
+
+Iface <nom de l’interface> inet static
+  mtu 9000
+```
 
 ## Aller plus loin
-Échangez avec notre communauté d'utilisateurs sur https://community.ovh.com
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
