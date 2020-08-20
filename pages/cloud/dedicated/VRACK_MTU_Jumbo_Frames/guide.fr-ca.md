@@ -15,7 +15,7 @@ Les trames Jumbo, ou *Jumbo frames*, sont des trames Ethernet dont la charge uti
 
 ## Prérequis
 
-- Posséder un [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
+- Posséder un [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}.
 - Ouvrir un shell avec les droits root
 
 > [!primary]
