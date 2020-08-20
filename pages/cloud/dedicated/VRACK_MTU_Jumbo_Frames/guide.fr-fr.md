@@ -48,7 +48,7 @@ Auto <nom de l’interface>
 
 Iface <nom de l’interface> inet dhcp
 
-  Pre-up /sbin/ip link set dev nom de l’interface up mtu 9000
+  Pre-up /sbin/ip link set dev <nom de l’interface> up mtu 9000
 ```
 
 #### Pour une interface en IP fixe
