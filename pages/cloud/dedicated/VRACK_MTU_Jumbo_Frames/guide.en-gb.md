@@ -1,38 +1,65 @@
 ---
-title: 'Jumbo Frame settings'
-slug: 'Vrack'
-excerpt: 'How to set JUMBO frames'
-section: 'Beginner'
+title: Configuring Jumbo Frames in vRack
+slug: network-jumbo
+excerpt: Learn how to configure Jumbo frames in vRack
+section: vRack
 ---
 
-**Last updated 17 August 2020**
-
+**Last updated 17th August 2020**
 
 ## Objective
 
-Setting the MTU Jumbo Frame in your Linux distribution.
+Jumbo frames are Ethernet frames with more than 1500 bytes of payload. They can carry up to 9000 bytes of payload. Using them minimizes routing processing time. In the case of vRack, this will optimize traffic on it.
+
+**This guide explains how to configure your Linux distribution to use Jumbo frames within the vRack.**
 
 ## Requirements
 
-Network connectivity and root rights.
+- a [vRack](https://www.ovh.co.uk/solutions/vrack/){.external}.
+- run a shell as root
 
-Good to know : The MTU size should be identical for all the host of a same network. 
+> [!primary]
+>
+> MTU size must be the same on all hosts in the same subnet.
+>
 
 ## Instructions
 
-### Find the MTU size: <br/> 
+### Step 1: Checking MTU
+
+```sh
 ip link show | grep mtu
+```
 
-### Set a new MTU size : <br/>  
-ip link set <u>Iface name</u> mtu 9000
+### Step 2: Setting new MTU size and test command 
 
-### Set the change as final even through a reboot : <br/> 
-Edit the file <u>/etc/network/interface</u> and add the following lines : <br/>
+```sh
+ip link set <nom de l’interface> mtu 9000
+```
 
-<p><b>#for a DHCP managed interface</b><br/>
-Auto <u>Iface name</u> <br/>
-Iface <u>Iface name</u> inet dhcp <br/>
-Pre-up  /sbin/ip  link set dev <u>Iface name</u> up mtu 9000</p>
+### Step 3: Making changes permanent
 
-## Go Further
+Edit the file `/etc/network/interface` and add the following lines to it:
+
+#### For a DHCP-managed interface
+
+```sh
+Auto <interface name>
+
+Iface <interface name> inet dhcp
+
+  Pre-up /sbin/ip link set dev <interface name> up mtu 9000</p>
+```
+
+#### For a fixed IP interface
+
+```sh
+Auto <interface name>
+
+Iface <interface name> inet static
+  mtu 9000
+```
+
+## Go further
+
 Join our community of users on <https://community.ovh.com/en/>.
