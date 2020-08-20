@@ -20,7 +20,7 @@ We list here the most frequently requested OVHcloud Managed Kubernetes features 
 
 ### Planned features
 
-- **vRack** : Currently, all traffic between you nodes is encrypted but transit through OVH public network. We will offer private clusters in OVH private network (vRack) later in the year.
+- **vRack** : You can already encrypt all traffic between your nodes using a custom CNI. We will offer private clusters in OVHcloud private network (vRack) later in the year.
 - **Nodes autoscaling** : Additionnaly to pod autoscaling, we will provide you the concept of node pools and nodes autoscaling, allowing your cluster to grow automatically between your user-defined limits.
 - **Bare metal worker nodes** : We will integrate bare metal (physical machines) servers in the worker nodes choice.
 
