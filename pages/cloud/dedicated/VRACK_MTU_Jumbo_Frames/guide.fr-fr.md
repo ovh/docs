@@ -1,7 +1,7 @@
 ---
 title: 'Configuration des trames Jumbo dans le vRack'
 slug: 'network-jumbo'
-excerpt: 'Découvrez comment configurer les jumbo frames dans le vRack'
+excerpt: 'Découvrez comment configurer les Jumbo frames dans le vRack'
 section: 'vRack'
 ---
 
@@ -9,9 +9,9 @@ section: 'vRack'
 
 ## Objectif
 
-Les trames Jumbo sont des trames Ethernet dont la charge utile est supérieure à 1500 octets et qui peut aller jusqu'à 9000 octets. Leur utilisation permet de minimiser le temps de traitement du routage. Dans le cas du vRack, cela optimisera le trafic sur celui-ci.
+Les trames Jumbo, ou *Jumbo frames*, sont des trames Ethernet dont la charge utile est supérieure à 1500 octets et qui peut aller jusqu'à 9000 octets. Leur utilisation permet de minimiser le temps de traitement du routage. Dans le cas du vRack, cela optimisera le trafic sur celui-ci.
 
-**Découvrez comment configurer votre distribution Linux pour qu'elle utilise les jumbo frames au sein du vRack.**
+**Découvrez comment configurer votre distribution Linux pour qu'elle utilise les trames Jumbo au sein du vRack.**
 
 ## Prérequis
 
@@ -25,13 +25,13 @@ Les trames Jumbo sont des trames Ethernet dont la charge utile est supérieure �
 
 ## En pratique
 
-### Vérifier sa MTU : 
+### Vérifier la MTU
 
 ```sh
 ip link show | grep mtu
 ```
 
-### Définir une nouvelle taille et tester la commande 
+### Définir une nouvelle taille et tester la commande
 
 ```sh
 ip link set <nom de l’interface> mtu 9000
