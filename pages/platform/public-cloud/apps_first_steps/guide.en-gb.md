@@ -174,7 +174,7 @@ You can go further by securing your GitLab with an SSL by following [this GitLab
 There is no further steps to complete the first configuration of this application.
 
 ## OpenVPN
-This section will explain the first steps specifically for the Vestacp pre-installed image.
+This section will explain the first steps specifically for the OpenVPN pre-installed image.
 
 1. Get your application access URL by [following steps.](#application-login-details)
 2. Click on the URL that is returned by the API.
