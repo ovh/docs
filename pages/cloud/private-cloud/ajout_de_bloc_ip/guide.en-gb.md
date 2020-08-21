@@ -1,39 +1,42 @@
 ---
 title: Adding an IP block
 slug: add-ip-block
-excerpt: Find out how to order an IP block on your Private Cloud
+excerpt: Find out how to order an IP block for a Hosted Private Cloud project
 legacy_guide_number: '7766457'
 section: OVH Features
 order: 01
 ---
 
-**Last updated 8th July 2020**
+**Last updated 17th August 2020**
 
 ## Objective
 
-An IP address block can be used to make your services available over the Internet.
+IP blocks can be used to make your services accessible online. 
 
-**This guide explains how to order an IP block for your Private Cloud.**
+**This guide will explain how to order, add and migrate an IP block linked to your Hosted Private Cloud.**
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/){.external} on your OVHcloud account
 
 ## Instructions
 
-To order an additional IP block for your **Private Cloud**, log in to your OVHcloud Control Panel. In the `Server` section, click on `IP` in the left column and then click on `Order additional IPs`{.action}. Then select your **Private Cloud** from the drop-down menu before proceeding to the next step.
+### Order an IP block.
 
-Several fields will be required to create your IP block:
+To order an IP block for your **Hosted Private Cloud**, go to the OVHcloud Control Panel. In the `Server` section, click on the `IP` section in the left-hand column, then click `Order additional IP addresses`{.action}. Then select your **Hosted Private Cloud** in the dropdown menu before moving on to the next step.
 
-- IP block size (from /28 to /24)
+
+You will need to fill in several fields in order to create your IP block.
+
+- Size of IP block (from /28 to /24)
 
 > [!primary]
 >
-> As a reminder, here is an array of IP addresses in a block, and the number of IPs that can be used:
+> As a reminder, here is a table listing the number of IPs present in a block, and the number of usable IPs.
 > 
 
-|Block size|IPs in block|IPs usable in OVHcloud|
+|Block size|IPs in the block|IPs usable with OVHcloud|
 |:---:|:---:|:---:|
 |28|16|11|
 |27|32|27|
@@ -43,25 +46,65 @@ Several fields will be required to create your IP block:
 
 > [!primary]
 >
-> Please consult our guide ["Using the OVHcloud Network plugin"](../plugin-ovh-network/) to find out which IP addresses are reserved in a block as well as their use.
+> Please feel free to refer to our guide on the [OVHcloud Network plugin](../plugin-ovh-network/){.external-link} to find out which IPs are reserved for your block, as well as how they are used.
 >
 
-
-- Country of IP block, important in some cases for the SEO of your services (an English-language website will have a better SEO in England if the IP is also English)
-- Network name (information visible in the Whois of an IP block).
-- Number of clients estimated (how many end clients will be hosted on these IPs).
-- Network description (information visible in the Whois of an IP block).
-- Use (information about the general usage (Web, SSL, Cloud...)).
-
+- The country an IP block is hosted in is important in some cases, for your services’ SEO ranking (a website based in France will have a higher SEO ranking in France if the IP address is French, too).
+- Network name (information visible in the WHOIS profile for the IP block).
+- Estimated number of customers (how many end-users or customers will be hosted on these IPs).
+- Network description (information visible in the WHOIS profile for the IP block).
+- Usage (information on the usage (web, SSL, cloud, etc.)).
 
 > [!success]
 >
-> The activation fee for a block is 2€ ex. VAT / IP. For example, a /28 block with 16 IPs will have a one-time fee of 32€ ex. VAT.
+> The setup fee for an IP block is £1.70 ex. VAT/IP.  This means that for a `/28` block that includes 16 IPs, you will pay £27.20 before delivery.
 >  
-> IP block renewals will be free of charge.
+> IP address renewal is free of charge.
 >
 
-After confirming the last step, you can view the order form for your IP block. If the order is in accordance with your wishes, you only have to pay it with the payment methods offered at the bottom of the page in order for it to be delivered.
+Once you have confirmed the final step, you will receive the purchase order for your IP block. If everything looks correct in the purchase order, you will simply need to pay the total using one of the payment methods listed at the bottom of the page, and your order will then be delivered.
+
+### Migrate an IP block between two Hosted Private Cloud solutions.
+
+To migrate an IP block, you will need to move the blocks manually via the OVHcloud APIv6.
+
+Use the following API call:
+
+> [!api]
+>
+> @api {POST} /ip/{ip}/move
+> 
+
+You will need to fill in the fields as follows:
+
+- ip: IP block with the /mask
+- nexthop “newPrimaryIp” (case-sensitive)
+- to: Target Hosted Private Cloud in the following form: pcc-XXX-XXX-XXX-XXX
+
+![nexthop field](images/move-api.png){.thumbnail}
+
+
+The result should look like this:
+
+![nexthop field](images/api-result.png){.thumbnail}
+
+Next, use this API call to move the IP into the IP parking space:
+
+> [!api]
+>
+> @api {POST} /ip/{ip}/park
+> 
+
+> [!warning]
+>
+> This call cuts the network on the VMs that use the IPs concerned.
+>
+
+You can track the movement of your IP block via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in the `Server`{.action} section, then `Private Cloud`{.action}. Click on your Hosted Private Cloud service, then on the `Operations`{.action} tab.
+
+The operation reference is “removeIpRipeBlock”.
+
+![operations manager](images/operations.png){.thumbnail}
 
 ## Go further
 
