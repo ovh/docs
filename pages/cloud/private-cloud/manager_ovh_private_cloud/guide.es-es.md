@@ -17,7 +17,7 @@ El área de cliente de OVHcloud ofrece múltiples opciones de configuración de 
 ## Requisitos
 
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Servidor`{.action}, y dentro, en `Private Cloud`{.action}.
-- Haber contratado un servicio [Private Cloud OVHcloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/){.external}.
+- Haber contratado un servicio [Private Cloud OVHcloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external}.
 
 
 ## Procedimiento
@@ -63,7 +63,7 @@ También aparece la fecha de la próxima renovación del servicio Private Cloud.
 
 ![Opciones](images/controlpanel4.png){.thumbnail}
 
-Si desea más información sobre la cancelación del servicio Private Cloud, consulte nuestra guía [Cómo dar de baja el servicio Private Cloud](../how-to-cancel-private-cloud/).
+Si desea más información sobre la cancelación del servicio Private Cloud, consulte nuestra guía [Cómo dar de baja el servicio Private Cloud](https://docs.ovh.com/gb/en/private-cloud/how-to-cancel-private-cloud/).
 
 #### Datacenters
 
@@ -165,7 +165,7 @@ En este ejemplo hay 50 usuarios conectados; cuando el número 51 se conecta, el 
 
 Hay una segunda tabla disponible para la opción *VM encryption*.
 
-Podrá encontrar más información al respecto en [esta guía](../vm-encrypt/).
+Podrá encontrar más información al respecto en [esta guía](https://docs.ovh.com/gb/en/private-cloud/vm-encrypt/).
 
 #### Operaciones
 
@@ -189,7 +189,7 @@ La pestaña `Licencia Windows`{.action} permite activar las licencias SPLA Windo
 
 ![Licencia SPLA Windows](images/controlpanel10.png){.thumbnail}
 
-Puede consultar las tarifas [aquí](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/images-licenses/){.external}.
+Puede consultar las tarifas [aquí](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/images-licenses/){.external}.
 
 
 
@@ -247,7 +247,7 @@ La pestaña de backup permite activar la solución `Veeam backup`.
 
 ![Backup](images/controlpanel14.png){.thumbnail}
 
-Si desea más información sobre esta opción, puede consultar esta [guía](../veeam-backup-as-a-service/){.external}.
+Si desea más información sobre esta opción, puede consultar esta [guía](https://docs.ovh.com/gb/en/private-cloud/veeam-backup-as-a-service/){.external}.
 
 
 ## Más información
