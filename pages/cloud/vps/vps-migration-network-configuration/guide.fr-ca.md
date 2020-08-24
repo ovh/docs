@@ -109,7 +109,7 @@ Enfin, redémarrez le service réseau avec la commande suivante :
 ifup eth0
 ```
 
-##### Votre système démarre sur le shell de secours dracut
+##### **Votre système démarre sur le shell de secours dracut**
 
 Redémarrez votre VPS en mode rescue.
 

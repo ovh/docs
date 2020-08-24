@@ -58,10 +58,10 @@ A continuación, pulse `Siguiente`{.action} e introduzca la información de su c
 |Campo|Descripción| 
 |---|---| 
 |IMAP o POP|Le recomendamos que utilice **IMAP** (opción por defecto), aunque también puede elegir **POP** (almacenamiento de mensajes de correo en local en su aplicación Mail).|
-|Nombre de host (entrante)|Introduzca el servidor **ssl0.ovh.net**.|
+|Nombre de host (entrante)|Introduzca el servidor **imap.mail.ovh.ca**.|
 |Nombre de usuario (entrante)|Introduzca la dirección de correo electrónico completa.|
 |Contraseña (entrante)|Introduzca la contraseña de la dirección de correo electrónico.|  
-|Nombre de host (saliente)|Introduzca el servidor **ssl0.ovh.net**.|
+|Nombre de host (saliente)|Introduzca el servidor **smtp.mail.ovh.ca**.|
 |Nombre de usuario (saliente)|Introduzca la dirección de correo electrónico completa.|
 |Contraseña (saliente)|Introduzca la contraseña de la dirección de correo electrónico.| 
 
@@ -79,16 +79,16 @@ Si la aplicación le pide que introduzca de forma manual algunos datos técnicos
 
 |Tipo de servidor|Nombre del servidor|SSL|Puerto|
 |---|---|---|---|
-|Entrante|ssl0.ovh.net|Sí|993|
-|Saliente|ssl0.ovh.net|Sí|465|
+|Entrante|imap.mail.ovh.ca|Sí|993|
+|Saliente|smtp.mail.ovh.ca|Sí|465|
 
 
 **Configuración en POP**
 
 |Tipo de servidor|Nombre del servidor|SSL|Puerto|
 |---|---|---|---|
-|Entrante|ssl0.ovh.net|Sí|995|
-|Saliente|ssl0.ovh.net|Sí|465|
+|Entrante|pop.mail.ovh.ca|Sí|995|
+|Saliente|smtp.mail.ovh.ca|Sí|465|
 
 ### 2. Utilizar la dirección de correo electrónico
 

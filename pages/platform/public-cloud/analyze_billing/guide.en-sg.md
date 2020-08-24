@@ -154,7 +154,7 @@ Snapshots of additional volumes are billed the same way as the volumes themselve
 
 
 ### Instance snapshots and images
-Both snapshots and images of instances (excluding the catalogue of images supplied by OVHcloud) are billed at a flat rate per GB per month, regardless of the original instance and image type. Go to the [pricing page](https://www.ovh.com/sg/public-cloud/instances/prices/){.external} to view prices.
+Both snapshots and images of instances (excluding the catalogue of images supplied by OVHcloud) are billed at a flat rate per GB per month, regardless of the original instance and image type. Go to the [pricing page](https://www.ovhcloud.com/en-sg/public-cloud/prices/){.external} to view prices.
 
 
 ### Object storage

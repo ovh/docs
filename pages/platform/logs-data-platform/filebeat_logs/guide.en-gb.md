@@ -5,22 +5,22 @@ order: 01
 section: Use cases
 ---
 
-**Last updated 5th February, 2020**
+**Last updated 24th July, 2020**
 
 ## Objective
 
 [Filebeat](https://github.com/elastic/beats/tree/master/filebeat){.external} is an open source file harvester, used to fetch logs files and can be easily setup to feed them into Logs Data Platform.
 
-The main benefits of Filebeat are his very resilient protocol to send logs and his variety of modules ready-to-use for the most common applications.
+The main benefits of Filebeat are it's resilient protocol to send logs, and a variety of modules ready-to-use for most of the common applications.
 
-This guide will describe how to setup Filebeat OSS on your system to forward your logs on Logs Data Platform. It will also present you with some configuration setup you can use to further structure your logs.
+This guide will describe how to setup Filebeat OSS on your system for forwarding your logs on Logs Data Platform. It will also present you with some configuration setup useful to further structure your logs.
 
 ## Requirements
 
 Note that in order to complete this tutorial, you should have at least:
 
 - [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
-- [To create at least one Stream and get its token.](../quick_start/guide.en-gb.md){.ref}
+- [To create at least one Stream and get its token.](../quick_start)
 
 ## Instructions
 
@@ -32,7 +32,7 @@ You can decide to setup Filebeat OSS from a package or to compile it from source
 
 For this part, head to [Filebeat OSS download website](https://www.elastic.co/fr/downloads/past-releases#filebeat-oss){.external} to download the best version for your distribution.
 
-The following configuration files have been tested on the latest version of Filebeat OSS available at the time of writing (**7.5.2**).
+The following configuration files have been tested on the latest version of Filebeat OSS available at the time of writing (**7.9**).
 
 The package will install the config file in the following directory: `/etc/filebeat/filebeat.yml`.
 
@@ -43,7 +43,7 @@ In the following example we will enable Apache and Syslog support, but you can e
 
 Filebeat expect a configuration file named **filebeat.yml** .
 
-1. For the configuration to work, the important part is to replace *hosts: ["`<your_cluster>.logs.ovh.com:5044`"] with the hostname given by Logs Data Platform.
+1. For the configuration to work, the important part is to replace hosts: ["`<your_cluster>.logs.ovh.com:5044`"] with the hostname given by Logs Data Platform.
 2. You should also ensure to specify the `X-OVH-TOKEN` of the related stream.
 
 #### Filebeat configuration
@@ -184,18 +184,46 @@ processors:
 #logging.selectors: ["*"]
 ```
 
+
+You can also use our [Elasticsearch endpoint](../ldp_index) to send your logs. This endpoint support ingest and then ensures a higher performance and a higher compatibility with the modules selected. For legal reasons, we do not support X-Pack modules on this endpoint but any OSS module is supprted. To enable this endpoint, replace the Logstash Output configuration with the following snippet:
+
+
+```yaml 
+#==================== Elasticsearch template setting ==========================
+
+setup.template.enabled: false
+
+#-------------------------- Elasticsearch output ------------------------------
+output.elasticsearch:
+  # Array of hosts to connect to.
+  hosts: ["<your-cluster>.logs.ovh.com:9200"]
+
+  # Protocol - either `http` (default) or `https`.
+  protocol: "https"
+
+  # Authentication credentials - either API key or username/password.
+  username: "<username>"
+  password: "<password>"
+  index: "ldp-logs"
+
+```
+
+This configuration deactivates the template configuration (unneeded for our endpoint). You need to provide your credentials **<username>** and **<password>** of your account. Like all Logs Data Platform APIs you can also use [tokens](../tokens_logs_data_platform). Don't change **ldp-logs** since it is our special destination index. 
+
+When you use Elasticsearch endpoint with filebeat, it will use the [ingest module](https://www.elastic.co/guide/en/logstash/7.9/use-ingest-pipelines.html){.external} to parse and structure the logs. 
+
 #### Enable Apache Filebeat module
 
 To enable the apache2 support on Filebeat, call the following command:
 
 ```shell-session
-$ ldp@ubuntu:~$ sudo filebeat modules enable apache2
+$ ldp@ubuntu:~$ sudo filebeat modules enable apache
 ```
 
-It will generate a new module file: **/etc/filebeat/modules.d/apache2.yml**, please change it to include all your apache2 access/error path files:
+It will generate a new module file: **/etc/filebeat/modules.d/apache.yml**, please change it to include all your apache2 access/error path files:
 
-```yaml hl_lines="8 16"
-- module: apache2
+```yaml
+- module: apache
   # Access logs
   access:
     enabled: true
@@ -244,6 +272,20 @@ Once again, it will generate a file **/etc/filebeat/modules.d/system.yml**
 
 Ensure both file path exists on your system.
 
+
+
+#### Enable pipelines
+
+If you use the Elasticsearch output, be sure to setup the pipelines by using the following command: 
+
+
+```shell-session
+$ filebeat setup --pipelines --modules apache,system
+```
+
+Filebeat will then connect to Elasticsearch and setup the pipelines needed by your modules. 
+
+
 #### Launch Filebeat
 
 Launch the Filebeat binary or service to test your config file and head to your apache website for an example of how to send some logs. You will see this kind of log in Graylog:
@@ -264,15 +306,15 @@ Note the type value (apache or syslog or apache-error) that indicates the source
 
 ### Conclusion and useful resources
 
-Filebeat is a really useful tool to send the content of your current log files to Logs Data Platform. It offers a clean and easy way to send your logs without changing the configuration of your software. Don't hesitate to check the links below to master this tool.
+Filebeat is a handy tool to send the content of your current log files to Logs Data Platform. It offers a clean and easy way to send your logs without changing the configuration of your software. Don't hesitate to check the links below to master this tool.
 
 - Configuration's details: [https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration-details.html](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-configuration-details.html){.external}
 - Getting started: [https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-getting-started.html](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-getting-started.html){.external}
-- Learn how to configure Filebeat and Logstash to add your own extra filters: [All you have to know about the Logstash Collector on Logs Data Platform!](../logstash_input/guide.en-gb.md){.ref}
+- Learn how to configure Filebeat and Logstash to add your own extra filters: [All you have to know about the Logstash Collector on Logs Data Platform!](../logstash_input)
 
-## Go further
+## Going further
 
-- Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
-- Documentation: [Guides](../product.en-gb.md){.ref}
+- Getting Started: [Quick Start](../quick_start)
+- Documentation: [Guides](../)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

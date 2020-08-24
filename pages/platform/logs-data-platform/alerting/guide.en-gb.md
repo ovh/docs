@@ -6,7 +6,7 @@ excerpt: With the alerting feature you don't even need to watch your logs, our p
 section: Features
 ---
 
-**Last updated 2nd April, 2019**
+**Last updated 23rd July, 2020**
 
 ## Objective
 
@@ -28,7 +28,7 @@ In order to understand this guide you should read the following tutorials:
 
 The Logs Data Platform provides many ways to watch your logs in real time:
 
-- The **follow stream** functionality in the OVH Manager.
+- The **follow stream** functionality in the OVHcloud Manager.
 - The **Live Tail** functionality in Graylog.
 - The **Graylog dashboards** that refresh themselves in real-time.
 - Any software that can query the Graylog or ES APIs (Kibana or Grafana for example).
@@ -39,15 +39,17 @@ The goal of the Alerting feature is to give you the freedom to not watch your lo
 - **Numeric value alert** is triggered when a certain numeric field has an abnormal value. The value can be the mean value, the sum, the minimum, maximum, and even the standard deviation or the median.
 - **Text content alert** is the alert triggered when a field has some exact value.
 
-For the 3 types of alert, you can configure a **grace period**. The **grace period** is a period of time during which the alert won't be triggered again so that you won't get spammed by the same alert over and over again. You can also configure how many last messages you want to include in your alert. This is useful to quickly identify the root causes of your alerts.
+For the 3 types of alert, you can configure a **grace period**. The **grace period** is a period of time during which the alert won't be triggered again so that you won't get spammed by the same alert over and over again. You can also configure how many last messages you want to include in your alert. This is useful to quickly identify the root causes of your alerts. 
+
+Don't hesitate to jump to the alert configuration part if you only need to know how to configure alerts. 
 
 ### Use case&#58; Alerts for a website powered by an Apache Server
 
-For this tutorial, we will configure the 3 alerts that we can use for a website. These 3 alerts can help you to react immediately in the case of a failure, detect unexpected problems or verify that all your websites are working correctly. But before going into the alerting feature itself, we need to configure our Apache Logging format to include all the information we need. We will also use [Filebeat](../filebeat_logs/guide.en-gb.md){.ref} to send our logs to our dedicated Logstash collector on the Logs Data Platform.
+For this tutorial, we will configure the 3 alerts that we can use for a website. These 3 alerts can help you to react immediately in the case of a failure, detect unexpected problems or verify that all your websites are working correctly. But before going into the alerting feature itself, we need to configure our Apache Logging format to include all the information we need. We will also use [Filebeat](../filebeat_logs/guide.en-gb.md){.ref} to send our logs to Logs Data Platform.
 
 #### Apache Server Configuration
 
-We will use the [LTSV](http://ltsv.org){.external} format to send logs, this format is simple enough to be efficiently parsed by the collector. Here is a configuration file sample:
+We will use the [Filebeat Apache format](https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-module-apache.html#_virtual_host){.external} to send logs, this format allow the filebeat module to parse the relevant informations. Here is a configuration file sample:
 
 ```ApacheConf
 <VirtualHost *:80>
@@ -56,45 +58,18 @@ We will use the [LTSV](http://ltsv.org){.external} format to send logs, this for
     DocumentRoot /var/www/html
 
     ErrorLog ${APACHE_LOG_DIR}/error.log
-    CustomLog ${APACHE_LOG_DIR}/access.log "domain:%V\thost:%h\tserver:%A\tident:%l\tuser:%u\ttime:%{%d/%b/%Y:%H:%M:%S %z}t\tmethod:%m\tpath:%U%q\tprotocol:%H\tstatus_int:%>s\tsize_int:%b\treferer:%{Referer}i\tagent:%{User-Agent}i\tresponse_time_int:%D\tcookie:%{cookie}i\tset_cookie:%{Set-Cookie}o\tmessage:%h %l %u %t \"%r\" %>s %b\n"
+    CustomLog ${APACHE_LOG_DIR}/access.log "%v %h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\""
 
 </VirtualHost>
 ```
 
 The configuration is inspired by the one you can find in [this tutorial](../apache_logs/guide.en-gb.md){.ref}.
 
-#### Logstash and Filebeat configuration
+#### Filebeat configuration
 
-The Logstash collector configuration is kept simple for this tutorial. Here is the **input section** part
+The Filebeat configuration will enable the apache module and allow you to sned your logs directly to Logs Data Platform 
 
-```ruby
-beats {
-    port => 5044
-    ssl => true
-    ssl_certificate => "/etc/ssl/private/server.crt"
-    ssl_key => "/etc/ssl/private/server.key"
-}
-```
-
-As in the [Filebeat tutorial](../filebeat_logs/guide.en-gb.md){.ref}, we will use a simple beats input with SSL.
-
-For the **filter** part we use this configuration:
-
-```ruby
-kv {
-    value_split => ":"
-    field_split => "\t"
-}
-date {
-    match => [ "time", "dd/MMM/YYYY:HH:mm:ss Z"]
-}
-```
-
-This simple Logstash filter uses the [key value filter plugin](https://www.elastic.co/guide/en/logstash/current/plugins-filters-kv.html){.external} and the [date plugin filter](https://www.elastic.co/guide/en/logstash/current/plugins-filters-date.html){.external} to parse the LTSV format and to parse the date so that our log messages are delivered with the right timestamp (the time of the log message rather than the time of the delivery).
-
-The Filebeat configuration will be similar to the one used in the Filebeat tutorial:
-
-```yaml hl_lines="32 38"
+```yaml
 #=========================== Filebeat inputs =============================
 
 filebeat.inputs:
@@ -122,11 +97,10 @@ filebeat.config.modules:
   # Set to true to enable config reloading
   reload.enabled: false
 
-
 #----------------------------- Logstash output --------------------------------
 output.logstash:
   # The Logstash hosts
-  hosts: ["<your_cluster>-XXXXXXXXXXXXXXXXXX.<your_cluster>.logs.ovh.com:5044"]
+  hosts: ["<your-cluster>.logs.ovh.com:5044"]
 
   ssl.enabled: true
 
@@ -139,16 +113,16 @@ Fill the value of **/etc/ssl/certs/ldp.pem** with the "Data-gathering tools" cer
 
 ![SSL input](images/ssl_input.png){.thumbnail}
 
-Ensure to enable Apache support on Filebeat by running:
+Ensure to enable [Apache support on Filebeat](https://www.elastic.co/guide/en/beats/filebeat/7.x/filebeat-module-apache.html#_virtual_host){.external} by running:
 
 ```shell-session
-$ ldp@ubuntu:~$ sudo filebeat modules enable apache2
+$ ldp@ubuntu:~$ sudo filebeat modules enable apache
 ```
 
-It will generate a new module file: **/etc/filebeat/modules.d/apache2.yml**, please change it to include all your apache2 access/error path files:
+It will generate a new module file: **/etc/filebeat/modules.d/apache.yml**, please change it to include all your apache2 access/error path files:
 
 ```yaml hl_lines="8 16"
-- module: apache2
+- module: apache
   # Access logs
   access:
     enabled: true
@@ -233,4 +207,4 @@ You will then receive an email with the messages included. You can then directly
 - Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
 - Documentation: [Guides](../product.en-gb.md){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

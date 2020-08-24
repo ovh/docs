@@ -17,7 +17,7 @@ This guide will explain how to configure Cyberduck to manage your Object Storage
 
 
 ### Requirements
-- A configured Horizon user :  view [guide](../horizon){.ref}
+- A configured Horizon user :  view [guide](https://docs.ovh.com/ca/en/public-cloud/creation-and-deletion-of-openstack-user/)
 - The Tenant ID of your project and your user ID, viewable in the downloadable OpenRC file.
 - The password of your user.
 

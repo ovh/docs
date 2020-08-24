@@ -1,8 +1,9 @@
 ---
-title: 'How to password protect a directory on your website'
+title: 'Using .htaccess to password protect a directory on your website'
 slug: how_to_password_protect_a_directory_on_your_website
 excerpt: 'How to password protect a directory on your website'
 legacy_guide_number: g1968
+section: 'Redirection and authentication'
 ---
 
 ## Create the password file

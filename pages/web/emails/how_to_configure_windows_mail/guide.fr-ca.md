@@ -37,12 +37,12 @@ Dans la fenêtre qui apparaît, il vous faut entrer les informations suivantes :
 
 - Information sur le Serveur entrant :
     - Mon serveur de messagerie pour courrier entrant est un serveur :  **POP3**
-    - Serveur entrant : **SSL0.OVH.NET**
-    - Port : **993**
+    - Serveur entrant : *pop.mail.ovh.ca**
+    - Port : **995**
     - Cochez la case : **"Ce serveur nécessite une connexion sécurisée (SSL)""**
     - Identifiant de connexion : **votre adresse e-mail entière**
 - Informations sur le serveur sortant :
-    - Serveur sortant : **SSL0.OVH.NET**
+    - Serveur sortant : **smtp.mail.ovh.ca**
     - Port : **465**
     - Cochez la case : **"Ce serveur nécessite une connexion sécurisée (SSL)""**
     - Cochez la case : **"Mon serveur sortant requiert une authentification"**
@@ -84,9 +84,9 @@ Configuration  **POP**  avec sécurisation SSL activée ou désactivée :
 - Adresse Email : Votre adresse e-mail mutualisée entière.
 - Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 - Nom d'utilisateur : Votre adresse e-mail mutualisée entière.
-- Serveur entrant : Le serveur de réception des e-mails :  **SSL0.OVH.NET**
+- Serveur entrant : Le serveur de réception des e-mails :  **pop.mail.ovh.ca**
 - Port serveur entrant : Le port du serveur entrant :  **995**  ou  **110**
-- Serveur sortant : Le serveur d'envoi des e-mails :  **SSL0.OVH.NET**
+- Serveur sortant : Le serveur d'envoi des e-mails :  **smtp.mail.ovh.ca**
 - Port serveur sortant : Le port du serveur sortant :  **465**  ou  **587**
 - Vous devez obligatoirement activer [l'authentification](#configuration_de_windows_mail_partie_2_parametre_du_compte_e-mail){.external} du serveur sortant SMTP.
 
@@ -104,9 +104,9 @@ Configuration  **IMAP**  avec sécurisation SSL activée ou désactivée :
 - Adresse Email : Votre adresse e-mail mutualisée entière.
 - Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 - Nom d'utilisateur : Votre adresse e-mail mutualisé entière.
-- Serveur entrant : Le serveur de réception des e-mails :  **SSL0.OVH.NET**
+- Serveur entrant : Le serveur de réception des e-mails :  **imap.mail.ovh.ca**
 - Port serveur entrant : Le port du serveur entrant :  **993**  ou  **143**
-- Serveur sortant : Le serveur d'envoi des e-mails :  **SSL0.OVH.NET**
+- Serveur sortant : Le serveur d'envoi des e-mails :  **smtp.mail.ovh.ca**
 - Port serveur sortant : Le port du serveur sortant :  **465**  ou  **587**
 - Vous devez obligatoirement activer [l'authentification](#configuration_de_windows_mail_partie_2_parametre_du_compte_e-mail){.external} du serveur sortant SMTP.
 

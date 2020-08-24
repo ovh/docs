@@ -9,12 +9,12 @@ section: Diagnóstico y modo de rescate
 
 ## Objetivo
 
-Al instalar o reinstalar una distribución, recibirá una contraseña para acceder en modo *root*. Le aconsejamos encarecidamente que cambie esta contraseña por motivos de seguridad (el procedimiento se explica en la guía [Proteger un VPS](https://docs.ovh.com/es/vps/consejos-proteccion-vps){.external}). También es posible que necesite cambiarla porque la haya perdido. Esta guía explica cómo cambiar la contraseña *root* de un VPS en estos dos casos.
+Al instalar o reinstalar una distribución, recibirá una contraseña para acceder en modo *root*. Le aconsejamos encarecidamente que cambie esta contraseña por motivos de seguridad (el procedimiento se explica en la guía [Proteger un VPS](../consejos-proteccion-vps){.external}). También es posible que necesite cambiarla porque la haya perdido. Esta guía explica cómo cambiar la contraseña *root* de un VPS en estos dos casos.
 
 ## Requisitos
 
 - Estar conectado al VPS por SSH (acceso *root*).
-- [Reiniciar el VPS en modo de rescate](https://docs.ovh.com/es/vps/rescue/){.external}.
+- [Reiniciar el VPS en modo de rescate](../rescue/){.external}.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -109,8 +109,8 @@ Por último, reinicie el VPS sobre el disco desde el área de cliente de OVH.
 
 ## Más información
 
-[Introducción al SSH](https://docs.ovh.com/es/dedicated/ssh-introduction/){.external}
+[Introducción al SSH](../dedicated/ssh-introduction/){.external}
 
-[Activar el modo de rescate en un VPS](https://docs.ovh.com/es/vps/rescue/){.external}
+[Activar el modo de rescate en un VPS](../rescue/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/){.external}.

@@ -18,10 +18,8 @@ This guide will explain how to configure Cyberduck to manage your Object Storage
 
 ## Prerequisites
 
-- You must have access to Horizon:[Accessing the Horizon interface](../access_console_horizon){.ref}
-- You must have your project and user ID, which you can get by downloading the OpenRC file in the [Access and Security](../access_and_security_in_horizon){.ref} menu in Horizon.
-
-
+- You must have access to Horizon:[Accessing the Horizon interface](https://docs.ovh.com/asia/en/public-cloud/creation-and-deletion-of-openstack-user/){.ref}
+- You must have your project and user ID, which you can get by downloading the OpenRC file in the [Users & Roles](https://docs.ovh.com/asia/en/public-cloud/set-openstack-environment-variables/#instructions) menu in the OVHcloud control panel.
 
 
 ## 
@@ -49,7 +47,7 @@ Enter the following information:
 
 ##
 
-- [Getting started with the Swift API](../platform/public-cloud/access_console_of_horizon_instance/guide.en-asia.md){.ref}
+- [Getting started with the Swift API](https://docs.ovh.com/asia/en/public-cloud/getting_started_with_the_swift_api/){.ref}
 
 
 ## 

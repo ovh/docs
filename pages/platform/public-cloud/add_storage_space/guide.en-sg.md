@@ -19,7 +19,7 @@ Our object containers include:
 - private storage (for example, for storing personal data)
 - public storage (for storing anything that is publicly accessible)
 
-**This guide will show you how to add external storage space to your [Public Cloud Instance](https://www.ovh.com/sg/public-cloud/instances/){.external}.**
+**This guide will show you how to add external storage space to your [Public Cloud Instance](https://www.ovhcloud.com/en-sg/public-cloud/){.external}.**
 
 ## Requirements
 

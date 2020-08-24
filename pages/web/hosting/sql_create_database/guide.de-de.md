@@ -2,7 +2,7 @@
 title: 'Eine Datenbank auf Ihrem Webhosting erstellen'
 slug: datenbank-erstellen
 excerpt: 'So erstellen Sie eine Datenbank auf Ihrem OVH Webhosting'
-section: Datenbanken
+section: 'Datenbanken'
 order: 1
 ---
 

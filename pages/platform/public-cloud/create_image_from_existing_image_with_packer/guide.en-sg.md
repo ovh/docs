@@ -13,11 +13,11 @@ This guide will show you how to create a Packer configuration file to create you
 
 ## Requirements
 
-You'll need an [OVHcloud Public Cloud](https://www.ovh.com/sg/public-cloud/instances/) OpenStack project and a terminal.
+You'll need an [OVHcloud Public Cloud](https://www.ovhcloud.com/en-sg/public-cloud/) OpenStack project and a terminal.
 
 ### Install Packer
 
-Packer can be downloaded from the official website (curently [here](https://www.packer.io/downloads.html) ) and you'll need to `unzip` it.
+Packer can be downloaded from the official website (currently [here](https://www.packer.io/downloads.html) ) and you'll need to `unzip` it.
 
 For Linux 64bits
 
@@ -36,7 +36,7 @@ apt-get install jq
 
 ### Fetch your openrc.sh configuration
 
-From [OVHcloud Control Panel](https://caovh.com/auth/?action=gotomanager), fetch your `openrc.sh` configuration file. You can fetch it from OpenStack menu entry in the left panel and under the `...` button on the right `Download an OpenStack configuration file`. You might need to create an OpenStack user before.
+From [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), fetch your `openrc.sh` configuration file. You can fetch it from OpenStack menu entry in the left panel and under the `...` button on the right `Download an OpenStack configuration file`. You might need to create an OpenStack user before.
 
 ### Install openstack command line client
 

@@ -65,8 +65,8 @@ Cliquez à présent sur le bouton `Se connecter`{.action}. Un message vous invit
 |Information|Description|
 |---|---|
 |Type de compte|Nous conseillons une utilisation en **IMAP** (sélectionné par défaut). Vous pouvez cependant sélectionner **POP** (stockage des e-mails en local sur votre application Mail) dans le menu déroulant.|
-|Serveur de réception|Renseignez le serveur « ssl0.ovh.net ».|
-|Serveur d'envoi|Renseignez le serveur « ssl0.ovh.net ».|
+|Serveur de réception|Renseignez le serveur « imap.mail.ovh.ca ».|
+|Serveur d'envoi|Renseignez le serveur « smtp.mail.ovh.ca ».|
 
 Cliquez de nouveau sur le bouton `Se connecter`{.action}. Si les informations renseignées sont correctes, la connexion au compte réussira.
 
@@ -82,15 +82,15 @@ Si vous êtes amené à renseigner manuellement des champs techniques dans les p
 
 |Type de serveur|Nom du serveur|SSL|Port|
 |---|---|---|---|
-|Entrant|ssl0.ovh.net|Oui|993|
-|Sortant|ssl0.ovh.net|Oui|465| 
+|Entrant|imap.mail.ovh.ca|Oui|993|
+|Sortant|smtp.mail.ovh.ca|Oui|465| 
 
 - **pour une configuration en POP**
 
 |Type de serveur|Nom du serveur|SSL|Port|
 |---|---|---|---|
-|Entrant|ssl0.ovh.net|Oui|995|
-|Sortant|ssl0.ovh.net|Oui|465|
+|Entrant|pop.mail.ovh.ca|Oui|995|
+|Sortant|smtp.mail.ovh.ca|Oui|465|
 
 ### Étape 2 : utiliser l'adresse e-mail
 

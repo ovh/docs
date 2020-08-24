@@ -1,8 +1,9 @@
 ---
-title: Webhosting Welche anderen Operationen sind mit .htaccess-Dateien möglich?
+title: Fortgeschrittene Operationen mit .htaccess Dateien
 excerpt: In dieser Hilfe erfahren Sie, welche anderen Operationen mit .htaccess-Dateien möglich sind
 slug: webhosting_welche_anderen_operationen_sind_mit_htaccess-dateien_moglich
 legacy_guide_number: g1972
+section: 'Weiterleitung und Authentifizierung'
 ---
 
 
@@ -89,18 +90,3 @@ Wenn Sie beispielsweise die Seite willkommen.html als Index-Seite verwenden möc
 ```
 DirectoryIndex willkommen.html
 ```
-
-
-
-
-## Weiterleitungen einrichten
-Alles zu diesem Thema erfahren Sie [hier](https://www.ovh.de/g1339.redirection-nom-de-domaine#redirection_web_via_le_htaccess).
-
-
-## URLs umschreiben
-Alles zu diesem Thema erfahren Sie [hier](https://www.ovh.com/fr/g1971.reecriture_durl_grace_au_mod_rewrite).
-
-
-## 
-Alles über die .htaccess-Datei erfahren Sie [hier](https://www.ovh.de/g1967.mutualise_tout_sur_le_fichier_htaccess).
-

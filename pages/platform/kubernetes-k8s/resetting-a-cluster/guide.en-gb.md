@@ -1,8 +1,8 @@
 ---
-title: 'Resetting an OVHcloud Managed Kubernetes cluster'
-excerpt: 'Find out how to reset an OVHcloud Managed Kubernetes cluster'
+title: Resetting an OVHcloud Managed Kubernetes cluster
+excerpt: Find out how to reset an OVHcloud Managed Kubernetes cluster
 slug: resetting-a-cluster
-section: 'User guides'
+section: User guides
 ---
 
 **Last updated September 5th, 2019.**
@@ -44,7 +44,7 @@ OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the
 
 ### Step 1 - Ask for cluster reset on the OVH Cloud Manager 
 
-Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Platforms and services* menu in the [OVH Cloud Manager](https://www.ovh.com/manager/cloud/)
+Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Platforms and services* menu in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/manager/cloud/)
 
 ![Access to the administration UI](images/resetting_a_cluster-01.jpg){.thumbnail}
 

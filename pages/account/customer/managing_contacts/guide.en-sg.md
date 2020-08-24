@@ -3,6 +3,7 @@ title: 'Managing contacts for your services'
 slug: managing-contacts
 excerpt: 'Find out how to manage contacts for your OVHcloud services'
 section: 'Getting started'
+hidden: yes
 ---
 
 **Last updated 10th April 2020** 
@@ -28,7 +29,7 @@ The NIC handle is a personal username that you receive via email when you create
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 - access to the email address linked to your profile
 - the correct rights for the service concerned
 - the new contact’s NIC handle (the contact you want to add)
@@ -39,7 +40,7 @@ The NIC handle is a personal username that you receive via email when you create
 
 ### Access contact management.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the name linked to your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then click `Contact management`{.action}.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click on the name linked to your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then click `Contact management`{.action}.
 
 ![Contact management](images/hubcontacts.png){.thumbnail}
 
@@ -97,7 +98,7 @@ If one of the contacts has not received this email, the contact email address li
 
 ![Contact management](images/managing_contacts_06.png){.thumbnail}
 
-If only one contact has confirmed the change, a message will appear confirming that the request is still pending validation from the other contact. If one of the contacts has just confirmed the request, it will take a few minutes for the information to be updated and appear correctly in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+If only one contact has confirmed the change, a message will appear confirming that the request is still pending validation from the other contact. If one of the contacts has just confirmed the request, it will take a few minutes for the information to be updated and appear correctly in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ![Contact management](images/managing_contacts_07.png){.thumbnail}
 

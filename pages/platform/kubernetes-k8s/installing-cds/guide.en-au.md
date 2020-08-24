@@ -1,7 +1,7 @@
 ---
-title: 'Installing CDS on OVHcloud Managed Kubernetes'
+title: Installing CDS on OVHcloud Managed Kubernetes
 slug: installing-cds
-excerpt: 'Find out how to install CDS on OVHcloud Managed Kubernetes'
+excerpt: Find out how to install CDS on OVHcloud Managed Kubernetes
 section: Tutorials
 ---
 

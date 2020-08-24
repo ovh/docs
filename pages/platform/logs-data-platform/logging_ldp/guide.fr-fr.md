@@ -5,7 +5,7 @@ order: 20
 section: Logging libraries
 ---
 
-**Last updated 24th April, 2019**
+**Last updated 29th July, 2020**
 
 ## Objective
 
@@ -17,7 +17,7 @@ This package includes:
 
 - a TCP/TLS handler to send log entries over TCP with TLS support.
 - a formatter to convert logging record into [GELF(1.1)](http://docs.graylog.org/en/latest/pages/gelf.html#gelf-payload-specification){.external}.
-- a facility to ensure fields suits the [LDP naming conventions](../field_naming_conventions/guide.fr-fr.md){.ref}.
+- a facility to ensure fields suits the [LDP naming conventions](../field_naming_conventions/){.ref}.
 
 
 ## Requirements
@@ -26,7 +26,7 @@ To complete this guide you will need:
 
 - Python 3, we recommend to install [pip](https://pip.pypa.io/en/stable/installing/){.external}.
 - [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
-- [To create at least one Stream and get its token.](../quick_start/guide.fr-fr.md){.ref}
+- [To create at least one Stream and get its token.](../quick_start/){.ref}
 
 ## Instructions
 
@@ -199,13 +199,13 @@ The log entry sent will be:
 As we can see:
 
 * Objects are transformed to flatten dictionaries: `manager.name` is renamed `manager_name`.
-* Fields are types using the [LDP naming convention](../field_naming_conventions/guide.fr-fr.md){.ref}: `manager.age` is renamed `manager_age_int`
+* Fields are types using the [LDP naming convention](../field_naming_conventions/){.ref}: `manager.age` is renamed `manager_age_int`
 * Null values are not sent: `user.age`.
 * You can set `required=True` to force meta data value or `default=xxx` to add data automatically.
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.fr-fr.md){.ref}
+- Getting Started: [Quick Start](../quick_start/){.ref}
 - Documentation: [Guides](../product.fr-fr.md){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

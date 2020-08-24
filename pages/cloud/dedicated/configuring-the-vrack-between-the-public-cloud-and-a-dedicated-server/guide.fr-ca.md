@@ -68,7 +68,7 @@ Sélectionnez votre modèle, région et image. Choisissez ensuite votre réseau 
 
 ![Créer une instance](images/pci-02_2020.png){.thumbnail}
 
-Enfin, choisissez votre période de facturation, puis cliquez sur le bouton "Créer une instance"{.action}. Pour plus d'informations sur les différentes options, veuillez vous reporter au présent guide : [Créez une instance dans votre compte client OVHcloud](../public-cloud/create_an_instance_in_your_ovh_customer_account/){.external}.
+Enfin, choisissez votre période de facturation, puis cliquez sur le bouton "Créer une instance"{.action}. Pour plus d'informations sur les différentes options, veuillez vous reporter au présent guide : [Créez une instance dans votre compte client OVHcloud](../../public-cloud/create_an_instance_in_your_ovh_customer_account/){.external}.
 
 
 ### Configurer vos interfaces réseau

@@ -18,7 +18,7 @@ Lorsque vous achetez un nom de domaine avec un hébergement web chez OVH, une pa
 >
 
 ## Créer sa premiere page web
-Lors du [premier jour](../day01/guide.fr-fr.md){.ref} de ce calendrier, nous avons vu que le serveur retourne des documents que le navigateur est en mesure d’interpréter. Généralement, il utilise trois langages :
+Lors du [premier jour](../day01/){.ref} de ce calendrier, nous avons vu que le serveur retourne des documents que le navigateur est en mesure d’interpréter. Généralement, il utilise trois langages :
 
 - **Le HTML** qui est un langage de description du contenu. Il permet de différencier les titres, les images, les liens, les textes, les listes à puces entre eux. C’est le format historique du Web ; à la base, ce langage est dépourvu tout élément graphique. Si vous n’affichez que du HTML, votre contenu sera brut !
 - **Le CSS** est un langage permettant d’appliquer des styles sur le code HTML. C’est ce langage qui permet aux développeurs de sites web de rendre vos sites jolis (et de mettre en application les souhaits des graphistes).
@@ -77,7 +77,7 @@ Une fois les fichiers envoyés, votre site est prêt.
 ## Testez votre site
 Maintenant que les fichiers se trouvent sur le serveur, vous pouvez vous rendre directement sur le site web pour constater le remplacement de la page par défaut par celle de Rondcoin. Félicitations, vous venez de déployer votre première page statique.
 
-Nous verrons demain que ces pages peuvent être personnalisées en fonction de vos clients, et donc dynamiques. Pour cela, il faut stocker des informations dans des [base de données](../day06/guide.fr-fr.md){.ref}, qui sont incluses à votre offre d’hébergement web.
+Nous verrons demain que ces pages peuvent être personnalisées en fonction de vos clients, et donc dynamiques. Pour cela, il faut stocker des informations dans des [base de données](../day06/){.ref}, qui sont incluses à votre offre d’hébergement web.
 
 À demain
 

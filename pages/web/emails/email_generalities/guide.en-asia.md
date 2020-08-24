@@ -17,13 +17,13 @@ If you have activated an OVHcloud Web Hosting plan, you can have email addresses
 ## Requirements
 
 - an MX plan solution, available via a [Web Hosting plan]({ovh_www}/web-hosting/) or [the free Start10M Hosting plan]({ovh_www}/domains/start10m_hosting_offer.xml)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
-Once the MX Plan solution is created and available, you can manage it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Depending on its activation date or if [it has been migrated recently](https://www.ovh.co.uk/mxplan-migration/){.external}, you may have the old or new version of the solution. You will need to check this before you proceed any further. 
+Once the MX Plan solution is created and available, you can manage it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Depending on its activation date or if [it has been migrated recently](https://www.ovh.co.uk/mxplan-migration/){.external}, you may have the old or new version of the solution. You will need to check this before you proceed any further. 
 
-To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and open the `Web`{.action} section. Click `Emails`{.action} in the services bar on the left-hand side, then choose the name of the plan concerned. Continue with the next steps, depending on which version you own.
+To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and open the `Web`{.action} section. Click `Emails`{.action} in the services bar on the left-hand side, then choose the name of the plan concerned. Continue with the next steps, depending on which version you own.
 
 |MX Plan solution legacy version|MX Plan solution new version|
 |---|---|
@@ -66,7 +66,7 @@ Once you have configured your email addresses, you can start using them straight
 
 Go to the [Webmail login]({ovh_www}/mail/){.external} page, then enter the email address and password. Then click the `Login`{.action} button.
 
-When you first log in to webmail, you will be prompted to set the interface language, and the time zone you are in. Your inbox will then appear. To find out how to use your email address via OWA webmail, you can refer to our [Outlook Web App user guide](../../microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/){.external}.
+When you first log in to webmail, you will be prompted to set the interface language, and the time zone you are in. Your inbox will then appear. To find out how to use your email address via OWA webmail, you can refer to our [Outlook Web App user guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/){.external}.
 
 ![email](images/mxplan-starter-new-step4.png){.thumbnail}
 
@@ -76,7 +76,7 @@ You will need to set up your email address on the device you want to check your 
 
 |Windows|Outlook|Apple|Android|Other|
 |---|---|---|---|---|
-|[Windows 10 Mail](../mail-configuration-windows-10/)|[Outlook 2016](../configuration-outlook-2016/)|[macOS Mail](../guide-configuring-mail-on-macos/)|[Android](../configuration-android/)}|[Gmail online interface](../gmail-configuration/)|
+|[Windows 10 Mail](../mail-configuration-windows-10/)|[Outlook 2016](../configuration-outlook-2016/)|[macOS Mail](../guide-configuring-mail-on-macos/)|[Android](../configuration-android/)|[Gmail online interface](../gmail-configuration/)|
 | | |[iPhone and iPad](../email_hosting_iphone_ios_91_configuration/){.external}| | |
 
 If you simply need the information required to configure your email account, the settings to use are listed below:
@@ -85,15 +85,15 @@ If you simply need the information required to configure your email account, the
 
 |Server type|Server name|Port (with SSL)|Port (without SSL)|
 |---|---|---|---|
-|Incoming|SSL0.OVH.NET|993|143|
-|Outgoing|SSL0.OVH.NET|465|587|
+|Incoming|imap.mail.ovh.ca|993|143|
+|Outgoing|smtp.mail.ovh.ca|465|587|
 
 - **For POP configuration**
 
 |Server type|Server name|Port (with SSL)|Port (without SSL)|
 |---|---|---|---|
-|Incoming|SSL0.OVH.NET|995|110|
-|Outgoing|SSL0.OVH.NET|465|587|
+|Incoming|pop.mail.ovh.ca|995|110|
+|Outgoing|smtp.mail.ovh.ca|465|587|
 
 > [!warning]
 >
@@ -152,15 +152,15 @@ If you simply need the information required to configure your email account, the
 
 |Server type|Server name|Port (with SSL)|Port (without SSL)|
 |---|---|---|---|
-|Incoming|SSL0.OVH.NET|993|143|
-|Outgoing|SSL0.OVH.NET|465|587|
+|Incoming|imap.mail.ovh.ca|993|143|
+|Outgoing|smtp.mail.ovh.caT|465|587|
 
 - **For POP configuration**
 
 |Server type|Server name|Port (with SSL)|Port (without SSL)|
 |---|---|---|---|
-|Incoming|SSL0.OVH.NET|995|110|
-|Outgoing|SSL0.OVH.NET|465|587|
+|Incoming|pop.mail.ovh.ca|995|110|
+|Outgoing|smtp.mail.ovh.caT|465|587|
 
 > [!warning]
 >

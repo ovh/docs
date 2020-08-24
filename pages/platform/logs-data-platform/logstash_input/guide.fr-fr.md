@@ -5,37 +5,37 @@ order: 1
 section: Features
 ---
 
-**Last updated 2nd April, 2019**
+**Last updated 21st July, 2020**
 
 ## Objective
 
-[Logstash](https://github.com/elastic/logstash){.external} is an open source software developed by Elastic and allows you to send messages from different inputs to different types of output using different codecs, while processing them and transforming them in the process. You can learn a lot more about it on [the official website](https://www.elastic.co/products/logstash){.external}.
+[Logstash](https://github.com/elastic/logstash){.external} is an open source software developed by Elastic. Based on its features, its possible to send messages from several inputs to different types of output using a variety of codecs, while processing them and transforming them in the process. You can learn a lot more about it on [the official website](https://www.elastic.co/products/logstash){.external}.
 
-This guide will show you how to deploy your personal Logstash with your own configuration to send your logs from any source to your stream directly on the Logs Data Platform.
+This guide will demonstrate how to deploy a personalized Logstash having a specific configuration, and send logs from any source to your stream directly on the Logs Data Platform.
 
 ## Requirements
 
-If you are new to Logs Data Platform, you will have to complete this [Quick Start Tutorial](../quick_start/guide.fr-fr.md){.ref}
+If you are new to Logs Data Platform, completion of the [Quick Start Tutorial](../quick_start/){.ref} is highly recommended.
 
-This is a rather long document but if you are already familiar with Logstash you can jump to the parts you're interested in :
+The following links can help you get a headstart on Logstash in order to get started with the basics:
 
 - [What is Logstash?](#what-is-logstash){.external}
-- [How do I configure Logstash Collector on Logs Data Platform?](#id2){.external}
-- [What is special about our hosted Logstash? Available plugins, SSL Certificates and more.](#additional-information){.external}
+- [How do I configure Logstash Collector on Logs Data Platform?](#host-a-logstash-collector-on-logs-data-platform){.external}
+- [What is special about our hosted Logstash? Available plugins, SSL Certificates and more.](#additional-information_1){.external}
 
-This is "All you have to know about the Logstash Collector on the Logs Data Platform"!
+This is "All you need to know about the Logstash Collector on the Logs Data Platform"!
 
 ## Instructions
 
 ### What is Logstash
 
-Logstash is mainly a processing pipeline of data that allows you to get or receive information from a lot of sources and transform them if necessary before sending them to different types of software. In a configuration file you have 3 main parts to configure:
+Logstash is a data processing pipeline that allows you to receive information from several sources, transforming them if necessary before sending to a variety of softwares. In the configuration file there are three main parts to configure:
 
-- The Input part: This part details where your logs come from. Some inputs wait for logs and some inputs are able to fetch them from a database for example.
-- The Filter part: This part details how Logstash should parse and transform your logs messages.
-- The Output part: This part specifies in which format to send logs and where to send them.
+- The Input part: details where your logs come from. For instance, some inputs may wait for logs and in some cases inputs are able to fetch them from a database.
+- The Filter part: details how Logstash should parse and transform your logs messages.
+- The Output part: specifies the format and their destination.
 
-Here is a small configuration file so you get an idea :
+Following is a small configuration file for familiarizing yourself with the idea :
 
 ```ruby
  #input
@@ -43,7 +43,7 @@ Here is a small configuration file so you get an idea :
  #Each incoming line of log will be tagged as a syslog type.
  input {
      tcp {
-         port => 4000
+         port => 5000
          type => syslog
      }
  }
@@ -63,11 +63,12 @@ Here is a small configuration file so you get an idea :
  }
  
  #Output
- #The output part will then encode everything in a gelf format and send it to Logs Data Platform  on the UDP GELF endpoint
- #Note that it will also add our token in the process.
+ #The output part will then encode everything in a gelf format and send it to Logs Data Platform on the TCP GELF endpoint
+ #Note that you need to change the token to use the one of your stream.
  output {
      gelf {
          host => "<your_cluster>.logs.ovh.com"
+	 protocol => "TCP"
          port => 2202
          custom_fields => ['X-OVH-TOKEN', 'da819874-5562-4a5f-b34e-fa8e708e8f16']
      }
@@ -111,17 +112,18 @@ So, let's suppose you have a lot of hosts and you want to send all your syslog o
 The Logstash Collector comes with many advantages :
 
 - The output part of the Logstash is automatically configured by us.
-- You have your own certificate to enable SSL. This certificate can be used for example to trust only the TCP Inputs of your Logstash. This certificate and its associated key can be found at the following paths : **/etc/ssl/private/server.crt** for the cert and **/etc/ssl/private/server.key** for the key. The CA used to create these inputs is at the following location **/etc/ssl/private/ca.crt**. You will find this SSL CA for reference at the end of this document. For inputs http with ssl usage, a keystore with the key+cert+CA in PKCS12 format is present at the following location **/etc/ssl/private/keystore.jks** with keystore password "changeit".
-- And finally, we ensure that your collector  is always up and running 24/7.
+- You have your own certificate to enable SSL. This certificate can be used for example to trust only the TCP Inputs of your Logstash. This certificate and its associated key can be found at the following paths : **/etc/ssl/private/server.crt** for the cert and **/etc/ssl/private/server.key** for the key. The CA used to create these inputs is at the following location **/etc/ssl/private/ca.crt**. You will find this SSL CA for reference at the end of this document. For the http input with ssl enabled, a keystore with the key+cert+CA in PKCS12 format is present at the following location **/etc/ssl/private/keystore.jks** with keystore password "changeit".
+- And finally, we ensure that your collector is always up and running 24/7.
 
 To host this collector in the Logs Data Platform, you will need to configure it in the Logs Data Platform manager:
 
 - Check the **Data-gathering tools** tab and click on the button `Add a new data-gathering tool`{.action}.
 - The Manager will then ask you to put a elegant name and a wonderful description.
-- Select your Software : Select **Logstash 6.7**.
-- Fill the main port of your input. We will put **4000** for now. Don't worry this is something you can change later.
+- Select your Software : Select **Logstash 7.x**.
+- Fill the main port of your input. We need to know which port you will use in your input configuration. We will put **4000** for now. This is also a setting you can change later.
+- If you want to restrict the Logstash to specific IP Adresses, you can use the **Trusted Networks** field to firewall your instances. Add every IP Adress or subnet you want to allow, separated by comma. Leave it empty to allow any IP to contact it. Your collector will have a public IP Adress, you can use this feature to prevent people to send you false information in it. 
 - Select one of the stream you have to attach this collector to the stream you have. That means that every message that goes out of this collector is automatically routed to the stream. 
-- Finally if your Logstash collector must be started with only one instance, use the single instance toggle. It concerns input plugins that will consume the data from its source by itself (like the [Twitter one](../twitter/guide.fr-fr.md){.ref}).
+- Finally, select the number of instances you would need to handle your load. We recommend to have at least two instances to ensure the high availabilty of your Logstash. However some uses cases need you to limit the number of instance at 1 (like the [Twitter use case](../twitter/){.ref}).
 
 ![logstash_creation](images/logstash_created.png){.thumbnail}
 
@@ -140,7 +142,7 @@ There is 3 sections in this page :
 - The Filter section where you put the filter part.
 - The grok patterns sections where you can create your own grok patterns.
 
-Note that unlike a classic config file, here you don't have to include the input configuration in a ruby hash
+Note that unlike a classic config file, here you don't have to enclose the input grammar configuration. 
 
 ```ruby
 input {
@@ -149,7 +151,7 @@ input {
 ```
 We will do it automatically for you.
 
-If we take the configuration example above and if we enable the SSL encryption, we have that configuration for the Input Section :
+If we take the configuration example above and if we enable the SSL encryption, we have the following configuration for the Input Section :
 
 ```ruby
  tcp {
@@ -168,10 +170,10 @@ If we take the configuration example above and if we enable the SSL encryption, 
 As you can see, this is roughly the same configuration that before. The SSL configuration needs 5 extra parameters :
 
 - **ssl_enable**: that allows to enable SSL. Must be set to 'true'.
+- **ssl_verify**: this deactivates the client certificate verification process that needs a trusted certificate on client side.
 - **ssl_cert**: the location of the auto-generated server certificate.
 - **ssl_key**: the location of the associated key.
 - **ssl_extra_chain_certs**: the array contains the path to the CA certificate.
-- **ssl_verify**: this deactivates the client certificate verification that needs a trusted certificate on client side.
 
 All the inputs have preconfigured SSL certificates at the fixed locations used in the configuration above. And for the filter part, you just have to copy and paste the previous configuration.
 
@@ -183,17 +185,7 @@ To validate the settings, you will have to click on `Test the configuration`{.ac
 
 ![logstash_testing](images/test_success.png){.thumbnail}
 
-You can then click on `Next`{.action} button to reach the final page!
-
-Many inputs like the redis one for example, fetch their own data from various sources. But in the case of the TCP Input, you need to tell us which port you want to open in your Collector. Moreover your collector will have a public IP, you don't want anyone to mess up with it. Don't worry you can further secure you input by whitelisting only a few IPs.
-
-#### Collector Networking Configuration
-
-On the network configuration page, you will be able to specify which IPs or Subnet you allow to join your collector. Just add every entry you need by using the field and click on `+`{.action}. You will have to do it for every IP or subnetwork you want to add. If the entry is successfully added, you will see the entry below. Use the `Trash`{.action} icon to delete the entry.
-
-![network_input](images/network-input.png){.thumbnail}
-
-That's all for the Network Configuration. You can go back to the Data-gathering tools page by using the link at the top.
+You can then click on `Finish the configuration`{.action} button to save your configuration!
 
 #### Starting the input
 
@@ -221,7 +213,7 @@ This is an address of your collector for the cluster on Logs Data Platform. Send
 
 #### Logstash Version
 
-The version hosted by Logs Data Platform is the Logstash 6.7 (as of April 2019). Of course we will update to the new versions as soon as they become available.
+The version hosted by Logs Data Platform is the Latest Logstash 7 version (7.8 as of July 2020). Of course we will update to the new versions as soon as they become available.
 
 #### Logstash Plugins
 For your information, here is the list of Logstash plugins we support. Of course we will welcome any suggestion on additional plugins. Don't hesitate to contact us on the [community hub](https://community.ovh.com/en/c/Platform/data-platforms){.external}.
@@ -231,10 +223,11 @@ For your information, here is the list of Logstash plugins we support. Of course
 ```
  logstash-input-azure_event_hubs
  logstash-input-beats
+ logstash-input-couchdb_changes
  logstash-input-dead_letter_queue
  logstash-input-elasticsearch
  logstash-input-ganglia
- logstash-input-gelf => patched to support TCP
+ logstash-input-gelf
  logstash-input-generator
  logstash-input-graphite
  logstash-input-heartbeat
@@ -242,7 +235,7 @@ For your information, here is the list of Logstash plugins we support. Of course
  logstash-input-http_poller
  logstash-input-imap
  logstash-input-jdbc
- logstash-input-kafka
+ logstash-input-jms
  logstash-input-rabbitmq
  logstash-input-redis
  logstash-input-s3
@@ -254,7 +247,6 @@ For your information, here is the list of Logstash plugins we support. Of course
  logstash-input-tcp
  logstash-input-twitter
  logstash-input-udp
- logstash-input-websocket
 ```
 
 ##### Input gelf plugin
@@ -297,6 +289,7 @@ We patched the gelf input to support TCP+TLS. Example of Input section :
  logstash-filter-jdbc_streaming
  logstash-filter-json
  logstash-filter-kv
+ logstash-filter-math
  logstash-filter-memcached
  logstash-filter-metrics
  logstash-filter-mutate
@@ -309,12 +302,14 @@ We patched the gelf input to support TCP+TLS. Example of Input section :
  logstash-filter-truncate
  logstash-filter-urldecode
  logstash-filter-useragent
+ logstash-filter-uuid
  logstash-filter-xml
 ```
 
 #### codec plugins
 
 ```
+ logstash-codec-avro
  logstash-codec-cef
  logstash-codec-collectd
  logstash-codec-dots
@@ -337,11 +332,12 @@ We patched the gelf input to support TCP+TLS. Example of Input section :
 The following plugins are disabled for security reasons :
 
 ```
-logstash-input-exec
-logstash-input-file
-logstash-input-pipe
-logstash-input-unix
-logstash-filter-ruby
+ logstash-input-exec
+ logstash-input-file
+ logstash-input-kafka
+ logstash-input-pipe
+ logstash-input-unix
+ logstash-filter-ruby
 ```
 
 ##### SSL CA certificate
@@ -365,7 +361,7 @@ Here are some links to help you go further with Logstash
 
 - [Logstash official documentation](https://www.elastic.co/guide/en/logstash/current/index.html){.external}
 - [Grok filters documentation](https://www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html){.external}
-- [Logstash + Groks + Filebeat = Awesome](../filebeat_logs/guide.fr-fr.md){.ref}
+- [Logstash + Groks + Filebeat = Awesome](../filebeat_logs/){.ref}
 - [Grok Constructor](http://grokconstructor.appspot.com/do/match){.external}
 - [A Ruby regular expression editor](https://rubular.com/){.external}
 
@@ -373,7 +369,7 @@ That's all you need to know about the Logstash Collector on Logs Data Platform.
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.fr-fr.md){.ref}
+- Getting Started: [Quick Start](../quick_start/){.ref}
 - Documentation: [Guides](../product.fr-fr.md){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

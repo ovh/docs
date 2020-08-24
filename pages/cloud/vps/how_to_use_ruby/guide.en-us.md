@@ -3,6 +3,7 @@ title: How to use Ruby
 excerpt: General information on the ruby distribution
 slug: how_to_use_ruby
 section: Advanced usage
+hidden: yes
 ---
 
 
@@ -95,3 +96,4 @@ For a detailed documentation of Passenger: [Passenger](http://www.modrails.com/d
 
 ## 
 Your database was installed with the default settings and configured to be accessible only from your VPS.
+

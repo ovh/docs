@@ -16,9 +16,9 @@ Twitter can be an amazing source to have a direct feedback on your products or e
 
 Prior to completing this guide, you should read the following:
 
-- [Quick Start of Logs Data Platform](../quick_start/guide.fr-fr.md){.ref}
-- [Field naming conventions](../field_naming_conventions/guide.fr-fr.md){.ref}
-- [Logstash collector](../logstash_input/guide.fr-fr.md){.ref}
+- [Quick Start of Logs Data Platform](../quick_start/){.ref}
+- [Field naming conventions](../field_naming_conventions/){.ref}
+- [Logstash collector](../logstash_input/){.ref}
 
 If you have completely understood these three guides, let's dive into this one.
 
@@ -48,7 +48,7 @@ Note that you can configure the access levels on both your app and tokens. All t
 
 #### Logstash collector creation
 
-In the Logs Data Platform manager, create a Logstash collector. On the creation page, as usual fill a Name and a Description and leave the default port since it will not be used (The logstash input will connect to Twitter by itself). Also attach your collector to a dedicated stream. The only important thing is to check the **Single Instance** option. This option is here to ensure that only one logstash instance will be created. If you don't use it, according to your option attached, several instances will fetch the same data from Twitter and send it to your stream multiple times.
+In the Logs Data Platform manager, create a Logstash collector. On the creation page, as usual fill a Name and a Description and leave the default port since it will not be used (The logstash input will connect to Twitter by itself). Also attach your collector to a dedicated stream. The only important thing is to create only one instance. If not, you will have several instances fetching the same data from Twitter and sending it to your stream multiple times.
 
 ![single_instance](images/single_instance.png){.thumbnail}
 
@@ -264,7 +264,7 @@ That's all for now. If you have any proposition or trouble with this tutorial, d
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.fr-fr.md){.ref}
+- Getting Started: [Quick Start](../quick_start/){.ref}
 - Documentation: [Guides](../product.fr-fr.md){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

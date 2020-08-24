@@ -1,9 +1,10 @@
 ---
-title: 'Web hosting: SSH on web hosting packages'
-excerpt: 'Web hosting: SSH on web hosting packages'
-id: '1962'
+title: 'Using SSH on a Web Hosting plan'
+excerpt: 'Using SSH on a Web Hosting plan'
 slug: web_hosting_ssh_on_web_hosting_packages
 legacy_guide_number: g1962
+section: 'FTP and SSH'
+order: 4
 ---
 
 ## What is SSH and how do you use it?

@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to assign a public or private IP address 
 section: 'Getting started'
 ---
 
-**Last updated 16th April 2018**
+**Last updated 3rd August 2020**
 
 ## Objective
 
@@ -22,25 +22,25 @@ After you have created a virtual machine (VM), you can assign to it a public or 
 
 ### Retrieve your information
 
-You can retrieve the information of your public IP address block directly from the vSphere client, by going to the `Hosts and Clusters`{.action} section. Click on your cluster and click on the `Manage`{.action} tab, then `OVH Network`{.action}.
+You can retrieve the information of your public IP address block directly from the vSphere client, by going to the `Hosts and Clusters`{.action} section. Click on your datacenter and click on the `Configure`{.action} tab. Then click `Network`{.action} under `OVHcloud`.
 
-![Configuration on the OVH Network](images/config_ip_ovh_network.jpg){.thumbnail}
+![Configuration on the OVH Network](images/01config_ip_ovh_network.png){.thumbnail}
 
-On each block delivered by OVH, five IP addresses are reserved for configuring the network and must never be used for your virtual machines. The first and the last four IP addresses in the block are reserved for this purpose.
+On each block delivered by OVHcloud, five IP addresses are reserved for configuring the network and must never be used for your virtual machines. The first and the last four IP addresses in the block are reserved for this purpose.
 
 This is how a Private Cloud IP block is organised:
 
 - The first IP address that is marked as (`Reserved`) corresponds to the network address
 - The IP addresses that follow it can be used for your virtual machines. The are marked as (`Available`) if no VM is using them, or as (`Used`) if they are being used
-- The last four IP addresses in the block are reserved: two are dedicated to OVH routers for operating the block, and the other two are used for the gateway and broadcast
+- The last four IP addresses in the block are reserved: two are dedicated to OVHcloud routers for operating the block, and the other two are used for the gateway and broadcast
 
-![Advanced configuration on the OVH Network](images/config_ip_ovh_network_advanced.jpg){.thumbnail}
+![Advanced configuration on the OVH Network](images/02config_ip_ovh_network_advanced.png){.thumbnail}
 
 ### Configure a public IP address
 
 To configure a public IP address on your virtual machine, you must first choose the `VMNetwork`{.action} interface in your VM network adapter settings:
 
-![VMNetwork](images/vmnetwork.PNG){.thumbnail}
+![VMNetwork](images/03vmnetwork.png){.thumbnail}
 
 #### Linux
 
@@ -89,26 +89,28 @@ DNS server: 213.186.33.99
 
 ### Configure a private IP address
 
-The process for configuring a private IP address is similar to that of a public IP address. However, you must use the network adapter configured for your VLAN or VXLAN.
+The process for configuring a private IP address is similar to that of a public IP address. However, you must use the network adapter configured for your VLAN or VxLAN.
 
 In your interface options, you can edit the following settings:
 
-- On an SDDC, a VLAN interface (10 to 20 by default, but you can create more)
+- On an SDDC, a VLAN interface (10 to 20 by default and linked to the vRack, you can create more by consulting [this guide](https://docs.ovh.com/fr/private-cloud/creation-vlan-vxlan/)) and an internal VxLAN interface to the HPC
 
-- On a Private Cloud, a VXLAN interface (vxw-dvs, etc.). If you need more VXLANs, you can open a support ticket
+- On a Dedicated Cloud, a VxLAN interface (vxw-dvs, etc.). If you need more VXLANs, you can open a support ticket
 
 
 #### SDDC
 
-In your virtual machine settings, you must use a VLAN:
+In your virtual machine settings, you can use a VLAN or a VxLAN:
 
-![VLAN for SDDC](images/vlan.PNG){.thumbnail}
+![VLAN for SDDC](images/04vlanBis.png){.thumbnail}
 
-#### Private Cloud
+![VLAN for SDDC](images/05vlan.png){.thumbnail}
 
-In your virtual machine settings, you must use a VXLAN:
+#### Dedicated Cloud
 
-![VXLAN on the Private Cloud](images/vxlan.PNG){.thumbnail}
+In your virtual machine settings, you must use a VxLAN:
+
+![VXLAN on the Private Cloud](images/06vxlan.png){.thumbnail}
 
 #### Linux
 
