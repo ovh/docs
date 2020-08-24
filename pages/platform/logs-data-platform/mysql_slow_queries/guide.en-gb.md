@@ -18,9 +18,9 @@ This guide will help you to track your slowest queries and send them to Logs Dat
 
 Before, you must read these three guides:
 
-- [Starting with Logs Data Platform.](../quick_start/guide.en-gb.md){.ref}
-- [How to setup a Logstash input?](../logstash_input/guide.en-gb.md){.ref}
-- [Using Filebeat with Logs Data Platform.](../filebeat_logs/guide.en-gb.md){.ref}
+- [Starting with Logs Data Platform.](../quick-start){.ref}
+- [How to setup a Logstash input?](../logstash-input){.ref}
+- [Using Filebeat with Logs Data Platform.](../filebeat-logs){.ref}
 
 ## Instructions
 
@@ -165,13 +165,13 @@ A fully parsed log looks like this:
 - You can track the **mysql_slowlog_user** and the **mysql_slowlog_host** that trigger the slowest queries.
 - You have the **mysql_slowlog_rows_examined_int** scanned and returned
 
-All this information can help you to analyse the most difficult queries for your database. You will know when to scale and when your database is too big for your hardware or when to optimize your queries. Of course it is always better to have a nice dashboard to display your own key performance indicators. One way to have this critical information as soon as it arrives is to use the [alerting feature.](../alerting/guide.en-gb.md){.ref}
+All this information can help you to analyse the most difficult queries for your database. You will know when to scale and when your database is too big for your hardware or when to optimize your queries. Of course it is always better to have a nice dashboard to display your own key performance indicators. One way to have this critical information as soon as it arrives is to use the [alerting feature.](../alerting){.ref}
 
 ![slow_graylog](images/mysql_slow_dashboard.png){.thumbnail}
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
-- Documentation: [Guides](../product.en-gb.md){.ref}
+- Getting Started: [Quick Start](../quick-start){.ref}
+- Documentation: [Guides](../){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
