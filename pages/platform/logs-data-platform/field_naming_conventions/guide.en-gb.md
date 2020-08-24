@@ -93,7 +93,7 @@ Happy Logging
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
-- Documentation: [Guides](../product.en-gb.md){.ref}
+- Getting Started: [Quick Start](../quick-start){.ref}
+- Documentation: [Guides](../){.ref}
 - Join our community of users on [https://community.ovh.com](https://community.ovh.com/en/){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}

@@ -20,7 +20,7 @@ In this guide will show you how to send Logs from your Linux instance to Logs Da
 - A **Linux** based instance (server, VPS, Cloud instance, Raspberry Pi, ...). Command lines will be for **DEBIAN 9** in this tutorial
 - A root access to this instance
 - [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
-- [To create at least one Stream and get its token.](../quick_start/guide.en-gb.md){.ref}
+- [To create at least one Stream and get its token.](../quick-start){.ref}
 
 ## Instructions
 
@@ -44,7 +44,7 @@ Conclusion : lot of info, with a date, a process, a description. but hard to fol
 
 ### Configure your Account
 
-First thing to do is to configure your Logs Data Platform account: order a plan (we have free plans ;-), create your user, a stream and a dashboard. Verify that everything works already perfectly. We wrote an independent guide for this, please read it and come back here after : [Quick start](../quick_start/guide.en-gb.md){.ref} Good? let's go to following step then !
+First thing to do is to configure your Logs Data Platform account: order a plan (we have free plans ;-), create your user, a stream and a dashboard. Verify that everything works already perfectly. We wrote an independent guide for this, please read it and come back here after : [Quick start](../quick-start){.ref} Good? let's go to following step then !
 
 ### Install and configure a log collector
 
@@ -183,7 +183,7 @@ The best feature is to mix criteria, based on what is important to you. For exam
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
-- Documentation: [Guides](../product.en-gb.md){.ref}
+- Getting Started: [Quick Start](../quick-start){.ref}
+- Documentation: [Guides](../){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

@@ -18,7 +18,7 @@ The Logs Data Platform allows you to connect different applications or servers t
 
 - **ldp-tail** can be run on Linux, Mac or Windows, locally or remotely
 - You will need an internet connection
-- A LDP account with [an active stream](../quick_start/guide.en-gb.md){ref} and WebSocket option enabled
+- A LDP account with [an active stream](../quick-start){.ref} and WebSocket option enabled
 
 ## Instructions
 
@@ -164,7 +164,7 @@ To make the magic happens, replace begin and end values with timestamps that hav
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
-- Documentation: [Guides](../product.en-gb.md){.ref}
+- Getting Started: [Quick Start](../quick-start){.ref}
+- Documentation: [Guides](../){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
