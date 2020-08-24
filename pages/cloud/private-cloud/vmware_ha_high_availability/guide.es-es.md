@@ -19,8 +19,8 @@ La función principal de **VMware HA**(Alta disponibilidad) es reiniciar las má
 
 ## Requisitos
 
-- Estar conectado a la [interfaz vSphere](../connexion-interface-vsphere/).
-- Tener contratado un [Hosted Private Cloud de OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Estar conectado a la [interfaz vSphere](../instalar_el_vsphere_client/).
+- Tener contratado un [Hosted Private Cloud de OVHcloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/){.external}.
 
 ## Procedimiento
 
@@ -35,7 +35,7 @@ Si HA no está activo en su cluster, diríjase a la pestaña `Configure` de su c
 Haga clic en `Editar`{.action} y marque la casilla para activar la funcionalidad HA.
 
 Es importante activar también la supervisión del host. Esta configuración permite el envío de latidos entre los host ESXi para detectar una posible avería.
-Será necesario desactivarla para llevar a cabo ciertas tareas como las actualizaciones con [el update manager](../vmware-update-manager/). En ese caso, el host estará aislado.
+Será necesario desactivarla para llevar a cabo ciertas tareas como las actualizaciones con [el update manager](../utilizar_vmware_update_manager/). En ese caso, el host estará aislado.
 
 ![activación HA](images/HA.png){.thumbnail}
 
@@ -91,7 +91,7 @@ En caso de que falle un almacén de datos con estado APD (all path down), se pue
 
 ##### Supervisión de las MV
 
-La supervisión de las máquinas virtuales está disponible después de instalar las [VMware tools](../installation-des-vmware-tools/).
+La supervisión de las máquinas virtuales está disponible después de instalar las [VMware tools](../instalar_las_vmware_tools/).
 En caso de no haber respuesta a través de las **tools**(latidos), la máquina virtual se reiniciará de forma automática. Se puede realizar una configuración avanzada con respecto a esta funcionalidad (por ejemplo, con intervalos de reinicio).
 
 ![Supervisión de las MV](images/HAparam5.PNG){.thumbnail}
@@ -108,11 +108,11 @@ El control de admisión impone restricciones sobre el uso de recursos. No se per
 
 El control de admisión de vSphere HA se basa en la cantidad de errores de host que el clúster puede tolerar sin perder la capacidad de conmutación por error. La capacidad de conmutación por error del host puede definirse de tres formas:
 
-- [Porcentaje de recursos del cluster](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-FAFEFEFF-56F7-4CDF-A682-FC3C62A29A95.html){.external-link}
+- [Porcentaje de recursos del cluster](https://docs.vmware.com/es/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-FAFEFEFF-56F7-4CDF-A682-FC3C62A29A95.html){.external-link}
 
-- [Directiva de ranuras](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-85D9737E-769C-40B6-AB73-F58DA1A451F0.html){.external-link}
+- [Directiva de ranuras](https://docs.vmware.com/es/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-85D9737E-769C-40B6-AB73-F58DA1A451F0.html){.external-link}
 
-- [Hosts de conmutación por error dedicados](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-C4F5F9EE-4235-4151-BEBE-FCB2A752407B.html){.external-link}
+- [Hosts de conmutación por error dedicados](https://docs.vmware.com/es/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-C4F5F9EE-4235-4151-BEBE-FCB2A752407B.html){.external-link}
 
 #### Almacén de datos de latidos
 
@@ -122,7 +122,7 @@ Cuando el host principal de un cluster HA no puede comunicarse con un host subor
 
 Es posible realizar varios ajustes de configuración avanzada en el cluster.
 
-Para ello, debe dirigirse a [esta página](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-E0161CB5-BD3F-425F-A7E0-BF83B005FECA.html){.external-link}.
+Para ello, debe dirigirse a [esta página](https://docs.vmware.com/es/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-E0161CB5-BD3F-425F-A7E0-BF83B005FECA.html){.external-link}.
 
 ### Regla HA
 
