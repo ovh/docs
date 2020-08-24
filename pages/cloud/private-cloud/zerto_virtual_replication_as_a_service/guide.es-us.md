@@ -15,7 +15,7 @@ El objetivo de esta guía es explicar los conceptos y los pasos necesarios para 
 
 ## Requisitos
 
-- Tener contratados dos productos [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external} en dos datacenters diferentes.
+- Tener contratados dos productos [Private Cloud](https://www.ovh.com/es/private-cloud/){.external} en dos datacenters diferentes.
 - Tener una dirección IP pública libre en cada datacenter.
 
 ### Conceptos Zerto Virtual Replication
