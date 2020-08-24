@@ -1,80 +1,87 @@
 ---
-title: 'Wie das API von vScope verwenden'
+title: Das API von vScope verwenden
 slug: vscopeapi
-excerpt: 'Das API vScope ermöglicht Ihnen, die Aufnahmedaten in Ihren Anwendungen zu verwenden'
+excerpt: Das API vScope ermöglicht Ihnen, die Monitoringdaten in Ihren Anwendungen zu verwenden
+section: OVHcloud Dienstleistungen und Optionen
+order: 1
 ---
 
-**Stand 25.11.2019**
+**Letzte Aktualisierung am 25.11.2019**
 
-## Ziel
+## Einleitung
 
-OVHcloud stellt Ihnen ein Überwachungs- und Aufnahmetool Ihrer virtuellen Maschinen und Ihrer Infrastruktur zur Verfügung, das **vScope**.genannt wird
+OVHcloud stellt Ihnen mit **vScope** ein Überwachungstool für Ihre virtuellen Maschinen und Ihre Infrastruktur zur Verfügung.
 
-Es handelt sich um eine Website, in dem alle die Verwendung Ihrer Ressourcen betreffenden nützlichen Informationen gesammelt sind.
+Es handelt sich um eine Website, auf der alle nützlichen Informationen zur Verwendung Ihrer Ressourcen gesammelt sind.
 
 Diese Informationen sind auch über APIv6 und API Metrics verfügbar.
 
 **Dieses Handbuch beschreibt die Verwendung dieser APIs**.
 
-## Beschreibung
+## Voraussetzungen
 
-Der vScope stellt zwei Informationsarten zur Verfügung:
+- eine [Hosted Private Cloud Infrastruktur](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/)
+- Sie sind im Verwaltungsinterface von vScope eingeloggt
 
-- Live- **Informationen**, die den Informationen der verschiedenen Bestandteile an einem Moment T entsprechen.
-- Grafiken, die die vergangenen Daten der Leistung der verschiedenen Bestandteile wiederspiegeln. Beispiel: CPU, RAM einer virtuellen Maschine.
+## Praktische Anwendung
+
+Das Tool vScope stellt zwei Arten von Informationen zur Verfügung:
+
+- **Live-**Informationen, die den Daten der verschiedenen Komponenten zu einem Moment „T“ entsprechen.
+- Grafiken, die die früheren Leistungsdaten der verschiedenen Komponenten veranschaulichen. Zum Beispiel: CPU und RAM einer virtuellen Maschine.
 
 
 ### Die Live-**Daten**sammeln
 
-Die Live-**Daten** sind die von der Hauptseite der Benutzeroberfläche vScope aus verfügbaren Daten.
+Die **Live-**Daten sind die von der Hauptseite der Benutzeroberfläche vScope aus verfügbaren Daten.
 
 ![vScope-API](images/vScope1.png){.thumbnail}
 
-Sie können die Live-**Daten** für die folgenden Bestandteile wieder erlangen:
+Sie können die **Live-**Daten für die folgenden Komponenten abrufen:
 
-- filers
-- Hosts:
+- Filer
+- Hosts
 - Virtuelle Maschinen
 
-Die Verwendung des API geschieht über drei APIv--Anrufe:
+Die Verwendung des API geschieht über drei APIv-Abrufe:
 
-#### Filers
+#### Filer
 
-> [!api]
+> \[!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
 >
 
 #### Hosts
 
-> [!api]
+> \[!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}
 > 
 
 #### virtuelle Maschinen
 
-> [!api]
+> \[!api]
 > 
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
 > 
 
-### die historischen Daten sammeln (Grafiken)
+### Die historischen Daten sammeln (Grafiken)
 
-Um die historischen Daten (Grafiken) zu sammeln und zu verwenden verwenden wir das Produkt **Metrics Data Platforms**.
+Um die historischen Daten (Grafiken) zu sammeln und zu verwenden, nutzen wir das Produkt **Metrics Data Platforms**.
 
-Wir können über das Protokoll Opentsdb oder WARP10 Ihre Daten in der Form von Punkten wieder erlangen. Sie können diese Punkte über Ihre Anwendung auswerten oder sie der gewünschten Wiedergabe gemäß anzeigen.
+Über das Protokoll Opentsdb oder WARP10 können Sie Ihre Daten in Form von Punkten abrufen. Sie können diese Punkte nach Belieben mit Ihrer Anwendung auswerten oder sie direkt anzeigen.
 
 
-Dieser Artikel deckt die Verwendung des Opentsdb-Protokolls für die unbearbeitete Anzeige von Daten (keine grafische Wiedergabe) ab.
+Dieser Artikel handelt von der Verwendung des Protokolls Opentsdb für die unbearbeitete Anzeige von Daten (keine grafische Wiedergabe).
 
-Um die **Metrics Data Platforms** verwenden zu können, müssen Sie ein Token der Auslesung erhalten. Mit der neuen Version von vScope besitzt jeder Nutzer der Infrastruktur ein Token der Auslesung. 
+Um die **Metrics Data Platforms** verwenden zu können, müssen Sie ein Lesetoken erhalten. Mit der neuen Version von vScope besitzt jeder Nutzer der Infrastruktur ein Lesetoken. 
 
-Für den gewünschten Nutzer verwenden Sie den folgenden Anruf APIv6, um den Token der Auslesung wieder zu erlangen:
+Für den jeweiligen Nutzer verwenden Sie den folgenden APIv6-Abruf für das Lesetoken:
 
-> [!api]
+> \[!api]
 > 
-> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/getVscopeMetricsToken
+> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
 > 
 
 Ihr Token befindet sich im Feld **token** des Ergebnisses.
@@ -87,48 +94,48 @@ Ihr Token befindet sich im Feld **token** des Ergebnisses.
 }
 ```
 
-Für jede Bestandteilsart steht eine metrische Liste zur Verfügung und benötigt eine Anzahl von sehr präzisen Parametern (auch Label genannt).
+Für jede Art von Komponenten steht eine metrische Liste zur Verfügung und erfordert eine Anzahl von sehr präzisen Parametern (auch Label genannt).
 
-#### Filers
+#### Filer
 
 | Messwerte | Beschreibung | Label |
 | ----------- | ----------- | ----------- |
-| vscope.filer.datastore.diskspace.used | Verwendung des Filers in kB | Datenzentrum : pcc-37-187-228-180_datacenter869, <br>datastore : pcc-000443 |
+| vscope.filer.datastore.diskspace.used | Verwendung des Filers in kB | Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>datastore : pcc-000443 |
 
 #### Hosts
 
 | Messwerte | Beschreibung | Label |
 | ----------- | ----------- | ----------- |
-| vscope.host.cpu.usage.perc | Verwendung des Prozessors des Hosts in Prozent | Datenzentrum : pcc-37-187-228-180_datacenter869, <br>Host 172.17.86.51 |
-| vscope.host.mem.usage.perc | Verwendung des Speichers des Hosts in Prozent | Datenzentrum : pcc-37-187-228-180_datacenter869, <br>Host 172.17.86.51 |
-| vscope.host.net.tx | Verwendung des Netzes des Hosts in der Aussendung | Datenzentrum : pcc-37-187-228-180_datacenter869, <br>Host 172.17.86.51<br>\- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
-| vscope.host.net.rx | Verwendung des Netzes des Hosts im Empfang | Datenzentrum : pcc-37-187-228-180_datacenter869, <br>Host 172.17.86.51<br>\- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
-| vscope.host.net.packetstx | Anzahl der vom Host ausgegebenen Netzpakete | Datenzentrum : pcc-37-187-228-180_datacenter869, <br>Host 172.17.86.51<br>\- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
-| vscope.host.net.packetsrx | Anzahl der vom Host empfangenen Netzpakete | Datenzentrum : pcc-37-187-228-180_datacenter869, <br>Host 172.17.86.51<br>\- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
+| vscope.host.cpu.usage.perc | Verwendung des Prozessors des Hosts in Prozent | \- Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>Host 172.17.86.51 |
+| vscope.host.mem.usage.perc | Verwendung des Speichers des Hosts in Prozent | \- Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>Host 172.17.86.51 |
+| vscope.host.net.tx | Verwendung des Host-Netzwerks beim Senden | \- Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>Host 172.17.86.51<br>\- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
+| vscope.host.net.rx | Verwendung des Host-Netzwerks beim Empfang | \- Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>Host 172.17.86.51<br>\- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
+| vscope.host.net.packetstx | Anzahl der vom Host gesendeten Netzwerk-Pakete | \- Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>Host 172.17.86.51<br>\- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
+| vscope.host.net.packetsrx | Anzahl der vom Host empfangenen Netzwerk-Pakete | \- Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>Host 172.17.86.51<br>\- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
 
 #### virtuelle Maschinen
 
 | Messwerte | Beschreibung | Label |
 | ----------- | ----------- | ----------- |
-| vscope.vm.cpu.usage.perc | Verwendung des Prozessors des vm in Prozent | Datenzentrum : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.mem.usage.perc | Verwendung des Speichers des vm in Prozent | Datenzentrum : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.cpu.ready |CPU ready des vm in Millisekunden | \- Datenzentrum : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.net.rx | Verwendung des Netzes des vm im Empfang | \- Datenzentrum : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.net.tx | Verwendung des Netzes des vm in der Ausgabe | \- Datenzentrum : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.net.packetsrx | Anzahl der vom vm empfangenen Netzpakete | \- Datenzentrum : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.net.packetstx | Anzahl der vom vm ausgegebenen Netzpakete | \- Datenzentrum : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.disk.io.read | Anzahl der IOs des vm im Lesevorgang pro Sekunde | \- Datenzentrum : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.disk.io.write | Anzahl der IOs des vm im Schreibvorgang pro Sekunde | \- Datenzentrum : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.disk.bandwidth.read |  Durchlassbereich der Festplatte des vm im Lesevorgang | \- Datenzentrum : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.disk.bandwidth.write | Durchlassbereich der Festplatte des vm im Schreibvorgang | \- Datenzentrum : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.disk.latency.read | Latenz der Festplatte des vm im Schreibvorgang | \- Datenzentrum : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.disk.latency.write | Latenz der Festplatte des vm im Schreibvorgang | \- Datenzentrum : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
+| vscope.vm.cpu.usage.perc | Verwendung des Prozessors der VM in Prozent | \- Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
+| vscope.vm.mem.usage.perc | Verwendung des Speichers der VM in Prozent | \- Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
+| vscope.vm.cpu.ready |CPU ready der VM in Millisekunden | \- Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
+| vscope.vm.net.rx | Verwendung des Netzwerks der VM beim Empfang | \- Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
+| vscope.vm.net.tx | Verwendung des Netzwerks der VM bei der Übertragung | \- Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
+| vscope.vm.net.packetsrx | Anzahl der von der VM empfangenen Netzwerk-Pakete | \- Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
+| vscope.vm.net.packetstx | Anzahl der von der VM gesendeten Netzwerk-Pakete | \- Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
+| vscope.vm.disk.io.read | Anzahl der IOs der VM im Lesevorgang pro Sekunde | \- Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
+| vscope.vm.disk.io.write | Anzahl der IOs der VM im Schreibvorgang pro Sekunde | \- Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
+| vscope.vm.disk.bandwidth.read |  Bandbreite der Festplatte der VM beim Lesevorgang | \- Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
+| vscope.vm.disk.bandwidth.write | Bandbreite der Festplatte der VM beim Schreibvorgang | \- Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
+| vscope.vm.disk.latency.read | Latenz der Festplatte der VM beim Lesevorgang | \- Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
+| vscope.vm.disk.latency.write | Latenz der Festplatte der VM beim Schreibvorgang | \- Rechenzentrum: pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
 
-#### Beispiel der Sammlung unter Verwendung des OpenTSDB-Protokolls
+#### Beispiel einer Datensammlung unter Verwendung des OpenTSDB-Protokolls
 
-Jetzt, wo Sie Ihr Token, Ihren Endpunkt, und Ihre metrische Liste wieder erhalten haben werden Sie die Daten der Speichernutzung eines Host während des Zeitraums eines Tages erhalten.
+Jetzt, da Sie Ihr Token, Ihren Endpunkt und Ihre metrische Liste abgerufen haben, erhalten Sie die Daten zur Speichernutzung über den Zeitraum eines Tages.
 
-Im Folgenden ein Beispiel eines Antrags:
+Hier ein Beispiel für eine Abfrage.
 
 ```
 curl -XPOST https://read:XXXXXXXXXXXX_XXXXXXXXXXXZZZZZZZZZZZ_YYYYYYYYYYYYYY-XXXXXXXXX@opentsdb.gra1-ovh.metrics.ovh.net/api/query
@@ -139,7 +146,7 @@ D
             "metric":"vscope.host.mem.usage.perc", 
             "aggregator":"sum",
             "downsample":"20m-max-zero",
-            | tags             |                                                                                                                                                                                           |
+            "tags": {
                 "datacenter":"pcc-37-187-228-180_datacenter869",
                 "host":"172.17.86.51" 
             } 
@@ -150,26 +157,26 @@ D
 
 Erläuterung der verschiedenen verwendeten Felder:
 
-- lesen : der für die Durchführung des Antrags verwendete Nutzer (wird immer lesen sein);
-- XXXXXXXXXXXX_XXXXXXXXXXXZZZZZZZZZZZ_YYYYYYYYYYYYYY-XXXXXXXXX : das vorher über APIv6 zurück erhaltene Token;
-- opentsdb.gra1-ovh.metrics.ovh.net : Endpunkt OpenTSDB, ebenfalls über APIv6 zurück erhalten. Dieser Endpunkt kann je nach Ihrem Standort variieren;
-- Start: der dem Datum des Beginns des Antrags entsprechende Zeitstempel;
-- Anfragen: die Tabelle, die die zurück zu bekommenden metrischen Werte enthält. Mehrere metrische Werte können in einem einzigen Ersuchen wieder bekommen werden;
-- Metrisch: Name des zurück zu erhaltenen metrischen Wertes;
-- Aggregator: Name der Funktion der Aggregation (lesen Sie in der Dokumentation OpenTSDB für mehr Details nach);
-- downsample: Name der Funktion des Musters (erlaubt die Reduzierung der Anzahl der zurück zu bekommenden Daten. optionale Parameter);
-- tags: Liste von Labels in der Form von Schlüssel/Wert;
+- read: der für die Durchführung des Antrags verwendete Nutzer (dies wird immer read sein);
+- XXXXXXXXXXXX_XXXXXXXXXXXZZZZZZZZZZZ_YYYYYYYYYYYYYY-XXXXXXXXX: das vorher über APIv6 abgerufene Token;
+- opentsdb.gra1-ovh.metrics.ovh.net : Endpunkt OpenTSDB, ebenfalls über APIv6 abgerufen. Dieser Endpunkt kann je nach Ihrem Standort variieren;
+- start: der dem Datum des Beginns der Abfrage entsprechende Zeitstempel;
+- queries: Tabelle mit den abzufragenden Metriken. Mehrere metrische Werte können in einer einzigen Abfrage abgerufen werden;
+- metric: Name der abzufragenden Metrik;
+- aggregator: Name der Aggregationsfunktion (weitere Details entnehmen Sie bitte der Dokumentation OpenTSDB);
+- downsample: Name der Stichprobenfunktion (ermöglicht es, die Zahl der abzurufenden Daten zu reduzieren). optionaler Parameter);
+- tags: Liste von Labels in der Form Schlüssel/Wert;
 
 Andere Parameter können auch geliefert werden. Bitte lesen Sie für mehr Details in der Dokumentation von api OpenTSDB nach.
 
-Sie werden einen Json mit der Zusammenfassung des Ersuchens bekommen und auch die assoziierten Zeitstempel mit dem Wert im Feld **dps**.
+Sie werden einen Json mit der Zusammenfassung der Abfrage bekommen, sowie die mit dem Wert im Feld **dps** verbundenen Zeitstempel.
 Beispiel:
 
 ```json
 [
     {
         "metric":"vscope.host.mem.usage.perc",
-        | tags             |                                                                                                                                                                                           |
+        "tags":{
             "datacenter":"pcc-37-187-228-180_datacenter869",
             "env":"prod",
             "host":"172.17.86.51"
@@ -258,8 +265,8 @@ Beispiel:
 ]
 ```
 
-Für mehr Details zu den Ersuchen OpenTSDB können Sie in der folgenden Dokumentation nachlesen: [OpenTSDB api query](http://opentsdb.net/docs/build/html/api_http/query/index.html)
+Für mehr Details zu den Abrufen mit OpenTSDB können Sie in der folgenden Dokumentation nachlesen: [OpenTSDB api query](http://opentsdb.net/docs/build/html/api_http/query/index.html)
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.
