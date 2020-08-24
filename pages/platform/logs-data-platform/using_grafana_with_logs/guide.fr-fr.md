@@ -16,7 +16,7 @@ section: Visualize your logs
 
 This is what you need to know to get you started:
 
-- you are already sending logs on a stream you own [see the quick start tutorial](../quick_start/){.ref}
+- you are already sending logs on a stream you own [see the quick start tutorial](../quick-start){.ref}
 - Your have access to the port 9200 to your cluster (head to the **Home** page in manager to know the address of your cluster).
 
 After some training you will be able to create this kind of dashboard: 
@@ -79,7 +79,7 @@ If you want to know what you can do with Grafana and Elasticsearch, you can fly 
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/){.ref}
-- Documentation: [Guides](../product.fr-fr.md){.ref}
+- Getting Started: [Quick Start](../quick-start){.ref}
+- Documentation: [Guides](../){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

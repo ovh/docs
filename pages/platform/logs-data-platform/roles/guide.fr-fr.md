@@ -196,7 +196,7 @@ Don't hesitate to [explore the API](https://api.ovh.com/console/#/dbaas/logs){.e
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start)
-- Documentation: [Guides](../)
+- Getting Started: [Quick Start](../quick-start){.ref}
+- Documentation: [Guides](../){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

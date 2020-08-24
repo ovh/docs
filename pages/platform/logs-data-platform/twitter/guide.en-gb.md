@@ -16,9 +16,9 @@ Twitter can be an amazing source to have a direct feedback on your products or e
 
 Prior to completing this guide, you should read the following:
 
-- [Quick Start of Logs Data Platform](../quick_start/guide.en-gb.md){.ref}
-- [Field naming conventions](../field_naming_conventions/guide.en-gb.md){.ref}
-- [Logstash collector](../logstash_input/guide.en-gb.md){.ref}
+- [Quick Start of Logs Data Platform](../quick-start){.ref}
+- [Field naming conventions](../field-naming-conventions){.ref}
+- [Logstash collector](../logstash-input){.ref}
 
 If you have completely understood these three guides, let's dive into this one.
 
@@ -264,7 +264,7 @@ That's all for now. If you have any proposition or trouble with this tutorial, d
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
-- Documentation: [Guides](../product.en-gb.md){.ref}
+- Getting Started: [Quick Start](../quick-start){.ref}
+- Documentation: [Guides](../){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
