@@ -1,6 +1,6 @@
 ---
 title: Using Elasticsearch API to send your logs
-slug: ldp_index
+slug: ldp-index
 order: 8
 excerpt: Send your logs to the platform with the Elasticsearch API.
 section: Features
@@ -11,7 +11,7 @@ section: Features
 
 ## Overview
 
-Elasticsearch is one main component of our platform. It's possible to use [Elasticsearch indexes](../index-as-a-service){.ref} to store your documents. The Elasticsearch indexes are quite flexible but they are not part of the log pipeline. If you want to also use the [Websocket live-tail](../ldp-tail){.ref}, or the [Alerting system](../alerting) or the [Cold Storage](../cold_storage) feature, and have automatic retention management, you need to use the log pipeline. Thanks to our Elasticsearch log endpoint, you will be able to send logs using the HTTP Elasticsearch API. Moreover the endpoint supports also [Elasticsearch Ingest](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/ingest.html){.external}, meaning you can use advanced processing on your logs before they are sent in the pipeline. There is no additional cost for this feature, all you need is a [stream](../quick-start){.ref}. 
+Elasticsearch is one main component of our platform. It's possible to use [Elasticsearch indexes](../index-as-a-service){.ref} to store your documents. The Elasticsearch indexes are quite flexible but they are not part of the log pipeline. If you want to also use the [Websocket live-tail](../ldp-tail){.ref}, or the [Alerting system](../alerting) or the [Cold Storage](../cold-storage) feature, and have automatic retention management, you need to use the log pipeline. Thanks to our Elasticsearch log endpoint, you will be able to send logs using the HTTP Elasticsearch API. Moreover the endpoint supports also [Elasticsearch Ingest](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/ingest.html){.external}, meaning you can use advanced processing on your logs before they are sent in the pipeline. There is no additional cost for this feature, all you need is a [stream](../quick-start){.ref}. 
 
 
 

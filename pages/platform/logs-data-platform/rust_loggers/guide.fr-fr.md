@@ -1,6 +1,6 @@
 ---
 title: Rust - Push logs with gelf_logger or log4rs-gelf
-slug: rust_libs
+slug: rust-libs
 order: 30
 section: Logging libraries
 ---

@@ -1,6 +1,6 @@
 ---
 title: Using Elasticsearch API to send your logs
-slug: ldp_index
+slug: ldp-index
 order: 8
 excerpt: Send your logs to the platform with the Elasticsearch API.
 section: Features
