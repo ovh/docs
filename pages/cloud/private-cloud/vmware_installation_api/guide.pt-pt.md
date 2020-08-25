@@ -22,7 +22,7 @@ order: 10
 
 ##### OS
 
-Aqui, iremos utilizar uma VM instalada em Debian 9, implementada através dos [templates disponibilizados no seu Hosted Private Cloud](../private-cloud/deploiement-template-ovh/).
+Aqui, iremos utilizar uma VM instalada em Debian 9, implementada através dos [templates disponibilizados no seu Hosted Private Cloud](../usar-template-ovh/).
 
 ##### Requisitos
 
@@ -142,7 +142,7 @@ vconnect()
 
 ##### OS
 
-Aqui, iremos utilizar uma VM instalada em Ubuntu 18.04, implementada através dos [templates disponibilizados no seu Hosted Private Cloud](../deploiement-template-ovh/).
+Aqui, iremos utilizar uma VM instalada em Ubuntu 18.04, implementada através dos [templates disponibilizados no seu Hosted Private Cloud](../usar-template-ovh/).
 
 
 ##### Requisitos
