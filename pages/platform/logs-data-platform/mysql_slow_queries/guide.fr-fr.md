@@ -173,5 +173,5 @@ All this information can help you to analyse the most difficult queries for your
 
 - Getting Started: [Quick Start](../quick-start){.ref}
 - Documentation: [Guides](../){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

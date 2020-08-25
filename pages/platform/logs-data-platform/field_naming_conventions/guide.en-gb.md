@@ -27,7 +27,7 @@ Each log received on Logs Data Platform is transformed into a [GELF](http://docs
 
 This format impose a few conventions that if you don't follow can have many consequences :
 
-- Logs Data Platform will rewrite your field as an incorrect one (with a _fixit suffix).
+- Logs Data Platform will rewrite your field as an incorrect one (with a `_fixit` suffix).
 - Your log will be rejected.
 
 First please check the table below to know which field are reserved and what is their meaning. Note that some of these fields are mandatory and have to be set by whatever library you use to send logs to Logs Data Platform. Refer to the documentation of the library or to some of our awesome tutorials to know how to send them.
@@ -48,7 +48,7 @@ First please check the table below to know which field are reserved and what is 
 
 ### Can I go deeper?
 
-Of course. As we said before, you can send some additional fields as long as you prepend them with the '_' (underscore) character. You can use any JSON valid character for your field, except the '.' (dot) character. But don't worry, if you do so, we will rewrite your '.' in a very cute underscore. So how can you send special type as number, date and boolean ? Here is the answer :
+Of course. As we said before, you can send some additional fields as long as you prepend them with the `_` (underscore) character. You can use any JSON valid character for your field, except the `.` (dot) character. But don't worry, if you do so, we will rewrite your '.' in a very cute underscore. So how can you send special type as number, date and boolean ? Here is the answer :
 
 |Case sensitive suffix|ES Type|About|
 |---|---|---|
@@ -86,7 +86,7 @@ Specifying correct numeric suffix type is the only way to generate numeric Widge
 
 ![Numeric widget](images/bytes.png){.thumbnail}
 
-So this is everything you need to know to send valid messages format and not shoot yourself in the foot. If you have any question you can always reach us by using the mailing list.
+So this is everything you need to know to send valid messages format and not shoot yourself in the foot. If you have any question you can always reach us [on the community hub](https://community.ovh.com/en/c/Platform/data-platforms){.external}.
 
 Happy Logging
 
@@ -95,5 +95,5 @@ Happy Logging
 
 - Getting Started: [Quick Start](../quick-start){.ref}
 - Documentation: [Guides](../){.ref}
-- Join our community of users on [https://community.ovh.com](https://community.ovh.com/en/){.external}
-- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
+- Join our community of users on [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

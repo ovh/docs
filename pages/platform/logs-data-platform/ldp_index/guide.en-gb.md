@@ -18,18 +18,18 @@ Elasticsearch is the star component of our platform, making it possible to use [
 ## Elasticsearch endpoint
 
 
-The Elasticsearch endpoint is a dedicated index where you can send a JSON document. The port used is the **9200**, the same HTTP port used for all other Elasticsearch API of Logs Data Platform. The index is  The only field needed are the **X-OVH-TOKEN** and an extra field (any custom field). This document will be transformed into a valid GELF log and any missing field will be filled automatically. In order to respect the GELF convention, you can also use all the [GELF format reserved fields](https://docs.graylog.org/en/2.5/pages/gelf.html){.external}. Here is one example of the minimal message you can send:
+The Elasticsearch endpoint is a dedicated index where you can send a JSON document. The port used is the **9200**, the same HTTP port used for all other Elasticsearch API of Logs Data Platform. The only field needed are the **X-OVH-TOKEN** and an extra field (any custom field). This document will be transformed into a valid GELF log and any missing field will be filled automatically. In order to respect the GELF convention, you can also use all the [GELF format reserved fields](https://docs.graylog.org/en/2.5/pages/gelf.html){.external}. Here is one example of the minimal message you can send:
 
 ```shell-session
 $ curl -H 'Content-Type: application/json' -u '<user>:<password>' -XPOST https://<ldp-cluster>.logs.ovh.com:9200/ldp-logs/message -d '{ "X-OVH-TOKEN" : "7f00cc33-1a7a-4464-830f-91be90dcc880" , "test_field" : "OVHcloud"}'
 ```
 
-Replace the **<user>**, **<password>** and **<ldp-cluster>** with your Logs Data Platform username, password and cluster. You can also use [tokens](../tokens-logs-data-platform){.ref} in place of your credentials.  Sending this payload will result in this log:
+Replace the `<user>`, `<password>` and `<ldp-cluster>` with your Logs Data Platform username, password and cluster. You can also use [tokens](../tokens-logs-data-platform){.ref} in place of your credentials.  Sending this payload will result in this log:
 
 ![simple\_log](images/one_field.png){.thumbnail}
 
 
-The system automatically put the timestamp at the date when the log was received and add the field **test_field** to the log message. Source was set to **unknown** and the message to '-'. 
+The system automatically put the timestamp at the date when the log was received and add the field **test_field** to the log message. Source was set to **unknown** and the message to `-`. 
 Note that the payload follow the JSON specification (and not the GELF one). The system will still recognize any reserved field used by the [GELF specification](https://docs.graylog.org/en/2.5/pages/gelf.html){.external}. Here is another example: 
 
 ```shell-session
@@ -89,9 +89,9 @@ The vector integrations are numerous with more than 20 sources supported, more t
 Here is the explanation of this configuration. 
 
 
-The source part of the TOML configuration file configure the [journald](https://vector.dev/docs/reference/sources/journald/){.external} source. By default this source will use the /var/lib/vector directory to store its data. You can configure this directory for any other one where the vector user has write access to. 
+The source part of the TOML configuration file configure the [journald](https://vector.dev/docs/reference/sources/journald/){.external} source. By default this source will use the `/var/lib/vector` directory to store its data. You can configure this directory for any other one where the vector user has write access to. 
 
-The transform configuration part relates to the [add\_fields](https://vector.dev/docs/reference/transforms/add_fields/){.external} transform. This transform named here token has for unique goal to add the token stream value. It takes logs from the **inputs** named journald and add a **X-OVH-TOKEN** value. This token value can be found on the **...** stream menu on the stream page in the Logs Data Platform manager. Replace **<stream-token>** with the token value of your stream. 
+The transform configuration part relates to the [add\_fields](https://vector.dev/docs/reference/transforms/add_fields/){.external} transform. This transform named here token has for unique goal to add the token stream value. It takes logs from the **inputs** named journald and add a **X-OVH-TOKEN** value. This token value can be found on the `...`{.action} stream menu on the stream page in the Logs Data Platform manager. Replace **<stream-token>** with the token value of your stream. 
 
 
 The final part is the [Elasticsearch sink](https://vector.dev/docs/reference/sinks/elasticsearch/){.external}. It takes data from the previous **inputs** token and setup several config points: 
@@ -116,5 +116,5 @@ The logs from journald arrived fully parsed and ready to be explored. Use differ
 
 - Getting Started: [Quick Start](../quick-start){.ref}
 - Documentation: [Guides](../){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

@@ -16,7 +16,7 @@ section: Use cases
 
 Note that in order to complete this tutorial, you should have at least:
 
-- [Activated your Logs Data Platform account.](https://www.ovh.co.uk/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- [Activated your Logs Data Platform account.](https://www.ovh.co.uk/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
 - [Created at least one Stream and get its token.](../quick-start){.ref}
 - A working kubernetes cluster with some pods already logging to stdout. 
 - 15 minutes. 

@@ -19,7 +19,7 @@ This guide will describe how to setup Filebeat OSS on your system for forwarding
 
 Note that in order to complete this tutorial, you should have at least:
 
-- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
 - [To create at least one Stream and get its token.](../quick-start){.ref}
 
 ## Instructions
@@ -316,5 +316,5 @@ Filebeat is a handy tool to send the content of your current log files to Logs D
 
 - Getting Started: [Quick Start](../quick-start){.ref}
 - Documentation: [Guides](../){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

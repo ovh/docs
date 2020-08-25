@@ -34,10 +34,13 @@ To create an Elasticsearch index with the Logs Data Platform manager, you need t
 
 ![add index option](images/add_index.png){.thumbnail}
 
-You must just choose a suffix for your index. the final name will follow this convention: `logs-<username>-i-<suffix>`. 
-For each index, you can specify the number of **shards**. A **shard** is the main component of **index**. Multiple shards means more volume, more parallelism in your requests and thus more performance. Optionally, you can also be notified when your index is close to its critical size. Once your index is created, you can use it right away.
+You must just choose a suffix for your index. The final name will follow this convention:
 
-When you create a index through the [Elasticsearch API](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/indices-create-index.html){.external}, you can also specify the number of shards. Note that the maximum number of shards by index is limited to 16. Elasticsearch compatible tools can now create indices on the cluster as long as they follow the naming convention `logs-<username>-i-<suffix>`. Here is an exemple with a curl command with the user **logs-ab-12345** and the index **logs-ab-12345-i-another-index** on gra2 cluster. 
+`logs-<username>-i-<suffix>`. 
+
+For each index, you can specify the number of **shards**. A **shard** is the main component of **index**. Its maximum storage capacity is set to **25 GB** (per shard). Multiple shards means more volume, more parallelism in your requests and thus more performance. Optionally, you can also be notified when your index is close to its critical size. Once your index is created, you can use it right away.
+
+When you create a index through the [Elasticsearch API](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/indices-create-index.html){.external}, you can also specify the number of shards. Note that the maximum number of shards by index is limited to **16**. Elasticsearch compatible tools can now create indices on the cluster as long as they follow the naming convention `logs-<username>-i-<suffix>`. Here is an exemple with a curl command with the user **logs-ab-12345** and the index **logs-ab-12345-i-another-index** on gra2 cluster. 
 
 ```shell-session
 $ curl -u logs-ab-12345:mypassword -XPUT -H 'Content-Type: application/json' 'https://gra2.logs.ovh.com:9200/logs-ab-12345-i-another-index' -d '{ "settings" : {"number_of_shards" : 1}}'
@@ -50,7 +53,7 @@ Whatever method you use, you will be able to query and visualize your documents 
 
 #### Index some data
 
-Logs Data Platform Elasticsearch indices are compatible with the [Elasticsearch REST API](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/docs.html){.external}. Therefore, you can use simple http requests to index and search your data. The api is accessible behind a secured https endpoint with mandatory authentication. We recommend that you use [tokens](../tokens-logs-data-platform){.ref} to authenticate yourself. You can retrieve the endpoint of the API at the **Home** page of your service. Here is a simple example to index a document with curl with an index on the cluster `<ldp-cluster>.logs.ovh.com`.
+Logs Data Platform Elasticsearch indices are compatible with the [Elasticsearch REST API](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/docs.html){.external}. Therefore, you can use simple http requests to index and search your data. The API is accessible behind a secured https endpoint with mandatory authentication. We recommend that you use [tokens](../tokens-logs-data-platform){.ref} to authenticate yourself. You can retrieve the endpoint of the API at the **Home** page of your service. Here is a simple example to index a document with curl with an index on the cluster `<ldp-cluster>.logs.ovh.com`.
 
 ```shell-session
 $ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1' -d '{ "user" : "Oles", "company" : "OVH", "message" : "Hello World !", "post_date" : "1999-11-02T23:01:00" }'
@@ -59,7 +62,7 @@ $ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'ht
 Here is a quick explanation of this command:
 
 - The **PUT** HTTP command can be used to create or modify a document.
-- The 'Content-Type: application/json' is the mandatory header to indicate that the data will be in the json format.
+- The `Content-Type: application/json` is the mandatory header to indicate that the data will be in the json format.
 - The address contains the endpoint of the cluster followed by the **name of your index**
 - The **test** just after the index name is the type of the document.
 - The **1** here is the id of your document that can be any string.
@@ -359,7 +362,14 @@ In this Dashboard, you can see that the first widget is a "quick values" widget 
 
 The **maximum size** of your index is fixed and is dependent on the number of shards. Shards are the unit of parallelism in Elasticsearch, so if search performance is critical, you should choose an index with the highest number of shard you can afford. Thanks to the high performance nodes we use, we managed to send thousands of logs to the Logstash and enrich all of them within seconds using only one shard.
 
-It is not possible to change the number of shards of one index. So you will have to be careful of the storage used by your index. **Once your index is full, It will be blocked on write requests** and you will have no choice but to use [_Delete By query_](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/docs-delete-by-query.html) requests to free space on your index.
+> [!warning]
+>
+> It is not possible to change the number of shards of one index. 
+> So you will have to be careful of the storage used by your index.
+> **Once your index is full, It will be blocked on write requests** and you will have no choice but to use 
+> [_Delete By query_](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/docs-delete-by-query.html) 
+> requests to free space on your index.
+> 
 
 Note that you can monitor yourself the size of the index by using the following curl query:
 
@@ -422,10 +432,10 @@ On Logs Data Platform, we allow users to use Elasticsearch API to handle the lif
 To create an index on Logs Data Platform, use the following call:
 
 ```shell-session
-$ curl -u <username>:<password> -XPUT -H 'Content-Type: application/json' 'https://gra2.logs.ovh.com:9200/<username>-i-<suffix>' -d '{ "settings" : {"number_of_shards" : 1}}'
+$ curl -u <username>:<mypassword> -XPUT -H 'Content-Type: application/json' 'https://gra2.logs.ovh.com:9200/<username>-i-<suffix>' -d '{ "settings" : {"number_of_shards" : 1}}'
 ```
 
-- The **-u** option is followed by your LDP username that you can find on **Home** page. the password 'mypassword' follows it after the separator ':'
+- The **-u** option is followed by your LDP username that you can find on **Home** page. The password 'mypassword' follows it after the separator ':'
 - The **PUT** HTTP command can be used to create or modify a document.
 - The **-H 'Content-Type: application/json'** option is the mandatory header to indicate that the data will be in the json format.
 - The address contains the endpoint of the cluster followed by the **name of your index**
@@ -459,7 +469,7 @@ $ curl -XPOST "https://gra2.logs.ovh.com:9200/_aliases?pretty" -H 'Content-Type:
     "actions" : [
         { "remove" : { "index" : "<username>-i-<one-suffix>", "alias" : "<username>-a-<suffix>" } },
         { "add" : { "index" : "<username>-i-<other-suffix>", "alias" : "<username>-a-<suffix>" } },
-	{ "remove_index": { "index": "<username>-i-<one-suffix>" } }
+        { "remove_index": { "index": "<username>-i-<one-suffix>" } }
     ]
 }'
 ```
@@ -482,7 +492,7 @@ $ curl -u <username>:<password> -XPUT -H 'Content-Type: application/json' 'https
 	"index_patterns" : [ "logs-ab-12345-i-debug*","logs-ab-12345-i-test*"  ],
 	"settings": { 
 		"number_of_shards" : 1,
-		},
+	},
 	"aliases" : {
 		"logs-ab-12345-a-all" : {},
 		"logs-ab-12345-a-debug" : { "filter" : { "term" : { "type" : "debug" } } }
@@ -498,7 +508,7 @@ All the items you create through Elasticsearch API will be displayed in your man
 
 ![manager](images/manager.png){.thumbnail}
 
-Here the first index was create through API, its descrpition was filled automatically. 
+Here the first index was create through API, its description was filled automatically. 
  
 ### Additional Information
 
@@ -510,12 +520,12 @@ Index as a service has some specificities on our platforms. This additional and 
 - You are not allowed to change the settings of your index.
 - You can create an **alias** on Logs Data Platform and attach it to one or several indices.
 - Unlike indices, aliases are **read-only**, you cannot write through an alias yet.
-- If there is a feature missing, feel free to contact us on the [community hub](https://community.ovh.com/c/platform/data-platforms-lab){.external} or on the mailing list.
+- If there is a feature missing, feel free to contact us on the [community hub](https://community.ovh.com/c/platform/data-platforms){.external}.
 
 
 ## Go further
 
 - Getting Started: [Quick Start](../quick-start){.ref}
 - Documentation: [Guides](../){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
