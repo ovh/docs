@@ -17,7 +17,7 @@ NSX es una solución de Software Defined Network (SDN) desarrollada por VMware q
 ## Requisitos
 
 - Disponer de un identificador de usuario activo con permisos específicos para NSX.
-- Estar conectado a la [interfaz vSphere](../connexion-interface-vsphere/).
+- Estar conectado a la [interfaz vSphere](../instalar_el_vsphere_client/).
 
 ## Procedimiento
 
