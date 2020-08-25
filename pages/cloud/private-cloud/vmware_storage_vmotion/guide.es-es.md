@@ -38,7 +38,7 @@ También puede elegir hacia qué almacenamiento desea migrar los datos.
 
 Asimismo, es posible modificar la política de almacenamiento durante esta operación.
 
-De este modo, si dispone de un [almacenamiento vSAN](../vmware-vsan/) o de la opción [VM encryption](../vm-encrypt/), podrá aplicar las políticas de almacenamiento creadas.
+De este modo, si dispone de un [almacenamiento vSAN](../vmware-vsan/) o de la opción [VM encryption](https://docs.ovh.com/gb/en/private-cloud/vm-encrypt/), podrá aplicar las políticas de almacenamiento creadas.
 
 ![Selección del datastore](images/VmotionStorage3.png){.thumbnail}
 
