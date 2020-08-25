@@ -28,7 +28,7 @@ Those loggers will:
 To complete this guide you will need:
 
 - Rust, we recommend the Nightly version.
-- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
 - [To create at least one Stream and get its token.](../quick-start){.ref}
 
 ## gelf_logger

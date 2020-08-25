@@ -68,7 +68,7 @@ Following is a small configuration file for familiarizing yourself with the idea
  output {
      gelf {
          host => "<your_cluster>.logs.ovh.com"
-	 protocol => "TCP"
+         protocol => "TCP"
          port => 2202
          custom_fields => ['X-OVH-TOKEN', 'da819874-5562-4a5f-b34e-fa8e708e8f16']
      }
@@ -169,7 +169,7 @@ If we take the configuration example above and if we enable the SSL encryption, 
 
 As you can see, this is roughly the same configuration that before. The SSL configuration needs 5 extra parameters :
 
-- **ssl_enable**: that allows to enable SSL. Must be set to 'true'.
+- **ssl_enable**: that allows to enable SSL. Must be set to `true`.
 - **ssl_verify**: this deactivates the client certificate verification process that needs a trusted certificate on client side.
 - **ssl_cert**: the location of the auto-generated server certificate.
 - **ssl_key**: the location of the associated key.
@@ -203,7 +203,7 @@ Once your collector is started, you can copy several informations into your clip
 
 The hostname is in the following form:
 
-**<your_cluster>-XXXXXXXXXXXXXXXXXXXXXXX.<your_cluster>.logs.ovh.com**.
+`<your_cluster>-XXXXXXXXXXXXXXXXXXXXXXX.<your_cluster>.logs.ovh.com`
 
 This is an address of your collector for the cluster on Logs Data Platform. Send your logs to your address to have them processed by your collector. Use for example the previous syslog Lines to test your collectors. If you head to Graylog, you will find your Logs in the attached Stream just as before.
 
@@ -216,7 +216,7 @@ This is an address of your collector for the cluster on Logs Data Platform. Send
 The version hosted by Logs Data Platform is the Latest Logstash 7 version (7.8 as of July 2020). Of course we will update to the new versions as soon as they become available.
 
 #### Logstash Plugins
-For your information, here is the list of Logstash plugins we support. Of course we will welcome any suggestion on additional plugins. Don't hesitate to contact us on the [community hub](https://community.ovh.com/en/c/Platform/data-platforms){.external}.
+For your information, here is the list of Logstash plugins we support. Of course we will welcome any suggestion on additional plugins. Don't hesitate to contact us on the [community hub](https://community.ovh.com/c/platform/data-platforms){.external}.
 
 ##### Inputs plugins
 
@@ -371,5 +371,5 @@ That's all you need to know about the Logstash Collector on Logs Data Platform.
 
 - Getting Started: [Quick Start](../quick-start){.ref}
 - Documentation: [Guides](../){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Join our community of users on [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
