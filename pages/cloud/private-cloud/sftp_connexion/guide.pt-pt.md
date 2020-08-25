@@ -1,109 +1,88 @@
 ---
-title: Ligação por SFTP
-excerpt: ''
+title: Ligar-se em SFTP
+excerpt: Saiba como se ligar ao seu Hosted Private Cloud em SFTP
 slug: ligacao_por_sftp
-legacy_guide_number: g589
+section: Introdução
+order: 3
 ---
 
+**Última atualização: 29/07/2020**
 
-## 
-Num primeiro tempo será necessário que abra um terminal na sua máquina de forma a poder lançar a ligação SFTP.
+## Objetivo
 
-Em Ubuntu GNOME, por exemplo, estará em Aplicações => Acessórios => Terminal.
+A ligação aos seus datastores através de SFTP (Secure File Transfert Protocol) permite-lhe adicionar ficheiros guardados localmente à sua infraestrutura. Pode ligar-se a partir de uma interface gráfica graças a softwares como FileZilla, disponíveis para Windows e Mac. Também é possível ligar-se em linha de comandos a partir do seu sistema operativo Linux.
 
-Após ter iniciado o terminal, verifique que possui o comando sftp:
+Este sistema permitir-lhe-á aceder apenas à pasta “upload-vpn” dos seus datastores. Os ficheiros que estejam fora desta pasta não serão acessíveis através deste método.
 
+**Este manual explica-lhe como ligar-se em SFTP através de uma interface gráfica ou em linha de comandos.**
 
-```
-# man sftp
-```
+## Requisitos
 
-(este é um exemplo, poderá utilizar para outros comandos)
-Após ter efetuado esta verificação, poderá lançar o comando da seguinte forma:
+- Dispor de uma conta de utilizador ativa criada a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+## Instruções
 
-```
-# sftp admin@pcc-178-32-194-8.ovh.com
-```
+### Ligação através de uma interface gráfica
 
-
-Depois irá ser pedido a respetiva password:
-
+No seu cliente FTP (FileZilla neste exemplo), deverá indicar os seguintes valores:
 
 ```
-# sftp admin@pcc-178-32-194-8.ovh.com
-Connecting to pcc-178-32-194-8.ovh.com...
-admin@pcc-178-32-194-8.ovh.com's password:
+Host: [sftp://pcc-xxx-xxx-xxx-xxx.ovh.com] / Username: user / Password: password
 ```
 
+![Ligação SFTP](images/connection_sftp_filezilla_log.png){.thumbnail}
 
-A password a introduzir será aquela com a qual se liga ao vSphere e que terá recebido no e-mail de entrega do serviço:
+Depois de conectado, poderá ver a sua máquina local à esquerda, e os seus datastores à direita:
 
+![Ligação em SFTP com FileZilla](images/connection_sftp_filezilla.png){.thumbnail}
 
-```
-* Poderá efetuar o download em: https://pcc-178-32-194-8.ovh.com/client/VMware-viclient.exe
-* endereço IP/Nome: pcc-178-32-194-8.ovh.com
-* nome do utilizador: admin
-* password: xxxxxxx
-```
+### Ligar-se através de um terminal
 
+Num terminal, verifique se o comando `sftp` está instalado escrevendo:
 
-Uma vez ligado, poderá listar os seus datastores:
-
-
-```
-sftp> ls
-pcc-000714
-sftp>
+```sh
+sftp
 ```
 
+O comando para se ligar é o seguinte:
 
-De seguida será necessário que entre no datastore de forma a que consiga importar, por exemplo, a sua imagem iso.
-Para tal deverá utilizar o seguinte comando:
-
-
-```
-sftp> cd pcc-000714
+```sh
+sftp user@pcc-xxx-xxx-xxx-xxx.ovh.com
 ```
 
- (este código serve como exemplo, deverá substituir o datastore obtido no comando anterior)
-Após estar na diretória do datastore, resta apenas efetuar o upload do ficheiro em questão:
+A palavra-passe do utilizador ser-lhe-á solicitada. Depois de conectado, poderá listar os seus datastores com o comando `ls`:
 
-
-```
-sftp> put /home/ubuntu-11.10-desktop-i386-fr.iso to /datastore/pcc-000714/ubuntu-11.10-desktop-i386-fr.iso
-/home/loic/Bureau/ubuntu-11.10-desktop-i386-fr.iso 100% 655MB 8.0MB/s 01:22
+```sh
+sftp> ls pcc-000714
 ```
 
+Percorra a lista de datastores encontrados com o comando anterior:
 
-
-
-## Pré-requisitos
-Será necessário que efetue o download e instale um cliente FTP/SFTP.
-O mais utilizado é o Filezilla, disponível no seguinte endereço:
-
-
-- [Lien de téléchargement Filezilla](http://downloads.sourceforge.net/filezilla/FileZilla_3.5.2_win32-setup.exe)
-
-
-
-
-## Configuração e utilização:
-Para se ligar por SFTP ao seu Private Cloud, será necessário que introduza 3 informações recebidas no e-mail de ativação do Private Cloud:
-
-
-```
-* Poderá efetuar o download em: https://pcc-178-32-194-8.ovh.com/client/VMware-viclient.exe
-* endereço IP/Nome: pcc-178-32-194-8.ovh.com
-* nome do utilizador: admin
-* password: xxxxxxx
+```sh
+sftp> pcc-000714
 ```
 
+Utiliza o comando `put` para exportar ficheiros do seu datastore para a sua máquina local.
 
-Veja aqui o exemplo de configuração para o pcc-000714 (no exemplo):
+```sh
+sftp> put /home/ubuntu-18.04-server-amd64.iso
+/datastore/pcc-000714/ubuntu-18.04-server-amd64.iso  
+```
 
-![](images/connection_sftp_filezilla.png){.thumbnail}
-Uma vez ligado, poderá efetuar duplo clique em pcc-000714 (no exemplo) e efetuar um copiar-colar do ficheiro a transferir:
+Utiliza o comando `get` para importar ficheiros da sua máquina local para o seu datastore.
 
-![](images/connection_sftp_filezilla.png){.thumbnail}
+```sh
+sftp> get /datastore/pcc-00714/ubuntu-18.04-server-amd64.iso /home/
+```
 
+O comando `exit` permite-lhe interromper a ligação.
+
+### Visão geral através de vSphere
+
+Na sua interface vSphere, poderá ver o conteúdo daquilo que acabou de enviar percorrendo o seu datastore. Para isso, clique no datastore em questão na pasta “upload-vpn”:
+
+![Ligação SFTP via vSphere](images/sftpconnection.png){.thumbnail}
+
+## Quer saber mais?
+
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
