@@ -9,7 +9,7 @@ section: Visualize your logs
 
 ## Objective
 
-[Grafana](http://grafana.org/){.external} provides a powerful and elegant way to create, explore, and share dashboards and data with your team and the world. Since release 2.5, Grafana is able to communicate with Elasticsearch and so allow you to mix data from Logs Data Platforms and other data sources like IoT at the same place. This guide will show you how to achieve this.
+[Grafana](http://grafana.org/){.external} provides a powerful and elegant way to create, explore, and share dashboards and data with your team and the world. Since release 2.5, Grafana is able to communicate with Elasticsearch and so allow you to mix data from Logs Data Platform and other data sources like IoT at the same place. This guide will show you how to achieve this.
 
 
 ## Requirements
@@ -50,7 +50,7 @@ Then follow the Grafana installation guide according your platform: [http://docs
 
 ### Launch it!
 
-If everything is setup properly, launch your favorite browser, and point it to [http://localhost:3000](http://localhost:3000){.external} Once logged in with your grafana credentials, reach data sources panel to setup your Logs Data Platforms datasource:
+If everything is setup properly, launch your favorite browser, and point it to [http://localhost:3000](http://localhost:3000){.external} Once logged in with your grafana credentials, reach data sources panel to setup your Logs Data Platform datasource:
 
 ![Data source](images/datasource.png){.thumbnail}
 
@@ -59,8 +59,8 @@ If everything is setup properly, launch your favorite browser, and point it to [
 > To make the magic happens, please ensure to:
 > 
 > - Set `https://<your_cluster>.logs.ovh.com:9200` as Url value
-> - Set your Logs Data Platforms credentials for Basic auth values
-> - Set your Logs Data Platforms alias name as Grafana Index name value
+> - Set your Logs Data Platform credentials for Basic auth values
+> - Set your Logs Data Platform alias name as Grafana Index name value
 > - Change default Time field name to timestamp
 > - Set **6.0+** as Elasticsearch version
 > - Register your data source and test it.
@@ -81,5 +81,5 @@ If you want to know what you can do with Grafana and Elasticsearch, you can fly 
 
 - Getting Started: [Quick Start](../quick-start){.ref}
 - Documentation: [Guides](../){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

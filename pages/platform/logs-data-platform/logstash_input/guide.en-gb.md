@@ -68,7 +68,7 @@ Following is a small configuration file for familiarizing yourself with the idea
  output {
      gelf {
          host => "<your_cluster>.logs.ovh.com"
-	 protocol => "TCP"
+         protocol => "TCP"
          port => 2202
          custom_fields => ['X-OVH-TOKEN', 'da819874-5562-4a5f-b34e-fa8e708e8f16']
      }
@@ -169,7 +169,7 @@ If we take the configuration example above and if we enable the SSL encryption, 
 
 As you can see, this is roughly the same configuration that before. The SSL configuration needs 5 extra parameters :
 
-- **ssl_enable**: that allows to enable SSL. Must be set to 'true'.
+- **ssl_enable**: that allows to enable SSL. Must be set to `true`.
 - **ssl_verify**: this deactivates the client certificate verification process that needs a trusted certificate on client side.
 - **ssl_cert**: the location of the auto-generated server certificate.
 - **ssl_key**: the location of the associated key.
@@ -203,7 +203,7 @@ Once your collector is started, you can copy several informations into your clip
 
 The hostname is in the following form:
 
-**<your_cluster>-XXXXXXXXXXXXXXXXXXXXXXX.<your_cluster>.logs.ovh.com**.
+`<your_cluster>-XXXXXXXXXXXXXXXXXXXXXXX.<your_cluster>.logs.ovh.com`
 
 This is an address of your collector for the cluster on Logs Data Platform. Send your logs to your address to have them processed by your collector. Use for example the previous syslog Lines to test your collectors. If you head to Graylog, you will find your Logs in the attached Stream just as before.
 
@@ -371,5 +371,5 @@ That's all you need to know about the Logstash Collector on Logs Data Platform.
 
 - Getting Started: [Quick Start](../quick-start){.ref}
 - Documentation: [Guides](../){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

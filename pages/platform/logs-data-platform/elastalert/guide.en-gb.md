@@ -35,7 +35,7 @@ In order to deploy ElastAlert it is important that you have data on which you wa
 
 ![Alias creation](images/alias.png){.thumbnail}
 
-If you only have data on your indices, you can use them directly in the ElastAlert configuration. 
+If you only have [indices](../index-as-a-service){.ref}, you can use them directly in the ElastAlert configuration. 
 
 ## Instructions 
 
@@ -74,10 +74,10 @@ $ elastalert-create-index --host <ldp-cluster>.logs.ovh.com --port 9200 --userna
 
 you should pay attention to the following points:
 
-- The **<ldp-cluster>** must be the one assigned to you (find on the **Home** page of the LDP Manager).
-- **<username>** is the username use to connect to the API or to the Logs Data Platform interfaces (Graylog or Kibana). 
-- **<password>** is the associated password. You can use [tokens](../tokens-logs-data-platform){.ref} in place of the couple username/password for your credentials.
-- The **--index** is the most important her since you **must** follow the index naming convention of Logs Data Platform. Use the presented form **<username>-i-** as a base name for your meta-indices. **<suffix>** can be personalized to any alphanumeric characters. 
+- The `<ldp-cluster>` must be the one assigned to you (find on the **Home** page of the LDP Manager).
+- `<username>` is the username use to connect to the API or to the Logs Data Platform interfaces (Graylog or Kibana). 
+- `<password>` is the associated password. You can use [tokens](../tokens-logs-data-platform){.ref} in place of the couple username/password for your credentials.
+- The `--index` is the most important her since you **must** follow the index naming convention of Logs Data Platform. Use the presented form `<username>-i-` as a base name for your meta-indices. `<suffix>` can be personalized to any alphanumeric characters. 
 
 This command will create all 5 indices and place the mapping on them. All you need after is to create the ElastAlert configuration file and some rule. 
 
@@ -90,31 +90,18 @@ Without further delay here is a sample config.yml file you can use for your conf
 
 ```yaml
 rules_folder: /opt/elastalert/rules
-
 run_every:
-
   minutes: 5
-
 buffer_time:
-
   hours: 6 
-
 es_host: <ldp-cluster>.logs.ovh.com
-
 es_port: 9200
-
 use_ssl: True 
-
 verify_certs: True 
-
 es_username: <username>
-
 es_password: <password>
-
 writeback_index: <username>-i-<suffix>
-
 alert_time_limit:
-
   days: 2
 ``` 
 
@@ -136,7 +123,7 @@ You can find all the available options [here](https://elastalert.readthedocs.io/
 ### Rules configuration
 
 
-For the exemple, we will create a [frequency.yml](https://elastalert.readthedocs.io/en/latest/ruletypes.html#frequency){.external} rule which will send a email if the field **user** with the value **Oles** appears more than **3** times in less than **4hours** and send an **email**. If your machine cannot send an email, you can still test the rule (it will just fail at the sending).
+For the exemple, we will create a [frequency.yml](https://elastalert.readthedocs.io/en/latest/ruletypes.html#frequency){.external} rule which will send a email if the field **user** with the value **Oles** appears more than **3** times in less than **4 hours** and send an **email**. If your machine cannot send an email, you can still test the rule (it will just fail at the sending).
 
 
 ```yaml
@@ -213,5 +200,5 @@ ElastAlert has a lot of integrations for alerting including Email, JIRA, OpsGeni
 
 - Getting Started: [Quick Start](../quick-start){.ref}
 - Documentation: [Guides](../){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

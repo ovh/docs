@@ -260,11 +260,11 @@ There are many more possibilities. Of course you can create beautiful dashboards
 
 ![Dashboards](images/dashboard.png){.thumbnail}
 
-That's all for now. If you have any proposition or trouble with this tutorial, don't hesitate to reach us with the mailing list or share your experience with the [Community](https://community.ovh.com/en/c/Platform){.external}.
+That's all for now. If you have any proposition or trouble with this tutorial, don't hesitate to reach us on the [Community hub](https://community.ovh.com/en/c/Platform/data-platforms){.external}.
 
 ## Go further
 
 - Getting Started: [Quick Start](../quick-start){.ref}
 - Documentation: [Guides](../){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
