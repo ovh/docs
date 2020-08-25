@@ -25,7 +25,7 @@ Si l’un de vos hôtes est victime d’une panne, afin d’assurer la continuit
 
 Dès que cet hôte est livré, vous recevez un email vous indiquant toutes les informations concernant cet hôte ainsi que son adresse IP vous permettant de le retrouver facilement dans votre interface vSphere.
 
-Par défaut, le service HA ([High Availability](../vmware-ha-high-availability) de VMware est activé sur votre cluster. Si vous l’avez laissé activé, vos machines virtuelles vont redémarrer automatiquement. Si le service DRS (Distributed Ressources Scheduler) est activé et configuré en mode « Entièrement Automatisé », la répartition de charge sur les hôtes de votre cluster sera également effectuée automatiquement.
+Par défaut, le service HA ([High Availability)](../vmware-ha-high-availability) de VMware est activé sur votre cluster. Si vous l’avez laissé activé, vos machines virtuelles vont redémarrer automatiquement. Si le service DRS (Distributed Ressources Scheduler) est activé et configuré en mode « Entièrement Automatisé », la répartition de charge sur les hôtes de votre cluster sera également effectuée automatiquement.
 
 > [!warning]
 > 
