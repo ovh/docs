@@ -41,4 +41,4 @@ Clique no botão Validar para confirmar as suas modificações.
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: [https://community.ovh.com/en/](https://community.ovh.com/){.external}.
+Fale com a nossa comunidade de utilizadores: [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

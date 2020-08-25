@@ -6,7 +6,7 @@ section: OVHcloud Dienstleistungen und Optionen
 order: 1
 ---
 
-**Letzte Aktualisierung am 25.11.2019**
+**Letzte Aktualisierung am 25.08.2020**
 
 ## Einleitung
 
@@ -47,21 +47,21 @@ Die Verwendung des API geschieht über drei APIv-Abrufe:
 
 #### Filer
 
-> \[!api]
+> [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
 >
 
 #### Hosts
 
-> \[!api]
+> [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}
 > 
 
 #### virtuelle Maschinen
 
-> \[!api]
+> [!api]
 > 
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
 > 
@@ -79,7 +79,7 @@ Um die **Metrics Data Platforms** verwenden zu können, müssen Sie ein Lesetoke
 
 Für den jeweiligen Nutzer verwenden Sie den folgenden APIv6-Abruf für das Lesetoken:
 
-> \[!api]
+> [!api]
 > 
 > @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
 > 

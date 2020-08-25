@@ -17,7 +17,7 @@ NSX ist eine Lösung der Art „Software Defined Network (SDN)“ und wurde von 
 ## Voraussetzungen
 
 - Sie haben eine aktive Nutzerkennung mit den für NSX erforderlichen Rechten.
-- Sie sind in Ihrem [vSphere Interface](../connexion-interface-vsphere/) angemeldet.
+- Sie sind in Ihrem [vSphere Interface](../den_vsphere_client_installieren/) angemeldet.
 
 ## Praktische Anwendung
 
