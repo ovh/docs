@@ -100,7 +100,7 @@ Vous avez le choix entre :
 ||En-tête|Règle|Valeur|Action|
 |---|---|---|---|---|
 |Paramètres du filtre|Sujet du message|contient|[SPAM]|suppression|
-|Ce que le filtre va faire|Si le sujet du message|contient|la suite "[SPAM]",|alors, supprimer le message.|
+|Ce que le filtre va faire|Si le sujet du message|contient|la suite "[SPAM]"|alors, supprimer le message.|
 
 
 #### Rediriger les e-mails d'un destinataire
@@ -108,7 +108,7 @@ Vous avez le choix entre :
 ||En-tête|Règle|Valeur|Action|
 |---|---|---|---|---|
 |Paramètres du filtre|De|contient|contact@domaintest.ovh|rediriger vers une adresse distante : jean@otherdomain.ovh|
-|Ce que le filtre va faire|Si l'expéditeur|est|contact@domaintest.ovh,|alors, renvoyer l'e-mail vers jean@otherdomain.ovh|
+|Ce que le filtre va faire|Si l'expéditeur|est|contact@domaintest.ovh|alors, renvoyer l'e-mail vers jean@otherdomain.ovh|
 
 
 #### Rediriger les e-mails adressés a une Mailing-List
