@@ -78,4 +78,4 @@ Więcej szczegółów na temat kodów ptt i różnych identyfikatorów DLR znajd
  
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com>.
