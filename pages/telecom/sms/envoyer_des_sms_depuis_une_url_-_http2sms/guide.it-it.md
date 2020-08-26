@@ -1,8 +1,8 @@
 ---
-title: 'Inviare SMS da un URL - http2sms'
-slug: inviare_sms_da_un_url_-_http2sms
-excerpt: ‘Scopri come inviare SMS da un indirizzo http’
-section: ‘Inviare SMS’
+title: Inviare SMS da un URL - http2sms
+slug: inviare_sms_da_un_url_http2sms
+excerpt: Scopri come inviare SMS da un indirizzo http
+section: Inviare SMS
 ---
 
 **Ultimo aggiornamento: 19/05/2020** 
