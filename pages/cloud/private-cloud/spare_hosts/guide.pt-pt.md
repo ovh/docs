@@ -1,31 +1,44 @@
 ---
-title: Os hosts spare/suplentes
-description: Gerir a disponibilização e fazer acompanhamento do estado dos hosts spare no serviço Dedicated Cloud?
-excerpt: Gerir a disponibilização e fazer acompanhamento do estado dos hosts spare no serviço Dedicated Cloud?
+title: Host de substituição
+excerpt: Descubra o mecanismo de substituição de um host
 slug: os_hosts_sparesuplentes
-legacy_guide_number: g860
+section: Funcionalidades da OVH
+order: 04
 ---
+**Última atualização: 26/08/2020**
 
+## Requisitos
 
-## 
-Recebeu um email, relacionado com a criação automática de um ticket de incidente, que menciona a adição de um host spare à sua infraestrutura Dedicated Cloud.
-Um host spare é, geralmente, associado à sua infraestrutura em caso de falha de um dos hosts que compõem essa infraestrutura. Esse host é gratuito. O ticket de incidente irá indicar-lhe qual o endereço IP do host cujo funcionamento foi interrompido.
-Poderá ligar-se à sua interface vSphere Client para verificar o alerta relacionado com esse host inoperante.
-Se configurou corretamente as funcionalidadesVMware HA e DRS, as suas VMs migrarão de forma automática para o host spare/suplente.
-Se não ativou essas funcionalidades, deverá migrar manualmente as suas máquinas virtuais.
+- Dispor de uma oferta [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}.
 
+## Sumário
 
-## 
+A OVHcloud garante nos seus contratos a substituição de um host inacessível.
 
-## Atenção!
-A OVH coloca à disposição o host spare para que possa fazer face a uma perda de recursos. Assim que o host com problemas for substituído por um novo, a OVH poderá "recuperar" o host spare.
+**Este manual explica o funcionamento desta substituição.**
 
+## Entrega de um host de substituição
 
-## 
-O host spare deve ser devolvido. Não é possível conservar um host spare, nem transformar esse host spare num host que é faturado. Se deseja substituir um host em falha, pode aceder ao guia [Substituir um host em falha]({legacy}861) para ter orientação quanto ao processo.
+Para garantir a continuidade de serviço em caso de avaria de um dos hosts, a OVHcloud disponibiliza automaticamente na infraestrutura um host de substituição gratuito. 
 
+Assim que este host for entregue, receberá um e-mail indicando-lhe todas as informações sobre este host, assim como o seu endereço IP que lhe permite encontrá-lo facilmente na sua interface vSphere.
 
-## 
-Assim que situação voltar ao normal e que não tenha nenhum alerta no seu cliente vSphere, poderá devolver o host "spare".
-Basta-lhe seguir o procedimento mencionado no parágrafo "Eliminação de um host" do guia [Como adicionar um host ?]({legacy}605).
+Por predefinição, o serviço HA ([High Availability](../vmware-ha-high-availability)) de VMware é ativado no seu cluster. Se o tiver deixado ativo, as suas máquinas virtuais irão reiniciar automaticamente. Se o serviço DRS (Distributed Ressources Scheduler) for ativado e configurado em modo “fully automated”, a repartição da carga nos hosts do seu cluster será igualmente efetuada de forma automática.
+
+> [!warning]
+> 
+> Se um leitor CD/DVD ainda estiver montado ou ligado numa VM, o serviço HA não a poderá reiniciar no host de substituição. Recomenda-se ter sempre o leitor CD/DVD em periférico cliente.
+>
+
+## O que fazer depois de receber o host de substituição
+
+Uma vez o host original novamente funcional (depois de reparado), poderá devolver um dos dois hosts (host de substituição ou host original).
+
+Recomendamos que nos devolva o host original para que lhe possamos aplicar uma série de testes após esse incidente (para evitar eventuais novas avarias). Assim, poderá conservar o host de substituição. Para isso, pode consultar o manual [Eliminar um servidor host](../eliminacao-servidor-host/)
+
+A OVHcloud poderá recuperar automaticamente o host original assim que este for retirado.
+
+## Quer saber mais?
+
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com>.
 
