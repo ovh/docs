@@ -12,7 +12,7 @@ section: 'Erste Schritte'
 
 ### Was tun, wenn mein Webhosting nicht korrekt funktioniert? 
 
-Es gibt mehrere mögliche Ursachen für eine Fehlfunktion Ihrer Website. Um diese zu ermitteln, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und stellen Sie sicher, dass alle Ihre Dienste verlängert wurden und aktiv sind. Wenn Sie damit fertig sind, überprüfen Sie die laufenden Wartungsarbeiten auf der [OVH Status-Seite](http://travaux.ovh.net/){.external} (Travaux). Sind alle Ihre Dienste aktiv und wird keine Wartungsarbeit durchgeführt, die Ihre Website beeinträchtigt, können Sie eine tiefgründigere Diagnose durchführen. Befolgen Sie hierzu [unsere Diagnose-Anleitungen](../hosting/).
+Es gibt mehrere mögliche Ursachen für eine Fehlfunktion Ihrer Website. Um diese zu ermitteln, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und stellen Sie sicher, dass alle Ihre Dienste verlängert wurden und aktiv sind. Wenn Sie damit fertig sind, überprüfen Sie die laufenden Wartungsarbeiten auf der [OVH Status-Seite](http://travaux.ovh.net/){.external} (Travaux). Sind alle Ihre Dienste aktiv und wird keine Wartungsarbeit durchgeführt, die Ihre Website beeinträchtigt, können Sie eine tiefgründigere Diagnose durchführen. Befolgen Sie hierzu [unsere Diagnose-Anleitungen](../).
 
 **Tipps und Tricks**: Ist Ihre Website plötzlich nach einer Aktion Ihrerseits nicht mehr verfügbar, können Sie deren Inhalt über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} wiederherstellen. Gehen Sie hierzu in den Tab `FTP - SSH` Ihres Webhostings und klicken Sie rechts auf den Button `Backup wiederherstellen`{.action}. Weitere Informationen zur Vorgehensweise finden Sie in der folgenden Dokumentation: [Den Speicherplatz Ihres Webhostings wiederherstellen](../webhosting-speicherplatz-wiederherstellen/).
 
@@ -20,7 +20,7 @@ Es gibt mehrere mögliche Ursachen für eine Fehlfunktion Ihrer Website. Um dies
 
 Um Ihr Webhosting zu konfigurieren, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein. Im Bereich `Hosting` können Sie Ihre SSL-Zertifikate, PHP-Versionen, CDN, Multisites, Datenbanken etc. verwalten.
 
-**Tipps und Tricks**: Weitere Informationen zur Konfiguration Ihres Webhostings finden Sie im Bereich <br> „Erste Schritte“ in unserer [Dokumentation](../hosting/).
+**Tipps und Tricks**: Weitere Informationen zur Konfiguration Ihres Webhostings finden Sie im Bereich <br> „Erste Schritte“ in unserer [Dokumentation](../).
 
 ### Wie erstelle oder lösche ich ein Element auf meinem Produkt/Dienst (E-Mail-Account, Datenbank, ...)?
 
