@@ -15,7 +15,7 @@ Una volta registrato il dominio per il tuo Sito Internet, è possibile configura
 
 Sul lato destro della nuova pagina, è possibile effettuare diverse operazioni, tra cui `creare/rimuovere record`{.action}.
 
-**Consigli e suggerimenti**: In caso di errori, è possibile ripristinare la zona DNS dallo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Per farlo, consulta la nostra [documentazione](../modifica-la-tua-zona-dns/).
+**Consigli e suggerimenti**: In caso di errori, è possibile ripristinare la zona DNS dallo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Per farlo, consulta la nostra [documentazione](../web_hosting_modifica_la_tua_zona_dns/).
 
 ## Per saperne di più
 
