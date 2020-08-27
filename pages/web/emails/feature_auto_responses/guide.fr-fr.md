@@ -9,7 +9,7 @@ order: 3
 
 ## Objectif
 
-Vous devez vous absenter de votre travail et vous souhaitez laisser un message au interlocuteurs qui souhaite vous contacter par e-mail. Il est possible de mettre un répondeur e-mail.
+Vous devez vous absenter de votre travail et vous souhaitez laisser un message aux interlocuteurs qui souhaite vous contacter par e-mail. Il est possible de mettre un répondeur e-mail.
 
 **Découvrez comment mettre en place un répondeur e-mail,**
 
@@ -36,7 +36,7 @@ Cliquez sur `Ajouter un répondeur`{.action}
 
 ![hosting](images/email_responder01.gif){.thumbnail}
 
-La fenêtre d'ajout s'affiche. Vous pouvez la compléter selon les information ci-dessous.
+La fenêtre d'ajout s'affiche. Vous pouvez la compléter selon les informations ci-dessous.
 
 - `Type de répondeur`:
 
@@ -50,9 +50,9 @@ La fenêtre d'ajout s'affiche. Vous pouvez la compléter selon les information c
 « Temporaire » : vous permet de définir une date de début et de fin à prendre en compte pour le fonctionnement de votre répondeur (utile si vous partez en congés par exemple).
 « Permanent » : le répondeur fonctionnera tant que vous ne l'aurez pas désactivé. Vous permet de conserver une copie du message reçu si l'option est cochée. Dans le cas où vous avez choisi un répondeur " libre ", vous pourrez alors choisir l'adresse e-mail cible de la copie du message reçu.
 
-- `Envoyer une copie ` ou `Garder les messages sur le serveur `: permet de renvoyer les messages reçu pendant votre absence vers l'adresse de votre choix ou de les concerver sur l'adresse e-mail. Si vous décochez cette case, les messages reçu pendant votre absence seront automatiquement supprimés.
+- `Envoyer une copie ` ou `Garder les messages sur le serveur `: permet de renvoyer les messages reçus pendant votre absence vers l'adresse de votre choix ou de les concerver sur l'adresse e-mail. Si vous décochez cette case, les messages reçus pendant votre absence seront automatiquement supprimés.
 
-- `Adresse en copie ` (Seulement en mode libre) : dans le cas d'un alias, sélectionner l'adresse e-mail qui recevera les e-mails envoyés vers l'alias.
+- `Adresse en copie ` (Seulement en mode libre) : dans le cas d'un alias, sélectionner l'adresse e-mail qui recevra les e-mails envoyés vers l'alias.
 
 - `Message `: Il s'agit du message que vos correspondants recevront lorsqu'ils vous enverront un e-mail.
 
@@ -60,4 +60,9 @@ Vous pouvez ensuite cliquer sur `Valider`{.action} pour que le répondeur soit m
 
 Votre répondeur mail apparaît ensuite dans la liste. Vous pouvez le supprimer ou le modifier en cliquant sur `...`{.action} à droite de celui-ci.
 
-![hosting](images/img_3599.jpg){.thumbnail}
+![hosting](images/email_responder02.gif){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur https://community.ovh.com
+
