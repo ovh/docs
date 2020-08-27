@@ -40,5 +40,5 @@ A OVHcloud poderá recuperar automaticamente o host original assim que este for 
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
 
