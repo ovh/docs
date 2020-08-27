@@ -60,7 +60,7 @@ Vous pouvez ensuite cliquer sur `Valider`{.action} pour que le répondeur soit m
 
 Votre répondeur mail apparaît ensuite dans la liste. Vous pouvez le supprimer ou le modifier en cliquant sur `...`{.action} à droite de celui-ci.
 
-![hosting](images/email_responder02.gif){.thumbnail}
+![hosting](images/email_responder02.png){.thumbnail}
 
 ## Aller plus loin
 
