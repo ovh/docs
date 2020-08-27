@@ -9,7 +9,7 @@ order: 3
 
 ## Objectif
 
-Vous devez vous absenter de votre travail et vous souhaitez laisser un message aux interlocuteurs qui souhaite vous contacter par e-mail. Il est possible de mettre un répondeur e-mail.
+Vous devez vous absenter de votre travail et vous souhaitez laisser un message aux interlocuteurs qui souhaitent vous contacter par e-mail. Il est possible de mettre un répondeur e-mail.
 
 **Découvrez comment mettre en place un répondeur e-mail,**
 
