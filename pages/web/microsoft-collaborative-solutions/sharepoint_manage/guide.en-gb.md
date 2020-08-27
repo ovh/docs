@@ -108,6 +108,22 @@ On both types of SharePoint service, there is a `Restore administrator rights`{.
 
 ![sharepoint](images/order-manage-sharepoint-09.png){.thumbnail}
 
+#### **Edit Office 365 files online**
+
+You can directly edit Office 365 files online, such as a *.docx* or *.xls* file.
+
+To do this, you need to have a valid Office 365 licence, and confirm this in your OVHcloud Control Panel.
+
+Go to the `Users` tab on your platform then click on `...`{.action} to the right of the account, then `Add an Office licence`{.action}.
+
+![sharepoint](images/order-manage-sharepoint-10.png){.thumbnail}
+
+Click `confirm`{.action} after confirming that you have an Office 365 licence.
+
+![sharepoint](images/order-manage-sharepoint-11.png){.thumbnail}
+
+You can then edit your Office 365 files directly from your sharepoint’s web interface.
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
