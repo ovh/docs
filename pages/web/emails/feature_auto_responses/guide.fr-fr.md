@@ -24,6 +24,8 @@ Vous devez vous absenter de votre travail et vous souhaitez laisser un message a
 >
 > Si votre adresse e-mail est sur une offre [**Exchange**](https://www.ovh.com/fr/emails/hosted-exchange/), [**Email Pro**](https://www.ovh.com/fr/emails/email-pro/) ou qu'il n'y a pas de section `Gestion des répondeurs`{.action} à votre MXplan, il vous sera nécessaire de créer le répondeur depuis votre webmail en vous aidant de la documentation [« Mettre en place un répondeur automatique depuis l’interface OWA »](../../microsoft-collaborative-solutions/exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/)
 
+### Création du répondeur
+
 Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. 
 
 Sélectionnez le nom de domaine concerné dans la section `Emails`{.action}, depuis la colonne à gauche.
@@ -58,7 +60,9 @@ La fenêtre d'ajout s'affiche. Vous pouvez la compléter selon les informations 
 
 Vous pouvez ensuite cliquer sur `Valider`{.action} pour que le répondeur soit mis en place.
 
-Votre répondeur mail apparaît ensuite dans la liste. Vous pouvez le supprimer ou le modifier en cliquant sur `...`{.action} à droite de celui-ci.
+### Modification ou supression du répondeur
+
+Lorsque votre répondeur mail a été créé, il apparaît dans la liste visible dans la section `Gestion des répondeurs`{.action} de votre offre e-mail. Vous pouvez le supprimer ou le modifier en cliquant sur `...`{.action} à droite de celui-ci.
 
 ![hosting](images/email_responder02.png){.thumbnail}
 
