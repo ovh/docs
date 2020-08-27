@@ -118,7 +118,7 @@ Go to the `Users` tab on your platform then click on `...`{.action} to the right
 
 ![sharepoint](images/order-manage-sharepoint-10.png){.thumbnail}
 
-Click `confirm`{.action} after confirming that you have an Office 365 licence.
+Click `Confirm`{.action} after confirming that you have an Office 365 licence.
 
 ![sharepoint](images/order-manage-sharepoint-11.png){.thumbnail}
 
