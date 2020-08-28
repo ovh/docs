@@ -15,7 +15,7 @@ This guide will demonstrate how to deploy a personalized Logstash having a speci
 
 ## Requirements
 
-If you are new to Logs Data Platform, completion of the [Quick Start Tutorial](../quick_start/guide.en-gb.md){.ref} is highly recommended.
+If you are new to Logs Data Platform, completion of the [Quick Start Tutorial](../quick-start){.ref} is highly recommended.
 
 The following links can help you get a headstart on Logstash in order to get started with the basics:
 
@@ -68,7 +68,7 @@ Following is a small configuration file for familiarizing yourself with the idea
  output {
      gelf {
          host => "<your_cluster>.logs.ovh.com"
-	 protocol => "TCP"
+         protocol => "TCP"
          port => 2202
          custom_fields => ['X-OVH-TOKEN', 'da819874-5562-4a5f-b34e-fa8e708e8f16']
      }
@@ -123,7 +123,7 @@ To host this collector in the Logs Data Platform, you will need to configure it 
 - Fill the main port of your input. We need to know which port you will use in your input configuration. We will put **4000** for now. This is also a setting you can change later.
 - If you want to restrict the Logstash to specific IP Adresses, you can use the **Trusted Networks** field to firewall your instances. Add every IP Adress or subnet you want to allow, separated by comma. Leave it empty to allow any IP to contact it. Your collector will have a public IP Adress, you can use this feature to prevent people to send you false information in it. 
 - Select one of the stream you have to attach this collector to the stream you have. That means that every message that goes out of this collector is automatically routed to the stream. 
-- Finally, select the number of instances you would need to handle your load. We recommend to have at least two instances to ensure the high availabilty of your Logstash. However some uses cases need you to limit the number of instance at 1 (like the [Twitter use case](../twitter/guide.en-gb.md){.ref}).
+- Finally, select the number of instances you would need to handle your load. We recommend to have at least two instances to ensure the high availabilty of your Logstash. However some uses cases need you to limit the number of instance at 1 (like the [Twitter use case](../twitter){.ref}).
 
 ![logstash_creation](images/logstash_created.png){.thumbnail}
 
@@ -169,7 +169,7 @@ If we take the configuration example above and if we enable the SSL encryption, 
 
 As you can see, this is roughly the same configuration that before. The SSL configuration needs 5 extra parameters :
 
-- **ssl_enable**: that allows to enable SSL. Must be set to 'true'.
+- **ssl_enable**: that allows to enable SSL. Must be set to `true`.
 - **ssl_verify**: this deactivates the client certificate verification process that needs a trusted certificate on client side.
 - **ssl_cert**: the location of the auto-generated server certificate.
 - **ssl_key**: the location of the associated key.
@@ -203,7 +203,7 @@ Once your collector is started, you can copy several informations into your clip
 
 The hostname is in the following form:
 
-**<your_cluster>-XXXXXXXXXXXXXXXXXXXXXXX.<your_cluster>.logs.ovh.com**.
+`<your_cluster>-XXXXXXXXXXXXXXXXXXXXXXX.<your_cluster>.logs.ovh.com`
 
 This is an address of your collector for the cluster on Logs Data Platform. Send your logs to your address to have them processed by your collector. Use for example the previous syslog Lines to test your collectors. If you head to Graylog, you will find your Logs in the attached Stream just as before.
 
@@ -361,7 +361,7 @@ Here are some links to help you go further with Logstash
 
 - [Logstash official documentation](https://www.elastic.co/guide/en/logstash/current/index.html){.external}
 - [Grok filters documentation](https://www.elastic.co/guide/en/logstash/current/plugins-filters-grok.html){.external}
-- [Logstash + Groks + Filebeat = Awesome](../filebeat_logs/guide.en-gb.md){.ref}
+- [Logstash + Groks + Filebeat = Awesome](../filebeat-logs){.ref}
 - [Grok Constructor](http://grokconstructor.appspot.com/do/match){.external}
 - [A Ruby regular expression editor](https://rubular.com/){.external}
 
@@ -369,7 +369,7 @@ That's all you need to know about the Logstash Collector on Logs Data Platform.
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
-- Documentation: [Guides](../product.en-gb.md){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Getting Started: [Quick Start](../quick-start){.ref}
+- Documentation: [Guides](../){.ref}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
