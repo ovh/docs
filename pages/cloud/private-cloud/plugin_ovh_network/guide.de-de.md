@@ -10,7 +10,7 @@ order: 03
 
 ## Einleitung
 
-Das OVHcloud Network Plugin wurde entwickelt,  um alle IP Adressen effizient zu verwalten, die mit Ihrer Private Cloud Lösung verbunden sind.
+Das OVHcloud Network Plugin wurde entwickelt,  um alle IP-Adressen effizient zu verwalten, die mit Ihrer Private Cloud Lösung verbunden sind.
 
 **In dieser Anleitung erfahren Sie, wie Sie das OVHcloud Network Plugin für Ihre Private Cloud Lösung verwenden.**
 
@@ -23,7 +23,7 @@ Das OVHcloud Network Plugin wurde entwickelt,  um alle IP Adressen effizient zu 
 
 ## Praktische Anwendung
 
-Wenn Sie mit dem vSphere Interface verbunden sind wählen Sie im Menü links Ihre Rechenzentrum aus. Gehen Sie auf den Reiter `Configure`{.action} und klicken Sie dann unter „OVHcloud“ auf `Network`{.action}. Es erscheint „Network summary“.
+Wenn Sie mit dem vSphere Interface verbunden sind, wählen Sie im Menü links Ihr Rechenzentrum aus. Gehen Sie auf den Reiter `Configure`{.action} und klicken Sie dann unter „OVHcloud“ auf `Network`{.action}. Es erscheint „Network summary“.
 
 ![Network summary](images/ovhcloudplugin_01.png){.thumbnail}
 
@@ -31,12 +31,12 @@ Hier sehen Sie Ihre IP-Blöcke und einige grundlegende Informationen zu ihnen. K
 
 ![Informationen über IPs und Blöcke](images/ovhcloudplugin_02.png){.thumbnail}
 
-Hier können Sie das Ziel jeder Adresse und ihre „Reverse-IP“ überprüfen. Einige Adressen erscheinen werden als „Reserved“ markiert sein. Achten Sie darauf,  **nicht die fünf IP-Adressen zu verwenden, die für die Konfiguration des Blocks und die Hochverfügbarkeit reserviert sind**. Diese sind:
+Hier können Sie das Ziel jeder Adresse und ihre „Reverse-IP“ überprüfen. Einige Adressen werden als „Reserved“ markiert sein. Achten Sie darauf,  **nicht die fünf IP-Adressen zu verwenden, die für die Konfiguration des Blocks und die Hochverfügbarkeit reserviert sind**. Diese sind:
 
-- die erste IP, Ihren Block auf dem Router ankündigt;
-- die letzte IP, die für broadcast verwendet wird
-- die vorletzte IP, die für Ihr gateway verwendet wird
-- die beiden IPs vor dem Gateway, die auf den Routern als HSRP (Hot Standby Router Protocol) verwendet werden
+- die erste IP, die Ihren Block auf dem Router anzeigt;
+- die letzte IP, die für Broadcast verwendet wird;
+- die vorletzte IP, die für Ihr Gateway verwendet wird;
+- die beiden IPs vor dem Gateway, die auf den Routern als HSRP (Hot Standby Router Protocol) verwendet werden.
 
 > [!warning]
 > Bei manchen Konfigurationen mit virtueller Firewall ist es nicht möglich, MAC-Adressen zurückzuverfolgen, wenn das ARP-Protokoll nicht zugelassen ist.
