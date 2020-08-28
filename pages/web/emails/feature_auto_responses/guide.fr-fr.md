@@ -27,7 +27,7 @@ En cas d'absence à votre bureau, vous pouvez mettre en place un répondeur e-ma
 
 ### Création du répondeur
 
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. 
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. 
 
 Sélectionnez le nom de domaine concerné dans la section `Emails`{.action}, depuis la colonne à gauche.
 
@@ -44,7 +44,7 @@ La fenêtre d'ajout s'affiche. Vous pouvez la compléter selon les informations 
 - `Type de répondeur`:
 
 « Associé à une boite e-mail » : à utiliser si cela concerne une adresse e-mail existante sur votre offre e-mail.
-« Libre » : à utiliser dans le cas d'un alias. il n'est donc pas lié à une adresse existante.
+« Libre » : à utiliser dans le cas d'un alias. Il n'est donc pas lié à une adresse existante.
 
 - `Boîte email` ou `Nom du répondeur`: l'adresse e-mail ou l'alias concerné par le répondeur.
 
@@ -53,7 +53,7 @@ La fenêtre d'ajout s'affiche. Vous pouvez la compléter selon les informations 
 « Temporaire » : définissez une date de début et de fin à prendre en compte pour le fonctionnement de votre répondeur (utile si vous partez en congés par exemple).
 « Permanent » : le répondeur fonctionnera tant que vous ne l'aurez pas désactivé.
 
-- `Envoyer une copie ` ou `Garder les messages sur le serveur `: permet de renvoyer les messages reçus pendant votre absence vers l'adresse de votre choix ou de les concerver sur l'adresse e-mail.
+- `Envoyer une copie ` ou `Garder les messages sur le serveur `: permet de renvoyer les messages reçus pendant votre absence vers l'adresse de votre choix ou de les conserver sur l'adresse e-mail.
 
 > [!warning]
 > Si vous décochez cette case, les messages reçus pendant votre absence seront automatiquement supprimés.
