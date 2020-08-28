@@ -4,6 +4,7 @@ slug: tout-sur-le-sql-prive
 legacy_guide_number: 2023
 excerpt: 'Gerez votre instance et vos bases de donnees'
 section: 'SQL Privé'
+hidden: true
 ---
 
 Le service SQL Privé a été conçu pour les besoins importants ou spécifiques sur les bases de données. Avec un serveur SQL Privé, vous disposez de votre propre serveur de base de données tout en bénéficiant de la tranquillité d'un hébergement géré par OVH. Vous disposez de ressources réservées à votre seul usage et non de ressources partagées.
