@@ -35,7 +35,7 @@ Mit der Option „Change storage only“ können Sie die virtuelle Maschine in e
 
 ### Wahl der Ressource
 
-Wählen Sie aus, zu welcher Ressource die virtuelle Maschine migriert werden soll. Virtuelle Maschine kann auf einen Host, Ressourcen-Pool oder Vapp migriert werden.
+Wählen Sie aus, zu welcher Ressource die virtuelle Maschine migriert werden soll. Die virtuelle Maschine kann auf einen Host, Ressourcen-Pool oder Vapp migriert werden.
 
 In unserem Beispiel verlagern wir sie auf den Host .50.
 
