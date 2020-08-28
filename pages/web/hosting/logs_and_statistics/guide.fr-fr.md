@@ -1,67 +1,66 @@
 ---
-title: 'Consulter les statistiques et les logs de mon site heberge sur une offre mutualisee'
+title: 'Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée'
 slug: mutualise-consulter-les-statistiques-et-les-logs-de-mon-site
 legacy_guide_number: 1344
-excerpt: 'Retrouvez ici les demarches pour consulter les statistiques et logs de votre site internet'
+excerpt: 'Découvrez comment consulter les statistiques et logs de votre site internet'
 section: 'Optimiser son site'
 ---
+**Dernière mise à jour le 13/08/2020**
 
-L'accès aux statistiques de votre site est compris dans votre hébergement. Vous n'avez pas besoin de souscrire à un autre abonnement pour bénéficier de ce service.
+## Objectif
 
-Cliquez [ici](http://www.ovh.com/fr/hebergement-web/faq){.external} pour retrouver nos différents guides des offres mutualisées.
+L'accès aux logs et aux statistiques de votre site est compris dans votre offre d'hébergement web, accéssible via votre espace client OVHcloud.
 
-> [!warning]
->
-> L'interprétation des logs et des statistiques d'un site internet peut se révéler complexe. Nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés pour les interpréter. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos.
->
+**Découvrez comment consulter les statistiques et logs de votre site internet.**
 
-## Consulter les statistiques et les logs
+## Prérequis
 
-### Connexion a l'espace client
-Connectez-vous dans le [Manager](https://www.ovh.com/manager/web/){.external} à l'aide de votre couple identifiant (nic-handle) - mot de passe.
+- Disposer d'une offre [d'hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} compatible.
+- Être connecté à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
-Une fois connecté, sélectionner l'hébergement pour lequel vous souhaitez consulter les statistiques dans le menu de gauche.
+## En pratique
 
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web`{.action}, puis sur `Hébergements`{.action} dans la colonne de gauche.
 
-![hosting](images/2827.png){.thumbnail}
-
-Dans le récapitulatif général, cliquer sur le lien d'accès : "Statistiques et logs".
+Sélectionnez l'hébergement concerné, cliquez sur l'onglet `Plus+`{.action} puis sur `Statistiques et logs`{.action}
 
 
-![hosting](images/2826.png){.thumbnail}
+![hosting](images/statistics01.png){.thumbnail}
+
+Dans la fenêtre qui s'affiche, vous avez le choix entre deux liens. L'un pour afficher les **statistiques des visites** et l'autre pour accéder aux **logs** brut de votre hébergement.
 
 
-### Acces a la page Statistiques &amp; logs
-Vous pouvez accéder aux statistiques de votre site, simplement en vous rendant sur :
+![hosting](images/statistics02.png){.thumbnail}
 
-- [https://logs.ovh.net/nomdevotredomaine](https://logs.ovh.net/nomdevotredomaine){.external}
+### Statistiques des visites
 
-La connexion se fait via votre identifiant OVH et le mot de passe associé.
+#### OVHcloud Web Statistics
 
-Elles sont simples à utiliser et à visualiser. En quelques clics, vous pouvez analyser votre site sans avoir à fournir d'autres calculs statistiques.
+Pour vous aider à mieux suivre et piloter le trafic de vos sites web, vous disposez d'un outil de statistiques de fréquentation et de mesure d’audience de vos sites internet hébergés sur votre hébergement mutualisé. 
 
-Cliquez sur le lien généré automatiquement dans le Manager pour accéder aux statistiques et aux logs.
+![hosting](images/OWStats01.gif){.thumbnail}
 
-*Vous devrez vous identifiez avec votre référence client (Nic-handle) et votre mot de passe.*
+La tableau de bord d'OVHcloud Web Statistics se présente en 6 sections dans le panneau de gauche.
 
+- Dashboard : visualisation du trafic sur les sites de votre hébergement.
+- Browsers : classement des explorateurs internet les plus utilisés pour visualiser vos sites.
+- Geolocalization :  proportion de visiteurs en fonction de leur localisation.
+- Requests : classement des pages les plus consultées sur vos sites.
+- Robots : visualisation des robots qui passent sur vos sites.
+- Status : statistiques des echecs et réussites recontrés en fonction des codes HTTP retournés.
+- FAQ : rubrique dédiée aux questions les plus fréquentes
 
-### Espace statistiques
-Une fois connecté à l'espace de statistiques, voici la page qui apparaît (cf capture ci-contre).
+Le cadre `Period selection` en haut à droite vous permet de sélectionner une période précise
 
-Deux possibilités s'offrent à vous :
+#### Urchin v6 (historique)
 
-- Accéder aux statistiques de votre site via urchin v6. (cf encadré vert).
-- Consulter les logs bruts de votre site en temps réel ou sur une période antérieure (cf encadré orange).
+Si vous ne disposez pas encore de l'outil OVHcloud Web Statistics, vous avez accès à Urchin 6
 
+![hosting](images/1490.png){.thumbnail}
 
-![hosting](images/2832.png){.thumbnail}
+Urchin vous donnent des informations sur :
 
-
-### Urchin v6
-Ces statistiques donnent des renseignements sur :
-
-Le trafic de votre site
-
+- Le trafic de votre site
 - Le nombre de visiteurs,
 - Le nombre de pages visualisées,
 - Le "poids" des pages visualisées,
@@ -70,15 +69,13 @@ Le trafic de votre site
 - Comment les visiteurs de votre site l'ont-ils connu ?
 - Par quels moteurs de recherche ont-ils trouvé l'URL de votre site ?
 - Quels mots-clés ont-ils utilisé lors de leur recherche ?
+- Quelles pages de votre site ont été les plus visitées ? Le suivi
 
-Quelles pages de votre site ont été les plus visitées ? Le suivi
+### Logs
 
+Vous avez la possibilité de visualiser les logs brut de votre site avec un différé d'environ 5 minutes.
 
-![hosting](images/1490.png){.thumbnail}
-
-
-### Logs bruts
-Vous avez la possibilité de visualiser les logs de votre site pratiquement en direct. Les logs de votre site sont disponibles en moins de 15 minutes, ce qui vous permet de vérifier le bon fonctionnement de votre site ou de calculer les logs de votre site presque en temps réel.
+![hosting](images/logs01.png){.thumbnail}
 
 Différents type de logs sont à votre disposition :
 
@@ -91,10 +88,6 @@ Différents type de logs sont à votre disposition :
 - Logs cron : le résultat de l'exécution de vos tâches planifiées ([http://guides.ovh.com/MutualiseCron](http://guides.ovh.com/MutualiseCron){.external})
 
 
-![hosting](images/2828.png){.thumbnail}
+## Aller plus loin
 
-
-## Aide
-
-### Est-il possible d'utiliser le logiciel de statistiques Urchin en francais ?
-Vous pouvez choisir la langue utilisée par Urchin sur son interface : cliquez sur préférences dans le menu, choisissez la langue, puis validez (cliquez sur 'submit'). Urchin se rappellera de vos préférences.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
