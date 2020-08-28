@@ -1,65 +1,50 @@
 ---
-title: Utilizar el KVM en un VPS
-excerpt: Cómo utilizar el KVM en un VPS
-slug: utilizar_el_kvm_para_los_vps
+title: `Usando el KVM en un VPS`
+excerpt: `Cómo usar el KVM para el VPS`
+slug: uso-KVM-para-VPS
 section: Primeros pasos
 ---
 
-**Última actualización: 18/04/2018**
+**Última actualización: 17/07/2020**
 
-## Objetivo
+## Objectivo
 
-La consola KVM permite establecer una conexión directa con un VPS sin necesidad de utilizar software externo (terminal o Putty, por ejemplo). Puede acceder a esta consola desde el área de cliente o mediante la API de OVH.  
+La consola KVM le permite conectarse directamente a su VPS sin la necesidad de utilizar software externo como Terminal o Putty. Se puede acceder a esta consola a través de su Panel de control o las API.
 
-**Esta guía explica cómo acceder al KVM de ambas formas.**
+**Esta guía explica ambos métodos de acceso.**
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Debe iniciar sesión en su [Panel de control](https://ca.ovh.com/auth/?action=gotomanager).
 
 ## Procedimiento
 
-### Conexión al KVM desde el área de cliente
+### Conexión al KVM a través del panel de control
 
-Una vez conectado al área de cliente, vaya a la sección  `Cloud`{.action}. En la columna izquierda, haga clic en `Servidores`{.action} y seleccione el VPS. Haga clic en el botón `KVM`{.action} que aparece.
+Una vez que haya iniciado sesión en su Panel de control, haga clic en la pestaña Servidor, luego, en la columna de la izquierda, elija su VPS. Haga clic en el botón `···` {.action} al lado de su nombre de VPS y verá `KVM`{.action}:
 
-![Hacer clic en KVM](images/activating_kvm_manager.png){.thumbnail}
+![Click on the KVM button](images/activating_kvm_manager2.png){.thumbnail}
 
- 
-A continuación, se establecerá la conexión al VPS en una nueva ventana. Este proceso podría tardar unos segundos. Una vez iniciado el KVM, solo tendrá que introducir sus claves de acceso.
+Luego, una ventana iniciará la conexión a su VPS. Esto podría tomar unos segundos. Entonces todo lo que tiene que hacer es conectarse:
 
-![Conexión al KVM](images/kvm_screen.png){.thumbnail}
+![Connecting to the KVM](images/kvm_screen.png){.thumbnail}
 
 > [!primary]
 >
-> Compruebe la distribución del teclado, que podría ser diferente de la suya (por ejemplo, AZERTY en lugar de QWERTY).
+> El teclado puede tener un diseño diferente al suyo. Asegúrese de verificarlo, ya que el teclado podría ser AZERTY en lugar de QWERTY, por ejemplo.
 >
 
-### Conexión al KVM a través de la API
+### Conexión a KVM a través de las API
 
-Si, por algún motivo, no pudiera conectarse al KVM desde el área de cliente, puede hacerlo a través de la API de OVH. En primer lugar, conéctese a la [API](https://api.ovh.com/){.external}.
-
-#### VPS 2014
-
-En los VPS 2014, se pueden producir errores 1006. Para resolverlos, utilice la siguiente llamada a la API:
-
-> [!api]
->
-> @api {POST} /vps/{serviceName}/openConsoleAccess
->
-
-Aunque la respuesta de la API sea positiva, puede que la conexión tarde un par de minutos en establecerse, hasta que el puerto esté abierto.
-
-#### VPS 2016
-
-Si tiene problemas con el KVM, le recomendamos la siguiente llamada a la API:
+A veces puede experimentar problemas para conectarse al KVM a través de su Panel de control. En este caso, puede usar la solución API. Primero, inicie sesión a través de la [API de OVHcloud](https://ca.api.ovh.com).
 
 > [!api]
 >
 > @api {POST} /vps/{serviceName}/getConsoleUrl
 >
 
+
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
 
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>
