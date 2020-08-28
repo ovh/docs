@@ -1,105 +1,118 @@
 ---
-title: 'SSH on web hosting packages'
-excerpt: 'SSH on web hosting packages'
-id: '1962'
+title: 'Accessing a web hosting plan via SSH'
 slug: web_hosting_ssh_on_web_hosting_packages
-legacy_guide_number: g1962
+excerpt: 'Find out how to connect and use SSH access on an OVHcloud web hosting plan'
+section: 'FTP and SSH'
 ---
 
-**Last updated 5th May 2020**
+**Last updated 18th August 2020**
 
-## What is SSH and how do you use it?
-SSH is available on professional and performance hosting plans.
+## Objective
 
-PLEASE NOTE: On old offers, access is only possible with the primary FTP account. This means that additional FTP users will not have SSH access. 
+OVHcloud web hosting plans provide you with access to a storage space you can use to put your website and application files online. You can access this space using an FTP or SSH user account and password.
 
-SSH allows you log on to your server and work with your files (as in FTP).
-For more information on the SSH protocol, [click here](https://en.wikipedia.org/wiki/Secure_Shell).
+**Find out how to connect and use SSH access on an OVHcloud web hosting plan.**
 
-## Prerequisites
+## Requirements
 
-- The SSH option, available on: Hosting plans starting with [Professional hosting](https://www.ovh.com/sg/web-hosting/).
-- An SSH client.
-- Port 22 must be open on your firewall and your router.
+- an [OVHcloud web hosting plan](https://www.ovh.com/sg/web-hosting/){.external} with SSH access
+- the login credentials required to connect to your storage space via SSH
+- access to the `Web`{.action} section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
-## Enable/Disable SSH for a user
-You can manage your SSH logins in your control panel. You just have to click on the name of your website in the left-hand column, then go to the "FTP - SSH" tab.
+## Instructions
 
-![sshonweb](images/sshguide_screen1.png){.thumbnail}
+### Step 1: Ensure that SSH access is enabled.
 
-You can disable the SSH connection for a user by clicking on the button to the right of your login and then "Edit".
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, go to the `Web`{.action} section, then click on `Hosting`{.action} in the services bar on the left-hand side. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. The information associated with your storage space will now appear. 
 
-This modification will take a few minutes.
+Find the table in the ‘SSH’ column to check if the SSH user (or ‘SSH login’) concerned has SSH access enabled. A ‘Disabled’ label will be present if this is not the case.
 
-![sshonweb](images/sshguide_screen2.png){.thumbnail}
+![usessh](images/use-ssh-step1.png){.thumbnail}
 
-## Command prompt
-Linux: KDE: Open the main menu (by default this will be at the bottom left of your screen), then in the search bar which appears, tap "konsole", then click on the first search result.
+If SSH access is disabled, click `...`{.action} to the right of the user concerned, then `Modify`{.action}. In the window that pops up, enable SSH access, then confirm the modification. If you cannot enable it, ensure that your [OVHcloud web hosting plan](https://www.ovh.com/sg/web-hosting/){.external} offers SSH access.
 
-Mac: The Terminal application comes preinstalled with OS X and you can launch it from Finder > Applications > Utilities.
+### Step 2: Retrieve your connection information.
 
-Windows: There is no native SSH client but you can use a free, open-source application called PuTTY. Download it: [here](http://www.putty.org/).
+To connect to your storage space via SSH, you will need the following information to hand. If you do not have all this information, you can find it in the `FTP - SSH`{.action} tab.
 
-## Connecting to your server via SSH
-Linux and Mac: To connect to your server in SSH, open your command prompt as indicated above and enter:
-SSH YourFtpLogin@YourFtpServer
-
-![sshonweb](images/img_3093.jpg){.thumbnail}
-
-Windows: It is best to follow a this guide on
-[PuTTy](../web_hosting_using_putty_on_windows/).
-
-## List of common SSH commands
-Just replace arg with the filename or directory that you want to work with. 
-
-|Command to enter|Definition|Explanation|
-|---|---|---|
-|pwd|print working directory|Show the full path of the current directory|
-|cd arg| change directory | Move in to another directory; arg |refers to this new directory. The cd command without adding arg goes to the home directory. | 
-|cd ..|change directory to ..|Change working directory by going up a directory level.|
-|ls arg|list|List the contents of arg if this is a directory. Without arg,ls lists the contents of the working directory.|
-|ll arg|long list|Show detailed information about the arg file.|
-|ls -a arg|list all|Show all the arg files, even those that start with .., if this is a directory. The ls options can be combined as follows: ls -al.|
-|chmod [permission type]  arg|change  mode|Change permissions for the arg file.|
-|mkdir arg|make directory|Create the arg directory.|
-|rmdir arg|remove directory|Remove the arg directory if it is empty.|
-|rm arg|remove|Remove the arg file.|
-|rm -r arg|remove recursively|Remove arg and all the files which it contains.|
-|mv arg1 arg2|move|Rename or move arg1 to arg2.|
-|touch arg|touch|Create an empty file named arg if it does not exist. If you use an existing file name, it will instead "touch" that file and update its last-modified date.|
-
-## Launch a script with a specific version of PHP
-To run your scripts from an SSH command, using a specific version of PHP, you have to use specific commands.
-
-|Command|Version|
+|Element|Where to find it|
 |---|---|
-|php.ORIG.4 (cgi)|4.4.9|
-|php.ORIG.5_2 (cgi)|5.2.17|
-|php.ORIG.5_3 (cgi-fcgi)|5.3.29|
-|/usr/local/php5.3/bin/php (cli)|5.3.29|
-|php.ORIG.5_4 (cgi-fcgi)|5.4.38|
-|/usr/local/php5.4/bin/php (cli)|5.4.38|
-|/usr/local/php5.5/bin/php (cli)|5.5.22|
-|/usr/local/php5.6/bin/php (cli)|5.6.6|
+|Enabled SSH user|You will find it in the ‘SSH login’ column of the table. As a reminder, the [user’s SSH access must be enabled](./#step-1-ensure-that-ssh-access-is-enabled).|
+|The SSH user password|If you have forgotten this password, you can change it by clicking `...`{.action}, then `Change password`{.action}.|
+|The SSH server address|Click on the “SSH access to cluster” note. In the element that appears, the SSH server address starts with “ssh://”, and ends before the “:”.|
+|The SSH server connection port|Click on the “SSH access to cluster” note. In the element that appears, the port number is mentioned after the “:”.|
 
-For example, to run the "myScript.php" script with version 5.3 of PHP, you have to run this command:
+Here is an example of what it will look like: `ssh://ssh.cluster023.hosting.ovh.net:22/`. In this example, “ssh.cluster023.hosting.ovh.net” is the SSH server address, and “22” is the SSH connection port.
 
+![usessh](images/use-ssh-step2.png){.thumbnail}
+
+### Step 3: Log in to your storage space via SSH.
+
+To log in via SSH, use a terminal to interact directly with your storage space via command lines. 
+
+This tool is installed by default on macOS, Linux, and Windows 10. With an older Windows environment, you will need to install a program like PuTTY, or add the OpenSSH feature. Since this aspect will vary depending on which operating system you are using, we cannot provide any further details in this guide.
+
+There are now two ways of connecting to your storage space, depending on the method you use:
+
+#### 3.1 From a terminal.
+
+> [!warning]
+> There is no superuser (or root) access via SSH on our shared hosting plans.
+
+Once the terminal is open, use the following command, replacing ‘sshlogin’, ‘sshserver’ and ‘connectionport’ with your own SSH credentials. 
+
+```ssh
+ssh sshlogin@sshserver -p connectionport
 ```
-php.ORIG.5_3 myScript.php
+
+When you run the command, you will be prompted to enter the SSH user password. Once you have connected, follow the next step: [Interact with your storage space via SSH](./#step-4-interact-with-your-storage-space-via-ssh).
+
+![usessh](images/use-ssh-step3.png){.thumbnail}
+
+#### 3.2 From a software application.
+
+Open your software application (e.g. PuTTY), and enter your SSH connection details. This action will vary depending on the application you choose to use, so we cannot go into further detail on this in the guide. As a reminder, you will need to enter the following information:
+
+|Information to enter|Details|
+|---|---|
+|SSH server|Enter the SSH server address you retrieved during [step 2](./#step-2-retrieve-your-connection-information). Depending on which software you are using, the field may be labelled as "Server address" or "Host Name".|
+|Connection port|Enter the SSH connection port you retrieved during [step 2](./#step-2-retrieve-your-connection-information).|
+|SSH login|Enter the SSH user. Depending on the software application you use, this field may be labelled as “Login” or “Username”.|
+|SSH user password|Enter the password associated with the SSH login.<br><br> Depending on which software you are using, the field should be labelled as "Password".|
+
+Once you have connected, move on to the next step.
+
+### Step 4: Interact with your storage space via SSH.
+
+To interact with your storage space, you can use commands, which each have a direct meaning. Use the list below if you need to. Please note that **this list is not exhaustive**.
+
+|Command|Meaning|Description| 
+|---|---|---|
+|pwd|Print working directory|Displays the working directory you are in.| 
+|cd `arg`|Change directory|Enables you to change the working directory to the one entered, replacing `arg`.|
+|cd `..`|Change directory|Enables you to change the working directory, one level up in the tree-view of your directories.|
+|cd|Change directory|If you do not specify an argument, you can move to the root of your storage space (home).|
+|ls|List|Lists the contents of your working directory. Add the attributes to modify the result of the command (like `ls -ulhG`).| 
+|chmod `droit` `arg`|Change mode|Change the rights of the file or directory mentioned as an `arg` argument.| 
+|mkdir `arg`|Make directory|Enables you to create a directory with the argument name `arg`.| 
+|touch `arg`|Touch|Creates an empty file with the name mentioned in the `arg` argument, if a file with this name does not already exist.|
+|rm `arg`|Remove|Removes the file mentioned in the `arg` argument.| 
+|rm -r `arg`|Remove|Removes the directory mentioned as an `arg` argument, as well as all of its contents, recursively.| 
+|mv `arg1` `arg2`|Move|Renames or moves an element (specified as `arg1`) to a new area (specified as `arg2`).| 
+
+You can also run a command to launch a script using a specific PHP version. E.g. for PHP version 7.1, use the following command, and adapt the elements to match your details.
+
+```sh
+/usr/local/php7.1/bin/php myscript.php
 ```
 
-Before the name of the script you also have to enter its location, 
-For example if your "myScript.php" file is in the "WWW" folder, and you want to run it in version 5.3 of PHP, you have to run this command:
-
-```
-php.ORIG.5_3 www/myScript.php
-or
-php.ORIG.5_3 /www/myScript.php
-```
-
-## Public key fingerprints (to be verified when you first connect in SSH)
-When you first connect to the server you will be asked to verify the public key.
+Depending on the PHP version you want to use, the runtime environment may need to be modified to ensure that there are no compatibility issues. Please refer to our documentation.
 
 ## Go further
 
+[Modifying the configuration of a Web Hosting plan](../modify_your_web_hosting_systems_runtime_environment/)
+
+[Configuring the .ovhconfig file of your Web Hosting plan](../configuring-file-ovhconfig/)
+
 Join our community of users on <https://community.ovh.com/en/>.
+
