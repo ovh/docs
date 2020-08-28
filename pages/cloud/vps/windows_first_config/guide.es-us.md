@@ -5,46 +5,54 @@ excerpt: Cómo activar la conexión al escritorio remoto mediante KVM
 section: Primeros pasos
 ---
 
+## Objectivo
+Cuando instala Windows Server en un [VPS](https://www.ovhcloud.com/en-ca/vps/){.external}, la conexión a su escritorio remoto puede estar deshabilitado, al igual que la respuesta del protocolo ICMP .
+
+
+**Esta guía le mostrará qué configuraciones deben cambiarse para volver a habilitar la conexión de escritorio remoto y ICMP.**
 
 ## Requisitos
-Al instalar Windows Server 2012, 2012 R2 o 2016 en un VPS, es posible que tanto la conexión al escritorio remoto como la respuesta al protocolo ICMP estén desactivadas. Si ese es el caso, esta guía indica cómo activarlas.
-
-Para ello, es necesario tener:
 
 - un VPS con Windows Server 2012, 2012 R2 o 2016;
-- acceso al [área de cliente de OVH](https://www.ovh.com/manager/){.external}.
-
+- acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Procedimiento
 
-### 1. Acceder al KVM
-Para acceder al KVM, acceda al [área de cliente Dedicado de OVH](https://www.ovh.com/manager/dedicated/){.external} y, en la columna izquierda, seleccione su VPS.
+### Paso 1: inicie sesión en KVM
 
-Haga clic en el botón `KVM`{.action}.
+Para acceder al KVM de su VPS, siga la [Guía KVM](../utilizar_el_kvm_para_los_vps) {.external}a
 
+### Paso 2: Configurar ajustes de Windows
 
-![KVM](images/windowsvps.png){.thumbnail}
+En la primera pantalla de configuración, deberá configurar los ajustes para su ** País / región **, ** Idioma ** y ** Diseño de teclado **. Cuando haya hecho esto, haga clic en `Siguiente`{.acción}.
 
-Se abrirá entonces un acceso de **teclado, pantalla y ratón** al VPS.
+![KVM](images/setup-03.png){.thumbnail}
 
+Luego, elija una contraseña para su cuenta de administrador. Ingrese dos veces, luego haga clic en ` Terminar ` {.action}.
 
-### 2. Configuracion de Windows
-En la pantalla del KVM, verá iniciarse Windows. A continuación deberá configurar el idioma del teclado Windows y la contraseña del **administrador**.
+![KVM](images/setup-04.png){.thumbnail}
 
+Windows ahora aplicará su configuración. Cuando haya terminado, verá la siguiente pantalla. En este punto, deberá hacer clic en el botón `enviar CtrlAltDel` {.action} para iniciar sesión.
 
-![Idioma](images/windows2.png){.thumbnail}
+![KVM](images/setup-05.png){.thumbnail}
 
+En la pantalla de inicio de sesión, ingrese la contraseña que creó para su cuenta de administrador y presione la tecla `Enter` {.action} en su teclado.
 
-![Contraseña](images/windows3.png){.thumbnail}
+![KVM](images/setup-06.png){.thumbnail}
 
+### Paso 3: Modificar el firewall de Windows
 
-### 3. Modificacion del firewall de Windows
-Una vez finalizada la instalación, diríjase a `Herramientas administrativas`{.action} y haga clic en `Firewall de Windows con seguridad avanzada`{.action}.
-
+Una vez que la configuración se haya completado y haya iniciado sesión, vaya a `Herramientas administrativas` {.action}, luego a` Firewall de Windows con seguridad avanzada` {.action}.
 
 ![Admin](images/windows4.png){.thumbnail}
 
-Por último, será necesario activar el protocolo ICMP y la conexión al escritorio remoto haciendo clic derecho y seleccionando `Habilitar regla`{.action}.
+Luego deberá habilitar el ICMP y las reglas de conexión de escritorio remoto * (haga clic con el botón derecho -> Habilitar regla) *.
 
+![Enabled](images/windows5.png){.thumbnail}
 
-![Habilitar](images/windows5.png){.thumbnail}
+Su servidor ahora estará configurado para conexiones de escritorio remoto.
+
+## Màs información
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>
+

@@ -65,7 +65,7 @@ Once the terminal is open, use the following command, replacing ‘sshlogin’, 
 ssh sshlogin@sshserver -p connectionport
 ```
 
-When you run the command, you will be prompted to enter the SSH user password. Once you have connected, follow the next step: [Interact with your storage space via SSH](./#step-4-interact-with-your-storage-space-via-ssh).
+When you run the command, you will be prompted to enter the SSH user password. Once you have connected, follow the next step: [Interact with your storage space via SSH](./#step-4-interact-with-your-storage-space-via-ssh_1).
 
 ![usessh](images/use-ssh-step3.png){.thumbnail}
 
