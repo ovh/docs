@@ -9,7 +9,7 @@ section: 'Optimiser son site'
 
 ## Objectif
 
-L'accès aux logs et aux statistiques de votre site est compris dans votre offre d'hébergement web, accéssible via votre espace client OVHcloud.
+L'accès aux logs et aux statistiques de votre site est compris dans votre offre d'hébergement web, accessible via votre espace client OVHcloud.
 
 **Découvrez comment consulter les statistiques et logs de votre site internet.**
 
@@ -27,7 +27,7 @@ Sélectionnez l'hébergement concerné, cliquez sur l'onglet `Plus+`{.action} pu
 
 ![hosting](images/statistics01.png){.thumbnail}
 
-Dans la fenêtre qui s'affiche, vous avez le choix entre deux liens. L'un pour afficher les **statistiques des visites** et l'autre pour accéder aux **logs** brut de votre hébergement.
+Dans la fenêtre qui s'affiche, vous avez le choix entre deux liens. L'un pour afficher les **statistiques des visites** et l'autre pour accéder aux **logs** bruts de votre hébergement.
 
 
 ![hosting](images/statistics02.png){.thumbnail}
@@ -40,14 +40,14 @@ Pour vous aider à mieux suivre et piloter le trafic de vos sites web, vous disp
 
 ![hosting](images/OWStats01.gif){.thumbnail}
 
-La tableau de bord d'OVHcloud Web Statistics se présente en 6 sections dans le panneau de gauche.
+Le tableau de bord d'OVHcloud Web Statistics se présente en 6 sections dans le panneau de gauche.
 
 - Dashboard : visualisation du trafic sur les sites de votre hébergement.
 - Browsers : classement des explorateurs internet les plus utilisés pour visualiser vos sites.
 - Geolocalization :  proportion de visiteurs en fonction de leur localisation.
 - Requests : classement des pages les plus consultées sur vos sites.
 - Robots : visualisation des robots qui passent sur vos sites.
-- Status : statistiques des echecs et réussites recontrés en fonction des codes HTTP retournés.
+- Status : statistiques des échecs et réussites rencontrés en fonction des codes HTTP retournés.
 - FAQ : rubrique dédiée aux questions les plus fréquentes
 
 Le cadre `Period selection` en haut à droite vous permet de sélectionner une période précise
@@ -63,7 +63,7 @@ Urchin vous donnent des informations sur :
 - Le trafic de votre site
 - Le nombre de visiteurs,
 - Le nombre de pages visualisées,
-- Le "poids" des pages visualisées,
+- Le « poids » des pages visualisées,
 - Le nombre de requêtes http.
 - Les durées moyennes de connexion à l'ensemble de votre site ou une page particulière
 - Comment les visiteurs de votre site l'ont-ils connu ?
@@ -73,7 +73,7 @@ Urchin vous donnent des informations sur :
 
 ### Logs
 
-Vous avez la possibilité de visualiser les logs brut de votre site avec un différé d'environ 5 minutes.
+Vous avez la possibilité de visualiser les logs bruts de votre site avec un différé d'environ 5 minutes.
 
 ![hosting](images/logs01.png){.thumbnail}
 
