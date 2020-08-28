@@ -1,6 +1,5 @@
 ---
 title: 'Créer un répondeur pour son adresse e-mail'
-legacy_guide_number: 2052
 slug: mise-en-place-repondeur-mail
 excerpt: 'Découvrez comment mettre en place un répondeur e-mail'
 section: 'Fonctionnalités des adresses e-mail'
@@ -9,9 +8,9 @@ order: 3
 
 ## Objectif
 
-Vous devez vous absenter de votre travail et vous souhaitez laisser un message aux interlocuteurs qui souhaitent vous contacter par e-mail. Il est possible de mettre un répondeur e-mail.
+En cas d'absence à votre bureau, vous pouvez mettre en place un répondeur e-mail qui laissera un message aux interlocuteurs souhaitant vous contacter par e-mail.
 
-**Découvrez comment mettre en place un répondeur e-mail,**
+**Découvrez comment mettre en place un répondeur e-mail.**
 
 ## Prérequis
 
@@ -22,7 +21,7 @@ Vous devez vous absenter de votre travail et vous souhaitez laisser un message a
 
 > [!primary]
 >
-> Si votre adresse e-mail est sur une offre [**Exchange**](https://www.ovh.com/fr/emails/hosted-exchange/), [**Email Pro**](https://www.ovh.com/fr/emails/email-pro/) ou qu'il n'y a pas de section `Gestion des répondeurs`{.action} à votre MXplan, il vous sera nécessaire de créer le répondeur depuis votre webmail en vous aidant de la documentation [« Mettre en place un répondeur automatique depuis l’interface OWA »](../../microsoft-collaborative-solutions/exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/)
+> Si votre adresse e-mail est sur une offre [**Exchange**](https://www.ovh.com/fr/emails/hosted-exchange/), [**Email Pro**](https://www.ovh.com/fr/emails/email-pro/) ou qu'il n'y a pas de section `Gestion des répondeurs`{.action} dans votre MXplan, il vous sera nécessaire de créer le répondeur depuis votre webmail en vous aidant de la documentation [« Mettre en place un répondeur automatique depuis l’interface OWA »](../../microsoft-collaborative-solutions/exchange_2016_guide_mise_en_place_dun_repondeur_sous_owa/).
 
 ### Création du répondeur
 
@@ -32,7 +31,7 @@ Sélectionnez le nom de domaine concerné dans la section `Emails`{.action}, dep
 
 Cliquez sur l'onglet `Emails`{.action} en haut, puis sur `Gestion des répondeurs`{.action}.
 
-Vous serrez dirigez vers la fenêtre `Gestion des répondeurs` affichant l'ensemble des répondeurs e-mail en place sur votre offre e-mail.
+Vous serez redirigés vers la fenêtre `Gestion des répondeurs` affichant l'ensemble des répondeurs e-mail en place sur votre offre e-mail.
 
 Cliquez sur `Ajouter un répondeur`{.action}
 
@@ -54,7 +53,7 @@ La fenêtre d'ajout s'affiche. Vous pouvez la compléter selon les informations 
 
 - `Envoyer une copie ` ou `Garder les messages sur le serveur `: permet de renvoyer les messages reçus pendant votre absence vers l'adresse de votre choix ou de les concerver sur l'adresse e-mail. Si vous décochez cette case, les messages reçus pendant votre absence seront automatiquement supprimés.
 
-- `Adresse en copie ` (Seulement en mode libre) : dans le cas d'un alias, sélectionner l'adresse e-mail qui recevra les e-mails envoyés vers l'alias.
+- `Adresse en copie ` (Seulement en mode libre) : dans le cas d'un alias, sélectionnez l'adresse e-mail qui recevra les e-mails envoyés vers l'alias.
 
 - `Message `: Il s'agit du message que vos correspondants recevront lorsqu'ils vous enverront un e-mail.
 
@@ -62,11 +61,10 @@ Vous pouvez ensuite cliquer sur `Valider`{.action} pour que le répondeur soit m
 
 ### Modification ou supression du répondeur
 
-Lorsque votre répondeur mail a été créé, il apparaît dans la liste visible dans la section `Gestion des répondeurs`{.action} de votre offre e-mail. Vous pouvez le supprimer ou le modifier en cliquant sur `...`{.action} à droite de celui-ci.
+Lorsque votre répondeur e-mail a été créé, il apparaît dans la liste visible dans la section `Gestion des répondeurs`{.action} de votre offre e-mail. Vous pouvez le supprimer ou le modifier en cliquant sur `...`{.action} à droite de celui-ci.
 
 ![hosting](images/email_responder02.png){.thumbnail}
 
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur https://community.ovh.com
-
