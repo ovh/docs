@@ -3,6 +3,7 @@ title: Connect to your Dedicated Cloud with a smartphone or iPad
 excerpt: ''
 slug: connect_to_your_dedicated_cloud_with_a_smartphone_or_ipad
 legacy_guide_number: g623
+hidden: true
 ---
 
 
