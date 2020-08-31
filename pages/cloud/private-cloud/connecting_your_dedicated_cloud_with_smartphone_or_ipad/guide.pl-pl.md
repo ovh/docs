@@ -4,6 +4,7 @@ excerpt: ''
 slug: polaczenie_z_usluga_dedicated_cloud_z_poziomu_smartphonea_i_ipada
 section: 'Pierwsze kroki'
 legacy_guide_number: g623
+hidden: true
 ---
 
 ## 
