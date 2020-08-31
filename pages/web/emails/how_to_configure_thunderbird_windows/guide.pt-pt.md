@@ -137,6 +137,7 @@ As portas 995 e 465 correspondem à encriptação SSL ativada.
 
 
 |Portas|SSLactivado|SSLdesativado|
+|---|---|---|
 |Receção|995|110|
 |Envio|465|587|
 
@@ -164,22 +165,6 @@ As portas 993 e 465 correspondem à encriptação SSL ativada.
 
 
 |Portas|SSLactivado|SSLdesativado|
+|---|---|---|
 |Receção|993|143|
 |Envio|465|587|
-
-
-
-
-## Generalidades
-Se desejar, podemos encarregar-nos da configuração da sua conta de email no seu software de email através de uma intervenção paga. A OVH pode igualmente realizar outras intervenções relacionadas com a sua conta de email.
-
-Pode consultar este guias relativo às diferentes intervenções pagas que podem ser realizadas pela OVH:
-
-
-- []({legacy}1683)
-
-
-Para efetuar um pedido de intervenção paga, consulte no guia acima indicado o procedimento a ser efetuado.
-
-![](images/img_2501.jpg){.thumbnail}
-
