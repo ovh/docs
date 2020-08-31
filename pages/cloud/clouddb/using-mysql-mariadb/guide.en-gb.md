@@ -12,13 +12,8 @@ Do you want to use MySQL or MariaDB ? Learn how to create and manage your databa
 
 ### Prerequisites
 
-
-> [!primary]
->
-> To follow this tutorial you need:
-> - A CloudDB instance
-> - To have viewed the CloudDB guide: docs/cloud/clouddb/debuter-avec-clouddb
->
+- A CloudDB instance
+- To have viewed [the CloudDB guide](../getting-started-with-clouddb/)
 
 ### What is a MySQL database?
 MySQL is relational database management system developed for increased read performance, unlike other systems
