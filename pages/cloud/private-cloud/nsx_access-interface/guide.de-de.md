@@ -23,7 +23,7 @@ NSX ist eine Lösung der Art „Software Defined Network (SDN)“ und wurde von 
 
 VMWare NSX ist ausschließlich über das Interface vSphere verfügbar.
 
-Klicken Sie auf der Startseite des vSphere Clients auf die Kategorie `Networking and Security`{.action} im Menu auf der linken Seite:
+Klicken Sie auf der Startseite des vSphere Clients auf die Kategorie `Networking and Security`{.action} im Menü auf der linken Seite:
 
 ![Networking and Security](images/nsx01.png){.thumbnail}
 
