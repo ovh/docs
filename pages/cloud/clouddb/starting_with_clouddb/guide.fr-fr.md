@@ -123,6 +123,8 @@ Depuis l'onglet `Bases de données`{.action}, cliquez sur le pictogramme en form
 
 ![clouddb](images/clouddb-add-import-step1.png){.thumbnail}
 
+![clouddb](images/clouddb-add-import-step1bis.png){.thumbnail}
+
 - **Étape 2 : sélectionner et envoyer le fichier de sauvegarde**
 
 Renseignez un nom de fichier, qui vous permettra d'identifier cette sauvegarde plus tard si vous souhaitez de nouveau la restaurer. Ensuite, à côté de **Fichier**, sélectionnez le fichier de sauvegarde de la base de données sur votre ordinateur, puis cliquez sur `Envoyer`{.action}. Patientez le temps que l'interface vous indique que le fichier a été envoyé avec succès, puis cliquez sur le bouton `Suivant`{.action}.
