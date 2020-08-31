@@ -11,13 +11,8 @@ Chcesz korzystać z MySQL lub MariaDB? Sprawdź, jak w prosty sposób tworzyć b
 
 ### Wymagania
 
-
-> [!primary]
->
-> Wymagane są:
-> - Instancja CloudDB
-> - Zapoznanie się z przewodnikiem na temat pierwszych kroków z CloudDB: docs/cloud/clouddb/debuter-avec-clouddb
->
+- Posiadanie instancji CloudDB
+- Zapoznanie się z przewodnikiem na temat [CloudDB](../pierwsze-kroki-z-clouddb/)
 
 ### Czym jest baza danych MySQL?
 MySQL to system zarządzania relacyjnymi bazami danych przygotowany z myślą o zwiększonej wydajności odczytu, w przeciwieństwie do pozostałych systemów.
