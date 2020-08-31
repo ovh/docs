@@ -35,7 +35,7 @@ Para acceder a la consola de una instancia:
 
 
 
-![](images/launch_console.jpg){.thumbnail}
+![public-cloud](images/launch_console.png){.thumbnail}
 Se abrirá la consola de la instancia.
 
 ## Importante:
@@ -43,5 +43,5 @@ Si la consola no responde al teclado, haga clic en la barra de estado.
 Para salir del modo de pantalla completa, haga clic en el botón de retroceso del navegador.
 En la imagen puede ver la consola de la instancia.
 
-![](images/console.jpg){.thumbnail}
+![public-cloud](images/console.png){.thumbnail}
 La consola VNC no ofrece la distribución de teclado francesa (AZERTY).

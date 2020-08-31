@@ -52,7 +52,7 @@ Pour configurer votre serveur SQL privé :
 - Rendez-vous dans l’espace client, rubrique **Hébergements**. Vous y trouverez votre serveur SQL.
 
 
-![Accueil d'un sql privé](images/sqlprivé.png){.thumbnail}
+![Accueil d'un sql privé](images/sqlprive.png){.thumbnail}
 
 - Dans l’onglet **Bases de données**, cliquez sur **Ajouter une base de données**.
 
