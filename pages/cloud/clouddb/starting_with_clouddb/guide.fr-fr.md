@@ -3,6 +3,7 @@ title: 'Premiers pas avec le service CloudDB'
 slug: debuter-avec-clouddb
 excerpt: 'Découvrez comment bien débuter avec la solution CloudDB'
 section: 'Premiers pas'
+order: 1
 ---
 
 
