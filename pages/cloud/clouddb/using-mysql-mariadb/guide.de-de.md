@@ -10,11 +10,9 @@ Sie möchten mit MySQL oder MariaDB arbeiten? Dann lesen Sie hier, wie Sie Ihre 
 ## Allgemeine Informationen
 
 ### Voraussetzungen
-Für dieses Tutorial:
 
 - Benötigen Sie eine CloudDB Instanz
-- Lesen Sie bitte zunächst die Anleitung zu CloudDB: [](debuter-avec-clouddbguide.de-de.md){.ref}
-
+- Lesen Sie bitte zunächst die [Anleitung zu CloudDB](../erste-schritte-mit-clouddb/)
 
 ### Was ist eine MySQL Datenbank?
 MySQL ist ein Verwaltungssystem für relationale Datenbanken und im Gegensatz zu anderen Systemen speziell für eine höhere Performance beim Lesen der Daten entwickelt.
