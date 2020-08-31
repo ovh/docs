@@ -41,4 +41,4 @@ Différentes informations sont à renseigner dans le formulaire :
 - Se connecter
 
 
-![connexion](images/2756.png){.thumbnail}
+![connexion](images/img_2756.jpg){.thumbnail}
