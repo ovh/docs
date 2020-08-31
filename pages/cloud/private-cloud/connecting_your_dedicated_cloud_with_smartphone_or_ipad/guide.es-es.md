@@ -4,6 +4,7 @@ excerpt: ''
 slug: conexion_a_dedicated_cloud_desde_un_smartphone_o_ipad
 legacy_guide_number: g623
 section: Primeros pasos
+hidden: true
 ---
 
 
