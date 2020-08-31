@@ -76,7 +76,7 @@ Aquí también puede cambiar la información de configuración de su cuenta de c
 
 A continuación se describen las opciones disponibles en «Avanzadas...».
 
-![](images/img_1497.jpg){.thumbnail}
+![](images/2138.png){.thumbnail}
 
 
 ## Servidor
