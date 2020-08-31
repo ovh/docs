@@ -11,7 +11,7 @@ section: Miscelánea
 
 Minecraft es un exitoso juego sandbox. Necesita ser alojarse en un servidor si usted desea jugar multijugador.
 
-Usted puede alquilar un servidor Minecraft pre-construido o puede configurarlo usted mismo en un [VPS]{https://www.ovh.com/world/es/vps/) o un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/. Esto reducirá los costes y le proporcionará control total sobre su instancia de juego.
+Usted puede alquilar un servidor Minecraft pre-construido o puede configurarlo usted mismo en un [VPS](https://www.ovh.com/world/es/vps/) o un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/. Esto reducirá los costes y le proporcionará control total sobre su instancia de juego.
 
 En este tutorial, creamos un Minecraft jave Edition en un VPS OVHcloud y probaremos su conectividad.
 
