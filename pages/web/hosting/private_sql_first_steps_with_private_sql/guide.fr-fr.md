@@ -3,6 +3,7 @@ title: Premiers pas avec le service SQL Privé
 slug: premiers-pas-avec-sql-prive 
 excerpt: Découvrez comment bien débuter avec un SQL Privé
 section: SQL Privé
+order: 1
 ---
 
 **Dernière mise à jour le 28/08/2020**
