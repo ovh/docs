@@ -27,10 +27,10 @@ Ahora puede consultar toda la información de su Dedicated Cloud: hosts, MV y re
 ## 
 Configure en primer lugar su iPad, en el menú «Ajustes», indicando el nombre del servidor de OVH: vcma.ovh.com.
 
-![](images/img_147.jpg){.thumbnail}
+ 
 Una vez configurado, puede ejecutar la aplicación, donde tendrá que introducir las claves de acceso que le hemos enviado por correo electrónico.
 
-![](images/img_15.jpg){.thumbnail}
+ 
 Cuando se haya conectado, podrá ver todos los hosts de su Dedicated Cloud, los recursos utilizados y las MV asociadas.
 
 ![](images/img_152.jpg){.thumbnail}

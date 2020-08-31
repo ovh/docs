@@ -31,7 +31,7 @@ Links sehen Sie den Benutzernamen und die Server-Adresse (wenn Sie ihre Maus dar
 Klicken Sie rechts auf das kleine Zahnrad:
 Hier können Sie Das Passwort ändern, falls Sie es vergessen haben.
 
-![](images/img_3774.jpg){.thumbnail}
+![](images/3774.png){.thumbnail}
 
 
 ## Verbindung zur Datenbank Version SQL 4
@@ -43,7 +43,7 @@ oder
 
 
 
-![](images/img_3775.jpg){.thumbnail}
+![](images/3775.png){.thumbnail}
 Wenn Sie auf dem [phpmyadmin](https://phpmyadmin.ovh.net/old/) Interface sind, müssen Sie sich einloggen:
 
 - Benutzername = Benutzer der Datenbank (in unserem Screenshot blau).
@@ -99,7 +99,7 @@ Nun wird in einem Popup eine Bestätigung angefordert. Klicken Sie auf "Bestäti
 
 Es wird nun 10 bis 15 Minuten dauern, bis Ihre Datenbank endgültig gelöscht ist.
 
-![](images/img_3776.jpg){.thumbnail}
+![](images/3776.png){.thumbnail}
 
 
 ## Wie erstelle ich eine MySQL 5.5 Datenbank?

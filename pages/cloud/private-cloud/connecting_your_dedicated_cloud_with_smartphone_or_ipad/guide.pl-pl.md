@@ -26,10 +26,10 @@ Masz już dostęp do wszystkich informacji swojej usługi PCC:
 ## 
 Najpierw w sekcji « ustawienia » skonfiguruj swojego iPada. Podaj nazwę serwera OVH: vcma.ovh.com
 
-![](images/img_147.jpg){.thumbnail}
+ 
 Po zakończeniu konfiguracji możesz uruchomić aplikację. Należy podać dane do logowania otrzymane w e-mailu:
 
-![](images/img_15.jpg){.thumbnail}
+ 
 Po zalogowaniu będziesz miał dostęp do wszystkich hostów swojej usługi PCC, do zasobów i wirtualnych maszyn:
 
 ![](images/img_152.jpg){.thumbnail}
