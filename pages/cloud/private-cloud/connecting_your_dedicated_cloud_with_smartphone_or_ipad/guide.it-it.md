@@ -3,6 +3,7 @@ title: Connessione al Dedicated Cloud con smartphone o iPad.
 excerpt: ''
 slug: connessione_al_dedicated_cloud_con_smartphone_o_ipad
 legacy_guide_number: g623
+hidden: true
 ---
 
 
