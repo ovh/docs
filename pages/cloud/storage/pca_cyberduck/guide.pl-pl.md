@@ -23,7 +23,7 @@ W Internecie można odnaleźć inne interfejsy. Konfiguracja jest podobna do tej
 - ID Twojego projektu i Twojego użytkownika widoczny w menu Access & Security w interfejsie Horizon.
 
 
-![projet](images/project_pl.png){.thumbnail}
+![projet](images/project.png){.thumbnail}
 
 ## W praktyce
 
