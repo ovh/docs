@@ -25,10 +25,10 @@ U heeft nu toegang tot alle gegevens van uw PCC: uw hosts, uw VM's of de resourc
 ## 
 Configureer eerst uw iPad in "Instellingen". U moet de naam van de OVH server invoeren: vcma.ovh.com
 
-![](images/img_147.jpg){.thumbnail}
+ 
 U kunt de app starten zodra u uw iPad heeft geconfigureerd. U moet de inloggegevens invoeren die u per e-mail heeft ontvangen:
 
-![](images/img_15.jpg){.thumbnail}
+ 
 Zodra u ingelogd bent, kunt u al uw PCC hosts, gebruikte resources en de VM's vinden:
 
 ![](images/img_152.jpg){.thumbnail}

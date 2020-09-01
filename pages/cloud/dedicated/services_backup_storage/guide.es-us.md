@@ -63,7 +63,7 @@ Ya podrá acceder al Backup Storage del servidor desde el bloque de IP seleccion
 
 Para modificar los protocolos de un bloque de IP autorizado, haga clic en el botón `···`{.action} situado al final de la línea correspondiente al bloque de IP y seleccione `Editar el acceso`{.action}. Marque o desmarque los protocolos que quiera modificar y, a continuación, haga clic en `Aceptar`{.action} para guardar los cambios.
 
-![Editar el acceso](images/backup-storage-13-edited_2020.png.png){.thumbnail}
+![Editar el acceso](images/backup-storage-13-edited_2020.png){.thumbnail}
 
 
 #### Eliminar un acceso
@@ -108,7 +108,7 @@ Abra la pestaña `Backup Storage`{.action} y haga clic en `Contratar espacio en 
 
 Seleccione la capacidad de almacenamiento que desea contratar y haga clic en `Siguiente`{.action}.
 
-![Selección de la capacidad de espacio en disco](images/backup-storage-111-edited_2020.png){.thumbnail}
+![Selección de la capacidad de espacio en disco](images/backup-storage-11-edited_2020.png){.thumbnail}
 
 Lea y acepte las condiciones generales y, a continuación, haga clic en `Aceptar`{.action}.
 

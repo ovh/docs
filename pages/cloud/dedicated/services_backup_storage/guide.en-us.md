@@ -29,7 +29,7 @@ Log into your [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanag
 
 Then click the `Confirm`{.action} button.
 
-![Activate Backup storage](images/backup-storage-02_2020.PNG){.thumbnail}
+![Activate Backup storage](images/backup-storage-02_2020.png){.thumbnail}
 
 You will now receive an activation email, and your backup storage will be configured in a few minutes.
 
@@ -84,7 +84,7 @@ Log into your [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanag
 
 Then click the `Confirm`{.action} button.
 
-![Reset your password](images/backup-storage-09_2020.PNG){.thumbnail}
+![Reset your password](images/backup-storage-09_2020.png){.thumbnail}
 
 A password recover email will now be sent to the email address registered to your admin account. Please follow the instructions in the email to reset your password.
 
@@ -96,7 +96,7 @@ Log into your [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanag
 
 Click `Confirm`{.action} on the warning message to proceed with the deletion.
 
-![Delete the Backup storage](images/backup-storage-10_2020.PNG){.thumbnail}
+![Delete the Backup storage](images/backup-storage-10_2020.png){.thumbnail}
 
 The Backup storage will now be deleted after a few minutes.
 

@@ -26,11 +26,11 @@ Pour ce faire, accédez à l'[API OVHcloud](https://ca.api.ovh.com/createApp/){.
 
 Vous devrez vous connecter et définir un nom et une description de l'application.
 
-![image](images/createapp-ca.jpg)
+![image](images/ createapp-ca.png)
 
 Une fois connecté, vous obtiendrez votre "Application Key" et "Application Secret", plus tard appelés "AK" et "AS".
 
-![image](images/ak-as-ca.jpg)
+![image](images/ak-as-ca.png)
 
 L'"AK" identifie votre application. Il peut être partagé publiquement.
 
@@ -38,7 +38,7 @@ L'"AS" est une clé utilisée pour signer les demandes d'API qui seront faites u
 
 #### Sommaire
 
-![sequence diagram](images/sequence01-ca.png)
+![sequence diagram](images/sequence01.png)
 
 ### Déployer votre application
 
@@ -91,7 +91,7 @@ La demande a été faite et vous avez besoin que votre client l'accepte en le re
 
 Après avoir redirigé le client vers "validationUrl", il sera invité à confirmer la délégation de droits.
 
-![confirmation des droits](images/validate-ck-ca.jpg){.thumbnail}
+![confirmation des droits](images/validate-ck-ca.png){.thumbnail}
 
 En cas de succès, le client sera redirigé vers l'URL précédemment spécifiée par "REDIRECT_URL" dans la commande curl.
 

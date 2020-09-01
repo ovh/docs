@@ -62,7 +62,7 @@ After you have confirmed the following information will be displayed: ![public-c
 
 Once backup has been done will be able to see it in `Instance Backup`{.action} section: ![public-cloud](images/backup3.png){.thumbnail} .
 
-You can refer to our guide to [Backing up an Instance](../back-up-instance/) if you need help with this. 
+You can refer to our guide to [Backing up an Instance](https://docs.ovh.com/gb/en/public-cloud/back-up-instance/) if you need help with this. 
 
 ### Create an automatic backup of an instance
 
@@ -74,7 +74,7 @@ Once you have selected the necessary information and you have clicked on `Create
 
 At any time you can go to that `Workflow management`{.action} to delete the current automatic backup process: ![public-cloud](images/backupautodelete.png){.thumbnail}
 
-You can refer to our guide to [Backing up an Instance](../back-up-instance/) if you need help with this. 
+You can refer to our guide to [Backing up an Instance](https://docs.ovh.com/gb/en/public-cloud/back-up-instance/) if you need help with this. 
 
 ### Retrieve your login information
 

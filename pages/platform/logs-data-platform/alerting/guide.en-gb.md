@@ -18,9 +18,9 @@ This guide will help you to configure and use alerts on a particular field. We w
 
 In order to understand this guide you should read the following tutorials:
  
-- [Quick start of Logs Data Platform](../quick_start/guide.en-gb.md){.ref}.
-- [Logstash collector on Logs Data Platform](../logstash_input/guide.en-gb.md){.ref}.
-- [The Filebeat tutorial](../filebeat_logs/guide.en-gb.md){.ref}.
+- [Quick start of Logs Data Platform](../quick-start){.ref}.
+- [Logstash collector on Logs Data Platform](../logstash-input){.ref}.
+- [The Filebeat tutorial](../filebeat-logs){.ref}.
  
 ## Instructions
 
@@ -45,7 +45,7 @@ Don't hesitate to jump to the alert configuration part if you only need to know 
 
 ### Use case&#58; Alerts for a website powered by an Apache Server
 
-For this tutorial, we will configure the 3 alerts that we can use for a website. These 3 alerts can help you to react immediately in the case of a failure, detect unexpected problems or verify that all your websites are working correctly. But before going into the alerting feature itself, we need to configure our Apache Logging format to include all the information we need. We will also use [Filebeat](../filebeat_logs/guide.en-gb.md){.ref} to send our logs to Logs Data Platform.
+For this tutorial, we will configure the 3 alerts that we can use for a website. These 3 alerts can help you to react immediately in the case of a failure, detect unexpected problems or verify that all your websites are working correctly. But before going into the alerting feature itself, we need to configure our Apache Logging format to include all the information we need. We will also use [Filebeat](../filebeat-logs){.ref} to send our logs to Logs Data Platform.
 
 #### Apache Server Configuration
 
@@ -63,11 +63,11 @@ We will use the [Filebeat Apache format](https://www.elastic.co/guide/en/beats/f
 </VirtualHost>
 ```
 
-The configuration is inspired by the one you can find in [this tutorial](../apache_logs/guide.en-gb.md){.ref}.
+The configuration is inspired by the one you can find in [this tutorial](../apache-logs){.ref}.
 
 #### Filebeat configuration
 
-The Filebeat configuration will enable the apache module and allow you to sned your logs directly to Logs Data Platform 
+The Filebeat configuration will enable the apache module and allow you to send your logs directly to Logs Data Platform. 
 
 ```yaml
 #=========================== Filebeat inputs =============================
@@ -162,7 +162,7 @@ For this, go to the stream page and use the menu at the right to navigate to the
 
 ![Navigate to alert](images/nav-alert.png){.thumbnail}
 
-On this interface, select **Message count** in the "Create an alert" drop box. Configuring alerts is as easy as filling in the terms describing the behavior of your alerts. For example you can do the following:
+On this interface, select **Message count** in the `Create an alert`{.action} drop box. Configuring alerts is as easy as filling in the terms describing the behavior of your alerts. For example you can do the following:
 
 Trigger an alert named **No Traffic** when there are less than **3** messages in the last **5** minutes and then wait at  least **5** minutes before triggering a new alert (grace period).
 
@@ -182,7 +182,7 @@ As soon as the alert is fired you will receive a mail, detailing the alert condi
 
 A slow website is a poor experience for your users and can make you lose customers. There are many possible causes for a slowdown : too many connections, a misbehaving web application or an network problem. Fortunately, your Apache logs give you the response time of your server that you can use to trigger an alert when your website is too slow.
 
-To configure an alert based on your website's response time, Select the **Field aggregation** condition under the "Create an alert" drop box on the Alerting page. As with the Counter Alert, you have to fill the different fields to create your alert:
+To configure an alert based on your website's response time, Select the **Field aggregation** condition under the `Create an alert`{.action} drop box on the Alerting page. As with the Counter Alert, you have to fill the different fields to create your alert:
 
 ![Slow website alert](images/slow-alert.png){.thumbnail}
 
@@ -204,7 +204,7 @@ You will then receive an email with the messages included. You can then directly
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
-- Documentation: [Guides](../product.en-gb.md){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Getting Started: [Quick Start](../quick-start){.ref}
+- Documentation: [Guides](../){.ref}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

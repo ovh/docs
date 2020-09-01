@@ -14,7 +14,7 @@ section: Primeros pasos
 Para seguir los pasos de esta guía, es necesario:
 
 - tener una instancia CloudDB;
-- haber consultado la guía [](debuter-avec-clouddbguide.es-es.md){.ref}.
+- haber consultado [esta guía](../empezar-con-clouddb/).
 
 
 ### Que es una base de datos MySQL

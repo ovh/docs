@@ -72,7 +72,7 @@ UUID:         xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 
 ### Gather parameters
 
-The first step is to create a [SSH key]({filename}../../public-cloud/how_to_create_an_ssh_key/guide.en-gb.md) and set the variable `ssh_key_pub` to the path of the public key inside the `vars.yml` file.
+The first step is to create a [SSH key](../../public-cloud/create-ssh-keys/) and set the variable `ssh_key_pub` to the path of the public key inside the `vars.yml` file.
 
 Then, we need to select a valid public IP for our master node.
 Your private cloud cluster IP block is available via the OVH API.

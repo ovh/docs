@@ -40,4 +40,4 @@ You need to provide some information in the form :
 - Connect
 
 
-![connexion](images/2756.png){.thumbnail}
+![connexion](images/img_2756.jpg){.thumbnail}

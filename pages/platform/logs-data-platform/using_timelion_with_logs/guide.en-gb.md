@@ -25,7 +25,7 @@ An introduction to this plugin can be found here: [https://www.elastic.co/blog/t
 
 ## Requirements
 
-In order to use Timelion, your Kibana access has to be already configured. If you don't have it already, you can visit [this Kibana tutorial](../using_kibana_with_logs/guide.en-gb.md){.ref}. If you're ready, let's get started!
+In order to use Timelion, your Kibana access has to be already configured. If you don't have it already, you can visit [this Kibana tutorial](../using-kibana-with-logs){.ref}. If you're ready, let's get started!
 
 
 ## Instructions
@@ -103,7 +103,7 @@ We have only scratched the surface of what you can do with Timelion. Head to the
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
-- Documentation: [Guides](../product.en-gb.md){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Getting Started: [Quick Start](../quick-start){.ref}
+- Documentation: [Guides](../){.ref}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
