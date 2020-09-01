@@ -27,7 +27,7 @@ Klicken Sie auf der Startseite des vSphere Clients auf die Kategorie `Networking
 
 ![Networking and Security](images/nsx01.png){.thumbnail}
 
-Sie haben nun Zugang zu NSX mit allen verbundenen Menus.
+Sie haben nun Zugang zu NSX mit allen verbundenen Menüs.
 
 
 > [!primary]
@@ -46,4 +46,4 @@ Sie haben nun Zugang zu NSX mit allen verbundenen Menus.
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -1,31 +1,69 @@
 ---
 title: Criar um Alerta
-excerpt: ''
+excerpt: Configure alertas no seu cliente vSphere
 slug: criar_um_alerta
-legacy_guide_number: g599
+section: Gestão das máquinas virtuais
+order: 09
 ---
 
+**Última atualização: 28/08/2020**
 
-## 
-Deverá utilizar o cliente vSphere, acendendo ao mesmo através do seu computador, ao utilizar a ligação RDP que enviamos aquando da ativação do seu PCC.
+## Objetivo
+
+É possível criar um alerta sobre todos os elementos do seu Hosted Private Cloud: o próprio datacenter, os clusters, as VM, os datastores, a rede...
+
+**Este manual explica como criar alertas.**
+
+## Requisitos
+
+- Ter um produto [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}.
+- Estar ligado à [interface vSphere](../instalar_o_vsphere_client/).
+
+## Instruções
+
+### Criar um alerta
+
+Para criar um alerta, clique com o botão direito do rato no datacenter ou outro elemento que pretende vigiar, e a seguir clique em `Alarms`{.action} > `New Alarm Definition`{.action}.
+
+![criação alerta](images/alarms01.png){.thumbnail}
+
+### Definir um nome e um objetivo
+
+O primeiro passo consiste em atribuir um nome ao alerta e definir o seu objetivo. Pode também adicionar uma descrição.
+
+![nome e objetivo do alerta](images/alarms02.png){.thumbnail}
+
+### Definir as regras do alerta
+
+O segundo passo consiste em definir as regras do alerta e as consequentes ações.
+
+O campo `IF` permite-lhe definir um desencadeador do alerta a partir de uma seleção de variáveis. Em função da variável escolhida, uma lista de argumento lhe será apresentada.
+
+O campo `THEN` permite indicar que o alerta é ativado com um certo nível de criticidade e incorrerá em ações tais como o envio de um e-mail, a execução de um script ou a interrupção de uma VM.
+
+![regras do alerta](images/alarms03.png){.thumbnail}
+
+Assim, poderá monitorizar a RAM de um host, por exemplo, indicando um limite que não deve ser ultrapassado antes que o alerta seja ativado e receberá um e-mail de aviso.
+
+> [!primary]
+> Pode adicionar várias regras ao seu alerta clicando em `ADD ANOTHER RULE`{.action}.
+>
+
+### Interrupção do alerta
+
+O terceiro passo permite-lhe definir os critérios de fim do alerta e ativar novas ações.
+
+![interrupção do alerta](images/alarms04.png){.thumbnail}
+
+### Resumo do alerta
+
+O último passo apresenta-lhe um resumo das regras definidas. Pode ativar o alerta selecionando o cursor ou optando por o ativar mais tarde clicando com o botão direito do rato no elemento escolhido, e clicando em `Alarms`{.action} > `Enable Alarm Actions`{.action}.
+
+![resumo do alerta](images/alarms05.png){.thumbnail}
+
+Além disso, também poderá configurar neste passo a frequência de repetição dos alertas.
 
 
-## 
-É possível criar um alerta sobre todos os elementos do Private Cloud: sobre o próprio Private Cloud, sobre os clusters, as VMs, os datastores, a rede..
-Para tal, basta efetuar um clique direito em Private Cloud ou noutro elemento a vigiar, seleciona «Alarm» e de seguida «Add Alarm»
+## Quer saber mais?
 
-![](images/img_91.jpg){.thumbnail}
-No separador « Général », indica o nome do seu alerta e seleciona ot ipo de alarme:
-
-![](images/img_92.jpg){.thumbnail}
-No separador "Triggers", permite-lhe indicar os parâmetros que pretende vigiar, assim como as condições de alerta. O botão «Add» permite-lhe personalizar a regra.
-Poderá, por exemplo, vigiar a RAM de um hos, e indicar qual o limiar na qual despolete um alerta e seja enviado um e-mail para o advertir.
-
-![](images/img_93.jpg){.thumbnail}
-O separador «Reporting» permite indicar uma margem a ter em conta antes de despoletar um alerta, mas também a frequência de repetição.
-Se por exemplo o seu host ultrapassa os 95% de utilização por mais de 5 minutos, será notificado por e-mail.
-
-No separador «Ações», poderá definir a acção a efetuar após ser despoletado o alerta: envio de e-mail, parar uma VM, ou a execução de um comando.
-
-![](images/img_103.jpg){.thumbnail}
-
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

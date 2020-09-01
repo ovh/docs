@@ -11,13 +11,8 @@ Deseja utilizar MySQL ou MariaDB? Descubra como criar e gerir facilmente as suas
 
 ### Pre-requisitos
 
-
-> [!primary]
->
-> Este tutorial necessita de:
-> - Uma instância CloudDB
-> - Ter consultado o guia CloudDB: docs/cloud/clouddb/debuter-avec-clouddb
->
+- Uma instância CloudDB
+- Ter consultado [o guia CloudDB](../comecar-com-clouddb/).
 
 ### O que e uma base de dados MYSQL?
 O MYSQL é um sistema de gestão de bases de dados relacionais desenvolvido para performances elevadas em escrita, ao contrário de outros sistemas.

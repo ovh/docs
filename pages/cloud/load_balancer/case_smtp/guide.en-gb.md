@@ -49,7 +49,7 @@ Via the OVH API, in the section:
 > @api {GET} /ipLoadbalancing
 > 
 
-For more information on the API’s features, you can refer to the following guide: [](use_api_reference/guide.gb-en.md){.ref}
+For more information on the API’s features, you can refer to [the following guide in French](https://docs.ovh.com/fr/load-balancer/iplb-api-reference/).
 
 
 ## Add a server farm.

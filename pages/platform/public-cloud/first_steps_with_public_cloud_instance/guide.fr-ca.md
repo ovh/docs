@@ -70,7 +70,7 @@ Une fois la sauvegarde effectuée, vous pourrez la voir dans la section `Sauvega
 
 ![public-cloud](images/backup3.png){.thumbnail}
 
-Vous pouvez vous référer à notre guide sur la [Sauvegarde d’une instance](../back-up-instance/) si vous avez besoin d’aide à ce sujet. 
+Vous pouvez vous référer à notre guide sur la [Sauvegarde d’une instance](../sauvegarder-une-instance/) si vous avez besoin d’aide à ce sujet. 
 
 ### Créer une sauvegarde automatique d’une instance.
 
@@ -88,7 +88,7 @@ Vous pouvez à tout moment accéder au menu `Workflow Management`{.action} pour 
 
 ![public-cloud](images/backupautodelete.png){.thumbnail}
 
-Vous pouvez vous référer à notre guide sur la [sauvegarde d’une instance](../back-up-instance/) si vous avez besoin d’aide à ce sujet. 
+Vous pouvez vous référer à notre guide sur la [sauvegarde d’une instance](../sauvegarder-une-instance/) si vous avez besoin d’aide à ce sujet. 
 
 ### Récupérer vos informations de connexion.
 

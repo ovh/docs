@@ -12,13 +12,8 @@ Vous désirez utiliser MySQL ou MariaDB ? Découvrez comment créer et gérer vo
 
 ### Prérequis
 
-
-> [!primary]
->
-> Ce tutoriel nécessite :
-> - Unne instance CloudDB
-> - Avoir consulté le guide de démarrage de CloudDB : docs/cloud/clouddb/debuter-avec-clouddb
->
+- Une instance CloudDB
+- Avoir consulté le [guide de démarrage de CloudDB](../debuter-avec-clouddb/)
 
 ### Qu'est-ce qu'une base de donnees MySQL ?
 MySQL est un système de gestion de bases de données relationnelles développé pour des performances élevées en lecture, contrairement à d'autres systèmes.

@@ -36,4 +36,4 @@ Inserisci nel form le informazioni richieste:
 - Connect
 
 
-![connexion](images/2756.png){.thumbnail}
+![connexion](images/img_2756.jpg){.thumbnail}

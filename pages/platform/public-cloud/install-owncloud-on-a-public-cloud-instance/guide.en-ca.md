@@ -206,7 +206,7 @@ There are advantages and disadvantages to using local disk storage to store your
 Using OpenStack Object Storage by OVHcloud, you can store your files externally, with no limit on the total volume of data or how long you store it for. Furthermore, OVHcloud guarantees 100% data durability, and replicates your data in three different locations, delivering exceptional value for money.
 
 Find out more about [OVHcloud Object Storage]({ovh_www}/public-cloud/storage/object-storage/){.external}.
-Read out guide to using Object Storage for ownCloud: [Object Storage for ownCloud](../storage/configure_owncloud_with_object_storage/){.external}.
+Read out guide to using Object Storage for ownCloud: [Object Storage for ownCloud](../../storage/configure_owncloud_with_object_storage/){.external}.
 
 ### Using an additional disk as storage (optional)
 As with Object Storage, the advantage of using an additional disk is that you are less restricted by storage problems. You can also increase the size of an additional disk after its creation, up to 10TB.
