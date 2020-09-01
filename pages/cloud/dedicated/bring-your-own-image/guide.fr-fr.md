@@ -58,15 +58,17 @@ Pour créer et déployer votre image, utilisez l'appel suivant et complétez les
 | URL | L'URL où récupérer votre image. |
 | checkSum | Le checksum de votre image. |
 | checkSumType | Le checksum de l'image à déployer (md5, sha1, sha256, sha512). |
+| enable (ConfigDrive)\* | Activer la création de la partition ConfigDrive (cloud-init) |
+| hostname (ConfigDrive)\* | Le hostname de votre serveur. |
+| sshKey (ConfigDrive)\* | Votre clé SSH publique. |
+| userData (ConfigDrive)\* | Votre script de post-installation. |
+| userMetadatas (ConfigDrive)\* | Meta datas utilisés par Nova au moment du boot. |
 | description | Le nom de votre image. |
 | diskGroupId | L'id du disque qui doit être utilisé. |
-| hostname | Le hostname de votre serveur. |
 | httpHeader | Uniquement si nécessaire pour télécharger l'image. |
-| sshKey | Votre clé SSH publique. |
 | type | Le type/format de votre image (qcow2, raw, ova). |
-| userData | Votre script de post-installation. |
-| userMetadatas | Meta datas utilisés par Nova au moment du boot. |
 
+\* Le ConfigDrive est une partition utilisée par cloud-init au premier boot de votre serveur afin d'établir la configuration souhaitée. Vous pouvez choisir d'activer ou non cette option.
 
 ![POST API call](images/postapicall.png){.thumbnail}
 
@@ -86,6 +88,22 @@ Dans cet exemple, le déploiement est en cours de démarrage.
 ![GET API call](images/getapicall.png){.thumbnail}
 
 Le déploiement peut durer une dizaine de minutes. Une fois l'opération terminée, le statut de votre déploiement passera en « done » et votre serveur aura redémarré sur disque.
+
+#### Exemples de retour
+
+Voici quelques exemples de retour :
+
+| Message | Signification |
+|-|-|
+| Can't write qcow2 on disk. | Impossible d'écrire l'image qcow2 sur le disque. |
+| Could not download, qcow2 image is too big to download in memory. | Il n'y a pas assez d'espace en RAM pour télécharger l'image. |
+| Could not download image located : http://path/of/your/image. | Impossible de télécharger l'image située : http://chemin/de/votre/image. |
+| Bad format image, expected : qcow2, raw. | Le format de l'image est incorrect. |
+| Bad checkSumType, expected : sha1, sha256, md5. | Le type de checksum est incorrect. |
+| Bad $checkSumType for downloaded file, got : 1234 while expecting 5678. | Le checksum est incorrect. |
+| Can not move backup GPT data structures to the end of disk. | Le format disque est incorrect. |
+| Could not create configdrive on disk. | Impossible de créer la partition configdrive sur le disk. |
+
 
 ### Supprimer le déploiement
 

@@ -57,15 +57,17 @@ To deploy your image, use the following API call and complete the required field
 | URL | The URL to retrieve your image from. |
 | checkSum | Your image's checksum. |
 | checkSumType | Your image's checksum type (md5, sha1, sha256, sha512). |
+| enable (ConfigDrive)\* | Create ConfigDrive partition (cloud-init) |
+| hostname (ConfigDrive)\* | Your server's hostname. |
+| sshKey (ConfigDrive)\* | Your public SSH key. |
+| userData (ConfigDrive)\* | Your post-install script. |
+| userMetadatas (ConfigDrive)\* | Meta data used by Nova when booting. |
 | description | Your image's name. |
 | diskGroupId | The disk ID on which you want to install your image. |
-| hostname | Your server's hostname. |
 | httpHeader | Only if necessary to download your image. |
-| sshKey | Your public SSH key. |
 | type | Your image's type/format (qcow2, raw, ova). |
-| userData | Your post-install script. |
-| userMetadatas | Meta data used by Nova when booting. |
 
+\*  ConfigDrive partition is used by cloud-init while first server boot in order to configure it with your needs. You can choose to enable it or not.
 
 ![POST API call](images/postapicall.png){.thumbnail}
 
@@ -85,6 +87,21 @@ In this example, the deployment is starting.
 ![GET API call](images/getapicall.png){.thumbnail}
 
 Deployment can take up to 10 minutes. When the operation is complete, your deployment status will change to "done" and your server will be restarted to disk.
+
+#### Result examples
+
+Here are some results examples you might have :
+
+| Message | Meaning |
+|-|-|
+| Can't write qcow2 on disk. | Could not burn qcow2 image on disk. |
+| Could not download, qcow2 image is too big to download in memory. | There is not enough RAM space to store your image. |
+| Could not download image located : http://path/of/your/image. | Impossible to download image located http://path/of/your/image. |
+| Bad format image, expected : qcow2, raw. | Incorrect image format. |
+| Bad checkSumType, expected : sha1, sha256, md5. | Incorrect checksum type. |
+| Bad $checkSumType for downloaded file, got : 1234 while expecting 5678. | Incorrect checksum signature. |
+| Can not move backup GPT data structures to the end of disk. | Disk format is not correct. |
+| Could not create configdrive on disk. | Impossible to create config-drive partition. |
 
 ### Deleting a deployment
 
