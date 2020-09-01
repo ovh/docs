@@ -1,7 +1,7 @@
 ---
 title: Utilizzare SDK vSphere
 slug: utilizzare-sdk-vsphere
-excerpt: Come installare e utilizzare il Software Development Kit di VSphere
+excerpt: Come installare e utilizzare il Software Development Kit di vSphere
 section: Funzionalità VMware vSphere
 order: 10
 ---
@@ -53,7 +53,7 @@ pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url fi
 A questo punto SDK è installato ed è possibile utilizzarlo negli script.
 
 
-#### Esempio di Script
+#### Esempio di script
 
 
 ##### Connessione
