@@ -17,7 +17,7 @@ Um bloco IP pode servir para tornar os seus serviços acessíveis na Internet.
 ## Requisitos
 
 * Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
-* Dispor de uma [infraestrutura Hosted Private Cloud](https://www.ovh.com/pt/public-cloud/instances/){.external} na sua conta OVHcloud.
+* Dispor de uma [infraestrutura Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external} na sua conta OVHcloud.
 
 ## Instruções
 
@@ -107,4 +107,4 @@ A referência da operação é “removeIpRipeBlock”.
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
