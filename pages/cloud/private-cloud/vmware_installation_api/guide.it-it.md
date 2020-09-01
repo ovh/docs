@@ -191,7 +191,7 @@ Alla fine dell’operazione verranno installati ulteriori moduli. Clicca su `Ent
 
 Per completare la procedura, scegli la cartella su cui installare SDK (di default è la directory “ /usr/bin”).
 
-#### Esempio di Script
+#### Esempio di script
 
 
 ##### Connessione
