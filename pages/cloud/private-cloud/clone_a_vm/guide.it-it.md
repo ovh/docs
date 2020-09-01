@@ -46,7 +46,7 @@ Il formato del disco virtuale è di tipo “Thin Provision”: il disco virtuale
 
 Per maggiori informazioni sui formati dei dischi VMware, consulta [questa guida](../scegliere-formato-del-disco/).
 
-Nella riga `VM Storage Policy` è possibile scegliere la politica di storage predefinita se disponi di datastore, o una politica personalizzata se disponi di host [vSAN](../vmware-vsan/){.external-link} o dell’opzione [VM encryption](../vm-encrypt/){.external-link}.
+Nella riga `VM Storage Policy` è possibile scegliere la politica di storage predefinita se disponi di datastore, o una politica personalizzata se disponi di host [vSAN](../vmware-vsan/) o dell’opzione [VM Encryption](../vm-encrypt/).
 
 ![Storage VM](images/clonevm04.png){.thumbnail}
 
