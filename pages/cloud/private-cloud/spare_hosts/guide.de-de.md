@@ -2,28 +2,44 @@
 title: Die Spare-Hosts
 excerpt: Bereitstellung eines Spare-Hosts in der Dedicated Cloud
 slug: die_spare-hosts
-legacy_guide_number: g860
+section: OVHcloud Funktionen
+order: 04
 ---
 
 
-## 
-Sie haben im Zusammenhang mit einem Störungsticket eine E-Mail bezüglich der Bereitstellung eines Spare-Hosts in Ihrer Dedicated Cloud erhalten.
-Ein Spare-Host wird üblicherweise bereitgestellt, wenn einer der Hosts, aus denen Ihre Infrastruktur besteht, ausfällt. Dieser Host ist für Sie kostenlos. Im Störungsticket wird auch die IP-Adresse des von dem Ausfall betroffenen Hosts aufgeführt.
-Bei der Verbindung mit Ihrem vSphere Client sehen Sie auch den auf Ihrem Host angezeigten Alarm.
-Wenn Sie die HA und DRS Funktionen von VMware korrekt konfiguriert haben, werden die VM automatisch auf den Spare-Host migriert.
-Wenn Sie diese Funktionen nicht aktiviert haben, müssen Sie Ihre virtuellen Maschinen von Hand migrieren.
+**Stand 17.07.2020**
 
+## Voraussetzungen
 
-## 
+- Sie nutzen ein Angebot der Art [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external}.
 
-## Achtung!
-OVH stellt Ihnen einen Spare-Host zur Verfügung, um den Ausfall von Ressourcen zu kompensieren. Sobald der ausgefallene Host wieder normal verfügbar ist, muss der Spare-Host an OVH zurückgegeben werden.
+## Einleitung
 
+In den Verträgen von OVHcloud wird der Ersatz eines unzugänglichen Hosts garantiert.
 
-## 
-Nach der Wiederherstellung des ausgefallenen Hosts muss der Spare-Host zurückgegeben werden. Ein Spare-Host kann nicht dauerhaft genutzt oder in einen regulär abgerechneten Host umgewandelt werden. Wenn Sie Ihren ausgefallenen Host austauschen möchten, gehen Sie wie in der Hilfe [Austausch eines defekten Hosts]({legacy}861) beschrieben vor.
+**Diese Anleitung erklärt, wie der Austausch funktioniert.**
 
+## Lieferung eines Ersatz-Hosts
 
-## 
-Sobald die Situation auf Ihrem ausgefallenen Host wieder normal ist und die dazugehörigen Warnmeldungen verschwunden sind, können Sie Ihren Spare-Host zurückgeben. Die Vorgehensweise dazu wird im Abschnitt "Einen Host entfernen" der Hilfe [Wie füge ich einen Host hinzu?]({legacy}605) beschrieben.
+Wenn einer Ihrer Hosts ausfällt, liefern wir Ihnen automatisch und kostenfrei einen Ersatz-Host in Ihre Infrastruktur, um die Dienstkontinuität zu gewährleisten. 
 
+Sofort nach Lieferung dieses Hosts erhalten Sie eine E-Mail mit allen Informationen zu diesem Host. Sie erhalten auch seine IP-Adresse, mit der Sie ihn leicht in Ihrem vSphere Interface finden können.
+
+Standardmäßig ist der Dienst HA ([High Availability](../vmware-ha-high-availability/)) von VMware für Ihren Cluster aktiviert. Wenn Sie Ihn aktiviert lassen, werden Ihre virtuellen Maschinen automatisch neu gestartet. Ist der Dienst DRS (Distributed Ressources Scheduler) aktiviert und im Modus „fully automated“, so findet die Lastverteilung zwischen den Hosts Ihres Clusters ebenfalls automatisch statt.
+
+> [!warning]
+> 
+> Ist noch ein CD/DVD-Laufwerk auf einer VM installiert oder mit ihr verbunden, so kann der Dienst HA nicht auf dem Ersatz-Host gestartet werden. Es wird empfohlen, das CD/DVD-Laufwerk immer als Clientgerät einzurichten.
+>
+
+## Ersatz-Host erhalten. Was nun?
+
+Wenn der Original-Host wieder funktioniert (nach der Reparatur), können Sie einen der beiden Hosts (Original oder Ersatz) an uns zurückgeben.
+
+Wir empfehlen Ihnen, uns den Original-Host zurückzugeben, damit wir ihn nach dieser Störung einer Reihe von Tests unterziehen (und so zukünftige Störungen vermeiden) können. Sie können dann den Ersatz-Host behalten. Dazu können Sie die Anleitung [Host-Server löschen](../host-server-loeschen/) zu Rate ziehen.
+
+OVHcloud kann dann automatisch den Original-Host zurücknehmen, sobald er entfernt ist.
+
+## Weiterführende Informationen
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

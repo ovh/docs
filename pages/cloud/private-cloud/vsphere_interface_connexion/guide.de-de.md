@@ -71,4 +71,4 @@ Auf der Seite `Home`{.action} finden Sie die wichtigsten Rubriken Ihres vCenters
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

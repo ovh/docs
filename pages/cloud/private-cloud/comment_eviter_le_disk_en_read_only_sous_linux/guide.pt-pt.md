@@ -78,4 +78,4 @@ Para que este valor seja considerado aquando da reinicialização da máquina:
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
