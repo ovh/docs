@@ -57,7 +57,7 @@ Im dritten Schritt legen Sie die Kriterien für die Beendigung des Alarms und da
 
 ### Übersicht über die Alarmmeldung
 
-Beim letzten Schritt sehen Sie eine Zusammenfassung der festgelegten Regeln. Sie können den Alarm mit der Cursor aktivieren, oder ihn später auslösen lassen. Machen Sie dazu einen Rechtsklick auf die ausgewählte Komponente und klicken Sie dann auf `Alarms`{.action} und `Enable Alarm Actions`{.action}.
+Beim letzten Schritt sehen Sie eine Zusammenfassung der festgelegten Regeln. Sie können den Alarm mit dem Cursor aktivieren, oder ihn später auslösen lassen. Machen Sie dazu einen Rechtsklick auf die ausgewählte Komponente und klicken Sie dann auf `Alarms`{.action} und `Enable Alarm Actions`{.action}.
 
 ![Übersicht über die Alarmmeldung](images/alarms05.png){.thumbnail}
 
