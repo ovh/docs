@@ -86,4 +86,4 @@ Poderá consultar mais informações [na documentação de VMware](https://docs.
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
