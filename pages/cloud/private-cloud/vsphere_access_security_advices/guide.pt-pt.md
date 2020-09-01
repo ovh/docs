@@ -30,7 +30,7 @@ Esta ação pode ser feita diretamente através da [Área de Cliente OVHcloud](h
 
 ### Criar utilizadores específicos
 
-Recomendamos fortemente que crie um acesso personalizado para cada pessoa que deva ter acesso à sua infraestrutura. Esta operação também pode ser feita na[Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, mas desta vez no separador `Utilizadores`{.action}. Para adicionar novos, clique no botão situado à direita: `Criar um utilizador`{.action}.
+Recomendamos fortemente que crie um acesso personalizado para cada pessoa que deva ter acesso à sua infraestrutura. Esta operação também pode ser feita na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, mas desta vez no separador `Utilizadores`{.action}. Para adicionar novos, clique no botão situado à direita: `Criar um utilizador`{.action}.
 
 ![Utilizadores](images/users.png){.thumbnail}
 
