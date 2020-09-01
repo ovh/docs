@@ -88,12 +88,12 @@ Una volta inviata la richiesta, l’attivazione potrebbe richiedere fino a un’
 A operazione completata, verrà inviata un’email con una configurazione dell’installazione e i link di accesso all’interfaccia Zerto di ciascuna infrastruttura.
 
 > [!primary]
-> Gentile Cliente,
 > 
-> ti informiamo che il servizio DRP Zerto appena attivato tra le tue 2 soluzioni Private Cloud
+> Gentile Cliente, ti informiamo che il servizio DRP Zerto appena attivato tra le tue 2 soluzioni Private Cloud
 > 
 > è raggiungibile tramite i seguenti indirizzi:
->Sito principale:
+>
+> Sito principale:
 > 
 >   * URL        : https://zerto.pcc-192-0-2-1.ovh.com/
 > 
@@ -171,7 +171,7 @@ Lo step successivo consiste nella selezione del sito remoto:
 
 A questo punto è necessario definire le risorse remote:
 
-* **Host**: seleziona la risorsa di calcolo, che può essere un **solo host** (indicato dal suo indirizzo IP ed eventualmente preceduto dal nome del cluster tra parentesi quadre), un **Ressource Pool** (che inizia per RP seguito dal nome del cluster e dal nome del Ressource Pool) o un **Cluster** (tramite il suo nome). Deve essere selezionato solo un **Ressource Pool** o un **Cluster** (nel nostro caso, Cluster1)
+* **Host**: seleziona la risorsa di calcolo, che può essere un **solo host** (indicato dal suo indirizzo IP ed eventualmente preceduto dal nome del cluster tra parentesi quadre), un **Ressource Pool** (che inizia per RP seguito dal nome del cluster e dal nome del Ressource Pool) o un **Cluster** (tramite il suo nome). Deve essere selezionato solo un **Ressource Pool** o un **Cluster** (nel nostro caso, Cluster1).
 * **Datastore**: seleziona la risorsa di storage, che può essere un **solo datastore** (indicato dal suo nome ed eventualmente preceduto dal nome dello **Storage Cluster** tra parentesi quadre) o uno **Storage Cluster** (tramite il suo nome).
 
 Salvo necessità avanzate, lascia invariati gli altri valori.
@@ -195,6 +195,7 @@ A questo punto siamo pronti per il primo step della configurazione di rete.
 * **Recovery Folder**\: scegli la cartella (o “/” per la root) in cui aggiungere le VM trasferite sul sito
 
 > [!primary]
+>
 > Le opzioni di **Pre-recovery Script** e **Post-recovery Script** non sono utilizzabili.
 > 
 
@@ -338,9 +339,9 @@ A questo punto è possibile verificare le azioni associate al VPG:
 
 A livello della **Commit Policy**, sono disponibili 3 opzioni:
 
-* Auto-Rollback: in caso di mancata azione da parte dell’utente, il rollback viene avviato al termine del tempo previsto
-* Auto-Commit: in caso di mancata azione da parte dell’utente, la conferma dei dati sulla piattaforma secondaria viene avviata al termine del tempo previsto (non è più possibile ritornare immediatamente sulla piattaforma principale)
-* None: le azioni di **Rollback** e **Commit** devono essere confermate dall’utente
+* **Auto-Rollback**: in caso di mancata azione da parte dell’utente, il rollback viene avviato al termine del tempo previsto
+* **Auto-Commit**: in caso di mancata azione da parte dell’utente, la conferma dei dati sulla piattaforma secondaria viene avviata al termine del tempo previsto (non è più possibile ritornare immediatamente sulla piattaforma principale)
+* **None**: le azioni di **Rollback** e **Commit** devono essere confermate dall’utente
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_06.png){.thumbnail}
 
