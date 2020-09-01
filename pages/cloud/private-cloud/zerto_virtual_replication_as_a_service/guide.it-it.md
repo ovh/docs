@@ -89,9 +89,9 @@ A operazione completata, verrà inviata un’email con una configurazione dell�
 
 > [!primary]
 > 
-> Gentile Cliente, ti informiamo che il servizio DRP Zerto appena attivato tra le tue 2 soluzioni Private Cloud
-> 
-> è raggiungibile tramite i seguenti indirizzi:
+> Gentile Cliente, 
+>
+> ti informiamo che il servizio DRP Zerto appena attivato tra le tue 2 soluzioni Private Cloud è raggiungibile tramite i seguenti indirizzi:
 >
 > Sito principale:
 > 
