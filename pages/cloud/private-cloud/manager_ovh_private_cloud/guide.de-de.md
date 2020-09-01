@@ -167,7 +167,7 @@ Wenn im vorliegenden Beispiel 50 Benutzer eingeloggt sind und sich ein 51\. Benu
 
 Es ist eine zweite Tabelle für die Option *VM Encryption* verfügbar.
 
-Weitere Informationen zu dieser Option finden Sie in dieser [Anleitung](https://docs.ovh.com/gb/en/private-cloud/vm-encrypt/) (Englisch).
+Weitere Informationen zu dieser Option finden Sie in dieser [Anleitung](../vm-encrypt/).
 
 #### Operationen
 
