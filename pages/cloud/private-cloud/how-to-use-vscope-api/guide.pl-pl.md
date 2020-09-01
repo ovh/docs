@@ -3,6 +3,7 @@ title: 'Jak korzystać z API vScope'
 slug: vscopeapi
 excerpt: 'API vScope pozwala wykorzystywać dane z monitorowania zasobów w aplikacjach'
 section: 'Usługi i opcje OVH'
+order: 1
 ---
 
 **Ostatnia aktualizacja z dnia 25-11-2019**
@@ -17,12 +18,17 @@ Informacje te są dostępne także poprzez APIv6 i API Metrics.
 
 **Niniejszy przewodnik opisuje sposób korzystania z tych API**.
 
+## Wymagania początkowe
+
+- [Infrastructure Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/)
+- Dostęp do interfejsu zarządzania vScope
+
 ## W praktyce
 
 vScope udostępnia dwa rodzaje informacji:
 
 - informacje**w czasie rzeczywistym**, które odpowiadają danym z różnych elementów w danej chwili.
-- wykresy przedstawiające dane historyczne dotyczące wydajności poszczególnych elementów, np. procesora lub pamięci RAM maszyny wirtualnej.
+- wykresy przedstawiające dane historyczne dotyczące wydajności poszczególnych elementów, Przykład: procesora lub pamięci RAM maszyny wirtualnej.
 
 
 ### Zbieranie danych**w czasie rzeczywistym**
@@ -64,7 +70,7 @@ Z API można korzystać dzięki następujących trzem wywołaniom APIv6:
 
 Do zbierania i wykorzystywania danych historycznych (wykresy) wykorzystujemy produkt **Metrics Data Platforms**.
 
-Możesz zbierać dane w formie kropek za pośrednictwem protokołu Opentsdb lub WARP10. Kropki można wykorzystywać w aplikacji lub też wyświetlać je bezpośrednio w zależności od oczekiwanego rezultatu.
+Możesz zbierać dane w formie kropek za pośrednictwem protokołów Opentsdb lub WARP10. Kropki można wykorzystywać w aplikacji lub też wyświetlać je bezpośrednio w zależności od oczekiwanego rezultatu.
 
 
 Niniejszy artykuł przedstawia wykorzystanie protokołu Opentsdb do nieuporządkowanego wyświetlania danych (bez formy graficznej).
@@ -75,7 +81,7 @@ Aby uzyskać token odczytu dla danego użytkownika, należy użyć następujące
 
 > [!api]
 > 
-> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/getVscopeMetricsToken
+> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
 > 
 
 Twój token znajduje się w polu wyników**token**.
