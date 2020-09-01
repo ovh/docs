@@ -7,7 +7,7 @@ legacy_guide_number: 2249
 order: 1
 ---
 
-**Last updated 15th April 2020**
+**Last updated 11th August 2020**
 
 ## Objective
 
@@ -118,11 +118,11 @@ Go to the `Users` tab on your platform then click on `...`{.action} to the right
 
 ![sharepoint](images/order-manage-sharepoint-10.png){.thumbnail}
 
-Click `Confirm`{.action} after confirming that you have an Office 365 licence.
+Click `Confirm`{.action} to validate your existing Office 365 licence.
 
 ![sharepoint](images/order-manage-sharepoint-11.png){.thumbnail}
 
-You can then edit your Office 365 files directly from your sharepoint’s web interface.
+You can then edit your Office 365 files directly from your SharePoint’s web interface.
 
 ## Go further
 
