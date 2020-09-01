@@ -1,403 +1,324 @@
 ---
-title: Implementação da Zerto Virtual Replication para o seu DRP
-slug: zerto-virtual-replication-vmware-vsphere-drp
-excerpt: Saiba como implementar a Zerto Virtual Replication para o seu Plano de Recuperação de Desastres entre dois serviços Private Cloud.
-section: Serviços e opções OVH
+title: 'Configuração de uma VPN para o Zerto DRP OVHcloud'
+slug: zerto-replicacao-virtual-cliente-para-ovhcloud
+excerpt: 'Saiba como configurar uma VPN de modo a ligar uma plataforma Zerto local a uma Private Cloud OVHcloud.'
+section: 'Serviços e opções OVH'
 ---
 
 **Última atualização: 28/08/2020**
 
 ## Objetivo
-
-Este guia explica os conceitos e os pormenores da implementação da Zerto Virtual Replication numa Private Cloud.
-
-**Saiba como implementar a Zerto Virtual Replication para o seu Plano de Recuperação de Desastres (DRP) entre dois serviços Private Cloud.**
+Este guia pretende ajudá-lo a configurar uma rede privada virtual (VPN), a fim de ligar uma plataforma local à sua Hosted Private Cloud OVHcloud e, assim, implementar uma solução de recuperação de desastres
+Zerto.
+De modo a ilustrar o procedimento, vamos utilizar as funcionalidades VPN da OPNSense, que é uma plataforma firewall/VPN open source.
+Para facilitar as explicações, vamos descrever a configuração mais simples de estabelecer um túnel VPN com a rede da interface Zerto Virtual Manager (ZVM). 
 
 ## Requisitos
 
-* Dispor de dois serviços [Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external} em dois datacenters diferentes.
-* Ter, em cada um deles, um endereço IP público livre.
-
-### Conceitos da Zerto Virtual Replication
-
-A Zerto Virtual Replication é uma solução técnica que permite replicar dados entre infraestruturas de virtualização ou cloud. Para isso, recorre aos hipervisores da plataforma ao implementar máquinas virtuais (MV) chamadas Virtual Replication Appliance (VRA), que se encarregam de copiar os dados nas unidades de armazenamento e de os transmitir para um site remoto de modo a serem guardados.
-
-#### Virtual Replication Appliance (VRA)
-
-As VRA, implementadas em cada hipervisor, vão consumir recursos para efetuar a replicação:
-
-* vCPU: 1
-* RAM: 2 GB
-* Armazenamento: 36 GB
-
-Note-se que, relativamente ao armazenamento, a OVHcloud disponibiliza gratuitamente um datastore dedicado para o conjunto das VRA.
-
-#### Sites
-
-A replicação dos dados é feita entre dois sites emparelhados. Dessa forma, as VRA podem estabelecer o tráfego de replicação em ambos os lados.
-
-De forma predefinida, o tráfego de replicação Zerto não se encontra encriptado, mas, como a segurança é uma das prioridades da OVHcloud, implementamos entre os dois sites um túnel encriptado (via IPSec) por meio de uma appliance de rede chamada L2VPN.
-
-#### Grupo de replicação (VPG)
-
-A ativação e o controlo da replicação das MV são feitos através de um grupo de replicação (VPG).
-Este último permite juntar de forma lógica um grupo de MV correspondentes a uma mesma necessidade empresarial ou operacional (por exemplo, uma aplicação com a sua base de dados), a fim de configurar o objetivo máximo de perda de dados admissível (**RPO**), a ordem de inicialização (a base antes da aplicação) e as configurações de rede para os exercícios ou para um caso real. 
-
-Também é possível definir um nível de prioridade entre os VPG, de modo a dar primazia à transferência de dados em caso de problemas em termos de largura de banda de rede.
+- Um endereço de IP público disponível na Private Cloud de destino, para o ponto de conexão VPN.
+- Uma plataforma Zerto instalada e operacional na infraestrutura do cliente.
+- As máquinas de replicação Zerto (VRA: Virtual Replication Appliance), tanto do lado do cliente quanto do lado da OVHcloud, devem poder comunicar-se pelas portas TCP 4007 e 4008.
+- As máquinas de gestão Zerto (ZVM: Zerto Virtual Manager), tanto do lado do cliente quanto do lado da OVHcloud, devem poder comunicar-se pelas portas TCP 9081.
 
 ## Instruções
 
-### Ativar o serviço
+### Apresentação da arquitetura da solução
 
-#### A partir da Área de Cliente OVHcloud
+![Zerto VPN](images/image-EN-1.png)
 
-Na Área de Cliente OVHcloud, aceda à secção `Server` -> `Private Cloud`. > Selecione a plataforma Private Cloud primária. > Selecione
-o datacenter desejado. >E clique no separador `Disaster Recovery Plan (DRP)`{.action}.
+**Definição dos parâmetros da arquitetura:**
 
-![zerto ovh enable](images/zerto_OvhToOvh_enable_01.png){.thumbnail}
+Do lado do cliente:
 
-Escolha **Between two OVH Private Cloud solutions** e clique em `Activate Zerto DRP`{.action}.
+- Endereço público do ponto de conexão VPN (1)
+- Endereço interno do ponto de conexão VPN (2)
+- Endereço interno da ZVM (3)
+- Plano de endereçamento da rede ZVM (4)
 
-![zerto ovh enable](images/zerto_OvhToOvh_enable_02.png){.thumbnail}
+Do lado da OVHcloud:
 
-A seleção da **Private Cloud** primária, bem como do **datacenter**, é feita automaticamente, isto é, com base na infraestrutura pela qual se dá o acesso.
-
-Selecione no menu suspenso um endereço IP público **livre** pertencente ao bloco de IPs públicos associado à **Private Cloud**.  Ele será utilizado na criação do túnel protegido entre as infraestruturas.
-
-Clique em `NEXT`{.action}.
-
-![zerto ovh enable](images/zerto_OvhToOvh_enable_03.png){.thumbnail}
-
-Deve selecionar o site secundário entre as **Private Clouds** presentes no menu suspenso. 
-
-Só se exibem os sites elegíveis. Para o serem, devem responder aos critérios seguintes:
-
-* estar fisicamente noutra localização;
-* não dispor de outra replicação Zerto.
-
-De seguida, selecione no menu suspenso o **datacenter** da **Private Cloud** de destino.
-
-Escolha no menu suspenso um endereço IP público **livre** pertencente ao bloco de IPs públicos associado à **Private Cloud**.  Ele será utilizado na criação do túnel protegido entre as infraestruturas.
-
-Clique em `NEXT`{.action}.
-
-![zerto ovh enable](images/zerto_OvhToOvh_enable_04.png){.thumbnail}
-
-Depois de enviado o pedido de ativação, esta última pode tardar no máximo uma hora, sob condição de as informações fornecidas estarem corretas (sobretudo se o endereço IP já estiver a ser utilizado por uma das máquinas virtuais; se for o caso, a ativação não terá lugar).
-
-![zerto ovh enable](images/zerto_OvhToOvh_enable_05.png){.thumbnail}
-
-Uma vez realizada a ativação, receberá por e-mail uma configuração de instalação, bem como os links de acesso à interface Zerto de cada infraestrutura.
+- Endereço público do ponto de conexão VPN (5)
+- Plano de endereçamento da rede ZVM (6)
+- Endereço da ZVM (7)
 
 > [!primary]
-> Estimado/a Cliente,
-> 
-> Acabou de ativar o serviço Zerto DRP entre duas das suas Private Clouds.
-> 
-> Pode aceder ao site principal pelo seguinte endereço:
-> 
->   * URL        : https://zerto.pcc-192-0-2-1.ovh.com/
-> 
-> Pode aceder ao site secundário pelo seguinte endereço:
-> 
->   * URL        : https://zerto.pcc-192-0-2-2.ovh.com/
-> 
-> Poderá autentificar-se com as suas contas de administrador, à semelhança do que faz com o vSphere.
-> 
+>
+>Deve escolher a rede em que deseja que a OVHcloud implemente a ZVM remota, de modo a evitar interferências com os endereços internos. 
+>
+>Se lhe convier, pode simplesmente aceitar aquela que lhe é sugerida de forma predefinida na interface da Área de Cliente.
+>
 
-#### A partir da API OVHcloud
+### 1.ª etapa: Ativar a função Zerto no sentido Cliente > OVHcloud
 
-### Interface Zerto Replication
+A ativação realiza-se de forma muito simples a partir da Área de Cliente OVHcloud. Comece por selecionar o datacenter associado à Private Cloud e clique no separador `Plano de Recuperação de Desastres (DRP)`{.action}.
 
-A interface encontra-se acessível a partir das duas infraestruturas pelo endereço:
+![Zerto VPN](images/image-EN-2-nucp.png)
 
-* URL : https://zerto.pcc-x-x-x-x.ovh.com/ (a modificar em função das plataformas)
+Escolha a opção `Entre a sua infraestrutura e uma Private Cloud OVH`{.action} e, a seguir, clique em `Ativar Zerto DRP`{.action}.
+
+![Zerto VPN](images/image-EN-3.png)
+
+Selecione um endereço público disponível no intervalo sugerido.
+
+![Zerto VPN](images/image-EN-4.png)
+
+De seguida introduza a rede desejada para a implementação da ZVM.
+
+![zerto vpnzerto vpn](images/image-EN-5.png)
+
+Então, clique em `Instalar`{.action}.
+
+![Zerto VPN](images/image-EN-6.png)
+
+### 2.ª etapa: Ativar o serviço IPSec
+
+A partir da consola OPNSense, aceda ao menu `VPN`{.action} à esquerda. Na rubrica `IPSec`{.action}, selecione `Tunnel Setting`{.action}.
+
+![Zerto VPN](images/image-EN-7.png)
+
+Assinale a opção `Enable IPSec`{.action}.
+
+![Zerto VPN](images/image-EN-8.png)
+
+Guarde clicando em `Save`{.action}.
+
+### 3.ª etapa: Configurar o túnel IPSec
+
+A configuração do túnel é feita segundo dois grupos de parâmetros, chamados **Fase 1** e **Fase 2**.
+
+#### 3.1. Adicionar a Fase 1
+
+No menu `VPN`{.action}, na rubrica `Tunnel Setting`{.action}, clique no sinal `+`{.action} à direita do ecrã.
+
+![Zerto VPN](images/image-EN-9.png)
+
+##### 3.1.1. Fase 1: introdução de informações gerais
+
+![](images/image-EN-10.png)
+
+Pode conservar os valores predefinidos:
+
+- Método de conexão: Default
+- Protocolo de troca de chaves: V2
+- Protocolo Internet: IPV4
+- Interface: WAN
+
+No entanto, é indispensável que informe o IP do ponto de conexão IPSec da OVHcloud, no campo `Remote gateway`{.action}.
+
+##### 3.1.2. Fase 1: autenticação
+
+Mais uma vez, pode conservar os parâmetros predefinidos. Deve apenas introduzir a palavra-passe partilhada no campo `Pre-Shared Key`{.action}.
+
+![Zerto VPN](images/image-EN-11.png)
+
+##### 3.1.3. Fase 1: escolha dos algoritmos de encriptação
+
+![Zerto VPN](images/image-EN-12.png)
+
+Os valores suportados dos parâmetros são os seguintes:
+
+- Algoritmo de encriptação: AES 256 bits
+- Algoritmo de função hash: SHA256
+- Grupo de chaves Diffie-Hellman: 14 (2048 bits)
+- Tempo de vida: 28 800 segundos
+
+Os parâmetros avançados podem conservar os valores predefinidos. Clique em `Save`{.action} e, a seguir, em `Aplicar as alterações`{.action}.
+
+A Fase 1 passa a estar disponível na interface.
+
+![Zerto VPN](images/image-EN-13.png)
+
+#### 3.2. Adicionar a Fase 2
+
+Clique no botão `Exibir as entradas Fase 2`{.action}.
+
+![Zerto VPN](images/image-EN-14.png)
+
+Como não se encontra nenhuma Fase 2 disponível, é necessário adicionar uma:
+
+![Zerto VPN](images/image-EN-15.png)
+
+Clique no botão `+`{.action}.
+
+![Zerto VPN](images/image-EN-16.png)
+
+##### 3.2.1. Fase 2: Informações gerais
+
+![Zerto VPN](images/image-EN-17.png)
+
+Verifique se o modo se encontra em «Túnel IPV4».
+
+##### 3.2.2. Fase 2: Rede local
+
+![Zerto VPN](images/image-EN-18.png)
+
+O tipo de rede local selecionado deve ser «Sub-rede local».
+
+##### 3.2.3. Fase 2: Rede remota
+
+Neste ponto, é preciso introduzir o plano de endereçamento da rede em que se encontra a ZVM OVHcloud. 
+
+A rede deverá ser /23 (512 endereços IP).
 
 > [!warning]
 >
-> Como indicado no corpo do e-mail, os dados de acesso são os mesmos que utiliza para aceder à interface vSphere.
+> Tenha cuidado: se cometer algum erro neste passo, a VPN não vai funcionar. 
 >
 
-Depois de se identificar, chegará a um ecrã com o painel de controlo:
+![Zerto VPN](images/image-EN-19.png)
 
-![Zerto Dashboard](images/zerto_OvhToOvh_int_01.png){.thumbnail}
+##### 3.2.4. Fase 2: Trocas de chaves
 
-Neste ecrã, vai encontrar:
+Os parâmetros suportados são:
 
-* um panorama do estado de saúde dos VPG;
-* o estado global da Zerto Replication, com quatro indicadores;
-* um quadro com os dados de desempenho da Zerto Replication;
-* um panorama do estado dos VPG;
-* uma lista dos últimos alertas, ações e acontecimentos relativos à Zerto Replication.
+- Protocolo: ESP
+- Algoritmo de encriptação: AES 256 bits
+- Algoritmos de função hash: SHA256
+- PFS: Off
 
-### Configurar um grupo de replicação (VPG)
+![Zerto VPN](images/image-EN-20.png)
 
-No menu `Ações`{.action}, escolha `Create VPG`{.action}.
+Não é necessário alterar as opções avançadas. Clique em `Save`{.action} e, a seguir, em `Aplicar as alterações`{.action}.
 
-![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_01.png){.thumbnail}
+#### 3.3. Verificação do estado da VPN
 
-![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_02.png){.thumbnail}
+![Zerto VPN](images/image-EN-21.png)
 
-No primeiro ecrã:
+Clique no triângulo laranja à direita para iniciar a conexão.
 
-* Introduza um nome para o VPG, idealmente com um sentido operacional.
-* Salvo necessidades especiais, a prioridade definida em **Medium** deve ser mantida.
+![Zerto VPN](images/image-EN-22.png)
 
-Para avançar, clique em `NEXT`{.action}.
+Se os parâmetros estiverem corretos, o túnel é estabelecido. Surgem então dois ícones novos:
 
-![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_03.png){.thumbnail}
+- Desativar o túnel
+- Obter informações sobre o estado do túnel
 
-A etapa seguinte consiste em selecionar as MV que vão fazer parte do VPG.
+![Zerto VPN](images/image-EN-23.png)
 
-> [!warning]
->
-> Uma MV não pode estar em vários VPG.
-> 
+Clique no ícone de informações.
 
-* Filtre as MV por nome através do campo **Search**.
-* Assinale as caixas à esquerda das MV correspondentes.
+![Zerto VPN](images/image-EN-24.png)
 
-![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_04.png){.thumbnail}
+O túnel passa a estar operacional. Não se esqueça de adicionar, se necessário, uma rota na ZVM local para a rede da ZVM OVHcloud.
 
-* Clique na seta a apontar para a direita para as passar para o VPG.
+**Em caso de problemas:**
 
-Para avançar, clique em `NEXT`{.action}.
+Se o túnel não se estabelecer, verifique a correção dos parâmetros seguintes:
 
-![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_05.png){.thumbnail}
+- a chave partilhada;
+- o IP do ponto de conexão remoto;
+- o intervalo de IPs da rede remota.
 
-A seguir vem a etapa da seleção do site remoto:
+Verifique também se o tráfego entre os dois extremos da VPN está a ser bloqueado por uma firewall.
 
-* **Recovery Site**: escolha na lista o site remoto (o que não se chame «Local»). 
-* **ZORG**: escolha na lista **No Organization**. Outras escolhas provocarão um erro no momento de passar à fase seguinte.
+Pode igualmente consultar o ficheiro de registo IPSec em /var/log/ipsec.log.
 
-Depois é preciso definir os recursos remotos:
+### 4.ª etapa: Configuração da firewall
 
-* **Hosts**: Selecione o recurso de cálculo, que pode ser um **Host específico** (indicado pelo seu endereço IP e precedido do nome do cluster entre aspas, conforme os casos), uma **Ressource Pool** (com as letras «RP» seguidas do nome do cluster e do nome da Ressource Pool) ou um **Cluster** (através do seu nome). Só pode escolher uma **Ressource Pool** ou um **Cluster** (aqui, Cluster1).
-* **Datastore**: Escolha o recurso de armazenamento, que pode ser um **Datastore específico** (indicado pelo seu nome e precedido do nome do **Storage Cluster** entre aspas, conforme os casos) ou um **Storage Cluster** (através do seu nome).
+O emparelhamento da infraestrutura do cliente com a da OVHcloud requer a autorização do tráfego entre:
 
-Deixe os outros campos como estão, a menos que tenha necessidades avançadas.
+- a porta 9081 e as ZVM;
+- as portas 4007/4008 e as vRA.
 
-Para avançar, clique em `NEXT`{.action}.
+#### 4.1. Abertura de portas em ZVM
 
-![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_06.png){.thumbnail}
+Aceda ao menu `Firewall`{.action}, secção `Rules`{.action}, e selecione `IPSec`{.action}.
 
-Na etapa seguinte, é possível afinar a configuração de armazenamento.
+![Zerto VPN](images/image-EN-25.png)
 
-Deixe os outros campos como estão, a menos que tenha necessidades avançadas.
+Clique em `Add`{.action} para criar uma nova regra.
 
-Para avançar, clique em `NEXT`{.action}.
+![Zerto VPN](images/image-EN-26.png)
 
-![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_07.png){.thumbnail}
+![Zerto VPN](images/image-EN-27.png)
 
-Então chega uma parte importante: a primeira etapa da configuração de rede.
+Esta regra comporta os parâmetros seguintes:
 
-* **Failover/Move Network**: escolha o portgroup predefinido para o failover.
-* **Failover Test Network**: escolha o portgroup para os testes de failover.
-* **Recovery Folder**: escolha a pasta (ou então «/», a raiz) à qual serão adicionadas as MV em failover para o site.
+- Ação: «Pass» (Autorizar o tráfego)
+- Interface: «IPSec» (O tráfego de entrada a autorizar provém da VPN)
+- Protocolo: «TCP»
 
-> [!primary]
-> As opções **Pre-recovery Script** e **Post-recovery Script** não são utilizáveis.
-> 
+As secções Source e Destination são do tipo «Single host or Network» e fazem referência, respetivamente, aos endereços IP da ZVM OVHcloud para a ZVM do cliente.
 
-Para avançar, clique em `NEXT`{.action}.
+![Zerto VPN](images/image-EN-28.png)
 
-![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_08.png){.thumbnail}
+A porta TCP de destino autorizada é a 9081.
 
-Chega a segunda etapa da configuração de rede:
+Guarde a regra e aplique-a.
 
-* Para cada MV, vai poder escolher o portgroup para os testes ou o failover.
-* Também será possível alterar a configuração IP das MV relativamente a cada um dos casos.
+#### 4.2. Abertura de portas em vRA 
 
-![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_09.png){.thumbnail}
+A abertura de portas em vRA é um pouco mais complexa, visto que há tantas vRA quanto ESXi, tanto do lado do cliente quanto do lado da OVHcloud. 
 
-> [!warning]
->
-> A modificação de IP só é possível em MV com um sistema operativo compatível e nas que tenham as **VMware Tools** em funcionamento.
-> 
+Todas elas devem poder comunicar-se pelas portas TCP 4007 e 4008. 
 
-Para avançar, clique em `NEXT`{.action}.
+Para simplificar este tipo de situações, a OPNSense disponibiliza os alias. Um alias é um grupo de objetos (endereços IP, redes, URL, etc.) que pode ser utilizado na definição de regras de uma firewall.
 
-![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_10.png){.thumbnail}
+Neste caso, vamos precisar de 3 alias:
 
-Para avançar, clique em `NEXT`{.action}.
+- um para os endereços IP das vRA do lado do cliente;
+- um para os endereços IP das vRA do lado da OVHcloud;
+- um para as portas a autorizar.
 
-![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_11.png){.thumbnail}
+O IP das vRA do lado da OVHcloud pode ser consultado na interface vSphere da Private Cloud de destino:
 
-No último ecrã, encontrará uma recapitulação do conjunto dos elementos configurados.
+![Zerto VPN](images/image-EN-29.png)
 
-Depois de os verificar, valide a criação clicando em `DONE`{.action}.
+Crie o alias OVH_VRA para os vRA do lado da OVHcloud:
 
-![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_13.png){.thumbnail}
+![Zerto VPN](images/image-EN-30.png)
 
-Na lista vai encontrar o VPG recém-criado, bem como o seu estado (que começa por ser **Initializing**).
+Da mesma forma, é preciso criar um alias para as máquinas do lado do cliente:
 
-### Lançar um exercício de recuperação de desastres 
+![Zerto VPN](images/image-EN-31.png)
 
-Depois de ter configurado a replicação e de ter deixado esta última realizar-se ao longo de vários dias, pode testar se o DRP funciona corretamente com as ações geridas pela Zerto Replication.
+Já só resta criar o alias para as portas:
 
-> [!warning]
->
-> O teste de failover na Zerto Replication realiza-se **sem** corte do site principal. Assim, é muito importante configurar adequadamente as redes de teste, a fim de evitar conflitos de endereçamento IP e impactos sobre a produção durante o exercício.
->
-> Os recursos a serem inicializados no site secundário pelo teste não devem ser modificados nem eliminados manualmente. O conjunto do teste será desmantelado pela Zerto Replication no final da operação.
->
-> Tenha em mente que, durante um teste, a replicação continua a realizar-se entre os dois sites.
->
+![Zerto VPN](images/image-EN-32.png)
 
-![Zerto Test Failover](images/zerto_OvhToOvh_test_00.png){.thumbnail}
+Agora dispõe de todos os elementos para criar as regras de firewall a fim de autorizar o tráfego proveniente da OVHcloud em direção à plataforma do cliente. O procedimento é o mesmo; basta utilizar os alias na configuração:
 
-Para isso, aceda à interface Zerto Replication e clique em `FAILOVER`{.action} (o seletor à esquerda aparece de forma predefinida em **TEST**).
+![Zerto VPN](images/image-EN-33.png)
 
-Se o texto do botão estiver a cinzento, isso significa que não há um VPG elegível para o teste (é possível que a inicialização ainda não se tenha concluído).
+Neste ponto, a conexão VPN está operacional e protegida.
 
-![Zerto Test Failover](images/zerto_OvhToOvh_test_01.png){.thumbnail}
+![Zerto VPN](images/image-EN-34.png)
 
-De imediato, surgirá um ecrã com os VPG disponíveis, o sentido de replicação, o site de destino e a correção do nível de proteção (**Meeting SLA**).
+### 5.ª etapa: Emparelhamento das ZVM
 
-Nesse ponto, terá as seguintes opções:
+Depois de a ZVM se encontrar instalada na infraestrutura do cliente, já pode aceder à interface Zerto. 
 
-1. Assinale a caixa para selecionar o VPG e, portanto, o conjunto das suas MV para realizar o teste.
-2. Clique no ícone à direita do nome do VPG para exibir a lista das MV do VPG. De seguida, poderá escolher as MV do VPG que vão fazer parte do teste.
+Aparecerá a seguinte janela:
 
-Valide e passe à etapa seguinte clicando em `NEXT`{.action}.
+![Zerto VPN](images/image-EN-35.png)
 
-![Zerto Test Failover](images/zerto_OvhToOvh_test_02.png){.thumbnail}
+Escolha a opção `Pair to a site with a licence`{.action} e introduza o endereço IP da ZVM do lado da OVHcloud; de seguida, clique em `Start`{.action}.
 
-O nosso exemplo baseia-se na primeira opção, isto é, o teste de um VPG.
+No painel de controlo, encontrará uma mensagem a indicar que o emparelhamento está em curso.
 
-Neste ponto, encontrará um resumo das ações ligadas ao VPG:
+![Zerto VPN](images/image-EN-36.png)
 
-* Sentido de replicação
-* Site remoto
-* Se foi definida uma sequência de inicialização
-* Se estão presentes scripts Pre ou Post Failover (funcionalidade indisponível)
+Se a operação for concluída com sucesso, receberá a seguinte mensagem:
 
-Para avançar, clique em `NEXT`{.action}.
+![Zerto VPN](images/image-EN-37.png)
 
-![Zerto Test Failover](images/zerto_OvhToOvh_test_03.png){.thumbnail}
+Verifique se o nome da sua Private Cloud OVHcloud aparece no separador `Sites`{.action}.
 
-Aparecerá um último ecrã de recapitulação, com um panorama dos diferentes sites e o número de VPG para o teste.
+![Zerto VPN](images/image-EN-38.png)
 
-Confirme o início do teste clicando em `START FAILOVER TEST`{.action}.
+Neste ponto, a solução Zerto encontra-se operacional, pelo que pode criar os seus grupos de proteção virtuais (VPG).
 
-O teste de failover tem início imediatamente, com as ações sobre o vCenter do site remoto.
+#### **Diagnóstico:**
 
-Agora já só resta controlar o normal funcionamento do site remoto.
+Se for impossível estabelecer a comunicação entre as ZVM (nomeadamente em caso de omissão ao nível das regras da firewall), receberá a seguinte mensagem:
 
-![Zerto Test Failover](images/zerto_OvhToOvh_test_05.png){.thumbnail}
+![Zerto VPN](images/image-EN-39.png)
 
-Quando tiver acabado de verificar as máquinas sujeitas a failover, clique no quadrado vermelho à direita de **Testing Failover**.
+De seguida, será conduzido ao ecrã de conexão da ZVM através desta mensagem de erro:
 
-![Zerto Test Failover](images/zerto_OvhToOvh_test_06.png){.thumbnail}
+![Zerto VPN](images/image-EN-40.png)
 
-A janela que se abrir vai indicar se o teste foi bem-sucedido e sugerir que adicione um comentário.
-
-Confirme o fim do teste clicando em `STOP`{.action}.
-
-O desmantelamento do teste é iniciado de imediato, com as ações sobre o vCenter do site remoto.
-
-### Executar uma Recuperação de Desastres
-
-Na eventualidade de um incidente grave no site principal, ou no quadro de um exercício em condições reais, a execução do failover realiza-se logicamente a partir do site secundário (de recuperação).
-
-> [!warning]
->
-> Na Zerto Replication, o failover em modo **LIVE** é feito com base no princípio de que o site principal se encontra indisponível. Assim, é importante verificar a configuração de rede de modo a evitar, por exemplo, conflitos de endereçamento IP.
->
-> Os recursos inicializados no site secundário vão ativar-se ao nível do tratamento de dados.
->
-> Atenção: a replicação entre os dois sites será modificada ou interrompida (ver mais adiante).
->
-
-![Zerto Live Failover](images/zerto_OvhToOvh_live_02.png){.thumbnail}
-
-Aceda à interface Zerto Replication, altere o seletor em baixo à direita para **LIVE** (a cor vai alterar-se e indicar que se vão realizar ações de grande impacto) e clique em `FAILOVER`{.action}.
-
-![Zerto Live Failover](images/zerto_OvhToOvh_live_03.png){.thumbnail}
-
-De imediato, surgirá um ecrã com os VPG disponíveis, o sentido de replicação, o site de destino e a correção do nível de proteção (**Meeting SLA**).
-
-Terá duas escolhas:
-
-1. Assinalar a caixa para selecionar o VPG e, portanto, o conjunto das suas MV para realizar o failover.
-2. Clicar no ícone à direita do nome do VPG para exibir a lista das MV do VPG. De seguida, poderá escolher as MV do VPG que vão fazer parte do failover.
-
-Valide e passe à etapa seguinte clicando em `NEXT`{.action}.
-
-![Zerto Live Failover](images/zerto_OvhToOvh_live_04.png){.thumbnail}
-
-Como exemplo, selecionámos a primeira opção, o teste num VPG.
-
-Neste ponto, encontrará um resumo das ações ligadas ao VPG:
-
-* O sentido de replicação.
-* O site remoto.
-* O **Checkpoint**: data em que os dados serão restaurados. A distância entre o ponto escolhido e a data atual vai determinar o **RPO**.
-* A **Commit Policy**: ver mais à frente.
-* O **VM Shutdown**: determina o comportamento a adotar no site primário - deixar as MV em funcionamento, desativá-las ou desativá-las à força.
-* A **Reverse Protection**: indica se a replicação do VPG deve ser configurada em sentido inverso no final do failover, a fim de eventualmente se proceder ao failback.
-* Se foi definida uma sequência de inicialização
-* Se estão presentes scripts Pre ou Post Failover (funcionalidade indisponível)
-
-![Zerto Live Failover](images/zerto_OvhToOvh_live_05.png){.thumbnail}
-
-Ao nível da **Commit Policy**, dispõe de três opções:
-
-* Auto-Rollback: sem ação da sua parte, o processo de reversão das alterações é desencadeado ao fim do tempo previsto.
-* Auto-Commit: sem ação da sua parte, a validação dos dados na plataforma secundária é desencadeada ao fim do tempo previsto (deixa de ser possível voltar simplesmente à plataforma principal).
-* None: as ações de **Rollback** ou de **Commit** devem ser validadas por si.
-
-![Zerto Live Failover](images/zerto_OvhToOvh_live_06.png){.thumbnail}
-
-Ao nível das opções **Auto**, a temporização predefinida é de 60 minutos.
-
-Para avançar, clique em `NEXT`{.action}.
-
-![Zerto Live Failover](images/zerto_OvhToOvh_live_07.png){.thumbnail}
-
-O último ecrã apresenta uma recapitulação, com um panorama dos diferentes sites e o número de VPG para o failover.
-
-> [!warning]
->
-> Recomendamos-lhe que leia atentamente o resumo e as advertências.
->
-
-Lance o failover clicando em `START FAILOVER`{.action}.
-
-![Zerto Live Failover](images/zerto_OvhToOvh_live_08.png){.thumbnail}
-
-Se tiver escolhido uma **Commit Policy** de tipo **Auto**, uma mensagem de aviso vai chamar-lhe a atenção para o impacto resultante.
-
-Confirme a operação clicando em `START FAILOVER`{.action}.
-
-O failover tem início imediatamente, com as ações sobre o vCenter do site remoto.
-
-Agora já só resta controlar o normal funcionamento do site remoto.
-
-![Zerto Live Failover](images/zerto_OvhToOvh_live_10.png){.thumbnail}
-
-Depois de lançado o failover, encontrará um alerta na interface Zerto Replication.
-Esse alerta está associado à **Commit Policy** e não desaparecerá enquanto o commit não for confirmado ou anulado.
-
-Tais ações devem ser realizadas através dos ícones à direita do VPG.
-
-![Zerto Live Failover](images/zerto_OvhToOvh_live_11.png){.thumbnail}
-
-Quando validar o commit, pode configurar automaticamente o VPG em sentido inverso (**Reverse Protection**).
-
-Para avançar, clique em `COMMIT`{.action}.
-
-![Zerto Live Failover](images/zerto_OvhToOvh_live_13.png){.thumbnail}
-
-Ao nível do VPG, reparará pela seta que a direção de replicação foi alterada.
-
-### Preparar e executar uma reversão
-
-Em função da forma como o failover foi realizado, o eventual regresso ao site principal (não obrigatório) pode exigir várias ações.
-
-Se o failover foi feito com a **Reverse Protection**, o processo de reversão consiste em executar um **Failover Live** (consultar a secção correspondente para ver as ações necessárias).
-
-Se o failover foi feito **sem** a **Reverse Protection**, o processo de reversão consiste em criar um VPG e **depois** executar um **Failover Live** (consultar as secções anteriores  para ver as ações necessárias).
+A causa mais provável é que a ZVM OVHcloud não consegue comunicar com a ZVM cliente pela porta TCP 9081. É necessário que se estabeleça a conexão.
 
 ## Quer saber mais?
 
