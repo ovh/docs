@@ -32,11 +32,11 @@ Es öffnet sich ein Fenster. Wählen Sie in seinem Drop-down-Menü zwischen „O
 
 > [!primary]
 >
-> Wenn Sie „Eingeschränkt“ gewählt haben, ziehen Sie die Anleitung [„Die Verbindung von IPs mit dem vCenter erlauben“](../die-verbindung-von-ips-mit-dem-vcenter-erlauben/) zu Rate.
+> Wenn Sie „Eingeschränkt“ gewählt haben, ziehen Sie die Anleitung [„Die Verbindung von IPs mit dem vCenter erlauben“](../verbindung-von-ip-zum-vcenter-erlauben/) zu Rate.
 > 
 
 ## Weiterführende Informationen
 
-[Die Verbindung von IPs mit dem vCenter erlauben](../die-verbindung-von-ips-mit-dem-vcenter-erlauben/)
+[Die Verbindung von IPs mit dem vCenter erlauben](../verbindung-von-ip-zum-vcenter-erlauben/)
 
 Für den Austausch mit unserer User-Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
