@@ -7,7 +7,7 @@ legacy_guide_number: 2249
 order: 1
 ---
 
-**Last updated 15th April 2020**
+**Last updated 11th August 2020**
 
 ## Objective
 
@@ -107,6 +107,22 @@ By default, an account with a licence does not have administrator rights. To ena
 On both types of SharePoint service, there is a `Restore administrator rights`{.action} button in the `Users` tab. This allows you to re-establish a user’s administrator rights on the platform if they have been wrongly configured in the SharePoint interface.
 
 ![sharepoint](images/order-manage-sharepoint-09.png){.thumbnail}
+
+#### **Edit Office 365 files online**
+
+You can directly edit Office 365 files online, such as a *.docx* or *.xls* file.
+
+To do this, you need to have a valid Office 365 licence, and confirm this in your OVHcloud Control Panel.
+
+Go to the `Users` tab on your platform then click on `...`{.action} to the right of the account, then `Add an Office licence`{.action}.
+
+![sharepoint](images/order-manage-sharepoint-10.png){.thumbnail}
+
+Click `Confirm`{.action} to validate your existing Office 365 licence.
+
+![sharepoint](images/order-manage-sharepoint-11.png){.thumbnail}
+
+You can then edit your Office 365 files directly from your SharePoint’s web interface.
 
 ## Go further
 
