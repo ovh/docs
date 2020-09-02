@@ -12,7 +12,7 @@ order: 04
 
 VMware oferuje 3 formaty dysków dla maszyn wirtualnych.
 
-\** Ten przewodnik wyjaśnia różnice między tymi formatami \*\*
+**Ten przewodnik wyjaśnia różnice między tymi formatami**
 
 ## W praktyce
 
@@ -70,4 +70,4 @@ W przypadku przestrzeni vSan dostępne są wszystkie trzy rodzaje formatów dysk
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
