@@ -46,9 +46,9 @@ Legen Sie den Speicherort (Festplattenspeicherplatz) dieser VM fest.
 
 Das Format der virtuellen Festplatte ist „Thin Provision“. Das bedeutet, dass eine virtuelle Festplatte erstellt wird, diese aber den wirklich verwendeten Speicherplatz einnimmt, ungeachtet des Speicherplatzes, den vorher die ursprüngliche VM eingenommen hat. 
 
-Weitere Erklärungen zu Festplattenformaten finden Sie in [dieser Anleitung](https://docs.ovh.com/gb/en/private-cloud/choosing-disk-type/){.external-link}.
+Weitere Erklärungen zu Festplattenformaten finden Sie in [dieser Anleitung](../die-wahl-des-festplattenformats/).
 
-In der Reihe `VM Storage Policy` können Sie die Standardeinstellung für das Speichern wählen, wenn Sie Datastores haben. Wenn Sie [vSAN](https://docs.ovh.com/de/private-cloud/vmware-vsan/){.external-link} Hosts oder die Option [VM encryption](../vm-encrypt/){.external-link} verwenden, können Sie eine nutzerdefinierte Speicherweise wählen.
+In der Reihe `VM Storage Policy` können Sie die Standardeinstellung für das Speichern wählen, wenn Sie Datastores haben. Wenn Sie [vSAN](https://docs.ovh.com/de/private-cloud/vmware-vsan/) Hosts oder die Option [VM encryption](../vm-encrypt/) verwenden, können Sie eine nutzerdefinierte Speicherweise wählen.
 
 ![VM Storage](images/clonevm04.png){.thumbnail}
 
