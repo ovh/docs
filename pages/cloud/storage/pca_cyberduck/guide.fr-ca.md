@@ -19,7 +19,7 @@ D'autres interfaces sont elles aussi disponibles et trouvables directement sur I
 
 ## Prérequis
 
-- Un utilisateur Horizon configuré : voir le [guide](../../public-cloud/creation-et-suppression-dun-utilisateur-openstack/)
+- Un utilisateur Horizon configuré : voir le [guide](https://docs.ovh.com/ca/fr/public-cloud/creer-un-acces-a-horizon/)
 - Le Tenant identifiant de votre project, l'identifiant utilisateur. Cette information est récupérable en naviguant dans un conteneur dans l’espace client
 - Le mot de passe de votre utilisateur
 

@@ -19,7 +19,7 @@ W Internecie można odnaleźć inne interfejsy. Konfiguracja jest podobna do tej
 
 ## Wymagania
 
-- Skonfigurowany użytkownik Horizon:  sprawdź [przewodnik](../../public-cloud/tworzenie_dostepu_do_interfejsu_horizon/){.external}
+- Skonfigurowany użytkownik Horizon:  sprawdź [przewodnik](https://docs.ovh.com/pl/public-cloud/tworzenie_dostepu_do_interfejsu_horizon/){.external}
 - ID Twojego projektu i Twojego użytkownika widoczny w menu Access & Security w interfejsie Horizon.
 
 
