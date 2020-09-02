@@ -1,7 +1,7 @@
 ---
 title: FAQ
 excerpt: Domande più frequenti sugli hosting web OVHcloud
-slug: faq-hebergement
+slug: faq-hosting-web
 section: Per iniziare
 ---
 
