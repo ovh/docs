@@ -18,7 +18,7 @@ Other interfaces can be found on the Internet and configuration is similar to th
 
 
 ## Requirements
-- A configured Horizon user :  view [guide](../../public-cloud/configure_user_access_to_horizon/)
+- A configured Horizon user :  view [guide](https://docs.ovh.com/au/en/public-cloud/configure_user_access_to_horizon/)
 - The Tenant ID of your project and your user ID, viewable in the downloadable OpenRC file.
 - The password of your user.
 

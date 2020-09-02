@@ -46,9 +46,9 @@ Indique la localización del almacenamiento (espacio en disco) de esta MV.
 
 El formato de disco virtual es de tipo «Thin Provision»: se creará un disco virtual, pero solo utilizará el espacio en disco usado realmente en el almacenamiento, independientemente del espacio en disco que se haya utilizado anteriormente en la MV de origen.
 
-Para más información, consulte esta [guía](../elegir-un-formato-de-disco/){.external-link}.
+Para más información, consulte esta [guía](https://docs.ovh.com/gb/en/private-cloud/choosing-disk-type/).
 
-A través de `VM Storage Policy`, podrá elegir la política de almacenamiento predefinida si dispone de datastores, o una política personalizada si dispone de hosts [vSAN](../vmware-vsan/){.external-link} o de la opción [VM Encryption](../vm-encrypt/){.external-link}.
+A través de `VM Storage Policy`, podrá elegir la política de almacenamiento predefinida si dispone de datastores, o una política personalizada si dispone de hosts [vSAN](../vmware-vsan/) o de la opción [VM Encryption](../vm-encrypt/).
 
 ![Almacenamiento MV](images/clonevm04.png){.thumbnail}
 
