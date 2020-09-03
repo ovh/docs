@@ -11,11 +11,11 @@ A **job** in **AI Training powered by \$partner\_full** is the workload
 unit submitted to the cluster. A job runs as a docker container within
 OVHcloud infrastructure.
 
-Each job is linked to a **public cloud** project and specifies an amount
-of ressources to use to run the training task along with a docker image
+Each job is linked to a **Public Cloud** project and specifies an amount
+of resources to use to run the training task along with a docker image
 either publicly available, in the **AI Training** shared registry scoped
 to your project or the private registry of your choosing that you
-attached, see [OVHcloud documentation on how to attach a private
+attached. For the latter, see [OVHcloud documentation on how to attach a private
 registry](../attach-private-registry).
 
 ## Considerations
@@ -25,14 +25,14 @@ registry](../attach-private-registry).
 > interruption.
 
 -   [Data](../data) can be attached to a job to serve either/both as
-    input for your training workload or output (e.g. model weights)
--   The minimum resource requirement for a job is 1 GPU, if you do not
-    customize you GPU ressource request the default requested is 1. CPU
+    input for your training workload or output (e.g. model weights).
+-   The minimum resource requirement for a job is 1 GPU. If you do not
+    customize you GPU ressource request, the default requested is 1. CPU
     and Memory resources are not customizable.
 -   Billing for **jobs** is minute based and starts at job
     initialization until completion. Each started minute is billed
     completely.
--   You can read further on job limitations [here](../capabilities)
+-   You can read further on job limitations [here](../capabilities).
 
 ## Under the hood
 
