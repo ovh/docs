@@ -34,8 +34,8 @@ order: 0
 
 ## Storage
 
-There are two kind of storage within **AI Training**, a persistent one
-based on the OVHcloud Object Storage and a cache one for the job
+There are two kinds of storage within **AI Training**, a persistent one
+based on the OVHcloud Object Storage and a cache, non-persistent for the job
 executions.
 
 There is no guarantee for the data stored in the cache storage (no
