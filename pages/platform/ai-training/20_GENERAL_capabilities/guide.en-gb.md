@@ -34,8 +34,7 @@ order: 0
 
 ### Storage
 
-There are two kinds of storage within **AI Training**, a persistent one based on the OVHcloud Object Storage and a cache, non-persistent one for the job
-executions.
+There are two kinds of storage within **AI Training**, a persistent one based on the OVHcloud Object Storage and a cache, non-persistent one for the job execution.
 
 There is no guarantee for the data stored in the cache storage (no backups) and we reserve the right to delete any data unused for an extended period of time (about 7 days).
 
