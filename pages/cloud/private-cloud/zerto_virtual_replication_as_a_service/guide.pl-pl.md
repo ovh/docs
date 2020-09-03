@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja Zerto Virtual Replication w DRP
 slug: zerto-virtual-replication-vmware-vsphere-drp
-excerpt: Dowiedz się, jak skonfigurować Zerto Virtual Replication w planie awaryjnym w dwóch ofertach Private Cloud.
+excerpt: Dowiedz się, jak skonfigurować Zerto Virtual Replication w planie awaryjnym w dwóch ofertach Private Cloud
 section: Usługi i opcje OVH
 ---
 
