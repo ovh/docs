@@ -15,8 +15,8 @@ Niniejszy przewodnik wyjaśnia, w jaki sposób skonfigurować Zerto Virtual Repl
 
 ## Wymagania początkowe
 
-* Posiadanie dwóch ofert [Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external} w dwóch różnych lokalizacjach
-* Posiadanie wolnego publicznego adresu IP w przypadku każdej z nich
+- Posiadanie dwóch ofert [Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external} w dwóch różnych lokalizacjach
+- Posiadanie wolnego publicznego adresu IP w przypadku każdej z nich
 
 ### Koncepcja Zerto Virtual Replication
 
@@ -26,9 +26,9 @@ Zerto Virtual Replication jest technicznym rozwiązaniem umożliwiającym skonfi
 
 W ten sposób VRA są wdrażane na każdym hipernadzorcy i zużywają zasoby do wykonywania replikacji:
 
-* vCPU: 1
-* RAM: 2 GB
-* Przestrzeń dyskowa: 36 GB
+- vCPU: 1
+- RAM: 2 GB
+- Przestrzeń dyskowa: 36 GB
 
 Do przestrzeni dyskowej OVHcloud dodaje bezpłatny dedykowany magazyn danych dla wszystkich VRA.
 
@@ -72,8 +72,8 @@ Dodatkowa lokalizacja jest wybierana spośród Twoich infrastruktur **Private Cl
 
 Należy pamiętać, że widoczne są tylko kwalifikujące się infrastruktury. W tym celu muszą one spełniać następujące kryteria:
 
-* fizyczna obecność w innej lokalizacji,
-* brak już wdrożonej replikacji Zerto.
+- fizyczna obecność w innej lokalizacji,
+- brak już wdrożonej replikacji Zerto.
 
 Następnie z menu rozwijanego wybierz **centrum danych** docelowej infrastruktury **Private Cloud**.
 
@@ -96,11 +96,11 @@ Po aktywacji otrzymasz wiadomość e-mail z konfiguracją systemu i linki dostę
 > 
 > Możesz zalogować się do lokalizacji głównej pod następującym adresem:
 > 
->   * URL        : https://zerto.pcc-192-0-2-1.ovh.com/
+>   - URL        : https://zerto.pcc-192-0-2-1.ovh.com/
 > 
 > Możesz zalogować się do lokalizacji dodatkowej pod następującym adresem:
 > 
->   * URL        : https://zerto.pcc-192-0-2-2.ovh.com/
+>   - URL        : https://zerto.pcc-192-0-2-2.ovh.com/
 > 
 > Do uwierzytelnienia możesz użyć swoich kont administratora, tak samo jak w przypadku interfejsu vSphere.
 > 
@@ -111,7 +111,7 @@ Po aktywacji otrzymasz wiadomość e-mail z konfiguracją systemu i linki dostę
 
 Interfejs jest dostępny z dwóch (2) infrastruktur pod adresem:
 
-* URL: https://zerto.pcc-x-x-x-x.ovh.com/ (do zmiany w zależności od platformy)
+- URL: https://zerto.pcc-x-x-x-x.ovh.com/ (do zmiany w zależności od platformy)
 
 > [!warning]
 >
@@ -124,11 +124,11 @@ Po zalogowaniu zobaczysz ekran z dashboardem:
 
 Na tym ekranie znajdują się następujące elementy:
 
-* graficzne podsumowanie kondycji VPG,
-* globalny status Zerto Replication z czterema wskaźnikami,
-* tabela wyników Zerto Replication,
-* graficzne podsumowanie statusów wszystkich VPG,
-* lista ostatnich alertów, działań i zdarzeń Zerto Replication.
+- graficzne podsumowanie kondycji VPG,
+- globalny status Zerto Replication z czterema wskaźnikami,
+- tabela wyników Zerto Replication,
+- graficzne podsumowanie statusów wszystkich VPG,
+- lista ostatnich alertów, działań i zdarzeń Zerto Replication.
 
 ### Konfigurowanie grupy replikacji (VPG)
 
@@ -140,8 +140,8 @@ W menu `Actions`{.action} wybierz `Create VPG`{.action}.
 
 Na pierwszym ekranie:
 
-* Wprowadź nazwę VPG, najlepiej wskazującą na kontekst operacyjny.
-* Jeśli nie ma szczególnej potrzeby, można pozostawić ustawiony priorytet na **Medium**.
+- Wprowadź nazwę VPG, najlepiej wskazującą na kontekst operacyjny.
+- Jeśli nie ma szczególnej potrzeby, można pozostawić ustawiony priorytet na **Medium**.
 
 Kliknij `NEXT`{.action}, aby kontynuować.
 
@@ -154,12 +154,12 @@ W kolejnym etapie należy wybrać VM, które będą należeć do VPG.
 > Jedna VM nie może należeć do kilku VPG.
 > 
 
-* Wyfiltruj VM według nazwy w polu **Search**
-* Zaznacz pola po lewej stronie odpowiednich VM
+- Wyfiltruj VM według nazwy w polu **Search**
+- Zaznacz pola po lewej stronie odpowiednich VM
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_04.png){.thumbnail}
 
-* Kliknij strzałkę skierowaną w prawą stronę, aby umieścić VM w VPG
+- Kliknij strzałkę skierowaną w prawą stronę, aby umieścić VM w VPG
 
 Kliknij `NEXT`{.action}, aby kontynuować.
 
@@ -167,13 +167,13 @@ Kliknij `NEXT`{.action}, aby kontynuować.
 
 Następnie przechodzimy do etapu wyboru lokalizacji zdalnej:
 
-* **Recovery Site**\: z listy wybierz lokalizację zdalną (inną niż lokalna). 
-* **ZORG**\: z listy wybierz **No Organization**. Każda inna wartość spowoduje wyświetlenie błędu podczas przechodzenia do kolejnego etapu.
+- **Recovery Site**: z listy wybierz lokalizację zdalną (inną niż lokalna). 
+- **ZORG**: z listy wybierz **No Organization**. Każda inna wartość spowoduje wyświetlenie błędu podczas przechodzenia do kolejnego etapu.
 
 Następnie przechodzimy do etapu definiowania zasobów zdalnych.
 
-* **Hosts**: Wybierz zasób obliczeniowy, którym może być **sam host** (określany przez jego adres IP i w stosownych przypadkach poprzedzony nazwą klastra w nawiasach kwadratowych), **Ressource Pool** (najpierw RP, następnie nazwa klastra, a potem nazwa Ressource Pool) lub **Klaster** (określany przez nazwę). Należy wybrać tylko **Ressource Pool** lub **Klaster** (tutaj: Cluster1).
-* **Datastore**: Wybierz zasób przechowywania, którym może być **sam magazyn danych** (określany przez jego nazwę i w stosownych przypadkach poprzedzony nazwą **Storage Cluster** w nawiasach kwadratowych) lub **Storage Cluster** (określany przez nazwę).
+- **Hosts**: Wybierz zasób obliczeniowy, którym może być **sam host** (określany przez jego adres IP i w stosownych przypadkach poprzedzony nazwą klastra w nawiasach kwadratowych), **Ressource Pool** (najpierw RP, następnie nazwa klastra, a potem nazwa Ressource Pool) lub **Klaster** (określany przez nazwę). Należy wybrać tylko **Ressource Pool** lub **Klaster** (tutaj: Cluster1).
+- **Datastore**: Wybierz zasób przechowywania, którym może być **sam magazyn danych** (określany przez jego nazwę i w stosownych przypadkach poprzedzony nazwą **Storage Cluster** w nawiasach kwadratowych) lub **Storage Cluster** (określany przez nazwę).
 
 Jeśli nie masz zaawansowanych potrzeb, zostaw wartości innych ustawień bez zmian.
 
@@ -191,9 +191,9 @@ Kliknij `NEXT`{.action}, aby kontynuować.
 
 Teraz następuje ważna część: pierwszy etap konfiguracji sieci.
 
-* **Failover/Move Network**\: wybierz domyślny portgroup do przełączania awaryjnego.
-* **Failover Test Network**\: wybierz portgroup do testów przełączania awaryjnego.
-* **Recovery Folder**\: wybierz folder (lub znak „/”, aby wybrać katalog główny), do którego zostaną dodane VM przeniesione do lokalizacji.
+- **Failover/Move Network**: wybierz domyślny portgroup do przełączania awaryjnego.
+- **Failover Test Network**: wybierz portgroup do testów przełączania awaryjnego.
+- **Recovery Folder**: wybierz folder (lub znak „/”, aby wybrać katalog główny), do którego zostaną dodane VM przeniesione do lokalizacji.
 
 > [!primary]
 > Opcji **Pre-recovery Script** i **Post-recovery Script** nie można używać.
@@ -205,8 +205,8 @@ Kliknij `NEXT`{.action}, aby kontynuować.
 
 Jest to drugi etap konfiguracji sieci:
 
-* Dla każdej VM wybierz portgroup do testów lub przełączania awaryjnego.
-* W każdej sytuacji można też zmienić konfigurację IP maszyn wirtualnych.
+- Dla każdej VM wybierz portgroup do testów lub przełączania awaryjnego.
+- W każdej sytuacji można też zmienić konfigurację IP maszyn wirtualnych.
 
 ![Zerto VPG Creation](images/zerto_OvhToOvh_vpg_09.png){.thumbnail}
 
@@ -267,10 +267,10 @@ W tym przykładzie wybieramy opcję 1, czyli test VPG.
 
 Na tym etapie widzimy podsumowanie operacji związanych z VPG:
 
-* kierunek replikacji;
-* lokalizacja zdalna;
-* informacja, czy została określona kolejność uruchamiania VM;
-* informacja, czy są obecne skrypty przed i po przełączeniu awaryjnym (funkcja niedostępna).
+- kierunek replikacji;
+- lokalizacja zdalna;
+- informacja, czy została określona kolejność uruchamiania VM;
+- informacja, czy są obecne skrypty przed i po przełączeniu awaryjnym (funkcja niedostępna).
 
 Kliknij `NEXT`{.action}, aby kontynuować.
 
@@ -330,22 +330,22 @@ Opcja 1 – test na VPG – został wybrany przykładowo.
 
 Na tym etapie widzimy podsumowanie operacji związanych z VPG:
 
-* kierunek replikacji;
-* lokalizacja zdalna;
-* **Checkpoint**\: jest to data, dla której dane zostaną przywrócone. Różnica między wybranym punktem a bieżącą datą określi **RPO**;
-* **Commit Policy**\: patrz dalej;
-* **VM Shutdown**\: określa zachowanie, które należy przyjąć w lokalizacji głównej: brak wyłączenia VM, wyłączenie, wymuszone wyłączenie;
-* **Reverse Protection**\: wskazuje, czy replikację VPG należy skonfigurować w odwrotnym kierunku po zakończeniu trybu failover, tak aby w razie potrzeby można było przeprowadzić później powrót po awarii.
-* informacja, czy została określona kolejność uruchamiania VM;
-* informacja, czy są obecne skrypty przed i po przełączeniu awaryjnym (funkcja niedostępna).
+- kierunek replikacji;
+- lokalizacja zdalna;
+- **Checkpoint**: jest to data, dla której dane zostaną przywrócone. Różnica między wybranym punktem a bieżącą datą określi **RPO**;
+- **Commit Policy**: patrz dalej;
+- **VM Shutdown**: określa zachowanie, które należy przyjąć w lokalizacji głównej: brak wyłączenia VM, wyłączenie, wymuszone wyłączenie;
+- **Reverse Protection**: wskazuje, czy replikację VPG należy skonfigurować w odwrotnym kierunku po zakończeniu trybu failover, tak aby w razie potrzeby można było przeprowadzić później powrót po awarii.
+- informacja, czy została określona kolejność uruchamiania VM;
+- informacja, czy są obecne skrypty przed i po przełączeniu awaryjnym (funkcja niedostępna).
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_05.png){.thumbnail}
 
 W przypadku **Commit Policy** masz do wyboru trzy (3) opcje:
 
-* Auto-Rollback: bez żadnego działania ze strony użytkownika, wycofywanie jest uruchamiane po upływie ustawionego czasu.
-* Auto-Commit: bez żadnego działania ze strony użytkownika, zatwierdzenie danych na platformie dodatkowej jest przeprowadzane po upływie ustawionego czasu (nie można po prostu wrócić do platformy głównej).
-* None: operacja **Rollback** lub **Commit** muszą zostać zatwierdzone przez użytkownika.
+- Auto-Rollback: bez żadnego działania ze strony użytkownika, wycofywanie jest uruchamiane po upływie ustawionego czasu.
+- Auto-Commit: bez żadnego działania ze strony użytkownika, zatwierdzenie danych na platformie dodatkowej jest przeprowadzane po upływie ustawionego czasu (nie można po prostu wrócić do platformy głównej).
+- None: operacja **Rollback** lub **Commit** muszą zostać zatwierdzone przez użytkownika.
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_06.png){.thumbnail}
 
