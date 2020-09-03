@@ -9,31 +9,30 @@ order: 1
 
 **Data** in **AI Training** are objects used to manage your actual data.
 The actual data used during the **training jobs** is stored on a
-distributed filesystem and the **data** object is your mean of
+distributed filesystem and the **data** object is your means of
 interaction with this filesystem.
 
 There are two ways to hydrate your data on the filesystem :
 
 -   Directly push data from your local environment using the client, see
-    [how to install \$partner\_short client](../install-client)
+    [how to install \$partner\_short client](../install-client).
 -   Synchronize your data from the OVHcloud Object Storage (can be done
-    either from the manager or the client)
+    either from the OVHcloud Control Panel or the client).
 
 ## Considerations
 
 > [!warning] 
 > * The underlying distributed filesystem is not to be
 > used as a persistent storage, it is used as a cache for your training
-> jobs 
+> jobs. 
 > * We reserve the right to delete at any time pushed data that is
 > not currently used or was not used for an extended period of time
-> (about 7 days) 
-> * To have persistent storage it is highly recommanded
+> (about 7 days). 
+> * To have persistent storage it is highly recommended
 > that you link your **data** objects to a container/bucket in your
 > OVHcloud Object Storage, see [create data](../create-data). 
-> * Upon
-> job completion you should synchronize your data with your Object
-> Storage to persist your training results
+> * Upon job completion you should synchronize your data with your Object
+> Storage to make your training results persistent.
 
 ## Under the hood
 
