@@ -186,7 +186,7 @@ From this list you can access your job details either by clicking on its `ID` or
 -   Actions: available actions
 -   Data: list of **data** objects attach to the job
 
-### Step 14: Cancelling your job
+### Step 13: Cancelling your job
 
 If you are over using your notebook, if your model converged prematurely or if you just wish to interrupt your job you can do so from the **jobs** list.
 
