@@ -13,8 +13,8 @@ section: Pierwsze kroki
 
 W większości przypadków brak możliwości wysyłania/odbierania wiadomości e-mail wiąże się z konfiguracją adresu w programie pocztowym. Aby to sprawdzić, zaloguj się w interfejsie [webmail](https://www.ovh.pl/mail/){.external} i przeprowadź test wysyłania i odbierania wiadomości z Twojego adresu.
 
-* Jeśli wszystko działa normalnie, to znaczy, że źródło problemu leży w konfiguracji oprogramowania. 
-* Jeśli natomiast wysyłanie lub odbieranie wciąż jest niemożliwe, masz do wyboru kilka rozwiązań.
+- Jeśli wszystko działa normalnie, to znaczy, że źródło problemu leży w konfiguracji oprogramowania. 
+- Jeśli natomiast wysyłanie lub odbieranie wciąż jest niemożliwe, masz do wyboru kilka rozwiązań.
 
 Czy po wysłaniu e-maila na Twoje konto e-mail dostajesz komunikat błędu? Jeśli tak, zlokalizuj ten komunikat — znajdziesz w nim przyczynę problemów (przepełniona lub nieistniejąca skrzynka itp.).
 
