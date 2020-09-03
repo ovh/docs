@@ -16,15 +16,15 @@ Klonowanie wirtualnej maszyny umożliwia utworzenie kopii maszyny źródłowej.
 
 ## Wymagania początkowe
 
-- Posiadanie usługi [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Posiadanie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}.
 - Posiadanie co najmniej jednej wirtualnej maszyny w klastrze.
-- Dostęp do [interfejsu vSphere](../connexion-interface-vsphere/)
+- Dostęp do [interfejsu vSphere](../polaczenie-interfejs-vsphere/)
 
 ## W praktyce
 
 ### Klonowanie wirtualnej maszyny
 
-Przejdź do [interfejsu vSphere](../connexion-interface-vsphere/), a następnie do widoku `Hosty i klastry`.
+Przejdź do [interfejsu vSphere](../polaczenie-interfejs-vsphere/), a następnie do widoku `Hosty i klastry`.
 
 Kliknij prawym przyciskiem myszy wirtualną maszynę, którą chcesz sklonować, a następnie kliknij `Klonuj`{.action} i `Klonuj wirtualną maszynę...`{.action}. 
 
@@ -46,9 +46,9 @@ Określ lokalizację przestrzeni dyskowej dla tej wirtualnej maszyny.
 
 Format dysku wirtualnego w tym przypadku to "Thin Provision", co oznacza, że wirtualny dysk zostanie utworzony, ale będzie wykorzystywał tylko rzeczywistą przestrzeń dyskową, niezależnie od przestrzeni dyskowej wcześniej wykorzystywanej na źródłowej wirtualnej maszynie.
 
-Więcej informacji o rodzajach formatów dysków znajdziesz w [tym przewodniku](../quel-format-de-disque-choisir/){.external-link}.
+Więcej informacji o rodzajach formatów dysków znajdziesz w [tym przewodniku](../jaki-format-dysku-wybrac/).
 
-Za pomocą wiersza `VM Storage Policy` wybierz domyślną politykę storage, jeśli posiadasz datastores lub spersonalizowaną politykę, jeśli posiadasz hosty [vSAN](../vmware-vsan/){.external-link} lub też opcję [VM encryption](../vm-encrypt/){.external-link}.
+Za pomocą wiersza `VM Storage Policy` wybierz domyślną politykę storage, jeśli posiadasz datastores lub spersonalizowaną politykę, jeśli posiadasz hosty [vSAN](../vmware-vsan/) lub też opcję [VM encryption](../vm-encrypt/).
 
 ![Storage wirtualnej maszyny](images/clonevm04.png){.thumbnail}
 
