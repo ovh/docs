@@ -17,7 +17,7 @@ Funkcja **DRS** (Distributed Ressource Scheduler), dostępna w klastrze **VMware
 ## Wymagania początkowe
 
 - Posiadanie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}
-- Dostęp do [interfejsu vSphere](../connexion-interface-vsphere/)
+- Dostęp do [interfejsu vSphere](../polaczenie-interfejs-vsphere/)
 
 ## W praktyce
 
