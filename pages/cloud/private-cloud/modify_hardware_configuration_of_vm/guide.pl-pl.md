@@ -1,107 +1,111 @@
 ---
 title: Zmiana zasobów przypisanych do maszyny wirtualnej
 slug: zmiana_konfiguracji_sprzetowej_wirtualnej_maszyny
-excerpt: Odkryj jak rozwinąć maszynę wirtualną
-section: Pierwsze kroki
+excerpt: Dowiedz się, jak wprowadzić zmiany w maszynie wirtualnej
+section: Zarządzanie maszynami wirtualnymi
+order: 03
 ---
 
-**Ostatnia aktualizacja dnia 2017-11-28**
+**Ostatnia aktualizacja z dnia 25-06-2020**
 
 ## Wprowadzenie
 
-Po utworzeniu, maszyna nie posiada stałych, niezmiennych zasobów. Z wyjątkiem kilku ograniczeń można je dowolnie przyporządkowywać, co sprawi, że Twoja infrastruktura będzie bardziej elastyczna.
+Po utworzeniu maszyny jej zasoby nie są przypisane na stałe. Nie licząc kilku ograniczeń, można nimi dowolnie zarządzać, by zapewnić większą elastyczność infrastruktury.
 
-**Ten przewodnik wyjaśnia jak zmieniać zasoby maszyny wirtualnej.**
+**Z tego przewodnika dowiesz się, jak wprowadzić zmiany w maszynie wirtualnej.**
 
 
 ## Wymagania początkowe
 
-- Utworzona maszyna wirtualna.
-- Połączenie z klientem vSphere.
+- Utworzenie maszyny wirtualnej
+- Dostęp do interfejsu vSphere HTML
 
 
 ## W praktyce
 
 
-Wszystkie opisane poniżej zmiany powinny zostać wykonane z poziomu Private Cloud na vSphere po kliknięciu prawym przyciskiem na maszynę wirtualną i wybraniu `Edit Settings`{.action}. 
+Wszystkie opisane poniżej zmiany należy wprowadzać z poziomu Private Cloud w vSphere po kliknięciu prawym przyciskiem maszyny wirtualnej i wybraniu opcji `Zmień ustawienia`{.action}.
 
-![Edytowanie zasobów](images/add_ressources_edit.png){.thumbnail}
+![Édition des ressources](images/hardware01.png){.thumbnail}
 
-W tym menu masz możliwość zwiększenia zasobów dla swojej maszyny wirtualnej. U dołu obrazka można zauważyć, że istnieje możliwość dodania urządzeń peryferyjnych, co opiszemy w dalszej części przewodnika.
+W tym menu możesz zwiększyć zasoby przypisane do maszyny wirtualnej. 
+
+![Édition des ressources](images/hardware02.png){.thumbnail}
+
+U góry obrazka można zauważyć, że istnieje możliwość dodania urządzeń peryferyjnych, co opiszemy w dalszej części przewodnika.
 
 
 ### Procesor (CPU)
 
-Liczba procesorów nie może być wyższa niż liczba dostępnych rdzeni hosta.
+Liczba procesorów jest ograniczona do liczby slotów dostępnych w hoście.
 
-Jeśli Twoja maszyna wirtualna migruje na hosta, który ma mniej procesorów niż jest przydzielonych do maszyny, będzie ona w statusie `CPU ready`, co spowoduje spadek wydajności.
+Jeśli maszyna wirtualna migruje do hosta, który ma mniej procesorów niż jest przydzielonych do maszyny, będzie ona miała status `CPU ready`, co spowoduje spadek wydajności.
 
-![Dodawanie procesora CPU](images/add_ressources_cpu.png){.thumbnail}
+![Ajout de CPU](images/hardware03.png){.thumbnail}
 
-Istnieje również możliwość zarezerwowania częstotliwości (minimalnej i maksymalnej) oraz wyboru liczby rdzeni na gniazdo (socket).
+Istnieje również możliwość zarezerwowania częstotliwości (minimalnej i maksymalnej) oraz wyboru liczby rdzeni na gniazdo.
 
-Po zaznaczeniu pola `Enable CPU Hot Add`{.action}, możesz zmieniać te ustawienia już po uruchomieniu maszyny wirtualnej.
+Po zaznaczeniu pola `Dodawanie CPU bez przerwy w pracy`{.action} możesz zmieniać te ustawienia po uruchomieniu maszyny wirtualnej.
 
-W zależności od systemu operacyjnego, dynamiczne dodawanie procesorów do uruchomionego systemu („na gorąco”), może być niewłaściwie obsługiwane i powodować nieprawidłowe działanie hosta.
+W zależności od systemu operacyjnego, dodawanie procesorów w trybie „hot swap” może być niewłaściwie obsługiwane i powodować nieprawidłowe działanie hosta.
 
-Można również dokonać rezerwacji, co oznacza, że do swojej maszyny wirtualnej możesz przydzielić minimalną ilość *MHz* (megaherców).
+Można dokonać rezerwacji, co oznacza, że do maszyny wirtualnej możesz przydzielić minimalną ilość *MHz* (megaherców).
 
-Wprowadzenie takiego limitu, domyślnie ustawionego w opcji dodawania nieograniczonych zasobów CPU, umożliwia ograniczenie procesora Twojej maszyny wirtualnej do wybranej wartości w *MHz*. Można np. ograniczyć maszynę wirtualną wykorzystywaną do rozwoju aplikacji.
+Limit, domyślnie ustawiony na „brak”, umożliwia ograniczenie procesora Twojej maszyny wirtualnej do wartości wyrażonej w *MHz*. Można na przykład ograniczyć wydajność maszyny wirtualnej wykorzystywanej do rozwoju aplikacji.
 
 
 ### Pamięć (RAM)
 
 Podobnie jak w przypadku procesora, pamięć (RAM) jest ograniczona do zasobów hosta.
 
-Istnieje również możliwość rezerwacji zasobów. W ten sposób masz pewność, że Twoja maszyna wirtualna będzie dysponować zawsze zarezerwowaną minimalną ilość pamięci RAM.
+Istnieje również możliwość dokonania rezerwacji, tak aby maszyna wirtualna zawsze dysponowała zarezerwowaną minimalną ilością pamięci RAM.
 
-![Dodawanie pamięci](images/add_ressources_ram.png){.thumbnail}
+![Ajout de mémoire](images/hardware04.png){.thumbnail}
 
 
 ### Dysk twardy
 
-Jeśli chodzi o dysk twardy, to możesz zwiększyć jego wielkość w zależności od wolnego miejsca w datastore, który wykorzystuje maszyna wirtualna.
+W przypadku dysku twardego można zwiększyć jego wielkość w zależności od wolnego miejsca w magazynie danych, który wykorzystuje maszyna wirtualna.
 
-![Dodawanie miejsca](images/add_ressources_disk.png){.thumbnail}
+![Ajout de stockage](images/hardware05.png){.thumbnail}
 
-Zaleca się używanie kontrolerów SCSI zamiast IDE. Z kontrolerem IDE niemożliwe jest np. wykonanie backupu przy pomocy rozwiązania Veeam.
+Zaleca się używanie kontrolerów SCSI zamiast IDE. W razie kontrolera IDE niemożliwe jest na przykład wykonanie kopii zapasowej przy pomocy rozwiązania Veeam.
 
 Możesz również wybrać tryb dysku:
 
-- `Dependent`: dysk będzie objęty snapshotem;
+- `Zależny`: dysk będzie objęty snapshotem;
 
-- `Independent - Persistent`: umożliwia zachowanie danych po restarcie maszyny, ale dysk nie będzie objęty snapshotem;
+- `Niezależny – trwały`: umożliwia zachowanie danych przy restarcie maszyny, ale dysk nie będzie objęty snapshotem;
 
-- `Independent - Non Persistent`: nie zachowa danych: po restarcie maszyny wszystkie dane zostaną skasowane.
+- `Niezależny – nietrwały`: nie zachowa danych: po restarcie maszyny wszystkie dane zostaną skasowane.
 
 
 ### Karta sieciowa
 
-W swojej maszynie wirtualnej masz możliwość zmiany karty sieciowej, podłączenia karty przy uruchamianiu maszyny wirtualnej, zmiany typu karty, sprawdzania portu ID i swojego adresu MAC.
+W maszynie wirtualnej masz możliwość zmiany karty sieciowej, podłączenia karty przy uruchamianiu maszyny wirtualnej, zmiany typu karty, sprawdzania numeru portu i Twojego adresu MAC.
 
-![Dodawanie karty sieciowej](images/add_ressources_network.png){.thumbnail}
+![Ajout du réseau](images/hardware06.png){.thumbnail}
 
-Ten interfejs może Cię zainteresować w przypadku niewłaściwego działania sieci. Możesz się upewnić, że *port ID* odpowiada wprowadzonemu w zakładce `Networking`{.action} oraz `Ports`{.action} dla danej karty.
+Ten interfejs może być przydatny w przypadku niewłaściwego działania sieci. Możesz się upewnić, że *port ID* odpowiada wprowadzonemu w zakładce `Networking`{.action} oraz `Ports`{.action} dla danej karty.
 
 
 ### Napęd CD/DVD
 
-Napęd CD/DVD umożliwia np. podmontowanie obrazu ISO w Twojej maszynie wirtualnej.
+Napęd CD/DVD umożliwia na przykład zamontowanie obrazu ISO w Twojej maszynie wirtualnej.
 
-![Dodawanie napędu CD / DVD](images/add_ressources_cd_dvd.png){.thumbnail}
+![Ajout d'un lecteur CD / DVD](images/hardware07.png){.thumbnail}
 
-Po zakończeniu prac wymagających napędu CD/DVD, zalecane jest jego usunięcie. W innym przypadku może on przeszkadzać przy przenoszeniu maszyny wirtualnej.
+Po zakończeniu korzystania z napędu CD/DVD zalecane jest jego usunięcie. W innym przypadku może on uniemożliwić przenoszenie maszyny wirtualnej.
 
 
 ### Dodawanie urządzeń peryferyjnych
 
-U dołu tego okna masz możliwość dodawania dodatkowych urządzeń peryferyjnych.
+W prawym górnym rogu tego okna masz możliwość dodawania urządzeń peryferyjnych.
 
-Możesz dodawać dyski pochodzące z innego zasobu datastore lub karty sieciowe, jeśli Twoja infrastruktura wymaga korzystania z kilku sieci prywatnych.
+Możesz dodawać dyski pochodzące z innego magazynu danych lub karty sieciowe, jeśli Twoje działania wymagają korzystania z kilku sieci prywatnych.
 
-![Dodawanie urządzeń peryferyjnych](images/add_ressources_new_device.png){.thumbnail}
+![Ajout de périphériques](images/hardware08.png){.thumbnail}
 
-## Dowiedz się więcej
+## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na <https://community.ovh.com>.
-
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
