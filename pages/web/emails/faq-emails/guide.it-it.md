@@ -32,11 +32,16 @@ Attraverso la [Webmail](https://www.ovh.com/it/mail/){.external} è possibile ac
 
 **Consigli e suggerimenti**: Se configuri il tuo account email su un client di posta, ti consigliamo di configurarlo con il protocollo IMAP. In questo modo, le email rimarranno salvate sul server e potrai consultarle ovunque dalla [Webmail](https://www.ovh.it/mail/){.external}. Per conoscere la procedura, consulta [la nostra documentazione](../informazioni-generali-email-condivise/).
 
-### Come gestirei tuoi servizi di posta? 
+### Come gestire i servizi di posta? 
 
-È possibile gestire tutti gli indirizzi email dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Per farlo, effettua l’accesso e seleziona il tuo prodotto. A questo punto è possibile modificare la password dei tuoi indirizzi email, verificare il tasso di riempimento, creare nuovi indirizzi email o eliminare gli indirizzi esistenti.
+Tutti gli indirizzi email possono essere gestiti dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Una volta effettuato l’accesso, seleziona il servizio in questione. A questo punto è possibile modificare la password associata agli account di posta elettronica, verificare la percentuale di spazio utilizzato, creare nuovi indirizzi email o eliminare quelli esistenti. 
 
-**Consigli e suggerimenti**: Per i servizi di posta elettronica MX Plan, è possibile delegare la gestione dell’account email OVHcloud, pur continuando a tenerlo sotto controllo.  Per farlo, è sufficiente configurare una delega dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Per conoscere la procedura consulta [la nostra documentazione](../delegare-gestione-email-altro-identificativo/). 
+**Suggerimenti**: le soluzioni email MX Plan consentono di delegare a un altro account OVHcloud la gestione di uno o più account di posta, continuando a mantenerne il controllo. Per effettuare questa operazione è sufficiente configurare una delega dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}: accedi alla sezione `Email` nella colonna a sinistra e seleziona il dominio in questione, poi clicca sulla scheda `Email` e scegli una di queste opzioni:
+
+- `Gestisci autorizzazioni`{.action}, nella parte destra dell’interfaccia, per delegare la gestione di tutti gli account di questo dominio
+- `Gestisci la delega`{.action}, per delegare la gestione di un account specifico (clicca sul pulsante `...`{.action} in corrispondenza dell’account)  
+
+Ti ricordiamo che in entrambi i casi è necessario inserire l’identificativo cliente OVHcloud (NIC handle).
 
 ### Come limitare la ricezione di spam?  
 

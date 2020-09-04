@@ -107,6 +107,22 @@ Auf beiden Varianten von SharePoint Plattformen finden Sie die Schaltfläche `Ad
 
 ![sharepoint](images/order-manage-sharepoint-09.png){.thumbnail}
 
+#### **Dateien aus Office 365 online bearbeiten**
+
+Sie können Ihre Dateien aus Office 365 wie *.docx* oder *.xls* direkt online bearbeiten.
+
+Sie müssen dafür eine gültige Office 365 Lizenz besitzen und dies in Ihrem OVHcloud Kundencenter bestätigen.
+
+Gehen Sie auf den Reiter „Benutzer“ Ihrer Plattform. Klicken Sie dann rechts vom Account auf `...`{.action} und danach auf `Office Lizenz hinzufügen`{.action}.
+
+![sharepoint](images/order-manage-sharepoint-10.png){.thumbnail}
+
+Um zu bestätigen, dass Sie eine Office 365 Lizenz besitzen, klicken Sie auf `Bestätigen`{.action}.
+
+![sharepoint](images/order-manage-sharepoint-11.png){.thumbnail}
+
+Danach können Sie Ihre Dateien aus Office 365 direkt über das Web-Interface Ihres SharePoints bearbeiten.
+
 ## Weiterführende Informationen
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

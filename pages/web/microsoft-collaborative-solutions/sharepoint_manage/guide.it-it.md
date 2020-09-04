@@ -106,6 +106,20 @@ Su entrambi i tipi di piattaforme SharePoint, troverai il pulsante `Ripristina i
 
 ![sharepoint](images/order-manage-sharepoint-09.png){.thumbnail}
 
+#### **Modificare i file Office 365 online**
+
+I documenti Office 365 come i file *.docx* e *.xls* possono essere modificati direttamente online.
+
+Per eseguire questa operazione è necessario possedere una licenza Office 365 valida e confermarne la disponibilità nello Spazio Cliente OVHcloud: accedi alla scheda `Utenti` della tua piattaforma, clicca su `...`{.action} in corrispondenza dell’account in questione e seleziona `Aggiungi una licenza Office`{.action}.
+
+![sharepoint](images/order-manage-sharepoint-10.png){.thumbnail}
+
+Seleziona la casella in cui dichiari di possedere una licenza Office 365 e clicca su `Conferma`{.action}.
+
+![sharepoint](images/order-manage-sharepoint-11.png){.thumbnail}
+
+A questo punto sarà possibile modificare i file Office 365 direttamente dall’interfaccia Web di SharePoint.
+
 ## Per saperne di più
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
