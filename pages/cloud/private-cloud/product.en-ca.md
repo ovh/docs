@@ -9,5 +9,5 @@ sections: Getting started, OVH Features, NSX
 >
 > ### Veeam
 >
-> - [Setting up Veeam Backup & Replication](https://docs.ovh.com/ca/en/storage/storage/veeam-backup-replication/)
+> - [Setting up Veeam Backup & Replication](https://docs.ovh.com/ca/en/storage/veeam-backup-replication/)
 >
