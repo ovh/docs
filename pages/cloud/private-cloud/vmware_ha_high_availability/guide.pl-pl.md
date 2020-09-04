@@ -21,7 +21,7 @@ Główną funkcją usługi **VMware HA** (High Availability) w razie awarii sprz
 
 ## Wymagania początkowe
 
-- Dostęp do [interfejsu vSphere](../connexion-interface-vsphere/).
+- Dostęp do [interfejsu vSphere](../polaczenie-interfejs-vsphere/).
 - Posiadanie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}
 
 ## W praktyce
@@ -110,11 +110,11 @@ Kontrola dostępu narzuca pewne ograniczenia dotyczące wykorzystania zasobów. 
 
 Podstawą kontroli dostępu vSphere HA jest liczba awarii hosta, które klaster może tolerować i nadal gwarantować przełączanie awaryjne. Zdolność hostów do przełączania awaryjnego można określić na trzy różne sposoby:
 
-- [Wartość procentowa zasobów klastra](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-FAFEFEFF-56F7-4CDF-A682-FC3C62A29A95.html){.external-link}
+- [Wartość procentowa zasobów klastra](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-FAFEFEFF-56F7-4CDF-A682-FC3C62A29A95.html)
 
-- [Strategia umieszczania](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-85D9737E-769C-40B6-AB73-F58DA1A451F0.html){.external-link}
+- [Strategia umieszczania](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-85D9737E-769C-40B6-AB73-F58DA1A451F0.html)
 
-- [Dedykowane hosty przełączania awaryjnego](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-C4F5F9EE-4235-4151-BEBE-FCB2A752407B.html){.external-link}
+- [Dedykowane hosty przełączania awaryjnego](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-C4F5F9EE-4235-4151-BEBE-FCB2A752407B.html)
 
 #### Zapytania o dostępność magazynów danych
 
@@ -124,7 +124,7 @@ Gdy host główny klastra HA nie może komunikować się z hostem podrzędnym w 
 
 W klastrze można użyć kilku parametrów konfiguracji zaawansowanej.
 
-Informacje o parametrach znajdziesz na [tej stronie](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-E0161CB5-BD3F-425F-A7E0-BF83B005FECA.html){.external-link}.
+Informacje o parametrach znajdziesz na [tej stronie](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.avail.doc/GUID-E0161CB5-BD3F-425F-A7E0-BF83B005FECA.html).
 
 ### Reguła HA
 
