@@ -34,6 +34,8 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 ![Click on the KVM button](images/kvm-new2.png){.thumbnail}
 
+### Using the KVM console
+
 The KVM screen will now open, which is a small window showing a connection to your server. Since the window is rather small it will be quite difficult to navigate around your server's interface using the scrollbars. Therefore we recommend that you open the KVM in a new, full-screen window using the "Open in a new window" button in the bottom right corner of the popup.
 
 > [!primary]
