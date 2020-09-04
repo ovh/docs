@@ -6,17 +6,17 @@ section: Fonctionnalités VMware vSphere
 order: 08
 ---
 
-**Dernière mise à jour le 17/09/2019**
+**Dernière mise à jour le 04/09/2020**
 
 ## Objectif
 
-Ce guide a pour objectif d’expliquer les concepts et les détails de la mise en oeuvre de VMware vSAN sur Private Cloud.
+Ce guide a pour objectif d’expliquer les concepts et les détails de la mise en oeuvre de VMware vSAN sur Hosted Private Cloud Premier.
 
 **Découvrez comment mettre en oeuvre la puissance de l'hyperconvergence pour vos machines virtuelles avec vSAN.**
 
 ## Prérequis
 
-* Posséder une offre [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external},
+* Posséder une offre [Hosted Private Cloud Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external},
 * Avoir ajouté au minimum trois hôtes vSAN,
 * Pouvoir accéder à l’interface de gestion vSphere.
 
@@ -101,23 +101,32 @@ L'utilisation des mécanismes de redondances induit logiquement une consommation
 
 #### Espace net utilisable pour les données utilisateur
 
-Pour illustrer très concrètement le point précédent, voici une estimation conservatrice de l'espace disponible pour les données dans différentes configuration PCC vSAN 256 ou 512, en prenant en compte la contrainte de remplissage à 70% que VMware recommande fortement de ne pas dépasser.
+Pour illustrer très concrètement le point précédent, voici une estimation conservatrice de l'espace disponible pour les données dans différentes configuration Host PREMIER vSAN 192, vSAN 384 et vSAN 768 en prenant en compte la contrainte de remplissage à 70% que VMware recommande fortement de ne pas dépasser.
 
-| NB Hosts vSAN 256  | FTT  | Host capacity (TB)  | Total Space  | 	Usable Space RAID 1 Policy (TB)  | Usable Space RAID 5 Policy (TB)  | Usable Space RAID 6 Policy (TB)  |
-|---|---|---|---|---|---|---|
-| 3  | 1  | 4  | 12  | 4,2  | n/a  | n/a  |
-| 4  | 1  | 4  | 16  | 5,6  | 8,4  | n/a  |
-| 5  | 1  | 4  | 20  | 7,0  | 10,5  | n/a  |
-| 6  | 1  | 4  | 24  | 8,4  | 12,6  | n/a  |
-| 6  | 2  | 4  | 24  | n/a  | n/a  | 11,1  |
 
-| NB Hosts vSAN 512  | FTT  | Host capacity (TB)  | Total Space  | 	Usable Space RAID 1 Policy (TB)  | Usable Space RAID 5 Policy (TB)  | Usable Space RAID 6 Policy (TB)  |
+| NB Hosts vSAN 192  | FTT  | Host capacity (TB)  | Total Space  | 	Usable Space RAID 1 Policy (TB)  | Usable Space RAID 5 Policy (TB)  | Usable Space RAID 6 Policy (TB)  |
 |---|---|---|---|---|---|---|
 | 3  | 1  | 8  | 24  | 8,4  | n/a  | n/a  |
 | 4  | 1  | 8  | 32  | 11,2  | 16,8  | n/a  |
 | 5  | 1  | 8  | 40  | 14,0  | 21,0  | n/a  |
 | 6  | 1  | 8  | 48  | 16,8  | 25,2  | n/a  |
-| 6  | 2  | 8  | 48  | n/a  | n/a  | 22,2  |
+| 6  | 2  | 8  | 48  | n/a  | n/a  | 22,4  |
+
+| NB Hosts vSAN 384  | FTT  | Host capacity (TB)  | Total Space  | 	Usable Space RAID 1 Policy (TB)  | Usable Space RAID 5 Policy (TB)  | Usable Space RAID 6 Policy (TB)  |
+|---|---|---|---|---|---|---|
+| 3  | 1  | 16  | 48  | 16,8  | n/a  | n/a  |
+| 4  | 1  | 16  | 64  | 22,4  | 33,7  | n/a  |
+| 5  | 1  | 16  | 80  | 28  | 42,1  | n/a  |
+| 6  | 1  | 16  | 96  | 33,6  | 50,5  | n/a  |
+| 6  | 2  | 16  | 96  | n/a  | n/a  | 44,8  |
+
+| NB Hosts vSAN 768  | FTT  | Host capacity (TB)  | Total Space  | 	Usable Space RAID 1 Policy (TB)  | Usable Space RAID 5 Policy (TB)  | Usable Space RAID 6 Policy (TB)  |
+|---|---|---|---|---|---|---|
+| 3  | 1  | 32 | 96  | 33,6  | n/a  | n/a  |
+| 4  | 1  | 32  | 128  | 44,8  | 67,4  | n/a  |
+| 5  | 1  | 32  | 160  | 56  | 84,2  | n/a  |
+| 6  | 1  | 32 | 192  | 67,2  | 101,1  | n/a  |
+| 6  | 2  | 32  | 192  | n/a  | n/a  | 89,6  |
 
 > [!primary]
 >
