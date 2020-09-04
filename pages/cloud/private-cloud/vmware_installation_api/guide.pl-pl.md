@@ -22,7 +22,7 @@ Działania w infrastrukturze można zautomatyzować przy użyciu SDK vSphere.
 
 ##### System operacyjny
 
-Tutaj korzystamy z maszyny wirtualnej zainstalowanej w systemie Debian 9 i wdrożonej z [szablonów udostępnionych w Twojej usłudze Private Cloud](../private-cloud/instalacja-z-szablonow-ovh/).
+Tutaj korzystamy z maszyny wirtualnej zainstalowanej w systemie Debian 9 i wdrożonej z [szablonów udostępnionych w Twojej usłudze Private Cloud](../instalacja-z-szablonow-ovh/).
 
 ##### Wymagania początkowe
 
