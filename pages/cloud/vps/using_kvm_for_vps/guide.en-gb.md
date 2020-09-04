@@ -20,7 +20,7 @@ The KVM console allows you to connect directly to your VPS without the need to u
 
 ## Instructions
 
-### Connecting to the KVM via the Control Panel
+### Connecting to the KVM via the OVHcloud Control Panel
 
 #### With a current VPS range
 
