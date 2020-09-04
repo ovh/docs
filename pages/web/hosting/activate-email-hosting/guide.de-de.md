@@ -12,19 +12,19 @@ order: 3
 
 Wenn Sie ein Webhosting bestellt haben, ohne es direkt mit einem Domainnamen zu verbinden, müssen die im Angebot beinhalteten optionalen E-Mail-Adressen manuell aktiviert werden. Sie können diese mit einem Domainnamen Ihrer Wahl verbinden.
 
-**Sehen Sie hier, wie Sie die in Ihrem Webhosting inklusiven E-Mail-Adressen aktivieren können.**
+**Diese Anleitung erklärt, wie Sie die in Ihrem Webhosting inklusiven E-Mail-Adressen aktivieren können.**
 
 ## Voraussetzungen
 
-- Sie besitzen eine [Domain](https://www.ovh.de/domains/){.external} in Ihrem OVHcloud Kundencenter.
-- Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting/){.external}.
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} angemeldet.
+- Sie verfügen über einen [Domainnamen](https://www.ovh.de/domains/) in Ihrem OVHcloud Kundencenter.
+- Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
 
 ## In der praktischen Anwendung
 
 ### Aktivierung Ihrer E-Mail-Adressen
 
-Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} an, klicken Sie in der Kategorie Web im Menü links auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting mit den E-Mail-Adressen aus.
+Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} an, klicken Sie im Bereich `Web`{.action} im Menü links auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting mit den E-Mail-Adressen aus.
 
 Im Feld `Konfiguration` sehen Sie `E-Mail-Adressen`. Klicken Sie rechts davon auf `...`{.action} und danach auf `Mein E-Mail Angebot aktivieren`{.action}.
 
@@ -34,17 +34,17 @@ Daraufhin öffnet sich das Aktivierungsfenster. Wählen Sie aus, welchen Domainn
 
 ![Aktivierung der E-Mail-Adressen](images/mail-hosting02.png){.thumbnail}
 
-### Sichern Ihrer E-Mail Adressen, bevor Ihr Webhosting endet.
+### Sichern Ihrer E-Mail Adressen, bevor Ihr Webhosting endet
 
 Wenn Ihr Hosting abläuft oder gelöscht werden muss, können Sie dennoch Ihre E-Mail-Adressen beibehalten.
 
-Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} an, klicken Sie in der Kategorie Web links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das jeweilige Webhosting aus.
+Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} an, klicken Sie im Bereich `Web`{.action} links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das jeweilige Webhosting aus.
 
-Klicken Sie im Feld `Konfiguration` auf den Button`...`{.action} rechts neben `E-Mail-Adressen`. Klicken Sie dann auf `Meine E-Mail-Option abtrennen`{.action}.
+Klicken Sie im Feld `Konfiguration` auf den Button `...`{.action} rechts neben `E-Mail-Adressen`. Klicken Sie dann auf `Meine E-Mail-Option abtrennen`{.action}.
 
 ![Aktivierung der E-Mail-Adressen](images/mail-hosting03.png){.thumbnail}
 
-Ein Angebot der Art MX wird Ihnen dann zum Kauf angeboten. Sobald die Bestellung bezahlt ist, können Sie Ihre E-Mail-Adressen auch nach Ablauf des Webhostings nutzen.
+Eine passende „MX Plan“ Lösung wird Ihnen dann zum Kauf angeboten. Sobald die Bestellung bezahlt ist, können Sie Ihre E-Mail-Adressen auch nach Ablauf des Webhostings nutzen.
  
 ### Beenden Ihrer E-Mail-Option in Verbindung mit dem Webhosting
 
@@ -52,9 +52,9 @@ Sie können die optionalen E-Mail-Adressen in Verbindung mit Ihrem Webhosting en
 
 > [!warning]
 >
-> Bitte beachten Sie: Diese Aktion kann nicht rückgängig gemacht werden! Nach der Kündigung können Sie die optionalen E-Mail-Adressen nicht wieder aktivieren.
+> Bitte beachten Sie: Diese Aktion kann nicht rückgängig gemacht werden. Nach der Kündigung können Sie die optionalen E-Mail-Adressen nicht wieder aktivieren.
 
-Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} an, klicken Sie in der Kategorie Web links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das jeweilige Webhosting aus.
+Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} an, klicken Sie im Bereich `Web`{.action} links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das jeweilige Webhosting aus.
 
 Klicken Sie im Feld `Konfiguration` auf den Button`...`{.action} rechts neben `E-Mail-Adressen`. Klicken Sie dann auf `Die Option „E-Mail“ kündigen`{.action}.
 
