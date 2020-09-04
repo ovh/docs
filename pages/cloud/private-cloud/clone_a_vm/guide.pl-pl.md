@@ -73,4 +73,4 @@ W tym kroku zdefiniuj konfigurację sieci, która zostanie zastosowana do wirtua
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
