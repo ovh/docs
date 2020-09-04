@@ -13,12 +13,12 @@ section: 'Erste Schritte'
 
 Ist der Versand/Empfang von E-Mails nicht möglich, hängt das meistens mit der Konfiguration Ihrer Adresse auf Ihrem E-Mail-Client zusammen. Um dies zu überprüfen, loggen Sie sich in Ihrem [Webmail](https://www.ovh.com/de/mail/){.external} ein und führen Sie einen Versand- bzw. Empfangstest für Ihre Adresse durch.
 
-* Wenn dies normal funktioniert, hängt das Problem mit Ihrer Softwarekonfiguration zusammen. 
-* Ist der Versand bzw. Empfang hingegen weiterhin nicht möglich, stehen Ihnen andere Optionen für die Lösung des Problems zur Verfügung.
+- Wenn dies normal funktioniert, hängt das Problem mit Ihrer Softwarekonfiguration zusammen. 
+- Ist der Versand bzw. Empfang hingegen weiterhin nicht möglich, stehen Ihnen andere Optionen für die Lösung des Problems zur Verfügung.
 
 Erhalten Sie nach dem Versand einer E-Mail auf Ihrem E-Mail-Account eine Fehlermeldung? Wenn ja, notieren Sie die Fehlermeldung. Diese kann Ihnen beim Ermitteln der Ursache helfen (voller Posteingang, Posteingang nicht vorhanden, ...).
 
-Darüber hinaus können Sie überprüfen, ob Ihre Domain die E-Mails an den richtigen Ort liefert. Begeben Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}, wählen Sie die DNS-Zone Ihrer Domain aus und sehen Sie sich die eingerichteten MX-Einträge an. Diese Einträge müssen in der Form „mx*.mail.ovh.net.“ eingegeben sein (ersetzen Sie * durch eine Ziffer zwischen 0 und 3).
+Darüber hinaus können Sie überprüfen, ob Ihre Domain die E-Mails an den richtigen Ort liefert. Begeben Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}, wählen Sie die DNS-Zone Ihrer Domain aus und sehen Sie sich die eingerichteten MX-Einträge an. Diese Einträge müssen in der Form „mx**X**.mail.ovh.net.“ eingegeben sein (ersetzen Sie **X** mit jeweils den Ziffern zwischen 0 und 3).
 Wenn die MX-Einträge abweichen, verwenden Sie möglicherweise ein E-Mail-Angebot eines anderen Anbieters.
 
 **Tipps und Tricks**: Wenn Sie sich nicht in Ihrem Webmail einloggen können, ist Ihr Passwort möglicherweise fehlerhaft. Überprüfen Sie Ihr Passwort, ändern Sie es bei Bedarf über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} und versuchen Sie erneut, sich einzuloggen. Weitere Informationen zur Passwortänderungen finden Sie in [unserer Dokumentation](../passwort-e-mail-adresse-aendern/).
@@ -34,9 +34,14 @@ Dank [Webmail](https://www.ovh.com/de/mail/){.external} können Sie jederzeit un
 
 ### Wie kann ich meine E-Mail-Dienste verwalten? 
 
-Alle Ihre E-Mail-Adressen werden über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} verwaltet. Gehen Sie hierzu nach dem Login zum betreffenden Produkt. So können Sie das Passwort Ihrer E-Mail-Adressen ändern, ihren Füllstand überprüfen, neue E-Mail-Adressen erstellen oder vorhandene Adressen löschen.
+Alle Ihre E-Mail-Adressen werden über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} verwaltet. Gehen Sie hierzu nach dem Login zum betreffenden Produkt. So können Sie das Passwort Ihrer E-Mail-Adressen ändern, ihren Speicherplatz überprüfen, neue E-Mail-Adressen erstellen oder vorhandene Adressen löschen.
 
-**Tipps und Tricks**: Bei MX Plan Angeboten können Sie die Verwaltung eines E-Mail-Accounts auf einen anderen OVHcloud Account übertragen und behalten dabei weiterhin die Kontrolle über diesen Account. Richten Sie hierzu einfach eine Delegation über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein. Gehen Sie hierzu in den E-Mail-Bereich Ihres Kundencenters und wählen Sie die betreffende Domain aus. Wählen Sie anschließend im Tab „E-Mails“ die gewünschte Option aus. 
+**Tipps und Tricks**: Bei MX Plan Angeboten können Sie die Verwaltung eines E-Mail-Accounts auf einen anderen OVHcloud Account übertragen und behalten dabei weiterhin die Kontrolle über diesen Account. Richten Sie hierzu einfach eine Delegation über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein: Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, gehen Sie in den Bereich `E-Mail` und wählen Sie die betreffende Domain aus. Gehen Sie anschließend in den Tab `E-Mail`{.action} und wählen Sie eine Option aus:
+
+- `Freigaben für alle E-Mail-Adressen verwalten`{.action} im rechten Menü, um die Delegation für alle Mailaccounts zu verwalten
+- `Delegationsverwaltung`{.action} um einen einzelnen Account zu delegieren (nach Klick auf `...`{.action} neben dem gewünschten Account)  
+
+Bitte beachten Sie, dass eine OVHcloud Kundenkennung für beide Varianten benötigt wird.
 
 ### Wie kann ich die Anzahl der empfangenen Spam-Mails reduzieren? 
 
