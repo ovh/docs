@@ -15,8 +15,8 @@ La console KVM permet une connexion directe à votre VPS sans avoir à utiliser 
 
 ## Prérequis
 
-- Un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud.
-- Être connecté à l'[espace client](https://www.ovh.com/auth/?action=gotomanager).
+- Un [VPS](https://www.ovhcloud.com/fr-ca/vps/) dans votre compte OVHcloud.
+- Être connecté à l'[espace client](https://ca.ovh.com/auth/?action=gotomanager).
 
 ## En pratique
 
@@ -24,13 +24,13 @@ La console KVM permet une connexion directe à votre VPS sans avoir à utiliser 
 
 #### Gamme VPS actuelle
 
-Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), accédez à la section `Server`{.action} et sélectionnez votre serveur dans le menu de navigation de gauche sous `VPS`{.action}. Dans cette section, cliquez sur `...`{.action} à droite du nom de votre VPS dans la zone « Votre VPS ».
+Connectez-vous à [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager), accédez à la section `Server`{.action} et sélectionnez votre serveur dans le menu de navigation de gauche sous `VPS`{.action}. Dans cette section, cliquez sur `...`{.action} à droite du nom de votre VPS dans la zone « Votre VPS ».
 
 ![Ouvrir KVM](images/kvm-new1.png){.thumbnail}
 
 #### Ancienne gamme VPS
 
-Connectez-vous à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), accédez à la section `Server`{.action} et sélectionnez votre serveur dans le menu de navigation de gauche sous `VPS`{.action}. Dans cette section, cliquez sur le lien de raccourci intitulé `KVM`{.action}.
+Connectez-vous à [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager), accédez à la section `Server`{.action} et sélectionnez votre serveur dans le menu de navigation de gauche sous `VPS`{.action}. Dans cette section, cliquez sur le lien de raccourci intitulé `KVM`{.action}.
 
 ![Cliquez sur le bouton KVM](images/kvm-new2.png){.thumbnail}
 
@@ -53,7 +53,7 @@ L'écran KVM s'ouvre. Il s'agit d'une petite fenêtre indiquant la connexion à 
 
 ### Connexion au KVM via les API
 
-Il peut arriver que vous rencontriez des problèmes de connexion au KVM via votre panneau de configuration OVHcloud, en particulier avec les versions plus anciennes. Dans ce cas, vous pouvez utiliser la solution API. Pour ce faire, connectez-vous via l'API [OVHcloud](https://api.ovh.com/).
+Il peut arriver que vous rencontriez des problèmes de connexion au KVM via votre panneau de configuration OVHcloud, en particulier avec les versions plus anciennes. Dans ce cas, vous pouvez utiliser la solution API. Pour ce faire, connectez-vous via l'API [OVHcloud](https://ca.api.ovh.com/).
 
 #### Sur un VPS 2014
 
