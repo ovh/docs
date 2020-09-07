@@ -30,7 +30,7 @@ You can access the Object Storage page in the `Public Cloud` section of the [OVH
 
 From the Object Storage page click `Create an object container`{.action}.
 
-Select the location for you data container. To improve synchronization performances, choose the closest location to the **AI Training** cluster you plan to use. For more information about available regions see the [capabilities](../capabilities).
+Select the location for you data container. To improve synchronisation performances, choose the closest location to the **AI Training** cluster you plan to use. For more information about available regions see the [capabilities](../capabilities).
 
 ![image](images/01_object_create_region.png){.thumbnail}
 
@@ -60,7 +60,7 @@ Once the region is selected click `Next`{.action}.
 
 ### Step 4: Selecting the data container
 
-A drop-down menu lets you choose among all available containers. This container will be attached to the **data** object allowing synchronizations.
+A drop-down menu lets you choose among all available containers. This container will be attached to the **data** object allowing synchronisations.
 
 ![image](images/04_data_creation_container.png){.thumbnail}
 
@@ -68,14 +68,14 @@ Before a [**job**](../jobs) you can sync your data from the Object Storage to yo
 
 > [!warning]
 >
-> Object Storage containers and **data** objects are not automatically synchronized to avoid data loss in case of misbehaving training workload.
-> To ensure the persistence of your results make sure to synchronize your containers after the training workload is over.
+> Object Storage containers and **data** objects are not automatically synchronised to avoid data loss in case of misbehaving training workload.
+> To ensure the persistence of your results make sure to synchronise your containers after the training workload is over.
 
 Once you selected your container click `Next`{.action}.
 
 ### Step 5: Selecting a user
 
-All **data** objects created from the control panel are created using administrator priviledges but are necessarily assigned to an **AI Training** user. Pick from the **AI Training** users filtered list the desired user and click `Next`{.action}.
+All **data** objects created from the control panel are created using administrator privileges but are necessarily assigned to an **AI Training** user. Select the desired user from the **AI Training** users filtered list and click `Next`{.action}.
 
 ![image](images/05_data_creation_user.png){.thumbnail}
 
@@ -83,27 +83,28 @@ All **data** objects created from the control panel are created using administra
 
 Set a name for your **data** object, this name should be an all lowercase alphanumeric string with underscores allowed.
 
-Once the name is selected you can set a flag to directly import your data. This will trigger a synchronization between the Object Storage container and your **data** object. If the data you are creating is input data for your training workload you should set this flag.
+Once the name is selected you can set a flag to directly import your data. This will trigger a synchronisation between the Object Storage container and your **data** object. If the data you are creating is input data for your training workload you should set this flag.
 
 ![data creation name](images/06_data_creation_name.png){.thumbnail}
 
 Before submitting the creation you can see the equivalent command to use with the **\$partner\_short client** to create the same **data** object.
 
-The **AI Training** service is mainly supposed to be use through the **\$partner\_full client**. The control panel only offers a subset of the features and is meant to help you get started before using the client.
+The **AI Training** service is mainly supposed to be used through the **\$partner\_full client**. The control panel only offers a subset of the features and is meant to help you get started before using the client.
 
 Finally click `Send`{.action} to submit your **data** creation.
 
 ### Step 7: Consulting your **data** objects
 
-One the creation is submitted you are redirected toward the **data** objects menu of **AI Training**. From this list you can check the **data** objects created along with their synchronization status.
+One the creation is submitted you are redirected toward the **data** objects menu of **AI Training**. From this list you can check the **data** objects created along with their synchronisation status.
 
 ![image](images/07_data_list_synced_unsynced.png){.thumbnail}
 
 In particular:
-* `Last import` gives you the status of the last synchronization triggered from the Object Storage to the **data** object
-* `Last export` gives you the status of the last synchronization triggered from the **data** object to the Object Storage
 
-You can trigger a synchronization by accessing the actions on the far right of the list entry. You only need to select the direction of your synchronization and you get the equivalent command to use with the **\$partner\_short client**.
+- `Last import` gives you the status of the last synchronisation triggered from the Object Storage to the **data** object
+- `Last export` gives you the status of the last synchronisation triggered from the **data** object to the Object Storage
+
+You can trigger a synchronisation by accessing the actions on the far right of the list entry. You only need to select the direction of your synchronisation and you will get the equivalent command to use with the **\$partner\_short client**.
 
 ![image](images/08_data_synchronization.png){.thumbnail}
 
