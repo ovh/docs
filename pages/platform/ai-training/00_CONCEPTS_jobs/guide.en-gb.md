@@ -27,7 +27,7 @@ Each job is linked to a **Public Cloud** project and specifies an amount of reso
 
 ## Going further
 
--   You can check the [OVHcloud documention on how to create a data](../create-data).
+-   You can check the [OVHcloud documentation on how to create a data](../create-data).
 -   You can check the [OVHcloud documentation on how to submit a job](../submit-job)
 
 ## Feedback
