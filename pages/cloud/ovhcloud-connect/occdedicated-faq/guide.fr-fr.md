@@ -18,7 +18,7 @@ OVHcloud Connect permet d'étendre votre réseau d'entreprise avec votre réseau
 
 OVHcloud Connect est l'extension de votre réseau privé OVHcloud vRack donc tous les produits ayant la fonctionnalité vRack activée sont compatibles.
 
-### Comment choisir entre une interconnexion de niveau 2 ou de niveau 3 du modèle OSI?
+### Comment choisir entre une interconnexion de niveau 2 ou de niveau 3 du modèle OSI ?
 
 Les caractéristiques associées aux réseaux de niveau 2 et 3 doivent être prises en compte lors de la phase de construction afin de répondre au mieux à vos besoins d'hybridation.
 
