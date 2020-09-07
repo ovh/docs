@@ -23,7 +23,7 @@ This [guide](../create-data) covers the creation of a data object attached to an
 $cli data new <data-name> <local-data-path> --storage ovh --tags container=<container-name> --tags container-region=<container-region>
 ```
 
-In the above command the `<local-data-path>` is optional. If you provide one, your local data is pushed in your newly created data. You can then synchronise it simply like this:
+In the above command the `<local-data-path>` is optional. If you provide one, your local files are pushed in your newly created **data** object. You can then synchronise it simply like this:
 
 ``` {.console}
 $cli data sync --direction to-object-storage <data-id>
@@ -59,7 +59,7 @@ It is not possible to update a running job. If you wish to change the specificat
 
 ### How to fix file access permission errors?
 
-Within a job, code and users have no root/sudo privileges. To have access to your files, make sure to mount your **data** object at a location available for non- root users. For preset images provided by OVHcloud it is recommended that the destination path is of the form `/workspace/<your-path>` to avoid such errors.
+Within a job, code and users have no root/sudo privileges. To have access to your files, make sure to mount your **data** object at a location available for non-root users. For preset images provided by OVHcloud it is recommended that the destination path is of the form `/workspace/<your-path>` to avoid such errors.
 
 ### How to delete a file from a data object?
 
