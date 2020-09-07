@@ -13,7 +13,7 @@ order: 2
 
 ## En pratique
 
-### Implémentation de la couche 2
+### Implémentation du mode L2
 
 ![Implémentation L2](images/occ-l2-implementation.jpg){.thumbnail}
 
