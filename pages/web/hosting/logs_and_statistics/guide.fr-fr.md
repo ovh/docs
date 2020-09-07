@@ -16,14 +16,13 @@ L'accès aux logs et aux statistiques de votre site est compris dans votre offre
 ## Prérequis
 
 - Disposer d'une offre [d'hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} compatible.
-- Être connecté à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 
 Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web`{.action}, puis sur `Hébergements`{.action} dans la colonne de gauche.
 
 Sélectionnez l'hébergement concerné, cliquez sur l'onglet `Plus+`{.action} puis sur `Statistiques et logs`{.action}
-
 
 ![hosting](images/statistics01.png){.thumbnail}
 
@@ -40,7 +39,7 @@ Pour vous aider à mieux suivre et piloter le trafic de vos sites web, vous disp
 
 ![hosting](images/OWStats01.gif){.thumbnail}
 
-Le tableau de bord d'OVHcloud Web Statistics se présente en 6 sections dans le panneau de gauche.
+Le tableau de bord de OVHcloud Web Statistics se présente en 6 sections dans le panneau de gauche.
 
 - Dashboard : visualisation du trafic sur les sites de votre hébergement.
 - Browsers : classement des explorateurs internet les plus utilisés pour visualiser vos sites.
@@ -50,26 +49,26 @@ Le tableau de bord d'OVHcloud Web Statistics se présente en 6 sections dans le 
 - Status : statistiques des échecs et réussites rencontrés en fonction des codes HTTP retournés.
 - FAQ : rubrique dédiée aux questions les plus fréquentes
 
-Le cadre `Period selection` en haut à droite vous permet de sélectionner une période précise
+Le cadre `Period selection` en haut à droite vous permet de sélectionner une période précise.
 
 #### Urchin v6 (historique)
 
-Si vous ne disposez pas encore de l'outil OVHcloud Web Statistics, vous avez accès à Urchin 6
+Si vous ne disposez pas encore de l'outil OVHcloud Web Statistics, vous avez alors accès à Urchin 6.
 
 ![hosting](images/1490.png){.thumbnail}
 
-Urchin vous donnent des informations sur :
+Urchin vous donne des informations sur :
 
 - Le trafic de votre site
-- Le nombre de visiteurs,
-- Le nombre de pages visualisées,
-- Le « poids » des pages visualisées,
+- Le nombre de visiteurs.
+- Le nombre de pages visualisées.
+- Le « poids » des pages visualisées.
 - Le nombre de requêtes http.
-- Les durées moyennes de connexion à l'ensemble de votre site ou une page particulière
+- Les durées moyennes de connexion à l'ensemble de votre site ou une page particulière.
 - Comment les visiteurs de votre site l'ont-ils connu ?
 - Par quels moteurs de recherche ont-ils trouvé l'URL de votre site ?
-- Quels mots-clés ont-ils utilisé lors de leur recherche ?
-- Quelles pages de votre site ont été les plus visitées ? Le suivi
+- Quels mots-clés ont-ils utilisés lors de leur recherche ?
+- Quelles pages de votre site ont été les plus visitées ? Le suivi.
 
 ### Logs
 
@@ -79,13 +78,13 @@ Vous avez la possibilité de visualiser les logs bruts de votre site avec un dif
 
 Différents type de logs sont à votre disposition :
 
-- Logs Web : trouvez ici les différents logs de consultation de votre site, ainsi que les différentes actions réalisées à partir de votre site. Cela vous permet par exemple de repérer des tentatives de hacks.
+- Logs Web : retrouvez ici les différents logs de consultation de votre site, ainsi que les différentes actions réalisées à partir de votre site. Cela vous permet par exemple de repérer des tentatives de hack.
 - Logs FTP : les différentes connexions FTP seront enregistrées et conservées dans ces logs.
 - Logs erreur : les différentes erreurs générées par votre site.
 - Logs CGI : les différents appels aux scripts cgi.bin qui ont été réalisés.
 - Logs out : les statistiques de votre hébergement sur les différents appels externes réalisés.
 - Logs SSH : ces logs indiquent les différentes connexions réalisées avec le protocole SSH.
-- Logs cron : le résultat de l'exécution de vos tâches planifiées ([http://guides.ovh.com/MutualiseCron](http://guides.ovh.com/MutualiseCron){.external})
+- Logs cron : le résultat de l'exécution de vos tâches planifiées ([Les tâches automatisées (CRON) sur votre hébergement](..//mutualise-taches-automatisees-cron/))
 
 
 ## Aller plus loin
