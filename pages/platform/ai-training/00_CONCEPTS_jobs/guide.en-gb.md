@@ -7,7 +7,7 @@ order: 1
 ---
 ## Definition
 
-A **job** in **AI Training powered by \$partner\_full** is the workload unit submitted to the cluster. A job runs as a docker container within OVHcloud infrastructure.
+A **job** in **AI Training powered by \$partner\_full** is the workload unit submitted to the cluster. A job runs as a Docker container within OVHcloud infrastructure.
 
 Each job is linked to a **Public Cloud** project and specifies an amount of resources to use to run the training task along with a docker image either publicly available, in the **AI Training** shared registry scoped to your project or the private registry of your choosing that you attached. For the latter, see [OVHcloud documentation on how to attach a private registry](../attach-private-registry).
 
