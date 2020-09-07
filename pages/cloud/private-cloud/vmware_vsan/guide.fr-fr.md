@@ -16,7 +16,7 @@ Ce guide a pour objectif d’expliquer les concepts et les détails de la mise e
 
 ## Prérequis
 
-* Posséder une offre [Hosted Private Cloud Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external},
+* Posséder une offre [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external},
 * Avoir ajouté au minimum trois hôtes vSAN,
 * Pouvoir accéder à l’interface de gestion vSphere.
 
@@ -101,7 +101,7 @@ L'utilisation des mécanismes de redondances induit logiquement une consommation
 
 #### Espace net utilisable pour les données utilisateur
 
-Pour illustrer très concrètement le point précédent, voici une estimation conservatrice de l'espace disponible pour les données dans différentes configuration  Host PREMIER vSAN 192 ou vSAN 384 ou vSAN 768, en prenant en compte la contrainte de remplissage à 70% que VMware recommande fortement de ne pas dépasser.
+Pour illustrer très concrètement le point précédent, voici une estimation conservatrice de l'espace disponible pour les données dans différentes configurations  Host PREMIER vSAN 192 ou vSAN 384 ou vSAN 768, en prenant en compte la contrainte de remplissage à 70% que VMware recommande fortement de ne pas dépasser.
 
 | NB Hosts vSAN 192  | FTT  | Host capacity (TB)  | Total Space  | 	Usable Space RAID 1 Policy (TB)  | Usable Space RAID 5 Policy (TB)  | Usable Space RAID 6 Policy (TB)  |
 |---|---|---|---|---|---|---|
