@@ -1,7 +1,7 @@
 ---
 title: Présentation des concepts
 slug: presentation-concepts
-excerpt: 'Présentation des concepts nécessaires à la compréhension de l'offre OVHcloud Connect'
+excerpt: Présentation des concepts nécessaires à la compréhension de l’offre OVHcloud Connect
 section: Concepts
 order: 1
 ---
