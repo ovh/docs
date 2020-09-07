@@ -67,8 +67,8 @@ Urchin vous donne des informations sur :
 - Les durées moyennes de connexion à l'ensemble de votre site ou une page particulière.
 - Comment les visiteurs de votre site l'ont-ils connu ?
 - Par quels moteurs de recherche ont-ils trouvé l'URL de votre site ?
-- Quels mots-clés ont-ils utilisés lors de leur recherche ?
-- Quelles pages de votre site ont été les plus visitées ? Le suivi.
+- Quels mots-clés ont été utilisés lors de leur recherche ?
+- Quelles pages de votre site ont été les plus visitées ? 
 
 ### Logs
 
@@ -84,7 +84,7 @@ Différents type de logs sont à votre disposition :
 - Logs CGI : les différents appels aux scripts cgi.bin qui ont été réalisés.
 - Logs out : les statistiques de votre hébergement sur les différents appels externes réalisés.
 - Logs SSH : ces logs indiquent les différentes connexions réalisées avec le protocole SSH.
-- Logs cron : le résultat de l'exécution de vos tâches planifiées ([Les tâches automatisées (CRON) sur votre hébergement](..//mutualise-taches-automatisees-cron/))
+- Logs CRON : le résultat de l'exécution de vos tâches planifiées ([Les tâches automatisées (CRON) sur votre hébergement](../mutualise-taches-automatisees-cron/))
 
 
 ## Aller plus loin
