@@ -165,7 +165,7 @@ Jeśli na przykład jest zalogowanych 50 użytkowników i zaloguje się 51, to r
 
 Druga tabela dotyczy opcji *VM encryption*.
 
-Więcej szczegółów na temat tej opcji znajdziesz w [tym przewodniku](../vm-encrypt/).
+Więcej szczegółów na temat tej opcji znajdziesz w [tym przewodniku](../szyfrowanie-vm/).
 
 #### Operacje
 
