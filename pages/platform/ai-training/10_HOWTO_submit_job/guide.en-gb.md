@@ -5,8 +5,7 @@ excerpt: Learn how to submit an AI Training job
 section: How to
 order: 1
 ---
-
-*Last updated 12th August, 2020.*
+*Last updated 7th September, 2020.*
 
 ## Objective
 
@@ -165,7 +164,7 @@ From this list you can access your job details either by clicking on its `ID` or
 
 ### Step 13: Cancelling your job
 
-If you are over-using your notebook, if your model converged prematurely or if you just wish to interrupt your job you can do so from the **jobs** list.
+If you are done using your notebook, if your model converged prematurely or if you just wish to interrupt your job you can do so from the **jobs** list.
 
 From the list of **jobs** you can list the available actions at the far right of each entry and interrupt the job by clicking `Stop`{.action}. Alternatively, from the **job** details you can also interrupt the **job** from the list of actions.
 

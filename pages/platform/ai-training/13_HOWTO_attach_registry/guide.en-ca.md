@@ -5,7 +5,7 @@ excerpt: Learn how to attach your own registry to AI Training
 section: How to
 order: 3
 ---
-*Last updated 14th August, 2020.*
+*Last updated 7th September, 2020.*
 
 ## Objective
 
@@ -13,7 +13,7 @@ This guide covers the process of attaching a private registry to the **AI Traini
 
 ## Requirements
 
--   a **public cloud** project
+-   a **Public Cloud** project
 -   credentials for the Docker registry you wish to attach
 -   access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
@@ -37,9 +37,9 @@ Once the form is filled out click `Attach`{.action}.
 
 ## Step 3: Submitting an image from your registry
 
-Once your registry is attach you can use any images pushed on the registry for your jobs.
+Once your registry is attached you can use any images pushed on the registry for your jobs.
 
-From the manager while [submitting a job](../submit-job) you can choose a custom Docker image in Step 7.
+From the manager while [submitting a job](../submit-job), you can choose a custom Docker image in Step 7.
 
 ![custom docker image](images/02_submit_image_custom.png){.thumbnail}
 
@@ -50,8 +50,8 @@ The default shared registry remains available even with a private registry attac
 ## Going Further
 
 -   You can check the official documentation about [how to submit a **job**](../submit-job)
--   You can checkout the documentation about the [**\$partner\_full client**](https://docs.console.preprod.training.ai.cloud.ovh.net/)
--   You can checkout the documentation about [how to setup the \$partner\_full client](../install-client)
+-   You can check out the documentation about the [**\$partner\_full client**](https://docs.console.preprod.training.ai.cloud.ovh.net/)
+-   You can check out the documentation about [how to setup the \$partner\_full client](../install-client)
 
 ## Feedback
 

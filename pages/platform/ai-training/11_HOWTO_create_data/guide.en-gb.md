@@ -5,7 +5,7 @@ excerpt: Learn how to create Data object on AI Training
 section: How to
 order: 1
 ---
-*Last updated 14th August, 2020.*
+*Last updated 7th September, 2020.*
 
 ## Objective
 
@@ -101,10 +101,10 @@ One the creation is submitted you are redirected toward the **data** objects men
 
 In particular:
 
-- `Last import` gives you the status of the last synchronisation triggered from the Object Storage to the **data** object
-- `Last export` gives you the status of the last synchronisation triggered from the **data** object to the Object Storage
+-   `Last import` gives you the status of the last synchronisation triggered from the Object Storage to the **data** object
+-   `Last export` gives you the status of the last synchronisation triggered from the **data** object to the Object Storage
 
-You can trigger a synchronisation by accessing the actions on the far right of the list entry. You only need to select the direction of your synchronisation and you will get the equivalent command to use with the **\$partner\_short client**.
+You can trigger a synchronisation by accessing the actions on the far right of the list entry. You only need to select the direction of your synchronisation and you get the equivalent command to use with the **\$partner\_short client**.
 
 ![image](images/08_data_synchronization.png){.thumbnail}
 

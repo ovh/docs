@@ -5,11 +5,11 @@ excerpt: Learn how to install the $partner_full client to interact with AI Train
 section: How to
 order: 2
 ---
-*Last updated 14th August, 2020.*
+*Last updated 7th September, 2020.*
 
 ## Objective
 
-This guide covers the installtion of the \$partner\_full client. The client is the recommended means of interaction with the **AI Training** service.
+This guide covers the installation of the \$partner\_full client. The client is the recommended means of interaction with the **AI Training** service.
 
 ## Requirements
 
@@ -66,7 +66,7 @@ It is recommended to add this value to your `.bashrc` file or similar.
 
 ### Step 3: Authenticating
 
-Once the **\$partner\_full** client is installed and configure, you need to authenticate with the **AI Training** service.
+Once the **\$partner\_full** client is installed and configured, you need to authenticate with the **AI Training** service.
 
 ``` {.console}
 $cli login
@@ -76,7 +76,7 @@ Follow the link returned by this function, you will reach an authentication page
 
 ![image](images/00_oauth2_login.png){.thumbnail}
 
-Use the credentials of your **AI Training** user to login. Once authenticated, you are provided with a verification code that you need to paste in your prompt to finalize your login.
+Use the credentials of your **AI Training** user to login. Once authenticated, you are provided with a verification code that you need to paste in your prompt to finalise your login.
 
 ![oauth verification code](images/01_oauth_verification_code.png){.thumbnail}
 

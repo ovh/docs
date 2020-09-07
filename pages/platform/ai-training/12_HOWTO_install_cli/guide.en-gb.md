@@ -5,7 +5,7 @@ excerpt: Learn how to install the $partner_full client to interact with AI Train
 section: How to
 order: 2
 ---
-*Last updated 14th August, 2020.*
+*Last updated 7th September, 2020.*
 
 ## Objective
 

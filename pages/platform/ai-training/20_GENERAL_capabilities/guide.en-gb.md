@@ -5,6 +5,8 @@ excerpt: Find out about current capabilities and limitations of AI Training powe
 section: General
 order: 0
 ---
+*Last updated 7th September, 2020.*
+
 ## Capabilities and known limits
 
 ### Jobs resources are limited to:

@@ -5,6 +5,7 @@ excerpt: Learn the concept behind AI Training data
 section: Concepts
 order: 1
 ---
+*Last updated 7th September, 2020.*
 
 ## Definition
 
@@ -25,9 +26,9 @@ There are two ways to hydrate your data on the filesystem:
 
 ## Under the hood
 
-The **data** object keeps track of the data you uploaded (either from Object Storage synchronisation or from local push). If you provide a **data** upon job submission the distributed filesystem is mounted in the Docker container at the specified path.
+The **data** object keeps track of the data you uploaded (either from Object Storage synchronization or from local push). If you provide a **data** upon job submission the distributed filesystem is mounted in the docker container at the specified path.
 
-Your changes are directly applied on the filesystem but it remains your responsibility to trigger the synchronisation with the Object Storage (we require manual synchronisation to avoid side effects on your persistent storage in case of an unexpected behaviour from your job).
+Your changes are directly applied on the filesystem but it remains your responsibility to trigger the synchronization with the Object Storage (we require manual synchronization to avoid side effects on your persistent storage in case of an unexpected behavior from your job).
 
 ## Going further
 

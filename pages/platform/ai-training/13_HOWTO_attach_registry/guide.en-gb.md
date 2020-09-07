@@ -5,7 +5,7 @@ excerpt: Learn how to attach your own registry to AI Training
 section: How to
 order: 3
 ---
-*Last updated 14th August, 2020.*
+*Last updated 7th September, 2020.*
 
 ## Objective
 

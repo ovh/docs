@@ -23,13 +23,13 @@ This [guide](../create-data) covers the creation of a data object attached to an
 $cli data new <data-name> <local-data-path> --storage ovh --tags container=<container-name> --tags container-region=<container-region>
 ```
 
-In the above command the `<local-data-path>` is optional. If you provide one your local data is pushed in your newly created data. You can then synchronize it simply like this:
+In the above command the `<local-data-path>` is optional. If you provide one your local data is pushed in your newly created data. You can then synchronise it simply like this:
 
 ``` {.console}
 $cli data sync --direction to-object-storage <data-id>
 ```
 
-Alternatively if you directly want the data to be synced with the Object Storage you can provide the following flag upon creation `--sync to-object-storage`. If the container does not exist it will be created during the synchronization.
+Alternatively if you directly want the data to be synced with the Object Storage you can provide the following flag upon creation `--sync to-object-storage`. If the container does not exist it will be created during the synchronisation.
 
 ### How to fix Forbidden errors ?
 

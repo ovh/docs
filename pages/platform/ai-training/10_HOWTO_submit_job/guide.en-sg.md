@@ -5,17 +5,17 @@ excerpt: Learn how to submit an AI Training job
 section: How to
 order: 1
 ---
-*Last updated 12th August, 2020.*
+*Last updated 7th September, 2020.*
 
 ## Objective
 
-This guide covers the initialization of **AI Training** and the submission of [**jobs**](../jobs) through the Control Panel.
+This guide covers the initialisation of **AI Training** and the submission of [**jobs**](../jobs) through the Control Panel.
 
 ## Requirements
 
 -   a **public cloud** project
 -   a user for AI Training (creation covered in Step 3)
--   optionnally **data** objects to attach to the **job** at step 8, see our [create **data** object](../data) guide.
+-   optionally **data** objects to attach to the **job** at step 8, see our [create **data** object](../data) guide.
 -   access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
@@ -28,7 +28,7 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 ### Step 2: Activating AI Training service
 
-Once you read general information and validated this services's contract terms, you can start submitting your jobs. Upon activating the AI Training service you grant OVHcloud access to your Object Storage containers. This access is only used to synchronize your data within **AI Training** with your containers.
+Once you have read the general information and validated this services's contract terms, you can start submitting your jobs. Upon activating the AI Training service you grant OVHcloud access to your Object Storage containers. This access is only used to synchronise your data within **AI Training** with your containers.
 
 ![training onboarding page](images/01_training_oboarding.png){.thumbnail}
 
@@ -54,10 +54,10 @@ Users management is available in the `Public Cloud` Control Panel under `Project
 
 ![image](images/03_users_menu.png){.thumbnail}
 
-Create a new [user](../users) and specify the required roles. Two roles are used within **AI Training**
+Create a new [user](../users) and specify the required roles. Two roles are used within **AI Training**:
 
 -   AI Training Operator: Grants access to **AI Training**
--   Objectstore Operator: Grants read/write access to the OVHcloud Object Storage, required to use **data** synchronization features.
+-   Objectstore Operator: Grants read/write access to the OVHcloud Object Storage, required to use **data** synchronisation features.
 
 It is recommended to assign both roles.
 
@@ -78,7 +78,7 @@ Select the desired region and click `Next`{.action}.
 
 ### Step 6: Selecting a user
 
-All jobs submitted from the Control Panel are created using administrator priviledges but are necessarily assigned to an **AI Training** user. Pick from the **AI Training** users filtered list the desired user and click `Next`{.action}.
+All jobs submitted from the Control Panel are created using administrator priviledges but are necessarily assigned to an **AI Training** user. Pick the desired user from the **AI Training** users filtered list and click `Next`{.action}.
 
 ![image](images/07_submit_user.png){.thumbnail}
 
@@ -110,7 +110,7 @@ You can attach [**data**](../data) objects to your job either as input for your 
 
 Before attaching a data you need to [create one](../data). A **data** cannot be attached to a running **job**.
 
-To attach a **data** object, just select among the list on the left. Next to each data, within the parenthesis, you can check the mount path in the Docker container for the submitted **job**. If you wish to customize this mount path, you will need to use the **\$partner\_full client**, its installation procedure is available [here](../install-client).
+To attach a **data** object, just select among the list on the left. Next to each data, within the parenthesis, you can check the mount path in the Docker container for the submitted **job**. If you wish to customise this mount path, you will need to use the **\$partner\_full client**, its installation procedure is available [here](../install-client).
 
 ![image](images/10_submit_data_selected.png){.thumbnail}
 
@@ -126,7 +126,7 @@ The Docker image you provided in Step 7 includes an entrypoint for your containe
 
 **AI Training** leverages \$partner\_full Orkestrator to orchestrate and schedule workloads using GPU resources. In this step you can select the amount of GPUs you want to be used during your training workload.
 
-The max amount of GPUs you can select for your **job** is region dependant. For more information see the [capabilities](../capabilities).
+The max amount of GPUs you can select for your **job** is region dependent. For more information see the [capabilities](../capabilities).
 
 Once the number of GPUs is set you can see a preview of the minute billing rate for this amount of resources. Click `Next`{.action}.
 
@@ -157,21 +157,21 @@ From this list you can access your job details either by clicking on its `ID` or
 ![image](images/15_jobs_details.png){.thumbnail}
 
 -   **Job Information**: basic information on the job you submitted
--   Container: describes the status of your job and provides you with the url to access any service exposed by your job on the port `8080`. The url is of the form `https://<JOB-ID>.job.console.<REGION>.training.ai.cloud.ovh.net/`. If the service is not exposed on the port `8080` it is still accessible by specifying the port in the url this way `https://<JOB-ID>-<PORT>.job.console.<REGION>.training.ai.cloud.ovh.net/`. You can check the list of available ports in the [capabilities](../capabilities).
+-   Container: describes the status of your job and provides you with the URL to access any service exposed by your job on the port `8080`. The URL is of the form `https://<JOB-ID>.job.console.<REGION>.training.ai.cloud.ovh.net/`. If the service is not exposed on the port `8080` it is still accessible by specifying the port in the URL this way: `https://<JOB-ID>-<PORT>.job.console.<REGION>.training.ai.cloud.ovh.net/`. You can check the list of available ports in the [capabilities](../capabilities).
 -   Resources: a summary of the resources consumed by the **job**
 -   Actions: available actions
 -   Data: list of **data** objects attach to the job
 
 ### Step 13: Cancelling your job
 
-If you are over using your notebook, if your model converged prematurely or if you just wish to interrupt your job you can do so from the **jobs** list.
+If you are done using your notebook, if your model converged prematurely or if you just wish to interrupt your job you can do so from the **jobs** list.
 
-From the list of **jobs** you can list the available actions at the far right of each entry and interrupt the job by clicking `Stop`{.action}. Alternatively, from a **job** details you can also interrupt the **job** from the list of actions.
+From the list of **jobs** you can list the available actions at the far right of each entry and interrupt the job by clicking `Stop`{.action}. Alternatively, from the **job** details you can also interrupt the **job** from the list of actions.
 
 ## Going Further
 
--   You can checkout the documentation about the [**\$partner\_full client**](https://docs.console.preprod.training.ai.cloud.ovh.net/)
--   You can checkout the documentation about [how to setup the \$partner\_full client](../install-client)
+-   You can check out the documentation about the [**\$partner\_full client**](https://docs.console.preprod.training.ai.cloud.ovh.net/)
+-   You can check out the documentation about [how to setup the \$partner\_full client](../install-client)
 
 ## Feedback
 
