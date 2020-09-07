@@ -27,9 +27,9 @@ Pamiętaj, że uprawnienie to można przyznać także innym użytkownikom za po�
 
 Za pośrednictwem bezpiecznego interfejsu możesz wykonać trzy rodzaje operacji. W zależności od wykonywanej operacji, zapoznaj się z odpowiednim rozdziałem niniejszego przewodnika:
 
-- [Zatwierdzenie operacji za pomocą tokena](./#zatwierdzenie-operacji-za-pomoc-tokena)
-- [Zmiana hasła użytkownika](./#zmiana-hasa-uytkownika)
-- [Reset hasła](./#reset-hasa)
+- [Zatwierdzenie operacji za pomocą tokena](./#zatwierdzenie-operacji-za-pomoca-tokena)
+- [Zmiana hasła użytkownika](./#zmiana-hasla-uzytkownika)
+- [Reset hasła](./#reset-hasla)
 
 ### Zatwierdzenie operacji za pomocą tokena
 
@@ -52,7 +52,7 @@ Wiadomość ta zawiera następujące informacje:
 - nazwa operacji wymagająca zatwierdzenia;
 - ID operacji;
 - token do zatwierdzenia operacji;
-- link umożliwiający zatwierdzenie operacji (pamiętaj, że jeśli Twój telefon nie jest podłączony do sieci z [autoryzowanym IP](../manager-ovh-private-cloud/#bezpieczestwo), strona się nie wyświetli).
+- link umożliwiający zatwierdzenie operacji (pamiętaj, że jeśli Twój telefon nie jest podłączony do sieci z [autoryzowanym IP](../manager-ovh-private-cloud/#bezpieczenstwo), strona się nie wyświetli).
 
 Aby zatwierdzić operację, kliknij link otrzymany w wiadomości. Następnie przejdź do sekcji `Operation validation`{.action}.
 
@@ -80,7 +80,7 @@ Każdy użytkownik może zmienić swoje hasło, nawet bez uprawnienia **token va
 
 > [!primary]
 >
-> Jeśli użytkownik nie zna swojego hasła, musi poprosić innego użytkownika posiadającego uprawnienie **token validator** o zmianę hasła w jego imieniu przy użyciu procedury [password reset](./#reset-hasa).
+> Jeśli użytkownik nie zna swojego hasła, musi poprosić innego użytkownika posiadającego uprawnienie **token validator** o zmianę hasła w jego imieniu przy użyciu procedury [password reset](./#reset-hasla).
 > 
 
 Aby zmienić hasło innego użytkownika, zaloguj się do bezpiecznego interfejsu (`https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/`) i kliknij przycisk `Zmień hasło`{.action}.
@@ -89,7 +89,7 @@ Aby zmienić hasło innego użytkownika, zaloguj się do bezpiecznego interfejsu
 
 Na stronie, która się wyświetli, wybierz odpowiedniego użytkownika i ustaw nowe hasło.
 
-Do użytkowników posiadających uprawnienie [token validator](./#zatwierdzenie-operacji-za-pomoc-tokena) zostanie wysłany token, aby mogli **zatwierdzić operację**.
+Do użytkowników posiadających uprawnienie [token validator](./#zatwierdzenie-operacji-za-pomoca-tokena) zostanie wysłany token, aby mogli **zatwierdzić operację**.
 
 ![Définir le mot de passe](images/defineNewPassword.png){.thumbnail}
 
@@ -114,7 +114,7 @@ Wprowadź dwa tokeny otrzymane w wiadomości SMS oraz e-mailem, po czym ustaw no
 
 > [!primary]
 >
-> Jeśli reset został przeprowadzony dla innego użytkownika, wtedy osoba, która przeprowadziła tę procedurę, powinna przekazać temu użytkownikowi nowe hasło. Zalecamy, aby użytkownik jak najszybciej [zmienił otrzymane hasło](./#zmiana-hasa-uytkownika).
+> Jeśli reset został przeprowadzony dla innego użytkownika, wtedy osoba, która przeprowadziła tę procedurę, powinna przekazać temu użytkownikowi nowe hasło. Zalecamy, aby użytkownik jak najszybciej [zmienił otrzymane hasło](./#zmiana-hasla-uzytkownika).
 > 
 
 ![Jeton et mot de passe](images/tokenAndPassword.png){.thumbnail}
