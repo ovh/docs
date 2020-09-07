@@ -28,8 +28,13 @@ Sélectionnez l'hébergement concerné, cliquez sur l'onglet `Plus+`{.action} pu
 
 Dans la fenêtre qui s'affiche, vous avez le choix entre deux liens. L'un pour afficher les **statistiques des visites** et l'autre pour accéder aux **logs** bruts de votre hébergement.
 
+**Hébergement avec l'outil de statistiques « Urchin 6 »**
 
 ![hosting](images/statistics02.png){.thumbnail}
+
+**Hébergement avec l'outil de statistiques « OVHcloud Web Statistics »**
+
+![hosting](images/statistics02bis.png){.thumbnail}
 
 ### Statistiques des visites
 
