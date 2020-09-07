@@ -3,6 +3,7 @@ title: Présentation des concepts
 slug: presentation-concepts
 excerpt: 'Présentation des concepts nécessaires à la compréhension de l'offre OVHcloud Connect'
 section: Concepts
+order: 1
 ---
 
 **Dernière mise à jour le 07/092020**
