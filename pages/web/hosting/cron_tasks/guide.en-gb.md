@@ -56,10 +56,23 @@ Click on `Next`{.action} to proceed to the second step.
 
 The interface offers two modes to configure the frequency of your task. Use the **Basic mode** for a beginner-friendly selection of scheduling options. If you prefer to directly enter a frequency, similar to a cron table format (*crontab*), choose the **Advanced mode**.
 
+> [!faq]
+>
+> Basic mode
+>> Use the drop-down menus to specify the time of day, days of a month, week days and months for the task.
+![cron frequency](images/cron-jobs-3.png){.thumbnail}
+
+> [!faq]
+>
+> Advanced mode
+>> Enter numeric values as you would in a *crontab*. The asterisk operator denotes "every value" of the time period, meaning the task would continuously run **once an hour every day** in this example.
+![cron frequency](images/cron-jobs-4.png){.thumbnail}
+
+
 |Basic mode|
 |---|
 |Use the drop-down menus to specify the time of day, days of a month, week days and months for the task.|
-|![cron frequency](images/cron-jobs-3.png){.thumbnail}|![cron frequency](images/cron-jobs-4.png){.thumbnail}|
+|![cron frequency](images/cron-jobs-3.png){.thumbnail}|
 
 |Advanced mode| 
 |---|
