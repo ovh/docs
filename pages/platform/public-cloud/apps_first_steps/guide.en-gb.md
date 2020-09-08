@@ -43,8 +43,8 @@ Once the instance has been installed with your chosen pre-installed application,
 >
 >> serviceName *
 >>> This is your cloud project ID
->> instanceId *
->>> This is the UUID of your instance
+>> <br> instanceId *
+>>> <br> This is the UUID of your instance
 
 #### Let's Encrypt SSL
 
