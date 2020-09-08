@@ -54,12 +54,19 @@ Click on `Next`{.action} to proceed to the second step.
 
 #### Step 2: Setting the frequency
 
-The interface offers two modes to configure the frequency of your task. Use the **Basic mode** for a beginner-friendly selection of scheduling options. If you prefer to directly enter a frequency, similar to a cron table format (*crontab*), choose the **Advanced mode**. You can switch between the two modes during configuration to view the changes accordingly. Please also note the [limitations when scheduling a task on a Web Hosting](./#limitations-of-web-hosting-tasks).
+The interface offers two modes to configure the frequency of your task. Use the **Basic mode** for a beginner-friendly selection of scheduling options. If you prefer to directly enter a frequency, similar to a cron table format (*crontab*), choose the **Advanced mode**.
 
-|Basic mode|Advanced mode| 
-|---|---| 
-|Use the drop-down menus to specify the time of day, days of a month, week days and months for the task.|Enter numeric values as you would in a *crontab*. The asterisk operator denotes "every value" of the time period, meaning the task would continuously run **once an hour every day** in this example.|
+|Basic mode|
+|---|
+|Use the drop-down menus to specify the time of day, days of a month, week days and months for the task.|
 |![cron frequency](images/cron-jobs-3.png){.thumbnail}|![cron frequency](images/cron-jobs-4.png){.thumbnail}|
+
+|Advanced mode| 
+|---|
+|Enter numeric values as you would in a *crontab*. The asterisk operator denotes "every value" of the time period, meaning the task would continuously run **once an hour every day** in this example.|
+|![cron frequency](images/cron-jobs-4.png){.thumbnail}|
+
+You can switch between the two modes during configuration to view the changes accordingly. Please also note the [limitations when scheduling a task on a Web Hosting](./#limitations-of-web-hosting-tasks).
 
 ![cron control panel](images/cron-jobs-5.gif){.thumbnail}
 
