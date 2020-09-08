@@ -41,10 +41,11 @@ Once the instance has been installed with your chosen pre-installed application,
 >
 > Parameters
 >
->> serviceName *
+>> serviceName 
 >>> This is your cloud project ID
->> instanceId *
->>> This is the UUID of your instance
+>
+>>  instanceId 
+>>>  This is the UUID of your instance
 
 #### Let's Encrypt SSL
 
@@ -52,8 +53,8 @@ This section only applies to WordPress, Drupal, Joomla and Prestashop installati
 
 1. You must create or edit two `A` records in the OVHcloud Control Panel which point to the IP address of your server. For example if your domain name is "personaldomain.ovh" then you need to create `A` records for:
 
-- personaldomain.ovh
-- www.personaldomain.ovh
+   - personaldomain.ovh
+   - www.personaldomain.ovh
 
 If your domain is registered with OVHcloud you can follow [this guide.](../../domains/web_hosting_how_to_edit_my_dns_zone/).
 <br>If your domain is registered with another company you will need to contact them for assistance to set up your `A` records.
