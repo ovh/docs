@@ -61,24 +61,24 @@ This section will explain the first steps specifically for the Plesk pre-install
 2. Click on the URL for Plesk in the email.
 3. Log in using the username and password provided in the email.
 4. Once logged in, Plesk will ask you to provide:
-    a) Your contact information
-    b) A new password for the "admin" user which you will use for login on the Plesk panel
-    c) Licence information*
-    d) Read and accept their end-user licence agreement
+    a) Your contact information  
+    b) A new password for the "admin" user which you will use for login on the Plesk panel  
+    c) Licence information*  
+    d) Read and accept their end-user licence agreement  
 
 No further steps are necessary to complete the first configuration of this application.
 
 > [!faq]
 >
 > Where is my licence for Plesk?
->> You can purchase a license from OVHcloud for your VPS via the [OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+>> You can purchase a licence from OVHcloud for your VPS via the [OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
 
 #### Virtualmin
 
 This section will explain the first steps specifically for the Virtualmin pre-installed image.
 
 1. Open the email from OVcloud which contains your application login details.
-2. Click on the URL for Plesk in the email.
+2. Click on the URL for Virtualmin in the email.
 3. Log in using the username and password provided in the email.
 4. Once logged in, Virtualmin will have several optimisation questions for you to answer. It will help Virtualmin configure itself to meet your specification.
 
@@ -89,7 +89,7 @@ No further steps are necessary to complete the first configuration of this appli
 This section will explain the first steps specifically for the Vestacp pre-installed image.
 
 1. Open the email from OVHcloud which contains your application login details.
-2. Click on the URL for Plesk in the email.
+2. Click on the URL for Vestacp in the email.
 3. Log in using the username and password provided in the email.
 
 No further steps are necessary to complete the first configuration of this application.
@@ -108,7 +108,7 @@ No further steps are necessary to complete the first configuration of this appli
 This section will explain the first steps specifically for the GitLab pre-installed image.
 
 1. Open the email from OVHcloud which contains your application login details.
-2. Click on the URL for Plesk in the email.
+2. Click on the URL for GitLab in the email.
 3. Set your new password.
 4. Log in with "root" and the new password you have just set.
 
@@ -121,7 +121,7 @@ No further steps are necessary to complete the first configuration of this appli
 This section will explain the first steps specifically for the OpenVPN pre-installed image.
 
 1. Open the email from OVHcloud which contains your application login details.
-2. Click on the URL for Plesk in the email.
+2. Click on the URL for OpenVPN in the email.
 3. Log in using the username and password provided in the email.
 
 No further steps are necessary to complete the first configuration of this application.
@@ -131,7 +131,7 @@ No further steps are necessary to complete the first configuration of this appli
 This section will explain the first steps specifically for the WordPress pre-installed image.
 
 1. Open the email from OVHcloud which contains your application login details.
-2. Click on the URL for Plesk in the email.
+2. Click on the URL for WordPress in the email.
 3. Follow the on screen final configuration instructions of WordPress. When asked about the database details use always "localhost" as the address and for username and password use the provided information in the API.
 
 You can go further by securing your site with an SSL certificate for free by [following these steps](./#lets-encrypt-ssl).
@@ -143,7 +143,7 @@ No further steps are necessary to complete the first configuration of this appli
 This section will explain the first steps specifically for the Joomla pre-installed image.
 
 1. Open the email from OVHcloud which contains your application login details.
-2. Click on the URL for Plesk in the email.
+2. Click on the URL for Joomla in the email.
 3. Follow the on screen final configuration instructions of Joomla. When asked about the database details use always "localhost" as the address and for username and password use the provided information in the API.
 
 You can go further by securing your site with an SSL certificate for free by [following these steps](./#lets-encrypt-ssl).
@@ -155,7 +155,7 @@ No further steps are necessary to complete the first configuration of this appli
 This section will explain the first steps specifically for the Drupal pre-installed image.
 
 1. Open the email from OVHcloud which contains your application login details.
-2. Click on the URL for Plesk in the email.
+2. Click on the URL for Drupal in the email.
 3. Follow the on screen final configuration instructions of Drupal. When asked about the database details use always "localhost" as the address and for username and password use the provided information in the API.
 
 You can go further by securing your site with an SSL certificate for free by [following these steps](./#lets-encrypt-ssl).
@@ -167,7 +167,7 @@ No further steps are necessary to complete the first configuration of this appli
 This section will explain the first steps specifically for the Prestashop pre-installed image.
 
 1. Open the email from OVHcloud which contains your application login details.
-2. Click on the URL for Plesk in the email.
+2. Click on the URL for Prestashop in the email.
 3. Follow the on screen final configuration instructions of Prestashop. When asked about the database details use always "localhost" as the address and for username and password use the provided information in the API.
 4. Once the initial setup is done you can delete the install folder and change the admin URL using a script we placed on the server for you. By executing this script we will carry out the security recommendation by Prestashop after installation. Just SSH into the server and execute these commands:
 
@@ -221,7 +221,7 @@ certbot certonly -d personaldomain.ovh --webroot
 ```
 When asked about "Input the webroot", you need to enter something like "/var/www/wordpress". If you are installing Joomla, you need to replace "wordpress" with "joomla".
 
-Now you need to get certbot to also place it into the ssl.conf file. To trigger this, enter:
+Now you need to get Certbot to also place it into the ssl.conf file. To trigger this, enter:
 
 ```sh
 certbot -d personaldomain.ovh --apache
