@@ -51,17 +51,17 @@ Once the instance has been installed with your chosen pre-installed application,
 
 This section only applies to WordPress, Drupal, Joomla and Prestashop installations. It will not work for other installations.
 
-`&nbsp;1.`  You must create or edit two `A` records in the OVHcloud Control Panel which point to the IP address of your server. For example if your domain name is "personaldomain.ovh" then you need to create `A` records for:
+1.  You must create or edit two `A` records in the OVHcloud Control Panel which point to the IP address of your server. For example if your domain name is "personaldomain.ovh" then you need to create `A` records for:
 
-     - personaldomain.ovh
-     - www.personaldomain.ovh
+     personaldomain.ovh <br>
+     www.personaldomain.ovh <br>
 
 If your domain is registered with OVHcloud you can follow [this guide.](../../domains/web_hosting_how_to_edit_my_dns_zone/).
 <br>If your domain is registered with another company you will need to contact them for assistance to set up your `A` records.
 
-`&nbsp;2.`  You may need to wait 24 hours before the two records propagate fully. You can always check it with [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. If the IP for your domain is showing on mxtoolbox the same as your server's IP address then you can proceed to the next step.
+2.  You may need to wait 24 hours before the two records propagate fully. You can always check it with [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. If the IP for your domain is showing on mxtoolbox the same as your server's IP address then you can proceed to the next step.
 
-`&nbsp;3.`  SSH into your server with the CentOS user and execute the following commands to install Certbot
+3.  SSH into your server with the CentOS user and execute the following commands to install Certbot
 
 > [!warning]
 >
@@ -76,7 +76,7 @@ echo "ServerName personaldomain.ovh;" >> /etc/httpd/conf/httpd.conf
 systemctl restart httpd
 ```
 
-`&nbsp;4.`  Generate your SSL using Certbot (follow the on screen instructions)
+4.  Generate your SSL using Certbot (follow the on screen instructions)
 
 ```sh
 certbot certonly -d personaldomain.ovh --webroot
