@@ -29,14 +29,18 @@ Using the [OVHcloud Control Panel](../starting_with_a_vps/) / API, install your 
 This section will explain the first steps specifically for the cPanel pre-installed image. Steps marked with * will have FAQ at the end of the steps.
 
 1. Open the email from us which contains your application login details.
-5. Click on the URL for cPanel in the email.  
+2. Click on the URL for cPanel in the email.
+
 > [!primary]
 >
 > If the link has expired already, please SSH into the instance using the CentOS user and execute the "whmlogin" command to generate a new one or just reinstall the instance.
 >
-3. Read and accept the terms of cPanel.
-8. Provide your email and nameservers you wish to set on the server *.
-9. Set your root password which you will use the next time you log in to WHM *.
+
+<ol start="3">
+  <li>Read and accept the terms of cPanel.</li>
+  <li>Provide your email and nameservers you wish to set on the server *.</li>
+  <li>Set your root password which you will use the next time you log in to WHM *.</li>
+</ol>
 
 ![horizon](images/change_root.png){.thumbnail}
 
