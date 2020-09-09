@@ -144,9 +144,12 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 3. Connectez-vous à l'aide du nom d'utilisateur et du mot de passe retournés par l'API.
 4. Une fois connecté, Plesk vous demandera:
 
-   a) Vos coordonnées
-   b) Un nouveau mot de passe pour l'utilisateur "admin" que vous utiliserez pour vous connecter à l'interface de Plesk
-   c) Informations sur la licence*
+   a) Vos coordonnées.
+   
+   b) Un nouveau mot de passe pour l'utilisateur "admin" que vous utiliserez pour vous connecter à l'interface de Plesk.
+   
+   c) Informations sur la licence.*
+   
    d) Lisez et acceptez les contrats de licence utilisateur.
 
 Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
