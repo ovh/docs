@@ -51,17 +51,17 @@ Once the instance has been installed with your chosen pre-installed application,
 
 This section only applies to WordPress, Drupal, Joomla and Prestashop installations. It will not work for other installations.
 
-1. You must create or edit two `A` records in the OVHcloud Control Panel which point to the IP address of your server. For example if your domain name is "personaldomain.ovh" then you need to create `A` records for:
+1.  You must create or edit two `A` records in the OVHcloud Control Panel which point to the IP address of your server. For example if your domain name is "personaldomain.ovh" then you need to create `A` records for:  
 
-   - personaldomain.ovh
-   - www.personaldomain.ovh
+     personaldomain.ovh <br>
+     www.personaldomain.ovh <br>
 
 If your domain is registered with OVHcloud you can follow [this guide.](../../domains/web_hosting_how_to_edit_my_dns_zone/).
 <br>If your domain is registered with another company you will need to contact them for assistance to set up your `A` records.
 
-2. You may need to wait 24 hours before the two records propagate fully. You can always check it with [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. If the IP for your domain is showing on mxtoolbox the same as your server's IP address then you can proceed to the next step.
+2.  You may need to wait 24 hours before the two records propagate fully. You can always check it with [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. If the IP for your domain is showing on mxtoolbox the same as your server's IP address then you can proceed to the next step.
 
-3. SSH into your server with the CentOS user and execute the following commands to install Certbot
+3.  SSH into your server with the CentOS user and execute the following commands to install Certbot
 
 > [!warning]
 >
@@ -76,7 +76,7 @@ echo "ServerName personaldomain.ovh;" >> /etc/httpd/conf/httpd.conf
 systemctl restart httpd
 ```
 
-4. Generate your SSL using Certbot (follow the on screen instructions)
+4.  Generate your SSL using Certbot (follow the on screen instructions)
 
 ```sh
 certbot certonly -d personaldomain.ovh --webroot
@@ -112,10 +112,10 @@ This section will explain the first steps specifically for the cPanel pre-instal
 1. Get your one time login URL [following these steps](./#application-login-details).
 2. Click on the URL that is returned by the API.
 
-> [!primary]
->
-> If the link has expired already, please SSH into the instance using the CentOS user and execute the "whmlogin" command to generate a new one or just reinstall the instance.
->
+    > [!primary]
+    >
+    > If the link has expired already, please SSH into the instance using the CentOS user and execute the "whmlogin" command to generate a new one or just reinstall the instance.
+    >
 
 3. Read and accept the terms of cPanel.
 4. Provide your email and nameservers you wish to set on the server *.
@@ -141,15 +141,11 @@ This section will explain the first steps specifically for the Plesk pre-install
 1. Get your application access URL by [following these steps](./#application-login-details).
 2. Click on the URL that is returned by the API.
 3. Log in using the username and password returned by the API.
-4. Once logged in, Plesk will ask you to provide:
-
-   a) Your contact information
-   
-   b) A new password for the "admin" user which you will use for login on the Plesk panel
-   
-   c) Licence information*
-   
-   d) Read and accept their end-user licence agreement
+4. Once logged in, Plesk will ask you to provide:  
+    a) Your contact information  
+    b) A new password for the "admin" user which you will use for login on the Plesk panel  
+    c) Licence information*  
+    d) Read and accept their end-user licence agreement  
 
 No further steps are necessary to complete the first configuration of this application.
 
