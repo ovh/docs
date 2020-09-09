@@ -51,7 +51,7 @@ Once the instance has been installed with your chosen pre-installed application,
 
 This section only applies to WordPress, Drupal, Joomla and Prestashop installations. It will not work for other installations.
 
-1.  You must create or edit two `A` records in the OVHcloud Control Panel which point to the IP address of your server. For example if your domain name is "personaldomain.ovh" then you need to create `A` records for:
+1.  You must create or edit two `A` records in the OVHcloud Control Panel which point to the IP address of your server. For example if your domain name is "personaldomain.ovh" then you need to create `A` records for:  
 
      personaldomain.ovh <br>
      www.personaldomain.ovh <br>
@@ -145,7 +145,7 @@ This section will explain the first steps specifically for the Plesk pre-install
     a) Your contact information  
     b) A new password for the "admin" user which you will use for login on the Plesk panel  
     c) Licence information*  
-    d) Read and accept their end-user licence agreement
+    d) Read and accept their end-user licence agreement  
 
 No further steps are necessary to complete the first configuration of this application.
 
