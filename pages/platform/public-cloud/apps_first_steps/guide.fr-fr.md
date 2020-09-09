@@ -1,0 +1,272 @@
+---
+title:  'Premières étapes avec les applications préinstallées'
+slug: applications-préinstallées
+excerpt: Découvrez comment déployer des applications préinstallées sur vos instances de Cloud public
+section:'Mise en route'
+order: 8
+---
+
+**Dernière mise à jour le 24 août 2020**
+
+## Objectif
+
+OVHcloud offre aux clients Public Cloud des images d'applications préinstallées pour un déploiement rapide et facile en quelques clics. 
+
+**Ce guide décrit les premières étapes d'installation de chaque image d'application préinstallée sur notre plateforme Public Cloud.**
+
+## Prérequis
+
+- Une [instance Public Cloud](../creer-instance-espace-client/) dans votre compte OVHcloud.
+
+## En pratique
+
+### Étapes communes à toutes les applications
+
+#### Installez l'application préinstallée choisie
+
+Depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) , les API OVHcloud ou de l'API OpenStack Horizon, installez l'application choisie sur votre instance Public Cloud.
+
+#### Détails de connexion à l'application
+
+Une fois l'instance créée avec l'application préinstallée choisie, vous pouvez récupérer vos informations de connexion uniquement via l'API OVHcloud.
+
+1. Connectez-vous à la [console API](https://api.ovh.com/console/)
+2. Utilisez ensuite [cet appel API](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST)
+
+> Appel API
+>> > [!api]
+>> >
+>> > @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/applicationAccess
+>> >
+>
+> Paramètres
+>
+>> serviceName *
+>>> Il s'agit de votre ID de projet cloud
+>> instanceId *
+>>> Il s'agit de l'UUID de votre instance
+
+#### Let's Encrypt SSL
+
+Cette section s'applique uniquement aux installations WordPress, Drupal, Joomla et Prestashop. Elle ne s'applique pas pour les autres installations.
+
+1. Vous devez créer ou modifier, dans l'espace client OVHcloud, deux enregistrements `A `  qui pointent vers l'adresse IP de votre serveur. Par exemple, si votre nom de domaine est « personaldomain.ovh », vous devez créer des enregistrements `A` pour :
+
+   - personaldomain.ovh
+   - www.personaldomain.ovh
+
+Si votre domaine est enregistré chez OVHcloud, vous pouvez suivre [ce guide.](../../domains/editer-ma-zone-dns/).
+<br>Si votre domaine est enregistré auprès d'une autre société, vous devrez contacter celle-ci pour obtenir de l'aide sur la configuration de vos enregistrements `A`.
+
+2. Vous devrez peut-être attendre 24 heures avant que les deux enregistrements ne se propagent complètement. Vous pouvez toujours le vérifier avec [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. Si l'adresse IP de votre domaine s'affiche sur mxtoolbox de la même manière que celle de votre serveur, vous pouvez passer à l'étape suivante.
+
+3. Connectez-vous en SSH sur votre serveur avec l'utilisateur CentOS et exécutez les commandes suivantes pour installer Certbot :
+
+> [!warning]
+>
+> Remplacez personaldomain.ovh par votre propre nom de domaine dans les commandes suivantes.
+>
+
+```sh
+sudo -i
+dnf install -y epel-release
+dnf install -y certbot python3-certbot-apache mod_ssl
+echo "ServerName personaldomain.ovh;" >> /etc/httpd/conf/httpd.conf
+systemctl restart httpd
+```
+
+4. Générez votre certificat SSL en utilisant Certbot (suivez les instructions à l'écran)
+
+```sh
+certbot certonly -d personaldomain.ovh --webroot
+```
+
+Lorsque vous êtes invité à saisir « Input the webroot », vous devez saisir une variable du type « /var/www/wordpress ». Si vous installez Joomla, vous devez remplacer « wordpress » par « joomla ».
+
+Vous devez maintenant faire en sorte que Certbot place également cette variable dans le fichier ssl.conf. Pour cela, entrez:
+
+```sh
+certbot -d personaldomain.ovh --apache
+```
+
+Lorsque vous y êtes invité, répondez à la première question par « 1 » et à la seconde aussi par « 1 ».
+
+Vous devriez obtenir le résultat suivant si votre certificat SSL a été généré :
+
+```sh
+IMPORTANT NOTES:
+ - Congratulations! Your certificate and chain have been saved at:
+   /etc/letsencrypt/live/personaldomain.ovh/fullchain.pem
+   Your key file has been saved at:
+   /etc/letsencrypt/live/personaldomain.ovh/privkey.pem
+   Your cert will expire on 2020-11-12. To obtain a new or tweaked
+   version of this certificate in the future, simply run certbot again
+   with the "certonly" option. To non-interactively renew *all* of
+   your certificates, run "certbot renew"
+```
+
+### cPanel 
+
+Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image pré-installée de cPanel. Les étapes marquées d'un « * » seront suivies d'une FAQ.
+
+1. Obtenez votre URL à usage unique [en suivant ces étapes](./#details-de-connexion-a-lapplication).
+2. Cliquez sur l'URL renvoyée par l'API.
+
+> [!primary]
+>
+> Si le lien a déjà expiré, connectez-vous en SSH à l'instance à l'aide de l'utilisateur CentOS et exécutez la commande « whmlogin » pour en générer un nouveau ou réinstallez l'instance.
+>
+
+3. Lisez et acceptez les conditions particulières de cPanel.
+4. Saisissezvos serveurs de messagerie et serveurs DNS *.
+5. Définissez le mot de passe root que vous utiliserez la prochaine fois que vous vous connecterez à WHM *.
+
+![horizon](images/change_root.png){.thumbnail}
+
+Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
+
+> [!faq]
+>
+> Puis-je utiliser mes propres serveurs DNS ?
+>> Oui, vous le pouvez. Assurez-vous de créer des enregistrements « GLUE » avec votre bureau d'enregistrement de domaine. Par exemple, si vous voulez "ns1.mydomain.com" et "ns2.mydomain.com", vous devez configurer des enregistrements « GLUE » pour que les deux pointent sur l'adresse IP de votre serveur. Si votre domaine est enregistré avec OVHcloud, vous pouvez suivre [ce guide.](../../domains/glue_registry/#step-1-add-the-glue-records). Notez que la création peut prendre 24 heures.
+> Pourquoi définir le mot de passe root?
+>> WHM utilise par défaut l'utilisateur root pour l'authentification. L'URL à usage unique permet d'accéder à la première configuration et de modifier le mot de passe root. La prochaine fois que vous vous connecterez à WHM, vous devrez utiliser l'utilisateur root et le mot de passe que vous avez défini.
+> Où est ma licence pour cPanel?
+>> OVHcloud ne fournit actuellement aucune licence pour les serveurs Cloud publics autres que les licences Windows. Vous devez acheter une licence auprès d'un fournisseur tiers pour cPanel. Pour cela, nous vous recommandons de voir directement avec l'éditeur de cPanel.
+
+### Plesk
+
+Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image pré-installée de Plesk. Les étapes marquées d'un « * » seront suivies d'une FAQ.
+
+1. Obtenez l'URL d'accès à votre application en [suivant ces étapes](./#details-de-connexion-a-lapplication).
+2. Cliquez sur l'URL renvoyée par l'API.
+3. Connectez-vous à l'aide du nom d'utilisateur et du mot de passe retournés par l'API.
+4. Une fois connecté, Plesk vous demandera:
+
+   a) Vos coordonnées
+   b) Un nouveau mot de passe pour l'utilisateur "admin" que vous utiliserez pour vous connecter à l'interface de Plesk
+   c) Informations sur la licence*
+   d) Lisez et acceptez les contrats de licence utilisateur.
+
+Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
+
+> [!faq]
+>
+> Où est ma licence Plesk?
+>> OVHcloud ne fournit actuellement aucune licence pour les serveurs Cloud publics autres que les licences Windows. Les clients doivent acheter une licence auprès d'un fournisseur tiers pour Plesk. Pour cela, nous vous recommandons de voir directement avec l'éditeur de Plesk.
+
+### Virtualmin
+
+Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image pré-installée de Virtualmin. 
+
+1. Obtenez l'URL d'accès à votre application en [suivant ces étapes](./#details-de-connexion-a-lapplication).
+2. Cliquez sur l'URL renvoyée par l'API.
+3. Connectez-vous à l'aide du nom d'utilisateur et du mot de passe retournés par l'API.
+4. Une fois connecté, pour répondre à vos besoins et aider Virtualmin à se configurer, complétez le questionnaire d'optimisation.
+
+Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
+
+### Vestacp
+
+Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image pré-installée de Vestacp.
+
+1. Obtenez l'URL d'accès à votre application en [suivant ces étapes](#details-de-connexion-a-lapplication).
+2. Cliquez sur l'URL renvoyée par l'API.
+3. Connectez-vous à l'aide du nom d'utilisateur et du mot de passe retournés par l'API.
+
+Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
+
+### Docker
+
+Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image pré-installée de Docker.
+
+1. Connectez-vous en SSH sur le serveur à l'aide de l'utilisateur CentOS.
+2. Vérifiez que Docker fonctionne à l'aide de la commande "docker run hello-world".
+
+Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
+
+### GitLab
+
+Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image pré-installée de GitLab.
+
+1. Obtenez l'URL d'accès à votre application en [suivant ces étapes](./#details-de-connexion-a-lapplication).
+2. Cliquez sur l'URL renvoyée par l'API.
+3. Définissez votre nouveau mot de passe.
+4. Connectez-vous avec l'utilisateur "root" et le nouveau mot de passe que vous venez de définir.
+
+Vous pouvez aller plus loin en sécurisant votre GitLab avec un certificat SSL en suivant [ce guide GitLab.](https://docs.gitlab.com/omnibus/settings/ssl.html){.external}.
+
+Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
+
+### OpenVPN
+
+Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image pré-installée de OpenVPN.
+
+1. Obtenez l'URL d'accès à votre application en [suivant ces étapes](./#details-de-connexion-a-lapplication).
+2. Cliquez sur l'URL renvoyée par l'API.
+3. Connectez-vous à l'aide du nom d'utilisateur et du mot de passe retournés par l'API.
+
+Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
+
+### WordPress
+
+Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image pré-installée de WordPress.
+
+1. Obtenez l'URL d'accès à votre application en [suivant ces étapes](./#details-de-connexion-a-lapplication).
+2. Cliquez sur l'URL renvoyée par l'API.
+3. Suivez les instructions de configuration de WordPress. Lorsque vous êtes invité à fournir des informations sur la base de données, utilisez toujours "localhost" comme adresse. Pour le nom d'utilisateur et le mot de passe, utilisez les informations fournies dans l'API.
+
+Vous pouvez aller plus loin en sécurisant votre site avec un certificat SSL gratuit en [suivant ces étapes](./#lets-encrypt-ssl).
+
+Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
+
+### Joomla
+
+Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image pré-installée de Joomla.
+
+1. Obtenez l'URL d'accès à votre application en [suivant ces étapes](./#details-de-connexion-a-lapplication).
+2. Cliquez sur l'URL renvoyée par l'API.
+3. Suivez les instructions de configuration de de Joomla. Lorsque vous êtes invité à fournir des informations sur la base de données, utilisez toujours "localhost" comme adresse. Pour le nom d'utilisateur et le mot de passe, utilisez les informations fournies dans l'API.
+
+Vous pouvez aller plus loin en sécurisant votre site avec un certificat SSL gratuit en [suivant ces étapes](./#lets-encrypt-ssl).
+
+Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
+
+### Drupal
+
+Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image pré-installée de Drupal.
+
+1. Obtenez l'URL d'accès à votre application en [suivant ces étapes](./#details-de-connexion-a-lapplication).
+2. Cliquez sur l'URL renvoyée par l'API.
+3. Suivez les instructions de configuration de Drupal.Lorsque vous êtes invité à fournir des informations sur la base de données, utilisez toujours "localhost" comme adresse. Pour le nom d'utilisateur et le mot de passe, utilisez les informations fournies dans l'API.
+
+Vous pouvez aller plus loin en sécurisant votre site avec un certificat SSL gratuit en [suivant ces étapes](./#lets-encrypt-ssl).
+
+Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
+
+### Prestashop
+
+Vous trouverez ci-dessous les premières étapes relatives à la mise en service de l'image pré-installée de Prestashop.
+
+1. Obtenez l'URL d'accès à votre application en [suivant ces étapes.](./#details-de-connexion-a-lapplication).
+2. Cliquez sur l'URL renvoyée par l'API.
+3. Suivez les instructions de configuration de Prestashop. Lorsque vous êtes invité à fournir des informations sur la base de données, utilisez toujours "localhost" comme adresse et, pour le nom d'utilisateur et le mot de passe, utilisez les informations fournies dans l'API.
+4. Une fois l'installation terminée, vous pouvez supprimer le dossier d'installation et modifier l'URL d'administration à l'aide d'un script que nous avons placé sur le serveur pour vous. En exécutant ce script, nous appliquerons la recommandation de sécurité de Prestashop après l'installation. Il suffit de SSH dans le serveur et d'exécuter les commandes suivantes:
+
+"sh
+sudo-i
+sh /root/secure_prestashop.sh
+rm -f /root/secure_prestashop.sh
+"
+> [!primary]
+>
+> Veillez à enregistrer le lien renvoyé. Vous ne pourrez accéder à l'administrateur de Prestashop qu'avec le nouveau lien.
+>
+
+Sécurisez gratuitement votre site avec un certificat SSL en [suivant ces étapes](./#lets-encrypt-ssl).
+
+Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
+
+## Allez plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
