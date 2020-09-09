@@ -112,10 +112,10 @@ This section will explain the first steps specifically for the cPanel pre-instal
 1. Get your one time login URL [following these steps](./#application-login-details).
 2. Click on the URL that is returned by the API.
 
-> [!primary]
->
-> If the link has expired already, please SSH into the instance using the CentOS user and execute the "whmlogin" command to generate a new one or just reinstall the instance.
->
+    > [!primary]
+    >
+    > If the link has expired already, please SSH into the instance using the CentOS user and execute the "whmlogin" command to generate a new one or just reinstall the instance.
+    >
 
 3. Read and accept the terms of cPanel.
 4. Provide your email and nameservers you wish to set on the server *.
