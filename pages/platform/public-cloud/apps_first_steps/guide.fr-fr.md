@@ -43,6 +43,7 @@ Une fois l'instance créée avec l'application préinstallée choisie, vous pouv
 >
 >> serviceName *
 >>> Il s'agit de votre ID de projet cloud
+>>
 >> instanceId *
 >>> Il s'agit de l'UUID de votre instance
 
