@@ -29,7 +29,7 @@ Using the [OVHcloud Control Panel](../starting_with_a_vps/) / API, install your 
 This section will explain the first steps specifically for the cPanel pre-installed image. Steps marked with * will have FAQ at the end of the steps.
 
 1. Open the email from us which contains your application login details.
-2. Click on the URL for cPanel in the email.
+5. Click on the URL for cPanel in the email.
 
 > [!primary]
 >
@@ -37,8 +37,8 @@ This section will explain the first steps specifically for the cPanel pre-instal
 >
 
 3. Read and accept the terms of cPanel.
-4. Provide your email and nameservers you wish to set on the server *.
-5. Set your root password which you will use the next time you log in to WHM *.
+8. Provide your email and nameservers you wish to set on the server *.
+9. Set your root password which you will use the next time you log in to WHM *.
 
 ![horizon](images/change_root.png){.thumbnail}
 
@@ -60,11 +60,11 @@ This section will explain the first steps specifically for the Plesk pre-install
 1. Open the email from us which contains your application login details.
 2. Click on the URL for Plesk in the email.
 3. Log in using the username and password provided in the email.
-4. Once logged in, Plesk will ask you to provide:
-a) Your contact information
-b) A new password for the "admin" user which you will use for login on the Plesk panel
-c) Licence information*
-d) Read and accept their end-user licence agreement
+4. Once logged in, Plesk will ask you to provide:  
+    a) Your contact information
+    b) A new password for the "admin" user which you will use for login on the Plesk panel
+    c) Licence information*
+    d) Read and accept their end-user licence agreement
 
 No further steps are necessary to complete the first configuration of this application.
 
@@ -77,10 +77,10 @@ No further steps are necessary to complete the first configuration of this appli
 
 This section will explain the first steps specifically for the Virtualmin pre-installed image.
 
-1. Open the email from us which contains your application login details.
+1. Open the email from OVcloud which contains your application login details.
 2. Click on the URL for Plesk in the email.
 3. Log in using the username and password provided in the email.
-4. Once logged in Virtualmin will have several optimisation questions for you to answer. It will help Virtualmin configure itself to meet your specification.
+4. Once logged in to Virtualmin will have several optimisation questions for you to answer. It will help Virtualmin configure itself to meet your specification.
 
 No further steps are necessary to complete the first configuration of this application.
 
@@ -88,7 +88,7 @@ No further steps are necessary to complete the first configuration of this appli
 
 This section will explain the first steps specifically for the Vestacp pre-installed image.
 
-1. Open the email from us which contains your application login details.
+1. Open the email from OVHcloud which contains your application login details.
 2. Click on the URL for Plesk in the email.
 3. Log in using the username and password provided in the email.
 
@@ -107,7 +107,7 @@ No further steps are necessary to complete the first configuration of this appli
 
 This section will explain the first steps specifically for the GitLab pre-installed image.
 
-1. Open the email from us which contains your application login details.
+1. Open the email from OVHcloud which contains your application login details.
 2. Click on the URL for Plesk in the email.
 3. Set your new password.
 4. Log in with "root" and the new password you have just set.
@@ -120,7 +120,7 @@ No further steps are necessary to complete the first configuration of this appli
 
 This section will explain the first steps specifically for the OpenVPN pre-installed image.
 
-1. Open the email from us which contains your application login details.
+1. Open the email from OVHcloud which contains your application login details.
 2. Click on the URL for Plesk in the email.
 3. Log in using the username and password provided in the email.
 
