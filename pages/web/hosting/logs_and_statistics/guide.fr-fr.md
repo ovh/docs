@@ -43,7 +43,7 @@ Pour vous aider à mieux suivre et piloter le trafic de vos sites web, vous disp
 Le tableau de bord de OVHcloud Web Statistics se présente en 6 sections dans le panneau de gauche.
 
 - Dashboard : visualisation du trafic sur les sites de votre hébergement.
-- Browsers : classement des explorateurs internet les plus utilisés pour visualiser vos sites.
+- Browsers : classement des navigateurs internet les plus utilisés pour visualiser vos sites.
 - Geolocalization :  proportion de visiteurs en fonction de leur localisation.
 - Requests : classement des pages les plus consultées sur vos sites.
 - Robots : visualisation des robots qui passent sur vos sites.
@@ -79,7 +79,7 @@ Vous avez la possibilité de visualiser les logs bruts de votre site avec un dif
 
 Différents type de logs sont à votre disposition :
 
-- Logs Web : retrouvez ici les différents logs de consultation de votre site, ainsi que les différentes actions réalisées à partir de votre site. Cela vous permet par exemple de repérer des tentatives de hack.
+- Logs Web : retrouvez ici les différents logs de consultation de votre site, ainsi que les différentes actions réalisées à partir de votre site. Cela vous permet par exemple de repérer des tentatives d'actions malveillantes.
 - Logs FTP : les différentes connexions FTP seront enregistrées et conservées dans ces logs.
 - Logs erreur : les différentes erreurs générées par votre site.
 - Logs CGI : les différents appels aux scripts cgi.bin qui ont été réalisés.
