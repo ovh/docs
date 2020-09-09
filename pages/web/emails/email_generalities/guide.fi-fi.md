@@ -1,10 +1,11 @@
 ---
 title: 'Webhotelli: Yleistä tietoa OVH:n jaetuista sähköposteista'
-excerpt: Yleistä OVH;n sähköposteista
 slug: webhotelli_yleista_tietoa_ovhn_jaetuista_sahkoposteista
+routes:
+    canonical: 'https://docs.ovh.com/fi/emails/'
+excerpt: 'Yleistä OVH;n sähköposteista'
 legacy_guide_number: g1474
 ---
-
 
 ## Windows
 
