@@ -178,6 +178,7 @@ sudo -i
 sh /root/secure_prestashop.sh
 rm -f /root/secure_prestashop.sh
 ```
+
 > [!primary]
 >
 > Make sure you save the link that is returned. You will only be able to access Prestashop admin with the new link.
@@ -192,20 +193,20 @@ No further steps are necessary to complete the first configuration of this appli
 This section only applies to WordPress, Drupal, Joomla and Prestashop installations. It will not work for other installations.
 
 1. You must create or edit two `A` records in the OVHcloud Control Panel which point to the IP address of your server. For example if your domain name is "personaldomain.ovh" then you need to create `A` records for:
-
-- personaldomain.ovh
-- www.personaldomain.ovh
+    - personaldomain.ovh
+    - www.personaldomain.ovh
 
 If your domain is registered with OVHcloud you can follow [this guide](../../domains/web_hosting_how_to_edit_my_dns_zone/).
 <br>If your domain is registered with another company you will need to contact them for assistance to set up your `A` records.
 
-2. You may need to wait 24 hours before the two records propagate fully. You can always check it with [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. If the IP for your domain is showing on mxtoolbox the same as your server's IP address then you can proceed to the next step.
-
-3. SSH into your server with the CentOS user and execute the following commands to install Certbot
+<ol start="2">
+<li>You may need to wait 24 hours before the two records propagate fully. You can always check it with [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. If the IP for your domain is showing on mxtoolbox the same as your server's IP address then you can proceed to the next step.</li>
+<li>SSH into your server with the CentOS user and execute the following commands to install Certbot.</li>
+</ol>
 
 > [!warning]
 >
-> Replace personaldomain.ovh in the commands to your own domain name
+> Replace personaldomain.ovh in the commands to your own domain name.
 >
 
 ```sh
@@ -216,11 +217,14 @@ echo "ServerName personaldomain.ovh;" >> /etc/httpd/conf/httpd.conf
 systemctl restart httpd
 ```
 
-4. Generate your SSL using Certbot (follow the on screen instructions)
+<ol start="4">
+<li>Generate your SSL using Certbot (follow the on screen instructions).</li>
+</ol>
 
 ```sh
 certbot certonly -d personaldomain.ovh --webroot
 ```
+
 When asked about "Input the webroot", you need to enter something like "/var/www/wordpress". If you are installing Joomla, you need to replace "wordpress" with "joomla".
 
 Now you need to get Certbot to also place it into the ssl.conf file. To trigger this, enter:
