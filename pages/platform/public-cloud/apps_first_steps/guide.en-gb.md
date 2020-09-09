@@ -77,7 +77,7 @@ echo "ServerName personaldomain.ovh;" >> /etc/httpd/conf/httpd.conf
 systemctl restart httpd
 ```
 <ol start="4">
-<li>Generate your SSL using Certbot (follow the on screen instructions</li>
+<li>Generate your SSL using Certbot (follow the on screen instructions)</li>
 </ol>
 
 ```sh
@@ -119,9 +119,11 @@ This section will explain the first steps specifically for the cPanel pre-instal
     > If the link has expired already, please SSH into the instance using the CentOS user and execute the "whmlogin" command to generate a new one or just reinstall the instance.
     >
 
-3. Read and accept the terms of cPanel.
-4. Provide your email and nameservers you wish to set on the server *.
-5. Set your root password which you will use the next time you log in to WHM *.
+<ol start="3">
+  <li>Read and accept the terms of cPanel.</li>
+  <li>Provide your email and nameservers you wish to set on the server *.</li>
+  <li>Set your root password which you will use the next time you log in to WHM *.</li>
+</ol>
 
 ![horizon](images/change_root.png){.thumbnail}
 
