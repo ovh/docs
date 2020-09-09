@@ -49,18 +49,18 @@ No further steps are necessary to complete the first configuration of this appli
 > Can I use my own nameservers?
 >> Yes, you can. But you need to make sure you create glue records with your domain registrar. For example if you want "ns1.mydomain.com" and "ns2.mydomain.com", you must set up glue records for both which must point to the IP of your server. If your domain is registered with OVHcloud, you can follow [this guide.](../../domains/glue_registry/#step-1-add-the-glue-records). Please note that this can take 24 hours to create.
 > Why set root password?
->> WHM by default uses the root user for authentication and the one time link allows access to complete first setup and change root password. Next time you login to WHM you must use the root user and the password you have set.
+>> WHM by default uses the root user for authentication and the one time link allows access to complete first setup and change root password. Next time you log in to WHM you must use the root user and the password you have set.
 > Where is my license for cPanel?
->> You can purchase a license from OVHcloud for your VPS via the [OVHcloud control panel](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+>> You can purchase a license from OVHcloud for your VPS via the [OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
 
 #### Plesk
 
 This section will explain the first steps specifically for the Plesk pre-installed image. Steps marked with * will have FAQ at the end of the steps.
 
-1. Open the email from us which contains your application login details.
+1. Open the email from OVHcloud which contains your application login details.
 2. Click on the URL for Plesk in the email.
 3. Log in using the username and password provided in the email.
-4. Once logged in, Plesk will ask you to provide:  
+4. Once logged in, Plesk will ask you to provide:
     a) Your contact information
     b) A new password for the "admin" user which you will use for login on the Plesk panel
     c) Licence information*
@@ -71,7 +71,7 @@ No further steps are necessary to complete the first configuration of this appli
 > [!faq]
 >
 > Where is my licence for Plesk?
->> You can purchase a license from OVHcloud for your VPS via the [OVHcloud control panel](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
+>> You can purchase a license from OVHcloud for your VPS via the [OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/configuration/license/order).
 
 #### Virtualmin
 
@@ -80,7 +80,7 @@ This section will explain the first steps specifically for the Virtualmin pre-in
 1. Open the email from OVcloud which contains your application login details.
 2. Click on the URL for Plesk in the email.
 3. Log in using the username and password provided in the email.
-4. Once logged in to Virtualmin will have several optimisation questions for you to answer. It will help Virtualmin configure itself to meet your specification.
+4. Once logged in, Virtualmin will have several optimisation questions for you to answer. It will help Virtualmin configure itself to meet your specification.
 
 No further steps are necessary to complete the first configuration of this application.
 
@@ -130,7 +130,7 @@ No further steps are necessary to complete the first configuration of this appli
 
 This section will explain the first steps specifically for the WordPress pre-installed image.
 
-1. Open the email from us which contains your application login details.
+1. Open the email from OVHcloud which contains your application login details.
 2. Click on the URL for Plesk in the email.
 3. Follow the on screen final configuration instructions of WordPress. When asked about the database details use always "localhost" as the address and for username and password use the provided information in the API.
 
@@ -142,7 +142,7 @@ No further steps are necessary to complete the first configuration of this appli
 
 This section will explain the first steps specifically for the Joomla pre-installed image.
 
-1. Open the email from us which contains your application login details.
+1. Open the email from OVHcloud which contains your application login details.
 2. Click on the URL for Plesk in the email.
 3. Follow the on screen final configuration instructions of Joomla. When asked about the database details use always "localhost" as the address and for username and password use the provided information in the API.
 
@@ -154,7 +154,7 @@ No further steps are necessary to complete the first configuration of this appli
 
 This section will explain the first steps specifically for the Drupal pre-installed image.
 
-1. Open the email from us which contains your application login details.
+1. Open the email from OVHcloud which contains your application login details.
 2. Click on the URL for Plesk in the email.
 3. Follow the on screen final configuration instructions of Drupal. When asked about the database details use always "localhost" as the address and for username and password use the provided information in the API.
 
@@ -166,7 +166,7 @@ No further steps are necessary to complete the first configuration of this appli
 
 This section will explain the first steps specifically for the Prestashop pre-installed image.
 
-1. Open the email from us which contains your application login details.
+1. Open the email from OVHcloud which contains your application login details.
 2. Click on the URL for Plesk in the email.
 3. Follow the on screen final configuration instructions of Prestashop. When asked about the database details use always "localhost" as the address and for username and password use the provided information in the API.
 4. Once the initial setup is done you can delete the install folder and change the admin URL using a script we placed on the server for you. By executing this script we will carry out the security recommendation by Prestashop after installation. Just SSH into the server and execute these commands:
