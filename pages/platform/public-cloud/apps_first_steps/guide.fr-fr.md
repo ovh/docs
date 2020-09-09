@@ -1,8 +1,8 @@
 ---
-title:  'Premières étapes avec les applications préinstallées'
-slug: applications-préinstallées
+title: Premières étapes avec les applications préinstallées
+slug: applications-preinstallees
 excerpt: Découvrez comment déployer des applications préinstallées sur vos instances de Cloud public
-section:'Mise en route'
+section: Mise en route
 order: 8
 ---
 
