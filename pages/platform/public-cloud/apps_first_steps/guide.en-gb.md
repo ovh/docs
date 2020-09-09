@@ -43,7 +43,7 @@ Once the instance has been installed with your chosen pre-installed application,
 >
 >> serviceName 
 >>> This is your cloud project ID
->
+>>
 >>  instanceId 
 >>>  This is the UUID of your instance
 
@@ -142,10 +142,14 @@ This section will explain the first steps specifically for the Plesk pre-install
 2. Click on the URL that is returned by the API.
 3. Log in using the username and password returned by the API.
 4. Once logged in, Plesk will ask you to provide:
-a) Your contact information
-b) A new password for the "admin" user which you will use for login on the Plesk panel
-c) Licence information*
-d) Read and accept their end-user licence agreement
+
+   a) Your contact information
+   
+   b) A new password for the "admin" user which you will use for login on the Plesk panel
+   
+   c) Licence information*
+   
+   d) Read and accept their end-user licence agreement
 
 No further steps are necessary to complete the first configuration of this application.
 
