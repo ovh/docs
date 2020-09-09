@@ -32,7 +32,7 @@ O protocolo SSH assegura a encriptação das comunicações cliente-servidor. O 
 
 > [!primary]
 >
-Tenha em atenção que as conexões a instâncias de Public Cloud exigem um login SSH com chave, com exceção das que se baseiam em sistemas operativos Windows. As chaves públicas SSH adicionadas à sua Área de Cliente OVHcloud ficarão disponíveis para serviços Public Cloud em todas as regiões e datacenters. Só poderá armazenar chaves encriptadas  **RSA** e **ECDSA**; a ED25519 não é suportada atualmente. 
+Tenha em atenção que as conexões a instâncias de Public Cloud exigem um login SSH com chave, com exceção das que se baseiam em sistemas operativos Windows. As chaves públicas SSH adicionadas à sua Área de Cliente OVHcloud ficarão disponíveis para serviços Public Cloud em todas as regiões e datacenters. Só poderá armazenar chaves encriptadas **RSA** e **ECDSA**; a ED25519 não é suportada atualmente. 
 >
 A autenticação de conexão em instâncias Windows só requer o nome de utilizador e a palavra-passe.
 >
@@ -131,7 +131,7 @@ A chave está pronta quando a barra de progressão estiver completa.
 
 ![save key](images/puttygen_03a.png){.thumbnail}
 
-Nesta janela pode selecionar e copiar a chave pública para a guardar na Área de Cliente OVHcloud durante o [2.º passo](./#step-2-storing-public-keys-in-the-ovhcloud-control-panel_1).
+Nesta janela pode selecionar e copiar a chave pública para a guardar na Área de Cliente OVHcloud durante o [2.º passo](./#2-passo-armazenamento-de-chaves-publicas-na-area-de-cliente-ovhcloud_1).
 
 Guarde ambas as chaves sob a forma de ficheiro e use a opção de criação de uma frase de acesso. Já que só será exigida uma chave privada correspondente para o acesso à instância de Public Cloud a partir do seu posto de trabalho, neste ponto impõe-se a aplicação de medidas de segurança adequadas. Quando se estabelecer uma conexão à instância, será preciso introduzir uma frase de acesso.
 
@@ -141,12 +141,12 @@ Independentemente do método usado para criar chaves SSH, agora já dispõe de u
 
 > [!primary]
 >
-As chaves SSH armazenadas propiciam uma criação de instâncias mais rápida. Se desejar alterar pares de chaves e adicionar utilizadores ulteriormente, consulte o guia [Configurar as chaves SSH suplementares](https://docs.ovh.com/pt/public-cloud/configurar_as_chaves_ssh_suplementares/).
+As chaves SSH armazenadas propiciam uma criação de instâncias mais rápida. Se desejar alterar pares de chaves e adicionar utilizadores ulteriormente, consulte o guia [Configurar as chaves SSH suplementares](../configurar_as_chaves_ssh_suplementares/).
 >
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), secção `Public Cloud`{.action}, e selecione o serviço Public Cloud em questão. A seguir, clique em `Chaves SSH`{.action}, na barra de navegação à esquerda, sob «Gestão de projetos».
 
-Clique no botão `Adicionar uma chave SSH`{.action}. Na janela que se abrir, introduza um nome para a chave e cole a cadeia (copiada no [1.º Passo](./#step-1-creating-ssh-keys) do ficheiro público ou da janela PuTTYgen) no campo «Chave». Para confirmar, clique em `Adicionar`{.action}.
+Clique no botão `Adicionar uma chave SSH`{.action}. Na janela que se abrir, introduza um nome para a chave e cole a cadeia (copiada no [1.º Passo](./#1-passo-criacao-de-chaves-ssh) do ficheiro público ou da janela PuTTYgen) no campo «Chave». Para confirmar, clique em `Adicionar`{.action}.
 
 ![add key](images/puttygen-04.png){.thumbnail}
 
@@ -187,7 +187,7 @@ Neste passo, deve escolher um sistema operativo para a instância. As imagens di
 Se escolher um sistema operativo que requeira uma licença paga, os custos serão automaticamente incluídos na faturação mensal ou horária.
 >
 
-Este passo também exige que seja adicionada uma chave SSH (com exceção das instâncias Windows), seja colando a chave diretamente através de `Adicionar uma chave`{.action}, seja escolhendo-a da lista, partindo do princípio de que a armazenou previamente na Área de Cliente durante o [2.º passo](./#step-2-storing-public-keys-in-the-ovhcloud-control-panel_1).
+Este passo também exige que seja adicionada uma chave SSH (com exceção das instâncias Windows), seja colando a chave diretamente através de `Adicionar uma chave`{.action}, seja escolhendo-a da lista, partindo do princípio de que a armazenou previamente na Área de Cliente durante o [2.º passo](./#2-passo-armazenamento-de-chaves-publicas-na-area-de-cliente-ovhcloud_1).
 
 ![key select](images/instance-creation-03.png){.thumbnail}
 
@@ -225,12 +225,12 @@ De forma automática, é criado na instância um utilizador com um leque alargad
 
 > [!primary]
 >
-Se encontrar problemas durante a conexão, nomeadamente erros relativos às chaves SSH, consulte o guia [Alterar a chave SSH em caso de perda](https://docs.ovh.com/pt/public-cloud/alterar_a_chave_ssh_em_caso_de_perda/).
+Se encontrar problemas durante a conexão, nomeadamente erros relativos às chaves SSH, consulte o guia [Alterar a chave SSH em caso de perda](../alterar_a_chave_ssh_em_caso_de_perda/).
 >
 
 #### Conexão a uma instância Linux a partir de Linux/Mac
 
-Agora já pode aceder à sua instância a partir de uma interface de linhas de comandos (Terminal) via SSH. Nos exemplos seguintes, substitua «username» pelo seu utilizador predefinido, como explicado acima. Também pode simplesmente completar o comando de conexão a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)\: basta clicar nele no «Painel de Controlo» da instância e a seguir colá-lo no Terminal.
+Agora já pode aceder à sua instância a partir de uma interface de linhas de comandos (Terminal) via SSH. Nos exemplos seguintes, substitua «username» pelo seu utilizador predefinido, como explicado acima. Também pode simplesmente completar o comando de conexão a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager): basta clicar nele no «Painel de Controlo» da instância e a seguir colá-lo no Terminal.
 
 ![instances page](images/instance-connect-02.png){.thumbnail}
 
@@ -262,7 +262,7 @@ Nota: raramente é necessário mudar para o utilizador «root»; como boa práti
 
 #### Conexão a uma instância Linux a partir de Windows
 
-Depois de criar e guardar as suas chaves SSH (no [1.º passo](./#step-1-creating-ssh-keys)) e de instalar a instância com a chave pública (no [3.º passo](./#step-3-creating-an-instance)), pode usar o [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) e a chave privada para se conectar à instância.
+Depois de criar e guardar as suas chaves SSH (no [1.º passo](./#1-passo-criacao-de-chaves-ssh)) e de instalar a instância com a chave pública (no [3.º passo](./#3-passo-criacao-de-uma-instancia)), pode usar o [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) e a chave privada para se conectar à instância.
 
 Abra o PuTTY e expanda «SSH» no menu à esquerda. De seguida, clique em «Auth» para ver as opções de autenticação.
 
@@ -331,12 +331,12 @@ Se surgir uma mensagem relativa a certificados, clique em `Sim`{.action}. De seg
 
 ## Saiba mais
 
-[Criar uma cópia de segurança de uma instância](https://docs.ovh.com/pt/public-cloud/efetuar_backup_de_uma_instancia/)
+[Criar uma cópia de segurança de uma instância](../efetuar_backup_de_uma_instancia/)
 
-[Aumentar a quota Public Cloud](https://docs.ovh.com/pt/public-cloud/aumentar_a_quota_public_cloud/)
+[Aumentar a quota Public Cloud](../aumentar_a_quota_public_cloud/)
 
-[Passar de uma faturação à hora para uma faturação ao mês](https://docs.ovh.com/pt/public-cloud/mudar-tipo-faturacao-public-cloud/)
+[Passar de uma faturação à hora para uma faturação ao mês](../mudar-tipo-faturacao-public-cloud/)
 
-[Configurar as chaves SSH suplementares](https://docs.ovh.com/pt/public-cloud/configurar_as_chaves_ssh_suplementares/)
+[Configurar as chaves SSH suplementares](../configurar_as_chaves_ssh_suplementares/)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
