@@ -12,7 +12,7 @@ order: 8
 
 OVHcloud offre aux clients Public Cloud des images d'applications préinstallées pour un déploiement rapide et facile en quelques clics. 
 
-**Ce guide décrit les premières étapes d'installation de chaque image d'application préinstallée sur notre plateforme Public Cloud.**
+**Découvrez comment déployer des applications préinstallées sur vos instances Public Cloud.**
 
 ## Prérequis
 
