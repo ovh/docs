@@ -51,17 +51,19 @@ Une fois l'instance créée et une application préinstallée choisie, vous pouv
 
 Cette section s'applique uniquement aux installations de WordPress, Drupal, Joomla et Prestashop. Elle ne s'applique pas pour les autres installations.
 
-1. Vous devez créer ou modifier, dans l'espace client OVHcloud, deux enregistrements `A `  qui pointent vers l'adresse IP de votre serveur. Par exemple, si votre nom de domaine est « personaldomain.ovh », vous devez créer des enregistrements `A` pour :
+1. Vous devez créer ou modifier, dans l'espace client OVHcloud, deux enregistrements `A `  qui pointent vers l'adresse IP de votre serveur. Par exemple, si votre nom de domaine est « personaldomain.ovh », vous devez créer des enregistrements `A` pour :  
 
-   - personaldomain.ovh
-   - www.personaldomain.ovh
+     personaldomain.ovh <br>
+     www.personaldomain.ovh <br>  
 
 Si votre domaine est enregistré chez OVHcloud, vous pouvez suivre [ce guide.](../../domains/editer-ma-zone-dns/).
 <br>Si votre domaine est enregistré auprès d'une autre société, vous devrez contacter celle-ci pour obtenir de l'aide sur la configuration de vos enregistrements `A`.
 
-2. Vous devrez peut-être attendre 24 heures avant que les deux enregistrements ne se propagent complètement. Vous pouvez toujours le vérifier avec [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. Si l'adresse IP de votre domaine s'affiche sur mxtoolbox de la même manière que celle de votre serveur, vous pouvez passer à l'étape suivante.
+<ol start="2">
+  <li>Vous devrez peut-être attendre 24 heures avant que les deux enregistrements ne se propagent complètement. Vous pouvez toujours le vérifier avec [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. Si l'adresse IP de votre domaine s'affiche sur mxtoolbox de la même manière que celle de votre serveur, vous pouvez passer à l'étape suivante.</li>
 
-3. Connectez-vous en SSH sur votre serveur avec l'utilisateur CentOS et exécutez les commandes suivantes pour installer Certbot :
+  <li>Connectez-vous en SSH sur votre serveur avec l'utilisateur CentOS et exécutez les commandes suivantes pour installer Certbot :</li>
+</ol>
 
 > [!warning]
 >
@@ -76,7 +78,9 @@ echo "ServerName personaldomain.ovh;" >> /etc/httpd/conf/httpd.conf
 systemctl restart httpd
 ```
 
-4. Générez votre certificat SSL en utilisant Certbot (suivez les instructions à l'écran).
+<ol start="4">
+  <li> Générez votre certificat SSL en utilisant Certbot (suivez les instructions à l'écran).</li>
+</ol>
 
 ```sh
 certbot certonly -d personaldomain.ovh --webroot
@@ -118,9 +122,11 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 > Si le lien a déjà expiré, connectez-vous en SSH à l'instance à l'aide de l'utilisateur CentOS et exécutez la commande « whmlogin » pour en générer un nouveau ou réinstallez l'instance.
 >
 
-3. Lisez et acceptez les conditions particulières de cPanel.
-4. Saisissez vos serveurs de messagerie et serveurs DNS *.
-5. Définissez le mot de passe root que vous utiliserez la prochaine fois que vous vous connecterez à WHM *.
+<ol start="3">
+  <li>Lisez et acceptez les conditions particulières de cPanel.</li>
+  <li>Saisissez vos serveurs de messagerie et serveurs DNS *.</li>
+  <li>Définissez le mot de passe root que vous utiliserez la prochaine fois que vous vous connecterez à WHM *.</li>
+</ol>
 
 ![horizon](images/change_root.png){.thumbnail}
 
