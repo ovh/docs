@@ -141,15 +141,15 @@ Make the necessary changes, then click `Confirm`{.action}.
 
 You cannot modify the configuration of a PostgreSQL instance. 
 
-However, you can enable extensions for your databases. To do this, go to the `Databases` tab, and click on the table icon for your database in the “**Extensions” column**
+However, you can enable extensions for your databases. To do this, go to the `Databases` tab, and click on the table icon for your database in the **Extensions** column.
 
 ![private-sql](images/private-sql-config03.png){.thumbnail}
 
 ### Change the MySQL, PostgreSQL or MariaDB version of the database server
 
-To find out the version of MySQL, PostgreSQL or MariaDB of your database server, you must go to the "**General information"** tab after choosing your database server.
+To find out the version of MySQL, PostgreSQL or MariaDB of your database server, you must go to the **General information** tab after choosing your database server.
 
-The current version appears in the **Version row**.
+The current version appears in the **Version** row.
 
 To edit this version, click `Update version`{.action}.
 
@@ -211,7 +211,7 @@ In the `General information` tab, you will find the **SFTP** section in the **Co
 
 ![private-sql](images/private-sql-SFTP01.png){.thumbnail}
 
-To log in via **SFTP**, you can do so via the FileZilla software, using [this guide](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/).
+To log in via **SFTP**, you can do so via the FileZilla software, using [this guide](../web_hosting_filezilla_user_guide/).
 
 If this file is empty, you do not have any slow queries.
 
@@ -245,7 +245,7 @@ To increase the speed of searches during a query, you must index the fields that
 Example: you do a regular search for people in relation to the city. Index the “city” field with the following query:
 
 ```bash
-ALTER TABLE `test` ADD INDEX (`city`)
+ALTER TABLE 'test' ADD INDEX ('city')
 ```
 
 #### Purging a database
