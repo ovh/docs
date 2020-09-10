@@ -16,7 +16,7 @@ With the Private SQL and Cloud Databases database servers, you can influence you
 
 ## Requirements
 
-- You must have a [Private SQL Web Hosting plan ](https://www.ovh.co.uk/web-hosting/sql-options.xml){.external} or a [Cloud Database](https://www.ovh.co.uk/cloud-databases/){.external}.
+- a [Private SQL Web Hosting plan](https://www.ovh.co.uk/web-hosting/sql-options.xml){.external} or a [Cloud Database](https://www.ovh.co.uk/cloud-databases/){.external}
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
@@ -57,7 +57,7 @@ In the window that pops up, enter the IP address or mask that you wish to author
 
 For an OVHcloud Web Hosting plan, you will need to authorise its gateway IP address. 
 
-To find the ** gateway IP address** go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click the `Web` tab, then click on `Hosting plans`{.action} in the left column. Select your Web Hosting plan in the list, then click on the `FTP - SSH` tab.
+To find the **gateway IP address** go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click the `Web` tab, then click on `Hosting plans`{.action} in the left column. Select your Web Hosting plan in the list, then click on the `FTP - SSH` tab.
 
 Here, look for **FTP server**, which will show you the cluster number you are on, as shown below.
 
@@ -103,7 +103,7 @@ In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), 
 
 - Click on the `Configuration` tab.
 
-In the “**General configuration of MySQL”** box, you will see the configuration currently set for your database. You can modify it directly, then click `Apply`{.action}.
+In the **General configuration of MySQL** box, you will see the configuration currently set for your database. You can modify it directly, then click `Apply`{.action}.
 
 ![private-sql](images/private-sql-config02.png){.thumbnail}
 
@@ -124,7 +124,7 @@ In the “**General configuration of MySQL”** box, you will see the configurat
 
 > [!primary]
 >
-> <b>Tmpdir</b>:
+> <b>Tmpdir</b>:  
 > \- /dev/shm: The database server will allocate half of its RAM to this directory for higher performance.
 >
 > \- /tmp: The server will allocate unlimited space on its hard disk for this directory, but this will be much less efficient. We recommend using this directory only for occasional heavy operations.
@@ -166,7 +166,7 @@ select version();
 
 ####  **How do I know the exact version of mySQL or MariaDB that I am using?**
 
-To do this, enter this command in phpMyAdmin, in the “**SQL”** section, then click `Run`{.action}:
+To do this, enter this command in phpMyAdmin, in the **SQL** section, then click `Run`{.action}:
 
 ```
 show variables like "version";
@@ -192,7 +192,7 @@ This allows you to view the query execution time on your database server in the 
 
 In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Web` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
 
-Go to the `Metrics` tab for your database server. You will find the graph **“Query Execution Time Statistics”**.
+Go to the `Metrics` tab for your database server. You will find the graph **Query Execution Time Statistics**.
 
 ![private-sql](images/private-sql-metrics01.png){.thumbnail}
 
@@ -230,7 +230,7 @@ This graph allows you to track, over the last 24 hours, the load of connections 
 
 In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Web` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
 
-Go to the `Metrics` tab in the OVHcloud Control Panel. You will find the graph **“Statistics for total connections per minute”**.
+Go to the `Metrics` tab in the OVHcloud Control Panel. You will find the graph **Statistics for total connections per minute**.
 
 ![private-sql](images/private-sql-metrics03.png){.thumbnail}
 
