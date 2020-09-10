@@ -12,7 +12,7 @@ order: 8
 
 OVHcloud offre aux clients Public Cloud des images d'applications préinstallées pour un déploiement rapide et facile en quelques clics. 
 
-**Ce guide décrit les premières étapes d'installation de chaque image d'application préinstallée sur notre plateforme Public Cloud.**
+**Découvrez comment déployer des applications préinstallées sur vos instances Public Cloud.**
 
 ## Prérequis
 
@@ -148,10 +148,10 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 1. Obtenez l'URL d'accès à votre application en [suivant ces étapes](./#details-de-connexion-a-lapplication).
 2. Cliquez sur l'URL renvoyée par l'API.
 3. Connectez-vous à l'aide du nom d'utilisateur et du mot de passe retournés par l'API.
-4. Une fois connecté, Plesk vous demandera:  
-    a) Vos coordonnées.
-    b) Un nouveau mot de passe pour l'utilisateur « admin » que vous utiliserez pour vous connecter à l'interface de Plesk.
-    c) Des informations sur la licence.*
+4. Une fois connecté, Plesk vous demandera:   
+    a) Vos coordonnées.  
+    b) Un nouveau mot de passe pour l'utilisateur « admin » que vous utiliserez pour vous connecter à l'interface de Plesk.  
+    c) Des informations sur la licence.*  
     d) De lire et accepter les contrats de licence utilisateur.  
 
 Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
