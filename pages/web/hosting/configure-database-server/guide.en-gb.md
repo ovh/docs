@@ -16,14 +16,14 @@ With the Private SQL and Cloud Databases database servers, you can influence you
 
 ## Requirements
 
-- You must have a [Private SQL Web Hosting plan ](https://www.ovh.com/fr/hebergement-web/options-sql.xml){.external} or a [Cloud Database](https://www.ovh.com/fr/cloud-databases){.external}.
+- You must have a [Private SQL Web Hosting plan ](https://www.ovh.co.uk/web-hosting/sql-options.xml){.external} or a [Cloud Database](https://www.ovh.co.uk/cloud-databases/){.external}.
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
 ### View general information on your database server
 
-In the services bar on the left-hand side of your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Databases`{.action} section, then to the SQL instance concerned. Click on the `General information`{.action} tab.
+In the services bar on the left-hand side of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Databases`{.action} section, then select the SQL instance concerned. Click on the `General information`{.action} tab.
 
 You can also view important information on your SQL instance. Please take a few moments to ensure that the information displayed is correct, and corresponds to the instructions below.
 
@@ -35,7 +35,7 @@ You can also view important information on your SQL instance. Please take a few 
 |RAM|Shows the RAM available for your instance, also shows if you are close to exceeding the RAM limit. Your database server has dedicated, guaranteed resources: its RAM. If required, you can scale the RAM, and receive warnings if you are consuming all of your instance’s RAM resources.|
 |Infrastructure|Shows the infrastructure used by your instance. This information is inherent to the OVHcloud infrastructure.|
 |Datacentre|Shows the datacentre in which the instance has been created. Verify that your instance is hosted in is the same datacentre as the OVHcloud Web Hosting plan that your website is based (or will be based) on.|
-|Host|Shows the OVHcloud server your instance has been created in. This information is inherent to the OVHcloud infrastructure, and can be used in our communications on [ OVHcloud incidents](http://travaux.ovh.net/){.external}.|
+|Host|Shows the OVHcloud server your instance has been created in. This information is inherent to the OVHcloud infrastructure, and can be used in our communications on [OVHcloud incidents](http://travaux.ovh.net/){.external}.|
 
 ![General information](images/privatesql01-General-information.png){.thumbnail}
 
@@ -43,13 +43,13 @@ You can also view important information on your SQL instance. Please take a few 
 
 In order for your CloudDB instance to be accessible, you must enter the IP addresses or ranges that can connect to your database.
 
-In the services bar on the left-hand side of your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Databases`{.action} section, then to the SQL instance concerned. 
+In the services bar on the left-hand side of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Databases`{.action} section, then select the SQL instance concerned. Click on the `General information`{.action} tab.
 
 To do this, click on the `Authorised IPs`{.action} tab, then click `Add an IP address/mask`{.action}.
 
 ![clouddb](images/clouddb-add-ip.png){.thumbnail}
 
-In the window that pops up, enter the IP address or mask that you wish to authorise `IP/masque`{.action}, together with a description, if you wish. You can then decide if you want to grant access to the databases only, or to the SFTP as well. Finally, click `Confirm`{.action}.
+In the window that pops up, enter the IP address or mask that you wish to authorise `IP/mask`{.action}, together with a description, if you wish. You can then decide if you want to grant access to the databases only, or to the SFTP as well. Finally, click `Confirm`{.action}.
 
 ![clouddb](images/clouddb-add-ip-step2.png){.thumbnail}
 
@@ -57,13 +57,13 @@ In the window that pops up, enter the IP address or mask that you wish to author
 
 For an OVHcloud Web Hosting plan, you will need to authorise its gateway IP address. 
 
-To find the ** gateway IP address** go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click the `Web` tab, then click on ` Hosting plans`{.action} in the left column. Select your Web Hosting plan  in the list, then click on the `FTP - SSH` tab.
+To find the ** gateway IP address** go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click the `Web` tab, then click on `Hosting plans`{.action} in the left column. Select your Web Hosting plan in the list, then click on the `FTP - SSH` tab.
 
-Here, look for “**FTP server”**, which will show you the cluster number you are on, as shown below.
+Here, look for **FTP server**, which will show you the cluster number you are on, as shown below.
 
 ![clouddb](images/clouddb-add-ip-step3.png){.thumbnail}
 
-Once you have retrieved the number of the cluster on which your Web Hosting plan  is located, go to the “[List of IP addresses for clusters and Web Hostings”](../liste-des-adresses-ip-des-clusters-et-hebergements-web/){.external} page. It will contain the gateway IP address for each cluster.
+Once you have retrieved the number of the cluster on which your Web Hosting plan is located, go to the [IP address list for Web Hosting clusters](../list-of-ip-addresses-of-web-hosting-clusters/). It provides the gateway IP address for each cluster.
 
 > [!warning]
 >
@@ -73,8 +73,9 @@ Once you have retrieved the number of the cluster on which your Web Hosting plan
 
 ### Modifying the database server solution
 
-To modify the solution for your database server, go to your OVHcloud Control [Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click the `Web` tab, and then click `Database`{.action} in the left pane. Select the name of your database server.
-In the “**General information”** tab, displayed by default, click on `...`{.action} to the right of “RAM”, then on `Change the amount of RAM`{.action} to access the order for this modification.
+To modify the solution for your database server, go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click the `Web` tab, and then click `Database`{.action} in the left pane. Select the name of your database server.
+
+In the **General information** tab, displayed by default, click on `...`{.action} to the right of “RAM”, then on `Change the amount of RAM`{.action} to access the order for this modification.
 
 ![private-sql](images/private-sql-order-ram01.png){.thumbnail}
 
@@ -83,51 +84,50 @@ Choose the amount of RAM you want, then click `Next`{.action}. You can then choo
 > [!primary]
 >
 > The remaining term until expiration will be prorated.
->  This pro rata calculation will be based on the expiration date of the Private SQL server, not on the date of the purchase order.
-> date of the purchase order.
+> This pro rata calculation will be based on the expiration date of the Private SQL server, not on the date of the purchase order.
 > 
 
 Once you have confirmed your contracts, you will be redirected to the purchase order to pay for this change. It will then be effective within a few hours.
 
 > [!warning]
 >
->  If you currently have a free Private SQL server with your
-> Performance hosting, it will no longer be free after changing your offer.
+>  If you currently have a free Private SQL server available as part of a Performance hosting, it will no longer be free after changing your offer.
 > 
-> 
+
 
 ### Modifying my database server’s configuration
 
-Rendez-vous dans votre espace client (section IP) Click the `Web` tab, and then click `Database`{.action} in the left pane. Select the name of your Private SQL server. 
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Web` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
 
 #### MySQL and MariaDB instances
 
-- Click the `Configuration` tab.
+- Click on the `Configuration` tab.
 
 In the “**General configuration of MySQL”** box, you will see the configuration currently set for your database. You can modify it directly, then click `Apply`{.action}.
 
 ![private-sql](images/private-sql-config02.png){.thumbnail}
 
-- <b> Tmpdir</b>: **Directory of temporary files.<b> "/dev/shm</b> is the instance’s RAM. <b>"/tmp"</b>** is the instance’s hard drive.
-- <b> MaxAllowedPacket</b>: The maximum packet size.
-- <b> Max_user_connections</b>: The number of concurrent connections authorised per user.
-- <b> AutoCommit</b>: Sets whether requests are automatically committed or not.
-- <b> Interactive_timeout</b>: Time (in seconds) for which the server will wait for activity on an interactive connection before closing the connection.
-- <b> InnodbBufferPoolSize</b>: The selected buffer memory size.
-- **MaxConnections:** The number of concurrent connections authorised on Private SQL.
-- <b> Wait_timeout</b>: Time (in seconds) for which the server will wait for activity on a non-interactive connection before closing the connection.
-- <b> Event_scheduler</b>: Is used to trigger the execution of requests programmed directly on the MySQL server.
+- <b>Tmpdir</b>: Directory of temporary files. <b>"/dev/shm"</b> is the instance’s RAM. <b>"/tmp"</b> is the instance’s hard drive.
+- <b>MaxAllowedPacket</b>: The maximum packet size.
+- <b>Max_user_connections</b>: The number of concurrent connections authorised per user.
+- <b>AutoCommit</b>: Sets whether requests are automatically committed or not.
+- <b>Interactive_timeout</b>: Time (in seconds) for which the server will wait for activity on an interactive connection before closing the connection.
+- <b>InnodbBufferPoolSize</b>: The selected buffer memory size.
+- <b>MaxConnections:</b> The number of concurrent connections authorised on Private SQL.
+- <b>Wait_timeout</b>: Time (in seconds) for which the server will wait for activity on a non-interactive connection before closing the connection.
+- <b>Event_scheduler</b>: Is used to trigger the execution of requests programmed directly on the MySQL server.
 
 > [!primary]
-> When you encounter an error on your website stating “**Too many connections”**, this is due to the number of simultaneous connections on your database server being exceeded.
+> When you encounter an error on your website stating "**Too many connections**", this is due to the number of simultaneous connections on your database server being exceeded.
 > You can then increase the **MaxConnections variable** if it is not at its maximum.
 >
 
 > [!primary]
 >
-> <b> Tmpdir</b>:
+> <b>Tmpdir</b>:
 > \- /dev/shm: The database server will allocate half of its RAM to this directory for higher performance.
-> /tmp/* The server will allocate unlimited space on its hard disk for this directory, but this will be much less efficient. We recommend using this directory only for occasional heavy operations.
+>
+> \- /tmp: The server will allocate unlimited space on its hard disk for this directory, but this will be much less efficient. We recommend using this directory only for occasional heavy operations.
 >
 
 Make the necessary changes, then click `Confirm`{.action}.
@@ -158,7 +158,7 @@ To edit this version, click `Update version`{.action}.
 
 #### **How do I know the exact version of PostgreSQL I am using?**
 
-Enter this command in phpPgAdmin by clicking on **your database** in the “**SQL”** section, then clicking `Launch`{.action}:
+Enter this command in phpPgAdmin by clicking on **Your database** in the **SQL** section, then click `Launch`{.action}:
 
 ```
 select version();
@@ -190,7 +190,7 @@ show variables like "version";
 
 This allows you to view the query execution time on your database server in the last 24 hours.
 
-Rendez-vous dans votre espace client (section IP) Click the `Web` tab, and then click `Database`{.action} in the left pane. Select the name of your database server. 
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Web` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
 
 Go to the `Metrics` tab for your database server. You will find the graph **“Query Execution Time Statistics”**.
 
@@ -202,24 +202,25 @@ Go to the `Metrics` tab for your database server. You will find the graph **“Q
 > 
 > These are the queries that take longer to run. The value is set to 1 second on our database servers in the variable **“long_query_time”**.
 
-These logs, called **"slow-query.log"**, can be retrieved from the root of the SFTP space of your database server. 
+These logs, labelled **"slow-query.log"**, can be retrieved from the root of the SFTP space of your database server. 
 
-Rendez-vous dans votre espace client (section IP) Click the `Web` tab, and then click `Database`{.action} in the left pane. Select the name of your database server. 
 
-In the General `information` tab, you will find the “**SFTP”** section in the “**Connection information” ** box.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Web` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
+
+In the `General information` tab, you will find the **SFTP** section in the **Connection information** box.
 
 ![private-sql](images/private-sql-SFTP01.png){.thumbnail}
 
-To log in via **SFTP**, you can do so via the Filezilla software, using the guide: FileZilla user guide.
+To log in via **SFTP**, you can do so via the FileZilla software, using [this guide](https://docs.ovh.com/gb/en/hosting/web_hosting_filezilla_user_guide/).
 
 If this file is empty, you do not have any slow queries.
 
 
 #### Monitoring the RAM used
 
-Rendez-vous dans votre espace client (section IP) Click the `Web` tab, and then click `Database`{.action} in the left pane. Select the name of your database server. 
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Web` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
 
-Go to the `Metrics` tab in the OVHcloud Control Panel. You will find the graph **“RAM usage statistics”**.
+Go to the `Metrics` tab in the OVHcloud Control Panel. You will find the graph **RAM usage statistics**.
 
 ![private-sql](images/private-sql-metrics02.png){.thumbnail}
 
@@ -227,7 +228,7 @@ Go to the `Metrics` tab in the OVHcloud Control Panel. You will find the graph *
 
 This graph allows you to track, over the last 24 hours, the load of connections per minute on your database server.
 
-Rendez-vous dans votre espace client (section IP) Click the `Web` tab, and then click `Database`{.action} in the left pane. Select the name of your database server. 
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Web` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
 
 Go to the `Metrics` tab in the OVHcloud Control Panel. You will find the graph **“Statistics for total connections per minute”**.
 
@@ -235,7 +236,7 @@ Go to the `Metrics` tab in the OVHcloud Control Panel. You will find the graph *
 
 ### Managing your databases
 
- It is recommended that you maintain your database to ensure high performance. Performance refers to the fact that the information contained in the database is most quickly returned to the script that requests it. This requires a structured and optimised database.
+It is recommended that you maintain your database to ensure high performance. Performance refers to the fact that the information contained in the database is most quickly returned to the script that requests it. This requires a structured and optimised database.
 
 #### Indexing a database
 
@@ -246,15 +247,16 @@ Example: you do a regular search for people in relation to the city. Index the �
 ```bash
 ALTER TABLE `test` ADD INDEX (`city`)
 ```
+
 #### Purging a database
 
-Some of your data is no longer being accessed? By archiving them, your tables will be less crowded and searches will go faster.
+Some of your data is no longer being accessed? By archiving it, your tables will be less crowded and searches will go faster.
 
-#### **Display limit**
+#### Display limit
 
-Limit the display of records to a limited number (for example, 10 per page) with the LIMIT portion of your SQL query.
+Limit the display of records to a fixed number (for example: 10 per page) with the **"LIMIT"** portion of your SQL query.
 
-#### **Query grouping**
+#### Query grouping
 
 Group your queries at the beginning of the script this way:
 
@@ -271,7 +273,8 @@ Loop through data...
 Display...
 ...
 ```
-#### **Retrieve only useful data**
+
+#### Retrieve only useful data
 
 In your SQL queries, make sure you select only what you need, and especially that you have not forgotten the links between the tables.
 
@@ -281,12 +284,12 @@ Example:
 (where table1.champs = table2.champs2)
 ```
 
-#### **Avoid options that consume too many resources**
+#### Avoid options that consume too many resources
 
 Avoid using **"HAVING"** for example. It increases your requests. Similarly, avoid using **“GROUP BY”**, unless it is strictly necessary.
 
 ## Go further
 
-[List of IP addresses for clusters and Web Hostings ](../liste-des-adresses-ip-des-clusters-et-hebergements-web/){.external}
+[IP address list for Web Hosting clusters](../list-of-ip-addresses-of-web-hosting-clusters/)
 
 Join our community of users on <https://community.ovh.com>.
