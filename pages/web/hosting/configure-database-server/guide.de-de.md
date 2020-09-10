@@ -12,18 +12,18 @@ order: 6
 
 Die SQL-Server Privat und Cloud Databases geben Ihnen die Möglichkeit, auf die Gesamtparameter Ihres Servers einzuwirken. Sie können auch die Aktivität Ihres Servers sehen. 
 
-**'Erfahren Sie, wie Sie Ihren Datenbankserver konfigurieren und optimieren können.**
+**Diese Anleitung erklärt, wie Sie Ihren Datenbankserver konfigurieren und optimieren können.**
 
 ## Voraussetzungen
 
-- Es muss über ein [privates SQL-Beherbergungsangebot oder ](https://www.ovh.com/fr/hebergement-web/options-sql.xml){.external}Cloud Databases verfügen[ ](https://www.ovh.com/fr/cloud-databases){.external}.
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} angemeldet.
+- Sie haben ein [OVHcloud Webhosting mit SQL Private](https://www.ovh.de/hosting/sql-optionen.xml)in Ihrem Kunden-Account oder nutzen [Cloud Databases](https://www.ovh.de/cloud-databases/).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
 
 ## In der praktischen Anwendung
 
-### Abrufen der allgemeinen Informationen seines Datenbank-Servers
+### Abrufen der allgemeinen Informationen eines Datenbank-Servers
 
-Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im linken Menü in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende SQL-Instanz. Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden.
+Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) im linken Menü in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende SQL-Instanz. Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden.
 
 Hier können Sie wichtige Informationen zu Ihrer SQL-Instanz einsehen. Wir bitten Sie, sich einen Moment Zeit zu nehmen und zu überprüfen, dass die angezeigten Daten korrekt sind bzw. mit den nachfolgenden Angaben übereinstimmen.
 
@@ -55,15 +55,15 @@ Geben Sie im angezeigten Fenster im Feld `IP / Maske`{.action} die IP-Adresse od
 
 #### Autorisieren der Anbindung eines OVHcloud Webhostings 
 
-Bei OVHcloud Webhostings müssen Sie die ausgehende IP- Adresse („gateway“) des Hostings genehmigen. 
+Für OVHcloud Webhostings müssen Sie die ausgehende IP-Adresse („gateway“) des Hostings hinzufügen. 
 
-Die ausgehende IP-Adresse können Sie über Ihr [OVHcloud Kundencenter<2 herausfinden.  Klicken Sie auf `Web` und dann auf `Hosting-Pakete`{.action} in der linken Spalte. Wählen Sie Ihr Hosting aus der Liste und klicken Sie dann auf den Tab `FTP - SSH`.
+Die ausgehende IP-Adresse können Sie über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) herausfinden. Klicken Sie auf `Web` und dann auf `Hosting-Pakete`{.action} in der linken Spalte. Wählen Sie Ihr Hosting aus der Liste und klicken Sie dann auf den Tab `FTP - SSH`.
 
-Unter **"FTP Server"**, wird Ihnen die Cluster-Nummer, auf der Ihr Hosting liegt, angezeigt, wie unten dargestellt.
+Unter **FTP Server** wird Ihnen die Cluster-Nummer, auf der Ihr Hosting liegt, angezeigt.
 
 ![clouddb](images/clouddb-add-ip-step3.png){.thumbnail}
 
-Nachdem Sie die Cluster-Nummer Ihres Hostings abgerufen haben, überprüfen Sie diese in der ["Liste der IP-Adressen von Clustern und Webhostings"](../liste-des-adresses-ip-des-clusters-et-hebergements-web/){.external}. Dort finden Sie die ausgehende IP-Adresse jedes Clusters.
+Nachdem Sie die Cluster-Nummer Ihres Hostings abgerufen haben, überprüfen Sie diese im [Verzeichnis von IP-Adressen für die Webhosting Cluster](../verzeichnis-der-ip-adressen-web-hosting-cluster/). Dort finden Sie die ausgehende IP-Adresse jedes Clusters.
 
 > [!warning]
 >
@@ -73,8 +73,9 @@ Nachdem Sie die Cluster-Nummer Ihres Hostings abgerufen haben, überprüfen Sie 
 
 ### Wechseln des Datenbank-Angebots
 
-Um das Angebot Ihres Datenbanken-Servers zu wechseln, melden Sie sich in Ihrem [OVHcloud Kundencenter ](https://www.ovh.com/auth/?action=gotomanager){.external} an. Klicken Sie auf `Web`{.action} und dann auf Datenbanken in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus.
-In der Standardansicht **"Allgemeine Informationen"** klicken Sie auf `...`{.action} rechts neben "RAM" und dann auf `RAM Menge ändern`{.action}, um zur Bestellung geleitet zu werden.
+Um das Angebot Ihres Datenbanken-Servers zu wechseln, melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) an. Klicken Sie auf `Web`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus.
+
+In der Standardansicht **Allgemeine Informationen** klicken Sie auf `...`{.action} rechts neben "RAM" und dann auf `RAM Menge ändern`{.action}, um zur Bestellung geleitet zu werden.
 
 ![private-sql](images/private-sql-order-ram01.png){.thumbnail}
 
@@ -83,26 +84,26 @@ Wählen Sie die gewünschte Menge RAM aus und klicken Sie auf `Weiter`{.action}.
 > [!primary]
 >
 > Eine anteilige Berechnung erfolgt basierend auf der Restlaufzeit des Dienstes.
->  Diese Berechnung basiert auf dem Ablaufdatum des SQL Private Servers, nicht auf dem Datum des Bestellscheins.
+> Diese Berechnung basiert auf dem Ablaufdatum des SQL Private Servers, nicht auf dem Datum des Bestellscheins.
 > 
 
 Nach Bestätigung der Verträge werden Sie auf den Bestellschein umgeleitet, um die Änderung auszuführen. Die Anpassung erfolgt innerhalb einiger Stunden.
 
 > [!warning]
 >
->  Wenn Sie bisher einen kostenlosen SQL Private Server, inkludiert in einem Performance Hosting-Paket, genutzt haben, wird dies mit dem
+> Wenn Sie bisher einen kostenlosen SQL Private Server, inkludiert in einem Performance Hosting-Paket, genutzt haben, wird dies mit dem
 > Wechsel des Angebots hinfällig.
 > 
 
 ### Die Konfiguration meines Datenbankservers ändern
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web`{.action} und dann auf Datenbanken in der linken Spalte. und wählen Sie den Namen Ihres SQL Private Servers aus. 
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. und wählen Sie den Namen Ihres SQL Private Servers aus. 
 
 #### MySQL und MariaDB Instanzen
 
 - Gehen Sie zum Tab `Konfiguration`.
 
-Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihre Datenbank festgelegte Konfiguration. Sie können hier direkt Änderungen durchführen und dann auf `Anwende2} klicken.
+Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihre Datenbank festgelegte Konfiguration. Sie können hier direkt Änderungen durchführen und dann auf `Anwenden`{.action} klicken.
 
 ![private-sql](images/private-sql-config02.png){.thumbnail}
 
@@ -111,21 +112,22 @@ Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihr
 - **max_user_connections**: Anzahl der erlaubten Simultanverbindungen je Benutzer.
 - **AutoCommit**: Legt fest, ob die SQL-Transaktionen automatisch bestätigt werden oder nicht.
 - **Interactive_timeout**: Zeit (in Sekunden), während der der Server auf eine Aktivität auf einer interaktiven Verbindung wartet, bevor er diese schließt.
-- **InnodbBufferPoolSize** : Größe des Pufferspeichers auswählen (in Megabyte).
+- **InnodbBufferPoolSize**: Größe des Pufferspeichers auswählen (in Megabyte).
 - **MaxLines:** Anzahl der erlaubten Simultanverbindungen auf Private SQL.
 - **Wait_timeout**: Zeit (in Sekunden), während der der Server auf eine Aktivität auf einer nicht interaktiven Verbindung wartet, bevor er diese schließt.
-- **Event_scheduler** : Wird verwendet, um die Ausführung programmierter Anfragen direkt im MySQL-Server zu starten.
+- **Event_scheduler**: Wird verwendet, um die Ausführung programmierter Anfragen direkt im MySQL-Server zu starten.
 
 > [!primary]
 > Wenn Sie auf Ihrer Webseite einen Fehler feststellen, der **"Too many connections"** anzeigt, ist dies auf die Überschreitung der Anzahl der gleichzeitigen Verbindungen auf Ihrer Datenbank zurückzuführen.
-> Dann können Sie die **"MaxConnections"**-Variable erhöhen, wenn sie nicht bereits am Limit ist.
+> Dann können Sie die **"MaxConnections**-Variable erhöhen, wenn sie nicht bereits am Limit ist.
 >
 
 > [!primary]
 >
-> Tmpdir:
-> \- /dev/shm : Der Datenbankserver wird die Hälfte seines RAM-Speichers diesem Verzeichnis für mehr Leistung zuweisen.
-> /tmp/* Der Server wird auf seiner Festplatte unbegrenzten Speicherplatz für dieses Verzeichnis freigeben, aber deutlich zu Lasten der Performance. Wir empfehlen Ihnen, dieses Verzeichnis nur für gelegentliche größere Operationen zu verwenden.
+> <b>Tmpdir</b>:    
+> \- /dev/shm: Der Datenbankserver wird die Hälfte seines RAM-Speichers diesem Verzeichnis für mehr Leistung zuweisen.
+>
+> \- /tmp: Der Server wird auf seiner Festplatte unbegrenzten Speicherplatz für dieses Verzeichnis freigeben, aber deutlich zu Lasten der Performance. Wir empfehlen Ihnen, dieses Verzeichnis nur gelegentlich für größere Operationen zu verwenden.
 >
 
 Nachdem Sie die notwendigen Änderungen durchgeführt haben, klicken Sie auf `Bestätigen`{.action}.
@@ -139,15 +141,15 @@ Nachdem Sie die notwendigen Änderungen durchgeführt haben, klicken Sie auf `Be
 
 Die Konfiguration einer PostgreSQL-Instanz kann nicht geändert werden. 
 
-Sie können jedoch Erweiterungen auf Ihren Datenbanken aktivieren. Klicken Sie hierzu auf den Tab `Datenbanken` und dann auf das Tabellensymbol der betreffenden Datenbank in der Spalte **"Erweiterungen"**
+Sie können jedoch Erweiterungen auf Ihren Datenbanken aktivieren. Klicken Sie hierzu auf den Tab `Datenbanken` und dann auf das Tabellensymbol der betreffenden Datenbank in der Spalte **Erweiterungen**.
 
 ![private-sql](images/private-sql-config03.png){.thumbnail}
 
 ### Ändern der MySQL-, PostgreSQL- oder MariaDB-Version des Datenbankservers
 
-Um die MySQL-, PostgreSQL- oder MariaDB-Version des Datenbankservers zu erfahren, überpüfen Sie nach der Wahl Ihres Datenbankservers den Tab **"Allgemeine Informationen"**.
+Um die MySQL-, PostgreSQL- oder MariaDB-Version des Datenbankservers zu erfahren, überpüfen Sie nach der Wahl Ihres Datenbankservers den Tab **Allgemeine Informationen**.
 
-Die aktuelle Version wird unter **"Version"** angezeigt.
+Die aktuelle Version wird unter **Version** angezeigt.
 
 Um die Version anzupassen, klicken Sie auf `Die Version ändern`{.action}.
 
@@ -167,7 +169,7 @@ select version();
 Hierzu geben Sie in phpMyAdmin unter der Rubrik **SQL** den folgenden Befehl ein und klicken Sie dann auf `Ausführen`{.action}:
 
 ```
-Show variable like version;
+show variables like "version";
 ```
 
 > [!primary]
@@ -178,8 +180,7 @@ Show variable like version;
 
 > [!warning]
 >
-> Es ist nicht möglich, direkt von einer älteren Version zur neuesten zu wechseln.
->  Die Zwischenversionen müssen einbezogen werden.
+> Es ist nicht möglich, direkt von einer älteren Version zur neuesten zu wechseln. Die Zwischenversionen müssen einbezogen werden.
 > 
 
 ### Logs und Messwerte
@@ -188,9 +189,9 @@ Show variable like version;
 
 So können Sie die Ausführungsdauer auf Ihrem Datenbankserver während der letzten 24 Stunden visualisieren.
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web`{.action} und dann auf Datenbanken in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus. 
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus. 
 
-Gehen Sie hierzu zum Tab `Messwerte` Ihres Datenbankservers. Sie finden hier die **“Statistiken zur Ausführungsdauer der Anfragen“**.
+Gehen Sie hierzu zum Tab `Messwerte` Ihres Datenbankservers. Sie finden hier die **Statistiken zur Ausführungsdauer der Anfragen**.
 
 ![private-sql](images/private-sql-metrics01.png){.thumbnail}
 
@@ -204,20 +205,20 @@ Diese Logs **"slow-query.log"** können im Wurzelverzeichnis des SFTP-Zugangs Ih
 
 Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web`{.action} und dann auf Datenbanken in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus. 
 
-Im Kasten `Allgemeine Informationen`  finden Sie den Abschnitt **SFTP** unter **Verbindungsinformationen**
+Im Kasten `Allgemeine Informationen` finden Sie den Abschnitt **SFTP** unter **Verbindungsinformationen**
 
 ![private-sql](images/private-sql-SFTP01.png){.thumbnail}
 
-Um sich via **SFTP** einzuloggen, können Sie die den Client von Filezilla verwenden. Diese Anleitung kann Ihnen dabei helfen: Webhosting: Hilfe zur Verwendung von FileZilla
+Um sich via **SFTP** einzuloggen, können Sie den Client von FileZilla verwenden. Diese Anleitung kann Ihnen dabei helfen: [Verwendung von FileZilla](https://docs.ovh.com/de/hosting/webhosting_hilfe_zur_verwendung_von_filezilla/)
 
 Wenn diese Datei leer ist, haben Sie keine langsamen Anfragen.
 
 
 #### Überprüfung der RAM Nutzung
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web`{.action} und dann auf Datenbanken in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus. 
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus. 
 
-Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik **"Statistiken zum verwendeten RAM“**.
+Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik **Statistiken zum verwendeten RAM**.
 
 ![private-sql](images/private-sql-metrics02.png){.thumbnail}
 
@@ -225,34 +226,35 @@ Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik
 
 Diese Anzeige ermöglicht es, die Verbindungslast pro Minute während der letzten 24 Stunden auf Ihrem Datenbankserver zu verfolgen.
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web`{.action} und dann auf Datenbanken in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus. 
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus. 
 
-Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik **“Statistiken der Gesamtzahl der Verbindungen pro Minute“**.
+Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik **Statistiken der Gesamtzahl der Verbindungen pro Minute**.
 
 ![private-sql](images/private-sql-metrics03.png){.thumbnail}
 
 ### Ihre Datenbanken optimieren
 
- Es wird empfohlen, die Datenbank so zu administrieren, dass sie effizient ist. Effizienz (Performance) bezieht sich hier auf die möglichst schnelle Rückgabe der Information an das anfragende Skript. Dazu bedarf es einer strukturierten und optimierten Datenbank.
+Es wird empfohlen, die Datenbank so zu administrieren, dass sie effizient ist. Effizienz (Performance) bezieht sich hier auf die möglichst schnelle Rückgabe der Information an das anfragende Skript. Dazu bedarf es einer strukturierten und optimierten Datenbank.
 
 #### Datenbank indexieren
 
-Um die Bearbeitungsgeschwindigkeit einer Anfrage zu erhöhen, sollte ein Index auf die in den WHERE-Klauseln verwendeten Felder gesetzt werden.
+Um die Bearbeitungsgeschwindigkeit einer Anfrage zu erhöhen, sollte ein Index auf die in den **"WHERE"**-Klauseln verwendeten Felder gesetzt werden.
 
 Beispiel: Sie suchen regelmäßig nach „Person“ in Verbindung mit „Stadt“. Indexieren Sie das Feld "Stadt" folgendermaßen:
 
 ```bash
-ALTER TABLE `test` ADD INDEX ( `Stadt` );
+ALTER TABLE 'test' ADD INDEX ('Stadt');
+
 ```
 #### Datenbank bereinigen
 
-Werden einige Ihrer Daten nicht mehr benötigt? Archivieren von Daten hilft, Ihre Tabellen kleiner und damit schneller durchsuchbar zu halten.
+Daten, auf die nicht mehr zugegriffen wird, sollten archiviert werden. Archivieren von Daten hilft, Ihre Tabellen kleiner und damit schneller durchsuchbar zu halten.
 
-#### **Anzeigebegrenzung**
+#### Anzeigebegrenzung
 
-Beschränken Sie die Anzeige der Datensätze auf eine begrenzte Zahl (z.B. 10 pro Seite) mit dem LIMIT-Teil Ihrer SQL-Abfrage.
+Beschränken Sie die Anzeige der Datensätze auf eine begrenzte Zahl (z.B. 10 pro Seite) mit dem **"LIMIT"**-Teil Ihrer SQL-Abfrage.
 
-#### **Gruppieren von Anfragen**
+#### Gruppieren von Anfragen
 
 Gruppieren Sie Anfragen zu Beginn des Skriptes wie folgt:
 
@@ -269,7 +271,7 @@ Anzeige …
 ...
 ```
 
-#### **Nur notwendige Daten abrufen**
+#### Nur notwendige Daten abrufen
 
 Prüfen Sie in Ihren SQL-Anfragen, ob Sie nur die tatsächlich benötigten Daten abfragen und vergessen Sie insbesondere nicht die Tabellenverlinkung.
 
@@ -279,7 +281,7 @@ Beispiel:
 (where table1.champs = table2.champs2)
 ```
 
-#### **Vermeidung von Optionen mit zu hohem Ressourcenverbrauch**
+#### Vermeidung von Optionen mit zu hohem Ressourcenverbrauch
 
 Verwenden Sie beispielsweise nicht **"HAVING"**. Dies erhöht die Zahl der Abfragen. Vermeiden Sie ebenso die Verwendung von **"GROUP BY"**, es sei denn, dies ist unbedingt erforderlich.
 
