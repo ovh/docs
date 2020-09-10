@@ -59,9 +59,10 @@ This section only applies to WordPress, Drupal, Joomla and Prestashop installati
 If your domain is registered with OVHcloud you can follow [this guide.](../../domains/web_hosting_how_to_edit_my_dns_zone/).
 <br>If your domain is registered with another company you will need to contact them for assistance to set up your `A` records.
 
-2.  You may need to wait 24 hours before the two records propagate fully. You can always check it with [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. If the IP for your domain is showing on mxtoolbox the same as your server's IP address then you can proceed to the next step.
-
-3.  SSH into your server with the CentOS user and execute the following commands to install Certbot
+<ol start="2">
+<li>You may need to wait 24 hours before the two records propagate fully. You can always check it with [mxtoolbox](https://mxtoolbox.com/DnsLookup.aspx){.external}. If the IP for your domain is showing on mxtoolbox the same as your server's IP address then you can proceed to the next step.</li>
+<li>  SSH into your server with the CentOS user and execute the following commands to install Certbot</li>
+</ol>
 
 > [!warning]
 >
@@ -75,8 +76,9 @@ dnf install -y certbot python3-certbot-apache mod_ssl
 echo "ServerName personaldomain.ovh;" >> /etc/httpd/conf/httpd.conf
 systemctl restart httpd
 ```
-
-4.  Generate your SSL using Certbot (follow the on screen instructions)
+<ol start="4">
+<li>Generate your SSL using Certbot (follow the on screen instructions)</li>
+</ol>
 
 ```sh
 certbot certonly -d personaldomain.ovh --webroot
@@ -117,9 +119,11 @@ This section will explain the first steps specifically for the cPanel pre-instal
     > If the link has expired already, please SSH into the instance using the CentOS user and execute the "whmlogin" command to generate a new one or just reinstall the instance.
     >
 
-3. Read and accept the terms of cPanel.
-4. Provide your email and nameservers you wish to set on the server *.
-5. Set your root password which you will use the next time you log in to WHM *.
+<ol start="3">
+  <li>Read and accept the terms of cPanel.</li>
+  <li>Provide your email and nameservers you wish to set on the server *.</li>
+  <li>Set your root password which you will use the next time you log in to WHM *.</li>
+</ol>
 
 ![horizon](images/change_root.png){.thumbnail}
 
