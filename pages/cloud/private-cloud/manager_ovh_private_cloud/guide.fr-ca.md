@@ -249,7 +249,7 @@ L'onglet de backup vous permet d'activer la solution `Veeam backup`.
 
 ![Backup](images/controlpanel14.png){.thumbnail}
 
-Pour plus d'informations sur cette option, vous pouvez consulter ce [guide](../veeam-backup-as-a-service/){.external}.
+Pour plus d'informations sur cette option, vous pouvez consulter ce [guide](https://docs.ovh.com/fr/private-cloud/veeam-backup-as-a-service/){.external}.
 
 
 ## Aller plus loin
