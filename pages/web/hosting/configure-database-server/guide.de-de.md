@@ -16,7 +16,7 @@ Die SQL-Server Privat und Cloud Databases geben Ihnen die Möglichkeit, auf die 
 
 ## Voraussetzungen
 
-- Sie haben ein [OVHcloud Webhosting mit SQL Private](https://www.ovh.de/hosting/sql-optionen.xml)in Ihrem Kunden-Account oder nutzen [Cloud Databases](https://www.ovh.de/cloud-databases/).
+- Sie haben ein [OVHcloud Webhosting mit SQL Private](https://www.ovh.de/hosting/sql-optionen.xml) in Ihrem Kunden-Account oder nutzen [Cloud Databases](https://www.ovh.de/cloud-databases/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
 
 ## In der praktischen Anwendung
@@ -119,7 +119,7 @@ Im Kasten **Allgemeine Konfiguration von MySQL** finden Sie die derzeit für Ihr
 
 > [!primary]
 > Wenn Sie auf Ihrer Webseite einen Fehler feststellen, der **"Too many connections"** anzeigt, ist dies auf die Überschreitung der Anzahl der gleichzeitigen Verbindungen auf Ihrer Datenbank zurückzuführen.
-> Dann können Sie die **"MaxConnections**-Variable erhöhen, wenn sie nicht bereits am Limit ist.
+> Dann können Sie die **MaxConnections**-Variable erhöhen, wenn sie nicht bereits am Limit ist.
 >
 
 > [!primary]
@@ -134,7 +134,7 @@ Nachdem Sie die notwendigen Änderungen durchgeführt haben, klicken Sie auf `Be
 
 > [!warning]
 >
-> Jede Änderung erfordert ein Neustart des Datenbankservers.
+> Jede Änderung erfordert einen Neustart des Datenbankservers.
 > 
 
 #### Instance PostgreSQL
@@ -199,13 +199,13 @@ Gehen Sie hierzu zum Tab `Messwerte` Ihres Datenbankservers. Sie finden hier die
 
 > **Definition von "slow query log"**
 > 
-> Es handelt sich um Anfragen, die zu lange benötigen, bis sie ausgeführt wurden. Der Wert wird auf „1 Sekunde“ auf unseren Datenbankservern in der **“long_query_time"**-Variable festgelegt.
+> Es handelt sich um Anfragen, die zu lange benötigten, bis sie ausgeführt wurden. Der Wert wird auf „1 Sekunde“ auf unseren Datenbankservern in der **“long_query_time"**-Variable festgelegt.
 
-Diese Logs **"slow-query.log"** können im Wurzelverzeichnis des SFTP-Zugangs Ihres Datenbankservers abgerufen werden. 
+Diese Logs (**"slow-query.log"**) können im Wurzelverzeichnis des SFTP-Zugangs Ihres Datenbankservers abgerufen werden. 
 
 Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web`{.action} und dann auf Datenbanken in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus. 
 
-Im Kasten `Allgemeine Informationen` finden Sie den Abschnitt **SFTP** unter **Verbindungsinformationen**
+Im Kasten `Allgemeine Informationen` finden Sie den Abschnitt **SFTP** unter **Verbindungsinformationen**.
 
 ![private-sql](images/private-sql-SFTP01.png){.thumbnail}
 
@@ -226,7 +226,7 @@ Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik
 
 Diese Anzeige ermöglicht es, die Verbindungslast pro Minute während der letzten 24 Stunden auf Ihrem Datenbankserver zu verfolgen.
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus. 
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus.
 
 Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik **Statistiken der Gesamtzahl der Verbindungen pro Minute**.
 
