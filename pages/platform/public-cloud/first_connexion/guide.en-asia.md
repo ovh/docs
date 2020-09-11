@@ -109,7 +109,7 @@ You will then be logged in to your instance.
 
 > [!primary]
 >
-> If you experience any issues logging in to your Windows instance, please ensure that your Windows firewall authorises RDP connections. Please refer to our guide to [Windows server configuration](../vps/windows-first-config/){.external} if you need more information.
+> If you experience any issues logging in to your Windows instance, please ensure that your Windows firewall authorises RDP connections. Please refer to our guide to [Windows server configuration](../../vps/windows-first-config/){.external} if you need more information.
 > 
 
 ## Go further

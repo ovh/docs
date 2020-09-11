@@ -206,6 +206,6 @@ print("Welcome", client.get('/me')['firstname'])
 
 ## Go further
 
-[How to manage a customer’s account via OVHcloud API](../api/api-rights-delegation/)
+[How to manage a customer’s account via OVHcloud API](../api-rights-delegation/)
 
 Join our community of users on <https://community.ovh.com/en/>.

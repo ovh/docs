@@ -111,7 +111,7 @@ Entonces habrá iniciado sesión en su instancia.
 
 > [!primary]
 >
-> Si tiene algún problema para iniciar sesión en su instancia de Windows, asegúrese de que el cortafuegos de Windows autorice las conexiones RDP. Si necesita más información, consulte nuestra guía [«Configuración del servidor de Windows»](../vps/windows-first-config/){.external}.
+> Si tiene algún problema para iniciar sesión en su instancia de Windows, asegúrese de que el cortafuegos de Windows autorice las conexiones RDP. Si necesita más información, consulte nuestra guía [«Configuración del servidor de Windows»](../../vps/windows-first-config/){.external}.
 > 
 
 
