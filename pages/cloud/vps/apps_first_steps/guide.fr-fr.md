@@ -139,7 +139,7 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 2. Cliquez sur l'URL de WordPress dans cet e-mail.
 3. Suivez les instructions de configuration de WordPress. Lorsque vous êtes invité à fournir des informations sur la base de données, utilisez toujours « localhost » comme adresse. Pour le nom d'utilisateur et le mot de passe, utilisez les informations fournies par l'API.
 
-Vous pouvez aller plus loin en sécurisant votre site avec un certificat SSL gratuit en [suivant ces étapes](./#lets-encrypt-ssl).
+Vous pouvez aller plus loin en sécurisant votre site avec un certificat SSL gratuit en [suivant ces étapes](./#lets-encrypt-ssl_1).
 
 Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
 
@@ -152,7 +152,7 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 2. Cliquez sur l'URL de Joomla dans cet e-mail.
 3. Suivez les instructions de configuration de de Joomla. Lorsque vous êtes invité à fournir des informations sur la base de données, utilisez toujours « localhost » comme adresse. Pour le nom d'utilisateur et le mot de passe, utilisez les informations fournies par l'API.
 
-Vous pouvez aller plus loin en sécurisant votre site avec un certificat SSL gratuit en [suivant ces étapes](./#lets-encrypt-ssl).
+Vous pouvez aller plus loin en sécurisant votre site avec un certificat SSL gratuit en [suivant ces étapes](./#lets-encrypt-ssl_1).
 
 Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
 
@@ -165,7 +165,7 @@ Vous trouverez ci-dessous les premières étapes relatives à la mise en service
 2. Cliquez sur l'URL de Drupal dans cet e-mail.
 3. Suivez les instructions de configuration de Drupal.Lorsque vous êtes invité à fournir des informations sur la base de données, utilisez toujours « localhost » comme adresse. Pour le nom d'utilisateur et le mot de passe, utilisez les informations fournies par l'API.
 
-Vous pouvez aller plus loin en sécurisant votre site avec un certificat SSL gratuit en [suivant ces étapes](./#lets-encrypt-ssl).
+Vous pouvez aller plus loin en sécurisant votre site avec un certificat SSL gratuit en [suivant ces étapes](./#lets-encrypt-ssl_1).
 
 Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
 
@@ -189,7 +189,7 @@ rm -f /root/secure_prestashop.sh
 > Veillez à enregistrer le lien renvoyé. Vous ne pourrez accéder à l'administration de Prestashop qu'avec le nouveau lien.
 >
 
-Sécurisez gratuitement votre site avec un certificat SSL en [suivant ces étapes](./#lets-encrypt-ssl).
+Sécurisez gratuitement votre site avec un certificat SSL en [suivant ces étapes](./#lets-encrypt-ssl_1).
 
 Aucune autre étape n'est nécessaire pour terminer la première configuration de cette application.
 

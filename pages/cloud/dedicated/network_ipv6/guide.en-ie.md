@@ -100,7 +100,7 @@ ping6 -c 4 2001:4860:4860::8888
 ```
 
 
-If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../ovh-rescue/).
+If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../rescue-mode).
 
 ### Fedora 26 and above
 
@@ -155,7 +155,7 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../ovh-rescue/).
+If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../rescue-mode).
 
 ### FreeBSD
 
@@ -202,7 +202,7 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../ovh-rescue/).
+If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../rescue-mode).
 
 ### Ubuntu 18.04
 

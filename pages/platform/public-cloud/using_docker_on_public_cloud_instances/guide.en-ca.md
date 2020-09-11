@@ -1,5 +1,5 @@
 ---
-title: Using a Docker-mmachine on a Public Cloud instance.
+title: Using a Docker-machine on a Public Cloud instance.
 excerpt: Find out how to use Docker machine on a Public Cloud Instance
 slug: docker-machine
 section: Tutorials
@@ -12,7 +12,7 @@ Docker-machine us a tool for deploying docker ndoes. It allows them to be manage
 
 ## Requirements
 
-* [Setting OpenStack environment variables](../loading_openstack_environment_variable)
+* [Setting OpenStack environment variables](../set-openstack-environment-variables)
 
 ## Instructions
 

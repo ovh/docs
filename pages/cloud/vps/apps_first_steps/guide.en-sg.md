@@ -136,7 +136,7 @@ This section will explain the first steps specifically for the WordPress pre-ins
 2. Click on the URL for WordPress in the email.
 3. Follow the on screen final configuration instructions of WordPress. When asked about the database details use always "localhost" as the address and for username and password use the provided information in the API.
 
-You can go further by securing your site with an SSL certificate for free by [following these steps](./#lets-encrypt-ssl).
+You can go further by securing your site with an SSL certificate for free by [following these steps](./#lets-encrypt-ssl_1).
 
 No further steps are necessary to complete the first configuration of this application.
 
@@ -148,7 +148,7 @@ This section will explain the first steps specifically for the Joomla pre-instal
 2. Click on the URL for Joomla in the email.
 3. Follow the on screen final configuration instructions of Joomla. When asked about the database details use always "localhost" as the address and for username and password use the provided information in the API.
 
-You can go further by securing your site with an SSL certificate for free by [following these steps](./#lets-encrypt-ssl).
+You can go further by securing your site with an SSL certificate for free by [following these steps](./#lets-encrypt-ssl_1).
 
 No further steps are necessary to complete the first configuration of this application.
 
@@ -160,7 +160,7 @@ This section will explain the first steps specifically for the Drupal pre-instal
 2. Click on the URL for Drupal in the email.
 3. Follow the on screen final configuration instructions of Drupal. When asked about the database details use always "localhost" as the address and for username and password use the provided information in the API.
 
-You can go further by securing your site with an SSL certificate for free by [following these steps](./#lets-encrypt-ssl).
+You can go further by securing your site with an SSL certificate for free by [following these steps](./#lets-encrypt-ssl_1).
 
 No further steps are necessary to complete the first configuration of this application.
 
@@ -184,7 +184,7 @@ rm -f /root/secure_prestashop.sh
 > Make sure you save the link that is returned. You will only be able to access Prestashop admin with the new link.
 >
 
-Secure your site with an SSL certificate for free by [following these steps](./#lets-encrypt-ssl).
+Secure your site with an SSL certificate for free by [following these steps](./#lets-encrypt-ssl_1).
 
 No further steps are necessary to complete the first configuration of this application.
 
