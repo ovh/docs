@@ -24,14 +24,14 @@ OVHcloud offre aux clients Public Cloud des images d'applications préinstallée
 
 #### Installez l'application préinstallée de votre choix
 
-Depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), les API OVHcloud ou de l'API OpenStack Horizon, installez l'application de votre choix sur votre instance Public Cloud.
+Depuis [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager), les API OVHcloud ou de l'API OpenStack Horizon, installez l'application de votre choix sur votre instance Public Cloud.
 
 #### Détails de connexion à l'application
 
 Une fois l'instance créée et une application préinstallée choisie, vous pouvez récupérer vos informations de connexion uniquement via l'API OVHcloud.
 
-1. Connectez-vous à la [console API](https://api.ovh.com/console/)
-2. Utilisez ensuite [cet appel API](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST)
+1. Connectez-vous à la [console API](https://ca.api.ovh.com/console/)
+2. Utilisez ensuite [cet appel API](https://ca.api.ovh.com/console/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST)
 
 > Appel API
 >> > [!api]

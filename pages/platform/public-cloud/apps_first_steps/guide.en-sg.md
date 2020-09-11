@@ -24,14 +24,14 @@ OVHcloud offers Public Cloud customers pre-installed application images for quic
 
 #### Install your chosen pre-installed application
 
-Using the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) / API or the OpenStack Horizon / API, install your chosen application on your Public Cloud instance.
+Using the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) / API or the OpenStack Horizon / API, install your chosen application on your Public Cloud instance.
 
 #### Application login details
 
 Once the instance has been installed with your chosen pre-installed application, you can retrieve your login details via the OVHcloud API only.
 
-1. Log in to the [API console here](https://api.ovh.com/console/)
-2. Then go to [here](https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST)
+1. Log in to the [API console here](https://ca.api.ovh.com/console/)
+2. Then go to [here](https://ca.api.ovh.com/console/#/cloud/project/%7BserviceName%7D/instance/%7BinstanceId%7D/applicationAccess#POST)
 
 > API call
 >> > [!api]
