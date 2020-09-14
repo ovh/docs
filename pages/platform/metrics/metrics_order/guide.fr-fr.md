@@ -70,21 +70,21 @@ Once done, click to the `Platforms`{.action} tab.
 
 Metrics is protocol agnostic. It means you can push with one protocols, and query the same data with another one. 
 
-[Click here, to learn how to used the supported protocols with metrics and their corresponding endpoints](../protocol_overview/){.ref}. 
+[Click here, to learn how to used the supported protocols with metrics and their corresponding endpoints](../protocol_overview/guide.fr-fr.md){.ref}. 
 
 ![tokens](images/platforms.png){.thumbnail}
 
 If you don't want to push your data by yourself, you can use a software that will support one of these protocols. Here is a short list : 
 
-- [Telegraf](../source_telegraf/){.ref}
-- [Beamium](../source_beamium/){.ref}
-- [Scollector](../source_scollector/){.ref}
+- [Telegraf](../source_telegraf/guide.fr-fr.md){.ref}
+- [Beamium](../source_beamium/guide.fr-fr.md){.ref}
+- [Scollector](../source_scollector/guide.fr-fr.md){.ref}
 - [Snap](http://snap-telemetry.io/){.external}
-- [Collectd](../source_collectd/){.ref}
+- [Collectd](../source_collectd/guide.fr-fr.md){.ref}
 
 ## Go further
 
-- To push your first points and query them with OpentSDQB and Grafana, we invite you to follow our guide to [Push and vizualize your first datapoints with OpenTSDB](../metrics_opentsdb/){.ref}.
+- To push your first points and query them with OpentSDQB and Grafana, we invite you to follow our guide to [Push and vizualize your first datapoints with OpenTSDB](../start-opentsdb/){.ref}.
 - Documentation: [Guides](../product.fr-fr.md){.ref}
 - Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}

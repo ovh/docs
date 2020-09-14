@@ -5,7 +5,7 @@ excerpt: 'Annonces de fin de vente/vie CloudDB'
 section: 'Ressources techniques'
 ---
 
-Les produits couverts par ces annonces de fin de vente et de fin de vie sont les services Cloud Databases publiques, instances SGBD joignables via le réseau publique. Référez-vous à la [politique de fin de vie des bases de données managées](../eol-policy/) pour plus d'informations.
+Les produits couverts par ces annonces de fin de vente et de fin de vie sont les services Cloud Databases publiques, instances SGBD joignables via le réseau publique. Référez-vous à la [politique de fin de vie des bases de données managées](../managed-db-life-cycle-policy/) pour plus d'informations.
 
 |Version|Annonce de fin de vie|Fin de vente|Fin de support|
 |---|---|---|---|

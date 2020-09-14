@@ -136,7 +136,7 @@ Let's look at different protocol data models mappings.
 
 #### OpenTSDB
 
-When pushing an [OpenTSDB](../protocol_opentsdb/){.ref} data points, the JSON representation is:
+When pushing an [OpenTSDB](../protocol_opentsdb/guide.fr-fr.md){.ref} data points, the JSON representation is:
 
 ```json
 [
@@ -161,7 +161,7 @@ When pushing an [OpenTSDB](../protocol_opentsdb/){.ref} data points, the JSON re
 
 #### Prometheus
 
-[Prometheus](../protocol_prometheus/){.ref} input format is exactly the same as OpenTSDB.
+[Prometheus](../protocol_prometheus/guide.fr-fr.md){.ref} input format is exactly the same as OpenTSDB.
 
 For the query format, you can see an example below:
 
@@ -196,7 +196,7 @@ The interesting part is under the **metric** JSON key, each series is an element
 
 #### InfluxDB
 
-In [InfluxDB](../protocol_influxdb/){.ref}, the series name is split, there is a common prefix at the start of the line, and several specific suffix just before the timestamp. One line can create several time series depending of the count of suffixes
+In [InfluxDB](../protocol_influxdb/guide.fr-fr.md){.ref}, the series name is split, there is a common prefix at the start of the line, and several specific suffix just before the timestamp. One line can create several time series depending of the count of suffixes
 After the prefix, there is a list of keys/values separated by comma, this is the equivalent to labels. The last number is the timestamp.
 
 Time series example:
@@ -218,7 +218,7 @@ The result of parsing for this example will be:
 
 #### Graphite
 
-You can see the time series representation in [Graphite](../protocol_graphite/){.ref} below:
+You can see the time series representation in [Graphite](../protocol_graphite/guide.fr-fr.md){.ref} below:
 A graphite time series is build with a name, a list of keys/values separated by semi colons, a value and a timestamp.
 See the example below.
 
@@ -234,12 +234,12 @@ Labels are separated by semi colons, when timestamp and value by spaces
 
 #### Warp10
 
-[Warp10](../protocol_warp10/guide.en-gb.md){.ref} is the native protocol of OVH Metrics platform, so, there is no data structure mapping.
+[Warp10](../protocol_warp10/guide.fr-fr.md){.ref} is the native protocol of OVH Metrics platform, so, there is no data structure mapping.
 
 
 ## Go further
 
-- Getting Started: [Quick Start](../metrics_opentsdb/){.ref}
+- Getting Started: [Quick Start](../start-opentsdb/){.ref}
 - Documentation: [Guides](../product.fr-fr.md){.ref}
 - Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
