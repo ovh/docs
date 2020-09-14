@@ -1,11 +1,16 @@
 ---
-title: Layer 2 Design
+title: Layer 2 mode
 slug: layer2
-excerpt: 'Layer 2 Design - OVHcloud Connect'
+excerpt: 'Find out how Layer 2 (L2) is configured with OVHcloud Connect'
 section: Concepts
 ---
 
-**Last updated 11th May 2020**
+**Last updated 14th September 2020**
+
+## Objective
+
+
+## Instructions
 
 ## Layer 2 implementation
 
@@ -15,10 +20,10 @@ L2 Tunnel is directly forwarded to/from vRack so all L2 traffic is forwarded to/
 
 By L2 Traffic, it means Ethernet frames, with 802.1q header if present:
 
-* Ethernet broadcast are forwarded
-* Unknown Ethernet unicast are forwarded
-* Multicast is forwarded (considered broadcast, limited to 20pps)
-* Specific point-to-point Ethernet frames (like LLDP or LACP) are not forwarded
+- Ethernet broadcast are forwarded
+- Unknown Ethernet unicast are forwarded
+- Multicast is forwarded (considered broadcast, limited to 20pps)
+- Specific point-to-point Ethernet frames (like LLDP or LACP) are not forwarded
 
 Only one OVHcloud Connect L2 is supported per vRack: a POP/EntryPoint can only be associated with one DC/EndPoint.
 
@@ -45,3 +50,7 @@ LACP is mandatory for aggregation when 2 links are configured with POP.
 Jumbo Frames up to 9000 bytes are supported.
 
 Connection between a POP and a datacenter benefit from OVHcloud backbone so an internal link failure is supported and will not impact customer traffic.
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
