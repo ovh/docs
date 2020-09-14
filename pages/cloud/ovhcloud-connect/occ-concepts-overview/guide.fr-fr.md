@@ -6,7 +6,7 @@ section: Concepts
 order: 1
 ---
 
-**Dernière mise à jour le 07/092020**
+**Dernière mise à jour le 07/09/2020**
 
 ## Qu'est-ce que OVHcloud Connect?
 
@@ -45,7 +45,7 @@ Le Datacentre (DC) OVHcloud est la terminaison du service, le EndPoint.
 
 ### Interconnexion
 
-Une interconnexion (Cross-connect) est une liaison physique (fibre monomode) gérée par les équipes d'installation dans le PoP. L'interconnexion est établie dans la MMR (Meet-Me-Room) entre la position donnée par OVHcloud et la position détenue par le client. Dans le cas d'une offre OVHcloud Connect Direct, le client doit commander et gérer l'interconnexion . 
+Une interconnexion (Cross-connect) est une liaison physique (fibre monomode) gérée par les équipes d'installation dans le PoP. L'interconnexion est établie dans la MMR (Meet-Me-Room) entre la position donnée par OVHcloud et la position détenue par le client. Dans le cas d'une offre OVHcloud Connect Direct, le client doit commander et gérer l'interconnexion. 
 
 ### vRack
 
@@ -53,7 +53,7 @@ Réseau privé OVHcloud, disponible sur les ressources Cloud entre tous les Data
 
 ### BGP
 
-Protocole de routage à utiliser lors de l'utilisation du mode de L3
+Protocole de routage à utiliser lors de l'utilisation du mode de L3.
 
 ## Principes
 
