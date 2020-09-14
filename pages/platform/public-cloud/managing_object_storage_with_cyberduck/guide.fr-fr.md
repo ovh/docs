@@ -25,7 +25,7 @@ Ce guide vous expliquera comment configurer Cyberduck afin de pouvoir gérer vot
 - Se connecter sur un compte de type "Swift - OpenStack Object Storage"
 
 
-![public-cloud](images/v3.0.png){.thumbnail}
+![public-cloud](images/Cyberduck.png){.thumbnail}
 
 Différentes informations sont à renseigner dans le formulaire :
 

@@ -54,7 +54,7 @@ En installant votre serveur à l’aide d’un modèle de système d’exploitat
 
 #### Étape 1 : Utiliser SSH pour vous connecter à votre serveur
 
-Retrouvez plus d'informations dans [ce guide](../getting-started-dedicated-server/#logging-on-to-your-server)
+Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/#se-connecter-a-votre-serveur)
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
 
@@ -109,7 +109,7 @@ Si vous ne parvenez pas à exécuter une commande ping sur cette adresse IPv6, v
 
 #### Étape 1 : Utiliser SSH pour vous connecter à votre serveur
 
-Retrouvez plus d'informations dans [ce guide](../getting-started-dedicated-server/#logging-on-to-your-server)
+Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/#se-connecter-a-votre-serveur)
 
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
@@ -160,7 +160,7 @@ Si vous ne parvenez pas à exécuter une commande ping sur cette adresse IPv6, v
 
 #### Étape 1 : Utiliser SSH pour vous connecter à votre serveur
 
-Retrouvez plus d'informations dans [ce guide](../getting-started-dedicated-server/#logging-on-to-your-server)
+Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/#se-connecter-a-votre-serveur)
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
 
@@ -206,7 +206,7 @@ Si vous ne parvenez pas à exécuter une commande ping sur cette adresse IPv6, v
 
 #### Étape 1 : Utiliser SSH pour vous connecter à votre serveur
 
-Retrouvez plus d'informations dans [ce guide](../getting-started-dedicated-server/#logging-on-to-your-server)
+Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/#se-connecter-a-votre-serveur)
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
 
@@ -262,7 +262,7 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 #### Étape 1 : Utiliser RDP pour vous connecter à votre serveur
 
-Retrouvez plus d'informations dans [ce guide](../getting-started-dedicated-server/#logging-on-to-your-server)
+Retrouvez plus d'informations dans [ce guide](../premiers-pas-serveur-dedie/#se-connecter-a-votre-serveur)
 
 
 #### Étape 2 : Ouvrir la configuration réseau de votre serveur

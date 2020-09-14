@@ -114,7 +114,7 @@ You can use Time Series to predict the future. By learning from an existing sign
 
 ## Go further
 
-- Getting Started: [Quick Start](../metrics_opentsdb/){.ref}
+- Getting Started: [Quick Start](../start-opentsdb/){.ref}
 - Documentation: [Guides](../product.fr-fr.md){.ref}
 - Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}

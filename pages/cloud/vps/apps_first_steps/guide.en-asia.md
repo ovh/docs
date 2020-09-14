@@ -22,7 +22,7 @@ OVHcloud offers VPS customers pre-installed application images for quick and eas
 
 ### Install your chosen pre-installed application
 
-Using the [OVHcloud Control Panel](../starting_with_a_vps/) / API, install your chosen application on your VPS.
+Using the [OVHcloud Control Panel](../getting-started-vps/) / API, install your chosen application on your VPS.
 
 #### cPanel
 
