@@ -16,7 +16,7 @@ You can use an email address in your MX Plan solution to send and receive emails
 
 ## Requirements
 
-- an MX Plan solution, available via a [Web Hosting plan](https://www.ovh.com/sg/web-hosting/), [a free Start 10M hosting solution](https://www.ovh.com/sg/domains/start10m_hosting_offer.xml) including a domain name (activated in advance), or the MX Plan solution, ordered separately
+- an MX Plan solution, available via a [Web Hosting plan](https://www.ovh.com/sg/web-hosting/), or the MX Plan solution, ordered separately
 - the ability to create email addresses as part of your solution
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
@@ -78,7 +78,7 @@ Once you have created your email addresses, you can start using them straight aw
 
 Go to the [Webmail login](https://www.ovh.com/sg/mail/) page, then enter your email address and password. Then click the `Login`{.action} button.
 
-When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via the OWA webmail interface, please refer to our [Outlook Web App user guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/).
+When you first log in to the webmail interface, you are prompted to set the interface language and your time zone. Your inbox will then appear. To find out how to use your email address via the OWA webmail interface, please refer to our [Outlook Web App user guide](../../microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/).
 
 ![email](images/mxplan-creation-new-step5.png){.thumbnail}
 
@@ -96,15 +96,15 @@ If you just need the information required to configure your email address, the s
 
 |Server type|Server name|Port (with SSL)|Port (without SSL)|
 |---|---|---|---|
-|Incoming|SSL0.OVH.NET|993|143|
-|Outgoing|SSL0.OVH.NET|465|587|
+|Incoming|imap.mail.ovh.ca|993|143|
+|Outgoing|smtp.mail.ovh.ca|465|587|
 
 - **For POP configuration**
 
 |Server type|Server name|Port (with SSL)|Port (without SSL)|
 |---|---|---|---|
-|Incoming|SSL0.OVH.NET|995|110|
-|Outgoing|SSL0.OVH.NET|465|587|
+|Incoming|pop.mail.ovh.ca|995|110|
+|Outgoing|smtp.mail.ovh.ca|465|587|
 
 > [!warning]
 >
@@ -168,15 +168,15 @@ If you just need the information required to configure your email address, the s
 
 |Server type|Server name|Port (with SSL)|Port (without SSL)|
 |---|---|---|---|
-|Incoming|SSL0.OVH.NET|993|143|
-|Outgoing|SSL0.OVH.NET|465|587|
+|Incoming|imap.mail.ovh.ca|993|143|
+|Outgoing|smtp.mail.ovh.ca|465|587|
 
 - **For POP configuration**
 
 |Server type|Server name|Port (with SSL)|Port (without SSL)|
 |---|---|---|---|
-|Incoming|SSL0.OVH.NET|995|110|
-|Outgoing|SSL0.OVH.NET|465|587|
+|Incoming|pop.mail.ovh.ca|995|110|
+|Outgoing|smtp.mail.ovh.ca|465|587|
 
 > [!warning]
 >
