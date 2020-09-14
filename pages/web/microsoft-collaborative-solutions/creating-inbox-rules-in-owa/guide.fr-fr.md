@@ -115,6 +115,6 @@ Veuillez noter que les faux-positifs ne peuvent pas être identifiés directemen
 
 [Partage de calendriers depuis OWA](../exchange-2016-partager-un-calendrier-via-le-webmail-owa/)
 
-[Utilisation de Outlook Web App avec un compte de messagerie](../../utilisation-owa/)
+[Utilisation de Outlook Web App avec un compte de messagerie](../exchange-2016-guide-utilisation-outlook-web-app/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

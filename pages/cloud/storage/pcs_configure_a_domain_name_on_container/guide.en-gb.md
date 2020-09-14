@@ -13,7 +13,7 @@ This guide shows you how to configure a domain on your container.
 
 
 ### Prerequisites
-- [Have a storage space](../pcs_create_container_in_customer_panel){.ref}
+- [Have a storage space](../pcs_create_container_in_customer_panel/guide.en-gb.md){.ref}
 - A domain name
 
 

@@ -230,7 +230,7 @@ Once Telagraf is well configured, start it with:
 telegraf --config telegraf.conf
 ```
 
-Once the first batch of data is completed, you can retrieve them using any of our available [query protocol](../protocol_overview/).
+Once the first batch of data is completed, you can retrieve them using any of our available [query protocol](../protocol_overview/guide.fr-fr.md).
 
 ## Go further
 

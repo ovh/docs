@@ -59,7 +59,7 @@ Via l'API OVH, dans la section
 > @api {GET} /ipLoadbalancing
 > 
 
-Pour plus d'informations sur les fonctionnalités de l'API, consulter la page [](use_api_reference/){.ref}.
+Pour plus d'informations sur les fonctionnalités de l'API, consulter la page [Détails des fonctions API](../api-details/){.ref}.
 
 
 ## Ajouter une `Ferme`{.action} de serveurs
