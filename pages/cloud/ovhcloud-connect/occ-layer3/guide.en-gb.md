@@ -117,7 +117,7 @@ At a more global level, BGP topology will look like this:
 
 #### BGP path selection
 
-By default, all available paths are enabled using ECMP, with up to 4 paths supported. To have an active/passive topology with two PoPs/EntryPoints, we can use AS path prepending or MED.
+By default, all available paths are enabled using ECMP, with up to 4 paths supported. To have an active/passive topology with two PoPs/EntryPoints, you can use AS path prepending or MED.
 
 If AS path prepending is configured on the customer's devices in PoP2, the topology will look like this:
 
