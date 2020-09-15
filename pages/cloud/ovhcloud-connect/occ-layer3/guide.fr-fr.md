@@ -67,7 +67,7 @@ Sur une architecture telle que décrite dans le schéma ci-dessous, deux domaine
 * Toutes les autres adresses IP sont disponibles pour le client.
 
 | Adresse IP | Rôle |
-| : | : | : |
+|:-----:|:-----:|
 | A.B.C.0 | Sous-réseau |
 | A.B.C.1 | Adresse du routeur virtuel OVHcloud (si activé) |
 | A.B.C.2 | Routeur OVHcloud A |
@@ -80,7 +80,7 @@ Sur une architecture telle que décrite dans le schéma ci-dessous, deux domaine
 * Deuxième adresse IP pour l'équipement client.
 
 | Adresse IP | Rôle |
-| : | : | : |
+|:-----:|:-----:|
 | A.B.C.0 | Sous-réseau |
 | A.B.C.3 | Routeur OVHcloud |
 | A.B.C.2 | Routeur client |
