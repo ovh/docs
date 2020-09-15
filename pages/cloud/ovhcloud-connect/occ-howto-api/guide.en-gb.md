@@ -3,6 +3,7 @@ title: Configuration of OVHcloud Connect using OVHcloud APIv6
 slug: api
 excerpt: 'Find out how to set up OVHcloud Connect using OVHcloud APIv6'
 section: Configuration
+order: 2
 ---
 
 **Last updated 14th September 2020**
@@ -102,7 +103,7 @@ This configuration is more complex because of the required BGP settings:
 >
 
 
-#### Obtain available data centres
+#### Obtaining available data centres
 
 You can list available data centres for configuration using the following calls:
 
