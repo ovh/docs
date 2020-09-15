@@ -97,7 +97,7 @@ Renseignez les informations suivantes :
 
 * ID interface : renseignez l'ID obtenu précédemment.
 * Type : sélectionnez `l3`.
-* customerBgpArea : votre BGP ASN, celui configuré sur votre routeur.
+* customerBgpArea : votre ASN BGP, celui configuré sur votre routeur.
 * ovhBgpArea : l'ASN BGP à configurer sur l'instance de routage OVHcloud. Un tel ASN apparaîtra dans la session BGP et en tant que chemin.
 * sous-réseau : un bloc IPv4 /30   
 
