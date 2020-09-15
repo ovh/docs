@@ -25,7 +25,7 @@ Un domaine L3 est composé de :
 * Un sous-réseau
 * Un ASN BGP 
 
-Le domaine L3 est une instance de routage IP fournie par OVHcloud. Le trafic est transféré entre un POP/EntryPoint et un DC/Endpoint, et non entre deux POP/EntryPoint. L'adressage IP interne entre les PoP/EntryPoint et DC/EndPoint n'est pas nécessaire. Dans le Datacentre, l'instance de routage à l'intérieur du domaine L3 est composée de deux périphériques, appelés « A » et « B ».
+Le domaine L3 est une instance de routage IP fournie par OVHcloud. Le trafic est transféré entre un POP/EntryPoint et un DC/Endpoint, et non entre deux POP/EntryPoint. L'adressage IP interne entre les PoP/EntryPoint et DC/EndPoint n'est pas nécessaire. Dans le Datacentre, l'instance de routage à l'intérieur du domaine L3 est composée de deux équipements, appelés « A » et « B ».
 
 De ce principe, il est désormais possible de gérer plusieurs services OVHcloud Connect :
 
@@ -92,7 +92,7 @@ Le protocole VRRP permet la redondance de routeurs sur les services OVHcloud.
 
 * Chaque EndPoint/DC ne prend en charge qu'une seule instance VRRP.
 * La valeur VRID VRRP est fournie par OVHcloud.
-* Par défaut, le VRRP est master sur le dispositif « A ».
+* Par défaut, le VRRP est master sur l'équipement « A ».
 * Des routes statiques peuvent être configurées. 
 
 #### Configuration BGP
