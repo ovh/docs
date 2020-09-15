@@ -3,6 +3,7 @@ title: Layer 2 mode
 slug: layer2
 excerpt: 'Find out how Layer 2 (L2) is configured with OVHcloud Connect'
 section: Concepts
+order: 2
 ---
 
 **Last updated 14th September 2020**
@@ -12,7 +13,7 @@ section: Concepts
 
 ## Instructions
 
-## Layer 2 implementation
+### Layer 2 implementation
 
 ![L2 Implementation](images/occ-l2-implementation.jpg){.thumbnail}
 
@@ -35,7 +36,7 @@ Following scheme is not supported.
 
 With L2 Mode, redundancy could not be managed between two POP/EntryPoint. The only solution is to proceed with a LAG on a POP/EntryPoint.
 
-## Connection mode details
+### Connection mode details
 
 L2 means operating at Ethernet-level. Customer's vRack is extended "as-is" from OVHcloud and forwarded to customer link. Such mode is transparent to vlans and is the best way to inter-connect customer's legacy network with OVHcloud vRack.
 
