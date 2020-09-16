@@ -32,7 +32,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 In der Spalte **Sicherungen** entspricht die Zahl der für Ihre Datenbank verfügbaren Sicherungen.
 
-#### 1. Eine Sicherung wiederherstellen
+#### Eine Sicherung wiederherstellen
 
 Klicken Sie auf `...`{.action} rechts neben der Datenbank und dann auf `Die Sicherungen anzeigen`{.action}.
 
@@ -46,7 +46,7 @@ Die Liste der verfügbaren Backups erscheint. Klicken Sie auf den Button `...`{.
 > Wenn Sie sich nicht sicher bezüglich dieses Prozesses sind, erstellen Sie zuerst ein Backup.
 > 
 
-#### 2. Eine lokale Sicherung importieren
+#### Eine lokale Sicherung importieren
 
 Klicken Sie auf den Button `...`{.action}. rechts neben der Datenbank und dann auf `Datei importieren`{.action}.
 
@@ -54,7 +54,7 @@ Klicken Sie auf den Button `...`{.action}. rechts neben der Datenbank und dann a
 
 Hierzu haben Sie zwei Möglichkeiten:
 
-##### Eine neue Datei importieren
+##### 1\. Neue Datei importieren
 
 Klicken Sie anschließend auf **Neue Datei importieren** und dann auf `Weiter`{.action}.
 
@@ -69,7 +69,7 @@ Geben Sie einen Namen für Ihre importierte Datei ein, klicken Sie auf `Durchsuc
 
 Haken Sie, wenn Sie möchten, **Aktuelle Datenbank leeren** und **E-Mail am Ende des Imports senden** vor dem Import an, um über den Abschluss der Operation auf der E-Mail-Adresse Ihres OVHcloud Kunden-Accounts informiert zu werden, und klicken Sie dann auf `Bestätigen`{.action}.
 
-##### Bestehende Datei verwenden
+##### 2\. Bestehende Datei verwenden
 
 Wenn Sie bereits zuvor eine Datei importiert haben, können Sie die Option **Bestehende Datei verwenden** nutzen.
 
@@ -122,7 +122,7 @@ cat datenbankname.sql | mysql --host=server --user=benutzername --port=port --pa
 
 > [!warning]
 >
-> - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/)
+> - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
 > - Diese Aktion ist nur von einem [OVHcloud Webhosting](https://www.ovh.de/hosting) aus möglich.
 >
 
@@ -143,14 +143,14 @@ psql --host=server --port=port --user=benutzername --password=passwort datenbank
 ```php
 1. <?php
 2. echo "Ihre Datenbank wird wiederhergestellt.......<br>"
-3. system("PGPASSWORD=Passwort psql --host=server --port=port --user=benutzername --password=passwort datenbankname < datenbankname.sql");
+3. system("PGPASSWORD=passwort psql --host=server --port=port --user=benutzername --password=passwort datenbankname < datenbankname.sql");
 4. echo: "Ihre Datenbank ist auf diesem Hosting eingerichtet."
 5
 ```
 
 > [!warning]
 >
-> - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/)
+> - Um zu vermeiden, dass jemand auf diese Datei mit sensiblen Daten zugreift, können Sie sie [entsprechend absichern](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/).
 > - Diese Aktion ist nur von einem [OVHcloud Webhosting](https://www.ovh.de/hosting) aus möglich.
 >
 
