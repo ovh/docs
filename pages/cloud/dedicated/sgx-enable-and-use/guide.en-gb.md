@@ -5,7 +5,7 @@ excerpt: 'Find out how to enable SGX on your infrastructure server and install t
 section: 'Advanced use'
 ---
 
-**Last updated 17th October 2019**
+**Last updated 10th September 2020**
 
 ## Objective
 
@@ -16,7 +16,7 @@ Intel SGX delivers advanced hardware and RAM security encryption features, in or
 
 - An [infrastructure dedicated server](https://www.ovh.co.uk/dedicated_servers/infra/){.external}, with the [SGX](https://www.ovh.co.uk/dedicated_servers/software-guard-extensions/){.external} option
 - Administrative (root) access to the server via SSH
-- Access to the [OVH API](https://api.ovh.com/console/){.external}
+- Access to the [OVH API](https://api.ovh.com/console/)
 - Ubuntu 18.04 or similar installed on the server
 
 ## Instructions
@@ -163,7 +163,7 @@ Close Session between Source (E3) and Destination (E1) Enclaves successful !!!
 Hit a key....
 ```
 
-### Step 7 - Going further
+## Go further
 
 To go further (develop your own application, register for remote attestation, ...), here are some useful resources :
 
@@ -173,3 +173,5 @@ To go further (develop your own application, register for remote attestation, ..
 - [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx){.external}
 - [github.com/intel/linux-sgx-driver](https://github.com/intel/linux-sgx-driver){.external}
 - [github.com/intel/sgx-ra-sample](https://github.com/intel/sgx-ra-sample){.external}
+
+Join our community of users on <https://community.ovh.com/en/>.
