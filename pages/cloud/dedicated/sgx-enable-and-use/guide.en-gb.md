@@ -1,11 +1,11 @@
 ---
-title: 'Intel SGX on an infrastructure server'
+title: 'Managing Intel SGX on an infrastructure server'
 slug: enable-and-use-intel-sgx
-excerpt: 'Enable SGX on your infrastructure server and install the linux SGX software stack'
+excerpt: 'Find out how to enable SGX on your infrastructure server and install the Linux SGX software stack'
 section: 'Advanced use'
 ---
 
-**Last updated October 17th, 2019**
+**Last updated 17th October 2019**
 
 ## Objective
 
@@ -72,12 +72,14 @@ You can verify that the status is now enabled :
 
 Now we will install Intel's driver and SDK to be able to develop and run SGX applications.  
 
-First, let's install some dependencies :
+First, let's install some dependencies:
+
 ```bash
 sudo apt-get install build-essential ocaml ocamlbuild automake autoconf libtool wget python libssl-dev libcurl4-openssl-dev protobuf-compiler libprotobuf-dev debhelper cmake git
 ```
 
-Then, download, build and install the SGX software stack :
+Then, download, build and install the SGX software stack:
+
 ```bash
 BASE_DIR=/opt/intel
 [[ -d $BASE_DIR ]] || sudo mkdir -p $BASE_DIR && sudo chown `whoami` $BASE_DIR
@@ -108,6 +110,7 @@ sudo ./sgx_linux_x64_driver_2.5.0_2605efa.bin
 ### Step 6 - Use a sample application to validate the installation
 
 Build one of the sample apps provided :
+
 ```bash
 BASE_DIR=/opt/intel
 cd $BASE_DIR/sgxsdk/SampleCode/LocalAttestation/
@@ -116,6 +119,7 @@ make SGX_DEBUG=0 SGX_MODE=HW SGX_PRERELEASE=1
 ```
 
 Run it :
+
 ```bash
 ovh@nsXXXX:/opt/intel/sgxsdk/SampleCode/LocalAttestation$ ./app 
 
