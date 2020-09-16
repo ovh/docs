@@ -37,7 +37,6 @@ Puoi aggiungere un nuovo metodo di pagamento per i tuoi futuri ordini o prelevam
 È possibile salvare 3 metodi di pagamento:
 
 - Carta bancaria
-- Conto corrente
 - Account PayPal
 
 Per farlo, clicca su`Aggiungi un metodo di pagamento`{.action}.
@@ -45,15 +44,6 @@ Per farlo, clicca su`Aggiungi un metodo di pagamento`{.action}.
 ![manage-payment-methods](images/managepaymentmethods2.png){.thumbnail}
 
 Segui gli step successivi per il salvataggio del metodo di pagamento. Al primo step, ti viene chiesto di indicare questo nuovo metodo di pagamento come predefinito per gli acquisti futuri o per i prelevamenti automatici.
-
-Se hai salvato un conto corrente, sarà necessario inviare un’autorizzazione di prelevamento tramite posta. Per scaricare questo documento, clicca sul pulsante `...`{.action} a destra del tuo conto corrente e poi su `Scarica il modulo da compilare e restituire tramite posta`{.action}.
-
-![manage-payment-methods](images/managepaymentmethods2b.png){.thumbnail}
-
-> [!primary]
->
-Finché i nostri servizi non ricevono l’autorizzazione, accanto al tuo conto corrente comparirà la voce: “in attesa di ricezione”. Ciò significa che questo metodo di pagamento non potrà essere utilizzato.
->
 
 
 ### Modificare il metodo di pagamento predefinito

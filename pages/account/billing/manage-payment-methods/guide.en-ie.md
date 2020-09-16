@@ -12,7 +12,6 @@ section: Billing
 In the OVHcloud Control Panel, you can save and manage different payment methods.
 
 ## Requirements
-
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 - a valid payment method
 
