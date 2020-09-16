@@ -122,7 +122,7 @@ cat database_name.sql | mysql --host=server --user=username --port=port --passwo
 
 > [!warning]
 >
-> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it]( ../how_to_password_protect_a_directory_on_your_website/)
+> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it]( ../how_to_password_protect_a_directory_on_your_website/).
 > - This action is only possible on an OVHcloud Web Hosting plan.
 >
 
@@ -150,7 +150,7 @@ psql --host=server --port=port --user=username --password=password database_name
 
 > [!warning]
 >
-> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it]( ../how_to_password_protect_a_directory_on_your_website/)
+> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it]( ../how_to_password_protect_a_directory_on_your_website/).
 > - This action is only possible on an OVHcloud Web Hosting plan.
 >
 
