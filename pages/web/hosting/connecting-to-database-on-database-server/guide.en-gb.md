@@ -24,7 +24,7 @@ You can access your database’s content via an interface. There are several way
 > [!primary]
 >
 > Please note that there is no root access.
-> <br> Generic SQL commands work normally, and software clients such as HeidiSQL, SQuirreL or Adminer are fully compatible.
+> <br> Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
 > 
 
 ### Logging in to a MySQL or MariaDB database 
