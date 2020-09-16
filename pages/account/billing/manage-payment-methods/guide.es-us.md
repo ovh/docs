@@ -37,7 +37,6 @@ Por supuesto, puede registrar nuevas formas de pago para que le sean propuestas 
 Es posible registrar tres tipos de formas de pago:
 
 - Tarjeta bancaria
-- Cuenta bancaria
 - Cuenta PayPal
 
 Para ello, haga clic en el botón `Añadir una forma de pago`{.action}.
@@ -45,16 +44,6 @@ Para ello, haga clic en el botón `Añadir una forma de pago`{.action}.
 ![manage-payment-methods](images/managepaymentmethods2.png){.thumbnail}
 
 Siga los siguientes pasos para registrar una forma de pago. Primero, podrá establecer la nueva forma de pago como «forma de pago por defecto», la que utilizará en sus futuras compras o cargos automáticos.
-
-En caso de registrar una cuenta bancaria, deberá enviar una autorización de cargo por correo postal. Para descargar este documento, haga clic en el botón `...`{.action} a la derecha de su cuenta bancaria y, seguidamente, en `Descargar el documento para enviar por correo postal`{.action}.
-
-![manage-payment-methods](images/managepaymentmethods2b.png){.thumbnail}
-
-> [!primary]
->
-En tanto que nuestros servicios administrativos no hayan recibido dicha autorización, se indicará «Pendiente de recepción» al lado de su cuenta bancaria, la que no se tendrá en cuenta para sus pagos.
->
-
 
 ### Cambiar su forma de pago por defecto
 

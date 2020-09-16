@@ -39,7 +39,6 @@ Oczywiście możesz dodać nowe sposoby płatności, które będą proponowane p
 Można dodać 3 różne sposoby płatności:
 
 - Karta bankowa
-- Konto bankowe
 - Konto PayPal
 
 W tym celu kliknij przycisk `Dodaj sposób płatności`{.action}.
@@ -47,16 +46,6 @@ W tym celu kliknij przycisk `Dodaj sposób płatności`{.action}.
 ![manage-payment-methods](images/managepaymentmethods2.png){.thumbnail}
 
 Postępuj zgodnie z poniższą procedurą, aby dodać sposób płatności. W pierwszym kroku otrzymasz prośbę o ustawienie nowego sposobu płatności jako „domyślny sposób płatności”, tak aby był używany przy kolejnych zakupach lub automatycznych pobraniach opłat.
-
-W przypadku dodania konta bankowego konieczne będzie przesłanie autoryzacji polecenia zapłaty drogą pocztową. Aby pobrać ten dokument, kliknij przycisk `...`{.action} znajdujący się po prawej stronie konta bankowego, a następnie kliknij `Pobierz procedurę zwrotu drogą pocztową`{.action}.
-
-![manage-payment-methods](images/managepaymentmethods2b.png){.thumbnail}
-
-> [!primary]
->
-Dopóki nie otrzymamy tej autoryzacji, obok konta bankowego będzie widnieć informacja „Oczekuje na odbiór” i nie będzie można go wykorzystywać do płatności.
->
-
 
 ### Zmienić domyślny sposób płatności
 
