@@ -768,3 +768,73 @@ Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe uti
 ```bash
 91.134.248.249
 ```
+
+## Cluster 029
+
+A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
+
+|País|Código del país|IPv4|IPv6|
+|---|---|----|---|
+|Francia|ES|51.91.236.255|2001:41d0:301::29|
+|Irlanda|IE|92.222.139.156|2001:41d0:301:3::29|
+|Portugal|PT|46.105.159.220|2001:41d0:301:2::29|
+|Reino Unido|UK|178.32.48.109|2001:41d0:301:12::29|
+|Italia|IT|178.32.137.139|2001:41d0:301:11::29|
+|España|ES|188.165.132.144|2001:41d0:301:4::29|
+|Polonia|PL|213.32.10.205|2001:41d0:301:5::29|
+|República Checa|CZ|5.196.248.55|2001:41d0:301:6::29|
+|Países Bajos|NL|51.83.124.4|2001:41d0:301:7::29|
+|Finlandia|FI|79.137.116.129|2001:41d0:301:8::29|
+|Lituania|LT|164.132.14.117|2001:41d0:301:9::29|
+|Alemania|DE|145.239.222.45|2001:41d0:301:1::29|
+|Bélgica|BE|178.32.44.140|2001:41d0:301:10::29|
+
+Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
+
+```bash
+ 51.255.215.242 
+```
+
+
+Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
+
+
+
+```bash
+91.134.248.192
+```
+
+## Cluster 030
+
+A continuación se indican las direcciones IP del **cluster** para cada país (para la geolocalización):
+
+|País|Código del país|IPv4|IPv6|
+|---|---|----|---|
+|Francia|ES|145.239.37.162|2001:41d0:301::30|
+|Irlanda|IE|178.32.77.113|2001:41d0:301:3::30|
+|Portugal|PT|5.135.68.91|2001:41d0:301:2::30|
+|Reino Unido|UK|91.134.177.228|2001:41d0:301:12::30|
+|Italia|IT|94.23.73.16|2001:41d0:301:11::30|
+|España|ES|149.202.105.228|2001:41d0:301:4::30|
+|Polonia|PL|188.165.21.8|2001:41d0:301:5::30|
+|República Checa|CZ|94.23.168.143|2001:41d0:301:6::30|
+|Países Bajos|NL|149.202.25.75|2001:41d0:301:7::30|
+|Finlandia|FI|188.165.140.151|2001:41d0:301:8::30|
+|Lituania|LT|188.165.24.146|2001:41d0:301:9::30|
+|Alemania|DE|51.255.232.79|2001:41d0:301:1::30|
+|Bélgica|BE|213.32.107.241|2001:41d0:301:10::30|
+
+Si tiene el servicio **CDN** activado en su alojamiento, debe utilizar la siguiente dirección IP:
+
+```bash
+54.36.13.47
+```
+
+
+Si necesita la IP de la **puerta de enlace** (gateway) del alojamiento, debe utilizar la siguiente dirección IP:
+
+
+
+```bash
+51.178.146.199
+```
