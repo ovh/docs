@@ -18,7 +18,7 @@ order: 3
 
 La configuration de OVHcloud Connect configuré en mode L3 diffère du mode  L2 car vous devez configurer le domaine L3 sur chaque DC/EndPoint et PoP/EntryPoint.
 
-![Implémentation L3](images/occ-l3-implementation.jpg){.thumbnail}
+![Implémentation L3](images/occ-l3-implementation.png){.thumbnail}
 
 Un domaine L3 est composé de :
 
@@ -29,11 +29,11 @@ Le domaine L3 est une instance de routage IP fournie par OVHcloud. Le trafic est
 
 De ce principe, il est désormais possible de gérer plusieurs services OVHcloud Connect :
 
-![L3 Two POP](images/occ-l3-twopop.jpg){.thumbnail}
+![L3 Two POP](images/occ-l3-twopop.png){.thumbnail}
 
 De ce fait, le L3 permet d'être compatibles avec du multi-DC :
 
-![L3 Multi DC](images/occ-l3-multidc.jpg){.thumbnail}
+![L3 Multi DC](images/occ-l3-multidc.png){.thumbnail}
 
 Les deux exemples ci-dessus illustrent la configuration de deux services OVHcloud Connect, car chaque service OVHcloud équivaut à un PoP/EntryPoint. 
 
@@ -47,17 +47,17 @@ Règles :
 * Un domaine L3 (c'est-à-dire un sous-réseau) ne peut pas être étiré entre deux DC ou deux PoP.
 * Un OVHcloud Connect L2 peut être mélangé avec plusieurs OVHcloud Connect L3 dans le même vRack.
 
-![Règles L3](images/occ-l3-rules.jpg){.thumbnail}
+![Règles L3](images/occ-l3-rules.gif){.thumbnail}
 
 Le schéma ci-dessous montre la combinaison de L2 et L3. Ils peuvent se terminer dans le même DC OVHcloud ou non.
 
-![L3 Mix L2](images/occ-l3-mixl2.jpg){.thumbnail}
+![L3 Mix L2](images/occ-l3-mixl2.png){.thumbnail}
 
 ### Détails du mode de connexion
 
 Sur une architecture telle que décrite dans le schéma ci-dessous, deux domaines L3 sont nécessaires : PoP/EntryPoint et DC/EndPoint.
 
-![Architecture L3](images/occ-l3-architecture.jpg){.thumbnail}
+![Architecture L3](images/occ-l3-architecture.png){.thumbnail}
 
 « IP Net A » fait partie du domaine L3 dans le DC. Voici alors les informations requises :
 
@@ -110,11 +110,11 @@ La valeur recommandée est dans la plage 64512-65534.
 
 Par exemple, le réseau IP « B » sera annoncé au routeur OVHcloud via une session BGP.
 
-![Rack BGP L3](images/occ-l3-bgpvrack.jpg){.thumbnail}
+![Rack BGP L3](images/occ-l3-bgpvrack.png){.thumbnail}
 
 À un niveau plus global, la topologie BGP ressemblera à ceci :
 
-![Topologie globale BGP L3](images/occ-l3-bgpglobal.jpg){.thumbnail}
+![Topologie globale BGP L3](images/occ-l3-bgpglobal.png){.thumbnail}
 
 #### Sélection du chemin BGP
 
@@ -122,13 +122,12 @@ Par défaut, tous les chemins disponibles sont activés à l'aide d'ECMP, jusqu'
 
 Si as-prepend est configuré sur les périphériques du client sur le POP2, la topologie ressemblera à :
 
-![BGP L3 comme-prepend](images/occ-l3-bgpasprepend.jpg){.thumbnail}
+![BGP L3 as-prepend ou med](images/occ-l3-bgpasprepend-med.png){.thumbnail}
 
 Remarque : as-prepend n'est pas configurable sur les services OVHcloud.
 
-L'utilisation de MED est une autre alternative pour obtenir la même topologie :
+L'utilisation de MED est une autre alternative pour obtenir la même topologie.
 
-![MED BGP L3](images/occ-l3-bgpmed.jpg){.thumbnail}
 
 ## Aller plus loin
 
