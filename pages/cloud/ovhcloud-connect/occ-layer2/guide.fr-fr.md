@@ -15,7 +15,7 @@ order: 2
 
 ### Implémentation du mode L2
 
-![Implémentation L2](images/occ-l2-implementation.jpg){.thumbnail}
+![Implémentation L2](images/occ-l2-implementation.png){.thumbnail}
 
 Le tunnel L2 est directement transféré vers/depuis le vRack afin que tout le trafic L2 soit transféré vers/depuis l'interconnexion client.
 
@@ -28,11 +28,7 @@ Par trafic L2, on entend les trames Ethernet, avec un en-tête 802.1q, le cas é
 
 Un seul OVHcloud Connect L2 est pris en charge par vRack: un PoP/EntryPoint ne peut être associé qu'à un seul DC/EndPoint.
 
-![Conception L2 prise en charge](images/occ-l2-supported.jpg){.thumbnail}
-
-Le schéma suivant n'est pas pris en charge.
-
-![Conception L2 non prise en charge](images/occ-l2-unsupported.jpg){.thumbnail}
+![Conception L2 prise en charge](images/occ-l2-supported-unsupported.png){.thumbnail}
 
 Avec le mode L2, la redondance ne peut pas être exploitée entre deux PoP/EntryPoint. La seule solution consiste à utiliser un LAG sur un PoP/EntryPoint.
 
@@ -40,11 +36,11 @@ Avec le mode L2, la redondance ne peut pas être exploitée entre deux PoP/Entry
 
 Le mode L2 signifie un fonctionnement au niveau Ethernet. Le vRack du client est étendu « en l’état » à partir de OVHcloud et transféré au lien du client. Ce mode est transparent pour les VLAN et constitue le meilleur moyen d'interconnecter le réseau existant du client avec le vRack OVHcloud.
 
-![L2 Trafic](images/occ-l2-trafic.jpg){.thumbnail}
+![L2 Trafic](images/occ-l2-trafic.png){.thumbnail}
 
 Le mode L2 est limité à la topologie point-to-point: la liaison de backup via un second PoP n'est pas prise en charge.
 
-![Topologies L2](images/occ-l2-topologies.jpg){.thumbnail}
+![Topologies L2](images/occ-l2-topologies.png){.thumbnail}
 
 LACP est obligatoire pour l'agrégation lorsque 2 liens sont configurés avec PoP.
 
