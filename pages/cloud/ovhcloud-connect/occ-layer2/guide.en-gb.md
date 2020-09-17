@@ -16,7 +16,7 @@ order: 2
 
 ### Layer 2 implementation
 
-![L2 Implementation](images/occ-l2-implementation.jpg){.thumbnail}
+![L2 Implementation](images/occ-l2-implementation.png){.thumbnail}
 
 The L2 tunnel is forwarded directly to/from the vRack, so all L2 traffic is forwarded to/from the customer inter-connection.
 
@@ -29,11 +29,7 @@ L2 traffic refers to Ethernet frames, with an 802.1q header, if applicable:
 
 Only one OVHcloud Connect L2 is supported per vRack: each PoP/EntryPoint can only be associated with one DC/EndPoint.
 
-![Supported L2 Design](images/occ-l2-supported.jpg){.thumbnail}
-
-Thus, the following scheme is not supported:
-
-![Unsupported L2 Design](images/occ-l2-unsupported.jpg){.thumbnail}
+![Supported and unsupported L2 Design](images/occ-l2-supported-unsupported.png){.thumbnail}
 
 With L2 mode, redundancy cannot be exploited between two PoP/EntryPoint. The only solution is to use a LAG on a PoP/EntryPoint.
 
@@ -41,11 +37,11 @@ With L2 mode, redundancy cannot be exploited between two PoP/EntryPoint. The onl
 
 L2 operates at the Ethernet level. The customer's vRack is extended "as-is" from OVHcloud and forwarded to the customer link. Transparent to VLANs, this mode is the best way to inter-connect the customer's legacy network with an OVHcloud vRack.
 
-![L2 Trafic](images/occ-l2-trafic.jpg){.thumbnail}
+![L2 Trafic](images/occ-l2-trafic.png){.thumbnail}
 
 The L2 mode is limited to a point-to-point topology: a backup link through a second PoP is not supported.
 
-![L2 Topologies](images/occ-l2-topologies.jpg){.thumbnail}
+![L2 Topologies](images/occ-l2-topologies.pnh){.thumbnail}
 
 LACP is mandatory for aggregation when 2 links are configured with PoP.
 
