@@ -1,7 +1,7 @@
 ---
 title: 'How to create a minecraft server on a VPS or dedicated server'
 slug: create-minecraft-server-on-vps
-excerpt: 'Craft your own server and build your wold !'
+excerpt: 'Craft your own server and build your world!'
 section: Tutorial
 ---
 

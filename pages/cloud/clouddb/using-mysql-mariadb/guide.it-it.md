@@ -11,13 +11,8 @@ Vuoi utilizzare MySQL o MariaDB? Scopri come creare e gestire i tuoi database co
 
 ### Prerequisiti
 
-
-> [!primary]
->
-> Per seguire questa guida è necessario:
-> - Un'istanza CloudDB attiva
-> - Aver consultato la guida all’utilizzo di CloudDB: docs/cloud/clouddb/debuter-avec-clouddb
->
+- Un'istanza CloudDB attiva
+- Aver consultato [la guida all’utilizzo di CloudDB](../iniziare-a-utilizzare-clouddb/)
 
 ### Cose un database MySQL?
 MySQL è un modello di database relazionale sviluppato per ottimizzare le prestazioni in lettura.

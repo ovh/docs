@@ -14,6 +14,8 @@ Les instances Pubic Cloud OVHcloud nécessitent une approche différente de cell
 
 **Ce guide vous présente les premières étapes de la création et de la connexion à une instance Public Cloud.**
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/v5G10wK7ksU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Prérequis
 
 - Un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/).

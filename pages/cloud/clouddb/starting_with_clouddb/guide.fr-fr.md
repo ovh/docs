@@ -3,10 +3,11 @@ title: 'Premiers pas avec le service CloudDB'
 slug: debuter-avec-clouddb
 excerpt: 'Découvrez comment bien débuter avec la solution CloudDB'
 section: 'Premiers pas'
+order: 1
 ---
 
 
-**Dernière mise à jour le 24/04/2020**
+**Dernière mise à jour le 31/08/2020**
 
 ## Objectif
 
@@ -56,11 +57,7 @@ Pour créer votre première base de données sur votre instance CloudDB, cliquez
 
 ![clouddb](images/clouddb-add-database.png){.thumbnail}
 
-Sur la fenêtre qui s'affiche, et conjointement à la création de la base de données, vous pouvez choisir de :
-
--  **créer un utilisateur** : ce dernier pourra effectuer des requêtes sur votre base de données (comme la lecture, l'insertion ou la suppression de données) ;
-
-- **ajouter une adresse IP autorisée** : les requêtes provenant de cette dernière seront autorisées à accéder à vos bases de données.
+Sur la fenêtre qui s'affiche, et conjointement à la création de la base de données, vous pouvez choisir de créer un utilisateur, ce dernier pourra effectuer des requêtes sur votre base de données (comme la lecture, l'insertion ou la suppression de données).
 
 Selon votre choix, complétez maintenant les informations demandées puis cliquez sur `Valider`{.action}.
 
@@ -70,7 +67,6 @@ Selon votre choix, complétez maintenant les informations demandées puis clique
 |Nom d'utilisateur|Il s'agit de l'utilisateur qui pourra se connecter à votre base de données et y effectuer des requêtes (facultatif si la case « *Créer un utilisateur* » n'est pas cochée).|
 |Droits|Il s'agit des droits qui seront associés à l'utilisateur ; pour une utilisation classique, sélectionnez `Administrateur`{.action} (facultatif si la case « *Créer un utilisateur* » n'est pas cochée).|
 |Mot de passe|Sélectionnez un mot de passe, puis confirmez ce dernier (facultatif si la case « *Créer un utilisateur* » n'est pas cochée).|
-|IP/masque|Il s'agit de l'adresse IP ou du masque d'IP du ou des serveurs qui seront autorisés à accéder à vos bases de données (facultatif si la case « *Ajouter une adresse IP autorisée* » n'est pas cochée).|
 
 > [!warning]
 >
@@ -127,6 +123,8 @@ Depuis l'onglet `Bases de données`{.action}, cliquez sur le pictogramme en form
 
 ![clouddb](images/clouddb-add-import-step1.png){.thumbnail}
 
+![clouddb](images/clouddb-add-import-step1bis.png){.thumbnail}
+
 - **Étape 2 : sélectionner et envoyer le fichier de sauvegarde**
 
 Renseignez un nom de fichier, qui vous permettra d'identifier cette sauvegarde plus tard si vous souhaitez de nouveau la restaurer. Ensuite, à côté de **Fichier**, sélectionnez le fichier de sauvegarde de la base de données sur votre ordinateur, puis cliquez sur `Envoyer`{.action}. Patientez le temps que l'interface vous indique que le fichier a été envoyé avec succès, puis cliquez sur le bouton `Suivant`{.action}.
@@ -164,7 +162,7 @@ Retrouvez la mention **« Serveur FTP »**, celle-ci vous indiquera le numéro d
 
 ![clouddb](images/clouddb-add-ip-step3.png){.thumbnail}
 
-Après avoir récupéré le numéro du cluster sur lequel est situé votre hébergement, consultez la page [« Liste des adresses IP des clusters et hebergements web »](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/){.external}. Vous y trouverez l'adresse IP « passerelle de sortie » de chaque cluster.
+Après avoir récupéré le numéro du cluster sur lequel est situé votre hébergement, consultez la page [« Liste des adresses IP des clusters et hebergements web »](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/){.external}. Vous y trouverez l'adresse IP « passerelle de sortie » de chaque cluster.
 
 > [!warning]
 >
@@ -193,5 +191,15 @@ Afin de pouvoir mener à bien cette manipulation, vous devez quoi qu'il arrive �
 ![clouddb](images/clouddb-login-information.png){.thumbnail}
 
 ## Aller plus loin
+
+[Créer vos bases de données et vos utilisateurs sur votre serveur de bases de données](https://docs.ovh.com/fr/hosting/creer-bases-de-donnees-et-utilisateurs/){.external}
+
+[Se connecter à la base de données de votre serveur de bases de données](https://docs.ovh.com/fr/hosting/connexion-base-de-donnees-serveur-bdd/){.external}
+
+[Sauvegarder et exporter une base de données sur votre serveur de bases de données](https://docs.ovh.com/fr/hosting/sauvegarder-exporter-une-base-de-donnees/){.external}
+
+[Restaurer et importer une base de données sur votre serveur de bases de données](https://docs.ovh.com/fr/hosting/restaurer-importer-base-de-donnees/){.external}
+
+[Configurer votre serveur de bases de données](https://docs.ovh.com/fr/hosting/configurer-optimiser-son-serveur-de-base-de-donnees/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

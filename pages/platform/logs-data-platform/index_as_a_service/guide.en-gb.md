@@ -16,7 +16,7 @@ Elasticsearch is one of the main components of the Logs Data Platform, regarded 
 
 This is what you need to know to get you started:
 
-- You have created a [Logs Data Platform account](../quick_start/guide.en-gb.md){.ref}
+- You have created a [Logs Data Platform account](../quick-start){.ref}
 - Your have access to the port 9200 of your cluster (head to the **Home** page in manager to know the address of your cluster).
 
 ## Instructions
@@ -34,10 +34,13 @@ To create an Elasticsearch index with the Logs Data Platform manager, you need t
 
 ![add index option](images/add_index.png){.thumbnail}
 
-You must just choose a suffix for your index. the final name will follow this convention: `logs-<username>-i-<suffix>`. 
-For each index, you can specify the number of **shards**. A **shard** is the main component of **index**. Multiple shards means more volume, more parallelism in your requests and thus more performance. Optionally, you can also be notified when your index is close to its critical size. Once your index is created, you can use it right away.
+You must just choose a suffix for your index. The final name will follow this convention:
 
-When you create a index through the [Elasticsearch API](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/indices-create-index.html){.external}, you can also specify the number of shards. Note that the maximum number of shards by index is limited to 16. Elasticsearch compatible tools can now create indices on the cluster as long as they follow the naming convention `logs-<username>-i-<suffix>`. Here is an exemple with a curl command with the user **logs-ab-12345** and the index **logs-ab-12345-i-another-index** on gra2 cluster. 
+`logs-<username>-i-<suffix>`. 
+
+For each index, you can specify the number of **shards**. A **shard** is the main component of **index**. Its maximum storage capacity is set to **25 GB** (per shard). Multiple shards means more volume, more parallelism in your requests and thus more performance. Optionally, you can also be notified when your index is close to its critical size. Once your index is created, you can use it right away.
+
+When you create a index through the [Elasticsearch API](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/indices-create-index.html){.external}, you can also specify the number of shards. Note that the maximum number of shards by index is limited to **16**. Elasticsearch compatible tools can now create indices on the cluster as long as they follow the naming convention `logs-<username>-i-<suffix>`. Here is an exemple with a curl command with the user **logs-ab-12345** and the index **logs-ab-12345-i-another-index** on gra2 cluster. 
 
 ```shell-session
 $ curl -u logs-ab-12345:mypassword -XPUT -H 'Content-Type: application/json' 'https://gra2.logs.ovh.com:9200/logs-ab-12345-i-another-index' -d '{ "settings" : {"number_of_shards" : 1}}'
@@ -50,17 +53,17 @@ Whatever method you use, you will be able to query and visualize your documents 
 
 #### Index some data
 
-Logs Data Platform Elasticsearch indices are compatible with the [Elasticsearch REST API](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/docs.html){.external}. Therefore, you can use simple http requests to index and search your data. The api is accessible behind a secured https endpoint with mandatory authentication. We recommend that you use [tokens](../tokens_logs_data_platform/guide.en-gb.md){.ref} to authenticate yourself. You can retrieve the endpoint of the API at the **Home** page of your service. Here is a simple example to index a document with curl with an index on the cluster `graX.logs.ovh.com`.
+Logs Data Platform Elasticsearch indices are compatible with the [Elasticsearch REST API](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/docs.html){.external}. Therefore, you can use simple http requests to index and search your data. The API is accessible behind a secured https endpoint with mandatory authentication. We recommend that you use [tokens](../tokens-logs-data-platform){.ref} to authenticate yourself. You can retrieve the endpoint of the API at the **Home** page of your service. Here is a simple example to index a document with curl with an index on the cluster `<ldp-cluster>.logs.ovh.com`.
 
 
 ```shell-session
-$ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1' -d '{ "user" : "Oles", "company" : "OVH", "message" : "Hello World !", "post_date" : "1999-11-02T23:01:00" }'
+$ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1' -d '{ "user" : "Oles", "company" : "OVH", "message" : "Hello World !", "post_date" : "1999-11-02T23:01:00" }'
 ```
 
 Here is a quick explanation of this command:
 
 - The **PUT** HTTP command can be used to create or modify a document.
-- The 'Content-Type: application/json' is the mandatory header to indicate that the data will be in the json format.
+- The `Content-Type: application/json` is the mandatory header to indicate that the data will be in the json format.
 - The address contains the endpoint of the cluster followed by the **name of your index**
 - The **test** just after the index name is the type of the document.
 - The **1** here is the id of your document that can be any string.
@@ -90,14 +93,14 @@ This command will return with a simple payload indicating if the document has be
 There are multiple ways to search your data, this is one area where the Elasticsearch REST API excels. You can either get your data directly by using a GET request, or search it with the Search APIs. To get your document indexed previously, use the following curl request:
 
 ```shell-session
-$ curl -XGET -u <your-token-value>:token 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1'
+$ curl -XGET -u <your-token-value>:token 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/1'
 {"_id":"1","_index":"logs-<username>-i-<suffix>","_primary_term":1,"_seq_no":0,"_source":{"company":"OVH","message":"Hello World !","post_date":"1999-11-02T23:01:00","user":"Oles"},"_type":"_doc","_version":1,"found":true}
 ```
 
 To issue a simple search you can either use the [Query DSL](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/query-dsl.html){.external} or a [URI search.](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/search-uri-request.html){.external}. Here is a simple example with an URI search:
 
 ```shell-session
-$ curl -XGET -u <your-token-value>:token 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_search?q=user:Oles'
+$ curl -XGET -u <your-token-value>:token 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_search?q=user:Oles'
 {"_shards":{"failed":0,"skipped":0,"successful":1,"total":1},"hits":{"hits":[{"_id":"1","_index":"newindice","_score":0.2876821,"_source":{"company":"OVH","message":"Hello World !","post_date":"1999-11-02T23:01:00","user":"Oles"},"_type":"_doc"}],"max_score":0.2876821,"total":1},"timed_out":false,"took":31}
 ```
 
@@ -166,13 +169,13 @@ A bulk request is a succession of JSON objects with this structure:
 You can in one request ask Elasticsearch to index, update, delete several documents. Save the content of the previous commands in a file named **bulk** and use the following call to index these 3 users:
 
 ```shell-session
-$ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_bulk' --data-binary "@bulk"
+$ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_bulk' --data-binary "@bulk"
 ```
 
 This call will take the content of the bulk file and execute each index operation. Note that you have to use the option **--data-binary** and no **-d** to preserve the newline after each JSON. You can check that your data are properly indexed with the following call:
 
 ```shell-session
-$ curl -u <your-token-value>:token -XGET 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/_search?pretty=true'
+$ curl -u <your-token-value>:token -XGET 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_doc/_search?pretty=true'
 ```
 
 This will give you back the documents of your index:
@@ -282,7 +285,7 @@ Now that you have some data, you can enrich your logs with it. For this we will 
 
 #### Configure a Logstash collector
 
-If you don't know how to create a Logstash collector, please refer to the [Logstash guide](../logstash_input/guide.en-gb.md){.ref}. Edit the configuration of Logstash. For this example we will use a SSL TCP input with the GELF codec. Here is the input configuration.
+If you don't know how to create a Logstash collector, please refer to the [Logstash guide](../logstash-input){.ref}. Edit the configuration of Logstash. For this example we will use a SSL TCP input with the GELF codec. Here is the input configuration.
 
 ```ruby
 tcp {
@@ -328,11 +331,11 @@ The filter part is composed by two plugins, the **elasticsearch** plugin and the
 
 - **hosts**: This is the address of the Elasticsearch API of your LDP cluster. Note that we use https here.
 - **index**: This is the name of the index containing your static data.
-- **username**: This is the username to authenticate yourself against the API. Again, we recommend that you use [tokens](../tokens_logs_data_platform/guide.en-gb.md){.ref} for that.
+- **username**: This is the username to authenticate yourself against the API. Again, we recommend that you use [tokens](../tokens-logs-data-platform){.ref} for that.
 - **password**: The password of the user.
 - **enable_sort**: this setting tells that there is no need to sort the data for the request.
 - **query**: This is the query issued. Here the query is a simple string query searching for the document having the field **userId** set at the value userId found in the log event. **%{[userID]}** will be replaced by the value contained in the field userId of the log event.
-- **fields**: This is where the magic happens. The field of the document found will be added to the event. The field of the document is on the left and the new (or updated) field of the event is on the right. Be sure to follow the [field naming conventions](../field_naming_conventions/guide.en-gb.md){.ref}.
+- **fields**: This is where the magic happens. The field of the document found will be added to the event. The field of the document is on the left and the new (or updated) field of the event is on the right. Be sure to follow the [field naming conventions](../field-naming-conventions){.ref}.
 
 The mutate plugin is here to show you how you can combine different subfield information in one top level field. Here we combine a latitude and a longitude field to create a geolocation field then we remove the original address top-field.
 
@@ -360,12 +363,19 @@ In this Dashboard, you can see that the first widget is a "quick values" widget 
 
 The **maximum size** of your index is fixed and is dependent on the number of shards. Shards are the unit of parallelism in Elasticsearch, so if search performance is critical, you should choose an index with the highest number of shard you can afford. Thanks to the high performance nodes we use, we managed to send thousands of logs to the Logstash and enrich all of them within seconds using only one shard.
 
-It is not possible to change the number of shards of one index. So you will have to be careful of the storage used by your index. **Once your index is full, It will be blocked on write requests** and you will have no choice but to use [_Delete By query_](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/docs-delete-by-query.html) requests to free space on your index.
+> [!warning]
+>
+> It is not possible to change the number of shards of one index. 
+> So you will have to be careful of the storage used by your index.
+> **Once your index is full, It will be blocked on write requests** and you will have no choice but to use 
+> [_Delete By query_](https://www.elastic.co/guide/en/elasticsearch/reference/6.8/docs-delete-by-query.html) 
+> requests to free space on your index.
+>
 
 Note that you can monitor yourself the size of the index by using the following curl query:
 
 ```shell-session
-$ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://graX.logs.ovh.com:9200/logs-<username>-i-<suffix>/_stats/store?pretty' --data-binary "@bulk"
+$ curl -u <your-token-value>:token -XPUT -H 'Content-Type: application/json' 'https://<ldp-cluster>.logs.ovh.com:9200/logs-<username>-i-<suffix>/_stats/store?pretty' --data-binary "@bulk"
 ```
 
 This command will give you a document with the following format:
@@ -423,10 +433,10 @@ On Logs Data Platform, we allow users to use Elasticsearch API to handle the lif
 To create an index on Logs Data Platform, use the following call:
 
 ```shell-session
-$ curl -u <username>:<password> -XPUT -H 'Content-Type: application/json' 'https://gra2.logs.ovh.com:9200/<username>-i-<suffix>' -d '{ "settings" : {"number_of_shards" : 1}}'
+$ curl -u <username>:<mypassword> -XPUT -H 'Content-Type: application/json' 'https://gra2.logs.ovh.com:9200/<username>-i-<suffix>' -d '{ "settings" : {"number_of_shards" : 1}}'
 ```
 
-- The **-u** option is followed by your LDP username that you can find on **Home** page. the password 'mypassword' follows it after the separator ':'
+- The **-u** option is followed by your LDP username that you can find on **Home** page. The password 'mypassword' follows it after the separator ':'
 - The **PUT** HTTP command can be used to create or modify a document.
 - The **-H 'Content-Type: application/json'** option is the mandatory header to indicate that the data will be in the json format.
 - The address contains the endpoint of the cluster followed by the **name of your index**
@@ -460,7 +470,7 @@ $ curl -XPOST "https://gra2.logs.ovh.com:9200/_aliases?pretty" -H 'Content-Type:
     "actions" : [
         { "remove" : { "index" : "<username>-i-<one-suffix>", "alias" : "<username>-a-<suffix>" } },
         { "add" : { "index" : "<username>-i-<other-suffix>", "alias" : "<username>-a-<suffix>" } },
-	{ "remove_index": { "index": "<username>-i-<one-suffix>" } }
+        { "remove_index": { "index": "<username>-i-<one-suffix>" } }
     ]
 }'
 ```
@@ -483,7 +493,7 @@ $ curl -u <username>:<password> -XPUT -H 'Content-Type: application/json' 'https
 	"index_patterns" : [ "logs-ab-12345-i-debug*","logs-ab-12345-i-test*"  ],
 	"settings": { 
 		"number_of_shards" : 1,
-		},
+	},
 	"aliases" : {
 		"logs-ab-12345-a-all" : {},
 		"logs-ab-12345-a-debug" : { "filter" : { "term" : { "type" : "debug" } } }
@@ -499,7 +509,7 @@ All the items you create through Elasticsearch API will be displayed in your man
 
 ![manager](images/manager.png){.thumbnail}
 
-Here the first index was create through API, its descrpition was filled automatically. 
+Here the first index was create through API, its description was filled automatically. 
  
 ### Additional Information
 
@@ -511,12 +521,12 @@ Index as a service has some specificities on our platforms. This additional and 
 - You are not allowed to change the settings of your index.
 - You can create an **alias** on Logs Data Platform and attach it to one or several indices.
 - Unlike indices, aliases are **read-only**, you cannot write through an alias yet.
-- If there is a feature missing, feel free to contact us on the [community hub](https://community.ovh.com/c/platform/data-platforms-lab){.external} or on the mailing list.
+- If there is a feature missing, feel free to contact us on the [community hub](https://community.ovh.com/en/c/Platform/data-platforms){.external}.
 
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
-- Documentation: [Guides](../product.en-gb.md){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
+- Getting Started: [Quick Start](../quick-start){.ref}
+- Documentation: [Guides](../){.ref}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

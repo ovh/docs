@@ -6,8 +6,8 @@ legacy_guide_number: g1990
 section: 'Automated tasks (CRON)'
 ---
 
-
 ## Create an automated task
+
 Select your platform under hosting in the left-hand column (1), then click on the "More +" tab and finally on "Scheduled tasks - Cron" (2) "Add a scheduling" (3).
 
 ![](images/3261.png){.thumbnail}
@@ -95,8 +95,6 @@ Could not open input file: /homez.600/loginftp/www/cron.php
 ```
 
 
-
-
 ## Limitations
 
 - In shared hosting, you cannot specify the minute that you want the task to run. In addition the task can only be executed once an hour. 
@@ -117,11 +115,7 @@ Example:
 /www/cron.php?variable=test
 ```
 
-
-
 - You can however define these variables in your script.
-
-
 
 
 ## Use of absolute paths
@@ -160,7 +154,6 @@ I am the client and I'm printing stuff with this nice 'echo' feature.
 # OVH ## END - 2014-12-23 15:34:13.056472 exitcode: 0
 ```
 
-
 Execution script error because the file could not be found:
 
 ```
@@ -169,7 +162,6 @@ Execution script error because the file could not be found:
 
 # OVH ## END - 2014-12-23 15:36:16.546574 exitcode: 255
 ```
-
 
 Script execution error following timeout:
 
@@ -182,7 +174,6 @@ Now sleeping 9000 sec
 # OVH ## END - 2014-12-23 17:05:54.690413 exitcode: 0
 ```
 
-
 Script execution error following excessive data output:
 
 ```
@@ -192,7 +183,6 @@ Script execution error following excessive data output:
 # OVH ## END - 2014-12-23 15:43:50.999934 exitcode: 255
 ```
 
-
 Script execution error because of a permissions error (chmod) or incorrect configuration of the .ovhconfig file:
 
 ```
@@ -200,6 +190,3 @@ Script execution error because of a permissions error (chmod) or incorrect confi
 [2015-01-08 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason. Please contact customer support for more information.
 [2015-01-08 18:07:10] ## OVH ## END - 2015-01-08 18:07:10.969840 exitcode: 255
 ```
-
-
-

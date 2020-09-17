@@ -109,7 +109,7 @@ Por último, reinicie el VPS sobre el disco desde el área de cliente de OVH.
 
 ## Más información
 
-[Introducción al SSH](../dedicated/ssh-introduction/){.external}
+[Introducción al SSH](../../dedicated/ssh-introduction/){.external}
 
 [Activar el modo de rescate en un VPS](../rescue/){.external}
 

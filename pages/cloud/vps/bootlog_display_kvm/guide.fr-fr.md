@@ -15,7 +15,7 @@ Si votre VPS ne répond pas comme vous le souhaitez, la manière la plus rapide 
 
 ## Prérequis
 
-- Avoir accès au VPS ou à l'instance Public Cloud en [mode rescue](https://docs.ovh.com/fr/vps/rescue/){.external}
+- Avoir accès au VPS ou à l'instance Public Cloud en [mode rescue](../mode-rescue-vps/){.external}
 
 
 ## En pratique

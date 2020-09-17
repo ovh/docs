@@ -12,13 +12,9 @@ Vous désirez utiliser PostgreSQL ? Découvrez comment créer et gérer vos base
 
 ### Prérequis
 
+- Une instance CloudDB
+- Avoir consulté le [guide de démarrage de CloudDB](../debuter-avec-clouddb/)
 
-> [!primary]
->
-> Ce tutoriel nécessite :
-> - Une instance CloudDB
-> - Avoir consulté le guide de démarrage de CloudDB : docs/cloud/clouddb/debuter-avec-clouddb
->
 
 ### Qu'est-ce qu'une base de donnees PostgreSQL ?
 PostgreSQL est un système de gestion de bases de données relationnelles et objet (SGBDRO). C'est un système robuste et extensible, capable de manipuler en toute fiabilité de gros volumes de données. Il dispose également d'une communauté opensource très active.

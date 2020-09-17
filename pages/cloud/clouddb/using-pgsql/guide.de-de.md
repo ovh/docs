@@ -11,13 +11,9 @@ Sie möchten mit PostgreSQL arbeiten? Dann lesen Sie hier, wie Sie Ihre Datenban
 
 ### Voraussetzungen
 
+- Benötigen Sie eine CloudDB Instanz
+- Lesen Sie bitte zunächst die [Anleitung zu CloudDB](../erste-schritte-mit-clouddb/)
 
-> [!primary]
->
-> Für dieses Tutorial:
-> - Benötigen Sie eine CloudDB Instanz
-> - Lesen Sie bitte zunächst die Anleitung zu CloudDB: docs/cloud/clouddb/debuter-avec-clouddb
->
 
 ### Was ist eine PostgreSQL Datenbank?
 PostgreSQL ist ein Verwaltungssystem für relationale Datenbanken (RDBMS, Relational Database Management System). Es ist ein stabiles System und leicht erweiterbar und bietet eine hohe Datenqualität auch bei sehr großen Datenmengen. Außerdem besitzt PostgreSQL eine äußerst aktive Open Source Community.

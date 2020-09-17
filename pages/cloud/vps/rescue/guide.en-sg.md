@@ -58,6 +58,6 @@ You can now connect via SSH to your VPS in rescue mode. To switch back to normal
 
 ## Go further
 
-[Introduction to SSH](../dedicated/ssh-introduction/)
+[Introduction to SSH](../../dedicated/ssh-introduction/)
 
 Join our user community on <https://community.ovh.com/en/>.

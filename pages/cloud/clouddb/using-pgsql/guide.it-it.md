@@ -11,13 +11,8 @@ Vuoi utilizzare PostgreSQL? Scopri come creare e gestire i tuoi database con la 
 
 ### Prerequisiti
 
-
-> [!primary]
->
-> Per seguire questa guida è necessario:
-> - Un'istanza CloudDB attiva
-> - Aver consultato la guida all’utilizzo di CloudDB: docs/cloud/clouddb/debuter-avec-clouddb
->
+- Un'istanza CloudDB attiva
+- Aver consultato [la guida all’utilizzo di CloudDB](../iniziare-a-utilizzare-clouddb/)
 
 ### Cose un database PostgreSQL?
 PostgreSQL è un modello di database relazionale a oggetti (ORDBMS). È un sistema solido ed estendibile, in grado di gestire con la massima affidabilità un grande volume di dati. Dispone anche di una Community open source molto attiva.

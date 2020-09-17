@@ -30,7 +30,7 @@ Con su servidor SQL Privado, dispondrá de recursos reservados exclusivamente pa
 
 Así pues, haga lo que haga, no corre el riesgo de molestar al resto de usuarios. El tamaño de las bases de datos es ilimitado. De este modo, podrá elegir la mejor configuración entre el volumen de datos y el rendimiento de su servidor SQL.
 
-![](images/img_4008.jpg){.thumbnail}
+![](images/img_4240.jpg){.thumbnail}
 
 ## Seleccione su versión SQL
 Al realizar su pedido, podrá elegir la versión de servidor SQL que mejor se adapte a sus necesidades entre la lista de versiones disponibles. 

@@ -1,29 +1,34 @@
 ---
 title: 'Cómo utilizar la API de vScope'
 slug: vscopeapi
-excerpt: 'Con la API vScope, podrá utilizar los datos de monitorización en sus aplicaciones'
+excerpt: 'Con la API vScope podrá utilizar los datos de monitorización en sus aplicaciones'
 section: 'Servicios y opciones de OVH'
 order: 1
 ---
 
-**Última actualización: 25/11/2019**
+**Última actualización: 21/08/2020**
 
 ## Objetivo
 
-OVHcloud pone a su disposición una herramienta de supervisión y monitorización de sus máquinas virtuales y de su infraestructura llamada**vScope**.
+OVHcloud pone a su disposición una herramienta de supervisión y monitorización de sus máquinas virtuales y de su infraestructura llamada **vScope**.
 
-Se trata de una página web en la que se reúne toda la información útil sobre el uso de sus recursos.
+Se trata de una página web en la que se recopila toda la información necesaria sobre el uso de sus recursos.
 
 Esta información también se encuentra disponible en la APIv6 y la API Metrics.
 
-**En esta guía, describiremos el uso de estas API**.
+**Esta guía explica cómo utilizar estas API**.
+
+## Requisitos
+
+- Tener [una infraestructura Hosted Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/).
+- Estar conectado a la interfaz vScope.
 
 ## Procedimiento
 
-vScope brinda dos tipos de información:
+La herramienta vScope proporciona dos tipos de información:
 
-- información **live** es aquella que corresponde a los diferentes componentes en un momento determinado.
-- gráficos que presentan los datos históricos de rendimiento de los diferentes componentes. Ej.: CPU, RAM de una máquina virtual.
+- Información **live**, que corresponde a los datos de los diferentes componentes en un momento determinado.
+- Gráficos que presentan los datos históricos de rendimiento de los diferentes componentes como, por ejemplo, la CPU y la RAM de una máquina virtual.
 
 
 ### Recopilar los datos **live**
@@ -34,9 +39,9 @@ Los datos **live** son aquellos que se encuentran disponibles en la página prin
 
 Podrá obtener los datos **live** para los siguientes componentes:
 
-- filers
-- hosts
-- máquinas virtuales
+- filers;
+- hosts;
+- máquinas virtuales.
 
 El uso de la API se realiza a través de estas tres llamadas APIv6:
 
@@ -61,22 +66,22 @@ El uso de la API se realiza a través de estas tres llamadas APIv6:
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
 > 
 
-### Recopilar los datos históricos (Gráficos)
+### Recopilar los datos históricos (Graphs)
 
-Para recopilar y utilizar los datos históricos (Gráficos), contamos con el producto **Metrics Data Platforms**.
+Para recopilar y utilizar los datos históricos (Graphs), puede utilizar la solución **Metrics Data Platform**.
 
-Mediante el protocolo Opentsdb o WARP10, podrá obtener sus datos en forma de puntos. Podrá utilizarlos a través de su aplicación o verlos directamente según el renderizado deseado.
+Mediante el protocolo Opentsdb o WARP10, podrá obtener sus datos en forma de puntos. Asimismo, podrá utilizarlos a través de su aplicación o verlos directamente según el renderizado deseado.
 
 
-En este artículo, explicaremos el uso del protocolo Opentsdb para obtener una visualización de datos en bruto (sin renderizado gráfico).
+En esta guía explicaremos el uso del protocolo Opentsdb para obtener una visualización de datos en bruto (sin renderizado gráfico).
 
-Para poder utilizar **Metrics Data Platforms**, deberá contar con un token de lectura. Con la nueva versión del vScope, cada usuario de la infraestructura dispone de un token de lectura. 
+Para poder utilizar **Metrics Data Platform**, necesitará un token de lectura. Con la nueva versión del vScope, cada usuario de la infraestructura dispone de un token de lectura. 
 
 Para el usuario deseado, utilice la siguiente llamada a la APIv6 y obtenga el token de lectura:
 
 > [!api]
 > 
-> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/getVscopeMetricsToken
+> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
 > 
 
 Su token se encuentra en el campo **token** del resultado.
@@ -95,40 +100,40 @@ Para cada tipo de componente, existe una lista de métricas y necesita un númer
 
 | Métricas | Descripción | Labels |
 | ----------- | ----------- | ----------- |
-| vscope.filer.datastore.diskspace.used | Uso del filer en kB | datacenter : pcc-37-187-228-180_datacenter869, <br>datastore : pcc-000443 |
+| vscope.filer.datastore.diskspace.used | Uso del filer en kB | datacenter: pcc-37-187-228-180_datacenter869, <br>datastore: pcc-000443 |
 
 #### Hosts
 
 | Métricas | Descripción | Labels |
 | ----------- | ----------- | ----------- |
-| vscope.host.cpu.usage.perc | Uso del procesador del host en porcentaje | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- host : 172.17.86.51 |
-| vscope.host.mem.usage.perc | Uso de la memoria del host en porcentaje | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- host : 172.17.86.51 |
-| vscope.host.net.tx | Uso de la red del host de emisión | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- host : 172.17.86.51<br>\- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
-| vscope.host.net.rx | Uso de la red del host de recepción | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- host : 172.17.86.51<br>\- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
-| vscope.host.net.packetstx | Número de paquetes de red transmitidos por el host | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- host : 172.17.86.51<br>\- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
-| vscope.host.net.packetsrx | Número de paquetes de red recibidos por el host | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- host : 172.17.86.51<br>\- nicname : vmnic0/vmnic1/vmnic2/vmnic3 |
+| vscope.host.cpu.usage.perc | Uso del procesador del host en porcentaje | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- host: 172.17.86.51 |
+| vscope.host.mem.usage.perc | Uso de la memoria del host en porcentaje | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- host: 172.17.86.51 |
+| vscope.host.net.tx | Uso de la red del host de emisión | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- host: 172.17.86.51<br>\- nicname: vmnic0/vmnic1/vmnic2/vmnic3 |
+| vscope.host.net.rx | Uso de la red del host de recepción | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- host: 172.17.86.51<br>\- nicname: vmnic0/vmnic1/vmnic2/vmnic3 |
+| vscope.host.net.packetstx | Número de paquetes de red transmitidos por el host | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- host: 172.17.86.51<br>\- nicname: vmnic0/vmnic1/vmnic2/vmnic3 |
+| vscope.host.net.packetsrx | Número de paquetes de red recibidos por el host | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- host: 172.17.86.51<br>\- nicname: vmnic0/vmnic1/vmnic2/vmnic3 |
 
 #### Máquinas virtuales
 
 | Métricas | Descripción | Labels |
 | ----------- | ----------- | ----------- |
-| vscope.vm.cpu.usage.perc | Uso del procesador de la MV en porcentaje | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.mem.usage.perc | Uso de la memoria de la MV en porcentaje | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.cpu.ready |CPU Ready de la MV en milisegundos | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.net.rx | Uso de la red de la MV de recepción | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.net.tx | Uso de la red de la MV de transmisión | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.net.packetsrx | Número de paquetes de red recibidos por la MV | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.net.packetstx | Número de paquetes de red transmitidos por la MV | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.disk.io.read | Número de IO en lectura por segundo de la MV | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.disk.io.write | Número de IO en escritura por segundo de la MV | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.disk.bandwidth.read |  Ancho de banda del disco de la MV en modo lectura | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.disk.bandwidth.write | Ancho de banda del disco de la MV en modo escritura | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.disk.latency.read | Latencia del disco de la MV en modo lectura | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
-| vscope.vm.disk.latency.write | Latencia del disco de la MV en modo escritura | \- datacenter : pcc-37-187-228-180_datacenter869, <br>\- vm : vm-01254 |
+| vscope.vm.cpu.usage.perc | Uso del procesador de la MV en porcentaje | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- vm: vm-01254 |
+| vscope.vm.mem.usage.perc | Uso de la memoria de la MV en porcentaje | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- vm: vm-01254 |
+| vscope.vm.cpu.ready |CPU Ready de la MV en milisegundos | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- vm: vm-01254 |
+| vscope.vm.net.rx | Uso de la red de la MV de recepción | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- vm: vm-01254 |
+| vscope.vm.net.tx | Uso de la red de la MV de transmisión | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- vm: vm-01254 |
+| vscope.vm.net.packetsrx | Número de paquetes de red recibidos por la MV | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- vm: vm-01254 |
+| vscope.vm.net.packetstx | Número de paquetes de red transmitidos por la MV | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- vm: vm-01254 |
+| vscope.vm.disk.io.read | Número de IO en lectura por segundo de la MV | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- vm: vm-01254 |
+| vscope.vm.disk.io.write | Número de IO en escritura por segundo de la MV | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- vm: vm-01254 |
+| vscope.vm.disk.bandwidth.read |  Ancho de banda del disco de la MV en modo lectura | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- vm: vm-01254 |
+| vscope.vm.disk.bandwidth.write | Ancho de banda del disco de la MV en modo escritura | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- vm: vm-01254 |
+| vscope.vm.disk.latency.read | Latencia del disco de la MV en modo lectura | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- vm: vm-01254 |
+| vscope.vm.disk.latency.write | Latencia del disco de la MV en modo escritura | \- datacenter: pcc-37-187-228-180_datacenter869, <br>\- vm: vm-01254 |
 
 #### Ejemplo de recopilación con el protocolo OpenTSDB
 
-Una vez que obtuvo su token, su punto final y su lista de métricas, recuperará los datos de uso de memoria de un host en un día.
+Una vez que obtuvo su token, su endpoint y su lista de métricas, recuperará los datos de uso de memoria de un host en un día.
 
 A continuación, encontrará un ejemplo de petición.
 
@@ -153,8 +158,8 @@ curl -XPOST https://read:XXXXXXXXXXXX_XXXXXXXXXXXZZZZZZZZZZZ_YYYYYYYYYYYYYY-XXXX
 Explicación de los diferentes campos utilizados:
 
 - read: usuario utilizado para efectuar la petición (siempre será read);
-- XXXXXXXXXXXX_XXXXXXXXXXXZZZZZZZZZZZ_YYYYYYYYYYYYYY-XXXXXXXXX : token previamente obtenido mediante la APIv6;
-- opentsdb.gra1-ovh.metrics.ovh.net : punto final OpenTSDB, también obtenido mediante la APIv6. Este punto final puede variar según su localización;
+- XXXXXXXXXXXX_XXXXXXXXXXXZZZZZZZZZZZ_YYYYYYYYYYYYYY-XXXXXXXXX: token previamente obtenido mediante la APIv6;
+- opentsdb.gra1-ovh.metrics.ovh.net: endpoint OpenTSDB, también obtenido mediante la APIv6. Este endpoint puede variar según su localización;
 - start: marcas de tiempo que corresponden a la fecha de inicio de la petición;
 - queries: tabla que contiene las métricas por obtener. Se pueden recuperar varias métricas en una sola petición;
 - metric: nombre de la métrica por obtener;

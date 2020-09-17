@@ -6,7 +6,7 @@ section: 'Migration d’un compte Exchange'
 order: 1
 ---
 
-**Dernière mise à jour le 06/08/2020**
+**Dernière mise à jour le 12/08/2020**
 
 ## Objectif
 
@@ -34,7 +34,8 @@ Avant de poursuivre, il est donc important de savoir vers quelle offre vous souh
 
 ### Étape 2 : commander vos comptes E-mail Pro ou Exchange
 
-Cette étape est facultative si :
+Cette étape est facultative si :<br>
+
 - vous êtes déjà en possession de comptes ;
 - vous disposez déjà d'un service Exchange ou E-mail Pro vers lequel vous effectuez cette migration.
 
@@ -50,7 +51,8 @@ Dans le cas contraire, pour réaliser la manipulation, connectez-vous à votre [
 > Pour plus plus d'information sur les changements de contacts, consultez notre guide pour [gérer les contacts de ses services](../../customer/gestion-des-contacts/).
 >
 
-La migration peut être effectuée depuis deux interfaces :
+La migration peut être effectuée depuis deux interfaces :<br>
+
 - **celle de l'assistant de configuration Hosted Exchange**, uniquement si vous venez de commander un service Hosted Exchange et que vous n'avez encore rien paramétré sur ce dernier ;
 - **celle du MX Plan**, dès que vous êtes en possession d'un service E-mail Pro ou Exchange (déjà configuré ou non) et d'une adresse MX Plan que vous souhaitez migrer.
 

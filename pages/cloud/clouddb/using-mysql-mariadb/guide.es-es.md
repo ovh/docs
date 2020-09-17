@@ -14,8 +14,7 @@ section: Primeros pasos
 Para seguir los pasos de esta guía, es necesario:
 
 - tener una instancia CloudDB;
-- haber consultado la guía [Primeros pasos con el servicio Cloud Databases](../starting_with_clouddb/guide.es-es.md){.ref}.
-
+- haber consultado [esta guía](../empezar-con-clouddb/).
 
 ### Que es una base de datos MySQL
 MySQL es un sistema de gestión de bases de datos relacionales desarrollado para obtener un rendimiento en lectura superior al que ofrecen otros sistemas.

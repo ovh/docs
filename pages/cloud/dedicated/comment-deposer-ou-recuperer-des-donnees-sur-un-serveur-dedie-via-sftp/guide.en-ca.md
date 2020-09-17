@@ -54,7 +54,7 @@ The progress of the transfer is then displayed at the bottom of the FileZilla wi
 
 #### When your server is in rescue mode 
 
-In rescue mode, you first need to mount your partition. To do this, you can follow the instructions set out in [this guide](../ovh-rescue/).
+In rescue mode, you first need to mount your partition. To do this, you can follow the instructions set out in [this guide](../rescue-mode).
 
 Once you have mounted your partition, log in to your software again (FileZilla, in this case) on port 22.
 

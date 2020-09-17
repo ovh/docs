@@ -57,7 +57,7 @@ Cliquez sur `Terminer`{.action} pour lancer la procédure de migration.
 
 ### Suivi du vMotion
 
-Dans les tâches récentes, vous pourrez suibre l'état de la migration. Celle-ci prend plus ou moins de temps selon la taille de la VM, les accès IO et la bande passante utilisée.
+Dans les tâches récentes, vous pourrez suivre l'état de la migration. Celle-ci prend plus ou moins de temps selon la taille de la VM, les accès IO et la bande passante utilisée.
 
 ![suivi de vMotion](images/VmotionStorage5.png){.thumbnail}
 

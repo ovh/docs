@@ -26,10 +26,10 @@ Nyní máte přístup ke všem informacím o PCC (hostitelé, VM, využité zdro
 ## 
 Nejprve si nastavte "Settings"(Nastavení) Vašeho iPadu. Musíte zadat název OVH serveru: vcma.ovh.com
 
-![](images/img_147.jpg){.thumbnail}
+ 
 Jakmile nastavíte svůj iPad, můžete spustit aplikaci. Zde je potřeba zadat přístupové údaje, které jste obdrželi e-mailem:
 
-![](images/img_15.jpg){.thumbnail}
+ 
 Jakmile jste připojeni, můžete najít všechny své hostitele PCC, použité zdroje a virtuální stroje:
 
 ![](images/img_152.jpg){.thumbnail}

@@ -89,7 +89,7 @@ Click on the '...' located to the right of the existing partition, then `Manage 
 Now you can `Add access`{.action}, and select the IP of your OVH product.
 
 
-![createaccess](images/NAS-4){.thumbnail}
+![createaccess](images/NAS-4.png){.thumbnail}
 
 
 ### Remove a partition
@@ -114,7 +114,7 @@ To delete an access, go to your customer space, universe `Server`{.action}, sect
 Click on the '...' located to the right of the existing partition, then `Manage access`{.action}.
 
 
-![createaccess](images/NAS-3){.thumbnail}
+![createaccess](images/NAS-3.png){.thumbnail}
 
 Then click on the icon to the right of the access currently present, and confirm the deletion.
 

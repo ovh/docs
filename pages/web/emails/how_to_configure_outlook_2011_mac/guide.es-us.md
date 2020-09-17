@@ -76,7 +76,7 @@ Aquí también puede cambiar la información de configuración de su cuenta de c
 
 A continuación se describen las opciones disponibles en «Avanzadas...».
 
-![outlook2011](images/img_1497.jpg){.thumbnail}
+![outlook2011](images/2138.png){.thumbnail}
 
 
 ## Servidor

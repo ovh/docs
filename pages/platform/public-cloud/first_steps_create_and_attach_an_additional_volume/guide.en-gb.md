@@ -19,7 +19,7 @@ This guide will explain how to create an additional volume and then how to attac
 
 
 ### Prerequisites
-- A [Public Cloud instance](../first_steps_start_my_first_server_within_3_minutes/guide.en-gb.md){.ref}
+- A [Public Cloud instance](../public-cloud-first-steps/guide.en-gb.md){.ref}
 
 
 ## Creating the volume

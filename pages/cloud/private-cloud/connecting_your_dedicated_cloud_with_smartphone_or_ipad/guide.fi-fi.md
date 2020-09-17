@@ -25,10 +25,10 @@ Pääset kaikkiin Dedicated Cloudin tietoihin, käyttämiisi hosteihin ja virtua
 ## 
 Konfiguroi ensin iPad osiossa "Settings". Sinun täytyy käyttää OVH:n palvelinta vcma.ovh.com
 
-![](images/img_147.jpg){.thumbnail}
+ 
 Voit suorittaa ohjelman, kunhan olet konfiguroinut iPadisi. Sinun täytyy syöttää kirjautumistiedot, jotka sait sähköpostitse:
 
-![](images/img_15.jpg){.thumbnail}
+ 
 Kun olet yhdistänyt, näet kaikki Dedicated Cloud hostit, resurssit ja virtuaalikoneet:
 
 ![](images/img_152.jpg){.thumbnail}

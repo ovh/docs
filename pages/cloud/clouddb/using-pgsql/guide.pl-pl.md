@@ -11,13 +11,8 @@ Chcesz korzystać z PostgreSQL? Sprawdź, jak w prosty sposób tworzyć bazy dan
 
 ### Wymagania
 
-
-> [!primary]
->
-> Wymagane jest:
-> - Posiadanie instancji CloudDB
-> - Zapoznanie się z przewodnikiem na temat CloudDB: docs/cloud/clouddb/debuter-avec-clouddb
->
+- Posiadanie instancji CloudDB
+- Zapoznanie się z przewodnikiem na temat [CloudDB](../pierwsze-kroki-z-clouddb/)
 
 ### Czym jest baza danych PostgreSQL?
 PostgreSQL to system zarządzania relacyjnymi bazami danych oraz obiektami (SGBDRO).

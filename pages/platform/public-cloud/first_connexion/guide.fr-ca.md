@@ -110,7 +110,7 @@ Vous serez ensuite connecté à votre instance.
 
 > [!primary]
 >
-> Si vous rencontrez des problèmes de connexion à votre instance Windows, assurez-vous que votre pare-feu Windows autorise les connexions RDP. Veuillez consulter notre guide sur la [configuration du serveur Windows](../vps/windows-first-config/){.external} si vous avez besoin de plus d'informations.
+> Si vous rencontrez des problèmes de connexion à votre instance Windows, assurez-vous que votre pare-feu Windows autorise les connexions RDP. Veuillez consulter notre guide sur la [configuration du serveur Windows](../../vps/windows-first-config/){.external} si vous avez besoin de plus d'informations.
 > 
 
 

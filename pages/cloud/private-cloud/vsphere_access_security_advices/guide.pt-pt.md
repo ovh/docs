@@ -5,9 +5,9 @@ excerpt: 'Descubra como proteger o acesso ao vSphere Web Client'
 section: Introdução
 ---
 
-**Última atualização: 16/02/2018**
+**Última atualização: 30/07/2020**
 
-## Sumário
+## Objetivo
 
 Para assegurar a integridade da sua infraestrutura, convém que restrinja o acesso a ela. Para isso, sugerimos-lhe diferentes métodos.
 
@@ -15,8 +15,7 @@ Para assegurar a integridade da sua infraestrutura, convém que restrinja o aces
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instruções
 
@@ -24,14 +23,14 @@ Para assegurar a integridade da sua infraestrutura, convém que restrinja o aces
 
 O primeiro conselho está ligado à restrição do acesso por IP. Aconselhamos que trabalhe sempre com um sistema de registo que use whitelisting. Esta técnica assenta sobre a recusa de princípio de todos os endereços IP e sobre o acrescento de endereços que possam dar acesso à sua infraestrutura.
 
-Esta ação pode ser feita diretamente através da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Quando estiver no espaço Private Cloud, clique em `Segurança`{.action}. Aparecerá um quadro, no qual poderá ver os endereços IP autorizados ou recusados. Para acrescentar novos, clique à direita, em `Adicionar IP`{.action}:
+Esta ação pode ser feita diretamente através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Quando estiver no espaço Private Cloud, clique em `Segurança`{.action}. Aparecerá um quadro, no qual poderá ver os endereços IP autorizados ou recusados. Para acrescentar novos, clique à direita, em `Adicionar IP`{.action}:
 
 ![Adicionar IP](images/adding_ip.png){.thumbnail}
 
 
 ### Criar utilizadores específicos
 
-Recomendamos fortemente que crie um acesso personalizado para cada pessoa que deva ter acesso à sua infraestrutura. Esta operação também pode ser feita na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, mas desta vez no separador `Utilizadores`{.action}. Para adicionar novos, clique no botão situado à direita: `Criar um utilizador`{.action}.
+Recomendamos fortemente que crie um acesso personalizado para cada pessoa que deva ter acesso à sua infraestrutura. Esta operação também pode ser feita na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, mas desta vez no separador `Utilizadores`{.action}. Para adicionar novos, clique no botão situado à direita: `Criar um utilizador`{.action}.
 
 ![Utilizadores](images/users.png){.thumbnail}
 
@@ -52,7 +51,7 @@ Quando se cria um utilizador, é pedida uma palavra-passe.
 > - ser diferente das palavras-passe anteriores.
 >
 
-A seguir, poderá gerir as autorizações de cada utilizador clicando na roda dentada à direita de cada username:
+A seguir, poderá gerir as autorizações de cada utilizador clicando no botão `...`{.action} à direita de cada username:
 
 ![Edição dos parâmetros dos utilizadores](images/users_edit.png){.thumbnail}
 
@@ -60,10 +59,14 @@ A seguir, poderá gerir as autorizações de cada utilizador clicando na roda de
 
 No final da sessão, aconselha-se que os utilizadores a concluam em conformidade. Para limitar o tempo de conexão, é possível adicionar uma duração de expiração da sessão.
 
-Esta pode ser parametrada na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Quando estiver no espaço Private Cloud, escolha `Segurança`{.action}. A seguir, clique em `Alterar o prazo de expiração`{.action}, à direita. A janela seguinte permitirá escolher o tempo (em minutos) antes de uma sessão expirar.
+Esta pode ser configurada na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Quando estiver no espaço Private Cloud, escolha `Segurança`{.action}. A seguir, clique em `Alterar o prazo de expiração`{.action}, à direita.
+
+![Expiração da sessão](images/security-expiration.png){.thumbnail}
+
+Indique o número de minutos antes que uma sessão expire.
 
 ![Expiração da sessão](images/expiration.png){.thumbnail}
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

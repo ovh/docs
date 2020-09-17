@@ -1,95 +1,88 @@
 ---
 title: 'Połączenie za pomocą protokołu STFP'
 slug: polaczenie_przez_sftp
-excerpt: 'Dowiedz się, jak połączyć się z usługą Private Cloud za pomocą protokołu SFTP'
-section: 'Pierwsze kroki'
+excerpt: Dowiedz się, jak się połączyć z Private Cloud za pomocą SFTP
+section: Pierwsze kroki
+order: 3
 ---
 
-**Ostatnia aktualizacja dnia 2018-11-14**
+**Ostatnia aktualizacja z dnia 01-09-2020**
 
 ## Wprowadzenie
 
-Połączenie SFTP z zasobami datastore umożliwia dodawanie plików lokalnych do infrastruktury. Połączenie takie jest możliwe z interfejsu graficznego za pomocą programu typu FileZilla, dostępnego z Windowsa i Maca. Z Linuxa można natomiast połączyć się za pomocą wiersza poleceń.
+Połączenie z datastores za pomocą protokołu SFTP (Secure File Transfer Protocol) pozwala na dodawanie lokalnych kopii zapasowych plików do infrastruktury. Możesz zalogować się za pośrednictwem graficznego interfejsu użytkownika przy użyciu oprogramowania takiego jak FileZilla, dostępnego dla systemów Windows i Mac. Możesz również zalogować się za pomocą wiersza poleceń w systemie operacyjnym Linux.
 
-Ten system pozwala na dostęp jedynie do folderu upload-vpn w przestrzeni dyskowej (na datastore). Przy połączeniu tą metodą pliki umieszczone poza tym folderem nie będą dostępne.
+Ten system pozwoli Ci na dostęp tylko do folderu "upload-vpn" w Twoich datastores. Pliki spoza tego folderu nie będą dostępne przy wykorzystaniu tej metody.
 
-**Niniejszy przewodnik objaśnia jak połączyć się przez protokół SFTP z interfejsu graficznego lub z wiersza poleceń.** 
+**W przewodniku tym wyjaśniamy, jak łączyć się za pomocą SFTP przy użyciu graficznego interfejsu użytkownika lub wiersza poleceń.**
 
-## Wymagania wstępne
+## Wymagania początkowe
 
-- Aktywny użytkownik utworzony w Panelu klienta.
-
+- Posiadanie aktywnego użytkownika utworzonego w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## W praktyce
 
-### Połączenie z interfejsu graficznego
+### Logowanie z poziomu interfejsu graficznego
 
-W kliencie FTP (tutaj na przykładzie programu FileZilla) należy wprowadzić następujące wartości:
+W Twoim FTP (w tym przykładzie FileZilla) wprowadź następujące wartości:
 
 ```
-Host: [sftp://pcc-xxx-xxx-xxx-xxx.ovh.com] / Login : user / Hasło : password
+Host: [sftp://pcc-xxx-xxx-xxx-xxx.ovh.com] / Username: user / Password: password
 ```
 
 ![Połączenie SFTP](images/connection_sftp_filezilla_log.png){.thumbnail}
 
-Po połączeniu, po lewej stronie znajduje się lokalne urządzenie, a po prawej datastore:
+Po zalogowaniu się, po lewej stronie znajdziesz Twoją lokalną stację roboczą, a po prawej - Twoje datastores:
 
-![Połączenie SFTP przez FileZilla](images/connection_sftp_filezilla.png){.thumbnail}
+![Połączenie przez SFTP przy użyciu FileZilla](images/connection_sftp_filezilla.png){.thumbnail}
 
+### Połączenie za pośrednictwem terminala
 
-### Połączenie z okna terminala
-
-W oknie terminala sprawdzić, czy zainstalowane jest polecenie `sftp` wpisując:
+W terminalu sprawdź, czy komenda `sftp` jest zainstalowana. W tym celu wpisz:
 
 ```sh
 sftp
 ```
 
-Polecenie dla połączenia jest następujące:
+Do zalogowania użyj następującej komendy:
 
 ```sh
 sftp user@pcc-xxx-xxx-xxx-xxx.ovh.com
 ```
 
-Zostaniesz następnie poproszony o podanie hasła.
-
-Po połączeniu, za pomocą polecenia `ls` możesz wylistować dostępne zasoby datastore:
+Następnie wpisz hasło użytkownika. Po zalogowaniu, będziesz mógł utworzyć listę Twoich datastores za pomocą polecenia `ls`:
 
 ```sh
 sftp> ls pcc-000714
 ```
 
-Do znalezionego za pomocą poprzedniego polecenia zasobu dyskowego można przejść następująco:
+Przeglądaj listę znalezionych datastores przy użyciu wskazanego wcześniej polecenia:
 
 ```sh
 sftp> pcc-000714
 ```
-W celu przesłania plików z urządzenia lokalnego do zasobu dyskowego (datastore) należy użyć polecenia `put`:
 
-
-```sh
-sftp> put /home/ubuntu-11.10-desktop-i386-fr.iso
-/datastore/pcc-000714/ubuntu-11.10-desktop-i386-fr.iso
-```
-
-W celu przesłania plików z zasobu dyskowego(datastore) do urządzenia lokalnego należy użyć polecenia `get`:
-
+Użyj polecenia `put`, aby wyeksportować pliki z datastore do lokalnego komputera.
 
 ```sh
-sftp> get /datastore/pcc-00714/ubuntu-16.04-desktop-amd64.iso /home/
+sftp> put /home/ubuntu-18.04-server-amd64.iso
+/datastore/pcc-000714/ubuntu-18.04-server-amd64.iso  
 ```
 
-Polecenie ‘exit’ powoduje zamknięcie połączenia.
+Użyj polecenia `put`, aby zaimportować pliki z lokalnego komputera do datastore.
 
+```sh
+sftp> get /datastore/pcc-00714/ubuntu-18.04-server-amd64.iso /home/
+```
 
-### Przeglądanie katalogów w interfejsie vSphere
+Użyj polecenia `exit`, aby zamknąć połączenie.
 
-W interfejsie vSphere, w folderze `upload-vpn` możesz zobaczyć wysłaną zawartość przechodząc do zasobu dyskowego (datastore) (kliknięcie prawym przyciskiem myszy na `Browse File`{.action} przy właściwym datastore):
+### Podgląd przy użyciu vSphere
 
-![Połączenie SFTP przez vSphere](images/connection_sftp_browse_datastore.png){.thumbnail}
+W interfejsie vSphere będziesz mógł zobaczyć zawartość tego, co właśnie wysłałeś, przeglądając Twój datastore. W tym celu kliknij na wybrany datastore w folderze "upload-vpn":
 
+![Połączenie SFTP za pomocą vSphere](images/sftpconnection.png){.thumbnail}
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na <https://community.ovh.com>.
-
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

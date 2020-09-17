@@ -187,7 +187,7 @@ From the OVHcloud API, you can customize the settings: IP range (e.g 10.0.0.0/16
 >
 > Unlike dedicated servers, it is not necessary to tag a VLAN directly on the instance.
 >
-> For more information on managing VLANs and the vRack with dedicated server, you can consul the following guide: [Creating muliple vLANs in a vRack](../dedicated/multiple-vlans)
+> For more information on managing VLANs and the vRack with dedicated server, you can consul the following guide: [Creating muliple vLANs in a vRack](../../dedicated/multiple-vlans)
 
 > [!warning]
 > The vRack is an infrastructure completely managed by OVHcloud, you can only configure it through the OVHcloud Control Panel and the API.
