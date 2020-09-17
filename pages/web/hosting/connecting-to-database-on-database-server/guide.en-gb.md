@@ -107,11 +107,11 @@ mysql --host=server --user=username --port=port --password=password database_nam
 ![launch SQuirreL](images/1.png){.thumbnail}
 
 - Fill in the fields below and confirm by clicking `OK`{.action}:
-    - **Name**: Select a name
-    - **Driver**: Choose "MySQL Driver"
-    - **URL**: Enter the server address and port as jdbc:mysql://server:port
-    - **User Name**: Enter the username
-    - **password**: Enter the password
+    - **Name**: Select a name.
+    - **Driver**: Choose "MySQL Driver".
+    - **URL**: Enter the server address and port as jdbc:mysql://server:port.
+    - **User Name**: Enter the username.
+    - **Password**: Enter the password.
 
 ![config connection](images/2.png){.thumbnail}
 
@@ -172,11 +172,11 @@ psql --host=server --port=port --user=username --password=password database_name
 ![launch SQuirreL](images/1.png){.thumbnail}
 
 - Fill in the fields below and confirm by clicking `OK`{.action}:
-    - **Name**: Select a name
-    - **Driver**: Choose "PostgreSQL"
-    - **URL**: Enter the server address and port as jdbc:postgresql://server:port/database
-    - **User Name**: Enter the username
-    - **Password**: Enter the password
+    - **Name**: Select a name.
+    - **Driver**: Choose "PostgreSQL".
+    - **URL**: Enter the server address and port as jdbc:postgresql://server:port/database.
+    - **User Name**: Enter the username.
+    - **Password**: Enter the password.
 
 ![config connection](images/2.png){.thumbnail}
 
