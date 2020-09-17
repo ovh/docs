@@ -16,7 +16,6 @@ Para seguir los pasos de esta guía, es necesario:
 - tener una instancia CloudDB;
 - haber consultado [esta guía](../empezar-con-clouddb/).
 
-
 ### Que es una base de datos MySQL
 MySQL es un sistema de gestión de bases de datos relacionales desarrollado para obtener un rendimiento en lectura superior al que ofrecen otros sistemas.
 
@@ -56,7 +55,7 @@ Para conectarse a ella, es necesario disponer de la siguiente información relat
 
 Puede encontrar todos estos datos en el [área de cliente Web](https://www.ovh.com/manager/web/){.external}.
 
-Para más información, puede consultar la guía [](debuter-avec-clouddbguide.es-es.md){.ref}.
+Para más información, puede consultar la guía [Primeros pasos con el servicio Cloud Databases](../starting_with_clouddb/guide.es-es.md){.ref}.
 
 
 ### Conexion en linea de comandos

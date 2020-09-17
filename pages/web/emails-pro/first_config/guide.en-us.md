@@ -15,7 +15,7 @@ You have just purchased a Email Pro solution, which gives you affordable profess
 
 ## Requirements
 
-- an [Email Pro]({ovh_www}/emails/email-pro/){.external} solution
+- an Email Pro solution
 - an email confirming that your Email Pro solution has been set up
 - a domain name
 - access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}

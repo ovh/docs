@@ -62,7 +62,7 @@ Pour créer et déployer votre image, utilisez l'appel suivant et complétez les
 | hostname (ConfigDrive)\* | Le hostname de votre serveur. |
 | sshKey (ConfigDrive)\* | Votre clé SSH publique. |
 | userData (ConfigDrive)\* | Votre script de post-installation. |
-| userMetadatas (ConfigDrive)\* | Meta datas utilisés par Nova au moment du boot. |
+| userMetadatas (ConfigDrive)\* | Meta datas utilisés par CloudInit au moment du boot. |
 | description | Le nom de votre image. |
 | diskGroupId | L'id du disque qui doit être utilisé. |
 | httpHeader | Uniquement si nécessaire pour télécharger l'image. |
