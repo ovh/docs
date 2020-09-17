@@ -71,7 +71,7 @@ Sur une architecture telle que décrite dans le schéma ci-dessous, deux domaine
 | A.B.C.0 | Sous-réseau |
 | A.B.C.1 | Adresse du routeur virtuel OVHcloud (si activé) |
 | A.B.C.2 | Routeur OVHcloud A |
-| A.B.C.1 | Routeur OVHcloud B |
+| A.B.C.3 | Routeur OVHcloud B |
 
 « IP Net B » fait partie du domaine L3 dans le POP. Voici alors les informations requises :
 
@@ -82,9 +82,9 @@ Sur une architecture telle que décrite dans le schéma ci-dessous, deux domaine
 | Adresse IP | Rôle |
 |:-----:|:-----:|
 | A.B.C.0 | Sous-réseau |
-| A.B.C.3 | Routeur OVHcloud |
+| A.B.C.1 | Routeur OVHcloud |
 | A.B.C.2 | Routeur client |
-| A.B.C.1 | Broadcast de sous-réseau |
+| A.B.C.3 | Broadcast de sous-réseau |
 
 #### Configuration VRRP dans le DC/EndPoint
 
