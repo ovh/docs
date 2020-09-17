@@ -9,24 +9,30 @@ section: 'Advanced use'
 
 ## Objective
 
-Enable Intel Software Guard Extensions on your server, to be able to run SGX-ready applications  
-Intel SGX delivers advanced hardware and RAM security encryption features, in order to isolate parts of code and data that are specific to each application
+Enabling Intel Software Guard Extensions (SGX) on your server allows you to run SGX-ready applications. Intel SGX delivers advanced hardware and RAM security encryption features, in order to isolate parts of code and data that are specific to each application.
 
 ## Requirements
 
-- An [infrastructure dedicated server](https://www.ovh.co.uk/dedicated_servers/infra/){.external}, with the [SGX](https://www.ovh.co.uk/dedicated_servers/software-guard-extensions/){.external} option
+- a dedicated server in the [Infrastructure range](https://www.ovh.co.uk/dedicated_servers/infra/) with the [SGX](https://www.ovhcloud.com/en-gb/bare-metal/intel-software-guard-extensions/) option
 - Administrative (root) access to the server via SSH
 - Access to the [OVH API](https://api.ovh.com/console/)
 - Ubuntu 18.04 or similar installed on the server
 
 ## Instructions
 
-### Step 1 - Log into the API console
+### Using the OVHcloud Control Panel
+
+
+
+### Using the OVHcloud APIv6
+
+
+#### Step 1: Log into the API console
 
 Go to <https://api.ovh.com/console/> and click the `Login`{.action} in the top-right corner of the page.  
 On the following page, log in with the credentials of your OVH account.
 
-### Step 2 - Enable SGX
+#### Step 2: Enable SGX
 
 Get the name of your server from the list returned from this call :
 
@@ -66,9 +72,9 @@ You can verify that the status is now enabled :
 
 ![SGX enabled](images/get-enabled.png){.thumbnail}
 
-### Step 3 - Reboot to apply the new BIOS settings
+#### Step 3: Reboot to apply the new BIOS settings
 
-### Step 4 - Install the SGX software stack
+#### Step 4: Install the SGX software stack
 
 Now we will install Intel's driver and SDK to be able to develop and run SGX applications.  
 
@@ -105,9 +111,9 @@ chmod +x sgx_linux_x64_driver_2.5.0_2605efa.bin
 sudo ./sgx_linux_x64_driver_2.5.0_2605efa.bin
 ```
 
-### Step 5 - Reboot to finish the installation
+#### Step 5: Reboot to finish the installation
 
-### Step 6 - Use a sample application to validate the installation
+#### Step 6: Use a sample application to validate the installation
 
 Build one of the sample apps provided :
 
