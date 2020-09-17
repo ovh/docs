@@ -95,23 +95,23 @@ Abra a consola Veeam e conecte-se.
 
 Verifique se está em modo **Free Edition** no canto inferior direito.
 
-![](https://docs.ovh.com/ca/fr/storage/veeam-backup-replication/images/veeamBandR_conf_1.png){.thumbnail}
+![](images/veeamBandR_conf_1.png){.thumbnail}
 
 No menu, clique em `Users and Roles`{.action}.
 
-![](https://docs.ovh.com/ca/fr/storage/veeam-backup-replication/images/veeamBandR_conf_2.png){.thumbnail}
+![](images/veeamBandR_conf_2.png){.thumbnail}
 
 Na janela `Security`{.action}, selecione a opção `Add...`{.action}.
 
-![](https://docs.ovh.com/ca/fr/storage/veeam-backup-replication/images/veeamBandR_conf_3.png){.thumbnail}
+![](images/veeamBandR_conf_3.png){.thumbnail}
 
 Na janela `Add User`{.action}, introduza a conta de serviço criada anteriormente. Selecione o papel **Veeam Backup Administrator** e valide clicando em `OK`{.action}.
 
-![](https://docs.ovh.com/ca/fr/storage/veeam-backup-replication/images/veeamBandR_conf_4.png){.thumbnail}
+![](images/veeamBandR_conf_4.png){.thumbnail}
 
 Ao voltar à janela **Security**, pode verificar se a conta aparece.
 
-![](https://docs.ovh.com/ca/fr/storage/veeam-backup-replication/images/veeamBandR_conf_5.png){.thumbnail}
+![](images/veeamBandR_conf_5.png){.thumbnail}
 
 #### Registar o servidor Veeam Backup & Replication
 
@@ -120,11 +120,11 @@ Ao voltar à janela **Security**, pode verificar se a conta aparece.
 
 A partir da Área de Cliente OVH, abra o universo Cloud e, na secção `Platforms and services`{.action}, selecione o seu serviço **backupserverenterprise**.
 
-![](https://docs.ovh.com/ca/fr/storage/veeam-backup-replication/images/backupEnterpriseServer_manager_01.png){.thumbnail}
+![](images/backupEnterpriseServer_manager_01.png){.thumbnail}
 
 Na página principal do serviço, selecione a opção `Enable the license`{.action}.
 
-![](https://docs.ovh.com/ca/fr/storage/veeam-backup-replication/images/backupEnterpriseServer_manager_02.png){.thumbnail}
+![](images/backupEnterpriseServer_manager_02.png){.thumbnail}
 
 Na nova janela, introduza as seguintes informações:
  * o endereço de IP público através do qual pode comunicar com o servidor **Veeam Backup & Replication**;
@@ -135,7 +135,7 @@ Na nova janela, introduza as seguintes informações:
 Em seguida, confirme clicando em `OK`{.action}.
 Quando a ativação estiver concluída, poderá encontrar as informações principais na página do serviço.
 
-![](https://docs.ovh.com/ca/fr/storage/veeam-backup-replication/images/backupEnterpriseServer_manager_03.png){.thumbnail}
+![](images/backupEnterpriseServer_manager_03.png){.thumbnail}
 
 **Com a API da OVH**
 
@@ -171,15 +171,15 @@ Pode obter da seguinte forma o endereço de IP público utilizado pelo Veeam Ent
 
 Abra a consola Veeam e conecte-se.
 
-![](https://docs.ovh.com/au/en/storage/veeam-backup-replication/images/veeamBandR_use_12.png){.thumbnail}
+![](images/veeamBandR_use_12.png){.thumbnail}
 
 No menu, clique em `License`{.action}.
 
-![](https://docs.ovh.com/au/en/storage/veeam-backup-replication/images/veeamBandR_lic_1.png){.thumbnail}
+![](images/veeamBandR_lic_1.png){.thumbnail}
 
 Verifique que a informação apresentada corresponde à sua licença da OVH.
 
-![](https://docs.ovh.com/au/en/storage/veeam-backup-replication/images/veeamBandR_lic_2.png){.thumbnail}
+![](images/veeamBandR_lic_2.png){.thumbnail}
 
 ## Quer saber mais?
 
