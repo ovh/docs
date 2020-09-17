@@ -34,7 +34,7 @@ If you need further information, you can contact your Account Manager to organis
 
 ### Step 1: Order the OVHcloud Connect cross-connections directly via the OVHcloud website
 
-Visit [**this page**](https://www.ovh.co.uk/solutions/ovhcloud-connect/){.external} and log in using your OVHcloud credentials to order **each connection**. The following features will be offered:
+Visit [**this page**](https://www.ovh.ie/solutions/ovhcloud-connect/){.external} and log in using your OVHcloud credentials to order **each connection**. The following features will be offered:
 
 - The maximum port speed:
     + 1Gbps
@@ -45,7 +45,7 @@ Visit [**this page**](https://www.ovh.co.uk/solutions/ovhcloud-connect/){.extern
     + 2 ports (L2: LACP protocol mandatory, L3: BGP mandatory) to have local redundancy for the PoP
 
 - The OVHcloud Connect PoP:
-    + OVHcloud Connect points of presence are listed [**here**](https://www.ovh.co.uk/solutions/ovhcloud-connect/){.external}, and updated regularly.
+    + OVHcloud Connect points of presence are listed [**here**](https://www.ovh.ie/solutions/ovhcloud-connect/){.external}, and updated regularly.
     + If a connection request is made to a PoP that is unavailable, please contact the Support team or your Account Manager for more information.
 
 - The network level of the OSI connection model: 
