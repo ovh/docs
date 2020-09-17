@@ -30,7 +30,7 @@ Nach einem Fehler auf Ihrer Datenbank müssen Sie in der Lage sein, ein Backup w
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und klicken Sie im Bereich `Web`{.action} links in der Menüleiste auf `Datenbanken`{.action}. Wählen Sie den Datenbanknamen aus und gehen Sie dann auf den Tab `Datenbanken`{.action}.
 
-In der Spalte **Sicherungen** entspricht die Zahl der für Ihre Datenbank verfügbaren Sicherungen.
+In der Spalte **Sicherungen** indiziert die Zahl die für Ihre Datenbank verfügbaren Sicherungen.
 
 #### Eine Sicherung wiederherstellen
 
