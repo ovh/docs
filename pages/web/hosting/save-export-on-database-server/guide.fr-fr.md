@@ -41,13 +41,13 @@ Au niveau de la colonne **« Sauvegardes »**, le chiffre correspond au nombre d
 > - Les sauvegardes automatiques et manuelles sont conservées pendant 30 jours.
 > Passé ce délai, elles seront automatiquement supprimées.
 
-#### 1. Réaliser une sauvegarde manuelle 
+#### 1\. Réaliser une sauvegarde manuelle 
 
 Cliquez sur le bouton `...`{.action} à droite de la base de données, puis sur `Sauvegarder maintenant`{.action}.
 
 ![private-sql](images/private-sql-save01.png){.thumbnail}
 
-#### 2. Exporter une sauvegarde
+#### 2\. Exporter une sauvegarde
 
 Cliquez sur le bouton `...`{.action} à droite de la base de données, puis sur `Afficher les sauvegardes`{.action}
 
@@ -55,13 +55,13 @@ Cliquez sur le bouton `...`{.action} à droite de la base de données, puis sur 
 
 La liste des sauvegardes disponibles apparaît,  cliquez sur le bouton `...`{.action} à droite de la sauvegarde choisie, puis sur `Télécharger la sauvegarde`{.action} pour récupérer cette sauvegarde.
 
-###Sauvegarder et exporter une base de données hors espace client
+### Sauvegarder et exporter une base de données hors espace client
 
-#### 1. Export de base de données MySQL ou MariaDB
+#### 1\. Export de base de données MySQL ou MariaDB
 
  Dans certains cas, il se peut que la RAM disponible sur votre serveur de bases de données ne permette pas de réaliser l'export souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. En effet, celui-ci permettra l'utilisation de ressources externes à votre offre pour réaliser cette opération. Reportez-vous à la section [« Sauvegarder et exporter une base de données depuis l'espace client »](./#sauvegarder-et-exporter-une-base-de-donnees-depuis-lespace-client){.external} de cette documentation.
 
-##### 1.1 Exporter ma base MySQL ou MariaDB depuis phpMyAdmin OVHcloud (uniquement pour l'offre SQL Privé)
+##### 1\.1 Exporter ma base MySQL ou MariaDB depuis phpMyAdmin OVHcloud (uniquement pour l'offre SQL Privé)
 
 Pour exporter votre base de données directement depuis phpMyAdmin, il est nécessaire de vous y connecter au préalable. Vous pouvez pour cela vous aider du guide [« Se connecter a une base de données  »](../connexion-base-de-donnees-serveur-bdd){.external}
 
@@ -71,7 +71,7 @@ Vous avez deux modes d'exportation possibles. Si vous n'avez pas de besoin spéc
 
 ![private-sql](images/private-sql-export01.png){.thumbnail}
 
-##### 1.2 Exporter ma base MySQL ou MariaDB en ligne de commande
+##### 1\.2 Exporter ma base MySQL ou MariaDB en ligne de commande
 
 > [!primary]
 >
@@ -81,7 +81,7 @@ Vous avez deux modes d'exportation possibles. Si vous n'avez pas de besoin spéc
 mysqldump --host=serveur --user=utilisateur --port=port --password=password nom_de_la_base > nom_de_la_base.sql
 ```
 
-##### 1.3 Exporter ma base MySQL ou MariaDB depuis un script PHP
+##### 1\.3 Exporter ma base MySQL ou MariaDB depuis un script PHP
 
 > [!primary]
 >
@@ -101,11 +101,11 @@ mysqldump --host=serveur --user=utilisateur --port=port --password=password nom_
 > - Cette action est possible uniquement depuis un hébergement OVHcloud mutualisé.
 >
 
-#### 2. Export et import de bases de données PostgreSQL hors espace client
+#### 2\. Export et import de bases de données PostgreSQL hors espace client
 
  Dans certains cas, il se peut que la RAM disponible sur votre serveur de bases de données ne permette pas de réaliser l'export souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. En effet, celui-ci permettra l'utilisation de ressources externes à votre offre pour réaliser cette opération. Reportez-vous à la section [« Sauvegarder et exporter une base de données depuis l'espace client »](./#sauvegarder-et-exporter-une-base-de-donnees-depuis-lespace-client){.external} de cette documentation.
  
-##### 2.1 Exporter ma base PostgreSQL en ligne de commande
+##### 2\.1 Exporter ma base PostgreSQL en ligne de commande
 
 > [!primary]
 >
@@ -115,7 +115,7 @@ mysqldump --host=serveur --user=utilisateur --port=port --password=password nom_
 pg_dump --host=serveur --port=port --user=utilisateur --password=password nom_de_la_base > nom_de_la_base.sql
 ```
 
-##### 2.2 Exporter ma base PostgreSQL depuis un script PHP
+##### 2\.2 Exporter ma base PostgreSQL depuis un script PHP
 
 > [!primary]
 >
