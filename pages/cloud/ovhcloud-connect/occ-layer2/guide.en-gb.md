@@ -41,7 +41,7 @@ L2 operates at the Ethernet level. The customer's vRack is extended "as-is" from
 
 The L2 mode is limited to a point-to-point topology: a backup link through a second PoP is not supported.
 
-![L2 Topologies](images/occ-l2-topologies.pnh){.thumbnail}
+![L2 Topologies](images/occ-l2-topologies.png){.thumbnail}
 
 LACP is mandatory for aggregation when 2 links are configured with PoP.
 
