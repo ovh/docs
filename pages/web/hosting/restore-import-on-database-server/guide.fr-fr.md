@@ -122,7 +122,7 @@ cat nom_de_la_base.sql | mysql --host=serveur --user=utilisateur --port=port --p
 
 > [!warning]
 >
-> - Afin d'éviter que quelqu'un accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide : [Comment protéger l’accès a un répertoire par une authentification ?]( ../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}
+> - Afin d'éviter que quelqu'un accède à ce fichier comportant des données sensibles, pensez à sécuriser l'accès à celui-ci en vous aidant du guide : [Comment protéger l’accès a un répertoire par une authentification ?]( ../mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification/){.external}
 > - Cette action est possible uniquement depuis un hébergement OVHcloud mutualisé.
 >
 
