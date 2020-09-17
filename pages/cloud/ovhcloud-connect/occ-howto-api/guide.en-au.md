@@ -17,7 +17,7 @@ Configuring the OVHcloud Connect solution can be done via API.
 ## Requirements
 
 - an [OVHcloud Connect service](https://www.ovh.com.au/solutions/ovhcloud-connect/)
-- access to the [OVHcloud APIv6](https://ca.api.ovh.com/console/){.external} (create your credentials by consulting [this guide](../../api/first-steps-with-ovh-api/)
+- access to the [OVHcloud APIv6](https://ca.api.ovh.com/console/){.external} (create your credentials by consulting [this guide](../../api/first-steps-with-ovh-api/))
 
 ## Instructions
 
