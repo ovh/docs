@@ -14,7 +14,7 @@ section: Primeros pasos
 Para seguir los pasos de esta guía, es necesario:
 
 - tener una instancia CloudDB;
-- haber consultado la guía [](debuter-avec-clouddbguide.es-es.md){.ref}.
+- haber consultado la guía [Primeros pasos con el servicio Cloud Databases](../starting_with_clouddb/guide.es-es.md){.ref}.
 
 
 ### Que es una base de datos MySQL
@@ -56,7 +56,7 @@ Para conectarse a ella, es necesario disponer de la siguiente información relat
 
 Puede encontrar todos estos datos en el [área de cliente Web](https://www.ovh.com/manager/web/){.external}.
 
-Para más información, puede consultar la guía [](debuter-avec-clouddbguide.es-es.md){.ref}.
+Para más información, puede consultar la guía [Primeros pasos con el servicio Cloud Databases](../starting_with_clouddb/guide.es-es.md){.ref}.
 
 
 ### Conexion en linea de comandos

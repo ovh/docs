@@ -41,7 +41,7 @@ De forma a poder ligar-se à base de dados, assegure-se que:
 
 Todas estas informações estão disponíveis no seu [Espaço Cliente Web](https://www.ovh.com/manager/web/){.external}.
 
-Está igualmente disponível um guia : [](debuter-avec-clouddbguide.pt-pt.md){.ref}
+Está igualmente disponível um guia : [CloudDB - primeira utilização](../starting_with_clouddb/guide.pt-pt.md){.ref}
 
 
 ### Ligacao atraves de linha de comandos

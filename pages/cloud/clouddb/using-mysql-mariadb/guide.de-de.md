@@ -13,7 +13,7 @@ Sie möchten mit MySQL oder MariaDB arbeiten? Dann lesen Sie hier, wie Sie Ihre 
 Für dieses Tutorial:
 
 - Benötigen Sie eine CloudDB Instanz
-- Lesen Sie bitte zunächst die Anleitung zu CloudDB: [](debuter-avec-clouddbguide.de-de.md){.ref}
+- Lesen Sie bitte zunächst die Anleitung zu CloudDB: [Erste Schritte mit CloudDB](../starting_with_clouddb/guide.de-de.md){.ref}
 
 
 ### Was ist eine MySQL Datenbank?
@@ -53,7 +53,7 @@ Um sich mit Ihrer Datenbank zu verbinden, benötigen Sie:
 
 Diese Informationen sind über Ihr [Kundencenter](https://www.ovh.com/manager/web/){.external} einsehbar.
 
-Eine Anleitung finden Sie unter: [](debuter-avec-clouddbguide.de-de.md){.ref}
+Eine Anleitung finden Sie unter: [Erste Schritte mit CloudDB](../starting_with_clouddb/guide.de-de.md){.ref}
 
 
 ### Per Kommandozeile verbinden
