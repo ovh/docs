@@ -1,124 +1,133 @@
 ---
-title: Layer 3 Design
+title: Layer 3 mode
 slug: layer3
-excerpt: 'Layer 3 Design - OVHcloud Connect'
+excerpt: 'Details about using Layer 3 (L3) with OVHcloud Connect'
 section: Concepts
+order: 2
 ---
 
-**Last updated 11th May 2020**
+**Last updated 14th September 2020**
 
-## Layer 3 Implementation
+## Objective
 
-OVHcloud Connect configured in Layer 3 differ from Layer 2 as you have to configure L3 Domain on each POP/EntryPoint DC/EndPoint.
+**Learn more about Layer 3 implementation and connection for the OVHcloud Connect solution.**
 
-![L3 Implementation](images/occ-l3-implementation.jpg){.thumbnail}
+## Instructions
 
-A L3 Domain is composed of:
+### Layer 3 implementation
 
-* A subnet
-* A BGP ASN
+OVHcloud Connect configured in Layer 3 differs from Layer 2 as you have to configure the L3 domain on each PoP/EntryPoint and DC/EndPoint.
 
-The L3 Domain is an IP Routing instance provided by OVHcloud. Traffic is forwarded between POP/EntryPoint and DC/Endpoint, not between POP/EntryPoint. There’s no need for internal IP addressing between POP/EntryPoint and DC/EndPoint. In the datacenter, the routing instance inside the L3 Domain is composed of two devices, called ‘A’ and ‘B’.
+![L3 Implementation](images/occ-l3-implementation.png){.thumbnail}
 
-From this principle it’s now possible to manage several OVHcloud Connect:
+A Layer 3 domain is composed of:
 
-![L3 Two POP](images/occ-l3-twopop.jpg){.thumbnail}
+- A subnet
+- A BGP ASN
 
-Now, we are multi-DC capable:
+The L3 domain is an IP routing instance provided by OVHcloud. Traffic is forwarded between PoP/EntryPoint and DC/Endpoint, not between two PoPs/EntryPoints. There is no need for internal IP addressing between PoP/EntryPoint and DC/EndPoint. In the data centre, the routing instance inside the L3 domain is composed of two devices, labelled ‘A’ and ‘B’.
 
-![L3 Multi DC](images/occ-l3-multidc.jpg){.thumbnail}
+Based on this principle it is possible to manage several OVHcloud Connect services. 
 
-These two examples need to order and configure two OVHcloud Connect as one OVHcloud Connect equal to one POP/EntryPoint.
+![L3 Two POP](images/occ-l3-twopop.png){.thumbnail}
 
-Rules:
+As a result, L3 makes it compatible with a multi-DC configuration.
 
-* You can have as many OVHcloud Connect L3 as you want in the same vRack
-* You can associate several EntryPoint/POP with one EndPoint/DC
-* You can associate several Endpoint/DC with one EntryPoint/POP
-* You cannot associate two EntryPoint/POP (i.e you can not forward traffic between them)
-* A L3 Domain can only be associated with one EndPoint/DC
-* A L3 Domain (i.e subnet) cannot be stretched between two DC or two POP
-* An OVHcloud Connect L2 can be mixed with several OVHcloud Connect L3 in the same vRack
+![L3 Multi DC](images/occ-l3-multidc.png){.thumbnail}
 
-![L3 Rules](images/occ-l3-rules.jpg){.thumbnail}
+The two examples above illustrate the configuration of two OVHcloud Connect services, as one OVHcloud Connect equals one PoP/EntryPoint.
 
-The following schema shows the mix of L2 and L3. They can end in the same OVHcloud datacenter or not.
+**Rules:**
 
-![L3 Mix L2](images/occ-l3-mixl2.jpg){.thumbnail}
+- You can have as many OVHcloud Connect L3 as you want in the same vRack.
+- You can associate several PoPs/EntryPoints with one DC/EndPoint.
+- You can associate several DCs/EndPoints with one PoP/EntryPoint.
+- You cannot associate two PoPs/EntryPoints (i.e. you cannot forward traffic between them).
+- One L3 domain can only be associated with one DC/EndPoint.
+- One L3 domain (i.e. subnet) cannot be stretched between two DCs or two PoPs.
+- An OVHcloud Connect L2 can be mixed with several OVHcloud Connect L3 in the same vRack.
 
-## Connection mode details
+![L3 Rules](images/occ-l3-rules.gif){.thumbnail}
 
-![L3 Architecture](images/occ-l3-architecture.jpg){.thumbnail}
+The following schema shows the mix of L2 and L3. They can end in the same OVHcloud data centre or not.
 
-On such architecture, two L3 Domains are needed: POP/EntryPoint and DC/EndPoint.
+![L3 Mix L2](images/occ-l3-mixl2.png){.thumbnail}
 
-"IP Net A" is part of the L3 Domain in DC, needed information:
+### Connection mode details
 
-* IP Addressing plan (subnet and netmask) with a minimum netmask value “/29”
-* The first IP address is reserved for the virtual gateway (if running VRRP)
-* The two following IP addresses are reserved for OVHcloud routing instance
-* All others IP addresses are available to the customer
+![L3 Architecture](images/occ-l3-architecture.png){.thumbnail}
 
-| IP Address | Role |
+On such an architecture, two L3 domains are needed: PoP/EntryPoint and DC/EndPoint.
+
+"IP Net A" is part of the L3 Domain in the DC. The following rules apply:
+
+- IP addressing plan (subnet and netmask) with a minimum netmask of /29.
+- The first IP address is reserved for the virtual gateway (if running VRRP).
+- The two following IP addresses are reserved for the OVHcloud routing instance.
+- All other IP addresses are available to the customer.
+
+| IP address | Role |
 |:-----:|:-----:|
 | A.B.C.0 | Subnet |
-| A.B.C.1 | OVHcloud Virtual Router Address (if enabled) |
-| A.B.C.2 | OVHcloud Router A |
-| A.B.C.3 | OVHcloud Router B |
+| A.B.C.1 | OVHcloud virtual router address (if enabled) |
+| A.B.C.2 | OVHcloud router A |
+| A.B.C.3 | OVHcloud router B |
 
-"IP Net B" is part of the L3 Domain in POP, needed information:
+"IP Net B" is part of the L3 Domain in the PoP. The following rules apply:
 
-* Supported netmask: /30 (CIDR notation)
-* First IP address for OVHcloud Routing instance
-* Second IP address for customer equipment
+- Supported netmask: /30 (CIDR notation).
+- The first IP address is reserved for the OVHcloud routing instance.
+- The second IP address is used for customer equipment.
 
-| IP Address | Role |
+| IP address | Role |
 |:-----:|:-----:|
 | A.B.C.0 | Subnet |
-| A.B.C.1 | OVHcloud Router |
-| A.B.C.2 | Customer Router |
+| A.B.C.1 | OVHcloud router |
+| A.B.C.2 | Customer router |
 | A.B.C.3 | Subnet broadcast |
 
-### VRRP configuration in DC/EndPoint
+#### VRRP configuration in the DC/EndPoint
 
 VRRP allows router redundancy on OVHcloud devices.
 
-* Each EndPoint/DC supports only one VRRP instance,
-* The VRRP VRID value is provided by OVHcloud,
-* By default, VRRP is master on ‘A’ device,
-* Static routes can be configured. 
+- Each DC/EndPoint supports only one VRRP instance.
+- The VRRP VRID value is provided by OVHcloud.
+- By default, VRRP is master on ‘A’ device.
+- Static routes can be configured. 
 
-### BGP configuration
+#### BGP configuration
 
-BGP is mandatory in POP/EntryPoint and optional in DC/EndPoint. Enabling BGP in DC/EndPoint disables VRRP configuration.
+BGP is mandatory in a PoP/EntryPoint and optional in a DC/EndPoint. Enabling BGP in a DC/EndPoint disables VRRP configuration.
 
-* Each EntryPoint/POP and EndPoint/DC need an AS. This AS must be independent from Customer BGP AS to form an eBGP relation.
-Recommended value in the range 64512-65534.
-* Each EntryPoint/POP supports only one BGP session (no eBGP Multihop)
-* With two or more EntryPoint/POP, ECMP is automatically enabled. MED and/or AS-PATH must be tuned to have path selection.
-* Each EndPoint/DC supports up to 4 BGP peers
-* Up to 100 prefixes can be announced per BGP session
-* For each EndPoint/DC, you must establish a BGP session with ‘A’ device and ‘B’ device
-* By default, BFD is activated on all BGP session, this protocol is higly recommended on DC side to have a faster convergence
+- Each PoP/EntryPoint and DC/EndPoint needs an AS. This AS must be independent from the customer BGP AS to form an eBGP relation. The recommended value is in the range 64512-65534.
+- Each PoP/EntryPoint supports only one BGP session (no eBGP Multihop).
+- With two or more PoPs/EntryPoints, ECMP is automatically enabled. MED and/or AS-PATH must be tuned to have path selection.
+- Each DC/EndPoint supports up to 4 BGP peers.
+- Up to 100 prefixes can be announced per BGP session.
+- For each DC/EndPoint you must establish a BGP session with ‘A’ device and ‘B’ device.
+- By default, BFD is activated on all BGP sessions. This protocol is higly recommended on the DC side as well to have a faster convergence.
 
-For example, IP network 'B' will be announced to OVHcloud router through BGP session.
+For example, IP network 'B' will be announced to the OVHcloud router through BGP session.
 
-![L3 BGP vRack](images/occ-l3-bgpvrack.jpg){.thumbnail}
+![L3 BGP vRack](images/occ-l3-bgpvrack.png){.thumbnail}
 
 At a more global level, BGP topology will look like this:
 
-![L3 BGP Global Topology](images/occ-l3-bgpglobal.jpg){.thumbnail}
+![L3 BGP Global Topology](images/occ-l3-bgpglobal.png){.thumbnail}
 
-### BGP path selection
+#### BGP path selection
 
-By default, all available paths are enabled using ECMP, up to 4 paths are supported. So to have an active/passive topology with two POP/EntryPoint, we can use as-path using prepend or MED.
+By default, all available paths are enabled using ECMP, with up to 4 paths supported. To have an active/passive topology with two PoPs/EntryPoints, you can use AS path prepending or MED.
 
-If as-prepend is configured on customer's devices on POP2, topology will look like:
+If AS path prepending is configured on the customer's devices in PoP2, the topology will look like this:
 
-![L3 BGP as-prepend](images/occ-l3-bgpasprepend.jpg){.thumbnail}
+![L3 BGP as-prepend](images/occ-l3-bgpasprepend-med.png){.thumbnail}
 
-Note: as-prepend is not configurable on OVHcloud devices
+Note: AS path prepending is not configurable on OVHcloud devices.
 
-Using MED is another alternative to get the same topology:
+Using MED is an alternative to achieve the same topology.
 
-![L3 BGP MED](images/occ-l3-bgpmed.jpg){.thumbnail}
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

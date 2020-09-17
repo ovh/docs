@@ -1,215 +1,221 @@
 ---
-title: Configuration using API
+title: Configuration of OVHcloud Connect using OVHcloud APIv6
 slug: api
-excerpt: 'Using API - OVHcloud Connect'
-section: How To
+excerpt: 'Find out how to set up OVHcloud Connect using OVHcloud APIv6'
+section: Configuration
+order: 2
 ---
 
-**Last updated 13th May 2020**
+**Last updated 14th September 2020**
 
 ## Objective
 
-We will describe how to proceed with API to configure OVHcloud Connect. 
+Configuring the OVHcloud Connect solution can be done via API.
+
+**Find out how to set up OVHcloud Connect using OVHcloud APIv6.**
 
 ## Requirements
 
-* Being connected on [OVHcloud API](https://api.ovh.com/console){.external}.
-* Having [created your credentials for OVHcloud API](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
+- an [OVHcloud Connect service](https://www.ovh.co.uk/solutions/ovhcloud-connect/)
+- access to the [OVHcloud APIv6](https://api.ovh.com/console){.external} (create your credentials by consulting [this guide]((../../api/first-steps-with-ovh-api/))
 
 ## Instructions
 
-### Vrack insertion
+### Step 1: Configuring vRack
 
-This first step is mandatory: the service must be configured within a vRack to enable the configuration. 
+As a mandatory first step, the service must be interconnected with a vRack to enable the configuration. 
 
-The following call checks that the service is available:
+Verify that the service is available with the following call:
 
 > [!api]
 >
 > @api {GET} /vrack/{serviceName}/ovhCloudConnect
 >
 
-It will return uuid of eligible services.
-Then you can insert OVHcloud Connect in vRack:
+It will return UUIDs of eligible services. Then you can link OVHcloud Connect with the vRack:
 
 > [!api]
 >
 > @api {POST} /vrack/{serviceName}/ovhCloudConnect
 >
 
-uuid of OVHcloud Connect is needed.
+Enter the vRack name as well as the UUID of OVHcloud Connect.
 
-### Configure service
+### Step 2: Configuring the PoP
 
-POP is the second step. It's an important step because you have to choose between L2 and L3. You will have to delete the whole configuration to switch between L2 and L3 so this choice is important.
+This step is important because you have to choose between L2 and L3.
 
-#### Get Interface Id
+> [!warning]
+> Please be aware of the ramifications of this decision. To switch between L2 and L3 later, you will have to delete the whole configuration.
+>
 
-Your service is attached to an interface with an id.
+#### Obtaining the interface ID
+
+Your service is attached to an interface with an ID. Use this call to obtain the ID:
 
 > [!api]
 >
 > @api {GET} /ovhCloudConnect/{serviceName}/interface
 >
 
-This call will return the id of interface dedicated to your service.
+It will return the ID of the interface dedicated to your service.
 
-The following call gives your more details:
+The following call provides more service details:
 
 > [!api]
 >
 > @api {GET} /ovhCloudConnect/{serviceName}/interface/{id}
 >
 
-LightStatus is refreshed every 5 minutes for monitoring purpose.
+The LightStatus parameter is refreshed every 5 minutes for monitoring purposes.
 
-#### Layer 2
+#### Configuration with Layer 2 (L2)
 
-It's the simplest :
-
-> [!api]
->
-> @api {POST} /ovhCloudConnect/{serviceName}/config/pop
->
-
-* InterfaceId
-* Type: 'l2'
-
-#### Layer 3
-
-This one is more complex because of BGP settings:
+This is the simplest configuration. Use this call:
 
 > [!api]
 >
 > @api {POST} /ovhCloudConnect/{serviceName}/config/pop
 >
 
-* InterfaceId
-* Type: 'l3'
-* customerBgpArea: your BGP ASN, the one configured on your device which will be used to peer.
-* ovhBgpArea: BGP ASN to be configured on OVHcloud routing instance. Such ASN will appear in BGP session and as-path.
-* subnet: an /30 IPv4 block  
+- interface ID: enter the ID previously obtained.
+- type: select L2.
 
-### Datacenter Configuration
+#### Configuration with Layer 3 (L3)
 
-This is the third step. If an OVHcloud Connect is already configured in the same vRack, the second service will inherit datacenter configuration.
+This configuration is more complex because of the required BGP settings:
 
-#### Get Available Datacenter
+> [!api]
+>
+> @api {POST} /ovhCloudConnect/{serviceName}/config/pop
+>
 
-You can list available datacenters for configuration using the following calls:
+- interface ID: enter the ID previously obtained.
+- type: select L3.
+- customerBgpArea: your BGP ASN, configured on your device which will be used for peering.
+- ovhBgpArea: BGP ASN to be configured on the OVHcloud routing instance, pertaining to BGP session and AS path.
+- subnet: a /30 IPv4 block.
+
+### Step 3: Data centre (DC) configuration
+
+> [!primary]
+> If an OVHcloud Connect service is already configured in the vRack, the second service will inherit the data centre configuration.
+>
+
+
+#### Obtaining available data centres
+
+You can list available data centres for configuration using the following calls:
 
 > [!api]
 >
 > @api {GET} /ovhCloudConnect/{serviceName}/datacenter
 >
 
-and then
-
 > [!api]
 >
 > @api {GET} /ovhCloudConnect/{serviceName}/datacenter/{id}
 >
 
-to have datacenter name.
 
-#### Layer 2
+#### Configuration with Layer 2 (L2)
 
-L2 is still the simplest because only the id of the datacenter is needed:
-
-> [!api]
->
-> @api {POST} /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter
->
-
-* datacenterId
-
-#### Layer 3
-
-Again, we have more arguments to provide:
+Only the ID of the data centre is needed for the L2 configuration:
 
 > [!api]
 >
 > @api {POST} /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter
 >
 
-* datacenterId
-* ovhBgpArea: like POP, you must assign an ASN for OVHcloud routing instance. It will appear in as-path. It can be different from POP.
-* subnet: an IPv4 block, any size is accepted from /28
+- datacenterId: enter the DC ID previously obtained.
 
-By default, the datacenter will be configured with a VRRP instance. You have to proceed with next steps for static routing or dynamic routing using BGP.
+#### Configuration with Layer 3 (L3)
+
+More parameters have to be provided for the L3 configuration:
+
+> [!api]
+>
+> @api {POST} /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter
+>
+
+- datacenterId: enter the DC ID previously obtained.
+- ovhBgpArea: as with the PoP, you need to assign an ASN for the OVHcloud routing instance. It will appear in AS path. (It can be different from the PoP ASN.)
+- subnet: an IPv4 block, any size is accepted from /28.
+
+By default, the data centre will be configured with a VRRP instance. You have to proceed with the next steps for static routing or dynamic routing using BGP.
 
 #### Layer 3 option: static route
 
-A static route is needed when you have one or more subnets behind a gateway. Such gateway could be a linux (with ip forward enabled), a NSX edge or any routing capable instance.
+A static route is needed when you have one or more subnets behind a gateway. This may be Linux gateway (with IP forwarding enabled), a NSX edge or any instance capable of routing.
 
 > [!api]
 >
 > @api {POST} /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}/extra
 >
 
-* nextHop: IP address in the subnet range acting as gateway
-* subnet: a prefix using the CIDR notation.
-* type: 'network'
+- nextHop: IP address in the subnet range acting as gateway.
+- subnet: a prefix using the CIDR notation.
+- type: 'network'
 
 #### Layer 3 option: BGP session
 
-A BGP session enables dynamic routing from your routing instance with OVHcloud Connect. Announces are dynamically managed using BGP protocol. Enabling a BGP session disables VRRP configuration. You can not have a BGP session and a static route in the same datacenter configuration. 
+A BGP session enables dynamic routing from your routing instance with OVHcloud Connect. Announcements are dynamically managed using the BGP protocol. Enabling a BGP session disables the VRRP configuration. You cannot have a BGP session and a static route in the same DC configuration. 
 
 > [!api]
 >
 > @api {POST} /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}/extra
 >
 
-* bgpNeighborArea: your BGP ASN
-* bgpNeighborIp: your IP address in the subnet range
-* type: 'bgp'
+- bgpNeighborArea: your BGP ASN.
+- bgpNeighborIp: your IP address in the subnet range.
+- type: 'bgp'
 
 
-### Remove
+### Removing resources
 
-Each resource can be deleted individually, but deleting a parent resource like DC or POP will delete automatically all sub-resources. However, recursive deletion is slower than sequential deletion of each resource.
+Each resource can be deleted individually, but deleting a parent resource like DC or PoP will automatically delete all sub-resources. However, recursive deletion is slower than a sequential deletion of each resource.
 
 #### Global deletion
 
-The following call recursively deletes all the configuration of an OVHcloud Connect.
+The following call recursively deletes the entire configuration of an OVHcloud Connect service:
 
 > [!api]
 >
 > @api {DELETE} /ovhCloudConnect/{serviceName}/config/pop/{popId} 
 >
 
-Each sub-resource's status will change from 'active' to 'toDelete' but it takes time to see status change.
+Each sub-resource's status will change from 'active' to 'toDelete' but it takes some time to see the status change.
 
-Only one taskid is created.
+Only one task ID is created.
 
-#### Delete by resource
+#### Deleting by resource
 
-Each resource can be deleted individually by using DELETE 
+Each resource can be deleted individually using the following call that will delete the smallest resource (extra):
 
 > [!api]
 >
 > @api {DELETE} /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}/extra/{extraId} 
 >
 
-Extra Configuration is the smallest resource without any child.
+The following call removes the DC configuration and recursively deletes any additional sub-resources:
 
 > [!api]
 >
 > @api {DELETE} /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}
 >
 
-If Extra Configuration is present, it will be deleted recursively.
+When all sub-resources have been deleted, the PoP configuration can be safely removed:
 
 > [!api]
 >
 > @api {DELETE} /ovhCloudConnect/{serviceName}/config/pop/{popId} 
 >
 
-When all children have been deleted, POP can be deleted safely.
 
-#### Adherences
+> [!primary]
+> If a DC configuration is shared between two or more OVHcloud Connect services, deleting the PoP configuration of only one will not affect the DC ressource. 
+>
 
-If a DC configuration is shared between two or more OVHcloud Connect, deleting POP configuration of only one OVHcloud Connect will not affect DC ressource. 
 
 ## Go further
 
