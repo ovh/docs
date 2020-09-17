@@ -18,7 +18,7 @@ order: 2
 
 OVHcloud Connect configured in Layer 3 differs from Layer 2 as you have to configure the L3 domain on each PoP/EntryPoint and DC/EndPoint.
 
-![L3 Implementation](images/occ-l3-implementation.jpg){.thumbnail}
+![L3 Implementation](images/occ-l3-implementation.png){.thumbnail}
 
 A Layer 3 domain is composed of:
 
@@ -27,13 +27,13 @@ A Layer 3 domain is composed of:
 
 The L3 domain is an IP routing instance provided by OVHcloud. Traffic is forwarded between PoP/EntryPoint and DC/Endpoint, not between two PoPs/EntryPoints. There is no need for internal IP addressing between PoP/EntryPoint and DC/EndPoint. In the data centre, the routing instance inside the L3 domain is composed of two devices, labelled ‘A’ and ‘B’.
 
-Based on this principle it is possible to manage several OVHcloud Connect services.
+Based on this principle it is possible to manage several OVHcloud Connect services. 
 
-![L3 Two POP](images/occ-l3-twopop.jpg){.thumbnail}
+![L3 Two POP](images/occ-l3-twopop.png){.thumbnail}
 
-As a result, L3 makes is compatible with a multi-DC configuration.
+As a result, L3 makes it compatible with a multi-DC configuration.
 
-![L3 Multi DC](images/occ-l3-multidc.jpg){.thumbnail}
+![L3 Multi DC](images/occ-l3-multidc.png){.thumbnail}
 
 The two examples above illustrate the configuration of two OVHcloud Connect services, as one OVHcloud Connect equals one PoP/EntryPoint.
 
@@ -47,15 +47,15 @@ The two examples above illustrate the configuration of two OVHcloud Connect serv
 - One L3 domain (i.e. subnet) cannot be stretched between two DCs or two PoPs.
 - An OVHcloud Connect L2 can be mixed with several OVHcloud Connect L3 in the same vRack.
 
-![L3 Rules](images/occ-l3-rules.jpg){.thumbnail}
+![L3 Rules](images/occ-l3-rules.gif){.thumbnail}
 
 The following schema shows the mix of L2 and L3. They can end in the same OVHcloud data centre or not.
 
-![L3 Mix L2](images/occ-l3-mixl2.jpg){.thumbnail}
+![L3 Mix L2](images/occ-l3-mixl2.png){.thumbnail}
 
 ### Connection mode details
 
-![L3 Architecture](images/occ-l3-architecture.jpg){.thumbnail}
+![L3 Architecture](images/occ-l3-architecture.png){.thumbnail}
 
 On such an architecture, two L3 domains are needed: PoP/EntryPoint and DC/EndPoint.
 
@@ -109,11 +109,11 @@ BGP is mandatory in a PoP/EntryPoint and optional in a DC/EndPoint. Enabling BGP
 
 For example, IP network 'B' will be announced to the OVHcloud router through BGP session.
 
-![L3 BGP vRack](images/occ-l3-bgpvrack.jpg){.thumbnail}
+![L3 BGP vRack](images/occ-l3-bgpvrack.png){.thumbnail}
 
 At a more global level, BGP topology will look like this:
 
-![L3 BGP Global Topology](images/occ-l3-bgpglobal.jpg){.thumbnail}
+![L3 BGP Global Topology](images/occ-l3-bgpglobal.png){.thumbnail}
 
 #### BGP path selection
 
@@ -121,13 +121,12 @@ By default, all available paths are enabled using ECMP, with up to 4 paths suppo
 
 If AS path prepending is configured on the customer's devices in PoP2, the topology will look like this:
 
-![L3 BGP as-prepend](images/occ-l3-bgpasprepend.jpg){.thumbnail}
+![L3 BGP as-prepend](images/occ-l3-bgpasprepend-med.png){.thumbnail}
 
 Note: AS path prepending is not configurable on OVHcloud devices.
 
-Using MED is an alternative to achieve the same topology, like this:
+Using MED is an alternative to achieve the same topology.
 
-![L3 BGP MED](images/occ-l3-bgpmed.jpg){.thumbnail}
 
 ## Go further
 
