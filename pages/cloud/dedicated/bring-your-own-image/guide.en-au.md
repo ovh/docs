@@ -61,7 +61,7 @@ To deploy your image, use the following API call and complete the required field
 | hostname (ConfigDrive)\* | Your server's hostname. |
 | sshKey (ConfigDrive)\* | Your public SSH key. |
 | userData (ConfigDrive)\* | Your post-install script. |
-| userMetadatas (ConfigDrive)\* | Meta data used by Nova when booting. |
+| userMetadatas (ConfigDrive)\* | Meta data used by CloudInit when booting. |
 | description | Your image's name. |
 | diskGroupId | The disk ID on which you want to install your image. |
 | httpHeader | Only if necessary to download your image. |
