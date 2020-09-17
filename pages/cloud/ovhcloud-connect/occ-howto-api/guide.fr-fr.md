@@ -37,7 +37,7 @@ Il retournera l'uuid des services OVHcloud Connect admissibles.
 
 Vous pouvez ensuite associer le service OVHcloud Connect à un vRack admissible via l'appel suivant :
 
->  [!api]
+> [!api]
 >
 > @api {POST} /vrack/{serviceName}/ovhCloudConnect
 >
@@ -56,14 +56,14 @@ C'est une étape importante car vous devez choisir entre L2 et L3.
 
 Votre service est connecté à une interface avec un ID. Utilisez l'appel suivant pour obtenir cet ID :
 
->  [!api]
+> [!api]
 >
 > @api {GET} /ovhCloudConnect/{serviceName}/interface
 >
 
 Une fois l'ID obtenu, vous pouvez utiliser l'appel suivant pour obtenir plus de détails :
 
->  [!api]
+> [!api]
 >
 > @api {GET} /ovhCloudConnect/{serviceName}/interface/{id}
 >
@@ -74,7 +74,7 @@ Le paramètre LightStatus est actualisé toutes les 5 minutes à des fins de sur
 
 Il s'agit de la configuration la plus simple. Utilisez l'appel suivant :
 
->  [!api]
+> [!api]
 >
 > @api {POST} /ovhCloudConnect/{serviceName}/config/pop
 >
@@ -88,7 +88,7 @@ Renseignez uniquement les informations suivantes :
 
 Cette configuration est plus complexe en raison des paramètres BGP à renseigner :
 
->  [!api]
+> [!api]
 >
 > @api {POST} /ovhCloudConnect/{serviceName}/config/pop
 >
@@ -111,7 +111,7 @@ Renseignez les informations suivantes :
 
 Vous pouvez répertorier les Datacentres disponibles pour la configuration à l'aide de l'appel suivant :
 
->  [!api]
+> [!api]
 >
 > @api {GET} /ovhCloudConnect/{serviceName}/datacenter
 >
@@ -127,7 +127,7 @@ L'appel suivant vous retourne le nom du Datacentre :
 
 La configuration en L2 reste la plus simple car seul l'ID du centre de données est nécessaire :
 
->  [!api]
+> [!api]
 >
 > @api {POST} /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter
 >
@@ -138,7 +138,7 @@ La configuration en L2 reste la plus simple car seul l'ID du centre de données 
 
 La configuration en L3 nécessite là aussi d'autres informations à renseigner :
 
->  [!api]
+> [!api]
 >
 > @api {POST} /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter
 >
@@ -153,7 +153,7 @@ Par défaut, le Datacentre est configuré avec une instance VRRP. Vous devez pas
 
 Une route statique est nécessaire lorsque vous avez un ou plusieurs sous-réseaux derrière une passerelle. Une telle passerelle peut être un Linux (avec IP forward activé), un NSX edge ou toute instance de routage compatible.
 
->  [!api]
+> [!api]
 >
 > @api {POST} /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}/extra
 >
@@ -170,7 +170,7 @@ Une session BGP active le routage dynamique à partir de votre instance de routa
 > Vous ne pouvez pas combiner une session BGP et un itinéraire statique dans la même configuration de Datacentre. 
 >
 
->  [!api]
+> [!api]
 >
 > @api {POST} /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}/extra
 >
@@ -190,7 +190,7 @@ La suppression récursive est plus lente que la suppression séquentielle de cha
 
 L'appel suivant supprime récursivement toute la configuration d'un service OVHcloud Connect.
 
->  [!api]
+> [!api]
 >
 > @api {DELETE} /ovhCloudConnect/{serviceName}/config/pop/{popId} 
 >
@@ -203,7 +203,7 @@ Un seul identifiant de tâche est créé.
 
 Chaque ressource peut être supprimée individuellement à l'aide de l'appel suivant qui va supprimer la plus petite ressource (extra) :
 
->  [!api]
+> [!api]
 >
 > @api {DELETE} /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}/extra/{extraId} 
 >
@@ -217,7 +217,7 @@ L'appel suivant supprime la configuration DC ainsi que toute sous-ressource supp
 
 Lorsque toutes les sous-ressources ont été supprimées, la configuration POP peut être supprimée en toute sécurité.
 
->  [!api]
+> [!api]
 >
 > @api {DELETE} /ovhCloudConnect/{serviceName}/config/pop/{popId} 
 >
