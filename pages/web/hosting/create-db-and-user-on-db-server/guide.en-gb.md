@@ -30,7 +30,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 Fill in the fields by following the criteria listed. You can create a user directly by ticking the **Create User** box.
 
 - **Database name** (obligatory): this will be your database’s name.
-- This is name of the user that can log in to your database and perform requests (optional if the **Create User** box has not been ticked).
+- **Username**: This is name of the user that can log in to your database and perform requests (optional if the **Create User** box has not been ticked).
 - **Rights** (optional if the box is unticked): the permissions that will be associated with the user on the database. For standard usage, select `Administrator`{.action}. The permissions can be modified as follows.
 - **Password**/**Confirm password** (optional if the box is unticked): enter a password, then confirm it.
 
