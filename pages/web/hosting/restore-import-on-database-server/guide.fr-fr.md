@@ -32,7 +32,7 @@ Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action
 
 Au niveau de la colonne **« Sauvegardes »**, le chiffre correspond au nombre de sauvegardes disponibles pour votre base de données.
 
-#### 1. Restaurer une sauvegarde existante
+#### 1\. Restaurer une sauvegarde existante
 
 Cliquez sur le bouton `...`{.action} à droite de la base de données, puis sur `Afficher les sauvegardes`{.action}.
 
@@ -46,7 +46,7 @@ La liste des sauvegardes disponibles apparaît, cliquez sur le bouton `...`{.act
 > Si vous n'êtes pas sûr de ce que vous faites, nous vous invitons à effectuer une sauvegarde auparavant.
 > 
 
-#### 2. Importer une sauvegarde locale
+#### 2\. Importer une sauvegarde locale
 
 Cliquez sur le bouton `...`{.action} à droite de la base de données, puis sur `Importer un fichier`{.action}.
 
@@ -54,7 +54,7 @@ Cliquez sur le bouton `...`{.action} à droite de la base de données, puis sur 
 
 ***Vous avez deux possibilités :***
 
-#####  2.2 Importer un nouveau fichier
+##### 2\.1 Importer un nouveau fichier
 
 Cliquez ensuite sur **« Importer un nouveau fichier »**, puis sur `Suivant`{.action}.
 
@@ -69,7 +69,7 @@ Indiquez un nom pour votre fichier importé, cliquez sur `Parcourir`{.action} po
 
 Cochez, si vous le désirez, **« Vider la base de données actuelle »** avant l'import, et **« Envoyer un e-mail à la fin de l'import »**  pour être informé de la fin de l'opération sur l'adresse e-mail de référence de votre compte OVHcloud, puis cliquez sur `Valider`{.action}.
 
-##### 2.2 Utiliser un fichier existant
+##### 2\.2 Utiliser un fichier existant
 
 Si vous aviez déjà importé un fichier auparavant, il est possible de choisir l'option **« Importer un fichier existant »** .
 
@@ -85,7 +85,7 @@ Dans certains cas, il se peut que la RAM disponible dans votre serveur de bases 
 
 
 #### Importer ma base MySQL ou MariaDB depuis phpMyAdmin
-Pour importer votre base de données directement depuis phpMyAdmin, il est nécessaire de vous y connecter au préalable, vous pouvez pour cela vous aider du paragraphe [« Se connecter a une base de données MySQL ou MariaDB »](../tout-sur-le-sql-prive/#se-connecter-a-une-base-de-donnees-mysql-ou-mariadb){.external}
+Pour importer votre base de données directement depuis phpMyAdmin, il est nécessaire de vous y connecter au préalable, vous pouvez pour cela vous aider du paragraphe [« Se connecter a une base de données MySQL ou MariaDB »](../connexion-base-de-donnees-serveur-bdd/#se-connecter-a-une-base-de-données-mysql-ou-mariadb){.external}
 
 Une fois connecté sur phpMyAdmin, sélectionnez votre base de données en cliquant sur son nom.
 
@@ -126,7 +126,7 @@ cat nom_de_la_base.sql | mysql --host=serveur --user=utilisateur --port=port --p
 > - Cette action est possible uniquement depuis un hébergement OVHcloud mutualisé.
 >
 
-### import de bases de données PostgreSQL hors espace client
+### Importer une base de données PostgreSQL hors espace client
 
 Dans certains cas, il se peut que la RAM disponible dans votre serveur de bases de données ne permette pas de réaliser l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. Reportez-vous à la section [« Restaurer et importer une base de données depuis l'espace client »](./#sauvegarde-restauration-et-importation-depuis-lespace-client_1){.external} de cette documentation.
 
