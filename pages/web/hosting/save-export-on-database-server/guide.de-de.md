@@ -56,7 +56,7 @@ Die Liste der verfügbaren Backups erscheint. Klicken Sie auf `...`{.action} rec
 
 #### 1\. Export von MySQL oder MariaDB Datenbanken
 
-In manchen Fällen kann es sein, dass der auf Ihrem Datenbankserver verfügbare RAM nicht ausreicht, um den gewünschten Export durchzuführen. Ist das der Fall, empfehlen wir Ihnen, das [Tool von OVHcloud im Kundencenter zu verwenden](./#datenbank-uber-das-kundencenter-sichern-und-exportieren_1).
+In manchen Fällen kann es sein, dass der auf Ihrem Datenbankserver verfügbare RAM nicht ausreicht, um den gewünschten Export durchzuführen. Ist das der Fall, empfehlen wir Ihnen, das [Tool von OVHcloud im Kundencenter zu verwenden](./#datenbank-uber-das-kundencenter-sichern-und-exportieren).
 
 ##### 1\.1 MySQL oder MariaDB Datenbank über OVHcloud phpMyAdmin exportieren (nur SQL Private)
 
@@ -100,7 +100,7 @@ mysqldump --host=server --user=benutzername --port=port --password=passwort date
 
 #### 2\. Export und Import von PostgreSQL-Datenbanken außerhalb des Kundencenters
 
-In manchen Fällen kann es sein, dass der auf Ihrem Datenbankserver verfügbare RAM nicht ausreicht, um den gewünschten Export durchzuführen. Ist das der Fall, empfehlen wir Ihnen, das [Tool von OVHcloud im Kundencenter zu verwenden](./#datenbank-uber-das-kundencenter-sichern-und-exportieren_1).
+In manchen Fällen kann es sein, dass der auf Ihrem Datenbankserver verfügbare RAM nicht ausreicht, um den gewünschten Export durchzuführen. Ist das der Fall, empfehlen wir Ihnen, das [Tool von OVHcloud im Kundencenter zu verwenden](./#datenbank-uber-das-kundencenter-sichern-und-exportieren).
  
 ##### 2\.1 PostgreSQL Datenbank über die Kommandozeile exportieren
 
@@ -133,6 +133,6 @@ pg_dump --host=server --port=port --user=benutzername --password=passwort datenb
 
 ## Weiterführende Informationen
 
-[Datenbank auf Ihrem Datenbankserver wiederherstellen und importieren](./#datenbank-importieren)
+[Datenbank auf Ihrem Datenbankserver wiederherstellen und importieren](../datenbank-importieren)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
