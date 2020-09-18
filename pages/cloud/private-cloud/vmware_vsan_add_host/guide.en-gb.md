@@ -25,24 +25,24 @@ Once connected to vCenter, go to the `Hosts and Clusters`{.action} menu, select 
 
 In the `Disk Groups`{.action} table, select the new ESXi server and ensure that no disk is assigned to the vSAN datastore (the `Disks in Use` column should be 0 of X).
 
-![](images/01.png){.thumbnail}
+![disk management](images/01.png){.thumbnail}
 
-Click on the icon with a green `+`{.action}. In the Create Disk Group window select the cache disk and capacitive disk(s) and click `OK`{.action}.
+Click on the icon with a green `+`{.action}. In the `Create Disk Group` window, select the cache disk and capacity disk(s) and click `OK`{.action}.
 
 > [!primary]
 >
-> Please refer to the server hardware configuration to determine which disks are for cache or capactiy.
+> Please refer to the server hardware configuration to determine which disks are for cache or capacity.
 >
 
-![](images/02.png){.thumbnail}
+![disk group](images/02.png){.thumbnail}
 
 You can track the progress of the disk group creation task in the `Recent Tasks` window.
 
-![](images/03.png){.thumbnail}
+![recent tasks](images/03.png){.thumbnail}
 
 Once the task is complete, the `Disks in Use` column should indicate that all disks on the server are integrated into the cluster.
 
-![](images/04.png){.thumbnail}
+![disk cluster](images/04.png){.thumbnail}
 
 The ESXi server is now fully integrated into the vSAN cluster, and its disks are usable by the datastore.
 
