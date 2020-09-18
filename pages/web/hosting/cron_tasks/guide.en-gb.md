@@ -6,13 +6,13 @@ legacy_guide_number: g1990
 section: 'Automated tasks (CRON)'
 ---
 
-**Last updated 10th September 2020**
+**Last updated 20th September 2020**
 
 ## Objective
 
-On OVHcloud Web Hostings, you an use scripts to automate certain operations. Creating a scheduled task ("cron job") is the easiest way to ensure your scripts are running at specific times without further actions necessary on your part. 
+On OVHcloud Web Hostings, you can use scripts to automate certain operations. Creating a scheduled task ("cron job") is the easiest way to ensure your scripts are running at specific times without further actions necessary on your part. 
 
-**This guide explains how to create cron jobs to automate scheduled tasks on a Web Hosting. **
+**This guide explains how to create cron jobs to automate scheduled tasks on a Web Hosting.**
 
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
@@ -100,12 +100,13 @@ The task will be ready within a few minutes. You can then modify all of its sett
 |Running time|The time limit for a task is 60 minutes. If a script exceeds this running time, it will be stopped automatically by the system.|
 |Variables|You can only define variables in a script. Adding them to the URL calling the script will not work (Example: www/jobs/cron.php?variable=value).|
 |Data limit|A task can only generate up to 5 MB of data (*stdin/stderr*). For example, if a script writes data into a .txt file, the execution will be stopped automatically once the file reaches 5 MB in size.|
-|Scripts producing errors|If a script is faulty, it will be automatically disabled after 10 failed execution attempts.|
+|Scripts producing errors|If a script is faulty, it will be automatically disabled after 10 failed execution attempts. Simply re-activate it in the Control Panel. (Click on `...`{.action}, then on `Edit`{.action}.)|
 |Execution reports|Reports will be sent to your selected email address only once a day (during night hours).|
 
 
-
 ### Troubleshooting
+
+#### Testing your script with a web browser
 
 Test how your automated task will run with a web browser
 
@@ -114,107 +115,55 @@ For example, if your Cron is in the www/cron.php directory and your domain name 
 In order to optimise the test, your version of PHP should be the same as the one you provided when creating your automated task.
 If you have an error, you have to correct your script. If no error has been detected, we suggest that you check the logs linked to the execution of your Cron jobs.
 
+#### Verifying the usage of absolute paths
 
-To make sure that your Cron job works, you have to use absolute paths in your script not relative paths.
-To get the address of the current path you can use the "_DIR_" constant:  
-[PHP documentation](http://php.net/manual/en/language.constants.predefined.php)
+Always make sure to use absolute paths to files in your scripts. The "_DIR_" constant can help to receive the current path in PHP scripts ([PHP documentation](http://php.net/manual/en/language.constants.predefined.php)).
+ 
+#### Checking your execution logs
 
+In your Web Hosting's logs, accessible from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), you will see the log category labelled "cron".
 
-If the script used by your Cron task uses other scripts, you must use an absolute path for this to work. The absolute path for your hosting begins with:
+Please refer to [this guide](../shared_view_my_websites_logs_and_statistics/) for details.
 
-```
-/home/loginFTP/
-```
+##### **Example logs**
 
-
-Exitcode 0  OK
-
-Exitcode 255  Error
-
-
-
-
-### Example logs
-
-Correct script execution:
+- Example of a successfully finished execution output
 
 ```
-# OVH ## START - 2014-12-23 15:34:12.680711 executing: /homez.600/loginftp/test/run.sh
-I am the client and I'm printing stuff with this nice 'echo' feature.
-
-# OVH ## END - 2014-12-23 15:34:13.056472 exitcode: 0
+[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.0/bin/php /homez.161/myftpusername/www/myscript.sh
+[2020-08-11 00:36:01] 
+[2020-08-11 00:36:01] ## OVH ## END - 2020-08-10 22:39:44.086166 exitcode: 0
 ```
 
-Execution script error because the file could not be found:
+- Example of a failed execution output due to exceeded execution time
 
 ```
-# OVH ## START - 2014-12-23 15:36:16.206693 executing: /homez.600/loginftp/test/idontexist.sh
-# OVH ## ERROR command '/homez.600/loginftp/test/idontexist.sh' not found
+[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.0/bin/php /homez.161/myftpusername/www/sleep.sh
 
-# OVH ## END - 2014-12-23 15:36:16.546574 exitcode: 255
+[2020-08-11 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
+[2020-08-11 01:36:01] ## OVH ## END - 2020-08-11 01:36:01.086166 exitcode: 0
 ```
 
-Script execution error following timeout:
+- Example of a failed execution output because the script file was not found in the specified path
 
 ```
-# OVH ## START - 2014-12-23 16:05:52.233058 executing: /homez.600/loginftp/test/sleep.sh
-tuesday 23 december 2014, 16:05:52 (UTC+0100)
-Now sleeping 9000 sec
+[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.0/bin/php /homez.161/myftpusername/www/noscript.sh
 
-# OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
-# OVH ## END - 2014-12-23 17:05:54.690413 exitcode: 0
+[2020-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
+[2020-08-11 00:36:01] ## OVH ## END - 2020-08-11 00:36:01.086166 exitcode: 255
 ```
 
-Script execution error following excessive data output:
+- Example of a failed execution output because of a permissions error (chmod) or incorrect configuration of the .ovhconfig file
 
 ```
-# OVH ## START - 2014-12-23 15:43:27.606083 executing: /homez.600/loginftp/test/echoer.sh
-[...a lot of logs here...]
-# OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: cron output (9288634 bytes) exceeds maximum permitted (5242880 bytes)
-# OVH ## END - 2014-12-23 15:43:50.999934 exitcode: 255
-```
-
-Script execution error because of a permissions error (chmod) or incorrect configuration of the .ovhconfig file:
-
-```
-[2015-01-08 18:07:10]
-[2015-01-08 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason. Please contact customer support for more information.
-[2015-01-08 18:07:10] ## OVH ## END - 2015-01-08 18:07:10.969840 exitcode: 255
+[2020-08-11 18:07:10]
+[2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason. Please contact customer support for more information.
+[2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
 ```
 
 
 ## Go further
 
+[Using SSH on a Web Hosting](../web_hosting_ssh_on_web_hosting_packages/)
+
 Join our community of users on <https://community.ovh.com/en/>.
-
-
-## View execution logs for your automated task
-Select your platform under hosting in the left-hand column then click "More +".
-
-![](images/4012.png){.thumbnail}
-Then click on the link to access "Logs" and statistics.
-
-![](images/4013.png){.thumbnail}
-If your automated tasks were executed over the day, you can view the execution logs in the OVH Speed Log (1).
-
--> If your task was executed over 24 hours ago, select the log file for the month that you wish to view.
-
-![](images/3274.png){.thumbnail}
-Example execution logs for an automated task:
-
-
-```
-[2015-06-04 10:39:03] ## OVH ## START - 2015-06-04 10:39:03.700912 executing: /usr/local/php5.6/bin/php /homez.600/loginftp/www/cron.php
-[2015-06-04 10:39:03] Could not open input file: /homez.600/loginftp/www/cron.php
-[2015-06-04 10:39:03]
-[2015-06-04 10:39:03] ## OVH ## END - 2015-06-04 10:39:03.762685 exitcode: 1
-```
-
-
-In this case, the following line from the log demonstrates that my automated task has not run correctly because the path to the script is incorrect or does not exist:
-
-
-```
-Could not open input file: /homez.600/loginftp/www/cron.php
-```
-
