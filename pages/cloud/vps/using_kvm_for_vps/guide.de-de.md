@@ -18,7 +18,7 @@ Die KVM-Konsole ermöglicht eine direkte Verbindung zu Ihrem VPS, ohne externe S
 - Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
 
-## Praktische Anwendung
+## In der praktischen Anwendung
 
 ### Verbindung zu KVM über das OVHcloud Kundencenter
 
