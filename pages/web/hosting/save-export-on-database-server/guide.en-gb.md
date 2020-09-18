@@ -58,7 +58,7 @@ The list of available backups will appear. Click on the `...`{.action} button to
 
 #### 1\. Exporting MySQL or MariaDB databases
 
-In some cases, the RAM available in your database server may not be sufficient to perform the desired import. If this is the case, we recommend using the [tool available in the OVHcloud Control Panel](./#backing-up-and-exporting-a-database-from-the-control-panel_1). This will enable you to use resources external to your solution.
+In some cases, the RAM available in your database server may not be sufficient to perform the desired import. If this is the case, we recommend using the [tool available in the OVHcloud Control Panel](./#backing-up-and-exporting-a-database-from-the-control-panel). This will enable you to use resources external to your solution.
 
 ##### 1\.1 Exporting a MySQL or MariaDB database with OVHcloud phpMyAdmin (for Private SQL only)
 
@@ -74,7 +74,7 @@ You have two possible export modes. If you do not have a specific need, we recom
 
 > [!primary]
 >
-> For a Private SQL server, this action is only possible with [SSH]( ../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external} from an OVHcloud Web Hosting plan.
+> For a Private SQL server, this action is only possible via [SSH](../web_hosting_ssh_on_web_hosting_packages/) from an OVHcloud Web Hosting plan.
 
 ```bash
 mysqldump --host=server --user=username --port=port --password=password database_name > database_name.sql
@@ -84,7 +84,7 @@ mysqldump --host=server --user=username --port=port --password=password database
 
 > [!primary]
 >
-> For a Private SQL server, this action is only possible via [SSH](../web_hosting_ssh_on_web_hosting_packages/) from an OVHcloud Web Hosting plan.
+> For a Private SQL server, you can only run this script from an OVHcloud Web Hosting plan.
 
 
 ```php
@@ -102,7 +102,7 @@ mysqldump --host=server --user=username --port=port --password=password database
 
 #### 2\. Exporting and importing PostgreSQL databases outside the Control Panel
 
-In some cases, the RAM available in your database server may not be sufficient to perform the desired import. If this is the case, we recommend using the [tool available in the OVHcloud Control Panel](./#backing-up-and-exporting-a-database-from-the-control-panel_1). This will enable you to use resources external to your solution.
+In some cases, the RAM available in your database server may not be sufficient to perform the desired import. If this is the case, we recommend using the [tool available in the OVHcloud Control Panel](./#backing-up-and-exporting-a-database-from-the-control-panel). This will enable you to use resources external to your solution.
  
 ##### 2\.1 Exporting my PostgreSQL database from the command line
 

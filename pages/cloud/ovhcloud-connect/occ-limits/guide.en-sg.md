@@ -21,7 +21,7 @@ order: 1
 - Jumbo frame up to 9000 bytes
 - Autonegotiation not supported
 
-### Unsupported ceatures
+### Unsupported features
 
 #### Layer 2 mode
 

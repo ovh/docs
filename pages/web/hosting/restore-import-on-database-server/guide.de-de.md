@@ -81,7 +81,7 @@ Haken Sie, wenn Sie möchten, **Aktuelle Datenbank leeren** und **E-Mail am Ende
 
 ### MySQL oder MariaDB Datenbank-Import außerhalb des Kundencenters
 
-In manchen Fällen kann es sein, dass der auf Ihrem Datenbankserver verfügbare RAM nicht ausreicht, um den gewünschten Import durchzuführen. Ist das der Fall, empfehlen wir Ihnen, das [Tool von OVHcloud im Kundencenter zu verwenden](./#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren_1).
+In manchen Fällen kann es sein, dass der auf Ihrem Datenbankserver verfügbare RAM nicht ausreicht, um den gewünschten Import durchzuführen. Ist das der Fall, empfehlen wir Ihnen, das [Tool von OVHcloud im Kundencenter zu verwenden](./#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren).
 
 #### MySQL oder MariaDB Datenbank über phpMyAdmin importieren
 
@@ -128,7 +128,7 @@ cat datenbankname.sql | mysql --host=server --user=benutzername --port=port --pa
 
 ### Import von PostgreSQL Datenbanken außerhalb des Kundencenters
 
-In manchen Fällen kann es sein, dass der auf Ihrem Datenbankserver verfügbare RAM nicht ausreicht, um den gewünschten Import durchzuführen. Ist das der Fall, empfehlen wir Ihnen, das [Tool von OVHcloud im Kundencenter zu verwenden](./#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren_1).
+In manchen Fällen kann es sein, dass der auf Ihrem Datenbankserver verfügbare RAM nicht ausreicht, um den gewünschten Import durchzuführen. Ist das der Fall, empfehlen wir Ihnen, das [Tool von OVHcloud im Kundencenter zu verwenden](./#datenbank-uber-das-kundencenter-wiederherstellen-und-importieren).
 
 #### PostgreSQL Datenbank über die Kommandozeile importieren
 

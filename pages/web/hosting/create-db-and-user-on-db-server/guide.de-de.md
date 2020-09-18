@@ -54,7 +54,7 @@ Um einem Benutzer die Durchführung von Aktionen auf einer Datenbank zu ermögli
 
 Um die Rechte jedes Benutzers zu verwalten, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und klicken Sie im Bereich `Web`{.action} links in der Menüleiste auf `Datenbanken`{.action}. Wählen Sie den Datenbanknamen aus und wechseln Sie zum Tab `Benutzer und Rechte`{.action}.
 
-Klicken Sie auf die Schaltfläche `(...)`{.action} rechts neben dem jeweiligen Benutzer, dann auf `Rechte verwalten`{.action}.
+Klicken Sie auf die Schaltfläche `...`{.action} rechts neben dem jeweiligen Benutzer, dann auf `Rechte verwalten`{.action}.
 
 ![private-sql](images/private-sql-rights01.png){.thumbnail}
 
