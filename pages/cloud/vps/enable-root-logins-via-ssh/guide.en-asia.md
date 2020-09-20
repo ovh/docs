@@ -72,7 +72,7 @@ PermitRootLogin yes
 
 Save the file
 
-### Restart the sshd
+### Restart the SSH service
 
 ```sh
 ~# systemctl restart ssh
