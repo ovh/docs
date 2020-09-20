@@ -1,7 +1,7 @@
 ---
-title: How to enable logins with the root user via SSH
-excerpt: Find out to configure SSH to allow root logins.)
-slug: enable-root-login)
+title: 'How to enable logins with the root user via SSH'
+excerpt: 'Find out to configure SSH to allow root logins'
+slug: enable-root-login
 section: Tutorials
 ---
 
@@ -51,6 +51,7 @@ passwd: password updated successfully
 You will need to configure the SSH service to allow root logins.
 
 > [!warning]
+>
 > Enabling root logins is not recommended as it will open your server to brute force attacks.
 > We recommend taking measures to secure your VPS first. You can refer to our guide on [Securing a VPS](../tips-for-securing-a-vps/){.external}
 >
