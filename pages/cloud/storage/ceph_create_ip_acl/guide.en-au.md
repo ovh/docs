@@ -14,7 +14,9 @@ section: Cloud Disk Array
 > Using web interface is the easiest way to create an IP ACL.
 > 
 
-First, connect to the [Ceph as a Service manager](https://www.ovh.com/manager/sunrise/caas/index.html#/caas){.external}. On the bottom right, you will find the existing ACL. By default there is no ACL.
+First, connect to the [manager](https://ca.ovh.com/manager/dedicated/#/configuration){.external} and under Platforms and services you'll fine the Ceph service.
+
+Here you will find the existing ACL, by default there is no ACL.
 
 
 ![Ceph pools](images/create_an_ip_acl_1.png){.thumbnail}

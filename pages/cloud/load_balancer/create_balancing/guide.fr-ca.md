@@ -23,7 +23,7 @@ Le nouveau service OVH Load Balancer offre différents types de répartition de 
 
 La répartition de charge est utilisée dans les fermes de serveurs. C'est ce paramètre qui définit la manière dont les requêtes sont réparties entre les serveurs de la ferme.
 
-Pour connaître les différentes parties élémentaires du service OVH Load Balancer, voir [Présentation Load Balancer](https://docs.ovh.com/fr/load-balancer/iplb-presentation/){.external}.
+Pour connaître les différentes parties élémentaires du service OVH Load Balancer, voir [Présentation Load Balancer](https://docs.ovh.com/ca/fr/load-balancer/iplb-presentation/){.external}.
 
 |Algorithme|Fonctionnalités|
 |---|---|
