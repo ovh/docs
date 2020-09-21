@@ -14,7 +14,7 @@ Ce guide a pour but de vous aider lors de la première prise en main de votre R�
 ## Prérequis
 
 - Avoir accès à votre espace client
-- Avoir commandé un [Répartiteur de charge](https://www.ovh.com/ca/fr/solutions/load-balancer/)
+- Avoir commandé un [Répartiteur de charge](https://www.ovh.com/fr/solutions/load-balancer)
 
 ## En pratique
 
@@ -22,7 +22,7 @@ Ce guide a pour but de vous aider lors de la première prise en main de votre R�
 
 Pour gérer votre Répartiteur de charge via l'espace client, rendez-vous dans la partie `Cloud`{.action} (1) puis dans la partie `Répartiteur de charge`{.action} (2) du menu de gauche. La page principale du service apparaîtra ensuite:
 
-![Répartiteur de charge](images/lbip-main.png){.thumbnail}
+![Répartiteur de charge](images/lb_main_page.png){.thumbnail}
 
 Sur cette page principale, vous trouverez les informations suivantes:
 
@@ -44,7 +44,7 @@ Pour ajouter un `serveur frontal`{.action} ou des `fermes de serveurs`{.action},
 Afin d'ajouter des serveurs frontaux, il vous suffit de vous rendre dans la partie `Serveurs frontaux`{.action} et de cliquer sur `Ajouter un serveur frontal`{.action}. Vous aurez alors accès au menu suivant:
 
 
-![Ajouter un serveur frontal](images/iplb-add-front-end.png){.thumbnail}
+![Ajouter un serveur frontal](images/add_frontend.png){.thumbnail}
 
 Détails des éléments d'un serveur frontal:
 
@@ -73,7 +73,7 @@ Vous avez également accès à des paramètres avancés:
 
 Afin d'ajouter une ferme de serveurs, il vous suffit de vous rendre dans la partie `Fermes de serveurs`{.action} et de cliquer sur `Ajouter une ferme de serveurs`{.action}. Vous accéderez aux mêmes options principales que pour le serveur frontal. Les options avancées seront par contre différentes:
 
-![Ajout d'une ferme](images/iplb-cluster-adv.png){.thumbnail}
+![Ajout d'une ferme](images/advanced_cluster.png){.thumbnail}
 
 |Élément|Fonction|
 |---|---|
@@ -87,9 +87,8 @@ Afin d'ajouter une ferme de serveurs, il vous suffit de vous rendre dans la part
 Une fois votre ferme de serveurs créée il vous reste à y ajouter des serveurs. Ci-essous le détail des options ainsi que des options avancées:
 
 
-![Ajout de serveur](images/iplb-cluster-add-server.png){.thumbnail}
-![Ajout de serveur](images/iplb-cluster-add-server-1.png){.thumbnail}
-![Ajout de serveur](images/iplb-cluster-add-server-2.png){.thumbnail}
+![Ajout de serveur](images/add_server.png){.thumbnail}
+![Ajout de serveur](images/add_server_advanced.png){.thumbnail}
 
 
 |Élément|Fonction|
@@ -114,19 +113,20 @@ Il est possible d'ajouter un SSL au Répartiteur de charge dans la section `Cert
 Pour commander un certificat SSL il suffit d'aller dans la section `Certificat SSL`{.action} puis de cliquer sur `Commander un certificat SSL`{.action} et de vous laisser guider:
 
 
-![Commande d'un certificat SSL](images/iplb-order-ssl.png){.thumbnail}
+![Commande d'un certificat SSL](images/ordering_ssl.png){.thumbnail}
 
 
 |Élément|Fonction|
 |---|---|
-|Type de certificat|Gratuit (Let's Encrypt), Comodo DV ou Comodo EV (détails à cette adresse: https://www.ovh.com/ca/fr/hebergement-web/ssl_mutualise.xml)|
+|Nom|Si vous le souhaitez, vous pouvez nommer votre certificat, très utile quand vous en avez plusieurs afin de les identifier rapidement|
+|Type de certificat|Gratuit (Let's Encrypt), Comodo DV ou Comodo EV (détails à cette adresse: https://www.ovh.com/fr/ssl)|
 |Fully Qualified Domain Name (FQDN)|Le(s) domaine(s) concerné(s)|
 
 #### Ajout d'un certificat SSL externe
 
 Si vous possédez déjà votre propre certificat SSL, il vous est possible de l'ajouter directement:
 
-![Ajout d'un certificat SSL](images/iplb-add-ssl.png){.thumbnail}
+![Ajout d'un certificat SSL](images/external_ssl.png){.thumbnail}
 
 |Élément|Fonction|
 |---|---|

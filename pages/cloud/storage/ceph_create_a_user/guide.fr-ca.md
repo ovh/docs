@@ -1,53 +1,51 @@
 ---
-title: Création d'utilisateurs
+title: User creation
 slug: ceph/creer-un-utilisateur
 excerpt: Ce qui vous présente comment créer un nouvel utilisateur.
 section: Cloud Disk Array
 ---
 
 
-## Utiliser l'interface web
+## Using web interface
 
 
 > [!primary]
 >
-> L'utilisation d'une interface web est le moyen le plus simple de créer un utilisateur.
+> Using web interface is the easiest way to create a user.
 > 
 
-Tout d'abord, connectez-vous au [l’espace client].(https://ca.ovh.com/manager/dedicated/#/configuration){.external} et dans la rubrique Plates-formes et services vous trouverez le service Ceph. 
-
-Dans l'onglet "Utilisateurs", vous trouverez la liste des **utilisateurs**. Aucun utilisateur n'est créé par défaut (sauf *admin* que vous ne pouvez pas utiliser et qui est caché).
+First, connect to the [Cloud Disk Array manager](https://www.ovh.com/manager/cloud/index.html){.external}. Under 'Platforms and services' select your Ceph cluster. On the bottom left, you will find the **user list**. No user is created by default (except *admin* that you can't use and that is hidden).
 
 
 ![Ceph users](images/create_a_user_1.png){.thumbnail}
 
-Entrez un nom d'utilisateur.
+Enter a username.
 
 
 
 > [!warning]
 >
-> Votre nom d'utilisateur doit comporter au moins trois caractères.
+> Your username needs at least three characters.
 > 
 
 
 ![Ceph user creation](images/create_a_user_2.png){.thumbnail}
 
-Après la création de l'utilisateur, vous revenez au gestionnaire. Vous pouvez voir que le statut du cluster a changé parce que l'utilisateur est en cours de création.
+After user creation, you are back to manager. You can see that cluster status has changed because the user is being created.
 
 
 ![Ceph user creation](images/create_a_user_3.png){.thumbnail}
 
 
-## Utiliser l'API
+## Using API
 
 > [!api]
 >
 > @api {POST} /dedicated/ceph/{serviceName}/user
 > 
-serviceName est le fsid de votre cluster.
+serviceName is the fsid of your cluster.
 
-Vous pouvez vérifier la création des utilisateurs en dressant une liste des utilisateurs.
+You can check user creation by listing users.
 
 
 ```bash

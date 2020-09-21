@@ -1,33 +1,33 @@
 ---
-title: Modifier les droits des utilisateurs
+title: Change user rights
 slug: ceph/changer-droits-utilisateurs
 excerpt: Ce guide vous explique comment changer les droits utilisateur CEPH sur l'interface Web
 section: Cloud Disk Array
 ---
 
 
-## Utilisation de l'interface web
-L'utilisation d'une interface web est le moyen le plus simple de modifier les droits des utilisateurs.
+## Using web interface
+Using web interface is the easiest way to change user rights.
 
-Vous devez d'abord sélectionner votre utilisateur.
+You must first select your user.
 
 
 ![Ceph users](images/change_user_rights_1.png){.thumbnail}
 
-Il énumérera les droits actuels, par défaut il n'y a pas de droits.
+It will list current rights, by default there is no rights.
 
 
 ![Ceph pool creation](images/change_user_rights_2.png){.thumbnail}
 
-Choisissons quelques droits pour notre utilisateur.
+Let's chose some rights for our user.
 
 
 ![Ceph pool creation](images/change_user_rights_3.png){.thumbnail}
 
-Comme d'habitude, le statut du cluster et la liste des tâches changent.
+As usual cluster status and task list changes.
 
 
-## Utiliser l'API
+## Using API
 
 > [!api]
 >
@@ -38,7 +38,7 @@ Comme d'habitude, le statut du cluster et la liste des tâches changent.
 >
 > @api {GET} /dedicated/ceph/{serviceName}/user
 > 
-Exemple de résultat:
+Result example:
 
 
 ```bash

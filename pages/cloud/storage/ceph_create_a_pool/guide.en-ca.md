@@ -14,22 +14,25 @@ section: Cloud Disk Array
 > Using web interface is the easiest way to create a pool.
 > 
 
-First, connect to the [manager](https://ca.ovh.com/manager/dedicated/#/configuration){.external} and under Platforms and services you'll fine the Ceph service. 
+First, connect to the [Cloud Disk Array manager](https://www.ovh.com/manager/cloud/index.html){.external}. Under 'Platforms and services' select your Ceph cluster.
 
-In the tab 'Pools' and then on the bottom right, you will find the existing pools.
+On the bottom right, you will find the existing pools. Pool rbd is created by default and can be use without issue.
 
 
-![Ceph pools](images/ceph-add-pool-1.png){.thumbnail}
+![Ceph pools](images/create_a_pool_1.png){.thumbnail}
 
 Enter a poolname, your pool needs at least three characters.
 
 
-![Ceph pool creation](images/ceph-add-pool-2.png){.thumbnail}
+![Ceph pool creation](images/create_a_pool_2.png){.thumbnail}
 
 After pool creation you are back to manager, you can see that cluster status has changed because the pool is being created.
 
 
-![Ceph pool creation](images/ceph-task-1.png){.thumbnail}
+![Ceph pool creation](images/create_a_pool_3.png){.thumbnail}
+
+
+![Ceph pool creation](images/create_a_pool_4.png){.thumbnail}
 
 
 ## Using API

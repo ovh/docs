@@ -1,27 +1,25 @@
 ---
-title: Création d'un LCA IP 
+title: IP ACL creation
 slug: ceph/creer-ip-acl
-excerpt: Ce qui vous présente comment créer une LCA IP pour autoriser l'accès au cluster CEPH.
+excerpt: Ce qui vous présente comment créer une IP ACL pour autoriser l'accès au cluster CEPH.
 section: Cloud Disk Array
 ---
 
 
-## Utiliser l'interface web
+## Using web interface
 
 
 > [!primary]
 >
-> L'utilisation d'une interface web est le moyen le plus simple de créer un IP LCAs.
+> Using web interface is the easiest way to create an IP ACL.
 > 
 
-Tout d'abord, connectez-vous au [l’espace client].(https://ca.ovh.com/manager/dedicated/#/configuration){.external} et dans la rubrique Plates-formes et services vous trouverez le service Ceph.
-
-Vous trouverez ici la LCA existante, par défaut il n'y a pas de LCA.
+First, connect to the [Cloud Disk Array manager](https://www.ovh.com/manager/cloud/index.html){.external}. Under 'Platforms and services' select your Ceph cluster. On the bottom right, you will find the existing ACL. By default there is no ACL.
 
 
 ![Ceph pools](images/create_an_ip_acl_1.png){.thumbnail}
 
-Obtenir votre adresse IP.
+Get your ip address.
 
 
 ```bash
@@ -31,25 +29,25 @@ admin@server:~$ ip -4 a
       valid_lft forever preferred_lft forever
 ```
 
-Ajouter votre IP.
+Add your IP.
 
 
 ![Ceph pools](images/create_an_ip_acl_2.png){.thumbnail}
 
-Et créer l'IP ACL.
+And create the IP ACL.
 
-Après la création de la pool d'adresses IP, vous êtes de retour au gestionnaire. Vous pouvez voir que le statut du pool a changé car la LCA est en cours de création.
+After the pool creation, you are back to manager. You can see that cluster status has changed because the ACL is being created.
 
 
-## Utiliser l'API
+## Using API
 
 > [!api]
 >
 > @api {POST} /dedicated/ceph/{serviceName}/acl
 > 
-serviceName est le fsid de votre cluster.
+serviceName is the fsid of your cluster.
 
-Vous pouvez vérifier la création d'une LCA en consultant la liste des LCA.
+You can check ACL creation by listing ACL.
 
 
 > [!api]

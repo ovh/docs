@@ -9,20 +9,20 @@ section: Cloud Disk Array
 ## Using web interface
 Using web interface is the easiest way to change user rights.
 
-You must first select the action icon to the right of the user.
+You must first select your user.
 
 
-![Ceph users](images/ceph-user-edit-1.png){.thumbnail}
+![Ceph users](images/change_user_rights_1.png){.thumbnail}
 
 It will list current rights, by default there is no rights.
 
 
-![Ceph pool creation](images/ceph-user-edit-2.png){.thumbnail}
+![Ceph pool creation](images/change_user_rights_2.png){.thumbnail}
 
 Let's chose some rights for our user.
 
 
-![Ceph pool creation](images/ceph-user-edit-3.png){.thumbnail}
+![Ceph pool creation](images/change_user_rights_3.png){.thumbnail}
 
 As usual cluster status and task list changes.
 
