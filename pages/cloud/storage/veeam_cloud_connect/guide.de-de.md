@@ -5,7 +5,7 @@ excerpt: Einführung zu Veeam Cloud Connect
 section: Veeam
 ---
 
-**Stand 10.09.2020**
+**Letzte Aktualisierung am 21.09.2020**
 
 ## Ziel
 
@@ -45,19 +45,19 @@ Wechseln Sie in Ihrem OVHcloud Kundencenter in den Bereich "Server" und dann zu 
 
 ![Veeam Cloud Connect](images/veeam-cloud-connect-manager-start1.png){.thumbnail}
 
-Klicken Sie auf Ihren neuen Dienst, um den Tab `Home` anzuzeigen, wo einige allgemeine Informationen angezeigt werden.
+Klicken Sie auf Ihren neuen Dienst, um den Tab `Start` anzuzeigen, wo einige allgemeine Informationen angezeigt werden.
 
 ![Veeam Cloud Connect](images/veeam-cloud-connect-manager1.png){.thumbnail}
 
-Im zweiten Tab, `Storage space`, finden Sie den Namen, den belegten Speicherplatz, die Nutzungsquote und das Rechenzentrum für die Replikation Ihres Speichers.
+Im zweiten Tab, `Storage`, finden Sie den Namen, den belegten Speicherplatz, die Nutzungsquote und das Rechenzentrum für die Replikation Ihres Storage.
 
 ![Veeam Cloud Connect](images/veeam-cloud-connect-manager-espace1.png){.thumbnail}
 
-Über den `...`{.action} Button können Sie die Quote für Ihren Speicherplatz ändern.
+Über den Button `...`{.action} können Sie die Quote für Ihren Speicherplatz ändern.
 
 ![Veeam Cloud Connect](images/veeam-cloud-connect-manager-modif-espace1.png){.thumbnail}
 
-Definieren Sie das neue Kontingent und klicken Sie auf `Edit`{.action}, um zu bestätigen.
+Definieren Sie das neue Kontingent und klicken Sie auf `Bearbeiten`{.action}, um zu bestätigen.
 
 ![Veeam Cloud Connect](images/veeam-cloud-connect-manager-modif-espace-ok1.png){.thumbnail}
 
