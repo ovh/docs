@@ -6,27 +6,27 @@ section: Cloud Disk Array
 ---
 
 
-## Utiliser l'interface web
+## Using web interface
 
 
 > [!primary]
 >
-> L'utilisation d'une interface web est le moyen le plus simple de créer un pool.
+> Using web interface is the easiest way to create a pool.
 > 
 
-Tout d'abord, connectez-vous au [l’espace client].(https://ca.ovh.com/manager/dedicated/#/configuration){.external} et dans la rubrique Plates-formes et services vous trouverez le service Ceph. 
+First, connect to the [Cloud Disk Array manager](https://www.ovh.com/manager/cloud/index.html){.external}. Under 'Platforms and services' select your Ceph cluster.
 
-Dans l'onglet "Pools" et ensuite en bas à droite, vous trouverez les pools existants
+On the bottom right, you will find the existing pools. Pool rbd is created by default and can be use without issue.
 
 
 ![Ceph pools](images/create_a_pool_1.png){.thumbnail}
 
-Entrez un nom de pool, votre pool doit comporter au moins trois caractères.
+Enter a poolname, your pool needs at least three characters.
 
 
 ![Ceph pool creation](images/create_a_pool_2.png){.thumbnail}
 
-Après la création du pool, vous revenez au gestionnaire, vous pouvez voir que le statut du cluster a changé car le pool est en cours de création.
+After pool creation you are back to manager, you can see that cluster status has changed because the pool is being created.
 
 
 ![Ceph pool creation](images/create_a_pool_3.png){.thumbnail}
@@ -35,22 +35,22 @@ Après la création du pool, vous revenez au gestionnaire, vous pouvez voir que 
 ![Ceph pool creation](images/create_a_pool_4.png){.thumbnail}
 
 
-## Utiliser l'API
+## Using API
 
 > [!api]
 >
 > @api {POST} /dedicated/ceph/{serviceName}/pool
 > 
-serviceName est le fsid de votre cluster.
+serviceName is the fsid of your cluster.
 
-Vous pouvez vérifier la création d'un pool en consultant la liste des pools.
+You can check pool creation by listing pools.
 
 
 > [!api]
 >
 > @api {GET} /dedicated/ceph/{serviceName}/pool
 > 
-Par example:
+For example:
 
 
 ```bash
