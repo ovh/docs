@@ -25,7 +25,7 @@ El nuevo Load Balancer de OVH ofrece distintos tipos de balanceo de la carga de 
 
 En las granjas de servidores, el balanceo de carga determina la forma en la que las peticiones se distribuirán entre los distintos servidores de la granja.
 
-Para conocer las principales características del Load Balancer de OVH, consulte la [guía de presentación del servicio](https://docs.ovh.com/es/load-balancer/presentacion-load-balancer/){.external}.
+Para conocer las principales características del Load Balancer de OVH, consulte la [guía de presentación del servicio](https://docs.ovh.com/us/es/load-balancer/presentacion-load-balancer/){.external}.
 
 |Algoritmo|Funcionalidades|
 |---|---|
