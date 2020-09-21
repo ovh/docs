@@ -117,7 +117,6 @@ Status   Name               DisplayName
 Running  QEMU-GA            QEMU Guest Agent
 ```
 
-
 ## Más información
 
 [Usar copias de seguridad automatizadas en un servidor virtual privado (VPS)](../usar-copias-de-seguridad-automatizadas-en-un-vps/)
