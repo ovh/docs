@@ -12,9 +12,9 @@ order: 10
 
 Aktionen in Ihrer Infrastruktur können mithilfe des vSphere SDK automatisiert werden.
 
-**In dieser Anleitung erkö, wie Sie das vSphere SDK in verschiedenen Programmiersprachen einrichten und verwenden.**
+**Diese Anleitung erklärt, wie Sie das vSphere SDK in verschiedenen Programmiersprachen einrichten und verwenden.**
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Python
 
@@ -22,7 +22,7 @@ Aktionen in Ihrer Infrastruktur können mithilfe des vSphere SDK automatisiert w
 
 ##### Betriebssystem
 
-Wir verwenden hier eine auf Debian 9 installierte VM, die mithilfe der [für Ihre Private Cloud bereitgestellten Templates](https://docs.ovh.com/gb/en/private-cloud/deploy-ovh-template/) deployt wurde.
+Dieses Beispiel verwendet eine auf Debian 9 installierte VM, die mithilfe der [für Ihre Private Cloud bereitgestellten Templates](https://docs.ovh.com/gb/en/private-cloud/deploy-ovh-template/) deployt wurde.
 
 ##### Voraussetzungen
 
@@ -50,15 +50,15 @@ Im vorliegenden Beispiel handelt es sich um folgenden Befehl:
 pip install --upgrade --force-reinstall -r requirements.txt --extra-index-url file:///root/vsphere-automation-sdk-python/lib
 ```
 
-Das SDK ist hiermit installiert und wir können erste Skripte ausführen.
+Sobald das SDK installiert ist, können Sie Skripte verwenden.
 
 
-#### Skriptbeispiel:
+#### Skriptbeispiel
 
 
 ##### Verbindung
 
-In diesem ersten Beispiel testen wir Login und Logout von vCenter. Hierbei können wir auch überprüfen, ob alles korrekt installiert ist: 
+Dieses Beispiel testet Login und Logout von vCenter. Hierbei können Sie auch überprüfen, ob alles korrekt installiert ist:
 
 ```python
 #!/usr/bin/env python
@@ -91,7 +91,7 @@ vconnect()
 
 ##### VMs einer Private Cloud auflisten
 
-In diesem Beispiel werden wir alle VMs in der Private Cloud auflisten:
+In diesem Beispiel werden alle VMs in der Private Cloud aufgelistet:
 
 ```python
 #!/usr/bin/env python
@@ -149,12 +149,10 @@ Folgende Pakete müssen installiert werden:
 
 ```
 apt-get install lib32z1 lib32ncurses5 uuid uuid-dev libssl-dev perl-doc libxml-libxml-perl libcrypt-ssleay-perl libsoap-lite-perl libdata-compare-perl libmodule-build-perl libuuid-perl libsocket6-perl libnet-inet6glue-perl libarchive-zip-perl
-
 ```
 
 ```
 cpan install Crypt::OpenSSL::RSA UUID::Random Exception::Class Crypt::X509 List::MoreUtils
-
 ```
 
 ##### vSphere SDK
@@ -163,9 +161,9 @@ Laden Sie das vSphere SDK über folgenden Link herunter:
 
 [https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67](https://my.vmware.com/group/vmware/get-download?downloadGroup=VS-PERL-SDK67)
 
-Laden Sie die mit Ihrem Betriebssystem kompatible Version herunter.
+Stellen Sie sicher, dass es sich um die mit Ihrem Betriebssystem kompatible Version handelt.
 
-Im vorliegenden Beispiel laden wir „VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz“ herunter.
+In diesem Beispiel ist die heruntergeladene Datei: „VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz“
 
 Extrahieren Sie die soeben heruntergeladene Datei mit folgendem Befehl:
 
@@ -173,30 +171,27 @@ Extrahieren Sie die soeben heruntergeladene Datei mit folgendem Befehl:
 tar –zxvf VMware-vSphere-Perl-SDK-6.7.0-8156551.x86_64.tar.gz
 ```
 
-Starten Sie den Installer mit folgendem Befehl: 
+Starten Sie den Installer mit den folgenden Befehlen: 
 
 ```
 cd vmware-vsphere-cli-distrib
 ```
 
-Dann: 
-
 ```
 ./vmware-install.pl
 ```
 
-Wenn Sie die Bedingungen gelesen haben, akzeptieren Sie diese und klicken Sie auf `Enter`{.action}.
+Wenn Sie die Bedingungen gelesen haben, akzeptieren Sie diese und drücken Sie auf `Enter`{.action}.
 
-Nach der Installation werden weitere Module installiert. Klicken Sie auf `Enter`{.action}, um die Installation fortzusetzen.
+Nach der Installation werden weitere Module installiert. Drücken Sie auf `Enter`{.action}, um die Installation fortzusetzen.
 
 Um die Installation abzuschließen, muss ein Verzeichnis ausgewählt werden, in dem das SDK installiert wird. Standardmäßig ist dieses Verzeichnis „/usr/bin“.
 
-#### Skriptbeispiel:
-
+#### Skriptbeispiel
 
 ##### Verbindung
 
-In diesem ersten Beispiel testen wir Login und Logout von vCenter. Hierbei können wir auch überprüfen, ob alles korrekt installiert ist: 
+Dieses Beispiel testet Login und Logout von vCenter. Hierbei können Sie auch überprüfen, ob alles korrekt installiert ist:
 
 ```perl
 #!/usr/bin/perl
@@ -219,7 +214,7 @@ print "Disconnected \n";
 
 ##### VMs einer Private Cloud auflisten
 
-In diesem Beispiel werden wir alle VMs in der Private Cloud auflisten:
+Dieses Beispiel listet alle VMs einer Private Cloud Infrastruktur auf:
 
 ```perl
 #!/usr/bin/perl
@@ -251,7 +246,7 @@ print "Disconnected \n";
 
 ##### Samples verwenden
 
-Im vorliegenden Beispiel verwenden wir ein bereits erstelltes Skript aus dem Verzeichnis „vmware-vsphere-cli-distrib/apps/vm/“.
+Im vorliegenden Beispiel wird ein bereits erstelltes Skript aus dem Verzeichnis „vmware-vsphere-cli-distrib/apps/vm/“ aufgerufen.
 
 Hier ist die Liste der Skripte, die bereits in diesem Verzeichnis verfügbar sind:
 
@@ -259,9 +254,8 @@ Hier ist die Liste der Skripte, die bereits in diesem Verzeichnis verfügbar sin
 ls vmware-vsphere-cli-distrib/apps/vm/
 guestinfo.pl  sharesmanager.pl  snapshotmanager.pl  vdiskcreate.pl  vmclone.pl  vmcontrol.pl  vmcreate.pl  vminfo.pl  vmmigrate.pl  vmreconfig.pl  vmregister.pl  vmsnapshot.pl  vmtemplate.pl
 ```
-Wir werden einen Snapshot „test“ auf der VM „Debian1“ erstellen.
 
-Geben Sie hierzu folgenden Befehl ein:
+Um einen Snapshot "test" der VM "Debian1" zu erstellen, verwenden Sie diesen Befehl (vorher die Platzhalter mit Ihren Anmeldeinformationen ersetzen):
 
 ```
 perl snapshotmanager.pl --server pcc-149-202-xxx-xxx.ovh.com --username damien --password MyPassword --operation create --vmname Debian1 --snapshotname test
