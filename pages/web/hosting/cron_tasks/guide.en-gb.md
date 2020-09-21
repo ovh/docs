@@ -56,19 +56,6 @@ Click on `Next`{.action} to proceed to the second step.
 
 The interface offers two modes to configure the frequency of your task. Use the **Basic mode** for a beginner-friendly selection of scheduling options. If you prefer to directly enter a frequency, similar to a cron table format (*crontab*), choose the **Advanced mode**.
 
-> [!faq]
->
-> Basic mode
->> Use the drop-down menus to specify the time of day, days of a month, week days and months for the task.
-![cron frequency](images/cron-jobs-3.png){.thumbnail}
-
-> [!faq]
->
-> Advanced mode
->> Enter numeric values as you would in a *crontab*. The asterisk operator denotes "every value" of the time period, meaning the task would continuously run **once an hour every day** in this example.
-![cron frequency](images/cron-jobs-4.png){.thumbnail}
-
-
 |Basic mode|
 |---|
 |Use the drop-down menus to specify the time of day, days of a month, week days and months for the task.|
@@ -108,16 +95,11 @@ The task will be ready within a few minutes. You can then modify all of its sett
 
 #### Testing your script with a web browser
 
-Test how your automated task will run with a web browser
-
-You can test your script directly from your internet browser to see if this is causing an error. 
-For example, if your Cron is in the www/cron.php directory and your domain name is test.com, you would type the URL http://test.com/cron.php.
-In order to optimise the test, your version of PHP should be the same as the one you provided when creating your automated task.
-If you have an error, you have to correct your script. If no error has been detected, we suggest that you check the logs linked to the execution of your Cron jobs.
+A simple test to see if your script will produce an error is to run it in a web browser. For example, if the file path of your script is "www/cron.php" and your hosting domain is "mypersonaldomain.ovh", you would use the URL "http://mypersonaldomain.ovh/cron.php". If no error is showing up but the script is not performing as expected, follow up with the suggestions below.
 
 #### Verifying the usage of absolute paths
 
-Always make sure to use absolute paths to files in your scripts. The "_DIR_" constant can help to receive the current path in PHP scripts ([PHP documentation](http://php.net/manual/en/language.constants.predefined.php)).
+Always make sure to use absolute paths to files in your scripts. The "DIR" constant, for example, can help to receive the current path in PHP scripts ([PHP documentation](http://php.net/manual/en/language.constants.predefined.php)).
  
 #### Checking your execution logs
 
@@ -130,7 +112,7 @@ Please refer to [this guide](../shared_view_my_websites_logs_and_statistics/) fo
 - Example of a successfully finished execution output
 
 ```
-[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.0/bin/php /homez.161/myftpusername/www/myscript.sh
+[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
 [2020-08-11 00:36:01] 
 [2020-08-11 00:36:01] ## OVH ## END - 2020-08-10 22:39:44.086166 exitcode: 0
 ```
@@ -138,7 +120,7 @@ Please refer to [this guide](../shared_view_my_websites_logs_and_statistics/) fo
 - Example of a failed execution output due to exceeded execution time
 
 ```
-[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.0/bin/php /homez.161/myftpusername/www/sleep.sh
+[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
 
 [2020-08-11 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
 [2020-08-11 01:36:01] ## OVH ## END - 2020-08-11 01:36:01.086166 exitcode: 0
@@ -147,7 +129,7 @@ Please refer to [this guide](../shared_view_my_websites_logs_and_statistics/) fo
 - Example of a failed execution output because the script file was not found in the specified path
 
 ```
-[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.0/bin/php /homez.161/myftpusername/www/noscript.sh
+[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
 
 [2020-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
 [2020-08-11 00:36:01] ## OVH ## END - 2020-08-11 00:36:01.086166 exitcode: 255
@@ -157,13 +139,15 @@ Please refer to [this guide](../shared_view_my_websites_logs_and_statistics/) fo
 
 ```
 [2020-08-11 18:07:10]
-[2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason. Please contact customer support for more information.
+[2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
 [2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
 ```
 
 
 ## Go further
 
-[Using SSH on a Web Hosting](../web_hosting_ssh_on_web_hosting_packages/)
+[Configuring the .ovhconfig file of your Web Hosting plan](../configuring-file-ovhconfig/)
+
+[Using SSH on a Web Hosting plan](../web_hosting_ssh_on_web_hosting_packages/)
 
 Join our community of users on <https://community.ovh.com/en/>.
