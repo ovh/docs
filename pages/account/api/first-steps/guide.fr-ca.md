@@ -203,7 +203,7 @@ print("Welcome", client.get('/me')['firstname'])
 
 ## Aller plus loin
 
-[Utilisation des API sur Private Cloud](../../private-cloud/connexion-a-l-api-ovh/)
+ 
 
 [Comment gérer le compte d'un client OVHcloud via les API](https://docs.ovh.com/gb/en/api/api-rights-delegation/) (guide en anglais)
 

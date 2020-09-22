@@ -108,7 +108,7 @@ En el primer caso, haga clic en el botón `Acciones`{.action}, situado sobre la 
 
 Alternativamente, haga clic en el botón `···`{.action} situado al final de la línea correspondiente a la factura y seleccione `Abonar el importe pendiente ahora`{.action}.
 
-En cualquiera de los casos, confirme haciendo clic en el botón `Abonar el importe pendiente`{.action}. Se generará una [orden de pedido](../billing/administrar-los-pedidos-de-ovh/#la-orden-de-pedido){.external}. Abone el importe pendiente para estar al corriente de pago.
+En cualquiera de los casos, confirme haciendo clic en el botón `Abonar el importe pendiente`{.action}. Se generará una [orden de pedido](../gestionar-los-pedidos-en-ovh/#la-orden-de-pedido). Abone el importe pendiente para estar al corriente de pago.
 
 
 ### Consultar los pagos

@@ -69,7 +69,7 @@ The page that appears will contain a table for managing your OVH solutions. If a
 
 - cancel a service on its expiry date
 - delete a service immediately
-- perform other actions related to payment for the service For these options, please refer to the instructions listed in our guide to [Using automatic renewal at OVH](../billing/how-to-use-automatic-renewal-at-ovh/){.external}.
+- perform other actions related to payment for the service For these options, please refer to the instructions listed in our guide to [Using automatic renewal at OVH](../how-to-use-automatic-renewal-at-ovh/).
 
 As a reminder, some solutions cannot be managed via the “Manage my services” interface.
 
