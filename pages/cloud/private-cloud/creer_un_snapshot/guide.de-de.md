@@ -4,7 +4,7 @@ slug: snapshot-erstellen
 excerpt: So kehren Sie mithilfe von Snapshots zu einem früheren Zustand Ihrer VMs zurück
 legacy_guide_number: '7766547'
 section: Verwaltung virtueller Maschinen
-order: 08
+order: 8
 ---
 
 **Letzte Aktualisierung am 21.09.2020**
@@ -45,7 +45,7 @@ Mit einem Snapshot können Sie den Zustand Ihrer VM in genau dem Moment einfange
 
 ### Snapshot erstellen
 
-Klicken Sie mit der rechten Maustaste auf Ihre VM und wählen Sie dann `Snapshots`{.action} und `Snapshot erstellen`{.action} aus.
+Klicken Sie mit der rechten Maustaste auf Ihre VM und wählen Sie dann `Snapshots`{.action} und `Take Snapshot...`{.action} aus.
 
 ![Snapshot erstellen](images/snapshot01.png){.thumbnail}
 
@@ -59,19 +59,19 @@ Wenn der RAM nicht gespeichert wird, wird der Task schneller abgeschlossen, alle
 
 ### Snapshots verwalten
 
-Sie finden alle Snapshots einer VM in der Snapshot-Verwaltung. Klicken Sie hierzu mit der rechten Maustaste auf die VM und wählen Sie dann `Snapshots`{.action} und `Snapshots verwalten`{.action} aus.
+Sie finden alle Snapshots einer VM in der Snapshot-Verwaltung. Klicken Sie hierzu mit der rechten Maustaste auf die VM und wählen Sie dann `Snapshots`{.action} und `Manage Snapshots`{.action} aus.
 
 ![Snapshots verwalten](images/snapshot03.png){.thumbnail}
 
 ### Snapshot löschen
 
-Wählen Sie in der Snapshot-Verwaltung den zu entfernenden Snapshot aus und klicken Sie auf `löschen`{.action}.
+Wählen Sie in der Snapshot-Verwaltung den zu entfernenden Snapshot aus und klicken Sie auf `Delete`{.action}.
 
-Sie können auch alle Snapshots einer VM mit nur einer Aktion löschen, indem Sie auf `Alle löschen`{.action} klicken.
+Sie können auch alle Snapshots einer VM mit nur einer Aktion löschen, indem Sie auf `Delete All`{.action} klicken.
 
 ### Snapshot wiederherstellen
 
-Wählen Sie in der Snapshot-Verwaltung den wiederherzustellenden Snapshot aus und klicken Sie auf `Wiederherstellen`{.action}.
+Wählen Sie in der Snapshot-Verwaltung den wiederherzustellenden Snapshot aus und klicken Sie auf `Restore`{.action}.
 
 ### Snapshots konsolidieren
 
@@ -79,7 +79,7 @@ Sind redundante Festplatten vorhanden, kann dies die Leistung der virtuellen Mas
 
 Die Snapshot-Konsolidierung ist dann von Nutzen, wenn Snapshot-Festplatten nach einem Löschvorgang nicht komprimiert werden können. Nach erfolgreicher Konsolidierung werden die redundanten Festplatten gelöscht, was die Leistung der virtuellen Maschinen verbessert und Speicherplatz spart.
 
-Um eine Konsolidierung auszuführen, klicken Sie mit der rechten Maustaste auf die VM und wählen Sie dann `Snapshots`{.action} und `Konsolidieren`{.action} aus.
+Um eine Konsolidierung auszuführen, klicken Sie mit der rechten Maustaste auf die VM und wählen Sie dann `Snapshots`{.action} und `Consolidate`{.action} aus.
 
 ![Snapshots konsolidieren](images/consolidate.png){.thumbnail}
 
