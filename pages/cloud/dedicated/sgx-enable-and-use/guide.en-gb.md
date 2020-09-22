@@ -5,7 +5,7 @@ excerpt: 'Find out how to enable SGX on your infrastructure server and install t
 section: 'Advanced use'
 ---
 
-**Last updated 20th September 2020**
+**Last updated 22th September 2020**
 
 ## Objective
 
@@ -48,11 +48,11 @@ Scroll down to the "Advanced features" box and click on `...`{.action} next to "
 
 This will cause your server to reboot. Confirm in the popup window and allow a few minutes before accessing your server again.
 
-### Using the OVHcloud APIv6
+### Using the OVHcloud API
 
 #### Step 1: Logging in to the API console
 
-On the [API page](https://api.ovh.com/console/) click on `Login`{.action} in the top-right corner. On the following page, log in with the credentials of your OVH account.
+On the [OVHcloud API page](https://api.ovh.com/console/) click on `Login`{.action} in the top-right corner. On the following page, enter the credentials of your OVHcloud account.
 
 #### Step 2: Enabling SGX
 
@@ -70,7 +70,7 @@ Verify that your service has the SGX option, by calling:
 
 ![SGX disabled](images/get-disabled.png){.thumbnail}
 
-Enable SGX using your server name:
+Enable SGX using the server name:
 
 > [!api]
 >
@@ -95,6 +95,8 @@ You can verify that the status is set to enabled:
 ![SGX enabled](images/get-enabled.png){.thumbnail}
 
 #### Step 3: Rebooting to apply the new BIOS settings
+
+The server needs to reboot before continuing.
 
 #### Step 4: Installing the SGX software stack
 
@@ -135,6 +137,8 @@ sudo ./sgx_linux_x64_driver_2.5.0_2605efa.bin
 ```
 
 #### Step 5: Rebooting to finish the installation
+
+The server needs to reboot before continuing.
 
 #### Step 6: Validating the installation (optional)
 
