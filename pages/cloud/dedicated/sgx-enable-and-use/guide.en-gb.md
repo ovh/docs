@@ -24,9 +24,29 @@ Enabling Intel Software Guard Extensions (SGX) on your server allows you to run 
 
 ### From the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Server`{.action} section and then select the server on which you wish to enable SGX from **Dedicated Servers** in the left-hand sidebar. Scroll down to the "Advanced features" box and click on `...`{.action} next to "Security - Intel SGX (Software Guard Extensions)". Select `Enable SGX`{.action} from the drop-down menu.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Server`{.action} section and then select the server on which you wish to enable SGX from **Dedicated Servers** in the left-hand sidebar.
 
-enable_sgx.png
+#### Enabling the option
+
+Scroll down to the "Advanced features" box and click on `...`{.action} next to "Security - Intel SGX (Software Guard Extensions)". Select `Enable SGX`{.action} from the drop-down menu.
+
+![SGX enabling](images/enable_sgx.png){.thumbnail}
+
+On the following screen, click the `Enable`{.action} button.
+
+![SGX enabling](images/enable_sgx2.png){.thumbnail}
+
+You can either choose to enable SGX with a specific amount of reserved memory or enable it by allowing your software to automatically reserve the memory it needs. Once you have made your choice, click `Confirm`{.action}.
+
+![SGX enabling](images/manage_sgx.png){.thumbnail}
+
+#### Disabling the option
+
+Scroll down to the "Advanced features" box and click on `...`{.action} next to "Security - Intel SGX (Software Guard Extensions)". Select `Modify SGX`{.action} from the drop-down menu. Choose the `Disable`{.action} option and then click `Confirm`{.action}.
+
+![SGX disabling](images/disable_sgx.png){.thumbnail}  
+
+This will cause your server to reboot. Confirm in the popup window and allow a few minutes before accessing your server again.
 
 ### Using the OVHcloud APIv6
 
