@@ -1,7 +1,7 @@
 ---
 title: 'Eine Datenbank auf Ihrem Webhosting erstellen und verwalten'
 slug: datenbank-erstellen
-excerpt: 'Hier erfahren Sie, wie Sie in OVHcloud Webhostings enthaltene Datenbanken verwenden.'
+excerpt: 'Erfahren Sie hier, wie Sie in OVHcloud Webhostings enthaltene Datenbanken verwenden'
 section: 'Datenbanken'
 order: 1
 ---
