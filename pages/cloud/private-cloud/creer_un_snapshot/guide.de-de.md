@@ -1,5 +1,5 @@
 ---
-title: Snapshot erstellen
+title: Snapshots erstellen
 slug: snapshot-erstellen
 excerpt: So kehren Sie mithilfe von Snapshots zu einem früheren Zustand Ihrer VMs zurück
 legacy_guide_number: '7766547'
@@ -7,9 +7,9 @@ section: Verwaltung virtueller Maschinen
 order: 08
 ---
 
-**Stand 21.09.2020**
+**Letzte Aktualisierung am 21.09.2020**
 
-## Einleitung 
+## Ziel
 
 Sie können jederzeit einen Snapshot einer virtuellen Maschine erstellen. Wenn Sie einen Snapshot aufgenommen haben, können Sie alle im neuesten Snapshot enthaltenen virtuellen Maschinen wiederherstellen oder den Snapshot löschen.
 
@@ -20,7 +20,7 @@ Sie können jederzeit einen Snapshot einer virtuellen Maschine erstellen. Wenn S
 - Sie verfügen über ein [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external} Produkt.
 - Sie haben Zugriff zum vSphere HTML Client.
 
-## Beschreibung
+## In der praktischen Anwendung
 
 Snapshots sind nützlich, wenn Sie mehrmals zum selben Zustand zurückkehren möchten, ohne mehrere virtuelle Maschinen zu erstellen. Mit Snapshots werden Wiederherstellungspunkte erstellt. 
 
