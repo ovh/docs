@@ -16,7 +16,7 @@ Les adresses e-mail de l’offre MX Plan permettent d’envoyer et de recevoir v
 
 ## Prérequis
 
-- Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}, l'[hébergement gratuit Start 10M]({ovh_www}/domaines/offre_hebergement_start10m.xml){.external} compris avec un nom de domaine (activé au préalable) ou l'offre MX Plan commandée séparément.
+- Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}, ou l'offre MX Plan commandée séparément.
 - Avoir encore la possibilité de créer des adresses e-mail dans le cadre de votre offre.
 - Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie `Web`{.action}.
 
@@ -101,15 +101,15 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 
 |Type du serveur|Nom du serveur|Port (avec SSL)|Port (sans SSL)|
 |---|---|---|---|
-|Entrant|SSL0.OVH.NET|993|143|
-|Sortant|SSL0.OVH.NET|465|587|
+|Entrant|imap.mail.ovh.ca|993|143|
+|Sortant|smtp.mail.ovh.ca|465|587|
 
 - **Pour une configuration en POP**
 
 |Type du serveur|Nom du serveur|Port (avec SSL)|Port (sans SSL)|
 |---|---|---|---|
-|Entrant|SSL0.OVH.NET|995|110|
-|Sortant|SSL0.OVH.NET|465|587|
+|Entrant|pop.mail.ovh.ca|995|110|
+|Sortant|smtp.mail.ovh.ca|465|587|
 
 > [!warning]
 >
@@ -178,15 +178,15 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 
 |Type du serveur|Nom du serveur|Port (avec SSL)|Port (sans SSL)|
 |---|---|---|---|
-|Entrant|SSL0.OVH.NET|993|143|
-|Sortant|SSL0.OVH.NET|465|587|
+|Entrant|imap.mail.ovh.ca|993|143|
+|Sortant|smtp.mail.ovh.ca|465|587|
 
 - **Pour une configuration en POP**
 
 |Type du serveur|Nom du serveur|Port (avec SSL)|Port (sans SSL)|
 |---|---|---|---|
-|Entrant|SSL0.OVH.NET|995|110|
-|Sortant|SSL0.OVH.NET|465|587|
+|Entrant|pop.mail.ovh.ca|995|110|
+|Sortant|smtp.mail.ovh.ca|465|587|
 
 > [!warning]
 >

@@ -14,10 +14,12 @@ section: Cloud Disk Array
 > Using web interface is the easiest way to create an IP ACL.
 > 
 
-First, connect to the [Cloud Disk Array manager](https://www.ovh.com/manager/cloud/index.html){.external}. Under 'Platforms and services' select your Ceph cluster. On the bottom right, you will find the existing ACL. By default there is no ACL.
+First, connect to the [manager](https://ca.ovh.com/manager/dedicated/#/configuration){.external} and under Platforms and services you'll fine the Ceph service.
+
+Here you will find the existing ACL, by default there is no ACL.
 
 
-![Ceph pools](images/create_an_ip_acl_1.png){.thumbnail}
+![Ceph pools](images/ceph-add-ip-1.png){.thumbnail}
 
 Get your ip address.
 
@@ -32,7 +34,7 @@ admin@server:~$ ip -4 a
 Add your IP.
 
 
-![Ceph pools](images/create_an_ip_acl_2.png){.thumbnail}
+![Ceph pools](images/ceph-add-ip-2.png){.thumbnail}
 
 And create the IP ACL.
 
