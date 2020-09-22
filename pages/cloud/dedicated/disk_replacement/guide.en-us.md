@@ -209,7 +209,7 @@ If you have a server that uses soft RAID, we recommend that you resync your disk
 
 [Hardware RAID](../raid-hard/){.external}
 
-[Rescue Mode](../ovh-rescue/){.external}
+[Rescue Mode](../rescue-mode){.external}
 
 
 Join our community of users on <https://community.ovh.com/en/>.

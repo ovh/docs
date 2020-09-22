@@ -15,7 +15,7 @@ You have just purchased a Email Pro solution, which gives you affordable profess
 
 ## Requirements
 
-- an [Email Pro]({ovh_www}/emails/email-pro/){.external} solution
+- an Email Pro solution
 - an email confirming that your Email Pro solution has been set up
 - a domain name
 - access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
@@ -116,7 +116,7 @@ Once the information is complete, click on the `Next`{.action} button, check the
 
 Once you have configured your accounts, you can start using them straight away. To do this, OVH offers an online application (a *web app*). Roundcube is available [here](https://www.ovh.co.uk/mail/){.external}, and you will need to enter your email credentials.
 
-If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), you can refer to our [configuration guides](../). If you simply need the information required to configure your Email Pro account, the settings to use are listed below:
+If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), you can refer to our configuration guides. If you simply need the information required to configure your Email Pro account, the settings to use are listed below:
 
 |Server type|Server name|Security type|Port|
 |---|---|---|---|

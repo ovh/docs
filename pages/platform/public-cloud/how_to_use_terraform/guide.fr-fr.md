@@ -100,19 +100,19 @@ Ici, nous voulons créer une simple machine virtuelle sur Ubuntu 16.04 avec la f
 ```python
 1. # Import de la clé SSH au sein d'OpenStack
 2. resource "openstack_compute_keypair_v2" "test_keypair" {
-3.   provider = "openstack.ovh" # Nom du fournisseur déclaré dans provider.tf
+3.   provider = openstack.ovh # Nom du fournisseur déclaré dans provider.tf
 4.   name = "test_keypair" # Nom de la clé SSH à utiliser pour la création
-5.   public_key = "${file("~/.ssh/id_rsa.pub")}" # Chemin vers votre clé SSH précédemment générée
+5.   public_key = file("~/.ssh/id_rsa.pub") # Chemin vers votre clé SSH précédemment générée
 6. }
 7. 
 8. # Création d'une machine virtuelle OpenStack
 9. resource "openstack_compute_instance_v2" "test_terraform_instance" {
 10.   name = "terraform_instance" # Nom de l'instance
-11.   provider = "openstack.ovh" # Nom du fournisseur
+11.   provider = openstack.ovh # Nom du fournisseur
 12.   image_name = "Ubuntu 16.04" # Nom de l'image
 13.   flavor_name = "s1-2" # Nom du type de machine
 14.   # Nom de la ressource openstack_compute_keypair_v2 nommé test_keypair
-15.   key_pair = "${openstack_compute_keypair_v2.test_keypair.name}"
+15.   key_pair = openstack_compute_keypair_v2.test_keypair.name
 16.   network {
 17.     name = "Ext-Net" # Ajoute le réseau public à votre instance
 18.   }

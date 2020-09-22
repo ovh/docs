@@ -19,7 +19,7 @@ This guide will explain how to create an additional volume and then how to attac
 
 
 ### Prerequisites
-- A [Public Cloud instance](../first_steps_start_my_first_server_within_3_minutes/){.external}
+- A [Public Cloud instance](../public-cloud-first-steps/){.external}
 
 
 ## Creating the volume
@@ -71,6 +71,6 @@ Once this is done, it will show the instance that it is attached to.
 
 > [!primary]
 >
-> To continue, you will probably need to [configure](../howto_configure_an_additionnal_volumee){.external} this
+> To continue, you will probably need to [configure](../create_and_configure_an_additional_disk_on_an_instance/){.external} this
 > new volume on your instance.
 > 

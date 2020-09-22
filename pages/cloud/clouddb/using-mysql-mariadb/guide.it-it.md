@@ -11,13 +11,8 @@ Vuoi utilizzare MySQL o MariaDB? Scopri come creare e gestire i tuoi database co
 
 ### Prerequisiti
 
-
-> [!primary]
->
-> Per seguire questa guida è necessario:
-> - Un'istanza CloudDB attiva
-> - Aver consultato la guida all’utilizzo di CloudDB: docs/cloud/clouddb/debuter-avec-clouddb
->
+- Un'istanza CloudDB attiva
+- Aver consultato [la guida all’utilizzo di CloudDB](../iniziare-a-utilizzare-clouddb/)
 
 ### Cose un database MySQL?
 MySQL è un modello di database relazionale sviluppato per ottimizzare le prestazioni in lettura.
@@ -56,7 +51,7 @@ Per accedere al tuo database, sono necessarie queste informazioni:
 
 Questi dati sono disponibili nella sezione Web del tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/){.external}.
 
-Se necessario, consulta la guida: [](debuter-avec-clouddbguide.it-it.md){.ref}
+Se necessario, consulta la guida: [Inziare a utilizzare CloudDB](../starting_with_clouddb/guide.it-it.md){.ref}
 
 
 ### Connessione da riga di comando

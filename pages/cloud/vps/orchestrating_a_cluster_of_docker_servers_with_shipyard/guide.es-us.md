@@ -21,7 +21,7 @@ Una vez generados los certificados, pasamos a las máquinas cliente (nodos). En 
 Copiamos las claves y certificados generados en la carpeta /etc/docker/certs/ de nuestros nodos con el siguiente comando: 
 
 
-```
+```sh
 scp ca.pem server-cert.pem server-key.pem user@1.1.1.1:/etc/docker/certs/
 scp ca.pem server-cert.pem server-key.pem user@2.2.2.2:/etc/docker/certs/
 scp ca.pem server-cert.pem server-key.pem user@3.3.3.3:/etc/docker/certs/
@@ -296,5 +296,5 @@ En la pestaña «Containers», podemos visualizar y gestionar todos los contened
 Por último, haciendo clic en «DEPLOY» podremos ejecutar contenedores en todos nuestros nodos o en algunos de ellos (seleccionando el «label» correspondiente a los nodos en los que queremos desplegar el contenedor):
 
 ![](images/img_2616.jpg){.thumbnail}
-Ya dispone de un sistema de orquestación de sus distintas máquinas Docker y puede aprovisionar sus aplicaciones/contenedores dentro de su cluster fácil y rápidamente, y disponiendo de una interfaz gráfica. Además, si quiere probar Docker, no olvide nuestra alfa Sailabove disponible en [https://labs.runabove.com/docker/](https://labs.runabove.com/docker/). Asimismo, acabamos de crear una plantilla Ubuntu 14.04 con Docker (preinstalado) en VPS Cloud y VPS Classic (disponible en todos nuestros VPS, excepto en los VPS Classic 1, que no disponen de suficiente espacio en disco). Con ella podrá disponer directamente de una máquina lista para ejecutar contenedores, beneficiándose de las ventajas inherentes a los VPS de OVH.
 
+Ahora tiene un sistema de orquestación de servidores Docker que le permite aprovisionar aplicaciones y contenedores en su clúster de manera fácil y rápida mediante una GUI.

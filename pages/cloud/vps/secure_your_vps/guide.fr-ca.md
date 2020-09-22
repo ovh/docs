@@ -194,7 +194,7 @@ Nous vous recommandons alors de créer et d’ajuster à votre utilisation des r
 
 Les solutions OVHcloud incluent un pare-feu à l'entrée de l'infrastructure, appelé firewall network. Sa mise en place et sa configuration permettent le blocage des protocoles avant même leur arrivée sur votre serveur.
 
-Nous vous proposons également un guide sur la [configuration de ce réseau](../dedicated/firewall-network/){.external} de pare-feu.
+Nous vous proposons également un guide sur la [configuration de ce réseau](../../dedicated/firewall-network/){.external} de pare-feu.
 
 ### Sauvegarder votre système et vos données
 
@@ -210,6 +210,6 @@ Vous trouverez toutes les informations sur nos solutions de sauvegarde VPS ici 
 
 ## Aller plus loin
 
-[Guide sur le firewall network](../dedicated/firewall-network/){.external}
+[Guide sur le firewall network](../../dedicated/firewall-network/){.external}
 
 Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com>.

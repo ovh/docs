@@ -48,7 +48,7 @@ editor /etc/network/interfaces
 Vous devez ensuite ajouter une interface secondaire :
 
 ```bash
-auto eth0.0
+auto eth0:0
 iface eth0:0 inet static
 address FAILOVER_IP
 netmask 255.255.255.255
@@ -71,7 +71,7 @@ netmask 255.255.255.0
 broadcast xxx.xxx.xxx.255
 gateway xxx.xxx.xxx.254
 
-auto eth0.0
+auto eth0:0
 iface eth0:0 inet static
 address FAILOVER_IP
 netmask 255.255.255.255

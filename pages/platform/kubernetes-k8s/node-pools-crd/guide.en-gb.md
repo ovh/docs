@@ -268,6 +268,6 @@ kubectl delete nodepool my-new-node-pool
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes site](https://www.ovh.com/public-cloud/kubernetes/).
 
-Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [deploying an application](../deploying_an_application/deploying_an_application/).
+Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [deploying an application](../deploying-an-application/).
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

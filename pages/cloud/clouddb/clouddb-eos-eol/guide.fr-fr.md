@@ -5,14 +5,18 @@ excerpt: 'Annonces de fin de vente/vie CloudDB'
 section: 'Ressources techniques'
 ---
 
-Les produits couverts par ces annonces de fin de vente et de fin de vie sont les services Cloud Databases publiques, instances SGBD joignables via le réseau publique. Référez-vous à la [politique de fin de vie des bases de données managées](../eol-policy/) pour plus d'informations.
+Les produits couverts par ces annonces de fin de vente et de fin de vie sont les services Cloud Databases publiques, instances SGBD joignables via le réseau publique. Référez-vous à la [politique de fin de vie des bases de données managées](../managed-db-life-cycle-policy/) pour plus d'informations.
 
 |Version|Annonce de fin de vie|Fin de vente|Fin de support|
 |---|---|---|---|
 |MariaDB 10.1|2019-07-29|2020-04-17|2020-10-17|
 |MariaDB 10.2|À définir|À définir|À définir|
+|MariaDB 10.3|À définir|À définir|À définir|
+|MariaDB 10.4|À définir|À définir|À définir|
+|MariaDB 10.5|À définir|À définir|À définir|
 |MongoDB 4|2019-07-29|2019-02-25|À définir|
 |MySQL 5.7|À définir|À définir|À définir|
+|MySQL 8.0|À définir|À définir|À définir|
 |PostgreSQL 9.6|2020-01-21|2021-05-12|2021-11-11|
 |PostgreSQL 10|À définir|À définir|À définir|
 |PostgreSQL 11|À définir|À définir|À définir|

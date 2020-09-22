@@ -139,7 +139,7 @@ Accédez ensuite au fichier via le navigateur : [http://IP_du_serveur/info.php](
 
 Vous devriez pouvoir visualiser une page détaillant toutes les spécificités de votre environnement PHP (version 7.0.30 dans notre cas) :
 
-![](tuto_php.png)
+ 
 ![Installation de PHP](images/tuto_php.png){.thumbnail}
 
 Une fois visualisé, nous vous recommandons vivement de **supprimer le fichier `index.php`**. En effet, il n'est jamais conseillé de donner publiquement des informations sur votre configuration.
@@ -269,7 +269,7 @@ MariaDB [(none)]> FLUSH PRIVILEGES;
 
 Accédez ensuite à l'interface via [http://IP_du_serveur/phpmyadmin/](#) :
 
-![](tuto_pma.png)
+ 
 ![Installation de PMA](images/tuto_pma.png){.thumbnail}
 
 ### Étape 7 : installez WordPress (optionnel)
@@ -290,7 +290,7 @@ Créez une base nommée `wordpress` en ligne de commande ou via `phpMyAdmin`.
 
 Votre écran de configuration doit ressembler à celui ci-dessous :
 
-![](tuto_wp.png)
+ 
 ![Installation de Wordpress](images/tuto_wp.png){.thumbnail}
 
 Si vous avez un avertissement au niveau de la création du fichier `wp-config.php`, éditez les droits en exécution, lecture, écriture en fonction de vos besoins (communément appelés `CHMOD`).

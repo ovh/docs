@@ -28,11 +28,11 @@ To do so, go to [OVHcloud API](https://ca.api.ovh.com/createApp/){.external}.
 
 You will need to log in and set an application name and description.
 
-![image](images/createapp-ca.jpg)
+![image](images/ createapp-ca.png)
 
 Once logged in, you will get your `Application Key` and `Application Secret`, later refered as `AK` and `AS`.
 
-![image](images/ak-as-ca.jpg)
+![image](images/ak-as-ca.png)
 
 The `AK` is identifying your application. It can be publicly shared.
 
@@ -40,7 +40,7 @@ The `AS` is a key used to sign the API requests which will be made later by your
 
 #### Summary
 
-![sequence diagram](images/sequence01-ca.png)
+![sequence diagram](images/sequence01.png)
 
 ### Deploy your application
 
@@ -94,7 +94,7 @@ The request has been made and you need your customer to accept it by redirecting
 
 After redirecting the client to `validationUrl`, he will be asked to confirm the rights delegation.
 
-![rights confirmation](images/validate-ck-ca.jpg)
+![rights confirmation](images/validate-ck-ca.png)
 
 
 If successful, the client will be redirected to the url previously specified by `REDIRECT_URL` in the curl command.
@@ -111,7 +111,7 @@ From there, depending on the requested permissions, you can start managing your 
 
 #### Summary
 
-![sequence diagram](images/sequence02-ca.png)
+![sequence diagram](images/sequence02.png)
 
 
 Happy development !

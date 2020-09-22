@@ -266,7 +266,7 @@ Workflow successfully pushed !
 
 On CDS all actions could be done with UI, CLI or API. So you can go on your CDS UI to check your new workflow and run it.
 
-![CDS workflow](./images/installing-cds-01.png){.thumbnail}
+![CDS workflow](images/installing-cds-01.png){.thumbnail}
 
 For any further informations about CDS please check [official documentation](https://ovh.github.io/cds/){.external}.
 

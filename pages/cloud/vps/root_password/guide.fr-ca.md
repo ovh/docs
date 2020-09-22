@@ -108,7 +108,7 @@ Pour finir, redémarrez votre VPS sur son disque depuis votre espace client OVHc
 
 ## Aller plus loin
 
-[Introduction au SSH](../dedicated/ssh-introduction/){.external}.
+[Introduction au SSH](../../dedicated/ssh-introduction/){.external}.
 
 [Mode Rescue sur VPS](../mode-rescue-vps/){.external}.
 

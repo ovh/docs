@@ -1,111 +1,112 @@
 ---
-title: Änderung der Hardware-Konfiguration einer Virtuellen Maschine
-excerpt: ''
+title: Ressourcen einer virtuellen Maschine anpassen
+excerpt: 'Erfahren Sie hier, wie Sie Ihre virtuelle Maschine skalieren'
 slug: nderung_der_hardware-konfiguration_einer_virtuellen_maschine
 legacy_guide_number: g587
+section: Verwaltung virtueller Maschinen
+order: 3
 ---
 
 
-## 
-In dieser Hilfe werden die möglichen Änderungen an einer Virtuellen Maschine beschrieben, also die Details der Funktion "Edit Settings" von VMware.
+**Letzte Aktualisierung am 10.09.2020**
 
-Dazu muss zuerst wie in folgender Hilfe beschrieben eine Virtuelle Maschine erstellt werden:
+## Ziel
 
+Wenn Sie Ihre virtuelle Maschine erstellt haben, stehen deren Ressourcen nicht permanent fest, sondern können (mit ein paar Einschränkungen) neu zugewiesen werden, um so für eine agile Infrastruktur zu sorgen.
 
-- []({legacy}607)
-
-
+**Diese Anleitung erklärt, wie Sie Ihre virtuelle Maschine skalieren.**
 
 
-## 
-Sämtliche weiter unten beschriebenen Änderungen müssen in vSphere von Ihrer Private Cloud aus durchgeführt werden. Machen Sie dazu einen Rechtsklick auf einer Virtuellen Maschine und wählen Sie dann "Edit Settings" aus.
+## Voraussetzungen
+
+- Sie haben eine virtuelle Maschine auf einer [Hosted Private Cloud Infrastruktur](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) erstellt.
+- Sie haben einen Benutzeraccount mit Zugriff auf vSphere (erstellt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager)).
 
 
-## Arbeitsspeicher (RAM)
-Der zugewiesene Arbeitsspeicher kann jederzeit geändert werden, sofern die Maschine ausgeschaltet ist (Ab dem L Host aufwärts kann diese Operation dank der Hot Add Funktion von VMware auch bei einer laufenden Maschine durchgeführt werden).
+## In der praktischen Anwendung
 
-![](images/img_53.jpg){.thumbnail}
-Mehr Informationen zur Anpassung im laufenden Betrieb mit Hot Add finden Sie [hier](#CONFIG_AND_ADVANCED_OPTIONS)
+Alle nachstehend beschriebenen Änderungen werden über Ihre Private Cloud in vSphere vorgenommen, indem Sie mit der rechten Maustaste auf eine virtuelle Maschine und dann auf `Einstellungen bearbeiten`{.action} klicken.
 
+![Ressourcen bearbeiten](images/hardware01.png){.thumbnail}
 
-## Prozessor (CPU)
-Die Anzahl der der Virtuellen Maschine zugewiesenen CPUs kann geändert werden, wenn diese ausgeschaltet ist (Ab dem L Host aufwärts kann diese Operation dank der Hot Add Funktion von VMware auch bei einer laufenden Maschine durchgeführt werden).
+In diesem Menü können Sie die Ressourcen Ihrer virtuellen Maschine erweitern. 
 
-![](images/img_54.jpg){.thumbnail}
-Mehr Informationen zur Anpassung im laufenden Betrieb mit Hot Add finden Sie [hier](#CONFIG_AND_ADVANCED_OPTIONS)
+![Ressourcen bearbeiten](images/hardware02.png){.thumbnail}
 
-
-## Grafikkarte
-Sie können die Einstellungen der Grafikkarte festlegen, indem Sie folgende Einstellungen ändern:
-
-- Die automatische Erkennung
-- Die Auswahl der Auflösung von Hand
-- Die Anzahl der für die Grafikkarte reservierten MB RAM.
+Wie Sie sehen, können Sie oben rechts auf dieser Seite Geräte hinzufügen. Wir kommen später auf diesen Punkt zurück.
 
 
+### Prozessor (CPU)
 
-![](images/img_55.jpg){.thumbnail}
+Die Anzahl der CPUs ist auf die in Ihrem Host verfügbaren Slots begrenzt.
 
+Wird Ihre virtuelle Maschine auf einen Host migriert, der über weniger Prozessoren verfügt, als Ihrer Maschine zugewiesen sind, so wird diese in den Status `CPU ready` versetzt, was die Leistung verringert.
 
-## Festplatte
-Sie können jederzeit den virtuellen Festplattenplatz der Maschine anpassen, indem Sie den zugewiesenen Speicherplatz ändern:
+![CPU hinzufügen](images/hardware03.png){.thumbnail}
 
-![](images/img_56.jpg){.thumbnail}
-Sie können auch den Festplattentyp (SATA oder IDE) sowie den Typ des Speicherbereichs (persistent oder nicht persistent) auswählen.
+Sie können auch eine bestimmte Frequenz (Minimum und Maximum) festlegen oder die Anzahl der Kerne pro Socket auswählen.
 
-Der persistente Speicherbereich erlaubt die Speicherung von Daten beim Reboot einer Virtuellen Maschine.
-Beim nicht-persistenten Speicherbereich bleiben die Daten in diesem Fall nicht erhalten: bei einem Reboot der Maschine werden sämtliche Daten gelöscht.
+Wenn Sie den Haken bei `CPU-Hotplug`{.action} setzen, können Sie diese Werte verändern, während die Maschine läuft.
 
-Mit dem Button "Add..." können Sie jederzeit eine zweite Festplatte zu einer Virtuellen Maschine hinzufügen, egal ob diese ein- oder ausgeschaltet ist.
+Je nach verwendetem Betriebssystem kann das Hinzufügen im laufenden Betrieb möglicherweise nicht korrekt verarbeitet werden und führt zu Fehlern auf dem Host.
 
+Sie können Ihrer virtuellen Maschine ein Minimum an *MHz* (Megahertz) zuweisen.
 
-## CD/DVD Laufwerk
-Erlaubt Ihnen das einfache Mounten eines Images Ihres Datastores:
-
-![](images/img_62.jpg){.thumbnail}
-
-## WICHTIG!
-Die Option "Connect at power on" muss ausgewählt werden, damit das Laufwerk erkannt und Ihr Image geladen werden kann.
+In der Standardeinstellung unbegrenzt, kann der Prozessor Ihrer virtuellen Maschine so auf einen bestimmten Wert in *MHz* limitiert werden. So können Sie beispielsweise eine Entwicklungsmaschine nach Wunsch beschränken.
 
 
-## Netzwerkkarte
-Hier können Sie den Karten-Typ, den Sie auf der Virtuellen Maschine konfigurieren möchten, und den Verbindungs-Typ (VM Network oder LocalportGroup) auswählen.
+### Arbeitsspeicher (RAM)
 
-Mit dem VM Network kann eine Virtuelle Maschine im öffentlichen Netzwerk (mit einer RIPE IP) oder einem lokalen Netzwerk zwischen den Hosts erreichbar gemacht werden.
+Genau wie die CPU ist auch der Arbeitsspeicher (RAM) auf die Hostressourcen begrenzt.
 
-Die LocalPortGroup erlaubt ausschliesslich die Kommunikation innerhalb eines privaten Netzwerks und ist auf den Host beschränkt (nur die VMs eines Hosts können untereinander kommunizieren).
+Auch hier können Sie eine Reservierung vornehmen, damit Ihre virtuelle Maschine immer über eine bestimmte RAM-Kapazität verfügt.
 
-Für die Konfiguration steht Ihnen folgende Hilfe zur Verfügung:
-
-
-- []({legacy}582)
+![Arbeitsspeicher hinzufügen](images/hardware04.png){.thumbnail}
 
 
+### Festplatte
 
-![](images/img_63.jpg){.thumbnail}
+Was die Festplatte betrifft, können Sie deren Größe abhängig vom verbleibenden Speicherplatz auf dem von der virtuellen Maschine verwendeten Datastore vergrößern.
+
+![Speicherplatz hinzufügen](images/hardware05.png){.thumbnail}
+
+Es wird empfohlen, SCSI-Festplatten-Controller anstelle von IDE-Controllern zu verwenden, da zum Beispiel Backups über Veeam mit IDE-Controllern nicht möglich sind.
+
+Sie können auch den Modus der Festplatte auswählen:
+
+- `Abhängig`: Festplatten sind in Snapshots enthalten.
+
+- `Unabhängig – Persistent`: Dieser Modus erlaubt das Speichern von Daten auch beim Neustart einer Maschine. Bei einem Snapshot werden die Daten jedoch nicht berücksichtigt.
+
+- `Unabhängig – Nicht persistent`: In diesem Modus werden die Daten nicht gespeichert. Wenn Sie Ihre Maschine neu starten, werden sämtliche Daten gelöscht.
 
 
-## Allgemeine Optionen
-In dieser Rubrik kann der bei der Erstellung der VM ausgewählte Typ der Maschine oder deren Name geändert werden.
+### Netzwerkkarte
+
+Sie können die Netzwerkkarte Ihrer virtuellen Maschine, die Verbindung der Karte beim Starten der virtuellen Maschine sowie den Kartentyp ändern. Außerdem können Sie die Port-ID und Ihre MAC-Adresse überprüfen.
+
+![Netzwerk hinzufügen](images/hardware06.png){.thumbnail}
+
+Dieses Interface ist besonders nützlich im Falle eines Netzwerkfehlers. Sie können sicherstellen, dass die *Port ID* mit der ID übereinstimmt, die in den Tabs `Networking`{.action} und `Ports`{.action} für die betreffende Netzwerkkarte aufgeführt wird.
 
 
-## vApp Options
-Hier können der gewünschte IP-Typ oder die OVF Einstellungen der Virtuellen Maschine genauer definiert werden.
+### CD/DVD-Laufwerk
+
+Mithilfe des CD/DVD-Laufwerks können Sie zum Beispiel ISO-Images auf Ihrer virtuellen Maschine mounten.
+
+![CD/DVD-Laufwerk hinzufügen](images/hardware07.png){.thumbnail}
+
+Es wird empfohlen, das CD/DVD-Laufwerk nach seiner Verwendung zu löschen, da es das Verschieben der virtuellen Maschine verhindern kann.
 
 
-## VMware Tools
-Diese Rubrik erlaubt die Verwaltung der Aktionen der Buttons, die von den VMware Werkzeugen verwendet werden.
-Der Button "Stop" kann zum Beispiel konfiguriert werden, damit er einen Shutdown der VM oder einen Power Off ausführt.
+### Geräte hinzufügen
 
+Oben rechts in diesem Fenster haben Sie die Möglichkeit, zusätzliche Geräte hinzuzufügen.
 
-## Fortgeschrittene Optionen
-Die fortgeschrittenen Optionen erlauben eine feinere Einstellung Ihrer Virtuellen Maschine. In dieser Rubrik können Sie mit Hilfe der Option "Memory/CPU Hotplug" das Hinzufügen von CPU oder RAM Ressourcen im laufenden Betrieb konfigurieren. Diese Option ist erst ab dem L Host aufwärts verfügbar.
+Sie können Festplatten eines anderen Datastores oder auch Netzwerkkarten hinzufügen, wenn Sie mehrere private Netzwerke verwenden möchten.
 
-Eine weitere Option ist die "SwapFile Location". Standardmässig konfiguriert OVH diese Option so, dass die Swap Datei der Virtuellen Maschine sich direkt auf dem Host, im Fall der Private Cloud also auf den SSD Festplatten, befindet. Diese Konfiguration sorgt für eine bessere Performance bei den Lese- und Schreiboperationen.
+![Geräte hinzufügen](images/hardware08.png){.thumbnail}
 
-Wenn Sie aber beispielsweise eine Virtuelle Maschine mit 12 GB Arbeitsspeicher konfigurieren, dann erstellt VMware automatisch eine 12 GB Swap Datei auf dem Local Storage mit 30 GB Speicherplatz. Die Festplatte läuft so Gefahr, sehr schnell voll zu sein.
+## Weiterführende Informationen
 
-Ausserdem verfügen Sie bei der Nutzung dieser Option nicht mehr über den Schutz, den Ihnen die HA Funktion bietet.
-
-Deshalb können Sie diese Option so anpassen, dass die Swap Datei immer an die VM gebunden und somit mit den .vmx und .vmdk Dateien auf dem NAS abgelegt wird.
-
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

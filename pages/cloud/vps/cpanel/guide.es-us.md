@@ -1,0 +1,77 @@
+---
+title: 'Implementar cPanel en CentOS 7'
+excerpt: 'Descubra cómo crear instancias de un VPS con la aplicación cPanel preinstalada'
+slug: cpanel
+section: 'Uso avanzado'
+---
+
+**Última actualización: 28/05/2020**
+
+
+## Objectivo
+
+cPanel es un panel de control diseñado para un alojamiento web. Las tareas de un alojamiento web se simplifican, ya que esta formada por una interfaz gráfica que permite la automatización de la configuración.
+
+**Aprenda a implementar cPanel con las aplicaciones preinstaladas en un VPS.**
+
+## Requisitos
+
+- Solución de [VPS](https://www.ovh.com/world/es/vps/) actuall (VPS Value, Esentia, Confort y Elite) en su cuenta de cliente OVHcloud.
+- Acceso al [panel de control OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
+
+## Procedimiento
+
+Para instalar su servidor cPanel, primero necesita contratar un VPS con una distribución cPanel.
+
+![horizon](images/cpanel_order.png){.thumbnail}
+
+Cuando su VPS esté listo, recibirá un correo electrónico proporcionando la información para conectarse a su servidor Cpanel.
+
+> Su aplicación:
+>
+> Puede conectarse a su cPanel desde: https://hostname:2087/session_parameters
+
+Si su VPS ya esta listo y quiere tener cPanel, puede reinstalar el VPS desde su panel de control OVHcloud  con la plantilla  "Centos 7 - cPanel" (disponible solo con una solución de VPS compatible).
+
+> [!warning]
+>
+> Si reinstala el VPS, toda la información almacenada puede perderse..
+>
+
+### Primera conexión
+
+Una vez que reciba el email con el enlace único, por favor proceda al enlace para realizar la configuración inicial.
+
+> [!primary]
+>
+> Si el enlace ha expirado, por favor reinstale el VPS otra vez con cPanel.
+>
+
+La URL anterior permite iniciar sesión sin credenciales ( usuario y contraseña) en su administrador WHM.
+
+#### Paso 1: Lea y acepte los términos de cPanel.
+
+![horizon](images/license_validation.png){.thumbnail}
+
+#### Paso 2: Proporcione la dirección de correo electrónico y los servidores DNS que desea configurar en su VPS
+
+![horizon](images/setup_config_cpanel.png){.thumbnail}
+
+#### Paso 3: Establecer la contraseña de root
+
+![horizon](images/change_root.png){.thumbnail}
+
+Ahora usted debería poder iniciar sesión en WHM y SSH usando el usuario y la contraseña de root que acaba de configurar.
+
+### Proteja su servicio
+
+Le recomendamos que tome más medias adicionales para proteger su WHM y VPS. Por esto le recomendamos que lea las recomendamos proporcionadas por cPanel aquí:
+
+Además, le recomendamos configurar el [firewal](../../dedicated/firewall-de-red/ y  una [solución de backup](../consejos-proteccion-vps/#guardar-copia-de-seguridad-del-sistema-y-los-datos) en su VPS.
+
+
+
+## Más información
+
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>

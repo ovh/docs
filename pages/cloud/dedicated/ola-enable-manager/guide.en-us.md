@@ -36,7 +36,7 @@ Now select the "Private aggregation" option and give your interface a name. Clic
 
 On the following tab, check all of the interfaces you wish to aggregate on OLA and then click **Next**.
 
-![interface select](images/interface_select_20201.png){.thumbnail}
+![interface select](images/interface_select_2020.png){.thumbnail}
 
 Now review the "Configuration overview" step. When you have confirmed that all of the information is correct, click the **Create** button.
 

@@ -12,13 +12,8 @@ Do you want to use MySQL or MariaDB ? Learn how to create and manage your databa
 
 ### Prerequisites
 
-
-> [!primary]
->
-> To follow this tutorial you need:
-> - A CloudDB instance
-> - To have viewed the CloudDB guide: docs/cloud/clouddb/debuter-avec-clouddb
->
+- A CloudDB instance
+- To have viewed [the CloudDB guide](../getting-started-with-clouddb/)
 
 ### What is a MySQL database?
 MySQL is relational database management system developed for increased read performance, unlike other systems
@@ -57,7 +52,7 @@ To log in to your database, make sure that you have:
 
 All this information is available in the [Web Control Panel](https://www.ovh.com/manager/web/){.external}.
 
-There is also a guide here: [](debuter-avec-clouddbguide.en-gb.md){.ref}
+There is also a guide here: [Getting started with the CloudDB service](../starting_with_clouddb/guide.en-gb.md){.ref}
 
 
 ### Connect via the command line
