@@ -8,13 +8,13 @@ section: 'FTP und SSH'
 order: 4
 ---
 
-**Stand 21.09.2020**
+**Letzte Aktualisierung am 21.09.2020**
 
-## Einleitung
+## Ziel
 
 Mit OVHcloud Webhosting Angeboten erhalten Sie einen Speicherplatz zum Online-Stellen der Dateien Ihrer Websites und Anwendungen. Auf diesen können Sie mithilfe eines SSH- oder FTP-Benutzers und den zugehörigen Passwörtern zugreifen.
 
-**In dieser Anleitung erfahren Sie, wie Sie den SSH-Zugang verwenden, um sich mit Ihrem OVHcloud Webhosting zu verbinden.**
+**Diese Anleitung erklärt, wie Sie den SSH-Zugang verwenden, um sich mit Ihrem OVHcloud Webhosting zu verbinden.**
 
 ## Voraussetzungen
 
@@ -22,7 +22,7 @@ Mit OVHcloud Webhosting Angeboten erhalten Sie einen Speicherplatz zum Online-St
 - Sie verfügen über die erforderlichen Informationen, um sich via SSH mit Ihrem Speicherplatz zu verbinden.
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web`{.action}.
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Schritt 1: Sicherstellen, dass der SSH-Zugang aktiv ist
 
@@ -109,12 +109,12 @@ Sie können über einen Befehl auch ein Skript ausführen, indem Sie eine bestim
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Je nach der PHP-Version, die Sie verwenden möchten, kann es sein, dass die Ausführungsumgebung aus Kompatibilitätsgründen angepasst werden muss. Weitere Informationen finden Sie in unserer Dokumentation „>“.
+Je nach der PHP-Version, die Sie verwenden möchten, kann es sein, dass die Ausführungsumgebung aus Kompatibilitätsgründen angepasst werden muss. Weitere Informationen finden Sie in den unten aufgeführten Anleitungen.
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihres Webhostings bearbeiten](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/)
+[Konfiguration Ihres Webhostings bearbeiten](../die_laufzeitumgebung_meines_webhostings_andern/)
 
-[.ovhconfig-Datei Ihres Webhostings konfigurieren](https://docs.ovh.com/de/hosting/ovhconfig-datei-konfigurieren/)
+[.ovhconfig-Datei Ihres Webhostings konfigurieren](../ovhconfig-datei-konfigurieren/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
