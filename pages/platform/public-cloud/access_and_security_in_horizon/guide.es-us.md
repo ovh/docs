@@ -6,6 +6,7 @@ legacy_guide_number: g1774
 section: Horizon
 ---
 
+
 ## Objetivo
 
 OpenStack Horizon pone a su disposición un menú desde el que podrá configurar diferentes elementos relativos al acceso a las instancias, entre otros servicios. Puede, por ejemplo, configurar grupos de seguridad que garanticen el filtro de las conexiones entrantes y salientes de las instancias, o incluso descargar el archivo OpenRC con sus claves para poder utilizar las API de OpenStack.
@@ -26,7 +27,6 @@ Grupos de seguridad
 Desde esta pestaña podrá administrar las reglas de seguridad y de acceso a las instancias, en concreto limitando el acceso a determinados puertos.
 
 ![Horizon](images/img_2630.jpg){.thumbnail}
-
 Pares de claves
 
 Esta pestaña permite gestionar las claves SSH de dos formas distintas:

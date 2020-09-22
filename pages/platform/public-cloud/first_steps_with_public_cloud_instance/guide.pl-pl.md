@@ -74,7 +74,7 @@ Po wybraniu niezbędnych informacji i kliknięciu przycisku Utwórz nastąpi prz
 
 W dowolnym momencie można przejść do strony `Zarządzania przepływem pracy`{.action} i usunąć bieżący proces automatycznego tworzenia kopii zapasowej: ![public-cloud](images/backupautodelete.png){.thumbnail}
 
-Pomocne informacje dotyczące kopii zapasowej można znaleźć w przewodniku [Tworzenie kopii zapasowej instancji](../back-up-instance/). 
+Pomocne informacje dotyczące kopii zapasowej można znaleźć w przewodniku [Tworzenie kopii zapasowej instancji](../kopia_zapasowa_instancji/). 
 
 ### Pobieranie danych do logowania
 

@@ -1,35 +1,34 @@
 ---
-title: Mise en route de l'API Swift S3
-excerpt: Découvrez comment utiliser l'API Swift S3
-slug: swift-s3api
-section: Gestion via OpenStack
+title: 'Getting started with the Swift S3 API'
+excerpt: 'Getting started with the Swift S3 API'
+slug: getting_started_with_the_swift_S3_API
+section: OpenStack
 order: 5
 ---
 
-## Objectif
+## Objective
 
-Le middleware Swift s3api qui assure la compatibilité de l'API S3 a été activé sur toutes les régions du Public Cloud.
-
-**Ce guide vous aidera à accéder aux objets de Swift à l'aide d'un logiciel conçu pour interagir avec des points de terminaison compatibles S3.**
-
-## Prérequis
-
-- [Préparer l’environnement pour utiliser l’API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/)
-- [Obtenir fichier Openstack RC v3 d'Horizon](../acces-et-securite-dans-horizon/)
-
-## En pratique
+The Swift s3api middleware providing S3 API compatibility has been enabled on all Public Cloud regions.
+This guide will help you access objects in Swift using a software designed to interact with S3-compatible endpoints.
 
 
-### Définir les variables d'environnement OpenStack
+## Requirements
 
- ```bash
+- [Prepare the environment to use the OpenStack API](../prepare_the_environment_for_using_the_openstack_api/)
+- [Get Openstack RC File v3 from Horizon](../access_and_security_in_horizon/)
+
+## Instructions
+
+### Set the OpenStack environment variables
+
+```bash
 user@host:~$ source <user_name>-openrc.sh
 Please enter your OpenStack Password for project <project_name> as user <user_name>:
 
 user@host:~$
 ```
 
-### Installer le client Openstack si nécessaire
+### Install Openstack client if needed
 
 ```bash
 user@host:~$ pip install python-openstackclient
@@ -37,15 +36,14 @@ user@host:~$ pip install python-openstackclient
 user@host:~$
 ```
 
-Référence de les commandes Openstack client [ici](https://docs.openstack.org/python-openstackclient/latest/).
+Openstack client command reference [here](https://docs.openstack.org/python-openstackclient/latest/).
 
-### Créer des informations d'identification EC2
+### Create EC2 credentials
 
-Les jetons S3 sont différents, vous avez besoin de 2 paramètres (**access** et **secret**) pour générer un jeton S3.
-Ces informations d'identification seront stockées en toute sécurité dans Keystone. Pour la générer:
+S3 tokens are different, you need 2 parameters (**access** and **secret**) to generate a S3 token.
+These credentials will be safely stored in Keystone. To generate it:
 
-Avec le client python-openstack:
-
+With python-openstack client:
 
 ```bash
 user@host:~$ openstack ec2 credentials create
@@ -62,8 +60,7 @@ user@host:~$ openstack ec2 credentials create
 +------------+----------------------------------------------------------------------------------------------------------------------------+
 ```
 
-
-Avec curl:
+With curl:
 
 ```bash
 user@host:~$ curl -s -D headers -H "Content-Type: application/json" -d '
@@ -104,9 +101,9 @@ user@host:~$ curl -s -X POST -H "Content-Type: application/json" -H "X-Auth-Toke
 }
 ```
 
-### Configurer le client AWS
+### Configure aws client
 
-Installez le client AWS et configurez-le comme suit:
+Install the aws client and configure it as follows:
 
 ```bash
 user@host:~$ pip install awscli awscli-plugin-endpoint
@@ -127,11 +124,9 @@ s3api =
   endpoint_url = https://s3.<public cloud region>.cloud.ovh.net
 ```
 
-L'accès de type hébergé virtuel et l'accès de type chemin d'accès sont pris en charge dans toutes les régions, mais nous vous recommandons d'utiliser le style hébergé virtuel car l'accès de type chemin d'accès sera déprécié après le 30 septembre 2020.
+Virtual hosted-style and path-style access are supported in all regions, but we recommend to use virtual hosted-style since path-style access will be deprecated after September 30, 2020.
 
-### Utiliser le client AWS
-
-Liste des Buckets (conteneurs):
+### Use aws client
 
 List buckets (containers):
 
@@ -139,38 +134,39 @@ List buckets (containers):
 user@host:~$ aws --profile default s3 ls
 ```
 
-Créer un nouveau bucket:
+Create a new bucket:
 
 ```bash
 user@host:~$ aws --profile default s3 mb s3://bucket
 ```
+S3 no longer supports creating bucket names that contain uppercase letters or underscores.
+S3 Buckets can only be created on PCS policy (Object Storage)
 
-S3 ne prend plus en charge la création de noms de bukcet contenant des lettres majuscules ou des traits de soulignement.
-Les buckets S3 ne peuvent être créés que sur la stratégie PCS (Stockage d'objets)
-
-Téléchargez un fichier local sur Swift:
+Upload a local file to Swift:
 
 ```bash
 user@host:~$ aws --profile default s3 cp file.txt s3://bucket/file.txt
 ```
 
-Télécharger un objet à partir de Swift:
+Download an object from Swift:
 
 ```bash
 user@host:~$ aws --profile default s3 cp s3://bucket/file.txt file.txt
 ```
 
-Supprimer un objet Swift:
+Delete a Swift object:
 
 ```bash
 user@host:~$ aws --profile default s3 rm s3://bucket/file.txt
 ```
 
-Supprimer un bucket:
+Delete a bucket:
 
 ```bash
 user@host:~$ aws --profile default s3 rb s3://bucket
+```
 
-## Aller plus loin
+## Go further
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+- Openstack client command reference [here](https://docs.openstack.org/python-openstackclient/latest/)
+- S3 client command reference [here](https://docs.aws.amazon.com/cli/latest/reference/s3/index.html)
