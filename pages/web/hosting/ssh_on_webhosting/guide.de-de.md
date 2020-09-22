@@ -60,7 +60,7 @@ Je nach der von Ihnen verwendeten Methode gibt es nun zwei Arten, um sich via SS
 #### 3.1 Über ein Terminal
 
 > [!warning]
-> Für unsere Shared Hosting Angebote gibt es keinen „Superbenutzer“- oder „root“-Zugriff via SSH.
+> Für unsere Shared Hosting Angebote gibt es keinen „Superuser“- oder „root“-Zugriff via SSH.
 
 Wenn das Terminal geöffnet ist, verwenden Sie folgenden Befehl und ersetzen Sie die Elemente „sshlogin“, „sshserver“ und „connectionport“ mit den entsprechenden Elementen aus Ihren SSH-Verbindungsinformationen. 
 
@@ -72,9 +72,9 @@ Nach Senden des Befehls werden Sie dazu aufgefordert, das Passwort des SSH-Benut
 
 ![SSH verwenden](images/use-ssh-step3.png){.thumbnail}
 
-#### 3.2 Über ein Programm
+#### 3.2 Über eine Anwendung
 
-Wenn Sie das Programm (zum Beispiel PuTTY) geöffnet haben, geben Sie die SSH-Verbindungsinformationen ein. Das die Vorgehensweise vom verwendeten Programm abhängig ist, können wir diese hier nicht im Detail aufführen. Lesen Sie bei Bedarf die nachfolgenden Beschreibungen zu den anzugebenden Informationen:
+Wenn Sie die Anwendung (zum Beispiel PuTTY) geöffnet haben, geben Sie die SSH-Verbindungsinformationen ein. Das die Vorgehensweise vom verwendeten Programm abhängig ist, können wir diese hier nicht im Detail aufführen. Lesen Sie bei Bedarf die nachfolgenden Beschreibungen zu den anzugebenden Informationen:
 
 |Anzugebende Information|Beschreibung|
 |---|---|
