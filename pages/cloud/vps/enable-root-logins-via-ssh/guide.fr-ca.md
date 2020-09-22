@@ -15,18 +15,18 @@ Pour effectuer certaines fonctions administratives sur votre serveur (p. ex. l'i
 
 > [!warning]
 >
-> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVH avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation ! Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVH ne sera pas en mesure de vous fournir une assistance.
+> Ce tutoriel vous présente l’utilisation d’une ou de plusieurs solutions OVHcloud avec des outils externes et vous décrit des manipulations réalisées dans un contexte précis. Pensez à les adapter en fonction de votre situation ! Si vous rencontrez des difficultés lors de ces manipulations, nous vous invitons à faire appel à un prestataire spécialisé et/ou à poser vos questions à notre communauté sur <https://community.ovh.com/>. OVHcloud ne sera pas en mesure de vous fournir une assistance.
 >
 
 ## Prérequis
 
-- Un service (VPS, Serveur dédié, Instance Public Cloud) qui n'a actuellement pas de connexion root  activée.
+- Un service (VPS, Serveur dédié, Instance Public Cloud) qui n'a actuellement pas de connexion root activée.
 
 ## En pratique
 
 ### Devenez utilisateur root
 
-Pour devenir utilisateur root, tapez la commande suivante sur la ligne de commande:
+Pour devenir utilisateur root, entrez la commande suivante en ligne de commande:
 
 ```sh
 ~$ sudo su -
@@ -37,7 +37,7 @@ Vous devez être invité à indiquer votre mot de passe actuel pour changer d'ut
 
 ### Définir le mot de passe utilisateur root
 
-Maintenant que vous êtes l'utilisateur root, vous pouvez définir un mot de passe pour lui.
+Maintenant que vous êtes l'utilisateur root, vous pouvez définir un mot de passe pour cet utilisateur.
 
 ```sh
 ~# passwd
@@ -50,8 +50,8 @@ passwd: password updated successfully
 Vous devez configurer le service SSH pour autoriser les connexions avec l'utilisateur root.
 
 > [!warning]
-> L'activation des connexions root n'est pas recommandée, car elle ouvrira votre serveur à des attaques de force brute.
-> Nous vous recommandons de prendre des mesures pour sécuriser votre VPS en premier. Vous pouvez vous référer à notre guide sur [Sécuriser un VPS](../conseils-securisation-vps/){.external}
+> L'activation des connexions root n'est pas recommandée, car elle peut exposer votre serveur à des attaques de force brute.
+> Nous vous recommandons de prendre des mesures pour d'abord sécuriser votre VPS. Vous pouvez vous référer à notre guide sur [Sécuriser un VPS](../conseils-securisation-vps/){.external}
 >
 
 #### Ouvrir le fichier sshd_config
