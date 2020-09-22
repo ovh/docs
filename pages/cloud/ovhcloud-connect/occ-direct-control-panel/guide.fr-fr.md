@@ -122,7 +122,9 @@ Si vous choisissez le type « BGP », saisissez alors les informations requises.
 
 ![ajout datacentre](images/l3dc5.png){.thumbnail}
 
-Vous pouvez ajouter plusieurs configurations de routage au sein d'un même Datacentre. Le type de configuration choisi sur votre première configuration s'appliquera alors aux suivantes sur le même Datacentre.
+Vous pouvez ajouter plusieurs configurations de routage au sein d'un même datacentre. Le type de configuration (BGP / Static) choisi sur votre première configuration de routage s'appliquera alors aux suivantes sur le même datacentre.
+
+![ajout datacentre](images/l3dc6.png){.thumbnail}
 
 ### Suppression des ressources
 
