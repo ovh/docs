@@ -14,7 +14,9 @@ section: Cloud Disk Array
 > Using web interface is the easiest way to create a user.
 > 
 
-First, connect to the [Ceph as a Service manager](https://www.ovh.com/manager/sunrise/caas/index.html#/caas){.external}. On the bottom left, you will find the **user list**. No user is created by default (except *admin* that you can't use and that is hidden).
+First, connect to the [manager](https://ca.ovh.com/manager/dedicated/#/configuration){.external} and under Platforms and services you'll fine the Ceph service. 
+
+In the tab 'Users', you will find the **user list**. No user is created by default (except *admin* that you can't use and that is hidden).
 
 
 ![Ceph users](images/create_a_user_1.png){.thumbnail}

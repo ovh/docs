@@ -9,7 +9,7 @@ section: Cloud Disk Array
 ## Using web interface
 Using web interface is the easiest way to change user rights.
 
-You must first select your user.
+You must first select the action icon to the right of the user.
 
 
 ![Ceph users](images/change_user_rights_1.png){.thumbnail}

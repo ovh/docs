@@ -86,7 +86,7 @@ Once you have submitted the activation request, the SSL secure connection status
 
 ![managessl](images/manage-ssl-step6.png){.thumbnail}
 
-### Activate an SSL certificate on a Web Hosting plan.
+### Regenerate an SSL certificate on a Web Hosting plan.
 
 > [!primary]
 >

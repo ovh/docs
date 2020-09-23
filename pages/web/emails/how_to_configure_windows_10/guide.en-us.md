@@ -85,6 +85,6 @@ OVHcloud also has a web application you can use to access your email account fro
 ## Go further
 
 
-[Configuring your Exchange account in the Mail app for Windows](../../microsoft-collaborative-solutions/mail-configuration-windows-10/){.external}
+[Configuring your Exchange account in the Mail app for Windows](../../microsoft-collaborative-solutions/exchange-mail-configuration-windows-10/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.
