@@ -66,7 +66,7 @@ The interface offers two modes to configure the frequency of your task. Use the 
 |Enter numeric values as you would in a *crontab*. The asterisk operator denotes "every value" of the time period, meaning the task would continuously run **once an hour every day** in this example.|
 |![cron frequency](images/cron-jobs-4.png){.thumbnail}|
 
-You can switch between the two modes during configuration to view the changes accordingly. Please also note the [limitations when scheduling a task on a Web Hosting](./#limitations-of-web-hosting-tasks).
+You can switch between the two modes during configuration to view the changes accordingly. Please also note the [limitations when scheduling a task on a Web Hosting](./#limitations-of-web-hosting-tasks_1).
 
 ![cron control panel](images/cron-jobs-5.gif){.thumbnail}
 
@@ -138,8 +138,8 @@ Please refer to [this guide](../shared_view_my_websites_logs_and_statistics/) fo
 - Example of a failed execution output because of a permissions error (chmod) or incorrect configuration of the .ovhconfig file
 
 ```
-[2020-08-11 18:07:10]
 [2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
+[2020-08-11 18:07:10]
 [2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
 ```
 
