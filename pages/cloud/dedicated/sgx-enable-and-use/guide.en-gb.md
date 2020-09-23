@@ -48,6 +48,8 @@ Scroll down to the "Advanced features" box and click on `...`{.action} next to "
 
 This will cause your server to reboot. Confirm in the popup window and allow a few minutes before accessing your server again.
 
+Continue with [Step 4](step-4-installing-the-sgx-software-stack) of the intructions below.
+
 ### Using the OVHcloud API
 
 #### Step 1: Logging in to the API console
@@ -98,7 +100,7 @@ You can verify that the status is set to enabled:
 
 The server needs to reboot before continuing.
 
-#### Step 4: Installing the SGX software stack
+### Step 4: Installing the SGX software stack
 
 Use the following commands to install Intel's driver and SDK to be able to develop and run SGX applications.  
 
@@ -136,11 +138,11 @@ chmod +x sgx_linux_x64_driver_2.5.0_2605efa.bin
 sudo ./sgx_linux_x64_driver_2.5.0_2605efa.bin
 ```
 
-#### Step 5: Rebooting to finish the installation
+### Step 5: Rebooting to finish the installation
 
 The server needs to reboot before continuing.
 
-#### Step 6: Validating the installation (optional)
+### Step 6: Validating the installation (optional)
 
 You can use a sample application to validate the installation. Build one of the sample apps provided:
 
