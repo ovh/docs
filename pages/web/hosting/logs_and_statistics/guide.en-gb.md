@@ -1,6 +1,6 @@
 ---
 title: 'Accessing a website’s logs and statistics on a Web Hosting'
-excerpt: Find out how to access statistics
+excerpt: Find out how to review statistics and logs of your websites
 slug: shared_view_my_websites_logs_and_statistics
 legacy_guide_number: g1344
 section: 'Website optimisation'
@@ -10,9 +10,9 @@ section: 'Website optimisation'
 
 ## Objective
 
-Standard logs and statistics for websites are included in your Web Hosting plan, easily accessible from your OVHcloud Control Panel.
+Web server logs and website statistics are included in your Web Hosting plan, easily accessible from your OVHcloud Control Panel.
 
-**This guide explains how to.**
+**This guide provides an overview of the available logs and statistics.**
 
 ## Requirements
 
@@ -86,7 +86,7 @@ Various types of logs are available:
 - **cgi**: These logs collect the various calls to the cgi.bin scripts that were made.
 - **out**: These are the external calls of your hosting.
 - **ssh**: These logs indicate the different connections made with the SSH protocol.
-- **cron**: These logs deliver the results of performing your (scheduled tasks)](../hosting_automated_taskscron)).
+- **cron**: The results of executing your [scheduled tasks](../hosting_automated_taskscron) are logged here.
 
 
 ## Go further
