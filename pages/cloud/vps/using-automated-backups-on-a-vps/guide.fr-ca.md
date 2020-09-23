@@ -120,15 +120,21 @@ $ file /dev/virtio-ports/org.qemu.guest_agent.0
 
 Si le résultat est différent (« No such file or directory »), installez le dernier package :
 
-```
+``
 $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
-Démarrez le service pour vous assurer qu'il est en cours d'exécution :
+Redémarrez le VPS:
 
 ```
-$ sudo service qemu-guest-agent start
+$ sudo reboot
+```
+
+Vérifier le service pour vous assurer qu'il est en cours d'exécution :
+
+```
+$ sudo service qemu-guest-agent status
 ```
 
 ##### **Distributions Redhat (CentOS, Fedora)**
@@ -147,10 +153,15 @@ $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
-Démarrez l'agent et vérifiez qu'il est en cours d'exécution :
+Redémarrez le VPS:
 
 ```
-$ sudo service qemu-guest-agent start
+$ sudo reboot
+```
+
+Vérifier l'agent et vérifiez qu'il est en cours d'exécution :
+
+```
 $ sudo service qemu-guest-agent status
 ```
 
