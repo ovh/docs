@@ -37,25 +37,25 @@ In this tab, you can choose between two links: one to display the **website visi
 
 #### OVHcloud Web Statistics
 
-This tool helps you to track and control the traffic of websites hosted on your Web Hosting plan, by visually compiling statistics of attendance and audience measurement.
+This tool helps you to track and control the traffic of websites hosted on your Web Hosting plan, by visually compiling statistics of page visits and audience measurement.
 
 ![hosting](images/OWStats01.gif){.thumbnail}
 
 The dashboard of OVHcloud Web Statistics is presented in 6 sections in the left panel.
 
-- Dashboard: visualisation du trafic sur les sites de votre hébergement.
-- Browsers: classement des navigateurs internet les plus utilisés pour visualiser vos sites.
-- Geolocalization:  proportion de visiteurs en fonction de leur localisation.
-- Requests: classement des pages les plus consultées sur vos sites.
-- Robots: visualisation des robots qui passent sur vos sites.
-- Status: statistiques des échecs et réussites rencontrés en fonction des codes HTTP retournés.
-- FAQ: rubrique dédiée aux questions les plus fréquentes
+- Dashboard: visualises the website traffic on your Web Hosting plan.
+- Browsers: shows a ranking of the most used internet browsers to view your sites.
+- Geolocalization: groups site visitors according to their location.
+- Requests: displays the ranking of the most visited pages on your sites.
+- Robots: visualises the automated attempts to connect to your sites.
+- Status: displays statistics of the failures and successes encountered, based on the HTTP codes returned.
+- FAQ: opens the section dedicated to frequently asked questions.
 
 The `Period selection` box allows you to select a specific time frame.
 
 #### Urchin v6 (legacy)
 
-If the access to the OVHcloud Web Statistics is not available on your hosting, you will have the legacy tool Urchin 6 instead.
+If access to the OVHcloud Web Statistics is not available on your hosting, you will have the legacy tool Urchin v6 instead.
 
 ![hosting](images/1490.png){.thumbnail}
 
@@ -65,9 +65,9 @@ Urchin provides information about:
 - the number of visitors
 - the number of pages viewed
 - the weighting of the viewed pages
-- the number of http requests
+- the number of *http* requests
 - the average connection times to your entire site or a particular page
-- referrer URLs, to know where visitors come from
+- referrer URLs, to see where visitors come from
 - the search engines used to find the site
 - the keywords used in web searches leading to the site
 - the most visited pages on the site
@@ -78,7 +78,7 @@ You can view the raw logs of your site with a delay of about 5 minutes.
 
 ![hosting](images/logs01.png){.thumbnail}
 
-Various types of logs are available:
+Different types of logs are available:
 
 - **web**: Here you can find the various logs of your site visits, as well as the outgoing actions from your site. For example, this allows you to detect malicious access attempts.
 - **ftp**: The different FTP connections will be stored in these logs.
