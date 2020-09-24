@@ -12,7 +12,7 @@ order: 1
 
 Utilizzati dalla maggior parte dei sistemi di gestione dei contenuti (Content Management System o CMS) come WordPress e Joomla!, i database permettono di salvare gli elementi detti dinamici (ad esempio, commenti o articoli). 
 
-**Questa guida ti mostra come creare e gestire un database sul tuo hosting Web OVHcloud **.
+**Questa guida ti mostra come creare e gestire un database sul tuo hosting Web OVHcloud.**
 
 ## Prerequisiti
 
@@ -43,7 +43,7 @@ Nella nuova finestra, completa i campi richiesti e poi clicca su `Seguente`{.act
 |Campo|Descrizione|  
 |---|---|  
 |Motore del database|Seleziona il motore che verrà utilizzato dal database (i database inclusi con gli [hosting Web OVHcloud](https://www.ovh.it/hosting-web) propongono solo il motore MySQL).|  
-|Versione del database|Seleziona la versione utilizzata dal motore del database  (verifica la compatibilità del tuo sito con l’opzione scelta). |  
+|Versione del database|Seleziona la versione utilizzata dal motore del database  (verifica la compatibilità del tuo sito con l’opzione scelta).|  
 |Tipo di database|Seleziona la capacità del database, cioè lo spazio a disposizione per salvare i dati.|   
 
 Una volta selezionate tutte le informazioni, clicca su `Seguente`{.action}. 
@@ -57,7 +57,7 @@ Verifica la correttezza delle informazioni inserite e clicca su `Conferma`{.acti
 
 > [!primary]
 >
-> Per motivi di sicurezza, la password inserita dovrà rispettare alcuni requisiti.  Inoltre, ti consigliamo di: 
+> Per motivi di sicurezza, la password inserita dovrà rispettare alcuni requisiti. Inoltre, ti consigliamo di: 
 >
 > - non utilizzare due volte la stessa password
 >
@@ -100,7 +100,7 @@ Le credenziali di accesso sono pre-compilate, quindi basta soltanto inserire la 
 
 Per ogni database di hosting Web, gli Snapshots verranno creati ogni giorno in modo automatico (massimo 32 entità). Il che significa che puoi semplicemente ripristinare una versione precedente dal tuo Spazio Cliente OVHcloud. 
 
-Per verificare gli Snapshot disponibili e la relativa data di creazione, clicca sul simbolo situato accanto al cerchio verde nella tabella del tuo database  Inoltre, da qui è possibile scaricare i backup dei database. Per maggiori dettagli su questo argomenti, consulta la nostra guida [Recuperare il backup del database di un hosting Web](../web_hosting_come_esportare_un_database)
+Per verificare gli Snapshot disponibili e la relativa data di creazione, clicca sul simbolo situato accanto al cerchio verde nella tabella del tuo database  Inoltre, da qui è possibile scaricare i backup dei database. Per maggiori dettagli su questo argomenti, consulta la nostra guida [Recuperare il backup del database di un hosting Web](../web_hosting_come_esportare_un_database).
 
 #### Problemi frequenti
 
