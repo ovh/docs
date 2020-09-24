@@ -6,7 +6,7 @@ section: 'Opciones de copia de seguridad'
 order: 1
 ---
 
-**Última actualización: 22/4/2020**
+**Última actualización: 23/09/2020**
 
 
 ## Objetivo
@@ -17,13 +17,13 @@ Crear una instantánea (<i>snapshot</i>) es una forma simple y rápida de proteg
 
 > [!primary]
 >
-Antes de aplicar las opciones de copia de seguridad, le recomendamos que consulte las [preguntas frecuentes y demás páginas del producto](https://www.ovhcloud.com/es-es/vps/options/) para acceder a una comparativa de los precios y otras informaciones.
+Antes de aplicar las opciones de copia de seguridad, le recomendamos que consulte las [preguntas frecuentes y demás páginas del producto](https://www.ovhcloud.com/es/vps/options/) para acceder a una comparativa de los precios y otras informaciones.
 >
 
 ## Requisitos
 
 - Tener acceso al [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
-- Tener un [servicio de servidor virtual privado (VPS)](https://www.ovh.com/world/es/vps/) de OVHcloud configurado.
+- Tener un [servicio de servidor virtual privado (VPS)](https://www.ovhcloud.com/es/vps/) de OVHcloud configurado.
 
 
 ## Procedimiento
@@ -74,7 +74,13 @@ $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
-Inicie el servicio para garantizar que está en ejecución:
+Reiniciar el VPS :
+
+```
+$ sudo reboot
+```
+
+Verifique el servicio para garantizar que está en ejecución:
 
 ```
 $ sudo service qemu-guest-agent start
@@ -96,10 +102,15 @@ $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
-Inicie el software y compruebe que está en ejecución:
+Reiniciar el VPS :
 
 ```
-$ sudo service qemu-guest-agent start
+$ sudo reboot
+```
+
+Verifique el software y compruebe que está en ejecución:
+
+```
 $ sudo service qemu-guest-agent status
 ```
 

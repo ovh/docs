@@ -6,7 +6,7 @@ section: 'Opciones de copia de seguridad'
 order: 1
 ---
 
-**Última actualización: 22/4/2020**
+**Última actualización: 23/9/2020**
 
 
 ## Objetivo
@@ -74,10 +74,17 @@ $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
-Inicie el servicio para garantizar que está en ejecución:
+Reiniciar el VPS:
 
 ```
-$ sudo service qemu-guest-agent start
+$ sudo reboot
+```
+
+
+Verifique  el servicio para garantizar que está en ejecución:
+
+```
+$ sudo service qemu-guest-agent status
 ```
 
 ##### **Distribuciones Red Hat (CentOS, Fedora)**
@@ -96,10 +103,15 @@ $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
-Inicie el software y compruebe que está en ejecución:
+Reiniciar el VPS:
 
 ```
-$ sudo service qemu-guest-agent start
+$ sudo reboot
+```
+
+Verifique el software y compruebe que está en ejecución:
+
+```
 $ sudo service qemu-guest-agent status
 ```
 
