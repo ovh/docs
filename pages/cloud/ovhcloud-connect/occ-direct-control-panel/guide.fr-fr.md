@@ -66,7 +66,13 @@ Une fois votre vRack associé, cliquez sur `Ajouter une configuration PoP`{.acti
 
 ![ajout Pop](images/pop1.png){.thumbnail}
 
-Vous devrez alors saisir votre ASN, l'ASN OVHcloud ainsi que que l'adresse réseau en /30.
+Vous devrez alors saisir les éléments suivants :
+
+| Information    | Description |
+|:-------:|:------:|
+| ASN client    | Votre numéro d'AS BGP, qui est configuré sur votre routeur situé dans le PoP |
+| ASN OVHcloud    | Le numéro d'AS OVHcloud qui sera configuré sur les routeurs de OVHcloud Connect situés dans le PoP |
+| Sous-réseau en /30    | Un bloc IPv4 de taille /30, utilisé pour le lien entre votre routeur et le routeur OVHcloud Connect situé dans le PoP |
 
 ![ajout Pop](images/l3pop1-1.png){.thumbnail}
 
