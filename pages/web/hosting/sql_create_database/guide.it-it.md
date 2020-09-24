@@ -12,7 +12,7 @@ order: 1
 
 Utilizzati dalla maggior parte dei sistemi di gestione dei contenuti (Content Management System o CMS) come WordPress e Joomla!, i database permettono di salvare gli elementi detti dinamici (ad esempio, commenti o articoli). 
 
-**Questa guida ti mostra come creare e gestire un database sul tuo hosting Web OVHcloud **.
+**Questa guida ti mostra come creare e gestire un database sul tuo hosting Web OVHcloud.**
 
 ## Prerequisiti
 
