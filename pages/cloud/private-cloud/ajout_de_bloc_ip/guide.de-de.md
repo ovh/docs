@@ -46,7 +46,7 @@ Zur Erstellung Ihres IP-Blocks sind zunächst mehrere Felder auszufüllen:
 
 > [!primary]
 >
-> Welche IPs Ihres Blocks reserviert sind und wofür sie verwendet werden, können Sie in unserer Anleitung zum [OVHcloud Network Plugin](https://docs.ovh.com/de/private-cloud/ovhcloud-network-plugin/){.external-link} nachlesen.
+> Welche IPs Ihres Blocks reserviert sind und wofür sie verwendet werden, können Sie in unserer Anleitung zum [OVHcloud Network Plugin](../ovhcloud-network-plugin/) nachlesen.
 >
 
 - Land des IP-Blocks. Dieses kann für das SEO-Ranking Ihrer Dienste von Bedeutung sein (zum Beispiel ist die Referenzierung einer deutschen Website in Deutschland besser, wenn auch ihre IP deutsch ist)
@@ -55,7 +55,7 @@ Zur Erstellung Ihres IP-Blocks sind zunächst mehrere Felder auszufüllen:
 - Netzwerkbeschreibung (sichtbar im Whois des IP-Blocks)
 - Verwendung (Nutzungsinformationen wie Web, SSL, Cloud, ...)
 
-> \[!success]
+> [!success]
 >
 > Die Aktivierungsgebühren eines Blocks betragen 2,34 € inkl. MwSt./IP. Für einen Block der Größe `/28` mit 16 IPs bedeutet das, dass vor der Lieferung ein Bestellschein über 37,44 € inkl. MwSt. zu begleichen ist.
 >  
@@ -70,7 +70,7 @@ Für die Migration eines IP-Blocks müssen die Blöcke manuell über die OVHclou
 
 Verwenden Sie hierzu folgenden Befehl:
 
-> \[!api]
+> [!api]
 >
 > @api {POST} /ip/{ip}/move
 > 
@@ -90,7 +90,7 @@ Das Ergebnis wird wie folgt angezeigt:
 
 Verwenden Sie anschließend diesen API-Aufruf, um die IP in den IP-Parkplatz zu verschieben:
 
-> \[!api]
+> [!api]
 >
 > @api {POST} /ip/{ip}/park
 > 
@@ -100,7 +100,7 @@ Verwenden Sie anschließend diesen API-Aufruf, um die IP in den IP-Parkplatz zu 
 > Dieser Aufruf trennt das Netzwerk auf den VMs, die die betreffenden IPs verwenden.
 >
 
-Sie können die Migration Ihres IP-Blocks über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im Bereich `Server`{.action} unter `Private Cloud`{.action} nachverfolgen. Klicken Sie auf Ihren Hosted Private Cloud Dienst und dann auf den Tab `Operationen`{.action}.
+Sie können die Migration Ihres IP-Blocks über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) im Bereich `Server`{.action} unter `Private Cloud`{.action} nachverfolgen. Klicken Sie auf Ihren Hosted Private Cloud Dienst und dann auf den Tab `Operationen`{.action}.
 
 Die Referenz der Operation lautet „removeIpRipeBlock“.
 

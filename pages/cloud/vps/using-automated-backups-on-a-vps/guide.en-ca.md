@@ -6,7 +6,7 @@ section: 'Backup options'
 order: 2
 ---
 
-**Last updated 2020/04/22**
+**Last updated 2020/09/23**
 
 
 ## Objective
@@ -127,10 +127,16 @@ $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
-Start the service to ensure it is running:
+Reboot the VPS:
 
 ```
-$ sudo service qemu-guest-agent start
+$ sudo reboot
+```
+
+Check the service to ensure it is running:
+
+```
+$ sudo service qemu-guest-agent status
 ```
 
 ##### **Redhat-based distributions (Centos, Fedora)**
@@ -149,10 +155,16 @@ $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
-Start the agent and verify that it is running:
+Reboot the VPS:
 
 ```
-$ sudo service qemu-guest-agent start
+$ sudo reboot
+```
+
+
+Check the agent and verify that it is running:
+
+```
 $ sudo service qemu-guest-agent status
 ```
 

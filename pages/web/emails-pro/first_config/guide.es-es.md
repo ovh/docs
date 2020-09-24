@@ -49,13 +49,13 @@ A continuación, haga clic en `Siguiente`{.action}.
 
 Se mostrará un mensaje con la información relativa a la configuración de un modo.
 
-- **En cuanto a los nombres de dominio no gestionados por OVHcloud**, estos se configurarán por defecto en modo no autónomo.
+- **En cuanto a los nombres de dominio no gestionados por OVHcloud**, estos se configurarán por defecto en modo no autoritario.
 - **En cuanto a los dominios gestionados por OVHcloud**, tendrá que elegir entre dos modos.
 
 |Modo|Descripción|
 |---|---|
-|Autónomo|Es conveniente si solo utiliza la solución E-mail Pro con su nombre de dominio. No permite utilizar otra solución de correo conjuntamente con E-mail Pro.|
-|No autónomo|Es conveniente si utiliza con su nombre de dominio la solución E-mail Pro conjuntamente con otra solución de correo electrónico.| 
+|Autoritario|Es conveniente si solo utiliza la solución E-mail Pro con su nombre de dominio. No permite utilizar otra solución de correo conjuntamente con E-mail Pro.|
+|No autoritario|Es conveniente si utiliza con su nombre de dominio la solución E-mail Pro conjuntamente con otra solución de correo electrónico.| 
 
 > [!primary]
 >

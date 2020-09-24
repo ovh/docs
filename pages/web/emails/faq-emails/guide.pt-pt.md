@@ -5,7 +5,7 @@ slug: faq-emails
 section: Introdução
 ---
 
-**Última atualização: 28/07/2020**
+**Última atualização: 24/09/2020**
 
 ## FAQ: e-mails
 
@@ -13,8 +13,8 @@ section: Introdução
 
 Na maioria dos casos, a impossibilidade de enviar ou receber e-mails está relacionada com a configuração do seu endereço no webmail. Para o verificar, aceda ao [webmail](https://www.ovh.pt/mail/){.external} e faça um teste de envio e receção a partir do seu endereço.
 
-* Se tudo funcionar normalmente, é porque o fenómeno tem mesmo origem na configuração do seu endereço. 
-* No entanto, se continuar a experimentar problemas no envio e na receção de e-mails, tem outras soluções ao seu dispor.
+- Se tudo funcionar normalmente, é porque o fenómeno tem mesmo origem na configuração do seu endereço. 
+- No entanto, se continuar a experimentar problemas no envio e na receção de e-mails, tem outras soluções ao seu dispor.
 
 Recebe uma mensagem de erro no seguimento do envio de um e-mail? Se sim, leia toda a mensagem de erro, pois ela poderá especificar a razão (caixa cheia, caixa não existente...).
 
@@ -32,11 +32,16 @@ Graças ao [webmail](https://www.ovh.pt/mail/){.external}, pode aceder a qualque
 
 **Truques e dicas**: Se configurar a sua conta de e-mail num programa de correio eletrónico, sugerimos que o faça com o protocolo IMAP. Assim, os e-mails ficarão armazenados no servidor e poderá consultá-los onde quer que esteja, a partir do [webmail](https://www.ovh.pt/mail/){.external}. Para isso, pode recorrer à nossa [documentação](../partilhado_generalidades_e-mail_partilhado_ovh/).
 
-### Como gerir os meus serviços de e-mail? 
+### Como gerir os serviços de e-mail? 
 
-O conjunto dos seus endereços de e-mail é gerido a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Depois de se conectar, aceda ao serviço em causa. Assim, pode alterar a palavra-passe dos seus endereços de e-mail, verificar o espaço utilizado, criar novos endereços ou eliminar endereços existentes.
+Todos os seus endereços de e-mail são geridos através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Para o fazer, aceda e selecione o produto em questão. Pode alterar palavras-passe de endereços de e-mail, verificar a percentagem de espaço utilizado, criar novos endereços de e-mail ou eliminar endereços existentes. 
 
-**Truques e dicas**: No serviço de e-mail MX Plan, pode atribuir a gestão de uma conta de e-mail a outra conta OVHcloud, ao mesmo tempo que mantém o controlo sobre ambas. Basta configurar uma delegação a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Aceda à rubrica «E-mails» e selecione o domínio em causa. De seguida, no separador «E-mails», escolha uma das opções apresentadas. 
+**Dicas**: Com as soluções de e-mail MX Plan, pode delegar a gestão de uma conta de e-mail para outra conta OVHcloud, continuando a manter o controlo. Para o fazer, basta configurar uma delegação através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}: Aceda à Área de Cliente OVHcloud, consulte a secção `E-mails` e selecione o domínio em questão. A seguir, aceda ao separador `E-mails` e selecione uma opção:
+
+- `Gerir os elementos partilhados por todos os endereços de e-mail`{.action} na parte direita da interface, se pretender delegar a gestão de todas as suas contas para este domínio
+- `Gestão da delegação`{.action}, se pretender delegar a gestão de uma conota específica (clique em `...`{.action} junto à conta em questão)  
+
+Tenha em conta que é necessário um ID de cliente OVHcloud (NIC handle) para ambas as opções. 
 
 ### Como limitar a receção de spam? 
 

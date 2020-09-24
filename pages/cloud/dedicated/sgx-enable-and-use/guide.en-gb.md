@@ -1,7 +1,7 @@
 ---
-title: 'Managing Intel SGX on an infrastructure server'
+title: 'Managing Intel SGX on an Infrastructure server'
 slug: enable-and-use-intel-sgx
-excerpt: 'Find out how to enable SGX on your infrastructure server and install the Linux SGX software stack'
+excerpt: 'Find out how to enable SGX on your dedicated server and install the Linux SGX software stack'
 section: 'Advanced use'
 ---
 
@@ -47,7 +47,7 @@ Scroll down to the "Advanced features" box and click on `...`{.action} next to "
 
 This will cause your server to reboot. Confirm in the popup window and allow a few minutes before accessing your server again.
 
-Continue with [Step 4](./#step-4-installing-the-sgx-software-stack) of the intructions below.
+Continue with [Step 4](./#step-4-installing-the-sgx-software-stack_1) of the instructions below.
 
 ### Using the OVHcloud API
 
