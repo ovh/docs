@@ -120,7 +120,7 @@ $ file /dev/virtio-ports/org.qemu.guest_agent.0
 
 Si le résultat est différent (« No such file or directory »), installez le dernier package :
 
-``
+```
 $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
@@ -177,6 +177,7 @@ Status   Name               DisplayName
 ------   ----               -----------
 Running  QEMU-GA            QEMU Guest Agent
 ```
+
 ## Aller plus loin
 
 [Utiliser les snapshots sur un VPS](../snapshot-vps/)
