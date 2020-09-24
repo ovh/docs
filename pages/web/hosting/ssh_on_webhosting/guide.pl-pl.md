@@ -1,135 +1,118 @@
 ---
-title: 'Dostęp przez SSH na hostingu'
-excerpt: 'Hosting www: SSH na hostingu'
+title: 'Korzystanie z dostępu do hostingu WWW przez SSH'
 id: '1962'
 slug: hosting_www_ssh_na_hostingu
+excerpt: 'Dowiedz się jak się podłączyć i korzystać z dostępu do Twojego hostingu OVHcloud przez protokół SSH'
 section: 'FTP i SSH'
 ---
 
-## Czy jest SSH i jak korzystać z tej funkcjonalności?
-Z SSH na hostingu www można korzystać od oferty Pro (w przypadku starych ofert od hostingu z gamy plan).
+**Ostatnia aktualizacja z dnia 04-08-2020**
 
-Uwaga: W starych ofertach dostęp jest możliwy tylko za pomocą głównego konta FTP. Oznacza to, że dodatkowi użytkownicy FTP nie mają dostępu przez SSH.
+## Wprowadzenie
 
-SSH pozwala na logowanie się na hosting i na wykonywanie operacji na plikach (jak przez FTP). 
+Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej umożliwiającej umieszczanie w Internecie plików z Twoich stron www lub Twoich aplikacji. Do przestrzeni dyskowej możesz zalogować się używając, między innymi, protokołu FTP lub SSH oraz odpowiadających im haseł.
 
-Aby uzyskać więcej informacji na temat protokołu SSH, [kliknij tutaj](https://pl.wikipedia.org/wiki/Secure_Shell).
+**Odkryj jak się podłączyć i korzystać z dostępu do Twojego hostingu OVHcloud przez protokół SSH.**
 
+## Wymagania początkowe
 
-## Wymagania
+- Posiadanie [hostingu WWW OVHcloud](https://www.ovh.pl/hosting/) z dostępem przez protokół SSH.
+- Posiadanie informacji umożliwiających logowanie się do przestrzeni dyskowej za pomocą SSH.
+- Mieć dostęp do[panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), sekcja `Web`{.action}
 
-- Opcja SSH jest dostępna na:
+## W praktyce
 
-Hostingach www od [oferty PRO](https://www.ovh.pl/hosting/hosting-pro.xml).
+### Etap 1: upewnij się, że dostęp przez SSH jest aktywny
 
+Rozpocznij od zalogowania się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) w sekcji `Web`{.action} i kliknij `Hostingi`{.action} na pasku usług po lewej stronie. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. Wyświetlą się wówczas dane dotyczące Twojej przestrzeni dyskowej. 
 
-- Program umożliwiający logowanie się przez SSH
+Odnajdź w tabeli kolumnę „SSH”, aby sprawdzić, czy dany użytkownik SSH (lub „Login SSH”) posiada aktywny dostęp przez protokół SSH. Jeżeli tak nie jest, pojawi się informacja „Wyłączony”.
 
-- Otwarty na firewallu lub na routerze port 22
+![usessh](images/use-ssh-step1.png){.thumbnail}
 
+Jeżeli dostęp nie jest aktywny, kliknij przycisk `...`{.action} po prawej stronie wybranego użytkownika, a następnie `Zmień`{.action}. W oknie, które się wyświetli, włącz dostęp SSH, a następnie dokończ procedurę zmiany ustawienia. Jeżeli nie znajdujesz opcji aktywacji, sprawdź, czy [Twoja oferta hostingowa www OVHcloud](https://www.ovh.pl/hosting/) posiada dostęp przez protokół SSH.
 
+### Etap 2: pobranie informacji niezbędnych do logowania
 
+Aby zalogować się do przestrzeni dyskowej przez SSH, należy posiadać następujące dane. Jeżeli ich nie posiadasz, znajdziesz je w zakładce `FTP - SSH`{.action}.
 
-## Włączanie / Wyłączanie SSH dla danego użytkownika
-W panelu klienta możesz zarządzać loginami SSH. Wystarczy wybrać hosting z menu po lewej stronie i przejść do zakładki "FTP - SSH".
+|Element|Gdzie go znaleźć?|
+|---|---|
+|Aktywny użytkownik SSH|Odnajdziesz go w kolumnie „Login SSH” tabeli. Przypominamy, że użytkownik ten musi [posiadać aktywny dostęp przez SSH](./#etap-1-upewnij-sie-ze-dostep-przez-ssh-jest-aktywny).|
+|Hasło użytkownika SSH|Jeżeli nie pamiętasz hasła, możesz je zmienić klikając przycisk `...`{.action}, a następnie `Zmień hasło`{.action}.|
+|Adres serwera SSH|Wyszukaj opcję „Dostęp do klastra przez SSH”. W elemencie, który wtedy się pojawi, adres serwera SSH rozpoczyna się po „ssh://” i kończy przed znakiem „:”.|
+|Port połączenia z serwerem SSH|Wyszukaj opcję „Dostęp do klastra przez SSH”. W elemencie, który się wtedy pojawi, numer portu podany jest po znaku „:”.|
 
-Nowi użytkownicy FTP mają również dostęp przez SSH.
+Oto przykład tego, jak może on wyglądać: `ssh://ssh.cluster023.hosting.ovh.net:22/`. Adres serwera SSH to „ssh.cluster023.hosting.ovh.net”, a „22” - numer portu łączenia SSH.
 
-![](images/img_3945.jpg){.thumbnail}
-Możesz wyłączyć dostęp SSH dla wybranego użytkownika klikając na koło zębate z prawej strony loginu i wybierając opcję "Zmień".
+![usessh](images/use-ssh-step2.png){.thumbnail}
 
-Zmiana zostanie wykonana w ciągu kilku minut.
+### Etap 3: zaloguj się do przestrzeni dyskowej przez protokół SSH
 
-![](images/img_3946.jpg){.thumbnail}
+Aby zalogować się przez SSH, użyj terminala, dzięki któremu będziesz mógł(mogła) działać bezpośrednio na Twojej przestrzeni dyskowej za pomocą wierszy poleceń.  
 
+Narzędzie to jest zainstalowane domyślnie na MacOS, Linuxie i Windows 10. Starsza wersja środowiska Windows wymagać będzie instalacji programu, takiego jak PuTTY lub dodania funkcji OpenSSH. Ponieważ operacja ta jest ściśle związana z używanym przez Ciebie systemem operacyjnym, nie możemy opisać jej przebiegu w tej dokumentacji. 
 
-## Linia poleceń
-W systemie Linux:
+Masz teraz dwie możliwości zalogowania się, w zależności od używanej przez Ciebie metody:
 
-- W KDE: Otwórz główne menu (domyślnie na dole z lewej strony ekranu), w pasku wyszukiwania wpisz "konsole" i kliknij na pierwszy wynik wyszukiwania.
+#### 3.1 Za pośrednictwem terminala
 
-W systemie Mac:
-- Kliknij na dysk twardy na pulpicie, wybierz folder aplikacji, następnie folder użytkowy i aplikację "Terminal".
+> [!warning]
+> Nasza oferta hostingowa na posiada dostępu „super użytkownik” (lub „root”) przez protokół SSH.
 
-W systemie Windows:
+Po otworzeniu terminala, zastosuj poniższe polecenie, zastępując elementy „sshlogin”, „sshserver” oraz „connectionport” przez Twoje dane identyfikacyjne SSH. 
 
-
-- W systemie Windows nie ma domyślnie zainstalowanego klienta SSH. Należy pobrać taki program. Najpopularniejszym tego typu programem jest Putty. Do pobrania [tutaj](http://www.putty.org/).
-
-
-
-
-## Logowanie do hostingu za pomocą SSH
-W systemach Linux i Mac:
-
-- Aby zalogować się na hosting przez SSH, otwórz konsolę i wpisz takie polecenie:
-SSH LoginFtp@SerwerFtp
-
-
-Informacje na temat uzyskania danych do FTP znajdziesz w tym [przewodniku](https://www.ovh.pl/g1909.uslugi_www_zarzadzanie_haslami_i_dostep_do_nich#hasla_przypisane_do_hostingu_www_ovh_logowanie_do_ftp).
-
-![](images/img_3093.jpg){.thumbnail}
-W systemie Windows:
-
-- W przypadku systemu Windows zapoznaj się z przewodnikiem na temat [Putty](https://www.ovh.pl/g1964.hosting_www_korzystanie_z_programu_putty_w_systemie_windows).
-
-
-
-
-## Lista najważniejszych poleceń
-Wystarczy zastąpić słowo arg nazwą katalogu lub pliku, dla którego chcesz wykonać operację. 
-
-|Polecenie|Tłumaczenie (w języku angielskim)|Wyjaśnienie|
-|pwd|print working directory|Wyświetla katalog roboczy|
-|cd arg|change directory|Zmienia katalog roboczy; arg odnosi się do nowego katalogu. Polecenie cd bez dodawania arg otwiera katalog home.|
-|cd ..|change directory to ..|Zmienia katalog roboczy przechodząc do wyższego poziomu w strukturze katalogów.|
-|ls arg|list|Listuje zawartość arg, jeśli jest to katalog. Bez wpisu arg, ls listuje zawartość katalogu roboczego.|
-|ll arg|long list|Wyświetla szczegółowe informacje na temat pliku arg.|
-|ls -a arg|list all|Wyświetla wszystkie pliki katalogu arg, nawet te rozpoczynające się od .., jeśli jest to katalog. Opcje ls mogą się łączyć: ls -al.|
-|chmod droit arg|change droits|Zmienia uprawnienia plików arg, zgodnie z uprawnieniem.|
-|mkdir arg|make directory|Tworzy katalog  arg.|
-|rmdir arg|remove directory|Usuwa katalog arg, jeśli jest pusty.|
-|rm arg|remove|Usuwa plik arg.|
-|rm -r arg|remove recursively|Usuwa arg i wszystkie zawarte w nim pliki.|
-|mv arg1 arg2|move|Zmienia nazwę lub przenosi arg1 na arg2.|
-|touch arg|touch|Tworzy pusty plik o nazwie arg, jeśli taki plik nie istnieje. W przeciwnym razie aktualizuje datę ostatniej modyfikacji na aktualną datę.|
-
-
-
-
-## Uruchomienie skryptu ze specyficzną wersją PHP
-Aby wykonywać skrypty z poziomu polecenia SSH i korzystać ze specyficznej wersji PHP, należy użyć określonych poleceń.
-
-|Polecenie|Wersja|
-|php.ORIG.4 (cgi)|4.4.9|
-|php.ORIG.5_2 (cgi)|5.2.17|
-|php.ORIG.5_3 (cgi-fcgi)|5.3.29|
-|/usr/local/php5.3/bin/php (cli)|5.3.29|
-|php.ORIG.5_4 (cgi-fcgi)|5.4.38|
-|/usr/local/php5.4/bin/php (cli)|5.4.38|
-|/usr/local/php5.5/bin/php (cli)|5.5.22|
-|/usr/local/php5.6/bin/php (cli)|5.6.6|
-
-
-Przykładowo, aby wykonać skrypt "mojskrypt.php" z PHP w wersji 5.3, należy uruchomić to polecenie:
-
-```
-php.ORIG.5_3 mojskrypt.php
+```ssh
+ssh sshlogin@sshserver -p connectionport
 ```
 
+Po wysłaniu polecenia zostaniesz poproszony(-a) o wpisanie hasła użytkownika SSH. Po zalogowaniu przejdź do etapu kolejnego: „[Operacje na przestrzeni dyskowej za pomocą SSH](./#etap-4-przeprowadzanie-operacji-na-przestrzeni-dyskowej-z-wykorzystaniem-ssh_1)”.
 
-Przed nazwą skryptu należy wpisać jego lokalizację. Jeśli plik "mojskrypt" znajduje się w katalogu "WWW" i chcesz go wykonać w wersji PHP 5.3, należy uruchomić to polecenie:
+![usessh](images/use-ssh-step3.png){.thumbnail}
 
+#### 3.2 Za pomocą oprogramowania
 
+Po otwarciu danego oprogramowania (np. PuTTY), wpisz dane do logowania SSH. Ponieważ operacja ta jest nieodłącznie związana z tym oprogramowaniem, nie możemy opisać jej szczegółowo w niniejszej dokumentacji. W ramach przypomnienia zamieszczamy poniżej informacje, które należy wprowadzić:
+
+|Dane do uzupełnienia|Szczegóły|
+|---|---|
+|Serwer SSH|Podaj adres serwera SSH otrzymany [w trakcie realizacji etapu 2](./#etap-2-pobranie-informacji-niezbednych-do-logowania). W zależności od użytego oprogramowania, jego nazwa może być określona jako: „Adres serwera”, „Nazwa hosta” lub „Host name”.|
+|Port połączenia|Wpisz port połączenia SSH otrzymany [w trakcie realizacji etapu 2](./#etap-2-pobranie-informacji-niezbednych-do-logowania).|
+|Login SSH|Podaj użytkownika SSH. W zależności od użytego oprogramowania, może być on nazwany „Nazwa użytkownika”, „Identyfikator”, „Login” albo „Username”.|
+|Hasło użytkownika SSH|Wpisz hasło powiązane z loginem SSH.<br><br> W zależności od użytego oprogramowania, jego nazwa może również przybrać formę angielskiego „Password”.|
+
+Po zalogowaniu, przejdź do następnego etapu.
+
+### Etap 4: przeprowadzanie operacji na przestrzeni dyskowej z wykorzystaniem SSH
+
+Do przeprowadzania operacji na przestrzeni dyskowej musisz posłużyć się odpowiednimi poleceniami. Polecenia te mają konkretne znaczenie w języku angielskim. Dla ułatwienia możesz posłużyć się zamieszczoną poniżej listą. Uwaga, **lista nie jest kompletna**.
+
+|Zamówienie|Znaczenie w języku angielskim|Opis| 
+|---|---|---|
+|pwd|Print working directory|Wyświetla katalog roboczy, w którym aktualnie się znajdujesz.| 
+|cd `arg`|Change directory|Umożliwia przejście do katalogu roboczego wskazanego w miejsce `arg`.|
+|cd `..`|Change directory|Umożliwia zmianę katalogu roboczego i przejście o jeden poziom wyżej w hierarchicznej strukturze Twoich katalogów.|
+|cd|Change directory|Bez wskazywania argumentu, pozwala na przejście do katalogu głównego Twojej przestrzeni dyskowej (home).|
+|ls|List|Wyświetla w formie listy zawartość Twojego katalogu roboczego. Dodaj atrybuty, aby zmienić wyświetlanie rezultatu polecenia (np.`ls -ulhG`).| 
+|chmod `droit` `arg`|Change mode|Zmienia uprawnienia do pliku lub katalogu wskazanego jako argument `arg`.| 
+|mkdir `arg`|Make directory|Pozwala utworzyć katalog noszący nazwę argumentu `arg`.| 
+|touch `arg`|Touch|Tworzy pusty plik o nazwie wskazanej jako argument `arg`, jeżeli taki plik jeszcze nie istnieje.|
+|rm `arg`|Remove|Usuwa plik wskazany jako argument `arg`.| 
+|rm -r `arg`|Remove|Usuwa w sposób rekurencyjny katalog wskazany jako argument `arg` wraz z całą jego zawartością| 
+|mv `arg1` `arg2`|Move|Zmienia nazwę lub przenosi dany element (określony jako `arg1`) do nowej lokalizacji (określonej jako `arg2`).| 
+
+Za pomocą specjalnego polecenia możesz również uruchomić skrypt korzystający z określonej wersji PHP. Przykładowo, w przypadku wersji PHP 7.1, użyj następującego polecenia, dostosowując jego elementy do Twojej profilu:
+
+```sh
+/usr/local/php7.1/bin/php myscript.php
 ```
-php.ORIG.5_3 www/mojskrypt.php
-lub
-php.ORIG.5_3 /www/mojskrypt.php
-```
 
+W zależności od wersji PHP, której chcesz używać, środowisko uruchomieniowe może wymagać modyfikacji, aby zagwarantować kompatybilność. Sprawdź naszą dokumentację”>.
 
+## Sprawdź również
 
+[Zmiana konfiguracji hostingu](../zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/).
 
-## Informacje na temat naszych kluczy publicznych (do zaakceptowania podczas pierwszego logowania przez SSH)
-Podczas pierwszego logowania na serwer będziesz musiał zatwierdzić klucz publiczny.
+[Konfiguracja pliku .ovhconfig w hostingu](../konfiguracja-pliku-ovhconfig/).
 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
