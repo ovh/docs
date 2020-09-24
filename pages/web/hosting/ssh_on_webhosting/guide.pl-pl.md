@@ -18,7 +18,7 @@ Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej
 
 - Posiadanie [hostingu WWW OVHcloud](https://www.ovh.pl/hosting/) z dostępem przez protokół SSH.
 - Posiadanie informacji umożliwiających logowanie się do przestrzeni dyskowej za pomocą SSH.
-- Mieć dostęp do[panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), sekcja `Web`{.action}
+- Mieć dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), sekcja `Web`{.action}.
 
 ## W praktyce
 
