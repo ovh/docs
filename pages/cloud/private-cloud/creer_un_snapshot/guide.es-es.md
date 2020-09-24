@@ -17,7 +17,7 @@ Es posible realizar un snapshot de una máquina virtual. Una vez realizado el sn
 
 ## Requisitos
 
-- Haber contratado un [Hosted Private Cloud de OVHcloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external}.
+- Haber contratado un [Hosted Private Cloud de OVHcloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/).
 - Estar conectado al cliente vSphere HTML.
 
 ## Procedimiento
