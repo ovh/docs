@@ -68,7 +68,7 @@ Wenn das Terminal geöffnet ist, verwenden Sie folgenden Befehl und ersetzen Sie
 ssh sshlogin@sshserver -p connectionport
 ```
 
-Nach Senden des Befehls werden Sie dazu aufgefordert, das Passwort des SSH-Benutzers einzugeben. Wenn Sie eingeloggt sind, können Sie zum nächsten Schritt „[Via SSH mit Ihrem Speicherplatz interagieren](./#schritt-4-via-ssh-mit-ihrem-speicherplatz-interagieren)“ übergehen.
+Nach Senden des Befehls werden Sie dazu aufgefordert, das Passwort des SSH-Benutzers einzugeben. Wenn Sie eingeloggt sind, können Sie zum nächsten Schritt „[Via SSH mit Ihrem Speicherplatz interagieren](./#schritt-4-via-ssh-mit-ihrem-speicherplatz-interagieren_1)“ übergehen.
 
 ![SSH verwenden](images/use-ssh-step3.png){.thumbnail}
 
