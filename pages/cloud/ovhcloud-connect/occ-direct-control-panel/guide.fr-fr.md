@@ -102,7 +102,7 @@ Sélectionnez un datacentre dans le menu déroulant puis renseignez les informat
 
 | Information    | Description |
 |:-------:|:------:|
-| ASN OVH    | Le numéro d'AS OVHcloud qui sera configuré sur les routeurs OVHcloud Connect situés dans le DC. Ce numéro peut être différent de l'ASN choisi pour le PoP |
+| ASN OVHcloud    | Le numéro d'AS OVHcloud qui sera configuré sur les routeurs OVHcloud Connect situés dans le DC. Ce numéro peut être différent de l'ASN choisi pour le PoP |
 | Sous-réseau en /28    |  Un sous-réseau privé configuré dans votre vRack dans le DC sélectionné. Cela peut être un bloc IPv4 de taille /28 ou supérieur |
 
 ![ajout datacentre](images/l3dc1.png){.thumbnail}
