@@ -54,7 +54,7 @@ W zależności od Twoich potrzeb, dostępnych jest teraz kilka operacji.
 
 ![Fault Tolerance](images/FT5.png){.thumbnail}
 
-Użyj [Testu obciążeniowego](https://docs.ovh.com/fr/private-cloud/mode-resilience/){.external-link} OVHcloud, aby przetestować bardzo wysoką dostępność wirtualnej maszyny w trybie **Fault Tolerance**.
+Użyj [Testu obciążeniowego](../tryb-resilience/) OVHcloud, aby przetestować bardzo wysoką dostępność wirtualnej maszyny w trybie **Fault Tolerance**.
 
 ## Niemożliwe działania i niekompatybilności
 
