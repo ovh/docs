@@ -32,8 +32,10 @@ Par exemple, la stratégie par defaut vSAN (niveau de tolérance FTT=1 avec RAID
 
 ### Mise en oeuvre
 
-Il est conseillé d'appliquer cette procédure pour un nouveau cluster vSAN afin d'éviter le trafic généré par la réplication de données, qui pourrait impacter l'activité de production.
-Un nombre identique de serveurs entre domaines de pannes est recommandé afin d'équilibrer la répartition des données.
+Il est conseillé d'appliquer cette procédure :
+- sur un nouveau cluster vSAN afin d'éviter le trafic généré par la réplication de données, qui pourrait impacter l'activité de production
+- lorsque plusieurs serveurs se trouvent sur la même baie, l'intégrité des données des VMs pouvant être impacté en cas de panne
+Par ailleurs, un nombre identique de serveurs entre domaines de pannes est recommandé afin d'équilibrer la répartition des données.
 
 Chaque serveur OVH dispose de l'information de la baie dans laquelle il est hébergé.
 Se rendre sur le menu `Hosts and Clusters`, cliquer sur le serveur concerné, puis sur l'onglet `Summary`. L'information se trouve au niveau de `Custom Attributes` : attribut `Rack`.
@@ -61,6 +63,10 @@ Répéter l'opération sur autant de domaines de pannes qu'il y a de baie diffé
 Ajouter au besoin un serveur dans un domaine de panne existant en le déplaçant dessus puis confirmer avec `move`.
 
 ![](images/06.png){.thumbnail}
+
+Les infos d'espace disque utilisé, disponibles et total s'affichent en survolant le domaine de panne.
+
+![](images/07.png){.thumbnail}
 
 Le cluster vSAN dispose désormais de la résilience de données via les domaines de pannes.
 
