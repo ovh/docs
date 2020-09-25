@@ -1,5 +1,5 @@
 ---
-title: Mise en service de OVHcloud Connect Direct depuis l'espace client OVHcloud
+title: Mise en service de OVHcloud Connect Direct depuis l’espace client OVHcloud
 excerpt: Découvrez comment mettre en service votre offre OVHcloud Connect Direct depuis votre espace client OVHcloud
 slug: occ-direct-manager-setup
 section: Premiers pas
