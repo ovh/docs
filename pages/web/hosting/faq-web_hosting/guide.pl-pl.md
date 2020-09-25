@@ -14,7 +14,7 @@ section: 'Pierwsze kroki'
 
 U podstaw nieprawidłowego działania Twojej strony internetowej może znajdować się kilka przyczyn. Aby ustalić źródło problemu, rozpocznij od sprawdzenia, czy wszystkie Twoje usługi zostały odnowione i są włączone, logując się do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Następnie sprawdź [aktualnie prowadzone prace](http://travaux.ovh.net/){.external}. Jeżeli wszystkie usługi są aktywne, a Twoja strona nie jest objęta żadną z prowadzonych przez nas prac, zapraszamy do przeprowadzenia szczegółowej diagnostyki w oparciu o [nasze przewodniki do diagnostyki](../).
 
-**Wskazówki i porady**: Jeżeli Twoja strona nagle stała się niedostępna na skutek wykonanej przez Ciebie operacji, możesz odzyskać jej zawartość z poziomu Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. W tym celu udaj się do zakładki `FTP - SSH` Twojej usługi hostingu i kliknij przycisk `Przywróć kopię zapasową`{.action} znajdujący się po prawej stronie Twojego ekranu. Możesz również zapoznać się z treścią dokumentacji: [Przywracanie plików na przestrzeni dyskowej hostingu](../restauration-ftp-filezilla-espace-client/).
+**Wskazówki i porady**: Jeżeli Twoja strona nagle stała się niedostępna na skutek wykonanej przez Ciebie operacji, możesz odzyskać jej zawartość z poziomu Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. W tym celu udaj się do zakładki `FTP - SSH` Twojej usługi hostingu i kliknij przycisk `Przywróć kopię zapasową`{.action} znajdujący się po prawej stronie Twojego ekranu. Możesz również zapoznać się z treścią dokumentacji: [Przywracanie plików na przestrzeni dyskowej hostingu](../hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/).
 
 ### W jaki sposób skonfigurować moją usługę hostingu? 
 
@@ -31,20 +31,20 @@ Aby stworzyć lub usunąć dany element, zaloguj się do odpowiedniej usługi > 
 ### Jak zarządzać swoimi hasłami? 
 
 Aby zarządzać swoimi hasłami, musisz najpierw zalogować się do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Jeżeli nie pamiętasz swojego loginu lub hasła, kliknij opcję `Nie pamiętam identyfikatora lub hasła`{.action} znajdującą się pod okienkiem logowania. Zostanie do Ciebie wysłana wiadomość e-mail z procedurą przywracania danych.
-Możesz również zapoznać się z treścią przewodnika [Tworzenie i zarządzanie hasłem do konta]https://docs.ovh.com/pl/customer/zarzadzanie-haslem/){.external}.
+Możesz również zapoznać się z treścią przewodnika [Tworzenie i zarządzanie hasłem do konta](../../customer/zarzadzanie-haslem/).
 
 Po zalogowaniu się do panelu klienta będziesz mógł(mogła) zarządzać swoimi poszczególnymi dostępami, takimi jak: 
 
-* dostęp do Twojego serwera FTP oraz dostęp do baz danych. W tym celu, udaj się do rubryki  `Hosting` Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz odpowiedni produkt/usługę.
-* dostęp do Twoich e-maili z poziomu Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, rubryka `E-mail`.
+- dostęp do Twojego serwera FTP oraz dostęp do baz danych. W tym celu, udaj się do rubryki `Hosting` Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i wybierz odpowiedni produkt/usługę.
+- dostęp do Twoich e-maili z poziomu Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), rubryka `E-mail`.
 
 **Wskazówki i porady**: W przypadku oferty E-mail Pro lub Exchange możesz zarządzać swoimi dostępami również z wykorzystaniem systemów webmail odpowiadających tym ofertom.
 
 ### Jak umieścić moją stronę w internecie? 
 
-Aby umieścić swoją stronę www w internecie w infrastrukturze OVHcloud, musisz posiadać nazwę domeny odpowiadającą adresowi, z którego Twoja strona będzie dostępna (przykład: ovh.com). Musisz również mieć wykupioną usługę hostingową www, na której umieścisz Twoją stronę. Możesz również zapoznać się z naszym przewodnikiem: [Uruchomienie strony WWW na hostingu ](../mettre-mon-site-en-ligne)
+Aby umieścić swoją stronę www w internecie w infrastrukturze OVHcloud, musisz posiadać nazwę domeny odpowiadającą adresowi, z którego Twoja strona będzie dostępna (przykład: ovh.com). Musisz również mieć wykupioną usługę hostingową www, na której umieścisz Twoją stronę. Możesz również zapoznać się z naszym przewodnikiem: [Uruchomienie strony WWW na hostingu ](../hosting_www_umieszczenie_strony_w_internecie/)
 
-**Wskazówki i porady**: Aby pomóc Ci w stworzeniu Twojej strony internetowej, OVHcloud oddaje Ci do dyspozycji moduły dostępne za 1 kliknięciem, jak Wordpress, Prestashop, Joomla czy Drupal. Znajdziesz je [tutaj](https://www.ovh.pl/hosting/website/).external}. Możesz również skorzystać z [naszej dokumentacji](../modules-en-1-clic/).
+**Wskazówki i porady**: Aby pomóc Ci w stworzeniu Twojej strony internetowej, OVHcloud oddaje Ci do dyspozycji moduły dostępne za 1 kliknięciem, jak Wordpress, Prestashop, Joomla czy Drupal. Znajdziesz je [tutaj](https://www.ovh.pl/hosting/website/).external}. Możesz również skorzystać z [naszej dokumentacji](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/).
 
 ### W jaki sposób migrować moją stronę internetową i moje e-maile do infrastruktury OVHcloud? 
 
@@ -52,13 +52,13 @@ Aby przenieść Twoją stroną internetową i Twoją ofertę e-mailową na infra
 
 Aby przenieść e-maile, musisz ponownie stworzyć Twoje konta w OVHcloud, a następnie posłużyć się naszym narzędziem do migracji [OMM (OVH Mail Migrator)](https://omm.ovh.net/) dostępnym [tutaj](https://omm.ovh.net/). 
 
-Po zakończeniu tych etapów będziesz mógł(mogła) skonfigurować strefę DNS Twojej domeny, aby pojawiła się na naszej infrastrukturze w ciągu 1 do 24 godzin. Jeżeli potrzebujesz dodatkowych informacji, zapraszamy do zapoznania się z naszym przewodnikiem [Migracja mojej strony internetowej do OVHcloud](../migrer-mon-site-chez-ovh/).
+Po zakończeniu tych etapów będziesz mógł(mogła) skonfigurować strefę DNS Twojej domeny, aby pojawiła się na naszej infrastrukturze w ciągu 1 do 24 godzin. Jeżeli potrzebujesz dodatkowych informacji, zapraszamy do zapoznania się z naszym przewodnikiem [Migracja mojej strony internetowej do OVHcloud](../przeniesienie-strony-www-do-ovh/).
 
-**Wskazówki i porady**: Do transferu plików możesz użyć oprogramowań takich, jak Filezilla czy Cyberduck, podpierając się informacjami zawartymi w [naszej dokumentacji](../mutualise-guide-utilisation-filezilla/).
+**Wskazówki i porady**: Do transferu plików możesz użyć oprogramowań takich, jak Filezilla czy Cyberduck, podpierając się informacjami zawartymi w [naszej dokumentacji](../hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/).
 
 ### Jak zainstalować kilka stron WWW na tym samym hostingu?
 
-Jeżeli jesteś doświadczonym użytkownikiem, możesz umieścić kilka stron internetowych w ramach tej samej oferty hostingowej. W tym celu należy podpiąć do tego hostingu inną nazwę domeny albo podpiąć subdomenę. Procedura podpinania lub oddzielania domeny została opisana w [tym przewodniku](../multisites-configurer-un-multisite-sur-mon-hebergement-web/).
+Jeżeli jesteś doświadczonym użytkownikiem, możesz umieścić kilka stron internetowych w ramach tej samej oferty hostingowej. W tym celu należy podpiąć do tego hostingu inną nazwę domeny albo podpiąć subdomenę. Procedura podpinania lub oddzielania domeny została opisana w [tym przewodniku](../konfiguracja-multisite-na-hostingu/).
 
 ### Co zrobić w przypadku, gdy po opublikowaniu mojej witryny, strona „Gratulacje” OVHcloud wciąż się wyświetla?
 
