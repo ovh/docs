@@ -28,7 +28,7 @@ Um eine Erhöhung der Projektbegrenzung und/oder der Quotas eines Projektes zu b
 
 Wählen Sie hierzu zunächst Ihr Projekt aus und gehen dann zum Bereich `Quota and Localisation`{.action}. Die aktuellen Quotas Ihres Projekts werden hier angezeigt.
 
-Klicken Sie dann auf `Quota erhöhen`{.action}.
+Klicken Sie hier auf den Button `Quota erhöhen`{.action}.
 
 ![raise-pci-quota](images/raisepciquota1.png){.thumbnail}
 
