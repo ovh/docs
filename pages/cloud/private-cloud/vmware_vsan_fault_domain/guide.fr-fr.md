@@ -35,6 +35,7 @@ Par exemple, la stratégie par defaut vSAN (niveau de tolérance FTT=1 avec RAID
 Il est conseillé d'appliquer cette procédure :
 - sur un nouveau cluster vSAN afin d'éviter le trafic généré par la réplication de données, qui pourrait impacter l'activité de production
 - lorsque plusieurs serveurs se trouvent sur la même baie, l'intégrité des données des VMs pouvant être impacté en cas de panne
+
 Par ailleurs, un nombre identique de serveurs entre domaines de pannes est recommandé afin d'équilibrer la répartition des données.
 
 Chaque serveur OVH dispose de l'information de la baie dans laquelle il est hébergé.
