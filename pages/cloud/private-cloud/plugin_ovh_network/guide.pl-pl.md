@@ -1,58 +1,61 @@
 ---
-title: 'Korzystanie z wtyczki OVH Network'
+title: 'Korzystanie z wtyczki OVHcloud Network'
 slug: wtyczka-ovh-network
-excerpt: 'Dowiedz się, jak korzystać z wtyczki OVH Network w usłudze Private Cloud'
+excerpt: Dowiedz się, jak korzystać z wtyczki OVHcloud Network w usłudze Private Cloud
 legacy_guide_number: '7766560'
-section: 'Funkcjonalności OVH'
+section: Funkcjonalności OVHcloud
+order: 03
 ---
 
-**Ostatnia aktualizacja z dnia 01-10-2018**
+**Ostatnia aktualizacja z dnia 11-09-2020**
 
 ## Wprowadzenie
 
-Wtyczka OVH Network została stworzona przez OVH. Dzięki niej możesz bardziej precyzyjnie zarządzać wszystkimi adresami IP powiązanymi z Twoją usługą [Private Cloud](https://www.ovh.pl/private-cloud/){.external}. 
+Wtyczka OVHcloud Network umożliwia bardziej ukierunkowane zarządzanie adresami IP powiązanymi z Twoją usługą Private Cloud.
 
-**Dowiedz się, jak korzystać z wtyczki OVH Network w usłudze Private Cloud.**
+**Dowiedz się, jak korzystać z wtyczki OVHcloud Network w usłudze Private Cloud.**
 
 ## Wymagania początkowe
 
-* Posiadanie oferty [Private Cloud](https://www.ovh.pl/private-cloud/){.external}
-* Posiadanie bloku IP powiązanego z Twoją usługą [Private Cloud](https://www.ovh.pl/private-cloud/){.external}
-* Dostęp do interfejsu zarządzania vSphere
+- Wykupienie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Blok adresu IP powiązany z Twoją usługą Private Cloud.
+- Dostęp do interfejsu vSphere.
 
 ## W praktyce
 
-Kliknij menu `Host and Cluster`{.action} i wybierz centrum danych lub klaster infrastruktury. Następnie kliknij `Manage`{.action} i `OVH Network`{.action}.
+Po zalogowaniu się do interfejsu vSphere, wybierz swoje centrum danych w menu po lewej stronie. Przejdź do zakładki `Konfiguracja`{.action}, a następnie kliknij `Network`{.action} pod „OVHcloud” w zakładce nawigacji po lewej stronie. Wyświetli się wówczas sekcja „Network summary”.
 
-![Plugin OVH Network](images/network_01.png){.thumbnail}
+![Network summary](images/ovhcloudplugin_01.png){.thumbnail}
 
-Przejdź do sekcji `Summary`, w której znajdziesz wykaz Twoich bloków IP i podstawowe informacje dotyczące każdego z nich. 
+Twoje bloki IP wyświetlają się tutaj wraz z podstawowymi informacjami. Kliknij blok IP, aby zobaczyć wszystkie jego adresy IP wymienione w tabeli.
 
-![Informacje dotyczące adresów IP i bloków](images/network_02.png){.thumbnail}
+![Informacje o adresach IP i blokach](images/ovhcloudplugin_02.png){.thumbnail}
 
-W części **IP Blocks** wyszczególnione są wszystkie adresy IP Twojego bloku. Nie używaj **pięciu adresów bloku IP** zarezerwowanych do konfiguracji i zapewnienia wysokiej dostępności bloku, mianowicie:
+Możesz sprawdzić "rewers" każdego adresu oraz adres docelowy. Niektóre adresy oznaczone są jako „Zerezerwowane”. Nie używaj **pięciu adresów bloku IP** zarezerwowanych do konfiguracji i zapewnienia wysokiej dostępności bloku, mianowicie:
 
 - pierwszego adresu IP, który jest adresem Twojej sieci;
-- ostatniego adresu IP, który jest adresem **broadcast**;
-- przedostatniego adresu IP, który jest adresem **gateway**;
-- dwóch adresów IP przed „gateway”, które są używane jako **HSRP** (Hot Standby Router Protocol) w routerach.
+- ostatniego adresu IP, który jest adresem broadcast;
+- przedostatniego adresu IP, który jest adresem gateway;
+- dwóch adresów IP przed „gateway”, które są używane jako HSRP (Hot Standby Router Protocol) w routerach.
 
-![Bloki IP](images/network_03.png){.thumbnail}
+> [!warning]
+> Niektóre konfiguracje z wirtualną zaporą nie umożliwiają śledzenia adresów MAC, jeśli protokół ARP nie został wskazany jako autoryzowany.
+>
 
-Aby zaktualizować informacje we wtyczce OVH, że Twoje publiczne adresy IP są już używane, konieczne jest wysłanie zapytania ARP (_arping_) z maszyny lub maszyn wirtualnych używających tych adresów. Uwaga: niektóre konfiguracje z wirtualną zaporą nie umożliwiają pobierania adresów MAC, jeśli protokół ARP nie został wskazany jako autoryzowany.
+Spersonalizuj "rewers" adresu IP w tej tabeli (np. podczas konfiguracji serwera pocztowego). Kliknij trzy kropki po lewej stronie adresu IP, a następnie Edit Reverse.
 
-Możesz następnie skonfigurować Twoje rewersy DNS dla IP, na przykład dla serwera e-mail. Ustawienie to jest dostępne również w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} oraz w interfejsie [API OVH](https://api.ovh.com/){.external}. Kliknij trzy kropki po lewej stronie adresu IP, a następnie `Edit Reverse`{.action}.
+![Edit Reverse button](images/ovhcloudplugin_03.png){.thumbnail}
 
-![Przycisk Edition Reverse](images/network_04.png){.thumbnail}
+Wprowadź „rewers” i kliknij `Potwierdź`{.action}.
 
-Wpisz rewers, po czym zatwierdź przyciskiem `Confirm`{.action}.
+Nowy „rewers” wyświetli się wówczas w tabeli.
 
-![Edycja reverse](images/network_05.png){.thumbnail}
-
-Pojawi się on wówczas po prawej stronie adresu IP, na liście adresów IP danego bloku. 
-
-![Edycja adresów IP](images/network_06.png){.thumbnail}
+> [!primary]
+>
+> Ten proces konfiguracji jest również dostępny w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager).  
+> 
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Przyłącz się do społeczności naszych użytkowników na stronie [ https://community.ovh.com/en/](https://community.ovh.com/){.external}
