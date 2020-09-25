@@ -64,4 +64,4 @@ Lista niemożliwych do przeprowadzenia działań dostępna jest [na tej stronie]
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
