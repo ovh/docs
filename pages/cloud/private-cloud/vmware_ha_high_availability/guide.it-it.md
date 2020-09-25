@@ -21,7 +21,7 @@ La funzione principale di **VMware HA** (High Availability) è quella di riavvia
 
 ## Prerequisiti
 
-- Avere accesso all’[interfaccia vSphere](../connessione-interfaccia-vsphere/)
+- Avere accesso all’interfaccia vSphere
 - Disporre di un servizio [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external} attivo
 
 ## Procedura
@@ -37,7 +37,7 @@ Se HA non è già attivo nel tuo cluster, clicca sulla scheda`Configura` del clu
 Clicca su`Modifica`{.action} e seleziona la casella per attivare la funzionalità HA.
 
 È inoltre importante attivare il monitoraggio dell’host. Questo parametro consente l’invio di segnali di impulso tra gli host Esxi per rilevare eventuali guasti.  
-È necessario disattivarlo per effettuare operazioni di aggiornamento, ad esempio, con [l’update manager](../vmware-update-manager/). In questo caso specifico, l’host è isolato.
+È necessario disattivarlo per effettuare operazioni di aggiornamento, ad esempio, con [l’update manager](../usare_vmware_update_manager/). In questo caso specifico, l’host è isolato.
 
 ![Attivazione HA](images/HA.png){.thumbnail}
 
@@ -93,7 +93,7 @@ In caso di malfunzionamento di un database con uno stato ADP (all path down) puo
 
 ##### Monitoraggio delle VM
 
-Il monitoraggio delle macchine virtuali è disponibile dopo l’installazione dei [VMware tools](../installation-des-vmware-tools/).
+Il monitoraggio delle macchine virtuali è disponibile dopo l’installazione dei [VMware tools](../installare-vmware-tools/).
 In caso di non risposta tramite i **tools** (segnali di impulso), la macchina virtuale sarà automaticamente riavviata. Questa funzionalità dispone di una configurazione avanzata (ad esempio, gli intervalli di riavvio).
 
 ![Monitoraggio delle MV](images/HAparam5.PNG){.thumbnail}
