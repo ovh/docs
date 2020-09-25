@@ -39,10 +39,10 @@ Wenn Sie im Verwaltungsinterface eingeloggt sind, klicken Sie auf `Change passwo
 
 Führen Sie im Interface folgende Schritte aus:
 	
-* Wählen Sie `Password and 2FA Shared Secret`{.action} aus.
-* Geben Sie ein neues Passwort ein. 
-* Scannen Sie den QR-Code mit der Smartphone-Authentifizierungsapp Ihrer Wahl.
-* Bestätigen Sie den erhaltenen Code.
+- Wählen Sie `Password and 2FA Shared Secret`{.action} aus.
+- Geben Sie ein neues Passwort ein. 
+- Scannen Sie den QR-Code mit der Smartphone-Authentifizierungsapp Ihrer Wahl.
+- Bestätigen Sie den erhaltenen Code.
 
 ![QR-Code scannen](images/scanQRcode.jpg){.thumbnail}
 
