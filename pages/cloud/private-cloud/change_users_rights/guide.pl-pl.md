@@ -1,7 +1,7 @@
 ---
 title: Zmiana uprawnień użytkownika
 slug: zmiana-uprawnien-uzytkownika
-section: Funkcjonalności OVHcloud
+section: Funkcjonalności OVH
 ---
 
 **Ostatnia aktualizacja z dnia 03-09-2020**
@@ -14,8 +14,8 @@ Celem niniejszego przewodnika jest wyjaśnienie, na czym polega zarządzanie pra
 
 ## Wymagania początkowe
 
-* Wykupienie usługi [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
-* Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Wykupienie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/).
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
 
 ## W praktyce
 
@@ -40,4 +40,4 @@ W menu możesz dokonywać modyfikacji uprawnień użytkowników vSphere dla posz
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
