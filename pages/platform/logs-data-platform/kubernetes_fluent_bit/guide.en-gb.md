@@ -245,7 +245,7 @@ spec:
     spec:
       containers:
       - name: fluent-bit
-        image: ovhcom/fluent-bit
+        image: fluent/fluent-bit:1.5.0
         imagePullPolicy: Always
         ports:
           - containerPort: 2020
