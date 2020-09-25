@@ -1,12 +1,12 @@
 ---
-title: Mise en service de OVHcloud Connect Provider depuis l'espace client OVHcloud
+title: Mise en service de OVHcloud Connect Provider depuis l’espace client OVHcloud
 excerpt: Découvrez comment mettre en service votre offre OVHcloud Connect Provider depuis votre espace client OVHcloud
 slug: occ-provider-manager-setup
 section: Premiers pas
 order: 1
 ---
 
-**Dernière mise à jour le 24/08/2020**
+**Dernière mise à jour le 28/09/2020**
 
 ## Objectif
 
@@ -36,13 +36,11 @@ Vérifiez par la suite dans votre  [espace client OVHcloud](https://www.ovh.com/
 
 Connectez-vous à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Server`{.action} en haut à gauche puis sélectionnez l'onglet `Network`{.action}. Cliquez alors sur `OVHcloud Connect`{.action} puis sur votre offre.
 
-![ovhcloud connect selection](images/occ1.png){.thumbnail}
+![ovhcloud connect selection](images/occ01.png){.thumbnail}
 
 Vous devez commencer par associer un vRack à votre offre. Cliquez sur le bouton  `Associer un vRack`{.action} et sélectionnez un vRack existant dans le menu déroulant. 
 
-![associate vRack](images/vrack1.png){.thumbnail}
-
-![associate vRack](images/vrack1-1.png){.thumbnail}
+![associate vRack](images/vrack01.png){.thumbnail}
 
 Un message vous confirmera l'association du vRack.
 
