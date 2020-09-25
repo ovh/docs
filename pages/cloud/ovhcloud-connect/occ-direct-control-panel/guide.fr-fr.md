@@ -6,7 +6,7 @@ section: Premiers pas
 order: 1
 ---
 
-**Dernière mise à jour le 24/08/2020**
+**Dernière mise à jour le 28/09/2020**
 
 ## Objectif
 
@@ -22,17 +22,15 @@ OVHcloud Connect permet d’étendre votre réseau d’entreprise avec votre ré
 
 ## En pratique
 
-Connectez-vous à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Server`{.action} en haut à gauche puis sélectionnez l'onglet `Network`{.action}. Cliquez alors sur `OVHCloud Connect`{.action} puis sur votre offre.
+Connectez-vous à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Server`{.action} en haut à gauche puis sélectionnez l'onglet `Network`{.action}. Cliquez alors sur `OVHcloud Connect`{.action} puis sur votre offre.
 
-![ovhcloud connect selection](images/occ1.png){.thumbnail}
+![ovhcloud connect selection](images/occ01.png){.thumbnail}
 
 ### Étape 1: associer un vRack
 
 Vous devez commencer par associer un vRack à votre offre. Cliquez sur le bouton  `Associer un vRack`{.action} et sélectionnez un vRack existant dans le menu déroulant. 
 
-![associate vRack](images/vrack1.png){.thumbnail}
-
-![associate vRack](images/vrack1-1.png){.thumbnail}
+![associate vRack](images/vrack01.png){.thumbnail}
 
 Un message vous confirmera l'association du vRack.
 
@@ -50,13 +48,11 @@ Un message vous confirmera l'association du vRack.
 
 #### Configuration L2 
 
-Une fois votre vRack associé, cliquez sur `Ajouter une configuration PoP`{.action} et sélectionnez dans le menu déroulant la configuration L2 puis validez. 
+Une fois votre vRack associé, deux menus `Configuration PoP` apparaîtront. Cliquez sur `Ajouter une configuration PoP`{.action} dans le premier menu, sélectionnez L2 dans le menu déroulant puis validez. 
 
-![ajout Pop](images/pop1.png){.thumbnail}
+![ajout Pop](images/pop2.png){.thumbnail}
 
-![ajout Pop](images/l2pop1-1.png){.thumbnail}
-
-Deux menus `Configuration PoP` apparaîtront alors automatiquement.
+La configuration L2 sera alors activée dans les deux menus `Configuration PoP`.
 
 ![ajout Pop](images/l2pop2.png){.thumbnail}
 
@@ -86,15 +82,23 @@ Vous pouvez également ajouter une seconde configuration PoP L3 via le deuxième
 
 #### Configuration L2 
 
-Lorsque votre configuration PoP est active, cliquez sur `Ajouter une configuration`{.action} sous le menu `Configuration Datacentre`. Sélectionnez un Datacentre dans le menu déroulant et validez.
+Lorsque votre configuration PoP est active, cliquez sur `Ajouter une configuration`{.action} sous le menu `Configuration DC`. Sélectionnez un Datacentre dans le menu déroulant et validez.
 
 ![ajout datacentre](images/l2dc1.png){.thumbnail}
 
 ![ajout datacentre](images/l2dc1-1.png){.thumbnail}
 
+La configuration datacentre débutera alors.
+
+![ajout datacentre](images/l2dc1-2.png){.thumbnail}
+
 #### Configuration L3 
 
-Lorsque votre configuration PoP a été définie, cliquez sur `Ajouter une configuration`{.action} sous le menu `Configuration Datacentre`. Sélectionnez un datacentre dans le menu déroulant puis renseignez les informations requises. 
+Lorsque votre configuration PoP a été définie, cliquez sur `Ajouter une configuration`{.action} sous le menu `Configuration DC`. 
+
+![ajout datacentre](images/l3dc0.png){.thumbnail}
+
+Sélectionnez un datacentre dans le menu déroulant puis renseignez les informations requises. 
 
 | Information    | Description |
 |:-------:|:------:|
@@ -128,7 +132,16 @@ Si vous choisissez le type « BGP », saisissez alors les informations requises.
 
 ![ajout datacentre](images/l3dc5.png){.thumbnail}
 
-Vous pouvez ajouter plusieurs configurations de routage au sein d'un même datacentre. Le type de configuration (BGP / Static) choisi sur votre première configuration de routage s'appliquera alors aux suivantes sur le même datacentre.
+Si vous choisissez le type « Static », saisissez les informations requises :
+
+| Information    | Description |
+|:-------:|:------:|
+| Sous-réseau    | Un préfixe utilisant la notation CIDR |
+| Nexthop    | Adresse IP agissant comme passerelle dans la plage de sous-réseau |
+
+![ajout datacentre](images/l3dc4.png){.thumbnail}
+
+Vous pouvez ajouter plusieurs configurations de routage au sein d'un même datacentre. Le type de configuration (BGP ou Static) choisi sur votre première configuration de routage s'appliquera alors aux suivantes sur le même datacentre.
 
 ![ajout datacentre](images/l3dc6.png){.thumbnail}
 
