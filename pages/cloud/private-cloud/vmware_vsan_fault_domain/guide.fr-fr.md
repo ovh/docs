@@ -32,11 +32,8 @@ Par exemple, la stratégie par defaut vSAN (niveau de tolérance FTT=1 avec RAID
 
 ### Mise en oeuvre
 
-Il est conseillé d'appliquer cette procédure :
-- sur un nouveau cluster vSAN afin d'éviter le trafic généré par la réplication de données, qui pourrait impacter l'activité de production
-- lorsque plusieurs serveurs se trouvent sur la même baie, l'intégrité des données des VMs pouvant être impacté en cas de panne
-
-Par ailleurs, un nombre identique de serveurs entre domaines de pannes est recommandé afin d'équilibrer la répartition des données.
+Il est conseillé d’appliquer cette procédure lorsque plusieurs serveurs se trouvent sur la même baie. Privilégier également un nombre identique de serveurs par domaine de panne vSAN.
+Les données seront ainsi mieux réparties et bénéficieront d’une meilleure protection en cas de dysfonctionnement d'un domaine de panne.
 
 Chaque serveur OVH dispose de l'information de la baie dans laquelle il est hébergé.
 Se rendre sur le menu `Hosts and Clusters`, cliquer sur le serveur concerné, puis sur l'onglet `Summary`. L'information se trouve au niveau de `Custom Attributes` : attribut `Rack`.
