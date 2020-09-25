@@ -1,17 +1,17 @@
 ---
 title: 'VPN für Ihren OVHcloud Zerto DRP einrichten'
 slug: zerto-virtual-replication-customer-to-ovhcloud
-excerpt: 'So richten Sie einen VPN-Tunnel ein, um Ihre lokale Zerto-Plattform mit Ihrer OVHcloud Private Cloud zu verbinden.'
+excerpt: 'Erfahren Sie hier, wie Sie einen VPN-Tunnel ein, um Ihre lokale Zerto-Plattform mit Ihrer Private Cloud zu verbinden'
 section: 'OVH Dienstleistungen und Optionen'
 ---
 
-**Stand 10.08.2020**
+**Letzte Aktualisierung am 10.08.2020**
 
-## Einleitung
-Ziel dieser Anleitung ist, Ihnen bei der Konfiguration Ihres virtuellen privaten Netzwerks (VPN) zu helfen, um Ihre lokale Plattform mit Ihrer OVHcloud Hosted Private Cloud zu verbinden und die
-Zerto Disaster-Recovery-Lösung einzurichten.
-Zur Veranschaulichung der Konfiguration verwenden wir die VPN-Funktionen von OPNSense, einer Open-Source-Firewall/VPN-Plattform.
-Der Einfachheit halber beschreiben wir die einfachste Konfiguration, bei der das VPN-Gateway über eine Verbindung zum Netzwerk des Zerto Virtual Managers (ZVM) verfügt. 
+## Ziel
+
+Ziel dieser Anleitung ist, Ihnen bei der Konfiguration Ihres virtuellen privaten Netzwerks (VPN) zu helfen, um Ihre lokale Plattform mit Ihrer OVHcloud Hosted Private Cloud zu verbinden und die Zerto Disaster-Recovery-Lösung einzurichten.
+
+Zur Veranschaulichung der Konfiguration verwenden wir die VPN-Funktionen von OPNSense, einer Open-Source-Firewall/VPN-Plattform. Der Einfachheit halber beschreiben wir die einfachste Konfiguration, bei der das VPN-Gateway über eine Verbindung zum Netzwerk des Zerto Virtual Managers (ZVM) verfügt. 
 
 ## Voraussetzungen
 
@@ -20,13 +20,13 @@ Der Einfachheit halber beschreiben wir die einfachste Konfiguration, bei der das
 - Die von Zerto für die Replikation verwendeten virtuellen Maschinen (VRA: Virtual Replication Appliance) sowohl auf Kundenseite als auch bei OVHcloud müssen sich über die TCP-Ports 4007 und 4008 miteinander austauschen können.
 - Die Verwaltungsmaschinen von Zerto (ZVM: Zerto Virtual Manager) sowohl auf Kundenseite als auch bei OVHcloud müssen sich über den TCP-Port 9081 miteinander austauschen können.
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Übersicht der Lösungsarchitektur
 
 ![Zerto VPN](images/image-EN-1.png)
 
-**Definition der Parameter dieser Architektur:**
+**Definition der Parameter dieser Architektur**
 
 Auf Kundenseite:
 
@@ -94,7 +94,7 @@ Klicken Sie im `VPN`{.action}-Menü im Bereich `Tunnel Settings`{.action} rechts
 
 ##### 3.1.1 Phase 1: Allgemeine Informationen hinzufügen
 
-![](images/image-EN-10.png)
+![Zerto VPN](images/image-EN-10.png)
 
 Sie können die standardmäßig angegebenen Werte beibehalten:
 
