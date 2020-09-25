@@ -75,7 +75,11 @@ Le menu `Configuration PoP` apparaîtra alors.
 
 ### Étape 4 : ajout d'une configuration Datacentre 
 
-Lorsque votre configuration PoP a été définie, cliquez sur `Ajouter une configuration`{.action} sous le menu `Configuration Datacentre`. Sélectionnez un datacentre dans le menu déroulant puis renseignez les informations requises. 
+Lorsque votre configuration PoP a été définie, cliquez sur `Ajouter une configuration`{.action} sous le menu `Configuration Datacentre`.
+
+![ajout datacentre](images/l3dc0.png){.thumbnail}
+
+Sélectionnez un datacentre dans le menu déroulant puis renseignez les informations requises. 
 
 | Information    | Description |
 |:-------:|:------:|
@@ -100,7 +104,7 @@ Choisissez alors le type de routage entre « Static » et « BGP ».
 
 ![ajout datacentre](images/l3dc3.png){.thumbnail}
 
-Si vous choisissez le type « BGP », saisissez alors les informations requises.
+Si vous choisissez le type « BGP », saisissez alors les informations requises :
 
 | Information    | Description |
 |:-------:|:------:|
@@ -109,7 +113,16 @@ Si vous choisissez le type « BGP », saisissez alors les informations requises.
 
 ![ajout datacentre](images/l3dc5.png){.thumbnail}
 
-Vous pouvez ajouter plusieurs configurations de routage au sein d'un même Datacentre. Le type de configuration choisi sur votre première configuration s'appliquera alors aux suivantes sur le même Datacentre.
+Si vous choisissez le type « Static », saisissez les informations requises :
+
+| Information    | Description |
+|:-------:|:------:|
+| Sous)réseau    | Un préfixe utilisant la notation CIDR |
+| Nexthop    | Adresse IP agissant comme passerelle dans la plage de sous-réseau |
+
+![ajout datacentre](images/l3dc4.png){.thumbnail}
+
+Vous pouvez ajouter plusieurs configurations de routage au sein d'un même Datacentre. Le type de configuration (BGP ou Static) choisi sur votre première configuration s'appliquera alors aux suivantes sur le même Datacentre.
 
 ![ajout datacentre](images/l3dc6.png){.thumbnail}
 
