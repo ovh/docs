@@ -34,7 +34,7 @@ Vérifiez par la suite dans votre  [espace client OVHcloud](https://www.ovh.com/
 
 ### Étape 2 : associer un vRack
 
-Connectez-vous à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Server`{.action} en haut à gauche puis sélectionnez l'onglet `Network`{.action}. Cliquez alors sur `OVHCloud Connect`{.action} puis sur votre offre.
+Connectez-vous à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Server`{.action} en haut à gauche puis sélectionnez l'onglet `Network`{.action}. Cliquez alors sur `OVHcloud Connect`{.action} puis sur votre offre.
 
 ![ovhcloud connect selection](images/occ1.png){.thumbnail}
 
@@ -58,7 +58,14 @@ Une fois votre vRack associé, cliquez sur `Ajouter une configuration PoP`{.acti
 
 ![ajout Pop](images/pop1.png){.thumbnail}
 
-Vous devrez saisir votre ASN, l'ASN OVHcloud ainsi que que l'adresse réseau en /30.
+Vous devrez alors saisir les éléments suivants :
+
+| Information    | Description |
+|:-------:|:------:|
+| ASN client    | Votre numéro d'AS BGP, qui est configuré sur votre routeur situé dans le PoP |
+| ASN OVHcloud    | Le numéro d'AS OVHcloud qui sera configuré sur les routeurs de OVHcloud Connect situés dans le PoP |
+| Sous-réseau en /30    | Un bloc IPv4 de taille /30, utilisé pour le lien entre votre routeur et le routeur OVHcloud Connect situé dans le PoP |
+
 
 ![ajout Pop](images/l3pop1-1.png){.thumbnail}
 
@@ -66,11 +73,14 @@ Le menu `Configuration PoP` apparaîtra alors.
 
 ![ajout Pop](images/l3pop2.png){.thumbnail}
 
-Vous pouvez également ajouter une seconde configuration PoP L3 via le deuxième menu `Configuration PoP` qui vous sera présenté.
-
 ### Étape 4 : ajout d'une configuration Datacentre 
 
-Lorsque votre configuration PoP a été définie, cliquez sur `Ajouter une configuration`{.action} sous le menu `Configuration Datacentre`. Sélectionnez un Datacentre dans le menu déroulant puis renseignez votre ASN OVHcloud ainsi que l'adresse du réseau en /30. 
+Lorsque votre configuration PoP a été définie, cliquez sur `Ajouter une configuration`{.action} sous le menu `Configuration Datacentre`. Sélectionnez un datacentre dans le menu déroulant puis renseignez les informations requises. 
+
+| Information    | Description |
+|:-------:|:------:|
+| ASN OVH    | Le numéro d'AS OVHcloud qui sera configuré sur les routeurs OVHcloud Connect situés dans le DC. Ce numéro peut être différent de l'ASN choisi pour le PoP |
+| Sous-réseau en /28    |  Un sous-réseau privé configuré dans votre vRack dans le DC sélectionné. Cela peut être un bloc IPv4 de taille /28 ou supérieur |
 
 ![ajout datacentre](images/l3dc1.png){.thumbnail}
 
@@ -86,16 +96,58 @@ Cliquez sur le bouton `(...)`{.action} sur le Datacentre voulu puis sur `Ajouter
 
 ![ajout datacentre](images/l3dc2.png){.thumbnail}
 
-Choisissez alors le type de routage entre « Network » et « BGP ».
+Choisissez alors le type de routage entre « Static » et « BGP ».
 
 ![ajout datacentre](images/l3dc3.png){.thumbnail}
 
-Si vous choisissez le type « BGP », saisissez alors votre ASN OVHcloud ainsi que l'adresse IP Neighbor.
+Si vous choisissez le type « BGP », saisissez alors les informations requises.
+
+| Information    | Description |
+|:-------:|:------:|
+| ASN client    | Votre numéro d'AS BGP, qui est configuré sur votre routeur situé dans le DC |
+| IP Neighbor    | Adresse IP du neighbor BGP de votre routeur dans le DC. Cette adresse doit faire partie du sous-réseau renseigné dans la `Configuration DC` |
 
 ![ajout datacentre](images/l3dc5.png){.thumbnail}
 
 Vous pouvez ajouter plusieurs configurations de routage au sein d'un même Datacentre. Le type de configuration choisi sur votre première configuration s'appliquera alors aux suivantes sur le même Datacentre.
 
+![ajout datacentre](images/l3dc6.png){.thumbnail}
+
+### Suppression des ressources
+
+Chaque ressource (PoP ou DC) peut être supprimée individuellement, mais la suppression d’une ressource parente telle que DC ou POP supprimera automatiquement toutes les sous-ressources.
+
+La suppression récursive est plus lente que la suppression séquentielle de chaque ressource.
+
+> [!primary]
+> Si une configuration DC est partagée entre au moins deux services OVHcloud Connect, la suppression de la configuration PoP d’un seul service OVHcloud Connect n’affectera pas la ressource DC.
+>
+
+#### Suppression d'une configuration de routage
+
+Pour supprimer une configuration de routage, cliquez sur le le bouton `(...)`{.action} sur la configuration de routage à supprimer puis sur `Supprimer`{.action}.
+
+![suppression configuration routage](images/deleterouting.png){.thumbnail}
+
+#### Suppression d'une configuration DC
+
+Pour supprimer une configuration DC, cliquez sur le le bouton `(...)`{.action} sur la configuration DC à supprimer puis sur `Supprimer`{.action}.
+
+![suppression configuration DC](images/deletedc.png){.thumbnail}
+
+> [!primary]
+> La suppression d'une configuration DC entraînera la suppression des configurations de routage liées.
+>
+
+#### Suppression de la configuration PoP
+
+Pour supprimer une configuration PoP, cliquez sur le le bouton `(...)`{.action} sur la configuration PoP puis sur `Supprimer la configuration`{.action}.
+
+![suppression configuration PoP](images/deletepopl3.png){.thumbnail}
+
+> [!primary]
+> La suppression d'une configuration PoP entraînera la suppression des configurations DC et de routage.
+>
 
 ## Aller plus loin
 
