@@ -36,7 +36,15 @@ On the permission page, you will see two tabs **Read-Only** and **Read-Write**.
 
 Some items can be shared in read-only whereas others can be shared with a write (or modification) right. 
 
-- **Data Stream**: Graylog Data Streams can be shared **read-only only** since logs are fully immutable. 
+|Items|Read-Only|Read-Write|
+|---|---|---|
+|Stream|Yes|No|
+|Dashboard|Yes|Yes|
+|Index|Yes|Yes|
+|Alias|Yes|No|
+|Kibana|Yes|Yes|
+
+- **Data Stream**: Graylog Data Streams can only be shared **read-only** since logs are fully immutable. 
 - **Dashboards**: Graylog Dashboards can be shared **read-only or read-write**. With the read-write access, the users in the role can add, modify and remove widgets of a dashboard. 
 - **Index **: Elasticsearch indices can be shared **read-only or read-write**. With the read-write access, users in the role can add, modify and delete documents in the index. They can also alter the mapping.
 - **Aliases**: Elasticsearch Aliases are **read-only**. They can only be used to read the data attached to them.
