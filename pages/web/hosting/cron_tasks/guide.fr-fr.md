@@ -67,7 +67,7 @@ L'interface offre deux modes pour configurer la fréquence de votre tâche. Util
 |Entrez des valeurs numériques comme dans une *crontab*. Les astérisques indiquent chaque valeur de la période, ce qui signifie que la tâche s'exécuterait en continu **une fois par heure tous les jours** dans cet exemple.|
 |![cron frequency](images/cron-jobs-4.png){.thumbnail}|
 
-Vous pouvez basculer entre les deux modes pendant la configuration pour visualiser les modifications en conséquence. Notez également les [limitations lors de la planification d'une tâche sur un hébergement Web](./#limitations-des-taches-planifiees-sur-votre-hebergement-web).
+Vous pouvez basculer entre les deux modes pendant la configuration pour visualiser les modifications en conséquence. Notez également les [limitations lors de la planification d'une tâche sur un hébergement Web](./#limitations-des-taches-planifiees-sur-votre-hebergement-web_1).
 
 ![cron control panel](images/cron-jobs-5.gif){.thumbnail}
 
