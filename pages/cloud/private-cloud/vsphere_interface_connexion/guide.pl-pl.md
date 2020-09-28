@@ -1,63 +1,74 @@
 ---
-title: Połączenie z interfejsem vSphere
+title: Logowanie do interfejsu vSphere
 slug: polaczenie-interfejs-vsphere
-excerpt: Odkryj różne sposoby łączenia się z vSphere
+excerpt:  Poznaj różne sposoby logowania do vSphere
 section: Pierwsze kroki
+order: 2
 ---
 
-**Ostatnia aktualizacja dnia 2018-01-12**
+**Ostatnia aktualizacja z dnia 01-09-2020**
 
 ## Wprowadzenie
 
-**Ten przewodnik prezentuje różne sposoby łączenia się z interfejsem vSphere.**
+**Ten przewodnik prezentuje różne sposoby logowania do vSphere.**
 
 ## Wymagania początkowe
 
-- Konto administratora Private Cloud z danymi do logowania.
-- Utworzenie aktywnego konta użytkownika w Panelu klienta.
+- Pełnienie funkcji kontaktu administracyjnego dla usługi Private Cloud.
+- Utworzenie aktywnego użytkownika w Panelu klienta.
+
 
 ## W praktyce
 
-### Odzyskiwanie loginów
+### Uzyskanie danych identyfikacyjnych
 
-Loginy są wysyłane e-mailem przy tworzeniu konta Private Cloud, przy zmianie hasła lub przy tworzeniu konta użytkownika:
+Dane identyfikacyjne są wysyłane pocztą elektroniczną podczas tworzenia projektu Private Cloud, przy okazji zmiany hasła lub tworzenia użytkownika:
 
 ```
-adres IP/Nazwa: pcc-xxx-xxx-xxx-xxx.ovh.com nazwa użytkownika : admin hasło : xxxxxx
+IP/Name : pcc-xxx-xxx-xxx-xxx.ovh.com username : admin password : xxxxxx
 ```
 
-Dokument VMware zawiera spis portów, które należy otworzyć w zaporze sieciowej, aby np. mieć dostęp do konsoli: [Dostęp do konsoli](https://kb.vmware.com/kb/1012382){.external}
+Ten dokument VMware zawiera listę różnych portów, które należy otworzyć na firewall, aby uzyskać na przykład dostęp do konsoli: [Dostęp do konsoli](https://kb.vmware.com/kb/1012382){.external-link}
 
-### Połączenie z vSphere za pomocą klienta desktopowego
+### Wykorzystanie klienta HTML5
 
-Najpierw należy pobrać plik instalacyjny oprogramowania vSphere Client. W e-mailu otrzymanym podczas tworzenia konta użytkownika znajduje się link.
+Klient HTML5 jest dostępny w webowym interfejsie Twojej usługi Private Cloud pod adresem: (zastąp pcc-xxx-xx-xx-xxx.ovh.com adresem Twojej usługi Private Cloud).
 
-Można go również pobrać pod adresem: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/client/VMware-viclient.exe>.
+![Logowanie do interfejsu vSphere HTML5](images/connection_interface_w_html5.png){.thumbnail}
 
-Pobrany plik należy następnie uruchomić. Rozpocznie się instalacja. Asystent instalacji poprosi najpierw o wybranie języka i zaakceptowanie warunków korzystania z oprogramowania VMware.
+Przejdź do interfejsu:
 
-Po zakończeniu instalacji asystent zaproponuje logowanie do usługi Private Cloud z wykorzystaniem otrzymanych wcześniej danych do logowania.
+![Logowanie do interfejsu vSphere HTML5](images/vsphere-client-html5.png){.thumbnail}
 
-![Połączenie z klientem desktopowym](images/connexion_client_l.png){.thumbnail}
+Na stronie `Home`{.action} odnajdziesz menu główne Twojego vCenter. Będziesz mógł wykonać różne czynności, takie jak:
 
-### Połączenie za pomocą klienta webowego
+- Wdrożenie maszyny wirtualnej po przejściu do `Hosts and Clusters`{.action};
+- Przeglądanie datastores.
 
-Klient webowy jest dostępny w ramach Twojej usługi Private Cloud pod adresem: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> (zastąp pcc-xxx-xx-xx-xxx.ovh.com adresem Twojej Private Cloud).
+> [!warning]
+>
+> Zarządzanie urządzeniami *NSX Edge* nie jest jeszcze możliwe w przypadku tego klienta webowego.
+>
 
-Zaloguj się wykorzystując otrzymane dane do logowania:
+### Wykorzystanie web client flash
+
+Web client flash jest dostępny w webowym interfejsie Twojej usługi Private Cloud pod adresem: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> (zastąp pcc-xxx-xx-xx-xxx.ovh.com adresem Twojej usługi Private Cloud).
+
+Zaloguj się, podając dane identyfikacyjne, które zostały do Ciebie przesłane:
 
 ![Klient vSphere](images/vsphere-client.png){.thumbnail}
 
-Uzyskasz następnie dostęp do tego interfejsu:
+Przejdź do interfejsu:
 
-![Logowanie do vSphere](images/connection_interface_w.png){.thumbnail}
+![Logowanie do interfejsu vSphere](images/connection_interface_w.png){.thumbnail}
 
-Na stronie `Home`{.action} znajdziesz główne menu swojego vCenter. Z jego poziomu będziesz mógł wykonywać różne czynności:
+Na stronie `Home`{.action} odnajdziesz menu główne Twojego vCenter. Będziesz mógł wykonać różne czynności, takie jak:
 
-- uruchamiać wirtualne maszyny w sekcji `Hosts and Clusters`{.action};
-- konfigurować aplikacje w ramach [usługi NSX](https://docs.ovh.com/pl/private-cloud/dostep-interfejs-nsx/){.external} przechodząc do `Network & Security`{.action};
-- przeglądać zawartość zasobów datastore.
+- Wdrożenie maszyny wirtualnej po przejściu do `Hosts and Clusters`{.action};
+- O ile dysponujesz tą opcją, wykorzystanie NSX po przejściu do `Network & Security`{.action};
+- Przeglądanie datastores.
+
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
