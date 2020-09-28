@@ -58,7 +58,7 @@ Cliquez sur `Suivant`{.action} pour passer à l'étape 2.
 L'interface offre deux modes pour configurer la fréquence de votre tâche. Utilisez le **Mode Simple** pour une sélection d'options de planification simplifiée pour les débutants. Si vous préférez entrer directement une fréquence, semblable à un format de table cron (*crontab*), choisissez le **Mode expert**.
 
 |Mode simple|
-|—|
+|---|
 |Utilisez les menus déroulants pour spécifier l'heure, les jours d'un mois, les jours de la semaine et les mois de la tâche.|
 |![cron frequency](images/cron-jobs-3.png){.thumbnail}|
 
@@ -82,7 +82,7 @@ La tâche sera prête dans quelques minutes. Vous pouvez alors modifier tous ses
 ### Limitations des tâches planifiées sur votre hébergement Web
 
 |Étape|Description|
-|—|—|
+|---|---|
 |Planification horaire|Vous remarquerez que le champ "Minutes" est désactivé dans l'interface (défini par « ? » dans la vue *crontab*). Une tâche ne peut être exécutée qu'une fois par heure, c'est la fréquence de répétition la plus faible qui peut  être spécifiée.|
 |Durée|La durée d'exécution d'une tâche est de 60 minutes. Si un script dépasse cette durée d'exécution, il sera automatiquement arrêté par le système.|
 |Variables|Vous ne pouvez définir que des variables dans un script. Les ajouter à l'URL appelant le script ne fonctionnera pas (Exemple : www/jobs/cron.php?variable=value).|
