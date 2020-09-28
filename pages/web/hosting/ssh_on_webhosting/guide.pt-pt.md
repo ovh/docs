@@ -75,8 +75,8 @@ Depois de aberto o programa (o PuTTY, por exemplo), introduza as informações d
 
 |Informação solicitada|Detalhes|
 |---|---|
-|Servidor SSH|Indique o endereço do servidor SSH identificado na [2.ª etapa](./#2-etapa-obter-as-informacoe-de-acesso). Em função do tipo de software, a denominação pode ser: «Endereço do servidor», «Host» ou «Host Name».|
-|Porta de conexão|Indique a porta de conexão identificada na [2.ª etapa](./#2-etapa-obter-as-informacoe-de-acesso).|
+|Servidor SSH|Indique o endereço do servidor SSH identificado na [2.ª etapa](./#2a-etapa-obter-as-informacoes-de-acesso). Em função do tipo de software, a denominação pode ser: «Endereço do servidor», «Host» ou «Host Name».|
+|Porta de conexão|Indique a porta de conexão identificada na [2.ª etapa](./#2a-etapa-obter-as-informacoes-de-acesso).|
 |Login SSH|Indique o utilizador SSH. Em função do tipo de software, a denominação pode ser: «nome de utilizador», «ID de utilizador», «Login» ou «Username».|
 |Palavra-passe do utilizador SSH|Trata-se da palavra-passe associada ao login SSH.<br><br> Em função do tipo de software, pode igualmente denominar-se «Password».|
 
