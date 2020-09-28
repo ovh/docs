@@ -16,7 +16,7 @@ Uprawnieniami i hasłami użytkowników klienta vSphere zarządzasz w Panelu kli
 ## Wymagania początkowe
 
 - Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Posiadanie aktywnego użytkownika utworzonego w Panelu klienta OVHcloud. Aby uzyskać więcej informacji, zapoznaj się z [przewodnikiem](../manager-ovh-private-cloud/#utilisateurs):
+- Posiadanie aktywnego użytkownika utworzonego w Panelu klienta OVHcloud. Aby uzyskać więcej informacji, zapoznaj się z [przewodnikiem](../manager-ovh-private-cloud/).
 
 ## W praktyce
 
@@ -57,8 +57,6 @@ Wprowadź nowe hasło i potwierdź je.
 
 [Prezentacja Panelu klienta Private Cloud](../manager-ovh-private-cloud/)
 
-[Zmiana uprawnień dla użytkownika](../changer-les-droits-d-un-utilisateur/)
+[Tworzenie i zarządzanie hasłem do konta OVHcloud](../zarzadzanie-haslem/)
 
-[Tworzenie i zarządzanie hasłem do konta OVHcloud](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/)
-
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
