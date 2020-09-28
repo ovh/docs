@@ -3,10 +3,10 @@ title: Installation of OVHcloud Connect Provider from the OVHcloud Control Panel
 excerpt: Find out how to set up your OVHcloud Connect Provider solution via the OVHcloud Control Panel
 slug: occ-provider-manager-setup
 section: Getting started
-order: 1
+order: 3
 ---
 
-**Last updated 28/09/2020**
+**Last updated 28th September 2020**
 
 ## Objective
 
@@ -16,25 +16,23 @@ With OVHcloud Connect, you can link your company network to your private OVHclou
 
 ## Requirements
 
-- an [OVHcloud Connect Provider solution](https://www.ovh.com/fr/solutions/ovhcloud-connect/) {.external}
-- an [OVHcloud vRack](https://www.ovh.com/fr/solutions/vrack/)
+- an [OVHcloud Connect Provider solution](https://www.ovh.co.uk/solutions/ovhcloud-connect/) {.external}
+- an [OVHcloud vRack](https://www.ovh.co.uk/solutions/vrack/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
-### Step 1: ordering your solution
+### Step 1: Ordering your solution
 
 Once you have ordered your OVHcloud Connect Provider solution, you will receive an order confirmation via email, along with a service key.
 
-Then, depending on the provider you have chosen, go to their portal to log in, with the link provided in the order confirmation email.
-Then enter your service key and confirm the order presented to you.
+Depending on the provider you have chosen, go to their portal to log in via the link provided in the order confirmation email. Then enter your service key and confirm the order presented to you.
 
-Then check the activation status of your solution in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} . To do this, click `Server`{.action} in the top left-hand corner, then select the `Network`{.action} tab. Click on `OVHcloud Connect`{.action}, then click on your solution. Your solution status will change to “Active”.
+Next, check the activation status of your solution in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). To do this, click `Server`{.action} in the top navigation bar, then select `Network`{.action} from the left-hand menu. Open `OVHcloud Connect`{.action} and click on your solution. Your solution's status should have changed to “Active”.
 
+### Step 2: Associating a vRack
 
-### Step 2: attaching a vRack
-
-Log in to [the OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} , click `Server`{.action} in the top left-hand corner, then select the `Network`{.action} tab. Click on `OVHcloud Connect`{.action}, then click on your solution.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), click `Server`{.action} in the top navigation bar, then select `Network`{.action} from the left-hand menu. Open `OVHcloud Connect`{.action} and click on your solution.
 
 ![ovhcloud connect selection](images/occ01.png){.thumbnail}
 
@@ -46,13 +44,13 @@ A message will confirm the vRack association.
 
 ![vRack association](images/vrack2.png){.thumbnail}
 
-### Step 3: adding a PoP configuration
+### Step 3: Adding a PoP configuration
 
 > [!warning]
 > The OVHcloud Connect Provider solution requires an L3 level configuration.
 >
 
-Once you have connected your vRack, click `Add a PoP configuration`{.action}  and select the L3 configuration from the dropdown menu.
+Once you have connected your vRack, click `Add a PoP configuration`{.action}  and select the L3 configuration from the drop-down menu.
 
 ![PoP addition](images/pop1.png){.thumbnail}
 
@@ -71,13 +69,13 @@ The `PoP configuration` menu will then appear.
 
 ![PoP addition](images/l3pop2.png){.thumbnail}
 
-### Step 4: adding a datacentre configuration 
+### Step 4: Adding a data centre configuration 
 
 When your PoP configuration has been set, click `Add a configuration`{.action} under the `DC configuration` menu.
 
 ![adding datacentre](images/l3dc0.png){.thumbnail}
 
-Select a datacentre from the dropdown menu, then enter the information required. 
+Select a data centre from the dropdown menu, then enter the information required. 
 
 | Information    | Description |
 |:-------:|:------:|
@@ -86,15 +84,15 @@ Select a datacentre from the dropdown menu, then enter the information required.
 
 ![adding datacentre](images/l3dc1.png){.thumbnail}
 
-You can add additional datacentre configurations by clicking on the `...`{.action} button, then `Add a configuration`{.action}.
+You can add additional data centre configurations by clicking on the `...`{.action} button, then `Add a configuration`{.action}.
 
 ![adding datacentre](images/l3dc1-1.png){.thumbnail}
 
 You must also add a routing configuration.
 
-##### **Add a routing configuration**
+##### **Adding a routing configuration**
 
-Click on the `...`{.action} button on the desired datacentre then on `Add routing configuration`{.action} configuration.
+Click on the `...`{.action} button on the desired data centre then on `Add routing configuration`{.action} configuration.
 
 ![add datacentre](images/l3dc2.png){.thumbnail}
 
@@ -120,7 +118,7 @@ If you choose the Static type, enter the required information:
 
 ![add datacentre](images/l3dc4.png){.thumbnail}
 
-You can add multiple routing configurations within the same datacentre. The configuration type (BGP or Static) chosen for your first configuration will then apply to the next configuration in the same datacentre.
+You can add multiple routing configurations within the same data centre. The configuration type (BGP or Static) chosen for your first configuration will then apply to the next configuration in the same data centre.
 
 ![add datacentre](images/l3dc6.png){.thumbnail}
 
