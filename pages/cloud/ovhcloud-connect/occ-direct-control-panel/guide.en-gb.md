@@ -3,7 +3,7 @@ title: Installation of OVHcloud Connect Direct from the OVHcloud Control Panel
 excerpt: Find out how to set up your OVHcloud Connect Direct solution via the OVHcloud Control Panel
 slug: occ-direct-manager-setup
 section: Getting started
-order: 3
+order: 2
 ---
 
 **Last updated 28th September 2020**
@@ -22,11 +22,11 @@ With OVHcloud Connect, you can link your company network to your private OVHclou
 
 ## Instructions
 
-Log in to [the OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} Control Panel, click `Server`{.action} in the top navigation bar, then select `Network`{.action} from the left-hand menu. Click on `OVHcloud Connect`{.action}, then click on your solution.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), click `Server`{.action} in the top navigation bar, then select `Network`{.action} from the left-hand menu. Open `OVHcloud Connect`{.action} and click on your solution.
 
 ![ovhcloud connect selection](images/occ01.png){.thumbnail}
 
-### Attach a vRack
+### Step 1: Associating a vRack
 
 You will need to link a vRack to your solution first. Click the `Attach a vRack`{.action} button and select an existing vRack from the drop-down menu. 
 
@@ -36,7 +36,7 @@ A message will confirm the vRack association.
 
 ![vRack association](images/vrack2.png){.thumbnail}
 
-### Step 2: Add a PoP configuration
+### Step 2: Adding a PoP configuration
 
 > [!warning]
 > Changing the PoP configuration from L2 to L3, or vice versa, would require deleting the entire configuration. We advise you to think carefully about your configuration choice before going any further.
@@ -113,7 +113,7 @@ You can add additional data centre configurations by clicking on the `...`{.acti
 
 You must also add a routing configuration.
 
-##### **Add a routing configuration**
+##### **Adding a routing configuration**
 
 Click on the `(...)`{.action} button on the desired data centre then on `Add routing configuration`{.action} .
 
