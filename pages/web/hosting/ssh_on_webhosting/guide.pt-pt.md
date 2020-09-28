@@ -1,135 +1,117 @@
 ---
-title: 'Partilhado: O SSH nos alojamentos partilhados'
-excerpt: 'Partilhado: O SSH nos alojamentos partilhados'
-id: '1962'
+title: 'Utilizar o acesso SSH do seu alojamento web'
 slug: partilhado_o_ssh_nos_alojamentos_partilhados
-legacy_guide_number: g1962
+excerpt: 'Saiba como se conectar e utilizar o acesso SSH do seu alojamento web OVHcloud'
+section: 'FTP e SSH'
 ---
 
+**Última atualização: 01/09/2020**
 
-## O que é o SSH e quais os seus benefícios?
-A utilização de SSH no seu alojamento é possível a partir da oferta Pro (nas [antigas ofertas](https://www.ovh.pt/alojamento-partilhado/antigas_ofertas_alojamento_partilhado.xml) a partir do alojamento da gama plan).
+## Objetivo
 
-ATENÇÃO: Nas antigas ofertas somente poderá aceder com a conta FTP principal. Isto significa que os utilizadores FTP suplementares (os que criou com recurso ao Multi-FTP) não terão acesso SSH.
+Os planos de alojamento web da OVH dão-lhe acesso a um espaço de armazenamento que permite publicar ficheiros nos seus sites ou aplicações. O acesso a este espaço é possível através de um utilizador FTP ou SSH e das respetivas palavras-passe.
 
-O SSH permite-lhe ligar-se ao seu alojamento e de manipular os ficheiros (como FTP).
-Para mais informações sobre o protocolo SSH, [clique aqui](https://pt.wikipedia.org/wiki/SSH).
+**Saiba como se conectar e utilizar o acesso SSH do seu alojamento web OVHcloud.**
 
+## Requisitos
 
-## Pré-requisitos
+- Ter um [plano de alojamento web OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external} com acesso SSH.
+- Estar na posse das informações necessárias à conexão em SSH ao espaço de armazenamento.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, secção `Web`{.action}.
 
-- A opção SSH deverá estar disponível:
+## Instruções
 
-Apenas para alojamentos a partir da [oferta PRO](https://www.ovh.pt/alojamento-partilhado/alojamento-partilhado-pro.xml).
+### 1.ª etapa: Assegurar que o acesso SSH se encontra ativo
 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, secção «Web», e clique em `Alojamentos`{.action} na barra de serviços à esquerda. De seguida, selecione o nome do alojamento correspondente e aceda ao separador `FTP - SSH`{.action}. Aparecerá a informação relativa ao seu espaço de armazenamento 
 
-- Um software que permite o acesso SSH (Putty por exemplo).
+Na coluna «SSH» da tabela, verifique se o utilizador SSH (ou «Login SSH») em causa dispõe de um acesso SSH ativo. Se não for o caso, surgirá a menção «Desativado».
 
-- A porta 22 aberta na sua Firewall e no seu router.
+![usessh](images/use-ssh-step1.png){.thumbnail}
 
+Se o acesso SSH não estiver ativo, clique no botão `...`{.action} à direita do utilizador em questão e, a seguir, em `Modificar`{.action}. Na janela que se abrir, ative o acesso SSH e conclua a modificação. Se não conseguir proceder à ativação, certifique-se de que o seu serviço de [alojamento web OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external} beneficia de um acesso SSH.
 
+### 2.ª etapa: Obter as informações de acesso
 
+Para se ligar ao seu espaço de armazenamento, deve dispor dos elementos apresentados a seguir. Pode encontrá-los no separador `FTP - SSH`{.action}.
 
-## Ativar/Desativar o SSH num utilizador
-Poderá gerir os seus logins SSH no seu Espaço Cliente. Basta que clique no nome do seu alojamento por baixo da secção alojamento e aceda ao separador "FTP - SSH".
+|Elemento|Onde encontrá-lo?|
+|---|---|
+|Utilizador SSH ativo|Encontre-o na coluna «Login SSH» da tabela. Nota: este utilizador deve dispor de um acesso SSH ativo.|
+|Palavra-passe do utilizador SSH|Se esqueceu esta palavra-passe, pode alterá-la clicando no botão `...`{.action} e, a seguir, em `Alterar a palavra-passe`{.action}.|
+|Endereço do servidor SSH|Procure a menção «Acesso SSH ao cluster». No elemento que surgir, o endereço do servidor SSH começa depois de «ssh://» e termina antes dos dois pontos.|
+|Porta de conexão ao servidor SSH|Procure a menção «Acesso SSH ao cluster». No elemento que surgir, o número da porta é mencionado depois dos dois pontos.|
 
-Ao criar novos utilizadores FTP, a ligação via SSH poderá ser ativada igualmente para esse mesmo utilizador.
+Aqui fica um exemplo do que poderia encontrar: `ssh://ssh.cluster023.hosting.ovh.net:22/`. Neste caso, «ssh.cluster023.hosting.ovh.net» é o endereço do servidor SSH e «22» é a porta de conexão SSH.
 
-![](images/img_3945.jpg){.thumbnail}
-Poderá deesativar a ligação SSH num utilizador ao clicar na roda dentada à direita do seu login e depois clique em "Modificar".
+![usessh](images/use-ssh-step2.png){.thumbnail}
 
-Esta modificação será efetivada dentro de alguns minutos.
+### 3.ª etapa: Conectar-se em SSH ao espaço de armazenamento
 
-![](images/img_3946.jpg){.thumbnail}
+Para estabelecer uma conexão em SSH, utilize um terminal para interagir diretamente com o espaço de armazenamento através de linhas de comando. 
 
+Em macOS, Linux e Windows 10, esta ferramenta encontra-se instalada por predefinição. Um ambiente Windows mais antigo irá requerer a instalação de um software como o PuTTY ou a adição da funcionalidade OpenSSH. Uma vez que esta operação depende do sistema operativo que utiliza, não podemos especificar todos os casos neste guia.
 
-## Abrir a linha de comandos ('prompt')
-Em Linux :
+Assim, há duas possibilidades de conexão, em função do método utilizado:
 
-- Em KDE: Aceda ao menu principal (de forma padrão no canto inferior esquerdo) e na barra de pesquisa introduza "konsole", clicando devendo clicar de seguida no primeiro resultado da pesquisa.
+#### 3.1\. A partir de um terminal
 
-Em Mac :
-- Clique no disco rígido e clique de seguida no diretorio de aplicações. Aceda depois ao diretorio de utilidades e abra a aplicação "Terminal"
+> [!warning]
+> Os nossos serviços de alojamento partilhado não oferecem um acesso «superutilizador» (ou «root») via SSH.
 
-Em Windows :
+Uma vez aberto o terminal, utilize o comando seguinte substituindo os elementos «sshlogin», «sshserver» e «connectionport» pelos seus identificadores SSH. 
 
-
-- Em Windows não existe nenhum cliente nativo de SSH, e como tal, é necessário efetuar o download de um.
-
-O mais conhecido é sem dúvida o Putty. Pode efetuar o seu download [aqui](http://www.putty.org/).
-
-
-## A ligação ao seu alojamento através de SSH
-Em Linux e Mac:
-
-- Para se ligar ao seu alojamento através de SSH abra uma linha de comandos e introduza:
-SSH SeuLoginFtp@SeuServidorFtp
-
-
-Poderá encontrar esses identificadores FTP graças a [este guia](https://www.ovh.com/fr/g1909.mutualise_gerer_et_acceder_a_ses_mots_de_passe#les_differents_mots_de_passe_lies_au_service_mutualise_dovh_la_connexion_ftp).
-
-![](images/img_3093.jpg){.thumbnail}
-Em Windows :
-
-- Para Windows, o melhor é consultar o seguinte guia para [Putty](https://www.ovh.com/fr/g1964.mutualise_utilisation_de_putty_sur_windows).
-
-
-
-
-## Lista dos principais comandos
-Basta substituir o termo arg pelo nome da pasta ou ficheiro em que pretende efetuar o comando.
-
-|Comando a introduzir|Tradução (em Inglês)|Explicação (Em Português)|
-|pwd|print working directory|Apresenta a pasta em que estamos a trabalhar|
-|cd arg|change directory|Altera a pasta de trabalho de; arg corresponde a nova pasta. O comando cd sem adicionar arg posiciona-nos na pasta home.|
-|cd ..|change directory to ..|Altera a pasta de trabalho para um nível abaixo da árvore de pastas.|
-|ls arg|list|Lista o conteúdo de arg se estiver numa pasta. Sem arg, ls lista o conteúdo da pasta em que estamos a trabalhar.|
-|ll arg|long list|Apresenta as informações detalhadas sobre o ficheiro arg.|
-|ls -a arg|list all|Apresenta todos os ficheiros de arg, mesmo os que começam por .., se estiver numa pasta. As opções de ls podem ser combinadas: ls -al.|
-|chmod droit arg|change droits|Altera os direitos do ficheiro arg, conforme droit.|
-|mkdir arg|make directory|Cria a pasta arg.|
-|rmdir arg|remove directory|Elimina a pasta arg, se estiver vazia.|
-|rm arg|remove|Elimina a referência arg.|
-|rm -r arg|remove recursively|Elimina arg e todos os ficheiros que estiverem na pasta.|
-|mv arg1 arg2|move|Renomeia ou move arg1 para arg2.|
-|touch arg|touch|Cria um ficheiro vazio de nome arg se não existir, caso contrário atualiza-o com a data corrente, a sua data da última modificação.|
-
-
-
-
-## Lançar um script com uma versão específica de PHP
-Para executar os seus scripts a partir de um comando SSH e com recurso a uma versão específica de PHP; deverá utilizar os seguintes comandos.
-
-|Commande|Version|
-|php.ORIG.4 (cgi)|4.4.9|
-|php.ORIG.5_2 (cgi)|5.2.17|
-|php.ORIG.5_3 (cgi-fcgi)|5.3.29|
-|/usr/local/php5.3/bin/php (cli)|5.3.29|
-|php.ORIG.5_4 (cgi-fcgi)|5.4.38|
-|/usr/local/php5.4/bin/php (cli)|5.4.38|
-|/usr/local/php5.5/bin/php (cli)|5.5.22|
-|/usr/local/php5.6/bin/php (cli)|5.6.6|
-
-
-Por exemplo, para executar o script "meuScript.php" com a versão 5.3 de PHP, deverá lançar o seguinte comando:
-
-```
-php.ORIG.5_3 meuScript.php
+```ssh
+ssh sshlogin@sshserver -p connectionport
 ```
 
+Depois de enviado o comando, deverá introduzir a palavra-passe do utilizador SSH. Quando estiver conectado, prossiga para a etapa seguinte: [Interagir com o espaço de armazenamento em SSH](./#4-etapa-interagir-com-o espaco-de-armazenamento-em-ssh).
 
-Antes do nome do script é igualmente necessário indicar a sua localização.
-Se o seu ficheiro "meuScript.php" se encontra na pasta "WWW", e se deseja executá-lo na versão PHP 5.3, é necessário lançar o seguinte comando:
+![usessh](images/use-ssh-step3.png){.thumbnail}
 
+#### 3.2\. A partir de um programa
+
+Depois de aberto o programa (o PuTTY, por exemplo), introduza as informações de conexão SSH. Como esta manipulação é inerente ao programa, não podemos descrever todos os casos neste guia. A seguir, apresentamos a informação que lhe será solicitada:
+
+|Informação solicitada|Detalhes|
+|---|---|
+|Servidor SSH|Indique o endereço do servidor SSH identificado na [2.ª etapa](./#2-etapa-obter-as-informacoe-de-acesso). Em função do tipo de software, a denominação pode ser: «Endereço do servidor», «Host» ou «Host Name».|
+|Porta de conexão|Indique a porta de conexão identificada na [2.ª etapa](./#2-etapa-obter-as-informacoe-de-acesso).|
+|Login SSH|Indique o utilizador SSH. Em função do tipo de software, a denominação pode ser: «nome de utilizador», «ID de utilizador», «Login» ou «Username».|
+|Palavra-passe do utilizador SSH|Trata-se da palavra-passe associada ao login SSH.<br><br> Em função do tipo de software, pode igualmente denominar-se «Password».|
+
+Quando estiver conectado, prossiga para a etapa seguinte.
+
+### 4.ª etapa: Interagir com o espaço de armazenamento em SSH
+
+Deverá utilizar comandos de modo a interagir com o espaço de armazenamento. Cada um destes comandos tem um significado específico associado ao inglês. Se necessário, recorra à lista abaixo. Atenção: **esta lista não é exaustiva**.
+
+|Comando|Significado em inglês|Descrição| 
+|---|---|---|
+|pwd|Print working directory|Exibe o repertório de trabalho atual.| 
+|cd `arg`|Change directory|Permite mudar para o repertório de trabalho indicado no lugar de `arg`.|
+|cd `..`|Change directory|Permite mudar de repertório de trabalho, subindo um nível na árvore de repertórios.|
+|cd|Change directory|Sem especificar um argumento, permite que se reposicione na raiz do espaço de armazenamento (home).|
+|ls|List|Lista o conteúdo do repertório de trabalho. Adicione atributos para modificar a exibição do resultado do comando (como `ls -ulhG`).| 
+|chmod `droit` `arg`|Change mode|Altera os direitos do ficheiro ou do repertório mencionado como argumento `arg`.| 
+|mkdir `arg`|Make directory|Permite criar um repertório com o nome do argumento `arg`.| 
+|touch `arg`|Touch|Cria um ficheiro vazio, se já não existir, com o nome mencionado como argumento `arg`.|
+|rm `arg`|Remove|Elimina o ficheiro mencionado como argumento `arg`.| 
+|rm -r `arg`|Remove|Elimina o repertório mencionado como argumento `arg`, bem como todo o seu conteúdo, de forma recursiva.| 
+|mv `arg1` `arg2`|Move|Renomeia ou desloca um elemento (especificado como `arg1`) para uma nova localização (especificada como `arg2`).| 
+
+Através de um comando, pode igualmente lançar um script utilizando uma versão específica de PHP. Por exemplo, para a versão PHP 7.1, utilize o comando seguinte. Adapte os elementos ao seu caso pessoal.
+
+```sh
+/usr/local/php7.1/bin/php myscript.php
 ```
-php.ORIG.5_3 www/monScript.php
-ou
-php.ORIG.5_3 /www/monScript.php
-```
 
+Em função da versão de PHP que deseja usar, é possível que o ambiente de execução tenha de ser modificado por uma questão de compatibilidade. Para isso, recorra [ao guia](../modificar_o_ambiente_de_execucao_do_meu_alojamento_web/) «Alterar a configuração do alojamento web».
 
+## Quer saber mais?
 
+[Alterar a configuração do alojamento web](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web/)
 
-## As nossas chaves públicas (a validar aquando da sua primeira ligação via SSH)
-Será solicitado uma validação da chave pública aquando da primeira ligação no seu servidor.
+[Configurar o ficheiro .ovhconfig do alojamento web](https://docs.ovh.com/pt/hosting/configurar-ficheiro-ovhconfig/)
 
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
