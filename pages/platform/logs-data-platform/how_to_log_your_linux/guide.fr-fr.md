@@ -5,7 +5,7 @@ order: 02
 section: Use cases
 ---
 
-**Last updated 10th April, 2019**
+**Last updated 27th July, 2020**
 
 ## Objective
  
@@ -19,8 +19,8 @@ In this guide will show you how to send Logs from your Linux instance to Logs Da
 
 - A **Linux** based instance (server, VPS, Cloud instance, Raspberry Pi, ...). Command lines will be for **DEBIAN 9** in this tutorial
 - A root access to this instance
-- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
-- [To create at least one Stream and get its token.](../quick_start/guide.fr-fr.md){.ref}
+- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
+- [To create at least one Stream and get its token.](../quick-start){.ref}
 
 ## Instructions
 
@@ -31,7 +31,7 @@ On Linux, logs are generated automatically, for a variety of actions. RAM usage,
 
 ### What are logs?
 
-Here are some example logs from an OVH Public Cloud instance on **Debian 9** :
+Here are some example logs from an OVHcloud Public Cloud instance on **Debian 9** :
 
 ```text
  Jan 27 12:21:15 server syslog-ng[29512]: syslog-ng starting up; version='3.8.1'
@@ -44,7 +44,7 @@ Conclusion : lot of info, with a date, a process, a description. but hard to fol
 
 ### Configure your Account
 
-First thing to do is to configure your Logs Data Platform account: order a plan (we have free plans ;-), create your user, a stream and a dashboard. Verify that everything works already perfectly. We wrote an independent guide for this, please read it and come back here after : [Quick start](../quick_start/guide.fr-fr.md){.ref} Good? let's go to following step then !
+First thing to do is to configure your Logs Data Platform account: [create your user](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}, a stream and a dashboard. Verify that everything works already perfectly. We wrote an independent guide for this, please read it and come back here after : [Quick start](../quick-start){.ref} Good? let's go to following step then !
 
 ### Install and configure a log collector
 
@@ -73,28 +73,27 @@ $ debian@server:~$ sudo nano /etc/syslog-ng/conf.d/ldp.conf
 
 ``` hl_lines="10 15"
 template ovhTemplate {
-    # Important:
-    ## Square brackets: No space after the opening [ or before the closing ].
-    ## sdid@32473: Needed. Leave it as it is for OVHCloud use. (Flowgger needs an id for structured data as specified by the RFC 5424).
-    ## X-OVH-TOKEN: Change X-OVH-TOKEN=\"xxxxxxxxxxxxxx\" with your X-OVH-TOKEN available in your OVHCloud Log Data Platform panel.
-    
-    template("<${PRI}>1 ${ISODATE} ${HOST} ${PROGRAM} ${PID} - [sdid@32473 X-OVH-TOKEN=\"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx\" pid=\"${PID}\" facility=\"${FACILITY}\" priority=\"${PRIORITY}\"] ${MSG}\n");
+    # important:
+    ## Bracket [] no space between inside (opening/closing), space outside.
+    ## sid_id (exampleSDID@32473), flowgger need an id for structured data as specified by the RFC 5424.
+    ## change X-OVH-TOKEN=\"xxxxxxxxxxxxxx\" by your X-OVH-TOKEN
+    #flowgger RFC5424 example:
+    #<23>1 2016-09-05T15:53:45.637824Z hostname appname 69 42 [origin@123 software="test script" swVersion="0.0.1"] test message
+    #pri timestamp hostname appname pid msgid [sd_id sd_field=sd_value] message
+
+    template("<${LEVEL_NUM}>1 ${ISODATE} ${HOST} ${PROGRAM} ${PID} - [sdid@32473 X-OVH-TOKEN=\"xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxx\" pid=\"${PID}\" facility=\"${FACILITY}\" priority=\"${PRIORITY}\"] ${MSG}\n");
     template_escape(no);
 };
 
 destination ovhPaaSLogs {
-    network(
-        "<your_cluster>.logs.ovh.com"
-        port(6514)
-        template(ovhTemplate)
-        ts-format("iso")
-        transport("tls")
-        tls(
-            peer-verify(required-trusted) 
-            ca_dir("/etc/ssl/certs/")
-        )
-        keep-alive(yes)
-        so-keepalive(yes)
+    network("<your_cluster>.logs.ovh.com"
+        port(6514),
+        template(ovhTemplate),
+        ts_format("iso"),
+        transport("tls"),
+        tls(peer-verify("required-trusted") ca_dir("/etc/ssl/certs/")),
+        keep-alive(yes),
+        so_keepalive(yes),
     );
 };
 
@@ -180,11 +179,11 @@ Alright, you just created the first widget in you dashboard. Now, let's create a
 
 Well done, second Widget added!
 
-The best feature is to mix criteria, based on what is important to you. For example, `facility:auth AND level:6`. Also you will soon be able to create Alerts in Logs Data manager.
+The best feature is to mix criteria, based on what is important to you. For example, `facility:auth AND level:6`. Why not [create an alert](../alerting){.ref} on this condition?
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.fr-fr.md){.ref}
-- Documentation: [Guides](../product.fr-fr.md){.ref}
+- Getting Started: [Quick Start](../quick-start){.ref}
+- Documentation: [Guides](../){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

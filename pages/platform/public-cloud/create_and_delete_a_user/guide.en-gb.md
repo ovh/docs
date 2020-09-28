@@ -1,7 +1,8 @@
 ---
 title: 'Creating and deleting an OpenStack user'
 slug: creation-and-deletion-of-openstack-user
-section: 'Knowledge Base'
+section: 'Project management'
+order: 8
 ---
 
 **Last updated 6th December 2019**

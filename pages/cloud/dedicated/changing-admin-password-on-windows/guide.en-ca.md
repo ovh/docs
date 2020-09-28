@@ -9,25 +9,25 @@ section: Server Management
 
 ## Objective
 
-When you install or reinstall a Windows operating system, you are given an admin access password. We strongly recommend that you change it, as detailed in our guide to [securing a Dedicated Server](https://docs.ovh.com/ca/en/dedicated/securing-a-dedicated-server/). You may also find that you have lost this password, and need to change it.
+When you install or reinstall a Windows operating system, you are given an admin access password. We strongly recommend that you change it, as detailed in our guide to [securing a Dedicated Server](../securing-a-dedicated-server/). You may also find that you have lost this password, and need to change it.
 
 **This guide will take you through the process of changing your server's admin password.**
 
 ## Requirements
 
 * a [Dedicated Server](https://www.ovh.com/ca/en/dedicated-servers/){.external} with Windows installed
-* access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
-First, boot your server into [rescue mode](https://docs.ovh.com/ca/en/dedicated/rescue-mode/){.external} using the WinRescue boot environment. Once the server has rebooted, select the `IPMI`{.action} tab on your server's page in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+First, boot your server into [rescue mode](../rescue-mode/){.external} using the WinRescue boot environment. Once the server has rebooted, select the `IPMI`{.action} tab on your server's page in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 > [!primary]
 >
-> For detailed information on how to use the IPMI feauture, please refer to our [IPMI guide](https://docs.ovh.com/ca/en/dedicated/use-ipmi-dedicated-servers/){.external}.
+> For detailed information on how to use the IPMI feauture, please refer to our [IPMI guide](../use-ipmi-dedicated-servers/){.external}.
 >
 
-Next, activate the IPMI feature using either the Java applet or your browser. After the IPMI session has started, double-click the NTPWdi server tool on the WindRescue desktop.
+Next, activate the IPMI feature using either the Java applet or your browser. After the IPMI session has started, double-click the NTPWdi server tool on the WinRescue desktop.
 
 ![NTPWdi](images/ntpwdi-tool-01.png){.thumbnail}
 
@@ -47,8 +47,8 @@ Your password has now been changed. Exit the tool, close the IPMI session, and r
 
 ## Go further
 
-[Rescue mode](https://docs.ovh.com/ca/en/dedicated/rescue-mode/){.external}.
+[Rescue mode](../rescue-mode/){.external}.
 
-[Using the IPMI with dedicated servers](https://docs.ovh.com/ca/en/dedicated/use-ipmi-dedicated-servers/){.external}.
+[Using the IPMI with dedicated servers](../use-ipmi-dedicated-servers/){.external}.
 
 Join our community of users on <https://community.ovh.com/en/>.

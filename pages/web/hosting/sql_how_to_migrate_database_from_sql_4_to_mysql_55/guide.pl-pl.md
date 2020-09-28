@@ -28,7 +28,7 @@ W części tej odnajedziesz również nazwę użytkownika i adres serwera, któr
 
 Kliknij na koło zębate z prawej strony. Będziesz mógł zmienić hasło do bazy danych, jeśli go nie pamiętasz.
 
-![](images/img_3774.jpg){.thumbnail}
+![](images/3774.png){.thumbnail}
 
 
 ## Jak zalogować się do bazy danych w wersji SQL 4?
@@ -40,7 +40,7 @@ lub
 
 
 
-![](images/img_3775.jpg){.thumbnail}
+![](images/3775.png){.thumbnail}
 Po przejściu na stronę logowania do interfejsu [phpmyadmin](https://phpmyadmin.ovh.net/old/), należy podać poniższe dane:
 
 - Username = Użytkownik bazy danych
@@ -94,7 +94,7 @@ Pojawi się okno pop-up z prośbą o potwierdzenie operacji. Kliknij na "Zatwier
 
 Operacja usuwania bazy danych może trwać około 10-15 minut.
 
-![](images/img_3776.jpg){.thumbnail}
+![](images/3776.png){.thumbnail}
 
 
 ## Jak utworzyć bazę danych w wersji MySQL 5.5?

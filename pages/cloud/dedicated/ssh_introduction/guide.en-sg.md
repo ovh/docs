@@ -6,11 +6,11 @@ section: SSH and SSH key
 order: 1
 ---
 
-**Last updated 31/01/2018**
+**Last updated on 2018/01/18**
 
 ## Objective
 
-SSH (Secure Shell) communication protocol is natively installed on all OVH servers (VPS, dedicated servers, Public Cloud instances).
+SSH (Secure Shell) communication protocol is natively installed on all OVHcloud servers (VPS, dedicated servers, Public Cloud instances).
 
 **Learn how to use the SSH service to access your server.**
 
@@ -73,7 +73,7 @@ The following message will appear:
 The authenticity of host servername (server_IP) can’t be established.
 RSA key fingerprint is a9:bb:55:35:86:xx:xx:00:xx:00:2b:2c:79:10:96:3c.
 Are you sure you want to continue connecting (yes/no)? YES
-Warning: Permanently added servername, server_IP (RSA) to the list of known hosts.
+[!warning] Permanently added servername, server_IP (RSA) to the list of known hosts.
 Password:
 root@vps12345:~#
 ```

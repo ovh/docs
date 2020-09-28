@@ -16,7 +16,7 @@ Des variables sont aussi disponibles pour personnaliser la signature générique
 Cliquez [ici](https://www.ovh.com/fr/emails/hosted-exchange/guides/){.external} pour retrouver nos différents guides.
 
 
-## Signature de mail - Espace client OVH
+## Signature de mail - Espace client OVHcloud
 
 ### Mise en place Partie 1
 Afin de créer votre signature (pied de page), connectez-vous à votre [Espace client](https://www.ovh.com/manager/web/login.html){.external}.
@@ -66,34 +66,8 @@ Un tableau récapitulatif vous renseignera sur les informations générales de v
 ![emails](images/1370.png){.thumbnail}
 
 
-## Utilisation signature OWA 2013
-
-### Exemple e-mail Partie 1
-Voici comment ajouter votre signature dans un e-mail depuis l'interface du [Webmail Exchange](https://ex.mail.ovh.net/owa/){.external}.
-
-Identifiez-vous avec votre adresse e-mail entière et le mot de passe de votre compte e-mail.
-
-Une fois connecté dans l'onglet "Messagerie" sélectionnez en haut à gauche "nouveau message".
-
-Rédigez votre mail, puis, pour y ajouter votre signature, sélectionnez "Insérer" puis "Signature".
-
-*La signature ne va pas apparaître dans le corps du message : c'est normal.*
-
-Finalisez votre envoi en cliquant sur "Envoyer".
-
-
-![emails](images/1371.png){.thumbnail}
-
-
-### Exemple e-mail Partie 2
-L'e-mail est correctement reçu et notre signature apparaît correctement.
-
-
-![emails](images/1372.png){.thumbnail}
-
-
-## Utilisation signature OWA 2016
-Depuis le webmail exchange 2016, il n'y a pas de manipulation nécessaire pour ajouter votre pied de page.
+## Utilisation signature OWA 
+Depuis le webmail exchange, il n'y a pas de manipulation nécessaire pour ajouter votre pied de page.
 
 Lors de l'envoi d'un e-mail, celui-ci n'est pas visible dans le corps du message, ce qui est normal. Il s'affiche cependant correctement lors de la réception de l'e-mail par le destinataire.
 

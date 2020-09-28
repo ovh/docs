@@ -2,7 +2,8 @@
 title: Creating and deleting security groups in Horizon
 excerpt: Find out how to create and delete security groups via the Horizon interface
 slug: create-delete-security-group-horizon
-section: Knowledge Base
+section: Horizon
+order: 5
 ---
 
 **Last updated 07th March 2018**
@@ -18,7 +19,7 @@ All projects have a default security group for each region. When an instance is 
 
 ## Requirements
 
-- You must have access to [your Horizon interface](https://docs.ovh.com/gb/en/public-cloud/configure_user_access_to_horizon/){.external}.
+- You must have access to [your Horizon interface](../configure_user_access_to_horizon/){.external}.
 
 
 ## Instructions

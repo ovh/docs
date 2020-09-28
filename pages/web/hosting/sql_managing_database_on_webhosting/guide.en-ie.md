@@ -1,11 +1,12 @@
 ---
-title: Managing a database on a web hosting package
+title: 'Managing a database on a web hosting package'
 slug: managing-a-database-on-a-web-hosting-package
 legacy_guide_number: 1943
+hidden: true
 ---
 
-
 ## General information
+
 A database is a collection of data that is structured and organised so that it can easily be stored and accessed. SQL is a standard language which you can use to request that a database includes, edits, restores, or deletes data.
 
 OVH's shared web hosting packages include SQL databases by default. The number and size of the database depends on the package that you have ordered. You can find more [details here](https://www.ovh.ie/web-hosting/){.external}.

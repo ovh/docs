@@ -1,74 +1,72 @@
 ---
-title: Create and configure an additional disk on an instance
-excerpt: Create and configure an additional disk on an instance
-slug: create-and-configure-additional-disk-instance
+title: 'Create and configure an additional disk on an instance'
+slug: create_and_configure_an_additional_disk_on_an_instance
+excerpt: 'This guide explains how to create an additional disk and then configure it on one of your instances.'
 section: Storage
 ---
 
+**Last updated 2019/01/31**
 
-## 
+## Objective
+
 It is possible to create additional disks for your Public Cloud instances.
 This can be useful in cases where:
 
-- You want to increase your storage capacity without changing the instance model.
-- You want to have a highly available, high-performance storage.
-- You want to move your storage as well as your data to another instance.
+* You want to increase your storage capacity without changing the instance model.
+* You want to have a highly available, high-performance storage.
+* You want to move your storage as well as your data to another instance.
 
+**This guide explains how to create an additional disk and then configure it on one of your instances.**
 
-This guide explains how to create an additional disk and then configure it on one of your instances.
+## Requirements
 
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* a [Public Cloud Instance](https://www.ovh.com/asia/public-cloud/instances/){.external} in your OVHcloud account
+* administrative (root) access to your instance via SSH
 
-## Prerequisites
+## Instructions
 
-- An instance
+Firstly, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu. Then click the `Servers`{.action} side-menu to expand your list of projects.
 
+When you've found your project in the list, click it and then select the `Infrastructure`{.action} tab.
 
+![select project](images/attach-disk-01.png){.thumbnail}
 
+Now click the `Actions`{.action} button and then select `Add a disk`{.action}.
 
-## 
+![create disk](images/attach-disk-02.png){.thumbnail}
 
-- Log on to your 
-[OVH control panel](https://ca.ovh.com/manager/cloud/)
-- Click "Add" and select "Add a disk"
+Now configure you options for disk type, disk size, and location. When you've finished, click the `Add`{.action} button.
 
+![configure disk](images/attach-disk-03.png){.thumbnail}
 
+The new disk will now be displayed in the Control Panel.
 
-![](images/img_2731.jpg){.thumbnail}
-From this new menu you can:
+![attach disk 01](images/attach-disk-04.png){.thumbnail}
 
-- Name your drive
-- Select the disc type:
+To attach the disk to an instance, click the dropdown arrow under the disk icon and then select `Attach it to a server`{.action}.
 
-|Classic|200 IOPS guaranteed|
-|High Performance|Up to 3000 IOPS|
+![attach disk 02](images/attach-disk-05.png){.thumbnail}
 
+Now click the circle on the side of your instance and then click the `Confirm`{.action} button to attach the disk to attach it.
 
+![attach disk 03](images/attach-disk-06.png){.thumbnail}
 
-- Choose the disk capacity: from 10 GB
-- Select your disk region
-- Confirm the disk creation
+The process of attaching the disk to your instance will now start. This may take several minutes to complete.
 
+> [!warning]
+>
+You must ensure that you don't navigate away from the `Infrastructure` tab while the disk is being attached. This could disrupt the process.
+>
 
-A new window will appear with your disk:
+![attach disk 04](images/attach-disk-07.png){.thumbnail}
 
-![](images/img_2732.jpg){.thumbnail}
-You can then attach your additional disk to an instance:
+### Using Linux
 
-- By dragging and dropping your disk on your instance .
-- By clicking on the arrow at the bottom right of your drive and selecting "Attach to a server."
-
-
-Once done, it will appear just below your instance:
-
-![](images/img_2733.jpg){.thumbnail}
-
-
-## From an instance under Linux
-
-- List the disks 
+First, establish an SSH connection to your instance, and then use the command below to list the instance's disks.
 
 ```
-admin@serveur-1:~$ lsblk
+# admin@serveur-1:~$ lsblk
 
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 vda 254:0 0 10G 0 disk
@@ -76,14 +74,15 @@ vda 254:0 0 10G 0 disk
 vdb 254:16 0 10G 0 disk
 ```
 
+> [!primary]
+>
+VDA usually refers to your instance's default hard disk. VDB refers to the additional disk.
+>
 
-
-VDA usually refers to your instance's disk, VDB will therefore be the additional disk
-
-- Create a partition
+Next, create a partition on the additional disk, using the command below:
 
 ```
-admin@serveur-1:~$ sudo fdisk /dev/vdb
+# admin@serveur-1:~$ sudo fdisk /dev/vdb
 
 Welcome to fdisk (util-linux 2.25.2).
 Changes will remain in memory only, until you decide to write them.
@@ -120,17 +119,10 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-
-- The partition table has been altered.
-
-Calling ioctl() to re-read partition table.
-Syncing disks.[/code]
-
-
-- Format the partition
+Next, format the partition using the command below:
 
 ```
-admin@serveur-1:~$ sudo mkfs.ext4 /dev/vdb1
+# admin@serveur-1:~$ sudo mkfs.ext4 /dev/vdb1
 mke2fs 1.42.12 (29-Aug-2014)
 Creating filesystem with 2621184 4k blocks and 655360 inodes
 Filesystem UUID: 781be788-c4be-462b-b946-88429a43c0cf
@@ -143,8 +135,7 @@ Creating journal (32768 blocks): done
 Writing superblocks and filesystem accounting information: done
 ```
 
-
-- Mount the partition 
+Next, mount the partition with this command:
 
 ```
 admin@serveur-1:~$ sudo mkdir /mnt/disk
@@ -152,7 +143,7 @@ admin@serveur-1:~$ sudo mount /dev/vdb1 /mnt/disk/
 ```
 
 
-- Check the mounting
+And finally, check the mount point using this command:
 
 ```
 admin@serveur-1:~$ df -h
@@ -167,11 +158,7 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 /dev/vdb1 9.8G 23M 9.2G 1% /mnt/disk
 ```
 
-
-
-To mount a persistent disk, you have to change the /etc/fstab file:
-
-Retrieve the block ID
+If you want to create a persistent mount point, you will need to change the /etc/fstab. First, use the command below to retrieve the block ID:
 
 ```
 admin@serveur-1:~$ sudo blkid
@@ -180,9 +167,7 @@ admin@serveur-1:~$ sudo blkid
 /dev/vdb1: UUID="2e4a9012-bf0e-41ef-bf9a-fbf350803ac5" TYPE="ext4" PARTUUID="95c4adcc-01"
 ```
 
-
-
-- Add your disk to the /etc/fstab file:
+You can now use the block ID to change the /etc/fstab file.
 
 ```
 admin@serveur-1:~$ vim /etc/fstab
@@ -198,36 +183,53 @@ UUID=51ba13e7-398b-45f3-b5f3-fdfbe556f62c / ext4 defaults 0 0
 UUID=2e4a9012-bf0e-41ef-bf9a-fbf350803ac5 /mnt/disk ext4 nofail 0 0
 ```
 
+### Using Windows
 
+First, right-click on the `Start Menu`{.action} button and then click `Disk Management`{.action}.
 
+![start menu](images/start-menu.png){.thumbnail}
 
+When the disk management tool opens, you'll see your new disk as an unknown volume with unallocated space, as shown below:
 
-## From an instance under Windows
+![disk management](images/disk-management-01.png){.thumbnail}
 
-- Access the disk manager tool
+#### Initialising the disk using Disk Management
 
+If the disk is offline, this is likely due to a policy in place on the instance. To fix this, right-click on the disk and select `Online`{.action}.
 
+![offline disk](images/disk-management-02.png){.thumbnail}
 
-![](images/img_2736.jpg){.thumbnail}
-Format the disk
+Then right-click it again and this time select `Initialise Disk`{.action}.
 
-![](images/img_2737.jpg){.thumbnail}
-Warning:
-If the "offline (the disk is offline because of policy set by an administrator)" message appears, you have to change the disk properties by right clicking on your drive, then selecting "Online" and " Initialise", or using Diskpart:
+![offline disk](images/disk-management-03.png){.thumbnail}
 
+Next, select `MBR`{.action} and click `OK`{.action}.
 
-- Start PowerShell or a command prompt
-- Verification of the strategy applied:
+![initialise disk](images/initialise-disk.png){.thumbnail}
+
+#### Initialising the disk using DISKPART
+
+First, right-click on the `Start Menu`{.action} button and then click `Run`{.action}.
+
+![initialise disk](images/diskpart.png){.thumbnail}
+
+Next, type `cmd` in the Run prompt and then click `OK`{.action}.
+
+![run prompt](images/run-prompt.png){.thumbnail}
+
+At the command prompt, type the following command to open the DISKPART utility:
 
 ```
-PS C:\> diskpart
+C:\> diskpart
+```
+
+Next, change the disk policy with the following series of commands.
+
+```
 DISKPART> san
 
 SAN Policy : Offline Shared
 ```
-
-
-- Change strategy :
 
 ```
 DISKPART> san policy = OnlineAll
@@ -243,23 +245,17 @@ Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
 ```
 
-
-
 ```
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
 ```
 
-
-
 ```
 DISKPART> attributes disk clear readonly
 
 Disk attributes cleared successfully.
 ```
-
-
 
 ```
 DISKPART> attributes disk
@@ -273,18 +269,40 @@ Crashdump Disk : No
 Clustered Disk : No
 ```
 
-
-
 ```
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.
 ```
 
+#### Format the disk
 
-- Start up the disk from the disk manager then format the disk.
+Open up the Disk Management utility again, right-click the volume, then click `New Simple Volume...`{.action}.
 
+![format disk](images/format-disk-01.png){.thumbnail}
 
-Once the disk is formatted, you can simply access it from your file explorer.
+Now click `Next`{.action}.
 
-![](images/img_2738.jpg){.thumbnail}
+![format disk](images/format-disk-02.png){.thumbnail}
+
+Now set the desired disk size. You would usually want this to be 100% of the space. When you've done this, click `Next`{.action}.
+
+![format disk](images/format-disk-03.png){.thumbnail}
+
+Select a letter from the dropdown list to identify the drive, then click `Next`{.action}.
+
+![format disk](images/format-disk-04.png){.thumbnail}
+
+Select the options you want for the disk, then click `Next`{.action} to perform the format operation.
+
+![format disk](images/format-disk-05.png){.thumbnail}
+
+Finally, click `Finish`{.action} to finalise the operation.
+
+![format disk](images/format-disk-06.png){.thumbnail}
+
+Once the disk is formatted, you can simply access it via File Explorer.
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

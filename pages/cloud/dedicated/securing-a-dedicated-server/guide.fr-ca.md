@@ -10,13 +10,13 @@ order: 2
 
 ## Objectif
 
-Lorsque vous commandez votre serveur dédié, aucun protocole de sécurité n'est implémenté de manière native. Il vous revient donc de le sécuriser. En effet, OVH ne pourra être tenu responsable d'un défaut de sécurisation de votre machine.
+Lorsque vous commandez votre serveur dédié, aucun protocole de sécurité n'est implémenté de manière native. Il vous revient donc de le sécuriser. En effet, OVHcloud ne pourra être tenu responsable d'un défaut de sécurisation de votre machine.
 
 **Apprenez à sécuriser votre serveur dédié grâce à quelques conseils.**
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
+> OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
 >
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
@@ -196,16 +196,16 @@ iptables -L
 Il est alors recommandé de créer et d’ajuster à votre utilisation des règles sur ce pare-feu. Pour plus d'informations sur la configuration des iptables, reportez-vous à la documentation officielle de votre distribution Linux.
 
 
-### Configurer le Firewall Network d’OVH
+### Configurer le Firewall Network d’OVHcloud
 
-Les serveurs OVH incluent un pare-feu à l’entrée de l’infrastructure appelé Firewall Network. Sa mise en place et sa configuration permettent le blocage des protocoles avant même leur arrivée sur votre serveur.
+Les serveurs OVHcloud incluent un pare-feu à l’entrée de l’infrastructure appelé Firewall Network. Sa mise en place et sa configuration permettent le blocage des protocoles avant même leur arrivée sur votre serveur.
 
-Nous avons également un [guide](https://docs.ovh.com/fr/dedicated/firewall-network/){.external} pour configurer le Firewall Network.
+Nous avons également un [guide](../firewall-network/){.external} pour configurer le Firewall Network.
 
 
 ### Sauvegarder votre système et vos données
 
-La notion de sécurité ne se limite pas uniquement à la protection d’un système contre des attaques. La sécurisation de vos données est un élément primordial, c’est pourquoi OVH vous offre 500 Go de stockage de sauvegarde gratuit avec votre serveur. Vous pouvez activer ce stockage de sauvegarde dans votre espace client et y accéder en utilisant les protocoles suivants :
+La notion de sécurité ne se limite pas uniquement à la protection d’un système contre des attaques. La sécurisation de vos données est un élément primordial, c’est pourquoi OVHcloud vous offre 500 Go de stockage de sauvegarde gratuit avec votre serveur. Vous pouvez activer ce stockage de sauvegarde dans votre espace client et y accéder en utilisant les protocoles suivants :
 
 * FTP ;
 * FTPS ;
@@ -214,7 +214,7 @@ La notion de sécurité ne se limite pas uniquement à la protection d’un syst
 
 Vous aurez besoin d'une solution de sauvegarde tierce pour répliquer vos données et les transférer vers votre stockage de sauvegarde.
 
-Pour plus d'informations sur nos solutions de stockage de sauvegarde, consultez notre [guide](https://docs.ovh.com/fr/dedicated/services-backup-storage/){.external} de stockage de sauvegarde.
+Pour plus d'informations sur nos solutions de stockage de sauvegarde, consultez notre [guide](../services-backup-storage/){.external} de stockage de sauvegarde.
 
 
 ## Aller plus loin

@@ -20,7 +20,7 @@ La technologie vRack (baie virtuelle) permet de regrouper plusieurs serveurs, qu
 - Posséder un [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}.
 - Avoir à disposition au moins deux ou plusieurs [serveurs compatibles vRack](https://www.ovh.com/ca/fr/serveurs-dedies/){.external}.
 - Être connecté via SSH (ou par votre interface utilisateur graphique) sur votre serveur Linux (accès root).
-- Avoir accès à [votre espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Avoir accès à [votre espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 - Préparer la plage d'adresses IP privées que vous avez choisie.
 
 
@@ -28,12 +28,12 @@ La technologie vRack (baie virtuelle) permet de regrouper plusieurs serveurs, qu
 
 ### Ajouter les serveurs dans le vRack
 
-1. Une fois le vRack ajouté sur votre compte, rendez-vous dans la section `Cloud`{.action} de votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+1. Une fois le vRack ajouté sur votre compte, rendez-vous dans la section `Cloud`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 2. Sélectionnez ensuite le menu `vRack`{.action} dans la colonne de gauche.
 3. Sélectionnez votre vRack dans la liste proposée.
 4. Dans la liste des services éligibles, sélectionnez les serveurs que vous souhaitez ajouter au vRack, puis cliquez sur le bouton `Ajouter`{.action}.
 
-![Choix du vRack](images/vrack_selection.png){.thumbnail}
+![Choix du vRack](images/vrack_selection_2020.png){.thumbnail}
 
 ### Configurer les interfaces réseau
 

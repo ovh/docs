@@ -5,10 +5,12 @@ excerpt: 'Apprenez à ajouter et gérer vos moyens de paiement au sein de l’es
 section: Facturation
 ---
 
-**Dernière mise à jour le 07/05/2020**
+**Dernière mise à jour le 03/07/2020**
 
 ## Objectif
 L'espace client OVHcloud vous permet d'enregistrer et gérer différents moyens de paiement.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YCSMAjDcoyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 - Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.

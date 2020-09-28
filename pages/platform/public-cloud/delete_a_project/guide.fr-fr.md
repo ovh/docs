@@ -3,7 +3,8 @@ title: 'Supprimer un projet'
 slug: supprimer-un-projet
 excerpt: 'Ce guide décrit comment supprimer un projet Public Cloud depuis votre espace client OVHcloud'
 legacy_guide_number: 2129
-section: 'Base de connaissances'
+section: 'Gestion de projets'
+order: 2
 ---
 
 **Dernière mise à jour le 6 décembre 2019**

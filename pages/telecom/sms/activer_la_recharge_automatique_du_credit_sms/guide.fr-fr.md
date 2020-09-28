@@ -6,7 +6,7 @@ legacy_guide_number: '16254520'
 section: 'Gérer mon offre'
 ---
 
-**Dernière mise à jour le 06/12/2019**
+**Dernière mise à jour le 19/05/2020**
 
 ## Objectif
 
@@ -36,7 +36,7 @@ Le lien suivant vous permettra de retrouver le coût d'envoi, en crédits, de vo
 >
 > Un SMS ne peut contenir qu'une quantité limitée de caractères en fonction de son encodage. Le détail des encodages et caractères admis est disponible sur ce guide :
 > 
-> [Envoyer des SMS depuis mon espace client](https://docs.ovh.com/fr/sms/envoyer_des_sms_depuis_mon_espace_client/#etape-2-composer-votre-sms)
+> [Envoyer des SMS depuis mon espace client OVHcloud](../envoyer_des_sms_depuis_mon_espace_client/#etape-2-composer-votre-sms)
 >
 
 ### **La recharge automatique**

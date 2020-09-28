@@ -2,7 +2,8 @@
 title: Débuter avec l’API Cinder
 slug: debuter-avec-lapi-cinder
 legacy_guide_number: 2071
-section: Actions via API et lignes de commande
+section: Gestion via OpenStack
+order: 6
 ---
 
 
@@ -71,8 +72,16 @@ Optional arguments:
 ## Operations basiques
 
 ### Creation d'un volume haute performance
-- Lister les types de volumes : .. code-block:: bash
-[admin@serveur-1](mailto:admin@serveur-1){.external}:~$ cinder type-list +--------------------------------------+------------+ |                  ID                  |    Name    | +--------------------------------------+------------+ | 07673884-d6f0-49b0-8bfb-1cec1b6f3905 | high-speed | | 28b78be3-5e7b-480a-b20d-3c0d3e144c70 |  classic   | +--------------------------------------+------------+
+- Lister les types de volumes : 
+
+```
+admin@serveur-1:~$ cinder type-list
++--------------------------------------+------------+
+|                  ID                  |    Name    |
++--------------------------------------+------------+
+| 07673884-d6f0-49b0-8bfb-1cec1b6f3905 | high-speed |
+| 28b78be3-5e7b-480a-b20d-3c0d3e144c70 |  classic   | 
++--------------------------------------+------------+
 
 - Créer le volume de type high-speed de 10GB nommé volume1 :
 

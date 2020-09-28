@@ -1,11 +1,12 @@
 ---
-title: 'Create an instance in your OVH customer account'
+title: 'Create an instance in your OVHcloud customer account'
 slug: create_an_instance_in_your_ovh_customer_account
 excerpt: 'This guide will show you how to create an instance in your Public Cloud account.'
+legacy_guide_number: g1775
 section: 'Getting started'
 ---
 
-**Last updated 25th October 2018**
+**Last updated 2018/09/21**
 
 ## Objective
 
@@ -15,46 +16,31 @@ The [Public Cloud](https://www.ovh.com/asia/public-cloud/instances/){.external} 
 
 ## Requirements
 
-* access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
-* a [Public Cloud](https://www.ovh.com/asia/public-cloud/instances/){.external} project created in your OVH account
-* an SSH key created in your OVH customer account
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* a [Public Cloud](https://www.ovh.com/asia/public-cloud/instances/){.external} project created in your OVHcloud account
+* an SSH key created in your OVHcloud customer account
 
 ## Intructions
 
-> [!primary]
->
-> The rest of this guide assumes that you have set the view of your cloud project to `Infrastructure`{.action}. You can change the view with the toggle switch on the right-hand side of the page, as shown below:
->
-
-![view](images/pci-instance-view-01.png){.thumbnail}
-
 ### Add an instance
 
-First, log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click on the `Cloud`{.action} menu.
+First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click on the `Public Cloud`{.action} menu.
 
-![cloud menu](images/pci-instance-cloud-01.png){.thumbnail}
+![cloud menu](images/pci-instance-cloud-01_2020.png){.thumbnail}
 
-Next, select your cloud project under the `Servers`{.action} list on the left-hand side of the page.
+Next, select your cloud project under the menu options list on the left-hand side of the page.
 
-![servers list](images/pci-instance-servers-01.png){.thumbnail}
+![servers list](images/pci-instance-servers-01_2020.png){.thumbnail}
 
-After selecting your project, click the `Infrastructure`{.action} option.
+Next, click the `Create an instance`{.action} button.
 
-![infrastructure](images/pci-instance-infrastructure-01.png){.thumbnail}
-
-Now, click the `Actions`{.action} button.
-
-![actions](images/pci-instance-actions-01.png){.thumbnail}
-
-Next, click the `Add a server`{.action} button.
-
-![add an instance](images/pci-instance-actions-02.png){.thumbnail}
+![add an instance](images/pci-instance-actions-01_2020.png){.thumbnail}
 
 ### Configure the instance
 
-After clicking the `Add a server`{.action} button, the configuration settings will appear as shown below.
+After clicking the `Create an instance`{.action} button, the configuration settings will appear as shown below.
 
-![configure an instance](images/pci-instance-configuration-01.png){.thumbnail}
+![configure an instance](images/pci-instance-configuration-01_2020.png){.thumbnail}
 
 These settings allow you to configure:
 
@@ -66,30 +52,25 @@ These settings allow you to configure:
 
 > [!primary]
 >
-> Please note that for Windows servers, authentication is password based, so SSH keys are not used at all.
+Please note that for Windows servers, authentication is password based, so SSH keys are not used at all.
 >
 
-When you have configured the options you want, decide whether you want the instance to be billed hourly or monthly and toggle the billing switch accordingly.
 
-![configure an instance](images/pci-instance-configuration-02.png){.thumbnail}
+When you have configured the options you want, decide whether you want the instance to be billed hourly or monthly.
 
 Finally, click the `Launch now`{.action} button to create the instance.
 
-![configure an instance](images/pci-instance-configuration-03.png){.thumbnail}
+![configure an instance](images/pci-instance-configuration-02_2020.png){.thumbnail}
 
 Your instance will now be created. It may take a few minutes to finalise.
 
-Once the instance has been created, your login information will be displayed, which you can copy to your computer's clipboard by clicking the copy icon.
-
-![login](images/pci-instance-login-01.png){.thumbnail}
-
 The newly-created instance will now be visible in your account.
 
-![account](images/pci-instance-created-01.png){.thumbnail}
+![account](images/pci-instance-created-01_2020.png){.thumbnail}
 
 > [!warning]
 >
-> When you create an instance and choose to pay monthly, you must keep this instance for at least until the end of the current month.
+If you delete a instance that is billed monthly before the end of the month, no credit is given. It is best advised to delete the instance the day before the first day of the next month.
 >
 
 ## Go further

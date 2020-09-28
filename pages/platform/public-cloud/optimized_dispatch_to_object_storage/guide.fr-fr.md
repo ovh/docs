@@ -2,7 +2,8 @@
 title: Optimiser les envois vers l’Object Storage
 slug: optimiser-les-envois-vers-lobject-storage
 legacy_guide_number: 1951
-section: Base de connaissances
+section: Stockage
+order: 2
 ---
 
 

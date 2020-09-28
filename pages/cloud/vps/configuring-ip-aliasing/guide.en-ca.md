@@ -9,13 +9,13 @@ section: 'Network Management'
 
 ## Objective
 
-IP aliasing is a special network configuration for your OVH servers, which allows you to associate multiple IP addresses with a single network interface.
+IP aliasing is a special network configuration for your OVHcloud servers, which allows you to associate multiple IP addresses with a single network interface.
 
 **This guide explains how to add failover IPs to your VPS configuration.**
 
 ## Requirements
 
-* a [Virtual Private Server](https://www.ovh.com/ca/en/vps/){.external}
+* a [Virtual Private Server](https://www.ovhcloud.com/en-ca/vps/){.external}
 * a [failover IP address](https://www.ovh.com/ca/en/dedicated-servers/ip_failover.xml){.external} or a failover IP block (RIPE)
 * administrative (root) access to the server via SSH
 
@@ -47,7 +47,7 @@ Then edit the file with the following configuration:
 
 > [!primary]
 >
-Note that then names of the network interfaces in our example may differ from your own. Please substitute your own interfaces.
+Note that the names of the network interfaces in our example may differ from your own. Please substitute your own interfaces.
 >
 
 ```sh

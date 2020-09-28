@@ -1,7 +1,7 @@
 ---
-title: Quelles sont les adresses IP du monitoring OVH ?
+title: Quelles sont les adresses IP du monitoring OVHcloud ?
 slug: monitoring-ip-ovh
-excerpt: Retrouvez ici les adresses IP a renseigner lors de la mise en place d’un firewall pour que le monitoring OVH continue de fonctionner sur votre serveur.
+excerpt: Retrouvez ici les adresses IP a renseigner lors de la mise en place d’un firewall pour que le monitoring OVHcloud continue de fonctionner sur votre serveur.
 section: Réseau & IP
 ---
 
@@ -9,15 +9,15 @@ section: Réseau & IP
 ## Prérequis
 Le service de monitoring permet de suivre l’état de votre machine et de déclencher automatiquement l’intervention d’un technicien dans le datacentre.
 
-Tous les serveurs de nos clients ainsi que l'ensemble du réseau sont surveillés 24h/24 et 7j/7 par les équipes techniques d'OVH.
+Tous les serveurs de nos clients ainsi que l'ensemble du réseau sont surveillés 24h/24 et 7j/7 par les équipes techniques d'OVHcloud.
 
-OVH intervient dès le déclenchement d'une alerte (non réponse aux pings) afin de limiter au maximum le temps d'indisponibilité des serveurs et du réseau.
+OVHcloud intervient dès le déclenchement d'une alerte (non réponse aux pings) afin de limiter au maximum le temps d'indisponibilité des serveurs et du réseau.
 
-Pour mettre en place un firewall restrictif, notamment sur l'ICMP, et continuer de bénéficier du monitoring OVH, il est nécessaire d'autoriser les IPs que vous trouverez ci-après.
+Pour mettre en place un firewall restrictif, notamment sur l'ICMP, et continuer de bénéficier du monitoring OVHcloud, il est nécessaire d'autoriser les IPs que vous trouverez ci-après.
 
 Pour ce faire, vous devez disposer de :
 
-- Un produit OVH sur lequel vous avez installé un Firewall.
+- Un produit OVHcloud sur lequel vous avez installé un Firewall.
 - Avoir accès aux règles du Firewall.
 
 

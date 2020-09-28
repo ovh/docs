@@ -8,7 +8,7 @@ section: Network Management
 
 ## Objective
 
-To protect its global infrastructure and its customers’ servers, OVH offers a firewall that can be configured and integrated into the **Anti-DDoS** (VAC) solution: the Firewall Network. This is an option that will enable you to limit how much your service is exposed to attacks from the public network.
+To protect its global infrastructure and its customers’ servers, OVHcloud offers a firewall that can be configured and integrated into the **Anti-DDoS** (VAC) solution: the Firewall Network. This is an option that will enable you to limit how much your service is exposed to attacks from the public network.
 
 **This guide will take you through the steps for its configuration**.
 
@@ -23,8 +23,8 @@ To protect its global infrastructure and its customers’ servers, OVH offers a 
 
 ## Requirements
 
-- You must have an OVH service with a Firewall Network ([Dedicated Server](https://www.ovh.com.au/dedicated-servers/){.external}, [VPS](https://www.ovh.com.au/vps/){.external}, [Public Cloud instance](https://www.ovh.com.au/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.com.au/private-cloud/){.external},  [Failover IP](https://www.ovh.com.au/dedicated-servers/ip_failover.xml){.external}, etc.)
-- You must have access to your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- You must have an OVHcloud service with a Firewall Network ([Dedicated Server](https://www.ovh.com.au/dedicated-servers/){.external}, [VPS](https://www.ovh.com.au/vps/){.external}, [Public Cloud instance](https://www.ovh.com.au/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.com.au/private-cloud/){.external},  [Failover IP](https://www.ovh.com.au/dedicated-servers/ip_failover.xml){.external}, etc.)
+- You must have access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 - You must have basic network skills
 
 
@@ -38,16 +38,16 @@ To protect its global infrastructure and its customers’ servers, OVH offers a 
 > 
 
 You can enable and configure it manually from the Control Panel in the `IP`{.action} section, by clicking on the gear icon to the right of the relevant IPv4.
-
-![Enabling the Firewall Network](images/firewall_creation.png){.thumbnail}
+1
+![Enabling the Firewall Network](images/firewall_creation_2020.png){.thumbnail}
 
 - You will then be asked for confirmation:
 
-![Confirmation](images/creationvalid.png){.thumbnail}
+![Confirmation](images/creationvalid_2020.png){.thumbnail}
 
 - You can then `Enable the firewall`{.action} and `Configure the Firewall`{.action} by clicking once more on the gear icon next to the IPv4:
 
-![Applying the rules in the configuration](images/activationconfig.png){.thumbnail}
+![Applying the rules in the configuration](images/activationconfig_2020.png){.thumbnail}
 
 You can set up to **20 rules per IP**.
 
@@ -72,7 +72,7 @@ You can set up to **20 rules per IP**.
 To add a rule, right-click on `Add a rule`{.action}:
 
 
-![Add a rule](images/ajoutregle1.png){.thumbnail}
+![Add a rule](images/ajoutregle1_2020.png){.thumbnail}
 
 For each rule you must choose:
 
@@ -85,7 +85,7 @@ For each rule you must choose:
 - the TCP options (TCP only)
 
 
-![Details on adding a rule](images/ajoutregle4.png){.thumbnail}
+![Details on adding a rule](images/ajoutregle4_2020.png){.thumbnail}
 
 
 > [!primary]

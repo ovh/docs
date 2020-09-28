@@ -2,7 +2,8 @@
 title: Extinction d’une instance
 slug: extinction-dune-instance
 legacy_guide_number: 1780
-section: Base de connaissances
+section: Gestion depuis Horizon
+order: 10
 ---
 
 

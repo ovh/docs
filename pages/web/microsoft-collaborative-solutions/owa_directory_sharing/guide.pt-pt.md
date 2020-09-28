@@ -1,78 +1,111 @@
 ---
-title: 'Exchange 2016: partilhar uma pasta através do webmail OWA'
-excerpt: ''
+title: 'Partilhar uma pasta através do webmail OWA'
+excerpt: 'Saiba como partilhar pastas entre contas Exchange'
 slug: exchange_2016_partilhar_uma_pasta_atraves_do_webmail_owa
 legacy_guide_number: g1929
+section: 'Outlook Web Application (OWA)'
+order: 5
 ---
 
 
-## Autorizações de partilha de caixa de email, Parte 1
-No nosso exemplo, uma pasta será partilhada a partir da conta ovhguide@support-exchange.eu com a conta ovhguide2@support-exchange.eu.
-Em primeiro lugar: atribua as autorizações de partilha na sua caixa de email.
-Para isso, realize um clique com o botão direto do rato na caixa de email  e clique em "autorizações".
-Uma nova janela será aberta.
+**Última atualização: 01/09/2020**
 
-![](images/img_2976.jpg){.thumbnail}
+## Sumário
 
+Nem sempre convém delegar o uso ilimitado de uma conta de e-mail. A funcionalidade de partilha de pastas do Exchange permite-lhe conceder acesso a outros utilizadores a determinadas pastas da sua conta, por meio de autorizações muito específicas.
 
-## Autorizações de partilha na caixa de email, Parte 2
-Clique no símbolo + a fim de adicionar um colaborador que receberá a autorização de acesso à partilha da conta de email.
-Uma nova interface aparecerá de seguida.
+**Este guia explica como partilhar pastas e definir autorizações de acesso através do Outlook Web App (OWA).**
 
-![](images/img_2982.jpg){.thumbnail}
+> [!primary]
+>
+> Embora este guia se refira aos nossos serviços Exchange, as instruções aplicam-se igualmente às contas [E-mail Pro](https://www.ovh.pt/emails/email-pro/).
+>
 
 
-## Autorizações de partilha na caixa de email, Parte 3
-Adicione o utilizador como descrito nas 3 etapas precedentes e depois clique em "adicionar".
+## Requisitos
 
-![](images/img_2983.jpg){.thumbnail}
-
-
-## Autorizações de partilha de caixa de email, Parte 4
-De seguida, atribua a este utilizador as permissões necessárias:
+- Dispor de um serviço [Exchange OVHcloud](https://www.ovh.pt/emails/hosted-exchange/).
+- Ter acesso à conta Exchange (com endereço de e-mail e palavra-passe).
 
 
-- Neste caso, deseja que o utilizador <ovhguide2@support-exchange.eu> aceda apenas à pasta"rascunhos" da caixa <ovhguide@support-exchange.eu>.
+## Instruções
+
+### 1.º passo: Definir as autorizações de acesso a uma pasta
+
+Aceda à sua conta Exchange através do [webmail OVHcloud](https://www.ovh.pt/mail/). Com o botão direito do rato, clique na pasta que pretende partilhar. De seguida, selecione `Permissões de partilha`{.action}.
+
+![sharefolder](images/exchange-folder-step1.png){.thumbnail}
+
+No ecrã seguinte, adicione um utilizador clicando no ícone `+`{.action}. Comece a digitar para visualizar sugestões de contactos, introduza um endereço de e-mail completo ou use a opção de pesquisa através do `Diretório de pesquisa`{.action}.
+
+Pode escolher um dos conjuntos de autorizações predefinidas («Nível de autorização»). Será mais fácil escolher primeiro um destes papéis (por exemplo, «Autor») para que veja as autorizações concedidas. Depois, por meio da seleção das caixas, pode personalizá-los em função das suas necessidades.
+
+![sharefolder](images/exchange-folder-step2aag.gif){.thumbnail}
+
+#### Pormenores de autorização
+
+- **Leitura**
+
+|Autorização|Descrição|
+|---|---|
+|Nenhuma|O utilizador não pode ver o conteúdo da pasta.|
+|Todas as informações|O utilizador pode ver o conteúdo da pasta.|
 
 
-Em relação às autorizações:
+- **Supressão**
 
-Nível de autorização: Nenhum
-É necessária marcar a opção: Pasta Visível.
-
-As autorização não serão atribuídas senão para a pasta em questão.
-
-Valide a operação através de um clique no botão "ok".
-
-![](images/img_2985.jpg){.thumbnail}
+|Autorização|Descrição|
+|---|---|
+|Nenhuma|O utilizador não pode suprimir ficheiros.|
+|Próprios|O utilizador pode suprimir ficheiros que tenha criado.|
+|Todos|O utilizador pode suprimir todos os ficheiros da pasta.|
 
 
-## Implementação das autorizações de partilha na pasta
-Atribua agora as permissões necessárias numa pasta, no nosso exemplo vamos usar "Rascunhos"
+- **Escrita**
 
-Da mesma forma que anteriormente, clique com o botão direito do rato na pasta "Rascunhos" e depois clique em "autorizações".
-
-Ser-lhe-á possível a realização da operação com a pasta da sua escolha.
-
-Deve realizar as mesma operações que foram precedentemente realizadas. A saber: adicionar um colaborador e depois dar-lhe permissões de consulta da pasta em questão.
-
-![](images/img_2986.jpg){.thumbnail}
+|Autorização|Descrição|
+|---|---|
+|Criar ficheiros|O utilizador pode criar novos ficheiros na pasta.|
+|Criar subpastas|O utilizador pode criar novas subpastas dentro da pasta partilhada.|
+|Editar próprios|O utilizador pode editar ficheiros que tenha criado.|
+|Editar todos|O utilizador pode editar todos os ficheiros da pasta.|
 
 
-## Obtenção da pasta partilhado, Parte 1
-Na interface [Webmail Exchange](https://ex.mail.ovh.net/owa/) do segundo utilizador, adicione a pasta partilhada.
+- **Outros**
 
-Realize um clique com o botão do lado direito do rato nesta conta de email , depois selecione Adicionar uma pasta partilhada.
+|Autorização|Descrição|
+|---|---|
+|Proprietário da pasta|O utilizador tem as mesmas autorizações que o proprietário da pasta (todas as autorizações).|
+|Contactos relativos à pasta|O utilizador receberá notificações e pedidos relacionados com a pasta (alterações de estado, pedidos de autorização, mensagens de erro).|
+|Pasta visível|A pasta surgirá na conta do utilizador.|
 
-![](images/img_2988.jpg){.thumbnail}
+> [!primary]
+>**Subpastas**
+> 
+> - As subpastas criadas na pasta partilhada vão herdar automaticamente todas as autorizações da pasta-mãe. Se desejar conceder novas autorizações a uma pasta e às respetivas subpastas, as autorizações terão de ser aplicadas **individualmente a cada subpasta**.
+> 
+> - Se partilhar uma **subpasta** de uma pasta que não tenha autorizações configuradas, certifique-se de selecionar pelo menos «Pasta visível» na **pasta-mãe**. Caso contrário, a subpasta não surgirá na conta do outro utilizador. (O utilizador não conseguirá ver o conteúdo da pasta-mãe, a não ser que lhe conceda igualmente uma autorização de «Leitura».)
+> 
+> - Os outros utilizadores não poderão apagar subpastas que não tenham sido eles a criar.
+> 
+> - Os utilizadores com a autorização «Proprietário da pasta» podem renomear uma subpasta e conceder autorizações relativas a ela.
+>
 
 
-## Obtenção da pasta partilhada, Parte 2
-Introduza o nome da conta de utilizador que realizou a partilha da pasta.
+### 2.º passo: Obter um calendário partilhado
+
+![sharefolder](images/exchange-folder-step3.png){.thumbnail}
+
+Aceda à sua conta Exchange através do [webmail OVHcloud](https://www.ovh.pt/mail/). Faça clique com o botão direito sobre o nome da conta à esquerda e selecione `Adicionar pasta partilhada...`{.action} no menu de contexto. Na nova janela que se abrir, indique o nome da conta a partir da qual a pasta foi partilhada. Comece a digitar para visualizar sugestões de contactos, introduza um endereço de e-mail completo ou use a opção de pesquisa através do `Diretório de pesquisa`{.action}. Para confirmar, clique em `Adicionar`{.action}. A nova pasta partilhada vai surgir de imediato sob as outras pastas.
 
 
-## Obtenção da pasta partilhada, Parte 3
-A nossa pasta "Rascunhos" aparece agora corretamente na interface [OWA](https://ex.mail.ovh.net/owa/).
+## Saiba mais
 
-![](images/img_2989.jpg){.thumbnail}
+[Guia de utilização do Outlook Web App](../exchange_2016_guia_de_utilizacao_do_outlook_web_app/)
+
+[Atribuir permissões a uma conta Exchange](../exchange_3013_atribuir_permissoes_full_access_a_uma_conta/)
+
+[Partilhar calendários em OWA](../exchange_2016_partilhar_um_calendario_atraves_do_webmail_owa/)
+
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
 

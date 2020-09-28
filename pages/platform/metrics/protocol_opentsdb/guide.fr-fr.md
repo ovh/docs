@@ -112,7 +112,7 @@ Here's an example how you can use Python to push datapoints in OpenTSDB format u
 >>> url = 'https://metrics:TOKEN@opentsdb.REGION.metrics.ovh.net/api/put'
 >>> payload = {}
 >>> payload["metric"] = "sys.cpu.nice"
->>> payload["timestamp"] = "1346846400"
+>>> payload["timestamp"] = 1346846400
 >>> payload["value"] = 18
 >>> tags = { "host": "web01", "dc": "lga"}
 >>> payload["tags"] = tags

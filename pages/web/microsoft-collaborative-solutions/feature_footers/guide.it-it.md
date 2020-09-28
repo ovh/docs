@@ -1,74 +1,71 @@
 ---
-title: Exchange 2013 firma automatica - disclaimer
-excerpt: In questa guida ti insegnamo a inserire una firma automatica o un disclaimer ai tuoi messaggi Exchange
+title: Creare firme automatiche
+excerpt: Come aggiungere firme automatiche ai tuoi account di posta elettronica
 slug: exchange_2013_firma_automatica_-_disclaimer
 legacy_guide_number: g1330
+section: Funzionalità di un account Exchange
+order: 3
 ---
 
-
-## Step 1
-Crea una firma da aggiungere ai tuoi messaggi email, accedendo al tuo [Spazio Cliente](https://www.ovh.com/manager/web/login.html).
-
-Seleziona la tua offerta Exchange 2013 in "Piattaforma".
-
-Scegli "Firma" e "Aggiungi una firma".
-
-Devi aver selezionato "Modalità esperto" nel tuo Spazio Cliente.
-
-![](images/img_1364.jpg){.thumbnail}
+**Ultimo aggiornamento 24/03/2020**
 
 
-## Step 2
-Utilizza gli strumenti a tua disposizione per personalizzare e impostare la tua firma. 
+## Obiettivo
 
-Sono disponibili diverse variabili che ti consentono di personalizzare la firma generica con le coordinate dei tuoi collaboratori.
+Nello Spazio Cliente OVHcloud, è possibile creare firme universali (footers) per indirizzi email usando lo stesso dominio (firma "aziendale"). Queste firme saranno aggiunte automaticamente alle email inviate dall'account di un utente.
 
-Aggiungi un'immagine o un logo, inserendo l'URL dopo aver cliccato sul pulsante "Immagine".
+**Questa guida ti mostra come creare una firma automatica dallo Spazio Cliente OVHcloud.**
 
-
-Per aggiungere più rapidamente un'immagine o un logo alla tua firma, trascina l'immagine nel campo della firma direttamente dal tuo browser, come indicato in figura.
-
-![](images/img_1365.jpg){.thumbnail}
-
-
-## Step 3
-Ridimensiona l'immagine.
-
-Puoi decidere di attivare la firma solo per gli invii di mail verso l'esterno (verso indirizzi non collegati al tuo dominio) selezionando questa opzione.
-
-Clicca su "Conferma" per salvare la tua firma da associare a tutti gli indirizzi del tuo dominio.
-
-![](images/img_1368.jpg){.thumbnail}
+> [!primary]
+>
+> Questa guida si riferisce ai nostri servizi Exchange, ma le istruzioni sono valide anche per gli account Email Pro.
+>
 
 
-## Step 4
-Una volta impostata, la tua firma appare nel tuo Spazio Cliente.
+## Prerequisiti
 
-Puoi modificarla o eliminarla.
-
-La tabella di sintesi ti fornisce le informazioni generali sulla tua firma.
-
-![](images/img_1370.jpg){.thumbnail}
+- avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Disporre di una [soluzione Exchange OVHcloud](https://www.ovh.it/emails/hosted-exchange) o [Email Pro](https://www.ovh.it/emails/email-pro) attive 
 
 
-## Esempio di email - Step 1
-Qui trovi alcune indicazioni su come aggiungere una firma alle email che invii dall'interfaccia  [Webmail Exchange 2013](https://ex.mail.ovh.net/owa/).
-
-Accedi con il tuo indirizzo email completo e la password.
-
-Nella sezione "Messaggistica" seleziona "Nuovo messaggio" in alto a sinistra.
-
-Scrivi il messaggio e per aggiungere la tua firma, seleziona "Inserisci" poi "Firma".
-
-La firma non viene visualizzata nel corpo del messaggio: è normale.
-
-Completa l'invio cliccando su "Invia".
-
-![](images/img_1371.jpg){.thumbnail}
+## Procedura
 
 
-## Esempio di email - Step 2
-La mail è stata ricevuta correttamente, con firma annessa.
+Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), sezione “Web”, e seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action} nel menu a sinistra. Clicca sulla scheda`More+`{.action}nel menu orizzontale e seleziona `Footers`{.action}.
 
-![](images/img_1372.jpg){.thumbnail}
+![exchangesig](images/exchange-footer-step1.png){.thumbnail}
 
+In questa sezione visualizzi i tuoi domini associati, per ognuno dei quali puoi creare una firma. Per aprire l’editor HTML, clicca sui tre puntini `...`{.action} e poi su `Configuration`{.action}.
+
+![exchangesig](images/exchange-footer-step2.png){.thumbnail}
+
+L’editor propone una selezione di variabili che corrispondono ai dati dell’utente nelle impostazioni dell’account. È possibile, ad esempio, comporre un messaggio di chiusura generico e aggiungere una sigla di chiusura appropriata o alcune informazioni di contatto, utilizzando le variabili. Clicca sui tre puntini per selezionare una variabile, quindi clicca su `Insert a variable`{.action} per aggiungerla nel riquadro di modifica.
+
+![exchangesig](images/exchange-footer-step3aag.gif){.thumbnail}
+
+La firma è creata tramite i tag HTML, che consentono alcune opzioni di formattazione. Per personalizzare la firma puoi utilizzare la barra degli strumenti situata in alto. Per verificare il codice HTML, clicca su `Source`{.action}.
+ 
+![exchangesig](images/exchange-footer-step4.png){.thumbnail}
+
+Spunta la casella “Enable the signature for outgoing mail only” per evitare che la firma venga aggiunta alle email inviate agli utenti dello stesso dominio. Clicca su `Confirm`{.action} per completare l’operazione. A questo punto, la firma è aggiunta alle email inviate dagli account associati a questo dominio. Dopo aver creato le firme, è possibile modificarle o eliminarle dallo Spazio Cliente OVHcloud.
+
+Prima di creare una firma per utenti, prendi in considerazione queste informazioni:
+
+- Ad eccezione di “Nome”, “Cognome”, e “Nome visualizzato”, le informazioni dell’account non possono essere modificate dallo Spazio Cliente OVHcloud, ma è necessario specificarlo nell’OWA dell’utente ("Options", "General", "My account").
+
+![exchangesig](images/exchange-footer-step5.png){.thumbnail}
+
+- La firma verrà aggiunta al corpo dell’email senza spazi, quindi ti consigliamo di iniziare la firma con almeno una riga vuota.
+- In OWA non è indicato se una firma è attiva in questo dominio e non è presente **nessuna sincronizzazione**. Se ciascun utente aggiunge la [propria firma](../exchange_2016_guida_allutilizzo_di_outlook_web_app/#aggiungere-una-firma), l’email includerà sia la firma individuale che la firma associata al dominio.
+- L’editor supporta la formattazione HTML, gli hyperlinks, le immagini, ecc. Tuttavia, le firme non dovrebbero fare troppo affidamento su queste opzioni. I destinatari potrebbero utilizzare client di posta elettronica incompatibili con HTML e immagini incorporate, oppure la firma potrebbe apparire in modo diverso dal previsto. Attenzione: se un messaggio viene inviato come “Testo normale” da OWA, i tag HTML saranno completamente rimossi.
+- Il servizio non prende in considerazione le “iniziali”, pertanto aggiungere questa variabile potrebbe rivelarsi inutile.
+
+## Per saperne di più
+
+[Guida all’utilizzo di Outlook Web App con un account Exchange](../exchange_2016_guida_allutilizzo_di_outlook_web_app)
+
+[Delegare i diritti su un account Exchange](..exchange_2013_assegna_i_diritti_full_access_a_un_account)
+
+[Condividi un calendario con la Webmail OWA](../exchange_2016_condividi_un_calendario_con_la_webmail_owa)
+
+Partecipa alla nostra community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -2,16 +2,19 @@
 title: 'Creating, launching and deleting images in Horizon'
 slug: create-launch-and-delete-images-in-horizon
 legacy_guide_number: 1784
-section: Knowledge Base
+section: Horizon
+order: 6
 ---
 
-## Introduction
+## Objective
+
 You can add custom images via the OpenStack Horizon interface. For example, you can use it to import images from your old virtual machines to the Public Cloud, provided that they are in a compatible format.
 
-This guide explains the steps for creating, launching and deleting images in the Horizon interface, which is used to manage OVH Cloud services.
+**This guide explains the steps for creating, launching and deleting images in the Horizon interface, which is used to manage OVHcloud services.**
 
 
-### Requirements
+## Requirements
+
 - access to the Horizon interface
 - access to the Images menu in the OpenStack Horizon interface 
 
@@ -19,7 +22,10 @@ This guide explains the steps for creating, launching and deleting images in the
 ![public-cloud](images/2661.png){.thumbnail}
 
 
-## Manage the images.
+## Instructions
+
+### Manage the images
+
 - By default, if no images have been created, the list of default public images appears:
 
 
@@ -72,3 +78,7 @@ In the **Actions** column, you can:
 
 
 ![public-cloud](images/2667.png){.thumbnail}
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

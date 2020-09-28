@@ -41,7 +41,7 @@ Maintenant, quittons la théorie et passons au cas pratique qui va constituer no
 
 Notre site web fictif est une plateforme de petites annonces développée en PHP par nos soins. Il permet de soumettre et visualiser des annonces. Ce type de plateforme est parfois désignée comme une “application web”, car elle propose la même expérience que les applications des smartphones. Bien entendu, cette application est accessible depuis tous les appareils bénéficiant d’un navigateur et d’une connexion à Internet (smartphone, tablette, ordinateur…) puisqu’il s’agit d’un site web. Une version de démonstration est disponible sur [https://mypersonaldomain.ovh](https://mypersonaldomain.ovh){.external} et est réinitialisée chaque jour. Vous pouvez bien entendu vous inscrire et l’utiliser afin de découvrir toutes ses fonctionnalités.
 
-Cet exemple, nous en reparlerons plus précisément demain en évoquant le choix et [la configuration du nom de domaine](../day02/guide.fr-fr.md){.ref}.
+Cet exemple, nous en reparlerons plus précisément demain en évoquant le choix et [la configuration du nom de domaine](../day02/){.ref}.
 
 Notez que les conseils que vous allons vous délivrer sont valables pour n’importe quel type de site, qu’il s’agisse d’un blog, d’un site vitrine ou d’un site e-commerce.
 

@@ -1,6 +1,6 @@
 ---
 title: API
 slug: api
-excerpt: APIv6 OVH et Produits
-Sections: OVH APIv6, Private Cloud, Public Cloud, Serveur
+excerpt: Utiliser les APIv6 OVHcloud
+Sections: APIv6, Premiers pas, Private Cloud, Public Cloud, Serveur
 ---

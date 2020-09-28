@@ -4,6 +4,7 @@ slug: changer-domaine-principal
 excerpt: 'Découvrez comment modifier le domaine principal de votre hébergement web'
 section: 'Configuration de l''hébergement'
 order: 4
+hidden: true
 ---
 
 **Dernière mise à jour le 17/01/2020**

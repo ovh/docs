@@ -7,7 +7,7 @@ order: 2
 ---
 ## Definition
 
-**Tokens** in a **serving engine project** refer to encoded [JWT
+**Tokens** in a **ML Serving project** refer to encoded [JWT
 tokens](https://jwt.io/) containing access rights information for
 querying or managing models in a namespace.
 

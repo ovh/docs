@@ -2,7 +2,8 @@
 title: Configurer le reverse DNS d’une instance
 slug: configurer-le-reverse-dns-dune-instance
 legacy_guide_number: 1940
-section: Base de connaissances
+section: 'Gestion depuis l''espace client'
+order: 7
 ---
 
 

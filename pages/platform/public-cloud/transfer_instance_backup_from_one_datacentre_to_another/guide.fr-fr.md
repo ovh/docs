@@ -1,8 +1,9 @@
 ---
 title: 'Transférer la sauvegarde d’une instance d’un datacenter à un autre'
 slug: transferer-la-sauvegarde-dune-instance-dun-datacentre-a-lautre
-section: 'Actions via API et lignes de commande'
+section: 'Gestion via OpenStack'
 excerpt: 'Découvrez comment effectuer ce déplacement tout en préservant la configuration et l’état de l’instance.'
+order: 10
 ---
 
 **Dernière mise à jour le 29 mars 2019**

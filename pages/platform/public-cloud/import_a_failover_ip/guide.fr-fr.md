@@ -3,7 +3,8 @@ title: 'Importer une IP Fail Over'
 slug: importer-une-ip-fail-over
 excerpt: 'Ce guide explique comment importer une IP Failover dans votre projet Public Cloud OVHcloud.'
 legacy_guide_number: 1883
-section: 'Base de connaissances'
+section: 'Réseau'
+order: 11
 ---
 
 **Dernière mise à jour le 6 décembre 2019**

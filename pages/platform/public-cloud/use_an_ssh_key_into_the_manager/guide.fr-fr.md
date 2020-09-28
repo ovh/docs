@@ -3,7 +3,8 @@ title: 'Utilisation d’une clé SSH dans l’interface Public Cloud'
 slug: utilisation-d-une-cle-ssh-dans-l-interface-public-cloud
 keywords: 'ssh, clef, clé, manager, interface, accès, instance, cloud'
 excerpt: 'Découvez comment ajouter une clé SSH afin de simplifier l’accès  aux serveurs cloud'
-section: 'Base de connaissances'
+section: 'Gestion depuis l''espace client'
+order: 5
 ---
 
 **Dernière mise à jour le 4 décembre 2019**

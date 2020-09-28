@@ -9,15 +9,15 @@ section: 'Advanced use'
 
 ## Objective
 
-OVH offers some [Dedicated Servers](https://www.ovh.com.au/dedicated-servers/){.external} that have one SATA disk group, and one SSD disk group. We call these "Hybrid Servers".
+OVHcloud offers some [Dedicated Servers](https://www.ovh.com.au/dedicated-servers/){.external} that have one SATA disk group, and one SSD disk group. We call these "Hybrid Servers".
 
 **This guide will show you how to specify the disk group on which to install the server's operating system.**
 
 ## Requirements
 
-* an [OVH Hybrid Server](https://www.ovh.com.au/dedicated-servers/){.external}
-* access to the [OVH API](https://ca.api.ovh.com/console/){.external}
-* access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* an [OVHcloud Hybrid Server](https://www.ovh.com.au/dedicated-servers/){.external}
+* access to the [OVHcloud API](https://ca.api.ovh.com/console/){.external}
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 > [!warning]
 >
@@ -26,9 +26,9 @@ OVH offers some [Dedicated Servers](https://www.ovh.com.au/dedicated-servers/){.
 
 ## Instructions
 
-### Step 1: Log in to the OVH API.
+### Step 1: Log in to the OVHcloud API.
 
-Go to <https://ca.api.ovh.com/console/> and click the `Login`{.action} in the top-right corner of the page. Then, on the following page, log in with the credentials of your OVH account.
+Go to <https://ca.api.ovh.com/console/> and click the `Login`{.action} in the top-right corner of the page. Then, on the following page, log in with the credentials of your OVHcloud account.
 
 ### Step 2: Retrieve the server name.
 
@@ -87,7 +87,7 @@ When you have finished specifying your options, click the `Execute`{.action} but
 
 ![Installation](images/install-01.png){.thumbnail}
 
-Your operating system will now be installed. You can check the progress of the installation by refreshing your server's page in the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, or by going to the following API call, entering your server's references into the **serviceName** field, and clicking the `Execute`{.action} button:
+Your operating system will now be installed. You can check the progress of the installation by refreshing your server's page in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, or by going to the following API call, entering your server's references into the **serviceName** field, and clicking the `Execute`{.action} button:
 
 > [!api]
 >

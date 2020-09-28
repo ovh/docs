@@ -19,7 +19,7 @@ As well as private IP addressing, the [vRack](https://www.ovh.com/sg/solutions/v
 * your chosen private IP address range
 * a [vRack compatible server](https://www.ovh.com/sg/dedicated-servers/){.external}
 * a [vRack](https://www.ovh.com/sg/solutions/vrack/){.external} service activated in your account
-* access to the OVH [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* access to the OVHcloud [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
@@ -125,10 +125,10 @@ Now reboot your server to apply the changes.
 
 ## Go further
 
-[Configuring the vRack on your dedicated servers](https://docs.ovh.com/sg/en/dedicated/configuring-vrack-on-dedicated-servers/){.external}
+[Configuring the vRack on your dedicated servers](../configuring-vrack-on-dedicated-servers/){.external}
 
-[Creating multiple vLANs in a vRack](https://docs.ovh.com/sg/en/dedicated/multiple-vlans/){.external}
+[Creating multiple vLANs in a vRack](../multiple-vlans/){.external}
 
-[Configuring the vRack between the Public Cloud and a Dedicated Server](https://docs.ovh.com/sg/en/dedicated/vrack-pci-ds/){.external}
+[Configuring the vRack between the Public Cloud and a Dedicated Server](../vrack-pci-ds/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

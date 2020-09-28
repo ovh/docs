@@ -7,7 +7,7 @@ section: Public Cloud Archive
 
 
 ## Preamble
-OVH Cloud Archive is based on Openstack Swift. Even though OVH leads the effort to ease the use of object storage, it forcibly inherits core concepts that may appear suprising to a new user. This guide will answer most frequent questioning users have.
+OVH Cloud Archive is based on Openstack Swift. Even though OVH leads the effort to ease the use of object storage, it forcibly inherits core concepts that may appear surprising to a new user. This guide will answer most frequent questioning users have.
 
 
 ## Questions
@@ -29,11 +29,11 @@ Unsealing an archive consists of sending an unsealing request, and then polling 
 
 Unsealing can be done through :
 
-- The [customer interface](../unlock/guide.en-au.md){.ref}.
-- The [Openstack API](../dev/guide.en-au.md){.ref}.
+- The [customer interface](../pca_unlock/guide.en-au.md){.ref}.
+- The [Openstack API](../pca_dev/guide.en-au.md){.ref}.
 - Gateways for SSH-based protocols: make an attemp to retrieve the archive.
 
 This operation processing can be polled with :
 
-- The [customer interface](../unlock/guide.en-au.md){.ref}.
-- The [Openstack API](../dev/guide.en-au.md){.ref}.
+- The [customer interface](../pca_unlock/guide.en-au.md){.ref}.
+- The [Openstack API](../pca_dev/guide.en-au.md){.ref}.

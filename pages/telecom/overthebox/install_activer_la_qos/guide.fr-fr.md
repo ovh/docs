@@ -81,4 +81,4 @@ Cette partie en  **rouge**  symbolise la bande passante consommée par vos tél�
 ## 4. Personnaliser la QoS
 Vous pouvez personnaliser la **QoS** de votre **OverTheBox** pour que cette dernière soit parfaitement adaptée à l'utilisation de vos différentes applications réseau.
 
-Pour cela, veuillez consulter le guide suivant : [Fonctionnement et Customisation de la QoS](../middle_fonctionnement_et_customisation_de_la_qos/guide.fr-fr.md){.ref}
+Pour cela, veuillez consulter le guide suivant : [Fonctionnement et Customisation de la QoS](../fonctionnement-et-customisation-de-la-qos/){.ref}

@@ -9,7 +9,7 @@ section: Network Management
 
 ## Objective
 
-OVH allows you to associate a virtual MAC address with an IP address, so that you can set up virtual machines with a bridge configuration on your server.
+OVHcloud allows you to associate a virtual MAC address with an IP address, so that you can set up virtual machines with a bridge configuration on your server.
 
 **This guide will show you how to create a virtual MAC address and assign it to a failover IP address.**
 
@@ -17,18 +17,18 @@ OVH allows you to associate a virtual MAC address with an IP address, so that yo
 
 * a [Dedicated Server](https://www.ovh.com.au/dedicated-servers/){.external}
 * a [failover IP address](https://www.ovh.com.au/dedicated-servers/ip_failover.xml){.external} or a failover IP block (RIPE)
-* access to your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 
 ## Instructions
 
 ### Assign a MAC address
 
-To assign a virtual MAC address to a failover IP, you first need to connect to your OVH Control panel.
+To assign a virtual MAC address to a failover IP, you first need to connect to your OVHcloud Control panel.
 
 Once connected, click the `Dedicated`{.action} menu and then click the `IP`{.action} section on the left side of the page.
 
-![IPFO](images/virtual_mac_01.png){.thumbnail}
+![IPFO](images/virtual_mac_01_2020.png){.thumbnail}
 
 Once you're in the IP section, locate your failover IP address (or block) in the list and then click the `...`{.action} button to bring up the list of options.
 
@@ -38,7 +38,7 @@ When the 'Add a virtual MAC' box appears, select a type from the dropdown list, 
 
 > [!primary]
 >
-> **Type:** Refers to the virtual MAC address type ('VmWare' will be a MAC address made for the VmWare ESXi system, while 'OVH' will be for any other type of virtualisation system).
+> **Type:** Refers to the virtual MAC address type ('VmWare' will be a MAC address made for the VmWare ESXi system, while 'OVHcloud' will be for any other type of virtualisation system).
 >
 > **Name of virtual machine:** Refers to the desired name for the virtual MAC address, in order to make it easy to identify this IP/MAC pair in the future.
 >

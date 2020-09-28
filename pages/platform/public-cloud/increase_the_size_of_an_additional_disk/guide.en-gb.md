@@ -3,7 +3,8 @@ title: 'Increasing the size of an additional disk'
 excerpt: 'Find out how to increase the size of an additional disk and enlarge its main partition'
 slug: increase_the_size_of_an_additional_disk
 legacy_guide_number: g1865
-section: 'Knowledge Base'
+section: Storage
+order: 2
 ---
 
 **Last updated 14th November 2019**
@@ -165,7 +166,7 @@ Finally, click `Finish`{.action} to complete the process.
 
 ## Go further
 
-[Create and configure an additional disk on an instance](https://docs.ovh.com/gb/en/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
+[Create and configure an additional disk on an instance](../create_and_configure_an_additional_disk_on_an_instance)
 
 Join our community of users on <https://community.ovh.com/en/>.
 

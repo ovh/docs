@@ -2,7 +2,8 @@
 title: Créer et supprimer un groupe de sécurité dans Horizon
 excerpt: Découvrez comment créer ou supprimer un groupe de sécurité via Horizon
 slug: creer-supprimer-groupe-securite-dans-horizon
-section: Base de connaissances
+section: Gestion depuis Horizon
+order: 17
 ---
 
 **Dernière mise à jour le 27/02/2018**
@@ -18,7 +19,7 @@ Tous les projets disposent d’un groupe de sécurité par défaut, utilisé pou
 
 ## Prérequis
 
-- Avoir accès à [votre interface Horizon](https://docs.ovh.com/pl/public-cloud/creation_acces_a_interface_horizon/){.external}.
+- Avoir accès à [votre interface Horizon](../creer-un-acces-a-horizon/){.external}.
 
 
 ## En pratique

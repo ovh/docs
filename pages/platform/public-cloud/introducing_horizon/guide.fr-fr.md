@@ -2,12 +2,13 @@
 title: Presentation d’Horizon
 slug: presentation-dhorizon
 legacy_guide_number: 1776
-section: Base de connaissances
+section: Gestion depuis Horizon
+order: 1
 ---
 
 
 ## Preambule
-Cette page présente l'interface Horizon, cette interface est nativement proposée avec OpenStack, elle a été adaptée par OVH mais peu modifiée, elle complète l'espace client OVH et fournit davantage de fonctionnalités que celle ci.
+Cette page présente l'interface Horizon, cette interface est nativement proposée avec OpenStack, elle a été adaptée par OVHcloud mais peu modifiée, elle complète l'espace client OVHcloud et fournit davantage de fonctionnalités que celle ci.
 
 
 ### Prérequis
@@ -17,7 +18,7 @@ Cette page présente l'interface Horizon, cette interface est nativement propos�
 ## Vue d'ensemble
 
 ### Choix de la region du datacentre
-Contrairement à l'Espace Client OVH, Horizon séparera vos services selon leur région. Vous pourrez choisir la région depuis le menu en haut a gauche :
+Contrairement à l'Espace Client OVHcloud, Horizon séparera vos services selon leur région. Vous pourrez choisir la région depuis le menu en haut a gauche :
 
 
 ![public-cloud](images/2714.png){.thumbnail}

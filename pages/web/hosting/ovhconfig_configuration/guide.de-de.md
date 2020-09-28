@@ -2,8 +2,7 @@
 title: '.ovhconfig-Datei Ihres Webhostings konfigurieren'
 slug: ovhconfig-datei-konfigurieren
 excerpt: 'In dieser Anleitung erfahren Sie, wozu die .ovhconfig-Datei verwendet wird und wie Sie diese bearbeiten.'
-section: Webhosting-Konfiguration
-order: 4
+section: 'Webhosting-Konfiguration'
 ---
 
 **Stand 03.01.2019**
@@ -27,7 +26,7 @@ Sie können die .ovhconfig-Datei auf zwei Arten ändern:
 
 - **indem Sie die .ovhconfig-Datei manuell bearbeiten**: Diese Option ist technisch anspruchsvoller und setzt voraus, dass Sie auf Ihrem Speicherplatz eingeloggt sind. In der vorliegenden Anleitung beschreiben wir ausschließlich diese Methode.
 
-- **über einen Konfigurationsassistenten in Ihrem OVH Kundencenter**: Diese Option ist weniger technisch anspruchsvoll und setzt voraus, dass Sie in Ihrem OVH Kundencenter eingeloggt sind, um dort die gewünschten Änderungen auszuwählen. Befolgen Sie hierzu die Anleitung [„Konfiguration Ihres Webhostings bearbeiten“](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/){.external}
+- **über einen Konfigurationsassistenten in Ihrem OVH Kundencenter**: Diese Option ist weniger technisch anspruchsvoll und setzt voraus, dass Sie in Ihrem OVH Kundencenter eingeloggt sind, um dort die gewünschten Änderungen auszuwählen. Befolgen Sie hierzu die Anleitung [„Konfiguration Ihres Webhostings bearbeiten“](../die_laufzeitumgebung_meines_webhostings_andern/){.external}
 
 Folgen Sie den Schritten der vorliegenden Anleitung, wenn Sie die .ovhconfig-Datei manuell bearbeiten möchten. 
 

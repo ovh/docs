@@ -26,12 +26,12 @@ Dans ce tutoriel, nous allons apprendre à installer et configurer ces quatre br
 
 ### Ce que vous devez avoir
 
-- Un serveur ou une machine virtuelle sous Linux (un [VPS](https://www.ovh.com/ca/fr/vps/){.external}, un [serveur dédié](https://www.ovh.com/ca/fr/serveurs-dedies/all_servers.xml){.external} ou une [instance Public Cloud OVH](https://www.ovh.com/ca/fr/cloud-public/instances/tarifs/){.external}).
+- Un serveur ou une machine virtuelle sous Linux (un [VPS](https://www.ovh.com/ca/fr/vps/){.external}, un [serveur dédié](https://www.ovh.com/ca/fr/serveurs-dedies/all_servers.xml){.external} ou une [instance Public Cloud OVHcloud](https://www.ovh.com/ca/fr/cloud-public/instances/tarifs/){.external}).
 - Les droits administrateur sur ce serveur (être « root »).
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
+> OVHcloud met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
@@ -43,7 +43,7 @@ Dans ce tutoriel, nous allons apprendre à installer et configurer ces quatre br
 
 Sur une distribution Debian ou Ubuntu récente, nous vous conseillons de réinstaller totalement votre serveur si cela est possible sur votre machine. Attention, cette action **effacera totalement vos données**.
 
-Connectez-vous en SSH en tant qu'administrateur « root ». N'hésitez pas à vous reporter au [guide SSH](https://docs.ovh.com/ca/fr/dedicated/ssh-introduction/){.external}.
+Connectez-vous en SSH en tant qu'administrateur « root ». N'hésitez pas à vous reporter au [guide SSH](../ssh-introduction/){.external}.
 
 Une fois le système installé, il convient de le mettre à jour : 
 
@@ -140,7 +140,7 @@ Accédez ensuite au fichier via le navigateur : [http://IP_du_serveur/info.php](
 
 Vous devriez pouvoir visualiser une page détaillant toutes les spécificités de votre environnement PHP (version 7.0.30 dans notre cas) :
 
-![](tuto_php.png)
+ 
 ![Installation de PHP](images/tuto_php.png){.thumbnail}
 
 Une fois visualisé, nous vous recommandons vivement de **supprimer le fichier `index.php`**. En effet, il n'est jamais conseillé de donner publiquement des informations sur votre configuration.
@@ -270,7 +270,7 @@ MariaDB [(none)]> FLUSH PRIVILEGES;
 
 Accédez ensuite à l'interface via [http://IP_du_serveur/phpmyadmin/](#) :
 
-![](tuto_pma.png)
+ 
 ![Installation de PMA](images/tuto_pma.png){.thumbnail}
 
 ### Étape 7 : installez WordPress (optionnel)
@@ -291,7 +291,7 @@ Créez une base nommée `wordpress` en ligne de commande ou via `phpMyAdmin`.
 
 Votre écran de configuration doit ressembler à celui ci-dessous :
 
-![](tuto_wp.png)
+ 
 ![Installation de Wordpress](images/tuto_wp.png){.thumbnail}
 
 Si vous avez un avertissement au niveau de la création du fichier `wp-config.php`, éditez les droits en exécution, lecture, écriture en fonction de vos besoins (communément appelés `CHMOD`).

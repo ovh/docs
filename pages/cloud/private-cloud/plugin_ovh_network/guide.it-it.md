@@ -1,58 +1,59 @@
 ---
-title: 'Utilizzare il plugin OVH Network'
+title: 'Utilizzare il plugin OVHcloud Network'
 slug: plugin-ovh-network
-excerpt: 'Scopri come utilizzare il plugin OVH Network con la soluzione Private Cloud'
+excerpt: 'Scopri come utilizzare il plugin OVHcloud Network con la soluzione Private Cloud'
 legacy_guide_number: '7766560'
 section: 'Funzionalità OVH'
+order: 03
 ---
 
-**Ultimo aggiornamento: 13/11/2018**
+**Ultimo aggiornamento: 07/07/2020**
 
 ## Obiettivo
 
-OVH ha sviluppato il plugin OVH Network per consentire ai propri utenti di gestire in modo più preciso tutti gli indirizzi IP associati al loro [Private Cloud](https://www.ovh.it/private-cloud/){.external}.
+Il plugin OVHcloud Network è stato sviluppato per consentire una gestione più precisa degli indirizzi IP associati a una soluzione Private Cloud.
 
-**Questa guida ti mostra come utilizzare il plugin OVH Network con la soluzione Private Cloud.**
+**Questa guida ti mostra come utilizzare il plugin OVHcloud Network sul tuo servizio.**
 
 ## Prerequisiti
 
-* Disporre di un servizio [Private Cloud](https://www.ovh.it/private-cloud/){.external}
-* Disporre di un blocco di indirizzi IP associato al servizio [Private Cloud](https://www.ovh.it/private-cloud/){.external}
-* Essere connesso all’interfaccia di gestione vSphere
+- Disporre di una soluzione [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Disporre di un blocco di indirizzi IP associato al Private Cloud
+- Avere accesso all’interfaccia vSphere
 
 ## Procedura
 
-Clicca sul menu `Host and Cluster`{.action} e seleziona un datacenter o un cluster dell’infrastruttura. Poi clicca su `Manage`{.action} e `OVH Network`{.action}.
+Accedi all’interfaccia vSphere e seleziona il tuo datacenter nel menu a sinistra. Posizionati nella scheda `Configure`{.action} e, sotto “OVHcloud” nella colonna di navigazione a sinistra, clicca sulla voce `Network`{.action} per visualizzare la sezione “Network summary”.
 
-![Plugin OVH Network](images/network_01.png){.thumbnail}
+![Network summary](images/ovhcloudplugin_01.png){.thumbnail}
 
-Arriverai quindi alla sezione `Summary`{.action}, che riepiloga i blocchi di indirizzi IP e le informazioni principali di ogni blocco.
+In questa interfaccia vengono mostrati i blocchi IP e le informazioni di base ad essi associate. Clicca su un blocco per visualizzare nella tabella l’elenco di tutti gli indirizzi IP.
 
-![Informations sur les IP et les blocs](images/network_02.png){.thumbnail}
+![Informazioni degli IP e blocchi](images/ovhcloudplugin_02.png){.thumbnail}
 
-Selezionando un blocco IP nel menu **IP Blocchi** è possibile visualizzare l'elenco degli indirizzi IP che costituiscono il tuo blocco. Ogni blocco contiene **5 IP dedicati** alla configurazione e all'alta disponibilità, che sono i seguenti:
+In questo modo è possibile anche verificare il “reverse” di ogni indirizzo e la sua destinazione. Alcuni indirizzi sono contrassegnati come “Reserved”. Assicurati di non utilizzare questi **cinque indirizzi IP riservati alla configurazione del blocco e all’alta disponibilità**:
 
 - il primo IP, che annuncia il blocco sul router
-- l’ultimo IP, che è quello di **broadcast**
-- il penultimo, utilizzato come **gateway**
-- i due IP prima del gateway, che si utilizzano sui router come **HSRP** (Hot Standby Router Protocol).
+- l’ultimo IP, che corrisponde a quello di **broadcast**
+- il penultimo IP, che corrisponde al **gateway**
+- i due IP prima del gateway, che vengono utilizzati sui router come **HSRP** (Hot Standby Router Protocol)
 
-![Blocs d'IP](images/network_03.png){.thumbnail}
+> [!warning]
+> Alcune configurazioni con un firewall virtuale non permettono di risalire agli indirizzi MAC se il protocollo ARP non è autorizzato.
+>
 
-Al fine indicare al plugin OVH che i tuoi IP pubblici sono già in uso, è necessario inoltrare una richiesta ARP (_arping_) dalla o dalle macchine virtuali che utilizzano questi indirizzi. Alcune configurazioni con un firewall virtuale non permettono di tracciare gli indirizzi MAC se il protocollo ARP non è autorizzato.
+In seguito è possibile personalizzare il “reverse” dell’indirizzo IP in questa tabella (ad esempio, durante la configurazione di un server di posta). Clicca sui tre puntini verticali a sinistra dell’indirizzo IP e seleziona `Edit Reverse`{.action}.
 
-Puoi successivamente configurare i tuoi Reverse IP, per un server di posta elettronica, ad esempio. Puoi eseguire questa configurazione anche dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e dalle [API OVH](https://api.ovh.com/){.external}. Clicca sui tre puntini verticali a sinistra dell’IP e poi su `Edit Reverse`{.action}.
+![Pulsante Edit Reverse](images/ovhcloudplugin_03.png){.thumbnail}
 
-![Bouton Edition Reverse](images/network_04.png){.thumbnail}
+Inserisci il “reverse” e clicca su `Confirm`{.action}: il nuovo valore apparirà nella tabella.
 
-Seleziona Reverse e poi clicca su `Confirm`{.action}.
-
-![Édition du reverse](images/network_05.png){.thumbnail}
-
-Questo pulsante si trova a destra dell’IP, nella lista degli indirizzi IP del blocco.
-
-![Édition des IP](images/network_06.png){.thumbnail}
+> [!primary]
+>
+> Questo processo di configurazione è disponibile anche nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). 
+> 
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

@@ -7,18 +7,18 @@ section: Fonctionnalités OVH
 order: 07
 ---
 
-**Dernière mise à jour le 10/08/2018**
+**Dernière mise à jour le 01/07/2020**
 
 ## Objectif
 
-Dans certains cas il peut être utile de supprimer un datastore de votre cluster, par exemple pour le remplacer ou le faire évoluer vers une taille supérieure.
+Dans certains cas, il peut être utile de supprimer un datastore de votre cluster, par exemple pour le remplacer ou le faire évoluer vers une taille supérieure.
 
 **Ce guide vous explique comment retirer en toute sécurité un datastore de votre infrastructure.**
 
 
 ## Prérequis
 
-* Posséder une offre [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external}.
+* Posséder une offre [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
 * Accéder à l’interface de gestion vSphere.
 
 
@@ -30,22 +30,22 @@ Dans certains cas il peut être utile de supprimer un datastore de votre cluster
 > 
 
 
-Pour supprimer un datastore, la première étape consiste à effectuer un clic droit sur la ressource concernée. Sélectionnez `OVH Private Cloud`{.action}, puis `Remove storage`{.action}.
+Pour supprimer un datastore, la première étape consiste à effectuer un clic droit sur la ressource concernée. Sélectionnez `OVHcloud`{.action}, puis `Retirer ce stockage`{.action}.
 
-![Choix du datastore](images/removestorage_01.png){.thumbnail}
+![Choix du datastore](images/removedatastore01.png){.thumbnail}
 
 Une fenêtre de confirmation s'ouvre. Validez alors avec `Next`{.action}.
 
-![Confirmation de la suppression](images/removestorage_02.png){.thumbnail}
+![Confirmation de la suppression](images/removedatastore02.png){.thumbnail}
 
 La demande de suppression est dès lors prise en compte.
 
-![Suppression validée](images/removestorage_03.png){.thumbnail}
+![Suppression validée](images/removedatastore03.png){.thumbnail}
 
 
 Il est possible de surveiller la progression de la suppression du datastore via les tâches récentes.
 
-![Tâche de suivi de la suppression](images/removedatastore.png){.thumbnail}
+![Tâche de suivi de la suppression](images/removedatastore04.png){.thumbnail}
 
 
 ## Aller plus loin

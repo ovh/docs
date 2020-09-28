@@ -5,7 +5,7 @@ excerpt: Learn how to change the root password of a VPS
 section: Diagnostic and rescue mode
 ---
 
-**Last updated 2018/06/27**
+**Last updated 2020/07/15**
 
 ## Objective
 
@@ -46,7 +46,7 @@ passwd: password updated successfully
 
 #### Step 1: Identify the mount point
 
-The mount is created automatically on any VPS in the 2016 range, so you just need to identify where your partition is mounted. To do this, you can use two commands:
+The mount is created automatically, so you just need to identify where your partition is mounted. To do this, you can use two commands:
 
 ##### df -h
 

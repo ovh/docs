@@ -27,7 +27,7 @@ section: Tutorials
  }
 </style>
 
-**Last updated 20<sup>th</sup> August, 2019.**
+**Last updated 20 May, 2020.**
 
 ## Before you begin
 
@@ -54,22 +54,32 @@ In this tutorial we are using the most basic Ingress Controller: [NGINX Ingress 
 The official way to install the **NGINX Ingress Controller** is using a mandatory manifest file:
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/mandatory.yaml
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/cloud/deploy.yaml
 ```
 
 It creates the `namespace`, `serviceaccount`, `role` and all the other Kubernetes objects needed for the Ingress Controller, and then it deploys the controller:
 
-<pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/mandatory.yaml
+<pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/cloud/deploy.yaml
 namespace/ingress-nginx created
-configmap/nginx-configuration created
-configmap/tcp-services created
-configmap/udp-services created
-serviceaccount/nginx-ingress-serviceaccount created
-clusterrole.rbac.authorization.k8s.io/nginx-ingress-clusterrole created
-role.rbac.authorization.k8s.io/nginx-ingress-role created
-rolebinding.rbac.authorization.k8s.io/nginx-ingress-role-nisa-binding created
-clusterrolebinding.rbac.authorization.k8s.io/nginx-ingress-clusterrole-nisa-binding created
-deployment.apps/nginx-ingress-controller created
+kind: Service
+serviceaccount/ingress-nginx created
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+configmap/ingress-nginx-controller created
+clusterrole.rbac.authorization.k8s.io/ingress-nginx created
+clusterrolebinding.rbac.authorization.k8s.io/ingress-nginx created
+role.rbac.authorization.k8s.io/ingress-nginx created
+rolebinding.rbac.authorization.k8s.io/ingress-nginx created
+service/ingress-nginx-controller-admission created
+service/ingress-nginx-controller created
+deployment.apps/ingress-nginx-controller created
+validatingwebhookconfiguration.admissionregistration.k8s.io/ingress-nginx-admission created
+clusterrole.rbac.authorization.k8s.io/ingress-nginx-admission created
+clusterrolebinding.rbac.authorization.k8s.io/ingress-nginx-admission created
+job.batch/ingress-nginx-admission-create created
+job.batch/ingress-nginx-admission-patch created
+role.rbac.authorization.k8s.io/ingress-nginx-admission created
+rolebinding.rbac.authorization.k8s.io/ingress-nginx-admission created
+serviceaccount/ingress-nginx-admission created
 </code></pre>
 
 ### 2. Deploying an Ingress behind the LoadBalancer
@@ -90,7 +100,6 @@ metadata:
 spec:
   selector:
     app.kubernetes.io/name: ingress-nginx
-    app.kubernetes.io/part-of: ingress-nginx
   externalTrafficPolicy: Local
   ports:
   - name: http
@@ -125,7 +134,7 @@ You should see your newly created Ingress service:
 
 <pre class="console"><code>$ kubectl get service -n ingress-nginx ingress-lb
 NAME         TYPE           CLUSTER-IP    EXTERNAL-IP                          PORT(S)                      AGE
-ingress-lb   LoadBalancer   10.3.242.23   xxxxxxxxxx.lb.c1.gra.k8s.ovh.net     80:30113/TCP,443:30051/TCP   3m8s</code></pre>
+ingress-lb   LoadBalancer   10.3.242.23   xxx.xxx.xxx.xxx    80:30113/TCP,443:30051/TCP   3m8s</code></pre>
 
 > [!warning]
 > As the `LoadBalancer` creation is asynchronous, and the provisioning of the Load Balancer can take several minutes,  you can get a `<pending>` at `EXTERNAL-IP` while the Load Balancer is setting up. In this case, please wait some minutes and try again.
@@ -139,23 +148,14 @@ Copy the next YAML snippet in a `patch-ingress-configmap.yml` file:
 ```yaml
 data:
   use-proxy-protocol: "true"
-  proxy-real-ip-cidr: "0.0.0.0/32"
-  use-forwarded-headers: "false"
-  http-snippet: |
-    geo $realip_remote_addr $is_lb {
-      default       0;
-      10.108.0.0/14 1;
-    }
-  server-snippet: |
-    if ($is_lb != 1) {
-      return 403;
-    }
+  real-ip-header: "proxy_protocol"
+  set-real-ip-from: "10.108.0.0/14"
 ```
 
 And apply it in  your cluster:
 
 ```bash
-kubectl -n ingress-nginx patch configmap nginx-configuration -p "$(cat patch-ingress-configmap.yml)"
+kubectl -n ingress-nginx patch configmap ingress-nginx-controller -p "$(cat patch-ingress-configmap.yml)"
 ```
 
 After applying the patch, you need to restart the Ingress Controller:
@@ -253,7 +253,7 @@ ingress.extensions/echo-ingress created</code></pre>
 Now you can test it using the LoadBalancer URL:
 
 ```bash
-curl  xxxxxxxxxx.lb.c1.gra.k8s.ovh.net
+curl  xxx.xxx.xxx.xxx
 ```
 
 And you should get the HTTP parameters of your request, including the right source IP in the `x-real-ip` header:
@@ -262,11 +262,11 @@ And you should get the HTTP parameters of your request, including the right sour
 {
   "path": "/",
   "headers": {
-    "host": "6d6rslnrn8.lb.c1.gra.k8s.ovh.net",
+    "host": "xxx.xxx.xxx.xxx",
     "x-request-id": "2126b343bc837ecbd07eca904c33daa3",
     "x-real-ip": "XXX.XXX.XXX.XXX",
     "x-forwarded-for": "XXX.XXX.XXX.XXX",
-    "x-forwarded-host": "xxxxxxxxxx.lb.c1.gra.k8s.ovh.net",
+    "x-forwarded-host": "xxx.xxx.xxx.xxx",
     "x-forwarded-port": "80",
     "x-forwarded-proto": "http",
     "x-original-uri": "/",
@@ -277,7 +277,7 @@ And you should get the HTTP parameters of your request, including the right sour
   "method": "GET",
   "body": "",
   "fresh": false,
-  "hostname": "6d6rslnrn8.lb.c1.gra.k8s.ovh.net",
+  "hostname": "xxx.xxx.xxx.xxx",
   "ip": "::ffff:10.2.1.2",
   "ips": [],
   "protocol": "http",

@@ -3,6 +3,7 @@ title: Ajouter un moyen de paiement
 slug: ajouter-un-moyen-de-paiement
 legacy_guide_number: 1984
 section: Base de connaissances
+hidden: true
 ---
 
 

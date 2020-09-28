@@ -5,7 +5,7 @@ excerpt: Find out how to get started with Heat and stacks by deploying your firs
 section: Orchestration with OpenStack Heat
 ---
 
-**Last updated June 20th 2018**
+**Last updated 2018/06/20**
 
 ## Objective
 
@@ -22,7 +22,7 @@ We will help you get started using Heat, and the *stacks* that represent orchest
 
 ## Requirements
 
-- access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 - a Public Cloud project
 - an OpenStack user account
 - how to manipulate YAML files
@@ -36,11 +36,11 @@ The text below is an example of the sort of instructions we could send to Heat, 
 
 “My application is composed of:
 
-- three [B2-15](https://www.ovh.com.au/public-cloud/instances/prices/){.external} front-end web servers
-- two [C2-30](https://www.ovh.com.au/public-cloud/instances/prices/){.external} database servers
+- three [B2-15]({ovh_www}/public-cloud/instances/prices/){.external} front-end web servers
+- two [C2-30]({ovh_www}/public-cloud/instances/prices/){.external} database servers
 - two additional disks connected to the database servers
 - all of these components communicate with one another via a private network
-- the *scaling* scenario consists of adding another [B2-15](https://www.ovh.com.au/public-cloud/instances/prices/){.external} front-end web server.”
+- the *scaling* scenario consists of adding another [B2-15]({ovh_www}/public-cloud/instances/prices/){.external} front-end web server.”
 
 Once you have done this, you can deploy your full infrastructure with a single command, and launch the *scaling* scenario as required.
 

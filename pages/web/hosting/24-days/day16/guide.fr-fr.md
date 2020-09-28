@@ -15,7 +15,7 @@ hidden: true
 
 Depuis le début de l'année 2016 et l'arrivée de Let's Encrypt, qui fournit des certificats cryptographiques gratuitement, le HTTPS est devenu la nouvelle norme. C'est pourquoi OVH a choisi de s'associer avec Let's Encrypt et de proposer par défaut le HTTPS sur tous les sites hébergés sur l’hébergement web.
 
-Nous avons vu hier [l’utilisation des tâches planifiées](../day15/guide.fr-fr.md){.ref}. Nous allons étudier aujourd’hui comment rendre son site totalement compatible avec le protocole HTTPS.
+Nous avons vu hier [l’utilisation des tâches planifiées](../day15/){.ref}. Nous allons étudier aujourd’hui comment rendre son site totalement compatible avec le protocole HTTPS.
 
 ## C'est quoi HTTPS ?
 Pour les non technophiles, le HTTPS est ce qui permet d’avoir le petit cadenas vert affiché à côté de l’adresse du site Internet dans votre navigateur. C’est un élément destiné à rassurer les visiteurs à propos de la confiance qu’ils peuvent avoir dans le site consulté.

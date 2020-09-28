@@ -1,59 +1,68 @@
 ---
-title: 'Exchange 2016: Uruchomienie autorespondera w interfejsie OWA'
-excerpt: 'Exchange 2016: Uruchomienie autorespondera w interfejsie owa'
+title: 'Tworzenie odpowiedzi automatycznych w interfejsie OWA'
+excerpt: 'Dowiedz się, jak skonfigurować odpowiedzi automatyczne w interfejsie OWA'
 slug: exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa
-section: 'Outlook Web Application (Aplikacja WWW)'
+section: 'Outlook Web Application (OWA)'
 legacy_guide_number: g1922
+order: 3
 ---
 
-## Informacje ogólne
-Funkcja ta pozwala na tworzenie autoresponderów przydatnych w przypadku nieobecności lub automatycznych odpowiedzi.
+**Ostatnia aktualizacja: 03-08-2020**
+
+## Wprowadzenie
+
+Ta funkcja programu Exchange umożliwia skonfigurowanie automatycznych odpowiedzi na e-maile przysłane na Twoje konto w różnych sytuacjach, na przykład podczas nieobecności.
+
+**Dowiedz się, jak włączyć odpowiedzi automatyczne przy użyciu interfejsu Outlook Web App (OWA).**
 
 
-## Jak utworzyć autoresponder lub automatyczną odpowiedź?
+## Wymagania początkowe
 
-## Uruchamianie
-Po zalogowaniu do konta Exchange przez interfejs [Outlook Web App (OWA)](https://ex.mail.ovh.net/owa/), uzyskasz dostęp do tej funkcji korzystając z przycisku "Ustawienia" (ikonka w postaci koła zębatego) i  "Odpowiedzi automatyczne".
-
-Funkcja ta jest również dostępna w zakładce "Ustawienia", "Opcje", "Poczta", "Odpowiedzi automatyczne".
-
-![](images/img_2946.jpg){.thumbnail}
-Uzyskasz dostęp do następującego interfejsu:
-
-Kliknij na przycisk "Wysyłaj odpowiedzi automatyczne" i zdefiniuj okres czasu, w którym mają one być wysyłane.
-
-Możesz skorzystać z edytora treści, aby przygotować treść wiadomości.
-
-![](images/img_2947.jpg){.thumbnail}
-
-## Typ odpowiedzi
-Możesz zdefiniować kilka typów automatycznych odpowiedzi (lub autoresponderów):
+- skonfigurowane [rozwiązanie OVHcloud Exchange](https://www.ovh.pl/emaile/hosted-exchange/)
+- dostęp do konta Exchange (adres e-mail i hasło)
 
 
-- Tylko do nadawców z Twojej organizacji
+## W praktyce
+
+### Włączanie funkcji
+
+Zaloguj się na konto Exchange przy użyciu interfejsu [OVHcloud webmail](https://www.ovh.pl/mail/). Kliknij ikonę koła zębatego w prawym górnym rogu, aby rozwinąć menu „Opcje”, i wybierz pozycję `Odpowiedzi automatyczne`{.action}.
+
+![owaoptions](images/exchange-autorep-step1.png){.thumbnail}
+
+W interfejsie po prostu włącz funkcję, zaznaczając opcję `Wysyłaj odpowiedzi automatyczne`{.action}. W poniższych polach możesz ustawić dokładny okres wysyłania odpowiedzi lub włączyć funkcję na czas nieokreślony. Jeśli nie określisz czasu rozpoczęcia i zakończenia, funkcję trzeba będzie wyłączyć ręcznie. 
+
+Ułóż wiadomość w polu edytora i potwierdź, klikając przycisk `Zapisz`{.action} w lewym górnym rogu.
+
+![owaautoreply](images/exchange-autorep-step2.png){.thumbnail}
 
 
-Automatyczne odpowiedzi będą wysyłane tylko do użytkowników Exchange Twojej platformy Exchange.
+### Typy odpowiedzi
+
+Powyższe instrukcje dotyczą odpowiedzi na e-maile wysłane przez użytkowników w usłudze Exchange. Jeśli zaznaczysz pole wyboru „Wysyłaj odpowiedzi automatyczne do nadawców spoza mojej organizacji”, możesz przygotować osobną wiadomość dla innych nadawców. W takim przypadku będą dostępne dwie dodatkowe opcje odpowiedzi automatycznych:
+
+- **„Wysyłaj odpowiedzi tylko do nadawców z mojej listy kontaktów”**: wiadomość otrzymają tylko Twoje kontakty.
+
+- **„Wysyłaj odpowiedzi automatyczne do wszystkich zewnętrznych nadawców”**: wiadomość otrzyma każdy, kto przyśle e-maila podczas Twojej nieobecności.
+
+Alternatywną wiadomość dla nadawców zewnętrznych można wprowadzić w drugim polu edytora. Zwykle pierwsza wiadomość jest przeznaczona dla współpracowników, a druga dla znajomych, klientów lub innych osób, które mogą się z Tobą skontaktować.
+
+![owaaddreply](images/exchange-autorep-step3.png){.thumbnail}
 
 
-- Do nadawców z Twojej organizacji i do nadawców zewnętrznych
+### Informacje dodatkowe
+
+- Po włączeniu funkcji odpowiedzi automatycznych e-maile będą przychodzić jak zwykle do Twojej skrzynki odbiorczej.
+
+- Aby uniknąć spamu i pętli e-maili, każdy nadawca otrzyma tylko jedną odpowiedź automatyczną.
 
 
-Możesz na przykład wysyłać inną automatyczną odpowiedź do osób ze swojej organizacji (do swoich kolegów) i inną automatyczną odpowiedź do zewnętrznych odbiorców (klientów, znajomych, itp.).
+## Sprawdź również
 
-![](images/img_2948.jpg){.thumbnail}
+[Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](../exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
 
+[Delegowanie uprawnień do konta Exchange](../exchange_2013_przyznanie_uprawnien_full_access/)
 
-## Dodatkowe informacje
-Po włączeniu automatycznej odpowiedzi e-mail wysłany na Twoją skrzynkę jest normalnie otrzymywany i przekazywany do skrzynki odbiorczej.
+[Exchange: współdzielenie kalendarza w interfejsie OWA](../exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa/)
 
-Jeśli zdefiniujesz zakres czasowy, w którym automatyczna odpowiedź ma być aktywna, pojawi się nowy przycisk na niebieskim pasku w górnej części strony.
-
-Jest to przycisk do wyłączania funkcji "automatycznych odpowiedzi".
-
-![](images/img_2949.jpg){.thumbnail}
-
-- Uwaga: aby uniknąć spamu, automatyczna odpowiedź jest wysyłana jeden raz do każdego odbiorcy.
-
-
-
+Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.

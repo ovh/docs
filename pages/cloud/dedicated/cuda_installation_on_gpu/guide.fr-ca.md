@@ -10,7 +10,7 @@ L'installation de CUDA (Compute Unified Device Architecture) sur un serveur GPU 
 
 ## Prérequis
 
-- Avoir un [serveur GPU](https://www.ovh.com/fr/serveurs_dedies/gpu/){.external}.
+- Avoir un [serveur GPU](https://www.ovh.com/ca/fr/serveurs_dedies/gpu/){.external}.
 - Être connecté en SSH sur son serveur
 
 ## En pratique

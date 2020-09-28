@@ -2,33 +2,38 @@
 title: 'Syncing object containers'
 slug: sync-object-containers
 legacy_guide_number: 1919
-section: Knowledge Base
+section: Storage
+order: 6
 ---
 
-## Introduction
+## Objective
+
 If you want to move your objects from one datacentre to another, or even from one project to another, syncing objects between containers is the best solution for avoiding service disruptions during your migration. This guide explains how you can implement this solution.
 
 
-### Requirements
+## Requirements
+
 - an environment that is ready to use the OpenStack API with the Swift client
 - OpenStack environment variables set
 - two object containers in two different datacentres
 
 
-## Configure the sync.
+## Instructions
 
-### Create a sync key.
+### Configuring the sync
+
+#### Creating a sync key
+
 For containers to authenticate, you will need to create a key and configure it on each object container.
 
 - Create the key:
-
 
 ```bash
 root@server-1:~$ sharedKey=$(openssl rand -base64 32)
 ```
 
+#### Destination container configuration
 
-### Destination container configuration.
 First of all, you will need to configure the key on the container that will receive the data. In our case, the destination container is in BHS1.
 
 - Check the region that has loaded in the environment variables:
@@ -72,7 +77,8 @@ Meta Access-Control-Allow-Origin: https://www.ovh.com
 root@server-1:~$ export destContainer="//OVH_PUBLIC_CLOUD/BHS1/AUTH_b3e269xxxxxxxxxxxxxxxxxxxx2b0ba29/containerBHS"
 ```
 
-### Source container configuration.
+#### Source container configuration
+
 - Change the region in the environment variables:
 
 ```bash
@@ -113,7 +119,8 @@ X-Storage-Policy: Policy-0
 
 
 
-### Check the sync.
+#### Check the sync.
+
 After a few minutes (depending on the number and size of the files to be sent), you can check whether the sync is successful by simply listing the files in each container.
 
 - To list the files on the source container:
@@ -134,11 +141,12 @@ test2.txt
 test3.txt
 ```
 
-
-
-
 > [!success]
 >
 > You can also use this guide for migrating RunAbove objects to the
-> OVH Public Cloud.
+> OVHcloud Public Cloud.
 > 
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

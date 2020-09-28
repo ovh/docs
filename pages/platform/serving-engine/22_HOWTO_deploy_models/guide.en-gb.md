@@ -9,13 +9,12 @@ order: 2
 
 ## Objective
 
-Deploying models is the main feature of the **serving engine**. This
-guide provides step by step instructions on how to deploy a **preset
-model**.
+Deploying models is the main feature of the **ML Serving**. This guide
+provides step by step instructions on how to deploy a **preset model**.
 
 ## Requirements
 
--   Having previously created a **serving engine namespace**. Steps are
+-   Having previously created a **ML Serving namespace**. Steps are
     described in section [Initializing
     namespace](../initialize-namespace)
 
@@ -23,8 +22,8 @@ model**.
 
 ### Step 1 - Reach model page
 
-Inside your **serving engine namespace** page there is a dedicated tab
-for managing models : `Models`.
+Inside your **ML Serving namespace** page there is a dedicated tab for
+managing models : `Models`.
 
 ![Model menu](images/00_model_menu.png){.align-center}
 
@@ -56,9 +55,9 @@ Once you chose a name, click the `Next` button.
 ### Step 4 - Choose your auto-scaling options
 
 A model is composed of one or several running instance(s). These
-instances are automaticaly scaled by the **serving engine** depending on
-the input load of your model. That step allows you to configure the
-minimum and maximum number of instances that you want to run.
+instances are automaticaly scaled by the **ML Serving** depending on the
+input load of your model. That step allows you to configure the minimum
+and maximum number of instances that you want to run.
 
 ![image](images/04_select_auto_scale.png){.align-center}
 
@@ -82,7 +81,7 @@ the wanted flavor among a list of existing ones.
 
 ### Step 6 - Wait for model deployment
 
-The **serving engine** sequentially performs the following tasks :
+The **ML Serving** sequentially performs the following tasks :
 
 -   The **building** of the model : you should see the **build status**
     as `Building`.
@@ -100,5 +99,5 @@ your model is also displayed so you can start requesting it.
 ## Going Further
 
 -   You can check the official documentation of the open source product
-    **serving engine** about
+    **ML Serving** about
     [Models](https://serving-doc-mlg.ai.ovh.net/component/models.html)

@@ -3,7 +3,7 @@ title: Accessing the Horizon interface
 slug: configure_user_access_to_horizon
 legacy_guide_number: 1773
 excerpt: Find out how to access the Horizon interface
-section: Knowledge Base
+section: Horizon
 order: 1
 ---
 

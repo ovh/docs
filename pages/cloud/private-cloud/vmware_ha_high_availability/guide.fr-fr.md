@@ -15,43 +15,49 @@ order: 02
 
 La fonction principale de **VMware HA** (High Availability) en cas de défaillance matérielle est de redémarrer les machines virtuelles sur un autre hôte du cluster. **HA** permet aussi de surveiller les VMs ainsi que les applications.
 
-![](images/HA3.png){.thumbnail}
+![schéma HA](images/HA3.png){.thumbnail}
 
 **Ce guide explique le paramètrage de cette fonction**
+
+## Prérequis
+
+- Être connecté à votre [interface vSphere](../connexion-interface-vsphere/).
+- Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
 
 ## En pratique
 
 ### Activation
 
-HA est activé par défaut dans le cluster de base qu'OVH vous fournit lors de la livraison de votre Cloud Privé.
-En cas de création d'un nouveau cluster, vous pouvez l'activé, lors de la création de celui-ci, ou après.
+HA est activé par défaut dans le cluster de base que OVHcloud vous fournit lors de la livraison de votre Hosted Private Cloud.
 
-Si dans votre cluster, HA n'est pas activé, rendez vous dans l'onglet `Configure` de votre cluster puis sur l'onglet `Disponibilité vSphere` disponible dans la rubrique `Services`.
+En cas de création d'un nouveau cluster, vous pouvez activer HA lors de la création du cluster ou après celle-ci.
+
+Si HA n'est pas activé dans votre cluster, rendez vous dans l'onglet `Configure` de votre cluster puis sur l'onglet `Disponibilité vSphere` disponible dans la rubrique `Services`.
 
 Cliquez sur `Modifier`{.action} et cochez la case pour arctiver la fonctionnalité HA.
 
 Il est également important d'activer la surveillance de l'hôte. Ce paramètre permet l'envoi de signaux de pulsation entre les hôtes ESXi afin de détécter une éventuelle panne.
-La désactivation est nécessaire pour réaliser des opérations de mise à jour avec [l'update manager](https://docs.ovh.com/fr/private-cloud/vmware-update-manager/){.external-link} par exemple, dans ce cas précis le hôte est isolé.
+La désactivation est nécessaire pour réaliser des opérations de mise à jour avec [l'update manager](../vmware-update-manager/) par exemple. Dans ce cas précis, l'hôte est isolé.
 
-![](images/HA.png){.thumbnail}
+![activation HA](images/HA.png){.thumbnail}
 
 
 ### Paramètres
 
 #### Pannes et réponses
 
-Cette première catégorie permet de définir votre politique de redémarrage des VMs en fonction des différentes pannes possibles.
+Cette première catégorie permet de définir votre politique de redémarrage des VM en fonction des différentes pannes possibles.
 
 ##### Réponse en cas de panne de l'hôte
 
-Cette catégorie va définir votre politique de redémarrage des VMs en cas de perte d'un hôte.
+Cette catégorie va définir votre politique de redémarrage des VM en cas de perte d'un hôte.
 
 Ainsi, vous pouvez choisir de redémarrer vos machines virtuelles automatiquement ou non.
 Une gestion de redémarrage par défaut sur le cluster est également possible. Vous pouvez affiner cela par machine virtuelle dans l'onglet `Remplacements VM`.
 
-Vous pouvez également séléctionné une condition autre que celle par défaut (Ressources alloués), que vSphere HA va vérifier avant de procéder au redémarrage.
+Vous pouvez également séléctionner une condition, autre que celle par défaut (Ressources allouées), que vSphere HA va vérifier avant de procéder au redémarrage.
 
-![](images/HAparam1.PNG){.thumbnail}
+![panne de l'hôte](images/HAparam1.PNG){.thumbnail}
 
 ##### Réponse à l'isolation d'hôte.
 
@@ -59,37 +65,38 @@ Cette catégorie vous permet de définir les actions à entreprendre en cas de p
 
 Vous pouvez au choix : 
 
-- Ne rien faire
+- Ne rien faire.
 - Mettre hors tension les machines virtuelles et tenter un redémarrage de celles ci sur un autre hôte disponible.
 - Eteindre l'hôte concerné et tenter un redémarrage des machines virtuelles sur un autre hôte disponible.
 
-![](images/HAparam2.PNG){.thumbnail}
+![isolation d'hôte](images/HAparam2.PNG){.thumbnail}
 
 ##### Banque de données avec PDL
 
 En cas de défaillance d'une banque de données avec un état PDL (permanent device loss) vous pouvez définir les actions à entreprendre :
 
-- Ne rien faire
+- Ne rien faire.
 - Ne rien faire, mais générer des logs dans les évenements.
 - Mettre hors tension les machines virtuelles et tenter un redémarrage de celles ci sur les hôtes qui ont toujours de la connectivité avec la banque de données.
 
-![](images/HAparam3.PNG){.thumbnail}
+![banque de données avec PDL](images/HAparam3.PNG){.thumbnail}
 
 ##### Banque de données avec APD
 
 En cas de défaillance d'une banque de données avec un état APD (all path down) vous pouvez définir les actions à entreprendre :
 
-- Ne rien faire
+- Ne rien faire.
 - Ne rien faire, mais générer des logs dans les évenements.
 - Mettre hors tension les machines virtuelles et tenter un redémarrage de celles ci.
 
-![](images/HAparam4.PNG){.thumbnail}
+![banque de données avec APD](images/HAparam4.PNG){.thumbnail}
 
 ##### Surveillance de VM
 
-La surveillance des machines virtuelles est disponible suite à l'installation des [VMware tools](https://docs.ovh.com/fr/private-cloud/installation-des-vmware-tools/){.external-link}, en cas de non réponse via les **tools** (signaux de pulsation) la machine virtuelle sera automatiquement redémarrée. Une configuration avancée est possible par rapport à cette fonctionnalité (intervalle de redémarrage par exemple).
+La surveillance des machines virtuelles est disponible suite à l'installation des [VMware tools](../installation-des-vmware-tools/). 
+En cas de non réponse via les **tools** (signaux de pulsation), la machine virtuelle sera automatiquement redémarrée. Une configuration avancée est possible par rapport à cette fonctionnalité (intervalles de redémarrage par exemple).
 
-![](images/HAparam5.PNG){.thumbnail}
+![Surveillande de VM](images/HAparam5.PNG){.thumbnail}
 
 #### Contrôle d'admission
 
@@ -121,11 +128,11 @@ Vous pouvez retrouver des paramètres sur [cette page](https://docs.vmware.com/f
 
 ### Règle HA
 
-Dans la section `configuration` puis dans l'onglet `Règles VM/Hôte`, vous pouvez créer une règle de type "Machines virtuelles à machines virtuelles".
+Dans la section `configuration` puis dans l'onglet `Règles VM/Hôte`, vous pouvez créer une règle de type « Machines virtuelles à machines virtuelles ».
 
-Celle-ci va ajouter une condition de redémarrage afin de s'assurer que des machines virtuelles d'un premier groupe soient toutes démarrées avant de demarrer celles d'un second groupe.
+Celle-ci va ajouter une condition de redémarrage afin de s'assurer que des machines virtuelles d'un premier groupe soient toutes démarrées avant de démarrer celles d'un second groupe.
 
-Cette règle peut très bien s'ajouter en complément des priorité de redémarrage paramètrables dans l'onglet `Remplacements VM`.
+Cette règle peut très bien s'ajouter en complément des priorités de redémarrage paramètrables dans l'onglet `Remplacements VM`.
 
 ## Aller plus loin
 

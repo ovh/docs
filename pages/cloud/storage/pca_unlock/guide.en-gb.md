@@ -14,14 +14,9 @@ Public Cloud Archive is a cold storage offer designed to host large volumes of d
 When you store data on PCA, data is frozen and can not be recovered directly. You must click on the “Unfreeze” button to begin the recovery process.
 
 
-![public-cloud](images/PCARECUP.png){.thumbnail}
+![public-cloud](images/PCA-unlock-1.png){.thumbnail}
 
-Once the process has started, a timer will appear replacing the “Unfreeze” button. Your file will be available to download once the timer has stopped.
-
-
-![public-cloud](images/PCARECUP2.png){.thumbnail}
-
-You can start the download with your browser or with a Swift/SFTP/SCP client.
+Once the process has started, a date and time will appear replacing "Frozen". Your file will be available to download once after the mentioned date and time with your browser or with a [Swift/SFTP/SCP client](../pca_sftp/guide.en-gb.md){.ref}.
 
 
-![public-cloud](images/PCARECUP3.png){.thumbnail}
+![public-cloud](images/PCA-unlock-2.png){.thumbnail}

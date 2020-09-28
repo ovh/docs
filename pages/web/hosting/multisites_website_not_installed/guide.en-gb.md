@@ -2,11 +2,12 @@
 title: 'Resolving a “Website not installed” error'
 excerpt: 'Find out how to resolve a “Website not installed” error'
 slug: web_hosting_error_-_website_not_installed
-section: 'Configuring the Web Hosting plan'
-order: 2
+section: 'Web Hosting configuration'
 ---
 
+
 **Last updated 21st March 2018**
+
 
 ## Objective
 
@@ -91,4 +92,6 @@ If you have made all the changes required in steps 1 and 2, and taken into accou
 
 [Editing an OVHcloud DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
+
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+

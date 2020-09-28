@@ -3,7 +3,7 @@ title: 'OVHcloud SharePoint aktivieren und verwalten'
 excerpt: 'Erfahren Sie hier, wie Sie einen OVHcloud SharePoint Dienst bestellen und konfigurieren'
 slug: aktivierung_und_verwaltung_ihres_ovh_sharepoint
 legacy_guide_number: g2249
-section: Sharepoint
+section: SharePoint
 order: 1
 ---
 
@@ -106,6 +106,22 @@ Anfangs verfügt ein lizenziertes Konto nicht über Administrator-Rechte. Um die
 Auf beiden Varianten von SharePoint Plattformen finden Sie die Schaltfläche `Administrator-Rechte wiederherstellen`{.action} im Tab `Benutzer`. Damit können die Administrator-Rechte der Plattform im Falle eines Missbrauchs über die SharePoint Oberfläche wiederhergestellt werden.
 
 ![sharepoint](images/order-manage-sharepoint-09.png){.thumbnail}
+
+#### **Dateien aus Office 365 online bearbeiten**
+
+Sie können Ihre Dateien aus Office 365 wie *.docx* oder *.xls* direkt online bearbeiten.
+
+Sie müssen dafür eine gültige Office 365 Lizenz besitzen und dies in Ihrem OVHcloud Kundencenter bestätigen.
+
+Gehen Sie auf den Reiter „Benutzer“ Ihrer Plattform. Klicken Sie dann rechts vom Account auf `...`{.action} und danach auf `Office Lizenz hinzufügen`{.action}.
+
+![sharepoint](images/order-manage-sharepoint-10.png){.thumbnail}
+
+Um zu bestätigen, dass Sie eine Office 365 Lizenz besitzen, klicken Sie auf `Bestätigen`{.action}.
+
+![sharepoint](images/order-manage-sharepoint-11.png){.thumbnail}
+
+Danach können Sie Ihre Dateien aus Office 365 direkt über das Web-Interface Ihres SharePoints bearbeiten.
 
 ## Weiterführende Informationen
 

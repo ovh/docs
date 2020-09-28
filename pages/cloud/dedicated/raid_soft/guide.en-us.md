@@ -11,13 +11,13 @@ section: 'Server Management'
 
 Redundant Array of Independent Disks (RAID) is a utility that mitigates data loss on a server by replicating data across two or more disks.
 
-The default RAID level for OVH server installations is RAID 1, which doubles the space taken up by your data, effectively halving the useable disk space.
+The default RAID level for OVHcloud server installations is RAID 1, which doubles the space taken up by your data, effectively halving the useable disk space.
 
 **This guide will help you configure your server’s RAID array in the event that it needs to be rebuilt due to corruption or disk failure.**
 
 ## Requirements
 
-* a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external} with a software RAID configuration
+* a [dedicated server](https://www.ovh.com/worlddedicated_servers/){.external} with a software RAID configuration
 * administrative (root) access to the server via SSH
 
 ## Instructions
@@ -265,7 +265,7 @@ mount /dev/md2 /home
 
 ## Go Further
 
-* [Hot Swap – Hardware RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/){.external}
-* [Hot Swap – Software RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-soft/){.external}
-* [Hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external}
+* [Hot Swap – Hardware RAID](../hotswap-raid-hard/){.external}
+* [Hot Swap – Software RAID](../hotswap-raid-soft/){.external}
+* [Hardware RAID](../raid-hard/){.external}
 * Join our community of users on <https://community.ovh.com/en/>.

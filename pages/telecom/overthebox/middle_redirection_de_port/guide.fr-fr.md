@@ -10,12 +10,11 @@ section: 'Fonctionnalités principales'
 Afin que la redirection de port fonctionne correctement. Il est impératif que la machine cible de cette redirection possède comme passerelle par défaut l'IP de l' **OverTheBox** .
 
 
-
 > [!success]
 >
 > C'est normalement déjà le cas si cette machine est configurée en
 > récupération d'IP automatique et si le DHCP est géré par  OverTheBox
-> (procédure d'installation sur : Mes 10 premières minutes avec OverTheBox <docs/telecom/overthebox/mes_10_premieres_minutes_avec_overthebox/>)
+> Retrouvez la procédure d'installation sur [Mes 10 premières minutes avec OverTheBox](../mes-10-premieres-minutes-avec-overthebox/)
 >
 
 
@@ -44,7 +43,7 @@ Dans votre réseau  **OverTheBox**  ,vous possédez un serveur  **HTTP**  sur la
 Voici la configuration à apporter :
 
 
-![overthebox](images/4376.png){.thumbnail}
+![overthebox](images/4376b.png){.thumbnail}
 
 
 ## Redirection d'une plage de ports

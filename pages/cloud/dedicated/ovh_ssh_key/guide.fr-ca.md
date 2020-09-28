@@ -1,7 +1,7 @@
 ---
-title: Installer la clé SSH OVH
+title: Installer la clé SSH OVHcloud
 slug: ovh-ssh-key
-excerpt: Ce guide vous décrit l'installation d'une clé SSH OVH pour permettre l'intervention de nos administrateurs, puis sa désactivation
+excerpt: Ce guide vous décrit l'installation d'une clé SSH OVHcloud pour permettre l'intervention de nos administrateurs, puis sa désactivation
 section: SSH et clé SSH
 ---
 
@@ -9,13 +9,13 @@ section: SSH et clé SSH
 
 ## Objectif
 
-Dans certains cas, l'intervention d'un administrateur OVH peut être nécessaire sur votre infrastructure dédiée. 
+Dans certains cas, l'intervention d'un administrateur OVHcloud peut être nécessaire sur votre infrastructure dédiée. 
 
-**Ce guide vous décrit l'installation d'une clé SSH OVH pour permettre l'intervention de nos administrateurs, puis sa désactivation.**
+**Ce guide vous décrit l'installation d'une clé SSH OVHcloud pour permettre l'intervention de nos administrateurs, puis sa désactivation.**
 
 ## Prérequis
 
-- Être [connecté en SSH](https://docs.ovh.com/ca/fr/dedicated/ssh-introduction/){.external} (accès root).
+- Être [connecté en SSH](../ssh-introduction/){.external} (accès root).
 
 ## En pratique
 
@@ -23,13 +23,13 @@ Dans certains cas, l'intervention d'un administrateur OVH peut être nécessaire
 
 Une fois connecté en SSH, voici la commande à effectuer :
 
-- Si votre serveur est hébergé chez OVH Europe :
+- Si votre serveur est hébergé chez OVHcloud Europe :
 
 ```sh
 wget ftp://ftp.ovh.net/made-in-ovh/cle-ssh-public/installer_la_cle.sh -O installer_la_cle.sh ; sh installer_la_cle.sh
 ```
 
-- Si votre serveur est hébergé chez OVH Canada :
+- Si votre serveur est hébergé chez OVHcloud Canada :
 
 ```sh
 wget ftp://ftp.ovh.net/made-in-ovh/cle-ssh-public/installer_la_cleCA.sh -O installer_la_cle.sh ; sh installer_la_cle.sh
@@ -117,6 +117,6 @@ cat /root/.ssh/authorized_keys2
 
 ## Aller plus loin
 
-[Introduction au SSH](https://docs.ovh.com/ca/fr/dedicated/ssh-introduction/){.external}.
+[Introduction au SSH](../ssh-introduction/){.external}.
 
 Échangez avec notre communauté d'utilisateurs au <https://community.ovh.com/>.

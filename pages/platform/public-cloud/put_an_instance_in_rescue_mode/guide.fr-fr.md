@@ -3,7 +3,8 @@ title: 'Passer une instance en mode rescue'
 slug: passer-une-instance-en-mode-rescue
 excerpt: 'Ce guide vous explique comment mettre votre instance en mode rescue'
 legacy_guide_number: 2029
-section: 'Résolution des défauts'
+section: 'Gestion depuis l''espace client'
+order: 3
 ---
 
 **Dernière mise à jour le 13 février 2020**

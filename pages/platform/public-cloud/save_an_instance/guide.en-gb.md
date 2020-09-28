@@ -2,7 +2,8 @@
 title: 'Backing up an instance'
 slug: back-up-instance
 excerpt: 'Find out how to back up a Public Cloud instance in a few clicks'
-section: 'Knowledge Base'
+section: Management via Control Panel
+order: 1
 ---
 
 **Last updated 02nd December 2019**

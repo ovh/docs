@@ -1,7 +1,7 @@
 ---
 title: Installing WordPress on OVHcloud Managed Kubernetes
 slug: installing-wordpress
-excerpt: 'Find out how to install WordPress on OVHcloud Managed Kubernetes'
+excerpt: "Find out how to install WordPress on OVHcloud Managed Kubernetes"
 section: Tutorials
 order: 5
 ---
@@ -38,20 +38,17 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 You also need to have [Helm](https://docs.helm.sh/) installer on your workstation and your cluster, please refer to the [How to install Helm on OVHcloud Managed Kubernetes Service](../installing-helm/) tutorial.
 
-
 ## Installing the Wordpress Helm chart
 
 For this tutorial we are using the [Wordpress Helm chart](https://github.com/bitnami/charts/tree/master/bitnami/wordpress){.external} found on [Bitnami repository](https://github.com/bitnami/charts/). The chart is fully configurable, but here we are using the default configuration, with only the minimal set of customization to make it work well on OVHcloud Managed Kubernetes Service.
 
-
 > [!primary]
+>
 > ### Customizing your install
-> 
-> Maybe you would like your username to be different, or be able to set your password, or choose an external database instead of deploying the MariaDB container... 
+>
+> Maybe you would like your username to be different, or be able to set your password, or choose an external database instead of deploying the MariaDB container...
 >
 > In order to customize your install, without having to leave the simplicity of using helm and the Wordpress helm chart, you can simply set some of the [configurable parameters of the WordPress chart](https://github.com/helm/charts/tree/master/stable/wordpress#configuration){.external}. Then you can add it to your `helm install` with the `--set` option (`--set param1=value1,param2=value2`)
->
-
 
 ```
 helm install my-first-k8s-wordpress bitnami/wordpress --set allowOverrideNone=true
@@ -59,7 +56,6 @@ helm install my-first-k8s-wordpress bitnami/wordpress --set allowOverrideNone=tr
 
 This will install the needed elements (a MariaDB pod for the database, a Wordpress pod for the webserver with the Worpdress PHP code),
 allocate the persistent volumes and initialize the services. And at the end, it will give you the connection parameters for your new Wordpress:
-
 
 <pre class="console"><code>$ helm install my-first-k8s-wordpress bitnami/wordpress --set allowOverrideNone=true
 NAME: my-first-k8s-wordpress
@@ -90,17 +86,14 @@ To access your WordPress site from outside the cluster follow the steps below:
   echo Password: $(kubectl get secret --namespace default my-first-k8s-wordpress -o jsonpath="{.data.wordpress-password}" | base64 --decode)
 </code></pre>
 
-
-As the instructions say, you will need to wait a few moments to get the `LoadBalancer` URL. 
+As the instructions say, you will need to wait a few moments to get the `LoadBalancer` URL.
 You can test if the `LoadBalancer` is ready using:
 
 ```
 kubectl get svc --namespace default -w my-first-k8s-wordpress
 ```
 
-
-After some minutes, you will the `LoadBalancer` URL:
-
+After some minutes, you will get the `LoadBalancer` URL:
 
 <pre class="console"><code>$ kubectl get svc --namespace default -w my-first-k8s-wordpress
 NAME                     TYPE           CLUSTER-IP    EXTERNAL-IP     PORT(S)                      AGE
@@ -133,7 +126,18 @@ Password: 0pdfhdfhfe5
 
 ![Installing Wordpress](images/installing-wordpress-02.jpg){.thumbnail}
 
-
 You have a working Wordpress on your OVHcloud Managed Kubernetes Service, congratulations!
 
+## Cleaning up
 
+To clean up your cluster, simply use Helm to delete your Wordpress blog.
+
+```bash
+helm delete my-first-wordpress
+```
+
+It will delete your Wordpress and its associated resources from your cluster:
+
+<pre class="console"><code>$ helm delete my-first-wordpress
+release "my-first-wordpress" uninstalled
+</code></pre>

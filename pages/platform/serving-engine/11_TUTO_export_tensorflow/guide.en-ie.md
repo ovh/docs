@@ -11,18 +11,18 @@ order: 2
 
 [Tensorflow](https://www.tensorflow.org/) is a popular machine learning
 library and SavedModel is a serialization format that is supported by
-OVHcloud Serving Engine. This tutorial will cover how to export a
+OVHcloud ML Serving. This tutorial will cover how to export a
 [Tensorflow](https://www.tensorflow.org/) trained model into an
 SavedModel file.
 
 ## Requirements
 
--   A python environement with [Tensorflow](https://www.tensorflow.org/)
+-   A python environment with [Tensorflow](https://www.tensorflow.org/)
     installed
 
 ## Convert a simple model to SavedModel
 
-Serving Engine supports `TensorFlow` models thanks to the `SavedModel`
+ML Serving supports `TensorFlow` models thanks to the `SavedModel`
 serialization format of `TensorFlow`.
 
 Let\'s take a simple example of a `TensorFlow` model to illustrate:
@@ -69,7 +69,7 @@ INPUT_FEATURES = ['sepal_length', 'sepal_width', 'petal_length', 'petal_width']
 def serving_input_receiver_fn():
     """
     This is used to define inputs to serve the model.
-   :return: ServingInputReciever
+   :return: ServingInputReceiver
     """
     input_features = {feature: tf.placeholder(tf.float32, [None, 1]) for feature in INPUT_FEATURES}
     model_features = {'x', tf.concat([receiver_tensors[feature] for feature in INPUT_FEATURES]), axis=1)
@@ -111,7 +111,7 @@ classifier.export_saved_model(
 
 ## Going further
 
--   You can check the [OVHcloud documention on how to deploy custom
+-   You can check the [OVHcloud documentation on how to deploy custom
     models](../deploy-serialized-models).
 -   You can check the [supported compatibilities for Tensorflow
     SavedModel](../compatibility-matrix)

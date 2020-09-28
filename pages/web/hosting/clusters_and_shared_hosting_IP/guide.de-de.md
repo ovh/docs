@@ -2,11 +2,10 @@
 title: 'Verzeichnis von IP-Adressen für die Webhosting Cluster'
 excerpt: 'Erfahren Sie hier, welche IP-Adresse für Ihr OVHcloud Webhosting zu verwenden ist'
 slug: verzeichnis-der-ip-adressen-web-hosting-cluster
-section: Webhosting-Konfiguration
-order: 3
+section: 'Webhosting-Konfiguration'
 ---
 
-**Letzte Aktualisierung am 29.04.2020**
+**Letzte Aktualisierung am 20.07.2020**
 
 ## Ziel
 
@@ -784,6 +783,58 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 
 ```bash
 91.134.248.192
+```
+
+## Cluster 030
+
+#### IP-Adressen der Cluster nach Land
+
+|Country|Country Code|IPv4|IPv6|
+|---|---|----|---|
+|Frankreich|FR|145.239.37.162|2001:41d0:301::30|
+|Irland|IE|178.32.77.113|2001:41d0:301:3::30|
+|Portugal|PT|5.135.68.91|2001:41d0:301:2::30|
+|Vereinigtes-Uni|91.134.177.228|2001:41d0:301:12::30|
+|Italien|IT|94.23.73.16|2001:41d0:301:11::30|
+|Spanien|ES|149.202.105.228|2001:41d0:301:4::30|
+|Polen|PL|188.165.21.8|2001:41d0:301:5::30|
+|Tschechische tchèque|CZ|94.23.168.143|2001:41d0:301:6::30|
+|Niederlande-Bas|NL|149.202.25.75|2001:41d0:301:7::30|
+|Finnland|FI|188.165.140.151|2001:41d0:301:8::30|
+|Litauen|LT|188.165.24.146|2001:41d0:301:9::30|
+|Deutschland|DE|51.255.232.79|2001:41d0:301:1::30|
+|Belgien|BE|213.32.107.241|2001:41d0:301:10::30|
+
+Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+54.36.13.47
+```
+
+Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
+
+```bash
+51.178.146.199
+```
+
+## Cluster 051
+
+#### IP-Adressen der Cluster nach Land
+
+|Country|Country Code|IPv4|IPv6|
+|---|---|----|---|
+|Canada|CA|51.161.122.78|2607:5300:205:2::51|
+
+Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+178.32.120.166
+```
+
+Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
+
+```bash
+51.161.94.36
 ```
 
 ## Weiterführende Informationen

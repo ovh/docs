@@ -1,8 +1,8 @@
 ---
 title: 'Was tun, wenn Ihr Hosting aus Sicherheitsgründen deaktiviert wurde?'
 slug: sicherheit-hosting-deaktiviert
-excerpt: 'Hier erklären wir Ihnen gängige Sicherheitspraktiken und wie Sie bei einer Deaktivierung Ihres Hostings reagieren können.'
-section: Diagnose
+excerpt: 'Hier erklären wir Ihnen gängige Sicherheitspraktiken und wie Sie bei einer Deaktivierung Ihres Hostings reagieren können'
+section: 'Diagnose'
 order: 1
 ---
 

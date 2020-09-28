@@ -1,8 +1,9 @@
 ---
 title: 'Information regarding cloud billing options'
 slug: information-on-cloud-billing-options
-section: 'Information and Concepts'
 excerpt: 'Find out more about the different billing options for Public Cloud products'
+section: 'Project management'
+order: 2
 ---
 
 **Last updated 09th January 2020**

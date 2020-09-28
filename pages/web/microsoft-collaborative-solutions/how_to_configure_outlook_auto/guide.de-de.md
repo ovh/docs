@@ -1,5 +1,5 @@
 ---
-title: Exchange 2013 manuelle Konfiguration in Outlook
+title: Exchange manuelle Konfiguration in Outlook
 excerpt: Wenn Sie nicht die Möglichkeit haben, den für die automatische Konfiguration von Outlook erforderlichen SRV Eintrag zu erstellen, können Sie diese Hilfe nutzen, um Outlook von Hand zu konfigurieren
 slug: exchange_2013_manuelle_konfiguration_in_outlook
 legacy_guide_number: g1358

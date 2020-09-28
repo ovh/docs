@@ -5,13 +5,15 @@ legacy_guide_number: 2006
 section: Tutorials
 ---
 
-## Overview
+## Objective
+
 When you create a **public** container, everyone will have access to your data. This is a good way of sharing files over the internet. However, to share your files with your friends, for example, you will need to provide them with a long URL that is usually difficult to remember. You may also want to use these objects on your website without using a domain that is different to what your website uses. With a domain name, you can provide a custom URL to share your data.
 
 This guide explains how to configure a domain name on your containers in order to make it easier to access.
 
 
 ### Requirements
+
 - storage spaces added
 - a domain name
 
@@ -125,3 +127,7 @@ dig storage.bhs1.cloud.ovh.net
 > - replace auth-ProjectID with auth_ProjectID
 > 
 > 
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

@@ -19,7 +19,7 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 
 * a Dedicated Server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
 * at least one [failover IP](https://www.ovh.com/asia/dedicated-servers/ip_failover.xml) address attached to the server
-* access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
@@ -31,15 +31,15 @@ For this example, we will use the following values in our code samples, which sh
 
 ### Assign a virtual MAC address
 
-Log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click on the `Dedicated`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click on the `Dedicated`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table.
 
-![Failover IP](images/virtual_mac_01.png){.thumbnail}
+![Failover IP](images/virtual_mac_01_2020.png){.thumbnail}
 
 Click on the three dots to open the `Context`{.action} menu, and click `Add a virtual MAC`{.action}.
 
 ![Add a virtual MAC (1)](images/virtual_mac_02.png){.thumbnail}
 
-Select `OVH`{.action} from the `Type`{.action} dropdown box, type a name in the `Name of virtual machine`{.action} field, and then confirm your options.
+Select `OVHcloud`{.action} from the `Type`{.action} dropdown box, type a name in the `Name of virtual machine`{.action} field, and then confirm your options.
 
 ![Add a virtual MAC (2)](images/virtual_mac_03.png){.thumbnail}
 
@@ -170,7 +170,7 @@ default GATEWAY_IP
 Next, open the virtual machine's DNS configuration file, which is located in `/etc/sysconfig/network/resolv.conf`. If the file doesn't exist, you'll have to create it. Edit the file so that it reflects the configuration below:
 
 ```bash
-nameserver 213.186.33.99 # OVH DNS Server
+nameserver 213.186.33.99 # OVHcloud DNS Server
 ```
 
 Save and close the file, then reboot your virtual machine.

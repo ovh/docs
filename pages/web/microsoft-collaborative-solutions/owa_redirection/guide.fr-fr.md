@@ -5,6 +5,7 @@ legacy_guide_number: 1920
 excerpt: 'Retrouvez ici la procedure de mise en place d’une redirection e-mail depuis OWA'
 section: 'Utilisation d''Outlook Web Application (OWA)'
 order: 3
+hidden: true
 ---
 
 ## Mise en place sur Outlook Web Application 2016 

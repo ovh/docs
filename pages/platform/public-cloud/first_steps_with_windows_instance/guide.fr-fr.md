@@ -3,7 +3,8 @@ title: 'Débuter avec une instance Windows'
 excerpt: 'Découvrez comment finaliser l’installation d’une instance Windows et initier la première connexion'
 slug: debuter-avec-une-instance-windows
 legacy_guide_number: 1995
-section: 'Base de connaissances'
+section: 'Premiers pas'
+order: 5
 ---
 
 **Dernière mise à jour le 25/11/2019**

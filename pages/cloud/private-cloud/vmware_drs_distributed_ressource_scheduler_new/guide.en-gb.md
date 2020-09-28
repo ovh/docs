@@ -1,77 +1,82 @@
 ---
-title: VMware DRS (Distributed Ressource Scheduler)
+title: VMware DRS (Distributed Resource Scheduler)
 slug: vmware-drs-distributed-ressource-scheduler
-excerpt: Manage load distribution with DRS function
+excerpt: Find out how to manage load balancing with DRS
 section: VMware vSphere features
+order: 3
 ---
 
-**Last updated Apr. 30th 2020**
+**Last updated 7th July 2020**
 
 ## Objective
 
-The Distributed Resource Scheduler (DRS**) function is available in a **VMware** cluster, allowing load balancing of hosts by moving virtual machines automatically (vMotion). It will allocate VMs to the different hosts in the cluster based on their uses and resources.
+The feature Distributed Resource Scheduler (DRS) is available in a VMware cluster, allowing load balancing of hosts by moving virtual machines automatically (vMotion). It will allocate VMs to the different hosts in the cluster based on their usage and resources.
 
-**This guide explains the setting of this function.**
+**This guide explains the settings of the DRS feature.**
+
+## Requirements
+
+- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+- a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager))
 
 ## Instructions
 
-Starting from the fact that **DRS*** will allow us to better allocate resources it will proceed or advise us to move VMs to a Host or Pool (better suited) of our cluster.
+The DRS functionality's purpose is to allocate resources more efficiently. It can either move the VMs to a host or pool (best suited) in your cluster, or provide advice on the process.
 
-![](images/drs0.png){.thumbnail}
+![Function DRS](images/drs0.png){.thumbnail}
 
 ### Activation
 
-DRS is enabled by default in the first cluster that OVHcloud provides you with when we deliver your Hosted Private Cloud.
-If a new cluster is created, you can enable it when it is created, or after.
+DRS is enabled by default in the first cluster provided with your OVHcloud Hosted Private Cloud.
 
-If DRS is not enabled in your cluster, go to the `Configure`{.action} tab of your cluster and then to the `vSphere DRS`{.action} tab available in `Services`{.action}.
+When a new cluster is created, you can enable it at the time of creation or afterwards.
 
-Click `Edit`{.action} and slide the cursor to enable the DRS feature.
+If DRS is not active in your cluster, go to the `Configure`{.action} tab and then select `vSphere DRS`{.action} available in the `Services`{.action} menu.
 
-![](images/drs1.png){.thumbnail}
+Click on `EDIT`{.action} and then on the slide button `vSphere DRS`{.action} to enable it.
+
+![Activation DRS](images/drs01.png){.thumbnail}
 
 ### Settings
 
-In the same settings editing window, you will find 4 categories of options.
+In the same section, you will find 4 categories of options.
 
 #### Automation
 
-The Automation Level have 3 different levels :
+Three different levels of automation are available:
 
-- **Manual** : DRS generates both power-on placement recommendations, and migration recommendations for virtual machines. Recommendations need to be manually applied or ignored.
-- **Partially Automated** : DRS automatically places virtual machines onto hosts at VM power-on. Migration recommendations need to be manually applied or ignored.
-- **Fully Automated** : DRS automatically places virtual machines onto hosts at VM power-on, and virtual machines are automatically migrated from one host to another to optimize resource utilization.
+- **Manual**: DRS will not move VMs, you will need to manage moving and distributing your VMs independently.
+- **Partially Automated**: DRS will advise you on migrating your VMs, but will only do so if you validate the move.
+- **Fully Automated**: DRS will automatically move VMs without your validation, based on the load on the hosts.
 
-It is also possible to set a migration threshold more or less aggressive on automated modes.
+It is also possible to set a migration threshold between "Conservative" and "Aggressive" on automated modes.
 
-The "Predictive DRS" option allows you to perform migrations based on the forecast measurements returned by vROps.
-vROps is mandatory for this DRS option.
+The "Predictive DRS" option, available from VMware version 6.5, allows you to perform migrations based on the forecast metrics returned by vRops.
+The latter is therefore essential for the operation of this DRS option.
 
-Finally, virtual machine automation allows you to configure specific DRS settings for some VMs in the `VM Overrides`{.action} tab of the `configuration`{.action} section (some VMs may have a partially automatic migration mode while the cluster will be fully automated).
+Finally, the "Virtual Machine Automation" option allows you to configure specific DRS settings for certain VMs in the `VM Overrides` submenu of the `Configure`{.action} tab. (Some VMs may have a partially automated migration mode while the cluster will be fully automated.)
 
-![](images/drs2.png){.thumbnail}
+![Automation DRS](images/drs02.png){.thumbnail}
 
 
 #### Additional Options
 
-You can configure 3 additional options in the DRS setting :
+You can configure 3 additional options in the DRS settings:
 
-* **VM Distribution** : For availability, distribute a more even number of virtual machines across hosts.
-* **Memory Metric for Load Balancing** : Load balance based on consumed memory of virtual machines rather than active memory.
-This setting is only recommended for clusters where host memory is not over-committed.
-* **CPU Over-Commitment** :  Limit CPU overcommitment for all hosts in the cluster. This setting will create a virtual CPU on a primary physical CPU ratio limit (vCPU:pCPU) implemented on each ESXi host.
+- **VM Distribution**: For availability, distribute a more even number of virtual machines across hosts.
+- **Memory Metric for Load Balancing**: Load balancing based on the consumed memory of virtual machines rather than active memory. This setting is only recommended for clusters where host memory is not over-committed.
+- **CPU Over-Commitment**:  Limit CPU over-commitment for all hosts in the cluster. This setting will create a virtual CPU on a primary physical CPU ratio limit (vCPU:pCPU) implemented on each ESXi host.
 
-![](images/drs3.png){.thumbnail}
+![Additional Options](images/drs03.png){.thumbnail}
+
 
 #### Power Management
 
-> [!warning]
->
-> This option **must** always be **disabled**.
-> 
+**This option must always be disabled.**
 
-Its primary utility is to turn off hosts in your infrastructure if DRS deems that you do not need them in your operation, while satisfying the tipping level requested by HA.
-At OVHcloud, our monitoring will detect this extinction as abnormal and create a datacenter intervention.
+The main purpose of this option to shut down hosts in your infrastructure if DRS determines that they are not needed, while satisfying the failover level requested by HA.
+
+However, OVHcloud monitoring will detect this operation as abnormal and create a data centre intervention.
 
 #### Advanced Options
 
@@ -87,17 +92,21 @@ Here are some examples:
 |MinGoodness|Minimal improvement in cluster imbalance required for each move|Adaptive|0 (All vMotion is considered)|
 |MaxMovesPerHost|Maximum number of movements per recommended host per invocation|Adaptive|0 (No limits)|
 
-![](images/drs5.png){.thumbnail}
+![Advanced Options](images/drs05.png){.thumbnail}
 
 ### DRS rules
 
-In the `Configuration`{.action} section you can find the management of `VM/host rules`{.action} :
+In the `Configure`{.action} tab you can find the management of `VM/Host Rules`.
 
-- **Keep Virtual Machines Together** : VMs are on the same host
-- **Separate Virtual Machines** : Separate VMs on separate hosts within a single Cluster
-- **Virtual Machines to Hosts** : VMs that are members of the VM group of the specified cluster must run on the specified host group. It is necessary to create VM and host groups in the `VM/Host Groups`{.action} tab.
+![DRS rules](images/drs06.png){.thumbnail}
 
-The fourth rule, **Virtual Machines to Virtual Machines** is explained in our guide on [vSphere HA](https://docs.ovh.com/gb/en/private-cloud/vmware-ha-high-availability/){.external}.
+- **Keep Virtual Machines Together**: VMs remain on the same host
+- **Separate Virtual Machines**: Separate VMs on different hosts within a single cluster
+- **Virtual Machines to Hosts**: VMs that are members of the VM group of the specified cluster must run on the specified host group. It is necessary to create VM and host groups in the `VM/Host Groups` menu.
+
+The fourth rule, **Virtual Machines to Virtual Machines** is explained in our guide on [VMware HA](../vmware-ha-high-availability/).
+
+![DRS rules](images/drs07.png){.thumbnail}
 
 ## Go further
 

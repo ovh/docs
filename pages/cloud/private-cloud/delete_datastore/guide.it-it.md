@@ -6,7 +6,7 @@ legacy_guide_number: '7766789'
 section: 'Funzionalità OVH'
 ---
 
-**Ultimo aggiornamento: 11/12/2018**
+**Ultimo aggiornamento: 24/07/2020**
 
 ## Obiettivo
 
@@ -17,7 +17,7 @@ In certi casi può essere utile rimuovere un datastore dal cluster, ad esempio p
 
 ## Prerequisiti
 
-* Disporre di una soluzione [Private Cloud](https://www.ovh.it/private-cloud/){.external}
+* Disporre di una soluzione [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external}
 * Avere accesso all’interfaccia di gestione vSphere
 
 
@@ -29,23 +29,23 @@ In certi casi può essere utile rimuovere un datastore dal cluster, ad esempio p
 > 
 
 
-Per eseguire la rimozione di un datastore, clicca con il tasto destro del mouse sulla risorsa da rimuovere, seleziona `OVH Private Cloud`{.action} e poi `Remove storage`{.action}.
+Per eseguire la rimozione di un datastore, clicca con il tasto destro del mouse sulla risorsa da rimuovere, seleziona `OVHcloud`{.action} e poi `Remove storage`{.action}.
 
-![Scelta del datastore](images/removestorage_01.png){.thumbnail}
+![Scelta del datastore](images/removedatastore01.png){.thumbnail}
 
 Nella nuova finestra, conferma di voler rimuovere il datastore cliccando su `Next`{.action}. 
 
-![Conferma della rimozione](images/removestorage_02.png){.thumbnail}
+![Conferma della rimozione](images/removedatastore02.png){.thumbnail}
 
 La richiesta di rimozione è stata inviata.
 
-![Rimozione confermata](images/removestorage_03.png){.thumbnail}
+![Rimozione confermata](images/removedatastore03.png){.thumbnail}
 
 È possibile seguire lo stato di avanzamento della rimozione del datastore nella sezione <b>Recent Tasks</b>.
 
-![Attività di controllo della rimozione](images/removedatastore.png){.thumbnail}
+![Attività di controllo della rimozione](images/removedatastore04.png){.thumbnail}
 
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

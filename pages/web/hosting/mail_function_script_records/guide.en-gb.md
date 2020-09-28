@@ -2,7 +2,8 @@
 title: 'Monitoring and managing automated emails in your Web Hosting plan'
 slug: web_hosting_monitoring_automatic_emails
 excerpt: 'Find out how to monitor and manage automated emails sent from your OVH Web Hosting plan'
-section: Diagnostic
+section: 'Diagnostics'
+order: 2
 ---
 
 **Last updated May 25th, 2018**
@@ -15,7 +16,7 @@ Automated emails are messages that are sent via scripts. For example, they are u
 
 ## Requirements
 
-- You must have an[OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}.
+- You must have an [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}.
 - You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 > [!primary]

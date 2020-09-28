@@ -4,6 +4,7 @@ slug: import_a_failover_ip
 excerpt: 'Find out how to import a failover IP address into your Public Cloud Project'
 legacy_guide_number: g1883
 section: Networking
+order : 9
 ---
 
 **Last updated 7th April 2020**
@@ -60,7 +61,7 @@ Click on `Attach`{.action} to confirm. The page will display a modification mess
 ![Import Failover IP](images/modifycompleted.png){.thumbnail}
 
 The IP address is now associated with your instance.
-The next step will be the IP configuration in your OS; please refer to our [guide](https://docs.ovh.com/gb/en/public-cloud/configure_a_failover_ip).
+The next step will be the IP configuration in your OS; please refer to our [guide](../configure_a_failover_ip).
 
 ## Go further
 

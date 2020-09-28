@@ -6,7 +6,7 @@ legacy_guide_number: '7766789'
 section: 'OVH Features'
 ---
 
-**Last updated 10th August 2018**
+**Last updated 1st July 2020**
 
 
 ## Objective
@@ -17,7 +17,7 @@ In certain cases — like replacing a datastore or scaling it up to a higher cap
 
 ## Requirements
 
-* an [OVH Private Cloud](https://www.ovh.co.uk/private-cloud/){.external} solution
+* an [OVHcloud Hosted Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/){.external} solution
 * access to the vSphere management interface
 
 
@@ -29,22 +29,22 @@ In certain cases — like replacing a datastore or scaling it up to a higher cap
 > 
 
 
-To remove a datastore, right-click on the resource concerned. Then select `OVH Private Cloud`{.action}, and `Remove Storage`{.action}.
+To remove a datastore, right-click on the resource concerned. Then select `OVHcloud`{.action}, and `Remove this Storage`{.action}.
 
-![Choice of datastore](images/removestorage_01.png){.thumbnail}
+![Choice of datastore](images/removedatastore01.png){.thumbnail}
 
 A confirmation window will pop up. Confirm by clicking `Next`{.action}.
 
-![Confirm removal](images/removestorage_02.png){.thumbnail}
+![Confirm removal](images/removedatastore02.png){.thumbnail}
 
 The removal request will then be processed.
 
-![Removal confirmed](images/removestorage_03.png){.thumbnail}
+![Removal confirmed](images/removedatastore03.png){.thumbnail}
 
 
 You can also monitor the progress of the datastore removal in `Recent Tasks`{.action}.
 
-![Removal monitoring task](images/removedatastore.png){.thumbnail}
+![Removal monitoring task](images/removedatastore04.png){.thumbnail}
 
 
 ## Go further

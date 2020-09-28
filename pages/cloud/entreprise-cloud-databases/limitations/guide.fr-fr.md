@@ -38,7 +38,7 @@ L'extension "wal2json" n'est pas incluse dans la liste précédente car elle ne 
 
 ### PostgreSQL 12
 
-Liste des extensions supportées au 7 Avril 2020 :
+Liste des extensions supportées au 17 Juillet 2020 :
 
 |          **Extension**           | **Version** |
 |----------------------------------|-------------|
@@ -109,6 +109,7 @@ Liste des extensions supportées au 7 Avril 2020 :
 | sslinfo                          | 1.2         |
 | tablefunc                        | 1.0         |
 | tcn                              | 1.0         |
+| timescaledb                      | 1.7.2       |
 | tsm_system_rows                  | 1.0         |
 | tsm_system_time                  | 1.0         |
 | unaccent                         | 1.1         |
@@ -118,7 +119,7 @@ Liste des extensions supportées au 7 Avril 2020 :
 
 ### PostgreSQL 11
 
-Liste des extensions supportées au 7 Avril 2020 :
+Liste des extensions supportées au 17 Juillet 2020 :
 
 |         **Extension**          | **Version** |
 |--------------------------------|-------------|
@@ -183,6 +184,7 @@ Liste des extensions supportées au 7 Avril 2020 :
 | sslinfo                        | 1.2         |
 | tablefunc                      | 1.0         |
 | tcn                            | 1.0         |
+| timescaledb                    | 1.7.2       |
 | timetravel                     | 1.0         |
 | tsm_system_rows                | 1.0         |
 | tsm_system_time                | 1.0         |
@@ -193,7 +195,7 @@ Liste des extensions supportées au 7 Avril 2020 :
 
 ### PostgreSQL 10
 
-Liste des extensions supportées au 7 Avril 2020 :
+Liste des extensions supportées au 17 Juillet 2020 :
 
 |         **Extension**          | **Version** |
 |--------------------------------|-------------|
@@ -258,6 +260,7 @@ Liste des extensions supportées au 7 Avril 2020 :
 | sslinfo                        | 1.2         |
 | tablefunc                      | 1.0         |
 | tcn                            | 1.0         |
+| timescaledb                    | 1.7.2       |
 | timetravel                     | 1.0         |
 | tsm_system_rows                | 1.0         |
 | tsm_system_time                | 1.0         |
@@ -268,7 +271,7 @@ Liste des extensions supportées au 7 Avril 2020 :
 
 ### PostgreSQL 9.6
 
-Liste des extensions supportées au 7 Avril 2020 :
+Liste des extensions supportées au 17 Juillet 2020 :
 
 |         **Extension**          | **Version** |
 |--------------------------------|-------------|
@@ -332,6 +335,7 @@ Liste des extensions supportées au 7 Avril 2020 :
 | sslinfo                        | 1.2         |
 | tablefunc                      | 1.0         |
 | tcn                            | 1.0         |
+| timescaledb                    | 1.7.2       |
 | timetravel                     | 1.0         |
 | tsearch2                       | 1.0         |
 | tsm_system_rows                | 1.0         |

@@ -3,6 +3,7 @@ title: 'Managing OVHcloud services'
 slug: manage-ovh-services
 excerpt: 'Find out how to manage your services in the OVHcloud Control Panel'
 section: Billing
+hidden: true
 ---
 
 **Last updated 5th May 2020**

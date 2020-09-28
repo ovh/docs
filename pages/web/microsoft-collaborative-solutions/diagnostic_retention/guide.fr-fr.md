@@ -82,12 +82,12 @@ Vérifions la restauration des 3 éléments :
 ![emails](images/3580.png){.thumbnail}
 
 
-### Exchange 2013 / 2016
+### Exchange 2016 et ultérieur
 Concernant la connexion au webmail (OWA) pour les offres de type Hosted, le lien de connexion est identique : "ex.mail.ovh.net".
 
 Pour les offres de type Private, le lien de connexion correspond au "nom de votre certificat SSL".
 
-Le test de restauration est effectué ici sur un compte Exchange 2013. Une fois connecté, réalisez un clique droit dans le menu de gauche sur "Éléments supprimés" puis "Récupérer les éléments supprimés".
+Une fois connecté, réalisez un clique droit dans le menu de gauche sur "Éléments supprimés" puis "Récupérer les éléments supprimés".
 
 
 ![emails](images/3582.png){.thumbnail}
@@ -107,8 +107,7 @@ Il est aussi possible de vider la liste des éléments mais cela est définitif.
 
 > [!success]
 >
-> Il est possible à partir d'une offre Exchange 2013/2016 de sélectionner
-> différent types d'éléments simultanément et d'effectuer la restauration.
+> Il est possible de sélectionner différent types d'éléments simultanément et d'effectuer la restauration.
 > Chaque type d'élément sera alors placé dans la catégorie qui le concerne.
 > 
 

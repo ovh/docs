@@ -5,7 +5,7 @@ excerpt: 'Find out how to manage automatic renewal for your services via the OVH
 section: 'Managing the renewal of services'
 ---
 
-**Last updated 10th April 2020**
+**Last updated 10th June 2020**
 
 ## Objective
 
@@ -16,6 +16,8 @@ You can manage renewals and cancellations for your services via the OVHcloud Con
 > [!primary]
 >
 > Depending on your place of residence, local legislation, and the solutions concerned, the details in this guide may vary or not apply to your situation. If you are unsure about any details, please refer to your OVHcloud contracts. You can view these via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by going to the `My services`{.action} section, then `Contracts`{.action}.
+> 
+This guide is not applicable for US services. If you are a customer of OVHcloud US, please refer to [the guide for your region](https://support.us.ovhcloud.com/hc/en-us/articles/360002306224). 
 >
 
 

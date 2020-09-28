@@ -1,27 +1,33 @@
 ---
 title: 'Configuring IPv6 on dedicated servers'
 slug: network-ipv6
-excerpt: 'This guide explains how to configure IPv6 addresses on our infrastructure.'
+excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
 section: 'Network Management'
 ---
 
-**Last updated 24th April 2019**
+**Last updated 20th July 2020**
 
 ## Objective
 
-Internet Protocol version 6 (IPv6) is the latest version of the Internet Protocol (IP). It is designed to address the long-anticipated address exhaustion of its predecessor, IPv4, by using 128-bit addresses instead of 32-bit addresses. Every OVH Dedicated Server comes with a /64 IPv6 block. This represents over 18 quintillion IP addresses that you can use at your convenience.
+Internet Protocol version 6 (IPv6) is the latest version of the Internet Protocol (IP). It is designed to address the long-anticipated address exhaustion of its predecessor, IPv4, by using 128-bit addresses instead of 32-bit addresses. Every OVHcloud dedicated server comes with a /64 IPv6 block. This represents over 18 quintillion IP addresses that you can use at your convenience.
 
-**This guide explains how to configure IPv6 addresses on our infrastructure.**
+**This guide explains how to configure IPv6 addresses on your server using various examples.**
+
+> [!warning]
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>
 
 ## Requirements
 
-- a [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external}
+- a [dedicated server](https://www.ovh.co.uk/dedicated_servers/) in your OVHcloud account
 - all your IPv6 information (prefix, gateway etc.)
 - a basic knowledge of [SSH](http://en.wikipedia.org/wiki/Secure_Shell) and networking
 
 ## Instructions
 
-If you are using an OVH-provided Linux OS template to install your server, you will see that you already have the first (main) IPv6 configured right out of the box.
+If you are using an OVHcloud-provided Linux OS template to install your server, you will see that you already have the first (main) IPv6 configured out of the box.
 
 
 > [!primary]
@@ -40,15 +46,16 @@ If you are using an OVH-provided Linux OS template to install your server, you w
 >
 > Before following the steps below, we strongly suggest that you disable IPv6 autoconf and router advertising to prevent known issues. You can do so by adding the following lines to your `sysctl.conf` file, which is located in /etc/sysctl.conf:
 > 
-> `net.IPv6.conf.all.autoconf=0`
+> `net.ipv6.conf.all.autoconf=0`
 > 
-> `net.IPv6.conf.all.accept_ra=0`
+> `net.ipv6.conf.all.accept_ra=0`
 > 
 > Once this has been done, you can apply those rules by executing the following command: `sh sysctl -p`.
 > 
 
 #### Step 1: Use SSH to connect to your server
-[see also...](https://docs.ovh.com/gb/en/dedicated/getting-started-dedicated-server/#logging-on-to-your-server){.external}
+
+Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server)
 
 #### Step 2: Open your server's network configuration file
 
@@ -68,7 +75,7 @@ post-up /sbin/ip -f inet6 route add default via IPv6_GATEWAY
 pre-down /sbin/ip -f inet6 route del IPv6_GATEWAY dev eth0
 pre-down /sbin/ip -f inet6 route del default via IPv6_GATEWAY
 ```
-additional IPv6 addresses can be added by `up /sbin/ifconfig eth0 inet6 add YOUR_2nd_IPv6/64` lines in the file.
+Additional IPv6 addresses can be added by `up /sbin/ifconfig eth0 inet6 add YOUR_2nd_IPv6/64` lines in the file.
 
 #### Step 4: Save the file and apply the changes
 
@@ -93,7 +100,7 @@ ping6 -c 4 2001:4860:4860::8888
 ```
 
 
-If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure, that the machine you're testing from is connected with IPv6. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/){.external}.
+If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../ovh-rescue/).
 
 ### Fedora 26 and above
 
@@ -103,7 +110,8 @@ If you are not able to ping this IPv6 address, check your configuration and try 
 >
 
 #### Step 1: Use SSH to connect to your server
-[see also...](https://docs.ovh.com/gb/en/dedicated/getting-started-dedicated-server/#logging-on-to-your-server){.external}
+
+Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server)
 
 
 #### Step 2: Open your server's network configuration file
@@ -147,12 +155,13 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure, that the machine you're testing from is connected with IPv6. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/){.external}.
+If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../ovh-rescue/).
 
 ### FreeBSD
 
 #### Step 1: Use SSH to connect to your server
-[see also...](https://docs.ovh.com/gb/en/dedicated/getting-started-dedicated-server/#logging-on-to-your-server){.external}
+
+Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server)
 
 
 #### Step 2: Open your server's network configuration file
@@ -193,13 +202,13 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure, that the machine you're testing from is connected with IPv6. If it still doesn't work, please test your configuration in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/ovh-rescue/){.external}.
+If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../ovh-rescue/).
 
 ### Ubuntu 18.04
 
 #### Step 1: Use SSH to connect to your server
-[see also...](https://docs.ovh.com/gb/en/dedicated/getting-started-dedicated-server/#logging-on-to-your-server){.external}
 
+Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server)
 
 #### Step 2: Open your server's network configuration file
 
@@ -220,7 +229,8 @@ Address=IPv6_Address/64
 Destination=Gateway_Address
 Scope=link
 ```
-to add multiple IPv6 addresses, add multiple [Address] sections
+To add multiple IPv6 addresses, add multiple [Address] sections
+
 ```sh
 [Address]
 Address=IPv6_Address_2/64
@@ -253,10 +263,12 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 ### Windows Server 2012
 
 #### Step 1: Use RDP to connect to your server
-[see also...](https://docs.ovh.com/gb/en/dedicated/getting-started-dedicated-server/#logging-on-to-your-server){.external}
+
+Find more information in [this guide](../getting-started-dedicated-server/#logging-on-to-your-server)
 
 
 #### Step 2: Open your server's network configuration
+
 First, right-click on the network icon in the notification area to go to the `Network and Sharing Center`{.action}.
 
 ![Network and Sharing Center](images/ipv6_network_sharing_center.png){.thumbnail}
@@ -272,6 +284,7 @@ Right-click your network adapter, then click `Properties`{.action}.
 Select `Internet Protocol Version 6`{.action}, then click `Properties`{.action}.
 
 ![Properties](images/ipv6_properties.png){.thumbnail}
+
 #### Step 3: Amend the network configuration 
 
 Enter your IPv6 configuration (`IPv6 address` and `Default Gateway`) and click `OK`{.action}.
@@ -280,12 +293,12 @@ Enter your IPv6 configuration (`IPv6 address` and `Default Gateway`) and click `
 
 ### Troubleshooting
 
-If after testing your connection you are still experiencing problems, please open a support request and provide:
+If after testing your connection you are still experiencing problems, please create a support request to review your configurations. It is necessary to provide:
+
 - the operating system name and version you are using on your server
 - the name and directory of the network configuration file 
 - the content of that file 
 
-Our support team will happily review your configurations.
 
 ## Go further
 

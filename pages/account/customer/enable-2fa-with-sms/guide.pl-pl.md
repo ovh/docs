@@ -6,7 +6,7 @@ section: Bezpieczeństwo
 hidden: true
 ---
 
-**Ostatnia aktualizacja z dnia 15-11-2019**
+**Ostatnia aktualizacja z dnia 29-05-2020**
 
 ## Wprowadzenie
 
@@ -16,7 +16,7 @@ Weryfikacja dwuetapowa przez SMS to jedna z oferowanych przez OVHcloud metod zab
 
 ## Wymagania początkowe
 
-- Zapoznanie się z [różnymi metodami weryfikacji dwuetapowej w OVHcloud](https://docs.ovh.com/pl/customer/aktywacja-weryfikacji-dwuetapowej-przez-sms/).
+- Zapoznanie się z [różnymi metodami weryfikacji dwuetapowej w OVHcloud](../zabezpieczenie-konta-za-pomoca-2FA/).
 - Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - Posiadanie telefonu komórkowego umożliwiającego otrzymywanie wiadomości SMS.
 
@@ -26,7 +26,7 @@ Weryfikacja dwuetapowa przez SMS to jedna z oferowanych przez OVHcloud metod zab
 
 Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij Twoją nazwę użytkownika w prawym górnym rogu (1) i wybierz `Moje konto`{.action} (2). Następnie kliknij `Bezpieczeństwo`{.action} (3), a na koniec `Aktywuj weryfikację dwuetapową`{.action} (4).
 
-![2FA sms](images/2fagen2.png){.thumbnail}
+![2FA sms](images/hub2FA.png){.thumbnail}
 
 
 ### Etap 2: wybór metody SMS-owej

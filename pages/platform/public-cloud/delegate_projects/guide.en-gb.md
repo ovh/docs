@@ -3,7 +3,8 @@ title: 'Delegating projects'
 slug: delegate-projects
 excerpt: 'Find out how to delegate technical rights to other OVHcloud accounts for a Public Cloud project'
 legacy_guide_number: 1914
-section: 'Knowledge base'
+section: Project management
+order: 7
 ---
 
 **Last updated 29th November 2019**

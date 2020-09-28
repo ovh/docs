@@ -3,7 +3,7 @@ title: 'Configurer des clés SSH supplémentaires'
 slug: configurer-des-cles-ssh-supplementaires
 excerpt: 'Apprenez à configurer des clés SSH supplémentaires sur votre instance'
 legacy_guide_number: 1924
-section: 'Base de connaissances'
+section: 'Tutoriels'
 ---
 
 **Dernière mise à jour le 9 mai 2019**

@@ -1,9 +1,9 @@
 ---
-title: 'Web hosting: How to fix the 500 Internal Server Error'
-excerpt: 500 Internal Server Error
-id: '1987'
+title: 'Fixing the 500 Internal Server Error'
+excerpt: How to fix the 500 Internal Server Error
 slug: web_hosting_how_to_fix_the_500_internal_server_error
 legacy_guide_number: g1987
+section: 'Diagnostics'
 ---
 
 

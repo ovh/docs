@@ -15,7 +15,7 @@ Please note that you may also see the term KVM (Keyboard Video and Mouse) used f
 
 ## Requirements
 
-- access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
 
 ## Instructions
@@ -26,9 +26,9 @@ You can access the IPMI using two different methods: the Java applet (recommende
 
 You will need to ensure that Java is installed on your desktop for the Java applet to work. If you do not have Java installed, go to the [official page](https://www.java.com/en/download/){.external} to do so.
 
-In the `IPMI`{.action} section of the OVH Control Panel, click on `From a Java applet (KVM)`{.action}:
+In the `IPMI`{.action} section of the OVHcloud Control Panel, click on `From a Java applet (KVM)`{.action}:
 
-![IPMI Java initiated](images/java_ipmi_initiate.png){.thumbnail}
+![IPMI Java initiated](images/java_ipmi_initiate_2020.png){.thumbnail}
 
 Download the file `kvm.jnlp` when you are prompted to do so, and run it:
 
@@ -42,9 +42,9 @@ You can now manage your server.
 
 ### Access via your browser, using Serial over LAN (SoL).
 
-Although we would recommend that you log in via the Java applet, you can also access the IPMI using Serial over LAN. To do so, click on `From your browser`{.action} in the `IPMI`{.action} section of the OVH Control Panel:
+Although we would recommend that you log in via the Java applet, you can also access the IPMI using Serial over LAN. To do so, click on `From your browser`{.action} in the `IPMI`{.action} section of the OVHcloud Control Panel:
 
-![IPMI SoL activation](images/sol_ipmi_activation.png){.thumbnail}
+![IPMI SoL activation](images/sol_ipmi_activation_2020.png){.thumbnail}
 
 > [!warning]
 >
@@ -55,11 +55,11 @@ Although we would recommend that you log in via the Java applet, you can also ac
 
 Your IPMI may stop responding. If you cannot access it, you can test it first by clicking on `Test the IPMI`{.action}, and checking the result of the diagnostic:
 
-![IPMI test](images/ipmi_test.png){.thumbnail}
+![IPMI test](images/ipmi_test_2020.png){.thumbnail}
 
 If everything appears to be normal, as per our example, you may be experiencing a local technical issue (internet connection, local desktop). If the IPMI encounters any issues, you can reboot it by clicking `Reboot the IPMI`{.action}.
 
-![IPMI test](images/ipmi_reboot.png){.thumbnail}
+![IPMI test](images/ipmi_reboot_2020.png){.thumbnail}
 
 It will take several minutes for the IPMI to reboot.
 

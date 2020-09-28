@@ -4,6 +4,7 @@ excerpt: 'Exchange 2016: Utworzenie przekierowania e-mail w panelu OWA'
 slug: exchange_2016_utworzenie_przekierowania_e-mail_w_panelu_owa
 section: 'Outlook Web Application (Aplikacja WWW)'
 legacy_guide_number: g1920
+hidden: true
 ---
 
 ## Aktywacja - Etap 1

@@ -20,7 +20,7 @@ By default, Memcached is not protected by authentication. If the server is acces
 
 > [!warning]
 >
-> OVH is providing you with machines that you are responsible for. We have no access to these machines, and therefore cannot manage them. You are responsible for your own software and security management.
+> OVHcloud is providing you with machines that you are responsible for. We have no access to these machines, and therefore cannot manage them. You are responsible for your own software and security management.
 >
 > This guide is designed to assist you with common tasks as much as possible. However, we recommend that you contact a specialist service provider if you experience any issues or doubts when it comes to managing, using or securing your server. You can find more information in the “Go further” section of this guide.
 >

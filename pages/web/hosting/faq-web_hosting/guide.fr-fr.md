@@ -1,12 +1,11 @@
 ---
-title: 'FAQ Hébergements Web'
+title: FAQ
 excerpt: 'Retrouvez les questions les plus fréquemment posées sur les hébergements web OVHcloud'
 slug: faq-hebergement
 section: 'Premiers pas'
-hidden: true
 ---
 
-**Dernière mise à jour le 05/05/2020**
+**Dernière mise à jour le 13/05/2020**
 
 ## FAQ hébergements web OVHcloud
 
@@ -21,11 +20,11 @@ Plusieurs raisons peuvent expliquer le dysfonctionnement de votre site internet.
 
 Pour configurer votre hébergement, connectez-vous tout d'abord à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Depuis la rubrique `Hébergement` vous pourrez notamment gérer vos certificats SSL, vos versions PHP, vos CDN, vos multisites, vos bases de données, ...
 
-**Trucs et Astuces** : Pour vous aider à configurer votre hébergement, nous vous invitons à prendre connaissance de la rubrique « Premiers pas » que vous retrouverez [ici](../).
+**Trucs et Astuces** : Pour vous aider à configurer votre hébergement, nous vous invitons à prendre connaissance de la rubrique <br> « Premiers pas » que vous retrouverez [ici](../).
 
 ### Comment créer ou supprimer un élément sur mon produit/service (compte e-mail, base de données, ….) ?
 
-Pour créer ou supprimer un élément, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez le produit concerné (`E-mail`, `Base de données`, `Modules`). Vous pourrez ainsi faire évoluer votre produit à votre convenance.
+Pour créer ou supprimer un élément, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez le produit concerné <br> (`E-mail`, `Base de données`, `Modules`). Vous pourrez ainsi faire évoluer votre produit à votre convenance.
 
 **Trucs et Astuces** : depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, vous avez la possibilité de réaliser des sauvegardes régulières de vos bases de données.
 
@@ -43,7 +42,7 @@ Une fois connecté à votre espace client, vous pourrez gérer vos différents a
 
 ### Comment mettre en ligne mon site ? 
 
-Pour mettre en ligne votre site chez OVHcloud, vous devez disposer d'un nom de domaine, qui correspondra à l'adresse depuis laquelle votre site sera accessible (exemple : ovh.com). Vous devez également disposer d'un hébergement web sur lequel vous allez mettre en place votre site.
+Pour mettre en ligne votre site chez OVHcloud, vous devez disposer d'un nom de domaine, qui correspondra à l'adresse depuis laquelle votre site sera accessible (exemple : ovh.com). Vous devez également disposer d'un hébergement web sur lequel vous allez mettre en place votre site. Vous pouvez également consulter ce guide : [Mettre en ligne un site internet sur son hébergement web](../mettre-mon-site-en-ligne)
 
 **Trucs et Astuces** : Pour vous aider à créer votre site internet, OVHcloud met à votre disposition des modules en 1 clic tels que Wordpress, Prestashop, Joomla ou encore Drupal. Retrouvez-les [ici](https://www.ovh.com/fr/hebergement-web/site/).external}. Vous pouvez également vous aider de [notre documentation](../modules-en-1-clic/).
 
@@ -68,7 +67,7 @@ Pour les utilisateurs experts, vous pouvez héberger plusieurs sites internet su
 Afin de corriger cela, vous devez supprimer ou renommer le fichier « index.html » mis en place par OVHcloud sur votre hébergement. 
 Il peut être intéressant de simplement le renommer afin de vous permettre de le réactiver à tout moment et de vous en servir comme page d'attente. 
 
-Autre information utile : les fichiers de votre site doivent être déposés dans le dossier « www » afin d'être pris en compte.
+**Autre information utile** : les fichiers de votre site doivent être déposés dans le dossier « www » afin d'être pris en compte.
 
 ## Aller plus loin
 

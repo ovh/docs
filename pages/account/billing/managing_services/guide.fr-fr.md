@@ -12,7 +12,7 @@ hidden: true
 
 L'espace client vous offre une gestion administrative complète de tous vos services OVH. 
 
-**Apprenez à visualiser et administrer vos solutions depuis l'interface « Gérer mes services » dans votre espace client.**
+**Apprenez à visualiser et administrer vos solutions depuis l'interface « Gérer mes services » dans votre espace client.**
 
 > [!primary]
 >
@@ -44,7 +44,7 @@ Connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/au
 
 ![manageservices](images/manage-ovh-services-step1.png){.thumbnail}
 
-La page qui apparaît affiche le tableau de gestion de vos solutions OVH. Depuis ce dernier, vous pouvez retrouver pour chaque service :
+La page qui apparaît affiche le tableau de gestion de vos solutions OVH. Depuis ce dernier, vous pouvez retrouver pour chaque service :
 
 - le nom dudit service ;
 - son nom associé chez OVH (qui peut par exemple ressembler à une référence) ;
@@ -55,7 +55,7 @@ Certains services peuvent être rattachés (comme un hébergement web et un nom 
 
 ![manageservices](images/manage-ovh-services-step2.png){.thumbnail}
 
-Si vous possédez de nombreuses solutions, le tableau peut alors comporter plusieurs pages. Utilisez les possibilités de filtrage pour :
+Si vous possédez de nombreuses solutions, le tableau peut alors comporter plusieurs pages. Utilisez les possibilités de filtrage pour :
 
 - afficher un service en particulier, en renseignant son nom dans la zone de recherche située au-dessus du tableau à droite ;
 - trier l'affichage de vos services selon plusieurs critères, en utilisant les filtres situés en haut du tableau ; 
@@ -69,7 +69,7 @@ Connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/au
 
 ![manageservices](images/manage-ovh-services-step1.png){.thumbnail}
 
-La page qui apparaît affiche le tableau de gestion de vos solutions OVH. Dès lors, si le service le permet, vous avez la possibilité de :
+La page qui apparaît affiche le tableau de gestion de vos solutions OVH. Dès lors, si le service le permet, vous avez la possibilité de :
 
 - résilier un service à sa date d'expiration ;
 - supprimer immédiatement un service ;

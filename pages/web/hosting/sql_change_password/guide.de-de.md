@@ -2,7 +2,7 @@
 title: 'Passwort einer Webhosting-Datenbank ändern'
 slug: datenbank-passwort-aendern
 excerpt: 'So ändern Sie das Passwort einer Datenbank, die im Rahmen eines Webhosting Angebots erstellt wurde.'
-section: Datenbanken
+section: 'Datenbanken'
 order: 2
 ---
 

@@ -2,7 +2,8 @@
 title: 'Configurer un groupe de sécurité'
 slug: configurer-un-groupe-de-securite
 excerpt: 'Apprenez à créer un groupe de sécurité et à le configurer sur une instance Public Cloud'
-section: Base de connaissances
+section: Gestion depuis Horizon
+order: 16
 ---
 
 **Dernière mise à jour le 08/11/2018**

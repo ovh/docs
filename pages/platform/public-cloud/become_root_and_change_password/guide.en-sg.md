@@ -6,7 +6,7 @@ legacy_guide_number: g1786
 section: 'Getting started'
 ---
 
-**Last updated 15th October 2018**
+**Last updated 2018/10/15**
 
 ## Objective
 
@@ -17,7 +17,7 @@ To perform certain administrative functions on your server (e.g. installing pack
 ## Requirements
 
 * a Public Cloud project activated
-* access to the OVH [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* access to the OVHcloud [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 

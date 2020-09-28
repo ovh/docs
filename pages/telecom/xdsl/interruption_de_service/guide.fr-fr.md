@@ -41,6 +41,8 @@ Vérifiez d'abord l'alimentation électrique de votre modem en réalisant les ma
 
 |Modem|Branchement|
 |---|---|
+|Zyxel B10D|![modemelectrique](images/zyxelb10d_power.jpg){.thumbnail}|
+|Zyxel B50B|![modemelectrique](images/zyxelb50b_power.jpg){.thumbnail}|
 |Technicolor TG789vn|![modemelectrique](images/TG789_power.png){.thumbnail}|
 |Technicolor TG799vac|![modemelectrique](images/TG799_power.jpg){.thumbnail}|
 |Technicolor TG788vn|![modemelectrique](images/TG788v1_power.png){.thumbnail}|

@@ -2,7 +2,7 @@
 title: Migration Ihrer Website und E-Mails zu OVH
 slug: migration-ihrer-website-zu-ovh
 excerpt: So migrieren Sie Ihre Website und E-Mails ohne Unterbrechung zu OVH
-section: Erste Schritte
+section: 'Erste Schritte'
 ---
 
 **Stand 16.02.2018**
@@ -37,7 +37,7 @@ Je nachdem, bei welchem Registrar Ihre Domain aktuell eingetragen ist, kann die 
 
 > [!warning]
 >
-> Einige Registrare unterbrechen die DNS Auslösung Ihrer Domain, sobald sie eine Transferanfrage einer bei ihnen eingerichteten Domain erhalten.
+> Einige Registrare unterbrechen die DNS Auflösung Ihrer Domain, sobald sie eine Transferanfrage einer bei ihnen eingerichteten Domain erhalten.
 > In dem Fall sind Ihre Domain sowie alle mit ihr verbundenen Dienste nicht länger verfügbar, darunter auch Ihre Website und E-Mail-Adressen. Daher empfehlen wir Ihnen ausdrücklich, zuerst den Registrar Ihrer Domain zu kontaktieren und sich über seine Transferbestimmungen zu informieren.
 >
 

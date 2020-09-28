@@ -11,13 +11,13 @@ section: 'RAID & disques'
 
 Le RAID (Redundant Array of Independent Disks) est un ensemble de techniques prévues pour atténuer la perte de données sur un serveur en répliquant celles-ci sur plusieurs disques.
 
-Le niveau RAID par défaut pour les installations de serveurs OVH est RAID 1, ce qui double l'espace occupé par vos données, réduisant ainsi de moitié l'espace disque utilisable.
+Le niveau RAID par défaut pour les installations de serveurs OVHcloud est RAID 1, ce qui double l'espace occupé par vos données, réduisant ainsi de moitié l'espace disque utilisable.
 
 **Ce guide va vous aider à configurer la matrice RAID de votre serveur dans l'éventualité où elle doit être reconstruite en raison d'une corruption ou d'une panne de disque.**
 
 ## Prérequis
 
-* Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external} avec une configuration RAID logiciel.
+* Posséder un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external} avec une configuration RAID logiciel.
 * Avoir accès à votre serveur via SSH en tant qu'administrateur (root).
 
 ## En pratique
@@ -263,7 +263,7 @@ mount /dev/md2 /home
 
 ## Aller plus loin
 
-* [Hot Swap – RAID Matériel](https://docs.ovh.com/fr/dedicated/hotswap-raid-hard/){.external}
-* [Hot Swap – RAID Logiciel](https://docs.ovh.com/fr/dedicated/hotswap-raid-soft/){.external}
-* [RAID Matériel](https://docs.ovh.com/fr/dedicated/raid-hard/){.external}
+* [Hot Swap – RAID Matériel](../hotswap-raid-hard/){.external}
+* [Hot Swap – RAID Logiciel](../hotswap-raid-soft/){.external}
+* [RAID Matériel](../raid-hard/){.external}
 * Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

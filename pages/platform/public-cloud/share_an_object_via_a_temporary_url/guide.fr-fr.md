@@ -2,7 +2,8 @@
 title: 'Partager un objet avec une adresse temporaire'
 slug: partager-un-objet-avec-une-adresse-temporaire
 excerpt: 'Découvrez comment partager un objet sans fournir vos informations personnelles'
-section: Base de connaissances
+section: Gestion via OpenStack
+order: 12
 ---
 
 **Dernière mise à jour le 21/01/2019**

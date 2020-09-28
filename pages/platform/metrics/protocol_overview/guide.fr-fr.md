@@ -37,11 +37,11 @@ If you're wondering which protocol to choose, here is a simple guideline :
 - You want to push json? -> `OpenTSDB`
 - You want to instrument your code? -> `Prometheus SDK` & `Beamium`
 - You want powerful analytics? -> `Warp 10™` & `WarpScript™`
-- You want BI tools integration like Tableau, Power BI, Qlik? -> `SQL`
+- You want tooling integration? ->  `InfluxDB`
 
 ### Authentification and endpoints
 
-Metrics has builtin security to secure your data. In the [Start section](../metrics_order/guide.fr-fr.md){.ref} you've learnt where to get them from the manager. We've generated a default pair of **tokens** :
+Metrics has builtin security to secure your data. In the [Start section](../order/){.ref} you've learnt where to get them from the manager. We've generated a default pair of **tokens** :
 
 - a **READ** token to Query
 - a **WRITE** token to Push Data

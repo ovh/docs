@@ -2,19 +2,21 @@
 title: Configurer un volume additionnel
 slug: configurer-un-volume-additionnel
 excerpt: Tutoriel de configuration d'un disque additionnel sur un serveur cloud dans l'offre Public Cloud
-section: Tutoriels
+section: Stockage
+order: 5
+hidden: true
 ---
 
 
 ## Préambule
-Vous avez probablement [créé un nouveau volume additionnel](../guide.fr-fr.md){.ref}, ou disque additionnel.
+Vous avez probablement [créé un nouveau volume additionnel](../){.ref}, ou disque additionnel.
 
 Ce guide vous explique comment créer un disque supplémentaire puis le rattacher sur l'une de vos instances.
 
 
 ### Prérequis
-- Une [instance](../guide.fr-fr.md){.ref}
-- Un [volume additionnel](../guide.fr-fr.md){.ref} rattaché
+- Une [instance](../){.ref}
+- Un [volume additionnel](../){.ref} rattaché
 
 
 ## Montage du disque

@@ -1,9 +1,8 @@
 ---
-title: 'Webhosting: Die Statistiken und Logs meiner Website einsehen'
+title: 'Statistiken und Logs einer Webseite einsehen'
 excerpt: Zugriff auf die Statistiken Ihrer Webseite
-id: '1344'
 slug: webhosting_die_statistiken_und_logs_meiner_website_einsehen
-legacy_guide_number: g1344
+section: 'Webseitenoptimierung'
 ---
 
 

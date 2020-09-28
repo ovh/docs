@@ -2,7 +2,8 @@
 title: Redemarrage d’une instance
 slug: redemarrage-dune-instance
 legacy_guide_number: 1771
-section: Base de connaissances
+section: Gestion depuis Horizon
+order: 9
 ---
 
 

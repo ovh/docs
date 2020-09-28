@@ -6,7 +6,7 @@ section: Bezpieczeństwo
 hidden: true
 ---
 
-**Ostatnia aktualizacja z dnia 15-11-2019**
+**Ostatnia aktualizacja z dnia 29-05-2020**
 
 ## Wprowadzenie
 
@@ -35,7 +35,7 @@ Weryfikacja dwuetapowa za pomocą systemu *one-time password* (OTP) dostępna za
 
 Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Kliknij Twoją nazwę użytkownika w prawym górnym rogu (pierwszy etap na poniższym obrazie), a następnie `Moje konto`{.action} (drugi etap). Następnie kliknij `Bezpieczeństwo`{.action} (trzeci etap) i `Aktywuj weryfikację dwuetapową `{.action} (czwarty etap).
 
-![2FA mobileapp](images/2fagen2.png){.thumbnail}
+![2FA mobileapp](images/hub2FA.png){.thumbnail}
 
 
 ### Etap 2: wybór metody za pomocą aplikacji mobilnej

@@ -7,8 +7,8 @@ order: 1
 ---
 ## Definition
 
-**Models** in a **serving engine project** refer to **HTTP API
-endpoints** that serve **machine learning models**.
+**Models** in a **ML Serving project** refer to **HTTP API endpoints**
+that serve **machine learning models**.
 
 There are two kinds of models :
 
@@ -18,7 +18,7 @@ There are two kinds of models :
 ### Preset models
 
 A preset model is a model that has already been built and added by
-OVHcloud administrators of the serving platform and is available for
+OVHcloud administrators of the ML Serving platform and is available for
 deployment on the fly.
 
 ### Serialized models
@@ -47,7 +47,7 @@ Instructions about how to export models can be found here:
 
 ## Under the hood
 
-Each model deployed inside a **serving engine namespace** is actually a
+Each model deployed inside a **ML Serving namespace** is actually a
 [docker container](https://www.docker.com/resources/what-container)
 built and pushed into the linked [docker
 registry](https://docs.docker.com/registry/) and then started inside the

@@ -1,7 +1,7 @@
 ---
 title: Manage tokens
 slug: manage-tokens
-excerpt: Learn how to manage OVHcloud Serving Engine Tokens
+excerpt: Learn how to manage OVHcloud ML Serving Tokens
 section: How to
 order: 1
 ---
@@ -9,7 +9,7 @@ order: 1
 
 ## Objective
 
-Managing a **serving engine namespace** through the **OVHcloud manager**
+Managing a **ML Serving namespace** through the **OVHcloud manager**
 make you an admin of that namespace. However you probably want to
 delegate access rights and restrictions to other people inside your
 organization.
@@ -19,7 +19,7 @@ users.
 
 ## Requirements
 
--   Having previously created a **serving engine namespace**. Steps are
+-   Having previously created a **ML Serving namespace**. Steps are
     described in section [Initializing
     namespace](../initialize-namespace)
 
@@ -27,8 +27,8 @@ users.
 
 ### Step 1 - Reach token page
 
-Inside your **serving engine namespace** page there is a dedicated tab
-for managing tokens : `Tokens`.
+Inside your **ML Serving namespace** page there is a dedicated tab for
+managing tokens : `Tokens`.
 
 ![Tokens page](images/00_token_page.png){.thumbnail}
 
@@ -55,7 +55,7 @@ will find it displayed underneath.
 ![Token created page](images/02_token_created.png){.thumbnail}
 
 You can choose to give this token to your user or use it yourself to
-interact with the **serving engine** platform.
+interact with the **ML Serving** platform.
 
 > [!warning]
 >
@@ -73,6 +73,6 @@ button and then `Regenerate`.
 
 ## Going Further
 
--   You can check the official documentation of the open source
-    **serving engine** product about
+-   You can check the official documentation of the open source **ML
+    Serving** product about
     [Tokens](https://serving-doc-mlg.ai.ovh.net/component/tokens.html)

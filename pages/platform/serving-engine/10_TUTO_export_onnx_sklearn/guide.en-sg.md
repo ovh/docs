@@ -11,18 +11,18 @@ order: 1
 
 [Scikit-learn](https://scikit-learn.org/stable/) is a popular machine
 learning library and [ONNX](https://onnx.ai/) is a serialization format
-that is supported by **OVHcloud Serving Engine**. This tutorial will
-cover how to export a [Scikit-learn](https://scikit-learn.org/stable/)
-trained model into an [ONNX](https://onnx.ai/) file.
+that is supported by **OVHcloud ML Serving**. This tutorial will cover
+how to export a [Scikit-learn](https://scikit-learn.org/stable/) trained
+model into an [ONNX](https://onnx.ai/) file.
 
 ## Requirements
 
--   A python environement with
+-   A python environment with
     [Scikit-learn](https://scikit-learn.org/stable/) installed
 
 ## Convert a simple model into ONNX
 
-Serving Engine supports `scikit-learn` models through the
+ML Serving supports `scikit-learn` models through the
 [ONNX](https://onnx.ai/) serialization format.
 
 ### Train Simple scikit-learn model
@@ -93,7 +93,7 @@ Your model is now serialized on you local file system in the
     documentation](http://onnx.ai/sklearn-onnx/index.html). For example,
     you can find information about how to serialize [a complex
     scikit-learn pipeline](http://onnx.ai/sklearn-onnx/pipeline.html)
--   You can check the [OVHcloud documention on how to deploy custom
+-   You can check the [OVHcloud documentation on how to deploy custom
     models](../deploy-serialized-models).
 -   You can check the [supported compatibilities for ONNX
     models](../compatibility-matrix)

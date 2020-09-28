@@ -5,45 +5,43 @@ excerpt: 'Découvrez comment installer le Real Time Monitoring sur Linux ou Wind
 section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 1er août 2019**
+
+**Dernière mise à jour le 24/03/2020**
 
 ## Objectif
 
-Le Real Time Monitoring (RTM) permet de surveiller partiellement votre serveur et son activité. Dans votre Espace client, vous trouverez des informations sur la CPU (unité centrale de traitement), la mémoire vive (RAM), les partitions disques, les ports ouverts, etc. Pour afficher ces informations, vous devez installer le package RTM.
+Le Real Time Monitoring (RTM) permet de surveiller partiellement votre serveur et son activité liée à des parties telles que le processeur, la mémoire vive (RAM), les partitions disques, etc. Pour afficher ces informations directement sur l’espace client d’ OVHcloud, vous devez d’abord installer le package RTM sur votre serveur.
 
 **Ce guide va vous expliquer comment installer le RTM sur Linux.**
 
 ## Prérequis
 
-- Vous devez être connecté via SSH (ou sur votre interface utilisateur graphique) sur votre serveur Linux (accès *root*)
-- Vous devez être connecté à votre [Espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Etre connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Disposer sur votre serveur, d’un accès root via SSH (ou via une interface utilisateur graphique) 
+
 
 ## Instructions
 
-Une fois RTM installé via votre Espace client, vous pouvez surveiller votre serveur dans la section `Dédié`{.action}. Sur la page principale de votre serveur, vous pouvez trouver les informations de surveillance sous `Real Time Monitoring` :
-
-![Real Time Monitoring](images/rtm.png){.thumbnail}
-
 > [!primary]
 >
-> Certaines restrictions du firewall peuvent empêcher la surveillance de votre infrastructure, même si vous avez ajouté le RTM. N’oubliez pas d’autoriser l’accès des adresses IP de surveillance OVH à votre serveur. Vous pouvez trouver plus de détails [ici](https://docs.ovh.com/fr/dedicated/monitoring-ip-ovh/){.external}.
+> Certaines restrictions du firewall peuvent empêcher la surveillance de votre infrastructure, même si vous avez ajouté le RTM. Veuillez à ne pas oublier d’autoriser l’accès au serveur afin qu’ OVHcloud surveille les adresses IP. Vous pouvez retrouver tous les détails dans [ce guide](https://docs.ovh.com/fr/dedicated/monitoring-ip-ovh/).
 > 
 
-### RTM sur Linux
-Sur les serveurs dédiés, RTM recueille les informations en continu sur le CPU, la RAM, les disques, le RAID et le matériel.
+### RTM sous Linux
 
+#### Composantes
 
-#### Composant
+Grâce à des serveurs dédiés, le RTM collecte des données en temps réel sur le processeur, la RAM, les disques, le RAID et l’ensemble du hardware.  Ci-dessous, retrouvez quelques détails sur les composantes utilisées.
 
 ##### Beamium
 
 https://github.com/ovh/beamium
 
-Beamium collecte les métriques des terminaux HTTP, telles que _http://127.0.0.1:9100/metrics_, et prend en charge les formats Prometheus Sensision. 
+Beamium collecte les métriques des terminaux HTTP comme_http://127.0.0.1:9100/metrics_, et prend en charge les formats de type Prometheus Sensision. 
 
-Une fois implémenté, Beamium peut filtrer et transférer les données vers une plateforme Warp 10™ Time Series. Lors de l’acquisition de métriques, il utilise DFO (Disk Fail Over) pour éviter d'éventuelles pertes liées à des problèmes réseau ou à un service indisponible.
+Une fois mis en œuvre, Beamium peut filtrer et transférer les données vers une plateforme Warp 10™ Time Series. Lors de la collecte des métriques, Beamium utilise DFO (Disk Fail Over) pour éviter d’éventuelles pertes liées à des problèmes de réseau ou à  l’indisponibilité d’un service.
 
-Beamium est écrit en Rust pour garantir efficacité, faible encombrement et performance.
+Beamium est écrit en Rust pour garantir efficacité, faible encombrement et haute performance.
 
 Exemple de configuration :
 
@@ -66,7 +64,7 @@ sinks:
 
 labels:
   host: hostname
-  host_type: you can add tag for server and retreive it in grafana host list
+  host_type: you can add tag for server and retrieve it in grafana host list
 
 parameters:
   source-dir: /opt/beamium/sources
@@ -75,21 +73,21 @@ parameters:
   scan-period: 60000
   log-file: /var/log/beamium/beamium.log
 ```
-Le fichier de configuration sera automatiquement remplis une fois l'installation terminée.
+La configuration s’effectuera automatiquement dès la fin de l’installation.
 
 ##### Noderig
 
 https://github.com/ovh/noderig
 
-Noderig recueille les métriques du système d'exploitation et les expose via une url HTTP (http://127.0.0.1:9100/metrics). Chaque collecteur est facilement configurable grâce à un simple curseur de niveau
+Noderig recueille les métriques d’un système d’exploitation et les publie via une url HTTP (http://127.0.0.1:9100/metrics). Chaque collecteur peut être facilement configuré grâce à un simple curseur de niveau.
 
-Métriques Noderig:
+Métriques de Noderig :
 
-* CPU
+* Processeur
 * Mémoire
-* Load
-* Disk
-* Net
+* Charge
+* Disque
+* Réseau
 * Collecteurs externes
 
 Exemple de configuration :
@@ -108,78 +106,110 @@ period: 60000
 collectors: /opt/noderig
 ```
 
-##### Rtm-binaries
+
+##### Binaires du RTM
 
 **rtmHardware** :
 
-\- Recueillir des informations sur le matériel, telles que la carte mère, les périphériques PCI, la santé du disque ... et les informations sur le logiciel, telles que la version du noyau et la version du BIOS.
+- Collecte les données  sur le hardware comme l’état de santé de la carte-mère, des périphériques PCI, du disque, etc. Il collecte également des informations sur les éléments logiciels telles que la version du noyau et celle du BIOS.
 
 **rtmHourly** :
 
-\- Recueillir des informations sur les 'top' processus, les ports ouverts, le nombre de processus en cours.
+- Collecte les informations sur les processus effectués en amont, les ports ouverts et bien d’autres processus courants.
 
 **rtmRaidCheck** :
 
-\- Vérifier la santé du raid. (si disponible)
+- Vérifie l’état de santé du RAID (s’il y en a un). 
 
-### Installation automatique de RTM
+### Installation automatique du RTM
 
-Une fois que vous vous êtes connecté via SSH sur votre serveur, exécutez simplement la commande suivante :
+Une fois connecté à votre serveur via SSH , exécutez simplement la commande suivante :
 
 ```sh
 wget -qO - https://last-public-ovh-infra-yak.snap.mirrors.ovh.net/yak/archives/apply.sh | OVH_PUPPET_MANIFEST=distribyak/catalog/master/puppet/manifests/common/rtmv2.pp bash
 ```
 > [!primary]
 > 
-> Cette installation automatique peut ne pas fonctionner sur votre distribution (en fonction de certaines dépendances) dans ce cas, veuillez procéder à une installation manuelle décrite plus bas.
+> Cette installation automatique pourrait ne pas s’effectuer sur votre distribution (elle dépend d’un certain nombre de facteurs). En cas d’erreur, veuillez passer à l’installation manuelle en suivant les instructions données ci-après.
 >
 
+### Installation manuelle du RTM
 
-### Installation manuelle de RTM sous Debian / Ubuntu
+#### Installation manuelle sur Debian/Ubuntu
 
-Ajouter rtm et le référentiel de métriques pour Debian :
-où `<distribution codename>` est le nom de votre distribution (exemple: 'jessie')
+
+##### Étape 1 : Ajoutez les référentiels de OVHcloud
+
+- grâce à **add-apt-repository**
+
+```sh
+#metrics repo
+add-apt-repository "deb http://last.public.ovh.metrics.snap.mirrors.ovh.net/$(lsb_release --id --short | tr 'A-Z' 'a-z') $(lsb_release --codename --short) main"
+# rtm repo
+add-apt-repository "deb http://last.public.ovh.rtm.snap.mirrors.ovh.net/$(lsb_release --id --short | tr 'A-Z' 'a-z') $(lsb_release --codename --short) main"
+```
+
+- par ajout manuel
+
+Sur **Debian** :
+
+`<distribution codename>` désigne le nom de votre distribution (par exemple : « buster »).
   
 ```sh
-vi /etc/apt/sources.list.d/rtm.list
+nano /etc/apt/sources.list.d/rtm.list
 #metrics repo
 deb http://last.public.ovh.metrics.snap.mirrors.ovh.net/debian <distribution codename> main
 # rtm repo
 deb http://last.public.ovh.rtm.snap.mirrors.ovh.net/debian <distribution codename> main
 ```
 
-Ajouter RTM et le référentiel de métriques pour ubuntu
-où `<distribution codename>` est le nom de votre distribution (exemple: 'xenial')
+Sur **Ubuntu** :
+
+`<distribution codename>` désigne le nom de votre distribution (par exemple : « bionic »).
   
 ```sh
-vi /etc/apt/sources.list.d/rtm.list
+nano /etc/apt/sources.list.d/rtm.list
+
+```
+Ajoutez les lignes suivantes et enregistrez le document :
+  
+```sh
 # metrics repo
 deb http://last.public.ovh.metrics.snap.mirrors.ovh.net/ubuntu <distribution codename> main
 # rtm repo
 deb http://last.public.ovh.rtm.snap.mirrors.ovh.net/ubuntu <distribution codename> main
 
 ```
-Installer la clé du référentiel :
+> [!primary]
+> 
+> Parlant des distributions actuelles, veuillez noter que tous les packages nécessaires peuvent ne pas être déjà inclus dans les référentiels des versions mises à jour de de Linus OS. Si tel est le cas, veuillez utiliser le nom de code d’une version antérieure de Ubuntu.
+>
+
+
+##### Étape 2 : Installez le apt key
 
 ```sh
 curl  https://last-public-ovh-rtm.snap.mirrors.ovh.net/ovh_rtm.pub | apt-key add -
 curl  http://last.public.ovh.metrics.snap.mirrors.ovh.net/pub.key | apt-key add -
 ```
 
-Installer les paquets RTM :
+##### Étape 3 : Installez les packages RTM
 
 ```sh
 apt-get update
 apt-get install ovh-rtm-metrics-toolkit
 ```
 
-### CentOS
+#### Installation manuelle sur CentOS
 
-Ajouter RTM et le référentiel de métriques pour CentOs :
+Ajoutez le RTM ainsi que le référentiel de métriques pour CentOS :
 
 ```sh
-vi /etc/yum.repos.d/ovh-rtm.repo
+nano /etc/yum.repos.d/ovh-rtm.repo
+```
+Ajoutez les lignes suivantes et enregistrez le document :
 
+```sh
 [rtm]
 name=OVH RTM RHEL/ CentOS $releasever - $basearch
 baseurl=http://last.public.ovh.rtm.snap.mirrors.ovh.net/centos/$releasever/$basearch/Packages/
@@ -197,22 +227,24 @@ gpgcheck=0
 gpgkey=http://last.public.ovh.metrics.snap.mirrors.ovh.net/pub.key
 ```
 
-Installer les paquets RTM :
+Installez les packages RTM :
 
 ```sh
 yum update
 yum install ovh-rtm-metrics-toolkit
 ```
 
-### FreeBSD
+#### Installation manuelle sur FreeBSD
 
-Ajouter RTM et le référentiel de métriques pour FreeBSD :
+Ajoutez le RTM ainsi que le référentiel de métriques pour FreeBSD :
 
 ```sh
-mkdir -p /usr/local/etc/pkg/repos 
+mkdir -p /usr/local/etc/pkg/repos
+nano /usr/local/etc/pkg/repos/OVH.conf
+```
+Ajoutez les lignes suivantes et enregistrez le document :
 
-vi /usr/local/etc/pkg/repos/OVH.conf
-
+```sh
 # OVH mirror
 RTM: {
   url: "http://last.public.ovh.rtm.snap.mirrors.ovh.net/FreeBSD-pkg/${ABI}/latest",
@@ -225,44 +257,41 @@ Metrics: {
   enabled: yes
 }
 ```
-Installer les paquets RTM :
+Installez les packages RTM :
 
 ```sh
 pkg install -y noderig beamium ovh-rtm-binaries
-pkg install -y ovh-rtm-metrics-toolkit
+yum install ovh-rtm-metrics-toolkit
 ```
-Démarrer les services :
+Lancez les services suivants :
+
 ```sh
-service noderig start
-service beamium start
+Lancez le service noderig
+Lancez le service beamium
 ```
 
-### Installer RTM sur Windows
+> [!primary]
+>**RTM sous Windows**
+>
+Le package RTM n’est actuellement pas compatible avec les systèmes Windows. Nous développons et améliorons sans cesse nos services ; une version pour Windows ne tardera pas à voir le jour.
+>
 
-Le paquet RTM n'est pas encore compatible pour Windows. (en cours)
 
-### Désinstaller RTMv1
+### RTM sur l’espace client d’ OVHcloud
 
-L'ancienne version de notre outil de monitoring (RTMv1) est automatiquement désinstallée lorsque vous installez cette version. 
+Une fois l’installation du RTM réussie, vous pouvez à partir de votre espace client d’ OVHcloud, visualiser la façon dont les données de votre serveur sont surveillées. (Il peut s’avérer nécessaire d’actualiser votre navigateur ou alors de vous déconnecter avant de vous reconnecter).  Rendez vous à la section `Serveur`{.action}  et sélectionnez votre serveur à partir du menu de gauche. Déroulez l’onglet `Informations générales`{.action} pour obtenir les informations sur la surveillance.
 
-#### Désinstallation manuelle de l'ancien outil de monitoring
+![Real Time Monitoring](images/rtm_panel.png){.thumbnail}
 
-Voici les étapes qui permettent de désinstaller l'ancienne version de notre outil de monitoring:
-
-- Suppression du répertoire "/usr/local/rtm":
-```sh
-rm -Rf /usr/local/rtm
-```
-
-- Suppression du crontab :
-Editer le fichier /etc/crontab et supprimer la ligne contenant "RTM"
-* la ligne ressemble à */1 * * * * root /usr/local/rtm/bin/rtm XX > /dev/null 2> /dev/null
 
 
 ## Aller plus loin
 
-[Adresses IP pour la surveillance OVH](https://docs.ovh.com/fr/dedicated/monitoring-ip-ovh/){.external}.
+[ Quelles sont les adresses IP du monitoring OVH ?
+](https://docs.ovh.com/fr/dedicated/ovh-rescue/)
 
-[Visualiser vos donnees](https://docs.ovh.com/gb/en/metrics/usecase-visualize/){.external}.
+[Visualiser vos données](https://docs.ovh.com/fr/metrics/usecase-visualize/)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+[Activer et utiliser le mode Rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/)
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.

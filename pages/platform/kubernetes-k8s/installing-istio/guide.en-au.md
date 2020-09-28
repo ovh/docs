@@ -1,7 +1,7 @@
 ---
-title: 'Installing Istio on OVHcloud Managed Kubernetes'
+title: Installing Istio on OVHcloud Managed Kubernetes
 slug: installing-istio
-excerpt: 'Find out how to install Istio on OVHcloud Managed Kubernetes'
+excerpt: Find out how to install Istio on OVHcloud Managed Kubernetes
 section: Tutorials
 order: 8
 ---
@@ -37,7 +37,7 @@ order: 8
 - Apply and enforce policies on distributes services
 - Monitor the services gathering metrics, logs and traces
 
-In this tutorial we are going to install Istio on a freshly created OVHcloud Managed Kubernetes Service cluster. You can use the *Reset cluster* function on your [OVH Cloud Manager](https://www.ovh.com/manager/cloud/){.external} to reinitialize your cluster before following this tutorial.
+In this tutorial we are going to install Istio on a freshly created OVHcloud Managed Kubernetes Service cluster. You can use the *Reset cluster* function on the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} to reinitialize your cluster before following this tutorial.
 
 
 ## Before you begin

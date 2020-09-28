@@ -3,7 +3,8 @@ title: 'Déléguer ses projets'
 slug: deleguer-ses-projets
 excerpt: 'Apprenez comment déléguer des droits techniques à d’autres comptes OVHcloud pour un projet Public Cloud'
 legacy_guide_number: 1914
-section: 'Base de connaissances'
+section: 'Gestion de projets'
+order: 8
 ---
 
 **Dernière mise à jour le 25/11/2019**
@@ -19,7 +20,7 @@ Ce guide vous explique comment procéder.
 
 ### Prérequis
 
-- 2 comptes OVH
+- 2 comptes OVHcloud
 - Un projet Public Cloud
 
 

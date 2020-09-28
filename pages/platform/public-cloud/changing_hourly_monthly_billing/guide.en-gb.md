@@ -2,7 +2,8 @@
 title: 'Switching from hourly to monthly billing'
 excerpt: 'Find out how to change the billing rate for your Public Cloud instance'
 slug: change-public-cloud-billing-rate
-section: 'Knowledge Base'
+section: Project management
+order: 4
 ---
 
 **Last updated 6th December 2019**

@@ -4,6 +4,7 @@ excerpt: 'Find out how to migrate a failover IP address to another instance'
 slug: migrating_a_failover_ip
 legacy_guide_number: g1890
 section: Networking
+order: 10
 ---
 
 **Last updated 9th April 2020**
@@ -48,8 +49,8 @@ The failover IP can be configured on the destination server before or after carr
 
 ## Go further
 
-[Configure a failover IP](https://docs.ovh.com/gb/en/public-cloud/configure_a_failover_ip)
+[Configure a failover IP](../configure_a_failover_ip)
 
-[Importing a failover IP](https://docs.ovh.com/gb/en/public-cloud/import_a_failover_ip)
+[Importing a failover IP](../import_a_failover_ip)
 
 Join our community of users on <https://community.ovh.com/en/>.

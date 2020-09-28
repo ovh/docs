@@ -20,7 +20,7 @@ To understand how this protection works, we recommend reading this page: [Unders
 
 - a domain name registered with OVH
 - The domain name concerned must have an extension compatible with DNSSEC.
-- access to the `Web`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the `Web`{.action} section of the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
@@ -32,12 +32,12 @@ DNSSEC can be activated in two ways:
 
 > [!primary]
 >
-> To check if your domain name is using the OVH DNS configuration: in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, select the domain, and go to the `DNS servers`{.action} tab.
+> To check if your domain name is using the OVH DNS configuration: in the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, select the domain, and go to the `DNS servers`{.action} tab.
 >
 
 ### Step 1: Access the domain name management section.
 
-To start with, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and go to the "Web" section. Click `Web hosting`{.action} in the services bar on the left-hand side, then choose the domain name concerned from the list.
+To start with, log in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and go to the "Web" section. Click `Web hosting`{.action} in the services bar on the left-hand side, then choose the domain name concerned from the list.
 
 The page that appears displays the general information. 
 

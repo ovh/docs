@@ -13,13 +13,13 @@ OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase 
 
 ## Requirements
 
-[How to Configure Your NIC for OVHcloud Link Aggregation in the OVH Manager](https://docs.ovh.com/gb/en/dedicated/ola-manager){.external}
+[How to Configure Your NIC for OVHcloud Link Aggregation in the OVHcloud Manager](../ola-manager){.external}
 
 ## Instructions
 
-Because we have a private-private configuration for our NICs in OLA, we will be unable to RDP into our server. Thus, we will need to leverage the IPMI tool to access it. To do so, first, log in to the [OVH Manager](https://www.ovh.com/manager/){.external}.  Then select the server you wish to configure on the left-hand sidebar and click the **IPMI** tab.
+Because we have a private-private configuration for our NICs in OLA, we will be unable to RDP into our server. Thus, we will need to leverage the IPMI tool to access it. To do so, first, log in to the [OVHcloud Manager](https://ca.ovh.com/manager/){.external}.  Then select the server you wish to configure on the left-hand sidebar and click the **IPMI** tab.
 
-![remote kvm](images/remote_kvm.png){.thumbnail}
+![remote kvm](images/remote_kvm_2020.png){.thumbnail}
 
 Next, click the **From a Java applet (KVM)** button. A JNLP program will download. Open the program once it is finished to enter the IPMI.  Log in using valid credentials for the server.
 
@@ -62,6 +62,6 @@ Click the button next to "Use the following IP address" and add your chosen priv
 To test that our NIC team is working, ping another server on the same vRack.  If it works, you are all set. If it does not, double-check your configurations or try rebooting the server.
 
 ## Conclusion
-
+:
 OVHcloud gives our customers the freedom and flexibility to leverage their hardware in the way that best fits their needs. Now that you have read this article, you should be able to configure OVHcloud Link Aggregation (OLA) in Windows Server 2019 in order to use both of your NICs as bonded private interfaces. 
 

@@ -10,7 +10,7 @@ order: 1
 
 ## Objective
 
-SSH (Secure Shell) communication protocol is natively installed on all OVH servers (VPS, dedicated servers, Public Cloud instances).
+SSH (Secure Shell) communication protocol is natively installed on all OVHcloud servers (VPS, dedicated servers, Public Cloud instances).
 
 **Learn how to use the SSH service to access your server.**
 

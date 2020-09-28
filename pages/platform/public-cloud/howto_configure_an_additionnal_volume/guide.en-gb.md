@@ -3,6 +3,7 @@ title: Configure an additional volume
 slug: configure-an-additional-volume
 excerpt: Tutorial on configuring an additional disk on a cloud server from the Public Cloud offer
 section: Tutorials
+hidden: true
 ---
 
 

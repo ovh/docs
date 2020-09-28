@@ -40,7 +40,7 @@ Afin de gérer au mieux le crédit de votre compte SMS, il est possible de fixer
 
 ### Étape 1 : créer un utilisateur API
 
-Connectez-vous à votre [espace client](https://www.ovhtelecom.fr/manager/), puis sélectionnez `Télécom`{.action} (1). Cliquez ensuite sur `SMS`{.action} à gauche (2)  puis choisissez votre compte SMS (3).
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager), puis sélectionnez `Télécom`{.action} (1). Cliquez ensuite sur `SMS`{.action} à gauche (2)  puis choisissez votre compte SMS (3).
 
 Cliquez enfin sur l'onglet `Utilisateurs API`{.action} (4).
 
@@ -101,7 +101,7 @@ Vous pouvez renseigner jusqu'à 5 adresses IP publiques différentes pour les en
 
 ![sms-users](images/smsusers06.png){.thumbnail}
 
-Pour plus d'informations sur la fonction http2sms, consultez le guide [Envoyer des SMS depuis une URL](https://docs.ovh.com/fr/sms/envoyer_des_sms_depuis_une_url_-_http2sms/).
+Pour plus d'informations sur la fonction http2sms, consultez le guide [Envoyer des SMS depuis une URL](../envoyer_des_sms_depuis_une_url_-_http2sms/).
 
 ### Étape 5 : spécifier une URL de Callback
 

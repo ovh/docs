@@ -155,7 +155,7 @@ Odczyt: Użytkownik może wykonywać zapytania typu SELECT.
 Brak: Użytkownik nie ma żadnych uprawnień do bazy danych.
 
 
-![](images/img_4389.jpg){.thumbnail}
+![](images/img_3491.jpg){.thumbnail}
 Zmiana uprawnień danego użytkownika może zająć kilka minut.
 
 

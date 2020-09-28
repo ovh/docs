@@ -2,7 +2,8 @@
 title: Terminer une instance dans Horizon
 slug: terminer-une-instance-dans-horizon
 legacy_guide_number: 1783
-section: Base de connaissances
+section: Gestion depuis Horizon
+order: 12
 ---
 
 

@@ -1,105 +1,171 @@
 ---
-title: Przewodnik dotyczący usługi GeoCache na hostingu www
-excerpt: Przewodnik dotyczący usługi GeoCache zawartej w ofercie hostingu www
+title: 'Przewodnik dotyczący usługi GeoCache na hostingu www'
+excerpt: 'Zoptymalizuj Twoją witrynę internetową, przyspieszając jej ładowanie w hostingu WWW dzięki usłudze GeoCache'
 id: '1290'
 slug: przewodnik_dotyczacy_uslugi_geocache_na_hostingu_www
-section: Optymalizacja strony WWW
+section: 'Optymalizacja strony WWW'
 ---
 
+**Ostatnia aktualizacja z dnia 19-03-2020**
 
-## 
-Zaloguj się do [panelu klienta](https://www.ovh.com/manager/web) za pomocą identyfikatora klienta i przypisanego do niego hasła.
+## Wprowadzenie
 
-Następnie wybierz hosting www w menu "Hosting".
+Jeśli chcesz poprawić doświadczenia użytkowników Twojej witryny, przyspieszając jej działanie, najskuteczniejszym sposobem będzie aktywacja usługi GeoCache. Umożliwia ona przeniesienie do pamięci podręcznej plików statycznych, takich jak obrazy, pliki CSS i JavaScript, na serwerach znajdujących się najbliżej klientów.
 
-![](images/img_2904.jpg){.thumbnail}
+**Odkryj, jak zarządzać opcją GeoCache w Twoim hostingu WWW.**
 
+## Definicja
 
-## Usuwanie treści z pamięci cache usługi GeoCache
-TTL (Time to Live = czas życia pliku w pamięci cache w punkcie PoP) to od 5 do 60 minut (czas zarządzany przez nasze serwery do optymalizacji). Po tym czasie plik jest usuwany z pamięci cache. Należy poczekać, aż użytkownik odwoła się do tego elementu, aby element ten został ponownie umieszczony w pamięci cache. 
+**Jak działa GeoCache?**
 
-Aby wymusić wymienienie pliku w pamięci cache w punkcie PoP, na przykład po wprowadzeniu zmian na stronie internetowej, należy wyczyścić cache. Należy poczekać, aż użytkownik odwoła się do tego elementu, aby element ten został ponownie umieszczony w pamięci cache. 
+GeoCache to sieć serwerów służąca do optymalizacji dostarczania treści. Wykorzystuje liczne serwery rozsiane po całym świecie, by wyświetlać Twoją witrynę WWW. Im bliżej te serwery znajdują się Twoich użytkowników, tym większa będzie szybkość ładowania Twojej witryny.
 
-Aby ręcznie wyczyścić cache w punktach PoP w sieci OVH, należy kliknąć na "Wyczyść pamięć cache usługi CDN".
+Każdy serwer przechowuje w pamięci podręcznej (cache) część Twojej witryny. Ogólnie zaleca się, by przechowywać tam tzw. pliki statyczne, czyli obrazy, pliki JavaScript i CSS, które umożliwiają prawidłowe działanie witryny, ale bardzo rzadko są modyfikowane.
 
-![](images/img_2957.jpg){.thumbnail}
+## Wymagania początkowe
 
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Posiadanie [hostingu WWW](https://www.ovh.com/fr/hebergement-web/){.external}.
 
-## Wyłączanie opcji GeoCache
-Jeśli nie chcesz korzystać z usługi GeoCache zawartej w ofercie hostingu www, możesz wybrać jedno z poniższych rozwiązań:
+## W praktyce
 
+###  Włączenie opcji GeoCache
 
-- Nie używaj adresu IP (pole A)  hostingu związanego z usługa GeoCache.
-- Zmodyfikuj plik z regułami w katalogu głównym hostingu (będzie to opisane w kolejnej sekcji).
+> [!primary]
+> 
+> Opcja GeoCache jest zawarta w ofertach hostingowych Performance.
 
+####  Jeśli Twój hosting nie zawiera usługi GeoCache
 
-Opiszemy tutaj rozwiązanie polegające na zmianie adresu IP używanego przez hosting. 
+Zaloguj się do swojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz opcję `Web`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie „Opcji GeoCache”, a następnie `Zamów GeoCache`{.action}.
 
-Przejdź do sekcji "Domeny & DNS" dla domeny głównej hostingu korzystającego z funkcji GeoCache. Kliknij na ikonkę "Strefa DNS".
+![GeoCache](images/manage_CDN_01.png){.thumbnail}
 
-Teraz należy odnaleźć "pole A" przypisane do IP typu 213.xxx.xxxx.xxx *
+Zostaniesz przekierowany do formularza zamówienia. Usługa zostanie aktywowana kilka minut po jej opłaceniu.
 
-* Jest to IP usługi GeoCache przypisane do hostingu. Aby przywrócić funkcję GeoCache, należy podać ten adres IP w tym miejscu. Lista adresów IP jest dostępna niżej.
+#### Jeśli funkcja GeoCache jest już aktywna w Twoim hostingu WWW
 
-Następnie kliknij na przycisk "Zmień" (ikonka kartki z ołówkiem) na poziomie pola A. 
+Zaloguj się do swojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz opcję `Web`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. W karcie `Multisite`{.action} kliknij ikonę koła zębatego po prawej stronie, a następnie wybierz `Zmień`{.action}.
 
-Na stronie z formularzem zobaczysz następujące pola:
+Zaznacz opcję „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
+![GeoCache](images/manage_CDN_01_02.gif){.thumbnail}
 
-- Subdomena: pole A wybrane domyślnie (nie zmieniać)
-- Wybierz adres IP: Wybierz "Hosting".
-- Wybierz hosting: wybierz domenę główną hostingu.
-- Wybierz państwo: wybierz geograficzną lokalizację IP.
+> [!warning]
+> 
+> W przypadku nazwy domeny wykupionej poza OVHcloud i dodanej w opcji Multisite w hostingu WWW, należy podać adres IP Twojego hostingu w strefie DNS dla nazwy domeny.<br>
+> Zapoznaj się z [listą adresów IP klastrów i hostingów WWW](https://docs.ovh.com/fr/hosting/liste-des-adresses-ip-des-clusters-et-hebergements-web/){.external}, aby znaleźć adres IP wykorzystywany przez usługę GeoCache w Twoim klastrze.
 
-
-Kliknij na przycisk "Zatwierdź". Adres IP zostanie zmieniony. 
-
-Lista adresów IP przypisanych do usługi GeoCache 3 PoP / 17 PoP
-
-
-W panelu klienta w zakładce "Hosting", ikonka "FTP" lub w e-mailu instalacyjnym możesz sprawdzić, na jakim klastrze znajduje się Twój hosting.
-
-
-|Cluster|bez GeoCache|3 PoP (Basic)|17 PoP (Business)|
-|002|37.187.184.2|213.186.33.2 ou 213.186.33.68|213.186.33.69|
-|003|37.187.184.4|213.186.33.4 ou 213.186.33.84|213.186.33.85|
-|005|37.187.184.16|213.186.33.16 ou 213.186.33.94|213.186.33.95|
-|006|37.187.184.17|213.186.33.17 ou 213.186.33.96|213.186.33.97|
-|007|37.187.184.18|213.186.33.18 ou 213.186.33.104|213.186.33.105|
-|010|37.187.184.19|213.186.33.19 ou 213.186.33.106|213.186.33.107|
-|011|37.187.184.40|213.186.33.40 ou 213.186.33.150|213.186.33.151|
-|012|37.187.184.48|213.186.33.48 ou 213.186.33.152|213.186.33.153|
-|013|37.187.184.24|213.186.33.24 ou 213.186.33.82|213.186.33.83|
-|014|37.187.184.87|213.186.33.87 ou 213.186.33.168|213.186.33.169|
-|015|37.187.184.3|213.186.33.3 ou 213.186.33.170|213.186.33.171|
-|017|37.187.184.50|213.186.33.50 ou 213.186.33.172|213.186.33.173|
+ 
+**Dlaczego nie mogę korzystać z geolokalizacji IP z opcją GeoCache?** <br>
+<br>
+Funkcja GeoCache wykorzystuje zasadę działania IP Anycast. Użytkownik nie łączy się z tym samym serwerem z każdej lokalizacji, lecz z najbliższym, co pozwala bardzo skutecznie skrócić czas ładowania plików statycznych. Geolokalizacja adresu IP jest więc zbędna. <br>
+Jeśli chodzi o SEO (pozycjonowanie w wyszukiwarkach), szybkość wyświetlania witryny ma większe znacznie niż geolokalizacja adresów IP w Twoim hostingu.
 
 
+### Jak przenieść pliki do pamięci cache w usłudze GeoCache?
+
+**Za pomocą systemu CMS**
+
+Istnieje wiele wtyczek do najpopularniejszych systemów CMS, które umożliwiają przeniesienie plików statycznych do pamięci cache, tak by były one automatycznie uwzględniane przez usługę GeoCache. Inne z kolei pozwalają automatycznie skonfigurować pliki statyczne, aktywując zintegrowaną z CMS-em funkcję przenoszenia plików do pamięci podręcznej. Aby uzyskać więcej informacji, zapoznaj się z oficjalną dokumentacją używanego systemu CMS lub skontaktuj się z autorem wtyczki.
+
+**Bez używania systemu CMS**
+
+Jeśli nie korzystasz z CMS-a, również możesz korzystać z usługi GeoCache. W tym celu należy dodać nagłówki do żądań HTTP. Istnieje wiele sposobów na ich dodanie. Jednym z najprostszych jest utworzenie reguł w pliku .htaccess dostosowanych do rozszerzeń plików.
+
+```htaccess
+1. # Przechowywanie obrazów w pamięci cache przez okres 1 tygodnia
+2. <FilesMatch "\.(jpg|jpeg|png|gif)$">
+3. Header set Cache-Control "max-age=604800, public"
+4. </FilesMatch>
+5. 
+6. # Przechowywanie plików JavaScript i CSS przez 1 miesiąc
+7. <FilesMatch "\.(js|css)$">
+8. Header set Cache-Control "max-age=2592000"
+9. </FilesMatch>
+```
+> [!warning]
+>
+> Przeniesienie do pamięci cache za pomocą nagłówków HTTP umożliwia przechowywanie plików nie tylko w GeoCache, ale też w przeglądarkach Twoich użytkowników. Dlatego też zaleca się zmienianie nazw plików po każdym ich uaktualnieniu, aby internauci nie oglądali nieaktualnych wersji plików znajdujących się w pamięci cache.
+> 
 
 
-## 
-Aby uzyskać dostęp do danego pliku, zaloguj się do FTP na swoim hostingu. 
 
-Możesz używać programu FileZilla.
+### Czyszczenie pamięci cache w GeoCache
+
+Czasem konieczne może okazać się usunięcie pamięci podręcznej z GeoCache, zwłaszcza po wprowadzeniu zmian w plikach statycznych. Na przykład przy publikowaniu nowej wersji swojej witryny. Należy wówczas całkowicie wyczyścić pamięć podręczną w GeoCache.
+
+Zaloguj się do swojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz opcję `Web`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie „Opcji GeoCache”, a następnie `Wyczyść pamięć cache`{.action}.
+
+![GeoCache](images/manage_CDN_02.png){.thumbnail}
+
+### Dezaktywacja opcji GeoCache
+
+To działanie pozwala wyłączyć GeoCache dla jednej lub większej liczby pozycji Multisite, nie usuwając przy tym opcji GeoCache ze swojego hostingu WWW.
+
+Zaloguj się do swojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz opcję `Web`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. W karcie `Multisite`{.action} kliknij ikonę koła zębatego po prawej stronie, a następnie wybierz `Zmień`{.action}.
+
+Usuń zaznaczenie opcji „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
+
+![GeoCache](images/manage_CDN_03.png){.thumbnail}
+
+### Usunięcie opcji GeoCache
+
+Celem tego działania jest usunięcie opcji GeoCache dla całego hostingu WWW.
+
+Zaloguj się do swojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz opcję `Web`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie „Opcji GeoCache”, a następnie `Rezygnacja z GeoCache`{.action}.
+
+![GeoCache](images/manage_CDN_04.png){.thumbnail}
+
+Kliknij `Zatwierdź`{.action}, aby potwierdzić rezygnację.
+
+> [!warning]
+>
+> Otrzymasz wiadomość e-mail z procedurą rezygnacji z GeoCache. Należy postępować zgodnie z podanymi instrukcjami, aby potwierdzić lub anulować swój wniosek. 
+> 
 
 
-## Włączanie/Wyłączanie funkcji GeoCache
-Po zalogowaniu na FTP zobaczysz katalog główny. W katalogu głównym znajdują się pliki i katalogi. Nas interesuje plik ".ovhconfig".
+### Sprawdzenie, czy GeoCache działa
 
-Pobierz ten plik na swój komputer. Otwórz plik do edycji za pomocą edytora tekstu. Zmień nazwę na ovhconfig.txt.
-
-Zmień "environment" tak, aby wymienić "production" na "development" (pisownia angielska).
-
-Zmień nazwę pliku ponownie na .ovhconfig i umieść plik w katalogu głównym na FTP zastępując aktualny plik.
-
-Aby ponownie włączyć GeoCache wystarczy ponownie zmienić parametr "environment" na "production".
-
-![](images/img_1207.jpg){.thumbnail}
-Możesz również dodać taką linię do pliku .htaccess:
+Aby upewnić się, że usługa GeoCache jest włączona dla Twojej nazwy domeny, można to sprawdzić z poziomu terminala, wpisując następujące polecenie:
 
 ```
-Header set Cache-Control "no-cache"
+curl -i http://yourpersonnaldomain.ovh/
 ```
 
+Jeśli usługa GeoCache jest włączona dla Twojej nazwy domeny, otrzymasz wynik podobny do przedstawionego poniżej:
 
+```
+HTTP/1.1 200 OK
+Date: Mon, 01 Jan 2020 00:00:00 GMT
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: SERVERID12345=123456; path=/; max-age=900
+Vary: Accept-Encoding
+X-Request-ID: 123456789
+X-CDN-Pop: rbx1
+X-CDN-Pop-IP: 00.111.22.333/44
+X-Cacheable: Cacheable
+Accept-Ranges: bytes
+Transfer-Encoding: chunked
+X-IPLB-Instance: 12345
+```
+Pozycje „*X-CDN*” stanowią potwierdzenie, że korzystasz z GeoCache.
 
+Jeśli nazwa domeny nie wykorzystuje GeoCache, otrzymasz wynik podobny do przedstawionego poniżej:
+
+```
+HTTP/1.1 200 OK
+Date: Mon, 01 Jan 2020 00:00:00 GMT
+Content-Type: text/html; charset=UTF-8
+Set-Cookie: SERVERID12345=123456; path=/; max-age=900
+Server: Apache
+X-Powered-By: PHP/7.1
+Vary: Accept-Encoding
+X-IPLB-Instance: 12345
+```
+
+Brak pozycji „*X-CDN*” oznacza, że domena nie korzysta z GeoCache.
+
+## Sprawdź również
+
+Przyłącz się do społeczności naszych użytkowników na stronie [ https://community.ovh.com/en/](https://community.ovh.com/en){.external}

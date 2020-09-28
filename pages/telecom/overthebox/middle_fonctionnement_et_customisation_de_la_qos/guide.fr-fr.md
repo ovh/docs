@@ -12,7 +12,7 @@ Il est par exemple nécessaire de prioriser le flux téléphonique par rapport �
 
 
 ## Activation de la QoS
-Afin d'activer la  **QoS**  par défaut, veuillez suivre le guide suivant : [Activer la QoS](../install_activer_la_qos/guide.fr-fr.md){.ref}
+Afin d'activer la  **QoS**  par défaut, veuillez suivre le guide suivant : [Activer la QoS](../activer-la-qos/){.ref}
 
 
 ## Customisation de la QoS

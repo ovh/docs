@@ -6,7 +6,7 @@ excerpt: If you want to give access to your logs to a software or automatize som
 section: Features 
 ---
 
-**Last updated 2nd April, 2019**
+**Last updated 23rd july, 2020**
 
 ## Objective
 
@@ -14,9 +14,9 @@ With Logs Data Platform, there are 3 ways to query your logs.
 
 - The [Graylog Web Interface](https://gra1.logs.ovh.com){.external}
 - The [Graylog API](https://gra1.logs.ovh.com/api/api-browser#!/Search/Relative){.external}
-- The [Elasticsearch API](https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html){.external} located at the port 9200 of your cluster (find its address in the **Home** Page) against your [alias](../using_kibana_with_logs/guide.fr-fr.md){.ref}.
+- The [Elasticsearch API](https://www.elastic.co/guide/en/elasticsearch/reference/current/search.html){.external} located at the port 9200 of your cluster (find its address in the **Home** Page) against your [alias](../using-kibana-with-logs){.ref}.
  
-So you can pop up a [Kibana](../using_kibana_with_logs/guide.fr-fr.md){.ref} or a [Grafana](../using_grafana_with_logs/guide.fr-fr.md){.ref} or even [a terminal Dashboard for Graylog](https://github.com/Graylog2/cli-dashboard){.external}.
+So you can pop up a [Kibana](../using-kibana-with-logs){.ref} or a [Grafana](../using-grafana-with-logs){.ref} or even [a terminal Dashboard for Graylog](https://github.com/Graylog2/cli-dashboard){.external}.
 
 All these accesses are secured by your username and password. But what if you don't want to put your Logs Data Platform credentials everywhere? You can just use tokens to access all these endpoints and revoke them anytime you want. This tutorial is here to tell you how.
 
@@ -38,13 +38,13 @@ On this page you will have the possibility to create a token and to remove them.
 
 ![token generation](images/token_generation.png){.thumbnail}
 
-Once the token is created, you can use its value and remove it:
+Once the token is created, you can use its value or remove it:
 
 ![token generated](images/token_generated.png){.thumbnail}
 
 ### Generating tokens with API
 
-One goal with token is to automatize APIs call. Sometime you even need to automatize token creation. That's why it is possible to create token by using only the OVH APIs. If you're familiar with the OVH API, it should be fairly straightforward, if you're not, this section will help you with it. Generating tokens is two API calls away. You can use the OVH API console to make theses calls.
+One goal with token is to automatize APIs call. Sometime you even need to automatize token creation. That's why it is possible to create token by using only the OVHcloud APIs. If you're familiar with the OVHcloud API, it should be fairly straightforward, if you're not, this section will help you with it. Generating tokens is two API calls away. You can use the OVHcloud API console to make theses calls.
 
 First you will have to retrieve the serviceName you want to generate token for. The API call to get your serviceName is the following:
 
@@ -189,15 +189,23 @@ For example to issue a search against the Graylog API with the token obtained ab
 
 
 ```shell-session
-$ curl -u kujg9g227qv0123mav3s0q4pra4psqsi5leka6j7lc62qdef58q:token -XGET "https://<your_cluster>.logs.ovh.com/api/search/universal/relative?query=*&range=2592000&filter=streams:a123aebc12345623aafd"
+$ curl -u kujg9g227qv0123mav3s0q4pra4psqsi5leka6j7lc62qdef58q:token -XGET "https://<your_cluster>.logs.ovh.com/api/search/universal/relative?query=*&range=300&filter=streams:a123aebc12345623aafd"
 ```
 
-Note that you have to replace the stream value in the filter parameter by the Id of your stream.
+Note that you have to replace the stream value in the filter parameter by the Graylog Id of your stream. The Graylog id can be found in the URL of your stram search page in Graylog. 
+This URL has this form: 
+
+```
+https://gra2.logs.ovh.com/streams/5ab52dc43ce3010451deacd1/search
+```
+
+The value **5ab52dc43ce3010451deacd1** is the Graylog Id of your stream. 
+
 
 To issue a search against the Elasticsearch API, you also use the same credentials.
 
 ```shell-session
-$ curl -u kujg9g227qv0123mav3s0q4pra4psqsi5leka6j7lc62qdef58q:token "https://<your_cluster>.logs.ovh.com:9200/<your_alias>/_search"
+$ curl -u kujg9g227qv0123mav3s0q4pra4psqsi5leka6j7lc62qdef58q:token "https://<your_cluster>.logs.ovh.com:9200/your_alias/_search?pretty"
 ```
 
 This call will launch a quick search (to retrieve the count and a sample of your documents) against the alias **your_alias**. Replace the alias by the one you have setup in you Logs Data Platform console. Note that these credentials are usable in place of your account credentials in Kibana and Grafana (or any tool that support Basic Authentication with Elasticsearch).
@@ -206,7 +214,8 @@ The only place you cannot use your token is the Graylog Web Interface.
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.fr-fr.md){.ref}
-- Documentation: [Guides](../product.fr-fr.md){.ref}
+- Getting Started: [Quick Start](../quick-start){.ref}
+- Documentation: [Guides](../){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+

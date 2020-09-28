@@ -3,7 +3,8 @@ title: 'Préparer l’environnement pour utiliser l’API OpenStack'
 slug: preparer-lenvironnement-pour-utiliser-lapi-openstack
 excerpt: 'Installez l''environnement OpenStack pour piloter vos instances via API'
 legacy_guide_number: 1851
-section: 'Actions via API et lignes de commande'
+section: 'Gestion via OpenStack'
+order: 1
 ---
 
 **Dernière mise à jour le 21/01/2019**

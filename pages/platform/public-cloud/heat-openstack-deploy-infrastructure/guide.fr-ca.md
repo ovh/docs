@@ -35,11 +35,11 @@ Nous vous apportons une première approche de Heat et des *stacks* représentant
 Dans notre langage, voici ce que l'on pourrait transmettre à Heat.
 
 « Mon application est composée de :
-- trois serveurs frontaux web de type [B2-15](https://www.ovh.com/ca/fr/cloud-public/instances/tarifs/){.external} ;
-- deux serveurs de base de données de type [C2-30](https://www.ovh.com/ca/fr/cloud-public/instances/tarifs/){.external} ;
+- trois serveurs frontaux web de type [B2-15]({ovh_www}/cloud-public/instances/tarifs/){.external} ;
+- deux serveurs de base de données de type [C2-30]({ovh_www}/cloud-public/instances/tarifs/){.external} ;
 - deux disques additionnels raccordés aux serveurs de base de données ;
 - l'ensemble communique via un réseau privé ;
-- le scénario de *scaling* consiste à ajouter un serveur frontal web [B2-15](https://www.ovh.com/ca/fr/cloud-public/instances/tarifs/){.external}. »
+- le scénario de *scaling* consiste à ajouter un serveur frontal web [B2-15]({ovh_www}/cloud-public/instances/tarifs/){.external}. »
 
 Suite à cela, il est possible déployer votre infrastructure complète avec une simple commande et de déclencher le scénario de *scaling* lorsque c'est pertinent.
 

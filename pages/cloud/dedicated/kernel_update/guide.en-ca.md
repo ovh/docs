@@ -9,25 +9,25 @@ section: 'Advanced use'
 
 ## Objective
 
-[OVH Dedicated Servers](https://www.ovh.com/ca/en/dedicated-servers/){.external} are easily able to boot into a Linux operating system using an updated kernel with the netboot startup system. However, it's best practice to update the kernel on the local machine.
+[OVHcloud Dedicated Servers](https://www.ovh.com/ca/en/dedicated-servers/){.external} are easily able to boot into a Linux operating system using an updated kernel with the netboot startup system. However, it's best practice to update the kernel on the local machine.
 
-**This guide will show you how to update the kernel for distributions that use an OVH core.**
+**This guide will show you how to update the kernel for distributions that use an OVHcloud core.**
 
 > [!warning]
 >
-> By default, all system snapshots offered on [OVH Dedicated Servers](https://www.ovh.com/ca/en/dedicated-servers/){.external} use an optimised OVH core. If you have replaced these snapshots with your own distribution, please refer to your distribution’s official documentation.
+> By default, all system snapshots offered on [OVHcloud Dedicated Servers](https://www.ovh.com/ca/en/dedicated-servers/){.external} use an optimised OVHcloud core. If you have replaced these snapshots with your own distribution, please refer to your distribution’s official documentation.
 >
 
 > [!primary]
 >
-> OVH provides self-managed machines that you are responsible for administering. We have no access to these machines and therefore cannot manage them. It is up to you to ensure that your machine is secured and your software is up to date.
+> OVHcloud provides self-managed machines that you are responsible for administering. We have no access to these machines and therefore cannot manage them. It is up to you to ensure that your machine is secured and your software is up to date.
 >
 > We have made this guide available to assist you in applying this update. However, we recommend that you contact a specialist provider if you are facing any issues or have any doubts about managing, using or securing your server.
 >
 
 ## Requirements
 
-- an [OVH Dedicated Server](https://www.ovh.com/ca/en/dedicated-servers/){.external}
+- an [OVHcloud Dedicated Server](https://www.ovh.com/ca/en/dedicated-servers/){.external}
 - root access to the server via SSH
 - a backup of your data (see the official documentation for your distribution)
 
@@ -52,7 +52,7 @@ uname -r
 In this case, the kernel version is  **4.09.76-xxxx-std-ipv6-64**.
 
 
-### Update the kernel using OVH packages
+### Update the kernel using OVHcloud packages
 
 On Debian-based and RedHat-based distributions, the kernel is installed using the package manager.
 
@@ -79,7 +79,7 @@ reboot
 ```
 
 
-### Update the kernel without using OVH packages
+### Update the kernel without using OVHcloud packages
 
 #### Step 1: Navigate to the correct directory
 
@@ -135,7 +135,7 @@ reboot
 
 ### Rollback
 
-In the event that you make a mistake or receive an error, it's possible to rollback your changes. To do so, the server must be placed in [Rescue mode](https://docs.ovh.com/ca/en/dedicated/rescue-mode/){.external}. This will require you to mount your system using the following commands:
+In the event that you make a mistake or receive an error, it's possible to rollback your changes. To do so, the server must be placed in [Rescue mode](../rescue-mode/){.external}. This will require you to mount your system using the following commands:
 
 ```sh
 mount /dev/md1 /mnt
@@ -196,15 +196,15 @@ uname -r
 >
 > If necessary, there are a number of tools (for example, this one: <https://github.com/speed47/spectre-meltdown-checker>) that identify if the kernel being used is vulnerable or not.
 >
-> **OVH cannot guarantee the reliability of any third-party tools and these should be used at your own risk. **
+> **OVHcloud cannot guarantee the reliability of any third-party tools and these should be used at your own risk. **
 >
 
 ## Go further
 
-[Rescue Mode](https://docs.ovh.com/ca/en/dedicated/rescue-mode/){.external}.
+[Rescue Mode](../rescue-mode/){.external}.
 
-[Information on Meltdown and Spectre  vulnerabilities](https://docs.ovh.com/fr/dedicated/information-about-meltdown-spectre-vulnerability-fixes/){.external}.
+[Information on Meltdown and Spectre  vulnerabilities](../information-about-meltdown-spectre-vulnerability-fixes/){.external}.
 
-[Update following Meltdown and Spectrum vulnerabilities by operating system](https://docs.ovh.com/fr/dedicated/meltdown-spectre-kernel-update-per-operating-system/){.external}.
+[Update following Meltdown and Spectrum vulnerabilities by operating system]../meltdown-spectre-kernel-update-per-operating-system/){.external}.
 
 Join our user community on  <https://community.ovh.com/en/>

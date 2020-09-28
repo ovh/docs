@@ -198,6 +198,12 @@ network:
             addresses:
               - "YOUR_IPV6/IPv6_PREFIX"
             gateway6: "IPv6_GATEWAY"
+            routes:
+                - to: "IPv6_GATEWAY/128"
+                  scope: link
+                - to: "::/0"
+                  via: "IPv6_GATEWAY"
+                  on-link: true
 ```
 
 > [!warning]

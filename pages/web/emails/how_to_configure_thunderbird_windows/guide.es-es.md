@@ -125,6 +125,7 @@ Los puertos 995 y 465 corresponden a la protección SSL activada.
 Es imprescindible activar la [autenticación del servidor saliente SMTP](#configuracion_de_la_cuenta_servidor_de_salida_smtp).
 
 |Puerto|SSL activado|SSL desactivado|
+|---|---|---|
 |Entrante|995|110|
 |Saliente|465|587|
 
@@ -150,21 +151,6 @@ Los puertos 993 y 465 corresponden a la protección SSL activada.
 Es imprescindible activar la [autenticación del servidor saliente SMTP](#configuracion_de_la_cuenta_servidor_de_salida_smtp).
 
 |Puerto|SSL activado|SSL desactivado|
+|---|---|---|
 |Entrante|993|143|
 |Saliente|465|587|
-
-
-
-
-## Las intervenciones de pago
-En determinadas condiciones, podemos encargarnos de configurar su cuenta en su cliente de correo electrónico a través de una intervención de pago. 
-
-OVH también puede realizar otras intervenciones relacionadas con su dirección de correo electrónico, que puede consultar en esta guía:
-
-- []({legacy}1683)
-
-
-Para solicitar una intervención de pago, consulte la guía anterior para conocer el procedimiento a seguir.
-
-![](images/img_2501.jpg){.thumbnail}
-

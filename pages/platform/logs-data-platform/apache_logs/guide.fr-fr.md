@@ -6,7 +6,7 @@ excerpt: Get to know what is happening on your websites in real time.
 section: Use cases
 ---
 
-**Last updated 10th April, 2019**
+**Last updated 27th July, 2020**
 
 ## Objective
 
@@ -31,8 +31,8 @@ This guide will present you with two non-intrusive ways to send logs to the Logs
 In order to follow this guide you will need:
 
 - The openssl package: as we are using it to send the logs securely.
-- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
-- [To create at least one Stream and get its token.](../quick_start/guide.fr-fr.md){.ref}
+- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
+- [To create at least one Stream and get its token.](../quick-start){.ref}
 
 ## Instructions
 
@@ -44,7 +44,7 @@ In order to follow this guide you will need:
 > is NOT recommended at all in production as it can block the Apache
 > process in the case of heavy traffic.
 > In production, please use a non-blocking solution like the second solution in this guide, or this one: 
-> [Shipping logs to Logs Data platform with Filebeat](../filebeat_logs/){.ref}
+> [Shipping logs to Logs Data platform with Filebeat](../filebeat-logs){.ref}
 > 
 
 
@@ -52,7 +52,7 @@ In order to follow this guide you will need:
 
 We will configure one virtual Host to send all of its logs to your stream, you will have to repeat this configuration to every stream in order to make it work.
 
-We use the CustomLog format directive to transform Apache logs in LTSV format and ship them to the Logs Data Platform with the proper OVH token. Note that 3 fields are mandatory with the LTSV format; host, message and time (in the RFC 3339 format). Refer to the examples below to learn how to fill in these fields. Please create the file **/etc/httpd/conf.d/ldp.conf** or **/etc/apache2/conf.d/ldp.conf** (it depends of your distribution) and insert the following:
+We use the CustomLog format directive to transform Apache logs in LTSV format and ship them to the Logs Data Platform with the proper OVHcloud token. Note that 3 fields are mandatory with the LTSV format; host, message and time (in the RFC 3339 format). Refer to the examples below to learn how to fill in these fields. Please create the file **/etc/httpd/conf.d/ldp.conf** or **/etc/apache2/conf.d/ldp.conf** (it depends of your distribution) and insert the following:
 
 ```ApacheConf hl_lines="1 2"
  LogFormat "X-OVH-TOKEN:XXXXXXXXXXX\tdomain:%V\thost:%h\tserver:%A\ttime:%{sec}t\tident:%l\tuser:%u\tmethod:%m\tpath:%U%q\tprotocol:%H\tstatus_int:%>s\tsize_int:%b\treferer:%{Referer}i\tagent:%{User-Agent}i\tresponse_time_int:%D\tcookie:%{cookie}i\tset_cookie:%{Set-Cookie}o\tmessage:%h %l %u %t \"%r\" %>s %b\n" combined_ltsv
@@ -60,7 +60,7 @@ We use the CustomLog format directive to transform Apache logs in LTSV format an
  ErrorLog syslog:local1
 ```
 
-Note that you will have to replace the address and the port of `<your_cluster>.logs.ovh.com` with the one you have been assigned to (Check the **Home** page to retrieve it). Ensure that the full path of openssl is correct for your system or it won't work. Also ensure that your `X-OVH-TOKEN` is properly written. This tutorial covers only how to send your access logs to the Logs Data platform. To send your Error logs, [you should configure your syslog template to send logs to Logs Data platform](../how_to_log_your_linux/guide.fr-fr.md){.ref}. Finally, check that you don't use any CustomLog option in your VirtualHost configuration since the VirtualHost configuration has precedence over global configuration.
+Note that you will have to replace the address and the port of `<your_cluster>.logs.ovh.com` with the one you have been assigned to (Check the **Home** page to retrieve it). Ensure that the full path of openssl is correct for your system or it won't work. Also ensure that your `X-OVH-TOKEN` is properly written. This tutorial covers only how to send your access logs to the Logs Data platform. To send your Error logs, [you should configure your syslog template to send logs to Logs Data platform](../how-to-log-your-linux){.ref}. Finally, check that you don't use any CustomLog option in your VirtualHost configuration since the VirtualHost configuration has precedence over global configuration.
 
 #### VirtualHost configuration
 
@@ -138,12 +138,12 @@ The configuration is pretty similar to the one used in the first part of this do
  };
 ```
 
-To keep thing brief, this extract has only the parts relevant to the access log file. [The syslog-ng tutorial](../how_to_log_your_linux/guide.fr-fr.md){.ref} covers the configuration for any syslog file (like the error log file). This configuration is only valid for syslog-ng 3.8+.
+To keep thing brief, this extract has only the parts relevant to the access log file. [The syslog-ng tutorial](../how-to-log-your-linux){.ref} covers the configuration for any syslog file (like the error log file). This configuration is only valid for syslog-ng 3.8+.
 
 
 ### Apache logs format
 
-If you want to use your own log format and include some useful information here is a cheat sheet for you (Note that the labels follows [the field naming conventions](../field_naming_conventions/guide.fr-fr.md){.ref}).
+If you want to use your own log format and include some useful information here is a cheat sheet for you (Note that the labels follows [the field naming conventions](../field-naming-conventions){.ref}).
 
 |Recommended Label|About|Format String of Apache mod_log_config|Format String of nginx log format|
 |---|---|---|---|
@@ -172,12 +172,12 @@ The full list of logs formats that can be used in Apache are described here [mod
 
 ### Using Filebeat
 
-The latest releases of **Filebeat** have a turnkey module for **Apache2**. This solution has the merit of being simple to configure but requires the presence of a logstash that we propose to host.
-The complete procedure of its installation is described [on this page](../alerting/guide.fr-fr.md){.ref}.
+The latest releases of **Filebeat** have a dedicated module for **Apache2**. This solution is ready-to-use to configure and is more production-ready.
+The complete procedure of its installation is described [on this page](../alerting){.ref} in the Apache logs use case.
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.fr-fr.md){.ref}
-- Documentation: [Guides](../product.fr-fr.md){.ref}
+- Getting Started: [Quick Start](../quick-start){.ref}
+- Documentation: [Guides](../){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

@@ -2,8 +2,9 @@
 title: 'Transférer la sauvegarde d’un volume d’un datacenter à l’autre'
 slug: transferer-la-sauvegarde-dun-volume-dun-datacentre-a-lautre
 legacy_guide_number: 1941
-section: Actions via API et lignes de commande
+section: Stockage
 excerpt: 'Apprenez à déplacer une sauvegarde de volume entre différents centres de données'
+order: 11
 ---
 
 **Dernière mise à jour le 29 mars 2019**

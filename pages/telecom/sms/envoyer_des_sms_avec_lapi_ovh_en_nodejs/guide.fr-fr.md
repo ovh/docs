@@ -6,7 +6,7 @@ legacy_guide_number: g1651
 section: 'Envoyer des SMS'
 ---
 
-**Dernière mise à jour le 04/11/2019**
+**Dernière mise à jour le 18/05/2020**
 
 ## Objectif
 
@@ -112,6 +112,19 @@ my account SMS sms-XXXXXXX-1
 
 
 On récupère bien le compte SMS (ServiceName), on obtient une réponse avec 1 crédit consommé pour un numéro valide.
+
+
+#### Taille des SMS à caractère commercial
+
+Un SMS à caractère commercial devra obligatoirement inclure la mention STOP. Celle-ci contient 11 caractères et est automatiquement déduite des 160 caractères de base du 1er SMS.
+Le tableau ci-dessous indique donc le nombre maximum de caractères autorisés pour les SMS à caractère commercial. 
+
+Exemple : en encodage 7bits, si votre message fait plus de 149 caractères, il sera envoyé en 2 SMS et coûtera donc 2 crédits.
+
+| Encodage | 1er SMS | 2ème SMS et suivants  |
+|---|---|---|
+| 7bits (norme GSM 03.38) | 149 caractères | 153 caractères |
+| Unicode | 59 caractères | 70 caractères  |
 
 
 ## Aller plus loin

@@ -2,7 +2,8 @@
 title: Getting started with NGC on OpenStack
 slug: getting_started_with_ngc
 excerpt: Use NVIDIA GPU Cloud to speed up your GPU-accelerated development
-section: Getting started
+section: OpenStack
+order: 4
 ---
 
 **Last updated 8th January 2019**
@@ -11,7 +12,7 @@ section: Getting started
 
 **The purpose of this guide is to show you how to set up your first NVIDIA GPU Cloud container instance.**
 
-The first part of the guide will be OVH specific for basic usage. The second part will be more advanced, using OpenStack client to automate NGC instance management.
+The first part of the guide will be OVHcloud specific for basic usage. The second part will be more advanced, using OpenStack client to automate NGC instance management.
 
 Quick links:
 
@@ -21,17 +22,17 @@ Quick links:
 
 ## Prerequisites
 
-* Access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager). 
+* Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). 
 
 ## Instructions
 
-<a id='via_manager'>
-### Create an NGC instance via OVH Manager
-</a>
 
-The first step will be to [create a Public Cloud project](https://docs.ovh.com/gb/en/public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project/){.external}
+### Create an NGC instance via OVHcloud Control Panel
 
-The second step will be to create an instance into the newly created project using the latest wizard. The previous wizard is documented [here](https://docs.ovh.com/gb/en/public-cloud/create_an_instance_in_your_ovh_customer_account/){.external}.
+
+The first step will be to [create a Public Cloud project](../get-started-with-a-public-cloud-instance/){.external}
+
+The second step will be to create an instance into the newly created project using the latest wizard. The previous wizard is documented [here](../create_an_instance_in_your_ovh_customer_account/){.external}.
 
 After selecting the `List`{.action} view, click on `Actions`{.action} -> `Add a server`{.action}.
 
@@ -56,17 +57,16 @@ The available flavors are `t1-45` or `t1-90` for 1 or 2 NVIDIA® Tesla® V100. F
 
 ![start_image](images/step_50.jpg)
 
-<a id='via_cli'>
 ### Create an NGC instance via the Command Line Interface
-</a>
 
-You can manage your OVH Public Cloud instances using the standard OpenStack API and tools: `terraform`, `ansible`, ...
+
+You can manage your OVHcloud Public Cloud instances using the standard OpenStack API and tools: `terraform`, `ansible`, ...
 
 For now, we'll focus on the command line client `openstack`.
 
 #### 1) Configure your local environment (one time step)
 
-You first need to create a user account as described here <https://docs.ovh.com/gb/en/public-cloud/configure_user_access_to_horizon/>
+You first need to create a user account as described [here](../configure_user_access_to_horizon/).
 
 Next, click on the `...`{.action} icon at the end of the line and then click the `Download OpenStack configuration file`{.action} link.
 

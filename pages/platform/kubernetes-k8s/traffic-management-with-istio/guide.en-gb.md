@@ -1,7 +1,7 @@
 ---
-title: 'Traffic management with Istio on OVHcloud Managed Kubernetes'
+title: Traffic management with Istio on OVHcloud Managed Kubernetes
 slug: traffic-management-with-istio
-excerpt: 'Find out how to manage traffic with Istio on OVHcloud Managed Kubernetes'
+excerpt: Find out how to manage traffic with Istio on OVHcloud Managed Kubernetes
 section: Tutorials
 order: 9
 ---

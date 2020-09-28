@@ -1,8 +1,9 @@
 ---
-title: Webhosting Verwendung von SVN
-excerpt: Subversion (kurz SVN) ist System zur zentralen Versionsverwaltung. In dieser Hilfe erfahren Sie alles über die Verwendung von SVN über den SSH-Zugang Ihres Hostings und mithilfe Ihrer öffentlichen/privaten Keys. In diesem Guide wird davon ausgegangen, dass Sie per SSH mit dem Wurzelverzeichnis Ihres Hostings verbunden sind.
+title: Verwendung von SVN mit einem Webhosting
+excerpt: Subversion (SVN) ist System zur zentralen Versionsverwaltung. In dieser Hilfe erfahren Sie alles über die Verwendung von SVN über den SSH-Zugang Ihres Hostings und mithilfe Ihrer öffentlichen/privaten Keys. In diesem Guide wird davon ausgegangen, dass Sie per SSH mit dem Wurzelverzeichnis Ihres Hostings verbunden sind.
 slug: webhosting_verwendung_von_svn
 legacy_guide_number: g1961
+section: 'FTP und SSH'
 ---
 
 

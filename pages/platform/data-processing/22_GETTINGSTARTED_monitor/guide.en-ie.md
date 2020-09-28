@@ -50,20 +50,30 @@ After you submit a job to the Data Processing platform, follow these steps to mo
 
 ![Metrics token](images/token.png){.thumbnail}
 
-- Copy the metrics token that is now displayed in the popup. 
-- Open [https://grafana.com/grafana/dashboards/11844](https://grafana.com/grafana/dashboards/11844) and copy the Grafana ID by clicking the button `Copy ID to Clipboard`{.action}
+- Copy and save the metrics token that is now displayed in the popup. 
 - Open [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login) and login with your OVHcloud account. 
-- From the main menu, click `Dashboards`{.action} -> `Import`{.action}
+- Click on the Grafana logo at the upper left corner of the page and from the main menu select `Data Sources`{.action}
+- Click on the `Add data source`{.action} button. 
+- Fill in the fields like in the pictures with the following data: 
+  - Name: Select a name for your data source (for example `My Data Source 1`). 
+  - Type: `Warp10`
+  - URL: `https://warp10.gra1.metrics.ovh.net`
+  - Access: `direct`
 
+![datasource](images/datasource.png){.thumbnail}
+
+- Click on the `Add`{.action} button. 
+- Click on the `Save & Test`{.action} button. 
+- Click on the Grafana logo at the upper left corner of the page and from the main menu select `Dashboards`{.action} -> `Import`{.action}
 ![grafana](images/grafana.png){.thumbnail}
 
-- In the import dashboard page, paste the Grafana ID that you copied before and click on the `Load`{.action} button. 
+- In the import dashboard page, inside the `Grafana.com Dashboard` textbox write `11844` and click on the `Load`{.action} button. (11844 is the ID of a Grafana template that has been created specifically for Data Processing monitoring)
 
 ![grafana import](images/import.png){.thumbnail}
 
 - Write a name for your dashboard 
-- Paste the metrics token that you copied before. 
-- For *datasource*, select `My Data Source 1`{.action} from the menu.
+- Paste the metrics token that you copied and saved before. 
+- For *datasource*, select `My Data Source 1`{.action} from the menu (Or any other name that you selected for your data source).
 - Click on the `Import`{.action} button to open your dashboard. 
 
 ![grafana import](images/import2.png){.thumbnail}

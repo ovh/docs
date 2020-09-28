@@ -1,11 +1,12 @@
 ---
-title: Managing a database on a web hosting package
+title: 'Managing a database on a web hosting package'
 slug: managing-a-database-on-a-web-hosting-package
 legacy_guide_number: 1943
+hidden: true
 ---
 
-
 ## General information
+
 A database is a collection of data that is structured and organised so that it can easily be stored and accessed. SQL is a standard language which you can use to request that a database includes, edits, restores, or deletes data.
 
 OVH's shared web hosting packages include SQL databases by default. The number and size of the database depends on the package that you have ordered. You can find more [details here](https://www.ovh.co.uk/web-hosting/){.external}.
@@ -149,16 +150,19 @@ Version: you can choose to log on to your current database or a backup which is 
 ## Recurring errors
 
 ### Can't connect to local MySQL
+
 /mysql.sock' (2)) At OVH, MySQL (on shared hosting) does not work locally but on the network. You may have incorrectly put localhost in your script configuration. Instead you have to enter "name_of_your_db.mysql.db" as the server name in your website's configuration file.
 
 
 ### Too Many Connections
+
 If you get a " **Too many connections**" error when trying to connect to MySQL, this means that all available connections are in use by other customers. The number of connections permitted is controlled by the  **max_connections**  system variable. In this case you have reached the authorised number of simultaneous connections (limited to 30). You should check that the script has closed all your SQL connections correctly after each request.
 
 
 ## Other actions
 
 ### Import a dump (backup)
+
 How do I import my MySQL database backup? What different methods are there?
 
 There is a guide available: [here](https://docs.ovh.com/gb/en/hosting/web_hosting_guide_to_importing_a_mysql_database/){.external}

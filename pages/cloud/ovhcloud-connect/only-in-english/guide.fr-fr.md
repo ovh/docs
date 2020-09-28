@@ -1,8 +1,9 @@
 ---
-title: OVHcloud Connect
+title: Documentation OVHcloud Connect
 slug: only-in-english
 excerpt: Disponible en anglais uniquement
 section: Concepts
+hidden: true
 ---
 
 ## Disponible en anglais uniquement.

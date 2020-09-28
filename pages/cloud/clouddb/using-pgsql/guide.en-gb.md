@@ -12,13 +12,9 @@ Do you want to use PostgreSQL? Learn how to easily manage your databases!
 
 ### Prerequisites
 
+- A CloudDB instance
+- To have viewed [the CloudDB guide](../getting-started-with-clouddb/)
 
-> [!primary]
->
-> To follow this tutorial you need:
-> - A CloudDB instance
-> - To have viewed the CloudDB guide: docs/cloud/clouddb/debuter-avec-clouddb
->
 
 ### What is a PostgreSQL database?
 PostgreSQL is an object-relational database management system (ORDBMS). It's a reliable and extensible system, which can manipulate large volumes of data. It also has a very active community.
@@ -42,7 +38,7 @@ To log in to your database, make sure that you have:
 
 All this information is available in the [Web Control Panel](https://www.ovh.com/manager/web/){.external}.
 
-There is also a guide here: [](debuter-avec-clouddbguide.en-gb.md){.ref}
+There is also a guide here: [Getting started with the CloudDB service](../starting_with_clouddb/guide.en-gb.md){.ref}
 
 
 ### Connect via the command line

@@ -24,7 +24,7 @@ Ils ont choisi de partager une infographie qui explique le trajet d’un e-mail 
 
 ![Logo du calendrier de l'avent](images/email_traject.png){.thumbnail}
 
-L’envoi d’e-mails depuis l’interface est une opération coûteuse en temps, ce qui rallonge le temps de la requête lorsqu’une page doit envoyer plusieurs e-mails. Pour cela, il est conseillé de rendre asynchrones ces opérations afin d’accélérer le site web. Pour cela, vous pouvez utiliser le  [mécanisme de tâches planifiées](../day15/guide.fr-fr.md){.ref} que nous verrons demain.
+L’envoi d’e-mails depuis l’interface est une opération coûteuse en temps, ce qui rallonge le temps de la requête lorsqu’une page doit envoyer plusieurs e-mails. Pour cela, il est conseillé de rendre asynchrones ces opérations afin d’accélérer le site web. Pour cela, vous pouvez utiliser le  [mécanisme de tâches planifiées](../day15/){.ref} que nous verrons demain.
 
 À demain !
 

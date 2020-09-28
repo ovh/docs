@@ -10,3 +10,4 @@ sections: 'Premiers pas, Fonctionnalités des adresses e-mail, Configuration sur
 > ### Migration
 >
 > - [Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](https://docs.ovh.com/fr/microsoft-collaborative-solutions/migration-adresse-e-mail-mutualisee-vers-exchange/)
+> 

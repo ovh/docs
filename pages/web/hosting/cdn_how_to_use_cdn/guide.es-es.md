@@ -1,6 +1,6 @@
 ---
-title: 'Guía de uso del acelerador GeoCaché en un alojamiento web'
-excerpt: 'Guía de uso del acelerador GeoCaché incluido con los planes de web hosting.'
+title: 'Acelerar un sitio web utilizando la CDN'
+excerpt: 'Cómo acelerar la carga de un sitio web en el alojamiento utilizando el servicio CDN'
 slug: guia_de_uso_del_acelerador_geocache_en_un_alojamiento_web
 legacy_guide_number: g1290
 section: 'Optimización del sitio web'

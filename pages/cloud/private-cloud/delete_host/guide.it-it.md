@@ -6,7 +6,7 @@ legacy_guide_number: '1442308'
 section: 'Funzionalità OVH'
 ---
 
-**Ultimo aggiornamento: 05/12/2018**
+**Ultimo aggiornamento: 24/07/2020**
 
 ## Obiettivo
 
@@ -16,7 +16,7 @@ In alcuni casi eliminare un server host può risultare utile, ad esempio per res
 
 ## Prerequisiti
 
-* Disporre di una soluzione [Private Cloud](https://www.ovh.it/private-cloud/){.external}
+* Disporre di una soluzione [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external}
 * Avere accesso all’interfaccia di gestione vSphere
 
 
@@ -28,35 +28,35 @@ La rimozione di un server host si svolge in due step: l’attivazione della moda
 
 Una volta effettuata la connessione a vSphere, accedi all’inventario dei tuoi server host e cluster. Seleziona il server host interessato con un semplice click con il tasto destro del mouse e poi scegli `Maintenance Mode`{.action} e `Enter Maintenance Mode`{.action}. Nel caso in cui siano presenti macchine virtuali (VM) in funzione su questo server host, saranno automaticamente salvate su un altro server all’interno del tuo cluster (modalità HA e DRS attivate).
 
-![Attivazione della modalità manutenzione](images/hostmaintenancemode.png){.thumbnail}
+![Attivazione della modalità manutenzione](images/removehost01.png){.thumbnail}
 
 Nella finestra di dialogo, conferma il passaggio in modalità manutenzione cliccando su `OK`{.action}.
 
-![Conferma della modalità manutenzione](images/confirmmaintenanceMode.png){.thumbnail}
+![Conferma della modalità manutenzione](images/removehost02.png){.thumbnail}
 
 
 Puoi seguire lo stato di avanzamento dell’operazione nell’area **Recent Tasks**.
 
-![Controllo della modalità Maintenance](images/taskmaintenancemode.png){.thumbnail}
+![Controllo della modalità Maintenance](images/removehost03.png){.thumbnail}
 
 
 ### Rimuovi il server host
 
-Una volta che il server è in modalità manutenzione, fai un click con il tasto destro del mouse e seleziona `OVH Private Cloud`{.action}, poi clicca su `Remove OVH Host`{.action}. 
+Una volta che il server è in modalità manutenzione, fai un click con il tasto destro del mouse e seleziona `OVHcloud`{.action}, poi clicca su `Remove this host`{.action}. 
 
-![Rimuovere l’host](images/removeovhhost_01.png){.thumbnail}
+![Rimuovere l’host](images/removehost04.png){.thumbnail}
 
 Nella nuova finestra, conferma la rimozione cliccando su `Next`{.action}.
 
-![Conferma della rimozione](images/removeovhhost_02.png){.thumbnail}
+![Conferma della rimozione](images/removehost05.png){.thumbnail}
 
 La richiesta di rimozione è adesso in fase di elaborazione.
 
-![Convalida della rimozione](images/removeovhhost_03.png){.thumbnail}
+![Convalida della rimozione](images/removehost06.png){.thumbnail}
 
 Puoi seguire lo stato di avanzamento della rimozione del server host nell’area **Recent Tasks**.
 
-![Controllo dell’attività di rimozione](images/taskremovehost.png){.thumbnail}
+![Controllo dell’attività di rimozione](images/removehost07.png){.thumbnail}
 
 Il server host verrà rimosso entro pochi minuti e non sarà più visibile. 
 
@@ -68,4 +68,4 @@ Il server host verrà rimosso entro pochi minuti e non sarà più visibile.
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

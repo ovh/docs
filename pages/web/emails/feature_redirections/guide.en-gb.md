@@ -7,17 +7,17 @@ section: 'Email address features'
 order: 2
 ---
 
-**Last updated 12th March 2020**
+**Last updated 20th May 2020**
 
 ## Objective
 
-In this guide, you will find information and support on how to configure email redirections, e.g. redirecting emails received from address A to address B.
+In this guide, you will find information and support on how to configure email redirections, such as redirecting emails received from address A to address B.
 
 ## Overview 
 
 ### What is an email redirection?
 
-You can use redirections to redirect an email received by a first email address, sending it to one or more other email addresses.
+You can use redirections to redirect an email received by one email address, sending it to one or more other email addresses.
 
 For example, you may want emails sent to **public@mydomain.com** to be redirected to **private@otherdomain.com**. This means you can provide the first address to the sender (**public@mydomain.com**), without having to give them your real address (**private@otherdomain.com**).
 
@@ -35,18 +35,18 @@ There are two types of redirection:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
-- An MX Plan solution, available as part of our [web hosting plans](https://www.ovh.co.uk/web-hosting/){.external}, the [free Start 10M hosting plan](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml){.external}, or ordered separately as a standalone solution
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- an MX Plan solution, available as part of our [Web Hosting plans](https://www.ovh.co.uk/web-hosting/), the [free Start 10M hosting plan](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml), or ordered separately as a standalone solution
 
 ## Instructions
 
-Depending on the date your MX Plan solution was activated and if [it was recently migrated](https://www.ovh.co.uk/mxplan-migration/){.external}, you will be using either the legacy version or the new version of the solution. Before you proceed, you will need to check which version you are using. 
+Depending on the date your MX Plan solution was activated and if [it was recently migrated](https://www.ovh.co.uk/mxplan-migration/), you will be using either the legacy version or the new version of the solution. Before you proceed, you will need to check which version you are using. 
 
-To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and open the `Web`{.action} section. Click `Emails`{.action} in the services bar on the left-hand side, then choose the name of the plan concerned. Continue with the next steps, depending on which version you own.
+To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)}, and open the `Web`{.action} section. Click `Emails`{.action} in the services bar on the left-hand side, then choose the name of the plan concerned. Continue with the next steps, depending on which version you own.
 
 |MX Plan legacy version|MX Plan new version|
 |---|---|
-|![email](images/mxplan-starter-legacy.png){.thumbnail}<br> Find the solution in the "Subscription" box.|![email](images/mxplan-starter-new.png){.thumbnail}<br>Locate the `Server model` in the "Summary" box.|
+|![email](images/mxplan-starter-legacy.png){.thumbnail}<br> Find the solution in the "Plan" box.|![email](images/mxplan-starter-new.png){.thumbnail}<br>Locate the `Server reference` in the "Summary" box.|
 |Continue to [Legacy version of the MX Plan solution](./#legacy-version-of-the-mx-plan-solution)|Continue to [New version of the MX Plan solution](./#new-version-of-the-mx-plan-solution_1)|
 
 ### MX Plan legacy version
@@ -84,15 +84,15 @@ Then click `Confirm`{.action} to add this redirection.
 
 For the new version of MX Plan, redirections are not managed via the OVHcloud Control Panel. They are managed directly via the webmail platform for the email address concerned.
 
-Go to the webmail platform [here](https://www.ovh.co.uk/mail/){.external}. Enter the **email address** and **password** to log in.
+Go to the webmail platform [here](https://www.ovh.co.uk/mail/). Enter the **email address** and **password** to log in.
 ![emails](images/webmail.png){.thumbnail}
 
 #### Step 1: Access the section for managing redirections.
 
-Once you have logged in via the [webmail platform](https://www.ovh.co.uk/mail/){.external}, click on the cogwheel icon in the top right-hand corner, then `Options`{.action}.
+Once you have logged in via the [webmail platform](https://www.ovh.co.uk/mail/), click on the cogwheel icon in the top right-hand corner, then `Options`{.action}.
 
 ![emails](images/mxplan-new-1.png){.thumbnail}
-From the **Options** window in the left-hand corner, go to the **Automatic processing** category in the **Mail** section, then click `Mailbox and storage rules`{.action}. 
+From the **Options** window in the left-hand corner, go to the **Automatic processing** category in the **Mail** section, then click `Inbox and sweep rules`{.action}. 
 
 ![emails](images/mxplan-new-2.png){.thumbnail}
 
@@ -100,7 +100,7 @@ In this window, you can manage redirections and apply filters on all incoming em
 
 #### Step 2: Add a redirection.
 
-Once you have opened the window for managing **Mailbox rules**, click on the `+`{.action} icon on the top left-hand corner.
+Once you have opened the window for managing **Inbox rules**, click on the `+`{.action} icon on the top left-hand corner.
 ![emails](images/mxplan-new-3.png){.thumbnail}
 
 In this window, you can define the rules necessary for creating a redirection:
@@ -108,17 +108,17 @@ In this window, you can define the rules necessary for creating a redirection:
 |Information|Description| 
 |---|---|  
 |Name |Set a name for your redirection (box 1).|  
-|When an email is received and meets all of these conditions| If you want your redirection to apply to all emails, click **\[Apply to all emails]** (box 2).|
-|Perform the following operations|This is where you apply the redirection. Select **Transfer, redirect or send**, then **Redirect email to...** (box 3). Next, type in the email address you would like to redirect emails to in **Redirect email to...**, then click `Save`{.action} (box 4).|
+|When an email is received and meets all of these conditions| If you want your redirection to apply to all emails, click **\[Apply to all messages]** (box 2).|
+|Perform the following operations|This is where you apply the redirection. Select **Forward, redirect or send**, then **Redirect the message to...** (box 3). Next, type in the email address you would like to redirect emails to in **Redirect the message to...**, then click `Save`{.action} (box 4).|
 
 
 ![emails](images/mxplan-new-4.png){.thumbnail}
 
-In our example, we are setting a **redirection with a local copy** (see [diagram 2](./#overview){.external} at the beginning of this guide). If this is what you need, click `OK`{.action} (floppy disk icon) in the top left-hand corner, and the rule will be applied. If you do not want to do this, skip to the next step.
+In our example, we are setting a **redirection with a local copy** (see [diagram 2](./#overview) at the beginning of this guide). If this is what you need, click `OK`{.action} (floppy disk icon) in the top left-hand corner, and the rule will be applied. If you do not want to do this, skip to the next step.
 
 
 
-To apply a **simple redirection** ([diagram 1](./#overview){.external} at the beginning of this guide), add an extra rule to your **redirection with a local copy** in this window. Click `Add an action`{.action} (box 1), then **Move, copy or delete** — then **delete email**. This rule directly moves the email into the trash folder, once the email has been redirected to the redirection email address.
+To apply a **simple redirection** ([diagram 1](./#overview) at the beginning of this guide), add an extra rule to your **redirection with a local copy** in this window. Click `Add an action`{.action} (box 1), then **Move, copy or delete** — then **delete the message**. This rule directly moves the email into the trash folder, once the email has been redirected to the redirection email address.
 
 ![emails](images/mxplan-new-5.png){.thumbnail}
 

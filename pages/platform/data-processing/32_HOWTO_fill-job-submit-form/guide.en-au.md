@@ -12,20 +12,19 @@ order: 2
 
 This guide will help you to understand the different parameters that you can set when submitting a new job to the Data Processing platform
 
-In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external} to use the Data Processing platform. 
+In this guide, we are assuming that you're using the [OVHcloud Manager](https://ca.ovh.com/auth/?action=gotomanager){.external} to use the Data Processing platform. 
 
 To read an introduction about Data Processing service you can visit [Data Processing Overview](../overview){.external}.
 
 ## Requirements 
 
-- Access to the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Access to the [OVHcloud Manager](https://ca.ovh.com/auth/?action=gotomanager){.external}
 - An OVHcloud account 
 - A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details.)
-
-Your application must be uploaded into a container in your Object Storage. During the Beta, and for the Spark engine, your application can either be :
-
-- a JAR file, if you're using Java or Scala
-- Python files and a yaml requirement file (in Conda format), if your job is in Python
+- Your application must be uploaded into a container in your Object Storage.
+- For the Spark engine, your application can either be :
+  - a JAR file, if you're using Java or Scala
+  - Python files and a yaml requirement file (in Conda format), if your job is in Python
 
 ## Instructions
 
@@ -37,7 +36,7 @@ To submit your job with your required parameters follow these steps:
 - Select the relevant project if you have multiple projects in your OVHcloud account.
 - Select `Data Processing`{.action} from the left panel. 
 - Select `Submit a new job`{.action}
-- Select the processing engine you want to use (**Spark** is the only option during the Beta). 
+- Select the processing engine you want to use. 
 - Go to the next step by clicking on the `Next`{.action} button.
 
 ![Data Processing Engine](images/engine.png){.thumbnail}
@@ -52,7 +51,7 @@ In this step you will have to select the region in which you would like your Dat
 
 An OVHcloud Data Processing job being executed in a distributed environment, you will have to specify the amount of resources you would like your job to use. The resources you will have to specify are going to depend on the engine you selected previously.
 
-During the Beta, the only engine supported is Apache Spark, so the resources you will have to specify are going to be:
+For the Apache Spark Engine, the resources you will have to specify are:
 
 - Resources for each executor nodes
 - Resources for the masters nodes
@@ -85,6 +84,10 @@ For Apache Spark, for example, you will also have to :
 - Finally, click on the `Submit Job`{.action} button and your application will be sent to the Data Processing platform and should start shortly after that.
 
 ![Data Processing Engine](images/configure.png){.thumbnail}
+
+> [!warning]
+> The arguments of the application are stored in plain text. It is advised that you store your credentials in configuration files instead of using arguments in the Manager. You need to upload the configuration files in the same Object Storage container that you upload the code so they will be downloaded to the data processing cluster together when you submit the job. 
+
 
 ## Go further
 

@@ -23,7 +23,7 @@ Individua il tuo database in versione 4. Il Nome utente e l'Indirizzo del server
 
 Se non ricordi più la password del tuo database, clicca sull'icona a forma di ingranaggio e clicca su Modifica la password.
 
-![](images/img_3774.jpg){.thumbnail}
+![](images/3774.png){.thumbnail}
 
 
 ## Come fai ad accedere al tuo database SQL 4?
@@ -35,7 +35,7 @@ o
 
 
 
-![](images/img_3775.jpg){.thumbnail}
+![](images/3775.png){.thumbnail}
 Nell'interfaccia [phpmyadmin](https://phpmyadmin.ovh.net/old/), inserisci le tue credenziali:
 
 - Nome utente = l'utente del database (riquadro blu dell'immagine)
@@ -88,7 +88,7 @@ Una finestra pop-up ti chiederà di confermare l'operazione.
 
 L'eliminazione definitiva del tuo databse richiede 10-15 minuti.
 
-![](images/img_3776.jpg){.thumbnail}
+![](images/3776.png){.thumbnail}
 
 
 ## Come creare il tuo database MySQL 5.5?

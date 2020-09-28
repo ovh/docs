@@ -1,18 +1,20 @@
 ---
-title: 'CMS, manually install WordPress'
+title: 'Installing WordPress manually'
 excerpt: How to manually install WordPress
-id: '1977'
 slug: cms_manually_install_wordpress
 legacy_guide_number: g1977
+section: 'CMS'
 ---
 
 
 ## Part 1: preparing for installation
 
-## [b]Necessary tools[/b]
+## Necessary tools
+
 To install the WordPress platform on your shared hosting package, we advise you to get an FTP program such as FileZilla (free).
 
 ## Necessary credentials
+
 Make sure that you have your customer ID (nic-handle) and password so you can log in to your OVH customer account if necessary.
 
 

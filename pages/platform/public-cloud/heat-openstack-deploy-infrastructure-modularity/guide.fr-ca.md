@@ -9,14 +9,14 @@ section: L'orchestration avec Heat d'OpenStack
 
 ## Objectif
 
-Nous avons vu dans le guide intitulé « [Déployer une infrastructure simple avec Heat d'OpenStack](https://docs.ovh.com/ca/fr/public-cloud/deployer-infrastructure-avec-heat-openstack/){.external} » comment utiliser Heat pour créer des *stacks* simples et les manipuler. Nous allons à présent voir comment aller plus loin en utilisant des paramètres dans ces *stacks*.
+Nous avons vu dans le guide intitulé « [Déployer une infrastructure simple avec Heat d'OpenStack](../deployer-infrastructure-avec-heat-openstack/){.external} » comment utiliser Heat pour créer des *stacks* simples et les manipuler. Nous allons à présent voir comment aller plus loin en utilisant des paramètres dans ces *stacks*.
 
 **Apprenez comment formater la sortie pour utiliser les informations des ressources déployées.**
 
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager).
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
 - Avoir créé un projet Cloud Public.
 - Posséder un compte utilisateur OpenStack.
 - Savoir manipuler un fichier YAML.

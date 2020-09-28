@@ -1,9 +1,11 @@
 ---
-title: 'Webhosting: Alles über die Datei .htaccess'
+title: 'Alles über die Datei .htaccess'
 excerpt: Auf dieser Seite finden Sie die verschiedenen Anleitungen zur .htaccess-Datei
 id: '1967'
 slug: webhosting_alles_uber_die_datei_htaccess
 legacy_guide_number: g1967
+section: 'Weiterleitung und Authentifizierung'
+hidden: true
 ---
 
 
