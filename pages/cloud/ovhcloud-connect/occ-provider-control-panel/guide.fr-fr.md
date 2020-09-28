@@ -94,7 +94,7 @@ Vous devez également ajouter une configuration de routage.
 
 ##### **Ajout d'une configuration de routage**
 
-Cliquez sur le bouton `(...)`{.action} sur le Datacentre voulu puis sur `Ajouter configuration de routage`{.action}.
+Cliquez sur le bouton `(...)`{.action} sur le datacentre voulu puis sur `Ajouter configuration de routage`{.action}.
 
 ![ajout datacentre](images/l3dc2.png){.thumbnail}
 
@@ -120,7 +120,7 @@ Si vous choisissez le type « Static », saisissez les informations requises :
 
 ![ajout datacentre](images/l3dc4.png){.thumbnail}
 
-Vous pouvez ajouter plusieurs configurations de routage au sein d'un même Datacentre. Le type de configuration (BGP ou Static) choisi sur votre première configuration s'appliquera alors aux suivantes sur le même Datacentre.
+Vous pouvez ajouter plusieurs configurations de routage au sein d'un même datacentre. Le type de configuration (BGP ou Static) choisi sur votre première configuration s'appliquera alors aux suivantes sur le même Datacentre.
 
 ![ajout datacentre](images/l3dc6.png){.thumbnail}
 
