@@ -50,10 +50,10 @@ order: 1
 
 | Description | Detail | Cause | Workaround | Affected sites |
 |:-----:|:------:|:-----:|:----------:|:--------------:|
-| BGP Session rejected | Error message "Bad AS" and NeighborID is configured in 169.254.0.0/16 range | Bug identified with device vendor | Change NeighborID | DC: RBX, SBG, GRA, LIM; PoP: PAR-TH2, PAR-GSW, PAR-PA3, FRA-FR5 |
-| DC routes not propagated to PoP | When using AS65501, routes announced using BGP in vRack are not propagated to PoP | OVHcloud internal configuration | Do not use AS65501 | ALL |
-| ECMP not working | When ECMP is configured on a single PoP with 2 or more links, traffic is not load-balanced for a given destination | Limitation | Divide destination with more specific prefixes | ALL PoPs |
-| Light received but port is down | Device fails to change interface status to UP despite optical levels on RX are correct | Autonegotiation is configured | Unconfigure autonegotiation | ALL PoPs |
+| BGP Session rejected | Error message "Bad AS" and NeighborID is configured in 169.254.0.0/16 range | Bug identified with device vendor | Change NeighborID | DC: RBX, SBG, GRA, LIM; POP: PAR-TH2, PAR-GSW, PAR-PA3, FRA-FR5, LON-THW, WAS-DC5 |
+| DC routes not propagated to POP | When using AS65501, routes announced using BGP in vRack are not propagated to POP | OVHcloud internal configuration | Do not use AS65501 | ALL |
+| ECMP not working | When ECMP is configured on a single POP with 2 or more links, traffic is not load-balanced for a given destination | Limitation | Divide destination with more specific prefixes | ALL POP |
+| Light received but port is down | Device fail to change interface status to UP despite optical levels on RX are correct | Autonegotiation is configured | Unconfigure autonegotiation | ALL POP |
 
 ## Go further
 
