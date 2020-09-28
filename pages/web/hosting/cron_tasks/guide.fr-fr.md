@@ -46,7 +46,7 @@ Pour créer une tâche cron, cliquez sur le bouton `Ajouter une planification`{.
 |Option|Description|   
 |---|---|   
 |Commande à exécuter|Définissez le chemin d'accès au fichier contenant votre script. Exemple : www/jobs/cron.php|   
-|Language|Sélectionnez la version PHP utilisée par le script ou choisissez "Autre".|
+|Language|Sélectionnez la version PHP utilisée par le script ou choisissez « Autre ».|
 |Activation|Choisissez si la tâche sera active après sa création ou activée ultérieurement.| 
 |Logs par e-mail|Si nécessaire, sélectionnez un contact (administrateur ou technicien) auquel un rapport sera envoyé en cas d'erreur d'exécution. Vous pouvez également fournir une autre adresse de messagerie.| 
 |Description|Saisissez une description pour suivre l'exécution de vos tâches.| 
@@ -83,32 +83,32 @@ La tâche sera prête dans quelques minutes. Vous pouvez alors modifier tous ses
 
 |Étape|Description|
 |---|---|
-|Planification horaire|Vous remarquerez que le champ "Minutes" est désactivé dans l'interface (défini par « ? » dans la vue *crontab*). Une tâche ne peut être exécutée qu'une fois par heure, c'est la fréquence de répétition la plus faible qui peut  être spécifiée.|
+|Planification horaire|Vous remarquerez que le champ "Minutes" est désactivé dans l'interface (défini par « ? » dans la vue *crontab*). Une tâche ne peut être exécutée qu'une fois par heure, c'est la fréquence de répétition la plus faible pouvant être spécifiée.|
 |Durée|La durée d'exécution d'une tâche est de 60 minutes. Si un script dépasse cette durée d'exécution, il sera automatiquement arrêté par le système.|
 |Variables|Vous ne pouvez définir que des variables dans un script. Les ajouter à l'URL appelant le script ne fonctionnera pas (Exemple : www/jobs/cron.php?variable=value).|
 |Limite de données|Une tâche ne peut générer que 5 Mo de données (*stdin/stderr*). Par exemple, si un script écrit des données dans un fichier .txt, l'exécution s'arrête automatiquement lorsque le fichier atteint 5 Mo.|
-|Scripts produisant des erreurs|Si un script est défectueux, il sera automatiquement désactivé après 10 tentatives d'exécution ayant échoué. Réactivez-la simplement dans le Panneau de configuration. (Cliquez sur `...`{.action}, puis `Modifier`{.action}.)|
+|Scripts produisant des erreurs|Si un script est défectueux, il sera automatiquement désactivé après 10 tentatives d'exécution ayant échoué. Réactivez-le simplement dans le Panneau de configuration. (Cliquez sur `...`{.action}, puis `Modifier`{.action}.)|
 |Rapports d'exécution|Les rapports ne seront envoyés à l'adresse électronique sélectionnée qu'une fois par jour (pendant les heures de nuit).|
 
 ### Dépannage
 
 #### Test de votre script avec un navigateur Web
 
-Un test simple pour voir si votre script produira une erreur est de l'exécuter dans un navigateur Web. Par exemple, si le chemin d'accès de votre script est "www/cron.php" et que votre domaine d'hébergement est "mypersonaldomain.ovh", vous devez utiliser l'URL "http://<i></i>mypersonaldomain.ovh/cron.php". Si aucune erreur ne s'affiche mais que le script ne fonctionne pas comme prévu, suivez les suggestions ci-dessous.
+Un test simple pour voir si votre script produira une erreur est de l'exécuter dans un navigateur Web. Par exemple, si le chemin d'accès de votre script est « www/cron.php » et que votre domaine d'hébergement est « mypersonaldomain.ovh », vous devez utiliser l'URL « http://<i></i>mypersonaldomain.ovh/cron.php ». Si aucune erreur ne s'affiche mais que le script ne fonctionne pas comme prévu, suivez les suggestions ci-dessous.
 
 #### Vérification de l'utilisation des chemins absolus
 
-Veillez toujours à utiliser des chemins d'accès absolus aux fichiers de vos scripts. La constante "DIR", par exemple, peut aider à recevoir le chemin courant dans les scripts PHP ([documentation PHP](https://www.php.net/manual/fr/language.constants.predefined.php)).
+Veillez toujours à utiliser des chemins d'accès absolus aux fichiers de vos scripts. La constante « DIR », par exemple, peut aider à recevoir le chemin courant dans les scripts PHP ([documentation PHP](https://www.php.net/manual/fr/language.constants.predefined.php)).
  
 #### Vérification des logs d'éxecution
 
-Dans [les logs]  de votre hébergement Web, accessibles depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, vous verrez la catégorie de log intitulée "cron".
+Dans [les logs]  de votre hébergement Web, accessibles depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, vous verrez la catégorie de log intitulée « cron ».
 
-Consulter notre guide [« Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée »](../mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#logs_1) pour plus de détails.
+Consultez notre guide [« Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée »](../mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#logs_1) pour plus de détails.
 
 ##### **Exemple de logs**
 
-- Exemple de fin de script corretement exécuté 
+- Exemple de fin de script correctement exécuté 
 
 ```
 [2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
@@ -135,6 +135,7 @@ Consulter notre guide [« Consulter les statistiques et les logs de mon site hé
 ```
 
 - Exemple d'échec en raison d'une erreur d'autorisation (chmod) ou d'une configuration incorrecte du fichier .ovhconfig
+
 ```
 [2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
 [2020-08-11 18:07:10]
