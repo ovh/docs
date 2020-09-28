@@ -3,32 +3,32 @@ title: Installation of OVHcloud Connect Direct from the OVHcloud Control Panel
 excerpt: Find out how to set up your OVHcloud Connect Direct solution via the OVHcloud Control Panel
 slug: occ-direct-manager-setup
 section: Getting started
-order: 1
+order: 3
 ---
 
-**Last updated 28/09/2020**
+**Last updated 28th September 2020**
 
 ## Objective
 
 With OVHcloud Connect, you can link your company network to your private OVHcloud vRack network, without creating a VPN tunnel through the internet. This will give you a quicker, more stable connection with guaranteed bandwidth. 
 
-**This guide will show you how to set up the OVHcloud Connect Direct solution via the OVHcloud Control Panel**
+**This guide will show you how to set up the OVHcloud Connect Direct solution via the OVHcloud Control Panel.**
 
 ## Requirements
 
-- an OVHcloud Connect Direct [solution](https://www.ovh.com/fr/solutions/ovhcloud-connect/) {.external}
-- an OVHcloud [vRack](https://www.ovh.com/fr/solutions/vrack/)
+- an OVHcloud Connect Direct [solution](https://www.ovh.co.uk/solutions/ovhcloud-connect/){.external}
+- an OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
-Log in to [the OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} Control Panel, click `Server`{.action} in the top left-hand corner, then select the `Network`{.action} tab. Click on `OVHcloud Connect`{.action}, then click on your solution.
+Log in to [the OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} Control Panel, click `Server`{.action} in the top navigation bar, then select `Network`{.action} from the left-hand menu. Click on `OVHcloud Connect`{.action}, then click on your solution.
 
 ![ovhcloud connect selection](images/occ01.png){.thumbnail}
 
 ### Attach a vRack
 
-You will need to link a vRack to your solution first. Click the `Associate vRack`{.action} button and select an existing vRack from the drop-down menu. 
+You will need to link a vRack to your solution first. Click the `Attach a vRack`{.action} button and select an existing vRack from the drop-down menu. 
 
 ![vRack association](images/vrack01.png){.thumbnail}
 
@@ -58,7 +58,7 @@ The L2 configuration will then be enabled in the two `PoP configuration` menus.
 
 #### Configuration L3 
 
-Once you have connected your vRack, click `Add a PoP configuration`{.action} and select the L3 configuration from the dropdown menu.
+Once you have connected your vRack, click `Add a PoP configuration`{.action} and select the L3 configuration from the drop-down menu.
 
 ![adding PoP L3](images/pop1.png){.thumbnail}
 
@@ -66,7 +66,7 @@ You will then need to enter the following:
 
 | Information    | Description |
 |:-------:|:------:|
-| Customer ASN    | Your  AS BGP number, which is configured on your router located in the PoP |
+| Customer ASN    | Your AS BGP number, which is configured on your router located in the PoP |
 | OVHcloud ASN    | The OVHcloud AS number that will be configured on the OVHcloud Connect routers located in the PoP |
 | Subnetwork in /30    | A size /30 IPv4 block, used for the link between your router and the OVHcloud Connect router located in the PoP |
 
@@ -78,27 +78,27 @@ The `PoP configuration` menu will then appear.
 
 You can also add a second PoP L3 configuration via the second `PoP configuration` menu.
 
-### Step 3: adding a datacentre configuration
+### Step 3: Adding a data centre configuration
 
 #### Configuration 
 
-When your PoP configuration is active, click `Add a configuration`{.action} under the `DC configuration` menu. Select a datacentre from the dropdown menu and confirm.
+When your PoP configuration is active, click `Add a configuration`{.action} under the `DC configuration` menu. Select a data centre from the drop-down menu and confirm.
 
 ![add datacentre](images/l2dc1.png){.thumbnail}
 
 ![add datacentre](images/l2dc1-1.png){.thumbnail}
 
-The datacentre configuration will then begin.
+The DC configuration will then begin.
 
 ![add datacentre](images/l2dc1-2.png){.thumbnail}
 
 #### Configuration L3 
 
-When your PoP configuration has been set, click `Add a configuration`{.action} under the `DC configuration` Configuration menu. 
+When your PoP configuration has been set, click `Add a configuration`{.action} under the `DC configuration` menu. 
 
 ![add datacentre](images/l3dc0.png){.thumbnail}
 
-Select a datacentre from the dropdown menu, then enter the information required. 
+Select a data centre from the drop-down menu, then enter the information required. 
 
 | Information    | Description |
 |:-------:|:------:|
@@ -107,7 +107,7 @@ Select a datacentre from the dropdown menu, then enter the information required.
 
 ![add datacentre](images/l3dc1.png){.thumbnail}
 
-You can add additional datacentre configurations by clicking on the `...`{.action} button, then `Add a configuration`{.action}.
+You can add additional data centre configurations by clicking on the `...`{.action} button, then `Add a configuration`{.action}.
 
 ![add datacentre](images/l3dc1-1.png){.thumbnail}
 
@@ -115,7 +115,7 @@ You must also add a routing configuration.
 
 ##### **Add a routing configuration**
 
-Click on the `(...)`{.action} button on the desired datacentre then on `Add routing configuration`{.action} .
+Click on the `(...)`{.action} button on the desired data centre then on `Add routing configuration`{.action} .
 
 ![add routing configuration](images/l3dc2.png){.thumbnail}
 
@@ -137,17 +137,17 @@ If you choose the Static type, enter the required information:
 | Information    | Description |
 |:-------:|:------:|
 | Network Focus    | A prefix using CIDR notation |
-| Nexthop    | An IP address acting as gateway in the subnetwork range |
+| Next hop    | An IP address acting as gateway in the subnetwork range |
 
 ![add routing configuration](images/l3dc4.png){.thumbnail}
 
-You can add multiple routing configurations within the same datacentre. The configuration type (BGP or Static) chosen for your first routing configuration will then apply to the next configuration on the same datacentre.
+You can add multiple routing configurations within the same data centre. The configuration type (BGP or Static) chosen for your first routing configuration will then apply to the next configuration on the same data centre.
 
 ![add routing configuration](images/l3dc6.png){.thumbnail}
 
 ### Deletion of vCenter resources
 
-Each resource (PoP or DC) can be deleted individually, but deleting a parent resource such as DC or POP will automatically delete all the subresources.
+Each resource (PoP or DC) can be deleted individually, but deleting a parent resource such as DC or PoP will automatically delete all the subresources.
 
 Recursive removal is slower than sequential removal of each resource.
 
@@ -155,7 +155,7 @@ Recursive removal is slower than sequential removal of each resource.
 > If a DC configuration is shared between two or more OVHcloud Connect services, removing the PoP configuration from a single OVHcloud Connect service will not affect the DC resource.
 >
 
-#### Deleting a Routing Configuration
+#### Deleting a routing Configuration
 
 To delete a routing configuration, click the `...`{.action} button on the routing configuration to delete, then click `Delete`{.action}.
 
