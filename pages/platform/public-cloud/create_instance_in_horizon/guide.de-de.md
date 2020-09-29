@@ -2,7 +2,7 @@
 title: 'Eine Instanz über das Horizon-Interface erstellen'
 excerpt: 'So erstellen Sie eine Instanz über das Horizon-Interface'
 slug: erstellung_einer_instanz_in_horizon
-section: 'Über das Horizon-Interface'
+section: 'Horizon'
 legacy_guide_number: g1772
 ---
 
