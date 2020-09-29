@@ -132,7 +132,7 @@ Sie haben IPv6 konfiguriert, aber es funktioniert dennoch nicht?
 
 Mit einem einfachen Mittel lässt sich herausfinden, ob der Fehler in der durchgeführten Konfigurierung, oder im Netzwerk von OVHcloud liegt.
 
-Zunächst [stellen Sie Ihre Instanz auf den Rescuemodus "rescue-pro" um](https://docs.ovh.com/de/public-cloud/umstellung_einer_instanz_auf_den_rescue-modus/).
+Zunächst [stellen Sie Ihre Instanz auf den Rescuemodus "rescue-pro" um](../umstellung_einer_instanz_auf_den_rescue-modus/).
 
 Nutzen Sie nun die nachfolgenden Befehle, um Ihre IP-Adresse nicht-persistent zu konfigurieren, wobei Sie die Platzhalter mit Ihren Spezifikationen ersetzen:
 
