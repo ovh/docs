@@ -2,6 +2,7 @@
 title: Änderung der Größe einer Instanz
 excerpt: Änderung der Größe einer Instanz in Horizon
 slug: nderung_der_groe_einer_instanz
+section: 'Horizon'
 legacy_guide_number: g1778
 ---
 
