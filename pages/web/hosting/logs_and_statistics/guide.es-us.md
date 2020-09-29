@@ -9,14 +9,14 @@ section: Optimización del sitio web
 
 
 ## Conexión al área de cliente
-Conéctese al [área de cliente](hhttps://ca.ovh.com/auth/?action=gotomanager) con su ID de cliente y contraseña.
+Conéctese al [área de cliente](https://www.ovh.com/manager/web/) con su ID de cliente y contraseña.
 
 Seleccione el dominio para el que quiera consultar las estadísticas, en la sección «Alojamientos» del menú de la izquierda.
 
-![estadísticas](images/img_2827.jpg){.thumbnail}
+![](images/img_2827.jpg){.thumbnail}
 A continuación, haga clic en la pestaña «Más +» y seleccione «Estadísticas y logs».
 
-![estadísticas](images/img_2826.jpg){.thumbnail}
+![](images/img_2826.jpg){.thumbnail}
 
 
 ## Acceso a la página de Estadísticas y logs
@@ -45,7 +45,7 @@ Una vez en la página de estadísticas, puede elegir entre dos posibilidades:
 
 
 
-![estadísticas](images/img_2832.jpg){.thumbnail}
+![](images/img_2832.jpg){.thumbnail}
 
 
 ## Urchin 6
@@ -88,7 +88,7 @@ El recorrido del sitio web:
 
 
 
-![estadísticas](images/img_1490.jpg){.thumbnail}
+![](images/img_1490.jpg){.thumbnail}
 
 
 ## Logs brutos
@@ -109,11 +109,11 @@ Hay distintos tipos de logs:
 
 - SSH: Conexiones realizadas con el protocolo SSH.
 
-- Cron: Resultado de la ejecución de las distintas [tareas planificadas](https://docs.ovh.com/es/hosting/web_hosting_tareas_automatizadas_cron/).
+- Cron: Resultado de la ejecución de las distintas [tareas planificadas](http://guias.ovh.es/CompartidoCron).
 
 
 
-![estadísticas](images/img_2828.jpg){.thumbnail}
+![](images/img_2828.jpg){.thumbnail}
 
 
 ## ¿Es posible utilizar Urchin en español?
