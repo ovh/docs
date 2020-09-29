@@ -60,15 +60,15 @@ Nous supportons la fibre optique mono-mode pour modules SFP/SFP+ compatible soit
 
 Une offre OVHcloud Connect doit d'abord être livrée avant de pouvoir être configurée.
 
-Une solution OVHcloud Connect Provider sera livrée dès que la *clé de service* sera envoyée au client par e-mail. Cet e-mail sera envoyé quelques minutes après la finalisation de la commande du service correspondant.
+Une solution OVHcloud Connect Provider sera livrée dès que la *clé de service* (Service Key) sera envoyée au client par e-mail. Cet e-mail sera envoyé quelques minutes après la finalisation de la commande du service correspondant.
 
 Une solution OVHcloud Connect Direct est considérée comme livrée dans les cas suivants :
 
 - La lumière indiquant la connexion à l'équipement du client est visible du côté de OVHcloud.
-- La lumière est éteinte mais 60 jours se sont écoulés depuis la commande.
+- 60 jours se sont écoulés depuis la commande.
 - Le client a explicitement demandé une livraison manuelle auprès des services OVHcloud.
 
-Après la commande du service, le client recevra une Letter of Authorization (LOA) de OVHcloud pour permettre au client d'effectuer l'interconnexion avec l'infrastructure OVHcloud. Cette interconnexion déclenchera alors la livraison en fonction des cas susmentionnés.
+Une fois la commande finalisée, OVHcloud fournira au client une Lettre d'autorisation (LOA) pour lui permettre d'effectuer l'interconnexion avec l'infrastructure OVHcloud.
 
 ## Aller plus loin
 
