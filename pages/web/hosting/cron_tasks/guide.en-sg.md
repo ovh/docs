@@ -1,203 +1,153 @@
 ---
-title: 'Hosting: Automated tasks/Cron'
-excerpt: 'Hosting: Automated tasks/Cron'
-id: '1990'
+title: 'Using automated tasks on a Web Hosting plan'
+excerpt: 'Find out how to configure scheduled jobs on your Web Hosting'
 slug: hosting_automated_taskscron
 legacy_guide_number: g1990
+section: 'Automated tasks (CRON)'
 ---
 
-**Last updated 5th May 2020**
+**Last updated 22th September 2020**
 
-## Create an automated task
-Select your platform under hosting in the left-hand column (1), then click on the "More +" tab and finally on "Scheduled tasks - Cron" (2) "Add a scheduling" (3).
+## Objective
 
-![cron1](images/3261.png){.thumbnail}
-For the first stage, you have to enter the command to be executed and the programming language. You can choose to receive your Cron task execution logs via email at a predefined email address. 
+On OVHcloud Web Hostings, you can use scripts to automate certain operations. Creating a scheduled task ("cron job") is the easiest way to ensure your scripts are running at specific times without further actions necessary on your part. 
 
+**This guide explains how to create cron jobs to automate scheduled tasks on a Web Hosting.**
 
-- This email will only be sent to you if there is an error.
+> [!warning]
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>
 
+## Requirements
 
-You can also provide a description for your Cron job.
-
-![cron2](images/3262.png){.thumbnail}
-Secondly you have to set the frequency of the task.
-
-![cron3](images/3264.png){.thumbnail}
-There are two modes: simple mode and advanced mode.
-
-![cron4](images/3265.png){.thumbnail}
-Once you have chosen your task's settings a summary will appear. 
+- an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) with the necessary permissions to manage the Web Hosting plan 
 
 
-- If the information is correct, just click confirm.
+## Instructions
+
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, navigate to the `Scheduled jobs - Cron`{.action} tab by selecting it in the `More +`{.action} submenu.
+
+In this section you will see an overview of your scheduled jobs and their settings.
+
+![cron control panel](images/cron-jobs-1.png){.thumbnail}
+
+### Creating an automated task
+
+#### Step 1: Defining general settings
+
+To create a new cron task, click on the `Add a scheduling`{.action} button on the right-hand side. You can customise the settings for the task in the new window.
+
+![adding scheduling](images/cron-jobs-2.png){.thumbnail}
+
+|Option|Description|   
+|---|---|   
+|Command to be executed|Define the path to the file containing your script. Example: www/jobs/cron.php|   
+|Language|Select the PHP version the script is using or choose "Other".|
+|Activation|Choose whether the task will be active after creation or activated later.| 
+|Logs by email|If necessary, select a contact (admin or technical) to whom a report will be sent in case of an execution error. You can also provide an alternative email address.| 
+|Description|Enter a description to keep track of what your tasks do.| 
+
+Click on `Next`{.action} to proceed to the second step.
+
+#### Step 2: Setting the frequency
+
+The interface offers two modes to configure the frequency of your task. Use the **Basic mode** for a beginner-friendly selection of scheduling options. If you prefer to directly enter a frequency, similar to a cron table format (*crontab*), choose the **Advanced mode**.
+
+|Basic mode|
+|---|
+|Use the drop-down menus to specify the time of day, days of a month, week days and months for the task.|
+|![cron frequency](images/cron-jobs-3.png){.thumbnail}|
+
+|Advanced mode| 
+|---|
+|Enter numeric values as you would in a *crontab*. The asterisk operator denotes "every value" of the time period, meaning the task would continuously run **once an hour every day** in this example.|
+|![cron frequency](images/cron-jobs-4.png){.thumbnail}|
+
+You can switch between the two modes during configuration to view the changes accordingly. Please also note the [limitations when scheduling a task on a Web Hosting](./#limitations-of-web-hosting-tasks_1).
+
+![cron control panel](images/cron-jobs-5.gif){.thumbnail}
+
+#### Step 3: Finishing the setup
+
+The summary lists all your settings including the *crontab* notation of the execution frequency. If everything is correct, click on `Confirm`{.action}.
+
+![cron confirmation](images/cron-jobs-6.png){.thumbnail}
+
+The task will be ready within a few minutes. You can then modify all of its settings or delete the task by clicking on `...`{.action} in the overview table in your OVHcloud Control Panel.
 
 
+### Limitations of Web Hosting tasks
 
-![cron5](images/3266.png){.thumbnail}
-A message will appear to tell you that your task will be available in a few minutes.
-
-![cron6](images/3267.png){.thumbnail}
-
-
-## Modifying an automated task
-Select your platform under hosting in the left-hand column (1), click on the "More+" tab and finally on "Scheduled tasks - Cron" (2). Click on the pencil (3) corresponding to the automated task that you wish to modify.
-
-![cron7](images/3268.png){.thumbnail}
-At this point you can modify the command to be executed and the programming language, enable email logs and add a description to your Cron job.
-
-![cron8](images/3269.png){.thumbnail}
+|Step|Description|
+|---|---|
+|Hourly scheduling|You might notice that the field for "Minutes of the hour" is disabled in the interface (set to "?" in the *crontab* view). A task can only be executed once an hour as the highest repetition frequency and the minute of execution cannot be specified.|
+|Running time|The time limit for a task is 60 minutes. If a script exceeds this running time, it will be stopped automatically by the system.|
+|Variables|You can only define variables in a script. Adding them to the URL calling the script will not work (Example: www/jobs/cron.php?variable=value).|
+|Data limit|A task can only generate up to 5 MB of data (*stdin/stderr*). For example, if a script writes data into a .txt file, the execution will be stopped automatically once the file reaches 5 MB in size.|
+|Scripts producing errors|If a script is faulty, it will be automatically disabled after 10 failed execution attempts. Simply re-activate it in the Control Panel. (Click on `...`{.action}, then on `Edit`{.action}.)|
+|Execution reports|Reports will be sent to your selected email address only once a day (during night hours).|
 
 
-## Delete an automated task
-Select your platform under hosting in the left-hand column (1), click on the "More+" tab and finally on "Scheduled tasks - Cron" (2). Click on the trash icon next to the automated job which you want to delete
+### Troubleshooting
 
-![cron9](images/3270.png){.thumbnail}
-A summary of what you have chosen to delete will appear. If this is correct just click confirm.
+#### Testing your script with a web browser
 
-![cron10](images/3271.png){.thumbnail}
+A simple test to see if your script will produce an error is to run it in a web browser. For example, if the file path of your script is "www/cron.php" and your hosting domain is "mypersonaldomain.ovh", you would use the URL "http://<i></i>mypersonaldomain.ovh/cron.php". If no error is showing up but the script is not performing as expected, follow up with the suggestions below.
 
+#### Verifying the usage of absolute paths
 
-## Test how your automated task will run with a web browser
-You can test your script directly from your internet browser to see if this is causing an error. 
-For example, if your Cron is in the www/cron.php directory and your domain name is test.com, you would type the URL http://test.com/cron.php.
-In order to optimise the test, your version of PHP should be the same as the one you provided when creating your automated task.
-If you have an error, you have to correct your script. If no error has been detected, we suggest that you check the logs linked to the execution of your Cron jobs.
+Always make sure to use absolute paths to files in your scripts. The "DIR" constant, for example, can help to receive the current path in PHP scripts ([PHP documentation](http://php.net/manual/en/language.constants.predefined.php)).
+ 
+#### Checking your execution logs
 
+In your Web Hosting's logs, accessible from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), you will see the log category labelled "cron".
 
-## View execution logs for your automated task
-Select your platform under hosting in the left-hand column then click "More +".
+Please refer to [this guide](../shared_view_my_websites_logs_and_statistics/) for details.
 
-![cron11](images/4012.png){.thumbnail}
-Then click on the link to access "Logs" and statistics.
+##### **Example logs**
 
-![cron12](images/4013.png){.thumbnail}
-If your automated tasks were executed over the day, you can view the execution logs in the OVHcloud Speed Log (1).
-
--> If your task was executed over 24 hours ago, select the log file for the month that you wish to view.
-
-![cron13](images/3274.png){.thumbnail}
-Example execution logs for an automated task:
-
-
-```
-[2015-06-04 10:39:03] ## OVH ## START - 2015-06-04 10:39:03.700912 executing: /usr/local/php5.6/bin/php /homez.600/loginftp/www/cron.php
-[2015-06-04 10:39:03] Could not open input file: /homez.600/loginftp/www/cron.php
-[2015-06-04 10:39:03]
-[2015-06-04 10:39:03] ## OVH ## END - 2015-06-04 10:39:03.762685 exitcode: 1
-```
-
-
-In this case, the following line from the log demonstrates that my automated task has not run correctly because the path to the script is incorrect or does not exist:
-
-
-```
-Could not open input file: /homez.600/loginftp/www/cron.php
-```
-
-
-## Limitations
-
-- In shared hosting, you cannot specify the minute that you want the task to run. In addition the task can only be executed once an hour. 
-
-- Tasks cannot run for longer than 60 minutes
-
-- You can only generate up to 5 MB of data  (stdin/stderr)
-
-
-## Automated tasks with variables
-It is not possible to set a path containing variables, for automated tasks.
-
-Example:
-
-```
-/www/cron.php?variable=test
-```
-
-- You can however define these variables in your script.
-
-
-## Use of absolute paths
-
-To make sure that your Cron job works, you have to use absolute paths in your script not relative paths.
-To get the address of the current path you can use the "_DIR_" constant:  
-[PHP documentation](http://php.net/manual/en/language.constants.predefined.php)
-
-
-## Execution report
-
-Only one Cron job execution report is sent daily. This is sent in the night.
-
-
-## Calling another script
-
-If the script used by your Cron task uses other scripts, you must use an absolute path for this to work. The absolute path for your hosting begins with:
-
-
+- Example of a successfully finished execution output
 
 ```
-/home/loginFTP/
+[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
+[2020-08-11 00:36:01] 
+[2020-08-11 00:36:01] ## OVH ## END - 2020-08-10 22:39:44.086166 exitcode: 0
 ```
 
-
-
-
-## If there is an execution error
-If there is an error with your Cron job it will be disabled after 10 failed execution attempts.
-
-
-## Example logs
-Correct script execution:
+- Example of a failed execution output due to exceeded execution time
 
 ```
-# OVH ## START - 2014-12-23 15:34:12.680711 executing: /homez.600/loginftp/test/run.sh
-I am the client and I'm printing stuff with this nice 'echo' feature.
+[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
 
-# OVH ## END - 2014-12-23 15:34:13.056472 exitcode: 0
+[2020-08-11 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
+[2020-08-11 01:36:01] ## OVH ## END - 2020-08-11 01:36:01.086166 exitcode: 0
 ```
 
-
-Execution script error because the file could not be found:
-
-```
-# OVH ## START - 2014-12-23 15:36:16.206693 executing: /homez.600/loginftp/test/idontexist.sh
-# OVH ## ERROR command '/homez.600/loginftp/test/idontexist.sh' not found
-
-# OVH ## END - 2014-12-23 15:36:16.546574 exitcode: 255
-```
-
-
-Script execution error following timeout:
+- Example of a failed execution output because the script file was not found in the specified path
 
 ```
-# OVH ## START - 2014-12-23 16:05:52.233058 executing: /homez.600/loginftp/test/sleep.sh
-tuesday 23 december 2014, 16:05:52 (UTC+0100)
-Now sleeping 9000 sec
+[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
 
-# OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
-# OVH ## END - 2014-12-23 17:05:54.690413 exitcode: 0
+[2020-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
+[2020-08-11 00:36:01] ## OVH ## END - 2020-08-11 00:36:01.086166 exitcode: 255
 ```
 
-
-Script execution error following excessive data output:
-
-```
-# OVH ## START - 2014-12-23 15:43:27.606083 executing: /homez.600/loginftp/test/echoer.sh
-[...a lot of logs here...]
-# OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: cron output (9288634 bytes) exceeds maximum permitted (5242880 bytes)
-# OVH ## END - 2014-12-23 15:43:50.999934 exitcode: 255
-```
-
-
-Script execution error because of a permissions error (chmod) or incorrect configuration of the .ovhconfig file:
+- Example of a failed execution output because of a permissions error (chmod) or incorrect configuration of the .ovhconfig file
 
 ```
-[2015-01-08 18:07:10]
-[2015-01-08 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason. Please contact customer support for more information.
-[2015-01-08 18:07:10] ## OVH ## END - 2015-01-08 18:07:10.969840 exitcode: 255
+[2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
+[2020-08-11 18:07:10]
+[2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
 ```
 
 
 ## Go further
+
+[Configuring the .ovhconfig file of your Web Hosting plan](../configuring-file-ovhconfig/)
+
+[Using SSH on a Web Hosting plan](../web_hosting_ssh_on_web_hosting_packages/)
 
 Join our community of users on <https://community.ovh.com/en/>.
