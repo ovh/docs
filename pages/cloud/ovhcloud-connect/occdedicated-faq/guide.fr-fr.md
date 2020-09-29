@@ -1,7 +1,7 @@
 ---
 title: FAQ
-slug: occdedicated-faq
-excerpt: 'Les FAQ sur l’offre OVHcloud Connect Dedicated'
+slug: ovhcloudconnect-faq
+excerpt: 'Les FAQ sur l’offre OVHcloud Connect'
 section: Premiers pas
 order: 4
 ---
@@ -56,6 +56,20 @@ OVHcloud n'héberge pas de matériel réseau pour les clients dans ses datacente
 ### Quelles connectiques sont supportées par OVHcloud Connect ?
 
 Nous supportons la fibre optique mono-mode pour modules SFP/SFP+ compatible soit 1000LX/LH (1Gb/s) soit 10G-LR (10Gb/s).
+
+### Quand mon offre OVHcloud Connect sera-t-elle livrée et disponible pour la configuration ?
+
+Une offre OVHcloud Connect doit d'abord être livrée avant de pouvoir être configurée.
+
+Une solution OVHcloud Connect Provider sera livrée dès que la *clé de service* sera envoyée au client par e-mail. Cet e-mail sera envoyé quelques minutes après la finalisation de la commande du service correspondant.
+
+Une solution OVHcloud Connect Direct est considérée comme livrée dans les cas suivants :
+
+- La lumière indiquant la connexion à l'équipement du client est visible du côté de OVHcloud.
+- La lumière est éteinte mais 60 jours se sont écoulés depuis la commande.
+- Le client a explicitement demandé une livraison manuelle auprès des services OVHcloud.
+
+Après la commande du service, le client recevra une Letter of Authorization (LOA) de OVHcloud pour permettre au client d'effectuer l'interconnexion avec l'infrastructure OVHcloud. Cette interconnexion déclenchera alors la livraison en fonction des cas susmentionnés.
 
 ## Aller plus loin
 

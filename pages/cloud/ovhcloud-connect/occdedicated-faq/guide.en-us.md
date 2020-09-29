@@ -1,14 +1,14 @@
 ---
 title: FAQ
-slug: occdedicated-faq
-excerpt: 'FAQ about the OVHcloud Dedicated Connect solution'
+slug: ovhcloudconnect-faq
+excerpt: 'FAQ about the OVHcloud Connect solution'
 section: Getting started
 order: 4
 ---
 
 **Last updated 14th September 2020**
 
-## OVHcloud Dedicated Connect FAQ
+## OVHcloud Connect FAQ
 
 ### What is the OVHcloud Connect solution designed for?
 
@@ -55,6 +55,20 @@ OVHcloud does not host network hardware for customers in data centres and PoPs. 
 ### What connections are supported for OVHcloud Connect?
 
 We support single-mode fibre optic. Your SFP/SFP+ must support either 1000LX/LH or 10G-LR.
+
+### When will my OVHcloud Connect service be delivered and available for configuration?
+
+An OVHcloud Connect service has to be delivered first before it can be configured.
+
+OVHcloud Connect Provider solutions will be delivered as soon as the *service key* is sent to the customer by email. This happens a few minutes after subscribing to the corresponding service.
+
+OVHcloud Connect Direct solutions are considered delivered in the following cases:
+
+- The light indicating the connection to the customer's equipment is visible on OVHcloud's side.
+- The light is off but 60 days have passed since the the subscription.
+- The customer has explicitly arranged a manual delivery with their OVHcloud agent.
+
+After having subscribed, the customer will receive a Letter of Authorization (LOA) from OVHcloud to allow the customer to perform the cross-connection with OVHcloud's infrastructure. This cross-connection will then trigger the delivery based on the above mentioned cases.
 
 ## Go further
 
