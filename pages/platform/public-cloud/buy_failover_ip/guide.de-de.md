@@ -24,7 +24,7 @@ Diese IPFOs können nur für Instanzen desselben Projekts migriert werden.
 ## Voraussetzungen
 
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) eingeloggt.
-- Sie verfügen über mindestens eine Instanz. Konsultieren Sie hierzu [die Anleitung zur Erstellung einer Instanz von Ihrem Kunden-Account aus](https://docs.ovh.com/de/public-cloud/erstellung_einer_instanz_im_ovh_kundencenter/).
+- Sie verfügen über mindestens eine Instanz. Konsultieren Sie hierzu [die Anleitung zur Erstellung einer Instanz von Ihrem Kunden-Account aus](../erstellung_einer_instanz_im_ovh_kundencenter/).
 
 ## In der praktischen Anwendung
 
