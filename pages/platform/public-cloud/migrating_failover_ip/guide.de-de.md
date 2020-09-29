@@ -51,6 +51,6 @@ Die Failover-IP kann vor oder nach der Migration auf dem Zielserver konfiguriert
 
 [Failover-IP konfigurieren](https://docs.ovh.com/gb/en/public-cloud/configure_a_failover_ip)
 
-[Failover-IP importieren](https://docs.ovh.com/de/public-cloud/import_einer_failover-ip/)
+[Failover-IP importieren](../import_einer_failover-ip/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
