@@ -98,7 +98,7 @@ If you try to decrease the storage size, you will get a message like:
 ```bash
 The PersistentVolumeClaim "mysql-pv-claim" is invalid: spec.resources.requests.storage: Forbidden: field can not be less than previous value
 ```
-For more details, please refer to the [Resizing Persistent Volumes documentation](../resizing-persistent-volumes/) documentation.
+For more details, please refer to the [Resizing Persistent Volumes documentation](../resizing-persistent-volumes/).
 
 The Persistent Volumes are using our Cinder-based block-storage solution though the Cinder CSI.
 A worker node can get attached to a maximum of 25 persistent volumes, and a persistent volume can only be attached to a single worker node.
