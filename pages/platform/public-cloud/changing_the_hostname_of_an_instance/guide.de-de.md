@@ -3,7 +3,7 @@ title: 'Hostname einer Public Cloud Instanz ändern'
 slug: hostname-einer-instanz-aendern
 excerpt: 'So ändern Sie den Hostnamen einer Public Cloud Instanz'
 legacy_guide_number: 1928
-section: Tutorials
+section: 'Tutorials'
 ---
 
 **Stand 21.09.2018**
@@ -24,7 +24,7 @@ Mit dem Cloud-init-Modul können Sie Ihre [Public Cloud Instanz](https://www.ovh
 
 ## Voraussetzungen
 
-- Sie haben eine[ Public Cloud Instanz](https://www.ovh.de/public-cloud/instances/){.external} erstellt.
+- Sie haben eine [Public Cloud Instanz](https://www.ovh.de/public-cloud/instances/){.external} erstellt.
 - Sie sind auf der Instanz [via SSH eingeloggt](https://docs.ovh.com/de/public-cloud/erster-login/){.external} (Root-Zugriff).
 
 
