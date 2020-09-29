@@ -3,7 +3,7 @@ title: 'Laden der OpenStack-Umgebungsvariablen.'
 excerpt: 'Lernen Sie, wie Sie Ihre Umgebungsvariablen für die Nutzung der API von OpenStack laden können'
 slug: die-variablen-der-umgebung-openstack-laden
 legacy_guide_number: 1852
-section: 'Über APIs und Befehlszeile'
+section: 'OpenStack'
 ---
 
 **letzter Stand 20.11.2019**
