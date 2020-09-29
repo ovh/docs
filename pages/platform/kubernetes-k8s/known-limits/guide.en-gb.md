@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated May 20, 2020.**
+**Last updated September 29, 2020.**
 
 <style>
  pre {
@@ -90,7 +90,7 @@ Please refrain from adding private networks to your working nodes instances.
 
 The command `kubectl get componentstatus` is reporting the scheduler, the controller manager and the etcd service as unhealthy. This is a limitation due to our implementation of the Kubernetes control plane as the endpoints needed to report the health of these components are not accesible.
 
-## Persistent Volumes resizing
+## Persistent Volumes
 
 Kubernetes `Persistent Volume Claims` resizing only allows to __expand__ volumes, not to __decrease__ them.  
 If you try to decrease the storage size, you will get a message like:
@@ -98,5 +98,8 @@ If you try to decrease the storage size, you will get a message like:
 ```bash
 The PersistentVolumeClaim "mysql-pv-claim" is invalid: spec.resources.requests.storage: Forbidden: field can not be less than previous value
 ```
+For more details, please refer to the [Resizing Persistent Volumes documentation](../resizing-persistent-volumes/).
 
-For more details, please refer to the [Resizing Persistent Volumes documentation](../resizing-persistent-volumes/) documentation.
+The Persistent Volumes are using our Cinder-based block-storage solution through Cinder CSI.
+A worker node can get attached to a maximum of 25 persistent volumes, and a persistent volume can only be attached to a single worker node.
+You can manually [configure multi-attach persistent volumes with NAS-HA](../Configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha/).
