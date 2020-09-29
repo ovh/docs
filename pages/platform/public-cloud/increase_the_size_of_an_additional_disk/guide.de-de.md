@@ -2,6 +2,7 @@
 title: 'Die Größe einer zusätzlichen Festplatte erweitern'
 excerpt: 'Erfahren Sie, wie Sie die Kapazität einer zusätzlichen Festplatte erhöhen und deren Hauptpartition vergrößern können'
 slug: ihre_zusatzliche_festplatte_vergroern
+section: 'Storage'
 legacy_guide_number: g1865
 ---
 
