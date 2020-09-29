@@ -2,7 +2,7 @@
 title: 'Objekt mit einer temporären Adresse teilen'
 slug: ein_objekt_mit_temporarer_adresse_teilen
 excerpt: 'So teilen Sie ein Objekt, ohne persönliche Informationen weiterzugeben'
-section: 'Object Storage'
+section: 'OpenStack'
 legacy_guide_number: g2007
 ---
 
