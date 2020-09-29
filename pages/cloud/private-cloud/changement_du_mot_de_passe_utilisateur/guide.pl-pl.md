@@ -57,6 +57,6 @@ Wprowadź nowe hasło i potwierdź je.
 
 [Prezentacja Panelu klienta Private Cloud](../manager-ovh-private-cloud/)
 
-[Tworzenie i zarządzanie hasłem do konta OVHcloud](../zarzadzanie-haslem/)
+[Tworzenie i zarządzanie hasłem do konta OVHcloud](../../customer/zarzadzanie-haslem/)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
