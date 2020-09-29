@@ -2,6 +2,7 @@
 title: Konfiguration einer Failover-IP in Debian
 excerpt: Konfiguration einer Failover-IP in Debian
 slug: konfiguration_einer_failover-ip_in_debian
+section: 'Netzwerk und IP'
 legacy_guide_number: g2042
 ---
 

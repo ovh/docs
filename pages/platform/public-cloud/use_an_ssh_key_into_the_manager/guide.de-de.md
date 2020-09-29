@@ -2,8 +2,7 @@
 title: 'Verwendung von SSH-Schlüsseln im Public Cloud Interface'
 slug: verwendung-ssh-key-public-cloud-interface
 excerpt: 'Erfahren Sie hier, wie Sie SSH-Schlüssel zum einfachen Zugriff auf Public Cloud Instanzen einsetzen'
-section: Sicherheit
-order: 2
+section: 'Verwaltung im OVHcloud Kundencenter'
 ---
 
 **Letzte Aktualisierung am 14.12.2019**
@@ -27,7 +26,7 @@ Es gibt zwei Möglichkeiten, einen SSH-Schlüssel über das Public Cloud Interfa
 - Die erste und direktere Methode erfolgt zum Zeitpunkt der Erstellung einer Instanz.
 - Die zweite Methode besteht darin, einen Schlüssel aus dem SSH-Schlüsselmanager hinzuzufügen.
 
-## Bei Erstellung einer Instanz
+### Bei Erstellung einer Instanz
 
 Klicken Sie im Public Cloud Interface des OVHcloud Kundencenters im Menü `Instances`{.action} unter dem Abschnitt „Compute“ auf `Instanz erstellen`{.action}.
 
@@ -43,7 +42,7 @@ Wenn Sie einen Schlüssel hinzufügen möchten, klicken Sie auf `Schlüssel hinz
 
 ![Einen Schlüssel hinzufügen](images/addkey.png){.thumbnail}
 
-## Aus dem Schlüsselverwaltungstool
+### Aus dem Schlüsselverwaltungstool
 
 Wenn Sie `SSH Keys`{.action}. aus dem linken Menü Ihres Projekts auswählen, wird der Tab „SSH Schlüssel“ angezeigt.
 

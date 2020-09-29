@@ -2,6 +2,7 @@
 title: Konfiguration einer Failover-IP in Windows
 excerpt: Konfiguration einer Failover-IP in Windows
 slug: konfiguration_einer_failover-ip_in_windows
+section: 'Netzwerk und IP'
 legacy_guide_number: g2046
 ---
 

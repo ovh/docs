@@ -2,6 +2,7 @@
 title: Neustart einer Instanz
 excerpt: Neustart einer Instanz in Horizon
 slug: neustart_einer_instanz
+section: 'Horizon'
 legacy_guide_number: g1771
 ---
 

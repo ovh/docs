@@ -3,7 +3,7 @@ title: 'Backup einer Instanz erstellen'
 excerpt: 'So erstellen Sie mit wenigen Klicks eine Sicherheitskopie Ihrer Instanz'
 slug: ein_backup_einer_instanz_erstellen
 legacy_guide_number: g1881
-section: 'Über das OVH Kundencenter'
+section: 'Verwaltung im OVHcloud Kundencenter'
 ---
 
 **Letzte Aktualisierung am 22.11.2019**

@@ -2,6 +2,7 @@
 title: 'Projekte delegieren'
 slug: seine-Projekte-delegieren
 excerpt: 'Erfahren Sie hier, wie Sie technische Berechtigungen für ein Public Cloud Projekt vergeben'
+section: 'Projektverwaltung'
 ---
 
 **Letzte Aktualisierung am 29.11.2019**

@@ -2,6 +2,7 @@
 title: Installation von WordPress auf einer Instanz
 excerpt: Installation von WordPress auf einer Instanz
 slug: installation_von_wordpress_auf_einer_instanz
+section: 'Tutorials'
 legacy_guide_number: g2060
 ---
 

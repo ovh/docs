@@ -3,6 +3,7 @@ title: 'Public Cloud Quota erhöhen'
 excerpt: 'Erfahren Sie hier die Vorgehensweise, um Ihre Quota zu erhöhen'
 slug: public-cloud-quota-erhoehen
 legacy_guide_number: 1904
+section: 'Projektverwaltung'
 ---
 
 **Letzte Aktualisierung am 25.09.2020**
