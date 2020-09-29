@@ -1,8 +1,8 @@
 ---
-title: Utilisee les tâches automatisées (CRON) sur votre hébergement
+title: Créer des tâches automatisées (CRON) sur votre hébergement Web
 slug: mutualise-taches-automatisees-cron
 legacy_guide_number: 1990
-excerpt: Retrouvez ici les actions possibles avec l'option des taches automatisees
+excerpt: Découvrez comment créer des tâches CRON pour automatiser vos tâches planifiées sur un hébergement web
 section: Tâches automatisées (CRON)
 ---
 
@@ -10,9 +10,9 @@ section: Tâches automatisées (CRON)
 
 ## Objectif
 
-Sur votre hébergement Web OVHcloud, vous pouvez utiliser des scripts pour automatiser certaines opérations. La création d'une tâche planifiée (« tâche cron ») est le moyen le plus simple de s'assurer que vos scripts s'exécutent à des moments spécifiques sans que d'autres actions soient nécessaires de votre part. 
+Sur votre hébergement Web OVHcloud, vous pouvez utiliser des scripts pour automatiser certaines opérations. La création d'une tâche planifiée (« tâche CRON ») est le moyen le plus simple de s'assurer que vos scripts s'exécutent à des moments spécifiques sans que d'autres actions soient nécessaires de votre part. 
 
-**Ce guide vous explique comment créer des tâches cron pour automatiser vos tâches planifiées sur un hébergement Web.**
+**Découvrez comment créer des tâches CRON pour automatiser vos tâches planifiées sur un hébergement web.**
 
 > [!warning]
 >OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d’en assurer le bon fonctionnement.
@@ -39,7 +39,7 @@ Dans cette section, vous aurez un aperçu de vos tâches planifiées et de leurs
 
 #### Étape 1 : Définition des paramètres généraux
 
-Pour créer une tâche cron, cliquez sur le bouton `Ajouter une planification`{.action} à droite. Vous pouvez personnaliser les paramètres de la tâche dans la nouvelle fenêtre.
+Pour créer une tâche CRON, cliquez sur le bouton `Ajouter une planification`{.action} à droite. Vous pouvez personnaliser les paramètres de la tâche dans la nouvelle fenêtre.
 
 ![adding scheduling](images/cron-jobs-2.png){.thumbnail}
 
@@ -55,7 +55,7 @@ Cliquez sur `Suivant`{.action} pour passer à l'étape 2.
 
 #### Étape 2 : Définition de la fréquence
 
-L'interface offre deux modes pour configurer la fréquence de votre tâche. Utilisez le **Mode Simple** pour une sélection d'options de planification simplifiée pour les débutants. Si vous préférez entrer directement une fréquence, semblable à un format de table cron (*crontab*), choisissez le **Mode expert**.
+L'interface offre deux modes pour configurer la fréquence de votre tâche. Utilisez le **Mode Simple** pour une sélection d'options de planification simplifiée pour les débutants. Si vous préférez entrer directement une fréquence, semblable à un format de table CRON (*crontab*), choisissez le **Mode expert**.
 
 |Mode simple|
 |---|
@@ -102,7 +102,7 @@ Veillez toujours à utiliser des chemins d'accès absolus aux fichiers de vos sc
  
 #### Vérification des logs d'éxecution
 
-Dans [les logs]  de votre hébergement Web, accessibles depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, vous verrez la catégorie de log intitulée « cron ».
+Dans [les logs]  de votre hébergement Web, accessibles depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, vous verrez la catégorie de log intitulée « CRON ».
 
 Consultez notre guide [« Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée »](../mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#logs_1) pour plus de détails.
 
