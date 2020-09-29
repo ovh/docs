@@ -22,12 +22,12 @@ Sur votre hébergement Web OVHcloud, vous pouvez utiliser des scripts pour autom
 
 ## Prérequis
 
-- Posséder une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/){.external}.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Posséder une [offre d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web`{.action}, puis sur `Hébergements`{.action} dans la colonne de gauche.
+Rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web`{.action}, puis sur `Hébergements`{.action} dans la colonne de gauche.
 
 Sélectionnez l'hébergement concerné, cliquez sur l'onglet `Plus+`{.action} puis sur `Tâches planifiées - Cron`{.action}
 
@@ -102,9 +102,9 @@ Veillez toujours à utiliser des chemins d'accès absolus aux fichiers de vos sc
  
 #### Vérification des logs d'éxecution
 
-Dans [les logs]  de votre hébergement Web, accessibles depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, vous verrez la catégorie de log intitulée « CRON ».
+Dans [les logs]  de votre hébergement Web, accessibles depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, vous verrez la catégorie de log intitulée « CRON ».
 
-Consultez notre guide [« Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée »](../mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#logs_1) pour plus de détails.
+Consultez notre guide [« Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée »](../mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#logs_1) pour plus de détails.
 
 ##### **Exemple de logs**
 
@@ -152,4 +152,3 @@ Consultez notre guide [« Consulter les statistiques et les logs de mon site hé
 [Utiliser l’accès SSH de son hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/)
 
 [Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](../mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/)
-
