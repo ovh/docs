@@ -15,12 +15,12 @@ L'accès aux logs et aux statistiques de votre site est compris dans votre offre
 
 ## Prérequis
 
-- Disposer d'une offre [d'hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} compatible.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Disposer d'une offre [d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external} compatible.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web`{.action}, puis sur `Hébergements`{.action} dans la colonne de gauche.
+Rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web`{.action}, puis sur `Hébergements`{.action} dans la colonne de gauche.
 
 Sélectionnez l'hébergement concerné, cliquez sur l'onglet `Plus+`{.action} puis sur `Statistiques et logs`{.action}
 
