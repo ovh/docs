@@ -100,6 +100,6 @@ The PersistentVolumeClaim "mysql-pv-claim" is invalid: spec.resources.requests.s
 ```
 For more details, please refer to the [Resizing Persistent Volumes documentation](../resizing-persistent-volumes/).
 
-The Persistent Volumes are using our Cinder-based block-storage solution though the Cinder CSI.
+The Persistent Volumes are using our Cinder-based block-storage solution through Cinder CSI.
 A worker node can get attached to a maximum of 25 persistent volumes, and a persistent volume can only be attached to a single worker node.
 You can manually [configure multi-attach persistent volumes with NAS-HA ](../Configuring-multi-attach-persistent-volumes-with-ovhcloud-nas-ha/) .
