@@ -65,7 +65,7 @@ OVHcloud Connect Provider solutions will be delivered as soon as the *service ke
 OVHcloud Connect Direct solutions are considered delivered in the following cases:
 
 - The light indicating the connection to the customer's equipment is visible on OVHcloud's side.
-- The light is off but 60 days have passed since the the subscription.
+- 60 days have passed since the the subscription.
 - The customer has explicitly arranged a manual delivery with their OVHcloud agent.
 
 After having subscribed, the customer will receive a Letter of Authorization (LOA) from OVHcloud to allow the customer to perform the cross-connection with OVHcloud's infrastructure. This cross-connection will then trigger the delivery based on the above mentioned cases.
