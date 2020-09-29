@@ -3,7 +3,7 @@ title: Zwei-Faktor-Authentifizierung (2FA) auf Ihrer Private Cloud Infrastruktur
 slug: 2FA-verwenden
 excerpt: Hier erfahren Sie, wie Sie die Zwei-Faktor-Authentifizierung einrichten, um Ihre Infrastruktur zu schützen.
 section: OVH Funktionen
-order: 05
+order: 5
 ---
 
 **Stand 10.09.2020**
@@ -97,35 +97,35 @@ Um die öffentlichen IP-Adressen Ihrer Anwendungen zu dieser zweiten *Whitelist*
 
 - Nach IP-Adressen suchen, die autorisiert sind, die Zwei-Faktor-Authentifizierung zu umgehen:
 
-> \[!api]
+>[!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
 - Eine IP-Adresse zur *Bypass*-Whitelist der Zwei-Faktor-Authentifizierung hinzufügen:
 
-> \[!api]
+>[!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
 - Informationen einer autorisierten IP-Adresse anzeigen (hierzu wird eine mit dem vorstehenden Aufruf erhaltene ID benötigt):
 
-> \[!api]
+>[!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
 - Eine IP-Adresse von der Autorisierungsliste entfernen:
 
-> \[!api]
+>[!api]
 >
 > @api {DELETE} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
 - Die Informationen einer autorisierten IP-Adresse bearbeiten:
 
-> \[!api]
+>[!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}/changeProperties
 >
