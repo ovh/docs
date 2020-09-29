@@ -1,6 +1,6 @@
 ---
-title: 'Die ersten Schritte mit Ihrer Windows Instanz'
-excerpt: 'Entdecken Sie, wie Sie die Installation einer Windows-Instanz abschließen und eine erste Verbindung herstellen können'
+title: 'Die ersten Schritte mit Ihrer Windows-Instanz'
+excerpt: 'Erfahren Sie hier, wie Sie die Installation einer Windows-Instanz abschließen und eine erste Verbindung herstellen'
 slug: die_ersten_schritte_mit_ihrer_windows_instanz
 legacy_guide_number: g1995
 section: 'Erste Schritte'
@@ -12,7 +12,7 @@ section: 'Erste Schritte'
 
 Sie können Public Cloud Instanzen verwenden, wenn Sie Webseiten mit IIS oder nur mit Windows kompatible Anwendungen hosten möchten. Unsere Instanzen können als  [Windows Desktop Systeme](https://www.ovh.de/public-cloud/prices/) installiert werden.
 
-Sobald Ihre Instanz erstellt ist muss die Installation über die VNC-Konsole abgeschlossen werden.
+Sobald Ihre Instanz erstellt ist, muss die Installation über die VNC-Konsole abgeschlossen werden.
 
 **Diese Anleitung erläutert die Vorgehensweise, um sich nach der Installation mit Ihrer Windows-Instanz zu verbinden.**
 
@@ -52,7 +52,7 @@ Die Installation muss daher über die VNC-Konsole abgeschlossen werden:
 
 Sobald das Passwort festgelegt ist können Sie sich über eine Remote-Verbindung auf Ihrer Windows-Instanz einloggen.
 
-Von einem Windows-Desktop aus:
+Von einem Windows-Desktop aus geben Sie die Verbindungsdaten nach Aufruf von Remote Desktop ein:
 
 ![windowsinstance](images/firststepswindows5.png){.thumbnail}
 
