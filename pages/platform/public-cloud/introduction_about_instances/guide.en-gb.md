@@ -2,7 +2,7 @@
 title: 'An introduction to instances and other cloud-based terms'
 slug: introduction-to-instances-and-other-cloud-based-terms
 section: Getting started
-order: 1
+order: 2
 ---
 
 ## Introduction
