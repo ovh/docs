@@ -2,7 +2,7 @@
 title: 'GPU Instanzen einrichten'
 slug: gpu-intanz-einrichten
 excerpt: 'Erfahren Sie hier, wie Sie unter Windows und Linux eine GPU Instanz einrichten'
-section: 'Über das OVH Kundencenter'
+section: 'Verwaltung im OVHcloud Kundencenter'
 ---
 
 **Letzte Aktualisierung am 06.12.2019**
@@ -127,4 +127,4 @@ Anschließend müssen Sie nur noch den erforderlichen Treiber installieren, der 
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en).
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en>.
