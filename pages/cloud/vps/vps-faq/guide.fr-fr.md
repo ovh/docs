@@ -60,8 +60,8 @@ Si vous souhaitez bénéficier de ressources garanties sans connaissances en adm
 
 ### Comment me connecter à mon VPS ?
 
-La connexion à votre VPS devra se faire en SSH grâce à l’adresse IP, le nom d’utilisateur et le mot de passe fournis par mail à la réception de commande.
-Depuis un Windows il sera conseillé de vous connecter grâce au logiciel putty. La connexion pourra se faire directement sur le terminal depuis un poste Linux.
+La connexion à votre VPS devra se faire en SSH grâce à l’adresse IP, le nom d’utilisateur et le mot de passe fournis par e-mail à la réception de la commande.
+Depuis un poste sous Windows il sera conseillé de vous connecter grâce au logiciel Putty. La connexion pourra se faire directement sur le terminal depuis un poste Linux.
 
 Tous les détails vous sont présentés dans le guide [« Débuter avec un VPS »](../debuter-avec-vps/).
 
@@ -76,8 +76,8 @@ OVHcloud n'effectue pas de sauvegarde des données hébergées sur votre VPS. Il
 
 ### Comment sécuriser mon VPS ?
 
-Par défaut le VPS est fournie « nu », aucune configuration de sécurité n’est présente sur ce dernier. C’est donc la première chose que vous devez faire à la réception
-Pour faire, n’hésitez pas à consulter le guide [«Sécuriser un VPS»](../conseils-securisation-vps/).
+Par défaut le VPS est fourni « nu », aucune configuration de sécurité n’est présente sur ce dernier. C’est donc la première chose que vous devez faire à la réception
+Pour ce faire, n’hésitez pas à consulter le guide [«Sécuriser un VPS»](../conseils-securisation-vps/).
 
 ### Quelle est la bande passante allouée à mon VPS ? Est-elle garantie ?
 
@@ -86,7 +86,6 @@ La bande passante affichée sur la page de nos offres est garantie. Il s'agit du
 ### Quel SLA est appliqué sur mon VPS ?
 
 Sur l’ensemble des gammes VPS, OVHcloud propose un SLA de 99,9%.
-
 
 ## Aller plus loin
 
