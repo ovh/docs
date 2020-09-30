@@ -2,13 +2,12 @@
 title: Zwei-Faktor-Authentifizierung (2FA) auf Ihrer Private Cloud Infrastruktur verwenden
 slug: 2FA-verwenden
 excerpt: Hier erfahren Sie, wie Sie die Zwei-Faktor-Authentifizierung einrichten, um Ihre Infrastruktur zu schützen.
-section: OVH Funktionen
-order: 5
+section: OVHcloud Funktionen
 ---
 
-**Stand 10.09.2020**
+**Letzte Aktualisierung am 10.09.2020**
 
-## Einleitung
+## Ziel
 
 Die Einrichtung der Zwei-Faktor-Authentifizierung schützt den Zugang zu Ihrer Private Cloud, indem beispielsweise mit Passwortdiebstahl verbundene Risiken reduziert werden.
 
@@ -17,9 +16,9 @@ Die Einrichtung der Zwei-Faktor-Authentifizierung schützt den Zugang zu Ihrer P
 ## Voraussetzungen
 
 - Sie verfügen über eine [Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur mit [Advanced Security](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) Option (in PCI-DSS und HDS Angeboten enthalten).
-- Sie verfügen über ein Smartphone sowie eine Authentifizierungs-App (Beispiele: Google Authenticator, Authy, OTP Auth, ...).
+- Sie verfügen über ein Smartphone mit installierter Authentifizierungsanwendung (Beispiele: Google Authenticator, Authy, OTP Auth, ...).
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Zwei-Faktor-Authentifizierung aktivieren
 
@@ -85,7 +84,7 @@ Der einzige Unterschied besteht in der Autonomie des Benutzers, Token zu validie
 
 Es ist möglich, mehrere Drittanwendungen zu verwenden, die Zugriff auf vCenter benötigen.
 
-Diese Anwendungen müssen zuerst über die vCenter-Zugangseinstellungen, die Sie über Ihr [Kundencenter](https://docs.ovh.com/de/private-cloud/manager-ovh-private-cloud/#sicherheit) festlegen, autorisiert werden.
+Diese Anwendungen müssen zuerst über die vCenter-Zugangseinstellungen, die Sie über Ihr [Kundencenter](../manager-ovh-private-cloud/#sicherheit) festlegen, autorisiert werden.
 
 Daraufhin können die Anwendungen auf unsere Infrastrukturen zugreifen; das heißt allerdings nicht, dass sie zwangsweise auch die Zwei-Faktor-Authentifizierung verarbeiten.
 
