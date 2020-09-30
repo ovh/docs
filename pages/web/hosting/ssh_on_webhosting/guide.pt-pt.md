@@ -65,7 +65,7 @@ Uma vez aberto o terminal, utilize o comando seguinte substituindo os elementos 
 ssh sshlogin@sshserver -p connectionport
 ```
 
-Depois de enviado o comando, deverá introduzir a palavra-passe do utilizador SSH. Quando estiver conectado, prossiga para a etapa seguinte: [Interagir com o espaço de armazenamento em SSH](./#4-etapa-interagir-com-o espaco-de-armazenamento-em-ssh).
+Depois de enviado o comando, deverá introduzir a palavra-passe do utilizador SSH. Quando estiver conectado, prossiga para a etapa seguinte: [Interagir com o espaço de armazenamento em SSH](./#4a-etapa-interagir-com-o-espaco-de-armazenamento-em-ssh_1).
 
 ![usessh](images/use-ssh-step3.png){.thumbnail}
 
