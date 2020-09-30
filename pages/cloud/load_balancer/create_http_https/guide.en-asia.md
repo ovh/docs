@@ -34,7 +34,7 @@ As a reminder, the OVH Load Balancer has four primary components:
 > This guide will take you through the steps required. Depending on the way you have designed your architecture, some configurations may vary.
 > 
 
-If you have not done so already, we recommend reading a general introduction to the OVH Load Balancer service before you get started: [Introduction to the OVHcloud Load Balancer](https://docs.ovh.com/asia/en/load-balancer/loadbalancer-introduction/){.ref}
+If you have not done so already, we recommend reading a general introduction to the OVH Load Balancer service before you get started: [](use_presentation/guide.gb-en.md){.ref}
 
 
 > [!warning]
@@ -42,11 +42,11 @@ If you have not done so already, we recommend reading a general introduction to 
 > The order in which elements are created is important. In particular, the server farms must be configured before we can attach an SSL/TLS certificate or servers to them. The front-ends must be configured after the server farms in order to configure the front-end’s default farm.
 > 
 
-In the Control Panel, you will see the features detailed below:
+In the Sunrise Control Panel, you will see the features detailed below:
 
 ![OVH Load Balancer service](images/iplb_service.png){.thumbnail}
 
-For more information on the Control Panel’s features, you can consult the following guide: [Managing the Load Balancer from the customer control panel](https://docs.ovh.com/asia/en/load-balancer/usage-loadbalancer/){.ref}
+For more information on the Sunrise Control Panel’s features, you can consult the following guide: [](use_sunrise/guide.gb-en.md){.ref}
 
 Similarly, this can be done via the OVH API, in the section:
 
@@ -55,7 +55,7 @@ Similarly, this can be done via the OVH API, in the section:
 > @api {GET} /ipLoadbalancing
 > 
 
-For more information on the API’s features, you can consult the following guide: [Load Balancer API Quick Reference](https://docs.ovh.com/asia/en/load-balancer/iplb-api-reference/){.ref}
+For more information on the API’s features, you can consult the following guide: [](use_api_reference/guide.gb-en.md){.ref}
 
 
 ## Add a server farm.

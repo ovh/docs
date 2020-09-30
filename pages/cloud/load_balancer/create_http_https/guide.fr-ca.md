@@ -36,7 +36,7 @@ Pour rappel, le service OVH Load Balancer est composé de 4 parties élémentair
 > Nous allons vous guider au travers des différentes étapes. Dépendant de vos choix d'architecture certaines configurations peuvent différer.
 > 
 
-Avant de vous lancer, si vous ne l'avez pas encore lue, nous vous conseillons de consulter présentation générale du service OVH Load Balancer: [Présentation de l’OVHcloud Load Balancer](https://docs.ovh.com/ca/fr/load-balancer/iplb-presentation/){.ref}
+Avant de vous lancer, si vous ne l'avez pas encore lue, nous vous conseillons de consulter présentation générale du service OVH Load Balancer: [](use_presentation/guide.fr-fr.md){.ref}
 
 
 > [!warning]
@@ -49,7 +49,7 @@ Dans le Manager nous allons retrouver les fonctionnalités détaillées ci-desso
 
 ![Service OVH Load Balancer](images/iplb_service.png){.thumbnail}
 
-Pour plus d'informations sur les fonctionnalités du Manager, consulter la page [](https://docs.ovh.com/ca/fr/load-balancer/utilisation-loadbalancer/){.ref}
+Pour plus d'informations sur les fonctionnalités du Manager, consulter la page [](use_sunrise/guide.fr-fr.md){.ref}
 
 Via l'API OVH, dans la section
 
@@ -58,7 +58,7 @@ Via l'API OVH, dans la section
 >
 > @api {GET} /ipLoadbalancing
 > 
-Pour plus d'informations sur les fonctionnalités de l'API, consulter la page [Référence Rapide API Load Balancer](https://docs.ovh.com/ca/fr/load-balancer/iplb-api-reference/){.ref}
+Pour plus d'informations sur les fonctionnalités de l'API, consulter la page [](use_api_reference/guide.fr-fr.md){.ref}
 
 
 ## Ajouter une Ferme de serveurs
