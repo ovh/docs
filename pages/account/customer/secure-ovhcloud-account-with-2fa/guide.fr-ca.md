@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment améliorer la sécurité de votre compte OVHcloud e
 section: Sécurité
 ---
 
-**Dernière mise à jour le 24/06/2020**
+**Dernière mise à jour le 30/09/2020**
 
 ## Objectif
 
@@ -13,6 +13,8 @@ OVHcloud met à votre disposition des outils pour renforcer la sécurité de vot
 Vous pouvez activer une authentification à deux facteurs (2FA). Celle-ci vient s'ajouter à votre couple identifiant-mot de passe et est gérée depuis un appareil que vous possédez : un téléphone, une tablette ou une clé de sécurité. 
 
 **Découvrez les différentes méthodes proposées et comment les activer.**
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 

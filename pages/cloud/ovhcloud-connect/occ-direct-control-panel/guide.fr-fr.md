@@ -3,7 +3,7 @@ title: Mise en service de OVHcloud Connect Direct depuis l’espace client OVHcl
 excerpt: Découvrez comment mettre en service votre offre OVHcloud Connect Direct depuis votre espace client OVHcloud
 slug: occ-direct-manager-setup
 section: Premiers pas
-order: 1
+order: 2
 ---
 
 **Dernière mise à jour le 28/09/2020**
@@ -16,9 +16,9 @@ OVHcloud Connect permet d’étendre votre réseau d’entreprise avec votre ré
 
 ## Prérequis
 
-- Posséder une [offre OVHcloud Connect Direct](https://www.ovh.com/fr/solutions/ovhcloud-connect/) {.external}.
+- Posséder une [offre OVHcloud Connect Direct](https://www.ovh.com/fr/solutions/ovhcloud-connect/)
 - Disposer d'un [vRack OVHcloud](https://www.ovh.com/fr/solutions/vrack/)
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
 
 ## En pratique
 

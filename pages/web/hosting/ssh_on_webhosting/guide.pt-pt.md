@@ -65,7 +65,7 @@ Uma vez aberto o terminal, utilize o comando seguinte substituindo os elementos 
 ssh sshlogin@sshserver -p connectionport
 ```
 
-Depois de enviado o comando, deverá introduzir a palavra-passe do utilizador SSH. Quando estiver conectado, prossiga para a etapa seguinte: [Interagir com o espaço de armazenamento em SSH](./#4-etapa-interagir-com-o espaco-de-armazenamento-em-ssh).
+Depois de enviado o comando, deverá introduzir a palavra-passe do utilizador SSH. Quando estiver conectado, prossiga para a etapa seguinte: [Interagir com o espaço de armazenamento em SSH](./#4a-etapa-interagir-com-o-espaco-de-armazenamento-em-ssh_1).
 
 ![usessh](images/use-ssh-step3.png){.thumbnail}
 
@@ -75,8 +75,8 @@ Depois de aberto o programa (o PuTTY, por exemplo), introduza as informações d
 
 |Informação solicitada|Detalhes|
 |---|---|
-|Servidor SSH|Indique o endereço do servidor SSH identificado na [2.ª etapa](./#2-etapa-obter-as-informacoe-de-acesso). Em função do tipo de software, a denominação pode ser: «Endereço do servidor», «Host» ou «Host Name».|
-|Porta de conexão|Indique a porta de conexão identificada na [2.ª etapa](./#2-etapa-obter-as-informacoe-de-acesso).|
+|Servidor SSH|Indique o endereço do servidor SSH identificado na [2.ª etapa](./#2a-etapa-obter-as-informacoes-de-acesso). Em função do tipo de software, a denominação pode ser: «Endereço do servidor», «Host» ou «Host Name».|
+|Porta de conexão|Indique a porta de conexão identificada na [2.ª etapa](./#2a-etapa-obter-as-informacoes-de-acesso).|
 |Login SSH|Indique o utilizador SSH. Em função do tipo de software, a denominação pode ser: «nome de utilizador», «ID de utilizador», «Login» ou «Username».|
 |Palavra-passe do utilizador SSH|Trata-se da palavra-passe associada ao login SSH.<br><br> Em função do tipo de software, pode igualmente denominar-se «Password».|
 
