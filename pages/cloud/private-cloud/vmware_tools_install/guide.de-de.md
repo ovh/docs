@@ -7,15 +7,15 @@ section: 'Verwaltung virtueller Maschinen'
 order: 6
 ---
 
-**Stand 04.07.2019**
+**Letzte Aktualisierung am 04.07.2019**
 
-## Einleitung
+## Ziel
 
 VMware Tools verbessern die Leistung virtueller Maschinen und ermöglichen die Verwendung vieler hilfreicher Funktionen der VMware-Produkte.
 
 **Diese Anleitung beschreibt die notwendigen Schritte zur Installation von VMware Tools.**
 
-## Beschreibung
+## Voraussetzungen
 
 Die Vorgehensweise zur Installation von VMware Tools variiert je nach Betriebssystem der virtuellen Maschine. Für Informationen zur genauen Vorgehensweise entsprechend dem Betriebssystem lesen Sie die [VMware-Dokumentation zu VMware Tools](https://kb.vmware.com/s/article/1014294){.external-link}.
 
