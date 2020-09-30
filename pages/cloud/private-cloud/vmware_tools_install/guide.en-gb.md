@@ -1,8 +1,8 @@
 ---
-title: Install VMware tools
+title: Installing VMware tools
 excerpt: ''
 slug: install_vmware_tools
-section: Resource management
+section: Virtual machine management
 ---
 
 
