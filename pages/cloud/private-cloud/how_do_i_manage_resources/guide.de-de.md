@@ -3,7 +3,7 @@ title: Wie verwalte ich meine Ressourcen?
 excerpt: ''
 slug: wie_verwalte_ich_meine_ressourcen
 legacy_guide_number: g602
-
+section: Ressourcen-Management
 ---
 
 
