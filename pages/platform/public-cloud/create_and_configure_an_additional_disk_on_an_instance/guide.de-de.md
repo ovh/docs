@@ -2,7 +2,7 @@
 title: 'Erstellen zusätzlicher Festplatten für Public Cloud Instanzen'
 slug: erstellen_zustzliche_festplatte_public_cloud
 excerpt: 'Erfahren Sie hier, wie Sie eine Festplatte erstellen und für eine Ihrer Instanzen konfigurieren können'
-section: Verschiedenes
+section: 'Storage'
 ---
 
 **Letzte Aktualisierung am 09.01.2020**

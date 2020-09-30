@@ -2,6 +2,7 @@
 title: Eine Loadbalancing-IP konfigurieren
 excerpt: Eine Loadbalancing-IP konfigurieren
 slug: eine_loadbalancing-ip_konfigurieren
+section: 'Verwaltung im OVHcloud Kundencenter'
 legacy_guide_number: g1927
 ---
 

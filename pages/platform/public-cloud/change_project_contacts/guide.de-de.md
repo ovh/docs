@@ -3,6 +3,7 @@ title: 'Die Kontakte eines Projekts ändern'
 excerpt: 'Erfahren Sie hier, wie Sie die Kontakte eines Projekts ändern können'
 slug: die_kontakte_eines_projekts_andern
 legacy_guide_number: g2106
+section: 'Projektverwaltung'
 ---
 
 **Letzte Aktualisierung am 03.12.2019**
@@ -25,7 +26,7 @@ Dies bedeutet, dass Sie den OVHcloud Kunden-Account, der Ihre Rechnungen verwalt
 
 ### Schritt 1: Kontaktänderung
 
-Um Ihre Projektkontakte zu ändern, wechseln Sie zunächst mit Klick auf `Contacts and Rights`{.action} in der Projektverwaltung zur Sektion "Kontakte und Berechtigungen" .
+Um Ihre Projektkontakte zu ändern, wechseln Sie zunächst mit Klick auf `Contacts and Rights`{.action} in der Projektverwaltung zur Sektion "Kontakte und Berechtigungen".
 
 ![](images/contact.png){.thumbnail}
 

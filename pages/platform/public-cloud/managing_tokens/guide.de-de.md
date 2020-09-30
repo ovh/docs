@@ -3,6 +3,7 @@ title: Token-Verwaltung
 excerpt: Token-Verwaltung
 slug: token-verwaltung
 legacy_guide_number: g1872
+section: 'OpenStack'
 ---
 
 ## 
@@ -245,10 +246,3 @@ $obj = $cont->getPartialObject('fullsize/ovh-summit-2014-backstage-DS.jpg');
 print_r($obj->getMetadata());
 ?>
 ```
-
-
-
-
-## 
-... lesen Sie auch unsere anderen Hilfen zum Thema Cloud!
-

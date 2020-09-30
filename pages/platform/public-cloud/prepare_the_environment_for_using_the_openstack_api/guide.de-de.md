@@ -3,7 +3,7 @@ title: 'Umgebung für die Verwendung der OpenStack-API vorbereiten'
 slug: vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api
 excerpt: 'Installieren Sie die OpenStack-Umgebung, um Ihre Instanzen über die API zu verwalten.'
 legacy_guide_number: 1851
-section: Über APIs und Befehlszeile
+section: 'OpenStack'
 ---
 
 **Stand 16.07.2019**

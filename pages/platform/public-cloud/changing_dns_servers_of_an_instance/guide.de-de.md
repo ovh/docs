@@ -2,6 +2,7 @@
 title: 'Die DNS-Server einer Instanz ändern'
 slug: die-dns-server-einer-instanz-ändern
 excerpt: 'Die standardmäßigen DNS-Server einer Instanz Public Cloud ändern'
+section: 'Netzwerk und IP'
 legacy_guide_number: 1985
 ---
 

@@ -2,7 +2,7 @@
 title: 'Eine Failover-IP erwerben'
 slug: eine-failover-ip-erwerben
 excerpt: 'Hier erfahren Sie, wie Sie für Ihre Instanzen Failover-IP-Adressen bestellen können'
-section: 'Über das OVH Kundencenter'
+section: 'Netzwerk und IP'
 ---
 
 **Letzte Aktualisierung am 21.11.2019**
@@ -24,7 +24,7 @@ Diese IPFOs können nur für Instanzen desselben Projekts migriert werden.
 ## Voraussetzungen
 
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) eingeloggt.
-- Sie verfügen über mindestens eine Instanz. Konsultieren Sie hierzu [die Anleitung zur Erstellung einer Instanz von Ihrem Kunden-Account aus](https://docs.ovh.com/de/public-cloud/erstellung_einer_instanz_im_ovh_kundencenter/).
+- Sie verfügen über mindestens eine Instanz. Konsultieren Sie hierzu [die Anleitung zur Erstellung einer Instanz von Ihrem Kunden-Account aus](../erstellung_einer_instanz_im_ovh_kundencenter/).
 
 ## In der praktischen Anwendung
 
@@ -79,10 +79,10 @@ Sie können den Bestellschein auch in Ihrem [OVHcloud Kundencenter](https://www.
 
 ## Weiterführende Informationen
 
-[Erstellung einer Instanz im OVHcloud Kundencenter](https://docs.ovh.com/de/public-cloud/erstellung_einer_instanz_im_ovh_kundencenter/)
+[Erstellung einer Instanz im OVHcloud Kundencenter](../erstellung_einer_instanz_im_ovh_kundencenter/)
 
-[Auf einer Public Cloud Instanz einloggen](https://docs.ovh.com/de/public-cloud/erster-login/)
+[Auf einer Public Cloud Instanz einloggen](../erster-login/)
 
-[Persistente Konfiguration der Failover-IP](https://docs.ovh.com/de/public-cloud/persistente_konfiguration_der_failover-ip/)
+[Persistente Konfiguration der Failover-IP](../persistente_konfiguration_der_failover-ip/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

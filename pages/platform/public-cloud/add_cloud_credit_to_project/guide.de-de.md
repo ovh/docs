@@ -1,11 +1,12 @@
 ---
 title: 'Cloud Guthaben aufladen'
-excerpt: 'Entdecken Sie, wie Sie Guthaben für Ihr Public Cloud-Projekt aufladen können'
+excerpt: 'Erfahren Sie hier, wie Sie Guthaben für Ihr Public Cloud-Projekt aufladen können'
 slug: cloud_guthaben_aufladen
 legacy_guide_number: g1907
+section: 'Projektverwaltung'
 ---
 
-**letzter Stand 22.11.2019**
+**Letzte Aktualisierung am 22.11.2019**
 
 ## Ziel
 
@@ -15,16 +16,16 @@ Dies wird dann als Standardzahlungsart verwendet werden.
 
 Bei jeder Fakturierung wird der geschuldete Betrag zunächst von Ihrem Cloud-Guthaben abgebucht und dann Schritt für Schritt von Ihrem Digital LaunchPad- und Ihrem Treuepunktekonto. Ein eventuelles Sollsaldo wird dann über die eingetragene Zahlungsart ausgeglichen. 
 
-Mehr Details über diese drei letztgenannten Zahlungsarten finden Sie in Ihrem Kunden Center, in dem Sie auf Ihren Namen und Vornamen oben rechts klicken und dann auf  `Zahlungsarten`{.action} gehen.
+Mehr Details über diese drei letztgenannten Zahlungsarten finden Sie in Ihrem Kundencenter, in dem Sie auf Ihren Namen und Vornamen oben rechts klicken und dann auf `Zahlungsarten`{.action} gehen.
 
 Das Cloud-Guthaben kann weder übertragen noch erstattet werden. Dieses Guthaben stellt keine Währung dar und jedes nicht verwendete Guthaben, das in den nach seinem Erstehen folgenden 13 Monaten nicht verwendet wurde, wird verloren sein. 
 
 ## Voraussetzungen
 
-* Sie müssen über ein Public Cloud Projekt verfügen.
+- Sie müssen über ein Public Cloud Projekt verfügen.
 
 
-## Vorgehensweise:
+## In der praktischen Anwendung
 
 ### Cloud Guthaben aufladen
 

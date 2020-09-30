@@ -3,6 +3,7 @@ title: Die ersten Schritte mit der Swift API
 excerpt: Die ersten Schritte mit der Swift API
 slug: die_ersten_schritte_mit_der_swift_api
 legacy_guide_number: g1916
+section: 'OpenStack'
 ---
 
 

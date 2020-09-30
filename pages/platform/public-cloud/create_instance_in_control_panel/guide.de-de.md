@@ -3,6 +3,7 @@ title: 'Erstellung einer Instanz im OVHcloud Kundencenter'
 excerpt: 'Erfahren Sie hier die notwendigen Schritte um eine Public Cloud-Instanz zu erstellen'
 slug: erstellung_einer_instanz_im_ovh_kundencenter
 legacy_guide_number: g1775
+section: Erste Schritte
 ---
 
 **Letzte Aktualisierung am 03.12.2019**
