@@ -5,6 +5,8 @@ excerpt: 'Apprenez à définir, modifier et gérer le mot de passe de votre espa
 section: 'Premiers pas'
 ---
 
+**Dernière mise à jour le 30/09/2020**
+
 ## Objectif
 
 Le mot de passe de votre espace client OVHcloud est la clé d'accès à tous vos services et informations. Il doit être suffisamment complexe et régulièrement renouvelé pour garantir leur sécurité.
