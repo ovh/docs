@@ -1,11 +1,12 @@
 ---
-title: 'Dobre praktyki bezpieczeństwa dotyczące klienta vSphere'
-slug: bezpieczny-dostep-vsphere
-excerpt: 'Dowiedz się, jak zabezpieczyć dostęp do klienta vSphere'
-section: 'Pierwsze kroki'
+title: Dobre praktyki bezpieczeństwa dotyczące klienta vSphere
+slug: zabezpieczenie-dostepu-vsphere
+excerpt: Dowiedz się, jak zabezpieczyć dostęp do klienta vSphere
+section: Informacje Meltdown i Spectre
+order: 1
 ---
 
-**Ostatnia aktualizacja dnia 2018-04-06**
+**Ostatnia aktualizacja z dnia 03-09-2020**
 
 ## Wprowadzenie
 
@@ -15,7 +16,7 @@ Zalecamy ograniczenie dostępu do infrastruktury w celu zapewnienia jej optymaln
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## W praktyce
 
@@ -23,15 +24,17 @@ Zalecamy ograniczenie dostępu do infrastruktury w celu zapewnienia jej optymaln
 
 Pierwsze zalecenie dotyczy ograniczenia dostępu z adresów IP. Zalecamy korzystanie z systemu dodawania adresów IP do białej listy.  Metoda ta działa w oparciu o zasadę odrzucania wszystkich adresów IP i dodawania do białej listy adresów uprawnionych do dostępu do Twojej infrastruktury.
 
-Funkcja ta dostępna jest w Twoim [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Przejdź do sekcji Private Cloud, a następnie do zakładki `Bezpieczeństwo`{.action}. Pojawi się tabela, w której wyświetlą się adresy IP uprawnione do dostępu oraz adresy z odmową dostępu. Aby dodać nowe adresy, kliknij przycisk po prawej stronie `Dodanie adresów IP`{.action} :
+Funkcja ta dostępna jest w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Przejdź do sekcji Private Cloud, a następnie do zakładki `Bezpieczeństwo`{.action}. Pojawi się tabela, w której wyświetlą się adresy IP uprawnione do dostępu oraz adresy z odmową dostępu. Aby dodać nowe adresy, kliknij przycisk po prawej stronie `Dodanie adresów IP`{.action} :
 
 ![Dodanie adresów IP](images/adding_ip.png){.thumbnail}
 
-### Tworzenie indywidualnych dostępów dla użytkowników 
 
-Zalecamy tworzenie odrębnego dostępu dla każdego użytkownika. Aby wykonać tę operację przejdź do[Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, zakładka `Użytkownicy`{.action}. Aby dodać nowych użytkowników, kliknij przycisk po prawej stronie: `Stwórz użytkownika`{.action}.
+### Tworzenie indywidualnych dostępów dla poszczególnych użytkowników 
+
+Zalecamy tworzenie odrębnego dostępu dla każdego użytkownika. Aby wykonać tę operację przejdź do[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, zakładka `Użytkownicy`{.action}. Aby dodać nowych użytkowników, kliknij przycisk po prawej stronie: `Stwórz użytkownika`{.action}.
 
 ![Użytkownicy](images/users.png){.thumbnail}
+
 
 Podczas tworzenia użytkownika zostaniesz poproszony o wpisanie hasła. 
 
@@ -49,18 +52,22 @@ Podczas tworzenia użytkownika zostaniesz poproszony o wpisanie hasła.
 > - musi być inne niż poprzednie hasła.
 >
 
-Następnie możesz zarządzać uprawnieniami każdego użytkownika. W tym celu kliknij trzy kropki po prawej stronie nazwy użytkownika:
+Następnie możesz zarządzać uprawnieniami każdego użytkownika. W tym celu kliknij przycisk `...`{.action} po prawej stronie nazwy użytkownika:
 
 ![Edycja parametrów użytkowników](images/users_edit.png){.thumbnail}
 
 ### Ograniczenie czasu sesji
 
-Zalecamy każdorazowe zamknięcie sesji użytkownika. Aby ograniczyć czas połączenia, możesz określić liczbę minut, po upływie których wygasa sesja.
+Zalecamy każdorazowe zamknięcie sesji użytkownika.  Aby ograniczyć czas połączenia, możesz określić liczbę minut, po upływie których wygasa sesja.
 
-Ustawienia te możesz wprowadzić w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Przejdź do sekcji Private Cloud, po czym wybierz `Bezpieczeństwo`{.action}. Następnie kliknij przycisk po prawej stronie`Zmień czas wygasania sesji`{.action}. W oknie, które się ukaże, wybierz czas (w minutach) wygaśnięcia sesji.
+Ustawienia te możesz wprowadzić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Przejdź do sekcji Private Cloud, po czym wybierz `Bezpieczeństwo`{.action}. Następnie kliknij przycisk po prawej stronie`Zmień czas wygasania sesji`{.action}.
+
+![Wygaśnięcie sesji](images/security-expiration.png){.thumbnail}
+
+Wprowadź liczbę minut, zanim sesja wygaśnie.
 
 ![Wygaśnięcie sesji](images/expiration.png){.thumbnail}
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com>.
