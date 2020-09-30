@@ -3,6 +3,7 @@ title: Zugriff auf die Konsole einer Instanz in Horizon
 excerpt: Zugriff auf die Konsole einer Instanz in Horizon
 slug: zugriff_auf_die_konsole_einer_instanz_in_horizon
 legacy_guide_number: g1782
+section: 'Horizon'
 ---
 
 
