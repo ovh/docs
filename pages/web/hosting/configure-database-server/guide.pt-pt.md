@@ -23,7 +23,7 @@ Os servidores de bases de dados SQL Privado e Cloud Databases oferecem-lhe a pos
 
 ### Visualizar as informações gerais do servidor de bases de dados
 
-Na[Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, no menu à esquerda, aceda à secção `Bases de dados`{.action} e clique na instância SQL que pretende configurar. Certifique-se de que está no separador `Informações gerais`{.action}.
+Na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, no menu à esquerda, aceda à secção `Bases de dados`{.action} e clique na instância SQL que pretende configurar. Certifique-se de que está no separador `Informações gerais`{.action}.
 
 Esta secção apresenta as informações essenciais da instância SQL. Sugerimos que dedique alguns minutos para verificar se estão corretas ou se correspondem às indicações descritas a abaixo.
 
@@ -43,7 +43,7 @@ Esta secção apresenta as informações essenciais da instância SQL. Sugerimos
 
 Para que o acesso à sua instância CloudDB funcione, é obrigatório indicar os IP ou intervalos de IP que podem conectar-se às suas bases de dados.
 
-Na[Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, no menu à esquerda, aceda à secção `Bases de dados`{.action} e clique na instância SQL em causa. 
+Na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, no menu à esquerda, aceda à secção `Bases de dados`{.action} e clique na instância SQL em causa. 
 
 Clique no separador `IP autorizados`{.action} e a seguir no botão `Adicionar um endereço IP/máscara`{.action}.
 
@@ -210,7 +210,7 @@ No separador `Informações gerais`, vai encontrar a secção **«SFTP»** no qu
 
 ![sql-privado](images/private-sql-SFTP01.png){.thumbnail}
 
-Para se conectar em **SFTP**, pode recorrer ao programa Filezilla. Se necessário, consulte o guia: [ «Guia de utilização do FileZilla»](../hosting/partilhado_guia_de_utilizacao_do_filezilla/){.external}.
+Para se conectar em **SFTP**, pode recorrer ao programa Filezilla. Se necessário, consulte o guia: [ «Guia de utilização do FileZilla»](../partilhado_guia_de_utilizacao_do_filezilla/){.external}.
 
 Se o ficheiro estiver vazio, isso revela a inexistência de pedidos lentos.
 
