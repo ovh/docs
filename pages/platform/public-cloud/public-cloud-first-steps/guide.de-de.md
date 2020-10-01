@@ -17,7 +17,7 @@ OVHcloud Public Cloud Instanzen erfordern einen anderen Ansatz als VPS oder Dedi
 ## Voraussetzungen
 
 - Sie verfügen über ein [Public Cloud](https://www.ovhcloud.com/de/public-cloud/) Projekt in Ihrem OVHcloud Account.
-- Sie haben Zugriff auf das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
 
 
 ## In der praktischen Anwendung
@@ -115,9 +115,9 @@ $ pbcopy < ~/.ssh/id_rsa.pub
 
 #### SSH-Schlüssel mit Windows-Betriebssystem erstellen
 
-[PuTTY](https://putty.org/){.external} ist eine Open-Source-SSH-Client-Software mit grafischem Benutzerinterface verfügbar für Windows und andere Betriebssysteme. Sie können PuTTY verwenden, um eine Remoteverbindung mit einem Linux-Server herzustellen. Die zugehörige Software PuTTY Key Generator (PuTTYgen) kann zum Erstellen von SSH-Schlüsseln verwendet werden.
+[PuTTY](https://putty.org/){.external} ist eine Open-Source-SSH-Client-Software mit grafischem Benutzerinterface, verfügbar für Windows und andere Betriebssysteme. Sie können PuTTY verwenden, um eine Remoteverbindung mit einem Linux-Server herzustellen. Die zugehörige Software PuTTY Key Generator (PuTTYgen) kann zum Erstellen von SSH-Schlüsseln verwendet werden.
 
-Wenn PuTTY nicht bereits installiert ist, laden Sie es zuerst über [die offizielle Website](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) herunter. Das empfohlene Standardinstallationspaket enthält PuTTYgen, es ist aber auch als Standalone-Datei verfügbar. Um zu überprüfen, ob Sie bereits über PuTTY verfügen, durchsuchen Sie das Menü „Programme“ oder verwenden Sie die Windows-Suche.
+Wenn PuTTY nicht bereits installiert ist, laden Sie es zuerst über [die offizielle Webseite](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) herunter. Das empfohlene Standardinstallationspaket enthält PuTTYgen, es ist aber auch als Standalone-Datei verfügbar. Um zu überprüfen, ob Sie bereits über PuTTY verfügen, durchsuchen Sie das Menü „Programme“ oder verwenden Sie die Windows-Suche.
 
 Öffnen Sie PuTTYgen und wählen Sie einen unterstützten Verschlüsselungsalgorithmus aus. Das vorliegende Beispiel verwendet RSA. Geben Sie 4096 als Bit-Anzahl ein und klicken Sie dann auf den Button `Generate`{.action}.
 
@@ -144,7 +144,7 @@ Unabhängig von der zur Erstellung der SSH-Schlüssel verwendeten Methode verfü
 Gespeicherte SSH-Schlüssel ermöglichen es Ihnen, Ihre Instanzen schneller zu erstellen. Zur Änderung von Schlüsselpaaren oder zum späteren Hinzufügen von Benutzern lesen Sie bitte die Anleitung „[Configuring additional SSH keys](../configuring_additional_ssh_keys/)“ (Englisch).
 >
 
-Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter „Projektmanagement“ auf `SSH-Schlüssel`{.action}.
+Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter „Project Management“ auf `SSH-Schlüssel`{.action}.
 
 Klicken Sie auf den Button `SSH-Schlüssel hinzufügen`{.action}. Geben Sie im neu geöffneten Fenster einen Namen für den Schlüssel ein und fügen Sie Ihre Schlüsselfolge (in [Schritt 1](./#schritt-1-ssh-schlussel-erstellen) aus der öffentlichen Schlüsseldatei bzw. dem PuTTYgen-Fenster kopiert) in das Feld „Schlüssel“ ein. Bestätigen Sie den Vorgang, indem Sie auf `Hinzufügen`{.action} klicken.
 
@@ -153,7 +153,7 @@ Klicken Sie auf den Button `SSH-Schlüssel hinzufügen`{.action}. Geben Sie im n
 
 ### Schritt 3: Instanz erstellen
 
-Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie auf der „Start“-Seite auf `Instanz erstellen`{.action}. (Sie finden dieselbe Funktion auch auf der „Instanzen“-Seite, indem Sie in der linken Menüzeile unter „Compute“ auf `Instanzen`{.action} klicken.)
+Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie auf der „Start“-Seite auf `Instanz erstellen`{.action}. (Sie finden dieselbe Funktion auch auf der „Instanzen“-Seite, indem Sie in der linken Menüzeile unter „Compute“ auf `Instances`{.action} klicken.)
 
 ![Instanz auswählen](images/instance-creation-01.png){.thumbnail}
 
@@ -171,7 +171,7 @@ Wählen Sie zunächst entsprechend Ihren Anforderungen ein Server-Template aus. 
 
 > [!primary]
 >
-Die Gesamtressourcen Ihres Public Cloud Projekts sind anfangs aus Sicherheitsgründen eingeschränkt. Sie können Quotas überprüfen und eine Erhöhung über Ihr OVHcloud Kundencenter anfordern, indem Sie in der linken Menüleiste unter „Projektmanagement“ auf `Quota und Standort`{.action} klicken.
+Die Gesamtressourcen Ihres Public Cloud Projekts sind anfangs aus Sicherheitsgründen eingeschränkt. Sie können Quotas überprüfen und eine Erhöhung über Ihr OVHcloud Kundencenter anfordern, indem Sie in der linken Menüleiste unter „Project Management“ auf `Quota and Localisation`{.action} klicken.
 >
 Bitte beachten Sie, dass Sie Ihre Instanz im Nachhinein upgraden, jedoch nicht auf ein kleineres Modell wechseln können, sofern Sie nicht in Schritt 4 der Erstellung die „Flex“-Option ausgewählt haben. Mehr Informationen hierzu finden Sie weiter unten in der vorliegenden Anleitung.
 >
@@ -195,7 +195,7 @@ Im vierten Schritt können zusätzliche Optionen konfiguriert werden.
 
 ![Optionen auswählen](images/instance-creation-04.png){.thumbnail}
 
-- Sie können mehrere Instanzen mit den gewählten Einstellungen deployen (innerhalb des zuvor erwähnten Quotas).
+- Sie können mehrere Instanzen mit den gewählten Einstellungen deployen (innerhalb der zuvor erwähnten Quota).
 - Sie können eine flexible Instanz erstellen, damit Sie im Nachhinein auch auf ein kleineres Modell (oder sogar andere Servermodellkategorien) wechseln können. Diese Option begrenzt jedoch den **inklusiven Speicherplatz** der Instanz auf 50 GB, unabhängig davon, ob auf ein höheres oder ein geringeres Modell migriert wird.
 - Sie können den Anzeigenamen Ihrer Instanz ändern.
 - Sie können ein Post-Installationsskript hinzufügen.
@@ -206,7 +206,7 @@ Wenn Sie Ihre Auswahl getroffen haben, klicken Sie auf `Weiter`{.action}, um zum
 
 ![Abrechnungsmethode auswählen](images/instance-creation-05.png){.thumbnail}
 
-Wir empfehlen Ihnen, bei Zweifeln bezüglich des Verwendungszeitraums die stündliche Abrechnung auszuwählen, da es nicht möglich ist, im Nachhinein zu dieser Option zu wechseln. Sobald die Instanz auf der „Instanzen“-Seite verfügbar ist, können Sie auf monatliche Abrechnung umstellen.
+Wir empfehlen Ihnen, bei Unsicherheit bezüglich des Verwendungszeitraums die stündliche Abrechnung auszuwählen, da es nicht möglich ist, im Nachhinein zu dieser Option zu wechseln. Sobald die Instanz auf der „Instanzen“-Seite verfügbar ist, können Sie auf monatliche Abrechnung umstellen.
 
 > [!warning]
 >
@@ -221,7 +221,7 @@ Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=goto
 
 ![Instanzen-Seite](images/instance-connect-01.png){.thumbnail}
 
-Für die Instanz wird automatisch ein Benutzer mit erweiterten Berechtigungen erstellt. Der Benutzername entspricht dem gewählten Image, z. B. „ubuntu“, „debian“, „fedora“, „arch“ etc. Diese sowie weitere Eigenschaften können Sie im „Dashboard“ der Instanz einsehen, indem Sie auf `...`{.action} und dann auf `Details der Instanz`{.action} klicken.
+Für die Instanz wird automatisch ein Benutzer mit erweiterten Berechtigungen erstellt. Der Benutzername entspricht dem gewählten Image, z. B. „ubuntu“, „debian“, „fedora“, „arch“ etc. Diese sowie weitere Eigenschaften können Sie im „Dashboard“ der Instanz einsehen, indem Sie auf `...`{.action} und dann auf `Instanz-Details`{.action} klicken.
 
 > [!primary]
 >
@@ -248,7 +248,7 @@ New password:
 Retype new password:
 passwd: password updated successfully
 ```
-Sie können diese Login-Daten nun verwenden, um sich über die `VNC-Konsole`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager) einzuloggen. Wechseln Sie dann zum „root“-Benutzer und legen Sie ein sicheres Passwort fest. Wechseln Sie dann wieder zum vorherigen Benutzer.
+Sie können diese Login-Daten anschließend verwenden, um sich über die `VNC-Konsole`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager) einzuloggen. Wechseln Sie nun zum „root“-Benutzer und legen Sie ein sicheres Passwort fest. Wechseln Sie dann wieder zum vorherigen Benutzer.
 
 ```sh
 $ sudo su -
@@ -268,7 +268,7 @@ Nachdem Sie Ihre SSH-Schlüssel erstellt und gespeichert ([Schritt 1](./#schritt
 
 ![PuTTY verwenden](images/puttyconnect-01.png){.thumbnail}
 
-Klicken Sie auf den Button `Browse`{.action}, um zu dem Ordner zu navigieren, in dem sich Ihre private Schlüsseldatei (.ppk) befindet, und öffnen Sie diese. Wechseln Sie dann im linken Menü zu „Session“ und geben Sie Ihre Login-Daten (username@IPv4_address) ein. Ersetzen Sie „ubuntu“ in den Beispiel-Snapshots mit dem zugehörigen Standardbenutzer, der im „Dashboard“ der Instanz im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) angezeigt wird. (Klicken Sie in der linken Menüleiste auf `Instanzen`{.action}, dann auf den Namen der Instanz.)
+Klicken Sie auf den Button `Browse`{.action}, um zu dem Ordner zu navigieren, in dem sich Ihre private Schlüsseldatei (.ppk) befindet, und öffnen Sie diese. Wechseln Sie dann im linken Menü zu „Session“ und geben Sie Ihre Login-Daten (benutzer@IPv4_adresse) ein. Ersetzen Sie „ubuntu“ in den Beispiel-Screenshots mit dem zugehörigen Standardbenutzer, der im „Dashboard“ der Instanz im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) angezeigt wird. (Klicken Sie in der linken Menüleiste auf `Instances`{.action}, dann auf den Namen der Instanz.)
 
 Sie können diese Sitzung nun für zukünftige Verbindungen speichern, damit sie über die Liste in diesem Interface verfügbar ist. Geben Sie unter „Saved Sessions“ einen beschreibenden Namen ein und klicken Sie auf `Save`{.action}, um diesen hinzuzufügen.
 
@@ -287,7 +287,7 @@ Die obenstehenden Anweisungen entsprechen der Best Practice für die sichere Ver
 
 #### Mit einer Windows-Instanz verbinden
 
-Nachdem die Instanz fertig erstellt ist, muss die Windows-Installation abgeschlossen werden (_sysprep_). Klicken Sie hierzu auf `...`{.action} und dann auf `Details der Instanz`{.action}. Wechseln Sie zum Tab `VNC-Konsole`{.action}. Die Konsole sollte bereits das Post-Installationsfenster anzeigen.
+Nachdem die Instanz fertig erstellt ist, muss die Windows-Installation abgeschlossen werden (_sysprep_). Klicken Sie hierzu auf `...`{.action} und dann auf ` Instanz-Details`{.action}. Wechseln Sie zum Tab `VNC-Konsole`{.action}. Die Konsole sollte bereits das Post-Installationsfenster anzeigen.
 
 ![Windows sysprep](images/windows-connect-01.png){.thumbnail}
 
@@ -301,7 +301,7 @@ Die Instanz wird neu gestartet und Sie können sich mithilfe dieser Login-Daten 
 
 ##### **Über Windows**
 
-Verwenden Sie falls nötig die Windows-Suche und öffnen Sie den Remotedesktopverbindungs-Client.
+Verwenden Sie falls nötig die Windows-Suche und öffnen Sie den Windows-Client für Remote-Desktopverbindungen.
 
 ![Windows Remote](images/windows-connect-03.png){.thumbnail}
 
@@ -309,14 +309,14 @@ Geben Sie die IPv4-Adresse Ihrer Instanz sowie „Administrator“ als Benutzer 
 
 > [!primary]
 >
-Sollten bei diesem Vorgang Probleme auftreten, überprüfen Sie, dass Remoteverbindungen (RDP) auf Ihrem Gerät erlaubt sind, indem Sie Ihre Systemeinstellungen, Firewall-Regeln und mögliche Netzwerkeinschränkungen kontrollieren.
+Sollten bei diesem Vorgang Probleme auftreten, stellen Sie sicher, dass Remoteverbindungen (RDP) auf Ihrem Gerät erlaubt sind, indem Sie Ihre Systemeinstellungen, Firewall-Regeln und mögliche Netzwerkeinschränkungen kontrollieren.
 >
 
 ##### **Über Linux**
 
 Sie können über die eingebaute VNC-Konsole im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) auf Public Cloud Instanzen zugreifen. Für den Login über Ihr lokales Gerät müssen die Verbindungen über eine Client-Anwendung hergestellt werden, die das Remote Desktop Protocol (RDP) unterstützt.
 
-Remmina Remote Desktop Client beispielsweise ist eine kompatible Anwendung, die bei einer Ubuntu-Desktop-Installation enthalten sein sollte. Wenn Sie Remmina in Ihrer Umgebung nicht finden können, können Sie es von der [offiziellen Website](https://remmina.org/) herunterladen.
+Remmina Remote Desktop Client beispielsweise ist eine kompatible Anwendung, die bei einer Ubuntu-Desktop-Installation enthalten sein sollte. Wenn Sie Remmina in Ihrer Umgebung nicht finden können, können Sie es von der [offiziellen Webseite](https://remmina.org/) herunterladen.
 
 ![Linux Remote](images/linux-connect-01.png){.thumbnail}
 
