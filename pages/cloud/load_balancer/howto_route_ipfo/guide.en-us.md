@@ -15,7 +15,7 @@ For more information on failover IPs, you can consult our [webpage](https://www.
 
 The OVH Load Balancer solution offers load balancing features for a range of different protocols: HTTP, HTTPS, TCP and UDP. When you link it to a failover IP, you can switch over your existing infrastructure to a Load Balancer without disturbing or interrupting services for your customers. Effectively, you will not need to change the IP address any longer if you are still using the failover IP, so you will not need to wait for your DNS zone to propagate any changes.
 
-For more information on the OVH Load Balancer solution, you can read our [Introduction to the OVH Load Balancer](https://docs.ovh.com/world/load-balancer/loadbalancer-introduction/){.external}.
+For more information on the OVH Load Balancer solution, you can read our [Introduction to the OVH Load Balancer](https://docs.ovh.com/us/en/load-balancer/loadbalancer-introduction/){.external}.
 
 **This guide will explain how to use the failover IP with the OVH Load Balancer service.**
 
