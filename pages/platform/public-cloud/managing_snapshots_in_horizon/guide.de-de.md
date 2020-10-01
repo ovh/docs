@@ -2,6 +2,7 @@
 title: Verwaltung der Speicherauszüge (Snapshots) einer Instanz in Horizon
 excerpt: Verwaltung der Speicherauszüge (Snapshots) einer Instanz in Horizon
 slug: verwaltung_der_speicherauszuge_snapshots_einer_instanz_in_horizon
+section: 'Horizon'
 legacy_guide_number: g1770
 ---
 

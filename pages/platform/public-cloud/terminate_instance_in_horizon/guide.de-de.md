@@ -3,6 +3,7 @@ title: Terminieren (Löschen) einer Instanz in Horizon
 excerpt: Terminieren (Löschen) einer Instanz in Horizon
 slug: terminieren_loschen_einer_instanz_in_horizon
 legacy_guide_number: g1783
+section: 'Horizon'
 ---
 
 

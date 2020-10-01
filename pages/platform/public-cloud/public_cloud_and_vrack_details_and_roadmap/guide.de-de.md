@@ -3,6 +3,7 @@ title: Public Cloud und vRack - Erklärungen und Roadmap
 excerpt: Public Cloud und vRack - Erklärungen und Roadmap
 slug: public_cloud_und_vrack_-_erklarungen_und_roadmap
 legacy_guide_number: g2148
+hidden: true
 ---
 
 
