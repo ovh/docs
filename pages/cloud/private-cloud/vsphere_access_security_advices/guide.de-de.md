@@ -2,13 +2,12 @@
 title: vSphere Web Client sichern
 slug: vsphere-web-zugang-sichern
 excerpt: Hier erfahren Sie, wie Sie den Zugang zu Ihrem vSphere Web Client sichern.
-section: Informationen zu Meltdown und Spectre
-order: 01
+section: Erste Schritte
 ---
 
-**Stand 30.06.2020**
+**Letzte Aktualisierung am 30.06.2020**
 
-## Einleitung
+## Ziel
 
 Um die Integrität Ihrer Infrastruktur zu gewährleisten, empfehlen wir, den Zugriff darauf einzuschränken. Hierzu stehen verschiedene Methoden zur Verfügung.
 
@@ -18,7 +17,7 @@ Um die Integrität Ihrer Infrastruktur zu gewährleisten, empfehlen wir, den Zug
 
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} angemeldet.
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Zugriff auf bestimmte IP-Adressen einschränken
 

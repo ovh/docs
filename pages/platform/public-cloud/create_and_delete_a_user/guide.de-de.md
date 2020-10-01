@@ -7,7 +7,7 @@ section: 'Projektverwaltung'
 
 **Letzte Aktualisierung am 06.12.2019**
 
-## Einführung
+## Ziel
 
 Um die APIs für Horizon oder OpenStack verwenden zu können, müssen Sie einen Benutzer erstellen. Die Anzahl der OpenStack User ist nicht begrenzt.
 

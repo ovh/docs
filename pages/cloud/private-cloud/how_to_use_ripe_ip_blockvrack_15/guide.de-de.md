@@ -2,6 +2,7 @@
 title: Verwendung von RIPE IP und vRack 1.5
 excerpt: Wie nehme ich eine VM ins vRack 1.5 auf? Wie verwende ich eine IP des RIPE Blocks?
 slug: verwendung_von_ripe_ip_und_vrack_15
+section: Netzwerk
 ---
 
 

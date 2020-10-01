@@ -1,26 +1,25 @@
 ---
-title: Eine Private Cloud kündigen
+title: Private Cloud kündigen
 slug: eine-private-cloud-kuendigen
-excerpt: Erfahren Sie hier, wie Sie eine Private Cloud Infrastruktur kündigen können
-section: Funktionen von OVHcloud
-order: 09
+excerpt: Erfahren Sie hier, wie Sie eine Hosted Private Cloud Infrastruktur kündigen können
+section: OVHcloud Funktionen
 ---
 
-**Stand 18.06.2020**
+**Letzte Aktualisierung am 18.06.2020**
 
-## Einleitung
+## Ziel
 
-Unser Private Cloud Angebot entspricht nicht mehr Ihren Anforderungen? Oder haben Sie eine neue Infrastruktur bestellt, um die alte zu ersetzen? Dann können Sie diese Infrastruktur kündigen, sobald Sie alle Ihre dort gespeicherten Daten gesichert haben.  
+Unser Hosted Private Cloud Angebot entspricht nicht mehr Ihren Anforderungen? Oder haben Sie eine neue Infrastruktur bestellt, um die alte zu ersetzen? Dann können Sie diese Infrastruktur kündigen, sobald Sie alle Ihre dort gespeicherten Daten gesichert haben.  
 
-**Erfahren Sie hier, wie Sie eine Private Cloud kündigen können** 
+**Diese Anleitung erklärt, wie Sie eine Private Cloud kündigen können.** 
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich unter `Server`{.action} im Bereich `Private Cloud`{.action}.
-- Sie besitzen ein Produkt der Art [Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud//){.external}.
+- Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
 
 
-## Praktische Anwendung
+## In der praktischen Anwendung
 
 Bei Private Cloud gibt es keine Mindestvertragslaufzeit. Wie jedoch in den [Besonderen Geschäftsbedingungen](https://www.ovh.de/support/agb/OVH_Anlage_Dedicated_Cloud.pdf){.external} beschrieben, ist jeder angebrochene Monat fällig und im Voraus zu bezahlen.
 

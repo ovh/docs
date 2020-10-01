@@ -3,6 +3,7 @@ title: Aussetzen oder Pausieren einer Instanz
 excerpt: Aussetzen oder Pausieren einer Instanz in Horizon
 slug: aussetzen_oder_pausieren_einer_instanz
 legacy_guide_number: g1781
+section: 'Horizon'
 ---
 
 

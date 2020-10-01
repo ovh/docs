@@ -2,6 +2,7 @@
 title: Abschalten einer Instanz
 excerpt: Abschalten einer Instanz in Horizon
 slug: abschalten_einer_instanz
+section: 'Horizon'
 legacy_guide_number: g1780
 ---
 

@@ -3,8 +3,7 @@ title: IP-Block hinzufügen
 slug: ip-block-hinzufuegen
 excerpt: Erfahren Sie hier, wie Sie einen IP-Block für Ihr Hosted Private Cloud Projekt bestellen
 legacy_guide_number: '7766457'
-section: OVH Funktionen
-order: 1
+section: OVHcloud Funktionen
 ---
 
 **Letzte Aktualisierung am 21.09.2020**
@@ -17,8 +16,8 @@ IP-Blöcke können verwendet werden, um Ihre Dienste über das Internet zugängl
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
-- Sie verfügen über eine [Hosted Private Cloud Infrastruktur](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external} in Ihrem OVHcloud Account.
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) eingeloggt.
+- Sie verfügen über eine [Hosted Private Cloud Infrastruktur](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) in Ihrem OVHcloud Account.
 
 ## In der praktischen Anwendung
 

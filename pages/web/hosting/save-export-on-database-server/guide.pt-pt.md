@@ -62,7 +62,7 @@ Salvaguardar e exportar uma base de dados fora da Área de Cliente
 
 ##### 1.1\. Exportar uma base MySQL ou MariaDB a partir do phpMyAdmin OVHcloud (apenas para o serviço SQL Privado)
 
-Para exportar uma base de dados diretamente a partir do phpMyAdmin, antes de mais tem de se conectar a ela. Se necessário, consulte o guia [«Conexão a uma base de dados do servidor de bases de dados»](../connexion-base-de-donnees-serveur-bdd){.external}.
+Para exportar uma base de dados diretamente a partir do phpMyAdmin, antes de mais tem de se conectar a ela. Se necessário, consulte o guia [«Conexão a uma base de dados do servidor de bases de dados»](../conexao-base-de-dados-servidor-bdd/){.external}.
 
 Depois de se conectar ao phpMyAdmin, clique no nome da base de dados que deseja exportar e, de seguida, clique no separador `Exportar`{.action} ao alto.
 
@@ -102,7 +102,7 @@ mysqldump --host=servidor --user=utilizador --port=port --password=password nome
 
 #### 2. Exportação e importação de bases de dados PostgreSQL fora da Área de Cliente
 
- Em certos casos, é possível que a RAM disponível no seu servidor de bases de dados não permita realizar a exportação desejada. Se isso lhe acontecer, recomendamos que utilize a ferramenta OVHcloud disponível na Área de Cliente. Essa ferramenta permitirá a utilização de recursos externos ao serviço para que realize a operação. Consulte a secção [«Salvaguardar e exportar uma base de dados a partir da Área de Cliente»](/#salvaguardar-e-exportar-uma-base-de-dados-a-partir-da-area-de-cliente){.external} deste guia.
+ Em certos casos, é possível que a RAM disponível no seu servidor de bases de dados não permita realizar a exportação desejada. Se isso lhe acontecer, recomendamos que utilize a ferramenta OVHcloud disponível na Área de Cliente. Essa ferramenta permitirá a utilização de recursos externos ao serviço para que realize a operação. Consulte a secção [«Salvaguardar e exportar uma base de dados a partir da Área de Cliente»](./#salvaguardar-e-exportar-uma-base-de-dados-a-partir-da-area-de-cliente){.external} deste guia.
  
 ##### 2.1\. Exportar uma base PostgreSQL a partir da linha de comandos
 

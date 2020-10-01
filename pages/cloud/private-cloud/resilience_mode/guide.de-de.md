@@ -1,27 +1,26 @@
 ---
 title: 'Resilienz-Modus verwenden'
 slug: resilienz-modus
-excerpt: 'Hier erfahren Sie, wie Sie den Resilienz-Modus von OVH verwenden.'
+excerpt: 'Erfahren Sie hier, wie Sie den Resilienz-Modus von OVHcloud verwenden'
 legacy_guide_number: '7766742'
-section: 'OVH Funktionen'
+section: OVHcloud Funktionen
 ---
 
-**Stand 09.01.2019**
+**Letzte Aktualisierung am 09.01.2019**
 
-## Einleitung
+## Ziel
 
-Der Resilienz-Modus ist ein von OVH entwickeltes Tool, das eine Störung auf Ihren Host-Servern (_Hosts_) simuliert. So können Sie überprüfen, dass ein *High-Availability-* (HA) oder *Fault-Tolerance-* (FA) System in Ihrem Cluster in der **Entwicklungsumgebung** korrekt funktioniert.
+Der Resilienz-Modus ist ein von OVHcloud entwickeltes Tool, das eine Störung auf Ihren Host-Servern (_Hosts_) simuliert. So können Sie überprüfen, dass ein *High-Availability-* (HA) oder *Fault-Tolerance-* (FA) System in Ihrem Cluster in der **Entwicklungsumgebung** korrekt funktioniert.
 
-**In dieser Anleitung erfahren Sie, wie Sie den Resilienz-Modus von OVH verwenden.**
+**Diese Anleitung erklärt, wie der Resilienz-Modus funktioniert.**
 
 ## Voraussetzungen
 
-* Sie verfügen über ein [Private Cloud](https://www.ovh.de/private-cloud/){.external} Angebot.
-* Sie haben Zugriff auf das vSphere-Verwaltungsinterface.
+- Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
+- Sie haben Zugriff auf das vSphere-Verwaltungsinterface.
 
 
-
-## Beschreibung
+## In der praktischen Anwendung
 
 Stellen Sie zunächst sicher, dass die folgenden Voraussetzungen erfüllt sind:
 

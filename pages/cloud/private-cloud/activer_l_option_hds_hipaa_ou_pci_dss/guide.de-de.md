@@ -1,13 +1,13 @@
 ---
 title: 'PCI-DSS-Zertifizierung für Ihre Private Cloud aktivieren'
 slug: pci-dss-option-aktivieren
-excerpt: 'So aktivieren Sie die PCI-DSS-Zertifizierung für Ihre Private Cloud'
-section: 'OVH Dienstleistungen und Optionen'
+excerpt: 'Erfahren Sie hier, wie Sie Finanz- und Patientendaten auf Ihrer Hosted Private Cloud Infrastruktur hosten'
+section: OVHcloud Dienste und Optionen
 ---
 
 **Letzte Aktualisierung am 13.02.2020**
 
-## Einleitung
+## Ziel
 
 Sie haben die Möglichkeit, für Ihre Private Cloud die PCI-DSS-Zertifizierung zu aktivieren, was zum Beispiel beim Hosten von [Kreditkartendaten](https://www.ovh.de/private-cloud/payment-infrastructure/pci-dss.xml) unerlässlich sein kann.
 
@@ -16,7 +16,7 @@ Sie haben die Möglichkeit, für Ihre Private Cloud die PCI-DSS-Zertifizierung z
 ## Voraussetzungen
 
 - Sie verfügen über eine Private Cloud Infrastruktur mit Version 6.0 oder höher.
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) eingeloggt und befinden sich im Bereich `Dedicated`{.action} (im neuen Interface im Bereich „Server“).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
 
 ## In der praktischen Anwendung
 
