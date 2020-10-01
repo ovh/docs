@@ -1,12 +1,13 @@
 ---
 title: Die Rechte eines Nutzers ändern
+excerpt: Erfahren Sie hier, wie Sie Nutzerberechtigungen für vSphere verwalten
 slug: die-rechte-eines-nutzers-aendern
 section: OVHcloud Funktionen
 ---
 
-**Stand 30.04.2020**
+**Letzte Aktualisierung am 30.04.2020**
 
-## Einleitung
+## Ziel
 
 Diese Anleitung erläutert die Verwaltung der Nutzerrechte für das Private Cloud Angebot von OVHcloud.
 
@@ -14,10 +15,10 @@ Diese Anleitung erläutert die Verwaltung der Nutzerrechte für das Private Clou
 
 ## Voraussetzungen
 
-* Sie nutzen ein [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external} Angebot.
-* Sie sind in Ihrem [OVHcloud Kunden Center](https://www.ovh.com/auth/?action=gotomanager){.external} angemeldet.
+- Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
 
-## Beschreibung
+## In der praktischen Anwendung
 
 Klicken Sie auf **Server**, dann auf **Private Cloud**. Wählen Sie nun die Infrastruktur, für die Sie die Nutzerrechte bearbeiten möchten.
 

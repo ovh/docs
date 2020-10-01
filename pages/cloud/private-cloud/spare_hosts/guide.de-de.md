@@ -1,25 +1,28 @@
 ---
-title: Die Spare-Hosts
-excerpt: Bereitstellung eines Spare-Hosts in der Dedicated Cloud
+title: Spare-Host Auslieferung und Rückgabe
+excerpt: Erfahren Sie hier, wie die Bereitstellung eines Spare-Hosts abläuft
 slug: die_spare-hosts
 section: OVHcloud Funktionen
 order: 04
 ---
 
 
-**Stand 17.07.2020**
+**Letzte Aktualisierung am 17.07.2020**
 
-## Voraussetzungen
-
-- Sie nutzen ein Angebot der Art [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external}.
-
-## Einleitung
+## Ziel
 
 In den Verträgen von OVHcloud wird der Ersatz eines unzugänglichen Hosts garantiert.
 
 **Diese Anleitung erklärt, wie der Austausch funktioniert.**
 
-## Lieferung eines Ersatz-Hosts
+
+## Voraussetzungen
+
+- Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
+
+## In der praktischen Anwendung
+
+### Lieferung eines Ersatz-Hosts
 
 Wenn einer Ihrer Hosts ausfällt, liefern wir Ihnen automatisch und kostenfrei einen Ersatz-Host in Ihre Infrastruktur, um die Dienstkontinuität zu gewährleisten. 
 
@@ -32,7 +35,7 @@ Standardmäßig ist der Dienst HA ([High Availability](../vmware-ha-high-availab
 > Ist noch ein CD/DVD-Laufwerk auf einer VM installiert oder mit ihr verbunden, so kann der Dienst HA nicht auf dem Ersatz-Host gestartet werden. Es wird empfohlen, das CD/DVD-Laufwerk immer als Clientgerät einzurichten.
 >
 
-## Ersatz-Host erhalten. Was nun?
+### Vorgehensweise nach Erhalt des Ersatz-Host
 
 Wenn der Original-Host wieder funktioniert (nach der Reparatur), können Sie einen der beiden Hosts (Original oder Ersatz) an uns zurückgeben.
 

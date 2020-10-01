@@ -1,14 +1,13 @@
 ---
-title: Das API von vScope verwenden
+title: vScope API verwenden
 slug: vscopeapi
-excerpt: Das API vScope ermöglicht Ihnen, die Monitoringdaten in Ihren Anwendungen zu verwenden
-section: OVHcloud Dienstleistungen und Optionen
-order: 1
+excerpt: Die vScope API ermöglicht Ihnen, die Monitoringdaten in Ihren Anwendungen zu verwenden
+section: OVHcloud Dienste und Optionen
 ---
 
 **Letzte Aktualisierung am 25.08.2020**
 
-## Einleitung
+## Ziel
 
 OVHcloud stellt Ihnen mit **vScope** ein Überwachungstool für Ihre virtuellen Maschinen und Ihre Infrastruktur zur Verfügung.
 
@@ -16,34 +15,34 @@ Es handelt sich um eine Website, auf der alle nützlichen Informationen zur Verw
 
 Diese Informationen sind auch über APIv6 und API Metrics verfügbar.
 
-**Dieses Handbuch beschreibt die Verwendung dieser APIs**.
+**Diese Anleitung beschreibt die Verwendung dieser APIs.**
 
 ## Voraussetzungen
 
-- eine [Hosted Private Cloud Infrastruktur](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/)
-- Sie sind im Verwaltungsinterface von vScope eingeloggt
+- Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
+- Sie sind im Verwaltungsinterface von vScope eingeloggt.
 
-## Praktische Anwendung
+## In der praktischen Anwendung
 
 Das Tool vScope stellt zwei Arten von Informationen zur Verfügung:
 
-- **Live-**Informationen, die den Daten der verschiedenen Komponenten zu einem Moment „T“ entsprechen.
+- Live-Informationen, die den Daten der verschiedenen Komponenten zu einem Zeitpunkt „T“ entsprechen.
 - Grafiken, die die früheren Leistungsdaten der verschiedenen Komponenten veranschaulichen. Zum Beispiel: CPU und RAM einer virtuellen Maschine.
 
 
-### Die Live-**Daten**sammeln
+### Die Live-Daten sammeln
 
-Die **Live-**Daten sind die von der Hauptseite der Benutzeroberfläche vScope aus verfügbaren Daten.
+Die Live-Daten sind die von der Hauptseite der Benutzeroberfläche vScope aus verfügbaren Daten.
 
 ![vScope-API](images/vScope1.png){.thumbnail}
 
-Sie können die **Live-**Daten für die folgenden Komponenten abrufen:
+Sie können die Live-Daten für die folgenden Komponenten abrufen:
 
 - Filer
 - Hosts
 - Virtuelle Maschinen
 
-Die Verwendung des API geschieht über drei APIv-Abrufe:
+Die Verwendung geschieht über drei API-Aufrufe:
 
 #### Filer
 
@@ -59,7 +58,7 @@ Die Verwendung des API geschieht über drei APIv-Abrufe:
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}
 > 
 
-#### virtuelle Maschinen
+#### VMs
 
 > [!api]
 > 
@@ -68,16 +67,16 @@ Die Verwendung des API geschieht über drei APIv-Abrufe:
 
 ### Die historischen Daten sammeln (Grafiken)
 
-Um die historischen Daten (Grafiken) zu sammeln und zu verwenden, nutzen wir das Produkt **Metrics Data Platforms**.
+Um die historischen Daten (Grafiken) zu sammeln und zu verwenden, nutzen wir dem Dienst **Metrics Data Platforms**.
 
 Über das Protokoll Opentsdb oder WARP10 können Sie Ihre Daten in Form von Punkten abrufen. Sie können diese Punkte nach Belieben mit Ihrer Anwendung auswerten oder sie direkt anzeigen.
 
 
-Dieser Artikel handelt von der Verwendung des Protokolls Opentsdb für die unbearbeitete Anzeige von Daten (keine grafische Wiedergabe).
+Der folgende Abschnitt erklärt die Verwendung des Protokolls OpenTSDB für die unbearbeitete Anzeige von Daten (keine grafische Wiedergabe).
 
-Um die **Metrics Data Platforms** verwenden zu können, müssen Sie ein Lesetoken erhalten. Mit der neuen Version von vScope besitzt jeder Nutzer der Infrastruktur ein Lesetoken. 
+Um die **Metrics Data Platforms** verwenden zu können, müssen Sie ein Lesetoken (*read*) erhalten. Mit der neuen Version von vScope besitzt jeder Nutzer der Infrastruktur ein Lesetoken. 
 
-Für den jeweiligen Nutzer verwenden Sie den folgenden APIv6-Abruf für das Lesetoken:
+Für den jeweiligen Nutzer verwenden Sie den folgenden APIv6-Aufruf für das Lesetoken:
 
 > [!api]
 > 
@@ -157,19 +156,20 @@ D
 
 Erläuterung der verschiedenen verwendeten Felder:
 
-- read: der für die Durchführung des Antrags verwendete Nutzer (dies wird immer read sein);
-- XXXXXXXXXXXX_XXXXXXXXXXXZZZZZZZZZZZ_YYYYYYYYYYYYYY-XXXXXXXXX: das vorher über APIv6 abgerufene Token;
-- opentsdb.gra1-ovh.metrics.ovh.net : Endpunkt OpenTSDB, ebenfalls über APIv6 abgerufen. Dieser Endpunkt kann je nach Ihrem Standort variieren;
-- start: der dem Datum des Beginns der Abfrage entsprechende Zeitstempel;
-- queries: Tabelle mit den abzufragenden Metriken. Mehrere metrische Werte können in einer einzigen Abfrage abgerufen werden;
-- metric: Name der abzufragenden Metrik;
-- aggregator: Name der Aggregationsfunktion (weitere Details entnehmen Sie bitte der Dokumentation OpenTSDB);
-- downsample: Name der Stichprobenfunktion (ermöglicht es, die Zahl der abzurufenden Daten zu reduzieren). optionaler Parameter);
-- tags: Liste von Labels in der Form Schlüssel/Wert;
+- **read**: der für die Durchführung des Antrags verwendete Nutzer (dies wird immer *read* sein);
+- **XXXXXXXXXXXX_XXXXXXXXXXXZZZZZZZZZZZ_YYYYYYYYYYYYYY-XXXXXXXXX**: das vorher über APIv6 abgerufene Token;
+- **opentsdb.gra1-ovh.metrics.ovh.net**: Endpunkt OpenTSDB, ebenfalls über APIv6 abgerufen. Dieser Endpunkt kann je nach Ihrem Standort variieren;
+- **start**: der dem Datum des Beginns der Abfrage entsprechende Zeitstempel;
+- **queries**: Tabelle mit den abzufragenden Metriken. Mehrere metrische Werte können in einer einzigen Abfrage abgerufen werden;
+- **metric**: Name der abzufragenden Metrik;
+- **aggregator**: Name der Aggregationsfunktion (weitere Details entnehmen Sie bitte der Dokumentation zu OpenTSDB);
+- **downsample**: Name der Stichprobenfunktion (optional, ermöglicht es, die Zahl der abzurufenden Daten zu reduzieren);
+- **tags**: Liste von Labels in der Form Schlüssel/Wert;
 
-Andere Parameter können auch geliefert werden. Bitte lesen Sie für mehr Details in der Dokumentation von api OpenTSDB nach.
+Andere Parameter können auch geliefert werden. Bitte lesen Sie für mehr Details in der Dokumentation der OpenTSDB API nach.
 
-Sie werden einen Json mit der Zusammenfassung der Abfrage bekommen, sowie die mit dem Wert im Feld **dps** verbundenen Zeitstempel.
+Sie werden dann ein *json* mit der Zusammenfassung der Abfrage erhalten, sowie die mit dem Wert im Feld **dps** verbundenen Zeitstempel.
+
 Beispiel:
 
 ```json
@@ -265,7 +265,7 @@ Beispiel:
 ]
 ```
 
-Für mehr Details zu den Abrufen mit OpenTSDB können Sie in der folgenden Dokumentation nachlesen: [OpenTSDB api query](http://opentsdb.net/docs/build/html/api_http/query/index.html)
+Für mehr Details zu API Calls mit OpenTSDB können Sie in der folgenden Dokumentation nachlesen: [OpenTSDB API query](http://opentsdb.net/docs/build/html/api_http/query/index.html)
 
 ## Weiterführende Informationen
 

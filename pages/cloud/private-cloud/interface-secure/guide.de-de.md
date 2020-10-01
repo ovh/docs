@@ -2,8 +2,7 @@
 title: Das sichere Interface verwenden
 slug: sicheres-interface
 excerpt: Erfahren Sie hier, wie Sie das sichere Interface verwenden, um kritische Operationen zu bestätigen
-section: OVH Dienstleistungen und Optionen
-order: 04
+section: OVHcloud Dienste und Optionen
 ---
 
 **Letzte Aktualisierung am 10.09.2020**

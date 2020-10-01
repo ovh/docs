@@ -1,26 +1,26 @@
 ---
 title: Die Zugriffsregeln für das vCenter ändern
 slug: zugriffsregeln-fuer-vcenter-aendern
-excerpt: Sehen Sie hier, wie Sie die Zugriffsregeln für das vCenter ändern können
-section: Funktionen von OVHcloud
+excerpt: Erfahren Sie hier, wie Sie die Zugriffsregeln für vCenter ändern können
+section: OVHcloud Funktionen
 ---
 
-**Stand 17.07.2020**
+**Letzte Aktualisierung am 17.07.2020**
 
-## Einleitung
+## Ziel
 
-Um die Sicherheit Ihrer Hosted Private Cloud Infrastruktur zu verbessern, können Sie den Zugang zum vCenter einschränken und verwalten.
+Um die Sicherheit Ihrer Hosted Private Cloud Infrastruktur zu verbessern, können Sie den Zugang zu vCenter einschränken und verwalten.
 
-**Sehen Sie hier, wie Sie die Zugriffsregeln für das vCenter im OVHcloud Kundencenter ändern können.**
+**Sehen Sie hier, wie Sie die Zugriffsregeln für vCenter im OVHcloud Kundencenter ändern können.**
 
 ## Voraussetzungen
 
-- Sie nutzen ein Angebot der Art [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external}.
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) angemeldet.
+- Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
 
-## Praktische Anwendung
+## In der praktischen Anwendung
 
-Melden Sie sich in Ihrem  [OVHcloud  Kundencenter an](https://www.ovh.com/auth/?action=gotomanager). Gehen Sie in die Rubrik `Server`{.action} und wählen Sie dort Ihren Dienst unter `Private Cloud`{.action} in der linken Navigationsleiste.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und wählen Sie dann den Bereich `Server`. Klicken Sie im linken Menü auf `Private Cloud` und wählen Sie die betreffende Infrastruktur aus.
 
 Klicken Sie auf der Startseite des Dienstes auf `Sicherheit`{.action} und danach auf `Zugangseinstellungen für vCenter bearbeiten`{.action}.
 
@@ -32,11 +32,11 @@ Es öffnet sich ein Fenster. Wählen Sie in seinem Drop-down-Menü zwischen „O
 
 > [!primary]
 >
-> Wenn Sie „Eingeschränkt“ gewählt haben, ziehen Sie die Anleitung [„Die Verbindung von IPs mit dem vCenter erlauben“](../verbindung-von-ip-zum-vcenter-erlauben/) zu Rate.
+> Wenn Sie „Eingeschränkt“ gewählt haben, ziehen Sie die Anleitung [„IP-Autorisierung für vCenter“](../verbindung-von-ip-zum-vcenter-erlauben/) zu Rate.
 > 
 
 ## Weiterführende Informationen
 
-[Die Verbindung von IPs mit dem vCenter erlauben](../verbindung-von-ip-zum-vcenter-erlauben/)
+[IP-Autorisierung für vCenter](../verbindung-von-ip-zum-vcenter-erlauben/)
 
-Für den Austausch mit unserer User-Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Für den Austausch mit unserer User Community gehen Sie auf  <https://community.ovh.com/en/>.
