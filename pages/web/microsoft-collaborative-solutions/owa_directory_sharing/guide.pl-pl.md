@@ -1,78 +1,108 @@
 ---
-title: 'Exchange: współdzielenie katalogu w interfejsie OWA'
-excerpt: ''
+title: 'Współdzielenie folderów w interfejsie OWA'
 slug: exchange_2016_wspoldzielenie_katalogu_poprzez_webmail_owa
+excerpt: 'Dowiedz się, jak współdzielić foldery między kontami Exchange'
 section: 'Outlook Web Application (Aplikacja WWW)'
-legacy_guide_number: g1929
+order: 5
 ---
 
-## Zezwolenie na współdzielenia skrzynki e-mail - część 1
-W naszym przykładzie folder będzie udostępniany przez konto ovhguide@support-exchange.eu dla konta ovhguide2@support-exchange.eu.
-Najpierw należy zezwolić na współdzielenie skrzynki e-mail.
-Aby to zrobić, kliknij prawym przyciskiem na nazwę skrzynki e-mail i kliknij na "Uprawnienia".
-Pojawi się nowe okno.
+**Ostatnia aktualizacja: 07-04-2020**
 
-![](images/img_2976.jpg){.thumbnail}
+## Wprowadzenie
 
+Przyznanie pełnomocnictwa do korzystania z całego konta e-mail nie zawsze jest właściwe. Funkcja współdzielenia folderów Exchange umożliwia przyznanie innym użytkownikom dostępu do wybranych folderów na koncie przez przypisanie konkretnych uprawnień.
 
-## Zezwolenie na współdzielenia skrzynki e-mail - część 2
-Kliknij na +, aby dodać współpracownika, który otrzyma możliwość współdzielenia konta e-mail.
-Pojawi się nowy interfejs.
+**Dowiedz się, jak współdzielić foldery i zdefiniować uprawnienia dostępu do nich przy użyciu interfejsu OWA (Outlook Web App).**
 
-![](images/img_2982.jpg){.thumbnail}
+> [!primary]
+>
+> Choć ten przewodnik dotyczy usług Exchange, z instrukcji można skorzystać również w przypadku kont [E-mail Pro](https://www.ovh.pl/emaile/email-pro/).
+>
 
 
-## Zezwolenie na współdzielenia skrzynki e-mail - część 3
-Dodaj użytkownika i kliknij na "Dodaj".
+## Wymagania początkowe
 
-![](images/img_2983.jpg){.thumbnail}
-
-
-## Zezwolenie na współdzielenia skrzynki e-mail - część 4
-Następnie przyznaj temu użytkownikowi niezbędne uprawnienia:
-
-Chcesz, żeby użytkownik ovhguide2@support-exchange.eu miał dostęp jedynie do folderu "Wersje robocze" skrzynki: ovhguide@support-exchange.eu.
-
-Jeśli chodzi o uprawnienia:
-
-Poziom uprawnień: brak
-Należy zaznaczyć: Widoczny folder
-
-Uprawnienia zostaną przyznane tylko dla wybranego folderu.
-
-Potwierdź klikając na "ok".
-
-![](images/img_2985.jpg){.thumbnail}
+- skonfigurowane [rozwiązanie OVHcloud Exchange](https://www.ovh.pl/emaile/hosted-exchange/)
+- dostęp do konta Exchange (adres e-mail i hasło)
 
 
-## Uruchamianie uprawnień współdzielenia katalogu
-Teraz nadaj uprawnienia dla katalogu, w tym przypadku dla katalogu "Wersje robocze".
+## W praktyce
 
-Kliknij prawym przyciskiem na katalog "Wersje robocze". Następnie kliknij na "Uprawnienia". 
+### Krok 1: definiowanie uprawnień dostępu do folderu
 
-Możesz wykonać te kroki dla wybranego katalogu.
+Zaloguj się na konto Exchange przy użyciu interfejsu [OVHcloud webmail](https://www.ovh.pl/mail/). Kliknij prawym przyciskiem myszy folder do udostępnienia i wybierz z menu kontekstowego pozycję `Uprawnienia...`{.action}.
 
-Musisz wykonać te same kroki, co wcześniej, czyli dodać współpracownika i nadać mu uprawnienia do katalogu.
+![sharefolder](images/exchange-folder-step1.png){.thumbnail}
 
-Możesz nadać różne uprawnienia: Właściciel, Redaktor, Autor,...
+W następnym interfejsie dodaj użytkownika, klikając ikonę `+`{.action}. Zacznij wpisywać nazwę w celu wyświetlenia propozycji z Twoich kontaktów, wpisz cały adres e-mail lub użyj funkcji wyszukiwania `Wyszukaj w katalogu`{.action}.
 
-![](images/img_2986.jpg){.thumbnail}
+Do wyboru są zestawy już zdefiniowanych uprawnień („Poziom uprawnień”). Najłatwiej najpierw wybrać jedną z tych ról, na przykład „Autor”, aby zobaczyć uprawnienia, jakie przydzieli. Następnie wystarczy je dostosować do Twoich potrzeb, modyfikując pola wyboru.
 
+![sharefolder](images/exchange-folder-step2aag.gif){.thumbnail}
 
-## Pobieranie współdzielonego katalogu - część 1
-W interfejsie [Webmail Exchange](https://ex.mail.ovh.net/owa/) drugiego użytkownika dodaj współdzielony folder.
+#### Szczegóły uprawnień
 
-Kliknij prawym przyciskiem na swoje konto e-mail, wybierz "dodaj folder udostępniony".
+- **Odczyt**
 
-![](images/img_2988.jpg){.thumbnail}
-
-
-## Pobieranie współdzielonego katalogu - część 2
-Wpisz konto użytkownika, który udostępnia katalog.
+|Uprawnienie|Opis|
+|---|---|
+|Brak|Użytkownik nie może wyświetlać zawartości folderu.|
+|Pełne szczegóły|Użytkownik może wyświetlać zawartość folderu.|
 
 
-## Pobieranie współdzielonego katalogu - część 3
-Nasz katalog "Wersje robocze" pojawia się poprawnie w panelu [OWA](https://ex.mail.ovh.net/owa/).
+- **Dostęp z prawem usuwania**
 
-![](images/img_2989.jpg){.thumbnail}
+|Uprawnienie|Opis|
+|---|---|
+|Brak|Użytkownik nie może usunąć żadnych elementów.|
+|Własne|Użytkownik może usunąć elementy utworzone przez siebie.|
+|Wszystko|Użytkownik może usunąć dowolny element w folderze.|
 
+
+- **Zapis**
+
+|Uprawnienie|Opis|
+|---|---|
+|Tworzenie elementów|Użytkownik może tworzyć nowe elementy w folderze.|
+|Tworzenie podfolderów|Użytkownik może tworzyć nowe podfoldery w ramach współdzielonego folderu.|
+|Edycja własnych|Użytkownik może edytować elementy utworzone przez siebie.|
+|Edycja wszystkiego|Użytkownik może edytować dowolne elementy w folderze.|
+
+
+- **Inne**
+
+|Uprawnienie|Opis|
+|---|---|
+|Właściciel folderu|Użytkownik ma takie same uprawnienia do folderu jak jego właściciel (wszystkie uprawnienia).|
+|Kontakt folderu|Użytkownik będzie otrzymywać powiadomienia i żądania dotyczące folderu (zmiany statusu, żądania uprawnień, komunikaty o błędach).|
+|Widoczny folder|Folder będzie widoczny na koncie użytkownika.|
+
+> [!primary]
+>**Podfoldery**
+> 
+> - Podfoldery utworzone we współdzielonym folderze będą automatycznie dziedziczyć uprawnienia folderu nadrzędnego. Jeśli przyznasz nowe uprawnienia do współdzielonego folderu i jego podfolderów, należy ustawić uprawnienia **do poszczególnych podfolderów**.
+> 
+> - Jeśli współdzielisz **podfolder** istniejącego folderu, dla którego nie ustawiono uprawnień, musisz zaznaczyć co najmniej pole wyboru „Widoczny folder” dla **folderu nadrzędnego**. Bez tego podfolder nie będzie widoczny na koncie użytkownika. (Użytkownik nie będzie mógł zobaczyć zawartości folderu nadrzędnego, o ile nie przyznasz mu również uprawnienia „Odczyt”).
+> 
+> - Użytkownicy nie będą mogli usunąć podfolderów, których sami nie utworzyli.
+> 
+> - Użytkownicy z uprawnieniem „Właściciel folderu” do podfolderu mogą zmienić jego nazwę i przyznać uprawnienia do niego.
+>
+
+
+### Krok 2: pobieranie współdzielonego folderu
+
+![sharefolder](images/exchange-folder-step3.png){.thumbnail}
+
+Zaloguj się na konto Exchange przy użyciu interfejsu [OVHcloud webmail](https://www.ovh.pl/mail/). Kliknij prawym przyciskiem myszy nazwę konta w lewym menu nawigacyjnym i wybierz pozycję `Dodaj folder współdzielony...`{.action} z menu kontekstowego. W nowym oknie wpisz nazwę konta, z którego został udostępniony folder. Zacznij wpisywać nazwę w celu wyświetlenia propozycji z Twoich kontaktów, wpisz cały adres e-mail lub użyj funkcji wyszukiwania `Wyszukaj w katalogu`{.action}. Potwierdź, klikając przycisk `Dodaj`{.action}. Nowy współdzielony folder pojawi się natychmiast pod innymi folderami.
+
+
+## Sprawdź również
+
+[Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
+
+[Delegowanie uprawnień do konta Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2013_przyznanie_uprawnien_full_access/)
+
+[Exchange: współdzielenie kalendarza w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa/)
+
+Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
