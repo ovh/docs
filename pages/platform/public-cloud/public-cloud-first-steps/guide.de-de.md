@@ -1,4 +1,4 @@
- ---
+---
 title: 'Erste Public Cloud Instanz erstellen und auf dieser einloggen'
 slug: public-cloud-erste-schritte
 excerpt: 'So starten Sie nach der Erstellung eines Projekts mit der Verwendung Ihres Public Cloud Dienstes'
@@ -6,9 +6,9 @@ section: 'Erste Schritte'
 order: 1
 ---
 
-**Stand 30.09.2020**
+**Letzte Aktualisierung am 30.09.2020**
 
-## Einleitung
+## Ziel
 
 OVHcloud Public Cloud Instanzen erfordern einen anderen Ansatz als VPS oder Dedicated Server.
 
@@ -17,10 +17,10 @@ OVHcloud Public Cloud Instanzen erfordern einen anderen Ansatz als VPS oder Dedi
 ## Voraussetzungen
 
 - Sie verfügen über ein [Public Cloud](https://www.ovhcloud.com/de/public-cloud/) Projekt in Ihrem OVHcloud Account.
-- Sie haben Zugriff auf das [ OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
 
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Schritt 1: SSH-Schlüssel erstellen
 
@@ -320,7 +320,7 @@ Remmina Remote Desktop Client beispielsweise ist eine kompatible Anwendung, die 
 
 ![Linux Remote](images/linux-connect-01.png){.thumbnail}
 
-Öffnen Sie Remmina und stellen Sie sicher, dass als Verbindungsprotokoll „RDP“ ausgewählt ist. Geben Sie die IPv4-Adresse Ihrer Public Cloud Instanz ein und klicken Sie auf „↩“ („Enter“).
+Öffnen Sie Remmina und stellen Sie sicher, dass als Verbindungsprotokoll „RDP“ ausgewählt ist. Geben Sie die IPv4-Adresse Ihrer Public Cloud Instanz ein und drücken Sie auf „↩“ („Enter“).
 
 ![Linux Remote](images/linux-connect-02.png){.thumbnail}
 
@@ -331,12 +331,10 @@ Erscheint eine Zertifikatsmeldung, klicken Sie auf `Ja`{.action}. Geben Sie ansc
 
 ## Weiterführende Informationen
 
-[Backup einer Instanz erstellen](https://docs.ovh.com/de/public-cloud/ein_backup_einer_instanz_erstellen/)
+[Backup einer Instanz erstellen](../ein_backup_einer_instanz_erstellen/)
 
-[Public Cloud Quota erhöhen](https://docs.ovh.com/de/public-cloud/public-cloud-quota-erhöhen/)
+[Public Cloud Quota erhöhen](../public-cloud-quota-erhoehen/)
 
-[Von der stündlichen auf monatliche Abrechnung umstellen](https://docs.ovh.com/de/public-cloud/abrechnungsart-aendern-public-cloud/)
-
-[Configuring additional SSH keys](https://docs.ovh.com/gb/en/public-cloud/configuring_additional_ssh_keys/) (Englisch)
+[Von der stündlichen auf monatliche Abrechnung umstellen](../abrechnungsart-aendern-public-cloud/)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
