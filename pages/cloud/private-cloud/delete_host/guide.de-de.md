@@ -1,26 +1,26 @@
 ---
 title: 'Host-Server löschen'
 slug: host-server-loeschen
-excerpt: 'So löschen Sie einen Host-Server aus Ihrer Private Cloud Infrastruktur'
+excerpt: 'Erfahren Sie hier, wie Sie einen Host-Server aus Ihrer Private Cloud entfernen'
 legacy_guide_number: '1442308'
-section: 'OVH Funktionen'
+section: OVHcloud Funktionen
 ---
 
-**Stand 24.07.2020**
+**Letzte Aktualisierung am 24.07.2020**
 
-## Einleitung
+## Ziel
 
-In einigen Fällen kann es nützlich sein, einen Host-Server aus Ihrem Cluster zu löschen, zum Beispiel, um einen ungenutzten „_Spare_-Host“ zu entfernen oder wenn Sie auf eine höhere Serverreihe umsteigen möchten.
+In einigen Fällen kann es nützlich sein, einen Host-Server aus Ihrem Cluster zu löschen, zum Beispiel, um einen ungenutzten „Spare-Host“ zu entfernen oder wenn Sie auf eine höhere Serverreihe umsteigen möchten.
 
-**In dieser Anleitung erfahren Sie, wie Sie einen Host-Server sicher aus Ihrer Private Cloud Infrastruktur entfernen.**
+**Diese Anleitung erklärt, wie Sie einen Host-Server sicher aus Ihrer Hosted Private Cloud Infrastruktur entfernen.**
 
 ## Voraussetzungen
 
-* Sie verfügen über ein [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external} Angebot.
-* Sie haben Zugriff auf das vSphere-Verwaltungsinterface.
+- Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
+- Sie haben Zugriff auf das vSphere-Verwaltungsinterface.
 
 
-## Beschreibung
+## In der praktischen Anwendung
 
 Das Löschen eines Host-Servers erfolgt in zwei Schritten: Zuerst wird die Ressource in den Wartungsmodus versetzt und anschließend gelöscht.
 
