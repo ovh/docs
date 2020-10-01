@@ -1,25 +1,25 @@
 ---
 title: 'Datastore löschen'
 slug: datastore-loeschen
-excerpt: 'So löschen Sie einen Datastore Ihrer Private Cloud'
+excerpt: 'Erfahren Sie hier, wie Sie einen Datastore aus Ihrer Private Cloud entfernen'
 legacy_guide_number: '7766789'
-section: 'OVH Funktionen'
+section: OVHcloud Funktionen
 ---
 
-**Stand 24.07.2020**
+**Letzte Aktualisierung am 24.07.2020**
 
-## Einleitung
+## Ziel
 
 In einigen Fällen kann es nützlich sein, einen Datastore aus Ihrem Cluster zu löschen, zum Beispiel, um ihn zu ersetzen oder seine Speicherkapazität zu erhöhen.
 
-**In dieser Anleitung erfahren Sie, wie Sie einen Datastore aus Ihrer Infrastruktur entfernen.**
+**Diese Anleitung erklärt, wie Sie einen Datastore aus Ihrer Infrastruktur entfernen.**
 
 ## Voraussetzungen
 
-* Sie verfügen über ein [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external} Angebot.
-* Sie haben Zugriff auf das vSphere-Verwaltungsinterface.
+- Sie verfügen über ein [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external} Angebot.
+- Sie haben Zugriff auf das vSphere-Verwaltungsinterface.
 
-## Beschreibung
+## In der praktischen Anwendung
 
 > [!warning]
 >
