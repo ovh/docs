@@ -1,7 +1,7 @@
 ---
 title: Zwei-Faktor-Authentifizierung (2FA) auf Ihrer Private Cloud Infrastruktur verwenden
 slug: 2FA-verwenden
-excerpt: Hier erfahren Sie, wie Sie die Zwei-Faktor-Authentifizierung einrichten, um Ihre Infrastruktur zu schützen.
+excerpt: Erfahren Sie hier, wie Sie die Zwei-Faktor-Authentifizierung einrichten, um Ihre Infrastruktur zu schützen
 section: OVHcloud Funktionen
 ---
 
@@ -11,11 +11,11 @@ section: OVHcloud Funktionen
 
 Die Einrichtung der Zwei-Faktor-Authentifizierung schützt den Zugang zu Ihrer Private Cloud, indem beispielsweise mit Passwortdiebstahl verbundene Risiken reduziert werden.
 
-**In dieser Anleitung erfahren Sie, wie Sie die Zwei-Faktor-Authentifizierung einrichten, um Ihre Private Cloud Infrastruktur zu schützen.**
+**Diese Anleitung erklärt, wie Sie die Zwei-Faktor-Authentifizierung einrichten, um Ihre Private Cloud Infrastruktur zu schützen.**
  
 ## Voraussetzungen
 
-- Sie verfügen über eine [Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur mit [Advanced Security](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) Option (in PCI-DSS und HDS Angeboten enthalten).
+- Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur mit [Advanced Security](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) Option (in PCI-DSS und HDS Angeboten enthalten).
 - Sie verfügen über ein Smartphone mit installierter Authentifizierungsanwendung (Beispiele: Google Authenticator, Authy, OTP Auth, ...).
 
 ## In der praktischen Anwendung
