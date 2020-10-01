@@ -18,7 +18,7 @@ Si vous utilisez un `Frontend`{.action} TCP, alors ce guide est pour vous.
 
 
 ## Prérequis
-Ce guide est un guide avancé. Il fait l'hypothèse que vous vous êtes déjà familiarisé avec les fonctionnalités principales de votre service OVH Load Balancer, en particulier, les `Frontend`{.action} et les `Fermes`{.action}. Si ce n'est pas encore le cas, nous vous recommandons de vister le [guide](https://docs.ovh.com/ca/fr/load-balancer/configure-iplb/){.ref}. Ce guide est plus particulièrement orienté sur les services HTTP mais les principes généraux sont les mêmes.
+Ce guide est un guide avancé. Il fait l'hypothèse que vous vous êtes déjà familiarisé avec les fonctionnalités principales de votre service OVH Load Balancer, en particulier, les `Frontend`{.action} et les `Fermes`{.action}. Si ce n'est pas encore le cas, nous vous recommandons de visiter le [guide](https://docs.ovh.com/ca/fr/load-balancer/configure-iplb/){.ref}. Ce guide est plus particulièrement orienté sur les services HTTP mais les principes généraux sont les mêmes.
 
 Vous devez disposez de :
 
