@@ -15,7 +15,7 @@ Une base de données (BDD) est utilisée pour stocker ce que l'on appelle des é
 
 **Apprenez à créer une base de données sur votre hébergement web OVHcloud**
 
-## Prérequis
+## En pratique
 
 - un [hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web)
 - une base de données disponible parmi celles incluses dans votre offre d'hébergement web
