@@ -1,7 +1,7 @@
 ---
 title: Créer une base de données sur son hébergement web
 slug: creer-base-de-donnees
-excerpt: Apprenez à créer une base de données sur votre hébergement web OVH
+excerpt: Apprenez à créer une base de données sur votre hébergement web OVHcloud
 section: Bases de données
 order: 1
 ---
@@ -13,7 +13,7 @@ order: 1
 
 Une base de données (BDD) est utilisée pour stocker ce que l'on appelle des éléments dynamiques, comme des commentaires ou des articles. Ces bases de données sont utilisées dans pratiquement tous les systèmes de gestion de contenu (CMS) modernes, comme WordPress ou Joomla!.
 
-**Découvrez comment débuter avec les bases de données de votre hébergement web OVHcloud**
+**Apprenez à créer une base de données sur votre hébergement web OVHcloud**
 
 ## Prérequis
 
