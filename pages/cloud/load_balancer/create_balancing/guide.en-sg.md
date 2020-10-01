@@ -25,7 +25,7 @@ The new OVH Load Balancer service offers a variety of load balancing methods for
 
 Load balancing is used in server farms. This setting defines the way that requests are distributed between the servers within the farm.
 
-To understand the basics of the OVH Load Balancer service, please refer to the [Load Balancer Introduction](https://docs.ovh.com/sg/en/iplb/loadbalancer-introduction/){.external}.
+To understand the basics of the OVH Load Balancer service, please refer to the [Load Balancer Introduction](https://docs.ovh.com/sg/en/load-balancer/loadbalancer-introduction/){.external}.
 
 |Algorithm|Features|
 |---|---|
