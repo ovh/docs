@@ -3,6 +3,7 @@ title: 'Restoring your Web Hosting plan’s storage space'
 slug: restoring-ftp-filezilla-control-panel
 excerpt: 'Find out how to restore a file or an entire storage space from your Web Hosting plan'
 section: 'FTP and SSH'
+order: 3
 ---
 
 **Last updated 25th September 2018**

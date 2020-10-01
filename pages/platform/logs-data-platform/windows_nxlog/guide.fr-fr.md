@@ -5,18 +5,18 @@ order: 06
 section: Use cases
 ---
 
-**Last updated 10th April, 2019**
+**Last updated 27th July, 2020**
 
 ## Objective
 
-At OVH, we love Microsoft products too. So it is important for us to provide you a way to send your Windows Logs to Logs Data Platform. All you need is 15 minutes and one software : [NXLog](http://nxlog.co){.external}. NXLog is one of the leader of the log management tools. Its configuration is fairly simple and can get you started in a few minutes.
+At OVHcloud, we love Microsoft products too. So it is important for us to provide you a way to send your Windows Logs to Logs Data Platform. All you need is 15 minutes and one software : [NXLog](http://nxlog.co){.external}. NXLog is one of the leader of the log management tools. Its configuration is fairly simple and can get you started in a few minutes.
 
 ## Requirements
 
 For this tutorial you will need to have completed the following steps :
 
-- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
-- [To create at least one Stream and get its token.](../quick_start/guide.fr-fr.md){.ref}
+- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}
+- [To create at least one Stream and get its token.](../quick-start){.ref}
 
 ## NXLog
 
@@ -85,7 +85,7 @@ Let's explain the few important points in this configuration :
 
 - The line **define CERTDIR %ROOT%\cert** is mandatory to indicate to NXLog where it will find the certificate of Logs Data Platform.
 - The **Input** part is the same as the default configuration. Do not touch it ;-).
-- The **Processor** module is where the OVH Token magic happens : Replace your token here.
+- The **Processor** module is where the OVHcloud Token magic happens : Replace your token here.
 - The **Extension** activate the built-in GELF module that encode the log in the GELF format
 - The **Output** module is the one that will send the logs to Logs Data Platform by defining the CA certificate used to trust the server and the encoding used. Note that you will have to use the address of your assigned cluster. This is also where you use the path of the certificate downloaded just before. This module also define that we use the Gelf Encoding.
 - The **Route** setting put all these things together by building a pipeline using the source, processing and the ouput modules.
@@ -117,7 +117,7 @@ If you want to go further, don't hesitate to fly to the [NXlog documentation](ht
 
 ## Getting Help
 
-- Getting Started: [Quick Start](../quick_start/guide.fr-fr.md){.ref}
-- Documentation: [Guides](../product.fr-fr.md){.ref}
+- Getting Started: [Quick Start](../quick-start){.ref}
+- Documentation: [Guides](../){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

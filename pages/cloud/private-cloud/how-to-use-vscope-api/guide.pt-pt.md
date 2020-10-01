@@ -3,9 +3,10 @@ title: 'Como utilizar a API de vScope'
 slug: vscopeapi
 excerpt: 'A API vScope permite-lhe utilizar os dados de monitorização nas suas aplicações'
 section: 'Serviços e opções OVH'
+order: 1
 ---
 
-**Última atualização: 25/11/2019**
+**Última atualização: 28/07/2020**
 
 ## Sumário
 
@@ -17,11 +18,16 @@ Estas informações encontram-se também disponíveis através da APIv6 e da API
 
 **Este guia descreve a utilização destas APIs**.
 
+## Requisitos
+
+- Uma [infraestrutura Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/)
+- Ter acesso à interface de gestão vScope
+
 ## Instruções
 
-O vScope disponibiliza dois tipos de informações:
+A ferramenta vScope disponibiliza dois tipos de informações:
 
-- informações **live**, que correspondem às informações dos vários componentes num determinado instante T;
+- informações **live**, que correspondem aos dados dos vários componentes num determinado instante T;
 - gráficos que apresentam os dados históricos de desempenho dos vários componentes. Por exemplo: CPU, RAM de uma máquina virtual.
 
 
@@ -64,7 +70,7 @@ A utilização da API faz-se através destas três chamadas APIv6:
 
 Para recolher e utilizar os dados históricos (Graphs), usamos o produto **Metrics Data Platforms**.
 
-Através do protocolo Opentsdb ou WARP10, vai poder recuperar os seus dados sob a forma de pontos. Poderá explorar estes pontos através da sua aplicação ou apresentá-los diretamente em função do resultado pretendido.
+Através dos protocolos Opentsdb ou WARP10, vai poder recuperar os seus dados sob a forma de pontos. Poderá explorar estes pontos através da sua aplicação ou apresentá-los diretamente em função do resultado pretendido.
 
 
 Este artigo diz respeito à utilização do protocolo Opentsdb para uma apresentação bruta dos dados (sem resultado gráfico).
@@ -75,7 +81,7 @@ Para o utilizador pretendido, utilize a chamada APIv6 seguinte para recuperar o 
 
 > [!api]
 > 
-> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/getVscopeMetricsToken
+> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
 > 
 
 O seu token encontra-se no campo **token** do resultado.
@@ -263,4 +269,4 @@ Para mais pormenores sobre os pedidos OpenTSDB, pode consultar a seguinte docume
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/>.

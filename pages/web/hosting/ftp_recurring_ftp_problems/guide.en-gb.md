@@ -3,6 +3,7 @@ title: 'Recurring FTP problems'
 slug: recurring_ftp_problems
 excerpt: 'Recurring FTP problems'
 legacy_guide_number: g1996
+section: 'FTP and SSH'
 ---
 
 ## I have uploaded my files through FTP software, but they are not showing

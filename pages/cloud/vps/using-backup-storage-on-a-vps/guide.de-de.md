@@ -6,7 +6,7 @@ section: 'Backup Optionen'
 order: 1
 ---
 
-**Letzte Aktualisierung am 20.07.2020**
+**Letzte Aktualisierung am 01.09.2020**
 
 
 ## Ziel
@@ -49,6 +49,73 @@ Da immer nur ein Snapshot aktiviert sein kann, muss der vorhandene Snapshot gel�
 ![snapshotvps](images/snapshot_vps_step2.png){.thumbnail}
 
 Wenn Sie sicher sind, dass Sie Ihren VPS auf den Stand des Snapshots zurücksetzen möchten, klicken Sie auf `Snapshot wiederherstellen`{.action} und bestätigen Sie die Aktion im Popup-Fenster. Dabei ist zu beachten, das der Snapshot im Zuge der Wiederherstellung gelöscht wird.
+
+### Optimale Vorgehensweise zur Snapshot-Erstellung
+
+#### Konfiguration des QEMU-Agents auf einem VPS
+
+Snapshots sind Momentaufnahmen Ihres Systems bei der Ausführung („live snapshot“). Um die Verfügbarkeit Ihres Systems während der Erstellung des Snapshots zu gewährleisten, wird der QEMU-Agent verwendet, um das Dateisystem für diesen Vorgang vorzubereiten.
+
+Der hierzu benötigte *qemu-guest-agent* ist bei den meisten Distributionen nicht standardmäßig installiert. Auch können lizenzbedingte Einschränkungen OVHcloud daran hindern, diese Bedingung in die Images der verfügbaren Betriebssysteme einzubeziehen. Es wird daher geraten, dies zu überprüfen, und den Agent zu installieren, falls er nicht auf Ihrem VPS aktiviert ist. Verbinden Sie sich per SSH mit Ihrem VPS und folgen Sie je nach Betriebssystem den unten stehenden Anleitungen. 
+
+##### **Debian Distributionen (Debian, Ubuntu)**
+
+Überprüfen Sie mit folgendem Befehl, ob das System richtig für Snapshots konfiguriert ist.
+
+```
+$ file /dev/virtio-ports/org.qemu.guest_agent.0
+/dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
+```
+
+Erscheint ein anderes Ergebnis („No such file or directory“), dann installieren Sie das aktuelle Paket:
+
+```
+$ sudo apt-get update
+$ sudo apt-get install qemu-guest-agent
+```
+
+Starten Sie den Dienst um zu gewährleisten, dass er ausgeführt wird:
+
+```
+$ sudo service qemu-guest-agent start
+```
+
+##### **Redhat Distributionen (CentOS, Fedora)**
+
+Überprüfen Sie mit folgendem Befehl, ob das System richtig für Snapshots konfiguriert ist.
+
+```
+$ file /dev/virtio-ports/org.qemu.guest_agent.0
+/dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
+```
+
+Erscheint ein anderes Ergebnis („No such file or directory“), dann installieren und aktivieren Sie den Agent:
+
+```
+$ sudo yum install qemu-guest-agent
+$ sudo chkconfig qemu-guest-agent on
+```
+
+Starten Sie den Agent und überzeugen Sie sich, dass er ausgeführt wird:
+
+```
+$ sudo service qemu-guest-agent start
+$ sudo service qemu-guest-agent status
+```
+
+##### **Windows**
+
+Sie können den QEMU Guest Agent über eine MSI-Datei installieren. Diese ist auf der Webseite des *Fedora project* verfügbar: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
+
+Überprüfen Sie, ob der Dienst ausgeführt wird. Verwenden Sie dazu folgenden Powershell-Befehl:
+
+```
+PS C:\Users\Administrator> Get-Service QEMU-GA
+
+Status   Name               DisplayName
+------   ----               -----------
+Running  QEMU-GA            QEMU Guest Agent
+```
 
 
 ## Weiterführende Informationen

@@ -7,7 +7,7 @@ section: Sharepoint
 order: 1
 ---
 
-**Dernière mise à jour le 15/04/2020**
+**Dernière mise à jour le 11/08/2020**
 
 ## Objectif
 
@@ -45,9 +45,7 @@ Pour consulter cet e-mail, connectez-vous à votre [espace client OVHcloud](http
 
 Pour débuter cette configuration, dirigez-vous dans la section `Web` de votre espace client. Cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Sharepoint`{.action} et sélectionnez la plateforme SharePoint concernée.
 
-Définissez le nom de votre plateforme dans la case « URL du SharePoint » puis cliquez sur `Valider l'URL`{.action}
-
-![sharepoint](images/order-manage-sharepoint-04.png){.thumbnail}  
+Définissez le nom de votre plateforme dans la case « URL du SharePoint » puis cliquez sur `Valider l'URL`{.action} 
 
 > [!warning]
 >
@@ -67,7 +65,7 @@ Dirigez-vous dans l'onglet `Domaines` et cliquez sur `Ajouter un domaine`{.actio
 
 - Si vous choisissez un nom de domaine présent dans votre espace client, celui-ci sera automatiquement validé, il ne vous restera plus qu'à configurer vos utilisateurs.
  
-- Si vous choisissez un nom de domaine externe, il est nécessaire d'ajouter un enregistrement CNAME dans la zone DNS du nom de domaine pour le valider sur la plateforme SharePoint. L'enregistrement CNAME à renseigner est accessible en cliquant sur l'icône d'information à côté de la mention « Validation de domaine en cours », comme ci-dessous.
+- Si vous choisissez un nom de domaine externe, il est nécessaire d'ajouter un enregistrement CNAME dans la zone DNS du nom de domaine pour le valider sur la plateforme SharePoint. L'enregistrement CNAME à renseigner est accessible en cliquant sur l'icône d'information `i` à côté de la mention « Validation de domaine en cours », comme ci-dessous.
 
 
 ![sharepoint](images/order-manage-sharepoint-05.png){.thumbnail}
@@ -107,6 +105,22 @@ Par défaut, un compte bénéficiant d'une licence n'a pas les droits administra
 Sur les deux types de plateformes SharePoint, vous retrouvez le bouton `Rétablir droits administrateur`{.action} dans l'onglet `Utilisateur`. Il permet de remettre en place les droits administrateur de la plateforme en cas de mauvaise manipulation depuis l'interface SharePoint.
 
 ![sharepoint](images/order-manage-sharepoint-09.png){.thumbnail}
+
+#### **Editer les fichiers Office 365 en ligne**
+
+Il est possible d'éditer directement en ligne vos fichiers Office 365 tel qu'un fichier *.docx* ou *.xls*.
+
+Pour cela vous devez posséder une licence Office 365 valide et le confirmer dans votre espace client OVHcloud.
+
+Dirigez-vous dans l'onglet `Utilisateurs` de votre plateforme puis cliquez sur `...`{.action} à droite du compte et enfin sur `Ajouter une licence Office`{.action}
+
+![sharepoint](images/order-manage-sharepoint-10.png){.thumbnail}
+
+Cliquez sur `valider`{.action} après avoir confirmé que vous possédez bien une licence Office 365.
+
+![sharepoint](images/order-manage-sharepoint-11.png){.thumbnail}
+
+Il vous sera ensuite possible d'éditer vos fichiers Office 365 directement depuis l'interface web de votre sharepoint.
 
 ## Aller plus loin
 

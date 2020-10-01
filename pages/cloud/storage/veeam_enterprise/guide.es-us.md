@@ -152,11 +152,11 @@ Abra la consola Veeam y conéctese.
 
 En el menú, haga clic en `License`{.action}.
 
-![Add OVH Storage](images/VeeamBR_lic_1.png){.thumbnail}
+![Add OVH Storage](images/veeamBandR_lic_1.png){.thumbnail}
 
 Compruebe que la información mostrada corresponde a su licencia de OVH.
 
-![Add OVH Storage](images/VeeamBR_lic_2.png){.thumbnail}
+![Add OVH Storage](images/veeamBandR_lic_2.png){.thumbnail}
 
 ## Más información
 

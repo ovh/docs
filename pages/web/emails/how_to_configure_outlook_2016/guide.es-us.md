@@ -55,7 +55,7 @@ A continuación, introduzca la información solicitada.
 
 |Campo|Descripción|
 |---|---|
-|Servidor|Introduzca el servidor **ssl0.ovh.net**.|
+|Servidor|Introduzca el servidor **imap.mail.ovh.ca**.|
 |Puerto|Introduzca el puerto **993**.|
 |Método de cifrado|Seleccione **SSL/TLS**.|
 |Autenticación|Deje sin marcar la casilla «Requerir inicio de sesión utilizando Autenticación de contraseña segura (SPA)».|
@@ -64,7 +64,7 @@ A continuación, introduzca la información solicitada.
 
 |Campo|Descripción|
 |---|---|
-|Servidor|Introduzca el servidor **ssl0.ovh.net**.|
+|Servidor|Introduzca el servidor **smtp.mail.ovh.ca**.|
 |Puerto|Introduzca el puerto **465**.|
 |Método de cifrado|Seleccione **SSL/TLS**.|
 |Autenticación|Deje sin marcar la casilla «Requerir inicio de sesión utilizando Autenticación de contraseña segura (SPA)».|
@@ -81,15 +81,15 @@ En caso de que la aplicación le pida que introduzca de forma manual algunos dat
 
 |Tipo de servidor|Nombre del servidor|Método de cifrado|Puerto|
 |---|---|---|---|
-|Entrante|ssl0.ovh.net|SSL/TLS|993|
-|Saliente|ssl0.ovh.net|SSL/TLS|465|
+|Entrante|imap.mail.ovh.ca|SSL/TLS|993|
+|Saliente|smtp.mail.ovh.ca|SSL/TLS|465|
 
 **Configuración en POP**
 
 |Tipo de servidor|Nombre del servidor|Método de cifrado|Puerto|
 |---|---|---|---|
-|Entrante|ssl0.ovh.net|SSL/TLS|995|
-|Saliente|ssl0.ovh.net|SSL/TLS|465|
+|Entrante|pop.mail.ovh.ca|SSL/TLS|995|
+|Saliente|smtp.mail.ovh.ca|SSL/TLS|465|
 
 ### 2. Utilizar la dirección de correo electrónico
 

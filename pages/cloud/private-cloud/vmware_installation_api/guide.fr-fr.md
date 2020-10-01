@@ -22,7 +22,7 @@ Il est possible d'automatiser les actions au sein de votre infrastructure en uti
 
 ##### OS
 
-Ici nous utilisons une VM installée sur Debian 9, déployée depuis [les templates mis à disposition sur votre Private Cloud](../private-cloud/deploiement-template-ovh/).
+Ici nous utilisons une VM installée sur Debian 9, déployée depuis [les templates mis à disposition sur votre Private Cloud](../deploiement-template-ovh/).
 
 ##### Prérequis
 
@@ -253,7 +253,7 @@ print "Disconnected \n";
 
 Dans cet exemple, nous allons utiliser un script déjà crée et présent dans le répertoire « vmware-vsphere-cli-distrib/apps/vm/ ».
 
-Voici la liste des scipts déjà disponibles dans ce répertoire :
+Voici la liste des scripts déjà disponibles dans ce répertoire :
 
 ```
 ls vmware-vsphere-cli-distrib/apps/vm/

@@ -27,7 +27,7 @@ Pour programmer la campagne, il faut se rendre dans le Manager :
 -   Cliquez sur l'icône "**Téléphonie**".
 -   Cliquez sur la ligne de**fax** à utiliser pour la campagne.
 -   Cliquez sur l'onglet **Fax** dans le menu **Navigation**.
--   Cliquez sur l'onglet **Campagnes de Fax**.![](images/CampgneFax.png){.thumbnail}L'interface de campagne se présente de cette façon : ![](images/2015-03-17-153342_723x445_scrot.png){.thumbnail}Pour créer une campagne, cliquez sur le bouton **Nouveau**. Le formulaire de campagne s'ouvre, les champs à remplir sont :
+-   Cliquez sur l'onglet **Campagnes de Fax**. L'interface de campagne se présente de cette façon : ![](images/2015-03-17-153342_723x445_scrot.png){.thumbnail}Pour créer une campagne, cliquez sur le bouton **Nouveau**. Le formulaire de campagne s'ouvre, les champs à remplir sont :
     -   **Nom de la campagne :** Le nom donné à la campagne créée.
     -   **Document à faxer :**Le document à envoyer au format **PDF**.
     -   **Qualité d’envoi :** Définit la qualité d'envoi. Normale, haute ou meilleure.

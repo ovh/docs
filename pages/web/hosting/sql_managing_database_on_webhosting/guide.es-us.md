@@ -22,7 +22,7 @@ Proponemos dos tipos de bases de datos: MySQL o PostgreSQL.
 ## Gestion de una base de datos en alojamiento compartido
 
 ### Creacion de una base de datos
-- Conéctese al [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external} con su ID de cliente (NIC Handle) y contraseña.
+- Conéctese al [área de cliente](https://ca.ovh.com/auth/?action=gotomanager){.external} con su ID de cliente (NIC Handle) y contraseña.
 - Haga clic en «Login» para aceptar la operación.
 
 

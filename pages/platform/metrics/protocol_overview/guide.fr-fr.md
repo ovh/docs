@@ -41,7 +41,7 @@ If you're wondering which protocol to choose, here is a simple guideline :
 
 ### Authentification and endpoints
 
-Metrics has builtin security to secure your data. In the [Start section](../metrics_order/guide.fr-fr.md){.ref} you've learnt where to get them from the manager. We've generated a default pair of **tokens** :
+Metrics has builtin security to secure your data. In the [Start section](../order/){.ref} you've learnt where to get them from the manager. We've generated a default pair of **tokens** :
 
 - a **READ** token to Query
 - a **WRITE** token to Push Data

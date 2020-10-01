@@ -43,7 +43,7 @@ This is a interface not apart of OVHcloud, [Horizon](https://horizon.cloud.ovh.n
 
 This complete and technical interface allows you to manage almost all Openstack actions. This will be one of the necessary interfaces if you want to manage more than two vLan, add private network interfaces to your instances, manage custom images, etc...
 
-See the guide [Go to the Horizon interface](../horizon/) to familiarize yourself with Horizon.
+See the guide [Go to the Horizon interface](../configure_user_access_to_horizon/) to familiarize yourself with Horizon.
 
 > [!primary]
 > Horizon working by zone, remeber to choose your geographic working area at the top left of your interface (GRA5, SBG3, BHS1, etc...)
@@ -62,7 +62,7 @@ You can simply access APIs from [our web page](https://ca.api.ovh.com/), but als
 
 This way, you can freely automate basic tasks with scripts, optimize your own functions, etc...
 
-See the guide [First Steps with OVHcloud APIs](../../api/first-steps-with-ovh-api/s/) to learn how to use the OVHcloud API.
+See the guide [First Steps with OVHcloud APIs](../../api/first-steps-with-ovh-api/) to learn how to use the OVHcloud API.
 
 ### OpenStack API
 
@@ -242,7 +242,7 @@ nova net-list
 > ExtNet to have a public IP
 > One of the vLan(s) needed for your configuration
 
-Also remember to note the following information, as indicated in the [Nova API User's Guide](../starting-with-nova/):
+Also remember to note the following information, as indicated in the [Nova API User's Guide](../starting-with-nova-api/):
 
 - ID or name of OpenStack SSH key
 - Instance Type ID (flavor)

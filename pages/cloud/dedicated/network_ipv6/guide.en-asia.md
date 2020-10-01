@@ -42,9 +42,9 @@ If you want to have more than one IPv6 configured on your server (or want to use
 >
 > Before following the steps below, we strongly suggest that you disable IPv6 autoconf and router advertising to prevent known issues. You can do so by adding the following lines to your `sysctl.conf` file, which is located in /etc/sysctl.conf:
 > 
-> `net.IPv6.conf.all.autoconf=0`
+> `net.ipv6.conf.all.autoconf=0`
 > 
-> `net.IPv6.conf.all.accept_ra=0`
+> `net.ipv6.conf.all.accept_ra=0`
 > 
 > Once this has been done, you can apply those rules by executing the following command: `sh sysctl -p`.
 > 
@@ -97,7 +97,7 @@ ping6 -c 4 2001:4860:4860::8888
 ```
 
 
-If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](../rescue-mode/){.external}.
+If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](../ovh-rescue/){.external}.
 
 ### Fedora 26 and above
 
@@ -151,7 +151,7 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](../rescue-mode/){.external}.
+If you are not able to ping this IPv6 address, check your configuration and try again. If it still doesn't work, please test your configuration in [Rescue mode](../ovh-rescue/){.external}.
 
 ### FreeBSD
 

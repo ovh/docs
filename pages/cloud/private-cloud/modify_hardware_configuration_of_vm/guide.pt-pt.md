@@ -1,113 +1,111 @@
 ---
-title: Modificar a configuração hardware de uma máquina virtual
-excerpt: ''
+title: Modificar os recursos de uma máquina virtual
 slug: modificar_a_configuracao_hardware_de_uma_maquina_virtual
-legacy_guide_number: g587
+excerpt: Saiba como fazer evoluir a sua máquina virtual
+section: Gestão das máquinas virtuais
+order: 03
 ---
 
+**Última atualização: 05/08/2020**
 
-## 
-Neste guia iremos explicar as modificações possíveis numa máquina virtual (função "edit settings" da VMware).
+## Objetivo
 
-É necessário ter criado previamente uma máquina virtual, ao utilizar o seguinte guia:
+Uma vez a máquina criada, os seus recursos não são fixos e, com algumas restrições, podem ser modificados para aumentar a agilidade da sua infraestrutura.
 
-
-- []({legacy}607)
-
+**Este manual explica-lhe como fazer evoluir a sua máquina virtual.**
 
 
+## Requisitos
 
-## 
-Todas as modificações descritas aqui deverão ser realizadas a partir do seu Private Cloud no vSphere ao efetuar com um botão direito do rato na máquina virtual, e depois em "Edit Settings"
-
-
-## A memória (RAM)
-A alocação da memória RAM pode a qualquer momento ser modificada à condição de que a máquina esteja desligada. (A funcionalidade VMware Hot Add permite efetuar esta operação numa máquina ligada a partir de um host L).
-
-Para tal, basta alterar com o cursos indicado no ecrão de forma a obter a memória desejada:
-
-![](images/img_53.jpg){.thumbnail}
-Para adicionar a quente através de Hot Add queira ir [aqui](#CONFIG_AND_ADVANCED_OPTIONS)
+- Ter criado uma máquina virtual.
+- Ter acesso ao client vSphere HTML.
 
 
-## O processador (CPU)
-É possível alterar o número de CPU ligados à máquina virtual quando a máquina está desligada (é ainda possível de o efetuar numa máquina ligada a partir do Host L graças à funcionalidade VMware Hot Add)
-
-![](images/img_54.jpg){.thumbnail}
-Para adicionar a quente através de Hot Add queira ir [aqui](#CONFIG_AND_ADVANCED_OPTIONS)
+## Instruções
 
 
-## A placas gráfica
-Poderá definir os parâmetros da placa de vídeo ao modificar:
+Todas as modificações abaixo descritas devem ser realizadas a partir do seu Hosted Private Cloud em vSphere, clicando com o botão direito do rato numa máquina virtual e na opção `Modificar os parâmetros`{.action}.
 
-- a deteção automática;
-- a seleção de resolução manual;
-- o número de MB reservados ao vídeo na RAM.
+![Edição de recursos](images/hardware01.png){.thumbnail}
 
+Neste menu, tem a possibilidade de aumentar os recursos da sua máquina virtual. 
 
+![Edição de recursos](images/hardware02.png){.thumbnail}
 
-![](images/img_55.jpg){.thumbnail}
-
-
-## Disco rígido
-Poderá a qualquer momento redefinir o espaço do disco virtual da sua máquina ao modificar o espaço alocado:
-
-![](images/img_56.jpg){.thumbnail}
-É igualmente possível que selecione o tipo de disco (SATA ou IODE) assim com o tipo de armazenamento (persistente ou não persistente).
-
-O armazenamento persistente permite a conservação dos dados aquando de um reboot de uma máquina.
-O armazenamento não persistente possui a particularidade de não conversar os dados: Se efetua um reboot à máquina, todos os dados serão eliminados.
-
-Graças ao botão "Add..", poderá adicionar um segundo disco na máquina a qualquer momento, quer a máquina esteja ligada ou desligada.
+Na parte superior desta imagem, poderá ver que tem a possibilidade de adicionar periféricos, opção esta que iremos abordar mais à frente.
 
 
-## Leitor de CD/DVD
-Permite-lhe facilmente montar uma imagem do seu datastore
+### O processador (CPU)
 
-![](images/img_62.jpg){.thumbnail}
+O número de CPU será limitado às slots disponíveis no host.
 
-## IMPORTANTE!!
-É necessário clicar em "Connect at power on" de forma a que o leitor seja detetado no boot e a iso seja carregada.
+Se a sua máquina virtual for migrada para um host com um número de processadores inferior àquele alocado à sua máquina, será ativado o estado `CPU ready` que provocará uma redução do desempenho.
 
+![Adicionar uma CPU](images/hardware03.png){.thumbnail}
 
-## Placa de rede
-Esta opção permite-lhe escolher o tipo de placa que deseja configurar na sua máquina virtual, assim como o tipo de ligação (VM Network ou LocalportGroup).
+Também tem a possibilidade de reservar uma determinada frequência (mínimo e máximo) e escolher o número de cores por socket.
 
-A VM Network permite que uma máquina esteja na rede pública (com um IP RIPE) ou numa rede local entre os hosts.
+Se selecionar a opção `Enable CPU Hot add`{.action}, poderá modificar esses valores quando a máquina virtual for iniciada.
 
-O LocalPortGroup permite unicamente uma comunicação através de rede privada, e limita-se ao host (apenas as VMS de um mesmo host podem comunicar entre elas).
+Dependendo do sistema operativo utilizado, a adição a quente pode não funcionar e provocar uma avaria do host.
 
-Poderá utilizar o seguinte guia para efetuar a configuração:
+À máquina virtual pode ser alocado um mínimo de *MHz* (MegaHertz):
 
-
-- []({legacy}582)
+o limite, ilimitado por predefinição, permite restringir o processador da VM para um valor em *MHz*. Poderá, por exemplo, limitar uma máquina virtual de desenvolvimento.
 
 
+### A memória RAM
 
-![](images/img_63.jpg){.thumbnail}
+Como para a CPU, a memória (RAM) é limitada aos recursos do host.
 
+Também pode alocar a memória para que a máquina virtual tenha sempre um mínimo de RAM reservada.
 
-## Opções gerais
-Esta opção permite-lhe modificar o tipo de máquina seleccionada aquando da criação da VM, ou simplesmente modificar o nome da mesma.
-
-
-## vAPP Options
-Esta opção dá-lhe a possibilidade de definir de uma forma mais precisa o tipo de IP que deseja, ou os parâmetros OVF da máquina virtual.
+![Adição de memória](images/hardware04.png){.thumbnail}
 
 
-## VMware Tools
-Esta opção permite-lhe gerir as ações dos botões utilizados pelas ferramentas VMware.
-O botão "Stop" por exemplo, pode efetuar um shutdown na VM, ou um power off.
+### O disco rígido
+
+No que diz respeito ao disco rígido, pode aumentar o seu tamanho em função do espaço restante no datastore que a máquina virtual utiliza.
+
+![Adição de armazenamento](images/hardware05.png){.thumbnail}
+
+Recomenda-se que utilize controladores de discos SCSI em vez de IDE. O backup através de Veeam não é possível com controladores IDE, por exemplo.
+
+Também é possível selecionar o modo do disco:
+
+- `Dependent`: inclui o disco durante a snapshot;
+
+- `Independent - presistent`: permite a conservação dos dados aquando do reboot de uma máquina, mas não é considerado numa snapshot;
+
+- `Independent - non-persistent`: tem a particularidade de não conservar os dados. Se efetuar um reboot da máquina, todos os dados serão suprimidos.
 
 
-## Opções avançadas
-As opções avançadas permite-lhe definir as regras da sua máquina. Nesta parte, poderá ativar ou desativar a adição de CPU ou RAM a quente, graças à opção "Memory/CPU Hotplug". Esta opção necessita, no entanto, que possua um host L ou superior.
+### Placa de rede
 
-Uma segunda opção têm o nome de "SwapFile Locastion". Por defeito, a OVH configura esta opção de forma a introduzir o ficheiro de swap na máquina virtual diretamente no host, e no caso do Private Cloud, nos discos SSD. Ao utilizar esta configuração, obtém melhores performances ao nível de leitura/escrita.
+É possível modificar a placa de rede da sua máquina virtual, a ligação da placa no arranque da máquina virtual, modificar o tipo de placa, verificar a porta ID e o seu endereço MAC.
 
-Se por exemplo configurar uma máquina virtual com 12GB de memória RAM, a VMware irá introduzir automaticamente um ficheiro de swap de 12GB no local de armazenamento de 30GB. O disco corre o risco de ficar rapidamente cheio.
+![Adição da rede](images/hardware06.png){.thumbnail}
 
-De notar que se utiliza esta opção, não poderá beneficar da proteção que lhe oferece a funcionalidade HA.
+Esta interface é interessante em caso de avaria da rede. Pode assegurar que a *porta ID* corresponde à porta indicada no separador `Networking`{.action} e `Ports`{.action} na placa em questão.
 
-Para tal, poderá modificar a opção de forma a que o ficheiro de swqp esteja ligado à VM e fique localizado na NAS com o .vmx e .xmdk.
 
+### Leitor CD/DVD
+
+O leitor CD/DVD permite, por exemplo, a montagem de imagens ISO na sua máquina virtual.
+
+![Adição de um leitor CD/DVD](images/hardware07.png){.thumbnail}
+
+Recomenda-se que elimine o leitor CD/DVD após a sua utilização, pois este poderá impedir que a máquina virtual seja movida.
+
+
+### Adição de periférico
+
+No canto superior direito da janela, é possível adicionar periféricos adicionais.
+
+Pode adicionar discos provenientes de outro datastore ou placas de rede, se a sua atividade requerer a utilização de várias redes privadas.
+
+![Adição de periféricos](images/hardware08.png){.thumbnail}
+
+## Quer saber mais?
+
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com>.

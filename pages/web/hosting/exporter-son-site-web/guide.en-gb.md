@@ -3,7 +3,6 @@ title: 'Exporting a website'
 slug: export-a-website
 excerpt: 'Find out how to export an OVHcloud website'
 section: 'Getting started'
-order: 2
 ---
 
 **Last updated 18th February 2020**

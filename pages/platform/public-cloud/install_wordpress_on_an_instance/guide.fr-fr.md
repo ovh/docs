@@ -15,7 +15,7 @@ Ce guide vous montre les différentes étapes à suivre afin d'installer Wordpre
 
 
 ### Prérequis
-- [Créer une instance dans l'espace client OVH](../guide.fr-fr.md){.ref}
+- [Créer une instance dans l'espace client OVH](../){.ref}
 
 
 ## Installation de Wordpress

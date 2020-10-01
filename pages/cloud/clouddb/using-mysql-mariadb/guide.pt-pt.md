@@ -11,13 +11,8 @@ Deseja utilizar MySQL ou MariaDB? Descubra como criar e gerir facilmente as suas
 
 ### Pre-requisitos
 
-
-> [!primary]
->
-> Este tutorial necessita de:
-> - Uma instância CloudDB
-> - Ter consultado o guia CloudDB: docs/cloud/clouddb/debuter-avec-clouddb
->
+- Uma instância CloudDB
+- Ter consultado [o guia CloudDB](../comecar-com-clouddb/).
 
 ### O que e uma base de dados MYSQL?
 O MYSQL é um sistema de gestão de bases de dados relacionais desenvolvido para performances elevadas em escrita, ao contrário de outros sistemas.
@@ -56,7 +51,7 @@ De forma a poder ligar-se à base de dados, assegure-se que:
 
 Todas estas informações estão disponíveis no seu [Espaço Cliente Web](https://www.ovh.com/manager/web/){.external}.
 
-Temos á sua disposição um guia que será útil: [](debuter-avec-clouddbguide.pt-pt.md){.ref}
+Temos á sua disposição um guia que será útil: [CloudDB - primeira utilização](../starting_with_clouddb/guide.pt-pt.md){.ref}
 
 
 ### Ligacao atraves de linha de comandos

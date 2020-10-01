@@ -38,7 +38,6 @@ Tem, claro, a possibilidade de guardar novos métodos de pagamento para que eles
 É possível registar 3 tipos de métodos de pagamento:
 
 - Cartão bancário
-- Conta bancária
 - Conta PayPal
 
 Para isso, basta clicar no botão `Adicionar um método de pagamento`{.action}.
@@ -46,16 +45,6 @@ Para isso, basta clicar no botão `Adicionar um método de pagamento`{.action}.
 ![manage-payment-methods](images/managepaymentmethods2.png){.thumbnail}
 
 Siga as etapas sucessivas de registo do método de pagamento. Na primeira etapa, ser-lhe-á proposto que defina este novo método de pagamento como "método de pagamento padrão", para que ele seja utilizado para as suas futuras compras ou débitos automáticos.
-
-Em caso de registo de uma conta bancária, terá de enviar uma autorização de débito por correio postal. Para transferir este documento, clique no botão `...`{.action} à direita da sua conta bancária, e em `Transferir o procedimento a enviar por correio postal`{.action}.
-
-![manage-payment-methods](images/managepaymentmethods2b.png){.thumbnail}
-
-> [!primary]
->
-Enquanto esta autorização não for recebida pelos nossos serviços, a nota "A aguardar receção" estará indicada junto à sua conta bancária, pelo que esta não poderá ser considerada para os seus pagamentos.
->
-
 
 ### Alterar o seu método de pagamento padrão
 

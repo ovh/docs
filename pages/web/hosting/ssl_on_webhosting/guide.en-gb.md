@@ -2,7 +2,7 @@
 title: 'Managing an SSL certificate on a Web Hosting plan'
 slug: ssl-certificates-on-web-hosting-plans
 excerpt: 'Find out how to manage an SSL certificate on an OVH Web Hosting plan'
-section: SSL
+section: 'SSL'
 order: 1
 ---
 
@@ -86,7 +86,7 @@ Once you have submitted the activation request, the SSL secure connection status
 
 ![managessl](images/manage-ssl-step6.png){.thumbnail}
 
-### Activate an SSL certificate on a Web Hosting plan.
+### Regenerate an SSL certificate on a Web Hosting plan.
 
 > [!primary]
 >

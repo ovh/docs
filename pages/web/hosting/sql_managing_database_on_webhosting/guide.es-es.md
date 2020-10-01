@@ -3,6 +3,7 @@ title: Gestion de una base de datos desde un alojamiento compartido
 slug: gestion-de-una-base-de-datos-desde-un-alojamiento-compartido
 legacy_guide_number: 1943
 section: Bases de datos
+hidden: true
 ---
 
 

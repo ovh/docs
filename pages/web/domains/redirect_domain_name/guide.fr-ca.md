@@ -166,7 +166,7 @@ Redirect temp / http://autre_site_web.tld/site/
 
 ## Aller plus loin
 
-[Tout sur le fichier .htaccess](../../hosting/mutualise-tout-sur-le-fichier-htaccess/){.external}.
+[Tout sur le fichier .htaccess](../../hosting//htaccess-reecriture-url-mod-rewrite/){.external}.
 
 [Comment éditer ma zone DNS ?](../editer-ma-zone-dns/){.external}
 

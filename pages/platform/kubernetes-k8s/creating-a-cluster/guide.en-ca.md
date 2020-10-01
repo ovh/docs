@@ -40,7 +40,7 @@ A OVHcloud Public Cloud project.
 
 ## Instructions
 
-Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Containers and Orchestration* menu in the [OVH Cloud Manager](https://www.ovh.com/manager/cloud/), then go to the *Managed Kubernetes Service* category and click on *Create a cluster* button.
+Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Containers and Orchestration* menu in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), then go to the *Managed Kubernetes Service* category and click on *Create a cluster* button.
 
 ![Create a cluster](images/creating-a-cluster-01.png){.thumbnail}
 
@@ -81,6 +81,6 @@ Your cluster creation is now in progress, it should be available in a few minute
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes site](https://www.ovh.com/public-cloud/kubernetes/).
 
-Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring_default_settings_for_kubectl/configuring_default_settings_for_kubectl/) and [deploying an application](../deploying_an_application/deploying_an_application/) .
+Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring-kubectl/) and [deploying a Hello World application](../deploying-hello-world/).
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).

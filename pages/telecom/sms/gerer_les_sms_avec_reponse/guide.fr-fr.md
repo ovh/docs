@@ -33,7 +33,7 @@ Les réponses sont possibles depuis les opérateurs mobiles français (Orange, S
 
 Le fonctionnement du service de réponse par SMS est très simple :
 
-![](images/SMS%20R%C3%A9ponse.png){.thumbnail}
+![fonctionnement sms avec réponse](images/SMSreponse.png){.thumbnail}
 
 Le service permet au destinataire de répondre au SMS reçu dans un délai de 48 heures. Passé ce délai, la réponse ne sera pas prise en compte.
 

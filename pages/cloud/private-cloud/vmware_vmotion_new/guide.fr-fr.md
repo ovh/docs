@@ -19,9 +19,6 @@ order: 04
 
 ### Déplacer une machine virtuelle
 
-Quand un token est reçu par SMS, celui-ci doit être renseigné dans l'interface sécurisée afin que la tâche en attente puisse s’exécuter.
-sur une autre ressource
-
 Pour déplacer une machine virtuelle sur une autre ressource, il vous suffit de faire un clic droit sur la machine virtuelle allumée puis de sélectionner le menu `Migrer...`{.action}.
 
 ![déplacer machine virtuelle](images/Vmotion1.png){.thumbnail}

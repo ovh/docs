@@ -1,8 +1,9 @@
 ---
-title: 'Webhosting: So ändern Sie die PHP-Version von Ihrem Kundencenter aus'
+title: 'Ändern der PHP-Version im Kundencenter'
 slug: webhosting_so_andern_sie_die_php-version_von_ihrem_kundencenter_aus
 excerpt: 'So ändern Sie die PHP-Version von Ihrem Kundencenter aus'
 legacy_guide_number: g1999
+section: 'PHP'
 ---
 
 ## Informationen zu PHP

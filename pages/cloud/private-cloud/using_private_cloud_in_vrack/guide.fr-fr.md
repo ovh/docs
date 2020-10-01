@@ -36,7 +36,7 @@ Dans le client vSphere, vous pouvez retrouver les *VLANs* compatibles vRack dans
 
 ![vlan](images/vRackVsphere.png){.thumbnail}
 
-Il est possible de modifier leurs paramètres, ou d'en créer de nouveau en suivant le guide de [création de VxLAN](../creation-vlan/).
+Il est possible de modifier leurs paramètres, ou d'en créer de nouveau en suivant le guide de [création de VxLAN](../creation-vlan-vxlan/).
 
 Vous pourrez ensuite assigner ces *portgroup* sur les interfaces réseaux de vos machines virtuelles.
 

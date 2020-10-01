@@ -6,7 +6,7 @@ section: 'Backup options'
 order: 1
 ---
 
-**Last updated 21st July 2020**
+**Last updated 23rd September 2020**
 
 
 ## Objective
@@ -17,13 +17,13 @@ Creating a snapshot is a fast and simple way to secure a functioning system befo
 
 > [!primary]
 >
-Before applying backup options, we recommend to consult the [VPS options]({ovh_www}/vps/options/) for pricing comparisons and further details.
+Before applying backup options, we recommend to consult the [VPS options](https://www.ovhcloud.com/asia/vps/options/) for pricing comparisons and further details.
 >
 
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
-- an OVHcloud [VPS service]({ovh_www}/vps/) already set up
+- an OVHcloud [VPS service](https://www.ovhcloud.com/asia/vps/) already set up
 
 
 ## Instructions
@@ -52,8 +52,6 @@ If you are sure that you would like to reset your VPS to the status of the snaps
 
 ### Best practice for using snapshots
 
-### Best practice for using snapshots
-
 #### Configuring the QEMU agent on a VPS
 
 Snapshots are instantaneous images of your running system ("live snapshot"). To ensure the availability of your system when the snapshot is created, the QEMU agent is used to prepare the filesystem for the process.
@@ -75,10 +73,16 @@ $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
-Start the service to ensure it is running:
+Reboot the VPS:
 
 ```
-$ sudo service qemu-guest-agent start
+$ sudo reboot
+```
+
+Check the service to ensure it is running:
+
+```
+$ sudo service qemu-guest-agent status
 ```
 
 ##### **Redhat-based distributions (Centos, Fedora)**
@@ -97,10 +101,15 @@ $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
-Start the agent and verify that it is running:
+Reboot the VPS:
 
 ```
-$ sudo service qemu-guest-agent start
+$ sudo reboot
+```
+
+Check the service to ensure it is running:
+
+```
 $ sudo service qemu-guest-agent status
 ```
 

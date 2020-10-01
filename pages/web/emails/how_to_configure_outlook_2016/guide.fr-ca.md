@@ -60,7 +60,7 @@ Complétez ensuite les informations demandées.
 
 |Information|Description|
 |---|---|
-|Serveur|Renseignez le serveur « ssl0.ovh.net ».|
+|Serveur|Renseignez le serveur « imap.mail.ovh.ca ».|
 |Port|Indiquez le port « 993 ».|
 |Méthode de chiffrement|Sélectionnez « SSL/TLS ».|
 |Exiger l'authentification|Ne cochez pas la case « Exiger l'authentification par mot de passe sécurisé (SPA) lors de la connexion ».|
@@ -69,7 +69,7 @@ Complétez ensuite les informations demandées.
 
 |Information|Description|
 |---|---|
-|Serveur|Renseignez le serveur « ssl0.ovh.net ».|
+|Serveur|Renseignez le serveur « smtp.mail.ovh.ca ».|
 |Port|Indiquez le port « 465 ».|
 |Méthode de chiffrement|Sélectionnez « SSL/TLS ».|
 |Exiger l'authentification|Ne cochez pas la case « Exiger l'authentification par mot de passe sécurisé (SPA) lors de la connexion ».|
@@ -86,15 +86,15 @@ Si vous êtes amené à renseigner manuellement des champs techniques dans les p
 
 |Type de serveur|Nom du serveur|Méthode de chiffrement|Port|
 |---|---|---|---|
-|Entrant|ssl0.ovh.net|SSL/TLS|993|
-|Sortant|ssl0.ovh.net|SSL/TLS|465|
+|Entrant|imap.mail.ovh.ca|SSL/TLS|993|
+|Sortant|smtp.mail.ovh.ca|SSL/TLS|465|
 
 - **Pour une configuration en POP**
 
 |Type de serveur|Nom du serveur|Méthode de chiffrement|Port|
 |---|---|---|---|
-|Entrant|ssl0.ovh.net|SSL/TLS|995|
-|Sortant|ssl0.ovh.net|SSL/TLS|465|
+|Entrant|pop.mail.ovh.ca|SSL/TLS|995|
+|Sortant|smtp.mail.ovh.ca|SSL/TLS|465|
 
 ### Étape 2 : utiliser l'adresse e-mail
 

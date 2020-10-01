@@ -78,7 +78,7 @@ L’espace client contient une partie concernant les e-mails que vous envoyez av
 ## Et les campagnes de-mailing dans tout ca ?
 Vous l’aurez compris, si vous souhaitez lancer une campagne d’e-mailing, comme l’envoi d’une newsletter à des milliers de destinataires, l’usage de la fonction **mail()** n’est pas le plus adapté.
 
-Nous vous recommandons d’utiliser d’autres types de services, spécialisés dans [l’envoi massif d’e-mails](../day14/guide.fr-fr.md){.ref}, et dont le métier est de maximiser la délivrabilité de vos messages, la lisibilité sur tout type de plateformes et d’en augmenter l’efficacité, grâce à des statistiques avancées sur leur consultation (taux d’ouverture, taux de clic, etc.)
+Nous vous recommandons d’utiliser d’autres types de services, spécialisés dans [l’envoi massif d’e-mails](../day14/){.ref}, et dont le métier est de maximiser la délivrabilité de vos messages, la lisibilité sur tout type de plateformes et d’en augmenter l’efficacité, grâce à des statistiques avancées sur leur consultation (taux d’ouverture, taux de clic, etc.)
 
 Mais nous en reparlons plus précisément demain !
 

@@ -1,9 +1,8 @@
 ---
 title: 'Optimierung der Performance Ihrer Webseite'
 excerpt: 'Erfahren Sie hier, wie Sie Latenzen auf Webseiten analysieren und verbessern können'
-id: '1396'
 slug: webhosting_optimierung_der_performance_ihrer_webseite
-legacy_guide_number: g1396
+section: 'Webseitenoptimierung'
 ---
 
 **Letzte Aktualisierung am 12.02.2020**

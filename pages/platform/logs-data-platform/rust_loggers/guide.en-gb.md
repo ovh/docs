@@ -1,17 +1,17 @@
 ---
 title: Rust - Push logs with gelf_logger or log4rs-gelf
-slug: rust_libs
+slug: rust-libs
 order: 30
 section: Logging libraries
 ---
 
-**Last updated 24th April, 2019**
+**Last updated 27th July, 2020**
 
 ## Objective
 
 This guide will show you how to push your logs to Logs Data Platform using Rust.
 
-Rust has a logging implementation ([log](https://docs.rs/log/*/log/){.external}) which is widely used. OVH has implemented this system to support the [GELF format](http://docs.graylog.org/en/latest/pages/gelf.html#gelf-payload-specification){.external}:
+Rust has a logging implementation ([log](https://docs.rs/log/*/log/){.external}) which is widely used. OVHcloud has implemented this system to support the [GELF format](http://docs.graylog.org/en/latest/pages/gelf.html#gelf-payload-specification){.external}:
 
 - **gelf_logger**: This is a minimal logger.
 - **log4rs-gelf**: Based on _gelf_logger_, this implementation is compatible with the complex configurable framework [log4rs](https://docs.rs/log4rs/*/log4rs/){.external}.
@@ -21,15 +21,15 @@ Those loggers will:
 - serialize log entries  using the [serde_gelf](https://crates.io/crates/serde_gelf){.external} crate.
 - bufferize the result into memory.
 - batch send over network using TCP/TLS.
-- a facility to ensure fields suits the [LDP naming conventions](../field_naming_conventions/guide.en-gb.md){.ref}.
+- a facility to ensure fields suits the [LDP naming conventions](../field-naming-conventions){.ref}.
 
 ## Requirements
 
 To complete this guide you will need:
 
 - Rust, we recommend the Nightly version.
-- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
-- [To create at least one Stream and get its token.](../quick_start/guide.en-gb.md){.ref}
+- [Activated your Logs Data Platform account.](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
+- [To create at least one Stream and get its token.](../quick-start){.ref}
 
 ## gelf_logger
 
@@ -149,7 +149,7 @@ You could also look at the [generated API documentation](https://docs.rs/log4rs-
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
-- Documentation: [Guides](../product.en-gb.md){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Getting Started: [Quick Start](../quick-start){.ref}
+- Documentation: [Guides](../){.ref}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

@@ -26,10 +26,10 @@ Dabar turite prieigą prie savo Dedicated Cloud informacijos, ar tai būtų mazg
 ## 
 Iš pradžių susikonfigūruokite savo iPad, skiltyje "nustatymai". Nurodykite OVH serverio pavadinimą: vcma.ovh.com
 
-![](images/img_147.jpg){.thumbnail}
+ 
 Atlikę konfigūravimą galite paleisti programėlę. Nurodykite identifikacinius duomenis, kuriuos gavote el. paštu:
 
-![](images/img_15.jpg){.thumbnail}
+ 
 Prisijungę matysite visus savo Dedicated Cloud mazgus, panaudotus resursus, taip pat susietas virtualias mašinas:
 
 ![](images/img_152.jpg){.thumbnail}

@@ -18,9 +18,9 @@ This guide will help you to track your slowest queries and send them to Logs Dat
 
 Before, you must read these three guides:
 
-- [Starting with Logs Data Platform.](../quick_start/guide.fr-fr.md){.ref}
-- [How to setup a Logstash input?](../logstash_input/guide.fr-fr.md){.ref}
-- [Using Filebeat with Logs Data Platform.](../filebeat_logs/guide.fr-fr.md){.ref}
+- [Starting with Logs Data Platform.](../quick-start){.ref}
+- [How to setup a Logstash input?](../logstash-input){.ref}
+- [Using Filebeat with Logs Data Platform.](../filebeat-logs){.ref}
 
 ## Instructions
 
@@ -73,21 +73,12 @@ Slow query logs are multi-line logs giving information:
 - The query itself.
 
 
-### Setup Logstash collector for slow log queries
-
-Our favorite way to send MySQL slow query logs is to use a Logstash collector with a Filebeat input and a custom filter that uses Grok extensively. Create a Logstash collector with the port 5044 exposed (or any other port of your choice) on Logs Data Platform and go to the configuration page.
-
-Select the **Filebeat** option from our wizard to fill all the sections.
-
-![logstash](images/logstash.png){.thumbnail}
-
-Once your configuration has been saved and tested, launch your collector to run it and get a hostname. This hostname will help you to configure Filebeat.
-
 ### Configure Filebeat on your system
 
+Our favorite way to send MySQL slow query logs is to send logs directly to Logs Data Platform by using [Filebeat](https://www.elastic.co/fr/downloads/beats/filebeat-oss){.external}.
 We cover Filebeat in depth in [another tutorial](https://docs.ovh.com/gb/en/logs-data-platform/filebeat-logs/){.external}. Here is a minimal **filebeat.yml** configuration file.
 
-```yaml hl_lines="32 38"
+```yaml
 #=========================== Filebeat inputs =============================
 
 filebeat.inputs:
@@ -119,19 +110,11 @@ filebeat.config.modules:
 #----------------------------- Logstash output --------------------------------
 output.logstash:
   # The Logstash hosts
-  hosts: ["<your_cluster>-XXXXXXXXXXXXXXXXXX.<your_cluster>.logs.ovh.com:5044"]
+  hosts: ["<your_cluster>.logs.ovh.com:5044"]
 
   ssl.enabled: true
 
-  # Optional SSL. By default is off.
-  # List of root certificates for HTTPS server verifications
-  ssl.certificate_authorities: ["/etc/ssl/certs/ldp.pem"]
 ```
-
-You have to replace the **hosts** attribute with the hostname of your collector. 
-Also ensure to fill the value of **/etc/ssl/certs/ldp.pem** with the "Data-gathering tools" certificate you will find in the **Home** page of your service.
-
-![SSL input](images/ssl_input.png){.thumbnail}
 
 Enable filebeat MySQL support with following command:
 
@@ -182,13 +165,13 @@ A fully parsed log looks like this:
 - You can track the **mysql_slowlog_user** and the **mysql_slowlog_host** that trigger the slowest queries.
 - You have the **mysql_slowlog_rows_examined_int** scanned and returned
 
-All this information can help you to analyse the most difficult queries for your database. You will know when to scale and when your database is too big for your hardware or when to optimize your queries. Of course it is always better to have a nice dashboard to display your own key performance indicators. One way to have this critical information as soon as it arrives is to use the [alerting feature.](../alerting/guide.fr-fr.md){.ref}
+All this information can help you to analyse the most difficult queries for your database. You will know when to scale and when your database is too big for your hardware or when to optimize your queries. Of course it is always better to have a nice dashboard to display your own key performance indicators. One way to have this critical information as soon as it arrives is to use the [alerting feature.](../alerting){.ref}
 
 ![slow_graylog](images/mysql_slow_dashboard.png){.thumbnail}
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.fr-fr.md){.ref}
-- Documentation: [Guides](../product.fr-fr.md){.ref}
+- Getting Started: [Quick Start](../quick-start){.ref}
+- Documentation: [Guides](../){.ref}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

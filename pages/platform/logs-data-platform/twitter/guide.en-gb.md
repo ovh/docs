@@ -16,9 +16,9 @@ Twitter can be an amazing source to have a direct feedback on your products or e
 
 Prior to completing this guide, you should read the following:
 
-- [Quick Start of Logs Data Platform](../quick_start/guide.en-gb.md){.ref}
-- [Field naming conventions](../field_naming_conventions/guide.en-gb.md){.ref}
-- [Logstash collector](../logstash_input/guide.en-gb.md){.ref}
+- [Quick Start of Logs Data Platform](../quick-start){.ref}
+- [Field naming conventions](../field-naming-conventions){.ref}
+- [Logstash collector](../logstash-input){.ref}
 
 If you have completely understood these three guides, let's dive into this one.
 
@@ -48,7 +48,7 @@ Note that you can configure the access levels on both your app and tokens. All t
 
 #### Logstash collector creation
 
-In the Logs Data Platform manager, create a Logstash collector. On the creation page, as usual fill a Name and a Description and leave the default port since it will not be used (The logstash input will connect to Twitter by itself). Also attach your collector to a dedicated stream. The only important thing is to check the **Single Instance** option. This option is here to ensure that only one logstash instance will be created. If you don't use it, according to your option attached, several instances will fetch the same data from Twitter and send it to your stream multiple times.
+In the Logs Data Platform manager, create a Logstash collector. On the creation page, as usual fill a Name and a Description and leave the default port since it will not be used (The logstash input will connect to Twitter by itself). Also attach your collector to a dedicated stream. The only important thing is to create only one instance. If not, you will have several instances fetching the same data from Twitter and sending it to your stream multiple times.
 
 ![single_instance](images/single_instance.png){.thumbnail}
 
@@ -260,11 +260,11 @@ There are many more possibilities. Of course you can create beautiful dashboards
 
 ![Dashboards](images/dashboard.png){.thumbnail}
 
-That's all for now. If you have any proposition or trouble with this tutorial, don't hesitate to reach us with the mailing list or share your experience with the [Community](https://community.ovh.com/en/c/Platform){.external}.
+That's all for now. If you have any proposition or trouble with this tutorial, don't hesitate to reach us on the [Community hub](https://community.ovh.com/en/c/Platform/data-platforms){.external}.
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
-- Documentation: [Guides](../product.en-gb.md){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
-- Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
+- Getting Started: [Quick Start](../quick-start){.ref}
+- Documentation: [Guides](../){.ref}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

@@ -136,6 +136,7 @@ Le porte995 e 465 corrispondono alla securizzazione SSL attivata.
 
 
 |Porte|SSLattivata|SSLdisattivata|
+|---|---|---|
 |In entrata|995|110|
 |In uscita|465|587|
 
@@ -165,16 +166,6 @@ Le porte993 e 465 corrispondono alla securizzazione SSL attivata.
 
 
 |Porte|SSLattivata|SSLdisattivata|
+|---|---|---|
 |In entrata|993|143|
 |In uscita|465|587|
-
-
-
-
-## Informazioni generali
-Se vuoi, possiamo occuparci di alcuni servizi relativi al tuo account email con interventi a pagamento.
-
-Per informazioni contatta il [nostro supporto](http://www.ovh.it/supporto/).
-
-![](images/img_2501.jpg){.thumbnail}
-

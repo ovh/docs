@@ -4,6 +4,7 @@ excerpt: Abruf der SQL Private Metriken in Grafana
 id: '2057'
 slug: abruf_der_sql_private_metriken_in_grafana
 legacy_guide_number: g2057
+section: 'SQL Private'
 ---
 
 

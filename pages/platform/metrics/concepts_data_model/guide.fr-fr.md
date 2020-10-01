@@ -234,12 +234,12 @@ Labels are separated by semi colons, when timestamp and value by spaces
 
 #### Warp10
 
-[Warp10](../protocol_warp10/guide.en-gb.md){.ref} is the native protocol of OVH Metrics platform, so, there is no data structure mapping.
+[Warp10](../protocol_warp10/guide.fr-fr.md){.ref} is the native protocol of OVH Metrics platform, so, there is no data structure mapping.
 
 
 ## Go further
 
-- Getting Started: [Quick Start](../metrics_opentsdb/guide.fr-fr.md){.ref}
+- Getting Started: [Quick Start](../start-opentsdb/){.ref}
 - Documentation: [Guides](../product.fr-fr.md){.ref}
 - Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}

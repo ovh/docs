@@ -19,13 +19,13 @@ Es posible alojar varios sitios web en un mismo hosting, tanto si sus dominios e
 - Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external} compatible.
 - Tener uno o más [dominios](https://www.ovh.com/world/es/dominios/){.external}.
 - Poder modificar la configuración (zona DNS) del dominio o dominios.
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Procedimiento
 
 ### 1. Acceder a la gestión del multisitio
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}.
 
 Se mostrará una tabla que contiene todos los dominios añadidos al alojamiento. Algunos de ellos se habrán creado automáticamente al instalarlo.
 

@@ -6,7 +6,7 @@ excerpt: All the logs of your pods in one place
 section: Use cases
 ---
 
-**Last updated 8th August, 2019**
+**Last updated 27th July, 2020**
 
 ## Objective 
 
@@ -16,8 +16,8 @@ section: Use cases
 
 Note that in order to complete this tutorial, you should have at least:
 
-- [Activated your Logs Data Platform account.](https://www.ovh.co.uk/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
-- [Created at least one Stream and get its token.](../quick_start/guide.en-gb.md){.ref}
+- [Activated your Logs Data Platform account.](https://www.ovh.co.uk/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-account~productId~%27logs%29){.external}
+- [Created at least one Stream and get its token.](../quick-start){.ref}
 - A working kubernetes cluster with some pods already logging to stdout. 
 - 15 minutes. 
 
@@ -65,7 +65,7 @@ We create a *ldp-token* secret with only one key named *ldp-token* as the value 
 
 Even if it is undocumented, Fluent Bit supports [GELF](https://docs.graylog.org/en/stable/pages/gelf.html){.external} as a standard output with udp,tcp and TLS protocols out of the box. We will modify the proposed file of the documentation to parse and convert Fluent Bit logs to GELF:
 
-```yaml hl_lines="103 113"
+```yaml
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -144,6 +144,7 @@ data:
         Host            ${FLUENT_LDP_HOST}
         Port            ${FLUENT_LDP_PORT}
         Mode            tls
+        tls             On
         Compress        False
 
   parsers.conf: |
@@ -308,9 +309,7 @@ And that's it. Your kubernetes activity is now perfectly logged in one place. Ha
 
 ## Go further
 
-- Getting Started: [Quick Start](../quick_start/guide.en-gb.md){.ref}
-- Documentation: [Guides](../product.en-gb.md){.ref}
-- Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
-- Create an account: [Try it free!](https://www.ovh.co.uk/order/express/#/new/express/resume?products=~%28~%28planCode~%27logs-basic~productId~%27logs%29){.external}
-
-
+- Getting Started: [Quick Start](../quick-start){.ref}
+- Documentation: [Guides](../){.ref}
+- Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
+- Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs)){.external}

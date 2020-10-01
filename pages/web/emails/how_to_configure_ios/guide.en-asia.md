@@ -59,10 +59,10 @@ Tap `Next`{.action}, and enter the information requested:
 |Information|Description| 
 |---|---| 
 |IMAP or POP|We recommend using **IMAP** (selected by default). You can also select **POP** (emails stored locally on your Mail app) in the drop-down menu.|
-|Host name (incoming)|Enter the server “ssl0.ovh.net”.|
+|Host name (incoming)|Enter the server “imap.mai.ovh.ca”.|
 |Username (incoming)|Enter your full email address.|
 |Password (incoming)|Enter the password for your email address.|  
-|Host name (outgoing)|Enter the server “ssl0.ovh.net”.|
+|Host name (outgoing)|Enter the server “smtp.mail.ovh.ca”.|
 |Username (outgoing)|Enter your full email address.|
 |Password (outgoing)|Enter the password for your email address.| 
 
@@ -80,15 +80,15 @@ If you need to enter any settings manually in your account preferences, the tech
 
 |Server type|Server name|SSL|Port|
 |---|---|---|---|
-|Incoming|ssl0.ovh.net|Yes|993|
-|Outgoing|ssl0.ovh.net|Yes|465|
+|Incoming|imap.mail.ovh.ca|Yes|993|
+|Outgoing|smtp.mail.ovh.ca|Yes|465|
 
 - **for POP configuration**
 
 |Server type|Server name|SSL|Port|
 |---|---|---|---|
-|Incoming|ssl0.ovh.net|Yes|995|
-|Outgoing|ssl0.ovh.net|Yes|465|
+|Incoming|pop.mail.ovh.ca|Yes|995|
+|Outgoing|smtp.mail.ovh.ca|Yes|465|
 
 ### Step 2: Use the email address
 
@@ -98,8 +98,6 @@ OVHcloud also has a web application you can use to access your email account fro
 
 ## Go further
 
-[Configuring an Email Pro account on iPhone and iPad](../../emails-pro/iphone-configuration/)
 
-[Configuring an Exchange account on iPhone and iPad](../../microsoft-collaborative-solutions/exchange_2013_how_to_configure_on_ios_iphoneipad/)
 
 Join our community of users on <https://community.ovh.com/en/>.

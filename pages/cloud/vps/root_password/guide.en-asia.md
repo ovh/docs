@@ -108,7 +108,7 @@ Finally, reboot your VPS on its drive via your OVH Control Panel.
 
 ## Go further
 
-[Introduction to SSH](../dedicated/ssh-introduction/){.external}.
+[Introduction to SSH](../../dedicated/ssh-introduction/){.external}.
 
 [Activating rescue mode on VPS](../rescue/){.external}.
 

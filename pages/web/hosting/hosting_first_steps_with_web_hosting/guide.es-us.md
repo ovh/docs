@@ -19,7 +19,7 @@ Los planes de hosting de OVHcloud permiten crear un sitio web de forma fácil y 
 - Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}.
 - Haber recibido el email de confirmación de la instalación de su alojamiento web.
 - Disponer de un [dominio](https://www.ovh.com/world/es/dominios/){.external} con el que poder acceder a su sitio web.
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Procedimiento
 
@@ -37,7 +37,7 @@ Desde el área de cliente, OVHcloud pone a disposición de sus clientes una herr
 
 **Migrar un sitio web existente a OVHcloud**
 
-La migración de un sitio web puede ser complicada, sobre todo cuando se trata de servicios en producción en los que no quiere que se produzcan interrupciones. Esta guía solo describe algunas de las operaciones que debe realizar para migrar sus servicios. Para conocer todos los pasos, consulte nuestra guía [Transferir un sitio web y el correo sin cortes del servicio](../../domains/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/).
+La migración de un sitio web puede ser complicada, sobre todo cuando se trata de servicios en producción en los que no quiere que se produzcan interrupciones. Esta guía solo describe algunas de las operaciones que debe realizar para migrar sus servicios. Para conocer todos los pasos, consulte nuestra guía [Transferir un sitio web y el correo sin cortes del servicio](../web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/).
 
 ### 2. Instalar el sitio web
 
@@ -47,7 +47,7 @@ Una vez haya definido su proyecto, solo tiene que integrarlo en su alojamiento. 
 
 Esta solución utiliza los módulos en un clic de OVH, una herramienta que permite instalar un CMS de forma fácil y rápida. OVHcloud se encarga de la instalación del sitio web y le envía las claves de acceso.
 
-Para poder instalar el módulo de OVHcloud, debe asegurarse de que el directorio de instalación del módulo esté vacío (si todavía no se ha conectado a su espacio de almacenamiento, estará vacío). Para instalar el módulo en un clic, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. En la sección `Alojamientos`{.action}, haga clic en el nombre de su alojamiento web. A continuación, abra la pestaña `Módulos en un clic`{.action} y haga clic en el botón `Añadir un módulo`{.action}.
+Para poder instalar el módulo de OVHcloud, debe asegurarse de que el directorio de instalación del módulo esté vacío (si todavía no se ha conectado a su espacio de almacenamiento, estará vacío). Para instalar el módulo en un clic, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. En la sección `Alojamientos`{.action}, haga clic en el nombre de su alojamiento web. A continuación, abra la pestaña `Módulos en un clic`{.action} y haga clic en el botón `Añadir un módulo`{.action}.
 
 ![Acceso a los módulos en un clic](images/access_to_the_1_click_modules_section.png){.thumbnail} 
 
@@ -66,7 +66,7 @@ Para poder instalar el módulo de OVHcloud, debe asegurarse de lo siguiente:
 - El directorio de instalación del módulo debe estar vacío (si todavía no se ha conectado a su espacio de almacenamiento, estará vacío).
 - Ya debe haber creado una base de datos en su alojamiento (abra la pestaña `Bases de datos`{.action} y haga clic en `Crear una base de datos`{.action} para realizar la operación).
 
-Para crear la base de datos, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione su alojamiento web. A continuación, abra la pestaña `Bases de datos`{.action} y haga clic en el botón `Crear una base de datos`{.action}. Complete la información solicitada y espere a que se efectúe la instalación.
+Para crear la base de datos, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione su alojamiento web. A continuación, abra la pestaña `Bases de datos`{.action} y haga clic en el botón `Crear una base de datos`{.action}. Complete la información solicitada y espere a que se efectúe la instalación.
 
 ![Acceso a los módulos en un clic](images/create_a_database.png){.thumbnail} 
 
@@ -82,19 +82,19 @@ Si desea más información sobre la instalación de un módulo en modo avanzado,
 
 Esta solución es útil si desea crear o migrar un sitio web sin utilizar los módulos de OVHcloud. Para ello, debe tener los archivos del sitio web que desea instalar, ya que deberá conectarse manualmente a su espacio de almacenamiento para subir dichos archivos y luego, si es posible, conectar su sitio a una base de datos previamente creada.
 
-No existe un procedimiento universal, ya que cada sitio web es diferente, pero podemos orientarle sobre las operaciones que deberá realizar en su alojamiento web de OVHcloud en las guías [Publicar un sitio web en internet](../web_hosting_publicar_un_sitio_web_en_internet/) y [Transferir un sitio web y el correo sin cortes del servicio](../../domains/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/). Una vez haya instalado el sitio web manualmente en su alojamiento, continúe con los pasos explicados a continuación.
+No existe un procedimiento universal, ya que cada sitio web es diferente, pero podemos orientarle sobre las operaciones que deberá realizar en su alojamiento web de OVHcloud en las guías [Publicar un sitio web en internet](../web_hosting_publicar_un_sitio_web_en_internet/) y [Transferir un sitio web y el correo sin cortes del servicio](../web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/). Una vez haya instalado el sitio web manualmente en su alojamiento, continúe con los pasos explicados a continuación.
 
 ### 3. Crear las direcciones de correo electrónico
 
 Puede omitir este paso si no desea utilizar las direcciones de correo electrónico que se incluyen en el [plan de hosting](https://www.ovh.com/world/es/hosting/){.external}.
 
-Para crear una o más direcciones de correo electrónico, deber estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el nombre del alojamiento al que está asociado el servicio de correo. A continuación, abra la pestaña `Correo electrónico`{.action} y haga clic en el botón `Crear una dirección de correo`{.action}.
+Para crear una o más direcciones de correo electrónico, deber estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el nombre del alojamiento al que está asociado el servicio de correo. A continuación, abra la pestaña `Correo electrónico`{.action} y haga clic en el botón `Crear una dirección de correo`{.action}.
 
 ![Crear una dirección de correo](images/create_an_email_address.png){.thumbnail} 
 
 Introduzca la información solicitada para crear su dirección de correo electrónico y repita este mismo proceso si desea crear más direcciones. Para migrar todas sus direcciones de correo electrónico a OVHcloud, le recomendamos que utilice nuestra herramienta [OVHcloud Mail Migrator](https://omm.ovh.net/){.external}, que le simplificará el proceso. 
 
-Si desea más información sobre cómo crear una dirección de correo electrónico o migrar sus servicios a OVHcloud, consulte nuestras guías [Crear una dirección de correo electrónico](../../emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/) y, en su caso, [Transferir un sitio web y el correo sin cortes del servicio](../../domains/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/).
+Si desea más información sobre cómo crear una dirección de correo electrónico o migrar sus servicios a OVHcloud, consulte nuestras guías [Crear una dirección de correo electrónico](../../emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/) y, en su caso, [Transferir un sitio web y el correo sin cortes del servicio](../web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/).
 
 ### 4. Comprobar o modificar la configuración del dominio
 
@@ -110,13 +110,13 @@ Existen varios registros DNS asociados a su alojamiento web de OVHcloud. A conti
 
 **El registro A, para el sitio web**
 
-Para comprobar el registro A que debe utilizar en la zona de DNS de su dominio, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el nombre del alojamiento. A continuación, en la pestaña `Información general`{.action}, consulte la dirección IP que aparece junto a **IPv4**.
+Para comprobar el registro A que debe utilizar en la zona de DNS de su dominio, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el nombre del alojamiento. A continuación, en la pestaña `Información general`{.action}, consulte la dirección IP que aparece junto a **IPv4**.
 
 ![Modificar el registro A](images/know_the_OVH_A_records.png){.thumbnail} 
 
 **Los registros MX, para el correo electrónico**
 
-Para comprobar los registros MX que debe utilizar en la zona de su dominio, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el nombre del alojamiento. A continuación, en la pestaña `Información general`{.action}, consulte la información que aparece junto a **Registros MX**. Estos registros pueden variar en función del servicio, según el filtro DNS que haya decidido aplicar.
+Para comprobar los registros MX que debe utilizar en la zona de su dominio, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el nombre del alojamiento. A continuación, en la pestaña `Información general`{.action}, consulte la información que aparece junto a **Registros MX**. Estos registros pueden variar en función del servicio, según el filtro DNS que haya decidido aplicar.
 
 ![Modificar los registros MX](images/know_the_OVH_MX_records.png){.thumbnail} 
 
@@ -126,7 +126,7 @@ Una vez conozca los registros DNS asociados a su alojamiento web de OVHcloud, de
 
 **Si el dominio se ha contratado junto con un plan de hosting de OVHcloud**
 
-La configuración de su dominio es correcta y puede pasar a la siguiente etapa. No obstante, si ha realizado alguna modificación en la zona DNS de su dominio desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, es posible que deba revisarla.
+La configuración de su dominio es correcta y puede pasar a la siguiente etapa. No obstante, si ha realizado alguna modificación en la zona DNS de su dominio desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, es posible que deba revisarla.
     
 Para acceder a la zona de DNS de su dominio de OVHcloud, en la columna izquierda, haga clic en `Dominios`{.action} y seleccione el nombre de dominio. A continuación, abra la pestaña `Zona DNS`{.action} y revise la información, modificándola cuando sea necesario.
 
@@ -136,7 +136,7 @@ Compruebe la zona DNS de su dominio directamente con el proveedor que lo gestion
 
 **Migración de servicios a OVHcloud (sitio web y correo electrónico)**
 
-En este caso, si las operaciones relacionadas con los DNS no se efectúan de forma adecuada, pueden afectar a la disponibilidad de los servicios. Tal como se indica en la guía [Transferir un sitio web y el correo sin cortes del servicio](../../domains/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external}, deberá modificar los servidores DNS del dominio al final del proceso.
+En este caso, si las operaciones relacionadas con los DNS no se efectúan de forma adecuada, pueden afectar a la disponibilidad de los servicios. Tal como se indica en la guía [Transferir un sitio web y el correo sin cortes del servicio](../web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/){.external}, deberá modificar los servidores DNS del dominio al final del proceso.
 
 > [!primary]
 >
@@ -157,7 +157,7 @@ Si desea configurar su dirección de correo electrónico en un cliente de correo
 
 ## Más información
 
-[Transferir un sitio web y el correo sin cortes del servicio](../../domains/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/)
+[Transferir un sitio web y el correo sin cortes del servicio](../web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/)
 
 [Publicar un sitio web en internet](../web_hosting_publicar_un_sitio_web_en_internet/)
 

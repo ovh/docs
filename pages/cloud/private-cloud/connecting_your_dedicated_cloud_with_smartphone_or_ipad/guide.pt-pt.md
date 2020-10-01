@@ -3,6 +3,7 @@ title: Ligação ao Dedicated Cloud com smartphone ou iPad.
 excerpt: ''
 slug: ligacao_ao_dedicated_cloud_com_smartphone_ou_ipad
 legacy_guide_number: g623
+hidden: true
 ---
 
 
@@ -25,10 +26,10 @@ Agora já terá acesso ao conjunto de informações do seu pCC, quer se trate do
 ## 
 Configure previamente o seu iPad na secção « Settings ». Deverá aí indicar o nome do servidor OVH :  vcma.ovh.com
 
-![](images/img_147.jpg){.thumbnail}
+ 
 Uma vez esta operação realizada, poderá iniciar a aplicação. É necessário indicar as credenciais que recebeu por email :
 
-![](images/img_15.jpg){.thumbnail}
+ 
 Assim que se ligar, poderá encontrar o conjunto dos hosts pCC, os recursos utilizados e as VMs associadas :
 
 ![](images/img_152.jpg){.thumbnail}

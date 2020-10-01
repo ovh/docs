@@ -5,7 +5,7 @@ excerpt: 'Find out how to use the secure interface to confirm sensitive operatio
 section: 'OVH services and options'
 ---
 
-**Last updated 29th June 2020**
+**Last updated 3rd September 2020**
 
 ## Objective
 
@@ -49,7 +49,7 @@ This message contains:
 - the name of the operation that requires validation
 - the operation ID
 - validation token
-- a link to validate the operation (please note, if your phone is not connected to a network whose [IP is authorised](../control-panel-ovh-private-cloud/#security), the page will not appear).
+- a link to validate the operation (please note, if your phone is not connected to a network whose [IP is authorised](../control-panel-ovh-private-cloud/#security-tab), the page will not appear).
 
 To validate the operation, log in via the link shown in the message. Then go to the `Operation Validation`{.action} section.
 

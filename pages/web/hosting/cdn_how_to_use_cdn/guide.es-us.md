@@ -9,7 +9,7 @@ section: Optimización del sitio web
 **Última actualización: 05/05/2020**
 
 ##
-Conéctese al [área de cliente](https://www.ovh.com/auth/?action=gotomanager) con su ID de cliente y contraseña.
+Conéctese al [área de cliente](https://ca.ovh.com/auth/?action=gotomanager) con su ID de cliente y contraseña.
 
 En la columna izquierda, sección «Alojamientos», seleccione el alojamiento.
 

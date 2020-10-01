@@ -1,13 +1,13 @@
 ---
 title: Ajout de bloc IP
 slug: ajout-de-bloc-ip
-excerpt: Commander un bloc IP sur votre Private Cloud
+excerpt: Commander un bloc IP sur votre Hosted Private Cloud
 legacy_guide_number: '7766457'
 section: Fonctionnalités OVH
 order: 01
 ---
 
-**Dernière mise à jour le 25/06/2020**
+**Dernière mise à jour le 05/08/2020**
 
 ## Objectif
 
@@ -18,13 +18,13 @@ Un bloc IP peut vous servir à rendre vos services accessibles sur Internet.
 ## Prérequis
 
 * Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
-* Posséder une [infrastructure Hosted Private Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} sur votre compte OVHcloud.
+* Posséder une [infrastructure Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external} sur votre compte OVHcloud.
 
 ## En pratique
 
 ### Commander un bloc IP
 
-Pour commander un bloc IP supplémentaire pour votre **Private Cloud** , dirigez-vous sur votre espace client OVHcloud. Dans la section `Serveur`, cliquez sur la rubrique `IP` dans la colonne de gauche puis cliquez sur `Commander des IP additionnelles`{.action}. Sélectionnez ensuite votre **Private Cloud** dans le menu déroulant avant de passer à l'étape suivante.
+Pour commander un bloc IP supplémentaire pour votre **Hosted Private Cloud** , dirigez-vous sur votre espace client OVHcloud. Dans la section `Serveur`, cliquez sur la rubrique `IP` dans la colonne de gauche puis cliquez sur `Commander des IP additionnelles`{.action}. Sélectionnez ensuite votre **Private Cloud** dans le menu déroulant avant de passer à l'étape suivante.
 
 
 Plusieurs champs seront à remplir pour la création de votre bloc IP

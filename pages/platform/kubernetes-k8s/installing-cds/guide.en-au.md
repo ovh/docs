@@ -1,7 +1,7 @@
 ---
-title: 'Installing CDS on OVHcloud Managed Kubernetes'
+title: Installing CDS on OVHcloud Managed Kubernetes
 slug: installing-cds
-excerpt: 'Find out how to install CDS on OVHcloud Managed Kubernetes'
+excerpt: Find out how to install CDS on OVHcloud Managed Kubernetes
 section: Tutorials
 ---
 
@@ -266,7 +266,7 @@ Workflow successfully pushed !
 
 On CDS all actions could be done with UI, CLI or API. So you can go on your CDS UI to check your new workflow and run it.
 
-![CDS workflow](./images/installing-cds-01.png){.thumbnail}
+![CDS workflow](images/installing-cds-01.png){.thumbnail}
 
 For any further informations about CDS please check [official documentation](https://ovh.github.io/cds/){.external}.
 

@@ -107,6 +107,22 @@ En ambos tipos de plataformas SharePoint, encontrará el botón `Restaurar los p
 
 ![sharepoint](images/order-manage-sharepoint-09.png){.thumbnail}
 
+#### **Editar archivos Office 365 online**
+
+Es posible editar directamente archivos Office 365 online, como documentos *.docx* o *.xls*.
+
+Para ello, es necesario disponer de una licencia Office 365 válida y activarla en el área de cliente de OVHcloud.
+
+Acceda a la pestaña `Usuarios` de su plataforma y haga clic en los tres puntos ( `...`{.action}) que aparecen junto a su cuenta. Por último, haga clic en `Añadir una licencia Office`{.action}.
+
+![sharepoint](images/order-manage-sharepoint-10.png){.thumbnail}
+
+Confirme que dispone de una licencia Office 365 y haga clic en `Aceptar`{.action} para activarla.
+
+![sharepoint](images/order-manage-sharepoint-11.png){.thumbnail}
+
+A continuación, podrá editar sus archivos Office 365 directamente desde la interfaz web de su SharePoint.
+
 ## Más información
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

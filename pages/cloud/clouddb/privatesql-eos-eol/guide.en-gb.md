@@ -10,11 +10,15 @@ The products covered by those End Of Sale (EOS) and End Of Life (EOL) announceme
 |Version|EOL announcement|End-of-Sale|End-of-Support|
 |---|---|---|---|
 |MariaDB 10.1|2019-07-29|2020-04-17|2020-10-17|
-|MariaDB 10.2|To be defined|To be defined|To be defined|
+|MariaDB 10.2|2020-09-29|2021-11-21|2022-05-23|
+|MariaDB 10.3|To be defined|To be defined|To be defined|
+|MariaDB 10.4|To be defined|To be defined|To be defined|
+|MariaDB 10.5|To be defined|To be defined|To be defined|
 |MongoDB 4|2019-07-29|2019-02-25|To be defined|
 |MySQL 5.5|2019-07-29|2018-08-02|2020-01-28|
 |MySQL 5.6|2019-07-29|2020-08-02|2021-02-01|
 |MySQL 5.7|To be defined|To be defined|To be defined|
+|MySQL 8.0|To be defined|To be defined|To be defined|
 |PostgreSQL 9.4|2019-07-29|2019-10-29|2020-02-13|
 |PostgreSQL 9.5|2019-07-29|2020-08-12|2021-02-11|
 |PostgreSQL 9.6|2020-01-21|2021-05-12|2021-11-11|

@@ -1,6 +1,6 @@
 ---
-title: "Backing-up Persistent Volumes using Stash"
-excerpt: "Backing-up Persistent Volumes using Stash"
+title: Backing-up Persistent Volumes using Stash
+excerpt: Backing-up Persistent Volumes using Stash
 slug: backing-up-volumes-using-stash
 section: Tutorials
 ---
@@ -54,9 +54,9 @@ In this section you will create your S3 bucket on Swift.
 
 Before creating your S3 bucket you need to:
 
-- [Prepare your environement to use the OpenStack API](../../../public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [Prepare your environement to use the OpenStack API](../../public-cloud/prepare_the_environment_for_using_the_openstack_api/)
 
-- [Get Openstack RC File v3 from Horizon](../../../public-cloud/access_and_security_in_horizon/)
+- [Get Openstack RC File v3 from Horizon](../../public-cloud/access_and_security_in_horizon/)
 
 You should now have access to your OpenStack RC file, with a filename line `<user_name>-openrc.sh`, and the username and password for your OpenStack account.
 
@@ -269,7 +269,7 @@ Download pre-build binaries from [`stashed/cli`](https://github.com/stashed/cli/
 
 A detailed explanation of Volume Snapshot with Stash is available in the [official documentation](https://stash.run/docs/v0.9.0-rc.6/guides/latest/volumesnapshot/overview/).
 
-In Kubernetes, a [VolumeSnapshot](<(https://kubernetes.io/docs/concepts/storage/volume-snapshots/)>) represents a snapshot of a volume on a storage system. It was introduced as an Alpha feature in Kubernetes v1.12 and has been promoted to an Beta feature in Kubernetes 1.17.
+In Kubernetes, a [VolumeSnapshot](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) represents a snapshot of a volume on a storage system. It was introduced as an Alpha feature in Kubernetes v1.12 and has been promoted to an Beta feature in Kubernetes 1.17.
 
 In order to support `VolumeSnapshot`, your `PersistenVolumes` need to use a StorageClass with a [CSI](https://github.com/container-storage-interface/spec) driver that supports the feature. Currently OVHcloud Managed Kubernetes cluster propose you two of these `StorageClasses`: `csi-cinder-classic` and `csi-cinder-high-speed`.
 
@@ -563,7 +563,7 @@ We can see above that the backup session has succeeded. Now, we are going to ver
 
 The snapshots are visible on the . To see then, go to Object Storage section, where you will find the S3 bucket you have created. By clicking on the bucket you will see the list of objects, including all the snapshot beginning with the `/backup/demo/deployment/stash-demo` we had defined in the `Repository`:
 
-![Snapshots onb OVHcloud Manager](images/snapshot-on-manager.png){.thumbnail}
+![Snapshots onb OVHcloud Manager](images/snapshots-on-manager.png){.thumbnail}
 
 ---
 

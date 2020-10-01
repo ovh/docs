@@ -29,7 +29,7 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 
 Ensuite, cliquez sur `Confirmer`{.action}.
 
-![Activer votre Backup Storage](images/backup-storage-02_2020.PNG){.thumbnail}
+![Activer votre Backup Storage](images/backup-storage-02_2020.png){.thumbnail}
 
 Vous recevrez alors un e-mail d'activation et votre Backup Storage sera configuré en quelques minutes.
 
@@ -84,7 +84,7 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 
 Ensuite, cliquez sur `Confirmer`{.action}.
 
-![Changer votre mot de passe](images/backup-storage-09_2020.PNG){.thumbnail}
+![Changer votre mot de passe](images/backup-storage-09_2020.png){.thumbnail}
 
 Un e-mail de récupération de mot de passe sera envoyé à l'adresse e-mail enregistrée sur votre compte administrateur. Suivez les instructions qui y sont contenues pour réinitialiser votre mot de passe.
 
@@ -96,7 +96,7 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 
 Cliquez sur `Confirmer`{.action} sur le message d'avertissement pour procéder à la suppression.
 
-![Supprimer le Backup Storage](images/backup-storage-10_2020.PNG){.thumbnail}
+![Supprimer le Backup Storage](images/backup-storage-10_2020.png){.thumbnail}
 
 Votre Backup Stockage sera supprimé après quelques minutes. Cette suppression est irréversible.
 

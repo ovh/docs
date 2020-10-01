@@ -17,7 +17,7 @@ Los módulos en un clic permiten instalar un sitio web de forma fácil y rápida
 ## Requisitos
 
 - Tener contratado un [plan de hosting](https://www.ovh.com/world/es/hosting/).
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
 - No haber descargado archivos en el directorio en el que vaya a instalar el módulo.
 - El dominio (y el subdominio, en su caso) que utilice para el sitio web debe estar declarado como multisitio.
 

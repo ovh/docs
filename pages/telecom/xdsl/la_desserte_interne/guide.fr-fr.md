@@ -39,9 +39,9 @@ Il peut être directement raccordé à la première prise téléphonique de l'ha
 
 Certaines habitations ne possèdent pas de point de concentration car la distribution s'effectue de manière souterraine.
 
-Voici quelques exemples de PC :
+Voici un exemple de PC :
 
-![](images/pc2.jpeg){.thumbnail}![](images/pc1.jpeg){.thumbnail}![](images/IMG_20150518_200808.jpg){.thumbnail}
+![](images/IMG_20150518_200808.jpg){.thumbnail}
 
 ------------------------------------------------------------------------
 

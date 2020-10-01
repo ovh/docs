@@ -1,0 +1,47 @@
+---
+title: Alterar a política de acesso ao vCenter
+slug: alterar-a-politica-de-acesso-ao-vcenter
+excerpt: 'Saiba como alterar a estratégia de acesso para o vCenter'
+legacy_guide_number: '1442246'
+space_key: VS
+space_name: vSphere as a Service
+section: Funcionalidades da OVH
+---
+
+**Última atualização: 30/07/2020**
+
+## Objetivo
+
+Para melhorar a segurança da sua infraestrutura Hosted Private Cloud, pode limitar e gerir o acesso ao vCenter.
+
+**Saiba como alterar a estratégia de acesso para o vCenter na Área de Cliente OVHcloud.**
+
+## Requisitos
+
+- Dispor de uma oferta [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+
+## Instruções
+
+Aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), vá à secção `Server`{.action} e selecione o seu serviço em `Private Cloud`{.action} no menu à esquerda.
+
+Na página principal do serviço, clique no separador `Segurança`{.action} e em `Alterar a política de acesso ao vCenter`{.action}.
+
+![Setting access policy](images/modifypolicy-01.png){.thumbnail}
+
+Na janela que aparece, selecione a opção “Aberto” ou “Restritos” no menu pendente e clique em `Validar`{.action} para aplicar a seleção.
+
+![Setting access policy](images/modifypolicy-02.png){.thumbnail}
+
+> [!primary]
+>
+> Se definiu a política de acesso para “Restritos”, consulte o manual [“Autorizar IP a ligar-se ao vCenter”](../autorizar-ip-a-ligar-se-ao-vcenter/).
+> 
+
+## Quer saber mais?
+
+[Autorizar IP a ligar-se ao vCenter](../autorizar-ip-a-ligar-se-ao-vcenter/)
+
+Fale com a nossa comunidade de utilizadores: [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+
+

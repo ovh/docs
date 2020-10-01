@@ -15,7 +15,7 @@ El nuevo Load Balancer de OVH ofrece distintos tipos de balanceo de la carga de 
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&){.external}.
+- Estar conectado al [área de cliente de OVH](https://ca.ovh.com/auth/?action=gotomanager&){.external}.
 - Haber creado una granja de servidores.
 
 

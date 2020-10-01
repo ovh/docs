@@ -73,7 +73,7 @@ Suivez le reste des instructions à l’écran, puis cliquez sur `Confirmer`{.ac
 
 > [!primary]
 >
-> Certains systèmes d'exploitation ou plateformes, tels que Plesk et Windows, nécessitent l'achat d'une licence avant leur installation. Vous pouvez acheter celle-ci par l'intermédiaire d'OVHcloud dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external} dans la partie `Dédié`{.action}, puis `Licences`{.action} ou auprès d'un revendeur. Vous devrez ensuite l'intégrer manuellement, via le système d'exploitation lui-même, ou via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. 
+> Certains systèmes d'exploitation ou plateformes, tels que Plesk et Windows, nécessitent l'achat d'une licence avant leur installation. Vous pouvez acheter celle-ci par l'intermédiaire d'OVHcloud dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external} dans la partie `Dédié`{.action}, puis `Licences`{.action} ou auprès d'un revendeur. Vous devrez ensuite l'intégrer manuellement, via le système d'exploitation lui-même, ou via votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. 
 > 
 
 

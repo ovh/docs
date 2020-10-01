@@ -38,7 +38,7 @@ En la nueva pantalla, introduzca los siguientes datos:
 
 Dirección de correo electrónico: Dirección de correo electrónico completa.
 
-Contraseña: La contraseña elegida en el [manager](https://www.ovh.com/auth/?action=gotomanager).
+Contraseña: La contraseña elegida en el [manager](https://ca.ovh.com/auth/?action=gotomanager).
 
 Nombre de usuario: Dirección de correo electrónico completa. 
 
@@ -76,7 +76,7 @@ Aquí también puede cambiar la información de configuración de su cuenta de c
 
 A continuación se describen las opciones disponibles en «Avanzadas...».
 
-![outlook2011](images/img_1497.jpg){.thumbnail}
+![outlook2011](images/2138.png){.thumbnail}
 
 
 ## Servidor
@@ -103,7 +103,7 @@ A continuación recordamos los valores de configuración de una cuenta de correo
 Configuración POP con la protección SSL activada o desactivada:
 
 Dirección de correo electrónico: Dirección de correo electrónico completa.
-Contraseña: La contraseña elegida en el [manager](https://www.ovh.com/auth/?action=gotomanager).
+Contraseña: La contraseña elegida en el [manager](https://ca.ovh.com/auth/?action=gotomanager).
 Nombre de usuario: Dirección de correo electrónico completa
 Servidor entrante:SSL0.OVH.NET
 Puerto del servidor entrante:995 o 110
@@ -120,7 +120,7 @@ A continuación recordamos los valores de configuración de una cuenta de correo
 Configuración IMAP con la protección SSL activada o desactivada:
 
 Dirección de correo electrónico: Dirección de correo electrónico completa.
-Contraseña: La contraseña elegida en el [manager](https://www.ovh.com/auth/?action=gotomanager).
+Contraseña: La contraseña elegida en el [manager](https://ca.ovh.com/auth/?action=gotomanager).
 Nombre de usuario: Dirección de correo electrónico completa
 Servidor entrante:SSL0.OVH.NET
 Puerto del servidor entrante:993 o 143

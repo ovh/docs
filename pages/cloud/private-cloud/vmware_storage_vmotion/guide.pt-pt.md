@@ -1,29 +1,67 @@
 ---
-title: VMware Storage vMortion
-excerpt: ''
+title: VMware Storage vMotion
 slug: vmware_storage_vmortion
+excerpt: Migrar a quente uma máquina virtual para um host diferente
 legacy_guide_number: g687
+section: Funcionalidades VMware vSphere
+order: 02
 ---
 
 
-## 
-O Storage vMotion permite modificar o local de armazenamento dos ficheiros da máquina virtual e mantê-la sempre ligada.
+**Última atualização: 20/08/2020**
 
-Esta opção esa disponível unicamente nos hosts de tipo L e XL, que possuam a licença entreprise da VMware no Private Cloud OVH.
+## Objetivo
 
+O **Storage vMotion** permite alterar a localização de armazenamento dos ficheiros da máquina virtual, conservando a máquina virtual em execução. É possível mover a máquina virtual por completo ou disco por disco.
 
-## 
-Para migrar os ficheiros de uma máquina virtual para outro datastore, é apenas necessário efetuar um clique com o botão direito do rato na máquina virtual ligada e depois selecionar o menu "Alterar o datastore".
+**Este manual mostra como realizar esta operação.**
 
-![](images/img_328.jpg){.thumbnail}
-Deverá de seguida escolher o armazenamento para a qual deseja efetuar a migração dos dados.
-Terá igualmente a possibilidade, no caso de ter vários discos virtuais na mesma máquina, de migrar apenas um disco da VM ao utilizar o botão "Avançado".
+## Instruções
 
-![](images/img_326.jpg){.thumbnail}
-E modificar a localização para apenas um disco:
+### Migrar o disco de uma máquina virtual
 
-![](images/img_325.jpg){.thumbnail}
-Após ter alterado o destino dos seus discos virtuais, ser-lhe-à pedido se deseja conversar o mesmo tipo de provisionamento ou se pretende modificá-lo:
+Para mover os ficheiros de uma máquina virtual para outro datastore, basta clicar com o botão direito do rato na máquina virtual em execução e selecionar o menu `Migrate...`.
 
-![](images/img_327.jpg){.thumbnail}
+![migrar disco](images/VmotionStorage1.png){.thumbnail}
 
+### Escolha do tipo de vMotion
+
+O menu propõe várias opções de **vMotion**. No nosso exemplo, iremos apenas migrar a máquina virtual para outro datastore. Assim, deve selecionar a opção “Change storage only”.
+
+A opção “Change compute resource only” permite migrar a máquina virtual para outro host.  
+
+Esta operação, chamada **vMotion**, é descrita [neste manual](../vmware-vmotion-new/).
+
+![escolha vMotion](images/VmotionStorage2.png){.thumbnail}
+
+### Escolha do datastore
+
+Escolha o armazenamento para o qual pretende migrar os dados.
+
+Também é possível alterar a política de armazenamento durante esta operação.
+
+Assim, poderá aplicar as políticas de armazenamento criadas se dispuser de um [armazenamento vSAN](../vmware-vsan/) ou da opção [VMencryption](https://docs.ovh.com/gb/en/private-cloud/vm-encrypt/).
+
+![escolha datastore](images/VmotionStorage3.png){.thumbnail}
+
+Caso tenha vários discos virtuais na mesma máquina, é possível migrar apenas um disco da VM utilizando o botão `Advanced`{.action}.
+
+Poderá ver a seguinte visualização:
+
+![datastore vMotion](images/VmotionStorage6.png){.thumbnail}
+
+### Finalizar o vMotion
+
+Clique em `Finish`{.action} para lançar o procedimento de migração.
+
+![finalizar vMotion](images/VmotionStorage4.png){.thumbnail}
+
+### Seguimento do vMotion
+
+Nas tarefas recentes, poderá acompanhar o estado da migração, que demorará algum tempo dependendo do tamanho da VM, dos acessos IO e da largura de banda utilizada.
+
+![seguimento vMotion](images/VmotionStorage5.png){.thumbnail}
+
+## Quer saber mais?
+
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

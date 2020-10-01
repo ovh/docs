@@ -23,7 +23,7 @@ Un servidor dedicado es un servidor físico situado en uno de nuestros datacente
 
 ## Requisitos
 
-* Tener un [servidor dedicado](https://www.ovh.es/servidores_dedicados/){.external}. Para consultar la información relativa al servidor dedicado, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, acceda a la sección `Dedicado`{.action} y, en la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccione el servidor.
+* Tener un [servidor dedicado](https://www.ovh.es/servidores_dedicados/){.external}. Para consultar la información relativa al servidor dedicado, conéctese al [área de cliente de OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, acceda a la sección `Dedicado`{.action} y, en la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccione el servidor.
 
 
 ## Procedimiento
@@ -54,7 +54,7 @@ Al configurar un servidor dedicado por primera vez, recibirá por correo electr�
 
 ### Instalar o reinstalar el servidor dedicado
 
-Acceda a la página del servidor en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} como se indica más arriba. En el recuadro **Información general**, haga clic en el botón `···`{.action} situado en el apartado **Sistema operativo** y seleccione `Reinstalar`{.action}.
+Acceda a la página del servidor en el [área de cliente de OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} como se indica más arriba. En el recuadro **Información general**, haga clic en el botón `···`{.action} situado en el apartado **Sistema operativo** y seleccione `Reinstalar`{.action}.
 
 ![Reinstalar](images/reinstalling-your-server-01.png){.thumbnail}
 
@@ -71,7 +71,7 @@ Siga las indicaciones y haga clic en `Aceptar`{.action} para iniciar la instalac
 
 > [!primary]
 >
-> Para instalar algunos sistemas operativos o plataformas, como Plesk o Windows, es necesario haber adquirido una licencia previamente. OVH le ofrece la posibilidad de contratar estas licencias desde el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, seleccionando `Licencias`{.action} en la columna izquierda. También puede adquirirlas a través de un revendedor. A continuación, deberá añadirla, o bien a través del propio sistema operativo, o bien desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. 
+> Para instalar algunos sistemas operativos o plataformas, como Plesk o Windows, es necesario haber adquirido una licencia previamente. OVH le ofrece la posibilidad de contratar estas licencias desde el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager){.external}, seleccionando `Licencias`{.action} en la columna izquierda. También puede adquirirlas a través de un revendedor. A continuación, deberá añadirla, o bien a través del propio sistema operativo, o bien desde el [área de cliente de OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}. 
 > 
 
 
@@ -118,7 +118,7 @@ Para más información, consulte la guía [Utilizar IPMI en un servidor dedicado
 
 ### Modo de rescate
 
-Si el servidor tiene algún problema, el primer paso para solucionarlo es reiniciarlo en modo de rescate. Para activarlo, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} y acceda a la página de su servidor dedicado. En la pestaña `Estado del servidor`{.action}, en el recuadro **Información general**, haga clic en el botón `···`{.action} situado en el apartado `Boot`{.action} y seleccione `Editar`{.action} para cambiar el modo de arranque.
+Si el servidor tiene algún problema, el primer paso para solucionarlo es reiniciarlo en modo de rescate. Para activarlo, conéctese al [área de cliente de OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} y acceda a la página de su servidor dedicado. En la pestaña `Estado del servidor`{.action}, en el recuadro **Información general**, haga clic en el botón `···`{.action} situado en el apartado `Boot`{.action} y seleccione `Editar`{.action} para cambiar el modo de arranque.
 
 ![Cambiar el modo de arranque](images/rescue-mode-01.png){.thumbnail}
 

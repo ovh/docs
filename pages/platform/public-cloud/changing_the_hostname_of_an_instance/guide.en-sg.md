@@ -10,7 +10,7 @@ section: Tutorials
 
 ## Objective
 
-With the cloud-init module, you can configure your [Public Cloud instance](https://www.ovh.com/sg/public-cloud/instances/){.external} when you create it, and each time you reboot it. If you wish to reconfigure your hostname in order to fix an error creating your instance, or reconfigure your email server, you will need to disable the cloud-init module. This will configure the hostname so that it is not re-established.
+With the cloud-init module, you can configure your [Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/){.external} when you create it, and each time you reboot it. If you wish to reconfigure your hostname in order to fix an error creating your instance, or reconfigure your email server, you will need to disable the cloud-init module. This will configure the hostname so that it is not re-established.
 
 **This guide will show you how to reconfigure cloud-init so that you can modify your instance’s hostname.**
 
@@ -24,7 +24,7 @@ With the cloud-init module, you can configure your [Public Cloud instance](https
 
 ## Requirements
 
-- an [OVHcloud Public Cloud instance](https://www.ovh.com/sg/public-cloud/instances/){.external}
+- an [OVHcloud Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/){.external}
 - [root access](../first-login/){.external} (via SSH) to the instance
 
 

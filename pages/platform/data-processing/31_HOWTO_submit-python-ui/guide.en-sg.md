@@ -13,12 +13,12 @@ This guide helps you to upload an Apache Spark job in Python to your OVHcloud Ob
 
 If you want to submit an Apache Spark job in Java or Scala language, you can read this document: [How to submit a Java/Scala job using Data Processing Manager](../submit-javascala/){.external}
 
-In this guide, we are assuming that you're using the [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external} to use the Data Processing platform.
+In this guide, we are assuming that you're using the [OVHcloud Manager](https://ca.ovh.com/auth/?action=gotomanager){.external} to use the Data Processing platform.
 
 To read an introduction about the Data Processing service you can visit [Data Processing Overview](../overview){.external}.
 
 ## Requirements
-- Access to [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Access to [OVHcloud Manager](https://ca.ovh.com/auth/?action=gotomanager){.external}
 - An OVHcloud account
 - A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details.)
 - An Openstack user in your cloud project and access to Openstack Horizon dashboard (see [How to create an Openstack user and access to Horizon](../../public-cloud/configure_user_access_to_horizon/){.external} for details.)
@@ -31,7 +31,7 @@ To read an introduction about the Data Processing service you can visit [Data Pr
 
 Before running your job in the Data Processing platform, you will need to create a container in your Object Storage for your job and upload your application Python files and environment.yml file into this container. You can work with your Object Storage using either the OVHcloud manager or the Openstack Horizon dashboard.
 
-Please see [Creating Storage Containers in Customer Panel](../../storage/pcs/create-container/){.external} or [Create an object container in Horizon](../../storage/create_an_object_container/){.external} for more details.
+Please see [Creating Storage Containers in Customer Panel](https://docs.ovh.com/gb/en/storage/pcs/create-container/){.external} or [Create an object container in Horizon](../../storage/create_an_object_container/){.external} for more details.
 
 
 If you don’t currently have an application code and you still would like to try OVHcloud Data Processing, you can download and use the [PI sample from Apache Spark repository](https://github.com/apache/spark/blob/master/examples/src/main/python/pi.py){.external}.

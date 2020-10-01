@@ -1,6 +1,6 @@
 ---
-title: "Backing-up a OVHcloud Managed Kubernetes cluster using Velero"
-excerpt: "Backing-up a OVHcloud Managed Kubernetes cluster using Velero"
+title: Backing-up a OVHcloud Managed Kubernetes cluster using Velero
+excerpt: Backing-up a OVHcloud Managed Kubernetes cluster using Velero
 slug: backing-up-cluster-with-velero
 section: Tutorials
 ---
@@ -48,9 +48,9 @@ In this section you will create your S3 bucket on Swift.
 
 Before creating your S3 bucket you need to:
 
-- [Prepare your environement to use the OpenStack API](../../../public-cloud/prepare_the_environment_for_using_the_openstack_api/)
+- [Prepare your environement to use the OpenStack API](../../public-cloud/prepare_the_environment_for_using_the_openstack_api/)
 
-- [Get Openstack RC File v3 from Horizon](../../../public-cloud/access_and_security_in_horizon/)
+- [Get Openstack RC File v3 from Horizon](../../public-cloud/access_and_security_in_horizon/)
 
 You should now have access to your OpenStack RC file, with a filename line `<user_name>-openrc.sh`, and the username and password for your OpenStack account.
 

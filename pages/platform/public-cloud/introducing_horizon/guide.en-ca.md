@@ -151,11 +151,11 @@ You will then be prompted to confirm your choice. You can do so by clicking `Har
 
 To delete an instance, you simply need to click on the `Actions` button and choose `Delete Instance`{.action}.
 
-![delete instance](images/delete_instance.png){.thumbnail)
-
+![delete instance](images/delete_instance.png){.thumbnail}
+a
 You will be asked to confirm your choice to delete the instance. You can confirm this by clicking `Delete Instance`{.action}.
 
-!{delete instance)(images/delete_instance_confirm.png){.thumbnail)
+![delete instance](images/delete_instance_confirm.png){.thumbnail}
 
 ##### Rebuilding an instance
 
@@ -186,7 +186,7 @@ As a result of increased activity, or simply new needs, your instance may not be
 
 To resize the instance, click on the `Actions` manu and select `Resize Instance`{.action}
 
-![resize instance](images/menu_resize.png){.action}
+![resize_instance](images/menu_resize.png){.action}
 
 
 Once the configuration is complete, click `Resize`{.action}
@@ -194,7 +194,7 @@ Once the configuration is complete, click `Resize`{.action}
 
 This section shows the current template and allows you to select a new template for the instance resource.
 
-![resize instance](images/resize_selection.png{.action]
+![resize_instance](images/resize_selection.png{.action}
 
 > [!success]
 >
@@ -205,7 +205,7 @@ This section shows the current template and allows you to select a new template 
 
 This section allows you to manage disk partitioning.
 
-![resize instance](images/resize_advanced.png){.thumbnail)
+![resize instance](images/resize_advanced.png){.thumbnail}
 
 
 ##### Editing an instance
@@ -254,6 +254,9 @@ The VNC Console now appears.
 
 ![horizon console](images/console.png){.thumbnail}
 
+#### Images
+
+You can add custom images via the OpenStack Horizon interface. For example, you can use it to import images from your old virtual machines to the Public Cloud, provided that they are in a compatible format.
 
 
 
