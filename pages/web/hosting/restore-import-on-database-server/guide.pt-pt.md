@@ -85,7 +85,7 @@ Em certos casos, é possível que a RAM disponível no seu servidor de bases de 
 
 
 #### Importar uma base MySQL ou MariaDB a partir do phpMyAdmin
-Para importar uma base de dados diretamente a partir do phpMyAdmin, antes de mais tem de se conectar a ela. Consulte a secção [«Conexão a uma base de dados MySQL ou MariaDB»](https://docs.ovh.com/fr/hosting/connexion-base-de-donnees-serveur-bdd/#se-connecter-a-une-base-de-donnees-mysql-ou-mariadb/){.external}.
+Para importar uma base de dados diretamente a partir do phpMyAdmin, antes de mais tem de se conectar a ela. Consulte a secção [«Conexão a uma base de dados MySQL ou MariaDB»](../conexao-base-de-dados-servidor-bdd/#conexao-a-uma-base-de-dados-mysql-ou-mariadb){.external}.
 
 Depois de se ter conectado ao phpMyAdmin, clique no nome da base de dados.
 
