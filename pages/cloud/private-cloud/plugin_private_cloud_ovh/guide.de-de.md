@@ -1,26 +1,26 @@
 ---
-title: 'OVH Private Cloud Plugin verwenden'
+title: 'OVHcloud Private Cloud Plugin verwenden'
 slug: plugin-private-cloud-ovh
-excerpt: 'So verwenden Sie das Private Cloud Plugin von OVH'
-section: 'OVH Funktionen'
+excerpt: 'Erfahren Sie hier, wie Sie das Private Cloud Plugin verwenden'
+section: OVHcloud Funktionen
 ---
 
-**Stand 15.10.2018**
+**Letzte Aktualisierung am 15.10.2018**
 
-## Einleitung
+## Ziel
 
-Mit dem Private Cloud Plugin von OVH können Sie in wenigen Minuten dedizierte Ressourcen zu Ihrer Infrastruktur hinzufügen.
+Mit dem Private Cloud Plugin von OVHcloud können Sie in wenigen Minuten dedizierte Ressourcen zu Ihrer Infrastruktur hinzufügen.
 
-**Hier erfahren Sie, wie Sie dieses Plugin verwenden.**
+**Diese Anleitung erklärt, wie Sie dieses Plugin verwenden.**
 
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Private Cloud](https://www.ovh.de/private-cloud/){.external} Angebot.
+- Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
 - Sie haben Zugriff auf das vSphere-Verwaltungsinterface.
 
 
-## Beschreibung
+## In der praktischen Anwendung
 
 Zwei dedizierte Ressourcen sind nach stündlicher Abrechnung verfügbar:
 
