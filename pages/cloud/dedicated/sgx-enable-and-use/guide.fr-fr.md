@@ -29,7 +29,7 @@ Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=go
 
 #### Activation de l'option
 
-Descendez jusqu'à la zone `Fonctionnalités avancées` et cliquez sur `...`{.action} en face de "Sécurité - Intel SGX (Software Guard Extensions)". Sélectionnez `Activer SGX`{.action} dans le menu déroulant.
+Descendez jusqu'à la zone `Fonctionnalités avancées` et cliquez sur `...`{.action} en face de « Sécurité - Intel SGX (Software Guard Extensions) ». Sélectionnez `Activer SGX`{.action} dans le menu déroulant.
 
 ![activation SGX](images/enable_sgx.png){.thumbnail}
 
