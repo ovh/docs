@@ -1,20 +1,20 @@
 ---
 title: FAQ
-slug: occdedicated-faq
-excerpt: 'Les FAQ sur l’offre OVHcloud Connect Dedicated'
+slug: occdirect-faq
+excerpt: 'Les FAQ sur l’offre OVHcloud Connect Direct'
 section: Premiers pas
 order: 4
 ---
 
 **Dernière mise à jour le 07/09/2020**
 
-## FAQ Ovhcloud Connect
+## FAQ Ovhcloud Connect Direct 
 
-### À quoi sert la solution OVHcloud Connect ?
+### À quoi sert la solution OVHcloud Connect Direct?
 
-OVHcloud Connect permet d'étendre votre réseau d'entreprise avec votre réseau privé OVHcloud vRack sans passer par l'établissement d'un tunnel VPN à travers Internet. Cette connexion sera ainsi plus rapide, plus fiable et avec une bande passante garantie.
+OVHcloud Connect Direct permet d'étendre votre réseau d'entreprise avec votre réseau privé OVHcloud vRack sans passer par l'établissement d'un tunnel VPN à travers Internet. Cette connexion sera ainsi plus rapide, plus fiable et avec une bande passante garantie.
 
-### Quels sont les produits compatibles avec OVHcloud Connect ?
+### Quels sont les produits compatibles avec OVHcloud Connect Direct?
 
 OVHcloud Connect est l'extension de votre réseau privé OVHcloud vRack donc tous les produits ayant la fonctionnalité vRack activée sont compatibles.
 
@@ -24,7 +24,7 @@ Les caractéristiques associées aux réseaux de niveau 2 et 3 doivent être pri
 
 #### Niveau 2 OSI
 
-Le produit OVHcloud Connect dédié de niveau 2 signifie que la connexion est transparente au protocole Ethernet.
+Le produit OVHcloud Connect Direct de niveau 2 signifie que la connexion est transparente au protocole Ethernet.
 
 L'intérêt d'une interconnexion de niveau 2 est de pouvoir connecter le réseau campus de votre datacenter avec votre réseau privé OVHcloud vRack de manière simplifiée. 
 
@@ -36,7 +36,7 @@ Les réseaux locaux virtuels (VLAN) sont les mêmes dans votre datacenter et au 
 
 #### Niveau 3 OSI
 
-Le produit OVHcloud Connect dédié de niveau 3 est une connexion gérée par des routeurs. 
+Le produit OVHcloud Connect Direct de niveau 3 est une connexion gérée par des routeurs. 
 
 L'intérêt d'une interconnexion de niveau 3 est de pouvoir connecter le réseau WAN de votre entreprise avec votre réseau privé OVHcloud vRack afin qu'il soit vu comme un ou des sites du réseau WAN. 
 
@@ -53,9 +53,15 @@ Les réseaux locaux virtuels (VLAN) ne sont pas les mêmes dans vos datacenters 
 OVHcloud n'héberge pas de matériel réseau pour les clients dans ses datacenters et points de présence (PoP). Le client doit faire héberger ses équipements par son opérateur ou par un tiers puis demander une connexion avec les équipements OVHcloud dans la MeetMeRoom (MMR) des points de présence grâce aux informations fournies dans la Letter of Authorization (LOA). 
 
 
-### Quelles connectiques sont supportées par OVHcloud Connect ?
+### Quelles connectiques sont supportées par OVHcloud Connect Direct ?
 
 Nous supportons la fibre optique mono-mode pour modules SFP/SFP+ compatible soit 1000LX/LH (1Gb/s) soit 10G-LR (10Gb/s).
+
+### Pourquoi choisir un OVHcloud Connect Direct plutôt qu'un OVHcloud Connect Provider?
+
+Si vous souhaitez avoir une connexion de niveau 2, vous serez obliger de prendre un OVHcloud Connect Direct.
+
+Si vous êtes présents dans un de nos PoPs OVHcloud, 
 
 ## Aller plus loin
 
