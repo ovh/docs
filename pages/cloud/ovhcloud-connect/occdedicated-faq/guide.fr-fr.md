@@ -6,7 +6,7 @@ section: Premiers pas
 order: 4
 ---
 
-**Dernière mise à jour le 07/09/2020**
+**Dernière mise à jour le 02/10/2020**
 
 ## FAQ Ovhcloud Connect Direct 
 
@@ -61,7 +61,9 @@ Nous supportons la fibre optique mono-mode pour modules SFP/SFP+ compatible soit
 
 Si vous souhaitez avoir une connexion de niveau 2, vous serez obliger de prendre un OVHcloud Connect Direct.
 
-Si vous êtes présents dans un de nos PoPs OVHcloud, 
+Si vous êtes présents dans un de nos PoPs OVHcloud et que vous ne souhaitez pas bénéficier de services de connexion Multi-Cloud, vous pouvez privilégier un OVHcloud Connect Direct.
+
+Si vous souhaitez avoir un débit de 10Gbps, vous serez obliger de prendre un OVHcloud Connect Direct. 
 
 ## Aller plus loin
 
