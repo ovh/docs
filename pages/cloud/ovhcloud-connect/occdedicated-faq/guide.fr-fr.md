@@ -59,11 +59,11 @@ Nous supportons la fibre optique mono-mode pour modules SFP/SFP+ compatible soit
 
 ### Pourquoi choisir un OVHcloud Connect Direct plutôt qu'un OVHcloud Connect Provider?
 
-Si vous souhaitez avoir une connexion de niveau 2, vous serez obliger de prendre un OVHcloud Connect Direct.
+Si vous souhaitez avoir une connexion de niveau 2, vous serez obligé de prendre un OVHcloud Connect Direct.
 
-Si vous êtes présents dans un de nos PoPs OVHcloud et que vous ne souhaitez pas bénéficier de services de connexion Multi-Cloud, vous pouvez privilégier un OVHcloud Connect Direct.
+Si vous êtes présents dans un de nos PoPs OVHcloud ou votre opérateur et que vous ne souhaitez pas bénéficier de services de connexion Multi-Cloud, vous pouvez privilégier un OVHcloud Connect Direct.
 
-Si vous souhaitez avoir un débit de 10Gbps, vous serez obliger de prendre un OVHcloud Connect Direct. 
+Si vous souhaitez avoir un débit de 10Gbps, vous serez obligé de prendre un OVHcloud Connect Direct. 
 
 ## Aller plus loin
 
