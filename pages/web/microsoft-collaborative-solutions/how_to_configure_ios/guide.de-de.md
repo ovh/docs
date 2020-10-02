@@ -3,6 +3,7 @@ title: 'Konfiguration von Exchange auf iPhone oder iPad'
 excerpt: 'Hier erfahren Sie, wie Sie Ihren Exchange Account via Mail App auf einem iPhone oder iPad einrichten.'
 slug: exchange_20132016_automatische_konfiguration_in_ios_iphone_-_ipad
 legacy_guide_number: g1272
+section: Konfiguration von Exchange auf kompatiblen Smartphones/Tablets
 ---
 
 **Stand 27.06.2018**

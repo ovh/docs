@@ -3,6 +3,7 @@ title: Exchange 2013/2016 Verwendung der Ressourcen-Accounts
 excerpt: In dieser Hilfe wird die Verwendung der Ressourcen-Accounts Ihres Exchange 2013 Angebots beschrieben
 slug: exchange_20132016_verwendung_der_ressourcen-accounts
 legacy_guide_number: g1325
+section: 'Exchange Account-Funktionen'
 ---
 
 

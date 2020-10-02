@@ -1,76 +1,71 @@
 ---
-title: 'Exchange : Automatyczny podpis - Disclaimer'
-excerpt: 'Przewodnik ten opisuje, w jaki sposób dodać automatyczny podpis.'
+title: 'Tworzenie automatycznych podpisów'
+excerpt: 'Dowiedz się, jak dodać automatyczne podpisy do swoich kont e-mail'
 slug: exchange_20132016_automatyczny_podpis_-_disclaimer
-section: 'Funkcjonalności i współdzielenie Exchange'
+section: 'Funkcje konta Exchange'
+order: 3
 legacy_guide_number: g1330
 ---
 
-## Aktywacja - część 1
-Zaloguj się do [panelu klienta](https://www.ovh.com/manager/web/login.html).
-
-Wybierz ofertę Exchange w zakładce "Platforma".
-
-Wybierz zakładkę "Podpis" i "Dodaj podpis".
-
-Najpierw należy wybrać w panelu klienta sekcję "Tryb expert".
-
-![](images/img_1364.jpg){.thumbnail}
+**Ostatnia aktualizacja: 26-03-2020**
 
 
-## Aktywacja - część 2
-Skorzystaj z narzędzi do personalizacji podpisu. 
+## Wprowadzenie
 
-Można również spersonalizować podpis podstawowy podając dane poszczególnych pracowników.
+W Panelu klienta OVHcloud można utworzyć uniwersalne podpisy (stopki) dla adresów e-mail używanych w tej samej domenie (podpisy „firmowe”). Będą one dołączane automatycznie do e-maili wysyłanych z konta użytkownika.
 
-Aby dodać obrazek lub logo, skorzystaj z adresu URL wprowadzając ten adres po kliknięciu na przycisk "obrazek". 
+**Dowiedz się, jak utworzyć automatyczny podpis przy użyciu Panelu klienta OVHcloud.**
 
-Aby szybciej dodawać obrazki lub logo do podpisu, możesz użyć funkcji przeciągnij i upuść z przeglądarki do narzędzia podpisów.
-
-![](images/img_1365.jpg){.thumbnail}
-
-
-## Aktywacja - część 3
-Następnie będziesz mógł zmienić rozmiar obrazka.	
-
-Można włączyć podpis tylko dla wiadomości wysyłanych na zewnątrz (na adres e-mail nie związany z domeną) zaznaczając odpowiednie pole.
-
-Kliknij na "Zatwierdź", aby zarejestrować podpis.
-
-Podpis będzie przypisany do wszystkich e-maili wybranej domeny.
-
-![](images/img_1368.jpg){.thumbnail}
+> [!primary]
+>
+> Choć ten przewodnik dotyczy usług Exchange, z instrukcji można skorzystać również w przypadku kont E-mail Pro.
+>
 
 
-## Aktywacja - część 4
-Skonfigurowany podpis pojawi się w panelu klienta.	
+## Wymagania początkowe
 
-Podpis można zmodyfikować lub usunąć.
-
-W tabeli porównawczej pojawią się informacje na temat podpisu.
-
-![](images/img_1370.jpg){.thumbnail}
+- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- skonfigurowane rozwiązanie [OVHcloud Exchange](https://www.ovh.pl/emaile/hosted-exchange/) lub [E-mail Pro](https://www.ovh.pl/emaile/email-pro/)
 
 
-## Przykład e-maila - część 1
-Sposób dodania podpisu do e-maila z interfejsu 
-[Webmail Exchange](https://mail.ovh.net/).
-
-Zaloguj się podając adres e-mail i hasło do tego konta.
-
-Po zalogowaniu w zakładce "Poczta elektroniczna" wybierz opcję "nowa wiadomość".
-
-Przygotuj wiadomość e-mail, a następnie aby dodać podpis, wybierz "Wprowadź" i "Podpis".
-
-Podpis nie pojawi się w treści wiadomości: to normalne.
-
-Dokończ wysyłkę klikając na "Wyślij".
-
-![](images/img_1371.jpg){.thumbnail}
+## W praktyce
 
 
-## Przykład e-maila - część 2
-E-mail został poprawnie odebrany. Podpis wyświetla się prawidłowo.
+Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), przejdź do sekcji „Web” i wybierz usługę Exchange z kolumny znajdującej się w obszarze `Microsoft`{.action} `Exchange`{.action} (po lewej stronie). Kliknij kartę `Więcej+`{.action} w menu poziomym i wybierz pozycję `Stopki`{.action}.
 
-![](images/img_1372.jpg){.thumbnail}
+![exchangesig](images/exchange-footer-step1.png){.thumbnail}
 
+W tej sekcji zobaczysz przyłączone domeny, dla których możesz utworzyć schemat stopki. Kliknij ikonę `...`{.action}, a następnie pozycję `Konfiguracja`{.action}, aby otworzyć edytor HTML.
+
+![exchangesig](images/exchange-footer-step2.png){.thumbnail}
+
+Edytor umożliwia wybór zmiennych odpowiadających danym użytkownika w ustawieniach konta. Przy użyciu tych zmiennych możesz na przykład utworzyć ogólne zakończenie wiadomości i dodać odpowiedni podpis lub informacje kontaktowe poniżej wiadomości. Kliknij strzałkę w dół, aby wybrać zmienną. Następnie kliknij przycisk `Wstaw zmienną`{.action}, aby dodać ją do okienka edycji.
+
+![exchangesig](images/exchange-footer-step3aag.gif){.thumbnail}
+
+Stopkę tworzy się przy użyciu tagów HTML, które umożliwiają formatowanie. Dostosuj podpis przy użyciu paska narzędzi u góry. Możesz też zweryfikować kod HTML, klikając przycisk `Źródło`{.action}.
+ 
+![exchangesig](images/exchange-footer-step4.png){.thumbnail}
+
+Zaznacz pole wyboru „Włącz ten podpis tylko dla poczty wychodzącej”, aby zapobiec dodawaniu stopki do e-maili przesyłanych między użytkownikami w tej samej domenie. Gdy podpis będzie gotowy, kliknij przycisk `Potwierdź`{.action}. Podpis będzie dołączany do e-mali wysyłanych z kont użytkowników tej domeny. Po utworzeniu podpisów można je edytować lub usunąć z poziomu Panelu klienta OVHcloud.
+
+Przed zastosowaniem podpisów u użytkowników weź pod uwagę następujące aspekty:
+
+- Szczegółów konta innych niż „Imię”, „Nazwisko” i „Nazwa wyświetlana” nie można edytować z poziomu Panelu klienta OVHcloud, lecz należy je określić w interfejsie OWA („Opcje”, „Ogólne”, „Moje konto”).
+
+![exchangesig](images/exchange-footer-step5.png){.thumbnail}
+
+- Podpis zostanie dodany do treści e-maila bez odstępu, co oznacza, że dobrze byłoby zacząć podpis od co najmniej jednego pustego wiersza.
+- W interfejsie OWA nie jest wskazane, czy stopka jest aktywna w danej domenie i **nie ma synchronizacji**. Jeśli użytkownicy dodadzą [własne podpisy](../exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/#dodawanie-podpisu/), e-maile będą zawierać zarówno ich indywidualną stopkę, jak i ogólną stopkę domeny.
+- Edytor obsługuje formatowanie HTML, hiperlinki, obrazy itd. Nie należy jednak zbytnio polegać na tych opcjach. Odbiorcy mogą korzystać z klientów poczty, które blokują kod HTML, i osadzone obrazy lub podpisy mogą wyglądać inaczej niż zamierzono. Tagi HTML zostaną całkowicie usunięte, jeśli według ustawień w interfejsie OWA wiadomość jest wysyłana jako „zwykły tekst”.
+- „Inicjały” nie są aktywne w usłudze. Dodanie tej zmiennej nie przyniesie żadnego efektu.
+
+## Sprawdź również
+
+[Korzystanie z interfejsu Outlook Web App wraz z kontem Exchange](../exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
+
+[Delegowanie uprawnień do konta Exchange](../exchange_2013_przyznanie_uprawnien_full_access/)
+
+[Exchange: współdzielenie kalendarza w interfejsie OWA](../exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa/)
+
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

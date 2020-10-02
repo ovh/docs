@@ -2,6 +2,7 @@
 title: Gestao de uma base de dados a partir de um alojamento partilhado OVH
 slug: gestao-de-uma-base-de-dados-a-partir-de-um-alojamento-partilhado-ovh
 legacy_guide_number: 1943
+hidden: true
 ---
 
 

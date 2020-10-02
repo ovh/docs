@@ -1,78 +1,110 @@
 ---
-title: 'Exchange : Compartir una carpeta con el webmail OWA'
-excerpt: ''
+title: 'Compartir carpetas en OWA'
 slug: exchange_2016_compartir_una_carpeta_con_el_webmail_owa
 legacy_guide_number: g1929
-section: Outlook Web Application (OWA)
+excerpt: 'Cómo compartir carpetas entre cuentas Exchange'
+section: 'Outlook Web Application (OWA)'
+order: 5
 ---
 
 
-## Asignar permisos a la cuenta de correo, etapa 1
-En nuestro ejemplo, la cuenta «ovhguide@support-exchange.eu» compartirá una carpeta con la cuenta «ovhguide2@support-exchange.eu».
-En primer lugar, deberá otorgar los permisos correspondientes a su cuenta de correo.
-Para ello, haga clic con el botón derecho en el nombre de la cuenta de correo y seleccione «Permisos».
+**Última actualización: 07/04/2020**
 
-![](images/img_2976.jpg){.thumbnail}
+## Objetivo
 
+Delegar permisos sobre toda una cuenta de correo no siempre es recomendable. La funcionalidad de carpetas compartidas de Exchange permite conceder acceso a determinadas carpetas de la cuenta mediante la asignación de permisos específicos.
 
-## Asignar permisos a la cuenta de correo, etapa 2
-Haga clic en «+» para añadir al usuario con el que desee compartir la carpeta.
-Aparecerá una nueva ventana.
+**Esta guía explica cómo compartir carpetas y definir los permisos de acceso utilizando Outlook Web App (OWA).**
 
-![](images/img_2982.jpg){.thumbnail}
-
-
-## Asignar permisos a la cuenta de correo, etapa 3
-Añada al usuario como se muestra en las tres etapas de la imagen y, a continuación, haga clic en «Agregar».
-
-![](images/img_2983.jpg){.thumbnail}
+> [!primary]
+>
+> Aunque esta guía hace referencia a nuestros servicios de Exchange, también puede consultar las instrucciones para las cuentas de [Email Pro](https://www.ovh.es/emails/email-pro/).
+>
 
 
-## Asignar permisos a la cuenta de correo, etapa 4
-A continuación, conceda a ese usuario los permisos necesarios: 
+## Requisitos
 
-Por ejemplo, desea que el usuario «ovhguide2@support-exchange.eu» tan solo acceda a la carpeta «Borradores» de la bandeja de entrada de «ovhguide@support-exchange.eu».
-
-Permisos: 
-
-Nivel de permiso: «Ninguna»
-Deberá marcar la opción: «Carpeta visible»
-
-Tan solo se concederán permisos sobre esa carpeta en concreto. 
-
-Haga clic en «Aceptar» para validar los cambios.
-
-![](images/img_2985.jpg){.thumbnail}
+- Tener una [solución de Exchange en OVHcloud](https://www.ovh.es/emails/hosted-exchange/) ya configurada.
+- Tener acceso a la cuenta de Exchange (dirección de correo electrónico y contraseña).
 
 
-## Asignar permisos a la carpeta
-Ahora debe configurar los permisos de una carpeta. En este caso, configuraremos los permisos de la carpeta «Borradores». 
+## Procedimiento
 
-El procedimiento es el mismo que para editar los permisos de la cuenta de correo. Haga clic con el botón derecho en la carpeta «Borradores» y, a continuación, en «Permisos». 
+### 1. Asignar permisos de acceso a una carpeta
 
-Puede realizar esta operación con la carpeta que desee. 
+Inicie sesión en su cuenta de Exchange a través del [webmail de OVHcloud](https://www.ovh.es/mail). Haga clic derecho en la carpeta que desea compartir y seleccione la opción `Permisos...`{.action}.
 
-A continuación, deberá repetir las operaciones anteriores, es decir, añadir un usuario y luego asignarle los permisos necesarios a la carpeta correspondiente.
+![sharefolder](images/exchange-folder-step1.png){.thumbnail}
 
-Puede añadir distintos permisos: Propietario, Editor, Autor, Colaborador, etc.
+Haga clic en `+`{.action} para añadir al usuario con el que quiere compartir la carpeta. Empiece a escribir para ver las sugerencias de sus contactos, introduzca una dirección de correo electrónico completa o utilice el `Directorio de la búsqueda`{.action}.
 
-![](images/img_2986.jpg){.thumbnail}
+Existen conjuntos de permisos predefinidos (Nivel de permiso). Lo más sencillo es elegir uno de estos niveles (por ejemplo, «Autor») para ver qué permisos incluye. A continuación, podrá personalizar los permisos seleccionando las diferentes opciones.
 
+![sharefolder](images/exchange-folder-step2aag.gif){.thumbnail}
 
-## Acceder a la carpeta compartida, etapa 1
-El usuario al que se le hayan asignado los permisos deberá añadir la carpeta compartida en el webmail [Outlook Web App (OWA)](https://ex.mail.ovh.net/owa/).
+#### Detalles de los permisos
 
-Haga clic con el botón derecho en su cuenta de correo y seleccione «Agregar carpeta compartida...».
+- **Lectura**
 
-![](images/img_2988.jpg){.thumbnail}
-
-
-## Acceder a la carpeta compartida, etapa 2
-Introduzca la cuenta del usuario que haya compartido la carpeta.
+|Permiso|Descripción|
+|---|---|
+|Ninguna|El usuario no puede ver el contenido de la carpeta.|
+|Detalles completos|El usuario puede ver el contenido de la carpeta.|
 
 
-## Acceder a la carpeta compartida, etapa 3
-La carpeta compartida «Borradores» deberá aparecer correctamente en [OWA](https://ex.mail.ovh.net/owa/).
+- **Eliminar acceso**
 
-![](images/img_2989.jpg){.thumbnail}
+|Permiso|Descripción|
+|---|---|
+|Ninguna|El usuario no puede eliminar ningún elemento.|
+|Propios|El usuario puede eliminar los elementos creados por él mismo.|
+|Todos|El usuario puede eliminar cualquier elemento de la carpeta.|
 
+
+- **Escritura**
+
+|Permiso|Descripción|
+|---|---|
+|Crear elementos|El usuario puede crear nuevos elementos en la carpeta.|
+|Crear subcarpetas|El usuario puede crear nuevas subcarpetas en la carpeta compartida.|
+|Editar propios|El usuario puede editar los elementos creados por él mismo.|
+|Editar todo|El usuario puede editar cualquier elemento de la carpeta.|
+
+
+- **Otros**
+
+|Permiso|Descripción|
+|---|---|
+|Propietario de la carpeta|El usuario tiene los mismos permisos sobre la carpeta que el propietario (todos los permisos).|
+|Contacto de carpeta|El usuario recibirá notificaciones y solicitudes relativas a la carpeta (cambio de estado, solicitudes de permisos, mensajes de error, etc.).|
+|Carpeta visible|La carpeta aparecerá en la cuenta del usuario.|
+
+> [!primary]
+>**Subcarpetas**
+> 
+> - Las subcarpetas creadas en una carpeta compartida tendrán automáticamente los mismos permisos que la carpeta principal. Si otorga nuevos permisos a una carpeta y quiere que sus subcarpetas también se compartan, deberá establecer permisos **para cada subcarpeta**.
+> 
+> - Si comparte una **subcarpeta** de una carpeta existente que no tenga permisos establecidos, deberá marcar al menos la opción de «Carpeta visible» en la **carpeta principal**. De lo contrario, la subcarpeta no aparecerá en la otra cuenta del usuario. Asimismo, tenga en cuenta que el usuario no podrá acceder al contenido de la carpeta principal a no ser que le conceda permisos de lectura.
+> 
+> - Los usuarios no podrán eliminar subcarpetas que no hayan creado ellos mismos.
+> 
+> - Los usuarios con permisos de «Propietario» en una subcarpeta podrán modificar el nombre de esta última y asignarle permisos.
+>
+
+
+### 2. Acceder a una carpeta compartida
+
+![sharefolder](images/exchange-folder-step3.png){.thumbnail}
+
+Inicie sesión en su cuenta de Exchange a través del [webmail de OVHcloud](https://www.ovh.es/mail). En el menú de la izquierda, haga clic derecho en el nombre de su cuenta y seleccione la opción `Agregar carpeta compartida...`{.action}. En la nueva ventana, introduzca la cuenta del usuario que haya compartido la carpeta. Empiece a escribir para ver las sugerencias de sus contactos, introduzca una dirección de correo electrónico completa o utilice el `Directorio de la búsqueda`{.action}. Haga clic en `Agregar`{.action}. La nueva carpeta compartida aparecerá inmediatamente debajo de las demás carpetas.
+
+
+## Más información
+
+[Usar Outlook Web App con una cuenta Exchange](../exchange_2016_guia_de_uso_de_outlook_web_app)
+
+[Delegar permisos en una cuenta Exchange](../exchange_2013_dar_permisos_full_access_a_una_cuenta/)
+
+[Compartir un calendario con el webmail OWA](../exchange_2016_compartir_un_calendario_con_el_webmail_owa)
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
