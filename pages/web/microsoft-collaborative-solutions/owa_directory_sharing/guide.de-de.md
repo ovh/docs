@@ -25,7 +25,7 @@ Es ist nicht immer sinnvoll, anderen Benutzern die Verwendung eines gesamten E-M
 ## Voraussetzungen
 
 - Sie haben bereits einen [OVHcloud Exchange](https://www.ovh.de/emails/hosted-exchange/) Dienst eingerichtet.
-- Sie verfügen über Anmeldeinformationen für den Exchange-Account, den Sie konfigurieren möchten.
+- Sie verfügen über Anmeldeinformationen für den Exchange Account, den Sie konfigurieren möchten.
 
 
 ## In der praktischen Anwendung
