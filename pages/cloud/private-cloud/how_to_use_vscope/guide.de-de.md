@@ -2,6 +2,7 @@
 title: Verwendung von vScope
 excerpt: ''
 slug: verwendung_von_vscope
+section: OVHcloud Dienste und Optionen
 legacy_guide_number: g718
 ---
 
