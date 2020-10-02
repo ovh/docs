@@ -4,6 +4,7 @@ excerpt: ''
 slug: general
 legacy_guide_number: g597
 section: Getting started
+hidden: true
 ---
 
 

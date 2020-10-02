@@ -1,8 +1,8 @@
 ---
 title: Hinzufügen der Dedicated Cloud zum Vrack 1.5 und Konfiguration einer VM
-description: In dieser Hilfe wird beschrieben, wie Sie Ihre Dedicated Cloud über das OVH Kundencenter oder die API zum Vrack 1.5 hinzufügen und eine VM im Vrack konfigurieren können.
 excerpt: In dieser Hilfe wird beschrieben, wie Sie Ihre Dedicated Cloud über das OVH Kundencenter oder die API zum Vrack 1.5 hinzufügen und eine VM im Vrack konfigurieren können.
 slug: hinzufugen_der_dedicated_cloud_zum_vrack_15_und_konfiguration_einer_vm
+section: OVHcloud Funktionen
 legacy_guide_number: g1257
 ---
 

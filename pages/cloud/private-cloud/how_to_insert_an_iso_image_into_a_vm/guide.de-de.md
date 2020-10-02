@@ -2,6 +2,7 @@
 title: Eine ISO-Datei zu einer VM hinzufügen
 excerpt: Wie kann ich eine ISO-Datei in einer virtuellen Maschine einbinden?
 slug: eine_iso-datei_zu_einer_vm_hinzufugen
+section: Verwaltung virtueller Maschinen
 legacy_guide_number: g1438
 ---
 

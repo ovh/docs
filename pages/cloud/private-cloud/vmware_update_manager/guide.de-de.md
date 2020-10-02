@@ -2,6 +2,7 @@
 title: Verwendung des VMware Update Manager
 excerpt: ''
 slug: verwendung_des_vmware_update_manager
+section: VMware vSphere Funktionen
 legacy_guide_number: g591
 ---
 

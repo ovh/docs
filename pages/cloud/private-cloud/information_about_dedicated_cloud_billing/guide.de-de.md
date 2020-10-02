@@ -3,6 +3,7 @@ title: Informationen zur Dedicated Cloud Abrechnung
 excerpt: Details zur Funktionsweise der Dedicated Cloud Abrechnung.
 slug: informationen_zur_dedicated_cloud_abrechnung
 legacy_guide_number: g677
+section: FAQ
 ---
 
 
