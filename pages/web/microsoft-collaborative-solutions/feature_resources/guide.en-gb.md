@@ -90,7 +90,7 @@ If you attempt to add a resource that is already booked ("busy"), a message will
 
 #### **People**
 
-Since a resource account is also a contact, you can add rooms and equipment in this pane, exactly like other participants (10). Start typing to display suggestions from your contacts, enter a full email address or use the search option via `Search Directory`{.action}. (A click on `...`{.action} will open your contacts.)
+Since a resource account is also a contact, you can add rooms and equipment in this pane, exactly as with other participants (10). Start typing to display suggestions from your contacts, enter a full email address or use the search option via `Search Directory`{.action}. (A click on `...`{.action} will open your contacts.)
 
 Once you have finalised the scheduling by clicking `Send`{.action} in the top menu bar, the resource account will send you a message to confirm that it is booked for your event. Tick the box "Request responses" if you require active confirmation from the invitees to auto-update your calendar.
 
@@ -98,7 +98,7 @@ Once you have finalised the scheduling by clicking `Send`{.action} in the top me
 
 A calendar excerpt of your own events labelled **Schedule** will show up on the right-hand side as soon as you add a resource or person to the event. It provides a graphical preview of resource availability on the chosen day; you can set the time and duration of the event directly via mouse clicks and the selection menu on the top-right.
 
-If needed, click on `Scheduling assistant`{.action} in the **People** pane to open an even more detailed overview. This assistant is helpful for bigger events or if you have to manage conflicts, because it is visualising the entire scheduling process. You can verify availability and adjust your planning by selecting locations and contacts, without leaving this interface.
+If needed, click on `Scheduling assistant`{.action} in the **People** pane to open an even more detailed overview. This assistant is helpful for bigger events or if you have to manage conflicts, because it visualises the entire scheduling process. You can verify availability and adjust your planning by selecting locations and contacts, without leaving this interface.
 
 
 ![assistant](images/exchange-resources-step6.png){.thumbnail}
