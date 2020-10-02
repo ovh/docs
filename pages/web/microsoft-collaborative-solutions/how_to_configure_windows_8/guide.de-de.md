@@ -3,6 +3,7 @@ title: 'Exchange 2013/2016: Konfiguration in Windows 8'
 excerpt: ''
 slug: exchange_20132016_konfiguration_in_windows_8
 legacy_guide_number: g1273
+section: Konfiguration des Exchange E-Mail-Clients
 ---
 
 
