@@ -55,7 +55,7 @@ Veillez à prendre en considération les spécificités suivantes avant de crée
 ![exchangesig](images/exchange-footer-step5.png){.thumbnail}
 
 - La signature sera ajoutée au corps de l’e-mail sans espace, il est donc conseillé de commencer la signature par au moins une ligne vide.
-- Dans OWA, il n'est pas indiqué si un pied de page est activé sur ce domaine et il n'y a **pas de synchronisation**. Si les utilisateurs ajoutent [leurs propres signatures](../exchange_2016_outlook_web_app_user_guide/#adding-a-signature), les e-mails comprendront à la fois le pied de page individuel et celui de l'ensemble du domaine.
+- Dans OWA, il n'est pas indiqué si un pied de page est activé sur ce domaine et il n'y a **pas de synchronisation**. Si les utilisateurs ajoutent [leurs propres signatures](../exchange-2016-guide-utilisation-outlook-web-app/#ajouter-une-signature), les e-mails comprendront à la fois le pied de page individuel et celui de l'ensemble du domaine.
 - L'éditeur prend en charge le formatage HTML, les hyperliens, les images, etc. Toutefois, les signatures ne devraient pas trop s'appuyer sur ces options. Les destinataires peuvent utiliser des clients de messagerie électronique qui empêchent le HTML et les images intégrées, les signatures apparaîtront alors d'une manière différente de celle prévue. Attention : les balises HTML seront complètement supprimées si un message est envoyé en « texte brut » depuis OWA.
 - Les « initiales » ne sont pas actives sur ce service. Ajouter cette variable n’aura donc aucun effet.
 
