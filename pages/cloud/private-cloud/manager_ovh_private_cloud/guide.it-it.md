@@ -249,7 +249,7 @@ La scheda di backup consente di attivare la soluzione `Veeam backup`.
 
 ![Backup](images/controlpanel14.png){.thumbnail}
 
-Per maggiori informazioni su questa opzione, consulta [questa guida](../veeam-backup-as-a-service/){.external}.
+Per maggiori informazioni su questa opzione, consulta [questa guida](https://docs.ovh.com/gb/en/private-cloud/veeam-backup-as-a-service/){.external}.
 
 
 ## Per saperne di più
