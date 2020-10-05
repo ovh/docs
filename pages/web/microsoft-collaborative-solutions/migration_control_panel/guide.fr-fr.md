@@ -41,6 +41,10 @@ Cette étape est facultative si :<br>
 
 Dans le cas contraire, pour réaliser la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, puis cliquez sur le bouton `Commander`{.action} dans la barre de services à gauche. Sélectionnez ensuite le service que vous voulez commander. Vous serez dirigé vers la page de commande. Suivez les différentes étapes, puis patientez jusqu'à l'installation effective du service. Un e-mail vous sera envoyé dès la fin de celle-ci.
 
+> [!primary]
+>
+> Une fois le compte commandé, laissez-le en configure.me. En effet, il sera directement renommé lors de la migration.
+>
 
 ### Étape 3 : réaliser une migration automatique
 
