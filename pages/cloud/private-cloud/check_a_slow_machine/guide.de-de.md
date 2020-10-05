@@ -2,6 +2,7 @@
 title: Eine Maschine bei auftretenden Verlangsamungen überprüfen
 excerpt: ''
 slug: eine_maschine_bei_auftretenden_verlangsamungen_uberprufen
+section: Wartung und Monitoring
 legacy_guide_number: g601
 ---
 

@@ -2,6 +2,7 @@
 title: Import einer VM in Ihre Dedicated Cloud
 excerpt: In dieser Hilfe wird der Import von bestehenden VM in die HyperV Dedicated Cloud beschrieben.
 slug: import_einer_vm_in_ihre_dedicated_cloud
+section: Ressourcen-Management
 ---
 
 

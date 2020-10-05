@@ -1,7 +1,7 @@
 ---
-title: OVHcloud Dedicated Connect service provisioning
-slug: occdedicated-delivery
-excerpt: 'Delivery process for the OVHcloud Dedicated Connect solution'
+title: OVHcloud Connect service provisioning
+slug: ovhcloudconnect-delivery
+excerpt: 'Delivery process for the OVHcloud Connect solution'
 section: Getting started
 order: 1
 ---

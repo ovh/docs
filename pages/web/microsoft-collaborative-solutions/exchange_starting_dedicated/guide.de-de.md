@@ -3,6 +3,7 @@ title: 'Exchange Enterprise: Konfiguration Ihrer Dienstleistung'
 slug: exchange_enterprise_konfiguration_ihrer_dienstleistung
 excerpt: 'Exchange Enterprise: Konfiguration Ihrer Dienstleistung'
 legacy_guide_number: g2214
+hidden: true
 ---
 
 ## Schritt 1: Zugang zur Dienstleistung

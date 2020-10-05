@@ -1,7 +1,8 @@
 ---
 title: Erstellung eines Templates mit dem VMM
-excerpt: In dieser Hilfe wird beschrieben, wie Sie mit dem VMM ein Template von einer existierenden Festplatte aus erstellen.
+excerpt: In dieser Hilfe wird beschrieben, wie Sie mit dem VMM ein Template von einer existierenden Festplatte aus erstellen
 slug: erstellung_eines_templates_mit_dem_vmm
+section: Ressourcen-Management
 legacy_guide_number: g1436
 ---
 

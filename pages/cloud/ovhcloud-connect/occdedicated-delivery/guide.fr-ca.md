@@ -1,7 +1,7 @@
 ---
 title: 'Mise en service de l offre OVHcloud Connect'
-slug: occdedicated-delivery
-excerpt: 'Processus de mise en service de l offre OVHcloud Connect Dedicated'
+slug: ovhcloudconnect-delivery
+excerpt: 'Processus de mise en service de l offre OVHcloud Connect'
 section: Premiers pas
 order: 1
 ---
