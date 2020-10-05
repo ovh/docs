@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 3
 ---
 
-**Dernière mise à jour le 26/03/2019**
+**Dernière mise à jour le 05/10/2020**
 
 ## Objectif
 
@@ -17,7 +17,7 @@ Les adresses e-mail de l’offre MX Plan vous permettent d’envoyer et de recev
 ## Prérequis
 
 - Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web]({ovh_www}/hebergement-web/){.external}, l'[hébergement gratuit Start 10M]({ovh_www}/domaines/offre_hebergement_start10m.xml){.external}, ou l'offre MX Plan commandée séparément.
-- Selon la méthode que vous utilisez : être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Web`{.action}, ou être connecté à l'adresse e-mail depuis le [webmail]({ovh_www}/mail/){.external} Outlook Web Messenger (OWA).
+- Selon la méthode que vous utilisez : être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Web`{.action}, ou être connecté à l'adresse e-mail depuis le [webmail]({ovh_www}/mail/){.external} Outlook Web Messenger (OWA).
 
 > [!primary]
 >
@@ -28,7 +28,7 @@ Les adresses e-mail de l’offre MX Plan vous permettent d’envoyer et de recev
 
 Selon la date d'activation de votre service ou si [celui-ci a été récemment migré]({ovh_www}/mxplan-migration/){.external}, il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre MX Plan. Avant de poursuivre, vous devez identifier celle-ci. 
 
-Pour cela, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie « Web ». Cliquez sur `E-mails`{.action} dans la barre de services à gauche, puis choisissez le nom du service MX Plan concerné. Poursuivez selon la version que vous possédez.
+Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, partie « Web ». Cliquez sur `E-mails`{.action} dans la barre de services à gauche, puis choisissez le nom du service MX Plan concerné. Poursuivez selon la version que vous possédez.
 
 |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 |---|---|
@@ -43,10 +43,10 @@ Vous possédez la nouvelle version de l'offre MX Plan. Voici l'affichage que vou
 
 Il existe deux possibilités pour modifier le mot de passe d'une adresse e-mail. Poursuivez vers celle que vous souhaitez effectuer.
 
-- [Modifier le mot de passe depuis l'espace client OVH](./#modifier-le-mot-de-passe-depuis-lespace-client-ovh). Pour cela, vous n'avez pas besoin d'être en possession du mot de passe actuel.
+- [Modifier le mot de passe depuis l'espace client OVHcloud](./#modifier-le-mot-de-passe-depuis-lespace-client-ovhcloud). Pour cela, vous n'avez pas besoin d'être en possession du mot de passe actuel.
 - [Modifier le mot de passe depuis le webmail OWA](./#modifier-le-mot-de-passe-depuis-le-webmail-owa). Pour cela, vous devez être en possession du mot de passe actuel. 
 
-#### Modifier le mot de passe depuis l'espace client OVH
+#### Modifier le mot de passe depuis l'espace client OVHcloud
 
 Commencez en vous positionnant sur l'onglet `Comptes e-mail`{.action}. Le tableau qui s'affiche contient toutes les adresses e-mail créées dans le cadre de votre offre. Cliquez alors sur le bouton `...`{.action} à droite de l'adresse concernée, puis sur `Modifier`{.action}.
 
