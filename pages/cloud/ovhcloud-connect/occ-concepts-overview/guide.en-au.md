@@ -45,7 +45,7 @@ The OVHcloud data centre is the service *EndPoint* of OVHcloud Connect.
 
 ### Cross-connect
 
-A cross-connection is a physical link (monomode fiber) managed by the local facility team in the PoP. The cross-connection is established in the MMR (meet-me room) between the position given by OVHcloud and the position owned by the customer. The customer must order and manage the cross-connect for OVHcloud Dedicated Connect. 
+A cross-connection is a physical link (monomode fiber) managed by the local facility team in the PoP. The cross-connection is established in the MMR (meet-me room) between the position given by OVHcloud and the position owned by the customer. The customer must order and manage the cross-connect for OVHcloud Connect Direct. 
 
 ### vRack
 
