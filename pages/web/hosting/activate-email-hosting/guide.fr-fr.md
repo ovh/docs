@@ -52,7 +52,7 @@ Il est possible de supprimer définitivement l'offre e-mail associée à votre h
 
 > [!warning]
 >
-> Attention, cette action est irréversible. Il n'est pas possible de réactiver l'offre e-mail après sa résiliation.
+> Attention, cette action est irréversible. les comptes e-mail et leur contenu seront supprimés.
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement bénéficiant de l'offre e-mail.
 
