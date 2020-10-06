@@ -1,9 +1,9 @@
 ---
-title: Mise en service de OVHcloud Connect Provider depuis l’espace client OVHcloud
-excerpt: Découvrez comment mettre en service votre offre OVHcloud Connect Provider depuis votre espace client OVHcloud
-slug: occ-provider-manager-setup
+title: Mise en service de OVHcloud Connect Direct depuis l’espace client OVHcloud
+excerpt: Découvrez comment mettre en service votre offre OVHcloud Connect Direct depuis votre espace client OVHcloud
+slug: occ-direct-manager-setup
 section: Premiers pas
-order: 3
+order: 2
 ---
 
 **Dernière mise à jour le 28/09/2020**
@@ -12,31 +12,21 @@ order: 3
 
 OVHcloud Connect permet d’étendre votre réseau d’entreprise avec votre réseau privé OVHcloud vRack sans passer par la création d’un tunnel VPN à travers Internet. Cette connexion sera ainsi plus rapide, plus fiable et avec une bande passante garantie. 
 
-**Ce guide vous présente la mise en service de l'offre OVHcloud Connect Provider depuis l'espace client OVHcloud**
+**Ce guide vous présente la mise en service de l'offre OVHcloud Connect Direct depuis l'espace client OVHcloud**
 
 ## Prérequis
 
-- Avoir commandé une [offre OVHcloud Connect Provider](https://www.ovhcloud.com/fr/network-security/ovhcloud-connect/)
-- Disposer d'un [vRack OVHcloud](https://www.ovh.com/fr/solutions/vrack/)
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Posséder une [offre OVHcloud Connect Direct](https://www.ovhcloud.com/fr-ca/network-security/ovhcloud-connect/)
+- Disposer d'un [vRack OVHcloud](https://www.ovh.com/ca/fr/solutions/vrack/)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager)
 
 ## En pratique
 
-### Étape 1 : commande de votre offre
-
-Une fois votre offre OVHcloud Connect Provider commandée, vous recevrez une confirmation de commande par e-mail ainsi qu'une clé de service (ServiceKey).
-
-Selon le fournisseur que vous avez choisi, rendez-vous ensuite sur le portail de celui-ci pour vous identifier, le lien étant fourni dans l'e-mail de confirmation de commande. 
-Renseignez alors votre clé de service et validez la commande qui vous sera présentée.
-
-Vérifiez par la suite dans votre  [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} le statut d'activation de votre offre. Pour cela, cliquez sur `Server`{.action} en haut à gauche puis sélectionnez l'onglet `Network`{.action}. Cliquez alors sur `OVHcloud Connect`{.action} puis sur votre offre. Le statut de votre offre passera à « Actif »
-
-
-### Étape 2 : associer un vRack
-
-Connectez-vous à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Server`{.action} en haut à gauche puis sélectionnez l'onglet `Network`{.action}. Cliquez alors sur `OVHcloud Connect`{.action} puis sur votre offre.
+Connectez-vous à [l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Server`{.action} en haut à gauche puis sélectionnez l'onglet `Network`{.action}. Cliquez alors sur `OVHcloud Connect`{.action} puis sur votre offre.
 
 ![ovhcloud connect selection](images/occ01.png){.thumbnail}
+
+### Étape 1: associer un vRack
 
 Vous devez commencer par associer un vRack à votre offre. Cliquez sur le bouton  `Associer un vRack`{.action} et sélectionnez un vRack existant dans le menu déroulant. 
 
@@ -46,11 +36,27 @@ Un message vous confirmera l'association du vRack.
 
 ![associate vRack](images/vrack2.png){.thumbnail}
 
-### Étape 3 : ajouter une configuration PoP
+### Étape 2: ajouter une configuration PoP
 
 > [!warning]
-> L'offre OVHcloud Connect Provider nécessite une configuration de niveau L3.
+> Un changement de configuration PoP de L2 à L3, ou inversement, nécessiterait de supprimer toute la configuration. Nous vous conseillons donc de bien réfléchir à votre choix de configuration avant d'aller plus loin.
 >
+
+> [!primary]
+> Pour plus de détails sur les différences entre les niveaux L2 et L3, consultez notre [FAQ](../occdedicated-faq/#3-comment-choisir-entre-une-interconnexion-de-niveau-2-ou-de-niveau-3-du-modele-osi).
+>
+
+#### Configuration L2 
+
+Une fois votre vRack associé, deux menus `Configuration PoP` apparaîtront. Cliquez sur `Ajouter une configuration PoP`{.action} dans le premier menu, sélectionnez L2 dans le menu déroulant puis validez. 
+
+![ajout Pop](images/pop2.png){.thumbnail}
+
+La configuration L2 sera alors activée dans les deux menus `Configuration PoP`.
+
+![ajout Pop](images/l2pop2.png){.thumbnail}
+
+#### Configuration L3 
 
 Une fois votre vRack associé, cliquez sur `Ajouter une configuration PoP`{.action} et sélectionnez la configuration L3 dans le menu déroulant.
 
@@ -64,16 +70,31 @@ Vous devrez alors saisir les éléments suivants :
 | ASN OVHcloud    | Le numéro d'AS OVHcloud qui sera configuré sur les routeurs de OVHcloud Connect situés dans le PoP |
 | Sous-réseau en /30    | Un bloc IPv4 de taille /30, utilisé pour le lien entre votre routeur et le routeur OVHcloud Connect situé dans le PoP |
 
-
 ![ajout Pop](images/l3pop1-1.png){.thumbnail}
 
 Le menu `Configuration PoP` apparaîtra alors.
 
 ![ajout Pop](images/l3pop2.png){.thumbnail}
 
-### Étape 4 : ajout d'une configuration Datacentre 
+Vous pouvez également ajouter une seconde configuration PoP L3 via le deuxième menu `Configuration PoP` qui vous sera présenté.
 
-Lorsque votre configuration PoP a été définie, cliquez sur `Ajouter une configuration`{.action} sous le menu `Configuration Datacentre`.
+### Étape 3: ajout d'une configuration Datacentre
+
+#### Configuration L2 
+
+Lorsque votre configuration PoP est active, cliquez sur `Ajouter une configuration`{.action} sous le menu `Configuration DC`. Sélectionnez un Datacentre dans le menu déroulant et validez.
+
+![ajout datacentre](images/l2dc1.png){.thumbnail}
+
+![ajout datacentre](images/l2dc1-1.png){.thumbnail}
+
+La configuration datacentre débutera alors.
+
+![ajout datacentre](images/l2dc1-2.png){.thumbnail}
+
+#### Configuration L3 
+
+Lorsque votre configuration PoP a été définie, cliquez sur `Ajouter une configuration`{.action} sous le menu `Configuration DC`. 
 
 ![ajout datacentre](images/l3dc0.png){.thumbnail}
 
@@ -94,15 +115,15 @@ Vous devez également ajouter une configuration de routage.
 
 ##### **Ajout d'une configuration de routage**
 
-Cliquez sur le bouton `(...)`{.action} sur le datacentre voulu puis sur `Ajouter configuration de routage`{.action}.
+Cliquez sur le bouton `(...)`{.action} sur le Datacentre voulu puis sur `Ajouter configuration de routage`{.action}.
 
 ![ajout datacentre](images/l3dc2.png){.thumbnail}
 
-Choisissez alors le type de routage entre « Static » et « BGP ».
+Choisissez alors le type de routage entre « Static » et « BGP ». 
 
 ![ajout datacentre](images/l3dc3.png){.thumbnail}
 
-Si vous choisissez le type « BGP », saisissez alors les informations requises :
+Si vous choisissez le type « BGP », saisissez alors les informations requises.
 
 | Information    | Description |
 |:-------:|:------:|
@@ -120,7 +141,7 @@ Si vous choisissez le type « Static », saisissez les informations requises :
 
 ![ajout datacentre](images/l3dc4.png){.thumbnail}
 
-Vous pouvez ajouter plusieurs configurations de routage au sein d'un même datacentre. Le type de configuration (BGP ou Static) choisi sur votre première configuration s'appliquera alors aux suivantes sur le même Datacentre.
+Vous pouvez ajouter plusieurs configurations de routage au sein d'un même datacentre. Le type de configuration (BGP ou Static) choisi sur votre première configuration de routage s'appliquera alors aux suivantes sur le même datacentre.
 
 ![ajout datacentre](images/l3dc6.png){.thumbnail}
 
@@ -133,7 +154,6 @@ La suppression récursive est plus lente que la suppression séquentielle de cha
 > [!primary]
 > Si une configuration DC est partagée entre au moins deux services OVHcloud Connect, la suppression de la configuration PoP d’un seul service OVHcloud Connect n’affectera pas la ressource DC.
 >
-
 #### Suppression d'une configuration de routage
 
 Pour supprimer une configuration de routage, cliquez sur le le bouton `(...)`{.action} sur la configuration de routage à supprimer puis sur `Supprimer`{.action}.
@@ -150,14 +170,14 @@ Pour supprimer une configuration DC, cliquez sur le le bouton `(...)`{.action} s
 > La suppression d'une configuration DC entraînera la suppression des configurations de routage liées.
 >
 
-#### Suppression de la configuration PoP
+#### Suppression d'une configuration PoP
 
-Pour supprimer une configuration PoP, cliquez sur le le bouton `(...)`{.action} sur la configuration PoP puis sur `Supprimer la configuration`{.action}.
+Pour supprimer une configuration PoP, cliquez sur le le bouton `(...)`{.action} sur la configuration PoP à supprimer puis sur `Supprimer la configuration`{.action}.
 
-![suppression configuration PoP](images/deletepopl3.png){.thumbnail}
+![suppression configuration PoP](images/deletepop.png){.thumbnail}
 
 > [!primary]
-> La suppression d'une configuration PoP entraînera la suppression des configurations DC et de routage.
+> La suppression d'une configuration PoP entraînera la suppression des configurations DC et de routage liées.
 >
 
 ## Aller plus loin
