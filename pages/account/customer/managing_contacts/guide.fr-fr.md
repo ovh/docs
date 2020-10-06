@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment gérer les contacts de vos services OVHcloud'
 section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 10/04/2020** 
+**Dernière mise à jour le 06/10/2020** 
 
 ## Objectif
 
@@ -24,7 +24,6 @@ Trois types de contacts existent:
 L'identifiant client est un identifiant personnel que vous recevez par e-mail lors de la création de votre compte client chez OVHcloud. Il est le plus souvent composé de deux lettres suivies de chiffres. Par exemple : **xx11111-ovh**. Lorsque vous commandez des services, cet identifiant leur est associé en tant que contact.
 
 ![Contact management](images/managing_contacts_scheme.png){.thumbnail}
-
 
 ## Prérequis
 
@@ -46,8 +45,6 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 Le tableau qui apparaît permet ainsi de visionner les différents services pour lesquels votre identifiant client est renseigné en tant que contact.
 
 ![Contact management](images/managing_contacts_02.png){.thumbnail}
-
-
 
 ### Modifier les contacts d'un service
 
@@ -103,6 +100,15 @@ Si un seul contact a validé le changement, un message apparaîtra, vous informa
 
 Dès que les deux contacts ont validé la demande, le changement sera effectif sous quelques minutes. Les deux contacts recevront un e-mail les informant que la demande a bien été traitée.
 
+### Cas particulier d’un propriétaire de domaine
+
+Lors de la commande d'un service OVHcloud, vous avez défini un propriétaire pour celui-ci. Le propriétaire a la possibilité, s'il n'a aucun accès au(x) compte(s) OVHcloud associés au service qu'il souhaite récupérer, de céder la propriété d'un domaine à un tiers, ou de récupérer l'administration du domaine, via les procédures suivantes :
+
+[Changer le propriétaire d'un service](https://www.ovh.com/cgi-bin/fr/procedure/procedureChangeOwner.cgi)
+
+[Modifier les contacts de votre domaine](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeContacts.cgi)
+
+Le suivi de chaque procédure s'effectue par e-mail et une vérification d'identité sera nécessaire. Les instructions détaillées vous seront fournies tout au long de chaque procédure.
 
 ## Aller plus loin
 

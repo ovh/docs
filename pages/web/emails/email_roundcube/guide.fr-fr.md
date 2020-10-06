@@ -314,7 +314,7 @@ Pour insérer la signature associée à cette identité, référez-vous à la se
 ### Mettre en place une signature avec une image (1)
 Cette étape nécessite que l'image soit hébergée sur un serveur (votre hébergement OVH ou autre).
 
-Afin de placer une image sur votre hébergement OVH, veuillez suivre le guide disponible [ici](http://guides.ovh.com/FtpFileZilla){.external}.
+Afin de placer une image sur votre hébergement OVH, veuillez suivre le guide disponible [ici](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/){.external}.
 
 En cochant Signature HTML, l'éditeur WYSWYG* apparaît comme montré ci-contre. Cliquez sur le carré  **HTML**  afin d'ouvrir la fenêtre qui vous permettra d'insérer du code HTML. Pour ajouter une image vous pouvez ajouter le code suivant :
 
