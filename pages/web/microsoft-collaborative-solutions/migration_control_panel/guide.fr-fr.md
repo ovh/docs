@@ -6,7 +6,7 @@ section: 'Migration d’un compte Exchange'
 order: 1
 ---
 
-**Dernière mise à jour le 12/08/2020**
+**Dernière mise à jour le 05/10/2020**
 
 ## Objectif
 
@@ -18,7 +18,7 @@ OVHcloud propose plusieurs solutions e-mail : MX Plan (vendu seul ou compris dan
 ## Prérequis
 
 - Disposer d'une adresse e-mail MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external}).
-- Disposer d'un service [Exchange](https://www.ovh.com/fr/emails/hosted-exchange/){.external} ou [E-mail Pro](https://www.ovh.com/fr/emails/email-pro/){.external} avec au minimum un compte non configuré (qui apparaîtra sous la forme "@configureme.me").
+- Disposer d'un service [Exchange](https://www.ovh.com/fr/emails/hosted-exchange/){.external} ou [E-mail Pro](https://www.ovh.com/fr/emails/email-pro/){.external} avec au minimum un compte non configuré (qui apparaîtra sous la forme « @configureme.me »).
 - Ne pas avoir paramétré de redirection sur l'adresse e-mail MX Plan que vous souhaitez migrer.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
@@ -41,6 +41,10 @@ Cette étape est facultative si :<br>
 
 Dans le cas contraire, pour réaliser la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, puis cliquez sur le bouton `Commander`{.action} dans la barre de services à gauche. Sélectionnez ensuite le service que vous voulez commander. Vous serez dirigé vers la page de commande. Suivez les différentes étapes, puis patientez jusqu'à l'installation effective du service. Un e-mail vous sera envoyé dès la fin de celle-ci.
 
+> [!primary]
+>
+> Une fois le compte commandé, laissez-le sous la forme « @configureme.me ». En effet, il sera directement renommé lors de la migration.
+>
 
 ### Étape 3 : réaliser une migration automatique
 
