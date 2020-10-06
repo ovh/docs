@@ -17,7 +17,7 @@ Los servidores de bases de datos SQL Privado y Cloud Databases le ofrecen la pos
 ## Requisitos
 
 - Tener contratado un plan de [hosting SQL Privado](https://www.ovhcloud.es/hosting/opciones-sql.xml){.external} o [Cloud Databases](https://www.ovhcloud.es/cloud-databases/){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloudcloud](https://www.ovhcloud.com/auth/?action=gotomanager){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloudcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Procedimiento
 
