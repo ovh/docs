@@ -77,7 +77,7 @@ Votre portGroup est à présent créé et fonctionnel, vous le retrouverez dans 
 
 Mais également dans la vue `Mise en réseau`
 
-![portgroup créé](images/06VxLANnetworking.PNG){.thumbnail}
+![portgroup créé](images/06VxLANnetworking.png){.thumbnail}
 
 ### VLAN - vRack
 
