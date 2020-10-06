@@ -25,10 +25,6 @@ L'identifiant client est un identifiant personnel que vous recevez par e-mail lo
 
 ![Contact management](images/managing_contacts_scheme.png){.thumbnail}
 
-> [!primary]
-> Lors de la commande d'un service OVHcloud, vous avez défini un propriétaire pour celui-ci. Le propriétaire d'un service, s'il peut s'identifier en tant que tel, peut céder la propriété du service via une [procédure](https://www.ovh.com/cgi-bin/fr/procedure/procedureChangeOwner.cgi) différente de la gestion de contacts via l'espace client OVHcloud. .
->
-
 ## Prérequis
 
 - Être connecté à  votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
@@ -49,8 +45,6 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 Le tableau qui apparaît permet ainsi de visionner les différents services pour lesquels votre identifiant client est renseigné en tant que contact.
 
 ![Contact management](images/managing_contacts_02.png){.thumbnail}
-
-
 
 ### Modifier les contacts d'un service
 
@@ -106,6 +100,15 @@ Si un seul contact a validé le changement, un message apparaîtra, vous informa
 
 Dès que les deux contacts ont validé la demande, le changement sera effectif sous quelques minutes. Les deux contacts recevront un e-mail les informant que la demande a bien été traitée.
 
+### Cas particulier d’un propriétaire de domaine
+
+Lors de la commande d'un service OVHcloud, vous avez défini un propriétaire pour celui-ci. Le propriétaire a la possibilité, s'il n'a aucun accès au(x) compte(s) OVHcloud associés au service qu'il souhaite récupérer, de céder la propriété d'un domaine à un tiers, ou de récupérer l'administration du domaine, via les procédures suivantes :
+
+[Changer le propriétaire d'un service](https://www.ovh.com/cgi-bin/fr/procedure/procedureChangeOwner.cgi)
+
+[Modifier les contacts de votre domaine](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeContacts.cgi)
+
+Le suivi de ces procédure s'effectue par e-mail et une vérification d'identité sera nécessaire. Les instructions détaillées vous sont fournies tout au long de chaque procédure.
 
 ## Aller plus loin
 
