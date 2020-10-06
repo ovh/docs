@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment gérer les contacts de vos services OVHcloud'
 section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 10/04/2020** 
+**Dernière mise à jour le 06/10/2020** 
 
 ## Objectif
 
@@ -108,7 +108,7 @@ Lors de la commande d'un service OVHcloud, vous avez défini un propriétaire po
 
 [Modifier les contacts de votre domaine](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeContacts.cgi)
 
-Le suivi de ces procédure s'effectue par e-mail et une vérification d'identité sera nécessaire. Les instructions détaillées vous sont fournies tout au long de chaque procédure.
+Le suivi de chaque procédure s'effectue par e-mail et une vérification d'identité sera nécessaire. Les instructions détaillées vous seront fournies tout au long de chaque procédure.
 
 ## Aller plus loin
 
