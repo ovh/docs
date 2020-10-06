@@ -21,14 +21,13 @@ Trois types de contacts existent:
 - **le contact technique** gère uniquement les aspects techniques d'un service .
 - **le contact facturation** gère uniquement la facturation d'un service dont ses prélèvements. Ce contact reçoit notamment les notifications liées au renouvellement. 
 
-> [!warning]
-> Il faut différencier le contact d'un service (qui peut gérer le service directement depuis l'espace client) du propriétaire de celui-ci (qui possède des droits différents et peut modifier les contacts si il peut justifier de son statut).
->
-
 L'identifiant client est un identifiant personnel que vous recevez par e-mail lors de la création de votre compte client chez OVHcloud. Il est le plus souvent composé de deux lettres suivies de chiffres. Par exemple : **xx11111-ovh**. Lorsque vous commandez des services, cet identifiant leur est associé en tant que contact.
 
 ![Contact management](images/managing_contacts_scheme.png){.thumbnail}
 
+> [!primary]
+> Lors de la commande d'un service OVHcloud, vous avez défini un propriétaire pour celui-ci. Le propriétaire d'un service, s'il peut s'identifier en tant que tel, peut céder la propriété du service via une [procédure](https://www.ovh.com/cgi-bin/fr/procedure/procedureChangeOwner.cgi) différente de la gestion de contacts via l'espace client OVHcloud. .
+>
 
 ## Prérequis
 
