@@ -1,7 +1,7 @@
 ---
-title: Cloud Privé
+title: Hosted Private Cloud
 slug: private-cloud
-excerpt: Guides d'utilisation de votre Cloud Privé
+excerpt: Guides d'utilisation de votre Hosted Private Cloud
 sections: Premiers pas, Fonctionnalités OVH
 ---
 
