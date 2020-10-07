@@ -187,7 +187,7 @@ Nello step 3 seleziona un sistema operativo per l’istanza. Le immagini disponi
 Se scegli un sistema operativo che richiede una licenza a pagamento, i relativi costi saranno automaticamente inclusi nella fatturazione oraria o mensile.
 >
 
-In questo step è necessario aggiungere una chiave SSH (ad eccezione delle istanze Windows). Per farlo hai due possibilità: puoi aggiungere la chiave direttamente cliccando sul pulsante `Aggiungi una chiave`{.action} oppure puoi selezionare la chiave dalla lista (a condizione di averla salvato nello Spazio Cliente durante lo [Step 2](./#step-2-salva-le-chiavi-pubbliche-nello-spazio-cliente- ovhcloud_1)).
+In questo step è necessario aggiungere una chiave SSH (ad eccezione delle istanze Windows). Per farlo hai due possibilità: puoi aggiungere la chiave direttamente cliccando sul pulsante `Aggiungi una chiave`{.action} oppure puoi selezionare la chiave dalla lista (a condizione di averla salvato nello Spazio Cliente durante lo [Step 2](./#step-2-salva-le-chiavi-pubbliche-nello-spazio-cliente-ovhcloud_1)).
 
 ![key select](images/instance-creation-03.png){.thumbnail}
 
@@ -225,7 +225,7 @@ Un utente con privilegi elevati viene creato automaticamente sull’istanza. Il 
 
 > [!primary]
 >
-In caso di problemi di connessione, ad esempio errori relativi alle chiavi SSH, consulta la guida[Sostituisci la tua chiave SSH in caso di perdita](../sostituisci-la-tua-chiave-SSH-in-caso-di-perdita/).
+In caso di problemi di connessione, ad esempio errori relativi alle chiavi SSH, consulta la guida[Sostituisci la tua chiave SSH in caso di perdita](../sostituisci_la_tua_chiave_ssh_in_caso_di_perdita/).
 >
 
 #### Connettersi a un’istanza Linux da Linux/Mac

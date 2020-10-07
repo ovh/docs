@@ -27,7 +27,7 @@ viene attribuito di default all’utente “admin” e può essere assegnato dir
 
 Dall’interfaccia sicura è possibile eseguire tre diverse azioni. Prosegui nella lettura di questa guida in base all’operazione che vuoi effettuare: 
 
-- [Confermare un’operazione tramite token](./#confermare-un-operazione-tramite-token)
+- [Confermare un’operazione tramite token](./#confermare-unoperazione-tramite-token)
 - [Modifica la password associata a un utente](./#modificare-la-password-associata-a-un-utente) 
 - [Reimpostare una password](./#reimpostare-una-password)
 
@@ -80,7 +80,7 @@ La modifica della password può essere effettuata da qualsiasi utente, indipende
 
 > [!primary]
 >
-> Nel caso in cui l’utente non disponga più della password, dovrà richiedere a un altro utente con permesso **token validator** attivo di eseguire la modifica per suo conto tramite la procedura di [reimpostazione della password](./#reimposta-password). 
+> Nel caso in cui l’utente non disponga più della password, dovrà richiedere a un altro utente con permesso **token validator** attivo di eseguire la modifica per suo conto tramite la procedura di [reimpostazione della password](./#reimpostare-una-password). 
 > 
 
 Per modificare la password associata a un utente, accedi all’interfaccia sicura (ad esempio, `https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/`) e clicca su `Change password`{.action}.
@@ -114,7 +114,7 @@ A questo punto inserisci i due token ricevuti via SMS e posta elettronica e defi
 
 > [!primary]
 >
-> Se la procedura di reimpostazione viene effettuata per conto di un altro utente, chi ha eseguito l’operazione dovrà trasmettere la nuova password. È inoltre preferibile che l’utente che la riceve la [modifichi appena possibile](./#modificare-la-password-diun-utente).
+> Se la procedura di reimpostazione viene effettuata per conto di un altro utente, chi ha eseguito l’operazione dovrà trasmettere la nuova password. È inoltre preferibile che l’utente che la riceve la [modifichi appena possibile](./#modificare-la-password-associata-a-un-utente).
 > 
 
 ![Token e password](images/tokenAndPassword.png){.thumbnail}

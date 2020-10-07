@@ -262,7 +262,7 @@ Przełączanie się na użytkownika „root” jest rzadko konieczne, ponieważ 
 
 #### Połączenie z instancją z systemem operacyjnym Linux z systemu Windows
 
-Po utworzeniu i zapisaniu kluczy SSH (w [kroku 1](./#step-1-creating-ssh-keys)) i zainstalowaniu instancji z kluczem publicznym (w [kroku 3](./#krok-3-tworzenie-instancji)) możesz połączyć się z instancją przy użyciu oprogramowania [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) i swojego klucza prywatnego.
+Po utworzeniu i zapisaniu kluczy SSH (w [kroku 1](./#krok-1-utworzenie-kluczy-ssh)) i zainstalowaniu instancji z kluczem publicznym (w [kroku 3](./#krok-3-tworzenie-instancji)) możesz połączyć się z instancją przy użyciu oprogramowania [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) i swojego klucza prywatnego.
 
 Otwórz aplikację PuTTY i rozwiń pozycję „SSH” w lewym menu. Następnie kliknij pozycję „Auth”, aby wyświetlić opcje uwierzytelniania.
 

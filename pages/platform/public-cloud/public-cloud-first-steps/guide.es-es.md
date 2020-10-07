@@ -131,7 +131,7 @@ La clave estará lista cuando se complete la barra de progreso.
 
 ![save key](images/puttygen_03a.png){.thumbnail}
 
-Puede seleccionar y copiar la clave pública desde esta ventana para guardarla en su área de cliente de OVHcloud ([paso 2](./#2-guardar-claves-publicas-en-el-area-de-cliente-de-ovhcloud_1)).
+Puede seleccionar y copiar la clave pública desde esta ventana para guardarla en su área de cliente de OVHcloud ([paso 2](./#2-guardar-las-claves-publicas-en-el-area-de-cliente-de-ovhcloud_1)).
 
 Guarde ambas claves como archivo y cree una frase de contraseña. Para acceder a su instancia de Public Cloud desde un dispositivo de trabajo solo necesitará la clave privada correspondiente. Así pues, le recomendamos que aplique medidas adicionales de seguridad. Cada vez que se establezca una conexión con la instancia, deberá introducir la frase de contraseña.
 
