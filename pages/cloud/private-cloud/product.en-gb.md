@@ -1,7 +1,7 @@
 ---
-title: Private Cloud
+title: Hosted Private Cloud
 slug: private-cloud
-excerpt: How to use your Private Cloud
+excerpt: How to use your Hosted Private Cloud
 sections: Getting started, Resource management, OVH Features, Maintenance and monitoring, NSX, Networking, VMware vSphere features, OpenShift, OVH services and options, Meltdown and Spectre information
 ---
 
