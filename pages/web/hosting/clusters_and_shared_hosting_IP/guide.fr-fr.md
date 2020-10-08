@@ -392,7 +392,7 @@ Si vous avez le  **CDNv2**  activé sur votre hébergement, vous devez utiliser 
 
 
 ```bash
-46.105.204.12"
+46.105.204.12
 ```
 
 Si vous avez le  **Certificat SSL GlobalSign (payant)**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
@@ -440,7 +440,7 @@ Si vous avez le  **CDNv2**  activé sur votre hébergement, vous devez utiliser 
 
 
 ```bash
-46.105.204.13"
+46.105.204.13
 ```
 
 Si vous avez le  **Certificat SSL GlobalSign (payant)**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
@@ -488,7 +488,7 @@ Si vous avez le  **CDNv2**  activé sur votre hébergement, vous devez utiliser 
 
 
 ```bash
-46.105.204.14"
+46.105.204.14
 ```
 
 Si vous avez le  **Certificat SSL GlobalSign (payant)**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
@@ -828,12 +828,6 @@ Si vous avez le **CDNv1** activé sur votre hébergement, vous devez utiliser ce
 
 ```bash
 188.165.51.93
-```
-
-Si vous avez le **CDNv2** activé sur votre hébergement, vous devez utiliser cette adresse IP :
-
-```bash
-54.36.250.167
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
