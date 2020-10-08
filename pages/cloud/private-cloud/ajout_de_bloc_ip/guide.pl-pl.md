@@ -55,7 +55,7 @@ Utworzenie bloku IP wymaga wypełnienia następujących pól
 - Opis sieci (informacja widoczna w bazie WHOIS bloku IP).
 - Wykorzystanie \[informacje dotyczące wykorzystania (WWW, SSL, Cloud itp.)].
 
-> \[!success]
+> [!success]
 >
 > Koszt aktywacji bloku wynosi 2 EUR netto za adres IP. Tym samym za blok `/28` zawierający 16 adresów IP otrzymasz formularz zamówienia w wysokości 32 EUR netto do opłacenia przed dostawą.
 >  
@@ -70,7 +70,7 @@ Migracja bloku IP wymaga ręcznego przeniesienia bloków za pośrednictwem APIv6
 
 Należy zastosować następujące wywołanie API:
 
-> \[!api]
+> [!api]
 >
 > @api {POST} /ip/{ip}/move
 > 
@@ -90,7 +90,7 @@ Wynik będzie następujący:
 
 Następnie użyj tego wywołania API, aby przenieść IP na „parking adresów IP”:
 
-> \[!api]
+> [!api]
 >
 > @api {POST} /ip/{ip}/park
 > 
