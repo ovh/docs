@@ -37,7 +37,7 @@ Dans le tableau « Gestion du service » de l'onglet `Informations Générales`{
 
 ![resiliation depuis l'espace client](images/resiliation1.png){.thumbnail}
 
-> Pour les offres Private Cloud antérieurs, la demande de résiliation se fait de la manière suivante: 
+> Pour les offres Private Cloud antérieures, la demande de résiliation se fait de la manière suivante: 
 >
 > Toujours dans l'onglet `Informations Générales`{.action}, cliquez sur le bouton `...`{.action} à droite du nom de votre Private Cloud dans le tableau « Informations Générales ». Cliquez ensuite sur `Supprimer mon service`{.action}.
 >
