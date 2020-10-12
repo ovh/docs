@@ -5,7 +5,7 @@ excerpt: 'Como reconhecer um e-mail de phishing e o que fazer depois de clicar n
 section: Segurança
 ---
 
-**Última atualização: 20/06/2018**
+**Última atualização: 12/10/2020**
 
 ## Sumário
 
@@ -21,35 +21,35 @@ O phishing é o envio de um e-mail que o convida a clicar numa ligação que o r
 
 ## Instruções
 
-### Recebi um e-mail de phishing em nome da OVH
+### Recebi um e-mail de phishing em nome da OVHcloud
 
 #### Identificar um e-mail de phishing
 
-Recebeu um e-mail em nome da OVH e quer ter a certeza de que é autêntico? Aqui ficam alguns elementos para o ajudar a distinguir visualmente um e-mail da OVH de uma tentativa de phishing.
+Recebeu um e-mail em nome da OVHcloud e quer ter a certeza de que é autêntico? Aqui ficam alguns elementos para o ajudar a distinguir visualmente um e-mail da OVHcloud de uma tentativa de phishing.
 
-![Diferença entre um e-mail da OVH e um e-mail de phishing](images/phishing_email.png){.thumbnail}
+![Diferença entre um e-mail da OVHcloud e um e-mail de phishing](images/phishing_email.png){.thumbnail}
 
 > [!alert]
 > 
 > Verifique se estão reunidas as três condições seguintes:
 > 
 
-|Número - descrição|E-mail da OVH|E-mail de phishing|
+|Número - descrição|E-mail da OVHcloud|E-mail de phishing|
 |---|---|---|
-|1 - Remetente|Certifique-se de que o endereço utilizado para o envio do e-mail termina em «@ovh.com», «@soyoustart.com» ou «@kimsufi.com».|Na maioria dos casos, o e-mail será identificado como «spam» entre parêntesis retos e o seu ID não aparecerá OU estará incorreto.|O remetente do e-mail será forçosamente um endereço que não pertence à OVH.|
-|2 - Assunto|Certifique-se de que o seu ID **(que começa pela primeira letra do sobrenome registado na OVH, seguida da primeira letra do nome)** e/ou o endereço de e-mail da sua conta figuram no assunto da mensagem.|Na maioria dos casos, o e-mail será identificado como «spam» entre parêntesis retos e o seu ID não aparecerá OU estará incorreto.|
-|3 - Ligação|Passe o ponteiro do rato sobre a ligação e, sem ter de clicar nela, verá diretamente o conteúdo (na parte inferior do navegador). Aqui, a ligação reencaminha efetivamente para  https://www.ovh.com/.|No nosso exemplo, ao passar o ponteiro do rato sobre a ligação, verá que esta não tem nada que ver com a OVH. Não clique nela.|
+|1 - Remetente|Certifique-se de que o endereço utilizado para o envio do e-mail termina em «@ovhcloud.com», «@ovh.com», «@soyoustart.com» ou «@kimsufi.com».|Na maioria dos casos, o e-mail será identificado como «spam» entre parêntesis retos e o seu ID não aparecerá OU estará incorreto.|O remetente do e-mail será forçosamente um endereço que não pertence à OVHcloud.|
+|2 - Assunto|Certifique-se de que o seu ID **(que começa pela primeira letra do sobrenome registado na OVHcloud, seguida da primeira letra do nome)** e/ou o endereço de e-mail da sua conta figuram no assunto da mensagem.|Na maioria dos casos, o e-mail será identificado como «spam» entre parêntesis retos e o seu ID não aparecerá OU estará incorreto.|
+|3 - Ligação|Passe o ponteiro do rato sobre a ligação e, sem ter de clicar nela, verá diretamente o conteúdo (na parte inferior do navegador). Aqui, a ligação reencaminha efetivamente para  https://www.ovh.com/.|No nosso exemplo, ao passar o ponteiro do rato sobre a ligação, verá que esta não tem nada que ver com a OVHcloud. Não clique nela.|
 
 
 > [!primary]
 > 
-> Se for cliente das marcas Kimsufi ou So you Start, nunca terá de pagar nada à OVH. Portanto, ignore este tipo de e-mail.
+> Se for cliente das marcas Kimsufi ou So you Start, nunca terá de pagar nada à OVHcloud. Portanto, ignore este tipo de e-mail.
 > 
 
 #### Denunciar um e-mail de phishing
 
 
-Se, depois das verificações explicadas acima, tem a certeza de que recebeu efetivamente um e-mail de phishing a usurpar a identidade da OVH, faça-nos chegar o máximo de informações possível (pelo menos o conteúdo do e-mail) através do seguinte endereço: **<fraud@ovh.com>**.
+Se, depois das verificações explicadas acima, tem a certeza de que recebeu efetivamente um e-mail de phishing a usurpar a identidade da OVHcloud, faça-nos chegar o máximo de informações possível (pelo menos o conteúdo do e-mail) através do seguinte endereço: **<fraud@ovh.com>**.
 
 > [!primary]
 > 
@@ -63,7 +63,7 @@ A única coisa a fazer é contactar rapidamente o seu banco para cancelar o cart
 **Só o seu banco poderá anular as eventuais transações efetuadas de forma fraudulenta.**
 
 
-#### Usou a palavra-passe da OVH num site fraudulento
+#### Usou a palavra-passe da OVHcloud num site fraudulento
 
 Aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e altere imediatamente a palavra-passe. Aconselhamos vivamente a ativação do segundo método de autenticação para garantir a segurança da sua conta.
 
