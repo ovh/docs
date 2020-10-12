@@ -107,7 +107,7 @@ Dans les paramètres de votre machine virtuelle, vous pouvez utiliser un VLAN ou
 
 #### Linux
 
-Voici un exemple de configuration sur la distribution Debian 8 :
+Voici un exemple de configuration sur la distribution Debian :
 
 ![IP privée sur Linux](images/linux_private.PNG){.thumbnail}
 
