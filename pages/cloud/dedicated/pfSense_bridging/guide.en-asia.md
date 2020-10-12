@@ -96,7 +96,7 @@ After creating the virtual machine, you’ll need to make sure that a second net
 
 ### Creating the virtual machines: Virtual desktop 
 
-Since some of the settings on pfSense is accessible using its web GUI, the easy way would be to setup a virtual desktop. In this demonstration, we’re using an Ubuntu 20.04 ISO. When creating the virtual desktop, make sure the bridge interface being chosen is the secondary one and not the bridge interface to your public network.
+Since some of the settings on pfSense is accessible using its web GUI, the easy way would be to set up a virtual desktop. In this demonstration, we’re using an Ubuntu 20.04 ISO. When creating the virtual desktop, make sure the bridge interface being chosen is the secondary one and not the bridge interface to your public network.
 
 ![New vm 5](images/desktop-vm-1.png){.thumbnail}
 
