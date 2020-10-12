@@ -17,7 +17,7 @@ Bridged networking can be used to configure your pfSense virtual machine to be a
 
 ## Recommendations for your pfSense virtual machine
 
-* A Dedicated server with the AES instruction set [Link](https://en.wikipedia.org/wiki/AES_instruction_set)
+* A Dedicated server with the [AES instruction set](https://en.wikipedia.org/wiki/AES_instruction_set){.external}
 * 2 virtual cores for the virtual machine
 * 2GB(2048MB) of RAM for the virtual machine
 * Hypervisor with console access to virtual machines
