@@ -6,11 +6,11 @@ section: Fonctionnalités OVH
 order: 02
 ---
 
-**Dernière mise à jour le 03/08/2020**
+**Dernière mise à jour le 12/10/2020**
 
 ## Objectif
 
-Dans une infrastructure Private Cloud, vous disposez de base de 10 VxLAN (SDDC et Dedicated Cloud) fournis par NSX, et de 11 VLAN (SDDC) fournis avec le vRack.
+Dans une infrastructure Hosted Private Cloud, vous disposez de base de 10 VxLAN fournis par NSX, et de 11 VLAN fournis avec le vRack.
 
 **Ce guide montre la création de V(x)LAN supplémentaires**
 
@@ -20,22 +20,22 @@ Dans une infrastructure Private Cloud, vous disposez de base de 10 VxLAN (SDDC e
 
 ## En pratique
 
-Dans les offres Private Cloud, vous disposez d'un switch virtuel distribué (vDS) pour les **Dedicated Cloud** et de deux switchs virtuels distribués pour les **SDDC**. 
+Dans les offres Hosted Private Cloud, vous disposez de deux switchs virtuels distribués (vDS). 
 
 Ces *vDS* comportent plusieurs *portGroup* ayant chacun leur utilité.
 
 Le premier vDS commun aux deux offres dispose de deux types de *portGroup* : 
 
-- le VMnetwork permettant de communiquer vers Internet
-- Des VxLAN gérés par NSX, permettant d'isoler des communications privées à l'intérieur du Private Cloud.
+- Le VMnetwork permettant de communiquer vers Internet.
+- Des VxLAN gérés par NSX, permettant d'isoler des communications privées à l'intérieur du Hosted Private Cloud.
 
-Le second vDS, disponible uniquement sur SDDC dispose d'un seul type de *portGroup* : 
+Le second vDS dispose d'un seul type de *portGroup* : 
 
-- Des VLAN permettant d'isoler des communications privées à l'intérieur du Private Cloud et entre les différents services OVHcloud compatibles vRack (Serveur dédié, Public Cloud...). 
+- Des VLAN permettant d'isoler des communications privées à l'intérieur du Hosted Private Cloud et entre les différents services OVHcloud compatibles vRack (Serveur dédié, Public Cloud...). 
 
 ### VxLan - NSX 
 
-Dans les offres SDDC et Dedicated Cloud vous disposez d'un premier switch virtuel. 
+Dans les offres Hosted Private Cloud vous disposez d'un premier switch virtuel. 
 
 Sur ce switch, 10 VxLAN sont créés de base. En donnant le droit `NSX` dans [la gestion des utilisateurs de votre espace client](../manager-ovh-private-cloud/#utilisateurs), vous pourrez accéder à l'interface NSX et ansi créer des VxLAN supplémentaires.
 
@@ -55,7 +55,7 @@ Choisisez ensuite la zone de transport :
 
 > [!primary]
 >
-> La zone de transport contrôle quels hôtes un commutateur logique peut atteindre. Dans une infrastructure Private Cloud, OVHcloud crée une zone de transport par datacenter virtuels.
+> La zone de transport contrôle quels hôtes un commutateur logique peut atteindre. Dans une infrastructure Hosted Private Cloud, OVHcloud crée une zone de transport par datacenter virtuel.
 > Il est possible de créer une zone de transport commune aux différents datacenters virtuels, ou bien d'étendre celles existantes.
 >
 > La mode de plan de contrôle d'une zone de transport est en monodiffusion permettant la gestion de la communication entre les hôtes à l'aide des contrôleurs NSX.
@@ -81,7 +81,7 @@ Mais également dans la vue `Mise en réseau`
 
 ### VLAN - vRack
 
-Dans les offres SDDC, vous disposez d'un switch virtuel distribué (vDS) supplémentaire.
+Vous disposez également d'un switch virtuel distribué (vDS) supplémentaire.
 
 Sur ce switch, 11 VLANs sont créés de base (VLAN10 à VLAN20). En donnant le droit `administrateur` sur l'`Accès au V(x)LAN` dans [la gestion des utilisateurs de votre espace client](../manager-ovh-private-cloud/#utilisateurs){.external-link}, vous pourrez créer des VLAN supplémentaires.
 
@@ -95,7 +95,7 @@ La prochaine étape est de nommer votre **PortGroup** :
 
 ![nommer portgroup](images/09network2.png){.thumbnail}
 
-Puis configurer les paramètres recommandés par OVHcloud :
+Puis configurez les paramètres recommandés par OVHcloud :
 
 - **Port Binding** : Static (Réservation et assignation du port à une machine virtuelle)
 - **Port allocation** : Elastic (Permet d'élargir à chaud le nombre de port)
