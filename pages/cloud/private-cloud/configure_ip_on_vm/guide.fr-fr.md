@@ -45,7 +45,7 @@ Afin de configurer une IP publique sur votre machine virtuelle, vous devez au pr
 
 #### Linux
 
-Voici un exemple de configuration sur la distribution Debian 8 :
+Voici un exemple de configuration sur la distribution Debian :
 
 ![Interface IP](images/config_ip_interfaces.jpg){.thumbnail}
 
@@ -67,7 +67,7 @@ Si votre machine virtuelle ne trouve pas le réseau, pensez à vérifier que la 
 
 #### Windows
 
-Voici un exemple de configuration sur Windows 2012 R2.
+Voici un exemple de configuration sur Windows :
 
 Dans le `panneau de configuration`{.action} vous devrez aller dans `Réseau et Internet`{.action} puis `Centre réseau et partage`{.action} et enfin `Modifier l'adaptateur réseau`{.action}.
 
@@ -99,11 +99,11 @@ Dans le choix de votre interface, vous pouvez éditer les paramètres suivants :
 
 Dans les paramètres de votre machine virtuelle, vous pouvez utiliser un VLAN ou VxLAN :
 
-![VLAN pour SDDC](images/04vlanBis.png){.thumbnail}
+![VLAN](images/04vlanBis.png){.thumbnail}
 
-![VLAN pour SDDC](images/05vlan.png){.thumbnail}
+![VLAN](images/05vlan.png){.thumbnail}
 
-![VxLAN sur Private Cloud](images/06vxlan.png){.thumbnail}
+![VxLAN](images/06vxlan.png){.thumbnail}
 
 #### Linux
 
