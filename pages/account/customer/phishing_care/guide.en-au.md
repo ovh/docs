@@ -1,75 +1,89 @@
 ---
-title: Beware of scams - recognize fraudulent email and phishing
+title: 'Beware of scams – recognising fraudulent email and phishing'
 slug: scams-fraud-phishing
-excerpt: Watch out for phishing&#58; attackers sending fake OVH emails for fraudulent purposes. Here's how to recognize a fake email.
+excerpt: 'How do you recognise a phishing email, and what should you do if you click on a fraudulent link?'
 section: Security
 ---
 
+**Last updated 12th October 2020**
+
+## Objective
+
+Phishing is the act of sending an email asking you to click on a link that redirects you to a form. This form fraudulently imitates a known brand’s design, and asks you to enter your personal information.
+
+**This guide will show you how to recognise a phishing email, and what to do if you click on a fraudulent link.**
 
 
-> [!warning]
->
-> August 2017: fake OVH invoice emails are circulating (in general for an amount of €5), with a fraudulent link designed to steal your credit card number, be extra vigilant!
+## Requirements
+
+- no specific requirements
+
+
+## Instructions
+
+### Receiving phishing emails that claim to be from OVHcloud
+
+#### Identifying a phishing email
+
+If you have received an email claiming to be from OVHcloud and you are unsure whether it genuinely originated from us, you should look for any signs that it is a phishing attempt. Here are a few visual details that will help you tell an OVHcloud email apart from a phishing attempt.
+
+![Telling the difference between an OVHcloud email and a phishing email](images/phishing_email.png){.thumbnail}
+
+> [!alert]
+> 
+> Remember to make sure that the following three conditions are met:
 > 
 
-
-## Simple actions to protect yourself
-
-### Add two factor authentication access to your OVH Control Panel
-Connect to [https://www.ovh.com/manager/](https://www.ovh.com/manager/){.external} then under your account’s ‘Security’ parameters, click on ‘Activate Two Factor Authentication’.
-
-Two factor authentication (also known as ‘strong authentication’) makes unauthorized access of your OVH Control Panel much more difficult, even if your username and password have been compromised.
+|Number/description|OVHcloud email|Phishing email|
+|---|---|---|
+|1. Sender|Check that the address used to send the email ends in “@ovhcloud.com”, “@ovh.com”, “@soyoustart.com” or “@kimsufi.com”.|Most of the time, the email will be marked as spam between brackets, and your NIC handle will not be shown OR will be incorrect.|
+|2. Subject|Check that your NIC handle **(beginning with the first letter of the surname and the first letter of your first name you have registered with OVHcloud)** and/or the email address associated with your account appear in the message’s subject line.|Most of the time, the email will be marked as spam between brackets, and your NIC handle will not be shown OR will be incorrect.|
+|3. Link|Move your mouse over the link, and you will be able to see its contents at the bottom of your browser, without having to click on it. Here, the link does indeed point to https://www.ovh.com/.| In our example, you can can see when you move your mouse over the link that it has nothing to do with OVHcloud. Do not click it.|
 
 
-### Verify the senders address
-If the address does not end with ‘@ovh.com’, it is probably a fraudulent e-mail.
+> [!primary]
+> 
+> If you are a Kimsufi or So you Start customer, you will never have to pay anything to OVHcloud. You can therefore ignore this type of email.
+> 
 
-However, it is easy to change the sender’s e-mail address. This information alone is not sufficient to verify the origin of an e-mail.
-
-
-### Verify directly in your OVH Control Panel
-Connect via [https://www.ovh.com/manager/](https://www.ovh.com/manager/){.external}. In addition to OVH sending an e-mail, a specific message will be displayed if an urgent action is required, such as needing to make payment of an invoice.
+#### Reporting a phishing email
 
 
-### Do not open any attachments
-An authentic email from OVH will never include attachments or software; these can contain viruses or spyware.
+If you have carried out the checks set out above and are sure you have received a phishing email spoofing the identity of OVHcloud, please send us as much information as you can (the contents of the email, at the minimum) to the following address: **<fraud@ovh.com>**.
+
+> [!primary]
+> 
+> Please note that the information you provide to us may be shared with third parties to enable us to combat these threats.
+> 
+
+### I entered my personal details – what do I do now?
+
+#### If you entered your credit card number on a fraudulent site
+
+The only thing you can do is contact your bank as soon as possible, to have your card blocked. Tell them the date and (if possible) the time at which you entered your credit card number.
+
+**Only your bank can cancel fraudulent transactions that may have been made without your knowledge.**
 
 
-### Read the text carefully
-If you observe random translations with incorrect terms or obvious spelling mistakes, this is probably a fraudulent email.
+#### If you entered your OVHcloud password on a fraudulent site
+
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), and change your password. We strongly advise you to activate two-factor authentication, to permanently secure your account.
+
+> [!primary]
+>
+> To ensure that your data is secure, your password must meet the criteria listed below:
+>
+> - It must contain at least 12 characters.
+> - It must contain at least three character types.
+> - It must not contain a dictionary word.
+> - It must not contain any personal information (e.g. your first name, surname or date of birth).
+> - It must not be used as a password by any other user accounts.
+> - It must be stored in a password manager.
+> - It must be changed every three months.
+> - It must not be identical to any previously used passwords.
+>
 
 
-### Remain calm
-Fraudulent e-mails have a sense of urgency. They are designed to push you to act in haste and forget basic security rules.
+## Go further
 
-
-### Verify links
-Links appear correct, but may mislead you. Move your mouse over the link or button in the email to view the address (URL). If the link seems suspicious, do not click on it.
-
-The following websites are official OVH websites:
-
-- ovh.com, ovh.com.au, ovh.co.uk, ovh.cz, ovh.de, ovh.es, ovh-hosting.fi, ovh.ie
-- ovh.it, ovh.lt, ovh.nl, ovh.pl, ovh.pt, ovh.sn, ovh.us
-- soyoustart.com
-- kimsufi.com
-- runabove.com
-- hubic.com
-- ovhtelecom.fr
-
-
-### Report a phishing page
-Help us eradicate phishing sites from the web.
-
-If you think you have discovered a page that pretends to be another for the purpose of obtaining your personal information, you can report it at [https://phishing-initiative.fr/](https://phishing-initiative.fr/){.external}, [https://safebrowsing.google.com/safebrowsing/report_phish/](https://safebrowsing.google.com/safebrowsing/report_phish/){.external} or [http://toolbar.netcraft.com/report_url](http://toolbar.netcraft.com/report_url){.external}.
-
-
-## If you have been a victim of phishing
-
-### If you entered your credit card number on a fraudulent site
-Contact your bank as soon as possible, in order to have  your credit card blocked and indicate the date and if possible the time at which you entered your credit card number. Only your bank can cancel fraudulent transactions that may have been made without your knowledge.
-
-
-### If you entered your OVH password on a fraudulent site
-Log into your OVH Control Panel and change your password immediately.
-
-We strongly advise you to activate two factor authentication factor to secure your account permanently. To activate two factor authentication, refer to the first part of this guide.
+Join our community of users on <https://community.ovh.com/en/>.
