@@ -1,90 +1,118 @@
 ---
-title: 'Deploying an OVF Windows and SQL Server template'
-slug: deploy-ovh-template
-excerpt: 'Find out how to deploy a Windows and SQL Server template'
-section: 'OVH services and options'
+title: Deploy an OVF Linux, Windows Server and Windows SQL Server template
+slug: applying-ovh-template
+excerpt: Find out how to deploy a Linux, Windows Server or Windows SQL Server template
+section: Managing virtual machines
+order: 02
 ---
 
-**Last updated 11th June 2018**
+**Last updated 12th October 2020**
 
 ## Objective
 
-OVH offers Windows and SQL Server templates (in OVF format) that you can deploy directly from your vSphere Thick Client (version 5.5 and 6.0) or from the Web Client (Flash and HTML 5 on version 6.5).
+OVHcloud offers Linux, Windows Server and Windows SQL server templates (in OVF format) that you can deploy directly from your web client (HTML 5).
+
+Windows VMs deployed from a template automatically use the SPLA licences provided by OVHcloud. Deploying a Windows VM will therefore automatically trigger additional billing.
 
 **This guide will show you where you can find the source files, and how to deploy them.**
 
 > [!primary]
 > 
-> To view the prices for images offered by OVH, please go to our [Images & Licences](https://www.ovh.co.uk/private-cloud/options/images-licences.xml){.external} page.
+> You can find the prices of the images offered by OVHcloud on this [page](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/images-licenses/).
 >
 
 ## Requirements
 
-- access to the Web Client or the Thick Client, depending on the version you use
-- [active Windows licences](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/#windows-licence){.external} (activate via the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, in the `Windows licence`{.action} tab for the datacentre)
-
+- Web client access (HTML5)
+- [active Windows licences](../control-panel-ovh-private-cloud/#windows-licence){.external} (activate via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, in the `Windows licence`{.action} tab for the datacentre)
 
 ## Instructions
 
 ### Find the URL of the OVF template
 
-In your web browser, go to the Private Cloud page on the OVH website, and click on `OVH Templates`{.action}.
+In your web browser, go to your Private Cloud homepage, and click on `OVH Templates`{.action}.
 
 ![Name of photo](images/gatewayssl.png){.thumbnail}
 
-In the `OVH Templates` page that pops up, you can view the details of the Windows and SQL templates available. 
+In the `OVH Templates` screen that opens, you will see the details of the Linux, Windows and SQL templates available. 
 
-Select the template you need. A window will open containing links that you can use to deploy the template, depending on which version of vSphere you use.
+Select the template you want. A window will open and offer you the links that you will use to deploy the template, depending on your vSphere version.
 
 ![Name of photo](images/copylink.png){.thumbnail}
 
 
 ### Deploy the OVF template
 
-Once you have logged in to your vSphere Web Client, go to the `Hosts and clusters`{.action} page, right-click on your datacentre and click `Deploy OVF template...`{.action}:
+Once you have logged into your vSphere Web Client, go to the `Hosts and clusters`{.action} page, right-click on your datacentre and click `Deploy OVF template...`{.action}:
 
-![Name of photo](images/selectdeploy.png){.thumbnail}
+![Name of photo](images/01selectdeploy.png){.thumbnail}
 
 The context menu will open, and you can start configuring how the template is deployed. The first step is to add the OVH template URL:
 
-
-![Name of photo](images/puturl.png){.thumbnail}
+![Name of photo](images/02puturl.png){.thumbnail}
 
 In the next step, you can choose the datacentre:
 
-![Name of photo](images/selectdatacenter.png){.thumbnail}
+![Name of photo](images/03selectdatacenter.png){.thumbnail}
 
 Now you can choose the cluster in which the virtual machine will be deployed:
 
-![Name of photo](images/selectcluster.png){.thumbnail}
+![Name of photo](images/04selectcluster.png){.thumbnail}
 
 This page lists all of the template’s details, including its default password. For security reasons, it is important that you change your password as soon as you log in for the first time:
 
-![Name of photo](images/detailstemplate.png){.thumbnail}
+![Name of photo](images/05detailstemplate.png){.thumbnail}
 
 Select the datastore in which the virtual machine will be located, and the format of the disk:
 
-![Name of photo](images/selectdatastore.png){.thumbnail}
+![Name of photo](images/06selectdatastore.png){.thumbnail}
 
-You now need to select the network that will be used: 
+You now need to select the network that will be used. 
 
-![Name of photo](images/selectnetwork.png){.thumbnail}
+![Name of photo](images/07selectnetwork.png){.thumbnail}
 
 The configuration process is nearly complete, and you will see a summary of the configuration requested:
 
-![Name of photo](images/resume.png){.thumbnail}
+![Name of photo](images/08resume.png){.thumbnail}
 
-When you click on `Finish`{.action}, a task is created, and you can use it to track the progress of the deployment:
+When you click on `Finish`{.action}, a task is created, and you can use it to track the progress of the deployment.
 
-![Name of photo](images/startdeploy.png){.thumbnail}
+![Name of photo](images/09startdeploy.png){.thumbnail}
 
 Once the deployment is complete, you can close this window.
 
-You will now find the new virtual machine in your inventory:
+You will now find the new virtual machine in your inventory.
 
-![Name of photo](images/inventory.png){.thumbnail}
+![Name of photo](images/10inventory.png){.thumbnail}
+
+### Finalising Setup for SQL Server
+
+Start your newly deployed virtual machine and open the console.
+
+Log in to Windows and enter your SQL instance name, password and character set in the window provided.
+
+![Name of photo](images/sqlinformations.png){.thumbnail}
+
+
+> [!primary]
+> 
+> We recommend setting a password that meets these criteria:
+> 
+> * Must contain at least eight characters.
+> * Must contain at least three types of characters (uppercase, lowercase, numbers, special characters).
+> * Not to be taken from the dictionary.
+> * Do not include personal information (e.g. your first name, surname or date of birth).
+>
+
+Once you have entered this information, click `Ok`{.action}.
+
+A window will open showing the deployment. At the end of the installation, a final window will open, informing you that the deployment has been successful.
+
+Click `OK`{.action} again to complete the installation and restart your virtual machine.
+
+Following this reboot, you can start using your virtual machine.
 
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com>.
