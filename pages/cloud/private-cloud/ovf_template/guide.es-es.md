@@ -5,6 +5,10 @@ excerpt: 'Cómo desplegar una plantilla OVF Windows y SQL Server'
 section: 'Servicios y opciones de OVH'
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
+
 **Última actualización: 12/10/2020**
 
 OVHcloud ofrece plantillas Linux, Windows Server y Windows SQL Server (en formato OVF) que puede desplegar directamente desde su cliente Web (HTML 5).
