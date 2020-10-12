@@ -1,6 +1,6 @@
 ---
 title: Deployment eines Linux OVF Template, Windows Server und Windows SQL Server
-slug: ovh-deplato
+slug: ovhcloud-template-deployment
 excerpt: Hier erfahren Sie, wie Sie ein Linux, Windows Server oder Windows SQL Server Template deployen.
 section: Verwaltung virtueller Maschinen
 order: 02
