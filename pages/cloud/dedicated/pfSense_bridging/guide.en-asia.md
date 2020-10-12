@@ -96,7 +96,7 @@ After creating the virtual machine, you’ll need to make sure that a second net
 
 ### Creating the virtual machines: Virtual desktop 
 
-Since some of the settings on pfSense is accessible using it’s web GUI, the easy way would be to setup a virtual desktop. In this demonstration, we’re using an Ubuntu 20.04 ISO. When creating the virtual desktop, make sure the bridge interface being chosen is the secondary one and not the bridge interface to your public network.
+Since some of the settings on pfSense is accessible using its web GUI, the easy way would be to setup a virtual desktop. In this demonstration, we’re using an Ubuntu 20.04 ISO. When creating the virtual desktop, make sure the bridge interface being chosen is the secondary one and not the bridge interface to your public network.
 
 ![New vm 5](images/desktop-vm-1.png){.thumbnail}
 
@@ -114,13 +114,13 @@ After the OS installation is completed, first thing pfSense will ask is setting 
 
 ![pfSense setup 2](images/pfsense-vm-6.png){.thumbnail}
 
-Next step is choosing which interface will be your `WAN` and which will be you `LAN`. We’ll be able to see which should be the `WAN` by seeing that it has the `virtual MAC address` that was created in the OVHCloud control panel.
+Next step is choosing which interface will be your `WAN` and which will be your `LAN`. We’ll be able to see which should be the `WAN` by seeing that it has the `virtual MAC address` that was created in the OVHCloud control panel.
 
 ![pfSense setup 3](images/pfsense-vm-7.png){.thumbnail}
 
 ![pfSense setup 4](images/pfsense-vm-8.png){.thumbnail}
 
-This example we chose `vtnet0` as our `WAN` and `vtnet1` as our `LAN`. After this step, pfSense will ask if you’d like to proceed and confirm which interface is `WAN` and `LAN.` After confirming, it’ll automatically configure `192.168.1.1` on it’s `LAN` interface.
+This example we chose `vtnet0` as our `WAN` and `vtnet1` as our `LAN`. After this step, pfSense will ask if you’d like to proceed and confirm which interface is `WAN` and `LAN.` After confirming, it’ll automatically configure `192.168.1.1` on its `LAN` interface.
 
 ### The pfSense web GUI
 
