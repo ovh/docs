@@ -127,7 +127,7 @@ Vous pouvez également vérifier la configuration avec un `ifconfig`.
 
 #### Windows
 
-Voici un exemple de configuration sur Windows 2012 R2 :
+Voici un exemple de configuration sur Windows :
 
 Dans le `panneau de configuration`{.action}, allez dans `Réseau et Internet`{.action} puis `Centre réseau et partage`{.action} et enfin `Modifier l'adaptateur réseau`{.action}.
 
