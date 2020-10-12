@@ -5,7 +5,7 @@ excerpt: 'Cómo reconocer un email de phishing y qué hacer si ha hecho clic en 
 section: Seguridad
 ---
 
-**Última actualización: 26/06/2020**
+**Última actualización: 12/10/2020**
 
 ## Objetivo
 
@@ -36,7 +36,7 @@ El **phishing** consiste en enviar mensajes de correo electrónico pidiendo a lo
 
 |Elemento|Email de OVHcloud|Email de phishing|
 |---|---|---|
-|Remitente|Compruebe que la dirección utilizada para enviar el mensaje de correo termina en **@ovh.com**, **@ovh.ca**, **@soyoustart.com** o **@kimsufi.com**.|El remitente del correo será una dirección que no proviene de OVH.|
+|Remitente|Compruebe que la dirección utilizada para enviar el mensaje de correo termina en **@ovhcloud.com**, **@ovh.com**, **@ovh.ca**, **@soyoustart.com** o **@kimsufi.com**.|El remitente del correo será una dirección que no proviene de OVH.|
 |Asunto|Si su ID de cliente (que empieza con dos letras que corresponden a las iniciales del primer apellido y del nombre, según figura en su cuenta de OVHcloud) o la dirección de correo electrónico asociada a su cuenta aparecen en el asunto del mensaje, verifique que son correctos.|Por lo general, el mensaje estará marcado como **spam**, indicándolo entre corchetes en el asunto, y no aparecerá su ID de cliente (o este será incorrecto).|
 |Enlace|Si sitúa el ratón sobre el enlace, podrá ver el destino en la parte inferior de su navegador sin tener que hacer clic en él. En la imagen, el enlace dirige efectivamente a <https://www.ovh.com/>.|En el email de phishing, al pasar el ratón sobre el enlace se observa que este no tiene ninguna relación con OVHcloud. **No haga clic en él**.|
 
