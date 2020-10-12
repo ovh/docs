@@ -115,4 +115,4 @@ Following this reboot, you can start using your virtual machine.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com>.
+Join our community of users on <https://community.ovh.com/en/>.
