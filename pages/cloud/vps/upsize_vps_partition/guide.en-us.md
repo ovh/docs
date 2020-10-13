@@ -224,6 +224,25 @@ Then use the first superblock backup to check and repair the filesystem:
 fsck -b 32768 /dev/sdb1
 ```
 
+## Windows
+
+### Go to File and Storage Services.
+
+You can find this in the Server Manager:
+
+![File and Storage Services](images/file-and-storage.png){.thumbnail}
+
+### Resizing the Volume
+
+Right click on the C: volume and select "Extend Volume..."
+
+You will then be prompted to choose your new volume size:
+
+![Set New Volume Size](images/extend.png){.thumbnail}
+
+Enter your desired size and hit "OK". Your volume will now be extended.
+
+
 ## Go further
 
 Join our community of users at <https://community.ovh.com> .
