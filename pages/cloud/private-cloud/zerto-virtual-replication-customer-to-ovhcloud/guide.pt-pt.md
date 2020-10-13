@@ -24,7 +24,7 @@ Para facilitar as explicações, vamos descrever a configuração mais simples d
 
 ### Apresentação da arquitetura da solução
 
-![Zerto VPN](images/image-EN-1.png)
+![Zerto VPN](images/image-EN-1.png){.thumbnail}
 
 **Definição dos parâmetros da arquitetura:**
 
@@ -52,33 +52,33 @@ Do lado da OVHcloud:
 
 A ativação realiza-se de forma muito simples a partir da Área de Cliente OVHcloud. Comece por selecionar o datacenter associado à Private Cloud e clique no separador `Plano de Recuperação de Desastres (DRP)`{.action}.
 
-![Zerto VPN](images/image-EN-2-nucp.png)
+![Zerto VPN](images/image-EN-2-nucp.png){.thumbnail}
 
 Escolha a opção `Entre a sua infraestrutura e uma Private Cloud OVH`{.action} e, a seguir, clique em `Ativar Zerto DRP`{.action}.
 
-![Zerto VPN](images/image-EN-3.png)
+![Zerto VPN](images/image-EN-3.png){.thumbnail}
 
 Selecione um endereço público disponível no intervalo sugerido.
 
-![Zerto VPN](images/image-EN-4.png)
+![Zerto VPN](images/image-EN-4.png){.thumbnail}
 
 De seguida introduza a rede desejada para a implementação da ZVM.
 
-![zerto vpnzerto vpn](images/image-EN-5.png)
+![zerto vpnzerto vpn](images/image-EN-5.png){.thumbnail}
 
 Então, clique em `Instalar`{.action}.
 
-![Zerto VPN](images/image-EN-6.png)
+![Zerto VPN](images/image-EN-6.png){.thumbnail}
 
 ### 2.ª etapa: Ativar o serviço IPSec
 
 A partir da consola OPNSense, aceda ao menu `VPN`{.action} à esquerda. Na rubrica `IPSec`{.action}, selecione `Tunnel Setting`{.action}.
 
-![Zerto VPN](images/image-EN-7.png)
+![Zerto VPN](images/image-EN-7.png){.thumbnail}
 
 Assinale a opção `Enable IPSec`{.action}.
 
-![Zerto VPN](images/image-EN-8.png)
+![Zerto VPN](images/image-EN-8.png){.thumbnail}
 
 Guarde clicando em `Save`{.action}.
 
@@ -90,11 +90,11 @@ A configuração do túnel é feita segundo dois grupos de parâmetros, chamados
 
 No menu `VPN`{.action}, na rubrica `Tunnel Setting`{.action}, clique no sinal `+`{.action} à direita do ecrã.
 
-![Zerto VPN](images/image-EN-9.png)
+![Zerto VPN](images/image-EN-9.png){.thumbnail}
 
 ##### 3.1.1. Fase 1: introdução de informações gerais
 
-![](images/image-EN-10.png)
+![](images/image-EN-10.png){.thumbnail}
 
 Pode conservar os valores predefinidos:
 
@@ -109,11 +109,11 @@ No entanto, é indispensável que informe o IP do ponto de conexão IPSec da OVH
 
 Mais uma vez, pode conservar os parâmetros predefinidos. Deve apenas introduzir a palavra-passe partilhada no campo `Pre-Shared Key`{.action}.
 
-![Zerto VPN](images/image-EN-11.png)
+![Zerto VPN](images/image-EN-11.png){.thumbnail}
 
 ##### 3.1.3. Fase 1: escolha dos algoritmos de encriptação
 
-![Zerto VPN](images/image-EN-12.png)
+![Zerto VPN](images/image-EN-12.png){.thumbnail}
 
 Os valores suportados dos parâmetros são os seguintes:
 
@@ -126,31 +126,31 @@ Os parâmetros avançados podem conservar os valores predefinidos. Clique em `Sa
 
 A Fase 1 passa a estar disponível na interface.
 
-![Zerto VPN](images/image-EN-13.png)
+![Zerto VPN](images/image-EN-13.png){.thumbnail}
 
 #### 3.2. Adicionar a Fase 2
 
 Clique no botão `Exibir as entradas Fase 2`{.action}.
 
-![Zerto VPN](images/image-EN-14.png)
+![Zerto VPN](images/image-EN-14.png){.thumbnail}
 
 Como não se encontra nenhuma Fase 2 disponível, é necessário adicionar uma:
 
-![Zerto VPN](images/image-EN-15.png)
+![Zerto VPN](images/image-EN-15.png){.thumbnail}
 
 Clique no botão `+`{.action}.
 
-![Zerto VPN](images/image-EN-16.png)
+![Zerto VPN](images/image-EN-16.png){.thumbnail}
 
 ##### 3.2.1. Fase 2: Informações gerais
 
-![Zerto VPN](images/image-EN-17.png)
+![Zerto VPN](images/image-EN-17.png){.thumbnail}
 
 Verifique se o modo se encontra em «Túnel IPV4».
 
 ##### 3.2.2. Fase 2: Rede local
 
-![Zerto VPN](images/image-EN-18.png)
+![Zerto VPN](images/image-EN-18.png){.thumbnail}
 
 O tipo de rede local selecionado deve ser «Sub-rede local».
 
@@ -165,7 +165,7 @@ A rede deverá ser /23 (512 endereços IP).
 > Tenha cuidado: se cometer algum erro neste passo, a VPN não vai funcionar. 
 >
 
-![Zerto VPN](images/image-EN-19.png)
+![Zerto VPN](images/image-EN-19.png){.thumbnail}
 
 ##### 3.2.4. Fase 2: Trocas de chaves
 
@@ -176,28 +176,28 @@ Os parâmetros suportados são:
 - Algoritmos de função hash: SHA256
 - PFS: Off
 
-![Zerto VPN](images/image-EN-20.png)
+![Zerto VPN](images/image-EN-20.png){.thumbnail}
 
 Não é necessário alterar as opções avançadas. Clique em `Save`{.action} e, a seguir, em `Aplicar as alterações`{.action}.
 
 #### 3.3. Verificação do estado da VPN
 
-![Zerto VPN](images/image-EN-21.png)
+![Zerto VPN](images/image-EN-21.png){.thumbnail}
 
 Clique no triângulo laranja à direita para iniciar a conexão.
 
-![Zerto VPN](images/image-EN-22.png)
+![Zerto VPN](images/image-EN-22.png){.thumbnail}
 
 Se os parâmetros estiverem corretos, o túnel é estabelecido. Surgem então dois ícones novos:
 
 - Desativar o túnel
 - Obter informações sobre o estado do túnel
 
-![Zerto VPN](images/image-EN-23.png)
+![Zerto VPN](images/image-EN-23.png){.thumbnail}
 
 Clique no ícone de informações.
 
-![Zerto VPN](images/image-EN-24.png)
+![Zerto VPN](images/image-EN-24.png){.thumbnail}
 
 O túnel passa a estar operacional. Não se esqueça de adicionar, se necessário, uma rota na ZVM local para a rede da ZVM OVHcloud.
 
@@ -224,13 +224,13 @@ O emparelhamento da infraestrutura do cliente com a da OVHcloud requer a autoriz
 
 Aceda ao menu `Firewall`{.action}, secção `Rules`{.action}, e selecione `IPSec`{.action}.
 
-![Zerto VPN](images/image-EN-25.png)
+![Zerto VPN](images/image-EN-25.png){.thumbnail}
 
 Clique em `Add`{.action} para criar uma nova regra.
 
-![Zerto VPN](images/image-EN-26.png)
+![Zerto VPN](images/image-EN-26.png){.thumbnail}
 
-![Zerto VPN](images/image-EN-27.png)
+![Zerto VPN](images/image-EN-27.png){.thumbnail}
 
 Esta regra comporta os parâmetros seguintes:
 
@@ -240,7 +240,7 @@ Esta regra comporta os parâmetros seguintes:
 
 As secções Source e Destination são do tipo «Single host or Network» e fazem referência, respetivamente, aos endereços IP da ZVM OVHcloud para a ZVM do cliente.
 
-![Zerto VPN](images/image-EN-28.png)
+![Zerto VPN](images/image-EN-28.png){.thumbnail}
 
 A porta TCP de destino autorizada é a 9081.
 
@@ -262,27 +262,27 @@ Neste caso, vamos precisar de 3 alias:
 
 O IP das vRA do lado da OVHcloud pode ser consultado na interface vSphere da Private Cloud de destino:
 
-![Zerto VPN](images/image-EN-29.png)
+![Zerto VPN](images/image-EN-29.png){.thumbnail}
 
 Crie o alias OVH_VRA para os vRA do lado da OVHcloud:
 
-![Zerto VPN](images/image-EN-30.png)
+![Zerto VPN](images/image-EN-30.png){.thumbnail}
 
 Da mesma forma, é preciso criar um alias para as máquinas do lado do cliente:
 
-![Zerto VPN](images/image-EN-31.png)
+![Zerto VPN](images/image-EN-31.png){.thumbnail}
 
 Já só resta criar o alias para as portas:
 
-![Zerto VPN](images/image-EN-32.png)
+![Zerto VPN](images/image-EN-32.png){.thumbnail}
 
 Agora dispõe de todos os elementos para criar as regras de firewall a fim de autorizar o tráfego proveniente da OVHcloud em direção à plataforma do cliente. O procedimento é o mesmo; basta utilizar os alias na configuração:
 
-![Zerto VPN](images/image-EN-33.png)
+![Zerto VPN](images/image-EN-33.png){.thumbnail}
 
 Neste ponto, a conexão VPN está operacional e protegida.
 
-![Zerto VPN](images/image-EN-34.png)
+![Zerto VPN](images/image-EN-34.png){.thumbnail}
 
 ### 5.ª etapa: Emparelhamento das ZVM
 
@@ -290,21 +290,21 @@ Depois de a ZVM se encontrar instalada na infraestrutura do cliente, já pode ac
 
 Aparecerá a seguinte janela:
 
-![Zerto VPN](images/image-EN-35.png)
+![Zerto VPN](images/image-EN-35.png){.thumbnail}
 
 Escolha a opção `Pair to a site with a licence`{.action} e introduza o endereço IP da ZVM do lado da OVHcloud; de seguida, clique em `Start`{.action}.
 
 No painel de controlo, encontrará uma mensagem a indicar que o emparelhamento está em curso.
 
-![Zerto VPN](images/image-EN-36.png)
+![Zerto VPN](images/image-EN-36.png){.thumbnail}
 
 Se a operação for concluída com sucesso, receberá a seguinte mensagem:
 
-![Zerto VPN](images/image-EN-37.png)
+![Zerto VPN](images/image-EN-37.png){.thumbnail}
 
 Verifique se o nome da sua Private Cloud OVHcloud aparece no separador `Sites`{.action}.
 
-![Zerto VPN](images/image-EN-38.png)
+![Zerto VPN](images/image-EN-38.png){.thumbnail}
 
 Neste ponto, a solução Zerto encontra-se operacional, pelo que pode criar os seus grupos de proteção virtuais (VPG).
 
@@ -312,11 +312,11 @@ Neste ponto, a solução Zerto encontra-se operacional, pelo que pode criar os s
 
 Se for impossível estabelecer a comunicação entre as ZVM (nomeadamente em caso de omissão ao nível das regras da firewall), receberá a seguinte mensagem:
 
-![Zerto VPN](images/image-EN-39.png)
+![Zerto VPN](images/image-EN-39.png){.thumbnail}
 
 De seguida, será conduzido ao ecrã de conexão da ZVM através desta mensagem de erro:
 
-![Zerto VPN](images/image-EN-40.png)
+![Zerto VPN](images/image-EN-40.png){.thumbnail}
 
 A causa mais provável é que a ZVM OVHcloud não consegue comunicar com a ZVM cliente pela porta TCP 9081. É necessário que se estabeleça a conexão.
 
