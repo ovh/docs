@@ -24,7 +24,7 @@ Per facilitare la spiegazione, descriveremo il modo più semplice per stabilire 
 
 ### Presentazione dell’architettura della soluzione
 
-![zerto vpn](images/image-EN-1.png)
+![zerto vpn](images/image-EN-1.png){.thumbnail}
 
 **Definizione dei parametri dell’architettura:**
 
@@ -52,33 +52,33 @@ Lato OVHcloud:
 
 L’attivazione si effettua semplicemente dallo Spazio Cliente OVHcloud. Prima di tutto, seleziona il datacenter associato al PCC e poi clicca sulla scheda `Disaster Recovery Plan (DPR)`{.action}.
 
-![zerto vpn](images/image-EN-2-nucp.png)
+![zerto vpn](images/image-EN-2-nucp.png){.thumbnail}
 
 Seleziona l’opzione `Tra la tua infrastruttura e un Private Cloud OVH`{.action}, quindi clicca su `Attiva Zerto DRP`{.action}.
 
-![zerto vpn](images/image-EN-3.png)
+![zerto vpn](images/image-EN-3.png){.thumbnail}
 
 Seleziona un indirizzo pubblico disponibile nell’intervallo proposto.
 
-![zerto vpn](images/image-EN-4.png)
+![zerto vpn](images/image-EN-4.png){.thumbnail}
 
 Inserisci l’intervallo di rete per l’implementazione della ZVM.
 
-![zerto vpnzerto vpn](images/image-EN-5.png)
+![zerto vpnzerto vpn](images/image-EN-5.png){.thumbnail}
 
 Per proseguire, clicca su `Installa`{.action}.
 
-![zerto vpn](images/image-EN-6.png)
+![zerto vpn](images/image-EN-6.png){.thumbnail}
 
 ### Step 2: attiva il servizio IPSec
 
 Dalla console OPNSense, clicca sul menu `VPN`{.action} a sinistra, poi sulla sezione `IPSec`{.action}, quindi seleziona `Tunnel Setting`{.action}.
 
-![zerto vpn](images/image-EN-7.png)
+![zerto vpn](images/image-EN-7.png){.thumbnail}
 
 Seleziona la casella `Enable IPsec`{.action}.
 
-![zerto vpn](images/image-EN-8.png)
+![zerto vpn](images/image-EN-8.png){.thumbnail}
 
 Per salvare l’operazione, clicca su`Salva`{.action}.
 
@@ -90,11 +90,11 @@ Per configurare il tunnel è necessario completare due gruppi di configurazione 
 
 Nel menu `VPN`{.action}, sezione `Tunnel setting`{.action}, clicca sul simbolo `+`{.action} a destra dello schermo.
 
-![zerto vpn](images/image-EN-9.png)
+![zerto vpn](images/image-EN-9.png){.thumbnail}
 
 ##### 3.1\. Phase 1: aggiungi le informazioni generali 
 
-![](images/image-EN-10.png)
+![](images/image-EN-10.png){.thumbnail}
 
 È possibile mantenere i valori predefiniti:
 
@@ -109,11 +109,11 @@ Tuttavia è obbligatorio inserire l’IP del punto di connessione IPSec di OVHcl
 
 Anche qui, è possibile mantenere le impostazioni predefinite. Sarà necessario soltanto inserire la password condivisa nel campo `Pre-Shared Key`{.action}.
 
-![zerto vpn](images/image-EN-11.png)
+![zerto vpn](images/image-EN-11.png){.thumbnail}
 
 ##### 3.1.3 Phase 1: scegli gli algoritmi di cifratura
 
-![zerto vpn](images/image-EN-12.png)
+![zerto vpn](images/image-EN-12.png){.thumbnail}
 
 I valori supportati per ogni parametro sono i seguenti: 
 
@@ -126,31 +126,31 @@ Le impostazioni avanzate possono mantenere i valori predefiniti. Clicca su `Salv
 
 La Phase 1 è ora disponibile nell’interfaccia.
 
-![zerto vpn](images/image-EN-13.png)
+![zerto vpn](images/image-EN-13.png){.thumbnail}
 
 #### 3.2 Aggiungi un record Phase 2
 
 Clicca sul pulsante `visualizza i record Phase 2`{.action}. 
 
-![zerto vpn](images/image-EN-14.png)
+![zerto vpn](images/image-EN-14.png){.thumbnail}
 
 Non è disponibile alcuna fase 2, quindi è necessario aggiungerne una:
 
-![zerto vpn](images/image-EN-15.png)
+![zerto vpn](images/image-EN-15.png){.thumbnail}
 
 Clicca sul simbolo `+`{.action}.
 
-![zerto vpn](images/image-EN-16.png)
+![zerto vpn](images/image-EN-16.png){.thumbnail}
 
 ##### 3.2.1 Phase 2: Informazioni generali
 
-![zerto vpn](images/image-EN-17.png)
+![zerto vpn](images/image-EN-17.png){.thumbnail}
 
 Verifica che la modalità sia impostata su « Tunnel IPV4 ».
 
 ##### 3.2.2 Phase 2: Rete Locale
 
-![zerto vpn](images/image-EN-18.png)
+![zerto vpn](images/image-EN-18.png){.thumbnail}
 
 Il tipo di rete locale selezionato deve essere “Sotto rete Locale”
 
@@ -165,7 +165,7 @@ La rete sarà necessariamente in /23 (512 IPs).
 > Attenzione: se si si verifica un errore in questa fase, la VPN non sarà in grado di funzionare. 
 >
 
-![zerto vpn](images/image-EN-19.png)
+![zerto vpn](images/image-EN-19.png){.thumbnail}
 
 ##### 3.2.4 Phase 2 : Scambio di chiavi
 
@@ -176,28 +176,28 @@ Le impostazioni supportate sono
 - Algoritmo di hash: SHA256
 - PFS: Off
 
-![zerto vpn](images/image-EN-20.png)
+![zerto vpn](images/image-EN-20.png){.thumbnail}
 
 Non è necessario modificare le opzioni avanzate. Clicca su `Salva`{.action} e poi su `Applica le modifiche`{.action}.
 
 #### 3.3 Verifica lo stato della VPN:
 
-![zerto vpn](images/image-EN-21.png)
+![zerto vpn](images/image-EN-21.png){.thumbnail}
 
 Clicca sul triangolo arancione a destra per avviare la connessione.
 
-![zerto vpn](images/image-EN-22.png)
+![zerto vpn](images/image-EN-22.png){.thumbnail}
 
 Se le impostazioni sono corrette, il tunnel sarà stabilito. A questo punto, visualizzi due nuove icone:
 
 - Disattivare il tunnel
 - Ottenere informazioni sullo stato del tunnel
 
-![zerto vpn](images/image-EN-23.png)
+![zerto vpn](images/image-EN-23.png){.thumbnail}
 
 Clicca sull’icona delle informazioni.
 
-![zerto vpn](images/image-EN-24.png)
+![zerto vpn](images/image-EN-24.png){.thumbnail}
 
 Il tunnel è ora operativo. Ricordati, se necessario, di aggiungere una route sulla ZVM locale verso la rete della ZVM OVHcloud.
 
@@ -224,13 +224,13 @@ Per consentire il collegamento tra l’infrastruttura del cliente e quella di OV
 
 Clicca sul menu `Firewall`{.action}, sezione `Regole`{.action} e poi seleziona `IPSec`{.action}.
 
-![zerto vpn](images/image-EN-25.png)
+![zerto vpn](images/image-EN-25.png){.thumbnail}
 
 Clicca su `Aggiungi`{.action} per creare una nuova regola.
 
-![zerto vpn](images/image-EN-26.png)
+![zerto vpn](images/image-EN-26.png){.thumbnail}
 
-![zerto vpn](images/image-EN-27.png)
+![zerto vpn](images/image-EN-27.png){.thumbnail}
 
 Questa regola ha i seguenti parametri: 
 
@@ -240,7 +240,7 @@ Questa regola ha i seguenti parametri:
 
 Le sezioni Sorgente e Destinazione sono di tipo “Single host o Network” e fanno rispettivamente riferimento gli indirizzi IP da ZVM OVHcloud alla ZVM del cliente.
 
-![zerto vpn](images/image-EN-28.png)
+![zerto vpn](images/image-EN-28.png){.thumbnail}
 
 La porta TCP di destinazione autorizzata è la 9081.
 
@@ -262,27 +262,27 @@ Nel nostro caso, avremo bisogno di 3 alias:
 
 L’IP delle vRA lato OVHcloud visibile nell’interfaccia vSphere del Private Cloud di destinazione:
 
-![zerto vpn](images/image-EN-29.png)
+![zerto vpn](images/image-EN-29.png){.thumbnail}
 
 Crea l’alias OVH_VRA per le VRA lato OVHcloud:
 
-![zerto vpn](images/image-EN-30.png)
+![zerto vpn](images/image-EN-30.png){.thumbnail}
 
 Allo stesso modo, è necessario creare un alias per le macchine lato cliente:
 
-![zerto vpn](images/image-EN-31.png)
+![zerto vpn](images/image-EN-31.png){.thumbnail}
 
 Infine, non rimane che creare l’alias per le porte:
 
-![zerto vpn](images/image-EN-32.png)
+![zerto vpn](images/image-EN-32.png){.thumbnail}
 
 A questo punto disponi di tutti gli elementi per creare le tue regole firewall per autorizzare il traffico proveniente da OVHcloud verso la piattaforma del cliente. La procedura è la stessa, basta semplicemente utilizzare gli alias nelle impostazioni:
 
-![zerto vpn](images/image-EN-33.png)
+![zerto vpn](images/image-EN-33.png){.thumbnail}
 
 In questa fase, la connessione VPN funziona ed è sicura.
 
-![zerto vpn](images/image-EN-34.png)
+![zerto vpn](images/image-EN-34.png){.thumbnail}
 
 ### Step 5: collega le ZVM
 
@@ -290,21 +290,21 @@ Una volta installata la ZVM sulla piattaforma del cliente, puoi collegarti all�
 
 Visualizzi questo schermo:
 
-![zerto vpn](images/image-EN-35.png)
+![zerto vpn](images/image-EN-35.png){.thumbnail}
 
 Seleziona l’opzione `Pair to a site with a licence`{.action}e seleziona l’indirizzo IP della ZVM lato OVHcloud, quindi clicca su `Start`{.action}.
 
 Nella dashboard, un messaggio ti informa che il collegamento è in corso:
 
-![zerto vpn](images/image-EN-36.png)
+![zerto vpn](images/image-EN-36.png){.thumbnail}
 
 Se l’operazione è stata effettuata correttamente, visualizzi il seguente messaggio:
 
-![zerto vpn](images/image-EN-37.png)
+![zerto vpn](images/image-EN-37.png){.thumbnail}
 
 Verifica se il nome del tuo PCC OVHcloud è visibile nella scheda `Sites`{.action}.
 
-![zerto vpn](images/image-EN-38.png)
+![zerto vpn](images/image-EN-38.png){.thumbnail}
 
 In questa fase, la tua soluzione Zerto funziona correttamente ed è possibile creare gruppi di protezione virtuali (VPG).
 
@@ -312,11 +312,11 @@ In questa fase, la tua soluzione Zerto funziona correttamente ed è possibile cr
 
 Se non è possibile stabilire un dialogo tra le ZVM (in particolare in caso di omissione delle regole di firewall) visualizzi il seguente messaggio:
 
-![zerto vpn](images/image-EN-39.png)
+![zerto vpn](images/image-EN-39.png){.thumbnail}
 
 Dopodiché sarai reindirizzato alla pagina di login della ZVM con il seguente messaggio di errore:
 
-![zerto vpn](images/image-EN-40.png)
+![zerto vpn](images/image-EN-40.png){.thumbnail}
 
 La causa più probabile è che la ZVM OVHcloud non riesca a contattare la ZVM del cliente tramite la porta TCP 9081. La ZVM OVHcloud deve essere in grado di stabilire la connessione.
 
