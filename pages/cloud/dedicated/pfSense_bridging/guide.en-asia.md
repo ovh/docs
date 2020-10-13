@@ -5,6 +5,8 @@ excerpt: 'This guide will show you how to do IP bridging on a pfSense virtual ma
 section: 'Tutorial'
 ---
 
+**Last updated 12th October 2020**
+
 ## Objective
 
 Bridged networking can be used to configure your pfSense virtual machine to be a NAT firewall for other virtual machines on the same host or could even be used as an extra filter for a web server for example. Specific steps and configurations are needed to allow the pfSense router to work on our network and this guide will show you how a basic pfSense NAT configuration is done.
@@ -22,7 +24,9 @@ Bridged networking can be used to configure your pfSense virtual machine to be a
 * 2GB(2048MB) of RAM for the virtual machine
 * Hypervisor with console access to virtual machines
 
-## First steps
+## Instructions
+
+### First steps
 
 For the pfSense virtual machines network configuration, we will use the following values which should be replaced with your own values:
 
@@ -30,7 +34,7 @@ For the pfSense virtual machines network configuration, we will use the followin
 * Virtual MAC address = The MAC address created in the OVH control panel
 * GATEWAY_IP = The address of your default gateway
 
-### Assign a virtual MAC address
+#### Assigning a virtual MAC address
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click on the `Dedicated`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table.
 
@@ -44,7 +48,7 @@ Select `OVHcloud`{.action} from the `Type`{.action} dropdown box, type a name in
 
 ![Add a virtual MAC (2)](images/virtual_mac_03.png){.thumbnail}
 
-### Determine the gateway address
+#### Determining the gateway address
 
 To configure your virtual machines for internet access, you will need to know the gateway of your host machine (i.e. your Dedicated Server). The gateway address is made up of the first three octets of your server’s main IP address, with 254 as the last octet. For example, if your server’s main IP address is:
 
@@ -54,11 +58,11 @@ Your gateway address would therefore be:
 
 * 123.456.789.254
 
-## Configuring pfSense
+### Configuring pfSense
 
 When you’re setting up pfSense on our network, the usual place to start would be the console of pfSense. Because our network does require the public IP to be using a /32(255.255.255.255) subnet mask plus gateway is outside the scope of the public IP, the console will in fact not allow you to do this. To do this, you are going to have to start by settings up the LAN side first.
 
-### The hypervisor 
+#### The hypervisor 
 
 Since pfSense or most routers require two network interfaces to separate the public and private network, it’ll be necessary to have two bridge interfaces on your hypervisor. In this demonstration we’re using Proxmox VE 6.
 
@@ -70,7 +74,7 @@ In this example, we have two interfaces `enp1s0` and `enp2s0` but the interface 
 
 Note that if your server doesn’t have a second network interface, it’s not necessary to bridge it to an interface, the bridge will work fine but would only be able to route internally on the server only. Using an interface on a network bridge can allow you to route to other virtual machines, dedicated servers, Public Cloud instance and even Private cloud using vRack. 
 
-### Creating the virtual machines: pfSense
+#### Creating the virtual machines: pfSense
 
 Now we’re going to start creating the pfSense virtual machine, 
 
@@ -94,7 +98,7 @@ After creating the virtual machine, you’ll need to make sure that a second net
 
 ![New vm 4](images/pfsense-vm-4_2.png){.thumbnail}
 
-### Creating the virtual machines: Virtual desktop 
+#### Creating the virtual machines: Virtual desktop 
 
 Since some of the settings on pfSense is accessible using its web GUI, the easy way would be to set up a virtual desktop. In this demonstration, we’re using an Ubuntu 20.04 ISO. When creating the virtual desktop, make sure the bridge interface being chosen is the secondary one and not the bridge interface to your public network.
 
@@ -104,7 +108,7 @@ We’ll be starting the virtual desktop before starting up the pfSense virtual m
 
 ![New vm 6](images/desktop-vm-2.png){.thumbnail}
 
-### The pfSense console
+#### The pfSense console
 
 We’ll now be starting the pfSense virtual machine and proceeding with the OS installation.
 
@@ -122,7 +126,7 @@ Next step is choosing which interface will be your `WAN` and which will be your 
 
 This example we chose `vtnet0` as our `WAN` and `vtnet1` as our `LAN`. After this step, pfSense will ask if you’d like to proceed and confirm which interface is `WAN` and `LAN.` After confirming, it’ll automatically configure `192.168.1.1` on its `LAN` interface.
 
-### The pfSense web GUI
+#### The pfSense web GUI
 
 Now that there’s a private IP assigned to the `LAN` interface of our pfSense virtual machine, we’re going to go ahead and make a DHCP request so we can access the pfSense web GUI.
 
@@ -182,13 +186,13 @@ Now that we have an Upstream gateway, we’ll need to assign the gateway to the 
 
 Since we’re running pfSense as a virtual machine and it doesn’t have it’s own dedicated network card, some changes should be done. Click on the menu icon on the top right corner, under `System`{.action} select `Advanced`{.action}.
 
-![pfSense optimize 1](images/pfsense-trouble-1_1.png){.thumbnail}
+![pfSense optimize 1](images/pfsense-vm-trouble-1_1.png){.thumbnail}
 
 In this menu, select the `Networking`{.action} tab. At the bottom of this menu, make sure the settings are matching from what is shown in the bellow screenshots.
 
-![pfSense optimize 2](images/pfsense-trouble-1_2.png){.thumbnail}
+![pfSense optimize 2](images/pfsense-vm-trouble-1_2.png){.thumbnail}
 
-![pfSense optimize 3](images/pfsense-trouble-1_3.png){.thumbnail}
+![pfSense optimize 3](images/pfsense-vm-trouble-1_3.png){.thumbnail}
 
 Now we should be done! You should see that web browsing can be done just like a desktop behind a NAT firewall.
 
