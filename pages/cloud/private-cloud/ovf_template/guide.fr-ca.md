@@ -6,7 +6,7 @@ section: Gestion des machines virtuelles
 order: 02
 ---
 
-**Dernière mise à jour le 03/08/2020**
+**Dernière mise à jour le 12/10/2020**
 
 ## Objectif
 
@@ -18,13 +18,13 @@ Les VM Windows déployées à partir d'un template utilisent automatiquement les
 
 > [!primary]
 > 
-> Retrouvez sur cette [page](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/images-licenses/){.external} les tarifs des images proposées par OVHcloud.
+> Retrouvez sur cette [page](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/images-licenses/){.external} les tarifs des images proposées par OVHcloud.
 >
 
 ## Prérequis
 
 - Avoir accès au client Web (HTML5)
-- [Avoir activé les licences Windows](../manager-ovh-private-cloud/#licence-windows){.external} depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- [Avoir activé les licences Windows](../manager-ovh-private-cloud/#licence-windows){.external} depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 
 ## En pratique
