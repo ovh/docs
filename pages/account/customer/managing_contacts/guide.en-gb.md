@@ -103,6 +103,15 @@ If only one contact has confirmed the change, a message will appear confirming t
 
 Once both contacts have confirmed the request, the change will be successful within a few minutes. The two contacts will receive an email confirming that the request has been successfully processed.
 
+### Special case of a domain owner
+
+When you ordered an OVHcloud service, you defined an owner for it. If the domain owner has no access to the OVHcloud account(s) associated with the respective service, they can transfer domain ownership to a third party, or obtain domain administration, via the following procedures:
+
+[Change the owner of a service](https://www.ovh.com/cgi-bin/en/procedure/procedureChangeOwner.cgi)
+
+[Change your domain contacts](https://www.ovh.de/cgi-bin/en/procedure/procedureChangeContacts.cgi)
+
+Each procedure is carried out by email and an identity check will be required. Detailed instructions will be provided throughout each procedure.
 
 ## Go further
 
