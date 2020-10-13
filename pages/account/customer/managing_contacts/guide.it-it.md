@@ -105,6 +105,15 @@ Se la modifica viene confermata da uno solo dei contatti, verrà visualizzato un
 
 Non appena entrambi i contatti avranno confermato la richiesta, la modifica sarà effettiva. Entrambi i contatti riceveranno un'email per informarli che la richiesta è stata elaborata.
 
+### Caso specifico di un proprietario di dominio
+
+Al momento dell'ordine di un servizio OVHcloud, hai definito un proprietario per questo servizio. Se il proprietario non ha accesso all'account OVHcloud associati al servizio che desidera recuperare, ha la possibilità di trasferire la proprietà di un dominio a un terzo o di recuperare l'amministrazione del dominio, seguendo le seguenti procedure:
+
+[Modifica il proprietario di un servizio](https://www.ovh.com/cgi-bin/it/procedure/procedureChangeOwner.cgi)
+
+[Modificare il contatto amministratore, tecnico di fatturazione del tuo servizio](https://www.ovh.com/fr/cgi-bin/it/procedure/procedureChangeContacts.cgi)
+
+Il controllo di ogni procedura viene effettuato via email e sarà necessario verificare l'identità. Le istruzioni dettagliate ti verranno fornite durante ogni procedura.
 
 ## Per saperne di più
 
