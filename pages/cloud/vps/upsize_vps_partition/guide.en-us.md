@@ -4,7 +4,7 @@ slug: repartitioning-vps-after-upgrade
 section: Getting started
 ---
 
-**Last updated 2018/01/15**
+**Last updated 2020/10/13**
 
 ## Objective
 
@@ -18,13 +18,13 @@ When you upgrade your VPS, you might need to repartition your storage space. Her
 ## Requirements
 
 - You must have SSH access to the VPS (root access).
-- You need to reboot the server in [rescue mode](https://docs.ovh.com/en/vps/rescue/){.external}.
+- You need to reboot the server in [rescue mode](../rescue/).
 
 ## Instructions
 
 Following an upgrade, the RAM and processor (CPU) will automatically be adjusted. This won’t systematically be the case for the storage space.
 
-**This guide explains the steps you need to follow to increase your storage space**.
+**This guide explains the steps you need to follow to increase your storage space.**
 
 ### Back up your data
 
@@ -32,7 +32,7 @@ Attempting to extend a partition can lead to a loss of data. It is therefore **s
 
 ### Unmount the partition
 
-After logging in to your VPS in [rescue mode](https://docs.ovh.com/en/vps/rescue/){.external}, your partition will automatically be mounted. In order to resize it, you will need to unmount it. If you know the name of your partition, you can skip the following step. If you don’t know the name of your partition, use the following command:
+After logging in to your VPS in [rescue mode](../rescue/){.external}, your partition will automatically be mounted. In order to resize it, you will need to unmount it. If you know the name of your partition, you can skip the following step. If you don’t know the name of your partition, use the following command:
 
 ```sh
 lsblk
@@ -72,9 +72,10 @@ Pass 5: Checking group summary information
 
 If you see any errors, take note of them and resolve them as required. Below is a (non-exhaustive) list of the most common errors you might see:
 
-- `bad magic number in superblock`: Do not continue. Please read and follow our instructions on [How to fix a **bad magic number in superblock** error](https://docs.ovh.com/gb/en/vps/repartitioning-vps-after-upgrade/#how-to-fix-a-bad-magic-number-in-superblock-error).
+- `bad magic number in superblock`: Do not continue. Please read and follow our instructions on [How to fix a **bad magic number in superblock** error](../repartitioning-vps-after-upgrade/#how-to-fix-a-bad-magic-number-in-superblock-error).
 
 - `/dev/vdb1 has unsupported feature(s): metadata_csum` followed by `e2fsck: Get a newer version of e2fsck!`: Update e2fsck. If the latest version is not available via `apt` (or another manager package), you will need to compile it from the sources.
+
 
 ### Launch the fdisk application
 
@@ -245,4 +246,4 @@ Enter your desired size and hit "OK". Your volume will now be extended.
 
 ## Go further
 
-Join our community of users at <https://community.ovh.com> .
+Join our community of users at <https://community.ovh.com/en/> .
