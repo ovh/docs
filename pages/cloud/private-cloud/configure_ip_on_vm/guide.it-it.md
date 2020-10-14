@@ -1,5 +1,5 @@
 ---
-title: Configurare un IP su una macchina virtuale'
+title: Configurare un IP su una macchina virtuale
 slug: configurazione-ip-macchina-virtuale
 excerpt: Come configurare un IP su una macchina virtuale
 section: Gestione delle macchine virtuali
