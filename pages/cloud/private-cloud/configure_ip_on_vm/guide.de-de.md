@@ -10,9 +10,9 @@ order: 5
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Stand 12.10.2020**
+**Letzte Aktualisierung am 12.10.2020**
 
-## Einleitung
+## Ziel
 
 Nachdem Sie eine virtuelle Maschine (VM) in Ihrer Infrastruktur erstellt haben, können Sie dieser eine öffentliche oder private IP zuweisen.
 
@@ -23,7 +23,7 @@ Nachdem Sie eine virtuelle Maschine (VM) in Ihrer Infrastruktur erstellt haben, 
 - Sie haben eine virtuelle Maschine erstellt.
 - Sie verfügen über einen IP-Block.
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Informationen abrufen
 
@@ -36,14 +36,14 @@ In jedem von OVHcloud ausgelieferten Block sind 5 IP-Adressen für die Netzwerkk
 Ein Private Cloud IP Block wird wie folgt organisiert:
 
 - Die erste als reserviert markierte IP-Adresse (`Reserved`) entspricht der Netzwerkadresse.
-- die folgenden IPs sind für Ihre virtuellen Maschinen nutzbar: Sie sind als verfügbar (`Available`) anzugeben, wenn keine VMs sie betreiben, oder als Verwendung (`Used`), wenn dies nicht der Fall ist;
-- Die letzten vier IP-Adressen des Blocks sind reserviert, zwei sind OVHcloud-Routern für den Betrieb des Blocks vorbehalten, und die anderen zwei sind für Gateway und Broadcast verwendet.
+- Die folgenden IPs sind für Ihre virtuellen Maschinen nutzbar: Sie sind als verfügbar (`Available`) anzugeben, wenn keine VMs sie betreiben, oder als verwendet (`Used`), wenn dies nicht der Fall ist.
+- Die letzten vier IP-Adressen des Blocks sind reserviert, zwei sind OVHcloud-Routern für den Betrieb des Blocks vorbehalten, und die anderen zwei werden für Gateway und Broadcast verwendet.
 
 ![Erweiterte Konfiguration im OVH Network](images/02config_ip_ovh_network_advanced.png){.thumbnail}
 
 ### Eine öffentliche IP konfigurieren
 
-Um eine öffentliche IP auf Ihrer virtuellen Maschine zu konfigurieren müssen Sie zunächst das `VMNetwork`{.action}-Interface in den Einstellungen der Netzwerkkarte Ihres VM ausgewählt haben:
+Um eine öffentliche IP auf Ihrer virtuellen Maschine zu konfigurieren müssen Sie zunächst das `VMNetwork`{.action}-Interface in den Einstellungen der Netzwerkkarte Ihrer VM ausgewählt haben:
 
 ![VMNetwork](images/03vmnetwork.png){.thumbnail}
 
@@ -63,9 +63,9 @@ gateway 46.105.220.xxx
 dns-nameservers 213.186.33.99
 ```
 
-Montieren Sie die Karte mithilfe eines `ifup` Interfaces.
+Mounten Sie den Netzwerk-Adapter mithilfe eines `ifup` Interfaces.
 
-Sie können die Konfiguration auch mit einem ifconfig `überprüfen`.
+Sie können die Konfiguration auch mit einem `ifconfig` überprüfen.
 
 Wenn Ihre virtuelle Maschine das Netzwerk nicht findet, überprüfen Sie bitte, ob die Netzwerkkarte auf *VMNetwork* und nicht auf *LocalPortGroup* oder VLANs konfiguriert ist und das Verbindungsfeld der Karte angekreuzt ist.
 
@@ -73,15 +73,15 @@ Wenn Ihre virtuelle Maschine das Netzwerk nicht findet, überprüfen Sie bitte, 
 
 Hier ein Beispiel für die Windows-Konfiguration:
 
-Gehen Sie `im Konfigurationspanel`{.action} in das Netzwerk `und Internet`{.action}, dann `Netzwerk-Center und Freigabe`{.action} und `bearbeiten Sie den Netzwerk-Adapter`{.action}.
+Gehen Sie in der `Systemsteuerung`{.action} zu `Netzwerk und Internet`{.action}, dann `Netzwerk-Center und Freigabe`{.action} und dann `Netzwerk-Adapter ändern`{.action}.
 
-Um schneller zu sein, klicken Sie auf das Suchfeld Windows und schreiben Sie `Run` (entsprechend dem gleichzeitigen Drücken der Windows*-Taste Ihrer Tastatur und der *R* *-Taste). Die Windows-Ausführungskonsole wird geöffnet und Sie können folgenden Befehl eingeben:
+Um schneller zu sein, klicken Sie auf das Suchfeld inWindows und schreiben Sie `Run`. Die Windows-Ausführungskonsole wird geöffnet und Sie können folgenden Befehl eingeben:
 
 ```shell
 ncpa.cpl
 ```
 
-Klicken Sie anschließend mit der rechten Maustaste auf die Netzwerkkarte für VMNetwork und `Eigenschaften{`.action. Wählen Sie `dann TCP/IPv`{.action}vProtokoll aus und klicken Sie erneut auf 'Properties' und geben Sie die Informationen für Ihre IP wie folgt ein:
+Klicken Sie anschließend mit der rechten Maustaste auf den entsprechenden VMNetwork-Adapter und dann auf `Eigenschaften`{.action}. Wählen Sie  `TCP/IPv4`{.action} aus und klicken Sie erneut auf `Eigenschaften`{.action} und geben Sie die Informationen für Ihre IP wie folgt ein:
 
 ![Windows-Konfiguration](images/config_ip_windows.jpg){.thumbnail}
 
@@ -98,8 +98,8 @@ Die Konfiguration einer privaten IP-Adresse entspricht der einer öffentlichen I
 
 In Ihrem Interface können Sie folgende Einstellungen ändern:
 
-- ein VLAN-Interface (standardmäßig 10 bis 20 mit vRack verbunden, Sie können mehr erstellen, indem Sie diese [Anleitung](../creation-vlan-vxlan/) lesen)
-- ein VxLAN-Interface innerhalb der Hosted Private Cloud.
+- ein VLAN-Interface (standardmäßig 10 bis 20 mit vRack verbunden - Sie können mehr erstellen, indem Sie dieser [Anleitung](../creation-vlan-vxlan/) folgen)
+- ein VxLAN-Interface innerhalb der Hosted Private Cloud
 
 In den Einstellungen Ihrer virtuellen Maschine können Sie ein VLAN oder VxLAN verwenden:
 
@@ -125,23 +125,23 @@ netmask 255.255.255.0
 gateway 192.168.70.254
 ```
 
-Montieren Sie die Karte mithilfe eines `ifup` Interfaces.
+Mounten Sie den Netzwerk-Adapter mithilfe eines `ifup` Interfaces.
 
-Sie können die Konfiguration auch mit einem ifconfig `überprüfen`.
+Sie können die Konfiguration auch mit einem `ifconfig` überprüfen.
 
 #### Windows
 
 Hier ein Beispiel für die Windows-Konfiguration:
 
-Gehen Sie `im Konfigurationspanel`{.action} auf Netzwerk und `Internet`{.action}, dann `Netzwerk-Center und gemeinsame`{.action} Nutzung und `schließlich Netzwerk-Adapter ändern`{.action}.
+Gehen Sie in der `Systemsteuerung`{.action} zu `Netzwerk und Internet`{.action}, dann `Netzwerk-Center und Freigabe`{.action} und dann `Netzwerk-Adapter ändern`{.action}.
 
-Um schneller zu sein, klicken Sie auf das Suchfeld Windows und schreiben Sie `Run` (entsprechend dem gleichzeitigen Drücken der Windows*-Taste Ihrer Tastatur und der *R* *-Taste). Die Windows-Ausführungskonsole wird geöffnet und Sie können folgenden Befehl eingeben:
+Um schneller zu sein, klicken Sie auf das Suchfeld in Windows und schreiben Sie `Run`. Die Windows-Ausführungskonsole wird geöffnet und Sie können folgenden Befehl eingeben:
 
 ```shell
 ncpa.cpl
 ```
 
-Klicken Sie anschließend mit der rechten Maustaste auf die Netzwerkkarte für VMNetwork und `Eigenschaften{`.action. Wählen Sie dann `das TCP/IP v`{.action}4 Protokoll aus und klicken Sie erneut auf 'Properties' und geben Sie die Informationen für Ihre IP wie folgt ein:
+Klicken Sie anschließend mit der rechten Maustaste auf den entsprechenden VMNetwork-Adapter und dann auf `Eigenschaften`{.action}. Wählen Sie  `TCP/IPv4`{.action} aus und klicken Sie erneut auf `Eigenschaften`{.action} und geben Sie die Informationen für Ihre IP wie folgt ein:
 
 ![Öffentliche Windows-IP-Konfiguration](images/windows_private.PNG){.thumbnail}
 
