@@ -2,7 +2,8 @@
 title: Gestire i crediti SMS e attivare la ricarica automatica
 slug: attivare-la-ricarica-automatica-del-credito-sms 
 excerpt: Come gestire i tuoi crediti SMS OVHcloud
-section: Gestisci la tua offerta 
+section: Gestisci la tua offerta
+hidden: true
 ---
 
 **Ultimo aggiornamento: 19/05/2020**
