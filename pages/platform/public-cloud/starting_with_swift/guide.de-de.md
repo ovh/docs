@@ -1,55 +1,51 @@
 ---
-title: Die ersten Schritte mit der Swift API
-excerpt: Die ersten Schritte mit der Swift API
+title: Erste Schritte mit der Swift API
+excerpt: Erfahren Sie hier, wie Sie die Swift API verwenden
 slug: die_ersten_schritte_mit_der_swift_api
 legacy_guide_number: g1916
 section: 'OpenStack'
 ---
 
+**Letzte Aktualisierung am 14.10.2020**
 
-## 
+## Ziel
+
 Um Ihre Operationen auf der Public Cloud zu automatisieren, können Sie die OpenStack APIs für die Erstellung verschiedener Skripte verwenden.
 
-Der Client Swift von OpenStack ermöglicht Ihnen dabei die Verwaltung Ihrer Container und Objekte.
+Der Client von OpenStack ermöglicht Ihnen dabei die Verwaltung Ihrer Container und Objekte. So können Sie beispielsweise Dateien zu Backup-Zwecken regelmäßig auf Ihre Container laden.
 
-So können Sie beispielsweise Dateien zu Backup-Zwecken regelmäßig auf Ihre Container laden.
-
-In dieser Anleitung lernen Sie mit den OpenStack APIs umzugehen, um Ihre Object Container künftig ganz leicht mit dem Python Swift Client zu verwalten.
-
+**In dieser Anleitung lernen Sie mit den OpenStack APIs umzugehen, um Ihre Object Container künftig ganz leicht mit dem *python-swiftclient* zu verwalten.**
 
 ## Voraussetzungen
 
-- [Vorbereitung der Umgebung für die Verwendung der OpenStack API]({legacy}1851) durch Installation des Python-Swiftclient
+- [Vorbereitung der Umgebung für die Verwendung der OpenStack API]({legacy}1851) durch Installation des *python-swiftclient*
 - [Laden der OpenStack Umgebungsvariablen]({legacy}1852)
 
 
+## In der praktischen Anwendung
 
+### Swift Dokumentation
 
-## Swift Dokumentation
 Alle existierenden Befehle können Sie der Dokumentation zum Client entnehmen:
-
 
 ```
 admin@serveur-1:~$ swift --help
 ```
 
+Hier die wichtigsten Befehle im Überblick:
 
-Hier die wichtigsten Befehle für Sie im Überblick:
+|Befehle|Beschreibung|
+|---|---|
+|**delete**|Container oder im Container enthaltene Objekte löschen.|
+|**download**|Dateien aus einem Container herunterladen.|
+|**list**|Container eines Accounts oder Objekte in einem Container auflisten.|
+|**post**|Metadaten des Accounts, Containers oder Objekts aktualisieren. Nötigenfalls einen Container erstellen.|
+|**stat**|Informationen zum Account, Container oder Objekt anzeigen.|
+|**upload**|Dateien oder Ordner auf den Container hochladen.|
+|**capabilities**|Einsatzmöglichkeiten der Swift Umgebung auflisten.|
+|**tempurl**|Temporäre URL erstellen.|
 
-|delete|Container oder im Container enthaltene Objekte löschen|
-|---|
-|delete|Container oder im Container enthaltene Objekte löschen|
-|download|Dateien aus einem Container herunterladen|
-|list|Container eines Accounts oder Objekte in einem Container auflisten|
-|post|Metadaten des Accounts, Containers oder Objekts aktualisieren. Nötigenfalls einen Container erstellen|
-|stat|Informationen zum Account, Container oder Objekt anzeigen|
-|upload|Dateien oder Ordner auf den Container hochladen|
-|capabilities|Einsatzmöglichkeiten der Swift Umgebung auflisten|
-|tempurl|Temporäre URL erstellen|
-
-
-Darüber hinaus können Sie auch die Hilfe zu einem speziellen Befehl aufrufen, indem Sie ab den Befehl "--help" anhängen:
-
+Darüber hinaus können Sie auch die Hilfe zu einem speziellen Befehl aufrufen, indem Sie "--help" anhängen:
 
 ```
 admin@serveur-1:~$ swift post --help
@@ -225,11 +221,9 @@ text2.txt
 text3.txt
 ```
 
+Damit werden auch alle im Container enthaltenen Dateien gelöscht.
 
 
-Hierduch werden auch alle im Container enthaltenen Dateien gelöscht.
+## Weiterführende Informationen
 
-
-## 
-... lesen Sie auch unsere anderen Hilfen zum Thema Cloud!
-
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
