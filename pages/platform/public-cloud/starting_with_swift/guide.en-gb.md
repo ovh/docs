@@ -13,9 +13,9 @@ order: 3
 
 You can use the OpenStack APIs to generate different scripts in order to automate your actions on the Public Cloud. 
 
-The OpenStack Swift client lets you interact with and manage your containers and objects. For example, you can upload files to your containers regularly in order to back them up. 
+The OpenStack *swiftclient* lets you interact with and manage your containers and objects. For example, you can upload files to your containers regularly in order to back them up. 
 
-**This guide will help you get started with the OpenStack APIs in order to manage your object containers using the Python-Swiftclient.**
+**This guide will help you get started with the OpenStack APIs in order to manage your object containers using the *python-swiftclient*.**
 
 
 ## Requirements
@@ -63,7 +63,7 @@ for multiple objects.
 [...]
 ```
 
-You can also find the Swift client documentation on the [OpenStack website](http://docs.openstack.org/cli-reference/content/swiftclient_commands.html)
+You can also find the Swift documentation on the [OpenStack website](http://docs.openstack.org/cli-reference/content/swiftclient_commands.html)
 
 ### Creating a public object container
 
