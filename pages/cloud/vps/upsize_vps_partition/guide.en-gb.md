@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 3
 ---
 
-**Last updated 5th December 2018**
+**Last updated 2020/10/13**
 
 ## Objective
 
@@ -14,35 +14,27 @@ When you upgrade your VPS, you might need to repartition your storage space. Her
 
 > [!warning]
 >
-> Repartitioning could permanently damage your data. OVH cannot be held responsible for any loss or damage to your data. Before doing anything, make sure you back up all of your data. 
+> Repartitioning could permanently damage your data. OVHcloud cannot be held responsible for any loss or damage to your data. Before doing anything, make sure you back up all of your data. 
 >
-
-**This guide explains the steps you need to follow to increase your storage space.**
 
 ## Requirements
 
-### Linux
-
-- SSH (root) access to the VPS
-- server rebooted in [rescue mode](https://docs.ovh.com/gb/en/vps/rescue/)
-
-### Windows
-
-- RDP (Administrator) access to the VPS 
+- You must have SSH access to the VPS (root access).
+- You need to reboot the server in [rescue mode](../rescue/).
 
 ## Instructions
 
-Following an upgrade, the RAM and processor (CPU) will be automatically adjusted. This won’t necessarily be the case for the storage space.
+Following an upgrade, the RAM and processor (CPU) will automatically be adjusted. This won’t systematically be the case for the storage space.
 
-### Back up your data.
+**This guide explains the steps you need to follow to increase your storage space.**
 
-Attempting to extend a partition can lead to data loss. As a result, we **strongly recommend** backing up the data on your VPS.
+### Back up your data
 
-## Linux
+Attempting to extend a partition can lead to a loss of data. It is therefore **strongly recommended** that you back up the data on your VPS.
 
-### Unmount the partition.
+### Unmount the partition
 
-After logging in to your VPS in [rescue mode](https://docs.ovh.com/gb/en/vps/rescue/), your partition will automatically be mounted. In order to resize it, you will need to unmount it. If you know the name of your partition, you can skip the following step. If you don’t know the name of your partition, use the following command:
+After logging in to your VPS in [rescue mode](../rescue/), your partition will automatically be mounted. In order to resize it, you will need to unmount it. If you know the name of your partition, you can skip the following step. If you don’t know the name of your partition, use the following command:
 
 ```sh
 lsblk
@@ -64,7 +56,7 @@ To unmount your partition, use the following command:
 umount /dev/sdb1
 ```
 
-### Check the filesystem.
+### Check the filesystem
 
 After unmounting the partition, you should check the filesystem (`filesystem check`) to see if there are errors in the partition. The command is as follows:
 
@@ -82,14 +74,14 @@ Pass 5: Checking group summary information
 
 If you see any errors, take note of them and resolve them as required. Below is a (non-exhaustive) list of the most common errors you might see:
 
-- `bad magic number in superblock`: Do not continue. Please read and follow our instructions on [How to fix a **bad magic number in superblock** error](https://docs.ovh.com/gb/en/vps/repartitioning-vps-after-upgrade/#how-to-fix-a-bad-magic-number-in-superblock-error).
+- `bad magic number in superblock`: Do not continue. Please read and follow our instructions on [How to fix a **bad magic number in superblock** error](../repartitioning-vps-after-upgrade/#how-to-fix-a-bad-magic-number-in-superblock-error).
 
 - `/dev/vdb1 has unsupported feature(s): metadata_csum` followed by `e2fsck: Get a newer version of e2fsck!`: Update e2fsck. If the latest version is not available via `apt` (or another manager package), you will need to compile it from the sources.
 
 
-### Launch the fdisk application.
+### Launch the fdisk application
 
-If the filesystem check is completed successfully, launch the `fdisk` application. In the settings, you need to enter the name of the disk and not the name of the partition. For example, if your partition is `sdb1` instead of `vdb1`, the disk name will be /dev/sdb.
+If the filesystem check is completed successfully, launch the `fdisk` application. In the settings, you need to enter the name of the disk and not the name of the partition. For instance, if your partition is `sdb1` instead of `vdb1`, the disk name will be /dev/sdb.
 
 ```sh
 fdisk -u /dev/sdb
@@ -100,9 +92,9 @@ fdisk -u /dev/sdb
 > This application has several sub-commands, which you can view with the command `m`.
 >
 
-### Delete the old partition.
+### Delete the old partition
 
-Before deleting the old partition, we recommend noting down the number corresponding to the first sector of the partition. You can find this information through the command `p`{.action}. The information is listed under the `Start` field. Save this for later.
+Before deleting the old partition, it is recommended that you write down the number corresponding to the first sector of the partition. You can find this information through the command `p`{.action}. The information is listed under the `Start` field. Save this data for later.
 
 ```sh
 Command (m for help): p
@@ -132,9 +124,9 @@ Selected partition 1
 
 The single partition will automatically be deleted.
 
-### Create a new partition.
+### Create a new partition
 
-You now need to create a new partition with the command `n`{.action}. We recommend using the default values.
+You now need to create a new partition with the command `n`{.action}. It is recommended that you use the default values.
 
 ```sh
 Command (m for help): n
@@ -144,12 +136,12 @@ e extended
 Select (default p): p
 Partition number (1-4, default 1): 1
 First sector (2048-41943039, default 2048): 2048
-Last sector, +sectors or +size{K,M,G} (2048-41943039, default 41943039): 41943039
+Last sector, +sectors or +size{K,M,G} (2048-41943039, default 41943039): 41943039.
 ```
 
 On the `First sector` line, check that the default value is the same as the one you have previously written down. If it is different, use the value you have written down.
 
-### Make the partition bootable.
+### Making the partition bootable
 
 You now need to ensure that the partition is bootable. You can do this using the command `a`{.action}.
 
@@ -170,7 +162,7 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-### Extend the filesystem on the partition.
+### Extending the filesystem on the partition
 
 The partition has been extended, but the filesystem still occupies the same space as before. To extend it, simply enter the following command:
 
@@ -182,7 +174,7 @@ Resizing the filesystem on /dev/sdb1 to 5242624 (4k) blocks.
 The filesystem on /dev/sdb1 is now 5242624 blocks long.
 ```
 
-### Check the results.
+### Check the results
 
 In order to check if the extension has been successful, you can mount the newly created partition and verify its size.
 
@@ -256,4 +248,4 @@ Enter your desired size and hit "OK". Your volume will now be extended.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users at <https://community.ovh.com/en/> .
