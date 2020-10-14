@@ -16,7 +16,7 @@ order: 02
 
 In einer Hosted Private Cloud Infrastruktur verfügen Sie über eine Basis von 10 von NSX gelieferten VxLANs und 11 mit dem vRack gelieferten VLANs.
 
-**Diese Anleitung zeigt die Erstellung zusätzlicher V(x)LANs**
+**Diese Anleitung erläutert die Erstellung zusätzlicher V(x)LANs.**
 
 ## Voraussetzungen
 
@@ -26,14 +26,14 @@ In einer Hosted Private Cloud Infrastruktur verfügen Sie über eine Basis von 1
 
 Bei den Hosted Private Cloud Angeboten verfügen Sie über zwei verteilte virtuelle Switches (vDS). 
 
-Diese *vDS* haben mehrere *portGroup*, die jeweils von Nutzen sind.
+Diese *vDS* haben mehrere *port groups*, die jeweils von Nutzen sind.
 
-Der erste gemeinsame vDS für beide Angebote verfügt über zwei Arten von *portGroup*: 
+Der erste gemeinsame vDS für beide Angebote verfügt über zwei Arten von *port groups*: 
 
 - VMnetwork für die Kommunikation ins Internet
 - von NSX verwaltete VxLANs zur Isolierung privater Kommunikation innerhalb der Hosted Private Cloud
 
-Der zweite vDS verfügt über eine einzige Art von *portGroup*: 
+Der zweite vDS verfügt über eine einzige Art von *port groupp*: 
 
 - VLANs zur Isolierung privater Kommunikation innerhalb der Hosted Private Cloud und zwischen den verschiedenen vRack kompatiblen OVHcloud Diensten (Dedicated Server, Public Cloud...) 
 
@@ -49,7 +49,7 @@ Klicken Sie auf den Button `+`{.action}, um mit der Erstellung zu beginnen:
 
 ![vxlan erstellen](images/01createVxLAN.png){.thumbnail}
 
-Geben Sie im ersten Schritt Ihrer *portGroup* eine Bezeichnung:
+Geben Sie im ersten Schritt Ihrer *port group* eine Bezeichnung:
 
 ![vxlan](images/02nameVxLAN.png){.thumbnail}
 
