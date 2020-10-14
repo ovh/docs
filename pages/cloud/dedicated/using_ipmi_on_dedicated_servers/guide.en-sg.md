@@ -5,7 +5,7 @@ excerpt: 'With the IPMI, you can log in to your server without having to use any
 section: 'Getting started'
 ---
 
-**Last updated 2018/08/28**
+**Last updated 2020/10/13**
 
 ## Objective
 
@@ -65,9 +65,9 @@ It will take several minutes for the IPMI to reboot.
 
 ### Installing an OS Utilizing IPMI v1.
 
-[!warning] OVH does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
+[!warning] OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
 >
-To begin, open IPMI in a Java applet as described in the section Accessing IPMI from the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager). Then, click **Device** from the menu bar and select **Redirect ISO** from the drop-down menu.
+To begin, open IPMI in a Java applet as described in the section Accessing IPMI from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager). Then, click **Device** from the menu bar and select **Redirect ISO** from the drop-down menu.
 >
 ![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
 >
@@ -85,9 +85,9 @@ Complete the steps required to install the operating system. Do not forget to re
 
 ### Installing an OS Utilizing IPMI v2
 
-[!warning] OVH does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
+[!warning] OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
 >
-To begin, open IPMI in a Java applet as described in the section Accessing IPMI from the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager). Then, click **Virtual Media** and select **Virtual Storage**.
+To begin, open IPMI in a Java applet as described in the section Accessing IPMI from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager). Then, click **Virtual Media** and select **Virtual Storage**.
 >
 ![Virtual_Storage](images/virtual_storage.png){.thumbnail}
 >
@@ -98,6 +98,7 @@ From the new screen, select **ISO File** from the **Logical Drive Type** drop-do
 In order to be able to boot from our ISO file, we need to access the BIOS and switch our boot options. To do so, select **Power Control** and click **Set Power Reset**.
 >
 ![Power_Reserver](images/power_reset.png){.thumbnail}
+
 > [!warning]
 >
 > Note: You may need to use the soft keyboard for inputs to register in IPMI. To access this, click the **Virtual Media** option from the menu bar at the top of the window. Then, select **Virtual Keyboard** from the drop-down menu.
@@ -115,7 +116,7 @@ Lastly, press the `F4` key to save your changes and restart the server.
 
 ## Conclusion
 
-IPMI is an important tool for an experienced server administrator. Whether you need to access the BIOS, install a custom OS, or just access your server directly from the OVH Manager, IPMI will allow you to accomplish your most important tasks.
+IPMI is an important tool for an experienced server administrator. Whether you need to access the BIOS, install a custom OS, or just access your server directly from the OVHcloud Control Panel, IPMI will allow you to accomplish your most important tasks.
 
 ## Go further
 
