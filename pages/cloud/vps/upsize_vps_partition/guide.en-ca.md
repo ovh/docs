@@ -246,4 +246,4 @@ Enter your desired size and hit "OK". Your volume will now be extended.
 
 ## Go further
 
-Join our community of users at <https://community.ovh.com> .
+Join our community of users at <https://community.ovh.com/en/> .
