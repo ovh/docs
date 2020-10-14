@@ -102,6 +102,15 @@ Se apenas um dos contactos confirmar a alteração, será mostrada uma mensagem 
 
 A alteração terá efeito logo após a confirmação dos utilizadores. No final, os utilizadores envolvidos no processo irão receber um e-mail para informar que o pedido foi concretizado.
 
+### Caso específico de um proprietário de domínio
+
+Aquando da encomenda de um serviço OVHcloud, definiu um proprietário para este. Se não tiver acesso às contas OVHcloud associadas ao serviço que pretende recuperar, o proprietário poderá ceder a propriedade de um domínio a um terceiro, ou recuperar a administração do domínio, através dos seguintes procedimentos:
+
+[Mudar o proprietário de um serviço](https://www.ovh.com/cgi-bin/pt/procedure/procedureChangeOwner.cgi)
+
+[Modificar os contactos administrativo, facturação e técnico do seu domínio](https://www.ovh.com/fr/cgi-bin/pt/procedure/procedureChangeContacts.cgi)
+
+O acompanhamento de cada procedimento é efetuado por e-mail e será necessária uma verificação de identidade. As instruções detalhadas ser-lhe-ão fornecidas durante todo o processo.
 
 ## Quer saber mais?
 

@@ -103,6 +103,15 @@ Jeśli tylko jeden kontakt zatwierdzi zmianę, pojawi się komunikat informując
 
 Gdy oba kontakty zatwierdzą wniosek, zmiany wejdą w życie po kilku minutach. Oba kontakty otrzymają e-mail informujący o pomyślnym rozpatrzeniu wniosku.
 
+### Przypadek właściciela domeny
+
+Podczas zamawiania usługi OVHcloud zdefiniowałeś dla niej właściciela. Właściciel może, jeśli nie ma dostępu do kont OVHcloud powiązanych z usługą, którą chce odzyskać, przekazać własność domeny innej osobie lub odzyskać administrację domeny, stosując następujące procedury:
+
+[Zmiana właściciela usługi](https://www.ovh.com/cgi-bin/pl/procedure/procedureChangeOwner.cgi)
+
+[Zmianę kontaktów: administracyjnego, technicznego oraz księgowego dla Państwa domeny](https://www.ovh.com/fr/cgi-bin/pl/procedure/procedureChangeContacts.cgi)
+
+Każda procedura jest monitorowana za pomocą wiadomości e-mail i konieczna będzie weryfikacja tożsamości. Szczegółowe instrukcje będą udzielane przez cały czas trwania procedury.
 
 ## Sprawdź również
 
