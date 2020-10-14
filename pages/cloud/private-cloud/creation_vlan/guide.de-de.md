@@ -1,7 +1,7 @@
 ---
-title: Erstellung v(x)lan
+title: Erstellung eines V(x)LAN
 slug: vxlan-erstellung
-excerpt: In dieser Anleitung erfahren Sie, wie Sie VLAN (vRack) und VXlan (NSX) erstellen.
+excerpt: Erfahren Sie hier, wie Sie VLANs (vRack) und VxLANs (NSX) erstellen
 section: OVHcloud Funktionen
 order: 02
 ---
@@ -10,9 +10,9 @@ order: 02
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Stand 12.10.2020**
+**Letzte Aktualisierung am 12.10.2020**
 
-## Einleitung
+## Ziel
 
 In einer Hosted Private Cloud Infrastruktur verfügen Sie über eine Basis von 10 von NSX gelieferten VxLANs und 11 mit dem vRack gelieferten VLANs.
 
@@ -22,34 +22,34 @@ In einer Hosted Private Cloud Infrastruktur verfügen Sie über eine Basis von 1
 
 - Sie haben Zugriff auf den vSphere Web Client (HTML5)
 
-## Beschreibung
+## In der praktischen Anwendung
 
 Bei den Hosted Private Cloud Angeboten verfügen Sie über zwei verteilte virtuelle Switches (vDS). 
 
-Diese *vDS* haben mehrere *PortsGroup*, die jeweils von Nutzen sind.
+Diese *vDS* haben mehrere *portGroup*, die jeweils von Nutzen sind.
 
-Der erste gemeinsame vDS für beide Angebote verfügt über zwei Arten von *PortGroup*: 
+Der erste gemeinsame vDS für beide Angebote verfügt über zwei Arten von *portGroup*: 
 
-- VMnetwork für die Kommunikation ins Internet.
-- Von NSX verwaltete VxLANs zur Isolierung privater Kommunikation innerhalb der Hosted Private Cloud.
+- VMnetwork für die Kommunikation ins Internet
+- von NSX verwaltete VxLANs zur Isolierung privater Kommunikation innerhalb der Hosted Private Cloud
 
-Der zweite vDS verfügt über eine einzige Art von *PortGroup*: 
+Der zweite vDS verfügt über eine einzige Art von *portGroup*: 
 
 - VLANs zur Isolierung privater Kommunikation innerhalb der Hosted Private Cloud und zwischen den verschiedenen vRack kompatiblen OVHcloud Diensten (Dedicated Server, Public Cloud...) 
 
-### VxLan - NSX 
+### VxLAN - NSX 
 
 In den Angeboten Hosted Private Cloud verfügen Sie über einen ersten virtuellen Switch. 
 
 Auf diesem Switch werden 10 VxLANs als Basis erstellt. Indem Sie die `NSX`-Berechtigung [für die Benutzerverwaltung Ihres Kundencenters eingeben](../manager-ovh-private-cloud/#benutzer), können Sie auf das NSX-Interface zugreifen und zusätzliche VxLANs erstellen.
 
-Gehen Sie zunächst in die Ansicht Vernetzung `Networking and security` vSphere Clients und klicken Sie dann auf `Logical Switches`{.action}.
+Gehen Sie zunächst in die Ansicht `Networking and security` des vSphere Clients und klicken Sie dann auf `Logical Switches`{.action}.
 
 Klicken Sie auf den Button `+`{.action}, um mit der Erstellung zu beginnen:
 
 ![vxlan erstellen](images/01createVxLAN.png){.thumbnail}
 
-Geben Sie im ersten Schritt Ihrer **portGroup** eine Bezeichnung:
+Geben Sie im ersten Schritt Ihrer *portGroup* eine Bezeichnung:
 
 ![vxlan](images/02nameVxLAN.png){.thumbnail}
 
@@ -65,9 +65,9 @@ Wählen Sie anschließend die Transportzone aus:
 > Die Art des Kontrollplans für einen Transportbereich wird monoverteilt, um die Kommunikation zwischen den Hosts mithilfe von NSX-Controllern zu verwalten.
 >
 
-Durch die Entdeckung von IP-Adressen kann die Überlastung des ARP-Traffics in den einzelnen VXLAN-Segmenten, d. h. zwischen den virtuellen Maschinen, die mit demselben Logikschalter verbunden sind, begrenzt werden.
+Durch die Entdeckung von IP-Adressen kann die Überlastung des ARP-Traffics in den einzelnen VxLAN-Segmenten, d. h. zwischen den virtuellen Maschinen, die mit demselben logischen Switch verbunden sind, begrenzt werden.
 
-MAC Learning erstellt auf jedem vNIC eine VLAN/MAC Learning Tabelle. Diese Tabelle wird mit den dvfilter-Daten gespeichert. In vMotion nimmt dvfilter den Tisch auf und stellt ihn am neuen Standort wieder her. Anschließend erzeugt der Switch RARP für alle VLAN/MAC Einträge in der Tabelle. Vielleicht möchten Sie das MAC-Lernen aktivieren, wenn Sie virtuelle Netzwerkkarten verwenden, die den VLAN-Übergang ausführen.
+MAC Learning erstellt auf jedem vNIC eine VLAN/MAC Learning Tabelle. Diese Tabelle wird mit den dvfilter-Daten gespeichert. In vMotion nimmt dvfilter die Tabelle auf und stellt sie am neuen Standort wieder her. Anschließend erzeugt der Switch RARP für alle VLAN/MAC Einträge in der Tabelle. Vielleicht möchten Sie das MAC Learning aktivieren, wenn Sie virtuelle Netzwerkkarten verwenden, die den VLAN-Übergang ausführen.
 
 OVHcloud empfiehlt, nur die Entdeckung von IP-Adressen zu verwenden.
 
@@ -75,11 +75,11 @@ Wenn Sie alle diese Elemente angegeben haben, können Sie die Erstellung bestät
 
 ![bestätigen](images/04ConfirmVxLAN.png){.thumbnail}
 
-Ihr PortGroup wurde erstellt und funktioniert, Sie finden ihn in der Ansicht der Logikschalter: 
+Ihre *port group* wurde erstellt und funktioniert, Sie finden sie in der Ansicht der logischen Switches: 
 
 ![Portgroup](images/05VxLANcreated.png){.thumbnail}
 
-Aber auch im Hinblick auf `Networking view`.
+Aber auch in der Ansicht `Networking view`.
 
 ![Portgroup](images/06VxLANnetworking.png){.thumbnail}
 
@@ -87,9 +87,9 @@ Aber auch im Hinblick auf `Networking view`.
 
 Sie verfügen auch über einen zusätzlichen verteilten virtuellen Switch (vDS).
 
-Auf diesem Switch wurden 11 VLANs als Basis erstellt (VLAN10 bis VLAN20). Indem Sie `Administrator`-Rechte für `den Zugang zum V(x)LAN` in [der Benutzerverwaltung Ihres Kundencenters einräumen, können Sie](../manager-ovh-private-cloud/#benutzer){.external-link} zusätzliche VLANs erstellen.
+Auf diesem Switch wurden 11 VLANs als Basis erstellt (VLAN10 bis VLAN20). Indem Sie `Administrator`-Rechte für den `Zugang zum V(x)LAN` in [der Benutzerverwaltung Ihres Kundencenters einräumen](../manager-ovh-private-cloud/#benutzer), können Sie zusätzliche VLANs erstellen.
 
-Gehen Sie zunächst in die Netzwerkansicht `networking` Clients. Deployen Sie den **vRack** Ordner, klicken Sie mit der rechten Maustaste auf **dVS**, die mit *-vRack* endet, und klicken Sie dann auf `New Distributed Port Group `{.action}.
+Gehen Sie zunächst in die Netzwerkansicht. Deployen Sie den **vRack** Ordner, klicken Sie mit der rechten Maustaste auf **dVS**, die mit *-vRack* endet, und klicken Sie dann auf `New Distributed Port Group`{.action}.
 
 ![vRack](images/07network.png){.thumbnail}
 
@@ -112,9 +112,9 @@ Konfigurieren Sie dann die von OVHcloud empfohlenen Einstellungen:
 
 Sie haben 3 Sicherheitseinstellungen, die bei Bedarf aktiviert werden können: 
 
-- *Promiscuous mode*: Elimin jegliche Empfangsfilterung, die der Adapter für die virtuelle Maschine durchführen kann, damit das Gastbetriebssystem den gesamten im Netzwerk beobachteten Traffic empfängt.
+- *Promiscuous mode*: Eliminiert jegliche Eingangsfilterung, die der Adapter für die virtuelle Maschine durchführen kann, damit das Gastbetriebssystem den gesamten im Netzwerk beobachteten Traffic empfängt.
 - *MAC address changes*: Beeinträchtigt den Traffic, den eine virtuelle Maschine empfängt. Wenn die Option auf **Accept** festgelegt ist, akzeptiert ESXi Anfragen zur Änderung der tatsächlichen MAC-Adresse auf eine andere Adresse als die ursprüngliche MAC-Adresse.
-- *Forged Transmits*: Beeinträchtigt den von einer virtuellen Maschine übertragenen Traffic. Wenn die Option auf Akzeptieren definiert **Accept**, vergleicht ESXi die Quell- und die tatsächliche MAC-Adresse nicht.
+- *Forged Transmits*: Beeinträchtigt den von einer virtuellen Maschine übertragenen Traffic. Wird die Option auf **Accept** gesetzt, vergleicht ESXi die Quell- und die tatsächliche MAC-Adresse nicht.
 
 > [!primary]
 >
@@ -123,11 +123,11 @@ Sie haben 3 Sicherheitseinstellungen, die bei Bedarf aktiviert werden können:
 
 ![Sicherheit](images/11network4.png){.thumbnail}
 
-Wir lassen die [Traffic-Glättung](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-CF01515C-8525-4424-92B5-A982489BACE2.html){.external} deaktiviert.
+Wir lassen die [Traffic-Shaping](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-CF01515C-8525-4424-92B5-A982489BACE2.html){.external} deaktiviert.
 
 ![Traffic-Glättung](images/12network5.png){.thumbnail}
 
-Wählen Sie auf Loadbalancing-Ebene *Route Based on IP hash* aus, was die beste Methode für Redundanz und Verteilung ist.
+Wählen Sie auf Loadbalancing-Ebene *Route based on IP hash* aus, was die beste Methode für Redundanz und Verteilung ist.
 
 > [!warning]
 >
@@ -136,7 +136,7 @@ Wählen Sie auf Loadbalancing-Ebene *Route Based on IP hash* aus, was die beste 
 
 ![load balancing](images/13network6.png){.thumbnail}
 
-` Netflow` ist deaktiviert (Aktivitätsverhältnis zu den Traffic-Strömen).
+`Netflow` ist deaktiviert (Aktivitätsverhältnis zu den Traffic-Strömen).
 
 ![netflow](images/14network7.png){.thumbnail}
 
@@ -148,7 +148,7 @@ Sie erhalten eine Zusammenfassung der Änderungen. Klicken Sie auf `Finish`, um 
 
 ![Finalisierung der Portgroup](images/16network10.png){.thumbnail}
 
-Hier stellen wir fest, dass **VLAN21** gut verfügbar und funktionsfähig ist.
+Hier stellen wir fest, dass **VLAN21** verfügbar und funktionsfähig ist.
 
 ![vlan erstellt](images/17network11.png){.thumbnail}
 
