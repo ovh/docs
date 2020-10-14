@@ -3,6 +3,7 @@ title: Zarządzanie zasileniami SMS i aktywowanie automatycznego doładowania
 slug: aktywowanie-automatycznego-ladowania-zasilen-sms
 excerpt: Dowiedz się, jak zarządzać zasileniami SMS OVHcloud
 section: Zarządzanie ofertą
+hidden: true
 ---
 
 **Ostatnia aktualizacja z dnia 19-05-2020**
