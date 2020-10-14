@@ -1,6 +1,6 @@
 ---
 title: Getting started with the Swift API
-excerpt: Getting started with the Swift API
+excerpt: Find out how to use the Swift API
 slug: getting_started_with_the_swift_api
 legacy_guide_number: g1916
 section: OpenStack
