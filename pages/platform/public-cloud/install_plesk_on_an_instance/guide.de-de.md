@@ -1,35 +1,35 @@
 ---
 title: 'Plesk auf einer Instanz installieren'
 slug: plesk-auf-einer-instanz-installieren
-excerpt: 'Hier erfahren Sie, wie Sie Plesk auf Ihrer Public Cloud Instanz einrichten'
+excerpt: 'Erfahren Sie hier, wie Sie Plesk auf Ihrer Public Cloud Instanz einrichten'
 section: 'Tutorials'
 ---
 
-**Stand 11.07.2019**
+**Letzte Aktualisierung am 15.10.2020**
 
-## Einleitung
+## Ziel
 
-Plesk ist ein einfach zu verwendendes Server-Verwaltungsinterface. Sie können es auf Ihren OVH Public Cloud Instanzen einrichten und verwenden.
+Plesk ist ein einfach zu verwendendes Server-Verwaltungsinterface. Sie können es auf Ihren OVHcloud Public Cloud Instanzen einrichten und verwenden.
 
-**In dieser Anleitung erfahren Sie, wie Sie Plesk auf Ihrer Public Cloud Instanz einrichten.** 
+**Diese Anleitung erklärt, wie Sie Plesk auf Ihrer Public Cloud Instanz installieren.** 
 
 > [!warning]
 > 
-> OVH stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
 >
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](https://community.ovh.com/en/){.external} wenden, um sich mit anderen Benutzern auszutauschen.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](https://community.ovh.com/en/) wenden, um sich mit anderen Benutzern auszutauschen.
 >
 
 ## Voraussetzungen
 
-- Sie haben im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager) eine Public Cloud Instanz erstellt.
-- [Sie sind Root-Benutzer und verfügen über das zugehörige Passwort](../root-rechte_erlangen_und_passwort_festlegen/).
+- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
+- Sie haben [administrativen Zugriff](../root-rechte_erlangen_und_passwort_festlegen/) auf Ihre Instanz über SSH.
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Schritt 1: Plesk installieren
 
-Plesk kann ganz einfach über eine SSH-Verbindung installiert werden. Laden Sie hierzu das Plesk-Installationsskript herunter und starten Sie dieses mit dem für Sie passenden Befehl:
+Plesk kann über eine SSH-Verbindung installiert werden. Laden Sie hierzu das Plesk-Installationsskript herunter und starten Sie dieses mit dem für Sie passenden Befehl:
 
 - **Nicht angepasste Plesk-Standardinstallation**
 
@@ -79,14 +79,14 @@ Um Ihre Plesk-Lizenz hinzuzufügen, halten Sie den Schlüssel bereit, den Sie vo
 
 > [!primary]
 >
-> Wir bieten keine Plesk-Lizenzen für unsere Public Cloud Instanzen an. Sie können eine Lizenz über die [Plesk](https://www.plesk.com/){.external}-Website erwerben.
+> Wir bieten keine Plesk-Lizenzen für unsere Public Cloud Instanzen an. Sie können eine Lizenz über die [Plesk](https://www.plesk.com/)-Webseite erwerben.
 > 
 
 Bei Ihrem ersten Login auf das Interface werden Sie automatisch dazu aufgefordert, die Plesk-Lizenz zu installieren.
 
 ![Public Cloud](images/3306-2.png){.thumbnail}
 
-Sie möchten Ihre Lizenz ändern, beispielsweise, um einen Test-Schlüssel zu ersetzen oder zu einem anderen Angebot zu wechseln. Gehen Sie hierzu im Plesk-Interface in den Bereich `Server Management` und klicken Sie dann auf `Tools & Settings`{.action}. Wählen Sie anschließend im Bereich **Plesk** `Licence Management`{.action} aus.
+Gegebenenfalls möchten Sie Ihre Lizenz ändern, beispielsweise, um einen Test-Schlüssel zu ersetzen oder zu einem anderen Angebot zu wechseln. Gehen Sie hierzu im Plesk-Interface in den Bereich `Server Management` und klicken Sie dann auf `Tools & Settings`{.action}. Wählen Sie anschließend im Bereich **Plesk** `Licence Management`{.action} aus.
 
 Nachdem Sie den neuen Schlüssel hinzugefügt haben, wird der installierte Lizenz-Typ oben links in der Menüleiste angezeigt.
 
@@ -94,6 +94,6 @@ Nachdem Sie den neuen Schlüssel hinzugefügt haben, wird der installierte Lizen
 
 ## Weiterführende Informationen
 
-[Offizielle Plesk-Dokumentation](https://docs.plesk.com/en-US/onyx/){.external}
+[Offizielle Plesk-Dokumentation](https://docs.plesk.com/de-DE/onyx/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

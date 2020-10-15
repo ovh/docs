@@ -6,39 +6,39 @@ legacy_guide_number: 1928
 section: 'Tutorials'
 ---
 
-**Stand 21.09.2018**
+**Letzte Aktualisierung am 15.10.2020**
 
-## Einleitung
+## Ziel
 
-Mit dem Cloud-init-Modul können Sie Ihre [Public Cloud Instanz](https://www.ovh.com/de/public-cloud/instances/){.external} direkt bei der Erstellung und bei jedem Neustart anpassen. Wenn Sie Ihren Hostnamen neu konfigurieren möchten, weil beim Einrichten der Instanz ein Fehler aufgetreten ist oder um den E-Mail-Server neu einzurichten, muss deshalb zunächst das Cloud-init-Modul deaktiviert werden. Denn das Modul ist für die Konfiguration des Hostnamens zuständig und die Deaktivierung verhindert, dass dieser zurückgesetzt wird.
+Mit dem *cloud-init* Modul können Sie Ihre [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud) direkt bei der Erstellung und bei jedem Neustart anpassen. Wenn Sie Ihren Hostnamen neu konfigurieren möchten, weil beim Einrichten der Instanz ein Fehler aufgetreten ist oder um den E-Mail-Server neu einzurichten, muss deshalb zunächst das *cloud-init* Modul deaktiviert werden. Denn das Modul ist für die Konfiguration des Hostnamens zuständig und die Deaktivierung verhindert, dass dieser zurückgesetzt wird.
 
-**In dieser Anleitung erfahren Sie, wie Sie Cloud-init neu konfigurieren, damit Sie den Hostnamen Ihrer Instanz ändern können.**
+**Diese Anleitung erklärt, wie Sie *cloud-init* neu konfigurieren, damit Sie den Hostnamen Ihrer Instanz ändern können.**
 
 > [!warning]
+> 
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
 >
-> OVH stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit Ihrer Anlage zu gewährleisten.
->
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](https://community.ovh.com/en/) wenden, um sich mit anderen Benutzern auszutauschen.
 >
 
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](https://www.ovh.de/public-cloud/instances/){.external} erstellt.
-- Sie sind auf der Instanz [via SSH eingeloggt](https://docs.ovh.com/de/public-cloud/erster-login/){.external} (Root-Zugriff).
+- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
+- Sie haben [administrativen Zugriff](../root-rechte_erlangen_und_passwort_festlegen/) auf Ihre Instanz über SSH.
 
 
-## Beschreibung
+## In der praktischen Anwendung
 
-### Cloud-init-Modul deaktivieren
+### *cloud-init* Modul deaktivieren
 
-Um das Cloud-init-Modul zu deaktivieren, muss zunächst die Konfigurationsdatei bearbeitet werden.
+Um das *cloud-init* Modul zu deaktivieren, muss zunächst die Konfigurationsdatei bearbeitet werden.
 
 ```sh
 sudo vim /etc/cloud/cloud.cfg
 ```
 
-Fügen Sie einfach die folgenden beiden Zeilen hinzu oder bearbeiten Sie diese:
+Fügen Sie einfach die folgenden beiden Zeilen hinzu oder bearbeiten Sie die vorhandenen:
 
 ```sh
 preserve_hostname: true

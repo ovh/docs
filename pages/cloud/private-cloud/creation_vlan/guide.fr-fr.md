@@ -108,7 +108,7 @@ Puis configurez les paramètres recommandés par OVHcloud :
 
 Vous avez 3 paramètres de sécurité qui peuvent être activés en fonction de votre besoin : 
 
-- *Promiscious mode* (Elimine tout filtrage de réception que l'adaptateur de machine virtuelle peut effectuer afin que le système d'exploitation invité reçoive tout le trafic observé sur le réseau.)
+- *Promiscuous mode* (Elimine tout filtrage de réception que l'adaptateur de machine virtuelle peut effectuer afin que le système d'exploitation invité reçoive tout le trafic observé sur le réseau.)
 - *MAC address changes* (Affecte le trafic qu'une machine virtuelle reçoit. Lorsque l'option est définie sur **Accepter**, ESXi accepte les demandes de modification de l'adresse MAC effective en une adresse différente de l'adresse MAC initiale.)
 - *Forged transmits* (Affecte le trafic transmis à partir d'une machine virtuelle. Lorsque l'option est définie sur **Accepter**, ESXi ne compare les adresses MAC source et effective).
 
