@@ -97,7 +97,7 @@ Hier einige Beispiele für Meldungen:
 |-|-|
 | Can't write qcow2 on disk. | Das Image qcow2 kann nicht auf die Festplatte geschrieben werden. |
 | Could not download, qcow2 image is too big to download in memory. | Es gibt nicht genug RAM, um das Image zu speichern. |
-| Could not download image located: http://path/of/your/image | Das Image kann nicht heruntergeladen werden von http://path/of/your/image |
+| Could not download image located: `http://path/of/your/image` | Das Image kann nicht heruntergeladen werden von `http://path/of/your/image` |
 | Bad format image, expected: qcow2, raw. | Das Bildformat ist nicht korrekt. |
 | Bad checkSumType, expected: sha1, sha256, md5. | Der Prüfsummentyp ist nicht korrekt. |
 | bad checkSumType for downloaded file, got: 1234 "While Expecting 5678" | Die Prüfsumme ist nicht korrekt. |
