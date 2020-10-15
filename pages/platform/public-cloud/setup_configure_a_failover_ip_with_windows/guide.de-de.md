@@ -32,33 +32,40 @@ Windows erlaubt im DHCP Modus nicht die Konfiguration einer Failover-IP als Erg�
 ### Konfiguration des Interfaces
 
 
-- Abruf der Informationen mit dem Befehl "ipconfig":
+- Abruf der Informationen mit dem Befehl „ipconfig“:
 
 ![ipconfig](images/img_3609.jpg){.thumbnail}
+
 
 - Öffnen Sie die Systemsteuerung und rufen Sie das Netzwerk- und Freigabecenter auf:
 
 ![Systemsteuerung](images/img_3602.jpg){.thumbnail}
 
+
 - Die Einstellungen der Karte ändern:
 
 ![NIC](images/img_3603.jpg){.thumbnail}
+
 
 - Zugriff auf die Eigenschaften Ihres Interfaces:
 
 ![Eigenschaften](images/img_3604.jpg){.thumbnail}
 
+
 - Konfiguration des TCP/IPv4 Protokolls:
 
 ![TCPIPv4](images/img_3605.jpg){.thumbnail}
 
-- Stellen Sie auf die manuelle Konfiguration um und tragen Sie eine an den unten aufgeführten Screenshot angepasste Konfiguration ein. Passen Sie die IP-Adressen anhand der von Ihnen mit dem Befehl "ipconfig" gewonnenen Informationen an und klicken Sie dann auf "Fortgeschritten":
+
+- Stellen Sie auf die manuelle Konfiguration um und tragen Sie eine an den unten aufgeführten Screenshot angepasste Konfiguration ein. Passen Sie die IP-Adressen anhand der von Ihnen mit dem Befehl „ipconfig“ gewonnenen Informationen an und klicken Sie dann auf „Fortgeschritten“:
 
 ![Konfiguration](images/img_3606.jpg){.thumbnail}
+
 
 - Fügen Sie Ihre Failover-IP wie folgt hinzu:
 
 ![Failover](images/img_3607.jpg){.thumbnail}
+
 
 
 ## Weiterführende Informationen
