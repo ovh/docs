@@ -34,7 +34,7 @@ admin@serveur-1:~$ swift --help
 
 Hier die wichtigsten Befehle im Überblick:
 
-|Befehle|Beschreibung|
+|Befehl|Beschreibung|
 |---|---|
 |**delete**|Container oder im Container enthaltene Objekte löschen.|
 |**download**|Dateien aus einem Container herunterladen.|
@@ -60,30 +60,24 @@ for multiple objects.
 [...]
 ```
 
+Sie können die Dokumentation zum Swift Client auch direkt auf der [Openstack Webseite](http://docs.openstack.org/cli-reference/content/swiftclient_commands.html) einsehen.
 
-Sie können die Dokumentation zum Client Swift auch direkt auf der [Openstack Webseite](http://docs.openstack.org/cli-reference/content/swiftclient_commands.html) einsehen.
 
+### Erstellung eines öffentlichen Projekt-Containers
 
-## Erstellung eines öffentlichen Projekt-Containers
-
-- Erstellung des Containers "container1"
-
+- Erstellung des Containers "container1":
 
 ```
 admin@serveur-1:~$ swift post container1
 ```
 
-
-- Konfiguration der Zugriffsrechte, um ihn öffentlich zugänglich zu machen
-
+- Konfiguration der Zugriffsrechte, um ihn öffentlich zugänglich zu machen:
 
 ```
 admin@serveur-1:~$ swift post --header "X-Container-Read: .r:*" container1
 ```
 
-
-- Überprüfung der Container-Konfiguration
-
+- Überprüfung der Container-Konfiguration:
 
 ```
 admin@serveur-1:~$ swift stat container1
@@ -104,14 +98,9 @@ X-Timestamp: 1444726875.27475
 Content-Type: text/plain; charset=utf-8
 ```
 
+### Upload von Dateien auf einen Container
 
-
-
-
-## Upload von Dateien auf einen Container
-
-- Upload des Inhalts eines lokalen Ordners auf einen Container
-
+- Upload des Inhalts eines lokalen Ordners auf einen Container:
 
 ```
 admin@serveur-1:~$ swift upload container1 images/
@@ -120,12 +109,9 @@ images/OVHlogo.png
 images/OVHSummitKeynote.jpg
 ```
 
-
-
 Wenn Sie einen vollständigen Ordner anstatt einer einzelnen Datei hochladen, wird den Dateien automatisch ein Präfix hinzugefügt.
 
-- Dateien des Containers auflisten
-
+- Dateien des Containers auflisten:
 
 ```
 admin@serveur-1:~$ swift list container1
@@ -137,10 +123,7 @@ text2.txt
 text3.txt
 ```
 
-
-
 Sie können sich mithilfe von "--prefix" alle Dateien mit einem bestimmten Präfix anzeigen lassen:
-
 
 ```
 admin@serveur-1:~$ swift list container1 --prefix images
@@ -149,21 +132,18 @@ images/OVHSummitKeynote.jpg
 images/OVHlogo.png
 ```
 
-
 Da der Container so konfiguriert wurde, dass er öffentlich zugänglich ist, kann auf die Dateien auch über eine URL zugegriffen werden:
 
 ```
 https://storage.gra1.cloud.ovh.net/v1/AUTH_b3e26xxxxxxxxxxxxxxxxxxxb0ba29/container1/images/OVHlogo.png
 ```
 
-
 Diese URL besteht ganz einfach aus dem API-Zugriffspunkt des Object Storage, den Sie im Menü [Zugriff und Sicherheit in Horizon]({legacy}1774) abrufen können, sowie aus dem Namen des Containers und des gewünschten Objekts (einschließlich Präfix).
 
 
-## Download von Dateien
+### Download von Dateien
 
 - Datei herunterladen: 
-
 
 ```
 admin@serveur-1:~$ swift download container1 text1.txt
@@ -171,10 +151,7 @@ admin@serveur-1:~$ swift download container1 text1.txt
 text1.txt [auth 0.328s, headers 0.452s, total 0.453s, 0.000 MB/s]
 ```
 
-
-
 Sie können mehrere Dateien mit demselben Präfix gleichzeitig herunterladen. Verwenden Sie dafür folgenden Befehl:
-
 
 ```
 admin@serveur-1:~$ swift download container1 --prefix images
@@ -183,13 +160,9 @@ images/OVHlogo.png [auth 0.383s, headers 0.520s, total 0.522s, 0.135 MB/s]
 images/OVHSummitKeynote.jpg [auth 0.371s, headers 0.514s, total 0.559s, 2.657 MB/s]
 ```
 
-
-
-
-## Löschen von Containern oder Objekten
+### Löschen von Containern oder Objekten
 
 - Datei löschen:
-
 
 ```
 admin@serveur-1:~$ swift delete container1 text1.txt
@@ -197,10 +170,7 @@ admin@serveur-1:~$ swift delete container1 text1.txt
 text1.txt
 ```
 
-
-
 Ebenso wie beim Download können Sie mehrere Dateien mit demselben Präfix gleichzeitig löschen. Verwenden Sie dafür folgenden Befehl:
-
 
 ```
 admin@serveur-1:~$ swift delete container1 images/*
@@ -209,10 +179,7 @@ images/OVHSummitKeynote.jpg
 images/OVHlogo.png
 ```
 
-
-
 - Container löschen:
-
 
 ```
 admin@serveur-1:~$ swift delete container1
@@ -222,7 +189,6 @@ text3.txt
 ```
 
 Damit werden auch alle im Container enthaltenen Dateien gelöscht.
-
 
 ## Weiterführende Informationen
 
