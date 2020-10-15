@@ -138,7 +138,7 @@ Da der Container so konfiguriert wurde, dass er öffentlich zugänglich ist, kan
 https://storage.gra1.cloud.ovh.net/v1/AUTH_b3e26xxxxxxxxxxxxxxxxxxxb0ba29/container1/images/OVHlogo.png
 ```
 
-Diese URL besteht ganz einfach aus dem API-Zugriffspunkt des Object Storage, den Sie im Menü [Zugriff und Sicherheit in Horizon]({legacy}1774) abrufen können, sowie aus dem Namen des Containers und des gewünschten Objekts (einschließlich Präfix).
+Diese URL besteht aus dem API-Zugriffspunkt des Object Storage, den Sie im Menü [Zugriff und Sicherheit in Horizon]({legacy}1774) abrufen können, sowie aus dem Namen des Containers und des gewünschten Objekts (einschließlich Präfix).
 
 
 ### Download von Dateien
