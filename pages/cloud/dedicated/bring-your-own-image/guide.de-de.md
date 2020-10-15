@@ -58,17 +58,17 @@ Um Ihr Image zu deployen, verwenden Sie folgenden Aufruf und vervollständigen S
 | URL | URL, unter der Ihr Image abgerufen wird. |
 | checkSum | Die Prüfsumme Ihres Images. |
 | checkSumType | Prüfsummentyp Ihres Images (md5, sha1, sha256, sha512). |
-| enable (ConfigDrive)* | Die Erstellung der ConfigDrive Partition aktivieren (_cloud-init_). |
-| hostname (ConfigDrive)* | Hostname Ihres Servers. |
-| sshKey (ConfigDrive)* | Ihr öffentlicher SSH-Schlüssel. |
-| userData (ConfigDrive)* | Ihr Post-Installationsskript. |
-| userMetadatas (ConfigDrive)* | Metadaten, die von _cloud-init_ zum Zeitpunkt des Boot verwendet werden. |
+| enable (ConfigDrive) | Die Erstellung der ConfigDrive Partition aktivieren (_cloud-init_). |
+| hostname (ConfigDrive) | Hostname Ihres Servers. |
+| sshKey (ConfigDrive) | Ihr öffentlicher SSH-Schlüssel. |
+| userData (ConfigDrive) | Ihr Post-Installationsskript. |
+| userMetadatas (ConfigDrive) | Metadaten, die von _cloud-init_ zum Zeitpunkt des Boot verwendet werden. |
 | description | Bezeichnung für Ihr Image. |
 | diskGroupId | Die Kennung (ID) der zu verwendenden Festplatte. |
 | httpHeader | Nur anzugeben, wenn nötig, um das Image herunterzuladen. |
 | type | Typ/Format Ihres Images (qcow2, raw, ova). |
 
-* „ConfigDrive“ ist eine von _cloud-init_ beim ersten Boot Ihres Servers verwendete Partition, um die gewünschte Konfiguration festzulegen. Sie können auswählen, ob Sie diese Option aktivieren möchten.
+„ConfigDrive“ ist eine von _cloud-init_ beim ersten Boot Ihres Servers verwendete Partition, um die gewünschte Konfiguration festzulegen. Sie können auswählen, ob Sie diese Option aktivieren möchten.
 
 ![POST API Call](images/postapicall.png){.thumbnail}
 
