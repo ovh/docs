@@ -94,6 +94,6 @@ Nachdem Sie den neuen Schlüssel hinzugefügt haben, wird der installierte Lizen
 
 ## Weiterführende Informationen
 
-[Offizielle Plesk-Dokumentation](https://docs.plesk.com/en-US/onyx/)
+[Offizielle Plesk-Dokumentation](https://docs.plesk.com/de-DE/onyx/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
