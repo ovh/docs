@@ -4,6 +4,7 @@ slug: ovhcloudconnect-delivery
 excerpt: 'Processus de mise en service de l offre OVHcloud Connect'
 section: Premiers pas
 order: 1
+hidden: true
 ---
 
 **Dernière mise à jour le 07/09/2020**

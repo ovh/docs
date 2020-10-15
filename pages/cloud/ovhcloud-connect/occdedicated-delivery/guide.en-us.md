@@ -4,6 +4,7 @@ slug: ovhcloudconnect-delivery
 excerpt: 'Delivery process for the OVHcloud Connect solution'
 section: Getting started
 order: 1
+hidden: true
 ---
 
 **Last updated 14th September 2020**

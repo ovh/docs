@@ -1,7 +1,7 @@
 ---
-title: Deployment eines Linux OVF Template, Windows Server und Windows SQL Server
+title: Deployment eines Linux, Windows Server oder Windows SQL Server OVF Template
 slug: ovhcloud-template-deployment
-excerpt: Hier erfahren Sie, wie Sie ein Linux, Windows Server oder Windows SQL Server Template deployen.
+excerpt: Erfahren Sie hier, wie Sie ein Linux, Windows Server oder Windows SQL Server Template deployen
 section: Verwaltung virtueller Maschinen
 order: 02
 ---
@@ -12,13 +12,13 @@ order: 02
 
 **Stand 12.10.2020**
 
-## Einleitung
+## Ziel
 
-OVHcloud bietet Linux, Windows Server und Windows SQL Server (im OVF Format) Templates an, die Sie direkt über Ihren Web-Client (HTML 5) bereitstellen können.
+OVHcloud bietet Linux, Windows Server und Windows SQL Server Templates (im OVF Format) an, die Sie direkt über Ihren Web-Client (HTML 5) bereitstellen können.
 
 Windows VMs, die von einem Template aus eingerichtet werden, verwenden automatisch die von OVHcloud bereitgestellten SPLA-Lizenzen. Die Inbetriebnahme einer Windows VM führt automatisch zu einer zusätzlichen Abrechnung.
 
-**Hier erfahren Sie, wo die Quellen liegen und wie Sie für die Bereitstellung vorgehen.**
+**Hier erfahren Sie, wo Sie die Images finden und wie Sie für die Bereitstellung vorgehen.**
 
 > [!primary]
 > 
@@ -27,28 +27,28 @@ Windows VMs, die von einem Template aus eingerichtet werden, verwenden automatis
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf den Web Client (HTML5)
-- [Sie haben die Windows Lizenzen](../manager-ovh-private-cloud/#windows-lizenz) über Ihr [OVHcloud Kundencenter aktiviert](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Sie haben Zugriff auf den Web Client (HTML5).
+- [Sie haben die Windows Lizenzen](../manager-ovh-private-cloud/#windows-lizenz) über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager)  aktiviert.
 
 
-## Beschreibung
+## In der praktischen Anwendung
 
-### Abrufen der URL der OVF Vorlage
+### Abrufen der URL der OVF Templates
 
-Rufen Sie über Ihren Internetbrowser die Startseite Ihrer Private Cloud auf und klicken Sie auf `OVH Vorlagen`{.action}.
+Rufen Sie über Ihren Internetbrowser die Startseite Ihrer Private Cloud auf und klicken Sie auf `OVH Templates`{.action}.
 
 ![CNAME-Eintrag](images/gatewayssl.png){.thumbnail}
 
-Im angezeigten `OVH` Templates Display finden Sie Details zu den angebotenen Linux-, Windows- und SQL-Templates. 
+Im angezeigten `OVH Templates` Fenster finden Sie Details zu den angebotenen Linux-, Windows- und SQL-Templates. 
 
 Wählen Sie das gewünschte Template aus, es öffnet sich ein Fenster und die Links, die Ihnen für die Inbetriebnahme in Abhängigkeit von Ihrer vSphere Version dienen.
 
 ![CNAME-Eintrag](images/copylink.png){.thumbnail}
 
 
-### Bereitstellung der OVF Vorlage
+### Bereitstellung des OVF Templates
 
-Gehen Sie in Ihrem vSphere Web Client auf `Hosts und Cluster`{.action}und wählen Sie mit einem Rechtsklick Ihr Datencenter aus und klicken Sie auf `Bereitstellen der OVF Vorlage ...`{.action}:
+Gehen Sie in Ihrem vSphere Web Client auf `Hosts and clusters`{.action}und wählen Sie mit einem Rechtsklick Ihr Rechenzentrum aus und klicken Sie auf `Deploy OVF template...`{.action}:
 
 ![Link kopieren](images/01selectdeploy.png){.thumbnail}
 
@@ -56,9 +56,9 @@ Das Kontextmenü öffnet sich und die Konfiguration der Bereitstellung beginnt. 
 
 ![Link einfügen](images/02puturl.png){.thumbnail}
 
-Wählen Sie als nächstes das Datacenter aus:
+Wählen Sie als nächstes das Rechenzentrum aus:
 
-![Datacener auswählen](images/03selectdatacenter.png){.thumbnail}
+![RZ auswählen](images/03selectdatacenter.png){.thumbnail}
 
 Und wählen Sie dann das Cluster aus, in dem die virtuelle Maschine bereitgestellt wird:
 
@@ -80,7 +80,7 @@ Die Konfiguration ist fast beendet. Sie sehen nun einen Überblick aller vorgeno
 
 ![Überblick](images/08resume.png){.thumbnail}
 
-Nachdem Sie auf `Beenden`{.action} geklickt haben, wird eine Aufgabe erstellt und Sie können weiter mit der Bereitstellung fortfahren:
+Nachdem Sie auf `Finish`{.action} geklickt haben, wird ein Task erstellt, den Sie zur Nachverfolgung nutzen können.
 
 ![Bereitstellung starten](images/09startdeploy.png){.thumbnail}
 
@@ -103,10 +103,10 @@ Starten Sie Ihre dedizierte virtuelle Maschine und öffnen Sie die Konsole.
 > 
 > Es wird empfohlen, ein Passwort zu verwenden, das diese Kriterien erfüllt:
 > 
-> * Es müssen mindestens acht Zeichen enthalten sein.
-> * Es müssen mindestens drei Arten von Zeichen enthalten sein (Groß-, Klein-, Ziffern, Sonderzeichen).
-> * Es darf kein Wort aus dem Wörterbuch sein.
-> * Keine persönlichen Angaben enthalten (Vorname, Name oder Geburtsdatum).
+> - Es müssen mindestens acht Zeichen enthalten sein.
+> - Es müssen mindestens drei Arten von Zeichen enthalten sein (Groß-, Klein-, Ziffern, Sonderzeichen).
+> - Es darf kein Wort aus dem Wörterbuch sein.
+> - Keine persönlichen Angaben enthalten (Vorname, Name oder Geburtsdatum).
 >
 
 Wenn Sie diese Informationen eingegeben haben, klicken Sie auf `OK`{.action}.
