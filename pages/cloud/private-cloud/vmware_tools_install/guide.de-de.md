@@ -12,7 +12,7 @@ order: 6
 
 **Letzte Aktualisierung am 15.10.2020**
 
-## Einleitung
+## Ziel
 
 VMware Tools verbessern die Performance einer virtuellen Maschine und ermöglichen die Verwendung vieler einfacher Funktionen in VMware Produkten.
 
@@ -22,7 +22,7 @@ VMware Tools verbessern die Performance einer virtuellen Maschine und ermöglich
 
 - Sie haben Zugriff auf den Web Client (HTML5)
 
-## Beschreibung
+## In der praktischen Anwendung
 
 Die Vorgehensweise zur Installation von VMware Tools variiert je nach Betriebssystem der virtuellen Maschine. Für Informationen zur genauen Vorgehensweise entsprechend dem Betriebssystem lesen Sie die [VMware-Dokumentation zu VMware Tools](https://kb.vmware.com/s/article/1014294){.external-link}.
 
@@ -34,8 +34,7 @@ Bei den meisten Linux-Distributionen ist die Installation der VMware Tools über
 
 So können die VMware Tools genauso auf dem aktuellen Stand gehalten werden wie die anderen Betriebssystemkomponenten der virtuellen Maschine. 
 
-Wenn dies bei Ihrer Distribution möglich ist, finden Sie *Open VM Tools* unter folgendem Paketnamen: *open-vm-tools*.
-
+Wenn dies bei Ihrer Distribution möglich ist, finden Sie *Open VM Tools* unter folgendem Paketnamen: „open-vm-tools“.
 
 Diese Vorgehensweise gilt mindestens für die folgenden GNU/Linux-Versionen:
 
@@ -55,13 +54,13 @@ Um die Festplatte der VMware-Tools über den vSphere-Web-Client zu mounten, klic
 
 ![installer VMware Tools](images/tools.png){.thumbnail}
 
-Legen Sie anschließend das durch den Befehl aktivierte Volume auf:
+Mounten Sie anschließend das durch den Befehl aktivierte Volume:
 
 ```sh
 >     # mount /dev/cdrom /mnt
 ```
 
-Dekomprimieren Sie anschließend das Archiv der VMwareTools. hier in /tmp.
+Dekomprimieren Sie das Archiv der VMwareTools, hier in /tmp.
 
 ```sh
 > cd /tmp 
@@ -72,20 +71,20 @@ Dekomprimieren Sie anschließend das Archiv der VMwareTools. hier in /tmp.
 
 > [!primary]
 >
-> Wenn Sie standardmäßig auf die eingereichten Antworten antworten antworten und während der Installation nicht unterbrochen werden möchten, fügen Sie "default"zur Installationszeile ein.
+> Wenn Sie mit den voreingestellten Antworten fortfahren möchten und während der Installation nicht unterbrochen werden möchten, fügen Sie „default“ zur Installationszeile an.
 > 
 
 Wenn die Installation abgeschlossen ist, wird die Festplatte der Tools automatisch aus dem System ausgehängt.
 
 ### Windows
 
-Sobald das Volume über die Option "Install/Upgrade VMware Tools"gemountet wurde, finden Sie die Festplatte im "Arbeitsplatz"Ihrer VM. Doppelklicken Sie auf diese, um die Installation der Tools zu starten:
+Sobald das Volume über die Option „Install/Upgrade VMware Tools“ gemountet wurde, finden Sie die Festplatte im „Arbeitsplatz“ Ihrer VM. Doppelklicken Sie auf darauf, um die Installation der Tools zu starten.
 
 ![VMware tools windows](images/windows.jpg){.thumbnail}
 
-Der Installationsassistent wird dann loslegen und die Annahme der Lizenzen und des auszuwählenden Installationstyps beantragen (wir empfehlen Ihnen die vollständige Installation).
+Der Installationsassistent wird dann zur Annahme der Lizenzen und des auszuwählenden Installationstyps auffordern (wir empfehlen die vollständige Installation).
 
-Sobald die Installation abgeschlossen ist, schlägt er Ihnen vor, die Maschine neu zu starten, um die Änderungen zu berücksichtigen. Der CD-Player wird nach Abschluss der Installation automatisch ausgeschaltet.
+Sobald die Installation abgeschlossen ist, schlägt er Ihnen vor, die Maschine neu zu starten, um die Änderungen zu übernehmen. Das „CD-ROM“ wird nach Abschluss der Installation automatisch ausgeschaltet.
 
 ## Weiterführende Informationen
 
