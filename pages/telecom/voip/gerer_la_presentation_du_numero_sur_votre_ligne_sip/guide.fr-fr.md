@@ -60,7 +60,7 @@ Dès que vous êtes prêt, poursuivez la lecture de cette documentation en fonct
 
 - [Ne plus présenter de manière unique son numéro](./#ne-plus-presenter-de-maniere-unique-son-numero) (depuis l'espace client).
 - [Présenter de manière unique un numéro OVHcloud](./#presenter-de-maniere-unique-un-numero-ovhcloud) (depuis l'espace client).
-- [Présenter de manière unique un numéro externe](./#presenter-de-maniere-unique-un-numero-externe) (depuis l'espace client pour une ligne SIP ou depuis votre propre équipement IPBX pour une ligne Trunk).
+- [Présenter de manière unique un numéro externe](./#presenter-de-maniere-unique-un-numero-externe) (depuis votre propre équipement IPBX).
 - [Présenter de manière unique ou « à la volée » un numéro OVHcloud ou externe](./#presenter-de-maniere-unique-ou-a-la-volee-un-numero-ovh-ou-externe) (depuis votre propre équipement IPBX).
 
 #### Ne plus présenter de manière unique son numéro
