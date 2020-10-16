@@ -2,7 +2,7 @@
 title: Configuring an Exchange account on iPhone and iPad
 excerpt: Find out how to configure an Exchange account on iPhone and iPad, via the Mail app
 slug: exchange_2013_automatic_configuration_on_ios_iphone_-_ipad
-section: Email Clients
+section: Exchange-compatible smartphone and tablet configuration
 ---
 
 **Last updated 22nd February 2018**
