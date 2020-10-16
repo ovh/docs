@@ -2,26 +2,33 @@
 title: 'VMware Tools installieren'
 slug: wie_installiere_ich_die_vmware_tools
 excerpt: 'So installieren Sie VMware Tools auf Linux oder Windows'
-legacy_guide_number: '7766427'
 section: 'Verwaltung virtueller Maschinen'
 order: 6
 ---
 
-**Letzte Aktualisierung am 04.07.2019**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
-## Ziel
+**Letzte Aktualisierung am 15.10.2020**
 
-VMware Tools verbessern die Leistung virtueller Maschinen und ermöglichen die Verwendung vieler hilfreicher Funktionen der VMware-Produkte.
+## Einleitung
 
-**Diese Anleitung beschreibt die notwendigen Schritte zur Installation von VMware Tools.**
+VMware Tools verbessern die Performance einer virtuellen Maschine und ermöglichen die Verwendung vieler einfacher Funktionen in VMware Produkten.
+
+**In dieser Anleitung werden die verschiedenen Schritte beschrieben, die zur Installation unternommen werden müssen.**
 
 ## Voraussetzungen
 
+- Sie haben Zugriff auf den Web Client (HTML5)
+
+## Beschreibung
+
 Die Vorgehensweise zur Installation von VMware Tools variiert je nach Betriebssystem der virtuellen Maschine. Für Informationen zur genauen Vorgehensweise entsprechend dem Betriebssystem lesen Sie die [VMware-Dokumentation zu VMware Tools](https://kb.vmware.com/s/article/1014294){.external-link}.
 
-## Linux
+### Linux
 
-### Neueste Versionen
+#### Neueste Versionen
 
 Bei den meisten Linux-Distributionen ist die Installation der VMware Tools über die Linux-Paketverwaltungssysteme unter dem Namen [*Open VM Tools*](https://kb.vmware.com/s/article/2073803){.external-link} möglich.
 
@@ -42,19 +49,19 @@ Diese Vorgehensweise gilt mindestens für die folgenden GNU/Linux-Versionen:
 - SUSE Linux Enterprise 11 SP4 und neuer
 
 
-### Alte Versionen
+#### Alte Versionen
 
-Mounten Sie die VMware Tools über den vSphere-Web-Client, klicken Sie mit der rechten Maustaste auf die VM und wählen Sie anschließend „Guest OS“ und bestätigen Sie die Option „Install VMware Tools“:
+Um die Festplatte der VMware-Tools über den vSphere-Web-Client zu mounten, klicken Sie mit der rechten Maustaste auf die VM, dann auf `Guest OS`{.action} und schließlich auf `Install VMware Tools`{.action}. 
 
-![](images/tools.png){.thumbnail}
+![installer VMware Tools](images/tools.png){.thumbnail}
 
-Mounten Sie anschließend die Festplatte mit folgendem Befehl:
+Legen Sie anschließend das durch den Befehl aktivierte Volume auf:
 
 ```sh
 >     # mount /dev/cdrom /mnt
 ```
 
-Entpacken Sie danach das Archiv der VMware Tools, hier in /tmp.
+Dekomprimieren Sie anschließend das Archiv der VMwareTools. hier in /tmp.
 
 ```sh
 > cd /tmp 
@@ -63,22 +70,22 @@ Entpacken Sie danach das Archiv der VMware Tools, hier in /tmp.
 > ./vmware-install.pl default
 ```
 
-> [!success]
+> [!primary]
 >
-> Kleiner Tipp: Wenn Sie die automatischen Bestätigungsanfragen im Vornherein bejahen möchten, fügen Sie „default" als Argument in dem Installationsbefehl hinzu.
+> Wenn Sie standardmäßig auf die eingereichten Antworten antworten antworten und während der Installation nicht unterbrochen werden möchten, fügen Sie "default"zur Installationszeile ein.
 > 
 
 Wenn die Installation abgeschlossen ist, wird die Festplatte der Tools automatisch aus dem System ausgehängt.
 
-## Windows
+### Windows
 
-Nachdem die Festplatte über die Option „Install/Upgrade VMware Tools“ gemountet wurde, finden Sie diese unter „Arbeitsplatz“ Ihrer VM. Doppelklicken Sie auf diese, um die Installation der Tools zu starten:
+Sobald das Volume über die Option "Install/Upgrade VMware Tools"gemountet wurde, finden Sie die Festplatte im "Arbeitsplatz"Ihrer VM. Doppelklicken Sie auf diese, um die Installation der Tools zu starten:
 
-![](images/windows.jpg){.thumbnail}
+![VMware tools windows](images/windows.jpg){.thumbnail}
 
-Daraufhin wird der Installationsassistent geöffnet und Sie werden aufgefordert, die Lizenzvereinbarungen zu akzeptieren und den Installationstyp auszuwählen (wir empfehlen die vollständige Installation).
+Der Installationsassistent wird dann loslegen und die Annahme der Lizenzen und des auszuwählenden Installationstyps beantragen (wir empfehlen Ihnen die vollständige Installation).
 
-Wenn die Installation abgeschlossen ist, können Sie die Maschine neu starten, damit die Änderungen angenommen werden. Das Laufwerk wird am Ende der Installation automatisch ausgehängt.
+Sobald die Installation abgeschlossen ist, schlägt er Ihnen vor, die Maschine neu zu starten, um die Änderungen zu berücksichtigen. Der CD-Player wird nach Abschluss der Installation automatisch ausgeschaltet.
 
 ## Weiterführende Informationen
 
