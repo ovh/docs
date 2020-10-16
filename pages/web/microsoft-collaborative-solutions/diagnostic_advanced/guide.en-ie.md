@@ -2,6 +2,7 @@
 title: 'Exchange diagnostic: what to do if you encounter an error'
 excerpt: 'Exchange diagnostic: what to do if you encounter an error'
 slug: exchange_diagnostic_what_to_do_if_you_encounter_an_error
+section: Troubleshooting
 legacy_guide_number: g2277
 ---
 
