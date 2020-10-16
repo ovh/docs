@@ -22,7 +22,7 @@ The purpose of this guide is to explain what SMS credits are, how to set up auto
 
 ### **SMS credits**
 
-1 SMS credit is the cost for sending 1 SMS message in mainland France. The price is degressive depending on the number of SMS credits you buy at once. 
+0,55 SMS credit is the cost for sending 1 SMS message in the United Kingdom. The price is degressive depending on the number of SMS credits you buy at once. 
 
 You can view the list of SMS packs [here](https://www.ovh.co.uk/sms/).
 
