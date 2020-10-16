@@ -3,7 +3,7 @@ title: 'Exchange 2013: Configuration on Windows 8'
 excerpt: ''
 slug: exchange_2013_configuration_on_windows_8
 legacy_guide_number: g1273
-section: Email Clients
+section: Email clients
 ---
 
 
