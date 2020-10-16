@@ -22,16 +22,16 @@ The purpose of this guide is to explain what SMS credits are, how to set up auto
 
 ### **SMS credits**
 
-1 SMS credit is the cost for sending 1 SMS message in mainland France. The price is degressive depending on the number of SMS credits you buy at once. 
+0.75 SMS credit is the cost for sending 1 SMS message in Ireland. The price is degressive depending on the number of SMS credits you buy at once. 
 
-You can view the list of SMS packs [here](https://www.ovhtelecom.fr/sms/).
+You can view the list of SMS packs [here](https://www.ovh.ie/sms/).
 
-**E.g. to purchase a pack of 100 SMS credits, each credit costs €0.06 ex. VAT.**
+**E.g. to purchase a pack of 100 SMS credits, each credit costs €0.045 ex. VAT.**
 
-Sending 1 SMS message in mainland France costs 1 credit. With this pack, you can send 100 SMS messages in mainland France.
+Sending 1 SMS message in Ireland costs 0.75 credit. With this pack, you can send 134 SMS messages in Ireland.
 Sending 1 SMS message in India costs 0.1 credit. With this pack, you can send 1,000 SMS messages in India.
 
-On [this webpage](https://www.ovhtelecom.fr/sms/tarifs.xml), you can view the price in credits for sending SMS messages, depending on their destination.
+On [this webpage](https://www.ovh.ie/sms/prices/), you can view the price in credits for sending SMS messages, depending on their destination.
 
 > [!primary]
 >
