@@ -3,7 +3,7 @@ title: Configuration in BlackBerry Z10 (OS 10)
 excerpt: ''
 slug: configuration_in_blackberry_z10_os_10
 legacy_guide_number: g1391
-section: Email Clients
+section: Exchange-compatible smartphone and tablet configuration
 ---
 
 

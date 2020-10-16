@@ -2,7 +2,7 @@
 title: 'Exchange 2013: How to configure in Windows 8'
 excerpt: ''
 slug: exchange_2013_how_to_configure_in_windows_8
-section: Email Clients
+section: Email clients
 ---
 
 
@@ -162,4 +162,3 @@ Your Exchange 2013 account should now be correctly configured in IMAP.
 Here is a preview of the mailbox:
 
 ![](images/img_1121.jpg){.thumbnail}
-

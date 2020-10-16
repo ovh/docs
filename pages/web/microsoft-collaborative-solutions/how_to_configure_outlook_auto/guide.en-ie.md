@@ -3,6 +3,7 @@ title: Manually Configuring Outlook
 excerpt: If you do not have the ability to set up the SRV field necessary for the automatic configuration of Outlook, follow this guide to configure Outlook manually
 slug: manually_configuring_outlook
 legacy_guide_number: g1358
+section: Email clients
 ---
 
 

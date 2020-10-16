@@ -24,6 +24,12 @@ Bridged networking can be used to configure your pfSense virtual machine to be a
 - 2GB(2048MB) of RAM for the virtual machine
 - Hypervisor with console access to virtual machines
 
+> [!warning]
+>This tutorial will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation.
+>
+If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+>
+
 ## Instructions
 
 ### First steps
@@ -31,12 +37,12 @@ Bridged networking can be used to configure your pfSense virtual machine to be a
 For the pfSense virtual machines network configuration, we will use the following values which should be replaced with your own values:
 
 - FAILOVER_IP = The address of your failover IP
-- Virtual MAC address = The MAC address created in the OVH control panel
+- Virtual MAC address = The MAC address created in the OVHcloud Control Panel
 - GATEWAY_IP = The address of your default gateway
 
 #### Assigning a virtual MAC address
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click on the `server`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click on the `Server`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table.
 
 ![Failover IP](images/virtual_mac_01_2020.png){.thumbnail}
 
@@ -59,6 +65,11 @@ Your gateway address would therefore be:
 - 123.456.789.254
 
 ### Configuring pfSense
+
+> [!primary]
+>
+Concerning external software, please note that the proper procedure to configure your services may be subject to change. We recommend to consult the manuals and knowledge resources of the respective software if you experience any issues.
+> 
 
 When you’re setting up pfSense on our network, the usual place to start would be the console of pfSense. Because our network does require the public IP to be using a /32(255.255.255.255) subnet mask plus gateway is outside the scope of the public IP, the console will in fact not allow you to do this. To do this, you are going to have to start by setting up the LAN side first.
 
@@ -188,7 +199,7 @@ Since we’re running pfSense as a virtual machine and it doesn’t have it’s 
 
 ![pfSense optimize 1](images/pfsense-vm-trouble-1_1.png){.thumbnail}
 
-In this menu, select the `Networking`{.action} tab. At the bottom of this menu, make sure the settings are matching from what is shown in the bellow screenshots.
+In this menu, select the `Networking`{.action} tab. At the bottom of this menu, make sure the settings are matching from what is shown in the below screenshots.
 
 ![pfSense optimize 2](images/pfsense-vm-trouble-1_2.png){.thumbnail}
 
