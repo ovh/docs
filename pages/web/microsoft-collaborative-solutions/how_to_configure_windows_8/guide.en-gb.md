@@ -162,4 +162,3 @@ Your Exchange 2013 account should now be correctly configured in IMAP.
 Here is a preview of the mailbox:
 
 ![](images/img_1121.jpg){.thumbnail}
-
