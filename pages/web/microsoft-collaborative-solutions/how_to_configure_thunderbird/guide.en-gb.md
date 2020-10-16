@@ -1,7 +1,7 @@
 ---
 title: 'Configuring your Exchange account in Thunderbird for Windows'
 slug: exchange-configuration-thunderbird
-section: 'Email Clients'
+section: Email clients
 excerpt: 'Find out how to add an Exchange account on Thunderbird'
 ---
 
