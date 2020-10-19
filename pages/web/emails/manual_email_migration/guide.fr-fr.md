@@ -47,7 +47,7 @@ Les instructions qui suivent sont décomposées en deux parties :
 
 - Cliquez sur `fichier` en haut à gauche, puis sur `Ouvrir et exporter` et enfin sur `importer/exporter`
 
-![emails](outlook-export-import-win.png){.thumbnail}
+![emails](images/outlook-export-import-win.png){.thumbnail}
 
 - Sélectionnez `Exporter des données vers un fichier` puis cliquez sur`Suivant`. 
 
@@ -78,7 +78,7 @@ L'exportation de votre fichier commence. Lors de la création d'un fichier, il v
 
 - Cliquez sur `fichier` en haut à gauche, puis sur `Ouvrir et exporter` et enfin sur `importer/exporter`
 
-![emails](outlook-export-import-win.png){.thumbnail}
+![emails](images/outlook-export-import-win.png){.thumbnail}
 
 - Sélectionnez `Importer à partir d’un autre programme ou fichier` puis cliquez sur`Suivant`. 
 
