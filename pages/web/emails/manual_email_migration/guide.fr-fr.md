@@ -172,11 +172,11 @@ Un tableau apparaît. Identifier la ligne `Répertoire de profil`{.action} et cl
 
 Vous serez alors dirigé dans le dossier du profil. Remontez d'un dossier dans l'arborescence.
 
-![emails](images/thunderbird_open_folder1.png){.thumbnail}
+![emails](images/thunderbird_profil_folder1.png){.thumbnail}
 
 Copier le dossier du profil via un clic droit sur celui-ci et allez le coller dans le dossier ou support de votre choix.
 
-![emails](images/thunderbird_open_folder2.png){.thumbnail}
+![emails](images/thunderbird_profil_folder2.png){.thumbnail}
 
 #### Importer
 
