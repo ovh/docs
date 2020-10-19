@@ -6,7 +6,7 @@ section: Migration
 order: 1
 ---
 
-**Dernière mise à jour le 17/08/2020**
+**Dernière mise à jour le 19/10/2020**
 
 ## Objectif
 
