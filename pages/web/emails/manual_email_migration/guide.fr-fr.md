@@ -78,7 +78,7 @@ L'exportation de votre fichier commence. Lors de la création d'un fichier, il v
 
 - Cliquez sur `fichier` en haut à gauche, puis sur `Ouvrir et exporter` et enfin sur `importer/exporter`
 
-![emails](images/outlook-export-import-win.png){.thumbnail}
+![emails](outlook-export-import-win.png){.thumbnail}
 
 - Sélectionnez `Importer à partir d’un autre programme ou fichier` puis cliquez sur`Suivant`. 
 
@@ -102,15 +102,15 @@ L'importation de votre sauvegarde se lance.
 
 Dans l’onglet `Outils` de votre fenêtre Outlook, cliquez sur `Exporter`.
 
-![emails](images/outlook-export-mac01){.thumbnail}
+![emails](images/outlook-export-mac01.png){.thumbnail}
 
 Depuis la fenêtre « Exporter vers un fichier archive (.olm) », cochez les éléments que vous souhaitez ajouter à votre fichier sauvegarde, puis cliquez sur `Continuer`.
 
-![emails](images/outlook-export-mac02){.thumbnail}
+![emails](images/outlook-export-mac02.png){.thumbnail}
 
 Sélectionnez ensuite le dossier de destination pour votre sauvegarde, puis cliquez sur `Enregistrer`
 
-![emails](images/outlook-export-mac03){.thumbnail}
+![emails](images/outlook-export-mac03.png){.thumbnail}
 
 Une fenêtre de progression s'affichera, cliquez sur `Continuer` à la fin de l'opération. Vous retrouverez votre fichier de sauvegarde dans le dossier choisi précédemment.
 
@@ -118,15 +118,15 @@ Une fenêtre de progression s'affichera, cliquez sur `Continuer` à la fin de l'
 
 Dans l’onglet `Outils` de votre fenêtre Outlook, cliquez sur `Importer`.
 
-![emails](images/outlook-import-mac01){.thumbnail}
+![emails](images/outlook-import-mac01.png){.thumbnail}
 
 Choisissez le format de sauvegarde que vous allez importer, puis cliquez sur `Continuer`.
 
-![emails](images/outlook-import-mac02){.thumbnail}
+![emails](images/outlook-import-mac02.png){.thumbnail}
 
 Sélectionnez votre fichier de sauvegarde, puis cliquez sur `importer`.
 
-![emails](images/outlook-import-mac03){.thumbnail}
+![emails](images/outlook-import-mac03.png){.thumbnail}
 
 Une fenêtre de progression s'affichera, cliquez sur `Continuer` à la fin de l'opération. Votre sauvegarde est alors déployée sur votre Outlook
 
