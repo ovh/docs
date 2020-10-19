@@ -136,11 +136,11 @@ Une fenêtre de progression s'affichera, cliquez sur `Continuer` à la fin de l'
 
 Depuis la colonne de gauche, sélectionnez un ou plusieurs comptes e-mail. Cliquez sur  `Boîte aux lettres` dans le menu horizontal, puis sur `Exporter la boîte aux lettres`.
 
-![emails](images/thunderbird-menu.png){.thumbnail}
+![emails](images/mail-export-mac01.png){.thumbnail}
 
 Sélectionnez le dossier de votre choix ou créez-en un nouveau, puis cliquez sur `Choisir`.
 
-![emails](images/thunderbird-menu.png){.thumbnail}
+![emails](images/mail-export-mac02.png){.thumbnail}
 
 Votre exportation se présente sous forme d'un fichier « .mbox ». 
 
@@ -148,11 +148,11 @@ Votre exportation se présente sous forme d'un fichier « .mbox ».
 
 Cliquez sur `Fichier` dans le menu horizontal, puis sur `Importer des boîtes aux lettres`.
 
-![emails](images/mail-mac01.png){.thumbnail}
+![emails](images/mail-import-mac01.png){.thumbnail}
 
 Sélectionnez votre fichier de sauvegarde au format « .mbox », puis cliquez sur `Continuer`.
 
-![emails](images/mail-mac02.png){.thumbnail}
+![emails](images/mail-import-mac02.png){.thumbnail}
 
 Depuis la colonne de gauche, les e-mails importés se trouvent dans un nouveau compte e-mail nommée « Importation ». Vous pouvez faire glisser les dossiers et les messages à partir du compte « Importation » vos comptes e-mail déjà configurés. Une fois vos transferts terminés, vous pourrez supprimer le compte « Importation ».
 
@@ -164,7 +164,7 @@ Il n'existe actuellement pas d'outil natif pour exporter ou importer son compte 
 
 Depuis la fenêtre principale cliquez sur le menu en haut à droite puis sur `Aide` et enfin sur `Informations de dépannage`
 
-![emails](images/thunderbird-menu.png){.thumbnail}
+![emails](images/thunderbird_menu.png){.thumbnail}
 
 Un tableau apparaît. Identifier la ligne `Répertoire de profil`{.action} et cliquez sur le bouton `Ouvrir le dossier correspondant`
 
