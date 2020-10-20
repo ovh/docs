@@ -2,7 +2,7 @@
 title: 'Changing a Windows Server product key'
 excerpt: 'Find out how to modify your Windows Server product key'
 slug: windows-key
-section: 'Server Management'
+section: 'Server management'
 ---
 
 **Last updated 20th July 2018**
