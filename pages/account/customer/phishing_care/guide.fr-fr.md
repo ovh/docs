@@ -102,3 +102,11 @@ Connectez-vous sur votre [espace client OVHcloud](https://www.ovh.com/auth/?acti
 [Sécuriser son compte OVHcloud avec la double authentification](../securiser-son-compte-avec-une-2FA/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+
+## exemple d'email frauduleux
+- Email en provenance de "OVHrenouvellement" avec un replyto "nomdevotredomaine@nomdevotredomaine.com"
+- un lien de "désabonnement" qui renvoi publiquement à contacter:
+arthro.tonic@orange.fr lorsqu'on clique tout en bas en mailto "votrepropreadressedecontact@votrenomdedomaine.com" par exemple.
+- un lien de renouvellement qui ouvre directement une demande de paiement type http://edvyne.com/ (ce site n'est pas géré par OVH en terme de renouvellement, c'est une arnaque!).
+- solution: aller dans son OVH manager et vérifier soi-même sa propre date de renouvellement automatique et si celui-ci n'est pas automatique il vaut mieux se rapprocher directement du service assistance OVH.
+
