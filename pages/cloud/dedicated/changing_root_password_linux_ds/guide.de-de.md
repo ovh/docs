@@ -2,7 +2,8 @@
 title: 'Root-Passwort auf einem Linux Dedicated Server ändern'
 slug: root-passwort-aendern-linux-dedicated-server
 excerpt: 'So ändern Sie das Root-Passwort auf einem Linux Dedicated Server'
-section: 'Diagnose und Rescue-Modus'
+section: 'Server Management'
+order: 1
 ---
 
 **Stand 02.04.2019**
