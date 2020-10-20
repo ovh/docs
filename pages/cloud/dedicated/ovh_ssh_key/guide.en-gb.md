@@ -2,7 +2,7 @@
 title: 'Installing an OVH SSH key'
 slug: ovh-ssh-key
 excerpt: 'This guide will explain how to install an OVH SSH key, allowing our administrators to make changes'
-section: 'Getting started'
+section: 'Diagnostics and rescue mode'
 ---
 
 **Last updated 12th February 2018**
