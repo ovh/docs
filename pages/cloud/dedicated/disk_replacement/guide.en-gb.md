@@ -2,7 +2,7 @@
 title: 'Replacing a defective disk'
 slug: disk-replacement
 excerpt: 'Find out how to identify a defective disk, and request a replacement'
-section: 'Server Management'
+section: 'Diagnostics and rescue mode'
 ---
 
 **Last updated 21st June 2018**
@@ -180,11 +180,11 @@ If you have a server that uses soft RAID, we recommend that you resync your disk
 
 ## Go further
 
-[Software RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external}
+[Software RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/)
 
-[Hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard){.external}
+[Hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard)
 
-[Rescue Mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}
+[Rescue Mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/)
 
 
 Join our community of users on <https://community.ovh.com/en/>.
