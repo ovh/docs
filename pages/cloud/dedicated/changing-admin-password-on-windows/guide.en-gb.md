@@ -2,7 +2,7 @@
 title: 'Changing the admin password on a Windows dedicated server'
 slug: windows-admin-password-change
 excerpt: 'Find out how to change the admin password on a Windows dedicated server'
-section: 'Server Management'
+section: 'Server management'
 order: 2
 ---
 
