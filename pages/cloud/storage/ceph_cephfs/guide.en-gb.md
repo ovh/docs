@@ -98,7 +98,7 @@ Create a file called ```/etc/ceph/ceph.client.CEPHFS_USER.keyring``` with follow
 	key = AQBm7o8fhns1HBAAgaLzICzJfjgU/U2lkVy+zA==
 ```
 
-Finally you can mount you filesystem:
+Finally you can mount your filesystem:
 ```bash
 mkdir /mnt/cephfs
 mount -t ceph -o name=CEPHFS_USER :/ /mnt/cephfs/
