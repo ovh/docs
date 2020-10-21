@@ -2,7 +2,7 @@
 title: 'Configuring an IP block in a vRack'
 slug: ip-block-vrack
 excerpt: 'This guide will show you how to configure a block of public IP addresses for use with the vRack.'
-section: 'Network Management'
+section: 'Network management'
 ---
 
 **Last updated 29th June 2018**
