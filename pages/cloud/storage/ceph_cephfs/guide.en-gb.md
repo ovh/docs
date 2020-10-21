@@ -70,7 +70,7 @@ Grants you need are ```read```, ```write```.
 
 ## Mounting CephFS on your host
 
-Install ```ceph-common``` package that containe ```/sbin/mount.ceph``` binary. Package name may be different for your disribution. In example below we use Debian based one:
+Install ```ceph-common``` package that contains ```/sbin/mount.ceph``` binary. Package name may be different for your disribution. In example below we use Debian based one:
 ```bash
 apt install --no-install-recommends ceph-common
 ```

@@ -19,7 +19,7 @@ There are also other ways to access Ceph which are not currently available for C
 - NFS and CIFS (SAMBA) gateways for CephFS - for integration with existing Windows or Linux environments
 - inter-DC replication
 
-Our goal is to provide to customers all features of Ceph inside a service managed by OVH. Let us know in which interfaces you're interested.
+Our goal is to provide to customers all features of Ceph inside a service managed by OVH. Let us know which interfaces you're interested in.
 
 
 ## Where is my data stored?
