@@ -2,7 +2,7 @@
 title: 'Rescue-Modus aktivieren und verwenden'
 slug: ovh-rescue
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie den Rescue-Modus für einen dedizierten Server aktivieren und verwenden.'
-section: 'Diagnose und Rescue-Modus'
+section: 'Diagnose & Rescue Modus'
 ---
 
 **Stand 22.08.2018**

@@ -1,7 +1,7 @@
 ---
 title: CUDA auf einem GPU Dedicated Server installieren
 slug: installation-cuda-gpu-server
-section: Verschiedenes
+section: Fortgeschrittene Nutzung
 ---
 
 **Stand 08.03.2018**

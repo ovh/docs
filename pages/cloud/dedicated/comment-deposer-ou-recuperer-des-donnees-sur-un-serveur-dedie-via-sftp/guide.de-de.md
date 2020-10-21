@@ -2,7 +2,7 @@
 title: 'Daten via SFTP auf einem dedizierten Server ablegen oder herunterladen'
 slug: daten-via-sftp-exportieren-und-ablegen
 excerpt: 'Hier erfahren Sie, wie Sie Daten ganz einfach von Ihrem Server auf Ihren PC übertragen oder umgekehrt.'
-section: Tutoriel
+section: Tutorial
 ---
 
 **Stand: 05.04.2019**

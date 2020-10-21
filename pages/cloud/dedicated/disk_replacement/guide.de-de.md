@@ -2,7 +2,7 @@
 title: 'Eine defekte Festplatte austauschen'
 slug: disk-replacement
 excerpt: 'In dieser Anleitung erklären wir Ihnen, wie Sie eine defekte Festplatte erkennen und deren Austausch beantragen.'
-section: 'RAID & Festplatten'
+section: 'Diagnose & Rescue Modus'
 ---
 
 **Stand 28.08.2018**
@@ -203,11 +203,11 @@ Wenn Sie über einen Software-RAID verfügen, muss die Resynchronisation Ihrer F
 
 ## Weiterführende Informationen
 
-[Software-RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external} (Englisch)
+[Software-RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/) (Englisch)
 
-[Hardware-Raid](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} (Englisch)
+[Hardware-Raid](https://docs.ovh.com/gb/en/dedicated/raid-hard/) (Englisch)
 
-[Rescue-Modus](https://docs.ovh.com/de/dedicated/ovh-rescue/){.external}
+[Rescue-Modus](https://docs.ovh.com/de/dedicated/ovh-rescue/)
 
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
