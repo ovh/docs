@@ -2,7 +2,7 @@
 title: 'Activating and using rescue mode'
 slug: ovh-rescue
 excerpt: 'How to activate and use rescue mode on a Dedicated Server'
-section: 'Diagnostic and rescue mode'
+section: 'Diagnostics and rescue mode'
 ---
 
 **Last updated 04 April 2019**

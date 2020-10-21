@@ -2,7 +2,7 @@
 title: 'IPv6 auf einem Dedicated Server konfigurieren'
 slug: netzwerk-ipv6
 excerpt: 'Erfahren Sie hier, wie Sie IPv6-Adressen auf unserer Infrastruktur konfigurieren'
-section: 'IP & Netzwerk'
+section: 'Netzwerk & IP'
 ---
 
 **Letzte Aktualisierung am 20.07.2020**

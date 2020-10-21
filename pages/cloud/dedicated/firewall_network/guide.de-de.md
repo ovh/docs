@@ -2,7 +2,7 @@
 title: 'Konfiguration des Firewall Network'
 slug: firewall-network
 excerpt: 'Hier erfahren Sie, wie Sie Firewall Network konfigurieren.'
-section: 'IP & Netzwerk'
+section: 'Netzwerk & IP'
 ---
 
 **Stand 08.11.2018**

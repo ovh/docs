@@ -2,7 +2,7 @@
 title: 'Starting your server on an OVH kernel'
 slug: kernel-netboot
 excerpt: 'This guide explains how to network boot your server on to an OVH kernel.'
-section: 'Server Management'
+section: 'Server management'
 ---
 
 **Last updated 25th July 2018**

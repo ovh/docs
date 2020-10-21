@@ -143,13 +143,25 @@ ingress-lb   LoadBalancer   10.3.242.23   xxx.xxx.xxx.xxx    80:30113/TCP,443:30
 
 Now you need to patch the Ingress controller to support the proxy protocol.
 
-Copy the next YAML snippet in a `patch-ingress-configmap.yml` file:
+Get the list of the egress load balancer IPs:
+
+```bash
+kubectl get svc ingress-lb -n ingress-nginx -o jsonpath="{.metadata.annotations.lb\.k8s\.ovh\.net/egress-ips}"
+```
+
+You should see something like this:
+
+<pre class="console"><code>$ kubectl get svc ingress-lb -n ingress-nginx -o jsonpath="{.metadata.annotations.lb\.k8s\.ovh\.net/egress-ips}"
+aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32,eee.eee.eee.eee/32,fff.fff.fff.fff/32
+</code></pre>
+
+Copy the next YAML snippet in a `patch-ingress-configmap.yml` file and modify the `set-real-ip-from` parameter accordingly:
 
 ```yaml
 data:
   use-proxy-protocol: "true"
   real-ip-header: "proxy_protocol"
-  set-real-ip-from: "10.108.0.0/14"
+  set-real-ip-from: "aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32,eee.eee.eee.eee/32,fff.fff.fff.fff/32"
 ```
 
 And apply it in  your cluster:
@@ -161,15 +173,15 @@ kubectl -n ingress-nginx patch configmap ingress-nginx-controller -p "$(cat patc
 After applying the patch, you need to restart the Ingress Controller:
 
 ```bash
-kubectl -n ingress-nginx get pod | grep 'ingress' | cut -d " " -f1 - | xargs -n1 kubectl -n ingress-nginx delete pod
+kubectl rollout restart deploy/ingress-nginx-controller -n ingress-nginx
 ```
 
 You should see the configuration being patched and the controller pod deleted (and recreated):
 
 <pre class="console"><code>$ kubectl -n ingress-nginx patch configmap nginx-configuration -p "$(cat patch-ingress-configmap.yml)"
 configmap/nginx-configuration patched
-$ kubectl -n ingress-nginx get pod | grep 'ingress' | cut -d " " -f1 - | xargs -n1 kubectl -n ingress-nginx delete pod
-pod "nginx-ingress-controller-86449c74bb-cfwnv" deleted</code></pre>
+$ kubectl rollout restart deploy/ingress-nginx-controller -n ingress-nginx
+deployment.apps/ingress-nginx-controller restarted</code></pre>
 
 ### 4. Testing
 

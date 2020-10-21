@@ -11,12 +11,15 @@ Cloud Disk Array (CDA) is a private, dedicated (on disk level) storage system po
 
 - RADOS (low-level Ceph-specific object storage) - when building a custom application that depends on Ceph
 - RBD (block devices) - can be used in dedicated servers with Linux or for VM disks in OpenStack and Proxmox environments
-- (soon) RGW (REST object storage) - can be used to build a CDN (with an OVH provided load-balancer)
-- (later) CephFS (NFS-like filesystem)
-- (later) NFS and CIFS (SAMBA) gateways for CephFS - for integration with existing Windows or Linux environments
-- (later) inter-DC replication
+- CephFS (NFS-like filesystem) - provides distributed filesystem for all modern Linux distributions
 
-Our goal is to provide to customers all features of Ceph inside a service managed by OVH.
+There are also other ways to access Ceph which are not currently available for CDA:
+- iSCSI gateway for RBD - for integration with existing environment with iSCSI support
+- RGW (REST object storage) - can be used to build a CDN (with an OVH provided load-balancer)
+- NFS and CIFS (SAMBA) gateways for CephFS - for integration with existing Windows or Linux environments
+- inter-DC replication
+
+Our goal is to provide to customers all features of Ceph inside a service managed by OVH. Let us know which interfaces you're interested in.
 
 
 ## Where is my data stored?
