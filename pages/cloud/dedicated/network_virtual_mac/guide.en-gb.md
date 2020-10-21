@@ -2,7 +2,7 @@
 title: Assigning a Virtual MAC to a Failover IP
 slug: network-virtual-mac
 excerpt: This guide will show you how to create a virtual MAC address and assign it to a failover IP address.
-section: Network Management
+section: Network management
 ---
 
 **Last updated 21st June 2018**
