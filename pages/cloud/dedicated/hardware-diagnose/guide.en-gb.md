@@ -2,7 +2,7 @@
 title: 'Hardware diagnostics'
 slug: hardware-diagnostics
 excerpt: 'This guide will show you how to diagnose hardware issues on your server.'
-section: 'Diagnostic and rescue mode'
+section: 'Diagnostics and rescue mode'
 ---
 
 **Last updated 07th June 2018**
@@ -16,8 +16,8 @@ At some point during the life of your server, you may encounter a fault due to a
 
 ## Requirements
 
-* a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
-* [rescue mode activated](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}
+- a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
+- [rescue mode activated](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}
 
 
 ## Instructions
