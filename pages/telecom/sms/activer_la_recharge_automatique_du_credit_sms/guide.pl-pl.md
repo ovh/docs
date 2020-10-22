@@ -25,9 +25,9 @@ Z tego przewodnika dowiesz się, czym są zasilenia SMS, jak je automatycznie do
 
 Listę pakietów zasileń SMS znajdziesz, klikając następujący link: [https://www.ovh.pl/sms/](https://www.ovh.pl/sms/).
 
-**Przykładowy zakup pakietu 100 zasileń SMS, po 0,36 EUR netto każde:**
+**Przykładowy zakup pakietu 100 zasileń SMS, po 0,0945 PLN netto każde:**
 
-Wysłanie 1 wiadomości SMS do Polska kosztuje 0,35 zasilenie. Dzięki temu pakietowi możesz wysłać 100 wiadomości SMS do Polska.
+Wysłanie 1 wiadomości SMS do Polska kosztuje 0,35 zasilenie. Dzięki temu pakietowi możesz wysłać 286 wiadomości SMS do Polska.
 Wysłanie 1 wiadomości SMS do Indii kosztuje 0,1 zasilenia. Dzięki temu pakietowi możesz wysłać 1000 wiadomości SMS do Indii.
 
 Koszt wysyłki wiadomości SMS (w zasileniach) w zależności od ich miejsca przeznaczenia znajdziesz, klikając następujący link: [https://www.ovh.pl/sms/cennik/](https://www.ovh.pl/sms/cennik/).
