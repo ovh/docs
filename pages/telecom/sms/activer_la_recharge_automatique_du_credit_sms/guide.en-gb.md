@@ -26,7 +26,7 @@ The purpose of this guide is to explain what SMS credits are, how to set up auto
 
 You can view the list of SMS packs [here](https://www.ovh.co.uk/sms/).
 
-**E.g. to purchase a pack of 100 SMS credits, each credit costs £0.03 ex. VAT.**
+**E.g. to purchase a pack of 100 SMS credits, each credit costs 0.03 ex. VAT.**
 
 Sending 1 SMS message in the United Kingdom costs 0,5 credit. With this pack, you can send 200 SMS messages in in the United Kingdom.
 Sending 1 SMS message in India costs 0.1 credit. With this pack, you can send 1,000 SMS messages in India.
