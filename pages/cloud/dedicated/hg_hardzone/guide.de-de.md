@@ -3,6 +3,7 @@ title: HG Hardzone
 excerpt: Anleitung zur Durchführung von Performance-Tests für den HG Hardzone Server
 slug: hg_hardzone
 legacy_guide_number: g1517
+section: 'RAID & Festplatten'
 ---
 
 Die verschiedenen RAID-Typen sind auf den Server und zwei DAS-Module verteilt. Sie können also sowohl Hardware-RAIDs mit einer LSI Megaraid 9271-4i Karte als auch Software-RAIDs mit verschiedenen Festplattentypen testen.
