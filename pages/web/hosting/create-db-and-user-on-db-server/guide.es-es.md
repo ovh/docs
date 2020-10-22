@@ -95,5 +95,5 @@ Para eliminar una base de datos en su servidor de bases de datos, abra la pesta�
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
 
