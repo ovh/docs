@@ -21,13 +21,13 @@ Questa guida ti spiega cosa sono i crediti SMS, come ricaricarli in modo automat
 
 ### **Pack crediti SMS **
 
-0,8 credito SMS corrisponde al costo per l’invio di 1 SMS in Italia, la tariffa è decrescente in base al numero di crediti SMS acquistati in una sola volta . 
+0,7 credito SMS corrisponde al costo per l’invio di 1 SMS in Italia, la tariffa è decrescente in base al numero di crediti SMS acquistati in una sola volta . 
 
 Per visualizzare la lista completa dei Pack SMS clicca qui: [https://www.ovh.it/sms/](https://www.ovh.it/sms/).
 
-**Ad esempio, per l’acquisto di un pack di 100 crediti SMS, il costo di ciascun credito è pari a 0,0048 € IVA esclusa.**
+**Ad esempio, per l’acquisto di un pack di 100 crediti SMS, il costo di ciascun credito è pari a 0,042 € IVA esclusa.**
 
-Il costo per l’invio di 1 SMS in Italia è pari a 0,8 credito. Con questo pack, è possibile inviare fino a 125 SMS in Francia metropolitana.
+Il costo per l’invio di 1 SMS in Italia è pari a 0,7 credito. Con questo pack, è possibile inviare fino a 143 SMS in Francia metropolitana.
 Il costo per l’invio di 1 SMS in India è pari a 0,1 crediti. Con questo pack è possibile inviare fino a 1000 SMS india.
 
 Per visualizzare i costi, in crediti, per l’invio dei tuoi SMS in base alle loro destinazioni, clicca qui: [https://www.ovh.it/sms/tariffe/](https://www.ovh.it/sms/tariffe/).
