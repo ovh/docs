@@ -305,7 +305,7 @@ After this, the server needs to be rebooted again.
 
 #### Step 3: Rebooting the server 
 
-First, change the netboot back to **Boot from the hard disk** in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) (see [step 1](./#step-1-rebooting-the-server-into-rescue-mode)).
+First, change the netboot back to **Boot from the hard disk** in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) (see [step 1](./#step-1-rebooting-the-server-into-rescue-mode_1)).
 
 Back in the KVM window, select the shutdown option `Restart`{.action} via the Windows "Start" button on the bottom left.
 
