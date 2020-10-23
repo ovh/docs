@@ -18,7 +18,7 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 
 - a [domain name](https://www.ovh.com/asia/domains/){.external} registered with OVHcloud
 - an [OVHcloud Web Hosting plan](https://www.ovh.com/asia/web-hosting/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) with the necessary permissions to manage the Web Hosting plan
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) with the necessary permissions to manage the Web Hosting plan
 
 ## Instructions
 
