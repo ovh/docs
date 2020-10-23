@@ -6,7 +6,7 @@ section: 'Exchange account features'
 order: 2
 ---
 
-**Last updated 30th March 2020**
+**Last updated 24th October 2020**
 
 ## Objective
 
@@ -27,32 +27,33 @@ Before you get started, define the permissions you want to delegate. As a remind
 
 |Permissions|Description|
 |---|---|
-|‘Send As’ permission|Allows the user to send emails as another account. The user sending the email will not appear as the sender. Instead, the account for which the user holds the ‘Send As’ permission will appear as the sender. There is no way for the recipient to tell whether an email has been sent by the original account, or by another user with the ‘Send As’ permission.|
-|‘Send on Behalf’ permission|Allows the user to send on behalf of another account. The user sending the email will not appear as the sender. Instead, the account for which the user holds the ‘Send on Behalf’ permission will appear as the sender. However, in this case there will be a comment showing that the message was sent by another user on behalf of the original account.|
-|'Access' permission|Gives the user read-only access to the account they have been delegated this permission for. This access type does not allow the user to send any emails. It only allows them to view content.|
+|**Send As** permission|Allows the user to send emails as another account. The user sending the email will not appear as the sender. Instead, the account for which the user holds the **Send As** permission will appear as the sender. There is no way for the recipient to tell whether an email has been sent by the original account, or by another user with the **Send As** permission.|
+|**Send on Behalf** permission|Allows the user to send on behalf of another account. The user sending the email will not appear as the sender. Instead, the account for which the user holds the **Send on Behalf** permission will appear as the sender. However, in this case there will be a comment showing that the message was sent by another user on behalf of the original account.|
+|**Access** permission|Gives the user read-only access to the account they have been delegated this permission for. This access type does not allow the user to send any emails. It only allows them to view content.|
 
 > [!warning]
 >
-> The ‘Send As’ and ‘Send on Behalf’ permissions cannot be used together at the same time. However, you can combine other permissions.
+> The "Send As" and "Send on Behalf" permissions cannot be used together at the same time. However, you can combine other permissions.
 > 
 
 When you have identified the account that you want to delegate permissions for, determined the kinds of permissions you want to delegate, and listed the users that will be delegated these permissions, go to the next step.
 
 ### Step 1: Setting up the delegation
 
-To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Then click on the name of the Exchange service containing the account that you want to delegate permissions for. Next, go to the `Email accounts`{.action} tab.
+To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). Click on `Microsoft`{.action} in the services bar on the left-hand side, then on `Exchange`{.action}. Select the Exchange service containing the account that you want to delegate permissions for. Next, go to the `Email accounts`{.action} tab.
 
-The table that appears will list all of the accounts linked to your Exchange service. Click on the three dots to the right of the account you want to delegate permissions for, then `Manage delegations`{.action}.
+The table that appears will list all of the accounts linked to your Exchange service. Click on the three dots to the right of the account you want to delegate permissions for, then on `Manage delegations`{.action}.
 
 ![delegation](images/delegation-step1.png){.thumbnail}
 
-In the page that pops up, select the permissions you want to delegate. You will need to link them to one or more accounts that you wish to grant the permissions to. Then press `Next`{.action}.
+In the configuration window, select the permissions you want to delegate. You will need to link them to one or more accounts that you wish to grant the permissions to. Then press `Next`{.action}.
 
 ![delegation](images/delegation-step2.png){.thumbnail}
 
 Take a few moments to check the change summary. If the information in the summary is correct, click `Confirm`{.action}. Within a few minutes, the delegation will be created on our servers.
 
-Once the delegation has been configured, *test@mypersonaldomain.ovh* can carry out the selected actions on the *test2@mypersonaldomain.ovh* account.
+Once the delegation has been configured, *test@mypersonaldomainname.ovh* can carry out the selected actions on the *test2@mypersonaldomainname
+.ovh* account.
 
 ### Step 2: Using the delegated permissions
 
@@ -78,7 +79,7 @@ In the window that pops up, enter the name for the account that holds the delega
 
 - **From the Outlook application for Windows**
 
-In the Outlook 2016 application, click `File`{.action} in the menu bar at the top of your screen, then `Account Settings`{.action}. In the dropdown menu, click again on `Account Settings`{.action}. In the window that pops up, select the account with the delegated permission, then click `Change`{.action}. 
+In the Outlook 2016 application, click `File`{.action} in the menu bar at the top of your screen, then `Account Settings`{.action}. In the drop-down menu, click again on `Account Settings`{.action}. In the window that pops up, select the account with the delegated permission, then click `Change`{.action}. 
 
 ![delegation](images/delegation-step4.png){.thumbnail}
 
@@ -86,13 +87,13 @@ Next, click on `More Settings`{.action}. In the new window, go to the `Advanced`
 
 ![delegation](images/delegation-step5.png){.thumbnail}
 
-#### 2.2 Using the ‘Send As’ permission
+#### 2.2 Using the "Send As" permission
 
 - **From the Outlook Web Application (OWA)**
 
 Log in via the [OVHcloud webmail](https://www.ovh.co.uk/mail) using the credentials for the Exchange account that has been delegated permissions. Once you have logged in, start editing a new email by clicking `+ New`{.action}.
 
-In the zone that appears, click on the three dots, then `Show From`{.action}. Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated that permission for). If it doesn’t appear, delete the address that is already displayed, and enter the address you want to appear. 
+In the zone that appears, click on the three dots, then `Show From`{.action}. Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated that permission for). If the correct address is not listed, delete the one that is already displayed, and enter the address you want to appear. 
 
 At this stage, you are now ready to write and send your email. 
 
@@ -102,19 +103,19 @@ At this stage, you are now ready to write and send your email.
 
 In your Outlook 2016 application, start editing a new email. Ensure that the `From`{.action} button is visible in the editing window. If it is not visible, go to the `Options`{.action} tab, then click `From`{.action}.
 
-Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated permissions for). If it doesn’t appear, click `Other Email Address`{.action}, enter the email address you would like to appear as the sender, then confirm. 
+Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated permissions for). If it is not displayed, click `Other Email Address`{.action}, enter the email address you would like to appear as the sender, then confirm. 
 
 At this stage, you are now ready to write and send your email. 
 
 ![delegation](images/delegation-step7.png){.thumbnail}
 
-#### 2.3 Use the ‘Send on Behalf’ permission.
+#### 2.3 Use the "Send on Behalf" permission.
 
 - **From the Outlook Web Application (OWA)**
 
 Log in via the [OVHcloud webmail](https://www.ovh.co.uk/mail) using the credentials for the Exchange account that has been delegated permissions. Once you have logged in, start editing a new email by clicking `+ New`{.action}.
 
-In the zone that appears, click on the three dots, then `Show From`{.action}. Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated permissions for). If it doesn’t appear, delete the address that is already displayed, and enter the address you want to appear. 
+In the zone that appears, click on the three dots, then `Show From`{.action}. Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated permissions for). If the correct address is not listed, delete the one that is already displayed, and enter the address you want to appear. 
 
 At this stage, you are now ready to write and send your email. 
 
@@ -124,7 +125,7 @@ At this stage, you are now ready to write and send your email.
 
 In your Outlook 2016 application, start editing a new email. Ensure that the `From`{.action} button is visible in the editing window. If it is not visible, go to the `Options`{.action} tab, then click `From`{.action}.
 
-Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated permissions for). If it doesn’t appear, click `Other Email Address`{.action}, enter the email address you would like to appear as the sender, then confirm. 
+Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated permissions for). If it is not displayed, click `Other Email Address`{.action}, enter the email address you would like to appear as the sender, then confirm. 
 
 At this stage, you are now ready to write and send your email. 
 
@@ -133,10 +134,10 @@ At this stage, you are now ready to write and send your email.
 
 ## Go further
 
-[Using the Outlook Web App with an Exchange account](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide)
+[Using the Outlook Web App with an Exchange account](../exchange_2016_outlook_web_app_user_guide)
 
-[Sharing folders in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_share_a_folder_via_owa)
+[Sharing folders in OWA](../exchange_2016_how_to_share_a_folder_via_owa)
 
-[Creating contact groups](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_20132016_how_to_use_the_groups_feature_mailing_lists)
+[Creating contact groups](../exchange_20132016_how_to_use_the_groups_feature_mailing_lists)
 
 Join our community of users on <https://community.ovh.com/en/>.
