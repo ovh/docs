@@ -2,7 +2,7 @@
 title: 'Configuring a network bridge'
 slug: network-bridging
 excerpt: 'This guide will show you how configure your virtual machines for access to the public internet'
-section: 'Network Management'
+section: 'Network management'
 ---
 
 **Last updated 27th May 2019**
@@ -17,22 +17,22 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 
 ## Requirements
 
-* a Dedicated Server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
-* at least one [failover IP](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml) address attached to the server
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- a Dedicated Server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
+- at least one [failover IP](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml) address attached to the server
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
 The basic steps are always the same - independent of the Systems used:
-* creating a virtual MAC address for a fail-over IP
-* setting the MAC of the VM to that new virtual MAC address
-* configuring the **IP address**, **netmask**, **gateway** and **route to the gateway** inside the VM
+- creating a virtual MAC address for a fail-over IP
+- setting the MAC of the VM to that new virtual MAC address
+- configuring the **IP address**, **netmask**, **gateway** and **route to the gateway** inside the VM
 
 For these examples, we will use the following values in our code samples, which should be replaced with your own values:
 
-* SERVER_IP = The main IP address of your server
-* FAILOVER_IP = The address of your failover IP
-* GATEWAY_IP = The address of your default gateway
+- SERVER_IP = The main IP address of your server
+- FAILOVER_IP = The address of your failover IP
+- GATEWAY_IP = The address of your default gateway
 
 ### Assign a virtual MAC address
 
@@ -52,11 +52,11 @@ Select `OVH`{.action} from the `Type`{.action} dropdown box - unless you're usin
 
 To configure your virtual machines for internet access, you will need to know the gateway of your host machine (i.e. your Dedicated Server). The gateway address is made up of the first three octets of your server's main IP address, with 254 as the last octect. For example, if your server's main IP address is:
 
-* 123.456.789.012
+- 123.456.789.012
 
 Your gateway address would therefore be:
 
-* 123.456.789.**254**
+- 123.456.789.**254**
 
 ### Prepare the Host
 

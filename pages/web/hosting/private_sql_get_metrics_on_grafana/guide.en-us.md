@@ -87,7 +87,7 @@ They are two different infrastructures.
 ## Connect to the OVHcloud API
 Use the following link to connect to the OVHcloud API, and then click "Login" to connect.
 
-[https://api.ovh.com/console/](https://api.ovh.com/console/)
+[https://ca.api.ovh.com/console/](https://ca.api.ovh.com/console/)
 
 ![ovhapi1](images/img_3662.jpg){.thumbnail}
 

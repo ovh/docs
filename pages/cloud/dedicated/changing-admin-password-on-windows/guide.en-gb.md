@@ -22,7 +22,7 @@ When you install or reinstall a Windows operating system, you are provided with 
 
 ## Instructions
 
-The following steps describe the process of changing the local admin password by using the always available OVHcloud rescue mode (Linux-based). If you would like to use Windows PE (WinRescue) instead, skip to the pertinent section [at the end of this guide](./#resetting-the-admin-password-using-winrescue). 
+The following steps describe the process of changing the local admin password by using the always available OVHcloud rescue mode (Linux-based). If you would like to use Windows PE (WinRescue) instead, skip to the pertinent section [at the end of this guide](./#resetting-the-admin-password-using-winrescue_1). 
 
 ### Step 1: Rebooting the server into rescue mode
 
@@ -40,7 +40,7 @@ For more information about rescue mode, please refer to [this guide](../ovh-resc
 
 ### Step 2: Mounting the system partition
 
-Connect to your server via SSH. (Consult the [SSH introduction guide](../ssh-introduction/) if needed.) Since it is a Windows server, you will see partitions labelled "Microsoft LDM data".
+Connect to your server via SSH. (Consult the [SSH introduction guide](../ssh-introduction/) if necessary.) Since it is a Windows server, you will see partitions labelled "Microsoft LDM data".
 
 ```
 # fdisk -l
@@ -163,7 +163,7 @@ Total  login count: 5
  q - Quit editing user, back to user select
 Select: [q] >
 ```
-Type "1" and press "↩". (Make use of option 2 first if there is an "X" at "Disabled".)
+Type "1" and press Enter ("↩"). (Make use of option 2 first if there is an "X" next to "Disabled".)
 
 ```
 Select: [q] > 1
@@ -200,7 +200,7 @@ Total  login count: 5
  q - Quit editing user, back to user select
 Select: [q] >
 ```
-Type "q" and press enter to quit the tool. Type "y" when prompted and press "↩".
+Type "q" and press Enter to quit the tool. Type "y" when prompted and press Enter.
 
 ```
 Select: [q] > q
@@ -214,7 +214,7 @@ Write hive files? (y/n) [n] : y
 
 ### Step 4: Rebooting the server 
 
-First, change the netboot back to **Boot from the hard disk** in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) (see step 1).
+First, change the netboot back to **Boot from the hard disk** in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) (see [step 1](./#step-1-rebooting-the-server-into-rescue-mode)).
 
 Back in the CLI, unmount the partition and restart the server with these commands:
 
@@ -240,7 +240,7 @@ There should be a password expiration message in the login interface.
 
 ![pwreset](images/adminpw_win_04.png){.thumbnail}
 
-The new password for the admin user must now be entered twice. However, the confirmation field is not yet visible, meaning you need to leave the first field blank, type your new password into the second field, then use the tabulator key (↹) on the (virtual) keyboard to switch to the third field ("Confirm password"). Type the password again and click on the arrow to save it.
+The new password for the admin user must now be entered twice. However, the confirmation field is not yet visible, meaning you need to leave the first field blank, type your new password into the second field, then use the tabulator key ("↹") on the (virtual) keyboard to switch to the third field ("Confirm password"). Type the password again and click on the arrow to save it.
 
 ![enterpw](images/adminpw_win_05.png){.thumbnail}
 
@@ -263,7 +263,7 @@ net user Administrator *
 
 > [!primary]
 >
-It is advisabe to use the virtual keyboard when typing passwords in this interface.
+It is advisable to use the virtual keyboard when typing passwords in this interface.
 >
 
 
@@ -305,11 +305,11 @@ After this, the server needs to be rebooted again.
 
 #### Step 3: Rebooting the server 
 
-First, change the netboot back to **Boot from the hard disk** in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) (see step 1).
+First, change the netboot back to **Boot from the hard disk** in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) (see [step 1](./#step-1-rebooting-the-server-into-rescue-mode_1)).
 
 Back in the KVM window, select the shutdown option `Restart`{.action} via the Windows "Start" button on the bottom left.
 
-Continue with [Step 5: Setting a new password(IPMI)](./#step-5-setting-a-new-password-ipmi).
+Continue with [Step 5: Setting a new password (IPMI)](./#step-5-setting-a-new-password-ipmi).
 
 
 ## Go further

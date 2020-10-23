@@ -49,7 +49,7 @@ Otrzymałeś wiadomość e-mail od OVHcloud i chcesz się upewnić, czy to nie p
 
 #### Zgłaszanie e-maili typu phishing
 
-Jeśli po sprawdzeniu otrzymanej wiadomości zgodnie z podanymi wyżej wytycznymi podejrzewasz, że otrzymałeś e-mail typu phishing podszywający się pod OVHcloud, prześlij nam jak najwięcej informacji (przynajmniej informację o zawartości e-maila) na następujący adres: **<fraude@ovh.com>**.
+Jeśli po sprawdzeniu otrzymanej wiadomości zgodnie z podanymi wyżej wytycznymi podejrzewasz, że otrzymałeś e-mail typu phishing podszywający się pod OVHcloud, prześlij nam jak najwięcej informacji (przynajmniej informację o zawartości e-maila) na następujący adres: **<fraud@ovh.com>**.
 
 > [!primary]
 > 
