@@ -74,7 +74,7 @@ Depois de preencher os campos, lance a implementação clicando em `Execute`{.ac
 
 ### Verificar a implementação
 
-Pode seguir a implementação da sua imagem através da chamada API abaixo ou através do KVM / [IPMI](../utilisation-ipmi-serveurs-dedies/).
+Pode seguir a implementação da sua imagem através da chamada API abaixo ou através do KVM / [IPMI](../usar-ipmi-servidores-dedicados/).
 
 > [!api]
 >
