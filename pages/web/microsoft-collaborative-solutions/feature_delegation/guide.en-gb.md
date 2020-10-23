@@ -52,8 +52,8 @@ In the configuration window, select the permissions you want to delegate. You wi
 
 Take a few moments to check the change summary. If the information in the summary is correct, click `Confirm`{.action}. Within a few minutes, the delegation will be created on our servers.
 
-Once the delegation has been configured, *test@mypersonaldomainname.ovh* can carry out the selected actions on the *test2@mypersonaldomainname
-.ovh* account.
+Once the delegation has been configured, `test@mypersonaldomainname.ovh` can carry out the selected actions on the `test2@mypersonaldomainname
+.ovh` account.
 
 ### Step 2: Using the delegated permissions
 
