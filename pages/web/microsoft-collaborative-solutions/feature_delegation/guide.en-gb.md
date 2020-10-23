@@ -93,7 +93,7 @@ Next, click on `More Settings`{.action}. In the new window, go to the `Advanced`
 
 Log in via the [OVHcloud webmail](https://www.ovh.co.uk/mail) using the credentials for the Exchange account that has been delegated permissions. Once you have logged in, start editing a new email by clicking `+ New`{.action}.
 
-In the zone that appears, click on the three dots, then `Show From`{.action}. Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated that permission for). If the correct address is not listed, delete the one that is already displayed, and enter the address you want to appear. 
+In the zone that appears, click on the three dots, then `Show From`{.action}. Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated that permission for). If the address is not listed, delete the one that is already displayed, and enter the address you want to appear. 
 
 At this stage, you are now ready to write and send your email. 
 
@@ -115,7 +115,7 @@ At this stage, you are now ready to write and send your email.
 
 Log in via the [OVHcloud webmail](https://www.ovh.co.uk/mail) using the credentials for the Exchange account that has been delegated permissions. Once you have logged in, start editing a new email by clicking `+ New`{.action}.
 
-In the zone that appears, click on the three dots, then `Show From`{.action}. Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated permissions for). If the correct address is not listed, delete the one that is already displayed, and enter the address you want to appear. 
+In the zone that appears, click on the three dots, then `Show From`{.action}. Then click on the `From`{.action} button, and select the email address you want to appear as the sender (i.e. the address you have delegated permissions for). If the address is not listed, delete the one that is already displayed, and enter the address you want to appear. 
 
 At this stage, you are now ready to write and send your email. 
 
