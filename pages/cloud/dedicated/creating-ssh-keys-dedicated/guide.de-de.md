@@ -2,7 +2,8 @@
 title: 'SSH-Schlüssel erzeugen'
 slug: ssh-schluessel-erzeugen
 excerpt: 'Erfahren Sie hier, wie Sie SSH-Schlüssel für eine sichere Verbindung zu Ihrem Server verwenden'
-section: 'Erste Schritte'
+section: 'Sicherheit'
+order: 1
 ---
 
 **Letzte Aktualisierung am 20.07.2020**

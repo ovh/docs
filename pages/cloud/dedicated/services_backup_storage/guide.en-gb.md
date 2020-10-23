@@ -2,7 +2,7 @@
 title: 'Using backup storage on a dedicated server'
 slug: services-backup-storage
 excerpt: 'This guide explains how to enable the Backup Storage functionality and how to use it.'
-section: Storage
+section: Server management
 ---
 
 **Last updated 14th May, 2018**

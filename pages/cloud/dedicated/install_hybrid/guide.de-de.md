@@ -2,7 +2,7 @@
 title: 'Festplattengruppe für die Installation des Betriebssystems auswählen'
 slug: install-hybrid
 excerpt: 'Hier erfahren Sie, wie Sie eine spezifische Festplattengruppe für die Installation Ihres Betriebssystems auswählen.'
-section: 'RAID & Festplatten'
+section: 'Fortgeschrittene Nutzung'
 ---
 
 **Stand 19.07.2018**

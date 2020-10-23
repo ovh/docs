@@ -2,7 +2,7 @@
 title: 'Storage-Backup auf einem dedizierten Server verwenden'
 slug: dienste-storage-backup
 excerpt: 'So aktivieren und verwenden Sie Ihr Storage-Backup'
-section: Storage
+section: Server Management
 ---
 
 **Stand 18.12.2018**

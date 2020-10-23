@@ -2,7 +2,7 @@
 title: Installation des OVH SSH-Schlüssels
 slug: ovh-ssh-schluessel
 excerpt: In dieser Anleitung zeigen wir Ihnen, wie Sie einen OVH SSH-Schlüssel installieren, um unseren Administratoren Zugriff zu gewähren, und diesen anschließend wieder deaktivieren
-section: SSH und SSH-Schlüssel
+section: Diagnose & Rescue Modus
 ---
 
 **Stand 07.03.2018**
