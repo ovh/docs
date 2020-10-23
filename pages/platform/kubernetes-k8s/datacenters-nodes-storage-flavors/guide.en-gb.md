@@ -5,7 +5,7 @@ slug: datacenters-nodes-storage-flavors
 section: Technical resources
 ---
 
-**Last updated April 08<sup>th</sup>, 2020.**
+**Last updated October 23<sup>th</sup>, 2020.**
 
 ## Available datacenters, worker nodes and persistent storage flavors
 
@@ -14,7 +14,7 @@ section: Technical resources
 A Managed Kubernetes Service deploys a Kubernetes Master within a given OVHcloud datacenter.  
 All its worker nodes and persistent volumes are then deployed by the cloud controller in the same region.
 
-Currently the service is available in GRA (Western Europe), SBG (Central Europe) and BHS (North America) regions. All your compute and storage resources will then be spawned in the dedicated region of the associated public cloud project.
+Currently the service is available in GRA (Western Europe), SBG (Central Europe), WAW (Eastern Europe) and BHS (North America) regions. All your compute and storage resources will then be spawned in the dedicated region of the associated public cloud project.
 
 ### Available worker nodes flavors
 
