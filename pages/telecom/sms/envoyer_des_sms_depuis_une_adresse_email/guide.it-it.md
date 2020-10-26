@@ -1,8 +1,8 @@
 ---
-title: 'Inviare degli SMS da un indirizzo e-mail'
+title: Inviare degli SMS da un indirizzo e-mail
 slug: inviare-sms-da-indirizzo-email
-excerpt: ‘Scopri come inviare SMS da un indirizzo email’
-section: ‘Inviare SMS’
+excerpt: Scopri come inviare SMS da un indirizzo email
+section: Inviare SMS
 ---
 
 **Ultimo aggiornamento: 19/05/2020**
@@ -41,7 +41,7 @@ Se il tuo testo contiene 2 a capo (doppia /n) o se scrivi il parametro "--end", 
 Per inviare un SMS contenente questi elementi sarà necessario farlo nello Spazio Cliente o attraverso le API.
 >
 
-Per maggiori informazioni sui caratteri autorizzati in codifica a 7 bit, fai riferimento [all'allegato](./#allegato) in fondo a questa guida.
+Per maggiori informazioni sui caratteri autorizzati in codifica a 7 bit, fai riferimento [all'allegato](./#allegato_1) in fondo a questa guida.
 
 > [!warning]
 >
@@ -86,7 +86,7 @@ Il risultato dovrebbe essere simile a quello dell’immagine qui di seguito. Per
 Se desideri utilizzare un numero breve che consenta la risposta, digita senderForResponse=1 come mittente.
 >
 
-Puoi consultare la guida che segue per qualsiasi dettaglio sugli utenti SMS: [Tutte le informazioni sugli utenti SMS](../tout_savoir_sur_les_utilisateurs_sms/)
+Puoi consultare la guida che segue per qualsiasi dettaglio sugli utenti SMS: [Tutte le informazioni sugli utenti SMS](../tutto_sugli_utenti_sms/)
 
 
 ### Step 2: aggiungere dei campi facoltativi

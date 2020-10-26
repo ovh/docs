@@ -1,8 +1,8 @@
 ---
-title: ‘Manage your SMS history’
+title: Manage your SMS history
 slug: manage-sms-history
-excerpt: ‘Find out how to view your sent messages log from your OVHcloud account’
-section: 'Managing your solution'
+excerpt: Find out how to view your sent messages log from your OVHcloud account
+section: Managing your solution
 ---
 
 **Last updated 23rd June 2020**

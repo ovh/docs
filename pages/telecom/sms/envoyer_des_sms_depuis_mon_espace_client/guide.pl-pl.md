@@ -31,7 +31,7 @@ Po przejściu na stronę wysyłania wiadomości SMS możesz uzupełnić różne 
 
 Jako nadawcę wiadomości SMS (1) możesz wybrać numer skrócony umożliwiający otrzymanie odpowiedzi (dotyczy wyłącznie kont OVHcloud we Francji) lub nadawcę alfanumerycznego.
 Następnie podaj numer odbiorcy (2) w formacie międzynarodowym (+336xxxxxxxx).
-Więcej informacji na temat tworzenia nadawcy znajdziesz w [etapie 3: wybór nadawcy wiadomości SMS](./#etap-3-wybor-nadawcy-wiadomosci-sms).
+Więcej informacji na temat tworzenia nadawcy znajdziesz w [etapie 3: wybór nadawcy wiadomości SMS](./#etap-3-wybor-nadawcy-wiadomosci-sms_1).
 
 Wiadomości SMS możesz także wysyłać do wielu odbiorców. Możesz to zrobić na dwa sposoby:
 
