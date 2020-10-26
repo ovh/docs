@@ -94,3 +94,7 @@ Once your image is ready to upload, you can use the following steps to upload it
 5. Enter the instance metadata (any custom ones you may have you can also add) and then click `Create Image`{.action}.
 
 ![horizon_4](images/horizon_4.png){.thumbnail}
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.
