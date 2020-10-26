@@ -43,13 +43,13 @@ When upsizing, a first node is created and when it is ready, another is created,
 
 ## The API Explorer
 
-To simplify things, we are using the [API Explorer](https://api.ovh.com/console/), which allows to explore, learn and interact with the API in an interactive way.
+To simplify things, we are using the [API Explorer](https://ca.api.ovh.com/console/), which allows to explore, learn and interact with the API in an interactive way.
 
 Log in to the API Explorer using your OVH NIC.
 
 ![Log in to the API Explorer](images/kubernetes-quickstart-api-ovh-com-001.png){.thumbnail}
 
-If you go to the [Cloud section](https://api.ovh.com/console/#/cloud) of the API Explorer, you will see the available `/cloud/project/{serviceName}/kube` endpoint.
+If you go to the [Cloud section](https://ca.api.ovh.com/console/#/cloud) of the API Explorer, you will see the available `/cloud/project/{serviceName}/kube` endpoint.
 
 
 ## List your OVHcloud Managed Kubernetes clusters

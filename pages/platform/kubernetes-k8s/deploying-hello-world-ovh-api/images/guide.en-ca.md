@@ -25,13 +25,13 @@ In this guide, we are assuming you're using the [OVHcloud API](https://api.ovh.c
 
 ## The API Explorer
 
-To simplify things, we are using the [API Explorer](https://api.ovh.com/console/), which allows to explore, learn and interact with the API in an interactive way.
+To simplify things, we are using the [API Explorer](https://ca.api.ovh.com/console/), which allows to explore, learn and interact with the API in an interactive way.
 
 Log in to the API Explorer using your OVH NIC.
 
 ![Log in to the API Explorer](images/kubernetes-quickstart-api-ovh-com-001.png){.thumbnail}
 
-If you go to the [Kubernetes section](https://api.ovh.com/console/#/kube) of the API Explorer, you will see the available endpoints:
+If you go to the [Kubernetes section](https://ca.api.ovh.com/console/#/kube) of the API Explorer, you will see the available endpoints:
 
 ![Kubernetes section of the API Explorer](images/kubernetes-quickstart-api-ovh-com-002.png){.thumbnail}
 
