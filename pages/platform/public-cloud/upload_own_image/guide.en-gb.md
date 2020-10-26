@@ -1,0 +1,92 @@
+---
+title: 'Uploading your own image'
+slug: uploading-your-own-image
+excerpt: Find out how to upload your own image to Public CLoud
+section: 'OpenStack'
+order: 10
+---
+
+**Last updated 26th October 2020**
+
+## Objective
+
+OVHcloud offers Public Cloud customers ready to go images, however we also offer customers the ability to use their own images
+
+**This guide will provide the steps to upload your own images to your project.**
+
+## Requirements
+
+- a [Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) in your OVHcloud account.
+- your own RAW/QCOW2 (recommended formats) image 
+- an [openstack user](../creation-and-deletion-of-openstack-user) 
+- an [openstack CLI ready environment](../prepare_the_environment_for_using_the_openstack_api) (if using CLI)
+
+## Before starting
+
+It is advisable to either use cloud ready images already provided by the distribution vendor or build your own image using solutions such as [packer openstack builder](../packer-openstack-builder).
+
+Cloud ready images can be found here:
+https://cloud.centos.org/centos/
+https://cloud.debian.org/images/cloud/
+https://cloud-images.ubuntu.com/releases/
+https://alt.fedoraproject.org/cloud/
+
+Other operating systems tend to offer ISO images which is also possible to use when [building images with packer](https://www.packer.io/docs/builders) such as QEMU and VirtualBox builders.
+
+We recommend ensuring the following is installed on your images for them to be cloud ready:
+- Qemu Guest Agent - this will provide better snapshot experience as it will allow the host to communicate to the instance for live snapshot. Not all operating systems are compatible with this package but most of them are.
+- Cloud-init - this will allow you to bootstrap your instance on the first boot such as adding SSH keys and configuring network. Most operating systems are compatible with this.
+
+Finally we recommend images to be either RAW or QCOW2 format and try to keep the size of the image as small as possible so that you are billed less per month and spawn of your instances are quicker.
+
+## Uploading your image
+
+With OpenStack there are two ways to uploading your own image. You can either upload it via the OpenStack commandline interface or with the [Horizon web interface](https://horizon.cloud.ovh.net/auth/login/).
+
+### Using CLI
+
+Once your image is ready to upload, you can use the following steps to upload it using the OpenStack CLI:
+
+1. Download your openrc.sh file for your OpenStack user from the OVHcloud manager (select the region you want to upload to)
+![openrc](images/openrc_file.png){.thumbnail}
+
+2. Source the openrc file
+```sh
+source openrc.sh
+```
+
+3. Once the file is sourced, you will be asked to enter the password for the openstack user. Enter your password.
+
+4. Now you can upload your image:
+This example command will do the following:
+- Disk format is "RAW"
+- Upload an image from the current path called "debian9.raw"
+- Call the image "Debian 9 - My Image"
+- Set the image to private state
+- Set properties which are recommended to set. Set optimal configuration which allow features like live-snapsot and cloudinit to work (requires the username to be used)
+
+```sh
+openstack image create --disk-format raw --container-format bare --file debian9.raw "Debian 9 - My Image" --private --property distribution=debian --property hw_disk_bus=scsi --property hw_scsi_model=virtio-scsi --property hw_qemu_guest_agent=yes --property image_original_user=debian
+```
+
+### Using Horizon
+
+Once your image is ready to upload, you can use the following steps to upload it using the OpenStack Horizon web interface:
+
+1. Login on the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/)
+
+2. Select on the top left the region to which you want to upload your image
+
+![horizon_1](images/horizon_1.png){.thumbnail}
+
+3. Go to the images section and click on "Create Image" button
+
+![horizon_2](images/horizon_2.png){.thumbnail}
+
+4. Enter the details of your image and select the file from your computer
+
+![horizon_3](images/horizon_3.png){.thumbnail}
+
+5. Enter the instance metadata (any custom ones you may have you can also add) and the click "Create Image"
+
+![horizon_4](images/horizon_4.png){.thumbnail}
