@@ -10,9 +10,9 @@ order: 10
 
 ## Objectif
 
-OVHcloud offre aux clients Public Cloud des images prêtes à l'emploi, mais nous offrons également aux clients la possibilité d'utiliser leurs propres images.
+OVHcloud offre aux clients Public Cloud des images prêtes à l'emploi, mais également la possibilité d'utiliser leurs propres images.
 
-**Découvrez comment télécharger vos propres images dans votre projet.**
+**Découvrez comment télécharger vos propres images dans votre projet Public Cloud.**
 
 ## Prérequis
 
@@ -41,13 +41,13 @@ Assurez-vous que les éléments suivants sont installés sur vos images pour qu'
 - *QEMU Guest Agent*: cette opération permet de bénéficier d'une meilleure expérience de sauvegarde, car elle permet à l'hôte de communiquer avec l'instance pour les sauvegardes en direct. Tous les systèmes d'exploitation ne sont pas compatibles avec ce package.
 - *cloud-init* : cela vous permettra de démarrer votre instance au premier démarrage, avec l'ajout de clés SSH et la configuration du réseau. La plupart des systèmes d'exploitation sont compatibles avec cette fonctionnalité.
 
-Nous recommandons que les images soient au format RAW ou QCOW2. Optimisez la taille de l'image pour qu'elle soit la plus petite possible afin de minimiser le coût de facturation mensuel et réduire le délai de génération de vos instances.
+Nous recommandons d'utiliser des images au format RAW ou QCOW2. Optimisez la taille de l'image pour qu'elle soit la plus petite possible afin de minimiser le coût de facturation mensuel et réduire le délai de génération de vos instances.
 
 ### Importer votre image
 
-Avec OpenStack il y a deux façons d'importer votre propre image. Vous pouvez le faire via l'interface en ligne de commande OpenStack, ou avec [l'interface web Horizon](https://horizon.cloud.ovh.net/auth/login/).
+Avec OpenStack il y a deux méthodes pour importer votre propre image. Vous pouvez le faire via l'interface en ligne de commande OpenStack, ou avec [l'interface Horizon](https://horizon.cloud.ovh.net/auth/login/).
 
-#### Utiliser CLI
+#### En ligne de commande OpenStack
 
 Une fois que votre image est prête, suivez les étapes ci-dessous pour lancer l'importation à l'aide de la CLI OpenStack ::
 
@@ -63,7 +63,7 @@ source openrc.sh
 
 3\. Une fois le fichier chargé, vous serez invité à entrer le mot de passe de l'utilisateur OpenStack.
 
-4\. Maintenant vous pouvez importer votre image. Cet exemple de commande effectue les opérations suivantes :
+4\. Vous pouvez à présent importer votre image. L'exemple de commande ci-dessous effectue les opérations suivantes :
 
 - Le format de disque est « RAW »
 - Télécharge une image à partir du chemin actuel appelé « debian9.raw »
@@ -93,7 +93,7 @@ Une fois que votre image est prête à être importée, suivez les étapes ci-de
 
 ![horizon_3](images/horizon_3.png){.thumbnail}
 
-5\. Entrez les métadonnées de l'instance (vous pouvez aussi entrer les métadonnées personnalisées que vous souhaitez ajouter), puis cliquez sur `Create Image`{.action}.
+5\. Entrez les métadonnées de l'instance (vous pouvez aussi entrer les métadonnées personnalisées de votre choix), puis cliquez sur `Create Image`{.action}.
 
 ![horizon_4](images/horizon_4.png){.thumbnail}
 
