@@ -6,11 +6,11 @@ section: 'OpenStack'
 order: 10
 ---
 
-**Last updated 26th October 2020**
+**Last updated 27th October 2020**
 
 ## Objective
 
-OVHcloud offers Public Cloud customers ready-to-go images, however we also offer customers the ability to use their own images.
+OVHcloud offers ready-to-go images for Public Cloud instances, however we also enable customers to use their own images.
 
 **This guide will provide the steps to upload your own images to your project.**
 
@@ -51,24 +51,19 @@ With OpenStack there are two ways of uploading your own image. You can either up
 
 Once your image is ready to upload, you can use the following steps to upload it using the OpenStack CLI:
 
-<ol>
-<li>Download your openrc.sh file for your OpenStack user from the OVHcloud Control Panel (select the region you want to upload to).</li>
-</ol>
+1\. Download your openrc.sh file for your OpenStack user from the OVHcloud Control Panel (select the region you want to upload to).
 
 ![openrc](images/openrc_file.png){.thumbnail}
 
-<ol start="2">
-<li>Source the openrc file:</li>
-</ol>
+2\. Source the openrc file:
 
 ```sh
 source openrc.sh
 ```
 
-<ol start="3">
-<li>Once the file is sourced, you will be asked to enter the password for the OpenStack user. Enter your password.</li>
-<li>Now you can upload your image. This example command will do the following:</li>
-</ol>
+3\. Once the file is sourced, you will be asked to enter the password for the OpenStack user. Enter your password.
+
+4\. Now you can upload your image. This example command will do the following:
 
 - Disk format is "RAW"
 - Upload an image from the current path called "debian9.raw"
@@ -84,28 +79,21 @@ openstack image create --disk-format raw --container-format bare --file debian9.
 
 Once your image is ready to upload, you can use the following steps to upload it using the OpenStack Horizon web interface:
 
-<ol>
-<li>Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).</li>
-<li>Select on the top left the region to which you want to upload your image.</li>
-</ol>
+1\. Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
+
+2\. Select on the top left the region to which you want to upload your image.
 
 ![horizon_1](images/horizon_1.png){.thumbnail}
 
-<ol start="3">
-<li>Go to the `Images` section and click on `Create Image`{.action}.</li>
-</ol>
+3\. Go to the `Images` section and click on `Create Image`{.action}.
 
 ![horizon_2](images/horizon_2.png){.thumbnail}
 
-<ol start="4">
-<li>Enter the details of your image and select the file from your computer.</li>
-</ol>
+4\. Enter the details of your image and select the file from your computer.
 
 ![horizon_3](images/horizon_3.png){.thumbnail}
 
-<ol start="5">
-<li>Enter the instance metadata (any custom ones you may have you can also add) and then click `Create Image`{.action}.</li>
-</ol>
+5\. Enter the instance metadata (any custom ones you may have you can also add) and then click `Create Image`{.action}.
 
 ![horizon_4](images/horizon_4.png){.thumbnail}
 
