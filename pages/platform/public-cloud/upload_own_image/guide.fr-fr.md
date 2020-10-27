@@ -16,16 +16,16 @@ OVHcloud offre aux clients Public Cloud des images prêtes à l'emploi, mais nou
 
 ## Prérequis
 
-- a [Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) in your OVHcloud account.
-- your own RAW/QCOW2 (recommended formats) image 
-- an [OpenStack user](../creation-and-deletion-of-openstack-user) 
-- an [OpenStack CLI ready environment](../prepare_the_environment_for_using_the_openstack_api) (if using CLI)
+- une [instance Public Cloud](../create_an_instance_in_your_ovh_customer_account/) sur votre espace client OVHcloud.
+- votre propre image RAW/QCOW2 (formats recommandés) 
+- un utilisateur [OpenStack](../creation-and-delete-of-openstack-user) 
+- un environnement [OpenStack CLI ready](../prepare_the_environment_for_using_the_openstack_api) (si vous utilisez CLI)
 
 ## En pratique
 
 ### Avant de commencer
 
-It is advisable to either use cloud ready images already provided by the distribution vendor or build your own image using solutions such as [Packer OpenStack builder](../packer-openstack-builder).
+Il est conseillé d'utiliser des images cloud fournies par le distributeur ou de créer votre propre image en utilisant des solutions telles que [Packer OpenStack builder](../packer-openstack-builder).
 
 Les images Cloud compatibles sont disponibles ici :
 
