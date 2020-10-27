@@ -6,13 +6,13 @@ section: 'OpenStack'
 order: 10
 ---
 
-**Dernière mise à jour le 26/10/20**
+**Dernière mise à jour le 26/10/2020**
 
 ## Objectif
 
 OVHcloud offre aux clients Public Cloud des images prêtes à l'emploi, mais également la possibilité d'utiliser leurs propres images.
 
-**Découvrez comment télécharger vos propres images dans votre projet Public Cloud.**
+**Découvrez comment importer vos propres images dans votre projet Public Cloud.**
 
 ## Prérequis
 
