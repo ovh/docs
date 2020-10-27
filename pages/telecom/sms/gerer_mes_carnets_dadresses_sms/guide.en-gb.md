@@ -15,7 +15,7 @@ All OVHcloud SMS accounts can use one or more address books. This guide explains
 ## Requirements
 
 - an active OVHcloud SMS account
-- access to the OVHcloud Control Panel
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 - a spreadsheet or text editor tool
 
 ## Instructions

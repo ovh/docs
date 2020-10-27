@@ -41,7 +41,7 @@ Jeśli tekst zawiera 2 przejścia do nowego wiersza (podwójne /n) lub jeśli wp
 Aby wysłać wiadomość SMS zawierającą te elementy, musisz to zrobić w Panelu klienta lub przez interfejs API.
 >
 
-Dalsze informacje na temat dozwolonych znaków w kodowaniu 7-bitowym zawiera [załącznik](./#zalacznik) na dole tego przewodnika.
+Dalsze informacje na temat dozwolonych znaków w kodowaniu 7-bitowym zawiera [załącznik](./#zalacznik_1) na dole tego przewodnika.
 
 > [!warning]
 >
@@ -87,7 +87,7 @@ Otrzymany rezultat powinien wyglądać jak poniżej. Domyślnie wiadomość SMS 
 Jeśli chcesz użyć numeru skróconego umożliwiającego otrzymanie odpowiedzi, jako nadawcę wprowadź senderForResponse=1.
 >
 
-Aby uzyskać szczegółowe informacje na temat użytkowników SMS, zapoznaj się z następującym przewodnikiem: [Informacje o użytkownikach wiadomości SMS](../tout_savoir_sur_les_utilisateurs_sms/)
+Aby uzyskać szczegółowe informacje na temat użytkowników SMS, zapoznaj się z następującym przewodnikiem: [Informacje o użytkownikach wiadomości SMS](../informacje-o-uzytkownikach-sms/)
 
 
 ### Etap 2: dodawanie pól opcjonalnych

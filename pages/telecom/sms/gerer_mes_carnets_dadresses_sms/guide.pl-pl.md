@@ -14,7 +14,7 @@ Wszystkie konta OVHcloud mogą używać jednej lub więcej książek adresowych.
 ## Wymagania początkowe
 
 - Posiadanie aktywnego konta SMS OVHcloud
-- Dostęp do Panelu klienta OVHcloud
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
 - Posiadanie arkusza kalkulacyjnego lub edytora tekstu.
 
 ## W praktyce

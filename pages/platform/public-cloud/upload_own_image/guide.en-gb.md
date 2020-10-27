@@ -1,7 +1,7 @@
 ---
 title: 'Uploading your own image'
 slug: uploading-your-own-image
-excerpt: Find out how to upload your own image to Public CLoud
+excerpt: Find out how to upload your own image to Public Cloud
 section: 'OpenStack'
 order: 10
 ---
@@ -50,19 +50,19 @@ With OpenStack there are two ways of uploading your own image. You can either up
 
 Once your image is ready to upload, you can use the following steps to upload it using the OpenStack CLI:
 
-1. Download your openrc.sh file for your OpenStack user from the OVHcloud Control Panel (select the region you want to upload to).
+1\. Download your openrc.sh file for your OpenStack user from the OVHcloud Control Panel (select the region you want to upload to).
 
 ![openrc](images/openrc_file.png){.thumbnail}
 
-2. Source the openrc file:
+2\. Source the openrc file:
 
 ```sh
 source openrc.sh
 ```
 
-3. Once the file is sourced, you will be asked to enter the password for the OpenStack user. Enter your password.
+3\. Once the file is sourced, you will be asked to enter the password for the OpenStack user. Enter your password.
 
-4. Now you can upload your image. This example command will do the following:
+4\. Now you can upload your image. This example command will do the following:
 - Disk format is "RAW"
 - Upload an image from the current path called "debian9.raw"
 - Call the image "Debian 9 - My Image"
@@ -77,21 +77,21 @@ openstack image create --disk-format raw --container-format bare --file debian9.
 
 Once your image is ready to upload, you can use the following steps to upload it using the OpenStack Horizon web interface:
 
-1. Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
+1\. Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
 
-2. Select on the top left the region to which you want to upload your image.
+2\. Select on the top left the region to which you want to upload your image.
 
 ![horizon_1](images/horizon_1.png){.thumbnail}
 
-3. Go to the `Images` section and click on `Create Image`{.action}.
+3\. Go to the `Images` section and click on `Create Image`{.action}.
 
 ![horizon_2](images/horizon_2.png){.thumbnail}
 
-4. Enter the details of your image and select the file from your computer.
+4\. Enter the details of your image and select the file from your computer.
 
 ![horizon_3](images/horizon_3.png){.thumbnail}
 
-5. Enter the instance metadata (any custom ones you may have you can also add) and then click `Create Image`{.action}.
+5\. Enter the instance metadata (any custom ones you may have you can also add) and then click `Create Image`{.action}.
 
 ![horizon_4](images/horizon_4.png){.thumbnail}
 
