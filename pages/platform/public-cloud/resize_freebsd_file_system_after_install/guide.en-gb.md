@@ -9,7 +9,7 @@ section: Tutorials
 
 ## Objective
 
-The purpose of this guide is to explain how to resize your file system after installing or resizing your instance under FreeBSD 12. After that your instance can take advantage of all the disk space.
+The purpose of this guide is to explain how to resize your file system after installing or resizing your instance under FreeBSD 12. By doing this, your instance will be able to take advantage of all the disk space.
 
 ## Requirements
 
@@ -63,7 +63,7 @@ vtbd0p2 resized
 
 > [!primary]
 >
-> The partition number may be different. To find the correct number, check the `vtbd0` column and the number in front of the` freebsd-zfs` line.
+> The partition number may be different. To find the correct number, check the `vtbd0` column and the number in front of the `freebsd-zfs` line.
 >
 
 You have now resized your file system. ZFS is configured to spread automatically. Use this command to verify:
