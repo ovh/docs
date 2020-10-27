@@ -55,7 +55,7 @@ Die Verbindung wurde nun hergestellt und die Ordnerstruktur wird im Bereich „S
 ![SFTP Remote-Verzeichnis](images/sftp_ds_01.png)
  
 
-Sie können Dateien, die Sie vom Server exportieren möchten, über Drag-and-drop vom rechten Fenster (`Server`) zum linken Fenster ziehen (`Lokal`), um Sie auf Ihrem PC zu speichern. In unserem Beispiel sind die Dateien im Verzeichnis „/home/data“ im rechten Fenster (`Server`)  zu sehen.
+Sie können Dateien, die Sie vom Server exportieren möchten, über Drag-and-drop vom rechten Fenster (`Bare Metal Cloud`) zum linken Fenster ziehen (`Lokal`), um Sie auf Ihrem PC zu speichern. In unserem Beispiel sind die Dateien im Verzeichnis „/home/data“ im rechten Fenster (`Bare Metal Cloud`)  zu sehen.
 
 Der Fortschritt der Übertragung wird im unteren Teil Ihres FileZilla-Fensters angezeigt.
 
@@ -85,7 +85,7 @@ Wenn die Partition korrekt gemountet wurde, sind die Daten im Verzeichnis „/mn
 
 Die Vorgehensweise zum Herstellen der Verbindung ist die gleiche wie zuvor: Verwenden Sie wie obenstehend beschrieben den Port 22 für eine SFTP-Verbindung mit Ihrem Root-Benutzer.
 
-Wenn Sie mit dem gewünschten Server verbunden sind, können Sie die Daten ebenfalls per Drag-und-drop übertragen. Verschieben Sie sie in diesem Fall vom linken Fenster (`Lokal`) in das rechte Fenster (`Server`), um die Daten von Ihrem PC auf den Server zu übertragen.
+Wenn Sie mit dem gewünschten Server verbunden sind, können Sie die Daten ebenfalls per Drag-und-drop übertragen. Verschieben Sie sie in diesem Fall vom linken Fenster (`Lokal`) in das rechte Fenster (`Bare Metal Cloud`), um die Daten von Ihrem PC auf den Server zu übertragen.
 
 ## Fazit
 

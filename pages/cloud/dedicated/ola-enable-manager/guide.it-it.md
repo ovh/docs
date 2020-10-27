@@ -24,7 +24,7 @@ Assicurarsi di aver ordinato l’opzione OVHcloud Link Aggregation dallo Spazio 
 
 ## Procedura
 
-Per iniziare a configurare OLA accedi alla sezione `Server`{.action} dello [Spazio Cliente](https://www.ovh.com/manager/){.external}, seleziona il tuo server nel menu a sinistra e clicca sulla scheda `Interfacce di rete`{.action}. Una volta verificato che il server non risulti associato a nessuna vRack, clicca su `Già fatto, passo allo step successivo.`{.action} 
+Per iniziare a configurare OLA accedi alla sezione `Bare Metal Cloud`{.action} dello [Spazio Cliente](https://www.ovh.com/manager/){.external}, seleziona il tuo server nel menu a sinistra e clicca sulla scheda `Interfacce di rete`{.action}. Una volta verificato che il server non risulti associato a nessuna vRack, clicca su `Già fatto, passo allo step successivo.`{.action} 
 
 ![network interfaces](images/network_interfaces.png){.thumbnail}
 

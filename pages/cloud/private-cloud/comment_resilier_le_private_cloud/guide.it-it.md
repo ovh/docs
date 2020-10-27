@@ -16,7 +16,7 @@ Se il servizio Private Cloud utilizzato non è più in grado di rispondere alle 
 
 ## Prerequisiti
 
-- Essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Server`{.action} > `Private Cloud`{.action}.
+- Essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Bare Metal Cloud`{.action} > `Private Cloud`{.action}.
 - Disporre di un servizio [Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external} attivo
 
 
@@ -31,7 +31,7 @@ La soluzione Private Cloud non prevede un impegno contrattuale minimo ma, come i
 
 ### Step 1: richiedi la disattivazione del servizio dallo Spazio Cliente OVHcloud
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e, nella sezione `Server`{.action} (1), clicca su `Private Cloud`{.action} (2) e seleziona il servizio nella lista (3).
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e, nella sezione `Bare Metal Cloud`{.action} (1), clicca su `Private Cloud`{.action} (2) e seleziona il servizio nella lista (3).
 
 Nel riquadro “Gestisci il servizio” disponibile nella scheda “Informazioni generali”, clicca sul pulsante `...`{.action}  (4) in corrispondenza della data di rinnovo e seleziona l’opzione `Elimina il servizio`{.action} (5).
 

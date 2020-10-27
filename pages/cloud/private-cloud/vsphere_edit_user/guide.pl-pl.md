@@ -20,7 +20,7 @@ Możliwe jest powiązanie imienia, nazwiska, numeru telefonu i adresu e-mail z u
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i przejdź do sekcji `Server`. Kliknij `Private Cloud` na pasku usług po lewej stronie, po czym wybierz odpowiednią infrastrukturę.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i przejdź do sekcji `Bare Metal Cloud`. Kliknij `Private Cloud` na pasku usług po lewej stronie, po czym wybierz odpowiednią infrastrukturę.
 
 ![Użytkownik vsphere](images/addMailOnUser01.png){.thumbnail}
 

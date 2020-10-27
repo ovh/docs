@@ -29,7 +29,7 @@ Un Virtual Private Server (VPS) è un server dedicato virtualizzato. A differenz
 
 ## Procedura
 
-Per visualizzare le informazioni relative al tuo VPS, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e, nella colonna di sinistra, clicca su `Server`{.action} e poi seleziona il tuo servizio sotto la voce `VPS`{.action}. 
+Per visualizzare le informazioni relative al tuo VPS, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e, nella colonna di sinistra, clicca su `Bare Metal Cloud`{.action} e poi seleziona il tuo servizio sotto la voce `VPS`{.action}. 
 
 Questa dashboard contiene informazioni importanti sul tuo servizio e ti consente di effettuare le operazioni di base. Comparirà in modo diverso a seconda della gamma del tuo VPS. 
 
@@ -93,7 +93,7 @@ Si apre una finestra da cui potrai scegliere:
 
 > [!primary]
 >
-> Alcuni sistemi operativi o piattaforme proprietarie come Plesk o cPanel richiedono licenze che generano costi aggiuntivi. Le operazioni di gestione delle licenze sono disponibili dallo Spazio Cliente: è sufficiente accedere alla sezione `Server` in alto a destra e cliccare su `Licenze`{.action}.
+> Alcuni sistemi operativi o piattaforme proprietarie come Plesk o cPanel richiedono licenze che generano costi aggiuntivi. Le operazioni di gestione delle licenze sono disponibili dallo Spazio Cliente: è sufficiente accedere alla sezione `Bare Metal Cloud` in alto a destra e cliccare su `Licenze`{.action}.
 > 
 > Un sistema operativo **Windows** può essere utilizzato su un VPS solo se questa **opzione viene selezionata in fase d’ordine**. Sui VPS con altri sistemi operativi non è quindi possibile reinstallare Windows.
 > 
@@ -141,7 +141,7 @@ Si apre una finestra da cui potrai scegliere:
 
 > [!primary]
 >
-> Alcuni sistemi operativi o piattaforme proprietarie come Plesk o cPanel richiedono licenze che generano costi aggiuntivi. Le operazioni di gestione delle licenze sono disponibili dallo Spazio Cliente: è sufficiente accedere alla sezione `Server` in alto a destra e cliccare su `Licenze`{.action}.
+> Alcuni sistemi operativi o piattaforme proprietarie come Plesk o cPanel richiedono licenze che generano costi aggiuntivi. Le operazioni di gestione delle licenze sono disponibili dallo Spazio Cliente: è sufficiente accedere alla sezione `Bare Metal Cloud` in alto a destra e cliccare su `Licenze`{.action}.
 > 
 > Un sistema operativo **Windows** può essere utilizzato su un VPS solo se questa **opzione viene selezionata in fase d’ordine**. Sui VPS con altri sistemi operativi non è quindi possibile reinstallare Windows.
 > 

@@ -278,7 +278,7 @@ The RTM package is currently not compatible with Windows systems. We are continu
 
 ### RTM in the OVHcloud Control Panel
 
-Once you have successfully installed RTM, you can view the monitoring data for your server in the the OVHcloud Control Panel. (It might be necessary to refresh your browser or to log out and log in again). Navigate to the `Server`{.action} section and select your server from the left-hand menu. On the `General information`{.action} tab, scroll down to find the monitoring information.
+Once you have successfully installed RTM, you can view the monitoring data for your server in the the OVHcloud Control Panel. (It might be necessary to refresh your browser or to log out and log in again). Navigate to the `Bare Metal Cloud`{.action} section and select your server from the left-hand menu. On the `General information`{.action} tab, scroll down to find the monitoring information.
 
 ![Real Time Monitoring](images/rtm_panel.png){.thumbnail}
 

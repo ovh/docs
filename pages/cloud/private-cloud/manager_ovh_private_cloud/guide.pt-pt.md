@@ -16,7 +16,7 @@ A Área de Cliente OVHcloud oferece-lhe várias opções de personalização da 
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e aceder à secção `Server`{.action} e, depois, `Private Cloud`{.action}.
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e aceder à secção `Bare Metal Cloud`{.action} e, depois, `Private Cloud`{.action}.
 - Ter um produto [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}.
 
 
@@ -24,7 +24,7 @@ A Área de Cliente OVHcloud oferece-lhe várias opções de personalização da 
 
 ### Separador geral
 
-Depois de aceder à secção  `Server`{.action} e `Private Cloud`{.action} da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, visualizará um panorama geral da sua Private Cloud:
+Depois de aceder à secção  `Bare Metal Cloud`{.action} e `Private Cloud`{.action} da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, visualizará um panorama geral da sua Private Cloud:
 
 ![Informações gerais](images/controlpanel1.png){.thumbnail}
 
