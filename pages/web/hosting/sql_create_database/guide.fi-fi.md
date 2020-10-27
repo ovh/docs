@@ -2,6 +2,8 @@
 deprecated: true
 title: 'Tietokannan luominen webhotellissa'
 slug: tietokannan-luominen
+routes:
+    canonical: 'https://docs.ovh.com/fi/hosting/'
 excerpt: 'Opi luomaan tietokanta OVH:n webhotellissa'
 section: Tietokannat
 order: 1
