@@ -1,27 +1,31 @@
 ---
-title: Redimensionner le système de fichier d'une instance FreeBSD 12
-slug: redimensionner-systeme-de-fichier-freebsd-12
+title: Redimensionner le système de fichiers sur FreeBSD 12
+slug: redimensionner-systeme-de-fichiers-freebsd-12
+excerpt: Découvrez comment redimensionner le système de fichiers d'une instance Public Cloud ou d'un VPS sous FreeBSD 12
 section: Tutoriels
 ---
 
-## Objectifs
+**Dernière mise à jour le 27/10/2020**
 
-Ce guide a pour but de vous expliquer comment redimensionner votre système de fichier après avoir installée ou redimensionné votre instance. Afin que votre instance puisse profiter de tout l'espace disque.
+## Objectif
+
+Ce guide a pour but de vous expliquer comment redimensionner votre système de fichiers après l'installation ou le redimensionnent sous FreeBSD 12. Cela permettra à votre système de profiter de tout l'espace disque.
 
 ## Prérequis
 
- * Avoir une instance avec FreeBSD 12 sur le Public Cloud
- * Avoir fraîchement installé l'instance ou [l'avoir redimensionné](https://docs.ovh.com/fr/public-cloud/redimensionner-une-instance/)
+ * Avoir une instance avec FreeBSD 12 dans votre projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) ou un [VPS](https://www.ovhcloud.com/fr/vps/) sous FreeBSD 12
+ * Avoir récemment installé l'instance/le VPS ou [l'avoir redimensionnée](https://docs.ovh.com/fr/public-cloud/redimensionner-une-instance/)
 
 > [!primary]
 >
-> Dans ce tutoriel une instance r2-15 est utilisé. Initialement le système de fichier fait `5G`, à la fin il fera `50G`.
+> Dans ce tutoriel, une instance r2-15 est utilisé. Les instructions sont valables pour un VPS ou une instance Public Cloud. Initialement le système de fichiers fait `5 GB`. A l'issue du processus, il fera `50 GB`.
 >
 
 ## En pratique
 
-Afin de dimensionner votre système de fichier, il faut dans un premier temps réparer les partitions.
-Connectez vous sur votre instance et regarder l'état de vos partitions.
+Afin de dimensionner votre système de fichiers, vous devez d'abord réparer les partitions.
+
+Connectez-vous à votre instance et regardez l'état de vos partitions :
 
 ```
 freebsd@freebsd:~ % sudo gpart show
@@ -32,14 +36,14 @@ freebsd@freebsd:~ % sudo gpart show
   10237952      2008         - free -  (1.0M)
 ```
 
-Vous pouvez constater que le système de fichier est corrompu. Cet état est normal dû à l'installation de l'image sur l'instance ou à son redimensionnement. Nous allons donc le réparer.
+Vous pouvez constater ici que le système de fichiers est corrompu. Cet état est normal car il est dû à l'installation de l'image sur l'instance ou à son redimensionnement. Il vous faut donc le réparer :
 
 ```
 freebsd@freebsd:~ % sudo gpart recover vtbd0
 vtbd0 recovered
 ```
 
-En refaisant la première commande, vous pouvez constater que le système est maintenant réparé.
+En répétant la première commande, vous pouvez maintenant constater que le système de fichiers est réparé :
 
 ```
 freebsd@freebsd:~ % sudo gpart show
@@ -50,7 +54,7 @@ freebsd@freebsd:~ % sudo gpart show
    10237952   94619608         - free -  (45G)
 ```
 
-Vous pouvez maintenant redimensionner la partition `freebsd-zfs`, pour ce faire, utilisez cette commande.
+Vous pouvez à présent redimensionner la partition `freebsd-zfs`. Pour ce faire, utilisez cette commande :
 
 ```
 freebsd@freebsd:~ % sudo gpart resize -i 2 vtbd0
@@ -62,7 +66,7 @@ vtbd0p2 resized
 > Il se peut que le numéro de partition soit différent, pour trouver le bon numéro, vérifiez la colonne `vtbd0` et le numéro devant la ligne `freebsd-zfs`.
 >
 
-Vous avez maintenant redimensionné votre système de fichier. ZFS est configurer pour s'étendre automatiquement. Pour vérifier, faite cette commande.
+Vous avez maintenant redimensionné votre système de fichiers. ZFS est configuré pour s'étendre automatiquement. Pour vérifier, exécutez cette commande :
 
 ```
 freebsd@freebsd:~ % zpool list
@@ -70,4 +74,8 @@ NAME    SIZE  ALLOC   FREE  CKPOINT  EXPANDSZ   FRAG    CAP  DEDUP  HEALTH  ALTR
 zroot  49.5G   854M  48.7G        -         -     0%     1%  1.00x  ONLINE  -
 ```
 
-Vous remarquerez que mon `zroot` fait maintenant `50G`. ZFS est donc bien étendu.
+Vous remarquerez que, dans cet exemple, `zroot` fait maintenant `50 GB`. ZFS est donc bien étendu.
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
