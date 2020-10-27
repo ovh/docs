@@ -74,7 +74,7 @@ source openrc.sh
 - Upload an image from the current path called "debian9.raw"
 - Call the image "Debian 9 - My Image"
 - Set the image to private state
-- Set properties which are recommended to set. Set optimal configuration which allow features like live-snapsot and cloud-init to work (requires the username to be used)
+- Set properties which are recommended to set. Set optimal configuration which allow features like live-snapshot and cloud-init to work (requires the username to be used)
 
 ```sh
 openstack image create --disk-format raw --container-format bare --file debian9.raw "Debian 9 - My Image" --private --property distribution=debian --property hw_disk_bus=scsi --property hw_scsi_model=virtio-scsi --property hw_qemu_guest_agent=yes --property image_original_user=debian
