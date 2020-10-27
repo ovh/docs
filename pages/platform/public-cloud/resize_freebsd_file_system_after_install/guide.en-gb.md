@@ -1,7 +1,7 @@
 ---
-title: Resizing the file system of a FreeBSD 12 instance
+title: Resizing the file system in FreeBSD 12
 slug: resize-file-system-freebsd-12-instance
-excerpt: Find out how resize the file system of a FreeBSD 12 Public Cloud instance
+excerpt: Find out how resize the file system of an OVHcloud Public Cloud instance or VPS with FreeBSD 12
 section: Tutorials
 ---
 
@@ -9,16 +9,16 @@ section: Tutorials
 
 ## Objective
 
-The purpose of this guide is to explain how to resize your file system after installing or resizing your instance under FreeBSD 12. By doing this, your instance will be able to take advantage of all the disk space.
+The purpose of this guide is to explain how to resize your file system after installing FreeBSD 12 or resizing the service. By doing this, your system will be able to take advantage of all the disk space.
 
 ## Requirements
 
-- Having an instance with FreeBSD 12 in your [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/)
-- Having freshly installed the instance or having resized it
+- Having an instance with FreeBSD 12 in your [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) or a [Virtual Private Server](https://www.ovhcloud.com/en-gb/vps) with FreeBSD 12
+- Having freshly installed the instance/VPS or having resized it
 
 > [!primary]
 >
-> In this tutorial an r2-15 instance is used. Initially the file system is `5G`, at the end it will be `50G`.
+> In this tutorial a Public Cloud r2-15 instance is used. The instruction steps are valid for a VPS or a Public Cloud instance. In the examples below, the file system size is initially 5 GB and then 50 GB after applying the actions.
 >
 
 ## Instructions
@@ -36,7 +36,7 @@ freebsd@freebsd:~ % sudo gpart show
   10237952      2008         - free -  (1.0M)
 ```
 
-You may find that the file system is corrupted. This state is normal due to the installation of the image on the instance or after resizing. So we will fix it:
+You may find that the file system is corrupted. This state is normal due to the installation of the image on the service or after resizing it. So we will fix it:
 
 ```
 freebsd@freebsd:~ % sudo gpart recover vtbd0
@@ -74,7 +74,7 @@ NAME    SIZE  ALLOC   FREE  CKPOINT  EXPANDSZ   FRAG    CAP  DEDUP  HEALTH  ALTR
 zroot  49.5G   854M  48.7G        -         -     0%     1%  1.00x  ONLINE  -
 ```
 
-In the example output above, `zroot` now has a size of `50G`. ZFS is therefore well extended.
+In the example output above, `zroot` now has a size of 50 GB. ZFS is therefore well extended.
 
 
 ## Go further
