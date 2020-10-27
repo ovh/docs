@@ -17,13 +17,13 @@ Adquiriu um serviço MX Plan, que lhe permite usufruir de endereços de e-mail, 
 ## Requisitos
 
 - Dispor de uma oferta MX Plan (incluída num plano de [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external}, num [alojamento gratuito Start 10M](https://www.ovh.pt/dominios/oferta_alojamento_start10m.xml){.external} ou disponível em separado).
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web`{.action}.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web Cloud`{.action}.
 
 ## Instruções
 
 Depois de a oferta MX Plan estar criada e disponível, pode geri-la a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. A versão da sua oferta MX Plan (antiga ou nova) irá depender da data de ativação ou de se [o serviço foi migrado recentemente]({ovh_www}/mxplan-migration/){.external}. Antes de continuar, deve verificar a versão de que dispõe. 
 
-Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web`{.action}. Clique em E-mails na barra à esquerda e selecione o serviço correspondente. Continue a ler em função da sua versão:
+Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web Cloud`{.action}. Clique em E-mails na barra à esquerda e selecione o serviço correspondente. Continue a ler em função da sua versão:
 
 |Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|

@@ -41,7 +41,7 @@ Une fois le paiement effectué, vous recevrez un mail avec :
 
 ### Espace client OVHcloud
 
-Dans votre espace client OVHcloud, rendez-vous dans la partie `Server` puis `Plateformes et Services`.
+Dans votre espace client OVHcloud, rendez-vous dans la partie `Bare Metal Cloud` puis `Plateformes et Services`.
 
 ![veeam cloud connect](images/veeam-cloud-connect-manager-start1.png){.thumbnail}
 

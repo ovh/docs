@@ -50,7 +50,7 @@ By considering what DNS records actually do, you will gain a better understandin
 
 ### Step 1: Accessing the area for managing your domain’s OVHcloud DNS zone
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Next, navigate to the `DNS zone`{.action} tab.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Next, navigate to the `DNS zone`{.action} tab.
 
 The table that opens will display your domain name’s configuration at OVHcloud. It is made up of several DNS records, one per row in the table. You can filter the table content by DNS record type or by domain name.
 

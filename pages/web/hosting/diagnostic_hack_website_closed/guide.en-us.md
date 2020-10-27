@@ -74,7 +74,7 @@ However, it is still advisable to ensure, in the next step, that the various add
 
 This provides you with full visibility of your service and sites’ activities. The goal is to analyse what happened when the deactivation of your hosting took place.
 
-To view your hosting activity and logs, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and open the `Web`{.action} section. Click `Web Hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. There are two options here, depending on the specific information you want to collect.
+To view your hosting activity and logs, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and open the `Web Cloud`{.action} section. Click `Web Hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. There are two options here, depending on the specific information you want to collect.
 
 - **View your hosting activity**
 

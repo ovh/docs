@@ -28,7 +28,7 @@ The [vRack](https://www.ovh.com/world/solutions/vrack/){.external} allows you to
 
 Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
-Click on the `Server`{.action} menu and then click the `Order`{.action} button.
+Click on the `Bare Metal Cloud`{.action} menu and then click the `Order`{.action} button.
 
 ![Create project](images/pci-project-01_2020.png){.thumbnail}
 
@@ -44,7 +44,7 @@ Select a payment method and then click `Create my project`{.action}
 
 ![Create project](images/pci-project-03b_2020.png){.thumbnail}
 
-Once your project is set up, you will need to add it to the vrack. Click on `Server`{.action} and then on `vRack`{.action}
+Once your project is set up, you will need to add it to the vrack. Click on `Bare Metal Cloud`{.action} and then on `vRack`{.action}
 
 ![Enable vRack](images/pci-vrack-00_2020.png){.thumbnail}
 

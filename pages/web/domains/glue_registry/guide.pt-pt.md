@@ -18,7 +18,7 @@ Consoante as suas necessidades, poderá querer personalizar o nome dos servidore
 ## Requisitos
 
 - Ter um nome de domínio registado na OVH.
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web`{.action}.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web Cloud`{.action}.
 
 ## Instruções
 
@@ -26,7 +26,7 @@ Consoante as suas necessidades, poderá querer personalizar o nome dos servidore
 
 ### 1 - Adicionar os registos GLUE
 
-Para começar, aceda à sua [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Na secção `Web`, clique em `Domínios`{.action} na barra à esquerda e, em seguida, selecione o domínio correspondente aos servidores DNS que pretende personalizar. Por fim, clique no separador `GLUE.`{.action}
+Para começar, aceda à sua [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Na secção `Web Cloud`, clique em `Domínios`{.action} na barra à esquerda e, em seguida, selecione o domínio correspondente aos servidores DNS que pretende personalizar. Por fim, clique no separador `GLUE.`{.action}
 
 Na nova página, poderá ver uma tabela que apresenta os registos GLUE que estão configurados na OVH para o seu nome de domínio. Para adicionar um novo registo GLUE, clique em `Adicionar`{.action}.
 

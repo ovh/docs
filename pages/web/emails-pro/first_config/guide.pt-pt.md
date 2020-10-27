@@ -135,7 +135,7 @@ Se desejar associar o seu endereço de e-mail a um software de correio eletróni
 >
 > No nosso exemplo, utilizamos a referência servidor: pro**X**.mail.ovh.net. Deve substituir o «X» pelo algarismo que designa o servidor do seu serviço E-mail Pro.
 > 
-> Encontre esse algarismo na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na rubrica `Web`{.action}, em `E-mail Pro`{.action},
+> Encontre esse algarismo na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na rubrica `Web Cloud`{.action}, em `E-mail Pro`{.action},
 >  na coluna da esquerda. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
 > 
 

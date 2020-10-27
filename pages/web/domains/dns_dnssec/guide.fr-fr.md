@@ -19,7 +19,7 @@ Pour comprendre comment cette protection fonctionne, nous vous conseillons de co
 
 - Disposer d’un nom de domaine enregistré chez OVH.
 - Le nom de domaine concerné doit posséder une extension compatible avec le DNSSEC.
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Web`{.action}.
+- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Web Cloud`{.action}.
 
 ## En pratique
 

@@ -17,7 +17,7 @@ Dzięki kontom e-mail MX Plan możesz wysyłać i odbierać wiadomości, korzyst
 ## Wymagania początkowe
 
 - Wykupienie usługi MX Plan Jest ona dostępna w ramach oferty: [Hosting]({ovh_www}/hosting/){.external}, [Hosting Start 10M]({ovh_www}/domeny/oferta_serwer_start10m.xml){.external} lub oferty MX Plan zamówionej oddzielnie.
-- W zależności od metody, z której korzystasz: zalogowanie do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Web`{.action} lub zalogowanie do konta e-mail za pośrednictwem interfejsu [Webmail]({ovh_www}/mail/){.external} Outlook Web Access (OWA).
+- W zależności od metody, z której korzystasz: zalogowanie do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Web Cloud`{.action} lub zalogowanie do konta e-mail za pośrednictwem interfejsu [Webmail]({ovh_www}/mail/){.external} Outlook Web Access (OWA).
 
 > [!primary]
 >

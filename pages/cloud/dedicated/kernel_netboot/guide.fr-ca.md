@@ -22,7 +22,7 @@ Pour démarrer votre serveur sur le Netboot, il vous faut configurer cette fonct
 ### Booter sur le disque dur
 Pour démarrer votre serveur sur Disque Dur, vous devez tout d'abord vous connecter à votre espace client.
 
-Rendez-vous ensuite sur l'Univers `Server`{.action}, puis sélectionnez votre serveur.
+Rendez-vous ensuite sur l'Univers `Bare Metal Cloud`{.action}, puis sélectionnez votre serveur.
 
 Dans l'onglet `Etat du serveur`{.action}, section `Informations générales`{.action}, cliquez sur `modifier`{.action} sur la ligne Boot.
 

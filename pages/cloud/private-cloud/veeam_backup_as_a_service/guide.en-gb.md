@@ -28,7 +28,7 @@ Backups are performed using a virtual machine (VM) within your [Hosted Private c
 
 ### Enable Service
 
-The first step is to enable the service from the [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager){.external}. To do this, go to the `Hosted Private Cloud`{.action} section of the `Server`{.action} tab. Click the relevant vSphere infrastructure, and then click the data center that you want. Choose the `Backup`{.action} tab.
+The first step is to enable the service from the [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager){.external}. To do this, go to the `Hosted Private Cloud`{.action} section of the `Bare Metal Cloud`{.action} tab. Click the relevant vSphere infrastructure, and then click the data center that you want. Choose the `Backup`{.action} tab.
 
 ![Enable backup](images/backuppcc_01_en.png){.thumbnail}
 

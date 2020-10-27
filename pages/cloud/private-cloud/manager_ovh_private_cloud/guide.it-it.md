@@ -16,7 +16,7 @@ Lo Spazio Cliente OVHcloud propone numerose opzioni di configurazione della tua 
 
 ## Prerequisiti
 
-- Essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Server`{.action} > `Private Cloud`{.action}.
+- Essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Bare Metal Cloud`{.action} > `Private Cloud`{.action}.
 - Disporre di un servizio [Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external} attivo
 
 
@@ -24,7 +24,7 @@ Lo Spazio Cliente OVHcloud propone numerose opzioni di configurazione della tua 
 
 ### Informazioni generali
 
-Accedendo alla sezione `Server`{.action} > `Private Cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, visualizzi le informazioni relative alla tua piattaforma:
+Accedendo alla sezione `Bare Metal Cloud`{.action} > `Private Cloud`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, visualizzi le informazioni relative alla tua piattaforma:
 
 ![Informazioni generali](images/controlpanel1.png){.thumbnail}
 

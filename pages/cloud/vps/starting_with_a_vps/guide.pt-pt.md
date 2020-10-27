@@ -29,7 +29,7 @@ Um VPS (Virtual Private Server) é um servidor dedicado virtual. Ao contrário d
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dirija-se à secção `Server`{.action} e selecione o seu servidor no menu à esquerda, em `VPS`{.action}. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dirija-se à secção `Bare Metal Cloud`{.action} e selecione o seu servidor no menu à esquerda, em `VPS`{.action}. 
 
 Este painel de controlo contém informações importantes sobre o serviço e permite-lhe realizar operações essenciais. O seu aspeto pode variar em função da gama do VPS. 
 
@@ -93,7 +93,7 @@ Depois, surge uma janela onde poderá escolher:
 
 > [!primary]
 >
-> Determinados sistemas operativos ou plataformas proprietárias, como o Plesk ou cPanel, requerem licenças que implicam custos adicionais. As licenças podem ser geridas a partir da Área de Cliente OVHcloud: aceda à secção `Server` na parte superior e clique em `Licenças`{.action}.
+> Determinados sistemas operativos ou plataformas proprietárias, como o Plesk ou cPanel, requerem licenças que implicam custos adicionais. As licenças podem ser geridas a partir da Área de Cliente OVHcloud: aceda à secção `Bare Metal Cloud` na parte superior e clique em `Licenças`{.action}.
 > 
 > Para que um sistema operativo **Windows** se execute num VPS, deve ser **selecionado durante a respetiva encomenda**. Um VPS com um sistema operativo diferente instalado não pode ser reinstalado com Windows seguindo o método indicado anteriormente.
 >  
@@ -141,7 +141,7 @@ Depois, surge uma janela onde poderá escolher:
 
 > [!primary]
 >
-> Determinados sistemas operativos ou plataformas proprietárias, como o Plesk ou cPanel, requerem licenças que implicam custos adicionais. As licenças podem ser geridas a partir da Área de Cliente OVHcloud: aceda à secção `Server` na parte superior e clique em `Licenças`{.action}.
+> Determinados sistemas operativos ou plataformas proprietárias, como o Plesk ou cPanel, requerem licenças que implicam custos adicionais. As licenças podem ser geridas a partir da Área de Cliente OVHcloud: aceda à secção `Bare Metal Cloud` na parte superior e clique em `Licenças`{.action}.
 > 
 > Para que um sistema operativo **Windows** se execute num VPS, deve ser **selecionado durante a respetiva encomenda**. Um VPS com um sistema operativo diferente instalado não pode ser reinstalado com Windows seguindo o método indicado anteriormente.
 > 

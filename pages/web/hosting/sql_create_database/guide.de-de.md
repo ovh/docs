@@ -24,7 +24,7 @@ Datenbanken (DBs) werden verwendet, um sogenannte dynamische Elemente wie Kommen
 
 ### Schritt 1: Auf die Datenbankverwaltung des Webhostings zugreifen
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und wählen Sie im oberen Menü den Bereich `Web`{.action} aus. Klicken Sie in der linken Menüleiste auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Gehen Sie anschließend in den Tab `Datenbanken`{.action}.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und wählen Sie im oberen Menü den Bereich `Web Cloud`{.action} aus. Klicken Sie in der linken Menüleiste auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Gehen Sie anschließend in den Tab `Datenbanken`{.action}.
 
 Die Tabelle in diesem Bereich enthält alle Datenbanken, die als Teil Ihres Webhosting Angebots erstellt wurden.
 

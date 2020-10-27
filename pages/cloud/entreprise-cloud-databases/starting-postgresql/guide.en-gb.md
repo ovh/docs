@@ -32,7 +32,7 @@ Please refer to the [technical architecture documentation](https://www.postgresq
 
 ### Step 1: Order your cluster.
 
-Log in to the OVHcloud Control Panel, and click `Server`{.action}, then `Enterprise Cloud Databases`{.action}. Next, click `Order a cluster`{.action}.
+Log in to the OVHcloud Control Panel, and click `Bare Metal Cloud`{.action}, then `Enterprise Cloud Databases`{.action}. Next, click `Order a cluster`{.action}.
 
 You will then need to choose a number of different settings to create your cluster:
 

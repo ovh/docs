@@ -6,17 +6,17 @@ section: 'OpenStack'
 order: 10
 ---
 
-**Last updated 26th October 2020**
+**Last updated 27th October 2020**
 
 ## Objective
 
-OVHcloud offers Public Cloud customers ready to go images, however we also offer customers the ability to use their own images.
+OVHcloud offers ready-to-go images for Public Cloud instances, however we also enable customers to use their own images.
 
 **This guide will provide the steps to upload your own images to your project.**
 
 ## Requirements
 
-- a [Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) in your OVHcloud account.
+- a [Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/) in your OVHcloud account
 - your own RAW/QCOW2 (recommended formats) image 
 - an [OpenStack user](../creation-and-deletion-of-openstack-user) 
 - an [OpenStack CLI ready environment](../prepare_the_environment_for_using_the_openstack_api) (if using CLI)
@@ -25,9 +25,9 @@ OVHcloud offers Public Cloud customers ready to go images, however we also offer
 
 ### Before starting
 
-It is advisable to either use cloud ready images already provided by the distribution vendor or build your own image using solutions such as [Packer OpenStack builder](../packer-openstack-builder).
+It is advisable to either use cloud-ready images already provided by the distribution vendor or build your own image using solutions such as [Packer OpenStack builder](../packer-openstack-builder).
 
-Cloud ready images can be found here:
+Cloud-ready images can be found here:
 
 - <https://cloud.centos.org/centos/>{.external}
 - <https://cloud.debian.org/images/cloud/>{.external}
@@ -36,9 +36,10 @@ Cloud ready images can be found here:
 
 Other operating systems tend to offer ISO images which are also applicable when [building images with Packer](https://www.packer.io/docs/builders){.external} such as QEMU and VirtualBox builders.
 
-We recommend ensuring the following is installed on your images for them to be cloud ready:
-- QEMU Guest Agent: this will provide better snapshot experience as it will allow the host to communicate to the instance for live snapshots. Not all operating systems are compatible with this package but most of them are.
-- cloud-init: this will allow you to bootstrap your instance on the first boot, such as adding SSH keys and configuring network. Most operating systems are compatible with this.
+We recommend ensuring the following is installed on your images for them to be cloud-ready:
+
+- *QEMU Guest Agent*: this will provide better snapshot experience as it will allow the host to communicate to the instance for live snapshots. Not all operating systems are compatible with this package but most of them are.
+- *cloud-init*: this will allow you to bootstrap your instance on the first boot, such as adding SSH keys and configuring network. Most operating systems are compatible with this.
 
 Finally we recommend images to be either in RAW or QCOW2 format. As best practice, keep the size of the image as small as possible so that you are billed less per month and spawns of your instances are quicker.
 
@@ -63,11 +64,12 @@ source openrc.sh
 3\. Once the file is sourced, you will be asked to enter the password for the OpenStack user. Enter your password.
 
 4\. Now you can upload your image. This example command will do the following:
+
 - Disk format is "RAW"
 - Upload an image from the current path called "debian9.raw"
 - Call the image "Debian 9 - My Image"
 - Set the image to private state
-- Set properties which are recommended to set. Set optimal configuration which allow features like live-snapsot and cloud-init to work (requires the username to be used)
+- Set properties which are recommended to set. Set optimal configuration which allow features like *live-snapshot* and *cloud-init* to work (requires the username to be used)
 
 ```sh
 openstack image create --disk-format raw --container-format bare --file debian9.raw "Debian 9 - My Image" --private --property distribution=debian --property hw_disk_bus=scsi --property hw_scsi_model=virtio-scsi --property hw_qemu_guest_agent=yes --property image_original_user=debian

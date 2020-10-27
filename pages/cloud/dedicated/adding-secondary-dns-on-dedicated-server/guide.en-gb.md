@@ -53,7 +53,7 @@ Prior to clicking the Next button, make sure your newly added record is publicly
 >
 > Note: This process is only for domains hosted in OVH DNS servers. If you use external DNS servers the process is the same. However, you will have to adapt it since the Control Panel will be diffrent.
 >
-Log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Web`{.action} menu. Then click `Domains`{.action} to expand the list of domains:
+Log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Web Cloud`{.action} menu. Then click `Domains`{.action} to expand the list of domains:
 
 ![Domain verification](images/domain-verification-01.png){.thumbnail}
 

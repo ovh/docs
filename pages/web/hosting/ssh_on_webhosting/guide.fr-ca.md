@@ -17,7 +17,7 @@ Les offres d'hébergement web d'OVHcloud vous donnent accès à un espace de sto
 
 - Disposer d'une offre d'[hébergement web OVHcloud]({ovh_www}/hebergement-web/){.external} bénéficiant d'un accès SSH.
 - Être en possession des informations permettant de vous connecter en SSH à l'espace de stockage.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie `Web`{.action}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie `Web Cloud`{.action}.
 
 ## En pratique
 

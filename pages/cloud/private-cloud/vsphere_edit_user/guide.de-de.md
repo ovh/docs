@@ -20,7 +20,7 @@ Ein Name, Vorname, eine Telefonnummer und E-Mail-Adresse können mit dem vSphere
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und wählen Sie dann den Bereich `Server`. Klicken Sie im linken Menü auf `Private Cloud` und wählen Sie die betreffende Infrastruktur aus.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und wählen Sie dann den Bereich `Bare Metal Cloud`. Klicken Sie im linken Menü auf `Private Cloud` und wählen Sie die betreffende Infrastruktur aus.
 
 ![vSphere-Nutzer](images/addMailOnUser01.png){.thumbnail}
 

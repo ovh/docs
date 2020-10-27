@@ -19,7 +19,7 @@ Hosting umożliwia zarządzanie certyfikatem SSL. Certyfikat możesz uzyskać za
 
 - Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external}
 - Zarejestrowanie co najmniej jednej [domeny](https://www.ovh.pl/domeny/){.external}
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Web`{.action}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Web Cloud`{.action}
 
 ## W praktyce
 
