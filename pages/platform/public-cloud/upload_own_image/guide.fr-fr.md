@@ -19,7 +19,7 @@ OVHcloud offre aux clients Public Cloud des images prêtes à l'emploi, mais ég
 - une [instance Public Cloud](../creer-instance-espace-client/) sur votre espace client OVHcloud
 - votre propre image RAW/QCOW2 (formats recommandés) 
 - un utilisateur [OpenStack](../creation-et-suppression-dun-utilisateur-openstack/) 
-- un environnement [OpenStack CLI ready](../preparer-lenvironnement-pour-utiliser-lapi-openstack/) (si vous utilisez CLI)
+- un environnement [compatible avec la CLI OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/) (si vous utilisez CLI)
 
 ## En pratique
 
@@ -27,7 +27,7 @@ OVHcloud offre aux clients Public Cloud des images prêtes à l'emploi, mais ég
 
 Il est conseillé d'utiliser des images compatibles cloud fournies par le distributeur ou de créer votre propre image en utilisant des solutions telles que [Packer OpenStack builder](https://docs.ovh.com/gb/en/public-cloud/packer-openstack-builder/).
 
-Les images cloud compatibles sont disponibles ici :
+Les images compatibles cloud sont disponibles ici :
 
 - <https://cloud.centos.org/centos/>{.external}
 - <https://cloud.debian.org/images/cloud/>{.external}
