@@ -16,7 +16,7 @@ OVHcloud offre aux clients Public Cloud des images prêtes à l'emploi, mais nou
 
 ## Prérequis
 
-- une [instance Public Cloud](../creer-instance-espace-client/) sur votre espace client OVHcloud.
+- une [instance Public Cloud](../creer-instance-espace-client/) sur votre espace client OVHcloud
 - votre propre image RAW/QCOW2 (formats recommandés) 
 - un utilisateur [OpenStack](../creation-et-suppression-dun-utilisateur-openstack/) 
 - un environnement [OpenStack CLI ready](../preparer-lenvironnement-pour-utiliser-lapi-openstack/) (si vous utilisez CLI)
@@ -38,8 +38,8 @@ D'autres systèmes d'exploitation proposent aussi des images ISO qui sont égale
 
 Assurez-vous que les éléments suivants sont installés sur vos images pour qu'elles soient intégrables à l’environnement cloud :
 
-- QEMU Guest Agent: cette opération permet de bénéficier d'une meilleure expérience de sauvegarde, car elle permet à l'hôte de communiquer avec l'instance pour les sauvegardes en direct. Tous les systèmes d'exploitation ne sont pas compatibles avec ce package.
-- cloud-init : cela vous permettra de démarrer votre instance au premier démarrage, avec l'ajout de clés SSH et la configuration du réseau. La plupart des systèmes d'exploitation sont compatibles avec cette fonctionnalité.
+- *QEMU Guest Agent*: cette opération permet de bénéficier d'une meilleure expérience de sauvegarde, car elle permet à l'hôte de communiquer avec l'instance pour les sauvegardes en direct. Tous les systèmes d'exploitation ne sont pas compatibles avec ce package.
+- *cloud-init* : cela vous permettra de démarrer votre instance au premier démarrage, avec l'ajout de clés SSH et la configuration du réseau. La plupart des systèmes d'exploitation sont compatibles avec cette fonctionnalité.
 
 Nous recommandons que les images soient au format RAW ou QCOW2. Optimisez la taille de l'image pour qu'elle soit la plus petite possible afin de minimiser le coût de facturation mensuel et réduire le délai de génération de vos instances.
 
@@ -66,10 +66,10 @@ source openrc.sh
 4\. Maintenant vous pouvez importer votre image. Cet exemple de commande effectue les opérations suivantes :
 
 - Le format de disque est « RAW »
-- Télécharge une image à partir du chemin actuel appelé « debian9.raw »
+- Télécharge une image à partir du chemin actuel appelé « debian9.raw »
 - Appelle l'image « Debian 9 - Mon image »
 - Définit l'image à l'état privé
-- Définit les propriétés recommandées. Une configuration optimale permet l'utilisation de fonctionnalités telles que live-snapshot et cloud-init (nécessite l'utilisation du nom d'utilisateur)
+- Définit les propriétés recommandées. Une configuration optimale permet l'utilisation de fonctionnalités telles que *live-snapshot* et *cloud-init* (nécessite l'utilisation du nom d'utilisateur)
 
 ```sh
 openstack image create --disk-format raw --container-format bare --file debian9.raw "Debian 9 - Mon image" --private --property distribution=debian --property hw_disk_bus=scsi --property hw_scsi_model=virtio-scsi --property hw_qemu_guest_agent=yes --property image_original_user=debian
