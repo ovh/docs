@@ -10,7 +10,7 @@ order: 10
 
 ## Objective
 
-OVHcloud offers Public Cloud customers ready to go images, however we also offer customers the ability to use their own images.
+OVHcloud offers Public Cloud customers ready-to-go images, however we also offer customers the ability to use their own images.
 
 **This guide will provide the steps to upload your own images to your project.**
 
@@ -25,9 +25,9 @@ OVHcloud offers Public Cloud customers ready to go images, however we also offer
 
 ### Before starting
 
-It is advisable to either use cloud ready images already provided by the distribution vendor or build your own image using solutions such as [Packer OpenStack builder](../packer-openstack-builder).
+It is advisable to either use cloud-ready images already provided by the distribution vendor or build your own image using solutions such as [Packer OpenStack builder](../packer-openstack-builder).
 
-Cloud ready images can be found here:
+Cloud-ready images can be found here:
 
 - <https://cloud.centos.org/centos/>{.external}
 - <https://cloud.debian.org/images/cloud/>{.external}
@@ -36,9 +36,10 @@ Cloud ready images can be found here:
 
 Other operating systems tend to offer ISO images which are also applicable when [building images with Packer](https://www.packer.io/docs/builders){.external} such as QEMU and VirtualBox builders.
 
-We recommend ensuring the following is installed on your images for them to be cloud ready:
-- QEMU Guest Agent: this will provide better snapshot experience as it will allow the host to communicate to the instance for live snapshots. Not all operating systems are compatible with this package but most of them are.
-- cloud-init: this will allow you to bootstrap your instance on the first boot, such as adding SSH keys and configuring network. Most operating systems are compatible with this.
+We recommend ensuring the following is installed on your images for them to be cloud-ready:
+
+- *QEMU Guest Agent*: this will provide better snapshot experience as it will allow the host to communicate to the instance for live snapshots. Not all operating systems are compatible with this package but most of them are.
+- *cloud-init*: this will allow you to bootstrap your instance on the first boot, such as adding SSH keys and configuring network. Most operating systems are compatible with this.
 
 Finally we recommend images to be either in RAW or QCOW2 format. As best practice, keep the size of the image as small as possible so that you are billed less per month and spawns of your instances are quicker.
 
@@ -50,19 +51,25 @@ With OpenStack there are two ways of uploading your own image. You can either up
 
 Once your image is ready to upload, you can use the following steps to upload it using the OpenStack CLI:
 
-1\. Download your openrc.sh file for your OpenStack user from the OVHcloud Control Panel (select the region you want to upload to).
+<ol>
+<li>Download your openrc.sh file for your OpenStack user from the OVHcloud Control Panel (select the region you want to upload to).</li>
+</ol>
 
 ![openrc](images/openrc_file.png){.thumbnail}
 
-2\. Source the openrc file:
+<ol start="2">
+<li>Source the openrc file:</li>
+</ol>
 
 ```sh
 source openrc.sh
 ```
 
-3\. Once the file is sourced, you will be asked to enter the password for the OpenStack user. Enter your password.
+<ol start="3">
+<li>Once the file is sourced, you will be asked to enter the password for the OpenStack user. Enter your password.</li>
+<li>Now you can upload your image. This example command will do the following:</li>
+</ol>
 
-4\. Now you can upload your image. This example command will do the following:
 - Disk format is "RAW"
 - Upload an image from the current path called "debian9.raw"
 - Call the image "Debian 9 - My Image"
@@ -77,21 +84,28 @@ openstack image create --disk-format raw --container-format bare --file debian9.
 
 Once your image is ready to upload, you can use the following steps to upload it using the OpenStack Horizon web interface:
 
-1\. Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).
-
-2\. Select on the top left the region to which you want to upload your image.
+<ol>
+<li>Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/).</li>
+<li>Select on the top left the region to which you want to upload your image.</li>
+</ol>
 
 ![horizon_1](images/horizon_1.png){.thumbnail}
 
-3\. Go to the `Images` section and click on `Create Image`{.action}.
+<ol start="3">
+<li>Go to the `Images` section and click on `Create Image`{.action}.</li>
+</ol>
 
 ![horizon_2](images/horizon_2.png){.thumbnail}
 
-4\. Enter the details of your image and select the file from your computer.
+<ol start="4">
+<li>Enter the details of your image and select the file from your computer.</li>
+</ol>
 
 ![horizon_3](images/horizon_3.png){.thumbnail}
 
-5\. Enter the instance metadata (any custom ones you may have you can also add) and then click `Create Image`{.action}.
+<ol start="5">
+<li>Enter the instance metadata (any custom ones you may have you can also add) and then click `Create Image`{.action}.</li>
+</ol>
 
 ![horizon_4](images/horizon_4.png){.thumbnail}
 
