@@ -59,7 +59,7 @@ Klicken Sie auf `Manuelle Konfiguration`{.action}, um mit den Installationsschri
 >
 > In dieser Anleitung verwenden wir als Serverbezeichnung: ex**X**.mail.ovh.net. Das „X“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Exchange Dienst ersetzt werden.
 > 
-> Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager), wenn Sie im Bereich `Web`{.action} im Menü links unter `Exchange`{.action}
+> Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager), wenn Sie im Bereich `Web Cloud`{.action} im Menü links unter `Exchange`{.action}
 > den Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
 > 
 

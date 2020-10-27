@@ -24,7 +24,7 @@ Mit einer Microsoft SharePoint Lösung können Sie während Ihrer kollaborativen
 
 ### Schritt 1: Eine SharePoint Plattform bestellen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager). Klicken Sie im Bereich `Web`{.action} links in der Menüleiste auf `Bestellen`{.action} und dann auf `SharePoint`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager). Klicken Sie im Bereich `Web Cloud`{.action} links in der Menüleiste auf `Bestellen`{.action} und dann auf `SharePoint`{.action}.
 
 Ihnen stehen zwei Arten von Plattformen zur Verfügung:
 
@@ -43,7 +43,7 @@ Um die E-Mail einzusehen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https
 
 > **\[xx-11111-ovh] Konfigurieren Sie Ihren Microsoft SharePoint Dienst!**
 
-Um mit dieser Konfiguration zu beginnen, gehen Sie zum `Web`{.action}-Bereich Ihres Kundencenters. Klicken Sie links im Menü auf `Microsoft`{.action}, dann auf `SharePoint`{.action} und wählen Sie die entsprechende SharePoint Plattform aus.
+Um mit dieser Konfiguration zu beginnen, gehen Sie zum `Web Cloud`{.action}-Bereich Ihres Kundencenters. Klicken Sie links im Menü auf `Microsoft`{.action}, dann auf `SharePoint`{.action} und wählen Sie die entsprechende SharePoint Plattform aus.
 
 Definieren Sie den Namen Ihrer Plattform im Feld „SharePoint URL“ und klicken Sie danach auf `URL bestätigen`{.action}
 
@@ -55,7 +55,7 @@ Definieren Sie den Namen Ihrer Plattform im Feld „SharePoint URL“ und klicke
 
 ### Schritt 3: Die SharePoint Plattform konfigurieren
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und klicken Sie im Bereich `Web`{.action} links in der Menüleiste auf `Microsoft`{.action} und dann auf `SharePoint`{.action}. Wählen Sie den betreffenden SharePoint Dienst aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und klicken Sie im Bereich `Web Cloud`{.action} links in der Menüleiste auf `Microsoft`{.action} und dann auf `SharePoint`{.action}. Wählen Sie den betreffenden SharePoint Dienst aus.
 
 #### **SharePoint Standalone**
 

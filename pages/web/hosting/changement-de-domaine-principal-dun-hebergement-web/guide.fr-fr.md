@@ -36,7 +36,7 @@ Pour cela, consultez notre guide sur [la réécriture d'URL grâce au mod_rewrit
 
 ### Étape 2 : effectuer le changement de domaine principal
 
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez `Web`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de **Domaine principal** puis sur `Changer de domaine principal`{.action}.
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external} puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Cliquez sur `...`{.action} à droite de **Domaine principal** puis sur `Changer de domaine principal`{.action}.
 
 ![Domaine-Principal](images/change-primary-domain-step2.png){.thumbnail}
 

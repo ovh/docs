@@ -32,7 +32,7 @@ Consultez la [documentation d'architecture technique](https://www.postgresql.org
 
 ### Étape 1 : commander votre cluster
 
-Depuis votre espace client, rendez-vous successivement sur `Server`{.action} puis `Enterprise Cloud Databases`{.action} et enfin cliquez sur `Commander un cluster`{.action}.
+Depuis votre espace client, rendez-vous successivement sur `Bare Metal Cloud`{.action} puis `Enterprise Cloud Databases`{.action} et enfin cliquez sur `Commander un cluster`{.action}.
 
 Vous serez amenés à choisir différents paramètres pour créer votre cluster :
 

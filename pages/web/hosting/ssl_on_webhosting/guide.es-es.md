@@ -18,7 +18,7 @@ Los alojamientos web de OVH son compatibles con los certificados SSL. Puede cont
 
 - Tener contratado un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}.
 - Tener al menos un [dominio](https://www.ovh.es/dominios/){.external}.
-- Tener acceso al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}.
+- Tener acceso al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action}.
 
 ## Procedimiento
 

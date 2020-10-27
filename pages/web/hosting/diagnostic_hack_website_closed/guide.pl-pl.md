@@ -18,7 +18,7 @@ Twój hosting umożliwia Ci zamieszczenie w Internecie jednej lub kilku stron WW
 
 - Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external}
 - Posiadanie danych do logowania do przestrzeni dyskowej Twojego hostingu
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Web`{.action}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Web Cloud`{.action}
 
 ## W praktyce
 
@@ -74,7 +74,7 @@ W kolejnym etapie sprawdź, czy poszczególne dodatkowe elementy zainstalowane n
 
 W ten sposób dowiesz się, jak działa Twoja usługa i strona WWW. Dowiesz się, co się działo w momencie zablokowania Twojego hostingu.
 
-Aby sprawdzić operacje na hostingu oraz logi, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Web`{.action}. Kliknij `Hosting`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiedni hosting. Teraz istnieją dwie możliwości, w zależności od informacji, które chcesz uzyskać. 
+Aby sprawdzić operacje na hostingu oraz logi, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Web Cloud`{.action}. Kliknij `Hosting`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiedni hosting. Teraz istnieją dwie możliwości, w zależności od informacji, które chcesz uzyskać. 
 
 - **Sprawdź aktywność na Twoim hostingu**
 

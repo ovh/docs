@@ -21,7 +21,7 @@ section: Tutoriels
 ### Ce que vous devez avoir
 
 *   Disposer d’un [hébergement Cloud WebOVH](https://www.ovh.com/fr/hebergement-web/cloud-web.xml).
-*   Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager), partie `Web`.
+*   Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager), partie `Web Cloud`.
 
 
 ## En pratique

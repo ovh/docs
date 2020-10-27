@@ -17,7 +17,7 @@ A Cloud Web oferece a possibilidade de construir um projeto em diferentes lingua
 ## Requisitos
 
 - Ter um serviço de alojamento [Cloud Web](https://www.ovh.pt/alojamento-partilhado/cloud-web.xml).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), secção `Web`{.action}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), secção `Web Cloud`{.action}.
 
 ## Instruções
 

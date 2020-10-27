@@ -26,7 +26,7 @@ Le [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external} est un réseau
 
 ### Créer un projet Public Cloud
 
-Une fois connecté dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le menu `Server`{.action}, puis sur le bouton `Commander`{.action}.
+Une fois connecté dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le menu `Bare Metal Cloud`{.action}, puis sur le bouton `Commander`{.action}.
 
 ![Créer un projet](images/pci-project-01_2020.png){.thumbnail}
 

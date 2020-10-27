@@ -26,7 +26,7 @@ The following steps describe the process of changing the local admin password by
 
 ### Step 1: Rebooting the server into rescue mode
 
-The system has to be started in rescue mode before the admin password can be changed. Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Server`{.action} section and select your server from the list in the left-hand navigation under `Dedicated Servers`{.action}.
+The system has to be started in rescue mode before the admin password can be changed. Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `Dedicated Servers`{.action}.
 
 The netboot needs to be switched to "rescue64-pro (Customer rescue system (Linux))". Look for "Boot" in the **General informations** box and click on `...`{.action}, then on `Modify`{.action}. In the popup window, tick **Boot in rescue mode** and select "rescue64-pro" from the menu. Specify an email address below if the login credentials should *not* be sent to your customer account's primary address. Click on `Next`{.action} and `Confirm`{.action}.
 
@@ -271,7 +271,7 @@ It is advisable to use the virtual keyboard when typing passwords in this interf
 
 #### Step 1: Rebooting the server into rescue mode
 
-The system has to be started in rescue mode before the admin password can be changed. Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Server`{.action} section and select your server from the list in the left-hand navigation under `Dedicated Servers`{.action}.
+The system has to be started in rescue mode before the admin password can be changed. Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `Dedicated Servers`{.action}.
 
 The netboot needs to be switched to "WinRescue (Rescue System for Windows)". Look for "Boot" in the **General informations** box and click on `...`{.action}, then on `Modify`{.action}. In the popup window, tick **Boot in rescue mode** and select "WinRescue" from the menu. Specify an email address below if the login credentials should *not* be sent to your customer account's primary address. Click on `Next`{.action} and `Confirm`{.action}.
 

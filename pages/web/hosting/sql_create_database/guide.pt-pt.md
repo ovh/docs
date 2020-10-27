@@ -24,7 +24,7 @@ As bases de dados (BDD) servem para armazenar os designados «elementos dinâmic
 
 ### Passo 1: Aceder à secção de gestão da base de dados no plano de alojamento web
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e selecione `Web`{.action} na barra de navegação superior. Clique em `Planos de alojamento`{.action} na barra de serviços à esquerda e, a seguir, escolha o plano de alojamento em causa. Depois, clique no separador `Bases de dados`{.action}.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e selecione `Web Cloud`{.action} na barra de navegação superior. Clique em `Planos de alojamento`{.action} na barra de serviços à esquerda e, a seguir, escolha o plano de alojamento em causa. Depois, clique no separador `Bases de dados`{.action}.
 
 A tabela desta secção contém todas as bases de dados criadas no âmbito do seu plano de alojamento web.
 

@@ -17,7 +17,7 @@ Les adresses e-mail de l’offre MX Plan vous permettent d’envoyer et de recev
 ## Prérequis
 
 - Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web]({ovh_www}/hebergement-web/){.external}, l'[hébergement gratuit Start 10M]({ovh_www}/domaines/offre_hebergement_start10m.xml){.external}, ou l'offre MX Plan commandée séparément.
-- Selon la méthode que vous utilisez : être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Web`{.action}, ou être connecté à l'adresse e-mail depuis le [webmail]({ovh_www}/mail/){.external} Outlook Web Messenger (OWA).
+- Selon la méthode que vous utilisez : être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Web Cloud`{.action}, ou être connecté à l'adresse e-mail depuis le [webmail]({ovh_www}/mail/){.external} Outlook Web Messenger (OWA).
 
 > [!primary]
 >

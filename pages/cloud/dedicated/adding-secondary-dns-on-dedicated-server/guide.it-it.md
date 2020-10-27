@@ -44,7 +44,7 @@ Comparirà un messaggio che conferma il record di tipo TXT per il tuo dominio.  
 
 ### Procedi alla verifica del dominio
 
-Accedi allo `Spazio Cliente OVH`{.action}, clicca sulla sezione `Web`{.action} e poi su `Domini`{.action} nel menu a sinistra per visualizzare l’elenco dei domini che gestisci:
+Accedi allo `Spazio Cliente OVH`{.action}, clicca sulla sezione `Web Cloud`{.action} e poi su `Domini`{.action} nel menu a sinistra per visualizzare l’elenco dei domini che gestisci:
 
 ![Verifica del dominio](images/domain-verification-01.png){.thumbnail}
 

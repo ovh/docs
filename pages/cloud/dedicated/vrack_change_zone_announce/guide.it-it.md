@@ -48,7 +48,7 @@ Accedi alla pagina delle [API OVH](https://api.ovh.com/console/){.external} util
 > @api {GET} /vrack#GET
 > 
 
-Questa chiamata API consente di recuperare l'elenco di tutte le vRack create. Se i riferimenti mostrati non ti permettono di identificare la vRack, recupera l’informazione dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}: nella sezione `Server`{.action} è sufficiente cliccare su `vRack`{.action} nella colonna a sinistra per visualizzare tutte le vRack attive.
+Questa chiamata API consente di recuperare l'elenco di tutte le vRack create. Se i riferimenti mostrati non ti permettono di identificare la vRack, recupera l’informazione dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}: nella sezione `Bare Metal Cloud`{.action} è sufficiente cliccare su `vRack`{.action} nella colonna a sinistra per visualizzare tutte le vRack attive.
 
 > [!api]
 >

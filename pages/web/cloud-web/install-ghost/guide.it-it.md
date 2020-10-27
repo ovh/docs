@@ -27,7 +27,7 @@ Gli [hosting Cloud Web OVH](https://www.ovh.it/hosting-web/cloud-web.xml){.exter
 - Disporre di un [hosting Cloud Web](https://www.ovh.it/hosting-web/cloud-web.xml){.external} attivo
 - Aver impostato Node.js come motore di esecuzione
 - Aver aggiunto il dominio in questione come multisito e definito Node.js come motore di esecuzione associato
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web`{.action}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web Cloud`{.action}
 
 ## Procedura
 

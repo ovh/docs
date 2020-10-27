@@ -156,7 +156,7 @@ In the window that pops up, enter the IP address or mask that you wish to author
 
 To access the database from an OVHcloud Web Hosting, the outgoing IP address (gateway) of the hosting cluster has to be authorised.
 
-To find out the appropriate gateway IP address for your service, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
+To find out the appropriate gateway IP address for your service, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
 
 You can verify the cluster number of the Web Hosting on this page under **FTP server**:
 

@@ -18,7 +18,7 @@ Votre hébergement web vous permet de mettre en ligne un ou plusieurs sites inte
 
 - Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
 - Être en possession des identifiants permettant de se connecter à l'espace de stockage de votre hébergement.
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie `Web`{.action}.
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie `Web Cloud`{.action}.
 
 ## En pratique
 
@@ -74,7 +74,7 @@ Il sera intéressant de vous assurer, lors de la prochaine étape, que les diff�
 
 Ceci vous permet d'avoir une visibilité sur l'activité de votre service et de votre site. Le but étant d'analyser ce qu'il s'est passé au moment où la désactivation de votre hébergement a eu lieu.
 
-Pour consulter l'activité et les logs de l'hébergement, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} partie `Web`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement concerné. Dès lors, il existe deux possibilités selon les informations que vous souhaitez recueillir.
+Pour consulter l'activité et les logs de l'hébergement, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement concerné. Dès lors, il existe deux possibilités selon les informations que vous souhaitez recueillir.
 
 - **Consulter l'activité de votre hébergement**
 

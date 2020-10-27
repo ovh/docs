@@ -29,7 +29,7 @@ Transfer domeny umożliwia jej przeniesienie do innego operatora. Po zakończeni
 
 ### Etap 1: wyłączenie ochrony przed transferem
 
-Aby wyłączyć ochronę przed transferem domeny, kliknij przycisk `Web`{.action} na pasku usług na górze strony w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Przejdź do sekcji `Domeny`{.action} po lewej stronie, następnie kliknij wybraną domenę. W zakładce `Informacje ogólne`{.action} kliknij suwak `Ochrona przed transferem`{.action}, następnie kliknij `Zatwierdź`{.action}.
+Aby wyłączyć ochronę przed transferem domeny, kliknij przycisk `Web Cloud`{.action} na pasku usług na górze strony w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Przejdź do sekcji `Domeny`{.action} po lewej stronie, następnie kliknij wybraną domenę. W zakładce `Informacje ogólne`{.action} kliknij suwak `Ochrona przed transferem`{.action}, następnie kliknij `Zatwierdź`{.action}.
 
 > [!primary]
 >

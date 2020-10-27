@@ -19,7 +19,7 @@ Lors de l'ajout d'un nom de domaine à votre offre e-mail, une configuration du 
 - Disposer d'une offre e-mail OVH.
 - Avoir effectué l'ajout d'un nom de domaine sur votre offre e-mail demandant l'ajout d'un champ CNAME.
 - Pouvoir modifier la configuration de votre nom de domaine (sa zone DNS).
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Web`{.action}.
+- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Web Cloud`{.action}.
 
 ## En pratique
 

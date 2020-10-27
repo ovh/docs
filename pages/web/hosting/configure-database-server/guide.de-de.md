@@ -57,7 +57,7 @@ Geben Sie im angezeigten Fenster im Feld `IP / Maske`{.action} die IP-Adresse od
 
 Für OVHcloud Webhostings müssen Sie die ausgehende IP-Adresse („gateway“) des Hostings hinzufügen. 
 
-Die ausgehende IP-Adresse können Sie über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) herausfinden. Klicken Sie auf `Web` und dann auf `Hosting-Pakete`{.action} in der linken Spalte. Wählen Sie Ihr Hosting aus der Liste und klicken Sie dann auf den Tab `FTP - SSH`.
+Die ausgehende IP-Adresse können Sie über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) herausfinden. Klicken Sie auf `Web Cloud` und dann auf `Hosting-Pakete`{.action} in der linken Spalte. Wählen Sie Ihr Hosting aus der Liste und klicken Sie dann auf den Tab `FTP - SSH`.
 
 Unter **FTP Server** wird Ihnen die Cluster-Nummer, auf der Ihr Hosting liegt, angezeigt.
 
@@ -73,7 +73,7 @@ Nachdem Sie die Cluster-Nummer Ihres Hostings abgerufen haben, überprüfen Sie 
 
 ### Wechseln des Datenbank-Angebots
 
-Um das Angebot Ihres Datenbanken-Servers zu wechseln, melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) an. Klicken Sie auf `Web`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus.
+Um das Angebot Ihres Datenbanken-Servers zu wechseln, melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) an. Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus.
 
 In der Standardansicht **Allgemeine Informationen** klicken Sie auf `...`{.action} rechts neben "RAM" und dann auf `RAM Menge ändern`{.action}, um zur Bestellung geleitet zu werden.
 
@@ -97,7 +97,7 @@ Nach Bestätigung der Verträge werden Sie auf den Bestellschein umgeleitet, um 
 
 ### Die Konfiguration meines Datenbankservers ändern
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. und wählen Sie den Namen Ihres SQL Private Servers aus. 
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. und wählen Sie den Namen Ihres SQL Private Servers aus. 
 
 #### MySQL und MariaDB Instanzen
 
@@ -189,7 +189,7 @@ show variables like "version";
 
 So können Sie die Ausführungsdauer auf Ihrem Datenbankserver während der letzten 24 Stunden visualisieren.
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus. 
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus. 
 
 Gehen Sie hierzu zum Tab `Messwerte` Ihres Datenbankservers. Sie finden hier die **Statistiken zur Ausführungsdauer der Anfragen**.
 
@@ -203,7 +203,7 @@ Gehen Sie hierzu zum Tab `Messwerte` Ihres Datenbankservers. Sie finden hier die
 
 Diese Logs (**"slow-query.log"**) können im Wurzelverzeichnis des SFTP-Zugangs Ihres Datenbankservers abgerufen werden. 
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web`{.action} und dann auf Datenbanken in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus. 
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf Datenbanken in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus. 
 
 Im Kasten `Allgemeine Informationen` finden Sie den Abschnitt **SFTP** unter **Verbindungsinformationen**.
 
@@ -216,7 +216,7 @@ Wenn diese Datei leer ist, haben Sie keine langsamen Anfragen.
 
 #### Überprüfung der RAM Nutzung
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus. 
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus. 
 
 Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik **Statistiken zum verwendeten RAM**.
 
@@ -226,7 +226,7 @@ Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik
 
 Diese Anzeige ermöglicht es, die Verbindungslast pro Minute während der letzten 24 Stunden auf Ihrem Datenbankserver zu verfolgen.
 
-Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus.
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus.
 
 Gehen Sie zum Tab `Messwerte` Ihres Datenbankservers. Hier finden Sie die Grafik **Statistiken der Gesamtzahl der Verbindungen pro Minute**.
 

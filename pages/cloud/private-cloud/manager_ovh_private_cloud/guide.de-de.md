@@ -16,7 +16,7 @@ Das OVHcloud Kundencenter bietet zahlreiche Optionen für die Konfiguration Ihre
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich unter `Server`{.action} im Bereich `Private Cloud`{.action}.
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich unter `Bare Metal Cloud`{.action} im Bereich `Private Cloud`{.action}.
 - Sie verfügen über ein [Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external} Produkt.
 
 
@@ -24,7 +24,7 @@ Das OVHcloud Kundencenter bietet zahlreiche Optionen für die Konfiguration Ihre
 
 ### Tab „Allgemeines“
 
-Im Menüpunkt `Server`{.action} im Bereich `Private Cloud`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager){.external} finden Sie eine allgemeine Übersicht Ihrer Private Cloud:
+Im Menüpunkt `Bare Metal Cloud`{.action} im Bereich `Private Cloud`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager){.external} finden Sie eine allgemeine Übersicht Ihrer Private Cloud:
 
 ![Allgemeine Informationen](images/controlpanel1.png){.thumbnail}
 

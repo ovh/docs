@@ -16,7 +16,7 @@ Se a sua oferta de Hosted Private Cloud já não lhe convier, ou se encomendou u
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e aceder à secção `Server`{.action} e, depois, `Private Cloud`{.action}.
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e aceder à secção `Bare Metal Cloud`{.action} e, depois, `Private Cloud`{.action}.
 - Ter um produto [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}.
 
 
@@ -31,7 +31,7 @@ A oferta Hosted Private Cloud não tem compromisso. No entanto, tal como indicad
 
 ### 1 - Solicitar a rescisão através da Área de Cliente OVHcloud
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dirija-se à secção `Server`{.action} (1), clique em `Private Cloud`{.action} (2) e selecione a sua oferta na lista (3).
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dirija-se à secção `Bare Metal Cloud`{.action} (1), clique em `Private Cloud`{.action} (2) e selecione a sua oferta na lista (3).
 
 Na tabela «Gestão do serviço» do separador «Informações gerais», clique no botão `...`{.action} (4) à direita da data de renovação. Clique em `Eliminar o serviço`{.action} (5).
 

@@ -35,7 +35,7 @@ This guide will show you how to reboot your VPS in rescue mode.
 
 ## Instructions
 
-Once you have logged in to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, you simply go to the `Server`{.action} section, then to `VPS`{.action} in the left-hand column to select your VPS. In this section, you will you will see a button labelled `Reboot in rescue mode`{.action} and confirm the popup:
+Once you have logged in to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, you simply go to the `Bare Metal Cloud`{.action} section, then to `VPS`{.action} in the left-hand column to select your VPS. In this section, you will you will see a button labelled `Reboot in rescue mode`{.action} and confirm the popup:
 
 ![Click on the rescue mode button](images/activating_rescue.png){.thumbnail}
 

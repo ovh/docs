@@ -50,7 +50,7 @@ L’attivazione e la gestione della replica delle VM avviene attraverso un Grupp
 
 #### Dallo Spazio Cliente
 
-Accedi allo Spazio Cliente e, nella sezione `Server`, clicca su `Private Cloud` nella colonna a sinistra e seleziona la piattaforma Cloud principale e il datacenter in questione.
+Accedi allo Spazio Cliente e, nella sezione `Bare Metal Cloud`, clicca su `Private Cloud` nella colonna a sinistra e seleziona la piattaforma Cloud principale e il datacenter in questione.
 
 Clicca sulla scheda `Disaster Recovery Plan (DRP)`{.action}
 

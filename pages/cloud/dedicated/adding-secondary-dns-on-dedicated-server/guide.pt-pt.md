@@ -44,7 +44,7 @@ Uma mensagem irá aparecer para confirmar o registo de tipo TXT para o seu domí
 
 ### Verificar o nome de domínio
 
-Depois de aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no menu `Web`{.action} e selecione a secção `Domínios`{.action} na barra à esquerda para ver todos os domínios geridos por si:
+Depois de aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no menu `Web Cloud`{.action} e selecione a secção `Domínios`{.action} na barra à esquerda para ver todos os domínios geridos por si:
 
 ![Verificação do domínio](images/domain-verification-01.png){.thumbnail}
 
