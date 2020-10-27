@@ -72,7 +72,7 @@ SMS credits can only be transferred via the API.
 
 Log in to [https://api.ovh.com/](https://api.ovh.com/console/), then use the following API call:
 
-> \[!api]
+> [!api]
 >
 > @api {post} /sms/{serviceName}/transferCredits
 >
