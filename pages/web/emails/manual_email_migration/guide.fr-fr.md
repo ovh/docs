@@ -166,7 +166,7 @@ Depuis la fenêtre principale, cliquez sur le menu en haut à droite puis sur `A
 
 ![emails](images/thunderbird_menu.png){.thumbnail}
 
-Un tableau apparaît. Identifiez la ligne `Répertoire de profil`{.action} et cliquez sur le bouton `Ouvrir le dossier correspondant`.
+Un tableau apparaît. Identifiez la ligne `Répertoire de profil` et cliquez sur le bouton `Ouvrir le dossier correspondant`.
 
 ![emails](images/thunderbird_open_folder.png){.thumbnail}
 
@@ -187,7 +187,7 @@ C’est pourquoi nous vous conseillons de charger d’abord le nouveau profil (p
 
 Vous devez d'abord démarrer Thunderbird via le gestionnaire de profils. 
 
-- Sur Windows, allez sur le menu `Démarrer`{.action} puis sur le programme `Exécuter`{.action}. Sur ce dernier, tapez `thunderbird.exe -ProfileManager`et cliquez sur `OK`{.action}.
+- Sur Windows, allez sur le menu `Démarrer` puis sur le programme `Exécuter`. Sur ce dernier, tapez `thunderbird.exe -ProfileManager`et cliquez sur `OK`.
 
 ![emails](images/thunderbird-run-profil.png){.thumbnail}
 
@@ -195,7 +195,7 @@ Vous devez d'abord démarrer Thunderbird via le gestionnaire de profils.
 
 ![emails](images/thunderbird-terminal-profil.png){.thumbnail}
 
-La fenêtre suivante vous affiche les profils existants. Cliquez sur `Créer un profil`{.action} puis sur `Suivant`{.action} lorsque le message d'information s'affiche.
+La fenêtre suivante vous affiche les profils existants. Cliquez sur `Créer un profil` puis sur `Suivant` lorsque le message d'information s'affiche.
 
 ![emails](images/thunderbird-profil-create01.png){.thumbnail}
 
@@ -206,9 +206,9 @@ La fenêtre suivante vous affiche les profils existants. Cliquez sur `Créer un 
 > [!primary]
 > Nous vous conseillons de copier la sauvegarde de votre profil Thunderbird dans le dossier de profils de Thunderbird. 
 
-Cliquez sur `Choisir un dossier...`{.action} pour sélectionner le dossier contenant votre sauvegarde. Cliquez sur `Terminer`{.action} pour créer le profil avec votre sauvegarde.
+Cliquez sur `Choisir un dossier...` pour sélectionner le dossier contenant votre sauvegarde. Cliquez sur `Terminer` pour créer le profil avec votre sauvegarde.
 
-Vous retrouvez la fenêtre de choix de votre profil avec votre nouveau profil sélectionné. Cliquez sur `Démarrer Thunderbird`{.action}, Thunderbird sera lancé avec tous les éléments que vous aviez dans votre sauvegarde.
+Vous retrouvez la fenêtre de choix de votre profil avec votre nouveau profil sélectionné. Cliquez sur `Démarrer Thunderbird`, Thunderbird sera lancé avec tous les éléments que vous aviez dans votre sauvegarde.
 
 
 ### Vérifier l'importation sur la nouvelle adresse e-mail
