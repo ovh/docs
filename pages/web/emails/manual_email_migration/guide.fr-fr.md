@@ -10,9 +10,9 @@ order: 1
 
 ## Objectif
 
-Vous souhaitez effectuer une migration manuelle d'une adresse e-mail vers une autre de vos adresses e-mail.
+[La migration automatique](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-migration-de-comptes-e-mail-ovh-mail-migrator/){.external} d’une adresse e-mail est possible via notre outil [OVH Mail Migrator](https://omm.ovh.net/){.external}. Vous pouvez également migrer manuellement votre adresse e-mail par le biais des logiciels de messagerie. 
 
-**Découvrez comment migrer manuellement votre adresse e-mail vers une autre adresse e-mail**
+**Découvrez comment migrer manuellement votre adresse e-mail.**
 
 > [!warning]
 >
@@ -154,11 +154,11 @@ Sélectionnez votre fichier de sauvegarde au format « .mbox », puis cliquez su
 
 ![emails](images/mail-import-mac02.png){.thumbnail}
 
-Depuis la colonne de gauche, les e-mails importés se trouvent dans un nouveau compte e-mail nommé « Importation ». Vous pouvez faire glisser les dossiers et les messages à partir du compte « Importation » vos comptes e-mail déjà configurés. Une fois vos transferts terminés, vous pourrez supprimer le compte « Importation ».
+Depuis la colonne de gauche, les e-mails importés se trouvent dans un nouveau compte e-mail nommé « Importation ». Vous pouvez faire glisser les dossiers et les messages à partir du compte « Importation » vers vos comptes e-mail déjà configurés. Une fois vos transferts terminés, vous pourrez supprimer le compte « Importation ».
 
 ### Thunderbird 
 
-Il n'existe actuellement pas d'outil natif pour exporter ou importer son compte e-mail depuis Thunderbird. Il est néanmoins possible de sauvegarder son profil Thunderbird qui contient l'ensemble des comptes et e-mails en local sur votre ordinateur. Nous allons voir comment sauvegarder un profil Thunderbird et le réintégrer sur un nouveau Thunderbird.
+Il n'existe actuellement pas de fonctionnalité native pour exporter ou importer un compte e-mail depuis Thunderbird. Il est néanmoins possible de sauvegarder un profil Thunderbird. Celui-ci contient l'ensemble des comptes et e-mails en local sur votre ordinateur. Nous allons voir comment sauvegarder un profil Thunderbird et le réintégrer sur une nouvelle instance de Thunderbird.
  
 #### Exporter 
 
@@ -180,7 +180,10 @@ Copiez le dossier du profil via un clic-droit sur celui-ci, puis collez ce dossi
 
 #### Importer
 
-Plutôt qu'une importation, il sera question ici d'un chargement de votre profil. En effet, lorsque Thunderbird va lire votre profil sauvegardé, il chargera uniquement ce que vous aviez sur ce dernier. Si quelque chose a déjà été configuré sur le Thunderbird de destination, il sera sur un autre profil. C'est pourquoi, nous vous conseillons de charger le profil sauvegardé et ensuite de configurer vos comptes supplémentaires.
+Plutôt qu'une importation, il sera question ici d'un chargement de profil.
+Si des comptes e-mail ont déjà été configurés sur l'instance Thunderbird de destination, ils seront présents sur un profil A.
+Lorsque Thunderbird va charger un nouveau profil (profil B), il ne pourra charger **que** les éléments de ce profil B.
+C’est pourquoi nous vous conseillons de charger d’abord le nouveau profil (profil B) puis d’y configurer les comptes e-mail provenant du profil A.
 
 Vous devez d'abord démarrer Thunderbird via le gestionnaire de profils. 
 
