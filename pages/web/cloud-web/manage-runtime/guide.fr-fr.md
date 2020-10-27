@@ -16,7 +16,7 @@ Cloud Web met à disposition de multiples langages de développement pour constr
 ## Prérequis
 
 - Disposer d'une offre d'hébergement [Cloud Web](https://www.ovh.com/fr/hebergement-web/cloud-web.xml).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), partie `Web`{.action}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), partie `Web Cloud`{.action}.
 
 ## En pratique
 

@@ -44,7 +44,7 @@ Es wird eine Nachricht angezeigt, in der Sie dazu aufgefordert werden, einen TXT
 
 ### Domain verifizieren
 
-Wenn Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt sind, gehen Sie in den Bereich `Web`{.action} und klicken Sie in der linken Menüleiste auf `Domains`{.action}, um alle von Ihnen verwalteten Domains anzuzeigen.
+Wenn Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt sind, gehen Sie in den Bereich `Web Cloud`{.action} und klicken Sie in der linken Menüleiste auf `Domains`{.action}, um alle von Ihnen verwalteten Domains anzuzeigen.
 
 ![Domain verifizieren](images/domain-verification-01.png){.thumbnail}
 

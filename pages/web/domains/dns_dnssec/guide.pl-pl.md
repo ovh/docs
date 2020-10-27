@@ -20,7 +20,7 @@ Dla lepszego zrozumienia, jak ta ochrona działa, zachęcamy do lektury treści 
 
 - Posiadanie domeny zarejestrowanej w OVH
 - Wybrana domena powinna posiadać rozszerzenie kompatybilne z DNSSEC
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Web`{.action}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Web Cloud`{.action}
 
 ## W praktyce
 
@@ -37,7 +37,7 @@ Aktywacja DNSSEC jest możliwa w dwóch przypadkach:
 
 ### Etap 1: logowanie do interfejsu zarządzania domeną
 
-Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Web`{.action}. Po zalogowaniu kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiedni hosting.
+Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Web Cloud`{.action}. Po zalogowaniu kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiedni hosting.
 
 Na stronie, która się wyświetla widoczne są ogólne informacje o hostingu. 
 

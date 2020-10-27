@@ -42,7 +42,7 @@ You will now see a message instructing you to create a TXT record for your domai
 
 ### Verify your domain
 
-Log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Web`{.action} menu. Then click `Domains`{.action} to expand the list of domains:
+Log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Web Cloud`{.action} menu. Then click `Domains`{.action} to expand the list of domains:
 
 ![Domain verification](images/domain-verification-01.png){.thumbnail}
 

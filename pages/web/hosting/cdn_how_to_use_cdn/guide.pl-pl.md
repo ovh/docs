@@ -37,7 +37,7 @@ Każdy serwer przechowuje w pamięci podręcznej (cache) część Twojej witryny
 
 ####  Jeśli Twój hosting nie zawiera usługi GeoCache
 
-Zaloguj się do swojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz opcję `Web`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie „Opcji GeoCache”, a następnie `Zamów GeoCache`{.action}.
+Zaloguj się do swojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz opcję `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie „Opcji GeoCache”, a następnie `Zamów GeoCache`{.action}.
 
 ![GeoCache](images/manage_CDN_01.png){.thumbnail}
 
@@ -45,7 +45,7 @@ Zostaniesz przekierowany do formularza zamówienia. Usługa zostanie aktywowana 
 
 #### Jeśli funkcja GeoCache jest już aktywna w Twoim hostingu WWW
 
-Zaloguj się do swojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz opcję `Web`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. W karcie `Multisite`{.action} kliknij ikonę koła zębatego po prawej stronie, a następnie wybierz `Zmień`{.action}.
+Zaloguj się do swojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz opcję `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. W karcie `Multisite`{.action} kliknij ikonę koła zębatego po prawej stronie, a następnie wybierz `Zmień`{.action}.
 
 Zaznacz opcję „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
@@ -95,7 +95,7 @@ Jeśli nie korzystasz z CMS-a, również możesz korzystać z usługi GeoCache. 
 
 Czasem konieczne może okazać się usunięcie pamięci podręcznej z GeoCache, zwłaszcza po wprowadzeniu zmian w plikach statycznych. Na przykład przy publikowaniu nowej wersji swojej witryny. Należy wówczas całkowicie wyczyścić pamięć podręczną w GeoCache.
 
-Zaloguj się do swojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz opcję `Web`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie „Opcji GeoCache”, a następnie `Wyczyść pamięć cache`{.action}.
+Zaloguj się do swojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz opcję `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie „Opcji GeoCache”, a następnie `Wyczyść pamięć cache`{.action}.
 
 ![GeoCache](images/manage_CDN_02.png){.thumbnail}
 
@@ -103,7 +103,7 @@ Zaloguj się do swojego [Panelu klienta](https://www.ovh.com/auth/?action=gotoma
 
 To działanie pozwala wyłączyć GeoCache dla jednej lub większej liczby pozycji Multisite, nie usuwając przy tym opcji GeoCache ze swojego hostingu WWW.
 
-Zaloguj się do swojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz opcję `Web`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. W karcie `Multisite`{.action} kliknij ikonę koła zębatego po prawej stronie, a następnie wybierz `Zmień`{.action}.
+Zaloguj się do swojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz opcję `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. W karcie `Multisite`{.action} kliknij ikonę koła zębatego po prawej stronie, a następnie wybierz `Zmień`{.action}.
 
 Usuń zaznaczenie opcji „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
@@ -113,7 +113,7 @@ Usuń zaznaczenie opcji „Aktywuj GeoCache”, kliknij przycisk `Dalej`{.action
 
 Celem tego działania jest usunięcie opcji GeoCache dla całego hostingu WWW.
 
-Zaloguj się do swojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz opcję `Web`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie „Opcji GeoCache”, a następnie `Rezygnacja z GeoCache`{.action}.
+Zaloguj się do swojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz opcję `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie „Opcji GeoCache”, a następnie `Rezygnacja z GeoCache`{.action}.
 
 ![GeoCache](images/manage_CDN_04.png){.thumbnail}
 

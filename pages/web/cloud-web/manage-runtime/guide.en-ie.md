@@ -16,7 +16,7 @@ With a Cloud Web hosting plan, you can choose from a range of different coding l
 ## Requirements
 
 - a [Cloud Web hosting plan](https://www.ovh.ie/web-hosting/cloud-web.xml)
-- access to the `Web`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 

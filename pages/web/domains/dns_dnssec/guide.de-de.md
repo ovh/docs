@@ -20,7 +20,7 @@ Um zu verstehen, wie dieses Verfahren funktioniert, lesen Sie folgende Seite: â€
 
 - Sie besitzen eine bei OVH registrierte Domain.
 - Die betreffende Domain hat eine mit DNSSEC kompatible Endung.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web`{.action}.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
 ## Beschreibung
 

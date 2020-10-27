@@ -18,13 +18,13 @@ Właśnie zakupiłeś usługę MX Plan. W ramach tej usługi zyskujesz konta e-m
 ## Wymagania początkowe
 
 - Posiadanie pakietu MX Plan. Jest on dostępny w ramach [pakietów hostingowych]({ovh_www}/hosting/){.external}, [bezpłatnego hostingu Start 10M]({ovh_www}/domeny/oferta_serwer_start10m.xml){.external} lub oferty MX Plan zamówionej oddzielnie.
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Web`{.action}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Web Cloud`{.action}
 
 ## W praktyce
 
 Po uruchomieniu i udostępnieniu usługi MX Plan możesz zarządzać nią w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. W zależności od daty aktywacji usługi lub jeśli [usługa została niedawno migrowana]({ovh_www}/mxplan-migration/){.external}, możliwe jest, że dysponujesz jej poprzednią lub nową wersją.  Zanim przejdziesz dalej, ustal, jaką wersję posiadasz. 
 
-Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Web`. Kliknij E-maile na pasku usług po lewej stronie, po czym wybierz odpowiednią usługę. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
+Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Web Cloud`. Kliknij E-maile na pasku usług po lewej stronie, po czym wybierz odpowiednią usługę. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
 
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|

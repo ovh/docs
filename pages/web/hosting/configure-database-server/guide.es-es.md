@@ -57,7 +57,7 @@ En la nueva ventana, indique en `IP/máscara`{.action} la dirección IP o la má
 
 Para un alojamiento web de OVHcloud, debe autorizar la dirección IP "puerta de enlace" (gateway) de este último. 
 
-Para acceder a la dirección IP **Puerta de enlace**, acceda al [área de cliente de OVHcloudcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Haga clic en la pestaña `Web` y seleccione `Alojamiento`{.action} en la columna izquierda. Seleccione el alojamiento de la lista y abra la pestaña `FTP - SSH`.
+Para acceder a la dirección IP **Puerta de enlace**, acceda al [área de cliente de OVHcloudcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Alojamiento`{.action} en la columna izquierda. Seleccione el alojamiento de la lista y abra la pestaña `FTP - SSH`.
 
 Encontrará la mención **"Servidor FTP"**, que le indicará el número de cluster en el que está, como se indica a continuación.
 
@@ -73,7 +73,7 @@ Una vez que haya obtenido el número del cluster en el que está situado el aloj
 
 ### Cambiar la oferta del servidor de bases de datos
 
-Para cambiar el plan de hosting de su servidor de bases de datos, acceda al [área de cliente de OVHcloudcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Haga clic en la pestaña `Web` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos.
+Para cambiar el plan de hosting de su servidor de bases de datos, acceda al [área de cliente de OVHcloudcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos.
 En la pestaña **"Información general"** que se muestra por defecto, haga clic en `..`{.action} a la derecha de la indicación "RAM" y luego en `Cambiar la cantidad de RAM`{.action} para acceder al pedido de esta modificación.
 
 ![private-sql](images/private-sql-order-ram01.png){.thumbnail}
@@ -97,7 +97,7 @@ Tras la validación de los contratos, será redirigido a la orden de pedido, don
 
 ### Modificar la configuración de mi servidor de bases de datos
 
-Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre de su servidor SQL privado. 
+Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre de su servidor SQL privado. 
 
 #### Instancia MySQL y MariaDB
 
@@ -188,7 +188,7 @@ show variables like "version";
 
 Para visualizar el tiempo de ejecución de las consultas en el servidor de bases de datos en las últimas 24 horas.
 
-Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos. 
+Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos. 
 
 Acceda a la pestaña `Métricas` de su servidor de bases de datos. Puede consultar la gráfica **"Estadísticas del tiempo de ejecución de las consultas"**.
 
@@ -202,7 +202,7 @@ Acceda a la pestaña `Métricas` de su servidor de bases de datos. Puede consult
 
 Estos logs, denominados **"slow-query.log"**, pueden recuperarse en la raíz del espacio SFTP de su servidor de bases de datos. 
 
-Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos. 
+Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos. 
 
 En la pestaña `Información general`, encontrará la sección **"SFTP"** en el recuadro **"Información de conexión".**
 
@@ -215,7 +215,7 @@ Si el archivo está vacío, no tiene una petición lenta.
 
 #### Seguimiento de la RAM consumida
 
-Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos. 
+Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos. 
 
 Acceda a la pestaña `Métricas` del área de cliente. Encontrará el gráfico **"Estadísticas de memoria RAM utilizada"**.
 
@@ -225,7 +225,7 @@ Acceda a la pestaña `Métricas` del área de cliente. Encontrará el gráfico *
 
 Esta gráfica permite realizar un seguimiento, en las últimas 24 horas, de la carga de las conexiones por minuto al servidor de la base de datos.
 
-Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos. 
+Acceda a su área de cliente (sección IP) Haga clic en la pestaña `Web Cloud` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos. 
 
 Acceda a la pestaña `Métricas` del área de cliente. Puede consultar el gráfico **"Estadísticas del total de conexiones por minuto"**.
 

@@ -20,7 +20,7 @@ Per maggiori informazioni sul funzionamento di questa protezione, consulta la pa
 
 - Disporre di un [dominio](https://www.ovh.it/domini/){.external} registrato in OVH
 - L’estensione del dominio deve essere compatibile con DNSSEC
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web`{.action}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web Cloud`{.action}
 
 ## Procedura
 
@@ -37,7 +37,7 @@ Attivare DNSSEC è possibile seguendo due modalità:
 
 ### Step 1: accedi alla gestione del dominio
 
-Accedi alla sezione `Web` dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e clicca su `Hosting`{.action} nel menu a sinistra.
+Accedi alla sezione `Web Cloud` dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e clicca su `Hosting`{.action} nel menu a sinistra.
 
 Visualizzi una tabella con tutte le informazioni generali del dominio. 
 

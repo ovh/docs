@@ -19,7 +19,7 @@ Tarpeen mukaan voit personoida OVH:n verkkotunnuksesi nimipalvelinten nimeä.
 ## Edellytykset
 
 - Sinulla on OVH:lla rekisteröity verkkotunnus.
-- Olet kirjautunut [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager){.external} `Web`{.action}-osioon.
+- Olet kirjautunut [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager){.external} `Web Cloud`{.action}-osioon.
 
 ## Käytännössä
 
@@ -27,7 +27,7 @@ Tarpeen mukaan voit personoida OVH:n verkkotunnuksesi nimipalvelinten nimeä.
 
 ### 1. vaihe: GLUE-tietueen lisääminen
 
-Kirjaudu [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} `Web`-osioon, klikkaa `Verkkotunnukset`{.action} vasemman reunan valikossa ja valitse sitten verkkotunnus, jolle haluat personoida nimipalvelimia. Mene lopuksi välilehdelle `GLUE`{.action}.
+Kirjaudu [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} `Web Cloud`-osioon, klikkaa `Verkkotunnukset`{.action} vasemman reunan valikossa ja valitse sitten verkkotunnus, jolle haluat personoida nimipalvelimia. Mene lopuksi välilehdelle `GLUE`{.action}.
 
 Näkyviin tulevalla sivulla on taulukko, jossa on tämänhetkiset OVH:lla konfiguroidut GLUE-tietueet verkkotunnustasi koskien. GLUE-tietueen lisäämiseksi klikkaa painiketta `Lisää`{.action}.
 

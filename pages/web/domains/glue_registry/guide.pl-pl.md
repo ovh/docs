@@ -20,7 +20,7 @@ W zależności od Twoich potrzeb możesz spersonalizować nazwy serwerów DNS Tw
 ## Wymagania początkowe
 
 - Posiadanie domeny zarejestrowanej w OVH
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Web`{.action}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Web Cloud`{.action}
 
 ## W praktyce
 
@@ -28,7 +28,7 @@ W zależności od Twoich potrzeb możesz spersonalizować nazwy serwerów DNS Tw
 
 ### Etap 1: dodanie rekordów GLUE
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i przejdź do sekcji `Web`, kliknij `Domeny`{.action} na pasku usług po lewej stronie, następnie wybierz domenę, dla której chcesz spersonalizować serwery DNS. Teraz przejdź do zakładki GLUE.
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i przejdź do sekcji `Web Cloud`, kliknij `Domeny`{.action} na pasku usług po lewej stronie, następnie wybierz domenę, dla której chcesz spersonalizować serwery DNS. Teraz przejdź do zakładki GLUE.
 
 Pojawi się strona z tabelą wyświetlającą rekordy GLUE aktualnie skonfigurowane w OVH dla Twojej domeny. Aby dodać nowy rekord GLUE, kliknij przycisk `Dodaj`{.action}.
 

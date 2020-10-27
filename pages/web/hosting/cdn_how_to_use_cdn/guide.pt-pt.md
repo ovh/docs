@@ -36,7 +36,7 @@ Para funcionar, cada servidor guarda na sua memória cache uma parte do seu webs
 
 ####  Se não possui CDN no seu alojamento Web
 
-Ligue-se à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e selecione `Web`{.action}. Clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente. Clique em `...`{.action} à direita de "Opção CDN" e depois em `Encomendar um CDN`{.action}.
+Ligue-se à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente. Clique em `...`{.action} à direita de "Opção CDN" e depois em `Encomendar um CDN`{.action}.
 
 ![CDN](images/manage_CDN_01.png){.thumbnail}
 
@@ -44,7 +44,7 @@ Será então redirecionado para a página onde será gerada a nota de encomenda.
 
 #### Se o CDN já estiver ativado no seu alojamento Web
 
-Ligue-se à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e selecione `Web`{.action}. Clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente. No separador `Multisite`{.action}, clique na roda dentada situada à direita da entrada multisite e depois em `Alterar`{.action}.
+Ligue-se à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente. No separador `Multisite`{.action}, clique na roda dentada situada à direita da entrada multisite e depois em `Alterar`{.action}.
 
 Assinale a opção "Ativar o CDN", clique em `Seguinte`{.action} e depois em `Validar`{.action}.
 
@@ -94,7 +94,7 @@ Mesmo que não utilize um CMS, poderá beneficiar da cache do CDN. Para isso, de
 
 É por vezes útil esvaziar a cache do CDN, nomeadamente sempre que modifica os seus ficheiros estáticos. Por exemplo, quando realiza uma nova versão do seu site. Neste caso, pode esvaziar a cache do CDN na sua totalidade.
 
-Ligue-se à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e selecione `Web`{.action}. Clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente. Clique em `...`{.action} à direita de "Opção CDN" e depois em `Limpar a cache`{.action}.
+Ligue-se à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente. Clique em `...`{.action} à direita de "Opção CDN" e depois em `Limpar a cache`{.action}.
 
 ![CDN](images/manage_CDN_02.png){.thumbnail}
 
@@ -102,7 +102,7 @@ Ligue-se à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager)
 
 Esta ação permite desativar o CDN para uma ou mais entradas multisite sem eliminar a opção CDN do seu alojamento Web.
 
-Dirija-se à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e selecione `Web`{.action}. Clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente. No separador `Multisite`{.action}, clique na roda dentada situada à direita da entrada multisite e depois em `Alterar`{.action}.
+Dirija-se à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente. No separador `Multisite`{.action}, clique na roda dentada situada à direita da entrada multisite e depois em `Alterar`{.action}.
 
 Desmarque a opção "Ativar o CDN", clique em `Seguinte`{.action} e depois em `Validar`{.action}.
 
@@ -112,7 +112,7 @@ Desmarque a opção "Ativar o CDN", clique em `Seguinte`{.action} e depois em `V
 
 Esta ação tem como objetivo eliminar a opção CDN para a totalidade do seu alojamento Web.
 
-Dirija-se à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e selecione `Web`{.action}. Clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente. Clique em `...`{.action} à direita de "Opção CDN" e depois em `Eliminar CDN`{.action}.
+Dirija-se à sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e selecione `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente. Clique em `...`{.action} à direita de "Opção CDN" e depois em `Eliminar CDN`{.action}.
 
 ![CDN](images/manage_CDN_04.png){.thumbnail}
 

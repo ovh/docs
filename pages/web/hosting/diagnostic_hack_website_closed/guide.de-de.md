@@ -18,7 +18,7 @@ order: 1
 
 - Sie besitzen ein [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
 - Sie haben die Zugangsdaten, um sich mit dem Speicherplatz Ihres Hostings zu verbinden.
-- Sie sind im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web`{.action}.
+- Sie sind im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
 ## Beschreibung
 
@@ -74,7 +74,7 @@ Stellen Sie im nächsten Schritt sicher, dass die verschiedenen Zusatzelemente I
 
 Sie erhalten so einen Überblick über die Aktivität Ihres Dienstes und Ihrer Website. Ziel ist es, zu analysieren, was zum Zeitpunkt der Deaktivierung passiert ist.
 
-Um die Aktivität und Logs Ihres Hostings einzusehen, loggen Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und gehen Sie in den Bereich `Web`{.action}. Klicken Sie nach dem Login links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Je nach den gesuchten Informationen haben Sie nun zwei Möglichkeiten:
+Um die Aktivität und Logs Ihres Hostings einzusehen, loggen Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie nach dem Login links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Je nach den gesuchten Informationen haben Sie nun zwei Möglichkeiten:
 
 - **Die Aktivität Ihres Webhostings einsehen**
 

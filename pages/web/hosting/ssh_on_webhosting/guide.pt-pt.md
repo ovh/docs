@@ -17,7 +17,7 @@ Os planos de alojamento web da OVH dão-lhe acesso a um espaço de armazenamento
 
 - Ter um [plano de alojamento web OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external} com acesso SSH.
 - Estar na posse das informações necessárias à conexão em SSH ao espaço de armazenamento.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, secção `Web`{.action}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, secção `Web Cloud`{.action}.
 
 ## Instruções
 

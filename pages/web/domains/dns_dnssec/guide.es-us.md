@@ -18,7 +18,7 @@ Los servidores DNS alojan la configuración DNS de los dominios. Normalmente, es
 
 - Tener un dominio registrado en OVHcloud.
 - El dominio debe tener una extensión compatible con DNSSEC.
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action}.
 
 ## Procedimiento
 

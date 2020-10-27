@@ -27,7 +27,7 @@ In this tutorial, we will set up a blog with Ghost on an OVH Cloud Web platform,
 - a [Cloud Web hosting plan](https://www.ovh.co.uk/web-hosting/cloud-web.xml){.external}
 - Node.js enabled as a runtime environment
 - the domain name added as a multisite, and Node.js defined as its runtime environment
-- access to the `Web`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the `Web Cloud`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 

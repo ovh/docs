@@ -57,7 +57,7 @@ In the window that pops up, enter the IP address or mask that you wish to author
 
 For an OVHcloud Web Hosting plan, you will need to authorise its gateway IP address. 
 
-To find the **gateway IP address** go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click the `Web` tab, then click on `Hosting plans`{.action} in the left column. Select your Web Hosting plan in the list, then click on the `FTP - SSH` tab.
+To find the **gateway IP address** go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click the `Web Cloud` tab, then click on `Hosting plans`{.action} in the left column. Select your Web Hosting plan in the list, then click on the `FTP - SSH` tab.
 
 Here, look for **FTP server**, which will show you the cluster number you are on, as shown below.
 
@@ -73,7 +73,7 @@ Once you have retrieved the number of the cluster on which your Web Hosting plan
 
 ### Modifying the database server solution
 
-To modify the solution for your database server, go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click the `Web` tab, and then click `Database`{.action} in the left pane. Select the name of your database server.
+To modify the solution for your database server, go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click the `Web Cloud` tab, and then click `Database`{.action} in the left pane. Select the name of your database server.
 
 In the **General information** tab, displayed by default, click on `...`{.action} to the right of “RAM”, then on `Change the amount of RAM`{.action} to access the order for this modification.
 
@@ -97,7 +97,7 @@ Once you have confirmed your contracts, you will be redirected to the purchase o
 
 ### Modifying my database server’s configuration
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Web` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Web Cloud` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
 
 #### MySQL and MariaDB instances
 
@@ -190,7 +190,7 @@ show variables like "version";
 
 This allows you to view the query execution time on your database server in the last 24 hours.
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Web` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Web Cloud` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
 
 Go to the `Metrics` tab for your database server. You will find the graph **Query Execution Time Statistics**.
 
@@ -205,7 +205,7 @@ Go to the `Metrics` tab for your database server. You will find the graph **Quer
 These logs, labelled **"slow-query.log"**, can be retrieved from the root of the SFTP space of your database server. 
 
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Web` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Web Cloud` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
 
 In the `General information` tab, you will find the **SFTP** section in the **Connection information** box.
 
@@ -218,7 +218,7 @@ If this file is empty, you do not have any slow queries.
 
 #### Monitoring the RAM used
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Web` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Web Cloud` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
 
 Go to the `Metrics` tab in the OVHcloud Control Panel. You will find the graph **RAM usage statistics**.
 
@@ -228,7 +228,7 @@ Go to the `Metrics` tab in the OVHcloud Control Panel. You will find the graph *
 
 This graph allows you to track, over the last 24 hours, the load of connections per minute on your database server.
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Web` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Web Cloud` section, and then click `Databases`{.action} in the left pane. Select the name of your Private SQL server.
 
 Go to the `Metrics` tab in the OVHcloud Control Panel. You will find the graph **Statistics for total connections per minute**.
 
