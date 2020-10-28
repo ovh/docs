@@ -120,7 +120,7 @@ Renseignez alors le code dans la rubrique intitulée « Code de validation »,
 
 ### Modification du type de compte
 
-![identifiant client](images/nichandle08.png){.thumbnail}
+![identifiant client](images/nichandle09.png){.thumbnail}
 
 ### Exercer vos droits sur vos données personnelles
 
