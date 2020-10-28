@@ -139,9 +139,9 @@ Vous devez modifier le paramètre ci-dessous en y ajoutant vos différents utili
 --read-only.
 ```
 
-#### Check en local depuis le serveur
+#### Vérifier en local depuis le serveur
 
-Lorsque vous voudrez faire le checkout en local, les exemples fournis ne fonctionneront pas. Il vous faudra utiliser :
+Lorsque vous voudrez faire une vérification en local, les exemples fournis ne fonctionneront pas. Il vous faudra utiliser :
 
 ```bash
 svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
