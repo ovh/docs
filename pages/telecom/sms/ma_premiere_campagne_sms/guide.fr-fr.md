@@ -1,12 +1,11 @@
 ---
-title: 'Ma première campagne SMS'
-excerpt: 'Découvrez comment effectuer une première campagne d''envoi de SMS'
+title: "Ma première campagne SMS"
+excerpt: "Découvrez comment effectuer une première campagne d'envoi de SMS"
 slug: ma_premiere_campagne_sms
-legacy_guide_number: g2212
 section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 19/05/2020**
+**Dernière mise à jour le 28/10/2020**
 
 ## Objectif
 
@@ -18,39 +17,36 @@ OVHcloud met à votre disposition des outils intégrés à votre espace client a
 
 ## En pratique
 
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager) puis sélectionnez `Télécom`{.action} (1). Cliquez ensuite sur `SMS`{.action} à gauche (2)  puis choisissez votre compte SMS (3).
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} à gauche  puis choisissez votre compte SMS .
 
-La barre d'outils (4) vous permettra d'accéder aux fonctionnalités principales pour envoyer votre campagne de SMS.
+La barre d'outils ainsi que les raccourcis vous permettront d'accéder aux fonctionnalités principales pour envoyer votre campagne de SMS.
 
 ![firstsms](images/firstsms01.png){.thumbnail}
 
-### Étape 1 : l'envoi des SMS
 
-L'onglet `SMS`{.action} vous permettra d'accéder aux options d'envoi, à l'historique de vos SMS envoyés et reçus ainsi qu'à vos envois de SMS programmés dans le cadre d'envois différés.
+### Étape 1 : ajouter des contacts
 
-![firstsms](images/firstsms02.png){.thumbnail}
+#### Ajout d'une liste de contacts
 
-Pour envoyer un SMS depuis votre espace client, vous pouvez consulter [le guide dédié à cette méthode](../envoyer_des_sms_depuis_mon_espace_client/).
+Une liste de contacts peut être importée via un fichier .csv ou .txt.
 
-Consultez également [notre guide dédié à la gestion de l'historique des SMS](../gerer-l-historique-des-sms/).
-
-### Étape 2 : ajouter une liste de destinataires
-
-Depuis l'onglet `Contacts`{.action}, vous pouvez envoyer vos SMS à une ou plusieurs listes de destinataires. Celle-ci pourra être importée via un fichier .csv ou .txt.
+Pour ajouter une liste de contacts, cliquez sur l'onglet `Contacts`{.action} puis sur `Créer une liste de contacts`{.action}. 
 
 ![firstsms](images/firstsms03.png){.thumbnail}
 
 Le guide suivant vous permettra de comprendre comment [créer une liste de destinataires SMS](../liste_de_destinataire_sms/).
 
-### Étape 3 : ajouter un carnet d'adresses
+#### Ajout d'un carnet d'adresses
 
-Dans l'onglet `Carnet d'adresses`{.action}, il est possible de créer plusieurs carnets d'adresses auxquels vous pourrez envoyer des SMS. Contrairement aux listes de destinataires, les carnets d'adresses contiennent des contacts que vous pouvez nommer et donc plus facilement identifier pour des campagnes ciblées.
+Contrairement aux listes de contacts, les carnets d'adresses contiennent des contacts que vous pouvez nommer et donc plus facilement identifier pour des campagnes ciblées.
+
+Pour ajouter un carnet d'adresses, cliquez sur l'onglet `Contacts`{.action} puis sur `Carnet d'adresses`{.action}.
 
 ![firstsms](images/firstsms04.png){.thumbnail}
 
 Consultez le guide [Gérer mes carnets d'adresses SMS](../gerer_mes_carnets_dadresses_sms/) afin d'en savoir plus.
 
-### Étape 4 : créer un expéditeur
+### Étape 2 : créer un expéditeur
 
 Par défaut, l'envoi de vos SMS depuis un compte OVHcloud en France se fait depuis un numéro court permettant la réponse. Il peut être plus intéressant de formuler la demande d'un expéditeur alphanumérique, depuis l'onglet `Expéditeurs`{.action}, afin que vos SMS soient envoyés au nom de votre société ou de votre organisme.
 
@@ -58,7 +54,36 @@ Par défaut, l'envoi de vos SMS depuis un compte OVHcloud en France se fait depu
 
 À cet effet, vous pouvez consulter [la section dédiée au choix de votre expéditeur SMS au sein du guide "Envoyer des sms depuis mon espace client".](../envoyer_des_sms_depuis_mon_espace_client/#etape-3-choisir-votre-expediteur-sms)
 
+### Étape 3 : l'envoi d'une campagne SMS
+
+L'onglet `Message et campagne`{.action} vous permettra d'accéder aux options d'envoi, à l'historique de vos SMS envoyés et reçus ainsi qu'à vos envois de SMS planifiés dans le cadre d'envois différés.
+
+![firstsms](images/firstsms02.png){.thumbnail}
+
+Pour envoyer un SMS unitaire depuis votre espace client, vous pouvez consulter [le guide dédié à cette méthode](../envoyer_des_sms_depuis_mon_espace_client/).
+
+Pour envoyer une campagne SMS, cliquez sur `Gestion des campagnes`{.action} puis sur `Créer une campagne`{.action}.
+
+![firstsms](images/firstsms06.png){.thumbnail}
+
+Commencez par définir un nom pour votre campagne dans le champ prévu à cet effet.
+
+Choisissez ensuite l'expéditeur parmi ceux disponibles.
+
+![firstsms](images/firstsms07.png){.thumbnail}
+
+Composez alors votre message et choisissez entre un envoi immédiat ou planifié. En cas d'envoi planifié, il vous faudra définir la date et l'heure de l'envoi.
+
+![firstsms](images/firstsms08.png){.thumbnail}
+
+Pour plus d'informations sur la taille des SMS à caractère commercial ainsi que sur le format des messages, consultez notre guide dédié à [l'envoi de messages depuis l'espace client OVHcloud](../sms/envoyer_des_sms_depuis_mon_espace_client/#taille-des-sms-a-caractere-commercial) .
+
+Il ne vous reste plus qu'à cliquer sur le bouton `Envoi`{.action} pour que votre campagne soit envoyée ou planifiée.
+
+
 ## Aller plus loin
+
+Consultez [notre guide dédié à la gestion de l'historique des SMS](../gerer-l-historique-des-sms/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
 
