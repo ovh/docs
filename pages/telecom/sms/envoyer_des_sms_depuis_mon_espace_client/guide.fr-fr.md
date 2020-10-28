@@ -9,11 +9,12 @@ section: Envoyer des SMS
 
 ## Objectif
 
-Vous pouvez envoyer des SMS directement via votre espace client. Ce guide indique étape par étape comment envoyer vos premiers SMS.
+Vous pouvez envoyer des SMS directement via votre espace client OVHcloud. Ce guide indique étape par étape comment envoyer vos premiers SMS.
 
 ## Prérequis
 
 - Disposer d’un compte SMS OVHcloud avec des crédits SMS.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
 
 ## En pratique
 
