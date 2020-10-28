@@ -2,7 +2,7 @@
 title: 'Déployer une instance GPU'
 slug: deployer-une-instance-gpu
 excerpt: 'Découvrez comment déployer une instance GPU sous Linux ou Windows'
-section: 'Gestion depuis l''espace client'
+section: "Gestion depuis l'espace client"
 order: 8
 ---
 

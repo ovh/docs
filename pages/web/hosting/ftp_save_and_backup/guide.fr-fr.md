@@ -1,7 +1,7 @@
 ---
-title: 'Restaurer l''espace de stockage de son hébergement web'
+title: "Restaurer l'espace de stockage de son hébergement web"
 slug: restauration-ftp-filezilla-espace-client
-excerpt: 'Apprenez à restaurer un fichier ou l''intégralité de l''espace de stockage de votre hébergement web'
+excerpt: "Apprenez à restaurer un fichier ou l'intégralité de l''espace de stockage de votre hébergement web"
 section: 'FTP et SSH'
 ---
 

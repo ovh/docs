@@ -1,7 +1,7 @@
 ---
-title: 'Modifier le mot de passe d''une adresse e-mail MX Plan'
+title: "Modifier le mot de passe d'une adresse e-mail MX Plan"
 slug: modifier-mot-de-passe-adresse-email
-excerpt: 'Apprenez à changer le mot de passe d''une adresse e-mail créée dans le cadre de l''offre MX Plan'
+excerpt: "Apprenez à changer le mot de passe d'une adresse e-mail créée dans le cadre de l''offre MX Plan"
 section: 'Premiers pas'
 order: 3
 ---

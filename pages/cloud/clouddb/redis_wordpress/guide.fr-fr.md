@@ -1,7 +1,7 @@
 ---
 title: 'Accelerez WordPress grace a Redis'
 slug: speed-up-wordpress-with-redis
-excerpt: 'Utilisation avancee d''un cache NoSQL'
+excerpt: "Utilisation avancee d'un cache NoSQL"
 section: Tutoriels
 ---
 

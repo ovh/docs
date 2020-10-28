@@ -1,6 +1,6 @@
 ---
 title: 'Modificare l’hostname di un’istanza Public Cloud'
-excerpt: 'Modifica l''hostname della tua istanza'
+excerpt: "Modifica l'hostname della tua istanza"
 slug: modifica_lhostname_della_tua_istanza
 legacy_guide_number: g1928
 ---

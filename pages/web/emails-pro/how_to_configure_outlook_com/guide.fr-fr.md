@@ -1,5 +1,5 @@
 ---
-title: 'Configurer son compte E-mail Pro sur l''interface en ligne d''Outlook.com'
+title: "Configurer son compte E-mail Pro sur l'interface en ligne d''Outlook.com"
 slug: configuration-outlook-com
 excerpt: 'Retrouvez ici les informations pour configurer votre adresse E-mail Pro sur outlook.com'
 section: 'Configuration sur une interface en ligne'

@@ -1,7 +1,7 @@
 ---
 title: 'Présentation et architecture'
 slug: principes-architectures
-excerpt: 'Découvrez les coulisses de l''architecture de l''offre PostgreSQL managée'
+excerpt: "Découvrez les coulisses de l'architecture de l''offre PostgreSQL managée"
 section: 'Informations techniques'
 order: 2
 ---

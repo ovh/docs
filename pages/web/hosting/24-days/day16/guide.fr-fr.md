@@ -2,7 +2,7 @@
 title: 'Activer HTTPS'
 slug: day16
 excerpt: 'Depuis cette année, avoir son site en HTTPS est devenu la nouvelle norme !'
-section: 'Cas d''usage'
+section: "Cas d'usage"
 hidden: true
 ---
 

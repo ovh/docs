@@ -1,8 +1,8 @@
 ---
 title: 'Mes 10 premières minutes avec OverTheBox Intel'
 slug: mes-10-premieres-minutes-avec-overthebox-intel
-excerpt: 'Ce guide vous assiste à l''installation et à la configuration de votre OverTheBox sur 2 connexions Internet ou plus, étape par étape.  Il est impératif de suivre cette procédure dans l''ordre proposé afin d''éviter toute erreur.'
-section: 'Guides d''installation'
+excerpt: "Ce guide vous assiste à l'installation et à la configuration de votre OverTheBox sur 2 connexions Internet ou plus, étape par étape.  Il est impératif de suivre cette procédure dans l''ordre proposé afin d''éviter toute erreur."
+section: "Guides d'installation"
 ---
 
 ## Prérequis

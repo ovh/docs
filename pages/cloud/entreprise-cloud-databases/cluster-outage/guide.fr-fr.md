@@ -1,7 +1,7 @@
 ---
-title: 'En cas de défaillance d''un nœud'
+title: "En cas de défaillance d'un nœud"
 slug: defaillance-noeud
-excerpt: 'Découvrez ce qu''il se passe si le cluster connaît la défaillance de l''un de ses nœuds pendant son fonctionnement'
+excerpt: "Découvrez ce q''il se passe si le cluster connaît la défaillance de l''un de ses nœuds pendant son fonctionnement"
 section: 'Informations techniques'
 ---
 

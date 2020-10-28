@@ -1,5 +1,5 @@
 ---
-title: 'Effettuare lo Snapshot di un''istanza'
+title: "Effettuare lo Snapshot di u''istanza"
 slug: effettuare-snapshot-di-un-istanza
 excerpt: 'Come eseguire l’istantanea di un’istanza Public Cloud OVHcloud'
 legacy_guide_number: g1881

@@ -1,6 +1,6 @@
 ---
 title: '3CX Phone System - configuration et utilisation'
-excerpt: 'Configuration basique d''un SIP Trunk OVH avec l''IPBX 3CX Phone System et deux DDI.'
+excerpt: "Configuration basique d'un SIP Trunk OVH avec l''IPBX 3CX Phone System et deux DDI."
 slug: configuration_basique_dun_sip_trunk_ovh_sur_3cx_phone_system
 legacy_guide_number: g1575
 section: IPBX

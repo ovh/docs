@@ -1,7 +1,7 @@
 ---
 title: 'Updating the kernel on a dedicated server'
 slug: updating-kernel-dedicated-server
-excerpt: 'Find out how to update the kernel for distributions that use an OVHcloud core'''
+excerpt: "Find out how to update the kernel for distributions that use an OVHcloud core''"
 section: 'Advanced use'
 ---
 

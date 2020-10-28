@@ -1,8 +1,8 @@
 ---
-title: 'Installer l''image OverTheBox sur votre matériel'
-description: 'Installer l''image OverTheBox sur votre matériel'
+title: "Installer l'image OverTheBox sur votre matériel"
+description: "Installer l'image OverTheBox sur votre matériel"
 slug: installer-limage-overthebox-sur-votre-materiel
-excerpt: 'Pour installer l''image  OverTheBox  vous aurez besoin de démarrer une distribution &quot;Live&quot; linux afin de copier l''image sur votre matériel.'
+excerpt: "Pour installer l'image  OverTheBox  vous aurez besoin de démarrer une distribution &quot;Live&quot; linux afin de copier l''image sur votre matériel."
 section: 'Configurations techniques complexes'
 ---
 

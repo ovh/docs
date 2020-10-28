@@ -3,7 +3,7 @@ title: 'Désactiver le monitoring DHCP des modems'
 keywords: 'désactiver, monitoring, DHCP'
 description: 'Désactiver le monitoring DHCP des modems'
 slug: desactiver-le-monitoring-dhcp-des-modems
-excerpt: 'Vous pouvez désactiver l''analyse automatique des serveurs DHCP lorsque vous souhaitez créer vos interfaces WAN manuellement.'
+excerpt: "Vous pouvez désactiver l'analyse automatique des serveurs DHCP lorsque vous souhaitez créer vos interfaces WAN manuellement."
 section: 'Configurations techniques complexes'
 ---
 

@@ -2,7 +2,7 @@
 title: 'Comprendre les statistiques et logs'
 slug: day09
 excerpt: 'Analyser et optimiser le fonctionnement de son site'
-section: 'Cas d''usage'
+section: "Cas d'usage"
 hidden: true
 ---
 

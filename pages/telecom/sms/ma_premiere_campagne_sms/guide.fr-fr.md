@@ -1,6 +1,6 @@
 ---
 title: 'Ma première campagne SMS'
-excerpt: 'Découvrez comment effectuer une première campagne d''envoi de SMS'
+excerpt: "Découvrez comment effectuer une première campagne d'envoi de SMS"
 slug: ma_premiere_campagne_sms
 legacy_guide_number: g2212
 section: 'Premiers pas'

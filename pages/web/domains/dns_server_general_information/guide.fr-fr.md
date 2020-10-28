@@ -1,5 +1,5 @@
 ---
-title: 'Modifier les serveurs DNS d''un nom de domaine OVH'
+title: "Modifier les serveurs DNS d'un nom de domaine OVH"
 slug: generalites-serveurs-dns
 excerpt: 'Apprenez à modifier les serveurs DNS de votre nom de domaine OVH'
 section: 'DNS et zone DNS'
