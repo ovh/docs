@@ -1,5 +1,5 @@
 ---
-title: importa la tua immagine
+title: Importa la tua immagine
 slug: importare-la-tua-immagine
 excerpt: Come importare la tua immagine su Public Cloud
 section: 'OpenStack'
