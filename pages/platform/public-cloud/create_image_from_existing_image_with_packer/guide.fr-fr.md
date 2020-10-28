@@ -13,7 +13,7 @@ section: Tutoriels
 
 ## Prérequis
 
-- Un projet [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/).
+- Un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/).
 - Un terminal
 
 ## En pratique
