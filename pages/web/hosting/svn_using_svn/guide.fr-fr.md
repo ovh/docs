@@ -16,17 +16,19 @@ SVN, qui est l'abrévation de « subversion », est un système de gestion de ve
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
 
 ## Pre-requis
 
-- Disposer d'une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} permettant une connexion SSH (**à partir de l'offre Pro**)
-- Se connecter en SSH à votre hébergement Web (vous pouvez consulter notre guide [Utiliser l’accès SSH de son hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external})
+- Disposer d'une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/) permettant une connexion SSH (**à partir de l'offre Pro**)
+- Se connecter en SSH à votre hébergement Web (vous pouvez consulter notre guide [Utiliser l’accès SSH de son hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/))
 
-## Création du dépôt
+## En pratique
+
+### Création du dépôt
 
 Une fois connecté en [SSH sur votre hébergement](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}, créez le répertoire racine des dépôts SVN, puis le dépôt.
 
@@ -52,13 +54,13 @@ Vous devez obtenir les répertoires comme indiqué sur l'image suivante :
 
 ![hosting](images/3078.png){.thumbnail}
 
-## Création des clés publiques / privées
+### Création des clés publiques / privées
 
 Avant de poursuivre il vous faudra créer une paire de clés SSH depuis le poste que vous utiliserez pour vous connecter au dépôt SVN.
 
-Nous vous invitons à suivre le guide [Créer des clés SSH](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/). Il n'est pas nécessaire de suivre l'étape [Importez votre clé SSH dans l’Espace client OVHcloud](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/#importez-votre-cle-ssh-dans-lespace-client-ovhcloud_1){.external} dans ce guide.
+Nous vous invitons à suivre le guide [Créer des clés SSH](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/). Il n'est pas nécessaire de suivre l'étape [Importez votre clé SSH dans l’Espace client OVHcloud](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/#importez-votre-cle-ssh-dans-lespace-client-ovhcloud_1) dans ce guide.
 
-## Ajout de la clé publique sur l'hébergement
+### Ajout de la clé publique sur l'hébergement
 
 Aprés avoir obtenu votre clé, ajoutez-la sur votre hébergement dans le fichier .ssh/authorized_keys2. Pour cela, tapez la ligne de commande ci-dessous :
 
@@ -74,11 +76,11 @@ Une fois le fichier ouvert, insérez la ligne suivante :
 command="/usr/bin/svnserve --root=/homez.XXX/loginFTP/svn --tunnel --tunnel-user=john",no-port-forwarding,no-agent-forwarding,no-X11-forwarding,no-pty
 ```
 
-Suivi de la clé précédemment créée, le tout sur la même ligne.
+Suivie de la clé précédemment créée, le tout sur la même ligne.
 
 > [!primary]
 >
-> Remplacer « /home.XXX/loginFTP » et « john » par vos identifier SSH. 
+> Remplacez « /home.XXX/loginFTP » et « john » par vos identifiants SSH. 
 > Pour connaître les chiffres à utiliser pour remplacer « /home.XXX/loginFTP »  tapez la commande « pwd » en SSH.
 >
 > Vous retrouverez également ces infrormations on consultant notre guide [Utiliser l’accès SSH de son hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}.
@@ -94,9 +96,9 @@ Vous pourrez récupérer le contenu du dépôt sans pour autant vous y connecter
 > ligne de commande
 > 
 
-## Exemples
+### Exemples
 
-### Sous Linux
+#### Sous Linux
 
 Vous pouvez faire un test depuis l'ordinateur se connectant au depot SVN en tapant la ligne :
 
@@ -104,9 +106,9 @@ Vous pouvez faire un test depuis l'ordinateur se connectant au depot SVN en tapa
 svn checkout svn+ssh://loginFTP@clusterXXX/depot_test
 ```
 
-### Windows avec TortoiseSVN
+#### Windows avec TortoiseSVN
 
-- Téléchargez et installez TortoiseSVN( [http://tortoisesvn.net/downloads](http://tortoisesvn.net/downloads){.external} )
+- Téléchargez et installez TortoiseSVN ([http://tortoisesvn.net/downloads](http://tortoisesvn.net/downloads){.external})
 - Faites un clic droit sur la clé privée. Une icône apparait en bas à droite, la clé est alors chargée dans l'agent d'authentification.
 - Créez un répertoire, faites un clic droit dessus et sélectionnez « SVN Checkout ». 
 - Entrez `svn+ssh://loginFTP@xxplan.ovh.net/depot_test` dans le champ « URL of repository » et cliquer sur `OK` :
@@ -115,11 +117,11 @@ svn checkout svn+ssh://loginFTP@clusterXXX/depot_test
 
 Il existe une très bonne documentation en anglais pour Subversion : [http://svnbook.red-bean.com/en/1.5/index.html](http://svnbook.red-bean.com/en/1.5/index.html){.external}
 
-## Cas specifiques
+### Cas spécifiques
 
-### Creer plusieurs Comptes
+#### Créer plusieurs comptes
 
-Il faut tout d'abord avoir créer plusieurs clés SSH. Ensuite lors de l'ajout de la clé publique sur l'hébergement :
+Il faut tout d'abord avoir créé plusieurs clés SSH. Ensuite lors de l'ajout de la clé publique sur l'hébergement :
 
 ```bash
 command="/usr/bin/svnserve --root=/home.XXX/loginFTP/svn --tunnel --tunnel-user=marc",no-port-forwarding,no-agent-forwarding,no-X11-forwarding,no-pty
@@ -137,7 +139,7 @@ Vous devez modifier le paramètre ci-dessous en y ajoutant vos différents utili
 --read-only.
 ```
 
-### Check en local depuis le serveur
+#### Check en local depuis le serveur
 
 Lorsque vous voudrez faire le checkout en local, les exemples fournis ne fonctionneront pas. Il vous faudra utiliser :
 
