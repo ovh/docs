@@ -1,12 +1,11 @@
 ---
-title: 'Envoyer des SMS depuis mon espace client'
+title: Envoyer des SMS depuis mon espace client
 slug: envoyer_des_sms_depuis_mon_espace_client
-excerpt: 'Découvrez comment envoyer des SMS simplement depuis votre espace client OVHcloud'
-legacy_guide_number: g2142
-section: 'Envoyer des SMS'
+excerpt: Découvrez comment envoyer des SMS simplement depuis votre espace client OVHcloud
+section: Envoyer des SMS
 ---
 
-**Dernière mise à jour le 19/05/2020**
+**Dernière mise à jour le 28/10/2020**
 
 ## Objectif
 
@@ -18,9 +17,9 @@ Vous pouvez envoyer des SMS directement via votre espace client. Ce guide indiqu
 
 ## En pratique
 
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager) puis sélectionnez `Télécom`{.action} (1). Cliquez ensuite sur `SMS`{.action} à gauche (2)  puis choisissez votre compte SMS (3).
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} à gauche et sur votre compte SMS.
 
-Le champ « Envoyer un SMS » (4) est le premier élément disponible dans la liste des actions.
+Le champ « Envoyer un SMS » est le premier élément disponible dans la liste des actions.
 
 ![envoi sms manager](images/sms-send-control-panel01E.png){.thumbnail}
 
@@ -72,9 +71,11 @@ Exemple : en encodage 7bits, si votre message fait plus de 149 caractères, il s
 
 #### Options avancées
 
-Dans cette section vous avez la possibilité d’effectuer un envoi immédiat ou différé.
+![envoi sms manager](images/sms-send-control-panel-advanced.png){.thumbnail}
 
-Trois formats d’envoi sont également disponibles :
+Dans cette section vous avez la possibilité d’effectuer un envoi immédiat ou différé (1).
+
+Trois formats d’envoi sont également disponibles (2) :
 
 - Standard : SMS le plus couramment utilisé.
 - Flash : le SMS s’affiche directement sur l’écran du téléphone.
@@ -107,11 +108,11 @@ Si vous souhaitez ajouter un expéditeur SMS supplémentaire, cliquez sur le bou
 
 Une fois sur la page d'ajout, vous disposez de plusieurs options pour configurer un nouvel expéditeur SMS (3) :
 
-- **Ajouter manuellement des expéditeurs** : Vous devez saisir l'expéditeur souhaité, la description et une justification pour l'utilisation de cet expéditeur (4). 
+- **Ajouter manuellement des expéditeurs** : Vous devez saisir l'expéditeur souhaité, la description et une justification pour l'utilisation de cet expéditeur (4). Une pièce justificative est également nécessaire.
 
 > [!primary]
 >
->En cas de requête d'un expéditeur au nom d'une société tierce, un document justificatif vous sera demandé. Nous vous invitons dans ce cas à nous transmettre ce document via l'ouverture d'une demande d'assistance dans votre espace client.  La validation des expéditeurs créés manuellement est gratuite et est effectuée sous un à deux jours ouvrés du lundi au vendredi de 08h00 à 20h00.
+> Nous vous demandons un justificatif dans le cadre de notre politique de sécurité. Il s'agit par défaut d'un papier à en-tête de la société ou de la marque, incluant l'autorisation d'un responsable avec signature et tampon de cette même société, d'un papier d'identité, ou extrait Kbis si ce n'est pas une marque déposée.
 >
 
 - **Ajouter des expéditeurs à partir de données personnelles** : Vous pouvez demander un expéditeur se basant sur les coordonnées de votre compte OVHcloud. Une liste déroulante des expéditeurs disponibles s'affichera alors.
