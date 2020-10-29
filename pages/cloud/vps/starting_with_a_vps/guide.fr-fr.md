@@ -1,6 +1,6 @@
 ---
 title: 'Débuter avec un VPS'
-excerpt: 'Apprenez les bases de l''utilisation d''un VPS'
+excerpt: "Apprenez les bases de l'utilisation d'un VPS"
 slug: debuter-avec-vps
 section: 'Premiers pas'
 order: 1

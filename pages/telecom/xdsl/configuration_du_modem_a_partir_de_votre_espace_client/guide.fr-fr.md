@@ -1,7 +1,7 @@
 ---
-title: 'Configurer sa box à partir de l''espace client OVH'
+title: "Configurer sa box à partir de l'espace client OVH"
 slug: configuration_du_modem_a_partir_de_votre_espace_client
-excerpt: 'Découvrez comment paramétrer à distance votre box OVH depuis l''espace client'
+excerpt: "Découvrez comment paramétrer à distance votre box OVH depuis l'espace client"
 section: 'Configuration de mon offre'
 ---
 

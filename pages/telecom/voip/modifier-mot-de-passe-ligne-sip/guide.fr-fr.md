@@ -1,7 +1,7 @@
 ---
-title: 'Modifier le mot de passe d''une ligne SIP'
+title: "Modifier le mot de passe d'une ligne SIP"
 slug: modifier-mot-de-passe-ligne-sip
-excerpt: 'Apprenez à changer le mot de passe d’une ligne SIP OVH ne disposant pas d''un téléphone Plug & Phone OVH'
+excerpt: "Apprenez à changer le mot de passe d’une ligne SIP OVH ne disposant pas d'un téléphone Plug & Phone OVH"
 section: Sécurité
 ---
 

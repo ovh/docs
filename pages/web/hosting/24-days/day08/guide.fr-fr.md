@@ -2,7 +2,7 @@
 title: 'Utiliser les SQL Privé'
 slug: day08
 excerpt: 'Tenir la charge en cas de pic daffluence'
-section: 'Cas d''usage'
+section: "Cas d'usage"
 hidden: true
 ---
 

@@ -2,7 +2,7 @@
 title: 'Les bases des sites web'
 slug: day01
 excerpt: 'Présentation et retour sur les fondamentaux d’un site web'
-section: 'Cas d''usage'
+section: "Cas d'usage"
 ---
 
 > [!warning]
