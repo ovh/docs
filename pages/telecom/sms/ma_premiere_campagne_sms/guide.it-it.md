@@ -80,7 +80,7 @@ Inserisci il tuo messaggio e scegli tra un invio immediato o pianificato. In cas
 
 ![firstsms](images/firstsms08.png){.thumbnail}
 
-Clicca sul pulsante `Invio`{.action} per l'invio o la pianificazione della tua campagna.
+Clicca sul pulsante `Invia`{.action} per l'invio o la pianificazione della tua campagna.
 
 ## Per saperne di più
 
