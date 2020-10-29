@@ -39,7 +39,7 @@ With the following guide, you can find out how to [create a list of SMS recipien
 
 Unlike contact lists, address books contain contacts that you can name and more easily identify for targeted campaigns.
 
-To add an address book, click the `Contacts`{.action} tab, then `Address`{.action} book.
+To add an address book, click the `Contacts`{.action} tab, then `Address book`{.action}.
 
 ![firstsms](images/firstsms04.png){.thumbnail}
 
@@ -61,7 +61,7 @@ In the `Message and Campaign`{.action} tab, you can access the sending options, 
 
 To send a unit SMS message via the OVHcloud Control Panel, you can refer to [this guide](../send_sms_messages_via_control_panel).
 
-To send an SMS campaign, click Campaign `Management`{.action}, then `Create Campaign`{.action}.
+To send an SMS campaign, click `Campaign Management`{.action}, then `Create a campaign`{.action}.
 
 ![firstsms](images/firstsms06.png){.thumbnail}
 
