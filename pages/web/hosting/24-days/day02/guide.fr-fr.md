@@ -2,7 +2,7 @@
 title: 'Choisir et configurer un nom de domaine'
 slug: day02
 excerpt: 'Ou comment s’assurer que les visiteurs vous retrouvent'
-section: 'Cas d''usage'
+section: "Cas d'usage"
 ---
 
 mypersonaldomain.ovh est encore une super idée, sur le papier. Puisque le nom est déjà trouvé, il est temps de réserver le nom de domaine. Mais déjà, qu'est-ce qu'un nom de domaine ?

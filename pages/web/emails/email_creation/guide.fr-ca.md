@@ -1,7 +1,7 @@
 ---
-title: 'Créer une adresse e-mail avec son offre d'hébergement Web'
+title: "Créer une adresse e-mail avec son offre d'hébergement Web"
 slug: creation-dune-adresse-e-mail
-excerpt: 'Apprenez à créer une adresse e-mail avec votre offre d'hébergement Web'
+excerpt: "Apprenez à créer une adresse e-mail avec votre offre d'hébergement Web"
 section: 'Premiers pas'
 order: 2
 ---

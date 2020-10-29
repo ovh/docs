@@ -2,7 +2,7 @@
 title: 'Configurer SMTP sur un service Load Balancer'
 slug: case-smtp
 excerpt: 'Cas pratique SMTP'
-section: 'Cas d''usage'
+section: "Cas d'usage"
 ---
 
 ## Introduction

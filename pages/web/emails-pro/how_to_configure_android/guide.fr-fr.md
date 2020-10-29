@@ -1,7 +1,7 @@
 ---
-title: 'Configurer son compte E-mail Pro sur Android via l''application Gmail'
+title: "Configurer son compte E-mail Pro sur Android via l'application Gmail"
 slug: configuration-android
-excerpt: 'Apprenez à configurer un compte E-mail Pro sur Android, via l''application Gmail'
+excerpt: "Apprenez à configurer un compte E-mail Pro sur Android, via l'application Gmail"
 section: 'Configuration sur smartphone'
 order: 2
 ---

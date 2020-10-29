@@ -1,5 +1,5 @@
 ---
-title: 'Modifier les serveurs DNS d''un nom de domaine OVHcloud'
+title: "Modifier les serveurs DNS d'un nom de domaine OVHcloud"
 slug: generalites-serveurs-dns
 excerpt: 'Apprenez à modifier les serveurs DNS de votre nom de domaine OVHcloud'
 section: 'DNS et zone DNS'

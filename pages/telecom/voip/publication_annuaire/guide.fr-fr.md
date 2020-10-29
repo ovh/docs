@@ -1,5 +1,5 @@
 ---
-title: 'Renseigner les coordonnées d''une ligne ou d''un numéro et les faire paraître en ligne'
+title: "Renseigner les coordonnées d'une ligne ou d'un numéro et les faire paraître en ligne"
 slug: publication-annuaire
 excerpt: 'Découvrez comment rattacher des informations à votre ligne ou numéro OVH et les publier dans les annuaires'
 section: Administratif

@@ -2,7 +2,7 @@
 title: 'Configurare HTTP/2 su OVH Load Balancer'
 slug: iplb-http2
 excerpt: 'Configurazione di HTTP/2 su OVH Load Balancer'
-section: 'Caso d''uso'
+section: "Caso d'uso"
 ---
 
 **Ultimo aggiornamento: 27/06/2018**

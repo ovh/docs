@@ -1,7 +1,7 @@
 ---
-title: 'Règles de boîte de réception depuis l''interface OWA'
+title: "Règles de boîte de réception depuis l'interface OWA"
 slug: regles-boite-de-reception-owa-mx-plan
-excerpt: 'Comment créer des filtres et des redirections e-mail depuis l''interface OWA'
+excerpt: "Comment créer des filtres et des redirections e-mail depuis l'interface OWA"
 section: 'Premiers pas'
 order: 2
 ---
