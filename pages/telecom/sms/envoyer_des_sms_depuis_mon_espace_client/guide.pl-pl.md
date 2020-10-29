@@ -1,11 +1,11 @@
 ---
-title: 'Wysyłanie wiadomości SMS z Panelu klienta'
+title: Wysyłanie wiadomości SMS z Panelu klienta
 slug: wysylanie-wiadomosci-sms-z-panelu-klienta
-excerpt: 'Dowiedz się, jak w łatwy sposób wysyłać wiadomości SMS z Panelu klienta OVHcloud'
-section: 'Wysyłanie wiadomości SMS'
+excerpt: Dowiedz się, jak w łatwy sposób wysyłać wiadomości SMS z Panelu klienta OVHcloud
+section: Wysyłanie wiadomości SMS
 ---
 
-**Ostatnia aktualizacja z dnia 19-05-2020**
+**Ostatnia aktualizacja z dnia 28-10-2020**
 
 ## Wprowadzenie
 
@@ -14,12 +14,13 @@ Wiadomości SMS możesz wysyłać bezpośrednio z Panelu klienta. W tym przewodn
 ## Wymagania początkowe
 
 - Posiadanie konta SMS OVHcloud z zasileniami SMS
+- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager) i wybierz opcję `Telecom`{.action} (1). Następnie kliknij pozycję `SMS`{.action} po lewej stronie (2) i wybierz Twoje konto SMS (3).
+Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager) i wybierz opcję `Telefonia`{.action}. Następnie kliknij pozycję `SMS`{.action} po lewej stronie i wybierz Twoje konto SMS.
 
-Pole „Wyślij SMS” (4) jest pierwszym dostępnym elementem na liście działań.
+Pole „Wyślij SMS” jest pierwszym dostępnym elementem na liście działań.
 
 ![menedżer wysyłki smsów](images/sms-send-control-panel01E.png){.thumbnail}
 
@@ -30,7 +31,7 @@ Po przejściu na stronę wysyłania wiadomości SMS możesz uzupełnić różne 
 ![menedżer wysyłki smsów](images/sms-send-control-panel02E.png){.thumbnail}
 
 Jako nadawcę wiadomości SMS (1) możesz wybrać numer skrócony umożliwiający otrzymanie odpowiedzi (dotyczy wyłącznie kont OVHcloud we Francji) lub nadawcę alfanumerycznego.
-Następnie podaj numer odbiorcy (2) w formacie międzynarodowym (+336xxxxxxxx).
+Następnie podaj numer odbiorcy (2) w formacie międzynarodowym (+48xxxxxxxx).
 Więcej informacji na temat tworzenia nadawcy znajdziesz w [etapie 3: wybór nadawcy wiadomości SMS](./#etap-3-wybor-nadawcy-wiadomosci-sms_1).
 
 Wiadomości SMS możesz także wysyłać do wielu odbiorców. Możesz to zrobić na dwa sposoby:
@@ -59,9 +60,11 @@ Użycie znaków niewymienionych w tych tabelach spowoduje przejście na kodowani
 
 #### Zaawansowane opcje
 
-W tej sekcji możesz przeprowadzić wysyłkę natychmiastową lub odroczoną.
+![menedżer wysyłki smsów](images/sms-send-control-panel-advanced.png){.thumbnail}
 
-Dostępne są również trzy formaty wysyłki:
+W tej sekcji możesz przeprowadzić wysyłkę natychmiastową lub odroczoną (1).
+
+Dostępne są również trzy formaty wysyłki (2):
 
 - Standard: najczęściej używana wiadomość SMS.
 - Flash: wiadomość SMS wyświetla się bezpośrednio na ekranie telefonu.
@@ -94,11 +97,11 @@ Jeśli chcesz dodać kolejnego nadawcę wiadomości SMS, na środku kliknij przy
 
 Na stronie dodawania masz do dyspozycji kilka opcji, aby skonfigurować nowego nadawcę wiadomości SMS (3):
 
-- **Dodaj nadawców ręcznie**: Podaj żądanego nadawcę, opis i uzasadnienie wykorzystania tego nadawcy (4). 
+- **Dodaj nadawców ręcznie**: Podaj żądanego nadawcę, opis i uzasadnienie wykorzystania tego nadawcy (4). Potrzebna jest również dokumentacja uzupełniająca.
 
 > [!primary]
 >
->W przypadku zapytania o dodanie nadawcy w imieniu firmy zewnętrznej, poprosimy Cię o dokument potwierdzający. W tym przypadku zachęcamy do przesłania nam tego dokumentu poprzez otwarcie zgłoszenia w Panelu klienta.  Zatwierdzenie nadawców utworzonych ręcznie jest bezpłatne i jest realizowane w ciągu dwóch dni roboczych od poniedziałku do piątku, od 8:00 do 20:00.
+> W związku z prowadzoną przez nas polityką bezpieczeństwa prosimy o dostarczenie dowodu potwierdzającego tożsamość firmy. Może to być oświadczenie wystawione na papierze firmowym przez pracownika kadry zarządzającej, opatrzone jego podpisem i pieczęcią firmową lub inny dowód umożliwiający identyfikację podmiotu gospodarczego, np. opdis z KRS.
 >
 
 - **Dodaj nadawców na podstawie danych osobowych**: Możesz wybrać nadawcę na podstawie danych kontaktowych na Twoim koncie OVHcloud. Wówczas wyświetli się lista rozwijana dostępnych nadawców.
