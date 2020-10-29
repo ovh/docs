@@ -1,8 +1,8 @@
 ---
-title: "Ma première campagne SMS"
-excerpt: "Découvrez comment effectuer une première campagne d'envoi de SMS"
+title: Ma première campagne SMS
+excerpt: Découvrez comment effectuer une première campagne d’envoi de SMS
 slug: ma_premiere_campagne_sms
-section: 'Premiers pas'
+section: Premiers pas
 ---
 
 **Dernière mise à jour le 28/10/2020**
