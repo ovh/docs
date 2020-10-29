@@ -18,7 +18,7 @@ Vous pouvez envoyer des SMS directement via votre espace client OVHcloud. Ce gui
 
 ## En pratique
 
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} à gauche et sur votre compte SMS.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} à gauche et sur votre compte SMS.
 
 Le champ « Envoyer un SMS » est le premier élément disponible dans la liste des actions.
 
@@ -90,11 +90,11 @@ Il permet de recevoir une réponse via l’onglet SMS reçus.
 
 #### Numéro mobile virtuel (Uniquement pour les comptes OVHcloud en France)
 
-Si vous disposez d'une offre SMS avec numéro mobile virtuel, vous pouvez renseigner celui-ci comme expéditeur. Pour plus d'informations, consultez notre [page numéro mobile virtuel](https://www.ovhtelecom.fr/sms/reponse/numeros-virtuels.xml).
+Si vous disposez d'une offre SMS avec numéro mobile virtuel, vous pouvez renseigner celui-ci comme expéditeur. Pour plus d'informations, consultez notre [page sur le numéro mobile virtuel](https://www.ovhtelecom.fr/sms/reponse/numeros-virtuels.xml).
 
 > [!primary]
 >
->Si vous disposez déjà d'un compte SMS, la création d'un numéro mobile virtuel pour ce compte existant est impossible. Il sera nécessaire de commander un nouveau compte SMS via la page de l'offre numéro mobile virtuel.
+>Si vous disposez déjà d'un compte SMS, la création d'un numéro mobile virtuel pour ce compte existant est impossible. Il sera nécessaire de commander un nouveau compte SMS via la page de l'offre [numéro mobile virtuel](https://www.ovhtelecom.fr/sms/reponse/numeros-virtuels.xml).
 >
 
 #### Expéditeur alphanumérique
