@@ -97,7 +97,7 @@ Per aggiungere un ulteriore mittente SMS, clicca sul pulsante `Azioni`{.action} 
 
 Nella nuova pagina, sono disponibili diverse opzioni per configurare un nuovo mittente SMS (3): 
 
-- **Aggiungi manualmente i mittenti**: È necessario inserire il mittente, la descrizione e il motivo per cui si utilizza questo determinato mittente. È inoltre necessario un documento giustificativo.
+- **Aggiungi manualmente i mittenti**: È necessario inserire il mittente, la descrizione e il motivo per cui si utilizza questo determinato mittente. È inoltre necessario un documento giustificativo (4).
 
 > [!primary]
 >
