@@ -1,8 +1,8 @@
 ---
-title: 'Sending SMS messages via the OVHcloud Control Panel'
+title: Sending SMS messages via the OVHcloud Control Panel
 slug: send_sms_messages_via_control_panel
-excerpt: 'Find out how to send SMS messages simply via the OVHcloud Control Panel'
-section: 'Sending SMS messages'
+excerpt: Find out how to send SMS messages simply via the OVHcloud Control Panel
+section: Sending SMS messages
 ---
 
 **Last updated 28th October 2020**
@@ -64,7 +64,7 @@ If you use characters that do not appear in these tables, the encoding with swit
 
 In this section, you can either send messages immediately, or set up delayed sending (1).
 
-Three sending formats are also available (2°.
+Three sending formats are also available (2).
 
 - Standard: The most commonly-used SMS message.
 - Flash: The SMS message appears directly on the phone screen.
