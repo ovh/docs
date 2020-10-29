@@ -16,7 +16,7 @@ Cloud Web mette a tua disposizione diversi linguaggi di programmazione per conse
 ## Prerequisiti
 
 - Disporre di un piano di hosting [Cloud Web](https://www.ovh.it/hosting-web/cloud-web.xml) attivo
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), sezione `Web`{.action}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), sezione `Web Cloud`{.action}
 
 ## Procedura
 

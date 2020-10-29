@@ -29,12 +29,12 @@ Une fois votre offre OVHcloud Connect Provider commandée, vous recevrez une con
 Selon le fournisseur que vous avez choisi, rendez-vous ensuite sur le portail de celui-ci pour vous identifier, le lien étant fourni dans l'e-mail de confirmation de commande. 
 Renseignez alors votre clé de service et validez la commande qui vous sera présentée.
 
-Vérifiez par la suite dans votre  [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} le statut d'activation de votre offre. Pour cela, cliquez sur `Server`{.action} en haut à gauche puis sélectionnez l'onglet `Network`{.action}. Cliquez alors sur `OVHcloud Connect`{.action} puis sur votre offre. Le statut de votre offre passera à « Actif »
+Vérifiez par la suite dans votre  [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} le statut d'activation de votre offre. Pour cela, cliquez sur `Bare Metal Cloud`{.action} en haut à gauche puis sélectionnez l'onglet `Network`{.action}. Cliquez alors sur `OVHcloud Connect`{.action} puis sur votre offre. Le statut de votre offre passera à « Actif »
 
 
 ### Étape 2 : associer un vRack
 
-Connectez-vous à [l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Server`{.action} en haut à gauche puis sélectionnez l'onglet `Network`{.action}. Cliquez alors sur `OVHcloud Connect`{.action} puis sur votre offre.
+Connectez-vous à [l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Bare Metal Cloud`{.action} en haut à gauche puis sélectionnez l'onglet `Network`{.action}. Cliquez alors sur `OVHcloud Connect`{.action} puis sur votre offre.
 
 ![ovhcloud connect selection](images/occ01.png){.thumbnail}
 

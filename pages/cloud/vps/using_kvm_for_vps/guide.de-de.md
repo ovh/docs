@@ -24,13 +24,13 @@ Die KVM-Konsole ermöglicht eine direkte Verbindung zu Ihrem VPS, ohne externe S
 
 #### Die aktuelle VPS Reihe
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Server`{.action} und wählen Sie links im Menü unter `VPS`{.action} Ihren Server aus. Klicken Sie auf dieser Seite auf `...`{.action} rechts neben dem Namen Ihres VPS im Abschnitt „Ihr VPS“.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie links im Menü unter `VPS`{.action} Ihren Server aus. Klicken Sie auf dieser Seite auf `...`{.action} rechts neben dem Namen Ihres VPS im Abschnitt „Ihr VPS“.
 
 ![KVM](images/kvm-new1.png){.thumbnail}
 
 #### Vorherige VPS Reihe
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Server`{.action} und wählen Sie links im Menü unter `VPS`{.action} Ihren Server aus. Klicken Sie hier auf den Shortcut `KVM`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie links im Menü unter `VPS`{.action} Ihren Server aus. Klicken Sie hier auf den Shortcut `KVM`{.action}.
 
 ![KVM Shortcut](images/kvm-new2.png){.thumbnail}
 

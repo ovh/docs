@@ -18,7 +18,7 @@ Ao adicionar um domínio ao seu e-mail, poderá ser-lhe solicitada uma configura
 - Ter uma solução de e-mail na OVH.
 - Ter adicionado ao serviço de e-mail um domínio que requer a criação de um registo CNAME.
 - Poder alterar a configuração do seu domínio (a sua zona DNS).
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web`{.action}.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web Cloud`{.action}.
 
 ## Instruções
 

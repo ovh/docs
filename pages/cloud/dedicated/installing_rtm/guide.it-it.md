@@ -278,7 +278,7 @@ Al momento il pacchetto RTM non è compatibile con i sistemi Windows. Lavoriamo 
 
 ### Avere accesso allo Spazio Cliente OVHcloud
 
-Una volta installato RTM, è possibile visualizzare i dati di monitoraggio per il tuo server dal tuo Spazio Cliente OVHcloud.  (Potrebbe essere necessario aggiornare il browser o disconnettersi e accedere nuovamente). Accedi alla sezione `Server`{.action} e seleziona il tuo server nel menu a sinistra. Nella scheda `Informazioni generali`{.action} sono infatti disponibili i dati degli elementi controllati.
+Una volta installato RTM, è possibile visualizzare i dati di monitoraggio per il tuo server dal tuo Spazio Cliente OVHcloud.  (Potrebbe essere necessario aggiornare il browser o disconnettersi e accedere nuovamente). Accedi alla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server nel menu a sinistra. Nella scheda `Informazioni generali`{.action} sono infatti disponibili i dati degli elementi controllati.
 
 ![Real Time Monitoring](images/rtm_panel.png){.thumbnail}
 

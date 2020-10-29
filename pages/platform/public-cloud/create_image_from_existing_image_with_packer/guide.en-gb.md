@@ -13,7 +13,7 @@ This guide will show you how to create a Packer configuration file to create you
 
 ## Requirements
 
-You'll need an [OVHcloud Public Cloud](https://www.ovh.com/public-cloud/instances/) OpenStack project and a terminal.
+You'll need an [OVHcloud Public Cloud](https://www.ovhcloud.com/en-gb/public-cloud/) OpenStack project and a terminal.
 
 ### Install Packer
 

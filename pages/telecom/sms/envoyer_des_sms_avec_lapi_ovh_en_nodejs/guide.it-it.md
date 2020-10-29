@@ -11,7 +11,7 @@ section: 'Inviare SMS'
 
 Gli SMS sono ampiamente utilizzati per inviare informazioni pratiche, per seguire lo stato di un ordine o di un processo transazionale, essere avvisati di un evento insolito o come promemoria di appuntamenti. Questa guida espone in dettaglio il metodo di invio di un primo SMS con l'API OVHcloud in Node.js.
 
-**'Come inviare SMS con l’API OVHcloud RESTful in Node.js'**
+**Come inviare SMS con l’API OVHcloud RESTful in Node.js**
 
 ## Prerequisiti
 

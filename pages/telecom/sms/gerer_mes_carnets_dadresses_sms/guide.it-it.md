@@ -14,7 +14,7 @@ Tutti gli account SMS OVHcloud possono utilizzare una o più rubriche. Questa gu
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud attivo
-- Avere accesso allo Spazio Cliente OVHcloud
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
 - Disporre di un programma di fogli di calcolo o un editor di testo
 
 ## Procedura

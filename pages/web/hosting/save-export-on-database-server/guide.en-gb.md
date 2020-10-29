@@ -29,7 +29,7 @@ Your database can contain a lot of essential information for your website. It is
 
 ### Backing up and exporting a database from the Control Panel
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the SQL instance concerned. Next, go to the `Databases` tab.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the SQL instance concerned. Next, go to the `Databases` tab.
 
 In the **Backups** column, the number corresponds to the number of backups available for your database.
 

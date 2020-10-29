@@ -28,7 +28,7 @@ You can view the list of SMS packs [here](https://www.ovh.co.uk/sms/).
 **E.g. to purchase a pack of 100 SMS credits, each credit costs 0.03 ex. VAT.**
 
 Sending 1 SMS message in the United Kingdom costs 0,5 credit. With this pack, you can send 200 SMS messages in in the United Kingdom.
-Sending 1 SMS message in India costs 0.1 credit. With this pack, you can send 1,000 SMS messages in India.
+<br>Sending 1 SMS message in India costs 0.1 credit. With this pack, you can send 1,000 SMS messages in India.
 
 On [this webpage](https://www.ovh.co.uk/sms/prices/), you can view the price in credits for sending SMS messages, depending on their destination.
 
@@ -72,7 +72,7 @@ SMS credits can only be transferred via the API.
 
 Log in to [https://api.ovh.com/](https://api.ovh.com/console/), then use the following API call:
 
-> \[!api]
+> [!api]
 >
 > @api {post} /sms/{serviceName}/transferCredits
 >

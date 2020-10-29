@@ -17,7 +17,7 @@ Les offres d'hébergement web d'OVH vous donnent accès à un espace de stockage
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web OVH]({ovh_www}/hebergement-web/){.external}.
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Web`{.action}.
+- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Web Cloud`{.action}.
 
 ## En pratique
 

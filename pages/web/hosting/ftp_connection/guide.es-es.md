@@ -17,7 +17,7 @@ Los planes de hosting de OVH permiten disponer de un espacio de almacenamiento e
 ## Requisitos
 
 - Tener contratado un [plan de hosting de OVH]({ovh_www}/hosting/){.external}.
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action}.
 
 ## Procedimiento
 

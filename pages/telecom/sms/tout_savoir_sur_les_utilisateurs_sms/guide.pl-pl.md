@@ -100,7 +100,7 @@ Możesz wprowadzić do 5 różnych publicznych adresów IP dla wysyłania zapyta
 
 ![sms-users](images/smsusers06.png){.thumbnail}
 
-Aby uzyskać więcej informacji na temat funkcji http2sms, przeczytaj przewodnik [Wysyłanie wiadomości SMS z adresu URL](../envoyer_des_sms_depuis_une_url_-_http2sms/).
+Aby uzyskać więcej informacji na temat funkcji http2sms, przeczytaj przewodnik [Wysyłanie wiadomości SMS z adresu URL](../wysylanie-wiadomosci-sms-z-adresu-url-http2sms/).
 
 ### Etap 5: określanie adresu URL wywołania zwrotnego
 

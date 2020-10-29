@@ -59,7 +59,7 @@ Clicca su `Configurazione manuale`{.action} per continuare l’installazione.
 >
 > Nel nostro esempio, usiamo il nome del server, ad esempio: **X**.mail.ovh.net.
 > 
-> Per recuperare i dati del server accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web`{.action}, quindi seleziona `Microsoft`{.action}
+> Per recuperare i dati del server accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web Cloud`{.action}, quindi seleziona `Microsoft`{.action}
 >  nella colonna a sinistra. Seleziona `Exchange`{.action}, quindi la tua piattaforma. Il server è visibile nel riquadro **Connessione** della scheda `Informazioni Generali`{.action}
 > 
 

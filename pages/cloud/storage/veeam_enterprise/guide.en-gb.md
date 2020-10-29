@@ -118,7 +118,7 @@ If you go back to the **Security** window, you can check that the account has be
 
 ##### **Using the OVHcloud Control Panel**
 
-In your OVHcloud Control Panel, open the `Server` section, then select your service labelled **backupserverenterprise** under `Platforms and services`{.action} in the left-hand navigation bar. On this page, click on `Activate licence`{.action} in the `Shortcuts` box.
+In your OVHcloud Control Panel, open the `Bare Metal Cloud` section, then select your service labelled **backupserverenterprise** under `Platforms and services`{.action} in the left-hand navigation bar. On this page, click on `Activate licence`{.action} in the `Shortcuts` box.
 
 ![control panel register](images/veeam001.png){.thumbnail}
 

@@ -19,7 +19,7 @@ Le operazioni di gestione degli hosting Web OVH, disponibili direttamente nellâ€
 
 - Disporre di un piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} attivo
 - Aver registrato almeno un [dominio](https://www.ovh.it/domini/){.external}
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web`{.action}.
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web Cloud`{.action}.
 
 ## Procedura
 

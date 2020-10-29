@@ -1,11 +1,11 @@
 ---
-title: 'Sending SMS messages via the OVHcloud Control Panel'
+title: Sending SMS messages via the OVHcloud Control Panel
 slug: send_sms_messages_via_control_panel
-excerpt: 'Find out how to send SMS messages simply via the OVHcloud Control Panel'
-section: 'Sending SMS messages'
+excerpt: Find out how to send SMS messages simply via the OVHcloud Control Panel
+section: Sending SMS messages
 ---
 
-**Last updated 02nd June 2020**
+**Last updated 28th October 2020**
 
 ## Objective
 
@@ -14,12 +14,13 @@ You can send SMS messages directly via the OVHcloud Control Panel. This guide gi
 ## Requirements
 
 - an OVHcloud SMS account with SMS credits
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), then select `Telecom`{.action}. Next, click `SMS`{.action} on the left (2) and select your SMS account (3).
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), then select `Telecom`{.action}. Next, click `SMS`{.action} on the left, and your SMS account.
 
-The “Send an SMS” field (4) is the first element in the list of actions.
+The “Send an SMS” field is the first item available in the list of actions.
 
 ![send sms control panel](images/sms-send-control-panel01E.png){.thumbnail}
 
@@ -30,13 +31,13 @@ Once you have landed on the sending page for SMS messages, you will have differe
 ![send sms control panel](images/sms-send-control-panel02E.png){.thumbnail}
 
 For the SMS sender (1), you can either select a short number that allows recipients to send back replies (available for OVHcloud accounts in France only), or you can set an alpha-numeric sender name.
-Next, enter the recipient phone number (2) in international format (+44xxxxxxxxxx).
-For further information on how to create a sender, please refer to [Step 3: Choose an SMS sender](./#step-3-choose-an-sms-sender){.external}.
+Next, enter the recipient phone number (2) in international format (+353xxxxxxxxxx).
+For further information on how to create a sender, please refer to [Step 3: Choose an SMS sender](./#step-3-choose-an-sms-sender_1).
 
 You can also send SMS messages to multiple recipients. There are two methods for doing this:
 
 - Via a list of recipients in .csv format, via the “Manage recipients” button.
-For further information on this, you can refer to our [guide on SMS recipient lists](../sms_recipient_list/).
+For further information on this, you can refer to our [guide on SMS recipient lists](../list_of_sms_recipients/).
 
 - By creating an address book (3). You can do this directly via the OVHcloud Control Panel, or import one as a .csv or .txt file.
 Feel free to refer to our [guide on managing SMS address books](../manage-sms-address-books/) for further information.
@@ -59,9 +60,11 @@ If you use characters that do not appear in these tables, the encoding with swit
 
 #### Advanced options
 
-In this section, you can either send messages immediately, or set up delayed sending.
+![send sms control panel](images/sms-send-control-panel-advanced.png){.thumbnail}
 
-Three sending formats are also available.
+In this section, you can either send messages immediately, or set up delayed sending (1).
+
+Three sending formats are also available (2).
 
 - Standard: The most commonly-used SMS message.
 - Flash: The SMS message appears directly on the phone screen.
@@ -94,11 +97,11 @@ If you would like to add an additional SMS sender, click the `Actions`{.action} 
 
 Once you are on the ‘Add’ page, you will see several options for configuring a new SMS sender (3).
 
-- **Manually add senders**: You will need to enter the sender you want, their description, and a reason for using this sender (4).  
+- **Manually add senders**: You will need to enter the sender you want, their description, and a reason for using this sender (4). A supporting document is also required. 
 
 > [!primary]
 >
->In the event of a request from a sender in the name of a third-party company, you will be requested to provide a legal document. In this case, please send this document by opening a support ticket via the OVHcloud Control Panel.  Validation for senders created manually is free of charge, and done within 1 to 2 working days, from Monday - Friday, 8AM - 8PM.
+> As part of our security policy, we ask for a supporting document. By default, this is a company or trademark letterhead, including the authorisation of an official with signature and stamp of the same company, an identity paper, or a Kbis extract if it is not a trademark.
 >
 
 - **Add senders based on personal data**: You can request a sender based on the contact details saved on your OVHcloud account. A dropdown list of available senders will then appear.

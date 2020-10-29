@@ -24,7 +24,7 @@ Utilizzati dalla maggior parte dei sistemi di gestione dei contenuti (Content Ma
 
 ### Step 1: accedi alla gestione dei database dell’hosting
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), seleziona `Web`{.action} nella barra di navigazione in alto. Clicca su `piani Hosting`{.action} nella colonna a sinistra e seleziona il tuo servizio. Quindi, clicca sulla scheda `Database`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), seleziona `Web Cloud`{.action} nella barra di navigazione in alto. Clicca su `piani Hosting`{.action} nella colonna a sinistra e seleziona il tuo servizio. Quindi, clicca sulla scheda `Database`{.action}.
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting.
 

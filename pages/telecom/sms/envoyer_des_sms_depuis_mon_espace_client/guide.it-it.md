@@ -5,7 +5,7 @@ excerpt: Come inviare SMS facilmente dal tuo Spazio Cliente OVHcloud
 section: Inviare SMS
 ---
 
-**Ultimo aggiornamento: 19/05/2020**
+**Ultimo aggiornamento: 28/10/2020**
 
 ## Obiettivo
 
@@ -14,12 +14,13 @@ section: Inviare SMS
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud con saldo SMS.
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
 
 ## Procedura
 
-Accedi allo [Spazio Cliente[e seleziona `Telecom` (1). Quindi clicca su `SMS` a sinistra (2) e seleziona il tuo account SMS (3).
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager) e seleziona `Telecom`. Quindi clicca su `SMS` a sinistra e seleziona il tuo account SMS.
 
-Il campo “Inviare un SMS” (4) è il primo elemento disponibile nella lista delle azioni.
+Il campo “Inviare un SMS” è il primo elemento disponibile nella lista delle azioni.
 
 ![envoi sms manager](images/sms-send-control-panel01E.png){.thumbnail}
 
@@ -31,7 +32,7 @@ Una volta nella pagina di invio SMS, è necessario configurare tre distinti para
 
 Per il mittente dell’SMS (1), è possibile selezionare un numero breve che accetti le risposte (soltanto per gli account OVHcloud presenti in Francia) oppure un mittente alfanumerico.
 Quindi inserisci il numero del destinatario (2) nel formato internazionale (+336xxxxxxxx).
-Per maggiori informazioni sulla creazione di un mittente, consulta lo [step 3: scegli il mittente degli SMS](./#step-3-scegli-il-mittente-sms){.external}.
+Per maggiori informazioni sulla creazione di un mittente, consulta lo [step 3: scegli il mittente degli SMS](./#step-3-scegli-il-mittente-sms_1).
 
 È possibile inviare SMS a più destinatari in due diversi modi: 
 
@@ -39,7 +40,7 @@ Per maggiori informazioni sulla creazione di un mittente, consulta lo [step 3: s
 Per maggiori informazioni, consulta la nostra [guida sulle liste di destinatari SMS](../lista_di_destinatari_sms/).
 
 - Tramite una rubrica indirizzi (3), che può essere creata dallo Spazio Cliente o importata tramite une file .csv o .txt.
-Per maggiori informazioni consulta la[guida sulle rubriche SMS](../gestisci_le_tue_rubriche_sms/).
+Per maggiori informazioni consulta la [guida sulle rubriche SMS](../gestire_rubriche_sms/).
 
 ### Step 2: digita il tuo SMS
 
@@ -59,9 +60,11 @@ Attenzione: l’utilizzo di caratteri non presenti in queste tabelle comporta il
 
 #### Opzioni avanzate
 
-In questa sezione è possibile effettuare un invio immediato o differito.
+![envoi sms manager](images/sms-send-control-panel-advanced.png){.thumbnail}
 
-Inoltre sono disponibili tre formati di invio: 
+In questa sezione è possibile effettuare un invio immediato o differito (1).
+
+Inoltre sono disponibili tre formati di invio (2): 
 
 - Standard:  l’SMS più comunemente utilizzato.
 - Flash : l’SMS appare direttamente sullo schermo del telefono.
@@ -94,11 +97,11 @@ Per aggiungere un ulteriore mittente SMS, clicca sul pulsante `Azioni`{.action} 
 
 Nella nuova pagina, sono disponibili diverse opzioni per configurare un nuovo mittente SMS (3): 
 
-- **Aggiungi manualmente i mittenti**: È necessario inserire il mittente, la descrizione e il motivo per cui si utilizza questo determinato mittente. 
+- **Aggiungi manualmente i mittenti**: È necessario inserire il mittente, la descrizione e il motivo per cui si utilizza questo determinato mittente. È inoltre necessario un documento giustificativo (4).
 
 > [!primary]
 >
->Se ricevi una richiesta da parte di un mittente a nome di una società terza, ti verrà richiesto un documento giustificativo. In questo caso ti consigliamo di inviarci questo documento aprendo una richiesta di assistenza nel tuo Spazio Cliente.  La convalida dei mittenti creati manualmente è gratuita ed è effettuata entro uno o due giorni lavorativi, dal lunedì al venerdì, dalle 8:00 alle 20:00.
+> Ti chiediamo un documento giustificativo per la nostra politica di sicurezza. Si tratta di una carta intestata della società o del marchio, che include l'autorizzazione di un responsabile con firma e timbro della stessa società, di una carta d'identità o di una visura camerale nel caso di marchi non depositati.
 >
 
 - **Aggiungi mittenti a partire dai dati personali**: È possibile richiedere un mittente, basandosi sulle credenziali del tuo account OVHcloud. A questo punto, visualizzi un menu a tendina con la lista dei destinatari disponibili.

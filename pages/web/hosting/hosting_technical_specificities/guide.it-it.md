@@ -120,7 +120,7 @@ Consulta le rispettive pagine informative per verificare le librerie disponibili
 
 Ulteriori informazioni relative al tuo cluster sono disponibili a questo link: <https://cluster015.hosting.ovh.net/infos/>
 
-Sostituisci il cluster indicato nell’URL con il tuo. Per sapere su quale cluster di hosting Web si trova il tuo servizio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona `Web`{.action} nella barra di navigazione superiore. Clicca nella sezione `Hosting`{.action} del menu a sinistra e seleziona il tuo servizio. A questo punto clicca sulla scheda `FTP - SSH`{.action}. Il numero del cluster è indicato nell’URL di accesso FTP al tuo hosting.
+Sostituisci il cluster indicato nell’URL con il tuo. Per sapere su quale cluster di hosting Web si trova il tuo servizio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona `Web Cloud`{.action} nella barra di navigazione superiore. Clicca nella sezione `Hosting`{.action} del menu a sinistra e seleziona il tuo servizio. A questo punto clicca sulla scheda `FTP - SSH`{.action}. Il numero del cluster è indicato nell’URL di accesso FTP al tuo hosting.
 
 Le specifiche tecniche della soluzione di hosting Cloud Web sono disponibili a questo link: <https://cloudweb-infos.hosting.ovh.net/>
 

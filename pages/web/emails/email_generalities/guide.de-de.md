@@ -17,7 +17,7 @@ Sie haben gerade eine MX Plan Lösung erworben und können sie nun verwenden, um
 ## Voraussetzungen
 
 - Sie haben ein MX Plan Angebot, verfügbar mit einer [Webhosting](https://www.ovh.de/hosting/){.external} Lösung, dem [kostenlosen Start 10M Hosting](https://www.ovh.de/domains/angebot_hosting_start10m.xml){.external} oder separat bestellbar.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web`{.action}.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
 ## Beschreibung
 

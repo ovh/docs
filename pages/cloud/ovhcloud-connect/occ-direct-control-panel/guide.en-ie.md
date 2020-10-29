@@ -22,7 +22,7 @@ With OVHcloud Connect, you can link your company network to your private OVHclou
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), click `Server`{.action} in the top navigation bar, then select `Network`{.action} from the left-hand menu. Open `OVHcloud Connect`{.action} and click on your solution.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), click `Bare Metal Cloud`{.action} in the top navigation bar, then select `Network`{.action} from the left-hand menu. Open `OVHcloud Connect`{.action} and click on your solution.
 
 ![ovhcloud connect selection](images/occ01.png){.thumbnail}
 

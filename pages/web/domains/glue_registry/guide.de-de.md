@@ -19,7 +19,7 @@ Bei Bedarf können Sie den Namen der DNS-Server Ihrer OVH Domain anpassen.
 ## Voraussetzungen
 
 - Sie besitzen eine bei OVH registrierte Domain.
-- Sie sind im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web`{.action}.
+- Sie sind im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
 ## Beschreibung
 
@@ -27,7 +27,7 @@ Bei Bedarf können Sie den Namen der DNS-Server Ihrer OVH Domain anpassen.
 
 ### Schritt 1: GLUE-Einträge hinzufügen
 
-Loggen Sie sich zunächst im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und gehen Sie in den Bereich `Web`, klicken Sie links im Menü auf `Domains`{.action} und wählen Sie dann die Domain aus, für die Sie die DNS-Server anpassen möchten. Gehen Sie danach auf den Tab `GLUE`{.action}.
+Loggen Sie sich zunächst im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und gehen Sie in den Bereich `Web Cloud`, klicken Sie links im Menü auf `Domains`{.action} und wählen Sie dann die Domain aus, für die Sie die DNS-Server anpassen möchten. Gehen Sie danach auf den Tab `GLUE`{.action}.
 
 Es wird eine Tabelle angezeigt, die alle aktuell bei OVH für Ihre Domain konfigurierten GLUE-Einträge enthält. Klicken Sie auf den Button `Hinzufügen`{.action}, um einen neuen GLUE-Eintrag hinzuzufügen.
 

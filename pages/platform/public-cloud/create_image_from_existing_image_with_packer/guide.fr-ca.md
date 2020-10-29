@@ -1,6 +1,6 @@
 ---
-title:' 'Créer une image OpenStack personnalisée avec Packer'
-excerpt: Créer et personnaliser une image OpenStack à partir d'une image existante avec Packer
+title: Créer une image OpenStack personnalisée avec Packer
+excerpt: Créer et personnaliser une image OpenStack à partir d’une image existante avec Packer
 slug: packer-openstack-builder
 section: Tutoriels
 ---
@@ -13,73 +13,81 @@ section: Tutoriels
 
 ## Prérequis
 
-Un projet [Public Cloud](https://www.ovh.com/fr/ca/public-cloud/instances.
-Un terminal
+- Un projet [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/).
+- Un terminal
+
+## En pratique
 
 ### Installer Packer
 
-Packer peut être téléchargé à partir du site officiel [ici](https://www.packer.io/downloads.html) et vous devrez le "unzip".
+Packer peut être téléchargé depuis le site officiel [ici](https://www.packer.io/downloads.html) et vous devrez le décompresser.
 
-Pour Linux x64
+Pour Linux 64bits :
 
-```sh
+```shell
 wget https://releases.hashicorp.com/packer/1.3.1/packer_1.3.1_linux_amd64.zip
 unzip packer_1.3.1_linux_amd64.zip
 ```
 
 ### Installer jq
 
-`jq` est un outil de ligne de commande pour [analyser le document JSON](https://stedolan.github.io/jq/manual/). Il sera utilisé pour automatiser la création du fichier de configuration.
+`jq` est un outil de ligne de commande pour [analyser le document JSON](https://stedolan.github.io/jq/manual/). 
 
-```sh
+Il sera utilisé pour automatiser la création du fichier de configuration.
+
+```shell
 apt-get install jq
 ```
 
 ### Récupérer votre configuration openrc.sh
 
-À partir de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager), récupérez votre fichier de configuration "openrc.sh". Vous pouvez l'extraire de l'entrée de menu OpenStack dans le panneau gauche et sous le `..." sur la droite, "Télécharger un fichier de configuration OpenStack". Vous devrez peut-être créer un utilisateur OpenStack avant.
+À partir de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), récupérez votre fichier de configuration `openrc.sh`. 
 
-### Installer le client de ligne de commande openstack
+Vous pouvez le retrouver via le menu OpenStack dans le panneau latéral gauche puis sous le bouton `...`{.action} sur la droite, vous trouverez le bouton `Télécharger un fichier de configuration OpenStack`{.action} 
 
-La façon la plus simple d'utiliser un environnement virtuel python.
+La [création d'un utilisateur OpenStack](../creation-et-suppression-dun-utilisateur-openstack/) peut s'avérer nécessaire au préalable.
 
-```sh
-python3 -m venv venv3 # creates a virtualenv named venv3
-. ./venv3/bin/activate # enter the virtualenv
+### Installer le client de ligne de commande OpenStack
+
+La méthode la plus simple est  d'utiliser un environnement virtuel python.
+
+```shell
+python3 -m venv venv3 # crée un environnement virtuel nommé venv3
+. ./venv3/bin/activate # renseignez l’environnement virtuel
 pip install --upgrade pip
 pip install python-openstackclient
 ```
 
-ou installer votre paquet de distribution "apt-get install python-openstackclient"
+ou d'installer votre package de distribution  `apt-get install python-openstackclient`.
 
 #### Vérification
 
-Sourcing du fichier de configuration "openrc.sh" récupéré précédemment, essayez votre installation locale avec
+En utilisant le fichier de configuration `openrc.sh` récupéré précédemment, essayez votre installation locale avec :
 
-```sh
+```shell
 . ./openrc.sh
 openstack token issue
 ```
 
-## Configuration Packer
+## Configuration de Packer
 
-D'abord, source votre fichier "openrc.sh" avec
+D'abord, chargez votre fichier `openrc.sh` avec
 
-```sh
+```shell
 . ./openrc.sh
-``
+```
 
-Trouvons ensuite l'identité nécessaire. Vous aurez besoin de l'ID de l'image, de la saveur et du réseau. Nous construirons notre image à partir de "Ubuntu 16.04" sur un matériel "vps-ssd-1", avec une interface connectée au réseau public "Ext-Net"
+Il faut à présent trouver les ID nécessaires. Vous aurez besoin des ID de l’image, de la flavor et du réseau. Nous construirons notre image à partir de `Ubuntu 16.04` sur un matériel `vps-ssd-1`, avec une interface connectée au réseau public `Ext-Net`
 
-```sh
+```shell
 SOURCE_ID=`openstack image list -f json | jq -r '.[] | select(.Name == "Ubuntu 16.04") | .ID'`
 FLAVOR_ID=`openstack flavor list -f json | jq -r '.[] | select(.Name == "vps-ssd-1") | .ID'`
 NETWORK_ID=`openstack network list -f json | jq -r '.[] | select(.Name == "Ext-Net") | .ID'`
 ```
 
-**INFO**: pour "FLAVOR_ID", vous pouvez utiliser directement le nom, comme "vps-ssd-1"
+**INFO**: pour `FLAVOR_ID`, vous pouvez utiliser directement le nom, comme `vps-ssd-1`
 
-Enfin, créez un fichier "packer.json"
+Enfin, créez un fichier `packer.json`
 
 ```shell
 cat > packer.json <<EOF
@@ -112,7 +120,7 @@ cat > packer.json <<EOF
 EOF
 ```
 
-Dans la dernière sélection du fichier de configuration, nous spécifions un script shell "setup_vm.sh" à exécuter.
+Dans la dernière sélection du fichier de configuration, nous spécifions un script shell `setup_vm.sh` à exécuter.
 
 ```sh
 #!/bin/sh
@@ -129,16 +137,16 @@ apt-get install git
 git clone ...
 ```
 
-## Construction de l'image
+## Construction de l’image
 
-À l'aide du fichier de configuration créé ci-dessus, vérifiez-le et créez l'image avec
+À l'aide du fichier de configuration créé ci-dessus, vérifiez-le et créez l'image avec :
 
 ```shell
 packer validate packer.json
 packer build packer.json
 ```
 
-Si tout allait bien, vous devriez avoir une nouvelle image disponible. Vous pouvez vérifier avec
+Si tout s'est bien passé, vous devriez obtenir une nouvelle image disponible. Vous pouvez le vérifier avec :
 
 ```shell
 openstack image list | grep 'My Custom Image'
@@ -146,7 +154,7 @@ openstack image list | grep 'My Custom Image'
 
 > [!primary]
 >
-> **Conseil**: Pour activer les informations de débogage: `export PACKER_LOG=1
+> **Conseil**: Pour activer les informations de débogage: `export PACKER_LOG=1`
 >
 
 ## Aller plus loin

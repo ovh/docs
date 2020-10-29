@@ -18,7 +18,7 @@ Los alojamientos web de OVHcloud son compatibles con los certificados SSL. Puede
 
 - Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}.
 - Tener al menos un [dominio](https://www.ovh.com/world/es/dominios/){.external}.
-- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}.
+- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action}.
 
 ## Procedimiento
 

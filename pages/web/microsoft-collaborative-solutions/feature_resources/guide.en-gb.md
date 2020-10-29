@@ -22,7 +22,7 @@ This Exchange collaborative feature enables the creation of email addresses dedi
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned. Click on `More +`{.action} in the horizontal menu, then on `Resources`{.action}.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned. Click on `More +`{.action} in the horizontal menu, then on `Resources`{.action}.
 
 ### Step 1: Creating a resource
 

@@ -97,7 +97,7 @@ You may consult the [official OpenStack documentation](https://docs.openstack.or
 
 Using the vRack itself is free of charge and it can be delivered within a few minutes. However, to create a vRack service, it is necessary to generate and validate an order form first.
 
-Once the service is active, you will find it in your Control Panel in the `Server`{.action} section, labelled "pn-xxxxxx".
+Once the service is active, you will find it in your Control Panel in the `Bare Metal Cloud`{.action} section, labelled "pn-xxxxxx".
 
 #### In the OVHcloud Control Panel
 

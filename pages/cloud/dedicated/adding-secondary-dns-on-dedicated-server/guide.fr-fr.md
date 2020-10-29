@@ -44,7 +44,7 @@ Un message vous confirmant l'enregistrement de type TXT pour votre domaine appar
 
 ### Procéder à la vérification du nom de domaine
 
-Une fois connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le menu `Web`{.action}, puis dans la section `Domaines`{.action} dans la colonne de gauche afin de faire apparaître tous les domaines que vous gérez :
+Une fois connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le menu `Web Cloud`{.action}, puis dans la section `Domaines`{.action} dans la colonne de gauche afin de faire apparaître tous les domaines que vous gérez :
 
 ![Vérification de domaine](images/domain-verification-01.png){.thumbnail}
 

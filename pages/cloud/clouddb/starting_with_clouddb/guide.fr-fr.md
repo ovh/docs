@@ -156,7 +156,7 @@ Sur la fenêtre qui s'affiche, indiquez l'adresse IP ou le masque que vous dési
 
 Pour un hébergement web OVHcloud, vous devez autoriser l'adresse IP « passerelle de sortie » (gateway) de celui-ci . 
 
-Pour retrouvez l'adresse IP « passerelle de sortie », rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web`, puis sur`Hébergement`{.action} dans la colonne de gauche. Sélectionnez votre hébergement dans la liste, puis cliquez sur l'onglet `FTP - SSH`.
+Pour retrouvez l'adresse IP « passerelle de sortie », rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur`Hébergement`{.action} dans la colonne de gauche. Sélectionnez votre hébergement dans la liste, puis cliquez sur l'onglet `FTP - SSH`.
 
 Retrouvez la mention **« Serveur FTP »**, celle-ci vous indiquera le numéro de cluster sur lequel vous êtes, comme ci-dessous.
 
