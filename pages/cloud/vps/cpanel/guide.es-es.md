@@ -53,19 +53,19 @@ Una vez que haya recibido el mensaje de correo electrónico con el único enlace
 
 La URL anteriormente citada le permite conectarse a su interfaz WHM sin claves de usuario y contraseña.
 
-#### 1\. leer las condiciones de uso de cPanel
+#### 1\. Leer las condiciones de uso de cPanel
 
 Lea y acepte las condiciones de uso de cPanel
 
 ![cPanel](images/license_validation.png){.thumbnail}
 
-#### 2\. completar los campos obligatorios
+#### 2\. Completar los campos obligatorios
 
 Indique los servidores de correo y de nombres (nameservers) que quiera configurar en el servidor VPS.
 
 ![cPanel](images/setup_config_cpanel.png){.thumbnail}
 
-#### 3\. establecer la contraseña root
+#### 3\. Establecer la contraseña root
 
 ![cPanel](images/change_root.png){.thumbnail}
 
@@ -79,4 +79,4 @@ Le recomendamos que consulte nuestra guía sobre cómo [proteger un VPS](../cons
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
