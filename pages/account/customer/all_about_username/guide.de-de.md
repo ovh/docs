@@ -116,6 +116,14 @@ Geben Sie dann den Code im Bereich „Validierungscode“ ein und bestätigen Si
 
 ![Kundenkennung](images/nichandle08.png){.thumbnail}
 
+### Änderung des Kontotyps
+
+Klicken Sie auf den `Typ des Accounts`, wenn Sie Ihr Profil bearbeiten. Mit einem Drop-down-Menü können Sie den Account-Typ Ihrer Situation festlegen.
+
+![identifiant client](images/nichandle09.png){.thumbnail}
+
+Wenn Sie Ihre Angaben eingegeben haben, klicken Sie auf den Button `Bestätigen` {.action} .
+
 ### Rechte für Ihre personenbezogenen Daten ausüben
 
 In Übereinstimmung mit der Datenschutz-Grundverordnung (DSGVO) können Sie [dieses Formular](https://www.ovh.de/schutz-personenbezogener-daten/rechte-ausueben) nutzen, um Ihre Rechte in Bezug auf den Schutz Ihrer personenbezogenen Daten auszuüben.
