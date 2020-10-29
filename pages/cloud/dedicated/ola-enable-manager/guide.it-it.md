@@ -1,7 +1,7 @@
 ---
 title: 'Configurare un NIC per il servizio OVHcloud Link Aggregation nello Spazio Cliente'
 slug: ola-manager
-excerpt: 'Attivare l''opzione OVHcloud Link Aggregation dalla tua area Cliente OVHcloud'
+excerpt: "Attivare l'opzione OVHcloud Link Aggregation dalla tua area Cliente OVHcloud"
 section: 'Utilizzo avanzato'
 ---
 

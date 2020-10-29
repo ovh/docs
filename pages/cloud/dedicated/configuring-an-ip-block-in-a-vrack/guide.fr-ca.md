@@ -1,5 +1,5 @@
 ---
-title: Configurer un bloc d''IP dans le vRack
+title: Configurer un bloc d'IP dans le vRack
 slug: ajouter-ou-enlever-un-bloc-ip-du-vrack
 excerpt: Découvrez comment configurer un bloc d'adresses IP publiques dans le vRack
 section: vRack

@@ -2,7 +2,7 @@
 title: 'Envoyer des newsletters avec Mailjet'
 slug: day14
 excerpt: 'Tenez vos clients informes !'
-section: 'Cas d''usage'
+section: "Cas d'usage"
 hidden: true
 ---
 

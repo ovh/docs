@@ -1,5 +1,5 @@
 ---
-title: 'Rétablir la synchronisation d''une connexion suite à une coupure'
+title: "Rétablir la synchronisation d'une connexion suite à une coupure"
 slug: retablir-synchronisation-suite-coupure
 excerpt: 'Découvrez comment rétablir la synchronisation de votre ligne xDSL OVH suite à une coupure'
 section: 'Diagnostic et dépannage'

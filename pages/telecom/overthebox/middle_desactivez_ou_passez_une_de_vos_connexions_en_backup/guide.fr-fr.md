@@ -3,7 +3,7 @@ title: 'Désactivez ou passez une de vos connexions en backup'
 keywords: 'agrégation, master, backup'
 description: 'Désactivez ou passez une de vos connexions en backup'
 slug: desactivez-ou-passez-une-de-vos-connexions-en-backup
-excerpt: 'L''agrégation de liens peut se configurer de différentes façons afin de répondre à vos besoins. Découvrez, dans ce guide, comment procéder à cette configuration.'
+excerpt: "L'agrégation de liens peut se configurer de différentes façons afin de répondre à vos besoins. Découvrez, dans ce guide, comment procéder à cette configuration."
 section: 'Fonctionnalités principales'
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 'Demander et suivre une portabilité de numéro'
 slug: demander-la-portabilite-de-mon-numero
-excerpt: 'Apprenez à porter un ou plusieurs numéros chez OVHcloud et à suivre l''avancement du processus'
+excerpt: "Apprenez à porter un ou plusieurs numéros chez OVHcloud et à suivre l'avancement du processus"
 section: 'Numéros ou alias'
 order: 1
 ---

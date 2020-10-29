@@ -1,7 +1,7 @@
 ---
 title: 'Liste des adresses IP des clusters et hebergements web'
 slug: liste-des-adresses-ip-des-clusters-et-hebergements-web
-section: 'Configuration de l''hébergement'
+section: "Configuration de l'hébergement"
 order: 3
 ---
 

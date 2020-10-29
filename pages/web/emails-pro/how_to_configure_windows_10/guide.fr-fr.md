@@ -1,7 +1,7 @@
 ---
 title: 'Configurer son compte E-mail Pro sur Courrier pour Windows 10'
 slug: configuration-courrier-windows-10
-excerpt: 'Apprenez à configurer un compte E-mail Pro sur l''application Courrier pour Windows 10'
+excerpt: "Apprenez à configurer un compte E-mail Pro sur l'application Courrier pour Windows 10"
 section: 'Configuration sur ordinateur'
 order: 4
 ---

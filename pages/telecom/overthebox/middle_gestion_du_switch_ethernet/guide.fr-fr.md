@@ -1,8 +1,8 @@
 ---
-title: 'Ajout d''un modem supplémentaire / Gestion du switch Ethernet'
-description: 'Ajout d''un modem supplémentaire / Gestion du switch Ethernet'
+title: "Ajout d'un modem supplémentaire / Gestion du switch Ethernet"
+description: "Ajout d'un modem supplémentaire / Gestion du switch Ethernet"
 slug: gestion-du-switch-ethernet
-excerpt: 'Afin de pouvoir ajouter très simplement une connexion supplémentaire à agréger par votre système OverTheBox, il suffit de modifier, via l''interface graphique, la fonction des ports Ethernet du switch intégré'
+excerpt: "Afin de pouvoir ajouter très simplement une connexion supplémentaire à agréger par votre système OverTheBox, il suffit de modifier, via l'interface graphique, la fonction des ports Ethernet du switch intégré"
 section: 'Fonctionnalités principales'
 ---
 

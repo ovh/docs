@@ -1,5 +1,5 @@
 ---
-title: 'Passer d''une facturation à l''heure à mensuelle'
+title: "Passer d'une facturation à l'heure à mensuelle"
 excerpt: 'Découvrez comment modifier le type de facturation de votre instance Public Cloud'
 slug: changer-type-facturation-public-cloud
 section: 'Gestion de projets'

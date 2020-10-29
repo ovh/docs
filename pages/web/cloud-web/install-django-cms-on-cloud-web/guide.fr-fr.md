@@ -1,7 +1,7 @@
 ---
 title: 'Comment installer Django CMS sur son hébergement Cloud Web'
 slug: installer-django-cms-cloud-web
-excerpt: 'Apprenez à installer Django CMS avec Python sur votre hébergement Cloud Web d''OVH'
+excerpt: "Apprenez à installer Django CMS avec Python sur votre hébergement Cloud Web d'OVH"
 section: Tutoriels
 ---
 
