@@ -5,6 +5,10 @@ excerpt: 'Cómo instanciar un VPS con la aplicación cPanel preinstalada'
 section: 'Uso avanzado'
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
+
 **Última actualización: 02/06/2020**
 
 ## Objetivo
@@ -15,8 +19,8 @@ cPanel es un panel de configuración diseñado para los proveedores de hosting. 
 
 ## Requisitos
 
-- Un [VPS de la gama actual](https://www.ovhcloud.com/fr/vps/){.external} (oferta Value, Essential, Comfort o Elite).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Un [VPS de la gama actual](https://www.ovhcloud.com/es-es/vps/) (oferta Value, Essential, Comfort o Elite).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
 
 ## Procedimiento
 
@@ -69,9 +73,9 @@ Ahora debería poder conectarse a WHM y por SSH utilizando el usuario root con l
 
 ### Seguridad del servicio
 
-Le recomendamos que tome todas las medidas necesarias para proteger su WHM y su VPS. Para ello, le recomendamos que lea las recomendaciones de cPanel [aquí](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
+Le recomendamos que tome todas las medidas necesarias para proteger su WHM y su VPS. Para ello, le recomendamos que lea las recomendaciones de cPanel [aquí](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external}.
 
-Le recomendamos que consulte nuestra guía sobre cómo [proteger un VPS](../conseils-securisation-vps/), utilizar [nuestras soluciones de backup](../) y configurar el [firewall de red](../../dedicated/firewall-network/).
+Le recomendamos que consulte nuestra guía sobre cómo [proteger un VPS](../consejos-proteccion-vps/), utilizar [nuestras soluciones de backup](../) y configurar el [firewall de red](../../dedicated/firewall-de-red/).
 
 ## Más información
 
