@@ -19,8 +19,8 @@ O cPanel é um painel de configuração concebido para alojamentos web. Graças 
 
 ## Requisitos
 
-- Um [VPS da gama atual](https://www.ovhcloud.com/fr/vps/){.external} (ofertas Value, Essential, Comfort ou Elite).
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Um [VPS da gama atual](https://www.ovhcloud.com/pt/vps/) (ofertas Value, Essential, Comfort ou Elite).
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
 
 ## Instruções
 
@@ -73,9 +73,9 @@ Já deve poder ligar-se ao WHM e ao SSH através do utilizador root com a palavr
 
 ### Segurança do seu serviço
 
-Recomendamos que tome todas as medidas necessárias para proteger a sua WHM e o seu VPS. Para isso, recomendamos que leia as recomendações do cPanel [aqui](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
+Recomendamos que tome todas as medidas necessárias para proteger a sua WHM e o seu VPS. Para isso, recomendamos que leia as recomendações do cPanel [aqui](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external}.
 
-Também recomendamos que consulte o nosso manual para [proteger um VPS](../conseils-securisation-vps/), que utilize as [nossas soluções de backup](../) e que configure a [Firewall Network](../../dedicated/firewall-network/).
+Também recomendamos que consulte o nosso manual para [proteger um VPS](../como-proteger-vps/), que utilize as [nossas soluções de backup](../) e que configure a [Firewall Network](../../dedicated/firewall-network/).
 
 ## Quer saber mais?
 
