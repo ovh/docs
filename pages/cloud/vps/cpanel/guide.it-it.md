@@ -5,6 +5,10 @@ excerpt: Come installare un VPS con l'applicazione cPanel preinstallata.
 section: Utilizzo avanzato
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
 **Ultimo aggiornamento: 02/06/2020**
 
 ## Obiettivo
@@ -15,8 +19,8 @@ cPanel è un pannello di controllo sviluppato per gli hosting Web. Grazie a un�
 
 ## Prerequisiti
 
-- Un [VPS della gamma attuale](https://www.ovhcloud.com/fr/vps/){.external} (offerte Value, Essential, Comfort o Elite).
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Un [VPS della gamma attuale](https://www.ovhcloud.com/it/vps/) (offerte Value, Essential, Comfort o Elite).
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Procedura
 
@@ -69,9 +73,9 @@ A questo punto dovresti essere in grado di connetterti a WHM e in SSH utilizzand
 
 ### Protezione del tuo servizio
 
-Ti consigliamo di adottare tutte le misure necessarie a proteggere il tuo WHM e il tuo VPS. Per effettuare questa operazione, ti consigliamo di consultare [qui](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/) le raccomandazioni di cPanel.
+Ti consigliamo di adottare tutte le misure necessarie a proteggere il tuo WHM e il tuo VPS. Per effettuare questa operazione, ti consigliamo di consultare [qui](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/){.external} le raccomandazioni di cPanel.
 
-Ti consigliamo inoltre di consultare la nostra guida per [proteggere un VPS](../conseils-securisation-vps/), utilizzare [le nostre soluzioni di backup](../) e configurare il [Firewall Network](../../dedicated/firewall-network/).
+Ti consigliamo inoltre di consultare la nostra guida per [proteggere un VPS](../consigli-sicurezza-vps/), utilizzare [le nostre soluzioni di backup](../) e configurare il [Firewall Network](../../dedicated/firewall-network/).
 
 ## Per saperne di più
 
