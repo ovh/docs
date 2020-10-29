@@ -48,7 +48,7 @@ Le format de disque virtuel est de type « Thin Provision » (Provisionnement dy
 
 Vous retrouverez plus d'explications sur les formats de disque dans [ce guide](../quel-format-de-disque-choisir/){.external-link}.
 
-Vous pourrez choisir, via la ligne `VM Storage Policy`, la politique de stockage par défaut si vous avez des datastores, ou une politique personalisée si vous avez des hôtes [vSAN](../vmware-vsan/){.external-link}, ou encore l'option [VM encryption](../vm-encrypt/){.external-link}.
+Vous pourrez choisir, via la ligne `VM Storage Policy`, la politique de stockage par défaut si vous avez des datastores, ou une politique personalisée si vous avez des hôtes [vSAN](https://docs.ovh.com/fr/private-cloud/vmware-vsan/), ou encore l'option [VM encryption](../vm-encrypt/).
 
 ![stockage vm](images/clonevm04.png){.thumbnail}
 

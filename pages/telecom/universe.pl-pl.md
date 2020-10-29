@@ -1,5 +1,5 @@
 ---
-title: Communication
+title: Telefonia
 slug: telecom
 excerpt: 'Wszystkie informacje o rozwiązaniach komunikacyjnych OVHcloud'
 color: blue
