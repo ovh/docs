@@ -2,7 +2,7 @@
 title: 'Configuring IPV6 on a VPS server'
 slug: configuring-ipv6
 excerpt: 'Learn how to configure IPv6 on your OVHcloud VPS server'
-section: 'Network Management'
+section: 'Network management'
 order: 1
 ---
 

@@ -2,7 +2,7 @@
 title: 'IPv6 auf einem VPS einrichten'
 slug: ipv6-konfigurieren
 excerpt: 'So konfigurieren Sie IPv6 auf Ihrem OVHcloud VPS'
-section: 'Netzwerk und IP'
+section: 'Netzwerk & IP'
 order: 1
 ---
 

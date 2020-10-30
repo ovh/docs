@@ -2,7 +2,7 @@
 title: Changing your root password on a VPS
 slug: root-password
 excerpt: Learn how to change the root password of a VPS
-section: Diagnostic and rescue mode
+section: Diagnostics and rescue mode
 ---
 
 **Last updated 15th June 2019**

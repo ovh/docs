@@ -1,5 +1,5 @@
 ---
 title: VPS
 slug: vps
-excerpt: Using your OVH VPS
+excerpt: How to use your OVHcloud VPS
 ---
