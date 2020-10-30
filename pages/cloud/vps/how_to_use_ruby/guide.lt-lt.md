@@ -3,6 +3,7 @@ title: How to Ruby
 excerpt: Bendrai apie Ruby paketą
 slug: how_to_ruby
 legacy_guide_number: g1370
+hidden: true
 ---
 
 

@@ -2,7 +2,7 @@
 title: Rescue-Modus für VPS
 slug: rescue
 excerpt: In dieser Anleitung erfahren Sie, wie Sie Ihren VPS in den Rescue-Modus versetzen
-section: Diagnose und Rescue-Modus
+section: Diagnose & Rescue Modus
 ---
 
 **Stand 18.04.2018**

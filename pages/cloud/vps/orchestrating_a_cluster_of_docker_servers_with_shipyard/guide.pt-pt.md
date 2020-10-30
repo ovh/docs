@@ -3,6 +3,7 @@ title: Administração de um cluster de servidores Docker através de Shipyard
 excerpt: ''
 slug: administracao_de_um_cluster_de_servidores_docker_atraves_de_shipyard
 legacy_guide_number: g1762
+hidden: true
 ---
 
 

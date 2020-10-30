@@ -2,6 +2,7 @@
 title: Orchestrer un cluster de Docker serveurs avec Shipyard
 slug: orchestrer_un_cluster_de_docker_serveurs_avec_shipyard
 section: Utilisation avancée
+hidden: true
 ---
 
 

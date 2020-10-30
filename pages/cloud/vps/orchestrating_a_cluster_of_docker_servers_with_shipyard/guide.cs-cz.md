@@ -3,6 +3,7 @@ title: Organizace clusteru Docker serverů s Shipyard
 excerpt: ''
 slug: organizace_clusteru_docker_serveru_s_shipyard
 legacy_guide_number: g1762
+hidden: true
 ---
 
 

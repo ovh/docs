@@ -4,6 +4,7 @@ description: In dieser Hilfe werden die verschiedenen Möglichkeiten für die Mi
 excerpt: In dieser Hilfe werden die verschiedenen Möglichkeiten für die Migration vom VPS 2014 auf das VPS 2016 Angebot vorgestellt.
 slug: migration_vom_vps_2014_auf_das_vps_2016_angebot
 legacy_guide_number: g1862
+hidden: true
 ---
 
 

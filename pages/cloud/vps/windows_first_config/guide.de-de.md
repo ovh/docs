@@ -1,7 +1,8 @@
 ---
 title: Erstkonfiguration von Windows Server (Firewall)
 slug: windows-first-config
-excerpt: So aktivieren Sie eine deaktivierte Remotedesktop-Verbindung via KVM.
+excerpt: So aktivieren Sie eine deaktivierte Remotedesktop-Verbindung via KVM
+section: 'Erste Schritte'
 ---
 
 

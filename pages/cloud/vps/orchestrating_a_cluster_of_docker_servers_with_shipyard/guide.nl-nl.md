@@ -3,6 +3,7 @@ title: Het beheren van een cluster Docker servers met Shipyard
 excerpt: ''
 slug: het_beheren_van_een_cluster_docker_servers_met_shipyard
 legacy_guide_number: g1762
+hidden: true
 ---
 
 
