@@ -15,10 +15,10 @@ Un bloc IP vous permet d'associer des équipements de votre réseau interne à u
 
 ## Prérequis
 
-- Disposer d’un [accès internet xDSL ou fibre OVH](https://www.ovhtelecom.fr/offre-internet/){.external}. 
-- Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/#/){.external} dans la partie `Téléphonie`{.action}.
-- Avoir la possibilité de se connecter à l'interface de votre box OVH.
-- Disposer d'une box OVH compatible avec la configuration d'un bloc IP.
+- Disposer d’un [accès internet xDSL ou fibre OVHcloud](https://www.ovhtelecom.fr/offre-internet/){.external}. 
+- Être connecté à l'[espace client OVHcloud](https://www.ovhtelecom.fr/manager/#/){.external} dans la partie `Téléphonie`{.action}.
+- Avoir la possibilité de se connecter à l'interface de votre box OVHcloud.
+- Disposer d'une box OVHcloud compatible avec la configuration d'un bloc IP.
 
 > [!primary]
 >
@@ -31,7 +31,7 @@ Un bloc IP vous permet d'associer des équipements de votre réseau interne à u
 
 ### Étape 1 : retrouver les IP associées à votre accès
 
-Connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/#/){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action} dans la barre de services à gauche, puis sélectionnez le pack et l’accès à Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon accès`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovhtelecom.fr/manager/#/){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action} dans la barre de services à gauche, puis sélectionnez le pack et l’accès à Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon accès`{.action}.
 
 ![blocip](images/blocip-step1.png){.thumbnail}
 
@@ -62,10 +62,10 @@ Vous devez à présent avoir récupéré l'adresse IP initiale (mentionnée à c
 
 > [!primary]
 >
-> Si vous possédez une box Technicolor ou Thomson (excepté le modèle Technicolor TG799vac) et souhaitez utiliser les API d'OVH (utilisateurs expert) pour configurer le bloc IP : poursuivez directement vers l'étape 3.1 « [Configuration sur une box Technicolor ou Thomson](./#31-configuration-sur-une-box-technicolor-ou-thomson){.external} ».
+> Si vous possédez une box Technicolor ou Thomson (excepté le modèle Technicolor TG799vac) et souhaitez utiliser les API d'OVHcloud (utilisateurs expert) pour configurer le bloc IP : poursuivez directement vers l'étape 3.1 « [Configuration sur une box Technicolor ou Thomson](./#31-configuration-sur-une-box-technicolor-ou-thomson){.external} ».
 >
 
-Afin que la configuration du bloc IP puisse s'effectuer en local sur votre box OVH, il est impératif de désactiver la prise en main à distance de celle-ci. Pour cela, toujours depuis votre [espace client OVH](https://www.ovhtelecom.fr/manager/#/){.external} sur l’accès à Internet concerné, positionnez-vous sur l'onglet `Mon modem`{.action}.
+Afin que la configuration du bloc IP puisse s'effectuer en local sur votre box OVHcloud, il est impératif de désactiver la prise en main à distance de celle-ci. Pour cela, toujours depuis votre [espace client OVHcloud](https://www.ovhtelecom.fr/manager/#/){.external} sur l’accès à Internet concerné, positionnez-vous sur l'onglet `Mon modem`{.action}.
 
 Sur la page, dans la partie « Configuration générale », assurez-vous de décocher la case à côté de `Configuration à distance activée`{.action} et confirmez le changement en cliquant sur `Ok`{.action}. Patientez alors le temps de la désactivation. 
 
@@ -121,7 +121,7 @@ Si vous utilisez une version antérieure à Windows 10, vous devriez pouvoir ret
 
 ![blocip](images/blocip-step5.png){.thumbnail}
 
-Pour réaliser la connexion Telnet, ouvrez maintenant le « Terminal » (macOS et Linux) ou l'invite de commande (Windows). Utilisez ensuite la commande suivante pour vous connecter à votre box OVH (si vous avez modifié l'adresse de passerelle vers votre box, remplacez l'adresse spécifiée par celle que vous avez définie).
+Pour réaliser la connexion Telnet, ouvrez maintenant le « Terminal » (macOS et Linux) ou l'invite de commande (Windows). Utilisez ensuite la commande suivante pour vous connecter à votre box OVHcloud (si vous avez modifié l'adresse de passerelle vers votre box, remplacez l'adresse spécifiée par celle que vous avez définie).
 
 ```
 telnet 192.168.1.254
