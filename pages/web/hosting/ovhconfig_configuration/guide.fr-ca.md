@@ -2,7 +2,7 @@
 title: 'Configurer le fichier .ovhconfig de son hébergement web'
 slug: configurer-fichier-ovhconfig
 excerpt: 'Découvrez le fichier .ovhconfig et apprenez à le modifier'
-section: 'Configuration de l''hébergement'
+section: "Configuration de l'hébergement"
 order: 4
 ---
 

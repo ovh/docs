@@ -20,6 +20,7 @@ Un bloc IP vous permet d'associer des équipements de votre réseau interne à u
 - Avoir la possibilité de se connecter à l'interface de votre box OVHcloud.
 - Disposer d'une box OVHcloud compatible avec la configuration d'un bloc IP.
 
+
 > [!primary]
 >
 > La configuration d'un bloc IP n'est pas possible sur le modèle de box suivant : Technicolor TG799vac. 

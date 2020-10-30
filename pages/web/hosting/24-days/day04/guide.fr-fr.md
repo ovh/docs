@@ -2,7 +2,7 @@
 title: 'Créer le blog d’entreprise'
 slug: day04
 excerpt: 'Ouvrir un blog pour communiquer'
-section: 'Cas d''usage'
+section: "Cas d'usage"
 hidden: true
 ---
 

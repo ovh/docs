@@ -1,7 +1,7 @@
 ---
-title: 'Développer votre projet pas à pas avec l''hébergement web OVH'
+title: "Développer votre projet pas à pas avec l'hébergement web OVH"
 slug: 24-days
-section: 'Cas d''usage'
+section: "Cas d'usage"
 ---
 
 > [!warning]

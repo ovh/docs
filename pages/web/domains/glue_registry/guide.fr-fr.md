@@ -1,5 +1,5 @@
 ---
-title: 'Personnaliser les serveurs DNS d''un nom de domaine'
+title: "Personnaliser les serveurs DNS d'un nom de domaine"
 slug: glue-registry
 excerpt: 'Apprenez à personnaliser les serveurs DNS de votre nom de domaine OVH'
 section: 'DNS et zone DNS'

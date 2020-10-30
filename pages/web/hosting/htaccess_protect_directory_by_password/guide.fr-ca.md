@@ -2,7 +2,7 @@
 title: 'Comment proteger l’accès a un répertoire par une authentification ?'
 slug: mutualise-htaccess-comment-proteger-lacces-a-un-repertoire-par-une-authentification
 legacy_guide_number: 1968
-excerpt: 'Retrouvez ici les manipulations necessaires pour proteger l''acces a un repertoire de votre hebergement via une authentification.'
+excerpt: "Retrouvez ici les manipulations necessaires pour proteger l'acces a un repertoire de votre hebergement via une authentification."
 section: 'Réécriture et authentification'
 ---
 

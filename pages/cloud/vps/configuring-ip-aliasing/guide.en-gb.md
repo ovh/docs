@@ -2,7 +2,7 @@
 title: 'Configuring IP aliasing'
 slug: network-ipaliasing-vps
 excerpt: 'Find out how to add failover IP addresses to your VPS configuration'
-section: 'Network Management'
+section: 'Network management'
 ---
 
 **Last updated 8th April 2020**

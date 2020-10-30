@@ -1,6 +1,6 @@
 ---
 title: 'Corriger la clé d’activation Windows Server'
-excerpt: 'Découvrez comment modifier la clé d''activation de votre Windows Server'
+excerpt: "Découvrez comment modifier la clé d'activation de votre Windows Server"
 slug: windows-key
 section: Divers
 ---

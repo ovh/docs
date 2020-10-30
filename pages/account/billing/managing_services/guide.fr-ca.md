@@ -1,7 +1,7 @@
 ---
 title: 'Gérer mes services OVHcloud'
 slug: gerer-ses-services-ovh
-excerpt: 'Apprenez à visualiser et administrer vos solutions depuis l''interface « Gérer mes services » dans votre espace client'
+excerpt: "Apprenez à visualiser et administrer vos solutions depuis l'interface « Gérer mes services » dans votre espace client"
 section: 'Gérer mes services et leur renouvellement'
 hidden: true
 ---

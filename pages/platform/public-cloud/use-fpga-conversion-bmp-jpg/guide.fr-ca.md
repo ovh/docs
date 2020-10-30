@@ -1,5 +1,5 @@
 ---
-title: 'Utiliser l''accélérateur FPGA pour convertir une image BMP en JPEG (Bêta)'
+title: "Utiliser l'accélérateur FPGA pour convertir une image BMP en JPEG (Bêta)"
 slug: utiliser-accelerateur-fpga-pour-conversion-jpeg
 excerpt: 'Découvrez comment utiliser une carte FPGA pour convertir des images BMP au format JPEG'
 section: Tutoriels

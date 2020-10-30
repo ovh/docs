@@ -2,7 +2,7 @@
 title: Activating Rescue Mode on VPS
 slug: rescue
 excerpt: This guide will show you how to reboot your VPS in rescue mode
-section: Diagnostic and rescue mode
+section: Diagnostics and rescue mode
 ---
 
 **Last updated 15th June 2019**

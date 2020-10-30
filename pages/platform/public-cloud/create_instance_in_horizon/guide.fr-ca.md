@@ -1,7 +1,7 @@
 ---
-title: 'Créer une instance depuis l''interface Horizon'
+title: "Créer une instance depuis l'interface Horizon"
 slug: creer-une-instance-dans-horizon
-excerpt: 'Apprenez à créer une instance depuis l''interface Horizon'
+excerpt: "Apprenez à créer une instance depuis l'interface Horizon"
 section: Gestion depuis Horizon
 order: 5
 ---

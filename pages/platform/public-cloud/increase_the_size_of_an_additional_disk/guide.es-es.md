@@ -1,6 +1,6 @@
 ---
 title: 'Aumentar el tamaño de un disco adicional'
-excerpt: 'Esta guía explica cómo aumentar el tamaño de un disco adicional y cómo ampliar la partición principal.'''
+excerpt: "Esta guía explica cómo aumentar el tamaño de un disco adicional y cómo ampliar la partición principal."
 slug: aumentar_el_tamano_de_un_disco_adicional
 legacy_guide_number: g1865
 section: Almacenamiento

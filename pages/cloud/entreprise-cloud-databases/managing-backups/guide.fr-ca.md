@@ -1,7 +1,7 @@
 ---
 title: 'Sauvegardes et restaurations'
 slug: gerer-sauvegardes
-excerpt: 'Gérez l''ensemble de vos sauvegardes et restaurations'
+excerpt: "Gérez l'ensemble de vos sauvegardes et restaurations"
 section: 'Démarrer avec votre cluster PostgreSQL'
 ---
 
