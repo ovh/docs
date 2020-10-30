@@ -4,6 +4,7 @@ excerpt: 'Hosting www: Jak przenieść bazę danych SQL 4 na MySQL 5.5'
 id: '1957'
 slug: hosting_www_jak_przeniesc_baze_danych_sql_4_na_mysql_55
 section: Bazy danych
+hidden: true
 ---
 
 
