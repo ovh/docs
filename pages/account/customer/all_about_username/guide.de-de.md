@@ -118,11 +118,11 @@ Geben Sie dann den Code im Bereich „Validierungscode“ ein und bestätigen Si
 
 ### Änderung des Kontotyps
 
-Klicken Sie auf den `Typ des Accounts`, wenn Sie Ihr Profil bearbeiten. Mit einem Drop-down-Menü können Sie den Account-Typ Ihrer Situation festlegen.
+Klicken Sie ins Feld `Typ des Accounts`, wenn Sie Ihr Profil bearbeiten. Mit dem Drop-down-Menü können Sie den Account-Typ Ihrer Situation anpassen.
 
 ![identifiant client](images/nichandle09.png){.thumbnail}
 
-Wenn Sie Ihre Angaben eingegeben haben, klicken Sie auf den Button `Bestätigen` {.action} .
+Wenn Sie Ihre Änderungen abgeschlossen haben, klicken Sie auf den Button `Bestätigen`{.action} .
 
 ### Rechte für Ihre personenbezogenen Daten ausüben
 
