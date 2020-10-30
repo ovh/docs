@@ -4,10 +4,9 @@ slug: orchestrating_a_cluster_of_docker_servers_with_shipyard
 section: Advanced usage
 ---
 
-
 > [!warning]
 >
-> **Shipyard Project** is now retired, and is no longer maintained. Read the official announcement at https://github.com/shipyard/shipyard.
+> **Shipyard Project** is now retired, and is no longer maintained. Read the official announcement at <https://github.com/shipyard/shipyard>.
 > 
 
 ## 

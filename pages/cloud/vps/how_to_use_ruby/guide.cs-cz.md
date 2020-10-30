@@ -3,6 +3,7 @@ title: Jak použít Ruby
 excerpt: Obecné informace o distribuci Ruby
 slug: jak_pouzit_ruby
 legacy_guide_number: g1370
+hidden: true
 ---
 
 

@@ -3,6 +3,7 @@ title: Docker klasterio valdymas su Shipyard
 excerpt: ''
 slug: docker_klasterio_valdymas_su_shipyard
 legacy_guide_number: g1762
+hidden: true
 ---
 
 

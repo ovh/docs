@@ -3,6 +3,7 @@ title: Migración de un VPS 2014 a la gama 2016
 excerpt: Esta guía explica las distintas formas de migración y ofrece información imprescindible para realizar con éxito esta operación.
 slug: migracion_de_un_vps_2014_a_la_gama_2016
 section: Miscelánea
+hidden: true
 ---
 
 

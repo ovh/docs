@@ -3,6 +3,7 @@ title: Gestire un cluster di server Docker con Shipyard
 excerpt: ''
 slug: gestire_un_cluster_di_server_docker_con_shipyard
 legacy_guide_number: g1762
+hidden: true
 ---
 
 

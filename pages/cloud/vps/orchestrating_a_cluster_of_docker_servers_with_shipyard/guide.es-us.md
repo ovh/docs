@@ -4,6 +4,7 @@ excerpt: ''
 slug: orquestar_un_cluster_de_servidores_docker_con_shipyard
 legacy_guide_number: g1762
 section: Uso avanzado
+hidden: true
 ---
 
 
