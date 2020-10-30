@@ -1,24 +1,25 @@
 ---
 title: 'Gérer et configurer un bloc IP /29'
 slug: comment-commander-et-gerer-un-bloc-ip-29
-excerpt: 'Apprenez à administrer un bloc IP /29 et à le paramétrer sur votre box OVH'
+excerpt: 'Apprenez à administrer un bloc IP /29 et à le paramétrer sur votre box OVHcloud'
 section: 'Configurations techniques avancées'
 ---
 
-**Dernière mise à jour le 30/01/2019**
+**Dernière mise à jour le 30/10/2020**
 
 ## Objectif
 
 Un bloc IP vous permet d'associer des équipements de votre réseau interne à une adresse IP publique. Celui-ci comprend huit adresses IP au total (soit une /29) dont cinq que vous pourrez associer à vos machines et services.
 
-**Apprenez à gérer un bloc IP /29 et à le configurer sur votre box OVH.**
+**Apprenez à gérer un bloc IP /29 et à le configurer sur votre box OVHcloud.**
 
 ## Prérequis
 
-- Disposer d’un [accès internet xDSL ou fibre OVH](https://www.ovhtelecom.fr/offre-internet/){.external}. 
-- Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/#/){.external} dans la partie `Accès Internet`{.action}.
-- Avoir la possibilité de se connecter à l'interface de votre box OVH.
-- Disposer d'une box OVH compatible avec la configuration d'un bloc IP.
+- Disposer d’un [accès internet xDSL ou fibre OVHcloud](https://www.ovhtelecom.fr/offre-internet/){.external}. 
+- Être connecté à l'[espace client OVHcloud](https://www.ovhtelecom.fr/manager/#/){.external} dans la partie `Telecom`{.action}.
+- Avoir la possibilité de se connecter à l'interface de votre box OVHcloud.
+- Disposer d'une box OVHcloud compatible avec la configuration d'un bloc IP.
+
 
 > [!primary]
 >
@@ -31,9 +32,9 @@ Un bloc IP vous permet d'associer des équipements de votre réseau interne à u
 
 ### Étape 1 : retrouver les IP associées à votre accès
 
-Connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/#/){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action} dans la barre de services à gauche, puis sélectionnez le pack et l’accès à Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon accès`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovhtelecom.fr/manager/#/){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action} dans la barre de services à gauche, puis sélectionnez le pack et l’accès à Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon accès`{.action}.
 
-![blocip](images/blocip-step1.png){.thumbnail}
+![blocip](images/blocip-step01-edit.png){.thumbnail}
 
 Sur la page, dans le cadre « Caractéristiques », reportez-vous aux éléments de la partie `IPs`. Vous retrouverez dans cette dernière les adresses IP associées à votre accès à Internet. Concernant les adresses IPv4, deux lignes peuvent apparaître :
 
@@ -62,18 +63,18 @@ Vous devez à présent avoir récupéré l'adresse IP initiale (mentionnée à c
 
 > [!primary]
 >
-> Si vous possédez une box Technicolor ou Thomson (excepté le modèle Technicolor TG799vac) et souhaitez utiliser les API d'OVH (utilisateurs expert) pour configurer le bloc IP : poursuivez directement vers l'étape 3.1 « [Configuration sur une box Technicolor ou Thomson](./#31-configuration-sur-une-box-technicolor-ou-thomson){.external} ».
+> Si vous possédez une box Technicolor ou Thomson (excepté le modèle Technicolor TG799vac) et souhaitez utiliser les API d'OVHcloud (utilisateurs expert) pour configurer le bloc IP : poursuivez directement vers l'étape 3.1 « [Configuration sur une box Technicolor ou Thomson](./#31-configuration-sur-une-box-technicolor-ou-thomson){.external} ».
 >
 
-Afin que la configuration du bloc IP puisse s'effectuer en local sur votre box OVH, il est impératif de désactiver la prise en main à distance de celle-ci. Pour cela, toujours depuis votre [espace client OVH](https://www.ovhtelecom.fr/manager/#/){.external} sur l’accès à Internet concerné, positionnez-vous sur l'onglet `Mon modem`{.action}.
+Afin que la configuration du bloc IP puisse s'effectuer en local sur votre box OVHcloud, il est impératif de désactiver la prise en main à distance de celle-ci. Pour cela, toujours depuis votre [espace client OVHcloud](https://www.ovhtelecom.fr/manager/#/){.external} sur l’accès à Internet concerné, positionnez-vous sur l'onglet `Mon modem`{.action}.
 
 Sur la page, dans la partie « Configuration générale », assurez-vous de décocher la case à côté de `Configuration à distance activée`{.action} et confirmez le changement en cliquant sur `Ok`{.action}. Patientez alors le temps de la désactivation. 
 
-![blocip](images/blocip-step4.png){.thumbnail}
+![blocip](images/blocip-step04-edit.png){.thumbnail}
 
 ### Étape 3 : configurer le bloc IP sur votre box
 
-Maintenant que vous êtes en possession de votre bloc IP, vous pouvez le configurer dans votre box OVH. Poursuivez selon le modèle que vous possédez :
+Maintenant que vous êtes en possession de votre bloc IP, vous pouvez le configurer dans votre box OVHcloud. Poursuivez selon le modèle que vous possédez :
 
 - [3.1 Configuration sur une box Technicolor ou Thomson](./#31-configuration-sur-une-box-technicolor-ou-thomson){.external} (**excepté pour le modèle Technicolor TG799vac**).
 - [3.2 Configuration sur une box Zyxel](./#32-configuration-sur-une-box-zyxel_1){.external}.
@@ -89,11 +90,11 @@ Maintenant que vous êtes en possession de votre bloc IP, vous pouvez le configu
 
 La configuration d'un bloc IP sur une box Technicolor ou Thomson est possible de deux manières.
 
-##### 3.1.1 Via les API OVH
+##### 3.1.1 Via les API OVHcloud
 
 Cette méthode s'adresse aux utilisateurs expert uniquement. Nous ne serons pas en mesure de vous fournir une assistance.
 
-Rendez-vous sur le lien <https://api.ovh.com/console/> puis connectez-vous avec votre identifiant client OVH. Dès lors, utilisez les deux API ci-dessous afin de configurer le bloc IP /29.
+Rendez-vous sur le lien <https://api.ovh.com/console/> puis connectez-vous avec votre identifiant client OVHcloud. Dès lors, utilisez les deux API ci-dessous afin de configurer le bloc IP /29.
 
 > [!api]
 >
@@ -107,7 +108,7 @@ Permet de récupérer l'état d'activation du bloc IP /29.
 > @api {POST} /xdsl/{serviceName}/modem/blocIp
 > 
 
-Permet d'activer ou de désactiver la configuration du bloc IP /29 sur votre box OVH Technicolor ou Thomson compatible.
+Permet d'activer ou de désactiver la configuration du bloc IP /29 sur votre box OVHcloud Technicolor ou Thomson compatible.
 
 Une fois configurée, poursuivez vers l'étape 4 « [Configurer les adresses IP sur vos équipements](./#etape-4-configurer-les-adresses-ip-sur-vos-equipements_1){.external} ».
 
@@ -121,7 +122,7 @@ Si vous utilisez une version antérieure à Windows 10, vous devriez pouvoir ret
 
 ![blocip](images/blocip-step5.png){.thumbnail}
 
-Pour réaliser la connexion Telnet, ouvrez maintenant le « Terminal » (macOS et Linux) ou l'invite de commande (Windows). Utilisez ensuite la commande suivante pour vous connecter à votre box OVH (si vous avez modifié l'adresse de passerelle vers votre box, remplacez l'adresse spécifiée par celle que vous avez définie).
+Pour réaliser la connexion Telnet, ouvrez maintenant le « Terminal » (macOS et Linux) ou l'invite de commande (Windows). Utilisez ensuite la commande suivante pour vous connecter à votre box OVHcloud (si vous avez modifié l'adresse de passerelle vers votre box, remplacez l'adresse spécifiée par celle que vous avez définie).
 
 ```
 telnet 192.168.1.254
@@ -237,7 +238,7 @@ Dans la fenêtre qui apparaît, descendez jusqu'à la partie « Routing feature
 
 ### Étape 4 : configurer les adresses IP sur vos équipements
 
-Votre bloc IP /29 étant à présent paramétré sur votre box OVH, vous pouvez associer manuellement vos cinq adresses IP à vos équipements. À noter que le DHCP de votre box continue de fonctionner normalement, attribuant une adresse IP locale aux équipements reliés.
+Votre bloc IP /29 étant à présent paramétré sur votre box OVHcloud, vous pouvez associer manuellement vos cinq adresses IP à vos équipements. À noter que le DHCP de votre box continue de fonctionner normalement, attribuant une adresse IP locale aux équipements reliés.
 
 Pour réaliser une configuration sur l'un de vos équipements, vous aurez besoin des trois informations suivantes :
 
