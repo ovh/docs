@@ -33,7 +33,7 @@ Un bloc IP vous permet d'associer des équipements de votre réseau interne à u
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovhtelecom.fr/manager/#/){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action} dans la barre de services à gauche, puis sélectionnez le pack et l’accès à Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon accès`{.action}.
 
-![blocip](images/blocip-step1-edit.png){.thumbnail}
+![blocip](images/blocip-step01-edit.png){.thumbnail}
 
 Sur la page, dans le cadre « Caractéristiques », reportez-vous aux éléments de la partie `IPs`. Vous retrouverez dans cette dernière les adresses IP associées à votre accès à Internet. Concernant les adresses IPv4, deux lignes peuvent apparaître :
 
@@ -69,7 +69,7 @@ Afin que la configuration du bloc IP puisse s'effectuer en local sur votre box O
 
 Sur la page, dans la partie « Configuration générale », assurez-vous de décocher la case à côté de `Configuration à distance activée`{.action} et confirmez le changement en cliquant sur `Ok`{.action}. Patientez alors le temps de la désactivation. 
 
-![blocip](images/blocip-step4-edit.png){.thumbnail}
+![blocip](images/blocip-step04-edit.png){.thumbnail}
 
 ### Étape 3 : configurer le bloc IP sur votre box
 
