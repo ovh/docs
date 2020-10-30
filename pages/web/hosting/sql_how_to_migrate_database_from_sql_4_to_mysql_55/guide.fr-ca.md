@@ -4,6 +4,7 @@ slug: mutualise-comment-migrer-votre-base-de-donnees-de-sql-4-vers-mysql-55
 legacy_guide_number: 1957
 excerpt: Ce guide va vous permettre de migrer votre base de donnees de MySQL 4 vers MySQL 5.6
 section: Bases de données
+hidden: true
 ---
 
 **Dernière mise à jour le 05/05/2020**
