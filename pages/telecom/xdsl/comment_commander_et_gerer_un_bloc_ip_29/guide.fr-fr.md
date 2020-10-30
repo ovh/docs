@@ -16,7 +16,7 @@ Un bloc IP vous permet d'associer des équipements de votre réseau interne à u
 ## Prérequis
 
 - Disposer d’un [accès internet xDSL ou fibre OVH](https://www.ovhtelecom.fr/offre-internet/){.external}. 
-- Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/#/){.external} dans la partie `Téléphonie`{.action}.
+- Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/#/){.external} dans la partie `Accès Internet`{.action}.
 - Avoir la possibilité de se connecter à l'interface de votre box OVH.
 - Disposer d'une box OVH compatible avec la configuration d'un bloc IP.
 
