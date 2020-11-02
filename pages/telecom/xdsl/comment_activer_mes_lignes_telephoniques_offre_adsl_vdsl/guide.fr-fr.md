@@ -65,7 +65,7 @@ Quelle différence y a-t-il à cela?
 
 ##### Sans Téléphone {#sans-téléphone}
 
-Une ligne sans téléphone est une ligne qui sera techniquement configurée directement dans le modem sans action de votre part. Il vous suffira de brancher un simple téléphone analogique sur le modem. Plus de détails i[ci](#Commentactivermeslignestéléphoniques?(OffreADSL/VDSL)-SansTelephone).
+Une ligne sans téléphone est une ligne qui sera techniquement configurée directement dans le modem sans action de votre part. Il vous suffira de brancher un simple téléphone analogique sur le modem. Plus de détails [ici](#comment-utiliser-les-lignes-activées-sans-téléphone).
 
 Ce type d'activation nécessite que vous possédiez un téléphone analogique personnel.
 
