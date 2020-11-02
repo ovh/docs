@@ -37,11 +37,23 @@ Dans ce guide nous avons réalisé les opérations sur les 3 logiciels de messag
 
 Les instructions qui suivent sont décomposées en deux parties : 
 
-- **L'exportation**. Cela vous permet d'extraire une sauvegarde complète de votre adresse e-mail pour la basculer vers un autre poste ou logiciel. Si vous devez déplacer des éléments d'une adresse e-mail vers une autre adresse qui est configurée sur le même logiciel de messagerie, il est conseillé de copier/coller ou de glisser/déposer l'une vers l'autre.
+- **L'exportation**. Cela vous permet d'extraire une sauvegarde complète de votre adresse e-mail pour la basculer vers un autre poste, logiciel de messagerie, ou import vers un autre compte . Si vous devez déplacer des éléments d'une adresse e-mail vers une autre adresse qui est configurée sur le même logiciel de messagerie, il est possible de copier/coller ou de glisser/déposer l'une vers l'autre. Il est néanmoins recommandé d'utiliser le système d'exportation du logiciel que vous utilisez.
 
 - **L'importation**. Cela vous permet d'appliquer une sauvegarde que vous avez réalisée sur votre nouveau poste ou nouveau logiciel. Vérifiez que le fichier de sauvegarde à importer est compatible avec le logiciel de messagerie que vous utilisez.
 
 ### Outlook 
+
+Si vous possédez un compte e-mail [Exchange OVHcloud](https://www.ovh.com/fr/emails/hosted-exchange/), il est possible de l'exporter directement au format PST depuis l'espace client. 
+
+Connectez vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} puis dirigez-vous dans la section `Webcloud`{.action}. Sélectionnez `Microsoft`{.action} dans la colonne de gauche, puis `Exchange`{.action}. Cliquez sur le nom du service Hosted Exchange concerné.
+
+Dans l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite du compte e-mail à exporter, puis sur `Exporter au format PST`{.action}
+
+![emails](images/manager-export-pst01.png){.thumbnail}
+
+Il faudra ensuite patienter le temps de l'export qui peut prendre quelque minutes à plusieurs heures selon la taille de l'export. À la fin de celui-ci, il vous suffira de retourner sur le bouton `Exporter au format PST`{.action} pour récupérer un lien pour télécharger le fichier
+
+![emails](images/manager-export-pst02.png){.thumbnail}
 
 #### Exporter depuis Windows
 
@@ -154,7 +166,7 @@ Sélectionnez votre fichier de sauvegarde au format « .mbox », puis cliquez su
 
 ![emails](images/mail-import-mac02.png){.thumbnail}
 
-Depuis la colonne de gauche, les e-mails importés se trouvent dans un nouveau compte e-mail nommé « Importation ». Vous pouvez faire glisser les dossiers et les messages à partir du compte « Importation » vers vos comptes e-mail déjà configurés. Une fois vos transferts terminés, vous pourrez supprimer le compte « Importation ».
+Depuis la colonne de gauche, les e-mails importés se trouvent dans un nouveau compte e-mail nommé « Importation ». Vous pouvez faire glisser les dossiers et les messages à partir du compte « Importation » vers vos comptes e-mail déjà configurés. Une fois vos transferts terminés, vous pourrez supprimer le compte « Importation ».
 
 ### Thunderbird 
 
