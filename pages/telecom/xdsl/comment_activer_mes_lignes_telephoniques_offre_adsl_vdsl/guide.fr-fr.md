@@ -119,16 +119,16 @@ Si vous avez activé une ligne sans téléphone, vous devez posséder un simple 
 
 Pour que cette ligne soit utilisable, **les conditions suivantes doivent être remplies**:
 
-![](images/2015-03-18-143620_120x314_scrot.png){.thumbnail}
-![](images/Activation06-edit.png){.thumbnail}
-![](images/untitled.jpg){.thumbnail}
-
 Le voyant **Voice** du modem doit être allumé pour les modems technicolor (TG788 et TG799). Le voyant **Phone** du modem doit être allumé sur les modems Zyxel.
 Si ce n'est pas le cas, vérifiez bien que l'activation de ligne est lancée sur le manager et patientez une heure.
 
 Votre téléphone analogique doit être branché sur le port **phone 1** du modem (ou le port **phone 2** si c'est la deuxième ligne sans téléphone).
 
 Il y a une inversion sur les modems TG788 : le port phone2 est à gauche alors que le port phone1 est à droite.
+
+![](images/2015-03-18-143620_120x314_scrot.png){.thumbnail}
+![](images/Activation06-edit.png){.thumbnail}
+![](images/untitled.jpg){.thumbnail}
 
 ## Aller plus loin
 
