@@ -132,4 +132,5 @@ Il y a une inversion sur les modems TG788 : le port phone2 est à gauche alors q
 ## Aller plus loin
 
 Consultez [nos guides dédiés à la configuration de vos lignes](https://docs.ovh.com/fr/voip/).
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
