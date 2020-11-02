@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Stap 5 - Inloggen op virtuele desktops
 slug: inloggen-desktop
 excerpt: Zo logt u in op virtuele desktops

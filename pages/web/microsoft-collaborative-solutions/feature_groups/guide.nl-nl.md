@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2013: het gebruik van groepen (mailing lists)'
 excerpt: ''
 slug: exchange_2013_het_gebruik_van_groepen_mailing_lists

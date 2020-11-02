@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Step 2 - Creating a virtual desktop pool template
 slug: create-pool
 excerpt: Find out how to create pool templates in VMware Horizon 7.1

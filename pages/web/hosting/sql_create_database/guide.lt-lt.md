@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Creating a database in your Web Hosting plan'
 slug: creating-database
 excerpt: 'Find out how to create a database in your OVH Web Hosting plan'

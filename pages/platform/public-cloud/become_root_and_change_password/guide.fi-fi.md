@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Pääkäyttöoikeudet ja salasanan asetus
 excerpt: Pääkäyttöoikeudet ja salasanan asetus
 slug: paakayttooikeudet_ja_salasanan_asetus

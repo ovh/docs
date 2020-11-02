@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Začínáme s CloudDB'
 slug: zaciname-s-clouddb
 excerpt: 'Zjistěte, jak používat službu CloudDB'

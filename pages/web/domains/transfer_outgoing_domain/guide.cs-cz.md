@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Převod OVH domény k jinému registrátorovi'
 slug: prevod-genericke-domeny-registratorovi
 excerpt: 'Seznamte se s postupem pro převod OVH domény k jinému doménovému registrátorovi'

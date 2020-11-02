@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: NAS - často kladené dotazy
 slug: faq-nas
 excerpt: "Nevíte si rady se svým NAS úložištěm? Podívejte se na nejčastěji kladené dotazy týkající se této služby."

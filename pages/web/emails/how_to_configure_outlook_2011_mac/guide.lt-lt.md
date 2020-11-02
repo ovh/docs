@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: Mac Outlook 2011 konfigūravimas'
 excerpt: Outlook 2011 versijos konfigūravimas Mac aplinkoje
 slug: svetainiu_talpinimas_mac_outlook_2011_konfiguravimas

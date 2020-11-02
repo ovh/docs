@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Begrip van de foutmelding "Controller VM verwijderd"'
 slug: error-controller-nsx
 excerpt: 'Leer wat de foutmelding "Controller VM verwijderd" precies betekent'

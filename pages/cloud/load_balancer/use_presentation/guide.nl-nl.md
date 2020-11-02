@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Introductie tot de OVH Load Balancer
 slug: lb-introductie
 excerpt: Ontdek de nieuwe OVH Load Balancer

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Obnovení služeb prostřednictvím OVH API'
 slug: obnoveni-sluzeb-api
 excerpt: 'Zjistěte, jak provést manuální obnovení služeb pomocí OVH API'

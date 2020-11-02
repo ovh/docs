@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellit: Kotisivujen suorituskyvyn optimointi'
 excerpt: Ohje kotisivujen suorituskyvyn optimointiin
 id: '1396'

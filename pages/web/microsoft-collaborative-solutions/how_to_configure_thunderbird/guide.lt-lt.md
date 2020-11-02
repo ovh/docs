@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2013/2016: Thunderbird konfigūravimas'
 excerpt: ''
 slug: exchange_20132016_thunderbird_konfiguravimas

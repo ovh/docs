@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Importing a backup into a Web Hosting plan database'
 slug: svetainiu_talpinimas_mysql_duomenu_bazes_importavimas
 excerpt: 'Find out how to import a backup into a database on your OVH Web Hosting plan'

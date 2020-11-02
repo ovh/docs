@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'WordPress-sivuston tietomurto: neuvoja ja esimerkkejä'
 excerpt: ''
 id: '1874'

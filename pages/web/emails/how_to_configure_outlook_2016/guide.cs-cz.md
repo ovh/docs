@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Konfigurace e-mailových účtů v aplikaci Outlook 2016 pro Windows'
 slug: konfigurace-outlook-2016
 excerpt: 'Zjistěte, jak nakonfigurovat e-mailovou adresu služby MX Plan v aplikaci Outlook 2016 pro operační systém Windows'

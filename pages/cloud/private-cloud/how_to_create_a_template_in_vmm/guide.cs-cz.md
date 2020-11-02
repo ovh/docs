@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Jak vytvořit šablonu ve VMM
 excerpt: Tato příručka se zabývá vytvořením šablony ve VMM z disku.
 slug: jak_vytvorit_sablonu_ve_vmm

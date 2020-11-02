@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Delegating permissions on an Exchange account'
 slug: exchange_2013_full_access_teisiu_suteikimas_paskyrai
 excerpt: 'Find out how to delegate permissions on your Exchange account to another user'

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Atvaizdų kūrimas, paleidimas ir trynimas Horizon sąsajoje'
 excerpt: 'Atvaizdų kūrimas, paleidimas ir trynimas Horizon sąsajoje'
 slug: atvaizdu_kurimas_paleidimas_ir_trynimas_horizon_sasajoje

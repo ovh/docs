@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Stap 2 - Creatie van een sjabloon voor een virtuele desktop-pool
 slug: creatie-pool
 excerpt: Ontdek hoe u pool-sjablonen kunt maken in VMware Horizon 7.1

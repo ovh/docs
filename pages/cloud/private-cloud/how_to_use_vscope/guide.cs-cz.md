@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Jak používat vScope
 excerpt: ''
 slug: jak_pouzivat_vscope

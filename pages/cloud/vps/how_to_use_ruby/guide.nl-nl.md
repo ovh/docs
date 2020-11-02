@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Hoe Ruby te gebruiken
 excerpt: Algemene informatie over de Ruby distributie
 slug: hoe_ruby_te_gebruiken

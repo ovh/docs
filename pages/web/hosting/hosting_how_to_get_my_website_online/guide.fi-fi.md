@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Verkkosivun siirto verkkoon webhotellissa'
 slug: verkkosivun-siirto-verkkoon
 excerpt: 'Opi siirtämään verkkosivu verkkoon OVH:n webhotellissa'

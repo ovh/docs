@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Informace o fakturování Dedicated Cloud
 excerpt: Detaily fakturace služby Dedicated Cloud
 slug: informace_o_fakturovani_dedicated_cloud

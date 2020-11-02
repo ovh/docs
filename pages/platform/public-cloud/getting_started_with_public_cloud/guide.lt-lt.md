@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Getting started with Public Cloud: logging in and creating a project'
 slug: getting_started_with_public_cloud_logging_in_and_creating_a_project
 excerpt: 'This guide will show you how to create your first Public Cloud project'

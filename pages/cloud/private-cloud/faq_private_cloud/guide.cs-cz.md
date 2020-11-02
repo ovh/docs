@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: FAQ Dedicated Cloud
 excerpt: ''
 slug: faq_dedicated_cloud

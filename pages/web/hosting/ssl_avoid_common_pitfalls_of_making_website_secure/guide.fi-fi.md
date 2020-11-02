@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Vältä SSL-sudenkuopat omalla verkkosivulla
 excerpt: Vältä SSL-sudenkuopat omalla verkkosivulla
 id: '2220'

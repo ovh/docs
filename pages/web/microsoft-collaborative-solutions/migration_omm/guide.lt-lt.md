@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Migrating email accounts using OVH Mail Migrator'
 slug: exchange-el-pasto-paskyru-migravimas-ovh-mail-migrator
 excerpt: 'Find out how to migrate your email accounts to OVH using our OVH Mail Migrator tool'

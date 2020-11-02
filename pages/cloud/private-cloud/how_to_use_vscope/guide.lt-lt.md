@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: vScope naudojimas
 excerpt: ''
 slug: vscope_naudojimas

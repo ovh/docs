@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'PHP-optimoinnin käyttöönotto OVH:n webhotellissa'
 excerpt: Tämän ohjeen avulla voit ottaa käyttöön PHP—FPM:n OVH:n webhotellissa, joka parantaa PHP-sivujen latausaikoja
 slug: php-optimoinnin_kayttoonotto_ovhn_webhotellissa

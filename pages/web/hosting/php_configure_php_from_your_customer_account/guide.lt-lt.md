@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: PHP versijos keitimas kliento sąsajoje'
 excerpt: PHP versijos keitimas kliento sąsajoje
 id: '1999'

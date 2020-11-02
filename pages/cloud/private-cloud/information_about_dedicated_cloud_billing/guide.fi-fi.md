@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Tietoa Dedicated Cloudin laskutuksesta
 excerpt: Tietoja Dedicated Cloud -laskutuksesta
 slug: tietoa_dedicated_cloudin_laskutuksesta

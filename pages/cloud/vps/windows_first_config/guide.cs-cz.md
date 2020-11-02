@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Prvotní nastavení VPS s Windows Server (Firewall)
 slug: windows-first-config
 excerpt: Zjistěte, jak aktivovat připojení ke vzdálené ploše prostřednictvím KVM

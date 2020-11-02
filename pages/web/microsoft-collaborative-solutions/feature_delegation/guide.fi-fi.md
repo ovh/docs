@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Oikeuksien jakaminen Exchange-tilillä'
 slug: exchange_2013_taysien_oikeuksien_antaminen_tilille
 excerpt: 'Katso, kuinka voit antaa Exchange-tilisi oikeuksia toiselle osapuolelle'

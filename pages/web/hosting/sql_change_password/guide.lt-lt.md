@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Changing the password for a Web Hosting plan database'
 slug: change-password-database
 excerpt: 'Find out how to change the password for a database created as part of a Web Hosting plan'

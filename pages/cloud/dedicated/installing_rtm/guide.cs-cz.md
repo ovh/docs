@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Instalace řešení Real Time Monitoring (RTM)
 slug: instalace-rtm
 excerpt: Zjistěte, jak nainstalovat Real Time Monitoring na operačních systémech Linux a Windows

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Repartitioning a VPS after an upgrade
 slug: repartitioning-vps-after-upgrade
 section: Getting started

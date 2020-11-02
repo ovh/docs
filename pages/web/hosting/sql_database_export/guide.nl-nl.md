@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Een backup van een webhosting-database ophalen'
 slug: export-databases
 excerpt: 'Ontdek hoe u een backup van de database van een OVH webhostingplan kunt verkrijgen'

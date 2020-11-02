@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Public Cloud -instanssin hostnamen muokkaaminen'
 slug: instanssin-hostnamen-muokkaaminen
 excerpt: 'Katso, kuinka Public Cloud -instanssin hostnamea muokataan'

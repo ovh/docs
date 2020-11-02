@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: SFTP připojení
 excerpt: ''
 slug: sftp_pripojeni

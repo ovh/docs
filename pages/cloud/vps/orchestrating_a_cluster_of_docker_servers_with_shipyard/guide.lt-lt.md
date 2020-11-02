@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Docker klasterio valdymas su Shipyard
 excerpt: ''
 slug: docker_klasterio_valdymas_su_shipyard

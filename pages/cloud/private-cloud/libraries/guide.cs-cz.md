@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Knihovny
 excerpt: Příručka se zabývá vytvářením VM z šablon a obrazů
 slug: knihovny

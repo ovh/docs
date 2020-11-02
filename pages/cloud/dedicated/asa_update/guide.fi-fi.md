@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: CISCO ASA -palomuurin päivittäminen
 excerpt: Katso, kuinka CISCO ASA -palomuuri päivitetään
 slug: paivitys-cisco-asa-palomuuri

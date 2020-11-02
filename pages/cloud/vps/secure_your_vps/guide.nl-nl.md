@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Beveiliging van een VPS 
 slug: tips-beveiliging-vps
 section: Eerste stappen

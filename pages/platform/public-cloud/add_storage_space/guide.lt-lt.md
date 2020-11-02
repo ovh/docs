@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Add storage space'
 slug: add_storage_space
 excerpt: 'This guide will show you how to add external storage space to your Public Cloud Instance'

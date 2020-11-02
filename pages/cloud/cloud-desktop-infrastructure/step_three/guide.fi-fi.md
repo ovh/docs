@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 3. vaihe - Ensimmäisen virtuaalityöpöytäsarjan (pool) luominen
 slug: kuinka-luodaan-pool
 excerpt: Katso, kuinka ensimmäinen pool luodaan VMware Horizon 7.1 -alustalla

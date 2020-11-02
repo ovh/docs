@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Resolving a “Website not installed” error
 excerpt: Find out how to resolve a “Website not installed” error
 slug: iniatinklio_talpinimas_klaida_svetaine_neidiegta

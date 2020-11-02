@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Een resource op uurbasis toevoegen'
 slug: resource-per-uur-toevoegen
 excerpt: 'Ontdek hoe u resources op uurbasis toe kunt voegen'

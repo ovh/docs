@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Introduction to the OVH Private Cloud Control Panel
 slug: control-panel-ovh-private-cloud
 excerpt: Find out what you can do in your Private Cloud Control Panel

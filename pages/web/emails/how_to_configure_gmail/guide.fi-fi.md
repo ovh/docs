@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Sähköpostiosoitteen konfigurointi Gmail-verkkokäyttöliittymässä'
 slug: jaettu-sahkoposti-ohje-ovh-sahkopostin-konfigurointi-gmail-kayttoliittymassa
 excerpt: 'Opi konfiguroimaan MX Plan -sähköpostiosoite Gmail-verkkokäyttöliittymässä'

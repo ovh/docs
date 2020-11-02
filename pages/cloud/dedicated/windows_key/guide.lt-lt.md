@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Changing a Windows Server product key'
 excerpt: 'Find out how to modify your Windows Server product key'
 slug: windows-key

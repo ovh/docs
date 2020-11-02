@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: MySQL- ja MariaDB-tietokantojen kayton aloitus
 slug: mysql-ja-mariadb-tietokantojen-kayton-aloitus
 excerpt: Tietokantojen kaytto

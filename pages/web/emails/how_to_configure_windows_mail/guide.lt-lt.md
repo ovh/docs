@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: El. pašto konfigūravimas Windows Mail'
 excerpt: ''
 slug: svetainiu_talpinimas_el_pasto_konfiguravimas_windows_mail

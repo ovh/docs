@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: techninės svetainių talpinimo planų ypatybės'
 excerpt: Techninės OVH svetainių talpinimo planų ypatybės
 id: '1463'

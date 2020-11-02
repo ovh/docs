@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Konfigurace e-mailové adresy na Androidu prostřednictvím aplikace Gmail
 slug: konfigurace-android
 excerpt: Zjistěte, jak nakonfigurovat e-mailovou adresu služby MX Plan na Androidu prostřednictvím aplikace Gmail

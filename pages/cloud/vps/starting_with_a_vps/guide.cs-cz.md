@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Začínáme s VPS
 excerpt: Seznamte se se základy používání VPS
 slug: zaciname-s-vps

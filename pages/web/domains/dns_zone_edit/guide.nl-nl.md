@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Wijziging van een OVH DNS-zone
 excerpt: Leer hoe u een OVH DNS-zone vanaf uw Control Panel kunt bewerken
 slug: hosting_hoe_wijzig_ik_mijn_dns_zone

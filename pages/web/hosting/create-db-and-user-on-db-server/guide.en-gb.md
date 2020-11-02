@@ -6,7 +6,7 @@ section: Private SQL
 order: 2
 ---
 
-**Last updated 16th September 2020**
+**Last updated 30th October 2020**
 
 ## Objective
 
@@ -30,9 +30,9 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 Fill in the fields by following the criteria listed. You can create a user directly by ticking the **Create User** box.
 
 - **Database name** (obligatory): this will be your database’s name.
-- **Username**: This is name of the user that can log in to your database and perform requests (optional if the **Create User** box has not been ticked).
-- **Rights** (optional if the box is unticked): the permissions that will be associated with the user on the database. For standard usage, select `Administrator`{.action}. The permissions can be modified as follows.
-- **Password**/**Confirm password** (optional if the box is unticked): enter a password, then confirm it.
+- **Username**: This is name of the user that can log in to your database and perform requests (only applicable if the **Create User** box is ticked).
+- **Rights** (only if the box is ticked): the permissions that will be associated with the user on the database. For standard usage, select `Administrator`{.action}. The permissions can be modified as follows.
+- **Password**/**Confirm password** (only if the box is ticked): enter a password, then confirm it.
 
 Finally, click `Confirm`{.action}.
 
@@ -58,7 +58,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 In the left-hand column, **Database**, you will see a list of the databases on your database server.
 
-The 3 types of permissions proposed are described below:w
+The 3 types of permissions proposed are described below:
 
 - **Administrator**: Authorisation of the following queries: **Select/Insert/Update/Delete/Create/Alter/Drop**
 - **Reading/Writing**: Authorisation of the following queries: **Select/Insert/Update/Delete**

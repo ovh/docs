@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellit: Sisällönhallintajärjestelmän (CMS) asentaminen käsin'
 excerpt: 'CMS:n manuaalinen asennus'
 id: '1375'

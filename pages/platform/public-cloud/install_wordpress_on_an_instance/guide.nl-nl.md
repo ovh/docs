@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Installeer WordPress op een instance
 excerpt: Installeer WordPress op een instance
 slug: installeer_wordpress_op_een_instance

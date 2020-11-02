@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Instanssin luominen OVH:n hallintapaneelissa'
 excerpt: 'Instanssin luominen OVH:n hallintapaneelissa'
 slug: instanssin_luominen_ovhn_hallintapaneelissa

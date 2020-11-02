@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: FailOver IP -migraatio
 excerpt: FailOver IP -migraatio
 slug: failover_ip_-migraatio

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Facturatie overschakelen van per uur naar per maand
 excerpt: Ontdek hoe u het type facturatie van uw Public Cloud-instance kunt wijzigen
 slug: wijzigen-public-cloud-facturatie

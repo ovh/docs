@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2016: dalinimasis katalogu per OWA'
 excerpt: ''
 slug: exchange_2016_dalinimasis_katalogu_per_owa

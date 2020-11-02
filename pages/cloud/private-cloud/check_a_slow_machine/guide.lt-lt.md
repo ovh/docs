@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Mašinos patikrinimas sulėtėjimo atveju
 excerpt: ''
 slug: masinos_patikrinimas_suletejimo_atveju

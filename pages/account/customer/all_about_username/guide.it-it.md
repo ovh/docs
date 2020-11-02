@@ -118,6 +118,14 @@ Quindi, inserisci il codice nel campo “Codice di conferma” e conferma l’op
 
 ![identificativo cliente](images/nichandle08.png){.thumbnail}
 
+### Modifica del tipo di account
+
+Clicca su `Tipo di account` quando modifichi il tuo profilo. Un menu a tendina ti permette di definire il tipo di account corrispondente alla tua situazione.
+
+![identifiant client](images/nichandle09.png){.thumbnail}
+
+Una volta inseriti tutti i dati, clicca su `Conferma`{.action}.
+
 ### Esercita i tuoi diritti sui tuoi dati personali
 
 In conformità con il Regolamento generale sulla protezione dei dati (GDPR), è possibile esercitare i propri diritti in materia di protezione dei dati personali, compilando [questo form](https://www.ovh.it/protezione-dati-personali/esercita-i-tuoi-diritti){.external}.

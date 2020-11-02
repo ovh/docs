@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Managing contacts for your services
 slug: kontaktu_valdymas
 excerpt: Learn how to manage contacts for your OVH services

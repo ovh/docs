@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: CUDA installeren op een speciale GPU-server
 slug: installatie-cuda-gpu-server
 section: Diversen

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: OVH:n SSH-avaimen asennus 
 slug: ovh-ssh-key 
 excerpt: Tässä ohjeessa kerrotaan, kuinka asennetaan administraattoriemme interventiot mahdollistava SSH-avain sekä kuinka se kytketään myöhemmin pois päältä 

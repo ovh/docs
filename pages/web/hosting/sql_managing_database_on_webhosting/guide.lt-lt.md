@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Svetainiu talpinimo duomenu bazes valdymas
 slug: svetainiu-talpinimo-duomenu-bazes-valdymas
 legacy_guide_number: 1943

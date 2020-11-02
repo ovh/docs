@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Import a failover IP'
 slug: ip_failover_importavimas
 excerpt: 'This guide explains how to import a failover IP into your OVH Public Cloud project.'

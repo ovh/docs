@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Objektų saugyklos su S3QL prijungimas
 excerpt: Objektų saugyklos su S3QL prijungimas
 slug: objektu_saugyklos_su_s3ql_prijungimas

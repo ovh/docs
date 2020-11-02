@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Sähköpostiosoitteen luominen MX Plan -tuotteella'
 slug: webhotellit_ja_sahkopostit_ohje_postilaatikon_luomiseen
 excerpt: 'Opi luomaan sähköpostiosoite MX Plan -tuotteella'

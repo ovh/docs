@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange Diagnostiikka: Mitä tehdä virhetilanteessa?'
 excerpt: 'Exchange Diagnostiikka: Mitä tehdä virhetilanteessa?'
 slug: exchange_diagnostiikka_mita_tehda_virhetilanteessa

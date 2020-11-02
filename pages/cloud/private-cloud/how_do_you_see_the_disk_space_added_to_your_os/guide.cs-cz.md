@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Jak přidat diskový prostor na svém OS?
 excerpt: ''
 slug: jak_pridat_diskovy_prostor_na_svem_os

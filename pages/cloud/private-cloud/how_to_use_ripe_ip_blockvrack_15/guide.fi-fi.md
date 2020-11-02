@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: RIPE IP -verkkoavaruuden käyttö/vrack 1.5
 excerpt: Miten virtuaalikone lisätään vrack 1.5 -verkkoon ja RIPE IP -osoiteavaruuteen?
 slug: ripe_ip_-verkkoavaruuden_kayttovrack_15

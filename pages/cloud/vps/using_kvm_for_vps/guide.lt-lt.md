@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Using the KVM for the VPS
 excerpt: How to use the KVM for the VPS
 slug: kvm_naudojimas_vps

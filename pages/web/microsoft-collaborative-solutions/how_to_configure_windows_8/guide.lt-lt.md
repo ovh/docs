@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2013/2016: Konfigūravimas Windows 8 aplinkoje'
 excerpt: ''
 slug: exchange_20132016_konfiguravimas_windows_8_aplinkoje

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Automaattinen uusinta
 slug: automaattinen_uusinta
 legacy_guide_number: g1271

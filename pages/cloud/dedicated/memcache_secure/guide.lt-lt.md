@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Securing a server with a Memcached service
 slug: securing-server-with-memcached-service
 excerpt: Find out how to secure your Memcached service

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: FailOver IP -osoitteen konfigurointi Fedorassa
 excerpt: FailOver IP -osoitteen konfigurointi Fedorassa
 slug: failover_ip_-osoitteen_konfigurointi_fedorassa

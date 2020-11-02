@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2013/2016: How to use resource accounts'
 excerpt: 'Tato příručka popisuje, jak přidávat a používat účty zdrojů v Exchange 2013.'
 slug: exchange_20132016_how_to_use_resource_accounts

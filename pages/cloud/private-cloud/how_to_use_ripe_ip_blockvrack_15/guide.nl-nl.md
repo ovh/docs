@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Het gebruik van Ripe IP/vRack1.5
 excerpt: Hoe kan ik een VM in het vRack 1.5 netwerk zetten of een RIPE IP blok gebruiken?
 slug: het_gebruik_van_ripe_ipvrack15

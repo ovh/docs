@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Introductie tot SSH
 slug: ssh-introductie
 excerpt: Ontdek hoe u met de SSH-dienst toegang krijgt tot uw server

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Het aanmaken van een template met VMM
 excerpt: Deze handleiding toont hoe u een template aanmaakt met VMM vanaf een bestaande disk
 slug: het_aanmaken_van_een_template_met_vmm

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: VM importavimas į jūsų Dedicated Cloud HyperV
 excerpt: 'Šiame gide yra aiškinama, kaip įkelti turimas VM į HyperV Dedicated Cloud'
 slug: vm_importavimas_i_jusu_dedicated_cloud_hyperv

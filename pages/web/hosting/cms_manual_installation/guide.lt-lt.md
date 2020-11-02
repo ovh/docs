@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: TVS diegimas rankiniu būdu'
 excerpt: Mano TVS diegimas rankiniu būdu
 id: '1375'

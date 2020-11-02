@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Správa účtu
 slug: account
 excerpt: Spravujte své účty a fakturační preference

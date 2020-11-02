@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Displaying boot log in the KVM
 slug: displaying-boot-log-in-the-kvm
 section: Diagnostic and rescue mode

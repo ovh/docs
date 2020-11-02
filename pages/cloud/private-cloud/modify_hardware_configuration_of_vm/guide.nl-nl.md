@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Het wijzigen van de hardware configuratie van uw virtual machine
 excerpt: ''
 slug: het_wijzigen_van_de_hardware_configuratie_van_uw_virtual_machine

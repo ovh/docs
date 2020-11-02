@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Exchange-tilin konfigurointi iPhonella tai iPadilla
 excerpt: Opi konfiguroimaan Exchange-tili Mail-sovelluksen avulla iPhonella tai iPadilla
 slug: exchange_2013_automaattimaarittely_iosssa_iphone_ipad

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Jak přidat hostitele?
 excerpt: ''
 slug: jak_pridat_hostitele

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Diskų spartos testavimas
 excerpt: Diskų spartos testavimas
 slug: disku_spartos_testavimas

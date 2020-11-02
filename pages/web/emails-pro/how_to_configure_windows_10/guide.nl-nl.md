@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuratie van uw Email Pro-account in de Courrier-app voor Windows 10'
 slug: configuratie-courrier-windows-10
 excerpt: 'Leer hoe u een E-mail Pro-account kunt instellen in de Courrier-app voor Windows 10'

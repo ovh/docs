@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Webhotellit Miten tutkia mistä tyhjä valkoinen sivu aiheutuu?
 excerpt: Ohjeessa kerrotaan miten tutkia mistä tyhjä valkoinen sivu aiheutuu nettisivuilla.
 slug: webhotellit_miten_tutkia_mista_tyhja_valkoinen_sivu_aiheutuu

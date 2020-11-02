@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Using the FPGA accelerator to convert a BMP image to a JPEG (Beta)'
 slug: using-fpga-accelerator-to-convert-to-jpeg
 excerpt: 'Find out how to use an FPGA card to convert BMP images to JPEG format'

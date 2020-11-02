@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Domeno zonos tikrinimas
 excerpt: 'Šiame gide paaiškinama, kaip atlikti domeno zonos tikrinimą (Zone check).'
 slug: domeno_zonos_tikrinimas

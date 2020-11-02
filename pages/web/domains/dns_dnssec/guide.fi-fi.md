@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Verkkotunnuksen turvaaminen DNSSECin avulla
 excerpt: ''
 slug: verkkotunnuksen_turvaaminen_dnssecin_avulla

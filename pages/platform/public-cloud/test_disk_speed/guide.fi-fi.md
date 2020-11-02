@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Testaa levyjen nopeus
 excerpt: Testaa levyjen nopeus
 slug: testaa_levyjen_nopeus

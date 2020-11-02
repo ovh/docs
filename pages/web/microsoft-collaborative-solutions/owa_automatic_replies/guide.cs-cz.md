@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2016: how to set up automatic replies in OWA'
 excerpt: how to set up automatic replies in OWA guide
 slug: exchange_2016_how_to_set_up_automatic_replies_in_owa

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: kiti veiksmai, atliekami su .htaccess failu'
 excerpt: Šiame gide pateikiamos kituose giduose neaprašytos .htaccess galimybės.
 slug: svetainiu_talpinimas_kiti_veiksmai_atliekami_su_htaccess_failu

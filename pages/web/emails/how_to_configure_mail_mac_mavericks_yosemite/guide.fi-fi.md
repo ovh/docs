@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellit: MACin Mailin konfigurointi - Mavericks ja Yosemite'
 excerpt: ''
 slug: webhotellit_macin_mailin_konfigurointi_-_mavericks_ja_yosemite

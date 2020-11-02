@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Přidat iso na VM
 excerpt: Jak připojit iso na virtuální stroj?
 slug: pridat_iso_na_vm

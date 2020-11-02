@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Správa kontaktů
 slug: sprava-kontaktu
 excerpt: Zjistěte, jak na správu kontaktů svých OVH služeb

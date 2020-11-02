@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuring a network bridge'
 slug: network-bridging
 excerpt: 'This guide will show you how to use network bridging to configure internet access for your virtual machines'

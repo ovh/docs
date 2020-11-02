@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhosting: uživatelská příručka Cyberduck (Mac)'
 excerpt: Nastavení a používání aplikace Cyberduck na Mac
 id: '1598'

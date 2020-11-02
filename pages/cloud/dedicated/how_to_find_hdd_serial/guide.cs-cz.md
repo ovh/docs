@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Sériové číslo pevného disku'
 slug: seriove-cislo-pevneho-disku
 excerpt: 'Zjistěte, jak získat sériové číslo pevného disku'

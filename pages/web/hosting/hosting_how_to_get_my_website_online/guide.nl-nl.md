@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Publiceren van een website op uw webhosting'
 slug: mijn-website-online-zetten
 excerpt: 'Ontdek hoe u een website op uw webhosting online zet'

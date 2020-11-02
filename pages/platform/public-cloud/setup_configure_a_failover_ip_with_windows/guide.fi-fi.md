@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: FailOver IP -osoitteen konfigurointi Windowsissa
 excerpt: FailOver IP -osoitteen konfigurointi Windowsissa
 slug: failover_ip_-osoitteen_konfigurointi_windowsissa

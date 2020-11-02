@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Začínáme s PostgreSQL
 slug: zaciname-s-postgresql
 excerpt: Práce s databázemi

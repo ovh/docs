@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Getting started with a VPS
 excerpt: Learn the basics of using a VPS
 slug: getting-started-vps

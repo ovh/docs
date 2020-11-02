@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Introduction to SSH
 slug: ssh-introduction
 excerpt: Learn how to use the SSH service to access your server 

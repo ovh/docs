@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: De reserve hosts
 excerpt: Het beheren en monitoren van de reserve hosts op de Dedicated Cloud?
 slug: de_reserve_hosts

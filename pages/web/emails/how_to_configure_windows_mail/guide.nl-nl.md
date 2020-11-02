@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH E-mail Handleiding: Configuratie van Windows Mail'
 excerpt: ''
 slug: ovh_e-mail_handleiding_configuratie_van_windows_mail

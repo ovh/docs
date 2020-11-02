@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Konfigurace účtů Exchange v aplikaci Outlook 2016 pro Windows'
 slug: konfigurace-outlook-2016
 excerpt: 'Zjistěte, jak nakonfigurovat účty služby Exchange v aplikaci Outlook 2016 pro operační systém Windows'

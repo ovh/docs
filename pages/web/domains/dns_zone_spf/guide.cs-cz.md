@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Přidání záznamu SPF v DNS zóně domény
 slug: spf-zaznam
 excerpt: Zjistěte, jak přidat SPF záznam v DNS zóně své domény

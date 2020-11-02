@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Konfigūravimas BlackBerry Z10 (OS10)
 excerpt: ''
 slug: konfiguravimas_blackberry_z10_os10

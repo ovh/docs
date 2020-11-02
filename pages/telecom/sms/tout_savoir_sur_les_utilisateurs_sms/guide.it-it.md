@@ -100,7 +100,7 @@ Per l’invio delle richieste https, è possibile inserire fino a 5 diversi indi
 
 ![sms-users](images/smsusers06.png){.thumbnail}
 
-Per maggiori informazioni sulla funzione http2sms, consulta la guida [Inviare SMS da un URL](../inviare_sms_da_un_url-_http2sms/).
+Per maggiori informazioni sulla funzione http2sms, consulta la guida [Inviare SMS da un URL](../inviare_sms_da_un_url_http2sms/).
 
 ### Step 5: specifica un URL di Callback
 

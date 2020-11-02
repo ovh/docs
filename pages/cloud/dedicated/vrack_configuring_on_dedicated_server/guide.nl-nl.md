@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuratie van meerdere dedicated servers op vRack
 slug: configuratie-meerdere-dedicated-servers-op-vrack
 excerpt: Leer hoe u meerdere dedicated servers op vRack kunt configureren

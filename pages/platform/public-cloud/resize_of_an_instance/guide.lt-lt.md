@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Virtualios mašinos resursų keitimas
 excerpt: Kaip pakeisti virtualios mašinos resursus Horizon sąsajoje.
 slug: virtualios_masinos_resursu_keitimas

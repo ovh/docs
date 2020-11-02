@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Konfigurace HTTP/2 na službě OVH Load Balancer
 slug: http2
 excerpt: Konfigurace HTTP/2 na službě OVH Load Balancer

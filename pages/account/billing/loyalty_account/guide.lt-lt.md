@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Lojalumo paskyra
 excerpt: Pradėkite naudoti OVH lojalumo paskyrą
 slug: lojalumo_paskyra

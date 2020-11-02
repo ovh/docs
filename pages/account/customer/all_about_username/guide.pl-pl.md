@@ -116,6 +116,14 @@ Wpisz kod w rubryce „Kod potwierdzający”, a następnie potwierdź.
 
 ![identyfikator klienta](images/nichandle08.png){.thumbnail}
 
+### Zmiana typu konta
+
+Kliknij na `typ konta` podczas edytowania profilu. rozwijane menu pozwala na zdefiniowanie typu konta odpowiadającego Twojej sytuacji.
+
+![identifiant client](images/nichandle09.png){.thumbnail}
+
+Po uzupełnieniu informacji kliknij przycisk `Zatwierdź`{.action}.
+
 ### Korzystanie ze swoich praw dotyczących danych osobowych
 
 Zgodnie z ogólnym rozporządzeniem o ochronie danych osobowych (RODO) możesz skorzystać z przysługujących Ci praw dotyczących ochrony danych osobowych, wypełniając [ten formularz](https://www.ovh.pl/ochrona-danych-osobowych/korzystanie-z-praw){.external}.

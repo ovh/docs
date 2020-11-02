@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Editing an OVH DNS zone'
 slug: svetainiu_talpinimas_kaip_redaguoti_dns_zona
 excerpt: 'Find out how to edit an OVH DNS zone via your Control Panel'

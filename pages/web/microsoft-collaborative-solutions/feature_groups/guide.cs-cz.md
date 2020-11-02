@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2013/2016: How to use the groups feature (mailing lists)'
 excerpt: ''
 slug: exchange_20132016_how_to_use_the_groups_feature_mailing_lists

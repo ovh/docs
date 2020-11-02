@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Setting up Veeam Backup & Replication'
 slug: veeam-backup-replication
 excerpt: 'Find out how to set up a Veeam Backup & Replication server with Veeam Enterprise'

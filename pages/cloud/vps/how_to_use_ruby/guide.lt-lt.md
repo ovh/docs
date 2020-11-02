@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: How to Ruby
 excerpt: Bendrai apie Ruby paketą
 slug: how_to_ruby

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'IPMI-konsolin käyttö dedikoiduilla palvelimilla'
 slug: ipmi-konsolin-kaytto-dedikoidut-palvelimet
 excerpt: 'IPMIn avulla voidaan kirjautua dedikoituun palvelimeen ilman ulkopuolisen ohjelmiston käyttöä.'

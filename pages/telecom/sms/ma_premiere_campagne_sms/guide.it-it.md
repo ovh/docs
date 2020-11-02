@@ -48,7 +48,7 @@ Per aggiungere una rubrica indirizzi, clicca sulla scheda `Contatti`{.action} e 
 
 ![firstsms](images/firstsms04.png){.thumbnail}
 
-Per saperne di più, consulta la guida [Gestire le rubriche SMS](../estisci_le_tue_rubriche_sms/).
+Per saperne di più, consulta la guida [Gestire le rubriche SMS](../gestire_rubriche_sms/).
 
 ### Step 2: crea un mittente
 
@@ -56,7 +56,7 @@ Di default, l’invio di SMS da un account OVHcloud in Francia si effettua da un
 
 ![firstsms](images/firstsms05.png){.thumbnail}
 
-A questo proposito, consulta la sezione dedicata alla scelta del mittente per i tuoi SMS della guida [“Inviare sms dallo Spazio Cliente”](../invia_sms_dal_tuo_spazio_cliente/#step-3-scegli-il-mittente-sms).
+A questo proposito, consulta la sezione dedicata alla scelta del mittente per i tuoi SMS della guida [“Inviare sms dallo Spazio Cliente”](../inviare_sms_dallo_spazio_cliente/#step-3-scegli-il-mittente-del-tuo-sms_1).
 
 ### Step 3: invio di una campagna SMS
 
@@ -64,7 +64,7 @@ La scheda `Messaggio e campagna`{.action} ti permette di accedere alle opzioni d
 
 ![firstsms](images/firstsms02.png){.thumbnail}
 
-Per inviare un SMS unitario dal tuo Spazio Cliente, consulta [la guida dedicata a questo metodo](../inviare_sms_dal_tuo_spazio_cliente/).
+Per inviare un SMS unitario dal tuo Spazio Cliente, consulta [la guida dedicata a questo metodo](../inviare_sms_dallo_spazio_cliente/).
 
 Per inviare una campagna SMS, clicca su `Gestisci le campagne`{.action} e poi su `Crea una campagna`{.action}.
 
@@ -84,6 +84,6 @@ Clicca sul pulsante `Invia`{.action} per l'invio o la pianificazione della tua c
 
 ## Per saperne di più
 
-Consulta [la nostra guida dedicata alla gestione dello storico degli SMS](../gestisci-la-cronologia-dei-tuoi-sms/).
+Consulta [la nostra guida dedicata alla gestione dello storico degli SMS](../gestire-la-cronologia-degli-sms/).
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

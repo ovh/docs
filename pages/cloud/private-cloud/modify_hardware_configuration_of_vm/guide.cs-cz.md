@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Změna nastavení HW u Vašeho virtuálního serveru
 excerpt: ''
 slug: zmena_nastaveni_hw_u_vaseho_virtualniho_serveru

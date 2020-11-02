@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Upgraden van de CISCO ASA firewall'
 excerpt: 'Ontdek hoe u uw CISCO ASA firewall kunt upgraden'
 slug: upgrade-firewall-cisco-asa

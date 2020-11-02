@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH-sähköposti: Outlook 2007 -konfigurointiohje'
 excerpt: ''
 slug: ovh-sahkoposti_outlook_2007_-konfigurointiohje

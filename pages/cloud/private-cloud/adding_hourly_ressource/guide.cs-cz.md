@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Spuštění hodinové instance'
 slug: spusteni-hodinove-instance
 excerpt: 'Zjistěte, jak spustit instanci v režimu hodinové fakturace'

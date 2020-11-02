@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Verkkotunnuksen siirtäminen OVH:lta toiselle verkkotunnusvälittäjälle
 excerpt: Katso, kuinka OVH:n verkkotunnus siirretään toiselle verkkotunnusvälittäjälle
 slug: ovhlta_pois_siirrettava_yleinen_tai_maantieteellinen_verkkotunnus

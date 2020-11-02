@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Úvod do SSH
 slug: ssh-uvod
 excerpt: Seznamte se s použitím klienta SSH pro připojení ke svému serveru.

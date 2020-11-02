@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Installing CUDA on a dedicated GPU server
 slug: install-cuda-serveur-gpu
 section: Server Management

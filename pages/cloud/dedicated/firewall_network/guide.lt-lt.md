@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuring the Firewall Network
 slug: firewall-network
 section: Network Management

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Sähköposti: Konfigurointiohje Android 5.1 version puhelimille'
 excerpt: 'Sähköposti: Konfigurointiohje Android 5.1 version puhelimille'
 slug: sahkoposti_konfigurointiohje_android_51_version_puhelimille

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhosting e-mail: Příručka nastavení Windows Phone'
 excerpt: Příručka nastavení e-mailového účtu na webhostingu na Windows Phone
 slug: webhosting_e-mail_prirucka_nastaveni_windows_phone

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Accessing the NSX interface
 slug: accessing-NSX-interface
 excerpt: Learn more about the NSX interface

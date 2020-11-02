@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Windows Server konfiguravimas pirma karta
 slug: windows-first-config
 excerpt: Siame gide suzinosite, kaip sukonfiguruoti prieiga prie nuotolinio darbalaukio per KVM, jeigu ji isjungta.
