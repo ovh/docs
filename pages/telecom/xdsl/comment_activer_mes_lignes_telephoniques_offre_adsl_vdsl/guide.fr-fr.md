@@ -69,13 +69,13 @@ Une ligne sans téléphone est une ligne qui sera techniquement configurée dire
 
 Ce type d'activation nécessite que vous possédiez un téléphone analogique personnel.
 
-Vous ne pouvez activer que deux lignes sans téléphone par accès car il n'y a que deux ports téléphoniques sur le modem.
+Vous ne pouvez activer que deux lignes sans téléphone par accès car il n'y a que deux ports analogiques disponible sur le modem.
 
 Pour activer une ligne sans téléphone :
 
--   Choisissez le **Nombre de lignes** à activer (par défaut 1 est proposé)
--   Sélectionnez la case **"Ligne SIP sans téléphone"**.
--   Cliquez sur **"Valider la commande"** en bas de page.
+-   choisissez le **Nombre de lignes** à activer (par défaut 1 est proposé)
+-   sélectionnez la case **"Ligne SIP sans téléphone"**.
+-   cliquez sur **"Valider la commande"** en bas de page.
 
 ![](images/Activation03-edit.png){.thumbnail}
 
@@ -89,12 +89,12 @@ Vous pouvez consulter les détails techniques de chaque téléphone [ici](http:/
 
 Pour activer une ligne avec téléphone :
 
--   Choisissez le **Nombre de lignes** à activer (par défaut 1 est proposé)
--   Cliquez sur la case du téléphone de votre choix.
--   Choisissez le type de livraison :
-    -   La livraison par transporteur à 9.99€ HT se fait via la société **DHL** sous 24h ouvrées.
-    -   La livraison en point relais **Mondial Relay** gratuite et sous 48h ouvrées.
--   Cliquez sur **"Valider la commande".**
+-   choisissez le **Nombre de lignes** à activer (par défaut 1 est proposé)
+-   cliquez sur la case du téléphone de votre choix.
+-   choisissez le type de livraison :
+    -   la livraison par transporteur à 9.99€ HT se fait via la société **DHL** sous 24h ouvrées.
+    -   la livraison en point relais **Mondial Relay** gratuite et sous 48h ouvrées.
+-   cliquez sur **"Valider la commande".**
 
 ![](images/Activation04-edit.png){.thumbnail}
 
@@ -102,8 +102,8 @@ Cette ligne sera alors disponible et utilisable après le branchement du télép
 
 ### Activation d'une ligne Fax {#activation-dune-ligne-fax}
 
--   Cliquez sur **"Activer un service"** dans la**Téléphonie**.
--   Cliquez sur **"Activer**" lors de la confirmation.
+-   cliquez sur **"Activer un service"** dans la**Téléphonie**.
+-   cliquez sur **"Activer**" lors de la confirmation.
 
 ![](images/Activation05-edit.png){.thumbnail}
 
