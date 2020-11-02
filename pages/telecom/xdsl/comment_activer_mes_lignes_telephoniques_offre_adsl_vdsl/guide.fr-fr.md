@@ -46,7 +46,7 @@ Dans notre cas, il y a:
 -   1 emplacement téléphonique déjà activé ;
 -   1 emplacement fax déjà activé.
 
-Il reste un emplacement libre, nous pouvons donc activer 1 ligne téléphonique pour ce pack ADSL/VDSL.
+Il reste un emplacement libre, nous pouvons donc activer 1 ligne téléphonique pour ce pack ADSL/VDSL/FTTH.
 
 ------------------------------------------------------------------------
 
