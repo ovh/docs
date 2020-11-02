@@ -24,7 +24,7 @@ Ces lignes ne sont pas livrées en même temps que l'accès ADSL/VDSL/FTTH, ce g
 -   Disposer d'une ou plusieurs ligne(s) non activée(s) dans ce pack.
 
 
-## En Pratique
+## En Pratique {#En-pratique}
 
 ### Combien de ligne puis-je activer? {#combien-de-ligne-puis-je-activer}
 
