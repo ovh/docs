@@ -99,7 +99,7 @@ Pour activer une ligne avec téléphone :
 
 Cette ligne sera alors disponible et utilisable après le branchement du téléphone sur votre modem.
 
-#### Activation d'une ligne Fax {#activation-dune-ligne-fax}
+### Activation d'une ligne Fax {#activation-dune-ligne-fax}
 
 -   Cliquez sur **"Activer un service"** dans la**Téléphonie**.
 -   Cliquez sur **"Activer**" lors de la confirmation.
@@ -108,7 +108,7 @@ Cette ligne sera alors disponible et utilisable après le branchement du télép
 
 Cette ligne sera alors disponible sous une heure environ.
 
-Veuillez consulter [ici](https://docs.ovh.com/fr/fax/){.external-link}[](https://docs.ovh.com/fr/fax/){.external-link}. afin d'avoir plus de détails sur son utilisation.
+Veuillez consulter [cette page](https://docs.ovh.com/fr/fax/){.external-link}[](https://docs.ovh.com/fr/fax/){.external-link}. afin d'avoir plus de détails sur l'utilisation de ce service.
 
 ------------------------------------------------------------------------
 
