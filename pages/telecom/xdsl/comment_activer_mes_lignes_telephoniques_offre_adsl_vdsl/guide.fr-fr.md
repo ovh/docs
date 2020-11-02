@@ -74,7 +74,7 @@ Pour activer une ligne sans téléphone :
 
 -   Choisissez le **Nombre de lignes** à activer (par défaut 1 est proposé)
 -   Sélectionnez la case **"Ligne SIP sans téléphone"**.
--   Cliquez sur **"Valider la commande".** en bas de page.
+-   Cliquez sur **"Valider la commande"** en bas de page.
 
 ![](images/Activation03-edit.png){.thumbnail}
 
