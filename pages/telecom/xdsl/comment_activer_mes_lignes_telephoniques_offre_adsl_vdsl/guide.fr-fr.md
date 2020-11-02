@@ -60,7 +60,8 @@ S'il vous reste des emplacements libres, vous pouvez activer vos lignes téléph
 
 ![](images/Activation02-edit.png){.thumbnail}
 
-Vous avez le choix d'activer la ligne **avec ou sans** téléphone, quelle est la différence?
+Vous avez le choix d'activer la ligne **avec ou sans** téléphone.
+Quelle différence y a-t-il à cela?
 
 ##### Sans Téléphone {#sans-téléphone}
 
