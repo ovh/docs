@@ -76,7 +76,7 @@ Composez alors votre message et choisissez entre un envoi immédiat ou planifié
 
 ![firstsms](images/firstsms08.png){.thumbnail}
 
-Pour plus d'informations sur la taille des SMS à caractère commercial ainsi que sur le format des messages, consultez notre guide dédié à [l'envoi de messages depuis l'espace client OVHcloud](../sms/envoyer_des_sms_depuis_mon_espace_client/#taille-des-sms-a-caractere-commercial) .
+Pour plus d'informations sur la taille des SMS à caractère commercial ainsi que sur le format des messages, consultez notre guide dédié à [l'envoi de messages depuis l'espace client OVHcloud](../envoyer_des_sms_depuis_mon_espace_client/#taille-des-sms-a-caractere-commercial) .
 
 Il ne vous reste plus qu'à cliquer sur le bouton `Envoi`{.action} pour que votre campagne soit envoyée ou planifiée.
 
