@@ -28,7 +28,7 @@ Ces lignes ne sont pas livrées en même temps que l'accès ADSL/VDSL/FTTH, ce g
 
 ### Combien de ligne puis-je activer? {#combien-de-ligne-puis-je-activer}
 
-Selon l'offre ADSL/VDSL/FTTH à laquelle vous avez souscrite, vous disposez d'au minimum 1 emplacement pour ligne téléphonique et de 0 à 1 emplacement pour ligne fax virtuel. 
+Selon l'offre ADSL/VDSL/FTTH à laquelle vous avez souscrite, vous disposez d'au minimum 1 emplacement pour ligne téléphonique et de 0 à 1 emplacement pour ligne fax virtuelle. 
 Lorsque vous activez une ligne, celle-ci va occuper un emplacement.
 
 Pour connaître le nombre d'emplacements libres restants :
