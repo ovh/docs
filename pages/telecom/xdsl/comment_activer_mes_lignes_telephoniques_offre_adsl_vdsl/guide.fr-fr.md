@@ -54,7 +54,7 @@ Il reste un emplacement libre, nous pouvons donc activer 1 ligne téléphonique 
 
 S'il vous reste des emplacements libres, vous pouvez activer vos lignes téléphoniques/FAX. Pour cela:
 
--   rendez vous dans votre****Espace Client****sur <https://www.ovhtelecom.fr/manager/#/> ;
+-   rendez vous dans votre ****Espace Client**** sur <https://www.ovhtelecom.fr/manager/#/> ;
 -   sélectionnez votre pack dans la liste de vos services ;
 -   cliquez sur **"Activer un service"** dans le cadre **Téléphonie**.
 
