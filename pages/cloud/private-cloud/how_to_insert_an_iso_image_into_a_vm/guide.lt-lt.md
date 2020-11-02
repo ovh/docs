@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Pridėti ISO prie VM
 excerpt: Kaip pridėti ISO prie virtualios mašinos?
 slug: prideti_iso_prie_vm

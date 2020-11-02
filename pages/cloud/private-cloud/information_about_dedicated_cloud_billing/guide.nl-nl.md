@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Informatie over de Dedicated Cloud factuur
 excerpt: Details over hoe de Dedicated Cloud facturering werkt.
 slug: informatie_over_de_dedicated_cloud_factuur

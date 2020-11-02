@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: OpenStack-käyttäjän salasanan vaihtaminen Horizonissa
 excerpt: Katso, kuinka käyttäjän salasanaa muokataan Horizon-käyttöliittymässä
 slug: openstack-kayttajan-salasanan-muokkaus

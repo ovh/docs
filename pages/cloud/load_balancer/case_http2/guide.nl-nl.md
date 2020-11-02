@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuratie van HTTP/2 op een OVH Load Balancer
 slug: lb-http2
 excerpt: Ontdek hoe u HTTP/2 kunt configureren op een OVH Load Balancer

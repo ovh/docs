@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotelli: htaccess, kuinka hakemisto suojataan tunnistautumisella?'
 excerpt: Kuinka hakemisto suojataan tunnistautumisella?
 slug: webhotelli_htaccess_kuinka_hakemisto_suojataan_tunnistautumisella

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Sisällönhallintajärjestelmä: Wordpressin asennus käsin'
 excerpt: Miten Wordpress-järjestelmä asennetaan käsin?
 id: '1977'
@@ -168,7 +169,8 @@ Klikkaa "Run the Install".
 ## 2. Vaihe
 Syötä pyydetyt tiedot Wordpress-blogisi hallinnasta:
 
-Site title: anna blogisi nimi
+Site deprecated: true
+title: anna blogisi nimi
 
 Username: valitse tunnus blogin hallintaa varten
 

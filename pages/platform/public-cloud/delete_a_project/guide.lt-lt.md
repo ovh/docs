@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Projekto pašalinimas
 excerpt: Projekto pašalinimas
 slug: projekto_pasalinimas

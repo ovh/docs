@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configureer een failover IP met Windows
 excerpt: Configureer een failover IP met Windows
 slug: configureer_een_failover_ip_met_windows

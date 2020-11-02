@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Seznámení s chybovým hlášením „Controller VM deleted“'
 slug: chyba-kontroler-nsx
 excerpt: 'Seznamte se s významem chybového hlášení „Controller VM deleted“'

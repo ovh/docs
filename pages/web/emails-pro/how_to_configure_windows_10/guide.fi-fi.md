@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'E-mail Pro -tilin konfigurointi Sähköposti-sovelluksella (Windows 10)'
 slug: sahkoposti-konfigurointi-windows-10
 excerpt: 'Opi konfiguroimaan E-mail Pro -tili Sähköposti-sovelluksen avulla Windows 10 -käyttöjärjestelmässä'

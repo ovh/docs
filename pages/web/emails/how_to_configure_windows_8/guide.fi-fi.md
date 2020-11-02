@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH-sähköposti: asetukset Windows 8:lla'
 excerpt: ''
 slug: ovh-sahkoposti_asetukset_windows_8lla

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Įspėjimo kūrimas
 excerpt: ''
 slug: spejimo_kurimas

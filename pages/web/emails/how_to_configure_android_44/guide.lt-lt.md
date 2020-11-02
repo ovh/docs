@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: El. pašto konfigūravimo gidas Android 4.4 sistemose'
 excerpt: Svetainių talpinimo el. pašto konfigūravimo gidas Android 4.4 sistemose
 slug: svetainiu_talpinimas_el_pasto_konfiguravimo_gidas_android_44_sistemose

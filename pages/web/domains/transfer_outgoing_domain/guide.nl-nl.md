@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Overdracht van uw OVH-domeinnaam naar een andere registrar
 excerpt: Leer hoe u een OVH-domeinnaam overdraagt naar de registrar van uw keuze
 slug: uitgaande_overdracht_van_een_generische_of_geografische_domeinnaam

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Rubyn käyttö
 excerpt: Yleistä tietoa Ruby-distribuutiosta
 slug: rubyn_kaytto

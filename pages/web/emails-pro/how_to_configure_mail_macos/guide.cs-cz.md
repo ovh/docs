@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Konfigurace účtů služby E-mail Pro na e-mailovém klientu macOS
 slug: konfigurace-email-pro-macos
 excerpt: Seznamte se s postupem pro konfiguraci účtů služby E-mail Pro na macOS El Capitan, Sierra a High Sierra

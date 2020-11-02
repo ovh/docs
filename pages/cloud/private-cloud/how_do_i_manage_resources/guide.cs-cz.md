@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Jak mohu spravovat své zdroje?
 excerpt: ''
 slug: jak_mohu_spravovat_sve_zdroje

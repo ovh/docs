@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Projektų priskyrimas
 excerpt: Projektų priskyrimas
 slug: projektu_priskyrimas

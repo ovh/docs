@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Kuormantasauspalvelun hallinnointi hallintapaneelin kautta
 slug: kaytto-iplb
 excerpt: Yhteenveto tärkeimmistä toiminnoista sekä kuormantasaajan käyttöönotto hallintapaneelin kautta

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Správa služby OVH Office 365 Reseller (CSP2) 
 slug: objednani-a-sprava-skupinovych-licenci-office-365-reseller-csp2
 excerpt: Zjistěte, jak spravovat program Office 365 Reseller (CSP2) u společnosti OVH

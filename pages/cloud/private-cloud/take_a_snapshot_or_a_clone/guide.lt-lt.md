@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Momentinė kopija ir klonavimas
 excerpt: ''
 slug: momentine_kopija_ir_klonavimas

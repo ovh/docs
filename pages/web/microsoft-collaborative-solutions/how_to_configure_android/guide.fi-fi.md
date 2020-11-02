@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Exchange-tilin konfigurointi Androidilla Gmail-sovelluksen kautta
 excerpt: Opi konfiguroimaan Exchange-tili Androidilla Gmail-sovelluksen avulla
 slug: exchange_2013_android-maarittely

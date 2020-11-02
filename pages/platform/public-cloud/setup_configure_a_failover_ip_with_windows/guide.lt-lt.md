@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: IP Failover konfigūravimas Windows sistemoje
 excerpt: IP Failover konfigūravimas Windows sistemoje
 slug: ip_failover_konfiguravimas_windows_sistemoje

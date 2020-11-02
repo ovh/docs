@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Wijziging van het wachtwoord van een FTP-gebruiker
 slug: wijzigen-wachtwoord-ftp-gebruiker
 excerpt: Leer hoe u het wachtwoord van een FTP-gebruiker op uw OVH-webhosting kunt wijzigen

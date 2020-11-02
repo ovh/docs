@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Pradžia su API Nova
 excerpt: Pradžia su API Nova
 slug: pradzia_su_api_nova

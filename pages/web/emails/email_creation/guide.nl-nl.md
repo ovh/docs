@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Creatie van een e-mailadres met MX Plan'
 slug: webhosting_e-mail_handleiding_het_aanmaken_van_een_e-mailadres
 excerpt: 'Leer hoe u een e-mailadres met MX Plan kunt aanmaken'

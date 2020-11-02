@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Kuinka asetan SSL EV -varmenteen verkkosivuilleni?
 slug: ssl-ev
 excerpt: SSL EV -varmenne takaa kayttajillesi yrityksesi oikeudellisen olemassaolon ja mahdollistaa ostosten teon sivuillasi taydessa luottamuksessa.

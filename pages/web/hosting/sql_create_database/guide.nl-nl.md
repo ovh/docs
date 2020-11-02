@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Creatie van een database in uw webhostingplan'
 slug: database-creatie
 excerpt: 'Leer hoe u een database in uw webhostingplan kunt maken'

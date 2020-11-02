@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Installatie van Real Time Monitoring (RTM)
 slug: installatie-rtm
 excerpt: Ontdek hoe u Real Time Monitoring op Linux of Windows kunt installeren

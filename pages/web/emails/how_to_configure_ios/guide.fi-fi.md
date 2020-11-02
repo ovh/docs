@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Sähköpostiosoitteen konfigurointi iPhonella tai iPadilla
 excerpt: Opi konfiguroimaan MX Plan -sähköpostiosoite iPhonella tai iPadilla
 slug: webhotellien_sahkoposti_konfigurointiohje_iphone_ios_91-versiolle

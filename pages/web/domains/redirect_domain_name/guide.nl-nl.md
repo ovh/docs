@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Omleiding van een door OVH beheerde domeinnaam
 slug: omleiding-domeinnaam
 excerpt: Lees meer over de verschillende omleidingstypen en hoe u er een kunt maken voor een door OVH beheerde domeinnaam

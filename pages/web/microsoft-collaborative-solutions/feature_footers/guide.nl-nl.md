@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Exchange 2013 Automatische signature/Disclaimer
 excerpt: In deze handleiding wordt het instellen van een automatische signature (disclaimer) beschreven
 slug: exchange_2013_automatische_signaturedisclaimer

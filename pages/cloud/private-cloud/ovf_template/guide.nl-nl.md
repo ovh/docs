@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Gebruik van een OVF-sjabloon'
 slug: gebruik-ovh-sjabloon
 excerpt: 'Ontdek hoe u een sjabloon kunt toepassen met de vSphere fat-client'

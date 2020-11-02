@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Creatie en verwijdering van een beveiligingsgroep in Horizon
 excerpt: Leer hoe u een beveiligingsgroep via Horizon kunt aanmaken of verwijderen
 slug: creatie-verwijdering-beveiligingsgroep-horizon

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Real Time Monitoring -järjestelmän (RTM) asennus
 slug: rtm-asennus
 excerpt: Katso, kuinka Real Time Monitoring asennetaan Linuxilla tai Windowsilla

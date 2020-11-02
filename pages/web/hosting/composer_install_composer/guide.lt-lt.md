@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Composer diegimas į svetainių talpinimo planą
 excerpt: „Composer“ diegimas į svetainių talpinimo planą
 id: '1894'

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Import zálohy do webhostingové databáze'
 slug: import-databaze-mysql
 excerpt: 'Zjistěte, jak importovat datovou zálohu do databáze na webhostingu OVH'

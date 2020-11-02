@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Using resilience mode'
 slug: resilience-mode
 excerpt: 'Find out how to use OVH resilience mode'

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Vytvoření e-mailové adresy v rámci služby MX Plan'
 slug: webhosting_-_e-mail_prirucka_o_vytvareni_e-mailovych_adres
 excerpt: 'Zjistěte, jak vytvořit e-mailovou adresu v rámci služby MX Plan'

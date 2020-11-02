@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Jak použít Ruby
 excerpt: Obecné informace o distribuci Ruby
 slug: jak_pouzit_ruby

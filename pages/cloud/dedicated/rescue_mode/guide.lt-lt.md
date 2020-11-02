@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Activate and use rescue mode
 slug: ovh-rescue
 excerpt: How to use rescue mode on a dedicated server

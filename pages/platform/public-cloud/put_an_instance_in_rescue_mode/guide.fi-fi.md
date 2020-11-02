@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Instanssin siirtäminen rescue-tilaan
 excerpt: Instanssin siirtäminen rescue-tilaan
 slug: instanssin_siirtaminen_rescue-tilaan

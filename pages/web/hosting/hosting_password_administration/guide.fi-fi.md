@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotelli: salasanojen hallinta ja löytäminen'
 excerpt: 'Webhotelli: salasanojen hallinta?'
 id: '1909'

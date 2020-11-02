@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Konfigurace účtu E-mail Pro na Androidu prostřednictvím aplikace Gmail
 slug: konfigurace-android
 excerpt: Zjistěte, jak nakonfigurovat účet E-mail Pro na Androidu prostřednictvím aplikace Gmail

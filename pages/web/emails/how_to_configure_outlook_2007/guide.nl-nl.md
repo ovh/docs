@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH E-mail Handleiding: Outlook 2007 Configuratie'
 excerpt: ''
 slug: ovh_e-mail_handleiding_outlook_2007_configuratie

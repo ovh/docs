@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: htaccess ir URL perrašymas naudojant mod_rewrite'
 excerpt: Mod_rewrite modulis galimas su visais OVH svetainių talpinimo planais (išskyrus 20gp).
 id: '1971'

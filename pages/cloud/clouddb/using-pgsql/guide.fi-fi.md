@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: PostgreSQL-tietokantojen kayton aloitus
 slug: postgresql-tietokantojen-kayton-aloitus
 excerpt: Tietokantojen kaytto

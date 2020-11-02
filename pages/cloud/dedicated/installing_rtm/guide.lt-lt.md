@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Installing Real Time Monitoring (RTM)'
 slug: install-rtm
 excerpt: 'Learn how to install Real Time Monitoring on Linux or Windows'

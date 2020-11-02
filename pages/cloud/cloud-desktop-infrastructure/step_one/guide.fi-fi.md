@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 1. vaihe - VMware Horizon 7.1 -alusta
 slug: horizon-7-alusta
 excerpt: Katso, kuinka kirjaudut ensimmäistä kertaa VMware Horizon 7.1 -alustalle

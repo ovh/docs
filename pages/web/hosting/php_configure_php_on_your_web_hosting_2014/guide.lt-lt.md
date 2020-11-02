@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Changing a Web Hosting plan’s PHP version'
 slug: php_konfiguravimas_ovh_svetainiu_talpinimo_planuose_2014
 excerpt: 'Find out how to change the PHP version on an OVH Web Hosting plan'

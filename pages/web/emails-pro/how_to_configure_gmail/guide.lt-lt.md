@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuring an Email Pro account on the Gmail online interface
 slug: gmail-configuration
 excerpt: Find out how to configure an Email Pro account on the Gmail online interface

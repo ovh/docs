@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: SSL Gateway uzsakymas
 slug: kaip-uzsakyti-ssl-gateway
 links: 

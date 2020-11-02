@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Vervanging van een defecte schijf'
 slug: schijf-vervanging
 excerpt: 'Ontdek hoe u een defecte schijf kunt identificeren en vervanging ervan kunt aanvragen'

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Miten tiedostosäilö lisätään?
 excerpt: ''
 slug: miten_tiedostosailo_lisataan

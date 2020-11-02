@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Editing the DNS servers for an OVH domain name'
 slug: svetainiu_talpinimas_bendra_informacija_apie_dns_serverius
 excerpt: 'Find out how to edit the DNS servers for your OVH domain name'

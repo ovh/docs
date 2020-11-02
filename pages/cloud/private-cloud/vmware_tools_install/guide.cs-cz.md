@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Instalace VMware tools
 excerpt: ''
 slug: instalace_vmware_tools

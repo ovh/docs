@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Virtualios mašinos redagavimas
 excerpt: Kaip redaguoti virtualias mašinas Horizon sąsajoje
 slug: virtualios_masinos_redagavimas

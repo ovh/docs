@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Varo huijauksia - kuinka tunnistaa huijausviestit ja tietojenkalasteluyritykset'
 slug: huijaukset-petos-tietojenkalastelu
 excerpt: 'Kuinka tietojenkalasteluviestin tunnistaa, ja mitä on tehtävä, jos on klikannut vilpillistä linkkiä?'

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH:n Office 365 -lisenssiratkaisun tilaus ja hallinta'
 excerpt: 'Tilaa OVH:n Office 365 -lisenssi'
 slug: ovhn_office_365_-lisenssiratkaisun_tilaus_ja_hallinta

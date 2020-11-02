@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Dedikoidun palvelimen suojaaminen'
 slug: dedikoidun-palvelimen-suojaaminen
 excerpt: 'Opi suojaamaan dedikoitu palvelimesi muutamien vinkkien avulla'

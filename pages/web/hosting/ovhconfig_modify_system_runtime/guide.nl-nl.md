@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'De configuratie van uw webhosting bewerken'
 slug: bewerking-omgeving-webhosting-configuratie
 excerpt: 'Leer hoe u de instellingen van uw webhosting kunt aanpassen'

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: OVH el. paštas pažangiam naudojimui
 excerpt: Informacija apie OVH svetainių talpinimo planų el. paštą pažangiam naudojimui.
 slug: ovh_el_pastas_pazangiam_naudojimui

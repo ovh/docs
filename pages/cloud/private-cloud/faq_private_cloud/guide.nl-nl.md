@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Meest gestelde vragen Dedicated Cloud
 excerpt: ''
 slug: meest_gestelde_vragen_dedicated_cloud

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuring an IP block in a vRack
 slug: ip-block-vrack
 excerpt: This guide will show you how to configure a block of public IP addresses for use with the vRack.

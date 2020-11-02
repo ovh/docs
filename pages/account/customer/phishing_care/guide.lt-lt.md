@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Atsargiai - kaip atpazinti netikrus el. laiskus, kuriais siekiama gauti duomenis ir pasipelnyti apgaules budu
 slug: atsargiai-phishing
 excerpt: Atsargiai, tai phishing&#58; piktavaliai siuncia netikrus OVH el. laiskus neteisetais tikslais. Suzinokite, kaip atpazinti kenkejus.

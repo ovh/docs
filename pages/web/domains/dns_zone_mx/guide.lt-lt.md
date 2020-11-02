@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Add an MX record to your domain name’s configuration'
 slug: svetainiu_talpinimas_mx_konfiguravimas_naudojant_ovh_dns_zona
 excerpt: 'Find out how to add a MX record to your OVH domain name’s configuration'

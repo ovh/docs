@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhosting: handleiding om de prestaties van uw website te optimaliseren'
 excerpt: 'Webhosting: handleiding om de prestaties van uw website te optimaliseren'
 id: '1396'

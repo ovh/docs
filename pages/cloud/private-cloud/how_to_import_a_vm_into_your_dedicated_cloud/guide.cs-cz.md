@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Jak provést import VM do Dedicated Cloud
 excerpt: Příručka vysvětlující jak provést import existujícího VM do Hyper-V Dedicated Cloud
 slug: jak_provest_import_vm_do_dedicated_cloud

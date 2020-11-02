@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Het importeren van een VM naar uw Dedicated Cloud
 excerpt: In deze handleiding wordt uitgelegd hoe de bestaande VM's geïmporteerd kunnen worden naar Hyper V Dedicated Cloud
 slug: het_importeren_van_een_vm_naar_uw_dedicated_cloud

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2013: Outlook Exchange 2013 -lisenssiopas'
 excerpt: Ohje Outlook Exchange 2013 -lisenssin tilaukseen ja asennukseen.
 slug: exchange_2013_outlook_exchange_2013_-lisenssiopas

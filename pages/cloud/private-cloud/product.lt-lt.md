@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Private Cloud
 slug: private-cloud
 sections: Getting started, OVH Features, NSX

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Docker-palvelinklusterin hallinta ja käyttö Shipyardilla
 excerpt: ''
 slug: docker-palvelinklusterin_hallinta_ja_kaytto_shipyardilla

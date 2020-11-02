@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Změna FTP hesla
 slug: zmena-hesla-ftp
 excerpt: Zjistěte, jak změnit přístupové heslo FTP uživatele na webhostingu OVH

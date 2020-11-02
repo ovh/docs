@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Installatie van een EV SSL certificaat op uw website
 slug: ssl-ev
 excerpt: EV SSL certificaten garanderen de betrouwbaarheid van uw bedrijf en verzekeren gebruikers dat ze veilig aankopen kunnen doen op uw website

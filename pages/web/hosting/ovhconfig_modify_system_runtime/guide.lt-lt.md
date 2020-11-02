@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Modifying the configuration of a Web Hosting plan'
 slug: svetainiu_talpinimo_plano_vykdymo_aplinkos_keitimas
 excerpt: 'Find out how to modify the configuration of an OVH Web Hosting plan'

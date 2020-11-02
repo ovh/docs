@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Moduly na jedno kliknutí
 slug: moduly-na-jedno-kliknuti
 excerpt: Zjistěte, jak spustit svůj web s našimi moduly na jedno kliknutí

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Creating an OVH DNS zone for a domain name
 slug: dns_zonos_kurimas_isoriniam_domenui
 excerpt: Find out how to create an OVH DNS zone for your domain name via the OVH Control Panel

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Virtualių mašinų momentinių kopijų valdymas Horizon sąsajoje
 excerpt: Kaip Horizon sąsajoje valdyti virtualios mašinos momentines kopijas.
 slug: virtualiu_masinu_momentiniu_kopiju_valdymas_horizon_sasajoje

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Aplikace OVF šablony Windows a SQL server'
 slug: pouziti-sablony-ovh
 excerpt: 'Naučte se pracovat s OVF šablonou Windows a SQL server'

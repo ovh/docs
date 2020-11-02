@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Usein kysytyt kysymykset koskien NAS-palvelimia
 slug: ukk-nas
 excerpt: Kysyttävää NAS-palvelimista? Tässä usein kysytyt kysymykset

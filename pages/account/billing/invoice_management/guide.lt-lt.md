@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Managing OVH bills'
 slug: manage-ovh-bills
 excerpt: 'Find out how to manage your bills and the payments associated with them'

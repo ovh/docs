@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'E-mail Pro -tilin konfigurointi Gmail-verkkokäyttöliittymässä'
 slug: konfigurointi-gmail
 excerpt: 'Opi konfiguroimaan E-mail Pro -tili Gmail-verkkokäyttöliittymässä'

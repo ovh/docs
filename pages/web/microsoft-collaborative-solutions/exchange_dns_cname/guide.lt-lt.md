@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Creating a CNAME record to add an associated domain
 excerpt: Find out about the purpose of a CNAME record, and how to add one at OVH
 slug: exchange_20132016_cname_iraso_kurimas

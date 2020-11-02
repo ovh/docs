@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange: pirmi žingsniai su Private serveriu'
 excerpt: Pirmi žingsniai su Private serveriu
 slug: exchange_pirmi_zingsniai_su_private_serveriu

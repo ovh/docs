@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimo el. paštas: Konfigūravimas Windows 8 aplinkoje'
 excerpt: ''
 slug: svetainiu_talpinimo_el_pastas_konfiguravimas_windows_8_aplinkoje

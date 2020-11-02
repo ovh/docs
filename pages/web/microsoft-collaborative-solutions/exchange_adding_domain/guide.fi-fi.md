@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Verkkotunnuksen lisääminen Exchange-palveluun
 slug: verkkotunnuksen-lisaaminen-exchange-palveluun
 excerpt: Katso, kuinka Exchange-palveluun lisätään verkkotunnus

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Mokėjimo priemonės pridėjimas
 excerpt: Mokėjimo priemonės pridėjimas
 slug: mokejimo_priemones_pridejimas

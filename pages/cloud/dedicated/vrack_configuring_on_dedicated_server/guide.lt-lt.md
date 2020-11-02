@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuring the vRack on your Dedicated Servers
 slug: configuring-vrack-on-dedicated-servers
 excerpt: Help on how to configure the vRack on two or more dedicated servers

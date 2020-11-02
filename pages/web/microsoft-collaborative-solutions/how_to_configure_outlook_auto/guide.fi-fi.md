@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Manuaalinen konfiguraatio Outlookilla
 excerpt: Jos et voi asettaa SRV-tietueita verkkotunnuksellesi automaattikonfiguraatiota varten, etene tämän ohjeen mukaisesti
 slug: manuaalinen_konfiguraatio_outlookilla

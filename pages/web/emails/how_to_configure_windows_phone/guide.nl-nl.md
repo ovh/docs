@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Webhosting e-mail handleiding configuratie voor Windows Phone
 excerpt: In deze handleiding wordt de configuratie van de webhosting e-mail account van uw Windows Phone beschreven
 slug: webhosting_e-mail_handleiding_configuratie_voor_windows_phone

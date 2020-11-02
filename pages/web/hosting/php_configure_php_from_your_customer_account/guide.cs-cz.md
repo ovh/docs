@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Hosting: How to configure PHP from your customer account'
 excerpt: Configure PHP from your customer account
 id: '1999'

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Viallisen levyn vaihtaminen'
 slug: disk-replacement
 excerpt: 'Opi tunnistamaan viallinen levy ja pyytämään sen vaihtamista'

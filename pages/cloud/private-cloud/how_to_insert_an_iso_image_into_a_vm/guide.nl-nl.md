@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Een iso toevoegen aan een VM
 excerpt: Hoe kan men een iso monteren op een virtual machine?
 slug: een_iso_toevoegen_aan_een_vm

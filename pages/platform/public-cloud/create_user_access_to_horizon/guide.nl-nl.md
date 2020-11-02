@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Inloggen op de Horizon-interface
 slug: een_toegang_tot_horizon_creeren
 legacy_guide_number: 1773

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Instalace SSH klíče OVH
 slug: ovh-ssh-key
 excerpt: Instalace klíče SSH OVH je zapotřebí v případech, kdy je na serveru či instanci zákazníka vyžadována intervence ze strany administrátora OVH

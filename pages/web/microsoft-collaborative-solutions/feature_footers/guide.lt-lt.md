@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2013/2016: Automatinis parašas - atsakomybės ribojimas'
 excerpt: 'OVH Exchange: profesionalus pranešimų siuntimo sprendimas'
 slug: exchange_20132016_automatinis_parasas_-_atsakomybes_ribojimas

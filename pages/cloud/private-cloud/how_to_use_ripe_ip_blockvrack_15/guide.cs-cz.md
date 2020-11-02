@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Použití IP RIPE/vRack 1.5
 excerpt: 'Jak umístit VM do vRack 1.5 sítě, nebo použít blok IP RIPE?'
 slug: pouziti_ip_ripevrack_15

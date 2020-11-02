@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH:n verkkotunnuksen nimipalvelinten muokkaus'
 slug: webhotellit_yleista_nimipalvelimista
 excerpt: 'Opi muokkaamaan OVH:n verkkotunnuksesi nimipalvelimia'

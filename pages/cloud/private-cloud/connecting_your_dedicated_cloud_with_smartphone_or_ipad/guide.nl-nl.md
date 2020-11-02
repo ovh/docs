@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Inloggen op de Dedicated Cloud met smartphone of iPad.
 excerpt: ''
 slug: inloggen_op_de_dedicated_cloud_met_smartphone_of_ipad

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Customising the DNS servers for an OVH domain name'
 excerpt: 'Find out how to customise the DNS servers for your OVH domain name'
 slug: glue_registry

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Použití pluginu OVH Network'
 slug: plugin-ovh-network
 excerpt: 'Zjistěte, jak používat plugin OVH Network v rámci řešení Private Cloud'

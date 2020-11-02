@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotelli: htaccess, Miten tietyt IP-osoitteet estetään verkkosivulla?'
 excerpt: Miten tietyt IP-osoitteet estetään verkkosivulla?
 id: '1970'

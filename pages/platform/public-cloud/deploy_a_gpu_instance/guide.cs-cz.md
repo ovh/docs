@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Spuštění GPU instance'
 slug: spusteni-gpu-instance
 excerpt: 'Zjistěte, jak spustit GPU instanci s operačním systémem Linux nebo Windows'

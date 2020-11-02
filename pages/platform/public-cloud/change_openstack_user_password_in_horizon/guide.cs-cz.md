@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Změna uživatelského hesla OpenStack Horizon'
 excerpt: 'Zjistěte, jak změnit uživatelské heslo v rozhraní Horizon'
 slug: zmena-hesla-uzivatele-openstack

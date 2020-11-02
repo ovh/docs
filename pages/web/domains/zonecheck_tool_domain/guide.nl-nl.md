@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Uw domein ZoneCheck
 excerpt: Deze handleiding gaat over de ZoneCheck van uw domein.
 slug: uw_domein_zonecheck

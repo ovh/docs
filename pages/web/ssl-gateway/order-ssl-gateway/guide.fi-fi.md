@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: SSL Gateway -palvelun tilaaminen
 slug: ssl-gateway-palvelun-tilaaminen
 links: 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Virtualios mašinos pašalinimas
 excerpt: Kaip išjungti virtualią mašiną Horizon.
 slug: virtualios_masinos_pasalinimas

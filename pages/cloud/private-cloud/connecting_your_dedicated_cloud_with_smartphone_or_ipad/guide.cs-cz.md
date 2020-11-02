@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Připojte se ke svému Dedicated Cloud pomocí chytrého telefonu či iPad.
 excerpt: ''
 slug: pripojte_se_ke_svemu_dedicated_cloud_pomoci_chytreho_telefonu_ci_ipad

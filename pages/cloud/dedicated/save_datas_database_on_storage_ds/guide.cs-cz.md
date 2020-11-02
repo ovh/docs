@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Zásady ukládání informací a databází na úložném serveru'
 slug: ukladani-informace-databaze-storage-servery
 excerpt: 'Zabezpečte svá data v pěti krocích'

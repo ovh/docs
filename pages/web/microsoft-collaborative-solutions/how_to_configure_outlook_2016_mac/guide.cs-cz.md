@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Konfigurace účtů Exchange v aplikaci Outlook 2016 pro Mac'
 slug: konfigurace-outlook-2016-mac
 excerpt: 'Zjistěte, jak nakonfigurovat účty služby Exchange v aplikaci Outlook 2016 pro operační systém macOS'

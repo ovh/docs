@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellin jakaminen useille verkkosivuille'
 slug: multisiten-konfigurointi-webhotellissa
 excerpt: 'Katso, kuinka webhotelli jaetaan usean verkkosivun kesken.'
