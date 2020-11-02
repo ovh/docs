@@ -6,7 +6,7 @@ section: User guides
 order: 1
 ---
 
-**Last updated July 27<sup>th</sup> July, 2020.**
+**Last updated November 2<sup>nd</sup>, 2020.**
 
 ## Objective
 
@@ -24,7 +24,7 @@ In your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (gr
 
 When you create your cluster, it's created with a default node pool. Then, you can modify the size of this node pool, or add additional node pools of different sizes and types.
 
-Upon creation, node pool is defined by its name (`name`), the type of instance within our available catalog (`flavor`), the number of identical nodes that you want in that node pool (`desiredsize`), and potentially self-defined boundaries to limit the value of desired nodes (`minnodecount` and `maxnodecount`). 
+Upon creation, node pool is defined by its name (`name`), the type of instance within our available catalog (`flavor`), the number of identical nodes that you want in that node pool (`desiredsize`), and potentially self-defined boundaries to limit the value of desired nodes (`minnodecount` and `maxnodecount`). Setting the (`antiAffinity`) boolean ensures that nodes in that node pool will be created on different hypervisors (baremetal machines) and therefore ensure the best availability for your workload. The maximum number of nodes is decreased to 5 if this feature is activated on a nodepool (You can of course create multiple node pools with each 5 anti-affinity nodes max). Finally "monthlyBilled" boolean ensures that all nodes in a node pool be spawned in monthly billing and therefore benefit from the monthly discount.
 
 After creation, the `desiredsize` can be edited, and the node pool will automatically be resized to accommodate this new value. `minnodecount` and `maxnodecount` can also be edited at any time.
 
