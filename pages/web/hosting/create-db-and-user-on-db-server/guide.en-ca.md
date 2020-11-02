@@ -16,14 +16,14 @@ A database (DB) is used to store what are known as dynamic elements, such as com
 
 ## Requirements
 
-- a [Private SQL Web Hosting plan](https://www.ovh.co.uk/web-hosting/sql-options.xml) or a [Cloud Database](https://www.ovh.co.uk/cloud-databases/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- a [Private SQL Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/sql-options.xml)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
 ### Creating a database
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the SQL instance concerned. Click on the `Databases` tab, then on `Add database`{.action}.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the SQL instance concerned. Click on the `Databases` tab, then on `Add database`{.action}.
 
 ![private-sql](images/private-sql-createdb01.png){.thumbnail}
 
@@ -42,7 +42,7 @@ Finally, click `Confirm`{.action}.
 
 To use an OVHcloud database server, you need to create users with specific rights to connect to a database.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the database name concerned. Next, switch to the `Users and rights` tab and click `Add user`{.action}.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the database name concerned. Next, switch to the `Users and rights` tab and click `Add user`{.action}.
 
 ![private-sql](images/private-sql-user01.png){.thumbnail}
 
@@ -52,7 +52,7 @@ Enter a “username” and a “password”, then click `Confirm`{.action}.
 
 To allow a user to perform actions on a database, it is necessary to assign permissions to the user.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the database name concerned. Next, switch to the `Users and rights` tab. Click on the  `...`{.action} button to the right of the user concerned, then on `Manage rights`{.action}.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the database name concerned. Next, switch to the `Users and rights` tab. Click on the  `...`{.action} button to the right of the user concerned, then on `Manage rights`{.action}.
 
 ![private-sql](images/private-sql-rights01.png){.thumbnail}
 
@@ -81,7 +81,7 @@ The 3 types of permissions proposed are described below:
 > a backup is created and downloaded from your side before any deletion.
 > 
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the SQL instance concerned.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the SQL instance concerned.
 
 To delete a database on your database server, go to the `Databases` tab, then click on the `...`{.action} button to the right of the database concerned, then click `Delete the database`{.action}.
 
