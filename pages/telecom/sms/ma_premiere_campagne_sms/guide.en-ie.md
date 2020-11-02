@@ -33,7 +33,7 @@ To add a contact list, click the `Contacts`{.action} tab, and then click `Create
 
 ![firstsms](images/firstsms03.png){.thumbnail}
 
-With the following guide, you can find out how to [create a list of SMS recipients](../create_sms_recipient_list/).
+With the following guide, you can find out how to [create a list of SMS recipients](../list_of_sms_recipients/).
 
 #### Add an address book
 
