@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configure an IP address on a virtual machine
 slug: configure-ip-on-virtual-machine
 excerpt: Learn how to configure an IP address on a virtual machine

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Horizon prieiga ir saugumas
 description:  Prieigos ir saugumo gide nurodoma, kaip apsaugoti virtualias mašinas ir prieigą prie jų.
 excerpt: Prieigos ir saugumo gide nurodoma, kaip apsaugoti virtualias mašinas ir prieigą prie jų.

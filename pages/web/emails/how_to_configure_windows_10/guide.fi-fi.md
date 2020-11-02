@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Sähköpostiosoitteen konfigurointi Sähköposti-sovelluksella (Windows 2010)'
 slug: sahkoposti-konfigurointi-windows-10
 excerpt: 'Opi konfiguroimaan MX Plan -sähköpostiosoite Sähköposti-sovelluksella Windowsissa'

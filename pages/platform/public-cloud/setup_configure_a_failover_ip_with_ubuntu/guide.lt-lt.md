@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: IP Failover konfigūravimas Ubuntu sistemoje
 excerpt: IP Failover konfigūravimas Ubuntu sistemoje
 slug: ip_failover_konfiguravimas_ubuntu_sistemoje

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuring IP aliasing'
 slug: network-ipaliasing
 excerpt: 'This guide explains how to add failover IPs to your configuration'

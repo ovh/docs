@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Put an instance in rescue mode'
 excerpt: 'This guide will show you how to put your instance in rescue mode'
 slug: virtualios_masinos_perjungimas_i_rescue_rezima

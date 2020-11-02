@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Adding hourly resources'
 slug: adding-hourly-resources
 excerpt: 'Find out how to add resources that are billed on an hourly basis'

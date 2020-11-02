@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Projektin yhteyshenkilöiden muuttaminen
 excerpt: Projektin yhteyshenkilöiden muuttaminen
 slug: projektin_yhteyshenkiloiden_muuttaminen

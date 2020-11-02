@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotelli: Virheilmoitus 500 Internal Server Error'
 excerpt: 'Webhotelli: Virheilmoitus 500 Internal Server Error'
 id: '1987'

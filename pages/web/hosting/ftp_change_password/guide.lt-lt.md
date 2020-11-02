@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Modifying a FTP user password
 slug: modify-ftp-user-password
 excerpt: Find out how to change the password for a FTP user created on your OVH Web Hosting plan

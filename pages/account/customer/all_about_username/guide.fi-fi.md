@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Kaikki mitä asiakastunnuksesta tarvitsee tietää'
 excerpt: Asiakastunnus
 slug: kaikki_mita_asiakastunnuksesta_tarvitsee_tietaa

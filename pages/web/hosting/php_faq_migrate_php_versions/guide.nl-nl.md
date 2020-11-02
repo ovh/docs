@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhosting: FAQ Migratie naar de meest recente PHP versies'
 excerpt: FAQ voor migratie naar de meest recente PHP versies
 slug: webhosting_faq_migratie_naar_de_meest_recente_php_versies

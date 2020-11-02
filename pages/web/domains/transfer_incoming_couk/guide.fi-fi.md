@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotelli: Verkkotunnuksen .co.uk siirto-ohje'
 excerpt: 'Webhotelli: Verkkotunnuksen .co.uk siirto-ohje'
 slug: webhotelli_verkkotunnuksen_couk_siirto-ohje

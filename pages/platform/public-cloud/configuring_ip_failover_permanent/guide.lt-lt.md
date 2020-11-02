@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Papildomo IP (Failover) priskyrimas ilgalaikiam naudojimui
 excerpt: Papildomo IP (Failover) priskyrimas ilgalaikiam naudojimui
 slug: papildomo_ip_failover_priskyrimas_ilgalaikiam_naudojimui

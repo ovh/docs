@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH-sähköposti: Outlook 2010 -konfigurointiohje'
 excerpt: ''
 slug: ovh-sahkoposti_outlook_2010_-konfigurointiohje

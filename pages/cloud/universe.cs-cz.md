@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Cloud
 slug: cloud
 excerpt: Vše o cloudových produktech OVH

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Het hosten van meerdere websites op uw webhostingplan'
 slug: multisite-configuratie-meerdere-websites
 excerpt: 'Ontdek hoe u verschillende sites op uw hostingplan kunt hosten'

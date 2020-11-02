@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Migrace e-mailových účtů prostřednictvím nástroje OVH Mail Migrator'
 slug: migrace-emailovych-uctu-prostrednictvim-ovh-mail-migrator
 excerpt: 'Seznámení s nástrojem OVH Mail Migrator'

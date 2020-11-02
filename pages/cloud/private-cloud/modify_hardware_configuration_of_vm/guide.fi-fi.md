@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Muokkaa virtuaalikoneesi rautakonfiguraatiota
 excerpt: ''
 slug: muokkaa_virtuaalikoneesi_rautakonfiguraatiota

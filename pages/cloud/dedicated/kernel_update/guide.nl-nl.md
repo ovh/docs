@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Update van de kernel op een dedicated server'
 excerpt: 'Ontdek hoe u de kernel van een distributie kunt updaten met behulp van een OVH core'
 slug: update-kernel-dedicated-server

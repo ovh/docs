@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Antrinio DNS konfigūravimas
 excerpt: Domeno konfigūravimas antriniame DNS
 slug: antrinio_dns_konfiguravimas

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Kaip pripažįstama disko vieta, pridėta prie jūsų OS'
 excerpt: ''
 slug: kaip_pripazistama_disko_vieta_prideta_prie_jusu_os

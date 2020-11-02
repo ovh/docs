@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Modifikace DNS zóny'
 slug: modifikace-dns-zony
 excerpt: 'Zjistěte, jak upravit DNS zónu prostřednictvím Zákaznického prostoru OVH'

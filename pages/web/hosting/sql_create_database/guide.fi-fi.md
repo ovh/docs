@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Tietokannan luominen webhotellissa'
 slug: tietokannan-luominen
 excerpt: 'Opi luomaan tietokanta OVH:n webhotellissa'

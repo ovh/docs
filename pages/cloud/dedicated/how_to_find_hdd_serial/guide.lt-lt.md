@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Finding the serial number of a hard disk
 slug: find-disk-serial-number
 excerpt: This guide will show you how to retrieve the serial number of a disk in order to proceed with its replacement.

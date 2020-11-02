@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'GPU-instanssin käyttöönotto'
 slug: gpu-instanssin-kayttoonotto
 excerpt: 'Katso, kuinka GPU-instanssia käytetään Linuxilla tai Windowsilla'

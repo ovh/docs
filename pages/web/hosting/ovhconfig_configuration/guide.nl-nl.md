@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuratie van het .ovhconfig-bestand op uw webhosting '
 slug: ovhconfig-bestand-bewerken
 excerpt: 'Ontdek hoe u het .ovhconfig-bestand kunt bewerken'

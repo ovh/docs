@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: HG Hardzone
 excerpt: Jak provádět zátěžové testy na serverech HG Hardzone.
 slug: hg_hardzone

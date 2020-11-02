@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2013/2016: Resursų paskyros naudojimas'
 excerpt: 'OVH Exchange: profesionalus pranešimų siuntimo sprendimas!'
 slug: exchange_20132016_resursu_paskyros_naudojimas

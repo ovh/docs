@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Výměna vadného disku'
 slug: vymena-disku
 excerpt: 'Zjistěte, jak identifikovat vadný disk a jak požádat o jeho výměnu'

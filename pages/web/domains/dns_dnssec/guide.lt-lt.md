@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Apsaugokite savo domeną su DNSSEC
 excerpt: ''
 slug: apsaugokite_savo_domena_su_dnssec

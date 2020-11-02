@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Sähköposti: konfigurointiohje Thunderbird Mac'
 excerpt: ''
 slug: sahkoposti_konfigurointiohje_thunderbird_mac

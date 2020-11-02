@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: BlackBerry Z10 (OS10) -konfiguraatio
 excerpt: ''
 slug: blackberry_z10_os10_-konfiguraatio

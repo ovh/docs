@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Palveluiden uusinta OVH:n API-rajapinnan kautta'
 slug: palvelun-uusinta-apin-kautta
 excerpt: 'Katso, kuinka uusit palvelusi OVH:n API-rajapinnan kautta'

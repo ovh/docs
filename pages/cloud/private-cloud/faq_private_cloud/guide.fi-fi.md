@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: UKK Dedicated Cloud
 excerpt: ''
 slug: ukk_dedicated_cloud

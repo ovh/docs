@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Kanta-asiakastili
 excerpt: 'Opi käyttämään OVH:n kanta-asiakastiliä'
 slug: kanta-asiakastili

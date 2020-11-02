@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Selainposti: RoundCube-ohje'
 excerpt: ''
 slug: selainposti_roundcube-ohje

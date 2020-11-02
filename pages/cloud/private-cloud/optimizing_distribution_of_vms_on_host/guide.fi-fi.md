@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Virtuaalikoneiden hajautuksen optimointi isäntäpalvelimilla
 excerpt: Miten parhaiten hajauttaa virtuaalikoneet isäntäpalvelimille resurssien optimointia varten?
 slug: virtuaalikoneiden_hajautuksen_optimointi_isantapalvelimilla

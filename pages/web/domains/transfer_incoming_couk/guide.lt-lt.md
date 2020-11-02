@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: domeno .co.uk perkėlimo gidas'
 excerpt: 'Svetainių talpinimas: domeno .co.uk perkėlimo gidas'
 slug: svetainiu_talpinimas_domeno_couk_perkelimo_gidas

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Asennusmallin luominen VMM:ssä'
 excerpt: 'Tässä ohjeessa kerromme miten voit helposti luoda asennusmallin VMM:ssä'
 slug: asennusmallin_luominen_vmmssa

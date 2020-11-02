@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuratie van uw Email Pro-account in Outlook 2016 voor Windows
 slug: configuratie-outlook-2016
 excerpt: Leer hoe u uw Email Pro-account in Outlook 2016 voor Windows kunt configureren

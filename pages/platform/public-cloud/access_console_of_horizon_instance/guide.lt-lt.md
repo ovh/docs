@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Prieiga prie konsolės Horizon sąsajoje
 excerpt: Kaip prisijungti prie virtualios mašinos konsolės Horizon sąsajoje?
 slug: prieiga_prie_konsoles_horizon_sasajoje

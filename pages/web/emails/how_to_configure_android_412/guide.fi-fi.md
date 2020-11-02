@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellit: Konfigurointi Android 4.1.2 -tabletilla'
 excerpt: Konfigurointi Android 4.1.2 -tabletilla
 slug: webhotellit_konfigurointi_android_412_-tabletilla

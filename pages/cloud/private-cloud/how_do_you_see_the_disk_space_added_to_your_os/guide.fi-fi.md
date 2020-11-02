@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Miten käyttöjärjestelmään lisätyn levytilan voi nähdä?
 excerpt: ''
 slug: miten_kayttojarjestelmaan_lisatyn_levytilan_voi_nahda

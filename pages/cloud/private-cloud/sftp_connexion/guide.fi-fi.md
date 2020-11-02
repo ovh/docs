@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: SFTP-yhteys
 excerpt: ''
 slug: sftp-yhteys

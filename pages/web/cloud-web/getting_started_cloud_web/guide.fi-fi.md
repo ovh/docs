@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Cloud Web -webhotellin käytön aloitus'
 slug: cloud-web-kayton-aloitus
 excerpt: 'Katso, kuinka webhotellin käyttö aloitetaan.'

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Private SQL -palvelun käytön aloitus
 slug: private-sql-kayton-aloitus
 excerpt: Katso kuinka Private SQL -palvelun käyttö aloitetaan

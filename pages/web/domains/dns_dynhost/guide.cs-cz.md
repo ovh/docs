@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Konfigurace dynamického DNS'
 slug: hosting-dynhost
 excerpt: 'Zjistěte, jak nakonfigurovat dynamický DNS záznam (DynHost) na své OVH doméně'

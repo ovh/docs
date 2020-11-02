@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Pääkäyttäjän salasanan vaihtaminen VPS-palvelimella
 slug: root-password
 excerpt: Lue tästä, kuinka yksityisen virtuaalipalvelimen salasana vaihdetaan.

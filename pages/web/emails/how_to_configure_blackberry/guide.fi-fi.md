@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellit: BlackBerryn konfigurointiohje'
 excerpt: Webhotellin sähköpostin konfigurointi BlackBerryyn
 slug: webhotellit_blackberryn_konfigurointiohje

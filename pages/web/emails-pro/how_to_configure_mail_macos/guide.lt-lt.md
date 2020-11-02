@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuring your Email Pro account on the macOS Mail app
 slug: configuring-email-pro-macos-mail
 excerpt: Find out how to configure your Email Pro account on the Mail app, for the following macOS operating systems - El Capitan, Sierra and High Sierra

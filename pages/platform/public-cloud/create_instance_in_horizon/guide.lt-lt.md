@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Virtualios mašinos kūrimas Horizon sąsajoje
 excerpt: Kaip Horizon sąsajoje sukurti virtualią mašiną?
 slug: virtualios_masinos_kurimas_horizon_sasajoje

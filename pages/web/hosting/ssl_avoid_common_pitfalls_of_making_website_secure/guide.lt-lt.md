@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Kaip išvengti SSL spąstų svetainei
 excerpt: Kaip išvengti SSL spąstų svetainei
 id: '2220'

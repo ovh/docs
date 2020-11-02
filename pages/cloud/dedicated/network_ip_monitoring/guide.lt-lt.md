@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: What are the IP addresses of the OVH monitoring ?
 slug: monitoring-ip-ovh
 excerpt: Find here the IP addresses to fill in when setting up a firewall so that OVH monitoring will continue to work on your server.

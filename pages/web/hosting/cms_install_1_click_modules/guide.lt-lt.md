@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Setting up your website with 1-click modules'
 slug: svetainiu_talpinimas_moduliu_diegimas_i_talpinimo_plana
 excerpt: 'Find out how to set up your website using our 1-click modules'

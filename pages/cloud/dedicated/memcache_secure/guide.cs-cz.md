@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Zabezpečení služby Memcached
 slug: zabezpeceni-serveru-se-sluzbou-memcached
 excerpt: Zjistěte, jak zabezpečit svou službu Memcached

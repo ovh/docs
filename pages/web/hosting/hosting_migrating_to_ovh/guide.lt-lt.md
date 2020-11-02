@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Migrating your website and emails to OVH
 slug: migrating-website-to-ovh
 excerpt: Find out how to migrate your website and emails to OVH without any service interruptions

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange -tilin konfigurointi Outlook 2016 -sovelluksella Windowsissa'
 slug: konfigurointi-outlook-2016
 excerpt: 'Opi konfiguroimaan Exchange -tili Outlook 2016 -sovelluksella Windowsissa'

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Wijziging van een Windows Server activeringssleutel'
 excerpt: 'Leer hoe u een activeringssleutel van uw Windows Server kunt wijzigen'
 slug: windows-key

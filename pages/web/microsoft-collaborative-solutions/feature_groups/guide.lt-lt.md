@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2013/2016: Grupių (mailing-list) naudojimas'
 excerpt: ''
 slug: exchange_20132016_grupiu_mailing-list_naudojimas

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Změna hesla e-mailové adresy MX Plan'
 slug: zmena-hesla-e-mail
 excerpt: 'Zjistěte, jak změnit heslo e-mailové adresy vytvořené v rámci služby MX Plan'

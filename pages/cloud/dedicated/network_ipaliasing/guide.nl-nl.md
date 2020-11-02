@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuratie van uw IP als alias'
 slug: network-ipaliasing
 excerpt: "Failover IP's toevoegen aan uw configuratie-onderdeel"

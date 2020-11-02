@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH e-mail handleiding: configuratie op Windows 8'
 excerpt: ''
 slug: ovh_e-mail_handleiding_configuratie_op_windows_8

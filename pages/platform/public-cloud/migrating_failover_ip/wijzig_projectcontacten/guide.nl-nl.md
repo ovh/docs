@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Wijzig projectcontacten
 excerpt: Wijzig projectcontacten
 slug: wijzig_projectcontacten

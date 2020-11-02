@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Přesměrování domény spravované společností OVH
 slug: presmerovani-domeny
 excerpt: Seznamte se s různými typy přesměrování a zjistěte, jak přesměrovat doménu spravovanou společností OVH

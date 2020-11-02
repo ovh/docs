@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: DNS-alueen muokkaus
 excerpt: Opi muokkaamaan DNS-aluetta OVH:n hallintapaneelin kautta
 slug: miten_dns-aluetta_muokataan

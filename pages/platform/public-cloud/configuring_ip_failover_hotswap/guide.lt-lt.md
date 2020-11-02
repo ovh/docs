@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: IP Failover konfigūravimas neišjungus sitemos
 excerpt: IP Failover konfigūravimas neišjungus sitemos
 slug: ip_failover_konfiguravimas_neisjungus_sitemos

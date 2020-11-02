@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuratie van E-mail Pro in macOS Mail
 slug: configureer-email-pro-macos-mail
 excerpt: Ontdek hoe u uw E-mail Pro-account kunt configureren in Mail van macOS El Capitan, Sierra en High Sierra

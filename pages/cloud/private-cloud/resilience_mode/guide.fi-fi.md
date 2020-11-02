@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Häiriönsietotilan käyttö'
 slug: hairionsietotila
 excerpt: 'Katso, kuinka OVH:n häiriönsietotilaa käytetään'

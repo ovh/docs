@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Konfigurace služby E-mail Pro'
 slug: prvotni-nastaveni
 excerpt: 'Zjistěte, jak nakonfigurovat svou službu E-mail Pro'

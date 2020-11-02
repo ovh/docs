@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Public Cloud kvotos padidinimas
 excerpt: Public Cloud kvotos padidinimas
 slug: public_cloud_kvotos_padidinimas

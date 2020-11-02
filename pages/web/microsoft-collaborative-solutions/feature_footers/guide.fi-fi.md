@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2013/2016: allekirjoitus/vastuuvapauslauseke'
 excerpt: Tässä oppassa kerrotaan miten automaattinen allekirjoitus lisätään.
 slug: exchange_20132016_allekirjoitusvastuuvapauslauseke

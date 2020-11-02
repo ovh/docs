@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Getting started with a Web Hosting plan
 excerpt: Building your website and setting up your email addresses 
 slug: pradzia_su_svetainiu_talpinimu

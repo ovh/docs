@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Gebruik van de OVH Network plugin'
 slug: plugin-ovh-network
 excerpt: 'Ontdek hoe u de OVH Network plugin op uw Private Cloud kunt gebruiken'

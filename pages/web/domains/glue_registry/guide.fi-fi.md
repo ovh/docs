@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH:n verkkotunnuksen nimipalvelinten personointi'
 slug: glue_registry
 excerpt: 'Opi personoimaan OVH:n verkkotunnuksesi nimipalvelimia'

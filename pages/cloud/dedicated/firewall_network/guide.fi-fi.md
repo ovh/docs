@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Firewall Network -palomuurin konfigurointi'
 slug: firewall-network
 excerpt: 'Katso, kuinka Firewall Network -palomuuri konfiguroidaan'

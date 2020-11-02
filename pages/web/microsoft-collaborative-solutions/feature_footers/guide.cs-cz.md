@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2013/2016: How to create an automatic signature'
 excerpt: Jak si ve službě Exchange 2013 nastavíte podpis pro svoji doménu.
 slug: exchange_20132016_how_to_create_an_automatic_signature

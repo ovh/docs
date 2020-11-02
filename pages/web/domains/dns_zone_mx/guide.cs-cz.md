@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Přidání MX záznamu v DNS zóně domény'
 slug: sdileny-mail-konfigurace-mx-dns-zona-ovh
 excerpt: 'Zjistěte, jak přidat MX záznam v DNS zóně své domény'

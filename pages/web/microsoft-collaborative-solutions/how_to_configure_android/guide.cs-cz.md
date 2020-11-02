@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Konfigurace účtu Exchange na Androidu prostřednictvím aplikace Gmail
 slug: konfigurace-android
 excerpt: Zjistěte, jak nakonfigurovat účet Exchange na Androidu prostřednictvím aplikace Gmail

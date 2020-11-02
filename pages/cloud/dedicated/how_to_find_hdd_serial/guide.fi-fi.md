@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Kovalevyn sarjanumeron hakeminen'
 slug: kovalevyn-sarjanumeron-hakeminen
 excerpt: 'Katso, kuinka kovalevyn sarjanumero haetaan levyn korvaamista varten'

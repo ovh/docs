@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Konfigurace síťového firewallu'
 slug: firewall-network
 excerpt: 'Zjistěte, jak nakonfigurovat řešení Firewall Network'

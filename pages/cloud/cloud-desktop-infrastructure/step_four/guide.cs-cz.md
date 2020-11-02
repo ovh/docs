@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 4. část - přidání uživatele k virtuální ploše
 slug: pridani-uzivatele-plocha
 excerpt: Zjistěte, jak přidat nového uživatele, a jak mu udělit přístup k virtuální ploše

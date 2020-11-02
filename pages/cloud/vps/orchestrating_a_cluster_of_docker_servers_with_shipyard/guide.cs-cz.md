@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Organizace clusteru Docker serverů s Shipyard
 excerpt: ''
 slug: organizace_clusteru_docker_serveru_s_shipyard

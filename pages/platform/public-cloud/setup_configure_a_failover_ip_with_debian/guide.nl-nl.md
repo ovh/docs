@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configureer een failover IP met Debian
 excerpt: Configureer een failover IP met Debian
 slug: configureer_een_failover_ip_met_debian

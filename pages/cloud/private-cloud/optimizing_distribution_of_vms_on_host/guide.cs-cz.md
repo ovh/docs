@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Optimalizace distribuce VM na hostitele
 excerpt: Jak nejlépe alokovat VM na hostitele pro optimalizaci zdrojů?
 slug: optimalizace_distribuce_vm_na_hostitele

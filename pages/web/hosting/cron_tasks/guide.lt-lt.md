@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: Automatinės užduotys / Cron'
 excerpt: 'Svetainių talpinimas: Automatinės užduotys / Cron'
 id: '1990'

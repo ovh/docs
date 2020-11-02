@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Add an SPF record to the configuration of your domain name
 excerpt: Learn how to add an SPF record to the configuration of your OVH domain name
 slug: svetainiu_talpinimas_spf_laukas

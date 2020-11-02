@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Jak nakonfigurovat IP jako alias'
 slug: network-ipaliasing
 excerpt: 'Přidání IP fail-over adres k Vaší konfiguraci'

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Přechod z hodinové na měsíční fakturaci'
 excerpt: 'Zjistěte, jak upravit fakturační režim svých Public Cloud instancí'
 slug: zmena-rezimu-fakturace-public-cloud

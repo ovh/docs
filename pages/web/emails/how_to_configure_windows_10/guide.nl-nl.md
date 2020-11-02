@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuratie van uw e-mailadres in de Courrier-app voor Windows 10
 slug: configuratie-courrier-windows-10
 excerpt: Ontdek hoe u uw MX Plan-e-mailadres kunt instellen in Courrier voor Windows

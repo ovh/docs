@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'IP-osoitteen konfigurointi aliaksena'
 slug: network-ipaliasing
 excerpt: 'Fail-over IP -osoitteiden lisääminen konfiguraatioon'

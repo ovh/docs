@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: VPS - restart v režimu rescue
 slug: rescue
 excerpt: Zjistěte jak restartovat své VPS v režimu rescue

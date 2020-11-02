@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Saugumo grupių konfigūravimas
 excerpt: Saugumo grupių konfigūravimas
 slug: saugumo_grupiu_konfiguravimas

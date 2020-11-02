@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Sähköpostiosoitteen konfigurointi Outlook 2016 -ohjelmalla Windowsissa
 slug: konfigurointi-outlook-2016
 excerpt: Opi konfiguroimaan MX Plan -sähköpostiosoite Outlook 2016 -ohjelmalla Windowsissa

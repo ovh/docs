@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Jak přidat úložiště?
 excerpt: ''
 slug: jak_pridat_uloziste

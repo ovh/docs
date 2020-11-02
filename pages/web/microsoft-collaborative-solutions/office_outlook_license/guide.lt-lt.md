@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2013: Exchange 2013 Outlook licencijų gidas'
 excerpt: Exchange 2013 Outlook licencijų užsakymo ir naudojimo gidas
 slug: exchange_2013_exchange_2013_outlook_licenciju_gidas

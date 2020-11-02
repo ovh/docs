@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Kaip idiegti SSL EV sertifikata interneto svetaineje?
 slug: ssl-ev
 excerpt: SSL EV sertifikatas suteikia garantija jusu paslaugu naudotojams, kad jusu imone yra legali, taip kuriamas pasitikejimas apsiperkant jusu interneto svetaineje.

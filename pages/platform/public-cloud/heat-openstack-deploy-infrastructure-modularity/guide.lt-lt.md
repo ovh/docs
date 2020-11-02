@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Deploying an infrastructure with variables and formatted outputs using OpenStack Heat (BETA)
 slug: deploy-infrastructure-with-variables-and-formatted-outputs-openstack-heat
 excerpt: Find out how to process environment variables using the modularity of Heat templates

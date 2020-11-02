@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellin tietokannan varmuuskopion hakeminen'
 slug: tietokannan-hakeminen
 excerpt: 'Katso, kuinka haetaan webhotellisi tietokannan varmuuskopio'

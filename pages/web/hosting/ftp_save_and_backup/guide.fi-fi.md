@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellin tallennustilan palautus'
 slug: palautus-ftp-filezilla-hallintapaneeli
 excerpt: 'Opi palauttamaan tiedosto tai webhotellisi koko tallennustila.'

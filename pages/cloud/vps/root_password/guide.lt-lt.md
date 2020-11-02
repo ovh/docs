@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Changing your root password on a VPS
 slug: root-password
 excerpt: Learn how to change the root password of a VPS

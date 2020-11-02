@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Sisällönhalintajärjestelmä, Prestashopin asennus käsin'
 excerpt: Miten Prestashop asennetaan käsin?
 id: '1979'

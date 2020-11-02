@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuratie van uw Exchange-account op Android via de Gmail-app
 slug: configuratie-android
 excerpt: Leer hoe u een Exchange-account kunt configureren op een Android via de Gmail-app

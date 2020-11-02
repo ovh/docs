@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellit: UKK - Migraatio uusimpiin PHP-versioihin'
 excerpt: 'Webhotellit: UKK - Migraatio uusimpiin PHP-versioihin'
 id: '1758'

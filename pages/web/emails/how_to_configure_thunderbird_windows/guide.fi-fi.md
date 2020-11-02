@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH-sähköposti: Thunderbirdin konfigurointi'
 excerpt: ''
 slug: ovh-sahkoposti_thunderbirdin_konfigurointi

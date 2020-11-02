@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Projektin poistaminen
 excerpt: Projektin poistaminen
 slug: projektin_poistaminen

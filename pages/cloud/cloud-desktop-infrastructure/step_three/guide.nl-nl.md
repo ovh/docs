@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Stap 3 - Creatie van uw eerste virtual desktop-pools
 slug: howto-creatie-pool
 excerpt: Leer hoe u uw eerste pool kunt aanmaken met VMware Horizon 7.1
