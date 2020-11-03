@@ -15,21 +15,16 @@ In the OVHcloud Control Panel, you can create universal signatures (footers) for
 
 **This guide explains how to create an automatic signature using the OVHcloud Control Panel.**
 
-> [!primary]
->
-> Although this guide will refer to our Exchange services, you can follow the instructions for Email Pro accounts as well.
->
-
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
-- an [OVHcloud Exchange](https://www.ovh.co.uk/emails/hosted-exchange) or [Email Pro](https://www.ovh.co.uk/emails/email-pro) solution already set up
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- an [OVHcloud Exchange](https://www.ovh.com/ca/en/emails/hosted-exchange/) solution already set up
 
 
 ## Instructions
 
-First, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), navigate to the "Web Cloud" section, and select your Exchange service from the column under `Microsoft`{.action} `Exchange`{.action} on the left-hand side. Click on the `More+`{.action} tab in the horizontal menu and select `Footers`{.action}.
+First, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), navigate to the "Web Cloud" section, and select your Exchange service from the column under `Microsoft`{.action} `Exchange`{.action} on the left-hand side. Click on the `More+`{.action} tab in the horizontal menu and select `Footers`{.action}.
 
 ![exchangesig](images/exchange-footer-step1.png){.thumbnail}
 
