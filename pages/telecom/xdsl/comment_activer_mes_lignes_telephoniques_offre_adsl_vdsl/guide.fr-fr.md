@@ -71,7 +71,7 @@ L'activation d'une ligne avec téléphone inclut l'envoi d'un téléphone IP sou
 Vous pouvez consulter les détails techniques de chaque téléphone [ici](http://www.ovhtelecom.fr/telephonie/comparatif-des-telephones.xml).
 
 Pour activer une ligne avec téléphone, choisissez le nombre de lignes à activer (par défaut 1 est proposé).
-<br>Cochez alors la case du téléphone de votre choix. Vous devez alors choisir le type de livraison :
+<br>Sélectionnez alors la case du téléphone de votre choix. Vous devez alors choisir le type de livraison :
 
 - la livraison par transporteur à 9.99€ HT se fait via la société **DHL** sous 24h ouvrées
 - la livraison en point relais **Mondial Relay** gratuite et sous 48h ouvrées.
@@ -84,7 +84,7 @@ Cette ligne sera alors disponible et utilisable après la réception et le branc
 
 ### Activation d'une ligne Fax
 
-Pour activer une ligne Fax, cliquez sur `Activer un service`{.action} dans le cadre « Téléphonie ». Cliquez alors sur `Activer`{.action} pour confirmer votre choix.
+Pour activer une ligne Fax, cliquez sur `Activer un service`{.action} dans le cadre « EcoFax Pro ». Cliquez alors sur `Activer`{.action} pour confirmer votre choix.
 
 ![activation ligne fax](images/Activation05-edit.png){.thumbnail}
 
