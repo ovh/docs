@@ -124,7 +124,7 @@ Si ce n'est pas le cas, vérifiez bien que l'activation de ligne est lancée sur
 
 Votre téléphone analogique doit être branché sur le port **phone 1** du modem (ou le port **phone 2** si c'est la deuxième ligne sans téléphone).
 
-Il y a une inversion sur les modems TG788 : le port phone2 est à gauche alors que le port phone1 est à droite.
+Il y a une inversion sur les modems TG788 : le port **phone 2** est à gauche alors que le port **phone 1** est à droite.
 
 ![](images/2015-03-18-143620_120x314_scrot.png){.thumbnail}
 ![](images/Activation06-edit.png){.thumbnail}
