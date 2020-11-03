@@ -33,7 +33,7 @@ Per ridurre al minimo il rischio di errore durante la sostituzione di un hard di
 Per conoscere il numero di serie di un hard disk con configurazione softRAID è sufficiente utilizzare il comando `smartctl`:
 
 ```sh
-smartctl -a /dev/sdX | grep "Serial"
+smartctl -a /dev/sdX | grep Serial
 ```
 
 
