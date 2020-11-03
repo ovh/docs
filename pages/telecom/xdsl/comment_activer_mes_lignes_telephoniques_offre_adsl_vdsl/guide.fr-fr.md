@@ -6,7 +6,7 @@ section: Premiers pas
 
 **Dernière mise à jour le 02/11/2020**
 
-## Objectif {#objectif}
+## Objectif
 
 Vous pouvez activer, selon votre [offre internet](https://www.ovhtelecom.fr/offre-internet/), une ou plusieurs lignes téléphoniques sur votre pack ADSL/VDSL/FTTH. 
 Ces dernières vous permettent d'émettre et recevoir des appels. Elles peuvent également être liées à un ou plusieurs numéros portés si vous en possédez.
