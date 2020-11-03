@@ -31,7 +31,7 @@ Um das Fehlerrisiko beim Austausch einer Festplatte zu minimieren, bitten wir un
 Um die Seriennummer Ihrer Festplatte mit Software-RAID-Konfiguration zu ermitteln, können Sie einfach smartctl verwenden:
 
 ```sh
-# smartctl -a /dev/sdX | grep Serial Serial Number:    XXXXXXX
+# smartctl -a /dev/sdX | grep Serial
 ```
 
 Das Gerät wird über das Betriebssystem erkannt. Zum Beispiel: `/dev/sda`, `/dev/sdb` etc.
@@ -137,7 +137,7 @@ Verwenden Sie die Geräte-ID und die Adapter-ID, um smartctl zu zeigen, welche F
 Der Befehl sieht in etwa wie folgt aus:
 
 ```sh
-# smartctl -d megaraid,N -a /dev/sdX | grep Serial Serial Number: 1234567890
+# smartctl -d megaraid,N -a /dev/sdX | grep Serial
 ```
 
 Die ID des RAID-Geräts wird wie folgt angezeigt: `/dev/sda` = 1\. RAID, `/dev/sdb` = 2\. RAID etc.
@@ -167,7 +167,7 @@ Um zu ermitteln, welche Festplatte zu einem bestimmten „sg“-Gerät gehört, 
 Wenn Sie das Gerät ermittelt haben, das mit der Festplatte, die Sie analysieren möchten, verbunden ist, verwenden Sie folgenden Befehl:
 
 ```sh
-# smartctl -a /dev/sgX | grep Serial Serial Number:    1234567890
+# smartctl -a /dev/sgX | grep Serial
 ```
 
 Die Nummer des sg-Geräts wird wie folgt angezeigt: `/dev/sg0`, `/dev/sg1` etc.
