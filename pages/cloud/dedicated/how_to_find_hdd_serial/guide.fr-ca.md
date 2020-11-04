@@ -31,7 +31,7 @@ Pour minimiser le risque d'erreur pendant le remplacement d’un disque dur, nou
 Pour récupérer le numéro de série de votre disque dur avec une configuration RAID logiciel, vous pouvez simplement utiliser smartctl :
 
 ```sh
-# smartctl -a /dev/sdX | grep Serial Serial Number:    XXXXXXX
+# smartctl -a /dev/sdX | grep Serial
 ```
 
 Le périphérique est détecté par le système d'exploitation. Par exemple : `/dev/sda`, `/dev/sdb`, etc.
@@ -137,7 +137,7 @@ Les ID du périphérique et de l'adaptateur seront utilisés pour indiquer à sm
 La commande devrait donc ressembler à ceci :
 
 ```sh
-# smartctl -d megaraid,N -a /dev/sdX | grep Serial Serial Number: 1234567890
+# smartctl -d megaraid,N -a /dev/sdX | grep Serial
 ```
 
 L'ID du périphérique RAID sera affiché comme suit: `/dev/sda` = 1er RAID, `/dev/sdb` = 2e RAID, etc.
@@ -154,7 +154,7 @@ L'ID du périphérique RAID sera affiché comme suit: `/dev/sda` = 1er RAID, `/d
 > Vous devez alors remplacer `megaraid` par `sat+megaraid` :
 >
 > ```
-> smartctl -d sat+megaraid,N -a /dev/sdX | grep Serial Serial Number:    1234567890
+> smartctl -d sat+megaraid,N -a /dev/sdX | grep Serial
 > ```
 >
 
@@ -167,7 +167,7 @@ Vous pouvez vous référer à [ce guide (contrôleur RAID LSI)](../raid-hard/){.
 Une fois que vous avez trouvé ce périphérique lié au disque dur que vous voulez analyser, utilisez la commande suivante :
 
 ```sh
-# smartctl -a /dev/sgX | grep Serial Serial Number:    1234567890
+# smartctl -a /dev/sgX | grep Serial
 ```
 
 Le numéro du périphérique sg sera affiché comme suit : `/dev/sg0`, `/dev/sg1`, etc.
