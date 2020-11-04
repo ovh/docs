@@ -5,7 +5,7 @@ excerpt: 'Find out how to enable SGX on your dedicated server and install the Li
 section: 'Advanced use'
 ---
 
-**Last updated 22th September 2020**
+**Last updated 22nd September 2020**
 
 ## Objective
 
