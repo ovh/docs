@@ -16,7 +16,7 @@ Niveau : Débutant
 
 ------------------------------------------------------------------------
 
-## Prérequis {#prérequis}
+## Prérequis
 
 - Disposer d'un accès xDSL/FTTH actif.
 - Être connecté à l’[espace client OVHcloud](https://www.ovhtelecom.fr/manager/), partie `Télécom`.
