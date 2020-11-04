@@ -31,7 +31,7 @@ Connectez-vous à votre [Espace Client OVHcloud](https://www.ovhtelecom.fr/manag
 ![Resiliation acces](images/Resiliation01-edit.png){.thumbnail}
 
 Si vous êtes toujours engagé pour cet accès, le montant des frais de résiliation sera indiqué dans la rubrique "**Restant à payer**".
-<br>Choisissez la **date** souhaitée pour cette résiliation ainsi que la raison decette dernière.
+<br>Choisissez la **date** souhaitée pour cette résiliation ainsi que la raison de cette dernière.
 
 ![Raison resiliation](images/Resiliation02-edit.png){.thumbnail}
 
