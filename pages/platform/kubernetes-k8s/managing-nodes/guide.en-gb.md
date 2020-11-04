@@ -6,7 +6,7 @@ section: User guides
 order: 0
 ---
 
-**Last updated July 23<sup>th</sup> July, 2020.**
+**Last updated Nov 2<sup>nd</sup>, 2020.**
 
 ## Objective
 
@@ -58,7 +58,7 @@ Select the number of node to add. The type of node is automatically decided, as 
 
 ![Select the number of node to add](images/managing_nodes-06.png){.thumbnail}
 
-Then you can choose the billing mode, as each node's billing mode can be independently set.
+Then you can choose the billing mode and anti-affinity properties. Anti affinity ensures that nodes will be created on different hypervisors (baremetal machines) and therefore ensure the best availability for your workloads. Note that anti-affinity limits the number of nodes in the pool to 5 maximum (but you can of course create multiple pools). Activating Monthly billing will apply to all current and upcoming nodes in the pool.
 
 After you validate, your nodes will be installed.
 
