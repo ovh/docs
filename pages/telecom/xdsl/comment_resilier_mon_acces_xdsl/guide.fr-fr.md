@@ -41,6 +41,8 @@ Il vous sera ensuite possible de demander à conserver certains services liés �
 - compte exchange (si pack xDSL entreprise)
 - nom de domaine (si pack xDSL entreprise)
 
+Pour cela, il vous suffit de cocher les cases correspondants aux services que vous souhaitez conserver.
+
 ![Conservation service](images/Resiliation03-edit.png){.thumbnail}
 
 Une fois vos choix effectué, cliquez sur le bouton `Résilier` en bas de page
