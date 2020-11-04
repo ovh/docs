@@ -1,70 +1,69 @@
 ---
-title: Comment résilier mon accès xDSL/FTTH
+title: Comment résilier un accès xDSL/FTTH
 slug: comment-resilier-mon-acces-xdsl
+excerpt: Découvrez comment demander la résiliation de votre accès Internet
 section: Gestion de mon offre
 ---
 
+**Dernière mise à jour le 04/11/2020**
+
 ## Objectif
 
-Votre offre internet ne vous convient plus, vous pouvez alors demander la résiliation de votre offre actuelle.
-
-La résiliation sera effective à la prochaine facturation de votre accès et les instructions pour retourner votre modem vous seront envoyées.
-
-**Sommaire :**
-
-Niveau : Débutant
-
-------------------------------------------------------------------------
+Votre offre d'accès à Internet ne vous convient plus, vous pouvez en demander la résiliation depuis votre espace client OVHcloud.
+La résiliation sera effective à la prochaine facturation de votre accès à Internet. Les instructions pour retourner votre modem vous seront envoyées par e-mail.
 
 ## Prérequis
 
 - Disposer d'un accès xDSL/FTTH actif.
-- Être connecté à l’[espace client OVHcloud](https://www.ovhtelecom.fr/manager/), partie `Télécom`.
+- Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), partie `Télécom`.
 
-------------------------------------------------------------------------
+## Instructions
 
-## Demander la résiliation
+### Demander la résiliation
 
-Connectez-vous à votre [Espace Client OVHcloud](https://www.ovhtelecom.fr/manager/), puis sélectionnez votre pack dans la rubrique "**Accès Internet**".
-<br>Cliquez ensuite sur le bouton `Résilier` dans la catégorie "**Informations Générales**".
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), partie `Télécom`, puis sélectionnez votre pack dans le menu  `Accès Internet`.
+<br>Cliquez alors sur le bouton `Résilier`{.action} dans le cadre « Informations Générales ».
 
 ![Resiliation acces](images/Resiliation01-edit.png){.thumbnail}
 
-Si vous êtes toujours engagé pour cet accès, le montant des frais de résiliation sera indiqué dans la rubrique "**Restant à payer**".
-<br>Choisissez la **date** souhaitée pour cette résiliation ainsi que la raison de cette dernière.
+Si vous êtes toujours engagé pour cet accès, le montant des frais de résiliation sera indiqué dans la rubrique « Restant à payer ».
+<br>Choisissez la date souhaitée pour cette résiliation ainsi que la raison de cette dernière.
 
 ![Raison resiliation](images/Resiliation02-edit.png){.thumbnail}
 
-Il vous sera ensuite possible de demander à conserver certains services liés à votre pack (s'ils ont été auparavant activés) tel que :
-- lignes voip/fax
+Il vous sera alors possible de demander à conserver certains services liés à votre pack (s'ils ont été auparavant activés) tels que :
+- lignes VoIP/Fax
 - numéro(s) porté(s)
-- compte exchange (si pack xDSL entreprise)
-- nom de domaine (si pack xDSL entreprise)
+- compte Exchange (si pack xDSL Entreprise)
+- nom de domaine (si pack xDSL Entreprise)
 
 Pour cela, il vous suffit de cocher les cases correspondants aux services que vous souhaitez conserver.
 
 ![Conservation service](images/Resiliation03-edit.png){.thumbnail}
 
-Une fois vos choix effectué, cliquez sur le bouton `Résilier` en bas de page
+Une fois vos choix effectués, cliquez sur le bouton `Résilier`{.action} en bas de page.
 
 ![Validation resiliation](images/Resiliation04-edit.png){.thumbnail}
 
-Vous recevrez un e-mail vous confirmant la prise en compte de la demande de résiliation ainsi qu'un mail avec le bon de retour de votre modem.
+Vous recevrez un e-mail vous confirmant la prise en compte de la demande de résiliation ainsi qu'un e-mail contenant le bon de retour de votre modem.
 
-------------------------------------------------------------------------
-
-## Annuler la résiliation
+### Annuler la résiliation
 
 Cette action n'est possible que si la demande de résiliation a été effectuée au cours du mois.
 <br> Cette annulation peut être réalisée jusqu'à la veille de la date de résiliation.
 
-Connectez-vous à votre [Espace Client OVHcloud](https://www.ovhtelecom.fr/manager/), puis sélectionnez votre pack dans la rubrique "**Accès Internet**".
-<br>Dans le cadre "**Informations générales**", cliquez sur le bouton `Annuler` à droite de la date de résiliation.
+Connectez-vous à votre [Espace Client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), partie `Télécom`, puis sélectionnez votre pack dans le menu `Accès Internet`.
+
+<br>Dans le cadre « Informations Générales », cliquez sur le bouton `Annuler`{.action} à droite de la date de résiliation.
 
 ![Annulation resiliation](images/Resiliation05-edit.png){.thumbnail}
 
-<br>Afin de valider cette annulation, cliquez sur le bouton `Annuler la résiliation en cours`
+<br>Afin de valider cette annulation, cliquez sur le bouton `Annuler la résiliation en cours`{.action}.
 
 ![Annulation resiliation](images/Resiliation06-edit.png){.thumbnail}
 
 Vous recevrez un e-mail vous confirmant la prise en compte de l'annulation de la résiliation.
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
