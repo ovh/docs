@@ -68,7 +68,7 @@ W wiadomości e-mail zamieścimy link, który pozwoli Ci potwierdzić rezygnacj�
 
 Możesz również zatwierdzić dyspozycję zakończenia usługi za pośrednictwem następującego API OVHcloud:
 
-> \[!api]
+> [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/confirmTermination
 >
