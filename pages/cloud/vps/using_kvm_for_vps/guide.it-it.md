@@ -63,7 +63,7 @@ Potrebbe verificarsi un problema di connessione al KVM tramite il tuo pannello d
 
 Se hai un VPS 2014, puoi riscontrare un *errore 1006*. Controllare l'API tramite la chiamata qui sotto potrebbe risolvere questo problema.
 
-> \[!api]
+> [!api]
 >
 > @api {POST} /vps/{serviceName}/openConsoleAccess
 >
@@ -87,7 +87,7 @@ Utilizza i dettagli forniti dalla chiamata API per connetterti da remoto al VPS 
 
 Con i VPS 2016, l'API consigliata per accedere al KVM è la seguente:
 
-> \[!api]
+> [!api]
 >
 > @api {POST} /vps /{serviceName}/getConsoleUrl
 >
