@@ -14,6 +14,7 @@ Cloud Disk Array (CDA) is a private, dedicated (on disk level) storage system po
 - CephFS (NFS-like filesystem) - provides distributed filesystem for all modern Linux distributions
 
 There are also other ways to access Ceph which are not currently available for CDA:
+
 - iSCSI gateway for RBD - for integration with existing environment with iSCSI support
 - RGW (REST object storage) - can be used to build a CDN (with an OVH provided load-balancer)
 - NFS and CIFS (SAMBA) gateways for CephFS - for integration with existing Windows or Linux environments
@@ -35,7 +36,7 @@ You will be able to increase the capacity from the manager.
 
 
 ## Can I deploy a filesystem over my Cloud Disk Array? If yes which ones?
-At the moment we do not provide yet CephFS. As an alternative for now you could build a NFS or SAMBA filesystem on top of RBD devices.
+You can enable CephFS using API to have fully managed distributed filestystem.
 
 
 ## Can I decrease my Cloud Disk Array storage capacity?
