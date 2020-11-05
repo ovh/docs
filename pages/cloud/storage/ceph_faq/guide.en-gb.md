@@ -37,7 +37,7 @@ Yes, you can increase size of you CDA through API.
 No - at the moment it is not possible.
 
 
-## Can I deploy a filesystem over my Cloud Disk Array? If yes which ones?
+## Can I deploy a filesystem over my Cloud Disk Array?
 You can enable CephFS using API to have fully managed distributed filestystem.
 
 
