@@ -26,17 +26,17 @@ La demande de changement d'offre s'effectue via votre [espace client OVHcloud](h
 Sélectionnez le pack que vous souhaitez faire évoluer.
 <br>Cliquez ensuite `Changer d'offre`{.action} dans le cadre "**informations générales**":
 
-![changement d'offre](images/changement01-edit.png){.thumbnail}
+![changement d'offre](images/Changement01-edit.png){.thumbnail}
 
 Dans le tableau, sur la page suivante, vous allez retrouver plusieurs informations.
 
 La première colonne concerne votre offre actuelle (son intitulé, son prix et les services actifs) et chacunes des autres colonnes concernent les offres auxquelles vous pouvez souscrire à votre adresse actuelle.
 
-![choix de l'offre](images/changement02-edit.png){.thumbnail}
+![choix de l'offre](images/Changement02-edit.png){.thumbnail}
 
 Lors de la dernière étape, une demande de confirmation apparaîtra afin de valider le changement d'offre.
 
-![Validation de l'offre](images/changement03-edit.png){.thumbnail}
+![Validation de l'offre](images/Changement03-edit.png){.thumbnail}
 
 Il faut compter un délai **d'une heure** pour que le changement soit effectif, sauf en cas de changement de modem (un délai d'expédition de 24 à 48 heures peut être observé) ou changement de collecte (changement physique au niveau de la ligne qui implique une demande auprès d'Orange, 7 à 10 jours en moyenne avec une coupure probable du service).
 
