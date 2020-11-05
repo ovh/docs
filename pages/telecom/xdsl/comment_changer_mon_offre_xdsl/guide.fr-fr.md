@@ -31,6 +31,7 @@ Sélectionnez le pack que vous souhaitez faire évoluer.
 Dans le tableau, sur la page suivante, vous allez retrouver plusieurs informations.
 
 La première colonne concerne votre offre actuelle (son intitulé, son prix et les services actifs) et chacunes des autres colonnes concernent les offres auxquelles vous pouvez souscrire à votre adresse actuelle.
+<br>Cliquez sur le bouton `Choisir cette offre`{.action} sous la colonne correspondant à l'offre que vous souhaitez mettre en place.
 
 ![choix de l'offre](images/Changement02-edit.png){.thumbnail}
 
@@ -38,7 +39,7 @@ Lors de la dernière étape, une demande de confirmation apparaîtra afin de val
 
 ![Validation de l'offre](images/Changement03-edit.png){.thumbnail}
 
-Il faut compter un délai **d'une heure** pour que le changement soit effectif, sauf en cas de changement de modem (un délai d'expédition de 24 à 48 heures peut être observé) ou changement de collecte (changement physique au niveau de la ligne qui implique une demande auprès d'Orange, 7 à 10 jours en moyenne avec une coupure probable du service).
+Il faut compter un délai d'une heure pour que le changement soit effectif, sauf en cas de changement de modem (un délai d'expédition de 24 à 48 heures peut être observé) ou changement de collecte (changement physique au niveau de la ligne qui implique une demande auprès d'Orange, 7 à 10 jours en moyenne avec une coupure probable du service).
 
 ------------------------------------------------------------------------
 
