@@ -30,25 +30,21 @@ To reduce latency when accessing your cluster, your clients should be in the sam
 
 
 ## Can I increase my Cloud Disk Array storage capacity?
-This feature is not available yet. It will be within few days.
-
-You will be able to increase the capacity from the manager.
-
-
-## Can I deploy a filesystem over my Cloud Disk Array? If yes which ones?
-You can enable CephFS using API to have fully managed distributed filestystem.
+Yes, you can increase size of you CDA through API.
 
 
 ## Can I decrease my Cloud Disk Array storage capacity?
 No - at the moment it is not possible.
 
 
+## Can I deploy a filesystem over my Cloud Disk Array? If yes which ones?
+You can enable CephFS using API to have fully managed distributed filestystem.
+
+
 ## Is it possible to access a Cloud Disk Array from a service not hosted by OVH?
 Short answer is: No - at the moment it is not possible.
 
-Currently Cloud Disk Array provides only RBD (Rados Block Device) access to the data storage. The mechanism allows you to expose CDA as an ordinary Linux Block Device (e.g. /dev/rbd0).
-
-In order to maximize performance and minimize latency for such block devices it is only possible to use RBD inside OVH network - from other OVH services. If you need external block device access please contact us.
+In order to maximize performance and minimize latency for block devices (RBD) and fileystem (CephFS) it is only possible to use it inside OVH network - from other OVH services. If you need external access please contact us.
 
 Please keep in mind that there are plans to add another mechanism for accessing CDA data storage - Rados Gateway. Rados Gateway will be able to expose CDA access to services located outside OVH via SWIFT API.
 
