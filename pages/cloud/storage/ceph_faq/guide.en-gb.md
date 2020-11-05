@@ -30,7 +30,7 @@ To reduce latency when accessing your cluster, your clients should be in the sam
 
 
 ## Can I increase my Cloud Disk Array storage capacity?
-Yes, you can increase size of you CDA through API.
+Yes, you can increase size of you CDA through an API.
 
 
 ## Can I decrease my Cloud Disk Array storage capacity?
