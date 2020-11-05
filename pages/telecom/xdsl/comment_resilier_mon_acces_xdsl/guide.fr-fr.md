@@ -17,7 +17,7 @@ La résiliation sera effective à la prochaine facturation de votre accès à In
 - Disposer d'un accès xDSL/FTTH actif.
 - Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), partie `Télécom`.
 
-## Instructions
+## En pratique
 
 ### Demander la résiliation
 
