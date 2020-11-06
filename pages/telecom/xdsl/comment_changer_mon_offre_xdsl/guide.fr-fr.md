@@ -35,6 +35,7 @@ La première colonne concerne votre offre actuelle (son intitulé, son prix et l
 ![choix de l'offre](images/Changement02-edit.png){.thumbnail}
 
 Lors de la dernière étape, une demande de confirmation apparaîtra afin de valider le changement d'offre.
+<br>Cochez la case afin d'accepter les différents contrats puis cliquez sur le bouton `Valider le changement d'offre`{.action}.
 
 ![Validation de l'offre](images/Changement03-edit.png){.thumbnail}
 
