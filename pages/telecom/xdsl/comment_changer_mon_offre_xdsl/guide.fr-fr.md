@@ -40,9 +40,8 @@ Lors de la dernière étape, une demande de confirmation apparaîtra afin de val
 
 Il faut compter un délai d'une heure pour que le changement soit effectif, sauf en cas de changement de modem (un délai d'expédition de 24 à 48 heures peut être observé) ou changement de collecte (changement physique au niveau de la ligne qui implique une demande auprès d'Orange, 7 à 10 jours en moyenne avec une coupure probable du service).
 
-------------------------------------------------------------------------
 
-## Les particularités {#les-particularités}
+## Les particularités
 
 Suivant l'offre que vous possédez, vous pouvez être amené à effectuer un changement de modem (offre no!Tv, nobox, double ADSL, Pro et bêta).
 <br> Le changement de modem vous sera alors indiqué lors du changement d'offre.
@@ -53,6 +52,8 @@ Si vous possédez une offre Express, vous avez la possibilité de la faire évol
 
 Le changement d'offre n'est pas disponible sur les offres SDSL.
 
-------------------------------------------------------------------------
 
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
 
