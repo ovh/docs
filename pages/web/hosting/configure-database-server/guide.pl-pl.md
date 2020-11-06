@@ -2,7 +2,7 @@
 title: 'Konfiguracja serwera baz danych'
 slug: konfiguracja-optymalizacja-serwera-bazy-danych
 excerpt: 'Dowiedz się, jak skonfigurować i zoptymalizować serwer bazy danych'
-section: 'Prywatny SQL'
+section: 'Private SQL'
 order: 6
 ---
 
