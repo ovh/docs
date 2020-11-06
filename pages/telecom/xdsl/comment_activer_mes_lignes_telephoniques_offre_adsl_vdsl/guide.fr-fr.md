@@ -1,131 +1,122 @@
 ---
-title: Comment activer mes lignes téléphoniques ? (Offre ADSL/VDSL)
+title: Comment activer mes lignes téléphoniques ? (Offres ADSL/VDSL/FTTH)
 slug: comment-activer-mes-lignes-telephoniques-offre-adsl-vdsl
-legacy_guide_number: '7962634'
-space_key: CRXDSL
-space_name: XDSL
 section: Premiers pas
 ---
 
-Préambule {#préambule}
----------
+**Dernière mise à jour le 02/11/2020**
 
-Vous pouvez commander, selon l'offre, plusieurs lignes téléphoniques avec votre pack ADSL/VDSL. Ces dernières peuvent permettre par exemple de joindre et être joignable avec le numéro porté si il y en a un.
+## Objectif
 
-Ces lignes ne sont pas livrées en même temps que l'accès ADSL/VDSL, ce guide vous montre comment les activer.
+Vous pouvez activer, selon votre [offre internet](https://www.ovhtelecom.fr/offre-internet/), une ou plusieurs lignes téléphoniques sur votre pack ADSL/VDSL/FTTH. 
+Ces dernières vous permettent d'émettre et recevoir des appels. Elles peuvent également être liées à un ou plusieurs numéros portés si vous en possédez.
 
-**Sommaire :**
+**Ces lignes ne sont pas livrées en même temps que l'accès ADSL/VDSL/FTTH, ce guide vous explique comment les activer.**
 
-Niveau : Débutant
+## Prérequis
 
-------------------------------------------------------------------------
-
-### Prérequis {#prérequis}
-
--   Disposer d'un pack ADSL/VDSL actif.
+-   Disposer d'un [pack ADSL/VDSL/FTTH](https://www.ovhtelecom.fr/offre-internet/) actif.
 -   Disposer d'une ou plusieurs ligne(s) non activée(s) dans ce pack.
 
-------------------------------------------------------------------------
+## En Pratique
 
-### Combien de ligne puis-je activer? {#combien-de-ligne-puis-je-activer}
+### Combien de lignes puis-je activer ?
 
-Selon l'offre ADSL/VDSL que vous avez commandée, vous disposez de 2 à 10 emplacements pour lignes téléphoniques et de 0 à 10 emplacements pour lignes fax virtuel. Lorsque vous activez une ligne, celle-ci va occuper un emplacement.
+Selon l'offre ADSL/VDSL/FTTH à laquelle vous avez souscrite, vous disposez d'au minimum 1 emplacement pour des lignes téléphoniques et de 0 à 1 emplacement pour une ligne fax virtuelle. 
+Lorsque vous activez une ligne, celle-ci va occuper un emplacement.
 
-Pour connaître le nombre d'emplacements libres restants :
+Pour connaître le nombre d'emplacements libres restants, rendez vous dans la rubrique `Telecom` de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Cliquez ensuite sur `Accès Internet`{.action} dans le menu de gauche et sélectionnez votre offre.
 
--   rendez vous dans votre **Espace Client** sur <https://www.ovhtelecom.fr/espaceclient/> ;
+En sélectionnant votre pack, vous obtenez une vue globale des services associés à ce dernier. Vous pourrez alors retrouver le nombre d'emplacements encore disponibles.
 
-Vous obtenez une vue globale des services associés à l'ensemble de vos packs ADSL/VDSL, vous pouvez en déduire le nombre d'emplacements libres.
+![nombre de lignes](images/Activation01-edit.png){.thumbnail}
 
-Si vous avez plusieurs packs ADSL/VDSL sur votre compte client, vous pouvez connaître le détail des services associés à un pack ADSL/VDSL en particulier :
+Dans l'exemple ci-dessus, il y a:
 
--   et en cliquant sur **votre accès**.
-
-![](images/2015-12-14-113743_1259x803_scrot.png){.thumbnail}
-
-Dans notre cas, il y a:
-
--   2 emplacements téléphoniques déjà activés ;
+-   1 emplacement téléphonique déjà activé ;
 -   1 emplacement fax déjà activé.
 
-Il ne reste pas d'emplacement libre, nous ne pouvons plus activer de ligne téléphonique ou fax pour ce pack ADSL/VDSL.
+Il reste un emplacement libre, nous pouvons donc activer 1 ligne téléphonique pour ce pack ADSL/VDSL/FTTH.
 
-------------------------------------------------------------------------
 
-### Comment activer mes lignes associées au Pack-ADSL? {#comment-activer-mes-lignes-associées-au-pack-adsl}
+### Comment activer les lignes associées à mon Pack ?
 
-S'il vous reste des emplacements libres, vous pouvez activer vos lignes téléphoniques/FAX. Pour cela:
+S'il vous reste des emplacements libres, vous pouvez activer vos lignes téléphoniques/FAX. 
 
--   rendez vous dans votre****Espace Client****sur <https://www.ovhtelecom.fr/espaceclient/> ;
--   cliquez sur **"Activer un service"** dans la**Téléphonie**.
+Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), sélectionnez votre pack dans la liste de vos services puis cliquez sur `Activer un service`{.action} dans le cadre « Téléphonie ».
 
-![](images/2015-12-14-145929_515x180_scrot.png){.thumbnail}
+![activer une ligne](images/Activation02-edit.png){.thumbnail}
 
-Vous avez le choix d'activer la ligne **avec ou sans** téléphone, quelle est la différence?
+Vous avez alors le choix d'activer la ligne **avec ou sans** téléphone.
 
-##### Sans Téléphone {#sans-téléphone}
+#### **Sans téléphone**
 
-Une ligne sans téléphone est une ligne qui sera techniquement configurée directement dans le modem sans action de votre part. Il vous suffira de brancher un simple téléphone analogique sur le modem. Plus de détails i[ci](#Commentactivermeslignestéléphoniques?(OffreADSL/VDSL)-SansTelephone).
+Une ligne sans téléphone est une ligne qui sera techniquement configurée directement dans le modem sans action de votre part. Il vous suffira de brancher un simple téléphone **analogique** sur le modem. Plus de détails [ici](./#comment-utiliser-les-lignes-activees-sans-telephone).
 
 Ce type d'activation nécessite que vous possédiez un téléphone analogique personnel.
 
-Vous ne pouvez activer que deux lignes sans téléphone par accès car il n'y a que deux ports téléphoniques sur le modem.
+Vous ne pouvez activer que deux lignes sans téléphone par accès car il n'y a que deux ports analogiques disponibles sur le modem.
 
-Pour activer une ligne sans téléphone :
+Pour activer une ligne sans téléphone, choisissez le nombre de lignes à activer (par défaut 1 est proposé).
+<br>Sélectionnez ensuite la case `Ligne SIP sans téléphone`{.action} puis cliquez sur `Valider la commande`{.action} en bas de page.
 
--   Choisissez le **Nombre de lignes** à activer
--   Décochez la case **"Avec Téléphone"**.
--   Cliquez sur **"Valider la commande".**
+![activation ligne sans téléphone ](images/Activation03-edit.png){.thumbnail}
 
-![](images/2015-12-14-144546_636x456_scrot.png){.thumbnail}
+Cette ligne sera alors disponible dans un délai moyen d'une heure.
 
-Cette ligne sera alors disponible sous 1h environ.
+#### **Avec un téléphone**
 
-##### Avec Téléphone {#avec-téléphone}
+L'activation d'une ligne avec téléphone inclut l'envoi d'un téléphone IP sous caution qu'il suffira de brancher sur le réseau de votre modem comme un simple ordinateur.
 
-L'activation d'une ligne avec Téléphone inclut l'envoi d'un téléphone IP sous caution qu'il suffira de brancher sur le réseau de votre modem comme un simple ordinateur.
+Vous pouvez consulter les détails techniques de chaque téléphone [ici](http://www.ovhtelecom.fr/telephonie/comparatif-des-telephones.xml).
 
-Vous pouvez consulter les détails techniques de chaque téléphone [ici](http://www.ovhtelecom.fr/telephonie/comparatif-des-telephones.xml){.external-link}[](http://www.ovhtelecom.fr/telephonie/comparatif-des-telephones.xml){.external-link}.
+Pour activer une ligne avec téléphone, choisissez le nombre de lignes à activer (par défaut 1 est proposé).
+<br>Sélectionnez alors la case du téléphone de votre choix. Vous devez alors choisir le type de livraison :
 
-Pour activer une ligne avec téléphone :
+- la livraison par transporteur à 9.99€ HT se fait via la société **DHL** sous 24h ouvrées
+- la livraison en point relais **Mondial Relay** gratuite et sous 48h ouvrées.
 
--   Cochez la case **"Avec Téléphone"**.
--   Cliquez sur **"Chosir"** sur la case du téléphone de votre choix.
--   Choisissez le type de livraison :
-    -   La livraison par transporteur à 9.99€ HT se fait via la société **DHL** sous 24h ouvrées.
-    -   La livraison en point relais **Mondial Relay** gratuite et sous 48h ouvrées.
--   Cliquez sur **"Valider la commande".**
+Cliquez sur `Valider la commande`{.action} une fois votre choix effectué.
 
-![](images/2015-12-14-145127_1000x671_scrot.png){.thumbnail}
+![activation ligne avec téléphone](images/Activation04-edit.png){.thumbnail}
 
-Cette ligne sera alors disponible et utilisable après le branchement du téléphone sur votre modem.
+Cette ligne sera alors disponible et utilisable après la réception et le branchement du téléphone sur votre modem.
 
-#### Activation d'une ligne Fax {#activation-dune-ligne-fax}
+### Activation d'une ligne Fax
 
--   Cliquez sur **"Activer un service"** dans la**Téléphonie**.
--   Cliquez sur **"Activer**" lors de la confirmation.
+Pour activer une ligne Fax, cliquez sur `Activer un service`{.action} dans le cadre « EcoFax Pro ». Cliquez alors sur `Activer`{.action} pour confirmer votre choix.
 
-![](images/2015-12-14-145734_524x177_scrot.png){.thumbnail}
+![activation ligne fax](images/Activation05-edit.png){.thumbnail}
 
-Cette ligne sera alors disponible sous une heure environ.
+Cette ligne sera alors disponible dans un délai moyen d'une heure.
 
-Veuillez consulter [cette page]({originalUrl}/display/CRFAX/Configurer+ma+ligne+Ecofax+Pro) afin d'avoir plus de détails sur son utilisation.
+Veuillez consulter [nos guides Fax](https://docs.ovh.com/fr/fax/) afin d'avoir plus de détails sur l'utilisation de ce service.
 
-------------------------------------------------------------------------
 
-### Comment utiliser les lignes activées sans téléphone? {#comment-utiliser-les-lignes-activées-sans-téléphone}
+### Comment utiliser les lignes activées sans téléphone
 
 Si vous avez activé une ligne sans téléphone, vous devez posséder un simple téléphone analogique à fréquence vocale, c'est à dire un téléphone qui peut être utilisé sur une ligne fixe France Télécom par exemple.
 
-Pour que cette ligne soit utilisable,**les conditions suivantes doivent être remplies**:
+Pour que cette ligne soit utilisable, **les conditions suivantes doivent être remplies**:
 
-![](images/2015-03-18-143620_120x314_scrot.png){.thumbnail}
+Le voyant **Voice** du modem doit être allumé pour les modems technicolor (TG788 et TG799). 
+<br>Le voyant **Phone** du modem doit être allumé sur les modems Zyxel.
+<br>Si ce n'est pas le cas, vérifiez bien que l'activation de ligne a été effectuée sur l'espace client OVHcloud et patientez une heure.
 
-![](images/untitled.jpg){.thumbnail}
+![voyants technicolor](images/2015-03-18-143620_120x314_scrot.png){.thumbnail}
 
-Le voyant **Voice** du modem doit être allumé.Si ce n'est pas le cas, vérifiez bien que l'activation de ligne est lancée sur le manager et attendez une heure.
+![voyants zyxel](images/Activation06-edit.png){.thumbnail}
 
-Votre téléphone analogique doit être branché sur le port **phone1** du modem (ou le port **phone 2** si c'est la deuxième ligne sans téléphone).
+Votre téléphone analogique doit être branché sur le port **phone 1** du modem (ou le port **phone 2** si c'est la deuxième ligne sans téléphone).
 
-Il y a une inversion sur les modems TG788 : le port phone2 est à gauche alors que le port phone1 est à droite.
+> [!primary]
+> Il y a une inversion de ports sur les modems TG788 : le port **phone 2** est à gauche alors que le port **phone 1** est à droite.
+>
 
+![schéma branchement tg788](images/untitled.jpg){.thumbnail}
+
+## Aller plus loin
+
+Consultez [nos guides dédiés à la configuration de vos lignes](https://docs.ovh.com/fr/voip/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
