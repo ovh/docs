@@ -39,7 +39,7 @@ Lors de la dernière étape, une demande de confirmation apparaîtra afin de val
 
 ![Validation de l'offre](images/Changement03-edit.png){.thumbnail}
 
-Il faut compter un délai d'une heure pour que le changement soit effectif, sauf en cas de changement de modem (un délai d'expédition de 24 à 48 heures peut être observé) ou changement de collecte (changement physique au niveau de la ligne qui implique une demande auprès d'Orange, 7 à 10 jours en moyenne avec une coupure probable du service).
+Il faut compter un délai d'une heure pour que le changement soit effectif, sauf en cas de changement de modem (un délai d'expédition de 24 à 48 heures peut être observé) ou changement de collecte (changement physique au niveau de la ligne qui implique une demande auprès de l'opérateur de collecte, 7 à 10 jours en moyenne avec une coupure probable du service).
 
 
 ## Les particularités
