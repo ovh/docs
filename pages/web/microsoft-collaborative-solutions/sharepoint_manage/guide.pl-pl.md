@@ -6,7 +6,7 @@ section: Pierwsze kroki
 order: 3
 ---
 
-**Ostatnia aktualizacja z dnia 11-08-2020**
+**Ostatnia aktualizacja z dnia 15-04-2020**
 
 ## Wprowadzenie
 
