@@ -6,7 +6,7 @@ section: Pierwsze kroki
 order: 3
 ---
 
-**Ostatnia aktualizacja z dnia 15-04-2020**
+**Ostatnia aktualizacja z dnia 11-08-2020**
 
 ## Wprowadzenie
 
@@ -106,6 +106,22 @@ Domyślnie konto korzystające z licencji nie ma uprawnień administratora. Aby 
 W obu rodzajach usługi SharePoint dostępny jest przycisk `Przywróć uprawnienia administratora`{.action} w karcie `Użytkownik`. Umożliwia on przywrócenie uprawnień administratora usługi w razie błędnej operacji w interfejsie SharePoint.
 
 ![sharepoint](images/order-manage-sharepoint-09.png){.thumbnail}
+
+#### **Edycja plików Office 365 online**
+
+Pliki Office 365, takie jak plik *.docx* lub *.xls* można edytować bezpośrednio online.
+
+Potrzebna jest do tego ważna licencja Office 365 i potwierdzenie tego faktu w Panelu klienta OVHcloud.
+
+Przejdź do zakładki `Użytkownicy` na Twojej platformie i kliknij `...`{.action} po prawej stronie konta, a następnie kliknij `Dodaj licencję Office`{.action}.
+
+![sharepoint](images/order-manage-sharepoint-10.png){.thumbnail}
+
+Po potwierdzeniu, że posiadasz licencję Office 365, kliknij przycisk `validate`{.action}.
+
+![sharepoint](images/order-manage-sharepoint-11.png){.thumbnail}
+
+Teraz możesz już edytować pliki Office 365 bezpośrednio w interfejsie WWW Twojego sharepointa.
 
 ## Sprawdź również
 
