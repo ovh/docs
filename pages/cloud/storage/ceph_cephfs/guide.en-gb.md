@@ -43,6 +43,7 @@ ceph --id CEPH_USER fs get fs-default
 ## Disabling and removing CephFS
 
 You can remove your filesystem when no longer needed. There are two steps here:
+
  * disable your filesystem - this will block access to CephFS but your data will be intact, if you change your mind you can just enable it again
 ```bash
 POST /dedicated/ceph/{serviceName}/cephfs/{fsName}/disable
