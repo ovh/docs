@@ -11,13 +11,13 @@ section: 'OVH services and options'
 
 Protecting and backing up your VMs is an essential part of ensuring long-term stability for your infrastructure. This is why we offer a managed backup solution based on Veeam Backup & Replication technology. You can use it to restore your data simply, by enabling automatic backup for your VMs.
 
-Backups are performed using a virtual machine (VM) within your [Hosted Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/veeam-backup-managed/) infrastructure. The backup data is outsourced to an independent storage space at OVHcloud. Backups are performed during night-time, with a retention time depending on the solution level you choose.
+Backups are performed using a virtual machine (VM) within your [Hosted Private Cloud](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/veeam-backup-managed/) infrastructure. The backup data is outsourced to an independent storage space at OVHcloud. Backups are performed during night-time, with a retention time depending on the solution level you choose.
 
 **This guide explains how to deploy and use the Veeam Managed Backup option.**
 
 ## Requirements
 
-- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
+- a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 - a user account with access to vSphere and the permission ["Add resources"](../change-users-rights/) for the pertinent data centre
 - [vSphere High Availability (HA)](../vmware-ha-high-availability) enabled
