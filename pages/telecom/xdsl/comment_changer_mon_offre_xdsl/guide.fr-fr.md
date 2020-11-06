@@ -22,7 +22,7 @@ Niveau : Débutant
 ## Comment procéder
 
 La demande de changement d'offre s'effectue via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
-<br>Dans l'onglet "télécom", sélectionnez la rubrique "Accès Internet" puis choisissez le pack que vous souhaitez faire évoluer.
+<br>Dans l'onglet `télécom`{.action}, sélectionnez la rubrique `Accès Internet`{.action} puis choisissez le pack que vous souhaitez faire évoluer.
 <br>Cliquez ensuite `Changer d'offre`{.action} dans le cadre "**informations générales**":
 
 ![changement d'offre](images/Changement01-edit.png){.thumbnail}
