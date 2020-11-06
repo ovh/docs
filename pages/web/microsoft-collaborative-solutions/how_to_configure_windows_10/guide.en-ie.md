@@ -66,7 +66,7 @@ OVH also offers a web application that includes various [collaborative features]
 
 ## Go further
 
-[Configuring an email address included in an MX Plan or web hosting plan on the Mail application for Windows 10](https://docs.ovh.com/ie/en/emails/mail-configuration-windows-10/){.external}
+[Configuring an email address included in an MX Plan or web hosting plan on the Mail application for Windows 10](https://docs.ovh.com/ie/en/emails/mail-configuration-on-windows-10/){.external}
 
 [Configuring your Email Pro account in the Mail app for Windows 10](https://docs.ovh.com/ie/en/emails-pro/mail-configuration-windows-10/){.external}
 
