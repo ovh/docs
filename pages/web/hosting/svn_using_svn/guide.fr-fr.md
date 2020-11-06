@@ -88,7 +88,7 @@ Suivie de la clé précédemment créée, le tout sur la même ligne.
 
 ![hosting](images/3080.png){.thumbnail}
 
-Vous pourrez récupérer le contenu du dépôt sans pour autant vous y connecter directement en SSH sur la machine.
+Vous pourrez récupérer le contenu du dépôt sans pour autant vous connecter directement en SSH sur la machine.
 
 > [!warning]
 >
