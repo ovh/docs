@@ -2,29 +2,37 @@
 title: Utiliser SVN
 slug: utiliser-svn
 legacy_guide_number: 1961
-excerpt: Ce guide montre la facon d'utiliser svn via l'acces ssh de l'hebergement grace aux cles publique/privée.
+excerpt: Découvrez comment utiliser SVN en SSH sur votre hebergement web
 section: FTP et SSH
 ---
 
-Subversion (en abrégé svn) est un système de gestion de versions. La suite du guide suppose que vous êtes connecté en ssh à la racine de votre hébergement.
+**Dernière mise à jour le 28/10/2020**
+
+## Objectif
+
+SVN, qui est l'abrévation de « subversion », est un système de gestion de versions. 
+
+**Découvrez comment utiliser SVN en SSH sur votre hébergement web**
 
 > [!warning]
 >
-> OVH met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
 
 ## Pre-requis
-- Avoir un hébergement qui permet une connection ssh (à partir de l'offre Pro)
-- Savoir se connecter en SSH (vous pouvez pour cela vous aider de ce [guide]({legacy}1962){.ref} )
 
+- Disposer d'une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/) permettant une connexion SSH (**à partir de l'offre Pro**)
+- Se connecter en SSH à votre hébergement Web (vous pouvez consulter notre guide [Utiliser l’accès SSH de son hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/))
 
-## Creation du depot
-Une fois connecté en SSH sur votre hébergement, il vous faut créer le répertoire racine des dépôts svn et ensuite le dépôt.
+## En pratique
+
+### Création du dépôt
+
+Une fois connecté en [SSH sur votre hébergement](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}, créez le répertoire racine des dépôts SVN, puis le dépôt.
 
 Il vous suffit pour cela de taper la commande :
-
 
 ```bash
 mkdir svn
@@ -32,54 +40,29 @@ mkdir svn
 
 et
 
-
 ```bash
 svnadmin create svn/depot_test
 ```
 
-Vous pouvez ensuite vérifier que les repertoires ont été crées avec la commande :
-
+Vous pouvez ensuite vérifier que les répertoires ont été créés avec la commande :
 
 ```bash
 ls -la
 ```
 
-Vous devez obtenir les repertoires comme indiqué sur l'image suivante :
-
+Vous devez obtenir les répertoires comme indiqué sur l'image suivante :
 
 ![hosting](images/3078.png){.thumbnail}
 
+### Création des clés publiques / privées
 
-## Creation des cles publiques / privées
+Avant de poursuivre il vous faudra créer une paire de clés SSH depuis le poste que vous utiliserez pour vous connecter au dépôt SVN.
 
-### Linux avec openssh
-Cette partie se déroule sur l'ordinateur qui se connectera au dépôt svn (le client svn). Il faut créer une paire de clé dsa. Pour cela taper dans votre terminal la commande :
+Nous vous invitons à suivre le guide [Créer des clés SSH](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/). Il n'est pas nécessaire de suivre l'étape [Importez votre clé SSH dans l’Espace client OVHcloud](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/#importez-votre-cle-ssh-dans-lespace-client-ovhcloud_1) dans ce guide.
 
+### Ajout de la clé publique sur l'hébergement
 
-```bash
-ssh-keygen -t dsa
-```
-
-et récupérer la ligne qui se trouve par défault dans le fichier .ssh/id_dsa.pub . Pour editer le fichier il vous suffit d'utiliser la commande: vi.
-
-
-```bash
-vi .ssh/id_dsa.pub
-```
-
-Vous trouverez la clef qui est divisée en trois chaînes de caractères : le type, la clé et un commentaire.
-
-
-### Windows avec putty
-Cette partie se déroule sur l'ordinateur qui se connectera au dépôt svn (le client svn). Télécharger l'installer windows putty et l'installer. Il faut créer une paire de clés dsa. Pour cela lancer PuTTYGen, générer une paire de clé et les sauvegarder :
-
-
-![hosting](images/3079.png){.thumbnail}
-
-
-## Ajout de la cle publique sur l'hebergement
-Aprés avoir obtenu votre clef il vous faut l'ajouter sur votre hebergement dans le fichier .ssh/authorized_keys2. Il vous suffit pour cela de taper la ligne de commande ci-dessous :
-
+Aprés avoir obtenu votre clé, ajoutez-la sur votre hébergement dans le fichier .ssh/authorized_keys2. Pour cela, tapez la ligne de commande ci-dessous :
 
 ```bash
 mkdir .ssh
@@ -87,66 +70,58 @@ chmod 700 .ssh
 vi .ssh/authorized_keys2
 ```
 
-Une fois le fichier ouvert vous devez y inserer la ligne suivante :
-
+Une fois le fichier ouvert, insérez la ligne suivante :
 
 ```bash
-command="/usr/bin/svnserve --root=/homez.XXX/loginFTP/svn --tunnel --tunnel-user=marc",no-port-forwarding,no-agent-forwarding,no-X11-forwarding,no-pty
+command="/usr/bin/svnserve --root=/homez.XXX/loginFTP/svn --tunnel --tunnel-user=john",no-port-forwarding,no-agent-forwarding,no-X11-forwarding,no-pty
 ```
 
-suivi de la clé précédemment créée, le tout sur la même ligne !
+Suivie de la clé précédemment créée, le tout sur la même ligne.
 
-
-
-> [!success]
+> [!primary]
 >
-> NB : Remplacer "/home.XXX/loginFTP" et "marc" par ce qu'il convient !
-> Pour connaître les chiffres à utiliser pour remplacer /home.XXX/loginFTP" vous pouvez tout simplement taper la commande "pwd" en ssh
+> Remplacez « /home.XXX/loginFTP » et « john » par vos identifiants SSH. 
+> Pour connaître les chiffres à utiliser pour remplacer « /home.XXX/loginFTP »  tapez la commande « pwd » en SSH.
+>
+> Vous retrouverez également ces infrormations on consultant notre guide [Utiliser l’accès SSH de son hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}.
 > 
-
 
 ![hosting](images/3080.png){.thumbnail}
 
-La personne pourra donc récupérer le contenu du dépôt sans pouvoir pour autant se connecter directement en ssh sur la machine.
+Vous pourrez récupérer le contenu du dépôt sans pour autant vous connecter directement en SSH sur la machine.
 
-
-
-> [!alert]
+> [!warning]
 >
-> Attention, une même clé ne doit pas être utilisée pour svn et pour ssh en
+> Attention, une même clé ne doit pas être utilisée pour SVN et pour SSH en
 > ligne de commande
 > 
 
+### Exemples
 
-## Exemples
+#### Sous Linux
 
-### Sous Linux
-Vous pouvez faire un test depuis l'ordinateur se connectant au depot svn en tapant la ligne :
-
+Vous pouvez faire un test depuis l'ordinateur se connectant au depot SVN en tapant la ligne :
 
 ```bash
 svn checkout svn+ssh://loginFTP@clusterXXX/depot_test
 ```
 
+#### Windows avec TortoiseSVN
 
-### Windows avec TortoiseSVN
-- Télécharger tortoisesvn et l'installer ( [http://tortoisesvn.net/downloads](http://tortoisesvn.net/downloads){.external} )
-- Double cliquer sur la clé privée. Une icône apparait en bas à droite, la clé est alors chargée dans l'agent d'authentification.
-- Créer un répertoire, cliquer droit dessus et sélectionner "SVN Checkout". Entrer :
-
-dans le champ "URL of repository" et cliquer sur OK :
-
+- Téléchargez et installez TortoiseSVN ([http://tortoisesvn.net/downloads](http://tortoisesvn.net/downloads){.external})
+- Faites un clic droit sur la clé privée. Une icône apparait en bas à droite, la clé est alors chargée dans l'agent d'authentification.
+- Créez un répertoire, faites un clic droit dessus et sélectionnez « SVN Checkout ». 
+- Entrez `svn+ssh://loginFTP@xxplan.ovh.net/depot_test` dans le champ « URL of repository » et cliquer sur `OK` :
 
 ![hosting](images/3081.png){.thumbnail}
 
 Il existe une très bonne documentation en anglais pour Subversion : [http://svnbook.red-bean.com/en/1.5/index.html](http://svnbook.red-bean.com/en/1.5/index.html){.external}
 
+### Cas spécifiques
 
-## Cas specifiques
+#### Créer plusieurs comptes
 
-### Creer plusieurs Comptes
-Il faut tout d'abord avoir créer plusieurs clés ssh. Ensuite lors de l'ajout de la clé publique sur l'hébergement :
-
+Il faut tout d'abord avoir créé plusieurs clés SSH. Ensuite lors de l'ajout de la clé publique sur l'hébergement :
 
 ```bash
 command="/usr/bin/svnserve --root=/home.XXX/loginFTP/svn --tunnel --tunnel-user=marc",no-port-forwarding,no-agent-forwarding,no-X11-forwarding,no-pty
@@ -154,27 +129,26 @@ command="/usr/bin/svnserve --root=/home.XXX/loginFTP/svn --tunnel --tunnel-user=
 
 Vous devez modifier le paramètre ci-dessous en y ajoutant vos différents utilisateurs :
 
-
 ```bash
 --tunnel-user
 ```
 
 à noter qu'il est aussi possible de donner des accès en lecteur seule en ajoutant le paramètre :
 
-
 ```bash
 --read-only.
 ```
 
+#### Vérifier en local depuis le serveur
 
-### Check en local depuis le serveur
-Lorsque vous voudrez faire le checkout en local, les exemples fournis ne fonctionneront pas. Il vous faudra utiliser :
-
+Lorsque vous voudrez faire une vérification en local, les exemples fournis ne fonctionneront pas. Il vous faudra utiliser :
 
 ```bash
 svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 ```
 
 ## Aller plus loin
+
+[Utiliser l’accès SSH de son hébergement web](../mutualise-le-ssh-sur-les-hebergements-mutualises/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

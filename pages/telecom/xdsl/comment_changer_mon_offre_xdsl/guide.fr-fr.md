@@ -1,67 +1,61 @@
 ---
-title: Comment changer mon offre xDSL
+title: Comment changer mon offre xDSL/FTTH
 slug: comment-changer-mon-offre-xdsl
-legacy_guide_number: '7962625'
 section: Gestion de mon offre
 ---
 
-### Préambule {#préambule}
+**Dernière mise à jour le 05/11/2020**
 
-Le changement d'offre est une option vous permettant de faire évoluer une offre afin de pouvoir accéder à de nouvelles fonctionnalités / services.
+## Objectif
 
-Niveau : Débutant
+Vous pouvez faire évoluer votre offre xDSL/FTTH afin de pouvoir accéder à de nouvelles fonctionnalités et services.
 
-------------------------------------------------------------------------
+## Prérequis
 
-### Prérequis {#prérequis}
+- Disposer d'un accès xDSL/FTTH actif.
+- Disposer d'une offre éligible.
 
--   Disposer d'un accès xDSL
--   Avoir une offre éligible
+> [!primary]
+> Le changement d'offre n'est pas disponible sur les offres SDSL.
+>
 
-------------------------------------------------------------------------
+## En pratique
 
-### Comment procéder {#comment-procéder}
+### Changer d’offre
 
-La demande de changement d'offre s'effectue via votre espace client sur :
+La demande de changement d'offre s'effectue via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+<br>Dans l'onglet `Télécom`{.action}, sélectionnez la rubrique `Accès Internet`{.action} puis choisissez le pack que vous souhaitez faire évoluer.
+<br>Cliquez ensuite sur `Changer d'offre`{.action} dans le cadre « Informations Générales ».
 
-<https://www.ovhtelecom.fr/espaceclient/login/>
+![changement d'offre](images/Changement01-edit.png){.thumbnail}
 
-Cliquez sur "**Gestion des offres**" puis "**Changer d'offre**" :
+La page suivante vous permettra de retrouver les informations nécessaires pour effectuer votre choix d'offre.
 
-![](images/changeroffre.png){.thumbnail}
+La première colonne du tableau récapitule votre offre actuelle (son nom, son prix et les services actifs. Les autres colonnes concernent les offres auxquelles vous pouvez souscrire, compte tenu de votre adresse actuelle.
+<br>Cliquez sur le bouton `Choisir cette offre`{.action} sous la colonne correspondant à l'offre que vous souhaitez souscrire.
 
-Sélectionnez la ligne sur laquelle vous souhaitez effectuer le changement d'offre et cliquez sur "**suivant**" :
-
-![](images/changeroffre2.png){.thumbnail}
-
-Sur l'étape suivante, vous allez retrouver deux choses.
-
-La première concerne votre offre actuelle (son intitulé, son prix et les services actifs) et la deuxième concerne les offres que l'on peut vous proposer.
-
-![](images/changeroffre3.png){.thumbnail}
-
-Si des services ne sont pas compatibles avec la nouvelle offre, vous en serez averti :
-
-![](images/changeroffre4.png){.thumbnail}
+![choix de l'offre](images/Changement02-edit.png){.thumbnail}
 
 Lors de la dernière étape, une demande de confirmation apparaîtra afin de valider le changement d'offre.
+<br>Lisez les contrats, cochez la case afin de les accepter puis cliquez sur le bouton `Valider le changement d'offre`{.action}.
 
-![](images/2015-04-01-170645_726x637_scrot.png){.thumbnail}
+![Validation de l'offre](images/Changement03-edit.png){.thumbnail}
 
-Il faut compter un délai **d'une heure** pour que le changement soit effectif, sauf en cas de changement de modem (délai d'expédition) ou changement de collecte (changement physique au niveau de la ligne qui implique une demande auprès d'Orange, 7 à 10 jours en moyenne avec une coupure probable du service).
+Il faut compter un délai d'une heure pour que le changement soit effectif, sauf pour les cas particuliers suivants :
 
-------------------------------------------------------------------------
-
-### Les particularités {#les-particularités}
-
-Suivant l'offre que vous possédez, vous pouvez être amené à effectuer un changement de modem (offre no!Tv, nobox, double ADSL, Pro et bêta). Le changement de modem vous sera alors indiqué lors du changement d'offre.
-
-Les services des packs Express ou Entreprise seront accessibles une fois le changement effectif. Cependant, aucun bon d'achat n'est mis à votre disposition lors du changement. Toutefois, l'option pour générer un bon d'achat sera disponible sur votre espace client (cf. : [Comment gérer mon bon d'achat]({legacy}7962632)).
-
-Si vous possédez une offre Express, vous avez la possibilité de la faire évoluer en Entreprise. Par contre, l'inverse n'est pas possible.
-
-Le changement d'offre n'est pas disponible sur les offres SDSL.
-
-------------------------------------------------------------------------
+- en cas de remplacement du modem. Un délai de livraison de 24 à 48 heures est alors à prendre en compte suite à l'expédition du modem.
+- en cas de changement de collecte (Un changement physique au niveau de la ligne qui implique une demande auprès de l'opérateur de collecte). Un délai moyen de 7 à 10 jours peut alors être constaté ainsi qu'une coupure probable du service.
 
 
+Suivant votre offre actuelle, un remplacement du modem peut s'avérer nécessaire. Cela vous sera indiqué lors du choix de votre nouvelle offre.
+<br> Le changement de modem vous sera alors indiqué lors du changement d'offre.
+
+Les nouveaux services liés à votre nouvelle offre (Express ou Entreprise) seront accessibles une fois le changement effectif. 
+
+> [!primary]
+> Si vous possédez une offre Express, vous avez la possibilité de la faire évoluer en Entreprise. Il est par contre impossible de faire évoluer une offre Entrepise vers une offre Express.
+>
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>

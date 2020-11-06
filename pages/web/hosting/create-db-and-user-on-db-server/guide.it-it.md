@@ -93,7 +93,7 @@ Ecco la descrizione dei 3 tipi di diritti proposti:
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo database server.
 
-Per eliminare un database sul tuo database server, vai nella scheda `Database`, poi clicca sul pulsante...` a destra del database in questione e infine clicca su `Elimina il database`{.action}.
+Per eliminare un database sul tuo database server, vai nella scheda `Database`, poi clicca sul pulsante `...`{.action} a destra del database in questione e infine clicca su `Elimina il database`{.action}.
 
 ![private-sql](images/private-sql-deldb01.png){.thumbnail}
 
