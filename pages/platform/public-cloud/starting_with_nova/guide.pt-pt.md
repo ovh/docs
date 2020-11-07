@@ -135,7 +135,7 @@ Basta recuperar o ID da imagem que será utilizada pela instância:
 
 
 ```
-admin@serveur-1:~$ nova image-list
+admin@serveur-1:~$ glance image-list
 +--------------------------------------+------------------------+--------+--------+
 | ID | Name | Status | Server |
 +--------------------------------------+------------------------+--------+--------+

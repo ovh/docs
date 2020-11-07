@@ -136,7 +136,7 @@ Pabaigai, sužinokite image, kurį naudosite savo VM, ID:
 
 
 ```
-admin@serveur-1:~$ nova image-list
+admin@serveur-1:~$ glance image-list
 +--------------------------------------+------------------------+--------+--------+
 | ID | Name | Status | Server |
 +--------------------------------------+------------------------+--------+--------+
