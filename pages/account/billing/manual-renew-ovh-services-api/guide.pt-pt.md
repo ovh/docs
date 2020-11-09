@@ -17,7 +17,7 @@ Inerentemente, a OVH oferece-lhe a renovação automática dos seus serviços. N
 ## Requisitos
 
 - Estar conectado às [API OVH](https://api.ovh.com/console){.external}.
-- Ter [criado os ID para a API OVH](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
+- Ter [criado os ID para a API OVH](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/).
 
 ## Instruções
 

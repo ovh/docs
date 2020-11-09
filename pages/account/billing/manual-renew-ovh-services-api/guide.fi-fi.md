@@ -18,7 +18,7 @@ OVH tarjoaa natiivisti palvelusi automaattista uusintaa. On kuitenkin mahdollist
 ## Edellytykset
 
 - Olet kirjautunut [OVH:n APIin](https://api.ovh.com/console){.external}.
-- Olet [luonut tunnuksesi OVH:n APIin](https://api.ovh.com/g934.first_step_with_api){.external}.
+- Olet luonut tunnuksesi OVH:n APIin.
 
 ## Käytännössä
 

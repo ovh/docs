@@ -56,7 +56,7 @@ Kliknij przycisk `...`{.action} znajdujący się po prawej stronie bazy danych, 
 
 ![private-sql](images/private-sql-import01.png){.thumbnail}
 
-***Masz dwie możliwości:***
+Masz dwie możliwości:
 
 ##### Import nowego pliku
 
@@ -155,7 +155,7 @@ psql —host=serwer —port=port —user=uzytkownik —password=password nazwa_b
 
 > [!warning]
 >
-> - Aby uniknąć sytuacji, w której ktoś miałby dostęp do tego pliku zawierającego wrażliwe dane, sprawdź, czy zabezpieczysz dostęp do tego pliku za pomocą przewodnika [Jak chronić dostęp do tego pliku za pomocą uwierzytelnienia?](../hosting_www_ssh_na_hostingu/)
+> - Aby uniknąć sytuacji, w której ktoś miałby dostęp do tego pliku zawierającego wrażliwe dane, sprawdź, czy zabezpieczysz dostęp do tego pliku za pomocą przewodnika ["Używanie .htaccess do ochrony hasła katalogu w serwisie WWW"](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/)
 > - Operacja ta jest możliwa tylko z poziomu hostingu OVHcloud.
 >
 

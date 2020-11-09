@@ -35,7 +35,7 @@ Der Bestellschein wird erstellt, sobald Sie eine Bestellung bei OVHcloud aufgebe
 |Nummer|Beschreibung|
 |---|---|
 |1|Hier sind die zentralen Daten des Bestellscheins aufgeführt: Nummer, Erstellungsdatum sowie Ablaufdatum. Bitte beachten Sie, dass abgelaufene Bestellscheine nicht mehr in Ihrem Kundencenter aufgeführt werden.|
-|2|Wenn Sie bei der Bestellung in Ihrem Kundencenter eingeloggt sind, erscheint der Rechnungskontakt an dieser Stelle. Weitere Informationen über die verschiedenen Arten von Kontakten finden Sie in [dieser Anleitung](../verwaltung-der-kontakte/).|
+|2|Wenn Sie bei der Bestellung in Ihrem Kundencenter eingeloggt sind, erscheint der Rechnungskontakt an dieser Stelle. Weitere Informationen über die verschiedenen Arten von Kontakten finden Sie in [dieser Anleitung](../../customer/verwaltung-der-kontakte/).|
 |3|Wenn Sie ein Standardzahlungsmittel hinterlegt haben, können Sie es an dieser Stelle auswählen. Für die automatische Verlängerung muss ein Standardzahlungsmittel hinterlegt sein.|
 |4|In diesem Bereich finden Sie die zur Verfügung stehenden Zahlungsarten. Dabei werden nur die in dem Land, in dem der Account erstellt wurde, zulässigen bzw. die mit dem Kontotyp verbundenen Zahlungsmittel aufgeführt.|
 
@@ -77,7 +77,7 @@ Bestellscheine, deren Lieferung in Bearbeitung ist oder deren Zahlung noch ausst
 
 ### Widerrufsrecht ausüben
 
-Gemäß unserer [Allgemeinen Geschäftsbedingungen](https://www.ovh.de/support/agb/OVH_AGB.pdf) können Verbraucher ihre Vertragserklärung innerhalb von 14 Tagen ohne Angabe von Gründen widerrufen.
+Gemäß unserer [Allgemeinen Geschäftsbedingungen](https://www.ovh.de/support/agb-vertrage/) können Verbraucher ihre Vertragserklärung innerhalb von 14 Tagen ohne Angabe von Gründen widerrufen.
 
 Weitere Informationen zur Ausübung ihres Widerrufsrechts finden Sie in unseren AGB.
 

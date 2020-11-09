@@ -121,7 +121,7 @@ iptables-persistent save
 
 
 ## 
-Une fois que Docker est installé sur nos 3 serveurs (voir [ce guide](https://community.runabove.com/kb/en/instances/docker-in-5-minutes-on-runabove-with-docker-machine.html)). Nous allons lier le daemon Docker a un port, par ex. port 2375 - port officiel assigné par [IANA](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker), de cette façon ces serveurs peuvent communiquer avec le serveur maître. Commencez par arrêter Docker sur chacun des serveurs avec cette commande:
+Une fois que Docker est installé sur nos 3 serveurs Nous allons lier le daemon Docker a un port, par ex. port 2375 - port officiel assigné par [IANA](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker), de cette façon ces serveurs peuvent communiquer avec le serveur maître. Commencez par arrêter Docker sur chacun des serveurs avec cette commande:
  
 ```
 service docker stop

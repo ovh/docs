@@ -45,6 +45,7 @@ Si apre lo schermo KVM. È una finestra minuscola che indica la connessione al t
 > [!primary]
 >
 > Se si verificano problemi di doppia immissione, questo può essere dovuto a una registrazione automatica dello schermo. Cliccando su "Apri in una nuova finestra", ti consigliamo di aprire il KVM in una nuova finestra.
+>
 > Se riscontri problemi con lo schermo, ti consigliamo di eliminare dall'URL la parte "Automatica". Se l'URL è https://compute.sbg1.cloud.ovh.net:6080/vnc_auto.html?token=xxxxxxxxxxxx, deve diventare https://compute.sbg1.cloud.ovh.net:6080/vnc.html?token=xxxxxxxxxxxx (il link per voi può essere diverso, l'esempio dato illustra solo la parte dell'URL da eliminare)
 >
 

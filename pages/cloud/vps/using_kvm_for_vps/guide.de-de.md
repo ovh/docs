@@ -41,6 +41,7 @@ Der Bildschirm der KVM-Konsole öffnet sich. Dies ist ein kleines Fenster, das d
 > [!primary]
 >
 > Etwaige Probleme mit doppelter Erfassung können von der automatischen Einstellung des Bildschirms herrühren. Wie empfehlen Ihnen, KVM in einem neuen Fenster zu öffnen. Nutzen Sie dazu den Button „In einem neuen Fenster öffnen“.
+>
 > Wenn die Probleme mit dem Bildschirm andauern, löschen Sie aus der URL den Teil „auto“. Lautet die URL https://compute.sbg1.cloud.ovh.net:6080/vnc_auto.html?token=xxxxxxxxxxxx, muss sie also danach https://compute.sbg1.cloud.ovh.net:6080/vnc.html?token=xxxxxxxxxxxx sein. (Der Link kann für Sie anders aussehen. Hier wird nur am Beispiel verdeutlicht, welcher Teil der URL zu löschen ist.)
 >
 
@@ -59,7 +60,7 @@ Es kann zu Problemen bei der Verbindung mit KVM über Ihr OVHcloud Kundencenter 
 
 Wenn Sie einen VPS 2014 nutzen, stellen Sie vielleicht einen *Fehler 1006* fest. Das Problem kann umgangen werden, indem Sie die API mit folgenden Aufruf nutzen:
 
-> \[!api]
+> [!api]
 >
 > @api {POST} /vps/{serviceName}/openConsoleAccess
 >
@@ -83,7 +84,7 @@ Stellen Sie eine Remote-Verbindung mit dem VPS her. Nutzen Sie dafür die Inform
 
 Bei Problemen mit der KVM-Konsole ist dies die empfohlene Verbindungsmethode:
 
-> \[!api]
+> [!api]
 >
 > @api {POST} /vps/{serviceName}/getConsoleUrl
 >
