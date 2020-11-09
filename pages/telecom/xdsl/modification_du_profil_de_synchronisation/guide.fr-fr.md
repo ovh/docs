@@ -34,21 +34,25 @@ Niveau : Débutant
 -   Choisissez le **Profil** que vous souhaitez appliquer
 -   Cliquez sur **"Valider"**
 
+Pour un accès ADSL :
 ![](images/2015-12-15-144213_1258x549_scrot.png){.thumbnail}
+
+Pour un accès VDSL :
+![](images/2015-12-15-144213_1258x549_scrot.png){.thumbnail}
+
 
 -   **Explication de différents profils**
 
-Vous retrouverez différents types de profil ADSL ou VDSL : **512K, 2M, 24M, SAFE 1, SAFE 2, PERF 1 et PERF 2**, et également **17a ou 8b** pour un accès VDSL. La question que vous devez vous poser est : **quel profil sélectionner** ?
+Généralement, on applique un nouveau profil quand on souhaite obtenir un débit plus important ou corriger une instabilité. Les profils permettent d'agir directement sur la **marge au bruit (SNR)** de votre ligne.
 
-Lors de son activation, votre accès est livré sur le profil **par défaut**, avec une marge au bruit (SNR) à 6 dB lors de la synchronisation.
-Généralement, on applique un nouveau profil quand on souhaite obtenir un débit plus important ou corriger une instabilité. Les profils permettent d'agir directement sur la marge au bruit (SNR) de votre ligne.
+Lors de son activation, votre accès est livré sur le profil **par défaut**, avec une marge au bruit à 6 dB lors de la synchronisation.
 
 Suivant le SNR défini le débit sera plus ou moins élevé et l'accès subira plus ou moins de perturbations.
 
 Plus concrètement :
 
     Plus le SNR est faible, meilleur est le débit mais moins stable est la ligne;
-    Plus le SNR est élevé, moins bon est le débit mais plus stable est la ligne.
+    Plus le SNR est élevé, moins bon est le débit et plus stable est la ligne.
 
 La correspondance des profils avec leur SNR :
 
