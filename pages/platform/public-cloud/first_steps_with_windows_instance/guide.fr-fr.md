@@ -57,12 +57,16 @@ Depuis un poste sous Windows :
 
 ![windowsinstance](images/firststepswindows5.png){.thumbnail}
 
-Pour vous connecter depuis un poste sous Linux, tapez la commande suivante :
-
+Pour vous connecter depuis un poste sous Linux, tapez la commande suivante en utilisant le logiciel FreeRDP (mais fonctionne aussi avec le logiciel Remmina):
+```
+xfreerdp /u:Administrator /p:XXX /v:IPdeTaVM /sec:tls /f
+```
+car la ligne suivante ne marche plus :
 ```
 rdesktop 12.34.56.789 -u administrator
 ```
- 
+De plus il faut désactiver sur ton Windows Server 2019 le NLA (Network Level Authentication) dans la config du Remote Desktop.
+
 ### Étape 3: améliorer la navigation sur Internet
 
 Par défaut, la sécurité renforcée d'Internet Explorer est activée. Lors de votre navigation, un message d’avertissement apparaitra à de nombreuses reprises afin de vous mettre en garde et bloquer les téléchargements :
