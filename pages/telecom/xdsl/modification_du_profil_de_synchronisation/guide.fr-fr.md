@@ -28,7 +28,7 @@ Niveau : Débutant
 
 <!-- -->
 
--   Connectez-vous à votre [espace client Telecom OVHcloud](https://www.ovhtelecom.fr/manager/#/
+-   Connectez-vous à votre [espace client Telecom OVHcloud](https://www.ovhtelecom.fr/manager/#/)
 -   Choisissez **votre accès**
 -   Cliquez sur **"Mon accès"**
 -   Choisissez le **Profil** que vous souhaitez appliquer
