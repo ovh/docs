@@ -38,7 +38,7 @@ Niveau : Débutant
 
 -   **Explication de différents profils**
 
-Vous retrouverez différents types de profil ADSL ou VDSL : **512K, 2M, 24M, SAFE 1, SAFE 2, PERF 1 et PERF 2**, et également **17a ou 8b** également pour du VDSL. La question que vous devez vous poser est :**quel profil sélectionner** ?
+Vous retrouverez différents types de profil ADSL ou VDSL : **512K, 2M, 24M, SAFE 1, SAFE 2, PERF 1 et PERF 2**, et également **17a ou 8b** pour un accès VDSL. La question que vous devez vous poser est : **quel profil sélectionner** ?
 
 Par défaut, votre accès est livré sur le profil **par défaut**, avec une marge au bruit (SNR) à 6 dB lors de la synchronisation.
 Généralement, on applique un nouveau profil quand on souhaite obtenir un débit plus important ou corriger une instabilité. Les profils permettent d'agir directement sur la marge au bruit (SNR) de votre ligne.
