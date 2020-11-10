@@ -23,7 +23,7 @@ El servicio Real Time Monitoring (RTM) le permite supervisar parcialmente su ser
 
 > [!primary]
 >
-> Algunas restricciones del firewall podrían impedir la supervisión de la infraestructura, aunque haya instalado RTM. Por lo tanto, no olvide autorizar el acceso al servidor de las IP de monitorización de OVHcloud. En [esta guía](../monitoring-ip-ovh) encontrará más información.
+> Algunas restricciones del firewall podrían impedir la supervisión de la infraestructura, aunque haya instalado RTM. Por lo tanto, no olvide autorizar el acceso al servidor de las IP de monitorización de OVHcloud. En [esta guía](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh) encontrará más información.
 > 
 
 ### RTM en Linux

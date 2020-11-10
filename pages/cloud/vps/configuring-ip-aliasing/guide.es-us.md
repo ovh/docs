@@ -16,9 +16,9 @@ IP aliadas es una configuración de red especial para su servidor OVHcloud, el c
 
 ## Requisitos
 
-* [VPS](https://ovhcloud.com/es/vps/){.external}
-* [Dirección IP failover](https://www.ovh.com/world/es/dedicated-servers/ip_failover.xml){.external}
-* Acceso administrador(root) al servidor mediante SSH.
+* [VPS](https://ovhcloud.com/es/vps/)
+* Dirección IP failover
+* Acceso administrador(root) al servidor mediante SSH
 
 ## Procedimiento
 

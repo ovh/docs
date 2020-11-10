@@ -27,13 +27,13 @@ When you create a Public Cloud instance, you can choose to be billed at either a
 
 ## Requirements
 
-- You need to have created a [Public Cloud instance](https://www.ovhcloud.com/asia/public-cloud/){.external}.
-- You must be logged in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- You need to have created a [Public Cloud instance](https://www.ovhcloud.com/en-ie/public-cloud/).
+- You must be logged in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
 
 
 ## Instructions
 
-In the [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, choose the instance you would like to change the billing rate for, and open its options menu by clicking on the 3 dots on the right of the Instance. You will then be able to see the `Switch to monthly subscription`{.action} button:
+In the [Control Panel](https://www.ovh.com/auth/?action=gotomanager), choose the instance you would like to change the billing rate for, and open its options menu by clicking on the 3 dots on the right of the Instance. You will then be able to see the `Switch to monthly subscription`{.action} button:
 
 ![Change billing calculation](images/switch.png){.thumbnail}
 

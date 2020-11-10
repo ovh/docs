@@ -144,7 +144,7 @@ iptables-persistent save
 
 
 ## 
-Después de haber instalado Docker en las tres máquinas (ver la guía de [instalación de Docker](http://www.ovh.es/g1708.optimizar_el_alojamiento_de_un_sitio_web_wordpress_en_un_vps_gracias_a_docker) —también es posible disponer de instancias RunAbove aprovisionadas con Docker Machine, para más información puede consultar [esta guía](https://community.runabove.com/kb/en/instances/docker-in-5-minutes-on-runabove-with-docker-machine.html)—), vamos a activar la escucha del demonio Docker en un puerto (por ejemplo, el puerto 2375, que es el puerto oficial asignado por la [IANA](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker)) para que dichas máquinas puedan dialogar con la máquina maestra. 
+Después de haber instalado Docker en las tres máquinas —también es posible disponer de instancias RunAbove aprovisionadas con Docker Machine, vamos a activar la escucha del demonio Docker en un puerto (por ejemplo, el puerto 2375, que es el puerto oficial asignado por la [IANA](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker)) para que dichas máquinas puedan dialogar con la máquina maestra. 
 
 Para ello, vamos a empezar por detener Docker en cada una de nuestras máquinas con el siguiente comando:
 
@@ -298,4 +298,3 @@ Por último, haciendo clic en «DEPLOY» podremos ejecutar contenedores en todos
 
 ![](images/img_2616.jpg){.thumbnail}
 
-Ahora tiene un sistema de orquestación de servidores Docker que le permite aprovisionar aplicaciones y contenedores en su clúster de manera fácil y rápida mediante una GUI.

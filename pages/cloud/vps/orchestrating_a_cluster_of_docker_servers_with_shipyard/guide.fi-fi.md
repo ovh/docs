@@ -136,7 +136,6 @@ iptables-persistent save
 
 
 ## 
-Kun Docker on asennettu kaikille kolmelle palvelimelle (ks. [tämä ohje](https://community.runabove.com/kb/en/instances/docker-in-5-minutes-on-runabove-with-docker-machine.html)), seuraavaksi Docker asetetaan toimimaan tiettyyn porttiin, esimerkiksi porttiin 2375 joka on [IANAn määritysten mukainen](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker), jotta palvelimet voivat liikennöidä master-palvelimen kanssa. Aivan ensimmäisenä toimenpiteenä, pysäytä Docker seuraavalla komennolla:
 
 
 ```
@@ -275,5 +274,5 @@ Nyt eri noodeille käyttöönotettujen konttipalvelinten hallinta on mahdollinen
 Klikkaa lopuksi DEPLOY käynnistääksesi kontit kaikilla noodipalvelimilla, tai määritellyillä/määritellyllä noodilla (rastittamalla noodin/noodit DEPLOY-painikenapin yläpuolelta).
 
 ![](images/img_2616.jpg){.thumbnail}
-Mikäli seurasit ohjetta tarkkaan, käytössäsi on nyt Docker-palvelinhallintajärjestlemä mikä mahdollistaa helpon ja nopean sovelluskonttien käyttöönoton ja hallinnoinnin koko klusterissa helpon www-käyttöliittymän avulla. Jos haluat vain testata Dockeria, voit osallistua Sailabove-testivaiheeseemme osoitteessa [https://labs.runabove.com/docker](https://labs.runabove.com/docker). Olemme myös laittaneet saataville Web-hallintapaneeliin esiasennetut käyttöjärjestelmät Ubuntu 14.04 + Docker sekä Ubuntu 15.04 + Docker. Nämä ovat saatavilla Cloud- ja Classic-virtuaalipalvelimille pl. Classic 1, jossa ei ole tarpeeksi levytilaa. Esiasennettu käyttöjärjestelmä mahdollistaa konttipalvelinten käyttöönoton OVH:n nopean virtuaalipalvelimen päällä.
+
 

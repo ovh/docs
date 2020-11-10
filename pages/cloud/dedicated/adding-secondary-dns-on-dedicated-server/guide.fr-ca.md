@@ -89,7 +89,5 @@ Pour finir, cliquez sur `Ajouter`{.action} pour confirmer votre entrée :
 
 ## Aller plus loin
 
-<<<<<<< HEAD
-[Éditer une zone DNS OVH](../domains/editer-ma-zone-dns/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

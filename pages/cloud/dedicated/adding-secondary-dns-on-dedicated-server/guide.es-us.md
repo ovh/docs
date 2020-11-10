@@ -90,6 +90,4 @@ Por último, haga clic en `Añadir`{.action} para confirmar el registro.
 
 ## Más información
 
-[Editar una zona DNS de OVHcloud](../domains/web_hosting_como_editar_mi_zona_dns/){.external}
-
 Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.com/community/){.external}.

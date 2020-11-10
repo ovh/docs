@@ -142,8 +142,7 @@ iptables-persistent save
 
 
 ## 
-Įdiegus Docker į 3 serverius (žr. [ankstesnį gidą](http://www.ovh.lt/g1708.wordpress_svetainiu_vps_serveriuose_optimizavimas_su_docker), galima naudoti RunAbove instances, suteiktais su Docker serveriu. Daugiau informacijos apie tai rasite [čia](https://community.runabove.com/kb/en/instances/docker-in-5-minutes-on-runabove-with-docker-machine.html)). 
-Pirmiausiai įjungsime Docker daemon tam skirtame prievade (pvz., 2375 prievade, kuris yra oficialiai paskirtas [IANA](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker)), kad mūsų serveriai galėtų komunikuoti su valdymo serveriu.
+
 Pirmiausiai sustabdysime Docker serveriuose, tam naudosime komandą:
 
 
@@ -287,5 +286,5 @@ Konteinerių skyriuje galite matyti ir valdyti visus konteinerius, esančius ski
 Spragtelėjus "Deploy" galima paleisti konteinerius visuose mazguose arba kuriame nors atskirai (pažymėjus mazgo, kuriame norima paleisti, pavadinimą):
 
 ![](images/img_2616.jpg){.thumbnail}
-Dabar jau turite Docker serverių klasterio valdymo sistemą ir galite greitai bei paprastai skirstyti aplikacijas/konteinerius po visą klasterį. Jeigu norite išbandyti Docker, nepamirškite, kad vykdome Sailabove Alpha testavimus: [https://labs.runabove.com/docker/](https://labs.runabove.com/docker/). Taip pat sukūrėme Ubuntu Server su Docker (iškart įdiegtu) VPS Cloud ir Classic paslaugoms (taigi, galėsite šią sistemą diegti į visus VPS serverius, pradedant VPS Classic 1, kuris nepasymi didele disko vieta). Taip gausite serverį, iškart paruoštą konteinerių paleidimui ir išsaugosite visus VPS paslaugos privalumus.
+
 
