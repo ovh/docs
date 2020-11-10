@@ -117,7 +117,7 @@ admin@server-1"~$ nova flavor-list
 Finally, we will need to obtain the ID of the image we want to use on the instance:
 
 ```sh
-admin@server-1:~$ nova image-list
+admin@server-1:~$ glance image-list
 +--------------------------------------+------------------------+--------+--------+
 | ID                                   | Name                   | Status | Server |
 +--------------------------------------+------------------------+--------+--------+

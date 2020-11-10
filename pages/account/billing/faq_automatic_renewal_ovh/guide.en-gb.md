@@ -5,9 +5,6 @@ excerpt: Here are the answers to your questions regarding the new automatic rene
 section: FAQ
 ---
 
-French guide available [here](../faq_automatic_renewal_ovh/)
-
-
 ## What are the major changes?
 - Which products does it cover?
 

@@ -41,6 +41,7 @@ L'écran KVM s'ouvre. Il s'agit d'une petite fenêtre indiquant la connexion à 
 > [!primary]
 >
 > Si vous rencontrez des soucis de double saisie, cela peut être dû à un réglage automatique de l'écran. Nous vous recommandons d'ouvrir le KVM dans une nouvelle fenêtre en cliquant sur le bouton « Ouvrir dans une nouvelle fenêtre ».
+>
 > Si vous rencontrez toujours des problèmes avec l'écran, nous vous recommandons de supprimer de l'URL la partie « auto ». Si l'URL est https://compute.sbg1.cloud.ovh.net:6080/vnc_auto.html?token=xxxxxxxxxxxx, elle doit devenir https://compute.sbg1.cloud.ovh.net:6080/vnc.html?token=xxxxxxxxxxxx (le lien pour vous peut être différent, l'exemple donné n'illustre que la partie de l'URL à supprimer)
 >
 

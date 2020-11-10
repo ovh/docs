@@ -147,9 +147,7 @@ iptables-persistent save
 
 
 ## 
-Depois de termos instalado Docker nas 3 máquinas, é igualmente possível dispor de instâncias RunAbove aprovisionadas por "Docker machine".
-Para mais informações, poderá consultar [este guia](https://community.runabove.com/kb/en/instances/docker-in-5-minutes-on-runabove-with-docker-machine.html)).
-Vamos agora ativar a "escuta" da daemon Docker numa porta (por exemplo, a porta 2375, que é a porta padrão oficial atribuída pela [IANA](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker)) para que as máquinas possam dialogar com a máquina "master".
+
 Para esse fim, vamos começar por parar a execução de Docker em cada uma das máquinas através do seguinte comando:
 
 
@@ -295,5 +293,3 @@ Na secção "containers" iremos poder agora visualizar e gerir todos os containe
 Ao clicar em "deploy" vamos poder iniciar a execução de containers em todos os nodes ou em apenas alguns nodes em particular (selecionando a label que corresponde aos nodes nos quais desejamos executar o container):
 
 ![](images/img_2616.jpg){.thumbnail}
-Disporá agora de um sistema de "orquestração" das suas diferentes máquinas Docker e poderá provisionar as suas aplicações/containers dentro do seu cluster de forma simples e rápida tendo ao seu dispor uma interface gráfica. Se desejar testar Docker, não esqueça o teste Alpha disponível em [https://labs.runabove.com/docker/](https://labs.runabove.com/docker/). Recentemente disponibilizamos um template Ubuntu 14.04 com Docker (pré-instalado) em VPS Cloud e VPS Classic (disponível para todos os modelos VPS exceto o modelo VPS Classic 1 que não dispõe de espaço de disco suficiente). Este template permitirá obter diretamente uma máquina pronta a executar containers, beneficiando das vantagens inerentes a um servidor VPS OVH.
-

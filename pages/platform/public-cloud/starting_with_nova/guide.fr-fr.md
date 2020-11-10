@@ -125,7 +125,7 @@ Pour finir, il suffit de récupérer l'ID de l'image qui sera utilisée pour l'i
 
 
 ```bash
-admin@serveur-1:~$ nova image-list
+admin@serveur-1:~$ glance image-list
 +--------------------------------------+------------------------+--------+--------+
 | ID                                   | Name                   | Status | Server |
 +--------------------------------------+------------------------+--------+--------+

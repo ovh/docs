@@ -41,6 +41,7 @@ O ecrã do KVM é aberto. Trata-se de uma pequena janela a indicar a conexão ao
 > [!primary]
 >
 > Se encontrar problemas de dupla digitação, isso pode dever-se à configuração automática do ecrã. Sugerimos que abra o KVM numa nova janela clicando no botão «Abrir numa nova janela».
+>
 > Se continuar a ter problemas, recomendamos que suprima no URL a parte «auto». Se o URL for https://compute.sbg1.cloud.ovh.net:6080/vnc_auto.html?token=xxxxxxxxxxxx, deverá passar a ser https://compute.sbg1.cloud.ovh.net:6080/vnc.html?token=xxxxxxxxxxxx (o seu link pode diferir; este exemplo só ilustra a parte do URL a suprimir).
 >
 
@@ -59,7 +60,7 @@ Pode encontrar problemas de conexão ao KVM através da Área de Cliente OVHclou
 
 Se tem um VPS 2014, é possível que encontre um *erro 1006*. O problema poderá ser resolvido se passar revista à API por meio do comando abaixo.
 
-> \[!api]
+> [!api]
 >
 > @api {POST} /vps/{serviceName}/openConsoleAccess
 >
@@ -83,7 +84,7 @@ Utilize as informações fornecidas pelo comando API para se conectar remotament
 
 Em caso de problema com o KVM, esta é a API aconselhada para o acesso ao KVM:
 
-> \[!api]
+> [!api]
 >
 > @api {POST} /vps/{serviceName}/getConsoleUrl
 >
