@@ -28,7 +28,7 @@ La commande dont vous avez besoin pour vérifier la vitesse de votre disque s'ap
 Pour installer `fio`, établissez une connexion SSH à votre instance puis exécutez la commande suivante :
 
 ```
-root@server:~$ apt-get fio install
+root@server:~$ apt-get install fio
 ```
 
 ### Tester la vitesse de votre disque
