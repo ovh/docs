@@ -21,7 +21,7 @@ With Real Time Monitoring (RTM), you can partially monitor your server and its a
 
 ## Instructions
 
-Once you have installed the RTM via the OVHcloud Control Panel, you can monitor your server in the `Dedicated`{.action} section. On the main page for your server, you can find the monitoring information under `Real Time Monitoring`:
+Once you have installed the RTM via the OVHcloud Control Panel, you can monitor your server in the `Bare Metal Cloud`{.action} section. On the main page for your server, you can find the monitoring information under `Real Time Monitoring`:
 
 ![Real Time Monitoring](images/rtm.png){.thumbnail}
 

@@ -76,7 +76,7 @@ Malgré le retour positif de l'API, il est possible que la connexion prenne une 
 Nous vous recommandons d'utiliser l'un des clients suivants:
 
 - [UltraVnc](https://www.uvnc.com/downloads/ultravnc.html){.external}
-- [Visualiseur VNC](https://www.realvnc.com/en/connect/download/viewer/){.external}
+- [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/){.external}
 
 Utilisez les détails fournis par l'appel API pour vous connecter à distance au VPS à l'aide de l'un des clients logiciels mentionnés ci-dessus.
 

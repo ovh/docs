@@ -17,14 +17,14 @@ I [server dedicati OVH](https://www.ovh.it/server_dedicati/){.external} offrono 
 ## Prerequisiti
 
 - Disporre di un [server dedicato](https://www.ovh.it/server_dedicati/){.external}
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Dedicated`{.action}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Bare Metal Cloud`{.action}
 
 
 ## Procedura
 
 ### Attiva lo spazio di storage
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Dedicated`{.action} e clicca prima sulla scheda `Backup storage`{.action} e poi sul pulsante `Attiva il backup storage`{.action}, infine conferma. 
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Bare Metal Cloud`{.action} e clicca prima sulla scheda `Backup storage`{.action} e poi sul pulsante `Attiva il backup storage`{.action}, infine conferma. 
 
 ![Attiva lo spazio di storage](images/backup_storage_activation.png){.thumbnail}
 

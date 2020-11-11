@@ -50,7 +50,7 @@ En este caso, es el valor que está a la derecha del símbolo de igual:
 
 #### Desde el área de cliente de OVHcloud
 
-En su área de cliente, sitúese en el apartado `Bare Metal Cloud` En la barra de servicios de la izquierda, haga clic en `Private Cloud` y seleccione el servicio Private Cloud correspondiente.
+En su área de cliente, sitúese en el apartado `Hosted Private Cloud` En la barra de servicios de la izquierda, haga clic en `Private Cloud` y seleccione el servicio Private Cloud correspondiente.
 
 Una vez en la página principal del servicio, haga clic en `Seguridad`{.action}.
 

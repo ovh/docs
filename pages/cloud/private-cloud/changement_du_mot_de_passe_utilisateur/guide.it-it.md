@@ -22,7 +22,7 @@ Le autorizzazioni e le password associate agli utenti del client vSphere possono
 
 ### Modifica la password
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e, nella sezione `Bare Metal Cloud`{.action}  (1), clicca su `Private Cloud`{.action} (2), seleziona il server dalla lista (3) e clicca sulla scheda `Utenti`{.action}(4).
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e, nella sezione `Hosted Private Cloud`{.action}  (1), clicca su `Private Cloud`{.action} (2), seleziona il server dalla lista (3) e clicca sulla scheda `Utenti`{.action}(4).
 
 ![Accesso allo Spazio Cliente](images/userpassword1.png){.thumbnail}
 

@@ -24,7 +24,7 @@ IP blocks can be used to make your services accessible online.
 
 ### Order an IP block.
 
-To order an IP block for your **Hosted Private Cloud**, go to the OVHcloud Control Panel. In the `Bare Metal Cloud` section, click on the `IP` section in the left-hand column, then click `Order additional IP addresses`{.action}. Then select your **Hosted Private Cloud** in the dropdown menu before moving on to the next step.
+To order an IP block for your **Hosted Private Cloud**, go to the OVHcloud Control Panel. In the `Hosted Private Cloud` section, click on the `IP` section in the left-hand column, then click `Order additional IP addresses`{.action}. Then select your **Hosted Private Cloud** in the dropdown menu before moving on to the next step.
 
 
 You will need to fill in several fields in order to create your IP block.
@@ -100,7 +100,7 @@ Next, use this API call to move the IP into the IP parking space:
 > This call cuts the network on the VMs that use the IPs concerned.
 >
 
-You can track the movement of your IP block via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in the `Bare Metal Cloud`{.action} section, then `Private Cloud`{.action}. Click on your Hosted Private Cloud service, then on the `Operations`{.action} tab.
+You can track the movement of your IP block via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in the `Hosted Private Cloud`{.action} section, then `Private Cloud`{.action}. Click on your Hosted Private Cloud service, then on the `Operations`{.action} tab.
 
 The operation reference is “removeIpRipeBlock”.
 
@@ -142,7 +142,7 @@ Then use this API call to move the IP addresses to "IP parking":
 > This call cuts the network on VMs that use the IPs in question.
 >
 
-You can track the IP block movement from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in the `Bare Metal Cloud`{.action} part and then `Private Cloud`{.action}. Click on your Hosted Private Cloud service and then click the `Operations`{.action} tab.
+You can track the IP block movement from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in the `Hosted Private Cloud`{.action} part and then `Private Cloud`{.action}. Click on your Hosted Private Cloud service and then click the `Operations`{.action} tab.
 
 The operation name is removeIpRipeBlock.
 

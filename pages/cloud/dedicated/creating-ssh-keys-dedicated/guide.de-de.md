@@ -183,7 +183,7 @@ Wenn Sie die vollständige Ausgabe kopiert haben, sollte der „Identifier“ hi
 
 > [!primary]
 >
-> Alle im Abschnitt „Dedicated“ gespeicherten Schlüssel können auch für Ihre VPS Dienste verwendet werden. Informationen zum Hinterlegen von SSH-Schlüsseln für Public Cloud Dienste finden Sie in [dieser Anleitung](../../public-cloud/create-ssh-keys/#ihren-ssh-schlussel-ins-ovhcloud-kundencenter-importieren_1).
+> Alle im Abschnitt „Dedicated“ gespeicherten Schlüssel können auch für Ihre VPS Dienste verwendet werden. Informationen zum Hinterlegen von SSH-Schlüsseln für Public Cloud Dienste finden Sie in [dieser Anleitung](../../public-cloud/public-cloud-erste-schritte).
 >
 
 

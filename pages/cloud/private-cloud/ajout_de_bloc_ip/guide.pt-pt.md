@@ -23,7 +23,7 @@ Um bloco IP pode servir para tornar os seus serviços acessíveis na Internet.
 
 ### Encomendar um bloco IP
 
-Para encomendar um bloco IP adicional para o seu **Hosted Private Cloud**, aceda à sua Área de Cliente OVHcloud. Na secção `Bare Metal Cloud`, clique na opção `IP` no menu à esquerda e, a seguir, clique em `Encomendar IP adicionais`{.action}. De seguida, selecione o seu **Hosted Private Cloud** no menu pendente antes de passar para o seguinte passo.
+Para encomendar um bloco IP adicional para o seu **Hosted Private Cloud**, aceda à sua Área de Cliente OVHcloud. Na secção `Hosted Private Cloud`, clique na opção `IP` no menu à esquerda e, a seguir, clique em `Encomendar IP adicionais`{.action}. De seguida, selecione o seu **Hosted Private Cloud** no menu pendente antes de passar para o seguinte passo.
 
 
 Vários campos deverão ser preenchidos para criar o seu bloco IP
@@ -99,7 +99,7 @@ De seguida, utilize esta chamada API para mover o IP no “IP parking”:
 > Esta chamada associa a rede nas VM que utilizam os IP em questão.
 >
 
-Poderá acompanhar a transferência do bloco IP na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} na secção `Bare Metal Cloud`{.action} > `Private Cloud`{.action}. Clique no seu serviço Hosted Private Cloud e, depois, no separador `Operações`{.action}.
+Poderá acompanhar a transferência do bloco IP na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} na secção `Hosted Private Cloud`{.action} > `Private Cloud`{.action}. Clique no seu serviço Hosted Private Cloud e, depois, no separador `Operações`{.action}.
 
 A referência da operação é “removeIpRipeBlock”.
 

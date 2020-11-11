@@ -36,7 +36,7 @@ For these examples, we will use the following values in our code samples, which 
 
 ### Assign a virtual MAC address
 
-Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click on the `Dedicated`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table.
+Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click on the `Bare Metal Cloud`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table.
 
 ![Failover IP](images/virtual_mac_01.png){.thumbnail}
 
