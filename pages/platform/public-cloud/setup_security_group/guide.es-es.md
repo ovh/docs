@@ -38,9 +38,9 @@ En la nueva página, introduzca un nombre y una descripción para el grupo que v
 
 A continuación, en la pestaña `Grupos de seguridad`{.action}, la tabla mostrará el grupo que acaba de crear. Las reglas están configuradas por defecto. estas últimas dejan pasar únicamente el tráfico saliente. Si desea modificarlas, vaya al siguiente paso.
 
-Si lo necesita, vaya al paso 3\. Configurar un grupo de seguridad en la instancia[ ](./#3-configurar-un-grupo-de-seguridad-en-su-instancia){.external} de dicho servicio.
+Si lo necesita, vaya al paso [3\. Configurar un grupo de seguridad en su instancia ](./#3-configurar-un-grupo-de-seguridad-en-su-instancia){.external} de dicho servicio.
 
-### 2\. configurar las reglas de un grupo de seguridad
+### 2\. Configurar las reglas de un grupo de seguridad
 
 Para modificar las reglas o, si lo necesita, acceda al menú `Acceso y Seguridad`{.action} y abra la pestaña `Grupos de seguridad`{.action}. Haga clic en el botón `Gestionar las reglas`{.action}. 
 
@@ -72,7 +72,7 @@ Last login: Tue Oct 13 13:56:30 2015 from proxy-109-190-254-35.ovh.net
 admin@serveur1:~$
 ```
 
-### 3\. configurar un grupo de seguridad en su instancia
+### 3\. Configurar un grupo de seguridad en su instancia
 
 Una vez conectado a la interfaz, seleccione el menú `Instancias`{.action}. Cree una nueva instancia desde esta página. 
 
