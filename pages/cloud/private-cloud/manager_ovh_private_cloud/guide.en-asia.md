@@ -24,7 +24,7 @@ The OVHcloud Hosted Private Cloud Control Panel enables you to easily manage the
 
 ### General information tab
 
-Once you have navigated to the "Server" section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), and selected your service under `Private Cloud`{.action} in the left-hand navigation bar, you will have access to a general overview of your Hosted Private Cloud service:
+Once you have navigated to the "Hosted Private Cloud" section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), and selected your service under `Private Cloud`{.action} in the left-hand navigation bar, you will have access to a general overview of your Hosted Private Cloud service:
 
 ![General information](images/controlpanel1.png){.thumbnail}
 

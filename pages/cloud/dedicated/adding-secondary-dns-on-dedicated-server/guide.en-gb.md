@@ -24,7 +24,7 @@ If you want to use your [Dedicated Server](https://www.ovh.co.uk/dedicated_serve
 
 ### Retrieve the secret value (TXT record)
 
-Click the `Dedicated`{.action} menu, then click `Dedicated Servers`{.action} to expand the list of servers in your account:
+Click the `Bare Metal Cloud`{.action} menu, then click `Dedicated Servers`{.action} to expand the list of servers in your account:
 
 ![Secondary DNS](images/dns2-01.png){.thumbnail}
 
@@ -160,7 +160,7 @@ $ sudo systemctl restart named
 > You can now utilize OVH Secondary DNS.
 ### Add Your Domain to OVH Secondary DNS
 
-Click the `Dedicated`{.action} menu, and then click `Dedicated Servers`{.action} to expand the list of servers in your account:
+Click the `Bare Metal Cloud`{.action} menu, and then click `Dedicated Servers`{.action} to expand the list of servers in your account:
 
 ![Secondary DNS](images/dns2-01.png){.thumbnail}
 

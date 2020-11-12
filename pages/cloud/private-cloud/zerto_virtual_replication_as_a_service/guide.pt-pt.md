@@ -51,7 +51,7 @@ Também é possível definir um nível de prioridade entre os VPG, de modo a dar
 
 #### A partir da Área de Cliente OVHcloud
 
-Na Área de Cliente OVHcloud, aceda à secção `Bare Metal Cloud` -> `Private Cloud`. > Selecione a plataforma Private Cloud primária. > Selecione
+Na Área de Cliente OVHcloud, aceda à secção `Hosted Private Cloud` -> `Private Cloud`. > Selecione a plataforma Private Cloud primária. > Selecione
 o datacenter desejado. >E clique no separador `Disaster Recovery Plan (DRP)`{.action}.
 
 ![zerto ovh enable](images/zerto_OvhToOvh_enable_01.png){.thumbnail}

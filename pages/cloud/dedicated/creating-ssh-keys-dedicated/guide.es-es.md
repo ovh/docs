@@ -170,7 +170,7 @@ Si ha copiado el resultado completo, ya debería estar incluido el identificador
 
 > [!primary]
 >
-> Las claves guardadas en la sección «Dedicada» también podrán utilizarse en sus servicios de servidores virtuales privados (VPS). Por lo que se refiere a las claves SSH para los servicios Public Cloud, consulte [esta guía](https://docs.ovh.com/es/public-cloud/crear-llave-ssh/).
+> Las claves guardadas en la sección «Dedicada» también podrán utilizarse en sus servicios de servidores virtuales privados (VPS). Por lo que se refiere a las claves SSH para los servicios Public Cloud, consulte [esta guía](../../public-cloud/public-cloud-primeros-pasos).
 >
 
 

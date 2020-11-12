@@ -50,7 +50,7 @@ Hier ist es der Wert rechts neben dem Gleichheitszeichen:
 
 #### Über das OVHcloud Kundencenter
 
-Begeben Sie sich in Ihrem Kundencenter in den Bereich `Bare Metal Cloud`. Klicken Sie im linken Menü auf `Private Cloud`{.action} und wählen Sie den betreffenden Private Cloud Dienst aus.
+Begeben Sie sich in Ihrem Kundencenter in den Bereich `Hosted Private Cloud`. Klicken Sie im linken Menü auf `Private Cloud`{.action} und wählen Sie den betreffenden Private Cloud Dienst aus.
 
 Klicken Sie auf der Hauptseite des Dienstes auf `Sicherheit`{.action}.
 

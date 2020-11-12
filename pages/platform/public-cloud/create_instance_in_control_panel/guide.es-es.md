@@ -10,14 +10,14 @@ section: 'Primeros pasos'
 
 ## Objetivo
 
-[Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} le permite crear rápida y fácilmente instancias (por ejemplo: servidores virtuales) en tan solo unos clics.
+[Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/){.external} le permite crear rápida y fácilmente instancias (por ejemplo: servidores virtuales) en tan solo unos clics.
 
 **Aprenda a crear una instancia desde el área de cliente Public Cloud de OVHcloud.**
 
 ## Requisitos
 
 * acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
-* un proyecto [Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} creado en su cuenta de OVHcloud
+* un proyecto [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/){.external} creado en su cuenta de OVHcloud
 * una llave SSH creada en el área de cliente de OVHcloud
 
 ### Desplegar una instancia de Public Cloud
@@ -59,7 +59,7 @@ Si selecciona un sistema operativo Windows, se le proporcionará automáticament
 
 > [!primary]
 >
-Las instancias que se ejecutan en un sistema operativo basado en Unix requieren que se añada una clave SSH al servidor. Para más información sobre la creación de una clave SSH, consulte nuestra guía [Crear claves SSH](https://docs.ovh.com/es/public-cloud/crear-llave-ssh/){.external}.
+Las instancias que se ejecutan en un sistema operativo basado en Unix requieren que se añada una clave SSH al servidor. Para más información sobre la creación de una clave SSH, consulte nuestra guía [Crear claves SSH](../crear-llave-ssh/){.external}.
 >
 
 En el cuarto paso puede elegir el número de instancias que desea crear, asignarle un nombre, y añadir una red privada o un script de post-instalación, si así lo desea.
@@ -78,10 +78,10 @@ Una vez haya confirmado que todos los datos introducidos son correctos, haga cli
 
 ## Conclusiones
 
-Después de leer esta guía debe ser capaz de crear una instancia en su proyecto de public cloud a través del área de cliente de OVHcloud. Si desea más información sobre lo que puede hacer con su instancia, consulte nuestras guías en la página de soporte de los [Servicios Public Cloud](https://docs.ovh.com/es/public-cloud/){.external}.
+Después de leer esta guía debe ser capaz de crear una instancia en su proyecto de public cloud a través del área de cliente de OVHcloud. Si desea más información sobre lo que puede hacer con su instancia, consulte nuestras guías en la página de soporte de los [Servicios Public Cloud](../).
 
 ## Más información
 
-[Primeros pasos con Public Cloud](https://docs.ovh.com/es/public-cloud/empezar_con_public_cloud_identificarse_y_crear_un_proyecto/){.external}
+[Primeros pasos con Public Cloud](../public-cloud-primeros-pasos/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

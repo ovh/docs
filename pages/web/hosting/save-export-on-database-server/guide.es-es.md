@@ -8,6 +8,7 @@ order: 4
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
 
 **Última actualización: 24/08/2020**
 
@@ -60,7 +61,7 @@ Se mostrará una lista de las copias de seguridad disponibles. Haga clic en el b
 
 #### 1\. Exportar una base de datos MySQL o MariaDB
 
- En algunos casos, la RAM disponible en el servidor de bases de datos puede no permitir la exportación deseada. En ese caso, le recomendamos que utilice la herramienta OVHcloud en el área de cliente. que le permitirá utilizar recursos externos a su solución. Consulte el apartado ["Guardar y exportar una base de datos desde el área de cliente"](./#guardar-y-exportar-una-base-de-datos-desde-el-area de-cliente) de esta guía.
+ En algunos casos, la RAM disponible en el servidor de bases de datos puede no permitir la exportación deseada. En ese caso, le recomendamos que utilice la herramienta OVHcloud en el área de cliente. que le permitirá utilizar recursos externos a su solución. Consulte el apartado ["Guardar y exportar una base de datos desde el área de cliente"](./#guardar-y-exportar-una-base-de-datos-desde-el-area-de-cliente) de esta guía.
 
 ##### 1\.1 Exportar mi base de datos MySQL o MariaDB desde phpMyAdmin OVHcloud (solo para SQL Privado)
 
@@ -104,7 +105,7 @@ mysqldump —host=servidor —user=usuario —port=puerto —contraseña=contras
 
 #### 2\. Exportación e importación de bases de datos PostgreSQL fuera del área de cliente
 
- En algunos casos, la RAM disponible en el servidor de bases de datos puede no permitir la exportación deseada. En ese caso, le recomendamos que utilice la herramienta OVHcloud en el área de cliente. que le permitirá utilizar recursos externos a su solución. Consulte el apartado ["Guardar y exportar una base de datos desde el área de cliente"](./#guardar-y-exportar-una-base-de-datos-desde-el-area de-cliente) de esta guía.
+ En algunos casos, la RAM disponible en el servidor de bases de datos puede no permitir la exportación deseada. En ese caso, le recomendamos que utilice la herramienta OVHcloud en el área de cliente. que le permitirá utilizar recursos externos a su solución. Consulte el apartado ["Guardar y exportar una base de datos desde el área de cliente"](./#guardar-y-exportar-una-base-de-datos-desde-el-area-de-cliente) de esta guía.
  
 ##### 2\.1 Exportar la base de datos PostgreSQL en línea de comandos
 

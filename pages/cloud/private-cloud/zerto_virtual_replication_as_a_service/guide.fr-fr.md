@@ -51,7 +51,7 @@ Il permet de regrouper logiquement un groupe de VM correspondant à un besoin m�
 
 #### Depuis l'espace client OVHcloud
 
-Dans votre espace client OVHcloud, rendez-vous dans la partie `Bare Metal Cloud` -> `Private Cloud` -> sélectionnez votre plateforme Private-Cloud primaire -> sélectionnez 
+Dans votre espace client OVHcloud, rendez-vous dans la partie `Hosted Private Cloud` -> `Private Cloud` -> sélectionnez votre plateforme Private-Cloud primaire -> sélectionnez 
 le datacenter voulu -> cliquez sur l'onglet `Disaster Recovery Plan (DRP)`{.action}.
 
 ![zerto ovh enable](images/zerto_OvhToOvh_enable_01.png){.thumbnail}

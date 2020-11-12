@@ -126,24 +126,24 @@ Network bridging is the action taken by network equipment to create an aggregate
 
 The Network Bridge configuration is most commonly used in the context of virtualisation, to allow each Virtual Machine to have its own public IP address.
 
-For more information on network bridging, please refer to our guide: [Network Bridging](https://docs.ovh.com/ie/en/dedicated/network-bridging/).
+For more information on network bridging, please refer to our guide: [Network Bridging](../network-bridging/).
 
 #### IP aliasing
 
 IP aliasing is the process of associating two or more IP addresses to the same network interface. This allows your server to establish multiple connections to a network, each serving a different purpose.
 
-For detailed instructions on how to configure IP aliasing, please refer to [this guide](https://docs.ovh.com/ie/en/dedicated/network-ipaliasing).
+For detailed instructions on how to configure IP aliasing, please refer to [this guide](../network-ipaliasing).
 
 #### IPv6 configuration
 
-All OVHcloud dedicated servers are delivered with a /64 IPv6 block. To use the addresses in this block, you will need to make some network configuration changes. Please refer to our guide: [IPv6 Configuration](https://docs.ovh.com/ie/en/dedicated/network-ipv6/).
+All OVHcloud dedicated servers are delivered with a /64 IPv6 block. To use the addresses in this block, you will need to make some network configuration changes. Please refer to our guide: [IPv6 Configuration](../network-ipv6/).
 
 
 ### Troubleshooting
 
 OVHcloud deploys all its dedicated servers with an IPMI (Intelligent Platform Management Interface) console, which runs in your browser or from a Java applet, and enables you to connect directly to your server, even if it has no network connection. This makes it good for troubleshooting issues that may have taken your server offline.
 
-For more information, please refer to our guide: [Using the IPMI with dedicated servers](https://docs.ovh.com/ie/en/dedicated/use-ipmi-dedicated-servers).
+For more information, please refer to our guide: [Using the IPMI with dedicated servers](../use-ipmi-dedicated-servers).
 
 ### Rescue mode
 
@@ -161,7 +161,7 @@ Confirm your options on the next screen and then reboot your server to apply the
 
 Your server will now reboot into rescue mode, and you will receive the credentials for logging in via the email address you provided. To exit rescue mode, simply change the boot mode back to boot on the hard disk, then reboot your server.
 
-To learn more about how you can use rescue mode to resolve issues with your server, please refer to our guide: [Rescue mode](https://docs.ovh.com/ie/en/dedicated/ovh-rescue).
+To learn more about how you can use rescue mode to resolve issues with your server, please refer to our guide: [Rescue mode](../rescue_mode/).
 
 
 #### Hardware diagnosis

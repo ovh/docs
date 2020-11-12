@@ -17,14 +17,14 @@ Alle [ OVH Dedicated Server](https://www.ovh.de/dedicated_server/){.external} An
 ## Voraussetzungen
 
 - Sie verfügen über einen [dedizierten Server](https://www.ovh.de/dedicated_server/){.external}.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Dedicated`{.action}.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Bare Metal Cloud`{.action}.
 
 
 ## Beschreibung
 
 ### Backup-Speicher aktivieren
 
-Loggen Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und gehen Sie im Bereich `Dedicated`{.action} auf die Seite Ihres Servers. Klicken Sie auf den Tab `Storage Backup`{.action}, klicken Sie dann auf den Button `Storage-Backup aktivieren`{.action} und bestätigen Sie.
+Loggen Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und gehen Sie im Bereich `Bare Metal Cloud`{.action} auf die Seite Ihres Servers. Klicken Sie auf den Tab `Storage Backup`{.action}, klicken Sie dann auf den Button `Storage-Backup aktivieren`{.action} und bestätigen Sie.
 
 ![Backup-Speicher aktivieren](images/backup_storage_activation.png){.thumbnail}
 

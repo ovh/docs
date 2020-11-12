@@ -21,7 +21,7 @@ To configure your Hosted Private Cloud for [healthcare data hosting](https://www
 >
 
 - a Private Cloud infrastructure in version 6.0 or higher
-- access to the `Bare Metal Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the `Hosted Private Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 

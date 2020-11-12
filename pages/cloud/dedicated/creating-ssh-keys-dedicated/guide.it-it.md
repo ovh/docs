@@ -170,7 +170,7 @@ Se hai copiato per intero il risultato, l’identificativo che segue la chiave d
 
 > [!primary]
 >
-> Qualsiasi chiave salvata nella sezione “Dedicato” potrà essere utilizzata anche per il tuo VPS. Per le chiavi SSH relative ai servizi Public Cloud, consulta [questa guida](https://docs.ovh.com/it/public-cloud/creare-chiave-ssh/).
+> Qualsiasi chiave salvata nella sezione “Dedicato” potrà essere utilizzata anche per il tuo VPS. Per le chiavi SSH relative ai servizi Public Cloud, consulta [questa guida](../../public-cloud/primi-passi-public-cloud).
 >
 
 

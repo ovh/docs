@@ -32,7 +32,7 @@ A virtual private server (VPS) is a virtualised dedicated server. Unlike Web Hos
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `VPS`{.action}. This dashboard contains important information about your service and allows you to perform essential operations. It will appear differently, depending on the product range of your VPS solution. 
 
-- If you have just ordered a VPS, its reference name will look like this: *vps-XXXXXXX.vps.ovh.net* (where *X* stands for numbers and letters). 
+- If you have recently ordered a VPS, its reference name will look like this: *vps-XXXXXXX.vps.ovh.net* (where *X* stands for numbers and letters). 
 
 - If you are managing an older VPS, you will notice that the reference name is structured differently: *vpsXXXX.ovh.net* (in which *X* stands for numbers). 
 
@@ -59,7 +59,7 @@ ssh username@IPv4_of_your_VPS
 Since you are now logged in with root privileges (a sudo user), you can enter commands to perform administrative tasks. It is recommendable to first change your password:
 
 ```sh
-$ sudo passwd
+~$ sudo passwd
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -67,8 +67,8 @@ passwd: password updated successfully
 Note that passwords are not displayed. Next, switch to the "root" user and set your admin password:
 
 ```sh
-$ sudo su -
-# passwd
+~$ sudo su -
+~# passwd
 New password:
 Retype new password:
 passwd: password updated successfully
