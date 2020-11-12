@@ -16,7 +16,7 @@ De aangeboden GPU opties zijn NVIDIA GeForce GTX 1060, GTX 1070, of GTX 1080Ti.
 
 > [!warning]
 >
-> Voorlopig zijn de GPU instances alleen beschikbaar in GRA3, GRA5, en BHS3. Mogelijk moet u een nieuw project aanmaken en de nieuwe 2017-reeks selecteren. Meer informatie vindt u [hier](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/). 
+> Voorlopig zijn de GPU instances alleen beschikbaar in GRA3, GRA5, en BHS3. Mogelijk moet u een nieuw project aanmaken en de nieuwe 2017-reeks selecteren.
 > 
 
 **Deze handleiding behandelt de stappen voor het implementeren van een GPU instance op Linux of Windows**

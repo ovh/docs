@@ -16,7 +16,7 @@ Mahdolliset grafiikkasuorittimet ovat NVIDIA GeForce GTX 1060, GTX 1070 tai GTX 
 
 > [!warning]
 > 
-> GPU-instansseja on toistaiseksi saatavilla ainoastaan GRA3, GRA5 ja BHS3-konesaleissa. On mahdollisesti tarpeen luoda uusi projekti ja valita 2017-sarja. Lisätietoa [täällä](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/).
+> GPU-instansseja on toistaiseksi saatavilla ainoastaan GRA3, GRA5 ja BHS3-konesaleissa. On mahdollisesti tarpeen luoda uusi projekti ja valita 2017-sarja.
 > 
 
 **Tässä ohjeessa kerrotaan, kuinka GPU-instanssi otetaan käyttöön Linuxilla tai Windowsilla**.

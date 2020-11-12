@@ -15,7 +15,7 @@ Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?act
 
 ### Requisitos
 
-- Una [instancia de Public Cloud de OVHcloud](../crear_una_instancia_desde_el_area_de_cliente_de_ovh/)
+- Una [instancia de Public Cloud de OVHcloud](https://www.ovhcloud.com/es/public-cloud/)
 - [Una clave SSH](../crear-llave-ssh/)
 
 ### Procedimiento

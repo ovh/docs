@@ -16,7 +16,7 @@ Les processeurs graphiques proposés sont des NVIDIA Tesla V100.
 
 > [!warning]
 >
-> Actuellement, les instances GPU ne sont disponibles qu’avec les datacenters des régions GRA3, GRA5, GRA7 et BHS3. Il vous faudra probablement créer un nouveau projet et choisir la nouvelle de gamme 2017. [En savoir plus.](https://docs.ovh.com/fr/public-cloud/faq-comment-comprendre-la-nouvelle-nomenclature-de-la-gamme-2017/)
+> Actuellement, les instances GPU ne sont disponibles qu’avec les datacenters des régions GRA3, GRA5, GRA7 et BHS3. Il vous faudra probablement créer un nouveau projet et choisir la nouvelle de gamme 2017.
 > 
 
 **Ce guide explique comment déployer une instance GPU sous Linux ou Windows**

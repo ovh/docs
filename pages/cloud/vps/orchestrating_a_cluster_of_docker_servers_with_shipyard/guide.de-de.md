@@ -248,7 +248,7 @@ Confirm: <WIEDERHOLUNG>
 
 Nach der Änderung des Passworts verlassen wir das CLI mit STRG+D.
 
-Wir können jetzt über die URL http://<ihre-host-ip>:8080 auf das Shipyard Interface zugreifen und uns mit dem Benutzernamen "admin" und dem neu gesetzten Passwort einloggen.
+Wir können jetzt über die URL `http://<ihre-host-ip>:8080` auf das Shipyard Interface zugreifen und uns mit dem Benutzernamen "admin" und dem neu gesetzten Passwort einloggen.
 
 Nach dem Einloggen können wir nun in der Rubrik "Engines" im Shipyard Web-Interface die verwendeten Engines (die Nodes) eintragen:
 

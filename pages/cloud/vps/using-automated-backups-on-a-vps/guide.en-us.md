@@ -171,7 +171,7 @@ Running  QEMU-GA            QEMU Guest Agent
 
 ## Go further
 
-[Using snapshots on a VPS](https://docs.ovh.com/en/vps/using-snapshots-on-a-vps)
+[Using snapshots on a VPS](../using-snapshots-on-a-vps/)
 
 
 Join our community of users on <https://community.ovh.com/en/>.
