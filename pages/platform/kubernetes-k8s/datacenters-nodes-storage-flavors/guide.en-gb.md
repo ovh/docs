@@ -5,7 +5,7 @@ slug: datacenters-nodes-storage-flavors
 section: Technical resources
 ---
 
-**Last updated October 23<sup>th</sup>, 2020.**
+**Last updated November 12<sup>th</sup>, 2020.**
 
 ## Available datacenters, worker nodes and persistent storage flavors
 
