@@ -32,6 +32,7 @@ Si vous êtes toujours engagé pour cet accès, le montant des frais de résilia
 ![Raison resiliation](images/Resiliation02-edit.png){.thumbnail}
 
 Il vous sera alors possible de demander à conserver certains services liés à votre pack (s'ils ont été auparavant activés) tels que :
+
 - lignes VoIP/Fax
 - numéro(s) porté(s)
 - compte Exchange (si pack xDSL Entreprise)
