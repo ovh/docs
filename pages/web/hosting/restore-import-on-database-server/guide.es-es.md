@@ -8,7 +8,8 @@ order: 5
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-s
+>
+
 **Última actualización: 11/06/2020**
 
 ## Objetivo
@@ -100,7 +101,7 @@ Seleccione el archivo de backup haciendo clic en `Navegar`{.action} (atención: 
 > [!primary]
 >
 > Le recomendamos que fraccione su base de datos en varios archivos cuando supere los 100 MB y realice varias importaciones desde phpMyAdmin.<br>
-> La importación de archivos que superen los 100 MB puede realizarse desde el área de cliente siguiendo el paso ["Guardar, restaurar e importar una base de datos desde el área de cliente".](./#restaurar-e-importar-una-base-de-datos-desde-el-area-de-cliente) 
+> La importación de archivos que superen los 100 MB puede realizarse desde el área de cliente siguiendo el paso ["Guardar, restaurar e importar una base de datos desde el área de cliente".](./#restaurar-e-importar-una-base-de-datos-desde-el-area-de-clientes) 
 
 
 Deje las opciones predeterminadas y haga clic en `Ejecutar`{.action} para iniciar la importación.
@@ -132,7 +133,7 @@ cat nombre_de_la_base.sql | mysql —host=servidor —user=usuario —port=puert
 
 ### importación de bases de datos PostgreSQL fuera del área de cliente
 
-En algunos casos, la RAM disponible en el servidor de bases de datos puede no permitir la importación deseada. En ese caso, le recomendamos que utilice la herramienta OVHcloud en el área de cliente. Consulte la sección ["Restaurar e importar una base de datos desde el área de cliente"](./#restaurar-e-importar-una-base-de-datos-desde-el-area-de-cliente) de esta guía.
+En algunos casos, la RAM disponible en el servidor de bases de datos puede no permitir la importación deseada. En ese caso, le recomendamos que utilice la herramienta OVHcloud en el área de cliente. Consulte la sección ["Restaurar e importar una base de datos desde el área de cliente"](./#restaurar-e-importar-una-base-de-datos-desde-el-area-de-clientes) de esta guía.
 
 #### Importar una base de datos PostgreSQL en línea de comandos
 

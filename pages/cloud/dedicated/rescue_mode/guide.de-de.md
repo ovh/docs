@@ -22,7 +22,7 @@ Der Rescue-Modus ist ein Tool Ihres dedizierten Servers, mit dem Sie diesen auf 
 
 ## Beschreibung
 
-Um den Rescue-Modus zu aktivieren, loggen Sie sich zunächst in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager/){.external} ein. Wählen Sie Ihren Server im Bereich `Dedicated`{.action} unter `Dedicated Server`{.action}. Gehen Sie anschließend auf `Serverstatus`{.action} (auch: „Zustand des Servers") > `Allgemeine Informationen`{.action} > `...`{.action} und klicken Sie auf den Button `Ändern`{.action}, um den Startmodus zu ändern.
+Um den Rescue-Modus zu aktivieren, loggen Sie sich zunächst in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager/){.external} ein. Wählen Sie Ihren Server im Bereich `Bare Metal Cloud`{.action} unter `Dedicated Server`{.action}. Gehen Sie anschließend auf `Serverstatus`{.action} (auch: „Zustand des Servers") > `Allgemeine Informationen`{.action} > `...`{.action} und klicken Sie auf den Button `Ändern`{.action}, um den Startmodus zu ändern.
 
 ![Startmodus ändern](images/rescue-mode-01.png){.thumbnail}
 

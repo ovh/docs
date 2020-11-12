@@ -41,7 +41,7 @@ Wenn die Zahlung abgeschlossen ist, erhalten Sie eine E-Mail mit folgenden Angab
 
 ### Verwalten des Dienstes im OVHcloud Kundencenter
 
-Wechseln Sie in Ihrem OVHcloud Kundencenter in den Bereich "Server" und dann zu `Plattformen und Dienstleistungen`.
+Wechseln Sie in Ihrem OVHcloud Kundencenter in den Bereich "Hosted Private Cloud" und dann zu `Plattformen und Dienstleistungen`.
 
 ![Veeam Cloud Connect](images/veeam-cloud-connect-manager-start1.png){.thumbnail}
 

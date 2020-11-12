@@ -20,7 +20,7 @@ Um die Sicherheit Ihrer Hosted Private Cloud Infrastruktur zu verbessern, könne
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und wählen Sie dann den Bereich `Bare Metal Cloud`. Klicken Sie im linken Menü auf `Private Cloud` und wählen Sie die betreffende Infrastruktur aus.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und wählen Sie dann den Bereich `Hosted Private Cloud`. Klicken Sie im linken Menü auf `Private Cloud` und wählen Sie die betreffende Infrastruktur aus.
 
 Klicken Sie auf der Startseite des Dienstes auf `Sicherheit`{.action} und danach auf `Zugangseinstellungen für vCenter bearbeiten`{.action}.
 

@@ -21,7 +21,7 @@ section: Funcionalidades da OVH
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e selecione a secção `Bare Metal Cloud`. Clique em `Private Cloud` na barra de serviços à esquerda e selecione a infraestrutura correspondente.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e selecione a secção `Hosted Private Cloud`. Clique em `Private Cloud` na barra de serviços à esquerda e selecione a infraestrutura correspondente.
 
 ![utilizador vsphere](images/addMailOnUser01.png){.thumbnail}
 

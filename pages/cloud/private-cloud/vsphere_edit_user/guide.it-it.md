@@ -20,7 +20,7 @@ All’utente vSphere di un servizio Private Cloud è possibile associare cognome
 
 ## Procedura
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager) e, nella sezione `Bare Metal Cloud`, clicca su `Private Cloud` nella colonna a sinistra e seleziona il servizio in questione.
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager) e, nella sezione `Hosted Private Cloud`, clicca su `Private Cloud` nella colonna a sinistra e seleziona il servizio in questione.
 
 ![Utente vSphere](images/addMailOnUser01.png){.thumbnail}
 

@@ -21,7 +21,7 @@ Il est possible d'associer un nom, prénom, numéro de téléphone et adresse e-
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) et dirigez-vous dans la section `Bare Metal Cloud`. Cliquez sur `Private Cloud` dans la barre de services à gauche puis sélectionnez l'infrastructure concernée.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) et dirigez-vous dans la section `Hosted Private Cloud`. Cliquez sur `Private Cloud` dans la barre de services à gauche puis sélectionnez l'infrastructure concernée.
 
 ![utilisateur vsphere](images/addMailOnUser01.png){.thumbnail}
 

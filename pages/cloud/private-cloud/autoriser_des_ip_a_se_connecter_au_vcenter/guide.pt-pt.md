@@ -24,7 +24,7 @@ section: Funcionalidades da OVH
 
 Quando [a política de acesso ao vCenter é limitada](../alterar-a-politica-de-acesso-ao-vcenter/), é necessário adicionar os IP que serão autorizados a ligar-se ao serviço.
 
-A operação pode ser realizada a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external-link}. Na secção `Bare Metal Cloud`, clique na opção `Private Cloud`. Selecione a infraestrutura e aceda ao separador `Segurança` e clique em `Adicionar um novo intervalo de endereços IP`{.action}.
+A operação pode ser realizada a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external-link}. Na secção `Hosted Private Cloud`, clique na opção `Private Cloud`. Selecione a infraestrutura e aceda ao separador `Segurança` e clique em `Adicionar um novo intervalo de endereços IP`{.action}.
 
 ![vCenter](images/restrictIP.JPG){.thumbnail}
 

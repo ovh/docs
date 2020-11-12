@@ -73,7 +73,7 @@ Para obtener la puerta de enlace IPv6 asignada al VPS:
 > @api {GET} /vps/{serviceName}/ips/{ipAddress}
 >
 
-Anótelas y continúe en el apartado [2. Aplicar la configuración IPv6](../configurer-ipv6/#etape-2-appliquer-la-configuration-ipv6_1){.external}.
+Anótelas y continúe en el apartado [2. Aplicar la configuración IPv6](../configurer-ipv6/#2-aplicar-la-configuracion-ipv6_1){.external}.
 
 ### 2. Aplicar la configuración IPv6
 

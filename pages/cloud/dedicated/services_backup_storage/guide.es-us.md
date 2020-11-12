@@ -80,7 +80,7 @@ Haga clic en `Aceptar`{.action} para guardar los cambios. El bloque de IP ya no 
 
 En la pestaña `Backup Storage`{.action}, haga clic en el botón `¿Ha olvidado la contraseña?`{.action}. 
 
-![Cambiar la contraseña](images/backup-storage-09-edited_2020.png){.thumbnail}
+![Cambiar la contraseña](images/backup-storage-09_2020.png){.thumbnail}
 
 Recibirá una nueva contraseña por correo electrónico en la dirección asociada a su cuenta de administrador.
  Siga los pasos que se indican en el email.

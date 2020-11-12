@@ -22,7 +22,7 @@ La gestion des autorisations et mots de passe des utilisateurs du client vSphere
 
 ### Modifier le mot de passe
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, accédez à la section `Bare Metal Cloud`{.action} (1), cliquez sur `Private Cloud`{.action} (2) et sélectionnez votre serveur dans la liste (3). Cliquez alors sur l'onglet `Utilisateurs`{.action} (4).
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, accédez à la section `Hosted Private Cloud`{.action} (1), cliquez sur `Private Cloud`{.action} (2) et sélectionnez votre serveur dans la liste (3). Cliquez alors sur l'onglet `Utilisateurs`{.action} (4).
 
 ![acces espace client](images/userpassword1.png){.thumbnail}
 

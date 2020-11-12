@@ -24,7 +24,7 @@ If you want to use your [Dedicated Server](https://www.ovh.com/world/dedicated-s
 
 ### Obtain a domain verification code
 
-Click the `Dedicated`{.action} menu, then click `Dedicated Servers`{.action} to expand the list of servers in your account:
+Click the `Bare Metal Cloud`{.action} menu, then click `Dedicated Servers`{.action} to expand the list of servers in your account:
 
 ![Secondary DNS](images/dns2-01_2020.png){.thumbnail}
 
@@ -47,7 +47,7 @@ Now that you have the details for domain verification, please log into your acco
 
 ### Add the secondary DNS to your server
 
-Click the `Dedicated`{.action} menu, and then click `Dedicated Servers`{.action} to expand the list of servers in your account:
+Click the `Bare Metal Cloud`{.action} menu, and then click `Dedicated Servers`{.action} to expand the list of servers in your account:
 
 ![Secondary DNS](images/dns2-01_2020.png){.thumbnail}
 

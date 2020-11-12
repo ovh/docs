@@ -72,7 +72,7 @@ Folgen Sie den im Fenster angezeigten Anweisungen und klicken Sie anschließend 
 
 > [!primary]
 >
-> Für manche Betriebssysteme oder Plattformen wie Plesk und Windows muss vor der Installation eine Lizenz erworben werden. Diese können Sie über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im Bereich `Dedicated`{.action} unter `Lizenzen`{.action} oder über einen Reseller kaufen. Integrieren Sie diese anschließend manuell über das Betriebssystem selbst oder über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}. 
+> Für manche Betriebssysteme oder Plattformen wie Plesk und Windows muss vor der Installation eine Lizenz erworben werden. Diese können Sie über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im Bereich `Bare Metal Cloud`{.action} unter `Lizenzen`{.action} oder über einen Reseller kaufen. Integrieren Sie diese anschließend manuell über das Betriebssystem selbst oder über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}. 
 > 
 
 

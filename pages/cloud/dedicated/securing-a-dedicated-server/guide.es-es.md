@@ -132,7 +132,7 @@ A continuación deberá introducir la contraseña del usuario *root* para valida
 
 En los sistemas UNIX, como Linux o macOS, el usuario *root* está creado por defecto y dispone de todos los permisos de administración sobre el sistema. No es recomendable (ni seguro) que solo se pueda acceder al servidor dedicado a través de este usuario, ya que podría realizar operaciones irreversibles en el servidor.
 
-Por lo tanto, le recomendamos encarecidamente que desactive el acceso directo de los usuarios *root* por SSH. Para ello, edite el archivo de configuración SSH tal y como se explica más arriba en el apartado [Cambiar el puerto de escucha por defecto del servicio SSH](https://docs.ovh.com/es/dedicated/proteger-un-servidor-dedicado#cambiar-el-puerto-de-escucha-por-defecto-del-servicio-ssh){.external}.
+Por lo tanto, le recomendamos encarecidamente que desactive el acceso directo de los usuarios *root* por SSH. Para ello, edite el archivo de configuración SSH tal y como se explica más arriba en el apartado [Cambiar el puerto de escucha por defecto del servicio SSH](./#cambiar-el-puerto-de-escucha-por-defecto-del-servicio-ssh_1).
 
 Conéctese por SSH al servidor e introduzca el siguiente comando:
 
@@ -201,7 +201,7 @@ Le recomendamos que cree y adapte las reglas del firewall en función de su uso.
 
 Los servidores dedicados de OVH incluyen un firewall de red en la entrada de la infraestructura. Activándolo y configurándolo correctamente es posible bloquear determinados protocolos antes incluso de que lleguen al servidor.
 
-Para más información, consulte la guía [Configurar el firewall de red](https://docs.ovh.com/es/dedicated/firewall-de-red/){.external}.
+Para más información, consulte la guía [Configurar el firewall de red](../firewall-de-red/){.external}.
 
 
 ### Guardar copia de seguridad del sistema y los datos
