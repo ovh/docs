@@ -71,7 +71,7 @@ Puede asociar hasta 26 volúmenes adicionales por instancia.
 
 OVHcloud protege toda su infraestructura gracias a su solución anti-DDoS exclusiva. Además, puede añadir los grupos de seguridad OpenStack: este equivalente de un cortafuegos se gestiona directamente a nivel de la infraestructura de OpenStack, antes de sus instancias.
 
-Le invitamos a consultar la guía [Configurer un groupe de sécurité](../configurar-un-grupo-de-seguridad).
+Le invitamos a consultar la guía [Configurar un grupo de seguridad](../configurar-un-grupo-de-seguridad).
 
 Estos sistemas de protección, combinados con los que usted puede implementar en sus servidores, le permitirán optimizar la fiabilidad de su despliegue.
 
