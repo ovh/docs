@@ -21,7 +21,7 @@ De forma a assegurar uma continuidade de serviço e evitar a perda de dados, a O
 
 ## Requisitos
 
-* Dispor de uma [infraestrutura Hosted Private Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVHcloud.
+* Dispor de uma [infraestrutura Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external} na sua conta OVHcloud.
 * Aceder à interface de gestão vSphere Web Client HTML.
 
 ## Instruções
