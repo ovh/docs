@@ -14,7 +14,7 @@ Ce guide vous indique les pistes à suivre afin de vous retrouver dans ce menu.
 
 
 ### Prérequis
-- [Créer un accès à Horizon](../create_and_delete_a_user){.ref}
+- [Créer un accès à Horizon](../creer-un-acces-a-horizon/)
 
 
 ## Dans l'interface Horizon

@@ -225,7 +225,7 @@ Confirm: <salasanan_varmistus>
 
 Kun salasanamuutos on suoritettu, voit poistua komentokehotteesta näppäinyhdistelmällä ctrl+d.
 
-Pääset nyt kirjautumaan Shipyard-www-käyttöliittymään oman palvelinosoitteesi http://palvelin.tld:8080 kautta käyttäjätunnuksella ”admin” ja aiemmin Shipyard-komentokehotteen kautta määritellyllä salasanalla.
+Pääset nyt kirjautumaan Shipyard-www-käyttöliittymään oman palvelinosoitteesi `http://palvelin.tld:8080` kautta käyttäjätunnuksella ”admin” ja aiemmin Shipyard-komentokehotteen kautta määritellyllä salasanalla.
 
 Kun olet kirjautunut hallintakäyttöliittymään sisään, lisää tarvittavat ns. käyttömoottorit (noodit) valikosta Engines:
 

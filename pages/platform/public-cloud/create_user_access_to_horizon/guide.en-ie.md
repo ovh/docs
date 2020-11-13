@@ -1,93 +1,69 @@
 ---
-title: Configure user access to Horizon
-excerpt: ''
+title: Accessing the Horizon interface
 slug: configure_user_access_to_horizon
-legacy_guide_number: g1773
+legacy_guide_number: 1773
+excerpt: Find out how to access the Horizon interface
+section: Horizon
+order: 1
 ---
 
+**Last updated 14th November 2019**
 
-## 
-This page explains how to configure user access to the Horizon interface: the canonical implementation of OpenStack's dashboard. Many features are only accessible through this interface.
+## Objective
 
+Horizon is the graphical management interface for OpenStack. Certain features can only be accessed using this interface.
 
-## 
-
-- Log in to [your customer account](https://www.ovh.com/manager/cloud/) and go to the Cloud menu
-
+**This guide will show you how to access the Horizon interface.**
 
 
-![](images/img_2879.jpg){.thumbnail}
+## Requirements
 
-- Click on OpenStack in the left-hand menu
+- a Public Cloud project activated
+- access to the [OVHcloud Control Panel](https://ovh.com/auth/?action=gotomanager)
 
+## Instructions
 
+### Create an OpenStack user account
 
-![](images/img_2880.jpg){.thumbnail}
+First of all, to access the Horizon interface, you need to create an OpenStack user account. To do this, log in to your Control Panel and go to the `Public Cloud`{.action} section in the top-left corner of the page. Then, on the following screen, click the `arrow button`{.action} next to your project name in the top-left corner of the screen.
 
-- Click Add user
+![Add user](images/select_project.png){.thumbnail}
 
+Under "Project management" on the left-hand sidebar, select `Users & Roles user`{.action}.
 
+![User roles](images/users_roles.png){.thumbnail}
 
-![](images/img_2702.jpg){.thumbnail}
+Clique the `Create User`{.action} button to generate the following pop-up.
 
-- Enter a "User description"
+![Add user](images/adduser.png){.thumbnail}
 
+The user description is not the username for the user. It is just a descriptive term to help you remember what kind of user it is. The next screen will allow you to grant user permissions. For each permissions box you check, the user will get the corresponding privileges as seen in the table below:
 
+![Permissions](images/permissions.png){.thumbnail}
 
-## Note:
-This description will be used so the user can be easily identified in the list created, but it is not a login name.
+Click the `Confirm`{.action} button when you are finished and you will see the following screen:
 
-- Click "Create this user"
+![User_pw](images/user_pw.png){.thumbnail}
 
+Be sure to save your password now as this is the only time you will be able to recover it. However, if you lose it you can always create a new one by clicking the ellipses (...) on the following menu and selecting `Generate a password:`{.action}
 
+![Generate](images/generatepw.png){.thumbnail}
 
-![](images/img_2703.jpg){.thumbnail}
+Once your user has been created, you can use these credentials to log into the Horizon interface using the `Horizon button`{.action} on the left-hand sidebar.
 
-- Once the user has been created, keep the automatically generated password safe because you will not be able to recover this password later.
+### Log in to OpenStack Horizon
 
+To open the menu, click on the three-dot icon at the end of the line (`...`{.action}). Next, click the `Open OpenStack Horizon`{.action} link. The [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} login page will then appear. To log in, enter your `User Name` and your password.
 
-The list of users will then be displayed
+![Project menu](images/3_H_open_menu.png){.thumbnail}
 
-![User list](images/img_2704.jpg){.thumbnail}
-The ID, descriptions and a series of three buttons for each user will appear here. These enable you to:
+![Login screen](images/4_H_login_window.png){.thumbnail}
 
-- Reset the password
+Once you have logged in, the OpenStack Horizon interface will appear:
 
-
-
-![](images/img_2628.jpg){.thumbnail}
-
-## Warning:
-This will not recover an old password, a new password will be generated instead.
-
-- Delete user
-
-
-
-![](images/img_2629.jpg){.thumbnail}
+![Horizon interface](images/5_H_view.png){.thumbnail}
 
 
-## 
+## Go further
 
-- Click on the spanner icon
-
-
-
-![](images/img_3031.jpg){.thumbnail}
-
-- Select Launch OpenStack Horizon
-
-
-
-![](images/img_3032.jpg){.thumbnail}
-
-- You will be taken to
-[the following address](https://horizon.cloud.ovh.net/project/)
-- You can now sign in with your ID and password
-
-
-
-
-## 
- 
-
+Join our community of users on <https://community.ovh.com/en/>.

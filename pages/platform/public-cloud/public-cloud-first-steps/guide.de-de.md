@@ -141,7 +141,7 @@ Unabhängig von der zur Erstellung der SSH-Schlüssel verwendeten Methode verfü
 
 > [!primary]
 >
-Gespeicherte SSH-Schlüssel ermöglichen es Ihnen, Ihre Instanzen schneller zu erstellen. Zur Änderung von Schlüsselpaaren oder zum späteren Hinzufügen von Benutzern lesen Sie bitte die Anleitung „[Configuring additional SSH keys](../configuring_additional_ssh_keys/)“ (Englisch).
+Gespeicherte SSH-Schlüssel ermöglichen es Ihnen, Ihre Instanzen schneller zu erstellen. Zur Änderung von Schlüsselpaaren oder zum späteren Hinzufügen von Benutzern lesen Sie bitte die Anleitung „[Configuring additional SSH keys](https://docs.ovh.com/gb/en/public-cloud/configuring_additional_ssh_keys/)“ (Englisch).
 >
 
 Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter „Project Management“ auf `SSH-Schlüssel`{.action}.

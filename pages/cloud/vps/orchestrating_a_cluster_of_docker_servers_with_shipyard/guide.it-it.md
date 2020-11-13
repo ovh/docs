@@ -227,7 +227,7 @@ Confirm: <ANCORA>
 
 Clicca ctrl+d per uscire dalla CLI.
 
-Accedi all'interfaccia di Shipyard http://<your-host-ip>:8080 e utilizza l'identificativo "admin" e la password scelta per effettuare il login.
+Accedi all'interfaccia di Shipyard `http://<your-host-ip>:8080` e utilizza l'identificativo "admin" e la password scelta per effettuare il login.
 
 Una volta eseguita questa operazione, registra le macchine (i nodi) nella sezione "engines" dell'interfaccia Web di Shipyard.
 

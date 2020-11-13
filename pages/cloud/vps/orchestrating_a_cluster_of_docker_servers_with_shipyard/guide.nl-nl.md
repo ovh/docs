@@ -232,7 +232,7 @@ Confirm: <ENCORE>
 
 Zodra we deze actie hebben uitgevoerd, kunnen we met ctrl+d de CLI verlaten.
 
-U heeft nu toegang tot de Shipyard interface via http://<your-host-ip>:8080 door in te loggen met de gebruikersnaam «admin» en het wachtwoord dat u heeft ingesteld.
+U heeft nu toegang tot de Shipyard interface via `http://<your-host-ip>:8080` door in te loggen met de gebruikersnaam «admin» en het wachtwoord dat u heeft ingesteld.
 
 Zodra u bent ingelogd, kunt u engines (de nodes) toevoegen via de Shipyard web interface onder «engines»:
 

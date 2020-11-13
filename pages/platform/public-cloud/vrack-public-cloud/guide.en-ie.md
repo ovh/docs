@@ -10,13 +10,13 @@ order: 1
 
 ## Objective
 
-OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private network solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. At the same time, it allows you to add [Public Cloud instances](https://www.ovhcloud.com/en-gb/public-cloud/) to your private network to create an infrastructure of physical and virtual resources.
+OVHcloud [vRack](https://www.ovh.ie/solutions/vrack/) is a private network solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. At the same time, it allows you to add [Public Cloud instances](https://www.ovhcloud.com/en-ie/public-cloud/) to your private network to create an infrastructure of physical and virtual resources.
 
 **This guide explains how to configure Public Cloud instances within your vRack.**
 
 ## Requirements
 
-- a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- a [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 - an OpenStack user (optional)
 - basic networking knowledge
@@ -238,7 +238,7 @@ nova net-list
 ><br> - The VLAN(s) required for your configuration
 >
 
-Also, note the information explicated in [this guide](https://docs.ovh.com/fr/public-cloud/debuter-avec-lapi-nova/):
+Also, note the information explicated in [this guide](../starting-with-nova-api/):
 
 - ID or name of the OpenStack SSH key
 - ID of the instance type (flavor)
