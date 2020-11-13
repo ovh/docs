@@ -21,7 +21,7 @@ Per assicurare continuità di servizio ed evitare perdite di dati, OVHcloud real
 
 ## Prerequisiti
 
-* Disporre di un’[infrastruttura Hosted Private Cloud](https://www.ovhcloud.com/it/public-cloud/){.external} sul proprio account OVHcloud
+* Disporre di un’[infrastruttura Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external} sul proprio account OVHcloud
 * Accedere all'interfaccia di gestione vSphere Web Client HTML
 
 ## Procedura
