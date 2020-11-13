@@ -81,7 +81,7 @@ The task will be ready within a few minutes. You can then modify all of its sett
 
 ### Limitations of Web Hosting tasks
 
-|Step|Description|
+|Functionality|Description|
 |---|---|
 |Hourly scheduling|You might notice that the field for "Minutes of the hour" is disabled in the interface (set to "?" in the *crontab* view). A task can only be executed once an hour as the highest repetition frequency and the minute of execution cannot be specified.|
 |Running time|The time limit for a task is 60 minutes. If a script exceeds this running time, it will be stopped automatically by the system.|

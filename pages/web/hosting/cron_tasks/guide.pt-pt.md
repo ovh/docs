@@ -1,207 +1,157 @@
 ---
-title: 'Alojamento Partilhado: Tarefas Agendadas / CRON'
-excerpt: 'Alojamento Partilhado: Tarefas Agendadas / CRON'
+title: Criar tarefas automatizadas (CRON) no seu alojamento Web
+excerpt: Saiba como criar tarefas CRON para automatizar as tarefas programadas num alojamento web
+section: Tarefas automatizadas (CRON)
 id: '1990'
 slug: alojamento_partilhado_tarefas_agendadas_cron
 legacy_guide_number: g1990
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Criar uma tarefa automatizada
-Selecione o nome de domínio associado ao seu Alojamento (1) e clique em Mais +, depois em Tarefas Planeadas - Cron (2) e, por fim, em Adicionar uma planificação.
+**Última atualização: 22 de setembro de 2020**
 
-![](images/3261.png){.thumbnail}
-Para esta primeira etapa, deve indicar o caminho para o seu script e o tipo de linguagem de programação usada.
-Os outros 2 casos são facultativos. A opção "logs por email" permitirá escolher um endereço para o qual sejam enviados os relatórios das tarefas executadas ou manter o endereço predefinido.
+## Objetivo
 
+No seu alojamento Web OVHcloud, pode utilizar scripts para automatizar certas operações. A criação de uma tarefa planificada ("tarefa CRON") é a forma mais simples de assegurar que os seus scripts são executados em momentos específicos sem que seja necessário mais ações da sua parte. 
 
-- Este e-mail será enviado apenas quando ocorrem erros.
+**Saiba como criar tarefas CRON para automatizar as tarefas planeadas num alojamento web.**
 
+> [!warning]
+>A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+>
+>Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se tiver alguma dúvida, recomendamos que recorra a um fornecedor de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção “Quer saber mais?” deste manual. 
+>
 
-Por fim, terá a possibilidade de incluir uma descrição para a sua tarefa agendada.
+## Requisitos
 
-![](images/3262.png){.thumbnail}
-A segunda etapa diz respeito à periodicidade de execução da sua tarefa CRON.
+- Ter um serviço de [alojamento Web da OVHcloud](https://www.ovh.pt/alojamento-partilhado/).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
 
-![](images/3264.png){.thumbnail}
-Terá 2 modos às disposição: o modo simples e o modo perito.
+## Instruções
 
-![](images/3265.png){.thumbnail}
-Uma vez validada a configuração da sua tarefa agendada, uma página com um resumo será apresentada.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Clique no separador `Web Cloud`{.action} e, a seguir, em `Alojamentos`{.action} na coluna da esquerda.
 
+Selecione o alojamento em causa, clique no separador `Plus+`{.action} e, a seguir, em `Tarefas programadas - Cron`{.action}
 
-- Se as informações estão corretas, valide a criação da sua tarefa agendada.
+Nesta secção, terá uma visão geral das tarefas planeadas e dos respetivos parâmetros.
 
+![cron control panel](images/cron-jobs-1.png){.thumbnail}
 
+### Criação de uma tarefa automatizada
 
-![](images/3266.png){.thumbnail}
-Uma mensagem deste género aparecerá para indicar que o seu pedido foi corretamente tomado em conta.
+#### Etapa 1: Definição dos parâmetros gerais
 
-![](images/3267.png){.thumbnail}
+Para criar uma tarefa CRON, clique no botão `Adicionar um planeamento`{.action} à direita. Pode personalizar os parâmetros da tarefa na nova janela.
 
+![adding scheduling](images/cron-jobs-2.png){.thumbnail}
 
-## Modificação de uma tarefa automatizada
-Selecione o nome de domínio associado ao seu Alojamento (1) e clique em Mais +, depois em Tarefas Planeadas - Cron (2) e, por fim, clique no ícone do lápis que aparecerá à frente da linha da tabela que representa as suas tarefas agendadas.
+|Opção|Descrição|   
+|---|---|   
+|Comando a executar|Defina o caminho de acesso ao ficheiro que contém o script. Exemplo: www/jobs/cron.php|   
+|Linguagem|Selecione a versão PHP utilizada pelo script ou escolha "Outro".|
+|Ativação|Escolha se a tarefa será ativa após a sua criação ou ativada posteriormente.| 
+|Logs por e-mail|Se necessário, selecione um contacto (administrador ou técnico) ao qual será enviado um relatório em caso de erro de execução. Pode também fornecer outro endereço de e-mail.| 
+|Descrição|Introduza uma descrição para seguir a execução das suas tarefas.| 
 
-![](images/3268.png){.thumbnail}
-Poderá, nesta etapa, modificar o caminho ou a linguagem de programação, ativar os logs por email e adicionar uma descrição à sua tarefa agendada.
+Clique em `Seguinte`{.action} para passar ao passo 2.
 
-![](images/3269.png){.thumbnail}
+#### Etapa 2: Definição da frequência
 
+A interface oferece dois modos para configurar a frequência da sua tarefa. Utilize o **Modo Simple** para uma seleção de opções de planeamento simplificado para os principiantes. Se prefere entrar diretamente uma frequência, semelhante a um formato de tabela CRON (*crontab*), escolha o **Modo expert**.
 
-## Eliminar uma tarefa agendada
-Selecione o nome de domínio associado ao seu Alojamento (1) e clique em Mais +, depois em Tarefas Planeadas - Cron (2) e, por fim, clique no ícone do caixote de lixo que aparecerá à frente da linha da tabela que representa as suas tarefas agendadas.
+|Modo simples|
+|---|
+|Utilize os menus pendente para especificar a hora, os dias de um mês, os dias da semana e os meses da tarefa.|
+|![cron frequency](images/cron-jobs-3.png){.thumbnail}|
 
-![](images/3270.png){.thumbnail}
-Um resumo da tarefa automatizada que deseja eliminar será apresentado.
-Valide a sua escolha se tudo estiver correto.
+|Modo expert| 
+|---|
+|Introduza valores numéricos como num *crontab*. Os asteriscos indicam cada valor do período, o que significa que a tarefa será realizada continuamente **uma vez por hora, todos os dias**, no exemplo.|
+|![cron frequency](images/cron-jobs-4.png){.thumbnail}|
 
-![](images/3271.png){.thumbnail}
+Pode alternar entre os dois modos durante a configuração para visualizar as alterações em conformidade. Tenha em atenção as [limitações durante o planeamento de uma tarefa num alojamento Web](./#limitacoes-das-tarefas-planificadas-no-seu-alojamento-web_1).
 
+![cron control panel](images/cron-jobs-5.gif){.thumbnail}
 
-## Testar a execução da sua tarefa automatizada através de um browser
-Poderá testar o seu script diretamente através de um browser para ver se o script é corretamente executado.
-Por exemplo, se o seu script está no caminho www/cron.php e o seu nome de domínio é teste.pt, deve usar o URL http://teste.pt/cron.php.
-Para que o teste seja o mais adequado, é recomendável que a versão de PHP do seu alojamento seja a mesma que a que definiu na criação da tarefa agendada relativa ao script em questão.
-Se constata um erro, será necessário corrigir o seu script.
-Se nenhum erro for detetado, aconselha-se a consulta dos logs associados à execução da sua tarefa CRON.
+#### Etapa 3: Fim da instalação
 
+O resumo lembra-lhe os parâmetros configurados, incluindo a notação *crontab* da frequência de execução. Se tudo estiver correto, clique em `Validar`{.action}.
 
-## Consultar os logs de execução da sua tarefa automatizada
-Selecione o seu alojamento na coluna da esquerda, e depois clique no separador "Mais +".
+![cron confirmação](images/cron-jobs-6.png){.thumbnail}
 
-![](images/4012.png){.thumbnail}
-Clique, de seguida, no link "Logs".
+A tarefa estará pronta dentro de alguns minutos. Pode alterar todos os seus parâmetros ou eliminar a tarefa clicando em `...`{.action} na tabela de apresentação do seu painel de configuração OVHcloud.
 
-![](images/4013.png){.thumbnail}
-Se a tarefa agendada for executada durante o decorrer da jornada, poderá consultar os logs de execução através de OVH Speed Log (1).
+### Limitações das tarefas planificadas no seu alojamento Web
 
--> No caso em que a execução seja mais antiga do que 24 horas, selecione o ficheiro de de logs relativo ao mês em questão para consultar os logs (aqui no exemplo, trata-se do mês de Junho).
+|Funcionalidade|Descrição|
+|---|---|
+|Planeamento horário|Reparem que o campo "Minutes" está desativado na interface (definido por "? " na vista *crontab*). Uma tarefa só pode ser executada uma vez por hora, sendo a frequência de repetição mais baixa que pode ser especificada.|
+|Duração|A duração de execução de uma tarefa é de 60 minutos. Se um script ultrapassar este tempo de execução, será automaticamente interrompido pelo sistema.|
+|Variáveis|Apenas pode definir variáveis num script. Adicioná-las ao URL que chama o script não funcionará (Exemplo: www/jobs/cron.php?variável=value).|
+|Limite de dados|Uma tarefa só pode gerar 5 MB de dados (*stdin/stderr*). Por exemplo, se um script escrever dados num ficheiro .txt, a execução será automaticamente interrompida quando o ficheiro atingir 5 MB.|
+|Scripts que produzem erros|Se um script estiver defeituoso, será automaticamente desativado após 10 tentativas de execução falhadas. Reative-o de forma simples no Painel de configuração. (Clique em `...`{.action} e depois em `Alterar`{.action})|
+|Relatórios de execução|Os relatórios só serão enviados para o endereço eletrónico selecionado uma vez por dia (durante as horas noturnas).|
 
-![](images/3274.png){.thumbnail}
-Exemplo de logs de execução de uma tarefa automatizada:
+### Reparação
 
+#### Teste do seu script com um browser
 
-```
-[2015-06-04 10:39:03] ## OVH ## START - 2015-06-04 10:39:03.700912 executing: /usr/local/php5.6/bin/php /homez.600/loginftp/www/cron.php
-[2015-06-04 10:39:03] Could not open input file: /homez.600/loginftp/www/cron.php
-[2015-06-04 10:39:03]
-[2015-06-04 10:39:03] ## OVH ## END - 2015-06-04 10:39:03.762685 exitcode: 1
-```
+Um teste simples para ver se o script vai produzir um erro é executá-lo num browser. Por exemplo, se o caminho de acesso do seu script for "www/cron.php" e o seu domínio de alojamento for "mypersonaldomain.ovh", deve utilizar o URL "http://<i></i>mypersonaldomain.ovh/cron.php". Se não aparecer nenhum erro, mas o script não funcionar como previsto, siga as sugestões abaixo.
 
+#### Verificação da utilização dos caminhos absolutos
 
-Neste caso, a seguinte linha de código indica que a minha tarefa automatizada não pôde ser executada corretamente pois o caminho está incorreto ou não existe:
+Tenha o cuidado de utilizar caminhos de acesso absolutos aos ficheiros dos seus scripts. A constante "DIR", por exemplo, pode ajudar a receber o caminho corrente nos scripts PHP ([documentação PHP](https://www.php.net/manual/en/language.constants.predefined.php){.external}).
+ 
+#### Verificação dos logs de execução
 
+No \[logs] do seu alojamento Web, acessível a partir da sua Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, poderá ver a categoria de log intitulada "CRON".
 
-```
-Could not open input file: /homez.600/loginftp/www/cron.php
-```
+Para mais informações, consulte o nosso guia ["Consultar as estatísticas e os logs do meu site alojado numa oferta partilhada"](../partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site/).
 
+##### **Exemplo de logs**
 
-
-
-## Limitações
-
-- Num alojamento partilhado, não é possível configurar os minutos da execução de uma tarefa agendada. Além dessa limitação, os scripts apenas podem ser executados 1 única vez por hora.
-
-- O limite do tempo de execução é fixado a 60 minutos
-
-- A limitação da geração de dados é fixada a 5MB (stdin/stderr)
-
-
-
-
-## Scripts com variáveis
-Não é possível agendar tarefas para scripts com a indicação das variáveis no caminho de acesso ao script.
-
-Exemplo:
+- Exemplo de fim de script corretamente executado 
 
 ```
-/www/cron.php?variable=test
+[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
+[2020-08-11 00:36:01] 
+[2020-08-11 00:36:01] ## OVH ## END - 2020-08-10 22:39:44.086166 exitcode: 0
 ```
 
-
-
-- Pode, contudo, definir essas variáveis no seu script, por exemplo.
-
-
-
-
-## Utilização de caminhos absolutos
-Para que a sua tarefa cron funcione deverá utilizar, nos seus scripts, caminhos absolutos e não relativos.
-Para obter o endereço do caminho corrente, poderá utilizar a constante "_DIR_" :
-[Documentação PHP](http://php.net/manual/en/language.constants.predefined.php)
-
-
-## Relatório de execução
-Um único email é enviado a cada dia. Ele é enviado no decorrer da noite/madrugada.
-
-
-## Chamada de um script
-Se script utilizado pela tarefa agendada CRON necessitar de executar outros scripts, deve utilizar um caminho absoluto e não relativo para que isso funcione. O caminho absoluto do seu alojamento começa por:
-
+- Exemplo de insucesso devido a ultrapassagem do tempo de execução
 
 ```
-/home/seu_loginFTP/
+[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
+
+[2020-08-11 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
+[2020-08-11 01:36:01] ## OVH ## END - 2020-08-11 01:36:01.086166 exitcode: 0
 ```
 
-
-
-
-## Em caso de erro de execução
-Se a sua tarefa agendada (cron) tem um erro, ela será desativada ao fim de 10 tentativas de execução não bem sucedidas.
-
-
-## Exemplo de logs
-Execução correta do script:
+- Exemplo de falha porque o ficheiro de script não pode ser encontrado no caminho de acesso especificado
 
 ```
-# OVH ## START - 2014-12-23 15:34:12.680711 executing: /homez.600/loginftp/test/run.sh
-I am the client and I'm printing stuff with this nice 'echo' feature.
+[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
 
-# OVH ## END - 2014-12-23 15:34:13.056472 exitcode: 0
+[2020-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
+[2020-08-11 00:36:01] ## OVH ## END - 2020-08-11 00:36:01.086166 exitcode: 255
+```
+
+- Exemplo de falha devido a um erro de autorização (chmod) ou a uma configuração incorreta do ficheiro .ovhconfig
+
+```
+[2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
+[2020-08-11 18:07:10]
+[2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
 ```
 
 
-Execução do script em erro porque o ficheiro chamado não foi encontrado:
+## Saiba mais
 
-```
-# OVH ## START - 2014-12-23 15:36:16.206693 executing: /homez.600/loginftp/test/idontexist.sh
-# OVH ## ERROR command '/homez.600/loginftp/test/idontexist.sh' not found
+[Configurar o ficheiro .ovhconfig do alojamento web](../configurar-ficheiro-ovhconfig/)
 
-# OVH ## END - 2014-12-23 15:36:16.546574 exitcode: 255
-```
+[Utilizar o acesso SSH do seu alojamento web](../partilhado_o_ssh_nos_alojamentos_partilhados/)
 
-
-Execução do script em erro devido a um timeout:
-
-```
-# OVH ## START - 2014-12-23 16:05:52.233058 executing: /homez.600/loginftp/test/sleep.sh
-mardi 23 décembre 2014, 16:05:52 (UTC+0100)
-Now sleeping 9000 sec
-
-# OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
-# OVH ## END - 2014-12-23 17:05:54.690413 exitcode: 0
-```
-
-
-Execução do script em erro devido a ter ultrapassado o limite de geração de dados:
-
-```
-# OVH ## START - 2014-12-23 15:43:27.606083 executing: /homez.600/loginftp/test/echoer.sh
-[...a lot of logs here...]
-# OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: cron output (9288634 bytes) exceeds maximum permitted (5242880 bytes)
-# OVH ## END - 2014-12-23 15:43:50.999934 exitcode: 255
-```
-
-
-Execução do script em erro devido a um erro proveniente de direitos incorretos (chmod) ou de uma incorreta configuração no ficheiro .ovhconfig:
-
-```
-[2015-01-08 18:07:10]
-[2015-01-08 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason. Please contact customer support for more information.
-[2015-01-08 18:07:10] ## OVH ## END - 2015-01-08 18:07:10.969840 exitcode: 255
-```
-
-
-
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

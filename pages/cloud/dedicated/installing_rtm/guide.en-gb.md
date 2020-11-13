@@ -23,7 +23,7 @@ With Real Time Monitoring (RTM), you can partially monitor your server and its a
 
 > [!primary]
 >
-> Some firewall restrictions may prevent your infrastructure from being monitored, even if you have added RTM. Please remember to authorise server access for the OVHcloud monitoring IP addresses. You can find the details [this guide](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh).
+> Some firewall restrictions may prevent your infrastructure from being monitored, even if you have added RTM. Please remember to authorise server access for the OVHcloud monitoring IP addresses. You can find the details [this guide](../monitoring-ip-ovh).
 > 
 
 ### RTM on Linux
@@ -34,9 +34,9 @@ With dedicated servers, RTM gathers real-time information on the CPU, RAM, disks
 
 ##### Beamium
 
-https://github.com/ovh/beamium
+<https://github.com/ovh/beamium>
 
-Beamium collects HTTP terminal metrics, such as _http://127.0.0.1:9100/metrics_, and supports the Prometheus Sensision formats. 
+Beamium collects HTTP terminal metrics, such as `http://127.0.0.1:9100/metrics`, and supports the Prometheus Sensision formats. 
 
 Once it has been implemented, Beamium can filter and transfer data to a Warp 10™ Time Series platform. When metrics are collected, it uses DFO (Disk Failover) to avoid any potential loss linked to network issues or unavailable services.
 
@@ -76,9 +76,9 @@ The configuration file will be filled in automatically once the installation is 
 
 ##### Noderig
 
-https://github.com/ovh/noderig
+<https://github.com/ovh/noderig>
 
-Noderig collects an operating system’s metrics, and exposes them via an HTTP URL (http://127.0.0.1:9100/metrics). Each collector can be easily configured using a basic level cursor.
+Noderig collects an operating system’s metrics, and exposes them via an HTTP URL (`http://127.0.0.1:9100/metrics`). Each collector can be easily configured using a basic level cursor.
 
 Noderig metrics:
 
@@ -283,13 +283,10 @@ Once you have successfully installed RTM, you can view the monitoring data for y
 ![Real Time Monitoring](images/rtm_panel.png){.thumbnail}
 
 
-
 ## Go further
 
-[What are the IP addresses of the OVH monitoring?](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh)
+[Visualise your data](../../metrics/usecase-visualize)
 
-[Visualise your data](https://docs.ovh.com/gb/en/metrics/usecase-visualize)
-
-[Activating and using rescue mode](https://docs.ovh.com/gb/en/dedicated/ovh-rescue)
+[Activating and using rescue mode](../ovh-rescue)
 
 Join our community of users on <https://community.ovh.com/en/>.
