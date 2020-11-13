@@ -15,7 +15,7 @@ Si votre VPS ne répond pas comme vous le souhaitez, la manière la plus rapide 
 
 ## Prérequis
 
-- Avoir accès au VPS ou à l'instance Public Cloud en [mode rescue](https://docs.ovh.com/ca/fr/vps/rescue/){.external}
+- Avoir accès au VPS ou à l'instance Public Cloud en [mode rescue](../mode-rescue-vps/)
 
 
 ## En pratique
@@ -150,6 +150,6 @@ Une fois la modification effectuée, redémarrez le VPS ou l'instance en mode no
 
 ## Aller plus loin
 
-[KVM sur VPS](https://docs.ovh.com/ca/fr/vps/utilisation-kvm-sur-vps){.external}.
+[KVM sur VPS](../utilisation-kvm-sur-vps)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

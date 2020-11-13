@@ -16,7 +16,7 @@ Instance GPU jsou k dispozici s grafickými kartami NVIDIA GeForce GTX 1060, GTX
 
 > [!warning]
 >
-> GPU instance jsou v současné době dostupné pouze v rámci projektů vytvořených v datacentrech GRA3, GRA5 a BHS3. Z toho důvodu si možná budete muset vytvořit nový Public Cloud projekt v některém z výše uvedených regionů. Detailní informace naleznete [zde (EN)](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/).
+> GPU instance jsou v současné době dostupné pouze v rámci projektů vytvořených v datacentrech GRA3, GRA5 a BHS3. Z toho důvodu si možná budete muset vytvořit nový Public Cloud projekt v některém z výše uvedených regionů.
 > 
 
 **Zjistěte, jak spustit GPU instanci s operačním systémem Linux nebo Windows.**

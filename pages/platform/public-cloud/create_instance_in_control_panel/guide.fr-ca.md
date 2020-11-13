@@ -9,7 +9,7 @@ section: 'Premiers pas'
 
 ## Objectif
 
-Le [Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external} vous permet de créer des instances (serveurs virtuels) rapidement et facilement, en quelques clics seulement.
+Le [Public Cloud](https://www.ovh.com/ca/fr/public-cloud/){.external} vous permet de créer des instances (serveurs virtuels) rapidement et facilement, en quelques clics seulement.
 
 **Ce guide vous montrera comment créer une instance dans votre projet Public Cloud**
 

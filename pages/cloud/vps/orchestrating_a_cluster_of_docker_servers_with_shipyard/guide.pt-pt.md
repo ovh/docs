@@ -243,7 +243,7 @@ Confirm: <ENCORE>
 
 Uma vez realizada esta operação, será necessário utilizar ctrl-d para sair da CLI.
 
-Poderá agora aceder à interface de Shipyard através de http://<your-host-ip>:8080 , indicando o utilizador "admin" e a palavra-passe que definiu.
+Poderá agora aceder à interface de Shipyard através de `http://<your-host-ip>:8080` , indicando o utilizador "admin" e a palavra-passe que definiu.
 
 Uma vez autenticado no sistema, irá poder proceder ao registo dos motores (os nodes) através da interface web de Shipyard. Isso faz-se na secção "engines":
 

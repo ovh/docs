@@ -5,62 +5,47 @@ slug: delete_a_project
 legacy_guide_number: g2129
 ---
 
+**Last updated 6th December 2019**
 
-## 
-You may want to delete your Public Cloud project. 
-You can now do this directly from your manager. 
+## Objective
 
-When you delete your public cloud project a final invoice will be created for what you are currently using. 
-This guide explains how to delete your project.
+When you no longer need your [Public Cloud](https://www.ovhcloud.com/en-ie/public-cloud/){.external} project, you can delete it directly from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+When you delete your Public Cloud project, a final invoice will be created for the remainder of what you owe.
 
-## Prerequisites
+> [!warning]
+>
+Please note that deleting a project is not the same thing as deactivating your Public Cloud instances. When you delete a project, the resources contained in it will be destroyed. This action can not be undone.
+>
 
-- A Public Cloud project
+**This guide will show you how to delete a Public Cloud project.**
 
+## Requirements
 
+* a [Public Cloud](https://www.ovhcloud.com/en-ie/public-cloud/){.external} project in your OVH account
+* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
+## Instructions
 
-## 
+First, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Public Cloud`{.action} menu.
 
-- Click on the trash icon next to your project
+Then, click in `Project settings`{.action} below Project Management.
 
+![cloud menu](images/deleteproject.png){.thumbnail}
 
+Next, click `Delete project`{.action} tab.
 
-![](images/img_3960.jpg){.thumbnail}
+![compute tab](images/deleteproject1.png){.thumbnail}
 
-- A confirmation message will appear summarising all of the services to be deleted.
+You will now see a confirmation message, which lists the resources that will be either parked or destroyed when the project is deleted. Please read the message carefully then click `Delete project`{.action} when you are ready to proceed.
 
+![compute tab](images/deleteproject2.png){.thumbnail}
 
+When you click the delete button, an email will be sent to you asking you to either confirm or cancel the project deletion. After clicking the confirmation link, you will be redirected to a web page where you will need to enter your account password. After entering and confirming your password, your project will be deleted.
 
-![](images/img_3961.jpg){.thumbnail}
+## Go further
 
-- A pop-up will then appear to confirm that you have been sent an email.
+[Getting started with Public Cloud](/..public-cloud-first-steps/)
 
-
-
-![](images/img_3962.jpg){.thumbnail}
-
-- Once you have received the email, you will see two links: The first is to confirm deletion, the second is to cancel deletion.
-
-
-
-![](images/img_3963.jpg){.thumbnail}
-
-- You just have to confirm this deletion by entering your password:
-
-
-
-![](images/img_3964.jpg){.thumbnail}
-
-
-## 
-
-- [Migrate from RunAbove to Public Cloud]({legacy}1942)
-
-
-
-
-## 
-[Go back to the index of Cloud guides]({legacy}1785)
+Join our community of users on <https://community.ovh.com/en/>.
 

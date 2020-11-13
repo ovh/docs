@@ -238,7 +238,7 @@ Confirm: <JESZCZE_RAZ>
 
 Po wykonaniu tej operacji używamy ctrl+d, aby zamknąć CLI.
 
-Teraz masz dostęp do interfejsu Shipyard na stronie http://<your-host-ip>:8080. Należy podać login « admin » i zdefiniowane hasło.
+Teraz masz dostęp do interfejsu Shipyard na stronie `http://<your-host-ip>:8080`. Należy podać login « admin » i zdefiniowane hasło.
 
 Po zalogowaniu można przystąpić do rejestracji maszyn (węzłów). Przechodzimy do sekcji  « engines »:
 

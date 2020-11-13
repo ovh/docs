@@ -246,7 +246,7 @@ Confirm: <REPETIR_CONTRASEÑA>
 
 Una vez realizada esta operación, utilizamos Ctrl+D para salir de la interfaz de línea de comandos. 
 
-Ahora podrá acceder a la interfaz de Shipyard desde http://<your-host-ip>:8080 identificándose con el usuario «admin» y la contraseña que haya indicado.
+Ahora podrá acceder a la interfaz de Shipyard desde `http://<your-host-ip>:8080` identificándose con el usuario «admin» y la contraseña que haya indicado.
 
 Cuando se haya conectado, podrá proceder a registrar los nodos (engines) desde la interfaz web de Shipyard, en la pestaña «Engines »:
 

@@ -201,7 +201,7 @@ Confirm: <RE-ENTER_YOUR_PASSWORD>
 
 Après avoir complété cette opération, nous utiliserons ctrl+d pour quitter le CLI.
 
-Nous pouvons maintenant accéder à l'interface Shipyard via http://<your-host-ip>:8080 avec l'utilisateur "admin" et son mot de passe.
+Nous pouvons maintenant accéder à l'interface Shipyard via `http://<your-host-ip>:8080` avec l'utilisateur "admin" et son mot de passe.
 
 Une fois connectés, nous allons ajouter des engines (nodes) via l'interface web de Shipyard sous "Engines":
 ![](images/img_2612.jpg){.thumbnail}

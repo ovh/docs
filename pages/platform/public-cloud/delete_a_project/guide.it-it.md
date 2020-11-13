@@ -48,6 +48,6 @@ Una volta cliccato sul link di conferma, sarai reindirizzato verso una pagina in
 
 ## Per saperne di più 
 
-[Crea il tuo primo progetto Public Cloud](https://docs.ovh.com/it/public-cloud/crea_il_tuo_primo_progetto_public_cloud/){.external}
+[Crea il tuo primo progetto Public Cloud](../primi-passi-public-cloud/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

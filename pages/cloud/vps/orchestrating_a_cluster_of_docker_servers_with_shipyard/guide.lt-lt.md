@@ -237,7 +237,7 @@ Confirm: <DAR_KARTĄ>
 
 Kai pakeisite slaptažodį, spauskite CTRL+D, kad išeitumėte iš CLI.
 
-Dabar galite jungtis prie Shipyard: http://<serverio-ip>:8080; prisijungimui naudokite vardą "admin" ir naują slaptažodį.
+Dabar galite jungtis prie Shipyard: `http://<serverio-ip>:8080`; prisijungimui naudokite vardą "admin" ir naują slaptažodį.
 
 Prisijungę galėsite išsaugoti "engines" (mazgus) Shipyard sąsajoje. Tai atliekama skyriuje "engines":
 

@@ -67,5 +67,6 @@ Finally, name your container and click the `Create the container`{.action} butto
 
 ## Go further
 
-* [Create and configure an additional disk on an instance](../create-and-configure-additional-disk-instance/){.external}
-* Join our community of users on <https://community.ovh.com/en/>.
+[Create and configure an additional disk on an instance](../create_and_configure_an_additional_disk_on_an_instance/)
+
+Join our community of users on <https://community.ovh.com/en/>.
