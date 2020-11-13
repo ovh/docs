@@ -17,7 +17,7 @@ To ensure continuity of service and avoid data loss, OVHcloud automatically take
 
 ## Requirements
 
-* an OVHcloud Private Cloud [infrastructure](https://www.ovhcloud.com/en-gb/public-cloud/){.external}
+* an OVHcloud Private Cloud [infrastructure](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}
 * Access the vSphere Web Client HTML management interface.
 
 ## Instructions
