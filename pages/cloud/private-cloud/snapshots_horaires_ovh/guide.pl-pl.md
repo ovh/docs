@@ -21,7 +21,7 @@ Aby zapewnić ciągłość usługi i uniknąć utraty danych, OVHcloud automatyc
 
 ## Wymagania początkowe
 
-* Posiadanie [infrastruktury Private Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} na koncie OVHcloud.
+* Posiadanie [infrastruktury Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external} na koncie OVHcloud.
 * Dostęp do interfejsu zarządzania vSphere Web Client HTML.
 
 ## W praktyce
