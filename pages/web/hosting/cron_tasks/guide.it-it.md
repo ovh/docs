@@ -1,206 +1,156 @@
 ---
-title: 'Hosting Web: task automatizzati/Cron'
-excerpt: 'Hosting Web: task automatizzati/Cron'
-id: '1990'
+title: Crea task automatizzati (CRON) sul tuo hosting Web
 slug: hosting_web_task_automatizzaticron
-legacy_guide_number: g1990
+legacy_guide_number: 1990
+excerpt: Scopri come creare task CRON per automatizzare le operazioni pianificate su un hosting Web
+section: Operazioni automatiche (CRON)
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
-## Crea un task automatizzato
-Seleziona il tuo hosting nella colonna di sinistra (1), clicca sul tab "Altre opzioni" e scegli "Task pianificati - Cron" (2), poi clicca su Aggiungi un intervento programmato (3).
+**Ultimo aggiornamento: 22/09/2020**
 
-![](images/3261.png){.thumbnail}
-Nel primo step, indica il percorso dello script da eseguire, il tipo di linguaggio di programmazione e i log via email, che ti consentono di ricevere i log di esecuzione del tuo task Cron su un indirizzo email predefinito o di tua scelta.
+## Obiettivo
 
+Sull'hosting Web OVHcloud è possibile utilizzare script per automatizzare alcune operazioni. La creazione di un task pianificato ("task CRON") è il modo più semplice per assicurarsi che i tuoi script si eseguano in momenti specifici senza che tu debba effettuare altre azioni. 
 
-- Riceverai questa email solo in caso di errore.
+**Questa guida ti mostra come creare task CRON per automatizzare le operazioni pianificate su un hosting Web.**
 
+> [!warning]
+>OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Spetta quindi a te garantirne il buon funzionamento.
+>
+>Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Per questo, ti suggeriamo di rivolgerti a un provider specializzato o di contattare l’amministratore del servizio nel caso in cui dovessi incontrare delle difficoltà. Non saremo effettivamente in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida. 
+>
 
-Nell'ultimo campo, hai la possibilità di inserire una descrizione del tuo task Cron.
+## Prerequisiti
 
-![](images/3262.png){.thumbnail}
-Lo step 2 ti permette di impostare la periodicità di esecuzione del tuo task Cron.
+- Disporre di una soluzione di [hosting Web](https://www.ovh.it/hosting-web/) attiva
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
 
-![](images/3264.png){.thumbnail}
-Puoi scegliere tra due modalità: semplice o esperto.
+## Procedura
 
-![](images/3265.png){.thumbnail}
-Una volta inseriti tutti i parametri del tuo task Cron, si apre una finestra di riepilogo.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Clicca sulla scheda `Web Cloud`{.action} e poi su `Hosting`{.action} nella colonna di sinistra.
 
+Seleziona l'hosting, clicca sulla scheda `Plus+`{.action} e poi su `Task pianificati - Cron`{.action}
 
-- Se tutte le informazioni sono corrette, conferma la creazione del tuo task automatizzato.
+In questa sezione, visualizzi i tuoi task pianificati e i loro parametri.
 
+![cron control panel](images/cron-jobs-1.png){.thumbnail}
 
+### Crea un task automatizzato
 
-![](images/3266.png){.thumbnail}
-Questo messaggio ti conferma che la tua richiesta è stata presa in carico.
+#### Step 1: Definizione dei parametri generali
 
-![](images/3267.png){.thumbnail}
+Per creare un task CRON, clicca sul pulsante `Aggiungi una pianificazione`{.action} a destra. Puoi personalizzare le impostazioni dell'operazione nella nuova finestra.
 
+![adding scheduling](images/cron-jobs-2.png){.thumbnail}
 
-## Modifica il tuo task automatizzato
-Seleziona il tuo hosting nella colonna di sinistra (1), clicca sul tab "Altre opzioni" e scegli "Task pianificati - Cron" (2), poi clicca sull'icona a forma di matita (3) in corrispondenza del task automatico che vuoi modificare.
+|Opzione|Descrizione|   
+|---|---|   
+|Ordine da eseguire|Definisci il percorso per accedere al file che contiene il tuo script. Esempio: www/jobs/cron.php|   
+|Lingua|Seleziona la versione PHP utilizzata dallo script o scegli "Altro".|
+|Attivazione|Scegli se attivare il task dopo la sua creazione o attivarlo successivamente.| 
+|Log via email|Se necessario, seleziona un contatto (amministratore o tecnico) al quale verrà inviato un report in caso di errore di esecuzione. Puoi anche fornire un altro indirizzo email.| 
+|Descrizione|Inserisci una descrizione per seguire l'esecuzione dei tuoi compiti.| 
 
-![](images/3268.png){.thumbnail}
-Puoi modificare il percorso o il linguaggio di programmazione, attivare i log via email e aggiungere una descrizione al tuo task Cron.
+Clicca su `Avanti`{.action} per passare allo Step 2.
 
-![](images/3269.png){.thumbnail}
+#### Step 2: Definizione della frequenza
 
+L'interfaccia offre due modalità per configurare la frequenza del tuo task. Utilizza la **Modalità Simple** per una selezione di opzioni di pianificazione semplificata per i principianti. Se preferisci utilizzare una frequenza, simile a un formato di tabella CRON (*crontab*), scegli la **Modalità esperto**.
 
-## Elimina il tuo task automatizzato
-Seleziona il tuo hosting nella colonna di sinistra (1), clicca sul tab "Altre opzioni" e scegli "Task pianificati - Cron" (2), poi clicca sull'icona a forma di cestino (3) in corrispondenza del task automatico che vuoi eliminare.
+|Modalità semplice|
+|---|
+|Utilizza i menu a tendina per specificare l'ora, i giorni di un mese, i giorni della settimana e i mesi del task.|
+|![cron frequency](images/cron-jobs-3.png){.thumbnail}|
 
-![](images/3270.png){.thumbnail}
-Visualizzi la finestra di riepilogo del task che vuoi eliminare.
-Per confermare l'operazione, clicca su "Elimina".
+|Modalità esperto| 
+|---|
+|Inserisci valori numerici come in un *crontab*. Gli asterischi indicano ogni valore del periodo, il che significa che il task si eseguirebbe in modo continuo **una volta all'ora ogni giorno** in questo esempio.|
+|![cron frequency](images/cron-jobs-4.png){.thumbnail}|
 
-![](images/3271.png){.thumbnail}
+Durante la configurazione è possibile passare da una modalità all'altra per visualizzare le modifiche di conseguenza. Annota anche i [limiti durante la pianificazione di un'operazione su un hosting Web](./#limitazioni-delle-attivita-pianificate-sul-tuo-hosting-web_1).
 
+![cron control panel](images/cron-jobs-5.gif){.thumbnail}
 
-## Effettua un test di esecuzione del tuo task automatizzato dal tuo browser Internet
-Per verificare che il tuo script non generi errori, puoi testarne la corretta esecuzione direttamente dal tuo browser.
-Ad esempio, se il tuo Cron si trova nella directory www/cron.php e il tuo dominio è test.com, inserisci l'URL http://test.com/cron.php.
-Per ottenere un risultato più affidabile, ti consigliamo di utilizzare per il tuo hosting la stessa versione di PHP indicata durante la creazione del tuo task automatizzato.
-In caso di errore, correggi il tuo script.
-Se non vengono rilevati errori, ti consigliamo comunque di verificare i log associati all'esecuzione dei tuoi Cron.
+#### Step 3: Fine dell'installazione
 
+Il riepilogo ti ricorda i parametri configurati, inclusa la notazione *crontab* sulla frequenza di esecuzione. se tutto è corretto, clicca su `Conferma`{.action}.
 
-## Verifica i log di esecuzione dei tuoi task automatizzati
-Seleziona il tuo hosting nella colonna di sinistra e clicca sul tab Altre opzioni.
+![cron di conferma](images/cron-jobs-6.png){.thumbnail}
 
-![](images/4012.png){.thumbnail}
-Clicca sul link corrispondente ai Log.
+L'operazione sarà pronta tra pochi minuti. Per modificare tutte le impostazioni o eliminare l'operazione clicca sui tre puntini...` `{.action} nella tabella di presentazione del tuo pannello di configurazione OVHcloud.
 
-![](images/4013.png){.thumbnail}
-Se il tuo task automatizzato è stato eseguito nel corso della giornata, controlla i tuoi log di esecuzione nell'OVH Speed Log (1).
+### Limitazioni delle attività pianificate sul tuo hosting Web
 
--> Se l'esecuzione è avvenuta da più di 24h, seleziona il file dei log del mese che vuoi consultare (nell'esempio, il mese di giugno).
+|Funzionalità|Descrizione|
+|---|---|
+|Pianificazione oraria|Noterete che il campo "Minuti" è disattivato nell'interfaccia (definito da "? " nella vista *crontab*). Un'operazione può essere eseguita solo una volta all'ora, con la frequenza di ripetizione più bassa che può essere specificata.|
+|Durata|La durata di esecuzione di un'operazione è di 60 minuti. Se uno script supera il tempo di esecuzione, viene automaticamente arrestato dal sistema.|
+|Variabile|Puoi definire solo delle variabili in uno script. Aggiungere all'URL che chiama lo script non funzionerà (esempio: www/jobs/cron.php?variabili=value).|
+|Limite di dati|Un task può generare solo 5 MB di dati (*stdin/stderr*). Ad esempio, se uno script scrive dati in un file .txt, l'esecuzione si interrompe automaticamente quando il file raggiunge 5 MB.|
+|Script che producono errori|Se uno script è difettoso, verrà automaticamente disattivato dopo 10 tentativi falliti. Riattivalo semplicemente nel Pannello di configurazione. (Clicca sui tre puntini `..`{.action}. e poi `seleziona Modifica`{.action}.)|
+|Relazioni di attuazione|I rapporti saranno inviati all'indirizzo elettronico selezionato una volta al giorno (durante le ore notturne).|
 
-![](images/3274.png){.thumbnail}
-Esempio di log di esecuzione di un task automatizzato:
+### Intervento tecnico
 
+#### Test del vostro script con un browser Web
 
-```
-[2015-06-04 10:39:03] ## OVH ## START - 2015-06-04 10:39:03.700912 executing: /usr/local/php5.6/bin/php /homez.600/loginftp/www/cron.php
-[2015-06-04 10:39:03] Could not open input file: /homez.600/loginftp/www/cron.php
-[2015-06-04 10:39:03]
-[2015-06-04 10:39:03] ## OVH ## END - 2015-06-04 10:39:03.762685 exitcode: 1
-```
+Un semplice test per verificare se il tuo script produce un errore è eseguirlo su un browser Web. Ad esempio, se il percorso di accesso del vostro script è "www/cron.php" e il vostro dominio di hosting è "mypersonaldomain.ovh", dovrete utilizzare l'URL "http://<i></i>mypersonaldomain.ovh/cron.php". Se non si verificano errori ma lo script non funziona come previsto, segui i suggerimenti qui sotto.
 
+#### Verifica dell'utilizzo dei percorsi assoluti
 
-In questo caso, la riga di log indica che il task automatizzato non è stato eseguito correttamente perché il percorso di accesso allo script è inestistente o non valido:
+Ti consigliamo di utilizzare percorsi di accesso assoluti ai file dei tuoi script. La costante "DIR", ad esempio, può aiutare a ricevere il percorso corrente negli script PHP ([documentazione PHP](https://www.php.net/manual/en/language.constants.predefined.php){.external}).
+ 
+#### Verifica dei log di esecuzione
 
+Nei log del tuo hosting Web, accessibili dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, visualizzerai la categoria di log intitolata "CRON".
 
-```
-Could not open input file: /homez.600/loginftp/www/cron.php
-```
+Consulta la nostra guida ["Consulta le statistiche e i log del tuo sito su un'offerta condivisa"](../hosting_condiviso_consulta_le_statistiche_e_i_log_del_tuo_sito/) per maggiori dettagli.
 
+##### **Esempio di log**
 
-
-
-## Limitazioni
-Se hai attivato una soluzione di hosting condiviso, non puoi configurare i minuti in cui il tuo task automatizzato deve essere eseguito. Inoltre, il task può essere eseguito solo una volta ogni ora.
-
-
-- Il limite del tempo di esecuzione è fissato a 60 minuti
-
-- Il limite della generazione dei dati è fissato a 5 MB (stdin/stderr)
-
-
-
-
-## Task automatizzati con parametri
-Non è possibile impostare percorsi per i task automatizzati con passaggi di parametri.
-
-Esempio:
-
-```
-/www/cron.php?variable=test
-```
-
-
-
-- Puoi definire queste variabili nel tuo script.
-
-
-
-
-## Percorsi assoluti
-Per il corretto funzionamento del tuo task Cron, è necessario utilizzare nel tuo script percorsi assoluti e non relativi.
-Per ottenere l'indirizzo del percorso corrente, puoi utilizzare la costante "_DIR_":
-[Documentazione PHP](http://php.net/manual/en/language.constants.predefined.php)
-
-
-## Notifica di esecuzione
-L'email di notifica di esecuzione del tuo task Cron viene inviata una volta al giorno.
-
-
-## Chiamata a un altro script
-Se lo script utilizzato dal tuo task CRON richiama altri script, per il suo corretto funzionamento è necessario utilizzare un percorso assoluto e non relativo. Il percorso assoluto del tuo hosting inizia per:
-
+- Esempio di fine script correttamente eseguito 
 
 ```
-/home/loginFTP/
+[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
+[2020-08-11 00:36:01] 
+[2020-08-11 00:36:01] ## OVH ## END - 2020-08-10 22:39:44.086166 exitcode: 0
 ```
 
-
-
-
-## Errore di esecuzione
-Se la tua operazione pianificata (Cron) non viene eseguita correttamente, viene disattivata dopo 10 tentativi non riusciti.
-
-
-## Esempi di log
-Esecuzione corretta dello script:
+- Esempio di insuccesso dovuto al superamento del tempo di esecuzione
 
 ```
-# OVH ## START - 2014-12-23 15:34:12.680711 executing: /homez.600/loginftp/test/run.sh
-I am the client and I'm printing stuff with this nice 'echo' feature.
+[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
 
-# OVH ## END - 2014-12-23 15:34:13.056472 exitcode: 0
+[2020-08-11 01:36:01] # OVH# ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceded the maximum permitted (3600 secondi)
+[2020-08-11 01:36:01] ## OVH ## END - 2020-08-11 01:36:01.086166 exitcode: 0
+```
+
+- Esempio di errore perché il file di script non è possibile trovare nel percorso di accesso specificato
+
+```
+[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
+
+[2020-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
+[2020-08-11 00:36:01] ## OVH ## END - 2020-08-11 00:36:01.086166 exitcode: 255
+```
+
+- Esempio di mancato rispetto a causa di un errore di autorizzazione (chmod) o di una configurazione errata del file.ovhconfig
+
+```
+[2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
+[2020-08-11 18:07:10]
+[2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
 ```
 
 
-Esecuzione dello script in errore perché il file non è stato trovato:
+## Per saperne di più
 
-```
-# OVH ## START - 2014-12-23 15:36:16.206693 executing: /homez.600/loginftp/test/idontexist.sh
-# OVH ## ERROR command '/homez.600/loginftp/test/idontexist.sh' not found
+[Configurare il file .ovhconfig di un hosting Web](../configurare-file-ovhconfig/)
 
-# OVH ## END - 2014-12-23 15:36:16.546574 exitcode: 255
-```
+[Utilizza l'accesso SSH di un hosting Web](../hosting_condiviso_il_protocollo_ssh/)
 
-
-Esecuzione dello script in errore in seguito a un timeout:
-
-```
-# OVH ## START - 2014-12-23 16:05:52.233058 executing: /homez.600/loginftp/test/sleep.sh
-mardi 23 décembre 2014, 16:05:52 (UTC+0100)
-Now sleeping 9000 sec
-
-# OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
-# OVH ## END - 2014-12-23 17:05:54.690413 exitcode: 0
-```
-
-
-Esecuzione dello script in errore per generazione eccessiva di dati:
-
-```
-# OVH ## START - 2014-12-23 15:43:27.606083 executing: /homez.600/loginftp/test/echoer.sh
-[...a lot of logs here...]
-# OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: cron output (9288634 bytes) exceeds maximum permitted (5242880 bytes)
-# OVH ## END - 2014-12-23 15:43:50.999934 exitcode: 255
-```
-
-
-Esecuzione dello script in errore per configurazione non corretta del file .ovhconfig o errore dei permessi di accesso al file (chmod):
-
-```
-[2015-01-08 18:07:10]
-[2015-01-08 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason. Please contact customer support for more information.
-[2015-01-08 18:07:10] ## OVH ## END - 2015-01-08 18:07:10.969840 exitcode: 255
-```
-
-
-
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
