@@ -47,7 +47,7 @@ If you receive an email alert, or notice any signs that you might have a faulty 
 
 #### Servers using soft RAID
 
-If you have a server that uses soft RAID, please refer to the [software RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external} guide to find the disks installed on your server.
+If you have a server that uses soft RAID, please refer to the [software RAID](../raid-soft/){.external} guide to find the disks installed on your server.
 
 Once you have found the access path for your disks, you can test them using the `smartctl` command, as follows:
 
@@ -91,7 +91,7 @@ In this case, the line to look out for is as follows:
 
 #### Servers using hard RAID
 
-If you have a server that uses hard RAID, please refer to the [hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} guide, and use the appropriate procedure for your RAID controller type to find the access paths to your disks.
+If you have a server that uses hard RAID, please refer to the [hardware RAID](../raid-hard/){.external} guide, and use the appropriate procedure for your RAID controller type to find the access paths to your disks.
 
 Once you have found the access path for your disks, you can test them using the `smartctl` command, as follows:
 
@@ -201,16 +201,16 @@ MegaCli -PdLocate -stop -physdrv[E0:S0] -a0
 
 If you have a server that uses hard RAID, then the RAID will rebuild itself. Please note that *auto-rebuild* is enabled by default. For it to work, please ensure that you have not disabled it. The resync process will take a few minutes, and may decrease your RAID’s read/write performance.
 
-If you have a server that uses soft RAID, we recommend that you resync your disks manually. To do this, you can refer to our [software RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external} guide.
+If you have a server that uses soft RAID, we recommend that you resync your disks manually. To do this, you can refer to our [software RAID](../raid-soft/){.external} guide.
 
 
 ## Go further
 
-[Software RAID](https://docs.ovh.com/gb/en/dedicated/raid-soft/){.external}
+[Software RAID](../raid-soft/){.external}
 
-[Hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard){.external}
+[Hardware RAID](../raid-hard){.external}
 
-[Rescue Mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}
+[Rescue Mode](../rescue_mode/){.external}
 
 
 Join our community of users on <https://community.ovh.com/en/>.
