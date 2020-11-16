@@ -31,7 +31,7 @@ En sélectionnant votre pack, vous obtenez une vue globale des services associé
 
 ![nombre de lignes](images/Activation01-edit.png){.thumbnail}
 
-Dans l'exemple ci-dessus, il y a:
+Dans l'exemple ci-dessus, il y a :
 
 -   1 emplacement téléphonique déjà activé ;
 -   1 emplacement fax déjà activé.
