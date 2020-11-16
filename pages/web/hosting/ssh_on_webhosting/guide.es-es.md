@@ -7,7 +7,6 @@ legacy_guide_number: g1962
 section: FTP y SSH
 ---
 
-
 **Última actualización: 04/08/2020**
 
 ## Objetivo
@@ -20,7 +19,7 @@ Los planes de hosting de OVHcloud permiten disponer de un espacio de almacenamie
 
 - Tener contratado un plan de [hosting de OVHcloud](https://www.ovh.es/hosting/) con acceso SSH.
 - Disponer de las claves necesarias para conectarse por SSH al espacio de almacenamiento.
-- Conectarse al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `«Web»`{.action}.
+- Conectarse al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `WebCloud`{.action}.
 
 ## Procedimiento
 

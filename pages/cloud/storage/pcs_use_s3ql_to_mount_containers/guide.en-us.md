@@ -18,8 +18,8 @@ This guide shows you how to set up an object container as file system.
 
 ## Prerequisites
 
-- [Configure user](https://docs.ovh.com/us/en/public-cloud/set-openstack-environment-variables/)
-- [Add storage space](https://docs.ovh.com/us/en/storage/create_an_object_container/)
+- [Configure user](../../public-cloud/creation-and-deletion-of-openstack-user/)
+- [Add storage space](../create_an_object_container/)
 
 
 

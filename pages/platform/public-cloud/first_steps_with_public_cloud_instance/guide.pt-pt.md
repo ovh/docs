@@ -71,7 +71,7 @@ Uma vez realizada a cópia de segurança será possível visualizá-la na secç�
 
 ![public-cloud](images/backup3.png){.thumbnail}
 
-Consulte o nosso manual [Criar uma cópia de segurança de uma instância](../guardar_copia_de_seguridad_de_una_instancia/) para obter ajuda nesta operação. 
+Consulte o nosso manual [Criar uma cópia de segurança de uma instância](../efetuar_backup_de_uma_instancia/) para obter ajuda nesta operação. 
 
 ### Criar uma cópia de segurança automática da instância
 

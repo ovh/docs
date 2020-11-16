@@ -59,7 +59,7 @@ Click on `Add a key`{.action} then click on `Add this key`{.action} after you ha
 
 ![Add a key](images/addkeymenu1.png){.thumbnail}
 
-This key will be available to use at the next [creation of a Public Cloud instance](../get-started-with-a-public-cloud-instance/){.ref}.
+This key will be available to use at the next [creation of a Public Cloud instance](../get-started-with-a-public-cloud-instance/).
 
 ## Go further
 

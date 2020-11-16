@@ -13,8 +13,9 @@ This is compatible with OVH Public Cloud Object Storage and lets you back up you
 
 
 ### Prerequisites
-- [Add storage space](https://docs.ovh.com/asia/en/storage/create_an_object_container/)
-- [Configure user](https://docs.ovh.com/asia/en/public-cloud/set-openstack-environment-variables/#instructions)
+
+- [Add storage space](../create_an_object_container/)
+- [Configure user](../../public-cloud/set-openstack-environment-variables/)
 
 
 ## DiskStation Manager 6.0 configuration

@@ -17,7 +17,7 @@ Horizon is the native OpenStack web interface to it's services (Nova, swift, gla
 
 ## Requirements
 
-- A [Public Cloud Project]({ovh_www}/public-cloud/){.external}
+- A [Public Cloud Project]
 - An [Openstack user](../creation-and-deletion-of-openstack-user/)
 
 ## Instructions
@@ -190,11 +190,12 @@ To resize the instance, click on the `Actions` manu and select `Resize Instance`
 
 
 Once the configuration is complete, click `Resize`{.action}
+
 ###### Template Selection Tab
 
 This section shows the current template and allows you to select a new template for the instance resource.
 
-![resize_instance](images/resize_selection.png{.action}
+
 
 > [!success]
 >
@@ -204,8 +205,6 @@ This section shows the current template and allows you to select a new template 
 ###### Advanced Options Tab
 
 This section allows you to manage disk partitioning.
-
-![resize instance](images/resize_advanced.png){.thumbnail}
 
 
 ##### Editing an instance
@@ -235,7 +234,7 @@ Give the snapshot a name and then click on `Create Snaphot`{.action}
 
 ![create snapshot](images/create_snapshot.png){.thumbnail}
 
-The snapshot will be saved in the [Images](./#images) section of Horizon.
+The snapshot will be saved in the [Images] section of Horizon.
 
 ##### Accessing the console of an instance
 
@@ -262,6 +261,5 @@ You can add custom images via the OpenStack Horizon interface. For example, you 
 
 # Go further
 
-[Another important related guide](url)
 
 Join our community of users on <https://community.ovh.com/en/>.

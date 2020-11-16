@@ -50,4 +50,3 @@ When you click the delete button, an email will be sent to you asking you to eit
 [Getting started with Public Cloud](../public-cloud-first-steps/)
 
 Join our community of users on <https://community.ovh.com/en/>.
-

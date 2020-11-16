@@ -93,7 +93,7 @@ To interact with your storage space, you can use commands, which each have a dir
 |cd `..`|Change directory|Enables you to change the working directory, one level up in the tree-view of your directories.|
 |cd|Change directory|If you do not specify an argument, you can move to the root of your storage space (home).|
 |ls|List|Lists the contents of your working directory. Add the attributes to modify the result of the command (like `ls -ulhG`).| 
-|chmod `droit` `arg`|Change mode|Change the rights of the file or directory mentioned as an `arg` argument.| 
+|chmod `right` `arg`|Change mode|Change the rights of the file or directory mentioned as an `arg` argument.| 
 |mkdir `arg`|Make directory|Enables you to create a directory with the argument name `arg`.| 
 |touch `arg`|Touch|Creates an empty file with the name mentioned in the `arg` argument, if a file with this name does not already exist.|
 |rm `arg`|Remove|Removes the file mentioned in the `arg` argument.| 
