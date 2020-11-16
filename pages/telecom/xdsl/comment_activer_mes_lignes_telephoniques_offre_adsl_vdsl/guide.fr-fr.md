@@ -73,7 +73,7 @@ Vous pouvez consulter les détails techniques de chaque téléphone [ici](http:/
 Pour activer une ligne avec téléphone, choisissez le nombre de lignes à activer (par défaut 1 est proposé).
 <br>Sélectionnez alors la case du téléphone de votre choix. Vous devez alors choisir le type de livraison :
 
-- La livraison par transporteur à 9.99€ HT se fait via la société **DHL** sous 24h ouvrées ;
+- la livraison par transporteur à 9.99€ HT se fait via la société **DHL** sous 24h ouvrées ;
 - la livraison en point relais **Mondial Relay** gratuite et sous 48h ouvrées.
 
 Cliquez sur `Valider la commande`{.action} une fois votre choix effectué.
