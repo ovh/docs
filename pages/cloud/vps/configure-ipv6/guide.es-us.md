@@ -73,11 +73,11 @@ Para obtener la puerta de enlace IPv6 asignada al VPS:
 > @api {GET} /vps/{serviceName}/ips/{ipAddress}
 >
 
-Anótelas y continúe en el apartado [2. Aplicar la configuración IPv6](../configurer-ipv6/#2-aplicar-la-configuracion-ipv6_1){.external}.
+Anótelas y continúe en el apartado [2. Aplicar la configuración IPv6](./#2-aplicar-la-configuracion-ipv6_1){.external}.
 
 ### 2. Aplicar la configuración IPv6
 
-Una vez que disponga de la información necesaria para configurar la IPv6, conéctese al VPS por SSH. Si lo necesita, puede consultar la guía [Introducción al SSH](../dedicated/introduccion-ssh/){.external}.
+Una vez que disponga de la información necesaria para configurar la IPv6, conéctese al VPS por SSH. Si lo necesita, puede consultar la guía [Introducción al SSH](../../dedicated/introduccion-ssh/){.external}.
 
 Existen varias formas de aplicar la configuración IPv6. Utilice los siguientes enlaces para ir directamente a la necesite, según su caso:
 

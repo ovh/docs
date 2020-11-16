@@ -286,9 +286,7 @@ Una vez haya instalado RTM correctamente, podrá ver los datos de monitorizació
 
 ## Más información
 
-[Direcciones IP de monitorización de OVHcloud](../monitoring-ip-ovh)
-
-[Visualizar sus datos](../metrics/usecase-visualize)
+[Direcciones IP de monitorización de OVHcloud](https://docs.ovh.com/gb/en/dedicated/monitoring-ip-ovh)
 
 [Activar y utilizar el modo de rescate](../modo_de_rescate/)
 
