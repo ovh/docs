@@ -64,7 +64,7 @@ Changelog:
 We have removed the Debian 8 images from our catalog as it has reached end of life (https://wiki.debian.org/DebianReleases). Pre-installed application images has been replaced with new ones and guides has been made available.
 
 --- 14 October 2020 ---
-Image: Centos 7, Centos 8, Centos 7 - Plesk, Centos 7 - cPanel, Centos 7 - VestaCP, Centos 8 - WordPress, Centos 8 - OpenVPN, Centos 8 - Drupal, Centos 8 - Joomla, Centos 8 - Virtualmin, Centos 8 - Prestashop, Centos 8 - Docker, Centos 8 - Gitlab
+Image: All Centos images
 Product: VPS 2016 - 2020 & Public Cloud
 Travaux: http://travaux.ovh.net/?do=details&id=47181
 Changelog:
