@@ -5,7 +5,7 @@ excerpt: 'Find out how to manage IP address access restrictions for vCenter'
 legacy_guide_number: '1442255'
 space_key: VS
 space_name: vSphere as a Service
-section: 'OVH services and options'
+section: 'OVHcloud services and options'
 ---
 
 **Last updated 30th June 2020**

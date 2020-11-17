@@ -2,7 +2,7 @@
 title: 'Bezpieczny interfejs'
 slug: bezpieczny-interfejs
 excerpt: 'Dowiedz się, jak korzystać z bezpiecznego interfejsu w infrastrukturach HDS lub PCI-DSS'
-section: 'Usługi i opcje OVH'
+section: 'Usługi i opcje OVHcloud'
 order: 04
 ---
 

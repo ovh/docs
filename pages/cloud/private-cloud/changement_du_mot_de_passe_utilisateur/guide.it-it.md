@@ -2,7 +2,7 @@
 title: Modificare la password utente
 slug: modificare-password-utente
 excerpt: Come impostare una nuova password per un utente del client vSphere dallo Spazio Cliente OVHcloud
-section: Funzionalità OVH
+section: Funzionalità OVHcloud
 ---
 
 **Ultimo aggiornamento: 17/06/2020**

@@ -2,7 +2,7 @@
 title: Cambiar la contraseña de usuario
 slug: cambiar-contraseña-usuario
 excerpt: Cómo modificar la contraseña de usuario del cliente vSphere desde el área de cliente de OVHcloud
-section: Funcionalidades de OVH
+section: Funcionalidades de OVHcloud
 ---
 
 **Última actualización: 17/06/2020**

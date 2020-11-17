@@ -2,7 +2,7 @@
 title: How to cancel your Private Cloud offer 
 slug: how-to-cancel-private-cloud
 excerpt: Learn how to request the termination of a Private cloud infrastructure
-section: OVH Features
+section: OVHcloud Features
 order: 09
 ---
 

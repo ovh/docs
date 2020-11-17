@@ -2,7 +2,7 @@
 title: 'Modifying the vCenter access policy'
 slug: modify-vcenter-access-policy
 excerpt: 'Find out how to change the access policy for vCenter'
-section: 'OVH services and options'
+section: 'OVHcloud services and options'
 ---
 
 **Last updated 30th June 2020**

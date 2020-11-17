@@ -2,7 +2,7 @@
 title: 'Activation de la mise en conformité Healthcare (HDS) ou Payment Services (PCI DSS)'
 slug: activer-l-option-hds-ou-pci-dss
 excerpt: "Découvrez comment activer l'option pour l’hébergement des données de santé ou des données bancaires sur votre offre Hosted Private Cloud"
-section: 'Services et options OVH'
+section: 'Services et options OVHcloud'
 order: 3
 ---
 

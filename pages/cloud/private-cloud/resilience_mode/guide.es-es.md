@@ -2,7 +2,7 @@
 title: 'Utilizar el modo de resiliencia'
 slug: modo-resiliencia
 excerpt: 'Cómo utilizar el modo de resiliencia de OVH'
-section: 'Funcionalidades de OVH'
+section: 'Funcionalidades de OVHcloud'
 ---
 
 **Última actualización: 25/10/2018**

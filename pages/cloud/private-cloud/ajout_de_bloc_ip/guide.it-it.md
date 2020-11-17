@@ -2,7 +2,7 @@
 title: Aggiungere un blocco IP
 slug: aggiunger-un-blocco-ip
 excerpt: Ordinare un blocco IP su un Private Cloud
-section: Funzionalità OVH
+section: Funzionalità OVHcloud
 order: 01
 ---
 

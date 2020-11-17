@@ -2,7 +2,7 @@
 title: Activer la Private Gateway
 slug: private-gateway
 excerpt: Découvrez comment activer la Private Gateway une infrastructure Hosted Private Cloud
-section: Fonctionnalités OVH
+section: Fonctionnalités OVHcloud
 hidden: true
 ---
 

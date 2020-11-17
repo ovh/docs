@@ -4,7 +4,7 @@ title: 'Using resilience mode'
 slug: resilience-mode
 excerpt: 'Find out how to use OVH resilience mode'
 legacy_guide_number: '7766742'
-section: 'OVH Features'
+section: 'OVHcloud Features'
 ---
 
 **Last updated 30th October 2018**

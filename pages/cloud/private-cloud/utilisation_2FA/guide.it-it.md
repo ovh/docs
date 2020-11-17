@@ -2,7 +2,7 @@
 title: Utilizzare l’autenticazione a due fattori (2FA) su un’infrastruttura Private Cloud
 slug: utilizzare-2FA
 excerpt: Come attivare la doppia autenticazione per proteggere la tua infrastruttura
-section: Funzionalità OVH
+section: Funzionalità OVHcloud
 order: 05
 ---
 

@@ -3,7 +3,7 @@ title: 'Dodawanie zasobów w systemie godzinowym'
 slug: dodawanie-zasobow-w-systemie-godzinowym
 excerpt: 'Dowiedz się, jak dodawać zasoby płatne w systemie godzinowym'
 legacy_guide_number: '7766721'
-section: 'Funkcjonalności OVH'
+section: 'Funkcjonalności OVHcloud'
 ---
 
 **Ostatnia aktualizacja z dnia 04-10-2018**

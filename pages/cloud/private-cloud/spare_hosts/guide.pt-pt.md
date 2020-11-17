@@ -2,7 +2,7 @@
 title: Host de substituição
 excerpt: Descubra o mecanismo de substituição de um host
 slug: os_hosts_sparesuplentes
-section: Funcionalidades da OVH
+section: Funcionalidades da OVHcloud
 order: 04
 ---
 **Última atualização: 26/08/2020**

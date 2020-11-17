@@ -2,7 +2,7 @@
 title: 'Utiliser le plugin Private Cloud OVH'
 slug: plugin-private-cloud-ovh
 excerpt: 'Découvrez comment utiliser le plugin Private Cloud OVH'
-section: 'Fonctionnalités OVH'
+section: 'Fonctionnalités OVHcloud'
 ---
 
 **Dernière mise à jour le 2018/10/26**

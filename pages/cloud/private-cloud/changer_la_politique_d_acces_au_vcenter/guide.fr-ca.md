@@ -5,7 +5,7 @@ excerpt: Découvrez comment modifier la stratégie d'accès pour vCenter'
 legacy_guide_number: '1442246'
 space_key: VS
 space_name: vSphere as a Service
-section: Fonctionnalités OVH
+section: Fonctionnalités OVHcloud
 ---
 
 **Dernière mise à jour le 07/07/2020**
