@@ -3,7 +3,7 @@ title: Using Private Cloud within a vRack
 slug: using-private-cloud-with-vrack
 excerpt: Find out how to use vRack with an SDDC solution
 legacy_guide_number: '7766915'
-section: OVH Features
+section: OVHcloud Features
 order: 2
 ---
 

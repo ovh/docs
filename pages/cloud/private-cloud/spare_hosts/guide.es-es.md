@@ -2,7 +2,7 @@
 title: Host de sustitución
 slug: los_hosts_de_spare
 excerpt: Cómo sustituir un host
-section: Funcionalidades de OVH
+section: Funcionalidades de OVHcloud
 order: 04
 ---
 

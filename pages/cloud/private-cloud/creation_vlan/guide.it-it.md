@@ -2,7 +2,7 @@
 title: Creazione V(x)LAN
 slug: creazione-vlan-vxlan
 excerpt: Scopri come creare VLAN (vRack) e VxLAN (NSX)
-section: Funzionalità OVH
+section: Funzionalità OVHcloud
 order: 02
 ---
 

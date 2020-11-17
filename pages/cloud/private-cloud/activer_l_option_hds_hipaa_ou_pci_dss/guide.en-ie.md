@@ -2,7 +2,7 @@
 title: 'Healthcare (HDS) or payment services (PCI DSS) compliance activation'
 slug: activate-pci-dss-option
 excerpt: 'Find out how to host healthcare or payment card data on your Hosted Private Cloud'
-section: 'OVH services and options'
+section: 'OVHcloud services and options'
 ---
 
 **Last updated 27th May 2020**

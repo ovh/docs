@@ -2,7 +2,7 @@
 title: 'Setting up a VPN for OVHcloud Zerto DRP'
 slug: zerto-virtual-replication-customer-to-ovh
 excerpt: 'Learn how to setup a VPN tunnel to connect your on-premises plaftorm to your OVHcloud Private Cloud'
-section: 'OVH services and options'
+section: 'OVHcloud services and options'
 ---
 
 **Last updated 6th December 2019** 

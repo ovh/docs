@@ -3,7 +3,7 @@ title: Snapshots horaires OVHcloud
 slug: snapshots-horaires-ovh
 excerpt: Comprendre le fonctionnement des snapshots horaires OVHcloud
 legacy_guide_number: '2163263'
-section: Fonctionnalités OVH
+section: Fonctionnalités OVHcloud
 order: 06
 ---
 

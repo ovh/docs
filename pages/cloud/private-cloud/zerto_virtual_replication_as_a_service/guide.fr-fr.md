@@ -2,7 +2,7 @@
 title: Mise en oeuvre de Zerto Virtual Replication pour votre PRA
 slug: zerto-virtual-replication-vmware-vsphere-drp
 excerpt: Découvrez comment mettre en oeuvre Zerto Virtual Replication pour votre Plan de Reprise d'Activité entre deux offres Private Cloud.
-section: Services et options OVH
+section: Services et options OVHcloud
 ---
 
 **Dernière mise à jour le 30/06/2020**

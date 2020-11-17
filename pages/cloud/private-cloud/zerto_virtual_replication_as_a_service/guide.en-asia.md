@@ -2,7 +2,7 @@
 title: 'Setting up Zerto Virtual Replication for your DRP'
 slug: zerto-virtual-replication-vmware-vsphere-drp
 excerpt: 'Discover how to set up Zerto Virtual Replication between your Private Cloud platforms'
-section: 'OVH services and options'
+section: 'OVHcloud services and options'
 ---
 
 **Last updated 25th June 2020**

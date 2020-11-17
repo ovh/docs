@@ -2,7 +2,7 @@
 title: Associare un’email a un utente vSphere
 excerpt: Come collegare un indirizzo di posta elettronica al tuo utente vSphere
 slug: associare-email-a-un-utente-vsphere
-section: Funzionalità OVH
+section: Funzionalità OVHcloud
 ---
 
 **Ultimo aggiornamento: 06/07/2020**

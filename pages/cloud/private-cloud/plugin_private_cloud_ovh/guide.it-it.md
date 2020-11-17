@@ -2,7 +2,7 @@
 title: 'Utilizzare il plugin Private Cloud OVH'
 slug: plugin-private-cloud-ovh
 excerpt: 'Come aggiungere risorse con il plugin Private Cloud OVH'
-section: 'Funzionalità OVH'
+section: 'Funzionalità OVHcloud'
 ---
 
 **Ultimo aggiornamento: 19/08/2019**

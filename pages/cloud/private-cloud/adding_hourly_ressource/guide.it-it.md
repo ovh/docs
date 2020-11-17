@@ -3,7 +3,7 @@ title: 'Aggiungere una risorsa oraria'
 slug: aggiungere-risorsa-oraria
 excerpt: 'Come aggiungere risorse con fatturazione oraria'
 legacy_guide_number: '7766721'
-section: 'Funzionalità OVH'
+section: 'Funzionalità OVHcloud'
 ---
 
 **Ultimo aggiornamento: 12/12/2018**

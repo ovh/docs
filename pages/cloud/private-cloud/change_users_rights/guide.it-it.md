@@ -1,7 +1,7 @@
 ---
 title: Modificare i permessi di un utente
 slug: modificare-permessi-di-un-utente
-section: Funzionalità OVH
+section: Funzionalità OVHcloud
 ---
 
 **Ultimo aggiornamento: 30/04/2020**

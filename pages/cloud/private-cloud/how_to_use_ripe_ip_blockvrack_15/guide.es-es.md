@@ -3,7 +3,7 @@ title: Uso de las IP RIPE y el vRack 1.5
 excerpt: ¿Cómo añadir una MV a la red vRack 1.5 o utilizar una IP del bloque RIPE?
 slug: uso_de_las_ip_ripe_y_el_vrack_15
 legacy_guide_number: g1441
-section: Funcionalidades de OVH
+section: Funcionalidades de OVHcloud
 ---
 
 

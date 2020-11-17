@@ -3,7 +3,7 @@ title: Añadir un bloque de IP
 slug: anadir-bloque-ip
 excerpt: Contratar un bloque de IP en Hosted Private Cloud
 legacy_guide_number: '7766457'
-section: Funcionalidades de OVH
+section: Funcionalidades de OVHcloud
 order: 01
 ---
 
