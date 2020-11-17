@@ -3,7 +3,7 @@ title: Host sostitutivo
 slug: host-sostitutivo
 excerpt: Come avviene la sostituzione di un host malfunzionante
 legacy_guide_number: '2883590'
-section: Funzionalità OVH
+section: Funzionalità OVHcloud
 order: 04
 ---
 

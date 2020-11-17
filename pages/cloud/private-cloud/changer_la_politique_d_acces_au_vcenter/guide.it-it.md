@@ -5,7 +5,7 @@ excerpt: Come cambiare le regole di accesso al vCenter
 legacy_guide_number: '1442246'
 space_key: VS
 space_name: vSphere as a Service
-section: Funzionalità OVH
+section: Funzionalità OVHcloud
 ---
 
 **Ultimo aggiornamento: 07/07/2020**

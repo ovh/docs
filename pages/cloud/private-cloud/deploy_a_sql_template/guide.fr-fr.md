@@ -4,7 +4,7 @@ slug: deploy-a-sql-template
 legacy_guide_number: '4816926'
 space_key: VS
 space_name: vSphere as a Service
-section: Services et options OVH
+section: Services et options OVHcloud
 hidden: true
 ---
 

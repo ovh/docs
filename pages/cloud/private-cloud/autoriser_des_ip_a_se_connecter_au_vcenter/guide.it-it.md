@@ -4,7 +4,7 @@ slug: autorizzare-ip-ad-accedere-al-vcenter
 legacy_guide_number: '1442255'
 space_key: VS
 space_name: vSphere as a Service
-section: Funzionalità OVH
+section: Funzionalità OVHcloud
 ---
 
 **Ultimo aggiornamento: 25/06/2020**

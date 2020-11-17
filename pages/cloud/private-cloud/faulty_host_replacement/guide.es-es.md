@@ -3,7 +3,7 @@ title: Sustituir un host defectuoso
 excerpt: 'En caso de fallo de un host, ¿cómo puedo cambiarlo por uno nuevo?'
 slug: sustituir_un_host_defectuoso
 legacy_guide_number: g861
-section: Funcionalidades de OVH
+section: Funcionalidades de OVHcloud
 ---
 
 En caso de fallo de un host, le entregaremos un host de spare. Para más detalles, puede consultar la siguiente guía:

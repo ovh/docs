@@ -3,7 +3,7 @@ title: Ajout de bloc IP
 slug: ajout-de-bloc-ip
 excerpt: Commander un bloc IP sur votre Hosted Private Cloud
 legacy_guide_number: '7766457'
-section: Fonctionnalités OVH
+section: Fonctionnalités OVHcloud
 order: 01
 ---
 

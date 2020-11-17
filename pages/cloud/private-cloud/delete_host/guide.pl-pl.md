@@ -3,7 +3,7 @@ title: 'Usuwanie serwera hosta'
 slug: usuwanie-serwera-hosta
 excerpt: 'Dowiedz się, jak usunąć serwer hosta z infrastruktury Private Cloud'
 legacy_guide_number: '1442308'
-section: 'Funkcjonalności OVH'
+section: 'Funkcjonalności OVHcloud'
 ---
 
 **Ostatnia aktualizacja z dnia 24-07-2020**

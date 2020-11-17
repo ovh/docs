@@ -2,7 +2,7 @@
 title: Utilizar o plugin OVHcloud Network
 slug: plugin-ovh-network
 excerpt: Saiba como utilizar o plugin OVHcloud Network no serviço Hosted Private Cloud
-section: 'Funcionalidades da OVH'
+section: 'Funcionalidades da OVHcloud'
 order: 03
 ---
 

@@ -4,7 +4,7 @@ slug: autorizar-direcciones-ip-a-conectarse-al-vcenter
 legacy_guide_number: '1442255'
 space_key: VS
 space_name: vSphere as a Service
-section: Funcionalidades de OVH
+section: Funcionalidades de OVHcloud
 ---
 
 **Última actualización: 25/06/2020**

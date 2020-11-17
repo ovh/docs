@@ -15,8 +15,8 @@ Ces dernières vous permettent d'émettre et recevoir des appels. Elles peuvent 
 
 ## Prérequis
 
--   Disposer d'un [pack ADSL/VDSL/FTTH](https://www.ovhtelecom.fr/offre-internet/) actif.
--   Disposer d'une ou plusieurs ligne(s) non activée(s) dans ce pack.
+- Disposer d'un [pack ADSL/VDSL/FTTH](https://www.ovhtelecom.fr/offre-internet/) actif.
+- Disposer d'une ou plusieurs ligne(s) non activée(s) dans ce pack.
 
 ## En Pratique
 
@@ -99,7 +99,7 @@ Si vous avez activé une ligne sans téléphone, vous devez posséder un simple 
 
 Pour que cette ligne soit utilisable, **les conditions suivantes doivent être remplies**:
 
-Le voyant **Voice** du modem doit être allumé pour les modems technicolor (TG788 et TG799). 
+Le voyant **Voice** du modem doit être allumé pour les modems Technicolor (TG788 et TG799). 
 <br>Le voyant **Phone** du modem doit être allumé sur les modems Zyxel.
 <br>Si ce n'est pas le cas, vérifiez bien que l'activation de ligne a été effectuée sur l'espace client OVHcloud et patientez une heure.
 
@@ -110,7 +110,7 @@ Le voyant **Voice** du modem doit être allumé pour les modems technicolor (TG7
 Votre téléphone analogique doit être branché sur le port **phone 1** du modem (ou le port **phone 2** si c'est la deuxième ligne sans téléphone).
 
 > [!primary]
-> Il y a une inversion de ports sur les modems TG788 : le port **phone 2** est à gauche alors que le port **phone 1** est à droite.
+> Il y a une inversion de ports sur les modems Technicolor TG788 : le port **phone 2** est à gauche alors que le port **phone 1** est à droite.
 >
 
 ![schéma branchement tg788](images/untitled.jpg){.thumbnail}

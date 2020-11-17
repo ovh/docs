@@ -2,7 +2,7 @@
 title: 'Użycie wtyczki OVH w Private Cloud'
 slug: wtyczka-ovh-private-cloud
 excerpt: 'Dowiedz się, jak użyć wtyczki OVH w rozwiązaniu Private Cloud'
-section: 'Funkcjonalności OVH'
+section: 'Funkcjonalności OVHcloud'
 ---
 
 **Ostatnia aktualizacja z dnia 09-10-2018**

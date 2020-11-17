@@ -3,7 +3,7 @@ title: Activer et utiliser Veeam Backup Managed
 slug: veeam-backup-as-a-service
 excerpt: Découvrez comment activer et utiliser l'option Veeam Backup Managed
 legacy_guide_number: '2883711'
-section: Services et options OVH
+section: Services et options OVHcloud
 order: 06
 ---
 

@@ -2,7 +2,7 @@
 title: Interface securisée
 slug: interface-secure
 excerpt: Utilisation de l'interface securisée sur des infrastructure HDS ou PCI-DSS
-section: Services et options OVH
+section: Services et options OVHcloud
 order: 04
 ---
 

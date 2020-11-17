@@ -3,7 +3,7 @@ title: Hôte de spare
 slug: hote-de-spare
 excerpt: Comprendre le mécanisme de remplacement d'hôte
 legacy_guide_number: '2883590'
-section: Fonctionnalités OVH
+section: Fonctionnalités OVHcloud
 order: 04
 ---
 
