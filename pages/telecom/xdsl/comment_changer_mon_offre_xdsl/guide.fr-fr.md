@@ -48,7 +48,6 @@ Il faut compter un délai d'une heure pour que le changement soit effectif, sauf
 
 
 Suivant votre offre actuelle, un remplacement du modem peut s'avérer nécessaire. Cela vous sera indiqué lors du choix de votre nouvelle offre.
-<br> Le changement de modem vous sera alors indiqué lors du changement d'offre.
 
 Les nouveaux services liés à votre nouvelle offre (Express ou Entreprise) seront accessibles une fois le changement effectif. 
 
