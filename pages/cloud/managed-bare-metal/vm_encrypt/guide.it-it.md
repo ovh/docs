@@ -4,7 +4,7 @@ slug: vm-encrypt
 routes:
     canonical: 'https://docs.ovh.com/it/private-cloud/vm-encrypt/'
 excerpt: Come utilizzare la funzionalità di crittografia delle macchine virtuali
-section: Funzionalità VMWare vSphere
+section: Funzionalità VMware vSphere
 order: 07
 ---
 

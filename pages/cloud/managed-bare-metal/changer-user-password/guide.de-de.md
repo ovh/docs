@@ -4,7 +4,7 @@ slug: aenderung-des-nutzerpassworts
 routes:
     canonical: 'https://docs.ovh.com/de/private-cloud/aenderung-des-nutzerpassworts/'
 excerpt: Erfahren Sie, wie Sie das Passwort eines Nutzers des vSphere Clients in Ihrem OVHcloud Kundencenter ändern können.
-section: Funktionen von OVHcloud
+section: OVHcloud Funktionen
 ---
 
 **Letztes Update: 05.11.2020**

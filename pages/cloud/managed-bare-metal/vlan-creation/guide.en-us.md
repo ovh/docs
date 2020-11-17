@@ -2,7 +2,7 @@
 title: VLAN creation
 slug: creation-vlan
 excerpt: Find out how to create VLANs (vRack)
-section: OVHcloud features
+section: OVHcloud Features
 order: 02
 ---
 

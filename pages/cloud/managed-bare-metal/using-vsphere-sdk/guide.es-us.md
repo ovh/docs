@@ -4,7 +4,7 @@ slug: usar-vsphere-sdk
 routes:
     canonical: 'https://docs.ovh.com/us/es/private-cloud/usar-vsphere-sdk/'
 excerpt: Instrumentación y uso del conjunto de librerías vSphere SDK
-section: Funcionalidades de la plataforma VMware vSphere
+section: Funcionalidades de VMware vSphere
 order: 10
 ---
 

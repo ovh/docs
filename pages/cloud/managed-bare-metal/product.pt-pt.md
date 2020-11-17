@@ -4,6 +4,7 @@ slug: managed-bare-metal
 routes:
     canonical: 'https://docs.ovh.com/pt/private-cloud/'
 excerpt: Como utilizar os seus serviços Managed Bare Metal
+sections: Introdução, Gestão das máquinas virtuais, Funcionalidades da OVHcloud, Funcionalidades VMware vSphere, Serviços e opções OVHcloud
 ---
 
 > [!product-section]

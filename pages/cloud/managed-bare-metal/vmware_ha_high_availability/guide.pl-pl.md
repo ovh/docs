@@ -4,7 +4,7 @@ slug: vmware-ha-high-availability
 routes:
     canonical: 'https://docs.ovh.com/pl/private-cloud/vmware-ha-high-availability/'
 excerpt: Zarządzanie polityką restartowania przy użyciu funkcji HA
-section: Funkcje VMware vSphere
+section: Funkcjonalności VMware vSphere
 order: 02
 ---
 
