@@ -5,7 +5,7 @@ routes:
     canonical: 'https://docs.ovh.com/pl/private-cloud/dodawanie-bloku-ip/'
 excerpt: Jak zamówić blok IP dla swojej usługi Managed Bare Metal
 legacy_guide_number: '7766457'
-section: Funkcje OVHcloud
+section: Funkcjonalności OVHcloud
 order: 01
 ---
 

@@ -4,7 +4,7 @@ slug: zugriffsregeln-fuer-vcenter-aendern
 routes:
     canonical: 'https://docs.ovh.com/de/private-cloud/zugriffsregeln-fuer-vcenter-aendern/'
 excerpt: Sehen Sie hier, wie Sie die Zugriffsregeln für das vCenter ändern können
-section: Funktionen von OVHcloud
+section: OVHcloud Funktionen
 ---
 
 **Stand 05.11.2020**

@@ -4,7 +4,7 @@ slug: szyfrowanie-vm
 routes:
     canonical: 'https://docs.ovh.com/pl/private-cloud/szyfrowanie-vm/'
 excerpt: Dowiedz się, jak włączyć szyfrowanie maszyn wirtualnych
-section: Funkcje VMware vSphere
+section: Funkcjonalności VMware vSphere
 order: 07
 ---
 

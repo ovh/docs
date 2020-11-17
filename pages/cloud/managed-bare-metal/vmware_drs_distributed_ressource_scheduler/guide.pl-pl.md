@@ -4,7 +4,7 @@ slug: vmware-drs-distributed-ressource-scheduler-new
 routes:
     canonical: 'https://docs.ovh.com/pl/private-cloud/vmware-drs-distributed-ressource-scheduler-new/'
 excerpt: Dowiedz się, jak kontrolować równoważenie obciążenia dzięki funkcji DRS
-section: Funkcje VMware vSphere
+section: Funkcjonalności VMware vSphere
 order: 03
 ---
 

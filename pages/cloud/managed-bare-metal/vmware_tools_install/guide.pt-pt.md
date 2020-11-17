@@ -4,7 +4,7 @@ routes:
     canonical: 'https://docs.ovh.com/pt/private-cloud/instalar_o_pacote_vmware_tools/'
 excerpt: 'Saiba como instalar as VMware Tools em Linux ou Windows'
 slug: instalar_o_pacote_vmware_tools
-legacy_guide_number: g621
+section: Gestão das máquinas virtuais
 ---
 
 **Última atualização: 05/11/2020**

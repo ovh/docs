@@ -3,7 +3,7 @@ title: Die Verbindung von IPs mit dem vCenter erlauben
 slug: verbindung-von-ip-zum-vcenter-erlauben
 routes:
     canonical: 'https://docs.ovh.com/de/private-cloud/verbindung-von-ip-zum-vcenter-erlauben/'
-section: Funktionen von OVHcloud
+section: OVHcloud Funktionen
 ---
 
 **Stand 05.11.2020**

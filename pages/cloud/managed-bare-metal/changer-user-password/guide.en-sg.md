@@ -4,7 +4,7 @@ routes:
     canonical: 'https://docs.ovh.com/sg/en/private-cloud/changing-user-password/'
 excerpt: Learn how to change a vSphere client user's password from your OVHcloud Control Panel
 slug: changing-user-password
-section: OVHcloudFeatures
+section: OVHcloud Features
 ---
 
 **Last updated 5th November 2020**

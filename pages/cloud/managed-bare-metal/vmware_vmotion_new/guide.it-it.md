@@ -4,7 +4,7 @@ slug: vmware-vmotion-new
 routes:
     canonical: 'https://docs.ovh.com/it/private-cloud/vmware-vmotion-new/'
 excerpt: Come trasferire a caldo una macchina virtuale su un host differente
-section: Funzionalità VMWare vSphere
+section: Funzionalità VMware vSphere
 order: 04
 ---
 
