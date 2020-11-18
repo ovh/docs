@@ -180,7 +180,7 @@ O separador `Licença Windows`{.action} permite ativar as licenças SPLA Windows
 
 ![Licença SPLA Windows](images/controlpanel10-e.png){.thumbnail}
 
-Encontrará a página das tarifas [aqui](https://www.ovhcloud.com/pt/managed-bare-metal/images-licenses/).
+Encontrará a página das tarifas [aqui](https://www.ovhcloud.com/pt/managed-bare-metal/options/).
 
 ### Panorama datacenter
 

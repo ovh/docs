@@ -19,7 +19,7 @@ L’interfaccia vSphere permette di eseguire il deploy di macchine virtuali in d
 ## Prerequisiti
 
 - Disporre di un servizio [Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external} attivo
-- Avere accesso all’[interfaccia vSphere](../connexion-interface-vsphere/)
+- Avere accesso all’[interfaccia vSphere](../connessione-interfaccia-vsphere/)
 
 ## Procedura
 
@@ -33,7 +33,7 @@ Per effettuare l’operazione clicca con il tasto destro sul cluster in question
 
 Per creare una macchina virtuale è possibile scegliere tra diverse opzioni:
 
-- da un file ISO, disponibile nel datastore (per importarlo, consulta la [guida di connessione in SFTP](../connessione_in_sftp/))
+- da un file ISO, disponibile nel datastore (per importarlo, consulta la [guida di connessione in SFTP](../connessione-in-sftp/))
 - da un template personale o [fornito da OVHcloud](../installazione-template-ovhcloud/)
 - clonare una VM già esistente, prestando particolare attenzione agli eventuali conflitti di indirizzi IP
 - clonare una VM in un template per un’implementazione più rapida delle future macchine virtuali

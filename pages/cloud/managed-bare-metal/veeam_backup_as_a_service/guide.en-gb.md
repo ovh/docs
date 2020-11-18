@@ -1,9 +1,9 @@
 ---
-title: Enable and Use Veeam Backup Managed
+title: Activating and using Veeam Managed Backup
 slug: veeam-backup-as-a-service
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/veeam-backup-as-a-service/'
-excerpt: Learn how to enable and use the Veeam Backup Managed option
+excerpt: Find out how to enable and use the Veeam Managed Backup option to secure your VMs
 section: 'OVHcloud services and options'
 ---
 
@@ -11,110 +11,111 @@ section: 'OVHcloud services and options'
 
 ## Objective
 
-Veeam is a software editor in backup and disaster recovery plan (DRP) solutions in virtualized environments. The Veeam Backup Managed option is based on the Veeam Availability Suite software stack to provide you with an on demand backup solution.
+Protecting and backing up your VMs is an essential part of ensuring long-term stability for your infrastructure. This is why we offer a managed backup solution based on Veeam Backup & Replication technology. You can use it to restore your data simply, by enabling automatic backup for your VMs.
 
-Backups are performed using a virtual machine (VM) within your [Managed Bare Metal](https://www.ovhcloud.com/en-gb/managed-bare-metal/){.external} infrastructure. The backed-up data is outsourced to an independent storage space at OVHcloud. Backups are performed during night, with a retention time depending on the offer level you choose.
+Backups are performed using a virtual machine (VM) within your [Managed Bare Metal](https://www.ovhcloud.com/en-gb/managed-bare-metal/) infrastructure. The backup data is outsourced to an independent storage space at OVHcloud. Backups are performed during night-time, with a retention time depending on the solution level you choose.
 
-**This guide explains how to deploy and use the Veeam Backup Managed option in minutes.**
+**This guide explains how to deploy and use the Veeam Managed Backup option.**
 
 ## Requirements
 
-* [Managed Bare Metal](https://www.ovhcloud.com/en-gb/managed-bare-metal/){.external}
-* [Give the right "Add resources"](../change-users-rights/){.external} for the right datacenter to the relevant user.
-* Access to the vSphere management interface.
-* Enabled [vSphere High Availability (HA)](../vmware-ha-high-availability){.external}.
-* Enabled [Distributed Resource Scheduler (DRS)](../vmware-drs-distributed-ressource-scheduler){.external} sur le ou les clusters.
-* Enabled Windows SPLA Licensing
+- a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-gb/managed-bare-metal/)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- a user account with access to vSphere and the permission ["Add resources"](../change-users-rights/) for the pertinent data centre
+- [vSphere High Availability (HA)](../vmware-ha-high-availability/) enabled
+- [Distributed Resource Scheduler (DRS)](../vmware-drs-distributed-ressource-scheduler) enabled
+- Windows SPLA Licensing enabled
+
 
 ## Instructions
 
-### Enable Service
+### Activating the backup option
 
-The first step is to enable the service from the [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager){.external}. To do this, go to the `Managed Bare Metal`{.action} section of the `Bare Metal Cloud`{.action} tab. Click the relevant vSphere infrastructure, and then click the data center that you want. Choose the `Backup`{.action} tab.
+The first step is to order the service from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). To do this, go to the `Managed Bare Metal`{.action} section of the `Bare Metal Cloud`{.action} tab. Click on the relevant vSphere infrastructure, then select the data centre. Click on the `Backup`{.action} tab.
 
-![Enable backup](images/veeam-managed-bare-metal.png){.thumbnail}
+![Enable backup](images/veeam-managed-controlp_new.png){.thumbnail}
 
-Choose the level of the backup offer and continue by clicking `Choose Offer`{.action}.
+Choose the appropriate plan and continue by clicking `Choose solution`{.action}.
 
-Validate contracts by clicking `Enable backup`{.action}.
+Validate the contracts by clicking `Enable backup`{.action}.
 
-Once the option is installed, a confirmation e-mail is sent to you and the activation of the backup will be indicated to you in the client area, with the reminder of the level of the chosen offer.
+Once the service is ready, a confirmation email will be sent and the active backup solution will be indicated in the Control Panel.
 
 ![Enable backup](images/backuppcc_03_en.png){.thumbnail}
 
 The service can be used directly from vSphere.
 
-On your vSphere infrastructure, you will see a virtual machine corresponding to the backup server:
+On your vSphere infrastructure, you will see a virtual machine corresponding to the backup server as shown in the screenshot below.
 
 ![Backup Server](images/backupserver.png){.thumbnail}
 
-### Enable backup for desired virtual machines
+### Enabling backups for virtual machines
 
-Now that the service is in place, just complete the backup requests for each virtual machine identified as critical from the vSphere Web Client.
+After the service is activated, you will need to complete the backup requests for each virtual machine identified as critical from the vSphere client.
 
-Select the Vmware data center, then the `Configure`{.action} tab and choose `Backup Management`{.action} from the OVHcloud section of the menu.
+Select the VMware data centre, then the `Configure`{.action} tab and click `Backup Management`{.action} from the OVHcloud section of the menu.
 
 ![Backup Management](images/backupvm_01.png){.thumbnail}
 
-From the list, select the VM for which you want to enable backup. On the right panel, click `Enable backup on this VM`{.action} to start the activation request.
+Select the VM for which you want to enable backups from the list. On the right panel, click `Enable backup on this VM`{.action} to start the activation request.
 
 ![Enabling Backup](images/backupvm_02.png){.thumbnail}
 
-A confirmation window appears. Simply click `OK`{.action}.
+In the confirmation window, click `OK`{.action}.
 
 ![Backup Confirmation](images/backupvm_03.png){.thumbnail}
 
-Veeam is informed of this new request and creates the virtual machine backup job. Every night, starting at 10 p.m. (default), a backup task will be scheduled according to the backup scheme defined by the offer.
+Veeam is informed of this new request and creates the virtual machine backup job. Every night, starting at 10 p.m. (default), a backup task will be scheduled according to the backup scheme defined by the chosen solution.
 
-Every day, an email containing the status of all the work performed is sent to the OVHcloud account email address.
+Every day, an email containing the status of all the performed actions is sent to the OVHcloud account's email address.
 
 > [!warning]
 >
-> Removing a virtual machine from your inventory or disk does not disable the backup job for that machine. This will be misplaced in the report.
+> Removing a VM from your inventory or disk **does not disable** the backup job for that machine, regardless of the information in the report.
 >
 
-### Restore Backup
+### Restoring a backup
 
-Select the Vmware data center, then the `Configure`{.action} tab and choose `Backup Management`{.action} from the OVHcloud section of the menu.
+Select the VMware data centre, then the `Configure`{.action} tab and choose `Backup Management`{.action} from the OVHcloud section of the menu.
 
-From the list, select the VM for which you want to restore a backup (its **backup state** must be **Enabled**).
+From the list, select the VM for which you want to restore a backup (its `Backup state` must be **Enabled**).
 
 ![Restoring backup](images/restorebackup_01.png){.thumbnail}
 
-On the right-hand panel, click `Restore Backup`{.action} to start the restore request.
+On the right-hand panel, click `Restore Backup`{.action} to open the restore request.
 
 ![Restoring backup](images/restorebackup_02.png){.thumbnail}
 
-A new window opens to create the restore job. Check the machine name, select the backup date to restore, and choose the datastore (storage space used as the restore target). Click `Restore Backup`{.action} to start the restore.
+A new window opens to create the restore job. Check the VM name, select the backup date to restore, and choose the datastore (storage space used as the restore target). Click `Restore Backup`{.action} to start the process.
 
-![Initializing Restore](images/restorebackup_03.png){.thumbnail}
+![Initialising Restore](images/restorebackup_03.png){.thumbnail}
 
 A window then confirms that the Veeam server is notified of this new request and that the virtual machine restore job has been created.
 
 ![Validating Restore](images/restorebackup_04.png){.thumbnail}
 
-The machine is restored next to the source machine.
+The VM is restored next to the source machine.
 
 ![Source machine is restored](images/restorebackup_05.png){.thumbnail}
 
 > [!warning]
 >
-> Note that the restored machine is connected to the network. If you start the source machine without turning off the source machine, there may be an IP address conflict.
+> Note that the restored machine is connected to the network. If you start the VM without turning off the source VM, there may be an IP address conflict.
 >
 
 ![IP Conflict](images/restorebackup_06.png){.thumbnail}
 
-To perform these actions, you can select the data center in your inventory, click the tab `Configure`{.action}, then choose `OVH Backup Management`{.action}. On this page, you have access to the list of your backup jobs, with the number of backups and the last status of the job.
+To edit these settings, select the data centre in your inventory, click the tab `Configure`{.action}, then choose `OVH Backup Management`{.action}. On this page, you have access to the list of your backup jobs, with the number of backups and the last status of the job.
 
-### Disable VM Backup
+### Disabling backups for a VM
 
-Select the Vmware data center, then the `Configure`{.action} tab and choose `Backup Management`{.action} from the OVHcloud section of the menu.
+Select the VMware data centre, then the `Configure`{.action} tab and choose `Backup Management`{.action} from the OVHcloud section of the menu.
 
-From the list select the VM for which you want to disable the backup.
+Select the VM for which you want disable backups from the list.
 
 ![Machine Disable](images/restorebackup_01.png){.thumbnail}
 
-On the right-hand panel, click `Disable Backup on this VM`{.action} to disable the backup.
+On the right-hand panel, click `Disable Backup on this VM`{.action}.
 
 ![Disabling Backup](images/restorebackup_02.png){.thumbnail}
 
@@ -124,9 +125,9 @@ Then confirm the deactivation by clicking `OK`{.action}.
 
 > [!warning]
 >
-> Backups can be reactivated at any time from the moment the virtual machine is present in the infrastructure.
+> Backups can be reactivated at any time from the moment the VM is present in the infrastructure.
 > 
-> Please note that the performed backups remain available for recovery until the retention period expires.
+> Please note that the backups remain available for recovery only until the retention period expires.
 >
 
 > [!primary]

@@ -183,7 +183,7 @@ L'onglet `Licence Windows`{.action} permet d'activer les licences SPLA Windows s
 
 ![Licence SPLA Windows](images/controlpanel10-e.png){.thumbnail}
 
-Vous pouvez retrouver la page des tarifs [ici](https://www.ovhcloud.com/fr/managed-bare-metal/images-licenses/){.external}.
+Vous pouvez retrouver la page des tarifs [ici](https://www.ovhcloud.com/fr/managed-bare-metal/options/){.external}.
 
 
 ### Vue datacentre

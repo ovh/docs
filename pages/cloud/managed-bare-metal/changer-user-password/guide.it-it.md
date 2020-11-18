@@ -57,7 +57,7 @@ Nella nuova finestra, inserisci la password e confermala.
 
 ## Per saperne di più
 
-[Modificare i diritti di un utente](../change-users-rights/)
+[Modificare i diritti di un utente](../modificare-permessi-di-un-utente/)
 
 [Impostare e gestire la password di un account OVHcloud](https://docs.ovh.com/it/customer/gestire-la-password/)
 

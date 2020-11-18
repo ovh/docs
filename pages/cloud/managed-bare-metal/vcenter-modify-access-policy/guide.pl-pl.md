@@ -34,11 +34,11 @@ W oknie, które się wyświetli rozwiń menu i wybierz „Otwarta” lub "Ograni
 
 > [!primary]
 >
-> Jeśli wybierzesz politykę dostępu „Ograniczona", sprawdź przewodnik ["Autoryzacja IP, które mogą łączyć się z vCenter”](../autoriser-des-ip-a-se-connecter-au-vcenter/).
+> Jeśli wybierzesz politykę dostępu „Ograniczona", sprawdź przewodnik ["Autoryzacja IP, które mogą łączyć się z vCenter”](../autoryzacja-IP-ktore-moga-laczyc-sie-z-vCenter/).
 > 
 
 ## Sprawdź również
 
 [Autoryzacja IP, które mogą łączyć się z vCenter](../autoryzacja-IP-ktore-moga-laczyc-sie-z-vCenter/)
 
-Przyłącz się do społeczności naszych użytkowników na stronie [ https://community.ovh.com/en/](https://community.ovh.com/){.external}
+Przyłącz się do społeczności naszych użytkowników na stronie [ https://community.ovh.com/en/](https://community.ovh.com/en/){.external}

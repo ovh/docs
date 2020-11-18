@@ -41,13 +41,11 @@ Choisissez le niveau de l'offre de sauvegarde puis continuez en cliquant sur `Ch
 
 Validez les contrats en cliquant sur `Activer le backup`{.action}.
 
-Une notification vous confirme la demande d'activation :
-
-![Activer le backup](images/backuppcc_02_fr.png){.thumbnail}
+Une notification vous confirme la demande d'activation.
 
 Une fois l'option installée, un e-mail de confirmation vous est envoyé et l'activation de la sauvegarde vous sera indiqué dans l'espace client, avec le rappel du niveau de l'offre choisi.
 
-![Activer le backup](images/backuppcc_03_fr.png){.thumbnail}
+![Activer le backup](images/backuppcc_03_en.png){.thumbnail}
 
 Le service est dès lors utilisable directement depuis vSphere.
 
