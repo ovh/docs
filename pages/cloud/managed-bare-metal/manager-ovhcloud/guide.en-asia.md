@@ -173,7 +173,7 @@ This tab allows you to activate Windows SPLA licences for your data centre by cl
 
 ![Windows SPLA Licence](images/controlpanel10-e.png){.thumbnail}
 
-You can find more information on the [pricing page](https://www.ovhcloud.com/asia/managed-bare-metal/images-licenses/).
+You can find more information on the [pricing page](https://www.ovhcloud.com/asia/managed-bare-metal/options/).
 
 
 ### Data centre view 

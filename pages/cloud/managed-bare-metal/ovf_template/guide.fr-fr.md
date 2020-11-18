@@ -20,7 +20,7 @@ Les VM Windows déployées à partir d'un template utilisent automatiquement les
 
 > [!primary]
 > 
-> Retrouvez sur cette [page](https://www.ovhcloud.com/fr/managed-bare-metal/images-licenses/){.external} les tarifs des images proposées par OVHcloud.
+> Retrouvez sur cette [page](https://www.ovhcloud.com/fr/managed-bare-metal/options/){.external} les tarifs des images proposées par OVHcloud.
 >
 
 ## Prérequis

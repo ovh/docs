@@ -17,7 +17,7 @@ OVH oferuje szablony Windows i SQL Server (w formacie OVF), które możesz wdro�
 
 > [!primary]
 > 
-> Ceny obrazów systemów oferowanych przez OVHcloud znajdziesz na [stronie WWW](https://www.ovhcloud.com/pl/managed-bare-metal/obrazy-licencje.xml){.external}.
+> Ceny obrazów systemów oferowanych przez OVHcloud znajdziesz na [stronie WWW](https://www.ovhcloud.com/pl/managed-bare-metal/options/){.external}.
 >
 
 ## Wymagania początkowe

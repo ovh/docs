@@ -48,7 +48,7 @@ Indique la localización del almacenamiento (espacio en disco) de esta MV.
 
 El formato de disco virtual es de tipo «Thin Provision»: se creará un disco virtual, pero solo utilizará el espacio en disco usado realmente en el almacenamiento, independientemente del espacio en disco que se haya utilizado anteriormente en la MV de origen.
 
-Para más información, consulte esta [guía](../choosing-disk-type/).
+Para más información, consulte esta [guía](../elegir-un-formato-de-disco/).
 
 A través de `VM Storage Policy`, podrá elegir la política de almacenamiento predefinida si dispone de datastores, o la opción [VM Encryption](../vm-encrypt/).
 

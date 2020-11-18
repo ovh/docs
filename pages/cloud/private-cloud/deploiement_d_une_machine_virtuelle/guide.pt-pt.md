@@ -31,7 +31,7 @@ Clique com o botão direito do rato no cluster à sua escolha e clique em `New V
 
 Tem várias possibilidades no momento de criação de uma máquina virtual:
 
-- A criação a partir de um ISO, que estará no seu datastore e que poderá ter importado seguindo [o manual de ligação em SFTP](../connexion-en-sftp/)
+- A criação a partir de um ISO, que estará no seu datastore e que poderá ter importado seguindo [o manual de ligação em SFTP](../ligacao_por_sftp/)
 - Também é possível implementar uma máquina virtual a partir de um template seu ou de um [template OVHcloud](../deploiement-template-ovh/)
 - Pode clonar uma máquina virtual já existente (tenha em conta o risco de conflito de endereços IP).
 - É possível clonar uma máquina virtual em template, para uma implementação mais rápida das suas próximas máquinas virtuais.

@@ -92,7 +92,7 @@ W razie usterki magazynu danych ze statusem APD (All Path Down) możesz określi
 
 ##### Monitoring maszyn wirtualnych
 
-Monitoring maszyn wirtualnych jest dostępny po zainstalowaniu narzędzia [VMware tools](../instalacja_vmware_tools/).
+Monitoring maszyn wirtualnych jest dostępny po zainstalowaniu narzędzia [VMware tools](https://docs.ovh.com/gb/en/managed-bare-metal/install_vmware_tools/).
 W razie braku reakcji ze strony **tools** (zapytania o dostępność) maszyna wirtualna zostanie automatycznie zrestartowana. Możliwa jest zaawansowana konfiguracja tej funkcji (np. odstępów czasu restartu).
 
 ![Surveillande de VM](images/HAparam5.PNG){.thumbnail}

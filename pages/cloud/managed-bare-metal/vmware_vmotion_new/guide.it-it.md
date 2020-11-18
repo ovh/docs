@@ -28,7 +28,7 @@ Per migrare i file di una macchina virtuale verso un’altra risorsa, è suffici
 
 Il menu propone diverse opzioni di vMotion. Nel nostro esempio, migreremo semplicemente la macchina virtuale su un altro host. Per eseguire questa operazione è necessario selezionare “Change compute resource only”.
 
-L’opzione “Change storage only” permette invece di migrare la VM su un altro datastore. Questa operazione, chiamata **Storage vMotion**, è descritta in [questa guida](../vmware-storage-vmotion-new/).
+L’opzione “Change storage only” permette invece di migrare la VM su un altro datastore. Questa operazione, chiamata **Storage vMotion**, è descritta in [questa guida](../vmware_storage_vmotion/).
 
 ![Scelta del tipo di vMotion](images/Vmotion2.png){.thumbnail}
 

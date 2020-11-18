@@ -34,7 +34,7 @@ Il primo vDS dispone di un solo tipo di *portaGroup*, il VMnetwork che permette 
 
 Il secondo vDS dispone anche di un solo tipo di *portaGroup*, delle VLAN che permettono di isolare comunicazioni private all'interno del Managed Bare Metal e tra i diversi servizi OVHcloud compatibili con la vRack (server dedicato, Public Cloud...). 
 
-Su questo switch, vengono create 11 VLAN (da VLAN10 a VLAN20). Dando il diritto di `amministratore` sull' `Accesso al V(x)LAN` nella gestione [degli utenti del tuo Spazio Cliente](../manager-ovh-private-cloud/#utenti){.external-link}, potrai creare VLAN supplementari.
+Su questo switch, vengono create 11 VLAN (da VLAN10 a VLAN20). Dando il diritto di `amministratore` sull' `Accesso al V(x)LAN` nella gestione [degli utenti del tuo Spazio Cliente](../manager-ovhcloud/#utenti), potrai creare VLAN supplementari.
 
 Per prima cosa accedi alla vista di `network` del tuo client vSphere. Implementa la cartella **vrack**, clicca con il tasto destro sul **dVS** che termina con *-vrack* e infine clicca su `New Distributed Port Group `{.action}.
 

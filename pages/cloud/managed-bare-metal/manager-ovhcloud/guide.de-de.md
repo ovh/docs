@@ -182,7 +182,7 @@ Im Tab `Windows-Lizenz`{.action} können Sie Windows-SPLA-Lizenzen auf Ihrer Man
 
 ![Windows-SPLA-Lizenz](images/controlpanel10-e.png){.thumbnail}
 
-Die Preisübersicht hierzu finden Sie [hier](https://www.ovhcloud.com/de/managed-bare-metal/images-licenses/){.external}.
+Die Preisübersicht hierzu finden Sie [hier](https://www.ovhcloud.com/de/managed-bare-metal/options/){.external}.
 
 
 

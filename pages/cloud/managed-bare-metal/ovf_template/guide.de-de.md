@@ -24,7 +24,7 @@ Windows VMs, die von einem Template aus eingerichtet werden, verwenden automatis
 
 > [!primary]
 > 
-> Auf dieser Seite [finden](https://www.ovhcloud.com/de/managed-bare-metal/images-licenses/) Sie die Preise der von OVHcloud angebotenen Images.
+> Auf dieser Seite [finden](https://www.ovhcloud.com/de/managed-bare-metal/options/) Sie die Preise der von OVHcloud angebotenen Images.
 >
 
 ## Voraussetzungen

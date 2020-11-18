@@ -21,7 +21,7 @@ Impostare restrizioni di accesso al vCenter consente di limitare la connessione 
 
 ## Procedura
 
-Se la [politica di accesso al vCenter è configurata come limitata](../modify-vcenter-access-policy/), è necessario aggiungere gli IP che saranno autorizzati a connettersi al servizio.
+Se la [politica di accesso al vCenter è configurata come limitata](../modificare-la-politica-di-accesso-al-vcenter/), è necessario aggiungere gli IP che saranno autorizzati a connettersi al servizio.
 
 Questa operazione può essere effettuata dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external-link}: nella sezione `Bare Metal Cloud`, clicca su `Managed Bare Metal` nella colonna a sinistra. Seleziona l’infrastruttura, clicca sulla scheda `Sicurezza` e poi su `Aggiungi una nuova classe di indirizzi IP`{.action}.
 

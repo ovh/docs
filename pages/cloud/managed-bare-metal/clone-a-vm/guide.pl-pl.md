@@ -50,7 +50,7 @@ Format dysku wirtualnego w tym przypadku to "Thin Provision", co oznacza, że wi
 
 Więcej informacji o rodzajach formatów dysków znajdziesz w [tym przewodniku](../jaki-format-dysku-wybrac/).
 
-Za pomocą linii `VM Storage Policy` będziesz mógł wybrać domyślną politykę przechowywania danych w przypadku datastore lub opcji [VM encryption](../vm-encrypt/){.external-link}.
+Za pomocą linii `VM Storage Policy` będziesz mógł wybrać domyślną politykę przechowywania danych w przypadku datastore lub opcji [VM encryption](../szyfrowanie-vm/).
 
 ![Storage wirtualnej maszyny](images/clonevm04.png){.thumbnail}
 
