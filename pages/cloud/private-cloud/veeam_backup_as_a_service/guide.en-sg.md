@@ -5,7 +5,7 @@ excerpt: Find out how to enable and use the Veeam Managed Backup option to secur
 section: 'OVHcloud services and options'
 ---
 
-**Last updated 6th November 2020**
+**Last updated 18th November 2020**
 
 ## Objective
 
@@ -31,7 +31,7 @@ Backups are performed using a virtual machine (VM) within your [Hosted Private C
 
 The first step is to order the service from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager). To do this, go to the `Hosted Private Cloud`{.action} section of the `Hosted Private Cloud`{.action} tab. Click on the relevant vSphere infrastructure, then select the data centre. Click on the `Backup`{.action} tab.
 
-![Enable backup](images/backuppcc_01_en.png){.thumbnail}
+![Enable backup](images/veeam-managed-controlp_new.png){.thumbnail}
 
 Choose the appropriate plan and continue by clicking `Choose solution`{.action}.
 
