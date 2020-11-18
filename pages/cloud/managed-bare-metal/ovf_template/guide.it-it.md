@@ -11,7 +11,7 @@ section: 'Servizi e opzioni OVHcloud'
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 05/11/2020**
+**Ultimo aggiornamento: 18/11/2020**
 
 ## Obiettivo
 
@@ -29,7 +29,7 @@ Le VM Windows implementate a partire da un template utilizzano automaticamente l
 ## Prerequisiti
 
 - Avere accesso al client Web (HTML5)
-- [Avere attivato le licenze di Windows](../spazio-cliente-private-cloud-ovh/#licenze-windows){.external} dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} (scheda `Licenza Windows`{.action} del datacenter) 
+- [Avere attivato le licenze di Windows](../manager-ovhcloud/#licenze-windows){.external} dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} (scheda `Licenza Windows`{.action} del datacenter) 
 
 
 ## Procedura

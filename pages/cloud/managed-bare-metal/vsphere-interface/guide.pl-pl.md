@@ -7,7 +7,7 @@ excerpt: Odkryj różne sposoby łączenia się z vSphere
 section: Pierwsze kroki
 ---
 
-**Ostatnia aktualizacja dnia 2018-01-12**
+**Ostatnia aktualizacja dnia 18-11-2020**
 
 ## Wprowadzenie
 

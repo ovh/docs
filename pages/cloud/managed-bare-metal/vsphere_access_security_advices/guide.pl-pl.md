@@ -7,7 +7,7 @@ excerpt: 'Dowiedz się, jak zabezpieczyć dostęp do klienta vSphere'
 section: 'Pierwsze kroki'
 ---
 
-**Ostatnia aktualizacja dnia 2018-04-06**
+**Ostatnia aktualizacja dnia 18-11-2020**
 
 ## Wprowadzenie
 

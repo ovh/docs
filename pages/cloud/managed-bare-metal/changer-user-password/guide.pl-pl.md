@@ -7,7 +7,7 @@ excerpt: Dowiedz się, jak zmienić hasło użytkownika klienta vSphere w Panelu
 section: Funkcjonalności OVHcloud
 ---
 
-**Ostatnia aktualizacja z dnia 05-11-2020**
+**Ostatnia aktualizacja z dnia 18-11-2020**
  
 ## Wprowadzenie
 

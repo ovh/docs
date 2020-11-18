@@ -7,7 +7,7 @@ excerpt: 'This guide will show you how to assign a public or private IP address 
 section: 'Getting started'
 ---
 
-**Last updated 5th November 2020**
+**Last updated 18th November 2020**
 
 ## Objective
 

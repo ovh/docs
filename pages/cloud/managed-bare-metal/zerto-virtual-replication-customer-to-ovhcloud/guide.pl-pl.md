@@ -7,7 +7,7 @@ excerpt: 'Dowiedz się, jak skonfigurować tunel VPN w celu połączenia lokalne
 section: 'Usługi i opcje OVHcloud'
 ---
 
-**Ostatnia aktualizacja z dnia 05-11-2020**
+**Ostatnia aktualizacja z dnia 18-11-2020**
 
 ## Wprowadzenie:
 Ten przewodnik ma na celu pomóc w skonfigurowaniu wirtualnej sieci prywatnej (VPN) w celu połączenia platformy lokalnej z infrastrukturą Managed Bare Metal OVHcloud i wdrożeniu rozwiązania do odzyskiwania danych po awarii

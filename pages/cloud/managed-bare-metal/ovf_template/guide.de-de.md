@@ -12,7 +12,7 @@ order: 02
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Stand 05.11.2020**
+**Stand 18.11.2020**
 
 ## Ziel
 
@@ -30,7 +30,7 @@ Windows VMs, die von einem Template aus eingerichtet werden, verwenden automatis
 ## Voraussetzungen
 
 - Sie haben Zugriff auf den Web Client (HTML5).
-- [Sie haben die Windows Lizenzen](../manager-ovh-private-cloud/#windows-lizenz) über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager)  aktiviert.
+- [Sie haben die Windows Lizenzen](../manager-ovhcloud/#windows-lizenz) über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager)  aktiviert.
 
 
 ## In der praktischen Anwendung

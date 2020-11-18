@@ -9,7 +9,7 @@ section: Funzionalità OVHcloud
 order: 04
 ---
 
-**Ultimo aggiornamento: 05/11/2020**
+**Ultimo aggiornamento: 18/11/2020**
 
 ## Prerequisiti
 

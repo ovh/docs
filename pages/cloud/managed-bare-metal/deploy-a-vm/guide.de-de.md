@@ -8,7 +8,7 @@ section: Verwaltung virtueller Maschinen
 order: 0
 ---
 
-**Stand 05.11.2020**
+**Stand 18.11.2020**
 
 ## Einleitung
 
@@ -34,7 +34,7 @@ Klicken Sie mit der rechten Maustaste auf den Cluster Ihrer Wahl und dann auf `N
 Sie haben mehrere Optionen, um eine virtuelle Maschine zu erstellen:
 
 - per ISO-Datei, verfügbar in Ihrem Datastore (um die Datei zu importieren, befolgen Sie die [Anleitung zur Verbindung via SFTP](../verbindung_per_sftp/)
-- über ein eigenes oder ein [von OVHcloud bereitgestelltes](https://docs.ovh.com/gb/en/managed-bare-metal/deploy-ovh-template/) Template
+- über ein eigenes oder ein [von OVHcloud bereitgestelltes](../ovhcloud-template-deployment/) Template
 - durch Klonen einer bereits vorhandenen virtuellen Maschine (achten Sie darauf, mögliche Konflikte in der IP-Adressierung zu vermeiden)
 - durch Klonen einer virtuellen Maschine als Template, für ein schnelleres Deployment der nächsten virtuellen Maschinen
 - Klonen eines Templates als ein anderes Template, um das Template beispielsweise auf verschiedenen Datastores abzulegen und Leistungseinbußen bei umfangreicheren Deployments zu vermeiden

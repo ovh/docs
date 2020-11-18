@@ -7,7 +7,7 @@ slug: e-mail-mit-nutzerprofil-verbinden
 section: OVHcloud Funktionen
 ---
 
-**Letzte Aktualisierung am 05.11.2020**
+**Letzte Aktualisierung am 18.11.2020**
 
 ## Ziel
 

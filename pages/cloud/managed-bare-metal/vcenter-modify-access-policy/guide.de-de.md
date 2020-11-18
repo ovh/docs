@@ -7,7 +7,7 @@ excerpt: Sehen Sie hier, wie Sie die Zugriffsregeln für das vCenter ändern kö
 section: OVHcloud Funktionen
 ---
 
-**Stand 05.11.2020**
+**Stand 18.11.2020**
 
 ## Einleitung
 

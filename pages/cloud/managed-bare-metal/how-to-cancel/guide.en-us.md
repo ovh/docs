@@ -8,7 +8,7 @@ section: OVHcloud Features
 order: 09
 ---
 
-**Last updated 5th November 2020**
+**Last updated 18th November 2020**
 
 ## Objective
 
@@ -64,7 +64,7 @@ The email contains a clickable link that will allow you to confirm the terminati
 
 > [!primary]
 >
-> Please note that this link is valid for **72 hours**. We therefore advise you to make your request for termination from the 25th of the month.
+> Please note that this link is valid for **72 hours**. We therefore advise you to make your request for termination from the 218th of the month.
 >
 
 You can also validate the termination request through the following OVHcloud API:

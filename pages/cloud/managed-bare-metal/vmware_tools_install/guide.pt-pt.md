@@ -7,7 +7,7 @@ slug: instalar_o_pacote_vmware_tools
 section: Gestão das máquinas virtuais
 ---
 
-**Última atualização: 05/11/2020**
+**Última atualização: 18/11/2020**
 
 ## Sumário
 

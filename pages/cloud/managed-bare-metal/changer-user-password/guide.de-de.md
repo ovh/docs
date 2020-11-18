@@ -7,7 +7,7 @@ excerpt: Erfahren Sie, wie Sie das Passwort eines Nutzers des vSphere Clients in
 section: OVHcloud Funktionen
 ---
 
-**Letztes Update: 05.11.2020**
+**Letztes Update: 18.11.2020**
  
 ## Einleitung
 

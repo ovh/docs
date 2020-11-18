@@ -7,7 +7,7 @@ slug: associate-email-with-vsphere-user
 section: OVHcloud Features
 ---
 
-**Last updated 5th November 2020**
+**Last updated 18th November 2020**
 
 ## Objective
 

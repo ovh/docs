@@ -8,7 +8,7 @@ section: Verwaltung virtueller Maschinen
 order: 07
 ---
 
-**Stand 05.11.2020**
+**Stand 18.11.2020**
 
 ## Einleitung
 

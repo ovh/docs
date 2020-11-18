@@ -7,7 +7,7 @@ excerpt: 'Découvrez comment paramétrer un tunnel VPN pour connecter votre plat
 section: 'Services et options OVHcloud'
 ---
 
-**Dernière mise à jour le 05/11/2020**
+**Dernière mise à jour le 18/11/2020**
 
 ## Objectif :
 Ce guide a pour objectif de vous aider à configurer le réseau privé virtuel (VPN) pour raccorder votre plateforme locale à votre Managed Bare Metal OVHcloud et mettre en œuvre la solution de reprise d’activité

@@ -8,7 +8,7 @@ section: 'Usługi i opcje OVHcloud'
 order: 1
 ---
 
-**Ostatnia aktualizacja z dnia 25-11-2019**
+**Ostatnia aktualizacja z dnia 18-11-2020**
 
 ## Wprowadzenie
 

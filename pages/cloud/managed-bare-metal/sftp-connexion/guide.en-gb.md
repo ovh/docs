@@ -7,7 +7,7 @@ excerpt: 'Find out how to log in to your Managed Bare Metal via SFTP'
 section: 'Getting started'
 ---
 
-**Last updated 5th November 2020**
+**Last updated 18th November 2020**
 
 ## Objective
 

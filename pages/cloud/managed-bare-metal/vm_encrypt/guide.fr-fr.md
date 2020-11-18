@@ -8,17 +8,17 @@ section: Fonctionnalités VMware vSphere
 order: 07
 ---
 
-**Dernière mise à jour le 05/11/2020**
+**Dernière mise à jour le 18/11/2020**
 
 ## Objectif
 
-Ce guide a pour objectif d'expliquer les détails de la mise en oeuvre de VM Encryption sur l'offre Private Cloud de OVHcloud, en employant une stratégie de stockage utilisant un serveur de clé (*Key Management Server* ou KMS) externe.
+Ce guide a pour objectif d'expliquer les détails de la mise en oeuvre de VM Encryption sur l'offre Managed Bare Metal de OVHcloud, en employant une stratégie de stockage utilisant un serveur de clé (*Key Management Server* ou KMS) externe.
 
 **Découvrez comment mettre en oeuvre le chiffrement de vos machines virtuelles avec VM Encryption.**
 
 ## Prérequis
 
-- Avoir souscrit une offre [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external}.
+- Avoir souscrit une offre [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/).
 - Disposer d'un serveur de clé (KMS) externe compatible **[KMIP](https://en.wikipedia.org/wiki/Key_Management_Interoperability_Protocol_(KMIP)){.external} 1.1** et dans la [matrice de compatibilité](https://www.vmware.com/resources/compatibility/search.php?deviceCategory=kms&details=1&feature=293&page=1&display_interval=500&sortColumn=Partner&sortOrder=Asc){.external} VMware.
 - Avoir accès à l’interface de gestion vSphere.
 - Posséder des machines virtuelles avec une version Hardware 13 (minimum).
@@ -52,7 +52,7 @@ Ici, il s'agit de la valeur à droite du signe égal :
 
 #### Via l'espace client OVHcloud
 
-Dans votre espace client, assurez-vous de vous situer dans la section `Bare Metal Cloud`. Cliquez sur `Private Cloud`{.action} dans la barre de services à gauche, puis sélectionnez le service Private Cloud concerné.
+Dans votre espace client, assurez-vous de vous situer dans la section `Bare Metal Cloud`. Cliquez sur `Managed Bare Metal`{.action} dans la barre de services à gauche, puis sélectionnez le service Managed Bare Metal concerné.
 
 Depuis la page principale du service, cliquez sur `Sécurité`{.action}.
 
@@ -123,7 +123,7 @@ Pour réaliser cette manipulation, munissez-vous des informations suivantes :
 
 #### Procédure
 
-Initiez la manipulation en vous connectant à votre Private Cloud avec le client web vSphere. Parcourez ensuite votre liste d'inventaire et sélectionnez le vCenter concerné. Positionnez-vous sur « Gérer », puis sur « Key Management Servers ». Cliquez sur `Ajouter KMS`{.action}, spécifiez les informations KMS dans l'assistant qui s'affiche, puis cliquez sur `Ok`{.action}.
+Initiez la manipulation en vous connectant à votre Managed Bare Metal avec le client web vSphere. Parcourez ensuite votre liste d'inventaire et sélectionnez le vCenter concerné. Positionnez-vous sur « Gérer », puis sur « Key Management Servers ». Cliquez sur `Ajouter KMS`{.action}, spécifiez les informations KMS dans l'assistant qui s'affiche, puis cliquez sur `Ok`{.action}.
 Validez le certificat en cliquant sur `Trust`{.action}.
 
 ![procédure ajout clé KMS](images/vm-encrypt_01.png){.thumbnail}

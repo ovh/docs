@@ -8,7 +8,7 @@ section: Fonctionnalités VMware vSphere
 order: 10
 ---
 
-**Dernière mise à jour le 5 novembre 2020**
+**Dernière mise à jour le 18 novembre 2020**
 
 ## Objectif
 

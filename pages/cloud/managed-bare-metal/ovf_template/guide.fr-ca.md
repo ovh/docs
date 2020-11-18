@@ -8,7 +8,7 @@ section: Gestion des machines virtuelles
 order: 02
 ---
 
-**Dernière mise à jour le 05/11/2020**
+**Dernière mise à jour le 18/11/2020**
 
 ## Objectif
 
@@ -26,7 +26,7 @@ Les VM Windows déployées à partir d'un template utilisent automatiquement les
 ## Prérequis
 
 - Avoir accès au client Web (HTML5)
-- [Avoir activé les licences Windows](../manager-ovh-private-cloud/#licence-windows){.external} depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- [Avoir activé les licences Windows](../manager-ovhcloud/#licence-windows) depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 
 ## En pratique

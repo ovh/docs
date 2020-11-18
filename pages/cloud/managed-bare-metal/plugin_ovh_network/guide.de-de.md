@@ -8,7 +8,7 @@ section: OVHcloud Funktionen
 order: 03
 ---
 
-**Stand 05.11.2020**
+**Stand 18.11.2020**
 
 ## Einleitung
 
