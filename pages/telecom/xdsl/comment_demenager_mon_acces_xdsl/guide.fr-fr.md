@@ -43,6 +43,7 @@ Cochez la case "Testez avec le numéro de téléphone correspondant à votre nou
 ![accès déménagement](images/move02-edit.png){.thumbnail}
 
 Suite à cette validation, un cadre apparaitra vous indiquant l'adresse associée à ce numéro.
+<br>Cliquez sur le bouton `Choisir cette ligne`{.action}
 > [!primary]
 > Dans de rare cas, une ligne peut apparaître active et inactive en même temps. Veillez à sélectionner la ligne correspondant à votre future adresse.
 >
