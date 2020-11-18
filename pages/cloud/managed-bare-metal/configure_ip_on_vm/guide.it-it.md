@@ -100,7 +100,7 @@ La configurazione di un IP privato è simile a quella di un IP pubblico. È tutt
 
 Nella scelta dell'interfaccia, potrai modificare questi parametri:
 
-- un'interfaccia VLAN (da 10 a 20 di default e legate alla vRack, potete crearne di più consultando [questa guida](../creation-vlan/)).
+- un'interfaccia VLAN (da 10 a 20 di default e legate alla vRack, potete crearne di più consultando [questa guida](../creazione-vlan/)).
 
 Nelle impostazioni della tua macchina virtuale, puoi utilizzare una VLAN :
 

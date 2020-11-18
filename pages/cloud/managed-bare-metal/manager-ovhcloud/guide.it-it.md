@@ -179,7 +179,7 @@ Dalla scheda `Licenza Windows`{.action} è possibile attivare sul tuo datacenter
 
 ![Licenza SPLA Windows](images/controlpanel10-e.png){.thumbnail}
 
-Per consultare le tariffe, [clicca qui](https://www.ovhcloud.com/it/managed-bare-metal/images-licenses/){.external}.
+Per consultare le tariffe, [clicca qui](https://www.ovhcloud.com/it/managed-bare-metal/options/){.external}.
 
 ### Panoramica dei datacenter
 

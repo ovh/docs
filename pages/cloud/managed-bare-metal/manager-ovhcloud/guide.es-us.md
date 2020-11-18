@@ -181,7 +181,7 @@ La pestaña `Licencia Windows`{.action} permite activar las licencias SPLA Windo
 
 ![Licencia SPLA Windows](images/controlpanel10-e.png){.thumbnail}
 
-Puede consultar las tarifas [aquí](https://www.ovhcloud.com/es/managed-bare-metal/images-licenses/){.external}.
+Puede consultar las tarifas [aquí](https://www.ovhcloud.com/es/managed-bare-metal/options/){.external}.
 
 
 

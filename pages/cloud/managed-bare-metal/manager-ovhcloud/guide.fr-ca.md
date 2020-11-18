@@ -181,7 +181,7 @@ L'onglet `Licence Windows`{.action} permet d'activer les licences SPLA Windows s
 
 ![Licence SPLA Windows](images/controlpanel10-e.png){.thumbnail}
 
-Vous pouvez retrouver la page des tarifs [ici](https://www.ovhcloud.com/fr-ca/managed-bare-metal/images-licenses/){.external}.
+Vous pouvez retrouver la page des tarifs [ici](https://www.ovhcloud.com/fr-ca/managed-bare-metal/options/){.external}.
 
 
 ### Vue datacentre
@@ -237,7 +237,7 @@ L'onglet de backup vous permet d'activer la solution `Veeam backup`.
 
 ![Backup](images/controlpanel14-e.png){.thumbnail}
 
-Pour plus d'informations sur cette option, vous pouvez consulter ce [guide](../veeam-backup-as-a-service/){.external}.
+Pour plus d'informations sur cette option, vous pouvez consulter ce [guide](https://docs.ovh.com/gb/en/managed-bare-metal/veeam-backup-as-a-service/).
 
 
 ## Aller plus loin

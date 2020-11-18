@@ -174,7 +174,7 @@ Karta `Licencja Windows`{.action} pozwala aktywować licencje SPLA Windows w Two
 
 ![Licence SPLA Windows](images/controlpanel10-e.png){.thumbnail}
 
-Cennik znajdziesz [tutaj](https://www.ovhcloud.com/pl/managed-bare-metal/images-licenses/){.external}.
+Cennik znajdziesz [tutaj](https://www.ovhcloud.com/pl/managed-bare-metal/options/){.external}.
 
 
 
@@ -231,7 +231,7 @@ Karta Backup umożliwia aktywację rozwiązania `Veeam Backup`.
 
 ![Backup](images/controlpanel14-e.png){.thumbnail}
 
-Więcej informacji na temat tego rozwiązania znajdziesz w tym [przewodniku](../veeam-backup-as-a-service/){.external}.
+Więcej informacji na temat tego rozwiązania znajdziesz w tym [przewodniku](https://docs.ovh.com/gb/en/managed-bare-metal/veeam-backup-as-a-service/).
 
 
 ## Sprawdź również

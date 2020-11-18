@@ -98,7 +98,7 @@ DNS Server: 213.186.33.99
 
 Die Konfiguration einer privaten IP-Adresse entspricht der einer öffentlichen IP-Adresse. Verwenden Sie jedoch die für Ihr VLAN konfigurierte Netzwerkkarte.
 
-In den Adapter-Einstellungen können Sie VLAN konfigurieren (standardmäßig 10 bis 20 und mit vRack verbunden. Sie können mehr erstellen, indem Sie dieser [Anleitung](../creation-vlan) folgen.)
+In den Adapter-Einstellungen können Sie VLAN konfigurieren (standardmäßig 10 bis 20 und mit vRack verbunden. Sie können mehr erstellen, indem Sie dieser [Anleitung](../vlan-erstellung/) folgen.)
 
 In den Einstellungen Ihrer virtuellen Maschine können Sie ein VLAN auswählen:
 
