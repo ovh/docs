@@ -34,7 +34,7 @@ Dokument VMware zawiera spis portów, które należy otworzyć w zaporze sieciow
 
 Najpierw należy pobrać plik instalacyjny oprogramowania vSphere Client. W e-mailu otrzymanym podczas tworzenia konta użytkownika znajduje się link.
 
-Można go również pobrać pod adresem: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/client/VMware-viclient.exe>.
+Można go również pobrać pod adresem: `https://pcc-xxx-xxx-xxx-xxx.ovh.com/client/VMware-viclient.exe`.
 
 Pobrany plik należy następnie uruchomić. Rozpocznie się instalacja. Asystent instalacji poprosi najpierw o wybranie języka i zaakceptowanie warunków korzystania z oprogramowania VMware.
 
@@ -44,7 +44,7 @@ Po zakończeniu instalacji asystent zaproponuje logowanie do usługi Managed Bar
 
 ### Połączenie za pomocą klienta webowego
 
-Klient webowy jest dostępny w ramach Twojej usługi Managed Bare Metal pod adresem: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> (zastąp pcc-xxx-xx-xx-xxx.ovh.com adresem Twojej Managed Bare Metal).
+Klient webowy jest dostępny w ramach Twojej usługi Managed Bare Metal pod adresem: `https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client` (zastąp pcc-xxx-xx-xx-xxx.ovh.com adresem Twojej Managed Bare Metal).
 
 Zaloguj się wykorzystując otrzymane dane do logowania:
 

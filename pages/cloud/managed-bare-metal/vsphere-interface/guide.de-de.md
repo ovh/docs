@@ -34,7 +34,7 @@ Dieses Dokument von VMware führt die verschiedenen Ports auf, die Sie in Ihrer 
 
 ### Verwendung des Webclients HTML5
 
-Der Webclient HTML5 ist im Web-Interface Ihrer Managed Bare Metal unter der Adresse: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/ui> verfügbar (ersetzen Sie pcc-xxx-xx-xx-xxx.ovh.com durch die Adresse Ihrer Managed Bare Metal).
+Der Webclient HTML5 ist im Web-Interface Ihrer Managed Bare Metal unter der Adresse: `https://pcc-xxx-xxx-xxx-xxx.ovh.com/ui` verfügbar (ersetzen Sie pcc-xxx-xx-xx-xxx.ovh.com durch die Adresse Ihrer Managed Bare Metal).
 
 ![Verbindung mit dem Interface vSphere HTML5](images/connection_interface_w_html5.png){.thumbnail}
 
@@ -49,7 +49,7 @@ Auf der Seite `Home`{.action} finden Sie die wichtigsten Rubriken Ihres vCenters
 
 ### Verwendung von Webclient Flash 
 
-Der Webclient Flash ist im Web-Interface Ihrer Managed Bare Metal unter der Adresse: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> verfügbar (ersetzen Sie pcc-xxx-xx-xx-xxx.ovh.com durch die Adresse Ihrer Managed Bare Metal).
+Der Webclient Flash ist im Web-Interface Ihrer Managed Bare Metal unter der Adresse: `https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client` verfügbar (ersetzen Sie pcc-xxx-xx-xx-xxx.ovh.com durch die Adresse Ihrer Managed Bare Metal).
 
 Verbinden Sie sich mit den Zugangsdaten, die Sie erhalten haben:
 

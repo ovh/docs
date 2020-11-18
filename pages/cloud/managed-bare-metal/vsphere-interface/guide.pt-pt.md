@@ -33,7 +33,7 @@ Este documento da VMware especifica as diferentes portas que deve abrir na sua f
 
 ### Utilização do web client HTML5
 
-O web client HTML5 está disponível na interface web do seu Hosted Managed Bare Metal no endereço: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/ui> (substitua pcc-xxx-xx-xx-xxx.ovh.com pelo endereço do seu Hosted Managed Bare Metal).
+O web client HTML5 está disponível na interface web do seu Hosted Managed Bare Metal no endereço: `https://pcc-xxx-xxx-xxx-xxx.ovh.com/ui` (substitua pcc-xxx-xx-xx-xxx.ovh.com pelo endereço do seu Hosted Managed Bare Metal).
 
 ![Ligação à interface vSphere HTML5](images/connection_interface_w_html5.png){.thumbnail}
 
@@ -48,7 +48,7 @@ A página `Home`{.action} permite consultar os grandes menus do seu vCenter. Pod
 
 ### Utilização do web client flash
 
-O web client flash está disponível na interface web do seu Hosted Managed Bare Metal no endereço: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> (substitua pcc-xxx-xx-xx-xxx.ovh.com pelo endereço do seu Hosted Managed Bare Metal).
+O web client flash está disponível na interface web do seu Hosted Managed Bare Metal no endereço: `https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client` (substitua pcc-xxx-xx-xx-xxx.ovh.com pelo endereço do seu Hosted Managed Bare Metal).
 
 Ligue-se com as credenciais que recebeu:
 

@@ -144,7 +144,7 @@ vconnect()
 
 ##### OS
 
-This example uses a VM installed with Ubuntu 18.04, deployed from [templates available for your Managed Bare Metal infrastructure](../deploy-ovh-template/).
+This example uses a VM installed with Ubuntu 18.04, deployed from [templates available for your Managed Bare Metal infrastructure](../applying-ovhcloud-template/).
 
 
 ##### Requirements

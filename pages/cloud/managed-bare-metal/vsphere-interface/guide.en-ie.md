@@ -35,7 +35,7 @@ To ensure access, please refer to the VMware documentation, in which the differe
 
 ### Using the HTML5 web client
 
-The HTML5 web client is available on the Managed Bare Metal web interface at this URL: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/ui> (replace pcc-xxx-xxx-xxx-xxx.ovh.com with your Managed Bare Metal address).
+The HTML5 web client is available on the Managed Bare Metal web interface at this URL: `https://pcc-xxx-xxx-xxx-xxx.ovh.com/ui` (replace pcc-xxx-xxx-xxx-xxx.ovh.com with your Managed Bare Metal address).
 
 ![Connecting to vSphere HTML5](images/connection_interface_w_html5.png){.thumbnail}
 
@@ -50,7 +50,7 @@ The `Home`{.action} page provides accces to the main menus of your vCenter. You 
 
 ### Using the Flash web client
 
-The Flash web client is available on the Managed Bare Metal web interface at this URL: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> (replace pcc-xxx-xxx-xxx-xxx.ovh.com with your Managed Bare Metal address).
+The Flash web client is available on the Managed Bare Metal web interface at this URL: `https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client` (replace pcc-xxx-xxx-xxx-xxx.ovh.com with your Managed Bare Metal address).
 
 Log in using the credentials that were sent to you:
 
