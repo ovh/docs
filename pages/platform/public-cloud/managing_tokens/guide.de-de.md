@@ -1,172 +1,170 @@
 ---
 title: Token-Verwaltung
-excerpt: Token-Verwaltung
+excerpt: 'Erfahren Sie hier, wie Sie Token über die Keystone API verwenden'
 slug: token-verwaltung
 legacy_guide_number: g1872
 section: 'OpenStack'
 ---
 
-## 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
-## Achtung!
-Alle Angaben in dieser Hilfe beziehen sich auf Version 3.0 der Keystone API.
+**Letzte Aktualisierung am 16.04.2020**
 
+## Ziel
 
-## Definitionen
+**Diese Anleitung erklärt, wie Sie API-Verbindungen zu Ihrem Dienst mittels Token einrichten.**
 
-- Endpoint: HTTP-Adresse, die direkt auf die API eines Service zeigt, wie etwa https://auth.cloud.ovh.net/v2.0 für den Authentifizierungs-Endpoint oder https://image.compute.gra1.cloud.ovh.net/ für den Endpoint zur Image-Verwaltung der Zone GRA1.
+> [!primary]
+>
+> Die hier aufgeführten Informationen gelten für die Keystone API Version 3.0.
+> 
 
-- Token: Einmalige Zeichenkette für Authentifizierung und Zugriffsrechte. Ein Token wird vom Benutzer unter Angabe seiner Login-Daten über die Authentifizierungs-API angefordert. Das Token wird erstellt und ist dann 24 Stunden lang gültig. Ein Token kann "scoped" oder "unscoped" sein, also entweder an einen bestimmten Tenant gebunden oder eben nicht.
+## In der praktischen Anwendung 
 
+### Definitionen
 
+- Endpoint: HTTP-Adresse, die direkt auf eine API eines Dienstes verweist, zum Beispiel [https://auth.cloud.ovh.net/v3/](https://auth.cloud.ovh.net/v3/) für den Authentifizierungsendpoint, oder [https://image.compute.gra1.cloud.ovh.net/](https://image.compute.gra1.cloud.ovh.net/) für den Endpoint zur Verwaltung der Images der GRA1 Zone. 
 
-
-## Kurzüberblick
-Der Großteil der Anfragen an die OpenStack APIs muss über einen Authentifizierungs-Prozess ablaufen. Dies funktioniert über die Erstellung von Tokens und deren Validierung.
-
-Im Kurzüberblick läuft der gesamte Prozess folgendermaßen ab:
-
-- Anfrage zu Erstellung eines Tokens über den Authentifizierungs-Endpoint mithilfe der Login-Daten:
-- Anfrage an den Endpoint des gewünschten Service (Storage, Compute, Network, ...) unter Verwendung des zuvor erstellten Tokens:
-- die API des betreffenden Service ruft das Token ab und fordert die Validierung durch den Authentifizierungs-Service an;
-- wenn die Gültigkeit des Tokens bestätigt wurde, wird der Befehl ausgeführt.
+- Token: Einzigartige Zeichenkette zum Zweck der Authentifizierung und des Ressourcenzugriffs. Der Benutzer fragt ein Token an, indem er seine Login-Informationen an die API zur Authentifizierung liefert. Es wird mit einer begrenzten Gültigkeitsdauer von 24 Stunden generiert und geliefert. Ein Token kann "scoped" oder "unscoped" sein, d.h. er kann direkt an einen Tenant gebunden sein oder an keinen Tenant gebunden sein.
 
 
-Die Tokens haben jeweils nur eine begrenzte Gültigkeitsdauer; nach Ablauf muss entsprechend ein neues Token erstellt werden.
+### Struktur einer Anfrage
 
-Ebenso können Sie ein nicht benötigtes Token über die API selbst ungültig machen.
+Die meisten Anfragen an die OpenStack-API müssen einem Autorisierungsmechanismus folgen. Dieser Mechanismus funktioniert über das Erstellen eines Tokens und dessen Validierung. Hier ein beispielhafter Ablauf einer Anfrage von der Authentifizierung bis zum Abschluss:
 
-Weitere Informationen finden Sie auch in der Dokumentation zur [OpenStack API](http://docs.openstack.org/api/quick-start/content/) und zum [Authentifizierungs-Mechanismus](http://docs.openstack.org/kilo/install-guide/install/apt/content/keystone-concepts.html).
+- Anfrage zur Erstellung eines Tokens beim Authentifizierungsendpoint mit den Logindaten.
+- Anfrage zum Endpoint des gewünschten Dienstes (Storage, Compute, Network, ...) durch Bereitstellung des Tokens als Parameter.
+- Die API des Dienstes holt den Token ab und bittet den Authentifizierungsdienst um Überprüfung der Gültigkeit.
+- Falls gültig, wird der Aufruf ausgeführt.
 
+Da die Token eine festgelegte Gültigkeitsdauer haben, laufen sie aus und müssen bei Bedarf verlängert werden.
 
-## 
-Die folgenden Operationen können manuell ausgeführt werden und werden meist zu pädagogischen Zwecken oder zum Debugging eingesetzt.
+Sollte ein Token vor seinem Ablaufdatum widerrufen werden müssen, kann dies auch über die API erfolgen.
 
-Sie müssen zunächst die Umgebung mithilfe der OpenRC-Datei laden.
-
-In unserem Beispiel möchten wir die Metadaten-Informationen eines auf unserem Public Cloud Storage-Angebot gespeicherten Objekts abrufen. Hierfür sind folgende Schritte erforderlich:
-
-
-- Anfrage zur Token-Erstellung;
-- Abruf von Token-ID und publicURL Endpoint;
-- Anfrage zum Objekt unter Verwendung der abgerufenen Informationen.
+Weitere Informationen finden Sie in der [Dokumentation der OpenStack API](https://docs.openstack.org/keystone/train/api_curl_examples.html){.external}.
 
 
-Alle Anfragen können über das Kommandozeilen-Programm cURL erstellt werden.
+### Manuelle Operationen
+
+Die folgenden Operationen können manuell durchgeführt werden und werden in der Regel zu Lehr- oder Debugzwecken verwendet.
+
+Die Umgebung muss mit der OpenStack RC Datei vorbereitet werden.
+
+In unserem Beispiel möchten wir die Metadaten eines Objekts erhalten, das mithilfe des Public Cloud Storage Angebots gespeichert wurde. Die Schritte sind:
+
+- Anfrage zur Erstellung eines Tokens
+- Abruf der Token-ID-Variablen und der öffentlichen Endpoint-URL
+- Anfrage über das Objekt mit den abgerufenen Informationen
+
+Mit dem Befehlszeilentool cURL können alle Anfragen zusammengebaut werden.
 
 
-## Anfrage zur Token-Erstellung
+#### Schritt 1: Anfrage zur Erstellung eines Tokens
 
+```bash
+curl -X POST ${OS_AUTH_URL} auth/tokens -H "content-type: application/json" -d ' { "auth": {"identity": {"methods: ["password"], "password": {"user": {"name": "$OS_USERNAME'", "domain": {"id: "default" }, "password": "$OS_PASSWORD'" }, "scope": { "project": {"name": "'$OS_TENANT_NAME'", "domain": {"id: "default" } } } " | python -mjson.tool
 ```
-$ curl -X POST $OS_AUTH_URL/tokens -H "Content-Type: application/json" -d '{"auth": {"tenantName": "'$OS_TENANT_NAME'", "passwordCredentials": {"username": "'$OS_USERNAME'", "password": "'$OS_PASSWORD'"}}}' | python -mjson.tool
-```
+
+Die Antwort des Servers sieht so aus:
 
 
-
-- -X POST: HTTP-Methode zur Übermittlung der Daten
-
-- $OS_AUTH_URL/tokens: Aktionen für Tokens
-
-- -H "Content-Type: application/json": Ausgabeformat in JSON
-
-- -d '{"auth": {"tenantName": "'$OS_TENANT_NAME'", "passwordCredentials": {"username": "'$OS_USERNAME'", "password": "'$OS_PASSWORD'"}}}': Anfrage, m. a. W. die Authentifizierungs-Informationen
-
-- python -mjson.tool: Python-Tool zur Anzeige der Ausgabe in lesbarem Format
-
-
-Die Server-Antwort sieht dann etwa folgendermaßen aus:
-
-
-```
-{
-"access": {
-"metadata": {
-"is_admin": 0,
-"roles": [
-"9fe...fd4"
-]
-},
-"serviceCatalog": [
-[...]
-{
-"endpoints": [
-{
-"adminURL": "https://image.compute.sbg1.cloud.ovh.net/",
-"internalURL": "http://127.0.0.1:8888/v1/AUTH_9ea...ff0",
-"publicURL": "https://storage.sbg1.cloud.ovh.net/v1/AUTH_9ea...ff0",
-"region": "SBG1"
+```json
+ {
+  "token": {
+    "is_domain": false,
+    "methods": [
+      "password"
+    ],
+    "roles": [
+      {
+        "id": "9543e89aeb484aee8ec7d01e87223b16",
+        "name": "objectstore_operator"
+      }
+    ],
+    "is_admin_project": false,
+    "project": {
+      "domain": {
+        "id": "default",
+        "name": "Default"
+      },
+      "id": "<ID OF THE PROJECT>",
+      "name": "<NAME OF THE PROJECT>"
+    },
+    "catalog": [
+      {
+        "endpoints": [
+          {
+            "url": "https://network.compute.sbg1.cloud.ovh.net/",
+            "interface": "internal",
+            "region": "SBG1",
+            "region_id": "SBG1",
+            "id": "075839111e7a41f1bb458926e5f04cec"
+          },
+          [...]
+        ],
+        "type": "network",
+        "id": "0be6ed3dce244b8295ff643739a86809",
+        "name": "neutron"
+      },
+      [...]
+    ],
+    "expires_at": "2020-01-17T14:53:32.000000Z",
+    "user": {
+      "password_expires_at": null,
+      "domain": {
+        "id": "default",
+        "name": "Default"
+      },
+      "id": "<ID OF THE USER>",
+      "name": "<NAME OF THE USER>"
+    },
+    "audit_ids": [
+      "IuNOR-lKQ9GJGQd8taWBnQ"
+    ],
+    "issued_at": "2020-01-16T14:53:32.000000Z"
+  }
 }
-],
-"endpoints_links": [],
-"name": "swift",
-"type": "object-store"
-},
-
-[...]
-],
-"token": {
-"audit_ids": [
-"Mka...cmTw"
-],
-"expires": "2015-10-02T14:53:15Z",
-"id": "a4331ec98754472032f031e18b16bd00",
-"issued_at": "2015-10-01T14:53:15.072501",
-"tenant": {
-"description": null,
-"enabled": true,
-"id": "9ea...ff0",
-"name": "361...868"
-}
-},
-
-[...]
-}
-}
 ```
 
 
+#### Schritt 2: Abrufen der Variablen "tokenID" und "endpoint publicURL"
+
+Beide Informationen sind in der Ausgabe des obigen Befehls enthalten.
+
+"publicURL" ist im Abschnitt "endpoints" und der entsprechenden "Region", hier "SBG", zu finden.
 
 
-## Abruf von Token-ID und publicURL Endpoint
-Beide Informationen finden Sie in der Ausgabe auf den vorangegangenen Befehl.
-
-Für den publicURL Endpoint müssen Sie im Abschnitt "object-store" und unter der passenden Region (hier "SBG1") nachschauen.
-
-
-```
-$ export endpoint="https://storage.sbg1.cloud.ovh.net/v1/AUTH_9ea...ff0"
-```
-
-
-Es handelt sich dabei um die Endpoint-Adresse zu dem Object Storage Service, mit der Sie Informationen zum Objekt abrufen können.
-
-
-```
-$ export token=a4331ec98754472032f031e18b16bd00
+```bash
+$ export endpoint="https://storage.sbg.cloud.ovh.net/v1/AUTH_9ea...ff0"
 ```
 
+Die Endpoint-Adresse des Object Storage-Dienstes ermöglicht es, die Informationen zum Objekt anzufordern.
 
-Dieses Token ist das Authentifizierungs-Element, das Sie für die Anfrage im nächsten Schritt benötigen.
 
-
-## Anfrage zum Objekt unter Verwendung der abgerufenen Informationen
-
-```
-$ curl -X GET $endpoint/photos/fullsize/ovh-summit-2014-backstage-DS.jpg -H "X-Auth-Token: $token" -I
+```bash
+export token=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type: application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD'" } } }, "scope": { "project": { "name": "'$OS_TENANT_NAME'", "domain": { "id": "default" } } } } }' | grep '^X-Subject-Token' | cut -d" " -f2)
 ```
 
+Dieser Token ist nun das Authentifizierungselement, das für die nächste Anfrage verwendet wird.
 
 
-- -X GET: HTTP-Methode GET
+#### Schritt 3: Objektanfrage mit den zuvor abgerufenen Informationen
+
+```bash
+curl -X GET $endpoint/photos/fullsize/ovh-summit-2014-backstage-DS.jpg -H "X-Auth-Token: $token" -I
+```
+
+- \-X GET: Methode HTTP GET
 - $endpoint/photos/fullsize/ovh-summit-2014-backstage-DS.jpg: Adresse des Objekts
-- -H "X-Auth-Token: $token": Authentifizierungs-Element
-- -I: Option curl, um nur die Metadaten abzurufen
+- \-H "X-Auth-Token: $token": Authentifizierungselement
+- \-I: cURL Option zum Abruf der Metadaten
+
+Die Antwort sieht so aus:
 
 
-Die Server-Antwort sieht dann etwa folgendermaßen aus:
-
-
-```
+```bash
 HTTP/1.1 200 OK
 Content-Length: 190046
 Content-Type: image/jpeg
@@ -181,68 +179,12 @@ Connection: close
 ```
 
 
+### Automatische Verwaltung
 
+Es wird empfohlen, Bibliotheken (Libraries) zu verwenden, die eine transparente Verwaltung von Token ermöglichen. Auf diese Weise werden die Token automatisch erstellt, verwendet und verlängert, ohne diese auf Anwendungsebene verwalten zu müssen, indem Sie lediglich der Bibliothek Logindaten bereitstellen.
 
-## 
-Die Verwendung von Programmbibliotheken wird für eine transparente Verwaltung Ihrer Tokens dringend empfohlen. Auf diese Art liefern Sie der Library lediglich die Verbindungsdaten und die Tokens werden automatisch erstellt und erneuert, ohne dass Sie sich auf Applikationsebene damit befassen müssen.
+Es gibt viele Bibliotheken in verschiedenen Sprachen. Für weitere Informationen überprüfen Sie die [offizielle Liste](https://wiki.openstack.org/wiki/SDKs){.external}.
 
-Es gibt viele verschiedene Libraries in unterschiedlichen Sprachen. Weitere Informationen entnehmen Sie bitte der offiziellen Liste.
+## Weiterführende Informationen
 
-
-## Beispiel in Python
-Die Installation der Library erfolgt mithilfe von pip.
-
-
-```
-$ pip install python-openstacksdk
-```
-
-
-Wenn die Verbindung hergestellt ist, werden die Tokens im Hintergrund verwaltet.
-
-
-```
-from openstack import connection
-conn = connection.Connection(auth_url="https://auth.cloud.ovh.net/v2.0",
-project_name="361...868",
-username="vvQ...VBW",
-password="jCr...RGj")
-for cont in conn.object_store.containers():
-if(cont.name == "photos"):
-for obj in conn.object_store.objects(cont):
-if(obj.name == "fullsize/ovh-summit-2014-backstage-DS.jpg"):
-print conn.object_store.get_object_metadata(obj)
-```
-
-
-
-
-## Beispiel in PHP
-Die Installation der Library erfordert php-curl und composer.
-
-
-```
-$ apt-get install php5-curl
-$ curl -sS https://getcomposer.org/installer | php
-$ php composer.phar require rackspace/php-opencloud
-```
-
-
-Möglich ist auch die Verwendung eines Konnektors zur Verwaltung der Tokens.
-
-
-```
-<?php
-require '/var/www/vendor/autoload.php';
-use OpenCloud\OpenStack;
-$client = new OpenStack("https://auth.cloud.ovh.net/v2.0", array(
-'username' => "vvQ...VBW",
-'password' => "jCr...RGj",
-'tenantName' => "361...868",
-));
-$objectStoreService = $client->objectStoreService('swift', "GRA1");
-$cont = $objectStoreService->getContainer("photos");
-$obj = $cont->getPartialObject('fullsize/ovh-summit-2014-backstage-DS.jpg');
-print_r($obj->getMetadata());
-?>
-```
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

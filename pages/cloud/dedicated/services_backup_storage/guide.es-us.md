@@ -74,7 +74,7 @@ Para revocar la autorización de un bloque de IP, haga clic en el botón `···
 
 Haga clic en `Aceptar`{.action} para guardar los cambios. El bloque de IP ya no tendrá acceso al Backup Storage.
 
-![Eliminar el acceso](images/backup-storage-15-edited_2020.png{.thumbnail}
+![Eliminar el acceso](images/backup-storage-15-edited_2020.png){.thumbnail}
 
 ### Cambiar la contraseña
 

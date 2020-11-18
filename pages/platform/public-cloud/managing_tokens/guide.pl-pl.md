@@ -1,170 +1,171 @@
 ---
 title: 'Zarządzanie tokenami'
-excerpt: 'Zarządzanie tokenami'
+excerpt: 'Dowiedz się, jak używać tokenów za pomocą API Keystone'
 slug: zarzadzanie_tokenami
 legacy_guide_number: g1872
 section: 'Zarządzanie w OpenStack CLI'
 ---
 
-## 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> 
 
-## Uwaga!
-Poniższe informacje dotyczą tylko wersji 3.0 API Keystone.
+**Ostatnia aktualizacja z dnia 16-04-2020**
 
+## Wprowadzenie
 
-## Definicje
+**Dowiedz się, jak skonfigurować połączenia z keystone API w Twojej usłudze za pomocą tokenów.**
 
-- Endpoint: Adres HTTP wskazujący na API danej usługi. Na przykład https://auth.cloud.ovh.net/v2.0 dla endpoint uwierzytelniania i https://image.compute.gra1.cloud.ovh.net/ dla endpoint zarządzania obrazami w strefie GRA1.
+> [!primary]
+>
+> Szczegółowe informacje znajdują zastosowanie w wersji 3.0 API
+> Keystone.
+> 
 
-- Token: Unikalny ciąg znaków związany z uwierzytelnianiem i z uprawnieniami dostępu. Token jest ważny 24 godziny.
+## W praktyce
 
+### Definicje
 
+- Endpoint: Adres HTTP wskazujący bezpośrednio na API usługi. na przykład [https://auth.cloud.ovh.net/v3/](https://auth.cloud.ovh.net/v3/){.external} dla punktu uwierzytelniania lub [https://image.compute.gra1.cloud.ovh.net/](https://image.compute.gra1.cloud.ovh.net/){.external} dla punktu zarządzania obrazami w strefie GRA1.
 
-
-## Ogólna zasada
-Większość zapytań podlegających API OpenStack musi odpowiadać na mechanizm autoryzacji. Mechanizm ten działa na zasadzie otrzymania tokena i potwierdzenia go. Poniżej najważniejsze informacje na temat działania zapytania od uwierzytelniania aż do wykonania zapytania.
-
-- Zlecenie utworzenia tokena w punkcie końcowym uwierzytelniania z potwierdzeniami
-- Zapytanie do punktu końcowego wybranej usługi (storage, serwer, sieć,...) poprzez dostarczenie tokena
-- API usługi pobiera token i zleca weryfikację ważności narzędziom uwierzytelniania.
-- Po potwierdzeniu ważności zapytanie jest wykonywane.
-
-
-Tokeny mają określony czas ważności, w związku z czym wygasają i muszą być odnawiane. 
-
-Token można usunąć przed datą jego wygaśnięcia za pomocą API. 
-
-Więcej informacji znajduje się w dokumentacji [OpenStack API](http://docs.openstack.org/api/quick-start/content/) oraz [mechanizmu uwierzytelniania](http://docs.openstack.org/kilo/install-guide/install/apt/content/keystone-concepts.html).
+- Token: Kanał o unikalnym charakterze związany z uwierzytelnianiem i prawami dostępu. Użytkownik żąda tokena, przekazując swoje dane identyfikacyjne (dane logowania) do API uwierzytelniania. Jest generowany i dostarczany z ograniczonym okresem ważności wynoszącym 24 godziny. Token może być "scoped" lub "unscoped", czyli może być bezpośrednio związany z posiadaczem lub nie może być powiązany z żadnym posiadaczem.
 
 
-## 
-Operacje, które opiszemy, można wykonać ręcznie. Są one używane do celów edukacyjnych lub do debugowania. 
+### Zasada ogólna
 
-Należy pobrać środowisko za pomocą pliku openrc (sprawdź przewodnik).
+Większość zapytań składanych przez API OpenStack musi odpowiadać na mechanizm autoryzacji. Mechanizm ten działa poprzez otrzymywanie tokena (tokenu w języku francuskim) i jego zatwierdzanie. Poniżej zamieszczamy ogólne zasady działania połączenia od uwierzytelnienia aż do wykonania połączenia.
 
-W naszym przykładzie chcemy otrzymać informacje na temat metadanych usługi object storage w ofercie Public Cloud Storage. Etapy to:
+- Wniosek o utworzenie tokena w punkcie uwierzytelniania za pomocą identyfikatorów
+- Zapytanie o endpoint usługi (storage, compute, network, ...) poprzez dostarczenie tokena jako parametru
+- API usługi odzyskuje token i zwraca się o sprawdzenie jego ważności w jednostce uwierzytelniającej
+- Jeśli ważność jest sprawdzana, zaproszenie jest brane pod uwagę i wykonane
 
+Ponieważ tokeny mają określony okres ważności, wygasają i są odnawiane w razie potrzeby.
+
+Podobnie, jeśli token ma zostać usunięty przed datą wygaśnięcia, możliwe jest jego usunięcie za pomocą API.
+
+Więcej informacji znajdziesz w dokumentacji OpenStack [API](https://docs.openstack.org/keystone/train/api_curl_examples.html){.external}.
+
+
+### Operacje ręczne
+
+Następujące czynności mogą być wykonywane ręcznie, są zazwyczaj wykorzystywane do celów edukacyjnych lub debugging.
+
+Konieczne jest załadowanie środowiska za pomocą pliku openrc (patrz przewodnik).
+
+W poniższym przykładzie chcemy uzyskać informacje o metadata obiektu przechowywanego w ramach oferty Public Cloud Storage. Etapy są następujące:
 
 - Zlecenie utworzenia tokena
 - Pobranie zmiennych token ID i endpoint publicURL
-- Zapytanie do obiektu z uzyskanymi informacjami
+- Zapytanie o obiekt z odzyskanymi informacjami
+
+Narzędzie wiersza poleceń cURL umożliwia tworzenie zapytań z każdego elementu.
 
 
-Narzędzie z linii poleceń cURL pozwala na zbudowanie zapytań każdego rodzaju.
+#### Etap 1: Żądanie utworzenia tokena
 
-
-## Zlecenie utworzenia tokena
-
+```bash
+curl -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type" application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD' }, "scope": { "project": { "name": "'$OS_tenant_NAME'", "domain": { "id": "default" } } }' | python -mjson.tool
 ```
-$ curl -X POST $OS_AUTH_URL/tokens -H "Content-Type: application/json" -d '{"auth": {"tenantName": "'$OS_TENANT_NAME'", "passwordCredentials": {"username": "'$OS_USERNAME'", "password": "'$OS_PASSWORD'"}}}' | python -mjson.tool
-```
+
+Odpowiedź serwera wygląda następująco:
 
 
-
-- -X POST: metoda HTTP używana do przekazywania danych
-
-- $OS_AUTH_URL/tokens: operacja na tokenach
-
-- -H "Content-Type: application/json": format oczekiwany w JSON
-
-- -d '{"auth": {"tenantName": "'$OS_TENANT_NAME'", "passwordCredentials": {"username": "'$OS_USERNAME'", "password": "'$OS_PASSWORD'"}}}': treść zapytania, są to informacje dotyczące uwierzytelniania
-
-- python -mjson.tool: narzędzie python pozwalające na wyświetlenie wyjścia w sposób czytelny
-
-
-Odpowiedź serwera:
-
-
-```
-{
-"access": {
-"metadata": {
-"is_admin": 0,
-"roles": [
-"9fe...fd4"
-]
-},
-"serviceCatalog": [
-[...]
-{
-"endpoints": [
-{
-"adminURL": "https://image.compute.sbg1.cloud.ovh.net/",
-"internalURL": "http://127.0.0.1:8888/v1/AUTH_9ea...ff0",
-"publicURL": "https://storage.sbg1.cloud.ovh.net/v1/AUTH_9ea...ff0",
-"region": "SBG1"
-}
-],
-"endpoints_links": [],
-"name": "swift",
-"type": "object-store"
-},
-
-[...]
-],
-"token": {
-"audit_ids": [
-"Mka...cmTw"
-],
-"expires": "2015-10-02T14:53:15Z",
-"id": "a4331ec98754472032f031e18b16bd00",
-"issued_at": "2015-10-01T14:53:15.072501",
-"tenant": {
-"description": null,
-"enabled": true,
-"id": "9ea...ff0",
-"name": "361...868"
-}
-},
-
-[...]
-}
+```json
+ {
+  "token": {
+    "is_domain": false,
+    "methods": [
+      "password"
+    ],
+    "roles": [
+      {
+        "id": "9543e89aeb484aee8ec7d01e87223b16",
+        "name": "objectstore_operator"
+      }
+    ],
+    "is_admin_project": false,
+    "project": {
+      "domain": {
+        "id": "default",
+        "name": "Default"
+      },
+      "id": "<ID OF THE PROJECT>",
+      "name": "<NAME OF THE PROJECT>"
+    },
+    "catalog": [
+      {
+        "endpoints": [
+          {
+            "url": "https://network.compute.sbg1.cloud.ovh.net/",
+            "interface": "internal",
+            "region": "SBG1",
+            "region_id": "SBG1",
+            "id": "075839111e7a41f1bb458926e5f04cec"
+          },
+          [...]
+        ],
+        "type": "network",
+        "id": "0be6ed3dce244b8295ff643739a86809",
+        "name": "neutron"
+      },
+      [...]
+    ],
+    "expires_at": "2020-01-17T14:53:32.000000Z",
+    "user": {
+      "password_expires_at": null,
+      "domain": {
+        "id": "default",
+        "name": "Default"
+      },
+      "id": "<ID OF THE USER>",
+      "name": "<NAME OF THE USER>"
+    },
+    "audit_ids": [
+      "IuNOR-lKQ9GJGQd8taWBnQ"
+    ],
+    "issued_at": "2020-01-16T14:53:32.000000Z"
+  }
 }
 ```
 
 
+#### Etap 2: Odzyskiwanie zmiennych token ID i endpoint publicURL
+
+Oba informacje są dostępne w momencie składania poprzedniego zamówienia.
+
+W przypadku punktu publicznegoURL należy przeprowadzić badania w sekcji "object-store" i w odpowiednim regionie, w tym miejscu "SBG".
 
 
-## Pobieranie zmiennych token ID i endpoint publicURL
-Informacje te są dostępne na wyjściu poprzedniego polecenia.
-
-W przypadku endpoint publicURL należy szukać w sekcji "object-store" i region, który pasuje, czyli tutaj "SBG1".
-
-
-```
-$ export endpoint="https://storage.sbg1.cloud.ovh.net/v1/AUTH_9ea...ff0"
-```
-
-
-Adres endpoint usługi object storage pozwoli na odpytanie informacji na temat obiektu. 
-
-
-```
-$ export token=a4331ec98754472032f031e18b16bd00
+```bash
+export endpoint="https://storage.sbg.cloud.ovh.net/v1/AUTH_9ea...ff0"
 ```
 
+Adres docelowy usługi object storage pozwala na zapytanie informacji o obiekt.
 
-Token ten jest elementem uwierzytelniania, który będzie wykorzystywany dla następnego zapytania.
 
-
-## Zapytanie do obiektu z uzyskanymi informacjami
-
-```
-$ curl -X GET $endpoint/photos/fullsize/ovh-summit-2014-backstage-DS.jpg -H "X-Auth-Token: $token" -I
+```bash
+export token=$(curl -is -X POST ${OS_AUTH_URL}auth/tokens -H "Content-Type" application/json" -d ' { "auth": { "identity": { "methods": ["password"], "password": { "user": { "name": "'$OS_USERNAME'", "domain": { "id": "default" }, "password": "'$OS_PASSWORD' }, "scope": { "project": { "name": "'$OS_tenant_NAME'", "domain": { "id": "default" } } }' | grep '^X-Subject-Token' | cut -d" " -f2)
 ```
 
+Ten token jest teraz elementem uwierzytelniającym, który będzie używany dla następnego zapytania.
 
 
-- -X GET : méthode HTTP GET
-- $endpoint/photos/fullsize/ovh-summit-2014-backstage-DS.jpg: adres obiektu
+#### Etap 3: Zapytanie o obiekt z odzyskanymi informacjami
+
+```bash
+curl -X GET $endpoint/photos/fullsize/ovh-summit-2014-backstage-DS.jpg -H "X-Auth-Token: $token" -I
+```
+
+- -X GET: metoda HTTP GET
+- $endpoint/photos/fullsize/ovh-summit-2014-backstage-DS.jpg adres obiektu
 - -H "X-Auth-Token: $token": element uwierzytelniania
-- -I: opcja curl do pobierania jedynie metadanych
+- -I: opcja curl w celu uzyskania wyłącznie metadanych
+
+Odpowiedź brzmi:
 
 
-Odpowiedź:
-
-
-```
+```bash
 HTTP/1.1 200 OK
 Content-Length: 190046
 Content-Type: image/jpeg
@@ -179,74 +180,12 @@ Connection: close
 ```
 
 
+### Automatyczne zarządzanie: księgarnia i SDK
 
+Zalecamy korzystanie z bibliotek umożliwiających przejrzyste zarządzanie tokenami. W ten sposób, poprzez prosty dostęp do przechowywanych danych, tokeny będą automatycznie generowane, używane i odnawiane bez konieczności zarządzania nimi na poziomie aplikacji.
 
-## 
-Zaleca się korzystać z bibliotek pozwalających na transparentne zarządzanie tokenami. Dzięki temu po dostarczeniu bibliotece potwierdzeń dotyczących logowania, tokeny będą automatycznie generowane, wykorzystywane i odnawiane bez potrzeby zarządzania nimi po stronie aplikacji.
+Istnieje wiele bibliotek w różnych językach. Aby uzyskać więcej informacji, [zapoznaj się z oficjalną listą](https://wiki.openstack.org/wiki/SDKs){.external}.
 
-Dostępne są liczne biblioteki w różnych językach. Sprawdź oficjalną listę, aby uzyskać więcej informacji.
+## Sprawdź również
 
-
-## Przykład w Pythonie
-Biblioteka jest instalowana za pomocą pip. 
-
-```
-$ pip install python-openstacksdk
-```
-
-
-Po zainicjowaniu połączenia w tle generowane są tokeny. 
-
-```
-from openstack import connection
-conn = connection.Connection(auth_url="https://auth.cloud.ovh.net/v2.0",
-project_name="361...868",
-username="vvQ...VBW",
-password="jCr...RGj")
-for cont in conn.object_store.containers():
-if(cont.name == "photos"):
-for obj in conn.object_store.objects(cont):
-if(obj.name == "fullsize/ovh-summit-2014-backstage-DS.jpg"):
-print conn.object_store.get_object_metadata(obj)
-```
-
-
-
-
-## Przykład w PHP
-Instalacja biblioteki require php-curl i composer.
-
-
-
-```
-$ apt-get install php5-curl
-$ curl -sS https://getcomposer.org/installer | php
-$ php composer.phar require rackspace/php-opencloud
-```
-
-
-Zastosowanie działa również z łącznikiem, który będzie zarządzał tokenami.
-
-
-```
-<?php
-require '/var/www/vendor/autoload.php';
-use OpenCloud\OpenStack;
-$client = new OpenStack("https://auth.cloud.ovh.net/v2.0", array(
-'username' => "vvQ...VBW",
-'password' => "jCr...RGj",
-'tenantName' => "361...868",
-));
-$objectStoreService = $client->objectStoreService('swift', "GRA1");
-$cont = $objectStoreService->getContainer("photos");
-$obj = $cont->getPartialObject('fullsize/ovh-summit-2014-backstage-DS.jpg');
-print_r($obj->getMetadata());
-?>
-```
-
-
-
-
-## 
-[Przewodniki Cloud]({legacy}1785)
-
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com>

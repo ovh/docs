@@ -230,7 +230,7 @@ From this tab, you can order a Veeam Backup solution.
 
 ![Backup](images/controlpanel14-e.png){.thumbnail}
 
-You can find more details about this option in [this guide](https://docs.ovh.com/gb/en/managed-bare-metal/veeam-backup-as-a-service/).
+You can find more details about this option in [this guide](../veeam-backup-as-a-service/).
 
 
 ## Go further

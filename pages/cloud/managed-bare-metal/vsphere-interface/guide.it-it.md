@@ -34,7 +34,7 @@ Per assicurarsi di poter effettuare l’accesso, consulta la documentazione VMwa
 
 ### Utilizza il client Web HTML5
 
-Il client Web HTML5 è disponibile nell’interfaccia Web del servizio Managed Bare Metal, all’indirizzo <https://pcc-xxx-xxx-xxx-xxx.ovh.com/ui> (ricorda di sostituire pcc-xxx-xx-xx-xxx.ovh.com con l’indirizzo del Managed Bare Metal).
+Il client Web HTML5 è disponibile nell’interfaccia Web del servizio Managed Bare Metal, all’indirizzo `https://pcc-xxx-xxx-xxx-xxx.ovh.com/ui` (ricorda di sostituire pcc-xxx-xx-xx-xxx.ovh.com con l’indirizzo del Managed Bare Metal).
 
 ![Connessione all'interfaccia vSphere HTML5](images/connection_interface_w_html5.png){.thumbnail}
 
@@ -49,7 +49,7 @@ La pagina `Home`{.action} fornisce l’accesso ai menu principali del vCenter, c
 
 ### Utilizza il client Web Flash
 
-Il client Web Flash è disponibile nell’interfaccia Web del servizio Managed Bare Metal, all’indirizzo <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> (ricorda di sostituire pcc-xxx-xx-xx-xxx.ovh.com con l’indirizzo del Managed Bare Metal).
+Il client Web Flash è disponibile nell’interfaccia Web del servizio Managed Bare Metal, all’indirizzo `https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client` (ricorda di sostituire pcc-xxx-xx-xx-xxx.ovh.com con l’indirizzo del Managed Bare Metal).
 
 Per effettuare l’accesso, utilizza le credenziali ricevute:
 

@@ -35,7 +35,7 @@ El siguiente documento de VMware incluye los diferentes puertos que debe abrir e
 
 ### Utilizar el cliente web HTML5
 
-El cliente web HTML5 está disponible en la interfaz web de su Hosted Managed Bare Metal en la dirección: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/ui> (sustituya «pcc-xxx-xx-xx-xxx.ovh.com» por la dirección de su Hosted Managed Bare Metal).
+El cliente web HTML5 está disponible en la interfaz web de su Hosted Managed Bare Metal en la dirección: `https://pcc-xxx-xxx-xxx-xxx.ovh.com/ui` (sustituya «pcc-xxx-xx-xx-xxx.ovh.com» por la dirección de su Hosted Managed Bare Metal).
 
 ![Conexión a la interfaz vSphere HTML5](images/connection_interface_w_html5.png){.thumbnail}
 
@@ -50,7 +50,7 @@ La página `Home`{.action} permite acceder a los principales menús de su vCente
 
 ### Utilizar el cliente web flash
 
-El cliente web flash está disponible en la interfaz web de su Hosted Managed Bare Metal en la dirección: <https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client> (sustituya «pcc-xxx-xx-xx-xxx.ovh.com» por la dirección de su Hosted Managed Bare Metal).
+El cliente web flash está disponible en la interfaz web de su Hosted Managed Bare Metal en la dirección: `https://pcc-xxx-xxx-xxx-xxx.ovh.com/vsphere-client` (sustituya «pcc-xxx-xx-xx-xxx.ovh.com» por la dirección de su Hosted Managed Bare Metal).
 
 Para conectarse, utilice las claves de acceso recibidas:
 
