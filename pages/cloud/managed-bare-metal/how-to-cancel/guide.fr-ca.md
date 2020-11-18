@@ -23,8 +23,6 @@ Si votre offre Managed Bare Metal ne vous convient plus, ou que vous avez comman
 
 ## En pratique
 
-L'offre Managed Bare Metal est sans engagement. Cependant, comme indiqué dans les [Conditions Particulières du Service](http://www.ovh.com/fr/support/documents_legaux/conditions_particulieres_dedicated_cloud_2014.pdf){.external}, tout mois commencé est dû et payable d’avance.
-
 >[!warning]
 >
 > Avant de résilier votre offre, veuillez prendre garde à récupérer toutes les données que vous souhaitez conserver. En effet, la résiliation entrainera la suppression intégrale de votre Managed Bare Metal et toutes les données qu'il contient.

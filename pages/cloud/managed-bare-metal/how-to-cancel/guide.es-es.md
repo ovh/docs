@@ -24,8 +24,6 @@ Es posible solicitar la baja de su infraestructura Managed Bare Metal en cualqui
 
 ## Procedimiento
 
-La solución Managed Bare Metal se contrata sin período de permanencia. Sin embargo, tal como se indica en las [Condiciones Particulares del Servicio](https://www.ovh.es/soporte/documentos_legales/Condiciones_particulares_Dedicated_Cloud_2014.pdf){.external}, «todo mes comenzado es debido y pagado por adelantado».
-
 > [!warning]
 >
 > Antes de dar de baja el servicio, deberá realizar una copia de seguridad de todos los datos que desee conservar. La baja del servicio conlleva la eliminación definitiva de su Managed Bare Metal y de todos los datos alojados esta infraestructura.

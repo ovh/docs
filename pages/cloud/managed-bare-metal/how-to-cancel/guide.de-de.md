@@ -23,8 +23,6 @@ Unser Managed Bare Metal Angebot entspricht nicht mehr Ihren Anforderungen? Oder
 
 ## In der praktischen Anwendung
 
-Bei Managed Bare Metal gibt es keine Mindestvertragslaufzeit. Wie jedoch in den [Besonderen Geschäftsbedingungen](https://www.ovh.de/support/agb/OVH_Anlage_Dedicated_Cloud.pdf){.external} beschrieben, ist jeder angebrochene Monat fällig und im Voraus zu bezahlen.
-
 >[!warning]
 >
 > Bevor Sie Ihre Managed Bare Metal kündigen, achten Sie bitte darauf, alle Daten sicherzustellen, die Sie behalten möchten. Mit der Kündigung geht nämlich das komplette Löschen Ihrer Managed Bare Metal und aller darin enthaltener Daten einher.

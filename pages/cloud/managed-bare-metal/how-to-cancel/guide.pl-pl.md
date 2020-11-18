@@ -24,8 +24,6 @@ Jeśli usługa Managed Bare Metal nie jest już dla Ciebie odpowiednia lub jeśl
 
 ## W praktyce
 
-W przypadku korzystania z usługi Managed Bare Metal nie musisz podpisywać umowy terminowej. Jednak, jak wskazano w Szczegółowych warunkach korzystania z usług, należna jest opłata z góry za każdy rozpoczęty miesiąc.
-
 >[!warning]
 >
 > Zanim usługa zostanie zakończona, pamiętaj o pobraniu wszystkich danych, które chcesz zachować. Zakończenie usługi spowoduje całkowite usunięcie infrastruktury Managed Bare Metal i wszystkich zawartych w niej danych.

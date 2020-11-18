@@ -23,8 +23,6 @@ If your Managed Bare Metal offer no longer suits you, or if you have ordered a n
 
 ## Instructions
 
-The Managed Bare Metal offer is without obligation. However, as laid out in the [Special Terms of Service](https://www.ovh.co.uk/support/termsofservice/Special_Conditions_for_Dedicated_Cloud_2014.pdf){.external}, any month that has begun is due and payable in advance.
-
 >[!warning]
 >
 > Before cancelling your offer, please be careful to retrieve all the data you wish to keep. Indeed, termination will result in the complete deletion of your Managed Bare Metal and all the data it contains.
