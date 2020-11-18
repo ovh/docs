@@ -24,8 +24,6 @@ Se a sua oferta de Managed Bare Metal já não lhe convier, ou se encomendou uma
 
 ## Instruções
 
-A oferta Managed Bare Metal não tem compromisso. No entanto, tal como indicado nas [Condições Particulares do Serviço](https://www.ovh.pt/suporte/documentos_legais/condicoes_particulares_dedicated_cloud_2014.pdf){.external}, qualquer mês iniciado é devido e pagável com antecedência.
-
 >[!warning]
 >
 > Antes de rescindir a sua oferta, não se esqueça de recuperar todos os dados que pretende conservar. De facto, a rescisão provocará a supressão integral do seu Managed Bare Metal e de todos os dados lá armazenados.

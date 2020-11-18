@@ -24,8 +24,6 @@ Se il servizio Managed Bare Metal utilizzato non è più in grado di rispondere 
 
 ## Procedura
 
-La soluzione Managed Bare Metal non prevede un impegno contrattuale minimo ma, come indicato nelle [Condizioni Particolari dell’offerta](https://www.ovh.it/supporto/documenti_legali/condizioni_particolari_dell_offerta_dedicated_cloud_2014.pdf){.external}, tutti i mesi iniziati sono interamente dovuti con pagamento anticipato.
-
 >[!warning]
 >
 > Prima di completare il processo di disattivazione, consigliamo di effettuare un backup di tutti i dati da conservare: l’operazione di cancellazione comporta infatti la completa rimozione del Managed Bare Metal e dei dati ad esso associati.
