@@ -25,7 +25,7 @@ The information in this guide applies to version 3.0 of the Keystone API.
 - Endpoint: HTTP address pointing directly to a service's API. For example [https://auth.cloud.ovh.net/v3/](https://auth.cloud.ovh.net/v3/) for the authentication endpoint or [https://image.compute.gra1.cloud.ovh.net/](https://image.compute.gra1.cloud.ovh.net/) for the GRA zone image management endpoint. 
 
 
-- Token: A unique string of characters used to authenticate and access resources. The user requests the token by entering his/her credentials (login details) to the authentication API. The token is generated and it is valid for 24 hours. A token can be "scoped" or "unscoped", by which we mean that it can be tied to a particular tenant or not.
+- Token: A unique string of characters used to authenticate and access resources. The user requests the token by entering their credentials (login details) to the authentication API. The token is generated and it is valid for 24 hours. A token can be "scoped" or "unscoped", meaning it can be tied to a particular tenant or not.
 
 
 
@@ -140,7 +140,7 @@ These two pieces of information are available in the results obtained by the abo
 To retrieve the publicURL endpoint, you need to look in the "endpoints" section and the corresponding "Region" (in this example, "SBG").
 
 
-```
+```bash
 $ export endpoint="https://storage.sbg.cloud.ovh.net/v1/AUTH_9ea...ff0"
 ```
 
