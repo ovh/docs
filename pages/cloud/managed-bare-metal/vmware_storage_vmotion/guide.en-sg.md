@@ -9,7 +9,7 @@ section: VMware vSphere features
 order: 5
 ---
 
-**Last updated 5th November 2020**
+**Last updated 18th November 2020**
 
 ## Objective
 

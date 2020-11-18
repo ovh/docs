@@ -6,7 +6,7 @@ routes:
 section: Funcionalidades de OVHcloud
 ---
 
-**Última actualización: 05/11/2020**
+**Última actualización: 18/11/2020**
 
 ## Objetivo
 

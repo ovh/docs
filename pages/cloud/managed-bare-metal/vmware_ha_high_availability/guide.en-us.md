@@ -7,7 +7,7 @@ excerpt: Manage restart policy with HA function
 section: VMware vSphere features
 ---
 
-**Last updated November 5th 2020**
+**Last updated November 18th 2020**
 
 ## Objective
 

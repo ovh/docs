@@ -9,7 +9,7 @@ section: Verwaltung virtueller Maschinen
 order: 8
 ---
 
-**Letzte Aktualisierung am 05.11.2020**
+**Letzte Aktualisierung am 18.11.2020**
 
 ## Ziel
 

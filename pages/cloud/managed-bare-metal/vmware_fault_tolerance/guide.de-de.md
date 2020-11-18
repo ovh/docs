@@ -8,7 +8,7 @@ section: VMware vSphere Funktionen
 order: 06
 ---
 
-**Stand 05.11.2020**
+**Stand 18.11.2020**
 
 ## Einleitung
 

@@ -7,7 +7,7 @@ excerpt: Come impostare una nuova password per un utente del client vSphere dall
 section: Funzionalità OVHcloud
 ---
 
-**Ultimo aggiornamento: 05/11/2020**
+**Ultimo aggiornamento: 18/11/2020**
  
 ## Obiettivo
 

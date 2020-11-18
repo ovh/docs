@@ -7,7 +7,7 @@ slug: associer-email-a-un-utilisateur
 section: Fonctionnalités OVHcloud
 ---
 
-**Dernière mise à jour le 05/11/2020**
+**Dernière mise à jour le 18/11/2020**
 
 ## Objectif
 

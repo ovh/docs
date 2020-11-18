@@ -7,7 +7,7 @@ excerpt: 'Saiba como configurar uma VPN de modo a ligar uma plataforma Zerto loc
 section: 'Serviços e opções OVHcloud'
 ---
 
-**Última atualização: 05/11/2020**
+**Última atualização: 18/11/2020**
 
 ## Objetivo
 

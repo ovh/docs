@@ -11,7 +11,7 @@ section: 'Servicios y opciones de OVHcloud'
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 05/11/2020**
+**Última actualización: 18/11/2020**
 
 OVHcloud ofrece plantillas Linux, Windows Server y Windows SQL Server (en formato OVF) que puede desplegar directamente desde su cliente Web (HTML 5).
 
@@ -27,7 +27,7 @@ Las MV Windows desplegadas a partir de una plantilla utilizan automáticamente l
 ## Requisitos
 
 - Tener acceso al cliente web (HTML5).
-- Haber activado las [licencias de Windows](../manager-ovh-private-cloud/#licencia-windows) desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} (en la pestaña `Licencia Widows`{.action} de la plataforma). 
+- Haber activado las [licencias de Windows](../manager-ovhcloud/#licencia-windows) desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} (en la pestaña `Licencia Widows`{.action} de la plataforma). 
 
 
 Desde un navegador de internet, vaya a la página de inicio de su Managed Bare Metal y haga clic en `OVH Templates`{.action}.

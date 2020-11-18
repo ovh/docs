@@ -8,7 +8,7 @@ section: Funkcjonalności VMware vSphere
 order: 03
 ---
 
-**Ostatnia aktualizacja z dnia 05-11-2020**
+**Ostatnia aktualizacja z dnia 18-11-2020**
 
 ## Wprowadzenie
 

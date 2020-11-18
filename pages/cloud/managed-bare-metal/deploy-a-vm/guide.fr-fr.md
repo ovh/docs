@@ -8,7 +8,7 @@ section: Gestion des machines virtuelles
 order: 0
 ---
 
-**Dernière mise à jour le 05/11/2020**
+**Dernière mise à jour le 18/11/2020**
 
 ## Objectif
 
@@ -34,7 +34,7 @@ Faites un clic-droit sur le cluster de votre choix et cliquez sur `Nouvelle mach
 Vous avez plusieurs possibilité lors de la création d’une machine virtuelle :
 
 - La création depuis un ISO, qui sera dans votre datastore et que vous aurez pu importer en suivant [le guide de connexion en SFTP](../connexion-en-sftp/)
-- Vous pouvez également déployer une machine virtuelle depuis un template que vous pouvez avoir ou un [template OVH](../deploiement-template-ovh/)
+- Vous pouvez également déployer une machine virtuelle depuis un template que vous pouvez avoir ou un [template OVHcloud](../deploiement-template-ovhcloud/)
 - Vous pouvez cloner une machine virtuelle déjà existante (attention toutefois au risque de conflit d’adresses IP).
 - Vous pouvez cloner une machine virtuelle en template, en vue d’un déploiement plus rapide de vos prochaines machines virtuelles.
 - Vous pouvez cloner un template en un autre template pour, par exemple, avoir le template sur différents datastores et ne pas subir de baisse de performances lors d’un déploiement massif.

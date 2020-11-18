@@ -8,7 +8,7 @@ legacy_guide_number: '1442308'
 section: 'OVHcloud Funktionen'
 ---
 
-**Stand 05.11.2020**
+**Stand 18.11.2020**
 
 ## Einleitung
 

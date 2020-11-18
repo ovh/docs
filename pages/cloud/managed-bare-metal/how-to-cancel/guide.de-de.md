@@ -7,7 +7,7 @@ excerpt: Erfahren Sie hier, wie Sie eine Managed Bare Metal Infrastruktur kündi
 section: OVHcloud Funktionen
 ---
 
-**Letzte Aktualisierung am 05.11.2020**
+**Letzte Aktualisierung am 18.11.2020**
 
 ## Ziel
 

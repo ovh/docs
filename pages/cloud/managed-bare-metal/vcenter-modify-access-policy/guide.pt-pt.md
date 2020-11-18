@@ -7,7 +7,7 @@ excerpt: 'Saiba como alterar a estratégia de acesso para o vCenter'
 section: Funcionalidades da OVHcloud
 ---
 
-**Última atualização: 05/11/2020**
+**Última atualização: 18/11/2020**
 
 ## Objetivo
 

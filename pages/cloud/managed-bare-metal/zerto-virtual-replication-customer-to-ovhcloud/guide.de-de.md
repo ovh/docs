@@ -7,7 +7,7 @@ excerpt: 'So richten Sie einen VPN-Tunnel ein, um Ihre lokale Zerto-Plattform mi
 section: 'OVHcloud Dienste und Optionen'
 ---
 
-**Stand 05.11.2020**
+**Stand 18.11.2020**
 
 ## Einleitung
 Ziel dieser Anleitung ist, Ihnen bei der Konfiguration Ihres virtuellen privaten Netzwerks (VPN) zu helfen, um Ihre lokale Plattform mit Ihrer OVHcloud Managed Bare Metal zu verbinden und die

@@ -7,7 +7,7 @@ excerpt: 'Cómo eliminar un servidor host de una infraestructura Managed Bare Me
 section: 'Funcionalidades de OVHcloud'
 ---
 
-**Última actualización: 05/11/2020**
+**Última actualización: 18/11/2020**
 
 ## Objetivo
 

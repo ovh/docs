@@ -9,7 +9,7 @@ section: Virtual machine management
 order: 4
 ---
 
-**Last updated 5th November 2020**
+**Last updated 18th November 2020**
 
 ## Objective
 

@@ -7,7 +7,7 @@ excerpt: Die vScope API ermöglicht Ihnen, die Monitoringdaten in Ihren Anwendun
 section: OVHcloud Dienste und Optionen
 ---
 
-**Letzte Aktualisierung am 05.11.2020**
+**Letzte Aktualisierung am 18.11.2020**
 
 ## Ziel
 

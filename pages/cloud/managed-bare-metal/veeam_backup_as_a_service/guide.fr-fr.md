@@ -9,7 +9,7 @@ section: Services et options OVHcloud
 order: 06
 ---
 
-**Dernière mise à jour le 05/11/2020**
+**Dernière mise à jour le 18/11/2020**
 
 ## Objectif
 
@@ -25,7 +25,7 @@ Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située 
 * [Donner le droit « Ajout de ressources »](../changer-les-droits-d-un-utilisateur/){.external} pour le datacenter concerné à l'utilisateur depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 * Être connecté au client vSphere.
 * Avoir activé la [haute disponibilité (HA)](../vmware-ha-high-availability){.external}.
-* Avoir activé le [Distributed Ressource Scheduler (DRS)](..vmware-drs-distributed-ressource-scheduler-new){.external} sur le ou les clusters.
+* Avoir activé le [Distributed Ressource Scheduler (DRS)](../vmware-drs-distributed-ressource-scheduler-new){.external} sur le ou les clusters.
 * Mettre en place la gestion des licences Windows sur le Managed Bare Metal.
 
 

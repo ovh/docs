@@ -7,7 +7,7 @@ excerpt: Find out how to optimise security for your vSphere web client
 section: Getting started
 ---
 
-**Last updated 5th November 2020**
+**Last updated 18th November 2020**
 
 ## Objective
 

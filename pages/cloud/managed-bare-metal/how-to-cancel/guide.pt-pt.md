@@ -8,7 +8,7 @@ section: Funcionalidades da OVHcloud
 order: 09
 ---
 
-**Última atualização: 05/11/2020**
+**Última atualização: 18/11/2020**
 
 ## Objetivo
 

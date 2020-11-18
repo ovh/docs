@@ -7,7 +7,7 @@ excerpt: 'Descubra como proteger o acesso ao vSphere Web Client'
 section: Introdução
 ---
 
-**Última atualização: 05/11/2020**
+**Última atualização: 18/11/2020**
 
 ## Objetivo
 

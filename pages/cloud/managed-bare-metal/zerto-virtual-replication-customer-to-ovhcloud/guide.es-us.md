@@ -7,7 +7,7 @@ excerpt: Esta guía explica cómo cofigurar una VPN para conectar su plataforma 
 section: 'Servicios y opciones de OVHcloud'
 ---
 
-**Última actualización: 05/11/2020**
+**Última actualización: 18/11/2020**
 
 ## Objetivo:
 El objetivo de esta guía es ayudarle a configurar la red privada virtual (VPN) para conectar su plataforma local con su Managed Bare Metal OVHcloud y así implementar la solución de recuperación ante desastres

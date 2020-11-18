@@ -7,7 +7,7 @@ excerpt: 'Learn how to setup a VPN tunnel to connect your on-premises plaftorm t
 section: 'OVHcloud services and options'
 ---
 
-**Last updated 6th December 2019** 
+**Last updated 18th November 2020** 
 
 ## Objective
 

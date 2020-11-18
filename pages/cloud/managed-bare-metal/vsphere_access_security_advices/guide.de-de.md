@@ -7,7 +7,7 @@ excerpt: Hier erfahren Sie, wie Sie den Zugang zu Ihrem vSphere Web Client siche
 section: Erste Schritte
 ---
 
-**Stand 05.11.2020**
+**Stand 18.11.2020**
 
 ## Einleitung
 
