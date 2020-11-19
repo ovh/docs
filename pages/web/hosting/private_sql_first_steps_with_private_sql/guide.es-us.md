@@ -113,7 +113,7 @@ En la nueva página, seleccione el permiso correspondiente haciendo clic. Para u
 
 Esta operación solo debe realizarse si desea importar una copia de seguridad de una base de datos preexistente (necesario para, por ejemplo, migrar un sitio web a OVHcloud o migrar las bases de datos a un SQL Privado). Si no tiene que importar ninguna base de datos, puede pasar a la siguiente operación.
 
-Hay varias maneras de importar una base de datos. OVHcloud ofrece una herramienta que permite hacerlo desde el área de cliente. A continuación vamos a explicar el funcionamiento de esa herramienta. Si desea utilizar otro método de importación, consulte la guía [Todo sobre el SQL Privado](../hosting/todo_sobre_el_sql_privado/){.external}.
+Hay varias maneras de importar una base de datos. OVHcloud ofrece una herramienta que permite hacerlo desde el área de cliente. A continuación vamos a explicar el funcionamiento de esa herramienta. Si desea utilizar otro método de importación, consulte la guía [Todo sobre el SQL Privado](https://docs.ovh.com/es/hosting/todo_sobre_el_sql_privado/).
 
 #### 1. Acceder a la importación de una base de datos
 
@@ -169,6 +169,6 @@ Ya puede finalizar la instalación de su sitio web o la migración de su base de
 
 ## Más información
 
-[Todo sobre el SQL Privado](../todo_sobre_el_sql_privado/){.external}
+[Todo sobre el SQL Privado](https://docs.ovh.com/es/hosting/todo_sobre_el_sql_privado//){.external}
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).
