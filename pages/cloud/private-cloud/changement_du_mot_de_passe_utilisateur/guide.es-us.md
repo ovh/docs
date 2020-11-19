@@ -1,13 +1,11 @@
 ---
 title: Cambiar la contraseña de usuario
 slug: cambiar-contrasena-usuario
-routes:
-    canonical: 'https://docs.ovh.com/es/private-cloud/cambiar-contrase%C3%B1a-usuario/'
 excerpt: Cómo modificar la contraseña de usuario del cliente vSphere desde el área de cliente de OVHcloud
 section: Funcionalidades de OVHcloud
 ---
 
-**Última actualización: 18/11/2020**
+**Última actualización: 17/06/2020**
  
 ## Objetivo
 
@@ -17,14 +15,14 @@ Es posible gestionar los permisos y contraseñas de los usuarios del cliente vSp
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Haber creado una cuenta de usuario desde el área de cliente de OVHcloud. Para más información, consulte [esta guía](../manager-ovhcloud/#usuarios)
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Haber creado una cuenta de usuario desde el área de cliente de OVHcloud. Para más información, consulte [esta guía](../manager-ovh-private-cloud/#usuarios).
 
 ## Procedimiento
 
 ### Cambiar la contraseña
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, acceda al menú `Servidores`{.action} y, en la sección `Managed Bare Metal`{.action}, seleccione su servidor en la lista. A continuación, haga clic en la pestaña `Usuarios` (4).
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, acceda al menú `Servidores`{.action} y, en la sección `Private Cloud`{.action}, seleccione su servidor en la lista. A continuación, haga clic en la pestaña `Usuarios` (4).
 
 ![acceso área de cliente](images/userpassword1.png){.thumbnail}
 
@@ -57,8 +55,10 @@ Introduzca la nueva contraseña y confírmela.
 
 ## Más información
 
+[Presentación del área de cliente Private Cloud OVHcloud](../manager-ovh-private-cloud/)
+
 [Cambiar los permisos de un usuario](../cambiar-los-permisos-de-un-usuario/)
 
-[Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contraseña/)
+[Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contraseña/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
