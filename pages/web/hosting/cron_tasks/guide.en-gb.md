@@ -81,7 +81,7 @@ The task will be ready within a few minutes. You can then modify all of its sett
 
 ### Limitations of Web Hosting tasks
 
-|Step|Description|
+|Functionality|Description|
 |---|---|
 |Hourly scheduling|You might notice that the field for "Minutes of the hour" is disabled in the interface (set to "?" in the *crontab* view). A task can only be executed once an hour as the highest repetition frequency and the minute of execution cannot be specified.|
 |Running time|The time limit for a task is 60 minutes. If a script exceeds this running time, it will be stopped automatically by the system.|
@@ -99,7 +99,7 @@ A simple test to see if your script will produce an error is to run it in a web 
 
 #### Verifying the usage of absolute paths
 
-Always make sure to use absolute paths to files in your scripts. The "DIR" constant, for example, can help to receive the current path in PHP scripts ([PHP documentation](http://php.net/manual/en/language.constants.predefined.php)).
+Always make sure to use absolute paths to files in your scripts. The "DIR" constant, for example, can help to receive the current path in PHP scripts ([PHP documentation](http://php.net/manual/en/language.constants.predefined.php){.external}).
  
 #### Checking your execution logs
 

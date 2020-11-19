@@ -170,7 +170,7 @@ Si vous avez copié l'intégralité de la chaine, l'identifiant qui suit la clé
 
 > [!primary]
 >
-> Toute clé enregistrée dans la section « Dédié » sera également utilisable pour vos services VPS. En ce qui concerne les clés SSH pour les services Public Cloud, veuillez vous référer à [ce guide](../public-cloud/creation-des-cles-ssh/).
+> Toute clé enregistrée dans la section « Dédié » sera également utilisable pour vos services VPS. En ce qui concerne les clés SSH pour les services Public Cloud, veuillez vous référer à [ce guide](../../public-cloud/premiers-pas-instance-public-cloud).
 >
 
 

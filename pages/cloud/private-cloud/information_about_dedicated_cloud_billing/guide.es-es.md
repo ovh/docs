@@ -3,7 +3,7 @@ title: Información sobre la facturación de Dedicated Cloud
 excerpt: Detalles sobre el funcionamiento de la facturación de Dedicated Cloud
 slug: informacion_sobre_la_facturacion_de_dedicated_cloud
 legacy_guide_number: g677
-section: Funcionalidades de OVH
+section: Funcionalidades de OVHcloud
 ---
 
 

@@ -41,6 +41,7 @@ The KVM screen will now open, which is a small window showing a connection to yo
 > [!primary]
 >
 > If you have issues with double typing, the issue may originate due to auto screen adjustment. We recommend opening the KVM in a new window using the "Open in a new window" button.
+>
 > Should you still have issues with the screen, we recommend removing from the URL the "auto" part. If the URL is https://compute.sbg1.cloud.ovh.net:6080/vnc_auto.html?token=xxxxxxxxxxxx then it should become https://compute.sbg1.cloud.ovh.net:6080/vnc.html?token=xxxxxxxxxxxx (the link for you may be different, this is only illustrating which part of the URL needs to be removed)
 >
 

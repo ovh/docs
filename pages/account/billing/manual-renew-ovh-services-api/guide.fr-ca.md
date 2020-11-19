@@ -17,7 +17,7 @@ Nativement, OVH vous propose le renouvellement automatique de votre offre. Il es
 ## Prérequis
 
 - Être connecté aux [API OVH](https://api.ovh.com/console){.external}.
-- Avoir [créé ses identifiants pour l'API OVH](https://docs.ovh.com/ca/fr/customer/first-steps-with-ovh-api/){.external}.
+- Avoir créé ses identifiants pour l'API OVH.
 
 ## En pratique
 

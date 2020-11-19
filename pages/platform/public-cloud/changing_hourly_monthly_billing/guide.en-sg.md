@@ -27,7 +27,7 @@ When you create a Public Cloud instance, you can choose to be billed at either a
 
 ## Requirements
 
-- You need to have created a [Public Cloud instance](https://www.ovh.com/sg/public-cloud/instances/){.external}.
+- You need to have created a [Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/){.external}.
 - You must be logged in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 

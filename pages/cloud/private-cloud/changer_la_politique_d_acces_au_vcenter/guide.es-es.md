@@ -5,7 +5,7 @@ excerpt: Cómo modificar la política de acceso al vCenter
 legacy_guide_number: '1442246'
 space_key: VS
 space_name: vSphere as a Service
-section: Funcionalidades de OVH
+section: Funcionalidades de OVHcloud
 ---
 
 **Última actualización: 07/07/2020**

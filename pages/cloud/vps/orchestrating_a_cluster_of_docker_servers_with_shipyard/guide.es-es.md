@@ -144,7 +144,7 @@ iptables-persistent save
 
 
 ## 
-Después de haber instalado Docker en las tres máquinas (ver la guía de [instalación de Docker](http://www.ovh.es/g1708.optimizar_el_alojamiento_de_un_sitio_web_wordpress_en_un_vps_gracias_a_docker) —también es posible disponer de instancias RunAbove aprovisionadas con Docker Machine, para más información puede consultar [esta guía](https://community.runabove.com/kb/en/instances/docker-in-5-minutes-on-runabove-with-docker-machine.html)—), vamos a activar la escucha del demonio Docker en un puerto (por ejemplo, el puerto 2375, que es el puerto oficial asignado por la [IANA](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker)) para que dichas máquinas puedan dialogar con la máquina maestra. 
+Después de haber instalado Docker en las tres máquinas —también es posible disponer de instancias RunAbove aprovisionadas con Docker Machine, vamos a activar la escucha del demonio Docker en un puerto (por ejemplo, el puerto 2375, que es el puerto oficial asignado por la [IANA](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker)) para que dichas máquinas puedan dialogar con la máquina maestra. 
 
 Para ello, vamos a empezar por detener Docker en cada una de nuestras máquinas con el siguiente comando:
 
@@ -246,7 +246,7 @@ Confirm: <REPETIR_CONTRASEÑA>
 
 Una vez realizada esta operación, utilizamos Ctrl+D para salir de la interfaz de línea de comandos. 
 
-Ahora podrá acceder a la interfaz de Shipyard desde http://<your-host-ip>:8080 identificándose con el usuario «admin» y la contraseña que haya indicado.
+Ahora podrá acceder a la interfaz de Shipyard desde `http://<your-host-ip>:8080` identificándose con el usuario «admin» y la contraseña que haya indicado.
 
 Cuando se haya conectado, podrá proceder a registrar los nodos (engines) desde la interfaz web de Shipyard, en la pestaña «Engines »:
 
@@ -297,5 +297,5 @@ En la pestaña «Containers», podemos visualizar y gestionar todos los contened
 Por último, haciendo clic en «DEPLOY» podremos ejecutar contenedores en todos nuestros nodos o en algunos de ellos (seleccionando el «label» correspondiente a los nodos en los que queremos desplegar el contenedor):
 
 ![](images/img_2616.jpg){.thumbnail}
-Ya dispone de un sistema de orquestación de sus distintas máquinas Docker y puede aprovisionar sus aplicaciones/contenedores dentro de su cluster fácil y rápidamente, y disponiendo de una interfaz gráfica. Además, si quiere probar Docker, no olvide nuestra alfa Sailabove disponible en [https://labs.runabove.com/docker/](https://labs.runabove.com/docker/). Asimismo, acabamos de crear una plantilla Ubuntu 14.04 con Docker (preinstalado) en VPS Cloud y VPS Classic (disponible en todos nuestros VPS, excepto en los VPS Classic 1, que no disponen de suficiente espacio en disco). Con ella podrá disponer directamente de una máquina lista para ejecutar contenedores, beneficiándose de las ventajas inherentes a los VPS de OVH.
+
 

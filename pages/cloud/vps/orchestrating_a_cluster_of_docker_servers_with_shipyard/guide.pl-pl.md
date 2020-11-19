@@ -142,7 +142,7 @@ iptables-persistent save
 
 
 ## 
-Po zainstalowaniu narzędzia Docker na 3 maszynach (zobacz [nasz poprzedni przewodnik](https://www.ovh.pl/g1708.optimiser_lhebergement_dun_site_wordpress_sur_un_vps_grace_a_docker), można również dysponować instancjami RunAbove dostarczanymi razem z Docker machine; więcej informacji można uzyskać w tym [przewodniku](https://community.runabove.com/kb/en/instances/docker-in-5-minutes-on-runabove-with-docker-machine.html)) włączymy nasłuchiwanie Docker daemona na porcie (na przykład na porcie 2375, który jest oficjalnym portem nadanym przez [IANA](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker)), aby maszyny te mogły się komunikować z maszyną główną. 
+
 Aby to zrobić, rozpoczniemy od zatrzymania narzędzia Docker na każdej z maszyn za pomocą polecenia:
 
 
@@ -238,7 +238,7 @@ Confirm: <JESZCZE_RAZ>
 
 Po wykonaniu tej operacji używamy ctrl+d, aby zamknąć CLI.
 
-Teraz masz dostęp do interfejsu Shipyard na stronie http://<your-host-ip>:8080. Należy podać login « admin » i zdefiniowane hasło.
+Teraz masz dostęp do interfejsu Shipyard na stronie `http://<your-host-ip>:8080`. Należy podać login « admin » i zdefiniowane hasło.
 
 Po zalogowaniu można przystąpić do rejestracji maszyn (węzłów). Przechodzimy do sekcji  « engines »:
 
@@ -288,5 +288,4 @@ W zakładce dotyczącej kontenerów możemy zobaczyć i zarządzać wszystkimi k
 Klikając na « deploy », będziemy mogli uruchamiać kontenery na wszystkich naszych węzłach lub na wybranych węzłach (wybierając etykietę odnoszącą się do węzłów, na których chcemy wdrożyć kontener):
 
 ![](images/img_2616.jpg){.thumbnail}
-Dysponujesz już systemem organizującym pracę poszczególnych maszyn Docker i możesz za pomocą graficznego interfejsu szybko i w prosty sposób zarządzać aplikacjami / kontenerami w ramach swojego klastra. Jeśli chcesz przetestować platformę Docker, skorzystaj z naszej oferty Alpha Sailabove dostępnej na stronie [https://labs.runabove.com/docker/](https://labs.runabove.com/docker/). Udostępniliśmy również szablon Ubuntu 14.04 z pre-instalowaną usługą Docker na serwerach VPS Cloud i VPS Classic (dostępny na wszystkich serwerach VPS poza ofertą VPS classic 1, która nie dysponuje wystarczającą przestrzenią dyskową). Dzięki temu można korzystać z maszyny gotowej do tworzenia kontenerów z zaletami oferty VPS OVH.
 

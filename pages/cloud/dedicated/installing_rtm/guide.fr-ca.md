@@ -244,6 +244,4 @@ Le paquet RTM n'est pas encore compatible pour Windows. (en cours)
 
 [Adresses IP pour la surveillance OVHcloud](../monitoring-ip-ovh/){.external}.
 
-[Visualiser vos donnees](../metrics/usecase-visualize/){.external}.
-
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

@@ -2,13 +2,7 @@ language: python
 python:
   - "3.5"
 install:
-# using wget + unzip as it is faster than git
-  - wget https://github.com/ovh/docs-developer-env/archive/master.zip -O master.zip
-  - unzip master.zip
-  - mv docs-developer-env-master docs-developer-env
-  - wget https://github.com/ovh/docs-rendering/archive/master.zip -O master.zip
-  - unzip master.zip
-  - mv docs-rendering-master docs-rendering
+  - git clone --recursive https://github.com/ovh/docs-rendering.git
   - pip install -r docs-rendering/requirements.txt
 
 # command to run tests

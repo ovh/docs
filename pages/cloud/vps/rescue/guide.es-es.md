@@ -53,6 +53,6 @@ Una vez realizadas las operaciones necesarias en modo de rescate, podrá reinici
 
 ## Más información
 
-[Introducción al SSH](https://docs.ovh.com/es/dedicated/ssh-introduction/)
+[Introducción al SSH](../../dedicated/introduccion-ssh/)
 
 Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/).

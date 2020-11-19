@@ -139,7 +139,7 @@ iptables-persistent save
 
 
 ## 
-Once Docker is installed on our 3 servers (see [this guide](https://community.runabove.com/kb/en/instances/docker-in-5-minutes-on-runabove-with-docker-machine.html)). We're going bind the Docker daemon to a port, e.g. port 2375 - the official port assigned by [the IANA](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker), so that these servers can communicate with the master server. Start by stopping Docker on every one of our servers with this command:
+Once Docker is installed on our 3 servers, we're going bind the Docker daemon to a port, e.g. port 2375 - the official port assigned by [the IANA](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker), so that these servers can communicate with the master server. Start by stopping Docker on every one of our servers with this command:
 
 
 ```
@@ -229,7 +229,7 @@ Confirm: <RE-ENTER_YOUR_PASSWORD>
 
 Once we've completed the operation, we will use ctrl+d to exit the CLI. 
 
-You can now access the Shipyard interface via http://<your-host-ip>:8080 by logging in with the "admin" username and your password.
+You can now access the Shipyard interface via `http://<your-host-ip>:8080` by logging in with the "admin" username and your password.
 
 Once you're in, we're going to add engines (nodes) via the Shipyard web interface under Engines:
 

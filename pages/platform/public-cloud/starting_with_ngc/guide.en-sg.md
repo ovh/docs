@@ -20,9 +20,9 @@ The first part of the guide will be OVH specific for basic usage. The second par
 
 ### Create an NGC instance via OVH Manager
 
-The first step will be to [create a Public Cloud project](https://docs.ovh.com/sg/en/public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project/){.external}
+The first step will be to [create a Public Cloud project](../getting_started_with_public_cloud_logging_in_and_creating_a_project/){.external}
 
-The second step will be to [create an instance](https://docs.ovh.com/sg/en/public-cloud/create_an_instance_in_your_ovh_customer_account/){.external} into the newly created project.
+The second step will be to [create an instance](../create_an_instance_in_your_ovh_customer_account/){.external} into the newly created project.
 
 In the case of NGC, be sure to pick:
 
@@ -37,7 +37,7 @@ For now, we'll focus on the command line client `openstack`.
 
 #### Configure your local environment
 
-First, [configure access to the Horizon interface](https://docs.ovh.com/sg/en/public-cloud/configure-user-access-to-horizon/){.external}.
+First, [configure access to the Horizon interface](../configure_user_access_to_horizon/){.external}.
 
 Next, click on the `...`{.action} icon at the end of the line and then click the `Download OpenStack configuration file`{.action} link.
 

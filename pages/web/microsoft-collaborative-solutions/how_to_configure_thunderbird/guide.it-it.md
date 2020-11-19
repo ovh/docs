@@ -19,7 +19,7 @@ Gli account Exchange possono essere configurati su client di posta compatibili. 
 > OVHcloud mette a tua disposizione servizi di cui tu sei il responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 > 
 > Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare uno esperto del settore 
-> o il fornitore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_20132016_configurazione_di_thunderbird/#per_saperne_di_piu_1)
+> o il fornitore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](../exchange_20132016_configurazione_di_thunderbird/#per_saperne_di_piu_1)
 > di questa guida.
 > 
 
@@ -79,7 +79,7 @@ Dopo aver cliccato su `Configurazione manuale`{.action}, verifica che i dati sia
 
 > [!primary]
 >
-> Per gli account di tipo [Private Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/exchange_configura_la_tua_soluzione_private_exchange/){.external}, inserisci il nome del server che hai scelto al momento dell’ordine.
+> Per gli account di tipo [Private Exchange](../exchange_pirmi_zingsniai_su_private_serveriu/){.external}, inserisci il nome del server che hai scelto al momento dell’ordine.
 >
 
 Se l’autenticazione **Password normale** non funziona, puoi inserire anche **NTLM**.

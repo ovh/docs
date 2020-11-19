@@ -32,8 +32,11 @@ section: Technical resources
 
 ## Nodes and pods
 
-We have tested our OVHcloud Managed Kubernetes service with up to 100 nodes and 100 pods per node.  
+## Nodes and pods
+
+We have tested our OVHcloud Managed Kubernetes service with up to 100 nodes and 100 pods per node. 
 While we are fairly sure it can go further, we advise you to keep under those limits.
+Nodepools with anti-affinity are limited to 5 nodes (but you can create multiple node pools with the same instance flavor if needed of course).
 
 In general, it's better to have several mid-size Kubernetes clusters than one monster-size one.
 

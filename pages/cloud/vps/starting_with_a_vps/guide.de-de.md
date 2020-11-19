@@ -63,7 +63,7 @@ ssh nutzername@IPv4_Ihres_VPS
 Da Sie nun mit "Root"-Berechtigungen (sudo-Nutzer) eingeloggt sind, können Sie Befehle zur Ausführung administrativer Tasks eingeben. Wir empfehlen Ihnen, vorher Ihr Passwort zu ändern:
 
 ```sh
-$ sudo passwd
+~$ sudo passwd
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -72,8 +72,8 @@ passwd: password updated successfully
 Beachten Sie, dass die Passwörter nicht angezeigt werden. Wechseln Sie anschließend zum root-Nutzer und vergeben Sie Ihr Admin-Passwort:
 
 ```sh
-$ sudo su -
-# passwd
+~$ sudo su -
+~# passwd
 New password:
 Retype new password:
 passwd: password updated successfully

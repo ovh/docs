@@ -3,7 +3,7 @@ title: 'Eliminar um datastore'
 slug: eliminacao-data-store
 excerpt: 'Saiba como eliminar um datastore do Private Cloud'
 legacy_guide_number: '7766789'
-section: 'Funcionalidades da OVH'
+section: 'Funcionalidades da OVHcloud'
 ---
 
 **Última atualização: 24/07/2020**

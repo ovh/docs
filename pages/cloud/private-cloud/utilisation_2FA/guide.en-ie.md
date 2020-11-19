@@ -2,7 +2,7 @@
 title: 'Using two-factor authentication (2FA) on your Private Cloud infrastructure'
 slug: use-2FA
 excerpt: 'Find out how to enable the two-factor authentication to protect your infrastructure'
-section: 'OVH Features'
+section: 'OVHcloud Features'
 order: 5
 ---
 

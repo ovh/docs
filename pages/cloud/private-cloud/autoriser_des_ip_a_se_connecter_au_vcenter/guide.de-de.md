@@ -23,7 +23,7 @@ Der Zugang zu vCenter kann eingeschränkt werden. Dazu wird nur bestimmten IP-Ad
 
 Wenn die [Regeln für den Zugang zu vCenter anpassen](../zugriffsregeln-fuer-vcenter-aendern/), müssen die IPs hinzugefügt werden, die sich mit dem Dienst verbinden dürfen.
 
-Dies erfolgt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager). Klicken Sie im Bereich `Bare Metal Cloud` auf die Rubrik `Private Cloud`. Wählen Sie die Infrastruktur aus. Klicken Sie dann auf den Tab `Sicherheit` und danach auf `Neuen IP-Bereich hinzufügen`{.action}.
+Dies erfolgt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager). Klicken Sie im Bereich `Hosted Private Cloud` auf die Rubrik `Private Cloud`. Wählen Sie die Infrastruktur aus. Klicken Sie dann auf den Tab `Sicherheit` und danach auf `Neuen IP-Bereich hinzufügen`{.action}.
 
 ![vCenter](images/restrictIP.JPG){.thumbnail}
 

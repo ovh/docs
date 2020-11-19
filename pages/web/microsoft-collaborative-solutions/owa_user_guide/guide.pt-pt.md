@@ -171,7 +171,7 @@ Preencha a informação solicitada dependendo da ação que deseja ver concluíd
 
 ![useowa](images/owa_exchange_step21.png){.thumbnail}
 
-Para instruções mais detalhadas sobre como criar respostas automáticas, consulte o nosso guia: [Criar respostas automáticas no OWA](../exchange_2016_como_configurar_respostas_automaticas_no_owa).
+Para instruções mais detalhadas sobre como criar respostas automáticas, consulte o nosso guia: [Criar respostas automáticas no OWA](../exchange_2016_how_to_set_up_automatic_replies_in_owa/).
 
 ### Adicionar assinatura
 
@@ -199,7 +199,7 @@ Depois aceda à vista de árvore do menu “Opções” situado do lado esquerdo
 
 ## Saiba mais
 
-[Criar respostas automáticas no OWA](../exchange_2016_como_configurar_respostas_automaticas_no_owa)
+[Criar respostas automáticas no OWA](../exchange_2016_how_to_set_up_automatic_replies_in_owa/)
 
 [Partilhar uma pasta através do webmail OWA](../exchange_2016_partilhar_uma_pasta_atraves_do_webmail_owa/)
 

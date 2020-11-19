@@ -2,7 +2,7 @@
 title: Aggiungere un blocco IP
 slug: aggiunger-un-blocco-ip
 excerpt: Ordinare un blocco IP su un Private Cloud
-section: Funzionalità OVH
+section: Funzionalità OVHcloud
 order: 01
 ---
 
@@ -23,7 +23,7 @@ Un blocco IP Un blocco IP può essere utilizzato per rendere i tuoi servizi acce
 
 ### Ordinare un blocco IP
 
-Per ordinare un blocco IP aggiuntivo per il tuo **Private Cloud**, accedi allo Spazio Cliente OVHcloud. Nella sezione `Bare Metal Cloud`, clicca su `IP` nella colonna di sinistra e poi clicca su `Ordina IP aggiuntivi`{.action}. Quindi seleziona il tuo **Private Cloud** nel menu a tendina prima di passare allo step successivo.
+Per ordinare un blocco IP aggiuntivo per il tuo **Private Cloud**, accedi allo Spazio Cliente OVHcloud. Nella sezione `Hosted Private Cloud`, clicca su `IP` nella colonna di sinistra e poi clicca su `Ordina IP aggiuntivi`{.action}. Quindi seleziona il tuo **Private Cloud** nel menu a tendina prima di passare allo step successivo.
 
 
 Per la creazione del tuo blocco IP è necessario compilare diversi campi.
@@ -99,7 +99,7 @@ Dopodiché utilizza questa chiamata API per spostare l’IP nel Parking degli IP
 > Questa chiamata interrompe la rete sulle VM che utilizzano gli IP in questione.
 >
 
-È possibile seguire la migrazione del blocco IP dal tuo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} nella sezione`Bare Metal Cloud`{.action} > `Private Cloud`{.action}. Clicca sul tuo servizio Hosted Private Cloud, quindi sulla scheda `Operazioni`{.action}.
+È possibile seguire la migrazione del blocco IP dal tuo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} nella sezione`Hosted Private Cloud`{.action} > `Private Cloud`{.action}. Clicca sul tuo servizio Hosted Private Cloud, quindi sulla scheda `Operazioni`{.action}.
 
 Il riferimento dell’operazione è « removeIpRipeBlock ».
 

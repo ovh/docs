@@ -2,7 +2,7 @@
 title: 'Añadir recursos por horas'
 slug: anadir-recursos-por-horas
 excerpt: 'Cómo añadir recursos con facturación por horas'
-section: 'Funcionalidades de OVH'
+section: 'Funcionalidades de OVHcloud'
 ---
 
 **Última actualización: 04/10/2018**

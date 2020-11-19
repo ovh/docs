@@ -2,7 +2,7 @@
 title: Changing the User Password
 excerpt: Learn how to change a vSphere client user's password from your OVHcloud Control Panel
 slug: changing-user-password
-section: OVH Features
+section: OVHcloud Features
 ---
 
 **Last updated 17th June 2020**
@@ -22,7 +22,7 @@ vSphere client user permissions and passwords are managed from the OVHcloud Cont
 
 ### Change Password
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to `Bare Metal Cloud`{.action} (1), click `Private Cloud`{.action} (2) and select your server from the list (3). Click the `Users`{.action} (4) tab.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to `Hosted Private Cloud`{.action} (1), click `Private Cloud`{.action} (2) and select your server from the list (3). Click the `Users`{.action} (4) tab.
 
 ![control panel](images/userpassword1.png){.thumbnail}
 

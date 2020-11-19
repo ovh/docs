@@ -4,7 +4,7 @@ slug: autoriser-des-ip-a-se-connecter-au-vcenter
 legacy_guide_number: '1442255'
 space_key: VS
 space_name: vSphere as a Service
-section: Fonctionnalités OVH
+section: Fonctionnalités OVHcloud
 ---
 
 **Dernière mise à jour le 25/06/2020**
@@ -24,7 +24,7 @@ Il est possible de restreindre l'accès au vCenter en autorisant uniquement cert
 
 Lorsque [la politique d'accès au vCenter est restreinte](../changer-la-politique-d-acces-au-vcenter/), il est nécessaire d'ajouter les IPs qui seront autorisées à se connecter au service.
 
-L'opération se réalise dans [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external-link}. Dans la section `Bare Metal Cloud`, cliquez sur la rubrique `Private Cloud`. Sélectionnez l'infrastructure puis rendez-vous dans l'onglet `Sécurité` et enfin cliquez sur `Ajouter une nouvelle plage d'adresses IP`{.action}.
+L'opération se réalise dans [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external-link}. Dans la section `Hosted Private Cloud`, cliquez sur la rubrique `Private Cloud`. Sélectionnez l'infrastructure puis rendez-vous dans l'onglet `Sécurité` et enfin cliquez sur `Ajouter une nouvelle plage d'adresses IP`{.action}.
 
 ![vCenter](images/restrictIP.JPG){.thumbnail}
 

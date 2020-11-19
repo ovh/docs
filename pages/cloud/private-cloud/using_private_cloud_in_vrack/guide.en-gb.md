@@ -3,7 +3,7 @@ title: Using Private Cloud within a vRack
 slug: using-private-cloud-with-vrack
 excerpt: Find out how to use vRack with an SDDC solution
 legacy_guide_number: '7766915'
-section: OVH Features
+section: OVHcloud Features
 order: 2
 ---
 
@@ -19,7 +19,7 @@ The OVHcloud vRack feature makes it possible to connect different cloud services
 
 ### OVHcloud Control Panel
 
-After your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) is delivered, it will be displayed in the section `vRack` (under "Server" in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)) and the "datacenter" will be automatically included into a vRack.
+After your [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) is delivered, it will be displayed in the section `vRack` (under "Hosted Private Cloud" in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)) and the "datacenter" will be automatically included into a vRack.
 
 ![Data centre](images/vRackDatacenter.PNG){.thumbnail}
 

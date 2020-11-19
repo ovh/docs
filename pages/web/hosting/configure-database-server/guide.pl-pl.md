@@ -2,7 +2,7 @@
 title: 'Konfiguracja serwera baz danych'
 slug: konfiguracja-optymalizacja-serwera-bazy-danych
 excerpt: 'Dowiedz się, jak skonfigurować i zoptymalizować serwer bazy danych'
-section: 'Prywatny SQL'
+section: 'Private SQL'
 order: 6
 ---
 
@@ -121,8 +121,9 @@ W polu **"Ogólna konfiguracja MySQL"** znajdziesz konfigurację aktualnie zdefi
 
 > [!primary]
 >
-> Rozmiar:
-> \- /dev/shm : Serwer baz danych przypisze połowę pamięci RAM do tego katalogu, aby uzyskać większą wydajność.
+> <b>Tmpdir</b>: 
+> \- /dev/shm: Serwer baz danych przypisze połowę pamięci RAM do tego katalogu, aby uzyskać większą wydajność.
+>
 > \- /tmp: Serwer przydzieli nielimitowaną przestrzeń dla tego katalogu na dysku twardym. Zalecamy korzystanie z tego katalogu tylko w przypadku sporadycznych, ciężkich operacji.
 >
 

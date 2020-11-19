@@ -2,7 +2,7 @@
 title: 'Host zapasowy'
 excerpt: 'Mechanizm wymiany hosta'
 slug: hosty_zapasowe
-section: 'Funkcjonalności OVH'
+section: 'Funkcjonalności OVHcloud'
 legacy_guide_number: g860
 order: 4
 ---
