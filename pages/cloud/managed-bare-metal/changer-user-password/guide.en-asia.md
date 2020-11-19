@@ -18,7 +18,7 @@ vSphere client user permissions and passwords are managed from the OVHcloud Cont
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
-- a user account created from the OVHcloud Control Panel.
+- a user account created from the OVHcloud Control Panel. For more information, read [this guide](../control-panel-ovhcloud/#users-tab)
 
 ## Instructions
 

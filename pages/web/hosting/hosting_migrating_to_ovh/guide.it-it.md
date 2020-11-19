@@ -91,7 +91,7 @@ Questa fase è a sua volta suddivisa in ulteriori passaggi.
 |Step|Descrizione|Dettagli|
 |---|---|---|
 |5.1.|Effettua la migrazione del contenuto degli indirizzi email in OVH|Utilizza il tool [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external} che ti consente di copiare il contenuto dagli indirizzi email registrati presso il tuo precedente provider a quelli creati presso OVH.|
-|5.2.|Utilizza i tuoi account email|Puoi accedere ai tuoi indirizzi email da un’applicazione Web ([Webmail](https://www.ovh.it/mail/){.external}). Se hai configurato uno degli indirizzi su un client di posta elettronica (come Outlook), è necessario ripetere l’operazione per inserire [i server di OVH](https://docs.ovh.com/it/emails/hosting_condiviso_come_gestire_il_servizio_email_ovh/) al posto di quelli appartenenti al tuo precedente provider.|
+|5.2.|Utilizza i tuoi account email|Puoi accedere ai tuoi indirizzi email da un’applicazione Web ([Webmail](https://www.ovh.it/mail/){.external}). Se hai configurato uno degli indirizzi su un client di posta elettronica (come Outlook), è necessario ripetere l’operazione per inserire [i server di OVH](../../emails/informazioni-generali-email-condivise/) al posto di quelli appartenenti al tuo precedente provider.|
 
 #### Step 6: trasferisci il tuo dominio su OVH
 

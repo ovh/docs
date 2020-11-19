@@ -18,7 +18,7 @@ A gestão das autorizações e palavras-passe dos utilizadores cliente vSphere r
 ## Requisitos
 
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Dispor de uma conta de utilizador criada a partir da Área de Cliente OVHcloud.
+- Dispor de uma conta de utilizador criada a partir da Área de Cliente OVHcloud. Para mais informações, [consulte este manual](../manager-ovhcloud/#utilizadores)
 
 ## Instruções
 
