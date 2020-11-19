@@ -1,9 +1,9 @@
 ---
-Titel: 'Meine Website mithilfe eines CDN beschleunigen'
-verwendung_des_geocache_boosters_auf_einem_webhosting/
-legacy_guide_number: 1290
-Auszug: 'Verbessern Sie Ihre Website, indem Sie dank CDN das Laden auf Ihrem Webhosting beschleunigen'
-Abschnitt: 'Die Website optimieren'
+title: 'Ihre Webseiten mit CDN beschleunigen'
+excerpt: 'Erfahren Sie hier, wie Sie die Ladezeiten Ihres Webhostings mit der CDN-Option verbessern'
+slug: verwendung_des_geocache_boosters_auf_einem_webhosting
+section: 'Webseitenoptimierung'
+order: 1
 ---
 
 **Stand 19.11.2020**
