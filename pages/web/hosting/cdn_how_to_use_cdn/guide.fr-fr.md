@@ -70,7 +70,7 @@ Concernant le SEO (référencement sur les moteurs de recherche), la vitesse d'a
 
 > [!primary]
 > 
-> L'option shared CDN est déjà incluse dans les offres d'hébergement web Performance ou disponible à la commande depuis le xx/11/20. Pour les versions plus anciennes, référez-vous au paragraphe [Gérer votre CDN (version historique)](./#gerer-votre-cdn-version-historique).
+> L'option shared CDN est déjà incluse dans les offres d'hébergement web Performance ou disponible à la commande depuis le 19/11/20. Pour les versions plus anciennes, référez-vous au paragraphe [Gérer votre CDN (version historique)](./#gerer-votre-cdn-version-historique).
 
 #### Vider le cache du Shared CDN
 
