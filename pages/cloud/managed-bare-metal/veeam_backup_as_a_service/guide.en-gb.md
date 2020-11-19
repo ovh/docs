@@ -33,7 +33,7 @@ Backups are performed using a virtual machine (VM) within your [Managed Bare Met
 
 The first step is to order the service from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). To do this, go to the `Managed Bare Metal`{.action} section of the `Bare Metal Cloud`{.action} tab. Click on the relevant vSphere infrastructure, then select the data centre. Click on the `Backup`{.action} tab.
 
-![Enable backup](images/veeam-managed-controlp_new.png){.thumbnail}
+![Enable backup](images/veeam-managed-bare-metal.png){.thumbnail}
 
 Choose the appropriate plan and continue by clicking `Choose solution`{.action}.
 
