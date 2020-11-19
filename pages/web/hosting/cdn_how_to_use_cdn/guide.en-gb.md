@@ -35,19 +35,19 @@ In order for this to work, each server stores a part of your website in its cach
 > 
 > The CDN option is already included in the "Performance" Web Hosting plans.
 
-####  If the CDN option is not ordered or enabled on your Web Hosting plan:
+#### If the CDN option is not ordered or enabled on your Web Hosting plan
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant Web Hosting plan. Click on `...`{.action} to the right of “CDN option”, then on `Order a CDN`{.action} or `Activate option`{.action} if the CDN option is already included in your hosting.
 
 > [!primary]
 > 
-> If you have a CDN option before 11/19/2020, you can order the new Shared CDN offer by clicking `Update CDN to higher`{.action} version.
+> If you have a CDN option from before 11/19/2020, you can order the new Shared CDN offer by clicking `Upgrade CDN to a later version`{.action}.
 
 ![CDN](images/manage_CDN_01.png){.thumbnail}
 
 You will be redirected to a page where you can generate a purchase order. Once the order is paid, the service will be available within a few minutes.
 
-#### If the CDN option is already enabled on your Web Hosting plan:
+#### If the CDN option is already enabled on your Web Hosting plan
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant Web Hosting plan. On the `Multisite`{.action} tab, click on `...`{.action} to the right of the Multisite entry, then click on `Modify domain`{.action}.
 
