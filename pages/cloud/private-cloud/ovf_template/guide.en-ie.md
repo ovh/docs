@@ -1,14 +1,12 @@
 ---
 title: Deploy an OVF Linux, Windows Server and Windows SQL Server template
-slug: applying-ovhcloud-template
-routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/applying-ovh-template/'
+slug: applying-ovh-template
 excerpt: Find out how to deploy a Linux, Windows Server or Windows SQL Server template
 section: Virtual machine management
 order: 02
 ---
 
-**Last updated 18th November 2020**
+**Last updated 12th October 2020**
 
 ## Objective
 
@@ -20,19 +18,19 @@ Windows VMs deployed from a template automatically use the SPLA licences provide
 
 > [!primary]
 > 
-> You can find the prices of the images offered by OVHcloud on this [page](https://www.ovhcloud.com/en-gb/managed-bare-metal/options/).
+> You can find the prices of the images offered by OVHcloud on this [page](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/images-licenses/).
 >
 
 ## Requirements
 
 - Web client access (HTML5)
-- [active Windows licences](../control-panel-ovhcloud/#windows-licence-tab) (activate via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, in the `Windows licence`{.action} tab for the datacentre)
+- [active Windows licences](../control-panel-ovh-private-cloud/#windows-licence){.external} (activate via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, in the `Windows licence`{.action} tab for the datacentre)
 
 ## Instructions
 
 ### Find the URL of the OVF template
 
-In your web browser, go to your Managed Bare Metal homepage, and click on `OVH Templates`{.action}.
+In your web browser, go to your Private Cloud homepage, and click on `OVH Templates`{.action}.
 
 ![Name of photo](images/gatewayssl.png){.thumbnail}
 
