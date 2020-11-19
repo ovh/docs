@@ -102,7 +102,7 @@ Gehen Sie zum Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.ac
 
 - **Brotli**: Typ der Komprimierung, um die Größe Ihrer Dateien im Cache zu optimieren.
 
-- **Cache-Regel**: Erstellen Sie bis zu 5 Regeln. Sie definieren die Häufigkeit der Cache-Aktualisierungen für bestimmte Ressourcen Ihrer Webseite ([siehe nächster Schritt](./#eine-cache-regel-erstellen).
+- **Cache-Regel**: Erstellen Sie bis zu 5 Regeln. Sie definieren die Häufigkeit der Cache-Aktualisierungen für bestimmte Ressourcen Ihrer Webseite ([siehe nächster Schritt](./#eine-cache-regel-erstellen).)
 
 Wenn Sie Ihre Optionen ausgewählt haben, klicken Sie auf `Konfiguration anwenden`{.action} und dann auf `Konfiguration `{.action} Fenster bestätigen.
 
