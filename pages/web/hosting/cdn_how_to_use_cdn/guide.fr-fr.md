@@ -6,7 +6,7 @@ excerpt: 'Améliorez votre site en accélérant son chargement sur votre héberg
 section: 'Optimiser son site'
 ---
 
-**Dernière mise à jour le 19/03/2020**
+**Dernière mise à jour le 19/11/2020**
 
 ## Objectif
 
