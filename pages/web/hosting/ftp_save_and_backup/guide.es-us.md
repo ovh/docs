@@ -81,7 +81,7 @@ En primer lugar, debe decidir qué programa o interfaz web va a utilizar para co
 
 - **FileZilla**: Puede descargar este programa desde la web oficial. Para más información, consulte nuestra [guía de uso de FileZilla](../web_hosting_guia_de_uso_de_filezilla/){.external}. Esta guía no sustituye a la documentación oficial del editor.
 
-- **Cyberduck**: Puede descargar este programa desde la web oficial. Para más información, consulte nuestra [guía de uso de Cyberduck (Mac)](../hosting/web_hosting_guia_de_uso_de_cyberduck_mac/){.external}. Esta guía no sustituye a la documentación oficial del editor.
+- **Cyberduck**: Puede descargar este programa desde la web oficial. Para más información, consulte nuestra [guía de uso de Cyberduck (Mac)](../web_hosting_guia_de_uso_de_cyberduck_mac/){.external}. Esta guía no sustituye a la documentación oficial del editor.
 
 - **FTP Explorer**: Puede acceder desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Para ello, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. Abra la pestaña `FTP - SSH`{.action} y haga clic en el botón `Explorador FTP`{.action}.
 
@@ -127,7 +127,7 @@ Una vez que se haya conectado, solo tiene que restaurar los archivos que desee. 
 
 ## Más información
 
-[Web hosting: guía de uso de FileZilla](../hosting/web_hosting_guia_de_uso_de_filezilla/){.external}
+[Web hosting: guía de uso de FileZilla](../web_hosting_guia_de_uso_de_filezilla/){.external}
 
 [Web hosting: Guía de uso de Cyberduck (Mac)](../web_hosting_guia_de_uso_de_cyberduck_mac/){.external}
 

@@ -37,7 +37,7 @@ Tenga en cuenta los siguientes aspectos:
 
 - El contenido de la antigua configuración DNS no se replica automáticamente en la nueva. Por lo tanto, deberá asegurarse de que la nueva configuración contiene toda la información necesaria para que los servicios asociados al dominio (como el sitio web o las direcciones de correo electrónico) funcionen correctamente.
 
-- Si quiere modificar un único elemento de la configuración DNS actual (un registro DNS, por ejemplo), le recomendamos que edite la zona DNS como se indica en la guía [Editar una zona DNS de OVHcloud](../domains/web_hosting_como_editar_mi_zona_dns/){.external}.
+- Si quiere modificar un único elemento de la configuración DNS actual (un registro DNS, por ejemplo), le recomendamos que edite la zona DNS como se indica en la guía [Editar una zona DNS de OVHcloud](../web_hosting_como_editar_mi_zona_dns/){.external}.
 
 - Existen registros (las entidades encargadas de gestionar las extensiones de dominio) que aplican requisitos particulares relativos a los servidores DNS: número de servidores de nombres, valor de los registros... En caso de duda, consulte con el registro responsable de la extensión.
 

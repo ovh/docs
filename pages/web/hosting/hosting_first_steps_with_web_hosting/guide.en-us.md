@@ -151,7 +151,7 @@ If you need help with your website’s features, we recommend referring to the C
 
 Now, you just need to start using your email addresses. To do this, OVHcloud offers an online webmail application: RoundCube. RoundCube is available at the following address: <https://mail.ovh.net/>. You will need to enter the credentials for the email addresses that you have created with OVHcloud.
 
-If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), please refer to our email guides: <https://docs.ovh.com/world/en/emails/>.
+If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), please refer to our email guides: <https://docs.ovh.com/us/en/emails/>.
 
 ## Go further
 
