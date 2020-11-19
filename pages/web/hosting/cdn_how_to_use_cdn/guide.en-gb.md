@@ -98,7 +98,7 @@ Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.ac
 
 - **Brotli**: Compression type that optimises the size of your cached files.
 
-- **Cache rule**: Create up to 5 rules. They will set the cache refresh rate for specific resources on your site (([see section below](./#creating-a-cache-rule)).
+- **Cache rule**: Create up to 5 rules. They will set the cache refresh rate for specific resources on your site ([see section below](./#creating-a-cache-rule)).
 
 Once you have chosen your options, click `Apply configuration`{.action}, then `Confirm configuration`{.action} in the next window.
 
