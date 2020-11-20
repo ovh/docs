@@ -10,23 +10,22 @@ order: 1
 
 ## Objectif
 
-[La migration automatique](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-migration-de-comptes-e-mail-ovh-mail-migrator/){.external} d’une adresse e-mail est possible via notre outil [OVH Mail Migrator](https://omm.ovh.net/){.external}. Vous pouvez également migrer manuellement votre adresse e-mail par le biais des logiciels de messagerie. 
+[La migration automatique](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-migration-de-comptes-e-mail-ovh-mail-migrator/){.external} d’une adresse e-mail est possible via notre outil [OVH Mail Migrator](https://omm.ovh.net/){.external}. Vous pouvez également migrer manuellement votre adresse e-mail par le biais des logiciels de messagerie.
 
 **Découvrez comment migrer manuellement votre adresse e-mail.**
 
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
-> 
+>
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Retrouvez plus d'informations dans la section « Aller plus loin » de ce guide.
-> 
+>
 
 ## Prérequis
 
 - Disposer d'un service e-mail chez OVHcloud, tel qu'une offre [Exchange](https://www.ovh.com/fr/emails/){.external}, [E-mail Pro](https://www.ovh.com/fr/emails/email-pro/){.external} ou MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external}).
 - Disposer des identifiants relatifs aux comptes e-mail que vous souhaitez migrer (les comptes source).
 - Disposer des identifiants relatifs aux comptes e-mail OVHcloud qui reçoivent les données migrées (les comptes de destination).
-
 
 ## En pratique
 
@@ -35,33 +34,33 @@ order: 1
 
 Dans ce guide nous avons réalisé les opérations sur les 3 logiciels de messagerie les plus utilisés, **Outlook**, **Mail** sur Mac OS et **Thunderbird**.
 
-Les instructions qui suivent sont décomposées en deux parties : 
+Les instructions qui suivent sont décomposées en deux parties :
 
 - **L'exportation**. Cela vous permet d'extraire une sauvegarde complète de votre adresse e-mail pour la basculer vers un autre poste, logiciel de messagerie, ou import vers un autre compte . Si vous devez déplacer des éléments d'une adresse e-mail vers une autre adresse qui est configurée sur le même logiciel de messagerie, il est possible de copier/coller ou de glisser/déposer l'une vers l'autre. Il est néanmoins recommandé d'utiliser le système d'exportation du logiciel que vous utilisez.
 
 - **L'importation**. Cela vous permet d'appliquer une sauvegarde que vous avez réalisée sur votre nouveau poste ou nouveau logiciel. Vérifiez que le fichier de sauvegarde à importer est compatible avec le logiciel de messagerie que vous utilisez.
 
-### Outlook 
+### Outlook
 
-Si vous possédez un compte e-mail [Exchange OVHcloud](https://www.ovh.com/fr/emails/hosted-exchange/), il est possible de l'exporter directement au format PST depuis l'espace client. 
+Si vous possédez un compte e-mail [Exchange OVHcloud](https://www.ovh.com/fr/emails/hosted-exchange/), il est possible de l'exporter directement au format PST depuis l'espace client.
 
-Connectez vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} puis dirigez-vous dans la section `Webcloud`{.action}. Sélectionnez `Microsoft`{.action} dans la colonne de gauche, puis `Exchange`{.action}. Cliquez sur le nom du service Hosted Exchange concerné.
+Connectez vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} puis dirigez-vous dans la section `Web Cloud`{.action}. Sélectionnez `Microsoft`{.action} dans la colonne de gauche, puis `Exchange`{.action}. Cliquez sur le nom du service Hosted Exchange concerné.
 
-Dans l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite du compte e-mail à exporter, puis sur `Exporter au format PST`{.action}
+Dans l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} à droite du compte e-mail à exporter, puis sur `Exporter au format PST`{.action}.
 
 ![emails](images/manager-export-pst01.png){.thumbnail}
 
-Il faudra ensuite patienter le temps de l'export qui peut prendre quelque minutes à plusieurs heures selon la taille de l'export. À la fin de celui-ci, il vous suffira de retourner sur le bouton `Exporter au format PST`{.action} pour récupérer un lien pour télécharger le fichier
+Il faudra ensuite patienter le temps de l'export qui peut prendre quelque minutes à plusieurs heures selon la taille de l'export. À la fin de celui-ci, il vous suffira de retourner sur le bouton `Exporter au format PST`{.action} pour récupérer un lien pour télécharger le fichier.
 
 ![emails](images/manager-export-pst02.png){.thumbnail}
 
 #### Exporter depuis Windows
 
-- Cliquez sur `fichier` en haut à gauche, puis sur `Ouvrir et exporter` et enfin sur `importer/exporter`
+- Cliquez sur `fichier` en haut à gauche, puis sur `Ouvrir et exporter` et enfin sur `importer/exporter`.
 
 ![emails](images/outlook-export-import-win.png){.thumbnail}
 
-- Sélectionnez `Exporter des données vers un fichier` puis cliquez sur `Suivant`. 
+- Sélectionnez `Exporter des données vers un fichier` puis cliquez sur `Suivant`.
 
 ![emails](images/outlook-export-win02.png){.thumbnail}
 
@@ -82,7 +81,7 @@ Cochez bien `Inclure les sous-dossiers` puis cliquez sur `Suivant`.
 
 ![emails](images/outlook-export-win05.png){.thumbnail}
 
-L'exportation de votre fichier commence. Lors de la création d'un fichier, il vous sera demandé de définir un mot de passe. Celui-ci est facultatif. 
+L'exportation de votre fichier commence. Lors de la création d'un fichier, il vous sera demandé de définir un mot de passe. Celui-ci est facultatif.
 
 ![emails](images/outlook-export-win06.png){.thumbnail}
 
@@ -92,7 +91,7 @@ L'exportation de votre fichier commence. Lors de la création d'un fichier, il v
 
 ![emails](images/outlook-export-import-win.png){.thumbnail}
 
-- Sélectionnez `Importer à partir d’un autre programme ou fichier` puis cliquez sur `Suivant`. 
+- Sélectionnez `Importer à partir d’un autre programme ou fichier` puis cliquez sur `Suivant`.
 
 ![emails](images/outlook-import-win02.png){.thumbnail}
 
@@ -108,7 +107,7 @@ L'exportation de votre fichier commence. Lors de la création d'un fichier, il v
 
 - Sélectionnez `Importer les éléments dans le dossier actif` puis cliquez sur `Terminer`.
 
-L'importation de votre sauvegarde se lance. 
+L'importation de votre sauvegarde se lance.
 
 #### Exporter depuis Mac OS
 
@@ -142,7 +141,7 @@ Sélectionnez votre fichier de sauvegarde, puis cliquez sur `importer`.
 
 Une fenêtre de progression s'affichera, cliquez sur `Continuer` à la fin de l'opération. Votre sauvegarde est alors déployée sur votre Outlook.
 
-### Mail sur Mac OS 
+### Mail sur Mac OS
 
 #### Exporter
 
@@ -154,9 +153,9 @@ Sélectionnez le dossier de votre choix ou créez-en un nouveau, puis cliquez su
 
 ![emails](images/mail-export-mac02.png){.thumbnail}
 
-Votre exportation se présente sous forme d'un fichier « .mbox ». 
+Votre exportation se présente sous forme d'un fichier « .mbox ».
 
-#### Importer 
+#### Importer
 
 Cliquez sur `Fichier` dans le menu horizontal, puis sur `Importer des boîtes aux lettres`.
 
@@ -168,11 +167,11 @@ Sélectionnez votre fichier de sauvegarde au format « .mbox », puis cliquez su
 
 Depuis la colonne de gauche, les e-mails importés se trouvent dans un nouveau compte e-mail nommé « Importation ». Vous pouvez faire glisser les dossiers et les messages à partir du compte « Importation » vers vos comptes e-mail déjà configurés. Une fois vos transferts terminés, vous pourrez supprimer le compte « Importation ».
 
-### Thunderbird 
+### Thunderbird
 
 Il n'existe actuellement pas de fonctionnalité native pour exporter ou importer un compte e-mail depuis Thunderbird. Il est néanmoins possible de sauvegarder un profil Thunderbird. Celui-ci contient l'ensemble des comptes et e-mails en local sur votre ordinateur. Nous allons voir comment sauvegarder un profil Thunderbird et le réintégrer sur une nouvelle instance de Thunderbird.
- 
-#### Exporter 
+
+#### Exporter
 
 Depuis la fenêtre principale, cliquez sur le menu en haut à droite puis sur `Aide` et enfin sur `Informations de dépannage`.
 
@@ -197,7 +196,7 @@ Si des comptes e-mail ont déjà été configurés sur l'instance Thunderbird de
 Lorsque Thunderbird va charger un nouveau profil (profil B), il ne pourra charger **que** les éléments de ce profil B.
 C’est pourquoi nous vous conseillons de charger d’abord le nouveau profil (profil B) puis d’y configurer les comptes e-mail provenant du profil A.
 
-Vous devez d'abord démarrer Thunderbird via le gestionnaire de profils. 
+Vous devez d'abord démarrer Thunderbird via le gestionnaire de profils.
 
 - Sur Windows, allez sur le menu `Démarrer` puis sur le programme `Exécuter`. Sur ce dernier, tapez `thunderbird.exe -ProfileManager`et cliquez sur `OK`.
 
@@ -211,17 +210,16 @@ La fenêtre suivante vous affiche les profils existants. Cliquez sur `Créer un 
 
 ![emails](images/thunderbird-profil-create01.png){.thumbnail}
 
-À l'étape suivante, nommez votre profil et identifiez le dossier dans lequel sera créé le profil, en dessous de la phrase « Vos paramètres utilisateur, préférences et toutes vos données personnelles seront enregistrées dans : »
+À l'étape suivante, nommez votre profil et identifiez le dossier dans lequel sera créé le profil, en dessous de la phrase « Vos paramètres utilisateur, préférences et toutes vos données personnelles seront enregistrées dans :
 
 ![emails](images/thunderbird-profil-create02.png){.thumbnail}
 
 > [!primary]
-> Nous vous conseillons de copier la sauvegarde de votre profil Thunderbird dans le dossier de profils de Thunderbird. 
+> Nous vous conseillons de copier la sauvegarde de votre profil Thunderbird dans le dossier de profils de Thunderbird.
 
 Cliquez sur `Choisir un dossier...` pour sélectionner le dossier contenant votre sauvegarde. Cliquez sur `Terminer` pour créer le profil avec votre sauvegarde.
 
 Vous retrouvez la fenêtre de choix de votre profil avec votre nouveau profil sélectionné. Cliquez sur `Démarrer Thunderbird`, Thunderbird sera lancé avec tous les éléments que vous aviez dans votre sauvegarde.
-
 
 ### Vérifier l'importation sur la nouvelle adresse e-mail
 
