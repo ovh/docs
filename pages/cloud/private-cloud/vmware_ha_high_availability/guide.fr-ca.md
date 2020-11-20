@@ -37,7 +37,7 @@ Si HA n'est pas activé dans votre cluster, rendez vous dans l'onglet `Configure
 Cliquez sur `Modifier`{.action} et cochez la case pour arctiver la fonctionnalité HA.
 
 Il est également important d'activer la surveillance de l'hôte. Ce paramètre permet l'envoi de signaux de pulsation entre les hôtes ESXi afin de détécter une éventuelle panne.
-La désactivation est nécessaire pour réaliser des opérations de mise à jour avec [l'update manager](../vmware-update-manager/) par exemple. Dans ce cas précis, l'hôte est isolé.
+La désactivation est nécessaire pour réaliser des opérations de mise à jour avec [l'update manager](https://docs.ovh.com/fr/private-cloud/vmware-update-manager/) par exemple. Dans ce cas précis, l'hôte est isolé.
 
 ![activation HA](images/HA.png){.thumbnail}
 

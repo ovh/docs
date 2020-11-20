@@ -247,7 +247,7 @@ Karta Backup umożliwia aktywację rozwiązania `Veeam Backup`.
 
 ![Backup](images/controlpanel14.png){.thumbnail}
 
-Więcej informacji na temat tego rozwiązania znajdziesz w tym [przewodniku](../veeam-backup-as-a-service/){.external}.
+Więcej informacji na temat tego rozwiązania znajdziesz w tym [przewodniku](https://docs.ovh.com/gb/en/private-cloud/veeam-backup-as-a-service/).
 
 
 ## Sprawdź również

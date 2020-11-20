@@ -93,7 +93,7 @@ Konfigurację prywatnego adresu IP przeprowadza się w podobny sposób, jak w pr
 
 W wyborze interfejsu można edytować następujące ustawienia:
 
-- na SDDC, interfejs VLAN (domyślnie 10-20, można utworzyć więcej, w czym pomoże [ta instrukcja](https://docs.ovh.com/fr/private-cloud/creation-vlan/){.external} ;
+- na SDDC, interfejs VLAN (domyślnie 10-20, można utworzyć więcej, w czym pomoże [ta instrukcja](https://docs.ovh.com/gb/en/private-cloud/creation-vlan-vxlan/) ;
 
 - na Private Cloud, interfejs VXLAN (vxw-dvs…). Jeśli potrzebujesz więcej VXLAN, utwórz zgłoszenie do działu wsparcia klienta, w panelu klienta OVH.
 
