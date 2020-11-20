@@ -1,6 +1,6 @@
 ---
 title: FAQ
-excerpt: Les questions les plus fréquemment posées sur les services VoIP OVHcloud'
+excerpt: Les questions les plus fréquemment posées sur les services VoIP OVHcloud
 slug: faq-voip
 section: FAQ
 order: 1
@@ -24,8 +24,8 @@ Le répondeur de votre ligne téléphonique est également consultable depuis vo
 
 Pour effectuer le renvoi d'appels de votre ligne téléphonique, deux solutions s'offrent à vous : 
 
-* Composez  * 21 * (NUMÉRO)# sur le clavier de votre téléphone pour activer le renvoi vers le numéro de votre choix et #21# pour désactiver ce renvoi.
-* Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), au sein de la rubrique `Télécom` > `Téléphonie`, sélectionnez la ligne téléphonique souhaitée puis cliquez sur `Gestion des appels`{.action} et enfin sur `Renvoi d'appel`{.action}.
+- Composez  * 21 * (NUMÉRO)# sur le clavier de votre téléphone pour activer le renvoi vers le numéro de votre choix et #21# pour désactiver ce renvoi.
+- Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), au sein de la rubrique `Télécom` > `Téléphonie`, sélectionnez la ligne téléphonique souhaitée puis cliquez sur `Gestion des appels`{.action} et enfin sur `Renvoi d'appel`{.action}.
 
 #### Trucs et astuces
 
@@ -41,7 +41,7 @@ Vous avez la possibilité de commander jusqu'à 100 numéros pour 1€ HT/mois/n
 
 ### Comment suivre ma demande de portabilité ?
 
-Vous pouvez retrouver le suivi de votre demande de portabilité en vous rendant sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), dans l'univers `Télécom`. Rendez-vous ensuite sur `Téléphonie` puis sélectionnez le groupe de facturation sur lequel a été demandée à la portabilité.
+Vous pouvez retrouver le suivi de votre demande de portabilité en vous rendant sur votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), dans l'univers `Télécom`. Rendez-vous ensuite sur `Téléphonie` puis sélectionnez le groupe de facturation sur lequel a été demandée la portabilité.
 
 Vous retrouverez alors, dans l'onglet `Tableau de bord`, un lien vous permettant de « consulter vos portabilités en cours ».
 
@@ -74,7 +74,7 @@ Pour cela, connectez-vous à l'aide de vos identifiants et dirigez-vous vers la 
 
 #### Trucs et astuces
 
-Si vous avez récemment activé la fonctionnalité de renvois d'appels, pensez à vérifier que celle-ci n'est plus active. Pour tout complément, n'hésitez pas à consulter la partie [Comment configurer un renvoi d'appel depuis ma ligne téléphonique ?](./#comment-configurer-un-renvoi-dappel-depuis-ma-ligne) ""
+Si vous avez récemment activé la fonctionnalité de renvois d'appels, pensez à vérifier que celle-ci n'est plus active. Pour tout complément, n'hésitez pas à consulter la partie [Comment configurer un renvoi d'appel depuis ma ligne téléphonique ?](./##comment-configurer-un-renvoi-dappel_1)
 
 
 ### Un message d'erreur apparait sur mon téléphone, que faire ?
@@ -87,7 +87,7 @@ Avant de lancer un diagnostic de votre téléphone, nous vous invitons à étein
 
 ### Pourquoi mon numéro de téléphone abrégé dysfonctionne ?
 
-Ce dysfonctionnement peut provenir d'une mauvaise configuration. Pour le vérifier, connectez-vous tout d'abord à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), sélectionnez l'onglet `Télécom` puis `Téléphonie` à gauche et sélectionnez votre groupe de facturation. Cliquez ensuite sur `Numéro abrégés`{.action} et vérifiez que la ligne concernée figure bien dans le tableau qui s'affiche à l'écran. Si cela n'est pas le cas, cliquez sur le `bouton Actions`{.action} pour ajouter un numéro abrégé dédié à cette ligne. 
+Ce dysfonctionnement peut provenir d'une mauvaise configuration. Pour le vérifier, connectez-vous tout d'abord à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), sélectionnez l'onglet `Télécom` puis `Téléphonie` à gauche et sélectionnez votre groupe de facturation. Cliquez ensuite sur `Numéro abrégés`{.action} et vérifiez que la ligne concernée figure bien dans le tableau qui s'affiche à l'écran. Si cela n'est pas le cas, cliquez sur le bouton `Actions`{.action} pour ajouter un numéro abrégé dédié à cette ligne. 
 
 #### Trucs et astuces
 
