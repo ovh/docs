@@ -37,6 +37,8 @@ Please see [Creating Storage Containers in Customer Panel](../../storage/pcs/cre
 
 If you don’t currently have an application code and you still would like to try OVHcloud Data Processing, you can download an [Apache Spark package](http://spark.apache.org/downloads.html) and extract it. Inside, you can find a jar file in examples/jars folder to run the SparkPi sample (which will just compute the Pi value).
 
+Once you have a Storage container and an application to run on OVHcloud Data Processing, upload the jar file to the root directory of your object container.
+
 ### Step 2: Submit your Spark job
 To submit your job with your required parameters follow these steps:
 
