@@ -7,14 +7,14 @@ order: 6
 hidden: true
 ---
 
-**Last updated 18th November 2020**
+**Last updated 20th November 2020**
 
 ## Objective
 
 There are two aspects to migrating a Hosted Private Cloud service:
 
-- The Hosted Private Cloud context (OVHcloud), which includes the customer's side of administrating an infrastructure.
-- The VMware context, which includes the entire VMware eco-system, on the infrastructure itself.
+- The Hosted Private Cloud (OVHcloud), which includes the customer's side of administrating an infrastructure.
+- The VMware infrastructure, which includes the entire VMware eco-system.
 
 **This guide explains how to cover all aspects of migrating a Hosted Private Cloud service.**
 
@@ -25,7 +25,7 @@ There are two aspects to migrating a Hosted Private Cloud service:
 
 ## Instructions
 
-This guide will utilise the notions of an **origin Hosted Private Cloud** and a **destination Hosted Private Cloud**.
+This guide will utilise the notions of a **source Hosted Private Cloud** and a **destination Hosted Private Cloud**.
 
 ### Hosted Private Cloud context
 
@@ -35,11 +35,11 @@ This guide will utilise the notions of an **origin Hosted Private Cloud** and a 
 
 For connections to the VMware platform, you can choose to block access to vSphere by default. Please refer to our guide on the [vCenter access policy](../modify-vcenter-access-policy/) for details.
 
-If the access policy has been changed to "Restricted", you will need to apply the same connection IPs to the destination Hosted Private Cloud as to the origin Hosted Private Cloud service.
+If the access policy has been changed to "Restricted", you will need to apply the same connection IPs to the destination Hosted Private Cloud as to the source Hosted Private Cloud service.
 
 ##### **Hosted Private Cloud users**
 
-In the lifecycle of the origin Hosted Private Cloud, a list of users may have been created for business or organisational needs. You must therefore create them again on the destination Hosted Private Cloud and assign them the appropriate rights, depending on the configuration of the destination Hosted Private Cloud.
+In the lifecycle of the source Hosted Private Cloud, a list of users may have been created for business or organisational needs. You must therefore create them again on the destination Hosted Private Cloud and assign them the appropriate rights, depending on the configuration of the destination Hosted Private Cloud.
 
 To do this, please refer to our guides on [Changing user rights](../change-users-rights/), [Changing the User Password](../changing-user-password/) and [Associating an email with a vSphere user](../associate-email-with-vsphere-user/).
 
@@ -50,7 +50,7 @@ Please refer to our guide on [Enabling Virtual Machine Encryption](../vm-encrypt
 
 ##### **Certifications**
 
-For compliance reasons, [PCI DSS](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/pci-dss/) and [HDS](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/hds/) options may have been enabled on the origin Hosted Private Cloud.
+For compliance reasons, [PCI DSS](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/pci-dss/) and [HDS](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/hds/) options may have been enabled on the source Hosted Private Cloud.
 
 These options must therefore be reactivated on the destination Hosted Private Cloud. To do this, please refer to our [guide on activating them](../activate-pci-dss-option/).
 
@@ -73,9 +73,15 @@ As part of a migration process, you can link your Hosted Private Cloud services 
 > If your Hosted Private Cloud/PCC offer pre-dates 2016, please contact our support teams to verify the requirements.
 >
 
-If the public IP addresses attached to the origin Hosted Private Cloud are required on the destination Hosted Private Cloud, it will be necessary to transfer them.
+If the public IP addresses attached to the source Hosted Private Cloud are required on the destination Hosted Private Cloud, it will be necessary to transfer them.
 
 Please consult our guide to [Migrate an IP block between two Hosted Private Cloud services](../add-ip-block/#migrate-an-ip-block-between-two-hosted-private-cloud-solutions).
+
+##### **Distributed port group settings**
+
+Please verify portgroup settings including Security, VLAN, Teaming and failover, as if they have been modified on the source environment the same configuration will need to be applied on the destination.
+
+For more information, consult VMware's documentation on [how to edit general distributed port group settings](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html) and on [how to edit distributed port teaming and failover policies](https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.hostclient.doc/GUID-BB8EC262-5F85-4F42-AFC5-5FED456E2C11.html).
 
 ### VMware context
 
@@ -107,11 +113,11 @@ There are several ways of migrating VMs from one Private Cloud to another. We of
 
 The following elements are required:
 
-- SPLA licences (on origin and destination Hosted Private Cloud)
+- SPLA licences (on source and destination Hosted Private Cloud)
 - A Veeam licence
-- An IP address available on the origin and destination Hosted Private Cloud services
-- A [Veeam Backup & Replication](../../storage/veeam-backup-replication/) virtual machine on the origin Hosted Private Cloud
-- [Authorising the Veeam Backup & Replication virtual machine to connect](../authorise-ip-addresses-vcenter/) to the origin and destination vCenter
+- An IP address available on the source and destination Hosted Private Cloud services
+- A [Veeam Backup & Replication](../../storage/veeam-backup-replication/) virtual machine on the source Hosted Private Cloud
+- [Authorising the Veeam Backup & Replication virtual machine to connect](../authorise-ip-addresses-vcenter/) to the source and destination vCenter
 
 Please refer to our guide on setting up [Veeam Backup & Replication](../../storage/veeam-backup-replication/).
 
@@ -127,11 +133,11 @@ The video below shows how to configure Hosted Private Cloud with the Veeam Backu
 
 #### vSAN
 
-If vSAN was enabled on your origin Hosted Private Cloud, you will need to enable it again on the destination Hosted Private Cloud. Please refer to our guide on [Using VMware Hyperconvergence with vSAN](../vmware-vsan/).
+If vSAN was enabled on your source Hosted Private Cloud, you will need to enable it again on the destination Hosted Private Cloud. Please refer to our guide on [Using VMware Hyperconvergence with vSAN](../vmware-vsan/).
 
 #### Backup
 
-If you have activated the Veeam Managed Backup solution on the origin Hosted Private Cloud, you will need to create the backup jobs again on the destination Hosted Private Cloud.
+If you have activated the Veeam Managed Backup solution on the source Hosted Private Cloud, you will need to create the backup jobs again on the destination Hosted Private Cloud.
 
 Please refer to our guide on [activating and using Veeam Managed Backup](../veeam-backup-as-a-service/).
 
