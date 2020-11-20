@@ -98,7 +98,7 @@ Die Konfiguration einer privaten IP-Adresse entspricht der einer öffentlichen I
 
 In Ihrem Interface können Sie folgende Einstellungen ändern:
 
-- ein VLAN-Interface (standardmäßig 10 bis 20 mit vRack verbunden - Sie können mehr erstellen, indem Sie dieser [Anleitung](../creation-vlan-vxlan/) folgen)
+- ein VLAN-Interface (standardmäßig 10 bis 20 mit vRack verbunden - Sie können mehr erstellen, indem Sie dieser [Anleitung](../vxlan-erstellung/) folgen)
 - ein VxLAN-Interface innerhalb der Hosted Private Cloud
 
 In den Einstellungen Ihrer virtuellen Maschine können Sie ein VLAN oder VxLAN verwenden:

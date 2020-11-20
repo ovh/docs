@@ -239,7 +239,7 @@ From this tab, you can order a Veeam Backup solution.
 
 ![Backup](images/controlpanel14.png){.thumbnail}
 
-You can find more details about this option in [this guide](https://docs.ovh.com/gb/en/private-cloud/veeam-backup-as-a-service/).
+You can find more details about this option in [this guide](../veeam-backup-as-a-service/).
 
 
 ## Go further

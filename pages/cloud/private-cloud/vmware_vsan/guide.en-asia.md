@@ -5,7 +5,7 @@ excerpt: 'Find out how to use the power of Hyperconvergence for your virtual mac
 section: 'VMware vSphere features'
 ---
 
-**Last updated 06/12/2018**
+**Last updated 2019/17/09**
 
 ## Objective
 
@@ -15,7 +15,7 @@ The aim of this guide is to explain the concepts and details of setting up VMwar
 
 ## Requirements
 
-* an [OVH Private Cloud](https://www.ovh.com/sg/private-cloud/){.external} solution
+* an [OVH Private Cloud](https://www.ovhcloud.com/asia/enterprise/products/hosted-private-cloud/){.external} solution
 * at least three vSAN hosts added
 * access to the vSphere interface
 

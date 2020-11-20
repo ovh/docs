@@ -35,7 +35,7 @@ Before you proceed, ensure that:
 > 
 
 
-### Activate resilience mode.
+### Activate resilience mode
 
 Once you have logged in to the vSphere client, go to the inventory for your host servers and cluster. Select the server concerned by right-clicking on it, then click `OVH Dedicated Cloud`{.action}, and `Resilience`{.action}.
 

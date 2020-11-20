@@ -20,7 +20,6 @@ Resilience mode is a tool developed by OVH, which simulates an outage on one of 
 - access to the vSphere interface
 
 
-
 ## Instructions
 
 Before you proceed, ensure that:

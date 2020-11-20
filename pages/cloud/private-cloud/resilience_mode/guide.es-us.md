@@ -15,7 +15,7 @@ El modo de resiliencia es una herramienta desarrollada por OVHcloud que simula u
 
 ## Requisitos
 
-- Tener contratado un servicio [Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/).
+- Tener contratado un servicio [Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/).
 - Estar conectado al cliente vSphere.
 
 
