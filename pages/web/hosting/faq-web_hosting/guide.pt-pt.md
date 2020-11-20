@@ -71,7 +71,7 @@ Talvez seja útil simplesmente renomeá-lo: assim, poderá reativá-lo a qualque
 
 ### Como fazer evoluir a minha oferta de alojamento web?
 
-Se pretender alterar a sua oferta atual para uma oferta superior, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na rubrica `Web Cloud`{.action}. Depois, clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente.
+Se pretender alterar a sua oferta atual para uma oferta superior, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na rubrica `Web Cloud`{.action}. Depois, clique em `Alojamentos`{.action} na barra de serviços situada à esquerda e selecione o plano correspondente.
 
 No separador `Informações gerais`, no quadro `Subscrição`, clique no botão `...`{.action} à frente "Oferta" e depois clique em `Alterar oferta`{.action}. Siga as seguintes instruções para finalizar a sua encomenda. A nova oferta inclui um prorata temporis do tempo restante da sua oferta atual.
 
