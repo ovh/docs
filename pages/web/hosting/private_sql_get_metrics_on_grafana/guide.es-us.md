@@ -65,7 +65,7 @@ Es posible instalar Grafana sin Docker. Para ello, consulte el siguiente [docume
 Su servidor SQL Privado debe ser de tipo Docker para poder obtener las métricas.
 
 ## Activación gratuita en los alojamientos Performance
-Si dispone de un alojamiento Performance, puede activar un servidor SQL Privado gratis. Para ello, consulte la siguiente [guía](../todo_sobre_el_sql_privado).
+Si dispone de un alojamiento Performance, puede activar un servidor SQL Privado gratis. Para ello, consulte la siguiente [guía](https://docs.ovh.com/es/hosting/todo_sobre_el_sql_privado/).
 
 ## Contratar un servidor SQL Privado
 Puede contratar un servidor SQL Privado directamente desde su área de cliente. 

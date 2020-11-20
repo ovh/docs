@@ -2,7 +2,7 @@
 title: Cambiar la contraseña de usuario
 slug: cambiar-contrasena-usuario
 routes:
-    canonical: 'https://docs.ovh.com/es/private-cloud/cambiar-contrase%C3%B1a-usuario/'
+    canonical: 'https://docs.ovh.com/us/es/private-cloud/cambiar-contrasena-usuario/'
 excerpt: Cómo modificar la contraseña de usuario del cliente vSphere desde el área de cliente de OVHcloud
 section: Funcionalidades de OVHcloud
 ---
@@ -17,14 +17,14 @@ Es posible gestionar los permisos y contraseñas de los usuarios del cliente vSp
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 - Haber creado una cuenta de usuario desde el área de cliente de OVHcloud. Para más información, consulte [esta guía](../manager-ovhcloud/#usuarios)
 
 ## Procedimiento
 
 ### Cambiar la contraseña
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, acceda al menú `Servidores`{.action} y, en la sección `Managed Bare Metal`{.action}, seleccione su servidor en la lista. A continuación, haga clic en la pestaña `Usuarios` (4).
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, acceda al menú `Servidores`{.action} y, en la sección `Managed Bare Metal`{.action}, seleccione su servidor en la lista. A continuación, haga clic en la pestaña `Usuarios` (4).
 
 ![acceso área de cliente](images/userpassword1.png){.thumbnail}
 
@@ -59,6 +59,6 @@ Introduzca la nueva contraseña y confírmela.
 
 [Cambiar los permisos de un usuario](../cambiar-los-permisos-de-un-usuario/)
 
-[Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contraseña/)
+[Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/us/es/customer/gestionar-su-contraseña/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
