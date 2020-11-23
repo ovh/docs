@@ -1,7 +1,7 @@
 ---
 title: 'Réparer le bootloader GRUB'
 slug: repairing-the-grub-bootloader
-excerpt: 'Guide de réparation du bootloader GRUB sur une instance défaillante'
+excerpt: 'Guide de réparation du bootloader GRUB sur une instance'
 section: Tutoriels
 ---
 
@@ -31,14 +31,14 @@ chroot /mnt /bin/bash
 
 ### Mettre a jour GRUB (ou GRUB2)
 
-Mettre a jour GRUB :
+Mettre à jour GRUB :
 
 ```sh
 grub-install /dev/sdb
 update-grub
 ```
 
-Mettre a jour GRUB2 :
+Mettre à jour GRUB2 :
 
 ```sh
 grub2-install /dev/sdb

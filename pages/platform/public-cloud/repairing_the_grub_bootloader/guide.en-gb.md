@@ -1,7 +1,7 @@
 ---
 title: 'Repairing the GRUB bootloader'
 slug: repairing-the-grub-bootloader
-excerpt: 'Guide to repair the GRUB bootloader on a failed installation'
+excerpt: 'Guide to repair the GRUB bootloader on an instance'
 section: Tutorials
 ---
 
@@ -29,7 +29,7 @@ mount -o bind /dev /mnt/dev
 chroot /mnt /bin/bash
 ```
 
-### Update GRUB (ou GRUB2)
+### Update GRUB (or GRUB2)
 
 For GRUB installs:
 
