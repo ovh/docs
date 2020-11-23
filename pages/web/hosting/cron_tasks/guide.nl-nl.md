@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Hosting: Geautomatiseerde taken/Cron'
 excerpt: 'Hosting: Geautomatiseerde taken/Cron'
 id: '1990'

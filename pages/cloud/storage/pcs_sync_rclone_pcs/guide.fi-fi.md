@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Object Storagen käyttö rClone-ohjelmistolla
 slug: sync-rclone-object-storage 
 section: Object Storage

@@ -3,8 +3,13 @@ title: Orchestrierung eines Docker Serverclusters mit Shipyard
 excerpt: ''
 slug: orchestrierung_eines_docker_serverclusters_mit_shipyard
 legacy_guide_number: g1762
+hidden: true
 ---
 
+> [!warning]
+>
+> **Shipyard Project** is now retired, and is no longer maintained. Read the official announcement at <https://github.com/shipyard/shipyard>.
+> 
 
 ## 
 Shipyard ist eine von der Docker Benutzer-Community entwickelte Applikation. Sie stellt eine gute Alternative zu Swarm dar und verfügt über ein graphisches Interface zur Verwaltung eines Clusters von Docker Maschinen, das eine Ablaufplanung der Task-Ausführung sowie die Allozierung von Ressourcen pro Container innerhalb des Ressourcen-Pools erlaubt.
@@ -141,7 +146,7 @@ iptables-persistent save
 
 
 ## 
-Nachdem wir Docker auf unseren 3 Maschinen installiert haben (siehe [vorherige Hilfe](https://www.ovh.de/g1708.optimierung_des_hostings_einer_wordpress_seite_auf_einem_vps_mit_docker)), können nun auch mit Docker Machine bereitgestellte RunAbove Instanzen verwendet werden. Mehr Informationen dazu finden Sie in [dieser Hilfe](https://community.runabove.com/kb/en/instances/docker-in-5-minutes-on-runabove-with-docker-machine.html). Wir aktivieren nun einen Port für den Docker daemon (zum Beispiel Port 2375, den von der [IANA](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker) zugewiesenen offiziellen Port), damit diese Maschinen mit dem Master kommunizieren können.
+Nachdem wir Docker auf unseren 3 Maschinen installiert haben, können nun auch mit Docker Machine bereitgestellte RunAbove Instanzen verwendet werden. Wir aktivieren nun einen Port für den Docker daemon (zum Beispiel Port 2375, den von der [IANA](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker) zugewiesenen offiziellen Port), damit diese Maschinen mit dem Master kommunizieren können.
 
 Dazu halten wir zuerst Docker auf allen unseren Maschinen mit folgendem Befehl an:
 
@@ -243,7 +248,7 @@ Confirm: <WIEDERHOLUNG>
 
 Nach der Änderung des Passworts verlassen wir das CLI mit STRG+D.
 
-Wir können jetzt über die URL http://<ihre-host-ip>:8080 auf das Shipyard Interface zugreifen und uns mit dem Benutzernamen "admin" und dem neu gesetzten Passwort einloggen.
+Wir können jetzt über die URL `http://<ihre-host-ip>:8080` auf das Shipyard Interface zugreifen und uns mit dem Benutzernamen "admin" und dem neu gesetzten Passwort einloggen.
 
 Nach dem Einloggen können wir nun in der Rubrik "Engines" im Shipyard Web-Interface die verwendeten Engines (die Nodes) eintragen:
 
@@ -294,7 +299,3 @@ Mit einem Klick auf "Deploy" können wir die Container auf allen oder nur auf be
 
 ![](images/img_2616.jpg){.thumbnail}
 Wir verfügen nun über ein System zur Orchestrierung der verschiedenen Docker Maschinen und können unsere Applikationen / Container innerhalb unseres Clusters schnell und einfach über ein grafisches Interface in Betrieb nehmen.
-
-Wenn Sie Docker testen möchten, können Sie dies im Rahmen unserer Sailabove Alpha über folgenden Link tun: [https://labs.runabove.com/docker/](https://labs.runabove.com/docker/)
-Wir haben auch ein Ubuntu 14.04 Template mit vorinstalliertem Docker für die VPS Cloud und VPS Classic Angebote erstellt (verfügbar für alle VPS Angebote mit Ausnahme des VPS Classic 1, der nicht über ausreichend Speicherplatz verfügt). Damit erhalten Sie eine für die Ausführung von Containern vorbereitete Maschine und profitieren gleichzeitig von den Vorteilen der VPS Angebote von OVH.
-

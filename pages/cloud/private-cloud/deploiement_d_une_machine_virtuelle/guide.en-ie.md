@@ -17,7 +17,7 @@ In the vSphere interface, you have multiple possibilities to deploy a virtual ma
 ## Requirements
 
 - a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/)
-- a user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager))
+- a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager))
 
 ## Instructions
 
@@ -30,7 +30,7 @@ A new VM can be deployed from the vSphere client. Right-click on your data centr
 You have multiple possibilities regarding the creation of a new VM:
 
 - It is possible to create it and select an ISO from your datastore in the process. You can upload ISO files by connecting [via SFTP](../sftp_connection/).
-- You can deploy a VM from your own template, an external template or an [OVHcloud template](https://docs.ovh.com/gb/en/private-cloud/deploy-ovh-template/).
+- You can deploy a VM from your own template, an external template or an [OVHcloud template](../applying-ovh-template/).
 - You can clone an existing VM (be careful to avoid IP address conflicts).
 - You can clone a VM into a template, so that you can deploy your next virtual machine more quickly.
 - You can clone a template into another template. Make use of this, for example, to have the template available on different datastores and thus prevent performance loss during a massive deployment.

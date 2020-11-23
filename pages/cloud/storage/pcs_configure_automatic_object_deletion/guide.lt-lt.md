@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Automatinis objektų pašalinimas
 excerpt: Automatinis objektų pašalinimas
 slug: automatinis_objektu_pasalinimas

@@ -1,9 +1,9 @@
 ---
 title: Supprimer un serveur hôte
 slug: suppression-serveur-hote
-excerpt: Découvrez comment supprimer un serveur hôte d''une infrastructure Private Cloud
+excerpt: Découvrez comment supprimer un serveur hôte d'une infrastructure Private Cloud
 legacy_guide_number: '1442308'
-section: Fonctionnalités OVH
+section: Fonctionnalités OVHcloud
 order: 08
 ---
 

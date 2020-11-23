@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Úprava hostname instance Public Cloud'
 slug: modifikace-hostname-instance
 excerpt: 'Zjistěte, jak upravit hostname své Public Cloud instance'

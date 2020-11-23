@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'TVS, Joomla diegimas rankiniu būdu'
 excerpt: Kaip rankiniu būdu diegti Joomla?
 id: '1978'

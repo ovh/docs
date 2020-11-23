@@ -62,7 +62,7 @@ ssh nome_de_utilizador@IPv4_do_VPS
 Como estará conectado com privilégios root (utilizador sudo), pode introduzir comandos para efetuar tarefas de administração. Mas, antes de mais, é recomendável que altere a sua palavra-passe:
 
 ```sh
-$ sudo passwd
+~$ sudo passwd
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -71,8 +71,8 @@ passwd: password updated successfully
 Atenção: as palavras-passe não são exibidas. De seguida, passe para o utilizador root e defina a palavra-passe admin:
 
 ```sh
-$ sudo su -
-# passwd
+~$ sudo su -
+~# passwd
 New password:
 Retype new password:
 passwd: password updated successfully

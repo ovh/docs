@@ -37,7 +37,7 @@ For now, we'll focus on the command line client `openstack`.
 
 #### Configure your local environment
 
-First, [configure access to the Horizon interface](https://docs.ovh.com/au/en/public-cloud/configure-user-access-to-horizon/){.external}.
+First, [configure access to the Horizon interface](../configure_user_access_to_horizon).
 
 Next, click on the `...`{.action} icon at the end of the line and then click the `Download OpenStack configuration file`{.action} link.
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Usean dedikoidun palvelimen konfigurointi virtuaaliräkissä
 slug: usean-dedikoidun-palvelimen-konfigurointi-vrack
 excerpt: Opi konfiguroimaan useita dedikoituja palvelimia virtuaaliräkissä

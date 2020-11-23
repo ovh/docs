@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH e-mail handleiding: Configuratie voor Thunderbird'
 excerpt: ''
 slug: ovh_e-mail_handleiding_configuratie_voor_thunderbird

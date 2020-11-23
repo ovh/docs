@@ -17,7 +17,7 @@ OVH ofrece de forma nativa la renovación automática de sus soluciones, aunque 
 ## Requisitos
 
 - Estar conectado a la [API de OVH](https://api.ovh.com/console){.external}.
-- Disponer de las [claves para conectarse a la API de OVH](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/){.external}.
+- Disponer de las claves para conectarse a la API de OVH.
 
 ## Procedimiento
 

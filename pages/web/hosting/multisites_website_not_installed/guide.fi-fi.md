@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Ratkaisu virheeseen “Verkkosivu ei asennettu”
 excerpt: Katso, kuinka virhe “Verkkosivu ei asennettu” ratkaistaan
 slug: webhotellit_asentamattoman_sivun_virhe

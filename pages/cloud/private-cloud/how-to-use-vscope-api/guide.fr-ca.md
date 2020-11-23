@@ -2,7 +2,7 @@
 title: 'Comment utiliser l’API de vScope'
 slug: vscopeapi
 excerpt: 'L’API vScope vous permet d’utiliser les données de monitoring dans vos applications'
-section: 'Services et options OVH'
+section: 'Services et options OVHcloud'
 order: 1
 ---
 

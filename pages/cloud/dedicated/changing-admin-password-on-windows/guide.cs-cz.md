@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Změna administrátorského hesla Windows na dedikovaném serveru'
 slug: zmena-hesla-admin-windows
 excerpt: 'Seznamte se s postupem pro změnu administrátorského hesla na dedikovaném serveru s operačním systémem Windows'

@@ -1,7 +1,7 @@
 ---
-title: 'Limitations appliquées à l''offre PostgreSQL managée'
+title: "Limitations appliquées à l'offre PostgreSQL managée"
 slug: limitations-techniques
-excerpt: 'Prenez connaissances des limitations techniques de l''offre PostgreSQL managée'
+excerpt: "Prenez connaissances des limitations techniques de l'offre PostgreSQL managée"
 section: 'Informations techniques'
 order: 4
 ---

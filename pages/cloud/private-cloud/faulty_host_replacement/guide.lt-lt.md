@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Sugedusio host serverio keitimas
 excerpt: Kaip sugedus host serveriui galiu gauti naują?
 slug: sugedusio_host_serverio_keitimas

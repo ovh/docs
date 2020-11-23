@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Viskas apie kliento identifikatorių'
 excerpt: 'Kliento identifikatorius'
 slug: viskas_apie_kliento_identifikatoriu

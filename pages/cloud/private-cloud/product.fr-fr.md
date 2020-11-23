@@ -2,7 +2,7 @@
 title: Hosted Private Cloud
 slug: private-cloud
 excerpt: Guides d'utilisation de votre Hosted Private Cloud
-sections: Premiers pas, Gestion des machines virtuelles, Fonctionnalités OVH, NSX, Fonctionnalités VMware vSphere, Outils de migration des Machines Virtuelles, Zerto, vRops, Informations Meltdown et Spectre, Services et options OVH, FAQ
+sections: Premiers pas, Gestion des machines virtuelles, Fonctionnalités OVHcloud, NSX, Fonctionnalités VMware vSphere, Outils de migration des Machines Virtuelles, Zerto, vRops, Informations Meltdown et Spectre, Services et options OVHcloud, FAQ
 ---
 
 > [!product-section]

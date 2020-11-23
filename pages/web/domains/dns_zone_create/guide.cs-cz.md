@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Vytvoření DNS zóny OVH pro externí doménu'
 slug: vytvoreni-dns-zony-externi-domena
 excerpt: 'Zjistěte, jak vytvořit DNS zónu prostřednictvím Zákaznického prostoru OVH'

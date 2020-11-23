@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Yksityisen virtuaalipalvelimen käytön aloitus
 excerpt: Opi virtuaalipalvelimen käytön perusteet
 slug: vps-kayton-aloitus

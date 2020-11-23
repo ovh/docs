@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Managing OVH orders'
 slug: managing-ovh-orders
 excerpt: 'Find out how to manage your OVH orders'

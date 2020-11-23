@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellin tietokannan salasanan muokkaus'
 slug: tietokannan-salasanan-muokkaus
 excerpt: 'Opi vaihtamaan webhotellituotteen yhteydessä luodun tietokannan salasana'

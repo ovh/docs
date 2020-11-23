@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Het oplossen van de fout 'Website niet geïnstalleerd'
 excerpt: Ontdek hoe u de fout 'Website niet geïnstalleerd' kunt oplossen
 slug: webhosting_error_site_niet_geinstalleerd

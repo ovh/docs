@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Rescue-tilan aktivointi ja käyttö'
 slug: ovh-rescue
 excerpt: 'Kuinka rescue-tila aktivoidaan ja kuinka sitä käytetään dedikoidulla palvelimella'

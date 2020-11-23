@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Contactbeheer voor uw diensten
 slug: beheer-contacten
 excerpt: Ontdek hoe u contacten voor uw OVH-diensten kunt beheren

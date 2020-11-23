@@ -25,7 +25,7 @@ Wenn Sie Ihren [dedizierten Server](https://www.ovh.de/dedicated_server/){.exter
 
 ### Verifizierungscode für die Domain erhalten
 
-Klicken Sie im Bereich `Dedicated`{.action} in der linken Menüleiste auf `Dedicated Server`{.action}, um die Liste der Server Ihres Accounts anzuzeigen.
+Klicken Sie im Bereich `Bare Metal Cloud`{.action} in der linken Menüleiste auf `Dedicated Server`{.action}, um die Liste der Server Ihres Accounts anzuzeigen.
 
 ![Sekundärer DNS](images/dns2-01.png){.thumbnail}
 
@@ -71,7 +71,7 @@ Bestätigen Sie anschließend Ihren Eintrag mit `Bestätigen`{.action}.
 
 ### Sekundären DNS zu Ihrem Server hinzufügen
 
-Gehen Sie wie im ersten Schritt zurück in den Bereich `Dedicated`{.action}, links auf `Dedicated Server`{.action} und zum Tab `Sekundärer DNS`{.action}. Klicken Sie auf `Domain Hinzufügen`{.action}.
+Gehen Sie wie im ersten Schritt zurück in den Bereich `Bare Metal Cloud`{.action}, links auf `Dedicated Server`{.action} und zum Tab `Sekundärer DNS`{.action}. Klicken Sie auf `Domain Hinzufügen`{.action}.
 
 ![Sekundärer DNS](images/dns2-02.png){.thumbnail}
 

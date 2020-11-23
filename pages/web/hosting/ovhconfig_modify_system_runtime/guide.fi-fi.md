@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellin konfiguraation muokkaaminen'
 slug: webhotellin_kayttoympariston_muokkaaminen
 excerpt: 'Opi muokkaamaan OVH:n webhotellisi konfiguraatiota'

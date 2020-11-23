@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH:n SharePoint-hallintaliittymän aktivointi'
 excerpt: 'OVH:n SharePoint-hallintaliittymän aktivointi'
 slug: ovhn_sharepoint-hallintaliittyman_aktivointi

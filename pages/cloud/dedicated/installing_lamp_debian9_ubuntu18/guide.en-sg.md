@@ -80,7 +80,7 @@ We will now install the second building block — the Apache 2 web server — al
 sudo apt-get install apache2 apache2-doc 
 ```
 
-If you have installed the web server correctly, you should be able to access the Apache default page by entering your server’s IP address (or service name) into your browser as follows: [http://server_IP](#). Don’t try to connect via HTTPS, as there is no SSL certificate added at this stage.
+If you have installed the web server correctly, you should be able to access the Apache default page by entering your server’s IP address (or service name) into your browser as follows: `http://server_IP`. Don’t try to connect via HTTPS, as there is no SSL certificate added at this stage.
 
 ![Apache installation](images/tuto_apache.png){.thumbnail}
 
@@ -125,7 +125,7 @@ phpinfo();
 ?>
 ```
 
-Then access the file directly via your web browser: [http://server_IP/info.php](#).
+Then access the file directly via your web browser: `http://server_IP/info.php`.
 
 You should see a page detailing all of your PHP environment specifications (version 7.0.30 in our case):
 
@@ -135,7 +135,7 @@ Once you have viewed this page, we strongly advise **deleting the `index.php` fi
 
 > [!primary]
 >
-> By default, the Apache web server does not prioritise PHP files over HTML files. Here, in the root directory, we have an `index.html` file and an `index.php` file. If we return to our web browser, on [http://server_IP](#), Apache will direct you to the `index.html` page rather than `index.php`. This prioritisation will not impact most content management systems, such as WordPress or Drupal. However, these rules can be modified if needed.
+> By default, the Apache web server does not prioritise PHP files over HTML files. Here, in the root directory, we have an `index.html` file and an `index.php` file. If we return to our web browser, on `http://server_IP`, Apache will direct you to the `index.html` page rather than `index.php`. This prioritisation will not impact most content management systems, such as WordPress or Drupal. However, these rules can be modified if needed.
 >
 
 ### Step 5: Install the MySQL/MariaDB database.
@@ -241,7 +241,7 @@ To log in, you need to create a user with admin rights for `phpMyAdmin`:
 mysql -u root -p [password] MariaDB [(none)]> CREATE USER 'my_user'@'localhost' IDENTIFIED BY 'my_password'; MariaDB [(none)]> GRANT ALL PRIVILEGES ON * . * TO 'my_user'@'localhost'; MariaDB [(none)]> FLUSH PRIVILEGES; 
 ```
 
-Then access the interface via [http://server_IP/phpmyadmin/](#):
+Then access the interface via `http://server_IP/phpmyadmin/`:
 
 ![PHP installation](images/tuto_pma.png){.thumbnail}
 
@@ -255,7 +255,7 @@ Download, decompress and copy the content into a new file named `mywebsite`:
 wget https://wordpress.org/latest.tar.gz tar xpf latest.tar.gz sudo cp -r wordpress /var/www/html/mywebsite 
 ```
 
-This file containing WordPress is now accessible on [http://server_IP/mywebsite/](#).
+This file containing WordPress is now accessible on `http://server_IP/mywebsite/`.
 
 Create a database named `wordpress` in the command line, or via `phpMyAdmin`.
 

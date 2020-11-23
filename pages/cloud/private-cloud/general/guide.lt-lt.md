@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Bendra informacija
 excerpt: ''
 slug: bendra_informacija

@@ -1,7 +1,7 @@
 ---
 title: 'Configurer son adresse e-mail sur Mail de macOS'
 slug: guide-configuration-mail-de-mac-el-capitan
-excerpt: 'Apprenez à configurer l'adresse e-mail de votre hébergement sur Mail de macOS El Capitan, Sierra et High Sierra'
+excerpt: "Apprenez à configurer l'adresse e-mail de votre hébergement sur Mail de macOS El Capitan, Sierra et High Sierra"
 section: 'Configuration sur ordinateur'
 order: 3
 ---

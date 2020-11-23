@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Ota snapshot tai klooni
 excerpt: ''
 slug: ota_snapshot_tai_klooni

@@ -64,7 +64,7 @@ Prima di creare una firma per utenti, prendi in considerazione queste informazio
 
 [Guida all’utilizzo di Outlook Web App con un account Exchange](../exchange_2016_guida_allutilizzo_di_outlook_web_app)
 
-[Delegare i diritti su un account Exchange](..exchange_2013_assegna_i_diritti_full_access_a_un_account)
+[Delegare i diritti su un account Exchange](../exchange_2013_assegna_i_diritti_full_access_a_un_account)
 
 [Condividi un calendario con la Webmail OWA](../exchange_2016_condividi_un_calendario_con_la_webmail_owa)
 

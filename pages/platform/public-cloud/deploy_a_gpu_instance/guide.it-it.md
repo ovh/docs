@@ -15,7 +15,7 @@ Le GPU proposte da OVHcloud sono NVIDIA Tesla V100.
 
 > [!warning]
 >
-> Per il momento, le istanze GPU sono disponibili soltanto nei datacenter di GRA3, GRA5, GRA7 e BHS3. Per poter utilizzare queste istanze, probabilmente sarà necessario creare un nuovo progetto selezionando la nuova gamma 2017.  Per maggiori informazioni clicca [qui](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/)
+> Per il momento, le istanze GPU sono disponibili soltanto nei datacenter di GRA3, GRA5, GRA7 e BHS3. Per poter utilizzare queste istanze, probabilmente sarà necessario creare un nuovo progetto selezionando la nuova gamma 2017.
 > 
 
 **Questa guida ti mostra come creare un’istanza GPU con Linux o Windows.**

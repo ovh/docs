@@ -3,7 +3,7 @@ title: Associating an email with a vSphere user
 excerpt: Learn how to associate an email address with your vSphere user
 slug: associate-email-with-vsphere-user
 legacy_guide_number: '1441987'
-section: OVH Features
+section: OVHcloud Features
 ---
 
 **Last updated 7th July 2020**
@@ -21,7 +21,7 @@ You can associate a name, first name, phone number, and email address with a vSp
 
 ## Instructions
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) go to the section `Bare Metal Cloud`. Click on `Private Cloud` in the service bar on the left and select your infrastructure.
+In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) go to the section `Hosted Private Cloud`. Click on `Private Cloud` in the service bar on the left and select your infrastructure.
 
 ![user vsphere](images/addMailOnUser01.png){.thumbnail}
 

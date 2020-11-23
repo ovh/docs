@@ -71,8 +71,8 @@ passwd: password updated successfully
 Attenzione: le password non vengono mostrate. Dopodiché passa all’utente “root”e definisci la password admin:
 
 ```sh
-$ sudo su -
-#passwd
+~$ sudo su -
+~#passwd
 New password:
 Retype new password:
 passwd: password updated successfully

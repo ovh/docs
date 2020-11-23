@@ -194,7 +194,7 @@ It is recommended that you create and adjust rules on this firewall, to fit your
 
 OVHcloud solutions include a firewall at the entrance to the infrastructure, called the Firewall Network. Its implementation and configuration allow protocols to be blocked before they even arrive on your server.
 
-We also have a guide on [configuring this firewall network](https://docs.ovh.com/gb/en/dedicated/firewall-network/){.external}.
+We also have a guide on [configuring this firewall network]((../../dedicated/firewall-network/).
 
 ### Backing up your system and your data
 
@@ -210,6 +210,6 @@ You will find all information on our VPS backup solutions here: <https://www.ovh
 
 ## Go further
 
-[Firewall Network Guide](https://docs.ovh.com/gb/en/dedicated/firewall-network/){.external}
+[Firewall Network Guide](../../dedicated/firewall-network/)
 
 Join our user community on <https://community.ovh.com/en/>.

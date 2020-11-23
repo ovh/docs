@@ -35,7 +35,7 @@ W oknie, które się wyświetli rozwiń menu i wybierz „Otwarta” lub "Ograni
 
 > [!primary]
 >
-> Jeśli wybierzesz politykę dostępu „Ograniczona", sprawdź przewodnik ["Autoryzacja IP, które mogą łączyć się z vCenter”](../autoriser-des-ip-a-se-connecter-au-vcenter/).
+> Jeśli wybierzesz politykę dostępu „Ograniczona", sprawdź przewodnik ["Autoryzacja IP, które mogą łączyć się z vCenter”](../autoryzacja-IP-ktore-moga-laczyc-sie-z-vCenter/).
 > 
 
 ## Sprawdź również

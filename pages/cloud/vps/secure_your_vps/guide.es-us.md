@@ -198,7 +198,7 @@ Le recomendamos que cree y adapte las reglas del firewall en función de su uso.
 
 OVHcloud pone a disposición de sus clientes un firewall de red en la entrada de la infraestructura. Activándolo y configurándolo correctamente es posible bloquear determinados protocolos antes incluso de que lleguen al servidor.
 
-Para más información sobre el firewall de red, consulte esta [guía](../dedicated/firewall-de-red/){.external}.
+Para más información sobre el firewall de red, consulte esta [guía](../../dedicated/firewall-de-red/).
 
 ### Guardar copia de seguridad del sistema y los datos
 
@@ -214,6 +214,6 @@ Para más información sobre nuestras soluciones de backup para VPS, visite la p
 
 ## Más información
 
-[El firewall de red](../dedicated/firewall-de-red/){.external}
+[El firewall de red](../../dedicated/firewall-de-red/)
 
 Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://ovh.es/community/){.external}.

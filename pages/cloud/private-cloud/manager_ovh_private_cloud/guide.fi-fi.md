@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: OVH:n Private Cloud -hallintapaneelin esittely
 slug: hallintapaneeli-ovh-private-cloud
 excerpt: Tutustu Private Cloud -hallintapaneelin mahdollisuuksiin

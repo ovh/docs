@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2016: autoatsakiklio nustatymas per OWA'
 excerpt: owa autoatsakiklio nustatymo gidas
 slug: exchange_2016_autoatsakiklio_nustatymas_per_owa

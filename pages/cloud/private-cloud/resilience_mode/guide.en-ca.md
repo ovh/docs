@@ -3,7 +3,7 @@ title: 'Using resilience mode'
 slug: resilience-mode
 excerpt: 'Find out how to use OVH resilience mode'
 legacy_guide_number: '7766742'
-section: 'OVH Features'
+section: 'OVHcloud Features'
 ---
 
 **Last updated 2018/10/30**
@@ -16,8 +16,8 @@ Resilience mode is a tool developed by OVH, which simulates an outage on one of 
 
 ## Requirements
 
-* an [OVH Private Cloud](https://www.ovh.com/ca/en/private-cloud/){.external} solution
-* access to the vSphere interface
+- an [OVHcloud Private Cloud](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/) infrastructure
+- access to the vSphere interface
 
 
 
@@ -35,7 +35,7 @@ Before you proceed, ensure that:
 > 
 
 
-### Activate resilience mode.
+### Activate resilience mode
 
 Once you have logged in to the vSphere client, go to the inventory for your host servers and cluster. Select the server concerned by right-clicking on it, then click `OVH Dedicated Cloud`{.action}, and `Resilience`{.action}.
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Alles over uw gebruikersnaam'
 excerpt: Gebruikersnaam
 slug: alles_over_uw_gebruikersnaam

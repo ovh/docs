@@ -34,11 +34,11 @@ Questa operazione richiede il rispetto di alcune condizioni:
 
 - **le opzioni [NSX](https://www.ovh.it/private-cloud/opzioni/nsx.xml){.external} e [vROps](https://www.ovh.it/private-cloud/opzioni/vrops.xml){.external} devono essere installate**: per verificare questo requisito accedi alla scheda `Informazioni generali`{.action}, riquadro `Opzioni Private Cloud`. Per modificare lo stato delle funzionalità, clicca sui tre puntini in corrispondenza dell’opzione e seleziona `Attiva`{.action}.
 
-- **la politica di accesso al vCenter deve essere impostata su “Limitata”**: per verificare questo requisito accedi alla scheda `Sicurezza`{.action}. Per modificare lo stato dell’opzione, clicca sul pulsante `Modifica la politica di accesso al vCenter`{.action} e segui gli step indicati. In caso di necessità consulta la guida [Introduzione allo Spazio Cliente Private Cloud OVH](https://docs.ovh.com/it/private-cloud/spazio-cliente-private-cloud-ovh/#sicurezza).
+- **la politica di accesso al vCenter deve essere impostata su “Limitata”**: per verificare questo requisito accedi alla scheda `Sicurezza`{.action}. Per modificare lo stato dell’opzione, clicca sul pulsante `Modifica la politica di accesso al vCenter`{.action} e segui gli step indicati. In caso di necessità consulta la guida [Introduzione allo Spazio Cliente Private Cloud OVH](../manager-ovh-private-cloud/#sicurezza).
 
-- **il Private Cloud deve disporre di almeno un indirizzo IP autorizzato a connettersi al vCenter**: per verificare questo requisito accedi alla scheda `Sicurezza`{.action}. Se non risultano presenti IP autorizzati, è possibile aggiungerli con il pulsante `Aggiungi una nuova classe di indirizzi IP`{.action}. In caso di necessità consulta la guida [Introduzione allo Spazio Cliente Private Cloud OVH](https://docs.ovh.com/it/private-cloud/spazio-cliente-private-cloud-ovh/#sicurezza). Per essere sempre in grado di connetterti al vCenter, ti consigliamo di configurare l’autorizzazione su almeno due indirizzi IP. Per garantire l’accessibilità, gli indirizzi IP devono essere statici, non dinamici.
+- **il Private Cloud deve disporre di almeno un indirizzo IP autorizzato a connettersi al vCenter**: per verificare questo requisito accedi alla scheda `Sicurezza`{.action}. Se non risultano presenti IP autorizzati, è possibile aggiungerli con il pulsante `Aggiungi una nuova classe di indirizzi IP`{.action}. In caso di necessità consulta la guida [Introduzione allo Spazio Cliente Private Cloud OVH](../manager-ovh-private-cloud/#sicurezza). Per essere sempre in grado di connetterti al vCenter, ti consigliamo di configurare l’autorizzazione su almeno due indirizzi IP. Per garantire l’accessibilità, gli indirizzi IP devono essere statici, non dinamici.
 
-- **l’utente “admin” deve disporre dei permessi necessari e le sue informazioni devono essere complete**: per verificare questo requisito accedi alla scheda `Utenti`{.action}. Assicurati che il numero di telefono e l’indirizzo email inseriti per “admin” siano corretti e che questo utente disponga del permesso “**token validator**”. Per apportare eventuali modifiche, clicca sui tre puntini in corrispondenza dell’utente e seleziona l’opzione `Modifica`{.action}. In caso di necessità consulta la guida [Introduzione allo Spazio Cliente Private Cloud OVH](https://docs.ovh.com/it/private-cloud/spazio-cliente-private-cloud-ovh/#sicurezza). Per essere sempre in grado di connetterti al vCenter, ti consigliamo di configurare le informazioni e i permessi necessari su almeno due utenti (con numero di telefono e indirizzo email diversi).
+- **l’utente “admin” deve disporre dei permessi necessari e le sue informazioni devono essere complete**: per verificare questo requisito accedi alla scheda `Utenti`{.action}. Assicurati che il numero di telefono e l’indirizzo email inseriti per “admin” siano corretti e che questo utente disponga del permesso “**token validator**”. Per apportare eventuali modifiche, clicca sui tre puntini in corrispondenza dell’utente e seleziona l’opzione `Modifica`{.action}. In caso di necessità consulta la guida [Introduzione allo Spazio Cliente Private Cloud OVH](../manager-ovh-private-cloud/#sicurezza). Per essere sempre in grado di connetterti al vCenter, ti consigliamo di configurare le informazioni e i permessi necessari su almeno due utenti (con numero di telefono e indirizzo email diversi).
 
 Una volta completato il processo di attivazione, sarà necessario:
 
@@ -68,8 +68,8 @@ Accedi all’interfaccia protetta utilizzando il link contenuto nell’email ric
 
 ## Per saperne di più
 
-[Introduzione allo Spazio Cliente Private Cloud OVH](https://docs.ovh.com/it/private-cloud/spazio-cliente-private-cloud-ovh/#sicurezza)
+[Introduzione allo Spazio Cliente Private Cloud](../manager-ovh-private-cloud/)
 
-[Utilizzare l’interfaccia sicura](https://docs.ovh.com/gb/en/private-cloud/secure-interface/) (in inglese)
+[Utilizzare l’interfaccia sicura](../interfaccia-sicura/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.

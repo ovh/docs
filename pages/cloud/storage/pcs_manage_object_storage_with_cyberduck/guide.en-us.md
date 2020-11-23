@@ -6,7 +6,7 @@ section: 'Object Storage'
 legacy_guide_number: g1868
 ---
 
-**Last updated O8th January 2020**
+**Last updated 8th January 2020**
 
 ## 
 Object Storage is a storage solution that is managed primarily through the OpenStack API.
@@ -18,8 +18,8 @@ This guide will explain how to configure Cyberduck to manage your Object Storage
 
 ## Prerequisites
 
-- You must have access to Horizon:[Accessing the Horizon interface](https://docs.ovh.com/us/en/public-cloud/creation-and-deletion-of-openstack-user/){.ref}
-- You must have your project and user ID, which you can get by downloading the OpenRC file in the [Users & Roles](https://docs.ovh.com/us/en/public-cloud/set-openstack-environment-variables/#instructions) menu in the OVHcloud control panel.
+- You must have access to Horizon: [Accessing the Horizon interface](../../public-cloud/configure_user_access_to_horizon/)
+- You must have your project and user ID, which you can get by downloading the OpenRC file in the [Access and Security](../../public-cloud/access_and_security_in_horizon/) menu in Horizon.
 
 
 
@@ -47,11 +47,9 @@ Enter the following information:
 ![objectstorage-cyberduck](images/img_2756.jpg){.thumbnail}
 
 
+
 ##
 
-- [Getting started with the Swift API](https://docs.ovh.com/us/en/public-cloud/getting_started_with_the_swift_api/)
-
-
-## 
+[Getting started with the Swift API](../../public-cloud/getting_started_with_the_swift_api/)
 
 

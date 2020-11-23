@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webmail: RoundCube Gebruikershandleiding'
 excerpt: ''
 slug: webmail_roundcube_gebruikershandleiding

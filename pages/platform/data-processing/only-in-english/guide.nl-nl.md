@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Data Processing
 slug: only-in-english
 excerpt: Available in English only

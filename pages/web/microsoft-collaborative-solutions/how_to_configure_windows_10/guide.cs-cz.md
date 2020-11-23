@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Konfigurace účtů služby Exchange v aplikaci Pošta pro Windows 10'
 slug: konfigurace-posta-windows-10
 excerpt: 'Zjistěte, jak nakonfigurovat účet Exchange v aplikaci Pošta pro operační systém Windows 10'

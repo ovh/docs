@@ -2,7 +2,7 @@
 title: Modificare la password utente
 slug: modificare-password-utente
 excerpt: Come impostare una nuova password per un utente del client vSphere dallo Spazio Cliente OVHcloud
-section: Funzionalità OVH
+section: Funzionalità OVHcloud
 ---
 
 **Ultimo aggiornamento: 17/06/2020**
@@ -16,13 +16,13 @@ Le autorizzazioni e le password associate agli utenti del client vSphere possono
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Disporre di un account utente creato dallo Spazio Cliente OVHcloud. Per maggiori informazioni, consulta [questa guida](../spazio-cliente-private-cloud-ovh/#utenti)
+- Disporre di un account utente creato dallo Spazio Cliente OVHcloud. Per maggiori informazioni, consulta [questa guida](../manager-ovh-private-cloud/#utenti)
 
 ## Procedura
 
 ### Modifica la password
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e, nella sezione `Bare Metal Cloud`{.action}  (1), clicca su `Private Cloud`{.action} (2), seleziona il server dalla lista (3) e clicca sulla scheda `Utenti`{.action}(4).
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e, nella sezione `Hosted Private Cloud`{.action}  (1), clicca su `Private Cloud`{.action} (2), seleziona il server dalla lista (3) e clicca sulla scheda `Utenti`{.action}(4).
 
 ![Accesso allo Spazio Cliente](images/userpassword1.png){.thumbnail}
 
@@ -55,10 +55,10 @@ Nella nuova finestra, inserisci la password e confermala.
 
 ## Per saperne di più
 
-[Introduzione allo Spazio Cliente Private Cloud OVH](../spazio-cliente-private-cloud-ovh/)
+[Introduzione allo Spazio Cliente Private Cloud](../manager-ovh-private-cloud/)
 
-[Modificare i diritti di un utente](../change-users-rights/)
+[Modificare i diritti di un utente](../modificare-permessi-di-un-utente/)
 
-[Impostare e gestire la password di un account OVHcloud](https://docs.ovh.com/it/customer/gestire-la-password/)
+[Impostare e gestire la password di un account OVHcloud](../../customer/gestire-la-password/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -22,7 +22,7 @@ A gestão das autorizações e palavras-passe dos utilizadores cliente vSphere r
 
 ### Alterar palavra-passe
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dirija-se à secção `Bare Metal Cloud`{.action} (1), clique em `Private Cloud`{.action} (2) e selecione o seu servidor na lista (3). De seguida, clique no separador `Utilizadores`{.action} (4).
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dirija-se à secção `Hosted Private Cloud`{.action} (1), clique em `Private Cloud`{.action} (2) e selecione o seu servidor na lista (3). De seguida, clique no separador `Utilizadores`{.action} (4).
 
 ![acces espace client](images/userpassword1.png){.thumbnail}
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Beveilig uw domein met DNSSEC
 excerpt: ''
 slug: beveilig_uw_domein_met_dnssec

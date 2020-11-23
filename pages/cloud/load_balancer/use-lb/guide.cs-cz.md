@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Správa služby Load Balancer ze Zákaznického prostoru OVH
 slug: pouziti-lb
 excerpt: Přehled hlavních funkcí a seznámení se se správou služby Load Balancer

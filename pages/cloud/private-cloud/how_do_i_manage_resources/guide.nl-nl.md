@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Hoe kan ik mijn resources beheren?
 excerpt: ''
 slug: hoe_kan_ik_mijn_resources_beheren

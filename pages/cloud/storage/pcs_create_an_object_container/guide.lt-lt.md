@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Objektų konteinerio kūrimas
 excerpt: Objektų konteinerio kūrimas
 slug: objektu_konteinerio_kurimas

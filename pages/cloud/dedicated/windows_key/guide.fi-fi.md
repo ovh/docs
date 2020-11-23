@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Windows Server -aktivointiavaimen korjaus'
 excerpt: 'Katso, kuinka Windows Serverin aktivointiavainta muokataan'
 slug: windows-key

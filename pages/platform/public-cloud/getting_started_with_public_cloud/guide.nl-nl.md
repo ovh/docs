@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Aan de slag met Public Cloud: inloggen en het creëren van een project'
 excerpt: Deze handleiding legt uit hoe u uw eerste Public Cloud-project kunt aanmaken
 slug: aan_de_slag_met_public_cloud_inloggen_en_het_creeren_van_een_project

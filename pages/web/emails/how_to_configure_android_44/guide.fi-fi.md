@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH Sähköpostit: Android versio 4.4 -puhelimen konfigurointiohje'
 excerpt: Miten konfiguroidaan sähköposti Android-puhelimelle
 slug: ovh_sahkopostit_android_versio_44_-puhelimen_konfigurointiohje

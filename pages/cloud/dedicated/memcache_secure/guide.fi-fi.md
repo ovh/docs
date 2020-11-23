@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Palvelimen suojaus Memcached-palvelulla
 slug: palvelimen-suojaus-memcached-palvelulla
 excerpt: Katso, kuinka voit suojata Memcached-palvelusi

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Automatinis OVH paslaugų galiojimo pratęsimas
 slug: automatinis_ovh_paslaugu_galiojimo_pratesimas
 legacy_guide_number: g1271

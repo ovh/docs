@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Stap 1 - Uw VMware Horizon 7.1-platform
 slug: platform-horizon-7
 excerpt: Leer hoe u VMware Horizon 7.1 kunt opzetten

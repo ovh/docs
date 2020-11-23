@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: HG Hardzone
 excerpt: In deze handleiding wordt uitgelegd hoe u prestatie-testen kunt uitvoeren op de HG Hardzone server.
 slug: hg_hardzone

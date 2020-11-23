@@ -1,12 +1,11 @@
 ---
-title: 'Launching your first SMS campaign'
-excerpt: 'Find out how to launch an SMS campaign'
+title: Launching your first SMS campaign
+excerpt: Find out how to launch an SMS campaign
 slug: launch_first_sms_campaign
-legacy_guide_number: g2212
-section: 'Getting started'
+section: Getting started
 ---
 
-**Last updated 17th June 2020**
+**Last updated 28th October 2020**
 
 ## Objective
 
@@ -18,39 +17,35 @@ OVHcloud provides tools integrated into the OVHcloud Control Panel, for sending 
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), then select `Telecom`{.action} (1). Next, click `SMS`{.action} on the left (2), and select your SMS account (3).
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), then select `Telecom`{.action}. Next, click `SMS`{.action} on the left, and select your SMS account.
 
-The toolbar (4) will give you access to the main features for sending SMS campaigns.
+The toolbar and shortcuts will give you access to the main features for sending SMS campaigns.
 
 ![firstsms](images/firstsms01.png){.thumbnail}
 
-### Step 1: Send SMS messages.
+### Step 1: Add contacts
 
-With the `SMS`{.action} tab, you can access the sending options , the log of SMS messages sent and received, and scheduled SMS messages that are due to be sent in future.
+#### Add a contact list
 
-![firstsms](images/firstsms02.png){.thumbnail}
+A contact list can be imported via a .csv or .txt file.
 
-To send an SMS message via the OVHcloud Control Panel, you can refer to [this guide](../send_sms_messages_via_control_panel).
-
-You can also refer to our guide on [Managing SMS logs](../manage_sms_logs/).
-
-### Step 2: Add a recipient list.
-
-Via the `Contacts`{.action}, tab, you can send your SMS message to one or more recipient lists. These lists can be exported as .csv or .txt files.
+To add a contact list, click the `Contacts`{.action} tab, and then click `Create a contact list`{.action}. 
 
 ![firstsms](images/firstsms03.png){.thumbnail}
 
-With the following guide, you can find out how to [create a list of SMS recipients](../create_sms_recipient_list/).
+With the following guide, you can find out how to [create a list of SMS recipients](../list_of_sms_recipients/).
 
-### Step 3: Add an address book.
+#### Add an address book
 
-Via the `Address book`{.action} tab, you can create several address books you can send SMS messages to. Unlike a recipient list, address books contain contacts you can name, and more easily identify in targeted campaigns.
+Unlike contact lists, address books contain contacts that you can name and more easily identify for targeted campaigns.
+
+To add an address book, click the `Contacts`{.action} tab, then `Address book`{.action}.
 
 ![firstsms](images/firstsms04.png){.thumbnail}
 
 Refer to our guide on [Managing SMS address books](../manage-sms-address-books/) to find out more.
 
-### Step 4: Create a sender.
+### Step 2: Create a sender
 
 By default, SMS messages from an OVHcloud account in France are sent from a short number, which enables recipients to reply back. You may want to create an alpha-numeric sender name via the `Senders`{.action} tab, so that your SMS messages are sent with your company or organisation’s name.
 
@@ -58,7 +53,32 @@ By default, SMS messages from an OVHcloud account in France are sent from a shor
 
 To do this, you can refer to the [section on choosing an SMS sender, in our guide on sending SMS messages via the OVHcloud Control Panel.](../send_sms_messages_via_control_panel/#step-3-choose-an-sms-sender)
 
+### Step 3: Sending an SMS campaign
+
+In the `Message and Campaign`{.action} tab, you can access the sending options, the log of SMS messages sent and received, and scheduled SMS messages that are due to be sent in future.
+
+![firstsms](images/firstsms02.png){.thumbnail}
+
+To send a unit SMS message via the OVHcloud Control Panel, you can refer to [this guide](../send_sms_messages_via_control_panel).
+
+To send an SMS campaign, click `Campaign Management`{.action}, then `Create a campaign`{.action}.
+
+![firstsms](images/firstsms06.png){.thumbnail}
+
+First, enter a name for your campaign in the field provided.
+
+Then choose the sender from the list.
+
+![firstsms](images/firstsms07.png){.thumbnail}
+
+Then compose your message, and choose between sending it immediately or sending it on schedule. If you choose to schedule your campaign, you will need to define the date and time of sending.
+
+![firstsms](images/firstsms08.png){.thumbnail}
+
+You just need to click the `Send`{.action} button to send or schedule your campaign.
+
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+See [our guide on managing your SMS history](../manage-sms-history/).
 
+Join our community of users on <https://community.ovh.com/en/>.

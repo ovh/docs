@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Hardware Diagnostics
 slug: hardware-diagnostics
 excerpt: This guide will show you how to diagnose hardware issues on your server.

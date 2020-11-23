@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Sähköpostitilin siirto OVH Mail Migrator -työkalulla
 slug: exchange-sahkopostitilin-migraatio-ovh-mail-migrator
 excerpt: Opi siirtämään sähköpostitilisi OVH:lle Mail Migrator -työkalulla

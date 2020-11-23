@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Hyvät tietoturvakäytännöt vSphere Web -asiakasohjelmassa
 slug: vsphere-web-yhteyden-suojaaminen
 excerpt: Katso, kuinka voit suojata pääsyn vSphere Web -asiakasohjelmaan

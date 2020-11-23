@@ -15,8 +15,8 @@ Tem a possibilidade de gerir facilmente as suas instâncias Public Cloud da OVH 
 
 ### Requisitos
 
-- uma [instância Public Cloud OVH](https://docs.ovh.com/pt/public-cloud/criar_uma_instancia_a_partir_do_espaco_cliente_ovh/)
-- uma [chave SSH](https://docs.ovh.com/pt/public-cloud/criacao-de-chaves-ssh/)
+- uma [instância Public Cloud OVH](../criar_uma_instancia_a_partir_do_espaco_cliente_ovh/)
+- uma [chave SSH](../criacao-de-chaves-ssh/)
 
 ### Instruções
 
@@ -71,7 +71,7 @@ Uma vez realizada a cópia de segurança será possível visualizá-la na secç�
 
 ![public-cloud](images/backup3.png){.thumbnail}
 
-Consulte o nosso manual [Criar uma cópia de segurança de uma instância](../guardar_copia_de_seguridad_de_una_instancia/) para obter ajuda nesta operação. 
+Consulte o nosso manual [Criar uma cópia de segurança de uma instância](../efetuar_backup_de_uma_instancia/) para obter ajuda nesta operação. 
 
 ### Criar uma cópia de segurança automática da instância
 
@@ -91,7 +91,7 @@ Poderá consultar a qualquer altura a `Gestão de workflow`{.action} para elimin
 
 ![public-cloud](images/backupautodelete.png){.thumbnail}
 
-Consulte o nosso manual [Criar uma cópia de segurança de uma instância](../guardar_copia_de_seguridad_de_una_instancia/) para obter ajuda nesta operação. 
+Consulte o nosso manual [Criar uma cópia de segurança de uma instância](../efetuar_backup_de_uma_instancia/) para obter ajuda nesta operação. 
 
 ### Obter a informação de login
 

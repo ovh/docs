@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Getting started with NGC on OpenStack'
 excerpt: 'Use NVIDIA GPU Cloud to speed up your GPU-accelerated development'
 slug: getting_started_with_ngc

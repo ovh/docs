@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Zásady zabezpečení webového klienta vSphere'
 slug: zabezpeceni-pristupu-vsphere-web
 excerpt: 'Zjistěte, jak zabezpečit přístup k webovému klientu vSphere'

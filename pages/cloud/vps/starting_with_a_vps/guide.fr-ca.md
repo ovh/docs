@@ -1,6 +1,6 @@
 ---
 title: 'Débuter avec un VPS'
-excerpt: 'Apprenez les bases de l''utilisation d''un VPS'
+excerpt: "Apprenez les bases de l'utilisation d'un VPS"
 slug: debuter-avec-vps
 section: 'Premiers pas'
 order: 1
@@ -62,7 +62,7 @@ ssh nom_d_utilisateur@IPv4_de_votre_VPS
 Étant donné que vous êtes maintenant connecté avec les privilèges root (un utilisateur sudo), vous pouvez entrer des commandes pour effectuer des tâches administratives. Il est recommandé de modifier votre mot de passe au préalable :
 
 ```sh
-$ sudo passwd
+~$ sudo passwd
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -71,8 +71,8 @@ passwd: password updated successfully
 À noter que les mots de passe ne sont pas affichés. Basculez ensuite vers l'utilisateur "root" et définissez votre mot de passe admin :
 
 ```sh
-$ sudo su -
-# passwd
+~$ sudo su -
+~# passwd
 New password:
 Retype new password:
 passwd: password updated successfully

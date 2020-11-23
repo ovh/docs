@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Použití konzole KVM na virtuálním privátním serveru
 excerpt: Jak používat konzoli KVM na VPS
 slug: pouziti_kvm_na_vps

@@ -331,7 +331,7 @@ If a certificate message appears, click on `Yes`{.action}. Next, enter username 
 
 ## Go further
 
-[Backing up an instance](https://docs.ovh.com/gb/en/public-cloud/back-up-instance/)
+[Backing up an instance](../back-up-instance/)
 
 [Increasing Public Cloud quota](../increase-public-cloud-quota/)
 

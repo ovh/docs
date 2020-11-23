@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Konfigurace účtů služby MX Plan na e-mailovém klientu macOS'
 slug: konfigurace-mxplan-macos
 excerpt: 'Seznamte se s postupem pro konfiguraci účtů služby MX Plan na macOS El Capitan, Sierra a High Sierra'

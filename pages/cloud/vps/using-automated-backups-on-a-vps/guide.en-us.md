@@ -28,7 +28,7 @@ Before applying backup options, we recommend to consult the [product pages and F
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), navigate to the "Server" section, and select your server from the left-hand sidebar under `VPS`{.action}.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), navigate to the "Bare Metal Cloud" section, and select your server from the left-hand sidebar under `VPS`{.action}.
 
 ### Step 1: Subscribing to the Automated backups option
 
@@ -171,7 +171,7 @@ Running  QEMU-GA            QEMU Guest Agent
 
 ## Go further
 
-[Using snapshots on a VPS](https://docs.ovh.com/en/vps/using-snapshots-on-a-vps)
+[Using snapshots on a VPS](../using-snapshots-on-a-vps/)
 
 
 Join our community of users on <https://community.ovh.com/en/>.

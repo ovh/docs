@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configureer een failover IP met Ubuntu
 excerpt: Configureer een failover IP met Ubuntu
 slug: configureer_een_failover_ip_met_ubuntu

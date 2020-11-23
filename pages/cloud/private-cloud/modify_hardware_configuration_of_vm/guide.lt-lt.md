@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Modifying virtual machine resources
 slug: virtualios_masinos_konfiguracijos_keitimas
 excerpt: Find out how to scale your virtual machine

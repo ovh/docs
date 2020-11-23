@@ -2,7 +2,7 @@
 title: How to cancel your Private Cloud offer 
 slug: how-to-cancel-private-cloud
 excerpt: Learn how to request the termination of a Private cloud infrastructure
-section: OVH Features
+section: OVHcloud Features
 order: 09
 ---
 
@@ -30,7 +30,7 @@ The Private Cloud offer is without obligation. However, as laid out in the [Spec
 
 ### Step 1: Request termination from the OVHcloud Control Panel
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, go to `Bare Metal Cloud`{.action} (1), click on `Private Cloud`{.action} (2) and select your offer from the list (3).
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, go to `Hosted Private Cloud`{.action} (1), click on `Private Cloud`{.action} (2) and select your offer from the list (3).
 
 In the "Service management" section of the "General Information" tab, click the button `...`{.action} (4) to the right of the renewal date. Finally, click on `Delete the service`{.action} (5).
 

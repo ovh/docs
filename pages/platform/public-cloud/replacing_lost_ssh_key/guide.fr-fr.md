@@ -2,7 +2,7 @@
 title: 'Changer sa clé SSH en cas de perte'
 slug: changer-sa-cle-ssh-en-cas-de-perte
 legacy_guide_number: 2069
-section: 'Gestion depuis l''espace client'
+section: "Gestion depuis l'espace client"
 order: 6
 ---
 

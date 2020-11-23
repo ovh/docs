@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Een backup importeren in de database van een webhostingplan'
 slug: gedeelde-handleiding-importeren-mysql-databank
 excerpt: 'Ontdek hoe u een backup in de database van een webhostingplan kunt importeren'

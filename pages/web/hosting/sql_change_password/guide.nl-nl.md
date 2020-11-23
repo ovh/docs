@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Wijziging van het wachtwoord voor een webhosting-database'
 slug: wijzigen-wachtwoord-database
 excerpt: 'Ontdek hoe u het wachtwoord kunt wijzigen voor een database die is gecreëerd als onderdeel van een webhostingplan'

@@ -289,7 +289,7 @@ You can ignore any error messages that appear regarding the health of the disk g
 
 #### Turn off high-availability.
 
-The same way you turned on the high-availability feature, you will need to turn it off for the cluster before you stop vSAN. To do this, go to the cluster properties, in the ‘vSphere Availability’ section, then untick the ‘Turn ON vSphere HA” box.
+The same way you turned on the high-availability feature, you will need to turn it off for the cluster before you stop vSAN. To do this, go to the cluster properties, in the ‘vSphere Availability’ section, then untick the "Turn ON vSphere HA" box.
 
 ![](images/vsan_14.png){.thumbnail}
 

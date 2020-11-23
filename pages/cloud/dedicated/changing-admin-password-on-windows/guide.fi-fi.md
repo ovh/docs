@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Administraattorin salasanan vaihtaminen dedikoidulla Windows-palvelimella'
 slug: admin-salasanan-vaihtaminen-windows
 excerpt: 'Katso, kuinka administraattorin salasana vaihdetaan dedikoidulla Windows-palvelimella'

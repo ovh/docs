@@ -1,6 +1,6 @@
 ---
 title: VPS
 slug: vps
-excerpt: Using your OVH VPS
-sections: Getting started, Diagnostic and rescue mode, Advanced usage
+excerpt: How to use your OVHcloud VPS
+sections: 'Getting started, Diagnostics and rescue mode, Network management, Backup options, Advanced usage'
 ---

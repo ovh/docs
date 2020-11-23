@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Hosting: FAQ - Migrate to the latest versions of PHP'
 excerpt: 'Hosting: FAQ - Migrate to the latest versions of PHP'
 slug: hosting_faq_-_migrate_to_the_latest_versions_of_php

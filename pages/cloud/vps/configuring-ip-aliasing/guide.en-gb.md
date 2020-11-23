@@ -2,7 +2,7 @@
 title: 'Configuring IP aliasing'
 slug: network-ipaliasing-vps
 excerpt: 'Find out how to add failover IP addresses to your VPS configuration'
-section: 'Network Management'
+section: 'Network management'
 ---
 
 **Last updated 8th April 2020**
@@ -270,7 +270,7 @@ Next, simply ping your IPFO from the outside. If it works, it probably means tha
  
 ## Go further
 
-[Activating Rescue Mode on VPS](https://docs.ovh.com/gb/en/vps/rescue)
+[Activating Rescue Mode on VPS](../rescue)
 
 
 Join our community of users on <https://community.ovh.com/en/>.

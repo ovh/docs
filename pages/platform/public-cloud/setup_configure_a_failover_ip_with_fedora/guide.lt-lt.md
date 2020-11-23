@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: IP Failover konfigūravimas Fedora sistemoje
 excerpt: IP Failover konfigūravimas Fedora sistemoje
 slug: ip_failover_konfiguravimas_fedora_sistemoje

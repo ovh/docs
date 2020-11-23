@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Johdanto SSH-protokollaan
 slug: ssh-johdanto
 excerpt: Lue tästä kuinka voit käyttää SSH-palvelua palvelimelle kirjautumisessa.

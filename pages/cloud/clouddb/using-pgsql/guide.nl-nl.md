@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Aan de slag met PostgreSQL
 slug: aan-de-slag-met-postgresql
 excerpt: Using Your Databases

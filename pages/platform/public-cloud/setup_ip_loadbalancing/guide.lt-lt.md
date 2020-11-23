@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: IP LoadBalancing konfigūravimas
 excerpt: IP LoadBalancing konfigūravimas
 slug: ip_loadbalancing_konfiguravimas

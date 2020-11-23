@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Aan de slag met een webhosting plan
 slug: begin_met_een_webhosting_pakket
 excerpt: Ontdek hoe u aan de slag kunt met een webhosting plan

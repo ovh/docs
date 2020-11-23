@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: První kroky s webhostingem Cloud Web
 slug: prvni-kroky-cloud-web
 excerpt: Zjistěte, jak na webhosting Cloud Web

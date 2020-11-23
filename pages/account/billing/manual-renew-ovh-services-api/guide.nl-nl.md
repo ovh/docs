@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Uw diensten verlengen via de OVH API'
 slug: dienst-verlengen-via-api
 excerpt: 'Ontdek hoe u uw diensten middels OVH‘s API kunt vernieuwen'
@@ -17,7 +18,7 @@ OVH biedt uiteraard de mogelijkheid om uw oplossing automatisch te verlengen. U 
 ## Vereisten
 
 - U moet ingelogd zijn op de [OVH API](https://api.ovh.com/console){.external}.
-- U moet uw [inloggegevens voor de OVH API hebben aangemaakt](https://api.ovh.com/g934.first_step_with_api){.external}.
+- U moet uw inloggegevens voor de OVH API hebben aangemaakt.
 
 ## Instructies
 

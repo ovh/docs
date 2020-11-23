@@ -47,6 +47,6 @@ Vous recevrez alors un e-mail vous demandant de confirmer ou d’annuler la supp
 
 ## Aller plus loin
 
-[Démarrer avec Public Cloud](https://docs.ovh.com/fr/public-cloud/debuter-avec-une-instance-public-cloud/){.external}.
+[Démarrer avec Public Cloud](../premiers-pas-instance-public-cloud/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

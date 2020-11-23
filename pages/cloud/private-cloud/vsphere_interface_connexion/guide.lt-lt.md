@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Logging in to the vSphere interface
 slug: vsphere_kliento_diegimas
 excerpt: Learn about the different ways you can log in to vSphere

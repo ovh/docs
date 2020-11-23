@@ -44,12 +44,12 @@ You simply need to read and confirm the terms and conditions for the plan in **s
 
 Once you have placed your order, you will be sent an email containing the [FTP connection details](../log-in-to-storage-ftp-web-hosting/){.external} for your Start 10M hosting plan.
 
-Please read our guide on [creating an MX Plan email account](../emails/hosted_email_how_to_set_up_an_email_address/){.external} to get the very most out of the email address included with the Start 10M hosting solution.
+Please read our guide on [creating an MX Plan email account](../../emails/hosted_email_how_to_set_up_an_email_address/){.external} to get the very most out of the email address included with the Start 10M hosting solution.
 
 ## Go further
 
 [Logging in to your Web Hosting plan’s storage space](../log-in-to-storage-ftp-web-hosting/){.external}
 
-[Creating an email address with an MX Plan solution](../emails/hosted_email_how_to_set_up_an_email_address/){.external}
+[Creating an email address with an MX Plan solution](../../emails/hosted_email_how_to_set_up_an_email_address/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.

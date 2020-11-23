@@ -3,7 +3,7 @@ title: Associar um e-mail a um utilizador vSphere
 excerpt: Saiba como associar um endereço de e-mail ao seu utilizador vSphere
 slug: associar-e-mail-a-um-utilizador
 legacy_guide_number: '1441987'
-section: Funcionalidades da OVH
+section: Funcionalidades da OVHcloud
 ---
 
 **Última atualização: 20/08/2020**
@@ -21,7 +21,7 @@ section: Funcionalidades da OVH
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e selecione a secção `Bare Metal Cloud`. Clique em `Private Cloud` na barra de serviços à esquerda e selecione a infraestrutura correspondente.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e selecione a secção `Hosted Private Cloud`. Clique em `Private Cloud` na barra de serviços à esquerda e selecione a infraestrutura correspondente.
 
 ![utilizador vsphere](images/addMailOnUser01.png){.thumbnail}
 

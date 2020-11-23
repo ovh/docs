@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellit: FileZilla käyttöohje'
 excerpt: 'Ohjeessa neuvotaan, miten käytetään FileZilla FTP-ohjelmaa.'
 id: '1380'

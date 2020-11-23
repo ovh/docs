@@ -15,7 +15,7 @@ As GPU disponibilizadas são as NVIDIA Tesla V100.
 
 > [!warning]
 >
-> Atualmente, as instâncias GPU só estão disponíveis nos datacentres GRA3, GRA5, GRA7 e BHS3. É possível que tenha de criar um novo projeto e escolher a nova gama 2017. [Saber mais.](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/)
+> Atualmente, as instâncias GPU só estão disponíveis nos datacentres GRA3, GRA5, GRA7 e BHS3. É possível que tenha de criar um novo projeto e escolher a nova gama 2017.
 > 
 
 **Este guia explica como criar uma instância GPU em Linux ou Windows**

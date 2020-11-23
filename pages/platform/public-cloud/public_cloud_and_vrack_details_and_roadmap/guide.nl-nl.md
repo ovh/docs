@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Public Cloud en vRack - details en roadmap
 excerpt: Public Cloud en vRack - details en roadmap
 slug: public_cloud_en_vrack_-_details_en_roadmap

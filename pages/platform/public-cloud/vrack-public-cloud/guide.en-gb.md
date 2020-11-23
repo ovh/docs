@@ -59,7 +59,7 @@ You can simply access it from [our web page](https://api.ovh.com/) but also use 
 
 You may need to retrieve various information before using some API calls because a specific input is required.
 
-Please refer to [this guide](../first-steps-with-ovh-api/) to get started with the OVHcloud APIv6.
+Please refer to [this guide](../../api/first-steps-with-ovh-api/) to get started with the OVHcloud APIv6.
 
 ### OpenStack API
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Object storage -säilöjen synkronointi
 excerpt: Object storage -säilöjen synkronointi
 slug: object_storage_-sailojen_synkronointi

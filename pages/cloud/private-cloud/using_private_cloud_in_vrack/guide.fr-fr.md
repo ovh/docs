@@ -3,7 +3,7 @@ title: Utiliser le Private Cloud au sein d’un vRack
 slug: utiliser-le-private-cloud-au-sein-d-un-vrack
 excerpt: Découvrez comment utilisez le vRack avec votre offre SDDC
 legacy_guide_number: '7766915'
-section: Services et options OVH
+section: Services et options OVHcloud
 order: 02
 ---
 

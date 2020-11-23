@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: valdymas ir prieiga prie slaptažodžių'
 excerpt: 'Svetainių talpinimas: valdymas ir prieiga prie slaptažodžių'
 id: '1909'

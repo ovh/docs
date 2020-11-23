@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Outlook Web App -käyttöohje'
 excerpt: OWA-käyttöohje
 slug: exchange_2016_outlook_web_app_-kayttoohje

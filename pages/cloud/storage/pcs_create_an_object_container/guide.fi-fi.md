@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Object storage -säilön luominen
 excerpt: Object storage -säilön luominen
 slug: object_storage_-sailon_luominen

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Hälytyksen luonti
 excerpt: ''
 slug: halytyksen_luonti

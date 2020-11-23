@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuring an email address on the macOS Mail app'
 slug: guide-configuring-mail-on-macos
 excerpt: 'Find out how to configure an MX Plan email address on the Mail app, for the following macOS operating systems - El Capitan, Sierra and High Sierra'

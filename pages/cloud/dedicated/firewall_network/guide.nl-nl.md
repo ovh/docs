@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuratie van Network Firewall'
 slug: firewall-network
 excerpt: 'Leer hoe u uw Network Firewall kunt instellen'

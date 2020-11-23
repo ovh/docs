@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: První kroky se službou Hosted Exchange
 slug: prvotni-konfigurace-hosted-exchange
 excerpt: Naučte se ovládat svou službu Hosted Exchange

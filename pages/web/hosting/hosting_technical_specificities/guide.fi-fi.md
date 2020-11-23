@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellit: Webhotellien tekniset erityispiirteet'
 excerpt: Ohjeessa selvitetään webhotelleihin liittyviä teknisiä erityispiirteitä.
 id: '1463'

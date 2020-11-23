@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Kernelin päivitys dedikoidulla palvelimella'
 slug: kernelin-paivitys-dedikoitu-palvelin
 excerpt: 'Katso, kuinka distribuution kernel päivitetään OVH:n ydintä käyttämällä'

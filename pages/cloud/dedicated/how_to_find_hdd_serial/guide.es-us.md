@@ -31,7 +31,7 @@ Para minimizar el riesgo de error durante la sustitución de un disco duro, pedi
 Para conocer el número de serie de un disco duro con RAID por software, utilice el comando `smartctl`:
 
 ```sh
-# smartctl -a /dev/sdX | grep Serial Serial Number:    XXXXXXX
+# smartctl -a /dev/sdX | grep Serial
 ```
 
 En este caso, el periférico (por ejemplo, /dev/sda, /dev/sdb...) es detectado por el sistema operativo.
@@ -137,7 +137,7 @@ Una vez disponga del adaptador y del Device Id, deberá utilizarlos para indicar
 El comando debe tener el siguiente formato:
 
 ```sh
-# smartctl -d megaraid,N -a /dev/sdX | grep Serial Serial Number: 1234567890
+# smartctl -d megaraid,N -a /dev/sdX | grep Serial
 ```
 
 No olvide sustituir en el comando anterior **N** por el Device Id y **sdX** por el volumen en RAID (**/dev/sda** para el primer RAID, **/dev/sdb** para el segundo RAID, y así sucesivamente).
@@ -154,7 +154,7 @@ No olvide sustituir en el comando anterior **N** por el Device Id y **sdX** por 
 > En ese caso, deberá sustituir **megaraid** por **sat+megaraid**:
 >
 > ```
-> smartctl -d sat+megaraid,N -a /dev/sdX | grep Serial Serial Number:    1234567890
+> smartctl -d sat+megaraid,N -a /dev/sdX | grep Serial
 > ```
 >
 
@@ -167,7 +167,7 @@ Para determinar qué periférico sg corresponde a cada disco duro, consulte nues
 Una vez que sepa qué periférico sg corresponde al disco duro que quiera analizar, utilice el siguiente comando:
 
 ```sh
-# smartctl -a /dev/sgX | grep Serial Serial Number:    1234567890
+# smartctl -a /dev/sgX | grep Serial
 ```
 
 No olvide sustituir en el comando anterior **sgX** por **/dev/sg0**, **/dev/sg1**...

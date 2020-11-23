@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuring additional SSH keys'
 slug: configuring_additional_ssh_keys
 excerpt: 'This guide will explain how to configure additional SSH keys for your instance in order to grant access to other people.'

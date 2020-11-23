@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Getting started with a dedicated server
 slug: getting-started-dedicated-server
 excerpt: This guide will give you a few tips to help you manage your newly-delivered dedicated server

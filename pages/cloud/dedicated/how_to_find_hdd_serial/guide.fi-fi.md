@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Kovalevyn sarjanumeron hakeminen'
 slug: kovalevyn-sarjanumeron-hakeminen
 excerpt: 'Katso, kuinka kovalevyn sarjanumero haetaan levyn korvaamista varten'
@@ -32,7 +33,7 @@ Kovalevyn vaihdossa tapahtuvien virheiden minimoimiseksi pyydämme asiakkaitamme
 Voit hakea sarjanumeron ohjelmistopohjaista RAIDia käyttävälle kovalevylle käyttämällä komentoa `smartctl`:
 
 ```sh
-smartctl -a /dev/sdX | grep Serial Serial Number:    XXXXXXX
+smartctl -a /dev/sdX | grep Serial
 ```
 
 Käyttöjärjestelmä on havainnut laitteen (esim. /dev/sda, /dev/sdb, jne.).
@@ -140,7 +141,7 @@ Laitteen ja adaptorin ID-tunnuksilla ilmoitetaan `smartctl`-komennolle, mitä le
 Komennon pitäisi siis näyttää tältä:
 
 ```sh
-smartctl -d megaraid,N -a /dev/sdX | grep Serial Serial Number: 1234567890
+smartctl -d megaraid,N -a /dev/sdX | grep Serial
 ```
 
 RAID-laitteen ID tulee näkyviin seuraavasti: `/dev/sda`= 1\. RAID, `/dev/sdb`= 2\. RAID jne.
@@ -157,7 +158,7 @@ RAID-laitteen ID tulee näkyviin seuraavasti: `/dev/sda`= 1\. RAID, `/dev/sdb`= 
 > Korvaa silloin kohta `megaraid` kohdalla `sat+megaraid`:
 >
 > ```
-> smartctl -d sat+megaraid,N -a /dev/sdX | grep Serial Serial Number:    1234567890
+> smartctl -d sat+megaraid,N -a /dev/sdX | grep Serial
 > ```
 >
 
@@ -170,7 +171,7 @@ Voit katsoa [tätä ohjetta](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.e
 Kun olet löytänyt analysoitavaan kovalevyyn liitetyn sg-laitteen, käytä seuraavaa komentoa:
 
 ```sh
-smartctl -a /dev/sgX | grep Serial Serial Number:    1234567890
+smartctl -a /dev/sgX | grep Serial
 ```
 
 Sg-laitteen numero näkyy seuraavasti: `/dev/sg0`, `/dev/sg1`...

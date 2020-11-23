@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Transferring your OVH domain name to another registrar
 slug: bendrinio_ar_geografinio_domeno_perkelimas_i_isore
 excerpt: Learn how to transfer an OVH domain name to the registrar of your choice

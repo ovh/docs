@@ -56,7 +56,7 @@ Next,  you need to enable private networks. Click the `Enable private networks`{
 
 ![Enable vRack](images/pci-vrack-01_2020.png){.thumbnail}
 
-Here you can create your networks setup and name the network. Once this is setup to your preference click on `Create` {.action}
+Here you can create your networks setup and name the network. Once this is setup to your preference click on `Create` {.action}.
 
 ![Enable vRack](images/pci-vrack-02_2020.png){.thumbnail}
 
@@ -70,13 +70,12 @@ Select your Model, Region, and Image. Then choose your Private Network.
 
 ![Create an instance](images/pci-02_2020.png){.thumbnail}
 
-Finally, choose your billing period  and then click the `Create an instance`{.action} button. For detailed information on the various options, please refer to this guide: [Create an instance in your OVHcloud customer account](../../public-cloud/create_an_instance_in_your_ovh_customer_account/){.external}.
-
+Finally, choose your billing period  and then click the `Create an instance`{.action} button. For detailed information on the various options, please refer to this guide: [Create an instance in your OVHcloud customer account](../../public-cloud/create_an_instance_in_your_ovh_customer_account/).
 
 
 ### Configure your network interfaces
 
-Next, configure the the network interfaces on your new [Public Cloud instance](https://www.ovh.com/asia/public-cloud/instances/){.external} and [Dedicated Server](https://www.ovh.com/asia/dedicated_servers/){.external} using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/){.external}.
+Next, configure the the network interfaces on your new [Public Cloud instance](https://www.ovh.com/asia/public-cloud/instances/) and [Dedicated Server](https://www.ovh.com/asia/dedicated_servers/) using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/).
 
 
 ## Go further

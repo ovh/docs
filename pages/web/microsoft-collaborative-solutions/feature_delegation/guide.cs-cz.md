@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Delegace přístupových práv na účtu služby Exchange'
 slug: exchange-ucet-pristupova-prava
 excerpt: 'Zjistěte, jak delegovat oprávnění na exchangovému účtu'

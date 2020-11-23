@@ -2,7 +2,7 @@
 title: Configurer une IP LoadBalancing
 slug: configurer-une-ip-loadbalancing
 legacy_guide_number: 1927
-section: 'Gestion depuis l''espace client'
+section: "Gestion depuis l'espace client"
 hidden: true
 ---
 

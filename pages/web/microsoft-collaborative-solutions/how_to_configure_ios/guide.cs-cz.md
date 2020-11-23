@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Konfigurace účtu Exchange na iPhonu nebo iPadu
 slug: konfigurace-ios-iphone-ipad
 excerpt: Zjistěte, jak nakonfigurovat účet Exchange na iPhonu či iPadu prostřednictvím aplikace Mail

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Beveiligen van een dedicated server'
 slug: beveiligen-dedicated-server
 excerpt: 'Tips over het beveiligen van uw dedicated server'

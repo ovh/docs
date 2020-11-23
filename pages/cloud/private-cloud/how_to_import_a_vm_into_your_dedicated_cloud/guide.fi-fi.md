@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Virtuaalikoneen siirto Dedicated Cloud -palveluun
 excerpt: Tässä ohjeessa kerrotaan kuinka voit siirtää olemassa olevat virtuaalikoneet Hyper V -pohjaiseen Dedicated Cloud -palveluun
 slug: virtuaalikoneen_siirto_dedicated_cloud_-palveluun

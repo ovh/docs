@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuring an email address on iPhone and iPad
 excerpt: Find out how to configure an MX Plan email address on iPhone and iPad
 slug: svetainiu_talpinimo_el_pastas_el_pasto_konfiguravimas_iphone_ios_91

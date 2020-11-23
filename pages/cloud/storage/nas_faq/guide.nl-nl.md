@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Veelgestelde vragen over NAS
 slug: faq-nas
 excerpt: Heeft u een vraag over NAS? Bekijk de meest gestelde vragen.

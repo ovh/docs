@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Wijzigen van de hostnaam van een Public Cloud instance'
 slug: wijzigen-hostnaam-instance
 excerpt: 'Ontdek hoe u de hostnaam van een Public Cloud instance kunt veranderen'

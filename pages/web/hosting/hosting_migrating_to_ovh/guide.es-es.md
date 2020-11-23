@@ -92,7 +92,7 @@ Deberá realizar varias acciones.
 |Acción|Descripción|
 |---|---|
 |1. Migrar el contenido de las cuentas de correo a OVH|La herramienta [OVH Mail Migrator (OMM)](https://omm.ovh.net/){.external} permite copiar el contenido de las cuentas de correo electrónico que tuviera con su anterior proveedor a sus cuentas creadas en OVH.|
-|2. Usar sus direcciones |Ya puede acceder a sus cuentas de correo electrónico de OVH desde una aplicación web ([webmail](https://www.ovh.es/mail/){.external}). Si ha configurado alguna de las direcciones en un cliente de correo (p. ej. Outlook), deberá volver a configurarla para sustituir los servidores de su anterior proveedor [por los de OVH](../primeros-pasos-correo-compartido/){.external}.|
+|2. Usar sus direcciones |Ya puede acceder a sus cuentas de correo electrónico de OVH desde una aplicación web ([webmail](https://www.ovh.es/mail/){.external}). Si ha configurado alguna de las direcciones en un cliente de correo (p. ej. Outlook), deberá volver a configurarla para sustituir los servidores de su anterior proveedor [por los de OVH](../../emails/primeros-pasos-correo-compartido/){.external}.|
 
 #### 6. Transferir el dominio a OVH
 

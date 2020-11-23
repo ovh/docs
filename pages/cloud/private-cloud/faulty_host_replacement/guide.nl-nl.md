@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Een falende host vervangen
 excerpt: In het geval dat een host faalt, hoe kan ik deze dan retourneren om een nieuwe te krijgen?
 slug: een_falende_host_vervangen

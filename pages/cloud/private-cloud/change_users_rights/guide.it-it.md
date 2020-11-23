@@ -1,7 +1,7 @@
 ---
 title: Modificare i permessi di un utente
 slug: modificare-permessi-di-un-utente
-section: Funzionalità OVH
+section: Funzionalità OVHcloud
 ---
 
 **Ultimo aggiornamento: 30/04/2020**
@@ -19,7 +19,7 @@ Il servizio Private Cloud di OVHcloud permette di assegnare agli utenti permessi
 
 ## Procedura
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e, nella sezione `Bare Metal Cloud`{.action}, clicca su `Private Cloud`{.action} nella colonna a sinistra e seleziona il servizio su cui apportare la modifica.
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e, nella sezione `Hosted Private Cloud`{.action}, clicca su `Private Cloud`{.action} nella colonna a sinistra e seleziona il servizio su cui apportare la modifica.
 
 Clicca sulla scheda `Utenti`{.action} e poi sui tre puntini in corrispondenza dell’utente in questione.
 

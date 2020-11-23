@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: El. pašto konfigūravimas Outlook 2007'
 excerpt: ''
 slug: svetainiu_talpinimas_el_pasto_konfiguravimas_outlook_2007

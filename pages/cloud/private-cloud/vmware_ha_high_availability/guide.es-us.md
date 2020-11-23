@@ -35,7 +35,7 @@ Si HA no está activo en su cluster, diríjase a la pestaña `Configure` de su c
 Haga clic en `Editar`{.action} y marque la casilla para activar la funcionalidad HA.
 
 Es importante activar también la supervisión del host. Esta configuración permite el envío de latidos entre los host ESXi para detectar una posible avería.
-Será necesario desactivarla para llevar a cabo ciertas tareas como las actualizaciones con [el update manager](../utilizar_vmware_update_manager/). En ese caso, el host estará aislado.
+Será necesario desactivarla para llevar a cabo ciertas tareas como las actualizaciones con el update manager. En ese caso, el host estará aislado.
 
 ![activación HA](images/HA.png){.thumbnail}
 

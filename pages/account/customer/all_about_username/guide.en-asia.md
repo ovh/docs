@@ -117,6 +117,14 @@ Next, enter the code into the “Validation code” section, and click “Confir
 
 ![NIC handle](images/nichandle08.png){.thumbnail}
 
+### Account type change
+
+Click on the `Type of account` button when you edit your profile. A drop-down menu allows you to define the type of account corresponding to your situation.
+
+![identifiant client](images/nichandle09.png){.thumbnail}
+
+Once you have entered this information, click the `Confirm`{.action} button.
+
 ### Exercise your personal data rights
 
 In compliance with the General Data Protection Regulation (GDPR), you can request to exercise the rights associated with personal data concerning you by completing [this form](https://www.ovh.co.uk/personal-data-protection/exercising-your-rights){.external}.

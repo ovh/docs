@@ -46,6 +46,6 @@ Cuando haga clic en el botón «Eliminar», se le enviará un correo electrónic
 
 ## Más información
 
-[Primeros pasos con Public Cloud](../empezar_con_public_cloud_identificarse_y_crear_un_proyecto/){.external}
+[Primeros pasos con Public Cloud](../public-cloud-primeros-pasos)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

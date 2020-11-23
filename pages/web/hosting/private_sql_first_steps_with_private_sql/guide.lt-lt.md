@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Getting started with the Private SQL service
 slug: getting-started-with-private-sql
 excerpt: Find out how to get started with a Private SQL service

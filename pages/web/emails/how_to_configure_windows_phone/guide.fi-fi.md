@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH Sähköpostit: Windows Phonen konfigurointiohje'
 excerpt: Miten konfiguroidaan Windows-puhelin
 slug: ovh_sahkopostit_windows_phonen_konfigurointiohje

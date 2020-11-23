@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Stap 4 - Toegang tot virtuele desktops verstrekken aan gebruikers
 slug: toegangsrechten-desktop
 excerpt: Leer hoe u toegang tot uw verschillende virtuele desktops aan gebruikers kunt toewijzen

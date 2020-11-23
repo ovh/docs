@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: DUK Dedicated Cloud
 excerpt: ''
 slug: duk_dedicated_cloud

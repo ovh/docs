@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: bendra informacija apie el. pašto sprendimus'
 excerpt: Bendra informacija apie OVH el. paštą
 slug: svetainiu_talpinimas_bendra_informacija_apie_el_pasto_sprendimus

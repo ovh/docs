@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Getting started with the Hosted Exchange service
 slug: exchange_20132016_pirmasis_paslaugos_konfiguravimas
 excerpt: Get started with a Hosted Exchange service

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Obecně
 excerpt: ''
 slug: obecne

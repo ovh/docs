@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Kaip pridėti saugyklą?
 excerpt: ''
 slug: kaip_prideti_saugykla

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Het optimaliseren van de verdeling van de VM’s op de Hosts
 excerpt: Wat is de beste manier om VM's toe te wijzen op de Hosts, om de resources te optimaliseren?
 slug: het_optimaliseren_van_de_verdeling_van_de_vms_op_de_hosts

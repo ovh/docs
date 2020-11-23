@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Sisällönhallintajärjestelmä, Joomlan asentaminen käsin'
 excerpt: Miten Joomla! asennetaan käsin?
 id: '1978'

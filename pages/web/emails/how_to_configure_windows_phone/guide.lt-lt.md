@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: El. pašto konfigūravimas Windows Phone'
 excerpt: OVH svetainių talpinimo el. pašto konfigūravimas Windows Phone
 slug: svetainiu_talpinimas_el_pasto_konfiguravimas_windows_phone

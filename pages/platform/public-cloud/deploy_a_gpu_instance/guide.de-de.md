@@ -15,7 +15,7 @@ Bei den eingesetzten GPUs handelt es sich um NVIDIA Tesla V100.
 
 > [!warning]
 >
-> Derzeit sind GPU Instanzen nur in den Rechenzentren GRA3, GRA5, GRA7 und BHS3 verfügbar. Möglicherweise müssen Sie ein neues Projekt erstellen und die Reihe 2017 auswählen. [Mehr erfahren](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range) (EN).
+> Derzeit sind GPU Instanzen nur in den Rechenzentren GRA3, GRA5, GRA7 und BHS3 verfügbar. Möglicherweise müssen Sie ein neues Projekt erstellen und die Reihe 2017 auswählen.
 > 
 
 **Diese Anleitung erläutert, wie Sie eine GPU Instanz unter Linux oder Windows einrichten.**

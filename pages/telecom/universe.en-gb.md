@@ -1,5 +1,5 @@
 ---
-title: Communication
+title: Telecom
 slug: telecom
 excerpt: 'All about OVHcloud communication solutions'
 color: blue

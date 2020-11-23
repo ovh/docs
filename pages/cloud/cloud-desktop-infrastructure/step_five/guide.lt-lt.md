@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Step 5 - Logging in to virtual desktops
 slug: desktop-login
 excerpt: Find out how to log in to virtual desktops

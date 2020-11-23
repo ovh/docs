@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: FailOver IP -osoitteen konfigurointi Ubuntussa
 excerpt: FailOver IP -osoitteen konfigurointi Ubuntussa
 slug: failover_ip_-osoitteen_konfigurointi_ubuntussa

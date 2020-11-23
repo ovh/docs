@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: OVH Office 365 licencijų grupės užsakymas ir valdymas
 excerpt: OVH Office 365 licencijos užsakymas
 slug: ovh_office_365_licenciju_grupes_uzsakymas_ir_valdymas

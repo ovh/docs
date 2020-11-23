@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Exchange 2013 Het gebruik van resource accounts
 excerpt: In deze handleiding wordt het gebruik van de resource accounts van uw Exchange 2013 beschreven.
 slug: exchange_2013_het_gebruik_van_resource_accounts

@@ -46,7 +46,7 @@ Here, it is the value on the right side of the equal sign:
 
 #### With the OVHcloud Control Panel
 
-In your OVHcloud Control Panel, open the "Server" section, then select your service under `Private Cloud`{.action} in the left-hand navigation bar.
+In your OVHcloud Control Panel, open the "Hosted Private Cloud" section, then select your service under `Private Cloud`{.action} in the left-hand navigation bar.
 
 From the main page of the service, click on the `Security`{.action} tab.
 

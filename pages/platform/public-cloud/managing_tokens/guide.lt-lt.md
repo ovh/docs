@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Kodų (token) valdymas'
 excerpt: 'Kodų (token) valdymas'
 slug: kodu_token_valdymas

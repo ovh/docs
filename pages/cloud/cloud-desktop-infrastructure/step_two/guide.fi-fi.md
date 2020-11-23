@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 2. vaihe - Virtuaalityöpöytien sarjan (pool) mallin luominen
 slug: poolin-luominen
 excerpt: Opi luomaan pool-mallipohjia VMware Horizon 7.1 -käyttöliittymässä

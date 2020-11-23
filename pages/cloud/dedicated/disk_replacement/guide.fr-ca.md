@@ -138,7 +138,7 @@ root@rescue:~# nvme list
 
 Pour demander le remplacement d'un disque, il vous suffit de créer un ticket auprès de notre support depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Afin d'accélérer le processus, il convient de fournir les éléments liés aux tests. Voici un récapitulatif de ce qu'il faut :
 
-- **le numéro de série du disque à remplacer ainsi que de tous les autres disques sains**. Pour récupérer le numéro de série du disque à remplacer, consultez [ce guide](../trouver-serial-number-disque/){.external}. Si, pour une raison ou une autre, il n'est pas possible d'extraire le numéro de série du disque, veuillez le notifier dans le ticket, et nous communiquer le numéro de série du ou des disques à ne pas remplacer. 
+- **le numéro de série du disque à remplacer ainsi que de tous les autres disques sains**. Pour récupérer le numéro de série du disque à remplacer, consultez [ce guide](../find-disk-serial-number/). Si, pour une raison ou une autre, il n'est pas possible d'extraire le numéro de série du disque, veuillez le notifier dans le ticket, et nous communiquer le numéro de série du ou des disques à ne pas remplacer. 
 
 Comme précisé précédemment, les numéros de tous les disques sont importants. Ils seront transmis au technicien en datacenter et éviteront une erreur lors de l'opération ;
 

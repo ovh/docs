@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Připojení k instanci Public Cloud'
 slug: prvni-pripojeni
 excerpt: 'Zjistěte, jak se připojit ke své Public Cloud instanci'

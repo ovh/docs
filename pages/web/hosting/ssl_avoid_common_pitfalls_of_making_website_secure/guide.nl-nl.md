@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Vermijd SSL-problemen met uw website
 excerpt: Vermijd SSL-problemen met uw website
 id: '2220'

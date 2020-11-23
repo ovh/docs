@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Gebruik van Object Storage met Rclone 
 slug: sync-rclone-object-storage
 section: Object Storage
