@@ -63,6 +63,12 @@ Para ello, elimine o renombre el archivo «index.html» creado por OVHcloud en s
 
 **Importante**: Los archivos del sitio web deben subirse a la carpeta «www».
 
+### ¿Cómo mejorar mi plan de hosting?
+
+Si desea cambiar su plan actual por uno superior, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} y seleccione el servicio `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
+
+En la pestaña `Información general`, en el recuadro `Suscripción`, haga clic en el botón `...`{.action} delante de "Producto" y luego en `Cambiar de producto`{.action}. Siga las siguientes instrucciones para finalizar el pedido. Se añade a la nueva oferta una parte proporcional al tiempo restante de su producto actual.
+
 ## Más información
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
