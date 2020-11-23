@@ -32,8 +32,6 @@ order: 4
 
 - As conexões FTP devem utilizar o **modo passivo**. Certifique-se de que o script ou o cliente FTP está ajustado em conformidade.
 
-- De modo a conectar-se através de **SFTP**, precisa de um [**alojamento Pro** ou superior. Pode atualizar o serviço diretamente na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) («Informações gerais», «Plano», «Alterar serviço»).
-
 ### Base de dados / SQL
 
 ### Conexões simultâneas à base de dados

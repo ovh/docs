@@ -30,8 +30,6 @@ section: 'Webhosting-Konfiguration'
 
 - FTP-Verbindungen müssen den **passiven Modus** verwenden. Stellen Sie sicher, dass Ihre Skripte bzw. Ihr FTP-Client entsprechend angepasst sind.
 
-- Für den Login via **SFTP** ist mindestens ein [**Pro Webhosting**](https://www.ovh.de/hosting/) oder höheres Angebot erforderlich. Sie können Ihr Angebot direkt in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) upgraden („Allgemeine Informationen“, „Abo“, „Upgraden“).
-
 ### Datenbank / SQL
 
 ### Simultane Verbindungen mit der Datenbank

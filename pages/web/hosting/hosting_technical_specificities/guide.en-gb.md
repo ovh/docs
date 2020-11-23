@@ -32,7 +32,6 @@ section: 'Web Hosting configuration'
 
 - FTP connections have to use **passive mode**. Please make sure your script or FTP client is adjusted accordingly.
 
-
 ### Databases / SQL
 
 #### Simultaneous Database Connections

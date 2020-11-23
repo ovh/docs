@@ -33,9 +33,6 @@ order: 4
 
 - FTP connections have to use **passive mode**. Please make sure your script or FTP client is adjusted accordingly.
 
-- In order to connect via **SFTP**, a [**Professional plan**](https://www.ovh.com/ca/en/web-hosting/) or better is required. You can upgrade your plan directly in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) ("General information", "Plan", "Change offer").
-
-
 ### Databases / SQL
 
 #### Simultaneous Database Connections
