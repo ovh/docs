@@ -22,15 +22,15 @@ Dank SQL Private können Sie eine SQL-Instanz mit einem OVH Webhosting verbinden
 
 ## Beschreibung
 
-### Aktivierung Ihres bei Ihrem Webhosting Angebot enthaltenen SQL Private Servers
+### Aktivierung des in Ihrem Webhosting-Angebot enthaltenen Private SQL Servers
 
-Wenn Ihr Hosting-Angebot die SQL Private Option beinhaltet, begeben Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}. Klicken Sie im `Bereich Web`{.action} Cloud links auf `Hosting`{.action}-Pakete.
+Wenn Ihr Hosting-Angebot die Option "Private SQL" beinhaltet, können Sie diese in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} aktivieren. Klicken Sie im Bereich `WebCloud`{.action} links auf `Hosting-Pakete.`{.action}
 
-Klicken Sie im Tab `Allgemeine Informationen`{.action}  im Rahmen `Konfiguration` auf `...`{.action} rechts von **Private Datenbank**. Klicken Sie dann auf `Aktivieren`{.action}, um den Aktivierungsvorgang zu starten.
+Klicken Sie im Tab `Allgemeine Informationen`{.action} im Rahmen `Konfiguration` auf `...`{.action} rechts von **Private Datenbank**. Klicken Sie dann auf `Aktivieren`{.action}, um den Aktivierungsvorgang zu starten.
 
 ![Allgemeine Informationen](images/privatesql00-SQLactivation.png){.thumbnail}
 
-Um den Vorgang abzuschließen, folgen Sie den folgenden Anweisungen, um Typ und Version Ihres SQL Private Servers zu bestimmen. Sie können dann über die linke Spalte in der `Datenbank eingesehen werden`{.action}.
+Folgen Sie den Anweisungen, um Typ und Version Ihres Private SQL Servers zu bestimmen. Nach Abschluss des Vorgangs kann der Private SQL Dienst über die linke Menüspalte unter `Datenbanken`{.action} eingesehen werden.
 
 ### Die allgemeinen Informationen der Instanz einsehen
 
