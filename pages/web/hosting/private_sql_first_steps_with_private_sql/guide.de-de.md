@@ -22,15 +22,15 @@ Dank SQL Private können Sie eine SQL-Instanz mit einem OVH Webhosting verbinden
 
 ## Beschreibung
 
-**Wie kann ich mein Hosting-Angebot skalieren?**
+### Aktivierung Ihres bei Ihrem Webhosting Angebot enthaltenen SQL Private Servers
 
-Gehen Sie in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie `links`{.action} im Menü auf Hosting-Pakete und wählen Sie das Angebot aus, das Sie skalieren möchten.
+Wenn Ihr Hosting-Angebot die SQL Private Option beinhaltet, begeben Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}. Klicken Sie im `Bereich Web`{.action} Cloud links auf `Hosting`{.action}-Pakete.
 
-Klicken Sie im Tab `Allgemeine Informationen`{.action} im Rahmen `Abonnement`{.action} auf `...`{.action} vor "Angebot"und danach auf `Angebot wechseln`{.action}.
+Klicken Sie im Tab `Allgemeine Informationen`{.action}  im Rahmen `Konfiguration` auf `...`{.action} rechts von **Private Datenbank**. Klicken Sie dann auf `Aktivieren`{.action}, um den Aktivierungsvorgang zu starten.
 
-![Informations générales](images/privatesql00-SQLactivation.png){.thumbnail}
+![Allgemeine Informationen](images/privatesql00-SQLactivation.png){.thumbnail}
 
-Wenn Sie Ihr Webhosting Angebot weiterentwickeln, wird ein anteiliger Anteil der verbleibenden Zeit Ihres Angebots auf das neue Angebot angewandt.
+Um den Vorgang abzuschließen, folgen Sie den folgenden Anweisungen, um Typ und Version Ihres SQL Private Servers zu bestimmen. Sie können dann über die linke Spalte in der `Datenbank eingesehen werden`{.action}.
 
 ### Die allgemeinen Informationen der Instanz einsehen
 
