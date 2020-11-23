@@ -5,7 +5,7 @@ slug: faq-hebergement
 section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 13/05/2020**
+**Dernière mise à jour le 20/11/2020**
 
 ## FAQ hébergements web OVHcloud
 
