@@ -31,7 +31,7 @@ Depuis l'onglet `Informations générales`{.action}, dans le cadre `Configuratio
 
 ![Informations générales](images/privatesql00-SQLactivation.png){.thumbnail}
 
-Pour finaliser, suivez les instructions qui suivent afin de déterminer le type et la version de votre serveur SQL privé. Il sera ensuite accessible depuis la colonne de gauche dans `Base de données`{.action}.
+Enfin, suivez les instructions fournies afin de déterminer le type et la version de votre serveur SQL privé. Il sera ensuite accessible depuis la colonne de gauche dans `Base de données`{.action}.
 
 ### Visionner les informations générales de l'instance
 
