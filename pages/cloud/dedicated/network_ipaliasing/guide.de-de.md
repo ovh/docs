@@ -2,7 +2,7 @@
 title: 'Konfiguration von IP-Aliasing'
 slug: network-ipaliasing
 excerpt: 'So fügen Sie Failover-IPs zu Ihrer Konfiguration hinzu'
-section: 'IP & Netzwerk'
+section: 'Netzwerk & IP'
 ---
 
 **Stand 07.09.2018**

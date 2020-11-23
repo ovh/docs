@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Verkkosivun ja sähköpostiosoitteiden migraatio OVH:lle
 slug: sivun-migraatio-ovhlle
 excerpt: Katso, kuinka oman sivun sekä sähköpostiosoitteiden migraatio tehdään OVH:lle ilman katkosta

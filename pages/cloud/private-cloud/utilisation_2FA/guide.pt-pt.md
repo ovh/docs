@@ -2,7 +2,7 @@
 title: Utilização da dupla autenticação (2FA) na sua infraestrutura Hosted Private Cloud
 slug: utilizacao-2FA
 excerpt: Saiba como implementar a dupla autenticação para proteger a sua infraestrutura
-section: Funcionalidades da OVH
+section: Funcionalidades da OVHcloud
 order: 05
 ---
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'TVS, Wordpress diegimas rankiniu būdu'
 excerpt: Kaip rankiniu būdu diegti Wordpress?
 id: '1977'
@@ -163,7 +164,8 @@ Spragtelėkite mygtuką Run the Install.
 ## 2 žingsnis
 Įveskite WordPress administravimo informaciją:
 
-Site title: Svetainės pavadinimas.
+Site deprecated: true
+title: Svetainės pavadinimas.
 
 Username: Svetainės administratoriaus prisijungimo vardas.
 

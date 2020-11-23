@@ -1,7 +1,7 @@
 ---
-title: 'Configurer une redirection d''appels'
+title: "Configurer une redirection d'appels"
 slug: creer-redirection-avec-presentation
-excerpt: 'Découvrez comment configurer une redirection d''appels sur votre numéro OVH'
+excerpt: "Découvrez comment configurer une redirection d'appels sur votre numéro OVH"
 section: 'Numéros ou alias'
 order: 4
 ---

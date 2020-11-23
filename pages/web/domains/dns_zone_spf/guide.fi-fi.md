@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: SPF-kentän lisäys verkkotunnuksen konfiguraatioon
 slug: webhotelli_spf-kentta
 excerpt: Opi lisäämään SPF-kenttä verkkotunnuksesi konfiguraatioon OVH:lla

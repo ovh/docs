@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Objednání služby SSL Gateway
 slug: objednani-sluzby-ssl-gateway
 excerpt: Zabezpečte připojení na své webové stránky

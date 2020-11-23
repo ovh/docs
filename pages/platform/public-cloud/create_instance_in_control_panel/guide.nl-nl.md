@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Creëer een instance uw OVH klantaccount.
 excerpt: Creëer een instance uw OVH klantaccount.
 slug: creeer_een_instance_uw_ovh_klantaccount

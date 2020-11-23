@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuratie van uw E-mail Pro account op de Gmail webinterface'
 slug: configuratie-gmail
 excerpt: 'Ontdek hoe u uw E-mail Pro account op de online interface van Gmail kunt configureren. '

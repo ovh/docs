@@ -2,7 +2,7 @@
 title: 'Choisir un hébergement web qui me correspond'
 slug: day03
 excerpt: 'Comment choisir son hebergement web ?'
-section: 'Cas d''usage'
+section: "Cas d'usage"
 hidden: true
 ---
 

@@ -27,7 +27,7 @@ Depending on what you need them for, you may want to customise your OVHcloud dom
 
 ### Step 1: Add the glue records.
 
-First of all, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, ensure that you are in the `Web` section, and click `Domains`{.action} in the services bar on the left-hand side. Then select the domain name you would like to customise the DNS servers for. Next, go to the `GLUE`{.action} tab.
+First of all, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, ensure that you are in the `Web Cloud` section, and click `Domains`{.action} in the services bar on the left-hand side. Then select the domain name you would like to customise the DNS servers for. Next, go to the `GLUE`{.action} tab.
 
 On the page that appears, there will be a table listing the glue records currently configured with OVHcloud for your domain name. To add the glue record, click `Add`{.action}.
 

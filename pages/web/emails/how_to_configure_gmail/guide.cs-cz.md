@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Konfigurace e-mailových účtů služby MX Plan v rozhraní Gmail'
 slug: konfigurace-mxplan-gmail
 excerpt: 'Seznamte se s postupem pro konfiguraci svých e-mailových účtů v online rozhraní Gmail'

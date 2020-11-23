@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Web
 slug: web
 excerpt: Vše o webových službách OVH

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Verkkotunnuksen siirtäminen OVH:lta toiselle verkkotunnusvälittäjälle
 excerpt: Katso, kuinka OVH:n verkkotunnus siirretään toiselle verkkotunnusvälittäjälle
 slug: ovhlta_pois_siirrettava_yleinen_tai_maantieteellinen_verkkotunnus
@@ -29,7 +30,7 @@ Verkkotunnusta siirtämällä sen verkkotunnusvälittäjä vaihtuu. Siirto on ma
 
 ### vaihe 1: Poista verkkotunnuksen siirtoa koskeva suojaus
 
-Verkkotunnuksen siirron estävän suojauksen poistamiseksi klikkaa [hallintapaneelissasi](https://www.ovh.com/auth/?action=gotomanager){.external} yläreunan palveluvalikon kohtaa `Web`{.action}. Mene vasemmalla osioon `Verkkotunnukset`{.action} ja klikkaa kyseistä verkkotunnusta. Poista välilehdellä `Yleiset tiedot`{.action} rasti kohdasta `Suojaus siirrolta`{.action} ja klikkaa sitten `Vahvista`{.action}.
+Verkkotunnuksen siirron estävän suojauksen poistamiseksi klikkaa [hallintapaneelissasi](https://www.ovh.com/auth/?action=gotomanager){.external} yläreunan palveluvalikon kohtaa `Web Cloud`{.action}. Mene vasemmalla osioon `Verkkotunnukset`{.action} ja klikkaa kyseistä verkkotunnusta. Poista välilehdellä `Yleiset tiedot`{.action} rasti kohdasta `Suojaus siirrolta`{.action} ja klikkaa sitten `Vahvista`{.action}.
 
 > [!primary]
 >

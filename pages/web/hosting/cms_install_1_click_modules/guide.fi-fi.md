@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Verkkosivun asennus yhden klikkauksen moduuleilla
 slug: 1-klikkauksen-moduulit
 excerpt: Katso, kuinka verkkosivu asennetaan yhden klikkauksen moduuliemme avulla

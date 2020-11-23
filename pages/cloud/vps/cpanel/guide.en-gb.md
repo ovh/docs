@@ -42,12 +42,12 @@ If you already have a VPS and want to have cPanel on it, you can reinstall the V
 
 Once you received the email with the unique link, please proceed to the link to do the initial setup. 
 
+The URL above allows you to log in without credentials (user and password) to your WHM manager.
+
 > [!primary]
 >
 > If the link has expired already, please reinstall the VPS again with cPanel.
 >
-
-The URL above allows you to log in without credentials (user and password) to your WHM manager.
 
 #### Step 1: Read and accept the terms of cPanel
 
@@ -65,9 +65,9 @@ Now you should be able to login to WHM and SSH using the root user with the pass
 
 ### Securing your service
 
-We recommend that you take further additional steps to ensure you secure your WHM and VPS. For this we recommend reading the recommendations provided by cPanel [here](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
+We recommend that you take additional steps to ensure you secure your WHM and VPS. For this we recommend reading the recommendations provided by cPanel [here](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
 
-Furthermore we recommend setting up the [OVHcloud network firewall](../../dedicated/firewall-network/) and [setup a backup solution](../tips-for-securing-a-vps/#backing-up-your-system-and-your-data) on your VPS.
+Furthermore we recommend setting up the [OVHcloud network firewall](../../dedicated/firewall-network/) and [configure a backup solution](../tips-for-securing-a-vps/#backing-up-your-system-and-your-data) on your VPS.
 
 ## Go further
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'CloudDB-palvelun käytön aloitus'
 slug: clouddb-palvelun-kayton-aloitus
 excerpt: 'Katso, kuinka CloudDB-ratkaisun käyttö aloitetaan'

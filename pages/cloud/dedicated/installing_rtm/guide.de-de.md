@@ -2,7 +2,7 @@
 title: 'Real Time Monitoring (RTM) installieren'
 slug: rtm-installieren
 excerpt: 'Erfahren Sie hier, wie Sie Real Time Monitoring auf Linux installieren'
-section: 'Diagnose und Rescue-Modus'
+section: 'Diagnose & Rescue Modus'
 ---
 
 **Letzte Aktualisierung 24.03.2020**
@@ -278,7 +278,7 @@ Das RTM-Paket ist derzeit nicht mit Windows-Systemen kompatibel. Wir entwickeln 
 
 ### RTM im OVHcloud Kundencenter
 
-Nach der erfolgreichen Installation von RTM können Sie die Monitoringdaten für Ihren Server im OVHcloud Kundencenter einsehen. (Möglicherweise müssen Sie Ihren Browser aktualisieren oder sich abmelden und erneut anmelden.) Gehen Sie zum Bereich `Server`{.action} und wählen Sie Ihren Server aus dem Menü auf der linken Seite aus. Scrollen Sie auf dem Tab `Allgemeine Informationen `{.action} nach unten, um die Überwachungsinformationen zu finden.
+Nach der erfolgreichen Installation von RTM können Sie die Monitoringdaten für Ihren Server im OVHcloud Kundencenter einsehen. (Möglicherweise müssen Sie Ihren Browser aktualisieren oder sich abmelden und erneut anmelden.) Gehen Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server aus dem Menü auf der linken Seite aus. Scrollen Sie auf dem Tab `Allgemeine Informationen `{.action} nach unten, um die Überwachungsinformationen zu finden.
 
 ![Real Time Monitoring](images/rtm_panel.png){.thumbnail}
 

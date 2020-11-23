@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Použití pluginu Private Cloud OVH'
 slug: plugin-private-cloud-ovh
 excerpt: 'Zjistěte, jak používat plugin Private Cloud OVH'

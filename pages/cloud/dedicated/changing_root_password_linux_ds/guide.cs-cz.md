@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Změna hesla root na linuxovém dedikovaném serveru'
 slug: zmena-hesla-root-dedikovany-server-linux
 excerpt: 'Zjistěte, jak změnit heslo uživatele root na dedikovaném serveru s operačním systémem Linux'

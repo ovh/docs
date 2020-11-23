@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Avoiding VM freeze with the Veeam Managed Backup option'
 slug: avoid-vm-freeze-with-veeam-backup
 section: 'Virtual machine management'

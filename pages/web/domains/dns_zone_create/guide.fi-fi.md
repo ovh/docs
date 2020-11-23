@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH:n DNS-alueen luominen verkkotunnukselle'
 slug: dns_alueen_luominen_ulkopuoliselle_verkkotunnukselle
 excerpt: 'Opi luomaan DNS-alue verkkotunnuksellesi hallintapaneelisi kautta OVH:lla'

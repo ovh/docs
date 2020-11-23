@@ -11,7 +11,7 @@ order: 9
 
 ## Objectif
 
-** Découvrez comment configurer les connexions aux API keystone sur votre service à l'aide des tokens.**
+**Découvrez comment configurer les connexions aux API keystone sur votre service à l'aide des tokens.**
 
 > [!primary]
 >

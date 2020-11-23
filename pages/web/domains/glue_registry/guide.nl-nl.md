@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Glue Registry
 excerpt: Waarvoor dient een Glue Registry
 slug: glue_registry

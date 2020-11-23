@@ -1,8 +1,8 @@
 ---
 title: 'Mettre en place des tâches planifiées'
 slug: day15
-excerpt: 'Utiliser l''asynchrone pour accélerer le site web'
-section: 'Cas d''usage'
+excerpt: "Utiliser l'asynchrone pour accélerer le site web"
+section: "Cas d'usage"
 hidden: true
 ---
 

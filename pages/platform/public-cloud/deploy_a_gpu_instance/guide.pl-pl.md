@@ -15,7 +15,7 @@ Oferowane procesory graficzne to NVIDIA Tesla V100.
 
 > [!warning]
 >
-> Obecnie instancje GPU są dostępne tylko w centrach danych GRA3, GRA5, GRA7 i BHS3. Może więc być konieczne utworzenie nowego projektu i wybranie nowej oferty 2017. [Dowiedz się więcej.](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/)
+> Obecnie instancje GPU są dostępne tylko w centrach danych GRA3, GRA5, GRA7 i BHS3. Może więc być konieczne utworzenie nowego projektu i wybranie nowej oferty 2017.
 > 
 
 **Dowiedz się, jak uruchomić instancję GPU w systemie Linux lub Windows**

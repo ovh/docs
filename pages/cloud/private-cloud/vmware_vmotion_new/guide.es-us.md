@@ -26,7 +26,7 @@ Para migrar una máquina virtual hacia otro recurso, solo tendrá que hacer clic
 
 Existen diferentes opciones de vMotion. En nuestro ejemplo, como solo queremos migrar la máquina virtual hacia otro host, seleccionaremos la opción «Change compute resource only».
 
-La opción «Change storage only» permite migrar la máquina virtual hacia otro banco de datos. Para más información sobre la operación **Storage vMotion**, consulte nuestra [guía](../vmware-storage-vmotion-new/).
+La opción «Change storage only» permite migrar la máquina virtual hacia otro banco de datos. Para más información sobre la operación **Storage vMotion**, consulte nuestra [guía](../vmware_storage_vmotion/).
 
 ![Selección del tipo de vMotion](images/Vmotion2.png){.thumbnail}
 

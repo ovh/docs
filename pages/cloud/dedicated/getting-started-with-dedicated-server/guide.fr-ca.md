@@ -25,7 +25,7 @@ Un serveur dédié est un serveur physique situé dans l'un de nos datacenters. 
 
 ## Prérequis
 
-* Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, visible dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} dans la partie `Server`{.action}, puis `Serveurs Dédiés`{.action}.
+* Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, visible dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs Dédiés`{.action}.
 
 
 ## En pratique

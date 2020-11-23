@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Hosting několika webových stránek na jednom webhostingovém řešení'
 slug: konfigurace-multisite-webhosting
 excerpt: 'Zjistěte, jak svůj webhosting rozdělit mezi vícero webových stránek'

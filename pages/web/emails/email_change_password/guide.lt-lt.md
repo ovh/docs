@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Changing your password for an MX Plan email address'
 slug: changing-email-address-password
 excerpt: 'Find out how to change the password for an email address created in your MX Plan account'

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: VPS:n suojaaminen 
 slug: tietoturvaohjeita-vps
 section: Aluksi

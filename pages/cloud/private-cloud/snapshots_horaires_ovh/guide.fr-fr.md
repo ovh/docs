@@ -1,19 +1,24 @@
 ---
-title: Snapshots horaires OVH
+title: Snapshots horaires OVHcloud
 slug: snapshots-horaires-ovh
-excerpt: Comprendre le fonctionnement des snapshots horaires OVH
+excerpt: Comprendre le fonctionnement des snapshots horaires OVHcloud
 legacy_guide_number: '2163263'
-section: Fonctionnalités OVH
+section: Fonctionnalités OVHcloud
 order: 06
 ---
 
-**Dernière mise à jour le 29/01/2019**
+**Dernière mise à jour le 21/10/2020**
 
 ## Objectifs
 
-Afin de vous assurer une continuité de service et éviter la perte de données, OVH réalise automatiquement des snapshots de votre baie de stockage (datastore) toutes les heures.
+Afin de vous assurer une continuité de service et éviter la perte de données, OVHcloud réalise automatiquement des snapshots de votre baie de stockage (datastore) toutes les heures.
 
 **Ce guide vous en explique le fonctionnement**
+
+## Prérequis
+
+* Posséder une [infrastructure Private Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} sur votre compte OVHcloud.
+* Accéder à l’interface de gestion vSphere Web Client HTML.
 
 ## En pratique
 
@@ -38,37 +43,35 @@ Dans la pratique, un snapshot créé à l'instant T ne fera que quelques kilo oc
 
 ## Snapshot à H-1
 
-Vous avez la possibilité de récupérer le snapshot ZFS de la dernière heure (H-1) depuis le vSphere Web Client puisque celui-ci est directement stocké dans vos datastores. 
+Vous avez la possibilité de récupérer le snapshot ZFS de la dernière heure (H-1) depuis le vSphere Web Client HTML, puisque celui-ci est directement stocké dans vos datastores. 
 
 ### Récupérer un snapshot à H-1
 
-Depuis votre vSphere Web Client dirigez-vous dans la vue des datastores, puis dans le dossier `Shared Storages` sur le datastore comportant la machine virtuelle a restaurer.
+Depuis votre vSphere Web Client HTML, dirigez-vous dans la vue des datastores, puis dans le dossier `Shared Storages` sur le datastore comportant la machine virtuelle a restaurer.
 
-Explorer le datastore en cliquant sur "Browse Files".
+Explorer le datastore en cliquant sur `Browse Files`.
 
-![](images/snapshot1.JPG){.thumbnail}
+![](images/snapshot01.png){.thumbnail}
 
 Créez un dossier dans lequel vous allez plus tard copier les fichiers à restaurer.
 
-![](images/snapshot3.JPG){.thumbnail}
+![](images/snapshot02.png){.thumbnail}
 
 Dirigez-vous dans le dossier `.zfs` puis dépliez l'arborescence jusqu'au dossier de la machine virtuelle a restaurer puis copiez l'ensemble des fichiers présents dans ce dossier vers le nouveau dossier crée à l'étape précédente.
 
-![](images/snapshot2.JPG){.thumbnail}
+![](images/snapshot03.png){.thumbnail}
 
-![](images/snapshot4.JPG){.thumbnail}
+Les fichiers sont présents maintenant il suffit d'ajouter cette machine dans votre **inventaire** en cliquant sur le fichier `.vmx`, puis sur `register VM`{.action} au dessus.
 
-Les fichiers sont présents maintenant il suffit d'ajouter cette machine dans votre **inventaire** en effectuant un clic droit sur le fichier `.vmx` et `register VM`{.action} .
-
-![](images/snapshot5.JPG){.thumbnail}
+![](images/snapshot04.png){.thumbnail}
 
 Il ne vous reste plus qu'à suivre l'assistant de création de VM afin de terminer la procédure.
 
 ## Et pour les snapshots au-delà de la dernière heure ?
 
-OVH conserve les 23 autres snapshots horaires (jusqu'à H-24) sur une baie de stockage (datastore) à laquelle vous n'avez pas directement accès. Il est néanmoins possible via une demande d'intervention faite au support technique (facturée 80€ HT) de demander la restauration d'un snapshot (au delà de H-1 donc) pour une VM en particulier. Nous ne pourrons restaurer le snapshot demandé que sur le même datastore et cette restauration ne peut en aucun cas être garantie.
+OVHcloud conserve les 23 autres snapshots horaires (jusqu'à H-24) sur une baie de stockage (datastore) à laquelle vous n'avez pas directement accès. Il est néanmoins possible via une demande d'intervention faite au support technique (facturée 80€ HT) de demander la restauration d'un snapshot (au delà de H-1 donc) pour une VM en particulier. Nous ne pourrons restaurer le snapshot demandé que sur le même datastore et cette restauration ne peut en aucun cas être garantie.
 
-Il s'agit là d'une sécurité normalement à usage interne d'OVH, les snapshots horaires ne sont **PAS** un système de backup et ne sont **PAS** garantis.
+Il s'agit là d'une sécurité normalement à usage interne d'OVHcloud, les snapshots horaires ne sont **PAS** un système de backup et ne sont **PAS** garantis.
 
 Il s'agit d'une sécurité supplémentaire à usage interne mise en place sur les datastores ne devant servir qu'en dernier recours afin de prévenir une perte de donnée éventuelle.
 

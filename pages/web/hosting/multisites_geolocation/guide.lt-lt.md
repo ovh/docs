@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Svetainių talpinimo planų geolokalizavimas
 excerpt: ''
 id: '1880'

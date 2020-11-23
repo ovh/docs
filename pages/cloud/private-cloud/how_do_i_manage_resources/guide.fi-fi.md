@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Kuinka hallinnoin resurssejani?
 excerpt: ''
 slug: kuinka_hallinnoin_resurssejani

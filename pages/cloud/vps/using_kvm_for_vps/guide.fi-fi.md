@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: KVM-konsolin käyttö VPS-palvelimilla
 excerpt: Kuinka KVM-konsolia käytetään VPS-palvelimilla 
 slug: kvm-kaytto-vps-palvelimella 

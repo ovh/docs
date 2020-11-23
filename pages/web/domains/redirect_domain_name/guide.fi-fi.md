@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: "OVH:n hallinnoiman verkkotunnuksen uudelleenohjaus"
 slug: verkkotunnuksen-uudelleenohjaus
 excerpt: Tutustu uudelleenohjauksen eri tyyppeihin ja opi tekemään sellainen OVH:n hallinnoimalle verkkotunnukselle

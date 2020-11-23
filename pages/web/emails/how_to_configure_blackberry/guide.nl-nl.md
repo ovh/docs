@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Webhosting e-mail handleiding BlackBerry configuratie
 excerpt: In deze handleiding wordt uitgelegd hoe u een e-mailaccount installeert op de BlackBerry
 slug: webhosting_e-mail_handleiding_blackberry_configuratie

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuratie van Exchange in macOS Mail
 slug: exchange-configuratie-mail-mac
 excerpt: Ontdek hoe u uw Exchange-account kunt configureren in Mail van macOS El Capitan, Sierra en High Sierra

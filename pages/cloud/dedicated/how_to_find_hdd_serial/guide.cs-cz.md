@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Sériové číslo pevného disku'
 slug: seriove-cislo-pevneho-disku
 excerpt: 'Zjistěte, jak získat sériové číslo pevného disku'
@@ -32,7 +33,7 @@ Za účelem minimalizace rizika vzniku chyby zapříčiněné lidským faktorem 
 Za účelem získání sériového čísla pevného disku v soft-RAID konfiguraci použijte následující příkaz:
 
 ```sh
-smartctl -a /dev/sdX | grep Serial Serial Number:    XXXXXXX
+smartctl -a /dev/sdX | grep Serial
 ```
 
 Zařízení je detekováno operačním systémem (např.: /dev/sda, /dev/sdb, etc.).
@@ -140,7 +141,7 @@ ID zařízení a ID adaptéru budou v rámci `smartctl` použita pro rozlišení
 Příkaz by měl vypadat takto:
 
 ```sh
-smartctl -d megaraid,N -a /dev/sdX | grep Serial Serial Number: 1234567890
+smartctl -d megaraid,N -a /dev/sdX | grep Serial
 ```
 
 RAID Device ID bude zobrazeno jako: `/dev/sda` = 1\. RAID, `/dev/sdb` = 2\. RAID apod.
@@ -157,7 +158,7 @@ RAID Device ID bude zobrazeno jako: `/dev/sda` = 1\. RAID, `/dev/sdb` = 2\. RAID
 > V takovém případě je zapotřebí hodnotu `megaraid` nahradit hodnotou `sat+megaraid`:
 >
 > ```
-> smartctl -d sat+megaraid,N -a /dev/sdX | grep Serial Serial Number:    1234567890
+> smartctl -d sat+megaraid,N -a /dev/sdX | grep Serial
 > ```
 >
 
@@ -170,7 +171,7 @@ Detailní informace o sg mapování naleznete v následující dokumentaci: [Har
 Jakmile identifikujete sg zařízení příslušející k disku, který si přejete analyzovat, použijte následující příkaz:
 
 ```sh
-smartctl -a /dev/sgX | grep Serial Serial Number:    1234567890
+smartctl -a /dev/sgX | grep Serial
 ```
 
 Jednotlivá sg zařízení budou zobrazena jako `/dev/sg0`, `/dev/sg1` apod.

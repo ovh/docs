@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Horizon prieigos kūrimas
 excerpt: ''
 slug: horizon_prieigos_kurimas

@@ -170,7 +170,7 @@ Jeśli zostały skopiowane całe dane wyjściowe, identyfikator powinien już zn
 
 > [!primary]
 >
-> Kluczy zapisanych w sekcji „Dedykowane” można używać również do usług prywatnego serwera wirtualnego (VPS). Informacje o kluczach SSH na potrzeby usług Public Cloud zawiera [ten przewodnik](https://docs.ovh.com/pl/public-cloud/tworzenie-kluczy-ssh/).
+> Kluczy zapisanych w sekcji „Dedykowane” można używać również do usług prywatnego serwera wirtualnego (VPS). Informacje o kluczach SSH na potrzeby usług Public Cloud zawiera [ten przewodnik](../../public-cloud/public-cloud-pierwsze-kroki).
 >
 
 

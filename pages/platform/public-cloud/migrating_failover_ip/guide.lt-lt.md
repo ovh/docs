@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: IP failover adreso perjungimas
 excerpt: IP failover adreso perjungimas
 slug: ip_failover_adreso_perjungimas

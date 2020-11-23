@@ -44,7 +44,7 @@ Pojawi się komunikat dotyczący stworzenia rekordu TXT dla Twojej domeny. Wynot
 
 ### Przystąp do weryfikacji domeny
 
-Po zalogowaniu do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} kliknij menu `Web`{.action}, następnie sekcję `Domeny`{.action} w kolumnie po lewej stronie, aby wyświetlić wszystkie domeny, którymi zarządzasz:
+Po zalogowaniu do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} kliknij menu `Web Cloud`{.action}, następnie sekcję `Domeny`{.action} w kolumnie po lewej stronie, aby wyświetlić wszystkie domeny, którymi zarządzasz:
 
 ![Weryfikacja domeny](images/domain-verification-01.png){.thumbnail}
 

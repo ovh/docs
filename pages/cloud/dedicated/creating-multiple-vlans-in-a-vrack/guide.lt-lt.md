@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Creating multiple vLANs in a vRack
 slug: multiple-vlans
 excerpt: This guide will show you how to create multiple vLANs within the vRack

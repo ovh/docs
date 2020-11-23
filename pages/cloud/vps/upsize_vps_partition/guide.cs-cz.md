@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Navýšení velikosti diskové jednotky po upgradu VPS
 slug: navyseni-velikosti-disku-po-upgradu-vps
 section: První kroky

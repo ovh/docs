@@ -2,7 +2,7 @@
 title: 'Résoudre le cas « Site non installé »'
 slug: erreur-site-non-installe
 excerpt: 'Découvrez comment résoudre le cas de la page « Site non installé »'
-section: 'Configuration de l''hébergement'
+section: "Configuration de l'hébergement"
 order: 2
 ---
 

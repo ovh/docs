@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Wijziging van het wachtwoord van een MX Plan e-mailadres'
 slug: wachtwoord-wijziging-emailadres
 excerpt: 'Leer hoe u het wachtwoord wijzigt van een e-mailadres dat is aangemaakt als onderdeel van het MX Plan-pakket'

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Windows Server - změna aktivačního klíče'
 excerpt: 'Zjistěte, jak změnit aktivační klíč operačního systému Windows Server'
 slug: windows-key

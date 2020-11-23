@@ -2,7 +2,7 @@
 title: 'Jak korzystać z API vScope'
 slug: vscopeapi
 excerpt: 'API vScope pozwala wykorzystywać dane z monitorowania zasobów w aplikacjach'
-section: 'Usługi i opcje OVH'
+section: 'Usługi i opcje OVHcloud'
 order: 1
 ---
 

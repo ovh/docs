@@ -2,7 +2,7 @@
 title: Changement du mot de passe utilisateur
 slug: changement-du-mot-de-passe-utilisateur
 excerpt: Découvrez comment modifier le mot de passe d'un utilisateur du client vSphere depuis votre espace client OVHcloud
-section: Fonctionnalités OVH
+section: Fonctionnalités OVHcloud
 ---
 
 **Dernière mise à jour le 17/06/2020**
@@ -22,7 +22,7 @@ La gestion des autorisations et mots de passe des utilisateurs du client vSphere
 
 ### Modifier le mot de passe
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, accédez à la section `Server`{.action} (1), cliquez sur `Private Cloud`{.action} (2) et sélectionnez votre serveur dans la liste (3). Cliquez alors sur l'onglet `Utilisateurs`{.action} (4).
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, accédez à la section `Hosted Private Cloud`{.action} (1), cliquez sur `Private Cloud`{.action} (2) et sélectionnez votre serveur dans la liste (3). Cliquez alors sur l'onglet `Utilisateurs`{.action} (4).
 
 ![acces espace client](images/userpassword1.png){.thumbnail}
 

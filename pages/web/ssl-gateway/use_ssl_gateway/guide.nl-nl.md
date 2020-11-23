@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Gebruik van SSL Gateway
 slug: use-ssl-gateway
 legacy_guide_number: 2370

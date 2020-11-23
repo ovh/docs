@@ -5,6 +5,7 @@ id: '1957'
 slug: webhosting_wie_sie_ihre_datenbank_von_sql_4_auf_mysql_55_migrieren
 legacy_guide_number: g1957
 section: 'Datenbanken'
+hidden: true
 ---
 
 

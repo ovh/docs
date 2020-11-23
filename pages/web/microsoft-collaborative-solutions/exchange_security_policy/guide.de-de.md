@@ -17,7 +17,7 @@ Mit den E-Mail-Diensten von OVHcloud können Sie professionelle E-Mail-Adressen 
 ## Voraussetzungen
 
 - Sie verfügen über einen [OVHcloud E-Mail-Dienst](https://www.ovh.de/emails/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) im Bereich `Web`{.action}.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) im Bereich `Web Cloud`{.action}.
 
 ## In der praktischen Anwendung
 
@@ -28,7 +28,7 @@ Mit den E-Mail-Diensten von OVHcloud können Sie professionelle E-Mail-Adressen 
 - Überprüfung von auf unseren Servern eingehenden Nachrichten zu Ihren E-Mail-Adressen verschärfen (nur für [Exchange](https://www.ovh.de/emails/hosted-exchange/) Accounts)
 - festlegen, wie „unerwünschte“ Nachrichten (Spam-Mails) in Ihren Posteingängen angezeigt werden (nur für [Exchange](https://www.ovh.de/emails/hosted-exchange/) Accounts)
 
-Um auf die Sicherheitseinstellungen Ihres E-Mail-Accounts zuzugreifen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und begeben Sie sich in den Bereich `Web`{.action}. 
+Um auf die Sicherheitseinstellungen Ihres E-Mail-Accounts zuzugreifen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und begeben Sie sich in den Bereich `Web Cloud`{.action}. 
 
 |E-Mails und E-Mail Pro|Exchange| 
 |---|---| 

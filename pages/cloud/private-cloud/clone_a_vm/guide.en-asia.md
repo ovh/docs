@@ -48,7 +48,7 @@ The virtual disk type is on "Thin Provision", which means that a virtual disk wi
 
 More information about disk types can be found in [this guide](../choosing-disk-type/){.external-link}.
 
-You will be able to choose, via the `VM Storage Policy` row, the default storage policy if you have datastores, or a custom policy if you have [vSAN hosts](../vmware-vsan/){.external-link}, or the [VM encryption](../vm-encrypt/){.external-link} option.
+You will be able to choose, via the `VM Storage Policy` row, the default storage policy if you have datastores, or a custom policy if you have [vSAN hosts](https://docs.ovh.com/ca/en/private-cloud/vmware-vsan/), or the [VM encryption](../vm-encrypt/) option.
 
 ![clone a VM](images/clonevm04.png){.thumbnail}
 

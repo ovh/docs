@@ -50,7 +50,7 @@ Ici, il s'agit de la valeur à droite du signe égal :
 
 #### Via l'espace client OVHcloud
 
-Dans votre espace client, assurez-vous de vous situer dans la section `Server`. Cliquez sur `Private Cloud`{.action} dans la barre de services à gauche, puis sélectionnez le service Private Cloud concerné.
+Dans votre espace client, assurez-vous de vous situer dans la section `Hosted Private Cloud`. Cliquez sur `Private Cloud`{.action} dans la barre de services à gauche, puis sélectionnez le service Private Cloud concerné.
 
 Depuis la page principale du service, cliquez sur `Sécurité`{.action}.
 

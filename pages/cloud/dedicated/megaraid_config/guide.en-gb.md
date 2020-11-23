@@ -1,8 +1,8 @@
 ---
 title: 'Configuring MegaRAID for RAID Level 0'
 slug: using-the-maximum-amount-of-disk-space
-excerpt: 'This guide will help you to configure your server’s disks with RAID 0, which will allow you to use all your disks'' usable space.'
-section: 'Server Management'
+excerpt: 'This guide will help you to configure your server’s disks with RAID 0, which will allow you to use all of the usable space.'
+section: 'RAID and disks'
 ---
 
 **Last updated 2nd August 2018**
@@ -29,7 +29,7 @@ The default RAID level for OVH server installations is RAID 1, which doubles the
 
 ### Using the OVH Control Panel
 
-In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the `Dedicated`{.action} menu and select your server.
+In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the `Bare Metal Cloud`{.action} menu and select your server.
 
 Next, on the `Server status`{.action} tab, click the `Reinstall`{.action} button to install a new operating system with your custom RAID 0 configuration.
 
@@ -63,7 +63,7 @@ df -h
 
 ### Using rescue mode
 
-In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the `Dedicated`{.action} menu and select your server.
+In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the `Bare Metal Cloud`{.action} menu and select your server.
 
 On the `Server status`{.action} tab, click the `Edit`{.action} button to change the boot system.
 

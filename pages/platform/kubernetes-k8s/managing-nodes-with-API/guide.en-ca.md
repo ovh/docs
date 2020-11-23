@@ -6,13 +6,13 @@ section: User guides
 order: 1
 ---
 
-**Last updated July 27<sup>th</sup> July, 2020.**
+**Last updated November 2<sup>nd</sup>, 2020.**
 
 ## Objective
 
 OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. This guide will cover one of the first steps after ordering a cluster: managing nodes and node pools, using the OVHcloud API.
 
-In this guide, we are assuming you're using the [OVHcloud API](https://api.ovh.com/) to manage your Kubernetes cluster. If you are using a different method, like the [OVHcloud Cloud Manager](https://ca.ovh.com/auth/?action=gotomanager), please refer to the relevant documentation: [Managing nodes and node pools](../managing-nodes/) guide.
+In this guide, we are assuming you're using the [OVHcloud API](https://ca.api.ovh.com/console/) to manage your Kubernetes cluster. If you are using a different method, like the [OVHcloud Cloud Manager](https://ca.ovh.com/auth/?action=gotomanager), please refer to the relevant documentation: [Managing nodes and node pools](../managing-nodes/) guide.
 
 ## Requirements
 
@@ -24,13 +24,13 @@ In your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (gr
 
 When you create your cluster, it's created with a default node pool. Then, you can modify the size of this node pool, or add additional node pools of different sizes and types.
 
-Upon creation, node pool is defined by its name (`name`), the type of instance within our available catalog (`flavor`), the number of identical nodes that you want in that node pool (`desiredsize`), and potentially self-defined boundaries to limit the value of desired nodes (`minnodecount` and `maxnodecount`). 
+Upon creation, node pool is defined by its name (`name`), the type of instance within our available catalog (`flavor`), the number of identical nodes that you want in that node pool (`desiredsize`), and potentially self-defined boundaries to limit the value of desired nodes (`minnodecount` and `maxnodecount`). Setting the `antiAffinity` boolean ensures that nodes in that node pool will be created on different hypervisors (baremetal machines) and therefore ensure the best availability for your workload. The maximum number of nodes is set to 5 if this feature is activated on a nodepool (you can of course create multiple node pools with each 5 anti-affinity nodes max). Finally `monthlyBilled` boolean ensures that all nodes in a node pool will be spawned in monthly billing mode and therefore benefit from the monthly discount.
 
 After creation, the `desiredsize` can be edited, and the node pool will automatically be resized to accommodate this new value. `minnodecount` and `maxnodecount` can also be edited at any time.
 
 We will later propose cluster autoscaling based on node pols. We see some customer developing they own autoscaling scripts. We strongly encourage you to define `minnodecount` and `maxnodecount` in that case.
 
-In this guide we explain how to do some basic operations with nodes and node pools using the [OVHcloud API](https://api.ovh.com/): adding nodes to an existing node pool, creating a new node pool...
+In this guide we explain how to do some basic operations with nodes and node pools using the [OVHcloud API](https://ca.api.ovh.com/console/): adding nodes to an existing node pool, creating a new node pool...
 
 
 ## Upsizing and downsizing a Node Pool
@@ -43,13 +43,13 @@ When upsizing, a first node is created and when it is ready, another is created,
 
 ## The API Explorer
 
-To simplify things, we are using the [API Explorer](https://api.ovh.com/console/), which allows to explore, learn and interact with the API in an interactive way.
+To simplify things, we are using the [API Explorer](https://ca.api.ovh.com/console/), which allows to explore, learn and interact with the API in an interactive way.
 
 Log in to the API Explorer using your OVH NIC.
 
 ![Log in to the API Explorer](images/kubernetes-quickstart-api-ovh-com-001.png){.thumbnail}
 
-If you go to the [Cloud section](https://api.ovh.com/console/#/cloud) of the API Explorer, you will see the available `/cloud/project/{serviceName}/kube` endpoint.
+If you go to the [Cloud section](https://ca.api.ovh.com/console/#/cloud) of the API Explorer, you will see the available `/cloud/project/{serviceName}/kube` endpoint.
 
 
 ## List your OVHcloud Managed Kubernetes clusters

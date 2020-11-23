@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Asenna VMware Tools
 excerpt: ''
 slug: asenna_vmware_tools

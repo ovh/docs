@@ -1,8 +1,8 @@
 ---
 title: 'Mes 10 premières minutes avec OverTheBox Plus'
 slug: mes-10-premieres-minutes-avec-overthebox-plus
-excerpt: 'Ce guide vous assiste à l''installation et à la configuration de votre OverTheBox sur 2 connexions Internet ou plus, étape par étape.'
-section: 'Guides d''installation'
+excerpt: "Ce guide vous assiste à l'installation et à la configuration de votre OverTheBox sur 2 connexions Internet ou plus, étape par étape."
+section: "Guides d'installation"
 ---
 
 ## Prérequis

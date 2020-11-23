@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: MySQL ir MariaDB naudojimas
 slug: mysql-mariadb-naudojimas
 excerpt: Naudokite duomenu bazes

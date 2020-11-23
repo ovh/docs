@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Upgrading your Cisco ASA firewall
 excerpt: Find out how to upgrade your Cisco ASA firewall
 slug: upgrading-cisco-asa-firewall

@@ -100,7 +100,7 @@ ping6 -c 4 2001:4860:4860::8888
 ```
 
 
-If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../rescue-mode).
+If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../rescue_mode/).
 
 ### Fedora 26 and above
 
@@ -155,7 +155,7 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../rescue-mode).
+If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../rescue_mode/).
 
 ### FreeBSD
 
@@ -202,7 +202,7 @@ ping6 -c 4 2001:4860:4860::8888
 >>> rtt min/avg/max/mdev = 23.670/23.670/23.670/0.000 ms
 ```
 
-If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../rescue-mode).
+If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](../rescue_mode/).
 
 ### Ubuntu 18.04
 
@@ -282,6 +282,7 @@ Right-click your network adapter, then click `Properties`{.action}.
 Select `Internet Protocol Version 6`{.action}, then click `Properties`{.action}.
 
 ![Properties](images/ipv6_properties.png){.thumbnail}
+
 #### Step 3: Amend the network configuration 
 
 Enter your IPv6 configuration (`IPv6 address` and `Default Gateway`) and click `OK`{.action}.

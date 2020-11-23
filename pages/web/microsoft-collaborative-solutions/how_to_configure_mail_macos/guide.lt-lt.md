@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuring your Exchange account on the macOS Mail app
 slug: exchange-automatic-configuration-on-mail-mac
 excerpt: Find out how to configure your Exchange email account on the Mail app, for the following macOS operating systems - El Capitan, Sierra and High Sierra

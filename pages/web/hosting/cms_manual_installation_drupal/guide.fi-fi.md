@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Sisällönhallintajärjestelmä, Drupalin asennus käsin'
 excerpt: Kuinka asennan Drupalin käsin?
 id: '1976'
@@ -159,7 +160,8 @@ Mikäli täytit kaikki tietokannan tiedot oikein asennus käynnistyy. Jos näin 
 ## 5. Vaihe - Drupalin administraation konfigurointi
 Tässä Drupal-järjestelmän hallintaan liittyvät asetukset:
 
-- Site title: anna verkkotunnuksesi nimi
+- Site deprecated: true
+title: anna verkkotunnuksesi nimi
 
 - Site email: Ilmoita osoite, joka käyttää sivuasi sähköpostien lähettämiseen.
 

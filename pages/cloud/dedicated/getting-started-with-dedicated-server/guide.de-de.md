@@ -1,32 +1,33 @@
 ---
 title: 'Erste Schritte mit einem Dedicated Server'
 slug: erste-schritte-dedicated-server
-excerpt: 'In dieser Anleitung erfahren Sie, wie Sie Ihren neuen dedizierten Server verwalten.'
+excerpt: 'Erfahren Sie hier, wie Sie Ihren neu bereitgestellten Dedicated Server verwalten'
 section: 'Erste Schritte'
+order: 1
 ---
 
-**Stand 28.08.2018**
+**Letzte Aktualisierung am 28.08.2018**
 
-## Einleitung
+## Ziel
 
-Ein dedizierter Server ist ein physischer Server in einem unserer Rechenzentren. Im Gegensatz zu den Webhosting Lösungen (auch als „Shared“ Produkte bezeichnet), die technisch von OVH verwaltet werden, sind Sie vollständig für die Verwaltung Ihres dedizierten Servers verantwortlich.
+Ein dedizierter Server ist ein physischer Server in einem unserer Rechenzentren. Im Gegensatz zu den Webhosting Lösungen (auch als „Shared“ Produkte bezeichnet), die technisch von OVHcloud verwaltet werden, sind Sie vollständig für die Verwaltung Ihres dedizierten Servers verantwortlich.
 
-**Hier erfahren Sie, wie Sie Ihren neuen Dedicated Server verwalten.**
+**Diese Anleitung gibt Ihnen Hinweise zur Ersteinrichtung und Verwaltung eines Dedicated Servers.**
 
 > [!warning]
+>OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
-> OVH stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit Ihrer Anlage zu gewährleisten.
-> 
-> Wir stellen Ihnen diesen Leitfaden zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Server-Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Genauere Informationen finden Sie im Teil „Weiterführende Informationen“ dieser Anleitung.
+>Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Weitere Hinweise finden Sie im Teil „Weiterführende Informationen” dieser Anleitung.
 >
 
 
 ## Voraussetzungen
 
-* Sie verfügen über einen [Dedicated Server](https://www.ovh.de/dedicated_server/){.external}. Diesen finden Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im Bereich `Dedicated`{.action} unter `Dedicated Server`{.action}.
+- Sie haben einen [Dedicated Server](https://www.ovh.de/dedicated_server/) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben administrativen Zugriff (Root) über SSH auf Ihren Server (oder RDP für Windows).
 
-
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Auf dem Server einloggen
 
@@ -71,21 +72,21 @@ Folgen Sie den im Fenster angezeigten Anweisungen und klicken Sie anschließend 
 
 > [!primary]
 >
-> Für manche Betriebssysteme oder Plattformen wie Plesk und Windows muss vor der Installation eine Lizenz erworben werden. Diese können Sie über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im Bereich `Dedicated`{.action} unter `Lizenzen`{.action} oder über einen Reseller kaufen. Integrieren Sie diese anschließend manuell über das Betriebssystem selbst oder über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}. 
+> Für manche Betriebssysteme oder Plattformen wie Plesk und Windows muss vor der Installation eine Lizenz erworben werden. Diese können Sie über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im Bereich `Bare Metal Cloud`{.action} unter `Lizenzen`{.action} oder über einen Reseller kaufen. Integrieren Sie diese anschließend manuell über das Betriebssystem selbst oder über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}. 
 > 
 
 
 ### Ihren dedizierten Server sichern
 
-Wie im Abschnitt „Einleitung“ dieser Anleitung erläutert, sind Sie der Administrator Ihres dedizierten Servers. Dadurch sind Sie allein für Ihre Daten und die Sicherheit Ihrer Maschine verantwortlich. Folgende Tipps helfen Ihnen dabei, Ihren Server zu sichern:
+Wie oben erwähnt, sind Sie der Administrator Ihres dedizierten Servers. Dadurch sind Sie allein für Ihre Daten und die Sicherheit Ihrer Maschine verantwortlich. Folgende Tipps helfen Ihnen dabei, Ihren Server zu sichern:
 
-* Halten Sie Ihr Betriebssystem immer auf dem neuesten Stand.
-* Halten Sie Ihre Software auf dem neuesten Stand.
-* Ändern Sie Ihren Standard-SSH-Port (Port 22) und wählen Sie einen anderen Port.
-* Ändern Sie Ihr Root-Passwort.
-* Erstellen Sie einen neuen Systembenutzer mit eingeschränktem Zugriff für den täglichen Gebrauch.
+- Halten Sie Ihr Betriebssystem immer auf dem neuesten Stand.
+- Halten Sie Ihre Software auf dem neuesten Stand.
+- Ändern Sie Ihren Standard-SSH-Port (Port 22) und wählen Sie einen anderen Port.
+- Ändern Sie Ihr Root-Passwort.
+- Erstellen Sie einen neuen Systembenutzer mit eingeschränktem Zugriff für den täglichen Gebrauch.
 
-Weitere Informationen finden Sie in unserer zugehörigen [Anleitung](https://docs.ovh.com/de/dedicated/dedizierten-server-sichern/){.external}.
+Weitere Informationen finden Sie in unserer zugehörigen [Anleitung](../dedizierten-server-sichern/).
 
 
 ### Netzwerk konfigurieren
@@ -102,23 +103,23 @@ Weitere Informationen finden Sie in unserer Anleitung [Configuring a network bri
 
 Im IP-Alias-Modus werden zwei oder mehr IP-Adressen mit demselben Netzwerkinterface verknüpft. So kann Ihr Server mehrere Verbindungen zu einem Netzwerk herstellen, die jeweils einen anderen Zweck erfüllen.
 
-Für detaillierte Informationen zur Konfiguration von IP-Aliasing lesen Sie die zugehörige [Anleitung](https://docs.ovh.com/de/dedicated/network-ipaliasing/){.external}.
+Für detaillierte Informationen zur Konfiguration von IP-Aliasing lesen Sie die zugehörige [Anleitung](../network-ipaliasing/){.external}.
 
 #### IPv6 konfigurieren
 
-Alle OVH Dedicated Server kommen mit einem /64 IPv6-Block. Um die Adressen dieses Blocks zu verwenden, müssen zunächst einige Änderungen der Netzwerkkonfiguration vorgenommen werden. Lesen Sie hierzu folgende Anleitung: [Configuring IPv6 on dedicated servers](https://docs.ovh.com/gb/en/dedicated/network-ipv6/){.external} (Englisch).
+Alle OVHcloud Dedicated Server kommen mit einem /64 IPv6-Block. Um die Adressen dieses Blocks zu verwenden, müssen zunächst einige Änderungen der Netzwerkkonfiguration vorgenommen werden. Lesen Sie hierzu folgende Anleitung: [Configuring IPv6 on dedicated servers](https://docs.ovh.com/gb/en/dedicated/network-ipv6/){.external} (Englisch).
 
 
 ### Problembehandlung der Konfiguration via IPMI
 
-OVH richtet alle Dedicated Server mit IPMI-Konsole (Intelligent Platform Management Interface) ein, die über Ihren Browser oder ein Java-Applet ausgeführt werden kann und es Ihnen ermöglicht, sich direkt mit Ihrem Server zu verbinden, selbst wenn keine Netzwerkverbindung besteht. So können Sie Probleme beheben, die die Verbindung Ihres Servers unterbrochen haben.
+OVHcloud richtet alle Dedicated Server mit IPMI-Konsole (Intelligent Platform Management Interface) ein, die über Ihren Browser oder ein Java-Applet ausgeführt werden kann und es Ihnen ermöglicht, sich direkt mit Ihrem Server zu verbinden, selbst wenn keine Netzwerkverbindung besteht. So können Sie Probleme beheben, die die Verbindung Ihres Servers unterbrochen haben.
 
-Weitere Informationen finden Sie in der Anleitung [Verwendung der IPMI-Konsole für Dedicated Server](https://docs.ovh.com/de/dedicated/verwendung-ipmi-dedicated-server/){.external}.
+Weitere Informationen finden Sie in der Anleitung [Verwendung der IPMI-Konsole für Dedicated Server](../verwendung-ipmi-dedicated-server/){.external}.
 
 
 ### Rescue-Modus
 
-Bei einem Problem mit Ihrem Server besteht der erste Schritt der Problembehhandlung darin, diesen im Rescue-Modus neu zu starten. Um den Rescue-Modus zu aktivieren, loggen Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und gehen Sie auf die Seite Ihres Servers. Gehen Sie anschließend in den Tab `Serverstatus`{.action} und dann unter `Allgemeine Informationen`{.action} zu `Boot`{.action}. Klicken Sie auf den Button `Ändern`{.action}, um den Startmodus zu ändern.
+Bei einem Problem mit Ihrem Server besteht der erste Schritt der Problembehandlung darin, diesen im Rescue-Modus neu zu starten. Um den Rescue-Modus zu aktivieren, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und gehen Sie auf die Seite Ihres Servers. Gehen Sie anschließend in den Tab `Serverstatus`{.action} und dann unter `Allgemeine Informationen`{.action} zu `Boot`{.action}. Klicken Sie auf den Button `Ändern`{.action}, um den Startmodus zu ändern.
 
 ![Startmodus ändern](images/rescue-mode-01.png){.thumbnail}
 
@@ -132,7 +133,7 @@ Bestätigen Sie im nächsten Fenster die von Ihnen gewählten Optionen und start
 
 Ihr Server wird jetzt im Rescue-Modus neu gestartet und die Login-Daten werden an die von Ihnen angegebene E-Mail-Adresse versandt. Um den Rescue-Modus zu beenden, ändern Sie einfach den Startmodus, um von der Festplatte zu booten, und starten Sie Ihren Server erneut.
 
-Für weitere Informationen zur Verwendung des Rescue-Modus, um Probleme auf Ihrem Server zu beheben, lesen Sie unsere Anleitung zum [Rescue-Modus](https://docs.ovh.com/de/dedicated/ovh-rescue/){.external}.
+Für weitere Informationen zur Verwendung des Rescue-Modus, um Probleme auf Ihrem Server zu beheben, lesen Sie unsere Anleitung zum [Rescue-Modus](../ovh-rescue/){.external}.
 
 
 #### Hardware-Diagnose
@@ -141,11 +142,11 @@ Mit den im Rescue-Modus verfügbaren Hardware-Tests können Sie physische Fehlfu
 
 Wenn Sie im Webinterface des Rescue-Modus eingeloggt sind, können Sie Tests für die folgenden Hardwarekomponenten durchführen:
 
-* RAM
-* Festplatten
-* RAID-Array
-* Prozessor
-* Netzwerkverbindung
+- RAM
+- Festplatten
+- RAID-Array
+- Prozessor
+- Netzwerkverbindung
 
 #### Webinterface des Rescue-Modus
 

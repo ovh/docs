@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Outlook Web App naudojimo gidas'
 excerpt: 'Šiame gide aprašoma, kaip naudoti Outlook Web App (OWA)'
 slug: exchange_2016_outlook_web_app_naudojimo_gidas

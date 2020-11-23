@@ -28,6 +28,6 @@ sections: 'Pierwsze kroki'
 > ### Bazy danych
 >
 > - [Tworzenie bazy danych na hostingu](https://docs.ovh.com/pl/hosting/tworzenie-bazy-danych/)
-> - [Odzyskiwanie kopii bazy danych na hostingu](https://docs.ovh.com/pl/hosting/database_export/)
+> - [Odzyskiwanie kopii bazy danych na hostingu](https://docs.ovh.com/pl/hosting/eksport-bazy-danych/)
 > - [Import kopii bazy danych do bazy na hostingu](https://docs.ovh.com/pl/hosting/hosting_www_importowanie_bazy_danych_mysql/)
 >

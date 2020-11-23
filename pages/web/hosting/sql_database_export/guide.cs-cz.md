@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Vytvoření a export zálohy webhostingové databáze'
 slug: export-databaze
 excerpt: 'Zjistěte, jak vytvořit a exportovat databázovou zálohu na webhostingu OVH'

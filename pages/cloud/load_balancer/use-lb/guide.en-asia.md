@@ -18,7 +18,7 @@ The goal of this guide is to assist you when you first operate your Load Balance
 
 ### Managing your Load Balancer from the customer control panel
 
-In order to manage your Load Balancer from the customer control panel, simply go to the `Server`{.action} section (1) then to the `Load Balancer`{.action} section (2) in the left-side menu. The service home page should appear:
+In order to manage your Load Balancer from the customer control panel, simply go to the `Bare Metal Cloud`{.action} section (1) then to the `Load Balancer`{.action} section (2) in the left-side menu. The service home page should appear:
 
 ![Load Balancer](images/lbip-main.png){.thumbnail}
 

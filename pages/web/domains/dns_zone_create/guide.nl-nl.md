@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Creatie van een OVH DNS-zone voor een domeinnaam'
 slug: creeer_een_dns_zone_voor_een_domein_dat_niet_geregistreerd_is_bij_ovh
 excerpt: 'Ontdek hoe u via uw Control Panel een OVH DNS-zone voor uw domeinnaam kunt aanmaken'

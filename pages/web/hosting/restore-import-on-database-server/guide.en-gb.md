@@ -28,7 +28,7 @@ Following an error on your database, you must be able to restore a backup or imp
 
 ### Restoring and importing a database from the Control Panel
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the database name concerned. Next, switch to the `Databases` tab.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the database name concerned. Next, switch to the `Databases` tab.
 
 In the **Backups** column, the number corresponds to the available backups for your database.
 
@@ -85,7 +85,7 @@ In some cases, the RAM available in your database server may not be sufficient t
 
 #### Importing MySQL or MariaDB databases with phpMyAdmin
 
-To import your database directly from phpMyAdmin, you will need to log in to the interface first. To do this, you can refer to the [section in this guide]( ../connecting-to-database-on-database-server/#logging-in-to-a-mysql-or-mariadb-database).
+To import your database directly from phpMyAdmin, you will need to log in to the interface first. To do this, you can refer to the [section in this guide](../connecting-to-database-on-database-server/#logging-in-to-a-mysql-or-mariadb-database).
 
 Once you have logged in to phpMyAdmin, select your database by clicking on its name.
 
@@ -96,7 +96,7 @@ Select your backup file by clicking `Browse`{.action}. (Please note that the fil
 > [!primary]
 >
 > We recommend splitting your database into several files if it exceeds 100 MB and importing these files from phpMyAdmin.<br>
-> You can import files larger than 100 MB in the OVHcloud Control Panel by following the step [Restoring and importing a database from the Control Panel](./#restoring-and-importing-a-database-from-the-control-panel_1).
+> You can import files larger than 100 MB in the OVHcloud Control Panel by following the step [Restoring and importing a database from the Control Panel](./#restoring-and-importing-a-database-from-the-control-panel).
 
 Keep the default options and click `Run`{.action} to start the import.
 
@@ -122,7 +122,7 @@ cat database_name.sql | mysql --host=server --user=username --port=port --passwo
 
 > [!warning]
 >
-> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it]( ../how_to_password_protect_a_directory_on_your_website/).
+> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](../how_to_password_protect_a_directory_on_your_website/).
 > - This action is only possible on an OVHcloud Web Hosting plan.
 >
 
@@ -150,7 +150,7 @@ psql --host=server --port=port --user=username --password=password database_name
 
 > [!warning]
 >
-> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it]( ../how_to_password_protect_a_directory_on_your_website/).
+> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](../how_to_password_protect_a_directory_on_your_website/).
 > - This action is only possible on an OVHcloud Web Hosting plan.
 >
 

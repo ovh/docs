@@ -31,7 +31,7 @@ Para minimizar os riscos de erro durante a substituição de um disco rígido, p
 Para obter o número de série de um disco rígido com uma configuração RAID de software, pode simplesmente utilizar o smartctl:
 
 ```sh
-# smartctl -a /dev/sdX | grep Serial Serial Number:    XXXXXXX
+# smartctl -a /dev/sdX | grep Serial
 ```
 
 O periférico é detetado pelo sistema operativo. Por exemplo: `/dev/sda`, `/dev/sdb`, etc.
@@ -137,7 +137,7 @@ O ID do periférico e do adaptador serão utilizados para indicar ao smartctl qu
 Assim, o comando deve ter o seguinte formato:
 
 ```sh
-# smartctl -d megaraid,N -a /dev/sdX | grep Serial Serial Number: 1234567890
+# smartctl -d megaraid,N -a /dev/sdX | grep Serial
 ```
 
 O ID do periférico RAID será apresentado como se segue: `/dev/sda` = 1º RAID, `/dev/sdb` = 2º RAID, etc.
@@ -154,7 +154,7 @@ O ID do periférico RAID será apresentado como se segue: `/dev/sda` = 1º RAID,
 > Nesse caso, deve substituir `megaraid` por `sat+megaraid`:
 >
 > ```
-> smartctl -d sat+megaraid,N -a /dev/sdX | grep Serial Serial Number:    1234567890
+> smartctl -d sat+megaraid,N -a /dev/sdX | grep Serial
 > ```
 >
 
@@ -167,7 +167,7 @@ Pode recorrer a [este manual](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.
 Quando tiver encontrado este periférico associado ao disco rígido que pretende analisar, utilize o seguinte comando:
 
 ```sh
-# smartctl -a /dev/sgX | grep Serial Serial Number:    1234567890
+# smartctl -a /dev/sgX | grep Serial
 ```
 
 O número do periférico sg será apresentado como se segue: `/dev/sg0`, `/dev/sg1`, etc.

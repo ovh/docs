@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Step 1 - Your VMware Horizon 7.1 platform
 slug: horizon-7-platform
 excerpt: Find out how to log in to VMware Horizon 7.1 for the first time

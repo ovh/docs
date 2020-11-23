@@ -1,6 +1,6 @@
 ---
 title: 'AMD SME/SEV sur Ubuntu 20'
-slug: 'activer-et-utiliser-amd-sme-sev
+slug: activer-et-utiliser-amd-sme-sev
 excerpt: 'Activer SME sur votre serveur ubuntu et générer une machine virtuelle SEV'
 section: 'Advanced use'
 ---

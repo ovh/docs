@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Převod generické domény k OVH'
 slug: prevod-genericke-domeny
 excerpt: 'Zjistěte, jak převést generickou doménu ke společnosti OVH.'

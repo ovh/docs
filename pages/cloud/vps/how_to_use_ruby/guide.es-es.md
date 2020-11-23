@@ -3,6 +3,7 @@ title: Cómo utilizar Ruby
 excerpt: Cuestiones generales sobre la distribución Ruby
 slug: how_to_ruby
 section: Uso avanzado
+hidden: true
 ---
 
 

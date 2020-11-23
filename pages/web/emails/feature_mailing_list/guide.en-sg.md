@@ -45,7 +45,7 @@ The sender sends an email to the mailing list. The moderator receives an email w
 
 ### Create a mailing list.
 
-To create a mailing list, go to the [OVHcloud Control Panel](http://www.ovh.com/manager/web){.external} and click on the `Web`{.action} tab at the top.
+To create a mailing list, go to the [OVHcloud Control Panel](http://www.ovh.com/manager/web){.external} and click on the `Web Cloud`{.action} tab at the top.
 
 Next, click in the left-hand column, click on `Emails`{.action} — then click on the domain name concerned. Go to the `Mailing lists`{.action} tab for your email service.
 

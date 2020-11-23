@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange diagnostika: ką daryti klaidos atveju?'
 excerpt: 'Exchange diagnostika: ką daryti klaidos atveju?'
 slug: exchange_diagnostika_ka_daryti_klaidos_atveju

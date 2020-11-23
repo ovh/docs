@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH-sähköposti: Windows-konfigurointiohje'
 excerpt: ''
 slug: ovh-sahkoposti_windows-konfigurointiohje

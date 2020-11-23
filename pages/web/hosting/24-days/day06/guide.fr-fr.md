@@ -2,7 +2,7 @@
 title: 'Configurer et utiliser une base de données'
 slug: day06
 excerpt: 'Comment utiliser une base de donnees ?'
-section: 'Cas d''usage'
+section: "Cas d'usage"
 hidden: true
 ---
 

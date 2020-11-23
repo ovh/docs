@@ -17,7 +17,7 @@ If you receive an email notifying you that one of your email addresses has been 
 ## Requirements
 
 - an [OVHcloud email solution](https://www.ovh.co.uk/emails/)
-- access to the `Web`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
@@ -25,7 +25,7 @@ If you receive an email notifying you that one of your email addresses has been 
 
 #### For an Exchange email address:
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned.
 
 Go to the `Email accounts`{.action} section of your platform. If the "Status" column for your email address displays "Blocked", click `...`{.action} to the right of the account concerned, then `Unblock`{.action}. Next, move on to [step 2](./#step-2-access-the-support-ticket_1) of this guide.
 
@@ -33,7 +33,7 @@ Go to the `Email accounts`{.action} section of your platform. If the "Status" co
 
 #### For an Email Pro address:
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Email Pro`{.action} in the services bar on the left-hand side, then select the Email Pro platform concerned.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Email Pro`{.action} in the services bar on the left-hand side, then select the Email Pro platform concerned.
 
 Go to the `Email accounts`{.action} section of your platform. If the "Status" column to the right of the email address concerned displays "Spam", click on it, then `Reply to the ticket`{.action}. Next, move on to [step 2](./#step-2-access-the-support-ticket_1) of this guide.
 
@@ -41,7 +41,7 @@ Go to the `Email accounts`{.action} section of your platform. If the "Status" co
 
 #### For an MX Plan email address:
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Emails`{.action} in the services bar on the left-hand side, then choose the domain name concerned.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Emails`{.action} in the services bar on the left-hand side, then choose the domain name concerned.
 
 Go to the `Email accounts`{.action} section of your platform. If the "Status" column to the right of the email address concerned displays "Spam", click on it, then `Reply to the ticket`{.action}. Next, move on to [step 2](./#step-2-access-the-support-ticket_1) of this guide.
 

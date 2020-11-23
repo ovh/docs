@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellit: sivuston tilastojen tarkastelu'
 excerpt: Pääsy sivuston tilastoihin
 id: '1344'

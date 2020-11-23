@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'MX Plan -sähköpostiosoitteen salasanan muokkaus'
 slug: sahkopostiosoitteen-salasanan-muokkaus
 excerpt: 'Opi vaihtamaan MX Plan -tuotteen puitteissa luodun sähköpostiosoitteen salasana'

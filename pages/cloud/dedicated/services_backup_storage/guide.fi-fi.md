@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Backup Storage -palvelun käyttö dedikoidulla palvelimella'
 slug: palvelut-backup-storage
 excerpt: 'Katso, kuinka Backup Storage -palvelu aktivoidaan ja kuinka sitä käytetään'

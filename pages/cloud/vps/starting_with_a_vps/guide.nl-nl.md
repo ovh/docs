@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Aan de slag met VPS
 excerpt: Ontdek het basisgebruik van een VPS
 slug: aan-de-slag-met-vps 

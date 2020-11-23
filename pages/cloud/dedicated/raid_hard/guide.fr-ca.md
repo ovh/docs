@@ -1,7 +1,7 @@
 ---
 title: 'Gestion du RAID matériel'
 slug: raid-hard
-excerpt: 'Apprenez à vérifier l''état de votre RAID et de vos disques durs'
+excerpt: "Apprenez à vérifier l'état de votre RAID et de vos disques durs"
 section: 'RAID & disques'
 ---
 

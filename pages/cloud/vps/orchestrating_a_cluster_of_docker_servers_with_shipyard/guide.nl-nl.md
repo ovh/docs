@@ -1,8 +1,10 @@
 ---
+deprecated: true
 title: Het beheren van een cluster Docker servers met Shipyard
 excerpt: ''
 slug: het_beheren_van_een_cluster_docker_servers_met_shipyard
 legacy_guide_number: g1762
+hidden: true
 ---
 
 
@@ -139,7 +141,7 @@ iptables-persistent save
 
 
 ## 
-Na het installeren van Docker op onze 3 machines (cf [onze vorige handleiding](https://www.ovh.com/fr/g1708.optimiser_lhebergement_dun_site_wordpress_sur_un_vps_grace_a_docker), is het ook mogelijk om over RunAbove instances voorzien van een Docker machine te beschikken. Meer informatie vindt u via [deze handleiding](https://community.runabove.com/kb/en/instances/docker-in-5-minutes-on-runabove-with-docker-machine.html)), activeer het verbinden van Docker daemon met een port (bijvoorbeeld de port 2375, dit is de officiële port toegewezen door [de IANA](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker)), zodat deze machines kunnen communiceren met de master machine.
+
 Hiervoor beginnen we met het stoppen van Docker op onze servers via het commando:
 
 
@@ -230,7 +232,7 @@ Confirm: <ENCORE>
 
 Zodra we deze actie hebben uitgevoerd, kunnen we met ctrl+d de CLI verlaten.
 
-U heeft nu toegang tot de Shipyard interface via http://<your-host-ip>:8080 door in te loggen met de gebruikersnaam «admin» en het wachtwoord dat u heeft ingesteld.
+U heeft nu toegang tot de Shipyard interface via `http://<your-host-ip>:8080` door in te loggen met de gebruikersnaam «admin» en het wachtwoord dat u heeft ingesteld.
 
 Zodra u bent ingelogd, kunt u engines (de nodes) toevoegen via de Shipyard web interface onder «engines»:
 
@@ -280,5 +282,5 @@ In de kolom 'containers', kunnen we nu alle containers bekijken en beheren, die 
 Klik tenslotte op "implementeren", zodat we alle containers kunnen starten op alle nodes of op sommige in het bijzonder (door het label te selecteren, dat overeenkomt met de nodes, waarop men de container wil implementeren):
 
 ![](images/img_2616.jpg){.thumbnail}
-Nu beschikt u over een beheersysteem voor uw verschillende Docker machines, en kunt u applicaties/containers binnen uw cluster eenvoudig en snel verstrekken, terwijl u beschikt over een GUI. Ook als u Docker wilt testen, is onze Alpha Sailabove verkrijgbaar via [https://labs.runabove.com/docker/](https://labs.runabove.com/docker/). We hebben ook een Ubuntu 14.04 ingesteld met Docker (voorgeïnstalleerd) op VPS Cloud en VPS Classic (verkrijgbaar op al onze VPS aanbiedingen, behalve het classic 1 VPS aanbod dat niet over voldoende schijfruimte beschikt). Hierdoor beschikt men direct over een server om containers uit te voeren, en beschikt men over de voordelen inherent aan onze OVH VPS aanbiedingen.
+
 

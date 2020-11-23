@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Přidání domény ke službě Exchange
 slug: pridani-domeny-exchange
 excerpt: Zjistěte, jak přidat doménu ke službě Exchange

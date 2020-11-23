@@ -2,7 +2,7 @@
 title: 'Mettre en ligne son site avec FTP'
 slug: day05
 excerpt: 'Comment mettre en ligne son site web'
-section: 'Cas d''usage'
+section: "Cas d'usage"
 hidden: true
 ---
 

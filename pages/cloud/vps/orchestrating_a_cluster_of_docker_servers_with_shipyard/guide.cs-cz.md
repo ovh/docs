@@ -1,8 +1,10 @@
 ---
+deprecated: true
 title: Organizace clusteru Docker serverů s Shipyard
 excerpt: ''
 slug: organizace_clusteru_docker_serveru_s_shipyard
 legacy_guide_number: g1762
+hidden: true
 ---
 
 
@@ -230,7 +232,7 @@ Confirm: <RE-ENTER_YOUR_PASSWORD>
 
 Jakmile dokončíme operaci, použijeme ctrl+d pro odchoz z CLI.
 
-Nyní se můžete připojit k rozhraní Shipyard pomocí http://<ip_vaseho_hostitele>:8080 a pomocí uživatele "admin" a Vašeho hesla.
+Nyní se můžete připojit k rozhraní Shipyard pomocí `http://<ip_vaseho_hostitele>:8080` a pomocí uživatele "admin" a Vašeho hesla.
 
 Jakmile jste připojeni, budeme přidávat uzly (node) pomocí webového rozhraní Shipyard v sekci Engines:
 

@@ -33,7 +33,7 @@ Sie können Ihre [Cloud Desktop Infrastructure](https://www.ovh.de/cloud/cloud-d
 
 Sie können vollständige oder teilweise konfigurierte VM-Vorlagen auf der mit Ihrer VMware Horizon 7.1 Infrastruktur verbundenen Private Cloud erstellen oder auf diese importieren.
 
-In dieser Dokumentation finden Sie eine Anleitung zur [Erstellung einer VM mithilfe eines OVH Templates](https://docs.ovh.com/gb/en/private-cloud/deploy-ovh-template/){.external} (Englisch).
+In dieser Dokumentation finden Sie eine Anleitung zur [Erstellung einer VM mithilfe eines OVH Templates](../../private-cloud/ovhcloud-template-deployment/).
  
 
 ### Vorlage mit dem Zielnetzwerk des Pools verbinden

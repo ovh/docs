@@ -27,7 +27,7 @@ Pour commencer, connectez-vous à la page de votre serveur dans votre [espace cl
 
 > [!primary]
 >
-> Pour des informations détaillées sur l'utilisation de la fonction IPMI, veuillez vous reporter à notre [guide relatif à l'utilisation de l'IPMI](https://docs.ovh.com/fr/dedicated/utilisation-ipmi-serveurs-dedies/){.external}.
+> Pour des informations détaillées sur l'utilisation de la fonction IPMI, veuillez vous reporter à notre [guide relatif à l'utilisation de l'IPMI](../utilisation-ipmi-serveurs-dedies/){.external}.
 >
 
 Activez la fonction IPMI à l'aide de l'applet Java ou de votre navigateur. Après le démarrage de la session IPMI, connectez-vous à votre compte d'administration avec vos informations d'identification actuelles.
@@ -46,7 +46,7 @@ Votre mot de passe a été modifié. Vous pouvez à nouveau accéder au serveur 
 
 ### Utilisation du mode rescue
 
-Pour démarrer, démarrez votre serveur en [mode rescue](https://docs.ovh.com/ca/en/dedicated/ovh-rescue/){.external} en utilisant  l'environnement d'initialisation WinRescue. Une fois le serveur redémarré, connectez-vous à l'aide d'une visionneuse VNC ou sélectionnez l'onglet "IPMI"{.action} sur la page de votre serveur dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Pour démarrer, démarrez votre serveur en [mode rescue](../ovh-rescue/){.external} en utilisant l'environnement d'initialisation WinRescue. Une fois le serveur redémarré, connectez-vous à l'aide d'une visionneuse VNC ou sélectionnez l'onglet "IPMI"{.action} sur la page de votre serveur dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 Ensuite, ouvrez l'outil NTPWdi. S'il n'y apparaît pas, vous pouvez télécharger une copie [ici](http://cdslow.org.ru/files/ntpwedit/ntpwed07.zip){.external}
 
@@ -72,8 +72,8 @@ Votre mot de passe a été modifié. Quittez l'outil, fermez la session et redé
 
 ## Aller plus loinr
 
-[Mode Rescue](https://docs.ovh.com/fr/dedicated/ovh-rescue/){.external}.
+[Mode Rescue](../ovh-rescue/){.external}.
 
-[L’utilisation de l’IPMI pour les serveurs dédiés](https://docs.ovh.com/fr/dedicated/utilisation-ipmi-serveurs-dedies/){.external}.
+[L’utilisation de l’IPMI pour les serveurs dédiés](../utilisation-ipmi-serveurs-dedies/){.external}.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

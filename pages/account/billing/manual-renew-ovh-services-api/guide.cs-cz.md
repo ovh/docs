@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Obnovení služeb prostřednictvím OVH API'
 slug: obnoveni-sluzeb-api
 excerpt: 'Zjistěte, jak provést manuální obnovení služeb pomocí OVH API'
@@ -17,7 +18,7 @@ V nativní konfiguraci OVH je obnovení služby prováděno automaticky. Obnoven
 ## Prerekvizity
 
 - Přístup k [OVH API](https://api.ovh.com/console){.external}.
-- [Přihlašovací údaje k OVH API](https://api.ovh.com/g934.first_step_with_api){.external}.
+- Přihlašovací údaje k OVH API.
 
 ## Postup
 

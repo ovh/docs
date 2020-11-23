@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Synchronizace služby Object Storage s nástrojem rClone
 slug: sync-rclone-object-storage
 section: Object Storage

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 5. část - připojení k virtuálním plochám
 slug: pripojeni-plocha
 excerpt: Zjistěte, jak se připojit ke své virtuální ploše

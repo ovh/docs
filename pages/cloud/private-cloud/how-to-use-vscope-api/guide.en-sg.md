@@ -2,7 +2,7 @@
 title: 'Using the vScope API'
 slug: vscopeapi
 excerpt: 'Find out how to use the vScope API to collect monitoring data in your applications'
-section: 'OVH services and options'
+section: 'OVHcloud services and options'
 order: 1
 ---
 

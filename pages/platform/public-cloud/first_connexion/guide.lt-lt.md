@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Logging in to an OVH Public Cloud instance'
 slug: first-login
 legacy_guide_number: 1787

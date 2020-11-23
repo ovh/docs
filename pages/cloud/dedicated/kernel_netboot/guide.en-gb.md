@@ -2,7 +2,7 @@
 title: 'Starting your server on an OVH kernel'
 slug: kernel-netboot
 excerpt: 'This guide explains how to network boot your server on to an OVH kernel.'
-section: 'Server Management'
+section: 'Server management'
 ---
 
 **Last updated 25th July 2018**
@@ -26,7 +26,7 @@ The Netboot facility needs to be configured in the [OVH Control Panel](https://w
 
 To start your server on Disk, you must first connect to the [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
-Go to the `Dedicated`{.action} section, `Dedicated Servers`{.action} on the left-hand column, then select your server in the list.
+Go to the `Bare Metal Cloud`{.action} section, `Dedicated Servers`{.action} on the left-hand column, then select your server in the list.
 
 ![Netboot](images/netboot-01.png){.thumbnail}
 
@@ -52,7 +52,7 @@ You will now need to reboot the server so that the new netboot takes effect.
 
 To start your server on a network kernel, you must first connect to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
-Go to the `Dedicated`{.action} section, `Dedicated Servers`{.action} on the left-hand column, then select your server in the list.
+Go to the `Bare Metal Cloud`{.action} section, `Dedicated Servers`{.action} on the left-hand column, then select your server in the list.
 
 In the tab `Server Status`{.action}, section `General Information`{.action}, click `Edit`{.action} on the Boot line.
 
@@ -94,7 +94,7 @@ You will now need to reboot the server so that the new netboot takes effect.
 ### Boot from Rescue mode
 To start your server in rescue mode, you must first connect to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
-Go to the `Dedicated`{.action} section, `Dedicated Servers`{.action} on the left-hand column, then select your server in the list.
+Go to the `Bare Metal Cloud`{.action} section, `Dedicated Servers`{.action} on the left-hand column, then select your server in the list.
 
 In the tab `Server Status`{.action}, section `General Information`{.action}, click `Edit`{.action} on the Boot line.
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Představení služby OVH Load Balancer 
 slug: predstaveni 
 excerpt: Seznamte se s nejnovější verzí řešení OVH Load Balancer

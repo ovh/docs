@@ -6,24 +6,24 @@ section: Management via Control Panel
 order: 1
 ---
 
-**Last updated 02nd December 2019**
+**Last updated 2nd December 2019**
 
 ## Objective
 
-You can create a backup of your instance at any time via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. You can then use this backup to restore your instance to an old configuration, or recreate it.
+You can create a backup of your instance at any time via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). You can then use this backup to restore your instance to an old configuration, or recreate it.
 
 **Create a backup of a Public Cloud in just a few clicks.**
 
 ## Requirements
 
-- an [OVHcloud Public Cloud instance](https://docs.ovh.com/gb/en/public-cloud/create_an_instance_in_your_ovh_customer_account/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- an [OVHcloud Public Cloud instance](../create_an_instance_in_your_ovh_customer_account/)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
 ### Create a backup of an instance.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and select the Public Cloud tab from the `Instances`{.action} section.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), and select the Public Cloud tab from the `Instances`{.action} section.
 
 Next, click on the `...`{.action} button to the right of the instance, then `Create a backup`{.action}.
 
@@ -61,8 +61,8 @@ Simply select the instance you want to back up.
 
 Here, you need to define the frequency with which backups are made. There are two default options:
 
-* daily backup with a log of 7 days maximum
-* daily backup with a log of 14 days maximum
+- daily backup with a log of 7 days maximum
+- daily backup with a log of 14 days maximum
 
 ![public-cloud-instance-backup](images/createbackup7.png){.thumbnail}
 

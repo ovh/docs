@@ -12,7 +12,7 @@ Afin d'automatiser vos opérations sur le Public Cloud, il est possible d'utilis
 
 Vous pourrez par exemple envoyer des fichiers de manière régulière vers vos conteneurs afin de le sauvegarder.
 
-Ce guide vous aidera à prendre en main les API OpenStack afin de gérer vos conteneurs d'objets à l'aide du client Python Swfit.
+Ce guide vous aidera à prendre en main les API OpenStack afin de gérer vos conteneurs d'objets à l'aide du client Python Swift.
 
 
 ### Prérequis

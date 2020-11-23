@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Become the root user and select a password'
 slug: become_the_root_user_and_select_a_password
 excerpt: 'This guide will show you how to become the root user and create a password for the root account'

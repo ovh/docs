@@ -19,7 +19,7 @@ Tous les projets disposent d’un groupe de sécurité par défaut, utilisé pou
 
 ## Prérequis
 
-- Avoir accès à [votre interface Horizon](../creation_acces_a_interface_horizon/){.external}.
+- Avoir accès à [votre interface Horizon](../creer-un-acces-a-horizon/){.external}.
 
 
 ## En pratique

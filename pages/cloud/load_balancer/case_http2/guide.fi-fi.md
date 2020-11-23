@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: HTTP/2-protokollan konfigurointi OVH:n Kuormantasaajaan
 slug: lb-http2
 excerpt: HTTP/2-protokollan konfigurointi OVH:n Kuormantasaajaan

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: D.U.K. - Migravimas į naujausią PHP versiją'
 excerpt: 'Svetainių talpinimas: D.U.K. - Migravimas į naujausią PHP versiją'
 slug: svetainiu_talpinimas_duk_-_migravimas_i_naujausia_php_versija

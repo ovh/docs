@@ -27,7 +27,7 @@ If HA is not enabled in your cluster, go to the `Configure`{.action} tab of your
 Click `Edit`{.action} and slide the cursor to enable the HA feature.
 
 It is also important to enable host monitoring. This setting allows pulsing signals to be sent between ESXi hosts to detect a possible failure.
-Disabling it is required to perform update operations with [Update Manager](https://docs.ovh.com/gb/en/private-cloud/use_vmware_update_manager/){.external}.
+Disabling it is required to perform update operations with [Update Manager](https://docs.ovh.com/gb/en/private-cloud/use_vmware_update_manager/).
 
 ![](images/HA.png){.thumbnail}
 

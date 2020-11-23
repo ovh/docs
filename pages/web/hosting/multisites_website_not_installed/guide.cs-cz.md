@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Chyba při načítání stránky „Website not installed“'
 slug: webhosting_chyba_pri_nacitani_stranky
 excerpt: 'Zjistěte, jak vyřešit chybné nastavení domény'

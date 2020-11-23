@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuring an Exchange account on Android via the Gmail app
 excerpt: Find out how to configure an Exchange account on Android, via the Gmail app
 slug: exchange_20132016_konfiguravimas_android

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Suojausryhmän luominen ja poistaminen Horizon-käyttöliittymässä
 excerpt: Katso, kuinka suojausryhmä luodaan tai poistetaan Horizon-käyttöliittymässä
 slug: suojausryhma-luominen-poistaminen-horizonissa

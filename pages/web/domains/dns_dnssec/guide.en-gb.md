@@ -20,7 +20,7 @@ To understand how this protection works, we recommend reading this page: [Unders
 
 - a domain name registered with OVH
 - The domain name concerned must have an extension compatible with DNSSEC.
-- access to the `Web`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the `Web Cloud`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellin .ovhconfig-tiedoston konfigurointi'
 slug: ovhconfig-tiedoston-konfigurointi
 excerpt: 'Tutustu .ovhconfig-tiedostoon ja opi muokkaamaan sitä'

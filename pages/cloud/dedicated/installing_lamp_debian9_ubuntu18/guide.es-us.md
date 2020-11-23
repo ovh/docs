@@ -35,7 +35,7 @@ Estas tecnologías forman una pila, que usted puede utilizar para alojar sitio w
 
 Si usted esta usando una distribucion Debian o Ubuntu, le recomendamos que reinstale su servidor desde cero (si es posible). Tenga en cuenta que esta accion podra **eliminar todo la informacion.**
 
-Conecte via SSH como usuario root. Si usted no esta seguro de como hacer, puede encontar la informacion en esta guia [Introducción al SSH](../ntroduccion-ssh/){.external}.
+Conecte via SSH como usuario root. Si usted no esta seguro de como hacer, puede encontar la informacion en esta guia [Introducción al SSH](../introduccion-ssh).
 
 Una vez que haya instalado el sistema operativo, le recomendamos que lo actulice:
 
@@ -77,7 +77,7 @@ Ahora instalaremos el segundo bloque – Servidor web Apache 2 – junto con su 
 sudo apt-get install apache2 apache2-doc
 ```
 
-Si usted ha instalado el servidor correctamente, usted podrá tener acceso a la página por defecto de Apache, introduciendo su dirección IP ( o el nombre del servido) en su navegador como a continuación: http://server_IP. No se preocupe sino se conecta por HTTPS, ya que no hay certificado añadido en esta etapa.
+Si usted ha instalado el servidor correctamente, usted podrá tener acceso a la página por defecto de Apache, introduciendo su dirección IP ( o el nombre del servido) en su navegador como a continuación: `http://server_IP`. No se preocupe sino se conecta por HTTPS, ya que no hay certificado añadido en esta etapa.
 
 ![Apache installation](images/tuto_apache.png){.thumbnail}
 
@@ -120,7 +120,7 @@ Añada las siguientes lineas al fichero:
 phpinfo();
 ?>
 ```
-Luego, acceda al archivo directamente desde el navegador: http://server_IP/info.php.
+Luego, acceda al archivo directamente desde el navegador: `http://server_IP/info.php`.
 
 Usted podrá ver la página que detalla todas las especificaciones de su entorno PHP (versión 7.0.30 en su caso):
 
@@ -130,7 +130,7 @@ Una vez que haya revisado esta página, le recomendamos encarecidamente que elim
 
 > [!primary]
 >
->    Por defecto, el servidor web Apache no prioriza los ficheros PHP sobre HTML. Aquí, en la dirección raíz, tenemos el fichero index.html y el fichero index.php. Si volvemos al navegador, en http://server_IP, Apache nos redireccionará hacia la página index.html en lugar de index.php. Esta priorización no afectará a la mayoría de los sistemas de gestión de contenido, como Wordpress o Drupal. Sin embargo esta regla puede ser modificada si fuese necesario.
+>    Por defecto, el servidor web Apache no prioriza los ficheros PHP sobre HTML. Aquí, en la dirección raíz, tenemos el fichero index.html y el fichero index.php. Si volvemos al navegador, en `http://server_IP`, Apache nos redireccionará hacia la página index.html en lugar de index.php. Esta priorización no afectará a la mayoría de los sistemas de gestión de contenido, como Wordpress o Drupal. Sin embargo esta regla puede ser modificada si fuese necesario.
 >
 
 ### Paso 5:  Instale la base de datros  MySQL/MariaDB
@@ -142,7 +142,7 @@ Este es el cuarto y el último paso para nuestro LAMP-- sistema de base de datos
 > En 2009, después que Oracle adquiriera MySQL, el fundador de MySQL creo una comunidad más abierta. Su nombre es MariaDB, en honor a su hija. Todos los comandos MySQL son totalmente compatibles con MariaDB, como una de las aplicaciones web más populares. La distribución Linux Debian ofrece MariaDB por defecto. Si usted utiliza Debian, verá "MariaDB" en su terminal para este paso.
 >
 
-Este es el comando que necesita utilizar ( se le solicitara la contraseña):
+Este es el comando que necesita utilizar (se le solicitara la contraseña):
 
 ```sh
 sudo apt-get install mysql-server 
@@ -205,8 +205,8 @@ sudo apt-get install phpmyadmin
 
 Desde las opciones que ofrece, seleccione un servidor web para configurar automáticamente la ejecución de phpMyadmin:
 
--  Marque `()apache2`{.action},luego `Entry`{.action}
--  Acepete ayuda de configuracion, despues introduzca la contraseña del administrador de MySQL.
+- Marque `()apache2`{.action},luego `Entry`{.action}
+- Acepete ayuda de configuracion, despues introduzca la contraseña del administrador de MySQL.
 
 Para acceder a la interfaz de administración de `phpMyAdmin`, necesita finalizar la configuración en su servidor Apache. Para hacer esto, edite el fichero de configuración de Apache:
 
@@ -234,7 +234,7 @@ Incide sesión, necesita crear un usuario administrador con los permisos para ph
 mysql -u root -p [password] MariaDB [(none)]> CREATE USER 'my_user'@'localhost' IDENTIFIED BY 'my_password'; MariaDB [(none)]> GRANT ALL PRIVILEGES ON * . * TO 'my_user'@'localhost'; MariaDB [(none)]> FLUSH PRIVILEGES; 
 ```
 
-Después acceda la interfaz a través de: [http://server_IP/phpmyadmin/](#):
+Después acceda la interfaz a través de: `http://server_IP/phpmyadmin/`:
 
 ![PHP installation](images/tuto_pma.png){.thumbnail}
 
@@ -248,7 +248,7 @@ Descargue, descomprime y copie el contenido en un nuevo fichero llamado `mywebsi
 wget https://wordpress.org/latest.tar.gz tar xpf latest.tar.gz sudo cp -r wordpress /var/www/html/mywebsite 
 ```
 
-Es archivo que contiene Wordpress ahora es accesible en [http://server_IP/mywebsite/](#).
+Es archivo que contiene Wordpress ahora es accesible en `http://server_IP/mywebsite/`.
 
 Crea una base de datos llamada wordpress a través de comando o a través de `phpMyAdmin`.
 

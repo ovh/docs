@@ -3,7 +3,7 @@ title: 'Adicionar um recurso faturado à hora'
 slug: adicionar-um-recurso-faturado-a-hora
 excerpt: 'Saiba como adicionar recursos com faturação à hora'
 legacy_guide_number: '7766721'
-section: 'Funcionalidades da OVH'
+section: 'Funcionalidades da OVHcloud'
 ---
 
 **Última atualização: 12/09/2018**

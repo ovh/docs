@@ -2,7 +2,7 @@
 title: 'Optimising the sending of emails'
 slug: optimise-email-sending
 excerpt: 'Find out how to send emails and limit the risk of them being marked as spam'
-section: Advanced
+section: Tutorial
 ---
 
 **Last updated 20th January 2017**
@@ -53,7 +53,7 @@ The authentication is carried out by a DKIM key that needs to be added in your D
 
 To further optimise email sending and stop your emails from being blocked, you can configure a reverse IP with your domain name.
 
-To modify your reverse IP in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Dedicated`{.action} section, then `IP`{.action}. Then select an IPv4 address, click the cogwheel on the right-hand side, then click `Modify the reverse`{.action}:
+To modify your reverse IP in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Bare Metal Cloud`{.action} section, then `IP`{.action}. Then select an IPv4 address, click the cogwheel on the right-hand side, then click `Modify the reverse`{.action}:
 
 ![Reverse IP](images/reverse_ip.png)
 

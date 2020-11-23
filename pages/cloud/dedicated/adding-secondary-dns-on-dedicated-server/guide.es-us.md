@@ -44,7 +44,7 @@ Aparecerá un mensaje informando de la necesidad de crear un registro de tipo TX
 
 ### Verificar el dominio
 
-En la sección `Web`{.action} del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio.
+En la sección `Web Cloud`{.action} del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio.
 
 ![Verificación del dominio](images/domain-verification-01.png){.thumbnail}
 
@@ -89,7 +89,5 @@ Por último, haga clic en `Añadir`{.action} para confirmar el registro.
 
 
 ## Más información
-
-[Editar una zona DNS de OVHcloud](../domains/web_hosting_como_editar_mi_zona_dns/){.external}
 
 Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.com/community/){.external}.

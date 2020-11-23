@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH:n sähköpostiohjelmien edistynyt käyttö'
 excerpt: 'OVH:n sähköpostiohjelmien edistynyt käyttö'
 slug: ovhn_sahkopostiohjelmien_edistynyt_kaytto

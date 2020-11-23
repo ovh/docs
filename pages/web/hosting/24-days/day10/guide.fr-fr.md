@@ -2,7 +2,7 @@
 title: 'Comment sécuriser mon site web ?'
 slug: day10
 excerpt: 'Ou comment sécuriser votre site, son contenu et ses visiteurs ?'
-section: 'Cas d''usage'
+section: "Cas d'usage"
 hidden: true
 ---
 

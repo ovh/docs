@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimo el. paštas: El. pašto konferencijos naudojimo gidas'
 excerpt: El. pašto konferencijos naudojimo gidas
 slug: svetainiu_talpinimo_el_pastas_el_pasto_konferencijos_naudojimo_gidas

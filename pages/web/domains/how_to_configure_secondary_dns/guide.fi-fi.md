@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Toissijaisen DNS:n konfigurointi'
 excerpt: Miten verkkotunnus konfiguroidaan toissijaiselle DNS-palvelimelle
 slug: toissijaisen_dnsn_konfigurointi

@@ -4,6 +4,7 @@ slug: how-to-migrate-your-mysql-4-to-mysql-56
 legacy_guide_number: 1957
 excerpt: 'This guide will explain how to migrate your database from MySQL 4.0 to MySQL 5.6'
 section: Databases
+hidden: true
 ---
 
 In this guide, you will find a range of information and support on migrating your databases from MySQL 4.0 to MySQL 5.6.

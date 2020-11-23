@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: PostgreSQL naudojimas
 slug: postgresql-naudojimas
 excerpt: Naudokite duomenu bazes

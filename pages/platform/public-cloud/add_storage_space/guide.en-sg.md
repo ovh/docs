@@ -11,7 +11,7 @@ hidden: true
 
 ## Objective
 
-[OVH Public Cloud Storage](https://www.ovh.com/sg/public-cloud/storage/){.external} offers an unlimited storage solution with simple billing that can be adapted to suit your needs.
+[Public Cloud Storage](https://www.ovhcloud.com/en-sg/public-cloud/storage/) offers an unlimited storage solution with simple billing that can be adapted to suit your needs.
 
 Our object containers include:
 
@@ -19,7 +19,7 @@ Our object containers include:
 - private storage (for example, for storing personal data)
 - public storage (for storing anything that is publicly accessible)
 
-**This guide will show you how to add external storage space to your [Public Cloud Instance](https://www.ovhcloud.com/en-sg/public-cloud/){.external}.**
+**This guide will show you how to add external storage space to your Public Cloud Instance.**
 
 ## Requirements
 
@@ -44,7 +44,7 @@ Click the `Create a container`{.action} button.
 
 ![create a container](images/create-a-container.png){.thumbnail}
 
-You will now be presented with several configuration options for your container. First, select a datacentre from the list, as shown in the screenshot below:
+You will now be presented with several configuration options for your container. First, select a data centre from the list, as shown in the screenshot below:
 
 ![select datacentre](images/select-datacentre.png){.thumbnail}
 
@@ -56,7 +56,7 @@ Next, select whether or not you would like to archive and secure your data.
 
 > [!primary]
 >
-This step is optional. You can find out more about this feature on our [Cloud Archive](https://www.ovh.co.uk/public-cloud/storage/cloud-archive/){.external} page.
+This step is optional. You can find out more about this feature on our [Cloud Archive](https://www.ovhcloud.com/en-sg/public-cloud/cloud-archive/){.external} page.
 >
 
 ![public cloud archive](images/public-cloud-archive.png){.thumbnail}
@@ -67,5 +67,6 @@ Finally, name your container and click the `Create the container`{.action} butto
 
 ## Go further
 
-* [Create and configure an additional disk on an instance](https://docs.ovh.com/sg/en/public-cloud/create-and-configure-additional-disk-instance/){.external}
-* Join our community of users on <https://community.ovh.com/en/>.
+[Create and configure an additional disk on an instance](../create_and_configure_an_additional_disk_on_an_instance/)
+
+Join our community of users on <https://community.ovh.com/en/>.

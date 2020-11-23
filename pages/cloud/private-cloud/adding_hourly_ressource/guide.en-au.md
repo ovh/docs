@@ -3,7 +3,7 @@ title: 'Adding hourly resources'
 slug: adding-hourly-resources
 excerpt: 'Find out how to add resources that are billed on an hourly basis'
 legacy_guide_number: '7766721'
-section: 'OVH Features'
+section: 'OVHcloud Features'
 ---
 
 **Last updated 4/02/2019**

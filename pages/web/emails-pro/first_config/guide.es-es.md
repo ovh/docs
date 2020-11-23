@@ -131,7 +131,7 @@ Para configurar su dirección de correo electrónico en un cliente de correo o e
 >
 > En nuestro ejemplo, utilizamos el nombre de servidor pro**X**.mail.ovh.net. Deberá sustituir la «X» por el número que designa el servidor del servicio E-mail Pro.
 > 
-> Encontrará este número en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en el apartado `Web`{.action} de la sección `E-mail Pro`{.action},
+> Encontrará este número en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en el apartado `Web Cloud`{.action} de la sección `E-mail Pro`{.action},
 >  en la columna de la izquierda. El nombre del servidor puede verse en el recuadro **« Conexión »** de la pestaña `Información General`{.action}.
 > 
 

@@ -46,4 +46,4 @@ Clique em `Adicionar chave`{.action} e depois em `Adicionar esta chave`{.action}
 
 ![Adicionar chave](images/addkeymenu1.png){.thumbnail}
 
-Esta chave estará disponível para utilizar no momento da [criação da sua próxima instância cloud](../fcomecar-com-uma-instancia-public-cloud/){.external}.
+Esta chave estará disponível para utilizar no momento da [criação da sua próxima instância cloud](../comecar-com-uma-instancia-public-cloud/)

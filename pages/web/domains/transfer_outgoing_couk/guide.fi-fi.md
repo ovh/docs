@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Verkkotunnuksen .co.uk siirto pois OVH:lta'
 excerpt: 'Verkkotunnuksen .co.uk siirto pois OVH:lta'
 slug: verkkotunnuksen_couk_siirto_pois_ovhlta

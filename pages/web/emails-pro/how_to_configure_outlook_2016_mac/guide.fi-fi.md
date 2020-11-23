@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'E-mail Pro -tilin konfigurointi Outlook 2016 -sovelluksessa Mac-laitteella'
 slug: konfigurointi-outlook-2016-mac
 excerpt: 'Opi konfiguroimaan E-mail Pro -tili Outlook 2016 -sovelluksella Mac-laitteella'

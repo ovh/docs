@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Using the IPMI with dedicated servers'
 slug: use-ipmi-dedicated-servers
 excerpt: 'With the IPMI, you can log in to your server without having to use any external software.'

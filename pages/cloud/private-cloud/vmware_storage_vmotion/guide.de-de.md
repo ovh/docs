@@ -1,20 +1,20 @@
 ---
 title: VMware Storage vMotion
 slug: vmware-storage-vmotion-neu
-excerpt: Verlagern Sie Ihre virtuelle Maschine bei laufendem Betrieb auf einen anderen Host (Hot-Swap)
+excerpt: So verlagern Sie Ihre virtuelle Maschine bei laufendem Betrieb auf einen anderen Host (Hot-Swap)
 section: VMware vSphere Funktionen
 order: 05
 ---
 
 **Stand 30.06.2020**
 
-## Einleitung
+## Ziel
 
 Mit **Storage vMotion** können Sie den Speicherort der Dateien auf der virtuellen Maschine ändern, ohne sie abzuschalten. Die virtuelle Maschine kann auf einmal oder Festplatte um Festplatte verlagert werden.
 
-**Vorliegende Anleitung führt Sie durch diese Operation.**
+**Diese Anleitung führt Sie durch diese Operation.**
 
-## Praktische Anwendung
+## In der praktischen Anwendung
 
 ### Die Festplatte einer virtuellen Maschine verlagern 
 
@@ -24,7 +24,7 @@ Um Dateien von einer virtuellen Maschine auf einen anderen Speicher zu verlagern
 
 ### Wahl des vMotion-Typs
 
-Das Menu bietet mehrere Optionen für  **vMotion**. In unserem Beispiel möchten wir nur die virtuelle Maschine in eine andere Datenbank verlagern. Daher wählen wir „Change storage only“.
+Das Menu bietet mehrere Optionen für **vMotion**. In unserem Beispiel möchten wir nur die virtuelle Maschine in eine andere Datenbank verlagern. Daher wählen wir „Change storage only“.
 
 Mit der Option „Change compute resource only“ wird die virtuelle Maschine auf einen anderen Host verlagert.  
 
@@ -38,7 +38,7 @@ Wählen Sie aus, auf welchen Datenspeicher Sie die Daten verschieben möchten.
 
 Bei dieser Aktion können Sie auch die Art der Speicherung verändern.
 
-Sie können die bereits definierten Arten der Speicherung anwenden, wenn Sie ein [vSAN Storage](../vmware-vsan/) oder die Option [VMencryption](../vm-encrypt/) nutzen.
+Sie können die bereits definierten Richtlinien zur Speicherung anwenden, wenn Sie [vSAN Storage](../vmware-vsan/) oder die Option [VMencryption](../vm-encrypt/) nutzen.
 
 ![Wahl des Datastores](images/VmotionStorage3.png){.thumbnail}
 

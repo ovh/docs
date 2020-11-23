@@ -1,7 +1,7 @@
 ---
 title: 'Transférer son nom de domaine vers OVH'
 slug: transferer-mon-domaine-generique
-excerpt: 'Apprenez comment réaliser le transfert d''un nom de domaine vers OVH'
+excerpt: "Apprenez comment réaliser le transfert d'un nom de domaine vers OVH"
 section: Transfert
 order: 1
 ---

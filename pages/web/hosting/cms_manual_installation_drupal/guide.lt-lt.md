@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'TVS, Drupal diegimas rankiniu būdu'
 excerpt: Kaip rankiniu būdu diegti Drupal?
 id: '1976'
@@ -156,7 +157,8 @@ Jei pateikėte teisingą duomenų bazės informaciją, diegimas paleidžiamas. P
 ## 5 žingsnis - Drupal administravimo konfigūravimas
 Jūsų Drupal TVS administravimo informacija:
 
-Site title: Įveskite domeno pavadinimą.
+Site deprecated: true
+title: Įveskite domeno pavadinimą.
 
 Site email: Įveskite adresą, kurį naudos jūsų svetainė pranešimų siuntimui jūsų abonentams.
 

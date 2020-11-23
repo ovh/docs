@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Dedicated Cloud jungtis iš išmaniojo telefono ar iPad.
 excerpt: ''
 slug: dedicated_cloud_jungtis_is_ismaniojo_telefono_ar_ipad

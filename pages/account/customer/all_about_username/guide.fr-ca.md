@@ -120,6 +120,14 @@ Renseignez alors le code dans la rubrique intitulée « Code de validation »,
 
 ![identifiant client](images/nichandle08.png){.thumbnail}
 
+### Modification du type de compte
+
+Cliquez sur la mention `type de compte` lorsque vous éditez votre profil. Un menu déroulant vous permet de définir le type de compte correspondant à votre situation.
+
+![identifiant client](images/nichandle09.png){.thumbnail}
+
+Une fois vos informations complétées, cliquez sur le bouton `Valider`{.action} .
+
 ### Exercer vos droits sur vos données personnelles
 
 Conformément au Réglement général sur la protection des données (RGPD), vous pouvez demander à exercer les droits relatifs à la protection de vos données à caractère personnel en complétant [ce formulaire](https://www.ovh.com/fr/protection-donnees-personnelles/exercer-vos-droits/){.external}.

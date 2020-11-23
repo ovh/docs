@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Using Object Storage with Rclone
 slug: sync-rclone-object-storage 
 section: Object Storage

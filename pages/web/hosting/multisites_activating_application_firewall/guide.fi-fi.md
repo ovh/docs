@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotelli: Palomuurisovelluksen aktivointi'
 excerpt: 'Webhotelli: Palomuurisovelluksen aktivointi'
 id: '1937'

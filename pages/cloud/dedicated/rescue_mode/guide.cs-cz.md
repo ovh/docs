@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Aktivace a použití režimu rescue'
 slug: ovh-rescue
 excerpt: 'Zjistěte, jak pracovat s režimem rescue na dedikovaném serveru OVH'

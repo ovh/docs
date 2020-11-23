@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Začínáme s MySQL a MariaDB
 slug: zaciname-s-mysql-a-mariadb
 excerpt: Práce s databázemi

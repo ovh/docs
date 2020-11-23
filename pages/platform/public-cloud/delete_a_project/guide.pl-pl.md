@@ -46,6 +46,6 @@ Kliknięcie przycisku usuwania spowoduje wysłanie do Ciebie e-maila z prośbą 
 
 ## Sprawdź również
 
-[Pierwsze kroki z Public Cloud](https://docs.ovh.com/pl/public-cloud/tworzenie-usuwanie-projektow/){.external}.
+[Pierwsze kroki z Public Cloud](../public-cloud-pierwsze-kroki/)
 
 Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.

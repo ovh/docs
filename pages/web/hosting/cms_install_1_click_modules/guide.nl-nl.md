@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Installatie van een site met 1-klik modules
 slug: 1-klik-modules
 excerpt: Ontdek hoe u uw site kunt installeren met onze 1-klik modules

@@ -2,16 +2,16 @@
 title: 'Configuring the vRack between the Public Cloud and a Dedicated Server'
 slug: vrack-pci-ds
 excerpt: 'This guide will show you how to configure private networking between a Public Cloud instance and a Dedicated Server.'
-section: 'Network Management'
+section: 'vRack'
 ---
 
 **Last updated 18th June 2018**
 
 ## Objective
 
-The [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} allows you to configure private network addressing between two or more OVH [Dedicated Servers](https://www.ovh.co.uk/dedicated_servers/){.external}. But it also allows you to add [Public Cloud instances](https://www.ovh.co.uk/public-cloud/instances/){.external} to your private network so that you can create an infrastructure of both physical and virtual resources.
+The [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} allows you to configure private network addressing between two or more OVH [Dedicated Servers](https://www.ovh.co.uk/dedicated_servers/){.external}. But it also allows you to add [Public Cloud instances](https://www.ovh.co.uk/public-cloud/){.external} to your private network so that you can create an infrastructure of both physical and virtual resources.
 
-**This guide will show you how to configure private networking between a [Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external} and a [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external}.**
+**This guide will show you how to configure private networking between a [Public Cloud instance](https://www.ovh.co.uk/public-cloud/){.external} and a [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/)**.
 
 
 ## Requirements
@@ -67,14 +67,14 @@ Next, click the dropdown list under **Link to the private network:** and select 
 
 ![Create an instance](images/pci-04.png){.thumbnail}
 
-Finally, choose your installation options and then click the `Launch now`{.action} button. For detailed information on the various options, please refer to this guide: [Create an instance in your OVH customer account](https://docs.ovh.com/gb/en/public-cloud/create_an_instance_in_your_ovh_customer_account/){.external}.
+Finally, choose your installation options and then click the `Launch now`{.action} button. For detailed information on the various options, please refer to this guide: [Create an instance in your customer account](../../public-cloud/create_an_instance_in_your_ovh_customer_account/).
 
 ![Create an instance](images/pci-05.png){.thumbnail}
 
 
 ### Configure your network interfaces
 
-Next, configure the the network interfaces on your new [Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external} and [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/){.external} using this guide: [Configuring the vRack on your Dedicated Servers](https://docs.ovh.com/gb/en/dedicated/configuring-vrack-on-dedicated-servers/){.external}.
+Next, configure the the network interfaces on your new [Public Cloud instance](https://www.ovh.co.uk/public-cloud/) and [Dedicated Server](https://www.ovh.co.uk/dedicated_servers/) using this guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers/).
 
 
 ## Go further

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'FTP-käyttäjän salasanan vaihtaminen'
 slug: ftp-kayttajan-salasanan-vaihtaminen
 excerpt: 'Opi vaihtamaan OVH:n webhotellissasi luodun FTP-käyttäjän salasana'

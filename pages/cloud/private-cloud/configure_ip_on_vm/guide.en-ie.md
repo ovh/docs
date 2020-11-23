@@ -93,7 +93,7 @@ The process for configuring a private IP address is similar to that of a public 
 
 In your interface options, you can edit the following settings:
 
-- A VLAN interface (10 to 20 by default and linked to the vRack, you can create more by consulting [this guide](https://docs.ovh.com/fr/private-cloud/creation-vlan-vxlan/)).
+- A VLAN interface (10 to 20 by default and linked to the vRack, you can create more by consulting [this guide](../creation-vlan-vxlan/)).
 
 - A VxLAN interface (vxw-dvs, etc.).
 

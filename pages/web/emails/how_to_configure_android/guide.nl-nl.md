@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuratie van uw e-mailadres op Android via de Gmail-app
 slug: configuratie-android
 excerpt: Leer hoe u een MX Plan e-mailadres kunt configureren op Android, via de Gmail-app

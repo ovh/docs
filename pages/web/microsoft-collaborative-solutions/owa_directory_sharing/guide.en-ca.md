@@ -14,11 +14,6 @@ It is not always appropriate to delegate the usage of an entire email account. T
 
 **This guide explains how to share folders and define their access permissions using the Outlook Web App (OWA).**
 
-> [!primary]
->
-> Although this guide will refer to our Exchange services, you can follow the instructions for [Email Pro]({ovh-www}/emails/email-pro) accounts as well.
->
-
 
 ## Requirements
 

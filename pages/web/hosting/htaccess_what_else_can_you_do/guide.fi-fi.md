@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Webhotelli Muita .htacess-tiedostolla toteutettavia toimenpiteitä
 excerpt: Tässä ohjeessa kerrotaan muista toiminnoista, joita .htaccess-tiedostolla voi tehdä
 slug: webhotelli_muita_htacess-tiedostolla_toteutettavia_toimenpiteita

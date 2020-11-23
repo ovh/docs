@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Konfigurace souboru .ovhconfig'
 slug: konfigurace-souboru-ovhconfig
 excerpt: 'Seznamte se s postupem pro modifikaci konfiguračního souboru .ovhconfig'

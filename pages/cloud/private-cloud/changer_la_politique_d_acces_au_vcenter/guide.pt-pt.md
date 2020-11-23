@@ -5,7 +5,7 @@ excerpt: 'Saiba como alterar a estratégia de acesso para o vCenter'
 legacy_guide_number: '1442246'
 space_key: VS
 space_name: vSphere as a Service
-section: Funcionalidades da OVH
+section: Funcionalidades da OVHcloud
 ---
 
 **Última atualização: 30/07/2020**
@@ -23,7 +23,7 @@ Para melhorar a segurança da sua infraestrutura Hosted Private Cloud, pode limi
 
 ## Instruções
 
-Aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), vá à secção `Server`{.action} e selecione o seu serviço em `Private Cloud`{.action} no menu à esquerda.
+Aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), vá à secção `Hosted Private Cloud`{.action} e selecione o seu serviço em `Private Cloud`{.action} no menu à esquerda.
 
 Na página principal do serviço, clique no separador `Segurança`{.action} e em `Alterar a política de acesso ao vCenter`{.action}.
 

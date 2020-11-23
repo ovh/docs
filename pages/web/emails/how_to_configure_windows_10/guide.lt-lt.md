@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuring your email address in the Mail application for Windows 10'
 slug: el_pastas_konfiguravimas_windows_10_aplinkoje
 excerpt: 'Find out how to configure your MX Plan email address in the Mail app for Windows 10.'

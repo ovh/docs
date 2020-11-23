@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Een domeinnaam overdragen naar OVH'
 slug: overdracht-generiek-domein
 excerpt: 'De benodigde stappen voor overdracht van uw generieke domeinnaam naar OVH'

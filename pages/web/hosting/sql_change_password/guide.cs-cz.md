@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhosting: změna hesla databáze'
 slug: zmena-hesla-databaze
 excerpt: 'Zjistěte, jak změnit přístupové heslo k databázi vytvořené v rámci webhostingového řešení OVH'

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Použití VMware Update Manager
 excerpt: ''
 slug: pouziti_vmware_update_manager

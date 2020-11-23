@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Retrieving the backup of a Web Hosting plan’s database'
 excerpt: 'Find out how to retrieve a database backup from your OVH Web Hosting plan'
 slug: svetainiu_talpinimas_duomenu_baziu_eksportavimo_gidas

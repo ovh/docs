@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: FailOver IP -osoitteen konfigurointi Debianissa
 excerpt: FailOver IP -osoitteen konfigurointi Debianissa
 slug: failover_ip_-osoitteen_konfigurointi_debianissa

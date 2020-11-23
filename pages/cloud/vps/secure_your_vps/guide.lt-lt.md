@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Securing a VPS
 slug: tips-for-securing-a-vps
 section: Getting started

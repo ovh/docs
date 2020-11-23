@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotelli: Yleisimmät FTP-ongelmat'
 slug: webhotelli_yleisimmat_ftp-ongelmat
 excerpt: 'Webhotelli: Yleisimmät FTP-ongelmat'

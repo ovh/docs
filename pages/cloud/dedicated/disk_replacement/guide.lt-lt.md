@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Replacing a defective disk
 slug: disk-replacement
 excerpt: Find out how to identify a defective disk, and request a replacement

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Zabezpečte svoji doménu pomocí DNSSEC
 excerpt: ''
 slug: zabezpecte_svoji_domenu_pomoci_dnssec

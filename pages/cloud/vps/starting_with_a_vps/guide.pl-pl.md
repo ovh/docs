@@ -62,7 +62,7 @@ ssh nom_d_utilisateur@IPv4_de_votre_VPS
 Jesteś teraz zalogowany/-a jako użytkownik z uprawnieniami root (użytkownik sudo), możesz zacząć wpisywać polecenia i wykonywać zadania administracyjne. Przed rozpoczęciem tych operacji zalecamy zmianę hasła:
 
 ```sh
-$ sudo passwd
+~$ sudo passwd
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -71,8 +71,8 @@ passwd: password updated successfully
 Należy zaznaczyć, iż hasła nie są wyświetlane. Zmień następnie profil użytkownika na profil „root” i ustaw Twoje hasło dostępu dla administratora:
 
 ```sh
-$ sudo su -
-# passwd
+~$ sudo su -
+~# passwd
 New password:
 Retype new password:
 passwd: password updated successfully

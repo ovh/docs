@@ -20,8 +20,7 @@ Desde el área de cliente puede consultar, administrar y abonar sus facturas en 
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} como contacto de facturación del servicio (para más información sobre los distintos tipos de contactos, consulte la guía [Gestionar los contactos de los servicios](../customer/gestion-de-los-contactos/){.external}).
-
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} como contacto de facturación del servicio
 
 ## Procedimiento
 
@@ -127,4 +126,4 @@ Al igual que las facturas, puede exportar los justificantes de pago en formato C
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

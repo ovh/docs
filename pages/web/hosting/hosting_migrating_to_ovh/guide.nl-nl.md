@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Migratie van uw website en e-mails naar OVH
 slug: migreer-website-naar-ovh
 excerpt: Ontdek hoe u uw website en e-mails naar OVH kunt migreren zonder dienstonderbrekingen

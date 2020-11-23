@@ -24,7 +24,7 @@ Baza danych (DB, ang. database) służy do przechowywania tak zwanych elementów
 
 ### Krok 1: dostęp do sekcji zarządzania bazą danych w ramach hostingu WWW
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i wybierz pozycję `Web`{.action} na górnym pasku nawigacyjnym. Kliknij pozycję `Hosting`{.action} na pasku usług po lewej, a następnie wybierz odpowiedni pakiet hostingu WWW. Następnie przejdź do karty `Bazy danych`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i wybierz pozycję `Web Cloud`{.action} na górnym pasku nawigacyjnym. Kliknij pozycję `Hosting`{.action} na pasku usług po lewej, a następnie wybierz odpowiedni pakiet hostingu WWW. Następnie przejdź do karty `Bazy danych`{.action}.
 
 Tabela w tej sekcji zawiera wszystkie bazy danych utworzone w ramach Twojego pakietu hostingu WWW.
 

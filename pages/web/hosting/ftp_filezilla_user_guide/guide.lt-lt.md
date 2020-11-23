@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Svetainių talpinimas FileZilla naudojimas
 excerpt: FileZilla FTP kliento naudojimas duomenų persiuntimui į OVH svetainių talpinimo vietą
 slug: svetainiu_talpinimas_filezilla_naudojimas

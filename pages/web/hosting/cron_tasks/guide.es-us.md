@@ -1,205 +1,157 @@
 ---
-title: 'Web hosting: Tareas automatizadas (cron)'
-excerpt: 'Web hosting: Tareas automatizadas (cron)'
+title: Crear tareas automatizadas (CRON) en un alojamiento web
+excerpt: Cómo crear tareas CRON para automatizar las tareas programadas en un alojamiento web
 id: '1990'
 slug: web_hosting_tareas_automatizadas_cron
 legacy_guide_number: g1990
 section: Tareas automatizadas (Cron)
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
 
-## Crear una tarea automatizada
-Seleccione el alojamiento en la sección «Alojamientos» (1) situada en la columna de la izquierda, haga clic en «Más +» y seleccione la opción «Tareas planificadas - Cron» (2). Una vez dentro, haga clic en «Añadir una planificación» (3).
+**Última actualización: 22/9/2020**
 
-![](images/3261.png){.thumbnail}
-En esta primera etapa, debe indicar la ruta hacia su script y el tipo de lenguaje de programación.
+## Objetivo
 
-El resto de campos son opcionales. La opción de logs por email le ofrece la posibilidad de recibir los logs de ejecución de su tarea cron en una de las direcciones predefinidas o en la que usted indique.
+En su alojamiento web de OVHcloud, puede utilizar scripts para automatizar determinadas operaciones. La creación de una tarea programada ("tarea CRON") es la forma más sencilla de garantizar que sus scripts se ejecutan en momentos específicos sin que usted tenga que realizar ninguna otra acción. 
 
-Solo recibirá este mensaje de correo en caso de error. 
+**Esta guía explica cómo crear tareas CRON para automatizar las tareas programadas en un alojamiento web.**
 
-Por último, puede añadir una descripción a la tarea cron.
+> [!warning]
+>La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+>
+>Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía. 
+>
 
-![](images/3262.png){.thumbnail}
-En la segunda etapa, seleccione la periodicidad de la tarea cron.
+## Requisitos
 
-![](images/3264.png){.thumbnail}
-Existen dos opciones disponibles: el modo simple y el modo experto.
+- Tener contratado un [plan de hosting](https://www.ovh.com/world/es/hosting/).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
 
-![](images/3265.png){.thumbnail}
-Una vez finalizada la configuración de la tarea cron, se muestra un resumen. 
+## Procedimiento
 
-Si la información es correcta, haga clic en «Aceptar» para crear la tarea automatizada.
+Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}.
 
-![](images/3266.png){.thumbnail}
-Aparecerá un mensaje confirmando que la solicitud se ha enviado correctamente.
+Seleccione el alojamiento correspondiente, abra la pestaña `Plus+`{.action} y haga clic en `Tareas planificadas - Cron.`{.action}
 
-![](images/3267.png){.thumbnail}
+En esta sección, tendrá un resumen de sus tareas planificadas y sus parámetros.
 
+![cron control panel](images/cron-jobs-1.png){.thumbnail}
 
-## Editar una tarea automatizada
-Seleccione el alojamiento en la sección «Alojamientos» (1) situada en la columna de la izquierda, haga clic en «Más +» y seleccione la opción «Tareas planificadas - Cron» (2). Una vez dentro, haga clic en el icono con forma de lápiz «Editar» (3) correspondiente a la tarea automatizada que desee modificar.
+### Creación de una tarea automatizada
 
-![](images/3268.png){.thumbnail}
-Podrá modificar la ruta o el lenguaje de programación, activar los logs por email y añadir una descripción a su tarea cron.
+#### Etapa 1: Definición de la configuración general
 
-![](images/3269.png){.thumbnail}
+Para crear una tarea CRON, haga clic en el botón `Añadir una planificación`{.action} a la derecha. Puede personalizar la configuración de la tarea en la nueva ventana.
 
+![adding scheduling](images/cron-jobs-2.png){.thumbnail}
 
-## Eliminar una tarea automatizada
-Seleccione el alojamiento en la sección «Alojamientos» (1) situada en la columna de la izquierda, haga clic en «Más +» y seleccione la opción «Tareas planificadas - Cron» (2). Una vez dentro, haga clic en el icono «Eliminar» (3), con forma de papelera, correspondiente a la tarea automatizada que desee eliminar.
+|Opción|Descripción|   
+|---|---|   
+|Orden a ejecutar|Establezca la ruta al archivo que contiene el script. Ejemplo: www/jobs/cron.php|   
+|Idioma|Seleccione la versión PHP del script o haga clic en "Otro".|
+|Activación|Seleccione si la tarea se activará después de crearla o se activará más adelante.| 
+|Logs por e-mail|Si es necesario, seleccione un contacto (administrador o técnico) al que se enviará un informe en caso de error de ejecución. También puede proporcionar otra dirección de correo electrónico.| 
+|Descripción|Introduzca una descripción para consultar el progreso en la ejecución de sus tareas.| 
 
-![](images/3270.png){.thumbnail}
-Aparecerá un resumen de la tarea automatizada que desea eliminar.
+Haga clic en `Siguiente`{.action} para ir al paso 2.
 
-Haga clic en «Aceptar» para completar la operación.
+#### Etapa 2: Definición de frecuencia
 
-![](images/3271.png){.thumbnail}
+La interfaz ofrece dos modos para configurar la frecuencia de la tarea. Utilice el **Modo simple** para seleccionar opciones de planificación sencilla para principiantes. Si prefiere introducir directamente una frecuencia similar a un formato de tabla CRON (*crontab*), seleccione el **Modo experto**.
 
+|Modo simple|
+|---|
+|Utilice los menús desplegables para especificar la hora, los días de un mes, los días de la semana y los meses de la tarea.|
+|![cron frequency](images/cron-jobs-3.png){.thumbnail}|
 
-## Probar la ejecución de la tarea automatizada en un navegador de internet
-Puede probar su script directamente desde un navegador de internet para comprobar si genera un error. 
+|Modo experto| 
+|---|
+|Introduzca valores numéricos como en una *crontab*. Los asteriscos indican cada valor del período, lo que significa que la tarea se ejecutaría continuamente **una vez por hora todos los días** en este ejemplo.|
+|![cron frequency](images/cron-jobs-4.png){.thumbnail}|
 
-Por ejemplo, si su cron está en el directorio «www/cron.php» y su nombre de dominio es «test.com», deberá utilizar la URL «http://test.com/cron.php».
-Para realizar esta prueba en condiciones óptimas, es aconsejable que la versión de PHP de su alojamiento sea la misma que la que indicó al crear la tarea automatizada.
-Si aparece un error, deberá corregir el script. 
+Puede cambiar entre ambos modos durante la configuración para ver los cambios en consecuencia. Asimismo, tenga en cuenta las [limitaciones al planificar una tarea en un alojamiento web](./#limitaciones-de-las-tareas-planificadas-en-su-alojamiento-web_1).
 
-Si no se detecta ningún error, le aconsejamos que analice los logs de ejecución de sus tareas cron.
+![cron control panel](images/cron-jobs-5.gif){.thumbnail}
 
+#### Etapa 3: Fin de la instalación
 
-## Analizar los logs de ejecución de la tarea automatizada
-Seleccione el alojamiento en la sección «Alojamientos» situada en la columna de la izquierda, haga clic en «Más +» y seleccione la opción «Estadísticas y logs».
+El resumen le recuerda los parámetros configurados, incluyendo la notación *crontab* sobre la frecuencia de ejecución. si lo son, haga clic en `Aceptar`{.action}.
 
-![](images/4012.png){.thumbnail}
-Haga clic en el enlace de acceso a los logs.
+![cron de confirmación](images/cron-jobs-6.png){.thumbnail}
 
-![](images/4013.png){.thumbnail}
-Si la tarea automatizada se ha realizado durante ese mismo día, podrá acceder a los logs de ejecución en el OVH Speed Log (1). 
+La tarea estará lista en unos minutos. Podrá modificar todos los parámetros o eliminar la tarea haciendo clic en `...`{.action} en la tabla de presentación del panel de configuración de OVHcloud.
 
-Si la tarea se ha realizado más de 24 horas antes, seleccione el archivo de los logs del mes que quiera consultar (en la imagen, del mes de junio).
+### Limitaciones de las tareas planificadas en su alojamiento web
 
-![](images/3274.png){.thumbnail}
-Ejemplo de logs de ejecución de una tarea automatizada:
+|Funcionalidad|Descripción|
+|---|---|
+|Planificación horaria|Se dará cuenta de que el campo "Minutos" está desactivado en la interfaz (definido por "? " en la vista *crontab*). Una tarea sólo puede ejecutarse una vez por hora, es la frecuencia de repetición más baja que se puede especificar.|
+|Duración|La duración de ejecución de una tarea es de 60 minutos. Si un script supera la duración de ejecución, el sistema lo detendrá automáticamente.|
+|Variables|Sólo puede definir variables en un script. Añadirlos a la URL que llama al script no funcionará (Ejemplo: www/jobs/cron.php?variable=value).|
+|Límite de datos|Una tarea solo puede generar 5 MB de datos (*stdin/stderr*). Por ejemplo, si un script escribe datos en un archivo .txt, la ejecución se detiene automáticamente cuando el archivo alcanza los 5 MB.|
+|Guiones que producen errores|Si un script no funciona, se desactivará automáticamente después de 10 intentos fallidos de ejecución. Simplemente vuelva a activarlo en el Panel de control. (haga clic en `...`{.action} y `Editar`{.action})|
+|Informes de ejecución|Los informes sólo se enviarán a la dirección de correo electrónico seleccionada una vez al día (durante las horas de la noche).|
 
+### Reparación
 
-```
-[2015-06-04 10:39:03] ## OVH ## START - 2015-06-04 10:39:03.700912 executing: /usr/local/php5.6/bin/php /homez.600/loginftp/www/cron.php
-[2015-06-04 10:39:03] Could not open input file: /homez.600/loginftp/www/cron.php
-[2015-06-04 10:39:03]
-[2015-06-04 10:39:03] ## OVH ## END - 2015-06-04 10:39:03.762685 exitcode: 1
-```
+#### Prueba de su script con un navegador web
 
+Una prueba sencilla de si el script producirá un error es ejecutarlo en un navegador web. Por ejemplo, si la ruta de acceso a su script es "www/cron.php" y su dominio es "mypersonaldomain.ovh", debe utilizar la URL "http://<i></i>mypersonaldomain.ovh/cron.php". Si no aparece ningún error, pero el script no funciona como estaba previsto, siga las indicaciones de abajo.
 
-En este caso, la siguiente línea indica que la tarea automatizada no se ha ejecutado correctamente porque la ruta de acceso al script no es correcta o no existe: 
+#### Comprobación del uso de rutas absolutas
 
+Utilice siempre rutas de acceso absolutas a los archivos de sus scripts. La constante "DIR", por ejemplo, puede ayudar a obtener la ruta actual en los scripts PHP ([documentación PHP](https://www.php.net/manual/en/language.constants.predefined.php){.external}).
+ 
+#### Verificación de los logs de ejecución
 
-```
-Could not open input file: /homez.600/loginftp/www/cron.php
-```
+Podrá acceder a los logs de su alojamiento web desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) y ver la categoría de log denominada "CRON".
 
+Para más información, consulte nuestra guía ["Consultar las estadísticas y los logs de un sitio web alojado en un plan compartido"](../web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/).
 
+##### **Ejemplo de logs**
 
-
-## Límites
-
-- En los alojamientos compartidos no es posible configurar los minutos en los que se debe ejecutar la tarea automatizada. Además, la tarea solo puede realizarse una vez por hora. 
-
-- El límite del tiempo de ejecución son 60 segundos. 
-
-- El límite de generación de datos es de 5 MB (stdin/stderr).
-
-
-
-
-## Tareas automatizadas con variables
-No es posible establecer rutas de tareas automatizadas introduciendo variables.
-
-Ejemplo:
-
-```
-/www/cron.php?variable=test
-```
-
-
-En cambio, sí es posible definir estas variables en el script, por ejemplo.
-
-
-## Rutas absolutas
-Para que la tarea cron funcione, deberá utilizar rutas absolutas en el script, y no rutas relativas.
-Para obtener la dirección de la ruta actual, puede utilizar la constante «_DIR_»: 
-[Documentación de PHP](http://php.net/manual/es/language.constants.predefined.php)
-
-
-## Informe de ejecución
-Recibirá por correo electrónico un solo informe de ejecución de su tarea cron al día.
-
-
-## Llamada a otro script
-Si el script utilizado por su tarea cron llama a otros scripts, deberá utilizar una ruta absoluta y no relativa para que funcione. La ruta absoluta del alojamiento comienza por: 
-
+- Ejemplo de finalización de script correctamente ejecutado 
 
 ```
-/home/loginFTP/
+[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
+[2020-08-11 00:36:01] 
+[2020-08-11 00:36:01] ## OVH ## END - 2020-08-10 22:39:44.086166 exitcode: 0
 ```
 
-
-
-
-## En caso de error de ejecución
-Si su tarea planificada (cron) está en error, se desactivará tras 10 intentos de ejecución.
-
-
-## Ejemplos de logs
-Ejecución correcta del script: 
+- Ejemplo de fallo al superar el tiempo de ejecución
 
 ```
-# OVH ## START - 2014-12-23 15:34:12.680711 executing: /homez.600/loginftp/test/run.sh 
-I am the client and I'm printing stuff with this nice 'echo' feature.
+[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
 
-# OVH ## END - 2014-12-23 15:34:13.056472 exitcode: 0
+[2020-08-11 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
+[2020-08-11 01:36:01] ## OVH ## END - 2020-08-11 01:36:01.086166 exitcode: 0
+```
+
+- Ejemplo de error: no se puede encontrar el archivo de guión en la ruta de acceso especificada
+
+```
+[2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
+
+[2020-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
+[2020-08-11 00:36:01] ## OVH ## END - 2020-08-11 00:36:01.086166 exitcode: 255
+```
+
+- Ejemplo de error debido a un error de autorización (chmod) o a una configuración incorrecta del archivo .ovhconfig
+
+```
+[2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
+[2020-08-11 18:07:10]
+[2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
 ```
 
 
-Ejecución en error del script porque no se ha encontrado el archivo: 
+## Más información
 
-```
-# OVH ## START - 2014-12-23 15:36:16.206693 executing: /homez.600/loginftp/test/idontexist.sh
-# OVH ## ERROR command '/homez.600/loginftp/test/idontexist.sh' not found
+[Configurar el archivo .ovhconfig de un alojamiento web](../configurar-archivo-ovhconfig/)
 
-# OVH ## END - 2014-12-23 15:36:16.546574 exitcode: 255
-```
+[Utilizar el acceso SSH de un alojamiento web](../web_hosting_ssh_en_alojamiento_compartido/)
 
-
-Ejecución en error del script por timeout:
-
-```
-# OVH ## START - 2014-12-23 16:05:52.233058 executing: /homez.600/loginftp/test/sleep.sh 
-mardi 23 décembre 2014, 16:05:52 (UTC+0100)
-Now sleeping 9000 sec
-
-# OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
-# OVH ## END - 2014-12-23 17:05:54.690413 exitcode: 0
-```
-
-
-Ejecución en error del script por exceso de generación de datos: 
-
-```
-# OVH ## START - 2014-12-23 15:43:27.606083 executing: /homez.600/loginftp/test/echoer.sh 
-[...a lot of logs here...]
-# OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: cron output (9288634 bytes) exceeds maximum permitted (5242880 bytes)
-# OVH ## END - 2014-12-23 15:43:50.999934 exitcode: 255
-```
-
-
-Ejecución en error del script debido a un problema en los permisos (chmod) o una configuración incorrecta en el archivo .ovhconfig: 
-
-
-```
-[2015-01-08 18:07:10] 
-[2015-01-08 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason. Please contact customer support for more information.
-[2015-01-08 18:07:10] ## OVH ## END - 2015-01-08 18:07:10.969840 exitcode: 255
-```
-
-
-
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

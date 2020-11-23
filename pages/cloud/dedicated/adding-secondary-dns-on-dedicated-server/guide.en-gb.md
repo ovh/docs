@@ -2,7 +2,7 @@
 title: 'Adding a domain to secondary DNS on a Dedicated Server'
 slug: secondary-dns
 excerpt: 'This guide will show you how to add a domain to secondary DNS of your Dedicated Server'
-section: 'Network Management'
+section: 'Advanced use'
 ---
 
 **Last updated 13th June 2018**
@@ -24,7 +24,7 @@ If you want to use your [Dedicated Server](https://www.ovh.co.uk/dedicated_serve
 
 ### Retrieve the secret value (TXT record)
 
-Click the `Dedicated`{.action} menu, then click `Dedicated Servers`{.action} to expand the list of servers in your account:
+Click the `Bare Metal Cloud`{.action} menu, then click `Dedicated Servers`{.action} to expand the list of servers in your account:
 
 ![Secondary DNS](images/dns2-01.png){.thumbnail}
 
@@ -53,7 +53,7 @@ Prior to clicking the Next button, make sure your newly added record is publicly
 >
 > Note: This process is only for domains hosted in OVH DNS servers. If you use external DNS servers the process is the same. However, you will have to adapt it since the Control Panel will be diffrent.
 >
-Log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Web`{.action} menu. Then click `Domains`{.action} to expand the list of domains:
+Log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Web Cloud`{.action} menu. Then click `Domains`{.action} to expand the list of domains:
 
 ![Domain verification](images/domain-verification-01.png){.thumbnail}
 
@@ -160,7 +160,7 @@ $ sudo systemctl restart named
 > You can now utilize OVH Secondary DNS.
 ### Add Your Domain to OVH Secondary DNS
 
-Click the `Dedicated`{.action} menu, and then click `Dedicated Servers`{.action} to expand the list of servers in your account:
+Click the `Bare Metal Cloud`{.action} menu, and then click `Dedicated Servers`{.action} to expand the list of servers in your account:
 
 ![Secondary DNS](images/dns2-01.png){.thumbnail}
 

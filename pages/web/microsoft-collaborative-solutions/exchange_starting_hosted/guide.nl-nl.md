@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Aan de slag met Hosted Exchange
 slug: eerste-configuratie-exchange
 excerpt: Hosted Exchange - de eerste stappen

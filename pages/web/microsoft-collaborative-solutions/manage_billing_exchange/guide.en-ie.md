@@ -25,7 +25,7 @@ The Hosted Exchange and Private Exchange services offer flexible management for 
 
 #### Ordering additional accounts
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned.
 
 Go to the `Email accounts`{.action} tab, then click on the `Actions`{.action} button in the top left-hand corner. Next, click `Order accounts`{.action}.
 
@@ -34,7 +34,7 @@ Go to the `Email accounts`{.action} tab, then click on the `Actions`{.action} bu
 
 #### Changing the renewal frequency for your accounts
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned.
 
 In the window for managing your Exchange platform, click on the `Actions`{.action} button in the top right-hand corner, then click `Renewal configuration`{.action}. 
 
@@ -62,7 +62,7 @@ To delete an account on your Hosted Exchange platform, you will need to cancel i
 
 Once you have cancelled it, the account will be suspended on its expiry date. If you would like to delete the email address hosted by the account before its expiry date, you can reset it.
 
-To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned.
+To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned.
 
 Go to the `Email accounts`{.action} tab for your platform, then click `...`{.action} next to the account concerned. Finally, click `Reset`{.action}. Once you have reset the account, it will remain empty until its expiry date.
 
@@ -74,7 +74,7 @@ Go to the `Email accounts`{.action} tab for your platform, then click `...`{.act
 
 #### Ordering additional accounts
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned.
 
 Go to the `Email accounts`{.action} tab, then click on the `Actions`{.action} button in the top left-hand corner. Next, click `Add an account`{.action}. The account will be billed for the current month.
 
@@ -83,7 +83,7 @@ Go to the `Email accounts`{.action} tab, then click on the `Actions`{.action} bu
 
 #### Deleting accounts
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned.
 
 In the `Email accounts`{.action} tab, click `...`{.action} to the right of the account concerned, then click `Delete`{.action}. The account will be immediately removed from the platform, and you will not need to cancel it.
 

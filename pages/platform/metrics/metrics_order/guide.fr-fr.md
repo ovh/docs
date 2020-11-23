@@ -37,7 +37,7 @@ A plan mostly depends on the number of Time Series that you need, for example, w
 
 #### Step 2. Go to Metrics's manager
 
-Once the chosen plan has been purchased, go to the `Server`{.action} section of your control panel. Select the `Metrics`{.action} menu from the left side of the control panel.
+Once the chosen plan has been purchased, go to the `Bare Metal Cloud`{.action} section of your control panel. Select the `Metrics`{.action} menu from the left side of the control panel.
 
 ![menu](images/metrics_manager.png){.thumbnail}
 

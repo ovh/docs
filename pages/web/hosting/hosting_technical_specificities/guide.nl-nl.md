@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Hosting: technische kenmerken van de webhosting'
 excerpt: 'Hosting: technische kenmerken met betrekking tot webhosting'
 slug: hosting_technische_kenmerken_van_de_webhosting

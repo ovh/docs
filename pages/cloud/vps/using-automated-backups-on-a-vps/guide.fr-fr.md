@@ -26,7 +26,7 @@ Cette option vous offre un moyen pratique de disposer fréquemment de sauvegarde
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Server` et sélectionnez votre serveur dans colonne de gauche sous la partie `VPS`{.action} .
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Bare Metal Cloud` et sélectionnez votre serveur dans colonne de gauche sous la partie `VPS`{.action} .
 
 ### Étape 1 : souscrire l'option de sauvegarde automatique
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Informacija apie Dedicated Cloud apmokėjimą
 excerpt: Išsami informacija apie Dedicated Cloud apmokėjimą.
 slug: informacija_apie_dedicated_cloud_apmokejima

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Verkkotunnuksen siirto OVH:lle'
 slug: yleisen-verkkotunnuksen-siirto
 excerpt: 'Opi tekemään verkkotunnuksen siirto OVH:lle.'

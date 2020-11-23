@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Koneen tarkastaminen, jos hitautta'
 excerpt: ''
 slug: koneen_tarkastaminen_jos_hitautta

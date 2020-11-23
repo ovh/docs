@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Het gebruik van de VMware Update Manager
 excerpt: ''
 slug: het_gebruik_van_de_vmware_update_manager

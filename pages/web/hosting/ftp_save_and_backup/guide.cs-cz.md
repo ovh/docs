@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Obnovení FTP zálohy'
 slug: obnoveni-zalohy-ftp-filezilla-zakaznicky-prostor
 excerpt: 'Zjistěte, jak obnovit zálohu souborů na Vašem FTP úložišti'

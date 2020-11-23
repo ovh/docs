@@ -1,8 +1,8 @@
 ---
-title: 'Intégration d''une clef 3G-4G'
+title: "Intégration d'une clef 3G-4G"
 slug: integration-dune-clef-3g-4g
 keywords: 'Clef, 3G, 4G, OverTheBox'
-description: 'Intégration d''une clef 3G-4G'
+description: "Intégration d'une clef 3G-4G"
 section: 'Fonctionnalités principales'
 ---
 

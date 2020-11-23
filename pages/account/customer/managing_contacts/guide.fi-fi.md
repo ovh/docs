@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Palveluiden kontaktien hallinta
 slug: yhteystietojen_hallinta
 excerpt: Opi hallinnoimaan palveluidesi kontakteja

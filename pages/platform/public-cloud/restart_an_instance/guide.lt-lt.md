@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Virtualios mašinos (Instance) perkrovimas
 excerpt: Kaip perkrauti virtualią mašiną Horizon sąsajoje
 slug: virtualios_masinos_instance_perkrovimas

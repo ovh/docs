@@ -170,7 +170,7 @@ Se tiver copiado o resultado na sua totalidade, o identificador após a chave j�
 
 > [!primary]
 >
-> Quaisquer chaves guardadas na seção “Dedicadas” serão igualmente utilizáveis para os seus serviços VPS. No que respeita às chaves SSH para os serviços Public Cloud, consulte [este guia](https://docs.ovh.com/pt/public-cloud/criacao-de-chaves-ssh/).
+> Quaisquer chaves guardadas na seção “Dedicadas” serão igualmente utilizáveis para os seus serviços VPS. No que respeita às chaves SSH para os serviços Public Cloud, consulte [este guia](../../public-cloud/public-cloud-primeiros-passos).
 >
 
 

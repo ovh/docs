@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellit ja sähköpostit: Outlook 2011 -konfigurointiohje OS X:lle'
 excerpt: Outlook 2011 & Mac OS X
 slug: webhotellit_ja_sahkopostit_outlook_2011_-konfigurointiohje_os_xlle

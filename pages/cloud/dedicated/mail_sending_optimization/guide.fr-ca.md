@@ -40,7 +40,7 @@ Dans le cas d'une infrastructure dédiée (serveur dédié, VPS, instance Public
 
 Pour plus d'informations sur la syntaxe du champ SPF, référez-vous au lien suivant : <http://www.openspf.org/SPF_Record_Syntax>.
 
-Vous pouvez bien entendu aller plus loin, en configurant le champ SPF d'un domaine bien spécifique ou en spécifiant une IPv6. Vous trouverez des explications dans notre guide spécifique sur [le champ SPF](../domains/le-champ-spf/).
+Vous pouvez bien entendu aller plus loin, en configurant le champ SPF d'un domaine bien spécifique ou en spécifiant une IPv6.
 
 ### Configurer le champ DKIM
 

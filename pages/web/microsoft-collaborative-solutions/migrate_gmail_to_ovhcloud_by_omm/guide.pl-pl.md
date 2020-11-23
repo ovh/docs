@@ -78,7 +78,7 @@ Pojawi się okno monitorowania migracji (poniżej). Możesz zostawić je otwarte
 
 ![omm](images/OMM-gmail-step01-05.png){.thumbnail}
 
-W takim przypadku przejdź do skrzynki odbiorczej Twojego konta Gmail i sprawdź, czy przyszła wiadomość zatytułowana **„Krytyczny alert bezpieczeństwa”**. Jest to środek bezpieczeństwa stosowany przez Gmail. Należy wówczas postępować zgodnie z instrukcjami z przewodnika: [Jak zezwolić na mniej bezpieczne połączenia w Gmailu](https://docs.ovh.com/fr/microsoft-collaborative-solutions/migracja-konta-gmail-przez-ovh-mail-migrator/bezpieczenstwo-gmail){.external}
+W takim przypadku przejdź do skrzynki odbiorczej Twojego konta Gmail i sprawdź, czy przyszła wiadomość zatytułowana **„Krytyczny alert bezpieczeństwa”**. Jest to środek bezpieczeństwa stosowany przez Gmail. Należy wówczas postępować zgodnie z instrukcjami z przewodnika: [Jak zezwolić na mniej bezpieczne połączenia w Gmailu](https://docs.ovh.com/pl/microsoft-collaborative-solutions/migracja-konta-gmail-przez-ovh-mail-migrator/bezpieczenstwo-gmail){.external}
 
 Gdy **zezwolisz na „mniej bezpieczne połączenia”** na koncie Gmail, możesz ponownie uruchomić migrację.
 

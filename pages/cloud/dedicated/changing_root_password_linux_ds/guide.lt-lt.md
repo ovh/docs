@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Changing the root password on a Linux dedicated server
 slug: root-password
 excerpt: This guide will show you how to change the root password on a Linux dedicated server.

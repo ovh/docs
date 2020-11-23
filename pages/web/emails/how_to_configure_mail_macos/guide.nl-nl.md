@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuratie van uw e-mailadres op Mail van macOS'
 slug: configuratie-mail-macos
 excerpt: 'Leer hoe u een MX Plan-adres kunt configureren in Mail van macOS El Capitan, Sierra, en High Sierra'

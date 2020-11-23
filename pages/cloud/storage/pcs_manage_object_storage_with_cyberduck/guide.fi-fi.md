@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Object Storagen hallinta CyberDuckin avulla'
 excerpt: 'Object Storagen hallinta CyberDuckin avulla'
 slug: object_storagen_hallinta_cyberduckin_avulla

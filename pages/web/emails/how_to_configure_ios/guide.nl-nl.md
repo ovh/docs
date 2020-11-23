@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuratie van uw e-mailadres op een iPhone of iPad
 slug: mail-configuratie-ios-iphone-ipad
 excerpt: Leer hoe u een MX Plan e-mailadres op een iPhone of iPad kunt configureren

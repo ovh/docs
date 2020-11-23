@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Step 4 - Assigning virtual desktop access to users
 slug: assigning-desktop-access
 excerpt: Find out how to add users, and provide them with access to your virtual desktops

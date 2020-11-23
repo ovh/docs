@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Load balancing methode
 slug: lb-balancing
 excerpt: Ontdek de verschillende methoden voor load balancing die worden gebruikt door de OVH Load Balancer

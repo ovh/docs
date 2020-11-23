@@ -2,7 +2,7 @@
 title: vScope
 excerpt: 'Dowiedz się, jak korzystać z vScope'
 slug: korzystanie_z_vscope
-section: 'Usługi i opcje OVH'
+section: 'Usługi i opcje OVHcloud'
 legacy_guide_number: g718
 ---
 

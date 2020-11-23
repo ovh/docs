@@ -24,7 +24,7 @@ Für einen optimalen Schutz Ihres Systems ist es wichtig, Ihre Cisco Adaptive Se
 
 Für die Aktualisierung sind mehrere Neustarts notwendig. Wir empfehlen Ihnen deshalb, die ASA zu deaktivieren, damit der Server während der Aktualisierung verfügbar bleibt.
 
-Gehen Sie dazu in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} in den Bereich `Dedicated`{.action}. Wählen Sie dann Ihren Dedicated Server aus und gehen Sie auf `Cisco ASA Firewall`{.action}. Klicken Sie anschließend rechts auf `Cisco ASA Firewall deaktivieren`{.action}.
+Gehen Sie dazu in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} in den Bereich `Bare Metal Cloud`{.action}. Wählen Sie dann Ihren Dedicated Server aus und gehen Sie auf `Cisco ASA Firewall`{.action}. Klicken Sie anschließend rechts auf `Cisco ASA Firewall deaktivieren`{.action}.
 
 ![ASA deaktivieren](images/customer_panel_asa_disable.png){.thumbnail}
 
@@ -112,7 +112,7 @@ Der Neustart wird einige Minuten dauern, da die Konfiguration neu geladen wird.
 
 ### ASA über das Kundencenter erneut aktivieren
 
-Loggen Sie sich wie im ersten Schritt in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und gehen Sie in den Bereich `Dedicated`{.action}. Wählen Sie dann Ihren Dedicated Server aus und gehen Sie auf `Cisco ASA Firewall`{.action}. Klicken Sie anschließend rechts auf `Cisco ASA Firewall aktivieren`{.action}.
+Loggen Sie sich wie im ersten Schritt in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und gehen Sie in den Bereich `Bare Metal Cloud`{.action}. Wählen Sie dann Ihren Dedicated Server aus und gehen Sie auf `Cisco ASA Firewall`{.action}. Klicken Sie anschließend rechts auf `Cisco ASA Firewall aktivieren`{.action}.
 
 ![ASA aktivieren](images/customer_panel_asa_enable.png){.thumbnail}
 
@@ -124,7 +124,7 @@ Loggen Sie sich wie im ersten Schritt in Ihr [OVH Kundencenter](https://www.ovh.
 
 ASA muss nun erneut wie im ersten Schritt deaktiviert werden.
 
-Gehen Sie dazu in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} in den Bereich `Dedicated`{.action}. Wählen Sie dann Ihren Dedicated Server aus und gehen Sie auf `Cisco ASA Firewall`{.action}. Klicken Sie anschließend rechts auf `Cisco ASA Firewall deaktivieren`{.action}.
+Gehen Sie dazu in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} in den Bereich `Bare Metal Cloud`{.action}. Wählen Sie dann Ihren Dedicated Server aus und gehen Sie auf `Cisco ASA Firewall`{.action}. Klicken Sie anschließend rechts auf `Cisco ASA Firewall deaktivieren`{.action}.
 
 ![ASA deaktivieren](images/customer_panel_asa_disable.png){.thumbnail}
 
@@ -421,7 +421,7 @@ Cryptochecksum: 4b86b1e4 2e731d6b 9d1fc491 a5eae0f3
 
 ### ASA über das Kundencenter erneut aktivieren
 
-Loggen Sie sich wie im ersten Schritt in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und gehen Sie auf den Bereich `Dedicated`{.action}. Wählen Sie dann Ihren Dedicated Server aus und gehen Sie auf `Cisco ASA Firewall`{.action}. Klicken Sie anschließend rechts auf `Cisco ASA Firewall aktivieren`{.action}.
+Loggen Sie sich wie im ersten Schritt in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und gehen Sie auf den Bereich `Bare Metal Cloud`{.action}. Wählen Sie dann Ihren Dedicated Server aus und gehen Sie auf `Cisco ASA Firewall`{.action}. Klicken Sie anschließend rechts auf `Cisco ASA Firewall aktivieren`{.action}.
 
 ![ASA aktivieren](images/customer_panel_asa_enable.png){.thumbnail}
 

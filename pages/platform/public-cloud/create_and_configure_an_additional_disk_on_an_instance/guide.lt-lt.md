@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Create and configure an additional disk on an instance'
 excerpt: 'This guide explains how to create an additional disk and then configure it on one of your instances.'
 slug: papildomo_disko_kurimas_ir_konfiguravimas_virtualioje_masinoje

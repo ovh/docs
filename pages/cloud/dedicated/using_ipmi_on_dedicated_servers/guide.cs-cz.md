@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Použití konzole IPMI pro dedikované servery'
 slug: pouziti-ipmi-dedikovane-servery
 excerpt: 'Díky IPMI se můžete připojit ke svému serveru bez použití externího softwaru'

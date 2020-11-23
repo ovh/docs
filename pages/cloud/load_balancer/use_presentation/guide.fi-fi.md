@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: OVH:n Kuormantasaajan esittely
 slug: kuormantasaaja-esittely
 excerpt: Tutustu OVH:n uuteen Kuormantasaajaan

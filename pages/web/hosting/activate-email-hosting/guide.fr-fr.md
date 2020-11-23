@@ -1,7 +1,7 @@
 ---
 title: 'Activer les adresses e-mails incluses dans votre hébergement web'
 slug: activer-email-hebergement-web
-excerpt: 'Découvrez comment activer les adresses e-mails incluses avec votre offre d''hébergement web'
+excerpt: "Découvrez comment activer les adresses e-mails incluses avec votre offre d'hébergement web"
 section: 'Premiers pas'
 order: 3
 ---
@@ -34,6 +34,9 @@ La fenêtre d'activation s'affiche. Choisissez le nom de domaine auquel vous sou
 
 ![email-activation](images/mail-hosting02.png){.thumbnail}
 
+> [!primary]
+> Si vous souhaitez bénéficiez davantage de comptes e-mails inclus, nous invitons à commander une [offre d'hébergement web](https://www.ovh.com/fr/hebergement-web/){.external} supérieure depuis notre page commerciale.
+
 ### Conservation de vos adresses e-mail avant expiration de l'hébergement web
 
 Lorsque votre hébergement arrive à expiration ou qu'il doit être supprimé, il est possible de conserver vos adresses e-mail.
@@ -45,6 +48,7 @@ Dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de
 ![email-activation](images/mail-hosting03.png){.thumbnail}
 
 Une offre MX adaptée vous sera proposée à l'achat. Une fois la commande réglée, vos e-mails continueront à fonctionner après suspension de l'hébergement web.
+
  
 ### Suppression de l'offre e-mail liée à votre hébergement web
 

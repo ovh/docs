@@ -1,7 +1,7 @@
 ---
 title: Displaying boot log in the KVM
 slug: displaying-boot-log-in-the-kvm
-section: Diagnostic and rescue mode
+section: Diagnostics and rescue mode
 ---
 
 **Last updated 2018/01/26**

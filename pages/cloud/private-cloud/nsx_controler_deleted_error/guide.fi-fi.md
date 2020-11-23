@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Opi ymmärtämään, mitä virheilmoitus “Controlled VM deleted” tarkoittaa'
 slug: virheilmoitus-controller-nsx
 excerpt: 'Opi ymmärtämään, mitä virheilmoitus “Controlled VM deleted” tarkoittaa'

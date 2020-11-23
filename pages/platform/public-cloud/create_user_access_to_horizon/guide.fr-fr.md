@@ -1,5 +1,5 @@
 ---
-title: 'Accéder à l''interface Horizon'
+title: "Accéder à l'interface Horizon"
 slug: creer-un-acces-a-horizon
 legacy_guide_number: 1773
 excerpt: 'Découvrez comment accéder à l’interface Horizon'
