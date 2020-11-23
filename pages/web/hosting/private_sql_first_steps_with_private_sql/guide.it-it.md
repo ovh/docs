@@ -1,4 +1,4 @@
-﻿---
+---
 title: Iniziare a utilizzare il servizio SQL Privato
 slug: iniziare-a-utilizzare-sql-privato
 excerpt: Come eseguire le prime operazioni sul tuo SQL Privato
@@ -20,6 +20,16 @@ Il servizio SQL Privato consente di utilizzare un'istanza SQL che funziona paral
 - Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Procedura
+
+### Attiva il tuo server SQL Privato incluso con la tua offerta di hosting Web
+
+Se la tua offerta di hosting include l'opzione SQL Privato, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Dalla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} nella colonna di sinistra.
+
+Nella scheda `Informazioni generali`{.action}, riquadro `Configurazione`, clicca sul pulsante `...`{.action} a destra del **Database privato**. Clicca su `Attiva`{.action} per avviare il processo di attivazione.
+
+![Informazioni generali](images/privatesql00-SQLactivation.png){.thumbnail}
+
+Per completare l'operazione segui le istruzioni riportate qui di seguito per determinare il tipo e la versione del tuo server SQL privato. e sarà accessibile dalla colonna di sinistra nel `Database`{.action}.
 
 ### Visualizza le informazioni generali dell'istanza
 
