@@ -7,7 +7,7 @@ order: 6
 hidden: true
 ---
 
-**Dernière mise à jour le 18/11/2020**
+**Dernière mise à jour le 20/11/2020**
 
 ## Objectif
 
@@ -27,7 +27,7 @@ La migration d'un service Hosted Private Cloud comprend deux aspects :
 
 Nous aborderons dans ce guide les notions de **Hosted Private Cloud d'origine** et de **Hosted Private Cloud de destination**.
 
-### Contexte Hosted Private Cloud :
+### Contexte Hosted Private Cloud
 
 #### Sécurité
 
@@ -76,6 +76,14 @@ Vous pouvez, dans le cadre d'une migration, lier vos services Hosted Private Clo
 Si les adresses IP publiques attachées au Hosted Private Cloud d'origine sont nécessaires sur le Hosted Private Cloud de destination, il sera nécessaire d'en effectuer le transfert.
 
 Consultez notre guide pour [migrer des blocs IP entre deux services Hosted Private Cloud](../ajout-de-bloc-ip/#migrer-un-bloc-ip-entre-deux-hosted-private-cloud).
+
+##### **Portgroups**
+
+Vérifiez les paramètres des Portgroups, notamment les paramètres liés à la sécurité, aux VLAN, Teaming et Failover. S'ils ont été modifiés sur l'environnement d'origine, la même configuration devra être appliquée sur le Hosted Private Cloud de destination.
+
+Pour plus d'informations, consultez la documentation de VMware :
+<br>- [Paramètres généraux des portgroups](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html) 
+<br>- [Teaming & Failover](https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.hostclient.doc/GUID-BB8EC262-5F85-4F42-AFC5-5FED456E2C11.html)
 
 ### Contexte VMware
 

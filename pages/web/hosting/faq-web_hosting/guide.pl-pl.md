@@ -69,6 +69,12 @@ Sama zmiana jego nazwy może być dobrym rozwiązaniem, gdyż pozwoli na ponown�
 
 **Inna istotna informacja**\: aby pliki strony zostały uwzględnione i wyświetlane, powinny zostać umieszczone w katalogu „WWW”.
 
+### Jak zmienić ofertę hostingu?
+
+Jeśli chcesz zmienić aktualną ofertę na wyższą, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, do sekcji `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie.
+
+W zakładce `Informacje ogólne` w sekcji `Abonament` kliknij przycisk `...`{.action} przed "Ofertą", a następnie kliknij przycisk `Zmień ofertę`{.action}. Postępuj zgodnie z poniższymi instrukcjami, aby sfinalizować zamówienie. Do nowej oferty dodana jest proporcjonalna część pozostałego czasu trwania Twojej aktualnej oferty.
+
 ## Sprawdź również
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
