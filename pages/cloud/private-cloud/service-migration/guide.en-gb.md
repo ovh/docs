@@ -4,10 +4,9 @@ excerpt: Find out how to manage all aspects of migrating a Hosted Private Cloud 
 slug: service-migration
 section: Getting started
 order: 6
-hidden: true
 ---
 
-**Last updated 20th November 2020**
+**Last updated 23rd November 2020**
 
 ## Objective
 
