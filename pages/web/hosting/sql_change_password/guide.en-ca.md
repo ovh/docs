@@ -6,7 +6,7 @@ section: Databases
 order: 2
 ---
 
-**Last updated 5th May 2020**
+**Last updated 24th November 2020**
 
 ## Objective
 
@@ -16,8 +16,8 @@ A *database* (“DB”) is used to store what are known as dynamic elements, suc
 
 ## Requirements
 
-- You must have an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/).
-- You must have the correct permissions to manage the Web Hosting plan in question from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- an [OVHcloud Web Hosting plan](https://www.ovh.com/ca/en/web-hosting/)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) with the necessary permissions to manage the Web Hosting plan
 
 > [!warning]
 >
@@ -41,7 +41,7 @@ Today, virtually all CMSs (WordPress, Joomla!, etc.) use a database for storing 
 
 ### Step 2: Access the Web Hosting database management area
 
-First of all, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, go to the `Databases`{.action} tab.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `WebCloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, navigate to the `Databases`{.action} tab.
 
 The table shown contains all the databases created as part of your Web Hosting plan.
 
@@ -59,17 +59,17 @@ Enter your new password in the window that pops up, enter it again, and click `C
 
 > [!primary]
 >
-> For security reasons, please follow the conditions required when you choose a new password. We also recommend:
+> For security reasons, please follow the conditions required when you choose your password. We also recommend:
 >
 > - not using the same password twice
 >
-> - setting a password that does not contain any personal information (don’t include your surname, first name, or date of birth, for example)
+> - setting a password that does not contain any personal information (e.g. your surname, first name, date of birth, etc.)
 >
-> - regularly renewing your password 
+> - renewing your password regularly
 >
 > - not keeping any written records of your password, and not sending passwords to other people using your email address
 >
-> - not saving your passwords in your browser, even if your browser offers to do so
+> - not saving your passwords in your browser, even if your browser offers to do so.
 >
 
 ![databasepassword](images/database-password-step3.png){.thumbnail}
