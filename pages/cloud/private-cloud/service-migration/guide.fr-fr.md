@@ -184,7 +184,7 @@ Si cette organisation est toujours nécessaire, il vous faudra la créer à nouv
 
 #### VM
 
-Il existe plusieurs moyens de migrer les VMs d'une infrastructure à un autre. Nous vous proposons d'effectuer la migration en utilisant la solution Veeam et la technologie Veeam Replication.
+Il existe plusieurs moyens de migrer les VMs d'une infrastructure à une autre. Nous vous proposons d'effectuer la migration en utilisant la solution Veeam et la technologie Veeam Replication.
 
 Les éléments suivants sont alors nécessaires :
 
