@@ -32,8 +32,6 @@ order: 6
 
 - Les connexions FTP doivent utiliser le **mode passif**. Assurez-vous que votre script ou votre client FTP est ajusté en conséquence.
 
-- Afin de se connecter via **SFTP**, un [**hébergement Pro**](https://www.ovh.com/ca/fr/hebergement-web/) ou supérieur est requis. Vous pouvez mettre à jour votre offre directement dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) ("Informations générales", "Plan", "Offre de modification").
-
 ### Base de données / SQL
 
 ### Connexions simultanées à la base de données

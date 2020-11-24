@@ -32,8 +32,6 @@ order: 6
 
 - Połączenia FTP muszą korzystać z **trybu pasywnego**. Upewnij się, że Twój skrypt lub klient FTP jest odpowiednio skonfigurowany.
 
-- Aby połączyć się przez **SFTP**, wymagany jest [**hosting w wersji Pro**](https://www.ovh.pl/hosting/) lub wyższej. Ofertę możesz zaktualizować bezpośrednio w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) („Informacje ogólne”, „Plan”, „Oferta zmiany”).
-
 ### Baza danych / SQL
 
 ### Jednoczesne połączenia z bazą danych
