@@ -32,8 +32,6 @@ section: 'Configuración del alojamiento'
 
 - Las conexiones FTP deben utilizar el **modo pasivo**. Asegúrese de que su script o su cliente FTP estén configurados correctamente.
 
-- Para conectarse por **SFTP**, se necesita un [**Hosting Profesional**](https://www.ovh.es/hosting/) o superior. Puede actualizar su servicio directamente en [el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) ("Información general", "Plan", "Cambiar el plan").
-
 ### Bases de datos/SQL
 
 ### Conexiones simultáneas a la base de datos

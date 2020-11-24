@@ -33,8 +33,6 @@ order: 6
 
 - Le connessioni FTP devono utilizzare la **modalità passiva**. Assicurati che il tuo script o il tuo client FTP siano configurati correttamente.
 
-- Per connettersi tramite **SFTP**, è necessario disporre di un [**hosting Pro** ](https://www.ovh.it/hosting-web/) o superiore. È possibile aggiornare il piano direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) (“Informazioni generali”, “Piano”, “Modifica il piano”).
-
 ### Database/SQL
 
 ### Connessioni simultanee al database
