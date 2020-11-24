@@ -13,11 +13,11 @@ Il est possible que vous deviez réparer le bootloader GRUB. Ce guide va vous pe
 
 ## Prérequis
 
-- L'instance doit être en mode rescue. (Voir [Passer une instance en mode rescue](../passer-une-instance-en-mode-rescue))
+- L'instance doit être en mode rescue (Vous pouvez consulter le guide [Passer une instance en mode rescue](../passer-une-instance-en-mode-rescue))
 
 ## En pratique
 
-Connectez-vous sur l'instance, soit via le VNC du Manager OVH ou via SSH.
+Connectez-vous sur l'instance, soit via le VNC de [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) ou via SSH.
 
 Tapez les commandes suivantes pour monter le système de fichiers distant et démarrer la réparation de GRUB :
 
@@ -45,7 +45,7 @@ grub2-install /dev/sdb
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
-Vous pouvez maintenant sortir l'instance du mode rescue. (Voir [Passer une instance en mode rescue](../passer-une-instance-en-mode-rescue))
+Vous pouvez maintenant sortir l'instance du mode rescue. (Voir le guide [Passer une instance en mode rescue](../passer-une-instance-en-mode-rescue))
 
 ## Aller plus loin
 
