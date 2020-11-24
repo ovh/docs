@@ -26,7 +26,7 @@ Esta guía explica cómo empezar con un SQL Privado.
 
 Si el plan de hosting incluye la opción SQL Privado, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. En la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} en la columna izquierda.
 
-En la pestaña `Información general`{.action}, en el cuadro `Configuración`, haga clic en el botón `...`{.action} situado a la derecha de la **Base de datos privada**. Por último, haga clic en `Activar`{.action} para iniciar el proceso de activación.
+En la pestaña `Información general`, en el cuadro `Configuración`, haga clic en el botón `...`{.action} situado a la derecha de la **Base de datos privada**. Por último, haga clic en `Activar`{.action} para iniciar el proceso de activación.
 
 ![Información general](images/privatesql00-SQLactivation.png){.thumbnail}
 
