@@ -22,13 +22,15 @@ Votre espace client Telecom regroupe un certain nombre de fonctionnalités, dont
 
 ### Comment accéder au changement de profil
 
-Connectez-vous à la rubrique `Telecom` de votre [espace client Telecom OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Cliquez ensuite sur `Accès Internet`{.action} dans le menu de gauche et sélectionnez votre offre. 
+Connectez-vous à la rubrique `Telecom` de votre [espace client Telecom OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Cliquez ensuite sur `Accès Internet`{.action} dans le menu de gauche et sélectionnez votre pack, vous êtes par défaut sur l'onglet `Mon accès`.
 
-Cliquez sur **"Mon accès"**. Choisissez le **Profil** que vous souhaitez appliquer. Cliquez sur **"Valider"**
+![Mon_acces](images/ADSLMonAcces.png){.thumbnail}
+
+Vous retrouverez au niveau des `Caractéristiques`, la possibilité de modifier le profil de synchronisation de votre accès.
 
 Pour un accès ADSL :
 
-![profil adsl](images/2015-12-15-144213_1258x549_scrot.png){.thumbnail}
+![profil adsl](images/ProfilsAdsl.gif.png){.thumbnail}
 
 Pour un accès VDSL :
 
