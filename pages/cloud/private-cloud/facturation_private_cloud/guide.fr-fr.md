@@ -12,7 +12,7 @@ order: 4
 
 L'offre Hosted Private Cloud dispose de deux types de facturation (horaire et mensuelle) pour le renouvellement et la commande de ressources supplémentaires.
 
-**Ce guide explique le fonctionnement de la facturation de l'offre Hosted Private Clour**
+**Ce guide explique le fonctionnement de la facturation de l'offre Hosted Private Cloud**
 
 
 ## Facturation de l'infrastructure
