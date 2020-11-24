@@ -107,7 +107,7 @@ In Quantum, once you have executed your request, you should get a response that 
 
 #### HTTP requests with Curl 
 
-You can use one of our [protocols](../protocol_overview/guide.en-gb.md){.ref} to query your OVH Cloud Insights data. Here are two examples, using WarpScript™ and PromQL.
+You can use one of our [protocols](../protocol_overview/) to query your OVH Cloud Insights data. Here are two examples, using WarpScript™ and PromQL.
 
 We can send a WarpScript™ query, as shown below, to load the data. As before, you can update the FETCH time parameter to suit your requirements.
 
