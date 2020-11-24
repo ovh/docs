@@ -20,26 +20,16 @@ This documentation will only apply to [VPS](https://www.ovhcloud.com/en-gb/vps/c
 
 This section will display changelog for each month in the year 2020.
 
-### September
+### November
 
 ```
---- 02 September 2020 ---
-Image: Centos 8
-Product: VPS 2016 - 2020 & Public Cloud
-Travaux: http://travaux.ovh.net/?do=details&id=46475
+--- 09 November 2020 ---
+Image: NVIDIA GPU Cloud (NGC)
+Product: Public Cloud
 Changelog:
-1. Qemu Guest Agent installed to improve snapshot experience
-2. Installation of pending system updates compared to previous image. Image is up-to-date as of the creation of the image.
-
---- 21 September 2020 ---
-Image: Debian 10
-Product: VPS 2016 - 2020 & Public Cloud
-Travaux: http://travaux.ovh.net/?do=details&id=46840
-Changelog:
-1. Qemu Guest Agent is now installed and enabled - to improve snapshot experience
-2. curl & gpg packages are now installed
-3. Using the Debian Cloud image provided by Debian
-4. Applying recent system update - up to the date of image build
+1. We switch from Ubuntu 16.04 to Ubuntu 20.04 base
+2. From now on, we will place into the images a file (/etc/cloud/ovhcloud.manifest) which will show packages we installed / ensure is installed in the image
+3. Installation of qemu-guest-agent, curl & gpg
 ```
 
 ### October
@@ -100,17 +90,28 @@ Changelog:
 3. Latest patches applied and using release 2020.10.01
 ```
 
-### November
+### September
 
 ```
---- 09 November 2020 ---
-Image: NVIDIA GPU Cloud (NGC)
-Product: Public Cloud
+--- 02 September 2020 ---
+Image: Centos 8
+Product: VPS 2016 - 2020 & Public Cloud
+Travaux: http://travaux.ovh.net/?do=details&id=46475
 Changelog:
-1. We switch from Ubuntu 16.04 to Ubuntu 20.04 base
-2. From now on, we will place into the images a file (/etc/cloud/ovhcloud.manifest) which will show packages we installed / ensure is installed in the image
-3. Installation of qemu-guest-agent, curl & gpg
+1. Qemu Guest Agent installed to improve snapshot experience
+2. Installation of pending system updates compared to previous image. Image is up-to-date as of the creation of the image.
+
+--- 21 September 2020 ---
+Image: Debian 10
+Product: VPS 2016 - 2020 & Public Cloud
+Travaux: http://travaux.ovh.net/?do=details&id=46840
+Changelog:
+1. Qemu Guest Agent is now installed and enabled - to improve snapshot experience
+2. curl & gpg packages are now installed
+3. Using the Debian Cloud image provided by Debian
+4. Applying recent system update - up to the date of image build
 ```
+
 
 ## Go further
 
