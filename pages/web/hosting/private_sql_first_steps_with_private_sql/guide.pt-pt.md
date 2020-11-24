@@ -25,7 +25,7 @@ O serviço SQL Privado permite associar uma instância SQL, com recursos dedicad
 
 Se a sua oferta de alojamento inclui a opção SQL privado, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Na secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} na coluna da esquerda.
 
-No separador `Informações gerais`{.action}, no quadro `Configuração`, clique no botão `...`{.action} à direita da **Base de dados privada**. Finalmente, clique em `Ativar`{.action} para lançar o processo de ativação.
+No separador `Informações gerais`, no quadro `Configuração`, clique no botão `...`{.action} à direita da **Base de dados privada**. Finalmente, clique em `Ativar`{.action} para lançar o processo de ativação.
 
 ![Informações gerais](images/privatesql00-SQLactivation.png){.thumbnail}
 

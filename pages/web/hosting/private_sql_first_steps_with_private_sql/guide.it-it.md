@@ -25,7 +25,7 @@ Il servizio SQL Privato consente di utilizzare un'istanza SQL che funziona paral
 
 Se la tua offerta di hosting include l'opzione SQL Privato, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Dalla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} nella colonna di sinistra.
 
-Nella scheda `Informazioni generali`{.action}, riquadro `Configurazione`, clicca sul pulsante `...`{.action} a destra del **Database privato**. Clicca su `Attiva`{.action} per avviare il processo di attivazione.
+Nella scheda `Informazioni generali`, riquadro `Configurazione`, clicca sul pulsante `...`{.action} a destra del **Database privato**. Clicca su `Attiva`{.action} per avviare il processo di attivazione.
 
 ![Informazioni generali](images/privatesql00-SQLactivation.png){.thumbnail}
 

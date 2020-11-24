@@ -25,7 +25,7 @@ Rozwiązanie Private SQL umożliwia korzystanie z instancji SQL, posiadającej d
 
 Jeśli Twój hosting zawiera opcję prywatnego serwera SQL, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. W sekcji `Web Cloud`{.action} kliknij `Hosting`{.action} w kolumnie z lewej strony.
 
-W zakładce `Informacje ogólne`{.action} w ramce `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie prywatnej **bazy danych**. Następnie kliknij przycisk `Aktywuj`{.action}, aby rozpocząć proces aktywacji.
+W zakładce `Informacje ogólne` w ramce `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie prywatnej **bazy danych**. Następnie kliknij przycisk `Aktywuj`{.action}, aby rozpocząć proces aktywacji.
 
 ![Informacje ogólne](images/privatesql00-SQLactivation.png){.thumbnail}
 
