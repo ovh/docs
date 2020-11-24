@@ -1,17 +1,18 @@
 ---
-title: 'Create SSH keys'
+title: 'Creating SSH keys'
 slug: create-ssh-keys
-excerpt: 'This guide will show you how to create an SSH key, so that you can log into your instance.'
-section: Security
+excerpt: 'Find out how to create an SSH key and add it in your Public Cloud Control Panel'
+section: Getting started
+order: 2
 ---
 
-**Last updated 2018/10/17**
+**Last updated 24th November 2020**
 
 ## Objective
 
-When you create a [Public Cloud Instance]({ovh_www}/public-cloud/instances/){.external}, you won't receive an email with login credentials, because authentication is based on secure SSH keys instead of usernames and passwords.
+Authentication for a Public Cloud instance is based on secure SSH keys instead of usernames and passwords. Unlike a VPS service, you will not receive an email containing login credentials.
 
-**This guide will show you how to create an SSH key, so that you can log into your instance.**
+**This guide will explain how to create an SSH key in order to log in to your instance.**
 
 > [!primary]
 >
@@ -20,10 +21,15 @@ Please note that SSH keys are not used for authentication on instances running t
 
 ## Requirements
 
-* a [Public Cloud]({ovh_www}/public-cloud/instances/){.external} project in your OVHcloud account
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- a [Public Cloud instance](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
+
+> [!primary]
+>
+If you would like to store an SSH key in the OVHcloud Control Panel, we recommend to use RSA or ECDSA encryption. ED25519 is currently not supported.
+>
 
 ### Creating an SSH key on Linux and Mac
 
@@ -96,35 +102,27 @@ Next, run the software and select RSA as the key type, enter 4096 as the number 
 
 ![generate key](images/puttygen-01.png){.thumbnail}
 
-Next, randomly move your mouse around in the area underneath the progress bar, as shown below.
+Next, randomly move your mouse cursor about the area below the progress bar:
 
 ![generate key](images/puttygen-02.gif){.thumbnail}
 
-As you move your mouse, the progress bar will start to fill up. When it's completely full, the key will be ready.
+The key is ready when the progress bar is full. 
 
 ![generate key](images/puttygen-03.png){.thumbnail}
 
-### Import your SSH key into the OVHcloud Control Panel
+### Importing your SSH key into the OVHcloud Control Panel
 
-First, highlight and copy the text of your public key, then log into the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
-
-Now click on the `Cloud`{.action} menu.
-
-![cloud menu](images/cloud-menu.png){.thumbnail}
-
-Now select your Public Cloud project from the left-hand menu and click on `Infrastructure`{.action}.
+First, highlight and copy the text of your public key, then log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager).
 
 ![select project](images/select-project.png){.thumbnail}
 
-Now select the `SSH keys`{.action} tab.
+Go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `SSH Keys`{.action} in the left-hand navigation bar under "Project Management". Click on the `Add an SSH key`{.action} button.
 
-![save ssh key](images/save-ssh-key-01.png){.thumbnail}
+Now paste the 4096 byte key into the space provided, give the key a name, and click the `Add`{.action} button.
 
-Next, paste the 4096 byte key into the space provided, give the key a name, and click the `Add this key`{.action} button.
+![save ssh key](images/save-key.png){.thumbnail}
 
-![save ssh key](images/save-ssh-key-02.png){.thumbnail}
-
-Your key will now be saved in the OVHcloud Control Panel for authentication.
+Your key will be saved in the OVHcloud Control Panel for authentication.
 
 ## Go further
 
