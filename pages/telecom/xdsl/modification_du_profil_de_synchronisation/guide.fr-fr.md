@@ -28,11 +28,11 @@ Connectez-vous à la rubrique `Telecom` de votre [espace client Telecom OVHcloud
 
 Vous retrouverez au niveau des `Caractéristiques`, la possibilité de modifier le profil de synchronisation de votre accès.
 
-Pour un accès ADSL :
+#### Pour un accès ADSL :
 
 ![profil adsl](images/ProfilsADSL.gif){.thumbnail}
 
-Pour un accès VDSL :
+#### Pour un accès VDSL :
 
 ![profil vdsl](images/2015-12-15-144213_1258x549_scrot.png){.thumbnail}
 
