@@ -106,8 +106,6 @@ L'applet de commande Powercli « Get-Cluster » renvoie des informations sur les
 
 ##### **Configuration de VMware DRS**
 
-La migration implique de refaire la configuration de la fonction VMware DRS (Distributed Resource Scheduler), notamment les groupes de hosts et de VMs. Consultez [notre guide sur sa configuration](../vmware-drs-distributed-ressource-scheduler-new/).
-
 La migration implique la reconfiguration de la fonction VMware DRS (Distributed Resource Scheduler), en particulier des règles d'affinité ou d'anti-affinité pour les groupes d'hôtes et de VMs. Consultez notre guide sur la [configuration de VMware DRS](../vmware-drs-distributed-ressource-scheduler-new/).
 
 Voici une liste des éléments à prendre en compte:
