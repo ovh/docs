@@ -22,7 +22,7 @@ Votre espace client Telecom regroupe un certain nombre de fonctionnalités, dont
 
 ### Comment accéder au changement de profil
 
-Connectez-vous à la rubrique `Telecom` de votre [espace client Telecom OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Cliquez ensuite sur `Accès Internet`{.action} dans le menu de gauche et sélectionnez votre pack, vous êtes par défaut sur l'onglet `Mon accès`.<br>
+Connectez-vous à la rubrique `Telecom` de votre [espace client Telecom OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Cliquez ensuite sur `Accès Internet`{.action} dans le menu de gauche puis sur `Adsl ou Vdsl xdsl-yyxxxxx-x`, vous êtes par défaut sur l'onglet `Mon accès`.<br>
 
 ![Mon_acces](images/AdslMonAcces.png){.thumbnail}
 
