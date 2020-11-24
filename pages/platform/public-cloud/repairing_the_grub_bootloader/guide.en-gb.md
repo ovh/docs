@@ -9,17 +9,17 @@ section: Tutorials
 
 ## Objective
 
-In some cases you might need to repair the GRUB bootloader. This guide will show you how to easily repair the bootloader and successfully boot in your instance.
+In some cases you might need to repair the GRUB bootloader. This guide will show you how to easily repair the bootloader and successfully reboot your instance.
 
 ## Requirements
 
-- The instance must be in rescue mode. (See [Putting an instance in rescue mode](../put_an_instance_in_rescue_mode))
+- The instance must be in rescue mode (see [Putting an instance in rescue mode](../put_an_instance_in_rescue_mode)).
 
 ## Instructions
 
-Connect to the instance, either via VNC of OVH's manager or via SSH.
+Connect to the instance, either via VNC in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) or via SSH.
 
-Type the following commands to mount the remote file system and start GRUB repairs :
+Type the following commands to mount the remote file system and start GRUB repairs:
 
 ```sh
 mount /dev/sdb1 /mnt
@@ -45,7 +45,7 @@ grub2-install /dev/sdb
 grub2-mkconfig -o /boot/grub2/grub.cfg
 ```
 
-You can now leave the rescue mode and boot normally. (See [Putting an instance in rescue mode](../put_an_instance_in_rescue_mode))
+You can now leave the rescue mode and boot normally (see [Putting an instance in rescue mode](../put_an_instance_in_rescue_mode)).
 
 ## Go further
 
