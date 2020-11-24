@@ -78,8 +78,6 @@ Please consult our guide to [Migrate an IP block between two Managed Bare Metal 
 
 ##### **Configuring VMware HA**
 
-##### **Configuring VMware HA**
-
 The migration involves reconfiguring VMware High Availability (HA), including boot order and priority. Please consult our guide about [VMware HA configuration](../vmware-ha-high-availability/).
 
 Here is a checklist of aspect to take into account:
