@@ -22,7 +22,7 @@ Il est possible d'automatiser les actions au sein de votre infrastructure en uti
 
 ##### OS
 
-Ici nous utilisons une VM installée sur Debian 9, déployée depuis [les templates mis à disposition sur votre Private Cloud](../private-cloud/deploiement-template-ovh/).
+Ici nous utilisons une VM installée sur Debian 9, déployée depuis [les templates mis à disposition sur votre Private Cloud](../deploiement-template-ovh/).
 
 ##### Prérequis
 
