@@ -17,10 +17,20 @@ Le service SQL Privé permet de bénéficier d’une instance SQL fonctionnant d
 
 - Disposer d'une instance SQL Privé (incluse dans une offre d'[hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external} ou commandée via une [option SQL](https://www.ovh.com/ca/fr/hebergement-web/options-sql.xml){.external}).
 - Disposer d'un [hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external} hébergé sur le même centre de données que votre instance SQL Privé (cette information est visible dans l'espace client OVHcloud).
-- Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## En pratique
+
+### Activation de votre serveur SQL Privé inclus avec votre offre d'hébergement web
+
+Si votre offre d'hébergement inclut l'option SQL privé, rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Depuis la section  `Web Cloud`{.action}, cliquez sur  `Hébergements`{.action} dans la colonne de gauche.
+
+Depuis l'onglet `Informations générales`, dans le cadre `Configuration`, cliquez sur le bouton `...`{.action} à droite de **Base de données privée**. Cliquez enfin sur `Activer`{.action} pour lancer le processus d'activation.
+
+![Informations générales](images/privatesql00-SQLactivation.png){.thumbnail}
+
+Enfin, suivez les instructions fournies afin de déterminer le type et la version de votre serveur SQL privé. Il sera ensuite accessible depuis la colonne de gauche dans `Base de données`{.action}.
 
 ### Visionner les informations générales de l'instance
 
