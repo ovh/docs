@@ -86,7 +86,7 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 
 #### Configurar las opciones del Shared CDN
 
-Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `..`{.action} a la derecha de la entrada multisitio y luego `Editar la CDN`{.action}.
+Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y luego `Editar la CDN`{.action}.
 
 > [!warning]
 > 
@@ -110,7 +110,7 @@ Una vez seleccionadas las opciones, haga clic en `Aplicar la configuración`{.ac
 
 ##### Crear una regla de almacenamiento en caché
 
-Para añadir una regla de caché a uno de los elementos de su sitio, acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `..`{.action} a la derecha de la entrada multisitio y seleccione `Configurar la CDN`{.action}.
+Para añadir una regla de caché a uno de los elementos de su sitio, acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y seleccione `Configurar la CDN`{.action}.
 
 Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla`{.action}.
 
@@ -126,7 +126,7 @@ Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla
 
 A continuación, haga clic en el botón `crear la regla`{.action}.
 
-Las reglas aparecen en una lista.  Puede modificarla haciendo clic en `..`{.action} a la derecha de la regla y luego en `Modificar la regla`{.action} o eliminarla haciendo clic en `Eliminar la regla`{.action}.
+Las reglas aparecen en una lista.  Puede modificarla haciendo clic en `...`{.action} a la derecha de la regla y luego en `Modificar la regla`{.action} o eliminarla haciendo clic en `Eliminar la regla`{.action}.
 
 ![CDN](images/manage_sharedCDN_05.png){.thumbnail}
 
@@ -176,7 +176,7 @@ En caso de no utilizar ningún sistema de gestión de contenidos, puede disponer
 
 Esta acción permite desactivar la CDN para uno o más de sus registros multisitio, sin eliminar la opción CDN de su alojamiento web.
 
-Acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. En la pestaña `Multisitio`{.action}, haga clic en `..`{.action} a la derecha de la entrada multisitio y luego en `Editar`{.action}.
+Acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. En la pestaña `Multisitio`{.action}, haga clic en `...`{.action} a la derecha de la entrada multisitio y luego en `Editar`{.action}.
 
 Desmarque la opción «Activar la CDN», haga clic en `Siguiente`{.action} y, a continuación, en `Validar`{.action}.
 
