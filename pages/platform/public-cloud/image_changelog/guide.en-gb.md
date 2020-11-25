@@ -10,15 +10,15 @@ order: 8
 
 ## Objective
 
-OVHcloud offers a variety of operating systems and pre-installed applications on the VPS and Public cloud products. As a provider, we ensure the images we provide to our customers are kept up to date which means we regularly release new images. Transparency is key to OVHcloud and we intend to share what changes we make to any image during any new release. This page will allow customers to track the changelog of our images.
+OVHcloud offers a variety of operating systems and pre-installed applications on the VPS and Public Cloud products. As a provider, we ensure the images we provide to our customers are kept up to date which means we regularly release new images. Transparency is key to OVHcloud and we intend to share what changes we make to any image during any new release. This page will allow customers to track the changelog of our images.
 
 ## Requirements
 
-This documentation will only apply to [VPS](https://www.ovhcloud.com/en-gb/vps/compare/) and [Public Cloud instances](https://www.ovhcloud.com/en-gb/public-cloud/compute/) only.
+This documentation will only apply to [VPS](https://www.ovhcloud.com/en-gb/vps/compare/) and [Public Cloud instances](https://www.ovhcloud.com/en-gb/public-cloud/compute/).
 
 ## 2020 Changelog
 
-This section will display changelog for each month in the year 2020.
+This section will display changelogs for each month in the year 2020.
 
 ### November
 
@@ -35,7 +35,7 @@ Changelog:
 Image: Fedora 33 & Ubuntu 20.10
 Product: Public Cloud
 Changelog:
-The new Fedora 33 and Ubuntu 20.10 images are now available for all public cloud regions. VPS2020 will also soon offer the images also.
+The new Fedora 33 and Ubuntu 20.10 images are now available for all public cloud regions. VPS2020 will soon offer the images also.
 ```
 
 ### October
