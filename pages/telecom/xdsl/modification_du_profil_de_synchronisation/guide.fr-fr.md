@@ -5,7 +5,7 @@ excerpt: Découvrez comment modifier le profil de synchronisation de votre accè
 section: Configuration de mon offre
 ---
 
-**Dernière mise à jour le 24/11/2020**
+**Dernière mise à jour le 25/11/2020**
 
 ## Objectif
 
