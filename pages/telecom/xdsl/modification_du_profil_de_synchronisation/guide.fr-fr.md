@@ -28,11 +28,11 @@ Connectez-vous à la rubrique `Telecom` de votre [espace client Telecom OVHcloud
 
 Vous retrouverez au niveau des `Caractéristiques`, la possibilité de modifier le profil de synchronisation de votre accès.
 
-#### Pour un accès ADSL :
+#### > Pour un accès ADSL :
 
 ![profil adsl](images/ProfilsADSL.gif){.thumbnail}
 
-#### Pour un accès VDSL :
+#### > Pour un accès VDSL :
 
 ![profil vdsl](images/ProfilsVDSL.gif){.thumbnail}
 
@@ -68,8 +68,8 @@ La correspondance des profils avec la marge au bruit :
 
 **24M est le débit maximum atteignable avec un SNR à 6 dB.**
 
-Si vous êtes juste à côté du NRA vous aurez peut-être 24M.
-Cependant si vous êtes à 1 km , 24M ne sera pas atteignable vous aurez peut-être 15M, ceci dépendra de la ligne et de la marge sur bruit.
+Si votre accès est très proche du NRA vous aurez peut-être 24M.
+Cependant si votre ligne est distante de 1 km du NRA, 24M ne sera pas atteignable vous obtiendrez peut-être 15M, ceci dépendra de la ligne et de la marge sur bruit.
 
 
 En VDSL, d’autres modulations de fréquence s’offrent à vous.
