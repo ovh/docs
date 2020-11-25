@@ -68,7 +68,7 @@ Voici la correspondance des profils avec la marge au bruit :
 
 24M est le débit maximum atteignable avec un SNR à 6 dB.
 Si votre accès est très proche du NRA, vous obtiendrez peut-être 24M.
-Cependant si votre ligne est distante de 1 km du NRA, 24M ne sera pas atteignable. Vous obtiendrez peut-être 15M, cela dépendra de la qualité dela ligne et de la marge au bruit.
+Cependant si votre ligne est distante de 1 km du NRA, 24M ne sera pas atteignable. Vous obtiendrez peut-être 15M, cela dépendra de la qualité de la ligne et de la marge au bruit.
 
 
 #### Profils VDSL
