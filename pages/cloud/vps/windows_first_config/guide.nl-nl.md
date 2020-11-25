@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Eerste Windows serverconfiguratie (Firewall)
 slug: windows-first-config
 excerpt: Leer hoe u uw remote desktop verbinding in kunt schakelen via KVM, als deze is uitgeschakeld.

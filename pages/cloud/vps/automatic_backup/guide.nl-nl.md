@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Automatische back-up
 excerpt: ''
 slug: automatische_back-up

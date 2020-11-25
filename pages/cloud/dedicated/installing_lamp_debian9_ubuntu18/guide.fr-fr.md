@@ -87,7 +87,7 @@ Nous allons installer ici la deuxième brique, le serveur web Apache 2, ainsi qu
 sudo apt-get install apache2 apache2-doc
 ```
 
-Si l'installation s'est effectuée correctement, vous devriez pouvoir accéder à la page par défaut d'Apache en joignant l'adresse IP (ou le nom du service) de votre serveur dans le navigateur, comme suit : [http://IP_du_serveur](#).
+Si l'installation s'est effectuée correctement, vous devriez pouvoir accéder à la page par défaut d'Apache en joignant l'adresse IP (ou le nom du service) de votre serveur dans le navigateur, comme suit : `http://IP_du_serveur`.
 N'essayez pas de vous connecter en HTTPS, car à ce stade aucun certificat SSL n'est encore installé.
 
 ![Installation d'Apache](images/tuto_apache.png){.thumbnail}
@@ -135,7 +135,7 @@ phpinfo();
 ?>
 ```
 
-Accédez ensuite au fichier via le navigateur : [http://IP_du_serveur/info.php](#).
+Accédez ensuite au fichier via le navigateur : `http://IP_du_serveur/info.php`.
 
 Vous devriez pouvoir visualiser une page détaillant toutes les spécificités de votre environnement PHP (version 7.0.30 dans notre cas) :
 
@@ -148,7 +148,7 @@ Une fois visualisé, nous vous recommandons vivement de **supprimer le fichier `
 > [!primary]
 >
 > Par défaut, le serveur web Apache ne priorise pas les fichiers PHP par rapport aux fichiers HTML.
-> Ici, dans le dossier racine, nous disposons de `index.html` et de `index.php`. Si vous retournez dans votre navigateur web, sur [http://IP_du_serveur](#), Apache vous renverra la page `index.html` et non pas `index.php`. 
+> Ici, dans le dossier racine, nous disposons de `index.html` et de `index.php`. Si vous retournez dans votre navigateur web, sur `http://IP_du_serveur`, Apache vous renverra la page `index.html` et non pas `index.php`. 
 > Cette priorisation n'a pas d'impact sur la majeure partie des CMS comme WordPress ou Drupal. Ces règles peuvent toutefois être modifiées si besoin.
 >
 
@@ -267,7 +267,7 @@ MariaDB [(none)]> GRANT ALL PRIVILEGES ON * . * TO 'my_user'@'localhost';
 MariaDB [(none)]> FLUSH PRIVILEGES;
 ```
 
-Accédez ensuite à l'interface via [http://IP_du_serveur/phpmyadmin/](#) :
+Accédez ensuite à l'interface via `http://IP_du_serveur/phpmyadmin/` :
 
  
 ![Installation de PMA](images/tuto_pma.png){.thumbnail}
@@ -284,7 +284,7 @@ tar xpf latest.tar.gz
 sudo cp -r wordpress /var/www/html/mywebsite
 ```
 
-Ce dossier contenant WordPress est maintenant accessible sur [http://IP_du_serveur/mywebsite/](#).
+Ce dossier contenant WordPress est maintenant accessible sur `http://IP_du_serveur/mywebsite/`.
 
 Créez une base nommée `wordpress` en ligne de commande ou via `phpMyAdmin`.
 

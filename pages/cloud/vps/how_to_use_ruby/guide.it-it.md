@@ -3,6 +3,7 @@ title: 'Ruby: how to'
 excerpt: Un po' di informazioni sulla distribuzione Ruby
 slug: ruby_how_to
 legacy_guide_number: g1370
+hidden: true
 ---
 
 

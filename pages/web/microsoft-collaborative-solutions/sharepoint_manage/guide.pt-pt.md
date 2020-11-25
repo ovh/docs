@@ -43,7 +43,7 @@ Para consultar a mensagem, aceda à [Área de Cliente OVHcloud](https://www.ovh.
 
 > **\[xx-11111-ovh] Configurar o serviço Microsoft SharePoint!**
 
-Para dar início à configuração, aceda à secção `Web` da Área de Cliente. Na barra à esquerda, clique em `Microsoft`{.action} e em `SharePoint`{.action}. Por fim, selecione a plataforma SharePoint em questão.
+Para dar início à configuração, aceda à secção `Web Cloud` da Área de Cliente. Na barra à esquerda, clique em `Microsoft`{.action} e em `SharePoint`{.action}. Por fim, selecione a plataforma SharePoint em questão.
 
 Defina o nome da plataforma no campo «URL do SharePoint» e clique em `Validar o URL`{.action}.
 
@@ -55,7 +55,7 @@ Defina o nome da plataforma no campo «URL do SharePoint» e clique em `Validar 
 
 ### 3.ª etapa: Configuração da plataforma SharePoint
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e dirija-se à secção `Web`. Na barra à esquerda, clique em `Microsoft`{.action} e em `SharePoint`{.action}. Por fim, selecione a plataforma SharePoint em questão.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e dirija-se à secção `Web Cloud`. Na barra à esquerda, clique em `Microsoft`{.action} e em `SharePoint`{.action}. Por fim, selecione a plataforma SharePoint em questão.
 
 #### **SharePoint standalone**
 

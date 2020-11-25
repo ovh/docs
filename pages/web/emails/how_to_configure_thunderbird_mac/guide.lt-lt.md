@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: Thunderbird Mac konfigūravimo gidas'
 excerpt: ''
 slug: svetainiu_talpinimas_thunderbird_mac_konfiguravimo_gidas

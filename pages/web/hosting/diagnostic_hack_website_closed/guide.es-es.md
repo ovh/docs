@@ -18,7 +18,7 @@ Si tiene un sitio web en un alojamiento de OVH, podría recibir en algún moment
 
 - Tener contratado un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}.
 - Disponer de las claves necesarias para conectarse al espacio de almacenamiento del alojamiento.
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action}.
 
 ## Procedimiento
 
@@ -74,7 +74,7 @@ Asegúrese, pues, de que los diferentes elementos adicionales de su sitio web so
 
 Esto le permitirá conocer con mayor detalle las acciones que se han realizado sobre el servicio y el sitio web para poder determinar qué ha podido haber motivado la desactivación del alojamiento.
 
-Para consultar la actividad y los logs del alojamiento, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, podrá realizar dos acciones diferentes en función de la información a la que desee acceder:
+Para consultar la actividad y los logs del alojamiento, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, podrá realizar dos acciones diferentes en función de la información a la que desee acceder:
 
 - **Consultar la actividad del alojamiento**
 

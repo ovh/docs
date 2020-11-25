@@ -17,7 +17,7 @@ Wraz z pakietami hostingowymi OVH otrzymujesz dostęp do przestrzeni dyskowej um
 ## Wymagania początkowe
 
 - Posiadanie [hostingu OVH]({ovh_www}/hosting/){.external}
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Web`{.action}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Web Cloud`{.action}
 
 ## W praktyce
 

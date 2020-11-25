@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Installatie van de OVH SSH key 
 slug: ovh-ssh-key
 excerpt: Deze handleiding beschrijft de installatie van een OVH SSH key om een interventie van onze beheerders toe te staan, met daarna de deactivering ervan. 

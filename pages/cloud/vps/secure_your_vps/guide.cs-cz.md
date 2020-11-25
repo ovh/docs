@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Zabezpečení VPS'
 slug: tipy-pro-zabezpeceni-vps
 section: 'První kroky'

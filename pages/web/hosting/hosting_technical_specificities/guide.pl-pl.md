@@ -32,8 +32,6 @@ order: 6
 
 - Połączenia FTP muszą korzystać z **trybu pasywnego**. Upewnij się, że Twój skrypt lub klient FTP jest odpowiednio skonfigurowany.
 
-- Aby połączyć się przez **SFTP**, wymagany jest [**hosting w wersji Pro**](https://www.ovh.pl/hosting/) lub wyższej. Ofertę możesz zaktualizować bezpośrednio w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) („Informacje ogólne”, „Plan”, „Oferta zmiany”).
-
 ### Baza danych / SQL
 
 ### Jednoczesne połączenia z bazą danych
@@ -119,7 +117,7 @@ Zapoznaj się z odpowiednimi stronami informacyjnymi, aby sprawdzić, które bib
 
 Różne informacje na temat Twojego klastra znajdziesz pod tym linkiem: [https://cluster015.hosting.ovh.net/infos/](https://cluster015.hosting.ovh.net/infos/){.external}
 
-Zamień klaster wskazany w adresie URL na Twój klaster. Aby dowiedzieć się, na jakim klastrze hostingu znajduje się Twoja usługa, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} i na górnym pasku nawigacji wybierz pozycję `Web`{.action}. Na pasku usług po lewej stronie kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Następnie kliknij kartę `FTP - SSH`{.action}. Adres URL dostępu FTP do Twojego hostingu wskazuje numer klastra.
+Zamień klaster wskazany w adresie URL na Twój klaster. Aby dowiedzieć się, na jakim klastrze hostingu znajduje się Twoja usługa, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} i na górnym pasku nawigacji wybierz pozycję `Web Cloud`{.action}. Na pasku usług po lewej stronie kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Następnie kliknij kartę `FTP - SSH`{.action}. Adres URL dostępu FTP do Twojego hostingu wskazuje numer klastra.
 
 Aby poznać informacje techniczne dotyczące oferty Cloud Web, przejdź bezpośrednio na stronę <https://cloudweb-infos.hosting.ovh.net/>.
 

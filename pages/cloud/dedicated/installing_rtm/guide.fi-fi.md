@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Real Time Monitoring -järjestelmän (RTM) asennus
 slug: rtm-asennus
 excerpt: Katso, kuinka Real Time Monitoring asennetaan Linuxilla tai Windowsilla
@@ -38,13 +39,6 @@ Kun olet kirjautunut palvelimellesi SSH-yhteydellä, aja seuraava komento:
 wget ftp://ftp.ovh.net/made-in-ovh/rtm/install_rtm.sh -O install_rtm.sh ; /bin/bash install_rtm.sh
 ```
 
-### RTM:n asentaminen Windowsilla
-
-Kun olet kirjautunut etätyöpöydällesi, tee seuraavasti:
-
-- Asenna ActivePerl, jos RTM-järjestelmää ei ole koskaan asennettu. Se voidaan ladata tästä linkistä: <http://www.activestate.com/activeperl/>.
-- Lataa ja asenna viimeisin RTM-versio tästä: <ftp://ftp.ovh.net/made-in-ovh/rtm/windows/>.
-- Klikkaa hiiren oikeaa näppäintä ja klikkaa sitten `Suorita administraattorina`{.action}.
 
 
 ## Lisää aiheesta

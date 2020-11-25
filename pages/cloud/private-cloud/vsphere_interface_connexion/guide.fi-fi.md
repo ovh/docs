@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Asenna vSphere Client
 excerpt: ''
 slug: asenna_vsphere_client

@@ -5,7 +5,7 @@ excerpt: Come cambiare le regole di accesso al vCenter
 legacy_guide_number: '1442246'
 space_key: VS
 space_name: vSphere as a Service
-section: Funzionalità OVH
+section: Funzionalità OVHcloud
 ---
 
 **Ultimo aggiornamento: 07/07/2020**
@@ -23,7 +23,7 @@ Per aumentare la sicurezza di un’infrastruttura Hosted Private Cloud, è possi
 
 ## Procedura
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager) e, nella sezione `Server`{.action}, clicca su `Private Cloud`{.action} nella colonna a sinistra e seleziona il servizio in questione.
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager) e, nella sezione `Hosted Private Cloud`{.action}, clicca su `Private Cloud`{.action} nella colonna a sinistra e seleziona il servizio in questione.
 
 Nella pagina principale, clicca sulla scheda `Sicurezza`{.action} e poi su `Modifica la politica di accesso al vCenter`{.action}.
 

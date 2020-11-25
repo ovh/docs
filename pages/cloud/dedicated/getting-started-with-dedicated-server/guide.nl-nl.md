@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Aan de slag met uw dedicated server'
 slug: eerste-stappen-dedicated-server
 excerpt: 'Enkele tips over hoe u uw nieuwe dedicated server kunt beheren'

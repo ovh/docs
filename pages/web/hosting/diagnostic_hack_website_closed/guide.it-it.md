@@ -18,7 +18,7 @@ Se hai pubblicato il tuo sito su un hosting Web OVH, potresti ricevere un messag
 
 - Disporre di un piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} attivo
 - Disporre delle credenziali di accesso allo spazio di storage dell’hosting
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web`{.action}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web Cloud`{.action}
 
 ## Procedura
 
@@ -74,7 +74,7 @@ Prosegui al prossimo step per verificare che i diversi elementi aggiuntivi del s
 
 Questa operazione permette di conoscere l’attività del tuo servizio e del tuo sito, consentendo di analizzare nel dettaglio ciò che è successo al momento della disattivazione.
 
-Per consultare l’attività e i log dell’hosting accedi alla sezione `Web`{.action} dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra. A questo punto, in base alle informazioni che vuoi raccogliere, si presentano due possibilità:
+Per consultare l’attività e i log dell’hosting accedi alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra. A questo punto, in base alle informazioni che vuoi raccogliere, si presentano due possibilità:
 
 - **consultare l’attività dell’hosting**
 

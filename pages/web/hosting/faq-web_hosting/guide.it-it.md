@@ -69,6 +69,12 @@ oppure rinominalo per poterlo riutilizzare quando ne hai bisogno.
 
 **Altre informazioni utili**: per essere visualizzati, i file del tuo sito devono trovarsi nella cartella "www".
 
+### Come far evolvere la tua offerta di hosting Web?
+
+Per modificare la tua offerta attuale con un'offerta superiore, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nel menu a sinistra e seleziona il tuo servizio.
+
+Nella scheda `Informazioni generali`, nel riquadro `Abbonamento`, clicca sul pulsante `...`{.action} davanti a "Offerta" e poi clicca su `Cambia offerta`{.action}. Segui queste istruzioni per completare l'ordine. Aggiungi alla nuova offerta una quota del tempo residuo della tua offerta attuale.
+
 ## Per saperne di più
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

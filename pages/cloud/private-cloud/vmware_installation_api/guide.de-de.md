@@ -22,7 +22,7 @@ Aktionen in Ihrer Infrastruktur können mithilfe des vSphere SDK automatisiert w
 
 ##### Betriebssystem
 
-Dieses Beispiel verwendet eine auf Debian 9 installierte VM, die mithilfe der [für Ihre Private Cloud bereitgestellten Templates](https://docs.ovh.com/gb/en/private-cloud/deploy-ovh-template/) deployt wurde.
+Dieses Beispiel verwendet eine auf Debian 9 installierte VM, die mithilfe der [für Ihre Private Cloud bereitgestellten Templates](../ovhcloud-template-deployment/) deployt wurde.
 
 ##### Voraussetzungen
 
@@ -140,7 +140,7 @@ vconnect()
 
 ##### Betriebssystem
 
-Wir verwenden hier eine auf Ubuntu 18.04 installierte VM, die mithilfe der [für Ihre Private Cloud bereitgestellten Templates](https://docs.ovh.com/gb/en/private-cloud/deploy-ovh-template/) deployt wurde.
+Wir verwenden hier eine auf Ubuntu 18.04 installierte VM, die mithilfe der [für Ihre Private Cloud bereitgestellten Templates](../ovhcloud-template-deployment/) deployt wurde.
 
 
 ##### Voraussetzungen

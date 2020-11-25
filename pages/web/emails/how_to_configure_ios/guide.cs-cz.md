@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Konfigurace účtů služby MX Plan na iPhonu nebo iPadu
 slug: konfigurace-ios
 excerpt: Zjistěte, jak nakonfigurovat e-mailovou adresu služby MX Plan na svém iPhonu nebo iPadu

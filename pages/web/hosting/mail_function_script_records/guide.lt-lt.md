@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Monitoring and managing automated emails in your Web Hosting plan'
 slug: svetainiu_talpinimas_automatiniu_el_laisku_kontrole
 excerpt: 'Find out how to monitor and manage automated emails sent from your OVH Web Hosting plan'

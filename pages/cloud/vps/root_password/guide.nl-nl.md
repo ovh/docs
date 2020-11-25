@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Wijziging van uw root-wachtwoord op een VPS
 slug: root-password
 excerpt: Leer hoe u het root-wachtwoord van een VPS kunt wijzigen.

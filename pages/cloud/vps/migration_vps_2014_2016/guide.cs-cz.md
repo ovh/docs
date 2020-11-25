@@ -1,8 +1,10 @@
 ---
+deprecated: true
 title: Jak migrovat VPS 2014 na VPS 2016
 excerpt: Tato příručka Vám ukáže jak lze snadno migrovat Vaše VPS.
 slug: jak_migrovat_vps_2014_na_vps_2016
 legacy_guide_number: g1862
+hidden: true
 ---
 
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Public Cloud
 slug: platform
 excerpt: Get some help for the Public Cloud universe

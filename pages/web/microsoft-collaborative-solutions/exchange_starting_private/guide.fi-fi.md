@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange: Ensiaskeleet yksityisen palvelimen kanssa'
 excerpt: Ensiaskeleet yksityisen palvelimen kanssa
 slug: exchange_ensiaskeleet_yksityisen_palvelimen_kanssa

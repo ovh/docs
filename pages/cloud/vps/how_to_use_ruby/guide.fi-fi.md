@@ -1,8 +1,10 @@
 ---
+deprecated: true
 title: Rubyn käyttö
 excerpt: Yleistä tietoa Ruby-distribuutiosta
 slug: rubyn_kaytto
 legacy_guide_number: g1370
+hidden: true
 ---
 
 

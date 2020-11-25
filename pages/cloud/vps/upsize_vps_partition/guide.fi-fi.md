@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: VPS:n uudelleen osiointi tuotetason korotuksen jälkeen
 slug: uudelleen-osiointi-vps-tuotetason-korotuksen-jalkeen
 section: Aluksi

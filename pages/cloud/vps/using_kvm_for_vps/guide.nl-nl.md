@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Gebruik van de KVM voor de VPS 
 excerpt: Gebruik van de KVM voor de VPS 
 slug: kvm_gebruiken_voor_vps

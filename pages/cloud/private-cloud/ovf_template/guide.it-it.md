@@ -27,7 +27,7 @@ Le VM Windows implementate a partire da un template utilizzano automaticamente l
 ## Prerequisiti
 
 - Avere accesso al client Web (HTML5)
-- [Avere attivato le licenze di Windows](../spazio-cliente-private-cloud-ovh/#licenze-windows){.external} dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} (scheda `Licenza Windows`{.action} del datacenter) 
+- [Avere attivato le licenze di Windows](../manager-ovh-private-cloud/#licenze-windows) dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} (scheda `Licenza Windows`{.action} del datacenter) 
 
 
 ## Procedura

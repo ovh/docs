@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: CNAME-kentän luominen liitettyä verkkotunnusta lisättäessä
 excerpt: Opi, miksi CNAME-kentän lisäystä saatetaan vaatia ja kuinka se lisätään OVH:lla
 slug: exchange_20132016_cname-tietueen_lisaaminen

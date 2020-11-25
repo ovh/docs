@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2013: Käyttöönotto Windows 8:lla'
 excerpt: ''
 slug: exchange_2013_kayttoonotto_windows_8lla

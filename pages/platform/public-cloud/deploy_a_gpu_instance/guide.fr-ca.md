@@ -15,7 +15,7 @@ Les GPU proposés sont des NVIDIA GeForce GTX 1060, GTX 1070 ou GTX 1080Ti.
 
 > [!warning]
 >
-> Les instances GPU sont, pour l'instant, disponibles uniquement sur le datacenter de GRA3, GRA5 et BHS3. Vous aurez peut-être besoin de créer un nouveau projet et de sélectionner la nouvelle gamme 2017. Plus d'informations [ici](https://docs.ovh.com/fr/public-cloud/faq-comment-comprendre-la-nouvelle-nomenclature-de-la-gamme-2017/).
+> Les instances GPU sont, pour l'instant, disponibles uniquement sur le datacenter de GRA3, GRA5 et BHS3. Vous aurez peut-être besoin de créer un nouveau projet et de sélectionner la nouvelle gamme 2017.
 > 
 
 **Ce guide vous explique comment déployer une instance GPU sous Linux ou sous Windows**

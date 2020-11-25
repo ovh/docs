@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Konfigurace účtů služby Exchange na e-mailovém klientu macOS
 slug: konfigurace-exchange-macos
 excerpt: Seznamte se s postupem pro konfiguraci účtů služby Exchange na macOS El Capitan, Sierra a High Sierra

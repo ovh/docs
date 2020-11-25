@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: SSL Gateway -palvelun kaytto
 slug: ssl-gateway-palvelun-kaytto
 legacy_guide_number: 2370

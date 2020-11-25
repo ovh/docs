@@ -1,7 +1,7 @@
 ---
 title: 'Configurer son compte E-mail Pro sur un iPhone ou un iPad'
 slug: configuration-iphone
-excerpt: 'Apprenez à configurer un compte E-mail Pro sur un iPhone ou un iPad, via l''application Mail'
+excerpt: "Apprenez à configurer un compte E-mail Pro sur un iPhone ou un iPad, via l'application Mail"
 section: 'Configuration sur smartphone'
 order: 1
 ---
@@ -50,7 +50,7 @@ Cet ajout peut s'effectuer de deux manières différentes :
 >
 > Dans notre exemple, nous utilisons la mention serveur : pro**X**.mail.ovh.net. Vous devrez remplacer le « X » par le chiffre désignant le serveur de votre service E-mail Pro.
 > 
-> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web`{.action} puis `E-mail Pro`{.action}
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}
 >  dans la colonne de gauche. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 > 
 

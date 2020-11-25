@@ -15,8 +15,8 @@ L'IP en Alias est une configuration réseau spéciale pour vos serveurs OVHcloud
 
 ## Prérequis
 
-* un [serveur virtuel privé](https://www.ovhcloud.com/fr-ca/vps/){.external}
-* une [adresse IP failover](https://www.ovh.com/ca/fr/serveurs-dedies/ip_failover.xml){.external} ou un bloque d'IP failover
+* un [serveur virtuel privé](https://www.ovhcloud.com/fr-ca/vps/)
+* une adresse IP failover ou un bloque d'IP failover
 * un accès d'administrateur (root) au serveur via SSH
 
 ## En pratique

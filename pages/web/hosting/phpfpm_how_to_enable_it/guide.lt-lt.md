@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Svetainių talpinimo paslaugos PHP optimizavimas
 excerpt: Remdamiesi šiuo gidu jūs galite sukonfigūruoti PHP-FPM savo svetainių talpinimo paslaugoje. Ši funkcija paspartins PHP veikimą
 slug: svetainiu_talpinimo_paslaugos_php_optimizavimas

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Hardwarová diagnostika'
 slug: diagnostika-hardware-dedikovane-servery
 excerpt: 'Zjistěte, jak provést hardwarovou diagnostiku na svém dedikovaném serveru'

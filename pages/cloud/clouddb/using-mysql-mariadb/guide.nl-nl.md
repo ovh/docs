@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Aan de slag met MySQL en MariaDB
 slug: aan-de-slag-met-mysql-en-mariadb
 excerpt: Gebruik van uw databases

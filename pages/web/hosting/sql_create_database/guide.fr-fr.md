@@ -25,7 +25,7 @@ Une base de données (BDD) est utilisée pour stocker ce que l'on appelle des é
 
 ### Étape 1 : Accéder à la section de gestion de la base de données de l'hébergement web
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) et sélectionnez `Web`{.action} dans la barre de navigation en haut de l’écran. Cliquez sur `Plans d’hébergement`{.action} dans la barre de services à gauche, puis choisissez l’hébergement web concerné. Ensuite, dirigez-vous dans l’onglet `Bases de données`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) et sélectionnez `Web Cloud`{.action} dans la barre de navigation en haut de l’écran. Cliquez sur `Plans d’hébergement`{.action} dans la barre de services à gauche, puis choisissez l’hébergement web concerné. Ensuite, dirigez-vous dans l’onglet `Bases de données`{.action}.
 
 Le tableau de cette section contient toutes les bases de données créées dans le cadre de votre hébergement web.
 

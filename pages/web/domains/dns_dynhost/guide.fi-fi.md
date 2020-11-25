@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Dynaamisen nimipalvelimen määrittäminen verkkotunnukselle'
 slug: webhotelli_dynhost
 excerpt: 'Opi määrittämään dynaaminen DNS-tietue (DynHost) OVH:n verkkotunnuksellesi'

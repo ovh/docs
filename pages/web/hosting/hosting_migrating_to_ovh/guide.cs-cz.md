@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Migrace stránek a e-mailových účtů k OVH
 slug: migrace-stranek-k-ovh
 excerpt: Zjistěte, jak migrovat své webové stránky a e-mailové účty k OVH bez přerušení dostupnosti služby

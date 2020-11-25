@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Interneto svetainių talpinimas kaip diagnozuoti tuščią puslapį?
 excerpt: Šiame gide pateikiami patarimai, kaip diagnozuoti jūsų interneto svetainėje pasirodantį tuščią puslapį
 slug: interneto_svetainiu_talpinimas_kaip_diagnozuoti_tuscia_puslapi

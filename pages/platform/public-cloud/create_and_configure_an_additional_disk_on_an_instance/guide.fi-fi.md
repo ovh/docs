@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Lisälevyn luominen ja konfigurointi instanssissa
 excerpt: Lisälevyn luominen ja konfigurointi instanssissa
 slug: lisalevyn_luominen_ja_konfigurointi_instanssissa

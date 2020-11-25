@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Toevoeging van een domeinnaam aan uw Exchange
 slug: toevoegen-domein-exchange
 excerpt: Ontdek hoe u een domeinnaam kunt toevoegen aan uw Exchange-dienst

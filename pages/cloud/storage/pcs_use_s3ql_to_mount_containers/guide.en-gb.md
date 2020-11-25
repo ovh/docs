@@ -18,8 +18,8 @@ This guide shows you how to set up an object container as file system.
 
 ## Prerequisites
 
-- [Configure user access to Horizon](../platform/public-cloud/create_and_delete_a_user/guide.en-gb.md){.ref}
-- [Add storage space](../pcs_create_an_object_container/guide.en-gb.md){.ref}
+- [Configure user access to Horizon](../../public-cloud/creation-and-deletion-of-openstack-user/)
+- [Add storage space](../create_an_object_container/)
 
 
 

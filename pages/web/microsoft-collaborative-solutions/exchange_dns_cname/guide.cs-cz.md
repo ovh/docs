@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Vytvoření záznamu CNAME a přidání asociované domény
 excerpt: Zjistěte, k čemu slouží CNAME záznam a jak ho přidat v rozhraní OVH
 slug: exchange_20132016_pridani_zaznamu_cname

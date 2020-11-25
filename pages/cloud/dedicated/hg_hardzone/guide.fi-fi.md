@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: HG Hardzone
 excerpt: Ohje suorityskykytestien tekoon HG Hardzone -palvelimelle
 slug: hg_hardzone

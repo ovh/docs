@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotelli: Kaikki mitä haluat tietää .htaccess-tiedostosta'
 excerpt: Tältä sivulta löydät erilaisia .htaccess-tiedostoon liittyviä ohjeita.
 id: '1967'

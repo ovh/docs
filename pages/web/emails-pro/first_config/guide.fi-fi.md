@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'E-mail Pro konfigurointi'
 slug: ensimmainen-konfigurointi
 excerpt: 'Katso, kuinka E-mail Pro -ratkaisu konfiguroidaan. '

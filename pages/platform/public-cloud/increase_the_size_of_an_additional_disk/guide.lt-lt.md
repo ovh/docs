@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Increase the size of an additional disk'
 excerpt: 'This guide will show you how to increase the size of an additional disk, as well as enlarging its main partition.'
 slug: papildomo_disko_vietos_didinimas

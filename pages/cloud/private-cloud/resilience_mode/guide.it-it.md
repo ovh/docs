@@ -3,7 +3,7 @@ title: 'Utilizzare la modalità resilienza'
 slug: modalita-resilienza
 excerpt: 'Come impostare la funzionalità resilienza di OVH'
 legacy_guide_number: '7766742'
-section: 'Funzionalità OVH'
+section: 'Funzionalità OVHcloud'
 ---
 
 **Ultimo aggiornamento: 12/12/2018**

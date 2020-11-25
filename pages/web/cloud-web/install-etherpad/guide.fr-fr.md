@@ -1,7 +1,7 @@
 ---
 title: 'Installer Etherpad sur son hébergement Cloud Web'
 slug: installer-etherpad-cloud-web
-excerpt: 'Installez l''éditeur de texte Etherpad sur votre hébergement Cloud Web et rendez-le accessible avec votre nom de domaine'
+excerpt: "Installez l'éditeur de texte Etherpad sur votre hébergement Cloud Web et rendez-le accessible avec votre nom de domaine"
 section: Tutoriels
 order: 2
 ---
@@ -26,7 +26,7 @@ L'[hébergement Cloud Web OVH]({ovh_www}/hebergement-web/cloud-web.xml){.externa
 - Disposer d'un [hébergement Cloud Web OVH]({ovh_www}/hebergement-web/cloud-web.xml){.external}.
 - Avoir activé Node.js comme moteur d'exécution.
 - Avoir ajouté le nom de domaine concerné en tant que multisite et avoir défini Node.js comme étant son moteur d'exécution.
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Web`{.action}.
+- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Web Cloud`{.action}.
 
 ## En pratique
 

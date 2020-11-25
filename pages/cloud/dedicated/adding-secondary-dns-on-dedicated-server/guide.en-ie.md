@@ -24,7 +24,7 @@ If you want to use your [Dedicated Server](https://www.ovh.ie/dedicated_servers/
 
 ### Obtain a domain verification code
 
-Click the `Dedicated`{.action} menu, then click `Dedicated Servers`{.action} to expand the list of servers in your account:
+Click the `Bare Metal Cloud`{.action} menu, then click `Dedicated Servers`{.action} to expand the list of servers in your account:
 
 ![Secondary DNS](images/dns2-01.png){.thumbnail}
 
@@ -42,7 +42,7 @@ You will now see a message instructing you to create a TXT record for your domai
 
 ### Verify your domain
 
-Log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Web`{.action} menu. Then click `Domains`{.action} to expand the list of domains:
+Log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Web Cloud`{.action} menu. Then click `Domains`{.action} to expand the list of domains:
 
 ![Domain verification](images/domain-verification-01.png){.thumbnail}
 
@@ -64,7 +64,7 @@ Finally, confirm your entry by clicking the `Confirm`{.action} button:
 
 ### Add the secondary DNS to your server
 
-Click the `Dedicated`{.action} menu, and then click `Dedicated Servers`{.action} to expand the list of servers in your account:
+Click the `Bare Metal Cloud`{.action} menu, and then click `Dedicated Servers`{.action} to expand the list of servers in your account:
 
 ![Secondary DNS](images/dns2-01.png){.thumbnail}
 

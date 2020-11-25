@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Automaattinen varmuuskopio
 excerpt: ''
 slug: automaattinen_varmuuskopio

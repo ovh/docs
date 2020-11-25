@@ -44,9 +44,7 @@ Mit dem Klick auf `Projekt löschen`{.action} wird eine E-Mail an Sie gesendet, 
 
 ## Weiterführende Informationen
 
-[Auf einer Public Cloud Instanz einloggen](../erster-login)
-
-[Die ersten Schritte mit Ihrer Public Cloud Instanz](../die_ersten_schritte_mit_ihrer_public_cloud_instanz)
+[Die ersten Schritte mit Ihrer Public Cloud Instanz](../public-cloud-erste-schritte/)
 
 [Auf das Horizon-Interface zugreifen](../erstellung_eines_zugangs_zu_horizon)
 

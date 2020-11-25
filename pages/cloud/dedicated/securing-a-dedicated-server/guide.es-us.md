@@ -132,7 +132,7 @@ A continuación deberá introducir la contraseña del usuario *root* para valida
 
 En los sistemas UNIX, como Linux o macOS, el usuario *root* está creado por defecto y dispone de todos los permisos de administración sobre el sistema. No es recomendable (ni seguro) que solo se pueda acceder al servidor dedicado a través de este usuario, ya que podría realizar operaciones irreversibles en el servidor.
 
-Por lo tanto, le recomendamos encarecidamente que desactive el acceso directo de los usuarios *root* por SSH. Para ello, edite el archivo de configuración SSH tal y como se explica más arriba en el apartado [Cambiar el puerto de escucha por defecto del servicio SSH](../proteger-un-servidor-dedicado#cambiar-el-puerto-de-escucha-por-defecto-del-servicio-ssh){.external}.
+Por lo tanto, le recomendamos encarecidamente que desactive el acceso directo de los usuarios *root* por SSH. Para ello, edite el archivo de configuración SSH tal y como se explica más arriba en el apartado [Cambiar el puerto de escucha por defecto del servicio SSH](./#cambiar-el-puerto-de-escucha-por-defecto-del-servicio-ssh_1).
 
 Conéctese por SSH al servidor e introduzca el siguiente comando:
 
@@ -220,4 +220,4 @@ Para más información sobre este espacio de backup, consulte nuestra guía [Bac
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

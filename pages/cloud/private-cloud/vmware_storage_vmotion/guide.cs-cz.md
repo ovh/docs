@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: VMware Storage VMotion
 excerpt: ''
 slug: vmware_storage_vmotion

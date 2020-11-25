@@ -17,7 +17,7 @@ Se tiver recebido um e-mail a indicar que um dos seus endereços de e-mail foi b
 ## Requisitos
 
 - Ter uma [solução de e-mail na OVHcloud](https://www.ovh.pt/emails/){.external}.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), secção `Web`{.action}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), secção `Web Cloud`{.action}.
 
 ## Instruções
 

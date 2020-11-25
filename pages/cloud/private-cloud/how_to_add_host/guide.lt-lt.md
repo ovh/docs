@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Kaip pridėti mazgą?
 excerpt: ''
 slug: kaip_prideti_mazga

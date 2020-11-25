@@ -19,7 +19,7 @@ Podczas dodawania domeny do Twojej usługi e-mail możesz zostać poproszony o k
 - Wykupienie usługi e-mail
 - Przypisana domena do usługi e-mail, wymagająca dodania pola CNAME
 - Możliwość modyfikacji konfiguracji Twojej domeny (strefy DNS)
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Web`{.action}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Web Cloud`{.action}
 
 ## W praktyce
 

@@ -5,7 +5,7 @@ excerpt: 'Find out how to enable SGX on your dedicated server and install the Li
 section: 'Advanced use'
 ---
 
-**Last updated 22th September 2020**
+**Last updated 22nd September 2020**
 
 ## Objective
 
@@ -23,7 +23,7 @@ Enabling Intel Software Guard Extensions (SGX) on your server allows you to run 
 
 ### From the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Server`{.action} section and then select the server on which you wish to enable SGX from **Dedicated Servers** in the left-hand sidebar.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Bare Metal Cloud`{.action} section and then select the server on which you wish to enable SGX from **Dedicated Servers** in the left-hand sidebar.
 
 #### Enabling the option
 

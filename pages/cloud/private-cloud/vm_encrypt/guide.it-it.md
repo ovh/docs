@@ -50,7 +50,7 @@ In questo caso, è il valore a destra del simbolo uguale:
 
 #### Dallo Spazio Cliente
 
-Accedi allo Spazio Cliente e, nella sezione `Server`, clicca su `Private Cloud`{.action} nella colonna a sinistra e seleziona il servizio in questione.
+Accedi allo Spazio Cliente e, nella sezione `Hosted Private Cloud`, clicca su `Private Cloud`{.action} nella colonna a sinistra e seleziona il servizio in questione.
 
 Nella pagina principale, clicca sulla scheda `Sicurezza`{.action}.
 

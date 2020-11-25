@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Logging in via SFTP'
 slug: sftp_connection
 excerpt: 'Learn how to log in to your Private Cloud via SFTP'

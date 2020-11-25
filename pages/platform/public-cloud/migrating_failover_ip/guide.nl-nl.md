@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Migratie van een failover IP
 excerpt: Migratie van een failover IP
 slug: migratie_van_een_failover_ip

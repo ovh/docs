@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Konfigurace e-mailových účtů v aplikaci Outlook 2016 pro Mac'
 slug: konfigurace-outlook-2016-mac
 excerpt: 'Zjistěte, jak nakonfigurovat e-mailovou adresu služby MX Plan v aplikaci Outlook 2016 pro operační systém macOS'

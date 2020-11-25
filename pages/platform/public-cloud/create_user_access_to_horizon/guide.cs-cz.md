@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Přístup do rozhraní Horizon'
 slug: vytvoreni-pristupu-horizon
 excerpt: 'Zjistěte, jak se připojit k rozhraní Horizon'

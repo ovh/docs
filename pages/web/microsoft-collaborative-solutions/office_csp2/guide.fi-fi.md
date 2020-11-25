@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Office 365 Jälleenmyyjä (CSP2) -palvelun hallinnointi OVH
 slug: tilaa-ja-hallinnoi-lisenssiryhmaa-office-365-jalleenmyyja-csp2
 excerpt: Tutustu Office 365 Jälleenmyyjä (CSP2) -palvelun hallintaan OVH:lla

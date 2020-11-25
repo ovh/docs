@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configure a failover IP'
 slug: configure_a_failover_ip
 excerpt: 'This guide will show you how to configure a failover IP on various Linux distributions and on Windows'

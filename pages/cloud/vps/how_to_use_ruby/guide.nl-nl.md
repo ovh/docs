@@ -1,8 +1,10 @@
 ---
+deprecated: true
 title: Hoe Ruby te gebruiken
 excerpt: Algemene informatie over de Ruby distributie
 slug: hoe_ruby_te_gebruiken
 legacy_guide_number: g1370
+hidden: true
 ---
 
 

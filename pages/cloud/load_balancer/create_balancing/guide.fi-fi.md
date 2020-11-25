@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Kuormanjaon muoto
 slug: kuormantasaus-ip
 excerpt: Tutustu OVH:n Kuormantasaajan erilaisiin kuormanjakomuotoihin

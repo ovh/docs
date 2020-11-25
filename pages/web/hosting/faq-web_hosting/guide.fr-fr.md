@@ -5,7 +5,7 @@ slug: faq-hebergement
 section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 13/05/2020**
+**Dernière mise à jour le 20/11/2020**
 
 ## FAQ hébergements web OVHcloud
 
@@ -68,6 +68,13 @@ Afin de corriger cela, vous devez supprimer ou renommer le fichier « index.html
 Il peut être intéressant de simplement le renommer afin de vous permettre de le réactiver à tout moment et de vous en servir comme page d'attente. 
 
 **Autre information utile** : les fichiers de votre site doivent être déposés dans le dossier « www » afin d'être pris en compte.
+
+### Comment faire évoluer mon offre d'hébergement web ?
+
+Si vous souhaitez changer votre offre actuelle pour une offre supérieure, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et sélectionnez l'offre concernée.
+
+Depuis l'onglet `Informations générales`, dans le cadre `Abonnement`, cliquez sur le bouton `...`{.action} devant « Offre » puis cliquez sur  `Changer d'offre`{.action}. Suivez les instructions suivantes pour finaliser votre commande. Un prorata du temps restant de votre offre actuelle est rajouté sur la nouvelle offre.
+
 
 ## Aller plus loin
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuratie van een e-mailadres op de online interface van Gmail'
 slug: e-mail-hosting-handleiding-configuratie-OVH-hosted-gmail
 excerpt: 'Leer hoe u een MX Plan e-mailadres op de online interface van Gmail kunt configureren'

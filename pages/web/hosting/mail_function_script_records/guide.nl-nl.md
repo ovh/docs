@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Monitoring en beheer van geautomatiseerde e-mails in uw webhosting'
 slug: web_hosting_monitoren_van_automatische_e-mails
 excerpt: 'Ontdek hoe u geautomatiseerde e-mails, die vanuit uw OVH-webhosting worden verzonden, kunt monitoren en beheren'

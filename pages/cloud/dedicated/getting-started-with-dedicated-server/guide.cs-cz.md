@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Začínáme s dedikovaným serverem'
 slug: zaciname-s-dedikovanym-serverem
 excerpt: 'Naučte se spravovat svůj dedikovaný server'

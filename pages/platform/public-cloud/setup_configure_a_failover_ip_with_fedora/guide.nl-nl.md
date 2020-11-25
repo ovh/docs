@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configureer een failover IP met Fedora
 excerpt: Configureer een failover IP met Fedora
 slug: configureer_een_failover_ip_met_fedora

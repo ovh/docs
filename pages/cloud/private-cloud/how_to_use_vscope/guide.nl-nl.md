@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Het gebruik van vScope
 excerpt: ''
 slug: het_gebruik_van_vscope

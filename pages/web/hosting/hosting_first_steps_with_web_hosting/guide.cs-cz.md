@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: První kroky s webhostingem
 slug: prvni-kroky-s-webhostingem
 excerpt: Naučte se ovládat svůj OVH webhosting

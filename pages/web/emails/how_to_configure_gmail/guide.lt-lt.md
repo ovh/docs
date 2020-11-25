@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuring an email address on the Gmail online interface'
 slug: svetainiu_talpinimo_el_pastas_konfiguravimas_gmail_sasajoje
 excerpt: 'Find out how to configure an MX Plan email address on the Gmail online interface'

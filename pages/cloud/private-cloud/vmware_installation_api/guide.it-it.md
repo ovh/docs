@@ -22,7 +22,7 @@ Per automatizzare le azioni all’interno della propria infrastruttura è possib
 
 ##### OS
 
-In questa guida utilizzeremo una VM installata su Debian 9, creata a partire dai [template disponibili sul servizio Private Cloud](https://docs.ovh.com/gb/en/private-cloud/deploy-ovh-template/).
+In questa guida utilizzeremo una VM installata su Debian 9, creata a partire dai [template disponibili sul servizio Private Cloud](../installazione-template-ovh/).
 
 ##### Prerequisiti
 

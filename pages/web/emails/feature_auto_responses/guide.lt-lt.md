@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Atsakiklio diegimo gidas
 excerpt: Atsakiklio diegimo gidas
 slug: atsakiklio_diegimo_gidas

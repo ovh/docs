@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Atsarginiai host serveriai
 excerpt: Dedicated Cloud atsarginių serverių valdymas ir suteikimas
 slug: atsarginiai_host_serveriai

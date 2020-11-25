@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Exchange-tilin konfigurointi macOS:n Mail-sovelluksessa
 slug: exchange-automaattinen-konfigurointi-mail-macos
 excerpt: Opi konfiguroimaan Exchange-sähköpostiosoite Mail-sovelluksessa El Capitan, Sierra ja High Sierra -käyttöjärjestelmissä

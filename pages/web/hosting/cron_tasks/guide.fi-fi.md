@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotelli: Automatisoidut tehtävät/Cron'
 excerpt: 'Webhotelli: Automatisoidut tehtävät/Cron'
 id: '1990'

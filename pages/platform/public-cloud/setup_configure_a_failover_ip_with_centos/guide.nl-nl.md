@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configureer een failover IP met CentoS
 excerpt: Configureer een failover IP met CentoS
 slug: configureer_een_failover_ip_met_centos

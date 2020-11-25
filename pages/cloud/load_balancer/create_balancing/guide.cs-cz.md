@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Režimy redistribuce datové zátěže
 slug: balancing
 excerpt: Seznamte se s způsoby redistribuce datové zátěže, dostupnými na službě OVH Load Balancer

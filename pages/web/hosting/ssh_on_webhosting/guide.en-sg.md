@@ -17,13 +17,13 @@ OVHcloud web hosting plans provide you with access to a storage space you can us
 
 - an [OVHcloud web hosting plan](https://www.ovh.com/sg/web-hosting/){.external} with SSH access
 - the login credentials required to connect to your storage space via SSH
-- access to the `Web`{.action} section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
 ### Step 1: Ensure that SSH access is enabled.
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, go to the `Web`{.action} section, then click on `Hosting`{.action} in the services bar on the left-hand side. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. The information associated with your storage space will now appear. 
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action} in the services bar on the left-hand side. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. The information associated with your storage space will now appear. 
 
 Find the table in the ‘SSH’ column to check if the SSH user (or ‘SSH login’) concerned has SSH access enabled. A ‘Disabled’ label will be present if this is not the case.
 
@@ -65,7 +65,7 @@ Once the terminal is open, use the following command, replacing ‘sshlogin’, 
 ssh sshlogin@sshserver -p connectionport
 ```
 
-When you run the command, you will be prompted to enter the SSH user password. Once you have connected, follow the next step: [Interact with your storage space via SSH](./step-4-interact-with-your-storage-space-via-ssh_1).
+When you run the command, you will be prompted to enter the SSH user password. Once you have connected, follow the next step: [Interact with your storage space via SSH](./#step-4-interact-with-your-storage-space-via-ssh_1).
 
 ![usessh](images/use-ssh-step3.png){.thumbnail}
 

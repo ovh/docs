@@ -57,7 +57,7 @@ Na janela que se abrir, indique em `IP/máscara`{.action} o endereço IP ou a m�
 
 No caso de um alojamento web OVHcloud, deverá autorizar o endereço IP gateway deste último. 
 
-Para identificar esse gateway, aceda à **Área de Cliente OVHcloud**. Clique no separador `Web` e, a seguir, em `Alojamento`{.action}, na coluna à esquerda. Selecione o seu alojamento na lista e clique no separador `FTP - SSH`.
+Para identificar esse gateway, aceda à **Área de Cliente OVHcloud**. Clique no separador `Web Cloud` e, a seguir, em `Alojamento`{.action}, na coluna à esquerda. Selecione o seu alojamento na lista e clique no separador `FTP - SSH`.
 
 A menção **Servidor FTP»** vai indicar-lhe o número de cluster em que se encontra, como ilustrado abaixo.
 
@@ -73,7 +73,7 @@ Depois de obter o número do cluster em que está o seu alojamento, consulte a p
 
 ### Modificar a solução do servidor de bases de dados
 
-Para modificar a solução do servidor de bases de dados, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados.
+Para modificar a solução do servidor de bases de dados, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados.
 No separador **«Informações gerais»**, que aparece de forma predefinida, clique em `...`{.action} à direita da menção «RAM» e, depois, em `Alterar o volume de RAM`{.action} de modo a proceder à encomenda desta modificação.
 
 ![sql-privado](images/private-sql-order-ram01.png){.thumbnail}
@@ -98,7 +98,7 @@ Após a validação dos contratos, será reencaminhado para a ordem de encomenda
 
 ### Alterar a configuração do servidor de bases de dados
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor SQL Privado. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor SQL Privado. 
 
 #### Instância MySQL e MariaDB
 
@@ -190,7 +190,7 @@ show variables like "version";
 
 Isto permite-lhe visualizar o tempo de execução dos pedidos no servidor de bases de dados nas últimas 24 horas.
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados. 
 
 Aceda ao separador `Métricas` do servidor de bases de dados. Vai encontrar o gráfico **«Estatísticas do tempo de execução dos pedidos»**.
 
@@ -204,7 +204,7 @@ Aceda ao separador `Métricas` do servidor de bases de dados. Vai encontrar o gr
 
 Estes logs, chamados **«slow-query.log»**, podem ser obtidos na raiz do espaço SFTP do servidor de bases de dados. 
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados. 
 
 No separador `Informações gerais`, vai encontrar a secção **«SFTP»** no quadro **«Informações de conexão»**.
 
@@ -217,7 +217,7 @@ Se o ficheiro estiver vazio, isso revela a inexistência de pedidos lentos.
 
 #### Acompanhar a RAM consumida
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados. 
 
 Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **«Estatísticas de memória RAM utilizada»**.
 
@@ -227,7 +227,7 @@ Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **�
 
 Este gráfico permite acompanhar, relativamente às últimas 24 horas, o volume de conexões por minuto no servidor de bases de dados.
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados. 
 
 Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **«Estatísticas do total de conexões por minuto»**.
 

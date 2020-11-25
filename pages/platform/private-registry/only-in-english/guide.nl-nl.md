@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVHcloud Managed Private Registry'
 slug: only-in-english
 excerpt: 'Available in English only'

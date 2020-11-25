@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2013/2016: Resurssitilien käyttö'
 excerpt: Tämä ohje neuvoo resurssitilien käytössä.
 slug: exchange_20132016_resurssitilien_kaytto

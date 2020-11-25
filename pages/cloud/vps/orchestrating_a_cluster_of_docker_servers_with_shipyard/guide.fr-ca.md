@@ -2,6 +2,7 @@
 title: Orchestrer un cluster de Docker serveurs avec Shipyard
 slug: orchestrer_un_cluster_de_docker_serveurs_avec_shipyard
 section: Utilisation avancée
+hidden: true
 ---
 
 
@@ -120,7 +121,7 @@ iptables-persistent save
 
 
 ## 
-Une fois que Docker est installé sur nos 3 serveurs (voir [ce guide](https://community.runabove.com/kb/en/instances/docker-in-5-minutes-on-runabove-with-docker-machine.html)). Nous allons lier le daemon Docker a un port, par ex. port 2375 - port officiel assigné par [IANA](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker), de cette façon ces serveurs peuvent communiquer avec le serveur maître. Commencez par arrêter Docker sur chacun des serveurs avec cette commande:
+Une fois que Docker est installé sur nos 3 serveurs Nous allons lier le daemon Docker a un port, par ex. port 2375 - port officiel assigné par [IANA](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker), de cette façon ces serveurs peuvent communiquer avec le serveur maître. Commencez par arrêter Docker sur chacun des serveurs avec cette commande:
  
 ```
 service docker stop
@@ -200,7 +201,7 @@ Confirm: <RE-ENTER_YOUR_PASSWORD>
 
 Après avoir complété cette opération, nous utiliserons ctrl+d pour quitter le CLI.
 
-Nous pouvons maintenant accéder à l'interface Shipyard via http://<your-host-ip>:8080 avec l'utilisateur "admin" et son mot de passe.
+Nous pouvons maintenant accéder à l'interface Shipyard via `http://<your-host-ip>:8080` avec l'utilisateur "admin" et son mot de passe.
 
 Une fois connectés, nous allons ajouter des engines (nodes) via l'interface web de Shipyard sous "Engines":
 ![](images/img_2612.jpg){.thumbnail}

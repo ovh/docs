@@ -19,7 +19,7 @@ When you add a domain name to your email solution, you may be required to config
 - an OVH email solution
 - a domain name added to your email solution requesting the addition of a CNAME record
 - the right to modify your domain name’s configuration (via its DNS zone)
-- access to the `Web`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the `Web Cloud`{.action} section of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 

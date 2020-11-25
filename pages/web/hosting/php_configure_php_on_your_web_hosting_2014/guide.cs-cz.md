@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Změna PHP verze na webhostingu OVH'
 slug: konfigurace-php-webhosting
 excerpt: 'Zjistěte, jak změnit verzi PHP na svém webhostingovém řešení'

@@ -24,13 +24,13 @@ The KVM console allows you to connect directly to your VPS without the need to u
 
 #### With a current VPS range
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Server`{.action} section and select your server from the list in the left-hand navigation under `VPS`{.action}. In this section, click on `...`{.action} next to the name of your VPS in the "Your VPS" box.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `VPS`{.action}. In this section, click on `...`{.action} next to the name of your VPS in the "Your VPS" box.
 
 ![Open KVM](images/kvm-new1.png){.thumbnail}
 
 #### With older VPS ranges
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Server`{.action} section and select your server from the list in the left-hand navigation under `VPS`{.action}. In this section, click on the shortcut link labelled `KVM`{.action}.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `VPS`{.action}. In this section, click on the shortcut link labelled `KVM`{.action}.
 
 ![Click on the KVM button](images/kvm-new2.png){.thumbnail}
 
@@ -41,6 +41,7 @@ The KVM screen will now open, which is a small window showing a connection to yo
 > [!primary]
 >
 > If you have issues with double typing, the issue may originate due to auto screen adjustment. We recommend opening the KVM in a new window using the "Open in a new window" button.
+>
 > Should you still have issues with the screen, we recommend removing from the URL the "auto" part. If the URL is https://compute.sbg1.cloud.ovh.net:6080/vnc_auto.html?token=xxxxxxxxxxxx then it should become https://compute.sbg1.cloud.ovh.net:6080/vnc.html?token=xxxxxxxxxxxx (the link for you may be different, this is only illustrating which part of the URL needs to be removed)
 >
 

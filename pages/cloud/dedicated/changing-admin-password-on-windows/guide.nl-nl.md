@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Wijzigen van het admin-wachtwoord op een Windows dedicated server'
 slug: wijzigen-admin-wachtwoord-windows
 excerpt: 'Leer hoe u het admin-wachtwoord op een Windows dedicated server kunt veranderen'

@@ -3,6 +3,7 @@ title: Gestire un cluster di server Docker con Shipyard
 excerpt: ''
 slug: gestire_un_cluster_di_server_docker_con_shipyard
 legacy_guide_number: g1762
+hidden: true
 ---
 
 
@@ -134,7 +135,7 @@ iptables-persistent save
 
 
 ## 
-Dopo aver installato Docker sulle 3 macchine (cf. [la nostra guida](https://www.ovh.it/g1708.ottimizza_con_docker_il_tuo_sito_wordpress_ospitato_su_un_vps), puoi disporre anche delle istanze RunAbove in dotazione con Docker. Per maggiori informazioni, consulta [questa guida](https://community.runabove.com/kb/en/instances/docker-in-5-minutes-on-runabove-with-docker-machine.html)). Puoi attivare un Docker daemon su una porta (ad esempio la 2375, porta ufficiale assegnata dallo [IANA](http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml?search=docker)) per far dialogare le macchine con il master.
+
 Per farlo, chiudi Docker su tutte le macchine con questo comando:
 
 
@@ -226,7 +227,7 @@ Confirm: <ANCORA>
 
 Clicca ctrl+d per uscire dalla CLI.
 
-Accedi all'interfaccia di Shipyard http://<your-host-ip>:8080 e utilizza l'identificativo "admin" e la password scelta per effettuare il login.
+Accedi all'interfaccia di Shipyard `http://<your-host-ip>:8080` e utilizza l'identificativo "admin" e la password scelta per effettuare il login.
 
 Una volta eseguita questa operazione, registra le macchine (i nodi) nella sezione "engines" dell'interfaccia Web di Shipyard.
 
@@ -276,5 +277,5 @@ Nella sezione container, ora visualizzi e gestisci tutti i container in esecuzio
 scegli se avviare i container su tutti i nodi o solo su alcuni, selezionando la label corrispondente ai nodi su cui vuoi eseguire il deploy del container:
 
 ![](images/img_2616.jpg){.thumbnail}
-A questo punto hai un sistema di gestione delle tue macchine Docker e puoi occuparti delle applicazioni/container nel tuo cluster in modo semplice e veloce con un'interfaccia grafica. Se vuoi provare Docker, accedi alla nostra Alpha Sailabove disponibile su [https://labs.runabove.com/docker/](https://labs.runabove.com/docker/). Stiamo realizzando anche un template Ubuntu 14.04 preinstallato su VPS Cloud e VPS Classic (disponibile con tutte le nostre offerte VPS, tranne Classic 1), in modo che la tua macchina sia pronta ad avviare i container usufruendo dei vantaggi delle offerte VPS OVH.
+
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuratie van Exchange in Outlook 2016 voor Mac
 slug: configuratie-outlook-2016-mac
 excerpt: Leer hoe u uw Exchange-account in Outlook 2016 voor Mac kunt configureren

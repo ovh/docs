@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 5. vaihe - Kirjautuminen virtuaalityöpöydille
 slug: kirjautuminen-tyopoydille
 excerpt: Katso, kuinka virtuaalityöpöydille kirjaudutaan.

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuring your Email Pro solution'
 slug: first-configuration-email-pro
 excerpt: 'Find out how to configure your Email Pro solution'

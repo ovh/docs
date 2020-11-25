@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH e-mail handleiding: Outlook 2010 configuratie'
 excerpt: ''
 slug: ovh_e-mail_handleiding_outlook_2010_configuratie

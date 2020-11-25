@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuring IPv6 on dedicated servers'
 slug: network-ipv6
 excerpt: 'This guide explains how to configure IPv6 addresses on our infrastructure.'

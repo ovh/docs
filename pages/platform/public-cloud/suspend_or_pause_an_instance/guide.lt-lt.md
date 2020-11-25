@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Virtualios mašinos sustabdymas ar veikimo pertraukimas
 excerpt: Kaip sustabdyti ar pertraukti virtualios mašinos veikimą Horizon sistemoje?
 slug: virtualios_masinos_sustabdymas_ar_veikimo_pertraukimas

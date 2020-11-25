@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Kaip valdyti resursus?
 excerpt: ''
 slug: kaip_valdyti_resursus

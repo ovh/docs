@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: IP Failover konfigūravimas Debian sistemoje
 excerpt: IP Failover konfigūravimas Debian sistemoje
 slug: ip_failover_konfiguravimas_debian_sistemoje

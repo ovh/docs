@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Een VPS opnieuw verdelen na een upgrade
 slug: verdeling-vps-suite-upgrade
 section: Aan de slag

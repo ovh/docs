@@ -17,7 +17,7 @@ OVHcloud Web Hosting plans provide you with access to a storage space you can us
 ## Requirements
 
 - an [OVHcloud Web Hosting plan](https://www.ovh.com.au/web-hosting/)
-- access to the `Web`{.action} section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
@@ -37,7 +37,7 @@ To log in to your storage space, you will need the following:
 > **If you already have this information**, you can continue directly to step 2: "[Access your storage space](./#step-2-access-your-storage-space)".
 > 
 
-If you don’t have this information, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, go to the `Web`{.action} section, then click on `Hosting`{.action} in the services bar on the left-hand side. Select the name of the Web Hosting plan concerned, and click on the `FTP - SSH`{.action} tab. 
+If you don’t have this information, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action} in the services bar on the left-hand side. Select the name of the Web Hosting plan concerned, and click on the `FTP - SSH`{.action} tab. 
 
 The information about your storage space will appear, along with a table listing the FTP and SSH users created on your Web Hosting plan.
 

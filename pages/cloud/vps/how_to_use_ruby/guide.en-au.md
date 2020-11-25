@@ -3,7 +3,7 @@ title: How to use Ruby
 excerpt: General information on the ruby distribution
 slug: how_to_use_ruby
 section: Advanced usage
-hidden: yes
+hidden: true
 ---
 
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Spartesnis failų siutimas į Object Storage
 excerpt: Spartesnis failų siutimas į Object Storage
 slug: spartesnis_failu_siutimas_i_object_storage

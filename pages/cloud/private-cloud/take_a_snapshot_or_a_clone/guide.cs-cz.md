@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Vytvoření snapshotu či klonu
 excerpt: ''
 slug: vytvoreni_snapshotu_ci_klonu

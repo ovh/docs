@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Nastavení certifikátu SSL EV
 slug: ssl-ev
 excerpt: Certifikáty SSL EV ručí za ověření provozovatele webových stránek a garantují bezpečné prostředí pro provádění online plateb

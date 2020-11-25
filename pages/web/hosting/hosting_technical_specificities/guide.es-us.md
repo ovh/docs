@@ -32,8 +32,6 @@ section: 'Configuración del alojamiento'
 
 - Las conexiones FTP deben utilizar el **modo pasivo**. Asegúrese de que su script o su cliente FTP estén configurados correctamente.
 
-- Para conectarse por **SFTP**, se necesita un [**Hosting Profesional**](https://www.ovh.com/world/es/hosting/) o superior. Puede actualizar su servicio directamente en [el área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) ("Información general", "Plan", "Cambiar el plan").
-
 ### Bases de datos/SQL
 
 ### Conexiones simultáneas a la base de datos
@@ -119,7 +117,7 @@ Consulte las páginas de información respectiva para verificar las librerías d
 
 Puede consultar información detallada de su cluster en este enlace: [https://cluster015.hosting.ovh.net/infos/](https://cluster015.hosting.ovh.net/infos/){.external}
 
-Sustituya el cluster indicado en la URL por el suyo. Para saber en qué cluster de alojamiento web se encuentra su servicio, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} y seleccione `Web`{.action} en la barra de navegación superior. Haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, haga clic en la pestaña `FTP - SSH`{.action}. La URL de acceso a su alojamiento le indicará el número de cluster.
+Sustituya el cluster indicado en la URL por el suyo. Para saber en qué cluster de alojamiento web se encuentra su servicio, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} y seleccione `Web Cloud`{.action} en la barra de navegación superior. Haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, haga clic en la pestaña `FTP - SSH`{.action}. La URL de acceso a su alojamiento le indicará el número de cluster.
 
 Para conocer las particularidades técnicas del hosting Cloud Web, diríjase directamente al enlace <https://cloudweb-infos.hosting.ovh.net/>.
 

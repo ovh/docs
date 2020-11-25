@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: VM paskirstymo tarp mazgų optimizavimas
 excerpt: 'Kaip paskirstyti VM tarp mazgų, tam kad optimizuoti resursus?'
 slug: vm_paskirstymo_tarp_mazgu_optimizavimas

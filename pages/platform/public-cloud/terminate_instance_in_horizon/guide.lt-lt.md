@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Virtualios mašinos panaikinimas Horizon sąsajoje
 excerpt: Kaip panaikinti virtualią mašiną Horizon sąsajoje
 slug: virtualios_masinos_panaikinimas_horizon_sasajoje

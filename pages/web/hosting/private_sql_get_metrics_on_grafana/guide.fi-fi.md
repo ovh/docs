@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Private SQL -palvelimen mittaritietojen hakeminen Grafanalla
 excerpt: Private SQL -palvelimen mittaritietojen hakeminen Grafanalla
 slug: private_sql_-palvelimen_mittaritietojen_hakeminen_grafanalla

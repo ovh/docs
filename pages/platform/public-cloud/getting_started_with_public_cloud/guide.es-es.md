@@ -87,8 +87,6 @@ Si lo necesita, tenemos a su disposición una guía sobre la [creación de insta
 ## Controlar el consumo
 Haga clic en «Gestión y consumo del proyecto» para gestionar sus formas de pago, códigos promocionales y permisos de usuario y para analizar su facturación.
 
-Para ello puede consultar [esta guía](https://docs.ovh.com/es/public-cloud/analizar_y_gestionar_la_facturacion/).
-
 ![](images/img_4662.jpg){.thumbnail}
 Ejemplo de estimación de facturación:
 

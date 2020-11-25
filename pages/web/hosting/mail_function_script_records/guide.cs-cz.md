@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Monitoring a správa automatických e-mailů'
 slug: monitoring-automatickych-emailu
 excerpt: 'Zjistěte, jak na monitoring a správu automatických e-mailů odesílaných z webhostingového řešení OVH'

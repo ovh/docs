@@ -1,7 +1,7 @@
 ---
-title: 'Créer une adresse e-mail avec son offre d'hébergement Web'
+title: "Créer une adresse e-mail avec son offre d'hébergement Web"
 slug: creation-dune-adresse-e-mail
-excerpt: 'Apprenez à créer une adresse e-mail avec votre offre d'hébergement Web'
+excerpt: "Apprenez à créer une adresse e-mail avec votre offre d'hébergement Web"
 section: 'Premiers pas'
 order: 2
 ---
@@ -18,7 +18,7 @@ Les adresses e-mail de l’offre MX Plan permettent d’envoyer et de recevoir v
 
 - Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}, ou l'offre MX Plan commandée séparément.
 - Avoir encore la possibilité de créer des adresses e-mail dans le cadre de votre offre.
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie `Web`{.action}.
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie `Web Cloud`{.action}.
 
 > [!primary]
 >

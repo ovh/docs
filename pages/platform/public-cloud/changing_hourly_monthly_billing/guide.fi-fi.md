@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Tuntilaskutuksesta kuukausilaskutukseen siirtyminen
 excerpt: Katso, kuinka Public Cloud -instanssin laskutustyyppiä muutetaan
 slug: public-cloud-laskutustyypin-muuttaminen

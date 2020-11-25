@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimo el. paštas: Konfigūravimas BlackBerry aplinkoje'
 excerpt: Šiame gide aprašomas OVH el. pašto konfigūravimas BlackBerry aplinkoje
 slug: svetainiu_talpinimo_el_pastas_konfiguravimas_blackberry_aplinkoje

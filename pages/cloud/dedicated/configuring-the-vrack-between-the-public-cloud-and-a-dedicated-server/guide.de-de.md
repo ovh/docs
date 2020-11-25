@@ -72,7 +72,7 @@ Um den Vorgang abzuschließen, wählen Sie Ihre Installationsoptionen aus und kl
 
 ### Netzwerkinterfaces konfigurieren
 
-Um die Netzwerkinterfaces zwischen der neu erstellten Public Instanz und Ihrem dedizierten Server einzurichten, befolgen Sie unsere Anleitung „[Mehrere dedizierte Server im vRack konfigurieren](https://docs.ovh.com/de/dedicated/mehrere-dedizierte-server-im-vrack-konfigurieren/){.external}“
+Um die Netzwerkinterfaces zwischen der neu erstellten Public Instanz und Ihrem dedizierten Server einzurichten, befolgen Sie unsere Anleitung „[Mehrere dedizierte Server im vRack konfigurieren](../mehrere-dedizierte-server-im-vrack-konfigurieren/)“
 
 
 ## Weiterführende Informationen

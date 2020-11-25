@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: SSH prieiga'
 excerpt: 'Svetainių talpinimas: SSH prieiga'
 id: '1962'

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Rankinis konfigūravimas Outlook
 excerpt: Jeigu negalite sukurti SRV lauko, reikalingo automatiniam Outlook konfigūravimui, sekite šio gido nurodymus, kad sukonfigūruotumėte Outlook patys
 slug: rankinis_konfiguravimas_outlook

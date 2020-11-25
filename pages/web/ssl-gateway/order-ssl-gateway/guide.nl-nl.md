@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Bestel een SSL Gateway
 slug: order-ssl-gateway
 links: 

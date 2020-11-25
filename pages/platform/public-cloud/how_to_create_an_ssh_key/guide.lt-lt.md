@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Create SSH keys'
 slug: create-ssh-keys
 excerpt: 'This guide will show you how to create an SSH key, so that you can log into your instance.'

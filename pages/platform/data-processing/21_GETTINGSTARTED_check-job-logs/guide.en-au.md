@@ -6,7 +6,7 @@ section: Getting started
 order: 1
 ---
 
-**Last updated 06<sup>th</sup> March, 2020**
+**Last updated 14<sup>th</sup> November, 2020**
 
 ## Objective
 
@@ -39,6 +39,11 @@ Follow these steps to download your job's logs from your job dashboard:
 - If your job is still running, you will see its live logs in this tab.
 
 ![logs real time](images/realtimelogs.png){.thumbnail}
+
+>[!warning]
+>
+> When streaming logs you are limited to 10 000 character at a time. Meaning you could experience missing logs in streaming mode. All logs will be uploaded to your Object Storage at job end.
+>
 
 - If your job is already finished, click on `Download logs`{.action} to download the output logs of your job from your Object Storage account. 
 

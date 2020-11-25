@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Getting started with the CloudDB service'
 slug: pradzia-su-clouddb
 excerpt: 'Find out how to get started with the CloudDB service'

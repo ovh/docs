@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellin PHP-version vaihtaminen'
 slug: php-konfigurointi_ovhn_webhotellissa
 excerpt: 'Katso, kuinka OVH:n webhotellin PHP-versio vaihdetaan'

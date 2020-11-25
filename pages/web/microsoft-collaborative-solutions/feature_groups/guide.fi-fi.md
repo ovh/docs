@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2013/2016: postituslistan käyttö'
 excerpt: ''
 slug: exchange_20132016_postituslistan_kaytto

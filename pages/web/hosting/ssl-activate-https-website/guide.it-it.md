@@ -18,7 +18,7 @@ Gli [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} includono di d
 
 - Disporre di un [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} con [certificato SSL](https://www.ovh.it/ssl/){.external} attivo
 - Disporre di almeno un sito Internet installato e accessibile sul proprio hosting Web OVH
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web`{.action}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web Cloud`{.action}
 
 ## Procedura
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Úprava DNS serverů OVH domény'
 slug: obecne-informace-dns
 excerpt: 'Naučte se spravovat DNS servery své OVH domény'

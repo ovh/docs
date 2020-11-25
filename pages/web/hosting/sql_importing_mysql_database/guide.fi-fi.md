@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Varmuuskopion tuominen webhotellin tietokantaan'
 slug: ohje-mysql-tietokannan-tuominen
 excerpt: 'Katso, kuinka varmuuskopio tuodaan webhotellisi tietokantaan'

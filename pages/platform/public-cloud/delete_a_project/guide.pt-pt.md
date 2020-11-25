@@ -46,6 +46,6 @@ Ao clicar no botão para eliminar, receberá um e-mail a perguntar se pretende c
 
 ## Quer saber mais?
 
-[Primeiros Passos com Public Cloud](https://docs.ovh.com/pt/public-cloud/comecar_com_o_public_cloud_identificar-se_e_criar_um_projeto/){.external}.
+[Primeiros Passos com Public Cloud](../public-cloud-primeiros-passos/)
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>

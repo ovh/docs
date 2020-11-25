@@ -3,7 +3,7 @@ title: Activer et utiliser Veeam Backup Managed
 slug: veeam-backup-as-a-service
 excerpt: Découvrez comment activer et utiliser l'option Veeam Backup Managed
 legacy_guide_number: '2883711'
-section: Services et options OVH
+section: Services et options OVHcloud
 order: 06
 ---
 
@@ -31,9 +31,9 @@ Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située 
 
 ### Activer le service
 
-La première étape consiste à activer le service depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Pour cela, rendez-vous dans la partie `Private Cloud`{.action} de l'onglet `Server`{.action}. Cliquez sur l'infrastructure vSphere concernée, puis sur le datacenter souhaité. Choisissez l'onglet `Backup`{.action}.
+La première étape consiste à activer le service depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Pour cela, rendez-vous dans la partie `Private Cloud`{.action} de l'onglet `Hosted Private Cloud`{.action}. Cliquez sur l'infrastructure vSphere concernée, puis sur le datacenter souhaité. Choisissez l'onglet `Backup`{.action}.
 
-![Activer le backup](images/backuppcc_01_fr.png){.thumbnail}
+![Activer le backup](images/veeam-managed-controlp_new.png){.thumbnail}
 
 Choisissez le niveau de l'offre de sauvegarde puis continuez en cliquant sur `Choisir l'offre`{.action}.
 

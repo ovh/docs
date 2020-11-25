@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Začínáme s Private SQL
 slug: zaciname-s-private-sql
 excerpt: Zjistěte, jak používat službu Private SQL

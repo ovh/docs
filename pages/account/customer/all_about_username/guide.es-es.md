@@ -117,6 +117,14 @@ Introduzca el código en el campo «Código de validación» y confirme.
 
 ![ID de cliente](images/nichandle08.png){.thumbnail}
 
+### Modificación del tipo de cuenta
+
+Al editar su perfil, haga clic en el símbolo `Tipo de cuenta`. Un menú desplegable le permite definir el tipo de cuenta correspondiente a su situación.
+
+![identifiant client](images/nichandle09.png){.thumbnail}
+
+Una vez introducidos los datos, haga clic en el botón `Aceptar` {.action} .
+
 ### Ejercer sus derechos en relación con sus datos personales
 
 De acuerdo con el Reglamento General de Protección de Datos (RGPD), puede solicitar ejercer los derechos relacionados con la protección de sus datos personales rellenando [este formulario](https://www.ovh.es/proteccion-datos-personales/ejercer-derechos){.external}.

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: IP Ripe / vRack1.5 naujoimas
 excerpt: Kaip įtraukti VM į vRack1.5 arba naudoti vieną IP iš RIPE bloko?
 slug: ip_ripe_vrack15_naujoimas

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: E-mail Pro -tilin konfigurointi Androidilla Gmail-sovelluksen kautta
 slug: konfigurointi-android
 excerpt: Opi konfiguroimaan E-mail Pro -tili Androidilla Gmail-sovelluksen avulla

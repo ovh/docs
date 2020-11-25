@@ -17,13 +17,13 @@ OVHcloud web hosting plans provide you with access to a storage space you can us
 
 - an [OVHcloud web hosting plan](https://www.ovh.co.uk/web-hosting/){.external} with SSH access
 - the login credentials required to connect to your storage space via SSH
-- access to the `Web`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
 ### Step 1: Ensure that SSH access is enabled.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Web`{.action} section, then click on `Hosting`{.action} in the services bar on the left-hand side. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. The information associated with your storage space will now appear. 
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Web Cloud`{.action} section, then click on `Hosting`{.action} in the services bar on the left-hand side. Select the name of the web hosting plan, and click on the `FTP - SSH`{.action} tab. The information associated with your storage space will now appear. 
 
 Find the table in the ‘SSH’ column to check if the SSH user (or ‘SSH login’) concerned has SSH access enabled. A ‘Disabled’ label will be present if this is not the case.
 
@@ -65,7 +65,7 @@ Once the terminal is open, use the following command, replacing ‘sshlogin’, 
 ssh sshlogin@sshserver -p connectionport
 ```
 
-When you run the command, you will be prompted to enter the SSH user password. Once you have connected, follow the next step: [Interact with your storage space via SSH](./step-4-interact-with-your-storage-space-via-ssh_1).
+When you run the command, you will be prompted to enter the SSH user password. Once you have connected, follow the next step: [Interact with your storage space via SSH](./#step-4-interact-with-your-storage-space-via-ssh_1).
 
 ![usessh](images/use-ssh-step3.png){.thumbnail}
 
@@ -93,7 +93,7 @@ To interact with your storage space, you can use commands, which each have a dir
 |cd `..`|Change directory|Enables you to change the working directory, one level up in the tree-view of your directories.|
 |cd|Change directory|If you do not specify an argument, you can move to the root of your storage space (home).|
 |ls|List|Lists the contents of your working directory. Add the attributes to modify the result of the command (like `ls -ulhG`).| 
-|chmod `droit` `arg`|Change mode|Change the rights of the file or directory mentioned as an `arg` argument.| 
+|chmod `right` `arg`|Change mode|Change the rights of the file or directory mentioned as an `arg` argument.| 
 |mkdir `arg`|Make directory|Enables you to create a directory with the argument name `arg`.| 
 |touch `arg`|Touch|Creates an empty file with the name mentioned in the `arg` argument, if a file with this name does not already exist.|
 |rm `arg`|Remove|Removes the file mentioned in the `arg` argument.| 

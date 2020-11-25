@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 1. část - seznámení s platformou VMware Horizon 7.1
 slug: platforma-horizon-7
 excerpt: Zjistěte, jak se připojit k platformě VMware Horizon 7.1

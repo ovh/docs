@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Ohje automaattisen vastauksen luomiseen
 excerpt: Ohje automaattisen vastauksen luomiseen
 slug: ohje_automaattisen_vastauksen_luomiseen

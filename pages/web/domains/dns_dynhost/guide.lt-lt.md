@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuring a dynamic DNS for a domain name'
 excerpt: 'Find out how to configure a dynamic DNS record (DynHost) for your OVH domain name'
 slug: svetainiu_talpinimas_dynhost

@@ -3,7 +3,7 @@ title: Spare host delivery and return
 slug: spare-host-howto
 excerpt: Find out how the replacement of a host works
 legacy_guide_number: '2883590'
-section: OVH Features
+section: OVHcloud Features
 order: 04
 ---
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Sähköpostiosoitteen konfigurointi Outlook 2016- sovelluksella Mac-koneella'
 slug: konfigurointi-outlook-2016-mac
 excerpt: 'Opi konfiguroimaan MX Plan -sähköpostiosoite Outlook 2016 -sovelluksella Mac-koneella'

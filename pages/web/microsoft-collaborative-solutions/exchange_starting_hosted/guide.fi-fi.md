@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Hosted Exchange -palvelun käytön aloitus
 excerpt: Katso, kuinka Hosted Exchange -palvelun käyttö aloitetaan
 slug: exchange_20132016_palvelun_ensimmainen_konfigurointi

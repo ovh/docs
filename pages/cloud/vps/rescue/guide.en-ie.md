@@ -1,54 +1,82 @@
 ---
-title: Activating Rescue Mode on VPS
+title: Activating rescue mode on a VPS
 slug: rescue
-excerpt: This guide will show you how to reboot your VPS in rescue mode.
-section: Diagnostic and rescue mode
+excerpt: Find out how to use the OVHcloud rescue mode for troubleshooting
+section: Diagnostics and rescue mode
 ---
 
-**Last updated 17th April 2018**
+**Last updated 24th November 2020**
 
 ## Objective
 
-In rescue mode, you can reboot your server on an independent OVH configuration. Your disk can then be mounted like an independent partition.
+Rescue mode is a tool provided by OVHcloud to boot your VPS into a temporary operating system. You can utilise it to diagnose and possibly resolve various issues on your primary OS.
 
-The advantage of this is that you can carry out tests and make configuration changes when it is most convenient for you, and when it will have the least impact on the operations performed by your server. This also allows you to correct any configuration errors made, which prevented you from accessing the server from the drive.
+Usual tasks the rescue mode is appropriate for include:
+
+- Resetting your root password
+- Diagnosing network problems
+- Repairing a broken operating system
+- Fixing a software firewall misconfiguration
+- Testing disk performance
+
+Performing checks in rescue mode helps to determine whether an issue is software-related or the hardware is at fault. We recommend doing this before contacting our support teams.
 
 > [!warning]
 >
-> If you have any services online, rescue mode will interrupt them as the machine is being rebooted into the OVH rescue environment.
-> 
+> If you have any services still online, rescue mode will interrupt them as the machine is being rebooted into the auxiliary rescue environment.
+>
 
-This guide will show you how to reboot your VPS in rescue mode.
+**This guide explains how to reboot your VPS into rescue mode.**
 
 ## Requirements
 
-- You must be logged in to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager).
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- an OVHcloud [VPS service](https://www.ovhcloud.com/en-ie/vps/) already set up
 
+> [!warning]
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>
 
 ## Instructions
 
-Once you have logged in to your Control Panel, go to the `Cloud`{.action} section, then to `Servers`{.action} in the left-hand column. Choose your VPS in the left-hand column:
+### Activating rescue mode
 
-![VPS area in the Control Panel](images/vps_rescue1.png){.thumbnail}
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `VPS`{.action}.
 
-On the main screen of your VPS, click on the `Reboot in rescue mode`{.action} button and confirm that you wish to reboot it:
+#### With a current VPS range
 
-![Confirm rescue mode](images/vps_rescue2.png){.thumbnail}
+ On the `Home`{.action} tab, click on `...`{.action} next to **Boot** in the "Your VPS" box.
 
-A progress bar will show how the reboot task is progressing (this can take several minutes):
+![rescue mode control panel](images/rescue_new.png){.thumbnail}
 
-![Rescue mode progress](images/rescue_task.png){.thumbnail}
+Select `Reboot in rescue mode`{.action} from the menu.
+
+#### With older VPS ranges
+
+On the `Home`{.action} tab, click on the shortcut link labelled `Reinstall my VPS`{.action}.
+
+![rescue mode control panel](images/rescue_legacy.png){.thumbnail}
+
+Click on the checkbox `**Reboot in rescue mode**` and then on `Confirm`{.action}.
+
+### Using rescue mode
+
+After you have initiated the reboot, a progress bar will show how the task is progressing. Note that this can take several minutes.
 
 > [!primary]
 >
-> Once you have completed this step, you will receive an automated email with the SSH credentials for rescue mode. This email is also available on your Control Panel, in the `My account`{.action} section, then `Emails received`{.action}.
-> 
+> You will receive an automated email with the SSH credentials for rescue mode access. Please wait for the email to arrive before taking any further action. This email is also available in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) when it is sent: Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Service emails`{.action}.
+>
 
-You can now connect via SSH to your VPS in rescue mode. Once these changes have been completed with rescue mode, you can reboot the VPS on your main hard drive by pressing the `Reboot my VPS`{.action} button.
+You can now connect via SSH to your VPS using the dedicated rescue mode credentials. Once you have completed your actions in rescue mode, reboot the VPS again in 'normal' mode from the OVHcloud Control Panel.
 
 
 ## Go further
 
-[Introduction to SSH](https://docs.ovh.com/ie/en/dedicated/ssh-introduction/)
+[Changing your root password on a VPS](../root-password/)
 
-Join our user community on <https://community.ovh.com>.
+[Introduction to SSH](../../dedicated/ssh-introduction/)
+
+Join our community of users on <https://community.ovh.com/en/>.

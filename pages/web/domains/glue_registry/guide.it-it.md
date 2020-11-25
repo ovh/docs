@@ -20,7 +20,7 @@ In base alle esigenze, il nome dei server DNS dei domini OVH può essere persona
 ## Prerequisiti
 
 - Disporre di un [dominio](https://www.ovh.it/domini/){.external} registrato in OVH  
-- Avere accesso alla sezione `Web`{.action} dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Procedura
 
@@ -28,7 +28,7 @@ In base alle esigenze, il nome dei server DNS dei domini OVH può essere persona
 
 ### Step 1: aggiungi i record GLUE
 
-Accedi all’area `Web` dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Domini`{.action} della colonna a sinistra e clicca sulla sulla scheda `GLUE`{.action}.
+Accedi all’area `Web Cloud` dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Domini`{.action} della colonna a sinistra e clicca sulla sulla scheda `GLUE`{.action}.
 
 Visualizzi una tabella con tutti i record GLUE configurati per il tuo dominio. Per aggiungerne uno, clicca sul pulsante `Aggiungi`{.action}.
 

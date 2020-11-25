@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: WordPressin asentaminen instanssiin
 excerpt: WordPressin asentaminen instanssiin
 slug: wordpressin_asentaminen_instanssiin

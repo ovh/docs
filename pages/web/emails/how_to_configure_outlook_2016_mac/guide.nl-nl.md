@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuratie van uw e-mailadres in Outlook 2016 voor Mac
 slug: configuratie-outlook-2016-mac
 excerpt: Ontdek hoe u uw e-mailadres kunt configureren in Outlook 2016 voor Mac

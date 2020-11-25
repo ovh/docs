@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Tunnisteiden hallinta'
 excerpt: 'Tunnisteiden hallinta'
 slug: tunnisteiden_hallinta

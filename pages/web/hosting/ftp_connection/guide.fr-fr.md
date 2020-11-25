@@ -1,7 +1,7 @@
 ---
 title: 'Se connecter à l’espace de stockage de son hébergement web'
 slug: connexion-espace-stockage-ftp-hebergement-web
-excerpt: 'Découvrez comment vous connecter à l''espace de stockage de votre hébergement web OVH'
+excerpt: "Découvrez comment vous connecter à l'espace de stockage de votre hébergement web OVH"
 section: 'FTP et SSH'
 order: 1
 ---
@@ -17,7 +17,7 @@ Les offres d'hébergement web d'OVH vous donnent accès à un espace de stockage
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web OVH]({ovh_www}/hebergement-web/){.external}.
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Web`{.action}.
+- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Web Cloud`{.action}.
 
 ## En pratique
 

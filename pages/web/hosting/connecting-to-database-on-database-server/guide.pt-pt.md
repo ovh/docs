@@ -37,7 +37,7 @@ Não há um acesso superutilizador «root».
 
 ####  Pelo phpMyAdmin OVHcloud (apenas para o serviço SQL Privado)
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados.
 
 No separador `Informações gerais`, vai encontrar o link de acesso no quadro **«Gestão da base de dados»** sob a menção «Interface do utilizador».
 

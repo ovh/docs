@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Cloud Web
 slug: cloud-web
 sections: Getting started

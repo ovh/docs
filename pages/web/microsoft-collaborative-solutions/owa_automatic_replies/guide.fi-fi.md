@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2016: automaattivastausten käyttöönotto OWAssa'
 excerpt: Automaattivastaukset OWAn kautta
 slug: exchange_2016_automaattivastausten_kayttoonotto_owassa

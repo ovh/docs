@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Vytvoření upozornění
 excerpt: ''
 slug: vytvoreni_upozorneni

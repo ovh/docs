@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 2. část - vytvoření šablony skupin virtuálních ploch (neboli poolů)
 slug: jak-vytvorit-pool
 excerpt: Zjistěte, jak vytvářet šablony skupin virtuálních ploch pomocí platformy VMware Horizon 7.1

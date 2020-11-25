@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Instalace klienta vSphere
 excerpt: ''
 slug: instalace_klienta_vsphere

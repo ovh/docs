@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 4 vaihe- Virtuaalityöpöytien jakaminen käyttäjille
 slug: tyopoytien-jako
 excerpt: Opi lisäämään käyttäjiä eri virtuaalityöpöydillesi.

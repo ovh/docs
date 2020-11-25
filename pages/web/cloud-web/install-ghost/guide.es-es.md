@@ -27,7 +27,7 @@ Este tutorial explica cómo instalar un blog con Ghost en un hosting Cloud Web d
 - Tener contratado un plan de [hosting Cloud Web]({ovh_www}/hosting/cloud-web.xml){.external} de OVH.
 - Haber activado Node.js como motor de ejecución.
 - Haber añadido el dominio correspondiente como multisitio y haber establecido Node.js como motor de ejecución.
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action}.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action}.
 
 ## Procedimiento
 

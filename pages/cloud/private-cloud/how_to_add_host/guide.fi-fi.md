@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Miten isäntäpalvelin lisätään?
 excerpt: ''
 slug: miten_isantapalvelin_lisataan

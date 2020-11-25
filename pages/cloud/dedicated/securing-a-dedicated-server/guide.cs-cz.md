@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Zabezpečení dedikovaného serveru'
 slug: zabezpeceni-dedikovany-server
 excerpt: 'Obecná doporučení pro zabezpečení Vašeho serveru'

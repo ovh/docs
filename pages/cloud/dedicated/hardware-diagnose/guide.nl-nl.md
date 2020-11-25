@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Hardware diagnostics'
 slug: hardware-diagnostics
 excerpt: 'Ontdek hoe u hardwarestoringen op uw server kunt diagnosticeren'

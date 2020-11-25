@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Step 3 - Creating your first virtual desktop pool
 slug: how-to-create-pool
 excerpt: Find out how to create your first virtual desktop pool using VMware Horizon 7.1

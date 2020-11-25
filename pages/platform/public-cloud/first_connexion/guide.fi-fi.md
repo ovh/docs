@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Kirjautuminen Public Cloud -instanssiin
 slug: ensimmainen-kirjautuminen
 legacy_guide_number: 1787

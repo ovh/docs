@@ -3,7 +3,7 @@ title: Añadir un Dedicated Cloud al vRack 1.5 y configurar una MV
 excerpt: Esta guía describe cómo añadir un Dedicated Cloud al vRack 1.5 desde el área de cliente y mediante la API, y cómo configurar una MV en el vRack. También se explica un caso especial.
 slug: anadir_un_dedicated_cloud_al_vrack_15_y_configurar_una_mv
 legacy_guide_number: g1257
-section: Servicios y opciones de OVH
+section: Servicios y opciones de OVHcloud
 ---
 
 

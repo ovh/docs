@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: CDN GeoCache akceleratoriaus naudojimas svetainių talpinimo planuose
 excerpt: Nemokamai su svetainių talpinimo planais suteikiamo GeoCache akceleratoriaus naudojimo gidas
 slug: cdn_geocache_akceleratoriaus_naudojimas_svetainiu_talpinimo_planuose

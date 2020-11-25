@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Vervanging van SSH keys in het geval van verlies
 excerpt: Vervanging van SSH keys in het geval van verlies
 slug: vervanging_van_ssh_keys_in_het_geval_van_verlies

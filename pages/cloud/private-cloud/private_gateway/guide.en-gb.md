@@ -2,7 +2,7 @@
 title: Enable the Private Gateway
 slug: private-gateway
 excerpt: Learn how to enable Private Gateway infrastructure Hosted Private Cloud
-section: OVH Features
+section: OVHcloud Features
 hidden: true
 ---
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: CUDAn asennus dedikoidulle GPU-palvelimelle
 slug: cuda-asennus-gpu-palvelimelle
 section: Muut

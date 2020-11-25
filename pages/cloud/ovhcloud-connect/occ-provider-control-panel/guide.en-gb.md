@@ -28,11 +28,11 @@ Once you have ordered your OVHcloud Connect Provider solution, you will receive 
 
 Depending on the provider you have chosen, go to their portal to log in via the link provided in the order confirmation email. Then enter your service key and confirm the order presented to you.
 
-Next, check the activation status of your solution in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). To do this, click `Server`{.action} in the top navigation bar, then select `Network`{.action} from the left-hand menu. Open `OVHcloud Connect`{.action} and click on your solution. Your solution's status should have changed to “Active”.
+Next, check the activation status of your solution in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). To do this, click `Bare Metal Cloud`{.action} in the top navigation bar, then select `Network`{.action} from the left-hand menu. Open `OVHcloud Connect`{.action} and click on your solution. Your solution's status should have changed to “Active”.
 
 ### Step 2: Associating a vRack
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), click `Server`{.action} in the top navigation bar, then select `Network`{.action} from the left-hand menu. Open `OVHcloud Connect`{.action} and click on your solution.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), click `Bare Metal Cloud`{.action} in the top navigation bar, then select `Network`{.action} from the left-hand menu. Open `OVHcloud Connect`{.action} and click on your solution.
 
 ![ovhcloud connect selection](images/occ01.png){.thumbnail}
 

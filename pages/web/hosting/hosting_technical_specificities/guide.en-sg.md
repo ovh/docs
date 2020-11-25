@@ -33,9 +33,6 @@ order: 4
 
 - FTP connections have to use **passive mode**. Please make sure your script or FTP client is adjusted accordingly.
 
-- In order to connect via **SFTP**, a [**Professional plan**](https://www.ovh.com/sg/web-hosting/) or better is required. You can upgrade your plan directly in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) ("General information", "Plan", "Change offer").
-
-
 ### Databases / SQL
 
 #### Simultaneous Database Connections
@@ -122,7 +119,7 @@ As an example, you can use the function *gethostbyaddr()* to retrieve the hostna
 
 We recommend to consult the information pages to verify the available libraries for your Web Hosting plan. You can find your "infos" page by using the respective cluster link: <http://cluster015.hosting.ovh.net/infos/>
 
-To find out on which Web Hosting cluster your service is located, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
+To find out on which Web Hosting cluster your service is located, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
 You can verify the cluster number of the Web Hosting on this page under **FTP server**.
 
 For CloudWeb Hostings, please refer to: <https://cloudweb-infos.hosting.ovh.net/>

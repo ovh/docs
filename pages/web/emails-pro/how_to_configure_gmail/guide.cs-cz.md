@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Konfigurace účtu E-mail Pro v rozhraní Gmail'
 slug: konfigurace-gmail
 excerpt: 'Seznamte se s postupem pro konfiguraci účtu služby E-mail Pro </br>v online rozhraní Gmail'

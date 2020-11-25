@@ -139,7 +139,7 @@ Użyj ID kopii zapasowej jako obrazu, wprowadzając poniższą komendę:
 
 ## Sprawdź również
 
-[Przeniesienie kopii zapasowej wolumenu do innego centrum danych](../transfer_volume_backup_from_one_datacentre_to_another/){.external}
+[Przeniesienie kopii zapasowej wolumenu do innego centrum danych](https://docs.ovh.com/gb/en/public-cloud/transfer_volume_backup_from_one_datacentre_to_another/){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
 

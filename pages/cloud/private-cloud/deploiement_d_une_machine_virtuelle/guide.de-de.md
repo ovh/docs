@@ -17,7 +17,7 @@ Es gibt mehrere Möglichkeiten, um virtuelle Maschinen über Ihr vSphere Interfa
 ## Voraussetzungen
 
 - Sie verfügen über ein [Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external} Produkt.
-- Sie sind auf Ihrem [vSphere Interface](https://docs.ovh.com/de/private-cloud/den_vsphere_client_installieren/) eingeloggt.
+- Sie sind auf Ihrem [vSphere Interface](../den_vsphere_client_installieren/) eingeloggt.
 
 ## Beschreibung
 
@@ -32,7 +32,7 @@ Klicken Sie mit der rechten Maustaste auf den Cluster Ihrer Wahl und dann auf `N
 Sie haben mehrere Optionen, um eine virtuelle Maschine zu erstellen:
 
 - per ISO-Datei, verfügbar in Ihrem Datastore (um die Datei zu importieren, befolgen Sie die [Anleitung zur Verbindung via SFTP](../verbindung_per_sftp/)
-- über ein eigenes oder ein [von OVHcloud bereitgestelltes](https://docs.ovh.com/gb/en/private-cloud/deploy-ovh-template/) Template
+- über ein eigenes oder ein [von OVHcloud bereitgestelltes](../ovhcloud-template-deployment/) Template
 - durch Klonen einer bereits vorhandenen virtuellen Maschine (achten Sie darauf, mögliche Konflikte in der IP-Adressierung zu vermeiden)
 - durch Klonen einer virtuellen Maschine als Template, für ein schnelleres Deployment der nächsten virtuellen Maschinen
 - Klonen eines Templates als ein anderes Template, um das Template beispielsweise auf verschiedenen Datastores abzulegen und Leistungseinbußen bei umfangreicheren Deployments zu vermeiden

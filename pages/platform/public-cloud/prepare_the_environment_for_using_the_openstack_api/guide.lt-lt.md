@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: OpenStack naudojimo aplinkos paruošimas
 excerpt: OpenStack naudojimo aplinkos paruošimas
 slug: openstack_naudojimo_aplinkos_paruosimas

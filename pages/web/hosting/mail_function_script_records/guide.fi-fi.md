@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellin automatisoitujen sähköpostien seuranta ja hallinta'
 slug: webhotellista_lahetettyjen_sahkopostien_seuranta
 excerpt: 'Opi seuraamaan OVH:n webhotellin lähettämiä automatisoituja sähköpostiviestejä'

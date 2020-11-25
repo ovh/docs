@@ -4,6 +4,10 @@ slug: orchestrating_a_cluster_of_docker_servers_with_shipyard
 section: Advanced usage
 ---
 
+> [!warning]
+>
+> **Shipyard Project** is now retired, and is no longer maintained. Read the official announcement at <https://github.com/shipyard/shipyard>.
+> 
 
 ## 
 The Shipyard application was developed by the Docker user community. It can be a good alternative to Swarm and has a GUI for managing a cluster of Docker servers, enabling you to order tasks and allocate resources to containers in a resource pool. We will firstly generate keys and certificates that will allow us to log in to our various servers, and use TLS to secure communications between our machines to prevent any non-authorised people getting control of our nodes. Only servers with a certificate will be able to connect to the Docker clients on our remote servers. 
@@ -225,7 +229,7 @@ Confirm: <RE-ENTER_YOUR_PASSWORD>
 
 Once we've completed the operation, we will use ctrl+d to exit the CLI. 
 
-You can now access the Shipyard interface via http://<your-host-ip>:8080 by logging in with the "admin" username and your password.
+You can now access the Shipyard interface via `http://<your-host-ip>:8080` by logging in with the "admin" username and your password.
 
 Once you're in, we're going to add engines (nodes) via the Shipyard web interface under Engines:
 

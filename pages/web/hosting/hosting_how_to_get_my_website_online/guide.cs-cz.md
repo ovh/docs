@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Spuštění webových stránek online'
 slug: spusteni-stranek-online
 excerpt: 'Zjistěte, jak zveřejnit své webové stránky online s webhostingem OVH'

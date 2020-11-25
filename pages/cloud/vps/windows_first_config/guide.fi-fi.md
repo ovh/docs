@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Windows Serverin ensimmainen konfiguraatio (Palomuuri)
 slug: windows-first-config
 excerpt: Lue tasta kuinka aktivoit yhteyden etatyopoydalle KVM&#58;n kautta, jos yhteys ei ole aktivoituna.

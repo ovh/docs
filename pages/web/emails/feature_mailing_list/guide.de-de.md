@@ -46,7 +46,7 @@ Der Absender (sender) sendet die E-Mail an die Mailingliste. Der Moderator (mode
 
 ### Ihre Mailingliste erstellen
 
-Um Ihre Mailingliste zu erstellen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und wählen Sie oben die Kategorie `Web`{.action}.
+Um Ihre Mailingliste zu erstellen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und wählen Sie oben die Kategorie `Web Cloud`{.action}.
 
 Sobald die Verbindung hergestellt ist, klicken Sie in der linken Spalte auf `E-Mails`{.action} und dann auf den betreffenden Domainnamen. Wechseln Sie zur Registerkarte `Mailinglisten`{.action} Ihres E-Mail-Dienstes.
 

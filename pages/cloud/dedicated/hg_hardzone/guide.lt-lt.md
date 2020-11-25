@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: HG Hardzone
 excerpt: HG Hardzone galingumo tikrinimo instrukcijos
 slug: hg_hardzone

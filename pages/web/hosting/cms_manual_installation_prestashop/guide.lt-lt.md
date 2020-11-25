@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'TVS, Prestashop diegimas rankiniu būdu'
 excerpt: Kaip rankiniu būdu diegti PrestaShop?
 id: '1979'

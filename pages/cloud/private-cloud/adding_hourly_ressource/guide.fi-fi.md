@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Tuntiperusteisen resurssin lisääminen'
 slug: tuntiperusteisen-resurssin-lisaaminen
 excerpt: 'Katso, kuinka lisätään tuntiperusteisesti laskutettavia resursseja'

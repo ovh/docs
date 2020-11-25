@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotelli: Putty-järjestelmän käyttö Windowsissa'
 excerpt: 'Webhotelli: Putty-järjestelmän käyttö Windowsissa'
 id: '1964'

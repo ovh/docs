@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Projekto kontaktų keitimas
 excerpt: Projekto kontaktų keitimas
 slug: projekto_kontaktu_keitimas

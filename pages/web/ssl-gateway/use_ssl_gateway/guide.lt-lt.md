@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: SSL Gateway naudojimas
 slug: ssl-gateway-naudojimas
 legacy_guide_number: 2370

@@ -29,7 +29,7 @@ Um VPS (Virtual Private Server) é um servidor dedicado virtual. Ao contrário d
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dirija-se à secção `Server`{.action} e selecione o seu servidor no menu à esquerda, em `VPS`{.action}. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dirija-se à secção `Bare Metal Cloud`{.action} e selecione o seu servidor no menu à esquerda, em `VPS`{.action}. 
 
 Este painel de controlo contém informações importantes sobre o serviço e permite-lhe realizar operações essenciais. O seu aspeto pode variar em função da gama do VPS. 
 
@@ -62,7 +62,7 @@ ssh nome_de_utilizador@IPv4_do_VPS
 Como estará conectado com privilégios root (utilizador sudo), pode introduzir comandos para efetuar tarefas de administração. Mas, antes de mais, é recomendável que altere a sua palavra-passe:
 
 ```sh
-$ sudo passwd
+~$ sudo passwd
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -71,8 +71,8 @@ passwd: password updated successfully
 Atenção: as palavras-passe não são exibidas. De seguida, passe para o utilizador root e defina a palavra-passe admin:
 
 ```sh
-$ sudo su -
-# passwd
+~$ sudo su -
+~# passwd
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -93,7 +93,7 @@ Depois, surge uma janela onde poderá escolher:
 
 > [!primary]
 >
-> Determinados sistemas operativos ou plataformas proprietárias, como o Plesk ou cPanel, requerem licenças que implicam custos adicionais. As licenças podem ser geridas a partir da Área de Cliente OVHcloud: aceda à secção `Server` na parte superior e clique em `Licenças`{.action}.
+> Determinados sistemas operativos ou plataformas proprietárias, como o Plesk ou cPanel, requerem licenças que implicam custos adicionais. As licenças podem ser geridas a partir da Área de Cliente OVHcloud: aceda à secção `Bare Metal Cloud` na parte superior e clique em `Licenças`{.action}.
 > 
 > Para que um sistema operativo **Windows** se execute num VPS, deve ser **selecionado durante a respetiva encomenda**. Um VPS com um sistema operativo diferente instalado não pode ser reinstalado com Windows seguindo o método indicado anteriormente.
 >  
@@ -141,7 +141,7 @@ Depois, surge uma janela onde poderá escolher:
 
 > [!primary]
 >
-> Determinados sistemas operativos ou plataformas proprietárias, como o Plesk ou cPanel, requerem licenças que implicam custos adicionais. As licenças podem ser geridas a partir da Área de Cliente OVHcloud: aceda à secção `Server` na parte superior e clique em `Licenças`{.action}.
+> Determinados sistemas operativos ou plataformas proprietárias, como o Plesk ou cPanel, requerem licenças que implicam custos adicionais. As licenças podem ser geridas a partir da Área de Cliente OVHcloud: aceda à secção `Bare Metal Cloud` na parte superior e clique em `Licenças`{.action}.
 > 
 > Para que um sistema operativo **Windows** se execute num VPS, deve ser **selecionado durante a respetiva encomenda**. Um VPS com um sistema operativo diferente instalado não pode ser reinstalado com Windows seguindo o método indicado anteriormente.
 > 
