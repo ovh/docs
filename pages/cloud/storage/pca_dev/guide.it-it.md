@@ -207,7 +207,7 @@ Quando esegui l’upload di un archivio, OVH Public Cloud Archive aggiorna l’i
 
 Per supportare le caratteristiche del suo servizio di storage a freddo, OVH ha leggermente modificato la procedura di generazione dell’inventario rispetto alle infrastrutture OpenStack Swift standard. In questo modo, è in grado di includere le informazioni aggiuntive specifiche al processo di storage utilizzato, garantendoti l’accesso a informazioni essenziali del tuo archivio come lo stato di unsealing e il tempo di recupero prima che sia disponibile al download.
 
-Per maggiori dettagli sull’operazione di recupero di un archivio,  [clicca qui](../api/guide.it-it.md){.ref}.
+Per maggiori dettagli sull’operazione di recupero di un archivio,  [clicca qui](https://docs.ovh.com/it/storage/pca/api/).
 
 **Sintassi**
 

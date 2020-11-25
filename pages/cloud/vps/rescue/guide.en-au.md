@@ -47,7 +47,7 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 
 #### With a current VPS range
 
- On the `Home`{.action} tab, click on `...`{.action} next to **Boot** in the "Your VPS" box.
+On the `Home`{.action} tab, click on `...`{.action} next to "Boot" in the **Your VPS** box.
 
 ![rescue mode control panel](images/rescue_new.png){.thumbnail}
 
@@ -55,11 +55,11 @@ Select `Reboot in rescue mode`{.action} from the menu.
 
 #### With older VPS ranges
 
-On the `Home`{.action} tab, click on the shortcut link labelled `Reinstall my VPS`{.action}.
+On the `Home`{.action} tab, click on the shortcut link labelled `Reboot in rescue mode`{.action}.
 
 ![rescue mode control panel](images/rescue_legacy.png){.thumbnail}
 
-Click on the checkbox `**Reboot in rescue mode**` and then on `Confirm`{.action}.
+Click on the checkbox **Reboot in rescue mode** and then on `Confirm`{.action}.
 
 ### Using rescue mode
 

@@ -210,7 +210,7 @@ Gdy wgrywasz archiwum, usługa OVH Public Cloud Archive aktualizuje spis zawarto
 
 W celu wprowadzenia obsługi funkcji dla przestrzeni dyskowej do archiwizacji, OVH nieznacznie zmodyfikowało generowanie spisu zawartości w porówaniu z infrastrukturami Openstack Swift, w celu zawarcia dodatkowych informacji związanych z procesem przechowywania danych. Dzięki temu posiadasz najważniejsze informacje o swoim archiwum, takie jak status odblokowywania oraz czas odzyskiwania.
 
-Więcej informacji [tutaj](../api/guide.pl-pl.md){.ref}.
+Więcej informacji [tutaj](https://docs.ovh.com/pl/storage/pca/api/).
 
 **Składnia**
 
