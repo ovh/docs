@@ -19,7 +19,7 @@ NSX est une solution de type Réseau défini par logiciel (ou « software define
 
 ## En pratique
 
-VMWare NSX n'est disponible que depuis le client web vSphere, vous ne pourrez pas y accéder depuis le client lourd. Nous vous invitons à vous référer au guide suivant : [Connexion à l'interface vSphere](https://docs.ovh.com/ca/fr/private-cloud/connexion-a-l-interface-vsphere/){.external}.
+VMWare NSX n'est disponible que depuis le client web vSphere, vous ne pourrez pas y accéder depuis le client lourd. Nous vous invitons à vous référer au guide suivant : [Connexion à l'interface vSphere](../connexion-interface-vsphere/).
 
 ![Accueil Web](images/AccueilWeb.PNG){.thumbnail}
 
