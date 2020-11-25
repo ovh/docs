@@ -41,8 +41,7 @@ Vous retrouverez au niveau des `Caractéristiques`, la possibilité de modifier 
 
 Généralement, on applique un nouveau profil quand on souhaite obtenir un débit plus important ou corriger une instabilité. Les profils permettent d'agir directement sur la **marge au bruit (SNR)** de votre ligne.
 
-Lors de son activation, votre accès est livré sur le profil **par défaut**, avec une marge au bruit à 6 dB lors de la synchronisation.
-
+Lors de son activation, votre accès est livré sur le profil par défaut, avec une marge au bruit à 6 dB lors de la synchronisation.
 Suivant le SNR défini, le débit sera plus ou moins élevé et l'accès subira plus ou moins de perturbations.
 
 > [!primary]
@@ -52,11 +51,10 @@ Suivant le SNR défini, le débit sera plus ou moins élevé et l'accès subira 
 > <br>Plus le SNR est élevé, moins bon est le débit et plus stable est la ligne.
 >
 
-La correspondance des profils avec la marge au bruit :
+Voici la correspondance des profils avec la marge au bruit :
 
 | Profil | SNR |
 | ------------- | ------------- |
-| Par défaut  | SNR 6  |
 | 512K  | SNR 6 avec limite de débit à 512K  |
 | 2M  | SNR 6 avec limite de débit à 2M  |
 | 24M  | SNR 6 sans limite de débit  |
@@ -66,16 +64,15 @@ La correspondance des profils avec la marge au bruit :
 | PERF2  | SNR 1  |
 
 
-**24M est le débit maximum atteignable avec un SNR à 6 dB.**
-
-Si votre accès est très proche du NRA vous aurez peut-être 24M.
+24M est le débit maximum atteignable avec un SNR à 6 dB.
+Si votre accès est très proche du NRA vous obtiendrez peut-être 24M.
 Cependant si votre ligne est distante de 1 km du NRA, 24M ne sera pas atteignable vous obtiendrez peut-être 15M, ceci dépendra de la ligne et de la marge sur bruit.
 
 
-En VDSL, d’autres modulations de fréquence s’offrent à vous.
+#### En VDSL, d’autres modulations de fréquence s’offrent à vous.
 
--  **17a**, recommandé pour les lignes de moins de 1 km : le profil 17a permet aux abonnés se trouvant à moins d’un kilomètre du NRA de bénéficier des meilleures performances sur leur ligne. Pour connaître cette distance, il suffit de tester son numéro sur le [test d’éligibilité OVHcloud Télécom](https://www.ovhtelecom.fr/offre-internet/eligibilite/). En fonction de la qualité de la ligne, le profil 17a ne sera pas systématiquement la meilleure option pour un abonné se trouvant à moins d’un kilomètre du NRA.
--  **8b**, pour les lignes plus longues : de manière générale, le profil 8b sera plus avantageux pour les abonnés situés à plus d’un kilomètre du nœud de raccordement téléphonique.
++ **17a**, recommandé pour les lignes de moins de 1 km : le profil 17a permet aux abonnés se trouvant à moins d’un kilomètre du NRA de bénéficier des meilleures performances sur leur ligne. Pour connaître cette distance, il suffit de tester son numéro sur le [test d’éligibilité OVHcloud Télécom](https://www.ovhtelecom.fr/offre-internet/eligibilite/). En fonction de la qualité de la ligne, le profil 17a ne sera pas systématiquement la meilleure option pour un abonné se trouvant à moins d’un kilomètre du NRA.
++ **8b**, pour les lignes plus longues : de manière générale, le profil 8b sera plus avantageux pour les abonnés situés à plus d’un kilomètre du nœud de raccordement téléphonique.
 
 
 ### Ligne non dégroupée OVHcloud
