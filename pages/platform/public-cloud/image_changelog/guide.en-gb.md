@@ -10,7 +10,7 @@ order: 8
 
 ## Objective
 
-OVHcloud offers a variety of operating systems and pre-installed applications on the VPS and Public cloud products. As a provider, we ensure the images we provide to our customers are kept up to date which means we reguaraly release new images. Transparency is key to OVHcloud and we intend to share what changes we make to any image during any new release. This page will allow customers to track the changelog of our images.
+OVHcloud offers a variety of operating systems and pre-installed applications on the VPS and Public cloud products. As a provider, we ensure the images we provide to our customers are kept up to date which means we regularly release new images. Transparency is key to OVHcloud and we intend to share what changes we make to any image during any new release. This page will allow customers to track the changelog of our images.
 
 ## Requirements
 
@@ -57,7 +57,7 @@ Image: All Debian 8 images
 Product: VPS 2016 - 2020 & Public Cloud
 Travaux: http://travaux.ovh.net/?do=details&id=47107
 Changelog:
-We have removed the Debian 8 images from our catalog as it has reached end of life (https://wiki.debian.org/DebianReleases). Pre-installed application images has been replaced with new ones and guides has been made available.
+We have removed the Debian 8 images from our catalogue as it has reached end of life (https://wiki.debian.org/DebianReleases). Pre-installed application images has been replaced with new ones and guides has been made available.
 
 --- 14 October 2020 ---
 Image: All Centos images
