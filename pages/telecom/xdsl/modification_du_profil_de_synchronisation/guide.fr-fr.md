@@ -34,7 +34,7 @@ Vous retrouverez au niveau des `Caractéristiques`, la possibilité de modifier 
 
 #### Pour un accès VDSL :
 
-![profil vdsl](images/2015-12-15-144213_1258x549_scrot.png){.thumbnail}
+![profil vdsl](images/ProfilsVDSL.gif){.thumbnail}
 
 
 ### Explication des différents profils
@@ -52,16 +52,19 @@ Suivant le SNR défini, le débit sera plus ou moins élevé et l'accès subira 
 > <br>Plus le SNR est élevé, moins bon est le débit et plus stable est la ligne.
 >
 
-La correspondance des profils avec leur SNR :
+La correspondance des profils avec la marge au bruit :
 
--   **Par défaut** : SNR 6
--   **512K** : SNR 6 avec limite de débit à 512K
--   **2M** : SNR 6 avec limite de débit à 2M
--   **24M** : SNR 6 sans limite de débit
--   **SAFE1** : SNR 10
--   **SAFE2** : SNR 16
--   **PERF1** : SNR 3
--   **PERF2** : SNR 1
+| Profil | SNR |
+| ------------- | ------------- |
+| Par défaut  | SNR 6  |
+| 512K  | SNR 6 avec limite de débit à 512K  |
+| 2M  | SNR 6 avec limite de débit à 2M  |
+| 24M  | SNR 6 sans limite de débit  |
+| SAFE1  | SNR 10  |
+| SAFE2  | SNR 16  |
+| PERF1  | SNR 3  |
+| PERF2  | SNR 1  |
+
 
 **24M est le débit maximum atteignable avec un SNR à 6 dB.**
 
