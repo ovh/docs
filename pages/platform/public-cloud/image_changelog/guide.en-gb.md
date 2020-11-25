@@ -30,6 +30,12 @@ Changelog:
 1. We switch from Ubuntu 16.04 to Ubuntu 20.04 base
 2. From now on, we will place into the images a file (/etc/cloud/ovhcloud.manifest) which will show packages we installed / ensure is installed in the image
 3. Installation of qemu-guest-agent, curl & gpg
+
+--- 17 November 2020 ---
+Image: Fedora 33 & Ubuntu 20.10
+Product: Public Cloud
+Changelog:
+The new Fedora 33 and Ubuntu 20.10 images are now available for all public cloud regions. VPS2020 will also soon offer the images also.
 ```
 
 ### October
