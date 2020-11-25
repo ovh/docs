@@ -77,4 +77,4 @@ W tej części wyłączymy dwie opcje w programie WinSCP:
 
 
 ## Odzyskiwanie danych
-Odyskiwanie danych wymaga odblokowania obiektu. Dla wybranego obiektu należy wykonać zapytanie GET. Jeśli polecenie to nie zostanie wcześniej wykonane, program SFTP zgłosi błąd podczas próby pobrania pliku. Zapoznaj się z naszym przewodnikiem dotyczącym odblokowania obiektu: [tutaj](../guide.pl-pl.md){.ref}.
+Odyskiwanie danych wymaga odblokowania obiektu. Dla wybranego obiektu należy wykonać zapytanie GET. Jeśli polecenie to nie zostanie wcześniej wykonane, program SFTP zgłosi błąd podczas próby pobrania pliku. Zapoznaj się z naszym przewodnikiem dotyczącym odblokowania obiektu: [tutaj](../).

@@ -214,7 +214,7 @@ When you upload an archive, OVH Public Cloud Archive updates the container inven
 
 In order to support the particularities of at-rest storage, OVH has slighty modified the generation of this inventory compared to regular Openstack Swift infrastructures with the aim to include additionnal information related to its particular storage process. This assures you have essential informations about your archive, such as its unsealing state and the retrieval delay before it is ready for download.
 
-See greater details about this [request](https://docs.ovh.com/au/en/storage/pca/api/){.external}.
+See greater details about this [request](https://docs.ovh.com/asia/en/storage/pca/api/){.external}.
 
 **Syntax**
 
