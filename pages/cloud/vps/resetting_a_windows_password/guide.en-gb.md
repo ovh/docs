@@ -1,15 +1,15 @@
 ---
 title: 'Resetting a Windows password'
-slug: repairing-the-grub-bootloader
+slug: resetting-a-windows-password-vps
 excerpt: 'Guide to resetting a Windows password'
 section: Tutorials
 ---
 
-**Last updated 25rd November 2020**
+**Last updated 25th November 2020**
 
 ## Objective
 
-In some cases you might need to reset a Windows password. This guide will show you how to easily reset the password in your Windows install and successfully login your VPS.
+In some cases you might need to reset a Windows password. This guide will show you how to reset the password of your Windows user account and successfully log in to your VPS again.
 
 ## Requirements
 
@@ -17,7 +17,7 @@ In some cases you might need to reset a Windows password. This guide will show y
 
 ## Instructions
 
-Connect to the VPS via VNC in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) with the login details you would have recieved by e-mail.
+Connect to the VPS via VNC in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) with the login details you have received by email.
 
 Type the following commands to mount the remote file system:
 
@@ -26,31 +26,31 @@ ntfsfix /dev/sdb2
 mount -t ntfs-3g /dev/sdb2 /mnt
 ```
 
-Now start the password reset procedure :
+Now start the password reset procedure:
 
 ```sh
 cd /mnt/Windows/System32/config
 chntpw -l SAM
 ```
 
-You will see a list of users. Take note of the administrator account (or the account you wish to change the password). In this example, we will use `Administrator`. Please note that the commands are case-sensitive.
+You will see a list of users. Take note of the administrator account (or the account you wish to change the password for). In this example, we will use `Administrator`. Please note that the commands are case-sensitive.
 
 ```sh
 chntpw -u Administrator SAM
 ```
 
-Press `1` and `Enter` to clear the password. Press `q` to quit the password change prompt. Afterwards, press `y` to write the changes to the hive.
+Press `1` and `Enter` to clear the password. Press `q` to quit the password change prompt. Afterwards, press `y` to write the changes to the file.
 
-You can now leave the rescue mode and boot normally (see [Activating rescue mode on a VPS](../rescue)).
+You can now leave the rescue mode and reboot normally (see [Activating rescue mode on a VPS](../rescue)).
 
-When logging in to your VPS, you will not have to enter a password to log into a Windows session.
+When logging in to your VPS now, you will not have to enter a password to log in to a Windows session.
 
 > [!warning]
 >
-> It is extremely unsafe to leave the Administrator account (or any account with administrative privileges) password blank. Please login immediately to your VPS and change the password right away.
+> It is extremely unsafe to leave the Administrator account (or any account with administrative privileges) password blank. Please log in immediately to your VPS and change the password.
 >
 
-Once logged in to your Windows session, press `CTRL` + `ALT` + `DELETE` and then click on `Reset a password`. If you are using a VNC, click on the button on the top right that says `Send CtrlAltDel`.
+Once logged in to your Windows session, press `CTRL` + `ALT` + `DELETE` and then click on `Change a password`. If you are using the VNC console, click on the button on the top right that says `Send CtrlAltDel`.
 
 Leave the `Old password` field blank and type your new password twice. Make sure the passwords provided match.
 
