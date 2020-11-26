@@ -13,15 +13,15 @@ hidden: true
 
 La migration d'un service Hosted Private Cloud comprend deux aspects :
 
-* Le contexte Hosted Private Cloud OVHcloud qui comprend la partie client, l'administration de votre infrastructure.
-* Le contexte VMware qui comprend tout l'eco-système VMware, sur l'infrastructure elle-même.
+- Le contexte Hosted Private Cloud OVHcloud qui comprend la partie client, l'administration de votre infrastructure.
+- Le contexte VMware qui comprend tout l'eco-système VMware, sur l'infrastructure elle-même.
 
 **Découvez comment couvrir tous les aspects liés à la migration vers un service Hosted Private Cloud**
 
 ## Prérequis
 
-* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}.
-* Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}.
+- Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
 
 ## En pratique
 
@@ -165,6 +165,8 @@ Voici une liste des éléments à prendre en compte:
 - Liste des VMs en cours de sauvegarde
 - Paramètres de sauvegarde
 
+Pour plus d'informations, consultez notre guide pour [activer et utiliser Veeam Backup Managed](../veeam-backup-as-a-service/).
+
 **Conseils d'automatisation :** L'API OVHcloud fournit des informations liées à chaque sauvegarde de VM via:
 
 > [!api]
@@ -188,11 +190,11 @@ Il existe plusieurs moyens de migrer les VMs d'une infrastructure à une autre. 
 
 Les éléments suivants sont alors nécessaires :
 
-* des licences SPLA (sur l'infrastructure d'origine et le Hosted Private Cloud de destination);
-* une licence Veeam;
-* une adresse IP disponible sur l'infrastructure d'origine et le Hosted Private Cloud de destination;
-* une machine virtuelle [Veeam Backup & Replication](../../storage/veeam-backup-replication/) sur l'infrastructure d'origine;
-* [autoriser la machine virtuelle Veeam Backup & Replication à se connecter](../autoriser-des-ip-a-se-connecter-au-vcenter/) sur le vCenter d'origine et de destination.
+- des licences SPLA (sur l'infrastructure d'origine et le Hosted Private Cloud de destination);
+- une licence Veeam;
+- une adresse IP disponible sur l'infrastructure d'origine et le Hosted Private Cloud de destination;
+- une machine virtuelle [Veeam Backup & Replication](../../storage/veeam-backup-replication/) sur l'infrastructure d'origine;
+- [autoriser la machine virtuelle Veeam Backup & Replication à se connecter](../autoriser-des-ip-a-se-connecter-au-vcenter/) sur le vCenter d'origine et de destination.
 
 Consultez notre guide pour [mettre en place Veeam Backup & Replication](../../storage/veeam-backup-replication/).
 
@@ -212,11 +214,30 @@ La vidéo ci-dessous vous détaillera comment configurer un Hosted Private Cloud
 
 Si vSAN était activé sur votre infrastructure source, il sera nécessaire de l'activer à nouveau sur le Hosted Private Cloud de destination. Consultez notre guide pour [mettre en œuvre l'hyperconvergence VMware avec vSAN](../vmware-vsan/).
 
-#### Backup
+#### Configuration NSX
 
-Si vous aviez activé l'offre Veeam Backup Managed sur l'infrastructure d'origine, il sera nécessaire de créer à nouveau les tâches de sauvegarde sur le Hosted Private Cloud de destination.
+##### **Configuration de NSX Edge**
 
-Consultez notre guide pour [activer et utiliser Veeam Backup Managed](../veeam-backup-as-a-service/).
+La migration implique la recréation de vos NSX Edge Gateways dans le Hosted Private Cloud de destination.
+
+Les éléments suivants sont à prendre en compte :
+
+- Services Edge (règles de pare-feu, DHCP, DNS, NAT, Load-balancer, VPN, routage)
+- Configuration de l'interface
+- Configuration HA
+- Configuration Syslog
+- Allocation des ressources
+- Objets Edge NSX (ensembles IP, services, groupes de services)
+
+##### **Configuration du pare-feu distribué NSX**
+
+La migration implique la recréation du Pare-feu distribué NSX dans le Hosted Private Cloud de destination.
+
+Les éléments suivants sont à prendre en compte :
+
+- Sections du pare-feu distribué NSX
+- Règles de pare-feu distribué NSX (source, destination, service, application, action, logging)
+- Objets NSX Distributed Firewall (Groupes de sécurité, Ensembles IP, Ensembles MAC, Services, Groupes de services, Pools IP, Balises de sécurité)
 
 ## Aller plus loin
 
