@@ -55,7 +55,7 @@ Sie können den ZFS-Snapshot der letzten Stunde (H-1) über den vSphere Web Clie
 
 Gehen Sie von Ihrem vSphere Web Client in die Ansicht der Datastores und klicken Sie anschließend auf den `Shared Storages` Ordner auf dem Datastore mit der wiederherzustellenden virtuellen Maschine.
 
-Den Datastore erkunden, indem Sie auf `Browse Files` klicken.
+Öffnen Sie die Datastore-Dateiansicht, indem Sie auf `Browse Files` klicken.
 
 ![data store](images/snapshot01.png){.thumbnail}
 
@@ -67,7 +67,7 @@ Gehen Sie zum Ordner `.zfs` und bearbeiten Sie die Ordnerstruktur bis zum Ordner
 
 ![copy files](images/snapshot03.png){.thumbnail}
 
-Die Dateien sind jetzt vorhanden. Fügen Sie diesen Server einfach in Ihr **Inventory** ein, indem Sie auf die Datei `.vmx` und dann auf `RegisterVM`{.action}  klicken.
+Sobald die Dateien kopier twurden, fügen Sie diese VM einfach in Ihr **Inventory** ein, indem Sie auf die Datei `.vmx` und dann auf `Register VM`{.action}  klicken.
 
 ![register vm](images/snapshot04.png){.thumbnail}
 
