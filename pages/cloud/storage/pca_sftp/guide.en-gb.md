@@ -76,4 +76,4 @@ In this part we will disable two WinSCP options :
 
 
 ## Data Recovery
-Data recovery requires that the object be unlocked first. A GET request must be made on the object in question. If this command is not made beforehand, your SFTP client will return an error message when attempting to download a file. Consult our guide to learn how to unlock your object [here](../guide.en-gb.md){.ref}.
+Data recovery requires that the object be unlocked first. A GET request must be made on the object in question. If this command is not made beforehand, your SFTP client will return an error message when attempting to download a file. Consult our guide to learn how to unlock your object [here](../).

@@ -89,8 +89,8 @@ OVH propone un’applicazione Web per accedere al tuo account email direttamente
  
 ## Per saperne di più
 
-[Configurare un account E-mail Pro nell’applicazione Posta per Windows](https://docs.ovh.com/fr/emails-pro/configurazione-posta-windows-10){.external}
+[Configurare un account E-mail Pro nell’applicazione Posta per Windows](../../emails-pro/configurazione-posta-windows-10/)
 
-[Configurare un account Exchange nell’applicazione Posta per Windows 10](https://docs.ovh.com/it/microsoft-collaborative-solutions/configurazione-posta-windows-10/){.external}
+[Configurare un account Exchange nell’applicazione Posta per Windows 10](../../microsoft-collaborative-solutions/configurazione-posta-windows-10/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.

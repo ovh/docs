@@ -20,7 +20,7 @@ Al enviar un mensaje de correo electrónico en su cuenta de correo, ¿recibe un 
 
 También puede comprobar si el dominio está entregando los mensajes en el destino correcto. Para ello, desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager), seleccione la zona DNS del dominio y compruebe la configuración de los registros MX. Estos registros deben estar en formato «mx*.mail.ovh.net.» (sustituya * por un número entre 0 y 3). Si los registros MX son diferentes, es posible que tenga una solución de correo con un operador diferente a OVHcloud. 
  
-**Ideas y consejos**:  Si no puede conectarte a su [webmail](https://www.ovh.com/world/es/mail/){.external}, puede que la contraseña no sea la correcta. Compruébela y, si fuera necesario, modifíquela desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager). Para más información, consulte la siguiente documentación: [Uso avanzado del correo de OVHcloud](../uso_avanzado_del_correo_de_ovh).
+**Ideas y consejos**:  Si no puede conectarte a su [webmail](https://www.ovh.com/world/es/mail/){.external}, puede que la contraseña no sea la correcta. Compruébela y, si fuera necesario, modifíquela desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager). Para más información, consulte la siguiente documentación: [Uso avanzado del correo de OVHcloud](../cambiar-contrasena-direccion-correo/).
  
 ### ¿Cómo configurar mi dirección de correo electrónico y utilizarla con el webmail? 
 

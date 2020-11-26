@@ -9,10 +9,10 @@ There are different ways to use your Ceph cluster. We'll describe how to map you
 
 You must first ensure that you have done those steps :
 
-- [Create a pool](../guide.en-gb.md){.ref}
-- [Create a user](../guide.en-gb.md){.ref}
-- [Add rights to a user on a pool](../guide.en-gb.md){.ref}
-- [Add an IP ACL](../guide.en-gb.md){.ref} to allow your server to contact the cluster
+- [Create a pool](https://docs.ovh.com/fr/storage/ceph/creer-un-pool/)
+- [Create a user](https://docs.ovh.com/fr/storage/ceph/creer-un-utilisateur/)
+- [Add rights to a user on a pool](https://docs.ovh.com/fr/storage/ceph/changer-droits-utilisateurs/)
+- [Add an IP ACL]https://docs.ovh.com/fr/storage/ceph/creer-ip-acl/) to allow your server to contact the cluster
 
 
 ## Ceph installation

@@ -161,6 +161,8 @@ Here is a checklist of aspects to take into account:
 - List of VMs being backed up
 - Backup settings
 
+Please refer to our guide on [activating and using Veeam Managed Backup](../veeam-backup-as-a-service/).
+
 **Automation tips:** OVHcloud API provides VM backup information attached to each VM via:
 
 > [!api]
@@ -206,11 +208,30 @@ The video below shows how to configure Hosted Private Cloud with the Veeam Backu
 
 If vSAN was enabled on your source Hosted Private Cloud, you will need to enable it again on the destination Hosted Private Cloud. Please refer to our guide on [Using VMware Hyperconvergence with vSAN](../vmware-vsan/).
 
-#### Backup
+#### NSX Configuration
 
-If you have activated the Veeam Managed Backup solution on the source Hosted Private Cloud, you will need to create the backup jobs again on the destination Hosted Private Cloud.
+##### **Configuring NSX Edge**
 
-Please refer to our guide on [activating and using Veeam Managed Backup](../veeam-backup-as-a-service/).
+The migration involves re-creating your NSX edge gateway(s) in the destination Hosted Private Cloud.
+
+Here is a checklist of elements to consider:
+
+- Edge services (Firewall rules, DHCP, DNS, NAT, Load-balancer, VPN, Routing)
+- Interface configuration
+- HA configuration
+- Syslog configuration
+- Resource allocation
+- NSX Edge objects (IP Sets, Services, Service Groups)
+
+##### **Configuring NSX Distributed Firewall**
+
+The migration involves re-creating the NSX Distributed Firewall in the destination Hosted Private Cloud.
+
+Here is a checklist of elements to consider:
+
+- NSX Distributed firewall sections
+- NSX Distributed firewall rules (source, destination, service, applied-to, action, logging)
+- NSX Distributed Firewall objects (Security Groups, IP Sets, MAC Sets, Services, Service Groups, IP Pools, Security Tags)
 
 ## Go further
 
