@@ -1,6 +1,8 @@
 ---
 title: 'Resetting a Windows password'
-slug: slug: resetting-a-windows-password-pci
+slug: resetting-a-windows-password-pci
+routes:
+    canonical: 'https://docs.ovh.com/gb/en/vps/resetting-a-windows-password-vps'
 excerpt: 'Guide to resetting a Windows password'
 section: Tutorials
 ---
