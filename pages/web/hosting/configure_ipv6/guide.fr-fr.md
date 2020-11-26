@@ -8,7 +8,7 @@ section: 'Configuration de l’hébergement'
 **Dernière mise à jour le 25 novembre 2020**
 
 
-### Généralités
+## Généralités
 
 Le réseau Internet fonctionne depuis le début des années 1990 en suivant la norme IPv4. Cette norme permet de fournir une adresse IP à chaque machine reliée au réseau internet : serveurs, mais aussi ordinateurs, smartphones, tablettes et tout autre appareil relié à Internet. Cette norme comporte une limite importante : elle permet d'identifier un peu plus de 4 Milliards d'appareil différent. Soit un appareil pour deux personnes sur Terre.
 
