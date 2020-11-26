@@ -210,7 +210,7 @@ If vSAN was enabled on your source Hosted Private Cloud, you will need to enable
 
 #### NSX Configuration
 
-##### Configuring NSX Edge
+##### **Configuring NSX Edge**
 
 The migration involves re-creating your NSX edge gateway(s) in the destination Hosted Private Cloud.
 
@@ -223,7 +223,7 @@ Here is a checklist of elements to consider:
 - Resource allocation
 - NSX Edge objects (IP Sets, Services, Service Groups)
 
-##### Configuring NSX Distributed Firewall
+##### **Configuring NSX Distributed Firewall**
 
 The migration involves re-creating the NSX Distributed Firewall in the destination Hosted Private Cloud.
 
