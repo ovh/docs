@@ -93,5 +93,5 @@ Aby usunąć bazę danych na serwerze baz danych, przejdź do zakładki `Bazy da
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
 
