@@ -33,7 +33,11 @@ Nos hébergements web sont compatibles IPv6 depuis 2011. Mais l'activation de ce
 ## En pratique
 
 > [!warning]
-> Ce cas d’application vous montrera comment utiliser une ou plusieurs solutions OVHcloud avec des outils externes. Il décrit les mesures à appliquer dans un contexte précis. Veuillez noter que ces mesures doivent être adaptées à votre cas particulier. Si vous éprouvez des difficultés à appliquer ces mesures, veuillez contacter un prestataire de services spécialisés et/ou poser la question à notre communauté sur <https://community.ovh.com/>. OVHcloud ne peut pas vous fournir d’assistance technique à ce sujet.
+>
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> 
 
 Si votre site n'est pas configuré pour IPv6, vous pouvez le faire en ajoutant l'information dans la zone DNS de votre nom de domaine. Il s'agit de permettre aux navigateurs web de trouver une adresse IPv6 lorsqu'ils demandent l'emplacement de votre site web via le nom de domaine.
 
