@@ -38,9 +38,12 @@ Pour démarrer cette manipulation, connectez-vous à votre [espace client OVH](h
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
-Si le bouton `Modifier la configuration`{.action} est grisé, il se peut qu'une vérification de la **version PHP globale** soit en cours. Si tel est le cas, un symbole rond de couleur bleue s'affichera à côté de la version, indiquant qu'une vérification est cours. Patientez alors quelques minutes pour que le bouton `Modifier la configuration`{.action} redevienne accessible.
+> [!primary]
+>
+> Si le bouton `Modifier la configuration`{.action} est grisé, il se peut qu'une vérification de la **version PHP globale** soit en cours. Si tel est le cas, un symbole rond de couleur bleue s'affichera à côté de la version, indiquant qu'une vérification est cours. Patientez alors quelques minutes pour que le bouton `Modifier la configuration`{.action} redevienne accessible.
+>
 
-![hostingconfiguration](images/change-hosting-configuration-step2.png){.thumbnail}
+
 
 #### Étape 2 : modifier la configuration de l'hébergement web
 
@@ -73,27 +76,19 @@ Lorsque vous modifiez la configuration d'un hébergement web, plusieurs choix de
 
 Changer l'environnement d'exécution permet de modifier certaines valeurs techniques de votre hébergement web. **Avant d'entamer tout changement, assurez-vous que l'environnement que vous allez appliquer est compatible avec votre site internet.** 
 
-|Environnements|Legacy|stable|testing|jessie.i386|
-|---|---|---|---|---|
-|Image liée|Legacy|jessie.i386|jessie.i386|jessie.i386|
-|Version PHP minimum|4.4|5.3|5.3|5.3|
-|Openssl|0.9.8o|1.0.1k (TLS1.2 compatible)|1.0.1k (TLS1.2 compatible)|1.0.1k (TLS1.2 compatible)|
-|Extension php imagick| - | Oui | Oui | Oui |
-|Extension php memcache (PHP 5.6)| Oui | Oui | Oui | Oui |
-|Extension php memcached (PHP 5.6)| - | Oui | Oui | Oui |
-|Extension php mongo (PHP 5.4, 5.5, 5.6)| - | Oui | Oui | Oui |
-|Extension mysqlnd (en utf-8 uniquement)| - | Oui | Oui | Oui |
-|Extension redis| - | Oui | Oui | Oui |
-|Opcache| Oui | Oui | Oui | Oui |
-|Python|2.6|2.7 et 3.4|2.7 et 3.4|2.7 et 3.4|
-|Ruby|1.8.7|2.1.5|2.1.5|2.1.5|
-|Rails|2.3.5|4.1.8|4.1.8|4.1.8|
-|Perl|5.10|5.20|5.20|5.20|
-|git|1.7.2.5|2.1.4|2.1.4|2.1.4|
+|Environnements|Legacy|Stable|Stable64|
+|---|---|---|---|
+|Version PHP minimum|5.6|7.3|7.4|
+|Openssl|1.0.1t|1.0.1t|1.1.1d|
+|Python|2.7 et 3.4|2.7 et 3.7|2.7 et 3.7|
+|Ruby|2.1|2.1|2.5|
+|Rails|4.1|4.1|5.2|
+|Perl|5.20|5.20|5.28|
+|git|2.1|2.1|2.20|
 
 > [!primary]
 >
-> L'environnement « legacy » peut être utile pour d'anciens sites utilisant encore de vieilles versions de PHP. Cependant, nous vous recommandons vivement d'utiliser un environnement « stable » bénéficiant des dernières mises à jour. **Assurez-vous que votre site est bien compatible avant d'entamer tout changement.**
+> L'environnement « legacy » peut être utile pour d'anciens sites utilisant encore de vieilles versions de PHP. Cependant, nous vous recommandons vivement d'utiliser un environnement « stable64 » bénéficiant des dernières mises à jour. **Assurez-vous que votre site est bien compatible avant d'entamer tout changement.**
 > 
 
 Une fois votre choix effectué, il existe deux possibilités pour réaliser ce changement :
