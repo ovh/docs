@@ -1,8 +1,9 @@
 ---
 title: Snapshots horarios OVHcloud
-slug: snapshots-horarios-ovh
+slug: snapshots-horarios-ovhcloud
+routes:
+    canonical: 'https://docs.ovh.com/us/es/private-cloud/snapshots-horarios-ovh/'
 excerpt: Funcionamiento de los snapshots de OVHcloud
-legacy_guide_number: '2163263'
 section: Funcionalidades de OVHcloud
 order: 06
 ---
@@ -12,7 +13,7 @@ order: 06
 > 
 
 
-**Última actualización: 21/10/2020**
+**Última actualización: 30/11/2020**
 
 ## Objetivo
 
@@ -22,7 +23,7 @@ Para garantizar la continuidad del servicio y evitar la pérdida de datos, OVHcl
 
 ## Requisitos
 
-* Disponer de una [infraestructura Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/){.external} en su cuenta de OVHcloud.
+* Disponer de una [infraestructura Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/){.external} en su cuenta de OVHcloud.
 * Acceder al panel de control vSphere Web Client HTML.
 
 ## Procedimiento
@@ -80,7 +81,7 @@ Se trata de una seguridad normalmente de uso interno de OVHcloud, los snapshots 
 
 Se trata de una seguridad adicional de uso interno instalada en los datastores que solo debe servir como último recurso para evitar una posible pérdida de datos.
 
-Le recomendamos que utilice una solución de backup completa, como nuestro servicio [Veeam Backup](https://docs.ovh.com/gb/en/private-cloud/veeam-backup-as-a-service/){.external-link} o cualquier otro sistema que realice un backup completo de sus máquinas virtuales.
+Le recomendamos que utilice una solución de backup completa, como nuestro servicio [Veeam Backup](https://docs.ovh.com/gb/en/managed-bare-metal/veeam-backup-as-a-service/) o cualquier otro sistema que realice un backup completo de sus máquinas virtuales.
 
 ## Más información
 

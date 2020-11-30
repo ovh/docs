@@ -1,8 +1,9 @@
 ---
 title: Snapshot orari OVHcloud
-slug: snapshot-orari-ovh
+slug: snapshot-orari-ovhcloud
+routes:
+    canonical: 'https://docs.ovh.com/it/private-cloud/snapshot-orari-ovh/'
 excerpt: Come funziona lo Snapshot orario OVHcloud
-legacy_guide_number: '2163263'
 section: Funzionalità OVHcloud
 order: 06
 ---
@@ -11,7 +12,7 @@ order: 06
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 21/10/2020**
+**Ultimo aggiornamento: 30/11/2020**
 
 ## Obiettivi
 
@@ -21,7 +22,7 @@ Per assicurare continuità di servizio ed evitare perdite di dati, OVHcloud real
 
 ## Prerequisiti
 
-* Disporre di un’[infrastruttura Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external} sul proprio account OVHcloud
+* Disporre di un’[infrastruttura Managed Bare Metal](https://www.ovhcloud.com/it/managed-bare-metal/){.external} sul proprio account OVHcloud
 * Accedere all'interfaccia di gestione vSphere Web Client HTML
 
 ## Procedura
@@ -79,7 +80,7 @@ Si tratta di una sicurezza normalmente utilizzata da OVHcloud, gli Snapshot orar
 
 Si tratta di una sicurezza aggiuntiva per uso interno installata sui datastore che deve essere utilizzata solo come ultima risorsa per prevenire una possibile perdita di dati.
 
-Ti consigliamo di utilizzare una soluzione completa di backup, come il servizio [Veeam Backup](https://docs.ovh.com/gb/en/private-cloud/veeam-backup-as-a-service/){.external-link} o qualsiasi altro sistema che effettui un backup completo delle tue macchine virtuali.
+Ti consigliamo di utilizzare una soluzione completa di backup, come il servizio [Veeam Backup](https://docs.ovh.com/gb/en/managed-bare-metal/veeam-backup-as-a-service/) o qualsiasi altro sistema che effettui un backup completo delle tue macchine virtuali.
 
 ## Per saperne di più
 
