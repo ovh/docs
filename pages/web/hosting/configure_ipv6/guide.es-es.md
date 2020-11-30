@@ -41,6 +41,8 @@ Desde 2011, nuestros alojamientos web son compatibles con IPv6. Sin embargo, la 
 >El propósito de esta guía es ayudarle, en la medida de lo posible, con las tareas generales. No obstante, póngase en contacto con un proveedor especializado y/o el editor de <i>software</i> del servicio si tiene dificultades. Nosotros no podremos ayudarle al respecto. Puede encontrar información adicional en la sección «Más información» de esta guía.
 >
 
+Si su sitio no está configurado para IPv6, puede hacerlo añadiendo la información en la zona DNS de su dominio. Permite que los navegadores web encuentren una dirección IPv6 cuando soliciten la ubicación de su sitio web a través del nombre de dominio.
+
 ### Comprobar la compatibilidad IPv6 de su sitio web
 
 Para probar si su sitio web es compatible con IPv6, puede utilizar el sitio [ipv6-test.com](https://ipv6-test.com/validate.php){.external}. Indica si el sitio web responde al nuevo protocolo IP. Si no es el caso, siga esta guía para hacerla compatible.
