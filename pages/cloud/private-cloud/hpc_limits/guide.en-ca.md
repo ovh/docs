@@ -1,6 +1,6 @@
 ---
 title: Technical capabilities
-slug: hpc-limits
+slug: technical-capabilities
 excerpt: 'Learn the technical capabilities and limitations of the OVHcloud Hosted Private Cloud'
 section: FAQ
 order: 1
