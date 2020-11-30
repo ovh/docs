@@ -1,5 +1,5 @@
 ---
 title: Storage
 slug: storage
-excerpt: Get started with your OVH.com.au Storage Products
+excerpt: Get started with OVHcloud Storage and Backup solutions
 ---

@@ -103,10 +103,10 @@ Bitte beachten Sie, dass Spam-*False Positives* nicht direkt in OWA deklariert w
 
 ## Weiterführende Informationen
 
-[Einrichten automatischer Antworten in OWA](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2016_einrichten_einer_automatischen_antwort_in_owa/)
+[Einrichten automatischer Antworten in OWA](../exchange_2016_einrichten_einer_automatischen_antwort_in_owa/)
 
-[Kalender via OWA freigeben](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_2016_einen_kalender_via_owa_webmail_freigeben/)
+[Kalender via OWA freigeben](../exchange_2016_einen_kalender_via_owa_webmail_freigeben/)
 
-[Outlook Web App mit einem E-Mail-Konto verwenden](https://docs.ovh.com/de/emails/verwendung-owa/)
+[Outlook Web App mit einem E-Mail-Konto verwenden](../exchange_2016_verwendung_der_outlook_web_app/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

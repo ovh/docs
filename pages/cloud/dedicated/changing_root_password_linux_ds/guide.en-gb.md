@@ -47,7 +47,7 @@ passwd: password updated successfully
 
 #### Step 1: Identify the system partition
 
-After putting your server into [rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}, you will need to identify the system partition. You can do this with the following command:
+After putting your server into [rescue mode](../ovh-rescue/), you will need to identify the system partition. You can do this with the following command:
 
 ```sh
 # fdisk -l

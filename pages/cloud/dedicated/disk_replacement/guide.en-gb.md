@@ -46,7 +46,7 @@ If you receive an email alert, or notice any signs that you might have a faulty 
 
 #### Servers using soft RAID
 
-If you have a server that uses soft RAID, please refer to the [software RAID](..raid-soft/){.external} guide to find the disks installed on your server.
+If you have a server that uses soft RAID, please refer to the [software RAID](../raid-soft/) guide to find the disks installed on your server.
 
 Once you have found the access path for your disks, you can test them using the `smartctl` command, as follows:
 

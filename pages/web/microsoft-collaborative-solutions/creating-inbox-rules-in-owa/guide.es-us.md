@@ -18,7 +18,7 @@ Con la opción «Reglas de la bandeja de entrada», puede crear un elaborado con
 
 ## Requisitos
 
-- Tener una solución de correo electrónico de OVHcloud configurada (**solución MX Plan**, disponible como parte de nuestros [planes de hospedaje web](https://www.ovh.com/world/es/hosting/), o contratada por separado como una solución independiente; [**Hosted Exchange**](https://www.ovh.com/world/es/emails/hosted-exchange/) o [**Email Pro**](https://www.ovh.com/world/es/emails/email-pro/))
+- Tener una solución de correo electrónico de OVHcloud configurada (**solución MX Plan**, disponible como parte de nuestros [planes de hospedaje web](https://www.ovh.com/world/es/hosting/) o [**Hosted Exchange**](https://www.ovh.com/world/es/emails/hosted-exchange/)
 - Tener las credenciales de acceso de la dirección de correo electrónico que quiere configurar
 
 
@@ -26,7 +26,7 @@ Con la opción «Reglas de la bandeja de entrada», puede crear un elaborado con
 
 ### Paso 1: acceder a la sección «Opciones»
 
-Inicie sesión en su cuenta de Exchange a través del [correo electrónico basado en la web de OVHcloud](https://ex.mail.ovh.ca). Haga clic en el símbolo del engranaje en la parte superior derecha para desplegar el menú «Opciones» y seleccione `«Opciones»`{.action}.
+Inicie sesión en su cuenta de Exchange a través del [correo electrónico basado en la web de OVHcloud](https://www.ovh.com/world/es/mail/). Haga clic en el símbolo del engranaje en la parte superior derecha para desplegar el menú «Opciones» y seleccione `«Opciones»`{.action}.
 
 ![inboxrules](images/exchange-rules-step1.png){.thumbnail}
 
@@ -107,6 +107,6 @@ Tenga en cuenta que no es posible declarar falsos positivos de correo no deseado
 
 [Compartir calendarios en OWA](../exchange_2016_compartir_un_calendario_con_el_webmail_owa/)
 
-[Usar Outlook Web App con una cuenta de correo electrónico](../../emails/uso-outlook-en-la-web/)
+[Usar Outlook Web App con una cuenta de correo electrónico](../exchange_2016_guia_de_uso_de_outlook_web_app/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
