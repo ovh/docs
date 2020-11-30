@@ -1,5 +1,5 @@
 ---
 title: Storage and Backup
 slug: storage
-excerpt: Start with OVH Storage and Backup Products
+excerpt: Get started with OVHcloud Storage and Backup solutions
 ---

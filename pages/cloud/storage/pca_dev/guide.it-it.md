@@ -207,7 +207,7 @@ Quando esegui l’upload di un archivio, OVH Public Cloud Archive aggiorna l’i
 
 Per supportare le caratteristiche del suo servizio di storage a freddo, OVH ha leggermente modificato la procedura di generazione dell’inventario rispetto alle infrastrutture OpenStack Swift standard. In questo modo, è in grado di includere le informazioni aggiuntive specifiche al processo di storage utilizzato, garantendoti l’accesso a informazioni essenziali del tuo archivio come lo stato di unsealing e il tempo di recupero prima che sia disponibile al download.
 
-Per maggiori dettagli sull’operazione di recupero di un archivio,  [clicca qui](https://docs.ovh.com/it/storage/pca/api/).
+Per maggiori dettagli sull’operazione di recupero di un archivio, [clicca qui](https://docs.ovh.com/it/storage/pca/api/).
 
 **Sintassi**
 
@@ -350,7 +350,7 @@ OVH Public Cloud Archive memorizza i tuoi dati ottimizzando i costi, ma prevede 
 
 Le richieste di sblocco sono identiche a quelle per il download. L’unica differenza tra queste due operazioni è la risposta inviata da OVH Public Cloud Archive, che rappresenta una particolarità dell’infrastruttura OpenStack Swift sottostante utilizzata da OVH. Una volta che la richiesta di unsealing viene ricevuta, non è possibile cancellarla. Ulteriori richieste avranno come unico effetto quello di recuperare il tempo di attesa stimato dell’operazione.
 
-Per maggiori informazioni su questa richiesta, [clicca qui](../api/guide.it-it.md){.ref}.
+Per maggiori informazioni su questa richiesta, [clicca qui](https://docs.ovh.com/it/storage/pca/api/).
 
 **Sintassi**
 

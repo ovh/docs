@@ -12,6 +12,7 @@ If you want to move your objects from one datacentre to another or even from one
 
 
 ## Prerequisites
+
 You need to
 
 - [Prepare the environment to use the OpenStack API](../../public-cloud/prepare_the_environment_for_using_the_openstack_api/) by downloading the Swift client

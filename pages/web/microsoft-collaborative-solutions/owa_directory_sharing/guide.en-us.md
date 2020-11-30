@@ -14,15 +14,10 @@ It is not always appropriate to delegate the usage of an entire email account. T
 
 **This guide explains how to share folders and define their access permissions using the Outlook Web App (OWA).**
 
-> [!primary]
->
-> Although this guide will refer to our Exchange services, you can follow the instructions for [Email Pro]({ovh-www}/emails/email-pro) accounts as well.
->
-
 
 ## Requirements
 
-- an [OVHcloud Exchange solution]({ovh_www}/emails/hosted-exchange) already set up
+- an [OVHcloud Exchange solution](https://www.ovh.com/world/emails/hosted-exchange/) already set up
 - access to your Exchange account (email address and password)
 
 
@@ -30,7 +25,7 @@ It is not always appropriate to delegate the usage of an entire email account. T
 
 ### Step 1: Defining access permissions to a folder
 
-Log in to your Exchange account via the [OVHcloud webmail]({ovh_www}/mail). Right-click on the folder to be shared and select `Permissions...`{.action} from the context menu.
+Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.com/world/mail/). Right-click on the folder to be shared and select `Permissions...`{.action} from the context menu.
 
 ![sharefolder](images/exchange-folder-step1.png){.thumbnail}
 

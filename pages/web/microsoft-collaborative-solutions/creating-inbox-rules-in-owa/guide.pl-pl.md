@@ -102,10 +102,10 @@ Wiadomości błędnie oznaczonych jako spam (tzw. fałszywie pozytywnych) nie mo
 
 ## Sprawdź również
 
-[Exchange 2016: Uruchomienie autorespondera w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa/)
+[Exchange 2016: Uruchomienie autorespondera w interfejsie OWA](../exchange_2016_uruchomienie_autorespondera_w_interfejsie_owa/)
 
-[Exchange 2016: współdzielenie kalendarza w interfejsie OWA](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa/)
+[Exchange 2016: współdzielenie kalendarza w interfejsie OWA](../exchange_2016_wspoldzielenie_kalendarza_poprzez_webmail_owa/)
 
-[Korzystanie z konta e-mail przy użyciu Webmail Outlook Web Access (OWA)](https://docs.ovh.com/pl/emails/korzystanie-owa/)
+[Korzystanie z konta e-mail przy użyciu Webmail Outlook Web Access (OWA)](../exchange_2016_przewodnik_dotyczacy_korzystania_z_outlook_web_app/)
 
 Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
