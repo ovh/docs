@@ -1,7 +1,7 @@
 ---
-title: Utiliser le Private Cloud au sein d’un vRack
+title: Utiliser le Hosted Private Cloud au sein d’un vRack
 slug: utiliser-le-private-cloud-au-sein-d-un-vrack
-excerpt: Découvrez comment utilisez le vRack avec votre offre SDDC
+excerpt: Découvrez comment utilisez le vRack avec votre offre Hosted Private Cloud
 legacy_guide_number: '7766915'
 section: Services et options OVHcloud
 order: 02
@@ -19,11 +19,11 @@ Le vRack, c’est la possibilité de connecter différents services cloud de OVH
 
 ### Espace client
 
-Lors de la livraison de votre service [Hosted Private Cloud], la partie *datacenter* est déjà à l'intérieur d'un vRack.
+Lors de la livraison de votre service [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), la partie *datacenter* est déjà à l'intérieur d'un vRack.
 
 ![Datacenter](images/vRackDatacenter.PNG){.thumbnail}
 
-Il est possible de déplacer le *datacenter* de votre Private Cloud dans un autre vRack en cliquant sur le bouton `Déplacer`{.action}
+Il est possible de déplacer le *datacenter* de votre Hosted Private Cloud dans un autre vRack en cliquant sur le bouton `Déplacer`{.action}
 
 ### Client vSphere
 

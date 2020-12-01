@@ -2,7 +2,7 @@
 title: Using Managed Bare Metal within a vRack
 slug: using-managed-bare-metal-with-vrack
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/using-private-cloud-with-vrack/'
+    canonical: 'https://docs.ovh.com/ie/en/private-cloud/using-private-cloud-with-vrack/'
 excerpt: Find out how to use vRack with a Managed Bare Metal solution
 section: OVHcloud Features
 order: 02
@@ -20,7 +20,7 @@ The OVHcloud vRack feature makes it possible to connect different cloud services
 
 ### OVHcloud Control Panel
 
-After your [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-gb/managed-bare-metal/) is delivered, it will be displayed in the section `vRack` (under "Bare Metal Cloud" in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)) and the "datacenter" will be automatically included into a vRack.
+After your [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-ie/managed-bare-metal/) is delivered, it will be displayed in the section `vRack` (under "Bare Metal Cloud" in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)) and the "datacenter" will be automatically included into a vRack.
 
 ![Data centre](images/vRackDatacenter.PNG){.thumbnail}
 

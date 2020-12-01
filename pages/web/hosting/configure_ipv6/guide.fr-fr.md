@@ -2,7 +2,7 @@
 title: 'Configurez IPv6 pour votre site web'
 slug: configurer-ipv6-pour-votre-site
 excerpt: "Découvrez comment rendre votre site web compatible avec IPv6"
-section: 'Configuration de l’hébergement'
+section: "Configuration de l'hébergement"
 ---
 
 **Dernière mise à jour le 25 novembre 2020**
