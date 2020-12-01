@@ -66,4 +66,4 @@ In `Domains`{.action} in the services bar on the left-hand side, go to your doma
 
 [Editing an OVHcloud DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/)
 
-Join our community of users on <https://community.ovh.com/>.
+Join our community of users on <https://community.ovh.com/en/>.
