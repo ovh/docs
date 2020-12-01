@@ -17,7 +17,7 @@ Afin de vous assurer une continuité de service et éviter la perte de données,
 
 ## Prérequis
 
-* Posséder une [infrastructure Private Cloud](https://www.ovh.com/fr/public-cloud/instances/){.external} sur votre compte OVHcloud.
+* Posséder une [infrastructure Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external} sur votre compte OVHcloud.
 * Accéder à l’interface de gestion vSphere Web Client HTML.
 
 ## En pratique
@@ -51,19 +51,19 @@ Depuis votre vSphere Web Client HTML, dirigez-vous dans la vue des datastores, p
 
 Explorer le datastore en cliquant sur `Browse Files`.
 
-![](images/snapshot01.png){.thumbnail}
+![snapshot](images/snapshot01.png){.thumbnail}
 
 Créez un dossier dans lequel vous allez plus tard copier les fichiers à restaurer.
 
-![](images/snapshot02.png){.thumbnail}
+![snapshot](images/snapshot02.png){.thumbnail}
 
 Dirigez-vous dans le dossier `.zfs` puis dépliez l'arborescence jusqu'au dossier de la machine virtuelle a restaurer puis copiez l'ensemble des fichiers présents dans ce dossier vers le nouveau dossier crée à l'étape précédente.
 
-![](images/snapshot03.png){.thumbnail}
+![snapshot](images/snapshot03.png){.thumbnail}
 
 Les fichiers sont présents maintenant il suffit d'ajouter cette machine dans votre **inventaire** en cliquant sur le fichier `.vmx`, puis sur `register VM`{.action} au dessus.
 
-![](images/snapshot04.png){.thumbnail}
+![snapshot](images/snapshot04.png){.thumbnail}
 
 Il ne vous reste plus qu'à suivre l'assistant de création de VM afin de terminer la procédure.
 

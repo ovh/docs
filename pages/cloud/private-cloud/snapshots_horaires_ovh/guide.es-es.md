@@ -3,7 +3,7 @@ title: Snapshots horarios OVHcloud
 slug: snapshots-horarios-ovh
 excerpt: Funcionamiento de los snapshots de OVHcloud
 legacy_guide_number: '2163263'
-section: Funcionalidades de OVH
+section: Funcionalidades de OVHcloud
 order: 06
 ---
 
@@ -56,19 +56,19 @@ Desde su vSphere Web Client HTML, acceda a la vista de los datastores y acceda a
 
 Explorar el datastore haciendo clic en `Browse Files`.
 
-![](images/snapshot01.png){.thumbnail}
+![snapshot](images/snapshot01.png){.thumbnail}
 
 Cree una carpeta en la que más adelante podrá copiar los archivos a restaurar.
 
-![](images/snapshot02.png){.thumbnail}
+![snapshot](images/snapshot02.png){.thumbnail}
 
 Acceda a la carpeta `.zfs` y mueva el árbol hasta la carpeta de la máquina virtual para restaurar y copie todos los archivos de esta carpeta en la nueva carpeta creada en el paso anterior.
 
-![](images/snapshot03.png){.thumbnail}
+![snapshot](images/snapshot03.png){.thumbnail}
 
 Los archivos están presentes ahora. Solo tiene que añadir esta máquina al **inventario** haciendo clic en el archivo `.vmx` y seleccionando `MV`{.action} en la parte superior.
 
-![](images/snapshot04.png){.thumbnail}
+![snapshot](images/snapshot04.png){.thumbnail}
 
 Siga el asistente de creación de MV para finalizar el procedimiento.
 

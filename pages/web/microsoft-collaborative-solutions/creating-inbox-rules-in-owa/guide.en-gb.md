@@ -103,10 +103,10 @@ Please note that spam false positives cannot be declared directly from OWA. If y
 
 ## Go further
 
-[Creating automatic replies in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_set_up_automatic_replies_in_owa)
+[Creating automatic replies in OWA](../exchange_2016_how_to_set_up_automatic_replies_in_owa)
 
-[Sharing calendars in OWA](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_how_to_share_calendars_via_owa)
+[Sharing calendars in OWA](../exchange_2016_how_to_share_calendars_via_owa)
 
-[Using the Outlook Web App with an email account](https://docs.ovh.com/gb/en/emails/using-owa)
+[Using the Outlook Web App with an email account](../microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/)
 
 Join our community of users on <https://community.ovh.com/en/>.

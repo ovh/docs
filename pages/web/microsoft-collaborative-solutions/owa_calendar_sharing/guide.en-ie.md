@@ -82,7 +82,7 @@ You can change existing permissions on shared calendars or revoke access to them
 
 ### Using calendars in OWA
 
-Here's an example of the OWA "Calendar" section with multiple calendars displayed:
+Here is an example of the OWA "Calendar" section with multiple calendars displayed:
 
 ![sharecalendar](images/exchange-calendars-step7.png){.thumbnail}
 

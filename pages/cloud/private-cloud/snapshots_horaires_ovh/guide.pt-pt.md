@@ -55,19 +55,19 @@ A partir do vSphere Web Client HTML, dirija-se à vista dos datastores e, a segu
 
 Explorar o datastore ao clicar em `Browse Files`.
 
-![](images/snapshot01.png){.thumbnail}
+![snapshot](images/snapshot01.png){.thumbnail}
 
 Crie uma pasta na qual irá copiar os ficheiros a restaurar mais tarde.
 
-![](images/snapshot02.png){.thumbnail}
+![snapshot](images/snapshot02.png){.thumbnail}
 
 Dirija-se à pasta `.zfs` e depois desplique a arborescência até à pasta da máquina virtual a restaurar e depois copie o conjunto dos ficheiros presentes na pasta para a nova pasta criada na etapa anterior.
 
-![](images/snapshot03.png){.thumbnail}
+![snapshot](images/snapshot03.png){.thumbnail}
 
 Os ficheiros estão presentes agora basta adicionar esta máquina ao seu **inventário** clicando no ficheiro `.vmx` e, a seguir, no `register VM`{.action} acima.
 
-![](images/snapshot04.png){.thumbnail}
+![snapshot](images/snapshot04.png){.thumbnail}
 
 Só precisa de seguir o assistente de criação de VM para concluir o procedimento.
 

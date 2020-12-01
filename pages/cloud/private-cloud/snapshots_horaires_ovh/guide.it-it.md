@@ -3,7 +3,7 @@ title: Snapshot orari OVHcloud
 slug: snapshot-orari-ovh
 excerpt: Come funziona lo Snapshot orario OVHcloud
 legacy_guide_number: '2163263'
-section: Funzionalità OVH
+section: Funzionalità OVHcloud
 order: 06
 ---
 
@@ -55,19 +55,19 @@ Dalla tua vSphere Web Client HTML, vai nella vista dei datastore e poi nella car
 
 Esplora il datastore cliccando su `Browse Files`.
 
-![](images/snapshot01.png){.thumbnail}
+![snapshot](images/snapshot01.png){.thumbnail}
 
 Crea una cartella in cui potrai copiare i file da ripristinare.
 
-![](images/snapshot02.png){.thumbnail}
+![snapshot](images/snapshot02.png){.thumbnail}
 
 Clicca sulla cartella.`zfs` e apri il form fino allo schienale della macchina virtuale da ripristinare, poi copia tutti i file presenti in questa cartella verso il nuovo file creato allo step precedente.
 
-![](images/snapshot03.png){.thumbnail}
+![snapshot](images/snapshot03.png){.thumbnail}
 
 I file sono presenti adesso, è sufficiente aggiungere questa macchina nel tuo **inventario** cliccando sul file `.vmx` e poi sul `register VM`{.action} in alto.
 
-![](images/snapshot04.png){.thumbnail}
+![snapshot](images/snapshot04.png){.thumbnail}
 
 Per completare la procedura, non ti resta che seguire l'assistente alla creazione delle VM.
 

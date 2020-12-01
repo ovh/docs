@@ -9,10 +9,10 @@ There are different ways to use your Ceph cluster. We'll describe how to map you
 
 You must first ensure that you have done those steps :
 
-- [Create a pool](../)
-- [Create a user](../)
-- [Add rights to a user on a pool](../)
-- [Add an IP ACL](../) to allow your server to contact the cluster
+- [Create a pool](../../)
+- [Create a user](../../)
+- [Add rights to a user on a pool](../../)
+- [Add an IP ACL](../../) to allow your server to contact the cluster
 
 
 ## Ceph installation

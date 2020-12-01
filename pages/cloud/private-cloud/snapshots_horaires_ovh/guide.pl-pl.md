@@ -3,7 +3,7 @@ title: Snapshoty godzinowe OVHcloud
 slug: snapshoty-godzinowe-ovh
 excerpt: Dowiedz się, jak działają snapshoty godzinowe OVHcloud
 legacy_guide_number: '2163263'
-section: Funkcje OVH
+section: Funkcje OVHcloud
 order: 06
 ---
 
@@ -55,19 +55,19 @@ W interfejsie vSphere Web Client HTML przejdź do widoku datastores, a następni
 
 Odkryj datastore klikając `Browse Files`.
 
-![](images/snapshot01.png){.thumbnail}
+![snapshot](images/snapshot01.png){.thumbnail}
 
 Utwórz folder, do którego później skopiujesz pliki do przywrócenia.
 
-![](images/snapshot02.png){.thumbnail}
+![snapshot](images/snapshot02.png){.thumbnail}
 
 Przejdź do folderu `.zfs`, następnie rozwiń drzewo aż do folderu maszyny wirtualnej, do którego chcesz przywrócić pliki, a następnie skopiuj wszystkie pliki znajdujące się w tym folderze do nowego folderu utworzonego w poprzednim etapie.
 
-![](images/snapshot03.png){.thumbnail}
+![snapshot](images/snapshot03.png){.thumbnail}
 
 Pliki są już dostępne. Wystarczy dodać tę maszynę do **inwentarza**, klikając plik `.vmx`, a następnie `register VM`{.action} powyżej.
 
-![](images/snapshot04.png){.thumbnail}
+![snapshot](images/snapshot04.png){.thumbnail}
 
 W celu zakończenia procedury postępuj zgodnie z instrukcją tworzenia wirtualnych maszyn.
 

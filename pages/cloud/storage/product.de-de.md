@@ -1,5 +1,5 @@
 ---
 title: Storage
 slug: storage
-excerpt: Verwendung der OVH Storage Lösungen
+excerpt: Verwendung von OVHcloud Storage und Backup
 ---
