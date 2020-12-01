@@ -57,12 +57,12 @@ Once you have the .ovhconfig file, you can edit it. To do so, you should use a t
 
 ```php
 app.engine=php
-app.engine.version=7.3
+app.engine.version=8.0
 
 http.firewall=none
 environment=production
 
-container.image=stable
+container.image=stable64
 ```
 
 Customise the values of the variables according to the configuration you wish to use with your hosting plan. 
@@ -75,8 +75,11 @@ Customise the values of the variables according to the configuration you wish to
 |environment|Allows you to manage cache behaviour for the static files of your website, as well as PHP error processing. Enter “production” to maximise caching and hide PHP errors or “development”, so that no cache is applied and PHP error are displayed.|
 |container.image|Allows you to modify the runtime environment used by the hosting plan. Enter the search engine of your choice. You can find them here: [View the configurations available](https://docs.ovh.com/gb/en/hosting/modify_your_web_hosting_systems_runtime_environment/#view-the-configurations-available_1){.external}.|
 
-Below is the full application detail for the .ovhconfig file:
+> [!warning]
+>
+> When you choose the "stable64" runtime environment, verify that your site is compatible with the 64-bit environment.
 
+Below is the full application detail for the .ovhconfig file:
 ```php
 ; ovhconfig
 ;
@@ -100,11 +103,11 @@ app.engine=php
 ; __app.engine.version__ specify version of your engine
 ;
 ; for php:
-;   default: 7.3
+;   default: 8.0
 ; for phpcgi:
 ;   this options is ignored (= fallback in AUTO)
 ;
-app.engine.version=7.3
+app.engine.version=8.0
 
 ; __http.firewall__ used to add application firewall  (filter http requests)
 ;
@@ -117,7 +120,7 @@ http.firewall=none
 ;
 ; values: production | development
 ;
-Production
+;   production:
 ;       apache will maximise local cache
 ;       mod_expires will grow up TTL of js, css, pdf, images, video, audio
 ;       you can override it changing expiration explicitly in your .htaccess
@@ -134,9 +137,9 @@ environment=production
 
 ; __container.image__
 ;
-; values: legacy | stable | jessie.i386 | testing
+; values: legacy | stable | stable64
 ;
-container.image=stable
+container.image=stable64
 ```
 
 #### Step 4: Download the .ovhconfig file to your storage space.
