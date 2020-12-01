@@ -23,7 +23,7 @@ Chegou o momento de começar a utilizar a oferta [Cloud Desktop Infrastructure](
 - Associar o modelo de máquina virtual (VM) à rede de destino do pool (portgroup ou VLAN).
 - Ter concluído a instalação do agente VMware Horizon 7.1.
 - Criar um snapshot (com a máquina virtual desligada) para servir de ponto de referência imutável.  
-- Ter [criado um template de personalização (sysprep) - EN](https://docs.ovh.com/gb/en/cloud-desktop-infrastructure/create-sysprep/){.external}. 
+- Ter [criado um template de personalização](https://docs.ovh.com/fr/cloud-desktop-infrastructure/create-sysprep/){.external}. 
 
 
 ## Instruções
@@ -46,7 +46,7 @@ Para associar o modelo de VM à rede do pool:
 
 ![DHCP Network](images/1200.png){.thumbnail}
 
-Se se revelar necessária uma rede suplementar, isolada da existente, é possível criar um novo ponto de acesso com uma rede dedicada: [criação de um novo ponto de acesso - EN](https://docs.ovh.com/gb/en/cloud-desktop-infrastructure/create-access-point/).
+Se se revelar necessária uma rede suplementar, isolada da existente, é possível criar um novo ponto de acesso com uma rede dedicada: [criação de um novo ponto de acesso - EN](https://docs.ovh.com/fr/cloud-desktop-infrastructure/create-access-point/).
 
 
 ### Instalar o agente VMware Horizon 7.1
@@ -81,7 +81,7 @@ De modo a poder basear-se num estado imutável da máquina virtual que serve de 
 
 ![Nome do snapshot](images/1202.png){.thumbnail}
 
-Agora que o modelo foi criado, saiba como[criar um pool - EN](https://docs.ovh.com/gb/en/cloud-desktop-infrastructure/howto-create-pool/).
+Agora que o modelo foi criado, saiba como[criar um pool - EN](https://docs.ovh.com/fr/cloud-desktop-infrastructure/howto-create-pool/).
 
 ## Quer saber mais?
 

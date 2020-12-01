@@ -10,7 +10,7 @@ order: 3
 
 ## Objective
 
-If you have followed the previous steps, you will now know how to [log in to the VMWare Horizon platform](https://docs.ovh.com/ca/en/cloud-desktop-infrastructure/horizon-7-platform/){.external}, and your [pool template](https://docs.ovh.com/a/en/cloud-desktop-infrastructure/create-pool/){.external} will be ready. It is now time to create your first pool.
+If you have followed the previous steps, you will now know how to [log in to the VMWare Horizon platform](https://docs.ovh.com/ca/en/cloud-desktop-infrastructure/horizon-7-platform/){.external}, and your [pool template](../create-pool/) will be ready. It is now time to create your first pool.
 
 **This guide will explain how to create pools using the VMware Horizon 7.1 platform.**
 
@@ -119,7 +119,7 @@ Once you have logged in to VMware Horizon, follow the steps below:
 
 The creation of the desktop pool may require a long period of time to complete, depending on the template you have used. If any errors occur, the `Inventory` section of the desktop pool will provide details each VM's creation. This should help you find the root of the problem.
 
-Now that you have created your desktop pool, find out how to [assign virtual desktop access to users](https://docs.ovh.com/fr/cloud-desktop-infrastructure/assigning-desktop-access/){.external}.
+Now that you have created your desktop pool, find out how to [assign virtual desktop access to users](../assigning-desktop-access/).
 
 
 ## Go further
