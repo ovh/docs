@@ -1,8 +1,9 @@
 ---
-title: Utilizar el Hosted Private Cloud en un vRack
-excerpt: Cómo utilizar el vRack con la solución Hosted Private Cloud
-slug: anadir_un_dedicated_cloud_al_vrack_15_y_configurar_una_mv
-legacy_guide_number: g1257
+title: Utilizar el Managed Bare Metal en un vRack
+routes:
+    canonical: 'https://docs.ovh.com/es/private-cloud/anadir_un_dedicated_cloud_al_vrack_15_y_configurar_una_mv/'
+excerpt: Cómo utilizar el vRack con la solución Managed Bare Metal
+slug: vrack-essentials
 section: Servicios y opciones de OVHcloud
 ---
 
@@ -10,7 +11,7 @@ section: Servicios y opciones de OVHcloud
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 02/07/2020**
+**Última actualización: 05/11/2020**
 
 ## Objetivo
 
@@ -22,11 +23,11 @@ El vRack permite conectar distintos servicios cloud de OVHcloud entre sí, dentr
 
 ### Área de cliente
 
-Al entregar el servicio [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/), la parte *datacenter* ya está dentro de un vRack.
+Al entregar el servicio [Managed Bare Metal](https://www.ovhcloud.com/es-es/managed-bare-metal/), la parte *datacenter* ya está dentro de un vRack.
 
 ![Datacenter](images/vRackDatacenter.PNG){.thumbnail}
 
-Para mover el *datacenter* de su Hosted Private Cloud a otro vRack, haga clic en el botón `Mover`{.action}
+Para mover el *datacenter* de su Managed Bare Metal a otro vRack, haga clic en el botón `Mover`{.action}
 
 ### Cliente vSphere
 
@@ -39,7 +40,7 @@ En el cliente vSphere, puede consultar las *VLAN* compatibles con el vRack en el
 
 ![vlan](images/vRackVsphere.png){.thumbnail}
 
-Es posible modificar sus parámetros o volver a crearlos siguiendo la guía de [creación de VxLAN](../crear-vlan-vxlan/).
+Es posible modificar sus parámetros o volver a crearlos siguiendo la guía de [creación de VLAN](../crear-vlan/).
 
 A continuación, podrá asignar estos *portgroup* a las interfaces de red de sus máquinas virtuales.
 

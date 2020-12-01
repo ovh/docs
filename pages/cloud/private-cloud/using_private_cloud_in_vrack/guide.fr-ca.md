@@ -1,14 +1,12 @@
 ---
-title: Utiliser votre infrastructure Managed Bare Metal au sein d’un vRack
-slug: managed-bare-metal-vrack
-routes:
-    canonical: 'https://docs.ovh.com/fr/private-cloud/utiliser-le-private-cloud-au-sein-d-un-vrack/'
-excerpt: Découvrez comment utiliser le vRack avec votre offre Managed Bare Metal
+title: Utiliser le Hosted Private Cloud au sein d’un vRack
+slug: hosted-private-cloud-vrack
+excerpt: Découvrez comment utilisez le vRack avec votre offre Hosted Private Cloud
 section: Services et options OVHcloud
 order: 02
 ---
 
-**Dernière mise à jour le 23/11/2020**
+**Dernière mise à jour le 02/07/2020**
 
 ## Objectif
 
@@ -20,11 +18,11 @@ Le vRack, c’est la possibilité de connecter différents services cloud de OVH
 
 ### Espace client
 
-Lors de la livraison de votre service [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/), la partie *datacenter* est déjà à l'intérieur d'un vRack.
+Lors de la livraison de votre service [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), la partie *datacenter* est déjà à l'intérieur d'un vRack.
 
 ![Datacenter](images/vRackDatacenter.PNG){.thumbnail}
 
-Il est possible de déplacer le *datacenter* de votre infrastructure Managed Bare Metal dans un autre vRack en cliquant sur le bouton `Déplacer`{.action}
+Il est possible de déplacer le *datacenter* de votre Hosted Private Cloud dans un autre vRack en cliquant sur le bouton `Déplacer`{.action}
 
 ### Client vSphere
 
@@ -37,7 +35,7 @@ Dans le client vSphere, vous pouvez retrouver les *VLANs* compatibles vRack dans
 
 ![vlan](images/vRackVsphere.png){.thumbnail}
 
-Il est possible de modifier leurs paramètres, ou d'en créer de nouveau en suivant le guide de [création de VLAN](../creation-vlan/).
+Il est possible de modifier leurs paramètres, ou d'en créer de nouveau en suivant le guide de [création de VxLAN](../creation-vlan-vxlan/).
 
 Vous pourrez ensuite assigner ces *portgroup* sur les interfaces réseaux de vos machines virtuelles.
 

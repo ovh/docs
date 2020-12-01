@@ -1,8 +1,7 @@
 ---
 title: Utilizar el Hosted Private Cloud en un vRack
 excerpt: Cómo utilizar el vRack con la solución Hosted Private Cloud
-slug: anadir_un_dedicated_cloud_al_vrack_15_y_configurar_una_mv
-legacy_guide_number: g1257
+slug: hosted-private-cloud-vrack
 section: Servicios y opciones de OVHcloud
 ---
 
@@ -22,7 +21,7 @@ El vRack permite conectar distintos servicios cloud de OVHcloud entre sí, dentr
 
 ### Área de cliente
 
-Al entregar el servicio [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/), la parte *datacenter* ya está dentro de un vRack.
+Al entregar el servicio [Hosted Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/), la parte *datacenter* ya está dentro de un vRack.
 
 ![Datacenter](images/vRackDatacenter.PNG){.thumbnail}
 
