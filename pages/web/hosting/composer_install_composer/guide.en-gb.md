@@ -23,7 +23,7 @@ section: PHP
 
 ## Requirements
 
-- a [web](https://www.ovh.co.uk/web-hosting/){.external} hosting plan with SSH access
+- a [web hosting plan](https://www.ovh.co.uk/web-hosting/){.external}  with SSH access
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 
