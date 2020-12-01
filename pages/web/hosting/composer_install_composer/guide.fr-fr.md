@@ -1,5 +1,5 @@
 ---
-title: Installer Composer sur un hebergements web
+title: Installer Composer sur un hebergement web
 slug: installation-de-composer-sur-les-hebergements-mutualises
 legacy_guide_number: 1894
 excerpt: Découvrez comment installer et faire vos premiers pas sur Composer.
@@ -10,7 +10,7 @@ section: PHP
 
 ## Objectif
 
-["Composer"](https://getcomposer.org/){.external} est un gestionnaire de dépendances créé pour le langage PHP. Il permet aux développeurs PHP d'inclure des librairies externes dans leurs programmes. "Composer" a permis aux projets PHP de simplifier la distribution de librairies et la maintenance de leur code. D'ailleurs, depuis la création de cet outil, de nombreuses bonnes pratiques de développement ont été proposées au sein de la communauté PHP et ont amélioré les librairies de la communauté PHP. Ces bonnes pratiques sont documentées sous la forme de [PSR](http://www.php-fig.org/){.external}.
+[Composer](https://getcomposer.org/){.external} est un gestionnaire de dépendances créé pour le langage PHP. Il permet aux développeurs PHP d'inclure des librairies externes dans leurs programmes. "Composer" a permis aux projets PHP de simplifier la distribution de librairies et la maintenance de leur code. D'ailleurs, depuis la création de cet outil, de nombreuses bonnes pratiques de développement ont été proposées au sein de la communauté PHP et ont amélioré les librairies de la communauté PHP. Ces bonnes pratiques sont documentées sous la forme de [PSR](http://www.php-fig.org/){.external}.
 
 **Découvrez comment installer et faire vos premiers pas sur Composer**
 
@@ -43,14 +43,14 @@ Si ce n'est pas la bonne version, vous pouvez configurer un alias :
 alias php='/usr/local/php8.0/bin/php'
 ```
 
-Nous vous conseillons de rester au sein du dossier racine de votre hébergement afin de ne pas rendre accessible publiquement les fichiers de "Composer". Il faut que vous exécutiez cette commande :
+Nous vous conseillons de rester au sein du dossier racine de votre hébergement afin de ne pas rendre accessible publiquement les fichiers de « Composer ». Il faut que vous exécutiez cette commande :
 
 
 ```bash
 curl -sS https://getcomposer.org/installer | php
 ```
 
-Félicitations, "Composer" est désormais disponible sur votre hébergement mutualisé !
+Félicitations, « Composer » est désormais disponible sur votre hébergement mutualisé !
 
 
 ### Exemples d'utilisation
@@ -62,7 +62,7 @@ Si vous souhaitez installer Symfony 2 simplement, vous pouvez par exemple lancer
 php composer.phar create-project symfony/framework-standard-edition my_project_name "2.7.*"
 ```
 
-De la même manière, vous pouvez utiliser l'API de OVH depuis votre hébergement en utilisant le wrapper officiel. Pour cela, il suffit d'ajouter un fichier nommé composer.json qui contient la liste des dépendances dont vous avez besoin. Voici un exemple de ce fichier avec le wrapper d'API OVH :
+De la même manière, vous pouvez utiliser l'API de OVH depuis votre hébergement en utilisant le wrapper officiel. Pour cela, il suffit d'ajouter un fichier nommé composer.json qui contient la liste des dépendances dont vous avez besoin. Voici un exemple de ce fichier avec le wrapper d'API OVHcloud :
 
 
 ```json
