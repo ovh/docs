@@ -78,7 +78,7 @@ Personnalisez les valeurs des variables selon la configuration que vous souhaite
 
 > [!warning]
 >
-> Lorsque vous choisissez l'environement d'éxecution « stable64». Vérifiez que votre site est compatible avec l'environement 64 bits.
+> Lorsque vous choisissez l'environement d'éxecution « stable64», vérifiez que votre site est compatible avec l'architecture 64 bits.
 
 Vous trouverez ci-dessous le détail d'application complet du fichier .ovhconfig :
 
