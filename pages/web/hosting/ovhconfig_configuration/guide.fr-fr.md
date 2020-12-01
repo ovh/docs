@@ -16,7 +16,7 @@ Diverses raisons peuvent vous amener à vouloir modifier la configuration de vot
 
 ## Prérequis
 
-- Disposer d’une offre d’[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} (sauf Cloud Web).
+- Disposer d’une offre d’[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external} (sauf Cloud Web).
 - Disposer du mot de passe de l’utilisateur FTP vous permettant d’accéder à votre espace de stockage. 
 
 ## En pratique
