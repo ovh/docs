@@ -1,6 +1,6 @@
 ---
 title: Install Composer on a web hosting plan
-slug: installation-of-dialling-on-shared-hosting
+slug: install_composer_on_web_hosting_packages
 legacy_guide_number: 1894
 excerpt: Find out how to install and take your first steps on Composer.
 section: PHP
