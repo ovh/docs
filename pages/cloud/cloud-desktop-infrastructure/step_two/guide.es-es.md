@@ -81,7 +81,7 @@ Introduzca un nombre para el snapshot (en el ejemplo, un número de versión) y 
 
 ![Nombre del snapshot](images/1202.png){.thumbnail}
 
-Ahora que ya tenemos un modelo creado, pasemos a [crear un pool](https://docs.ovh.com/fr/cloud-desktop-infrastructure/crear-pool/){.external}.
+Ahora que ya tenemos un modelo creado, pasemos a [crear un pool](../crear-pool/).
 
 ## Más información
 

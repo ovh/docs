@@ -189,7 +189,7 @@ Deux situations peuvent se présenter à vous :
 
 ##### **Depuis l'espace client OVHcloud**
 
-Consultez le guide [Créer une instance depuis l’espace client](../creer-instance-espace-client/). Lors de la création d'une instance, vous pourrez spécifier, durant l'étape 4, un réseau privé dans lequel intégrer votre instance. Choisissez alors, dans le menu déroulant présenté, votre vRack précédemment créé.
+Consultez le guide [Créer une instance depuis l’espace client](../create_an_instance_in_your_ovh_customer_account/). Lors de la création d'une instance, vous pourrez spécifier, durant l'étape 4, un réseau privé dans lequel intégrer votre instance. Choisissez alors, dans le menu déroulant présenté, votre vRack précédemment créé.
 
 ![attach new instance](images/vrack6.png){.thumbnail}
 

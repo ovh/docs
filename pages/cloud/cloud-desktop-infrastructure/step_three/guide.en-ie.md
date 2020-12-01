@@ -119,7 +119,7 @@ Once you have logged in to VMware Horizon, follow the steps below:
 
 The creation of the desktop pool may require a long period of time to complete, depending on the template you have used. If any errors occur, the `Inventory` section of the desktop pool will provide details each VM's creation. This should help you find the root of the problem.
 
-Now that you have created your desktop pool, find out how to [assign virtual desktop access to users](https://docs.ovh.com/fr/cloud-desktop-infrastructure/assigning-desktop-access/){.external}.
+Now that you have created your desktop pool, find out how to [assign virtual desktop access to users](../assigning-desktop-access/).
 
 
 ## Go further
