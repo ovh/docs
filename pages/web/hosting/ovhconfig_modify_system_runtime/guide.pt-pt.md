@@ -38,9 +38,9 @@ Para iniciar esta operação, aceda à [Área de Cliente OVH](https://www.ovh.co
 
 ![Configuração do alojamento](images/change-hosting-configuration-step1.png){.thumbnail}
 
-Se o botão `Alterar configuração`{.action} estiver cinzento, é possível que esteja a decorrer uma verificação da **versão global de PHP**. Se for o caso, aparecerá um símbolo redondo azul junto da versão, indicando que a verificação está em curso. Aguarde alguns minutos para que o botão `Alterar configuração`{.action} volte a ficar acessível.
-
-![Configuração do alojamento](images/change-hosting-configuration-step2.png){.thumbnail}
+> [!primary]
+> Se o botão `Alterar configuração`{.action} estiver cinzento, é possível que esteja a decorrer uma verificação da **versão global de PHP**. Se for o caso, aparecerá um símbolo redondo azul junto da versão, indicando que a verificação está em curso. Aguarde alguns minutos para que o botão `Alterar configuração`{.action} volte a ficar acessível.
+>
 
 #### 2 - Alterar a configuração do alojamento web
 
@@ -73,27 +73,20 @@ Ao alterar a configuração de um alojamento web, poderá escolher entre várias
 
 Alterar o ambiente de execução permite modificar determinados valores técnicos do alojamento web. **Antes de efetuar qualquer alteração, certifique-se de que o ambiente que vai aplicar é compatível com o seu website.** 
 
-|Ambientes|Legacy|stable|testing|jessie.i386|
-|---|---|---|---|---|
-|Imagem associada|Legacy|jessie.i386|jessie.i386|jessie.i386|
-|Versão PHP mínima|4.4|5.3|5.3|5.3|
-|Openssl|0.9.8o|1.0.1k (TLS1.2 compatível)|1.0.1k (TLS1.2 compatível)|1.0.1k (TLS1.2 compatível)|
-|Extensão php imagick| - | Sim | Sim | Sim |
-|Extensão php memcache (PHP 5.6)| Sim | Sim | Sim | Sim |
-|Extensão php memcached (PHP 5.6)| - | Sim | Sim | Sim |
-|Extensão php mongo (PHP 5.4, 5.5, 5.6)| - | Sim | Sim | Sim |
-|Extensão mysqlnd (apenas em utf-8)| - | Sim | Sim | Sim |
-|Extensão redis| - | Sim | Sim | Sim |
-|Opcache| Sim | Sim | Sim | Sim |
-|Python|2.6|2.7 e 3.4|2.7 e 3.4|2.7 e 3.4|
-|Ruby|1.8.7|2.1.5|2.1.5|2.1.5|
-|Rails|2.3.5|4.1.8|4.1.8|4.1.8|
-|Perl|5.10|5.20|5.20|5.20|
-|git|1.7.2.5|2.1.4|2.1.4|2.1.4|
+|Ambientes|Legacy|Estável|Estável64|
+|---|---|---|---|
+|arquitetura|32 bits|32 bits|64 bits|
+|Versão PHP mínima|5.6|7.3|7.4|
+|Openssl|1.0.1t|1.0.1t|1.1.1d|
+|Python|2.7 e 3.4|2.7 e 3.7|2.7 e 3.7|
+|Ruby|2.1|2.1|2.5|
+|Rails|4.1|4.1|5.2|
+|Perl|5.20|5.20|5.28|
+|git|2.1|2.1|2.20|
 
 > [!primary]
 >
-> O ambiente “legacy” pode ser útil para sites antigos que ainda utilizam versões anteriores de PHP. No entanto, recomendamos fortemente que utilize um ambiente “stable” com atualizações mais recentes. **Certifique-se de que o seu site é compatível antes de realizar qualquer alteração.**
+> O ambiente “legacy” pode ser útil para sites antigos que ainda utilizam versões anteriores de PHP. No entanto, recomendamos fortemente que utilize um ambiente “stable64” com atualizações mais recentes. **Certifique-se de que o seu site é compatível antes de realizar qualquer alteração.**
 > 
 
 Existem duas possibilidades para realizar esta alteração:
