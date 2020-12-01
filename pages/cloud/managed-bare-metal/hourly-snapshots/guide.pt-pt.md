@@ -1,8 +1,9 @@
 ---
 title: Snapshots horárias OVHcloud
-slug: snapshots-horts-ovh
+slug: snapshots-horts-ovhcloud
+routes:
+    canonical: 'https://docs.ovh.com/pt/private-cloud/snapshots-horts-ovh/'
 excerpt: Compreender o funcionamento das snapshots horárias da OVHcloud
-legacy_guide_number: '2163263'
 section: Funcionalidades da OVHcloud
 order: 06
 ---
@@ -11,7 +12,7 @@ order: 06
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 21/10/2020**
+**Última atualização: 30/11/2020**
 
 ## Sumário
 
@@ -21,7 +22,7 @@ De forma a assegurar uma continuidade de serviço e evitar a perda de dados, a O
 
 ## Requisitos
 
-* Dispor de uma [infraestrutura Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external} na sua conta OVHcloud.
+* Dispor de uma [infraestrutura Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external} na sua conta OVHcloud.
 * Aceder à interface de gestão vSphere Web Client HTML.
 
 ## Instruções
@@ -79,7 +80,7 @@ Trata-se de uma segurança normalmente de uso interno da OVHcloud, as snapshots 
 
 Trata-se de uma segurança suplementar de uso interno implementada nos datastores, que apenas deve ser utilizada como último recurso para evitar uma eventual perda de dados.
 
-Recomendamos a utilização de uma solução completa de backup, como o nosso serviço [Veeam Backup](https://docs.ovh.com/gb/en/private-cloud/veeam-backup-as-a-service/){.external-link} ou qualquer outro sistema que realize um backup completo das suas máquinas virtuais.
+Recomendamos a utilização de uma solução completa de backup, como o nosso serviço [Veeam Backup](https://docs.ovh.com/gb/en/managed-bare-metal/veeam-backup-as-a-service/) ou qualquer outro sistema que realize um backup completo das suas máquinas virtuais.
 
 ## Quer saber mais?
 

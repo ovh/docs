@@ -1,0 +1,127 @@
+---
+title: 'Changelog delle immagini Public Cloud & VPS'
+slug: changelog-immagini
+excerpt:  Scopri le modifiche apportate alle immagini fornite sulle soluzioni Public Cloud e VPS
+section: 'Per iniziare'
+order: 12
+---
+
+**Ultimo aggiornamento: 30/11/2020**
+
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+## Obiettivo
+
+OVHcloud offre una varietà di sistemi operativi e applicazioni preinstallate su VPS e Public Cloud. Come provider, ci assicuriamo che le immagini che proponiamo ai nostri clienti siano aggiornate, il che significa che pubblichiamo regolarmente nuove immagini. La trasparenza è fondamentale per OVHcloud e intendiamo informare i nostri clienti sulle modifiche apportate ad ogni immagine all'interno di qualsiasi nuova versione. Questa pagina ti permette di seguire il report delle modifiche (changelog) delle nostre immagini.
+
+## Prerequisiti
+
+Questa guida si applica esclusivamente alle soluzioni [VPS](https://www.ovhcloud.com/it/vps/compare/) e alle istanze [Public Cloud](https://www.ovhcloud.com/it/public-cloud/compute/).
+
+## Changelog 2020
+
+In questa sezione viene mostrato il changelog per ogni mese del 2020.
+
+### November
+
+```
+--- 09 November 2020 ---
+Image: NVIDIA GPU Cloud (NGC)
+Product: Public Cloud
+Changelog:
+1. We switch from Ubuntu 16.04 to Ubuntu 20.04 base
+2. From now on, we will place into the images a file (/etc/cloud/ovhcloud.manifest) which will show packages we installed / ensure is installed in the image
+3. Installation of qemu-guest-agent, curl & gpg
+
+--- 17 November 2020 ---
+Image: Fedora 33 & Ubuntu 20.10
+Product: Public Cloud
+Changelog:
+The new Fedora 33 and Ubuntu 20.10 images are now available for all public cloud regions. VPS2020 will soon offer the images also.
+```
+
+### October
+
+```
+--- 07 October 2020 ---
+Image: Ubuntu 20.04, Ubuntu 18.04, Ubuntu 16.04, Debian 10, Debian 9, rescue-ovh
+Product: VPS 2016 - 2020 & Public Cloud
+Travaux: http://travaux.ovh.net/?do=details&id=47107
+Changelog:
+1. Installation of qemu-guest-agent, curl & gpg
+2. From now on, we will place into the images a file (/etc/cloud/ovhcloud.manifest) which will show packages we installed / ensure is installed in the image
+3. Latest patches applied
+4. We are moving the rescue-ovh image from Debian 9 to Debian 10 - we install more packages such as zfs utils and other useful diagnostics tools
+5. We switch to cloud images with Debian 10 & Debian 9 which are optimized for cloud use. Customers with automated deployment using Debian 9 should expect interface naming have changed. Only change we make on these images is just to install packages mentioned above.
+
+--- 08 October 2020 ---
+Image: All Debian 8 images
+Product: VPS 2016 - 2020 & Public Cloud
+Travaux: http://travaux.ovh.net/?do=details&id=47107
+Changelog:
+We have removed the Debian 8 images from our catalogue as it has reached end of life (https://wiki.debian.org/DebianReleases). Pre-installed application images has been replaced with new ones and guides has been made available.
+
+--- 14 October 2020 ---
+Image: All Centos images
+Product: VPS 2016 - 2020 & Public Cloud
+Travaux: http://travaux.ovh.net/?do=details&id=47181
+Changelog:
+1. Installation of qemu-guest-agent, curl & gpg
+2. From now on, we will place into the images a file (/etc/cloud/ovhcloud.manifest) which will show packages we installed / ensure is installed in the image. For now with pre-installed apps the manifest does not included packages installed by/for the application
+3. Latest patches applied
+
+--- 20 October 2020 ---
+Image: Fedora 31
+Product: VPS 2016 - 2020 & Public Cloud
+Travaux: http://travaux.ovh.net/?do=details&id=47271
+Changelog:
+1. Installation of qemu-guest-agent, curl & gpg
+2. From now on, we will place into the images a file (/etc/cloud/ovhcloud.manifest) which will show packages we installed / ensure is installed in the image.
+3. Latest patches applied
+
+--- 22 October 2020 ---
+Image: Fedora 32
+Product: VPS 2016 - 2020 & Public Cloud
+Travaux: http://travaux.ovh.net/?do=details&id=47324
+Changelog:
+1. Installation of qemu-guest-agent, curl & gpg
+2. From now on, we will place into the images a file (/etc/cloud/ovhcloud.manifest) which will show packages we installed / ensure is installed in the image.
+3. Latest patches applied
+
+--- 27 October 2020 ---
+Image: Archlinux
+Product: VPS 2016 - 2020 & Public Cloud
+Travaux: http://travaux.ovh.net/?do=details&id=47409
+Changelog:
+1. Installation of qemu-guest-agent, curl & gpg
+2. From now on, we will place into the images a file (/etc/cloud/ovhcloud.manifest) which will show packages we installed / ensure is installed in the image
+3. Latest patches applied and using release 2020.10.01
+```
+
+### September
+
+```
+--- 02 September 2020 ---
+Image: Centos 8
+Product: VPS 2016 - 2020 & Public Cloud
+Travaux: http://travaux.ovh.net/?do=details&id=46475
+Changelog:
+1. Qemu Guest Agent installed to improve snapshot experience
+2. Installation of pending system updates compared to previous image. Image is up-to-date as of the creation of the image.
+
+--- 21 September 2020 ---
+Image: Debian 10
+Product: VPS 2016 - 2020 & Public Cloud
+Travaux: http://travaux.ovh.net/?do=details&id=46840
+Changelog:
+1. Qemu Guest Agent is now installed and enabled - to improve snapshot experience
+2. curl & gpg packages are now installed
+3. Using the Debian Cloud image provided by Debian
+4. Applying recent system update - up to the date of image build
+```
+
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

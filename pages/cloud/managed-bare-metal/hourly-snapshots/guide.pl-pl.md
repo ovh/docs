@@ -1,8 +1,9 @@
 ---
 title: Snapshoty godzinowe OVHcloud
-slug: snapshoty-godzinowe-ovh
+slug: snapshoty-godzinowe-ovhcloud
+routes:
+    canonical: 'https://docs.ovh.com/pl/private-cloud/snapshoty-godzinowe-ovh/'
 excerpt: Dowiedz się, jak działają snapshoty godzinowe OVHcloud
-legacy_guide_number: '2163263'
 section: Funkcje OVHcloud
 order: 06
 ---
@@ -11,7 +12,7 @@ order: 06
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 21-10-2020**
+**Ostatnia aktualizacja z dnia 30-11-2020**
 
 ## Wprowadzenie
 
@@ -21,7 +22,7 @@ Aby zapewnić ciągłość usługi i uniknąć utraty danych, OVHcloud automatyc
 
 ## Wymagania początkowe
 
-* Posiadanie [infrastruktury Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external} na koncie OVHcloud.
+* Posiadanie [infrastruktury Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external} na koncie OVHcloud.
 * Dostęp do interfejsu zarządzania vSphere Web Client HTML.
 
 ## W praktyce
@@ -79,7 +80,7 @@ Jest to bezpieczeństwo normalnie używane przez OVHcloud. Snapshoty godzinowe n
 
 Jest to dodatkowy system bezpieczeństwa do użytku wewnętrznego wprowadzony w przypadku datastore, który ma być stosowany tylko w ostateczności, aby zapobiec utracie danych.
 
-Zalecamy użycie pełnego rozwiązania do tworzenia kopii zapasowych, takiego jak usługa [Veeam Backup](https://docs.ovh.com/gb/en/private-cloud/veeam-backup-as-a-service/){.external-link} lub inny system realizujący kopię zapasową wirtualnych maszyn.
+Zalecamy użycie pełnego rozwiązania do tworzenia kopii zapasowych, takiego jak usługa [Veeam Backup](https://docs.ovh.com/gb/en/managed-bare-metal/veeam-backup-as-a-service/) lub inny system realizujący kopię zapasową wirtualnych maszyn.
 
 ## Sprawdź również
 
