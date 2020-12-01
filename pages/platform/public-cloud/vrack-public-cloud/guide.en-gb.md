@@ -238,7 +238,7 @@ nova net-list
 ><br> - The VLAN(s) required for your configuration
 >
 
-Also, note the information explicated in [this guide](https://docs.ovh.com/fr/public-cloud/debuter-avec-lapi-nova/):
+Also, note the information explicated in [this guide](../starting-with-nova-api/):
 
 - ID or name of the OpenStack SSH key
 - ID of the instance type (flavor)

@@ -107,7 +107,7 @@ In Quantum, once you have executed your request, you should get a response that 
 
 #### HTTP requests with Curl 
 
-You can use one of our [protocols](../protocol_overview/) to query your OVH Cloud Insights data. Here are two examples, using WarpScript™ and PromQL.
+You can use one of our [protocols](../protocol-overview/) to query your OVH Cloud Insights data. Here are two examples, using WarpScript™ and PromQL.
 
 We can send a WarpScript™ query, as shown below, to load the data. As before, you can update the FETCH time parameter to suit your requirements.
 
@@ -156,7 +156,7 @@ For example, if we select 'metrics.series', we can now refresh the graph and the
 
 ## Go further
 
-- Documentation: [Guides](../product.en-gb.md){.ref}
+- Documentation: [Guides](https://docs.ovh.com/gb/en/metrics/)
 - Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform){.external}
 - Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27metrics-free-trial~configuration~%28~%28label~%27region~values~%28~%27gra1%29%29%29~option~%28~%29~quantity~1~productId~%27metrics%29%29&paymentMeanRequired=0){.external}
