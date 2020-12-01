@@ -1,75 +1,93 @@
 ---
-title: Instalação do "Composer" nos alojamentos partilhados
-excerpt: Instalação do "Composer" nos alojamentos partilhados
-id: '1894'
+title: Instalar Compor num alojamento web
 slug: instalacao_do_composer_nos_alojamentos_partilhados
-legacy_guide_number: g1894
+legacy_guide_number: 1894
+excerpt: Saiba como instalar e dar os primeiros passos em Composer
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Pré-requisitos
-Nas ofertas partilhadas OVH pode utilizar o "Composer" a partir das ofertas PRO. Esta limitação deve-se ao facto de que é necessário um acesso SSH na medida em que se trata de uma ferramenta em linha de comandos.
+**Última atualização: 30/11/2020**
 
+## Objetivo
 
-## Instalação
+[Compor](https://getcomposer.org/){.external} é um gestor de dependências criado para a linguagem PHP. Permite aos programadores PHP incluir bibliotecas externas nos seus programas. "Compor" permitiu aos projetos PHP simplificar a distribuição de livrarias e a manutenção do seu código. Aliás, desde a criação desta ferramenta, foram propostas numerosas boas práticas de desenvolvimento no seio da comunidade PHP e melhoraram as livrarias da comunidade PHP. Estas boas práticas são documentadas sob a forma de [PSR](http://www.php-fig.org/){.external}.
 
-## Ligue-se por SSH
-Verifique que possui a última versão de PHP (5.6) disponível através da linha de comandos:
+**Saiba como instalar e dar os primeiros passos em Compor**
 
+> [!warning]
+>
+> A responsabilidade sobre a configuração e a gestão dos serviços que a OVH disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+> 
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
+> 
 
-```
-php --version
-```
+## Requisitos
 
-
-Se não é a correta versão poderá configurar um alias:
-
-
-```
-alias php='/usr/local/php5.6/bin/php'
-```
-
-
-Aconselhamos que fique na pasta raiz do seu alojamento para não tornar os ficheiros do "Composer" acessíveis ao público.
-
-## Download e instalação
-Deve executar o seguinte comando:
-
-[code]curl -sS https://getcomposer.org/installer | php[/code
-
-Parabéns, "Composer" está atualmente disponível no seu alojamento partilhado!
+- Ter um [serviço de alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external} com acesso SSH.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 
-## Exemplos de utilização
-Se deseja instalar o Symfony 2, poderá efetuá-lo com o seguinte comando:
+## Instruções
+
+Verifique se utiliza uma versão de PHP compatível em linha de comandos:
 
 
-```
-php composer.phar create-project symfony/framework-standard-edition my_project_name "2.7.*"
+```bash
+php — versão
 ```
 
+Se esta não é a versão correta, pode configurar um alias:
 
-Poderá utilizar da mesma forma a API da OVH a partir do seu alojamento ao utilizar o "wrapper" oficial. Para tal, basta que adicione um ficheiro com o nome de composer.json que contenha a lista de dependências de que necessita. Deixamos um exemplo com o "wrapper" da API OVH:
 
-
-```
-{
-"name": "Example Application",
-"description": "This is an example of OVH APIs wrapper usage",
-"require": {
-"ovh/ovh": "1.1.*"
-}
-}
+```bash
+alias php='/usr/local/php8.0/bin/php'
 ```
 
+Aconselhamos que permaneça na pasta raiz do seu alojamento para não tornar acessíveis ao público os ficheiros de "Composer". É necessário que execute este comando:
 
-Para o instalar, basta efetuar o seguinte comando na mesma pasta:
 
-
+```bash
+curl -sS https://getcomposer.org/installer | php
 ```
-php composer.phar install
+
+Parabéns, "Compor" está agora disponível no seu alojamento partilhado!
+
+
+### Exemplos de utilização
+
+Se deseja instalar o Symfony 2 de forma simples, pode, por exemplo, executar o seguinte comando:
+
+
+```bash
+php comer.phar create-project symfony/framework-standard-edition my_project_name "2.7*"
 ```
 
+Da mesma forma, pode utilizar a API da OVH a partir do seu alojamento ao utilizar o wrapper oficial. Para isso, basta adicionar um ficheiro denominado comer.json que contém a lista das dependências de que precisa. Eis um exemplo deste ficheiro com o wrapper da API OVHcloud:
 
-Para utilizar esta "libraria" poderá consultar a documentação, bem como o código, disponível no [github](https://github.com/ovh/php-ovh)
 
+```json
+1. {
+2.     "name": "Exemplo De Aplicação",
+3.     "Descrição": "This is an example of OVH APIs wrapper use",
+4.     "tubarão": {
+5.         "ovh/ovh": "1.1.*"
+6.     }
+7. }
+```
+
+Para o instalar, só precisa de executar o comando seguinte na mesma pasta:
+
+
+```bash
+php compor.phar install
+```
+
+Para utilizar esta livraria, pode consultar a documentação, assim como o código, disponíveis em [github](https://github.com/ovh/php-ovh){.external}
+
+
+## Quer saber mais?
+
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
