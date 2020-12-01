@@ -1,28 +1,28 @@
 ---
 title: 'Changelog der Public Cloud & VPS Images'
-slug: changelog-bilder
-excerpt:  Entdecken Sie die Änderungen, die in den Images der Public Cloud und VPS Lösungen vorgenommen wurden
+slug: changelog-imgages
+excerpt: Erfahren Sie hier die Änderungen, die an den Images der Public Cloud und VPS Lösungen vorgenommen wurden
 section: 'Erste Schritte'
 order: 7
 ---
-
-**Stand 30.11.2020**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
+**Letzte Aktualisierung am 16.11.2020**
+
 ## Ziel
 
-OVHcloud bietet eine Vielzahl von Betriebssystemen und Anwendungen, die auf VPS und Public Cloud Produkten vorinstalliert sind. Als Anbieter stellen wir sicher, dass die Bilder, die wir unseren Kunden anbieten, aktuell sind, was bedeutet, dass wir regelmäßig neue Bilder veröffentlichen. Transparenz ist für OVHcloud von entscheidender Bedeutung und wir beabsichtigen, unsere Kunden über Änderungen zu informieren, die an jedem Image in jeder neuen Version vorgenommen werden. Auf dieser Seite können Sie das Journal der Änderungen (changelog) unserer Bilder einsehen.
+OVHcloud bietet eine Vielzahl von Betriebssystemen und Anwendungen, die auf VPS und Public Cloud Lösungen vorinstalliert sind. Als Anbieter stellen wir sicher, dass die Images, die wir unseren Kunden anbieten, aktuell sind, was bedeutet, dass wir regelmäßig neue Images veröffentlichen. Transparenz ist für OVHcloud von entscheidender Bedeutung und wir beabsichtigen, unsere Kunden über Änderungen zu informieren, die an jedem Image in jeder neuen Version vorgenommen werden. Auf dieser Seite können Sie das Journal der Änderungen (Changelogs) unserer Images einsehen.
 
 ## Voraussetzungen
 
-Diese Anleitung gilt ausschließlich für [VPS](https://www.ovhcloud.com/de/vps/compare/) und [Public Cloud Instanzen](https://www.ovhcloud.com/de/public-cloud/compute/).
+Diese Liste gilt ausschließlich für [VPS](https://www.ovhcloud.com/de/vps/compare/) und [Public Cloud Instanzen](https://www.ovhcloud.com/de/public-cloud/compute/).
 
 ## Changelog 2020
 
-Dieser Bereich zeigt den Changelog für jeden Monat des Jahres 2020.
+Dieser Bereich enthält die Changelogs für jeden Monat des Jahres 2020.
 
 ### November
 
