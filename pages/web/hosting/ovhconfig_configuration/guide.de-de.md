@@ -75,12 +75,11 @@ Passen Sie die Werte der Variablen entsprechend der Konfiguration an, die Sie f�
 |environment|Hier können Sie festlegen, wie die statischen Dateien Ihrer Website gecacht werden sowie die PHP-Fehlerbehandlung einstellen. Geben Sie „production“ ein, um das Caching zu maximieren und PHP-Fehler zu verbergen, oder „development“, um das Caching abzustellen und PHP-Fehler anzuzeigen.|
 |container.image|Hier können Sie die von Ihrem Webhosting verwendete Ausführungsumgebung ändern. Geben Sie die gewünschte Engine ein. Die möglichen Konfigurationen finden Sie in unserer Dokumentation: [„Verfügbare Konfigurationen“](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#verfugbare-konfigurationen_1){.external}|
 
-Nachstehend finden Sie die vollständigen Anwendungsdetails der .ovhconfig-Datei.
-
 > [!warning]
 >
-> Wenn Sie die Ausführungsumgebung "stable64"auswählen. Überprüfen Sie, ob Ihre Website mit der 64 Bit Umgebung kompatibel ist.
+> Wenn Sie die Ausführungsumgebung "stable64"auswählen, überprüfen Sie, ob Ihre Website mit der 64 Bit Umgebung kompatibel ist.
 
+Nachstehend finden Sie die vollständigen Anwendungsdetails der .ovhconfig-Datei.
 
 ```php
 ; ovhconfig
