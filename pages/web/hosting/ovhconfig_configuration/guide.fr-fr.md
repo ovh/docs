@@ -152,7 +152,7 @@ Une fois le fichier .ovhconfig modifié, il ne vous reste plus qu'à le téléch
 
 Si vous utilisez votre hébergement web pour y héberger plusieurs sites internet, vous avez sûrement configuré des Multisites. Diverses raisons peuvent vous amener à vouloir bénéficier d'une version de PHP différente pour certains de vos Multisites.
 
-Pour cela, vous devez créer un fichier .ovhconfig pour le ou les Multisites concernés contenant la version de PHP souhaitée. Aidez-vous des manipulations décrites dans la section [« Modifier le fichier .ovhconfig »](../configurer-fichier-ovhconfig/#modifier-le-fichier-ovhconfig){.external} de cette documentation si nécessaire. Lorsque vous devrez télécharger le fichier .ovhconfig sur votre espace de stockage, prenez soin de le faire dans le dossier racine du Multisite. Vous pouvez retrouver le dossier racine de vos Multisites depuis votre espace client dans l'onglet `Multisite`{.action} de l'hébergement concerné.
+Pour cela, vous devez créer un fichier .ovhconfig pour le ou les Multisites concernés contenant la version de PHP souhaitée. Aidez-vous des manipulations décrites dans la section [« Modifier le fichier .ovhconfig »](./#modifier-le-fichier-ovhconfig){.external} de cette documentation si nécessaire. Lorsque vous devrez télécharger le fichier .ovhconfig sur votre espace de stockage, prenez soin de le faire dans le dossier racine du Multisite. Vous pouvez retrouver le dossier racine de vos Multisites depuis votre espace client dans l'onglet `Multisite`{.action} de l'hébergement concerné.
 
 > [!warning]
 >
