@@ -81,12 +81,14 @@ Si vous avez renseigné un numéro de ligne actif au début de votre demande, il
 Vous devrez choisir entre "Dégroupage total" et "Dégroupage partiel".
 
 Le dégroupage partiel signifie que vous souhaitez conserver la ligne analogique à cette adresse. 
-<br>Vous aurez donc un abonnement OVH pour l'accès internet ainsi qu'un abonnement chez Orange pour cette ligne analogique. 
-
+Vous aurez donc un abonnement OVH pour l'accès internet ainsi qu'un abonnement chez Orange pour cette ligne analogique. 
 <br>Le dégroupage total signifie que vous n'aurez que l'accès internet à votre nouvelle adresse (soit uniquement l'abonnement OVH).
+
+Cochez la case correspondant à votre choix puis cliquez sur le bouton `Confirmer la sélection`{.action}
 
 ![Choix du dégroupage](images/move08-edit.png){.thumbnail}
 
+### Conservation des numéros
 
 
 
