@@ -107,6 +107,6 @@ Please note that spam false positives cannot be declared directly from OWA. If y
 
 [Sharing calendars in OWA](../exchange_2016_how_to_share_calendars_via_owa)
 
-[Using the Outlook Web App with an email account](../microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/)
+[Using the Outlook Web App](../exchange_2016_outlook_web_app_user_guide/)
 
 Join our community of users on <https://community.ovh.com/en/>.

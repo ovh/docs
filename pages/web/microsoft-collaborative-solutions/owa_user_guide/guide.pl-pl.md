@@ -164,8 +164,9 @@ W interfejsie OWA możesz utworzyć odpowiedź automatyczną z Twojego adresu e-
 ![useowa](images/owa_exchange_step20.png){.thumbnail}
 
 W wyświetlonym oknie zaznacz opcję „Wysyłaj odpowiedzi automatyczne”. Możesz też ustawić różne kryteria automatycznych odpowiedzi:
-\- wysyłanie e-maili z automatyczną odpowiedzią w stałych przedziałach czasu lub ciągle, aż do ręcznego wyłączenia,
-\- którzy nadawcy będą otrzymywać e-maile z automatyczną odpowiedzią (tylko nadawcy wewnętrzni lub również nadawcy zewnętrzni).
+
+- wysyłanie e-maili z automatyczną odpowiedzią w stałych przedziałach czasu lub ciągle, aż do ręcznego wyłączenia,
+- którzy nadawcy będą otrzymywać e-maile z automatyczną odpowiedzią (tylko nadawcy wewnętrzni lub również nadawcy zewnętrzni).
 
 Podaj wymagane informacje w zależności od działania, które ma być wykonywane. Po ich wprowadzeniu kliknij przycisk `OK`{.action}.
 

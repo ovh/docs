@@ -1,70 +1,66 @@
 ---
-title: 'Creating automatic signatures'
-excerpt: 'Find out how to add automatic signatures to your email accounts'
-slug: exchange_20132016_how_to_create_an_automatic_signature
-section: 'Exchange account features'
+title: 'Crear firmas automáticas'
+excerpt: 'Cómo agregar firmas automáticas a sus cuentas de correo electrónico'
+slug: exchange_20132016_firma_automatica_disclaimer
+legacy_guide_number: g1330
+section: Funcionalidades de Exchange
 order: 3
 ---
 
-**Last updated 26th March 2020**
+**Última actualización: 26/3/2020**
 
 
-## Objective
+## Objetivo
 
-In the OVHcloud Control Panel, you can create universal signatures (footers) for email addresses using the same domain ("corporate" signature). They will be attached automatically to emails sent from a user's account.
+El área de cliente de OVHcloud le permite crear firmas genéricas (pies de mensaje) para direcciones de correo electrónico que utilicen el mismo dominio (firma «corporativa»). Estas se añadirán automáticamente a los correos electrónicos enviados desde la cuenta de un usuario.
 
-**This guide explains how to create an automatic signature using the OVHcloud Control Panel.**
-
-> [!primary]
->
-> Although this guide will refer to our Exchange services, you can follow the instructions for Email Pro accounts as well.
->
+**Esta guía explica cómo crear una firma automática desde el área de cliente de OVHcloud.**
 
 
-## Requirements
+## Requisitos
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
-- an [OVHcloud Exchange](https://www.ovh.co.uk/emails/)
-
-
-## Instructions
+- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Tener una solución [Exchange](https://www.ovh.es/emails/hosted-exchange/) ya configuradas.
 
 
-First, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), navigate to the "Web" section, and select your Exchange service from the column under `Microsoft`{.action} `Exchange`{.action} on the left-hand side. Click on the `More+`{.action} tab in the horizontal menu and select `Footers`{.action}.
+## Procedimiento
+
+
+En primer lugar, acceda a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager), diríjase a la sección «Web», y seleccione su servicio Exchange de la columna `Microsoft`{.action} > `Exchange`{.action} del menú de la izquierda. Haga clic en la pestaña `Más +`{.action} en la barra horizontal y seleccione `Pies de página`{.action}.
 
 ![exchangesig](images/exchange-footer-step1.png){.thumbnail}
 
-In this section you will see your attached domains, for each of which you can create a footer scheme. Click on `...`{.action} and then on `Configuration`{.action} to open the HTML editor.
+En esta sección podrá consultar sus dominios asociados y crear un pie de mensaje para cada uno ellos. Haga clic en el icono `...`{.action} y seleccione `Editar`{.action} para abrir el editor HTML.
 
 ![exchangesig](images/exchange-footer-step2.png){.thumbnail}
 
-The editor offers a selection of variables that correspond to the user's data in their account settings. You can, for example, compose a generic closing message and add an appropriate sign-off or some contact information below it, using the variables. Click on the down-arrow to select a variable, then click `Insert a variable`{.action} to add it into the editing pane.
+El editor ofrece una selección de variables que corresponden a los datos del usuario en la configuración de su cuenta. Puede, por ejemplo, redactar un mensaje de cierre genérico y agregar una firma apropiada u otra información de contacto debajo, utilizando las variables. Haga clic en la flecha hacia abajo para seleccionar una variable y, a continuación, seleccione `Insertar una variable`{.action} para agregarla al panel de edición.
 
 ![exchangesig](images/exchange-footer-step3aag.gif){.thumbnail}
 
-The footer is created using HTML tags, which allow for some formatting options. Use the tool bar on the top to customise the signature. You can also verify the HTML code by clicking on `Source`{.action}.
+La firma se crea mediante etiquetas HTML que ofrecen algunas opciones de formato. Utilice la barra de herramientas en la parte superior para personalizar la firma. También puede comprobar el código HTML haciendo clic en `Fuente HTML`{.action}.
  
 ![exchangesig](images/exchange-footer-step4.png){.thumbnail}
 
-Tick the box "Enable the signature for outgoing mail only" to prevent adding this footer to emails sent between users on the same domain. Click `Confirm`{.action} once the signature is finished. It will now be attached to emails sent from this domain's user accounts. You can edit or delete signatures in the OVHcloud Control Panel after they are created.
+Marque la casilla «Activar la firma solo para los correos de salida» para evitar agregar este pie a los correos electrónicos enviados entre usuarios del mismo dominio. Haga clic en `Aceptar`{.action} una vez que haya terminado de crear su firma. De ahora en adelante esta firma se adjuntará a los correos electrónicos enviados desde las cuentas de usuario de dicho dominio. Una vez creadas, puede editar o eliminar las firmas desde el área de cliente de OVHcloud.
 
-Please take the following specifics into consideration before applying signatures for users:
+Tenga en cuenta los siguientes datos antes de introducir firmas para los usuarios:
 
-- Apart from "First name", "Surname", and "Display name", the account details cannot be edited from the OVHcloud Control Panel but need to be specified in the user's OWA ("Options", "General", "My account").
+- Aparte de «Nombre», «Apellido» y «Nombre visible», los datos de la cuenta no se pueden editar desde el área de cliente de OVHcloud, sino que deberá indicarlos en el webmail OWA del usuario («Opciones» > «General» > «Mi cuenta»).
 
 ![exchangesig](images/exchange-footer-step5.png){.thumbnail}
 
-- The signature will be added to the email's body without gap, meaning it is advisable to begin the signature with at least one empty line.
-- It is not indicated in OWA whether a footer is enabled on this domain and there is **no synchronisation**. If users add their [own signatures](../exchange_2016_outlook_web_app_user_guide/#adding-a-signature), emails will include both the individual and the domain-wide footer.
-- The editor supports HTML formatting, hyperlinks, images, etc. However, signatures should not rely on these options too heavily. Recipients may use email clients that prevent HTML and embedded images, or the signatures will appear in a different way than intended. Note that HTML tags will be completely removed if a message is sent as "Plain text" from OWA.
-- "Initials" are not active on the service. Adding this variable will have no effect.
+- La firma se agregará al cuerpo del correo electrónico sin espacios, por lo que es recomendable comenzar la firma con al menos una línea en blanco.
+- OWA no indica si una firma está habilitada en este dominio y **no se sincroniza**. Cuando los usuarios agregan sus [propias firmas](../exchange_2016_guia_de_uso_de_outlook_web_app/#anadir-una-firma), los correos electrónicos incluyen tanto el pie del mensaje individual como el de todo el dominio.
+- El editor admite formato HTML, hipervínculos, imágenes, etc. Sin embargo, las firmas no deben abusar de estas opciones. Es posible que los destinatarios utilicen clientes de correo electrónico incompatibles con HTML y las imágenes incrustadas, o que las firmas se muestren de forma diferente a la previsualizada. Tenga en cuenta que las etiquetas HTML se eliminarán por completo si se envía un mensaje como «Texto sin formato» desde OWA.
+- Las «iniciales» no están activadas en el servicio, por lo que agregar esta variable no tendrá ningún efecto.
 
-## Go further
+## Más información
 
-[Using the Outlook Web App with an Exchange account](../exchange_2016_outlook_web_app_user_guide)
+[Usar Outlook Web App con una cuenta Exchange](../exchange_2016_guia_de_uso_de_outlook_web_app)
 
-[Delegating permissions on an Exchange account](../exchange_2013_how_to_grant_full_access_permissions_for_an_account)
+[Delegar permisos en una cuenta Exchange](../exchange_2013_dar_permisos_full_access_a_una_cuenta)
 
-[How to share calendars via OWA](../exchange_2016_how_to_share_calendars_via_owa)
+[Compartir un calendario con el webmail OWA](../exchange_2016_compartir_un_calendario_con_el_webmail_owa)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

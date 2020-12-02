@@ -163,6 +163,7 @@ In OWA, you can create an automatic reply on your email address to not leave ema
 ![useowa](images/owa_exchange_step20.png){.thumbnail}
 
 In the window that appears, select the option "Send automatic replies". You can then set the auto-responder to fit several criteria:
+
 - send auto-reply emails for a fixed time interval, or continuously until it is manually disabled
 - define which senders will receive auto-reply emails (internal senders only, or include external senders)
 

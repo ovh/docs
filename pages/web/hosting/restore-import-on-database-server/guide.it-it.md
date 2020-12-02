@@ -156,11 +156,10 @@ psql —host=server —port=port —user=utente —password=password nome_databa
 
 > [!warning]
 >
-> - Per evitare che un terzo acceda al file con dati sensibili, consulta questa guida per rendere [sicuro l'accesso](../how_to_password_protect_a_directory_on_your_website/)
+> - Per evitare che un terzo acceda al file con dati sensibili, consulta questa guida per rendere [sicuro l'accesso](https://docs.ovh.com/gb/en/hosting/how_to_password_protect_a_directory_on_your_website/)
 > - Questa azione è possibile solo da un hosting OVHcloud condiviso.
 >
 
 ## Per saperne di più
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>.
-

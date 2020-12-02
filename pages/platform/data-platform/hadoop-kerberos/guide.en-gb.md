@@ -75,7 +75,7 @@ $ ./kafka-topics.sh --list --zookeeper \
 
 ### Flink with Kafka
 
-For flink read and write, you will need to use version 0.9 of kafka client (As explained in this [Stackoverflow thread](_Stackoverflow thread: https://stackoverflow.com/questions/34596165/how-to-do-kerberos-authentication-on-a-flink-standalone-installation)).
+For flink read and write, you will need to use version 0.9 of kafka client (As explained in this Stackoverflow thread: <https://stackoverflow.com/questions/34596165/how-to-do-kerberos-authentication-on-a-flink-standalone-installation>.
 In order to read from a kerberised kafka you need to ckeck that kerberos configuration has been set in *flink-conf.yaml*
 You should :
 
