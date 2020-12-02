@@ -41,7 +41,7 @@ Once logged in, the TenantName is visible at the top of page.
 
 - Host Name: gateways.storage.{region}.cloud.ovh.net
 - User Name: pca
-- Password : {TenantName}.{Username_Openstack}.{Password_Openstack}
+- Password: {TenantName}.{Username_Openstack}.{Password_Openstack}
 - Port: 22
 
 ### Upload data
@@ -61,7 +61,7 @@ OVHcloud Public Cloud Archive provides data storage at low cost, in exchange for
 Once your archive has been unsealed, you can download it within 24 hours with unlimited throughput and access frequency. After this retrieval period, the archive will be sealed again.
 
 ```bash
-user@host:~$ rsync -a pca@gateways.storage.gra.cloud.ovh.net:/container .
+user@host:~$ rsync -a pca@gateways.storage.gra.cloud.ovh.net:/container
 pca@gateways.storage.gra.cloud.ovh.net's password:
 user@host:~$
 ```
