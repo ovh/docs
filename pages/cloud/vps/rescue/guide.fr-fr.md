@@ -48,7 +48,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 Sous l'onglet `Accueil`{.action}, cliquez sur `...`{.action} à côté de "Boot" dans la zone **Votre VPS**.
 
-! [configuration du mode rescue](images/rescue_new.png){.thumbnail}
+![configuration du mode rescue](images/rescue_new.png){.thumbnail}
 
 Sélectionnez `Redémarrer en mode rescue`{.action} dans le menu.
 
@@ -56,7 +56,7 @@ Sélectionnez `Redémarrer en mode rescue`{.action} dans le menu.
 
 Sous l'onglet `Accueil`{.action}, cliquez sur le lien de raccourci intitulé `Redémarrer en mode rescue`{.action}.
 
-! [configuration du mode rescue](images/rescue_legacy.png){.thumbnail}
+![configuration du mode rescue](images/rescue_legacy.png){.thumbnail}
 
 Une fenêtre s'affiche, cliquez sur `Confirmer`{.action} pour lancer le redémarrage en mode rescue.
 
