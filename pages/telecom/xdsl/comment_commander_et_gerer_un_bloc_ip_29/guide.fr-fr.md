@@ -5,7 +5,7 @@ excerpt: 'Apprenez à administrer un bloc IP /29 et à le paramétrer sur votre 
 section: 'Configurations techniques avancées'
 ---
 
-**Dernière mise à jour le 30/10/2020**
+**Dernière mise à jour le 02/12/2020**
 
 ## Objectif
 
@@ -190,7 +190,7 @@ La configuration d'un bloc IP /29 sur une box Zyxel s'effectue dans l'interface 
 > S'il s'agit de votre première connexion à l'interface de votre box Zyxel, vous serez invité à personnaliser le mot de passe administrateur. Réalisez cette manipulation en précisant un mot de passe complexe. 
 >
 
-Une fois connecté à l'interface, plusieurs manipulations sont nécessaires. La première consiste à rendre le réseau local public. Pour cela, cliquez sur `Network Settings`{.action} puis sur `Home Networking`{.action}. Dans la nouvelle fenêtre, positionnez-vous sur l'onglet `Additional Subnet`{.action}. Dans la partie « Public LAN », complétez les deux informations ci-dessous :
+Une fois connecté à l'interface, plusieurs manipulations sont nécessaires. La première consiste à rendre le réseau local public. Pour cela, cliquez sur l'icône menu en haut à droite, puis sur  `Network Settings`{.action} puis sur `Home Networking`{.action}. Dans la nouvelle fenêtre, positionnez-vous sur l'onglet `Additional Subnet`{.action}. Dans la partie « Public LAN », complétez les deux informations ci-dessous :
 
 |Informations|Description|
 |---|---|
@@ -201,15 +201,11 @@ Cliquez ensuite sur le bouton `Apply`{.action}.
 
 ![blocip](images/blocip-step8.png){.thumbnail}
 
-Cliquez sur `Security`{.action}, puis sur `Firewall`{.action}. Modifiez le niveau du pare-feu sur « Low », puis cliquez sur le bouton `Apply`{.action}.
+Cliquez à nouveau sur l'icône menu en haut à droite, puis sur `Security`{.action} et pour finir sur `Firewall`{.action}. Modifiez le niveau du pare-feu sur « Low », puis cliquez sur le bouton `Apply`{.action}.
 
 ![blocip](images/blocip-step9.png){.thumbnail}
 
-Cliquez maintenant sur `System Monitor`{.action}, puis sur `Traffic Status`{.action}. Notez alors le nom de l'interface connectée (appelé « Connected Interface ») ; nous aurons besoin de lui rapidement.
-
-![blocip](images/blocip-step10.png){.thumbnail}
-
-À présent, il est nécessaire de créer une règle afin d'autoriser les équipements connectés en local à accéder à Internet. Pour cela, cliquez sur `Network Settings`{.action}, puis sur `NAT`{.action}. Dans la nouvelle fenêtre, positionnez-vous sur l'onglet `Address Mapping`{.action} et cliquez sur le bouton `Add New Rule`{.action}.
+À présent, il est nécessaire de créer une règle afin d'autoriser les équipements connectés en local à accéder à Internet. Pour cela, retounez dans le menu `Network Settings`{.action}, puis sur `NAT`{.action}. Dans la nouvelle fenêtre, positionnez-vous sur l'onglet `Address Mapping`{.action} et cliquez sur le bouton `Add New Rule`{.action}.
 
 ![blocip](images/blocip-step11.png){.thumbnail}
 
@@ -228,11 +224,19 @@ Cliquez ensuite sur le bouton `OK`{.action}.
 
 ![blocip](images/blocip-step12.png){.thumbnail}
 
-Sélectionnez alors `Network Settings`{.action}, puis `Broadband`{.action}. Cliquez sur l'icône représentant une feuille et un crayon, à droite du nom de l'interface utilisée par votre modem (celui récupéré précédemment, mentionné en dessous de « Connected Interface »).
+Toujours dans le menu `Network Settings`{.action}, selectionnez le menu `Broadband`{.action}. Cliquez sur l'icône représentant une feuille et un crayon, à droite du nom de l'interface utilisée par votre modem. L'interface dépend de votre type de connexion :
+
+- **ADSL**: Pour une connexion de type ADSL
+- **VDSL**: Pour une connexion de type VDSL
+- **ETHWAN**: Pour une connexion de type FTTH
 
 ![blocip](images/blocip-step13.png){.thumbnail}
 
-Dans la fenêtre qui apparaît, descendez jusqu'à la partie « Routing feature ». Cochez la case `Disable` à droite de **NAT Enable**. Cliquez enfin sur le bouton `OK`{.action}.
+En cas de doute, le type de votre connexion est disponible sur l’espace client OVHcloud.
+
+![blocip](images/blocip-step10.png){.thumbnail}
+
+Dans la fenêtre qui apparaît, descendez jusqu'à la partie « Routing feature ». Désactivé le curseur à droite de `NAT`{.action}. Cliquez enfin sur le bouton `Apply`{.action}.
 
 ![blocip](images/blocip-step14.png){.thumbnail}
 
