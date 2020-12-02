@@ -173,7 +173,8 @@ Depuis cette partie, plusieurs possibilités s'offrent à vous.
 
 > [!primary]
 >
-> À utiliser uniquement dans le cas où vous disposez d'un équipement pouvant agir en tant que routeur sur votre réseau local. Il gérera alors intégralement votre connexion locale, OVH ne pouvant pas intervenir sur celui-ci. 
+> À utiliser uniquement dans le cas où vous disposez d'un équipement pouvant agir en tant que routeur sur votre réseau local. Il gérera alors intégralement votre connexion locale, OVH ne pouvant pas intervenir sur celui-ci.
+Si votre modem est de marque Zyxel, veuillez suivre le guide [Comment activer le bridge sur un modem zyxel](../comment_activer_bridge_zyxel).
 >
 
 - **Configurer le MTU** : lors d'une transmission de données informatiques, le Maximum Transmission Unit (MTU) est la taille maximale d'un paquet pouvant être échangé en une seule fois (c'est-à-dire sans fragmentation) sur une interface. Le MTU par défaut d'un accès OVH en PPPoe est de 1 492.
