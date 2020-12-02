@@ -1,7 +1,7 @@
 ---
 title: Utilizar el Managed Bare Metal en un vRack
 routes:
-    canonical: 'https://docs.ovh.com/us/es/private-cloud/anadir_un_dedicated_cloud_al_vrack_15_y_configurar_una_mv/'
+    canonical: 'https://docs.ovh.com/us/es/private-cloud/hosted-private-cloud-vrack/'
 excerpt: Cómo utilizar el vRack con la solución Managed Bare Metal
 slug: vrack-essentials
 section: Servicios y opciones de OVHcloud

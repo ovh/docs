@@ -51,7 +51,7 @@ Pour générer ce code d'auto-configuration rendez-vous dans votre Espace Client
 
 Si votre combiné affiche ce message c'est qu'il n'arrive pas à dialoguer avec la base.
 
--   Vérifiez dans un premier temps que la base est bien alimentée électriquement et que le bouton central soit allumé en bleu.<br> ![base allumée](Base%20allum%C3%A9e.png){.thumbnail}
+-   Vérifiez dans un premier temps que la base est bien alimentée électriquement et que le bouton central soit allumé en bleu.<br> ![base allumée](baseallumee.png){.thumbnail}
 -   Si le voyant de la base est bien bleu il faut procéder à l'enregistrement du combiné.
 -   Cliquez sur le bouton central du téléphone.
 -   Déplacez vous sur "**Réglages**" puis validez en appuyant sur OK.

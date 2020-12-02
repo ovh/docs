@@ -241,7 +241,7 @@ There you are! Please do not hesitate to give us your feedback on your tests!
 
 
 ## DBaaS Help
-- Documentation: [Guides](../guide.en-gb.md){.ref}
+- Documentation: [Guides](../)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/mobile-hosting/database){.external}
 - Mailing List: [paas.sql-subscribe@ml.ovh.net](mailto:paas.sql-subscribe@ml.ovh.net){.external}
 - Create an account: [Try it for free!](https://www.runabove.com){.external}

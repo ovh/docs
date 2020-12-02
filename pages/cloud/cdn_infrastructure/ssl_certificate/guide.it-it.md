@@ -28,7 +28,7 @@ order: 4
 - Se stai integrando un altro sottodominio sulla CDN, verrà generato automaticamente un nuovo certificato al fine di includere anche il nuovo sottodominio.
 
 
-Per poter creare correttamente il certificato, è necessario che il sottodominio che stai aggiungendo punti correttamente verso l’IP della CDN. Per maggiori informazioni, consulta la guida su come [configurare per la prima volta un dominio sulla CDN](https://docs.ovh.com/it/cdn-infrastructure/prima-configurazione-dominio-sulla-cdn/){.external}.
+Per poter creare correttamente il certificato, è necessario che il sottodominio che stai aggiungendo punti correttamente verso l’IP della CDN. Per maggiori informazioni, consulta la guida su come [configurare per la prima volta un dominio sulla CDN](../prima-configurazione-dominio-su-cdn/).
 
 Il certificato si rinnova automaticamente nei 20 giorni precedenti la scadenza del certificato.
 
@@ -70,6 +70,6 @@ Una volta attivato il certificato otterrai questo risultato:
 
 ## Per saperne di più
 
-[Prima configurazione di un dominio](https://docs.ovh.com/it/cdn-infrastructure/prima-configurazione-dominio-sulla-cdn/){.external}
+[Prima configurazione di un dominio](../prima-configurazione-dominio-su-cdn/)
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
