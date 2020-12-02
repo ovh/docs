@@ -142,7 +142,7 @@ vconnect()
 
 ##### OS
 
-This example uses a VM installed with Ubuntu 18.04, deployed from [templates available for your Hosted Private Cloud infrastructure](https://docs.ovh.com/gb/en/private-cloud/deploy-ovh-template/).
+This example uses a VM installed with Ubuntu 18.04, deployed from [templates available for your Hosted Private Cloud infrastructure](../applying-ovh-template/).
 
 
 ##### Requirements

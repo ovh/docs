@@ -16,12 +16,6 @@ Dans votre espace client OVHcloud, vous pouvez créer des signatures universelle
 
 **Découvrez comment créer une signature automatique depuis l’espace client OVHcloud.**
 
-> [!primary]
->
-> Bien que ce guide fasse référence à nos services Exchange, vous pouvez également suivre les instructions pour les comptes Email Pro.
->
-
-
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager)

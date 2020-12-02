@@ -164,8 +164,9 @@ Na interface OWA, pode criar uma resposta automática para o seu endereço de e-
 ![useowa](images/owa_exchange_step20.png){.thumbnail}
 
 Na janela exibida, selecione a opção "Enviar respostas automáticas". Pode então configurar o sistema de resposta automática para obedecer a alguns critérios:
-\- enviar e-mails de resposta automática durante um período de tempo predefinido, ou de uma forma contínua até que seja manualmente desativado
-\- definir que remetentes irão receber os e-mails de resposta automática (apenas os remetentes internos ou incluir os remetentes externos)
+
+- enviar e-mails de resposta automática durante um período de tempo predefinido, ou de uma forma contínua até que seja manualmente desativado
+- definir que remetentes irão receber os e-mails de resposta automática (apenas os remetentes internos ou incluir os remetentes externos)
 
 Preencha a informação solicitada dependendo da ação que deseja ver concluída. Quando terminar, clique em `OK`{.action}.
 

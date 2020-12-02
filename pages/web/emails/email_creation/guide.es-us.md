@@ -89,10 +89,6 @@ Puede configurar su dirección de correo en el dispositivo que desee (smartphone
 |Windows|Outlook|Apple|Android|Otros|
 |---|---|---|---|---|
 |[Windows 10](../configuracion-correo-windows-10/){.external}|[Outlook 2016](../configuracion-outlook-2016/){.external}|[Mail de macOS (última versión)](../correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/){.external}|[Android (última versión)](../configuracion-android/){.external}|[Gmail](../configurar-direccion-de-correo-electronico-en-interfaz-web-gmail/){.external}|
-|[Windows 8](../correo_guia_de_configuracion_en_windows_8/){.external}|[Outlook 2011 en Mac](../web_hosting_guia_de_configuracion_de_outlook_2011_en_mac/){.external}|[Mail de Mac (Mavericks y Yosemite)](../correo_guia_de_configuracion_en_mail_de_mac_mavericks_y_yosemite/){.external}|[Android 5.1](../correo_guia_de_configuracion_de_un_telefono_movil_en_android_51/){.external}| |
-|[Windows Phone](../correo_guia_de_configuracion_en_windows_phone/){.external}|[Outlook 2010](../correo_guia_de_configuracion_en_outlook_2010/){.external}|[iPhone o iPad (iOS 7 y versiones posteriores)](../correo_guia_de_configuracion_en_iphone_ios_91/){.external}|[Android 4.1.2](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_una_tablet_android_412/){.external} | |
-|[Windows Mail](../correo_guia_de_configuracion_en_windows_mail/){.external}|[Outlook 2007](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_outlook_2007/){.external}|[Thunderbird en Mac](../correo_guia_de_configuracion_para_thunderbird_en_mac/){.external}| | |
-|[Thunderbird en Windows](../correo_guia_de_configuracion_en_thunderbird/){.external}| | | | |
 
 A continuación se indican los parámetros necesarios para configurar una cuenta MX Plan:
 
@@ -165,10 +161,6 @@ Puede configurar su dirección de correo en el dispositivo que desee (smartphone
 |Windows|Outlook|Apple|Android|Otros|
 |---|---|---|---|---|
 |[Windows 10](../configuracion-correo-windows-10/){.external}|[Outlook 2016](../configuracion-outlook-2016/){.external}|[Mail de macOS (última versión)](../correo_guia_de_configuracion_en_mail_de_mac_-_el_capitan/){.external}|[Android (última versión)](../configuracion-android/){.external}|[Gmail](../configurar-direccion-de-correo-electronico-en-interfaz-web-gmail/){.external}|
-|[Windows 8](../correo_guia_de_configuracion_en_windows_8/){.external}|[Outlook 2011 en Mac](../web_hosting_guia_de_configuracion_de_outlook_2011_en_mac/){.external}|[Mail de Mac (Mavericks y Yosemite)](../correo_guia_de_configuracion_en_mail_de_mac_mavericks_y_yosemite/){.external}|[Android 5.1](../correo_guia_de_configuracion_de_un_telefono_movil_en_android_51/){.external}| |
-|[Windows Phone](../correo_guia_de_configuracion_en_windows_phone/){.external}|[Outlook 2010](../correo_guia_de_configuracion_en_outlook_2010/){.external}|[iPhone o iPad (iOS 7 y versiones posteriores)](../correo_guia_de_configuracion_en_iphone_ios_91/){.external}|[Android 4.1.2](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_una_tablet_android_412/){.external} | |
-|[Windows Mail](../correo_guia_de_configuracion_en_windows_mail/){.external}|[Outlook 2007](https://docs.ovh.com/es/emails/correo_guia_de_configuracion_en_outlook_2007/){.external}|[Thunderbird en Mac](../correo_guia_de_configuracion_para_thunderbird_en_mac/){.external}| | |
-|[Thunderbird en Windows](../correo_guia_de_configuracion_en_thunderbird/){.external}| | | | |
 
 A continuación se indican los parámetros necesarios para configurar una cuenta MX Plan:
 

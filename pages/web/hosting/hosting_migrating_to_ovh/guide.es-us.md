@@ -165,7 +165,7 @@ Deberá realizar varias acciones.
 |Acción|Descripción|
 |---|---|
 |1. Migrar el contenido de las cuentas de correo a OVHcloud|La herramienta [OVHcloud Mail Migrator (OMM)](https://omm.ovh.net/){.external} permite copiar el contenido de las cuentas de correo electrónico que tuviera con su anterior proveedor a sus cuentas creadas con OVHcloud.|
-|2. Usar sus direcciones |Ya puede acceder a sus cuentas de correo electrónico de OVHcloud desde una aplicación web ([webmail](https://www.ovh.es/mail/){.external}). Si ha configurado alguna de las direcciones en un cliente de correo (p. ej. Outlook), deberá volver a configurarla para sustituir los servidores de su anterior proveedor [por los de OVHcloud](../primeros-pasos-correo-compartido/){.external}.|
+|2. Usar sus direcciones |Ya puede acceder a sus cuentas de correo electrónico de OVHcloud desde una aplicación web ([webmail](https://www.ovh.es/mail/){.external}). Si ha configurado alguna de las direcciones en un cliente de correo (p. ej. Outlook), deberá volver a configurarla para sustituir los servidores de su anterior proveedor [por los de OVHcloud](../../emails/primeros-pasos-correo-compartido/).|
 
 ¡Su sitio web, sus cuentas de correo y su dominio ya están en OVHcloud!
 
@@ -179,4 +179,4 @@ Deberá realizar varias acciones.
 
 [Gestionar una base de datos desde un alojamiento compartido](../gestion-de-una-base-de-datos-desde-un-alojamiento-compartido/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
