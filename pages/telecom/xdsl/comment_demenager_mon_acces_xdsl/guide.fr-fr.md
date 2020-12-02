@@ -66,7 +66,7 @@ Dans le cas où une ou plusieurs lignes inactives existent à votre future adres
 
 En cliquant sur le bouton `Je n'ai pas trouvé ma ligne`{.action}, une création de ligne sera alors demandé à cette adresse.
 
-![création de ligne](images/move06-edit.png){.thumbnail}
+![creation de ligne](images/move06-edit.png){.thumbnail}
 
 ### Choix de l'offre
 
