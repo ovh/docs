@@ -7,7 +7,7 @@ section: 'Diagnostic et mode Rescue'
 
 **Dernière mise à jour le 24 novembre 2020**
 
-##Objectif
+## Objectif
 
 Le mode rescue est un outil de votre VPS. Celui-ci vous permet de démarrer votre serveur sur un système d'exploitation temporaire. Vous aurez ainsi la possibilité de diagnostiquer et résoudre les problèmes sur votre système d'exploitation principal. 
 
