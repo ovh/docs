@@ -18,7 +18,7 @@ Apache Spark is the leading platform for large-scale SQL, batch processing, stre
 
 Apache Spark stores data in RDD (Resilient Distributed Datasets), which is an immutable distributed collection of objects, and then divides it into different logical partitions, so it can process each part in parallel, in different nodes of the cluster. Task parallelism and in-memory computing are the key to being ultra-fast in Apache Spark. 
 
-Apache Spark creates a core process called driver program in master node and several executors in worker nodes and then driver program will distribute the processing task among executors to be executed in parallel. The number of the workers can be scaled up and down to optimise the workload based on available resources and computation nodes. 
+Apache Spark creates a core process called driver program in driver node and several executors in worker nodes and then driver program will distribute the processing task among executors to be executed in parallel. The number of the workers can be scaled up and down to optimise the workload based on available resources and computation nodes. 
 
 ## Apache Spark Components
 
