@@ -1,68 +1,65 @@
 ---
-title: Install Composer on a web hosting plan
+title: Installing Composer on a Web Hosting plan
 slug: install_composer_on_web_hosting_packages
 legacy_guide_number: 1894
-excerpt: Find out how to install and take your first steps on Composer.
+excerpt: Find out how to install and take your first steps with Composer
 section: PHP
 ---
 
-**Last updated 30/11/2020**
+**Last updated 30th November 2020**
 
 ## Objective
 
-[Composer](https://getcomposer.org/){.external} is a dependency manager created for PHP language. It allows PHP developers to include external libraries in their programmes. "Composer" allowed PHP projects to simplify library distribution and code maintenance. Since the creation of this tool, many good development practices have been proposed within the PHP community and have improved the libraries of the PHP community. These good practices are documented in the form of [SRP](http://www.php-fig.org/){.external}.
+[Composer](https://getcomposer.org/){.external} is a dependency manager created for the PHP language. It allows PHP developers to include external libraries in their programmes. Composer allows PHP projects to simplify library distribution and code maintenance. Since the creation of this tool, many good development practices have been proposed and have improved the libraries of the PHP community. These good practices are documented in the form of [SRP](http://www.php-fig.org/){.external}.
 
-**Find out how to install and take your first steps on Composer**
+**This guide explains how to install Composer and provides an example of usage with a Web Hosting plan.**
 
 > [!warning]
+>This guide will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation.
 >
-> OVH provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
-> 
-> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a specialist provider and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
 > 
 
 ## Requirements
 
-- a [web hosting plan](https://www.ovh.co.uk/web-hosting/){.external}  with SSH access
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
-
+- an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting) with SSH access
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
-Check that you are using a command line compatible PHP version:
+Use the command line to check if the PHP version is compatible:
 
 
 ```bash
 php --version
 ```
 
-If this is not the correct version, you can configure an alias:
+If this is not a proper version, you can configure an alias:
 
 
 ```bash
 alias php='/usr/local/php8.0/bin/php'
 ```
 
-We recommend staying in the root folder of your hosting plan, so that your “Composer” files are not publicly accessible. You will need to run this command:
+We recommend staying in the root folder of your Web Hosting in order to prevent your Composer files from being publicly accessible. Run this command next to install Composer:
 
 
 ```bash
 curl -sS https://getcomposer.org/installer | php
 ```
 
-Congratulations, Composer is now available on your web hosting plan!
+Composer is now available on your Web Hosting.
 
 
 ### Use cases
 
-For example, if you want to install Symfony 2 simply, you can run the following command:
-
+For example, if you want to install Symfony 2 in a simple way, you can run the following command:
 
 ```bash
 php composer.phar create-project symfony/framework-standard-edition my_project_name "2.7.*"
 ```
 
-Similarly, you can use the OVH API from your hosting by using the official wrapper. To do this, simply add a file named composer.json that contains the list of dependencies you need. Here is an example of this file with the OVHcloud API wrapper:
+Similarly, you can use the OVHcloud API from your Web Hosting by using the official wrapper. To do this, simply add a file named `composer.json` that contains the list of dependencies you need. Here is an example of this file with the OVHcloud API wrapper:
 
 
 ```json
@@ -77,12 +74,11 @@ Similarly, you can use the OVH API from your hosting by using the official wrapp
 
 To install it, simply run the following command in the same folder:
 
-
 ```bash
 php composer.phar install
 ```
 
-To use this library, you can refer to the documentation, as well as the code, available on [github](https://github.com/ovh/php-ovh){.external}
+To use this library, you can refer to the documentation, as well as the code, available on [GitHub](https://github.com/ovh/php-ovh){.external}.
 
 
 ## Go further
