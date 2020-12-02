@@ -75,6 +75,24 @@ Pour cela, il vous suffit de cliquer sur le bouton `Choisir cette offre`{.action
 
 ![Choix de l'offre](images/move07-edit.png){.thumbnail}
 
+### CHoix du type de dégroupage
+
+Si vous avez renseigné un numéro de ligne actif au début de votre demande, il vous sera demande de choisir entre 2 type de dégroupage à votre nouvelle adresse.
+Vous devrez choisir entre "Dégroupage total" et "Dégroupage partiel".
+
+Le dégroupage partiel signifie que vous souhaitez conserver la ligne analogique à cette adresse. 
+<br>Vous aurez donc un abonnement OVH pour l'accès internet ainsi qu'un abonnement chez Orange pour cette ligne analogique. 
+
+<br>Le dégroupage total signifie que vous n'aurez que l'accès internet à votre nouvelle adresse (soit uniquement l'abonnement OVH).
+
+![Choix du dégroupage](images/move08-edit.png){.thumbnail}
+
+
+
+
+
+
+
 Une nouvelle fenêtre s'affiche, vous invitant à valider le réengagement de 12 mois, la résiliation de votre accès actuel ainsi que les conditions générales de vente de l'offre. Cochez alors les cases correspondantes et cliquez sur "**Oui**". Cette action valide la demande de déménagement.
 
 ------------------------------------------------------------------------
