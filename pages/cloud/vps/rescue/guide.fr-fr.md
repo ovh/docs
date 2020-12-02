@@ -66,7 +66,7 @@ Une fois que vous avez lancé le redémarrage, une barre de progression indique 
 
 > [ ! primary]
 >
-> Vous recevrez un email automatisé avec les informations d'identification SSH pour accéder au mode rescue. Veuillez attendre la réception de l'e-mail avant de prendre toute autre mesure. Cet e-mail est également disponible dans votre panneau de configuration [OVHcloud](https://www.ovh.com/auth/?action=gotomanager) lorsqu'il est envoyé. Pour se faire, cliquez sur le nom associé à votre identifiant OVHcloud dans la barre de menus située dans le coin supérieur droit, puis sélectionnez `E-mails de service`{.action}.
+> Vous recevrez un email automatisé avec les informations d'identification SSH pour accéder au mode rescue. Veuillez attendre la réception de l'e-mail avant de prendre toute autre mesure. Cet e-mail est également disponible dans votre panneau de configuration [OVHcloud](https://www.ovh.com/auth/?action=gotomanager) lorsqu'il est envoyé. Pour ce faire, cliquez sur le nom associé à votre identifiant OVHcloud dans la barre de menus située dans le coin supérieur droit, puis sélectionnez `E-mails de service`{.action}.
 >
 
 Vous pouvez maintenant vous connecter via SSH à votre VPS en utilisant les informations d'identification du mode rescue. Une fois vos actions terminées en mode rescue, redémarrez le VPS en mode "normal" à partir de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
