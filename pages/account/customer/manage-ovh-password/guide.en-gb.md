@@ -103,7 +103,7 @@ If your password has been compromised, we strongly recommend [changing it as soo
 
 ![manage-ovh-password](images/account-password-modif-forgotten-step3.png){.thumbnail}
 
-- An email is then sent to the account’s contact email address, to confirm the password change. Please read the instructions carefully in the email, then click on the link. The link will redirect you to the page for changing your password. Enter your NIC handle in the first field, enter your new password into the second field, and re-enter your new password in the third field.
+- An email is then is sent (or not) to the account’s contact email address(if not contact 1007), to confirm the password change. Please read the instructions carefully in the email, then click on the link. The link will redirect you to the page for changing your password. Enter your NIC handle in the first field, enter your new password into the second field, and re-enter your new password in the third field.
 
 ![manage-ovh-password](images/account-password-modif-manager-step4.png){.thumbnail}
 
