@@ -35,8 +35,9 @@ La demande de déménagement s'effectue via votre [espace client OVHcloud](https
 Vous pourrez ensuite définir la date à laquelle votre accès (à votre adresse actuelle) sera fermé.
 <br>Un créneau de 30jours vous est proposé pour cela.
 
+### Choix de la nouvelle adresse
 
-### Vous disposez déjà du numéro de ligne à la nouvelle adresse
+#### Vous disposez déjà du numéro de ligne à la nouvelle adresse
 
 Cochez la case "Testez avec le numéro de téléphone correspondant à votre nouvelle adresse." puis renseignez ce numéro dans le champ situé en dessous.
 <br>Cliquez ensuite sur le bouton `Valider`{.action}
@@ -50,7 +51,7 @@ Suite à cette validation, un cadre apparaitra vous indiquant l'adresse associé
 ![validation adresse demenagement](images/move03-edit.png){.thumbnail}
 
 
-### Vous ne disposez d'aucun numéro à la nouvelle adresse
+#### Vous ne disposez d'aucun numéro à la nouvelle adresse
 
 Cochez la case "Testez avec le nouvelle adresse" puis renseignez les champs requis (code postal, ville, numéro et rue)
 Cliquez ensuite sur le bouton `Valider`{.action}
@@ -63,8 +64,16 @@ Dans le cas où une ou plusieurs lignes inactives existent à votre future adres
 
 ![choix de ligne](images/move05-edit.png){.thumbnail}
 
+En cliquant sur le bouton `Je n'ai pas trouvé ma ligne`{.action}, une création de ligne sera alors demandé à cette adresse.
 
+![création de ligne](images/move06-edit.png){.thumbnail}
 
+### Choix de l'offre
+
+Lors de votre demande de déménagement, vous avez la possibilité de conserver ou de changer d'offre.
+Pour cela, il vous suffit de cliquer sur le bouton `Choisir cette offre`{.action} correspondant à l'offre voulue en bas du tableau
+
+![Choix de l'offre](images/move07-edit.png){.thumbnail}
 
 Une nouvelle fenêtre s'affiche, vous invitant à valider le réengagement de 12 mois, la résiliation de votre accès actuel ainsi que les conditions générales de vente de l'offre. Cochez alors les cases correspondantes et cliquez sur "**Oui**". Cette action valide la demande de déménagement.
 
