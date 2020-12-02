@@ -16,7 +16,7 @@ Vous pouvez gérer facilement vos projets Public Cloud OVHcloud depuis votre [es
 
 ## Prérequis
 
-- [Avoir créé une instance Public Cloud d’OVH depuis votre compte](../creer-instance-espace-client/).
+- [Avoir créé une instance Public Cloud d’OVH depuis votre compte](../create_an_instance_in_your_ovh_customer_account/).
 - [Avoir créé une clé SSH](../creation-des-cles-ssh/).
 
 ## En pratique

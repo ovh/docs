@@ -2,7 +2,7 @@
 title: Utiliser votre infrastructure Managed Bare Metal au sein d’un vRack
 slug: managed-bare-metal-vrack
 routes:
-    canonical: 'https://docs.ovh.com/ca/fr/private-cloud/utiliser-le-private-cloud-au-sein-d-un-vrack/'
+    canonical: 'https://docs.ovh.com/ca/fr/private-cloud/hosted-private-cloud-vrack/'
 excerpt: Découvrez comment utiliser le vRack avec votre offre Managed Bare Metal
 section: Services et options OVHcloud
 order: 02
