@@ -58,12 +58,12 @@ Kiedy masz już plik .ovhconfig, możesz go edytować. W tym celu użyj programu
 
 ```php
 app.engine=php
-app.engine.version=7.3
+app.engine.version=8.0
 
 http.firewall=none
 environment=production
 
-container.image=stable
+container.image=stable64
 ```
 
 Wpisz wartości zmiennych odpowiadające konfiguracji, którą chcesz zastosować na Twoim hostingu. 
@@ -75,6 +75,10 @@ Wpisz wartości zmiennych odpowiadające konfiguracji, którą chcesz zastosowa�
 |http.firewall|Pozwala włączyć lub wyłączyć [zaporę ogniową dostarczaną wraz z hostingiem OVH](https://www.ovh.pl/hosting/mod_security.xml){.external}. Wpisz „security”, aby go włączyć lub „none”, aby go wyłączyć.|
 |environment|Pozwala zarządzać mechanizmem pamięci podręcznej dla plików statycznych Twojej strony WWW, a także przetwarzaniem błędów PHP. Wpisz „production”, aby zmaksymalizować buforowanie i ukryć błędy PHP lub „development”, aby pamięć podręczna nie była stosowana a błędy PHP były wyświetlane.|
 |container.image|Pozwala modyfikować środowisko wykonawcze wykorzystywane przez hosting. Wpisz nazwę wybranego silnika. Wykaz silników możesz znaleźć w naszej dokumentacji: [Dostępne opcje konfiguracji środowiska uruchomieniowego](https://docs.ovh.com/pl/hosting/zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/#dostepne-opcje-konfiguracji-srodowiska-uruchomieniowego_1){.external}.|
+
+> [!warning]
+>
+> Jeśli wybierzesz środowisko wykonawcze "stable64", sprawdź, czy Twoja strona jest kompatybilna ze środowiskiem 64-bitowym.
 
 Poniżej znajdziesz szczegółowe informacje dotyczące zastosowania pliku .ovhconfig:
 
@@ -101,11 +105,11 @@ app.engine=php
 ; __app.engine.version__ specify version of your engine
 ;
 ; for php:
-;   default: 7.3
+;   default: 8.0
 ; for phpcgi:
 ;   this options is ignored (= fallback in AUTO)
 ;
-app.engine.version=7.3
+app.engine.version=8.0
 
 ; __http.firewall__ used to add application firewall  (filter http requests)
 ;
@@ -135,9 +139,9 @@ environment=production
 
 ; __container.image__
 ;
-; values: legacy | stable | jessie.i386 | testing
+; values: legacy | stable | stable64
 ;
-container.image=stable
+container.image=stable64
 ```
 
 #### Etap 4: prześlij plik .ovhconfig do przestrzeni dyskowej
