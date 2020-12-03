@@ -1,28 +1,23 @@
 ---
 title: Managing your archives with Rsync
 slug: pca/rsync
-excerpt: Find out how to manage your Public Cloud Archives
+excerpt: Find out how to manage your Public Cloud Archives using Rsync
 section: Public Cloud Archive
 ---
 
-**Last updated 1st December 2020**
+**Last updated 3rd December 2020**
 
 ## Objective
 
-Object Storage is a storage solution that is managed primarily through the OpenStack API. However, we have developed a gateway which makes it possible to connect to your PCA container with Rsync.
+OVHcloud Object Storage is a storage solution that is managed primarily through the OpenStack API. However, we have developed a gateway which makes it possible to connect to your PCA container with Rsync.
 
+**This guide provides all the necessary information to enable an Object Storage connection using Rsync.**
 
 ## Requirements
 
-- [Rsync](https://rsync.samba.org/)
-- OpenStack login and password
-- TenantName of the project
-
-## Instructions
-
 ### Rsync
 
-Rsync is an open source utility that provides fast incremental file transfer.
+[Rsync](https://rsync.samba.org/) is an open source utility that provides fast incremental file transfer.
 Precompiled binaries are available in most modern OS distributions, so you should first check if you can install an Rsync package via your standard package-install tools for your OS.
 
 ### OpenStack ID
@@ -37,14 +32,16 @@ Once logged in, the TenantName is visible at the top of page.
 
 ![horizon](images/image1.png){.thumbnail}
 
-### Connection
+## Instructions
+
+### Connection details
 
 - Host Name: gateways.storage.{region}.cloud.ovh.net
 - User Name: pca
 - Password: {TenantName}.{Username_Openstack}.{Password_Openstack}
 - Port: 22
 
-### Upload data
+### Uploading data
 
 Command line example if you have created a PCA container in the GRA region:
 
@@ -54,7 +51,7 @@ pca@gateways.storage.gra.cloud.ovh.net's password:
 user@host:~$
 ```
 
-### Download data
+### Downloading data
 
 OVHcloud Public Cloud Archive provides data storage at low cost, in exchange for higher latency in the retrieval process. To access your archive, an unsealing request must be received with the container and archive names it relates to.
 
@@ -66,7 +63,7 @@ pca@gateways.storage.gra.cloud.ovh.net's password:
 user@host:~$
 ```
 
-### Rsync options
+### Additional information: Rsync options
 
 Since Rsync server has been patched to work with Swift API, those options will be enforced on the server side to match Object Storage backend behaviour:
 
