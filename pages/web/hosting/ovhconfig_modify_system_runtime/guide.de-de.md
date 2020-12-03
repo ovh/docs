@@ -38,9 +38,9 @@ Um zu beginnen, loggen Sie sich zunächst in Ihrem [OVH Kundencenter](https://ww
 
 ![hosting konfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
-Ist der Button `Konfiguration ändern`{.action} ausgegraut, läuft möglicherweise gerade eine Überprüfung der **globalen PHP-Version**. Ist das der Fall, erscheint ein blaues, rundes Symbol neben der Version, um die laufende Überprüfung anzuzeigen. Warten Sie einige Minuten, bis der Button `Konfiguration ändern`{.action} wieder verfügbar ist.
-
-![hosting konfiguration](images/change-hosting-configuration-step2.png){.thumbnail}
+> [!primary]
+>Ist der Button `Konfiguration ändern`{.action} ausgegraut, läuft möglicherweise gerade eine Überprüfung der **globalen PHP-Version**. Ist das der Fall, erscheint ein blaues, rundes Symbol neben der Version, um die laufende Überprüfung anzuzeigen. Warten Sie einige Minuten, bis der Button `Konfiguration ändern`{.action} wieder verfügbar ist.
+>
 
 #### Schritt 2: Webhosting-Konfiguration bearbeiten
 
@@ -73,27 +73,20 @@ Wenn Sie die Konfiguration eines Webhostings bearbeiten, können Sie aus verschi
 
 Indem Sie die Ausführungsumgebung ändern, können Sie auch einige technische Werte Ihres Webhostings ändern. **Bevor Sie Änderungen vornehmen, überprüfen Sie, dass die von Ihnen gewählte Umgebung mit Ihrer Website kompatibel ist.** 
 
-|Umgebungen|Legacy|Stable|Testing|Jessie.i386|
-|---|---|---|---|---|
-|Zugehöriges Image|Legacy|Jessie.i386|Jessie.i386|Jessie.i386|
-|Minimale PHP-Version|4.4|5.3|5.3|5.3|
-|Openssl|0.9.8o|1.0.1k (TLS1.2 kompatibel)|1.0.1k (TLS1.2 kompatibel)|1.0.1k (TLS1.2 kompatibel)|
-|Imagick PHP-Erweiterung| - | Ja | Ja | Ja |
-|Memcache PHP-Erweiterung (PHP 5.6)| Ja | Ja | Ja | Ja |
-|Memcached PHP-Erweiterung (PHP 5.6)| - | Ja | Ja | Ja |
-|Mongo PHP-Erweiterung (PHP 5.4, 5.5, 5.6)| - | Ja | Ja | Ja |
-|mysqlnd-Erweiterung (ausschließlich in UTF-8)| - | Ja | Ja | Ja |
-|redis-Erweiterung| - | Ja | Ja | Ja |
-|Opcache| Ja | Ja | Ja | Ja |
-|Python|2.6|2.7 und 3.4|2.7 und 3.4|2.7 und 3.4|
-|Ruby|1.8.7|2.1.5|2.1.5|2.1.5|
-|Rails|2.3.5|4.1.8|4.1.8|4.1.8|
-|Perl|5.10|5.20|5.20|5.20|
-|git|1.7.2.5|2.1.4|2.1.4|2.1.4|
+|Umgebungen|Legacy|Stable |Stable64|
+|---|---|---|---|
+|Architektur|32 Bit|32 Bit|64 Bit|
+|Minimale PHP-Version|5.6|7.3|7.4|
+|Openssl|1.0.1t|1.0.1t|1.1.1d|
+|Python|2.7 und 3.4|2.7 und 3.7|2.7 und 3.7|
+|Ruby|2.1|2.1|2.5|
+|Rails|4.1|4.1|5.2|
+|Perl|5.20|5.20|5.28|
+|git|2.1|2.1|2.20|
 
 > [!primary]
 >
-> Die „Legacy“-Umgebung kann für ältere Websites nützlich sein, die noch ältere PHP-Versionen verwenden. Wir empfehlen Ihnen jedoch dringend, die „Stable“-Umgebung zu verwenden, um von den neuesten Updates zu profitieren. **Bevor Sie Änderungen vornehmen, stellen Sie sicher, dass Ihre Website mit diesen kompatibel ist.**
+> Die „Legacy“-Umgebung kann für ältere Websites nützlich sein, die noch ältere PHP-Versionen verwenden. Wir empfehlen Ihnen jedoch dringend, die „Stable64“-Umgebung zu verwenden, um von den neuesten Updates zu profitieren. **Bevor Sie Änderungen vornehmen, stellen Sie sicher, dass Ihre Website mit diesen kompatibel ist.**
 > 
 
 Wenn Sie Ihre Wahl getroffen haben, haben Sie zwei Optionen, um die Änderung auszuführen:

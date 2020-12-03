@@ -38,9 +38,9 @@ First of all, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
-If the `Modify configuration`{.action} button is greyed out, it may be because of an ongoing **global PHP version** verification. If this is the case, a blue wheel will appear next to the version, indicating that a verification is in progress. Wait a few minutes for the `Modify configuration`{.action} button to become accessible again.
-
-![hostingconfiguration](images/change-hosting-configuration-step2.png){.thumbnail}
+> [!primary]
+> If the `Modify configuration`{.action} button is greyed out, it may be because of an ongoing **global PHP version** verification. If this is the case, a blue wheel will appear next to the version, indicating that a verification is in progress. Wait a few minutes for the `Modify configuration`{.action} button to become accessible again.
+>
 
 #### Step 2: Check your Web Hosting plan’s configuration.
 
@@ -73,27 +73,21 @@ When you modify your Web Hosting plan’s configuration, you can choose from a r
 
 By changing the runtime environment, you can edit certain technical values for your Web Hosting plan. **Before you start making any changes, ensure that the runtime environment you want to apply is compatible with your website.** 
 
-|Environment|Legacy|stable|testing|jessie.i386|
-|---|---|---|---|---|
-|Linked image|Legacy|jessie.i386|jessie.i386|jessie.i386|
-|Minimum PHP version|4.4|5.3|5.3|5.3|
-|Openssl|0.9.8o|1.0.1k (TLS1.2 compatible)|1.0.1k (TLS1.2 compatible)|1.0.1k (TLS1.2 compatible)|
-|Imagick PHP extension| - | Yes | Yes | Yes |
-|Memcache PHP extension (PHP 5.6)| Yes | Yes | Yes | Yes |
-|Memcached PHP extension (PHP 5.6)| - | Yes | Yes | Yes |
-|Mongo PHP extension (PHP 5.4, 5.5, 5.6)| - | Yes | Yes | Yes |
-|Mysqlnd extension (in utf-8 only)| - | Yes | Yes | Yes |
-|Redis extension| - | Yes | Yes | Yes |
-|Opcache| Yes | Yes | Yes | Yes |
-|Python|2.6|2.7 and 3.4|2.7 and 3.4|2.7 and 3.4|
-|Ruby|1.8.7|2.1.5|2.1.5|2.1.5|
-|Rails|2.3.5|4.1.8|4.1.8|4.1.8|
-|Perl|5.10|5.20|5.20|5.20|
-|git|1.7.2.5|2.1.4|2.1.4|2.1.4|
+|Environment|Legacy|Stable|Stable64|
+|---|---|---|---|
+|architecture|32 bits|32 bits|64 bits|
+|Minimum PHP version|5.6|7.3|7.4|
+|Openssl|1.0.1t|1.0.1t|1.1.1d|
+|Python|2.7 and 3.4|2.7 and 3.7|2.7 and 3.7|
+|Ruby|2.1|2.1|2.5|
+|Rails|4.1|4.1|5.2|
+|Perl|5.20|5.20|5.28|
+|git|2.1|2.1|2.20|
+
 
 > [!primary]
 >
-> The ‘legacy’ environment may be useful for older websites that still use old PHP versions. However, we strongly advise using a stable environment that has the latest updates. **Ensure that your website is compatible before you make any changes.**
+> The ‘legacy’ environment may be useful for older websites that still use old PHP versions. However, we strongly advise using a ‘Stable64‘ environment that has the latest updates. **Ensure that your website is compatible before you make any changes.**
 > 
 
 Once you have chosen your runtime environment, you can change it in two different ways:

@@ -164,8 +164,9 @@ En OWA puede crear una respuesta automática en su dirección de correo para no 
 ![useowa](images/owa_exchange_step20.png){.thumbnail}
 
 En la ventana que aparece, seleccione la opción «Enviar respuestas automáticas». Aquí podrá configurar el contestador automático para que se adapte a varios criterios:
-\- Enviar correos electrónicos de respuesta automática durante un intervalo de tiempo determinado, o de forma continua hasta que se desactive manualmente.
-\- Definir los remitentes que recibirán correos de respuesta automática (solo remitentes internos, o incluir remitentes externos).
+
+- Enviar correos electrónicos de respuesta automática durante un intervalo de tiempo determinado, o de forma continua hasta que se desactive manualmente.
+- Definir los remitentes que recibirán correos de respuesta automática (solo remitentes internos, o incluir remitentes externos).
 
 Rellene la información solicitada según la acción que quiere que se lleve a cabo. Una vez hecho esto, haga clic en OK.
 

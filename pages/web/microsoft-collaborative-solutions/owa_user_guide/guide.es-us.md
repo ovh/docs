@@ -164,8 +164,9 @@ En OWA puede crear una respuesta automática en su dirección de correo para no 
 ![useowa](images/owa_exchange_step20.png){.thumbnail}
 
 En la ventana que aparece, seleccione la opción «Enviar respuestas automáticas». Aquí podrá configurar el contestador automático para que se adapte a varios criterios:
-\- Enviar correos electrónicos de respuesta automática durante un intervalo de tiempo determinado, o de forma continua hasta que se desactive manualmente.
-\- Definir los remitentes que recibirán correos de respuesta automática (solo remitentes internos, o incluir remitentes externos).
+
+- Enviar correos electrónicos de respuesta automática durante un intervalo de tiempo determinado, o de forma continua hasta que se desactive manualmente.
+- Definir los remitentes que recibirán correos de respuesta automática (solo remitentes internos, o incluir remitentes externos).
 
 Rellene la información solicitada según la acción que quiere que se lleve a cabo. Una vez hecho esto, haga clic en OK.
 
@@ -185,7 +186,7 @@ En la barra de la izquierda de la página nueva, haga clic en `Firma de correo e
 
 Introduzca su firma electrónica en el cuadro de edición. Puede especificar si quiere incluir la firma por defecto solo en los correos nuevos o también en respuestas o correos reenviados. Una vez haya terminado, haga clic en `Guardar`{.action} para confirmar.
 
-Para obtener instrucciones sobre la creación de firmas automáticas mediante el uso de plantillas para todos los dominios, consulte nuestra guía: [Creación de firmas automáticas](../exchange_20132016_firma_automatica_disclaimer/).
+Para obtener instrucciones sobre la creación de firmas automáticas mediante el uso de plantillas para todos los dominios, consulte nuestra guía: [Creación de firmas automáticas](../exchange_20132016_firma_automatica_disclaimer).
 
 ### Acceder a la sección de opciones
 

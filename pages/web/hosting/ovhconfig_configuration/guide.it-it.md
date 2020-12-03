@@ -58,12 +58,12 @@ Per modificare il file è possibile utilizzare un editor di testo.  Il file .ovh
 
 ```php
 app.engine=php
-app.engine.version=7.0
+app.engine.version=8.0
 
 http.firewall=none
 environment=production
 
-container.image=stable
+container.image=stable64
 ```
 
 Sostituisci le variabili con i valori della configurazione che intendi utilizzare con il tuo hosting Web. 
@@ -76,38 +76,42 @@ Sostituisci le variabili con i valori della configurazione che intendi utilizzar
 |environment|Permette di gestire il comportamento della cache dei file statici del tuo sito e gli errori PHP.  Inserisci “production” per ottimizzare la memorizzazione in cache e nascondere gli errori PHP o “development” per disattivare la cache e visualizzare gli errori PHP.|
 |container.image|Permette di modificare l’ambiente di esecuzione utilizzato dall’hosting. Per conoscere i motori disponibili, consulta la sezione   “Opzioni di configurazione disponibili” della guida [Modificare la configurazione di un hosting Web](https://docs.ovh.com/it/hosting/modifica_lambiente_di_esecuzione_del_tuo_hosting_web/#opzioni-di-configurazione-disponibili){.external}.|
 
+> [!warning]
+>
+> Quando scegli l'ambiente di esecuzione "stable64", verifica che il tuo sito sia compatibile con l'ambiente a 64 bits.
+
 Ecco tutti i dettagli del file .ovhconfig:
 
 ```php
-ovhconfig
+; ovhconfig
 ;
-; this file must be placed in $HOME/.ochconfig or in $DOCUMENT_ROOT/.ovhconfig
+; this file must be placed in $HOME/.ovhconfig or in $DOCUMENT_ROOT/.ovhconfig
 
 ; __app.engine__
 ;
 ; values: php (php engine + opcache accelerator)
 ; notice: if php, a phpcgi engine will be activated as fallback (if previous engine crash)
 ;
-; php:
-;     IMPORTANT: register_globals and magic_quotes_gpc are off for security
-;     php optiones .htaccess (like php version) are ignored
-; phpcgi:
-;     IMPORTANT this is a feedback to previous system
-;     in this case__app.engine.version__will be considerated as AUTO and php version will be old system
-;     (meaning depending .htaccess or .phpX extension)
+;   php:
+;       IMPORTANT: register_globals and magic_quotes_gpc are off for security
+;       php optiones .htaccess (like php version) are ignored
+;   phpcgi:
+;       IMPORTANT this is a fallback to previous system
+;       in this case __app.engine.version__ will be considerated as AUTO and php version will be old system
+;       (meaning depending .htaccess or .phpX extension)
 ;
 app.engine=php
 
-; __app.engine.version__specify version of your engine
+; __app.engine.version__ specify version of your engine
 ;
 ; for php:
-;   default 7.0
+;   default: 8.0
 ; for phpcgi:
-;   this options is ignored (=fallback in AUTO)
+;   this options is ignored (= fallback in AUTO)
 ;
-app.engine.version=7.0
+app.engine.version=8.0
 
-; __http.firewall__used to add application firewall  (filter http requests)
+; __http.firewall__ used to add application firewall  (filter http requests)
 ;
 ; values: none | security
 ; default: none
@@ -118,14 +122,14 @@ http.firewall=none
 ;
 ; values: production | development
 ;
-;  production:
-;      apache will maximes local cache
-;      mode_expires will grow up TTL of js, css, pdf, images, video, audio
-;     you can override it changing expiration explicitly in your .htaccess
-;      feel free to look on our guide.
-;    development:
-;         no expiration is addes, files are not locally in cache,
-;         will speed up tests but decrease performances
+;   production:
+;       apache will maximise local cache
+;       mod_expires will grow up TTL of js, css, pdf, images, video, audio
+;       you can override it changing expiration explicitly in your .htaccess
+;       feel free to look on our guide.
+;   development:
+;       no expiration is added, files are not locally in cache,
+;       will speed up tests but decrease performances
 ;
 ; choosen environment will also be available in your variable ENVIRONMENT unix env
 ;
@@ -135,9 +139,9 @@ environment=production
 
 ; __container.image__
 ;
-; values: legacy | stable | jessie.i386 | testing
+; values: legacy | stable | stable64
 ;
-container.image=stable
+container.image=stable64
 ```
 
 #### Step 4: carica il file .ovhconfig nello spazio di storage
