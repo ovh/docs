@@ -236,7 +236,7 @@ En cas de doute, le type de votre connexion est disponible sur l’espace client
 
 ![blocip](images/blocip-step10.png){.thumbnail}
 
-Dans la fenêtre qui apparaît, descendez jusqu'à la partie « Routing feature ». Désactivé le curseur à droite de `NAT`{.action}. Cliquez enfin sur le bouton `Apply`{.action}.
+Dans la fenêtre qui apparaît, descendez jusqu'à la partie « Routing feature ». Désactivez le curseur à droite de `NAT`{.action}. Cliquez enfin sur le bouton `Apply`{.action}.
 
 ![blocip](images/blocip-step14.png){.thumbnail}
 
