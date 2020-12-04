@@ -90,7 +90,22 @@ Cochez la case correspondant à votre choix puis cliquez sur le bouton `Confirme
 
 ### Conservation des numéros
 
+Dans certains cas, vous pourrez demander à conserver le numéros présent à votre adresse actuelle ainsi que celui de votre futur logement.
+Pour cela, il vous suffit de cocher la case "Je souhaite conserver le numéro : 0XXXXXXXXX".
+<br>Si la conservation n'est pas possible, vous aurez le message "Vous ne pouvez pas porter ce numéro" en dessous de cette case.
 
+Cliquez ensuite sur le bouton `Confirmer la sélection`{.action} pour passer à l'étape suivante.
+
+![Conservation numéros](images/move09-edit.png){.thumbnail}
+
+### Prise de rendez-vous pour le création de l'accès à la nouvelle adresse
+
+Cette étape n'apparait que si vous ne disposez d'aucun numéro à la nouvelle adresse.
+Choisissez sur la planning la date et l'heure du rendez-vous avec un technicien Orange en cochant la case correspondante.
+
+Cliquez ensuite sur le bouton `Confirmer la sélection`{.action} pour valider cette étape.
+
+![Prise de Rendez-vous](images/move10-edit.png){.thumbnail}
 
 
 
