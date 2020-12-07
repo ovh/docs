@@ -1,46 +1,56 @@
 ---
 title: 'Connectivity API'
 excerpt: 'Develop using connectivity API'
+slug: connectivity-api
 section: 'Advanced technical configurations'
 ---
 
-**Last updated on 12/03/2020**
+**Last updated 7th December 2020**
 
-# OVH Connectivity developer documentation
+## Objective
 
-This documentation intend to help developers using our APIs, in order to build their own applications.
+This guide is designed to help developers use our APIs to create their own applications.
 
-The general API documentation is available here: [https://api.ovh.com/](https://api.ovh.com/){.external}.
-You can use the console to interact directly with the API: [https://api.ovh.com/console/.](https://api.ovh.com/console/){.external}.
+## Requirements
 
-# Internet Offers
+- an active OVHcloud account, and your login details
+- access to the [OVHcloud API webpage](https://api.ovh.com/){.external}
+- Read our [Getting started with OVHcloud APIs guide](../../api/first-steps-with-ovh-api/) to get started using OVHcloud APIv6.
 
-OVH propose some Internet Offers trough some packages that contains at least an Internet access, and can propose some VoIP, emails, domain names.
-The offers are visible here: [https://www.ovhtelecom.fr/offre-internet/.](https://www.ovhtelecom.fr/offre-internet/){.external}.
+## Instructions
 
-The services can be managed using those API endpoints:
-* `/pack/xdsl`: Manage the Internet offers packages;
-* `/xdsl`: Manage the Internet accesses, sub-services and options;
-* `/connectivity`: Intend to replace `/xdsl`, for now it allow to do eligibility for copper and fiber offers.
+### Internet offers
 
-## Eligibility
+OVHcloud offers various internet access packages that contain at least one internet access but also VoIP lines, emails and domain names.
 
-### Overview
+You can view offers here: [https://www.ovhtelecom.fr/offre-internet/i](https://www.ovhtelecom.fr/offre-internet/){.external}.
+
+Services can be managed using these API endpoints:
+* `/pack/xdsl`: Manage Internet package offerings
+* `/xdsl`: Manage Internet access, sub-services and options
+* `/connectivity`: will replace `/xdsl`. For now it allows to do the eligibility for copper and fiber offers.
+
+### Eligibility
+
+#### Overview
 
 Eligibility methods are available on the endpoint path `/connectivity/eligibility/`.
-Eligibility goal is to return the eligible Internet offers for a given *endpoint*, in order to order this offer.
-An *endpoint* is whether an address or an existing line, identified by the line number and status (active or inactive).
 
-The methods are using as response an asynchronous return structure *xdsl.AsyncTask*, like:
+The objective of eligibility is to resend eligible internet offers for a given *endpoint* (delivery point), in order to order this offer.
+An *endpoint* can be an existing address or line, identified by the line number and its status (active or inactive).
+
+Methods return an asynchronous *xdsl.AsyncTask* structure, such as:
+
 ```
 {
   "status": a string, the status of the task ("pending", "done" or "error")
   "result": an object, in case of success, the method result
-  "error": a string, the error message in case of error
+  "error": a string, the error message in case of an error
 }
 ```
 
-Here is an example of pending task:
+Here is an example of a pending task:
+
 ```json
 {
   "status": "pending",
@@ -49,7 +59,8 @@ Here is an example of pending task:
 }
 ```
 
-An example of successful task:
+A successful example task:
+
 ```json
 {
   "status": "success",
@@ -58,35 +69,38 @@ An example of successful task:
 }
 ```
 
-And finally an example of a task that failed:
+And finally an example of a failed task:
+
 ```json
 {
   "status": "error",
   "result": null,
-  "error": "The action failed, here is why"
+  "error": "The action failed, here's why"
 }
 ```
+
 > [!primary]
 >
-> You need to check the status of the task, and retry a few seconds later is the task is still in status "pending".
+> You should check the status of the task, and try again a few seconds later if the task is still in the "pending" status.
 >
 
-### Find the endpoints
+#### Finding the endpoints
 
-For a copper line, the endpoint is a line identified by its number and its status.
-If no line exist, you will need to do a test by address to see if you are eligible to an neighbour line creation.
+For a copper line, the endpoint is a line identified by its number and status.
+If no line exists, you will need to test by address to see if you are eligible to create a neighbouring line..
 
-For fiber, the endpoint can be indentified by a *building* identifier, or an *OTP* (Optical Termination Point) identifier.
+For fiber, the endpoint can be identified by a *building* identifier, or an *OTP* (Optical Termination Point) identifier.
 
 An address is identified by a street number and a street code.
 To find them, use this process:
+
 1. [Get the list of localities from a zip code](#eligibilitySearchCities)
 2. [Get the list of streets for a locality](#eligibilitySearchStreets)
 3. [Get the available street numbers for a given street code](#eligibilitySearchStreetNumbers)
-4. [Get all buildings for a specific address](#eligibilitySearchBuildings)
-5. [Get all buildings for a specific line](#eligibilitySearchBuildingsByLine)
+4. [Get the list of buildings for an address](#eligibilitySearchBuildings)
+5. [Get the list of buildings for a specific line](#eligibilitySearchBuildingsByLine)
 
-#### To get the list of localities from a zip code <a name="eligibilitySearchCities"></a>
+##### **Getting a list of localities from a zip code** <a name="eligibilitySearchCities"></a>
 
 Example: we want to search the localities for the zipCode "91400".
 
@@ -98,6 +112,7 @@ The request:
 >
 
 with the following data:
+
 ```json
 {
   "zipCode": "91400"
@@ -105,6 +120,7 @@ with the following data:
 ```
 
 The response:
+
 ```json
 {
   "error": null,
@@ -132,9 +148,9 @@ The response:
 }
 ```
 
-#### To get the list of streets for a locality <a name="eligibilitySearchStreets"></a>
+##### Getting the list of streets for a locality <a name="eligibilitySearchStreets"></a>
 
-Example: We want the street list for the locality "ORSAY" indentified by the inseeCode "91471".
+Example: We want to obtain the list of streets of the locality "ORSAY" identified by the INSEE code "91471".
 
 The request:
 
@@ -144,6 +160,7 @@ The request:
 >
 
 with the following data:
+
 ```json
 {
   "inseeCode": "91471"
@@ -151,6 +168,7 @@ with the following data:
 ```
 
 The response:
+
 ```json
 {
   "result": [
@@ -180,7 +198,7 @@ The response:
 }
 ```
 
-#### To get the available street numbers for a given street code <a name="eligibilitySearchStreetNumbers"></a>
+##### **Getting the available street numbers for a given street code** <a name="eligibilitySearchStreetNumbers"></a>
 
 Example: we want the street numbers for the street "RUE DU VERGER" identified by the streetCode "9147132200".
 
@@ -192,6 +210,7 @@ The request:
 >
 
 with the following data:
+
 ```json
 {
   "streetCode": "9147132200"
@@ -199,6 +218,7 @@ with the following data:
 ```
 
 The response:
+
 ```json
 {
   "status": "ok",
@@ -223,9 +243,9 @@ The response:
 }
 ```
 
-#### To get all buildings for a specific address <a name="eligibilitySearchBuildings"></a>
+##### **Getting all buildings for a specific address** <a name="eligibilitySearchBuildings"></a>
 
-Example: we want the buildings list for the address "2 RUE DU VERGER, 91400 ORSAY", identified by streetCode "9147132200" and streetNumber "2".
+Example: we want the list of buildings for the address "2 RUE DU VERGER, 91400 ORSAY", identified by streetCode "9147132200" and streetNumber "2".
 
 The request:
 
@@ -235,6 +255,7 @@ The request:
 >
 
 with the following data:
+
 ```json
 {
   "streetCode": "9147132200",
@@ -243,6 +264,7 @@ with the following data:
 ```
 
 The response:
+
 ```json
 {
   "status": "ok",
@@ -259,9 +281,9 @@ The response:
 }
 ```
 
-#### To get the building references from a given line number <a name="eligibilitySearchBuildingsByLine"></a>
+##### **Getting the building references from a given line number <a name="eligibilitySearchBuildingsByLine"></a>
 
-Example: we want the buildings list for the *inactive* line number *"0123456789"*.
+Example: we want the list of buildings for the *inactive* line number *"0123456789"*.
 
 The request:
 
@@ -271,6 +293,7 @@ The request:
 >
 
 with the following data:
+
 ```json
 {
   "lineNumber": "0123456789",
@@ -279,6 +302,7 @@ with the following data:
 ```
 
 The response:
+
 ```json
 {
   "error": null,
@@ -297,21 +321,22 @@ The response:
 
 We found a single building that is a house.
 
-### Do a copper eligibility (ADSL, VDSL or SDSL)
+#### Doing a copper eligibility (ADSL, VDSL or SDSL)
 
-The possible cases are:
-* [I know the line number, i will use it for the eligibility](#eligibilityTestLine)
-* [I do not know the line number, i will have to search for it first](#eligibilitySearchLines)
-* [I do not have a line number, i will have to ask for a line creation from a neighbour line](#eligibilityTestAddress)
+Possible cases are:
 
-#### Do an eligibility on a line <a name="eligibilityTestLine"></a>
+* [I know the line number, I'll use it for eligibility](#eligibilityTestLine)
+* [I do not know the line number, I'll have to look it up first](#eligibilitySearchLines)
+* [I do not have a line number, I will have to request a line creation from a neighbour line](#eligibilityTestAddress)
+
+##### **Doing an eligibility on a line** <a name="eligibilityTestLine"></a>
 
 If you known the number and status of the line then you can check its eligibility.
-The diffence between an active and an inactive line is that an active line got an active Internet access, whereas the inactive line is just an identifier to be use for ordering an Internet access (usually this is the old number of the last owner, that has moved with its line).
+The diffence between an active and an inactive line is that an active line has an active Internet access, whereas the inactive line is just an identifier to use to order an Internet access (usually this is the previous number of the last owner, who moved with his line).
 
 > [!warning]
 >
-> It is important to distinct an active from an inactive line. Always check the address that is returned is the real address for the installation.
+> It is important to distinguish an active line from an inactive line. Always verify that the address returned is the actual address of the installation.
 >
 
 Here is the request:
@@ -322,6 +347,7 @@ Here is the request:
 >
 
 to do with the following POST data:
+
 ```json
 {
   "lineNumber": "0123456789",
@@ -331,6 +357,7 @@ to do with the following POST data:
 ```
 
 Here is a partial successfull response example:
+
 ```json
 {
   "status": "ok",
@@ -621,14 +648,15 @@ Here is a partial successfull response example:
 
 > [!primary]
 >
-> We omit some SDSL offers in this example due to the size of the response.
+> We have omitted some SDSL offers in this example due to the size of the response.
 >
 
 The response is composed of:
-* an *result.offers* array that will list every offers and if the given line is eligible or not;
-* an *result.endpoint* structure that gives informations about the line: address and characteristics.
 
-Here is a description of offer codes:
+* a *result.offers* table that will list all the offers and if the given line is eligible or not;
+* a *result.endpoint* structure that gives line information: address and characteristics.
+
+Here is a description of the offer codes:
 
 | code              | type  | description                           |
 |-------------------|-------|---------------------------------------|
@@ -638,21 +666,22 @@ Here is a description of offer codes:
 | VDSL-MAX_FULL     | VDSL  | VDSL full unbundling                  |
 | SDSL-MAX          | SDSL  | SDSL monopair                         |
 
-For the SDSL offers with guaranteed bandwidth, the offer code formed with:
+For the SDSL offers with guaranteed bandwidth, the offer code is formed with:
+
 * the offer type: SDSL
-* the guaranteed rate: 1M, 2M, 4M, ..
+* the guaranteed speed: 1M, 2M, 4M, ..
 * the number of pairs: 1P, 2P or 4P
 
 A few examples:
 
 | code              | type  | description                           |
 |-------------------|-------|---------------------------------------|
-| SDSL-1M-1P        | SDSL  | SDSL monopair with 1M guaranteed      |
-| SDSL-2M-2P        | SDSL  | SDSL 2 pairs with 2M guaranteed       |
-| SDSL-16M-4P       | SDSL  | SDSL 4 pairs with 16M guaranteed      |
+| SDSL-1M-1P        | SDSL  | Monopair SDSL with 1M guaranteed      |
+| SDSL-2M-2P        | SDSL  | 2 pairs SDSL with 2M guaranteed       |
+| SDSL-16M-4P       | SDSL  | 4 pairs SDSL with 16M guaranteed      |
 ...
 
-#### Search for active or inactive line for an address <a name="eligibilitySearchLines"></a>
+##### **Searching for an active or inactive line for an address** <a name="eligibilitySearchLines"></a>
 
 The request:
 
@@ -662,6 +691,7 @@ The request:
 >
 
 with the following POST data:
+
 ```json
 {
     "streetCode": "123456789",
@@ -670,6 +700,7 @@ with the following POST data:
 ```
 
 The response:
+
 ```json
 {
   "status": "ok",
@@ -714,14 +745,14 @@ You can now use the eligibility by line.
 > Unlisted numbers cannot be retrieved using this method.
 >
 
-#### Do an eligibility for an address <a name="eligibilityTestAddress"></a>
+##### **Searching for eligibility for an address <a name="eligibilityTestAddress"></a>
 
-This will return an eligibility by address, to use for a neighbour line creation.
-A neigbour line creation consist to check the availability of new copper lines by searching for your nearest neighbour line informations.
+This will return an eligibility by address, to be used for the creation of a neighbouring line.
+A neigbouring line creation consists in checking the availability of new copper lines by searching for your nearest neighbour line information.
 
 > [!primary]
 >
-> If you already have an active or inactive line, you should use the test by line instead.
+> If you already have an active or inactive line, you should use the line test instead.
 >
 
 The request:
@@ -732,6 +763,7 @@ The request:
 >
 
 with the following data:
+
 ```json
 {
   "streetCode": "94123001234",
@@ -740,6 +772,7 @@ with the following data:
 ```
 
 The response:
+
 ```json
 {
   "status": "ok",
@@ -846,33 +879,37 @@ The response:
 }
 ```
 
-### Do a fiber eligibility (FTTH)
+#### Searching fiber eligibility (FTTH)
 
-For a fiber eligibility we have two cases:
-* I got an fiber OTP (Optical Termination Point) identifier, that i will use for the eligibility;
-* I do not have an fiber OTP identifier and will use a *building* identifier for the eligibility.
+For fiber eligibility, we have two scenarios:
+
+* I have an Optical Termination Point (OTP) fiber ID, which I will use for eligibility;
+* I do not have an OTP  fiber identifier and will use a *building* identifier for the eligibility.
 
 A *building* can be a house or a building with multiple housing. The *building* can be found from an address or from an existing copper line.
 
-The process to do an eligibility from an address is:
-1. [Get the list of localities from a zip code](#eligibilitySearchLines)
-2. [Get the list of streets for a locality](#eligibilitySearchStreets)
-3. [Get the available street numbers for a given street code](#eligibilitySearchStreetNumbers)
-4. [Get all buildings for a specific address](#eligibilitySearchBuildings)
-5. [Do the eligibility for the selected building](#eligibilityTestBuilding)
+The eligibility process from an address is as follows:
 
-From a line, we have to:
+1. [Getting the list of localities from a zip code](#eligibilitySearchLines)
+2. [Getting the list of streets for a locality](#eligibilitySearchStreets)
+3. [Getting the available street numbers for a given street code](#eligibilitySearchStreetNumbers)
+4. [Getting all buildings for a specific address](#eligibilitySearchBuildings)
+5. [Searching eligibility for the selected building](#eligibilityTestBuilding)
+
+From one line, we have to:
+
 1. [Get the building references from a given line number](#eligibilitySearchBuildingsByLine)
-2. [Do the eligibility for the selected building](#eligibilityTestBuilding)
+2. [Search eligibility for the selected building](#eligibilityTestBuilding)
 
 For an OTP, this is the simpliest:
-1. [Do the eligibility test for the OTP](#eligibilityTestOtp)
+
+1. [Doing the eligibility test for the OTP](#eligibilityTestOtp)
 
 Here are the details for each type of requests.
 
-#### To do the eligibility on a building <a name="eligibilityTestBuilding"></a>
+##### **Searching eligibility on a building** <a name="eligibilityTestBuilding"></a>
 
-Example: we want to check FTTH offers eligibility for the building identified by the reference "IMB/91471/C/NT8X".
+Example: we want to check the eligibility of FTTH offers for the building identified by the reference "IMB/91471/C/NT8X".
 
 The request:
 
@@ -882,6 +919,7 @@ The request:
 >
 
 with the following data:
+
 ```json
 {
   "building": "IMB/91471/C/NT8X"
@@ -889,6 +927,7 @@ with the following data:
 ```
 
 The response:
+
 ```json
 {
   "error": null,
@@ -971,9 +1010,9 @@ The response:
 }
 ```
 
-In the result the array "offers" the *boolean* attribute *eligibility.eligible* tell us we are eligible to the offers "FTTH-Max 300M download and 250M upload" and "FTTH-Max 1G download and 250M upload".
+In the result for the "offers" table, the *boolean* attribute *eligibility.eligible* tell us we are eligible for "FTTH-Max 300M download and 250M upload" and "FTTH-Max 1G download and 250M upload" offers.
 
-#### To do the eligibility on an OTP identifier <a name="eligibilityTestOtp"></a>
+##### **Searching eligibility from an OTP identifier** <a name="eligibilityTestOtp"></a>
 
 Example: we want to check FTTH offers eligibility for the OTP "OO-XXXX-XXXX/C".
 
@@ -985,15 +1024,15 @@ The request:
 >
 
 with the following data:
+
 ```json
 {
   "otp": "OO-XXXX-XXXX/C"
 }
 ```
 
-The response is the same as the previous example.
+The response is the same as in the previous example.
 
 ## Go further
 
-Chat with our community of users at [https://community.ovh.com](https://community.ovh.com).
-
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
