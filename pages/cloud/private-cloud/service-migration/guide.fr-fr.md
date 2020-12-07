@@ -4,7 +4,6 @@ excerpt: Découvrez comment gérer tous les aspects liés à la migration d'une 
 slug: service-migration
 section: Premiers pas
 order: 6
-hidden: true
 ---
 
 **Dernière mise à jour le 24/11/2020**
