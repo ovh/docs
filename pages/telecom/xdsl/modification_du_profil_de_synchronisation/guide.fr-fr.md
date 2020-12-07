@@ -1,60 +1,89 @@
 ---
 title: Modification du profil de synchronisation
 slug: modification-du-profil-de-synchronisation
-legacy_guide_number: '7962661'
+excerpt: Découvrez comment modifier le profil de synchronisation de votre accès xDSL/FTTH
 section: Configuration de mon offre
 ---
 
-### Préambule {#préambule}
+**Dernière mise à jour le 25/11/2020**
 
-Votre espace client Telecom regroupe un certain nombre de fonctionnalités, dont la gestion de vos profils de synchronisation
+## Objectif
 
-**Sommaire :**
+Votre espace client OVHcloud Telecom regroupe un certain nombre de fonctionnalités, dont la gestion de vos profils de synchronisation.
 
-Niveau : Débutant
-
-------------------------------------------------------------------------
-
-### Prérequis {#prérequis}
+## Prérequis
 
 -   Disposer d'un accès xDSL actif.
--   Être raccordé sur un NRA OVH.
+-   Être raccordé sur un NRA dégroupé par OVHcloud.
 
-    ------------------------------------------------------------------------
+## En pratique
 
-### Ligne dégroupée OVH {#ligne-dégroupée-ovh}
+### Ligne dégroupée OVHcloud
 
--   **Comment accéder au changement de profil**
+### Comment accéder au changement de profil
 
-<!-- -->
+Connectez-vous à la rubrique `Telecom` de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Cliquez ensuite sur `Accès Internet`{.action} dans le menu de gauche, sélectionnez votre offre puis cliquez sur la référence de votre accès. 
 
--   Rendez vous dans votre Espace Client sur <https://www.ovhtelecom.fr/espaceclient/>
--   Choisissez **votre accès**
--   Cliquez sur **"Mon accès"**
--   Choisissez le **Profil** que vous souhaitez appliquer
--   Cliquez sur **"Valider"**
+Par défaut, l'onglet affiché est `Mon accès`.
 
-![](images/2015-12-15-144213_1258x549_scrot.png){.thumbnail}
+Vous retrouverez, dans les `Caractéristiques`, la possibilité de modifier le profil de synchronisation de votre accès.
 
--   **Explication de différents profils**
+![Mon_acces](images/XdslMonAcces.png){.thumbnail}
 
-Lors de la sélection du nouveau profil, vous retrouverez différents types de profil : **Interleaved, G.INP, AUTO**et**SNR**. La question que vous devez vous poser est :**quel profil sélectionner** ?
+**Pour un accès ADSL :**
 
-Par défaut, votre accès est livré sur le profil dit "Interleaved". Généralement, on applique un nouveau profil quand on souhaite obtenir un débit plus important ou corriger une instabilité. Mais le changement de profil ne s'effectuent pas de n'importe quelle manière. Voici quelques explications pour les différents types de profil :
+![profil adsl](images/ProfilsADSL.gif){.thumbnail}
 
--   **G.INP :**cette extension améliore la correction d'erreur de ligne sans affecter la performance de la ligne.****
--   **AUTO :**le DSLAM va synchroniser au **maximum sur le débit**.
--   **SNR :**le DSLAM va analyser la qualité de la ligne et va négocier un rapport signal/bruit (SNR) au chiffre indiqué. Plus le **chiffre est grand, plus la stabilité de la ligne sera bonne, mais plus le débit sera faible.** Sur le profil non SNR, le DSLAM essaie d'avoir un SNR à 6.
--   **FAST :**ce profil permet d'**améliorer votre ping** sans appliquer de correction d'erreur.
+**Pour un accès VDSL :**
 
-**Surun lien instable, ce type de profil n'est pas adapté.**
-
-------------------------------------------------------------------------
-
-### Ligne non dégroupée OVH {#ligne-non-dégroupée-ovh}
-
-Malheureusement, cette option n'est pas disponible pour les lignes raccordées sur les équipements d'opérateurs de collecte.
-
-------------------------------------------------------------------------
+![profil vdsl](images/ProfilsVDSL.gif){.thumbnail}
 
 
+### Explication des différents profils
+
+Généralement, on applique un nouveau profil quand on souhaite obtenir un débit plus important ou corriger une instabilité. Les profils permettent d'agir directement sur la **marge au bruit (SNR)** de votre ligne.
+
+Lors de son activation, votre accès est livré sur le profil par défaut, avec une marge au bruit à 6 dB lors de la synchronisation.
+Suivant le SNR défini, le débit sera plus ou moins élevé et l'accès subira plus ou moins de perturbations.
+
+> [!primary]
+> Plus concrètement :
+>
+> Plus le SNR est faible, meilleur est le débit mais moins stable est la ligne.
+> <br>Plus le SNR est élevé, moins bon est le débit et plus stable est la ligne.
+>
+
+Voici la correspondance des profils avec la marge au bruit :
+
+| Profil | SNR |
+| ------------- | ------------- |
+| 512K  | SNR 6 avec limite de débit à 512K  |
+| 2M  | SNR 6 avec limite de débit à 2M  |
+| 24M  | SNR 6 sans limite de débit  |
+| SAFE1  | SNR 10  |
+| SAFE2  | SNR 16  |
+| PERF1  | SNR 3  |
+| PERF2  | SNR 1  |
+
+
+24M est le débit maximum atteignable avec un SNR à 6 dB.
+Si votre accès est très proche du NRA, vous obtiendrez peut-être 24M.
+Cependant si votre ligne est distante de 1 km du NRA, 24M ne sera pas atteignable. Vous obtiendrez peut-être 15M, cela dépendra de la qualité de la ligne et de la marge au bruit.
+
+
+#### Profils VDSL
+
+En VDSL, d’autres modulations de fréquence s’offrent à vous :
+
+- **17a**, recommandé pour les lignes de moins de 1 km : le profil 17a permet aux abonnés se trouvant à moins d’un kilomètre du NRA de bénéficier des meilleures performances sur leur ligne. Pour connaître cette distance, il suffit de tester son numéro sur le [test d’éligibilité OVHcloud Télécom](https://www.ovhtelecom.fr/offre-internet/eligibilite/). En fonction de la qualité de la ligne, le profil 17a ne sera pas systématiquement la meilleure option pour un abonné se trouvant à moins d’un kilomètre du NRA.
+- **8b**, pour les lignes plus longues : de manière générale, le profil 8b sera plus avantageux pour les abonnés situés à plus d’un kilomètre du nœud de raccordement téléphonique.
+
+
+### Ligne non dégroupée OVHcloud
+
+Malheureusement, la modification du profil de synchronisation n'est pas disponible pour les lignes raccordées sur les équipements d'opérateurs de collecte.
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>

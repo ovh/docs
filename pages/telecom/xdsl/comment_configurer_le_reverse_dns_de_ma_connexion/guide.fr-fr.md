@@ -60,7 +60,7 @@ Nous pouvons maintenant passer à l'étape suivante qui est la configuration de 
 
 La configuration du Reverse DNS s'effectue dans l'Espace Client Telecom :
 
--   Connectez vous à l'espace client : **<https://www.ovhtelecom.fr/espaceclient/login/>**
+-   Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), partie `Telecom`
 -   Cliquez sur "**Configuration**".
 -   Cliquez sur "**xDSL**".
 -   Cliquez sur "**Reverse DNS**".![](images/2015-06-01-120853_518x471_scrot.png){.thumbnail}
