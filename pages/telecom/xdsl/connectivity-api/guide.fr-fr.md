@@ -1,94 +1,61 @@
 ---
-title: 'Connectivity API'
-excerpt: 'Développer en utilisant notre API connectivity'
+title: "Utiliser l'API Connectivity"
+slug: connectivity-api
+excerpt: 'Développez en utilisant notre API connectivity'
 section: 'Configurations techniques avancées'
+order: 5
 ---
 
-**Dernière mise à jour le 12/02/2020**
+> [!primary]
+> Une version en langue anglaise de ce guide est disponible [ici](https://docs.ovh.com/gb/en/xdsl/connectivity-api/)
+>
 
-# Documentation développeur OVH Connectivity
+**Dernière mise à jour le 07/12/2020**
+
+## Objectif
 
 Cette documentation a pour objectif d'aider les développeurs à utiliser nos API, afin de créer leurs propres applications.
 
-La documentation générale de l'API est disponible ici: [https://api.ovh.com/](https://api.ovh.com/){.external}.
-Vous pouvez utiliser la console pour interagir directement avec l'API: [https://api.ovh.com/console/](https://api.ovh.com/console/){.external}.
+## Prérequis
 
-# Offres Internet
+- Disposer d'un compte OVHcloud actif et connaître ses identifiants.
+- Être sur la page web des [API OVHcloud](https://api.ovh.com/){.external}.
+- Consulter le guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
-OVH propose des Offres Internet à travers des packages contenant au moins un accès Internet, et peut proposer des VoIP, des emails, des noms de domaine.
-Les offres sont visibles ici: [https://www.ovhtelecom.fr/offre-internet/i](https://www.ovhtelecom.fr/offre-internet/){.external}.
+## En pratique
 
-Les services peuvent être gérés à l'aide de ces points de terminaison d'API:
-* `/pack/xdsl`: Gérer les packages d'offres Internet;
-* `/xdsl`: Gérer les accès Internet, les sous-services et les options;
-* `/connectivity`: Va remplacer `/xdsl`, pour l'instant il permet de faire l'éligibilité aux offres cuivre et fibre.
+### Offres Internet
 
-## Eligibility
+OVHcloud propose différentes offres d'accès à Internet par le biais de packages contenant au moins un accès Internet mais aussi des lignes VoIP, des e-mails, des noms de domaine.
 
-### Overview
+Les offres sont visibles ici : [https://www.ovhtelecom.fr/offre-internet/i](https://www.ovhtelecom.fr/offre-internet/){.external}.
 
-Eligibility methods are available on the endpoint path `/connectivity/eligibility/`.
-Eligibility goal is to return the eligible Internet offers for a given *endpoint*, in order to order this offer.
-An *endpoint* is whether an address or an existing line, identified by the line number and status.
-The methods are using as response an asynchronous return structure *xdsl.AsyncTask*, like :
-```
-{
-  "status": a string, the status of the task ("pending", "done" or "error")
-  "result": an object, in case of success, the method result
-  "error": a string, the error message in case of error
-}
-```
+Les services peuvent être gérés à l'aide de ces points de terminaison d'API :
+* `/pack/xdsl` : Gérer les packages d'offres Internet;
+* `/xdsl` : Gérer les accès Internet, les sous-services et les options;
+* `/connectivity` : va remplacer `/xdsl`. Pour l'instant il permet de faire l'éligibilité aux offres cuivre et fibre.
 
-Here is an example of pending task :
-```json
-{
-  "status": "pending",
-  "result": null,
-  "error": null
-}
-```
+### Éligibilité
 
-An example of successful task :
-```json
-{
-  "status": "success",
-  "result": { "some key": "some value"},
-  "error": null
-}
-```
-
-And finally an example of a task that failed :
-```json
-{
-  "status": "error",
-  "result": null,
-  "error": "The action failed, here is why"
-}
-```
-> [!primary]
->
-> You need to check the status of the task, and retry a few seconds later is the task is still in status "pending".
->
-
-## Éligibilité
-
-### Aperçu
+#### Aperçu
 
 Les méthodes d'éligibilité sont disponibles sur le chemin d'accès `/connectivity/eligibility/`.
 
 L'objectif de l'éligibilité est de renvoyer les offres Internet éligibles pour un *endpoint* (point de livraison) donné, afin de commander cette offre.
 Un *endpoint* peut être une adresse ou une ligne existante, identifiée par le numéro de ligne et son état (actif ou inactif).
 
-Les méthodes retournent une structure *xdsl.AsyncTask* en asynchrone, tel que :
+Les méthodes retournent une structure *xdsl.AsyncTask* en asynchrone, telle que :
+
 ```
 {
-  "status": une chaîne de caractères, le statut de la tâche ("pending" (en attente), "done" (terminé) ou "error" (erreur))
-  "result": un objet, en cas de succès, le résultat de la méthode
-  "error": une chaîne de caractères, le message d'erreur en cas d'erreur
+  "status" : une chaîne de caractères, le statut de la tâche ("pending" (en attente), "done" (terminé) ou "error" (erreur))
+  "result" : un objet, en cas de succès, le résultat de la méthode
+  "error" : une chaîne de caractères, le message d'erreur en cas d'erreur
 }
 ```
 
 Voici un exemple de tâche en attente :
+
 ```json
 {
   "status: "pending",
@@ -98,6 +65,7 @@ Voici un exemple de tâche en attente :
 ```
 
 Un exemple de tâche réussie :
+
 ```json
 {
   "status": "success",
@@ -107,6 +75,7 @@ Un exemple de tâche réussie :
 ```
 
 Et enfin un exemple de tâche qui a échoué :
+
 ```json
 {
   "status": "error",
@@ -120,24 +89,25 @@ Et enfin un exemple de tâche qui a échoué :
 > Vous devez vérifier l'état de la tâche, et réessayer quelques secondes plus tard si la tâche est toujours en état "doing" (en attente).
 >
 
-### Trouver les *endpoints* (points de livraison)
+#### Trouver les *endpoints* (points de livraison)
 
 Pour une ligne cuivre, le point de livraison est une ligne identifiée par son numéro et son état.
 Si aucune ligne n'existe, vous devrez faire un test par adresse pour voir si vous êtes éligible à la création d'une ligne voisine.
 
-Pour la fibre, le point de livraison peut être identifié par un identifiant *building* (bâtiment) ou un identifiant *OTP* (PTO : Point de Termaison Optique).
+Pour la fibre, le point de livraison peut être identifié par un identifiant *building* (bâtiment) ou un identifiant *OTP* (PTO : Point de Terminaison Optique).
 
 Une adresse est identifiée par un numéro de rue et un code de rue.
-Pour les trouver, utilisez ce processus:
+Pour les trouver, utilisez ce processus :
+
 1. [Obtenez la liste des localités à partir d'un code postal](#eligibleSearchCities)
 2. [Obtenez la liste des rues d'une localité](#eligibleSearchStreets)
 3. [Obtenir les numéros de rue disponibles pour un code de rue donné](#eligibleSearchStreetNumbers)
 4. [Obtenir la liste des bâtiments pour une adresse](#eligibleSearchBuildings)
 5. [Obtenir la liste des bâtiments pour une ligne](#eligibleSearchBuildingsByLine)
 
-#### Pour obtenir la liste des localités à partir d'un code postal <a name="eligibleSearchCities"></a>
+##### **Pour obtenir la liste des localités à partir d'un code postal** <a name="eligibleSearchCities"></a>
 
-Exemple: nous voulons rechercher dans les localités pour le code postal "91400".
+Exemple : nous voulons rechercher dans les localités pour le code postal "91400".
 
 La requête :
 
@@ -146,14 +116,16 @@ La requête :
 > @api {POST} /connectivity/eligibility/search/cities
 >
 
-avec les données suivantes:
+avec les données suivantes :
+
 ```json
 {
   "zipCode": "91400"
 }
 ```
 
-La réponse:
+La réponse :
+
 ```json
 {
   "error": null,
@@ -181,25 +153,27 @@ La réponse:
 }
 ```
 
-#### Pour obtenir la liste des rues d'une localité <a name="eligibleSearchStreets"></a>
+##### **Pour obtenir la liste des rues d'une localité** <a name="eligibleSearchStreets"></a>
 
-Exemple: Nous voulons obtenir la liste des rues de la localité "ORSAY" identifiée par le code INSEE "91471".
+Exemple : Nous voulons obtenir la liste des rues de la localité "ORSAY" identifiée par le code INSEE "91471".
 
-La requête:
+La requête :
 
 > [!api]
 >
 > @api {POST} /connectivity/eligibility/search/streets
 >
 
-avec les données suivantes:
+avec les données suivantes :
+
 ```json
 {
   "inseeCode": "91471"
 }
 ```
 
-La réponse:
+La réponse :
+
 ```json
 {
   "result": [
@@ -229,25 +203,27 @@ La réponse:
 }
 ```
 
-#### Pour obtenir les numéros de rue disponibles pour un code de rue donné <a name="eligibleSearchStreetNumbers"></a>
+##### **Pour obtenir les numéros de rue disponibles pour un code de rue donné** <a name="eligibleSearchStreetNumbers"></a>
 
 Exemple: nous voulons les numéros de la rue "RUE DU VERGER", identifiée par le code de rue "9147132200".
 
-La requête:
+La requête :
 
 > [!api]
 >
 > @api {POST} /connectivity/eligibility/search/streetNumbers
 >
 
-avec les données suivantes:
+avec les données suivantes :
+
 ```json
 {
   "streetCode": "9147132200"
 }
 ```
 
-La réponse:
+La réponse :
+
 ```json
 {
   "status": "ok",
@@ -272,18 +248,19 @@ La réponse:
 }
 ```
 
-#### Pour obtenir tous les bâtiments pour une adresse spécifique <a name="eligibleSearchBuildings"></a>
+##### **Pour obtenir tous les bâtiments pour une adresse spécifique** <a name="eligibleSearchBuildings"></a>
 
-Exemple: nous voulons la liste des bâtiments pour l'adresse "2 RUE DU VERGER, 91400 ORSAY", identifiée par code de rue "9147132200" et le numéro "2".
+Exemple : nous voulons la liste des bâtiments pour l'adresse "2 RUE DU VERGER, 91400 ORSAY", identifiée par code de rue "9147132200" et le numéro "2".
 
-La requête:
+La requête :
 
 > [!api]
 >
 > @api {POST} /connectivity/eligibility/search/buildings
 >
 
-avec les données suivantes:
+avec les données suivantes :
+
 ```json
 {
   "streetCode": "9147132200",
@@ -308,18 +285,19 @@ La réponse:
 }
 ```
 
-#### Pour obtenir les références de bâtiment à partir d'un numéro de ligne donné <a name="eligibleSearchBuildingsByLine"></a>
+##### **Pour obtenir les références de bâtiment à partir d'un numéro de ligne donné** <a name="eligibleSearchBuildingsByLine"></a>
 
-Exemple: nous voulons la liste des bâtiments pour le numéro de ligne inactive "0123456789".
+Exemple : nous voulons la liste des bâtiments pour le numéro de ligne inactive "0123456789".
 
-La requête:
+La requête :
 
 > [!api]
 >
 > @api {POST} /connectivity/eligibility/search/buildingsByLine
 >
 
-avec les données suivantes:
+avec les données suivantes :
+
 ```json
 {
   "lineNumber": "0123456789",
@@ -327,7 +305,8 @@ avec les données suivantes:
 }
 ```
 
-La réponse:
+La réponse :
+
 ```json
 {
   "error": null,
@@ -345,14 +324,15 @@ La réponse:
 ```
 Nous avons trouvé un seul bâtiment qui est une maison.
 
-### Faire une éligibilité cuivre (ADSL, VDSL ou SDSL)
+#### Recherche une éligibilité cuivre (ADSL, VDSL ou SDSL)
 
 Les cas possibles sont:
+
 * [Je connais le numéro de ligne, je vais l'utiliser pour l'éligibilité](#eligibleTestLine)
 * [Je ne connais pas le numéro de ligne, je vais d'abord devoir le chercher](#eligibleSearchLines)
 * [Je n'ai pas de numéro de ligne, je vais devoir demander une création de ligne à partir d'une ligne voisine](#eligibleTestAddress)
 
-#### Faire une éligibilité sur une ligne <a name="eligibleTestLine"></a>
+##### **Faire une éligibilité sur une ligne** <a name="eligibleTestLine"></a>
 
 Si vous connaissez le numéro et l'état de la ligne, vous pouvez vérifier son éligibilité.
 La différence entre une ligne active et une ligne inactive est qu'une ligne active a un accès Internet actif, alors que la ligne inactive est juste un identifiant à utiliser pour commander un accès Internet (il s'agit généralement de l'ancien numéro du dernier propriétaire, qui a déménagé avec sa ligne).
@@ -362,14 +342,15 @@ La différence entre une ligne active et une ligne inactive est qu'une ligne act
 > Il est important de distinguer la ligne active d'une ligne inactive. Vérifiez toujours que l'adresse renvoyée est la véritable adresse de l'installation.
 >
 
-Voici la requête:
+Voici la requête :
 
 > [!api]
 >
 > @api {POST} /connectivity/eligibility/test/line
 >
 
-avec les données POST suivantes:
+avec les données POST suivantes :
+
 ```json
 {
   "lineNumber": "0123456789",
@@ -378,7 +359,8 @@ avec les données POST suivantes:
 
 ```
 
-Voici un retour partiel pour l'exemple:
+Voici un retour partiel pour l'exemple :
+
 ```json
 {
   "status": "ok",
@@ -672,9 +654,10 @@ Voici un retour partiel pour l'exemple:
 > Nous avons omis certaines offres SDSL dans cet exemple en raison de la taille de la réponse.
 >
 
-La réponse est composée de:
+La réponse est composée de :
+
 * un tableau *result.offers* qui liste toutes les offres et si la ligne donnée est éligible ou non;
-* une structure *result.endpoint* qui donne des informations sur la ligne: adresse et caractéristiques.
+* une structure *result.endpoint* qui donne des informations sur la ligne : adresse et caractéristiques.
 
 Voici une description des codes d'offre:
 
@@ -686,30 +669,32 @@ Voici une description des codes d'offre:
 | VDSL-MAX_FULL     | VDSL  | VDSL dégroupage total                 |
 | SDSL-MAX          | SDSL  | SDSL monopaire                        |
 
-Pour les offres SDSL à débit garanti, le code offre est formé avec:
-* le type d'offre: SDSL
-* le débit garanti: 1M, 2M, 4M, ..
-* le nombre de paires: 1P, 2P ou 4P
+Pour les offres SDSL à débit garanti, le code offre est formé avec :
 
-Quelques exemples:
+* le type d'offre : SDSL
+* le débit garanti : 1M, 2M, 4M, ..
+* le nombre de paires : 1P, 2P ou 4P
+
+Quelques exemples :
 
 | code              | type  | description                           |
 |-------------------|-------|---------------------------------------|
 | SDSL-1M-1P        | SDSL  | SDSL monopaire avec 1M guaranti       |
 | SDSL-2M-2P        | SDSL  | SDSL 2 paires avec 2M guaranti        |
 | SDSL-16M-4P       | SDSL  | SDSL 4 paires avec 16M guaranti       |
-...
 
-#### Rechercher une ligne active ou inactive pour une adresse <a name="eligibleSearchLines"></a>
 
-La requête:
+##### **Rechercher une ligne active ou inactive pour une adresse** <a name="eligibleSearchLines"></a>
+
+La requête :
 
 > [!api]
 >
 > @api {POST} /connectivity/eligibility/search/lines
 >
 
-avec les données POST suivantes:
+avec les données POST suivantes :
+
 ```json
 {
     "streetCode": "123456789",
@@ -717,7 +702,8 @@ avec les données POST suivantes:
 }
 ```
 
-La réponse:
+La réponse :
+
 ```json
 {
   "status": "ok",
@@ -762,24 +748,25 @@ Vous pouvez désormais utiliser l'éligibilité par ligne.
 > Les numéros sur liste rouge ne peuvent pas être récupérés à l'aide de cette méthode.
 >
 
-#### Faire une éligibilité pour une adresse <a name="eligibleTestAddress"></a>
+##### **Rechercher une éligibilité pour une adresse** <a name="eligibleTestAddress"></a>
 
 Cela retournera une éligibilité par adresse, à utiliser pour la création d'une ligne voisine.
 Une création de ligne voisine consiste à vérifier la disponibilité de nouvelles lignes cuivre en recherchant les informations de la ligne voisine la plus proche.
 
 > [!primary]
 >
-> Si vous avez déjà une ligne active ou inactive, vous devez utiliser le test de ligne à la place.
+> Si vous avez déjà une ligne active ou inactive, vous devez utiliser le test de ligne à la place de cette méthode.
 >
 
-La requête:
+La requête :
 
 > [!api]
 >
 > @api {POST} /connectivity/eligibility/test/address
 >
 
-avec les données suivantes:
+avec les données suivantes :
+
 ```json
 {
   "streetCode": "94123001234",
@@ -787,7 +774,8 @@ avec les données suivantes:
 }
 ```
 
-La réponse:
+La réponse :
+
 ```json
 {
   "status": "ok",
@@ -894,49 +882,55 @@ La réponse:
 }
 ```
 
-### Faire une éligibilité fibre (FTTH)
+#### Rechercher une éligibilité fibre (FTTH)
 
-Pour une éligibilité fibre, nous avons deux cas:
+Pour une éligibilité fibre, nous avons deux cas de figure :
+
 * J'ai un identifiant fibre OTP (Optical Termination Point), que je vais utiliser pour l'éligibilité;
 * Je n'ai pas d'identifiant OTP fibre et utiliserai un identifiant * bâtiment * pour l'admissibilité.
 
 Un *building* peut être une maison ou un immeuble à logements multiples. Le *building* peut être trouvé à partir d'une adresse ou d'une ligne de cuivre existante.
 
-Le processus d'éligibilité à partir d'une adresse est le suivant:
+Le processus d'éligibilité à partir d'une adresse est le suivant :
+
 1. [Obtenir la liste des localités à partir d'un code postal](#eligibleSearchLines)
 2. [Obtenir la liste des rues d'une localité](#eligibleSearchStreets)
 3. [Obtenir les numéros de rue disponibles pour un code de rue donné](#eligibleSearchStreetNumbers)
 4. [Obtenir tous les bâtiments pour une adresse spécifique](#eligibleSearchBuildings)
 5. [Faire le test d'éligibilité pour le bâtiment sélectionné](#eligibleTestBuilding)
 
-À partir d'une ligne, nous avons a:
+À partir d'une ligne, nous avons à :
+
 1. [Obtenir les références de bâtiment à partir d'un numéro de ligne donné](#eligibleSearchBuildingsByLine)
 2. [Faire le test d'éligibilité pour le bâtiment sélectionné](#eligibleTestBuilding)
 
-Pour un OTP, c'est le plus simple:
+Pour un OTP, c'est le plus simple :
+
 1. [Faire le test d'éligibilité pour l'intifiant PTO](#eligibilityTestOtp)
 
 Voici les détails de chaque type de demande.
 
-#### Pour faire l'éligibilité sur un bâtiment <a name="eligibilityTestBuilding"></a>
+##### **Pour faire l'éligibilité sur un bâtiment** <a name="eligibilityTestBuilding"></a>
 
-Exemple: nous voulons vérifier l'éligibilité des offres FTTH pour l'immeuble identifié par la référence "IMB/91471/C/NT8X".
+Exemple : nous voulons vérifier l'éligibilité des offres FTTH pour l'immeuble identifié par la référence "IMB/91471/C/NT8X".
 
-La requête:
+La requête :
 
 > [!api]
 >
 > @api {POST} /connectivity/eligibility/test/building
 >
 
-avec les données suivantes:
+avec les données suivantes :
+
 ```json
 {
   "building": "IMB/91471/C/NT8X"
 }
 ```
 
-La réponse:
+La réponse :
+
 ```json
 {
   "error": null,
@@ -1019,20 +1013,21 @@ La réponse:
 }
 ```
 
-Dans le résultat pour le tableau "offers" l'attribut *booléen* *eligible.eligible* nous indique que nous sommes éligibles aux offres "FTTH-Max 300M en téléchargement et 250M en upload" et "FTTH-Max 1G en téléchargement et 250M en upload".
+Dans le résultat pour le tableau "offers", l'attribut *booléen* *eligible.eligible* nous indique que nous sommes éligibles aux offres "FTTH-Max 300M en téléchargement et 250M en upload" et "FTTH-Max 1G en téléchargement et 250M en upload".
 
-#### Pour faire l'éligibilité à partir d'un identifiant PTO <a name="eligibilityTestOtp"></a>
+##### **Pour rechercher l'éligibilité à partir d'un identifiant PTO** <a name="eligibilityTestOtp"></a>
 
-Exemple: nous voulons vérifier l'éligibilité pour la PTO "OO-XXXX-XXXX/C".
+Exemple : nous voulons vérifier l'éligibilité pour la PTO "OO-XXXX-XXXX/C".
 
-La requête:
+La requête :
 
 > [!api]
 >
 > @api {POST} /connectivity/eligibility/test/otp
 >
 
-avec les données suivantes:
+avec les données suivantes :
+
 ```json
 {
   "otp": "OO-XXXX-XXXX/C"
