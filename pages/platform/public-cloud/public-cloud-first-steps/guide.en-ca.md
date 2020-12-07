@@ -64,7 +64,7 @@ Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-You can accept the default file by pressing "↩". Now you will have the option to enter a passphrase to password-protect your SSH key. This is recommended for added security. Since only the corresponding private key will be required to access your Public Cloud instance from your working device, appropriate security measures should be applied at this point. The passphrase has to be entered when a connection to the instance is established.
+You can accept the default file by pressing "Enter" (↩). Now you will have the option to enter a passphrase to password-protect your SSH key. This is recommended for added security. Since only the corresponding private key will be required to access your Public Cloud instance from your working device, appropriate security measures should be applied at this point. The passphrase has to be entered when a connection to the instance is established.
 
 Your SSH keys should be stored in the ".ssh" directory. The public key file will have ".pub" added to the filename.
 
@@ -206,11 +206,11 @@ When you have applied your choices, click `Next`{.action} to proceed to the fina
 
 ![billing select](images/instance-creation-05.png){.thumbnail}
 
-We recommend to choose hourly billing if there is any doubt regarding the usage period, because it is not possible to choose it afterwards. You will have the option to switch to a monthly subscription as soon as the instance is available on the "Instances" page.
+We recommend to choose hourly billing if there is any doubt regarding the usage period, because it is not possible to choose it after the service delivery. You will have the option to switch to a monthly subscription as soon as the instance is available on the "Instances" page.
 
 > [!warning]
 >
->If you choose to be billed hourly, you will continue to be billed as long as the instance is not deleted. It does not matter if the instance is actually used or not.
+>If you choose to be billed hourly, you will continue to be billed as long as the instance is not deleted. It does not matter if the instance is not actually used during this time.
 >
 
 Once you have made sure that your configuration choices are correct, click on the `Create an instance`{.action} button to finish creating your new instance. It may take a few minutes until your service is delivered.
@@ -320,7 +320,7 @@ For example, Remmina Remote Desktop Client is a compatible application which sho
 
 ![linux remote](images/linux-connect-01.png){.thumbnail}
 
-Open Remmina and make sure the connection protocol is set to "RDP". Enter the IPv4 address of your Public Cloud instance and press "↩".
+Open Remmina and make sure the connection protocol is set to "RDP". Enter the IPv4 address of your Public Cloud instance and press "Enter" (↩).
 
 ![linux remote](images/linux-connect-02.png){.thumbnail}
 

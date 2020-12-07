@@ -10,14 +10,14 @@ order: 4
 
 ## Objective
 
-Now that you have [created your pool](https://docs.ovh.com/gb/en/cloud-desktop-infrastructure/how-to-create-pool/){.external}, you can authorise user access to your virtual desktops.
+Now that you have [created your pool](../how-to-create-pool/), you can authorise user access to your virtual desktops.
 
 **This guide will explain how to add users, and provide them with access to your virtual desktops.**
 
 
 ## Requirements
 
-- You need to have created users in the Active Directory, if a [trust relationship has been created](../approval-ad/){.external}, or created users via your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You need to have created users in the Active Directory, if a [trust relationship has been created](../approval-ad/), or created users via your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - You need to be logged in to the VMware Horizon 7.1 interface.
 
 

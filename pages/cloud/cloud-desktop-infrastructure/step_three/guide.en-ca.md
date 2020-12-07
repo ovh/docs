@@ -10,7 +10,7 @@ order: 3
 
 ## Objective
 
-If you have followed the previous steps, you will now know how to [log in to the VMWare Horizon platform](https://docs.ovh.com/ca/en/cloud-desktop-infrastructure/horizon-7-platform/){.external}, and your [pool template](../create-pool/) will be ready. It is now time to create your first pool.
+If you have followed the previous steps, you will now know how to [log in to the VMWare Horizon platform](../horizon-7-platform/), and your [pool template](../create-pool/) will be ready. It is now time to create your first pool.
 
 **This guide will explain how to create pools using the VMware Horizon 7.1 platform.**
 
