@@ -68,7 +68,7 @@ The following information, retrieved in the previous steps, needs to be provided
 
 |Field|Value| 
 |---|---| 
-|cartId|<ID of your cart>|
+|cartId|*ID of your cart*|
 |duration|P1M|
 |planCode|project|
 |pricingMode|default|
@@ -97,10 +97,10 @@ Use the following endpoint to name your project (**label**: "description"):
 
 |Field|Value| 
 |---|---| 
-|cartId|<ID of your cart>|
-|itemId|<ID of the item>|
+|cartId|*ID of your cart*|
+|itemId|*ID of the item*|
 |label|description|
-|value|<Your project name>|
+|value|*Your project name*|
 
 The response will include a "configurationId" which can be used (together with the "cartId" and "itemId") to retrieve the configuration or delete it, for example:
 
@@ -122,7 +122,7 @@ Use this call to retrieve the available options:
 
 |Field|Value| 
 |---|---| 
-|cartId|<ID of your cart>|
+|cartId|*ID of your cart*|
 |planCode|project|
 
 The next step will then add a monthly instance to the project.
@@ -134,9 +134,9 @@ The next step will then add a monthly instance to the project.
 
 |Field|Value| 
 |---|---| 
-|cartId|<ID of your cart>|
+|cartId|*ID of your cart*|
 |duration|P1M|
-|itemId|<ID of the item>|
+|itemId|*ID of the item*|
 |planCode|s1-2.monthly|
 |pricingMode|default|
 |quantity|1|
