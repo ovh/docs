@@ -66,7 +66,7 @@ Now use this call to add the item to your cart:
 
 The following information, retrieved in the previous steps, needs to be provided:
 
-|Field|Value| 
+|Field|Value|
 |---|---| 
 |cartId|*ID of your cart*|
 |duration|P1M|
@@ -88,14 +88,14 @@ You can check the list of available configuration settings for this item with th
 > @api {GET} /order/cart/{cartId}/item/{itemId}/requiredConfiguration
 >
 
-Use the following endpoint to name your project (**label**: "description"):
+Use the following endpoint to name your project (`**label**: "description"`):
 
 > [!api]
 >
 > @api {POST} /order/cart/{cartId}/item/{itemId}/configuration
 >
 
-|Field|Value| 
+|Field|Value|
 |---|---| 
 |cartId|*ID of your cart*|
 |itemId|*ID of the item*|
@@ -120,7 +120,7 @@ Use this call to retrieve the available options:
 > @api {GET} /order/cart/{cartId}/cloud/options
 >
 
-|Field|Value| 
+|Field|Value|
 |---|---| 
 |cartId|*ID of your cart*|
 |planCode|project|
@@ -132,7 +132,7 @@ The next step will add a monthly instance to the project:
 > @api {POST} /order/cart/{cartId}/cloud/options
 >
 
-|Field|Value| 
+|Field|Value|
 |---|---| 
 |cartId|*ID of your cart*|
 |duration|P1M|
