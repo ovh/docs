@@ -86,7 +86,7 @@ Additionally, only a subset of options are allowed on the client side:
 
 ## Go further
 
-[Cloud Archive API documentation](https://docs.ovh.com/gb/en/storage/pca/api/)
+[Cloud Archive API documentation](https://docs.ovh.com/asia/en/storage/pca/api/)
 
 [Rsync man page](https://linux.die.net/man/1/rsync)
 
