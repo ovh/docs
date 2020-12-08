@@ -20,7 +20,7 @@ Une fois votre instance créée, il sera nécessaire de terminer l'installation 
 ## Prérequis
 
 - Avoir créé un projet Public Cloud.
-- Avoir crée [une instance dans l'espace client](https://docs.ovh.com/fr/public-cloud/creer-instance-espace-client/) sous une distribution Windows Desktop.
+- Avoir crée [une instance dans l'espace client](../creer-instance-espace-client/) sous une distribution Windows Desktop.
 
 ## En pratique
 

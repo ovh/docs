@@ -210,10 +210,10 @@ uname -r
 
 ## Go further
 
-[Rescue Mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}.
+[Rescue Mode](../ovh-rescue/)
 
-[Information on Meltdown and Spectre  vulnerabilities](https://docs.ovh.com/fr/dedicated/information-about-meltdown-spectre-vulnerability-fixes/){.external}.
+[Information on Meltdown and Spectre vulnerabilities](https://docs.ovh.com/fr/dedicated/information-about-meltdown-spectre-vulnerability-fixes/){.external}
 
-[Update following Meltdown and Spectrum vulnerabilities by operating system](https://docs.ovh.com/fr/dedicated/meltdown-spectre-kernel-update-per-operating-system/){.external}.
+[Update following Meltdown and Spectrum vulnerabilities by operating system](https://docs.ovh.com/fr/dedicated/meltdown-spectre-kernel-update-per-operating-system/){.external}
 
 Join our user community on  <https://community.ovh.com/en/>
