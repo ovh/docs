@@ -72,6 +72,10 @@ Si les adresses IP publiques attachées à l'infrastructure d'origine sont néce
 
 Consultez notre guide pour [migrer des blocs IP entre deux services Managed Bare Metal](../ajout-de-bloc-ip/#migrer-un-bloc-ip-entre-deux-managed-bare-metal).
 
+La vidéo ci-dessous vous détaillera également comment déplacer un bloc d'adresses IP entre deux Hosted Private Cloud. Cette méthode est également applicable à une solution Managed Bare Metal.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Contexte VMware
 
 #### Configuration des clusters
