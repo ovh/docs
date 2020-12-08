@@ -76,6 +76,10 @@ Si les adresses IP publiques attachées à l'infrastructure d'origine sont néce
 
 Consultez notre guide pour [migrer des blocs IP entre deux services Hosted Private Cloud](../ajout-de-bloc-ip/#migrer-un-bloc-ip-entre-deux-hosted-private-cloud).
 
+La vidéo ci-dessous vous détaillera également comment déplacer un bloc d'adresses IP entre deux Hosted Private Cloud.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ##### **Portgroups**
 
 Vérifiez les paramètres des Portgroups, notamment les paramètres liés à la sécurité, aux VLAN, Teaming et Failover. S'ils ont été modifiés sur l'infrastructure d'origine, la même configuration devra être appliquée sur le Hosted Private Cloud de destination.

@@ -22,7 +22,7 @@ IP blocks can be used to make your services accessible online.
 
 ## Instructions
 
-### Order an IP block.
+### Order an IP block
 
 To order an IP block for your **Hosted Private Cloud**, go to the OVHcloud Control Panel. In the `Hosted Private Cloud` section, click on the `IP` section in the left-hand column, then click `Order additional IP addresses`{.action}. Then select your **Hosted Private Cloud** in the dropdown menu before moving on to the next step.
 
@@ -64,7 +64,9 @@ You will need to fill in several fields in order to create your IP block.
 
 Once you have confirmed the final step, you will receive the purchase order for your IP block. If everything looks correct in the purchase order, you will simply need to pay the total using one of the payment methods listed at the bottom of the page, and your order will then be delivered.
 
-### Migrate an IP block between two Hosted Private Cloud solutions.
+### Migrate an IP block between two Hosted Private Cloud solutions
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 To migrate an IP block, you will need to move the blocks manually via the OVHcloud APIv6.
 
@@ -103,48 +105,6 @@ Next, use this API call to move the IP into the IP parking space:
 You can track the movement of your IP block via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in the `Hosted Private Cloud`{.action} section, then `Private Cloud`{.action}. Click on your Hosted Private Cloud service, then on the `Operations`{.action} tab.
 
 The operation reference is “removeIpRipeBlock”.
-
-![operations manager](images/operations.png){.thumbnail}
-
-### Migrate an IP block between two Hosted Private Cloud services
-
-Migrating an IP block requires manually moving blocks through the OVHcloud APIv6.
-
-Use the following API call:
-
-> [!api]
->
-> @api {POST} /ip/{ip}/move
-> 
-
-The fields must be completed as follows:
-
-- ip: IP block with /mask
-- nexthop "newPrimaryIp" (case sensitive)
-- to: Destination Hosted Private Cloud in the form pcc-XXX-XXX-XXX-XXX
-
-![nexthop field](images/move-api.png){.thumbnail}
-
-
-The result will be in this form:
-
-![nexthop field](images/api-result.png){.thumbnail}
-
-Then use this API call to move the IP addresses to "IP parking":
-
-> [!api]
->
-> @api {POST} /ip/{ip}/park
-> 
-
-> [!warning]
->
-> This call cuts the network on VMs that use the IPs in question.
->
-
-You can track the IP block movement from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in the `Hosted Private Cloud`{.action} part and then `Private Cloud`{.action}. Click on your Hosted Private Cloud service and then click the `Operations`{.action} tab.
-
-The operation name is removeIpRipeBlock.
 
 ![operations manager](images/operations.png){.thumbnail}
 
