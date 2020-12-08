@@ -172,7 +172,7 @@ Please read the instructions below to see where you should make the changes:
 
 |DNS configuration used|Where to make the changes|
 |---|---|
-|OVH|In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Domains`{.action} section for the domain name concerned. Then in the DNS zone tab, check and edit the information as required. If you need any further assistance, you can read our guide to [Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/hosting_how_to_edit_my_dns_zone/){.external}.|
+|OVH|In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Domains`{.action} section for the domain name concerned. Then in the DNS zone tab, check and edit the information as required. If you need any further assistance, you can read our guide to [Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.|
 |Other|From the interface given by the service provider managing your domain name’s DNS configuration. Please contact your service provider if you encounter any difficulties making these changes.|
 
 Once you have modified your domain name’s DNS configuration, you will need to allow a maximum of 24 hours for the changes to fully propagate and take effect. If you have added several domain names to your Cloud Web hosting plan as a multisite, you will need to make these two changes for each individual domain name. 

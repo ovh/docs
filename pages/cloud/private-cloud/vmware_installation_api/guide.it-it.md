@@ -140,7 +140,7 @@ vconnect()
 
 ##### OS
 
-In questo esempio utilizziamo una VM installata su Ubuntu 18.04, creata a partire dai [template disponibili sul servizio Private Cloud](https://docs.ovh.com/gb/en/private-cloud/deploy-ovh-template/).
+In questo esempio utilizziamo una VM installata su Ubuntu 18.04, creata a partire dai [template disponibili sul servizio Private Cloud](../installazione-template-ovh/).
 
 
 ##### Prerequisiti
