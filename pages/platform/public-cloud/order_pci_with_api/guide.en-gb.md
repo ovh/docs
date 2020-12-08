@@ -88,7 +88,7 @@ You can check the list of available configuration settings for this item with th
 > @api {GET} /order/cart/{cartId}/item/{itemId}/requiredConfiguration
 >
 
-Use the following endpoint to name your project (`<b>label</b>: "description"`):
+Use the following endpoint to name your project (`label: "description"`):
 
 > [!api]
 >
