@@ -125,7 +125,7 @@ Use this call to retrieve the available options:
 |cartId|*ID of your cart*|
 |planCode|project|
 
-The next step will then add a monthly instance to the project.
+The next step will add a monthly instance to the project:
 
 > [!api]
 >
