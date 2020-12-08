@@ -28,7 +28,7 @@ Cette documentation a pour objectif d'aider les développeurs à utiliser nos AP
 
 OVHcloud propose différentes offres d'accès à Internet par le biais de packages contenant au moins un accès Internet mais aussi des lignes VoIP, des e-mails, des noms de domaine.
 
-Les offres sont visibles ici : [https://www.ovhtelecom.fr/offre-internet/i](https://www.ovhtelecom.fr/offre-internet/){.external}.
+Les offres sont visibles ici : [https://www.ovhtelecom.fr/offre-internet/](https://www.ovhtelecom.fr/offre-internet/){.external}.
 
 Les services peuvent être gérés à l'aide de ces points de terminaison d'API :
 * `/pack/xdsl` : Gérer les packages d'offres Internet;
@@ -99,8 +99,8 @@ Pour la fibre, le point de livraison peut être identifié par un identifiant *b
 Une adresse est identifiée par un numéro de rue et un code de rue.
 Pour les trouver, utilisez ce processus :
 
-1. [Obtenez la liste des localités à partir d'un code postal](#eligibleSearchCities)
-2. [Obtenez la liste des rues d'une localité](#eligibleSearchStreets)
+1. [Obtenir la liste des localités à partir d'un code postal](#eligibleSearchCities)
+2. [Obtenir la liste des rues d'une localité](#eligibleSearchStreets)
 3. [Obtenir les numéros de rue disponibles pour un code de rue donné](#eligibleSearchStreetNumbers)
 4. [Obtenir la liste des bâtiments pour une adresse](#eligibleSearchBuildings)
 5. [Obtenir la liste des bâtiments pour une ligne](#eligibleSearchBuildingsByLine)
