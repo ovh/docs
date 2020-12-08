@@ -23,7 +23,7 @@ order: 2
 | Nombre min. de hosts par PCC (SLA) | Nombre d'hôtes par vCenter pour le maintien du contrat de niveau de service | 2 |
 | Nombre min. de hosts par PCC (sans SLA) | Nombre minimal d'hôtes à utiliser avec vCenter sans contrat de niveau de service | 0 |
 | Nombre max. de hosts par cluster | Hosts par cluster | 64 |
-| Nombre max. de clusters par PCC | Nombre de clusters dans le même centre de données virtuel | Aucune limite |
+| Nombre max. de clusters par vDC | Nombre de clusters dans le même centre de données virtuel | Aucune limite |
 | Nombre max. de vDC par PCC | Le nombre de data centres virtuels (vDC) que les clients peuvent ajouter par vCenter | 400 |
 | Nombre max. de hosts par PCC | Limites de hosts par vCenter | plage **Hosts**: 340 hosts, 70 zpools<br>plage **Hybrid**: 241 hosts, 120 zpools<br>plage **BigDS**: 76 hosts, 205 zpools |
 | Nombre max. de machines virtuelles par SDDC | VMs gérées par le même vCenter | 25 000 |
