@@ -32,7 +32,7 @@ order: 2
 | vCPUs, mémoire RAM et disque utilisés par vROPS | Ressources affectées à vROPS | 4 processeurs virtuels, 16 Go de RAM |
 | Nombre max. de edge nodes | Nombre max. de périphériques edge à déployer par NSX | 2000 |
 | Nombre max. de tunnels VPN IPSec | Nombre max. de tunnels VPN par edge | 512 compact edge<br>1600 large edge<br>4096 quad large edge<br>6000 extra large edge |
-| Nombre max. de vRack par vDC | Nombre max. de réseaux privés par data centre virtuel | 1 |
+| Nombre max. de vRack par vDC | Nombre max. de réseaux privés par Virtual Data Center (VDC) | 1 |
 | Nombre max. de clients VPN L2 | Nombre de clients VPN à connecter | 5 |
 
 ## Aller plus loin
