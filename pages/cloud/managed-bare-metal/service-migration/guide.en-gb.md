@@ -72,6 +72,10 @@ If the public IP addresses attached to the source infrastructure are required on
 
 Please consult our guide to [Migrate an IP block between two Managed Bare Metal services](../add-ip-block/#migrate-an-ip-block-between-two-managed-bare-metal-solutions).
 
+The video below also shows how to migrate an IP block between two Hosted Private Cloud services. This method also applies for Managed Bare Metal.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### VMware context
 
 #### Cluster configuration

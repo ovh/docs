@@ -76,6 +76,10 @@ If the public IP addresses attached to the source Hosted Private Cloud are requi
 
 Please consult our guide to [Migrate an IP block between two Hosted Private Cloud services](../add-ip-block/#migrate-an-ip-block-between-two-hosted-private-cloud-solutions).
 
+The video below also shows how to migrate an IP block between two Hosted Private Cloud services.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ##### **Distributed port group settings**
 
 Please verify portgroup settings including Security, VLAN, Teaming and failover, as if they have been modified on the source environment the same configuration will need to be applied on the destination.
