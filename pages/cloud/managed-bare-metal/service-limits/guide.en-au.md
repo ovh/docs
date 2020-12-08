@@ -1,7 +1,9 @@
 ---
 title: Technical capabilities
 slug: technical-capabilities
-excerpt: 'Learn the technical capabilities and limitations of the OVHcloud Hosted Private Cloud'
+routes:
+    canonical: 'https://docs.ovh.com/au/en/private-cloud/technical-capabilities/'
+excerpt: 'Learn the technical capabilities and limitations of the OVHcloud Managed Bare Metal'
 section: FAQ
 order: 1
 ---
@@ -10,7 +12,7 @@ order: 1
 
 ## Objective
 
-**This page provides an overview of the technical capabilities and limitations of OVHcloud Hosted Private Cloud services.**
+**This page provides an overview of the technical capabilities and limitations of OVHcloud Managed Bare Metal services.**
 
 ## Capabilities and known limits
 
@@ -29,9 +31,7 @@ order: 1
 | Max. number of VMs per host | VMs hosted on the same physical host | 1024 |
 | Max. number of IPs per PCC |  Max. number of Public IPs assignable and usable per vCenter | 1 x /23 |
 | vCPUs, RAM and disk consumed by regular vCenter | Resources assigned to vCenter (VCSA) | 4 vCPU, 16GB RAM, 290GB Disk |
-| vCPUs, RAM and disk consumed by regular NSX |  Resources assigned to NSX Manager and Controller | 4 vCPU, 4GB RAM, 60GB Disk<br>4 vCPU, 2GB RAM, 28GB Disk |
 | vCPUs, RAM and disk consumed by regular vROPS | Resources assigned to vROPS | 4 vCPU, 16GB RAM |
-| Max. number of edge nodes | Max. number of edge devices to be deployed per NSX | 2000 |
 | Max. number of IPSec VPN Tunnels | Max. number of VPN tunnels per edge | 512 compact edge<br>1600 large edge<br>4096 quad large edge<br>6000 extra large edge |
 | Max. number of vRack per vDC | Max. number of private networks per virtual data centre | 1 |
 | Max. number of L2 VPN Clients | Number of VPN clients to connect | 5 |
