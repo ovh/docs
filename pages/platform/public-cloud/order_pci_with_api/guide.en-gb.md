@@ -10,7 +10,7 @@ order: 8
 
 ## Objective
 
-OVHcloud
+
 
 **This guide explains how to order a Public Cloud project including an instance via the OVHcloud API by means of an example.**
 
