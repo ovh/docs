@@ -100,7 +100,7 @@ Cliquez ensuite sur le bouton `Confirmer la sélection`{.action} pour passer à 
 
 ### Prise de rendez-vous pour le création de l'accès à la nouvelle adresse
 
-Cette étape n'apparait que si vous ne disposez d'aucun numéro à la nouvelle adresse.
+Cette étape n'apparait que si une création de ligne est demandée à la nouvelle adresse.
 Choisissez sur la planning la date et l'heure du rendez-vous avec un technicien Orange en cochant la case correspondante.
 
 Cliquez ensuite sur le bouton `Confirmer la sélection`{.action} pour valider cette étape.
@@ -108,15 +108,14 @@ Cliquez ensuite sur le bouton `Confirmer la sélection`{.action} pour valider ce
 ![Prise de Rendez-vous](images/move10-edit.png){.thumbnail}
 
 
+### Validation du déménagement
 
+Une nouvelle fenêtre s'affiche, vous invitant à valider le réengagement de 12 mois, la résiliation de votre accès actuel ainsi que les conditions générales de vente de l'offre. Cochez alors les cases correspondantes et cliquez sur `Valider le déménagement`{.action}. Cette action valide la demande de déménagement.
 
-Une nouvelle fenêtre s'affiche, vous invitant à valider le réengagement de 12 mois, la résiliation de votre accès actuel ainsi que les conditions générales de vente de l'offre. Cochez alors les cases correspondantes et cliquez sur "**Oui**". Cette action valide la demande de déménagement.
+![Validation déménagement](images/move11-edit.png){.thumbnail}
 
-------------------------------------------------------------------------
 
 ## Que se passe t-il après la demande de déménagement ?
-
-Après avoir validé votre demande de déménagement dans le Manager, un ordre de dégroupage est envoyé à France Telecom.
 
 La création de la ligne à la nouvelle adresse se réalise en 7 à 10 jours en moyenne.
 
