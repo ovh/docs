@@ -16,7 +16,7 @@ order: 2
 
 | Élément | Description | Valeur |
 |:-----:|:-----:|:----------:|
-| Nombre max. de PC par ID client | Nombre de vCenter ou de packs par organisation | Aucune limite |
+| Nombre max. de PCC par ID client | Nombre de vCenter ou de packs par organisation | Aucune limite |
 | Nombre de PCC liés | Connexion de vCenters (Enhanced Link Mode) | 0 (non autorisé) |
 | Nombre min. de hosts par PCC (SLA) | Nombre d'hôtes par vCenter pour le maintien du contrat de niveau de service | 2 |
 | Nombre min. de hosts par PCC (sans SLA) | Nombre minimal d'hôtes à utiliser avec vCenter sans contrat de niveau de service | 0 |
