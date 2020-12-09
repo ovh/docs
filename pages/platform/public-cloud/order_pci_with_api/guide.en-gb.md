@@ -1,12 +1,12 @@
 ---
 title: 'Ordering Public Cloud projects using the OVHcloud API'
 excerpt: 'Find out how to order your Public Cloud project with the OVHcloud API'
-slug: public-cloud-service-order-api
+slug: public-cloud-project-order-api
 section: Getting started
 order: 8
 ---
 
-**Last updated 8th December 2020**
+**Last updated 9th December 2020**
 
 ## Objective
 
@@ -39,7 +39,7 @@ Use this call to create the cart:
 
 Make sure to choose your appropriate OVHcloud API subsidiary. Take note of the cart number ("cartId") in the response; it will be required to identify this cart.
 
-Next you will need to add a Public Cloud project. Use this call with your "cartId" to verify the service availability:
+Next you will need to add a Public Cloud project as an item. Use this call with your "cartId" to verify the service availability:
 
 > [!api]
 >
@@ -101,7 +101,9 @@ Use the following endpoint to name your project (`label: "description"`):
 |label|description|
 |value|*Your project name*|
 
-The response will include a "configurationId" which can be used (together with the "cartId" and "itemId") to retrieve the configuration (GET) or delete it, for example:
+To apply a voucher code, use the same call with the label "voucher", etc.
+
+The responses will include a "configurationId" which can be used (together with the "cartId" and "itemId") to retrieve the configuration (GET) or delete it, for example:
 
 > [!api]
 >
