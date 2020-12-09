@@ -58,7 +58,7 @@ Voici un exemple de tâche en attente :
 
 ```json
 {
-  "status: "pending",
+  "status": "pending",
   "result": null,
   "error": null
 }

@@ -139,7 +139,7 @@ region=openstack_region
 And here is an example of a command you could run to run the same job after uploading your local code (`spark-examples.jar`) to your `odp` Object Storage container with the Swift protocol:
 
 ```shell-session
-$ ./ovh-spark-submit --project-id yourProjectId --upload ./spark-examples.jar --class org.apache.spark.examples.SparkPi --driver-cores 1 --driver-memory 4G --executor-cores 1 --executor-memory 4G --num-executors 1 swift://odp/spark-examples.jar 1000
+$ ./ovh-spark-submit --projectid yourProjectId --upload ./spark-examples.jar --class org.apache.spark.examples.SparkPi --driver-cores 1 --driver-memory 4G --executor-cores 1 --executor-memory 4G --num-executors 1 swift://odp/spark-examples.jar 1000
 ```
 
 ## Go further
