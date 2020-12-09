@@ -16,7 +16,7 @@ OVHcloud offre aux clients Public Cloud des images d'applications préinstallée
 
 ## Prérequis
 
-- Une [instance Public Cloud](../creer-instance-espace-client/) dans votre compte OVHcloud.
+- Une [instance Public Cloud](../create_an_instance_in_your_ovh_customer_account/) dans votre compte OVHcloud.
 
 ## En pratique
 
