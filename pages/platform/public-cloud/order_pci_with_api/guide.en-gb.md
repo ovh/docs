@@ -26,7 +26,7 @@ Log in to the [OVHcloud API interface](https://api.ovh.com/console/) according t
 
 ### Step 1: Building your cart
 
-The first step of of an order is to create a 'shopping cart'. Following that you can add a Public Cloud project.
+The first step of an order is to create a 'shopping cart'. Following that you can add a Public Cloud project.
 
 #### Create the cart
 
@@ -49,7 +49,7 @@ Next you will need to add a Public Cloud project as an item. Use this call with 
 In the response you can verify the parameters pertaining to a Public Cloud project:
 
 >
->**planCode**: "project"
+>**planCode**: "project.2018"
 >
 >**productName**: "Public Cloud Project"
 >
@@ -69,7 +69,7 @@ The following information, retrieved in the previous steps, needs to be provided
 |---|---| 
 |cartId|*ID of your cart*|
 |duration|P1M|
-|planCode|project|
+|planCode|project.2018|
 |pricingMode|default|
 |quantity|1|
 
