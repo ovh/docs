@@ -1,6 +1,6 @@
 ---
 title: 'Ordering Public Cloud projects using the OVHcloud API'
-excerpt: 'Find out how to order your Public Cloud service with the OVHcloud API'
+excerpt: 'Find out how to order your Public Cloud project with the OVHcloud API'
 slug: public-cloud-service-order-api
 section: Getting started
 order: 8
@@ -101,7 +101,7 @@ Use the following endpoint to name your project (`label: "description"`):
 |label|description|
 |value|*Your project name*|
 
-The response will include a "configurationId" which can be used (together with the "cartId" and "itemId") to retrieve the configuration or delete it, for example:
+The response will include a "configurationId" which can be used (together with the "cartId" and "itemId") to retrieve the configuration (GET) or delete it, for example:
 
 > [!api]
 >
@@ -118,7 +118,7 @@ You can verify your cart contents using the "cartId":
 > @api {GET} /order/cart/{cartId}/checkout
 >
 
-With the following call you can create a link to your order. It is required to tick the checkbox in order to waive the right of withdrawal.
+With the following call you can create a link to your order. It is required to first tick the relevant checkbox in order to waive the right of withdrawal.
 
 > [!api]
 >
