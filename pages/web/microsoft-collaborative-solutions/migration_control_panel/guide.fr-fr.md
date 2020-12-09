@@ -104,19 +104,19 @@ La migration de votre MXPlan se fera en 3 grandes étapes, **Renommer**,**Créer
 
 ![exchange](images/mxplan-migration-configure-account.gif){.thumbnail}
 
-1\.**Renommer** le compte MXPlan à migrer avec un nom provisoire ( exemple: pour migrer le compte MX plan *john.smith@mydomain.ovh*, renommez celui-ci en *john.smith01@mydomain.ovh*)
+1\. **Renommer** le compte MXPlan à migrer avec un nom provisoire ( exemple: pour migrer le compte MX plan *john.smith@mydomain.ovh*, renommez celui-ci en *john.smith01@mydomain.ovh*)
 
 Dans l'onglet `Comptes e-mail`{.action} de votre plateforme E-mail Pro ou Exchange, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action}
 
 ![exchange](images/mxplan-migration-configure-account01.png){.thumbnail}
 
-2\.**Créez** votre adresse e-mail sur le nouveau compte de votre plateforme E-mail Pro ou Exchange ( en prenant l'exemple précédent, vous allez donc créer *john.smith@mydomain.ovh* sur votre nouvelle plateforme)
+2\. **Créez** votre adresse e-mail sur le nouveau compte de votre plateforme E-mail Pro ou Exchange ( en prenant l'exemple précédent, vous allez donc créer *john.smith@mydomain.ovh* sur votre nouvelle plateforme)
 
 Dans l'onglet `Comptes e-mail`{.action} de votre plateforme E-mail Pro ou Exchange, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action}
 
 ![exchange](images/mxplan-migration-configure-account02.png){.thumbnail}
 
-3\.**Migrez** le compte MXPlan vers le compte de votre nouvelle plateforme à l'aide de notre outil [OMM](https://omm.ovh.net/) (OVH Mail Migrator)
+3\. **Migrez** le compte MXPlan vers le compte de votre nouvelle plateforme à l'aide de notre outil [OMM](https://omm.ovh.net/) (OVH Mail Migrator)
 
 Pour plus d'information sur OMM, consulter notre guide [Migrer des comptes e-mail via OVH Mail Migrator](../exchange-migration-de-comptes-e-mail-ovh-mail-migrator/).
 
