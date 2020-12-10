@@ -22,7 +22,7 @@ There are 2 available roles :
 
 ## Considerations
 
--   Access to **AI Training** can be revoked at anytime by deleting the user or removing its **AI Training Operator** role.
+-   Access to **AI Training** can be revoked anytime by deleting the user or removing its **AI Training Operator** role.
 -   To be able to use the OVHcloud Object Storage, make sure that the user has the **Objectstore Operator** role.
 
 ## Going further

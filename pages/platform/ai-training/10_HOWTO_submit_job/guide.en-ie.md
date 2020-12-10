@@ -21,7 +21,7 @@ This guide covers the initialisation of **AI Training** and the submission of [*
 
 ### Step 1 - Going to the AI Training menu
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Public Cloud`{.action} section then to the `AI Training` section which is located under `AI & Machine Learning`.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Public Cloud`{.action} section then to the `AI Training`{.action} section which is located under `AI & Machine Learning`.
 
 ![image](images/00_training_menu.png){.thumbnail}
 
@@ -33,14 +33,14 @@ Once you have read the general information and validated this services's contrac
 
 #### Dashboard
 
-Once **AI Training** is activated you land on the service **dashboard** with several components.
+Once **AI Training** is activated you land on the **dashboard** service with several components.
 
 ![dashboard](images/02_dashboard.png){.thumbnail}
 
 -   Information: useful information for service usage
 -   Usage: brief summary of number of jobs according to their status
 -   Billing: an overview of your ongoing billing
--   **AI Training** users: list of users that can use this service.
+-   **AI Training** users: list of users that can use this service
 -   Jobs: list of active jobs
 
 > [!primary]
@@ -65,7 +65,7 @@ A job is basically a Docker container that is run within the OVHcloud infrastruc
 
 #### Preset Images
 
-OVHcloud provides a set of images from which you can choose to ease the submission of your first **jobs**. Provided images are essentially JupyterLab environment bundled with some Deep Learning technology such as Tensorflow or MXNet.
+OVHcloud provides a set of images from which you can choose to ease the submission of your first **jobs**. Provided images are essentially a JupyterLab environment bundled with some Deep Learning technology such as Tensorflow or MXNet.
 
 ![image](images/08_submit_image.png){.thumbnail}
 
@@ -81,9 +81,9 @@ Once your image is chosen, click `Next`{.action}.
 
 You can attach [**data**](../data) objects to your job either as input for your training workload or as output for your results (e.g. model weights).
 
-Before attaching a data you need to [create one](../data). A **data** cannot be attached to a running **job**.
+Before attaching a data object you need to [create one](../data). A **data** object cannot be attached to a running **job**.
 
-To attach a **data** object, just select among the list on the left. Next to each data, within the parenthesis, you can check the mount path in the Docker container for the submitted **job**. If you wish to customise this mount path, you will need to use the **`ovhai` CLI**, its installation procedure is available [here](../install-client).
+To attach a **data** object, just select from the list on the left. Next to each data, within the parenthesis, you can check the mount path in the Docker container for the submitted **job**. If you wish to customise this mount path, you will need to use the **`ovhai` CLI**, its installation procedure is available [here](../install-client).
 
 ![image](images/10_submit_data_selected.png){.thumbnail}
 
@@ -91,7 +91,7 @@ Once the data is configured click `Next`{.action}.
 
 ### Step 7 - Overriding the Docker entrypoint (optional)
 
-The Docker image you provided in Step 6 includes an entrypoint for your container. You can override this entrypoint by specifying your own command. Once the entrypoint is setup click `Next`{.action}.
+The Docker image you provided in Step 6 includes an entrypoint for your container. You can override this entrypoint by specifying your own command. Once the entrypoint is set up click `Next`{.action}.
 
 ![image](images/11_submit_entrypoint.png){.thumbnail}
 
@@ -101,7 +101,7 @@ In this step you can select the amount of GPUs you want to be used during your t
 
 The max amount of GPUs you can select for your **job** is region dependent. For more information see the [capabilities](../capabilities).
 
-Once the number of GPUs is set you can see a preview of the minute billing rate for this amount of resources. Click `Next`{.action}.
+Once the number of GPUs is set you can see a preview of the billing rate for this amount of resources. Click `Next`{.action}.
 
 ![image](images/12_submit_resources.png){.thumbnail}
 
@@ -130,10 +130,10 @@ From this list you can access your job details either by clicking on its `ID` or
 ![image](images/15_jobs_details.png){.thumbnail}
 
 -   **Job Information**: basic information on the job you submitted
--   Container: describes the status of your job and provides you with the URL to access any service exposed by your job on the port `8080`. The URL is of the form `https://<JOB-ID>.job.<REGION>.training.ai.cloud.ovh.net/`. If the service is not exposed on the port `8080` it is still accessible by specifying the port in the URL this way: `https://<JOB-ID>-<PORT>.job.<REGION>.training.ai.cloud.ovh.net/`. You can check the list of available ports in the [capabilities](../capabilities).
--   Resources: a summary of the resources consumed by the **job**
--   Actions: available actions
--   Data: list of **data** objects attach to the job
+-   **Container**: describes the status of your job and provides you with the URL to access any service exposed by your job on the port `8080`. The URL is of the form `https://<JOB-ID>.job.<REGION>.training.ai.cloud.ovh.net/`. If the service is not exposed on the port `8080` it is still accessible by specifying the port in the URL this way: `https://<JOB-ID>-<PORT>.job.<REGION>.training.ai.cloud.ovh.net/`. You can check the list of available ports in the [capabilities](../capabilities).
+-   **Resources**: a summary of the resources consumed by the **job**
+-   **Actions**: available actions
+-   **Data**: list of **data** objects attach to the job
 
 ### Step 11 - Cancelling your job
 
