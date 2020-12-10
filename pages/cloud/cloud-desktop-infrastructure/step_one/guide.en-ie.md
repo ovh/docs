@@ -10,7 +10,7 @@ order: 1
 
 ## Objective
 
-In five detailed steps, we will explain how to manage your [Virtual Cloud Desktop Infrastructure](https://www.ovh.ie/cloud/cloud-desktop/infrastructure/){.external}.
+In five detailed steps, we will explain how to manage your [Virtual Cloud Desktop Infrastructure](https://www.ovhcloud.com/en-ie/enterprise/solutions/digital-workspace-collaboration/virtual-desktop-infrastructure/){.external}.
 
 **This first guide will explain how to get started with your VMware Horizon 7.1 platform**.
 
@@ -19,7 +19,7 @@ To find out more about developing your own Cloud Desktop Infrastructure, just wa
 
 ## Requirements
 
-- You need to have received an email containing your [Virtual Cloud Desktop Infrastructure](https://www.ovh.ie/cloud/cloud-desktop/infrastructure/){.external} credentials.
+- You need to have received an email containing your [Virtual Cloud Desktop Infrastructure](https://www.ovhcloud.com/en-ie/enterprise/solutions/digital-workspace-collaboration/virtual-desktop-infrastructure/){.external} credentials.
 
 ## Instructions
 
@@ -29,7 +29,7 @@ The VMware Horizon 7.1 platform has several parts:
 
 - a VMware Horizon 7.1 administrator interface
 - a URL for your first pool of virtual desktops
-- a [Private Cloud](https://www.ovh.ie/private-cloud/){.external} platform for deploying virtual machines and virtual desktops
+- a [Private Cloud](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/){.external} platform for deploying virtual machines and virtual desktops
 
 
 ### Infrastructure
@@ -57,7 +57,7 @@ You will receive the email below within an hour of completing your purchase orde
 > Below, you will find the credentials required for logging in to your service:
 >
 > 
-> * desktop administration access: https://#URL#/admin
+> * desktop administration access: https://<i></i>#URL#/admin
 > 
 > * username: #USERNAME#
 > 
@@ -70,19 +70,19 @@ You will receive the email below within an hour of completing your purchase orde
 > 
 > - via the vSphere client
 > 
->   * Download the client: https://#VPNHOSTNAME#/client/VMware-viclient.exe
+>   * Download the client: https://<i></i>#VPNHOSTNAME#/client/VMware-viclient.exe
 > 
 >   * IP address: #VPNHOSTNAME#
 >
 > 
 > - via the vSphere web client
 > 
->   *  https://#VPNHOSTNAME#/vsphere-client
+>   *  https://<i></i>#VPNHOSTNAME#/vsphere-client
 >
 > N.B.: vSphere uses the following access ports: 80, 443 and 8443. To create your first pool, you will need to use the following information:
 >
 > 
-> * desktop access: https://#POOLURL#
+> * desktop access: https://<i></i>#POOLURL#
 > 
 > * DHCP network: #PORTGROUP#
 >
@@ -100,7 +100,7 @@ You will receive the email below within an hour of completing your purchase orde
 > If you need further support, please refer to our Virtual Cloud Desktop Infrastructure guides via the following link:
 > 
 >  
-> https://www.ovh.ie/cloud/cloud-desktop/infrastructure/
+> https://www.ovhcloud.com/en-ie/enterprise/solutions/digital-workspace-collaboration/virtual-desktop-infrastructure/
 >
 > 
 > You can also share details on your experience, and send any queries to our mailing list:
@@ -115,7 +115,7 @@ You will receive the email below within an hour of completing your purchase orde
 > 
 
 
-Next, find out how to [create pool templates](https://docs.ovh.com/ie/en/cloud-desktop-infrastructure/create-pool/){.external}.
+Next, find out how to [create pool templates](../create-pool/).
 
 
 ## Go further

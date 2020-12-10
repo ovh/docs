@@ -10,7 +10,7 @@ order: 1
 
 ## Objective
 
-In five detailed steps, we will explain how to manage your [Cloud Desktop Infrastructure](https://www.ovhcloud.com/en-gb/enterprise/solutions/digital-workspace-collaboration/virtual-desktop-infrastructure/){.external}.
+In five detailed steps, we will explain how to manage your [Cloud Desktop Infrastructure](https://www.ovhcloud.com/en-sg/enterprise/solutions/digital-workspace-collaboration/virtual-desktop-infrastructure/){.external}.
 
 **This first guide will explain how to get started with your VMware Horizon 7.1 platform**.
 
@@ -19,7 +19,7 @@ To find out more about developing your own Cloud Desktop Infrastructure, just wa
 
 ## Requirements
 
-- You need to have received an email containing your [Cloud Desktop Infrastructure](https://www.ovhcloud.com/en-gb/enterprise/solutions/digital-workspace-collaboration/virtual-desktop-infrastructure/){.external} credentials.
+- You need to have received an email containing your [Cloud Desktop Infrastructure](https://www.ovhcloud.com/en-sg/enterprise/solutions/digital-workspace-collaboration/virtual-desktop-infrastructure/){.external} credentials.
 
 ## Instructions
 
@@ -29,7 +29,7 @@ The VMware Horizon 7.1 platform has several parts:
 
 - a VMware Horizon 7.1 administrator interface
 - a URL for your first pool of virtual desktops
-- a [Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/){.external} platform for deploying virtual machines and virtual desktops
+- a [Private Cloud](https://www.ovhcloud.com/en-sg/enterprise/products/hosted-private-cloud/){.external} platform for deploying virtual machines and virtual desktops
 
 
 ### Infrastructure
@@ -100,7 +100,7 @@ You will receive the email below within an hour of completing your purchase orde
 > If you need further support, please refer to our Cloud Desktop Infrastructure guides via the following link:
 > 
 >  
-> https://www.ovhcloud.com/en-gb/enterprise/solutions/digital-workspace-collaboration/virtual-desktop-infrastructure/
+> https://www.ovhcloud.com/en-sg/enterprise/solutions/digital-workspace-collaboration/virtual-desktop-infrastructure/
 >
 > 
 > You can also share details on your experience, and send any queries to our mailing list:

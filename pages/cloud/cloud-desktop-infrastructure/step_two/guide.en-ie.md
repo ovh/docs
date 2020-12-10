@@ -10,7 +10,7 @@ order: 2
 
 ## Objective
 
-You can now start using your [Virtual Cloud Desktop Infrastructure](https://www.ovh.ie/cloud/cloud-desktop/infrastructure/){.external} solution.
+You can now start using your [Virtual Cloud Desktop Infrastructure](https://www.ovhcloud.com/en-ie/enterprise/solutions/digital-workspace-collaboration/virtual-desktop-infrastructure/){.external} solution.
 
 **This guide will show you how to deploy an automatic pool of linked clone machines.**
 
@@ -81,7 +81,7 @@ To ensure that it uses an unchangeable version of the virtual machine acting as 
 
 ![Snapshot title](images/1202.png){.thumbnail}
 
-Now that you have created the template, find out how to [create a pool](https://docs.ovh.com/ie/en/cloud-desktop-infrastructure/how-to-create-pool/){.external}.
+Now that you have created the template, find out how to [create a pool](../how-to-create-pool/).
 
 ## Go further
 
