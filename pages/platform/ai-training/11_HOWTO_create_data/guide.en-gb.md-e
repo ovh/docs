@@ -36,7 +36,7 @@ Once you set a location you need to select the type of container you want to use
 
 ![image](images/02_object_create_type.png){.thumbnail}
 
-Finally choose a name for your container and then click `Create the container`{.action}.
+Finally, choose a name for your container and then click `Create the container`{.action}.
 
 ## Going Further
 

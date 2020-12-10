@@ -13,7 +13,7 @@ This guide covers the initialisation of **AI Training** and the submission of [*
 
 ## Requirements
 
--   a **public cloud** project
+-   a **Public cloud** project
 -   optionally **data** objects to attach to the **job** at step 8, see our [create **data** object](../data) guide.
 -   access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
@@ -133,7 +133,7 @@ From this list you can access your job details either by clicking on its `ID` or
 -   **Container**: describes the status of your job and provides you with the URL to access any service exposed by your job on the port `8080`. The URL is of the form `https://<JOB-ID>.job.<REGION>.training.ai.cloud.ovh.net/`. If the service is not exposed on the port `8080` it is still accessible by specifying the port in the URL this way: `https://<JOB-ID>-<PORT>.job.<REGION>.training.ai.cloud.ovh.net/`. You can check the list of available ports in the [capabilities](../capabilities).
 -   **Resources**: a summary of the resources consumed by the **job**
 -   **Actions**: available actions
--   **Data**: list of **data** objects attach to the job
+-   **Data**: list of **data** objects attached to the job
 
 ### Step 11 - Cancelling your job
 

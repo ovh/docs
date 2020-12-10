@@ -21,7 +21,7 @@ This guide covers the process of attaching a private registry to the **AI Traini
 
 ### Step 1: Going to the AI Training menu
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Public Cloud`{.action} section then to the `AI Training` section which is located under `AI & Machine Learning`.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Public Cloud`{.action} section, then to the `AI Training` section which is located under `AI & Machine Learning`.
 
 ![image](images/00_training_menu.png){.thumbnail}
 
@@ -39,7 +39,7 @@ Once the form is filled out click `Attach`{.action}.
 
 Once your registry is attached you can use any images pushed on the registry for your jobs.
 
-From the manager while [submitting a job](../submit-job), you can choose a custom Docker image in Step 7.
+From the OVHcloud Control Panel while [submitting a job](../submit-job), you can choose a custom Docker image in Step 7.
 
 ![custom docker image](images/02_submit_image_custom.png){.thumbnail}
 

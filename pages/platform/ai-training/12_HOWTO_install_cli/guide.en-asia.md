@@ -44,14 +44,14 @@ Once the **ovhai** CLI is installed, you need to authenticate with the **AI Trai
 ovhai login
 ```
 
-You have the choice between two methods to login:
+You have the choice between two methods to log in:
 
 -   terminal: you can authenticate yourself from within the terminal.
 -   browser: you will reach an authentication page similar to this:
 
 ![image](images/00_oauth2_login.png){.thumbnail}
 
-Use the credentials of your **AI Training** user to login.
+Use the credentials of your **AI Training** user to log in.
 
 ### Step 3: Using the command line CLI
 
