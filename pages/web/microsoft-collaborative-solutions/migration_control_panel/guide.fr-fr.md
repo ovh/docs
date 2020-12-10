@@ -50,7 +50,7 @@ Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/
 
 |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 |---|---|
-|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Votre offre se situe dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Vous retrouvez une `Référence serveur` dans le cadre « Résumé », commençant par "mxplan-"|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Votre offre se situe dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Vous retrouvez une `Référence serveur` dans le cadre « Résumé » commençant par "mxplan-"|
 |Poursuivre vers « [Version historique de l'offre MX Plan](#VersionHistoriqueMxplan) »|Poursuivre vers « [Nouvelle version de l'offre MX Plan](#NouvelleVersionMxplan) »|
 
 #### 3.1 Migrer une offre MXPlan historique <a name="VersionHistoriqueMxplan"></a>
