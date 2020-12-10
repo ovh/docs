@@ -6,11 +6,11 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 15th June 2020**
+**Last updated 8th December 2020**
 
 ## Objective
 
-A virtual private server (VPS) is a virtualised dedicated server. Unlike Web Hosting plans (also described as “shared hosting”), which are managed on the technical level by OVHcloud, you are fully responsible for administrating your VPS.
+A virtual private server (VPS) is a virtualised dedicated server. Unlike Web Hosting plans (also refered to as "shared hosting"), which are managed on the technical level by OVHcloud, you are fully responsible for administrating your VPS.
 
 **This guide provides some basic information for getting started with a VPS.**
 
@@ -18,7 +18,8 @@ A virtual private server (VPS) is a virtualised dedicated server. Unlike Web Hos
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+If you encounter any difficulties performing these actions, please contact a specialised service provider and/or discuss the issue with our community on https://community.ovh.com/en/. OVHcloud cannot provide you with technical support in this regard.
+>
 
 
 ## Requirements
@@ -73,6 +74,10 @@ New password:
 Retype new password:
 passwd: password updated successfully
 ```
+
+#### Enabling root logins
+
+Connecting with the "root" user is disabled by default as a security measure. If you need to permit these connections, refer to the instructions in [this guide](../root-password/#enabling-root-login_1).
 
 #### Installing or reinstalling your VPS
 
