@@ -102,10 +102,10 @@ iface eth0 inet static
     address FAILOVER_IP
     netmask 255.255.255.255
     broadcast FAILOVER_IP
-    post-up route add GATEWAY_IP dev eth0
-    post-up route add default gw GATEWAY_IP
-    pre-down route del GATEWAY_IP dev eth0
-    pre-down route del default gw GATEWAY_IP
+    post-up ip route add GATEWAY_IP dev eth0
+    post-up ip route add default via GATEWAY_IP
+    pre-down ip route del GATEWAY_IP dev eth0
+    pre-down ip route del default via GATEWAY_IP
 ```
 Also replace `eth0` if your system uses Predictible Network Interface Names. You can find the Network interface names with the following command:
 ```sh
