@@ -62,7 +62,7 @@ Here are the most frequently asked questions about AI Training.
 > \> All steps for starting and working on notebooks are described [here](../start-use-notebooks)
 > \>
 > How to add python library in a notebook ?
-> \> You can use `pip` command inside console of notebooks to install libraries as long as the installation process doesn't require root access. If a specific library require root access you will have instead to build your own container image with all your library and use it instead of provided ones.
+> \> You can use `pip` command inside console of notebooks to install libraries as long as the installation process doesn't require root access. If a specific library require root access you will have instead to build your own job image with all your libraries and use it instead of provided ones.
 > \>
 > Add how to build my first Datascience container ?
 > \> Essential information about building custom Docker container can be found [here](../build-use-custom-image). Advanced information can be found [here](https://docs.docker.com/engine/reference/builder/)

@@ -9,7 +9,7 @@ order: 1
 
 ## Objective
 
-This guide covers the initialisation of **AI Training** and the submission of [**jobs**](../jobs) through the Control Panel.
+This guide covers the initialisation of **AI Training** and the submission of [**jobs**](../jobs) through the OVHcloud Control Panel.
 
 ## Requirements
 
