@@ -1,115 +1,199 @@
 ---
 title: Changing your root password on a VPS
 slug: root-password
-excerpt: Learn how to change the root password of a VPS
+excerpt: Find out how to change the root or admin password of a VPS
 section: Diagnostics and rescue mode
 ---
 
-**Last updated 2020/07/15**
+**Last updated 10th November 2020**
 
 ## Objective
 
-When you install or reinstall a distribution or operating system, you are provided with a root access password. We strongly recommend that you change it, as detailed in our guide on [securing a VPS](https://docs.ovh.com/us/en/vps/tips-for-securing-a-vps/). You may also find that you have lost this password, and need to change it. This guide will take you through both scenarios.
-Learn how to change the root password of a VPS.
+It may become necessary to change the root password on your Linux operating system. There are two possible scenarios:
+
+- You are still able to log in via SSH
+- You are unable to log in via SSH because you have lost your password
+
+**This guide will explain how to proceed with changing your admin password depending on the initial situation.**
 
 ## Requirements
 
-- You must be connected via SSH to your VPS (root access).
-- [Reboot your VPS in rescue mode](https://docs.ovh.com/us/en/vps/rescue/).
+- an OVHcloud [VPS service](https://www.ovhcloud.com/en/vps/) already set up
+- login credentials received via email after the installation (if still valid)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) (for using rescue mode)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+> [!warning]
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
 
 ## Instructions
 
-### Change the password with root user account access
+### Changing the password if you still have access (sudo user or root)
 
-If you still have your current password, the process is simpler. Log in to your server, then type the following command:
+> [!primary]
+>
+> For more information about connecting to your VPS, please consult the [first steps guide](../getting-started-vps).
+>
+
+Log in to your VPS via SSH. Switch to the root user, if necessary:
 
 ```sh
-passwd
+~$ sudo su -
+~#
 ```
 
-You must then enter your new password for the first time, and confirm it. You will then receive the following confirmation:
+Change the password of the current user:
 
 ```sh
-Enter new UNIX password:
-Retype new UNIX password:
+~# passwd
+New password:
+Retype new password:
 passwd: password updated successfully
 ```
 
 > [!primary]
 >
 > On a Linux distribution, the password you enter **will not appear**.
-> 
+>
 
-### Changing a password after you have lost it
+If you need to permit logging in as root, follow the steps in [this guide section](./#enabling-root-login_1).
 
-#### Step 1: Identify the mount point
+### Changing the password if you have lost it
 
-The mount is created automatically, so you just need to identify where your partition is mounted. To do this, you can use two commands:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-##### df -h
+#### Step 1: Restart the VPS into rescue mode
+
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and reboot the VPS in rescue mode. If you need further instructions about using rescue mode with a VPS, you may consult the [rescue mode guide](../rescue/).
+
+#### Step 2: Identify the mount point
+
+The mount is created automatically. Use the following commands to identify where your partition is mounted:
+
+##### **df -h**
 
 ```sh
-root@rescue-pro:~# df -h
-Size Used Avail Use% Mounted on
-/dev/vda1 4.7G 1.3G 3.2G 29% /
-udev 10M 0 10M 0% /dev
-tmpfs 774M 8.4M 766M 2% /run
-tmpfs 1.9G 0 1.9G 0% /dev/shm
-tmpfs 5.0M 0 5.0M 0% /run/lock
-tmpfs 1.9G 0 1.9G 0% /sys/fs/cgroup
-/dev/vdb1 20G 934M 18G 5% /mnt/vdb1
+df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            5.8G     0  5.8G   0% /dev
+tmpfs           1.2G   17M  1.2G   2% /run
+/dev/sda1       2.4G  1.5G  788M  66% /
+tmpfs           5.8G     0  5.8G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
+/dev/sdb1        49G  1.2G   48G   3% /mnt/sdb1
+/dev/sdb15      105M  3.6M  101M   4% /mnt/sdb15
 ```
 
-##### lsblk
+##### **lsblk**
 
 ```sh
-root@rescue-pro:~# lsblk
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-vda 254:0 0 4.9G 0 disk
-└─vda1 254:1 0 4.9G 0 part /
-vdb 254:16 0 20G 0 disk
-└─vdb1 254:17 0 20G 0 part /mnt/vdb1
+lsblk
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda       8:0    0  2.5G  0 disk
+└─sda1    8:1    0  2.5G  0 part /
+sdb       8:16   0   50G  0 disk
+├─sdb1    8:17   0 49.9G  0 part /mnt/sdb1
+├─sdb14   8:30   0    4M  0 part
+└─sdb15   8:31   0  106M  0 part /mnt/sdb15
 ```
 
-The image above shows that your system partition is mounted on **/mnt/vdb1**.
+The example output above shows that the system partition is mounted on **/mnt/sdb1**.
 
+#### Step 3: CHROOT permissions
 
-#### Step 2: CHROOT permissions
-
-You now need to edit the root directory, for the changes to be applied to your system. You can do this by using the `chroot command. Please enter the following command:
+You now need to edit the root directory to apply the changes to your system. You can do this by using the `chroot` command:
 
 ```sh
-root@rescue-pro:~# chroot /mnt/vdb1/
-root@rescue-pro:/#
+chroot /mnt/sdb1/
 ```
 
-You can check by typing the `ls -l` command, which will list the content stored in the root directory of your system:
+You can check by typing the `ls -l` command, which will list the content stored in the current directory of your system:
 
 ```sh
-root@rescue-pro:/# ls -l
+ls -l
 ```
 
-#### Step 3: change the root password
+#### Step 4: Change the (root) password
 
-Now, you just need to change the root password with the `passwd` command:
+In the last step, change your password with the `passwd` command.
 
 ```sh
-passwd
-```
-```sh
-Enter new UNIX password:
-Retype new UNIX password:
+~# passwd
+New password:
+Retype new password:
 passwd: password updated successfully
 ```
 
-Finally, reboot your VPS on its drive via your OVHcloud Control Panel.
+If your VPS is of the current ranges (naming scheme: *vps-XXXXXXX.vps.ovh.net*), you have initially received login credentials for a user with elevated permissions instead of the default "root" account. Additionally, the SSH service is not accepting login requests as root.
+
+It is therefore necessary to enter the username you actually use to log in after `passwd`:
+
+```sh
+~# passwd <username>
+New password:
+Retype new password:
+passwd: password updated successfully
+```
+
+This will ensure that you can log in again with this username after rebooting, in case root login is disabled.
+
+Finally, reboot your VPS on its drive in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager).
+
+
+### Enabling root login
+
+If your VPS is of the current ranges (naming scheme: *vps-XXXXXXX.vps.ovh.net*), you have received login credentials for a user with elevated permissions instead of the default "root" account. Additionally, the SSH service is not accepting login requests as root.
+
+> [!warning]
+>
+> Enabling root logins is usually regarded as a security vulnerability and is therefore not recommended.
+>
+> We recommend taking measures to secure your VPS first. You can refer to our guide on [Securing a VPS](../tips-for-securing-a-vps/).
+>
+
+#### Step 1: Edit the sshd_config file
+
+Use a text editor such as vim or nano to edit this configuration file:
+
+```sh
+nano /etc/ssh/sshd_config
+```
+
+Add the following line.
+
+```sh
+PermitRootLogin yes
+```
+
+Look for this line and make sure it is commented out:
+
+```sh
+#PermitRootLogin prohibit-password
+```
+
+Save the file and exit the editor.
+
+#### Step 2: Restart the SSH service
+
+```sh
+systemctl restart sshd
+```
+
+This should be sufficient to apply the changes. Alternatively, reboot the VPS (```~$ reboot```).
+
+### Troubleshooting
+
+If you encounter boot issues after you have changed your password and initiated the reboot:
+
+- Check the KVM for important information as to why the VPS is unable to start. Consult the [KVM guide](../use-kvm-for-vps/) for help using this feature in the OVHcloud Control Panel.
+- If the KVM is showing the VPS booting or unable to find the disk, ensure you have [boot logs enabled](../use-kvm-for-vps/). Relay the pertinent logs to our support teams by creating a support request in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) for further investigations.
 
 ## Go further
 
-[Introduction to SSH](https://docs.ovh.com/us/en/dedicated/ssh-introduction/){.external}.
+[Introduction to SSH](../../dedicated/ssh-introduction/)
 
-[Activating rescue mode on VPS](https://docs.ovh.com/us/en/vps/rescue/){.external}.
+[Securing a VPS](../tips-for-securing-a-vps/)
 
 Join our user community on <https://community.ovh.com/en/>.

@@ -52,6 +52,7 @@ It is not possible to interact with Apache Spark cluster via command line.
 - PostgreSQL (5432)
 - Microsoft SQL Server (1433)
 - MongoDB (27017, 27018, 27019)
+- ElasticSearch (9200)
 
 ### OVHcloud vRack
 
