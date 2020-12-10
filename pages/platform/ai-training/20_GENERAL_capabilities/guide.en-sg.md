@@ -14,6 +14,7 @@ order: 0
 -   A minimum of 1 GPU and a maximum of 4 GPUs per job
 -   No customisable CPU and memory resources
 -   No duration limitation on job execution
+-   No limitation on number of parallel execution
 
 ### Available ports to public network
 
@@ -25,10 +26,18 @@ order: 0
 
 -   AI Training cannot use or access OVHcloud vRack.
 
-### Available regions
+### Available hardware for jobs
+
+-   Nvidia V100S [pricing available here](https://www.ovhcloud.com/en/public-cloud/prices/#ai-machine-learning)
+
+### Available regions for jobs
 
 -   GRA (Gravelines in France)
 -   BHS (Beauharnois in Canada)
+
+### Available storage for data volumes
+
+-   Public Cloud Object Storage (Any Region)
 
 ## Feedback
 
