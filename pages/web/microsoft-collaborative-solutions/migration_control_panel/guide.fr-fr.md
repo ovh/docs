@@ -1,7 +1,7 @@
 ---
 title: 'Migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange'
 slug: migration-adresse-e-mail-mutualisee-vers-exchange
-excerpt: 'Apprenez comment migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange'
+excerpt: 'Découvrez comment migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange'
 section: 'Migration d’un compte Exchange'
 order: 1
 ---
@@ -12,7 +12,7 @@ order: 1
 
 OVHcloud propose plusieurs solutions e-mail : MX Plan (vendu seul ou compris dans une offre d'hébergement web), E-mail Pro et Exchange. Celles-ci bénéficient de fonctionnalités propres et peuvent s'adapter à plusieurs usages. Vos besoins évoluent ? OVHcloud met à votre disposition un outil de migration vous permettant de passer d'une solution à une autre.
 
-**Apprenez comment migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange.**
+**Découvrez comment migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange.**
 
 ## Prérequis
 
@@ -157,7 +157,7 @@ Si vous avez configuré l'un des comptes migrés sur un client de messagerie (co
 
 ### Migrer Manuellement
 
-Vous pouvez également migrer manuellement vos adresses e-mail vers votre nouvelle offre e-mail OVHcloud en utilisant uniquement votre logiciel de messagerie, appuyez-vous de notre guide [Migrer manuellement votre adresse e-mail](../../emails/migrer-ses-adresses-email-manuellement/). Nous vous préconisons toutefois de n'utiliser cette méthode que lorsque les méthodes précédentes ne sont pas possibles.
+Vous pouvez également migrer manuellement vos adresses e-mail vers votre nouvelle offre e-mail OVHcloud en utilisant uniquement votre logiciel de messagerie. Appuyez-vous de notre guide [Migrer manuellement votre adresse e-mail](../../emails/migrer-ses-adresses-email-manuellement/). Nous vous préconisons toutefois de n'utiliser cette méthode que lorsque les méthodes principales ne sont pas possibles.
 
 
 ## Aller plus loin
