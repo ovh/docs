@@ -3,7 +3,6 @@ title: Premiers pas avec les applications préinstallées
 slug: applications-preinstallees
 excerpt: Découvrez comment déployer des applications préinstallées sur vos instances Public Cloud
 section: Premiers pas
-order: 8
 ---
 
 **Dernière mise à jour le 24 août 2020**

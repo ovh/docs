@@ -134,7 +134,7 @@ Fill in your OVHcloud customer ID, password, and application name. The name will
 You can also add a description of the application and a validity period. 
 
 The `Rights` field allows you to restrict the use of the application to certain APIs. 
-<br> In order to allow all OVHcloud APIs for an HTTP method, fill in a `*` star in the field, as in the following example where the GET method is allowed for all APIs:
+<br> In order to allow all OVHcloud APIs for an HTTP method, put an asterisk (`*`) into the field, as in the following example where the GET method is allowed for all APIs:
 
 ![API keys](images/api-keys.png){.thumbnail}
 
