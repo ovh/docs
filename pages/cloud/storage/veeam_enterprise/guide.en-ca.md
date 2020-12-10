@@ -19,6 +19,11 @@ Veeam Backup & Replication is a form of data protection software. It offers its 
 * a Veeam Enterprise solution
 * a Windows 2012 or 2016 server
 
+> [!primary]
+>
+> Our Veeam offers are currently not compatible with the latest version (10) offered by Veeam. OVHcloud will continue to offer version 9.5 until further notice. Please take this into consideration when configuring Veeam for your services.
+>
+
 ## Instructions
 
 ### Set up Veeam Backup & Replication.

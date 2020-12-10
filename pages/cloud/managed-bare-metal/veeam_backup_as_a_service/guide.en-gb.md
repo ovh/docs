@@ -26,6 +26,10 @@ Backups are performed using a virtual machine (VM) within your [Managed Bare Met
 - [Distributed Resource Scheduler (DRS)](../vmware-drs-distributed-ressource-scheduler) enabled
 - Windows SPLA Licensing enabled
 
+> [!primary]
+>
+> Our Veeam offers are currently not compatible with the latest version (10) offered by Veeam. OVHcloud will continue to offer version 9.5 until further notice. Please take this into consideration when configuring Veeam for your services.
+>
 
 ## Instructions
 

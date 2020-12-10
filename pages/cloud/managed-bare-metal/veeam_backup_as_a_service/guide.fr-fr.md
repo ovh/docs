@@ -1,9 +1,9 @@
 ---
-title: Activer et utiliser Veeam Backup Managed
+title: Activer et utiliser Veeam Managed Backup
 slug: veeam-backup-as-a-service
 routes:
     canonical: 'https://docs.ovh.com/fr/private-cloud/veeam-backup-as-a-service/'
-excerpt: Découvrez comment activer et utiliser l'option Veeam Backup Managed
+excerpt: Découvrez comment activer et utiliser l'option Veeam Managed Backup
 legacy_guide_number: '2883711'
 section: Services et options OVHcloud
 order: 06
@@ -13,11 +13,11 @@ order: 06
 
 ## Objectif
 
-Veeam est un éditeur de logiciel spécialisé dans les solutions de sauvegarde et de plan de reprise d'activité (PRA) dans des environnements virtualisés. L'offre Veeam Backup Managed s'appuie sur la brique logicielle Veeam Availability Suite pour vous fournir une solution de backup à la demande.
+Veeam est un éditeur de logiciel spécialisé dans les solutions de sauvegarde et de plan de reprise d'activité (PRA) dans des environnements virtualisés. L'offre Veeam Managed Backup s'appuie sur la brique logicielle Veeam Availability Suite pour vous fournir une solution de backup à la demande.
 
 Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située à l’intérieur même de votre infrastructure [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external}. Les données sauvegardées sont, quant à elles, externalisées vers un espace de stockage indépendant, chez OVHcloud. Les sauvegardes s'effectuent la nuit, avec une durée de rétention en fonction du niveau d'offre choisi.
 
-**Ce guide vous explique comment déployer et utiliser l'option Veeam Backup Managed en quelques minutes.**
+**Ce guide vous explique comment déployer et utiliser l'option Veeam Managed Backup en quelques minutes.**
 
 ## Prérequis
 
@@ -28,6 +28,10 @@ Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située 
 * Avoir activé le [Distributed Ressource Scheduler (DRS)](../vmware-drs-distributed-ressource-scheduler-new){.external} sur le ou les clusters.
 * Mettre en place la gestion des licences Windows sur le Managed Bare Metal.
 
+> [!primary]
+>
+> Nos offres Veeam ne sont actuellement pas compatibles avec la dernière version (10) proposée par Veeam. OVHcloud continuera de proposer la version 9.5 jusqu'à nouvel ordre. Veuillez prendre en compte ce point lors de la configuration de Veeam pour vos services.
+>
 
 ## En pratique
 
