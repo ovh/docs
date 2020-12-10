@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to use network bridging to configure inte
 section: 'Network Management'
 ---
 
-**Last updated 4th March 2019**
+**Last updated 10th December 2020**
 
 ## Objective
 
@@ -62,9 +62,11 @@ For all operating systems and distributions, you **MUST** configure you virtual 
 
 #### Debian and Debian-based operating systems (Ubuntu, CrunchBang, SteamOS, etc.)
 
-Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/network/interfaces`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
+Open up an SSH connection to your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/network/interfaces`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values).
 
-```bash
+- For older distributions:
+
+```
 auto lo eth0
 iface lo inet loopback
 iface eth0 inet static
@@ -75,6 +77,21 @@ iface eth0 inet static
     post-up route add default gw GATEWAY_IP
     pre-down route del GATEWAY_IP dev eth0
     pre-down route del default gw GATEWAY_IP
+```
+
+- For the latest distributions:
+
+```
+auto lo eth0
+iface lo inet loopback
+iface eth0 inet static
+    address FAILOVER_IP
+    netmask 255.255.255.255
+    broadcast FAILOVER_IP
+    post-up ip route add GATEWAY_IP dev eth0
+    post-up ip route add default via GATEWAY_IP
+    pre-down ip route del GATEWAY_IP dev eth0
+    pre-down ip route del default via GATEWAY_IP
 ```
 
 Save and close the file, then reboot the virtual machine.
