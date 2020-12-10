@@ -1,8 +1,9 @@
 ---
 title: Añadir un bloque de IP
 slug: anadir-bloque-ip
-excerpt: Contratar un bloque de IP en Hosted Private Cloud
-legacy_guide_number: '7766457'
+routes:
+    canonical: 'https://docs.ovh.com/us/es/private-cloud/anadir-bloque-ip/'
+excerpt: Contratar un bloque de IP en Managed Bare Metal
 section: Funcionalidades de OVHcloud
 order: 01
 ---
@@ -11,20 +12,20 @@ order: 01
 
 ## Objetivo
 
-Los bloques de IP permiten que sus servicios estén accesibles online. 
+Los bloques de IP permiten que sus servicios estén accesibles online.
 
-**Esta guía explica cómo contratar, añadir y migrar un bloque de IP asociado a su Hosted Private Cloud.**
+**Esta guía explica cómo contratar, añadir y migrar un bloque de IP asociado a su Managed Bare Metal.**
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Disponer de una [infraestructura Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external} en su cuenta de OVHcloud.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Disponer de una [infraestructura Managed Bare Metal](https://www.ovhcloud.com/es/managed-bare-metal/){.external} en su cuenta de OVHcloud.
 
 ## Procedimiento
 
 ### Contratar un bloque de IP
 
-Para contratar un bloque de IP adicional en su **Hosted Private Cloud**, acceda al área de cliente de OVHcloud. En el menú `Hosted Private Cloud`, acceda a la sección `IP` en la columna izquierda y haga clic en `Contratar IP adicionales`{.action}. Seleccione su solución **Hosted Private Cloud** en el menú desplegable antes de pasar a la siguiente etapa.
+Para contratar un bloque de IP adicional en su **Managed Bare Metal**, acceda al área de cliente de OVHcloud. En el menú `Bare Metal Cloud`, acceda a la sección `IP` en la columna izquierda y haga clic en `Contratar IP adicionales`{.action}. Seleccione su solución **Managed Bare Metal** en el menú desplegable antes de pasar a la siguiente etapa.
 
 
 Deberá rellenar diferentes campos para crear su bloque de IP.
@@ -46,7 +47,7 @@ Deberá rellenar diferentes campos para crear su bloque de IP.
 
 > [!primary]
 >
-> Para más información sobre las IP reservadas en su bloque y su utilización, consulte la siguiente guía: [Utilizar el plugin OVHcloud Network](../plugin-ovh-network/).
+> Para más información sobre las IP reservadas en su bloque y su utilización, consulte la siguiente guía: [Utilizar el plugin OVHcloud Network](../plugin-ovhcloud-network/).
 >
 
 - El país en el que el bloque de IP está alojado resulta importante en algunos casos para el posicionamiento de sus servicios (por ejemplo, un sitio web español tendrá un mejor posicionamiento en España si la IP es española).
@@ -64,9 +65,7 @@ Deberá rellenar diferentes campos para crear su bloque de IP.
 
 Tras haber confirmado este último paso, obtendrá la orden de pedido de su bloque de IP. Si la orden de pedido es correcta, solo tendrá que realizar el pago con cualquiera de los métodos de pago disponibles en la parte inferior de la página.
 
-### Migrar un bloque de IP entre dos Hosted Private Cloud
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### Migrar un bloque de IP entre dos Managed Bare Metal
 
 Para migrar un bloque de IP, deberá mover manualmente los bloques a través de la APIv6 de OVHcloud.
 
@@ -81,7 +80,7 @@ Rellene los campos utilizando los siguientes parámetros:
 
 - ip: bloque IP con /mask
 - nexthop «newPrimaryIp» (preste atención a las mayúsculas)
-- to: Hosted Private Cloud de destino con forma «pcc-XXX-XXX-XXX-XXX»
+- to: Managed Bare Metal de destino con forma «pcc-XXX-XXX-XXX-XXX»
 
 ![campo nexthop](images/move-api.png){.thumbnail}
 
@@ -102,7 +101,7 @@ A continuación utilice la siguiente llamada para mover la IP en el parking de I
 > Esta llamada interrumpe la red en las MV que utilizan las IP en cuestión.
 >
 
-Podrá seguir la migración del bloque de IP desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) en el menú `Hosted Private Cloud`{.action} > `Private Cloud`{.action}. Haga clic en su servicio Hosted Private Cloud y, a continuación, en la pestaña `Operaciones`{.action}.
+Podrá seguir la migración del bloque de IP desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) en el menú `Bare Metal Cloud`{.action} > `Managed Bare Metal`{.action}. Haga clic en su servicio y, a continuación, en la pestaña `Operaciones`{.action}.
 
 La referencia de la operación es «removeIpRipeBlock».
 

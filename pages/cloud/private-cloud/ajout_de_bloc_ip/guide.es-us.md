@@ -2,7 +2,6 @@
 title: Añadir un bloque de IP
 slug: anadir-bloque-ip
 excerpt: Contratar un bloque de IP en Hosted Private Cloud
-legacy_guide_number: '7766457'
 section: Funcionalidades de OVHcloud
 order: 01
 ---
@@ -18,7 +17,7 @@ Los bloques de IP permiten que sus servicios estén accesibles online.
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Disponer de una [infraestructura Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external} en su cuenta de OVHcloud.
+- Disponer de una [infraestructura Hosted Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/){.external} en su cuenta de OVHcloud.
 
 ## Procedimiento
 
