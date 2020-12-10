@@ -2,8 +2,8 @@
 title: Install the CLI
 slug: install-client
 excerpt: Learn how to install the CLI to interact with AI Training
-section: How to
-order: 2
+section: How to (with CLI)
+order: 1
 ---
 *Last updated 29th October, 2020.*
 
@@ -13,7 +13,7 @@ This guide covers the installation of the **ovhai** CLI. The CLI is the recommen
 
 ## Requirements
 
--   a [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
+-   a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
 -   AI Training activated for your account, see [how to submit a job Step 2](../submit-job)
 -   a user for AI Training [how to submit a job Step 3](../submit-job)
 
@@ -44,14 +44,14 @@ Once the **ovhai** CLI is installed, you need to authenticate with the **AI Trai
 ovhai login
 ```
 
-You have the choice between two methods to log in:
+You have the choice between two methods to login:
 
 -   terminal: you can authenticate yourself from within the terminal.
 -   browser: you will reach an authentication page similar to this:
 
 ![image](images/00_oauth2_login.png){.thumbnail}
 
-Use the credentials of your **AI Training** user to log in.
+Use the credentials of your **AI Training** user to login.
 
 ### Step 3: Using the command line CLI
 

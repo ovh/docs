@@ -2,8 +2,8 @@
 title: Create Data via UI
 slug: create-data
 excerpt: Learn how to create Data object on AI Training via UI
-section: How to
-order: 1
+section: How to (with UI)
+order: 3
 ---
 *Last updated 29th October, 2020.*
 
@@ -13,16 +13,16 @@ This guide covers the creation of [**data**](../data) objects in **AI Training**
 
 ## Requirements
 
--   a [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
+-   a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
 -   **AI Training activated** for your account, see [how to submit a job Step 2](../submit-job)
 -   a user for AI Training [how to submit a job Step 3](../submit-job)
--   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+-   access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
 ### Creating an Object Storage container
 
-You can access the Object Storage page in the `Public Cloud` section of the [OVHcloud Control Panel](hhttps://ca.ovh.com/auth/?action=gotomanager) under `Storage` \> `Object Storage`.
+You can access the Object Storage page in the `Public Cloud` section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) under `Storage` > `Object Storage`.
 
 ![image](images/00_storage_menu.png){.thumbnail}
 
@@ -36,7 +36,7 @@ Once you set a location you need to select the type of container you want to use
 
 ![image](images/02_object_create_type.png){.thumbnail}
 
-Finally, choose a name for your container and then click `Create the container`{.action}.
+Finally choose a name for your container and then click `Create the container`{.action}.
 
 ## Going Further
 
