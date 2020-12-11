@@ -53,13 +53,13 @@ Suite à cette validation, un cadre apparaitra vous indiquant l'adresse associé
 #### Cas n°2 : Vous ne disposez d'aucun numéro à la nouvelle adresse
 
 Cochez la case "Testez avec le nouvelle adresse" puis renseignez les champs requis (code postal, ville, numéro et rue)
-Cliquez ensuite sur le bouton `Valider`{.action}
+<br>Cliquez ensuite sur le bouton `Valider`{.action}
 
 ![demenagement par adresse](images/move04-edit.png){.thumbnail}
 
 Dans le cas où une ou plusieurs lignes inactives existent à votre future adresse, un tableau s'affichera avec les numéros de lignes disponible à cette adresse.
-<br>Â l'aide des initiales des personnes rattachées à ces lignes, sélectionnez celui qui correspond à votre futur logement en cliquant sur le bouton `C'est ma ligne`{.action}.
-<br>Si aucunes des lignes proposées ne correspond, cliquez sur le bouton `Je n'ai pas trouvé ma ligne`{.action}
+<br>À l'aide des initiales des personnes rattachées à ces lignes, sélectionnez celui qui correspond à votre futur logement en cliquant sur le bouton `C'est ma ligne`{.action}.
+<br>Si aucuns des choix proposées ne correspond, cliquez sur le bouton `Je n'ai pas trouvé ma ligne`{.action}
 
 ![choix de ligne](images/move05-edit.png){.thumbnail}
 
