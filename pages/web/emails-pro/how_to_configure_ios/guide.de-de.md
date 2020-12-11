@@ -46,7 +46,7 @@ Die vorliegende Anleitung beschreibt von hier an nur die Konfiguration über Ihr
 
 > [!primary]
 >
-> In dieser Anleitung verwenden wir als Serverbezeichnung: pro**X**.mail.ovh.net. Das „X“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
+> In dieser Anleitung verwenden wir als Serverbezeichnung: pro**?**.mail.ovh.net. Das „?“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
 > 
 > Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager), wenn Sie im Bereich `Web Cloud`{.action} im Menü links unter `E-Mail Pro`{.action}
 > den Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
@@ -74,10 +74,10 @@ Tippen Sie nun auf `Weiter`{.action} und geben Sie dann die folgenden Informatio
 |Information|Beschreibung|
 |---|---|
 |IMAP oder POP|Lassen Sie die Standardauswahl **IMAP** eingestellt.|
-|Hostname (eintreffende Mails)|Tragen Sie „pro**X**.mail.ovh.net“ ein.|
+|Hostname (eintreffende Mails)|Tragen Sie „pro**?**.mail.ovh.net“ ein.|
 |Benutzername (eintreffende Mails)|Geben Sie die vollständige E-Mail-Adresse ein.|
 |Passwort (eintreffende Mails)|Geben Sie das Passwort der E-Mail-Adresse ein.|  
-|Hostname (ausgehende Mails)|Tragen Sie „pro**X**.mail.ovh.net“ ein.|
+|Hostname (ausgehende Mails)|Tragen Sie „pro**?**.mail.ovh.net“ ein.|
 |Benutzername (ausgehende Mails)|Geben Sie die vollständige E-Mail-Adresse ein.|
 |Passwort (ausgehende Mails)|Geben Sie das Passwort der E-Mail-Adresse ein.|
 
@@ -93,8 +93,8 @@ Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwen
 
 |Servertyp|Servername|SSL|Port|
 |---|---|---|---|
-|Für eintreffende E-Mails|pro**X**.mail.ovh.net|Ja|993|
-|Für ausgehende E-Mails|pro**X**.mail.ovh.net|Ja|587|
+|Für eintreffende E-Mails|pro**?**.mail.ovh.net|Ja|993|
+|Für ausgehende E-Mails|pro**?**.mail.ovh.net|Ja|587|
 
 ### Schritt 2: E-Mail-Adresse verwenden
 

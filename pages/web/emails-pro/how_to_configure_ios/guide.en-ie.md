@@ -45,7 +45,7 @@ From this point onwards, this guide will only cover email configuration using yo
 
 > [!primary]
 >
-> In this guide, we will use as the server name: pro**X**.mail.ovh.net. You will need to replace the "X" with the actual number indicating the appropriate server for your Email Pro service.
+> In this guide, we will use as the server name: pro**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
 > You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action} in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 > 
@@ -72,10 +72,10 @@ Tap `Next`{.action}, and enter the information requested:
 |Information|Description|
 |---|---|
 |IMAP or POP|Leave **IMAP** selected by default.|
-|Host name (incoming)|Enter the server: pro**X**.mail.ovh.net.|
+|Host name (incoming)|Enter the server: pro**?**.mail.ovh.net.|
 |Username (incoming)|Enter your full email address.|
 |Password (incoming)|Enter your email address' password.|  
-|Host name (outgoing)|Enter the server: pro**X**.mail.ovh.net|
+|Host name (outgoing)|Enter the server: pro**?**.mail.ovh.net|
 |Username (outgoing)|Enter your full email address.|
 |Password (outgoing)|Enter your email address' password.|
 
@@ -91,8 +91,8 @@ If you need to enter any settings manually in your account preferences, the tech
 
 |Server type|Server name|SSL|Port|
 |---|---|---|---|
-|Incoming|pro**X**.mail.ovh.net|Yes|993|
-|Outgoing|pro**X**.mail.ovh.net|Yes|587|
+|Incoming|pro**?**.mail.ovh.net|Yes|993|
+|Outgoing|pro**?**.mail.ovh.net|Yes|587|
 
 ### Step 2: Use the email address
 

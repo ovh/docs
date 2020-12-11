@@ -38,7 +38,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 > [!primary]
 >
-> W przewodniku używamy oznaczenia serwera: pro**X**.mail.ovh.net. Zastąp “X” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
+> W przewodniku używamy oznaczenia serwera: pro**?**.mail.ovh.net. Zastąp “?” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
 > 
 > Odszukaj cyfrę w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, w sekcji `Web Cloud`{.action} =>  `E-mail Pro`{.action} => w kolumnie po lewej stronie. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
 >
@@ -59,9 +59,9 @@ Wpisz hasło dla Twojego konta e-mail, po czym kliknij `Dalej`{.action}. Wybierz
 |Adres poczty elektronicznej|Wpisz nazwę pozwalającą odróżnić to konto od Twoich pozostałych kont wyświetlających się w aplikacji Mail.|
 |Nazwa użytkownika|Wpisz pełny adres e-mail.|
 |Hasło|Wpisz hasło wybrane dla tego konta e-mail.|
-|Serwer poczty przychodzącej|Wpisz serwer « pro**X**.mail.ovh.net ». Pozostaw zaznaczone **Użyj protokołu SSL do nawiązywania połączeń**.|
+|Serwer poczty przychodzącej|Wpisz serwer « pro**?**.mail.ovh.net ». Pozostaw zaznaczone **Użyj protokołu SSL do nawiązywania połączeń**.|
 |Port poczty przychodzącej|Wpisz port « 993 ».|
-|Serwer poczty wychodzącej|Wpisz serwer « pro**X**.mail.ovh.net ». Pozostaw zaznaczone **Użyj protokołu SSL do nawiązywania połączeń**.|
+|Serwer poczty wychodzącej|Wpisz serwer « pro**?**.mail.ovh.net ». Pozostaw zaznaczone **Użyj protokołu SSL do nawiązywania połączeń**.|
 |Port poczty wychodzącej|Wpisz port « 587 ».|
 
 Po uzupełnieniu informacji kliknij przycisk `Dodaj konto`{.action}. Jeśli dane są prawidłowe, logowanie zakończy się sukcesem.
@@ -74,8 +74,8 @@ Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta poniżej znajdz
 
 |Typ serwera|Nazwa serwera|SSL|Port|
 |---|---|---|---|
-|Serwer poczty przychodzącej|pro**X**.mail.ovh.net|Tak|993|
-|Serwer poczty wychodzącej|pro**X**.mail.ovh.net|Tak|587|
+|Serwer poczty przychodzącej|pro**?**.mail.ovh.net|Tak|993|
+|Serwer poczty wychodzącej|pro**?**.mail.ovh.net|Tak|587|
 
 ### Etap 2: korzystanie z konta e-mail
 

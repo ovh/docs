@@ -33,7 +33,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 > [!primary]
 >
-> Dans notre exemple, nous utilisons la mention serveur : pro**X**.mail.ovh.net. Vous devrez remplacer le « X » par le chiffre désignant le serveur de votre service E-mail Pro.
+> Dans notre exemple, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « X » par le chiffre désignant le serveur de votre service E-mail Pro.
 > 
 > Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}
 > dans la colonne de gauche. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
@@ -77,7 +77,7 @@ Dans le cas d'une configuration manuelle, renseignez les éléments ci-dessous e
 |Serveur entrant||
 |---|---|
 |POP / IMAP|IMAP|
-|Nom d'hôte du serveur|pro**X**.mail.ovh.net|
+|Nom d'hôte du serveur|pro**?**.mail.ovh.net|
 |Port|993|
 |SSL|SSL/TLS|
 |Authentification|Mot de passe normal|
@@ -85,7 +85,7 @@ Dans le cas d'une configuration manuelle, renseignez les éléments ci-dessous e
 |Serveur sortant||
 |---|---|
 |POP / IMAP|IMAP|
-|Nom d'hôte du serveur|pro**X**.mail.ovh.net|
+|Nom d'hôte du serveur|pro**?**.mail.ovh.net|
 |Port|587|
 |SSL|STARTTLS|
 |Authentification|Mot de passe normal|
@@ -93,7 +93,7 @@ Dans le cas d'une configuration manuelle, renseignez les éléments ci-dessous e
 |Identifiants||
 |---|---|
 |Serveur entrant|Votre adresse E-mail Pro|
-|Nom d'hôte du serveur|pro**X**.mail.ovh.net|
+|Nom d'hôte du serveur|pro**?**.mail.ovh.net|
 
 La configuration de votre compte est maintenant terminée.
 
@@ -124,7 +124,7 @@ Si vous désirez configurer votre compte en POP, choisissez ce protocole lors de
 |Serveur entrant||
 |---|---|
 |POP / IMAP|POP|
-|Nom d'hôte du serveur|pro**X**.mail.ovh.net|
+|Nom d'hôte du serveur|pro**?**.mail.ovh.net|
 |Port|995|
 |SSL|SSL/TLS|
 |Authentification|Mot de passe normal|
@@ -132,7 +132,7 @@ Si vous désirez configurer votre compte en POP, choisissez ce protocole lors de
 |Serveur sortant||
 |---|---|
 |POP / IMAP|POP|
-|Nom d'hôte du serveur|pro**X**.mail.ovh.net|
+|Nom d'hôte du serveur|pro**?**.mail.ovh.net|
 |Port|587|
 |SSL|STARTTLS|
 |Authentification|Mot de passe normal|
@@ -140,7 +140,7 @@ Si vous désirez configurer votre compte en POP, choisissez ce protocole lors de
 |Identifiants||
 |---|---|
 |Serveur entrant|Votre adresse E-mail Pro|
-|Nom d'hôte du serveur|pro**X**.mail.ovh.net|
+|Nom d'hôte du serveur|pro**?**.mail.ovh.net|
 
 
 ## Aller plus loin

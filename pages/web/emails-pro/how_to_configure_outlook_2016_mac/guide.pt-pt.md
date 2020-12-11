@@ -37,7 +37,7 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 
 > [!primary]
 >
-> Neste manual, utilizamos a menção do servidor: pro**X**.mail.ovh.net. Deverá substituir o "X" pelo número que designa o servidor do seu serviço E-mail Pro.
+> Neste manual, utilizamos a menção do servidor: pro**?**.mail.ovh.net. Deverá substituir o "?" pelo número que designa o servidor do seu serviço E-mail Pro.
 >
 > Pode encontrar esse número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web Cloud`{.action} e, a seguir, em `E-mail Pro`{.action} na coluna à esquerda. O nome do servidor está visível na secção Ligação do separador `Informações gerais`{.action}.
 > 
@@ -58,9 +58,9 @@ Introduza o seu endereço de e-mail e clique em `Continuar`{.action}. Selecione 
 |Endereço de e-mail|Insira um nome que lhe permita reconhecer esta conta entre as outras presentes na aplicação Outlook.|
 |Nome de utilizador|Insira o endereço de e-mail completo.|
 |Palavra-passe|Insira a palavra-passe do endereço de e-mail.|
-|Servidor de entrada|Introduza o servidor pro**X**.mail.ovh.net. Deixe a caixa **Utilizar SSL para ligar (recomendado)** selecionada.|
+|Servidor de entrada|Introduza o servidor pro**?**.mail.ovh.net. Deixe a caixa **Utilizar SSL para ligar (recomendado)** selecionada.|
 |Porta de entrada|Introduza a porta **993**.|
-|Servidor de saída|Introduza o servidor pro**X**.mail.ovh.net. Deixe a caixa **Utilizar SSL para ligar (recomendado)** selecionada.|
+|Servidor de saída|Introduza o servidor pro**?**.mail.ovh.net. Deixe a caixa **Utilizar SSL para ligar (recomendado)** selecionada.|
 |Porta de saída|Introduza a porta **587**.|
 
 Concluída esta etapa, clique no botão `Adicionar conta`{.action}. Se os dados estiverem corretos, a aplicação ligar-se-á à conta.
@@ -73,8 +73,8 @@ Caso a aplicação lhe solicite para inserir manualmente alguns dados técnicos 
 
 |Tipo de servidor|Nome do servidor|SSL|Porta|
 |---|---|---|---|
-|Entrada|pro**X**.mail.ovh.net|Sim|993|
-|Saída|pro**X**.mail.ovh.net|Sim|587|
+|Entrada|pro**?**.mail.ovh.net|Sim|993|
+|Saída|pro**?**.mail.ovh.net|Sim|587|
 
 ### 2 - Utilizar o endereço de e-mail
 

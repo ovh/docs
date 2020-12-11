@@ -38,7 +38,7 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 > [!primary]
 >
-> En nuestro ejemplo, hemos utilizado la mención servidor: pro**X**.mail.ovh.net. Sustituya la «X» por la cifra que designa al servidor de su servicio Email Pro.
+> En nuestro ejemplo, hemos utilizado la mención servidor: pro**?**.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
 >
 > Puede consultar esta cifra en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action} y `Email Pro`{.action} en la columna de la izquierda. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
 >
@@ -61,7 +61,7 @@ A continuación, introduzca la información solicitada.
 
 |Campo|Descripción|
 |---|---|
-|Servidor|Introduzca el servidor pro**X**.mail.ovh.net.|
+|Servidor|Introduzca el servidor pro**?**.mail.ovh.net.|
 |Puerto|Introduzca el puerto **993**.|
 |Método de cifrado|Seleccione **SSL/TLS**.|
 |Autenticación|Deje sin marcar la casilla «Requerir inicio de sesión utilizando Autenticación de contraseña segura (SPA)».|
@@ -70,7 +70,7 @@ A continuación, introduzca la información solicitada.
 
 |Campo|Descripción|
 |---|---|
-|Servidor|Introduzca el servidor pro**X**.mail.ovh.net.|
+|Servidor|Introduzca el servidor pro**?**.mail.ovh.net.|
 |Puerto|Introduzca el puerto **587**.|
 |Método de cifrado|Seleccione **SSL/TLS**.|
 |Autenticación|Deje sin marcar la casilla «Requerir inicio de sesión utilizando Autenticación de contraseña segura (SPA)».|
@@ -85,8 +85,8 @@ En caso de que la aplicación le pida que introduzca de forma manual algunos dat
 
 |Tipo de servidor|Nombre del servidor|Método de cifrado|Puerto|
 |---|---|---|---|
-|Entrante|pro**X**.mail.ovh.net|SSL/TLS|993|
-|Saliente|pro**X**.mail.ovh.net|STARTTLS|587|
+|Entrante|pro**?**.mail.ovh.net|SSL/TLS|993|
+|Saliente|pro**?**.mail.ovh.net|STARTTLS|587|
 
 ### 2. Utilizar la dirección de correo electrónico
 

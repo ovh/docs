@@ -38,7 +38,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 > [!primary]
 >
-> Dans notre exemple, nous utilisons la mention serveur : pro**X**.mail.ovh.net. Vous devrez remplacer le « X » par le chiffre désignant le serveur de votre service E-mail Pro.
+> Dans notre exemple, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « X » par le chiffre désignant le serveur de votre service E-mail Pro.
 > 
 > Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}
 >  dans la colonne de gauche. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
@@ -60,7 +60,7 @@ Indiquez maintenant les paramètres du serveur POP (serveur entrant) de votre co
 |---|---| 
 |Nom d'utilisateur|Renseignez l'adresse e-mail **complète**.|  
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|
-|Serveur POP|Renseignez le serveur « pro**X**.mail.ovh.net ».|
+|Serveur POP|Renseignez le serveur « pro**?**.mail.ovh.net ».|
 |Port|Sélectionnez le port « 995 ».|
 
 Concernant les choix que vous pouvez cocher :
@@ -87,7 +87,7 @@ Indiquez maintenant les paramètres du serveur SMTP (serveur sortant) de votre c
 
 |Information|Description| 
 |---|---| 
-|Serveur SMTP|Renseignez le serveur « pro**X**.mail.ovh.net ».|
+|Serveur SMTP|Renseignez le serveur « pro**?**.mail.ovh.net ».|
 |Port|Sélectionnez le port « 587 ».|
 |Nom d'utilisateur|Renseignez l'adresse e-mail **complète**.|  
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|
