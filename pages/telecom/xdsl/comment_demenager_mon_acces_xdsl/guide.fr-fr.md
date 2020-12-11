@@ -75,7 +75,7 @@ Pour cela, il vous suffit de cliquer sur le bouton `Choisir cette offre`{.action
 
 ![Choix de l'offre](images/move07-edit.png){.thumbnail}
 
-### CHoix du type de dégroupage
+### Choix du type de dégroupage
 
 Si vous avez renseigné un numéro de ligne actif au début de votre demande, il vous sera demande de choisir entre 2 type de dégroupage à votre nouvelle adresse.
 Vous devrez choisir entre "Dégroupage total" et "Dégroupage partiel".
