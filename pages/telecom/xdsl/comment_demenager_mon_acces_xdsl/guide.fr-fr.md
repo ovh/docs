@@ -37,7 +37,7 @@ Vous pourrez ensuite définir la date à laquelle votre accès (à votre adresse
 
 ### Choix de la nouvelle adresse
 
-#### Vous disposez déjà du numéro de ligne à la nouvelle adresse
+#### Cas n°1 : Vous disposez déjà du numéro de ligne à la nouvelle adresse
 
 Cochez la case "Testez avec le numéro de téléphone correspondant à votre nouvelle adresse." puis renseignez ce numéro dans le champ situé en dessous.
 <br>Cliquez ensuite sur le bouton `Valider`{.action}
@@ -51,7 +51,7 @@ Suite à cette validation, un cadre apparaitra vous indiquant l'adresse associé
 ![validation adresse demenagement](images/move03-edit.png){.thumbnail}
 
 
-#### Vous ne disposez d'aucun numéro à la nouvelle adresse
+#### Cas n°2 : Vous ne disposez d'aucun numéro à la nouvelle adresse
 
 Cochez la case "Testez avec le nouvelle adresse" puis renseignez les champs requis (code postal, ville, numéro et rue)
 Cliquez ensuite sur le bouton `Valider`{.action}
@@ -115,9 +115,9 @@ Une nouvelle fenêtre s'affiche, vous invitant à valider le réengagement de 12
 ![Validation déménagement](images/move11-edit.png){.thumbnail}
 
 
-## Que se passe t-il après la demande de déménagement ?
+## Que se passe-t-il après la demande de déménagement ?
 
-La création de la ligne à la nouvelle adresse se réalise en 7 à 10 jours en moyenne.
+Le déménagement de la ligne à la nouvelle adresse se réalise en 7 à 10 jours en moyenne, sauf en cas de création de ligne ou cela dépend de la date de rendez-vous choisie.
 
 L'accès xDSL de l'ancienne adresse est maintenu jusqu'à la livraison de l'accès à la nouvelle adresse. Nous coupons l'accès à la fin du mois en cours si et uniquement si l'accès à la nouvelle adresse a été livré.
 
