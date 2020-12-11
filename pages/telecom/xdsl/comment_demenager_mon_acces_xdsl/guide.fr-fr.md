@@ -4,7 +4,7 @@ slug: comment-demenager-mon-acces-xdsl
 section: Gestion de mon offre
 ---
 
-**Dernière mise à jour le 19/11/2020**
+**Dernière mise à jour le 11/12/2020**
 
 ## Préambule
 
@@ -21,7 +21,6 @@ Niveau : Débutant
 
 -   Disposer d'un abonnement xDSL(ADSL/VDSL)ou Ftth actif. Les accès SDSL ne peuvent être déménagé.
 -   Disposer d'une offre xDSL récente. (cela inclus les offres Connect, Express, Entreprise et Serenity)
--   Disposer d'un compte OVH créditeur ou neutre.
 -   La nouvelle adresse doit-être différente de l'ancienne.
 
 
