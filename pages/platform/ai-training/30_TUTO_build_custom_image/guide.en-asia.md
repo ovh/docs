@@ -49,11 +49,15 @@ Here is the list of base images including notebooks (jupyterlab + Visual Studio 
 
 Header of your Dockerfile should look like this :
 
-    FROM <base-image>
+``` {.console}
+FROM <base-image>
+```
 
 For example if you want to start from the base image `python:1.5.0_gpu_cu101_py3` :
 
-    FROM python:1.5.0_gpu_cu101_py3
+``` {.console}
+FROM python:1.5.0_gpu_cu101_py3
+```
 
 ### Install what you need
 
@@ -61,13 +65,17 @@ Bash command instructions on your Dockerfile should begin with `RUN` prefix.
 
 Example if your want to install vim :
 
-    RUN apt-get update && apt-get install -y vim
+``` {.console}
+RUN apt-get update && apt-get install -y vim
+```
 
 You can copy files from your local directory inside docker image with the `COPY` prefix.
 
 Example if you want to add the file `example.txt` at the root of the image :
 
-    COPY example.txt /example.txt
+``` {.console}
+COPY example.txt /example.txt
+```
 
 > [!warning]
 >
@@ -80,7 +88,9 @@ You can set environment variables with the `ENV` prefix.
 
 Example if you want to add an environment variable `KEY` with value `VALUE`
 
-    ENV KEY VALUE
+``` {.console}
+ENV KEY VALUE
+```
 
 > [!primary]
 >
@@ -90,7 +100,35 @@ Example if you want to add an environment variable `KEY` with value `VALUE`
 
 Once your **Dockerfile** is complete and match your needs you have to choose a name and build the image using the following command in the same directory :
 
-    docker build -t <image-name> .
+``` {.console}
+docker build -t <image-name> .
+```
+
+## Test it locally (Optional)
+
+If you want to verify that your built image is working properly, create 2 files :
+
+-   One file named `group` with following content :
+
+``` {.console}
+root:x:0:
+ovh:x:42420:
+nogroup:x:65534:
+```
+
+-   One file named `passwd` with following content :
+
+``` {.console}
+root:x:0:0:root:/root:/bin/bash
+ovh:x:42420:42420:OVH:/workspace:/bin/bash
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+```
+
+And run the following command :
+
+``` {.console}
+docker run --rm -it -v ./group:/etc/group -v ./passwd:/etc/passwd <image-name>
+```
 
 ## Push image in the registry of your choice
 
