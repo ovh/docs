@@ -3,6 +3,7 @@ title: Gestion des expéditeurs SMS et des restrictions opérateurs destinataire
 slug: gestion-des-expediteurs-sms-et-des-restrictions-operateurs-destinataires
 legacy_guide_number: '8650774'
 section: Gérer mon offre
+hidden: true
 ---
 
 ### Préambule {#préambule}
