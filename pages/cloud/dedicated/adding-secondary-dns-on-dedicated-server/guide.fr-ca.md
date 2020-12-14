@@ -1,7 +1,7 @@
 ---
 title: 'Créer un DNS secondaire sur un serveur dédié'
 slug: creer-dns-secondaire-serveur-dedie
-excerpt: 'Découvrez comment créer un DNS secondaire pour votre serveur dédié OVH'
+excerpt: 'Découvrez comment créer un DNS secondaire pour votre serveur dédié OVHcloud'
 section: 'Utilisation avancée'
 ---
 
@@ -11,12 +11,12 @@ section: 'Utilisation avancée'
 
 Si vous souhaitez utiliser votre [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external} en tant que DNS principal pour votre nom de domaine, vous pouvez ajouter celui-ci en tant que DNS secondaire à votre serveur.
 
-**Ce guide vous montre comment créer un DNS secondaire et l'ajouter à votre serveur dédié OVH.**
+**Ce guide vous montre comment créer un DNS secondaire et l'ajouter à votre serveur dédié OVHcloud.**
 
 
 ## Prérequis
 
-* Disposer d'un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external} avec Windows installé.
+* Disposer d'un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}.
 * Disposer d'un [nom de domaine](https://www.ovh.com/ca/fr/domaines/){.external} et pouvoir le gérer dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
 * Être connecté à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
@@ -43,7 +43,7 @@ Un message vous confirmant l'enregistrement de type TXT pour votre domaine appar
 
 ### Procéder à la vérification du nom de domaine
 
-Une fois connecté à l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le menu `Web Cloud`{.action}, puis dans la section `Domaines`{.action} dans la colonne de gauche afin de faire apparaître tous les domaines que vous gérez :
+Une fois connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le menu `Web Cloud`{.action}, puis dans la section `Domaines`{.action} dans la colonne de gauche afin de faire apparaître tous les domaines que vous gérez :
 
 ![Vérification de domaine](images/domain-verification-01.png){.thumbnail}
 

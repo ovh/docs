@@ -1,7 +1,7 @@
 ---
 title: 'Crear un DNS secundario en un servidor dedicado'
 slug: crear-dns-secundario-servidor-dedicado
-excerpt: 'Cómo crear un DNS secundario en un servidor dedicado de OVH'
+excerpt: 'Cómo crear un DNS secundario en un servidor dedicado de OVHcloud'
 section: 'Uso avanzado'
 ---
 
@@ -16,7 +16,7 @@ Si quiere utilizar su [servidor dedicado](https://www.ovh.com/world/es/servidore
 
 ## Requisitos
 
-* Tener un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/){.external} con Windows instalado.
+* Tener un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/){.external}.
 * Disponer de un [dominio](https://www.ovh.com/world/es/dominios/){.external} y poder administrarlo desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 * Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
