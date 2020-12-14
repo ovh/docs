@@ -135,7 +135,7 @@ We can send this request through an HTTP Post with the cURL Command line or any 
 Using a cURL command, we can write a new TSL file containing the previous select
 
 ```shell-session
-$ curl -v --data-binary @select.TSL 'https://DESC:READ_TOKEN@TSL.gra1-ovh.metrics.ovh.net/v0/query'
+$ curl -v --data-binary @select.TSL 'https://DESC:READ_TOKEN@TSL.gra1.metrics.ovh.net/v0/query'
 ```
 
 You should get the result as a time-series JSON list.
@@ -671,7 +671,7 @@ In TSL, we can directly use the Connect method to update the set the backend on 
 connect("http://localhost:9090", "TOKEN")
 ```
 
-The back-end have to be declared in TSL configuration, for OVH the valid backends are: "https://p:READ_TOKEN@prometheus.gra1-ovh.metrics.ovh.net/api/v1/query_range" and "https://warp10.gra1-ovh.metrics.ovh.net". Do not replace the "READ_TOKEN" key to use our emulated Prometheus backend.
+The back-end have to be declared in TSL configuration, for OVH the valid backends are: "https://p:READ_TOKEN@prometheus.gra1.metrics.ovh.net/api/v1/query_range" and "https://warp10.gra1.metrics.ovh.net". Do not replace the "READ_TOKEN" key to use our emulated Prometheus backend.
 
 #### Series meta operator
 
@@ -708,7 +708,7 @@ The Warp 10 language, WarpScript, gives a lot of possibilities to query metrics 
 To execute TSL on the Metrics platform using a Warp 10 backend you can use the **connect** method on top of your TSL query.
 
 ```sql
-connect("https://warp10.gra1-ovh.metrics.ovh.net")
+connect("https://warp10.gra1.metrics.ovh.net")
 ```
 
 ### TSL on Prometheus
@@ -718,7 +718,7 @@ The Prometheus back-end is widely use, this is why TSL queries can also be execu
 To execute TSL on the Metrics platform using an emulated Prometheus backend, you can use the **connect** method on top of your TSL query.
 
 ```sql
-connect("https://p:READ_TOKEN@prometheus.gra1-ovh.metrics.ovh.net/api/v1/query_range")
+connect("https://p:READ_TOKEN@prometheus.gra1.metrics.ovh.net/api/v1/query_range")
 ```
 
 ## Go further
