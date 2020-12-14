@@ -1,7 +1,7 @@
 ---
 title: 'Créer un DNS secondaire sur un serveur dédié'
 slug: creer-dns-secondaire-serveur-dedie
-excerpt: 'Découvrez comment créer un DNS secondaire pour votre serveur dédié OVH'
+excerpt: 'Découvrez comment créer un DNS secondaire pour votre serveur dédié OVHcloud'
 section: 'Utilisation avancée'
 ---
 
@@ -11,14 +11,14 @@ section: 'Utilisation avancée'
 
 Si vous souhaitez utiliser votre [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external} en tant que DNS principal pour votre nom de domaine, vous pouvez ajouter celui-ci en tant que DNS secondaire à votre serveur.
 
-**Ce guide vous montre comment créer un DNS secondaire et l'ajouter à votre serveur dédié OVH.**
+**Ce guide vous montre comment créer un DNS secondaire et l'ajouter à votre serveur dédié OVHcloud.**
 
 
 ## Prérequis
 
-* Disposer d'un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external} avec Windows installé.
-* Disposer d'un [nom de domaine](https://www.ovh.com/fr/domaines/){.external} et pouvoir le gérer dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
-* Être connecté à l’[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Disposer d'un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
+* Disposer d'un [nom de domaine](https://www.ovh.com/fr/domaines/){.external} et pouvoir le gérer dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 
 ## En pratique
@@ -44,7 +44,7 @@ Un message vous confirmant l'enregistrement de type TXT pour votre domaine appar
 
 ### Procéder à la vérification du nom de domaine
 
-Une fois connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le menu `Web Cloud`{.action}, puis dans la section `Domaines`{.action} dans la colonne de gauche afin de faire apparaître tous les domaines que vous gérez :
+Une fois connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le menu `Web Cloud`{.action}, puis dans la section `Domaines`{.action} dans la colonne de gauche afin de faire apparaître tous les domaines que vous gérez :
 
 ![Vérification de domaine](images/domain-verification-01.png){.thumbnail}
 
@@ -90,6 +90,6 @@ Pour finir, cliquez sur `Ajouter`{.action} pour confirmer votre entrée :
 
 ## Aller plus loin
 
-[Éditer une zone DNS OVH](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external}
+[Éditer une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
