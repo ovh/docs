@@ -14,7 +14,7 @@ section: Cloud Disk Array
 > L'utilisation d'une interface web est le moyen le plus simple de créer un des ACL IP.
 > 
 
-Tout d'abord, connectez-vous à [l’espace client].(https://www.ovh.com/auth/?action=gotomanager/dedicated/#/configuration){.external} et dans la rubrique Plates-formes et services vous trouverez le service Ceph.
+Tout d'abord, connectez-vous à [l’espace client](https://www.ovh.com/manager/dedicated/#/configuration){.external} et dans la rubrique Plates-formes et services vous trouverez le service Ceph.
 
 Vous trouverez ici l'ACL existante, par défaut il n'y a pas d'ACL.
 
@@ -49,7 +49,7 @@ Après la création de la pool d'adresses IP, vous êtes de retour au gestionnai
 > 
 serviceName est le fsid de votre cluster.
 
-Vous pouvez vérifier la création d'une LCA en consultant la liste des ACL.
+Vous pouvez vérifier la création d'une ACL en consultant la liste des ACL.
 
 
 > [!api]
