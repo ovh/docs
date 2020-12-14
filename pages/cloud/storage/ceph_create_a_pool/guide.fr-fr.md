@@ -14,7 +14,7 @@ section: Cloud Disk Array
 > L'utilisation d'une interface web est le moyen le plus simple de créer un pool.
 > 
 
-Tout d'abord, connectez-vous au [l’espace client].(https://ca.ovh.com/manager/dedicated/#/configuration){.external} et dans la rubrique Plates-formes et services vous trouverez le service Ceph. 
+Tout d'abord, connectez-vous au [l’espace client].(https://www.ovh.com/manager/dedicated/#/configuration){.external} et dans la rubrique Plates-formes et services vous trouverez le service Ceph. 
 
 Dans l'onglet "Pools" et ensuite en bas à droite, vous trouverez les pools existants
 
