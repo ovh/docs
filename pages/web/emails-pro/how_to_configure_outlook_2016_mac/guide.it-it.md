@@ -38,7 +38,7 @@ Gli account Email Pro possono essere configurati su diversi client di posta comp
 
 > [!primary]
 >
-> Nel nostro esempio abbiamo utilizzato come nome del server "pro**X**.mail.ovh.net", dove "X" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
+> Nel nostro esempio abbiamo utilizzato come nome del server "pro**?**.mail.ovh.net", dove "?" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
 >
 > Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web Cloud`
 {.action}, selezionando `Email Pro`{.action} nella colonna a sinistra. Il nome del server è visibile nel riquadro Connessione della scheda `Informazioni generali`{.action}.
@@ -60,9 +60,9 @@ Inserisci il tuo indirizzo email e clicca su `Avanti`{.action}. Come provider, s
 |Indirizzo di posta elettronica|Inserisci un nome che ti permetterà di riconoscere questo account tra quelli presenti nella tua applicazione Outlook.|
 |Nome utente|Inserisci líindirizzo email completo|
 |Password|Digita la password associata all'account|
-|Server in entrata |Inserisci il server 'pro**X**.mail.ovh.net'. Seleziona la voce 'Utilizza SSL' per connetterti.|
+|Server in entrata |Inserisci il server 'pro**?**.mail.ovh.net'. Seleziona la voce 'Utilizza SSL' per connetterti.|
 |Porta in entrata|Indica la porta '993'.|
-|Server in uscita|Inserisci il server 'pro**X**.mail.ovh.net'. Seleziona la voce 'Utilizza SSL' per connettersi.|
+|Server in uscita|Inserisci il server 'pro**?**.mail.ovh.net'. Seleziona la voce 'Utilizza SSL' per connettersi.|
 |Porta in uscita|Indica la porta '587'.|
 
 Una volta inseriti tutti i dati, clicca su `Avanti`{.action}. Se le informazioni inserite sono corrette, la connessione all'account andrà a buon fine. 
@@ -75,8 +75,8 @@ Se devi inserire manualmente le impostazioni nelle preferenze del tuo account, p
 
 |Tipo di server |Nome del server|SSL|Porta|
 |---|---|---|---|
-|In entrata|pro**X**.mail.ovh.net|SÏ|993|
-|In uscita|pro**X**.mail.ovh.net|SÏ|587|
+|In entrata|pro**?**.mail.ovh.net|SÏ|993|
+|In uscita|pro**?**.mail.ovh.net|SÏ|587|
 
 ### Step 2: utilizza il tuo account
 

@@ -46,7 +46,7 @@ A partir de agora, o guia irá só abordar a configuração da aplicação Mail.
 
 > [!primary]
 >
-> Neste manual, utilizamos a menção do servidor: pro**X**.mail.ovh.net. Deverá substituir o "X" pelo número que designa o servidor do seu serviço E-mail Pro.
+> Neste manual, utilizamos a menção do servidor: pro**?**.mail.ovh.net. Deverá substituir o "?" pelo número que designa o servidor do seu serviço E-mail Pro.
 >
 > Pode encontrar esse número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web Cloud`{.action} e, a seguir, em `E-mail Pro`{.action} na coluna à esquerda. O nome do servidor está visível na secção Ligação do separador `Informações gerais`{.action}.
 > 
@@ -72,8 +72,8 @@ Agora clique no botão `Continuar`{.action}. Será convidado a continuar o proce
 |Informação|Descrição|  
 |---|---|  
 |Tipo de conta|A opção predefinida é IMAP. Não altere essa opção.| 
-|Servidor de receção|Introduza o servidor pro**X**.mail.ovh.net| 
-|Servidor de envio|Introduza o servidor pro**X**.mail.ovh.net|  
+|Servidor de receção|Introduza o servidor pro**?**.mail.ovh.net| 
+|Servidor de envio|Introduza o servidor pro**?**.mail.ovh.net|  
 
 Clique novamente no botão `Continuar`{.action}. Se os dados inseridos estiverem corretos, a ligação será estabelecida sem problemas.
 
@@ -87,8 +87,8 @@ Precisa de inserir os dados de forma manual nas preferências da conta? A tabela
 
 |Tipo de Servidor|Nome do servidor;|SSL|Porta|
 |---|---|---|---|
-|Receção|pro**X**.mail.ovh.net|Sim|993|
-|Envio|pro**X**.mail.ovh.net|Sim|587|
+|Receção|pro**?**.mail.ovh.net|Sim|993|
+|Envio|pro**?**.mail.ovh.net|Sim|587|
 
 ### 2 - Usar o endereço de e-mail
 

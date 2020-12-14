@@ -29,7 +29,7 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 > [!primary]
 >
-> Dans notre exemple, nous utilisons la mention serveur : pro**X**.mail.ovh.net. Vous devrez remplacer le « X » par le chiffre désignant le serveur de votre service E-mail Pro.
+> Dans notre exemple, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « X » par le chiffre désignant le serveur de votre service E-mail Pro.
 > 
 > Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}
 >  dans la colonne de gauche. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
@@ -48,9 +48,9 @@ Voici comment réaliser votre configuration en  **IMAP**  avec  **SSL** activé.
 
 5. Complétez les informations (description, nom, et compte).
 
-6. Renseignez en adresse de serveur "pro**X**.mail.ovh.net", en port "993" et en cryptage "SSL".
+6. Renseignez en adresse de serveur "pro**?**.mail.ovh.net", en port "993" et en cryptage "SSL".
 
-7. Concernant le SMTP, renseignez en serveur SMTP "pro**X**.mail.ovh.net", en port "587" et en cryptage "StartTLS".
+7. Concernant le SMTP, renseignez en serveur SMTP "pro**?**.mail.ovh.net", en port "587" et en cryptage "StartTLS".
 
 8. Choisissez vos options puis terminez.
 

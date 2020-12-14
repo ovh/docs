@@ -46,7 +46,7 @@ Questa guida descrive esclusivamente gli step di configurazione dell’applicazi
 
 > [!primary]
 >
-> Nel nostro esempio abbiamo utilizzato come nome del server "pro**X**.mail.ovh.net", dove "X" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
+> Nel nostro esempio abbiamo utilizzato come nome del server "pro**?**.mail.ovh.net", dove "?" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
 >
 > Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action} nella colonna a sinistra. Il nome del server è visibile nel riquadro Connessione della scheda `Informazioni generali`{.action}.
 > 
@@ -72,8 +72,8 @@ Clicca sul pulsante `Accedi`{.action}, un messaggio ti inviterà a continuare e 
 |Informazione|Descrizione|  
 |---|---|  
 |Tipo account|Seleziona l’opzione IMAP nel menu a tendina| 
-|Server di posta in entrata|Inserisci il server pro**X**.mail.ovh.net| 
-|Server di posta in uscita|Inserisci il server pro**X**.mail.ovh.net|  
+|Server di posta in entrata|Inserisci il server pro**?**.mail.ovh.net| 
+|Server di posta in uscita|Inserisci il server pro**?**.mail.ovh.net|  
 
 Clicca di nuovo sul pulsante `Accedi`{.action}. Se le informazioni inserite sono corrette, l’accesso all’account andrà a buon fine.
 
@@ -87,8 +87,8 @@ Se hai necessità di inserire manualmente le preferenze per il tuo account, ecco
 
 |Tipo di server|Nome del server|SSL|Porta|
 |---|---|---|---|
-|In entrata|pro**X**.mail.ovh.net|Sì|993|
-|In uscita|pro**X**.mail.ovh.net|Sì|587|
+|In entrata|pro**?**.mail.ovh.net|Sì|993|
+|In uscita|pro**?**.mail.ovh.net|Sì|587|
 
 ### Step 2: utilizza il tuo account
 
