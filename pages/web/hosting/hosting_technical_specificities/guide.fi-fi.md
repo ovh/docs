@@ -75,7 +75,7 @@ Ohje PHP-FPM:N käytöstä:
 Joitakin palvelinmuuttujia muutetaan PHP-FPM:ää käyttäen:
 
 |Muuttuja|ilman PHP-FPM:ää|PHP-FPM:n kanssa|
-|max_execution_time|120s|300s|
+|max_execution_time|120s|165s|
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 
