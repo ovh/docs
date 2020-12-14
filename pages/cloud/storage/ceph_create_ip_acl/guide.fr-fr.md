@@ -1,7 +1,7 @@
 ---
-title: Création d'un LCA IP 
+title: Création d'une ACL IP 
 slug: ceph/creer-ip-acl
-excerpt: Ce qui vous présente comment créer une LCA IP pour autoriser l'accès au cluster CEPH.
+excerpt: Ce qui vous présente comment créer une ACL IP pour autoriser l'accès au cluster CEPH.
 section: Cloud Disk Array
 ---
 
@@ -11,12 +11,12 @@ section: Cloud Disk Array
 
 > [!primary]
 >
-> L'utilisation d'une interface web est le moyen le plus simple de créer un IP LCAs.
+> L'utilisation d'une interface web est le moyen le plus simple de créer un des ACL IP.
 > 
 
-Tout d'abord, connectez-vous au [l’espace client].(https://ca.ovh.com/manager/dedicated/#/configuration){.external} et dans la rubrique Plates-formes et services vous trouverez le service Ceph.
+Tout d'abord, connectez-vous à [l’espace client].(https://www.ovh.com/auth/?action=gotomanager/dedicated/#/configuration){.external} et dans la rubrique Plates-formes et services vous trouverez le service Ceph.
 
-Vous trouverez ici la LCA existante, par défaut il n'y a pas de LCA.
+Vous trouverez ici l'ACL existante, par défaut il n'y a pas d'ACL.
 
 
 ![Ceph pools](images/create_an_ip_acl_1.png){.thumbnail}
@@ -38,7 +38,7 @@ Ajouter votre IP.
 
 Et créer l'IP ACL.
 
-Après la création de la pool d'adresses IP, vous êtes de retour au gestionnaire. Vous pouvez voir que le statut du pool a changé car la LCA est en cours de création.
+Après la création de la pool d'adresses IP, vous êtes de retour au gestionnaire. Vous pouvez voir que le statut du pool a changé car l'ACL est en cours de création.
 
 
 ## Utiliser l'API
@@ -49,7 +49,7 @@ Après la création de la pool d'adresses IP, vous êtes de retour au gestionnai
 > 
 serviceName est le fsid de votre cluster.
 
-Vous pouvez vérifier la création d'une LCA en consultant la liste des LCA.
+Vous pouvez vérifier la création d'une LCA en consultant la liste des ACL.
 
 
 > [!api]
