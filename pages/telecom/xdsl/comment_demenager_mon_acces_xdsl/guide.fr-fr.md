@@ -29,6 +29,7 @@ Niveau : Débutant
 La demande de déménagement s'effectue via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
 <br>Dans l'onglet `Télécom`{.action}, sélectionnez la rubrique `Accès Internet`{.action}, choisissez le pack voulu puis sélectionnez l'accès xDSL.
 <br>Cliquez ensuite sur `Déménager`{.action} dans le cadre « Informations Générales ».
+
 ![accès déménagement](images/move01-edit.png){.thumbnail}
 
 Vous pourrez ensuite définir la date à laquelle votre accès (à votre adresse actuelle) sera fermé.
