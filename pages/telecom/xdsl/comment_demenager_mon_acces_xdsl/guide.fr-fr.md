@@ -40,6 +40,7 @@ Vous pourrez ensuite définir la date à laquelle votre accès (à votre adresse
 
 Cochez la case "Testez avec le numéro de téléphone correspondant à votre nouvelle adresse." puis renseignez ce numéro dans le champ situé en dessous.
 <br>Cliquez ensuite sur le bouton `Valider`{.action}
+
 ![accès déménagement](images/move02-edit.png){.thumbnail}
 
 Suite à cette validation, un cadre apparaitra vous indiquant l'adresse associée à ce numéro.
