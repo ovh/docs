@@ -1,22 +1,22 @@
 ---
-title: Access the cluster using rbd client
+title: Accéder au cluster en utilisant le client rbd
 slug: ceph/utilisation-cluster-avec-rbd
 excerpt: Ce guide vous présente comment avoir accès à votre cluster en utilisant le client rbd.
 section: Cloud Disk Array
 ---
 
-There are different ways to use your Ceph cluster. We'll describe how to map your cluster using **rbd client**.
+Il existe différentes façons d'utiliser votre grappe Ceph. Nous allons décrire comment cartographier votre cluster en utilisant **rbd client**.
 
-You must first ensure that you have done those steps :
+Vous devez d'abord vous assurer que vous avez bien effectué ces démarches :
 
-- [Create a pool](https://docs.ovh.com/fr/storage/ceph/creer-un-pool/)
-- [Create a user](https://docs.ovh.com/fr/storage/ceph/creer-un-utilisateur/)
-- [Add rights to a user on a pool](https://docs.ovh.com/fr/storage/ceph/changer-droits-utilisateurs/)
-- [Add an IP ACL]https://docs.ovh.com/fr/storage/ceph/creer-ip-acl/) to allow your server to contact the cluster
+- [Créer un pool](https://docs.ovh.com/fr/storage/ceph/creer-un-pool/)
+- [Créer-un-utilisateur](https://docs.ovh.com/fr/storage/ceph/creer-un-utilisateur/)
+- [Ajouter des droits à un utilisateur sur un pool](https://docs.ovh.com/fr/storage/ceph/changer-droits-utilisateurs/)
+- [Ajouter un IP ACL](https://docs.ovh.com/fr/storage/ceph/creer-ip-acl/) pour permettre à votre serveur de contacter le cluster
 
 
-## Ceph installation
-For **deb based** distributions:
+## Installation Ceph
+Pour les distributions **Debian**:
 
 
 ```bash
@@ -26,7 +26,7 @@ Setting up ceph-common (10.2.0-0ubuntu0.16.04.2) ...
 Setting up ceph (10.2.0-0ubuntu0.16.04.2) ...
 ```
 
-For **rpm based** distributions:
+Pour les distributions **rpm** :
 
 
 ```bash
@@ -37,8 +37,8 @@ ceph-common.x86_64 1:0.80.7-3.el7
 ```
 
 
-## Ceph configuration
-Create file /etc/ceph/ceph.conf
+## Configuration Ceph
+Créer un fichier: /etc/ceph/ceph.conf
 
 
 ```ini
@@ -46,7 +46,7 @@ Create file /etc/ceph/ceph.conf
 2. mon_host = <mon_1_IP>,<mon_2_IP>,<mon_3_IP>
 ```
 
-Create the file /etc/ceph/ceph.client.<ceph_user_name>.keyring
+Créer le fichier /etc/ceph/ceph.client.<ceph_user_name>.keyring
 
 
 ```ini
@@ -54,24 +54,24 @@ Create the file /etc/ceph/ceph.client.<ceph_user_name>.keyring
 2. key = <my_user_key>
 ```
 
-<mon_X_IP> has to be replaced by monitors IP you can find on the [Cloud Disk Array manager](https://www.ovh.com/manager/cloud/index.html){.external}. Under 'Platforms and services' select your Ceph cluster.
+<mon_X_IP> doit être remplacé par des moniteurs IP que vous pouvez trouver sur le gestionnaire du [Cloud Disk Array](https://www.ovh.com/auth/?action=gotomanager){.external}. Sous "Plateformes et services", sélectionnez votre groupe Ceph.
 
-<my_user_key> has to be replaced by the users's key you can find on your Cloud Disk Array manager.
+<my_user_key> doit être remplacée par la clé d'utilisateur que vous pouvez trouver sur le gestionnaire de votre Cloud Disk Array.
 
 
-## Configuration check
-You can check the configuration by listing the images inside your pool.
+## Contrôle de la configuration
+Vous pouvez vérifier la configuration en listant les images à l'intérieur de votre pool.
 
 
 ```bash
 ubuntu@server:~$ rbd -n client.myuser list mypool
 ```
 
-In this case, the result is empty because we have not have created an image yet. If you have an error, please double check your configuration.
+Dans ce cas, le résultat est vide car nous n'avons pas encore créé d'image. Si vous avez une erreur, veuillez vérifier votre configuration.
 
 
-## Image creation
-You can't directly mount a pool, you have to **mount an image** that exists on the pool.
+## Création d'images
+Vous ne pouvez pas monter directement une piscine, vous devez **monter une image** qui existe sur la piscine.
 
 
 ```bash
@@ -80,20 +80,20 @@ ubuntu@server:~$ rbd -n client.myuser list mypool
 myimage
 ```
 
-We make sure that the image was created correctly by listing the pool content.
+Nous nous assurons que l'image a été créée correctement en répertoriant le contenu du pool.
 
 
-## Map the image
+## Cartographier l'image
 
 ```bash
 ubuntu@server:~$ sudo rbd -n client.myuser map mypool/myimage
 /dev/rbd0
 ```
 
-My rbd image is not mapped to /dev/rbd0, it's a block storage. Therefore we have to **setup a filesystem**.
+Mon image rbd n'est pas mappée à /dev/rbd0, c'est un stockage en bloc. C'est pourquoi nous devons **mettre en place un système de fichiers**.
 
 
-## Setup the filesystem
+## Configuration du système de fichiers
 
 ```bash
 ubuntu@server:~$ sudo mkfs.xfs /dev/rbd0
@@ -109,7 +109,7 @@ realtime =none                   extsz=4096   blocks=0, rtextents=0
 ```
 
 
-## Mount the filesystem
+## Monter le système de fichiers
 
 ```bash
 ubuntu@server:~$ sudo mkdir /mnt/rbd
@@ -119,4 +119,4 @@ Filesystem      Size  Used Avail Use% Mounted on
 /dev/rbd0        10T   34M   10T   1% /mnt/rbd
 ```
 
-You can now use your Ceph cluster!
+Vous pouvez maintenant utiliser votre grappe Ceph !
