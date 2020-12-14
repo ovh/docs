@@ -55,7 +55,7 @@ Suite à cette validation, un cadre apparaitra vous indiquant l'adresse associé
 
 Cochez la case "Testez avec le nouvelle adresse" puis renseignez les champs requis (code postal, ville, numéro et rue)
 <br>Cliquez ensuite sur le bouton `Valider`{.action}
-
+<br>
 ![demenagement par adresse](images/move04-edit.png){.thumbnail}
 
 Dans le cas où une ou plusieurs lignes inactives existent à votre future adresse, un tableau s'affichera avec les numéros de lignes disponible à cette adresse.
