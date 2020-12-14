@@ -9,7 +9,7 @@ section: Gestion de mon offre
 ## Préambule
 
 Le déménagement d'un accès xDSL est un service permettant de recréer votre accès internet à une adresse différente lors d'un changement de lieu de vie ou de lieu de travail tout en conservant les services liés à votre offre.
-<br>C'est un service gratuit accessible depuis votre espace client.
+<br>Il s'agit d'un service gratuit accessible depuis votre espace client.
 
 **Sommaire :**
 
