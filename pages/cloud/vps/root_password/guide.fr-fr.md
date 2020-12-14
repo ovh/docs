@@ -14,17 +14,17 @@ Il peut être nécessaire de modifier le mot de passe root sur votre système d'
 - Vous pouvez toujours vous connecter via SSH
 - Vous ne pouvez pas vous connecter via SSH car vous avez perdu votre mot de passe
 
-**Ce guide explique comment modifier votre mot de passe administrateur en fonction de la situation initiale.**
+**Ce guide explique comment modifier votre mot de passe administrateur en fonction de ces deux situations.**
 
 ## Prérequis
 
 - Avoir votre [VPS OVHcloud](https://www.ovhcloud.com/fr/vps/){.external} déjà configuré
-- informations d'identification de connexion reçues par e-mail après l'installation (si elles sont toujours valides)
+- Disposer des identifiants de connexion reçus par e-mail après l'installation (s'ils sont toujours valides)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} (pour utiliser le mode rescue)
 
 > [!warning]
 >
-> OVHcloud met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section “Aller plus loin” de ce guide.
+> OVHcloud met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 > 
 
 ## En pratique
@@ -36,14 +36,14 @@ Il peut être nécessaire de modifier le mot de passe root sur votre système d'
 > Pour plus d'informations sur la connexion à votre VPS, consultez notre guide [Débuter avec un VPS](../debuter-avec-vps/).
 >
 
-Connectez-vous à votre VPS via SSH. Basculez vers l'utilisateur root, si nécessaire:
+Connectez-vous à votre VPS via SSH. Basculez vers l'utilisateur root, si nécessaire :
 
 ```sh
 ~$ sudo su -
 ~#
 ```
 
-Modifier le mot de passe de l'utilisateur actuel :
+Modifiez le mot de passe de l'utilisateur actuel :
 
 ```sh
 ~# passwd
@@ -54,14 +54,14 @@ passwd: password updated successfully
 
 > [!primary]
 >
-> Sur une distribution Linux, le mot de passe que vous entrez **n'apparaîtra pas**.
+> Sur une distribution Linux, le mot de passe que vous tapez **n'apparaîtra pas**.
 >
 
-Si vous devez autoriser la connexion en tant qu'utilisateur root, suivez les étapes de la section [this guide section](./#activer-le-mot-de-passe-root).
+Si vous devez autoriser la connexion en tant qu'utilisateur root, suivez les étapes de [cette section](./#activer-le-mot-de-passe-root).
 
 ### Modification du mot de passe si vous l'avez perdu
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; support crypté" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b736xXk06AM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
 
 #### Étape 1 : Redémarrez le VPS en mode rescue.
 
@@ -69,7 +69,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 #### Étape 2 : Identifier le point de montage
 
-Le montage est créé automatiquement. Utilisez les commandes suivantes pour identifier l'emplacement de montage de votre partition:
+Le montage est créé automatiquement. Utilisez les commandes suivantes pour identifier l'emplacement de montage de votre partition :
 
 ##### **df -h**
 
@@ -99,23 +99,23 @@ sdb       8:16   0   50G  0 disk
 └─sdb15   8:31   0  106M  0 part /mnt/sdb15
 ```
 
-L'exemple de sortie ci-dessus montre que la partition système est montée sur **/mnt/sdb1**.
+L'exemple obtenu ci-dessus montre que la partition système est montée sur **/mnt/sdb1**.
 
 #### Étape 3 : autorisations CHROOT
 
-Vous devez maintenant modifier le répertoire racine pour appliquer les modifications à votre système. Pour ce faire, utilisez la commande `chroot`:
+Vous devez maintenant modifier le répertoire racine pour appliquer les modifications à votre système. Pour ce faire, utilisez la commande `chroot` :
 
 ```sh
 chroot /mnt/sdb1/
 ```
 
-Vous pouvez vérifier en tapant la commande `ls -l`, qui répertorie le contenu stocké dans le répertoire courant de votre système:
+Vous pouvez procéder à une vérification en tapant la commande `ls -l`, qui répertorie le contenu stocké dans le répertoire courant de votre système :
 
 ```sh
 ls -l
 ```
 
-#### Étape 4 : Modifier le mot de passe (racine)
+#### Étape 4 : Modifier le mot de passe (root)
 
 Dans la dernière étape, modifiez votre mot de passe à l'aide de la commande `passwd`.
 
@@ -126,9 +126,9 @@ Retype new password:
 passwd: password updated successfully
 ```
 
-Si votre VPS est compris dans les plages actuelles (schéma de dénomination: *vps-XXXXXXX.vps.ovh.net*), vous avez initialement reçu des informations d'identification de connexion pour un utilisateur avec des autorisations élevées au lieu du compte "root" par défaut. En outre, le service SSH n'accepte pas les demandes de connexion en tant que root.
+Si votre VPS est de dernière génération (son nom est alors : *vps-XXXXXXX.vps.ovh.net*), vous avez initialement reçu des identifiants de connexion pour un utilisateur disposant de droits importants, au lieu du compte « root » par défaut. En outre, le service SSH n'accepte pas les demandes de connexion en tant que root.
 
-Il est donc nécessaire d'entrer le nom d'utilisateur que vous utilisez pour vous connecter après `passwd`:
+Il est donc nécessaire d'entrer le nom d'utilisateur que vous utilisez pour vous connecter après `passwd` :
 
 ```sh
 ~# passwd <username>
@@ -139,23 +139,23 @@ passwd: password updated successfully
 
 Vous pourrez ainsi vous reconnecter avec ce nom d'utilisateur après le redémarrage, au cas où la connexion root serait désactivée.
 
-Enfin, redémarrez votre VPS sur son lecteur dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+Enfin, redémarrez votre VPS sur son disque depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
 
 
 ### Activer le mot de passe root
 
-Si votre VPS est compris dans les plages actuelles (schéma de dénomination: *vps-XXXXXXX.vps.ovh.net*), vous avez reçu des informations d'identification de connexion pour un utilisateur avec des autorisations élevées au lieu du compte "root" par défaut. En outre, le service SSH n'accepte pas les demandes de connexion en tant que root.
+Si votre VPS est de dernière génération (son nom est alors : *vps-XXXXXXX.vps.ovh.net*), vous avez reçu des identifiants de connexion pour un utilisateur disposant de droits importants, au lieu du compte « root » par défaut. En outre, le service SSH n'accepte pas les demandes de connexion en tant que root.
 
 > [!warning]
 >
-> Activer le mot de passe root est généralement considérée comme une vulnérabilité de sécurité et n'est donc pas recommandée.
+> Activer le mot de passe root est généralement considéré comme une vulnérabilité de sécurité et n'est donc pas recommandé.
 >
-> Nous vous recommandons de prendre d'abord des mesures pour sécuriser votre VPS. Vous pouvez vous reporter à notre guide sur [Sécurisation d'un VPS](../tips-for-secure-a-vps/).
+> Nous vous recommandons de prendre d'abord des mesures pour sécuriser votre VPS. Vous pouvez vous reporter à notre guide sur la [sécurisation d'un VPS](../conseils-securisation-vps/).
 >
 
 #### Étape 1 : Modifier le fichier sshd_config
 
-Utilisez un éditeur de texte tel que vim ou nano pour modifier ce fichier de configuration:
+Utilisez un éditeur de texte tel que vim ou nano pour modifier ce fichier de configuration :
 
 ```sh
 nano /etc/ssh/sshd_config
@@ -167,7 +167,7 @@ Ajoutez la ligne suivante.
 PermitRootLogin yes
 ```
 
-Recherchez cette ligne et assurez-vous qu'elle est commentée:
+Recherchez cette ligne et assurez-vous qu'elle est commentée :
 
 ```sh
 #PermitRootLogin prohibit-password
@@ -181,14 +181,14 @@ Enregistrez le fichier et quittez l'éditeur.
 systemctl restart sshd
 ```
 
-Cela devrait suffire pour appliquer les modifications. Vous pouvez également redémarrer le VPS ("~$ reboot").
+Cela devrait suffire pour appliquer les modifications. Vous pouvez également redémarrer le VPS (```~$ reboot```).
 
-### Incidents
+### Dysfonctionnement
 
-Si vous rencontrez des problèmes de démarrage après avoir modifié votre mot de passe et lancé le redémarrage:
+Si vous rencontrez des problèmes de démarrage après avoir modifié votre mot de passe et lancé le redémarrage :
 
-- Consultez le KVM pour savoir pourquoi le VPS ne peut pas démarrer. Consultez le [guide KVM](../use-kvm-for-vps/) pour obtenir de l'aide sur l'utilisation de cette fonctionnalité dans le Panneau de configuration OVHcloud.
-- Si le KVM affiche le démarrage du VPS ou s'il ne parvient pas à trouver le disque, assurez-vous que [boot logs enabled](../use-kvm-for-vps/). Transmettez les journaux pertinents à nos équipes de support en créant une demande de support dans votre [Panneau de configuration OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new) pour plus d'informations.
+- Consultez le KVM pour savoir pourquoi le VPS ne peut pas démarrer. Consultez le [guide KVM](../utilisation-kvm-sur-vps/) pour obtenir de l'aide sur l'utilisation de cette fonctionnalité dans l'espace client OVHcloud.
+- Si le KVM affiche le démarrage du VPS ou s'il ne parvient pas à trouver le disque, assurez-vous que le [bootlog est activé](../affichage-bootlog-dans-kvm/). Transmettez les logs pertinents à nos équipes de support en créant une demande de support dans votre [espace client OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new) pour plus d'informations.
 
 ## Allez plus loin
 
@@ -196,4 +196,4 @@ Si vous rencontrez des problèmes de démarrage après avoir modifié votre mot 
 
 [Sécuriser un VPS](../conseils-securisation-vps/)
 
-Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.
