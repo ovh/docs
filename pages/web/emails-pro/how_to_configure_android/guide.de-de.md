@@ -37,7 +37,7 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 
 > [!primary]
 >
-> In dieser Anleitung verwenden wir als Serverbezeichnung: pro**X**.mail.ovh.net. Das „X“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
+> In dieser Anleitung verwenden wir als Serverbezeichnung: pro**?**.mail.ovh.net. Das „?“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
 > 
 > Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager), wenn Sie im Bereich `Web Cloud`{.action} im Menü links unter `E-Mail Pro`{.action}
 > den Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
@@ -63,7 +63,7 @@ Geben Sie die Einstellungen des Eingangsservers ein:
 |---|---| 
 |Nutzername|Geben Sie die vollständige E-Mail-Adresse ein.|  
 |Passwort|Geben Sie das Passwort der E-Mail-Adresse ein.|
-|Server|Tragen Sie „pro**X**.mail.ovh.net“ ein.|
+|Server|Tragen Sie „pro**?**.mail.ovh.net“ ein.|
 
 Tippen Sie auf `Weiter`{.action} und geben Sie anschließend die Einstellungen des Ausgangsservers ein.
 
@@ -72,7 +72,7 @@ Tippen Sie auf `Weiter`{.action} und geben Sie anschließend die Einstellungen d
 |Anmeldung erforderlich|Stellen Sie sicher, dass Sie diesen Button aktiviert haben.|
 |Nutzername|Geben Sie die vollständige E-Mail-Adresse ein.|  
 |Passwort|Geben Sie das Passwort der E-Mail-Adresse ein.|
-|SMTP-Server|Tragen Sie „pro**X**.mail.ovh.net“ ein.|
+|SMTP-Server|Tragen Sie „pro**?**.mail.ovh.net“ ein.|
 
 Tippen Sie anschließend auf `Weiter`{.action}. Wenn Ihre Angaben korrekt sind, wird die Verbindung zu Ihrem Account hergestellt.
 
@@ -86,8 +86,8 @@ Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwen
 
 |Servertyp|Servername|Sicherheitstyp|Port|
 |---|---|---|---|
-|Eingangsserver|pro**X**.mail.ovh.net|SSL/TLS|993|
-|Ausgangsserver|pro**X**.mail.ovh.net|STARTTLS|587|
+|Eingangsserver|pro**?**.mail.ovh.net|SSL/TLS|993|
+|Ausgangsserver|pro**?**.mail.ovh.net|STARTTLS|587|
 
 ### Schritt 2: E-Mail-Adresse verwenden
 

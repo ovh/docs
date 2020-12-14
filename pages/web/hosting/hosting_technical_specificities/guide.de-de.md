@@ -86,7 +86,7 @@ PHP-FPM ist auf der Webhosting Infrastruktur standardmäßig aktiviert, um PHP-A
 
 |Variable|ohne PHP-FPM|mit PHP-FPM|
 |---|---|---|
-|max_execution_time|120s|300s|
+|max_execution_time|120s|165s|
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 

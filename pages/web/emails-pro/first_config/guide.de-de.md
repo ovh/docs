@@ -119,12 +119,12 @@ Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispiel
 
 |Servertyp|Servername|Sicherheitstyp|Port|
 |---|---|---|---|
-|Eingangsserver|pro**X**.mail.ovh.net|SSL/TLS|993|
-|Ausgangsserver|pro**X**.mail.ovh.net|STARTTLS|587|
+|Eingangsserver|pro**?**.mail.ovh.net|SSL/TLS|993|
+|Ausgangsserver|pro**?**.mail.ovh.net|STARTTLS|587|
 
 > [!primary]
 >
-> In den Anleitungen verwenden wir als Serverbezeichnung: pro**X**.mail.ovh.net. Das „X“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
+> In den Anleitungen verwenden wir als Serverbezeichnung: pro**?**.mail.ovh.net. Das „?“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
 > 
 > Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager), wenn Sie im Bereich `Web Cloud`{.action} im Menü links unter `E-Mail Pro`{.action}
 > den Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.

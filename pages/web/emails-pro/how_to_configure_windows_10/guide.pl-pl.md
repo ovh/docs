@@ -33,7 +33,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 > [!primary]
 >
-> W przewodniku używamy oznaczenia serwera: pro**X**.mail.ovh.net. Zastąp “X” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
+> W przewodniku używamy oznaczenia serwera: pro**?**.mail.ovh.net. Zastąp “?” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
 > 
 > Odszukaj cyfrę w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, w sekcji `Web Cloud`{.action} =>  `E-mail Pro`{.action} => w kolumnie po lewej stronie. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
 >
@@ -57,9 +57,9 @@ Następnie wpisz informacje:
 |Hasło|Wpisz hasło przypisane do tego konta e-mail.|
 |Nazwa konta |Wpisz nazwę pozwalającą odróżnić to konto od Twoich pozostałych kont wyświetlających się w aplikacji Poczta.|
 |Wysyłaj wiadomości e-mail, używając tej nazwy|Wpisz nazwę nadawcy, która będzie się wyświetlać podczas wysyłki wiadomości e-mail przy użyciu tego konta.|
-|Serwer poczty przychodzącej|Wpisz serwer „pro**X**.mail.ovh.net”.|
+|Serwer poczty przychodzącej|Wpisz serwer „pro**?**.mail.ovh.net”.|
 |Typ konta|Rekomendujemy użycie IMAP4. Możesz jednak wybrać w rozwijanym menu **POP** (przechowywanie e-maili lokalnie w aplikacji Poczta).|
-|Serwer poczty wychodzącej|Wpisz serwer „pro**X**.mail.ovh.net”.|
+|Serwer poczty wychodzącej|Wpisz serwer „pro**?**.mail.ovh.net”.|
 
 Upewnij się, że zaznaczone są następujące kratki:
 
@@ -78,8 +78,8 @@ Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta, poniżej znajd
 
 |Typ serwera|Nazwa serwera|SSL|Port|
 |---|---|---|---|
-|Serwer poczty przychodzącej|pro**X**.mail.ovh.net|Tak|993|
-|Serwer poczty wychodzącej|pro**X**.mail.ovh.net|Tak|587|
+|Serwer poczty przychodzącej|pro**?**.mail.ovh.net|Tak|993|
+|Serwer poczty wychodzącej|pro**?**.mail.ovh.net|Tak|587|
 
 ### Etap 2: korzystanie z konta e-mail
 

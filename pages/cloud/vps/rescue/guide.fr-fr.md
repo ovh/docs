@@ -5,13 +5,13 @@ excerpt: 'Découvrez comment redémarrer votre VPS en mode rescue'
 section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 17/10/2018**
+**Dernière mise à jour le 24 novembre 2020**
 
 ## Objectif
 
 Le mode rescue est un outil de votre VPS. Celui-ci vous permet de démarrer votre serveur sur un système d'exploitation temporaire. Vous aurez ainsi la possibilité de diagnostiquer et résoudre les problèmes sur votre système d'exploitation principal. 
 
-Via le mode rescue, vous pouvez :
+Via le mode rescue, vous pouvez :
 
   - changer votre mot de passe root ;
   - diagnostiquer des problèmes réseau ;
@@ -19,44 +19,62 @@ Via le mode rescue, vous pouvez :
   - corriger une mauvaise configuration du pare-feu logiciel ;
   - tester les performances du disque.
 
-Effectuer des vérifications en mode rescue vous aide également à déterminer si un problème est lié au logiciel ou au matériel.
+Effectuer des vérifications en mode rescue vous aide également à déterminer si un problème est lié au logiciel ou au matériel. Nous vous recommandons de le faire avant de contacter nos équipes de support.
 
 > [!warning]
 >
 > Si vous avez des services en production sur votre VPS, le mode rescue les interrompt tant que la machine n’a pas été redémarrée en mode normal.
 > 
 
-**Ce guide vous explique comment redémarrer votre VPS en mode rescue.**
+**Ce guide explique comment redémarrer votre VPS en mode rescue.**
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Avoir votre [VPS OVHcloud](https://www.ovhcloud.com/fr/vps/){.external} déjà configuré.
 
+> [!warning]
+>
+> OVHcloud met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section “Aller plus loin” de ce guide.
+> 
 
 ## En pratique
 
-Dans votre espace client OVH, rendez-vous dans la partie `Cloud` et choisissez votre VPS dans la colonne de gauche : :
+### Activation du mode rescue
 
-![Zone VPS dans le Panneau de configuration](images/vps_rescue1.png){.thumbnail}
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), accédez à la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur dans la liste de navigation de gauche sous `VPS`{.action}.
 
-Sur l'écran principal de votre VPS, cliquez sur le bouton `Redémarrer en mode rescue` et confirmez ce choix :
+#### Avec une offre VPS actuelle
 
-![Confirmer le mode secours](images/vps_rescue2.png){.thumbnail}
+Sous l'onglet `Accueil`{.action}, cliquez sur `...`{.action} à côté de « Boot » dans la zone **Votre VPS**.
 
-Une barre de progression affiche l'état d'avancement du redémarrage (cela peut prendre plusieurs minutes) :
+![configuration du mode rescue](images/rescue_new.png){.thumbnail}
 
-![Progression en mode Rescue](images/rescue_task.png){.thumbnail}
+Sélectionnez `Redémarrer en mode rescue`{.action} dans le menu.
 
-> [!primary]
+#### Avec une ancienne offre VPS
+
+Sous l'onglet `Accueil`{.action}, cliquez sur le lien de raccourci intitulé `Redémarrer en mode rescue`{.action}.
+
+![configuration du mode rescue](images/rescue_legacy.png){.thumbnail}
+
+Une fenêtre s'affiche, cliquez sur `Confirmer`{.action} pour lancer le redémarrage en mode rescue.
+
+### Utilisation du mode rescue
+
+Une fois que vous avez lancé le redémarrage, une barre de progression indique l'avancement de la tâche. Notez que cela peut prendre plusieurs minutes.
+
+> [ ! primary]
 >
-> À l’issue de cette étape, vous recevez automatiquement un e-mail avec les identifiants SSH du mode rescue. Ce message est également disponible dans votre espace client, partie `Mon compte` puis `E-mails reçus`.
-> 
+> Vous recevrez un email automatisé avec les informations d'identification SSH pour accéder au mode rescue. Veuillez attendre la réception de l'e-mail avant de prendre toute autre mesure. Cet e-mail est également disponible dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Pour le retrouver, cliquez sur le nom associé à votre identifiant OVHcloud dans la barre de menus située dans le coin supérieur droit, puis sélectionnez `E-mails de service`{.action}.
+>
 
-Vous pouvez désormais vous connecter au mode rescue de votre VPS en SSH. Une fois vos manipulations effectuées, redémarrez le serveur sur son disque dur principal via le bouton `Redémarrer mon VPS`.
-
+Vous pouvez maintenant vous connecter via SSH à votre VPS en utilisant les informations d'identification du mode rescue. Une fois vos actions terminées en mode rescue, redémarrez le VPS en mode « normal » à partir de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
 
 ## Aller plus loin
 
-[« Introduction au SSH. »](https://docs.ovh.com/fr/dedicated/ssh-introduction/)
+[Changer le mot de passe root sur un VPS](../root-password/)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+[Introduction au SSH](../../dedicated/ssh-introduction/)
+
+Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.

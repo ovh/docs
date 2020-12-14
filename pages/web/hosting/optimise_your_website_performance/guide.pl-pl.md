@@ -61,7 +61,7 @@ W przypadku korzystania z mechanizmu PHP-FPM zmieniają się niektóre zmienne s
 
 |Zmienna|bez PHP-FPM|z PHP-FPM|
 | ------------- |:-------------:| -----:|
-|max_execution_time|120 s|300 s|
+|max_execution_time|120 s|165 s|
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 

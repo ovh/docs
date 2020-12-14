@@ -38,7 +38,7 @@ Konta E-mail Pro mogą być skonfigurowane w jednym z kompatybilnych programów 
 
 > [!primary]
 >
-> W przewodniku używamy oznaczenia serwera: pro**X**.mail.ovh.net. Zastąp “X” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
+> W przewodniku używamy oznaczenia serwera: pro**?**.mail.ovh.net. Zastąp “?” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
 > 
 > Odszukaj cyfrę w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, w sekcji `Web Cloud`{.action} =>  `E-mail Pro`{.action} => w kolumnie po lewej stronie. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
 >
@@ -61,7 +61,7 @@ Podaj następnie wymagane informacje.
 
 |Informacja|Opis |
 |---|---|
-|Serwer|Wpisz serwer « pro**X**.mail.ovh.net ».|
+|Serwer|Wpisz serwer « pro**?**.mail.ovh.net ».|
 |Port|Wskaż port « 993 ».|
 |Metoda szyfrowania|Wybierz « SSL/TLS ».|
 |Wymaganie uwierzytelnienia|Nie zaznaczaj kratki « Wymagaj logowania przy użyciu bezpiecznego uwierzytelniania hasła » .|
@@ -70,7 +70,7 @@ Podaj następnie wymagane informacje.
 
 |Informacja|Opis |
 |---|---|
-|Serwer|Wpisz serwer « pro**X**.mail.ovh.net ».|
+|Serwer|Wpisz serwer « pro**?**.mail.ovh.net ».|
 |Port|Wskaż port « 587 ».|
 |Metoda szyfrowania|Wybierz « STARTTLS ».|
 |Wymaganie uwierzytelnienia|Nie zaznaczaj kratki « Wymagaj logowania przy użyciu bezpiecznego uwierzytelniania hasła » .|
@@ -85,8 +85,8 @@ Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta, poniżej znajd
 
 |Typ serwera|Nazwa serwera|Metoda szyfrowania|Port|
 |---|---|---|---|
-|Serwer poczty przychodzącej|pro**X**.mail.ovh.net|SSL/TLS|993|
-|Serwer poczty wychodzącej|pro**X**.mail.ovh.net|STARTTLS|587|
+|Serwer poczty przychodzącej|pro**?**.mail.ovh.net|SSL/TLS|993|
+|Serwer poczty wychodzącej|pro**?**.mail.ovh.net|STARTTLS|587|
 
 ### Etap 2: korzystanie z konta e-mail
 

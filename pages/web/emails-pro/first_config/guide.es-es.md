@@ -124,12 +124,12 @@ Para configurar su dirección de correo electrónico en un cliente de correo o e
 
 |Tipo de servidor|Nombre del servidor|Tipo de seguridad|Puerto|
 |---|---|---|---|
-|Entrante|pro**X**.mail.ovh.net|SSL/TLS|993|
-|Saliente|pro**X**.mail.ovh.net|STARTTLS|587|
+|Entrante|pro**?**.mail.ovh.net|SSL/TLS|993|
+|Saliente|pro**?**.mail.ovh.net|STARTTLS|587|
 
 > [!primary]
 >
-> En nuestro ejemplo, utilizamos el nombre de servidor pro**X**.mail.ovh.net. Deberá sustituir la «X» por el número que designa el servidor del servicio E-mail Pro.
+> En nuestro ejemplo, utilizamos el nombre de servidor pro**?**.mail.ovh.net. Deberá sustituir la «?» por el número que designa el servidor del servicio E-mail Pro.
 > 
 > Encontrará este número en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en el apartado `Web Cloud`{.action} de la sección `E-mail Pro`{.action},
 >  en la columna de la izquierda. El nombre del servidor puede verse en el recuadro **« Conexión »** de la pestaña `Información General`{.action}.

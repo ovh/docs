@@ -38,7 +38,7 @@ Es posible configurar sus cuentas Email Pro en el cliente de correo que usted ut
 
 > [!primary]
 >
-> En nuestro ejemplo, hemos utilizado la mención servidor: pro**X**.mail.ovh.net. Sustituya la «X» por la cifra que designa al servidor de su servicio Email Pro.
+> En nuestro ejemplo, hemos utilizado la mención servidor: pro**?**.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
 >
 > Puede consultar esta cifra en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action} y `Email Pro`{.action} en la columna de la izquierda. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
 >
@@ -63,7 +63,7 @@ Introduzca los ajustes del servidor de entrada.
 |---|---| 
 |Nombre de usuario|Introduzca la dirección de correo electrónico completa.|  
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
-|Servidor|Introduzca el servidor pro**X**.mail.ovh.net.|
+|Servidor|Introduzca el servidor pro**?**.mail.ovh.net.|
 
 Haga clic en `Siguiente`{.action} e introduzca los parámetros del servidor de salida:
 
@@ -72,7 +72,7 @@ Haga clic en `Siguiente`{.action} e introduzca los parámetros del servidor de s
 |Exigir inicio de sesión|Asegúrese de que esta opción esté activada.|
 |Nombre de usuario|Introduzca la dirección de correo electrónico completa.|  
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
-|Servidor SMTP|Introduzca el servidor pro**X**.mail.ovh.net.|
+|Servidor SMTP|Introduzca el servidor pro**?**.mail.ovh.net.|
 
 A continuación, pulse `Siguiente`{.action}. Si los datos introducidos son correctos, la aplicación se conectará a la cuenta.
 
@@ -86,8 +86,8 @@ Si la aplicación le pide que introduzca de forma manual algunos datos en las pr
 
 |Tipo de servidor|Nombre del servidor|Tipo de seguridad|Puerto|
 |---|---|---|---|
-|Entrante|pro**X**.mail.ovh.net|SSL/TLS|993|
-|Saliente|pro**X**.mail.ovh.net|STARTTLS|587|
+|Entrante|pro**?**.mail.ovh.net|SSL/TLS|993|
+|Saliente|pro**?**.mail.ovh.net|STARTTLS|587|
 
 ### 2. Utilizar la dirección de correo electrónico
 

@@ -88,7 +88,7 @@ PHP-FPM está activo por defecto en la infraestructura de alojamiento web con el
 
 |Variable|Sin PHP-FPM|Con PHP-FPM|
 |---|---|---|
-|max_execution_time|120s|300s|
+|max_execution_time|120s|165s|
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 

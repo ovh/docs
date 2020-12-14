@@ -1,7 +1,7 @@
 ---
 title: 'Creare un DNS secondario su un server dedicato'
 slug: creare-dns-secondario-server-dedicato
-excerpt: 'Come configurare un DNS secondario sul tuo server dedicato OVH'
+excerpt: 'Come configurare un DNS secondario sul tuo server dedicato OVHcloud'
 section: 'Utilizzo avanzato'
 ---
 
@@ -11,14 +11,14 @@ section: 'Utilizzo avanzato'
 
 Per utilizzare un [server dedicato](https://www.ovh.it/server_dedicati/){.external} come DNS principale per il tuo dominio, è necessario aggiungerlo sulla macchina come DNS secondario.
 
-**Questa guida ti mostra come creare e configurare un DNS secondario sul tuo server dedicato OVH.**
+**Questa guida ti mostra come creare e configurare un DNS secondario sul tuo server dedicato OVHcloud.**
 
 
 ## Prerequisiti
 
-* Disporre di un [server dedicato](https://www.ovh.it/server_dedicati/){.external} Windows
-* Aver registrato un [dominio](https://www.ovh.it/domini/){.external} e poterlo gestire dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
-* Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Disporre di un [server dedicato](https://www.ovh.it/server_dedicati/){.external}
+* Aver registrato un [dominio](https://www.ovh.it/domini/){.external} e poterlo gestire dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 
 ## Procedura
@@ -44,7 +44,7 @@ Comparirà un messaggio che conferma il record di tipo TXT per il tuo dominio.  
 
 ### Procedi alla verifica del dominio
 
-Accedi allo `Spazio Cliente OVH`{.action}, clicca sulla sezione `Web Cloud`{.action} e poi su `Domini`{.action} nel menu a sinistra per visualizzare l’elenco dei domini che gestisci:
+Accedi allo `Spazio Cliente OVHcloud`{.action}, clicca sulla sezione `Web Cloud`{.action} e poi su `Domini`{.action} nel menu a sinistra per visualizzare l’elenco dei domini che gestisci:
 
 ![Verifica del dominio](images/domain-verification-01.png){.thumbnail}
 
@@ -90,6 +90,6 @@ Clicca su`Aggiungi`{.action} per confermare il record.
 
 ## Per saperne di più
 
-[Modificare una zona DNS OVH](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/){.external}
+[Modificare una zona DNS OVHcloud](https://docs.ovh.com/it/domains/web_hosting_modifica_la_tua_zona_dns/){.external}
 
 Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.

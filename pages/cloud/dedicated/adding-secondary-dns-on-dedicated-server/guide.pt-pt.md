@@ -1,7 +1,7 @@
 ---
 title: 'Criar um DNS secundário num servidor dedicado'
 slug: criar-dns-secundario-servidor-dedicado
-excerpt: 'Saiba como criar um DNS secundário para o seu servidor dedicado OVH'
+excerpt: 'Saiba como criar um DNS secundário para o seu servidor dedicado OVHcloud'
 section: 'Uso avançado'
 ---
 
@@ -11,14 +11,14 @@ section: 'Uso avançado'
 
 Se pretender utilizar o seu [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external} enquanto DNS principal para o seu nome de domínio, pode adicioná-lo enquanto DNS secundário ao seu servidor.
 
-**Este manual explica como criar um DNS secundário e adicioná-lo ao seu servidor dedicado da OVH.**
+**Este manual explica como criar um DNS secundário e adicioná-lo ao seu servidor dedicado da OVHcloud.**
 
 
 ## Requisitos
 
-* Dispor de um [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external} com o Windows instalado.
-* Dispor de um [nome de domínio](https://www.ovh.pt/dominios/){.external} e poder geri-lo através da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
-* Aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+* Dispor de um [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external}.
+* Dispor de um [nome de domínio](https://www.ovh.pt/dominios/){.external} e poder geri-lo através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
+* Aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 
 ## Instruções
@@ -44,7 +44,7 @@ Uma mensagem irá aparecer para confirmar o registo de tipo TXT para o seu domí
 
 ### Verificar o nome de domínio
 
-Depois de aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no menu `Web Cloud`{.action} e selecione a secção `Domínios`{.action} na barra à esquerda para ver todos os domínios geridos por si:
+Depois de aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no menu `Web Cloud`{.action} e selecione a secção `Domínios`{.action} na barra à esquerda para ver todos os domínios geridos por si:
 
 ![Verificação do domínio](images/domain-verification-01.png){.thumbnail}
 
@@ -90,6 +90,6 @@ Por fim, clique em `Adicionar`{.action} para confirmar a sua entrada:
 
 ## Quer saber mais?
 
-[Editar uma zona DNS OVH](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external} (versão em inglês- Editing an OVH DNS zone).
+[Editar uma zona DNS OVHcloud](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external} (versão em inglês- Editing an OVHcloud DNS zone).
 
 Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
