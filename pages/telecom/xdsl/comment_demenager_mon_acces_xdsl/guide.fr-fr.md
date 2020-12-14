@@ -20,7 +20,7 @@ Niveau : Débutant
 ## Prérequis
 
 -   Disposer d'un abonnement xDSL(ADSL/VDSL)ou Ftth actif. Les accès SDSL ne peuvent être déménagé.
--   Disposer d'une offre xDSL récente. (cela inclus les offres Connect, Express, Entreprise et Serenity)
+-   Disposer d'une offre xDSL récente. (cela inclut les offres Connect, Express, Entreprise et Serenity)
 -   La nouvelle adresse doit-être différente de l'ancienne.
 
 
