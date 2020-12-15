@@ -1,7 +1,7 @@
 ---
-title: 'Configurer un IP en alias'
-slug: network-ipaliasing-vps
-excerpt: 'Ce guide explique comment ajouter des IPs Failover a votre configuration'
+title: "Configurer son adresse IP en alias"
+slug: ip-aliasing-vps
+excerpt: ''Découvrez comment ajouter des adresses IP fail-over à votre configuration VPS'
 section: 'Réseau et IP'
 ---
 
@@ -22,7 +22,7 @@ L'alias d'IP (*IP aliasing* en anglais) est une configuration spéciale du rése
 
 ## Prérequis
 
-- un [VPS](https://www.ovhcloud.com/fr-ca/vps/) dans votre compte OVHcloud
+- un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
 - une adresse IP fail-over ou un bloc IP fail-over (RIPE)
 - un accès administrateur (root) via SSH ou un remote desktop (Windows) sur votre serveur
 
