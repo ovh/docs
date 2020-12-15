@@ -19,6 +19,11 @@ There are two aspects to migrating an infrastructure to a Managed Bare Metal sol
 
 **This guide explains how to cover all aspects of migrating a pre-existing OVHcloud infrastructure to a Managed Bare Metal solution.**
 
+> [!primary]
+>
+> Should you choose to migrate an infrastructure to a new vDC instead, please follow [this dedicated guide](../service-migration-vdc).
+> 
+
 ## Requirements
 
 - a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-gb/managed-bare-metal/)
@@ -58,7 +63,7 @@ Please refer to our guide on [Enabling Virtual Machine Encryption](../vm-encrypt
 > VMnetworks located in the same region cannot be interconnected in a vRack.
 >
 
-As part of a migration process, you can link your Managed Mare Metal services within the same vRack. Please consult our guide to [Using Private Cloud within a vRack](../using-managed-bare-metal-with-vrack/).
+As part of a migration process, you can link your Managed Mare Metal services within the same vRack. Please consult our guide to [Using Managed Bare Metal within a vRack](../using-managed-bare-metal-with-vrack/).
 
 
 ##### **Public network**
@@ -135,7 +140,7 @@ Here is a checklist of aspects to take into account:
 
 ##### **Networks**
 
-Migration involves recreating the vRack VLAN-backed portgroups on the destination Managed Bare Metal to ensure VM network consistency. If vRack VLANs are in use on the source infrastructure vRack can be used to stretch the L2 domain to the destination Managed Bare Metal to allow for a more phased migration plan. For more information consult our guide about [Using Private Cloud within a vRack](../using-managed-bare-metal-with-vrack/).
+Migration involves recreating the vRack VLAN-backed portgroups on the destination Managed Bare Metal to ensure VM network consistency. If vRack VLANs are in use on the source infrastructure vRack can be used to stretch the L2 domain to the destination Managed Bare Metal to allow for a more phased migration plan. For more information consult our guide about [Using Managed Bare Metal within a vRack](../using-managed-bare-metal-with-vrack/).
 
 Here is a checklist of aspects to take into account:
 
@@ -150,7 +155,7 @@ For more information, consult VMware's documentation on [how to edit general dis
 
 ##### **OVHcloud provided Veeam Backup**
 
-If OVHcloud provided Veeam is currently in use to backup VMs on the source infrastructure, it will be necessary to recreate the backup configuration for the VMs in the destination HManaged Bare Metal post-migration.
+If OVHcloud provided Veeam is currently in use to backup VMs on the source infrastructure, it will be necessary to recreate the backup configuration for the VMs in the destination Managed Bare Metal post-migration.
 
 Here is a checklist of aspects to take into account:
 
