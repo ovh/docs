@@ -22,7 +22,7 @@ Pode ser necessário alterar a palavra-passe root do sistema operativo Linux. Ex
 
 ## Requisitos
 
-- Ter o seu [VPS OVHcloud](https://www.ovhcloud.com/fr/vps/){.external} já configurado
+- Ter o seu [VPS OVHcloud](https://www.ovhcloud.com/pt/vps/){.external} já configurado
 - Ter dados de acesso recebidos por e-mail após a instalação (se ainda estiverem válidos)
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} (para utilizar o modo rescue)
 
@@ -67,7 +67,7 @@ Se pretender autorizar a ligação como utilizador root, siga os passos [indicad
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-#### 1 - Reinicie o VPS em modo rescue.
+#### Etapa 1: Reinicie o VPS em modo rescue.
 
 Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e reinicie o VPS em modo rescue. Se precisar de mais instruções sobre a utilização do modo rescue com um VPS, consulte o [guia do modo rescue](../rescue/).
 
@@ -119,7 +119,7 @@ Pode efetuar uma verificação introduzindo o comando `ls -l`, que regista o con
 l
 ```
 
-#### 4 -  Alterar a palavra-passe (root)
+#### Etapa4: Alterar a palavra-passe (root)
 
 Na última etapa, altere a sua palavra-passe através do comando `passwd`.
 
@@ -157,7 +157,7 @@ Se o VPS for de última geração (o seu nome é: *vps-XXXXXXX.vps.ovh.net*), re
 > Recomendamos que tome primeiro medidas para proteger o seu VPS. Consulte o nosso manual sobre a [segurança de um VPS](../como-proteger-vps/).
 >
 
-#### 1 - Modificar o ficheiro sshd_config
+#### Etapa 1: Modificar o ficheiro sshd_config
 
 Utilize um editor de texto tal que vim ou nano para alterar este ficheiro de configuração:
 
