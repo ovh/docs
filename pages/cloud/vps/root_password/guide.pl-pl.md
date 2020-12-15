@@ -196,7 +196,7 @@ Jeśli po zmianie hasła i uruchomieniu pojawią się problemy z jego rozpoczęc
 
 ## Sprawdź również
 
-[Wprowadzenie do protokołów SSH](../../dedicated/ssh-introduction/)
+[Wprowadzenie do protokołów SSH](../../dedicated/ssh-wprowadzenie/)
 
 [Zabezpieczenie serwera VPS](../porady-zabezpieczenie-vps/)
 
