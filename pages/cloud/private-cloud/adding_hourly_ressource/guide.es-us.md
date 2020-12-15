@@ -9,14 +9,14 @@ section: 'Funcionalidades de OVHcloud'
 
 ## Objetivo
 
-La solución [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external} permite disfrutar de recursos con facturación por horas.
+La solución [Hosted Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/){.external} permite disfrutar de recursos con facturación por horas.
 
 **Esta guía explica cómo añadir recursos por horas desde el panel de administración vSphere de Hosted Private Cloud.**
 
 ## Requisitos
 
-* Tener contratado un servicio [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external}.
-* [Conceder al usuario el permiso "Adición de recursos"](../cambiar-los-permisos-de-un-usuario/) para el datacenter correspondiente desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) {.external}.
+* Tener contratado un servicio [Hosted Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/){.external}.
+* [Conceder al usuario el permiso "Adición de recursos"](../cambiar-los-permisos-de-un-usuario/) para el datacenter correspondiente desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) {.external}.
 * Estar conectado al cliente vSphere.
 
 ## Procedimiento
