@@ -19,7 +19,7 @@ Il peut être nécessaire de modifier le mot de passe root sur votre système d'
 
 ## Prérequis
 
-- Avoir votre [VPS OVHcloud](https://www.ovhcloud.com/fr/vps/){.external} déjà configuré
+- Avoir votre [VPS OVHcloud](https://www.ovhcloud.com/fr-ca/vps/){.external} déjà configuré
 - Disposer des identifiants de connexion reçus par e-mail après l'installation (s'ils sont toujours valides)
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} (pour utiliser le mode rescue)
 
