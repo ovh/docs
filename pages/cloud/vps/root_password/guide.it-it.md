@@ -196,7 +196,7 @@ Se dopo aver modificato la password e avviato il riavvio riscontri problemi di a
 
 ## Per saperne di più
 
-[Introduzione a SSH](../../dedicated/ssh-introduction/)
+[Introduzione a SSH](../../dedicated/introduzione-ssh/)
 
 [Mettere in sicurezza un VPS](../consigli-sicurezza-vps/)
 
