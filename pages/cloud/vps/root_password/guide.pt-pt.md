@@ -61,7 +61,7 @@ passwd: password updated successfully
 > Numa distribuição Linux, a palavra-passe que escreve **não** irá aparecer.
 >
 
-Se pretender autorizar a ligação como utilizador root, siga os passos [indicados](./#ativar-a-password-root).
+Se pretender autorizar a ligação como utilizador root, siga os passos [indicados](./#ativar-a-password-root_1).
 
 ### Modificação da password se a perdeu
 
