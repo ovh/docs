@@ -2,7 +2,6 @@
 title: 'Adding hourly resources'
 slug: adding-hourly-resources
 excerpt: 'Find out how to add resources that are billed on an hourly basis'
-legacy_guide_number: '7766721'
 section: 'OVHcloud Features'
 ---
 
@@ -10,14 +9,14 @@ section: 'OVHcloud Features'
 
 ## Objective
 
-With our [Hosted Private Cloud solutions](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/){.external}, you can add resources that are billed per hour of usage.
+With our [Hosted Private Cloud solutions](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/){.external}, you can add resources that are billed per hour of usage.
 
 **This guide will show you how to add hourly resources via the Hosted Private Cloud vSphere interface.**
 
 ## Requirements
 
-- a [Hosted Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/){.external} solution
-- [the "Add resources"](../change-users-rights/){.external} right for the datacentre concerned (this right is granted via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external})
+- a [Hosted Private Cloud](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/){.external} solution
+- [the "Add resources"](../change-users-rights/){.external} right for the datacentre concerned (this right is granted via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external})
 - access to the vSphere client
 
 ## Instructions

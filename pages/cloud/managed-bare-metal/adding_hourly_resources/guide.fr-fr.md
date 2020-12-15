@@ -1,8 +1,9 @@
 ---
 title: 'Ajouter une ressource à l’heure'
 slug: ajouter-une-ressource-a-l-heure
+routes:
+    canonical: 'https://docs.ovh.com/fr/private-cloud/ajouter-une-ressource-a-l-heure/'
 excerpt: 'Découvrez comment ajouter des ressources en facturation horaire'
-legacy_guide_number: '7766721'
 section: 'Fonctionnalités OVHcloud'
 ---
 
@@ -10,16 +11,15 @@ section: 'Fonctionnalités OVHcloud'
 
 ## Objectif
 
-L'offre [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external} vous permet d'ajouter des ressources facturées à l'heure.
+L'offre [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external} vous permet d'ajouter des ressources facturées à l'heure.
 
-**Ce guide décrit comment ajouter une ressource horaire depuis l'interface vSphere du Hosted Private Cloud.**
+**Ce guide décrit comment ajouter une ressource horaire depuis l'interface vSphere du Managed Bare Metal.**
 
 ## Prérequis
 
-* Posséder une offre [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+* Posséder une offre [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external}.
 * [Donner le droit "Ajout de ressources"](../changer-les-droits-d-un-utilisateur/) pour le datacenter concerné à l'utilisateur depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 * Être connecté au client vSphere.
-
 
 ## En pratique
 
@@ -27,24 +27,24 @@ L'offre [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/h
 
 Afin d'accéder à l'interface permettant d'ajouter des ressources horaires, vous devez sélectionner le datacenter puis cliquer sur l'onglet `Configure`{.action} et enfin sur `Add host`{.action}.
 
-![Ajout d'un host](images/addhost_01.png){.thumbnail}
+![Ajout d'un host](images/addhost_ess_01.png){.thumbnail}
 
 Dans notre exemple, nous allons ajouter un serveur hôte facturé à l'heure. Une fois le choix du modèle effectué, cliquez sur le bouton `Next`{.action}. À noter que pour ajouter un datastore, il suffit de sélectionner l'onglet `Add storage`{.action}.
 
-![Ajout d'un host](images/addhost_03.png){.thumbnail}
+![Ajout d'un host](images/addhost_ess_02.png){.thumbnail}
 
 
 ### Valider la commande
 
 Afin de valider et finaliser votre commande, il est nécessaire de cliquer de nouveau sur le bouton `Next`{.action}.
 
-![Confirmation de commande](images/addhost_04.png){.thumbnail}
+![Confirmation de commande](images/addhost_ess_03.png){.thumbnail}
 
 ### Suivre l’installation
 
 Dès que votre commande est validée, vous pouvez suivre l'avancement de l'ajout de la ressource.
 
-![suivi d'installation](images/addhost_06.png){.thumbnail}
+![suivi d'installation](images/addhost_ess_04.png){.thumbnail}
 
 De plus, une tâche apparaîtra dans les tâches récentes de votre vSphere. Celle-ci vous permettra également de suivre l'avancée de l'ajout de la ressource.
 
