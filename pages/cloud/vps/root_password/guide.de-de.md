@@ -62,7 +62,7 @@ passwd: password updated successfully
 > Bei einer Linux-Distribution wird das von Ihnen eingegebene **Passwort nicht angezeigt**.
 >
 
-Wenn Sie die Verbindung als Root-Benutzer erlauben möchten, folgen Sie den Schritten in [diesem Abschnitt](./#root-Passwort aktivieren).
+Wenn Sie die Verbindung als Root-Benutzer erlauben möchten, folgen Sie den Schritten in [diesem Abschnitt](./#root-passwort-aktivieren_1).
 
 ### Änderung des Passworts, wenn Sie es verloren haben
 
