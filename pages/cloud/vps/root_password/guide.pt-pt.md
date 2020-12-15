@@ -5,111 +5,199 @@ excerpt: Aprenda a alterar a palavra-passe root do seu VPS
 section: Diagnóstico e Modo Rescue
 ---
 
-**Última atualização 27/06/2018**
+**Última atualização: 10 de novembro de 2020**
 
-## Sumário
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-Quando instalar um sistema operativo, irá receber uma palavra-passe de acesso root. Para maior segurança, sugerimos a alteração da mesma, conforme as indicações apresentadas no [Guia Proteger VPS](https://docs.ovh.com/pt/vps/como-proteger-vps/).  Quer alterar a palavra-passe e não consegue encontrá-la? O presente guia também inclui instruções para este tipo de casos (com ou sem acesso à password root).
+## Objetivo
+
+Pode ser necessário alterar a palavra-passe root do sistema operativo Linux. Existem dois cenários possíveis:
+
+- Pode sempre ligar-se através de SSH
+- Não pode ligar-se através de SSH porque perdeu a palavra-passe
+
+**Este guia explica como alterar a sua palavra-passe de administrador em função destas duas situações.**
 
 ## Requisitos
 
-- Estar ligado ao VPS com protocolo SSH (acesso root)
-- [Reiniciar o VPS em Modo Rescue](https://docs.ovh.com/pt/vps/rescue/)
+- Ter o seu [VPS OVHcloud](https://www.ovhcloud.com/fr/vps/){.external} já configurado
+- Ter dados de acesso recebidos por e-mail após a instalação (se ainda estiverem válidos)
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} (para utilizar o modo rescue)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+> [!warning]
+>
+> A utilização e a gestão dos serviços da OVHcloud são da responsabilidade do cliente. A OVH não tem permissões de acesso aos VPS e o cliente é o único responsável pela gestão e pela segurança do serviço. Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção “Quer saber mais?” deste manual.
+> 
 
 ## Instruções
 
-### Alterar palavra-passe com dados de acesso root.
+### Modificação da password se tem sempre um acesso (sudo ou root)
 
-Se tiver a palavra-passe, o processo é mais simples. Aceda ao seu servidor e introduza este comando:
+> [!primary]
+>
+> Para mais informações sobre a ligação ao seu VPS, consulte o nosso guia [Começar com um VPS](../instalar-gerir-vps/).
+>
+
+Ligue-se ao seu VPS através de SSH. Migre para o utilizador root, se necessário:
 
 ```sh
-passwd
+~$ sudo su -
+~#
 ```
 
-De seguida, deverá indicar a nova palavra-passe e confirmar a mesma. Após a introdução da nova palavra-passe, irá receber uma confirmação:
+Altere a palavra-passe do utilizador atual:
 
 ```sh
-Enter new UNIX password:
-Retype new UNIX password:
+~# passwd
+New password:
+Retype new password:
 passwd: password updated successfully
 ```
 
 > [!primary]
 >
-> Com um sistema Linux, a palavra-passe escolhida **não será mostrada**.
-> 
+> Numa distribuição Linux, a palavra-passe que escreve **não** irá aparecer.
+>
 
-### Alterar palavra-passe em caso de perda da mesma
+Se pretender autorizar a ligação como utilizador root, siga os passos [indicados](./#ativar-a-password-root).
 
-#### 1ª Etapa: identificar o ponto de montagem da partição
+### Modificação da password se a perdeu
 
-No VPS 2016, partição é montada automaticamente. Por isso convém identificar a localização da partição. Para tal, pode usar dois comandos:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-##### df -h
+#### 1 - Reinicie o VPS em modo rescue.
+
+Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e reinicie o VPS em modo rescue. Se precisar de mais instruções sobre a utilização do modo rescue com um VPS, consulte o [guia do modo rescue](../rescue/).
+
+#### Etapa 2: Identificar o ponto de montagem
+
+A montagem é criada automaticamente. Utilize os seguintes comandos para identificar a localização de montagem da sua partição:
+
+##### **df -h**
 
 ```sh
-root@rescue-pro:~# df -h
-Size Used Avail Use% Mounted on
-/dev/vda1 4.7G 1.3G 3.2G 29% /
-udev 10M 0 10M 0% /dev
-tmpfs 774M 8.4M 766M 2% /run
-tmpfs 1.9G 0 1.9G 0% /dev/shm
+df -h
+Filesystem Size Used Avail Use% Mounted on
+udev 5.8G 0 5.8G 0% /dev
+tmpfs 1.2G 17M 1.2G 2% /run
+/dev/sda1 2.4G 1.5G 788M 66% /
+tmpfs 5.8G 0 5.8G 0% /dev/shm
 tmpfs 5.0M 0 5.0M 0% /run/lock
-tmpfs 1.9G 0 1.9G 0% /sys/fs/cgroup
-/dev/vdb1 20G 934M 18G 5% /mnt/vdb1
+tmpfs 5.8G 0 5.8G 0% /sys/fs/cgroup
+/dev/sdb1 49G 1.2G 48G 3% /mnt/sdb1
+/dev/sdb15 105M 3.6M 101M 4% /mnt/sdb15
 ```
 
-##### lsblk
+##### **lsblk**
 
 ```sh
-root@rescue-pro:~# lsblk
+lsblk
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-vda 254:0 0 4.9G 0 disk
-└─vda1 254:1 0 4.9G 0 part /
-vdb 254:16 0 20G 0 disk
-└─vdb1 254:17 0 20G 0 part /mnt/vdb1
+sda 8:0 0 2.5G 0 disk
+└ ─ sda1 8:1 0 2.5G 0 parte /
+sdb 8:16 0 50G 0 disk
+├ ─ sdb1 8:17 0 49.9G 0 parte /mnt/sdb1
+├ ─ sdb14 8:30 0 4M 0 parte
+└ ─ sdb15 8:31 0 106M 0 parte /mnt/sdb15
 ```
 
-A imagem mostra que a partição está montada em **/mnt/vdb1**.
+O exemplo acima mostra que a partição do sistema está montada em **/mnt/sdb1**.
 
+#### Etapa 3: autorizações CHROOT
 
-#### 2ª Etapa: permissões CHROOT
-
-Para que as alterações tenham efeito no sistema, tem de alterar a pasta (diretório) root. Esta ação é efetuada através do comando `chroot`. Instruções:
+Agora tem de alterar a pasta raiz para aplicar as alterações ao sistema. Para isso, utilize o comando `chroot`:
 
 ```sh
-root@rescue-pro:~# chroot /mnt/vdb1/
-root@rescue-pro:/#
+número /mnt/sdb1/
 ```
 
-Para confirmar, use o comando `ls -l`. Este comando irá listar o conteúdo da pasta root do seu sistema.
+Pode efetuar uma verificação introduzindo o comando `ls -l`, que regista o conteúdo armazenado no diretório corrente do seu sistema:
 
 ```sh
-root@rescue-pro:/# ls -l
+l
 ```
 
-#### 3ª Etapa: alterar palavra-passe root
+#### 4 -  Alterar a palavra-passe (root)
 
-Agora só falta alterar a palavra-passe root com o comando `passwd`:
-
-```sh
-passwd
-```
+Na última etapa, altere a sua palavra-passe através do comando `passwd`.
 
 ```sh
-Enter new UNIX password:
-Retype new UNIX password:
+~# passwd
+New password:
+Retype new password:
 passwd: password updated successfully
 ```
 
-Para terminar, reinicie o VPS (modo normal) na Área de Cliente OVH.
+Se o VPS for de última geração (o seu nome é: *vps-XXXXXXX.vps.ovh.net*), recebeu inicialmente dados de acesso para um utilizador com direitos importantes, em vez da conta "root" predefinida. Além disso, o serviço SSH não aceita os pedidos de ligação como root.
 
-## Quer saber mais?
+É necessário introduzir o nome de utilizador que utiliza para se ligar após a `passwd`:
 
-[Introdução ao SSH](https://docs.ovh.com/pt/dedicated/ssh-introducao/){.external}
+```sh
+~# passwd <username>
+New password:
+Retype new password:
+passwd: password updated successfully
+```
 
-[Modo Rescue para VPS](https://docs.ovh.com/pt/vps/rescue/){.external}
+Assim, poderá voltar a ligar-se com este nome de utilizador após o reboot, caso a ligação root esteja desativada.
 
-Fale com a nossa comunidade: <https://community.ovh.com/en/>.
+Por fim, reinicie o seu VPS no seu disco a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+
+
+### Ativar a password root
+
+Se o VPS for de última geração (o seu nome é: *vps-XXXXXXX.vps.ovh.net*), recebeu dados de acesso para um utilizador com direitos importantes, em vez da conta "root" predefinida. Além disso, o serviço SSH não aceita os pedidos de ligação como root.
+
+> [!warning]
+>
+> Ativar a palavra-passe root é geralmente considerada uma vulnerabilidade de segurança, pelo que não é recomendado.
+>
+> Recomendamos que tome primeiro medidas para proteger o seu VPS. Consulte o nosso manual sobre a [segurança de um VPS](../como-proteger-vps/).
+>
+
+#### 1 - Modificar o ficheiro sshd_config
+
+Utilize um editor de texto tal que vim ou nano para alterar este ficheiro de configuração:
+
+```sh
+nano /etc/ssh/sshd_config
+```
+
+Adicione a seguinte linha.
+
+```sh
+PermitRootLogin yes
+```
+
+Procure esta linha e certifique-se de que ela é comentada:
+
+```sh
+#PermitRootLogin prohibit-password
+```
+
+Registe o ficheiro e saia do editor.
+
+#### Etapa 2: Reiniciar o serviço SSH
+
+```sh
+systemctl restart sshd
+```
+
+Tal deverá ser suficiente para aplicar as alterações. Também pode reiniciar o VPS (```~$ reboot```).
+
+### Falha
+
+Se tiver problemas de arranque depois de alterar a sua palavra-passe e iniciar a reinicialização:
+
+- Consulte o KVM para saber por que o VPS não pode iniciar. Consulte o [guia KVM](../utilizar_o_kvm_para_um_servidor_vps/) para obter ajuda na utilização desta funcionalidade na Área de Cliente OVHcloud.
+- Se o KVM mostrar o arranque do VPS ou se este não conseguir encontrar o disco, certifique-se de que o [bootlog está ativado](https://docs.ovh.com/gb/en/vps/displaying-boot-log-in-the-kvm/). Transmita os logs pertinentes às nossas equipas de suporte criando um pedido de suporte na sua [Área de Cliente OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new) para mais informações.
+
+## Vá mais longe
+
+[Consulte o manual Introdução ao SSH.](../../dedicated/ssh-introducao/)
+
+[Como proteger um VPS](../como-proteger-vps/)
+
+Junte-se à nossa comunidade de utilizadores <https://community.ovh.com/en/>.
