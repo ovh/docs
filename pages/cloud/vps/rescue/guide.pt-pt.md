@@ -5,51 +5,80 @@ excerpt: Saiba como iniciar o VPS em Modo Rescue
 section: Diagnóstico e Modo Rescue
 ---
 
-**Última atualização 18/04/2018**
+**Última atualização: 24 de novembro de 2020**
 
-## Sumário
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-O Modo Rescue permite iniciar o seu servidor com uma configuração OVH independente. Desta forma, o seu disco poderá ser montado como uma partição autónoma.
+## Objetivo
 
-Com esta solução pode realizar todo o tido de testes e alterações, evitando um número elevado de operações no servidor. Este tipo de acesso também é útil para corrigir um erro que levou à interrupção do acesso ao disco do servidor.
+O modo rescue é uma ferramenta do seu VPS. que lhe permite iniciar o seu servidor num sistema operativo temporário. Assim, poderá diagnosticar e resolver problemas no seu sistema operativo principal. 
+
+Através do modo rescue, pode:
+
+  - alterar a palavra-passe root;
+  - diagnosticar problemas de rede;
+  - reparar um sistema operativo defeituoso;
+  - corrigir uma má configuração da firewall por software;
+  - testar as performances do disco.
+
+Verificar o modo rescue também ajuda a determinar se existe um problema relacionado com o software ou o hardware. Recomendamos que o faça antes de contactar as nossas equipas de suporte.
 
 > [!warning]
 >
-> O Modo Rescue irá interromper as operações em curso. Estas só serão retomadas quando o servidor for reiniciado no modo normal.
+> Se tem serviços em produção no seu VPS, o modo rescue interrompe-os enquanto a máquina não for reiniciada no modo normal.
 > 
 
-**Saiba como iniciar o VPS em Modo Rescue**
-
+**Este guia explica como reiniciar o VPS em modo rescue.**
 
 ## Requisitos
 
-- Aceder à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter o seu [VPS OVHcloud](https://www.ovhcloud.com/pt/vps/){.external} já configurado.
 
+> [!warning]
+>
+> A utilização e a gestão dos serviços da OVHcloud são da responsabilidade do cliente. A OVH não tem permissões de acesso aos VPS e o cliente é o único responsável pela gestão e pela segurança do serviço. Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção abaixo intitulada: «Quer saber mais?»
+> 
 
 ## Instruções
 
-Depois de efetuado o acesso à Área de Cliente, é necessário aceder à secção `Cloud`{.action} e escolher o VPS na coluna da esquerda.
+### Ativação do modo rescue
 
-![Secção VPS na Área de Cliente](images/vps_rescue1.png){.thumbnail}
+Ligue-se à sua Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), aceda à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na lista de navegação à esquerda em `VPS`{.action}.
 
-No ecrã principal do seu VPS, clique no botão `Reiniciar em Modo de Rescue`{.action} e confirme o reinício do vps nesta modalidade.
+#### Com uma oferta VPS atual
 
-![Confirmação do Modo Rescue](images/vps_rescue2.png){.thumbnail}
+No separador `Acolhimento`{.action}, clique em `...`{.action} junto de "Boot" na zona **O seu VPS**.
 
-Irá visualizar uma barra que indica o progresso do processo de reinício do sistema (pode demorar vários minutos):
+![configuração do modo rescue](images/rescue_new.png){.thumbnail}
 
-![Progresso do Mode Rescue](images/rescue_task.png){.thumbnail}
+Selecione `Reiniciar em modo de rescue`{.action} no menu.
+
+#### Com uma oferta VPS antiga
+
+No separador `Acolhimento`{.action}, clique no link de atalho intitulado `Reiniciar em modo rescue`{.action}.
+
+![configuração do modo rescue](images/rescue_legacy.png){.thumbnail}
+
+Aparecerá uma janela, clique em `Confirmar`{.action} para lançar o reboot em modo rescue.
+
+### Utilização do modo rescue
+
+Depois de iniciar a reinicialização, uma barra de progresso indica o avanço da tarefa. Tenha em atenção que esta operação pode demorar alguns minutos.
 
 > [!primary]
 >
-> Depois de concluída esta etapa, irá receber um e-mail com os dados de acesso SSH (acesso em Modo Rescue). Este e-mail também estará disponível na Área de Cliente, secção OVH PT, `A Minha Conta`{.action}, `E-mails recebidos`{.action}.
-> 
+> Receberá um email automatizado com as informações de identificação SSH para aceder ao modo rescue. Aguarde a receção do e-mail antes de tomar qualquer outra medida. Este e-mail também está disponível na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Para aceder, clique no seu ID de cliente OVHcloud no canto superior direito e selecione `E-mails de serviço`{.action}.
+>
 
-Já pode aceder ao VPS em Modo Rescue através do acesso SSH. Depois de efetuadas as ações necessárias, pode reiniciar o VPS a partir do disco principal, usando o botão `Reiniciar o meu VPS`{.action}.
-
+Pode desde já conectar-se ao VPS via SSH, utilizando as informações de identificação do modo rescue. Uma vez terminadas as ações em modo de rescue, reinicie o VPS em modo "normal" a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
 
 ## Quer saber mais?
 
-[Introdução ao SSH](https://docs.ovh.com/pt/dedicated/ssh-introducao/){.external}
+[Alterar a palavra-passe root de um VPS](../root-password/)
 
-Ou fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+[Consulte o manual Introdução ao SSH.](../../dedicated/ssh-introducao/)
+
+Junte-se à nossa comunidade de utilizadores <https://community.ovh.com/en/>.
