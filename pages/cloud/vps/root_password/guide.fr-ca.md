@@ -5,111 +5,196 @@ excerpt: Découvrez ici comment modifier le mot de passe root d’un VPS
 section: Diagnostic et mode Rescue
 ---
 
-**Dernière mise à jour le 2020/07/15**
+
+**Dernière mise à jour le 10 novembre 2020**
 
 ## Objectif
 
-Lors de l'installation ou de la réinstallation d'une distribution, un mot de passe pour l'accès root vous est fourni. Nous vous conseillons vivement de le modifier comme expliqué dans notre [guide de sécurisation](../conseils-securisation-vps/){.external}. Il est également possible que vous ne retrouviez plus ce mot de passe et que vous ayez besoin de le modifier. Ce guide va vous présenter les deux cas de figure.
-Découvrez comment modifier le mot de passe root d’un VPS.
+Il peut être nécessaire de modifier le mot de passe root sur votre système d'exploitation Linux. Il existe deux scénarios possibles:
+
+- Vous pouvez toujours vous connecter via SSH
+- Vous ne pouvez pas vous connecter via SSH car vous avez perdu votre mot de passe
+
+**Ce guide explique comment modifier votre mot de passe administrateur en fonction de ces deux situations.**
 
 ## Prérequis
 
-- Être connecté en SSH au VPS (accès root).
-- [Redémarrer le VPS en mode Rescue](../mode-rescue-vps/){.external}.
+- Avoir votre [VPS OVHcloud](https://www.ovhcloud.com/fr/vps/){.external} déjà configuré
+- Disposer des identifiants de connexion reçus par e-mail après l'installation (s'ils sont toujours valides)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} (pour utiliser le mode rescue)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/b736xXk06AM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+> [!warning]
+>
+> OVHcloud met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
+> 
 
 ## En pratique
 
-### Changer le mot de passe avec un accès à l'identifiant root
+### Modification du mot de passe si vous avez toujours un accès (sudo ou root)
 
-Si vous possédez toujours votre mot de passe actuel, la procédure est plus simple. Connectez-vous à votre serveur et tapez ensuite la commande suivante :
+> [!primary]
+>
+> Pour plus d'informations sur la connexion à votre VPS, consultez notre guide [Débuter avec un VPS](../debuter-avec-vps/).
+>
+
+Connectez-vous à votre VPS via SSH. Basculez vers l'utilisateur root, si nécessaire :
 
 ```sh
-passwd
+~$ sudo su -
+~#
 ```
 
-Vous devrez alors indiquer votre nouveau mot de passe une première fois puis le confirmer. Vous recevrez ensuite la confirmation suivante :
+Modifiez le mot de passe de l'utilisateur actuel :
 
 ```sh
-Enter new UNIX password:
-Retype new UNIX password:
+~# passwd
+New password:
+Retype new password:
 passwd: password updated successfully
 ```
 
 > [!primary]
 >
-> Sur une distribution Linux le mot de passe que vous allez enregistrer **n'apparaîtra pas**.
-> 
+> Sur une distribution Linux, le mot de passe que vous tapez **n'apparaîtra pas**.
+>
 
-### Changer de mot de passe suite à la perte de celui-ci
+Si vous devez autoriser la connexion en tant qu'utilisateur root, suivez les étapes de [cette section](./#activer-le-mot-de-passe-root_1).
 
-#### Étape 1 : identifier le point de montage
+### Modification du mot de passe si vous l'avez perdu
 
-Le montage est fait automatiquement, il convient donc d'identifier l'endroit où la partition est montée. Pour cela, deux commandes sont possibles:
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b736xXk06AM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> 
 
-##### df -h
+#### Étape 1 : Redémarrez le VPS en mode rescue.
+
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) et redémarrez le VPS en mode rescue. Si vous avez besoin d'instructions supplémentaires sur l'utilisation du mode rescue avec un VPS, consultez le [guide du mode rescue](../mode-rescue-vps/).
+
+#### Étape 2 : Identifier le point de montage
+
+Le montage est créé automatiquement. Utilisez les commandes suivantes pour identifier l'emplacement de montage de votre partition :
+
+##### **df -h**
 
 ```sh
-root@rescue-pro:~# df -h
-Size Used Avail Use% Mounted on
-/dev/vda1 4.7G 1.3G 3.2G 29% /
-udev 10M 0 10M 0% /dev
-tmpfs 774M 8.4M 766M 2% /run
-tmpfs 1.9G 0 1.9G 0% /dev/shm
-tmpfs 5.0M 0 5.0M 0% /run/lock
-tmpfs 1.9G 0 1.9G 0% /sys/fs/cgroup
-/dev/vdb1 20G 934M 18G 5% /mnt/vdb1
+df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            5.8G     0  5.8G   0% /dev
+tmpfs           1.2G   17M  1.2G   2% /run
+/dev/sda1       2.4G  1.5G  788M  66% /
+tmpfs           5.8G     0  5.8G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
+/dev/sdb1        49G  1.2G   48G   3% /mnt/sdb1
+/dev/sdb15      105M  3.6M  101M   4% /mnt/sdb15
 ```
 
-##### lsblk
+##### **lsblk**
 
 ```sh
-root@rescue-pro:~# lsblk
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-vda 254:0 0 4.9G 0 disk
-└─vda1 254:1 0 4.9G 0 part /
-vdb 254:16 0 20G 0 disk
-└─vdb1 254:17 0 20G 0 part /mnt/vdb1
+lsblk
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda       8:0    0  2.5G  0 disk
+└─sda1    8:1    0  2.5G  0 part /
+sdb       8:16   0   50G  0 disk
+├─sdb1    8:17   0 49.9G  0 part /mnt/sdb1
+├─sdb14   8:30   0    4M  0 part
+└─sdb15   8:31   0  106M  0 part /mnt/sdb15
 ```
 
-Nous constatons donc que la partition système est montée sur **/mnt/vdb1**.
+L'exemple obtenu ci-dessus montre que la partition système est montée sur **/mnt/sdb1**.
 
+#### Étape 3 : autorisations CHROOT
 
-#### Étape 2: les droits CHROOT
-
-Il faut maintenant modifier le répertoire racine afin que les changements puissent être effectués sur votre système. Cette manipulation est réalisable avec la commande `chroot`. Voici comment procéder :
+Vous devez maintenant modifier le répertoire racine pour appliquer les modifications à votre système. Pour ce faire, utilisez la commande `chroot` :
 
 ```sh
-root@rescue-pro:~# chroot /mnt/vdb1/
-root@rescue-pro:/#
+chroot /mnt/sdb1/
 ```
 
-Vous pouvez vérifier en tapant la commande `ls -l` qui listera le contenu à la racine de votre système :
+Vous pouvez procéder à une vérification en tapant la commande `ls -l`, qui répertorie le contenu stocké dans le répertoire courant de votre système :
 
 ```sh
-root@rescue-pro:/# ls -l
+ls -l
 ```
 
-#### Étape 3: modifier le mot de passe racine (root)
+#### Étape 4 : Modifier le mot de passe (root)
 
-Il vous reste enfin à changer le mot de passe racine (root) avec la commande `passwd`:
+Dans la dernière étape, modifiez votre mot de passe à l'aide de la commande `passwd`.
 
 ```sh
-passwd
-```
-```sh
-Enter new UNIX password:
-Retype new UNIX password:
+~# passwd
+New password:
+Retype new password:
 passwd: password updated successfully
 ```
 
-Pour finir, redémarrez votre VPS sur son disque depuis votre espace client OVHcloud.
+Si votre VPS est de dernière génération (son nom est alors : *vps-XXXXXXX.vps.ovh.net*), vous avez initialement reçu des identifiants de connexion pour un utilisateur disposant de droits importants, au lieu du compte « root » par défaut. En outre, le service SSH n'accepte pas les demandes de connexion en tant que root.
 
-## Aller plus loin
+Il est donc nécessaire d'entrer le nom d'utilisateur que vous utilisez pour vous connecter après `passwd` :
 
-[Introduction au SSH](../../dedicated/ssh-introduction/){.external}.
+```sh
+~# passwd <username>
+New password:
+Retype new password:
+passwd: password updated successfully
+```
 
-[Mode Rescue sur VPS](../mode-rescue-vps/){.external}.
+Vous pourrez ainsi vous reconnecter avec ce nom d'utilisateur après le redémarrage, au cas où la connexion root serait désactivée.
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
+Enfin, redémarrez votre VPS sur son disque depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
+
+
+### Activer le mot de passe root
+
+Si votre VPS est de dernière génération (son nom est alors : *vps-XXXXXXX.vps.ovh.net*), vous avez reçu des identifiants de connexion pour un utilisateur disposant de droits importants, au lieu du compte « root » par défaut. En outre, le service SSH n'accepte pas les demandes de connexion en tant que root.
+
+> [!warning]
+>
+> Activer le mot de passe root est généralement considéré comme une vulnérabilité de sécurité et n'est donc pas recommandé.
+>
+> Nous vous recommandons de prendre d'abord des mesures pour sécuriser votre VPS. Vous pouvez vous reporter à notre guide sur la [sécurisation d'un VPS](../conseils-securisation-vps/).
+>
+
+#### Étape 1 : Modifier le fichier sshd_config
+
+Utilisez un éditeur de texte tel que vim ou nano pour modifier ce fichier de configuration :
+
+```sh
+nano /etc/ssh/sshd_config
+```
+
+Ajoutez la ligne suivante.
+
+```sh
+PermitRootLogin yes
+```
+
+Recherchez cette ligne et assurez-vous qu'elle est commentée :
+
+```sh
+#PermitRootLogin prohibit-password
+```
+
+Enregistrez le fichier et quittez l'éditeur.
+
+#### Étape 2 : Redémarrer le service SSH
+
+```sh
+systemctl restart sshd
+```
+
+Cela devrait suffire pour appliquer les modifications. Vous pouvez également redémarrer le VPS (```~$ reboot```).
+
+### Dysfonctionnement
+
+Si vous rencontrez des problèmes de démarrage après avoir modifié votre mot de passe et lancé le redémarrage :
+
+- Consultez le KVM pour savoir pourquoi le VPS ne peut pas démarrer. Consultez le [guide KVM](../utilisation-kvm-sur-vps/) pour obtenir de l'aide sur l'utilisation de cette fonctionnalité dans l'espace client OVHcloud.
+- Si le KVM affiche le démarrage du VPS ou s'il ne parvient pas à trouver le disque, assurez-vous que le [bootlog est activé](../affichage-bootlog-dans-kvm/). Transmettez les logs pertinents à nos équipes de support en créant une demande de support dans votre [espace client OVHcloud](https://www.ovh.com/manager/dedicated/#/support/tickets/new) pour plus d'informations.
+
+## Allez plus loin
+
+[Introduction au SSH](../../dedicated/ssh-introduction/)
+
+[Sécuriser un VPS](../conseils-securisation-vps/)
+
+Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.
