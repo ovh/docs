@@ -76,7 +76,7 @@ Once you have entered this information, click `Next`{.action}. Then check the su
 Once you have selected an OVH-registered domain, you can also configure its DNS zone automatically or manually.
 
 - **For automatic DNS configuration:** tick the `Automatic configuration (recommended)`{.action} box.
-- **For manual DNS configuration:** untick the `Automatic configuration (recommended)`{.action}, then note down the information that needs to be modified. If you want to configure your DNS zone manually, you can use our guide on [Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/hosting_how_to_edit_my_dns_zone/){.external}.
+- **For manual DNS configuration:** untick the `Automatic configuration (recommended)`{.action}, then note down the information that needs to be modified. If you want to configure your DNS zone manually, you can use our guide on [Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
 Click `Confirm`{.action} to start adding the domain. This may take up to an hour. Changes made to a domain name’s configuration can take between 4 and a maximum of 24 hours to propagate fully.
 

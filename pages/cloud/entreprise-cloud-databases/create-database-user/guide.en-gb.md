@@ -87,4 +87,4 @@ Your user `martin` can then connect as follows:
 
 ## Go further
 
-Learn how to manage your PostgreSQL cluster by reading [OVHcloud’s technical guides](../enterprise-cloud-databases/){.external} for further information on the technical aspects of how your managed solution works.
+Learn how to manage your PostgreSQL cluster by reading [OVHcloud’s technical guides](../) for further information on the technical aspects of how your managed solution works.
