@@ -66,7 +66,7 @@ Si desea autorizar la conexión como usuario root, siga los pasos de [esta secci
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-#### 1\. Reinicie el VPS en modo de rescate.
+#### Etapa 1: Reinicie el VPS en modo de rescate.
 
 Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) y reinicie el VPS en modo de rescate. Si necesita instrucciones adicionales sobre el uso del modo de rescate con un VPS, consulte la [guía del modo de rescate](../rescue/).
 
@@ -104,7 +104,7 @@ sdb 8:16 0 50G 0 disk
 
 El ejemplo anterior muestra que la partición del sistema está montada en **/mnt/sdb1**.
 
-#### 3\. autorizaciones CHROOT
+#### Etapa 3: autorizaciones CHROOT
 
 Ahora debe modificar el directorio raíz para aplicar los cambios al sistema. Para ello, utilice el comando `chroot`:
 
@@ -118,7 +118,7 @@ Puede realizar una comprobación introduciendo el comando `ls -l`, que muestra e
 ls -l
 ```
 
-#### 4\. Cambiar la contraseña (root)
+#### Etapa 4: Cambiar la contraseña (root)
 
 En el último paso, cambie la contraseña utilizando el comando `passwd`.
 
@@ -156,7 +156,7 @@ Si su VPS es de última generación (su nombre es: *vps-XXXXXXX.vps.ovh.net*), h
 > Le recomendamos que primero tome medidas para proteger su VPS. Para más información, consulte nuestra guía sobre la [seguridad de un VPS](../consejos-proteccion-vps/).
 >
 
-#### 1\. Editar el archivo sshd_config
+#### Etapa 1: Editar el archivo sshd_config
 
 Utilice un editor de texto como vim o nano para modificar este archivo de configuración:
 
