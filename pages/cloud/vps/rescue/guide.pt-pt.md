@@ -79,6 +79,6 @@ Pode desde já conectar-se ao VPS via SSH, utilizando as informações de identi
 
 [Alterar a palavra-passe root de um VPS](../root-password/)
 
-[Consulte o manual Introdução ao SSH.](../../dedicated/ssh-introduction/)
+[Consulte o manual Introdução ao SSH.](../../dedicated/ssh-introducao/)
 
 Junte-se à nossa comunidade de utilizadores <https://community.ovh.com/en/>.
