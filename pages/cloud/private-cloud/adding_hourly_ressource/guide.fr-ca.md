@@ -2,7 +2,6 @@
 title: 'Ajouter une ressource à l’heure'
 slug: ajouter-une-ressource-a-l-heure
 excerpt: 'Découvrez comment ajouter des ressources en facturation horaire'
-legacy_guide_number: '7766721'
 section: 'Fonctionnalités OVHcloud'
 ---
 
@@ -10,14 +9,14 @@ section: 'Fonctionnalités OVHcloud'
 
 ## Objectif
 
-L'offre [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external} vous permet d'ajouter des ressources facturées à l'heure.
+L'offre [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external} vous permet d'ajouter des ressources facturées à l'heure.
 
 **Ce guide décrit comment ajouter une ressource horaire depuis l'interface vSphere du Hosted Private Cloud.**
 
 ## Prérequis
 
-* Posséder une offre [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
-* [Donner le droit "Ajout de ressources"](../changer-les-droits-d-un-utilisateur/) pour le datacenter concerné à l'utilisateur depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Posséder une offre [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external}.
+* [Donner le droit "Ajout de ressources"](../changer-les-droits-d-un-utilisateur/) pour le datacenter concerné à l'utilisateur depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 * Être connecté au client vSphere.
 
 

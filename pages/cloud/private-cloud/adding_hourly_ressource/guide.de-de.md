@@ -6,18 +6,18 @@ legacy_guide_number: '7766721'
 section: OVHcloud Funktionen
 ---
 
-**Letzte Aktualisierung am 02.04.2019**
+**Letzte Aktualisierung am 15.12.2020**
 
 ## Ziel
 
-Bei einer Hosted Private Cloud-Lösung können Sie stündlich abgerechnete Ressourcen hinzufügen.
+Bei einer Hosted Hosted Private Cloud-Lösung können Sie stündlich abgerechnete Ressourcen hinzufügen.
 
 **Diese Anleitung erklärt, wie Sie stündliche Ressourcen über das vSphere-Interface Ihrer Private Cloud hinzufügen.**
 
 ## Voraussetzungen
 
 - Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
-- Das betreffende Datacenter hat die notwendigen Rechte zum Hinzufügen von Ressourcen. Diese Rechte werden über das [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} vergeben.
+- [Dem Benutzer die Berechtigung "Hinzufügen von Ressourcen"](../die-rechte-eines-nutzers-aendern/) für das betreffende Rechenzentrum über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} erteilen.
 - Sie haben Zugriff zum vSphere-Client.
 
 
@@ -29,7 +29,7 @@ Um zum Interface zu gelangen, über das Sie Ressourcen hinzufügen können, wäh
 
 ![Host hinzufügen](images/addhost_01.png){.thumbnail}
 
-Im vorliegenden Beispiel werden wir einen stündlich abgerechneten Host-Server hinzufügen. Nachdem Sie das gewünschte Modell ausgewählt haben, klicken Sie auf den Button `Next`{.action}. Wenn Sie einen Datastore hinzufügen möchten, wählen Sie einfach den Tab `Add OVH Storage`{.action} aus.
+Im vorliegenden Beispiel werden wir einen stündlich abgerechneten Host-Server hinzufügen. Nachdem Sie das gewünschte Modell ausgewählt haben, klicken Sie auf den Button `Next`{.action}. Wenn Sie einen Datastore hinzufügen möchten, wählen Sie einfach den Tab `Add storage`{.action} aus.
 
 ![Host hinzufügen](images/addhost_03.png){.thumbnail}
 
