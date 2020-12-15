@@ -64,7 +64,7 @@ Une fenêtre s'affiche, cliquez sur `Confirmer`{.action} pour lancer le redémar
 
 Une fois que vous avez lancé le redémarrage, une barre de progression indique l'avancement de la tâche. Notez que cela peut prendre plusieurs minutes.
 
-> [ ! primary]
+> [!primary]
 >
 > Vous recevrez un email automatisé avec les informations d'identification SSH pour accéder au mode rescue. Veuillez attendre la réception de l'e-mail avant de prendre toute autre mesure. Cet e-mail est également disponible dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Pour le retrouver, cliquez sur le nom associé à votre identifiant OVHcloud dans la barre de menus située dans le coin supérieur droit, puis sélectionnez `E-mails de service`{.action}.
 >
