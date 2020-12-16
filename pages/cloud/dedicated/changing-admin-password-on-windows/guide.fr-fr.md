@@ -1,5 +1,5 @@
 ---
-title: 'Modification du mot de passe administrateur sur un serveur dédié Windows'
+title: 'Modifier le mot de passe administrateur sur un serveur dédié Windows'
 slug: changer-mot-passe-admin-windows
 excerpt: 'Découvrez comment modifier le mot de passe administrateur sur un serveur dédié Windows'
 section: 'Diagnostic et mode Rescue'
@@ -10,7 +10,7 @@ order: 2
 
 ## Objectif
 
-Lors de l’installation ou de la réinstallation d’un système d’exploitation Windows, un mot de passe pour l’accès administrateur vous est fourni. Nous vous conseillons vivement de le modifier, comme expliqué dans notre guide intitulé « [Sécuriser un serveur dédié](https://docs.ovh.com/fr/dedicated/securiser-un-serveur-dedie/){.external} ». Si vous avez perdu votre mot de passe admin, vous devrez le réinitialiser en mode rescue.
+Lors de l’installation ou de la réinstallation d’un système d’exploitation Windows, un mot de passe pour l’accès administrateur vous est fourni. Nous vous conseillons vivement de le modifier, comme expliqué dans notre guide intitulé « [Sécuriser un serveur dédié](../securiser-un-serveur-dedie/){.external} ». Si vous avez perdu votre mot de passe admin, vous devrez le réinitialiser en mode rescue.
 
 **Ce guide vous accompagnera tout au long du processus de modification du mot de passe admin de votre serveur, via les configurations de mode rescue disponibles pour un système d'exploitation Windows.**
 
