@@ -193,7 +193,7 @@ Dies sollte ausreichen, um die Änderungen umzusetzen. Sie können auch den VPS 
 Wenn Sie nach der Änderung Ihres Passworts und dem Neustart Probleme beim Start haben:
 
 - Ziehen Sie die KVM zu Rate, um zu erfahren, warum der VPS nicht starten kann. Lesen Sie [die KVM](../verwendung_von_kvm_fur_vps)-Anleitung, um Hilfe bei der Verwendung dieser Funktion im OVHcloud Kundencenter zu erhalten.
-- Wenn der KVM den Start des VPS anzeigt oder die Festplatte nicht gefunden werden kann, überprüfen Sie bitte, dass [bootlog aktiviert ist](../displaying-boot-log-in-the-kvm/). Übermitteln Sie unseren Support-Teams die relevanten Logs, indem Sie eine Support-Anfrage in Ihrem [OVHcloud Kundencenter erstellen](https://www.ovh.com/manager/dedicated/#/support/tickets/new) , um mehr Informationen zu erhalten.
+- Wenn der KVM den Start des VPS anzeigt oder die Festplatte nicht gefunden werden kann, überprüfen Sie bitte, dass [bootlog aktiviert ist](https://docs.ovh.com/gb/en/vps/displaying-boot-log-in-the-kvm/). Übermitteln Sie unseren Support-Teams die relevanten Logs, indem Sie eine Support-Anfrage in Ihrem [OVHcloud Kundencenter erstellen](https://www.ovh.com/manager/dedicated/#/support/tickets/new) , um mehr Informationen zu erhalten.
 
 ## Weiterführende Informationen
 
