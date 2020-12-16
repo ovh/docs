@@ -40,7 +40,7 @@ Certains éléments sont prédéfinis :
 * L'image : elle correspondra à votre sauvegarde.
 * Les modèles : seuls ceux pouvant accueillir votre image seront disponibles, en fonction de votre quota.
 
-Pour plus d'informations sur la création d'une instance, consultez [ce guide](../creer-instance-espace-client/).
+Pour plus d'informations sur la création d'une instance, consultez [ce guide](../create_an_instance_in_your_ovh_customer_account/).
 
 Pour créer une instance dans un autre datacentre que celui de la sauvegarde, il faudra transférer celle-ci vers la zone correspondante. Référez-vous alors au [guide sur la sauvegarde d'une instance d'un datacentre à l'autre](../transferer-la-sauvegarde-dune-instance-dun-datacentre-a-lautre/).
 
