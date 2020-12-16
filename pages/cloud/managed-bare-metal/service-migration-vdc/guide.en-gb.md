@@ -9,7 +9,12 @@ order: 6
 hidden: true
 ---
 
-**Last updated 9th December 2020**
+**Last updated 16th December 2020**
+
+> [!warning]
+>
+> The vDC migration path is not yet available because upgrades and maintenance operations are in progress. We will notify you as soon as this migration is possible.
+>
 
 ## Objective
 
