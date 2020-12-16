@@ -5,7 +5,7 @@ excerpt: 'Activer l’option SGX sur votre serveur Infrastructure et installer l
 section: 'Utilisation avancée'
 ---
 
-**Dernière mise à jour le 1er octobre 2020**
+**Dernière mise à jour le 16 décembre 2020**
 
 ## Objectif
 
