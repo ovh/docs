@@ -22,17 +22,22 @@ Lors de l’installation ou de la réinstallation d’un système d’exploitati
 
 ## En pratique
 
-Les étapes suivantes décrivent le processus de modification du mot de passe admin local via le mode rescue OVHcloud (basé sur Linux) qui est disponible à tout moment. Si vous préférez utiliser Windows PE (WinRescue), passez à la section pertinente [à la fin de ce guide](./#reinitialisation-du-mot-de-passe-admin-a-laide-de-winrescue_1). 
+Les étapes suivantes décrivent le processus de modification du mot de passe admin local via le mode rescue OVHcloud (basé sur Linux) qui est disponible à tout moment. Si vous préférez utiliser Windows PE (WinRescue), consultez la méthode dédiée [à la fin de ce guide](./#reinitialisation-du-mot-de-passe-admin-a-laide-de-winrescue_1). 
 
 ### Étape 1 : redémarrer le serveur en mode rescue
 
 Le système doit être démarré en mode rescue avant de pouvoir modifier le mot de passe admin. Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), accédez à la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur dans la liste de navigation de gauche sous `Serveurs dédiés`{.action}.
 
-Le netboot doit être basculé vers « rescue64-pro (Customer rescue system (Linux) ». Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `...`{.action}, puis sur `Modifier`{.action}. Dans la fenêtre qui apparaît, cochez **Booter en mode rescue** et sélectionnez "« rescue64-pro » dans le menu. Spécifiez une adresse e-mail dans le dernier champ si les identifiants de connexion ne doivent *pas* être envoyés à l'adresse principale de votre compte OVHcloud. Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
+Le netboot doit être basculé vers « rescue64-pro (Customer rescue system (Linux) ». Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `...`{.action}, puis sur `Modifier`{.action}. 
+<br>Dans la fenêtre qui apparaît, cochez **Booter en mode rescue** et sélectionnez « rescue64-pro » dans le menu. Spécifiez une adresse e-mail dans le dernier champ si les identifiants de connexion doivent être envoyés à une adresse différente de l'adresse principale de votre compte OVHcloud. 
+
+Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
 ![rescuemode](images/adminpw_win_01.png){.thumbnail}
 
-Une fois la modification terminée, cliquez sur `...`{.action} à droite de « Status » dans la zone intitulée **Etat des services**. Cliquez sur `Redémarrer`{.action} et le serveur redémarrera en mode rescue. Cette opération peut prendre quelques minutes. Vous pouvez vérifier l'avancement sous l'onglet `Tâches`{.action}. Un e-mail vous sera envoyé, contenant les identidiants (dont le mot de passe de connexion)  de l'utilisateur « root » du mode rescue.
+Une fois la modification terminée, cliquez sur `...`{.action} à droite de « Status » dans la zone intitulée **Etat des services**. 
+<br>Cliquez sur `Redémarrer`{.action} et le serveur redémarrera en mode rescue. Cette opération peut prendre quelques minutes. 
+<br>Vous pouvez vérifier l'avancement sous l'onglet `Tâches`{.action}. Un e-mail vous sera envoyé, contenant les identidiants (dont le mot de passe de connexion)  de l'utilisateur « root » du mode rescue.
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 
@@ -40,7 +45,7 @@ Pour plus d'informations sur le mode rescue, consultez [ce guide](../ovh-rescue/
 
 ### Étape 2 : monter la partition système
 
-Connectez-vous à votre serveur via SSH. Si nécessaire, consultez le [guide d'introduction au SSH](../ssh-introduction/)).
+Connectez-vous à votre serveur via SSH. Si nécessaire, consultez le guide d'[introduction au SSH](../ssh-introduction/).
 <br>Étant donné qu'il s'agit d'un serveur Windows, les partitions seront intitulées « Microsoft LDM data ».
 
 ```
@@ -60,7 +65,7 @@ Device          Start        End    Sectors  Size Type
 /dev/sda5  3907028992 3907029134        143 71.5K Microsoft LDM data
 ```
 
-Dans cet exemple, « sda4 » est la partition système, déterminée par sa taille. Généralement, il y a une seconde partition miroir qui dans ce cas serait « /dev/sdb**X** ». En effet, dans la plupart des cas, le serveur aura plusieurs disques avec des schémas de partition identiques. Pour le processus de réinitialisation du mot de passe, seul le premier est important. 
+Dans cet exemple, « sda4 » est la partition système, déterminée par sa taille. Généralement, il existe aussi une seconde partition miroir qui, dans ce cas, est intitulée « /dev/sdb**X** ». En effet, dans la plupart des cas, le serveur aura plusieurs disques avec des schémas de partition identiques. Pour le processus de réinitialisation du mot de passe, seul le premier est important. 
 
 À présent, montez cette partition :
 
@@ -168,7 +173,7 @@ Total  login count: 5
 Select: [q] >
 ```
 
-Tapez « 1 » et appuyez sur Entrée ( ↩). (Utilisez d'abord l'option 2 si un « X » apparaît en face de « Désactivé ».)
+Tapez « 1 » et appuyez sur Entrée ( ↩). (Utilisez d'abord l'option 2 si un « X » apparaît en face de « Disabled ».)
 
 ```
 Select: [q] > 1
@@ -206,7 +211,7 @@ Total  login count: 5
 Select: [q] >
 ```
 
-Tapez « q » et appuyez sur Entrée pour quitter l'outil. Tapez "y" lorsque vous y êtes invité et appuyez sur Entrée.
+Tapez « q » et appuyez sur Entrée pour quitter l'outil. Tapez « y » lorsque vous y êtes invité et appuyez sur Entrée.
 
 ```
 Select: [q] > q
@@ -242,11 +247,12 @@ Dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), a
 
 #### Étape 5.1 : pour une version récente de Windows
 
-L'interface de connexion doit contenir un message indiquant l'expiration du mot de passe.
+L'interface de connexion devrait afficher un message indiquant l'expiration du mot de passe.
 
 ![pwreset](images/adminpw_win_04.png){.thumbnail}
 
-Le nouveau mot de passe de l'utilisateur admin doit maintenant être entré deux fois. Toutefois, le champ de confirmation n'est pas encore visible, ce qui signifie que vous devez laisser le premier champ vide, entrer votre nouveau mot de passe dans le deuxième champ, puis utiliser la touche de tabulation (« ↹ ») du clavier (virtuel) pour passer au troisième champ (« Confirmer le mot de passe »). Tapez de nouveau le mot de passe et cliquez sur la flèche pour l'enregistrer.
+Le nouveau mot de passe de l'utilisateur admin doit maintenant être entré deux fois. Toutefois, le champ de confirmation n'est pas encore visible, ce qui signifie que vous devez laisser le premier champ vide, entrer votre nouveau mot de passe dans le deuxième champ, puis utiliser la touche de tabulation (« ↹ ») du clavier (virtuel) pour passer au troisième champ (« Confirmer le mot de passe »). 
+<br>Tapez de nouveau le mot de passe et cliquez sur la flèche pour l'enregistrer.
 
 ![enterpw](images/adminpw_win_05.png){.thumbnail}
 
@@ -258,7 +264,7 @@ Cliquez sur `OK`{.action} et vous serez connecté.
 
 Une fenêtre de ligne de commande (cmd) doit s'ouvrir lorsque la session KVM est établie.
 
-Définissez le mot de passe de l'utilisateur actuel ("Administrator"):
+Définissez le mot de passe de l'utilisateur actuel (« Administrator »):
 
 ```
 net user Administrator *
@@ -279,11 +285,17 @@ Il est recommandé d'utiliser le clavier virtuel lors de la saisie de mots de pa
 
 Le système doit être démarré en mode rescue avant de pouvoir modifier le mot de passe admin. Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), accédez à la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur dans la liste de navigation de gauche sous `Serveurs dédiés`{.action}.
 
-Le netboot doit être basculé vers « WinRescue (Rescue System for Windows) ». Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `...`{.action}, puis sur `Modifier`{.action}. Dans la fenêtre qui apparaît, cochez **Booter en mode rescue** et sélectionnez « WinRescue » dans le menu. Spécifiez une adresse e-mail dans le dernier champ si les identifiants de connexion ne doivent *pas* être envoyés à l'adresse principale de votre compte OVHcloud. Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
+Le netboot doit être basculé vers « WinRescue (Rescue System for Windows) ». Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `...`{.action}, puis sur `Modifier`{.action}. 
+<br>Dans la fenêtre qui apparaît, cochez **Booter en mode rescue** et sélectionnez « WinRescue » dans le menu. Spécifiez une adresse e-mail dans le dernier champ si les identifiants de connexion doivent être envoyés à une adresse différente de l'adresse principale de votre compte OVHcloud. 
+
+Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
 ![winrescuemode](images/adminpw_win_08.png){.thumbnail}
 
-Une fois la modification terminée, cliquez sur `...`{.action} à droite de « Status » dans la zone intitulée **Etat des services**. Cliquez sur `Redémarrer`{.action} et le serveur redémarrera en mode rescue. Cette opération peut prendre quelques minutes. Vous pouvez vérifier l'avancement sous l'onglet `Tâches`{.action}. Un e-mail vous sera envoyé, contenant les identidiants (dont le mot de passe de connexion)  de l'utilisateur « root » du mode rescue.
+Une fois la modification terminée, cliquez sur `...`{.action} à droite de « Status » dans la zone intitulée **Etat des services**. 
+<br>Cliquez sur `Redémarrer`{.action} et le serveur redémarrera en mode rescue. Cette opération peut prendre quelques minutes. 
+<br>Vous pouvez vérifier l'avancement sous l'onglet `Tâches`{.action}. 
+<br>Un e-mail vous sera envoyé, contenant les identifiants (dont le mot de passe de connexion)  de l'utilisateur « root » du mode rescue.
 
 ![rescuereboot](images/adminpw_win_02.png){.thumbnail}
 
@@ -295,7 +307,9 @@ Dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), a
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
-Pour réinitialiser les mots de passe, l'outil NTPWEdit est nécessaire. Une fois connecté via le KVM, ouvrez le navigateur et téléchargez-le à partir du [site Web officiel](http://www.cdslow.org.ru/en/ntpwedit/). Naviguez jusqu'au dossier où se trouve le fichier ZIP téléchargé et extrayez le contenu. Ouvrez ensuite l'exécutable *ntpwedit64* pour démarrer l'application.
+Pour réinitialiser les mots de passe, l'outil NTPWEdit est nécessaire. Une fois connecté via le KVM, ouvrez le navigateur et téléchargez-le à partir du [site Web officiel](http://www.cdslow.org.ru/en/ntpwedit/). 
+
+Naviguez jusqu'au dossier où se trouve le fichier ZIP téléchargé et extrayez le contenu. Ouvrez ensuite l'exécutable *ntpwedit64* pour démarrer l'application.
 
 ![ntpwedit](images/adminpw_win_09.png){.thumbnail}
 
