@@ -121,7 +121,7 @@ Como se recuerda en el apartado Objetivo de esta guía, usted es el administrado
 * cambiar la contraseña root;
 * Cree un nuevo usuario de sistema con acceso restringido para su uso cotidiano.
 
-Para más información, consulte la guía [Proteger un servidor dedicado](../sseguridad-de-un-servidor-dedicado/){.external}.
+Para más información, consulte la guía [Proteger un servidor dedicado](../seguridad-de-un-servidor-dedicado/){.external}.
 
 ### Configuración de red
 
