@@ -42,7 +42,7 @@ Estas são as configurações para as distribuições e sistemas operativos prin
 
 ### Debian 9
 
-#### 1 - desativar a configuração automática da rede
+#### Etapa 1: desativar a configuração automática da rede
 
 Primeiro, abra o seguinte ficheiro, como indicado abaixo:
 
@@ -90,7 +90,7 @@ netmask 255.255.255.255
 
 Cada endereço IP fail-over necessita da sua própria linha neste ficheiro. O ficheiro de configuração dos seus endereços IP fail-over deve ser denominado "50-cloud-init.yaml".
 
-#### 1 - criar o ficheiro de configuração
+#### Etapa 1: criar o ficheiro de configuração
 
 Ligue-se ao seu servidor através de SSH e execute o seguinte comando:
 
@@ -126,7 +126,7 @@ Repita este procedimento para cada endereço IP Failover.
 
 ### CentOS e Fedora (25 e versões anteriores)
 
-#### 1 - Fazer cópia do ficheiro de configuração (<i>source file</i>)
+#### Etapa 1: Fazer cópia do ficheiro de configuração (<i>source file</i>)
 
 Em primeiro lugar, faça uma cópia do ficheiro de configuração para que o possa utilizar como template:
 
@@ -134,7 +134,7 @@ Em primeiro lugar, faça uma cópia do ficheiro de configuração para que o pos
 cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0:0
 ```
 
-#### 2 - Alterar o ficheiro de configuração
+#### Etapa 2: Alterar o ficheiro de configuração
 
 Agora pode alterar o ficheiro eth0:0 para substituir o endereço IP:
 
@@ -153,7 +153,7 @@ NETMASK="255.255.255.255"
 BROADCAST="IP_FAILOVER"
 ```
 
-#### 3 - Reiniciar a interface de rede
+#### Etapa 3: Reiniciar a interface de rede
 
 Agora, reinicie a sua interface:
 
@@ -163,7 +163,7 @@ ifup eth0:0
 
 ### Windows Server 2012/2016
 
-#### 1 - verificar a configuração IP principal
+#### Etapa 1: verificar a configuração IP principal
 
 Em primeiro lugar, temos de recuperar as informações do endereço IP principal:
 
@@ -197,7 +197,7 @@ E depois o processo de ativação.
 
 ![ativação da rede](images/image7.png){.thumbnail}
 
-#### 5 - verificação da nova configuração de rede
+#### Etapa 5: verificação da nova configuração de rede
 
 Com a consola e o comando ___ipconfig___, podemos verificar a nova configuração de rede.
 
@@ -206,7 +206,7 @@ Com a consola e o comando ___ipconfig___, podemos verificar a nova configuraçã
 
 ### cPanel (em CentOS 6)
 
-#### 1 - Fazer cópia do ficheiro de configuração (<i>source file</i>)
+#### Etapa 1: Fazer cópia do ficheiro de configuração (<i>source file</i>)
 
 Em primeiro lugar, faça uma cópia do ficheiro de configuração, para que possa voltar atrás a qualquer momento:
 
@@ -214,7 +214,7 @@ Em primeiro lugar, faça uma cópia do ficheiro de configuração, para que poss
 cp /etc/ips /etc/ips.bak
 ```
 
-#### 2 - Alterar o ficheiro de configuração
+#### Etapa 2: Alterar o ficheiro de configuração
 
 Deve modificar o ficheiro /etc/ips:
 
@@ -234,7 +234,7 @@ Adicione o endereço IP em /etc/ipaddrpool:
 IP_FAILOVER
 ```
 
-#### 3 - Reiniciar a interface de rede
+#### Etapa 3: Reiniciar a interface de rede
 
 Agora, reinicie a sua interface:
 
@@ -244,7 +244,7 @@ Agora, reinicie a sua interface:
 
 ### Plesk Onyx 17.x
 
-#### 1 - aceder à gestão dos endereços IP no painel de configuração
+#### Etapa 1: aceder à gestão dos endereços IP no painel de configuração
 
 Aceda à secção ```Tools & Settings``` > ```IP Addresses``` :
 
