@@ -127,7 +127,7 @@ nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
 And run the following command :
 
 ``` {.console}
-docker run --rm -it -v ./group:/etc/group -v ./passwd:/etc/passwd <image-name>
+docker run --rm -it -v $(pwd)/group:/etc/group -v $(pwd)/passwd:/etc/passwd --user=ovh:ovh <image-name>
 ```
 
 ## Push image in the registry of your choice

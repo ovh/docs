@@ -9,7 +9,7 @@ order: 5
 
 ## Objective
 
-This guide covers the process of starting a simple interractive notebooks benefiting GPUs over **AI Training** service.
+This guide covers the process of starting a simple interactive notebook leveraging GPUs over **AI Training** service.
 
 ## Requirements
 
@@ -21,19 +21,19 @@ This guide covers the process of starting a simple interractive notebooks benefi
 
 ### Step 1 - Begin as classic job submission
 
-Follow the same steps as a classic job submission describe [here](../submit-job) until you reach the [Step 5 - Providing a Docker image](../submit-job/#step-5-providing-a-docker-image).
+Follow the same steps as a classic job submission described [here](../submit-job) until you reach the [Step 5 - Providing a Docker image](../submit-job/#step-5-providing-a-docker-image).
 
 ### Step 2 - Select the notebook corresponding to your needs
 
 A `job` is basically a Docker container that is run within the OVHcloud infrastructure.
 
-Notebooks are consider has `daemon job`, meaning that it will run indefinitely until the user request an interuption.
+Notebooks are `daemon jobs`, meaning that they will run indefinitely until the user request an interuption.
 
-AI Training provide by default a choice of several notebooks images with different configurations. You need to choose the configuration that best suits your needs among the displayed ones.
+AI Training offers several notebooks images with different configurations. You can choose the configuration that best suits your needs among them.
 
 Currently the following configurations are available :
 
--   **PyTorch** : An OVHcloud preset image containing JupyterLab notebook, Visual Studio Code IDE and `pytorch` libraries
+-   **PyTorch** : An OVHcloud preset image including JupyterLab notebook, Visual Studio Code IDE and `pytorch` libraries
 -   **Tensorflow 2** : An OVHcloud preset image containing JupyterLab notebook, Visual Studio Code IDE and `tensorflow 2` libraries
 -   **Hugging Face Transformers** : An OVHcloud preset image containing JupyterLab notebook, Visual Studio Code IDEand `hugging face` libraries
 -   **MXNet** : An OVHcloud preset image containing JupyterLab notebook, Visual Studio Code IDE and `mxnet` libraries
@@ -43,9 +43,9 @@ Currently the following configurations are available :
 
 Once your image is chosen, click `Next`{.action}.
 
-### Step 3 - Continue as classic job submission
+### Step 3 - Continue as a classic job submission
 
-Continue to follow the same steps as a classic job submission describe [here](../submit-job) until you reach the [Step 10 - Consulting your job](../submit-job/#step-10-consulting-your-job).
+Continue to follow the same steps as a classic job submission described [here](../submit-job) until you reach the [Step 10 - Consulting your job](../submit-job/#step-10-consulting-your-job).
 
 > [!warning]
 > If you want to be able to save your notebook files on your object storage we strongly advise to plug a **read** and **write** volume on your job before submitting. That volume will be synchronize with your object storage at the end of the job.
