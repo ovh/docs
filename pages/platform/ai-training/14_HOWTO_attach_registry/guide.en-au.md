@@ -15,13 +15,13 @@ This guide covers the process of attaching a private registry to the **AI Traini
 
 -   a **Public Cloud** project
 -   credentials for the Docker registry you wish to attach
--   access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+-   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
 ### Step 1: Going to the AI Training menu
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Public Cloud`{.action} section, then to the `AI Training` section which is located under `AI & Machine Learning`.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Public Cloud`{.action} section, then to the `AI Training` section which is located under `AI & Machine Learning`.
 
 ![image](images/00_training_menu.png){.thumbnail}
 
