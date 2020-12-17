@@ -5,7 +5,11 @@ excerpt: 'Come attivare SGX sul tuo server Infrastructure e installare lo stack 
 section: 'Utilizzo avanzato'
 ---
 
-**Ultimo aggiornamento: 24/10/2019**
+**Ultimo aggiornamento: 16 dicembre 2020**
+
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
 ## Obiettivo
 
@@ -21,12 +25,42 @@ Intel SGX offre funzionalità avanzate di crittografia di sicurezza hardware e R
 
 ## Procedura
 
-### Step 1: accedi alla console API
+### Dallo Spazio Cliente
+
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), accedi alla sezione `Server`{.action} e seleziona il server su cui vuoi attivare SGX nella sezione **Server dedicati** del menu a sinistra.
+
+#### Attiva l'opzione
+
+Scendi fino alla zona `Funzionalità avanzate` e clicca su `...`{.action} in corrispondenza di "Sicurezza - Intel SGX (Software Guard Extensions)". Seleziona `Attiva SGX`{.action} nel menu a tendina.
+
+![attivazione SGX](images/enable_sgx.png){.thumbnail}
+
+Nella finestra successiva clicca sul pulsante `Attiva`{.action}.
+
+![attivazione SGX](images/enable_sgx2.png){.thumbnail}
+
+Puoi scegliere di attivare SGX con una quantità specifica di memoria riservata o attivarla permettendo al tuo software di prenotare automaticamente la memoria di cui ha bisogno. Una volta effettuata la scelta, clicca su `Conferma`{.action}.
+
+![attivazione SGX](images/manage_sgx.png){.thumbnail}
+
+#### Disattivazione dell'opzione
+
+Scendi fino alla zona `Funzionalità avanzate` e clicca su `...`{.action} in corrispondenza di "Sicurezza - Intel SGX (Software Guard Extensions)". Seleziona `Modifica SGX`{.action} nel menu a tendina. Scegli l'opzione `Disattivare`{.action} e clicca su `Conferma`{.action}.
+
+![Disattivazione di SGX](images/disable_sgx.png){.thumbnail}
+
+Questa operazione comporta il riavvio del server. Conferma nella finestra contestuale e attendi qualche minuto prima di accedere nuovamente al tuo server.
+
+Continua la lettura di questa guida [allo Step 4](./#step-4-installa-lo-stack-software-sgx) qui sotto.
+
+### Via API OVHcloud
+
+#### Step 1: accedi alla console API
 
 Vai sul sito <https://api.ovh.com/console/> e clicca su`Login`{.action} in alto a destra.  
 Nella nuova pagina, effettua l’accesso con le credenziali del tuo account OVH.
 
-### Step 2: attiva SGX
+#### Step 2: attiva SGX
 
 Recupera il nome del server dalla lista ottenuta da questa chiamata: 
 
@@ -66,9 +100,9 @@ Ora verifica che l’opzione sia attiva:
 
 ![SGX enabled](images/get-enabled.png){.thumbnail}
 
-### Step 3: riavvia il sistema per applicare le nuove impostazioni del BIOS 
+#### Step 3: riavvia il sistema per applicare le nuove impostazioni del BIOS 
 
-### Step 4: installa lo stack software SGX
+#### Step 4: installa lo stack software SGX
 
 A questo punto installa il driver Intel e SDK per sviluppare ed eseguire le applicazioni SGX.  
 
@@ -103,9 +137,9 @@ chmod +x sgx_linux_x64_driver_2.5.0_2605efa.bin
 sudo ./sgx_linux_x64_driver_2.5.0_2605efa.bin
 ```
 
-### Step 5: riavvia il sistema per completare l’installazione 
+#### Step 5: riavvia il sistema per completare l’installazione 
 
-### Step 6: utilizza un’applicazione campione per convalidare l’installazione
+#### Step 6: utilizza un’applicazione campione per convalidare l’installazione
 
 Costruisci una delle applicazioni campione proposte:
 ```bash
@@ -159,7 +193,7 @@ Message Exchange between Source (E3) and Destination (E1) Enclaves successful !!
 Premi un tasto...
 ```
 
-### Step 3: per saperne di più
+## Spingiti oltre
 
 Per saperne di più (ad esempio, su come sviluppare la tua applicazione o registrarsi per un’attestazione remota, ecc.) ecco alcune risorse utili: 
 

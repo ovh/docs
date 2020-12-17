@@ -5,7 +5,11 @@ excerpt: 'Włącz na swoim serwerze Infrastructure rozszerzenie SGX i zainstaluj
 section: 'Poziom zaawansowany'
 ---
 
-**Ostatnia aktualizacja: 17-10-2019**
+**Ostatnia aktualizacja: 16-12-2020**
+
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> 
 
 ## Wprowadzenie
 
@@ -21,12 +25,42 @@ Rozszerzenie Intel SGX zapewnia zaawansowane funkcje szyfrowania sprzętowego or
 
 ## W praktyce
 
-### Krok 1\. Logowanie do konsoli API
+### W Panelu klienta OVHcloud
+
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), przejdź do sekcji `Server`{.action} i wybierz serwer, na którym chcesz włączyć SGX w sekcji **Serwery dedykowane** w menu po lewej stronie.
+
+#### Włączenie opcji
+
+Przejdź do strefy `Zaawansowane` funkcje i kliknij `...`{.action} naprzeciwko "Bezpieczeństwo - Intel SGX (Software Guard Extensions)". Wybierz `Aktywuj SGX`{.action} z rozwijanego menu.
+
+![activation SGX](images/enable_sgx.png){.thumbnail}
+
+Na następnym ekranie kliknij przycisk `Aktywuj`{.action}.
+
+![activation SGX](images/enable_sgx2.png){.thumbnail}
+
+Możesz aktywować SGX z określoną ilością pamięci zarezerwowanej lub włączyć ją, pozwalając programowi na automatyczne zarezerwowanie pamięci. Po dokonaniu wyboru kliknij `Zatwierdź`{.action}.
+
+![activation SGX](images/manage_sgx.png){.thumbnail}
+
+#### Wyłączenie opcji
+
+Przejdź do strefy `Zaawansowane` funkcje i kliknij `...`{.action} naprzeciwko "Bezpieczeństwo - Intel SGX (Software Guard Extensions)". Wybierz `Zmień SGX`{.action} z rozwijanego menu. Wybierz opcję `Wyłącz`{.action}, następnie kliknij `Zatwierdź`{.action}.
+
+![Wyłączenie funkcji SGX](images/disable_sgx.png){.thumbnail}
+
+Spowoduje to ponowne uruchomienie serwera. Potwierdź w oknie kontekstowym i odczekaj kilka minut, zanim ponownie zaloguj się do Twojego serwera.
+
+Przejdź do etapu czwartego [poniżej, aby przeczytać ten przewodnik](./#krok-4-zainstalowanie-zestawu-oprogramowania-sgx).
+
+### Za pośrednictwem API OVHcloud
+
+#### Krok 1\. Logowanie do konsoli API
 
 Przejdź do strony <https://api.ovh.com/console/> i kliknij przycisk `Login`{.action} (Zaloguj) w prawym górnym rogu.  
 Na następnej stronie zaloguj się przy użyciu danych logowania do konta OVHcloud.
 
-### Krok 2\. Włączenie funkcji SGX
+#### Krok 2\. Włączenie funkcji SGX
 
 Uzyskaj nazwę swojego serwera z listy zwróconej po wywołaniu następującej procedury:
 
@@ -66,9 +100,9 @@ Teraz można sprawdzić, że status to „włączono” (enabled):
 
 ![SGX enabled](images/get-enabled.png){.thumbnail}
 
-### Krok 3\. Ponowne uruchomienie w celu zastosowania nowych ustawień systemu BIOS
+#### Krok 3\. Ponowne uruchomienie w celu zastosowania nowych ustawień systemu BIOS
 
-### Krok 4\. Zainstalowanie zestawu oprogramowania SGX
+#### Krok 4\. Zainstalowanie zestawu oprogramowania SGX
 
 Teraz zostaną zainstalowane sterownik i zestaw SDK Intel, które umożliwiają tworzenie oraz uruchamianie aplikacji SGX.  
 
@@ -103,9 +137,9 @@ chmod +x sgx_linux_x64_driver_2.5.0_2605efa.bin
 sudo ./sgx_linux_x64_driver_2.5.0_2605efa.bin
 ```
 
-### Krok 5\. Ponowne uruchomienie w celu ukończenia instalacji
+#### Krok 5\. Ponowne uruchomienie w celu ukończenia instalacji
 
-### Krok 6\. Sprawdzenie poprawności instalacji przy użyciu przykładowej aplikacji
+#### Krok 6\. Sprawdzenie poprawności instalacji przy użyciu przykładowej aplikacji
 
 Zbuduj jedną z udostępnionych przykładowych aplikacji:
 ```bash
@@ -159,7 +193,7 @@ Close Session between Source (E3) and Destination (E1) Enclaves successful !!!
 Hit a key....
 ```
 
-### Krok 7\. Dalsze działania
+## Idź dalej
 
 Oto kilka zasobów przydatnych do dalszych działań (utworzenia własnej aplikacji, rejestracji w usłudze zdalnego zaświadczania itd.):
 
