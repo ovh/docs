@@ -21,7 +21,7 @@ This guide covers the initialisation of **AI Training** and the submission of [*
 
 ### Step 1 - Going to the AI Training menu
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Public Cloud`{.action} section then to the `AI Training`{.action} section which is located under `AI & Machine Learning`.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Public Cloud`{.action} section and then to the `AI Training`{.action} section which is located under `AI & Machine Learning`.
 
 ![image](images/00_training_menu.png){.thumbnail}
 
