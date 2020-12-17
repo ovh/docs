@@ -52,7 +52,7 @@ You will need to do this via the interface given by the service provider managin
 
 - **If your domain name does not use the OVH DNS configuration,** you will need to contact the service provider managing your domain name. Once you have made the required changes, go to the next step.
 
-- **If your domain name uses the OVH DNS configuration,** go to the `DNS Zone`{.action} tab. Add a new A record by clicking `Add an entry`{.action}. Then select the A record option, and follow the steps provided.  If you need to, you can follow the instructions listed in our guide to [Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/hosting_how_to_edit_my_dns_zone/){.external}.
+- **If your domain name uses the OVH DNS configuration,** go to the `DNS Zone`{.action} tab. Add a new A record by clicking `Add an entry`{.action}. Then select the A record option, and follow the steps provided.  If you need to, you can follow the instructions listed in our guide to [Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
 ![glueregistry](images/customize-dns-servers-step3.png){.thumbnail}
 

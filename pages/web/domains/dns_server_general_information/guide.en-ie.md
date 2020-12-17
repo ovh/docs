@@ -37,7 +37,7 @@ However, it is important to note that:
 
 - The content of the old DNS configuration is not automatically replicated in the new configuration. Please ensure that your new configuration includes all of the information required for the services associated with your domain name to work properly (e.g. your website and email addresses).
 
-- If you only want to edit a single element of your current DNS configuration (e.g. one DNS record), we recommend following our guide to editing the DNS zone instead: [Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/hosting_how_to_edit_my_dns_zone/){.external}.
+- If you only want to edit a single element of your current DNS configuration (e.g. one DNS record), we recommend following our guide to editing the DNS zone instead: [Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
 > [!warning]
 >
@@ -77,6 +77,6 @@ Once you have made the required changes, you will need to wait for them to becom
 
 ## Go further
 
-[Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/hosting_how_to_edit_my_dns_zone/){.external}.
+[Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
 Join our community of users on <https://community.ovh.com/en/>.
