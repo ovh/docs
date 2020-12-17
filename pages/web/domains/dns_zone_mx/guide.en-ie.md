@@ -77,6 +77,6 @@ Once you have entered the information, finalise the steps, then click `Confirm`{
 
 [General information about DNS servers](https://docs.ovh.com/ie/en/domains/web_hosting_general_information_about_dns_servers/){.external}
 
-[Web hosting: How to edit your DNS zone](https://docs.ovh.com/ie/en/domains/hosting_how_to_edit_my_dns_zone/){.external}.
+[Web hosting: How to edit your DNS zone](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
 Join our community of users on <https://community.ovh.com/en/>.

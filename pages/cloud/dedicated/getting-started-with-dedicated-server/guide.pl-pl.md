@@ -142,7 +142,7 @@ Szczegółowe instrukcje dotyczące konfiguracji aliasu IP znajdziesz w przewodn
 
 #### Konfiguracja IPv6
 
-Wszystkie serwery dedykowane OVHcloud zawierają blok /64 IPv6. Aby korzystać z adresów tego bloku, należy wprowadzić zmiany w konfiguracji sieci. Sprawdź nasz przewodnik: [Konfiguracja IPv6 na serwerze dedykowanym](../network-ipv6/).
+Wszystkie serwery dedykowane OVHcloud zawierają blok /64 IPv6. Aby korzystać z adresów tego bloku, należy wprowadzić zmiany w konfiguracji sieci. Sprawdź nasz przewodnik: [Konfiguracja IPv6 na serwerze dedykowanym](../siec-ipv6/).
 
 
 ### Naprawa
