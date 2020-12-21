@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 1
 ---
 
-**Ostatnia aktualizacja z dnia 22-07-2020**
+**Ostatnia aktualizacja z dnia 21-12-2020**
  
 ## Wprowadzenie
 
@@ -77,6 +77,10 @@ New password:
 Retype new password:
 passwd: password updated successfully
 ```
+
+#### Aktywacja połączeń root
+
+Ze względów bezpieczeństwa połączenie z użytkownikiem "root" zostało wyłączone. Jeśli chcesz zezwolić na tego typu połączenia, skorzystaj z instrukcji zawartych w [tym przewodniku](../root-password/#wlacz-haslo-root_1).
 
 #### Instalacja lub reinstalacja Twojego serwera VPS (gama aktualna)
 
