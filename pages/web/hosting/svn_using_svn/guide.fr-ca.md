@@ -133,7 +133,7 @@ Vous devez modifier le paramètre ci-dessous en y ajoutant vos différents utili
 --tunnel-user
 ```
 
-à noter qu'il est aussi possible de donner des accès en lecteur seule en ajoutant le paramètre :
+à noter qu'il est aussi possible de donner des accès en lecture seule en ajoutant le paramètre :
 
 ```bash
 --read-only.
