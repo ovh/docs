@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 1
 ---
 
-**Dernière mise à jour le 15/06/2020**
+**Dernière mise à jour le 21/12/2020**
  
 ## Objectif
 
@@ -77,6 +77,10 @@ New password:
 Retype new password:
 passwd: password updated successfully
 ```
+
+#### Activation des connexions root
+
+Par mesure de sécurité, la connexion avec l'utilisateur « root » est désactivée par défaut. Si vous devez autoriser ce type de connexions, reportez-vous aux instructions de [ce guide](../root-password/#activer-le-mot-de-passe-root_1).
 
 #### Installation ou réinstallation de votre VPS (gamme actuelle)
 

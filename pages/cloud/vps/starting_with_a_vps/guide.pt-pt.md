@@ -6,7 +6,7 @@ section: 'Primeiros passos'
 order: 1
 ---
 
-**Última atualização: 22/07/2020**
+**Última atualização: 21/12/2020**
  
 ## Objetivo
 
@@ -77,6 +77,10 @@ New password:
 Retype new password:
 passwd: password updated successfully
 ```
+
+#### Ativação das ligações root
+
+Por razões de segurança, a ligação ao utilizador "root" é desativada de forma padrão. Para autorizar este tipo de ligações, consulte as instruções [deste manual](../root-password/#ativar-a-password-root_1).
 
 #### Instalação ou reinstalação do VPS (gama atual)
 
