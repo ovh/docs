@@ -13,7 +13,7 @@ This guide covers the creation of [**data**](../data) objects in **AI Training**
 
 ## Requirements
 
--   a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+-   a [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
 -   **AI Training activated** for your account, see [how to submit a job Step 2](../submit-job)
 -   a user for AI Training [how to submit a job Step 3](../submit-job)
 -   access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)

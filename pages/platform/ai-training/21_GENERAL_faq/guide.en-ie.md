@@ -42,7 +42,7 @@ Here are the most frequently asked questions about AI Training.
 > My job is in « pending » status, what does it mean ?
 > > You job might be in queue status for 2 main reasons :
 > >
-> > * You are using an external registry and the image is taking longer to pull. Potential resolution: wait a bit longer for the cluster to pull the external image or recompile the image on an [OVHcloud managed Registry](https://www.ovhcloud.com/en-gb/public-cloud/managed-private-registry/).
+> > * You are using an external registry and the image is taking longer to pull. Potential resolution: wait a bit longer for the cluster to pull the external image or recompile the image on an [OVHcloud managed Registry](https://www.ovhcloud.com/en-ie/public-cloud/managed-private-registry/).
 > > * The cluster is waiting for resources to be available. Potential resolution: try to launch the job with less resources or wait for resources to be available.
 > >
 > Why can't I can't see my data volume in the container ?
