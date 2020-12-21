@@ -6,7 +6,7 @@ section: Getting started
 order: 2
 ---
 
-**Last updated 24th November 2020**
+**Last updated 21st December 2020**
 
 ## Objective
 
@@ -36,7 +36,7 @@ If you would like to store an SSH key in the OVHcloud Control Panel, we recommen
 First, open the terminal (command line) app, then run the following command to generate a 4096 bit SSH key:
 
 ```sh
-# ssh-keygen -m PEM -t rsa -b 4096
+# ssh-keygen -t rsa -b 4096
 ```
 
 The command will output the following result and prompt you to save the newly created key:
