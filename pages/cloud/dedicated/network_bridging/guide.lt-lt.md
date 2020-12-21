@@ -34,11 +34,11 @@ For this example, we will use the following values in our code samples, which sh
 
 Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click on the `Dedicated`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table.
 
-![Failover IP](images/virtual_mac_01.png){.thumbnail}
+![Failover IP](images/virtual_mac_01_2020_1.png){.thumbnail}
 
 Click on the three dots to open the `Context`{.action} menu, and click `Add a virtual MAC`{.action}.
 
-![Add a virtual MAC (1)](images/virtual_mac_02.png){.thumbnail}
+![Add a virtual MAC (1)](images/virtual_mac_02_2020.png){.thumbnail}
 
 Select `OVH`{.action} from the `Type`{.action} dropdown box, type a name in the `Name of virtual machine`{.action} field, and then confirm your options.
 
