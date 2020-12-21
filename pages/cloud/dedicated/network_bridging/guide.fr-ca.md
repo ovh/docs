@@ -5,7 +5,7 @@ excerpt: 'Apprenez à utiliser le mode bridge pour configurer l’accès à Inte
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 07/06/2019**
+**Dernière mise à jour le 21/12/2020**
 
 ## Objectif
 
@@ -36,13 +36,13 @@ Pour cet exemple, nous utiliserons les valeurs suivantes dans nos exemples de co
 
 ### Assigner une adresse MAC virtuelle
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} et cliquez sur le menu `Dédié`{.action}. Cliquez ensuite sur le menu `IP`{.action} dans la barre de services à gauche, puis recherchez votre adresse IP fail-over dans le tableau.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} et cliquez sur le menu `Bare Metal Cloud`{.action}. Cliquez ensuite sur le menu `IP`{.action} dans la barre de services à gauche, puis recherchez votre adresse IP fail-over dans le tableau.
 
-![Failover IP](images/virtual_mac_01_2020.png){.thumbnail}
+![Failover IP](images/virtual_mac_01_2020_1.png){.thumbnail}
 
 Cliquez sur les `...`{.action}, puis cliquez sur `Ajouter une adresse MAC virtuelle`{.action}.
 
-![Ajouter une MAC virtuelle (1)](images/virtual_mac_02.png){.thumbnail}
+![Ajouter une MAC virtuelle (1)](images/virtual_mac_02_2020.png){.thumbnail}
 
 Sélectionnez « OVHcloud » dans la liste déroulante « Type », tapez un nom dans le champ « Nom de la machine virtuelle », puis cliquez sur `Valider`{.action}.
 
@@ -66,6 +66,7 @@ Pour tous les systèmes d'exploitation et distributions, vous devez configurer v
 >
 
 #### Proxmox
+
 Après avoir créé la machine virtuelle et lorsque celle-ci est encore éteinte :
  1. Sélectionnez la machine virtuelle ;
  2. Ouvrez la section « Matériel » ;
@@ -81,6 +82,7 @@ Ajoutez ensuite l'adresse MAC que vous avez créée précédemment.
 Vous pouvez maintenant démarrer votre machine virtuelle et passer aux étapes suivantes, en fonction du système d'exploitation choisi.
 
 #### VMware ESXi
+
 Après avoir créé la machine virtuelle et lorsqu'elle est hors tension, effectuez un clic droit sur celle-ci et cliquez sur `Modifier les paramètres`{.action}.
 
 ![Menu contextuel VM](images/vmware_01.png){.thumbnail}
@@ -93,10 +95,12 @@ Vous pouvez maintenant démarrer votre machine virtuelle et passer aux étapes s
 
 ### Configurer les machines virtuelles
 
-#### Debian 8
+#### Debian
 
 Connectez-vous à l'interface système (ou *shell*) de votre machine virtuelle. Une fois connecté, ouvrez le fichier de configuration réseau de la machine virtuelle, situé dans `/etc/network/interfaces`.
 Modifiez le fichier pour qu'il reflète la configuration ci-dessous. N'oubliez pas de remplacer nos variables par vos propres valeurs :
+
+- Distributions anciennes :
 
 ```
 auto lo eth0
@@ -110,6 +114,22 @@ iface eth0 inet static
     pre-down route del GATEWAY_IP dev eth0
     pre-down route del default gw GATEWAY_IP
 ```
+
+- Distributions récentes :
+
+```
+auto lo eth0
+iface lo inet loopback
+iface eth0 inet static
+    address FAILOVER_IP
+    netmask 255.255.255.255
+    broadcast FAILOVER_IP
+    post-up ip route add GATEWAY_IP dev eth0
+    post-up ip route add default via GATEWAY_IP
+    pre-down ip route del GATEWAY_IP dev eth0
+    pre-down ip route del default via GATEWAY_IP
+```
+
 Remplacez également `eth0` si votre système utilise des noms d'interface réseau prévisibles. Vous pouvez trouver les noms d'interface réseau à l'aide de la commande suivante :
 
 ```sh

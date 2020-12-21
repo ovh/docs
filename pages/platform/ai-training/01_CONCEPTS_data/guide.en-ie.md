@@ -20,7 +20,6 @@ There are two ways to manage your data:
 
 > [!warning]
 > Before running the job and after it finishes running, the data you attached to the job are synchronised from the OVHcloud Object Storage to a distributed filesystem, it is used as a cache for your training jobs.
-> 
 
 ## Going further
 

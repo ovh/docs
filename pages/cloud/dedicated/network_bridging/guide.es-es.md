@@ -5,94 +5,150 @@ excerpt: El modo bridge IP se utiliza para configurar las maquinas virtuales. Es
 section: Red e IP
 ---
 
+**Última actualización: 21/12/2020**
+
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
+
+## Objetivo
+
+La puesta en red en modo bridge puede utilizarse para configurar sus máquinas virtuales. Para que la configuración funcione en nuestra red, es necesario realizar algunos cambios.
+
+**Esta guía explica cómo utilizar el modo bridge para configurar el acceso a internet para sus máquinas virtuales.**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TZZbPe9hCOk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requisitos
-Para seguir todos los pasos de esta guía es necesario:
 
-- tener un servidor dedicado con un hipervisor instalado (p.ej.: [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.);
-- haber asignado una MAC virtual a su IP Failover desde el área de cliente;
-- tener conocimientos de [SSH](https://es.wikipedia.org/wiki/Secure_Shell){.external}.
-
-Los ejemplos de configuración contienen palabras clave en mayúsculas, que deberá sustituir por el valor correspondiente. Por ejemplo, es necesario sustituir IP_FAIL_OVER por su propia IP Failover.
-
-La IP principal de su servidor
-
-La IP Failover que quiera configurar
-
-La IP de su servidor, sustituyendo el último octeto por 254.
-
+- Tener un servidor dedicado con un hipervisor instalado (por ejemplo, [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server y Proxmox).
+- Tener al menos una dirección [IP failover](https://www.ovhcloud.com/es-es/bare-metal/ip/) conectada al servidor.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Procedimiento
 
-### 1. Determinar la pasarela
-Para configurar una máquina virtual, debe conocer la pasarela de su servidor (*nsxxx.ovh.net*; *ksxxx.ovh.net*; *nsxxxxxxx.ip-xxxxxx.eu*...). Para ello, sustituya el último grupo de cifras de su IP principal por .254.
+Los pasos básicos son siempre los mismos, independientemente de los sistemas utilizados:
+- creación de una dirección MAC virtual para una dirección IP de migración;
+- Abonar la dirección MAC de la máquina virtual (MV) a esta nueva dirección.
+- configurar la dirección IP, la máscara de red, la pasarela y la ruta hacia la pasarela dentro de la máquina virtual.
 
-Para saber cuál es esa IP, puede consultar el emial de instalación del servidor o la sección IP del [área de cliente](https://www.ovh.com/manager/){.external} de OVH.
+Para este ejemplo, utilizaremos los siguientes valores en nuestros ejemplos de código. Estas direcciones deberán sustituirse por sus propios valores:
 
+- "SERVER_IP": la dirección IP principal del servidor;
+- "FAILOVER_IP": su dirección IP Failover;
+- "GATEWAY_IP": la dirección de su pasarela por defecto.
 
-### 2. Configuracion
+### Asignar una dirección MAC virtual
 
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} y haga clic en el menú `Bare Metal Cloud`{.action}. En la columna izquierda, haga clic en `IP`{.action} y seleccione su dirección IP Failover.
 
-> [!warning]
->
-> La pasarela que debe añadir a la máquina virtual no debe ser la IP del servidor ni la IP Failover, sino únicamente la IP proporcionada para el servidor dedicado. Nunca utilice este comando:
-> ```sh
-> route add default gw dev eth0
-> ```
-> El comando anterior provocaría el corte de la IP para la máquina virtual. Para determinar la pasarela que hay que utilizar:
-> - la IP Failover es: YYY.YYY.YYY.YYY
-> - la IP principal del servidor es: XXX.XXX.XXX.XXX
-> - la IP de la pasarela es la IP principal del servidor, pero terminada en .254
-> - así que la IP de la pasarela para la máquina virtual sería: XXX.XXX.XXX.254
-> 
-> En adelante, vamos a llamar a esta pasarela GATEWAY_VM.
-> 
+![IP Failover](images/virtual_mac_01_2020_1.png){.thumbnail}
 
+Haga clic en los `...`{.action} y, seguidamente, en `Añadir una dirección MAC virtual`{.action}.
 
-#### Debian y derivados (Ubuntu, CrunchBang, SteamOS...)
-**Archivo: /etc/network/interfaces**
+![Añadir una MAC virtual (1)](images/virtual_mac_02_2020.png){.thumbnail}
 
+Seleccione "OVH" en la lista desplegable "Tipo", escriba un nombre en el campo "Nombre de la máquina virtual" y haga clic en `Aceptar`{.action}.
 
-```bash
-auto lo eth0
-iface lo inet loopback
-iface eth0 inet static
-    address IP.FAIL.OVER
-    netmask 255.255.255.255
-    broadcast IP.FAIL.OVER
-    post-up route add GATEWAY_VM dev eth0
-    post-up route add default gw GATEWAY_VM
-    pre-down route del GATEWAY_VM dev eth0
-    pre-down route del default gw GATEWAY_VM
-```
+![Añadir una MAC virtual (2)](images/virtual_mac_03.png){.thumbnail}
 
-**Archivo: /etc/resolv.conf**
+### Establecer la dirección de la puerta de enlace
 
+Para configurar sus máquinas virtuales para el acceso a Internet, debe conocer la pasarela de su máquina host, es decir, su servidor dedicado. La dirección de la pasarela está formada por los tres primeros bytes de la dirección IP principal del servidor, el último byte es de 254. Por ejemplo, si la dirección IP principal del servidor es:
 
-```bash
-nameserver 213.186.33.99 # OVH DNS Server
-```
+- 123.456.789.012
 
+Su dirección de pasarela será:
 
+- 123.456.789.254
+
+### Preparar el host
 
 > [!primary]
 >
-> En Debian 6, la configuración del servidor DNS se realiza directamente en el archivo /etc/network/interfaces, donde debe aparecer esta sección:
-> 
-> ```bash
-> # dns-* options are implemented by the resolvconf package, if installed (default)
-> dns-nameservers 213.186.33.99 # OVH DNS Server
-> dns-search ovh.net # For faster hosts resolution on the OVH network
-> ```
+Para todos los sistemas operativos y distribuciones, debe configurar su máquina virtual con la dirección MAC virtual creada en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 >
-No dude en consultar esta [guía de Debian](https://wiki.debian.org/fr/Bind9){.external} para una configuración más avanzada.
+
+#### Proxmox
+
+Después de haber creado la máquina virtual y cuando esta esté aún apagada:
+
+ 1. Seleccione la máquina virtual.
+ 2. Abra la sección "Hardware".
+ 3. Seleccione `Dispositivo de red`{.action}.
+ 4. Haga clic en el botón `Editar`{.action}.
+
+![navegar hasta el periférico de red](images/proxmox_01.png){.thumbnail}
+
+A continuación, añada la dirección MAC que ha creado anteriormente.
+
+![abrir un dispositivo de red](images/proxmox_02.png){.thumbnail}
 
 
-#### Redhat y derivados (CentOS 6, Scientific Linux, ClearOS...)
-**Archivo: /etc/sysconfig/network-scripts/ifcfg-eth0**
+Una vez iniciado el VPS, podrá pasar a las siguientes etapas, en función del sistema operativo elegido.
 
+#### VMware ESXi
 
-```bash
+Una vez que haya creado la máquina virtual y esté libre de tensión, haga clic derecho sobre ella y seleccione `Cambiar configuración`{.action}.
+
+![Menú contextual de MV](images/vmware_01.png){.thumbnail}
+
+Explique `Netwok Adapter 1`{.action} y cambie el valor en el menú desplegable `Dirección MAC`{.action} en modo "Manual" e introduzca la dirección MAC VMware creada anteriormente.
+
+![Modificar los parámetros](images/vmware_02.png){.thumbnail}
+
+Ya puede iniciar su máquina virtual y pasar a las siguientes etapas, en función del sistema operativo.
+
+### Configurar las máquinas virtuales
+
+#### Debian
+
+Conéctese al panel del sistema (o *shell*) de su máquina virtual. Una vez conectado, abra el archivo de configuración de red de la máquina virtual, situado en `/etc/network/interfaces`.
+Modifique el archivo para que refleje la configuración que se muestra a continuación. No olvide sustituir las variables por sus propios valores:
+
+- Distribuciones antiguas:
+
+```
+auto lo eth0
+iface lo inet loopback
+iface eth0 inet static
+    address FAILOVER_IP
+    netmask 255.255.255.255
+    broadcast FAILOVER_IP
+    post-up route add GATEWAY_IP dev eth0
+    post-up route add default gw GATEWAY_IP
+    pre-down route del GATEWAY_IP dev eth0
+    pre-down route del default gw GATEWAY_IP
+```
+
+- Distribuciones recientes:
+
+```
+auto lo eth0
+iface lo inet loopback
+iface eth0 inet static
+    address FAILOVER_IP
+    netmask 255.255.255.255
+    broadcast FAILOVER_IP
+    post-up ip route add GATEWAY_IP dev eth0
+    post-up ip route add default via GATEWAY_IP
+    pre-down ip route del GATEWAY_IP dev eth0
+    pre-down ip route del default via GATEWAY_IP
+```
+
+Si su sistema utiliza nombres de interfaz de red predecibles, también puede `reemplazar "eth0`". Para encontrar los nombres de la interfaz de red, utilice el siguiente comando:
+
+```sh
+ls /sys/class/net
+```
+
+Guarde y cierre el archivo y reinicie la máquina virtual.
+
+#### Sistemas operativos Red Hat basados en Red Hat (CentOS 6, Scientific Linux, ClearOS...)
+
+Abra un terminal en su máquina virtual. Una vez conectado, abra el archivo de configuración de red de la máquina virtual. que se encuentra en `/etc/network/interfaces`. Modifique el archivo para que refleje la configuración que se muestra a continuación. No olvide sustituir las variables por sus propios valores:
+
+```sh
 DEVICE=eth0
 BOOTPROTO=none
 ONBOOT=yes
@@ -101,41 +157,34 @@ IPV6INIT=no
 PEERDNS=yes
 TYPE=Ethernet
 NETMASK=255.255.255.255
-IPADDR=IP.FAIL.OVER
-GATEWAY=GATEWAY_VM
+IPADDR=FAILOVER_IP
+GATEWAY=GATEWAY_IP
 ARP=yes
 HWADDR=MY:VI:RT:UA:LM:AC
 ```
 
-**Archivo: /etc/sysconfig/network-scripts/route-eth0**
+Ahora guarde y cierre el archivo.
 
-
-```bash
-GATEWAY_VM dev eth0
-default via GATEWAY_VM dev eth0
-```
-
-**Archivo: /etc/resolv.conf**
-
+A continuación, abra el archivo de enrutado de la máquina virtual. Este se encuentra en `/etc/sysconfig/network-scripts/route-eth0`. Modifique el archivo para que refleje la configuración que se muestra a continuación. No olvide sustituir las variables por sus propios valores:
 
 ```bash
-nameserver 213.186.33.99 # OVH DNS Server
+GATEWAY_IP dev eth0
+default via GATEWAY_IP dev eth0
 ```
 
+Guarde y cierre el archivo y reinicie la máquina virtual.
 
 #### CentOS 7
 
-
-> [!warning]
->
-> En CentOS 7, el nombre de la interfaz de red se elige automáticamente durante la instalación; es necesario comprobar previamente el nombre de la interfaz para utilizarlo en la configuración de la máquina virtual. Para consultar el nombre de la interfaz de red, utilice el comando ipaddr.
+> [!primary]
+> 
+> En CentOS 7, el nombre de la tarjeta de red varía en función de las opciones de instalación. Compruebe el nombre del adaptador y utilícelo para configurar su máquina virtual. Puede encontrar los nombres de la interfaz de red con el comando `ls /sys/class/net`.
 > 
 
-**Archivo: /etc/sysconfig/network-scripts/ifcfg-(inserte aquí el nombre de la interfaz)**
+Abra un terminal en su máquina virtual. Una vez conectado, abra el archivo de configuración de red de la máquina virtual, que se encuentra en `/etc/sysconfig/network-scripts/ifcfg-(nombre de la interfaz)`. Modifique el archivo para que refleje la configuración que se muestra a continuación. No olvide sustituir las variables por sus propios valores:
 
-
-```bash
-DEVICE=(insert interface Name)
+```sh
+DEVICE=(interfaz-name)
 BOOTPROTO=none
 ONBOOT=yes
 USERCTL=no
@@ -143,51 +192,43 @@ IPV6INIT=no
 PEERDNS=yes
 TYPE=Ethernet
 NETMASK=255.255.255.255
-IPADDR=IP.FAIL.OVER
-GATEWAY=GATEWAY_VM
+IPADDR=FAILOVER_IP
+GATEWAY=GATEWAY_IP
 ARP=yes
 HWADDR=MY:VI:RT:UA:LM:AC
 ```
 
+Guarde y cierre el archivo.
 
-
-> [!primary]
->
-> Si el archivo route-(inserte aquí el nombre de la interfaz) no existe, deberá crearlo. En CentOS 7, NETWORK_GW_VM es la IP principal de su servidor, sustituyendo el último octeto por 0.
-> 
-
-**Archivo: /etc/sysconfig/network-scripts/route-(inserte aquí el nombre de la interfaz)**
-
+Abra el archivo de enrutado de la máquina virtual, que se encuentra en `/etc/sysconfig/network-scripts/route-(nombre de la interfaz)`. Modifique el archivo para que refleje la configuración que se muestra a continuación. No olvide sustituir las variables por sus propios valores:
 
 ```bash
-GATEWAY_VM - 255.255.255.255 (inserte aquí el nombre de la interfaz)
-NETWORK_GW_VM - 255.255.255.0 (inserte aquí el nombre de la interfaz)
-default GATEWAY_VM
+GATEWAY_IP - 255.255.255.255.255.255 (nombre-interfaz)
+NETWORK_GW_VM - 255.255.255.0 (inserte el nombre de la interfaz)
+default GATEWAY_IP
 ```
 
-**Archivo: /etc/resolv.conf**
+Guarde y cierre el archivo.
 
+A continuación, abra el archivo de enrutado de la máquina virtual. Puede consultarse en la página `/etc/sysconfig/network/resolv.conf`.
 
 ```bash
-nameserver 213.186.33.99
+nameserver 213.186.33.33.99
 ```
 
+Una vez que haya guardado y cerrado el archivo, reinicie su red o su máquina virtual.
 
 #### OpenSUSE
 
-
 > [!primary]
->
-> En OpenSUSE, NETWORK_GW_VM es la IP principal de su servidor, sustituyendo el último octeto por 0.
+> 
+> En OpenSUSE, el nombre de la tarjeta de red varía en función de las opciones de instalación. Compruebe el nombre del adaptador y utilícelo para configurar su máquina virtual. Puede encontrar los nombres de la interfaz de red con el comando `ls /sys/class/net`.
 > 
 
-Si el archivo ifcfg-ens32 no existe, será necesario crearlo.
-
-**Archivo: /etc/sysconfig/network/ifcfg-ens32**
-
+Abra un terminal en su máquina virtual. Una vez conectado, abra el archivo de configuración de red de la máquina virtual. Puede encontrarse en `/etc/sysconfig/network-scripts/ifcfg-(nombre de la interfaz)`. Si el archivo no existe, deberá crearlo. Modifique el archivo para que refleje la siguiente configuración:
 
 ```bash
-DEVICE=ens32
+DEVICE=(interfaz-name)
 BOOTPROTO=static
 ONBOOT=yes
 ARP=yes
@@ -195,112 +236,148 @@ USERCTL=no
 IPV6INIT=no
 TYPE=Ethernet
 STARTMODE=auto
-IPADDR=IP.FAIL.OVER
+IPADDR=FAILOVER_IP
 NETMASK=255.255.255.255
-GATEWAY=GATEWAY_VM
+GATEWAY=GATEWAY_IP
 HWADDR=MY:VI:RT:UA:LM:AC
 ```
 
-Si el archivo ifroute-ens32 no existe, será necesario crearlo.
+Guarde y cierre el archivo.
 
-**Archivo: /etc/sysconfig/network/ifroute-ens32**
-
-
-```bash
-GATEWAY_VM - 255.255.255.255 ens32
-NETWORK_GW_VM - 255.255.255.0 ens32
-default GATEWAY_VM
-```
-
-En /etc/sysconfig/network/config, debería tener:
-
+A continuación, abra el archivo de enrutado de la máquina virtual. que se encuentra en `/etc/sysconfig/network-scripts/route-(nombre de la interfaz)`. Si el archivo no existe, deberá crearlo. Modifique el archivo para que refleje la siguiente configuración:
 
 ```bash
-NETCONFIG_DNS_STATIC_SERVERS=”213.186.33.99”
+GATEWAY_IP - 255.255.255.255.255.255 (nombre-interfaz)
+NETWORK_GW_VM - 255.255.255.0 (inserte el nombre de la interfaz)
+default GATEWAY_IP
 ```
 
-
-#### FreeBSD 8.0
-**Archivo: /etc/rc.conf**
-
-
-```bash
-ifconfig_em0="inet IP.FAIL.OVER netmask 255.255.255.255 broadcast IP.FAIL.OVER"
-static_routes="net1 net2"
-route_net1="-net GATEWAY_VM/32 IP.FAIL.OVER"
-route_net2="default GATEWAY_VM"
-```
-
-**Archivo: /etc/resolv.conf**
-
+A continuación, abra el archivo de enrutado de la máquina virtual, que se encuentra en `/etc/sysconfig/network/resolv.conf`. Si el archivo no existe, deberá crearlo. Modifique el archivo para que refleje la siguiente configuración:
 
 ```bash
 nameserver 213.186.33.99 # OVH DNS Server
 ```
 
-
-#### Windows Server 2012 / Hyper-V
-En primer lugar, debe crear un switch virtual.
-
-1. En línea de comandos, en el servidor host **IPconfig /ALL**.
-1. Anote el nombre del adaptador de red en el que esté configurada la dirección IP principal del servidor.
-1. En Hyper-V, cree un nuevo switch virtual.
-- Tipo de conexión: External.
-- Seleccione el adaptador que tenga la IP del servidor.
-- Marque `Permitir que el SO de gestión comparta este adaptador de red`{.action}.
+Guarde y cierre el archivo y reinicie la máquina virtual.
 
 
-![Virtual Switch Manager](images/network-bridging-windows-2012-1.jpg){.thumbnail}
+#### FreeBSD
 
+Abra un terminal en su máquina virtual. Una vez conectado, abra el archivo de configuración de red de la máquina virtual situado en la carpeta `/etc/rc.conf`. Modifique el archivo para que refleje la configuración que se muestra a continuación. En este ejemplo, el nombre de la interfaz es "em0". Puede modificarlo si fuera necesario.
 
+```bash
+ifconfig_em0="inet FAILOVER_IP netmask 255.255.255.255 broadcast FAILOVER_IP"
+static_route="net1 net2"
+route_net1="-net GATEWAY_IP/32 -interface em0"
+route_net2="default GATEWAY_IP"
+```
 
-> [!primary]
->
-> Solo es necesario realizar esta acción una vez para un servidor Hyper-V. Para todas las MV, es necesario un switch virtual para conectar los adaptadores de red virtuales al adaptador físico del servidor.
-> 
-
-A continuación, seleccione la MV en la que quiera configurar la IP Failover. Utilice Hyper-V para cambiar la configuración de la VM (es necesario apagarla primero).
-
-1. Abra el adaptador de red y haga clic en `Funcionalidades avanzadas`{.action}.
-1. Cambie la dirección a Static, e introduzca la MAC virtual de la dirección IP Failover.
-1. Haga clic en `OK`{.action} para aplicar los cambios.
-
-![Hyper-V Manager](images/network-bridging-windows-2012-2.jpg){.thumbnail}
-
-Inicie la máquina virtual y autentíquese como administrador.
-
-1. `Panel de control`{.action} > `Red y recursos compartidos`{.action}.
-1. Haga clic en `Conexiones: Ethernet Link`{.action}.
-1. Haga clci en el botón `Properties`{.action} para ver las propiedades de Ethernet.
-1. Seleccione `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
-1. Haga clic en el botón `Propiedades`{.action} para ver las propiedades IPv4.
-
-![Ethernet Properties](images/network-bridging-windows-2012-3.jpg){.thumbnail}
-
-En la ventana de propiedades IPv4:
-
-1. Seleccione `Utilice la siguiente dirección`{.action}.
-1. Introduzca la dirección IP Failover en **Dirección IP**.
-1. En **SubnetMask**, introduzca 255.255.255.255.
-1. Introduzca la dirección IP de la pasarela de su servidor en **Puerta de enlace predeterminada** (la dirección IP de su servidor terminando en **.254**; la GATEWAY_VM).
-1. Introduzca 213.186.33.99 en **Preferred DNS Server**.
-1. Haga clic en `OK`{.action} e ignore la advertencia sobre la IP de la pasarela y la IP principal que indica que no están en la misma subred.
-
-![Ethernet Properties](images/network-bridging-windows-2012-4.jpg){.thumbnail}
-
-Por último, reinicie el servidor. Las máquinas virtuales deberían conectarse a internet a través de la IP Failover.
-
-
-#### Otras distribuciones
-Esta es la configuración de red que deberá introducir en la máquina virtual:
-
-- **ip**: IP_FAIL_OVER
-- **netmask**: 255.255.255.255
-
-A continuación, deberá añadir la pasarela a la máquina virtual:
+Guarde y cierre el archivo. A continuación, edite el archivo `/etc/resolv.conf`. Créelo si es necesario.
 
 ```sh
-route add GATEWAY_VM dev eth0
-route add default gw GATEWAY_VM
+nameserver 213.186.33.33.99
 ```
-Después será necesario configurar el DNS del servidor para que pueda hacer la resolución del dominio. La IP del servidor DNS de OVH es 213.186.33.99.
+
+Guarde y cierre el archivo y reinicie la máquina virtual.
+
+#### Ubuntu 18.04
+
+En primer lugar, conéctese a su máquina virtual por SSH y abra el archivo de configuración de red situado en `/etc/netplan/` utilizando el siguiente comando. A efectos de demostración, nuestro archivo se denomina "50-cloud-init.yaml".
+
+```sh
+# nano /etc/netplan/50-cloud-init.yaml
+```
+
+Una vez abierto el archivo, cambie el archivo con el siguiente código:
+
+```sh
+network:
+    ethernets:
+        (nombre-interfaz):
+            addresses:
+                - FAILOVER_IP/32
+            nameservers:
+                addresses:
+                    - 213.186.33.99
+                search: []
+            optional: true
+            carreteras:
+                - to: 0.0.0.0/0
+                  a través de: GATEWAY_IP
+                  on-link: true
+    Version : 2
+```
+
+Una vez realizados los cambios, guarde y cierre el archivo y ejecute el siguiente comando:
+
+```sh
+# netplan try
+Warning: Stopping systemd-networkd.service, but it can still be activated by:
+  systemd-networkd.socket
+¿Do you want to keep these settings?
+
+Press ENTER before the timeout to acept the new configuration
+
+Changes will revert in 120 seconds
+Configuración aceptada.
+```
+
+#### Windows Server 2012/Hyper-V
+
+Antes de configurar la máquina virtual, deberá crear un conmutador virtual.
+
+Desde la línea de comandos de su servidor dedicado, ejecute `IPconfig/ALL`{.action} y, seguidamente, anote el nombre de la tarjeta de red que contiene la dirección IP principal del servidor.
+
+En el panel de configuración Hyper-V, cree un nuevo conmutador virtual y establezca el tipo de conexión en `External`{.action}.
+
+Seleccione el adaptador con la dirección IP del servidor y marque `Autorizar al sistema operativo a compartir esta tarjeta de red`{.action}.
+
+![networkbridging](images/network-bridging-windows-2012-1.jpg){.thumbnail}
+
+> [!primary]
+> 
+>Este paso solo es necesario una vez para un servidor Hyper-V. Para todas las máquinas virtuales, es necesario un conmutador virtual para conectar las tarjetas de red virtual de la máquina virtual a la tarjeta física del servidor.
+> 
+
+A continuación, seleccione la máquina virtual a la que quiere añadir la IP Failover. Utilice el panel de configuración Hyper-V para modificar los parámetros de la máquina virtual y cierre el panel.
+
+Despliegue la tarjeta de red y haga clic en `Advanced Feature`{.action}, establezca la dirección MAC en `Static`{.action} e introduzca la dirección MAC virtual para la dirección IP failover. Una vez que haya introducido estos parámetros, pulse `Aceptar`{.action} para aplicar los cambios.
+
+![networkbridging](images/network-bridging-windows-2012-2.jpg){.thumbnail}
+
+A continuación, inicie la máquina virtual y conéctese como administrador y acceda a `Panel`{.action} de control y a `Network and Sharing Center`{.action}. Haga clic en el enlace `Connections: Ethernet`{.action} y haga clic en el botón `Propiedades`{.action} para ver las propiedades Ethernet.
+
+Seleccione el protocolo de `internet versión 4 (TCP/IPv4)`{.action} y haga clic en el botón `Propiedades`{.action} para ver las propiedades IPv4.
+
+![networkbridging](images/network-bridging-windows-2012-3.jpg){.thumbnail}
+
+En la ventana Propiedades de la IPv4, seleccione `Use the following IP address`{.action}. Introduzca la dirección IP failover en el campo de direcciones IP e introduzca "255.255.255.255" en la máscara de subred.
+
+A continuación, introduzca la dirección IP de la pasarela del servidor en la pasarela por defecto (por ejemplo, la IP del servidor termina en 254) e introduzca "213.186.33.99" en el campo `Preferred DNS Server`{.action}.
+
+Haga clic en `Aceptar`{.action} e ignore el mensaje de aviso relativo a la dirección IP de la pasarela y a la dirección IP asignada que no estén en la misma subred.
+
+Por último, reinicie el servidor. La máquina virtual debe conectarse a internet con la dirección IP failover.
+
+![networkbridging](images/network-bridging-windows-2012-4.jpg){.thumbnail}
+
+#### Resolución de fallos
+
+Si no consigue establecer una conexión entre su máquina virtual y la red pública y si tiene dudas sobre la red, reinicie el servidor en modo de rescate y configure la interfaz de red pasarela directamente en el host.
+
+Para ello, una vez que haya reiniciado el servidor en modo de rescate, introduzca los siguientes comandos:
+
+```bash
+ip link add name test-bridge link eth0 type macvlan
+ip link set dev test-bridge address MAC_ADDRESS
+ip link set test-bridge up
+ip addr add FAILOVER_IP/32 dev test-bridge
+```
+
+Sustituya "MAC_ADDRESS" por la dirección MAC virtual generada en el panel de configuración y "FAILOVER_IP" por la IP failover real.
+
+A continuación, solo tiene que hacer ping a su IP Failover desde el exterior. Si funciona, probablemente significa que hay un error de configuración en la máquina virtual o en el host que impide que la IP failover funcione en modo normal. Si, por el contrario, la IP todavía no funciona, abra un tíquet al equipo de soporte desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} para más información.
+
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

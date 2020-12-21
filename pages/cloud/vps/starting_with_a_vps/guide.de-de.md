@@ -6,7 +6,7 @@ section: 'Erste Schritte'
 order: 1
 ---
 
-**Letzte Aktualisierung am 15.06.2020**
+**Letzte Aktualisierung am 21.12.2020**
  
 ## Ziel
 
@@ -78,6 +78,10 @@ New password:
 Retype new password:
 passwd: password updated successfully
 ```
+
+#### Aktivierung der Root-Verbindungen
+
+Aus Sicherheitsgründen ist die Verbindung mit dem Root-Benutzer standardmäßig deaktiviert. Wenn Sie diese Verbindungen erlauben möchten, lesen Sie bitte die Anleitung [dieser Anleitung](../root-password/#root-passwort-aktivieren_1).
 
 #### VPS installieren oder neu installieren (aktuelle Reihe)
 

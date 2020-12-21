@@ -19,6 +19,11 @@ Veeam Backup & Replication jest oprogramowaniem do ochrony danych. Oferuje wiele
 * Posiadanie usługi [Veeam Enterprise](https://www.ovh.pl/storage-solutions/veeam-enterprise.xml){.external}
 * Posiadanie wirtualnej maszyny z Windows Server 2012 lub 201
 
+> [!primary]
+>
+> Nasze pakiety Veeam nie są obecnie kompatybilne z najnowszą wersją (10) proponowaną przez Veeam. OVHcloud będzie nadal proponować wersję 9.5, aż do odwołania. Prosimy o uwzględnienie tego punktu podczas konfiguracji usługi Veeam.
+>
+
 ## W praktyce
 
 ### Instalacja Veeam Backup & Replication

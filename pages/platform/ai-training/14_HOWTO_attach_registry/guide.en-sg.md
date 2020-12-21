@@ -2,7 +2,7 @@
 title: Attach a private registry via UI
 slug: attach-private-registry
 excerpt: Learn how to attach your own registry to AI Training via UI
-section: How to
+section: How to (with UI)
 order: 4
 ---
 *Last updated 7th September, 2020.*
@@ -21,11 +21,11 @@ This guide covers the process of attaching a private registry to the **AI Traini
 
 ### Step 1: Going to the AI Training menu
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Public Cloud`{.action} section then to the `AI Training` section which is located under `AI & Machine Learning`.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Public Cloud`{.action} section, then to the `AI Training` section which is located under `AI & Machine Learning`.
 
 ![image](images/00_training_menu.png){.thumbnail}
 
-From the dashboard you can initiate the attachment of your Docker registry by clicking `Update`{.action} \> `Attach a Docker registry`{.action} button.
+From the dashboard you can initiate the attachment of your Docker registry by clicking `Update`{.action} > `Attach a Docker registry`{.action} button.
 
 ### Step 2: Attaching the registry
 
@@ -35,7 +35,7 @@ To attach a registry you simply need to provide the credentials of your registry
 
 Once the form is filled out click `Attach`{.action}.
 
-## Step 3: Submitting an image from your registry
+### Step 3: Submitting an image from your registry
 
 Once your registry is attached you can use any images pushed on the registry for your jobs.
 
