@@ -134,9 +134,9 @@ docker run --rm -it -v $(pwd)/group:/etc/group -v $(pwd)/passwd:/etc/passwd --us
 
 Pushing your image to a registry is needed in order for AI Training to pull it.
 
-AI Training provide a default registry called **Shared registry** where users are able to push their custom images. It is linked with every project by default.
+AI Training provides a default registry called **Shared registry** where users are able to push their custom images. It is linked with every project by default.
 
-If you prefer you use your own private docker registry instead of the shared one, feel free to use it. Just don't forget to [attach your registry in your AI Training project](../attach-private-registry) before using it.
+If you prefer using your own private docker registry instead of the shared one, feel free to use it. Just don't forget to [attach your registry in your AI Training project](../attach-private-registry) before using it.
 
 The basic commands to push a docker image to a registry is :
 
