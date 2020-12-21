@@ -137,7 +137,7 @@ command="/usr/bin/svnserve --root=/home.XXX/loginFTP/svn --tunnel --tunnel-user=
 --tunnel-user
 ```
 
-Bitte beachten Sie, dass Sie auch mit einem einzigen Lesegerät Zugriff gewähren können, indem Sie folgenden Parameter hinzufügen:
+Bitte beachten Sie, dass Sie auch Einlesezugriff gewähren können, indem Sie folgenden Parameter hinzufügen:
 
 ```bash
 --read-only.
