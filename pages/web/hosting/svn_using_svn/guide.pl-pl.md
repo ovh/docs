@@ -137,7 +137,7 @@ Zmodyfikuj poniższy parametr dodając do niego różnych użytkowników:
 --tunnel-user
 ```
 
-należy pamiętać, że można również dać dostęp za pomocą samego czytnika, dodając parametr:
+należy pamiętać, że można również nadawać dostęp w trybie tylko do odczytu poprzez dodanie parametru:
 
 ```bash
 --read-only.
