@@ -18,6 +18,11 @@ Veeam Cloud Connect ist eine "Off-Site"-Backup-Lösung. Sie bietet eine einfache
 - Sie haben das [Veeam Cloud Connect](https://www.ovh.com/de/storage-solutions/veeam-cloud-connect/){.external} Angebot abonniert.
 - Sie verfügen über kompatible Dienste (bei OVHcloud oder extern)
 
+> [!primary]
+>
+> Unsere Veeam Angebote sind derzeit nicht mit der neuesten von Veeam angebotenen Version (10) kompatibel. OVHcloud wird Version 9.5 bis auf weiteres anbieten. Bitte beachten Sie diesen Punkt bei der Veeam-Konfiguration Ihrer Dienstleistungen.
+>
+
 ### Kompatible Dienste
 
 Der Hauptvorteil von Veeam Cloud Connect liegt – abgesehen von der Einfachheit der Nutzung – darin, dass es funktioniert, unabhängig davon, wo Ihre Betriebsinfrastruktur gehostet wird. Es kann bei OVHcloud, einem anderen Anbieter oder an Ihren eigenen Standorten gehostet werden.
