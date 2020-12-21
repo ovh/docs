@@ -137,7 +137,7 @@ Deve modificar o parâmetro abaixo adicionando os seus diferentes utilizadores:
 —túnel
 ```
 
-note que é também possível dar acessos apenas ao leitor adicionando o parâmetro :
+note que também é possível dar acessos de leitura apenas adicionando o parâmetro :
 
 ```bash
 --read-only.
