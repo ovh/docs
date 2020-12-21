@@ -18,7 +18,7 @@ Intel SGX bietet fortschrittliche Hardware- und RAM-Sicherheitsverschlüsselungs
 
 ## Anforderungen
 
-- Ein [für die Infrastruktur dedizierter Server](https://www.ovh.co.uk/dedicated_servers/infra/){.external}, mit der Option [SGX](https://www.ovh.co.uk/dedicated_servers/software-guard-extensions/){.external}
+- Ein [für die Infrastruktur dedizierter Server](https://www.ovhcloud.com/de/bare-metal/infra/){.external}, mit der Option [SGX](https://www.ovhcloud.com/de/bare-metal/intel-software-guard-extensions/){.external}
 - Administrativer (Root-) Zugriff auf den Server über SSH
 - Zugriff auf die [OVH API](https://api.ovh.com/console/){.external}
 - Ubuntu 18.04 oder ähnliches auf dem Server installiert
