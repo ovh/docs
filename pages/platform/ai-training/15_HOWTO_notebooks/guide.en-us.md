@@ -48,7 +48,7 @@ Once your image is chosen, click `Next`{.action}.
 Continue to follow the same steps as a classic job submission described [here](../submit-job) until you reach the [Step 10 - Consulting your job](../submit-job/#step-10-consulting-your-job).
 
 > [!warning]
-> If you want to be able to save your notebook files on your object storage we strongly advise to plug a **read** and **write** volume on your job before submitting. That volume will be synchronize with your object storage at the end of the job.
+> If you want to be able to save your notebook files on your object storage we strongly advise to plug a **read** and **write** volume on your job before submitting. That volume will be synchronized with your object storage at the end of the job.
 
 ### Step 4 - Access notebook URL
 
@@ -77,13 +77,13 @@ Just select the one that you want to use and you will be redirected to the corre
 
 ![image](images/05_jupyter.png){.thumbnail}
 
-By default the home directory of your job is located under `/workspace`. It mean that you will have **read** and **write** access on that directory as well as your **read** and **write** mounted volumes.
+By default the home directory of your job is located under `/workspace`. It means that you will have **read** and **write** access on that directory as well as your **read** and **write** mounted volumes.
 
 > [!warning]
 >
-> If you are a missing a library or a configuration you can add it directly in command line in the **console** of the notebook as long as you don't need priviledge access (root access). Exemple : `pip install <...>`
+> If you are missing a library or a configuration, you can add it directly in command line in the **console** of the notebook as long as you don't need priviledge access (root access). Example : `pip install <...>`
 >
-> For installing specific libraries that require priviledge access you will have to build your own notebook image and use it as **custom image** at [step 2](./#step-2-select-the-notebook-corresponding-to-your-needs) instead of **preset image**. More informations about creating your own docker image can be found [here](../build-use-custom-image)
+> For installing specific libraries that require priviledge access you will have to build your own notebook image and use it as **custom image** at [step 2](./#step-2-select-the-notebook-corresponding-to-your-needs) instead of **preset image**. More information about creating your own docker image can be found [here](../build-use-custom-image)
 
 > [!primary]
 >
@@ -109,7 +109,7 @@ After some time your job should go in `interrupted` state meaning that the job h
 
 > [!primary]
 >
-> Before going into `interrupted` state, your job may run throught `finalizing` state. During this phase all data inside `read & write volumes` are saved inside their linked containers in your object storage.
+> Before going into `interrupted` state, your job may run through `finalizing` state. During this phase all data inside `read & write volumes` are saved inside their linked containers in your object storage.
 
 ## Feedback
 
