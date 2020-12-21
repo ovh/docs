@@ -89,6 +89,6 @@ If you have made all the changes required in steps 1 and 2, and taken into accou
 
 [Hosting multiple websites on your web hosting plan](https://docs.ovh.com/ie/en/hosting/multisites-configuring-multiple-websites/){.external}.
 
-[Web hosting: How to edit your DNS zone](https://docs.ovh.com/ie/en/domains/hosting_how_to_edit_my_dns_zone/){.external}.
+[Web hosting: How to edit your DNS zone](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

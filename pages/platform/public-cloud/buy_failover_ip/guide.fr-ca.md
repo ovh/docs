@@ -24,7 +24,7 @@ Ce guide explique comment acheter une IP Fail Over pour votre projet Public Clou
 
 
 ## Prérequis
-- Disposer d'au moins une instance. Consultez à cet effet [le guide pour créer une instance depuis l'espace client](../creer-instance-espace-client/).
+- Disposer d'au moins une instance. Consultez à cet effet [le guide pour créer une instance depuis l'espace client](../create_an_instance_in_your_ovh_customer_account/).
 
 ## En pratique
 
