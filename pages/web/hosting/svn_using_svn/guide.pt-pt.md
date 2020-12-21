@@ -1,177 +1,158 @@
 ---
-title: Alojamento partilhado Utilizar SVN
-excerpt: Subversion (SVN, abreviado) é um sistema de gestão de versões. Este guia mostra-nos como usar o acesso svn através de ssh com a chave pública e privada. (Deve aceder através de SSH). O seguinte guia assume que está ligado por SSH à raiz do seu alojamento.
+title: Utilizar SVN
 slug: alojamento_partilhado_utilizar_svn
-legacy_guide_number: g1961
+legacy_guide_number: 1961
+excerpt: Saiba como utilizar o SVN em SSH no seu alojamento web
+section: FTP e SSH
 ---
 
+**Última atualização: 28/10/2020**
 
-## 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-- Possuir um alojamento que permita ligação SSH
-- Saber utilizar uma ligação por SSH (para ajuda, pode recorrer a este [guia](https://www.ovh.pt/g1962.partilhado))
+## Objetivo
 
+SVN, que é a abreviação de "subversion", é um sistema de gestão de versões. 
 
+**Saiba como utilizar o SVN em SSH no seu alojamento web**
 
+> [!warning]
+>
+> A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+> 
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
+> 
 
-## 
-Uma vez conectado por SSH ao seu alojamento, deve criar o diretório raiz do repositório SVN e depois depositá-lo.
+## Pré-requisitos
 
-Basta escrever o seguinte comando:
+- Ter um [plano de alojamento web](https://www.ovh.pt/alojamento-partilhado/) que permite uma ligação SSH (**a partir da oferta Pro**)
+- Aceder via SSH ao seu alojamento Web (pode consultar o nosso guia [Utilizar o acesso SSH do alojamento web](../partilhado_o_ssh_nos_alojamentos_partilhados/))
 
+## Instruções
 
-```
+### Criação do depósito
+
+Depois de aceder ao [SSH no seu alojamento](../partilhado_o_ssh_nos_alojamentos_partilhados/){.external}, crie a pasta raiz dos depósitos SVN e, a seguir, o depósito.
+
+Para isso, basta introduzir o comando:
+
+```bash
 mkdir svn
 ```
 
-
 e
 
-
-```
+```bash
 svnadmin create svn/depot_test
 ```
 
+De seguida, pode verificar que os diretórios foram criados com o comando:
 
-Poerá, de seguida, verificar que as pastas foram criadas com este comando:
-
-
-```
+```bash
 ls -la
 ```
 
+Deve obter os diretórios conforme indicado na seguinte imagem:
 
+![alojamento](images/3078.png){.thumbnail}
 
+### Criação das chaves públicas / privadas
 
-## 
-Deve obter os directórios como mostrado na figura abaixo:
+Antes de prosseguir, terá de criar um par de chaves SSH a partir do posto que utiliza para se ligar ao depósito SVN.
 
-![](images/img_3078.jpg){.thumbnail}
+Sugerimos que siga o guia [Criar chaves SSH](https://docs.ovh.com/pt/public-cloud/criacao-de-chaves-ssh/). Neste guia, não é necessário seguir o passo [Importar a chave SSH para a Área de Cliente OVHcloud](https://docs.ovh.com/pt/public-cloud/criacao-de-chaves-ssh/#como-importar-a-sua-chave-ssh-para-a-area-de-cliente-ovh_1).
 
+### Adicionar chave pública ao alojamento
 
-## Linux, com openSSH
-Esta parte faz-se no seu computador local que irá ligar-se ao repositório (com o cliente SVN). é necessário cruar um par de chaves dsa. Para essa tarefa, faça o aeguinte comando:
+Depois de obter a sua chave, adicione-a ao seu alojamento no ficheiro .ssh/authorized_keys2. Para isso, introduza a linha de comando abaixo:
 
-
-```
-ssh-keygen -t dsa
-```
-
-
-e obtenha a linha que está no ficheiro .ssh/id_dsa.pub . Para editar o ficheiro basta usar o editor 'vi' ou 'vim'.
-
-
-```
-vi .ssh/id_dsa.pub
-```
-
-
-Encontrará a chave que está divivida em 3 cadeias de caracteres: o tipo de chave, a chave e um comentário.
-
-
-## Windows, com putty
-Esta parte tem lugar no computador através do qual se conecta ao repositório SVN (svn cliente). Deve fazer o download e instalação da ferramenta 'Putty'.
-Deve criar um par chave de RSA. Para iniciar este PuTTYGen, gerar uma par de chaves e salvar:
-
-![](images/img_3079.jpg){.thumbnail}
-
-
-## 
-Após ter recebido a chave deve adicioná-la no seu alojamento em .ssh/authorized_keys2. Simplesmente insira a linha de comando abaixo:
-
-
-```
+```bash
 mkdir .ssh
-chmod 700 .ssh
-vi .ssh/authorized_keys2
+chmod 700.ssh
+vi.ssh/authorized_keys2
 ```
 
+Depois de abrir o ficheiro, insira a seguinte linha:
 
-Uma vez que o ficheiro está aberto deverá inserir a seguinte linha:
-
-
-```
-command="/usr/bin/svnserve --root=/homez.XXX/loginFTP/svn --tunnel --tunnel-user=marc",no-port-forwarding,no-agent-forwarding,no-X11-forwarding,no-pty
+```bash
+comandos="/usr/bin/svnserve —root=/homez.XXX/loginFTP/svn —túnel —user=john",no-port-forwarding,no-agent-forwarding,no-X11-forwarding,no-pty
 ```
 
+Seguir a chave criada anteriormente, tudo na mesma linha.
 
-E a seguir introduza a chave que criou anteriormente, tudo na mesma linha!
-NB : Substitua "/homez.XXX/loginFTP" e "marc" pelos valores corretos! Para saber quais os valores de 'homez' e 'login FTP', basta no alojamento efetuar o seguinte comando:
+> [!primary]
+>
+> Substitua "/home.XXX/loginFTP" e "john" pelos seus ID SSH.
+> Para conhecer os números a utilizar para substituir "/home.XXX/loginFTP" introduza o comando "pwd" em SSH.
+>
+> Também poderá consultar estas informações consultando o nosso guia [Utilizar o acesso SSH do seu alojamento web](../partilhado_o_ssh_nos_alojamentos_partilhados/){.external}.
+> 
 
-pwd
+![alojamento](images/3080.png){.thumbnail}
 
-![](images/img_3080.jpg){.thumbnail}
-O utilizador pode, assim, obter o conteúdo do repositório, sem necessariamente ser capaz de se conectar diretamente por SSH à sua máquina.
-Atenção: uma mesma chave não pode ser utilizada para SVN e SSH em linha de comandos
+Poderá recuperar o conteúdo do depósito sem no entanto se ligar diretamente através de SSH na máquina.
 
+> [!warning]
+>
+> Atenção, uma mesma chave não deve ser utilizada para SVN e para SSH em
+> linha de comandos
+> 
 
-## Linux
-Pode fazer um teste através do computador conectado para o repositório svn, ao digitar esta linha:
+### Exemplos
 
+#### Em Linux
 
-```
+Pode efetuar um teste a partir do computador que se liga ao depot SVN introduzindo a seguinte linha:
+
+```bash
 svn checkout svn+ssh://loginFTP@clusterXXX/depot_test
 ```
 
+#### Windows com TortoiseSVN
 
+- Faça o download e instale a TortoiseSVN ([http://tortoisesvn.net/downloads](http://tortoisesvn.net/downloads){.external})
+- Clique com o botão direito do rato na chave privada. Um ícone aparece no canto inferior direito, e a chave é carregada no agente de autenticação.
+- Crie um diretório, clique com o botão direito e selecione "SVN Checkout". 
+- Introduza `svn+ssh://loginFTP@xxplan.ovh.net/depot_test` no campo "URL of repository" e clique em `OK`:
 
+![alojamento](images/3081.png){.thumbnail}
 
-## Windows (com TortoiseSVN)
+Existe uma excelente documentação em inglês para a Subversion: [http://svnbook.red-bean.com/en/1.5/index.html](http://svnbook.red-bean.com/en/1.5/index.html){.external}
 
-- Faça o download e instale TortoiseSVN ([http://tortoisesvn.net/downloads](http://tortoisesvn.net/downloads))
-- Faça duplo click na chave privada. Um ícone aparecerá na parte inferior direita, chave é carregada no agente de autenticação
-- Crie uma directoria, clique com o botão direito do rato e seleccione "SVN Checkout". Insira depois:
+### Casos específicos
 
-```
-svn+ssh://loginFTP@clusterXXX/depot_test
-```
+#### Criar várias contas
 
+Primeiro, é preciso ter criado várias chaves SSH. A seguir, ao adicionar a chave pública para o alojamento:
 
-
-no campo "URL of repository" e clique OK:
-
-![](images/img_3081.jpg){.thumbnail}
-Está à disposição uma boa documentação em Inglês relativa a Subversion no seguinte endereço: 
-
-[http://svnbook.red-bean.com/en/1.5/index.html](http://svnbook.red-bean.com/en/1.5/index.html)
-
-
-## Criar várias contas
-Basta criar várias chaves ssh.
-De seguida adicionar a chave pública ao alojamento:
-
-
-```
-command="/usr/bin/svnserve --root=/home.XXX/loginFTP/svn --tunnel --tunnel-user=marc",no-port-forwarding,no-agent-forwarding,no-X11-forwarding,no-pty
+```bash
+comandos="/usr/bin/svnserve —root=/home.XXX/loginFTP/svn —túnel —user=marc",no-port-forwarding,no-agent-forwarding,no-X11-forwarding,no-pty
 ```
 
+Deve modificar o parâmetro abaixo adicionando os seus diferentes utilizadores:
 
-Deve modificar o seguinte parâmetro e adicionar vários utilizadores: 
-
-
-```
---tunnel-user
+```bash
+—túnel
 ```
 
+note que também é possível dar acessos de leitura apenas adicionando o parâmetro :
 
-de notar que é ainda possível dar apenas acesso de leitura ao adicionar o seguinte parâmetro: 
-
-
-```
+```bash
 --read-only.
 ```
 
+#### Verificar localmente a partir do servidor
 
+Quando deseja efetuar uma verificação local, os exemplos fornecidos não funcionarão. Deverá utilizar:
 
-
-## Verificação local no servidor
-Assim que desejar fazer checkout local, os exemplos fornecidos não irão funcionar.
-Necessitará utilizar:
-
-
-```
+```bash
 svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 ```
 
+## Quer saber mais?
 
+[Utilizar o acesso SSH do seu alojamento web](../partilhado_o_ssh_nos_alojamentos_partilhados/){.external}
 
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
