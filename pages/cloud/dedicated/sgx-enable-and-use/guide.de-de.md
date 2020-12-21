@@ -27,11 +27,11 @@ Intel SGX bietet fortschrittliche Hardware- und RAM-Sicherheitsverschlüsselungs
 
 ### Über das OVHcloud Kundencenter
 
-Loggen Sie sich im [OVHcloud](https://www.ovh.com/auth/?action=gotomanager) Kundencenter ein, gehen Sie in den Bereich `Server`{.action} und wählen Sie dann den Server aus, auf dem Sie SGX im Bereich **Dedicated Server** im linken Menü aktivieren möchten.
+Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie dann den Server aus, auf dem Sie SGX im Bereich **Dedicated Server** im linken Menü aktivieren möchten.
 
 #### Aktivierung der Option
 
-Gehen Sie zum Bereich `Fortgeschrittene Funktionen` und klicken Sie auf `...`{.action} gegenüber "Sicherheit - Intel SGX (Software Guard Extensions)". Wählen `Sie SGX`{.action} im Dropdown-Menü aktivieren.
+Gehen Sie zum Bereich `Erweiterte Funktionen` und klicken Sie auf `...`{.action} gegenüber "Sicherheit - Intel SGX (Software Guard Extensions)". Wählen `SGX aktivieren`{.action} im Dropdown-Menü aktivieren.
 
 ![SGX Aktivierung](images/enable_sgx.png){.thumbnail}
 
@@ -45,7 +45,7 @@ Sie können SGX mit einer bestimmten reservierten Speichermenge aktivieren oder 
 
 #### Option deaktivieren
 
-Gehen Sie zum Bereich `Fortgeschrittene Funktionen` und klicken Sie auf `...`{.action} gegenüber "Sicherheit - Intel SGX (Software Guard Extensions)". Wählen `Sie SGX`{.action} im Drop-down-Menü ändern. Wählen Sie die Option `Deaktivieren`{.action} aus und klicken Sie auf `Bestätigen`{.action}.
+Gehen Sie zum Bereich `Erweiterte Funktionen` und klicken Sie auf `...`{.action} gegenüber "Sicherheit - Intel SGX (Software Guard Extensions)". Wählen `Sie SGX`{.action} im Drop-down-Menü ändern. Wählen Sie die Option `Deaktivieren`{.action} aus und klicken Sie auf `Bestätigen`{.action}.
 
 ![SGX deaktivieren](images/disable_sgx.png){.thumbnail}
 
@@ -57,7 +57,7 @@ Lesen Sie diese Anleitung weiter [in Schritt 4](./#schritt-4-das-sgx-softwaremod
 
 #### Schritt 1 - Sich bei der API-Konsole anmelden
 
-Gehen Sie auf <https://api.ovh.com/console/>und klicken Sie auf die `Login`{.action} oben rechts auf der Seite.  
+Gehen Sie auf <https://api.ovh.com/console/> und klicken Sie auf die `Login`{.action} oben rechts auf der Seite.  
 Melden Sie sich auf der folgenden Seite mit den Anmeldeinformationen Ihres OVH-Kontos an.
 
 #### Schritt 2 - SGX aktivieren
