@@ -17,6 +17,11 @@ O Veeam Cloud Connect é uma solução proposta pelo editor Veeam. Permite dispo
 
 - Ter subscrito a oferta [Veeam Cloud Connect](https://www.ovh.com/pt/storage-solutions/veeam-cloud-connect/){.external}.
 
+> [!primary]
+>
+> As nossas ofertas Veeam não são compatíveis com a versão mais recente (10) proposta pela Veeam. A OVHcloud continuará a propor a versão 9.5 até indicação em contrário. Tenha em conta este ponto durante a configuração do Veeam para os seus serviços.
+>
+
 ## Instruções
 
 ### Produtos compatíveis
