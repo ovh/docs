@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment activer un lien de secours LTE'
 section: 'Configurations techniques avancées'
 ---
 
-**Dernière mise à jour le 02/12/2020**
+**Dernière mise à jour le 21/12/2020**
 
 ## Objectif
 
@@ -23,7 +23,8 @@ Un lien de secours LTE permet de sécuriser votre connexion en cas de perte. Si 
 
 ### Étape 1 : Configurer la clé LTE Huawei E3372
 
-Insérez la carte SIM dans votre clé Huawei E3372, puis branchez la clé sur votre ordinateur. Accédez à la clé via votre navigateur à l'adresse [192.168.8.1](http://192.168.8.1){.external}.
+Insérez la carte SIM dans votre clé Huawei E3372, puis branchez la clé sur votre ordinateur. Accédez à la clé via votre navigateur à l'adresse `192.168.8.1`.
+
 Une fois connecté, accédez au menu `Paramètres`, puis dans le menu `Gestion Du Code PIN` entrez le code PIN de votre carte SIM.
 
 ![LTE](images/lte-step1-1.png){.thumbnail}
@@ -32,7 +33,9 @@ Retournez sur l'onglet `Accueil` pour vérifier que vous êtes bien connecté. S
 
 ![LTE](images/lte-step1-2.png){.thumbnail}
 
-### Étape 2a : Configurer le modem Zyxel
+### Étape 2 : Configurer le modem
+
+#### Modem Zyxel
 
 > [!warning]
 >
@@ -41,35 +44,37 @@ Retournez sur l'onglet `Accueil` pour vérifier que vous êtes bien connecté. S
 
 Par défaut, le modem Zyxel est déjà configuré pour supporter les liens de secours LTE, il suffit donc uniquement de brancher votre clé Huawei E3372 sur le port USB du modem.
 
-Des configurations plus avancées sont disponibles à partir de l'interface locale, vous pouvez-vous reporter au [guide utilisateur du modem Zyxel](http://files.isp.ovh.net/zyxel/VMG8823-B50B_V5.13_5.50.pdf) (en anglais) pour plus de détails.
+Des configurations plus avancées sont disponibles à partir de l'interface locale, vous pouvez-vous reporter au [guide utilisateur du modem Zyxel](http://files.isp.ovh.net/zyxel/VMG8823-B50B_V5.13_5.50.pdf){.external} (en anglais) pour plus de détails.
 
-### Étape 2b : Configurer le modem Technicolor TG799vac
+#### Modem Technicolor TG799vac
 
 > [!warning]
 >
 > En cas de perte de connexion la VoIP sur le modem n'est plus fonctionnelle lorsque le modem passe sur le lien de secours LTE. Par contre, elle redevient automatiquement fonctionnelle après le rétablissement du lien cuivre.
 >
 
-Activer le lien de secours LTE sur un modem TG799vac demande quelques configurations supplémentaires.
+Activer le lien de secours LTE sur un modem TG799vac nécessite quelques configurations supplémentaires.
 
-#### Mettre à jour le modem
+##### **Mettre à jour le modem**
 
-Pour que le lien de secours LTE fonctionne le modem doit être sur le firmware « 17.1.7960.01 ». Afin de mettre à jour le modem, vous devez vous connecter à votre [espace client OVHcloud](https://www.ovhtelecom.fr/manager/#/){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action} dans la barre de services à gauche, puis sélectionnez le pack et l’accès Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon Modem`{.action}.
+Pour que le lien de secours LTE fonctionne, le modem doit être sur le firmware « 17.1.7960.01 ». 
+
+Afin de mettre à jour le modem, vous devez vous connecter à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action} dans la barre de services à gauche, puis sélectionnez le pack et l’accès Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon Modem`{.action}.
 
 Dans le cadre « Configurations avancées », sélectionnez le firmware « 17.1.7960.01 » dans la liste déroulante de la section `Firmware`.
 
 ![LTE](images/lte-step2b-1.png){.thumbnail}
 
 
-#### Changer les DNS DHCP
+##### **Changer les DNS DHCP**
 
 Une fois le modem à jour avec le firmware « 17.1.7960.01 », il faut modifier les DNS du serveur DHCP du modem.
 
-Dans le cas où la configuration à distance est activé, vous pouvez effectuer la modification depuis la section `DHCP` dans le cadre « Configuration réseau ». Il faut remplacer le champs DNS primaire par « 192.168.1.1 »  et supprimer le DNS secondaire.
+Dans le cas où la configuration à distance est activée, vous pouvez effectuer la modification depuis la section `DHCP` dans le cadre « Configuration réseau ». Il faut remplacer le champs DNS primaire par « 192.168.1.1 »  et supprimer le DNS secondaire.
 
 ![LTE](images/lte-step2b-2.png){.thumbnail}
 
-#### Brancher la clé usb Huawei E3372
+##### **Brancher la clé usb Huawei E3372**
 
 Votre modem est prêt pour supporter le lien de secours LTE. Il ne vous reste plus qu'à brancher la clé Huawei E3372 sur le port USB du modem.
 
