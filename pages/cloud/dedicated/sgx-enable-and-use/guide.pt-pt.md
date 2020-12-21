@@ -18,7 +18,7 @@ O Intel SGX oferece funcionalidades avançadas de encriptação de segurança pa
 
 ## Requisitos
 
-- Um [servidor dedicado Infraestrutura](https://www.ovh.pt/servidores_dedicados/infra/){.external}, com a opção [SGX](https://www.ovh.pt/servidores_dedicados/infra/software-guard-extensions/){.external}
+- Um [servidor dedicado Infraestrutura](https://www.ovhcloud.com/pt/bare-metal/infra/){.external}, com a opção [SGX](https://www.ovhcloud.com/pt/bare-metal/intel-software-guard-extensions/){.external}
 - Acesso administrativo (raiz) ao servidor via SSH
 - Acesso à [API OVH](https://api.ovh.com/console/){.external}
 - Ubuntu 18.04 ou semelhante instalado no servidor
@@ -27,11 +27,11 @@ O Intel SGX oferece funcionalidades avançadas de encriptação de segurança pa
 
 ### A partir da Área de Cliente OVHcloud
 
-Ligue-se à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), aceda à secção `Server`{.action} e selecione o servidor no qual deseja ativar SGX na secção **Servidores dedicados** do menu à esquerda.
+Ligue-se à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), aceda à secção `Bare Metal Cloud`{.action} e selecione o servidor no qual deseja ativar SGX na secção **Servidores dedicados** do menu à esquerda.
 
 #### Ativação da opção
 
-Desça até à zona `Funcionalidades avançadas` e clique em `...`{.action} em face de "Segurança - Intel SGX (Software Guard Extension)". Selecione `Ativar SGX`{.action} no menu pendente.
+Desça até à zona `Funcionalidades de nível avançado` e clique em `...`{.action} em face de "Segurança - Intel SGX (Software Guard Extension)". Selecione `Ativar SGX`{.action} no menu pendente.
 
 ![ativação SGX](images/enable_sgx.png){.thumbnail}
 
@@ -45,7 +45,7 @@ Pode optar por ativar SGX com uma quantidade específica de memória reservada o
 
 #### Desativação da opção
 
-Desça até à zona `Funcionalidades avançadas` e clique em `...`{.action} em face de "Segurança - Intel SGX (Software Guard Extension)". Selecione `Alterar SGX`{.action} no menu pendente. Escolha a opção `Desativar`{.action} e clique em `Confirmar`{.action}.
+Desça até à zona `Funcionalidades de nível avançado` e clique em `...`{.action} em face de "Segurança - Intel SGX (Software Guard Extension)". Selecione `Alterar SGX`{.action} no menu pendente. Escolha a opção `Desativar`{.action} e clique em `Confirmar`{.action}.
 
 ![Desativação do SGX](images/disable_sgx.png){.thumbnail}
 
