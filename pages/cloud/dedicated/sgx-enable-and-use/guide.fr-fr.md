@@ -25,7 +25,7 @@ La technologie Intel SGX fournit des fonctions de sécurité avancées de chiffr
 
 ### Depuis l'espace client OVHcloud
 
-Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), accédez à la section `Server`{.action}, puis sélectionnez le serveur sur lequel vous souhaitez activer SGX dans la section **Serveurs dédiés** du menu de gauche.
+Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), accédez à la section `Bare Metal Cloud`{.action}, puis sélectionnez le serveur sur lequel vous souhaitez activer SGX dans la section **Serveurs dédiés** du menu de gauche.
 
 #### Activation de l'option
 
