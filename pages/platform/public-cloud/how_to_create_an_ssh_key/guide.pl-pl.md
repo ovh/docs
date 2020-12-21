@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak wygenerować klucz SSH do logowania do Twojej instan
 section: 'Pierwsze kroki'
 ---
 
-**Ostatnia aktualizacja: 14 listopada 2019**
+**Ostatnia aktualizacja: 21/12/2020**
 
 ## Wprowadzenie
 
@@ -30,7 +30,7 @@ Klucze SSH nie służą do uwierzytelniania w instancjach z systemem operacyjnym
 Najpierw otwórz aplikację terminalu (wiersza polecenia), a później wygeneruj 4096-bitowy klucz SSH przy użyciu następującego polecenia:
 
 ```sh
-# ssh-keygen -b 4096
+# ssh-keygen -t rsa -b 4096
 ```
 
 Wykonanie polecenia spowoduje wyświetlenie następującego komunikatu z monitem o zapisanie nowo utworzonego klucza:

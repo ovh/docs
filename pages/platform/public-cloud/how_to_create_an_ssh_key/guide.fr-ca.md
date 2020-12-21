@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 2
 ---
 
-**Dernière mise à jour le 20 décembre 2019**
+**Dernière mise à jour le 21 décembre 2020**
 
 ## Objectif
 
@@ -36,7 +36,7 @@ Si vous souhaitez stocker une clé SSH dans l'espace client OVHcloudcloud, nous 
 Tout d'abord, ouvrez l'application Terminal (ligne de commande), puis exécutez la commande suivante pour générer une clé SSH de 4096 bits :
 
 ```sh
-# ssh-keygen -b 4096
+# ssh-keygen -t rsa -b 4096
 ```
 
 La commande affichera le résultat suivant et vous invitera à enregistrer la clé nouvellement créée :
