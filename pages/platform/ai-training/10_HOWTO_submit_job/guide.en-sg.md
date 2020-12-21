@@ -2,10 +2,10 @@
 title: Submit a job via UI
 slug: submit-job
 excerpt: Learn how to submit an AI Training job via UI
-section: How to
+section: How to (with UI)
 order: 1
 ---
-*Last updated 29th October, 2020.*
+*Last updated 10th December, 2020.*
 
 ## Objective
 
@@ -13,20 +13,19 @@ This guide covers the initialisation of **AI Training** and the submission of [*
 
 ## Requirements
 
--   a **Public Cloud** project
--   a user for AI Training (creation covered in Step 3)
+-   a **Public cloud** project
 -   optionally **data** objects to attach to the **job** at step 8, see our [create **data** object](../data) guide.
 -   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
-### Step 1: Going to the AI Training menu
+### Step 1 - Going to the AI Training menu
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Public Cloud` section and then to the `AI Training`{.action} section which is located under `AI & Machine Learning`.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Public Cloud`{.action} section and then to the `AI Training`{.action} section which is located under `AI & Machine Learning`.
 
 ![image](images/00_training_menu.png){.thumbnail}
 
-### Step 2: Activating AI Training service
+### Step 2 - Activating AI Training service
 
 Once you have read the general information and validated this services's contract terms, you can start submitting your jobs. Upon activating the AI Training service you grant OVHcloud access to your Object Storage containers. This access is only used to synchronise your data within **AI Training** with your containers.
 
@@ -44,40 +43,23 @@ Once **AI Training** is activated you land on the **dashboard** service with sev
 -   **AI Training** users: list of users that can use this service
 -   Jobs: list of active jobs
 
-The list of **AI Training** users should be empty at the moment, let's add a new user.
+> [!primary]
+> You don't need a user to launch a new job from the OVHcloud manager but you will need one later if you want to use the CLI or access your jobs urls. Instructions for creating new users are described [here](../create-user).
 
-### Step 3: Creating AI Training users
-
-To use **AI Training** with the `ovhai` CLI you need to create users with the correct roles. You don't need users to launch a new job from the OVHcloud Control Panel.
-
-Users management is available in the `Public Cloud` Control Panel under `Project Management` \> `Users & Roles`
-
-![image](images/03_users_menu.png){.thumbnail}
-
-Create a new [user](../users) and specify the required roles. Two roles are used within **AI Training**:
-
--   AI Training Operator: Grants access to **AI Training**
--   Objectstore Operator: Grants read/write access to the OVHcloud Object Storage.
-
-It is recommended to assign both roles.
-
-![image](images/04_users_roles.png){.thumbnail}
-
-### Step 4: Starting a job submission
+### Step 3 - Starting a job submission
 
 From the **jobs** list in the dashboard you can start the job submission by clicking the `Launch a new Job`{.action} button.
 
 ![image](images/05_dashboard_job_list.png){.thumbnail}
 
-### Step 5: Selecting a region for your job
+### Step 4 - Selecting a region for your job
 
 Each **job** is executed in an OVHcloud region. Each region has its own **AI Training** cluster with potentially varying capabilities. For more information see the [capabilities](../capabilities).
-
 Select the desired region and click `Next`{.action}.
 
 ![image](images/06_submit_region.png){.thumbnail}
 
-### Step 6: Providing a Docker image
+### Step 5 - Providing a Docker image
 
 A job is basically a Docker container that is run within the OVHcloud infrastructure. You need to provide a Docker image to be executed. There are several options you can choose from:
 
@@ -95,7 +77,7 @@ This includes public images (e.g. Dockerhub), images within the shared registry
 
 Once your image is chosen, click `Next`{.action}.
 
-### Step 7: Attaching data to your job (optional)
+### Step 6 - Attaching data to your job (optional)
 
 You can attach [**data**](../data) objects to your job either as input for your training workload or as output for your results (e.g. model weights).
 
@@ -107,13 +89,13 @@ To attach a **data** object, just select from the list on the left. Next to each
 
 Once the data is configured click `Next`{.action}.
 
-### Step 8: Overriding the Docker entrypoint (optional)
+### Step 7 - Overriding the Docker entrypoint (optional)
 
 The Docker image you provided in Step 6 includes an entrypoint for your container. You can override this entrypoint by specifying your own command. Once the entrypoint is set up click `Next`{.action}.
 
 ![image](images/11_submit_entrypoint.png){.thumbnail}
 
-### Step 9: Specifying the amount of resources
+### Step 8 - Specifying the amount of resources
 
 In this step you can select the amount of GPUs you want to be used during your training workload.
 
@@ -123,7 +105,7 @@ Once the number of GPUs is set you can see a preview of the billing rate for thi
 
 ![image](images/12_submit_resources.png){.thumbnail}
 
-### Step 10: Submitting your job
+### Step 9 - Submitting your job
 
 In the final step you get an overview of the **job** you configured before submission. You also get the equivalent command to use with the **`ovhai` CLI**.
 
@@ -137,7 +119,7 @@ Finally click `Submit`{.action} to submit your **job** to the cluster.
 >
 > A job will run indefinitely until completion or manual interruption.
 
-### Step 11: Consulting your job
+### Step 10 - Consulting your job
 
 Once the job is submitted you are redirected to the **jobs** list page.
 
@@ -153,7 +135,7 @@ From this list you can access your job details either by clicking on its `ID` or
 -   **Actions**: available actions
 -   **Data**: list of **data** objects attached to the job
 
-### Step 12: Cancelling your job
+### Step 11 - Cancelling your job
 
 If you are done using your notebook, if your model converged prematurely or if you just wish to interrupt your job you can do so from the **jobs** list.
 

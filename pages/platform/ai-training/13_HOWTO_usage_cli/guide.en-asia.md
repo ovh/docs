@@ -2,8 +2,8 @@
 title: Basic operations via CLI
 slug: usage-client
 excerpt: Learn how to use the CLI to interact with AI Training
-section: How to
-order: 3
+section: How to (with CLI)
+order: 1
 ---
 *Last updated 29th October, 2020.*
 
@@ -13,7 +13,7 @@ This guide covers the usage of the **ovhai** CLI.
 
 ## Requirements
 
--   a working `ovhai` CLI ([how to install ovhai CLI](../install-client))
+-   a working `ovhai` CLI [how to install ovhai CLI](../install-client)
 
 ## Instructions
 
@@ -50,7 +50,7 @@ ovhai job logs <job-id>
 ```
 
 You should see the output of the `echo` command:
-\> Hello from my first job
+> Hello from my first job
 
 ### Use data in your job
 

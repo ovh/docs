@@ -2,8 +2,8 @@
 title: Install the CLI
 slug: install-client
 excerpt: Learn how to install the CLI to interact with AI Training
-section: How to
-order: 2
+section: How to (with CLI)
+order: 1
 ---
 *Last updated 29th October, 2020.*
 
