@@ -138,7 +138,7 @@ command="/usr/bin/svnserve --root=/home.XXX/loginFTP/svn --tunnel --tunnel-user=
 --tunnel-user
 ```
 
-aggiungendo il parametro, è possibile autorizzare l'accesso da solo al lettore:
+aggiungendo il parametro, è possibile autorizzare l'accesso in sola lettura:
 
 ```bash
 --read-only.
