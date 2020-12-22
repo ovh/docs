@@ -2,7 +2,7 @@
 title: Créer et utiliser des comptes de ressource
 slug: exchange-utilisation-des-comptes-de-ressource
 legacy_guide_number: 1325
-excerpt: Ajouter et utiliser les comptes de ressource avec l’offre Exchange.
+excerpt: Ajouter et utiliser les comptes de ressource avec l’offre Exchange
 section: Fonctionnalités des comptes Exchange
 order: 4
 ---
@@ -34,7 +34,7 @@ Cliquez sur le bouton `Ajouter un compte de ressource`{.action} pour créer votr
 ![créer ressource](images/exchange-resources-step2.png){.thumbnail}
 
 |Nom|Description|
-|—|—|
+|---|---|
 |E-mail de la ressource|Entrez l'adresse de la ressource. Notez que vous ne pouvez pas choisir une adresse de messagerie existante.|
 |Nom de la ressource|Nom complet qui apparaît dans votre  [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) et dans [le webmail OVHcloud](https://www.ovh.com/fr/mail/) (OWA).|
 |Capacité|Vous pouvez définir la taille maximale d'une ressource (en spécifiant par exemple le nombre de places assises d'une pièce ou les sièges d'un véhicule de société partagé).|
