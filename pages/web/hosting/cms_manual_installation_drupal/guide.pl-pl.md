@@ -25,7 +25,7 @@ Zapoznaj się z przewodnikiem na temat odzyskania danych do SQL:[]({legacy}1909)
 
 ## Część 2: pobranie plików źródłowych
 
-- Przejdź na stronę modułu [Drupal](http://drupal.org/).
+- Przejdź na stronę modułu [Drupal](https://www.drupal.org/).
 
 
 

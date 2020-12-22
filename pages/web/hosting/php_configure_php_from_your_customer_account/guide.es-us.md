@@ -102,7 +102,7 @@ Si desea volver a la versión de PHP anterior, le invitamos a consultar el apart
 
 * [Wordress](https://codex.wordpress.org/Updating_WordPress)
 * [Joomla](https://docs.joomla.org/Portal:Upgrading_Versions/en)
-* [Drupal](http://drupal.org/documentation/)
+* [Drupal](https://www.drupal.org/documentation)
 * [Prestashop](http://doc.prestashop.com/pages/viewpage.action?pageId=11272342)
 
 

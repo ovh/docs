@@ -31,7 +31,7 @@ Existem muitas opções para efetuar o acesso SSH. Este guia inclui alguns exemp
 - [MobaXterm](https://mobaxterm.mobatek.net/) (versão gratuita e versão paga)
 - [SecureCRT](http://www.vandyke.com/products/securecrt/){.external} (Pago)
 
-O modo Developer / Programador das últimas versões Windows 10 e Windows Server inclui o acesso a uma linha de comandos bash. Sobre esta questão, veja a informação disponibilizada pela Microsoft: <https://msdn.microsoft.com/fr-fr/commandline/wsl/install-win10>.
+O modo Developer / Programador das últimas versões Windows 10 e Windows Server inclui o acesso a uma linha de comandos bash. Sobre esta questão, veja a informação disponibilizada pela Microsoft: <https://docs.microsoft.com/fr-fr/windows/wsl/install-win10>.
 
 #### Mac
 

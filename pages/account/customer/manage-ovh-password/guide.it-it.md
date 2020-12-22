@@ -56,7 +56,7 @@ KeePass permette inoltre di generare password casuali complesse che memorizzerà
 
 ### Best practice per la gestione delle password
 
-- **Verificare l’affidabilità.** Assicurati che la password utilizzata non sia stata trasmessa a malintenzionati. Questo tipo di verifica è possibile, ad esempio, eseguendo un test sul sito [haveibeenpwned.com](https://haveibeenpwned.com/){.external}, che consente di scoprire se questo dato è stato violato in seguito a episodi di <i>data breach</i>.
+- **Verificare l’affidabilità.** Assicurati che la password utilizzata non sia stata trasmessa a malintenzionati. Questo tipo di verifica è possibile, ad esempio, eseguendo un test sul sito haveibeenpwned.com, che consente di scoprire se questo dato è stato violato in seguito a episodi di <i>data breach</i>.
 Nel caso in cui la password risulti compromessa, consigliamo di [modificarla immediatamente](./#modifica-la-password).
 
 - **Utilizzare password diverse per ogni servizio.** È importante non utilizzare la password di accesso all’account OVHcloud anche su altri siti e applicazioni. Consigliamo di applicare questa regola a tutte le soluzioni attive: creare password differenti per ogni servizio permette di evitare eventuali vulnerabilità in caso di furto.
