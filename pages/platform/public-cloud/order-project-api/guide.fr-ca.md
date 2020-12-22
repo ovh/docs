@@ -66,7 +66,7 @@ Utilisez cet appel pour ajouter l'article à votre panier:
 Les informations suivantes, extraites au cours des étapes précédentes, doivent être fournies :
 
 |Champ|Valeur|
-|—|—| 
+|---|---|
 |cartId|*ID de votre panier*|
 |duration|P1M|
 |planCode|project.2018|
@@ -95,7 +95,7 @@ Utilisez le endpoint suivant pour nommer votre projet (`label: « description »
 >
 
 |Champ|Valeur|
-|—|—| 
+|---|---|
 |cartId|*ID de votre panier*|
 |itemId|*ID de l'article*|
 |label|description|
