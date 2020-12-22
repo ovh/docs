@@ -22,7 +22,7 @@ Veuillez noter qu'une clé SSH n'est pas utilisée pour s'authentifier sur un se
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager)
-- Disposer d’un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/) dans votre compte OVHcloud
+- Disposer d’un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) dans votre compte OVHcloud
 - Disposer d’un accès administrateur (root) via SSH
 
 ## Instructions

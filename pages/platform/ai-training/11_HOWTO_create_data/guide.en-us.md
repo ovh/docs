@@ -46,4 +46,4 @@ Finally, choose a name for your container and then click `Create the container`{
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/c/platform/ai-ml)
+-   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

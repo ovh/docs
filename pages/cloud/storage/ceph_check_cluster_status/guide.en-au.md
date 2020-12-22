@@ -31,7 +31,7 @@ Additional explanations:
 >> 
 > **Version**
 >> 
->> We currently deliver clusters up to version 9.2.1 ([official Ceph releases](http://docs.ceph.com/docs/master/releases/){.external})
+>> We currently deliver clusters up to version 9.2.1 ([official Ceph releases](https://docs.ceph.com/en/latest/releases/general/){.external})
 >> 
 >> 
 > **Tunable**

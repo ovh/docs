@@ -22,7 +22,7 @@ Tenga en cuenta que las claves SSH no se utilizan con fines de autenticación en
 ## Requisitos
 
 - Tener acceso al [panel de control de OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
-- Tener un [servidor dedicado](https://www.ovh.es/servidores_dedicados/) en su cuenta de OVHcloud.
+- Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/) en su cuenta de OVHcloud.
 - Tener acceso de administrador (raíz) a través del protocolo/programa SSH.
 
 ## Procedimiento

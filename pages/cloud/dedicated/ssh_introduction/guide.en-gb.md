@@ -32,7 +32,7 @@ To connect to your server from a Windows PC, you can use any of the following ap
 - [MobaXterm](https://mobaxterm.mobatek.net/) (free version and paid version)
 - [SecureCRT](http://www.vandyke.com/products/securecrt/){.external} (Paid)
 
-For the latest Windows 10 and Windows Server versions, developer mode gives you access to a bash console. Here is a link to the Microsoft documentation: <https://msdn.microsoft.com/en-gb/commandline/wsl/install-win10>.
+For the latest Windows 10 and Windows Server versions, developer mode gives you access to a bash console. Here is a link to the Microsoft documentation: <https://docs.microsoft.com/fr-fr/windows/wsl/install-win10>.
 
 #### Connecting from a Mac
 
