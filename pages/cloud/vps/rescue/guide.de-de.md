@@ -82,4 +82,4 @@ Sie können sich nun via SSH mit Ihrem VPS verbinden, indem Sie die Login-Daten 
 
 [SSH Einführung](../../dedicated/ssh-einfuehrung/)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -57,4 +57,4 @@ The default shared registry remains available even with a private registry attac
 
 Please send us your questions, feedback and suggestions to improve the service:
 
--   On the OVHcloud [AI community forum](https://community.ovh.com/c/platform/ai-ml)
+-   On the OVHcloud [AI community forum](https://community.ovh.com/en/c/Data-AI)

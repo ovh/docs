@@ -22,7 +22,7 @@ Please note that SSH keys are not used for authentication on servers running the
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
-- a [dedicated server](https://www.ovh.ie/dedicated_servers/) in your OVHcloud account
+- a [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) in your OVHcloud account
 - administrative access (root) via SSH
 
 ## Instructions
