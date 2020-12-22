@@ -2,7 +2,7 @@
 title: Créer et utiliser des comptes de ressource
 slug: exchange-utilisation-des-comptes-de-ressource
 legacy_guide_number: 1325
-excerpt: "Ajouter et utiliser les comptes de ressource avec l’offre Exchange".
+excerpt: Ajouter et utiliser les comptes de ressource avec l’offre Exchange.
 section: Fonctionnalités des comptes Exchange
 order: 4
 ---
