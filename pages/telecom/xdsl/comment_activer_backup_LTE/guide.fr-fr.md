@@ -16,10 +16,11 @@ Un lien de secours LTE permet de sécuriser votre connexion en cas de perte. Si 
 ## Prérequis
 
 - Disposer d’un [accès internet xDSL ou fibre OVHcloud](https://www.ovhtelecom.fr/offre-internet/){.external} et d'un modem Zyxel ou Technicolor TG799vac fourni par OVHcloud.
-- Cette fonctionnalité est disponible même si la configuration à distance est désactivée.
 - Disposer d'une clé LTE Huawei E3372 ainsi qu'une carte SIM permettant l'accès au réseau mobile de données.
 
 ## En pratique
+
+Cette fonctionnalité est disponible même si la configuration à distance du modem (via l'espace client OVHcloud) est désactivée.
 
 ### Étape 1 : Configurer la clé LTE Huawei E3372
 
@@ -39,18 +40,18 @@ Retournez sur l'onglet `Accueil` pour vérifier que vous êtes bien connecté. S
 
 > [!warning]
 >
-> En cas de perte de connexion la VoIP reste fonctionnelle lorsque le modem passe sur le lien de secours LTE. Par contre, un reboot est nécessaire pour que la VoIP soit de nouveau fonctionnelle après le rétablissement du lien cuivre ou fibre.
+> En cas de perte de connexion, la VoIP reste fonctionnelle lorsque le modem bascule sur le lien de secours LTE. Par contre, un reboot est nécessaire pour que la VoIP soit de nouveau fonctionnelle après le rétablissement du lien cuivre ou fibre.
 >
 
 Par défaut, le modem Zyxel est déjà configuré pour supporter les liens de secours LTE, il suffit donc uniquement de brancher votre clé Huawei E3372 sur le port USB du modem.
 
-Des configurations plus avancées sont disponibles à partir de l'interface locale, vous pouvez-vous reporter au [guide utilisateur du modem Zyxel](http://files.isp.ovh.net/zyxel/VMG8823-B50B_V5.13_5.50.pdf){.external} (en anglais) pour plus de détails.
+Des configurations plus avancées sont disponibles à partir de l'interface locale.  Consultez le [guide utilisateur du modem Zyxel](http://files.isp.ovh.net/zyxel/VMG8823-B50B_V5.13_5.50.pdf){.external} (en anglais) pour plus de détails.
 
 #### Modem Technicolor TG799vac
 
 > [!warning]
 >
-> En cas de perte de connexion la VoIP sur le modem n'est plus fonctionnelle lorsque le modem passe sur le lien de secours LTE. Par contre, elle redevient automatiquement fonctionnelle après le rétablissement du lien cuivre.
+> En cas de perte de connexion, la VoIP sur le modem n'est plus fonctionnelle lorsque le modem bascule sur le lien de secours LTE. Par contre, elle redevient automatiquement fonctionnelle après le rétablissement du lien cuivre.
 >
 
 Activer le lien de secours LTE sur un modem TG799vac nécessite quelques configurations supplémentaires.
