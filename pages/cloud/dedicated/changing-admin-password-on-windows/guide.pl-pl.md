@@ -25,7 +25,7 @@ Podczas instalacji lub reinstalacji systemu operacyjnego Windows otrzymujesz has
 
 ## W praktyce
 
-Kolejne etapy opisują proces zmiany lokalnego hasła administratora w trybie Rescue OVHcloud (oparty na Linuxie), który jest dostępny w każdej chwili. Jeśli wolisz korzystać z systemu Windows PE (WinRescue), zapoznaj się z metodą dedykowaną [na końcu tego przewodnika](./#reinitialisation-du-mot-de-passe-admin-a-laide-de-winrescue_1). 
+Kolejne etapy opisują proces zmiany lokalnego hasła administratora w trybie Rescue OVHcloud (oparty na Linuxie), który jest dostępny w każdej chwili. Jeśli wolisz korzystać z systemu Windows PE (WinRescue), zapoznaj się z metodą dedykowaną [na końcu tego przewodnika](./#reset-hasla-administratora-za-pomoca-winrescue_1). 
 
 ### Etap 1: restart serwera w trybie rescue
 
@@ -227,7 +227,7 @@ Write hive files? (y/n) [n]: tam
 
 ### Etap 4: restart serwera 
 
-Zacznij od zastąpienia netbootu **Uruchom z dysku twardego** w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) (patrz [Etap 1](./#etape-1-redemarrer-le-serveur-en-mode-rescue_1)). 
+Zacznij od zastąpienia netbootu **Uruchom z dysku twardego** w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) (patrz [Etap 1](./#etap-1-restart-serwera-w-trybie-rescue)). 
 
 Wróć do wiersza poleceń, odmontuj partycję i zrestartuj serwer, używając następujących poleceń:
 
@@ -325,11 +325,11 @@ Serwer musi zostać zrestartowany.
 
 #### Etap 3: zrestartuj serwer 
 
-Zacznij od zastąpienia netbootu **Uruchom z dysku twardego** w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) (patrz [Etap 1](./#etape-1-redemarrer-le-serveur-en-mode-rescue_1)).
+Zacznij od zastąpienia netbootu **Uruchom z dysku twardego** w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) (patrz [Etap 1](./#etap-1-restart-serwera-w-trybie-rescue)).
 
 W oknie KVM wybierz opcję zatrzymania `Wykonaj restart`{.action} za pomocą przycisku Windows "Uruchom" w lewym dolnym rogu.
 
-Przejdź do opisu operacji [5: zdefiniować nowe hasło (IPMI)](./#etape-5-definir-un-nouveau-mot-de-passe-ipmi).
+Przejdź do opisu operacji [5: zdefiniować nowe hasło (IPMI)](./#etap-5-zdefiniowanie-nowego-hasla-ipmi).
 
 ## Sprawdź również
 
