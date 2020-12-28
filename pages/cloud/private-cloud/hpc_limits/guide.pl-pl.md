@@ -1,6 +1,6 @@
 ---
 title: Możliwości techniczne
-slug: możliwości techniczne
+slug: mozliwosci-techniczne
 excerpt: 'Poznaj możliwości i ograniczenia techniczne rozwiązań Hosted Private Cloud dostarczanych przez OVHcloud'
 section: FAQ
 order: 2
