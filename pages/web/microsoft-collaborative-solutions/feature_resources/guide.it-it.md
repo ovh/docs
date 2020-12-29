@@ -1,131 +1,130 @@
 ---
-title: 'Exchange 2013: utilizzo account di risorsa'
+title: 'Crea e utilizza account di risorsa'
 excerpt: In questa guida ti mostriamo come configurare degli account di risorsa
 slug: exchange_2013_utilizzo_account_di_risorsa
 legacy_guide_number: g1325
 ---
 
+**Ultimo aggiornamento: 22 dicembre 2020**
 
-## Creazione della risorsa: step 1
-Per creare la risorsa, accedi al tuo [Spazio Cliente](https://www.ovh.com/manager/web/login.html).
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
-Seleziona la tua offerta Exchange 2013 in "Piattaforma".
+## Obiettivo
 
-Entra in "Account di risorsa" poi "Aggiungi un account di risorsa".
+Questa funzione collaborativa di Exchange permette di creare indirizzi di posta dedicati alle risorse della tua organizzazione, come sale di conferenza e dispositivi condivisi. L'utilizzo di questi account di risorse permette di ottimizzare l'organizzazione di eventi in un ambiente di lavoro collaborativo, fornendo controlli di disponibilità e integrando le risorse in modo trasparente nei calendari Exchange.
 
-Devi aver selezionato "Modalità esperto" a destra, nel tuo Spazio Cliente.
+**Questa guida ti mostra come gestire le risorse utilizzando lo Spazio Cliente OVHcloud e l'applicazione Outlook Web App (OWA).**
 
-![](images/img_1346.jpg){.thumbnail}
+## Prerequisiti
 
+- Disporre di una [soluzione Exchange OVHcloud](https://www.ovh.it/emails/hosted-exchange/) già configurata
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Disporre delle credenziali di accesso per gli account di posta che hanno accesso alla risorsa
 
-## Creazione della risorsa: step 2
-Compila i campi che seguono.
+## Procedura
 
-Nome della risorsa:  indica il nome della risorsa che vuoi che venga visualizzato.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e seleziona `Web Cloud`{.action} nella barra di navigazione superiore. Clicca su `Microsoft`{.action} nel menu a sinistra e poi su `Exchange`{.action}. Seleziona il servizio Exchange interessato. Clicca sulla scheda `Plus +`{.action} e poi su `Risorse`{.action}.
 
-Email della risorsa:  scegli l'indirizzo email della risorsa. Non può essere un indirizzo email esistente.
+### Step 1: creare una risorsa
 
-Capacità:  indica, a titolo informativo, la dimensione della tua risorsa.
+![creare risorse](images/exchange-resources-step1.png){.thumbnail}
 
-Permettere i conflitti:  se selezioni questa casella, quando un utente cerca di prenotare una sala o uno strumento già in utilizzo, i messaggi di avvertimento non vengono visualizzati.
+Clicca sul pulsante `Aggiungi un account risorsa`{.action} per creare la tua prima risorsa. Nella nuova finestra inserisci i seguenti campi:
 
-Tipo di risorsa:  sono disponibili account "Sala" o "Strumenti".
+![creare risorse](images/exchange-resources-step2.png){.thumbnail}
 
-Clicca su "Avanti" per passare al secondo step e poi finalizza l'operazione cliccando su "Crea".
+|Nome|Descrizione|
+|---|---|
+|Email della risorsa|Inserisci l'indirizzo della risorsa. Non è possibile scegliere un indirizzo di posta esistente.|
+|Nome della risorsa|Nome completo che compare nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e nella [Webmail OVHcloud](https://www.ovh.it/mail/) (OWA).|
+|Capacità|È possibile definire la dimensione massima di una risorsa (specificando, ad esempio, il numero di posti a sedere di una parte o i sedili di un veicolo condiviso).|
+|Permettere i conflitti|Se seleziona questa opzione, potrai creare eventi di calendario che si sovrappongono e coinvolgono la stessa risorsa.|
+|Tipo di risorsa|Scegli il tipo di risorsa: "Apparecchiature" o "Sala".|
 
-![](images/img_1347.jpg){.thumbnail}
-
-
-## Creazione della risorsa: step 3
-Dopo aver creato le risorse, puoi modificarle o eliminarle.
-
-Nella tabella di sintesi trovi il nome, il tipo (sala o strumenti), la capacità e l'indirizzo email della tua risorsa.
-
-Proseguiamo nella descrizione dell'utilizzo degli account, dopo averli attivati.
-
-![](images/img_1348.jpg){.thumbnail}
-
-
-## Calendario di una risorsa: step 1
-Per visualizzare il calendario di una risorsa utilizzando OWA, accedi alla [Webmail Exchange 2013](https://ex.mail.ovh.net/owa/), utilizzando il tuo indirizzo email completo e la password del tuo account email.
+Clicca su `Avanti`{.action} per riassumere e conferma cliccando su `Crea`{.action}.
 
 
-Seleziona "Calendario", clicca con il tasto destro su "ALTRI CALENDARI" e scegli "Apri il calendario".
+### Step 2: utilizzare le risorse
 
-![](images/img_1349.jpg){.thumbnail}
+Le risorse possono essere gestite dalla tabella della scheda "Risorse". Clicca sui tre puntini `...`{.action}. per modificare o eliminare una risorsa. Comparirà anche l'opzione `Configura le deleghe`{.action}. Con questa opzione, potrai delegare l'accesso allo stesso modo di un account Exchange. Per maggiori informazioni, consulta [questa guida](../exchange_2013_assegna_i_diritti_full_access_a_un_account/).
 
+![utilizzare le risorse](images/exchange-resources-step3.png){.thumbnail}
 
-## Calendario di una risorsa: step 2
-Inserisci il nome della tua risorsa. Il server Exchange 2013 la recupera automaticamente nella GAL (Global Address List).
+### Aggiungi un calendario delle risorse in OWA
 
-Seleziona "Apri" per finalizzare l'operazione.
+> [!primary]
+>
+Consulta anche la nostra guida sulla [condivisione di calendari dall'interfaccia OWA](../exchange_2016_condividi_un_calendario_con_la_webmail_owa/).
+>
 
-![](images/img_1350.jpg){.thumbnail}
+Accedi al tuo account Exchange tramite la [Webmail OVHcloud](https://www.ovh.it/mail/). Clicca sul pulsante "Avanti" in alto a sinistra e seleziona l'icona `Calendario`{.action}.
 
+![aggiungi un calendario](images/exchange-calendars-step1.png){.thumbnail}
 
-## Calendario di una risorsa: step 3
-I calendari delle risorse vengono visualizzati nell'interfaccia OWA.
+Nella barra di navigazione superiore, clicca su `Aggiungi un calendario`{.action} e poi su `A partire dall'elenco`{.action}.
 
-In alto a sinistra trovi il pulsante "Nuovo Evento", che puoi selezionare per creare un evento per i tuoi collaboratori.
+![selezionare risorsa](images/exchange-resources-step4.png){.thumbnail}
 
-![](images/img_1351.jpg){.thumbnail}
+Inserisci un testo per visualizzare i suggerimenti dei tuoi contatti, inserisci un indirizzo email completo o utilizzi l'opzione di ricerca tramite `A partire dall'elenco`{.action}. Tuttavia, l'indirizzo di posta della risorsa deve essere suggerito in questa fase perché è stato automaticamente aggiunto alla lista di indirizzi globale (GAL) al momento della sua creazione. Clicca su `Aprire`{.action} per aggiungere il calendario di questa risorsa alla visione d'insieme del tuo calendario.
 
+### Creare un evento in OWA
 
-## Gestione di una risorsa: step 1
-Creiamo un evento utilizzando le risorse create in precedenza.
+Per pianificare un evento, clicca prima su `Nuovo`{.action} nella barra del menu superiore e seleziona `Modifica il calendario`{.action}. Nella nuova finestra, puoi definire i dettagli del tuo evento e aggiungere l'equipaggiamento necessario e la posizione aggiungendo le risorse corrispondenti.
 
-Nella sezione "Calendario", seleziona "nuovo evento".
+![pianificazione](images/exchange-resources-step5_1.png){.thumbnail}
 
-Nell'interfaccia visualizzata, compila i campi che seguono.
+Il gestore degli eventi è composto da tre parti:
 
+#### Descrizione
 
-Evento:  il nome che vuoi dare al tuo evento.
+- (1) Aggiungi un titolo all'evento: questo sarà visualizzato nei calendari.
+- (2) Aggiungere una posizione o una sala: scegli tra i tuoi account di risorse.
+- (3) Inizio/Fine: definisci la durata dell'evento.
+- (4) Ripetere: se necessario, scegli un ciclo di ripetizione (giornaliero, stesso giorno ogni mese, ecc.).
+- (5) Si ricorda: OWA mostra una finestra di promemoria all'ora specificata.
+- (6) Mostra come: scegli uno stato per il tuo calendario di disponibilità.
+- (7) Aggiungi un promemoria via posta: un'opzione che permette di inviare richiami via email a te stesso o a tutti i partecipanti.
 
-Location:  puoi aggiungere la tua risorsa di tipo "Sala" a questo livello.
+Inserisci il tuo messaggio di invito nell'editore (8) e continua ad aggiungere partecipanti al tuo evento.
 
-Partecipanti:  aggiungi i tuoi collaboratori e le risorse di tipo "Strumenti".
+Se cerchi di aggiungere una risorsa già riservata ("occupata"), visualizzi un messaggio e suggerisce di utilizzare l'[Assistente di pianificazione](./#pianificazione) (9), che fornisce una visione d'insieme più ampia del calendario del periodo scelto.
 
-Avvio:  inserisci la data di inizio del tuo evento.
+#### Contatti
 
-Durata:  indica la durata del tuo evento.
+Dato che un account risorsa è anche un contatto, è possibile aggiungere sale e attrezzature in questa sezione, esattamente come per gli altri partecipanti (10). Inizia a digitare per visualizzare i suggerimenti dei tuoi contatti, inserisci un'email completa o utilizzi l'opzione di ricerca (un click su `+`{.action} aprirà i tuoi contatti).
 
-Appari come:  inserisci lo status che vuoi che appaia sul calendario.
+Una volta terminata la pianificazione, clicca su `Invia`{.action} nella barra dei menu superiore, l'account risorsa ti invia un messaggio per confermare che è prenotato per il tuo evento. Seleziona la casella "Richiedere risposte" se hai bisogno di una conferma attiva da parte degli invitati per aggiornare automaticamente il tuo calendario.
 
-Promemoria:  definisci il momento in cui viene inviato un promemoria.
+#### Pianificazione
 
-Ripeti:  inserisci la periodicità del tuo evento.
+A destra compare un estratto del calendario dei tuoi eventi, intitolato **Pianificare**, non appena aggiungi una risorsa o una persona all'evento. fornisce un'anteprima grafica della disponibilità delle risorse il giorno scelto; per definire l'orario e la durata dell'evento, clicca sul mouse e seleziona il menu in alto a destra.
 
-Seleziona "Invia" per concludere l'aggiunta dell'evento.
+Se necessario, clicca su `Assistant Planification`{.action} nella sezione **Contatti** per aprire una panoramica ancora più dettagliata. Questo assistente è utile per eventi più importanti o per gestire i conflitti, perché visualizza l'intero processo di pianificazione. Per verificare la disponibilità e adattare la tua pianificazione selezionando posizioni e contatti, senza abbandonare questa interfaccia.
 
-![](images/img_1352.jpg){.thumbnail}
+![assistente](images/exchange-resources-step6.png){.thumbnail}
 
+### Messaggi di risposta della risorsa
 
-## Gestione di una risorsa: step 2
-L'evento "Riunione" è stato accettato dalla risorsa "MiaSala1" di tipo Sala e la risorsa "Strumenti1" di tipo Strumenti.
+Dopo aver creato l'evento (cliccando su `Invia`{.action} nella barra del menu superiore), Exchange invierà automaticamente dei messaggi:
 
-È stata richiesta una risposta via mail e ora hai ricevuto le notifiche di accettazione o di rifiuto dell'evento.
+- I partecipanti riceveranno inviti (per aggiornare i calendari o solo i loro, a seconda della scelta di "richiedere risposte" in precedenza).
 
-![](images/img_1356.jpg){.thumbnail}
+- Riceverai un'email di conferma da ogni resource account scelto (se la risorsa è disponibile o se è riservata ma **hai selezionato** "Permettere i conflitti" durante la creazione).
 
+![messaggio di accettazione](images/exchange-resources-step7.png){.thumbnail}
 
-## Gestione di una risorsa: step 3
-Visualizza lo status delle risorse, dall'interfaccia del calendario.
+- Riceverai un'email di rifiuto da ogni resource account scelto (se la risorsa non è disponibile e **non hai selezionato** "Permettere i conflitti" durante la creazione).
 
-Visualizza l'evento che hai aggiunto e lo status delle risorse che ora risulta "Occupato".
+![messaggio di rifiuto](images/exchange-resources-step8.png){.thumbnail}
 
-![](images/img_1357.jpg){.thumbnail}
+## Per saperne di più
 
+[Consulta il tuo account Exchange dall'interfaccia OWA](../exchange_2016_guida_allutilizzo_di_outlook_web_app/)
 
-## Gestione di una risorsa: step 4
-Aggiungi un nuovo evento nella stessa data del precedente.
+[Condividi un calendario dall'interfaccia OWA](../exchange_2016_condividi_un_calendario_con_la_webmail_owa/)
 
-Nello stesso modo ricevi le notifiche di accettazione o rifiuto dell'evento.
+[Condividi una cartella con l'interfaccia OWA](../exchange_2016_condividi_una_cartella_con_la_webmail_owa/)
 
-Per il secondo evento "Discorso", la risorsa "MiaSala1" rifiuta l'avvenimento a causa di un conflitto. 
-È già previsto un avvenimento in questa data e, non avendo autorizzato i conflitti su questa risorsa, rifiuta la richiesta di creazione dell'evento.
-
-La risorsa "Strumenti1" ha accettato l'evento. 
-Per questa data è già previsto un evento, ma la gestione dei conflitti è stata disattivata su questa risorsa, quindi è stato accettato.
-
-![](images/img_1358.jpg){.thumbnail}
-
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
