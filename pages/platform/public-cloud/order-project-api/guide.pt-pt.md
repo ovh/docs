@@ -91,7 +91,7 @@ Pode verificar a lista dos parâmetros de configuração disponíveis para este 
 > @api {GET} /order/cart/{cartId}/item/{itemId}/requredConfiguração
 >
 
-Utilize o seguinte endpoint para nomear o seu projeto (`label: "descrição"`:
+Utilize o seguinte endpoint para nomear o seu projeto (`label: "descrição"`):
 
 > [!api]
 >
