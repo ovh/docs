@@ -92,7 +92,7 @@ Puoi verificare la lista dei parametri di configurazione disponibili per questo 
 > @api {GET} /order/cart/{cartId}/item/{itemId}/requiredConfiguration
 >
 
-Utilizza questo endpoint per nominare il tuo progetto (`label: "descrizione"`:
+Utilizza questo endpoint per nominare il tuo progetto (`label: "descrizione"`):
 
 > [!api]
 >
