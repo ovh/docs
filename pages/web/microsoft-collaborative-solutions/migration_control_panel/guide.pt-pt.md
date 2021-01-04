@@ -32,7 +32,7 @@ A OVHcloud oferece várias soluções de e-mail: MX Plan (vendido isoladamente o
 
 As soluções E-mail Pro e Exchange dispõem de uma base de funcionalidades comum. No entanto, subsistem diferenças consoante os casos de utilização. Ao escolher um endereço Exchange, dispõe da totalidade das funções colaborativas, como a sincronização do calendário e dos contactos. A solução E-mail Pro, por sua vez, propõe algumas, mas estas estão limitadas a uma utilização apenas através de um webmail.
 
-Antes de continuar, é importante saber para que oferta deseja migrar os seus endereços de e-mail MX Plan. Para o ajudar nesta escolha, consulte a página das [soluções de e-mails profissionais da OVHcloud](https://www.ovh.com/fr/emails/){.external} que propõe uma comparação pormenorizada das ofertas. Tem a possibilidade de acumular as soluções e de utilizar para um mesmo nome de domínio uma ou várias contas E-mail Pro e Exchange. Além disso, se tiver de migrar várias contas, recomendamos que execute um plano de migração.
+Antes de continuar, é importante saber para que oferta deseja migrar os seus endereços de e-mail MX Plan. Para o ajudar nesta escolha, consulte a página das [soluções de e-mails profissionais da OVHcloud](https://www.ovh.pt/emails/){.external} que propõe uma comparação pormenorizada das ofertas. Tem a possibilidade de acumular as soluções e de utilizar para um mesmo nome de domínio uma ou várias contas E-mail Pro e Exchange. Além disso, se tiver de migrar várias contas, recomendamos que execute um plano de migração.
 
 
 ### Etapa 2: encomendar as suas contas E-mail Pro ou Exchange
@@ -63,7 +63,7 @@ Para isso, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action
 >
 > A sua conta OVHcloud deve ter um contacto com o administrador e o contacto técnico do serviço E-mail Pro ou Exchange para o qual migra.
 >
-> Para mais informações sobre as alterações de contactos, consulte o nosso guia para [gerir os contactos dos seus serviços](../../customer/gestion-des-contacts/).
+> Para mais informações sobre as alterações de contactos, consulte o nosso guia para [gerir os contactos dos seus serviços](../../customer/gestao_dos_contactos/).
 >
 
 A migração pode ser efetuada a partir de duas interfaces:<br>
@@ -126,7 +126,7 @@ No separador `Contas de e-mail`{.action} da plataforma E-mail Pro ou Exchange, c
 
 3\. **Migre** a conta MXPlan para a sua nova plataforma com a nossa ferramenta [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
 
-Para mais informações sobre OMM, consulte o nosso guia [Migrar contas de e-mail através do OVH Mail Migrator](../exchange-migration-de-comptes-e-mail-ovh-mail-migrator/).
+Para mais informações sobre OMM, consulte o nosso guia [Migrar contas de e-mail através do OVH Mail Migrator](../exchange-migracao-de-contas-email-ovh-mail-migrator/).
 
 ![Exchange](images/mxplan-migration-configure-account03.png){.thumbnail}
 
@@ -157,7 +157,7 @@ Para alterar a configuração, clique na etiqueta vermelha e execute a operaçã
 
 Só precisa de utilizar os seus endereços de e-mail migrados. Para isso, a OVHcloud disponibiliza uma aplicação online (_web app_) acessível no endereço <https://www.ovh.com/pt/mail/>. Introduza os dados de acesso relativos ao seu endereço de e-mail.
 
-Se configurou uma das contas migradas num cliente de e-mail (como o Outlook), deve configurá-la novamente. As informações de ligação ao servidor OVHcloud foram alteradas após a migração. Para o ajudar nas suas operações, consulte o nosso manual através das secções dos guias [E-mail Pro](https://docs.ovh.com/fr/emails-pro/) e [Hosted Exchange](../). Se não consegue reconfigurar a conta de forma imediata, o acesso através da aplicação online é sempre possível.
+Se configurou uma das contas migradas num cliente de e-mail (como o Outlook), deve configurá-la novamente. As informações de ligação ao servidor OVHcloud foram alteradas após a migração. Para o ajudar nas suas operações, consulte o nosso manual através das secções dos guias [E-mail Pro](../../emails-pro/) e [Hosted Exchange](../). Se não consegue reconfigurar a conta de forma imediata, o acesso através da aplicação online é sempre possível.
 
 ### Migrar Manual
 
@@ -166,7 +166,7 @@ Também pode migrar manualmente os seus endereços de e-mail para a nova oferta 
 
 ## Quer saber mais?
 
-[Como gerir os contactos (gestores) dos serviços OVH](../../customer/gestisci_i_tuoi_contatti/){.external}.
+[Como gerir os contactos (gestores) dos serviços OVH](../../customer/gestao_dos_contactos/){.external}.
 
 [Guias E-mail Pro](../../emails-pro/){.external}.
 
