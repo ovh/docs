@@ -1,135 +1,130 @@
 ---
-title: 'Exchange 2013/2016: Utilização das contas de recurso'
+title: 'Utilização das contas de recurso'
 excerpt: Insert Here A Short Desc
 slug: exchange_20132016_utilizacao_das_contas_de_recurso
 legacy_guide_number: g1325
 ---
 
+**Última atualização: 22 de dezembro de 2020**
 
-## Criação dos recursos Parte 1
-Para que possa criar os seus recursos ligue-se ao seu [Espaço de cliente](https://www.ovh.com/manager/web/login.html).
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-Selecione a sua oferta Exchange em "Plataforma".
+## Objetivo
 
-Escolha o separador "Contas de recursos" e depois "Adicionar uma conta de recurso".
+Esta função colaborativa do Exchange permite criar endereços de e-mail dedicados aos recursos da sua organização, tais como salas de conferência e equipamentos partilhados. A utilização destas contas de recursos permite otimizar a organização de eventos num ambiente de trabalho colaborativo, ao fornecer controlos de disponibilidade e ao integrar os recursos de forma transparente nos seus calendários Exchange.
 
-Deve selecionar "Modo expert" à direita no seu Espaço de Cliente.
+**Este guia explica a gestão dos recursos com a ajuda da Área de Cliente OVHcloud e da aplicação Outlook Web App (OWA).**
 
-![](images/img_1346.jpg){.thumbnail}
+## Requisitos
 
+- Dispor de uma [solução Exchange OVHcloud](https://www.ovh.pt/emails/hosted-exchange/) já configurada
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Dispor de dados de acesso para a(s) conta(s) de e-mail com acesso ao recurso.
 
-## Criação dos recursos Parte 2
-Introduza os campos pedidos:
+## Instruções
 
-Nome do recurso:  indique o nome que deseja para o recurso.
+Ligue-se à sua Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e selecione `Web Cloud`{.action} na barra de navegação superior. Clique em `Microsoft`{.action} na barra de serviços situada à esquerda e, a seguir, em `Exchange`{.action}. De seguida, selecione o serviço Exchange em causa. Clique no separador `Plus +`{.action} e, a seguir, em `Recursos`{.action}.
 
-E-mail do recurso:  escolha o endereço de e-mail do recurso. Não deve ser um endereço de e-mail existente.
+### 1 - criar um recurso
 
-Capacidade: a título informativo, indique o tamanho do seu recurso.
+![criar](images/exchange-resources-step1.png){.thumbnail}
 
-Permitir conflitos:  se esta opção estiver ativada não será enviada nenhuma mensagem de alerta quando um utilizador tentar reservar uma sala ou equipamento que já tem uma reserva.
+Clique no botão `Adicionar uma conta de recurso`{.action} para criar o seu primeiro recurso. Na nova janela, introduza os seguintes campos:
 
-Tipo de recurso:  estão disponíveis dois tipos de recurso: "Sala" ou "Equipamento".
+![criar](images/exchange-resources-step2.png){.thumbnail}
 
-Clique em "Seguinte" para aceder à etapa 2 e finalize a operação ao clicar em "Criar".
+|Nome|Descrição|
+|---|---|
+|E-mail do recurso|Introduza o endereço do recurso. Tenha em atenção que não pode escolher um endereço de e-mail existente.|
+|Nome do recurso|Nome completo que aparece na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e [no webmail OVHcloud](https://www.ovh.pt/mail/) (OWA).|
+|Capacidade|Pode definir a dimensão máxima de um recurso (especificando, por exemplo, o número de lugares sentados de uma peça ou os lugares sentados de um veículo de empresa partilhada).|
+|Permitir conflitos|Se esta opção for selecionada, poderá criar eventos de calendário que se sobreponham e envolvam o mesmo recurso.|
+|Tipo de recurso|Escolha o tipo de recurso: "Equipamento" ou "Sala".|
 
-![](images/img_1347.jpg){.thumbnail}
-
-
-## Criação dos recursos Parte 3
-Uma vez criados os recursos, é possível que os modifique ou elimine-os.
-
-Uma tabela resumo irá mostrar-lhe as informações do nome dos recursos, o seu tipo (equipamento ou sala), a sua capacidade ou ainda o e-mail do seu recurso.
-
-As contas de recurso estão ativas, e neste guia iremos mostrar-lhe como pode utilizá-las.
-
-![](images/img_1348.jpg){.thumbnail}
-
-
-## Calendário de um recurso Parte 1
-Veja como visualizar o calendário de um recurso via OWA.
-
-Aceda ao [Webmail Exchange](https://ex.mail.ovh.net/owa/).
-
-Identifique-se com o seu endereço de e-mail completo e a respetiva password.
-
-Selecione de seguida o separador "Calendário", e faça um clique direito em "OUTROS CALENDÁRIOS" e depois selecione "Abrir o calendário".
-
-![](images/img_1349.jpg){.thumbnail}
+Clique em `Seguinte`{.action} para passar ao resumo e confirme a tarefa clicando em `Criar`{.action}.
 
 
-## Calendário de um recurso Parte 2
-Introduza o nome do seu recurso. O servidor Exchange obtém o recurso automaticamente pois faz parte do GAL (Global address list).
+### Etapa 2: utilizar recursos
 
-Selecione "Abrir" para terminar a operação.
+Os seus recursos podem ser geridos a partir da tabela do separador "Recursos". Clique em `...`{.action} para modificar ou eliminar um recurso. A opção `Configurar as delegações`{.action} também será apresentada. Com esta opção, poderá delegar o acesso da mesma forma que para uma conta Exchange. Consulte os detalhes [neste guia](../exchange_3013_atribuir_permissoes_full_access_a_uma_conta/).
 
-![](images/img_1350.jpg){.thumbnail}
+![utilizar](images/exchange-resources-step3.png){.thumbnail}
 
+### Adicionar um calendário de recursos à OWA
 
-## Calendário de um recurso Parte 3
-Os calendários dos recursos criados são visíveis na interface OWA.
+> [!primary]
+>
+Consulte também o nosso manual sobre [Partilha de calendários a partir da interface OWA](../exchange_2016_partilhar_um_calendario_atraves_do_webmail_owa/).
+>
 
-À direita terá um botão "novo evento". Terá então a possibilidade de o selecionar para criar um novo evento para os seus colaboradores.
+Ligue-se à sua conta Exchange através do [webmail OVHcloud](https://www.ovh.pt/mail/). Migre para a interface "Calendário" clicando no "aplicador" no canto superior esquerdo e selecionando o ícone `Calendário`{.action}.
 
-![](images/img_1351.jpg){.thumbnail}
+![adicionar](images/exchange-calendars-step1.png){.thumbnail}
 
+Na barra de navegação superior, clique em `Adicionar um calendário`{.action} e depois em `A partir do anuário`{.action}.
 
-## Gestão de um recurso Parte 1
-Num primeiro tempos vamos criar um evento utilizando um dos nossos recursos que previamente criámos
+![selecionar recurso](images/exchange-resources-step4.png){.thumbnail}
 
-Para tal, na parte "Calendário", selecione "novo evento".
+Introduza texto para apresentar as sugestões dos seus contactos, introduza um endereço eletrónico completo ou utilize a opção de pesquisa via `A partir do anuário`{.action}. No entanto, o endereço de e-mail do recurso deve ser sugerido nesta fase, uma vez que foi automaticamente acrescentado à lista de endereços global (GAL) aquando da sua criação. Clique em `Abrir`{.action} para adicionar o calendário deste recurso à vista de conjunto do seu calendário.
 
-A inteface aparece como em baixo.
+### Criar um evento no OWA
 
-Introduza os campos pedidos:
+Para planear um evento, clique em `Novo`{.action} na barra de menu superior e selecione `Evento de calendário`{.action}. Na nova janela, pode definir os detalhes do evento e adicionar o equipamento necessário e a localização adicionando os recursos correspondentes.
 
-Evento:  o nome desejado para o seu evento
+![planeamento](images/exchange-resources-step5_1.png){.thumbnail}
 
-Emplacement :  vous pouvez à présent ajouter votre ressource de type "Salle" à ce niveau.
+O gestor de eventos é composto por três componentes:
 
-Participantes:  adicione aqui os colaboradores e os recursos do tipo "equipamento".
+#### Detalhes
 
-Início:  indique aqui a hora de início do seu evento.
+- (1) Adicionar um título para o evento: isto será apresentado nos calendários.
+- (2) Adicionar um espaço ou uma sala: pode escolher entre as suas contas de recursos.
+- (3) Início/Fim: defina a duração do evento.
+- (4) Repetir: se necessário, selecione um ciclo de repetição (diário, no mesmo dia todos os meses, etc.).
+- (5) Lembrete: A OWA exibe uma janela de chamada à hora especificada.
+- (6) Apresentar como: escolha um estado para o seu calendário de disponibilidade.
+- (7) Acrescentar uma carta de insistência: uma opção que permita enviar alertas por e-mail a si ou a todos os participantes.
 
-Duração:  pode escolher aqui a duração do seu evento.
+Introduza a sua mensagem de convite no editor (8) e continue a adicionar participantes ao seu evento.
 
-Mostrar como:  define o estado que aparece nos calendários.
+Se tentar adicionar um recurso já reservado ("ocupado"), aparecerá uma mensagem que sugere a utilização do [Assistente de Planeamento](./#planificacao) (9), que fornece uma visão mais ampla do calendário do período escolhido.
 
-Lembrete:  define quando o lembrete do evento é enviado.
+#### Contactos
 
-Repetir:  define a periodicidade do seu evento.
+Uma vez que uma conta de recursos é também um contacto, pode adicionar salas e equipamentos neste domínio, tal como para os outros participantes (10). Comece a escrever para apresentar as sugestões dos seus contactos, introduza um e-mail completo ou utilize a opção de pesquisa (um clique em `+`{.action} abrirá os seus contactos).
 
-Selecione "Enviar" para finalizar a adição do seu evento.
+Depois de finalizar o planeamento, clicando em `Enviar`{.action} para a barra de menus superior, a conta de recursos envia-lhe uma mensagem para confirmar que está reservada para o seu evento. Selecione a opção "Pedir respostas" se precisar de uma confirmação ativa por parte dos convidados para atualizar automaticamente o seu calendário.
 
-![](images/img_1352.jpg){.thumbnail}
+#### Planificação
 
+Um excerto de calendário dos seus próprios eventos, intitulado **Planificar**, aparece à direita assim que adiciona um recurso ou uma pessoa ao evento. Apresenta um resumo gráfico da disponibilidade dos recursos no dia escolhido; pode definir a hora e a duração do evento diretamente clicando com o rato e selecionando o menu no canto superior direito.
 
-## Gestão de um recurso Parte 2
-O evento "reunião" foi aceite pelo recurso "AMinhaSala1" do tipo sala, e o recurso "Equipamento1" do tipo equipamento.
+Se necessário, clique em `Assistente Planificação`{.action} na vertente **Contacts** para abrir uma vista de conjunto ainda mais detalhada. Este assistente é útil para eventos mais importantes ou para gerir conflitos, pois visualiza todo o processo de planeamento. Pode verificar a disponibilidade e ajustar o seu planeamento selecionando localizações e contactos, sem sair desta interface.
 
-O pedido de resposta por e-mail foi pedido, será notificado da validação ou da não validação do seu pedido.
+![assistente](images/exchange-resources-step6.png){.thumbnail}
 
-![](images/img_1356.jpg){.thumbnail}
+### Mensagens de resposta do recurso
 
+Depois de criar o evento (ao clicar em `Enviar`{.action} para a barra de menu superior), Exchange enviará automaticamente mensagens:
 
-## Gestão de um recurso Parte 3
-A partir da interface do calendário é possível consultar o estado dos recursos.
+- Os participantes receberão convites (para atualizar os calendários em causa ou apenas os deles, dependendo da sua escolha de "Pedir respostas" anteriormente).
 
-Podemos ver que após o evento ter sido adicionado, o estado dos recursos estão atualmente como "Ocupados".
+- Receberá um e-mail de confirmação proveniente de cada conta de recurso selecionada (se o recurso está disponível ou se está reservado mas que **assinalou** "Permitir conflitos" aquando da criação).
 
-![](images/img_1357.jpg){.thumbnail}
+![mensagem de aceitação](images/exchange-resources-step7.png){.thumbnail}
 
+- Receberá um e-mail de recusa proveniente de cada conta de recurso selecionada (se o recurso não está disponível e **não assinalou** "Permitir conflitos" aquando da criação).
 
-## Gestão de um recurso Parte 4
-Adicionamos um novo evento com a mesma data que o anterior.
+![mensagem de recusa](images/exchange-resources-step8.png){.thumbnail}
 
-Da mesma forma, somos notificados da validação ou da recusa do pedido.
+## Quer saber mais?
 
-Para o segundo evento "discurso" do recurso "AMinhaSala1" foi recurso devido a conflitos.
-Um evento já se encontra previsto para essa data e não estão autorizados conflitos para esse recurso, e como tal, o evento é recusado.
+[Consultar a sua conta Exchange a partir da interface OWA](../exchange_2016_guia_de_utilizacao_do_outlook_web_app/)
 
-O recurso "Equipamento1" aceitou o evento.
-Um evento já se encontra previsto para essa data mas a gestão de conflitos está desativa para este recurso, e como tal, o seu pedido foi aceite.
+[Partilhar um calendário a partir da interface OWA](../exchange_2016_partilhar_um_calendario_atraves_do_webmail_owa/)
 
-![](images/img_1358.jpg){.thumbnail}
+[Partilhar uma pasta a partir da interface OWA](../exchange_2016_partilhar_uma_pasta_atraves_do_webmail_owa/)
 
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
