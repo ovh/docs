@@ -63,7 +63,7 @@ accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotoma
 >
 > Il tuo account OVHcloud deve prima essere contatto amministratore e contatto tecnico del servizio Email Pro o Exchange verso cui migri.
 >
-> Per maggiori informazioni sulle modifiche dei contatti, consulta la nostra guida per [gestire i contatti dei servizi](../../customer/gestion-des-contacts/).
+> Per maggiori informazioni sulle modifiche dei contatti, consulta la nostra guida per [gestire i contatti dei servizi](../../customer/gestisci_i_tuoi_contatti/).
 >
 
 La migrazione può essere effettuata da due interfacce:<br>
@@ -126,7 +126,7 @@ Nella scheda `Account email`{.action} della tua piattaforma Email Pro o Exchange
 
 3\. **Migra** l'account MXPlan verso l'account della tua nuova piattaforma con l'aiuto del nostro tool [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
 
-Per maggiori informazioni su OMM, consulta la guida [Migrare account email via OVH Mail Migrator](../exchange-migration-de-comptes-e-mail-ovh-mail-migrator/).
+Per maggiori informazioni su OMM, consulta la guida [Migrare account email via OVH Mail Migrator](../migrazione-account-email-con-ovh-mail-migrator/).
 
 ![exchange](images/mxplan-migration-configure-account03.png){.thumbnail}
 
