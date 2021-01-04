@@ -92,7 +92,7 @@ Sie können die Liste der für diesen Artikel verfügbaren Konfigurationseinstel
 > @api {GET} /order/cart/{cartId}/item/{itemId}/requiredConfiguration
 >
 
-Verwenden Sie folgenden Endpunkt, um Ihr Projekt zu nennen (`Label: "Beschreibung"`:
+Verwenden Sie folgenden Endpunkt, um Ihr Projekt zu nennen (`Label: "Beschreibung"`):
 
 > [!api]
 >
