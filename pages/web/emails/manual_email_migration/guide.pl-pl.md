@@ -42,7 +42,7 @@ Poniższe instrukcje są podzielone na dwie części:
 
 - **Eksport**. Dzięki temu możesz pobrać kompletną kopię zapasową Twojego konta e-mail, aby przenieść ją na inne konto, program pocztowy lub na inne konto. Jeśli musisz przenieść elementy z jednego konta e-mail na inny adres skonfigurowany w tym samym programie pocztowym, możesz skopiować/wkleić lub przeciągnąć/upuścić jedno do drugiego. Zalecamy użycie systemu eksportu oprogramowania, którego używasz.
 
-- **L'importation**. Dzięki temu możesz zastosować kopię zapasową utworzoną na Twoim nowym komputerze lub nowym oprogramowaniu. Sprawdź, czy plik kopii zapasowej, który chcesz importować jest kompatybilny z używanym przez Ciebie oprogramowaniem poczty elektronicznej.
+- **Import**. Dzięki temu możesz zastosować kopię zapasową utworzoną na Twoim nowym komputerze lub nowym oprogramowaniu. Sprawdź, czy plik kopii zapasowej, który chcesz importować jest kompatybilny z używanym przez Ciebie oprogramowaniem poczty elektronicznej.
 
 ### Outlook
 
@@ -159,7 +159,7 @@ Wybierz lub utwórz nowy folder, następnie kliknij `Wybierz`.
 
 Twój eksport to plik ".mbox".
 
-#### Importer
+#### Import
 
 Kliknij `Plik` w menu poziomym, a następnie kliknij `Importuj skrzynki na listy`.
 
@@ -193,7 +193,7 @@ Skopiuj folder profilu za pomocą prawym przyciskiem myszy, a następnie wklej t
 
 ![emails](images/thunderbird_profil_folder2.png){.thumbnail}
 
-#### Importer
+#### Import
 
 Zamiast importowania, będzie tu o ładowanie profilu.
 Jeśli konta e-mail zostały już skonfigurowane w docelowej instancji Thunderbird, zostaną one wyświetlone w profilu A.
@@ -214,7 +214,7 @@ W następnym oknie wyświetlą się istniejące profile. Kliknij `Utwórz profil
 
 ![emails](images/thunderbird-profil-create01.png){.thumbnail}
 
-Na następnym etapie nadaj nazwę profilowi i podaj folder, w którym utworzony zostanie profil, poniżej zdania "Twoje ustawienia użytkownika, preferencje i wszystkie dane osobowe będą zapisane w:
+Na następnym etapie nadaj nazwę profilowi i podaj folder, w którym utworzony zostanie profil, poniżej zdania "Twoje ustawienia użytkownika, preferencje i wszystkie dane osobowe będą zapisane w":
 
 ![emails](images/thunderbird-profil-create02.png){.thumbnail}
 
@@ -240,4 +240,4 @@ foldery i e-maile zapisane adresu e-mail znajdziesz w skrzynce odbiorczej oraz w
 
 [Przeniesienie kont e-mail za pomocą OVH Mail Migrator](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange-migracja-kont-e-mail-ovh-mail-migrator/){.external}
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
