@@ -14,7 +14,7 @@ order: 1
 
 ## Ziel
 
-[Die automatische](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator/){.external} Migration einer E-Mail-Adresse ist über unseren OVH Mail [Migrator möglich](https://omm.ovh.net/){.external}. Sie können Ihre E-Mail-Adresse auch manuell über E-Mail-Programme migrieren.
+[Die automatische](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator/){.external} Migration einer E-Mail-Adresse ist über unseren [OVH Mail Migrator möglich](https://omm.ovh.net/){.external}. Sie können Ihre E-Mail-Adresse auch manuell über E-Mail-Programme migrieren.
 
 **Hier erfahren Sie, wie Sie Ihre E-Mail-Adresse manuell migrieren.**
 
@@ -34,7 +34,7 @@ order: 1
 ## In der praktischen Anwendung
 
 > [!primary]
-> Überprüfen Sie zunächst, ob die automatische Migration mit unserem OVH Mail Migrator {.external} [möglich](https://omm.ovh.net/) ist. Lesen Sie hierzu die Anleitung [E-Mail-Accounts über den OVH Mail Migrator {.external}](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator/) migrieren.
+> Überprüfen Sie zunächst, ob die automatische Migration mit unserem [OVH Mail Migrator möglich](https://omm.ovh.net/){.external} ist. Lesen Sie hierzu die Anleitung [E-Mail-Accounts über den OVH Mail Migrator {.external}](https://docs.ovh.com/de/microsoft-collaborative-solutions/exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator/) migrieren.
 
 In dieser Anleitung haben wir die Operationen mit den 3 meistverwendeten E-Mail-Programmen **Outlook**, **Mail** auf Mac OS und **Thunderbird durchgeführt**.
 
@@ -46,9 +46,9 @@ Die folgenden Anweisungen werden in zwei Teile unterteilt:
 
 ### Outlook
 
-Wenn Sie einen OVHcloud [Exchange E-Mail](https://www.ovh.de/emails/hosted-exchange/)-Account haben, können Sie diesen direkt im PST-Format über das Kundencenter exportieren.
+Wenn Sie einen OVHcloud [Exchange E-Mail-Account](https://www.ovh.de/emails/hosted-exchange/) haben, können Sie diesen direkt im PST-Format über das Kundencenter exportieren.
 
-Verbinden Sie sich [mit Ihrem OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} Kundencenter und gehen Sie dann in den Bereich `Web Cloud`{.action}. Wählen Sie `Microsoft`{.action} in der linken Spalte und dann `Exchange`{.action}. Klicken Sie auf den Namen des betreffenden Hosted Exchange Dienstes.
+Verbinden Sie sich [mit Ihrem OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} und gehen Sie dann in den Bereich `Web Cloud`{.action}. Wählen Sie `Microsoft`{.action} in der linken Spalte und dann `Exchange`{.action}. Klicken Sie auf den Namen des betreffenden Hosted Exchange Dienstes.
 
 Klicken Sie im Tab `E-Mail`{.action}-Accounts auf `...`{.action} rechts neben dem zu exportierenden E-Mail-Account und dann auf `Im PST Format exportieren`{.action}.
 
