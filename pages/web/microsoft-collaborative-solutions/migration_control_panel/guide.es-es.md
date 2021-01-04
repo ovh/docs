@@ -39,7 +39,7 @@ Por lo tanto, es importante conocer a qué solución quiere migrar sus direccion
 
 Este paso es opcional si ya tiene un servicio Exchange o Email Pro al que quiere realizar la migración.
 
-En caso contrario, en la [columna izquierda, haga clic en ](https://www.ovh.com/auth/?action=gotomanager){.external}Contratar` `{.action} el servicio en la columna izquierda y seleccione el servicio. A continuación, seleccione el servicio que quiere contratar. Será redirigido a la página de contratación. Siga los pasos que se indican y espere a que se instale el servicio. Recibirá un mensaje de correo electrónico cuando haya finalizado la operación.
+En caso contrario, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, y haga clic en ` Contratar`{.action} en la columna izquierda. A continuación, seleccione el servicio que quiere contratar. Será redirigido a la página de contratación. Siga los pasos que se indican y espere a que se instale el servicio. Recibirá un mensaje de correo electrónico cuando haya finalizado la operación.
 
 > [!primary]
 >
@@ -126,7 +126,7 @@ En la pestaña `Cuentas de correo`{.action} de su plataforma Email Pro o Exchang
 
 3\. **Migre** la cuenta MXPlan a la cuenta de su nueva plataforma utilizando nuestra herramienta [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
 
-Para más información sobre OMM, consulte nuestra guía [Migrar cuentas de correo a través de OVH Mail Migrator](../exchange-migration-de-comptes-e-mail-ovh-mail-migrator/).
+Para más información sobre OMM, consulte nuestra guía [Migrar cuentas de correo a través de OVH Mail Migrator](../exchange-migracion-de-cuentas-correo-ovh-mail-migrator/).
 
 ![exchange](images/mxplan-migration-configure-account03.png){.thumbnail}
 
@@ -153,7 +153,7 @@ Para modificar la configuración, haga clic en la etiqueta roja y realice la ope
 
 ![exchange](images/check_the_dns_records_associated_domains.png){.thumbnail}
 
-### 5\. utilizar las direcciones de correo migradas
+### 5\. Utilizar las direcciones de correo migradas
 
 Ya puede utilizar las direcciones de correo electrónico migradas. Para ello, OVHcloud pone a su disposición una aplicación online (_web app_) disponible en la dirección <https://www.ovh.com/es/mail/>. Introduzca las claves de su dirección de correo electrónico.
 
