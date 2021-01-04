@@ -32,7 +32,7 @@ OVHcloud oferuje kilka rozwiązań poczty elektronicznej: MX Plan (sprzedawany s
 
 Rozwiązania E-mail Pro i Exchange mają wspólną bazę funkcjonalności. Niemniej jednak nadal występują różnice w zależności od zastosowania. Wybierając adres Exchange, dysponujesz wszystkimi funkcjami do pracy zespołowej, takimi jak synchronizacja kalendarza i kontaktów. Niektóre z nich są dostępne w ofercie E-mail Pro, ale są one ograniczone do korzystania wyłącznie z poczty webmail.
 
-Zanim przejdziesz dalej, ważne jest, aby wiedzieć, na jaką ofertę chcesz przenieść Twoje konta e-mail MX Plan. Aby pomóc w wyborze tej opcji, zapoznaj się ze stroną firmowych [rozwiązań poczty elektronicznej OVHcloud](https://www.ovh.com/fr/emails/){.external}, na której znajdziesz szczegółowe porównanie ofert. Możesz łączyć rozwiązania i używać dla tej samej domeny jednego lub kilku kont E-mail Pro i Exchange. Jeśli chcesz migrować kilka kont, zalecamy wdrożenie planu migracji.
+Zanim przejdziesz dalej, ważne jest, aby wiedzieć, na jaką ofertę chcesz przenieść Twoje konta e-mail MX Plan. Aby pomóc w wyborze tej opcji, zapoznaj się ze stroną firmowych [rozwiązań poczty elektronicznej OVHcloud](https://www.ovh.pl/emaile/){.external}, na której znajdziesz szczegółowe porównanie ofert. Możesz łączyć rozwiązania i używać dla tej samej domeny jednego lub kilku kont E-mail Pro i Exchange. Jeśli chcesz migrować kilka kont, zalecamy wdrożenie planu migracji.
 
 
 ### Etap 2: zamów konta E-mail Pro lub Exchange
@@ -63,7 +63,7 @@ W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?a
 >
 > Twoje konto OVHcloud musi być wcześniej kontaktem administracyjnym i technicznym z usługi E-mail Pro lub Exchange, do której możesz się przenieść.
 >
-> Aby uzyskać więcej informacji na temat zmian kontaktów, zapoznaj się z naszym przewodnikiem dotyczącym [zarządzania kontaktami swoich usług](../../customer/gestion-des-contacts/).
+> Aby uzyskać więcej informacji na temat zmian kontaktów, zapoznaj się z naszym przewodnikiem dotyczącym [zarządzania kontaktami swoich usług](../../customer/zarzadzanie_kontaktami/).
 >
 
 Migracja może zostać przeprowadzona z dwóch interfejsów:<br>
@@ -126,7 +126,7 @@ W zakładce `Konta e-mail`{.action} na Twojej platformie E-mail Pro lub Exchange
 
 3\. **Przenieś** konto MXPlan na konto nowej platformy za pomocą narzędzia [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
 
-Aby uzyskać więcej informacji na temat narzędzia OMM, zapoznaj się z naszym przewodnikiem [Migracja kont e-mail przez OVH Mail Migrator](../exchange-migration-de-comptes-e-mail-ovh-mail-migrator/).
+Aby uzyskać więcej informacji na temat narzędzia OMM, zapoznaj się z naszym przewodnikiem [Migracja kont e-mail przez OVH Mail Migrator](../exchange-migracja-kont-e-mail-ovh-mail-migrator/).
 
 ![Exchange](images/mxplan-migration-configure-account03.png){.thumbnail}
 
