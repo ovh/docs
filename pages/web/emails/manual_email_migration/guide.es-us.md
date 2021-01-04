@@ -214,7 +214,7 @@ La siguiente ventana muestra los perfiles existentes. Haga clic en `Crear un per
 
 ![correo electrónico](images/thunderbird-profil-create01.png){.thumbnail}
 
-En el siguiente paso, asigne un nombre a su perfil e identifique la carpeta en la que se creará el perfil. Bajo la frase "Sus preferencias de usuario, preferencias y todos sus datos personales se guardarán en:
+En el siguiente paso, asigne un nombre a su perfil e identifique la carpeta en la que se creará el perfil. Bajo la frase "Sus preferencias de usuario, preferencias y todos sus datos personales se guardarán en":
 
 ![correo electrónico](images/thunderbird-profil-create02.png){.thumbnail}
 
