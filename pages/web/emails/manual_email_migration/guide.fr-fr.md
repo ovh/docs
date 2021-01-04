@@ -210,7 +210,7 @@ La fenêtre suivante vous affiche les profils existants. Cliquez sur `Créer un 
 
 ![emails](images/thunderbird-profil-create01.png){.thumbnail}
 
-À l'étape suivante, nommez votre profil et identifiez le dossier dans lequel sera créé le profil, en dessous de la phrase « Vos paramètres utilisateur, préférences et toutes vos données personnelles seront enregistrées dans :
+À l'étape suivante, nommez votre profil et identifiez le dossier dans lequel sera créé le profil, en dessous de la phrase « Vos paramètres utilisateur, préférences et toutes vos données personnelles seront enregistrées dans » :
 
 ![emails](images/thunderbird-profil-create02.png){.thumbnail}
 
