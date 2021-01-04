@@ -10,7 +10,7 @@ order: 1
 
 ## Objective
 
-You can [migrate an email address automatically](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange-account-migration-with-ovh-mail-migrator/){.external} via our [OVH Mail Migrator](https://omm.ovh.net/){.external} tool. You can also manually migrate your email address using email software.
+You can [migrate an email address automatically](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange-account-migration-with-ovh-mail-migrator/){.external} via our [OVH Mail Migrator](https://omm.ovh.net/){.external} tool. You can also manually migrate your email address using email softwares.
 
 **Find out how to migrate your email address manually.**
 
@@ -23,38 +23,38 @@ You can [migrate an email address automatically](https://docs.ovh.com/gb/en/micr
 
 ## Requirements
 
-- You must have an email service with OVHcloud, such as an [Exchange](https://www.ovh.co.uk/emails/){.external}, [Email Pro](https://www.ovh.co.uk/emails/email-pro/){.external} or MX Plan solution (via the MX Plan or included in an OVHcloud web [hosting](https://www.ovh.co.uk/web-hosting/){.external} solution).
+- an email service with OVHcloud, such as an [Exchange](https://www.ovh.co.uk/emails/){.external}, [Email Pro](https://www.ovh.co.uk/emails/email-pro/){.external} or MX Plan solution (via the MX Plan or included in an [OVHcloud web hosting solution](https://www.ovh.co.uk/web-hosting/){.external}).
 - access to the email accounts you want to migrate (the source accounts)
 - access to the OVHcloud email accounts that will be receiving the migrated data (the target accounts)
 
 ## Instructions
 
 > [!primary]
-> First of all, check if automatic migration is possible using our [OVH Mail Migrator](https://omm.ovh.net/) tool{.external}. To do this, please use our guide on [Migrating email accounts via the OVH Mail Migrator](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange-account-migration-with-ovh-mail-migrator/){.external}.
+> First of all, check if automatic migration is possible using our [OVH Mail Migrator](https://omm.ovh.net/) tool{.external}. To do this, please use our guide on [Migrating email accounts with OVH Mail Migrator](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange-account-migration-with-ovh-mail-migrator/){.external}.
 
 In this guide, we have carried out operations on the 3 most commonly used email software, **Outlook**, **Mail** on Mac OS and **Thunderbird**.
 
-The following instructions are broken down into two parts:
+The following instructions are divided into two parts:
 
-- **Export**. By doing so, you can extract a full backup of your email address, and migrate it to another computer, email software, or import it to another account. If you need to move items from one email address to another address that is configured on the same email software, you can copy/paste or drag/drop one to the other. However, it is recommended that you use the export system of the software you are using.
+- **Exporting**. By doing so, you can extract a full backup of your email address, and migrate it to another computer, email software, or import it to another account. If you need to move items from one email address to another address that is configured on the same email software, you can copy/paste or drag/drop one to the other. However, it is recommended that you use the export system of the software you are using.
 
-- **Import**. This allows you to apply a backup that you have made on your new computer or software. Verify that the backup file you want to import is compatible with the email software you are using.
+- **Importing**. This allows you to apply a backup that you have made on your new computer or software. Verify that the backup file you want to import is compatible with the email software you are using.
 
 ### Outlook
 
-If you have an OVHcloud [Exchange email](https://www.ovh.co.uk/emails/hosted-exchange/) account, you can export it directly in PST format via the OVHcloud Control Panel.
+If you have an [OVHcloud Exchange email account](https://www.ovh.co.uk/emails/hosted-exchange/), you can export it directly in PST format via the OVHcloud Control Panel.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then go to the `Web Cloud`{.action} section. Select `Microsoft`{.action} in the left-hand column, then `Exchange`{.action}. Click the name of the Hosted Exchange service concerned.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then go to the `Web Cloud`{.action} section. Select `Microsoft`{.action} in the left-hand column, then `Exchange`{.action}. Click the name of the concerned Hosted Exchange service.
 
 In the `Email accounts`{.action} tab, click the `...`{.action} button to the right of the email account you want to export, then `Export in PST`{.action} format.
 
 ![emails](images/manager-export-pst01.png){.thumbnail}
 
-You will then need to wait for the export process to complete, which may take a few minutes to several hours depending on the size of the export. At the end of it, you just need to return to the `Export to PST`{.action} button to retrieve a link to download the file.
+You will then need to wait for the export process to complete, which may take  froma few minutes to several hours, depending on the size of the export. At the end of it, you just need to return to the `Export to PST`{.action} button to retrieve a link to download the file.
 
 ![emails](images/manager-export-pst02.png){.thumbnail}
 
-#### Export from Windows
+#### Exporting from Windows
 
 - Click `file` in the top left-hand corner, then `Open and Export`, and then `Import/Export`.
 
@@ -85,7 +85,7 @@ Your file is being exported. When you create a file, you will be asked to set a 
 
 ![emails](images/outlook-export-win06.png){.thumbnail}
 
-#### Importer depuis Windows
+#### Importing from Windows
 
 - Click `file` in the top left-hand corner, then `Open and Export`, and then `Import/Export`.
 
@@ -109,7 +109,7 @@ Your file is being exported. When you create a file, you will be asked to set a 
 
 Your backup will be imported.
 
-#### Export from Mac OS
+#### Exporting from Mac OS
 
 In the `Tools` tab of your Outlook window, click `Export`.
 
@@ -125,7 +125,7 @@ Then select the destination folder for your backup, and click `Save`.
 
 A progress window will appear, click `Continue` at the end of the operation. You will find your backup file in the folder you selected earlier.
 
-#### Import from Mac OS
+#### Importing from Mac OS
 
 In the `Tools` tab of your Outlook window, click `Import`.
 
@@ -143,7 +143,7 @@ A progress window will appear, click `Continue` at the end of the operation. You
 
 ### Mail on Mac OS
 
-#### Export
+#### Exporting
 
 In the left-hand column, select one or more email accounts. Click `Mailbox` in the horizontal menu, and then click `Export Mailbox`.
 
@@ -155,7 +155,7 @@ Select the folder you want, or create a new folder, and then click `Choose`.
 
 Your export is in the form of a .mbox file.
 
-#### Importer
+#### Importing
 
 Click `File` on the horizontal menu, and then click `Import Mailboxes`.
 
@@ -171,7 +171,7 @@ In the left-hand column, the imported emails are stored in a new email account n
 
 There is currently no native feature to export or import an email account from Thunderbird. However, you can save a Thunderbird profile. It contains all accounts and emails locally on your computer. We will look at how to back up a Thunderbird profile and reintegrate it into a new Thunderbird instance.
 
-#### Export
+#### Exporting
 
 In the main window, click on the menu in the top right-hand corner, then `Help`, then `Troubleshooting Information`.
 
@@ -189,7 +189,7 @@ Right-click the profile folder and paste it into the folder or media of your cho
 
 ![emails](images/thunderbird_profil_folder2.png){.thumbnail}
 
-#### Importer
+#### Importing
 
 Rather than an import, this will be a profile load.
 If email accounts have already been configured on the destination Thunderbird instance, they will be present on an A profile.
@@ -210,7 +210,7 @@ The following window displays the existing profiles. Click `Create Profile` and 
 
 ![emails](images/thunderbird-profil-create01.png){.thumbnail}
 
-In the next step, name your profile and identify the folder where the profile will be created, below the sentence "Your user settings, preferences and all your personal data will be saved in:
+In the next step, name your profile and identify the folder where the profile will be created, below the sentence "Your user settings, preferences and all your personal data will be saved in":
 
 ![emails](images/thunderbird-profil-create02.png){.thumbnail}
 
@@ -221,7 +221,7 @@ Click `Choose Folder...` to select the folder that contains your backup. Click `
 
 You will find your profile selection window with your new profile selected. Click `Start Thunderbird`, Thunderbird will be launched with all the items you had in your backup.
 
-### Check the import on the new email address
+### Checking the import on the new email address
 
 When you have done the necessary by following the import instructions, make sure that your items are present on the server.
 
