@@ -119,7 +119,7 @@ Now, we can play with this dataframe! Let's explode the strings of the "Lyrics" 
 data.withColumn('word', f.explode(f.split(f.col('Lyrics'), ' '))) \
   .groupBy('word') \
   .count() \
-  .sort('count', ascending=False)
+  .sort('count', ascending=False) \
   .show()
 ```
 
