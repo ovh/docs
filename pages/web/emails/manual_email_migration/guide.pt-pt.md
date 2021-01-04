@@ -214,7 +214,7 @@ A janela seguinte apresenta os perfis existentes. Clique em `Criar um perfil` e 
 
 ![emails](images/thunderbird-profil-create01.png){.thumbnail}
 
-Na etapa seguinte, dê um nome ao seu perfil e identifique a pasta na qual será criado o perfil, abaixo da frase "Os seus parâmetros de utilizador, preferências e todos os seus dados pessoais serão registados em:
+Na etapa seguinte, dê um nome ao seu perfil e identifique a pasta na qual será criado o perfil, abaixo da frase "Os seus parâmetros de utilizador, preferências e todos os seus dados pessoais serão registados em":
 
 ![emails](images/thunderbird-profil-create02.png){.thumbnail}
 
