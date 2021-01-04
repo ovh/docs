@@ -214,7 +214,7 @@ Visualizzi una tabella con tutti i profili disponibili. Clicca su `Crea un profi
 
 ![email](images/thunderbird-profil-create01.png){.thumbnail}
 
-Allo step successivo, assegna un nome al tuo profilo e identifica la cartella in cui verrà creato il profilo, sotto la frase "I tuoi parametri utente, preferenze e tutti i tuoi dati personali saranno registrati in:
+Allo step successivo, assegna un nome al tuo profilo e identifica la cartella in cui verrà creato il profilo, sotto la frase "I tuoi parametri utente, preferenze e tutti i tuoi dati personali saranno registrati in":
 
 ![email](images/thunderbird-profil-create02.png){.thumbnail}
 
