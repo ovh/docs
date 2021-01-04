@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 1
 ---
 
-**Dernière mise à jour le 15/05/2019**
+**Dernière mise à jour le 31/12/2020**
 
 ## Objectif
 
@@ -117,7 +117,7 @@ Si vous souhaitez retrouver les éléments à modifier concernant la configurati
 
 |Champ|Où trouver l'information ?|Description|
 |---|---|---|
-|TXT|Onglet `Multisite`{.action} puis cliquez sur **Configuration du token ovhcontrol**|Permet à OVH de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.mypersonaldomain.ovh). Vous devez valider uniquement le domaine principal, pas tous les sous-domaines.|
+|TXT|Onglet `Multisite`{.action} puis cliquez sur **Configuration du token ovhcontrol**|Permet à OVH de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.mypersonaldomain.ovh). Vous devez valider uniquement le domaine principal, pas tous les sous-domaines. Dans le cas d'une délégation de zone, le champ doit être ajouté dans la zone faisant autorité pour le nom de domaine externe à ajouter.|
 |A et AAAA|Onglet `Informations générales`{.action} puis à côté de **IPv4** et **IPv6**|Permet à votre domaine d'afficher le site internet que vous mettrez en ligne sur votre hébergement web.|
 
 ### Étape 4 : mettre votre site web en ligne
