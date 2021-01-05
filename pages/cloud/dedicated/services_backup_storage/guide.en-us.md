@@ -5,11 +5,11 @@ excerpt: This guide explains how to enable the Backup Storage functionality and 
 section: Storage
 ---
 
-**Last updated 2018/06/04**
+**Last updated 5th January, 2021**
 
 ## Objective
 
-OVHcloud provides 500 GB of free backup storage space with each Dedicated Server.
+OVHcloud provides backup space for storing your data and configuration files. This space is designed for you to store data securely, and it can be increased up to 10TB. It is also independent of the primary server.
 
 **This guide explains how to enable and use this Backup storage space**.
 
