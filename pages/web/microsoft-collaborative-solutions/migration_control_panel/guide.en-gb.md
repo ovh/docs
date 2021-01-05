@@ -164,8 +164,8 @@ You can also manually migrate your email addresses to your new OVHcloud email so
 
 [Managing contacts for your services](../../customer/managing-contacts/){.external}.
 
-[Email Pro](../../emails-pro/){.external} guides
+[Email Pro guides](../../emails-pro/){.external} guides
 
-[Guides Exchange](../microsoft-collaborative-solutions/){.external}.
+[Exchange guides](../){.external}.
 
 Join our community of users on ‹https://community.ovh.com/en/>.
