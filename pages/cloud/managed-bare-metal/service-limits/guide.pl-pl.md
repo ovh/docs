@@ -2,7 +2,7 @@
 title: Możliwości techniczne
 slug:  mozliwosci-techniczne
 routes:
-    canonical: https://docs.ovh.com/pl/private-cloud/mozliwosci-techniczne/'
+    canonical: 'https://docs.ovh.com/pl/private-cloud/mozliwosci-techniczne/'
 excerpt: 'Poznaj możliwości i ograniczenia techniczne rozwiązań Managed Bare Metal dostarczanych przez OVHcloud'
 section: FAQ
 order: 2
