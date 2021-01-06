@@ -16,6 +16,10 @@ With OVHcloud Connect, you can link your company network to your private OVHclou
 
 ## Requirements
 
+> [!warning]
+> To ensure correct operation of this service, you must be aware of the [technical capabilities and limitations of the OVHcloud Connect solution](../occ-limits/) and configure your network devices accordingly.
+>
+
 - an [OVHcloud Connect Provider solution](https://www.ovhcloud.com/en-au/network-security/ovhcloud-connect/)
 - an OVHcloud [vRack](https://www.ovh.com.au/solutions/vrack/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
