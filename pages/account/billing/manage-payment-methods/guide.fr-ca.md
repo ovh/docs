@@ -5,7 +5,7 @@ excerpt: 'Apprenez à ajouter et gérer vos moyens de paiement au sein de l’es
 section: Facturation
 ---
 
-**Dernière mise à jour le 14 Juillet 2020**
+**Dernière mise à jour le 06 Janvier 2021**
 
 ## Objectif
 L'espace client OVHcloud vous permet d'enregistrer et gérer différents moyens de paiement.
@@ -59,12 +59,17 @@ Si vous ne souhaitez plus utiliser l'un de vos moyens de paiement, vous pouvez l
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
+La suppression d'un moyen de paiement ne peut être effectuée que si l'une des deux conditions suivantes est remplie :
+
+- un autre moyen de paiement actif est enregistré dans votre espace client OVHcloud;
+- tous vos services OVHcloud sont en [renouvellement manuel](../renouvellement-automatique-ovh/#le-renouvellement-manuel).
+
 > [!warning]
 >
 Le moyen de paiement par défaut ne peut être supprimé. Si vous souhaitez le supprimer, vous devez d'abord définir un autre moyen de paiement par défaut.
 >
 
-### Supprimer un moyen de paiement via les API OVHcloud
+#### Supprimer un moyen de paiement via les API OVHcloud
 
 La suppression d'un moyen de paiement peut être effectuée via les API en vous connectant sur [https://api.ovh.com/](https://api.ovh.com/){.external}.
 

@@ -5,7 +5,7 @@ excerpt: 'Come gestire i tuoi metodi di pagamento nello Spazio Cliente OVHcloud'
 section: Fatturazione
 ---
 
-**Ultimo aggiornamento: 15/04/2020**
+**Ultimo aggiornamento: 06/01/2021**
 
 ## Obiettivo
 Nello Spazio Cliente OVHcloud puoi salvare e gestire diversi metodi di pagamento.
@@ -60,12 +60,17 @@ Se non vuoi più utilizzare uno dei tuoi metodi di pagamento, puoi eliminarlo cl
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
+L'eliminazione di un metodo di pagamento può essere effettuata solo se è soddisfatta una delle seguenti condizioni:
+
+- nello Spazio Cliente OVHcloud è presente un altro metodo di pagamento attivo;
+- tutti i servizi OVHcloud sono in [rinnovo manuale](../imposta_il_rinnovo_automatico_dei_tuoi_servizi_ovh/#il-rinnovo-manuale).
+
 > [!warning]
 >
 Il metodo di pagamento predefinito non può essere eliminato. Per eliminarlo è necessario impostare prima un altro metodo di pagamento predefinito.
 >
 
-### Eliminare un metodo di pagamento tramite le API OVHcloud
+#### Eliminare un metodo di pagamento tramite le API OVHcloud
 
 L’eliminazione di un metodo di pagamento può essere effettuato tramite le API. Per farlo clicca su questo link [https://eu.api.ovh.com/](https://eu.api.ovh.com/){.external}.
 
