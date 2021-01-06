@@ -5,7 +5,7 @@ excerpt: 'Aprenda a adicionar e gerir os seus métodos de pagamento dentro da Á
 section: Faturação
 ---
 
-**Última atualização: 15/04/2020**
+**Última atualização: 06/01/2021**
 
 ## Objetivo
 
@@ -60,12 +60,17 @@ Se já não quiser usar um dos métodos de pagamento, poderá eliminá-lo clican
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
+A supressão de um método de pagamento só pode ser efetuada se estiver preenchida uma das duas condições seguintes:
+
+- na sua Área de Cliente OVHcloud, encontra-se registado outro método de pagamento ativo;
+- todos os serviços da OVHcloud estão a ser [renovados manualmente](../guia_de_utilizacao_da_renovacao_automatica_da_ovh/#a-renovacao-manual).
+
 > [!warning]
 >
 O método de pagamento padrão não pode ser eliminado. Se pretender eliminar este método, deve primeiro definir outro método de pagamento padrão.
 >
 
-### Eliminar um método de pagamento através das API OVHcloud
+#### Eliminar um método de pagamento através das API OVHcloud
 
 A eliminação de um método de pagamento pode ser realizada através das API, ligando-se a [https://eu.api.ovh.com/](https://eu.api.ovh.com/){.external}.
 

@@ -5,7 +5,7 @@ excerpt: 'Cómo añadir y gestionar las formas de pago en el área de cliente de
 section: 'Pedidos, facturas y servicios'
 ---
 
-**Última actualización: 15/09/2020**
+**Última actualización: 06/01/2021**
 
 ## Objetivo
 En el área de cliente de OVHcloud, puede registrar y gestionar diferentes formas de pago.
@@ -59,12 +59,17 @@ Si ya no desea utilizar alguna de sus formas de pago, puede eliminarla haciendo 
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
+Solo podrá eliminar una forma de pago si se cumple una de las siguientes condiciones:
+
+- otra forma de pago activa está registrada en su área de cliente de OVHcloud.
+- todos sus servicios de OVHcloud están en [renovación manual](../renovacion-automatica-ovh/#renovacion-manual).
+
 > [!warning]
 >
 La forma de pago por defecto no puede eliminarse. Si quiere eliminarla, debe establecer primeramente otra forma de pago por defecto.
 >
 
-### Eliminar una forma de pago a través de las API OVHcloud
+#### Eliminar una forma de pago a través de las API OVHcloud
 
 La eliminación de una forma de pago puede realizarse a través de las API conectándose a [https://eu.api.ovh.com/](https://eu.api.ovh.com/){.external}.
 

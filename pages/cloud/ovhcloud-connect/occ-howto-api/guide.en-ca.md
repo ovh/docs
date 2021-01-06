@@ -16,6 +16,10 @@ Configuring the OVHcloud Connect solution can be done via API.
 
 ## Requirements
 
+> [!warning]
+> To ensure correct operation of this service, you must be aware of the [technical capabilities and limitations of the OVHcloud Connect solution](../occ-limits/) and configure your network devices accordingly.
+>
+
 - an [OVHcloud Connect service](https://www.ovh.com/ca/en/solutions/ovhcloud-connect/)
 - access to the [OVHcloud APIv6](https://ca.api.ovh.com/console/){.external} (create your credentials by consulting [this guide](../../api/first-steps-with-ovh-api/))
 

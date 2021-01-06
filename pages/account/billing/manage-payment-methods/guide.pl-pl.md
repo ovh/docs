@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak dodawać sposoby płatności do Panelu klienta OVHcl
 section: Płatności
 ---
 
-**Ostatnia aktualizacja z dnia 15-04-2020**
+**Ostatnia aktualizacja z dnia 06-01-2021**
 
 ## Wprowadzenie
 
@@ -61,12 +61,17 @@ Jeśli nie chcesz już korzystać ze swoich sposobów płatności, możesz je us
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
+Sposób płatności można usunąć tylko wtedy, gdy spełniony jest jeden z dwóch poniższych warunków:
+
+- w Panelu klienta OVHcloud zapisany jest inny aktywny sposób płatności;
+- wszystkie usługi OVHcloud są odnawiane [ręcznie](../przewodnik_dotyczacy_opcji_automatycznego_odnawiania_uslug_w_ovh/#odnowienie-reczne).
+
 > [!warning]
 >
 Domyślnego sposobu płatności nie można usunąć. Jeśli chcesz go usunąć, najpierw musisz ustawić inny sposób płatności jako domyślny.
 >
 
-### Usuwanie sposobu płatności przez API OVHcloud
+#### Usuwanie sposobu płatności przez API OVHcloud
 
 Sposób płatności można usunąć poprzez interfejs API, logując się do [https://eu.api.ovh.com/](https://eu.api.ovh.com/){.external}.
 
