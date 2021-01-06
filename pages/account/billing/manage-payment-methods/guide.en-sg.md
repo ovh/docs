@@ -5,7 +5,7 @@ excerpt: 'Find out how to add and manage payment methods within the OVHcloud Con
 section: Billing
 ---
 
-**Last updated 30th June 2020**
+**Last updated 6th January 2021**
 
 ## Objective
 In the OVHcloud Control Panel, you can save and manage different payment methods.
@@ -57,6 +57,11 @@ To do this, click on the `...`{.action} to the right of the new payment method, 
 
 If you no longer want to use one of your payment methods, you can delete it by clicking on the `...`{.action} button to the right of it. Then click `Delete this payment method`{.action}.
 
+You can only delete a payment method if one of the following two conditions is met:
+
+- another active payment method is saved in the OVHcloud Control Panel
+- all of your OVHcloud services are [manually renewed](../how-to-use-automatic-renewal-at-ovh/#manual-renewal).
+
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
 > [!warning]
@@ -64,7 +69,7 @@ If you no longer want to use one of your payment methods, you can delete it by c
 The default payment method cannot be deleted. If you would like to delete it, you will need to set another default payment method first.
 >
 
-### Delete a payment method via the OVHcloud API.
+#### Delete a payment method via the OVHcloud API.
 
 You can delete a payment method via the API by connecting to [https://api.ovh.com/](https://api.ovh.com/){.external}.
 

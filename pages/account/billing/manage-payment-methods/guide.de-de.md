@@ -5,7 +5,7 @@ excerpt: 'Erfahren Sie hier, wie Sie Ihre Zahlungsarten in Ihrem OVHcloud Kunden
 section: Abrechnung
 ---
 
-**Letzte Aktualisierung am 07.05.2020**
+**Letzte Aktualisierung am 06.01.2021**
 
 ## Ziel
 
@@ -76,12 +76,17 @@ Wenn Sie eine Ihrer Zahlungsarten nicht mehr verwenden möchten, dann können Si
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
+Die Löschung einer Zahlungsart kann nur erfolgen, wenn eine der folgenden Bedingungen erfüllt ist:
+
+- ein anderes aktives Zahlungsmittel ist in Ihrem OVHcloud Kundencenter hinterlegt;
+- alle Ihre OVHcloud Dienste werden [manuell verlängert](../anleitung_zur_nutzung_der_automatischen_verlangerung_bei_ovh/#manuelle-verlangerung).
+
 > [!warning]
 >
 Die Standardzahlungsart kann nicht gelöscht werden. Wenn Sie sie entfernen möchten, müssen Sie zuerst eine andere Standardzahlungsart definieren.
 >
 
-### Löschung einer Zahlungsart über die OVHcloud API
+#### Löschung einer Zahlungsart über die OVHcloud API
 
 Die Löschung einer Zahlungsart kann über die API erfolgen; verbinden Sie sich hierzu mit  [https://eu.api.ovh.com/](https://eu.api.ovh.com/).
 
