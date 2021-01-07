@@ -26,7 +26,7 @@ Sélectionnez l'hébergement concerné, puis cliquez sur l'onglet `Statistiques 
 
 ![hosting](images/statistics01.png){.thumbnail}
 
-Dans la fenêtre qui s'affiche, vous avez 3 sections. Une pour voir les **statistiques**, une autre pour voir les **logs** bruts de votre hébergement et **l'administration des utilisateurs** autorisés à accéder aux statistiques.
+La fenêtre qui s’affiche alors est composée de 3 sections. La première présente les **statistiques**, la seconde les **logs** bruts de votre hébergement, la dernière est dédiée à **l'administration des utilisateurs** autorisés à accéder aux statistiques.
 
 ![hosting](images/statistics02u.png){.thumbnail}
 
@@ -106,7 +106,7 @@ Différents type de logs sont à votre disposition :
 
 Vous trouvez dans cette section l'activité de l'infrastructure de votre hébergement pour visualiser la consommation des ressources à votre disposition.
 
-Cliquez sur l'onglet 
+Cliquez sur l'onglet `Informations générales`{.action}, puis descendez en bas de la page.
 
 ![hosting](images/statistics03.png){.thumbnail}
 
