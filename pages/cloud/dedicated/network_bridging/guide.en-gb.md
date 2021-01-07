@@ -190,7 +190,7 @@ Save and close the file.
 Next, open the virtual machine's routing file, which is located in `/etc/sysconfig/network-scripts/route-(interface-name)`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
 
 ```bash
-GATEWAY_IP - 255.255.255.255 (interface-name)
+GATEWAY_IP - 123.456.789.254 (interface-name)
 NETWORK_GW_VM - 255.255.255.0 (interface-name)
 default GATEWAY_IP
 ```
@@ -202,48 +202,6 @@ nameserver 213.186.33.99
 ```
 
 After saving and closing the file, restart your network or reboot the VM.
-
-#### OpenSUSE
-> [!primary]
-> 
-> For OpenSUSE, the name of the network adapter will vary, depending on the installation options. You will need to verify the adapter name and use it to configure your virtual machine. You can find the Network interface names with the command `ls /sys/class/net`
-> 
-
-Open a terminal on your virtual machine. Once connected, open the virtual machine's network configuration file, which is located in `/etc/sysconfig/network/ifcfg-(interface-name)`. If the file doesn't exist, you'll have to create it. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
-
-```bash
-DEVICE=(interface-name)
-BOOTPROTO=static
-ONBOOT=yes
-ARP=yes
-USERCTL=no
-IPV6INIT=no
-TYPE=Ethernet
-STARTMODE=auto
-IPADDR=FAILOVER_IP
-NETMASK=255.255.255.255
-GATEWAY=GATEWAY_IP
-HWADDR=MY:VI:RT:UA:LM:AC
-```
-
-Save and close the file.
-
-Next, open the virtual machine's routing file, which is located in `/etc/sysconfig/network-scripts/ifroute-(interface-name)`. If the file doesn't exist, you'll have to create it. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
-
-```bash
-GATEWAY_IP - 255.255.255.255 (interface-name)
-NETWORK_GW_VM - 255.255.255.0 (interface-name)
-default GATEWAY_IP
-```
-
-Next, open the virtual machine's DNS configuration file, which is located in `/etc/sysconfig/network/resolv.conf`. If the file doesn't exist, you'll have to create it. Edit the file so that it reflects the configuration below:
-
-```bash
-nameserver 213.186.33.99 # OVH DNS Server
-```
-
-Save and close the file, then reboot your virtual machine.
-
 
 #### FreeBSD 12.0
 

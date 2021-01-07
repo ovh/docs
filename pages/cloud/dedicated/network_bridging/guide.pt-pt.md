@@ -202,7 +202,7 @@ Guarde e feche o ficheiro.
 De seguida, abra o ficheiro de roteamento da máquina virtual, que se encontra em `/etc/sysconfig/network-scripts/rodoviário-(nome-da-interface)`. Altere o ficheiro para que este reflita a configuração abaixo. Não se esqueça de substituir as nossas variáveis pelos seus próprios valores:
 
 ```bash
-GATEWAY_IP - 255.255.255.255.255.255 (nome-interface)
+GATEWAY_IP - 123.456.789.254 (nome-interface)
 NETWORK_GW_VM - 255.255.255.0 (insira o nome da interface)
 default GATEWAY_IP
 ```
@@ -212,53 +212,10 @@ Registe e feche o ficheiro.
 De seguida, abra o ficheiro de roteamento da máquina virtual. Este endereço encontra-se em `/etc/sysconfig/network/resolv.conf`.
 
 ```bash
-nameserver 213.186.33.33.99
+nameserver 213.186.33.99
 ```
 
 Depois de guardar e fechar o ficheiro, reinicie a sua rede ou máquina virtual.
-
-#### OpenSUSE
-
-> [!primary]
-> 
-> Para OpenSUSE, o nome da placa de rede varia em função das opções de instalação. Deverá verificar o nome do adaptador e utilizá-lo para configurar a sua máquina virtual. Pode encontrar os nomes de interface de rede com o comando `ls /sys/class/net`.
-> 
-
-Abra um terminal na sua máquina virtual. Uma vez ligado, abra o ficheiro de configuração de rede da máquina virtual. Este encontra-se em `/etc/sysconfig/network-scripts/ifcfg-(nome da interface)`. Se o ficheiro não existir, deverá criá-lo. Altere o ficheiro para que este reflita a configuração abaixo:
-
-```bash
-DEVICE=(interface-name)
-BOOTPROTO=static
-ONBOOT=yes
-ARP=yes
-USERCTL=no
-IPV6INIT=no
-TYPE=Ethernet
-STARTMODE=auto
-IPADDR=FAILOVER_IP
-NETMASK=255.255.255.255
-GATEWAY=GATEWAY_IP
-HWADDR=MY:VI:RT:UA:LM:AC
-```
-
-Registe e feche o ficheiro.
-
-De seguida, abra o ficheiro de roteamento da máquina virtual. Este encontra-se em `/etc/sysconfig/network-scripts/route-(nome da interface)`. Se o ficheiro não existir, deverá criá-lo. Altere o ficheiro para que este reflita a configuração abaixo:
-
-```bash
-GATEWAY_IP - 255.255.255.255.255.255 (nome-interface)
-NETWORK_GW_VM - 255.255.255.0 (insira o nome da interface)
-default GATEWAY_IP
-```
-
-De seguida, abra o ficheiro de roteamento da máquina virtual, que se encontra em `/etc/sysconfig/network/resolv.conf`. Se o ficheiro não existir, deverá criá-lo. Altere o ficheiro para que este reflita a configuração abaixo:
-
-```bash
-nameserver 213.186.33.99 # OVH DNS Server
-```
-
-Registe e feche o ficheiro e reinicie a máquina virtual.
-
 
 #### FreeBSD
 
@@ -274,7 +231,7 @@ rodoviário_net2="default GATEWAY_IP"
 Registe e feche o ficheiro. De seguida, edite o ficheiro `/etc/resolv.conf`. Crie-o se necessário.
 
 ```sh
-nameserver 213.186.33.33.99
+nameserver 213.186.33.99
 ```
 
 Registe e feche o ficheiro e reinicie a máquina virtual.

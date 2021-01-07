@@ -139,7 +139,7 @@ Save and close the file.
 Next, open the virtual machine's routing file, which is located in `/etc/sysconfig/network-scripts/route-(interface-name)`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
 
 ```bash
-GATEWAY_IP - 255.255.255.255 (insert interface Name)
+GATEWAY_IP - 123.456.789.254 (insert interface Name)
 NETWORK_GW_VM - 255.255.255.0 (insert interface Name)
 default GATEWAY_IP
 ```
@@ -168,7 +168,7 @@ Save and close the file.
 Next, open the virtual machine's routing file, which is located in `/etc/sysconfig/network-scripts/ifroute-ens32`. If the file doesn't exist, you'll have to create it. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
 
 ```bash
-GATEWAY_IP - 255.255.255.255 ens32
+GATEWAY_IP - 123.456.789.254 ens32
 NETWORK_GW_VM - 255.255.255.0 ens32
 default GATEWAY_IP
 ```
