@@ -1,7 +1,7 @@
 ---
-title: vRack kompatibel mit Hosted Private Cloud
+title: Kompatibilität zwischen vRack und Hosted Private Cloud
 slug: vrack-kompatibilitat-hosted-private-cloud
-excerpt: Anleitung zur Kompatibilität zwischen vRack und Hosted Private Cloud Produkten
+excerpt: Erfahren Sie hier, welche Konfigurationen mit vRack und Hosted Private Cloud Diensten möglich sind
 section: OVHcloud Funktionen
 order: 01
 ---
@@ -10,23 +10,23 @@ order: 01
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Stand 06.01.2021**
+**Letzte Aktualisierung am 07.01.2020**
 
 ## Ziel
 
-Mit dem [vRack](https://www.ovh.de/loesungen/vrack/){.external} Produkt können mehrere OVHcloud Produkte miteinander verbunden und über 1 oder mehr VLANs miteinander kommuniziert werden. Einige Konfigurationen sind nicht mit der Hosted Private Cloud kompatibel.
+Mit unserer Netzwerklösung [vRack](https://www.ovh.de/loesungen/vrack/){.external} können Sie mehrere OVHcloud Dienste untereinander verbinden und sie über ein oder mehrere VLANs kommunizieren lassen. Einige Konfigurationen sind allerdings nicht mit Hosted Private Cloud kompatibel.
 
-**In dieser Anleitung wird erläutert, wie Hosted Private Cloud mit dem vRack Produkt kompatibel ist.**
+**In dieser Anleitung wird erläutert, wie Hosted Private Cloud mit dem vRack kompatibel ist.**
 
-## Kontext
+## Technischer Hintergrund
 
-Im Hosted Private Cloud Produkt gibt es 2 vRack Typen:
+Im Hosted Private Cloud Produkt gibt es zwei vRack Typen:
 
-- "VM Network" ist ein vRack auf einem einzigen VLAN, dem nativen VLAN des öffentlichen Hosted Private Cloud VLAN. Dieses VLAN wird in der Hosted Private Cloud zum Routen öffentlicher IPs verwendet. Es wird im Inventar des vSphere als PortGroup in der Kategorie "Netzwerk", "VM Network", aufgeführt. Dieses vRack ist daher an den vollständig von OVHcloud verwalteten virtuellen Switch gebunden.
+- "VM Network" ist ein vRack auf einem **einzigen VLAN**, dem nativen VLAN des öffentlichen Hosted Private Cloud VLAN. Dieses VLAN wird innerhalb Hosted Private Cloud zum Routen öffentlicher IPs verwendet. Es wird in vSphere als *PortGroup* in der Kategorie "Network", "VM Network" aufgeführt. Dieses vRack ist an den vollständig von OVHcloud verwalteten virtuellen Switch gebunden.
 
-- "vRack Datacenter", "vRack vDC", "dvs-vRack", ist das vRack, mit dem 4000 VLANs bereitgestellt werden können. Dieses vRack ist an den vom Kunden verwalteten virtuellen Switch mit seinen eigenen dedizierten Netzwerkkarten gebunden.
+- "Datacenter vRack", "vRack vDC", oder "dvs-vrack", bezeichnen das vRack, mit dem **4000 VLANs** bereitgestellt werden können. Dieses vRack ist an den vom Kunden verwalteten virtuellen Switch mit seinen eigenen dedizierten Netzwerkkarten gebunden.
 
-Es sei darauf hingewiesen, dass einige kommerzielle Angebote, wie die Hosts AMD Angebote, keinen vom Kunden verwalteten virtuellen Switch haben. Es ist also nur vRack vom Typ "VM Network"verfügbar.
+Es sei darauf hingewiesen, dass einige OVHcloud Serverreihen, wie etwa die AMD-Host basierten, keinen vom Kunden verwalteten virtuellen Switch haben. Es ist also nur vRack vom Typ "VM Network"verfügbar.
 
 Um den Kontext zu veranschaulichen:
 
@@ -34,7 +34,7 @@ Um den Kontext zu veranschaulichen:
 
 ## In der praktischen Anwendung
 
-### Was wir tun können
+### Mögliche Konfigurationen
 
 **2 vRack VM Network untereinander in verschiedenen geographischen Zonen in verschiedenen Hosted Private Cloud verbinden.**
 
@@ -46,7 +46,7 @@ Um den Kontext zu veranschaulichen:
 
 > [!primary]
 >
-> Damit die VMs des vRack VM Network und die VMs des vDC miteinander kommunizieren können, müssen sich die VMs des vDC vRacks im nativen VLAN befinden.
+> Damit die VMs des vRack VM Network und die VMs des vDC vRack miteinander kommunizieren können, müssen sich die VMs im nativen VLAN befinden.
 > 
 
 **1 vRack vDC und 1 vRack vDC in verschiedenen geographischen Zonen in verschiedenen Hosted Private Cloud verbinden.**
@@ -65,7 +65,7 @@ Um den Kontext zu veranschaulichen:
 
 ![vDC - vDC, Zone und verschiedene Dedicated Cloud ](images/vdc-vdc-same-zone-diff-pcc.png){.thumbnail}
 
-### Was man nicht tun kann
+### Nicht mögliche Konfigurationen
 
 **1 vRack VM Network und 1 vRack VM Network in einer einzigen geografischen Zone in verschiedenen Hosted Private Cloud verbinden.**
 
