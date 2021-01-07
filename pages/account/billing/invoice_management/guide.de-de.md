@@ -26,6 +26,12 @@ OVHcloud stellt Ihnen einen Bereich zur Verfügung, über den Sie alle Ihre Rech
 
 ## Beschreibung
 
+> [!primary]
+> Update - Januar 2021
+>
+Ihre Rechnung, wenn sie von OVHcloud erstellt wird, wird Ihnen per E-Mail in Form eines klickbaren Links zugesandt, auf den Sie direkt zugreifen können, indem Sie sich in Ihrem OVHcloud Kundencenter authentifizieren. Alle Rechnungen bleiben auch über das Dashboard Ihres OVHcloud Kundencenters verfügbar.
+>
+
 ### Aufbau Ihrer Rechnung
 
 Sie erhalten von uns eine Rechnung, wenn Sie eine Bestellung bezahlen müssen oder wenn einer Ihrer Dienste automatisch verlängert wurde. Auf der Rechnung werden die bereits bezahlten oder zu bezahlenden Produkte aufgeführt - eventuell zusammen mit den entsprechenden Verlängerungszeiträumen und den Gesamtkosten für die Dienste. Die Rechnungsnummer beginnt immer mit dem Ländercode des jeweiligen OVHcloud Sitzes (zum Beispiel „DE“ für Deutschland, „FR“ für Frankreich usw.).

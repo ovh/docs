@@ -5,7 +5,7 @@ excerpt: 'Saiba como gerir as suas faturas e pagamentos na OVHcloud'
 section: Faturação
 ---
 
-**Última atualização: 15/04/2020**
+**Última atualização: 14/01/2021**
 
 ## Sumário
 
@@ -23,8 +23,13 @@ A OVHcloud disponibiliza-lhe um espaço que lhe permite consultar, gerir e pagar
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - Estar conectado como contacto de faturação do serviço (para mais informações sobre os vários tipos de contacto, consulte o manual “[Como gerir os contactos (gestores) dos serviços OVHcloud](https://docs.ovh.com/pt/customer/gestao_dos_contactos/){.external}”).
 
-
 ## Instruções
+
+> [!primary]
+> Atualização - Janeiro 2021
+>
+A sua fatura, quando é editada pela OVHcloud, é-lhe enviada por e-mail sob a forma de um link clicável e acessível diretamente, autenticando-o à sua Área de Cliente OVHcloud. Todas as faturas ficam também disponíveis no painel de controlo da Área de Cliente OVHcloud.
+>
 
 ### Secções de uma fatura da OVHcloud
 

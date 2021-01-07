@@ -5,7 +5,7 @@ excerpt: 'Come amministrare fatture e pagamenti dallo Spazio Cliente'
 section: Fatturazione
 ---
 
-**Ultimo aggiornamento: 15/04/2020**
+**Ultimo aggiornamento: 14/01/2021**
 
 ## Obiettivo
 
@@ -25,6 +25,12 @@ Lo Spazio Cliente OVHcloud offre un’amministrazione completa di tutti i serviz
 
 
 ## Procedura
+
+> [!primary]
+> Aggiornamento - Gennaio 2021
+>
+Una volta emessa la fattura da OVHcloud, viene inviata un'email con un link cliccabile e accessibile direttamente nel tuo Spazio Cliente OVHcloud. Tutte le fatture sono disponibili anche dal cruscotto dello Spazio Cliente OVHcloud.
+>
 
 ### Elementi della fattura
 
