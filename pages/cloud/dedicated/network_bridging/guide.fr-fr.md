@@ -198,7 +198,7 @@ Sauvegardez et fermez le fichier.
 Ouvrez ensuite le fichier de routage de la machine virtuelle, qui se trouve dans `/etc/sysconfig/network-scripts/route-(nom-de l’interface)`. Modifiez le fichier pour qu'il reflète la configuration ci-dessous. N'oubliez pas de remplacer nos variables par vos propres valeurs :
 
 ```bash
-GATEWAY_IP - 255.255.255.255.255.255 (nom-interface)
+GATEWAY_IP - 123.456.789.254 (nom-interface)
 NETWORK_GW_VM - 255.255.255.0 (insérez le nom de l'interface)
 default GATEWAY_IP
 ```
@@ -208,53 +208,10 @@ Enregistrez et fermez le fichier.
 Ensuite, ouvrez le fichier de routage de la machine virtuelle. Celui-ci se trouve dans `/etc/sysconfig/network/resolv.conf`.
 
 ```bash
-nameserver 213.186.33.33.99
+nameserver 213.186.33.99
 ```
 
 Après avoir enregistré et fermé le fichier, redémarrez votre réseau ou votre machine virtuelle.
-
-#### OpenSUSE
-
-> [!primary]
-> 
-> Pour OpenSUSE, le nom de la carte réseau varie en fonction des options d'installation. Vous devrez vérifier le nom de l'adaptateur et l'utiliser pour configurer votre machine virtuelle. Vous pouvez trouver les noms d'interface réseau avec la commande `ls /sys/class/net`.
-> 
-
-Ouvrez un terminal sur votre machine virtuelle. Une fois connecté, ouvrez le fichier de configuration réseau de la machine virtuelle. Celui-ci se trouve dans `/etc/sysconfig/network-scripts/ifcfg-(nom de l'interface)`. Si le fichier n'existe pas, vous devrez le créer. Modifiez le fichier pour qu'il reflète la configuration ci-dessous :
-
-```bash
-DEVICE=(interface-name)
-BOOTPROTO=static
-ONBOOT=yes
-ARP=yes
-USERCTL=no
-IPV6INIT=no
-TYPE=Ethernet
-STARTMODE=auto
-IPADDR=FAILOVER_IP
-NETMASK=255.255.255.255
-GATEWAY=GATEWAY_IP
-HWADDR=MY:VI:RT:UA:LM:AC
-```
-
-Enregistrez et fermez le fichier.
-
-Ensuite, ouvrez le fichier de routage de la machine virtuelle. Celui-ci se trouve dans `/etc/sysconfig/network-scripts/route-(nom-de l’interface)`. Si le fichier n'existe pas, vous devrez le créer. Modifiez le fichier pour qu'il reflète la configuration ci-dessous :
-
-```bash
-GATEWAY_IP - 255.255.255.255.255.255 (nom-interface)
-NETWORK_GW_VM - 255.255.255.0 (insérez le nom de l'interface)
-default GATEWAY_IP
-```
-
-Ensuite, ouvrez le fichier de routage de la machine virtuelle, qui se trouve dans `/etc/sysconfig/network/resolv.conf`. Si le fichier n'existe pas, vous devrez le créer. Modifiez le fichier pour qu'il reflète la configuration ci-dessous :
-
-```bash
-nameserver 213.186.33.99 # OVH DNS Server
-```
-
-Enregistrez et fermez le fichier, puis redémarrez la machine virtuelle.
-
 
 #### FreeBSD
 
@@ -270,7 +227,7 @@ route_net2="default GATEWAY_IP"
 Enregistrez et fermez le fichier. Ensuite, éditez le fichier `/etc/resolv.conf`. Créez-le si nécessaire.
 
 ```sh
-nameserver 213.186.33.33.99
+nameserver 213.186.33.99
 ```
 
 Enregistrez et fermez le fichier, puis redémarrez la machine virtuelle.
