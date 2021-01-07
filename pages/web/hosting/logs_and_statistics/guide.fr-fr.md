@@ -30,9 +30,12 @@ La fenêtre qui s’affiche alors est composée de 3 sections. La première pré
 
 ![hosting](images/statistics02u.png){.thumbnail}
 
-Il existe deux moteurs de statistiques sur l'infrastructure Web OVHcloud. Ils sont automatiquement définis en fonction de l'ancienneté de votre hébergement: 
+Deux moteurs de statistiques existent sur l'infrastructure Web OVHcloud :
+
 - Urchin 6 
-- OVH Web Statistics 
+- OVHcloud Web Statistics
+
+Suivant l'ancienneté de votre hébergement, l'un ou l'autre sera appliqué automatiquement.
 
 ### Administration des utilisateurs
 
@@ -44,8 +47,8 @@ Cliquez sur le bouton `Créer un nouvel utilisateur`{.action} dans la section `A
 
 > [!warning] 
 >
-> Lorsque vous activez les logs séparés sur une [entrée multisite](/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine), les utilisateurs créés dans cette section ne peuvent pas accéder aux statistiques de cette entrée multisite.
-
+> Si vous avez activé les logs séparés sur une [entrée multisite](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine), les utilisateurs créés ici ne peuvent pas accéder aux statistiques de cette entrée multisite.
+>
 
 ### Statistiques des visites
 
@@ -100,11 +103,11 @@ Différents type de logs sont à votre disposition :
 - Logs CGI : les différents appels aux scripts cgi.bin qui ont été réalisés.
 - Logs out : les statistiques de votre hébergement sur les différents appels externes réalisés.
 - Logs SSH : ces logs indiquent les différentes connexions réalisées avec le protocole SSH.
-- Logs CRON : le résultat de l'exécution de vos tâches planifiées ([Les tâches automatisées (CRON) sur votre hébergement](../mutualise-taches-automatisees-cron/))
+- Logs CRON : le résultat de l'exécution de vos tâches planifiées ([Les tâches automatisées (CRON) sur votre hébergement](../mutualise-taches-automatisees-cron/)).
 
 ### Activités de l’hébergement
 
-Vous trouvez dans cette section l'activité de l'infrastructure de votre hébergement pour visualiser la consommation des ressources à votre disposition.
+Retrouvez dans cette section l'activité de l'infrastructure de votre hébergement, afin de visualiser la consommation des ressources mises à votre disposition.
 
 Cliquez sur l'onglet `Informations générales`{.action}, puis descendez en bas de la page.
 
@@ -112,11 +115,11 @@ Cliquez sur l'onglet `Informations générales`{.action}, puis descendez en bas 
 
 Il est possible d'afficher différent types de graphiques, depuis le menu déroulant en haut à gauche :
 
-- Connexion sortantes : requête émise de votre site vers un site extérieur
-- Utilisation CPU : niveau de consommation du processeur sur votre instance d'hébergement
-- Dépassement du plafond des ressources: indique les moments ou votre hébergement dépasse son quota de ressources
-- Requêtes SQL : quantité de requêtes vers les bases de données de votre hébergement
-- Temps de réponse SQL : Temps de réponse des requêtes émises vers les bases de données de votre hébergement.
+- Connexions sortantes : requêtes émises de votre site vers un site extérieur.
+- Utilisation CPU : niveau de consommation du processeur sur votre instance d'hébergement.
+- Dépassement du plafond des ressources: indique les moments ou votre hébergement dépasse son quota de ressources.
+- Requêtes SQL : quantité de requêtes vers les bases de données de votre hébergement.
+- Temps de réponse SQL : temps de réponse des requêtes émises vers les bases de données de votre hébergement.
 
 ## Aller plus loin
 
