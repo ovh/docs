@@ -110,14 +110,16 @@ Cliquez ensuite sur le bouton `Confirmer la sélection`{.action} pour passer à 
 
 #### Prise de rendez-vous pour le création de l'accès à la nouvelle adresse
 
-Cette étape n'apparait que si la création d'une nouvelle ligne est demandée à la nouvelle adresse. Cette création nécessite le déplacement d'un technicien Orange sur place. 
+Cette étape n'apparait que si la création d'une nouvelle ligne est demandée à la nouvelle adresse. 
+<br>Cette création nécessite le déplacement d'un technicien Orange sur place. 
 
 > [!warning]
 >
 > Votre présence sur place lors du déplacement du technicien Orange est indispensable, celui-ci devant accéder aux parties privatives de votre logement ou de vos locaux.
 >
 
-Choisissez sur la planning la date et l'heure du rendez-vous en cochant la case correspondante.
+Renseignez le nom de la personne qui sera présente sur site pour accueillir le technicien dans le cadre prévu à cet effet.
+<br>Choisissez sur la planning la date et l'heure du rendez-vous en cochant la case correspondante.
 
 Cliquez ensuite sur le bouton `Confirmer la sélection`{.action} pour valider cette étape.
 
