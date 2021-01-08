@@ -6,7 +6,7 @@ section: 'E-Mail Clients'
 order: 8
 ---
 
-**Stand 10.09.2018**
+**Stand 08.01.2021**
 
 ## Einleitung
 
@@ -16,16 +16,16 @@ E-Mail-Adressen aus dem MX Plan Angebot können auf verschiedenen, kompatiblen E
 
 > [!warning]
 >
-> OVH stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVH leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
 > 
 
 ## Voraussetzungen
 
-- Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder in einem [Webhosting Angebot von OVH](https://www.ovh.de/hosting/){.external} enthalten).
-- Sie haben die Login-Daten der OVH E-Mail-Adresse, die Sie einrichten möchten.
-- Sie haben die Login-Daten des Gmail-Accounts, auf dem Sie die OVH Adresse einrichten möchten.
+- Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder in einem [Webhosting Angebot von OVHcloud](https://www.ovh.de/hosting/){.external} enthalten).
+- Sie haben die Login-Daten der OVHcloud E-Mail-Adresse, die Sie einrichten möchten.
+- Sie haben die Login-Daten des Gmail-Accounts, auf dem Sie die OVHcloud Adresse einrichten möchten.
 
 
 > [!primary]
@@ -35,7 +35,7 @@ E-Mail-Adressen aus dem MX Plan Angebot können auf verschiedenen, kompatiblen E
 
 ## Beschreibung
 
-### Schritt 1: OVH Account im Gmail-Interface hinzufügen
+### Schritt 1: OVHcloud Account im Gmail-Interface hinzufügen
 
 Gehen Sie zunächst über Ihren Webbrowser in das Gmail-Webinterface. Geben Sie dort die Login-Daten Ihres Gmail-Accounts ein, um sich mit diesem zu verbinden.
 
@@ -43,11 +43,11 @@ Wenn Sie im Interface eingeloggt sind, klicken Sie auf das Zahnrad-Symbol und an
 
 ![mxplan](images/configuration-gmail-web-step1.png){.thumbnail}
 
-Klicken Sie neben `Nachrichten von anderen Konten abrufen` auf `E-Mail-Konto hinzufügen`{.action}. Geben Sie im angezeigten Fenster Ihre OVH E-Mail-Adresse ein und klicken Sie dann auf `Weiter`{.action}. Wählen Sie `E-Mails von meinem anderen Konto (POP3) importieren`{.action} aus und klicken Sie anschließend auf `Weiter`{.action}.
+Klicken Sie neben `Nachrichten von anderen Konten abrufen` auf `E-Mail-Konto hinzufügen`{.action}. Geben Sie im angezeigten Fenster Ihre OVHcloud E-Mail-Adresse ein und klicken Sie dann auf `Weiter`{.action}. Wählen Sie `E-Mails von meinem anderen Konto (POP3) importieren`{.action} aus und klicken Sie anschließend auf `Weiter`{.action}.
 
 ![mxplan](images/configuration-gmail-web-step2.png){.thumbnail}
 
-Geben Sie jetzt die Einstellungen des POP-Servers (Eingangsserver) Ihrer OVH E-Mail-Adresse ein:
+Geben Sie jetzt die Einstellungen des POP-Servers (Eingangsserver) Ihrer OVHcloud E-Mail-Adresse ein:
 
 |Information|Beschreibung| 
 |---|---| 
@@ -58,25 +58,25 @@ Geben Sie jetzt die Einstellungen des POP-Servers (Eingangsserver) Ihrer OVH E-M
 
 Sie können folgende Optionen auswählen:
 
-- **„Kopie aller Nachrichten auf dem Server belassen“**: Setzen Sie hier einen Haken, falls Sie eine Kopie der Nachrichten, die Sie mit Ihrer OVH E-Mail-Adresse empfangen, auf unseren Servern speichern möchten.
+- **„Kopie aller Nachrichten auf dem Server belassen“**: Setzen Sie hier einen Haken, falls Sie eine Kopie der Nachrichten, die Sie mit Ihrer OVHcloud E-Mail-Adresse empfangen, auf unseren Servern speichern möchten.
 
-- **„Beim Abrufen von E-Mails immer eine sichere Verbindung (SSL) verwenden“**: Vergewissern Sie sich, dass Sie hier einen Haken gesetzt haben, damit eine Verbindung mit Ihrer OVH E-Mail-Adresse hergestellt werden kann.
+- **„Beim Abrufen von E-Mails immer eine sichere Verbindung (SSL) verwenden“**: Vergewissern Sie sich, dass Sie hier einen Haken gesetzt haben, damit eine Verbindung mit Ihrer OVHcloud E-Mail-Adresse hergestellt werden kann.
 
-- **„Eingehende Nachrichten mit folgendem Label kennzeichnen“**: Mit dieser Option können Sie ein Label zu den Nachrichten hinzufügen, die von Ihrer OVH E-Mail-Adresse in Ihren Gmail-Account importiert werden.
+- **„Eingehende Nachrichten mit folgendem Label kennzeichnen“**: Mit dieser Option können Sie ein Label zu den Nachrichten hinzufügen, die von Ihrer OVHcloud E-Mail-Adresse in Ihren Gmail-Account importiert werden.
 
-- **„Eingehende Nachrichten archivieren (Posteingang überspringen)“**: Hier können Sie einstellen, dass die E-Mails, die von Ihrer OVH E-Mail-Adresse in Ihren Gmail-Account importiert werden, nicht in Ihrem Posteingang angezeigt werden.
+- **„Eingehende Nachrichten archivieren (Posteingang überspringen)“**: Hier können Sie einstellen, dass die E-Mails, die von Ihrer OVHcloud E-Mail-Adresse in Ihren Gmail-Account importiert werden, nicht in Ihrem Posteingang angezeigt werden.
 
 Nachdem Sie alle Informationen eingegeben haben, klicken Sie auf `Konto hinzufügen`{.action}. Sind die Angaben korrekt, wird die Verbindung zu Ihrer E-Mail-Adresse hergestellt. 
 
 ![mxplan](images/configuration-gmail-web-step3.png){.thumbnail}
 
-Wenn Sie über das Gmail-Interface auch E-Mails mit Ihrer OVH Adresse versenden möchten, setzen Sie nun einen Haken in dem Feld `Ja, ich möchte Nachrichten auch als xxxxxx@xxx.xx senden`{.action} und klicken Sie dann auf `Weiter`{.action}. 
+Wenn Sie über das Gmail-Interface auch E-Mails mit Ihrer OVHcloud Adresse versenden möchten, setzen Sie nun einen Haken in dem Feld `Ja, ich möchte Nachrichten auch als xxxxxx@xxx.xx senden`{.action} und klicken Sie dann auf `Weiter`{.action}. 
 
 Geben Sie nun den Namen des Absenders ein, der beim Versand mit der E-Mail-Adresse angezeigt wird, setzen Sie einen Haken bei `Als Alias behandeln`{.action} und klicken Sie anschließend auf den Button `Nächster Schritt`{.action}.
 
 ![mxplan](images/configuration-gmail-web-step4.png){.thumbnail}
 
-Geben Sie jetzt die Einstellungen des SMTP-Servers (Ausgangsserver) Ihrer OVH E-Mail-Adresse ein:
+Geben Sie jetzt die Einstellungen des SMTP-Servers (Ausgangsserver) Ihrer OVHcloud E-Mail-Adresse ein:
 
 |Information|Beschreibung| 
 |---|---| 
@@ -89,19 +89,19 @@ Nachdem Sie die Informationen ausgefüllt haben, setzen Sie einen Haken bei `Sic
 
 ![mxplan](images/configuration-gmail-web-step5.png){.thumbnail}
 
-Jetzt müssen Sie nur noch das Hinzufügen des Accounts bestätigen, indem Sie den Bestätigungscode eingeben, der an Ihre OVH E-Mail-Adresse versandt wurde. Loggen Sie sich hierzu wie gewohnt in unserem Webinterface ein: <https://www.ovh.de/mail/>. 
+Jetzt müssen Sie nur noch das Hinzufügen des Accounts bestätigen, indem Sie den Bestätigungscode eingeben, der an Ihre OVHcloud E-Mail-Adresse versandt wurde. Loggen Sie sich hierzu wie gewohnt in unserem Webinterface ein: <https://www.ovh.de/mail/>. 
 
-Nach der Bestätigung erscheint Ihre OVH E-Mail-Adresse im Tab `Konten und Import`{.action}, auf den Sie zu Beginn der Änderung zugegriffen haben.
+Nach der Bestätigung erscheint Ihre OVHcloud E-Mail-Adresse im Tab `Konten und Import`{.action}, auf den Sie zu Beginn der Änderung zugegriffen haben.
 
 ### Schritt 2: E-Mail-Adresse über das Gmail-Interface verwenden
 
 Ihre E-Mail-Adresse ist nun fertig konfiguriert und Sie können jetzt Nachrichten versenden und empfangen.
 
-Um eine Nachricht mit Ihrer OVH E-Mail-Adresse über das Gmail-Interface zu versenden, wählen Sie diese einfach als Absender aus, wenn Sie eine neue Nachricht verfassen. Die Auswahl treffen Sie neben dem Feld `Von`{.action} im E-Mail-Eingabefenster.
+Um eine Nachricht mit Ihrer OVHcloud E-Mail-Adresse über das Gmail-Interface zu versenden, wählen Sie diese einfach als Absender aus, wenn Sie eine neue Nachricht verfassen. Die Auswahl treffen Sie neben dem Feld `Von`{.action} im E-Mail-Eingabefenster.
 
 ![mxplan](images/configuration-gmail-web-step6.png){.thumbnail}
 
-Natürlich können Sie auch weiterhin unser Webinterface unter <https://www.ovh.de/mail/> verwenden, um auf Ihre OVH E-Mail-Adresse zuzugreifen. Loggen Sie sich hierzu wie gewohnt mit Ihren zugehörigen Login-Daten ein.
+Natürlich können Sie auch weiterhin unser Webinterface unter <https://www.ovh.de/mail/> verwenden, um auf Ihre OVHcloud E-Mail-Adresse zuzugreifen. Loggen Sie sich hierzu wie gewohnt mit Ihren zugehörigen Login-Daten ein.
 
 
 ## Weiterführende Informationen
