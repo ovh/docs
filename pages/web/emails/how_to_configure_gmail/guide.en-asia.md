@@ -6,7 +6,7 @@ section: 'Configure an email service'
 order: 1
 ---
 
-**Last updated 5th May 2020**
+**Last updated 8th January 2021**
 
 ## Objective
 

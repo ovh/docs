@@ -6,7 +6,7 @@ excerpt: So verwenden Sie SVN via SSH auf Ihrem Webhosting
 section: FTP und SSH
 ---
 
-**Letzte Aktualisierung am 28.10.2020**
+**Letzte Aktualisierung am 06.01.2021**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
@@ -16,7 +16,7 @@ section: FTP und SSH
 
 SVN, die Abkürzung für "Subversion", ist ein Versionsverwaltungssystem. 
 
-**So verwenden Sie SVN via SSH auf Ihrem Webhosting**
+**Diese Anleitung erklärt, wie Sie SVN über eine SSH-Verbindung auf Ihrem Webhosting nutzen können.**
 
 > [!warning]
 >
@@ -25,16 +25,16 @@ SVN, die Abkürzung für "Subversion", ist ein Versionsverwaltungssystem.
 > Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
 > 
 
-## Vorbedingung
+## Voraussetzungen
 
-- Sie verfügen über [ein Webhosting Angebot](https://www.ovh.de/hosting/) für eine SSH Verbindung (**ab dem Pro Angebot**)
-- Via SSH mit Ihrem Webhosting verbinden (Sie können in unserer Anleitung [SSH-Zugang auf Ihrem Webhosting verwenden](../webhosting_ssh_auf_ihren_webhostings/))
+- Sie verfügen über ein [Webhosting Angebot](https://www.ovh.de/hosting/) mit SSH (**ab dem Pro Angebot**).
+- Sie können sich über SSH mit Ihrem Webhosting verbinden (vgl. unsere Anleitung [SSH-Zugang Ihres Webhostings verwenden](../webhosting_ssh_auf_ihren_webhostings/)).
 
 ## In der praktischen Anwendung
 
-### Erstellung des Depots
+### Erstellung des Repository
 
-Wenn Sie via [SSH auf Ihrem Hosting eingeloggt sind](../webhosting_ssh_auf_ihren_webhostings/){.external}, erstellen Sie das Wurzelverzeichnis der SVN-Depots und anschließend das Depot.
+Wenn Sie via SSH eingeloggt sind, erstellen Sie zuerst das Wurzelverzeichnis Ihrer SVN-Repositorys und dann Sie das Repository:
 
 Geben Sie dazu einfach folgenden Befehl ein:
 
@@ -42,31 +42,29 @@ Geben Sie dazu einfach folgenden Befehl ein:
 mkdir svn
 ```
 
-und dem
-
 ```bash
 svnadmin create svn/depot_test
 ```
 
-Überprüfen Sie anschließend, ob die Verzeichnisse mit dem Befehl erstellt wurden:
+Überprüfen Sie anschließend, ob die Verzeichnisse korrekt erstellt wurden:
 
 ```bash
 ls -la
 ```
 
-Sie müssen die Verzeichnisse wie im folgenden Bild dargestellt erhalten:
+Sie sollten die Verzeichnisse wie unten dargestellt erhalten:
 
 ![Hosting](images/3078.png){.thumbnail}
 
 ### Erstellung öffentlicher/privater Schlüssel
 
-Bevor Sie fortfahren, erstellen Sie von dem Computer aus ein SSH-Schlüsselpaar, das Sie verwenden, um sich mit dem SVN-Depot zu verbinden.
+Bevor Sie fortfahren, erstellen Sie ein SSH-Schlüsselpaar von dem Desktop aus, den Sie für die Verbindung mit dem SVN-Repository verwenden.
 
-Folgen Sie bitte der Anleitung [SSH-Schlüssel erstellen](https://docs.ovh.com/de/public-cloud/create-ssh-keys/). Folgen Sie nicht dem Schritt [Importieren Sie Ihren SSH-Schlüssel in das OVHcloud Kundencenter](https://docs.ovh.com/de/public-cloud/create-ssh-keys/#ihren-ssh-schlussel-ins-ovhcloud-kundencenter-importieren_1) in dieser Anleitung.
+Um ein Schlüsselpaar zu erstellen, folgen Sie unserer Anleitung zur [SSH-Schlüsselerstellung](../../public-cloud/create-ssh-keys/). Sie können hierbei den Schritt zum Import Ihres SSH Schlüssels ins OVHcloud Kundencenter ignorieren.
 
 ### Öffentlichen Schlüssel zum Hosting hinzufügen
 
-Nachdem Sie Ihren Key erhalten haben, fügen Sie diesen in der .ssh/authorized_keys2 Datei auf Ihrem Hosting hinzu. Geben Sie hierzu die folgende Befehlszeile ein:
+Wenn Sie den Schlüssel erzeugt haben, fügen Sie ihn in die Datei ".ssh/authorized_keys2" mit folgenden Befehlen ein:
 
 ```bash
 mkdir .ssh
@@ -74,37 +72,34 @@ chmod 700 .ssh
 vi .ssh/authorized_keys2
 ```
 
-Wenn die Datei geöffnet ist, geben Sie folgende Zeile ein:
+Die neue Datei wird zur Bearbeitung geöffnet. Fügen Sie die folgende Zeile ein, gefolgt von dem zuvor erstellten Schlüssel. Stellen Sie sicher, dass sich die gesamte Zeichenfolge in derselben Zeile befindet.
 
 ```bash
 command="/usr/bin/svnserve --root=/homez.XXX/loginFTP/svn --tunnel --tunnel-user=john",no-port-forwarding,no-agent-forwarding,no-X11-forwarding,no-pty
 ```
 
-Gefolgt von dem zuvor erstellten Key, alles auf derselben Zeile.
-
 > [!primary]
 >
-> Ersetzen Sie "/home.XXX/LoginFTP"und "John"mit Ihren SSH-Zugangsdaten.
-> Um die Zahlen zu kennen, die als Ersatz für "/home.XXX/LoginFTP"zu verwenden sind, geben Sie den Befehl "pwd"via SSH ein.
+> Ersetzen Sie "/home.XXX/LoginFTP" und "john" mit Ihren SSH-Zugangsdaten.
+> Um die zu verwendenden Zahlen in "/home.XXX/LoginFTP"zu erfahren, geben Sie den Befehl "pwd" in der Kommandozeile ein.
 >
-> Weitere Informationen finden Sie in unserer Anleitung [Den SSH-Zugang Ihres Webhostings verwenden](../webhosting_ssh_auf_ihren_webhostings/){.external}.
+> Weitere Informationen finden Sie in unserer Anleitung [SSH-Zugang Ihres Webhostings verwenden](../webhosting_ssh_auf_ihren_webhostings/){.external}.
 > 
 
 ![Hosting](images/3080.png){.thumbnail}
 
-Sie können den Inhalt des Depots abrufen, ohne sich direkt per SSH auf der Maschine zu verbinden.
+Sie können den Inhalt des Repositorys abrufen, ohne sich direkt über SSH mit dem Hosting zu verbinden.
 
 > [!warning]
 >
-> Achtung, ein und derselbe Schlüssel darf nicht für SVN und SSH in
-> Kommandozeile
+> Derselbe Schlüssel darf nicht für die SVN- und SSH-Verbindung verwendet werden.
 > 
 
 ### Beispiele
 
-#### Unter Linux
+#### Linux
 
-Sie können einen Test vom Computer aus durchführen, der sich mit dem SVN Depot verbindet, indem Sie die Leitung eingeben:
+Sie können einen Test von dem Computer aus durchführen, der sich mit dem SVN-Repository verbindet, indem Sie folgenden Befehl in die Kommandozeile eingeben:
 
 ```bash
 svn checkout svn+ssh://loginFTP@clusterXXX/depot_test
@@ -112,47 +107,43 @@ svn checkout svn+ssh://loginFTP@clusterXXX/depot_test
 
 #### Windows mit TortoiseSVN
 
-- Download und Installation von TortoiseSVN ([http://tortoisesvn.net/downloads](http://tortoisesvn.net/downloads){.external})
+- Downloaden und Installieren Sie TortoiseSVN ([http://tortoisesvn.net/downloads](http://tortoisesvn.net/downloads){.external})
 - Klicken Sie mit der rechten Maustaste auf den privaten Schlüssel. Unten rechts erscheint ein Icon, der Schlüssel wird dann in den Authentifizierungsagenten geladen.
 - Erstellen Sie ein Verzeichnis, klicken Sie mit der rechten Maustaste darauf und wählen Sie "SVN Checkout". 
-- Geben Sie `svn+ssh://loginFTP@xxplan.ovh.net/depot_test` in das Feld "URL of repository"ein und klicken Sie auf `OK`:
+- Geben Sie `svn+ssh://loginFTP@xxplan.ovh.net/depot_test` in das Feld "URL of repository" ein und klicken Sie auf `OK`:
 
 ![Hosting](images/3081.png){.thumbnail}
 
-Subversion enthält eine sehr gute Dokumentation auf Englisch: [http://svnbook.red-bean.com/en/1.5/index.html](http://svnbook.red-bean.com/en/1.5/index.html){.external}
+Subversion bietet eine sehr gute Dokumentation auf Englisch: [http://svnbook.red-bean.com/en/1.5/index.html](http://svnbook.red-bean.com/en/1.5/index.html){.external}
 
-### Sonderfälle
+### Spezielle Anwendungen
 
 #### Mehrere Accounts erstellen
 
-Zunächst müssen mehrere SSH-Schlüssel erstellt worden sein. Beim Hinzufügen des öffentlichen Schlüssels zum Hosting:
+Zuerst müssen Sie für jeden Benutzer SSH-Schlüsselpaare erstellen. Fügen Sie anschließend wie oben erläutert den öffentlichen Schlüssel zum Hosting hinzu:
 
 ```bash
-command="/usr/bin/svnserve --root=/home.XXX/loginFTP/svn --tunnel --tunnel-user=marc",no-port-forwarding,no-agent-forwarding,no-X11-forwarding,no-pty
+command="/usr/bin/svnserve --root=/home.XXX/loginFTP/svn --tunnel --tunnel-user=username",no-port-forwarding,no-agent-forwarding,no-X11-forwarding,no-pty
 ```
 
-Ändern Sie die nachstehende Einstellung, indem Sie Ihre verschiedenen Benutzer hinzufügen:
+Ersetzen Sie dabei "username" mit Ihren jeweiligen Benutzerkennungen und wiederholen Sie den Befehl, um mehrere Benutzer hinzuzufügen.
 
-```bash
---tunnel-user
-```
-
-Bitte beachten Sie, dass Sie auch Einlesezugriff gewähren können, indem Sie folgenden Parameter hinzufügen:
+Beachten Sie, dass Sie auch Lesezugriff gewähren können, indem Sie folgenden Parameter anfügen:
 
 ```bash
 --read-only.
 ```
 
-#### Lokal vom Server überprüfen
+#### Überprüfung auf dem Server
 
-Wenn Sie eine Überprüfung vor Ort durchführen möchten, funktionieren die Beispiele nicht. Verwenden Sie:
+Wenn Sie eine lokale Überprüfung durchführen möchten, funktionieren die aufgeführten Beispiele nicht. Verwenden Sie stattdessen den Befehl folgendermaßen:
 
 ```bash
-svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
+svn+ssh://login@ftp.ftp.name-of-site.tld/home.XXX/login/svn/depot_test
 ```
 
 ## Weiterführende Informationen
 
-[SSH-Zugang auf Ihrem Webhosting verwenden](../webhosting_ssh_auf_ihren_webhostings/){.external}
+[SSH-Zugang Ihres Webhostings verwenden](../webhosting_ssh_auf_ihren_webhostings/){.external}
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

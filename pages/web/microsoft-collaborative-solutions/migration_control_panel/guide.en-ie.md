@@ -16,8 +16,8 @@ OVHcloud offers several email solutions: MX Plan (stand-alone or included in a W
 
 ## Requirements
 
-- an MX Plan email address (via the MX Plan solution or included in an OVHcloud [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external})
-- an [Exchange](https://www.ovh.co.uk/emails/hosted-exchange/){.external} or [Email Pro](https://www.ovh.co.uk/emails/email-pro/){.external} service with at least one unconfigured account (which will appear as “@configureme.me”).
+- an MX Plan email address (via the MX Plan solution or included in an OVHcloud [Web Hosting plan](https://www.ovh.ie/web-hosting/){.external})
+- an [Exchange](https://www.ovh.ie/emails/hosted-exchange/){.external} or [Email Pro](https://www.ovh.ie/emails/email-pro/){.external} service with at least one unconfigured account (which will appear as “@configureme.me”).
 - no redirections set on the MX Plan email address you want to migrate
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
@@ -28,7 +28,7 @@ OVHcloud offers several email solutions: MX Plan (stand-alone or included in a W
 
 Email Pro and Exchange solutions have a common feature base. However, there are differences in use cases. By choosing an Exchange address, you get all the collaborative features, such as calendars and contact synchronisation. The Email Pro solution offers a few advanced features as well, but they are limited to webmail use only.
 
-It is important to find out to which solution you would like to migrate your MX Plan email addresses to before initiating the process. To help you decide, the [OVHcloud professional email solutions page](https://www.ovh.co.uk/emails/){.external} offers a detailed comparison of the available services. You can also manage a mixed solution and use one or more Email Pro and Exchange accounts for the same domain name. Furthermore, if you need to migrate multiple accounts, we recommend that you set up a migration plan.
+It is important to find out to which solution you would like to migrate your MX Plan email addresses to before initiating the process. To help you decide, the [OVHcloud professional email solutions page](https://www.ovh.ie/emails/){.external} offers a detailed comparison of the available services. You can also manage a mixed solution and use one or more Email Pro and Exchange accounts for the same domain name. Furthermore, if you need to migrate multiple accounts, we recommend that you set up a migration plan.
 
 
 ### Step 2: Ordering your Email Pro or Exchange accounts
@@ -128,7 +128,7 @@ For more information on OMM, please read our guide on [Migrating email accounts 
 
 The migration time depends on the amount of content to migrate to your new account. This may vary from a few minutes to several hours.
 
-Check that you can find your items after the migration, by logging into OVHcloud [webmail](https://www.ovh.co.uk/mail).
+Check that you can find your items after the migration, by logging into OVHcloud [webmail](https://www.ovh.ie/mail/).
 
 You can keep or delete the original account with the temporary name after this migration.
 
@@ -151,7 +151,7 @@ To modify the configuration, click on the red box and carry out the requested op
 
 ### Step 5: Using your migrated email addresses
 
-Now, you can start using your migrated email addresses. To do this, OVHcloud offers an online interface (_web app_), available here: <https://www.ovh.co.uk/mail/>. You will need to enter your email credentials.
+Now, you can start using your migrated email addresses. To do this, OVHcloud offers an online interface (_web app_), available here: <https://www.ovh.ie/mail/>. You will need to enter your email credentials.
 
 If you have configured one of the migrated accounts on an email client (such as Outlook), you must set it up again. The login details for the OVHcloud server have changed following the migration. To help you make changes, please read the respective guides in the [Email Pro](../../emails-pro/) and [Hosted Exchange](../) guide sections. Even if you are unable to reconfigure the account immediately, access via the online application is still possible.
 

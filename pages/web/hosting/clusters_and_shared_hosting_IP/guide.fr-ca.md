@@ -1,13 +1,13 @@
 ---
 title: 'Liste des adresses IP des clusters et hebergements web'
 slug: liste-des-adresses-ip-des-clusters-et-hebergements-web
-section: 'Configuration de l’hébergement'
+section: "Configuration de l'hébergement"
 order: 3
 ---
 
-**Dernière mise à jour le 20/07/2020**
+**Dernière mise à jour le 07/01/2021**
 
-Vous trouverez dans ce guide toutes les adresses IP des hébergements web OVHcloud. Cela vous permettra par exemple de trouver quelle adresse IP renseigner dans vos zones DNS, en fonction de :
+Vous trouverez dans ce guide toutes les adresses IP des hébergements web OVH. Cela vous permettra par exemple de trouver quelle adresse IP renseigner dans vos zones DNS, en fonction de :
 
 - votre cluster
 - vos options (CDN, SSL payant, SSL gratuit...)
@@ -16,11 +16,20 @@ Vous trouverez dans ce guide toutes les adresses IP des hébergements web OVHclo
 > [!primary]
 >
 > Les adresses IP de l'option CDN sont "Anycast".
-> C'est à dire qu'elles n'ont pas besoin de géolocalisation (Plus d'informations ici ).
+> C'est à dire qu'elles n'ont pas besoin de géolocalisation ([Plus d'informations ici](https://www.ovh.com/ca/fr/hebergement-web/cdn.xml)).
 > 
 
+## Prérequis
 
-## Cluster 002
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Posséder une [offre d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
+
+## En pratique
+
+Pour connaître le cluster d'hébergement web sur lequel se trouve votre service, connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) et sélectionnez `Web Cloud`{.action} dans la barre de navigation supérieure. Cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement Web concerné. Ensuite, accédez à l'onglet `FTP - SSH`{.action}.
+Vous pouvez vérifier le numéro de cluster de l'hébergement Web sur cette page sous **Serveur FTP**.
+
+### Cluster 002
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -40,14 +49,21 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Lituanie|LT|188.165.31.2|2001:41d0:1:1b00:188:165:31:2|
 |Allemagne|DE|87.98.247.2|2001:41d0:1:1b00:87:98:247:2|
 
-Si vous avez le  **CDN**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
 213.186.33.69
 ```
 
-Si vous avez le  **Certificat SSL GlobalSign (payant)**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.2
+```
+
+Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
@@ -62,7 +78,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 ```
 
 
-## Cluster 003
+### Cluster 003
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -82,14 +98,21 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Lituanie|LT|188.165.31.4|2001:41d0:1:1b00:188:165:31:4|
 |Allemagne|DE|87.98.247.4|2001:41d0:1:1b00:87:98:247:4|
 
-Si vous avez le  **CDN**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
 213.186.33.85
 ```
 
-Si vous avez le  **Certificat SSL GlobalSign (payant)**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.3
+```
+
+Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
@@ -104,7 +127,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 ```
 
 
-## Cluster 005
+### Cluster 005
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -124,14 +147,21 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Lituanie|LT|188.165.31.16|2001:41d0:1:1b00:188.165.31.16|
 |Allemagne|DE|87.98.247.16|2001:41d0:1:1b00:87:98:247:16|
 
-Si vous avez le  **CDN**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
 213.186.33.95
 ```
 
-Si vous avez le  **Certificat SSL GlobalSign (payant)**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.5
+```
+
+Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
@@ -146,7 +176,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 ```
 
 
-## Cluster 006
+### Cluster 006
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -166,14 +196,21 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Lituanie|LT|188.165.31.17|2001:41d0:1:1b00:188:165:31:17|
 |Allemagne|DE|87.98.247.17|2001:41d0:1:1b00:87:98:247:17|
 
-Si vous avez le  **CDN**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
 213.186.33.97
 ```
 
-Si vous avez le  **Certificat SSL GlobalSign (payant)**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.6
+```
+
+Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
@@ -187,7 +224,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 51.68.11.203
 ```
 
-## Cluster 007
+### Cluster 007
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -207,14 +244,21 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Lituanie|LT|188.165.31.18|2001:41d0:1:1b00:188:165:31:18|
 |Allemagne|DE|87.98.247.18|2001:41d0:1:1b00:87:98:247:18|
 
-Si vous avez le  **CDN**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
 213.186.33.105
 ```
 
-Si vous avez le  **Certificat SSL GlobalSign (payant)**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.7
+```
+
+Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
@@ -229,7 +273,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 ```
 
 
-## Cluster 010
+### Cluster 010
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -249,14 +293,21 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Lituanie|LT|188.165.31.19|2001:41d0:1:1b00:188:165:31:19|
 |Allemagne|DE|87.98.247.19|2001:41d0:1:1b00:87:98:247:19|
 
-Si vous avez le  **CDN**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
 213.186.33.107
 ```
 
-Si vous avez le  **Certificat SSL GlobalSign (payant)**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.10
+```
+
+Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
@@ -271,7 +322,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 ```
 
 
-## Cluster 011
+### Cluster 011
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -291,14 +342,21 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Lituanie|LT|188.165.31.40|2001:41d0:1:1b00:188:165:31:40|
 |Allemagne|DE|87.98.247.40|2001:41d0:1:1b00:87:98:247:40|
 
-Si vous avez le  **CDN**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
 213.186.33.151
 ```
 
-Si vous avez le  **Certificat SSL GlobalSign (payant)**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.11
+```
+
+Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
@@ -313,7 +371,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 ```
 
 
-## Cluster 012
+### Cluster 012
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -333,14 +391,20 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Lituanie|LT|188.165.31.48|2001:41d0:1:1b00:188:165:31:48|
 |Allemagne|DE|87.98.247.48|2001:41d0:1:1b00:87:98:247:48|
 
-Si vous avez le  **CDN**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
 213.186.33.153
 ```
 
-Si vous avez le  **Certificat SSL GlobalSign (payant)**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+```bash
+46.105.204.12
+```
+
+Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
@@ -355,7 +419,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 ```
 
 
-## Cluster 013
+### Cluster 013
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -374,14 +438,21 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Lituanie|LT|188.165.31.24|2001:41d0:1:1b00:188:165:31:24|
 |Allemagne|DE|87.98.247.24|2001:41d0:1:1b00:87:98:247:24|
 
-Si vous avez le  **CDN**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
 213.186.33.83
 ```
 
-Si vous avez le  **Certificat SSL GlobalSign (payant)**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.13
+```
+
+Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
@@ -396,7 +467,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 ```
 
 
-## Cluster 014
+### Cluster 014
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -416,14 +487,21 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Lituanie|LT|188.165.31.87|2001:41d0:1:1b00:188:165:31:87|
 |Allemagne|DE|87.98.247.87|2001:41d0:1:1b00:87:98:247:87|
 
-Si vous avez le **CDN** activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
 213.186.33.169
 ```
 
-Si vous avez le  **Certificat SSL GlobalSign (payant)**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.14
+```
+
+Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
@@ -438,7 +516,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 ```
 
 
-## Cluster 015
+### Cluster 015
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -458,14 +536,21 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Lituanie|LT|188.165.31.3|2001:41d0:1:1b00:188:165:31:3|
 |Allemagne|DE|87.98.247.3|2001:41d0:1:1b00:87:98:247:3|
 
-Si vous avez le  **CDN**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
 213.186.33.171
 ```
 
-Si vous avez le  **Certificat SSL GlobalSign (payant)**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.15
+```
+
+Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
@@ -480,7 +565,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 ```
 
 
-## Cluster 017
+### Cluster 017
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -500,14 +585,21 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Lituanie|LT|188.165.31.50|2001:41d0:1:1b00:188:165:31:50|
 |Allemagne|DE|87.98.247.50|2001:41d0:1:1b00:87:98:247:50|
 
-Si vous avez le  **CDN**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
 213.186.33.173
 ```
 
-Si vous avez le  **Certificat SSL GlobalSign (payant)**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.17
+```
+
+Si le **Certificat SSL GlobalSign (payant)** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
@@ -522,7 +614,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 ```
 
 
-## Cluster 020
+### Cluster 020
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -543,11 +635,18 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Allemagne|DE|5.135.108.219|2001:41d0:301:1::20|
 |Belgique|BE|5.196.203.200|2001:41d0:301:10::20|
 
-Si vous avez le  **CDN**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
 213.186.33.176
+```
+
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.20
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
@@ -558,7 +657,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 ```
 
 
-## Cluster 021
+### Cluster 021
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -579,20 +678,28 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Allemagne|DE|94.23.162.9|2001:41d0:301:1::21|
 |Belgique|BE|178.32.40.72|2001:41d0:301:10::21|
 
-Si vous avez le  **CDN**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy**  est activé sur votre hébergement, vous devez utiliser cette adresse IP :
 
 
 ```bash
 213.186.33.177
 ```
 
+Si le **Shared CDN** (sorti le 19/11/2020)est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.21
+```
+
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
+
 
 ```bash
 91.134.248.245
 ```
 
-## Cluster 023
+### Cluster 023
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -612,19 +719,28 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Allemagne|DE|87.98.242.65|2001:41d0:301:1::23|
 |Belgique|BE|137.74.229.68|2001:41d0:301:10::23|
 
-Si vous avez le  **CDN**  activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
 
 ```bash
 213.186.33.186
 ```
 
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.23
+```
+
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
+
 
 ```bash
 91.134.248.235
 ```
 
-## Cluster 024
+### Cluster 024
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -644,10 +760,18 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Allemagne|DE|178.33.38.88|2001:41d0:301:1::24|
 |Belgique|BE|213.32.81.103|2001:41d0:301:10::24|
 
-Si vous avez le **CDN** activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
 
 ```bash
 213.186.33.187
+```
+
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.24
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
@@ -657,7 +781,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 91.134.248.230
 ```
 
-## Cluster 025
+### Cluster 025
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -677,10 +801,18 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Allemagne|DE|178.33.34.108|2001:41d0:301:1::25|
 |Belgique|BE|87.98.252.243|2001:41d0:301:10::25|
 
-Si vous avez le **CDN** activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
 
 ```bash
 145.239.37.172
+```
+
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.25
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
@@ -690,7 +822,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 91.134.248.215
 ```
 
-## Cluster 026
+### Cluster 026
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -710,10 +842,18 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Allemagne|DE|94.23.160.29|2001:41d0:301:1::26|
 |Belgique|BE|178.32.43.46|2001:41d0:301:10::26|
 
-Si vous avez le **CDN** activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
 
 ```bash
 188.165.51.93
+```
+
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.26
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
@@ -723,7 +863,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 91.134.248.211
 ```
 
-## Cluster 027
+### Cluster 027
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -743,10 +883,18 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Allemagne|DE|91.134.179.251|2001:41d0:301:1::27|
 |Belgique|BE|193.70.58.226|2001:41d0:301:10::27|
 
-Si vous avez le **CDN** activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
 
 ```bash
 145.239.51.129
+```
+
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.27
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
@@ -756,7 +904,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 54.37.121.239
 ```
 
-## Cluster 028
+### Cluster 028
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -776,10 +924,18 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Allemagne|DE|54.37.173.127|2001:41d0:301:1::28|
 |Belgique|BE|193.70.70.144|2001:41d0:301:10::28|
 
-Si vous avez le **CDN** activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
 
 ```bash
 51.255.119.116
+```
+
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.28
 ```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
@@ -789,7 +945,7 @@ Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre héb
 91.134.248.249
 ```
 
-## Cluster 029
+### Cluster 029
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -809,22 +965,28 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Allemagne|DE|145.239.222.45|2001:41d0:301:1::29|
 |Belgique|BE|178.32.44.140|2001:41d0:301:10::29|
 
-Si vous avez le **CDN** activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
 
 ```bash
  51.255.215.242 
 ```
 
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.29
+```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
-
 
 
 ```bash
 91.134.248.192
 ```
 
-## Cluster 030
+### Cluster 030
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -844,22 +1006,28 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |Allemagne|DE|51.255.232.79|2001:41d0:301:1::30|
 |Belgique|BE|213.32.107.241|2001:41d0:301:10::30|
 
-Si vous avez le **CDN** activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le **CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
 
 ```bash
 54.36.13.47
 ```
 
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.30
+```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
-
 
 
 ```bash
 51.178.146.199
 ```
 
-## Cluster 051
+### Cluster 051
 
 Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 
@@ -867,15 +1035,21 @@ Retrouvez les adresses IP du **cluster** par pays (pour la géolocalisation) :
 |---|---|----|---|
 |Canada|CA|51.161.122.78|2607:5300:205:2::51|
 
-Si vous avez le **CDN** activé sur votre hébergement, vous devez utiliser cette adresse IP :
+Si le *CDN Legacy** est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
 
 ```bash
 178.32.120.166
 ```
 
+Si le **Shared CDN** (sorti le 19/11/2020) est activé sur votre hébergement, vous devez utiliser cette adresse IP :
+
+
+```bash
+46.105.204.51
+```
 
 Si vous avez besoin de l'adresse IP de la **passerelle de sortie** de votre hébergement (gateway), vous devez utiliser cette adresse IP :
-
 
 
 ```bash
