@@ -5,7 +5,7 @@ slug: verzeichnis-der-ip-adressen-web-hosting-cluster
 section: 'Webhosting-Konfiguration'
 ---
 
-**Letzte Aktualisierung am 20.07.2020**
+**Letzte Aktualisierung am 08.01.2021**
 
 ## Ziel
 
@@ -53,6 +53,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 213.186.33.69
 ```
 
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.2
+```
+
 Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -90,6 +96,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 
 ```bash
 213.186.33.85
+```
+
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.3
 ```
 
 Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
@@ -131,6 +143,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 213.186.33.95
 ```
 
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.5
+```
+
 Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -170,6 +188,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 213.186.33.97
 ```
 
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.6
+```
+
 Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -206,6 +230,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 
 ```bash
 213.186.33.105
+```
+
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.7
 ```
 
 Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
@@ -247,6 +277,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 213.186.33.107
 ```
 
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.10
+```
+
 Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -284,6 +320,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 
 ```bash
 213.186.33.151
+```
+
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.11
 ```
 
 Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
@@ -325,6 +367,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 213.186.33.153
 ```
 
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.12
+```
+
 Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -361,6 +409,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 
 ```bash
 213.186.33.83
+```
+
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.13
 ```
 
 Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
@@ -402,6 +456,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 213.186.33.169
 ```
 
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.14
+```
+
 Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -441,6 +501,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 213.186.33.171
 ```
 
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.15
+```
+
 Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -478,6 +544,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 
 ```bash
 213.186.33.173
+```
+
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.17
 ```
 
 Wenn Sie ein **Sectigo SSL Zertifikat (kostenpflichtig)** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
@@ -520,6 +592,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 213.186.33.176
 ```
 
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.20
+```
+
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -555,6 +633,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 213.186.33.177
 ```
 
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.21
+```
+
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -585,6 +669,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 
 ```bash
 213.186.33.186
+```
+
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.23
 ```
 
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
@@ -619,6 +709,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 213.186.33.187
 ```
 
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.24
+```
+
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -649,6 +745,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 
 ```bash
 145.239.37.172
+```
+
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.25
 ```
 
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
@@ -683,6 +785,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 188.165.51.93
 ```
 
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.26
+```
+
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -713,6 +821,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 
 ```bash
 145.239.51.129
+```
+
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.27
 ```
 
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
@@ -747,6 +861,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 51.255.119.116
 ```
 
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.28
+```
+
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -777,6 +897,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 
 ```bash
  51.255.215.242 
+```
+
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.29
 ```
 
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
@@ -811,6 +937,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 54.36.13.47
 ```
 
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.30
+```
+
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -829,6 +961,12 @@ Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie d
 
 ```bash
 178.32.120.166
+```
+
+Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
+
+```bash
+46.105.204.51
 ```
 
 Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie diese IP-Adresse:
