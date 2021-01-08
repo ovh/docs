@@ -18,7 +18,7 @@ Neste guia encontrará todos os endereços IP dos alojamentos web OVHcloud. Assi
 > [!primary]
 >
 > Os endereços IP da opção CDN são Anycast.
-> Isso significa que não precisam de geolocalização. (Mais informações aqui.)
+> Isso significa que não precisam de geolocalização ([Mais informações aqui](https://www.ovh.pt/alojamento-partilhado/cdn.xml)).
 > 
 
 ## Requisitos
