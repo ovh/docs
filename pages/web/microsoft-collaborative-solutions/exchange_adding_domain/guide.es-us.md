@@ -15,16 +15,16 @@ Añadir un dominio a un servicio Exchange es un requisito indispensable para pod
 
 ## Requisitos
 
-- Tener contratada una [solución Exchange](https://www.ovh.es/emails/){.external}.
+- Tener contratada una [solución Exchange](https://www.ovh.com/world/es/emails/hosted-exchange/){.external}.
 - Tener uno o más dominios.
 - Estar en condiciones de modificar la configuración (la zona DNS) del dominio.
-- Estar conectado al [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Procedimiento
 
 ### 1. Acceder a la gestión del servicio
 
-Una vez que el servicio Exchange haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}.
+Una vez que el servicio Exchange haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 Para ello, en la columna izquierda, haga clic en `Microsoft`{.action}, luego en `Exchange`{.action}  y seleccione el servicio Exchange correspondiente.
 
@@ -39,16 +39,16 @@ Para añadir un dominio, abra la pestaña `Dominios asociados`{.action}. Se most
 
 > [!warning]
 >
-> Todas las direcciones creadas en el servicio Exchange podrán ver en el directorio el resto de direcciones asociadas al servicio, incluidas aquellas que posean un dominio diferente. Si desea crear directorios separados, deberá contratar una nueva [solución Exchange](https://www.ovh.es/emails/){.external} para el o los dominios en cuestión.
+> Todas las direcciones creadas en el servicio Exchange podrán ver en el directorio el resto de direcciones asociadas al servicio, incluidas aquellas que posean un dominio diferente. Si desea crear directorios separados, deberá contratar una nueva [solución Exchange](https://www.ovh.com/world/es/emails/hosted-exchange/){.external} para el o los dominios en cuestión.
 >
 
 ![Añadir dominio a Exchange](images/add_domain_exchange_step1.png){.thumbnail}
 
 A continuación, se le ofrecerán dos opciones:
 
-- **Seleccionar un dominio de la lista**: Solo se mostrarán los dominios que utilicen la configuración de OVH y que se encuentren bajo el mismo ID de cliente.
+- **Seleccionar un dominio de la lista**: Solo se mostrarán los dominios que utilicen la configuración de OVHcloud y que se encuentren bajo el mismo ID de cliente.
 
-- **Introducir un nombre de dominio no gestionado por su cuenta OVH**: Si elige esta opción, deberá estar en condiciones de modificar la configuración del dominio (su zona DNS) para que el servicio Exchange pueda funcionar correctamente.
+- **Introducir un nombre de dominio no gestionado por su cuenta OVHcloud**: Si elige esta opción, deberá estar en condiciones de modificar la configuración del dominio (su zona DNS) para que el servicio Exchange pueda funcionar correctamente.
 
 A continuación, haga clic en `Siguiente`{.action}.
 
@@ -56,9 +56,9 @@ A continuación, haga clic en `Siguiente`{.action}.
 
 Se mostrará un mensaje informativo relativo al modo de configuración del dominio.
 
-- **Si ha introducido un dominio no gestionado por OVH**, este se configurará por defecto en modo no autoritario.
+- **Si ha introducido un dominio no gestionado por OVHcloud**, este se configurará por defecto en modo no autoritario.
 
-- **Si ha seleccionado en la lista un dominio gestionado por OVH**, deberá elegir uno de los dos modos que se describen a continuación.
+- **Si ha seleccionado en la lista un dominio gestionado por OVHcloud**, deberá elegir uno de los dos modos que se describen a continuación.
 
 |Modo|Descripción|
 |---|---|
@@ -74,9 +74,9 @@ Haga clic en el botón `Siguiente`{.action} para continuar.
 
 ![Elegir el modo del dominio](images/add_domain_exchange_step3.png){.thumbnail}
 
-**Si ha seleccionado en la lista un dominio gestionado por OVH**, podrá configurarlo automáticamente. Para ello, marque las casillas y haga clic en el botón `Siguiente`{.action} para continuar.
+**Si ha seleccionado en la lista un dominio gestionado por OVHcloud**, podrá configurarlo automáticamente. Para ello, marque las casillas y haga clic en el botón `Siguiente`{.action} para continuar.
 
-**Si ha introducido un dominio no gestionado por OVH**, deberá realizar la configuración en la siguiente etapa.
+**Si ha introducido un dominio no gestionado por OVHcloud**, deberá realizar la configuración en la siguiente etapa.
 
 ![Configuración automática del dominio](images/add_domain_exchange_step4.png){.thumbnail}
 
@@ -86,9 +86,9 @@ Una vez realizada la configuración, compruebe que la información mostrada es c
 
 Una vez asociado el dominio, asegúrese de que su configuración es correcta comprobando la información indicada en la tabla. La etiqueta verde indica que la configuración del dominio es correcta. Si debe modificarla, se mostrará una etiqueta roja.
 
-- **Si ha elegido la configuración automática al añadir el dominio**, puede tardar unos minutos en mostrarse en el área de cliente de OVH.
+- **Si ha elegido la configuración automática al añadir el dominio**, puede tardar unos minutos en mostrarse en el área de cliente de OVHcloud.
 
-- **Si ha introducido un dominio no gestionado por OVH**, haga clic en la etiqueta roja para consultar los cambios que debe realizar. Si el dominio no utiliza la configuración de OVH (es decir, si no utiliza los servidores DNS de OVH), deberá realizar los cambios necesarios desde el panel que le ofrezca su proveedor para gestionar sus servidores DNS. Si necesita añadir un registro CNAME, puede consultar la guía [Crear un registro CNAME para asociar un dominio](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_20132016_anadir_un_registro_cname/){.external}.
+- **Si ha introducido un dominio no gestionado por OVHcloud**, haga clic en la etiqueta roja para consultar los cambios que debe realizar. Si el dominio no utiliza la configuración de OVHcloud (es decir, si no utiliza los servidores DNS de OVHcloud), deberá realizar los cambios necesarios desde el panel que le ofrezca su proveedor para gestionar sus servidores DNS. 
 
 > [!primary]
 >
@@ -105,12 +105,8 @@ Una vez que haya añadido los dominios, ya puede configurar sus cuentas Exchange
 
 Recuerde que todas las direcciones creadas en el servicio Exchange podrán ver en el directorio el resto de direcciones asociadas al servicio, incluidas aquellas que posean un dominio diferente.
 
-Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVH pone a su disposición el webmail **Outlook Web Application** (OWA), al que podrá acceder en la dirección <https://www.ovh.es/mail/>. Para un uso óptimo de su cuenta Exchange en un cliente de correo de escritorio, asegúrese de que este sea compatible con el servicio. Si desea configurar su cuenta en un cliente de correo o un dispositivo externo (smartphone o tablet), o necesita ayuda sobre las funcionalidades de Exchange, consulte las guías de OVH sobre las [soluciones colaborativas Microsoft](https://docs.ovh.com/es/microsoft-collaborative-solutions/){.external}.
-
-OVH ofrece licencias de Outlook que podrá contratar en el [área de cliente de OVH](https://ovh.com/auth?action=gotomanager){.external}, así como licencias de Office 365, disponibles en la página de [Office 365 de OVH](https://www.ovh.es/office-365/){.external}. Si desea disfrutar del cliente de correo Outlook o de otros programas de la suite Office, le recomendamos una de estas soluciones.
+Una vez que haya configurado las cuentas, ¡ya puede utilizarlas! Para ello, OVHcloud pone a su disposición el webmail **Outlook Web Application** (OWA), al que podrá acceder en la dirección <https://www.ovh.com/world/es/mail/>. Para un uso óptimo de su cuenta Exchange en un cliente de correo de escritorio, asegúrese de que este sea compatible con el servicio. Si desea configurar su cuenta en un cliente de correo o un dispositivo externo (smartphone o tablet), o necesita ayuda sobre las funcionalidades de Exchange, consulte las guías de OVHcloud.
 
 ## Más información
-
-[Crear un registro CNAME al añadir un dominio asociado](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_20132016_anadir_un_registro_cname/){.external}
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

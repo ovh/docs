@@ -223,7 +223,7 @@ You will find your profile selection window with your new profile selected. When
 
 When you have done the necessary steps by following the import instructions, make sure that your items are present on the server.
 
-Log in to [webmail](https://www.ovh.co.uk/mail/).
+Log in to [webmail](https://www.ovh.ie/mail).
 
 In your inbox and the left-hand column, you will find the folders and emails for your saved email address.
 

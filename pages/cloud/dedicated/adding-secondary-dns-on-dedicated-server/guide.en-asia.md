@@ -5,7 +5,7 @@ excerpt: 'Find out how to add a secondary DNS server for your domain'
 section: 'Advanced use'
 ---
 
-**Last updated 10th December 2020**
+**Last updated 8th January 2021**
 
 ## Objective
 
@@ -63,9 +63,11 @@ Added domains will be listed in this tab and can be deleted by clicking on the `
 
 ### Verifying authorisation for the domain <a name="verifyingdomain"></a>
 
-It is necessary to confirm your authorisation to manage the concerned domain before it can be added to OVHcloud Secondary DNS. This is achieved via a DNS lookup on a "ownercheck" subdomain for which a unique TXT value is generated. If the domain is managed by an external registrar or uses external DNS servers at this point, go to the control panel of your provider and add the TXT record for the "ownercheck" subdomain with the value provided in the OVHcloud Control Panel.
+It is necessary to confirm your authorisation to manage the concerned domain before it can be added to OVHcloud Secondary DNS. This is achieved via an automated DNS lookup on the subdomain *ownercheck.yourdomainname*. A unique string of characters is generated for this purpose and displayed in the OVHcloud Control Panel.
 
-If the domain is managed by OVHcloud as its registrar and it uses OVHcloud DNS servers, close the window by clicking on `Cancel`{.action} first. Then you can follow the instructions in [this guide](../../domains/web_hosting_how_to_edit_my_dns_zone/) to add the TXT record in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager).
+- If the domain is managed by an external registrar or uses external DNS servers at this point, log in to the control panel of your DNS provider and add a TXT record with the subdomain "ownercheck" and the value provided in step 2 of the ["Add a domain" dialogue box](#addingdomain).
+
+- If the domain is managed by OVHcloud as its registrar and it uses OVHcloud DNS servers, close the window by clicking on `Cancel`{.action} first. Then you can follow the instructions in [this guide](../../domains/web_hosting_how_to_edit_my_dns_zone/) to add the TXT record in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
 
 ![Secondary DNS](images/cp-04.png){.thumbnail}
 
