@@ -5,7 +5,7 @@ excerpt: Find out how to use the OVHcloud rescue mode for troubleshooting
 section: Diagnostics and rescue mode
 ---
 
-**Last updated 24th November 2020**
+**Last updated 8th January 2021**
 
 ## Objective
 
@@ -51,7 +51,7 @@ On the `Home`{.action} tab, click on `...`{.action} next to "Boot" in the **Your
 
 ![rescue mode control panel](images/rescue_new.png){.thumbnail}
 
-Select `Reboot in rescue mode`{.action} from the menu.
+Select `Reboot in rescue mode`{.action} from the menu and click `Confirm`{.action} in the popup window.
 
 #### With older VPS ranges
 
@@ -59,7 +59,7 @@ On the `Home`{.action} tab, click on the shortcut link labelled `Reboot in rescu
 
 ![rescue mode control panel](images/rescue_legacy.png){.thumbnail}
 
-Click on the checkbox **Reboot in rescue mode** and then on `Confirm`{.action}.
+In the popup window, click on `Confirm`{.action}.
 
 ### Using rescue mode
 

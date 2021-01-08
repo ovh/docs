@@ -21,7 +21,7 @@ You can [migrate an email address automatically](../../microsoft-collaborative-s
 
 ## Requirements
 
-- an email service with OVHcloud, such as an [Exchange](https://www.ovh.co.uk/emails/){.external}, [Email Pro](https://www.ovh.co.uk/emails/email-pro/){.external} or MX Plan solution (via the MX Plan or included in an [OVHcloud web hosting solution](https://www.ovh.co.uk/web-hosting/){.external})
+- an email service with OVHcloud, such as an [Exchange](https://www.ovh.com/world/emails/hosted-exchange/){.external} or [Web Hosting](https://www.ovh.com/world/web-hosting/){.external} solution
 - access to the email accounts you want to migrate (the source accounts)
 - access to the OVHcloud email accounts that will be receiving the migrated data (the target accounts)
 
@@ -40,9 +40,9 @@ The following instructions are divided into two parts:
 
 ### Outlook
 
-If you have an [OVHcloud Exchange email account](https://www.ovh.co.uk/emails/hosted-exchange/), you can export it directly in PST format via the OVHcloud Control Panel.
+If you have an [OVHcloud Exchange email account](https://www.ovh.com/world/emails/hosted-exchange/), you can export it directly in PST format via the OVHcloud Control Panel.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then go to the `Web Cloud`{.action} section. Select `Microsoft`{.action} in the left-hand column, then `Exchange`{.action}. Click the name of the concerned Hosted Exchange service.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, then go to the `Web Cloud`{.action} section. Select `Microsoft`{.action} in the left-hand column, then `Exchange`{.action}. Click the name of the concerned Hosted Exchange service.
 
 In the `Email accounts`{.action} tab, click the `...`{.action} button to the right of the email account you want to export, then `Export in PST`{.action} format.
 
@@ -223,7 +223,7 @@ You will find your profile selection window with your new profile selected. When
 
 When you have done the necessary steps by following the import instructions, make sure that your items are present on the server.
 
-Log in to [webmail](https://www.ovh.co.uk/mail/).
+Log in to [webmail](https://www.ovh.com/world/mail/).
 
 In your inbox and the left-hand column, you will find the folders and emails for your saved email address.
 
