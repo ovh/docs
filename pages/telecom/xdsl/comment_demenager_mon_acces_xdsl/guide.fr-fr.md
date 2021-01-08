@@ -119,7 +119,7 @@ Cette étape n'apparait que si la création d'une nouvelle ligne est demandée �
 >
 
 Renseignez le nom de la personne qui sera présente sur site pour accueillir le technicien dans le cadre prévu à cet effet.
-<br>Choisissez sur la planning la date et l'heure du rendez-vous en cochant la case correspondante.
+<br>Choisissez sur le planning la date et l'heure du rendez-vous en cochant la case correspondante.
 
 Cliquez ensuite sur le bouton `Confirmer la sélection`{.action} pour valider cette étape.
 
