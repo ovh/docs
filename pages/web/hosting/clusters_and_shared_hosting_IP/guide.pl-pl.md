@@ -17,7 +17,7 @@ W tym przewodniku znajdziesz wszystkie adresy IP hostingów WWW OVHcloud. Dzięk
 > [!primary]
 >
 > Adresy IP opcji CDN są typu „Anycast”.
-> Oznacza to, że nie potrzebują geolokalizacji (więcej informacji znajdziesz tutaj ).
+> Oznacza to, że nie potrzebują geolokalizacji ([więcej informacji znajdziesz tutaj](https://www.ovh.pl/hosting/cdn.xml)).
 > 
 
 ## Wymagania początkowe
