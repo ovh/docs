@@ -17,9 +17,9 @@ Déménager un accès xDSL/FTTH vous permet de recréer votre accès internet à
 
 ## Prérequis
 
--   Disposer d'un abonnement xDSL(ADSL/VDSL)ou FTTH actif
--   Disposer d'une offre xDSL récente (offres Connect, Express, Entreprise et Serenity)
--   La nouvelle adresse doit-être différente de l'ancienne
+-   Disposer d'un abonnement xDSL(ADSL/VDSL)ou FTTH actif.
+-   Disposer d'une offre xDSL récente (offres Connect, Express, Entreprise et Serenity).
+-   La nouvelle adresse doit-être différente de l'ancienne.
 
 > [!primary]
 >
@@ -87,7 +87,7 @@ Pour cela, il vous suffit de cliquer sur le bouton `Choisir cette offre`{.action
 
 #### Choix du type de dégroupage
 
-Si vous avez renseigné un numéro de ligne actif au début de votre demande, il vous sera demande de choisir entre 2 types de dégroupage à votre nouvelle adresse.
+Si vous avez renseigné un numéro de ligne active au début de votre demande, il vous sera demandé de choisir entre 2 types de dégroupage à votre nouvelle adresse.
 Vous devrez choisir entre « Dégroupage total » et « Dégroupage partiel ».
 
 Le dégroupage partiel signifie que vous souhaitez conserver la ligne analogique à cette adresse.
