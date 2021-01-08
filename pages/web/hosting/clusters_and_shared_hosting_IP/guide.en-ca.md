@@ -55,6 +55,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 213.186.33.69
 ```
 
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.2
+```
+
 If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
 
 ```bash
@@ -92,6 +98,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 
 ```bash
 213.186.33.85
+```
+
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.3
 ```
 
 If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
@@ -133,6 +145,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 213.186.33.95
 ```
 
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.5
+```
+
 If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
 
 ```bash
@@ -172,6 +190,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 213.186.33.97
 ```
 
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.6
+```
+
 If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
 
 ```bash
@@ -208,6 +232,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 
 ```bash
 213.186.33.105
+```
+
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.7
 ```
 
 If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
@@ -249,6 +279,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 213.186.33.107
 ```
 
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.10
+```
+
 If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
 
 ```bash
@@ -286,6 +322,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 
 ```bash
 213.186.33.151
+```
+
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.11
 ```
 
 If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
@@ -327,6 +369,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 213.186.33.153
 ```
 
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.12
+```
+
 If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
 
 ```bash
@@ -363,6 +411,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 
 ```bash
 213.186.33.83
+```
+
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.13
 ```
 
 If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
@@ -404,6 +458,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 213.186.33.169
 ```
 
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.14
+```
+
 If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
 
 ```bash
@@ -443,6 +503,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 213.186.33.171
 ```
 
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.15
+```
+
 If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
 
 ```bash
@@ -480,6 +546,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 
 ```bash
 213.186.33.173
+```
+
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.17
 ```
 
 If you have enabled a **Sectigo SSL certificate (paid option)** on your Web Hosting, use this IP address:
@@ -522,6 +594,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 213.186.33.176
 ```
 
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.20
+```
+
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
 
 ```bash
@@ -557,6 +635,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 213.186.33.177
 ```
 
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.21
+```
+
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
 
 ```bash
@@ -587,6 +671,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 
 ```bash
 213.186.33.186
+```
+
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.23
 ```
 
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
@@ -621,6 +711,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 213.186.33.187
 ```
 
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.24
+```
+
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
 
 ```bash
@@ -651,6 +747,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 
 ```bash
 145.239.37.172
+```
+
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.25
 ```
 
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
@@ -685,6 +787,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 188.165.51.93
 ```
 
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.26
+```
+
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
 
 ```bash
@@ -715,6 +823,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 
 ```bash
 145.239.51.129
+```
+
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.27
 ```
 
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
@@ -749,6 +863,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 51.255.119.116
 ```
 
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.28
+```
+
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
 
 ```bash
@@ -779,6 +899,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 
 ```bash
  51.255.215.242 
+```
+
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.29
 ```
 
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
@@ -813,6 +939,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 54.36.13.47
 ```
 
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.30
+```
+
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
 
 ```bash
@@ -831,6 +963,12 @@ If you have activated the **CDN** option on your Web Hosting, use this IP addres
 
 ```bash
 178.32.120.166
+```
+
+If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+
+```bash
+46.105.204.51
 ```
 
 If you need the **outgoing IP address** of the Web Hosting cluster (gateway), use this IP address:
