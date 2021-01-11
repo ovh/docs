@@ -83,6 +83,8 @@ Lors de votre demande de déménagement, vous avez la possibilité de conserver 
 
 Pour cela, il vous suffit de cliquer sur le bouton `Choisir cette offre`{.action} correspondant à l'offre souhaitée en bas du tableau.
 
+Si vous souhaitez conserver votre offre et vos options actuelles (lignes VoIP supplémentaires, comptes Exchange, nom de domaine, etc...), prenez soin de vérifier qu'elles sont intégralement reprises à cette étape. 
+
 ![Choix de l'offre](images/move07-edit.png){.thumbnail}
 
 #### Choix du type de dégroupage
