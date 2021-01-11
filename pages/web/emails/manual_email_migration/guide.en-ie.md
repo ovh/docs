@@ -10,7 +10,7 @@ order: 1
 
 ## Objective
 
-You can [migrate an email address automatically](../../microsoft-collaborative-solutions/exchange-account-migration-with-ovh-mail-migrator/){.external} via our [OVH Mail Migrator](https://omm.ovh.net/){.external} tool. You can also manually migrate your email address using an email client.
+You can [migrate an email address automatically](../../microsoft-collaborative-solutions/exchange_email_account_migration_-_ovh_mail_migrator/){.external} via our [OVH Mail Migrator](https://omm.ovh.net/){.external} tool. You can also manually migrate your email address using an email client.
 
 **Find out how to migrate your email address manually.**
 
@@ -21,14 +21,14 @@ You can [migrate an email address automatically](../../microsoft-collaborative-s
 
 ## Requirements
 
-- an email service with OVHcloud, such as an [Exchange](https://www.ovh.co.uk/emails/){.external}, [Email Pro](https://www.ovh.co.uk/emails/email-pro/){.external} or MX Plan solution (via the MX Plan or included in an [OVHcloud web hosting solution](https://www.ovh.co.uk/web-hosting/){.external})
+- an email service with OVHcloud, such as an [Exchange](https://www.ovh.ie/emails/){.external}, [Email Pro](https://www.ovh.ie/emails/email-pro/){.external} or MX Plan solution (via the MX Plan or included in an [OVHcloud web hosting solution](https://www.ovh.ie/web-hosting/){.external})
 - access to the email accounts you want to migrate (the source accounts)
 - access to the OVHcloud email accounts that will be receiving the migrated data (the target accounts)
 
 ## Instructions
 
 > [!primary]
-> First of all, check if automatic migration is possible using our [OVH Mail Migrator](https://omm.ovh.net/){.external}. To do this, please use our guide on [Migrating email accounts with OVH Mail Migrator](../../microsoft-collaborative-solutions/exchange-account-migration-with-ovh-mail-migrator/){.external}.
+> First of all, check if automatic migration is possible using our [OVH Mail Migrator](https://omm.ovh.net/){.external}. To do this, please use our guide on [Migrating email accounts with OVH Mail Migrator](../../microsoft-collaborative-solutions/exchange_email_account_migration_-_ovh_mail_migrator/){.external}.
 
 In this guide, we have carried out operations on the most commonly used email software, i.e. **Outlook**, **Mail** on Mac OS and **Thunderbird**.
 
@@ -40,7 +40,7 @@ The following instructions are divided into two parts:
 
 ### Outlook
 
-If you have an [OVHcloud Exchange email account](https://www.ovh.co.uk/emails/hosted-exchange/), you can export it directly in PST format via the OVHcloud Control Panel.
+If you have an [OVHcloud Exchange email account](https://www.ovh.ie/emails/hosted-exchange/), you can export it directly in PST format via the OVHcloud Control Panel.
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then go to the `Web Cloud`{.action} section. Select `Microsoft`{.action} in the left-hand column, then `Exchange`{.action}. Click the name of the concerned Hosted Exchange service.
 
@@ -232,6 +232,6 @@ In your inbox and the left-hand column, you will find the folders and emails for
 
 ## Go further
 
-[Migrating email accounts using OVH Mail Migrator](../../microsoft-collaborative-solutions/exchange-account-migration-with-ovh-mail-migrator/)
+[Migrating email accounts using OVH Mail Migrator](../../microsoft-collaborative-solutions/exchange_email_account_migration_-_ovh_mail_migrator/)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -107,4 +107,4 @@ Wenn die in den Headern genannten Nachrichten nicht von den rechtmäßigen Benut
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en>.
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

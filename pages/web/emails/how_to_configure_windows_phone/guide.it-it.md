@@ -67,7 +67,7 @@ Tipo di account: POP3 (puoi anche effettuare la configurazione in IMAP, utilizza
 
 Nome utente: il tuo indirizzo email completo
 
-Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/managerv3/) per il tuo account OVH
+Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager) per il tuo account OVH
 
 Server della posta in uscita (SMTP): SSL0.OVH.NET
 

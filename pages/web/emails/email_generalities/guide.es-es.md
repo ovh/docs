@@ -16,12 +16,12 @@ La solución MX Plan permite disfrutar de direcciones de correo electrónico par
 
 ## Requisitos
 
-- Tener una solución MX Plan  (incluida en un [plan de hosting de OVH]({ovh_www}/hosting/){.external}, en un [alojamiento gratuito Start 10M]({ovh_www}/dominios/oferta_hosting_start10m.xml){.external} o contratada por separado).
+- Tener una solución MX Plan  (incluida en un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}, en un [alojamiento gratuito Start 10M](https://www.ovh.es/dominios/oferta_hosting_start10m.xml){.external} o contratada por separado).
 - Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action}.
 
 ## Procedimiento
 
-Una vez que el MX Plan haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente]({ovh_www}/mxplan-migration/){.external}, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
+Una vez que el MX Plan haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente](https://www.ovh.co.uk/mxplan-migration/){.external}, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
 
 Para ello, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio correspondiente. Siga leyendo esta guía en función de su versión:
 

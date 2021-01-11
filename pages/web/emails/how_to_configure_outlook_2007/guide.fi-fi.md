@@ -95,7 +95,7 @@ Tässä ovat sähköpostilaatikon POP-tilin asetukset.
 POP-tilin konfigurointi SSL-suojaus aktivoituna tai deaktivoituna: 
 
 Sähköpostiosoite: sähköpostiosoite kokonaisuudessaan.
-Salasana: salasana, joka on määritelty [hallintapaneelissa](https://www.ovh.com/managerv3/).
+Salasana: salasana, joka on määritelty [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager).
 Käyttäjätunnus:jaettu sähköpostiosoite kokonaisuudessaan.
 Saapuvan postin palvelin: saapuvien sähköpostiviestien palvelin: SSL0.OVH.NET
 Saapuvan postin palvelimen portti: saapuvien sähköpostiviestien palvelimen portti: 995 tai 110
@@ -122,7 +122,7 @@ Tässä ovat sähköpostilaatikon IMAP-tilin asetukset.
 IMAP-tilin konfigurointi SSL-suojaus aktivoituna tai deaktivoituna: 
 
 Sähköpostiosoite: sähköpostiosoite kokonaisuudessaan.
-Salasana: salasana, joka on määritelty [hallintapaneelissa](https://www.ovh.com/managerv3/).
+Salasana: salasana, joka on määritelty [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager).
 Käyttäjätunnus: sähköpostiosoite kokonaisuudessaan.
 Saapuvan postin palvelin: saapuvien sähköpostiviestien palvelin: SSL0.OVH.NET
 Saapuvan postin palvelimen portti: saapuvien sähköpostiviestien palvelimen portti: 993 tai 143

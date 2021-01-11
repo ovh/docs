@@ -35,7 +35,7 @@ Wpisz pełny adres e-mail.
 Następnie kliknij na "Dalej".
 
 ![](images/img_1750.jpg){.thumbnail}
-Wpisz hasło zdefiniowane dla konta e-mail w panelu [Manager](https://www.ovh.pl/managerv3/).
+Wpisz hasło zdefiniowane dla konta e-mail w panelu [Manager](https://www.ovh.com/auth/?action=gotomanager).
 
 Kliknij na "Dalej", aby zatwierdzić hasło.
 
@@ -113,7 +113,7 @@ Poniżej znajdują się informacje dotyczące konfiguracji konta e-mail POP
 Konfiguracja POP z włączonym lub wyłączonym szyfrowaniem SSL:
 
 Adres e-mail: pełny adres e-mail
-Hasło: hasło zdefiniowane w panelu [ Manager](https://www.ovh.pl/managerv3/).
+Hasło: hasło zdefiniowane w panelu [ Manager](https://www.ovh.com/auth/?action=gotomanager).
 Nazwa użytkownika: pełny adres e-mail
 Serwer poczty przychodzącej:SSL0.OVH.NET
 Port serwera poczty przychodzącej:995 lub 110
@@ -140,7 +140,7 @@ Poniżej znajdują się informacje dotyczące konfiguracji konta e-mail IMAP
 Konfiguracja IMAP z włączonym lub wyłączonym szyfrowaniem SSL:
 
 Adres e-mail: pełny adres e-mail
-Hasło: hasło zdefiniowane w panelu [ Manager](https://www.ovh.pl/managerv3/).
+Hasło: hasło zdefiniowane w panelu [ Manager](https://www.ovh.com/auth/?action=gotomanager).
 Nazwa użytkownika: pełny adres e-mail
 Serwer poczty przychodzącej:SSL0.OVH.NET
 Port serwera poczty przychodzącej:993 lub 143
