@@ -71,7 +71,7 @@ Typ účtu: POP3(také jej lze konfigurovat jako IMAP - přeskočte na konec té
 
 Název uživatele: celá e-mailová adresa
 
-Heslo: heslo mailového účtu webhostingu OVH získané přes[Manager](https://www.ovh.com/managerv3/)
+Heslo: heslo mailového účtu webhostingu OVH získané přes[Manager](https://www.ovh.com/auth/?action=gotomanager)
 
 Server odchozí pošty (SMTP): SSL0.OVH.NET
 
@@ -106,7 +106,7 @@ Tyto informace použijete pro konfiguraci e-mailových účtů POP.
 Konfigurace POP se zabezpečením SSL aktivní nebo neaktivní:
 
 E-mailová adresa: Celá e-mailová adresa.
-Heslo: Heslo, které jste si zvolili v [zákaznickém prostoru](https://www.ovh.com/managerv3/).
+Heslo: Heslo, které jste si zvolili v [zákaznickém prostoru](https://www.ovh.com/auth/?action=gotomanager).
 Uživatel: Celá e-mailová adresa.
 Příchozí server: Server příchozí pošty: SSL0.OVH.NET
 Port serveru příchozí pošty: Port serveru příchozí pošty: 995 nebo 110
@@ -133,7 +133,7 @@ Tyto informace použijete pro konfiguraci e-mailových účtů IMAP.
 Konfigurace IMAP se zabezpečením SSL aktivní nebo neaktivní:
 
 E-mailová adresa: Celá e-mailová adresa.
-Heslo: Heslo, které jste si zvolili v [zákaznickém prostoru](https://www.ovh.com/managerv3/).
+Heslo: Heslo, které jste si zvolili v [zákaznickém prostoru](https://www.ovh.com/auth/?action=gotomanager).
 Uživatel: Celá e-mailová adresa.
 Příchozí server: Server příchozí pošty: SSL0.OVH.NET
 Port serveru příchozí pošty: Port serveru příchozí pošty: 993 nebo 143

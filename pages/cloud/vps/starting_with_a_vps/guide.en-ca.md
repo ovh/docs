@@ -10,7 +10,7 @@ order: 1
 
 ## Objective
 
-A virtual private server (VPS) is a virtualised dedicated server. Unlike Web Hosting plans (also refered to as "shared hosting"), which are managed on the technical level by OVHcloud, you are fully responsible for administrating your VPS.
+A virtual private server (VPS) is a virtualised dedicated server. Unlike Web Hosting plans (also referred to as "shared hosting"), which are managed on the technical level by OVHcloud, you are fully responsible for administrating your VPS.
 
 **This guide provides some basic information for getting started with a VPS.**
 

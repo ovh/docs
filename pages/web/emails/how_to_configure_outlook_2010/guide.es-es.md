@@ -145,7 +145,7 @@ A continuación recordamos los valores de configuración de una cuenta de correo
 Configuración POP con la protección SSL activada o desactivada:
 
 Dirección de correo electrónico: La dirección de correo electrónico completa.
-Contraseña: La contraseña introducida en el [área de cliente](https://www.ovh.es/managerv3/) para la cuenta de correo.
+Contraseña: La contraseña introducida en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager) para la cuenta de correo.
 Nombre de usuario: La dirección de correo electrónico completa.
 Servidor de correo entrante: SSL0.OVH.NET
 Puerto del servidor de correo entrante: 995 o 110
@@ -170,7 +170,7 @@ Los valores para la configuración de una cuenta de correo IMAP son los siguient
 Configuración IMAP con la protección SSL activada o desactivada:
 
 Dirección de correo electrónico: La dirección de correo electrónico completa.
-Contraseña: La contraseña introducida en el [área de cliente](https://www.ovh.es/managerv3/) para la cuenta de correo.
+Contraseña: La contraseña introducida en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager) para la cuenta de correo.
 Nombre de usuario: La dirección de correo electrónico completa.
 Servidor de correo entrante: SSL0.OVH.NET
 Puerto del servidor de correo entrante: 993 o 143

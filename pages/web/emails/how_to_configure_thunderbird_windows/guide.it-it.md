@@ -29,7 +29,7 @@ Compila questi campi
 
 "Indirizzo email": il tuo indirizzo email completo
 
-"Password": password definita nel tuo [Spazio Cliente OVH](https://www.ovh.com/managerv3/l) per l'account condiviso
+"Password": password definita nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanagerl) per l'account condiviso
 
 "Ricorda la password": seleziona questa opzione
 
@@ -121,7 +121,7 @@ Queste sono le informazioni per configurare un account email POP.
 Configurazione POP con sicurezza SSL attivata o disattivata:
 
 Indirizzo email: il tuo indirizzo di mail condivisa completo
-Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/managerv3/)
+Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager)
 Nome utente: il tuo indirizzo di mail condivisa completo
 Server di posta in entrata, il server che riceve i messaggi: ssl0.ovh.net
 Porta del server in entrata, la porta del server in entrata: 995 o 110
@@ -150,7 +150,7 @@ Configurazione IMAP con sicurezza SSL attivata o disattivata:
 
 Indirizzo email: il tuo indirizzo di mail condivisa completo
 
-Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/managerv3/)
+Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager)
 
 Nome utente: il tuo indirizzo di mail condivisa completo
 Server di posta in entrata, il server che riceve i messaggi: ssl0.ovh.net
