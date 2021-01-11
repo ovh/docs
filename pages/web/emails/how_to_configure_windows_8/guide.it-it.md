@@ -60,7 +60,7 @@ In questa interfaccia, compila i campi
 "Indirizzo di posta": indirizzo email condivisa  completo
 "Nome utente": indirizzo email condivisa  completo
 
-"Password": password indicata nel [Manager](https://www.ovh.com/managerv3/l) per questo account. 
+"Password": password indicata nel [Manager](https://www.ovh.com/auth/?action=gotomanagerl) per questo account. 
 
 "Server di posta in entrata (IMAP)":
 l'indirizzo del server è SSL0.OVH.NET.

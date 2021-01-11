@@ -6,7 +6,7 @@ section: 'Erste Schritte'
 order: 1
 ---
 
-**Letzte Aktualisierung am 21.12.2020**
+**Letzte Aktualisierung am 11.01.2021**
  
 ## Ziel
 
@@ -37,9 +37,9 @@ Dieses Dashboard enthält wichtige Informationen zu Ihrem Dienst und erlaubt Ihn
 - Wenn Sie gerade erst einen VPS bestellt haben, sieht seine Referenz wie folgt aus: *vps-XXXXXXX.vps.ovh.net* (*X* sind eine Folge aus Ziffern und Buchstaben). 
 - Wenn Sie einen älteren VPS verwalten, ist dessen Referenz anders strukturiert: *vpsXXXX.ovh.net* (hier sind *X* stets Zahlen). 
 
-Zu einem VPS Service der aktuellen Reihe lesen Sie den nachfolgenden Abschnitt, **Erste Schritte (aktuelle VPS Reihe)**. 
+Zu einem VPS Service der aktuellen Reihe lesen Sie den nachfolgenden Abschnitt: **Erste Schritte (aktuelle VPS Reihe)**. 
 
-Für Informationen zur Verwendung älterer VPS Modelle, klicken Sie auf folgenden Link: [Erste Schritte (alte VPS Reihe)](./#erste-schritte-alte-vps-reihe_1).
+Für Informationen zur Verwendung älterer VPS Modelle, fahren Sie weiter unten fort unter [Erste Schritte (alte VPS Reihe)](./#erste-schritte-alte-vps-reihe_1).
 
 ### Erste Schritte (aktuelle VPS Reihe)
 
@@ -81,7 +81,7 @@ passwd: password updated successfully
 
 #### Aktivierung der Root-Verbindungen
 
-Aus Sicherheitsgründen ist die Verbindung mit dem Root-Benutzer standardmäßig deaktiviert. Wenn Sie diese Verbindungen erlauben möchten, lesen Sie bitte die Anleitung [dieser Anleitung](../root-password/#root-passwort-aktivieren_1).
+Aus Sicherheitsgründen ist die Verbindung mit dem Root-Benutzer standardmäßig deaktiviert. Wenn Sie diese Verbindungen erlauben möchten, folgen Sie den Instruktionen in [dieser Anleitung](../root-password/#rooterlauben).
 
 #### VPS installieren oder neu installieren (aktuelle Reihe)
 
@@ -140,7 +140,7 @@ Es wird ein Fenster geöffnet, in dem Sie Folgendes auswählen:
 
 - Ihr Betriebssystem aus dem Drop-down-Menü
 - die Nutzersprache
-- einen SSH-Schlüssel, falls Sie in Ihrem Kundencenter bereits einen Schlüssel erstellt haben
+- einen SSH-Schlüssel, falls Sie in Ihrem Kundencenter bereits einen Schlüssel erstellt haben.
 
 
 ![Auswahlmenü für die Neuinstallation](images/reinstall_menu.png){.thumbnail}
@@ -173,4 +173,4 @@ Sie können aber auch die automatische Lösung von OVHcloud nutzen: [SSL Gateway
 
 [SSH Einführung](../../dedicated/ssh-einfuehrung/)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

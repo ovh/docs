@@ -45,7 +45,7 @@ Renseignez les champs affichés :
 
 "Adresse électronique" : votre adresse e-mail entière.
 
-"Mot de passe" : le mot de passe défini dans votre [espace client](https://www.ovh.com/managerv3/l){.external} pour le compte e-mail mutualisé.
+"Mot de passe" : le mot de passe défini dans votre [espace client](https://www.ovh.com/auth/?action=gotomanagerl){.external} pour le compte e-mail mutualisé.
 
 "Retenir le mot de passe" : vous devez cocher cette option.
 
@@ -160,7 +160,7 @@ Configuration  **POP**  avec sécurisation SSL activée ou désactivée :
 
 Adresse Email : Votre adresse e-mail mutualisée entière.
 
-Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/managerv3/){.external}.
+Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 Nom d'utilisateur : Votre adresse e-mail mutualisée entière.
 
@@ -193,7 +193,7 @@ Configuration  **IMAP**  avec sécurisation SSL activée ou désactivée :
 
 Adresse Email : Votre adresse e-mail mutualisée entière.
 
-Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/managerv3/){.external}.
+Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 Nom d'utilisateur : Votre adresse e-mail mutualisée entière.
 
