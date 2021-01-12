@@ -4,6 +4,7 @@ excerpt: How to configure a domain on a secondary DNS server
 slug: how_to_configure_a_secondary_dns
 section: DNS and DNS zone
 order: 9
+hidden: true
 ---
 
 **Last updated 5th May 2020**

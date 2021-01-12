@@ -6,7 +6,7 @@ section: 'Server management'
 order: 2
 ---
 
-**Last updated 30th July 2020**
+**Last updated 12th January 2021**
 
 ## Objectivev
 
@@ -29,7 +29,7 @@ The following steps describe the process of changing the local admin password by
 The system has to be started in rescue mode before the admin password can be changed. Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `Dedicated Servers`{.action}.
 
 The netboot needs to be switched to "rescue64-pro (Customer rescue system (Linux))". Look for "Boot" in the **General informations** box and click on `...`{.action}, then on `Modify`{.action}.<br>
-In the popup window, tick **Boot in rescue mode** and select "rescue64-pro" from the menu. Specify an email address below if the login credentials should *not* be sent to your customer account's primary address.
+In the popup window, tick **Boot in rescue mode** and select "rescue64-pro" from the menu. Specify an alternative email address below if you do *not* want the login credentials sent to your customer account's primary address.
 <br>Click on `Next`{.action} and `Confirm`{.action}.
 
 ![rescuemode](images/adminpw_win_01.png){.thumbnail}

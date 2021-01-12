@@ -4,6 +4,7 @@ excerpt: Cómo configurar un dominio en el servidor DNS secundario
 slug: configurar_el_dns_secundario
 legacy_guide_number: g1477
 section: DNS (servidor y zona)
+hidden: true
 ---
 
 
