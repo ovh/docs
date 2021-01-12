@@ -4,10 +4,9 @@ slug: contact-center-solution
 excerpt: 'Découvrez comment configurer un Contact Center Solution sur votre numéro alias'
 section: 'Numéros ou alias'
 order: 7
-hidden: true
 ---
 
-**Dernière mise à jour le 10/08/2020**
+**Dernière mise à jour le 12/01/2021**
 
 ## Objectif
 

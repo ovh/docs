@@ -4,6 +4,7 @@ excerpt: 'Jak skonfigurować domenę na serwerze DNS secondary?'
 slug: konfiguracja_dns_secondary
 legacy_guide_number: g1477
 section: Bezpieczeństwo
+hidden: true
 ---
 
 ## Wprowadzenie
