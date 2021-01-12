@@ -6,7 +6,7 @@ section: FAQ
 order: 1
 ---
 
-**Dernière mise à jour le 20/11/2020** 
+**Dernière mise à jour le 12/01/2021** 
 
 ## Objectif
 
@@ -64,6 +64,22 @@ Pour supprimer la redirection d'un numéro alias vers votre ligne téléphonique
 #### Trucs et astuces
 
 Vous pouvez également modifier la configuration du numéro en cliquant sur `Changer de configuration`{.action}. Vous pouvez retrouver de plus amples informations en suivant le guide [Choisir et appliquer une configuration pour un numéro](../quelle-configuration-est-adaptee-a-mes-besoins/).
+
+### Comment enregistrer mes appels ?
+
+La fonctionnalité d'enregistrement des appels nécessite de réaliser au préalable une configuration sur le numéro de téléphone concerné. Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Sélectionnez l'onglet `Télécom` puis `Téléphonie`. Choisissez alors le groupe de facturation puis le numéro concerné. Cliquez sur `Configuration du numéro`{.action}. Votre numéro doit être configuré en « Contact Center Solution ». 
+
+#### Trucs et astuces
+
+Si vous souhaitez des informations complémentaires, nous vous invitons à consulter le guide suivant : [Configurer un Contact Center Solution](../contact-center-solution/).
+
+### Pourquoi l'enregistrement de mes appels dysfonctionne ?
+
+Ce dysfonctionnement peut provenir d'une mauvaise configuration. Pour le vérifier, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Sélectionnez l'onglet `Télécom` puis `Téléphonie`. Choisissez alors le numéro configuré en « Contact Center Solution ». Au sein de cette configuration, cliquez sur le menu « Consulter les enregistrements ». Vérifiez que la case « Enregistrement des appels » est bien cochée. Retrouvez plus de détails dans le guide [Configurer un Contact Center Solution](../contact-center-solution/#consulter-les-enregistrements).
+
+#### Trucs et astuces
+
+Si vous rencontrez une erreur lors de la consultation d'un enregistrement, n'hésitez pas à essayer de consulter celui-ci depuis un autre navigateur internet.
 
 ### Que faire si mon téléphone ne sonne plus ?
 
