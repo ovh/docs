@@ -3,6 +3,7 @@ title: Konfiguration des sekundären DNS Servers
 excerpt: Konfiguration einer Domain auf dem sekundären DNS Server
 slug: konfiguration_des_sekundaren_dns_servers
 legacy_guide_number: g1477
+hidden: true
 ---
 
 

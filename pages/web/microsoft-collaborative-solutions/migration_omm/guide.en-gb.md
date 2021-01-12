@@ -9,15 +9,15 @@ section: Account migration
 
 ## Objective
 
-[OVH Mail Migrator](https://omm.ovh.net/){.external} is a tool created by OVH. It is used to migrate your email accounts to your OVH email addresses. The process covers different types of content, such as emails, contacts, calendars and tasks, provided that they are compatible with your email addresses.
+[OVH Mail Migrator](https://omm.ovh.net/){.external} is a tool created by OVHcloud. It is used to migrate your email accounts to your OVHcloud email addresses. The process covers different types of content, such as emails, contacts, calendars and tasks, provided that they are compatible with your email addresses.
 
-**Find out how to migrate your email accounts to OVH using our OVH Mail Migrator tool.**
+**Find out how to migrate your email accounts to OVHcloud using our OVH Mail Migrator tool.**
 
 ## Requirements
 
-- You must have an email service with OVH, such as an [Exchange](https://www.ovh.co.uk/emails/){.external}, [Email Pro](https://www.ovh.co.uk/emails/email-pro/){.external} or MX Plan (via the MX Plan or included in an [OVH Web Hosting](https://www.ovh.co.uk/web-hosting/){.external} plan).
+- You must have an email service with OVHcloud, such as an [Exchange](https://www.ovh.co.uk/emails/){.external}, [Email Pro](https://www.ovh.co.uk/emails/email-pro/){.external} or MX Plan (via the MX Plan or included in an [OVHcloud Web Hosting](https://www.ovh.co.uk/web-hosting/){.external} plan).
 - You must have the login details for the email accounts you want to migrate (the source accounts).
-- You must have the login details for the OVH email accounts that will be receiving the migrated data (the destination accounts).
+- You must have the login details for the OVHcloud email accounts that will be receiving the migrated data (the destination accounts).
 
 ## Instructions
 
@@ -43,7 +43,7 @@ On the page that opens, you can now fill in the information for each section.
 
 |Information|Description|
 |---|---|
-|Server type|Select the server type that matches your accounts. If one of them is an OVH account, you can use **Hosted by OVH (Autodetect)** to fill in this information automatically.|
+|Server type|Select the server type that matches your accounts. If one of them is an OVHcloud account, you can use **Hosted by OVHcloud (Autodetect)** to fill in this information automatically.|
 |Server URL|Enter the URL address of the server on which your accounts are hosted. This field may be filled in automatically when the server type is chosen.|
 |Login|Enter the full email address for your accounts.|
 |Administrator account with delegation|This field appears for certain server types only.|
