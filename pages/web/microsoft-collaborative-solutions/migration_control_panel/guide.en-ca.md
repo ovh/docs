@@ -54,13 +54,6 @@ To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?acti
 
 #### 3.1 Migrating a legacy MXPlan solution <a name="LegacyMxplan"></a>
 
-> [!primary]
->
-> Your OVHcloud account **must be** the administrative contact and technical contact for the Exchange service you are migrating to.
->
-> For more information on editing contacts, please refer to our guide on [managing contacts for your services](../../customer/managing-contacts/).
->
-
 You can migrate from two interfaces:<br>
 
 - **the configuration wizard for Hosted Exchange**, only if you have just ordered a Hosted Exchange service and have not yet set up anything on it.
@@ -160,8 +153,6 @@ You can also manually migrate your email addresses to your new OVHcloud email so
 
 
 ## Go further
-
-[Managing contacts for your services](../../customer/managing-contacts/){.external}.
 
 [Exchange guides](../){.external}.
 
