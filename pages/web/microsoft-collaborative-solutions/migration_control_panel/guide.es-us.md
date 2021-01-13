@@ -52,13 +52,6 @@ Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/
 
 #### 3.1 Migrar una solución MXPlan histórica <a name="VersionHistoriqueMxplan"></a>
 
-> [!primary]
->
-> Su cuenta OVHcloud debe ser previamente contacto administrador y contacto técnico del servicio Exchange al que vaya a migrar.
->
-> Para más información sobre los cambios de contactos, consulte nuestra guía para [gestionar los contactos de sus servicios](../../customer/gestion-de-los-contactos/).
->
-
 La migración puede realizarse desde dos interfaces:<br>
 
 - **el asistente de configuración Hosted Exchange**, solo si acaba de contratar un servicio Hosted Exchange y todavía no ha configurado nada en este último.
@@ -158,8 +151,6 @@ También puede migrar manualmente sus direcciones de correo a su nueva solución
 
 
 ## Más información
-
-[Gestionar los contactos de los servicios](../../customer/gestion-de-los-contactos/){.external}.
 
 [Guías Exchange](../../microsoft-collaborative-solutions/){.external}.
 
