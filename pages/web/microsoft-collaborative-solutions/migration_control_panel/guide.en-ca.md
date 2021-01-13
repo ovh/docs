@@ -32,7 +32,7 @@ If you need to migrate multiple accounts, we recommend that you set up a migrati
 
 ### Step 2: Ordering your Exchange accounts
 
-This step is optional if you already have an Exchange or  service to which you are migrating.
+This step is optional if you already have an Exchange service to which you are migrating.
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, then click `Order`{.action} in the services bar on the left-hand side. Then select the service you want to order. You will be redirected to the order page. Follow the steps, then wait until the service is fully installed. An email will be sent to you as soon as the installation is complete.
 
