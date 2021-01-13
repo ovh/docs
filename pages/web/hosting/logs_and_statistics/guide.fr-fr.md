@@ -30,13 +30,6 @@ La fenêtre qui s’affiche alors est composée de 3 sections. La première pré
 
 ![hosting](images/statistics02u.png){.thumbnail}
 
-Deux moteurs de statistiques existent sur l'infrastructure Web OVHcloud :
-
-- Urchin 6 
-- OVHcloud Web Statistics
-
-Suivant l'ancienneté de votre hébergement, l'un ou l'autre sera appliqué automatiquement.
-
 ### Administration des utilisateurs
 
 La création d'un utilisateur permettra à une personne d'accéder aux statistiques de votre hébergement sans avoir accès à votre espace client OVHcloud. 
@@ -52,9 +45,7 @@ Cliquez sur le bouton `Créer un nouvel utilisateur`{.action} dans la section `A
 
 ### Statistiques des visites
 
-#### OVHcloud Web Statistics
-
-Pour vous aider à mieux suivre et piloter le trafic de vos sites web, vous disposez d'un outil de statistiques de fréquentation et de mesure d’audience de vos sites internet hébergés sur votre hébergement mutualisé. 
+Pour vous aider à mieux suivre et piloter le trafic de vos sites web, vous disposez d'un outil de statistiques de fréquentation et de mesure d’audience de vos sites internet hébergés sur votre hébergement mutualisé, **OVHcloud Web Statistics**.
 
 ![hosting](images/OWStats01.gif){.thumbnail}
 
@@ -69,25 +60,6 @@ Le tableau de bord de OVHcloud Web Statistics se présente en 6 sections dans le
 - FAQ : rubrique dédiée aux questions les plus fréquentes
 
 Le cadre `Period selection` en haut à droite vous permet de sélectionner une période précise.
-
-#### Urchin v6 (historique)
-
-Si vous ne disposez pas encore de l'outil OVHcloud Web Statistics, vous avez alors accès à Urchin 6.
-
-![hosting](images/1490.png){.thumbnail}
-
-Urchin vous donne des informations sur :
-
-- Le trafic de votre site
-- Le nombre de visiteurs.
-- Le nombre de pages visualisées.
-- Le « poids » des pages visualisées.
-- Le nombre de requêtes http.
-- Les durées moyennes de connexion à l'ensemble de votre site ou une page particulière.
-- Comment les visiteurs de votre site l'ont-ils connu ?
-- Par quels moteurs de recherche ont-ils trouvé l'URL de votre site ?
-- Quels mots-clés ont été utilisés lors de leur recherche ?
-- Quelles pages de votre site ont été les plus visitées ? 
 
 ### Logs
 
