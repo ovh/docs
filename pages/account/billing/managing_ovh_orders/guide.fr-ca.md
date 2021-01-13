@@ -75,18 +75,6 @@ Dans le cas d'un bon de commande dont la livraison est en cours ou en attente de
 ![Récapitulatif des commandes](images/html_order_ca.png){.thumbnail}
 
 
-### Appliquer le droit de rétractation
-
-Nos [conditions Générales de Service](https://www.ovh.com/ca/fr/support/documents_legaux/Conditions_generales_de_Service.pdf){.action} précisent les modalités d'application du droit de rétractation.
-
-Si les critères d'éligibilité à ce délai de rétractation sont remplis, il peut être mis en application directement depuis [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Pour cela, procédez comme pour visualiser un bon de commande, mais au lieu de choisir `Voir la commande au format HTML`{.action}, choisissez `Annuler la commande`{.action}.
-
-![Annulation d'une commande](images/cancel_order.png){.thumbnail}
-
-Il vous reste à confirmer l'annulation de la commande en cochant la case `Oui je désire annuler cette commande`{.action} et à valider.
-
-![Validation de l'annulation](images/cancellation_validation.png){.thumbnail}
-
 
 ## Aller plus loin
 
