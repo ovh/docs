@@ -48,6 +48,7 @@ In der folgenden Tabelle wird Ihnen die OVH MX-Konfiguration für MX Plan (separ
 |*leer lassen*|3600|MX|5|mx1.mail.ovh.net.|
 |*leer lassen*|3600|MX|50|mx2.mail.ovh.net.|
 |*leer lassen*|3600|MX|100|mx3.mail.ovh.net.|
+|*leer lassen*|3600|MX|200|mx4.mail.ovh.net.|
 
 Verwenden Sie diese MX-Einträge für die DNS-Konfiguration Ihrer Domain. Im nächsten Schritt erfahren Sie, wie Sie die OVH DNS-Konfiguration Ihrer Domain entsprechend ändern.
 

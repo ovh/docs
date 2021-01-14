@@ -48,6 +48,7 @@ Qui sotto è disponibile la configurazione MX di OVH da utilizzare con i nostri 
 |Lasciare il campo vuoto|3600|MX|5|mx1.mail.ovh.net|
 |Lasciare il campo vuoto|3600|MX|50|mx2.mail.ovh.net|
 |Lasciare il campo vuoto|3600|MX|100|mx3.mail.ovh.net|
+|Lasciare il campo vuoto|3600|MX|200|mx4.mail.ovh.net.|
 
 A questo punto è necessario utilizzare i diversi record MX nella configurazione DNS del tuo dominio. Per sapere come effettuare questa operazione, prosegui con lo step successivo.
 
