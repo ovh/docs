@@ -33,7 +33,7 @@ Dans l’écran suivant, sélectionnez **Booter en mode rescue**. Si votre serve
 
 ![Mode rescue-pro](images/rescue-mode-03.png){.thumbnail}
 
-Une fois la modification terminée, cliquez sur `...`{.action} à droite de « Status » dans la zone intitulée **Etat des services**. 
+Une fois la modification terminée, cliquez sur `...`{.action} à droite de « Statut » dans la zone intitulée **Etat des services**. 
 <br>Cliquez sur `Redémarrer`{.action} et le serveur redémarrera en mode rescue. Cette opération peut prendre quelques minutes. 
 <br>Vous pouvez vérifier l'avancement sous l'onglet `Tâches`{.action}. Un e-mail vous sera envoyé, contenant les identidiants (dont le mot de passe de connexion)  de l'utilisateur « root » du mode rescue.
 
