@@ -28,7 +28,7 @@ L'intérêt est donc de disposer de plusieurs domaines de pannes afin de bénéf
 
 Les serveurs OVH mis à votre disposition sont répartis au sein de différentes baies. Ainsi, il est possible de créer des domaines de panne vSAN en fonction de ces baies.
 
-Par exemple, la stratégie par defaut vSAN (niveau de tolérance FTT=1 avec RAID1 (Mirorring)) nécessite 3 domaines de pannes au minimum (pour 2 replicas + un objet witness).
+Par exemple, la stratégie par defaut vSAN (niveau de tolérance FTT=1 avec RAID1 (Mirorring)) nécessite 3 domaines de pannes au minimum (pour 2 replicas + 1 objet witness).
 
 ### Mise en oeuvre
 
@@ -62,7 +62,7 @@ Ajouter au besoin un serveur dans un domaine de panne existant en le déplaçant
 
 ![](images/06.png){.thumbnail}
 
-Les infos d'espace disque utilisé, disponibles et total s'affichent en survolant le domaine de panne.
+Les infos d'espace disque utilisé, disponible et total s'affichent en survolant le domaine de panne.
 
 ![](images/07.png){.thumbnail}
 
