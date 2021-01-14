@@ -24,8 +24,6 @@ Le mode rescue est un outil de votre serveur dédié. Il vous permet de démarre
 
 Le mode rescue ne peut être activé que depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager/){.external}. Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. 
 
-Cliquez ensuite successivement sur `État du serveur`{.action}, `Informations générales`{.action}, `…`{.action} et `Modifier`{.action} pour changer le mode de démarrage.
-
 Recherchez « Boot » dans la zone **Informations générales** et cliquez sur `...`{.action} puis sur `Modifier`{.action}.
 
 ![Changer le mode de démarrage](images/rescue-mode-01.png){.thumbnail}
