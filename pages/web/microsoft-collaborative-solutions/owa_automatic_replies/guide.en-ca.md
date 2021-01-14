@@ -17,7 +17,7 @@ This Exchange feature allows you to set up automatic responses to emails sent to
 
 ## Requirements
 
-- an [OVHcloud Exchange solution]({ovh_www}/emails/hosted-exchange) already set up
+- an [OVHcloud Exchange solution](https://www.ovh.com/ca/en/emails/hosted-exchange/) already set up
 - access to your Exchange account (email address and password)
 
 
@@ -25,7 +25,7 @@ This Exchange feature allows you to set up automatic responses to emails sent to
 
 ### Activating the feature
 
-Log in to your Exchange account via the [OVHcloud webmail]({ovh_www}/mail). Click on the gear symbol on the top right to unfold the "Options" menu and select `Automatic replies`{.action}.
+Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.com/ca/en/mail/). Click on the gear symbol on the top right to unfold the "Options" menu and select `Automatic replies`{.action}.
 
 ![owaoptions](images/exchange-autorep-step1.png){.thumbnail}
 

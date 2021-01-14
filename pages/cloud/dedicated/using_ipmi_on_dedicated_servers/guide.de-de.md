@@ -5,7 +5,7 @@ excerpt: 'Mit IPMI können Sie sich mit Ihrem Server verbinden, ohne auf externe
 section: Erste Schritte
 ---
 
-**Stand 20.08.2018**
+**Letzte Aktualisierung am 20.08.2018**
 
 ## Einleitung
 

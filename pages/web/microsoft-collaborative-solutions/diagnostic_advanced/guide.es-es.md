@@ -8,7 +8,7 @@ section: Miscelánea
 
 
 ## Realizar un diagnóstico
-Conéctese al [área de cliente de OVH](https://www.ovh.com/manager/web/login/).
+Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager).
 
 En la columna izquierda, haga clic en «Microsoft» > «Exchange» y seleccione su servicio Exchange.
 

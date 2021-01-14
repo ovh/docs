@@ -23,7 +23,7 @@ Si necesita configurar una dirección IP de conmutación en sus instancias porqu
 ## Requisitos
 
 * Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
-* Tener una [dirección IP de conmutación](https://www.ovh.es/servidores_dedicados/ip_failover.xml){.external} asignada a un [servidor dedicado de OVHcloud](https://www.ovh.es/servidores_dedicados/){.external}
+* Tener una [dirección IP de conmutación](https://www.ovhcloud.com/es-es/bare-metal/ip/){.external}
 
 ## Procedimiento
 

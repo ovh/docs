@@ -52,11 +52,11 @@ Sélectionnez « OVH » dans la liste déroulante « Type », tapez un nom dan
 
 Pour configurer vos machines virtuelles pour l'accès à Internet, vous devez connaître la passerelle de votre machine hôte, c’est-à-dire, votre serveur dédié. L'adresse de la passerelle est constituée des trois premiers octets de l'adresse IP principale de votre serveur, le dernier octet étant de 254. Par exemple, si l’adresse IP principale de votre serveur est :
 
-- 123.456.789.012
+- 169.254.010.020
 
 Votre adresse de passerelle sera alors :
 
-- 123.456.789.254
+- 169.254.010.254
 
 ### Préparer l'hôte
 
@@ -198,7 +198,7 @@ Sauvegardez et fermez le fichier.
 Ouvrez ensuite le fichier de routage de la machine virtuelle, qui se trouve dans `/etc/sysconfig/network-scripts/route-(nom-de l’interface)`. Modifiez le fichier pour qu'il reflète la configuration ci-dessous. N'oubliez pas de remplacer nos variables par vos propres valeurs :
 
 ```bash
-GATEWAY_IP - 123.456.789.254 (nom-interface)
+GATEWAY_IP - 169.254.010.254 (nom-interface)
 NETWORK_GW_VM - 255.255.255.0 (insérez le nom de l'interface)
 default GATEWAY_IP
 ```

@@ -23,7 +23,7 @@ Jeśli chcesz skonfigurować adres IP Failover w swoich instancjach, ponieważ:
 ## Wymagania początkowe
 
 * dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
-* [adres IP Failover](https://www.ovh.pl/serwery_dedykowane/ip_failover.xml){.external} przypisany do [serwera dedykowanego OVHcloud](https://www.ovh.pl/serwery_dedykowane/){.external}
+* [adres IP Failover](https://www.ovhcloud.com/pl/bare-metal/ip/){.external}
 
 ## W praktyce
 

@@ -5,7 +5,7 @@ excerpt: 'So fügen Sie Failover-IPs zu Ihrer Konfiguration hinzu'
 section: 'Netzwerk & IP'
 ---
 
-**Stand 07.09.2018**
+**Letzte Aktualisierung am 07.09.2018**
 
 ## Einleitung
 

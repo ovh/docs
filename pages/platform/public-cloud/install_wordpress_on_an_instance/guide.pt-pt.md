@@ -94,7 +94,7 @@ admin@instance:~$ sudo service httpd restart
 
 
 ## Download do Wordpress
-Aceda ao website [Wordpress](https://fr.wordpress.org/txt-download/) para poder efetuar o download da versão mais recente:
+Aceda ao website [Wordpress](https://wordpress.org/download/) para poder efetuar o download da versão mais recente:
 
 
 ```

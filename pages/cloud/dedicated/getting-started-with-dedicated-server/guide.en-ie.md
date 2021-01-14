@@ -6,11 +6,11 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 2nd April 2020**
+**Last updated 13th January 2021**
 
 ## Objective
 
-A dedicated server is a physical server located in one of our datacentres. Unlike Web Hosting plans (described as “shared”), which are technically managed by OVHcloud, you are fully responsible for administrating your dedicated server.
+A dedicated server is a physical server located in one of our data centres. Unlike Web Hosting plans (also referred to as "shared hosting"), which are technically managed by OVHcloud, you are fully responsible for administrating your dedicated server.
 
 **This guide will give you a few tips to help you manage your new dedicated server.**
 
@@ -55,11 +55,11 @@ After you have finished your adjustments, click `Next`{.action} to arrive at the
 
 ### Adding an SSH key (optional)
 
-If you are installing a Linux based operating system, you can add your SSH key in the last step of the installation process.
+If you are installing a Linux-based operating system, you can add your SSH key in the last step of the installation process.
 
 ![Customise the partition configuration](images/SSH_03.png){.thumbnail}
 
-If you already have an SSH key registered, it will be listed in the drop down menu under "SSH keys" at the bottom. Otherwise, you will need to add one in the "My services" section first.
+If you already have an SSH key registered, it will be listed in the drop-down menu under "SSH keys" at the bottom. Otherwise, you will need to add one in the "My services" section first.
 
 To achieve this, open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Products and services`{.action}.
 
@@ -69,19 +69,22 @@ In "My services", switch to the `SSH keys`{.action} tab and click on `Add an SSH
 
 ![Customise the partition configuration](images/SSH_14.png){.thumbnail}
 
-As we are installing a dedicated server (or a VPS), make sure to select "Dedicated" from the drop down menu.
+As we are installing a dedicated server (or a VPS), make sure to select "Dedicated" from the drop-down menu.
 
 In the new window, enter an ID (a name of your choice) and the key itself (of type RSA, ECDSA or Ed25519) into the respective fields.
 
 ![Customise the partition configuration](images/SSH_12.png){.thumbnail}
 
-For a detailed explanation on how to generate SSH keys, please refer to [this guide](https://docs.ovh.com/ie/en/public-cloud/create-ssh-keys).
+For a detailed explanation on how to generate SSH keys, please refer to [this guide](../../public-cloud/create-ssh-keys).
 
 
 > [!primary]
 >
-> Some operating systems or platforms, such as Plesk and Windows, require a licence to be purchased prior to installation. You can buy this [licence from OVHcloud](https://www.ovh.ie/dedicated_servers/distributions/), or from a reseller. You will then need to integrate it manually, through the operating system itself, or through your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). You can manage your licences in the Control Panel in the `Bare Metal Cloud`{.action} section under `Licences`{.action}. In this section, you can also order licences (via the `Order`{.action} button on the right), or add your own SPLA Windows or SPLA SQL server licence (via the `Add an SPLA licence`{.action} button on the right).
-> 
+> Some operating systems or platforms, such as Plesk and Windows, require a licence to be purchased prior to installation. You can buy this [licence from OVHcloud](https://www.ovhcloud.com/en-ie/bare-metal/os/), or from a reseller. You will then need to integrate it manually, through the operating system itself, or through your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
+>
+You can manage your licences in the Control Panel in the `Bare Metal Cloud`{.action} section under `Licences`{.action}. In this section, you can also order licences or add your own SPLA Windows or SPLA SQL server licence (via the `Actions`{.action} button).
+>
+
 
 ### Logging on to your server
 
@@ -112,11 +115,11 @@ Once the installation is completed, you will get an email containing your passwo
 
 As explained in the “Objective” section of this guide, you are the administrator of your dedicated server. As such, you are responsible for your data and its security. However, the following tips will help you to secure it:
 
-* Keep your operating system up to date
-* Keep your software up to date
-* Change your default SSH port (port 22) to another port
-* Change your root password
-* Create a new system user with restricted access for day-to-day use
+- Keep your operating system up to date
+- Keep your software up to date
+- Change your default SSH port (port 22) to another port
+- Change your root password
+- Create a new system user with restricted access for day-to-day use
 
 ### Network configuration
 
@@ -126,7 +129,7 @@ Network bridging is the action taken by network equipment to create an aggregate
 
 The Network Bridge configuration is most commonly used in the context of virtualisation, to allow each Virtual Machine to have its own public IP address.
 
-For more information on network bridging, please refer to our guide: [Network Bridging](../network-bridging/).
+For more information on network bridging, please refer to our guide: [Network Bridging](../network-bridging/){.external}.
 
 #### IP aliasing
 
@@ -147,38 +150,10 @@ For more information, please refer to our guide: [Using the IPMI with dedicated 
 
 ### Rescue mode
 
-If there's ever an issue with your server, the first troubleshooting step you should take is to reboot your server into rescue mode. To activate rescue mode, log in to your [OVHcloud Control panel](https://www.ovh.com/auth/?action=gotomanager) and go to your server's page. Then go to `Server Status`{.action} > `General information`{.action} > `Boot`{.action}. Click the `Edit`{.action} button to change the boot mode.
+For any kind of issue the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
 
-![Change boot selection](images/rescue-mode-01.png){.thumbnail}
+Please refer to the [rescue mode guide](../ovh-rescue/).
 
-On the next screen, select `Boot on rescue mode`{.action} and select `rescue64-pro`{.action} from the dropdown list. Type your email address in the text field, then click `Next`{.action}. If you leave the email field empty, the email address from your NIC handle is used by default.
-
-![Rescue Pro 64](images/rescue-mode-03.png){.thumbnail}
-
-Confirm your options on the next screen and then reboot your server to apply the changes.
-
-![Confirmation and reboot](images/rescue-mode-02.png){.thumbnail}
-
-Your server will now reboot into rescue mode, and you will receive the credentials for logging in via the email address you provided. To exit rescue mode, simply change the boot mode back to boot on the hard disk, then reboot your server.
-
-To learn more about how you can use rescue mode to resolve issues with your server, please refer to our guide: [Rescue mode](../rescue_mode/).
-
-
-#### Hardware diagnosis
-
-The hardware tests available in rescue mode can help you to diagnose any hardware faults that may be causing problems with your server.
-
-After logging in to rescue mode's web interface, you will be able to run tests on the following hardware components:
-
-* RAM
-* Hard disks
-* RAID array
-* Processor
-* Network connection
-
-#### Rescue mode web interface
-
-![Web interface](images/rescue-mode-04.png){.thumbnail}
 
 ## Go further
 
