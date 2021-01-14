@@ -56,11 +56,11 @@ Wybierz "OVH" z rozwijanej listy "Typ", wpisz nazwę w polu "Nazwa wirtualnej ma
 
 Aby skonfigurować wirtualne maszyny umożliwiające dostęp do Internetu, musisz znać bramę maszyny hosta, czyli serwera dedykowanego. Adres bramy składa się z pierwszych trzech bajtów głównego adresu IP Twojego serwera. Ostatni bajt to 254. Na przykład, jeśli głównym adresem IP Twojego serwera jest:
 
-- 123.456.789.012
+- 169.254.010.020
 
 Adres bramy:
 
-- 123.456.789.254
+- 169.254.010.254
 
 ### Przygotowanie hosta
 
@@ -203,7 +203,7 @@ Zapisz i zamknij plik.
 Następnie otwórz plik routingu wirtualnej maszyny, który znajduje się w `/etc/sysconfig/network-scripts/route-(nazwa interfejsu)`. Zmodyfikuj plik, aby odzwierciedlał poniższą konfigurację. Pamiętaj, aby zastąpić nasze zmienne własnymi wartościami:
 
 ```bash
-GATEWAY_IP - 123.456.789.254 (nazwa interfejsu)
+GATEWAY_IP - 169.254.010.254 (nazwa interfejsu)
 NETWORK_GW_VM - 255.255.255.0 (wpisz nazwę interfejsu)
 default GATEWAY_IP
 ```

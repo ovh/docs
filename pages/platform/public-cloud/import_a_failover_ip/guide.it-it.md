@@ -22,7 +22,7 @@ Per configurare un indirizzo IP Failover sulle tue istanze Public Cloud, ad esem
 ## Prerequisiti
 
 * Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
-* Un[indirizzo IP Failover](https://www.ovh.it/server_dedicati/ip_failover.xml){.external} assegnato a un [server dedicato OVH](https://www.ovh.it/server_dedicati/){.external}.
+* Un[indirizzo IP Failover](https://www.ovhcloud.com/it/bare-metal/ip/){.external}
 
 ## Procedura
 

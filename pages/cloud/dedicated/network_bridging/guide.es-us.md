@@ -56,11 +56,11 @@ Seleccione "OVH" en la lista desplegable "Tipo", escriba un nombre en el campo "
 
 Para configurar sus máquinas virtuales para el acceso a Internet, debe conocer la pasarela de su máquina host, es decir, su servidor dedicado. La dirección de la pasarela está formada por los tres primeros bytes de la dirección IP principal del servidor, el último byte es de 254. Por ejemplo, si la dirección IP principal del servidor es:
 
-- 123.456.789.012
+- 169.254.010.020
 
 Su dirección de pasarela será:
 
-- 123.456.789.254
+- 169.254.010.254
 
 ### Preparar el host
 
@@ -203,7 +203,7 @@ Guarde y cierre el archivo.
 Abra el archivo de enrutado de la máquina virtual, que se encuentra en `/etc/sysconfig/network-scripts/route-(nombre de la interfaz)`. Modifique el archivo para que refleje la configuración que se muestra a continuación. No olvide sustituir las variables por sus propios valores:
 
 ```bash
-GATEWAY_IP - 123.456.789.254 (nombre-interfaz)
+GATEWAY_IP - 169.254.010.254 (nombre-interfaz)
 NETWORK_GW_VM - 255.255.255.0 (inserte el nombre de la interfaz)
 default GATEWAY_IP
 ```

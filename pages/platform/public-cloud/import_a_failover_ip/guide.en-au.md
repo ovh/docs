@@ -23,7 +23,7 @@ If you need to configure a failover IP address on your instances because:
 ## Requirements
 
 * access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
-* a [failover IP address]({ovh_www}/dedicated-servers/ip_failover.xml){.external} assigned to an [OVHcloud Dedicated Server]({ovh_www}/ca/en/dedicated-servers/){.external}.
+* a [failover IP address](https://www.ovhcloud.com/en-au/bare-metal/ip/){.external}
 
 ## Instructions
 

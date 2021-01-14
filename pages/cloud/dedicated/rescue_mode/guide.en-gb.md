@@ -9,7 +9,15 @@ section: 'Diagnostics and rescue mode'
 
 ## Objective
 
-Rescue mode is a tool on your server that allows you to boot into a temporary operating system for the purpose of diagnosing and resolving issues. 
+Rescue mode is a tool on your server that allows you to boot into a temporary operating system for the purpose of diagnosing and resolving issues.
+
+Usual tasks the rescue mode is appropriate for include:
+
+- Resetting your root password
+- Diagnosing network problems
+- Repairing a broken operating system
+- Fixing a software firewall misconfiguration
+- Testing disk performance
 
 **This guide will show you how to activate and use your server's rescue mode.**
 

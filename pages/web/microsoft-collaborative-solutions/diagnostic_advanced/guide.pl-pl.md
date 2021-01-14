@@ -7,7 +7,7 @@ legacy_guide_number: g2277
 ---
 
 ## Wykonanie diagnostyki
-Zaloguj się do [panelu klienta OVH](https://www.ovh.com/manager/web/login/).
+Zaloguj się do [panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager).
 
 Po zalogowaniu wybierz w menu z lewej strony sekcję Microsoft i usługę Exchange.
 
