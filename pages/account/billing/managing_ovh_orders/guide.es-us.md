@@ -84,26 +84,6 @@ La siguiente ventana se abre para permitirle hacer el seguimiento en cuatro paso
 
 ![Seguimiento de los pedidos](images/order06.png){.thumbnail}
 
-### Ejercer el derecho de desistimiento
-
-La cláusula 14.1 de nuestras [Condiciones Generales del Servicio](https://www..ovh.com/world/es//soporte/documentos_legales/CondicionesGeneralesServicio.pdf){.external} establece que «los clientes que conforme a la legislación española en vigor tengan la consideración de consumidores y usuarios, y siempre que las características del producto o servicio contratado lo hiciesen posible, podrán ejercer su derecho de desistimiento durante los primeros 14 días naturales desde la contratación del producto o servicio correspondiente».
-
-Encontrará más información sobre cómo ejercer dicho derecho en los siguientes párrafos de dichas Condiciones.
-
-Si cumple con los requisitos necesarios para ejercer el derecho de desistimiento, podrá hacerlo directamente desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Para ello, [acceda a las órdenes de pedido](./#acceder-a-las-ordenes-de-pedido-desde-el-area-de-cliente-de-ovhcloud){.external}, haga clic en el botón `···`{.action} situado al final de la línea correspondiente y seleccione `Cancelar el pedido`{.action}.
-
-![Cancelar un pedido](images/cancelorder1.png){.thumbnail}
-
-Por último, marque la casilla `Sí, quiero cancelar el pedido`{.action} y confirme.
-
-![Confirmación de la cancelación](images/cancelorder2.png){.thumbnail}
-
-
-> [!primary]
->
-> OVHcloud le reembolsará la cantidad proporcional a los días de servicio no consumidos en el plazo de treinta días naturales contados a partir de la fecha de comunicación del ejercicio del derecho de desistimiento.
->
-
 
 ## Más información
 

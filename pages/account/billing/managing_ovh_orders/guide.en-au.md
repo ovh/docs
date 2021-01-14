@@ -9,7 +9,7 @@ section: 'Managing orders, bills and services'
 
 ## Objective
 
-There are various stages in the OVH order process, and you can track them in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+There are various stages in the OVHcloud order process, and you can track them in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 **This guide will provide you with more information on your purchase order, and its various statuses.**
 
@@ -74,18 +74,6 @@ If you have a purchase order that is in the process of being delivered or awaiti
 
 ![Order summary](images/html_order_ca.png){.thumbnail}
 
-
-### Apply the right of withdrawal.
-
-Our [General Terms and Conditions of Services](https://www.ovh.com/ca/en/support/termsofservice/General_Terms_of_Service_CA.pdf){.action} detail the conditions required for withdrawal from a contract.
-
-If the eligibility criteria are met, you can withdraw from a service directly in the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. To do this, proceed as though you would like to view the purchase order, but instead of selecting `View order in HTML format`{.action}, select `Cancel the order`{.action}.
-
-![Cancel an order](images/cancel_order.png){.thumbnail}
-
-At this stage, you simply need to confirm the order cancellation by clicking the `Yes, I want to cancel this order`{.action} box, and confirming.
-
-![Cancellation confirmation](images/cancellation_validation.png){.thumbnail}
 
 
 ## Go further
