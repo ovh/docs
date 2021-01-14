@@ -94,7 +94,7 @@ admin@instance:~$ sudo service httpd restart
 
 
 ## Pobieranie modułu Wordpress
-Przejdź na stronę modułu [Wordpress](https://fr.wordpress.org/txt-download/), aby pobrać najnowszą wersję:
+Przejdź na stronę modułu [Wordpress](https://wordpress.org/download/), aby pobrać najnowszą wersję:
 
 
 ```

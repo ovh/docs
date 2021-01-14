@@ -56,11 +56,11 @@ Seleziona "OVH" nel menu a tendina "Tipo", inserisci un nome nel campo "Nome del
 
 Per configurare le tue macchine virtuali per l'accesso a Internet, devi conoscere il gateway della tua macchina host, cioè il tuo server dedicato. L'indirizzo del gateway è composto dai primi tre byte dell'indirizzo IP principale del tuo server, l'ultimo byte è di 254. Ad esempio, se l'indirizzo IP principale del tuo server è:
 
-- 123.456.789.012
+- 169.254.010.020
 
 L'indirizzo del gateway sarà:
 
-- 123.456.789.254
+- 169.254.010.254
 
 ### Prepara l'host
 
@@ -202,7 +202,7 @@ Salva e chiudi il file
 Apri il file di routing della macchina virtuale, che si trova in `/etc/sysconfig/network-scripts/route-(nome dell'interfaccia)`. Modifica il file in modo che rispecchi la configurazione qui sotto. Ricordati di sostituire le variabili con i tuoi valori:
 
 ```bash
-GATEWAY_IP - 123.456.789.254 (nome-interfaccia)
+GATEWAY_IP - 169.254.010.254 (nome-interfaccia)
 NETWORK_GW_VM - 255.255.255.0 (inserisci il nome dell'interfaccia)
 default GATEWAY_IP
 ```

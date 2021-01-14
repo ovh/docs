@@ -24,7 +24,7 @@ Im OVHcloud Kundencenter können Sie eine Failover-IP-Adresse, die mit einem and
 
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
-- Sie verfügen über eine [Failover-IP-Adresse](https://www.ovh.de/dedicated_server/ip_failover.xml).
+- Sie verfügen über eine [Failover-IP-Adresse](https://www.ovhcloud.com/de/bare-metal/ip/).
 
 ## In der praktischen Anwendung
 
