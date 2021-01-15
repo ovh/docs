@@ -23,7 +23,7 @@ W tym przewodniku korzystamy z programu WinSCP, ale możesz używać wybranego p
 
 
 ## ID OpenStack
-Login i hasło OpenStack możesz wygenerować postępując zgodnie z informacjami zawartymi w tym [przewodniku](https://www.ovh.pl/g1773.tworzenie_dostepu_do_interfejsu_horizon){.external}.
+Login i hasło OpenStack możesz wygenerować postępując zgodnie z informacjami zawartymi w tym [przewodniku](https://www.ovh.pl/g1773.tworzenie_dostepu_do_interfejsu_horizon).
 
 
 ## TenantName
@@ -77,4 +77,4 @@ W tej części wyłączymy dwie opcje w programie WinSCP:
 
 
 ## Odzyskiwanie danych
-Odyskiwanie danych wymaga odblokowania obiektu. Dla wybranego obiektu należy wykonać zapytanie GET. Jeśli polecenie to nie zostanie wcześniej wykonane, program SFTP zgłosi błąd podczas próby pobrania pliku. Zapoznaj się z naszym przewodnikiem dotyczącym odblokowania obiektu: [tutaj](../guide.pl-pl.md){.ref}.
+Odyskiwanie danych wymaga odblokowania obiektu. Dla wybranego obiektu należy wykonać zapytanie GET. Jeśli polecenie to nie zostanie wcześniej wykonane, program SFTP zgłosi błąd podczas próby pobrania pliku. Zapoznaj się z naszym przewodnikiem dotyczącym odblokowania obiektu: [tutaj](../../).

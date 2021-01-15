@@ -2,12 +2,12 @@
 title: 'Einen OpenStack User erstellen oder löschen'
 slug: openstack-user-erstellen-loeschen
 excerpt: 'Erfahren Sie hier, wie Sie im OVHcloud Kundencenter Ihre OpenStack Benutzer verwalten'
-section: 'Über das OVH Kundencenter'
+section: 'Projektverwaltung'
 ---
 
 **Letzte Aktualisierung am 06.12.2019**
 
-## Einführung
+## Ziel
 
 Um die APIs für Horizon oder OpenStack verwenden zu können, müssen Sie einen Benutzer erstellen. Die Anzahl der OpenStack User ist nicht begrenzt.
 

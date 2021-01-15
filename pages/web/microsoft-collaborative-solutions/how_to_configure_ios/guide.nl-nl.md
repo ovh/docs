@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuratie van uw Exchange-account op een iPhone of iPad
 slug: exchange-automatische-configuratie-ios-iphone-ipad
 excerpt: Leer hoe u een Exchange-account kunt configureren op een iPhone of iPad, via de Mail-app

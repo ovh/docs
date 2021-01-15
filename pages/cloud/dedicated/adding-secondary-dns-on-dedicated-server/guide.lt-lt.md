@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Creating a secondary DNS on a Dedicated Server
 slug: secondary-dns
 excerpt: This guide will show you how to create a secondary DNS and add it to your Dedicated Server
@@ -15,9 +16,9 @@ If you want to use your [Dedicated Server](https://www.ovh.lt/dedikuoti_serveria
 
 ## Requirements
 
-* a [Dedicated Server](https://www.ovh.lt/dedikuoti_serveriai/){.external} with Windows installed
-* a [domain](https://www.ovh.lt/domenai/){.external} in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* a [Dedicated Server](https://www.ovh.lt/dedikuoti_serveriai/){.external} 
+* a [domain](https://www.ovh.lt/domenai/){.external} in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 
 ## Instructions
@@ -42,7 +43,7 @@ You will now see a message instructing you to create a TXT record for your domai
 
 ### Verify your domain
 
-Log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Web`{.action} menu. Then click `Domains`{.action} to expand the list of domains:
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Web Cloud`{.action} menu. Then click `Domains`{.action} to expand the list of domains:
 
 ![Domain verification](images/domain-verification-01.png){.thumbnail}
 

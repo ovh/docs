@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Hosting: technische kenmerken van de webhosting'
 excerpt: 'Hosting: technische kenmerken met betrekking tot webhosting'
 slug: hosting_technische_kenmerken_van_de_webhosting
@@ -69,7 +70,7 @@ Een handleiding is beschikbaar mbt het gebruik van PHP-FPM:
 Sommige servervariabelen worden aangepast via het gebruik van PHP-FPM:
 
 |Variable|zonder PHP-FPM|met PHP-FPM|
-|max_execution_time|120s|300s|
+|max_execution_time|120s|165s|
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 

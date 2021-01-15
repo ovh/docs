@@ -1,27 +1,27 @@
 ---
 title: 'Stündliche Ressourcen hinzufügen'
 slug: stuendliche-ressourcen-hinzufuegen
-excerpt: 'So fügen Sie stündlich abgerechnete Ressourcen hinzu'
+excerpt: 'Erfahren Sie hier, wie Sie stündlich abgerechnete Ressourcen hinzufügen'
 legacy_guide_number: '7766721'
-section: 'OVH Funktionen'
+section: OVHcloud Funktionen
 ---
 
-**Stand 02.04.2019**
+**Letzte Aktualisierung am 15.12.2020**
 
-## Einleitung
+## Ziel
 
-Beim [Private Cloud](https://www.ovh.de/private-cloud/){.external} Angebot können Sie stündlich abgerechnete Ressourcen hinzufügen.
+Bei einer Hosted Hosted Private Cloud-Lösung können Sie stündlich abgerechnete Ressourcen hinzufügen.
 
-**In dieser Anleitung erfahren Sie, wie Sie stündliche Ressourcen über das vSphere-Interface der Private Cloud hinzufügen.**
+**Diese Anleitung erklärt, wie Sie stündliche Ressourcen über das vSphere-Interface Ihrer Private Cloud hinzufügen.**
 
 ## Voraussetzungen
 
-* Sie verfügen über ein [Private Cloud](https://www.ovh.de/private-cloud/){.external} Angebot.
-* Das betreffende Datacenter hat die notwendigen Rechte zum Hinzufügen von Ressourcen. Diese Rechte werden über das [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} vergeben.
-* Sie haben Zugriff zum vSphere-Client.
+- Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
+- [Dem Benutzer die Berechtigung "Hinzufügen von Ressourcen"](../die-rechte-eines-nutzers-aendern/) für das betreffende Rechenzentrum über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} erteilen.
+- Sie haben Zugriff zum vSphere-Client.
 
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Ressource auswählen
 
@@ -29,7 +29,7 @@ Um zum Interface zu gelangen, über das Sie Ressourcen hinzufügen können, wäh
 
 ![Host hinzufügen](images/addhost_01.png){.thumbnail}
 
-Im vorliegenden Beispiel werden wir einen stündlich abgerechneten Host-Server hinzufügen. Nachdem Sie das gewünschte Modell ausgewählt haben, klicken Sie auf den Button `Next`{.action}. Wenn Sie einen Datastore hinzufügen möchten, wählen Sie einfach den Tab `Add OVH Storage`{.action} aus.
+Im vorliegenden Beispiel werden wir einen stündlich abgerechneten Host-Server hinzufügen. Nachdem Sie das gewünschte Modell ausgewählt haben, klicken Sie auf den Button `Next`{.action}. Wenn Sie einen Datastore hinzufügen möchten, wählen Sie einfach den Tab `Add storage`{.action} aus.
 
 ![Host hinzufügen](images/addhost_03.png){.thumbnail}
 
@@ -38,13 +38,13 @@ Im vorliegenden Beispiel werden wir einen stündlich abgerechneten Host-Server h
 
 Um die Bestellung zu bestätigen und abzuschließen, klicken Sie erneut auf den Button `Next`{.action}.
 
-![](images/addhost_04.png){.thumbnail}
+![bestellung](images/addhost_04.png){.thumbnail}
 
 ### Installation nachverfolgen
 
 Nachdem Sie Ihre Bestellung bestätigt haben, können Sie den Fortschritt zum Hinzufügen der Ressource nachverfolgen.
 
-![](images/addhost_06.png){.thumbnail}
+![installation](images/addhost_06.png){.thumbnail}
 
 Darüber hinaus wird ein neuer Task in den „recent tasks“ von vSphere erscheinen. Über diesen können Sie den Fortschritt ebenfalls nachverfolgen.
 

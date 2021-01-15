@@ -3,7 +3,6 @@ title: Premiers pas avec les applications préinstallées
 slug: applications-preinstallees
 excerpt: Découvrez comment déployer des applications préinstallées sur vos instances Public Cloud
 section: Premiers pas
-order: 8
 ---
 
 **Dernière mise à jour le 24 août 2020**
@@ -16,7 +15,7 @@ OVHcloud offre aux clients Public Cloud des images d'applications préinstallée
 
 ## Prérequis
 
-- Une [instance Public Cloud](../creer-instance-espace-client/) dans votre compte OVHcloud.
+- Une [instance Public Cloud](../create_an_instance_in_your_ovh_customer_account/) dans votre compte OVHcloud.
 
 ## En pratique
 
@@ -51,7 +50,7 @@ Une fois l'instance créée et une application préinstallée choisie, vous pouv
 
 Cette section s'applique uniquement aux installations de WordPress, Drupal, Joomla et Prestashop. Elle ne s'applique pas pour les autres installations.
 
-1. Vous devez créer ou modifier, dans l'espace client OVHcloud, deux enregistrements `A `  qui pointent vers l'adresse IP de votre serveur. Par exemple, si votre nom de domaine est « personaldomain.ovh », vous devez créer des enregistrements `A` pour :  
+1. Vous devez créer ou modifier, dans l'espace client OVHcloud, deux enregistrements `A`  qui pointent vers l'adresse IP de votre serveur. Par exemple, si votre nom de domaine est « personaldomain.ovh », vous devez créer des enregistrements `A` pour :  
 
      personaldomain.ovh <br>
      www.personaldomain.ovh <br>  

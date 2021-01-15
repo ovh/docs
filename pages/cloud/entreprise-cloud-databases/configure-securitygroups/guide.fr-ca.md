@@ -1,7 +1,7 @@
 ---
 title: 'Configurer vos groupes de sécurité'
 slug: configurer-groupes-securite
-excerpt: 'Protéger l''accès à votre cluster au travers de filtres d''accès'
+excerpt: "Protéger l'accès à votre cluster au travers de filtres d'accès"
 section: 'Démarrer avec votre cluster PostgreSQL'
 ---
 
@@ -58,6 +58,7 @@ Renseignez la règle de sécurité désirée puis validez.
 
 ## Aller plus loin
 
-Apprenez à gérer votre cluster PostgreSQL en consultant la [documentation technique d'OVHcloud](../) pour davantage d'informations sur le fonctionnement technique de votre offre managée.
+Apprenez à gérer votre cluster PostgreSQL en consultant la [documentation technique d'OVHcloud](https://docs.ovh.com/fr/enterprise-cloud-databases/){.external} pour davantage d'informations sur le fonctionnement technique de votre offre managée.
+
 
 

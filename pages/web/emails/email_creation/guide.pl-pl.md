@@ -18,7 +18,7 @@ Dzięki kontom e-mail MX Plan możesz wysyłać i odbierać wiadomości, korzyst
 
 - Wykupienie usługi [MX Plan]({ovh_www}/hosting/){.external} Jest on dostępny w ramach: [pakietów hostingowych]({ovh_www}/hosting/){.external}, [bezpłatnego hostingu Start 10M]({ovh_www}/domeny/oferta_serwer_start10m.xml){.external} zawartego w ofercie domeny (uprzednio aktywowanej) lub oferty MX Plan zamówionej oddzielnie.
 - Możliwość tworzenia kont e-mail w ramach Twojej usługi
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Web`{.action}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Web Cloud`{.action}
 
 > [!primary]
 >

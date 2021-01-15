@@ -1,7 +1,7 @@
 ---
 title: 'Configurer son adresse e-mail sur Courrier pour Windows 10'
 slug: configuration-courrier-sur-windows-10
-excerpt: 'Apprenez à configurer une adresse e-mail de votre hébergement sur l'application Courrier pour Windows'
+excerpt: "Apprenez à configurer une adresse e-mail de votre hébergement sur l'application Courrier pour Windows"
 section: 'Configuration sur ordinateur'
 order: 4
 ---
@@ -96,8 +96,6 @@ OVHcloud propose une application web permettant d'accéder à votre adresse e-ma
  
 ## Aller plus loin
 
-[Configurer son compte E-mail Pro sur l'application Courrier pour Windows](../../configuration-courrier-windows-10/){.external}
-
-[Configurer son compte Exchange sur l'application Courrier pour Windows](../../microsoft-collaborative-solutions/configuration-courrier-windows-10/){.external}
+[Configurer son compte Exchange sur l'application Courrier pour Windows](../../microsoft-collaborative-solutions/exchange-configuration-courrier-windows-10/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

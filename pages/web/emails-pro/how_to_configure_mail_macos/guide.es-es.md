@@ -46,9 +46,9 @@ Esta guía solo hace referencia a la configuración desde la aplicación Mail.
 
 > [!primary]
 >
-> En nuestro ejemplo, hemos utilizado la mención servidor: pro**X**.mail.ovh.net. Sustituya la «X» por la cifra que designa al servidor de su servicio Email Pro.
+> En nuestro ejemplo, hemos utilizado la mención servidor: pro**?**.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
 >
-> Puede consultar esta cifra en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action} y `Email Pro`{.action} en la columna de la izquierda. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
+> Puede consultar esta cifra en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action} y `Email Pro`{.action} en la columna de la izquierda. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
 >
 
 Una vez que ejecute la aplicación Mail en su dispositivo, puede añadir una cuenta de dos formas diferentes:
@@ -72,8 +72,8 @@ A continuación, haga clic en el botón `Iniciar sesión`{.action}. Aparecerá u
 |Campo|Descripción|  
 |---|---|  
 |Tipo de cuenta|Deje IMAP seleccionado en el menú desplegable.| 
-|Servidor de correo entrante|Introduzca el servidor pro**X**.mail.ovh.net.| 
-|Servidor de correo saliente|Introduzca el servidor pro**X**.mail.ovh.net.|  
+|Servidor de correo entrante|Introduzca el servidor pro**?**.mail.ovh.net.| 
+|Servidor de correo saliente|Introduzca el servidor pro**?**.mail.ovh.net.|  
 
 Haga de nuevo clic en `Iniciar sesión`{.action}. Si los datos introducidos son correctos, la aplicación se conectará a la cuenta.
 
@@ -87,8 +87,8 @@ Si la aplicación le pide que introduzca de forma manual algunos datos en las pr
 
 |Tipo de servidor|Nombre del servidor|SSL|Puerto|
 |---|---|---|---|
-|Entrante|pro**X**.mail.ovh.net|Sí|993|
-|Saliente|pro**X**.mail.ovh.net|Sí|587|
+|Entrante|pro**?**.mail.ovh.net|Sí|993|
+|Saliente|pro**?**.mail.ovh.net|Sí|587|
 
 ### 2. Utilizar la dirección de correo electrónico
 

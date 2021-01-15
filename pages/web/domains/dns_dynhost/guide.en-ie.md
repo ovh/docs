@@ -49,7 +49,7 @@ Once you have filled in all of the required fields, click `Confirm`{.action}. Th
 
 ### Step 2: Create the dynamic DNS record (DynHost).
 
-This second step involves creating the DNS record that must be updated dynamically. As a reminder, it must not already exist in your domain name’s OVH DNS zone as an A record. For advice on how to check this and delete the A record if necessary, please read our guide to [Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/hosting_how_to_edit_my_dns_zone/){.external}.
+This second step involves creating the DNS record that must be updated dynamically. As a reminder, it must not already exist in your domain name’s OVH DNS zone as an A record. For advice on how to check this and delete the A record if necessary, please read our guide to [Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
 Once you are ready to create the DynHost record, go to the `DynHost`{.action} tab, then click `Add a DynHost`{.action}. In the pop-up window, enter the following information:
 

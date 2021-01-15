@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Webhosting e-mail handleiding BlackBerry configuratie
 excerpt: In deze handleiding wordt uitgelegd hoe u een e-mailaccount installeert op de BlackBerry
 slug: webhosting_e-mail_handleiding_blackberry_configuratie
@@ -36,7 +37,7 @@ Voer uw volledige e-mailadres foutloos in.
 Om verder te gaan met het instellen, klik op "Next".
 
 ![](images/img_1750.jpg){.thumbnail}
-Voer het wachtwoord in, dat u heeft vastgesteld in uw [Manager](https://www.ovh.com/managerv3/) voor de OVH account.
+Voer het wachtwoord in, dat u heeft vastgesteld in uw [Manager](https://www.ovh.com/auth/?action=gotomanager) voor de OVH account.
 
 Klik op "Volgende" om het wachtwoord te valideren.
 
@@ -57,7 +58,7 @@ Gebruikersnaam: uw gehele e-mail adres.
 
 E-mail adres: uw gehele e-mail adres.
 
-Wachtwoord: het wachtwoord zoals in uw [Manager](https://www.ovh.com/managerv3/)voor de OVH webhosting account.
+Wachtwoord: het wachtwoord zoals in uw [Manager](https://www.ovh.com/auth/?action=gotomanager)voor de OVH webhosting account.
 
 Server adres: SSL0.OVH.NET
 
@@ -69,7 +70,7 @@ Prefix van het IMAP path: laat het veld leeg
 
 SMTP Gebruikersnaam: uw gehele e-mail adres.
 
-SMTP Wachtwoord: het wachtwoord zoals in uw[Manager](https://www.ovh.com/managerv3/)voor de OVH webhosting account.
+SMTP Wachtwoord: het wachtwoord zoals in uw[Manager](https://www.ovh.com/auth/?action=gotomanager)voor de OVH webhosting account.
 
 SMTP Serveradres: SSL0.OVH.NET
 
@@ -116,7 +117,7 @@ Hier zijn de gegevens om te bewaren voor de configuratie van een POP e-mailaccou
 POP configuratie met SSL beveiliging geactiveerd of gedeactiveerd:
 
 E-mailadres: uw gehele OVH e-mailadres
-Wachtwoord: het wachtwoord die u heeft vaastgesteld in [het control panel](https://www.ovh.com/managerv3/).
+Wachtwoord: het wachtwoord die u heeft vaastgesteld in [het control panel](https://www.ovh.com/auth/?action=gotomanager).
 Gebruikersnaam: uw gehele OVH e-mailadres
 Inkomende server:SSL0.OVH.NET
 Inkomende server Port:995 of 110
@@ -143,7 +144,7 @@ Hier zijn de gegevens voor de configuratie van een IMAP e-mailaccount op BlackBe
 IMAP configuratie met SSL beveiliging geactiveerd of gedeactiveerd:
 
 E-mailadres: uw gehele OVH e-mailadres
-Wachtwoord: het wachtwoord dat u heeft vastgesteld in [het control panel](https://www.ovh.com/managerv3/).
+Wachtwoord: het wachtwoord dat u heeft vastgesteld in [het control panel](https://www.ovh.com/auth/?action=gotomanager).
 Gebruikersnaam: uw volledige e-mailadres 
 Inkomende server:SSL0.OVH.NET
 Inkomende server port: de port van de inkomende server: 993 of 143

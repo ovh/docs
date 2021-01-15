@@ -1,64 +1,103 @@
 ---
-title: Połączenie z serwerem VPS za pomocą KVM
-excerpt: Jak korzystać z KVM na VPS 
+title: Używanie konsoli KVM z VPS
+excerpt: Dowiedz się, jak uzyskać dostęp do serwera VPS przy użyciu funkcji KVM 
 slug: kvm_na_serwerach_vps
 section: Pierwsze kroki
 ---
 
-**Ostatnia aktualizacja dnia 2018-04-18**
+**Ostatnia aktualizacja z dnia 7-06-2020**
 
 ## Wprowadzenie
 
-Konsola KVM umożliwia bezpośrednie połączenie z Twoim serwerem VPS bez konieczności korzystania z oprogramowania zewnętrznego (terminal, Putty itp.). Konsola ta jest dostępna w Panelu klienta OVH lub z API.  
+Konsola KVM pozwala na bezpośrednie połączenie z serwerem VPS bez konieczności korzystania z zewnętrznego oprogramowania (terminal, Putty, itp.). Konsola ta jest dostępna w Panelu klienta OVHcloud lub w API OVHcloud.  
 
-**W tym przewodniku zostaną przedstawione obydwa rozwiązania.**
+**Niniejszy przewodnik opisuje dwie metody dostępu do KVM.**
 
 ## Wymagania początkowe
 
-- Logowanie do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Jeden [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud.
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager)
 
 ## W praktyce
 
-### Logowanie do KVM przez Panel klienta
+### Logowanie do KVM w Panelu klienta OVHcloud
 
-Po zalogowaniu do Panelu klienta należy przejść na stronę zarządzania Twoim serwerem VPS. Po prawej stronie znajduje się przycisk `KVM`{.action}:
+#### Aktualna gama VPS
 
-![Zaznacz przycisk KVM](images/activating_kvm_manager.png){.thumbnail}
+Zaloguj się do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), wejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer na liście nawigacyjnej znajdującej się po lewej stronie, pod `VPS`{.action}. W tej sekcji kliknij `...`{.action} po prawej stronie nazwy serwera VPS w polu "Twój VPS".
 
- 
-Pojawi się okno inicjujące połączenie do serwera VPS, co może potrwać kilka sekund. Teraz wystarczy się zalogować:
+![Otwórz KVM](images/kvm-new1.png){.thumbnail}
 
-![Logowanie do KVM](images/kvm_screen.png){.thumbnail}
+#### Poprzednia gama VPS
+
+Zaloguj się do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), wejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer na liście nawigacyjnej znajdującej się po lewej stronie, pod `VPS`{.action}. W tej sekcji kliknij link skrócony o nazwie `KVM`{.action}.
+
+![Kliknij przycisk](images/kvm-new2.png){.thumbnail}
+
+### Korzystanie z konsoli KVM
+
+Otworzy się ekran KVM. Jest to małe okno wskazujące połączenie z serwerem. Ponieważ okno jest dość małe, nawigowanie w interfejsie Twojego serwera za pomocą prętów przewijania może być bardzo trudne. Dlatego zalecamy otwarcie KVM w nowym oknie pełnym ekranem za pomocą przycisku "Otwórz w nowym oknie" w prawym dolnym rogu okna kontekstowego.
 
 > [!primary]
 >
-> Układ klawiatury może różnić się od klawiatury, z której korzystasz. Należy sprawdzić ustawienia klawiatury, gdyż zamiast np. w układzie QWERTY, może być AZERTY.
+> Jeśli masz problemy z podwójnym wpisem, może to być spowodowane automatyczną regulacją ekranu. Zalecamy otwarcie KVM w nowym oknie klikając na przycisk "Otwórz w nowym oknie".
+> Jeśli nadal masz problemy z wyświetlaczem, zalecamy usunięcie z adresu URL części "auto". Jeśli adres URL to https://compute.sbg1.cloud.ovh.net:6080/vnc_auto.html?token=xxxxxxxxxxxx, musi się on zmienić na https://compute.sbg1.cloud.ovh.net:6080/vnc.html?token=xxxxxxxxxxxx (link może być inny niż ten podany przykład ilustruje tylko część adresu URL do usunięcia)
 >
 
-### Logowanie do KVM przez API
+Połączenie z siecią
 
-Czasami zdarzają się problemy z logowaniem do KVM przez Panel klienta. Można wówczas zalogować się przez API. Najpierw należy zalogować się na stronie [API OVH](https://api.ovh.com/).
+> [!primary]
+>
+> Klawiatura może mieć inny układ niż ty. Upewnij się, że to sprawdzić, ponieważ klawiatura może być AZERTY zamiast QWERTY, na przykład.
+>
 
-### Serwery VPS z oferty 2014
+### Połączenie z KVM przez API
 
-Na serwerach VPS z oferty 2014 mogą pojawić się błędy 1006, które powinno rozwiązać skorzystanie z  API. Należy korzystać z API:
+Zdarza się, że napotkasz problemy z połączeniem z KVM za pomocą panelu konfiguracyjnego OVHcloud, zwłaszcza w przypadku starszych wersji. W takim przypadku możesz użyć rozwiązania API. W tym celu zaloguj się przez API [OVHcloud](https://api.ovh.com/).
+
+#### Na serwerze VPS 2014
+
+Jeśli posiadasz serwer VPS 2014, może wystąpić *błąd 1 06*. Przegląd API za pomocą poniższego zaproszenia może rozwiązać ten problem.
 
 > [!api]
 >
 > @api {POST} /vps/{serviceName}/openConsoleAccess
 >
+> Parametry połączenia API:
+>
+>> serviceName
+>>> ID serwera VPS, który wygląda jak vpsxxxxx.ovh.net
+>> Protokół:
+>>> VNC
 
-Pomimo pozytywnej informacji ze strony API możliwe jest, że w rzeczywistości łączenie będzie trwało od jednej do dwóch minut, jest to czas niezbędny do otwarcia portu.
+Pomimo pozytywnego powrotu API połączenie może trwać kilka minut, zanim port zostanie faktycznie otwarty.
 
-### Serwery VPS z oferty 2016
+Zalecamy użycie jednego z następujących klientów:
 
-W przypadku problemów z połączeniem przez KVM, zalecamy skorzystanie z API:
+- [UltraVnc](https://www.uvnc.com/downloads/ultravnc.html){.external}
+- [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/){.external}
+
+Korzystaj ze szczegółowych informacji dostarczonych przez wywołanie API, aby zdalnie połączyć się z serwerem VPS za pomocą jednego z wyżej wymienionych klientów oprogramowania.
+
+#### Na serwerze VPS 2016
+
+W przypadku problemów z KVM, postępuj zgodnie z poleceniem API dotyczącym dostępu do KVM:
 
 > [!api]
 >
 > @api {POST} /vps/{serviceName}/getConsoleUrl
 >
+> Parametry połączenia API:
+>
+>> serviceName
+>>> ID serwera VPS, który wygląda jak vpsxxxxx.ovh.net
+>
+
+> [!primary]
+>
+> Jeśli nadal masz problemy z wyświetlaczem, zalecamy usunięcie z adresu URL części "auto". Jeśli adres URL jest (link dla Ciebie może być inny, przykład ten pokazuje tylko część adresu URL do usunięcia) https://compute.sbg1.cloud.ovh.net:6080/vnc_auto.html?token=xxxxxxxxxxxx to musi stać się https://compute.sbg1.cloud.ovh.net:6080/vnc.html?token=xxxxxxxxxxxx
+>
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com>.

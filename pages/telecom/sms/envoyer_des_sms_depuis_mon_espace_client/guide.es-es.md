@@ -1,12 +1,11 @@
 ---
-title: 'Enviar SMS desde el área de cliente'
+title: Enviar SMS desde el área de cliente
 slug: enviar-sms-desde-el-area-de-cliente
-excerpt: 'Cómo enviar SMS fácilmente desde el área de cliente de OVHcloud'
-legacy_guide_number: g2142
-section: 'Enviar SMS'
+excerpt: Cómo enviar SMS fácilmente desde el área de cliente de OVHcloud
+section: Enviar SMS
 ---
 
-**Última actualización: 14/11/2019**
+**Última actualización: 28/10/2020**
 
 ## Objetivo
 
@@ -17,12 +16,13 @@ Es posible enviar SMS directamente desde el área de cliente de OVHcloud.
 ## Requisitos
 
 - Disponer de una cuenta de SMS en OVHcloud con saldo de SMS.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
 
 ## Procedimiento
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovhtelecom.fr/manager/) y haga clic en `Telecom`{.action} (1). A continuación, haga clic en `SMS`{.action} en la columna izquierda (2) y seleccione su cuenta de SMS (3).
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) y haga clic en `Telecom`{.action}. A continuación, haga clic en `SMS`{.action} en la columna izquierda y seleccione su cuenta de SMS.
 
-En la pestaña **Inicio**, haga clic en el enlace `Enviar un SMS`{.action} (4) del apartado **Quiero...**.
+En la pestaña **Inicio**, haga clic en el enlace `Enviar un SMS`{.action} del apartado **Quiero...**.
 
 ![quiero enviar un sms](images/sms-send-control-panel01E.png){.thumbnail}
 
@@ -32,15 +32,15 @@ Una vez en la página de envío de los SMS, podrá configurar distintos parámet
 
 ![configurar remitente y destinatario](images/sms-send-control-panel02E.png){.thumbnail}
 
-En el desplegable `Remitente`{.action} (1), seleccione un número corto que permita responder (solo para las cuentas de OVHcloud Francia) o un remitente alfanumérico. Para más información sobre cómo crear un remitente, consulte el apartado [3. Elegir el remitente de SMS](https://docs.ovh.com/es/sms/enviar-sms-desde-el-area-de-cliente/#3-elegir-el-remitente-del-sms){.external} de esta guía.
+En el desplegable `Remitente`{.action} (1), seleccione un número corto que permita responder (solo para las cuentas de OVHcloud Francia) o un remitente alfanumérico. Para más información sobre cómo crear un remitente, consulte el apartado [3. Elegir el remitente de SMS](./#3-elegir-el-remitente-del-sms) de esta guía.
 
 Introduzca a continuación el número del destinatario (2) en formato internacional (+346XXXXXXXX). También es posible enviar SMS a varios destinatarios. Puede hacerlo de dos formas diferentes:
 
 - Mediante una lista de destinatarios en formato .CSV con el botón `Lista de destinatarios`{.action}.
-Para más información, puede consultar nuestra guía relativa a las [listas de destinatarios de SMS](https://docs.ovh.com/es/sms/lista-de-destinatarios-sms).
+Para más información, puede consultar nuestra guía relativa a las [listas de destinatarios de SMS](../lista-de-destinatarios-sms).
 
 - Mediante una agenda de contactos (3). Puede crearla directamente en el área de cliente o importarla a través de un archivo .CSV o .TXT.
-Para más información, puede consultar nuestra guía relativa a las [agendas de contactos de SMS](https://docs.ovh.com/fr/sms/gerer_mes_carnets_dadresses_sms/).
+Para más información, puede consultar nuestra guía relativa a las [agendas de contactos de SMS](../agenda-de-contactos-de-sms/).
 
 ### 2. Escribir un SMS
 
@@ -56,9 +56,11 @@ Las tablas que ofrecemos a continuación recogen los caracteres autorizados con 
 
 **Opciones avanzadas**
 
-Desplegando estas opciones, puede realizar un envío de SMS en diferido. Por defecto, el envío será inmediato.
+![envoi sms manager](images/sms-send-control-panel-advanced.png){.thumbnail}
 
-También puede configurar el tipo de envío, eligiendo entre los siguientes:
+Desplegando estas opciones, puede realizar un envío de SMS en diferido (1). Por defecto, el envío será inmediato.
+
+También puede configurar el tipo de envío (2), eligiendo entre los siguientes:
 
 - Estándar: Es el SMS más utilizado.
 - Flash: El SMS se muestra directamente en la pantalla del teléfono.
@@ -91,11 +93,11 @@ Si quiere añadir un remitente de SMS adicional, haga clic en el botón `Accione
 
 Existen diversas opciones a la hora de añadir un nuevo remitente de SMS (3):
 
-- **Añadir remitentes manualmente**: Introduzca el nombre que quiera que aparezca como remitente, una descripción (opcional) y una breve explicación motivando el uso de dicho nombre (4). 
+- **Añadir remitentes manualmente**: Introduzca el nombre que quiera que aparezca como remitente, una descripción (opcional) y una breve explicación motivando el uso de dicho nombre (4). También es necesario un justificante.
 
 > [!primary]
 >
-> En caso de solicitar el nombre de una empresa tercera como remitente, deberá proporcionar un justificante que le autorice a utilizar dicho nombre. En ese caso, deberá enviarnos dicho justificante abriendo un tíquet de soporte desde el área de cliente. La validación de los remitentes creados manualmente es gratuita y se realiza en una plazo que oscila entre uno y dos días laborables, de lunes a viernes, de 08:00 a 20:00.
+> Le solicitamos un justificante en el marco de nuestra política de seguridad. Se trata por defecto de documento en papel con el membrete de la empresa o de la marca, incluyendo la autorización de un responsable con firma y sello de esa empresa,  documento de identidad, o extracto  de registro de comercio (CIF) si no es una marca registrada.
 >
 
 - **Añadir remitentes a partir de datos personales**: Puede solicitar un remitente basado en los datos de su cuenta de OVHcloud. Al seleccionar esta opción, aparecerá una tabla con los remitentes disponibles. Haga clic en `+`{.action} para añadir el remitente correspondiente.
@@ -104,4 +106,4 @@ Existen diversas opciones a la hora de añadir un nuevo remitente de SMS (3):
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/).
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

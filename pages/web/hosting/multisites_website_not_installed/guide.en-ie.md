@@ -81,7 +81,7 @@ When you check these records, there are two possible outcomes:
 |Possible outcomes|What to do|
 |---|---|
 |The targets are correct|This means your domain name has been correctly configured. If you have modified its DNS configuration, please allow 24 hours for the changes to fully propagate.|
-|The targets are incorrect|Your domain name’s configuration needs to be modified. If it uses the OVH configuration, please follow the steps provided in our guide to [Editing your DNS zone](https://docs.ovh.com/ie/en/domains/hosting_how_to_edit_my_dns_zone/){.external}. If it doesn’t use the OVH configuration, follow the instructions provided in your registrar’s interface. Once you have modified the DNS zone configuration, you will need to allow 24 hours for the changes to fully propagate.|
+|The targets are incorrect|Your domain name’s configuration needs to be modified. If it uses the OVH configuration, please follow the steps provided in our guide to [Editing your DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone). If it doesn’t use the OVH configuration, follow the instructions provided in your registrar’s interface. Once you have modified the DNS zone configuration, you will need to allow 24 hours for the changes to fully propagate.|
 
 If you have made all the changes required in steps 1 and 2, and taken into account the time required for changes to take effect, the “Website not installed” error page should no longer appear.
 
@@ -89,6 +89,6 @@ If you have made all the changes required in steps 1 and 2, and taken into accou
 
 [Hosting multiple websites on your web hosting plan](https://docs.ovh.com/ie/en/hosting/multisites-configuring-multiple-websites/){.external}.
 
-[Web hosting: How to edit your DNS zone](https://docs.ovh.com/ie/en/domains/hosting_how_to_edit_my_dns_zone/){.external}.
+[Web hosting: How to edit your DNS zone](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

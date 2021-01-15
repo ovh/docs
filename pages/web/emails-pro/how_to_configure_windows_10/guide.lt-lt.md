@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuring your Email Pro account in the Mail application for Windows 10'
 slug: mail-configuration-windows-10
 excerpt: 'Find out how to configure an Email Pro account on the Mail application for Windows 10'

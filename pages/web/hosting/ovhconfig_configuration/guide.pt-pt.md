@@ -58,12 +58,12 @@ Quando tiver o ficheiro .ovhconfig, pode editá-lo. Para o fazer, utilize um pro
 
 ```php
 app.engine=php
-app.engine.version=7.3
+app.engine.version=8.0
 
 http.firewall=none
 environment=production
 
-container.image=stable
+container.image=stable64
 ```
 
 Personalize os valores das variáveis em função da configuração que pretende utilizar com o seu alojamento web. 
@@ -75,6 +75,10 @@ Personalize os valores das variáveis em função da configuração que pretende
 |http.firewall|Permite ativar ou desativar a [firewall fornecida com os alojamentos web da OVH](https://www.ovh.pt/alojamento-partilhado/mod_security.xml){.external}. Insira “security” para ativar ou “none” para desativar.|
 |environment|Permite gerir o comportamento da cache dos ficheiros estáticos do seu website, assim como o tratamento dos erros PHP. Insira “production” para maximizar a implementação de cache e ocultar os erros PHP, ou “development” para não aplicar nenhuma cache e apresentar os erros PHP.|
 |container.image|Permite alterar o ambiente de execução utilizado pelo alojamento. Indique um motor à sua escolha. Para mais informações, consulte a secção [“Descobrir as configurações disponíveis”](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web/#descobrir-as-configuracoes-disponiveis_1){.external} do manual "Alterar a configuração do alojamento web".|
+
+> [!warning]
+>
+> Quando escolher o ambiente de execução "estável64", verifique que o seu site é compatível com o ambiente de 64 bits.
 
 A seguir, poderá encontrar os detalhes de aplicação do ficheiro .ovhconfig:
 
@@ -101,11 +105,11 @@ app.engine=php
 ; __app.engine.version__ specify version of your engine
 ;
 ; for php:
-;   default: 7.3
+;   default: 8.0
 ; for phpcgi:
 ;   this options is ignored (= fallback in AUTO)
 ;
-app.engine.version=7.3
+app.engine.version=8.0
 
 ; __http.firewall__ used to add application firewall  (filter http requests)
 ;
@@ -135,9 +139,9 @@ environment=production
 
 ; __container.image__
 ;
-; values: legacy | stable | jessie.i386 | testing
+; values: legacy | stable | stable64
 ;
-container.image=stable
+container.image=stable64
 ```
 
 #### 4 - Descarregar o ficheiro .ovhconfig para o espaço de armazenamento

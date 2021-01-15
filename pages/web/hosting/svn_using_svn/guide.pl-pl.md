@@ -1,173 +1,158 @@
 ---
-title: 'Korzystanie z SVN na hostingu'
+title: SVN
 slug: hosting_www_korzystanie_z_svn
-section: 'FTP i SSH'
+legacy_guide_number: 1961
+excerpt: Dowiedz się, jak korzystać z SVN przez SSH na Twoim hostingu
+section: FTP i SSH
 ---
 
-## 
+**Ostatnia aktualizacja z dnia 28-10-2020**
 
-- Posiadanie hostingu www z dostępem przez SSH (od oferty Pro)
-- Umiejętność zalogowania się przez SSH
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> 
 
+## Wprowadzenie
 
+SVN, który jest skrótem od "subwersji", jest systemem zarządzania wersjami. 
 
+**Dowiedz się, jak korzystać z SVN przez SSH na Twoim hostingu**
 
-## 
-Po zalogowaniu na hosting przez SSH, należy utworzyć katalog główny dla repozytoriów svn oraz repozytorium.
+> [!warning]
+>
+> OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
+> 
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> 
 
-Wpisz polecenie:
+## Wymagania
 
+- Posiadanie [hostingu](https://www.ovh.pl/hosting/) pozwalającego na połączenie SSH (**od oferty Pro**)
+- Logowanie przez SSH do hostingu (zapoznaj się z naszym przewodnikiem [Korzystanie z dostępu SSH do hostingu](../hosting_www_ssh_na_hostingu/)
 
-```
+## W praktyce
+
+### Tworzenie zgłoszenia
+
+Po zalogowaniu się przez [SSH na Twoim hostingu](../hosting_www_ssh_na_hostingu/){.external} utwórz katalog główny depozytów SVN, a następnie wpłata.
+
+W tym celu wystarczy wpisać polecenie:
+
+```bash
 mkdir svn
 ```
 
-
 i
 
-
-```
+```bash
 svnadmin create svn/depot_test
 ```
 
+Następnie możesz sprawdzić, czy katalogi zostały utworzone za pomocą polecenia:
 
-Korzystając z poniższej komendy, będziesz mógł sprawdzić, czy katalogi zostały utworzone:
-
-
-```
+```bash
 ls -la
 ```
 
+Aby uzyskać katalogi, należy je uzyskać zgodnie z poniższym obrazkiem:
 
+![hosting](images/3078.png){.thumbnail}
 
+### Tworzenie kluczy publicznych / prywatnych
 
-## 
-Powinieneś otrzymać katalogi tak, jak to widać na tym obrazku:
+Przed kontynuowaniem operacji utwórz parę kluczy SSH z poziomu komputera, którego będziesz używał do łączenia się z repozytorium SVN.
 
-![](images/img_3078.jpg){.thumbnail}
+Zapoznaj się z przewodnikiem [Tworzenie kluczy SSH](https://docs.ovh.com/pl/public-cloud/tworzenie-kluczy-ssh/). Nie musisz postępować zgodnie z instrukcjami etapu [Zaimportuj klucz SSH do Panelu klienta OVHcloud](https://docs.ovh.com/pl/public-cloud/tworzenie-kluczy-ssh/#importowanie-klucza-ssh-do-panelu-klienta-ovhcloud_1) w tym przewodniku.
 
+### Dodanie klucza publicznego do hostingu
 
-## Linux z openssh
-Ta część odbywa się na komputerze, który będzie się łączył z repozytorium svn (klient svn). Należy utworzyć parę kluczy dsa. W tym celu wpisz w konsoli to polecenie:
+Po uzyskaniu klucza dodaj go do Twojego hostingu w pliku .ssh/authorized_keys2. W tym celu wprowadź poniższy wiersz poleceń:
 
-
-```
-ssh-keygen -t dsa
-```
-
-
-i pobierz linię znajdującą się domyślnie w pliku .ssh/id_dsa.pub. Aby wyedytować plik, użyj polecenia vi. 
-
-
-```
-vi .ssh/id_dsa.pub
-```
-
-
-Odnajdziesz klucz składający się z trzech ciągów znaków: typ, klucz i komentarz.
-
-
-## Windows z putty
-Ta część odbywa się na komputerze, który będzie się łączył z repozytorium svn (klient svn).
-Pobierz pliki instalacyjne programu windows putty i zainstaluj ten program.
-Należy utworzyć parę kluczy dsa. W tym celu uruchom program PuTTYGen, wygeneruj parę kluczy i je zapisz:
-
-![](images/img_3079.jpg){.thumbnail}
-
-
-## 
-Po uzyskaniu klucza należy dodać klucz na hostingu w pliku .ssh/authorized_keys2. W tym celu wystarczy wpisać poniższe polecenie:
-
-
-```
+```bash
 mkdir .ssh
 chmod 700 .ssh
 vi .ssh/authorized_keys2
 ```
 
+Po otworzeniu pliku wprowadź następujący wiersz:
 
-Po otwarciu pliku należy wpisać w nim następującą linię:
-
-
-```
-command="/usr/bin/svnserve --root=/homez.XXX/loginFTP/svn --tunnel --tunnel-user=marc",no-port-forwarding,no-agent-forwarding,no-X11-forwarding,no-pty
+```bash
+command="/usr/bin/svnserve --root=/homez.XXX/loginFTP/svn --tunnel --tunnel-user=john",no-port-forwarding,no-agent-forwarding,no-X11-forwarding,no-pty
 ```
 
+Postępuj zgodnie z poprzednio utworzonym kluczem, wszystko w tej samej linii.
 
-Wszystko powinno zostać wpisane w tej samej linii.
-Zastąp "/home.XXX/loginFTP" i "marc" odpowiednimi informacjami!
-Aby uzyskać informację na temat cyfr, których należy użyć zamiast /home.XXX/loginFTP", wpisz polecenie "pwd" przez ssh.
+> [!primary]
+>
+> Zastąp "/home.XXX/loginFTP" i "john" Twoimi identyfikatorami SSH.
+> Aby dowiedzieć się, jakie liczby należy użyć do zastąpienia "/home.XXX/loginFTP", wpisz komendę "pwd" przez SSH.
+>
+> Informacje te znajdziesz również w przewodniku [Korzystanie z dostępu SSH do hostingu](../hosting_www_ssh_na_hostingu/){.external}.
+> 
 
-![](images/img_3080.jpg){.thumbnail}
-Będzie więc można pobrać zawartość repozytorium bez logowania przez ssh na maszynę.
-Uwaga: Nie można używać tego samego klucza dla usługi svn i dla ssh.
+![hosting](images/3080.png){.thumbnail}
 
+Możesz pobrać zawartość repozytorium bez konieczności logowania się bezpośrednio przez SSH do maszyny.
 
-## Linux
-Możesz wykonać test z komputera łączącego się z repozytorium svn wpisując w linii poleceń:
+> [!warning]
+>
+> Uwaga, ten sam klucz nie może być używany dla SVN i SSH w
+> wiersz poleceń
+> 
 
+### Przykłady
 
-```
+#### Linux
+
+Możesz wykonać test z poziomu komputera łączącego się z depot SVN za pomocą poniższego wiersza:
+
+```bash
 svn checkout svn+ssh://loginFTP@clusterXXX/depot_test
 ```
 
+#### Windows z TortoiseSVN
 
+- Pobierz i zainstaluj TortoiseSVN ([http://tortoisesvn.net/downloads](http://tortoisesvn.net/downloads){.external})
+- Kliknij prawym przyciskiem myszy na klucz prywatny. W prawym dolnym rogu znajduje się ikona, a klucz ładuje się do agenta uwierzytelniającego.
+- Utwórz katalog, kliknij prawym przyciskiem myszy i wybierz "SVN Checkout". 
+- Wpisz `svn+ssh://loginFTP@xxplan.ovh.net/depot_test` w polu "URL of repository" i kliknij `OK`:
 
+![hosting](images/3081.png){.thumbnail}
 
-## Windows z TortoiseSVN
+Dostępna jest bardzo dobra dokumentacja w języku angielskim dla Subversion: [http://svnbook.red-bean.com/en/1.5/index.html](http://svnbook.red-bean.com/en/1.5/index.html){.external}
 
-- Pobierz i zainstaluj program tortoisesvn ([http://tortoisesvn.net/downloads](http://tortoisesvn.net/downloads))
-- Kliknij dwa razy na klucz prywatny. Na dole z prawej strony pojawi się ikonka. Klucz został pobrany przez program uwierzytelniający. 
-- Utwórz katalog. Kliknij prawym przyciskiem na ten katalog i wybierz "SVN Checkout". Wpisz:
+### Szczególne przypadki
 
+#### Załóż kilka kont
 
-```
-svn+ssh://loginFTP@clusterXXX/depot_test
-```
+Najpierw należy utworzyć kilka kluczy SSH. Następnie podczas dodawania klucza publicznego do hostingu:
 
-
-
-w polu "URL of repository" i kliknij na OK:
-
-![](images/img_3081.jpg){.thumbnail}
-Na tej stronie znajduje się bardzo dobra dokumentacja w języku angielskim na temat SVN: [http://svnbook.red-bean.com/en/1.5/index.html](http://svnbook.red-bean.com/en/1.5/index.html)
-
-
-## Utworzenie kilku kont
-W pierwszej kolejności należy utworzyć kilka kluczy ssh. Następnie podczas dodawania publicznego klucza na hostingu:
-
-
-```
+```bash
 command="/usr/bin/svnserve --root=/home.XXX/loginFTP/svn --tunnel --tunnel-user=marc",no-port-forwarding,no-agent-forwarding,no-X11-forwarding,no-pty
 ```
 
+Zmodyfikuj poniższy parametr dodając do niego różnych użytkowników:
 
-Należy zmienić poniższy parametr dodając poszczególnych użytkowników:
-
-
-```
+```bash
 --tunnel-user
 ```
 
+należy pamiętać, że można również nadawać dostęp w trybie tylko do odczytu poprzez dodanie parametru:
 
-Można również przyznać dostęp tylko do odczytu dodając parametr:
-
-
-```
+```bash
 --read-only.
 ```
 
+#### Sprawdź lokalnie na serwerze
 
+Jeśli chcesz przeprowadzić lokalną weryfikację, dostarczone przykłady nie będą działać. Należy użyć:
 
-
-## Lokalna weryfikacja z poziomu serwera
-Jeśli chcesz dokonać weryfikacji lokalnie, podane przykłady nie będą działać. 
-Należy użyć:
-
-
-```
-svn+ssh://login@ftp.nazwa_strony.tld/home.XXX/login/svn/depot_test
+```bash
+svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 ```
 
+## Sprawdź również
 
+[Korzystanie z dostępu SSH do hostingu](../hosting_www_ssh_na_hostingu/){.external}
 
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

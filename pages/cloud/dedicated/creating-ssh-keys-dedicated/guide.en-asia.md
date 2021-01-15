@@ -22,7 +22,7 @@ Please note that SSH keys are not used for authentication on servers running the
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
-- a [dedicated server](https://www.ovh.com/asia/dedicated_servers/) in your OVHcloud account
+- a [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) in your OVHcloud account
 - administrative access (root) via SSH
 
 ## Instructions
@@ -170,7 +170,7 @@ If you have copied the full output, the identifier after the key should already 
 
 > [!primary]
 >
-> Any keys saved in the "Dedicated" section will be usable for your VPS services as well. Regarding SSH keys for Public Cloud services, please refer to [this guide](../../public-cloud/create-ssh-keys).
+> Any keys saved in the "Dedicated" section will be usable for your VPS services as well. Regarding SSH keys for Public Cloud services, please refer to [this guide](../../public-cloud/public-cloud-first-steps).
 >
 
 

@@ -2,7 +2,7 @@
 title: SSH Einführung
 slug: ssh-einfuehrung
 excerpt: Hier erfahren Sie, wie Sie den SSH-Dienst zum Zugriff auf Ihren Server verwenden
-section: SSH und SSH-Schlüssel
+section: Erste Schritte
 order: 1
 ---
 

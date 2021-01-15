@@ -5,7 +5,7 @@ excerpt: 'This guide will show you how to assign a public or private IP address 
 section: 'Getting started'
 ---
 
-**Last updated 3rd August 2020**
+**Last updated 13th October 2020**
 
 ## Objective
 
@@ -44,7 +44,7 @@ To configure a public IP address on your virtual machine, you must first choose 
 
 #### Linux
 
-Here is a configuration example on a Debian 8 operating system:
+Here is a configuration example on a Debian operating system:
 
 ![IP Interface](images/config_ip_interfaces.jpg){.thumbnail}
 
@@ -66,7 +66,7 @@ If your virtual machine cannot find the network, try checking that the network a
 
 #### Windows
 
-Here is a configuration example for Windows 2012 R2.
+Here is a configuration example for Windows:
 
 In the `configuration panel`{.action}, go to `Network and Internet`{.action}, then `Network and Sharing Centre`{.action}, and then `Change Network Adapter`{.action}.
 
@@ -93,12 +93,9 @@ The process for configuring a private IP address is similar to that of a public 
 
 In your interface options, you can edit the following settings:
 
-- On an SDDC, a VLAN interface (10 to 20 by default and linked to the vRack, you can create more by consulting [this guide](https://docs.ovh.com/fr/private-cloud/creation-vlan-vxlan/)) and an internal VxLAN interface to the HPC
+- A VLAN interface (10 to 20 by default and linked to the vRack, you can create more by consulting [this guide](../creation-vlan-vxlan/)).
 
-- On a Dedicated Cloud, a VxLAN interface (vxw-dvs, etc.). If you need more VXLANs, you can open a support ticket
-
-
-#### SDDC
+- A VxLAN interface (vxw-dvs, etc.).
 
 In your virtual machine settings, you can use a VLAN or a VxLAN:
 
@@ -106,15 +103,11 @@ In your virtual machine settings, you can use a VLAN or a VxLAN:
 
 ![VLAN for SDDC](images/05vlan.png){.thumbnail}
 
-#### Dedicated Cloud
-
-In your virtual machine settings, you must use a VxLAN:
-
 ![VXLAN on the Private Cloud](images/06vxlan.png){.thumbnail}
 
 #### Linux
 
-Here is a configuration example on a Debian 8 operating system:
+Here is a configuration example on a Debian operating system:
 
 ![Private IP address on Linux](images/linux_private.PNG){.thumbnail}
 
@@ -134,7 +127,7 @@ You can also check the configuration with an `ifconfig`.
 
 #### Windows
 
-Here is a configuration example for Windows 2012 R2:
+Here is a configuration example for Windows:
 
 In the `configuration panel`{.action}, go to `Network and Internet`{.action}, then `Network and Sharing Centre`{.action}, and then to `Change Network Adapter`{.action}.
 

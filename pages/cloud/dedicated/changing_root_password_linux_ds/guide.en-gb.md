@@ -2,7 +2,8 @@
 title: Changing the root password on a Linux dedicated server
 slug: root-password
 excerpt: This guide will show you how to change the root password on a Linux dedicated server.
-section: Server Management
+section: Server management
+order: 1
 ---
 
 **Last updated 20th June 2018**
@@ -15,9 +16,9 @@ When you install or reinstall a distribution or operating system, you are given 
 
 ## Requirements
 
-* a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
-* administrative (root) access to the server via SSH
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
+- administrative (root) access to the server via SSH
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
 
@@ -46,7 +47,7 @@ passwd: password updated successfully
 
 #### Step 1: Identify the system partition
 
-After putting your server into [rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}, you will need to identify the system partition. You can do this with the following command:
+After putting your server into [rescue mode](../ovh-rescue/), you will need to identify the system partition. You can do this with the following command:
 
 ```sh
 # fdisk -l

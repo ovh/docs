@@ -76,7 +76,7 @@ Once you have entered this information, click `Next`{.action}. Then check the su
 Once you have selected an OVH-registered domain, you can also configure its DNS zone automatically or manually.
 
 - **For automatic DNS configuration:** tick the `Automatic configuration (recommended)`{.action} box.
-- **For manual DNS configuration:** untick the `Automatic configuration (recommended)`{.action}, then note down the information that needs to be modified. If you want to configure your DNS zone manually, you can use our guide on [Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/hosting_how_to_edit_my_dns_zone/){.external}.
+- **For manual DNS configuration:** untick the `Automatic configuration (recommended)`{.action}, then note down the information that needs to be modified. If you want to configure your DNS zone manually, you can use our guide on [Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
 Click `Confirm`{.action} to start adding the domain. This may take up to an hour. Changes made to a domain name’s configuration can take between 4 and a maximum of 24 hours to propagate fully.
 
@@ -110,7 +110,7 @@ Check through the information displayed, then click `Confirm`{.action}. Once you
 > You will need to carry out these modifications for your domain to be added successfully. If you do not do this, your domain addition will be cancelled.
 >
 
-To modify the domain name’s configuration (its DNS zone), you will need to use the interface provided by the service provider managing it. If you are doing this for a domain name registered with OVH, please use our guide on [Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/hosting_how_to_edit_my_dns_zone/){.external}. Once you have configured your domain, you will need to allow between 4 and 24 hours for the changes to propagate fully.
+To modify the domain name’s configuration (its DNS zone), you will need to use the interface provided by the service provider managing it. If you are doing this for a domain name registered with OVH, please use our guide on [Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}. Once you have configured your domain, you will need to allow between 4 and 24 hours for the changes to propagate fully.
 
 If you would like to find the elements that need to be changed in your domain name’s DNS configuration:
 
@@ -138,7 +138,7 @@ However, if you would like to set up your website manually, you can put it onlin
 
 [Setting up your website with 1-click modules](https://docs.ovh.com/ie/en/hosting/web_hosting_web_hosting_modules/){.external}.
 
-[Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/hosting_how_to_edit_my_dns_zone/){.external}.
+[Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
 [Publishing a website on your Web Hosting space](https://docs.ovh.com/ie/en/hosting/web_hosting_how_to_get_my_website_online/){.external}.
 

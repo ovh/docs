@@ -58,12 +58,12 @@ Es posible editar el archivo .ovhconfig utilizando un editor de texto (no confun
 
 ```php
 app.engine=php
-app.engine.version=7.3
+app.engine.version=8.0
 
 http.firewall=none
 environment=production
 
-container.image=stable
+container.image=stable64
 ```
 
 Personalice los valores de las variables según la configuración que quiera utilizar en su alojamiento web. 
@@ -75,6 +75,11 @@ Personalice los valores de las variables según la configuración que quiera uti
 |http.firewall|Permite activar o desactivar el [firewall incluido con todos los planes de hosting de OVH](https://www.ovh.es/hosting/mod_security.xml){.external}. Introduzca «security» para activarlo o «none» para desactivarlo.|
 |environment|Permite administrar el comportamiento de la caché de los archivos estáticos en su sitio web y el tratamiento de los errores PHP. Introduzca «production» para maximizar el almacenamiento en caché y ocultar los errores de PHP o «development» para que no se aplique ninguna caché y mostrar los errores PHP.|
 |container.image|Permite cambiar el entorno de ejecución que utiliza el alojamiento. Introduzca el motor que quiera utilizar. Puede consultar los distintos motores en el apartado «Opciones de configuración disponibles» de la guía [Modificar la configuración de un alojamiento web](https://docs.ovh.com/es/hosting/cambiar_el_entorno_de_ejecucion_de_un_alojamiento/#motor-de-php){.external}.|
+
+> [!warning]
+>
+> Al elegir el entorno de ejecución "stable64", compruebe que su sitio web sea compatible con un entorno de 64 bits.
+
 
 A continuación ofrecemos el detalle completo del archivo .ovhconfig:
 
@@ -90,10 +95,10 @@ A continuación ofrecemos el detalle completo del archivo .ovhconfig:
 ;
 ;   php:
 ;       IMPORTANT: register_globals and magic_quotes_gpc are off for security
-;       php options .htaccess (like php version) are ignored
+;       php optiones .htaccess (like php version) are ignored
 ;   phpcgi:
 ;       IMPORTANT this is a fallback to previous system
-;       in this case __app.engine.version__ will be considered as AUTO and php version will be old system
+;       in this case __app.engine.version__ will be considerated as AUTO and php version will be old system
 ;       (meaning depending .htaccess or .phpX extension)
 ;
 app.engine=php
@@ -101,13 +106,13 @@ app.engine=php
 ; __app.engine.version__ specify version of your engine
 ;
 ; for php:
-;   default: 7.3
+;   default: 8.0
 ; for phpcgi:
-;   this option is ignored (= fallback in AUTO)
+;   this options is ignored (= fallback in AUTO)
 ;
-app.engine.version=7.3
+app.engine.version=8.0
 
-; __http.firewall__ used to add application firewall (filter http requests)
+; __http.firewall__ used to add application firewall  (filter http requests)
 ;
 ; values: none | security
 ; default: none
@@ -135,9 +140,9 @@ environment=production
 
 ; __container.image__
 ;
-; values: legacy | stable | jessie.i386 | testing
+; values: legacy | stable | stable64
 ;
-container.image=stable
+container.image=stable64
 ```
 
 #### 4. Cargar el archivo .ovhconfig en el espacio de almacenamiento

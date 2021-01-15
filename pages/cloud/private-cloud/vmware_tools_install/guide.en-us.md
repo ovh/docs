@@ -1,62 +1,87 @@
 ---
-title: 'Install VMware tools'
-excerpt: ''
+title: Installing VMware tools
+excerpt: 'Find out how to install VMware tools on Linux or Windows'
 slug: install_vmware_tools
-section: 'Resource management'
+section: Virtual machine management
+order: 6
 ---
 
-The procedure for installing VMware Tools varies depending on the operating system of the virtual machine. For information about the OS-specific procedure, see the VMware [documentation for VMware Tools](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1014294){.external-link}.
+**Last updated 15th October 2020**
 
-Linux (Recent Versions)
--------------------------
+## Objective
 
-Versions
---------
+VMware Tools improve the performance of a virtual machine and enable many of its simple features to be used in VMware products.
 
-This installation method is valid for the following versions of GNU/Linux:
+**This guide explains the steps you need to follow in order to proceed with installing them.**
+
+## Requirements
+
+- Web client access (HTML5)
+
+## Instructions
+
+The procedure for installing VMware Tools varies depending on the operating system of the virtual machine. For information about the specific procedure for each OS, see the VMware [documentation for VMware Tools](https://kb.vmware.com/s/article/1014294){.external-link}.
+
+### Linux
+
+#### Recent versions
+
+Most recent Linux distributions offer the installation of VMware Tools via their package management systems, under the name [*Open VM Tools*](https://kb.vmware.com/s/article/2073803){.external-link}.
+
+This allows VMware Tools to be kept up-to-date in the same way as other components of the VM's operating system. 
+
+If the distribution you are using offers it, you can find the *Open VM Tools* under the following package name: *open-vm-tools*
+
+This installation method is valid at least for the following GNU/Linux versions:
 
 - Fedora 19 and above
-- Debian 7.x and higher
-- openSUSE 11.x and higher
-- Ubuntu 12.04 LTS and higher
-- Red Hat Enterprise Linux 7.0 and higher
-- CentOS 7.0 and higher
-- Oracle Linux 7.0 and higher
-- SUSE Linux Enterprise 11 SP4 and higher
-
-Most recent Linux distributions offer the installation of VMware Tools via their package management systems (under the name *Open VM Tools*). This allows VMware Tools to be maintained in the same way as other components of the VM operating system. If the distribution you are using offers this, you will be able to find the *Open VM Tools* under the package name: *open-vm-tools*.
+- Debian 7.x and above
+- openSUSE 11.x and later
+- Ubuntu 12.04 LTS and later
+- Red Hat Enterprise Linux 7.0 and later
+- CentOS 7.0 and above
+- Oracle Linux 7.0 and later
+- SUSE Linux Enterprise 11 SP4 and later
 
 
+#### Previous Versions
 
-Linux (Old Versions)
---------------------------
+To mount the VMware tools disk from the Vsphere web client, right-click on the VM, then click on `Guest OS`{.action} and finally on `Install VMware Tools`{.action}. 
 
-Mount the VMware tools disk from the Vsphere client web, right-click the VM, then select "Guest OS" by validating the "Install VMware Tools" option:
+![installer VMware Tools](images/tools.png){.thumbnail}
 
-![](images/tools.png){.thumbnail}
-
-Then mount the volume enabled by the following command:
+Then mount the volume activated by the command:
 
 ```sh
->     # mount /dev/cdrom /mnt
+> # mount /dev/cdrom /mnt
 ```
 
-Then unpack the VMwareTools archive (located in /tmp):
+Then unzip the VMwareTools archive. Here, in /tmp.
 
 ```sh
->     $ cd /tmp$ tar xvf /mnt/VMwareTools*.tar.gz $ cd /tmp/vmware-tools-distrib $
->         ./vmware-install.pl default
+> cd /tmp 
+> tar xvf /mnt/VMwareTools*.tar.gz
+> cd vmware-tools-distrib
+> ./vmware-install.pl default
 ```
 
-A small tip if you want to default and not prompt: add "default" to the installation line.
+> [!primary]
+>
+> If you want to keep suggested answers and not be interrupted during installation, add "default" as an argument to the installation line.
+>
 
-Once the installation is complete, the tools disk will automatically be unregistered from the system.
+Once the installation is complete, the tools disk will be automatically unregistered from the system.
 
-Windows
--------
+### Windows
 
-Once the volume is mounted using the "Install/Upgrade VMware Tools" option, find the disk in the "workstation" of your VM. Double-click it to start the installation of the Tools:
+Once the volume has been mounted via the “Install/Upgrade VMware Tools” option, find the disk in your VM’s “workstation”. Double-click on it to launch the Tools installation:
 
-![](images/windows.jpg){.thumbnail}
+![VMware tools windows](images/windows.jpg){.thumbnail}
 
-The installation wizard will then ask you to accept the licenses and select the type of installation (we recommend the "Full Installation"). Once the installation is complete, it will suggest that you restart the machine to propogate the changes. The CD drive will be automatically dismounted at the end of the installation.
+The installation wizard will then launch and ask to accept the licences and the type of installation to choose (We recommend that you install it completely).
+
+Once the installation is complete, it will offer to restart the machine to take into account the modifications. The CD drive will be automatically unmounted at the end of the installation.
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

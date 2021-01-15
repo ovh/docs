@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Sähköpostiosoitteen konfigurointi macOS Mail-sovelluksessa'
 excerpt: 'Opi konfiguroimaan MX Plan -sähköpostiosoite Mail-sovelluksessa El Capitan, Sierra ja High Sierra'
 slug: jaettu_sahkoposti_sahkopostin_konfigurointiohje_mac_-_el_capitan

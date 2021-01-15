@@ -2,7 +2,7 @@
 title: 'GPU Instanzen einrichten'
 slug: gpu-intanz-einrichten
 excerpt: 'Erfahren Sie hier, wie Sie unter Windows und Linux eine GPU Instanz einrichten'
-section: 'Über das OVH Kundencenter'
+section: 'Verwaltung im OVHcloud Kundencenter'
 ---
 
 **Letzte Aktualisierung am 06.12.2019**
@@ -15,7 +15,7 @@ Bei den eingesetzten GPUs handelt es sich um NVIDIA Tesla V100.
 
 > [!warning]
 >
-> Derzeit sind GPU Instanzen nur in den Rechenzentren GRA3, GRA5, GRA7 und BHS3 verfügbar. Möglicherweise müssen Sie ein neues Projekt erstellen und die Reihe 2017 auswählen. [Mehr erfahren](https://docs.ovh.com/gb/en/public-cloud/faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range) (EN).
+> Derzeit sind GPU Instanzen nur in den Rechenzentren GRA3, GRA5, GRA7 und BHS3 verfügbar. Möglicherweise müssen Sie ein neues Projekt erstellen und die Reihe 2017 auswählen.
 > 
 
 **Diese Anleitung erläutert, wie Sie eine GPU Instanz unter Linux oder Windows einrichten.**
@@ -127,4 +127,4 @@ Anschließend müssen Sie nur noch den erforderlichen Treiber installieren, der 
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en).
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en>.

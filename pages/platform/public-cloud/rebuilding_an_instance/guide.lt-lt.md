@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Virtualios mašinos atstatymas
 excerpt: Kaip atkurti virtualią mašiną Horizon sąsajoje.
 slug: virtualios_masinos_atstatymas

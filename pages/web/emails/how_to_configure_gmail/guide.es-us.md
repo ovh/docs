@@ -5,7 +5,7 @@ excerpt: 'Cómo configurar una cuenta MX Plan en la interfaz web de Gmail'
 section: 'Otros clientes de correo'
 ---
 
-**Última actualización: 05/05/2020**
+**Última actualización: 08/01/2021**
 
 ## Objetivo
 
@@ -69,7 +69,7 @@ Una vez introducidos los datos, haga clic en el botón `Añadir cuenta`{.action}
 
 ![MX Plan](images/configuration-gmail-web-step3.png){.thumbnail}
 
-A continuación, si quiere enviar mensajes con su dirección de correo de OVH desde la interfaz web de Gmail, marque la casilla `Sí, deseo poder enviar mensajes como`{.action} y haga clic en `Paso siguiente`{.action}. 
+A continuación, si quiere enviar mensajes con su dirección de correo de OVHcloud desde la interfaz web de Gmail, marque la casilla `Sí, deseo poder enviar mensajes como`{.action} y haga clic en `Paso siguiente`{.action}. 
 
 Introduzca el nombre que quiere que aparezca en los mensajes que envíe desde esa dirección de correo, marque la casilla `Tratarlo como un alias`{.action} y haga clic en `Siguiente paso`{.action}.
 

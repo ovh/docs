@@ -2,7 +2,9 @@
 title: Allgemeines
 excerpt: ''
 slug: allgemeines
+section: Erste Schritte
 legacy_guide_number: g597
+hidden: true
 ---
 
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Installing Real Time Monitoring (RTM)'
 slug: install-rtm
 excerpt: 'Learn how to install Real Time Monitoring on Linux or Windows'
@@ -193,13 +194,6 @@ yum update
 yum install ovh-rtm-metrics-toolkit
 ```
 
-### Installing RTM in Windows
-
-Once you are logged in to the remote desktop, take the following steps:
-
-- Install ActivePerl if you have never installed RTM before. You can download it here: <http://www.activestate.com/activeperl/>
-- Download and install the latest version of RTM here: <ftp://ftp.ovh.net/made-in-ovh/rtm/windows/>
-- Right-click on the file and then click `Run as administrator`{.action}
 
 ## Go further
 

@@ -2,6 +2,7 @@
 title: Persistente Konfiguration der Failover-IP
 excerpt: Persistente Konfiguration der Failover-IP
 slug: persistente_konfiguration_der_failover-ip
+section: 'Netzwerk und IP'
 legacy_guide_number: g1885
 ---
 

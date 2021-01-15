@@ -1,5 +1,5 @@
 ---
-title: Hardware Diagnostics
+title: Hardware diagnostics
 slug: hardware-diagnostics
 excerpt: This guide will show you how to diagnose hardware issues on your server.
 section: Security
@@ -16,8 +16,8 @@ At some point during the life of your server, you may encounter a fault due to a
 
 ## Requirements
 
-* a [dedicated server](https://www.ovh.ie/dedicated_servers/){.external}
-* [rescue mode activated](https://docs.ovh.com/ie/en/dedicated/rescue_mode/){.external}
+- a [dedicated server](https://www.ovh.ie/dedicated_servers/)
+- [rescue mode activated](../rescue_mode/)
 
 ## Instructions
 

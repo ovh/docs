@@ -6,7 +6,7 @@ section: Private SQL
 order: 2
 ---
 
-**Last updated 16th September 2020**
+**Last updated 30th October 2020**
 
 ## Objective
 
@@ -23,16 +23,16 @@ A database (DB) is used to store what are known as dynamic elements, such as com
 
 ### Creating a database
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the SQL instance concerned. Click on the `Databases` tab, then on `Add database`{.action}.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the SQL instance concerned. Click on the `Databases` tab, then on `Add database`{.action}.
 
 ![private-sql](images/private-sql-createdb01.png){.thumbnail}
 
 Fill in the fields by following the criteria listed. You can create a user directly by ticking the **Create User** box.
 
 - **Database name** (obligatory): this will be your database’s name.
-- **Username**: This is name of the user that can log in to your database and perform requests (optional if the **Create User** box has not been ticked).
-- **Rights** (optional if the box is unticked): the permissions that will be associated with the user on the database. For standard usage, select `Administrator`{.action}. The permissions can be modified as follows.
-- **Password**/**Confirm password** (optional if the box is unticked): enter a password, then confirm it.
+- **Username**: This is name of the user that can log in to your database and perform requests (only applicable if the **Create User** box is ticked).
+- **Rights** (only if the box is ticked): the permissions that will be associated with the user on the database. For standard usage, select `Administrator`{.action}. The permissions can be modified as follows.
+- **Password**/**Confirm password** (only if the box is ticked): enter a password, then confirm it.
 
 Finally, click `Confirm`{.action}.
 
@@ -42,7 +42,7 @@ Finally, click `Confirm`{.action}.
 
 To use an OVHcloud database server, you need to create users with specific rights to connect to a database.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the database name concerned. Next, switch to the `Users and rights` tab and click `Add user`{.action}.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the database name concerned. Next, switch to the `Users and rights` tab and click `Add user`{.action}.
 
 ![private-sql](images/private-sql-user01.png){.thumbnail}
 
@@ -52,13 +52,13 @@ Enter a “username” and a “password”, then click `Confirm`{.action}.
 
 To allow a user to perform actions on a database, it is necessary to assign permissions to the user.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the database name concerned. Next, switch to the `Users and rights` tab. Click on the  `...`{.action} button to the right of the user concerned, then on `Manage rights`{.action}.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the database name concerned. Next, switch to the `Users and rights` tab. Click on the  `...`{.action} button to the right of the user concerned, then on `Manage rights`{.action}.
 
 ![private-sql](images/private-sql-rights01.png){.thumbnail}
 
 In the left-hand column, **Database**, you will see a list of the databases on your database server.
 
-The 3 types of permissions proposed are described below:w
+The 3 types of permissions proposed are described below:
 
 - **Administrator**: Authorisation of the following queries: **Select/Insert/Update/Delete/Create/Alter/Drop**
 - **Reading/Writing**: Authorisation of the following queries: **Select/Insert/Update/Delete**
@@ -81,7 +81,7 @@ The 3 types of permissions proposed are described below:w
 > a backup is created and downloaded from your side before any deletion.
 > 
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the SQL instance concerned.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the SQL instance concerned.
 
 To delete a database on your database server, go to the `Databases` tab, then click on the `...`{.action} button to the right of the database concerned, then click `Delete the database`{.action}.
 

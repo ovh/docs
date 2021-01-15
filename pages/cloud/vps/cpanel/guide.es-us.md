@@ -1,5 +1,5 @@
 ---
-title: 'Implementar cPanel en CentOS 7'
+title: 'Desplegar cPanel en un VPS'
 excerpt: 'Descubra cómo crear instancias de un VPS con la aplicación cPanel preinstalada'
 slug: cpanel
 section: 'Uso avanzado'
@@ -35,7 +35,7 @@ Si su VPS ya esta listo y quiere tener cPanel, puede reinstalar el VPS desde su 
 
 > [!warning]
 >
-> Si reinstala el VPS, toda la información almacenada puede perderse..
+> Si reinstala el VPS, toda la información almacenada puede perderse.
 >
 
 ### Primera conexión
@@ -47,7 +47,7 @@ Una vez que reciba el email con el enlace único, por favor proceda al enlace pa
 > Si el enlace ha expirado, por favor reinstale el VPS otra vez con cPanel.
 >
 
-La URL anterior permite iniciar sesión sin credenciales ( usuario y contraseña) en su administrador WHM.
+La URL anterior permite iniciar sesión sin credenciales (usuario y contraseña) en su administrador WHM.
 
 #### Paso 1: Lea y acepte los términos de cPanel.
 
@@ -67,11 +67,9 @@ Ahora usted debería poder iniciar sesión en WHM y SSH usando el usuario y la c
 
 Le recomendamos que tome más medias adicionales para proteger su WHM y VPS. Por esto le recomendamos que lea las recomendamos proporcionadas por cPanel aquí:
 
-Además, le recomendamos configurar el [firewal](../../dedicated/firewall-de-red/ y  una [solución de backup](../consejos-proteccion-vps/#guardar-copia-de-seguridad-del-sistema-y-los-datos) en su VPS.
-
+Además, le recomendamos configurar el [firewall](../../dedicated/firewall-de-red/) y una [solución de backup](../consejos-proteccion-vps/) en su VPS.
 
 
 ## Más información
-
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>

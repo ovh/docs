@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Konfigurace e-mailové adresy v aplikaci Pošta pro Windows 10'
 slug: konfigurace-posta-windows-10
 excerpt: 'Zjistěte, jak nakonfigurovat e-mailovou adresu služby MX Plan v aplikaci Pošta pro operační systém Windows 10'

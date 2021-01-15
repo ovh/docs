@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Transfer an instance backup from one datacentre to another'
 excerpt: 'This guide will show you how to transfer an instance backup from one datacentre to another while preserving the configuration and state of the instance'
 slug: instance_atsargines_kopijos_perkelimas_is_vieno_duomenu_centro_i_kita

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Kontrola pomalého serveru
 excerpt: ''
 slug: kontrola_pomaleho_serveru

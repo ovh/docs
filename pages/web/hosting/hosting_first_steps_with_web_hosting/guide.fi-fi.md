@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Webhotellin käytön aloitus
 slug: webhotellin-kayton-aloitus
 excerpt: Katso, kuinka webhotellin käyttö aloitetaan.

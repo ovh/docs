@@ -38,9 +38,9 @@ E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients einger
 
 > [!primary]
 >
-> In dieser Anleitung verwenden wir als Serverbezeichnung: pro**X**.mail.ovh.net. Das „X“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
+> In dieser Anleitung verwenden wir als Serverbezeichnung: pro**?**.mail.ovh.net. Das „?“ muss mit der jeweils passenden Nummer Ihres zuständigen Servers für den einzurichtenden Email Pro Dienst ersetzt werden.
 > 
-> Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager), wenn Sie im Bereich `Web`{.action} im Menü links unter `E-Mail Pro`{.action}
+> Sie finden diese Information im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager), wenn Sie im Bereich `Web Cloud`{.action} im Menü links unter `E-Mail Pro`{.action}
 > den Dienst auswählen. Der Servername wird im Kasten **Verbindung** auf der Seite `Allgemeine Informationen`{.action} angezeigt.
 >
 
@@ -62,7 +62,7 @@ Geben Sie anschließend die geforderten Informationen ein.
 
 |Information|Beschreibung|
 |---|---|
-|Server|Tragen Sie „pro**X**.mail.ovh.net“ ein.|
+|Server|Tragen Sie „pro**?**.mail.ovh.net“ ein.|
 |Port|Tragen Sie den Port „993“ ein.|
 |Verschlüsselungsmethode|Wählen Sie „SSL/TLS“ aus.|
 |Authentifizierung einrichten|Setzen Sie keinen Haken bei „Anmeldung mithilfe der gesicherten Kennwortauthentifizierung (SPA) erforderlich“.|
@@ -71,7 +71,7 @@ Geben Sie anschließend die geforderten Informationen ein.
 
 |Information|Beschreibung|
 |---|---|
-|Server|Tragen Sie „pro**X**.mail.ovh.net“ ein.|
+|Server|Tragen Sie „pro**?**.mail.ovh.net“ ein.|
 |Port|Tragen Sie den Port „587“ ein.|
 |Verschlüsselungsmethode|Wählen Sie „STARTTLS“ aus.|
 |Authentifizierung einrichten|Setzen Sie keinen Haken bei „Anmeldung mithilfe der gesicherten Kennwortauthentifizierung (SPA) erforderlich“.|
@@ -86,8 +86,8 @@ Wenn manuelle Änderungen in den Account-Einstellungen erforderlich sind, verwen
 
 |Servertyp|Servername|Verschlüsselungsmethode|Port|
 |---|---|---|---|
-|Eingangsserver|pro**X**.mail.ovh.net|SSL/TLS|993|
-|Ausgangsserver|pro**X**.mail.ovh.net|STARTTLS|587|
+|Eingangsserver|pro**?**.mail.ovh.net|SSL/TLS|993|
+|Ausgangsserver|pro**?**.mail.ovh.net|STARTTLS|587|
 
 ### Schritt 2: E-Mail-Adresse verwenden
 

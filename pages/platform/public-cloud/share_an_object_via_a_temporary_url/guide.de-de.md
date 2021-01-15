@@ -1,12 +1,12 @@
 ---
-title: 'Objekt mit einer temporären Adresse teilen'
+title: 'Objekt über eine temporäre URL teilen'
 slug: ein_objekt_mit_temporarer_adresse_teilen
 excerpt: 'So teilen Sie ein Objekt, ohne persönliche Informationen weiterzugeben'
-section: 'Object Storage'
+section: 'OpenStack'
 legacy_guide_number: g2007
 ---
 
-**Stand 16.07.2019**
+**Letzte Aktualisierung am 11.01.2021**
 
 ## Einleitung 
 
@@ -18,11 +18,11 @@ Wenn Sie eine Datei für einen anderen Benutzer freigeben, möchten Sie dabei na
 
 ## Voraussetzungen
 
-- [Sie haben die Umgebung für die Verwendung der OpenStack-API vorbereitet](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/){.ref}.
+- [Sie haben die Umgebung für die Verwendung der OpenStack-API vorbereitet](../vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/).
 - Sie haben die OpenStack-Umgebungsvariablen eingerichtet.
 - Python ist auf Ihrem System installiert.
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Prinzip verstehen
 
@@ -35,7 +35,7 @@ Die temporäre Adresse (oder *tempURL*) ist eine Funktion, mit der Sie freigegeb
 
 ### Temporäre Adresse (*tempURL*) generieren
 
-#### 1. Schlüssel generieren
+#### Schritt 1: Schlüssel generieren
 
 Erstellen Sie zuerst einen Schlüssel. Dieser ist für alle Dateien Ihres Projekts gültig. Daher reicht es aus, nur einen Schlüssel für alle Ihre temporären Adressen zu generieren. 
 
@@ -79,7 +79,7 @@ Oder verwenden Sie curl:
 curl -i -X HEAD \ -H "X-Auth-Token: abcdef12345" \ https://storage.sbg1.cloud.ovh.net/v1/AUTH_ProjectID
 ```
 
-#### 2. URL generieren
+#### Schritt 2: URL generieren
 
 Die folgenden Tasks können auch offline durchgeführt werden. Wir generieren die URL-Adresse mithilfe eines Befehls. Dieser muss mit Ihren eigenen Informationen angepasst werden.
 
@@ -114,4 +114,4 @@ Im oben stehenden Beispiel kann über diese temporäre Adresse für 60 Sekunden 
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

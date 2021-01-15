@@ -1,8 +1,10 @@
 ---
+deprecated: true
 title: Het configureren van een secundaire DNS
 excerpt: Hoe kan ik een domein configureren op de secundaire DNS-server
 slug: het_configureren_van_een_secundaire_dns
 legacy_guide_number: g1477
+hidden: true
 ---
 
 

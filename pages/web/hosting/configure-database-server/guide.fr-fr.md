@@ -57,7 +57,7 @@ Sur la fenêtre qui s'affiche, indiquez l'adresse IP ou le masque que vous dési
 
 Pour un hébergement web OVHcloud, vous devez autoriser l'adresse IP « passerelle de sortie » (gateway) de celui-ci . 
 
-Pour retrouvez l'adresse IP « **passerelle de sortie** », rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web`, puis sur`Hébergement`{.action} dans la colonne de gauche. Sélectionnez votre hébergement dans la liste, puis cliquez sur l'onglet `FTP - SSH`.
+Pour retrouvez l'adresse IP « **passerelle de sortie** », rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur`Hébergement`{.action} dans la colonne de gauche. Sélectionnez votre hébergement dans la liste, puis cliquez sur l'onglet `FTP - SSH`.
 
 Retrouvez la mention **« Serveur FTP »**, celle-ci vous indiquera le numéro de cluster sur lequel vous êtes, comme ci-dessous.
 
@@ -73,7 +73,7 @@ Après avoir récupéré le numéro du cluster sur lequel est situé votre hébe
 
 ### Modifier l'offre du serveur de bases de données
 
-Pour modifier l'offre de votre serveur de bases de données, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur de bases de données. 
+Pour modifier l'offre de votre serveur de bases de données, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur de bases de données. 
 Dans l'onglet **« Informations générales »** qui est affiché par défaut, cliquez sur `...`{.action} à droite de la mention « RAM » puis sur `Changer la quantité de la RAM`{.action}  afin d'accéder à la commande de ce basculement.
 
 ![private-sql](images/private-sql-order-ram01.png){.thumbnail}
@@ -98,7 +98,7 @@ Après validation des contrats, vous serez redirigé vers le bon de commande afi
 
 ### Modifier la configuration de mon serveur de bases de données
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur SQL privé. 
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur SQL privé. 
 
 #### Instance MySQL et MariaDB
 
@@ -190,7 +190,7 @@ show variables like "version";
 
 Cela vous permet de visualiser le temps d'exécution des requêtes sur votre serveur de bases de données dans les dernières 24 heures.
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur de bases de données. 
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur de bases de données. 
 
 Dirigez-vous dans l'onglet `Métriques` de votre serveur de bases de données. Vous trouverez le graphique **« Statistiques du temps d'exécution des requêtes »**.
 
@@ -204,7 +204,7 @@ Dirigez-vous dans l'onglet `Métriques` de votre serveur de bases de données. V
 
 Ces logs, appellés **« slow-query.log »**, peuvent être récupérés à la racine de l'espace SFTP de votre serveur de bases de données. 
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur de bases de données. 
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur de bases de données. 
 
 Dans l'onglet `informations générales`, vous trouverez la section **« SFTP »** dans le cadre **« Informations de connexion »**
 
@@ -217,7 +217,7 @@ Si ce fichier est vide, c'est que vous n'avez aucune requête lente.
 
 #### Suivre la RAM consommée
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur de bases de données. 
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur de bases de données. 
 
 Dirigez-vous dans l'onglet `Métriques` de votre espace client. Vous trouverez le graphique **« Statistiques de mémoire RAM utilisée »**.
 
@@ -227,7 +227,7 @@ Dirigez-vous dans l'onglet `Métriques` de votre espace client. Vous trouverez l
 
 Ce graphique permet de suivre, sur les dernières 24 heures, la charge de connexions par minute sur votre serveur de base de données.
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur de bases de données. 
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur de bases de données. 
 
 Dirigez-vous dans l'onglet `Métriques` de votre espace client. Vous trouverez le graphique **« Statistiques du total des connexions par minute »**.
 

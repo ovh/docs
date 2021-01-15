@@ -1,34 +1,66 @@
 ---
 title: 'Intel SGX auf einem Infrastrukturserver'
 slug: intel-sgx-aktivieren-und-verwenden
-excerpt: 'SGX auf Ihrem Infrastrukturserver aktivieren und den Linux-SGX-Software-Stack installieren'
+excerpt: 'SGX auf Ihrem Dedicated Server aktivieren und den Linux-SGX-Software-Stack installieren'
 section: 'Fortgeschrittene Nutzung'
 ---
 
-**Letzte Aktualisierung am 17\. Oktober 2019**
+**Letzte Aktualisierung am 06.01.2021**
+
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
 ## Ziel
 
-Intel Software Guard Extensions auf Ihrem Server aktivieren, um SGX-fähige Anwendungen ausführen zu können  
-Intel SGX bietet fortschrittliche Hardware- und RAM-Sicherheitsverschlüsselungsfunktionen, um Teile des Codes und der Daten, die für jede Anwendung spezifisch sind, zu isolieren
+Die Aktivierung der Intel Software Guard Extensions (SGX) auf Ihrem Server erlaubt es Ihnen, SGX-kompatible Anwendungen auszuführen. Intel SGX bietet erweiterte Hardware- und RAM-Verschlüsselungsfunktionen, um anwendungsspezifische Code- und Datenbereiche zu isolieren.
 
-## Anforderungen
+## Voraussetzungen
 
-- Ein [für die Infrastruktur dedizierter Server](https://www.ovh.co.uk/dedicated_servers/infra/){.external}, mit der Option [SGX](https://www.ovh.co.uk/dedicated_servers/software-guard-extensions/){.external}
-- Administrativer (Root-) Zugriff auf den Server über SSH
-- Zugriff auf die [OVH API](https://api.ovh.com/console/){.external}
-- Ubuntu 18.04 oder ähnliches auf dem Server installiert
+- Sie haben einen Dedicated Server aus der [Infrastruktur-Reihe](https://www.ovhcloud.com/de/bare-metal/infra/) mit der Option [SGX](https://www.ovhcloud.com/de/bare-metal/intel-software-guard-extensions/) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) / die [OVHcloud API](https://api.ovh.com/console/)
+- Sie haben administrativen Zugriff (Root) auf Ihren Server über SSH
 
-## Anleitung
+## In der praktischen Anwendung
 
-### Schritt 1 - Sich bei der API-Konsole anmelden
+### Über das OVHcloud Kundencenter
 
-Gehen Sie auf <https://api.ovh.com/console/>und klicken Sie auf die `Login`{.action} oben rechts auf der Seite.  
-Melden Sie sich auf der folgenden Seite mit den Anmeldeinformationen Ihres OVH-Kontos an.
+Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie dann links im Menü unter **Dedicated Servers** den Server aus, auf dem Sie SGX aktivieren möchten.
 
-### Schritt 2 - SGX aktivieren
+#### Aktivierung der Option
 
-Rufen Sie den Namen Ihres Servers in der Liste ab, die von diesem Aufruf zurückgegeben wird:
+Scrollen Sie bis zum Bereich "Fortgeschrittene Funktionen" und klicken Sie auf `...`{.action} bei "Sicherheit - Intel SGX (Software Guard Extensions)". Wählen Sie im `SGX aktivieren`{.action} im Dropdown-Menü aus.
+
+![SGX Aktivierung](images/enable_sgx.png){.thumbnail}
+
+Klicken Sie im neuen Bereich auf den Button `Aktivieren`{.action}.
+
+![SGX Aktivierung](images/enable_sgx2.png){.thumbnail}
+
+Sie können SGX mit einer bestimmten reservierten Speichermenge aktivieren oder Ihrem Programm erlauben, den benötigten Speicher automatisch zu reservieren. Wenn Sie Ihre Wahl getroffen haben, klicken Sie auf `Bestätigen`{.action}.
+
+![SGX Aktivierung](images/manage_sgx.png){.thumbnail}
+
+#### Die Option deaktivieren
+
+Scrollen Sie bis zum Bereich "Fortgeschrittene Funktionen" und klicken Sie auf `...`{.action} bei "Sicherheit - Intel SGX (Software Guard Extensions)". Klicken Sie auf `SGX bearbeiten`{.action} im Dropdown-Menü. Wählen Sie die Option `Deaktivieren`{.action} aus und klicken Sie dann auf `Bestätigen`{.action}.
+
+![SGX deaktivieren](images/disable_sgx.png){.thumbnail}
+
+Dies führt zum Neustart Ihres Servers. Bestätigen Sie im Popup-Fenster und warten Sie einige Minuten, bevor Sie erneut auf Ihren Server zugreifen.
+
+Folgen Sie der Anleitung weiter ab [Schritt 4](#step4).
+
+### Über die OVHcloud API
+
+#### Schritt 1: In der API-Konsole anmelden
+
+Klicken Sie auf der [OVHcloud API Seite](https://api.ovh.com/console/ auf `Login`{.action} oben rechts.  
+Melden Sie sich auf der folgenden Seite mit den Logindaten Ihres OVHcloud Kunden-Accounts an.
+
+#### Schritt 2: SGX aktivieren
+
+Erhalten Sie den Namen Ihres Servers von der Liste, die von diesem Call zurückgegeben wird:
 
 > [!api]
 >
@@ -42,7 +74,7 @@ Um zu überprüfen, ob Ihr Dienst über die SGX-Option verfügt, rufen Sie folge
 
 ![SGX deaktiviert](images/get-disabled.png){.thumbnail}
 
-Als nächstes aktivieren wir SGX:
+Aktivieren Sie SGX unter Verwendung des Servernamens:
 
 > [!api]
 >
@@ -50,7 +82,7 @@ Als nächstes aktivieren wir SGX:
 
 ![SGX aktivieren](images/post-configure.png){.thumbnail}
 
-Überprüfen Sie den Fortschritt der Konfigurationsaufgabe, indem Sie diesen Endpunkt mit der Aufgaben-ID aufrufen, die vom vorherigen Aufruf zurückgegeben wurde:
+Überprüfen Sie den Fortschritt des Konfigurationstasks, indem Sie diesen Endpunkt mit der *taskId* aufrufen, die vom vorherigen Call zurückgegeben wurde:
 
 > [!api]
 >
@@ -66,18 +98,22 @@ Sie können überprüfen, ob der Status jetzt aktiviert ist:
 
 ![SGX aktiviert](images/get-enabled.png){.thumbnail}
 
-### Schritt 3 - Das System neu starten, um die neuen BIOS-Einstellungen zu übernehmen
+#### Schritt 3: Neu starten, um die neuen BIOS-Einstellungen zu übernehmen
 
-### Schritt 4 - Das SGX Softwaremodul installieren
+Der Server muss neu gestartet werden, um fortzufahren.
 
-Jetzt installieren wir den Intel-Treiber und das SDK, um SGX-Anwendungen entwickeln und ausführen zu können.  
+### Schritt 4: Den SGX Softwarestack installieren <a name="step4"></a>
 
-Zuerst installieren wir einige Abhängigkeiten:
+Verwenden Sie die folgenden Befehle, um den Intel-Treiber und das Software-Kit (SDK) zu installieren, um SGX-Anwendungen entwickeln und ausführen zu können.
+
+Installieren Sie zunächst mehrere Dependencies:
+
 ```bash
 sudo apt-get install build-essential ocaml ocamlbuild automake autoconf libtool wget python libssl-dev libcurl4-openssl-dev protobuf-compiler libprotobuf-dev debhelper cmake git
 ```
 
-Danach können sie das SGX-Softwaremodul herunterladen, erstellen und installieren:
+Danach können sie den SGX Softwarestack herunterladen, erstellen und installieren:
+
 ```bash
 BASE_DIR=/opt/intel
 [[ -d $BASE_DIR ]] || sudo mkdir -p $BASE_DIR && sudo chown `whoami` $BASE_DIR
@@ -96,18 +132,22 @@ $BASE_DIR/linux-sgx/linux/installer/bin/sgx_linux_x64_sdk_2.6.100.51363.bin --pr
 sudo dpkg -i $BASE_DIR/linux-sgx/linux/installer/deb/libsgx-urts_2.6.100.51363-bionic1_amd64.deb $BASE_DIR/linux-sgx/linux/installer/deb/libsgx-enclave-common_2.6.100.51363-bionic1_amd64.deb
 ```
 
-Laden Sie den Treiber herunter und installieren ihn:
+Laden Sie den Treiber herunter und installieren Sie ihn:
+
 ```bash
 wget https://download.01.org/intel-sgx/linux-2.6/ubuntu18.04-server/sgx_linux_x64_driver_2.5.0_2605efa.bin
 chmod +x sgx_linux_x64_driver_2.5.0_2605efa.bin
 sudo ./sgx_linux_x64_driver_2.5.0_2605efa.bin
 ```
 
-### Schritt 5 - Neu starten, um die Installation abzuschließen
+### Schritt 5: Neu starten, um die Installation abzuschließen
 
-### Schritt 6 - Mithilfe einer Beispielanwendung die Installation validieren
+Der Server muss neu gestartet werden, um fortzufahren.
 
-Erstellen Sie eine der bereitgestellten Beispielanwendungen:
+### Schritt 6: Die Installation validieren (optional)
+
+Sie können eine Beispielanwendung verwenden, um die Installation zu validieren. Erstellen Sie eine der bereitgestellten Beispiel-Apps:
+
 ```bash
 BASE_DIR=/opt/intel
 cd $BASE_DIR/sgxsdk/SampleCode/LocalAttestation/
@@ -115,57 +155,60 @@ source $BASE_DIR/sgxsdk/environment
 make SGX_DEBUG=0 SGX_MODE=HW SGX_PRERELEASE=1
 ```
 
-Führen Sie sie aus:
+Führen Sie die App aus:
+
 ```bash
 ovh@nsXXXX:/opt/intel/sgxsdk/SampleCode/LocalAttestation$ ./app 
 
-Verfügbare Enklaven
+Available Enclaves
 Enclave1 - EnclaveID 2
 Enclave2 - EnclaveID 3
 Enclave3 - EnclaveID 4
 
-Sicherstellen, dass Einrichtung von Kanälen zwischen Quell- (E1) und Ziel- (E2) Enklaven erfolgreich ist!!!
+Secure Channel Establishment between Source (E1) and Destination (E2) Enclaves successful !!!
 
-Enklave-zu-Enklave-Aufruf zwischen Quell- (E1) und Ziel- (E2) Enklaven erfolgreich !!!
+Enclave to Enclave Call between Source (E1) and Destination (E2) Enclaves successful !!!
 
-Nachrichtenaustausch schließen zwischen Quell- (E1) und Ziel- (E2) Enklaven erfolgreich !!!
+Message Exchange between Source (E1) and Destination (E2) Enclaves successful !!!
 
-Sicherstellen, dass Einrichtung von Kanälen zwischen Quell- (E1) und Ziel- (E3) Enklaven erfolgreich ist!!!
+Secure Channel Establishment between Source (E1) and Destination (E3) Enclaves successful !!!
 
-Enklave-zu-Enklave-Aufruf zwischen Quell- (E1) und Ziel- (E3) Enklaven erfolgreich !!!
+Enclave to Enclave Call between Source (E1) and Destination (E3) Enclaves successful !!!
 
-Nachrichtenaustausch schließen zwischen Quell- (E1) und Ziel- (E3) Enklaven erfolgreich !!!
+Message Exchange between Source (E1) and Destination (E3) Enclaves successful !!!
 
-Sicherstellen, dass Einrichtung von Kanälen zwischen Quell- (E2) und Ziel- (E3) Enklaven erfolgreich ist!!!
+Secure Channel Establishment between Source (E2) and Destination (E3) Enclaves successful !!!
 
-Enklave-zu-Enklave-Aufruf zwischen Quell- (E2) und Ziel- (E3) Enklaven erfolgreich !!!
+Enclave to Enclave Call between Source (E2) and Destination (E3) Enclaves successful !!!
 
-Nachrichtenaustausch schließen zwischen Quell- (E2) und Ziel- (E3) Enklaven erfolgreich !!!
+Message Exchange between Source (E2) and Destination (E3) Enclaves successful !!!
 
-Sicherstellen, dass Einrichtung von Kanälen zwischen Quell- (E3) und Ziel- (E1) Enklaven erfolgreich ist!!!
+Secure Channel Establishment between Source (E3) and Destination (E1) Enclaves successful !!!
 
-Enklave-zu-Enklave-Aufruf zwischen Quell- (E3) und Ziel- (E1) Enklaven erfolgreich !!!
+Enclave to Enclave Call between Source (E3) and Destination (E1) Enclaves successful !!!
 
-Nachrichtenaustausch schließen zwischen Quell- (E3) und Ziel- (E1) Enklaven erfolgreich !!!
+Message Exchange between Source (E3) and Destination (E1) Enclaves successful !!!
 
-Sitzung schließen zwischen Quell- (E1) und Ziel- (E2) Enklaven erfolgreich !!!
+Close Session between Source (E1) and Destination (E2) Enclaves successful !!!
 
-Sitzung schließen zwischen Quell- (E1) und Ziel- (E3) Enklaven erfolgreich !!!
+Close Session between Source (E1) and Destination (E3) Enclaves successful !!!
 
-Sitzung schließen zwischen Quell- (E2) und Ziel- (E3) Enklaven erfolgreich !!!
+Close Session between Source (E2) and Destination (E3) Enclaves successful !!!
 
-Sitzung schließen zwischen Quell- (E3) und Ziel- (E1) Enklaven erfolgreich !!!
+Close Session between Source (E3) and Destination (E1) Enclaves successful !!!
 
-Eine Taste drücken...
+Hit a key....
 ```
 
-### Schritt 7 - Weitere Schritte
+## Weiterführende Informationen
 
-Für die weiteren Schritte (Ihre eigene Anwendung entwickeln, sich für die Remote-Bestätigung registrieren, ...) finden Sie hier weitere nützliche Ressourcen:
+Für die weiteren Schritte (Ihre eigene Anwendung entwickeln, sich für die Remote-Bestätigung registrieren, etc.) finden Sie hier weitere nützliche Ressourcen:
 
 - [Intel SGX](https://software.intel.com/en-us/sgx){.external}
-- [Intel SGX Attestierungsdienste](https://software.intel.com/en-us/sgx/attestation-services){.external}
-- [Intel SGX linux-2.6 Dokumentation](https://download.01.org/intel-sgx/linux-2.6/docs/){.external}
+- [Intel SGX Attestation services](https://software.intel.com/en-us/sgx/attestation-services){.external}
+- [Intel SGX linux-2.6 documentation](https://download.01.org/intel-sgx/linux-2.6/docs/){.external}
 - [github.com/intel/linux-sgx](https://github.com/intel/linux-sgx){.external}
 - [github.com/intel/linux-sgx-driver](https://github.com/intel/linux-sgx-driver){.external}
 - [github.com/intel/sgx-ra-sample](https://github.com/intel/sgx-ra-sample){.external}
+
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

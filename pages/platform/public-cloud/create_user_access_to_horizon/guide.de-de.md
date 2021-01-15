@@ -3,7 +3,7 @@ title: 'Auf das Horizon-Interface zugreifen'
 excerpt: 'Erfahren Sie hier Details über den Zugang zum Horizon-Interface'
 slug: erstellung_eines_zugangs_zu_horizon
 legacy_guide_number: g1773
-section: 'Über das Horizon-Interface'
+section: 'Horizon'
 ---
 
 **Letzte Aktualisierung am 09.01.2020**
@@ -12,7 +12,7 @@ section: 'Über das Horizon-Interface'
 
 Horizon ist die grafische Verwaltungsoberfläche für OpenStack. Bestimmte Funktionen sind nur über diese Schnittstelle abrufbar.
 
-**In diesem Handbuch erfahren Sie, wie Sie auf das Horizon-Interface zugreifen.**
+**In dieser Anleitung erfahren Sie, wie Sie auf das Horizon-Interface zugreifen.**
 
 
 ## Voraussetzungen

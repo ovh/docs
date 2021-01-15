@@ -1,59 +1,59 @@
 ---
-title: 'Eine Datenbank auf Ihrem Webhosting erstellen'
+title: 'Eine Datenbank auf Ihrem Webhosting erstellen und verwalten'
 slug: datenbank-erstellen
-excerpt: 'So erstellen Sie eine Datenbank auf Ihrem OVH Webhosting'
+excerpt: 'Erfahren Sie hier, wie Sie in OVHcloud Webhostings enthaltene Datenbanken verwenden'
 section: 'Datenbanken'
 order: 1
 ---
 
-**Stand 27.06.2018**
+**Letzte Aktualisierung am 21.09.2020**
 
-## Einleitung
+## Ziel
 
-In einer Datenbank (DB) können sogenannte dynamische Elemente, wie zum Beispiel Kommentare oder Artikel, gespeichert werden. Diese Datenbanken werden heute von praktisch allen Content Management Systemen (CMS) wie WordPress oder Joomla! verwendet.
+Datenbanken (DBs) werden verwendet, um sogenannte dynamische Elemente wie Kommentare oder Artikel zu speichern. Diese Datenbanken werden heutzutage in praktisch allen modernen Content Management Systemen (CMS) wie WordPress oder Joomla! eingesetzt.
 
-**In dieser Anleitung erfahren Sie, wie Sie eine Datenbank auf Ihrem OVH Webhosting erstellen.**
+**Diese Anleitung erklärt die ersten Schritte mit einer Datenbank in Ihrem OVHcloud Webhosting und liefert Ihnen grundlegende Informationen zu deren Verwaltung.**
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
-- Sie können im Rahmen Ihres Angebots Datenbanken erstellen.
-- Sie haben über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} Zugriff auf die Verwaltung des betreffenden Webhosting Angebots.
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovh.de/hosting) Angebot.
+- Ihnen steht eine in Ihrem Webhosting enthaltene Datenbank zur Verfügung.
+- Sie haben Zugriff zum [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) und verfügen über die erforderlichen Berechtigungen zur Verwaltung des Webhostings. 
 
-## Beschreibung
+## In der praktischen Anwendung
 
-### Schritt 1: Auf die Verwaltung der Webhosting-Datenbanken zugreifen
+### Schritt 1: Auf die Datenbankverwaltung des Webhostings zugreifen
 
-Loggen Sie sich zunächst in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und wählen Sie im oberen Menü den Bereich `Web Cloud`{.action} aus. Klicken Sie in der linken Menüleiste auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Gehen Sie anschließend in den Tab `Datenbanken`{.action}.
 
-Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden.
+Die Tabelle in diesem Bereich enthält alle Datenbanken, die als Teil Ihres Webhosting Angebots erstellt wurden.
 
-![Datenbank Erstellung](images/database-creation-step1.png){.thumbnail}
+![Datenbank erstellen](images/database-creation-step1.png){.thumbnail}
 
 ### Schritt 2: Datenbank erstellen
 
-Es gibt zwei Möglichkeiten zur Erstellung einer Datenbank
+Es gibt zwei Möglichkeiten, um eine neue Datenbank zu erstellen:
 
-- **Wenn Sie noch keine Datenbank erstellt haben**: Klicken Sie auf den Button `Eine Datenbank erstellen`{.action}.
+- **Sie haben noch keine Datenbank erstellt**\: Klicken Sie auf den Button `Datenbank erstellen`{.action}.
 
-- **Wenn Sie bereits eine Datenbank erstellt haben**: Klicken Sie auf den Button `Aktionen`{.action} und anschließend auf `Eine Datenbank erstellen`{.action}.
+- **Sie haben bereits eine Datenbank erstellt**\: Klicken Sie auf den Button `Aktionen`{.action} und dann auf `Datenbank erstellen`{.action}.
 
-Wählen Sie im angezeigten Fenster die gewünschten Informationen aus und klicken Sie anschließend auf `Weiter`{.action}.
+Wählen Sie im daraufhin geöffneten Fenster die passenden Informationen aus und klicken Sie auf `Weiter`{.action}.
 
 |Information|Beschreibung|  
 |---|---|  
-|Datenbank-Engine|Wählen Sie die Datenbank-Engine aus, die für Ihre Datenbank verwendet wird. [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebote sind nur mit MySQL-Engines verfügbar.|  
-|Datenbankversion|Wählen Sie die Version aus, die von der Datenbank-Engine verwendet wird. Achten Sie auf die Kompatibilität Ihrer Website mit der gewählten Version. |  
-|Datenbanktyp|Wählen Sie die Größe der Datenbank aus. Hierbei handelt es sich um den Speicherplatz Ihrer Datenbank zum Speichern von Daten.|   
+|Datenbank-Engine|Wählen Sie die Engine aus, die die Datenbank verwenden wird. In einem [OVHcloud Webhosting Angebot](https://www.ovh.de/hosting) enthaltene Datenbanken sind ausschließlich mit MySQL-Engine verfügbar.|  
+|Datenbankversion|Wählen Sie die von der Datenbank-Engine verwendete Version aus. Stellen Sie sicher, dass Ihre Website mit der gewählten Version kompatibel ist. |  
+|Datenbanktyp|Wählen Sie die Größe der Datenbank aus. Die Größe bezieht sich auf den Speicherplatz, der Ihrer Datenbank zum Speichern von Daten zur Verfügung steht.|   
 
-Geben Sie die geforderten Informationen an und klicken Sie anschließend auf `Weiter`{.action}.
+Geben Sie anschließend die angeforderten Informationen ein und klicken Sie auf `Weiter`{.action}.
 
 |Information|Beschreibung|   
 |---|---|   
-|Benutzer|Geben Sie einen Benutzernamen an, der mit Ihrer Datenbank verbunden wird.|   
-|Passwort|Legen sie ein Passwort für diesen Benutzer fest und bestätigen Sie dieses.|   
+|Benutzer|Geben Sie einen spezifischen Benutzernamen ein, der mit Ihrer Datenbank verbunden wird.|   
+|Passwort|Geben Sie ein Passwort für diesen Benutzer ein und bestätigen Sie dieses.|   
 
-Überprüfen Sie die in der Übersicht angezeigten Informationen. Sind alle Angaben korrekt, klicken Sie erneut auf `Bestätigen`{.action}, um die Datenbank zu erstellen. Wiederholen Sie diesen Vorgang sooft wie nötig, um weitere Datenbanken anzulegen.
+Überprüfen Sie, dass alle in der Zusammenfassung angezeigten Informationen korrekt sind. Ist das der Fall, klicken Sie auf `Bestätigen`{.action}, um die Erstellung der Datenbank zu starten. Sie können diesen Vorgang so oft wie nötig wiederholen, um mehrere Datenbanken zu erstellen (solange die maximale Anzahl der inklusiven Datenbanken nicht überschritten wird).
 
 > [!primary]
 >
@@ -65,21 +65,67 @@ Geben Sie die geforderten Informationen an und klicken Sie anschließend auf `We
 >
 > - Ihr Passwort regelmäßig zu erneuern
 >
-> - Ihr Passwort nicht auf Papier zu notieren oder sich selbst per E-Mail zuzusenden
+> - Ihr Passwort nicht auf Papier zu notieren oder anderen per E-Mail zuzusenden
 >
 > - Ihr Passwort nicht in Ihrem Webbrowser zu speichern, auch wenn dieser Sie dazu auffordert
 >
 
-![Datenbank Erstellung](images/database-creation-step2.png){.thumbnail}
+> [!warning]
+>Denken Sie bei der Änderung eines Datenbankpassworts daran, dass alle Anwendungen, die auf diese Datenbank zugreifen, entsprechend aktualisiert werden müssen.
+>
 
-### Schritt 3: Datenbank verwenden
+![Datenbank erstellen](images/database-creation-step2.png){.thumbnail}
 
-Sie können Ihre Datenbank nun verwenden. Halten Sie hierzu folgende Informationen bereit: der von Ihnen angegebene Benutzer und das zugehörige Passwort, den von Ihnen angepassten Datenbanknamen sowie die Server-Adresse.
+### Schritt 3: Datenbank verwalten
 
-Diese Informationen sind notwendig, um Ihre Website mit der Datenbank zu verbinden. Je nach Website wird die Verbindung manuell eingerichtet oder über ein Interface der Website hergestellt. Da diese Einstellungen die Konfiguration Ihrer Website und nicht die OVH Dienste betreffen, empfehlen wir, den Herausgeber der Website oder einen spezialisierten Dienstleister zu kontaktieren, sollten Sie weitere Hilfe benötigen.
+> [!warning]
+>Diese Anleitung ersetzt nicht die Unterstützung eines professionellen Webmasters. Wir empfehlen Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten. Weitere Hinweise finden Sie im Teil „Weiterführende Informationen” dieser Anleitung.
+>
 
-OVH stellt Ihnen eine Webanwendung zur Verfügung: phpMyAdmin. Den zugehörigen Link finden Sie im Kundencenter. Klicken Sie hierzu im Tab `Datenbanken`{.action} rechts neben der betreffenden Datenbank auf die drei Punkte und anschließend auf `Zugang zu phpMyAdmin`{.action}. Geben Sie dort die Login-Daten zu Ihrer OVH Datenbank ein.
+Sie können Ihre Datenbank jetzt verwenden. Hierzu benötigen Sie Ihre Login-Daten: den von Ihnen festgelegten Benutzernamen und das zugehörige Passwort, den Namen der Datenbank sowie die Serveradresse. Diese Informationen sind erforderlich, damit sich Ihre Website mit der Datenbank verbinden kann.
+
+Je nach der verwendeten Software muss diese Verbindung gegebenenfalls manuell oder über ein vom Website-Backend generiertes Interface konfiguriert werden. Da dieser Prozess eher die Konfiguration Ihrer Website als der von OVHcloud bereitgestellten Dienste betrifft, empfehlen wir Ihnen, die entsprechenden Online-Ressourcen zu verwenden. 
+
+#### Auf das phpMyAdmin-Interface zugreifen
+
+OVHcloud stellt Ihnen ein Online-Tool für das Datenbankmanagement zur Verfügung: phpMyAdmin. Den Zugangslink für diese Anwendung finden Sie im `Datenbanken`{.action}-Tab. Klicken Sie rechts neben der betreffenden Datenbank auf `...`{.action} und wählen Sie `Zugang zu phpMyAdmin`{.action} aus.
+
+Die Login-Daten sind im neuen Fenster bereits vorausgefüllt; nur das Datenbankpasswort ist noch einzugeben. Auf diese Weise können Sie auch Ihr aktuelles Passwort überprüfen, zum Beispiel, wenn ein CMS die Fehlermeldung „permission denied“ ausgibt.
+
+![Datenbank erstellen](images/database-creation-step3.png){.thumbnail}
+
+
+#### Datenbank-Backups verwenden
+
+Für jede Webhosting-Datenbank werden täglich automatische Snapshots erstellt (bis zu 32 Einheiten). Sie können daher problemlos eine frühere Version einer Datenbank über Ihr OVHcloud Kundencenter wiederherstellen. 
+
+Um die verfügbaren Snapshots zu überprüfen und deren Erstellungszeitpunkt einzusehen, klicken Sie auf das Symbol rechts neben dem grünen Kreis in Ihrer Datenbanktabelle. Von dort können Sie auch jedes Backup einer Datenbank herunterladen. Weitere Informationen zu diesem Thema finden Sie in unserer Anleitung „[Backup einer Webhosting-Datenbank exportieren](../webhosting_hilfe_zum_export_von_datenbanken/)“.
+
+#### Häufige Probleme verstehen
+
+**Too many connections**
+
+Webhosting-Datenbanken sind auf 30 Simultanverbindungen begrenzt (Systemvariable *max_connections*). SQL-Anfragen sollten daher entsprechend optimiert werden, um diesen Fehler zu vermeiden. Besteht das Problem weiterhin, sollten Sie alternative Maßnahmen in Erwägung ziehen, zum Beispiel den Wechsel auf eine Private-SQL-Datenbank oder ein [Upgrade Ihres Webhostings](https://www.ovh.de/hosting/welches_hosting_waehlen.xml). 
+
+**Verbindungsfehler und „not found“-Meldungen**
+
+Es wird empfohlen, für Skripte und Konfigurationsdateien immer den tatsächlichen Datenbanknamen anstelle von IP-Adressen oder _localhost_ zu verwenden.
+
+**Database overquota**
+
+Übersteigt eine Webhosting-Datenbank den empfohlenen Speicherplatz, wird diese automatisch in den Modus "read only" / "select only" versetzt. Der Administrator erhält eine Benachrichtigung per E-Mail.
+
+Nachdem die Datenbank optimiert (bereinigt) wurde, können Sie Ihre Quota über Ihr OVHcloud Kundencenter neu berechnen, damit die Datenbank entsperrt wird. Es wird empfohlen, die Datenbank herunterzuladen, den Inhalt lokal zu überarbeiten und die Datenbank anschließend per Import zu ersetzen. Weitere Informationen hierzu finden Sie in [dieser Anleitung](../webhosting_optimierung_der_performance_ihrer_webseite/#schritt-7-ihre-datenbank-optimieren).
+
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+[Passwort einer Webhosting-Datenbank ändern](../datenbank-passwort-aendern/)
+
+[Backup einer Webhosting-Datenbank exportieren](../webhosting_hilfe_zum_export_von_datenbanken/)
+
+[Backup in eine Webhosting-Datenbank importieren](../webhosting_import_einer_mysql-datenbank/)
+
+[Optimierung der Performance Ihrer Webseite](../webhosting_optimierung_der_performance_ihrer_webseite/)
+
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -2,7 +2,7 @@
 title: 'Spécificités techniques liées aux hébergements mutualisés'
 slug: specificites-techniques-hebergements-mutualises
 excerpt: 'Vous trouverez dans ce guide différentes informations et spécificités techniques liées aux hébergements mutualisés.'
-section: 'Configuration de l''hébergement'
+section: "Configuration de l'hébergement"
 order: 6
 ---
 
@@ -31,8 +31,6 @@ order: 6
 - Erreur d'accès ("Échec de l'authentification de connexion 530"): Vous pouvez vous assurer que les informations d'accès à votre espace FTP sont correctes en vérifiant celles-ci via votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} dans l'onglet `FTP - SSH`. Les mots de passe ne sont jamais affichés, mais ils peuvent être modifiés. Veuillez consulter nos [guides FTP](../connexion-espace-stockage-ftp-hebergement-web/).
 
 - Les connexions FTP doivent utiliser le **mode passif**. Assurez-vous que votre script ou votre client FTP est ajusté en conséquence.
-
-- Afin de se connecter via **SFTP**, un [**hébergement Pro**](https://www.ovh.com/ca/fr/hebergement-web/) ou supérieur est requis. Vous pouvez mettre à jour votre offre directement dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) ("Informations générales", "Plan", "Offre de modification").
 
 ### Base de données / SQL
 
@@ -90,7 +88,7 @@ PHP-FPM est activé par défaut sur l'infrastructure d'hébergement web afin d'a
 
 |Variable|Sans PHP-FPM|Avec PHP-FPM|
 |---|---|---|
-|max_execution_time|120s|300s|
+|max_execution_time|120s|165s|
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 
@@ -119,7 +117,7 @@ Veuillez consulter les pages d'informations respectives pour vérifier les libra
 
 Il vous est possible de retrouver différentes informations sur votre cluster via ce lien : [https://cluster015.hosting.ovh.net/infos/](https://cluster015.hosting.ovh.net/infos/){.external}
 
-Remplacez le cluster indiqué dans l'URL par le vôtre. Pour savoir sur quel cluster d'hébergement web se trouve votre service, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} et sélectionnez `Web`{.action} dans la barre de navigation supérieure. Cliquez sur `Hébergement`{.action} dans la barre de services située à gauche, puis choisissez l'hébergement web concerné. Ensuite, cliquez sur l'onglet `FTP - SSH`{.action}. L'URL d'accès FTP à votre hébergement vous indiquera le numéro du cluster.
+Remplacez le cluster indiqué dans l'URL par le vôtre. Pour savoir sur quel cluster d'hébergement web se trouve votre service, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} et sélectionnez `Web Cloud`{.action} dans la barre de navigation supérieure. Cliquez sur `Hébergement`{.action} dans la barre de services située à gauche, puis choisissez l'hébergement web concerné. Ensuite, cliquez sur l'onglet `FTP - SSH`{.action}. L'URL d'accès FTP à votre hébergement vous indiquera le numéro du cluster.
 
 Pour connaitre les spécificités technique de l'offre Cloud Web, dirigez-vous directement vers le lien <https://cloudweb-infos.hosting.ovh.net/>.
 

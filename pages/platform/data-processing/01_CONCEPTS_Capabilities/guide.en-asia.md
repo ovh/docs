@@ -6,7 +6,7 @@ section: Concepts
 order: 1
 ---
 
-**Last updated 06<sup>th</sup> March, 2020**
+**Last updated 4<sup>th</sup> December, 2020**
 
 
 ## Objective 
@@ -17,17 +17,18 @@ In this document, we list all the features currently supported by the Data Proce
 
 ### Processing engine 
 
-- At this moment, OVHcloud Data Processing supports the following engines:
+At this moment, OVHcloud Data Processing supports the following engines:
 
+  - Spark 3.0.1
   - Spark 2.4.3 
 
-- It is not possible to interact with Apache Spark cluster via command line.  
+It is not possible to interact with Apache Spark cluster via command line.  
 
 ### The Apache Spark job in Data Processing is limited to: 
 
 - Minimum 1 and maximum 60 GB of RAM per Executor
 - Minimum 1 and maximum 16 Cores of CPU per Executor 
-- Maximum 24 hours for the duration of each job 
+- Minimum 1 and maximum 10 Executor nodes
 
 ### Supported languages for Apache Spark code
 
@@ -51,6 +52,7 @@ In this document, we list all the features currently supported by the Data Proce
 - PostgreSQL (5432)
 - Microsoft SQL Server (1433)
 - MongoDB (27017, 27018, 27019)
+- ElasticSearch (9200)
 
 ### OVHcloud vRack
 
@@ -75,7 +77,7 @@ If you would like to increase the quotas for Data Processing you will need to in
 
 ## Planned features
 
-- Ability to select Spark version, starting from 2.4.3 
+- Ability to set a TTL (Time To Live) on your jobs
 - Availability in different OVHcloud regions 
 
 ## Feedback

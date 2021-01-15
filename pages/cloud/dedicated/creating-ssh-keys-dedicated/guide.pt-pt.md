@@ -22,7 +22,7 @@ Note que as chaves SSH não são utilizadas para a autenticação nos servidores
 ## Requisitos
 
 - acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
-- um [servidor dedicado](https://www.ovh.pt/servidores_dedicados/) na sua conta OVHcloud
+- um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) na sua conta OVHcloud
 - acesso administrativo (root) via SSH
 
 ## Instruções
@@ -170,7 +170,7 @@ Se tiver copiado o resultado na sua totalidade, o identificador após a chave j�
 
 > [!primary]
 >
-> Quaisquer chaves guardadas na seção “Dedicadas” serão igualmente utilizáveis para os seus serviços VPS. No que respeita às chaves SSH para os serviços Public Cloud, consulte [este guia](https://docs.ovh.com/pt/public-cloud/criacao-de-chaves-ssh/).
+> Quaisquer chaves guardadas na seção “Dedicadas” serão igualmente utilizáveis para os seus serviços VPS. No que respeita às chaves SSH para os serviços Public Cloud, consulte [este guia](../../public-cloud/public-cloud-primeiros-passos).
 >
 
 

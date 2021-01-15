@@ -9,9 +9,7 @@ order: 5
 
 ## Objective
 
-[FastAI](https://www.fast.ai/) is a popular machine learning library
-supported by OVHcloud ML Serving. This tutorial will cover how to export
-a [FastAI](https://www.fast.ai/) trained model.
+[FastAI](https://www.fast.ai/) is a popular machine learning library supported by OVHcloud ML Serving. This tutorial will cover how to export a [FastAI](https://www.fast.ai/) trained model.
 
 ## Requirements
 
@@ -19,7 +17,7 @@ a [FastAI](https://www.fast.ai/) trained model.
 
 ## Save a simple model
 
-Let\'s take a simple example of a `FastAI` model to illustrate:
+Let's take a simple example of a `FastAI` model to illustrate:
 
 ``` {.python}
 import os
@@ -40,12 +38,9 @@ learn = language_model_learner(data_lm, AWD_LSTM, drop_mult=0.5)
 learn.export(os.path.abspath('./my_export.pkl'))
 ```
 
-Your model is now serialized on your local file system in the
-`my_export.pkl` file.
+Your model is now serialized on your local file system in the `my_export.pkl` file.
 
 ## Going further
 
--   You can check the [OVHcloud documentation on how to deploy custom
-    models](../deploy-serialized-models).
--   You can check the [supported compatibilities for Tensorflow
-    SavedModel](../compatibility-matrix)
+-   You can check the [OVHcloud documentation on how to deploy custom models](../deploy-serialized-models).
+-   You can check the [supported compatibilities for Tensorflow SavedModel](../compatibility-matrix)

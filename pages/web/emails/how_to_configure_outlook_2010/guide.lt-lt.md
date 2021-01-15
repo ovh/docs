@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: El. pašto konfigūravimas Outlook 2010'
 excerpt: ''
 slug: svetainiu_talpinimas_el_pasto_konfiguravimas_outlook_2010

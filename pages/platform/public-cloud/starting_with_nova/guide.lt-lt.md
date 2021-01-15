@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Pradžia su API Nova
 excerpt: Pradžia su API Nova
 slug: pradzia_su_api_nova
@@ -135,7 +136,7 @@ Pabaigai, sužinokite image, kurį naudosite savo VM, ID:
 
 
 ```
-admin@serveur-1:~$ nova image-list
+admin@serveur-1:~$ glance image-list
 +--------------------------------------+------------------------+--------+--------+
 | ID | Name | Status | Server |
 +--------------------------------------+------------------------+--------+--------+

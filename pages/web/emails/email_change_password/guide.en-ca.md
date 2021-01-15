@@ -16,8 +16,8 @@ You can use the email addresses created as part of the MX Plan solution to send 
 
 ## Requirements
 
-- an MX Plan solution, available as part of our [Web Hosting plans](https://www.ovh.com/ca/en/web-hosting/){.external}, the [free Start 10M hosting plan](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml){.external}, or ordered separately as a standalone solution
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} in the `Web`{.action} section, or access to the email address via Outlook Web Messenger (OWA) [webmail](https://www.ovh.com/ca/en/mail/){.external}
+- an MX Plan solution, available as part of our [Web Hosting plans](https://www.ovh.com/ca/en/web-hosting/)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} in the `Web Cloud`{.action} section, or access to the email address via Outlook Web Messenger (OWA) [webmail](https://www.ovh.com/ca/en/mail/){.external}
 
 > [!primary]
 >
@@ -28,7 +28,7 @@ You can use the email addresses created as part of the MX Plan solution to send 
 
 Depending on the date your service was activated and if [it was recently migrated](https://www.ovh.co.uk/mxplan-migration/){.external}, you will be using either the legacy version or the new version of the MX Plan solution. Before you proceed, you will need to check which version you are using. 
 
-To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and open the `Web`{.action} section. Click `Emails`{.action} in the service bar on the left-hand side, then choose the name of the MX Plan solution. You can now follow the instructions below for the version you own.
+To do this, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and open the `Web Cloud`{.action} section. Click `Emails`{.action} in the service bar on the left-hand side, then choose the name of the MX Plan solution. You can now follow the instructions below for the version you own.
 
 |MX Plan legacy version|MX Plan new version|
 |---|---|
@@ -44,7 +44,7 @@ If you are using the new version of the MX Plan solution, this is what you shoul
 There are two ways of changing the password for an email address. You can proceed according to which method you want to use.
 
 - [Change the password via OWA webmail](./#change-the-password-via-owa-webmail). You will need to have your current password for this method. 
-- [Change the password via the OVHcloud Control Panel](./#change-the-password-via-the-ovh-control-panel). You will not need your current password for this method.
+- [Change the password via the OVHcloud Control Panel](./#change-the-password-via-the-ovhcloud-control-panel). You will not need your current password for this method.
 
 #### Change the password via OWA webmail.
 

@@ -1,7 +1,7 @@
 ---
-title: 'Configurer sa box à partir de l''espace client OVH'
+title: "Configurer sa box à partir de l'espace client OVH"
 slug: configuration_du_modem_a_partir_de_votre_espace_client
-excerpt: 'Découvrez comment paramétrer à distance votre box OVH depuis l''espace client'
+excerpt: "Découvrez comment paramétrer à distance votre box OVH depuis l'espace client"
 section: 'Configuration de mon offre'
 ---
 
@@ -173,7 +173,8 @@ Depuis cette partie, plusieurs possibilités s'offrent à vous.
 
 > [!primary]
 >
-> À utiliser uniquement dans le cas où vous disposez d'un équipement pouvant agir en tant que routeur sur votre réseau local. Il gérera alors intégralement votre connexion locale, OVH ne pouvant pas intervenir sur celui-ci. 
+> À utiliser uniquement dans le cas où vous disposez d'un équipement pouvant agir en tant que routeur sur votre réseau local. Il gérera alors intégralement votre connexion locale, OVH ne pouvant pas intervenir sur celui-ci.
+Si votre modem est de marque Zyxel, veuillez suivre le guide [Comment activer le bridge sur un modem zyxel](../comment-activer-bridge-zyxel/).
 >
 
 - **Configurer le MTU** : lors d'une transmission de données informatiques, le Maximum Transmission Unit (MTU) est la taille maximale d'un paquet pouvant être échangé en une seule fois (c'est-à-dire sans fragmentation) sur une interface. Le MTU par défaut d'un accès OVH en PPPoe est de 1 492.

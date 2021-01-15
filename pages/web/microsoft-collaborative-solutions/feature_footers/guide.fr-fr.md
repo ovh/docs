@@ -7,69 +7,64 @@ section: Fonctionnalités des comptes Exchange
 order: 6
 ---
 
-Vous pouvez créer une signature par domaine validé.
-
-Utilisez les outils à votre disposition pour personnaliser et mettre en forme votre signature. Cette signature sera intégrée automatiquement au bas de chaque message envoyé depuis les adresses associées à votre domaine Exchange.
-
-Des variables sont aussi disponibles pour personnaliser la signature générique avec les coordonnées des différents collaborateurs.
-
-Cliquez [ici](https://www.ovh.com/fr/emails/hosted-exchange/guides/){.external} pour retrouver nos différents guides.
+**Dernière mise à jour le 26/03/2020**
 
 
-## Signature de mail - Espace client OVHcloud
+## Objectif
 
-### Mise en place Partie 1
-Afin de créer votre signature (pied de page), connectez-vous à votre [Espace client](https://www.ovh.com/manager/web/login.html){.external}.
+Dans votre espace client OVHcloud, vous pouvez créer des signatures universelles (pieds de page) pour les adresses e-mail utilisant le même domaine (signature « d’entreprise »). Elles apparaîtront automatiquement dans les e-mails envoyés depuis le compte d'un utilisateur.
 
-Sélectionnez votre offre Exchange dans "Plateforme".
+**Découvrez comment créer une signature automatique depuis l’espace client OVHcloud.**
 
-Choisissez l'onglet `Plus +`{.action} puis `Pied de page`{.action}.
-
-
-![emails](images/1364.png){.thumbnail}
-
-
-### Mise en place Partie 2
-Utilisez les outils à votre disposition pour personnaliser et mettre en forme votre signature.
-
-Des variables sont aussi disponibles pour personnaliser la signature générique avec les coordonnées des différents collaborateurs.
-
-Pour ajouter une image ou un logo, utilisez son URL en l'insérant après avoir cliqué sur le bouton `image`{.action}.
-
-*Afin d'ajouter plus rapidement une image ou un logo dans votre signature. Il vous est aussi possible de faire un glisser-déposer de l'image, de votre navigateur vers l'outil de signature, comme vous le montre la capture d'écran ci-contre.*
+> [!primary]
+>
+> Bien que ce guide fasse référence à nos services Exchange, vous pouvez également suivre les instructions pour les comptes Email Pro.
+>
 
 
-![emails](images/1365.png){.thumbnail}
+## Prérequis
+
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Avoir souscrit une offre [Exchange OVHcloud](https://www.ovh.com/fr/emails/hosted-exchange) ou [Email Pro](https://www.ovh.com/fr/emails/email-pro)
 
 
-### Mise en place Partie 3
-Il vous sera ensuite possible de redimensionner l'image à la taille voulue.
+## En pratique
 
-Il est possible de n'activer la signature que pour les envois d'e-mails vers l'extérieur (vers une adresse e-mail non liée à votre domaine) en cochant la case prévue à cet effet.
+Connectez-vous  à votre [espace client OVHcloud ](https://www.ovh.com/auth/?action=gotomanager). Accédez à la section « Web » et sélectionnez votre service Exchange dans la colonne figurant sous `Microsoft`{.action} puis `Exchange`{.action} située sur le coté gauche. Cliquez sur l’onglet `Plus+`{.action} dans le menu horizontal et sélectionnez `Pieds de page`{.action}.
 
-Cliquez sur `Valider`{.action} pour enregistrer votre signature.
+![exchangesig](images/exchange-footer-step1.png){.thumbnail}
 
-Elle sera associée à tous les e-mails du domaine choisi.
+Dans cette section se trouvent vos domaines rattachés, pour chacun desquels vous pouvez créer un modèle de pied de page. Cliquez sur `...`{.action} puis sur `Configuration`{.action} pour ouvrir l’éditeur HTML.
 
+![exchangesig](images/exchange-footer-step2.png){.thumbnail}
 
-![emails](images/1368.png){.thumbnail}
+L'éditeur propose une sélection de variables qui correspondent aux données de l'utilisateur selon les paramètres de son compte. Vous pouvez, par exemple, rédiger un message de fin générique et ajouter une signature adaptée ou des informations de contact grâce aux variables. Cliquez sur la flèche vers le bas pour sélectionner une variable, puis cliquez sur `Insérer une variable`{.action} pour l'ajouter dans le volet d'édition.
 
+![exchangesig](images/exchange-footer-step3aag.gif){.thumbnail}
 
-### Mise en place Partie 4
-Une fois votre signature paramétrée, elle apparaîtra dans votre espace client.
+Le pied de page est créé à l'aide de balises HTML, qui permettent certaines options de formatage. Utilisez la barre d'outils en haut pour personnaliser votre signature. Vous pouvez également vérifier le code HTML en cliquant sur `Source`{.action}.
+ 
+![exchangesig](images/exchange-footer-step4.png){.thumbnail}
 
-Il vous est possible de la modifier, ou de la supprimer.
+Cochez la case « Activer la signature pour le courrier sortant uniquement » pour éviter d'ajouter ce pied de page aux e-mails envoyés entre utilisateurs d'un même domaine. Cliquez sur `Confirmer`{.action} une fois votre signature terminée. Elle apparaîtra désormais dans les e-mails envoyés à partir des comptes d'utilisateurs de ce domaine. Vous pouvez modifier ou supprimer des signatures dans votre espace client OVHcloud après leur création.
 
-Un tableau récapitulatif vous renseignera sur les informations générales de votre signature.
+Veillez à prendre en considération les spécificités suivantes avant de créer des signatures pour les utilisateurs :
 
+- En dehors des « Prénom », « Nom » et « Nom d'affichage », les informations du compte ne peuvent pas être éditées à partir de l’espace client OVHcloud et doivent donc être spécifiées dans l'OWA de l'utilisateur (« Options », « Général », « Mon compte »).
 
-![emails](images/1370.png){.thumbnail}
+![exchangesig](images/exchange-footer-step5.png){.thumbnail}
 
+- La signature sera ajoutée au corps de l’e-mail sans espace, il est donc conseillé de commencer la signature par au moins une ligne vide.
+- Dans OWA, il n'est pas indiqué si un pied de page est activé sur ce domaine et il n'y a **pas de synchronisation**. Si les utilisateurs ajoutent [leurs propres signatures](../exchange-2016-guide-utilisation-outlook-web-app/#ajouter-une-signature), les e-mails comprendront à la fois le pied de page individuel et celui de l'ensemble du domaine.
+- L'éditeur prend en charge le formatage HTML, les hyperliens, les images, etc. Toutefois, les signatures ne devraient pas trop s'appuyer sur ces options. Les destinataires peuvent utiliser des clients de messagerie électronique qui empêchent le HTML et les images intégrées, les signatures apparaîtront alors d'une manière différente de celle prévue. Attention : les balises HTML seront complètement supprimées si un message est envoyé en « texte brut » depuis OWA.
+- Les « initiales » ne sont pas actives sur ce service. Ajouter cette variable n’aura donc aucun effet.
 
-## Utilisation signature OWA 
-Depuis le webmail exchange, il n'y a pas de manipulation nécessaire pour ajouter votre pied de page.
+## Aller plus loin
 
-Lors de l'envoi d'un e-mail, celui-ci n'est pas visible dans le corps du message, ce qui est normal. Il s'affiche cependant correctement lors de la réception de l'e-mail par le destinataire.
+[Consulter son compte Exchange depuis l’interface OWA](../exchange-2016-guide-utilisation-outlook-web-app/)
 
+[Déléguer des permissions sur un compte Exchange](../exchange-donner-les-droits-full-access-sur-un-compte/)
 
-![emails](images/1373.png){.thumbnail}
+[Partager un calendrier via le webmail OWA](../exchange-2016-partager-un-calendrier-via-le-webmail-owa/)
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

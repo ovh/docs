@@ -1,8 +1,8 @@
 ---
-title: 'Comment gérer le compte d'un client via l'API OVHcloud'
+title: Comment gérer le compte d’un client via l’API OVHcloud
 excerpt: 'Découvrez comment créer une application et gérer des services pour vos clients'
 slug: delegation-droits-api
-section: APIv6
+section: APIv6 OVHcloud
 ---
 
 **Dernière mise à jour le 08/02/2020**

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Aan de slag met een Cloud Web hostingplan
 slug: eerste-stappen-met-cloud-web
 excerpt: Ontdek hoe u kunt starten met een Cloud Web webhostingplan

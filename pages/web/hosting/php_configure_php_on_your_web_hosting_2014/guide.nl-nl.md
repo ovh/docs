@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'De PHP-versie van uw webhosting bewerken'
 slug: php-versie-configureren
 excerpt: 'Leer hoe u de PHP-versie op uw OVH webhosting kunt wijzigen'

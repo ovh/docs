@@ -1,7 +1,7 @@
 ---
 title: 'Sekundären DNS auf einem Dedicated Server erstellen'
 slug: sekundaeren-dns-erstellen-dedicated-server
-excerpt: 'So erstellen Sie einen sekundären DNS für Ihren OVH Dedicated Server'
+excerpt: 'So erstellen Sie einen sekundären DNS für Ihren OVHcloud Dedicated Server'
 section: 'Fortgeschrittene Nutzung'
 ---
 
@@ -11,21 +11,21 @@ section: 'Fortgeschrittene Nutzung'
 
 Wenn Sie Ihren [dedizierten Server](https://www.ovh.de/dedicated_server/){.external} als primären DNS für Ihre Domain verwenden möchten, können Sie die Domain als sekundären DNS zu Ihrem Server hinzufügen.
 
-**In dieser Anleitung erfahren Sie, wie Sie einen sekundären DNS erstellen und zu Ihrem OVH Dedicated Server hinzufügen.**
+**In dieser Anleitung erfahren Sie, wie Sie einen sekundären DNS erstellen und zu Ihrem OVHcloud Dedicated Server hinzufügen.**
 
 
 ## Voraussetzungen
 
-* Sie verfügen über einen [Dedicated Server](https://www.ovh.de/dedicated_server//){.external}, auf dem Windows installiert ist.
-* Sie besitzen eine [Domain](https://www.ovh.de/domains/){.external} und können diese über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} verwalten.
-* Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+* Sie verfügen über einen [Dedicated Server](https://www.ovh.de/dedicated_server//){.external}.
+* Sie besitzen eine [Domain](https://www.ovh.de/domains/){.external} und können diese über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} verwalten.
+* Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
 
 
 ## Beschreibung
 
 ### Verifizierungscode für die Domain erhalten
 
-Klicken Sie im Bereich `Dedicated`{.action} in der linken Menüleiste auf `Dedicated Server`{.action}, um die Liste der Server Ihres Accounts anzuzeigen.
+Klicken Sie im Bereich `Bare Metal Cloud`{.action} in der linken Menüleiste auf `Dedicated Server`{.action}, um die Liste der Server Ihres Accounts anzuzeigen.
 
 ![Sekundärer DNS](images/dns2-01.png){.thumbnail}
 
@@ -44,7 +44,7 @@ Es wird eine Nachricht angezeigt, in der Sie dazu aufgefordert werden, einen TXT
 
 ### Domain verifizieren
 
-Wenn Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt sind, gehen Sie in den Bereich `Web`{.action} und klicken Sie in der linken Menüleiste auf `Domains`{.action}, um alle von Ihnen verwalteten Domains anzuzeigen.
+Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt sind, gehen Sie in den Bereich `Web Cloud`{.action} und klicken Sie in der linken Menüleiste auf `Domains`{.action}, um alle von Ihnen verwalteten Domains anzuzeigen.
 
 ![Domain verifizieren](images/domain-verification-01.png){.thumbnail}
 
@@ -71,7 +71,7 @@ Bestätigen Sie anschließend Ihren Eintrag mit `Bestätigen`{.action}.
 
 ### Sekundären DNS zu Ihrem Server hinzufügen
 
-Gehen Sie wie im ersten Schritt zurück in den Bereich `Dedicated`{.action}, links auf `Dedicated Server`{.action} und zum Tab `Sekundärer DNS`{.action}. Klicken Sie auf `Domain Hinzufügen`{.action}.
+Gehen Sie wie im ersten Schritt zurück in den Bereich `Bare Metal Cloud`{.action}, links auf `Dedicated Server`{.action} und zum Tab `Sekundärer DNS`{.action}. Klicken Sie auf `Domain Hinzufügen`{.action}.
 
 ![Sekundärer DNS](images/dns2-02.png){.thumbnail}
 
@@ -90,6 +90,6 @@ Um den Vorgang abzuschließen, klicken Sie auf `Hinzufügen`{.action}, um Ihren 
 
 ## Weiterführende Informationen
 
-[Bearbeiten der OVH DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}
+[Bearbeiten der OVHcloud DNS-Zone](https://docs.ovh.com/de/domains/webhosting_bearbeiten_der_dns_zone/){.external}
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

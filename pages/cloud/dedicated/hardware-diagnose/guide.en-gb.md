@@ -2,7 +2,7 @@
 title: 'Hardware diagnostics'
 slug: hardware-diagnostics
 excerpt: 'This guide will show you how to diagnose hardware issues on your server.'
-section: 'Diagnostic and rescue mode'
+section: 'Diagnostics and rescue mode'
 ---
 
 **Last updated 07th June 2018**
@@ -16,15 +16,14 @@ At some point during the life of your server, you may encounter a fault due to a
 
 ## Requirements
 
-* a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
-* [rescue mode activated](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}
-
+- a [dedicated server](https://www.ovh.co.uk/dedicated_servers/)
+- [rescue mode activated](../ovh-rescue/)
 
 ## Instructions
 
 ### Use the web interface
 
-Once your server has rebooted, you'll receive an email with your rescue mode access credentials. This email will contain a link to the rescue mode web interface. The link usually looks like this: *https://your_servers_ip_address:444*.
+Once your server has rebooted, you'll receive an email with your rescue mode access credentials. This email will contain a link to the rescue mode web interface. The link usually looks like this: `https://your_servers_ip_address:444`.
 
 After clicking the link, you be taken to the web interface, as shown below.
 

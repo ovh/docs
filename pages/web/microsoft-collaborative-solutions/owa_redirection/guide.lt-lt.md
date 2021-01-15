@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Exchange 2016 el. pašto peradresavimas per OWA
 excerpt: Šiame gide paaiškinsime, kaip nustatyti el. pašto peradresavimą Exchange žiniatinklio pašto sąsajoje
 slug: exchange_2016_el_pasto_peradresavimas_per_owa

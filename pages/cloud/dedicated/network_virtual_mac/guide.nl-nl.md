@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Toewijzen van een virtueel MAC-adres aan een failover-IP'
 slug: netwerk-virtual-mac
 excerpt: 'Leer hoe u een virtueel MAC-adres kunt maken en hoe u dit kunt koppelen aan een failover-IP'

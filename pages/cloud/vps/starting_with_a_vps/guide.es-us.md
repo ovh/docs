@@ -6,7 +6,7 @@ section: 'Primeros pasos'
 order: 1
 ---
 
-**Última actualización: 22/07/2020**
+**Última actualización: 21/12/2020**
  
 ## Objetivo
 
@@ -74,12 +74,16 @@ passwd: password updated successfully
 Tenga en cuenta que no se muestran las contraseñas. Cambie al usuario «root» y establezca su contraseña admin:
 
 ```sh
-$ sudo su -
-# passwd
+~$ sudo su -
+~# passwd
 New password:
 Retype new password:
 passwd: password updated successfully
 ```
+
+#### Activación de las conexiones root
+
+Por motivos de seguridad, la conexión con el usuario root está desactivada por defecto. Si debe autorizar este tipo de conexiones, consulte las instrucciones de [esta guía](../root-password/#activar-la-contrasena-root_1).
 
 #### Instalar o reinstalar su VPS (gama actual)
 

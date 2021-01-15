@@ -2,7 +2,8 @@
 title: 'SSH-Schlüssel erzeugen'
 slug: ssh-schluessel-erzeugen
 excerpt: 'Erfahren Sie hier, wie Sie SSH-Schlüssel für eine sichere Verbindung zu Ihrem Server verwenden'
-section: 'Erste Schritte'
+section: 'Sicherheit'
+order: 1
 ---
 
 **Letzte Aktualisierung am 20.07.2020**
@@ -182,7 +183,7 @@ Wenn Sie die vollständige Ausgabe kopiert haben, sollte der „Identifier“ hi
 
 > [!primary]
 >
-> Alle im Abschnitt „Dedicated“ gespeicherten Schlüssel können auch für Ihre VPS Dienste verwendet werden. Informationen zum Hinterlegen von SSH-Schlüsseln für Public Cloud Dienste finden Sie in [dieser Anleitung](../../public-cloud/create-ssh-keys/#ihren-ssh-schlussel-ins-ovhcloud-kundencenter-importieren_1).
+> Alle im Abschnitt „Dedicated“ gespeicherten Schlüssel können auch für Ihre VPS Dienste verwendet werden. Informationen zum Hinterlegen von SSH-Schlüsseln für Public Cloud Dienste finden Sie in [dieser Anleitung](../../public-cloud/public-cloud-erste-schritte).
 >
 
 

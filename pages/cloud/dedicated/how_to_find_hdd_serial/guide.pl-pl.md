@@ -31,7 +31,7 @@ Aby zminimalizować ryzyko błędu podczas wymiany dysku twardego, prosimy naszy
 Aby ustalić numer seryjny Twojego dysku twardego w przypadku konfiguracji programowej macierzy RAID, możesz użyć smartctl:
 
 ```sh
-smartctl -a /dev/sdX | grep Serial Serial Number:    XXXXXXX
+smartctl -a /dev/sdX | grep Serial
 ```
 
 Urządzenie jest wykrywane przez system operacyjny, na przykład `/dev/sda`, `/dev/sdb`, etc. 
@@ -137,7 +137,7 @@ Numery ID urządzenia i adaptera używane są do wskazania narzędziu smartctl, 
 Należy użyć polecenia podobnego do poniższego:
 
 ```sh
-# smartctl -d megaraid,N -a /dev/sdX | grep Serial Serial Number: 1234567890
+# smartctl -d megaraid,N -a /dev/sdX | grep Serial
 ```
 
 Numer ID urządzenia RAID będzie się wyświetlał w następujący sposób: `/dev/sda` = 1er RAID, `/dev/sdb` = 2e RAID, etc.
@@ -154,7 +154,7 @@ Numer ID urządzenia RAID będzie się wyświetlał w następujący sposób: `/d
 > Zastąp wówczas `megaraid` wpisem `sat+megaraid`:
 >
 > ```
-> smartctl -d sat+megaraid,N -a /dev/sdX | grep Serial Serial Number:    1234567890
+> smartctl -d sat+megaraid,N -a /dev/sdX | grep Serial
 > ```
 >
 
@@ -167,7 +167,7 @@ Możesz skorzystać z [tego przewodnika (kontroler RAID LSI)](https://docs.ovh.c
 Po odnalezieniu urządzenia „sg” powiązanego z dyskiem twardym, który chcesz przeanalizować, zastosuj następujące polecenie:
 
 ```sh
-# smartctl -a /dev/sgX | grep Serial Serial Number:    1234567890
+# smartctl -a /dev/sgX | grep Serial
 ```
 
 Numer urządzenia „sg” będzie się wyświetlał w następujący sposób: `/dev/sg0`, `/dev/sg1`...

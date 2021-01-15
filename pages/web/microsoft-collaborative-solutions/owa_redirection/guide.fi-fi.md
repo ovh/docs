@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2016: Sähköpostin uudelleenohjaus OWAn kautta'
 excerpt: Sähköpostin uudelleenohjaus OWAssa
 slug: exchange_2016_sahkopostin_uudelleenohjaus_owan_kautta

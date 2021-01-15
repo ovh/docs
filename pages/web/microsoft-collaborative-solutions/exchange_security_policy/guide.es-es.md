@@ -28,7 +28,7 @@ En un servicio de correo, es posible configurar la política de seguridad para a
 - reforzar la comprobación de los mensajes entrantes en nuestros servidores destinados a sus direcciones de correo (solo para las cuentas [Exchange](https://www.ovh.com/es/emails/hosted-exchange/){.external});
 - determinar cómo se mostrarán los mensajes no deseados en sus buzones de correo (solo para las cuentas [Exchange](https://www.ovh.com/es/emails/hosted-exchange/){.external}).
 
-Para acceder a la política de seguridad de su servicio de correo, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager), y diríjase a la sección `Web`{.action}. 
+Para acceder a la política de seguridad de su servicio de correo, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager), y diríjase a la sección `Web Cloud`{.action}. 
 
 |Correo electrónico y Email Pro|Exchange| 
 |---|---| 

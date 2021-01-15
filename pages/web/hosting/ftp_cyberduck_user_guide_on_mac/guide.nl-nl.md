@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhosting: Handleiding voor het gebruik van Cyberduck (MAC)'
 excerpt: 'Webhosting: Handleiding voor het gebruik van Cyberduck (MAC)'
 id: '1598'

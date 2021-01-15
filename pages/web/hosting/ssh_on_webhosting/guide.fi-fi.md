@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellit: SSH webhotellissa'
 excerpt: 'Webhotellit: SSH webhotellissa'
 id: '1962'

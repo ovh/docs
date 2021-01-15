@@ -1,8 +1,9 @@
 ---
 title: Zugriff und Sicherheit in Horizon
-excerpt: In dieser Hilfe werden der Zugriff auf die Instanzen und deren Absicherung beschrieben.
+excerpt: In dieser Hilfe werden der Zugriff auf die Instanzen und deren Absicherung beschrieben
 slug: zugriff_und_sicherheit_in_horizon
 legacy_guide_number: g1774
+section: 'Horizon'
 ---
 
 

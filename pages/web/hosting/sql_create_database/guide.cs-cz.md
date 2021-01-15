@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Vytvoření databáze na webhostingu OVH'
 slug: vytvoreni-databaze
 excerpt: 'Zjistěte, jak vytvořit databázi na svém OVH webhostingu'

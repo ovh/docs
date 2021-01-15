@@ -2,12 +2,13 @@
 title: 'Exchange diagnostic: what to do if you encounter an error'
 excerpt: 'Exchange diagnostic: what to do if you encounter an error'
 slug: exchange_diagnostic_what_to_do_if_you_encounter_an_error
+section: Troubleshooting
 legacy_guide_number: g2277
 ---
 
 
 ## Running a diagnostic
-Go to your OVH control panel using this link: [OVH control panel](https://www.ovh.com/ca/en/manager/web/login/).
+Go to your OVH control panel using this link: [OVH control panel](https://www.ovh.com/auth/?action=gotomanager).
 
 Once logged in, choose the Microsoft menu from the left column then go to your Exchange account.
 

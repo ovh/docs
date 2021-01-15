@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2013: Konfigurointi Thunderbirdillä'
 excerpt: ''
 slug: exchange_2013_konfigurointi_thunderbirdilla

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'All about your username'
 slug: all_about_your_username
 legacy_guide_number: g2123

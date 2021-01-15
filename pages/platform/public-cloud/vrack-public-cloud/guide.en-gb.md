@@ -59,7 +59,7 @@ You can simply access it from [our web page](https://api.ovh.com/) but also use 
 
 You may need to retrieve various information before using some API calls because a specific input is required.
 
-Please refer to [this guide](../first-steps-with-ovh-api/) to get started with the OVHcloud APIv6.
+Please refer to [this guide](../../api/first-steps-with-ovh-api/) to get started with the OVHcloud APIv6.
 
 ### OpenStack API
 
@@ -97,7 +97,7 @@ You may consult the [official OpenStack documentation](https://docs.openstack.or
 
 Using the vRack itself is free of charge and it can be delivered within a few minutes. However, to create a vRack service, it is necessary to generate and validate an order form first.
 
-Once the service is active, you will find it in your Control Panel in the `Server`{.action} section, labelled "pn-xxxxxx".
+Once the service is active, you will find it in your Control Panel in the `Bare Metal Cloud`{.action} section, labelled "pn-xxxxxx".
 
 #### In the OVHcloud Control Panel
 
@@ -238,7 +238,7 @@ nova net-list
 ><br> - The VLAN(s) required for your configuration
 >
 
-Also, note the information explicated in [this guide](https://docs.ovh.com/fr/public-cloud/debuter-avec-lapi-nova/):
+Also, note the information explicated in [this guide](../starting-with-nova-api/):
 
 - ID or name of the OpenStack SSH key
 - ID of the instance type (flavor)

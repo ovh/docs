@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Test disk snelheid
 excerpt: Test disk snelheid
 slug: test_disk_snelheid

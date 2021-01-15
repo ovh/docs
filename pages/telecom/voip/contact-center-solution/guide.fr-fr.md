@@ -4,10 +4,9 @@ slug: contact-center-solution
 excerpt: 'Découvrez comment configurer un Contact Center Solution sur votre numéro alias'
 section: 'Numéros ou alias'
 order: 7
-hidden: true
 ---
 
-**Dernière mise à jour le 10/08/2020**
+**Dernière mise à jour le 12/01/2021**
 
 ## Objectif
 
@@ -34,7 +33,7 @@ Vous pouvez par exemple proposer à vos appelants, via la seule composition de v
 |Agent|Un agent est une ligne téléphonique, interne au compte OVHcloud ou externe à celui-ci, en capacité de sonner lorsque le numéro alias sera appelé.|
 |File|Une file est un groupe d'agents, sur le principe de la [file d'appels](../les-files-d-appels/). La file permet de faire sonner ces agents selon une stratégie à définir.|
 |Menu interactif|Un menu interactif propose à l'appelant des choix de touches pour faire sonner un agent/une file ou jouer un son, sur le principe du [serveur vocal interactif (SVI)](../svi-serveur-vocal-interactif/).|
-|TTS|Un Text-To-Speech (TTS) est un son créé à partir d'un texte que vous définissez dans l'espace client OVHcloud.|
+|TTS|Un Text-To-Speech (TTS) est un son créé à partir d'un texte que vous rédigez dans l'espace client OVHcloud.|
 
 
 ## En pratique
@@ -54,6 +53,7 @@ Une fois la configuration appliquée, cliquez sur l'onglet `Paramétrer la confi
 ![contact-center-solution](images/ccs-step1-1b.png){.thumbnail}
 
 La configuration se présente sous la forme d'une arborescence étape par étape qui comprend :
+
 - un menu principal sous la forme d'une bulle (1) permettant de gérer les options générales de la configuration;
 - des étapes (2) créées à chaque nouvel ajout appliqué à votre configuration;
 - des actions (3) définies au sein de chaque étape.
@@ -78,11 +78,11 @@ Cliquez sur la bulle `...`{.action} du menu principal puis sur `Gérer les TTS`{
 
 ![contact-center-solution](images/ccs-step2-2.png){.thumbnail}
 
-Cliquez alors sur `+ Ajouter un TTS`{.action}, choisissez une voix parmi celles proposées puis renseignez le texte qui sera récité. Cliquez enfin sur `Créer`{.action}.
+Cliquez alors sur `+ Ajouter un TTS`{.action}, choisissez une voix parmi celles proposées puis tapez le texte qui sera récité. Cliquez enfin sur `Créer`{.action}.
 
 ### Étape 3 : créer les files
 
-Les files d'appels regroupent plusieurs agents (des lignes téléphoniques internes ou externes) qui vont sonner selon une stratégie que vous définissez dans l'espace client. 
+Les files d'appels regroupent plusieurs agents (des lignes téléphoniques internes ou externes) qui vont sonner selon une stratégie que vous définissez dans l'espace client.
 
 Leur fonctionnement est identique à la configuration [File d'appels](../les-files-d-appels/) applicable directement sur un numéro alias.
 
@@ -116,7 +116,7 @@ Les attributs que vous pouvez modifier sont les suivants :
 |---|---|
 |Description|Permet de renommer l'agent|
 |Délai|Permet de définir la durée pendant laquelle la ligne sonnera. Une fois ce temps écoulé, et selon la stratégie d'appels de la file, l'appel sera alors transmis vers un autre agent de cette file.|
-|Répos|Permet de définir la durée pendant laquelle l'agent ne prendra pas d'appel après avoir raccroché.|
+|Repos|Permet de définir la durée pendant laquelle l'agent ne prendra pas d'appel après avoir raccroché.|
 |Appels simultanés|Permet de définir le nombre d'appels que la ligne pourra recevoir.|
 |État|Permet de rendre disponible ou déconnecter un agent au sein des files.|
 
@@ -192,7 +192,7 @@ Une fois les informations complétées, cliquez sur `Créer`{.action}. Répétez
 
 ![contact-center-solution](images/ccs-step4-1-4.png){.thumbnail}
 
-Selon vos besoins, répétez ces manipulations si vous voulez créer plusieurs menus interactifs. Vous pourrez également les imbriquer en tant que sous-menus d'un menu interactif principal, si vous souhaitez par exemple réaliser plusieurs embranchements.
+Selon vos besoins, répétez ces manipulations si vous voulez créer plusieurs menus interactifs. Vous pourrez également les imbriquer en tant que sous-menus d'un menu interactif principal, si vous souhaitez par exemple proposer de nouveaux choix après le premier menu interactif.
 
 ### Étape 5 : configurer votre CCS
 
@@ -200,8 +200,9 @@ Une fois vos files et menus interactifs créés, il faut maintenant les articule
 Chaque appel entrant va suivre une ou plusieurs étapes successives que vous allez définir. Au sein de chaque étape, une ou plusieurs actions devront également être créés. 
 
 Voici un exemple de configuration d'un CCS :
+
 - Une étape 1, conditionnée à des créneaux horaires de fermeture, dans laquelle une seule action consistera à jouer un son invitant l'appelant à rappeler votre numéro pendant les horaires d'ouverture.
-- Une étape 2  dans laquelle une seule action fera sonner une première file d'appels.
+- Une étape 2 dans laquelle une seule action fera sonner une première file d'appels.
 - Une étape 3 dans laquelle une première action fera sonner une seconde file d'appels, différente de la première. Puis, une seconde action qui renverra l'appel vers un répondeur au bout de la durée maximum d'attente de cette seconde file d'appels.
 
 Pour ajouter une étape, cliquez sur le bouton **`+`{.action}** (1) le plus en bas à gauche de votre plan de configuration.
@@ -212,7 +213,7 @@ Pour ajouter une étape, cliquez sur le bouton **`+`{.action}** (1) le plus en b
 
 #### Ajouter une condition à une étape
 
-Lorsqu'une ou plusieurs conditions sont ajoutées à une étape, celles-ci doivent être atteintes pour que l'étape se déclenche. Si les conditions ne sont pas remplies, le cheminement prévu dans votre CCS passera à l'étape suivante.
+Lorsqu'une ou plusieurs conditions sont ajoutées à une étape, celles-ci doivent être remplies pour que l'étape se déclenche. Si les conditions ne sont pas remplies, le cheminement prévu dans votre CCS passera à l'étape suivante.
 
 Pour ajouter une condition à une étape, cliquez sur le bouton `...`{.action} à côté de l'étape concernée, puis choisissez `Configuration avancée`{.action}. Une fenêtre s'affiche alors ; vous pouvez y définir jusqu'à trois types de conditions. Poursuivez selon la condition que vous désirez paramétrer :
 
@@ -235,7 +236,7 @@ Après avoir cliqué sur `Jours exceptionnels`{.action} depuis la fenêtre de co
 
 ![CCS configuration](images/ccs-step5-1-3.png){.thumbnail}
 
-Vous devez à présent configurer le créneau que vous venez de sélectionner (ou vous assurer que celui-ci l'est correctement). Pour cela, cliquez sur le bouton `...`{.action} le plus proche des appels entrants, puis choisissez `Gérer les créneaux exceptionnels`{.action}.
+Vous devez à présent configurer le créneau que vous venez de sélectionner. Pour cela, cliquez sur le bouton `...`{.action} le plus proche des appels entrants, puis choisissez `Gérer les créneaux exceptionnels`{.action}.
 
 ![CCS configuration](images/ccs-step5-1-4.png){.thumbnail}
 

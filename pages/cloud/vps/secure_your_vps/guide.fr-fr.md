@@ -212,4 +212,4 @@ Vous trouverez toutes les informations sur nos solutions de sauvegarde VPS ici 
 
 [Guide sur le firewall network](https://docs.ovh.com/fr/dedicated/firewall-network//){.external}
 
-Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/fr/>.
+Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.

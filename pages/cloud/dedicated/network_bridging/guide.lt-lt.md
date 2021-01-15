@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuring a network bridge'
 slug: network-bridging
 excerpt: 'This guide will show you how to use network bridging to configure internet access for your virtual machines'
@@ -33,11 +34,11 @@ For this example, we will use the following values in our code samples, which sh
 
 Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click on the `Dedicated`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table.
 
-![Failover IP](images/virtual_mac_01.png){.thumbnail}
+![Failover IP](images/virtual_mac_01_2020_1.png){.thumbnail}
 
 Click on the three dots to open the `Context`{.action} menu, and click `Add a virtual MAC`{.action}.
 
-![Add a virtual MAC (1)](images/virtual_mac_02.png){.thumbnail}
+![Add a virtual MAC (1)](images/virtual_mac_02_2020.png){.thumbnail}
 
 Select `OVH`{.action} from the `Type`{.action} dropdown box, type a name in the `Name of virtual machine`{.action} field, and then confirm your options.
 
@@ -138,7 +139,7 @@ Save and close the file.
 Next, open the virtual machine's routing file, which is located in `/etc/sysconfig/network-scripts/route-(interface-name)`. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
 
 ```bash
-GATEWAY_IP - 255.255.255.255 (insert interface Name)
+GATEWAY_IP - 123.456.789.254 (insert interface Name)
 NETWORK_GW_VM - 255.255.255.0 (insert interface Name)
 default GATEWAY_IP
 ```
@@ -167,7 +168,7 @@ Save and close the file.
 Next, open the virtual machine's routing file, which is located in `/etc/sysconfig/network-scripts/ifroute-ens32`. If the file doesn't exist, you'll have to create it. Edit the file so that it reflects the configuration below (please remember to replace our variables with your own values):
 
 ```bash
-GATEWAY_IP - 255.255.255.255 ens32
+GATEWAY_IP - 123.456.789.254 ens32
 NETWORK_GW_VM - 255.255.255.0 ens32
 default GATEWAY_IP
 ```

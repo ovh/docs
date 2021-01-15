@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Creating an email address with your MX Plan package'
 slug: svetainiu_talpinimo_el_pastas_el_pasto_dezutes_kurimo_gidas
 excerpt: 'Find out how to create an email address with your MX Plan package'

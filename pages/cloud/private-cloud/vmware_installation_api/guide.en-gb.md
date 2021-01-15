@@ -22,7 +22,7 @@ Actions within your infrastructure can be automated using the vSphere SDK.
 
 ##### OS
 
-This example uses a VM installed with Debian 9, deployed from [templates available for your Hosted Private Cloud infrastructure](../deploy-ovh-template/).
+This example uses a VM installed with Debian 9, deployed from [templates available for your Hosted Private Cloud infrastructure](../applying-ovh-template/).
 
 ##### Requirements
 
@@ -142,7 +142,7 @@ vconnect()
 
 ##### OS
 
-This example uses a VM installed with Ubuntu 18.04, deployed from [templates available for your Hosted Private Cloud infrastructure](../deploy-ovh-template/).
+This example uses a VM installed with Ubuntu 18.04, deployed from [templates available for your Hosted Private Cloud infrastructure](../applying-ovh-template/).
 
 
 ##### Requirements

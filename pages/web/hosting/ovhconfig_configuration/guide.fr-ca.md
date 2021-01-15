@@ -2,7 +2,7 @@
 title: 'Configurer le fichier .ovhconfig de son hébergement web'
 slug: configurer-fichier-ovhconfig
 excerpt: 'Découvrez le fichier .ovhconfig et apprenez à le modifier'
-section: 'Configuration de l''hébergement'
+section: "Configuration de l'hébergement"
 order: 4
 ---
 
@@ -58,12 +58,12 @@ Une fois en possession du fichier .ovhconfig, vous pouvez l'éditer. Pour cela, 
 
 ```php
 app.engine=php
-app.engine.version=7.3
+app.engine.version=8.0
 
 http.firewall=none
 environment=production
 
-container.image=stable
+container.image=stable64
 ```
 
 Personnalisez les valeurs des variables selon la configuration que vous souhaitez utiliser avec votre hébergement web. 
@@ -75,6 +75,10 @@ Personnalisez les valeurs des variables selon la configuration que vous souhaite
 |http.firewall|Permet d'activer ou de désactiver le [firewall fourni avec les hébergements web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/mod_security.xml){.external}. Renseignez « security » pour l'activer ou « none » pour le désactiver.|
 |environment|Permet de gérer le comportement du cache des fichiers statiques de votre site internet ainsi que le traitement des erreurs PHP. Renseignez « production » pour maximiser la mise en cache et masquer les erreurs PHP ou « development » pour qu'aucun cache ne soit appliqué et que les erreurs PHP s'affichent.|
 |container.image|Permet de modifier l'environnement d'exécution utilisé par l'hébergement. Renseignez le moteur de votre choix. Vous pouvez les retrouver depuis notre documentation : [« Découvrir les configurations disponibles »](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#decouvrir-les-configurations-disponibles){.external}.|
+
+> [!warning]
+>
+> Lorsque vous choisissez l'environement d'éxecution « stable64», vérifiez que votre site est compatible avec l'environement 64 bits.
 
 Vous trouverez ci-dessous le détail d'application complet du fichier .ovhconfig :
 
@@ -101,11 +105,11 @@ app.engine=php
 ; __app.engine.version__ specify version of your engine
 ;
 ; for php:
-;   default: 7.3
+;   default: 8.0
 ; for phpcgi:
 ;   this options is ignored (= fallback in AUTO)
 ;
-app.engine.version=7.3
+app.engine.version=8.0
 
 ; __http.firewall__ used to add application firewall  (filter http requests)
 ;
@@ -135,9 +139,9 @@ environment=production
 
 ; __container.image__
 ;
-; values: legacy | stable | jessie.i386 | testing
+; values: legacy | stable | stable64
 ;
-container.image=stable
+container.image=stable64
 ```
 
 #### Étape 4 : télécharger le fichier .ovhconfig sur l'espace de stockage

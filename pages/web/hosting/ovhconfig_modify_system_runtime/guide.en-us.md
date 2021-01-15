@@ -37,9 +37,9 @@ First of all, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?ac
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
-If the `Modify configuration`{.action} button is greyed out, it may be because of an ongoing **global PHP version** verification. If this is the case, a blue wheel will appear next to the version, indicating that a verification is in progress. Wait a few minutes for the `Modify configuration`{.action} button to become accessible again.
-
-![hostingconfiguration](images/change-hosting-configuration-step2.png){.thumbnail}
+> [!primary]
+> If the `Modify configuration`{.action} button is greyed out, it may be because of an ongoing **global PHP version** verification. If this is the case, a blue wheel will appear next to the version, indicating that a verification is in progress. Wait a few minutes for the `Modify configuration`{.action} button to become accessible again.
+>
 
 #### Step 2: Check your Web Hosting plan’s configuration.
 
@@ -48,7 +48,7 @@ In the window that pops up, you can pick from two options. Select the one corres
 |Choice|Details|
 |---|---|
 |“Return to a previous configuration”|After you have selected this option, choose the configuration to restore on the `Logs choice` side. This option will not be available if you have not made any configuration changes in the past.|
-|“Modify the current configuration”|Once you have selected this option, choose the modifications you would like to make to the configuration from the fields that appear. If required, you can read more about them by going to the [View the configurations available](../modify_your_web_hosting_systems_runtime_environment/#view-the-configurations-available_1) section of this documentation.|
+|“Modify the current configuration”|Once you have selected this option, choose the modifications you would like to make to the configuration from the fields that appear. If required, you can read more about them by going to the [View the configurations available](../modify_your_web_hosting_systems_runtime_environment/#view-the-configurations-available_1){.external} section of this documentation.|
 
 > [!primary]
 >
@@ -63,36 +63,30 @@ Once you are ready to do this, click `Confirm`{.action} to apply the modificatio
 
 When you modify your Web Hosting plan’s configuration, you can choose from a range of configuration types. From this point onwards, you can follow the guide section that is relevant to the configuration type you would like to learn more about and select.
 
-- [Runtime environment](../modify_your_web_hosting_systems_runtime_environment/#runtime-environment)
-- [PHP version](../modify_your_web_hosting_systems_runtime_environment/#php-version)
-- [PHP engine](../modify_your_web_hosting_systems_runtime_environment/#php-engine)
-- [Mode](../modify_your_web_hosting_systems_runtime_environment/#mode)
+- [Runtime environment](../modify_your_web_hosting_systems_runtime_environment/#runtime-environment){.external}
+- [PHP version](../modify_your_web_hosting_systems_runtime_environment/#php-version){.external}
+- [PHP engine](../modify_your_web_hosting_systems_runtime_environment/#php-engine){.external}
+- [Mode](../modify_your_web_hosting_systems_runtime_environment/#mode){.external}
 
 #### Runtime environment
 
 By changing the runtime environment, you can edit certain technical values for your Web Hosting plan. **Before you start making any changes, ensure that the runtime environment you want to apply is compatible with your website.** 
 
-|Environment|Legacy|stable|testing|jessie.i386|
-|---|---|---|---|---|
-|Linked image|Legacy|jessie.i386|jessie.i386|jessie.i386|
-|Minimum PHP version|4.4|5.3|5.3|5.3|
-|Openssl|0.9.8o|1.0.1k (TLS1.2 compatible)|1.0.1k (TLS1.2 compatible)|1.0.1k (TLS1.2 compatible)|
-|Imagick PHP extension| - | Yes | Yes | Yes |
-|Memcache PHP extension (PHP 5.6)| Yes | Yes | Yes | Yes |
-|Memcached PHP extension (PHP 5.6)| - | Yes | Yes | Yes |
-|Mongo PHP extension (PHP 5.4, 5.5, 5.6)| - | Yes | Yes | Yes |
-|Mysqlnd extension (in utf-8 only)| - | Yes | Yes | Yes |
-|Redis extension| - | Yes | Yes | Yes |
-|Opcache| Yes | Yes | Yes | Yes |
-|Python|2.6|2.7 and 3.4|2.7 and 3.4|2.7 and 3.4|
-|Ruby|1.8.7|2.1.5|2.1.5|2.1.5|
-|Rails|2.3.5|4.1.8|4.1.8|4.1.8|
-|Perl|5.10|5.20|5.20|5.20|
-|git|1.7.2.5|2.1.4|2.1.4|2.1.4|
+|Environment|Legacy|Stable|Stable64|
+|---|---|---|---|
+|architecture|32 bits|32 bits|64 bits|
+|Minimum PHP version|5.6|7.3|7.4|
+|Openssl|1.0.1t|1.0.1t|1.1.1d|
+|Python|2.7 and 3.4|2.7 and 3.7|2.7 and 3.7|
+|Ruby|2.1|2.1|2.5|
+|Rails|4.1|4.1|5.2|
+|Perl|5.20|5.20|5.28|
+|git|2.1|2.1|2.20|
+
 
 > [!primary]
 >
-> The ‘legacy’ environment may be useful for older websites that still use old PHP versions. However, we strongly advise using a stable environment that has the latest updates. **Ensure that your website is compatible before you make any changes.**
+> The ‘legacy’ environment may be useful for older websites that still use old PHP versions. However, we strongly advise using a ‘Stable64‘ environment that has the latest updates. **Ensure that your website is compatible before you make any changes.**
 > 
 
 Once you have chosen your runtime environment, you can change it in two different ways:

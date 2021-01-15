@@ -32,7 +32,7 @@ Once telegraf is unzipped, you shoud have a .exe file and a .conf one. Edit the 
 ```yaml
 # OUTPUTS
 [[outputs.influxdb]]
-  urls = ["https://influxdb.gra1-ovh.metrics.ovh.net" ]
+  urls = ["https://influxdb.gra1.metrics.ovh.net" ]
 
   ## Timeout for HTTP messages.
   timeout = "15s"  # Set at least 15s to avoid possible timeout with our platform

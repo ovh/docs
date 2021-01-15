@@ -37,9 +37,9 @@ As contas Email Pro podem ser configuradas em vários softwares de e-mail compat
 
 > [!primary]
 >
-> Neste manual, utilizamos a menção do servidor: pro**X**.mail.ovh.net. Deverá substituir o "X" pelo número que designa o servidor do seu serviço E-mail Pro.
+> Neste manual, utilizamos a menção do servidor: pro**?**.mail.ovh.net. Deverá substituir o "?" pelo número que designa o servidor do seu serviço E-mail Pro.
 >
-> Pode encontrar esse número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web`{.action} e, a seguir, em `E-mail Pro`{.action} na coluna à esquerda. O nome do servidor está visível na secção Ligação do separador `Informações gerais`{.action}.
+> Pode encontrar esse número na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web Cloud`{.action} e, a seguir, em `E-mail Pro`{.action} na coluna à esquerda. O nome do servidor está visível na secção Ligação do separador `Informações gerais`{.action}.
 > 
 
 Abra a aplicação Outlook no seu dispositivo. Existem duas formas de adicionar uma conta:
@@ -60,7 +60,7 @@ Depois, introduza a informação solicitada.
 
 |Informação|Descrição|
 |---|---|
-|Servidor|Introduza o servidor pro**X**.mail.ovh.net|
+|Servidor|Introduza o servidor pro**?**.mail.ovh.net|
 |Porta|Introduza a porta **993**.|
 |Método de encriptação|Selecione **SSL/TLS**.|
 |Autenticação|Não selecione a caixa “Requer início de sessão utilizando autenticação de palavra-passe segura (SPA)”.|
@@ -69,7 +69,7 @@ Depois, introduza a informação solicitada.
 
 |Informação|Descrição|
 |---|---|
-|Servidor|Introduza o servidor pro**X**.mail.ovh.net|
+|Servidor|Introduza o servidor pro**?**.mail.ovh.net|
 |Porta|Introduza a porta **587**.|
 |Método de encriptação|Selecione **STARTTLS**.|
 |Autenticação|Não selecione a caixa “Requer início de sessão utilizando autenticação de palavra-passe segura (SPA)”.|
@@ -84,8 +84,8 @@ Caso a aplicação lhe solicite para inserir manualmente alguns dados técnicos 
 
 |Tipo de servidor|Nome do servidor|Método de encriptação|Porta|
 |---|---|---|---|
-|Entrada|pro**X**.mail.ovh.net|SSL/TLS|993|
-|Saída|pro**X**.mail.ovh.net|STARTTLS|587|
+|Entrada|pro**?**.mail.ovh.net|SSL/TLS|993|
+|Saída|pro**?**.mail.ovh.net|STARTTLS|587|
 
 ### 2 - Utilizar o endereço de e-mail
 

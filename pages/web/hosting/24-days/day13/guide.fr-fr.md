@@ -1,7 +1,7 @@
 ---
 title: 'Envoyer des e-mails a vos utilisateurs'
 slug: day13
-section: 'Cas d''usage'
+section: "Cas d'usage"
 hidden: true
 ---
 

@@ -3,7 +3,7 @@ title: Adding an IP block
 slug: add-ip-block
 excerpt: Find out how to order an IP block on your Private Cloud
 legacy_guide_number: '7766457'
-section: OVH Features
+section: OVHcloud Features
 order: 01
 ---
 
@@ -22,7 +22,7 @@ An IP address block can be used to make your services available over the Interne
 
 ## Instructions
 
-To order an additional IP block for your **Private Cloud**, log in to your OVHcloud Control Panel. In the `Server` section, click on `IP` in the left column and then click on `Order additional IPs`{.action}. Then select your **Private Cloud** from the drop-down menu before proceeding to the next step.
+To order an additional IP block for your **Private Cloud**, log in to your OVHcloud Control Panel. In the `Hosted Private Cloud` section, click on `IP` in the left column and then click on `Order additional IPs`{.action}. Then select your **Private Cloud** from the drop-down menu before proceeding to the next step.
 
 Several fields will be required to create your IP block:
 
@@ -65,6 +65,8 @@ After confirming the last step, you can view the order form for your IP block. I
 
 ### Migrate an IP block between two Hosted Private Cloud services
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 Migrating an IP block requires manually moving blocks through the OVHcloud APIv6.
 
 Use the following API call:
@@ -99,7 +101,7 @@ Then use this API call to move the IP addresses to "IP parking":
 > This call cuts the network on VMs that use the IPs in question.
 >
 
-You can track the IP block movement from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} in the `Server`{.action} part and then `Private Cloud`{.action}. Click on your Hosted Private Cloud service and then click the `Operations`{.action} tab.
+You can track the IP block movement from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} in the `Hosted Private Cloud`{.action} part and then `Private Cloud`{.action}. Click on your Hosted Private Cloud service and then click the `Operations`{.action} tab.
 
 The operation name is removeIpRipeBlock.
 

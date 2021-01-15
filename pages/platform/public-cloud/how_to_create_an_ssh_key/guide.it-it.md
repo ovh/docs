@@ -5,7 +5,7 @@ excerpt: 'Come generare una chiave SSH per accedere alla tua istanza'
 section: Sicurezza
 ---
 
-**Ultimo aggiornamento: 20/12/2019**
+**Ultimo aggiornamento: 21/12/2020**
 
 ## Obiettivo
 
@@ -30,7 +30,7 @@ Ti ricordiamo che le chiavi SSH non sono utilizzate sulle istanze con sistema op
 Apri il tool **Terminal** (prompt dei comandi) ed esegui il seguente comando per generare una chiave SSH da 4096 bit:
 
 ```sh
-# ssh-keygen -b 4096
+# ssh-keygen -t rsa -b 4096
 ```
 
 Il risultato restituito chiederà di salvare la chiave appena creata:

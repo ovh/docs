@@ -2,7 +2,7 @@
 title: 'Optimisation des performances de votre site'
 slug: optimisation-performances-site
 legacy_guide_number: 1396
-excerpt: 'Vous trouverez dans ce guide differents conseils concernant l''analyse des lenteurs sur votre site web, ainsi que des pistes d''amelioration.'
+excerpt: "Vous trouverez dans ce guide differents conseils concernant l'analyse des lenteurs sur votre site web, ainsi que des pistes d'amelioration."
 section: 'Optimiser son site'
 ---
 
@@ -85,7 +85,7 @@ Dans nos laboratoires de tests, nous obtenons ainsi des performances jusqu'à 7 
 
 
 |Variable|sans PHP-FPM|avec PHP-FPM|
-|max_execution_time|120s|300s|
+|max_execution_time|120s|165s|
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 

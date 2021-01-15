@@ -113,4 +113,4 @@ OVH ofrece licencias de Outlook que podrá contratar en el [área de cliente de 
 
 [Crear un registro CNAME al añadir un dominio asociado](https://docs.ovh.com/es/microsoft-collaborative-solutions/exchange_20132016_anadir_un_registro_cname/){.external}
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -15,7 +15,7 @@ Właśnie zakupiłeś usługę E-mail Pro. Umożliwia ona korzystanie z profesjo
 
 ## Wymagania początkowe
 
-- Wykupienie usługi [E-mail Pro]({ovh_www}/emails/email-pro/){.external}
+- Wykupienie usługi [E-mail Pro](https://www.ovh.pl/emaile/email-pro/){.external}
 - Otrzymanie wiadomości e-mail z potwierdzeniem, że usługa E-mail Pro została zainstalowana
 - Zarejestrowana domena.
 - Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
@@ -123,14 +123,14 @@ Aby skonfigurować Twoje konto e-mail w programie pocztowym lub na urządzeniu t
 
 |Typ serwera|Nazwa serwera|Typ zabezpieczenia|Port|
 |---|---|---|---|
-|Serwer poczty przychodzącej|pro**X**.mail.ovh.net|SSL/TLS|993|
-|Serwer poczty wychodzącej|pro**X**.mail.ovh.net|STARTTLS|587|
+|Serwer poczty przychodzącej|pro**?**.mail.ovh.net|SSL/TLS|993|
+|Serwer poczty wychodzącej|pro**?**.mail.ovh.net|STARTTLS|587|
 
 > [!primary]
 >
-> Poniżej stosujemy przykładową nazwę serwera, czyli pro**X**.mail.ovh.net. Należy zastąpić „X” cyfrą wskazującą serwer Twojej usługi E-mail Pro.
+> Poniżej stosujemy przykładową nazwę serwera, czyli pro**?**.mail.ovh.net. Należy zastąpić „X” cyfrą wskazującą serwer Twojej usługi E-mail Pro.
 > 
-> Znajdziesz tę cyfrę w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, przechodząc do sekcji `Web`{.action}, a następnie do `E-mail Pro`{.action}
+> Znajdziesz tę cyfrę w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, przechodząc do sekcji `Web Cloud`{.action}, a następnie do `E-mail Pro`{.action}
 >  w lewej kolumnie. Nazwa serwera jest widoczna w ramce **Połączenie** w karcie `Informacje ogólne`{.action}.
 > 
 

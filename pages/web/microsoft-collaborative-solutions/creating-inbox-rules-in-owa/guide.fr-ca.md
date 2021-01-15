@@ -1,8 +1,8 @@
 ---
-title: 'Règles de boîte de réception depuis l''interface OWA'
+title: "Règles de boîte de réception depuis l'interface OWA"
 slug: regles-boite-de-reception-owa
-excerpt: 'Comment créer des filtres et des redirections e-mails depuis l''interface OWA'
-section: 'Utilisation d''Outlook Web Application (OWA)'
+excerpt: "Comment créer des filtres et des redirections e-mails depuis l'interface OWA"
+section: "Utilisation d'Outlook Web Application (OWA)"
 ---
 
 **Dernière mise à jour le 11 mars 2020**
@@ -17,7 +17,7 @@ Avec l’option « Règles de gestion de la boîte de réception », vous pouvez
 
 ## Prérequis
 
-- une solution e-mail OVHcloud doit avoir été configurée au préalable (**MX Plan**, proposé parmi nos [offres d’hébergement web](https://www.ovh.com/ca/fr/hebergement-web/), ou commandé séparément comme solution autonome ; [**Hosted Exchange**](https://www.ovh.com/ca/fr/emails/hosted-exchange/) ou [**Email Pro**](https://www.ovh.com/ca/fr/emails/email-pro/))
+- une solution e-mail OVHcloud doit avoir été configurée au préalable (**MX Plan**, proposé parmi nos [offres d’hébergement web](https://www.ovh.com/ca/fr/hebergement-web/) ou [**Hosted Exchange**](https://www.ovh.com/ca/fr/emails/hosted-exchange/)
 - les paramètres de connexion de l’adresse e-mail que vous souhaitez configurer
 
 

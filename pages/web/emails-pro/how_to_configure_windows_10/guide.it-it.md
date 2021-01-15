@@ -33,9 +33,9 @@ Gli account Email Pro possono essere configurati su diversi client di posta elet
 
 > [!primary]
 >
-> Nel nostro esempio abbiamo utilizzato come nome del server "pro**X**.mail.ovh.net", dove "X" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
+> Nel nostro esempio abbiamo utilizzato come nome del server "pro**?**.mail.ovh.net", dove "?" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
 >
-> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web`{.action}, selezionando `Email Pro`{.action} nella colonna a sinistra. Il nome del server è visibile nel riquadro Connessione della scheda `Informazioni generali`{.action}.
+> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action} nella colonna a sinistra. Il nome del server è visibile nel riquadro Connessione della scheda `Informazioni generali`{.action}.
 > 
 
 Una volta avviata l’applicazione Posta sul tuo dispositivo, puoi aggiungere un nuovo account in due modi diversi.
@@ -57,9 +57,9 @@ Inserisci le informazioni richieste:
 |Password|Digita la password associata all’account.|
 |Nome dell’account|Inserisci un nome che ti permetterà di riconoscere questo account tra quelli presenti nella tua applicazione Posta.|
 |Invia i tuoi messaggi utilizzando questo nome|Indica il nome che comparirà come mittente dei messaggi inviati da questo indirizzo|
-|Server di posta in entrata|Inserisci il server “pro**X**.mail.ovh.net:993”.|
+|Server di posta in entrata|Inserisci il server “pro**?**.mail.ovh.net:993”.|
 |Tipo di account|Ti consigliamo di usare il protocollo **IMAP4**. Tuttavia puoi selezionare **POP** (archiviazione di email nella tua applicazione Posta) nel menu a tendina.|
-|Server di posta in uscita|Inserisci il server “pro**X**.mail.ovh.net:587”.|
+|Server di posta in uscita|Inserisci il server “pro**?**.mail.ovh.net:587”.|
 
 Assicurati di aver selezionato correttamente le seguenti voci:
 - “Il server in uscita richiede l’autenticazione”
@@ -77,8 +77,8 @@ Se hai necessità di inserire manualmente le preferenze per il tuo account, ecco
 
 |Tipo di server |Nome del server|SSL|Porta|
 |---|---|---|---|
-|In entrata|pro**X**.mail.ovh.net|Sì|993|
-|In uscita|pro**X**.mail.ovh.net|Sì|587|
+|In entrata|pro**?**.mail.ovh.net|Sì|993|
+|In uscita|pro**?**.mail.ovh.net|Sì|587|
 
 ### Step 2: utilizza il tuo account
 

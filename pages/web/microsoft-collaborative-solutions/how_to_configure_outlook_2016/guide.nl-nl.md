@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuratie van uw Exchange-account in Outlook 2016 voor Windows
 slug: configuratie-outlook-2016
 excerpt: Leer hoe u uw Exchange-account in Outlook 2016 voor Windows kunt configureren

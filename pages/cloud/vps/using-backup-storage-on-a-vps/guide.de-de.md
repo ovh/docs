@@ -6,7 +6,7 @@ section: 'Backup Optionen'
 order: 1
 ---
 
-**Letzte Aktualisierung am 01.09.2020**
+**Letzte Aktualisierung am 24.09.2020**
 
 
 ## Ziel
@@ -28,7 +28,7 @@ Bevor Sie Backup-Optionen anwenden, empfehlen wir, die [Produktseiten und FAQ](h
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Server`{.action} und wählen Sie links im Menü unter `VPS`{.action} Ihren Server aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie links im Menü unter `VPS`{.action} Ihren Server aus.
 
 ### Schritt 1: Snapshot-Option aktivieren
 
@@ -74,10 +74,16 @@ $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
-Starten Sie den Dienst um zu gewährleisten, dass er ausgeführt wird:
+Starten Sie den VPS neu:
 
 ```
-$ sudo service qemu-guest-agent start
+$ sudo reboot
+```
+
+Überprüfen Sie, ob der Dienst ausgeführt wird:
+
+```
+$ sudo service qemu-guest-agent status
 ```
 
 ##### **Redhat Distributionen (CentOS, Fedora)**
@@ -96,10 +102,15 @@ $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
-Starten Sie den Agent und überzeugen Sie sich, dass er ausgeführt wird:
+Starten Sie den VPS neu:
 
 ```
-$ sudo service qemu-guest-agent start
+$ sudo reboot
+```
+
+Überprüfen Sie, ob der Dienst ausgeführt wird:
+
+```
 $ sudo service qemu-guest-agent status
 ```
 

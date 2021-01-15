@@ -1,23 +1,22 @@
 ---
 title: 'Utilizar el modo de resiliencia'
 slug: modo-resiliencia
-excerpt: 'Cómo utilizar el modo de resiliencia de OVH'
-section: 'Funcionalidades de OVH'
+excerpt: 'Cómo utilizar el modo de resiliencia de OVHcloud'
+section: 'Funcionalidades de OVHcloud'
 ---
 
 **Última actualización: 25/10/2018**
 
 ## Objetivo
 
-El modo de resiliencia es una herramienta desarrollada por OVH que simula un fallo en uno de los servidores host de la infraestructura para comprobar que los sistemas **High Availability** (HA) y **Fault Tolerance** (FT) funcionan correctamente en un cluster **de desarrollo**.
+El modo de resiliencia es una herramienta desarrollada por OVHcloud que simula un fallo en uno de los servidores host de la infraestructura para comprobar que los sistemas **High Availability** (HA) y **Fault Tolerance** (FT) funcionan correctamente en un cluster **de desarrollo**.
 
-**Esta guía explica cómo utilizar el modo de resiliencia de OVH.**
+**Esta guía explica cómo utilizar el modo de resiliencia de OVHcloud.**
 
 ## Requisitos
 
-* Tener contratado un servicio [Private Cloud](https://www.ovh.es/private-cloud/){.external}.
-* Estar conectado al cliente vSphere.
-
+- Tener contratado un servicio [Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/).
+- Estar conectado al cliente vSphere.
 
 
 ## Procedimiento
@@ -69,4 +68,4 @@ La solicitud de desactivación se enviará.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

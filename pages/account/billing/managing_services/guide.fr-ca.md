@@ -1,7 +1,7 @@
 ---
 title: 'Gérer mes services OVHcloud'
 slug: gerer-ses-services-ovh
-excerpt: 'Apprenez à visualiser et administrer vos solutions depuis l''interface « Gérer mes services » dans votre espace client'
+excerpt: "Apprenez à visualiser et administrer vos solutions depuis l'interface « Gérer mes services » dans votre espace client"
 section: 'Gérer mes services et leur renouvellement'
 hidden: true
 ---
@@ -30,7 +30,7 @@ L'espace client vous offre une gestion administrative complète de tous vos serv
 Avant de débuter, notez que l'interface « Gérer mes services » vous permet de visualiser l'intégralité de vos solutions OVHcloud. Vous pouvez également les administrer depuis cet espace, à l'exception :
 
 - des services télécoms (comme une solution xDSL, de VoIP, etc.- pas disponible pour CA) ;
-- [des services Microsoft](https://ca.ovh.com/fr/solutions-collaboratives-microsoft/){.external} (comme les solutions Exchange, Office 365 et SharePoint) ;
+- [des services Microsoft](https://www.ovh.com/ca/fr/emails/hosted-exchange/){.external} (comme les solutions Exchange, Office 365 et SharePoint) ;
 - du service e-mail MX Plan.
 
 Poursuivez la lecture de cette documentation selon la manipulation que vous souhaitez réaliser.

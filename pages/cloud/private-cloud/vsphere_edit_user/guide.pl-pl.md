@@ -2,7 +2,7 @@
 title: Powiązanie adresu e-mail z użytkownikiem vSphere 
 excerpt: Dowiedz się, jak powiązać adres e-mail z użytkownikiem vSphere
 slug: powiazanie-adresu-e-mail-z-uzytkownikiem
-section: Funkcjonalności OVH
+section: Funkcjonalności OVHcloud
 ---
 
 **Ostatnia aktualizacja z dnia 31-08-2020**
@@ -20,7 +20,7 @@ Możliwe jest powiązanie imienia, nazwiska, numeru telefonu i adresu e-mail z u
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i przejdź do sekcji `Server`. Kliknij `Private Cloud` na pasku usług po lewej stronie, po czym wybierz odpowiednią infrastrukturę.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i przejdź do sekcji `Hosted Private Cloud`. Kliknij `Private Cloud` na pasku usług po lewej stronie, po czym wybierz odpowiednią infrastrukturę.
 
 ![Użytkownik vsphere](images/addMailOnUser01.png){.thumbnail}
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH Sähköpostit: Windows Phonen konfigurointiohje'
 excerpt: Miten konfiguroidaan Windows-puhelin
 slug: ovh_sahkopostit_windows_phonen_konfigurointiohje
@@ -41,7 +42,7 @@ Valitse "muu tili" lisätäksesi POP- tai IMAP-sähköpostitilin.
 ## Vaihe 5: Tilin konfigurointi
 Syötä ensimmäisenn kenttään sähköpostiosoite kokonaisuudessaan.
 
-Seuraavaksi syötä salasana, kuten se on [hallintapaneelissa](https://www.ovh.com/managerv3/) OVH:n sähköpostitilille määritelty.
+Seuraavaksi syötä salasana, kuten se on [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager) OVH:n sähköpostitilille määritelty.
 
 Valittuasi "kirjaudu" tulee näkyviin varoitusviesti.
 
@@ -69,7 +70,7 @@ Tilin tyyppi: POP3 (voit myös konfiguroida tilin IMAP-tyyppisenä, missä tapau
 
 Käyttäjänimi: sähköpostiosoite kokonaisuudessaan.
 
-Salasana: salasana, jonka määrittelit[hallintapaneelissa](https://www.ovh.com/managerv3/)OVH:n sähköpostitilillle.
+Salasana: salasana, jonka määrittelit[hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager)OVH:n sähköpostitilillle.
 
 Lähtevän postin palvelin (SMTP): SSL0.OVH.NET
 
@@ -104,7 +105,7 @@ Tässä ovat sähköpostilaatikon POP-tilin asetukset.
 POP-tilin konfigurointi SSL-suojaus aktivoituna tai deaktivoituna: 
 
 Sähköpostiosoite: sähköpostiosoite kokonaisuudessaan.
-Salasana: salasana, joka on määritelty [hallintapaneelissa](https://www.ovh.com/managerv3/).
+Salasana: salasana, joka on määritelty [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager).
 Käyttäjätunnus: sähköpostiosoite kokonaisuudessaan.
 Saapuvan postin palvelin: saapuvien sähköpostiviestien palvelin: SSL0.OVH.NET
 Saapuvan postin palvelimen portti: saapuvien sähköpostiviestien palvelimen portti: 995 tai 110
@@ -131,7 +132,7 @@ Tässä ovat sähköpostilaatikon IMAP-tilin asetukset.
 IMAP-tilin konfigurointi SSL-suojaus aktivoituna tai deaktivoituna: 
 
 Sähköpostiosoite: sähköpostiosoite kokonaisuudessaan.
-Salasana: salasana, joka on määritelty [hallintapaneelissa](https://www.ovh.com/managerv3/).
+Salasana: salasana, joka on määritelty [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager).
 Käyttäjätunnus: sähköpostiosoite kokonaisuudessaan.
 Saapuvan postin palvelin: saapuvien sähköpostiviestien palvelin: SSL0.OVH.NET
 Saapuvan postin palvelimen portti: saapuvien sähköpostiviestien palvelimen portti: 993 tai 143

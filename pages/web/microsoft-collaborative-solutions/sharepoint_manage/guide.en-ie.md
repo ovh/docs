@@ -24,7 +24,7 @@ The SharePoint solutions offer shared storage space for your collaborative work.
 
 ### Step 1: Order a SharePoint platform
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click on `Order`{.action} in the services bar on the left-hand side, then `SharePoint`{.action}.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click on `Order`{.action} in the services bar on the left-hand side, then `SharePoint`{.action}.
 
 There are two platform types available:
 
@@ -43,7 +43,7 @@ To read this email, log in to your [OVHcloud Control Panel](https://www.ovh.com/
 
 > **\[xx-11111-ovh] Configure your Microsoft SharePoint service!**
 
-To start the configuration, go to the `Web` section of your Control Panel. Click on `Microsoft`{.action} in the services bar on the left-hand side, then on `SharePoint`{.action}. Then, select the appropriate SharePoint platform.
+To start the configuration, go to the `Web Cloud` section of your Control Panel. Click on `Microsoft`{.action} in the services bar on the left-hand side, then on `SharePoint`{.action}. Then, select the appropriate SharePoint platform.
 
 Enter the name of your platform in the “SharePoint URL” box, then click `Confirm URL`{.action}.
 
@@ -55,7 +55,7 @@ Enter the name of your platform in the “SharePoint URL” box, then click `Con
 
 ### Step 3: Configure the SharePoint platform
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `SharePoint`{.action}. Next, select the SharePoint service concerned.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `SharePoint`{.action}. Next, select the SharePoint service concerned.
 
 #### **Standalone SharePoint**
 

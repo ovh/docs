@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Aan de slag met Private SQL
 slug: eerste-stappen-met-private-sql
 excerpt: Ontdek hoe u een goed begin kunt maken met Private SQL

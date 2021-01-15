@@ -57,12 +57,12 @@ Nun, da Sie Ihre .ovhconfig-Datei haben, können Sie sie bearbeiten. Verwenden S
 
 ```php
 app.engine=php
-app.engine.version=7.3
+app.engine.version=8.0
 
 http.firewall=none
 environment=production
 
-container.image=stable
+container.image=stable64
 ```
 
 Passen Sie die Werte der Variablen entsprechend der Konfiguration an, die Sie für Ihr Webhosting verwenden möchten. 
@@ -74,6 +74,10 @@ Passen Sie die Werte der Variablen entsprechend der Konfiguration an, die Sie f�
 |http.firewall|Hier können Sie die [mit den OVH Webhostings angebotene Firewall](https://www.ovh.com/de/hosting/mod_security.xml){.external} aktivieren oder deaktivieren. Geben Sie „security“ ein, um diese zu aktivieren, oder „none“, um sie zu deaktivieren.|
 |environment|Hier können Sie festlegen, wie die statischen Dateien Ihrer Website gecacht werden sowie die PHP-Fehlerbehandlung einstellen. Geben Sie „production“ ein, um das Caching zu maximieren und PHP-Fehler zu verbergen, oder „development“, um das Caching abzustellen und PHP-Fehler anzuzeigen.|
 |container.image|Hier können Sie die von Ihrem Webhosting verwendete Ausführungsumgebung ändern. Geben Sie die gewünschte Engine ein. Die möglichen Konfigurationen finden Sie in unserer Dokumentation: [„Verfügbare Konfigurationen“](https://docs.ovh.com/de/hosting/die_laufzeitumgebung_meines_webhostings_andern/#verfugbare-konfigurationen_1){.external}|
+
+> [!warning]
+>
+> Wenn Sie die Ausführungsumgebung "stable64"auswählen, überprüfen Sie, ob Ihre Website mit der 64 Bit Umgebung kompatibel ist.
 
 Nachstehend finden Sie die vollständigen Anwendungsdetails der .ovhconfig-Datei.
 
@@ -100,11 +104,11 @@ app.engine=php
 ; __app.engine.version__ specify version of your engine
 ;
 ; for php:
-;   default: 7.3
+;   default: 8.0
 ; for phpcgi:
 ;   this options is ignored (= fallback in AUTO)
 ;
-app.engine.version=7.3
+app.engine.version=8.0
 
 ; __http.firewall__ used to add application firewall  (filter http requests)
 ;
@@ -134,9 +138,9 @@ environment=production
 
 ; __container.image__
 ;
-; values: legacy | stable | jessie.i386 | testing
+; values: legacy | stable | stable64
 ;
-container.image=stable
+container.image=stable64
 ```
 
 #### Schritt 4: .ovhconfig-Datei auf Ihren Speicherplatz hochladen

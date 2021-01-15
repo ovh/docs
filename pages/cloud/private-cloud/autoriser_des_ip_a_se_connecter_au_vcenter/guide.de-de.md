@@ -1,30 +1,29 @@
 ---
-title: Die Verbindung von IPs mit dem vCenter erlauben
+title: IP-Autorisierung für vCenter
 slug: verbindung-von-ip-zum-vcenter-erlauben
+excerpt: Erfahren Sie hier, wie Sie den Zugang zu vCenter über die Freigabe von IP-Adressen verwalten
 legacy_guide_number: '1442255'
-space_key: VS
-space_name: vSphere as a Service
-section: Funktionen von OVHcloud
+section: OVHcloud Funktionen
 ---
 
-**Stand 25.06.2020**
+**Letzte Aktualisierung am 25.06.2020**
 
 ## Ziel
 
-Der Zugang zum vCenter kann eingeschränkt werden. Dazu wird nur bestimmten IP Adressen die Verbindung damit gestattet. 
+Der Zugang zu vCenter kann eingeschränkt werden. Dazu wird nur bestimmten IP-Adressen die Verbindung damit gestattet. 
 
-**Erfahren Sie, wie Sie IP Adressen für die Verbindung mit dem vCenter zulassen können.**
+**Erfahren Sie, wie Sie IP-Adressen für die Verbindung mit vCenter zulassen können.**
 
 ## Voraussetzungen
 
-* Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
-* Sie verfügen über eine [Private Cloud Infrastruktur](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external} in Ihrem OVHcloud Account.
+- Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
 
-## Praktische Anwendung
+## In der praktischen Anwendung
 
-Wenn die [ Regeln für den Zugang zum vCenter Einschränkungen vorsehen](../zugriffsregeln-fuer-vcenter-aendern/), müssen die IPs hinzugefügt werden, die sich mit dem Dienst verbinden dürfen.
+Wenn die [Regeln für den Zugang zu vCenter anpassen](../zugriffsregeln-fuer-vcenter-aendern/), müssen die IPs hinzugefügt werden, die sich mit dem Dienst verbinden dürfen.
 
-Dies erfolgt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external-link}. Klicken Sie im Abschnitt `Server` auf die Rubrik `Private Cloud`. Wählen Sie die Infrastruktur aus. Klicken Sie dann auf den Tab `Sicherheit` und danach auf `Neuen IP-Bereich hinzufügen`{.action}.
+Dies erfolgt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager). Klicken Sie im Bereich `Hosted Private Cloud` auf die Rubrik `Private Cloud`. Wählen Sie die Infrastruktur aus. Klicken Sie dann auf den Tab `Sicherheit` und danach auf `Neuen IP-Bereich hinzufügen`{.action}.
 
 ![vCenter](images/restrictIP.JPG){.thumbnail}
 

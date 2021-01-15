@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimo el. paštas: el. laiškų nukreipimų gidas'
 excerpt: 'Svetainių talpinimo el. paštas: el. laiškų nukreipimų gidas'
 slug: svetainiu_talpinimo_el_pastas_el_laisku_nukreipimu_gidas

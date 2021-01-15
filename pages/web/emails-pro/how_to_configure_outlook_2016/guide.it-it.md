@@ -38,9 +38,9 @@ Gli account Email Pro possono essere configurati su client di posta compatibili 
 
 > [!primary]
 >
-> Nel nostro esempio abbiamo utilizzato come nome del server "pro**X**.mail.ovh.net", dove "X" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
+> Nel nostro esempio abbiamo utilizzato come nome del server "pro**?**.mail.ovh.net", dove "?" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
 >
-> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web`{.action}, selezionando `Email Pro`{.action} nella colonna a sinistra. Il nome del server è visibile nel riquadro Connessione della scheda `Informazioni generali`{.action}.
+> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action} nella colonna a sinistra. Il nome del server è visibile nel riquadro Connessione della scheda `Informazioni generali`{.action}.
 > 
 
 Una volta avviata l’applicazione Outlook sul tuo dispositivo, puoi aggiungere un nuovo account in due modi diversi.
@@ -61,7 +61,7 @@ Compila i campi richiesti:
 
 |Informazione|Descrizione|
 |---|---|
-|Server|Inserisci il server 'pro**X**.mail.ovh.net'|
+|Server|Inserisci il server 'pro**?**.mail.ovh.net'|
 |Porta|Indica la porta '993'|
 |Metodo di cifratura|Seleziona 'SSL/TLS'|
 |Richiedere l’autorizzazione |Non selezionare la voce “Richiedere l’autenticazione tramite password sicura (SPA) durante la connessione”.|
@@ -70,7 +70,7 @@ Compila i campi richiesti:
 
 |Informazione|Descrizione|
 |---|---|
-|Server|Inserisci il server 'pro**X**.mail.ovh.net'|
+|Server|Inserisci il server 'pro**?**.mail.ovh.net'|
 |Porta|Indica la porta '587'|
 |Metodo di cifratura|Seleziona 'STARTTLS'|
 |Richiedere l’autorizzazione |Non selezionare la voce “Richiedere l’autenticazione tramite password sicura (SPA) durante la connessione”.|
@@ -85,8 +85,8 @@ Se hai necessità di inserire manualmente le preferenze per il tuo account, ecco
 
 |Tipo di server |Nome del server|Metodo di cifratura|Porta|
 |---|---|---|---|
-|In entrata|pro**X**.mail.ovh.net|SSL/TLS|993|
-|In uscita|pro**X**.mail.ovh.net|STARTTLS|587|
+|In entrata|pro**?**.mail.ovh.net|SSL/TLS|993|
+|In uscita|pro**?**.mail.ovh.net|STARTTLS|587|
 
 ### Step 2: utilizza il tuo account
 

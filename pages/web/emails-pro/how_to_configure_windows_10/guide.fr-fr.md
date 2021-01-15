@@ -1,7 +1,7 @@
 ---
 title: 'Configurer son compte E-mail Pro sur Courrier pour Windows 10'
 slug: configuration-courrier-windows-10
-excerpt: 'Apprenez à configurer un compte E-mail Pro sur l''application Courrier pour Windows 10'
+excerpt: "Apprenez à configurer un compte E-mail Pro sur l'application Courrier pour Windows 10"
 section: 'Configuration sur ordinateur'
 order: 4
 ---
@@ -33,9 +33,9 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 > [!primary]
 >
-> Dans notre exemple, nous utilisons la mention serveur : pro**X**.mail.ovh.net. Vous devrez remplacer le « X » par le chiffre désignant le serveur de votre service E-mail Pro.
+> Dans notre exemple, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
 > 
-> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web`{.action} puis `E-mail Pro`{.action}
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}
 > dans la colonne de gauche. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 > 
 
@@ -58,9 +58,9 @@ Renseignez à présent les informations demandées :
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|
 |Nom du compte|Indiquez un nom vous permettant de reconnaître ce compte parmi d'autres affichés dans votre application Courrier.|
 |Envoyer vos messages en utilisant ce nom|Renseignez le nom qui s'affichera en tant qu'expéditeur lorsque des e-mails seront envoyés avec cette adresse.|
-|Serveur de courrier entrant|Renseignez le serveur « pro**X**.mail.ovh.net:993 ».|
+|Serveur de courrier entrant|Renseignez le serveur « pro**?**.mail.ovh.net:993 ».|
 |Type de compte|Nous conseillons une utilisation en **IMAP4**. Vous pouvez cependant sélectionner **POP** (stockage des e-mails en local sur votre application Courrier) dans le menu déroulant.|
-|Serveur de courrier sortant|Renseignez le serveur « pro**X**.mail.ovh.net:587 ».|
+|Serveur de courrier sortant|Renseignez le serveur « pro**?**.mail.ovh.net:587 ».|
 
 Assurez-vous que les cases sont bien cochées pour les choix suivants :
 
@@ -79,8 +79,8 @@ Si vous devez renseigner manuellement des champs techniques dans les préférenc
 
 |Type de serveur|Nom du serveur|SSL|Port|
 |---|---|---|---|
-|Entrant|pro**X**.mail.ovh.net|Oui|993|
-|Sortant|pro**X**.mail.ovh.net|Oui|587|
+|Entrant|pro**?**.mail.ovh.net|Oui|993|
+|Sortant|pro**?**.mail.ovh.net|Oui|587|
 
 ### Étape 2 : utiliser l'adresse e-mail
 

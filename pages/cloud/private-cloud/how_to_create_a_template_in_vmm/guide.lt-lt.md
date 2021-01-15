@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Šablono kūrimas naudojant VMM
 excerpt: 'Šiame gide paaiškinama, kaip sukurti šabloną su VMM iš turimo disko'
 slug: ablono_kurimas_naudojant_vmm

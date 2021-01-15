@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange 2016: How to share calendars via OWA'
 excerpt: ''
 slug: exchange_2016_how_to_share_calendars_via_owa

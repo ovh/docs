@@ -1,7 +1,7 @@
 ---
-title: 'Configurer une file d''appels'
+title: "Configurer une file d'appels"
 slug: les-files-d-appels
-excerpt: 'Apprenez à configurer intégralement une file d''appels'
+excerpt: "Apprenez à configurer intégralement une file d'appels"
 section: 'Numéros ou alias'
 order: 5
 ---

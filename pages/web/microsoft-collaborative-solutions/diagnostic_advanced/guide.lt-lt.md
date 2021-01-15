@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange diagnostika: ką daryti klaidos atveju?'
 excerpt: 'Exchange diagnostika: ką daryti klaidos atveju?'
 slug: exchange_diagnostika_ka_daryti_klaidos_atveju
@@ -7,7 +8,7 @@ legacy_guide_number: g2277
 
 
 ## Diagnostikos atlikimas
-Prisijunkite prie savo kliento valdymo sąsajos paspaudę [čia](https://www.ovh.com/manager/web/login/).
+Prisijunkite prie savo kliento valdymo sąsajos paspaudę [čia](https://www.ovh.com/auth/?action=gotomanager).
 
 Po prisijungimo kairiajame stulpelyje pasirinkite Microsoft meniu ir savo Exchange paslaugą.
 

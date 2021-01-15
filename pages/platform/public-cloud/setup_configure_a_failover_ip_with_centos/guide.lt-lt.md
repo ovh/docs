@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: IP Failover konfigūravimas CentOS sistemoje
 excerpt: IP Failover konfigūravimas CentOS sistemoje
 slug: ip_failover_konfiguravimas_centos_sistemoje

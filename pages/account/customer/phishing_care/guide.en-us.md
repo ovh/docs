@@ -5,7 +5,7 @@ excerpt: 'How do you recognise a phishing email, and what should you do if you c
 section: Security
 ---
 
-**Last updated 24th June 2020**
+**Last updated 12th October 2020**
 
 ## Objective
 
@@ -36,7 +36,7 @@ If you have received an email claiming to be from OVHcloud and you are unsure wh
 
 |Number/description|OVH email|Phishing email|
 |---|---|---|
-|1. Sender|Check that the address used to send the email ends in “@ovh.com”, “@soyoustart.com” or “@kimsufi.com”.|Most of the time, the email will be marked as spam between brackets, and your NIC handle will not be shown OR will be incorrect.|
+|1. Sender|Check that the address used to send the email ends in “@ovhcloud.com”, “@ovh.com”, “@soyoustart.com” or “@kimsufi.com”.|Most of the time, the email will be marked as spam between brackets, and your NIC handle will not be shown OR will be incorrect.|
 |2. Subject|Check that your NIC handle **(beginning with the first letter of the surname and the first letter of your first name you have registered with OVHcloud)** and/or the email address associated with your account appear in the message’s subject line.|Most of the time, the email will be marked as spam between brackets, and your NIC handle will not be shown OR will be incorrect.|
 |3. Link|Move your mouse over the link, and you will be able to see its contents at the bottom of your browser, without having to click on it. Here, the link does indeed point to https://www.ovhcloud.com/.| In our example, you can can see when you move your mouse over the link that it has nothing to do with OVHcloud. Do not click it.|
 

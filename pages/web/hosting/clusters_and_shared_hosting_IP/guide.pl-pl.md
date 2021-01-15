@@ -4,7 +4,9 @@ slug: lista-adresow-ip-klastrow-i-hostingow-www
 section: 'Konfiguracja hostingu'
 ---
 
-**Ostatnia aktualizacja z dnia 20-07-2020**
+**Ostatnia aktualizacja z dnia 08-01-2021**
+
+## Wprowadzenie
 
 W tym przewodniku znajdziesz wszystkie adresy IP hostingów WWW OVHcloud. Dzięki temu dowiesz się na przykład, jaki adres IP wpisać w strefach DNS w zależności od elementów takich jak:
 
@@ -15,14 +17,22 @@ W tym przewodniku znajdziesz wszystkie adresy IP hostingów WWW OVHcloud. Dzięk
 > [!primary]
 >
 > Adresy IP opcji CDN są typu „Anycast”.
-> Oznacza to, że nie potrzebują geolokalizacji (więcej informacji znajdziesz tutaj ).
+> Oznacza to, że nie potrzebują geolokalizacji ([więcej informacji znajdziesz tutaj](https://www.ovh.pl/hosting/cdn.xml)).
 > 
 
+## Wymagania początkowe
 
-## Klaster 002
+- Zakupienie [hostingu OVHcloud](https://www.ovh.pl/hosting/){.external}.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+
+## W praktyce
+
+Aby poznać klaster hostingu, w którym hostowana jest Twoja usługa, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i na górnym pasku nawigacji wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiedni hosting. Następnie przejdź do zakładki `FTP - SSH`{.action}.
+Na tej stronie możesz sprawdzić numer klastra hostingu WWW, używając **Serwer FTP**.
+
+### Klaster 002
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
-
 
 |Kraj|Kod kraju|IPv4|IPv6|
 |---|---|----|---|
@@ -41,13 +51,17 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 
 Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 
-
 ```bash
 213.186.33.69
 ```
 
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
+```bash
+46.105.204.2
+```
+
+Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
 
 ```bash
 46.105.174.33
@@ -55,16 +69,13 @@ Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj po
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
-
 ```bash
 51.68.11.191
 ```
 
-
-## Klaster 003
+### Klaster 003
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
-
 
 |Kraj|Kod kraju|IPv4|IPv6|
 |---|---|----|---|
@@ -83,13 +94,17 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 
 Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 
-
 ```bash
 213.186.33.85
 ```
 
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
+```bash
+46.105.204.3
+```
+
+Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
 
 ```bash
 46.105.174.34
@@ -97,16 +112,13 @@ Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj po
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
-
 ```bash
 51.68.11.195
 ```
 
-
-## Klaster 005
+### Klaster 005
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
-
 
 |Kraj|Kod kraju|IPv4|IPv6|
 |---|---|----|---|
@@ -125,13 +137,17 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 
 Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 
-
 ```bash
 213.186.33.95
 ```
 
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
+```bash
+46.105.204.5
+```
+
+Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
 
 ```bash
 46.105.174.35
@@ -139,16 +155,13 @@ Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj po
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
-
 ```bash
 51.68.11.199
 ```
 
-
-## Klaster 006
+### Klaster 006
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
-
 
 |Kraj|Kod kraju|IPv4|IPv6|
 |---|---|----|---|
@@ -167,13 +180,17 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 
 Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 
-
 ```bash
 213.186.33.97
 ```
 
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
+```bash
+46.105.204.6
+```
+
+Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
 
 ```bash
 46.105.174.36
@@ -181,15 +198,13 @@ Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj po
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
-
 ```bash
 51.68.11.203
 ```
 
-## Klaster 007
+### Klaster 007
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
-
 
 |Kraj|Kod kraju|IPv4|IPv6|
 |---|---|----|---|
@@ -208,13 +223,17 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 
 Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 
-
 ```bash
 213.186.33.105
 ```
 
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
+```bash
+46.105.204.7
+```
+
+Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
 
 ```bash
 46.105.174.37
@@ -222,16 +241,13 @@ Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj po
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
-
 ```bash
 51.68.11.207
 ```
 
-
-## Klaster 010
+### Klaster 010
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
-
 
 |Kraj|Kod kraju|IPv4|IPv6|
 |---|---|----|---|
@@ -250,13 +266,17 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 
 Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 
-
 ```bash
 213.186.33.107
 ```
 
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
+```bash
+46.105.204.10
+```
+
+Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
 
 ```bash
 46.105.174.38
@@ -264,13 +284,11 @@ Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj po
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
-
 ```bash
 51.68.11.211
 ```
 
-
-## Klaster 011
+### Klaster 011
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -292,13 +310,17 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 
 Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 
-
 ```bash
 213.186.33.151
 ```
 
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
+```bash
+46.105.204.11
+```
+
+Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
 
 ```bash
 46.105.174.39
@@ -306,16 +328,13 @@ Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj po
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
-
 ```bash
 51.68.11.215
 ```
 
-
-## Klaster 012
+### Klaster 012
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
-
 
 |Kraj|Kod kraju|IPv4|IPv6|
 |---|---|----|---|
@@ -334,13 +353,17 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 
 Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 
-
 ```bash
 213.186.33.153
 ```
 
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
+```bash
+46.105.204.12
+```
+
+Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
 
 ```bash
 46.105.174.40
@@ -348,13 +371,11 @@ Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj po
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
-
 ```bash
 51.68.11.219
 ```
 
-
-## Klaster 013
+### Klaster 013
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -375,13 +396,17 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 
 Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 
-
 ```bash
 213.186.33.83
 ```
 
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
+```bash
+46.105.204.13
+```
+
+Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
 
 ```bash
 46.105.174.41
@@ -389,16 +414,13 @@ Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj po
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
-
 ```bash
 51.68.11.223
 ```
 
-
-## Klaster 014
+### Klaster 014
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
-
 
 |Kraj|Kod kraju|IPv4|IPv6|
 |---|---|----|---|
@@ -417,13 +439,17 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 
 Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 
-
 ```bash
 213.186.33.169
 ```
 
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
+```bash
+46.105.204.14
+```
+
+Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
 
 ```bash
 46.105.174.42
@@ -431,16 +457,13 @@ Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj po
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
-
 ```bash
 51.68.11.227
 ```
 
-
-## Klaster 015
+### Klaster 015
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
-
 
 |Kraj|Kod kraju|IPv4|IPv6|
 |---|---|----|---|
@@ -459,13 +482,17 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 
 Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 
-
 ```bash
 213.186.33.171
 ```
 
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
+```bash
+46.105.204.15
+```
+
+Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
 
 ```bash
 46.105.174.43
@@ -473,16 +500,13 @@ Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj po
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
-
 ```bash
 51.68.11.231
 ```
 
-
-## Klaster 017
+### Klaster 017
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
-
 
 |Kraj|Kod kraju|IPv4|IPv6|
 |---|---|----|---|
@@ -501,13 +525,17 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 
 Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 
-
 ```bash
 213.186.33.173
 ```
 
-Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
+```bash
+46.105.204.17
+```
+
+Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj poniższego adresu IP:
 
 ```bash
 46.105.174.44
@@ -515,16 +543,13 @@ Jeśli w hostingu masz aktywny **certyfikat SSL GlobalSign (płatny)**, użyj po
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
-
 ```bash
 51.68.11.239
 ```
 
-
-## Klaster 020
+### Klaster 020
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
-
 
 |Kraj|Kod kraju|IPv4|IPv6|
 |---|---|----|---|
@@ -544,23 +569,25 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 
 Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 
-
 ```bash
 213.186.33.176
 ```
 
-Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
+```bash
+46.105.204.20
+```
+
+Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
 ```bash
 91.134.248.253
 ```
 
-
-## Klaster 021
+### Klaster 021
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
-
 
 |Kraj|Kod kraju|IPv4|IPv6|
 |---|---|----|---|
@@ -580,9 +607,14 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 
 Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 
-
 ```bash
 213.186.33.177
+```
+
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+
+```bash
+46.105.204.21
 ```
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
@@ -591,7 +623,7 @@ Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj po
 91.134.248.245
 ```
 
-## Klaster 023
+### Klaster 023
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -617,13 +649,19 @@ Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 213.186.33.186
 ```
 
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+
+```bash
+46.105.204.23
+```
+
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
 ```bash
 91.134.248.235
 ```
 
-## Klaster 024
+### Klaster 024
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -649,14 +687,19 @@ Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 213.186.33.187
 ```
 
-Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
+```bash
+46.105.204.24
+```
+
+Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
 ```bash
 91.134.248.230
 ```
 
-## Klaster 025
+### Klaster 025
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -682,14 +725,19 @@ Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 145.239.37.172
 ```
 
-Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
+```bash
+46.105.204.25
+```
+
+Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
 ```bash
 91.134.248.215
 ```
 
-## Klaster 026
+### Klaster 026
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -715,14 +763,19 @@ Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 188.165.51.93
 ```
 
-Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
+```bash
+46.105.204.26
+```
+
+Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
 ```bash
 91.134.248.211
 ```
 
-## Klaster 027
+### Klaster 027
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -748,14 +801,19 @@ Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 145.239.51.129
 ```
 
-Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
+```bash
+46.105.204.27
+```
+
+Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
 ```bash
 54.37.121.239
 ```
 
-## Klaster 028
+### Klaster 028
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -781,14 +839,19 @@ Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 51.255.119.116
 ```
 
-Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
+```bash
+46.105.204.28
+```
+
+Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
 
 ```bash
 91.134.248.249
 ```
 
-## Klaster 029
+### Klaster 029
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -814,16 +877,20 @@ Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
  51.255.215.242 
 ```
 
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+
+```bash
+46.105.204.29
+```
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
-
 
 
 ```bash
 91.134.248.192
 ```
 
-## Klaster 030
+### Klaster 030
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -849,16 +916,19 @@ Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 54.36.13.47
 ```
 
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+
+```bash
+46.105.204.30
+```
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
-
-
 
 ```bash
 51.178.146.199
 ```
 
-## Klaster 051
+### Klaster 051
 
 Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji):
 
@@ -872,11 +942,18 @@ Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
 178.32.120.166 
 ```
 
+Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+
+```bash
+46.105.204.51
+```
 
 Jeśli potrzebujesz adresu IP **bramy wyjściowej** hostingu (gateway), użyj poniższego adresu IP:
-
-
 
 ```bash
 51.161.94.36
 ```
+
+## Sprawdź również
+
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

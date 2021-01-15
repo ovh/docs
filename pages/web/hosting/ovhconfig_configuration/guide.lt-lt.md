@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuring the .ovhconfig file of your Web Hosting plan'
 slug: configuring-file-ovhconfig
 excerpt: 'This guide explains the.ovhconfig file and how to edit it'

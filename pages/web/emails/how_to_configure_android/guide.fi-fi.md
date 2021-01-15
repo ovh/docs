@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Sähköpostiosoitteen konfigurointi Androidilla Gmail-sovelluksen kautta
 slug: konfigurointi-android
 excerpt: Opi konfiguroimaan MX Plan -sähköpostiosoite Androidilla Gmail-sovelluksen avulla

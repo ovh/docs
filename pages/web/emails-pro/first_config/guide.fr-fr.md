@@ -124,14 +124,14 @@ Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un apparei
 
 |Type de serveur|Nom du serveur|Type de sécurité|Port|
 |---|---|---|---|
-|Entrant|pro**X**.mail.ovh.net|SSL/TLS|993|
-|Sortant|pro**X**.mail.ovh.net|STARTTLS|587|
+|Entrant|pro**?**.mail.ovh.net|SSL/TLS|993|
+|Sortant|pro**?**.mail.ovh.net|STARTTLS|587|
 
 > [!primary]
 >
-> Dans notre exemple, nous utilisons la mention serveur : pro**X**.mail.ovh.net. Vous devrez remplacer le « X » par le chiffre désignant le serveur de votre service E-mail Pro.
+> Dans notre exemple, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
 > 
-> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web`{.action} puis `E-mail Pro`{.action}
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}
 >  dans la colonne de gauche. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 > 
 

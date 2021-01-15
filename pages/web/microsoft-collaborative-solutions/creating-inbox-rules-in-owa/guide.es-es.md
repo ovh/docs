@@ -107,6 +107,6 @@ Tenga en cuenta que no es posible declarar falsos positivos de correo no deseado
 
 [Compartir calendarios en OWA](../exchange_2016_compartir_un_calendario_con_el_webmail_owa/)
 
-[Usar Outlook Web App con una cuenta de correo electrónico](../../emails/uso-outlook-en-la-web/)
+[Usar Outlook Web App con una cuenta de correo electrónico](../exchange_2016_guia_de_uso_de_outlook_web_app/)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

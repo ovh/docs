@@ -27,7 +27,7 @@ Depending on what you need them for, you may want to customise your OVH domain n
 
 ### Step 1: Add the glue records.
 
-First of all, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, ensure that you are in the `Web` section, and click `Domains`{.action} in the services bar on the left-hand side. Then select the domain name you would like to customise the DNS servers for. Next, go to the `GLUE`{.action} tab.
+First of all, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, ensure that you are in the `Web Cloud` section, and click `Domains`{.action} in the services bar on the left-hand side. Then select the domain name you would like to customise the DNS servers for. Next, go to the `GLUE`{.action} tab.
 
 On the page that appears, there will be a table listing the glue records currently configured with OVH for your domain name. To add the glue record, click `Add`{.action}.
 
@@ -52,7 +52,7 @@ You will need to do this via the interface given by the service provider managin
 
 - **If your domain name does not use the OVH DNS configuration,** you will need to contact the service provider managing your domain name. Once you have made the required changes, go to the next step.
 
-- **If your domain name uses the OVH DNS configuration,** go to the `DNS Zone`{.action} tab. Add a new A record by clicking `Add an entry`{.action}. Then select the A record option, and follow the steps provided.  If you need to, you can follow the instructions listed in our guide to [Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/hosting_how_to_edit_my_dns_zone/){.external}.
+- **If your domain name uses the OVH DNS configuration,** go to the `DNS Zone`{.action} tab. Add a new A record by clicking `Add an entry`{.action}. Then select the A record option, and follow the steps provided.  If you need to, you can follow the instructions listed in our guide to [Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
 ![glueregistry](images/customize-dns-servers-step3.png){.thumbnail}
 

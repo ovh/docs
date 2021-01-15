@@ -62,7 +62,7 @@ Einige Servervariablen werden über die Verwendung von PHP-FPM geändert:
 
 |Variable|ohne PHP-FPM|mit PHP-FPM|
 | ------------- |:-------------:| -----:|
-|max_execution_time|120 s|300 s|
+|max_execution_time|120 s|165 s|
 |max_input_vars|2000|16000|
 |memory_limit|128 M|512 M|
 

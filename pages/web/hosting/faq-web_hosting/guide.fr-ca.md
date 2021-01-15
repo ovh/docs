@@ -69,6 +69,12 @@ Il peut être intéressant de simplement le renommer afin de vous permettre de l
 
 **Autre information utile** : les fichiers de votre site doivent être déposés dans le dossier « www » afin d'être pris en compte.
 
+### Comment faire évoluer mon offre d'hébergement web ?
+
+Si vous souhaitez changer votre offre actuelle pour une offre supérieure, rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et sélectionnez l'offre concernée.
+
+Depuis l'onglet `Informations générales`, dans le cadre `Abonnement`, cliquez sur le bouton `...`{.action} devant « Offre » puis cliquez sur  `Changer d'offre`{.action}. Suivez les instructions suivantes pour finaliser votre commande. Un prorata du temps restant de votre offre actuelle est rajouté sur la nouvelle offre.
+
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

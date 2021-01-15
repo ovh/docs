@@ -23,7 +23,7 @@ Some known tools have the possibility to collect Windows data, and then send the
 
 ### Telegraf
 
-[Telegraf runs on Windows](https://github.com/influxdata/docs.influxdata.com/blob/master/content/telegraf/v1.7/administration/windows_service.md){.external}. Following this documentation and setting a configuration as described in our [telegraf user documentation](../source-telegraf/guide.en-gb.md){.ref} allow a user to push its own server and application data to Metrics.
+[Telegraf runs on Windows](https://github.com/influxdata/docs.influxdata.com/blob/master/content/telegraf/v1.7/administration/windows_service.md){.external}. Following this documentation and setting a configuration as described in our [telegraf user documentation](../source-telegraf/) allow a user to push its own server and application data to Metrics.
 
 First go to [download telegraf page](https://portal.influxdata.com/downloads/){.external} and select the Windows binaries.
 
@@ -32,7 +32,7 @@ Once telegraf is unzipped, you shoud have a .exe file and a .conf one. Edit the 
 ```yaml
 # OUTPUTS
 [[outputs.influxdb]]
-  urls = ["https://influxdb.gra1-ovh.metrics.ovh.net" ]
+  urls = ["https://influxdb.gra1.metrics.ovh.net" ]
 
   ## Timeout for HTTP messages.
   timeout = "15s"  # Set at least 15s to avoid possible timeout with our platform

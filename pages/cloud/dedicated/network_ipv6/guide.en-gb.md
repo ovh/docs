@@ -2,7 +2,7 @@
 title: 'Configuring IPv6 on dedicated servers'
 slug: network-ipv6
 excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
-section: 'Network Management'
+section: 'Network management'
 ---
 
 **Last updated 20th July 2020**

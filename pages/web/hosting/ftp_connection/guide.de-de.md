@@ -17,7 +17,7 @@ Mit OVH Webhosting Angeboten verfügen Sie über einen Speicherplatz für das On
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web`{.action}.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
 ## Beschreibung
 

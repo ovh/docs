@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Transferring your OVH domain name to another registrar
 slug: bendrinio_ar_geografinio_domeno_perkelimas_i_isore
 excerpt: Learn how to transfer an OVH domain name to the registrar of your choice
@@ -29,7 +30,7 @@ It is possible to transfer an OVH domain name, allowing you to work with your pr
 
 ### Step 1: Remove the transfer protection for the domain name
 
-To remove the transfer protection for your OVH domain name, when you are logged in to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web`{.action} in the service bar at the top. Go to the `Domains`{.action} section on the left, then click on the domain name in question. In the `General information`{.action} tab, untick the `Protection against domain name transfer`{.action} box, then click `Confirm`{.action}.
+To remove the transfer protection for your OVH domain name, when you are logged in to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Cloud`{.action} in the service bar at the top. Go to the `Domains`{.action} section on the left, then click on the domain name in question. In the `General information`{.action} tab, untick the `Protection against domain name transfer`{.action} box, then click `Confirm`{.action}.
 
 > [!primary]
 >

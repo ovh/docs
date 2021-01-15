@@ -1,9 +1,11 @@
 ---
+deprecated: true
 title: Antrinio DNS konfigūravimas
 excerpt: Domeno konfigūravimas antriniame DNS
 slug: antrinio_dns_konfiguravimas
 section: DNS and DNS zone
 order: 9
+hidden: true
 ---
 
 

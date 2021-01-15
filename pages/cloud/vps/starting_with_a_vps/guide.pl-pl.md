@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 1
 ---
 
-**Ostatnia aktualizacja z dnia 22-07-2020**
+**Ostatnia aktualizacja z dnia 21-12-2020**
  
 ## Wprowadzenie
 
@@ -62,7 +62,7 @@ ssh nom_d_utilisateur@IPv4_de_votre_VPS
 Jesteś teraz zalogowany/-a jako użytkownik z uprawnieniami root (użytkownik sudo), możesz zacząć wpisywać polecenia i wykonywać zadania administracyjne. Przed rozpoczęciem tych operacji zalecamy zmianę hasła:
 
 ```sh
-$ sudo passwd
+~$ sudo passwd
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -71,12 +71,16 @@ passwd: password updated successfully
 Należy zaznaczyć, iż hasła nie są wyświetlane. Zmień następnie profil użytkownika na profil „root” i ustaw Twoje hasło dostępu dla administratora:
 
 ```sh
-$ sudo su -
-# passwd
+~$ sudo su -
+~# passwd
 New password:
 Retype new password:
 passwd: password updated successfully
 ```
+
+#### Aktywacja połączeń root
+
+Ze względów bezpieczeństwa połączenie z użytkownikiem "root" zostało wyłączone. Jeśli chcesz zezwolić na tego typu połączenia, skorzystaj z instrukcji zawartych w [tym przewodniku](../root-password/#wlacz-haslo-root_1).
 
 #### Instalacja lub reinstalacja Twojego serwera VPS (gama aktualna)
 

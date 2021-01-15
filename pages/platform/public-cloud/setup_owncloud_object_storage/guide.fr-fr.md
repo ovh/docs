@@ -104,7 +104,7 @@ Il faudra y renseigner différentes informations que vous pouvez retrouver dans 
 - Le nom du locataire, correspondant au champ " OS_TENANT_NAME "
 - Le mot de passe de votre utilisateur Horizon
 - Le nom du service correspondant à " swift "
-- L'adresse du point d'accès, correspondant au champ " OS_AUTH_URL " soit " [https://auth.cloud.ovh.net/v2.0](https://auth.cloud.ovh.net/v2.0){.external} "
+- L'adresse du point d'accès, correspondant au champ " OS_AUTH_URL "
 
 La " **clé API**" et le " **Délai d'attente maximum**" sont facultatifs.
 

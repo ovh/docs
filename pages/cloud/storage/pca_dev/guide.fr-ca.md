@@ -214,7 +214,7 @@ Lorsque vous téléchargez une archive, OVH Public Cloud Archive met à jour l'i
 
 Afin de prendre en compte les particularités du stockage au repos, OVH a légèrement modifié la génération de cet inventaire par rapport aux infrastructures régulières d'Openstack Swift dans le but d'inclure des informations supplémentaires liées à son processus de stockage particulier. Cela vous assure d'avoir des informations essentielles sur votre archive, telles que son état de descellement et le délai de récupération avant qu'elle ne soit prête à être téléchargée.
 
-Voir plus de détails sur cette [demande](https://docs.ovh.com/fr/en/storage/pca/api/){.external}.
+Voir plus de détails sur cette [demande](https://docs.ovh.com/ca/fr/storage/pca/api/){.external}.
 
 **Syntaxe**
 
@@ -357,7 +357,7 @@ L'OVH Public Cloud Archive stocke les données de manière à ce que le coût so
 
 Les demandes de descellement d'archives sont identiques aux demandes de téléchargement d'archives. Seule la réponse envoyée par OVH Public Cloud Archive diffère et constitue une particularité de l'Openstack Swift l'infrastructure que gère OVH. Une fois qu'une demande de descellement est reçue, elle ne peut être annulée. Les demandes de levée de scellés ultérieures n'auront d'autre effet que d'interroger l'opération ETA. 
 
-Voir les explications supplémentaires concernant cette [demande]((../pca/api){.ref}.
+Voir les explications supplémentaires concernant cette [demande](https://docs.ovh.com/ca/fr/storage/pca/api/).
 
 **Syntaxe**
 

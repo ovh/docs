@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Yleistä
 excerpt: ''
 slug: yleista

@@ -1,22 +1,20 @@
 ---
 title: Zerto Virtual Replication für Ihren DRP einrichten
 slug: zerto-virtual-replication-vmware-vsphere-drp
-excerpt: So richten Sie Zerto Virtual Replication für Ihren Disaster Recovery Plan zwischen zwei Private Cloud Diensten ein.
-section: OVH Dienstleistungen und Optionen
+excerpt: Erfahren Sie hier, wie Sie Zerto Virtual Replication für Ihren Disaster Recovery Plan einrichten
+section: OVHcloud Dienste und Optionen
 ---
 
-**Stand 04.08.2020**
+**Letzte Aktualisierung am 04.08.2020**
 
-## Einleitung
+## Ziel
 
-In dieser Anleitung erklären wir die Funktionsweise und Schritte zur Einrichtung von Zerto Virtual Replication.
-
-**Hier erfahren Sie, wie Sie Zerto Virtual Replication für Ihren Disaster Recovery Plan zwischen zwei Private Cloud Diensten einrichten.**
+**Diese Anleitung erklärt die Funktionsweise und Schritte zur Einrichtung von Zerto Virtual Replication zwischen zwei Hosted Private Cloud Diensten.**
 
 ## Voraussetzungen
 
-* Sie verfügen über zwei [Private Cloud](https://www.ovh.com/de/private-cloud/){.external} Angebote an zwei verschiedenen Standorten.
-* Sie haben eine freie öffentliche IP-Adresse auf jeder dieser Private Clouds.
+- Sie verfügen über je eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur an zwei verschiedenen Standorten.
+- Sie haben eine freie öffentliche IP-Adresse auf jeder dieser Hosted Private Clouds.
 
 ### Funktionsweise von Zerto Virtual Replication
 
@@ -26,9 +24,9 @@ Zerto Virtual Replication ist eine technische Lösung, die die Einrichtung einer
 
 Die Virtual Replication Appliances werden auf jedem Hypervisor deployt und verbrauchen Ressourcen, um die Replikation durchzuführen:
 
-* vCPU: 1
-* RAM: 2 GB
-* Speicher: 36 GB
+- vCPU: 1
+- RAM: 2 GB
+- Speicher: 36 GB
 
 Hinweis: Was den Speicher betrifft, fügt OVHcloud einen dedizierten Datastore für alle VRAs hinzu.
 
@@ -51,7 +49,7 @@ Darüber hinaus ist es auch möglich, eine Priorität zwischen den VPGs festzule
 
 #### Über das OVHcloud Kundencenter
 
-Gehen Sie in Ihrem OVHcloud Kundencenter in den Bereich `Server` -> `Private Cloud` -> wählen Sie Ihre primäre Private Cloud Plattform aus -> wählen Sie
+Gehen Sie in Ihrem OVHcloud Kundencenter in den Bereich `Hosted Private Cloud` -> `Private Cloud` -> wählen Sie Ihre primäre Private Cloud Plattform aus -> wählen Sie
 das gewünschte Datacenter aus -> klicken Sie auf den Tab `Disaster Recovery Plan (DRP)`{.action}.
 
 ![OVHcloud Zerto aktivieren](images/zerto_OvhToOvh_enable_01.png){.thumbnail}
@@ -72,8 +70,8 @@ Die Auswahl der sekundären Private Cloud geschieht über Ihre **Private Cloud**
 
 Bitte beachten Sie, dass nur passende Private Cloud Dienste angezeigt werden, die den folgenden Kriterien entsprechen:
 
-* Sie befinden sich physisch an einem anderen Standort.
-* Für sie wurde noch keine Zerto Replikation eingerichtet.
+- Sie befinden sich physisch an einem anderen Standort.
+- Für sie wurde noch keine Zerto Replikation eingerichtet.
 
 Wählen Sie anschließend das **Datacenter** der Ziel-**Private-Cloud** im Drop-down-Menü.
 
@@ -96,11 +94,11 @@ Wenn die Aktivierung ausgeführt wurde, erhalten Sie eine E-Mail mit der Install
 > 
 > Sie können Sich über folgende Adresse mit dem Hauptstandort verbinden:
 > 
->   * URL        : https://zerto.pcc-192-0-2-1.ovh.com/
+>   - URL        : https://zerto.pcc-192-0-2-1.ovh.com/
 > 
 > Sie können Sich über folgende Adresse mit dem sekundären Standort verbinden:
 > 
->   * URL        : https://zerto.pcc-192-0-2-2.ovh.com/
+>   - URL        : https://zerto.pcc-192-0-2-2.ovh.com/
 > 
 > Sie können sich mit Ihren Administrator-Accounts auf dieselbe Weise wie bei vSphere anmelden.
 > 
@@ -111,7 +109,7 @@ Wenn die Aktivierung ausgeführt wurde, erhalten Sie eine E-Mail mit der Install
 
 Das Interface ist von beiden Infrastrukturen über folgende Adresse verfügbar:
 
-* URL: https://zerto.pcc-x-x-x-x.ovh.com/ (entsprechend Ihrer Plattformen anzupassen)
+- URL: https://zerto.pcc-x-x-x-x.ovh.com/ (entsprechend Ihrer Plattformen anzupassen)
 
 > [!warning]
 >
@@ -124,11 +122,11 @@ Nach dem Login wird Ihnen das Dashboard angezeigt:
 
 In diesem Fenster sehen Sie:
 
-* eine Übersicht zum Gesundheitsstatus der VPGs
-* den Gesamtstatus der Zerto Replikation mit vier Indikatoren
-* eine Leistungstabelle für die Zerto Replikation
-* eine Übersicht für den Status aller VPGs
-* die Liste der letzten Warnungen, Aktionen und Ereignisse der Zerto Replikation
+- eine Übersicht zum Gesundheitsstatus der VPGs
+- den Gesamtstatus der Zerto Replikation mit vier Indikatoren
+- eine Leistungstabelle für die Zerto Replikation
+- eine Übersicht für den Status aller VPGs
+- die Liste der letzten Warnungen, Aktionen und Ereignisse der Zerto Replikation
 
 ### Virtual Protection Group (VPG) konfigurieren
 
@@ -140,8 +138,8 @@ Gehen Sie zum Menüpunkt `Actions`{.action} und wählen Sie `Create VPG`{.action
 
 Auf der ersten Seite:
 
-* Geben Sie einen Namen für die VPG ein, der idealerweise im betrieblichen Kontext aussagekräftig ist.
-* Sofern keine besonderen Anforderungen bestehen, kann die auf **Medium** festgelegte Priorität beibehalten werden.
+- Geben Sie einen Namen für die VPG ein, der idealerweise im betrieblichen Kontext aussagekräftig ist.
+- Sofern keine besonderen Anforderungen bestehen, kann die auf **Medium** festgelegte Priorität beibehalten werden.
 
 Fahren Sie fort, indem Sie auf `NEXT`{.action} klicken.
 
@@ -154,12 +152,12 @@ Im nächsten Schritt wählen Sie die VMs aus, die in der VPG zusammengefasst wer
 > Eine VM kann nicht in mehreren VPGs enthalten sein.
 > 
 
-* Sie können die VMs über das Feld **Search** nach Namen filtern.
-* Setzen Sie links neben den betreffenden VMs einen Haken.
+- Sie können die VMs über das Feld **Search** nach Namen filtern.
+- Setzen Sie links neben den betreffenden VMs einen Haken.
 
 ![Zerto VPG erstellen](images/zerto_OvhToOvh_vpg_04.png){.thumbnail}
 
-* Klicken Sie auf den nach rechts zeigenden Pfeil, um die VMs in die VPG aufzunehmen.
+- Klicken Sie auf den nach rechts zeigenden Pfeil, um die VMs in die VPG aufzunehmen.
 
 Fahren Sie fort, indem Sie auf `NEXT`{.action} klicken.
 
@@ -167,13 +165,13 @@ Fahren Sie fort, indem Sie auf `NEXT`{.action} klicken.
 
 Im nächsten Schritt wird der Remote-Standort ausgewählt:
 
-* **Recovery Site**\: Wählen Sie den Remote- (d. h. den nicht lokalen) Standort aus der Liste aus. 
-* **ZORG**\: Wählen Sie **No Organization** in der Liste aus. Jeder andere Wert führt beim Fortfahren zum nächsten Schritt zu einer Fehlermeldung.
+- **Recovery Site**: Wählen Sie den Remote- (d. h. den nicht lokalen) Standort aus der Liste aus. 
+- **ZORG**: Wählen Sie **No Organization** in der Liste aus. Jeder andere Wert führt beim Fortfahren zum nächsten Schritt zu einer Fehlermeldung.
 
 Als nächstes werden die Remote-Ressourcen festgelegt:
 
-* **Hosts**: Wählen Sie die Rechenressource aus. Diese kann ein **einzelner Host** (angegeben durch seine IP-Adresse mit gegebenenfalls voranstehendem Cluster-Namen in eckigen Klammern), ein **Ressource Pool** (beginnend mit RP gefolgt vom Cluster-Namen und anschließend dem Namen des Ressource Pools) oder ein **Cluster** (durch seinen Namen angegeben) sein. Es muss nur ein **Ressource Pool** oder ein **Cluster** ausgewählt werden (hier Cluster1).
-* **Datastore**: Wählen Sie die Speicherressource aus. Diese kann ein **einzelner Datastore** (angegeben durch seinen Namen mit gegebenenfalls voranstehendem Namen des **Storage-Clusters** in eckigen Klammern) oder ein **Storage-Cluster** sein (durch seinen Namen angegeben).
+- **Hosts**: Wählen Sie die Rechenressource aus. Diese kann ein **einzelner Host** (angegeben durch seine IP-Adresse mit gegebenenfalls voranstehendem Cluster-Namen in eckigen Klammern), ein **Ressource Pool** (beginnend mit RP gefolgt vom Cluster-Namen und anschließend dem Namen des Ressource Pools) oder ein **Cluster** (durch seinen Namen angegeben) sein. Es muss nur ein **Ressource Pool** oder ein **Cluster** ausgewählt werden (hier Cluster1).
+- **Datastore**: Wählen Sie die Speicherressource aus. Diese kann ein **einzelner Datastore** (angegeben durch seinen Namen mit gegebenenfalls voranstehendem Namen des **Storage-Clusters** in eckigen Klammern) oder ein **Storage-Cluster** sein (durch seinen Namen angegeben).
 
 Lassen Sie die anderen Werte unverändert, sofern keine besonderen Anforderungen bestehen.
 
@@ -191,9 +189,9 @@ Fahren Sie fort, indem Sie auf `NEXT`{.action} klicken.
 
 Es folgt ein besonders wichtiger Teil der Einrichtung: der erste Schritt der Netzwerkkonfiguration.
 
-* **Failover/Move Network**\: Wählen Sie die Standard-Portgruppe für das Failover.
-* **Failover Test Network**\: Wählen Sie die Portgruppe für Failover-Tests.
-* **Recovery Folder**\: Wählen Sie den Ordner (oder / für das Wurzelverzeichnis), in dem die auf den Standort übertragenen VMs hinzugefügt werden.
+- **Failover/Move Network**: Wählen Sie die Standard-Portgruppe für das Failover.
+- **Failover Test Network**: Wählen Sie die Portgruppe für Failover-Tests.
+- **Recovery Folder**: Wählen Sie den Ordner (oder / für das Wurzelverzeichnis), in dem die auf den Standort übertragenen VMs hinzugefügt werden.
 
 > [!primary]
 > Die Optionen **Pre-recovery Script** und **Post-recovery Script** können nicht verwendet werden.
@@ -205,8 +203,8 @@ Fahren Sie fort, indem Sie auf `NEXT`{.action} klicken.
 
 Sie sind beim zweiten Schritt der Netzwerkkonfiguration angelangt:
 
-* Sie können für jede VM die Portgruppe für Tests oder Failover auswählen.
-* Darüber hinaus kann die IP-Konfiguration der VMs für jede Situation geändert werden.
+- Sie können für jede VM die Portgruppe für Tests oder Failover auswählen.
+- Darüber hinaus kann die IP-Konfiguration der VMs für jede Situation geändert werden.
 
 ![Zerto VPG erstellen](images/zerto_OvhToOvh_vpg_09.png){.thumbnail}
 
@@ -267,10 +265,10 @@ Wir haben uns hier für Option 1 entschieden, um einen Test für eine gesamte VP
 
 In diesem Schritt wird eine Zusammenfassung der Failover-Einstellungen für die VPG angezeigt:
 
-* Replikationsrichtung
-* Remote-Standort
-* ob eine Neustartreihenfolge der VMs festgelegt wurde
-* ob Pre- oder Post-Failover-Skripte vorhanden sind (diese Funktion ist nicht verfügbar)
+- Replikationsrichtung
+- Remote-Standort
+- ob eine Neustartreihenfolge der VMs festgelegt wurde
+- ob Pre- oder Post-Failover-Skripte vorhanden sind (diese Funktion ist nicht verfügbar)
 
 Fahren Sie fort, indem Sie auf `NEXT`{.action} klicken.
 
@@ -330,22 +328,22 @@ Wir haben uns im vorliegenden Beispiel für Option 1 entschieden, um ein Failove
 
 In diesem Schritt wird eine Zusammenfassung der Failover-Einstellungen für die VPG angezeigt:
 
-* Replikationsrichtung
-* Remote-Standort
-* **Checkpoint**\: Hierbei handelt es sich um das Datum für den Wiederherstellungspunkt der Daten. Der Zeitunterschied zwischen dem gewählten Punkt und dem aktuellen Datum bestimmt die **RPO**.
-* **Commit Policy**\: nachfolgend genauer erläutert.
-* **VM Shutdown**\: bestimmt das Verhalten für den primären Standort - keine Unterbrechung der VMs, VMs herunterfahren, Herunterfahren erzwingen.
-* **Reverse Protection**\: gibt an, ob die VPG-Replikation nach Abschluss des Failovers in umgekehrter Richtung konfiguriert werden soll, um später gegebenenfalls zum Failback überzugehen.
-* ob eine Neustartreihenfolge der VMs festgelegt wurde
-* ob Pre- oder Post-Failover-Skripte vorhanden sind (diese Funktion ist nicht verfügbar)
+- Replikationsrichtung
+- Remote-Standort
+- **Checkpoint**: Hierbei handelt es sich um das Datum für den Wiederherstellungspunkt der Daten. Der Zeitunterschied zwischen dem gewählten Punkt und dem aktuellen Datum bestimmt die **RPO**.
+- **Commit Policy**: nachfolgend genauer erläutert.
+- **VM Shutdown**: bestimmt das Verhalten für den primären Standort - keine Unterbrechung der VMs, VMs herunterfahren, Herunterfahren erzwingen.
+- **Reverse Protection**: gibt an, ob die VPG-Replikation nach Abschluss des Failovers in umgekehrter Richtung konfiguriert werden soll, um später gegebenenfalls zum Failback überzugehen.
+- ob eine Neustartreihenfolge der VMs festgelegt wurde
+- ob Pre- oder Post-Failover-Skripte vorhanden sind (diese Funktion ist nicht verfügbar)
 
 ![Zerto Live-Failover](images/zerto_OvhToOvh_live_05.png){.thumbnail}
 
 Was die **Commit Policy** betrifft, haben Sie drei Optionen:
 
-* Auto-Rollback: Das Rollback wird ohne Aktion Ihrerseits nach Ablauf der vorgesehenen Zeit gestartet.
-* Auto-Commit: Der Commit der Daten auf der sekundären Plattform wird ohne Aktion Ihrerseits nach Ablauf der vorgesehenen Zeit ausgeführt (es ist nicht mehr möglich, einfach zur Hauptplattform zurückzukehren).
-* None: Die **Rollback** und **Commit**-Aktionen müssen von Ihnen manuell bestätigt werden.
+- Auto-Rollback: Das Rollback wird ohne Aktion Ihrerseits nach Ablauf der vorgesehenen Zeit gestartet.
+- Auto-Commit: Der Commit der Daten auf der sekundären Plattform wird ohne Aktion Ihrerseits nach Ablauf der vorgesehenen Zeit ausgeführt (es ist nicht mehr möglich, einfach zur Hauptplattform zurückzukehren).
+- None: Die **Rollback** und **Commit**-Aktionen müssen von Ihnen manuell bestätigt werden.
 
 ![Zerto Live-Failover](images/zerto_OvhToOvh_live_06.png){.thumbnail}
 

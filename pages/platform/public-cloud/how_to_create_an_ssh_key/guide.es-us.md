@@ -5,7 +5,7 @@ excerpt: 'Cómo generar una llave SSH para conectarse a una instancia'
 section: Seguridad
 ---
 
-**Última actualización: 14 de noviembre de 2019**
+**Última actualización: 21/12/2020**
 
 ## Objetivo
 
@@ -30,7 +30,7 @@ Tenga en cuenta que las claves SSH no se utilizan con fines de autenticación en
 En primer lugar, abra la aplicación de la terminal (línea de comandos) y, a continuación, ejecute el siguiente comando para generar una clave SSH de 4096 bits:
 
 ```sh
-# ssh-keygen -b 4096
+# ssh-keygen -t rsa -b 4096
 ```
 
 El comando mostrará el siguiente resultado y le pedirá que guarde su clave recién creada:
@@ -106,7 +106,7 @@ A medida que mueva su ratón, la barra de progreso irá rellenándose. Al llenar
 
 ### Importación de una clave SSH en el área de cliente de OVHcloud
 
-En primer lugar, resalte y copie el texto de su clave pública y, a continuación, acceda al [área de cliente de OVHcloud](https://ca..ovh.com/auth/?action=gotomanager){.external}.
+En primer lugar, resalte y copie el texto de su clave pública y, a continuación, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 Ahora, haga clic en el menú `Public Cloud`{.action}.
 

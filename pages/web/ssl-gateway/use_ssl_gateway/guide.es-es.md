@@ -10,7 +10,7 @@ section: Uso
 ## Introduccion
 
 ### Requisitos
-- [Haber contratado un servicio SSL Gateway](../guide.es-es.md){.ref}.
+- [Haber contratado un servicio SSL Gateway](../contratar-un-ssl-gateway/).
 - Tener acceso al [área de cliente Sunrise](https://www.ovh.com/manager/sunrise/){.external}.
 
 

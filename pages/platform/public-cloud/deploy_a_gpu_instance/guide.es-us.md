@@ -15,7 +15,7 @@ Las GPU que se ofrecen son las NVIDIA Tesla V100.
 
 > [!warning]
 >
-> Actualmente, las instancias de GPU solo están disponibles en los centros de datos GRA3, GRA5, GRA7 y BHS3. Puede que tenga que crear un nuevo proyecto y elegir la nueva gama de 2017. [Más información.](../faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/)
+> Actualmente, las instancias de GPU solo están disponibles en los centros de datos GRA3, GRA5, GRA7 y BHS3. Puede que tenga que crear un nuevo proyecto y elegir la nueva gama de 2017. 
 > 
 
 **Esta guía explica cómo instrumentar una instancia de GPU en Linux o Windows**

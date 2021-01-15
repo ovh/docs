@@ -24,7 +24,7 @@ Il est possible d’importer une adresse IP Failover liée à un autre service O
 ## Prérequis
 
 * Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
-* Avoir [une IP Fail Over](https://www.ovh.com/ca/fr/serveurs_dedies/ip_failover.xml){.external} liée à un [serveur dédié OVHcloud](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}.
+* Avoir [une IP Fail Over](https://www.ovhcloud.com/fr-ca/bare-metal/ip/){.external}.
 
 ## En pratique
 

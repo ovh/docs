@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Understanding the “Controller VM deleted” error message'
 slug: error-controller-nsx
 excerpt: 'Find out what the “Controller VM deleted” error message means'

@@ -1,7 +1,7 @@
 ---
-title: 'Créer une adresse e-mail avec son offre d'hébergement Web'
+title: "Créer une adresse e-mail avec son offre d'hébergement Web"
 slug: creation-dune-adresse-e-mail
-excerpt: 'Apprenez à créer une adresse e-mail avec votre offre d'hébergement Web'
+excerpt: "Apprenez à créer une adresse e-mail avec votre offre d'hébergement Web"
 section: 'Premiers pas'
 order: 2
 ---
@@ -16,9 +16,9 @@ Les adresses e-mail de l’offre MX Plan permettent d’envoyer et de recevoir v
 
 ## Prérequis
 
-- Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}, l'[hébergement gratuit Start 10M]({ovh_www}/domaines/offre_hebergement_start10m.xml){.external} compris avec un nom de domaine (activé au préalable) ou l'offre MX Plan commandée séparément.
+- Disposer d'une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}, ou l'offre MX Plan commandée séparément.
 - Avoir encore la possibilité de créer des adresses e-mail dans le cadre de votre offre.
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie `Web`{.action}.
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie `Web Cloud`{.action}.
 
 > [!primary]
 >
@@ -27,7 +27,7 @@ Les adresses e-mail de l’offre MX Plan permettent d’envoyer et de recevoir v
 
 ## En pratique
 
-Selon la date d'activation de votre service ou si [celui-ci a été récemment migré](../mxplan-migration/){.external}, il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre MX Plan. Avant de poursuivre, vous devez identifier celle-ci. 
+Selon la date d'activation de votre service ou si celui-ci a été récemment migré, il est possible que vous disposiez de la version historique ou de la nouvelle version de l'offre MX Plan. Avant de poursuivre, vous devez identifier celle-ci. 
 
 Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie « Web ». Cliquez sur `Emails`{.action} dans la barre de services à gauche, puis choisissez le nom du service MX Plan concerné. Poursuivez selon la version que vous possédez.
 
@@ -88,12 +88,7 @@ Vous devez configurer votre adresse e-mail sur l'appareil souhaité (comme un sm
 
 |Windows|Outlook|Apple|Android|Autre|
 |---|---|---|---|---|
-|[Windows 10](https://docs.ovh.com/ca/fr/emails/configuration-courrier-sur-windows-10/){.external}|[Outlook 2016](https://docs.ovh.com/ca/fr/emails/configuration-outlook-2016/){.external}|[Mail de macOS (dernière version)](https://docs.ovh.com/ca/fr/emails/guide-configuration-mail-de-mac-el-capitan/){.external}|[Android (dernière version)](https://docs.ovh.com/ca/fr/emails/configuration-android-6/){.external}|[Téléphone BlackBerry](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-blackberry/){.external}|
-|[Windows 8](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-sous-windows-8/){.external}|[Outlook 2013](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-outlook-2013/){.external}|[Mail de Mac (Mavericks & Yosemite)](https://docs.ovh.com/ca/fr/emails/guide-configuration-mail-de-mac-mavericks-et-yosemite/){.external}|[Android 5.1](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-dun-telephone-mobile-sous-android-version-51/){.external}|[Gmail](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-dun-e-mail-mutualise-ovh-sur-linterface-de-gmail/){.external}|
-|[Windows Phone](https://docs.ovh.com/ca/fr/emails/configuration-windows-phone-mail-mutu/){.external}|[Outlook 2011 Mac](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-outlook-2011-sur-mac/){.external}|[Mail pour iPhone ou iPad (iOS 7 et versions ultérieures)](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-iphone-ios-91/){.external}|[Android 4.4](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-dun-telephone-mobile-sous-android-version-44/){.external}| |
-|[Windows Mail](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-windows-mail/){.external}|[Outlook 2010](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-outlook-2010/){.external}|[Thunderbird sur Mac](https://docs.ovh.com/ca/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/){.external}|[Android 4.1.2](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-sous-tablette-android-412/){.external}| |
-|[Thunderbird sur Windows](https://docs.ovh.com/ca/fr/emails/configuration-email-configuration-pour-thunderbird/){.external}|[Outlook 2007](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-outlook-2007/){.external}| | | |
-| |[Outlook.com](https://docs.ovh.com/ca/fr/emails/configuration-outlook-com/){.external}| | | |
+|[Windows 10](../configuration-courrier-sur-windows-10/){.external}|[Outlook 2016](../configuration-outlook-2016/){.external}|[Mail de macOS (dernière version)](../guide-configuration-mail-de-mac-el-capitan/){.external}|[Android (dernière version)](../configuration-android-6/){.external}|[Gmail](../mail-mutualise-guide-configuration-dun-e-mail-mutualise-ovh-sur-linterface-de-gmail/){.external}|[Mail pour iPhone ou iPad (iOS 7 et versions ultérieures)](../mail-mutualise-guide-configuration-iphone-ios-91/){.external}|
 
 Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre adresse e-mail, retrouvez ci-dessous les paramètres à utiliser :
 
@@ -101,15 +96,15 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 
 |Type du serveur|Nom du serveur|Port (avec SSL)|Port (sans SSL)|
 |---|---|---|---|
-|Entrant|SSL0.OVH.NET|993|143|
-|Sortant|SSL0.OVH.NET|465|587|
+|Entrant|imap.mail.ovh.ca|993|143|
+|Sortant|smtp.mail.ovh.ca|465|587|
 
 - **Pour une configuration en POP**
 
 |Type du serveur|Nom du serveur|Port (avec SSL)|Port (sans SSL)|
 |---|---|---|---|
-|Entrant|SSL0.OVH.NET|995|110|
-|Sortant|SSL0.OVH.NET|465|587|
+|Entrant|pop.mail.ovh.ca|995|110|
+|Sortant|smtp.mail.ovh.ca|465|587|
 
 > [!warning]
 >
@@ -165,12 +160,7 @@ Vous devez configurer votre adresse e-mail sur l'appareil souhaité (comme un sm
 
 |Windows|Outlook|Apple|Android|Autre|
 |---|---|---|---|---|
-|[Windows 10](https://docs.ovh.com/ca/fr/emails/configuration-courrier-sur-windows-10/){.external}|[Outlook 2016](https://docs.ovh.com/ca/fr/emails/configuration-outlook-2016/){.external}|[Mail de macOS (dernière version)](https://docs.ovh.com/ca/fr/emails/guide-configuration-mail-de-mac-el-capitan/){.external}|[Android (dernière version)](https://docs.ovh.com/ca/fr/emails/configuration-android-6/){.external}|[Téléphone BlackBerry](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-blackberry/){.external}|
-|[Windows 8](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-sous-windows-8/){.external}|[Outlook 2013](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-outlook-2013/){.external}|[Mail de Mac (Mavericks & Yosemite)](https://docs.ovh.com/ca/fr/emails/guide-configuration-mail-de-mac-mavericks-et-yosemite/){.external}|[Android 5.1](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-dun-telephone-mobile-sous-android-version-51/){.external}|[Gmail](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-dun-e-mail-mutualise-ovh-sur-linterface-de-gmail/){.external}|
-|[Windows Phone](https://docs.ovh.com/ca/fr/emails/configuration-windows-phone-mail-mutu/){.external}|[Outlook 2011 Mac](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-outlook-2011-sur-mac/){.external}|[Mail pour iPhone ou iPad (iOS 7 et versions ultérieures)](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-iphone-ios-91/){.external}|[Android 4.4](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-dun-telephone-mobile-sous-android-version-44/){.external}| |
-|[Windows Mail](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-windows-mail/){.external}|[Outlook 2010](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-outlook-2010/){.external}|[Thunderbird sur Mac](https://docs.ovh.com/ca/fr/emails/guide-de-configuration-email-pour-thunderbird-mac/){.external}|[Android 4.1.2](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-sous-tablette-android-412/){.external}| |
-|[Thunderbird sur Windows](https://docs.ovh.com/ca/fr/emails/configuration-email-configuration-pour-thunderbird/){.external}|[Outlook 2007](https://docs.ovh.com/ca/fr/emails/mail-mutualise-guide-configuration-outlook-2007/){.external}| | | |
-| |[Outlook.com](https://docs.ovh.com/ca/fr/emails/configuration-outlook-com/){.external}| | | |
+|[Windows 10](../configuration-courrier-sur-windows-10/){.external}|[Outlook 2016](../configuration-outlook-2016/){.external}|[Mail de macOS (dernière version)](../guide-configuration-mail-de-mac-el-capitan/){.external}|[Android (dernière version)](../configuration-android-6/){.external}|[Gmail](../mail-mutualise-guide-configuration-dun-e-mail-mutualise-ovh-sur-linterface-de-gmail/){.external}|[Mail pour iPhone ou iPad (iOS 7 et versions ultérieures)](../mail-mutualise-guide-configuration-iphone-ios-91/){.external}|
 
 Si vous désirez simplement obtenir les éléments nécessaires pour configurer votre adresse e-mail, retrouvez ci-dessous les paramètres à utiliser :
 
@@ -178,15 +168,15 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 
 |Type du serveur|Nom du serveur|Port (avec SSL)|Port (sans SSL)|
 |---|---|---|---|
-|Entrant|SSL0.OVH.NET|993|143|
-|Sortant|SSL0.OVH.NET|465|587|
+|Entrant|imap.mail.ovh.ca|993|143|
+|Sortant|smtp.mail.ovh.ca|465|587|
 
 - **Pour une configuration en POP**
 
 |Type du serveur|Nom du serveur|Port (avec SSL)|Port (sans SSL)|
 |---|---|---|---|
-|Entrant|SSL0.OVH.NET|995|110|
-|Sortant|SSL0.OVH.NET|465|587|
+|Entrant|pop.mail.ovh.ca|995|110|
+|Sortant|smtp.mail.ovh.ca|465|587|
 
 > [!warning]
 >

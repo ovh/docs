@@ -9,18 +9,15 @@ order: 4
 
 ## Objective
 
-[HuggingFace](https://huggingface.co/) is a popular machine learning
-library supported by OVHcloud ML Serving. This tutorial will cover how
-to export an [HuggingFace](https://huggingface.co/) pipeline.
+[HuggingFace](https://huggingface.co/) is a popular machine learning library supported by OVHcloud ML Serving. This tutorial will cover how to export an [HuggingFace](https://huggingface.co/) pipeline.
 
 ## Requirements
 
--   A python environment with [HuggingFace](https://huggingface.co/)
-    (`transformers`) installed
+-   A python environment with [HuggingFace](https://huggingface.co/) (`transformers`) installed, for supported version see the [capabilities](../compatibility-matrix)
 
 ## Save HuggingFace pipeline
 
-Let\'s take an example of an `HuggingFace` pipeline to illustrate:
+Let's take an example of an `HuggingFace` pipeline to illustrate, this script leverages `PyTorch` based models:
 
 ``` {.python}
 import transformers
@@ -50,8 +47,7 @@ with open(path + '/manifest.json', 'w') as file:
     }, file, indent=2)
 ```
 
-Your model is now serialized on your local file system in the
-`my_model_dir` directory.
+Your model is now serialized on your local file system in the `my_model_dir` directory.
 
 The `manifest.json` should look like:
 
@@ -66,7 +62,5 @@ The `manifest.json` should look like:
 
 ## Going further
 
--   You can check the [OVHcloud documentation on how to deploy custom
-    models](../deploy-serialized-models).
--   You can check the [supported compatibilities for Tensorflow
-    SavedModel](../compatibility-matrix)
+-   You can check the [OVHcloud documentation on how to deploy custom models](../deploy-serialized-models).
+-   You can check the [supported compatibilities for Tensorflow SavedModel](../compatibility-matrix)

@@ -6,7 +6,7 @@ section: How to
 order: 7
 ---
 
-**Last updated 15<sup>th</sup> May, 2020**
+**Last updated 14<sup>th</sup> November, 2020**
 
 ## Objective
 This guide helps you to upload your application code to Object Storage and submit an Apache Spark job using the Data Processing CLI.
@@ -55,11 +55,11 @@ consumer_key=my_consumer_key
 Before running your job in the Data Processing platform, you will need to create a container in OVHcloud Object Storage. 
 You can work with your Object Storage using either the OVHcloud Manager or the Openstack Horizon dashboard.
 
-Please see [Creating Storage Containers in Customer Panel](../../storage/pcs/create-container/){.external} or [Create an object container in Horizon](../../storage/create_an_object_container/){.external} for more details.
+Please see [Creating Storage Containers in Customer Panel](https://docs.ovh.com/gb/en/storage/pcs/create-container/){.external} or [Create an object container in Horizon](../../storage/create_an_object_container/){.external} for more details.
 
 You can also manage your Object storage through command line with the [Openstack Swift API](https://docs.ovh.com/gb/en/public-cloud/getting_started_with_the_swift_api/){.external} 
 
-When it is created, upload your application code in your container. If you don't have any application code, you can still try the CLI with the examples files provided inside the `testdata` directory of the [GitHub project](https://github.com/ovh/data-processing-spark-submit){.external}.
+When it is created, upload your application code and environment file if needed at the root of the container. If you don't have any application code, you can still try the CLI with the examples files provided inside the `testdata` directory of the [GitHub project](https://github.com/ovh/data-processing-spark-submit){.external}.
 If you want to submit a python job, do not forget to upload your environment.yml file (see [How to generate environment file for Python jobs](../generate-environment){.external})
 
 >[!primary]
@@ -85,6 +85,9 @@ In this example, the application code `spark-examples.jar` is stored in the `odp
 >
 > Some of the parameters can be set as environment variables, such as ** --projectid**.
 
+> [!warning]
+> The different application parameters are stored in plain text. It is advised that you store your credentials in configuration files instead of using arguments. You need to upload the configuration files in the same Object Storage container that you upload the code so they will be downloaded to the data processing cluster together when you submit the job.
+
 The ovh-spark-submit CLI provides a part of the parameters of spark-submit to configure your job.
 If you want to know more about these parameters, run:
 
@@ -101,6 +104,11 @@ While your job is running, you can watch logs in your terminal or access Spark U
 Here **region** refers to the region you chose to submit your job.
 
 At any time, you can stop your job by pressing `Ctrl+C`. If you do so, the CLI will ask you to confirm that you want to cancel the job before killing it.
+
+>[!warning]
+>
+> When streaming logs you are limited to 10 000 character at a time. Meaning you could experience missing logs in streaming mode. All logs will be uploaded to your Object Storage at job end.
+>
 
 If you want to check your results after the job is finished, you can download its logs from your Object Storage (see [Checking a job's logs in the Data Processing manager's page](../check-logs)).
 
@@ -131,7 +139,7 @@ region=openstack_region
 And here is an example of a command you could run to run the same job after uploading your local code (`spark-examples.jar`) to your `odp` Object Storage container with the Swift protocol:
 
 ```shell-session
-$ ./ovh-spark-submit --project-id yourProjectId --upload ./spark-examples.jar --class org.apache.spark.examples.SparkPi --driver-cores 1 --driver-memory 4G --executor-cores 1 --executor-memory 4G --num-executors 1 swift://odp/spark-examples.jar 1000
+$ ./ovh-spark-submit --projectid yourProjectId --upload ./spark-examples.jar --class org.apache.spark.examples.SparkPi --driver-cores 1 --driver-memory 4G --executor-cores 1 --executor-memory 4G --num-executors 1 swift://odp/spark-examples.jar 1000
 ```
 
 ## Go further

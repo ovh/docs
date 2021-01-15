@@ -2,18 +2,21 @@
 title: 'Einen virtuellen Server aus einem Backup erstellen/wiederherstellen'
 slug: einen-virtuellen-server-aus-einem-backup-erstellen-wiederherstellen
 excerpt: 'Erfahren Sie, wie Sie das Backup einer Instanz erstellen oder wiederherstellen'
+section: 'Verwaltung im OVHcloud Kundencenter'
 ---
 
 **Letzter Stand 22.11.2019**
 
 ## Einleitung
+
 Möglicherweise müssen Sie Ihre Instanz mittels eines Backup wiederherstellen, beispielsweise im Falle eines Fehlers in der Konfiguration Ihrer Instanz. 
 
 Dasselbe Backup kann auch dazu verwendet werden, eine neue Instanz zu erstellen, die erste zu duplizieren und einen Lastverteilung durchzuführen oder sogar eine hohe Verfügbarkeit bereitzustellen.
 
-In diesem Handbuch wird erläutert, wie Sie mithilfe Ihrer Backups Ihre Instanzen neu erstellen, duplizieren oder wiederherstellen können.
+**In dieser Anleitung wird erläutert, wie Sie mithilfe Ihrer Backups Ihre Instanzen neu erstellen, duplizieren oder wiederherstellen können.**
 
 ## Voraussetzungen
+
 - Verfügbares Backup einer Public Cloud-Instanz. Konsultieren Sie zu diesem Zweck [das Handbuch zum Erstellen eines Backup](https://docs.ovh.com/de/public-cloud/ein_backup_einer_instanz_erstellen/).
 - Anschluss an ein OVHcloud Kundencenter.
 

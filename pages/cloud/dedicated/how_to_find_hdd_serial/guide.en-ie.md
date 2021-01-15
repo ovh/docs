@@ -31,7 +31,7 @@ To minimise the chance of human error during hard disk replacements, we ask our 
 To retrieve your hard drive's serial number with a software RAID configuration, you can simply use smartctl:
 
 ```sh
-smartctl -a /dev/sdX | grep Serial Serial Number:    XXXXXXX
+smartctl -a /dev/sdX | grep Serial
 ```
 
 The device is detected by the OS (ex: /dev/sda, /dev/sdb, etc.).
@@ -137,7 +137,7 @@ The Device ID and Adapter ID will be used to tell smartctl which disk to look fo
 The command should look like this:
 
 ```sh
-smartctl -d megaraid,N -a /dev/sdX | grep Serial Serial Number: 1234567890
+smartctl -d megaraid,N -a /dev/sdX | grep Serial
 ```
 
 The RAID Device ID will be displayed as follows: /dev/sda = 1st RAID, /dev/sdb = 2nd RAID, etc.
@@ -154,7 +154,7 @@ The RAID Device ID will be displayed as follows: /dev/sda = 1st RAID, /dev/sdb =
 > You must then replace megaraid with sat+megaraid:
 >
 > ```
-> smartctl -d sat+megaraid,N -a /dev/sdX | grep Serial Serial Number:    1234567890
+> smartctl -d sat+megaraid,N -a /dev/sdX | grep Serial
 > ```
 >
 
@@ -167,7 +167,7 @@ You can refer to [this guide (LSI raid controller)](https://docs.ovh.com/gb/en/d
 Once you have found the sg device related to the hard disk you want to query, use the following command:
 
 ```sh
-smartctl -a /dev/sgX | grep Serial Serial Number:    1234567890
+smartctl -a /dev/sgX | grep Serial
 ```
 
 The sg device number will be displayed as follows: /dev/sg0, /dev/sg1) etc.

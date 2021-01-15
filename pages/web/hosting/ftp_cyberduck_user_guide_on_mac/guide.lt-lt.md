@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: Cyberduck (MAC) naudojimo gidas'
 excerpt: Šiame gide pateikiami patarimai apie Cyberduck aplikacijos naudojimą.
 id: '1598'

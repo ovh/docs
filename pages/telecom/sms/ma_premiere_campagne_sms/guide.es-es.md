@@ -1,18 +1,19 @@
 ---
-title: 'Crear una campaña de SMS'
+title: Crear una campaña de SMS
 slug: crear-una-campana-sms
-excerpt: 'Cómo crear una campaña de envío de SMS'
-legacy_guide_number: g2212
-section: 'Primeros pasos'
+excerpt: Cómo crear una campaña de envío de SMS
+section: Primeros pasos
 ---
 
-**Última actualización: 15/11/2019**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
+
+**Última actualización: 28/10/2020**
 
 ## Objetivo
 
-OVHcloud ofrece una serie de herramientas, disponibles en el área de cliente, que permiten enviar SMS.
-
-**Esta guía explica cómo utilizar esas herramientas para crear una campaña de envío de SMS.**
+OVHcloud ofrece una serie de herramientas, disponibles en el área de cliente, que permiten enviar SMS. Esta guía explica cómo utilizar esas herramientas para crear una campaña de envío de SMS.
 
 ## Requisitos
 
@@ -20,46 +21,72 @@ OVHcloud ofrece una serie de herramientas, disponibles en el área de cliente, q
 
 ## Procedimiento
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovhtelecom.fr/manager/) y haga clic en `Telecom`{.action} (1). A continuación, haga clic en `SMS`{.action} en la columna izquierda (2) y seleccione su cuenta de SMS (3).
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) y seleccione `Telecom`{.action}. Haga clic en `SMS`{.action} en la columna izquierda y seleccione su cuenta de SMS.
 
-Utilice las diferentes pestañas (4) para acceder a las principales funcionalidades que permiten crear y enviar una campaña de SMS.
+La barra de herramientas y los accesos rápidos le permitirán acceder a las principales funcionalidades para enviar su campaña de SMS.
 
-![Área de cliente](images/firstsms01.png){.thumbnail}
+![firstsms](images/firstsms01.png){.thumbnail}
 
-### 1. Enviar SMS
 
-La pestaña `SMS`{.action} permite acceder a las distintas opciones de envío, así como consultar el historial de mensajes enviados y recibidos y el estado de los SMS programados.
+### 1. Añadir contactos
 
-![SMS](images/firstsms02.png){.thumbnail}
+#### Añadir una lista de contactos
 
-Para enviar un SMS desde el área de cliente, consulte [esta guía](https://docs.ovh.com/es/sms/enviar-sms-desde-el-area-de-cliente/).
+Puede importar una lista de contactos a través de un archivo .csv o .txt.
 
-Si desea más información sobre el historial de SMS, consulte [esta guía](https://docs.ovh.com/es/sms/gestionar-el-historial-de-envios/).
+Para añadir una lista de contactos, abra la pestaña `Contactos`{.action} y haga clic en `Crear una lista de contactos`{.action}. 
 
-### 2. Añadir una lista de destinatarios
+![firstsms](images/firstsms03.png){.thumbnail}
 
-Desde la pestaña `Contactos`{.action} es posible enviar SMS a una o más listas de destinatarios. Para añadir una lista de destinatarios, puede importar un archivo .CSV o .TXT.
+En [esta guía](../lista-de-destinatarios-sms/) se explica cómo hacerlo.
 
-![Añadir una lista de destinatarios](images/firstsms03.png){.thumbnail}
+#### Añadir una agenda de contactos
 
-En [esta guía](https://docs.ovh.com/es/sms/lista-de-destinatarios-sms) se explica cómo hacerlo.
+A diferencia de las listas de contactos, las agendas de contactos contienen contactos que puede nombrar y, por tanto, identificar más fácilmente para campañas específicas.
 
-### 3. Añadir una agenda de contactos
+Para añadir una agenda de contactos, abra la pestaña `Contactos`{.action} y haga clic en la `Agenda de contactos`{.action}.
 
-Desde la pestaña `Agenda de contactos`{.action} es posible crear varias agendas de contactos a las que enviar SMS. A diferencia de las listas de destinatarios, en las agendas de contactos es posible asignar un nombre a los contactos para identificarlos fácilmente con el fin de realizar campañas segmentadas.
+![firstsms](images/firstsms04.png){.thumbnail}
 
-![Agenda de contactos](images/firstsms04.png){.thumbnail}
+Para más información sobre las agendas de contactos, consulte [esta guía](../agenda-de-contactos-de-sms/).
 
-Para más información sobre las agendas de contactos, consulte [esta guía](https://docs.ovh.com/es/sms/agenda-de-contactos-de-sms/).
+### 2. Crear un remitente
 
-### 4. Crear un remitente
+Por defecto, el envío de SMS desde una cuenta de OVHcloud se realiza desde un número que permite responder (funcionalidad solo disponible en Francia). 
 
-Por defecto, el envío de SMS desde una cuenta de OVHcloud se realiza desde un número que permite responder (funcionalidad solo disponible en Francia). Sin embargo, en algunos casos puede ser más apropiado utilizar un remitente alfanumérico (que se crea desde la pestaña `Remitentes`{.action}) para que el SMS se envíe a nombre de su empresa u organización.
+Sin embargo, en algunos casos puede ser más apropiado utilizar un remitente alfanumérico (que se crea desde la pestaña `Remitentes`{.action}) para que el SMS se envíe a nombre de su empresa u organización.
 
-![Remitentes](images/firstsms05.png){.thumbnail}
+![firstsms](images/firstsms05.png){.thumbnail}
 
-Para ello, consulte el apartado de la guía «[Enviar SMS desde el área de cliente](https://docs.ovh.com/es/sms/enviar-sms-desde-el-area-de-cliente/#3-elegir-el-remitente-del-sms)» relativo a la elección de remitentes.
+Para ello, consulte el apartado de la guía «[Enviar SMS desde el área de cliente](../enviar-sms-desde-el-area-de-cliente/#3-elegir-el-remitente-del-sms)» relativo a la elección de remitentes.
+
+### 3. El envío de una campaña de SMS
+
+La pestaña `Mensaje y campaña`{.action} le permitirá acceder a las opciones de envío, al historial de sus SMS enviados y recibidos, así como a sus envíos de SMS planificados como parte de los envíos aplazados.
+
+![firstsms](images/firstsms02.png){.thumbnail}
+
+Para enviar un SMS unitario desde el área de cliente, consulte [la guía correspondiente](../enviar-sms-desde-el-area-de-cliente/).
+
+Para enviar una campaña de SMS, haga clic en `Gestión de campañas`{.action} y seleccione `Crear una campaña`{.action}.
+
+![firstsms](images/firstsms06.png){.thumbnail}
+
+En primer lugar, indique un nombre para la campaña en el campo correspondiente.
+
+Seleccione el remitente entre los disponibles.
+
+![firstsms](images/firstsms07.png){.thumbnail}
+
+Componga su mensaje y elija entre un envío inmediato o planificado. En caso de envío planificado, deberá definir la fecha y la hora del envío.
+
+![firstsms](images/firstsms08.png){.thumbnail}
+
+Haga clic en el botón `Enviar`{.action} para enviar o planificar la campaña.
+
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/).
+Consulte [nuestra guía relativa a la gestión del historial de SMS](../historial-de-envios/).
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>

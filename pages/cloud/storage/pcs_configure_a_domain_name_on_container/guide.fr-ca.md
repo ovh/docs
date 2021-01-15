@@ -13,7 +13,7 @@ Ce guide vous explique donc comment configurer un nom de domaine sur vos contene
 
 
 ### Prérequis
-- Consultez le guide [Création de conteneur de stockage](../pcs_create_container_in_customer_panel/guide.fr-ca.md){.ref}
+- Consultez le guide [Création de conteneur de stockage](https://docs.ovh.com/fr/storage/pcs/create-container/)
 - Un nom de domaine
 
 

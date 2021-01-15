@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Verwijdering van een datastore'
 slug: verwijderen-datastore
 excerpt: 'Ontdek hoe u een datastore van uw Private Cloud kunt verwijderen'

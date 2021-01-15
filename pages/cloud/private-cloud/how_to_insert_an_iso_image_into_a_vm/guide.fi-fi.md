@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: ISO-levykuvan käyttö virtuaalikoneella
 excerpt: Miten ISO-levykuvaa käytetään virtuaalikoneella?
 slug: iso-levykuvan_kaytto_virtuaalikoneella

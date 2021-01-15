@@ -9,25 +9,19 @@ order: 1
 
 ## Objective
 
-[Scikit-learn](https://scikit-learn.org/stable/) is a popular machine
-learning library and [ONNX](https://onnx.ai/) is a serialization format
-that is supported by **OVHcloud ML Serving**. This tutorial will cover
-how to export a [Scikit-learn](https://scikit-learn.org/stable/) trained
-model into an [ONNX](https://onnx.ai/) file.
+[Scikit-learn](https://scikit-learn.org/stable/) is a popular machine learning library and [ONNX](https://onnx.ai/) is a serialization format that is supported by **OVHcloud ML Serving**. This tutorial will cover how to export a [Scikit-learn](https://scikit-learn.org/stable/) trained model into an [ONNX](https://onnx.ai/) file.
 
 ## Requirements
 
--   A python environment with
-    [Scikit-learn](https://scikit-learn.org/stable/) installed
+-   A python environment with [Scikit-learn](https://scikit-learn.org/stable/) installed
 
 ## Convert a simple model into ONNX
 
-ML Serving supports `scikit-learn` models through the
-[ONNX](https://onnx.ai/) serialization format.
+ML Serving supports `scikit-learn` models through the [ONNX](https://onnx.ai/) serialization format.
 
 ### Train Simple scikit-learn model
 
-Let\'s take a simple example of a `scikit-learn` model to illustrate:
+Let's take a simple example of a `scikit-learn` model to illustrate:
 
 ``` {.python}
 # Train a model.
@@ -54,8 +48,7 @@ pip install skl2onnx
 
 ### Define the inputs of your serialized model
 
-For each `numpy array` (also called `tensor` in ONNX) fed as an input to
-the model, choose a name and declare its data-type and its shape.
+For each `numpy array` (also called `tensor` in ONNX) fed as an input to the model, choose a name and declare its data-type and its shape.
 
 Example:
 
@@ -70,8 +63,7 @@ initial_type = [
 
 ### Launch the conversion and save it to a file
 
-The trained model conversion is made with the `convert_sklearn`
-function.
+The trained model conversion is made with the `convert_sklearn` function.
 
 ``` {.python}
 # Import export function
@@ -83,17 +75,11 @@ with open("my_model.onnx", "wb") as f:
     f.write(onx.SerializeToString())
 ```
 
-Your model is now serialized on you local file system in the
-`my_model.onnx` file.
+Your model is now serialized on you local file system in the `my_model.onnx` file.
 
 ## Going further
 
--   For more information about how to serialize a `scikit-learn` model
-    to ONNX serialization format, refer to the [official
-    documentation](http://onnx.ai/sklearn-onnx/index.html). For example,
-    you can find information about how to serialize [a complex
-    scikit-learn pipeline](http://onnx.ai/sklearn-onnx/pipeline.html)
--   You can check the [OVHcloud documentation on how to deploy custom
-    models](../deploy-serialized-models).
--   You can check the [supported compatibilities for ONNX
-    models](../compatibility-matrix)
+-   For more information about how to serialize a `scikit-learn` model to
+    ONNX serialization format, refer to the [official documentation](http://onnx.ai/sklearn-onnx/index.html). For example, you can find information about how to serialize [a complex scikit-learn pipeline](http://onnx.ai/sklearn-onnx/pipeline.html)
+-   You can check the [OVHcloud documentation on how to deploy custom models](../deploy-serialized-models).
+-   You can check the [supported compatibilities for ONNX models](../compatibility-matrix)

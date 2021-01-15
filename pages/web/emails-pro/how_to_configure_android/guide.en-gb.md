@@ -37,9 +37,9 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 > [!primary]
 >
-> In this guide, we will use as the server name: pro**X**.mail.ovh.net. You will need to replace the "X" with the actual number indicating the appropriate server for your Email Pro service.
+> In this guide, we will use as the server name: pro**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), in the `Web`{.action} section, if you select `Professional Email`{.action} in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action} in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 On your device’s homepage, open the `Gmail`{.action} app. You can add an account in two different ways:
@@ -62,7 +62,7 @@ Enter the incoming server settings:
 |---|---| 
 |Username|Enter your full email address.|  
 |Password|Enter the password for your email address.|
-|Server|Enter “pro**X**.mail.ovh.net”.|
+|Server|Enter “pro**?**.mail.ovh.net”.|
 
 Tap `Next`{.action}, then enter the outgoing server settings:
 
@@ -71,7 +71,7 @@ Tap `Next`{.action}, then enter the outgoing server settings:
 |Request a connection|Ensure that this button is enabled.|
 |Username|Enter your full email address.|  
 |Password|Enter the password for your email address.|
-|SMTP server|Enter “pro**X**.mail.ovh.net”.|
+|SMTP server|Enter “pro**?**.mail.ovh.net”.|
 
 Then tap `Next`{.action}. If all the information you have entered is correct, you will be able to log in to your account straight away.
 
@@ -85,8 +85,8 @@ If you need to enter any settings manually in your account preferences, the tech
 
 |Server type|Server name|Security type|Port|
 |---|---|---|---|
-|Incoming|pro**X**.mail.ovh.net|SSL/TLS|993|
-|Outgoing|pro**X**.mail.ovh.net|STARTTLS|587|
+|Incoming|pro**?**.mail.ovh.net|SSL/TLS|993|
+|Outgoing|pro**?**.mail.ovh.net|STARTTLS|587|
 
 ### Step 2: Use the email address
 

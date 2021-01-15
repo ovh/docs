@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhosting: algemene informatie over OVH’s gedeelde e-mail'
 excerpt: Algemene informatie over OVH's e-mail
 slug: webhosting_algemene_informatie_over_ovhs_gedeelde_e-mail

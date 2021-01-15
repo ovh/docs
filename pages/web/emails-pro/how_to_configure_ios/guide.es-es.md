@@ -47,9 +47,9 @@ Esta guía solo hace referencia a la configuración del correo desde su disposit
 
 > [!primary]
 >
-> En nuestro ejemplo, hemos utilizado la mención servidor: pro**X**.mail.ovh.net. Sustituya la «X» por la cifra que designa al servidor de su servicio Email Pro.
+> En nuestro ejemplo, hemos utilizado la mención servidor: pro**?**.mail.ovh.net. Sustituya la «?» por la cifra que designa al servidor de su servicio Email Pro.
 >
-> Puede consultar esta cifra en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web`{.action} y `Email Pro`{.action} en la columna de la izquierda. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
+> Puede consultar esta cifra en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action} y `Email Pro`{.action} en la columna de la izquierda. El nombre del servidor aparece en el marco **Conexión** de la pestaña `Información general`{.action}.
 >
 
 Acceda a `Ajustes`{.action} en la pantalla de inicio de su dispositivo. Según la versión de iOS, podrá añadir su cuenta de correo de dos formas distintas:
@@ -74,10 +74,10 @@ A continuación, pulse `Siguiente`{.action} e introduzca la información de su c
 |Campo|Descripción|
 |---|---|
 |IMAP o POP|Deje la opción **IMAP** seleccionada por defecto.|
-|Nombre de host (entrante)|Introduzca el servidor pro**X**.mail.ovh.net.|
+|Nombre de host (entrante)|Introduzca el servidor pro**?**.mail.ovh.net.|
 |Nombre de usuario (entrante)|Introduzca la dirección de correo electrónico completa.|
 |Contraseña (entrante)|Introduzca la contraseña de la dirección de correo electrónico.|  
-|Nombre de host (saliente)|Introduzca el servidor pro**X**.mail.ovh.net.|
+|Nombre de host (saliente)|Introduzca el servidor pro**?**.mail.ovh.net.|
 |Nombre de usuario (saliente)|Introduzca la dirección de correo electrónico completa.|
 |Contraseña (saliente)|Introduzca la contraseña de la dirección de correo electrónico.|
 
@@ -93,8 +93,8 @@ Si la aplicación le pide que introduzca de forma manual algunos datos técnicos
 
 |Tipo de servidor|Nombre del servidor|SSL|Puerto|
 |---|---|---|---|
-|Entrante|pro**X**.mail.ovh.net|Sí|993|
-|Saliente|pro**X**.mail.ovh.net|Sí|587|
+|Entrante|pro**?**.mail.ovh.net|Sí|993|
+|Saliente|pro**?**.mail.ovh.net|Sí|587|
 
 ### 2. Utilizar la dirección de correo electrónico
 

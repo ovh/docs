@@ -9,7 +9,7 @@ section: vRack
 
 ## Objetivo
 
-El [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external} es una red privada que permite configurar el direccionamiento entre dos o más [servidores dedicados](https://www.ovh.com/world/es/servidores_dedicados/){.external} de OVHcloud. También permite añadir [instancias de Public Cloud](https://www.ovh.com/world/es/public-cloud/instancias/){.external} para crear una infraestructura de recursos físicos y virtuales.
+El [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external} es una red privada que permite configurar el direccionamiento entre dos o más [servidores dedicados](https://www.ovh.com/world/es/servidores_dedicados/){.external} de OVHcloud. También permite añadir [instancias de Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} para crear una infraestructura de recursos físicos y virtuales.
 
 **Esta guía explica cómo configurar la red privada entre una instancia de Public Cloud y un servidor dedicado.**
 
@@ -63,7 +63,7 @@ Aquí puede crear la configuración de su red y nombrarla. Una vez que este conf
 
 ### Crear una instancia de Public Cloud
 
-En la pagina de su proyecto, haga click en el botón `crear una instancia`{.action}.
+En la pagina de su proyecto, haga click en el botón `Crear una instancia`{.action}.
 
 ![Crear una instancia](images/pci-01_2020.png){.thumbnail}
 
@@ -72,13 +72,13 @@ Seleccione el modelo, la región y la imagen. Luego elija su Red privada.
 ![Crear una instancia](images/pci-02_2020.png){.thumbnail}
 
 
-Finalmente, seleccione el periodo de facturación y haga click en Crear una instancia {.action}. Para obtener información detallada sobre la diversas opciones, por favor consulte la siguiente guía: [Crear una instancia desde el área de cliente de OVHcloud](../public-cloud/crear_una_instancia_desde_el_area_de_cliente_de_ovh/){.external)
+Finalmente, seleccione el periodo de facturación y haga click en `Crear una instancia`{.action}. Para obtener información detallada sobre la diversas opciones, por favor consulte la siguiente guía: [Crear una instancia desde el área de cliente de OVHcloud](../../public-cloud/crear_una_instancia_desde_el_area_de_cliente_de_ovh/).
 
 ### Configurar las interfaces de red
 
-Para configurar las interfaces de red entre la instancia de Public Cloud que acaba de crear y el servidor dedicado, consulte la guía [Configurar varios servidores dedicados en el vRack](../configurar-vrack-en-servidor-dedicado/){.external}.
+Para configurar las interfaces de red entre la instancia de Public Cloud que acaba de crear y el servidor dedicado, consulte la guía [Configurar varios servidores dedicados en el vRack](../configurar-vrack-en-servidor-dedicado/).
 
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

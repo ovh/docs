@@ -1,7 +1,7 @@
 ---
-title: 'Créer vos bases et utilisateurs à l''intérieur de votre cluster'
+title: "Créer vos bases et utilisateurs à l'intérieur de votre cluster"
 slug: creer-utilisateur-db
-excerpt: 'Comment créer vos bases et utilisateurs à l''intérieur de votre cluster'
+excerpt: "Comment créer vos bases et utilisateurs à l'intérieur de votre cluster"
 section: 'Démarrer avec votre cluster PostgreSQL'
 ---
 
@@ -87,4 +87,4 @@ Votre utilisateur `martin` pourra ainsi s'y connecter de la manière suivante :
 
 ## Aller plus loin
 
-Apprenez à gérer votre cluster PostgreSQL en consultant la [documentation technique d'OVHcloud](../) pour davantage d'informations sur le fonctionnement technique de votre offre managée.
+Apprenez à gérer votre cluster PostgreSQL en consultant la [documentation technique d'OVHcloud](https://docs.ovh.com/fr/enterprise-cloud-databases/) pour davantage d'informations sur le fonctionnement technique de votre offre managée.

@@ -2,6 +2,7 @@
 title: Installation von WordPress auf einer Instanz
 excerpt: Installation von WordPress auf einer Instanz
 slug: installation_von_wordpress_auf_einer_instanz
+section: 'Tutorials'
 legacy_guide_number: g2060
 ---
 
@@ -93,7 +94,7 @@ admin@instance:~$ sudo service httpd restart
 
 
 ## Download von WordPress
-Begeben Sie sich auf die [WordPress Webseite](https://de.wordpress.org/txt-download/) und laden Sie die aktuellste Version herunter:
+Begeben Sie sich auf die [WordPress Webseite](https://de.wordpress.org/) und laden Sie die aktuellste Version herunter:
 
 
 ```

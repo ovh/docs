@@ -3,6 +3,7 @@ title: 'Exchange 2013/2016: Konfiguration in BlackBerry Z10 (OS10)'
 excerpt: ''
 slug: exchange_20132016_konfiguration_in_blackberry_z10_os10
 legacy_guide_number: g1391
+section: Konfiguration von Exchange auf kompatiblen Smartphones/Tablets
 ---
 
 

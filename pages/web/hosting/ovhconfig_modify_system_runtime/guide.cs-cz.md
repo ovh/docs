@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Úprava konfigurace webhostingu'
 slug: modifikace-os-webhosting
 excerpt: 'Zjistěte, jak změnit konfiguraci svého webhostingového řešení OVH'

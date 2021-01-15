@@ -7,10 +7,6 @@ Sections: 'Premiers pas, Diagnostic et mode Rescue, Réseau et IP, SSH et clé S
 
 > [!product-section]
 >
-> ### Réseau et IP
->
-> - [Alias IP](https://docs.ovh.com/fr/dedicated/network-ipaliasing/)
->
 > ### SSH et clé SSH
 >
 > - [Introduction au SSH](https://docs.ovh.com/fr/dedicated/ssh-introduction/)

@@ -22,7 +22,7 @@ OpenStack is a cloud operating system open source for creating public and privat
 - [Your OVHcloud API identifiers and OVHcloud authorisation key](../../api/first-steps-with-ovh-api/){.external}
 - [An SSH key](../create-ssh-keys)
 - [Terraform executable](https://www.terraform.io/intro/getting-started/install.html){.external}
-- [OpenStack executables](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux_OpenStack_Platform/4/html/End_User_Guide/install_clients.html){.external}
+- [OpenStack executables](https://access.redhat.com/documentation/en-us/){.external}
 
 
 

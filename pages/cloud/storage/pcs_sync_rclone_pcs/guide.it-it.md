@@ -1,5 +1,5 @@
 ---
-title: 'Utilizzare l''Object Storage con Rclone'
+title: "Utilizzare l'Object Storage con Rclone"
 slug: sync-rclone-object-storage
 section: 'Object Storage'
 ---

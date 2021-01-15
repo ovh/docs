@@ -1,21 +1,21 @@
 ---
 title: 'Sharing an object via a temporary URL'
-excerpt: 'Share an object via a temporary URL'
+excerpt: 'Find out how to share an object via a temporary URL'
 slug: share_an_object_via_a_temporary_url
 legacy_guide_number: g2007
 section: OpenStack
 order: 8
 ---
 
-**Last updated 21st January 2019**
+**Last updated 11th January 2021**
 
 ## Objective 
 
-OpenStack lets you share multiple files.  In order to manage these files, you have to authenticate yourself using a token each time you make a request to the API.  This verifies your read/write authorisations in Swift. This token comes from the authentication system, using your username and password. 
+OpenStack lets you share multiple files. In order to manage these files, you have to authenticate yourself using a token each time you make a request to the API. This verifies your read/write authorisations in Swift. The token comes from the authentication system, using your username and password. 
 
-When you want to share a file with someone, you will of course want to avoid sharing your personal authentication details. In this instance, you can use temporary addresses (or *tempurl*).
+When sharing a file with someone, you will of course want to avoid sharing your personal authentication details. In this instance, you can use temporary addresses (or *tempurl*).
 
-Find out how to share an object via a temporary URL.
+**This guide explains how to share an object via a temporary URL.**
 
 ## Requirements
 
@@ -27,31 +27,31 @@ Find out how to share an object via a temporary URL.
 
 ### Understanding the concept
 
-The temporary address, (or *tempurl*), is a feature which allows you to control the files which you want to share. The following are used: 
+The temporary address, (or *tempurl*), is a feature which allows you to control the files you want to share. The following are used: 
 
 - **The entry point address**, such as https://storage.sbg1.cloud.ovh.net.
 - **The pathway to the object containing your project, the container and the object name**, such as `v1/AUTH_tenant/default/file`. 
 - **The tempurlsign setting**, which corresponds to a signature generated according to your secret key, the HTTP method, the file path and the expiration date. 
 - **The url_expires setting**, which corresponds to the expiry date of your temporary address. 
 
-### Generate the temporary address  (*tempurl*)
+### Generating the temporary address (*tempurl*)
 
-#### 1. Generate the key.
+#### Step 1: Generate the key
 
-First, you will need to create a key. This will be valid for all the files in your project. This means that you only have to generate the key once for all your temporary addresses.  
+First, you will need to create a key which will be valid for all the files in your project. This means that you only have to generate the key once for all your temporary addresses.  
 
 > [!primary]
 >
 > We strongly recommend choosing a long secure key, with at least 20 characters. However, please be aware that you can generate a new key at any time. 
 > 
 
-There are many ways of generating your key, such as the following commands sha512sum or sha256sum. We advise using the method which is most suitable for you, according to the encryption level that you want to use. For example, from the most effective to the least effective encryption: 
+There are multiple ways of generating your key. We recommend using the method which is most suitable for you, according to the encryption level that you want to use. For example, from the most effective to the least effective encryption: 
 
 - date +%s | sha512sum
 - date +%s | sha256sum
 - date +%s | md5sum 
 
-Once you have your key, you can configure this on your project using the Swift client. Please ensure that you replace the “12345” chain with your key:
+Once you have your key, you can configure it on your project using the Swift client. Replace “12345” in the following command with your key:
 
 ```bash
 swift post -m "Temp-URL-Key: 12345"
@@ -80,7 +80,7 @@ Or with curl:
 curl -i -X HEAD \ -H "X-Auth-Token: abcdef12345" \ https://storage.sbg1.cloud.ovh.net/v1/AUTH_ProjectID
 ```
 
-#### 2. Generate the URL.
+#### Step 2: Generate the URL
 
 The following tasks can be undertaken offline.  We are going to generate the temporary URL address using a command.  This should be customised using your own details. 
 
@@ -88,7 +88,7 @@ For example, for the elements below:
 
 - **GET**: HTTP method.
 - **60**: link available for 60 seconds (you can customise this value) 
-- **/v1/AUTH_tenant/default/file**: the path towards your file. You don’t need to the access point at this stage of the process.
+- **/v1/AUTH_tenant/default/file**: the path towards your file. You can add the access point later.
 - **12345**: to replace with your key.
 
 ```
@@ -101,7 +101,7 @@ You get the **tempURL** which lets you see the **path to the file**, the **signa
 v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
 ```
 
-To make your URL function properly, you have to add the access point address before your **tempURL**:
+To make your URL function properly, you have to insert the access point address before your **tempURL**:
 
 ```
 https://storage.sbg1.cloud.ovh.net/v1/AUTH_tenant/default/file?temp_url_sig=8016dsdf3122d526afds60911cde59fds3&temp_url_expires=1401548543
@@ -110,7 +110,7 @@ In the example above, this temporary address can be used to download the **file*
 
 > [!primary]
 >
-> For more advanced users who want to generate temporary addresses without the **swift-temp-url** script, you can get more information from the official OpenStack documentation.
+> More advanced users who want to generate temporary addresses without the **swift-temp-url** script can find more information in the official OpenStack documentation.
 
 ## Go further
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Aktualizace firewallu CISCO ASA'
 excerpt: 'Zjistěte, jak aktualizovat svůj CISCO ASA firewall'
 slug: aktualizace-firewallu-cisco-asa

@@ -95,6 +95,6 @@ OVHcloud also has a web application you can use to access your email account via
 
 
 
-[Configuring your Exchange account on the macOS Mail app](../../microsoft-collaborative-solutions/exchange-automatic-configuration-on-mail-mac/)
+[Configuring your Exchange account on the macOS Mail app](../../microsoft-collaborative-solutions/exchange-configuration-mail-macos/)
 
 Join our community of users on <https://community.ovh.com/en/>.

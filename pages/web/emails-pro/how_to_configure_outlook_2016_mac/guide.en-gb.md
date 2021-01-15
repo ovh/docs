@@ -37,9 +37,9 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 > [!primary]
 >
-> In this guide, we will use as the server name: pro**X**.mail.ovh.net. You will need to replace the "X" with the actual number indicating the appropriate server for your Email Pro service.
+> In this guide, we will use as the server name: pro**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), in the `Web`{.action} section, if you select `Professional Email`{.action} in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action} in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 Once you have launched Outlook on your device, you can add an account in two different ways:
@@ -58,9 +58,9 @@ Enter your email address, then click `Continue`{.action}. For the provider, clic
 |Mail address|Enter a name that will distinguish this account from any other accounts added in your Outlook app.|
 |Username|Enter your full email address.|
 |Password|Enter the password for your email address.|
-|Incoming server|Enter “pro**X**.mail.ovh.net”. Leave the "Use SSL to connect" box ticked.|
+|Incoming server|Enter “pro**?**.mail.ovh.net”. Leave the "Use SSL to connect" box ticked.|
 |Incoming port|Enter port 993.|
-|Outgoing server|Enter “pro**X**.mail.ovh.net”. Leave the "Use SSL to connect" box ticked.|
+|Outgoing server|Enter “pro**?**.mail.ovh.net”. Leave the "Use SSL to connect" box ticked.|
 |Outgoing port|Enter port 587.|
 
 Once you have entered this information, click `Next`{.action}. If the information is correct, Outlook will successfully connect to the account.
@@ -73,8 +73,8 @@ If you need to enter any settings manually in your account preferences, the tech
 
 |Server type|Server name|SSL|Port|
 |---|---|---|---|
-|Incoming|pro**X**.mail.ovh.net|Yes|993|
-|Outgoing|pro**X**.mail.ovh.net|Yes|587|
+|Incoming|pro**?**.mail.ovh.net|Yes|993|
+|Outgoing|pro**?**.mail.ovh.net|Yes|587|
 
 ### Step 2: Use the email address
 

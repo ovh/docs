@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Reddingsmodus-activatie op een VPS
 slug: rescue
 excerpt: Ontdek hoe u uw VPS in de Reddingsmodus kunt opstarten.

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Configuring an Exchange account on iPhone and iPad
 excerpt: Find out how to configure an Exchange account on iPhone and iPad, via the Mail app
 slug: configuring-exchange-ios-mail

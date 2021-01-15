@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Importeer een failover IP
 excerpt: Importeer een failover IP
 slug: importeer_een_failover_ip

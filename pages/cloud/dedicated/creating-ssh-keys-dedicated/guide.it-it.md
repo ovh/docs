@@ -22,7 +22,7 @@ Ti ricordiamo che le chiavi SSH non sono utilizzate sulle istanze con sistema op
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
-- Un [server dedicato](https://www.ovh.it/server_dedicati/) nel tuo account OVHcloud
+- Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) nel tuo account OVHcloud
 - Accesso come amministratore (root) mediante SSH al tuo VPS (opzionale)
 
 ## Procedura
@@ -170,7 +170,7 @@ Se hai copiato per intero il risultato, l’identificativo che segue la chiave d
 
 > [!primary]
 >
-> Qualsiasi chiave salvata nella sezione “Dedicato” potrà essere utilizzata anche per il tuo VPS. Per le chiavi SSH relative ai servizi Public Cloud, consulta [questa guida](https://docs.ovh.com/it/public-cloud/creare-chiave-ssh/).
+> Qualsiasi chiave salvata nella sezione “Dedicato” potrà essere utilizzata anche per il tuo VPS. Per le chiavi SSH relative ai servizi Public Cloud, consulta [questa guida](../../public-cloud/primi-passi-public-cloud).
 >
 
 

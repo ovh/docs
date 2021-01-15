@@ -3,6 +3,7 @@ title: Configura il DNS secondario
 excerpt: Come configurare un dominio sul server DNS secondario
 slug: configura_il_dns_secondario
 legacy_guide_number: g1477
+hidden: true
 ---
 
 

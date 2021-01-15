@@ -17,7 +17,7 @@ Le soluzioni di [hosting Web OVH]({ovh_www}/hosting-web/){.external} mettono a d
 ## Prerequisiti
 
 - Disporre di un piano di [hosting Web OVH]({ovh_www}/hosting-web/){.external}
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web`{.action}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web Cloud`{.action}
 
 ## Procedura
 

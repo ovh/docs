@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Správa bezpečnostních skupin v rozhraní Horizon'
 excerpt: 'Zjistěte, jak vytvářet a mazat bezpečnostní skupiny v rozhraní Horizon'
 slug: sprava-bezpecnostnich-skupin-horizon

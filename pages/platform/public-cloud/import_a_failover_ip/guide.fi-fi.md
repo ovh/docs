@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Tuo Failover IP
 excerpt: Tuo Failover IP
 slug: tuo_failover_ip

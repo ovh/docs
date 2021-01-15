@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Nastaveni sluzby SSL Gateway
 slug: nastaveni-ssl-gateway
 legacy_guide_number: 2370

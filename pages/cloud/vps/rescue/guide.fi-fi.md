@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Rescue-tilan aktivointi yksityisellä virtuaalipalvelimella
 slug: rescue
 excerpt: Tässä ohjeessa kerrotaan, kuinka VPS käynnistetään Rescue-tilassa.

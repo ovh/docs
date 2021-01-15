@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: VMware Update Manager naudojimas
 excerpt: ''
 slug: vmware_update_manager_naudojimas

@@ -2,7 +2,7 @@
 title: 'Optimisation des performances de votre site'
 slug: optimisation-performances-site
 legacy_guide_number: 1396
-excerpt: 'Vous trouverez dans ce guide differents conseils concernant l''analyse des lenteurs sur votre site web, ainsi que des pistes d''amelioration.'
+excerpt: "Vous trouverez dans ce guide differents conseils concernant l'analyse des lenteurs sur votre site web, ainsi que des pistes d'amelioration."
 section: 'Optimiser son site'
 ---
 
@@ -64,7 +64,7 @@ Certaines variables du serveur sont modifiées par l’utilisation de PHP-FPM :
 
 |Variable|sans PHP-FPM|avec PHP-FPM|
 | ------------- |:-------------:| -----:|
-|max_execution_time|120 s|300 s|
+|max_execution_time|120 s|165 s|
 |max_input_vars|2 000|16 000|
 |memory_limit|128 Mo|512 Mo|
 

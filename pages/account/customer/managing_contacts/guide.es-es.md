@@ -103,6 +103,15 @@ Si solo uno de los contactos valida la solicitud de cambio, aparecerá un mensaj
 
 Una vez que los dos contactos hayan validado la solicitud, el cambio se hará efectivo en minutos. Los dos contactos recibirán un mensaje de correo electrónico informándole de que la solicitud de cambio se ha realizado correctamente.
 
+### Caso particular de un propietario de dominio
+
+Al contratar un servicio de OVHcloud, ha establecido un propietario para este. Si el propietario no tiene acceso a la(s) cuenta(s) de OVHcloud asociadas al servicio que quiere recuperar, podrá ceder la propiedad de un dominio a un tercero o recuperar la administración del dominio mediante los siguientes procedimientos:
+
+[Cambiar el propietario de un servicio](https://www.ovh.com/cgi-bin/es/procedure/procedureChangeOwner.cgi)
+
+[Cambiar los contactos administrativo, de facturación y técnico de un dominio](https://www.ovh.com/fr/cgi-bin/es/procedure/procedureChangeContacts.cgi)
+
+El seguimiento de cada procedimiento se efectúa por e-mail y será necesaria una verificación de identidad. A lo largo de cada procedimiento recibirá instrucciones detalladas.
 
 ## Más información
 

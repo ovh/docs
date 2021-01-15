@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Kirjautuminen Horizon-käyttöliittymään
 slug: konfiguroi_yhteys_horizon-kayttoliittymaan
 legacy_guide_number: 1773

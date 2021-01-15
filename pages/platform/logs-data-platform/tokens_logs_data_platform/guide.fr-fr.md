@@ -192,7 +192,7 @@ For example to issue a search against the Graylog API with the token obtained ab
 $ curl -u kujg9g227qv0123mav3s0q4pra4psqsi5leka6j7lc62qdef58q:token -XGET "https://<your_cluster>.logs.ovh.com/api/search/universal/relative?query=*&range=300&filter=streams:a123aebc12345623aafd"
 ```
 
-Note that you have to replace the stream value in the filter parameter by the Graylog Id of your stream. The Graylog id can be found in the URL of your stram search page in Graylog. 
+Note that you have to replace the stream value in the filter parameter by the Graylog Id of your stream. The Graylog id can be found in the URL of your stream search page in Graylog. 
 This URL has this form: 
 
 ```

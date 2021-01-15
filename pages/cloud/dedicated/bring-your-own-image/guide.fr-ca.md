@@ -16,7 +16,7 @@ Grâce à la technologie Bring Your Own Image, il vous est désormais possible 
 ## Prérequis
 
 - Posséder un [serveur dédié OVHcloud](https://www.ovh.com/ca/fr/serveurs_dedies/).
-- Avoir généré les [credentials pour utiliser l'APIv6](../api/api-premiers-pas/).
+- Avoir généré les [credentials pour utiliser l'APIv6](../../api/api-premiers-pas/).
 
 > [!warning]
 >

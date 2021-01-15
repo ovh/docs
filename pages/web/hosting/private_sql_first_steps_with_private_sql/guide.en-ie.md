@@ -21,6 +21,16 @@ With the Private SQL service, you can get an SQL instance that works hand-in-han
 
 ## Instructions
 
+### Private SQL server activation included with your Web Hosting plan
+
+If your hosting plan includes the Private SQL option, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. In the `Web Cloud`{.action} section, click `Web Hosting`{.action} in the left-hand column.
+
+In the `General information` tab, in the `Configuration` box, click the `...`{.action} button to the right of **Private** database. Then click `Enable`{.action} to start the activation process.
+
+![General information](images/privatesql00-SQLactivation.png){.thumbnail}
+
+To complete the activation, follow the instructions to determine the type and version of your Private SQL server. It will then be accessible from the left column in `Database`{.action}.
+
 ### View general information on the instance
 
 In the services bar on the left-hand side of your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Databases`{.action} section, then to the SQL instance concerned. Click on the `General information`{.action} tab.

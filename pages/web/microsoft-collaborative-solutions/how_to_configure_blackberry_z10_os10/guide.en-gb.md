@@ -2,7 +2,7 @@
 title: How to configure on BlackBerry Z10 (OS 10)
 excerpt: ''
 slug: how_to_configure_on_blackberry_z10_os_10
-section: Email Clients
+section: Exchange-compatible smartphone and tablet configuration
 ---
 
 

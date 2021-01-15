@@ -6,7 +6,7 @@ section: 'Backup options'
 order: 2
 ---
 
-**Last updated 20th July 2020**
+**Last updated 22th September 2020**
 
 
 ## Objective
@@ -28,7 +28,7 @@ Before applying backup options, we recommend to consult the [product pages and F
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), navigate to the "Server" section, and select your server from the left-hand sidebar under `VPS`{.action}.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), navigate to the "Bare Metal Cloud" section, and select your server from the left-hand sidebar under `VPS`{.action}.
 
 ### Step 1: Subscribing to the Automated backups option
 
@@ -102,6 +102,72 @@ Next, create a directory for this partition and define it as the mountpoint:
 
 You can now switch to this folder and access your backup data.
 
+### Best practice for using auto-backups
+
+The Automated Backup functionality is based on VPS snapshots. We recommend to follow the steps below to prevent any issues before using this option.
+
+#### Configuring the QEMU agent on a VPS
+
+Snapshots are instantaneous images of your running system ("live snapshot"). To ensure the availability of your system when the snapshot is created, the QEMU agent is used to prepare the filesystem for the process.
+
+The required *qemu-guest-agent* is not installed by default on most distributions. Moreover, licensing restrictions may prevent OVHcloud from including it in the available OS images. Therefore, it is best practice to verify and install the agent in case it is not activated on your VPS. Connect to your VPS via SSH and follow the instructions below, according to your operating system.
+
+##### **Debian-based distributions (Debian, Ubuntu)**
+
+Use the following command to check whether the system is properly set up for snapshots:
+
+```
+$ file /dev/virtio-ports/org.qemu.guest_agent.0
+/dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
+```
+If the output is different ("No such file or directory"), install the latest package:
+
+```
+$ sudo apt-get update
+$ sudo apt-get install qemu-guest-agent
+```
+
+Start the service to ensure it is running:
+
+```
+$ sudo service qemu-guest-agent start
+```
+
+##### **Redhat-based distributions (Centos, Fedora)**
+
+Use the following command to check whether the system is properly set up for snapshots:
+
+```
+$ file /dev/virtio-ports/org.qemu.guest_agent.0
+/dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
+```
+
+If the output is different ("No such file or directory"), install and enable the agent:
+
+```
+$ sudo yum install qemu-guest-agent
+$ sudo chkconfig qemu-guest-agent on
+```
+
+Start the agent and verify that it is running:
+
+```
+$ sudo service qemu-guest-agent start
+$ sudo service qemu-guest-agent status
+```
+
+##### **Windows**
+
+You can install the agent via MSI file, available from the Fedora project website: <https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-qemu-ga/>
+
+Verify that the service is running by using this powershell command:
+
+```
+PS C:\Users\Administrator> Get-Service QEMU-GA
+Status   Name               DisplayName
+------   ----               -----------
+Running  QEMU-GA            QEMU Guest Agent
+```
 
 ## Go further
 

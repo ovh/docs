@@ -2,7 +2,7 @@
 title: 'Configuring IPV6 on a VPS server'
 slug: configuring-ipv6
 excerpt: 'Learn how to configure IPv6 on your OVHcloud VPS server'
-section: 'Network Management'
+section: 'Network management'
 order: 1
 ---
 
@@ -24,7 +24,7 @@ IPv6 is the latest version of the *Internet Protocol* (IP). Each OVHcloud VPS se
 - You need to have an [OVHcloud VPS server]({ovh_www}/vps/){.external}.
 - You need to be connected via SSH to your VPS (root access).
 - You need to have basic network knowledge.
-- You need to have access to the `Server`{.action} section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- You need to have access to the `Bare Metal Cloud`{.action} section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## Instructions
 
@@ -47,7 +47,7 @@ The first step is to access the IPv6 address and the IPv6 gateway assigned to yo
 
 #### Via the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and open the `Server`{.action} section. Click `VPS`{.action} in the services bar on the left-hand side, then choose the VPS server concerned. Make sure you are on the `Home`{.action} tab.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and open the `Bare Metal Cloud`{.action} section. Click `VPS`{.action} in the services bar on the left-hand side, then choose the VPS server concerned. Make sure you are on the `Home`{.action} tab.
 
 The IPv6 address and the IPv6 gateway assigned to your server will appear in the `IP` section. Retrieve these and continue to step 2, "[Apply IPv6 Configuration](./#step-2-apply-the-ipv6-configuration_1){.external}".
 

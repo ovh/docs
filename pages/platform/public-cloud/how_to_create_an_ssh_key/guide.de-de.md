@@ -2,11 +2,11 @@
 title: 'SSH-Schlüssel erstellen'
 slug: create-ssh-keys
 excerpt: 'Erfahren Sie hier, wie Sie einen SSH-Schlüssel erstellen, um sich bei Ihrer Instanz anzumelden'
-section: Sicherheit
-order: 1
+section: Erste Schritte
+order: 3
 ---
 
-**Letzte Aktualisierung am 14.11.2019**
+**Letzte Aktualisierung am 21.12.2020**
 
 ## Ziel
 
@@ -31,7 +31,7 @@ Beachten Sie bitte, dass SSH-Schlüssel bei Instanzen, auf denen das Windows-Bet
 Öffnen Sie zuerst die Terminal-App (Befehlszeile) und führen Sie dann den folgenden Befehl aus, um einen 4096-Bit-SSH-Schlüssel zu generieren:
 
 ```sh
-# ssh-keygen -b 4096
+# ssh-keygen -t rsa -b 4096
 ```
 
 Der Befehl gibt das folgende Ergebnis aus und fordert Sie auf, den neu erstellten Schlüssel zu speichern:

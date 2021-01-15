@@ -38,9 +38,9 @@ order: 5
 
 > [!primary]
 >
-> Nel nostro esempio abbiamo utilizzato come nome del server "pro**X**.mail.ovh.net", dove "X" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
+> Nel nostro esempio abbiamo utilizzato come nome del server "pro**?**.mail.ovh.net", dove "?" dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
 >
-> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web`{.action}, selezionando `Email Pro`{.action} nella colonna a sinistra. Il nome del server è visibile nel riquadro Connessione della scheda `Informazioni generali`{.action}.
+> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action} nella colonna a sinistra. Il nome del server è visibile nel riquadro Connessione della scheda `Informazioni generali`{.action}.
 > 
 
 Sulla schermata Home del tuo dispositivo clicca sull’applicazione `Gmail`{.action}. L’aggiunta di un account si può effettuare in due modi diversi:
@@ -63,7 +63,7 @@ Imposta i parametri del server in entrata.
 |---|---| 
 |Nome utente (server posta in uscita)|Inserisci l’indirizzo email completo.|  
 |Password|Digita la password associata all’account.|
-|Server|Inserisci il server 'pro**X**.mail.ovh.net'.|
+|Server|Inserisci il server 'pro**?**.mail.ovh.net'.|
 
 Clicca su `Avanti`{.action} e inserisci le impostazioni del server in uscita. 
 
@@ -72,7 +72,7 @@ Clicca su `Avanti`{.action} e inserisci le impostazioni del server in uscita.
 |Richiedere una connessione |Assicurati che il pulsante sia selezionato.|
 |Nome utente (server posta in uscita)|Inserisci l’indirizzo email completo.|  
 |Password|Digita la password associata all’account.|
-|Server SMTP|Inserisci il server 'pro**X**.mail.ovh.net'.|
+|Server SMTP|Inserisci il server 'pro**?**.mail.ovh.net'.|
 
 Clicca su `Avanti`{.action}. Se le informazioni inserite sono corrette, l’accesso all’account andrà a buon fine.
 
@@ -86,8 +86,8 @@ Se devi inserire manualmente dei campi tecnici nelle preferenze del tuo account,
 
 |Tipo di server |Nome del server|Tipo di sicurezza|Porta|
 |---|---|---|---|
-|In entrata|pro**X**.mail.ovh.net|SSL/TLS|993|
-|In uscita|pro**X**.mail.ovh.net|STARTTLS|587|
+|In entrata|pro**?**.mail.ovh.net|SSL/TLS|993|
+|In uscita|pro**?**.mail.ovh.net|STARTTLS|587|
 
 ### Step 2: utilizza il tuo account
 

@@ -5,7 +5,7 @@ excerpt: 'Apprenez à utiliser le mode bridge pour configurer l’accès à Inte
 section: 'Réseau & IP'
 ---
 
-**Dernière mise à jour le 07/06/2019**
+**Dernière mise à jour le 21/12/2020**
 
 ## Objectif
 
@@ -17,32 +17,32 @@ La mise en réseau en mode bridge peut être utilisée pour configurer vos machi
 
 ## Prérequis
 
-* Posséder un serveur dédié avec un hyperviseur installé ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, par exemple).
-* Bénéficier d'au moins une adresse [IP fail-over](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml) connectée au serveur.
-* Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Posséder un serveur dédié avec un hyperviseur installé ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, par exemple).
+- Bénéficier d'au moins une adresse [IP fail-over](https://www.ovhcloud.com/fr/bare-metal/ip/) connectée au serveur.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 
 Les étapes de base sont toujours les mêmes, indépendamment des systèmes utilisés :
-* création d'une adresse MAC virtuelle pour une adresse IP de basculement ;
-* régler l'adresse MAC de la machine virtuelle (VM) sur cette nouvelle adresse ;
-* configurer l'adresse IP, le masque réseau, la passerelle et la route vers la passerelle à l'intérieur de la machine virtuelle.
+- création d'une adresse MAC virtuelle pour une adresse IP de basculement ;
+- régler l'adresse MAC de la machine virtuelle (VM) sur cette nouvelle adresse ;
+- configurer l'adresse IP, le masque réseau, la passerelle et la route vers la passerelle à l'intérieur de la machine virtuelle.
 
 Pour cet exemple, nous utiliserons les valeurs suivantes dans nos exemples de code. Celles-ci devront être remplacées par vos propres valeurs :
 
-* « SERVER_IP » : l’adresse IP principale de votre serveur ;
-* « FAILOVER_IP » : votre adresse IP fail-over ;
-* « GATEWAY_IP » : l’adresse de votre passerelle par défaut.
+- « SERVER_IP » : l’adresse IP principale de votre serveur ;
+- « FAILOVER_IP » : votre adresse IP fail-over ;
+- « GATEWAY_IP » : l’adresse de votre passerelle par défaut.
 
 ### Assigner une adresse MAC virtuelle
 
-Connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} et cliquez sur le menu `Dédié`{.action}. Cliquez ensuite sur le menu `IP`{.action} dans la barre de services à gauche, puis recherchez votre adresse IP fail-over dans le tableau.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} et cliquez sur le menu `Bare Metal Cloud`{.action}. Cliquez ensuite sur le menu `IP`{.action} dans la barre de services à gauche, puis recherchez votre adresse IP fail-over dans le tableau.
 
-![Failover IP](images/virtual_mac_01.png){.thumbnail}
+![Failover IP](images/virtual_mac_01_2020_1.png){.thumbnail}
 
 Cliquez sur les `...`{.action}, puis cliquez sur `Ajouter une adresse MAC virtuelle`{.action}.
 
-![Ajouter une MAC virtuelle (1)](images/virtual_mac_02.png){.thumbnail}
+![Ajouter une MAC virtuelle (1)](images/virtual_mac_02_2020.png){.thumbnail}
 
 Sélectionnez « OVH » dans la liste déroulante « Type », tapez un nom dans le champ « Nom de la machine virtuelle », puis cliquez sur `Valider`{.action}.
 
@@ -52,21 +52,23 @@ Sélectionnez « OVH » dans la liste déroulante « Type », tapez un nom dan
 
 Pour configurer vos machines virtuelles pour l'accès à Internet, vous devez connaître la passerelle de votre machine hôte, c’est-à-dire, votre serveur dédié. L'adresse de la passerelle est constituée des trois premiers octets de l'adresse IP principale de votre serveur, le dernier octet étant de 254. Par exemple, si l’adresse IP principale de votre serveur est :
 
-* 123.456.789.012
+- 169.254.010.020
 
 Votre adresse de passerelle sera alors :
 
-* 123.456.789.254
+- 169.254.010.254
 
 ### Préparer l'hôte
 
 > [!primary]
 >
-Pour tous les systèmes d'exploitation et distributions, vous devez configurer votre machine virtuelle avec l'adresse MAC virtuelle créée dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Pour tous les systèmes d'exploitation et distributions, vous devez configurer votre machine virtuelle avec l'adresse MAC virtuelle créée dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 >
 
 #### Proxmox
+
 Après avoir créé la machine virtuelle et lorsque celle-ci est encore éteinte :
+
  1. Sélectionnez la machine virtuelle ;
  2. Ouvrez la section « Matériel » ;
  3. Sélectionnez `Périphérique réseau`{.action} ;
@@ -75,6 +77,7 @@ Après avoir créé la machine virtuelle et lorsque celle-ci est encore éteinte
 ![naviguer jusqu'au périphérique réseau](images/proxmox_01.png){.thumbnail}
 
 Ajoutez ensuite l'adresse MAC que vous avez créée précédemment.
+
 ![ouvrir un périphérique réseau](images/proxmox_02.png){.thumbnail}
 
 
@@ -93,10 +96,12 @@ Vous pouvez maintenant démarrer votre machine virtuelle et passer aux étapes s
 
 ### Configurer les machines virtuelles
 
-#### Debian 8
+#### Debian
 
 Connectez-vous à l'interface système (ou *shell*) de votre machine virtuelle. Une fois connecté, ouvrez le fichier de configuration réseau de la machine virtuelle, situé dans `/etc/network/interfaces`.
 Modifiez le fichier pour qu'il reflète la configuration ci-dessous. N'oubliez pas de remplacer nos variables par vos propres valeurs :
+
+- Distributions anciennes :
 
 ```
 auto lo eth0
@@ -110,11 +115,28 @@ iface eth0 inet static
     pre-down route del GATEWAY_IP dev eth0
     pre-down route del default gw GATEWAY_IP
 ```
+
+- Distributions récentes :
+
+```
+auto lo eth0
+iface lo inet loopback
+iface eth0 inet static
+    address FAILOVER_IP
+    netmask 255.255.255.255
+    broadcast FAILOVER_IP
+    post-up ip route add GATEWAY_IP dev eth0
+    post-up ip route add default via GATEWAY_IP
+    pre-down ip route del GATEWAY_IP dev eth0
+    pre-down ip route del default via GATEWAY_IP
+```
+
 Remplacez également `eth0` si votre système utilise des noms d'interface réseau prévisibles. Vous pouvez trouver les noms d'interface réseau à l'aide de la commande suivante :
 
 ```sh
 ls /sys/class/net
 ```
+
 Enregistrez et fermez le fichier, puis redémarrez la machine virtuelle.
 
 #### Systèmes d'exploitation Red Hat et basés sur Red Hat (CentOS 6, Scientific Linux, ClearOS, etc.)
@@ -176,62 +198,20 @@ Sauvegardez et fermez le fichier.
 Ouvrez ensuite le fichier de routage de la machine virtuelle, qui se trouve dans `/etc/sysconfig/network-scripts/route-(nom-de l’interface)`. Modifiez le fichier pour qu'il reflète la configuration ci-dessous. N'oubliez pas de remplacer nos variables par vos propres valeurs :
 
 ```bash
-GATEWAY_IP - 255.255.255.255.255.255 (nom-interface)
+GATEWAY_IP - 169.254.010.254 (nom-interface)
 NETWORK_GW_VM - 255.255.255.0 (insérez le nom de l'interface)
 default GATEWAY_IP
 ```
+
 Enregistrez et fermez le fichier.
 
 Ensuite, ouvrez le fichier de routage de la machine virtuelle. Celui-ci se trouve dans `/etc/sysconfig/network/resolv.conf`.
 
 ```bash
-nameserver 213.186.33.33.99
+nameserver 213.186.33.99
 ```
 
 Après avoir enregistré et fermé le fichier, redémarrez votre réseau ou votre machine virtuelle.
-
-#### OpenSUSE
-
-> [!primary]
-> 
-> Pour OpenSUSE, le nom de la carte réseau varie en fonction des options d'installation. Vous devrez vérifier le nom de l'adaptateur et l'utiliser pour configurer votre machine virtuelle. Vous pouvez trouver les noms d'interface réseau avec la commande `ls /sys/class/net`.
-> 
-
-Ouvrez un terminal sur votre machine virtuelle. Une fois connecté, ouvrez le fichier de configuration réseau de la machine virtuelle. Celui-ci se trouve dans `/etc/sysconfig/network-scripts/ifcfg-(nom de l'interface)`. Si le fichier n'existe pas, vous devrez le créer. Modifiez le fichier pour qu'il reflète la configuration ci-dessous :
-
-```bash
-DEVICE=(interface-name)
-BOOTPROTO=static
-ONBOOT=yes
-ARP=yes
-USERCTL=no
-IPV6INIT=no
-TYPE=Ethernet
-STARTMODE=auto
-IPADDR=FAILOVER_IP
-NETMASK=255.255.255.255
-GATEWAY=GATEWAY_IP
-HWADDR=MY:VI:RT:UA:LM:AC
-```
-
-Enregistrez et fermez le fichier.
-
-Ensuite, ouvrez le fichier de routage de la machine virtuelle. Celui-ci se trouve dans `/etc/sysconfig/network-scripts/route-(nom-de l’interface)`. Si le fichier n'existe pas, vous devrez le créer. Modifiez le fichier pour qu'il reflète la configuration ci-dessous :
-
-```bash
-GATEWAY_IP - 255.255.255.255.255.255 (nom-interface)
-NETWORK_GW_VM - 255.255.255.0 (insérez le nom de l'interface)
-default GATEWAY_IP
-```
-
-Ensuite, ouvrez le fichier de routage de la machine virtuelle, qui se trouve dans `/etc/sysconfig/network/resolv.conf`. Si le fichier n'existe pas, vous devrez le créer. Modifiez le fichier pour qu'il reflète la configuration ci-dessous :
-
-```bash
-nameserver 213.186.33.99 # OVH DNS Server
-```
-
-Enregistrez et fermez le fichier, puis redémarrez la machine virtuelle.
-
 
 #### FreeBSD
 
@@ -247,7 +227,7 @@ route_net2="default GATEWAY_IP"
 Enregistrez et fermez le fichier. Ensuite, éditez le fichier `/etc/resolv.conf`. Créez-le si nécessaire.
 
 ```sh
-nameserver 213.186.33.33.99
+nameserver 213.186.33.99
 ```
 
 Enregistrez et fermez le fichier, puis redémarrez la machine virtuelle.
@@ -348,8 +328,8 @@ ip addr add FAILOVER_IP/32 dev test-bridge
 
 Remplacez « MAC_ADDRESS » par l'adresse MAC virtuelle générée dans le panneau de configuration et « FAILOVER_IP » par l'IP fail-over réel.
 
-Ensuite, il vous suffit d'effectuer un ping sur votre IP fail-over depuis l'extérieur. Si cela fonctionne, cela signifie probablement qu'il y a une erreur de configuration sur la machine virtuelle ou sur l'hôte qui empêche l'IP fail-over de fonctionner en mode normal. Si, au contraire, l'IP ne fonctionne toujours pas, veuillez ouvrir un ticket à l'équipe d'assistance via votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} pour une enquête complémentaire.
+Ensuite, il vous suffit d'effectuer un ping sur votre IP fail-over depuis l'extérieur. Si cela fonctionne, cela signifie probablement qu'il y a une erreur de configuration sur la machine virtuelle ou sur l'hôte qui empêche l'IP fail-over de fonctionner en mode normal. Si, au contraire, l'IP ne fonctionne toujours pas, veuillez ouvrir un ticket à l'équipe d'assistance via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} pour une enquête complémentaire.
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

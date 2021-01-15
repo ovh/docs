@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVF Windows ja SQL Server -mallipohjan käyttöönotto'
 slug: ovh-mallipohjan-kayttoonotto
 excerpt: 'Katso, kuinka Windows- ja SQL Server -mallipohja otetaan käyttöön'

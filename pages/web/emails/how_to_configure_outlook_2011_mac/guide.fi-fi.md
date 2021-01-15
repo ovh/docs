@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellit ja sähköpostit: Outlook 2011 -konfigurointiohje OS X:lle'
 excerpt: Outlook 2011 & Mac OS X
 slug: webhotellit_ja_sahkopostit_outlook_2011_-konfigurointiohje_os_xlle
@@ -39,7 +40,7 @@ Täytä seuraavat kentät:
 
 Email Address: koko sähköpostiosoite
 
-Password:[hallintapaneelin kautta](https://www.ovh.com/managerv3/) määrittelemäsi sähköpostilaatikon salasana.
+Password:[hallintapaneelin kautta](https://www.ovh.com/auth/?action=gotomanager) määrittelemäsi sähköpostilaatikon salasana.
 
 Username: koko sähköpostiosoite.
 
@@ -115,7 +116,7 @@ Tässä ovat sähköpostilaatikon POP-tilin asetukset.
 POP-tilin konfigurointi SSL-suojaus aktivoituna tai deaktivoituna: 
 
 Sähköpostiosoite: sähköpostiosoite kokonaisuudessaan.
-Salasana: salasana, joka on määritelty [hallintapaneelissa](https://www.ovh.com/managerv3/).
+Salasana: salasana, joka on määritelty [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager).
 Käyttäjätunnus:jaettu sähköpostiosoite kokonaisuudessaan.
 Saapuvan postin palvelin: saapuvien sähköpostiviestien palvelin: SSL0.OVH.NET
 Saapuvan postin palvelimen portti: saapuvien sähköpostiviestien palvelimen portti: 995 tai 110
@@ -142,7 +143,7 @@ Tässä ovat sähköpostilaatikon IMAP-tilin asetukset.
 IMAP-tilin konfigurointi SSL-suojaus aktivoituna tai deaktivoituna: 
 
 Sähköpostiosoite: sähköpostiosoite kokonaisuudessaan.
-Salasana: salasana, joka on määritelty [hallintapaneelissa](https://www.ovh.com/managerv3/).
+Salasana: salasana, joka on määritelty [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager).
 Käyttäjätunnus: sähköpostiosoite kokonaisuudessaan.
 Saapuvan postin palvelin: saapuvien sähköpostiviestien palvelin: SSL0.OVH.NET
 Saapuvan postin palvelimen portti: saapuvien sähköpostiviestien palvelimen portti: 993 tai 143

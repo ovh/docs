@@ -1,7 +1,7 @@
 ---
 title: 'Configuring your Exchange account in Thunderbird for Windows'
 slug: exchange-configuration-thunderbird
-section: 'Email Clients'
+section: Email clients
 excerpt: 'Find out how to add an Exchange account on Thunderbird'
 ---
 
@@ -58,7 +58,7 @@ Click `Manual configuration`{.action} to follow the installation steps.
 >
 > In our example, we use the server comment: e.g. **X**.mail.ovh.net.
 > 
-> You can find your server in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, in the `Web`{.action} section, then `Microsoft`{.action}
+> You can find your server in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, in the `Web Cloud`{.action} section, then `Microsoft`{.action}
 >  in the left-hand column. Select `Exchange`{.action}, then your platform. The server is visible in the **Connection** box in the `General Information`{.action} tab.
 > 
 

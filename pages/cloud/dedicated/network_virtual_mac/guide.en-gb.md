@@ -2,7 +2,7 @@
 title: Assigning a Virtual MAC to a Failover IP
 slug: network-virtual-mac
 excerpt: This guide will show you how to create a virtual MAC address and assign it to a failover IP address.
-section: Network Management
+section: Network management
 ---
 
 **Last updated 21st June 2018**
@@ -26,7 +26,7 @@ OVH allows you to associate a virtual MAC address with an IP address, so that yo
 
 To assign a virtual MAC address to a failover IP, you first need to connect to your OVH Control panel.
 
-Once connected, click the `Dedicated`{.action} menu and then click the `IP`{.action} section on the left side of the page.
+Once connected, click the `Bare Metal Cloud`{.action} menu and then click the `IP`{.action} section on the left side of the page.
 
 ![IPFO](images/virtual_mac_01.png){.thumbnail}
 

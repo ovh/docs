@@ -2,7 +2,7 @@
 title: 'Configuring the vRack on your dedicated servers'
 slug: configuring-vrack-on-dedicated-servers
 excerpt: 'Help on how to configure the vRack on two or more dedicated servers'
-section: 'Network Management'
+section: 'vRack'
 ---
 
 **Last updated 21st June 2018**

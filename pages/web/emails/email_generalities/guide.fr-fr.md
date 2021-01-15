@@ -1,5 +1,5 @@
 ---
-title: 'Premiers pas avec l''offre MX Plan'
+title: "Premiers pas avec l'offre MX Plan"
 slug: generalites-sur-les-emails-mutualises
 excerpt: 'Découvrez comment bien débuter avec votre offre MX Plan'
 section: 'Premiers pas'
@@ -17,7 +17,7 @@ Vous venez d'acquérir une solution MX Plan. Celle-ci vous permet de bénéficie
 ## Prérequis
 
 - Posséder une offre MX Plan. Celle-ci est disponible via : une offre d’[hébergement web]({ovh_www}/hebergement-web/){.external}, l'[hébergement gratuit Start 10M]({ovh_www}/domaines/offre_hebergement_start10m.xml){.external} ou l'offre MX Plan commandée séparément.
-- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Web`{.action}.
+- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Web Cloud`{.action}.
 
 ## En pratique
 

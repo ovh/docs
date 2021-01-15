@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhosting: handleiding om de prestaties van uw website te optimaliseren'
 excerpt: 'Webhosting: handleiding om de prestaties van uw website te optimaliseren'
 id: '1396'
@@ -130,7 +131,7 @@ Een handleiding is beschikbaar over het gebruik van PHP-FPM:
 Sommige server variabelen worden gewijzigd door het gebruik van PHP-FPM:
 
 |Variabel|zonder PHP-FPM|met PHP-FPM|
-|max_execution_time|120s|300s|
+|max_execution_time|120s|165s|
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 

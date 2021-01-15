@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Dedikoidun palvelimen käytön aloitus'
 slug: dedikoidun-palvelimen-kayton-aloitus
 excerpt: 'Katso, kuinka dedikoidun palvelimen käyttö aloitetaan'

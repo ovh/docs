@@ -2,6 +2,7 @@
 title: Erneuerung einer Instanz
 excerpt: Erneuerung einer Instanz in Horizon
 slug: erneuerung_einer_instanz
+section: 'Horizon'
 legacy_guide_number: g1779
 ---
 

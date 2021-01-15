@@ -1,12 +1,12 @@
 ---
-title: 'Aktywacja i zarządzanie usługą Sharepoint'
-excerpt: 'Dowiedz się, jak zamówić i skonfigurować usługę SharePoint'
-slug: aktywacja_uslugi_sharepoint_ovh_i_zarzadzanie_nia
-section: Sharepoint
-legacy_guide_number: g2249
+title: Aktywacja i zarządzanie usługą SharePoint OVHcloud
+slug: aktywacja-kont-email-zawartych-w-hostingu
+excerpt: Dowiedz się, jak zamówić i skonfigurować usługę SharePoint
+section: Pierwsze kroki
+order: 3
 ---
 
-**Ostatnia aktualizacja z dnia 15-04-2020**
+**Ostatnia aktualizacja z dnia 11-08-2020**
 
 ## Wprowadzenie
 
@@ -107,6 +107,23 @@ W obu rodzajach usługi SharePoint dostępny jest przycisk `Przywróć uprawnien
 
 ![sharepoint](images/order-manage-sharepoint-09.png){.thumbnail}
 
+#### **Edycja plików Office 365 online**
+
+Pliki Office 365, takie jak plik *.docx* lub *.xls* można edytować bezpośrednio online.
+
+Potrzebna jest do tego ważna licencja Office 365 i potwierdzenie tego faktu w Panelu klienta OVHcloud.
+
+Przejdź do zakładki `Użytkownicy` na Twojej platformie i kliknij `...`{.action} po prawej stronie konta, a następnie kliknij `Dodaj licencję Office`{.action}.
+
+![sharepoint](images/order-manage-sharepoint-10.png){.thumbnail}
+
+Po potwierdzeniu, że posiadasz licencję Office 365, kliknij przycisk `validate`{.action}.
+
+![sharepoint](images/order-manage-sharepoint-11.png){.thumbnail}
+
+Teraz możesz już edytować pliki Office 365 bezpośrednio w interfejsie WWW Twojego sharepointa.
+
 ## Sprawdź również
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en>.
+

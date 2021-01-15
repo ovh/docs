@@ -3,7 +3,7 @@ title: 'Créer une interface modem manuellement'
 keywords: Interface
 description: 'Créer une interface modem manuellement'
 slug: creer-une-interface-modem-manuellement
-excerpt: 'Par défaut l''ajout d''une interface modem se fait automatiquement par la découverte du DHCP du modem. Avec ce guide, vous pourrez créer une interface manuellement sans devoir activer/désactiver le DHCP sur votre modem.'
+excerpt: "Par défaut l'ajout d'une interface modem se fait automatiquement par la découverte du DHCP du modem. Avec ce guide, vous pourrez créer une interface manuellement sans devoir activer/désactiver le DHCP sur votre modem."
 section: 'Configurations techniques complexes'
 ---
 

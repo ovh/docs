@@ -2,7 +2,7 @@
 title: Mise en oeuvre de Zerto Virtual Replication pour votre PRA
 slug: zerto-virtual-replication-vmware-vsphere-drp
 excerpt: Découvrez comment mettre en oeuvre Zerto Virtual Replication pour votre Plan de Reprise d'Activité entre deux offres Private Cloud.
-section: Services et options OVH
+section: Services et options OVHcloud
 ---
 
 **Dernière mise à jour le 30/06/2020**
@@ -51,7 +51,7 @@ Il permet de regrouper logiquement un groupe de VM correspondant à un besoin m�
 
 #### Depuis l'espace client OVHcloud
 
-Dans votre espace client OVHcloud, rendez-vous dans la partie `Server` -> `Private Cloud` -> sélectionnez votre plateforme Private-Cloud primaire -> sélectionnez 
+Dans votre espace client OVHcloud, rendez-vous dans la partie `Hosted Private Cloud` -> `Private Cloud` -> sélectionnez votre plateforme Private-Cloud primaire -> sélectionnez 
 le datacenter voulu -> cliquez sur l'onglet `Disaster Recovery Plan (DRP)`{.action}.
 
 ![zerto ovh enable](images/zerto_OvhToOvh_enable_01.png){.thumbnail}

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Exchange Diagnostiikka: Mitä tehdä virhetilanteessa?'
 excerpt: 'Exchange Diagnostiikka: Mitä tehdä virhetilanteessa?'
 slug: exchange_diagnostiikka_mita_tehda_virhetilanteessa
@@ -7,7 +8,7 @@ legacy_guide_number: g2277
 
 
 ## Diagnostiikan toteutus
-Mene hallintapaneeliin tästä linkistä: [Hallintapaneeliin](https://www.ovh.com/manager/web/login/).
+Mene hallintapaneeliin tästä linkistä: [Hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager).
 
 Kun olet kirjautunut, valitse vasemmanpuoleisesta sarakkaeesta valikko Microsoft ja sitten Echxhange-palvelu.
 

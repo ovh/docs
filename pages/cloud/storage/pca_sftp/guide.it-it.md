@@ -21,7 +21,7 @@ Nel nostro esempio, il client SFTP utilizzato è WinSCP. Ne esistono molti altri
 
 
 ## Identificativo OpenStack
-Per generare il tuo login e password OpenStack, consulta questa [guida](https://www.ovh.it/g1773.crea_un_utente_per_accedere_a_horizon){.external}.
+Per generare il tuo login e password OpenStack, consulta questa [guida](https://www.ovh.it/g1773.crea_un_utente_per_accedere_a_horizon).
 
 
 ## TenantName
@@ -75,4 +75,4 @@ In questa sezione disattiveremo due opzioni di WinSCP:
 
 
 ## Recupero dei dati
-Per recuperare i dati, per prima cosa è necessario sbloccare l’oggetto effettuando una richiesta di tipo GET. Se questo comando non viene eseguito, il client SFTP restituisce un messaggio di errore durante il tentativo di download del file. Per maggiori informazioni sulla procedura da seguire per sbloccare il tuo oggetto, consulta questa [guida](../guide.it-it.md){.ref}.
+Per recuperare i dati, per prima cosa è necessario sbloccare l’oggetto effettuando una richiesta di tipo GET. Se questo comando non viene eseguito, il client SFTP restituisce un messaggio di errore durante il tentativo di download del file. Per maggiori informazioni sulla procedura da seguire per sbloccare il tuo oggetto, consulta questa [guida](../../).

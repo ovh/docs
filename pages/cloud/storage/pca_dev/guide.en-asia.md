@@ -7,14 +7,14 @@ section: Public Cloud Archive
 
 
 ## What is OVH Public Cloud Archive?
-[OVH Public Cloud Archive](https://www.ovh.com/us/public-cloud/storage/cloud-archive/){.external} is an extremely low-cost storage solution destined for long-term data archiving.
+[OVH Public Cloud Archive](https://www.ovhcloud.com/asia/public-cloud/cloud-archive/){.external} is an extremely low-cost storage solution destined for long-term data archiving.
 
 OVH Public Cloud Archive is backed by [Openstack Swift](https://swift.openstack.org){.external}, an open source, highly available, distributed, eventually consistent object store. It gives developers access to an highly scalable, reliable, inexpensive data storage infrastructure that OVH uses to run some of its own internal solutions.
 
 OVH Public Cloud Archive is designed for seldom consulted data: the less frequently an archive unsealing operation is requested, the smaller the retrieval latency.  This makes OVH Public Cloud Archive a tremendous solution when looking for durable, inexpensive storage, without the burden of waiting multiple hours to retrieve important data when you actually need it.
 
 If your data is subject to frequent access consider using [OVH Public Cloud
-Storage](https://www.ovh.com/us/public-cloud/storage/object-storage/){.external} instead.
+Storage](https://www.ovhcloud.com/asia/public-cloud/object-storage/){.external} instead.
 
 
 
@@ -214,7 +214,7 @@ When you upload an archive, OVH Public Cloud Archive updates the container inven
 
 In order to support the particularities of at-rest storage, OVH has slighty modified the generation of this inventory compared to regular Openstack Swift infrastructures with the aim to include additionnal information related to its particular storage process. This assures you have essential informations about your archive, such as its unsealing state and the retrieval delay before it is ready for download.
 
-See greater details about this [request](https://docs.ovh.com/au/en/storage/pca/api/){.external}.
+See greater details about this [request](https://docs.ovh.com/asia/en/storage/pca/api/).
 
 **Syntax**
 
@@ -357,7 +357,7 @@ OVH Public Cloud Archive stores data so that cost is optimal at the expense of s
 
 Archive unseal requests are identical to archive download requests. Only the response sent by OVH Public Cloud Archive differs and is a particularity of the underlying Openstack Swift infrastructure that OVH runs. Once an unsealing request is received it cannot be cancelled. Further unsealing requests will have no other effect than polling the operation ETA.
 
-See further explanations about this [request](../pca/api){.ref}.
+See further explanations about this [request](https://docs.ovh.com/asia/en/storage/pca/api/).
 
 **Syntax**
 

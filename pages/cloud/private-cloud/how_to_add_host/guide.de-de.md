@@ -2,6 +2,7 @@
 title: Wie füge ich einen Host hinzu?
 excerpt: ''
 slug: wie_fuge_ich_einen_host_hinzu
+section: Ressourcen-Management
 legacy_guide_number: g605
 ---
 

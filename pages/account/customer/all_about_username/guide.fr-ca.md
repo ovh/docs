@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment créer votre identifiant et gérer vos informations
 Section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 10/04/2020**
+**Dernière mise à jour le 30/09/2020**
 
 ## Objectif
 
@@ -21,6 +21,7 @@ Il est aussi appelé NIC-handle.
 
 **Apprenez à créer votre identifiant client, à vous authentifier sur votre compte, mais aussi à gérer vos informations personnelles et les accès à votre compte.**
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Comment créer un identifiant client ?
 
@@ -118,6 +119,14 @@ Si vous désirez renseigner une nouvelle adresse e-mail principale de contact, v
 Renseignez alors le code dans la rubrique intitulée « Code de validation », puis validez.
 
 ![identifiant client](images/nichandle08.png){.thumbnail}
+
+### Modification du type de compte
+
+Cliquez sur la mention `type de compte` lorsque vous éditez votre profil. Un menu déroulant vous permet de définir le type de compte correspondant à votre situation.
+
+![identifiant client](images/nichandle09.png){.thumbnail}
+
+Une fois vos informations complétées, cliquez sur le bouton `Valider`{.action} .
 
 ### Exercer vos droits sur vos données personnelles
 

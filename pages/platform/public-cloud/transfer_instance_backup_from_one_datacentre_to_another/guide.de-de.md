@@ -1,7 +1,7 @@
 ---
 title: 'Backup einer Instanz von einem Rechenzentrum in ein anderes übertragen'
 slug: instanz-backup-in-anderes-rechenzentrum-uebertragen
-section: 'Über APIs und Befehlszeile'
+section: 'OpenStack'
 excerpt: 'Hier erfahren Sie, wie Sie das Backup einer Instanz transferieren und dabei Zustand und Status der Instanz beibehalten.'
 ---
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Inloggen op een Public Cloud-instance
 slug: eerste-login
 legacy_guide_number: 1787

@@ -1,7 +1,7 @@
 ---
 title: 'Configurer son adresse e-mail sur Mail de macOS'
 slug: guide-configuration-mail-de-mac-el-capitan
-excerpt: 'Apprenez à configurer l'adresse e-mail de votre hébergement sur Mail de macOS El Capitan, Sierra et High Sierra'
+excerpt: "Apprenez à configurer l'adresse e-mail de votre hébergement sur Mail de macOS El Capitan, Sierra et High Sierra"
 section: 'Configuration sur ordinateur'
 order: 3
 ---
@@ -100,8 +100,6 @@ OVHcloud propose une application web permettant d'accéder à votre adresse e-ma
 
 ## Aller plus loin
 
-[Configurer son compte E-mail Pro sur Mail de macOS](../../emails-pro/configurer-email-pro-mail-macos/){.external}.
-
-[Configurer son compte Exchange sur Mail de macOS](../../microsoft-collaborative-solutions/exchange-configuration-automatique-sous-mail-mac/){.external}.
+[Configurer son compte Exchange sur Mail de macOS](../../microsoft-collaborative-solutions/exchange-configuration-mail-macos/)
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.

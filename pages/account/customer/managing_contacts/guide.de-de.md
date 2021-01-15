@@ -103,6 +103,16 @@ Wenn nur ein Kontakt die Änderung bestätigt hat, wird eine Meldung angezeigt, 
 
 Wenn beide Kontakte die Änderungsanfrage bestätigt haben, wird die Änderung wenige Minuten später wirksam. Beide Kontakte erhalten dann eine E-Mail zur Bestätigung, dass die Anfrage ausgeführt wurde.
 
+### Sonderfall bei Domaininhabern
+
+Bei der Bestellung eines OVHcloud-Dienstes haben Sie einen Inhaber dafür festgelegt. Der Inhaber hat die Möglichkeit, die Inhaberrechte einer Domain an Dritte zu übertragen oder die Verwaltung der Domain einzufordern, wenn der Zugang zu dem OVHcloud Kunden-Account, der mit dem Dienst verbunden ist, nicht besteht (es kann sich um mehrere Accounts handeln).
+
+[Vorgang zur Änderung des Inhabers einer Dienstleistung.](https://www.ovh.com/cgi-bin/de/procedure/procedureChangeOwner.cgi)
+
+[Die Kontakte Ihrer Domain ändern](https://www.ovh.com/fr/cgi-bin/de/procedure/procedureChangeContacts.cgi)
+
+Die Weiterverfolgung jedes Vorgangs erfolgt per E-Mail, und es ist eine Identitätsüberprüfung erforderlich. Die detaillierten Anweisungen werden Ihnen während jedes Vorgangs mitgeteilt.
+
 
 ## Weiterführende Informationen
 

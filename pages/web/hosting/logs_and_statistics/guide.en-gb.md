@@ -1,124 +1,94 @@
 ---
-title: 'Accessing a website’s logs and statistics'
-excerpt: Find out how to use your website's statistics
+title: 'Accessing a website’s logs and statistics on a Web Hosting'
+excerpt: Find out how to review statistics and logs of your websites
 slug: shared_view_my_websites_logs_and_statistics
 legacy_guide_number: g1344
 section: 'Website optimisation'
 ---
 
+**Last updated 23rd September 2020**
 
-## Log in to your customer account
-Log in to your [Manager](https://www.ovh.com/manager/web/) with your username (nic-handle) and password.
+## Objective
 
-Once logged on, select the "hosting" platform that you want to view the statistics for in the left-hand menu.
+Web server logs and website statistics are included in your Web Hosting plan, easily accessible from your OVHcloud Control Panel.
 
-![](images/img_2827.jpg){.thumbnail}
-In the general information tab click on the link: Website visit statistics.
+**This guide provides an overview of the available logs and statistics.**
 
-![](images/img_2826.jpg){.thumbnail}
+## Requirements
 
+- an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
-## Access to the Statistics & Logs page
-You can access your website statistics by going to:
+## Instructions
 
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned.
 
-- https://logs.ovh.net/nomdevotredomaine
+Next, navigate to the `Statistics and logs`{.action} tab by selecting it in the `More +`{.action} submenu.
 
+![hosting](images/statistics01.png){.thumbnail}
 
-You log on with your OVH username and password. 
+In this tab, you can choose between two links: one to display the **website visit statistics** and the other to access the raw **logs** of your hosting.
 
-Statistics are simple to use and view. With a few clicks, you can analyse your site without having to provide additional statistical calculations.
+|Web Hosting using the "Urchin 6" statistics|Web Hosting using the <br> "OVHcloud Web Statistics"|
+|----------|:-------------:|
+| ![hosting](images/statistics02.png){.thumbnail} | ![hosting](images/statistics02bis.png){.thumbnail} |
 
-Click on the link automatically generated in the Manager to access statistics and logs.  
+### Website visit statistics
 
-You need to identify yourself with your customer ID (Nic-handle) and your password.
+#### OVHcloud Web Statistics
 
+This tool helps you to track and control the traffic of websites hosted on your Web Hosting plan, by visually compiling statistics of page visits and audience measurement.
 
-## Statistical area
-Once you are logged on to the statistics area, this page will appear (see capture opposite).
+![hosting](images/OWStats01.gif){.thumbnail}
 
-Two options are available:
+The dashboard of OVHcloud Web Statistics is presented in 6 sections in the left panel.
 
+- Dashboard: visualises the website traffic on your Web Hosting plan.
+- Browsers: shows a ranking of the most used internet browsers to view your sites.
+- Geolocalization: groups site visitors according to their location.
+- Requests: displays the ranking of the most visited pages on your sites.
+- Robots: visualises the automated attempts to connect to your sites.
+- Status: displays statistics of the failures and successes encountered, based on the HTTP codes returned.
+- FAQ: opens the section dedicated to frequently asked questions.
 
-- Go to your website statistics via urchin v6. (see green box).
+The `Period selection` box allows you to select a specific time frame.
 
-- Consult the raw logs of your website in real time or on an earlier period (see orange box).
+#### Urchin v6 (legacy)
 
+If access to the OVHcloud Web Statistics is not available on your hosting, you will have the legacy tool Urchin v6 instead.
 
+![hosting](images/1490.png){.thumbnail}
 
-![](images/img_2832.jpg){.thumbnail}
+Urchin provides information about:
 
+- the website traffic
+- the number of visitors
+- the number of pages viewed
+- the weighting of the viewed pages
+- the number of *http* requests
+- the average connection times to your entire site or a particular page
+- referrer URLs, to see where visitors come from
+- the search engines used to find the site
+- the keywords used in web searches leading to the site
+- the most visited pages on the site
 
-## Urchin v6
-These statistics provide information on :
+### Logs
 
- The traffic on your site 
+You can view the raw logs of your site with a delay of about 5 minutes.
 
+![hosting](images/logs01.png){.thumbnail}
 
-- The number of visitors
-- The number of pages viewed,
-- The "size" of pages viewed,
-- The number of http requests.
+Different types of logs are available:
 
- This data can be displayed by hour, day, week, month or year, to help you better understand the evolution of your website. 
-
- Pages 
-
-- The average time it takes to connect to your entire website or to a specific page
-
- Follow your SEO 
-
-- How did your visitors find you?
-- What search engines did they use to find your website? 
-- What keywords did they use in their search?
-
-
-Manage your website pages better, find out what pages your visitors are most interested in
-
-
-- Which pages on your website have been the most visited?
-- For how long?
-- Which pages contain errors and what are the types of errors encountered?
-
- Monitoring 
-
-- Which pages on your website are viewed first by your visitors?
-- Which pages are viewed last on your site?
-- What is the average time spent per page?
-- What is the number of pages viewed per visit?
-
-
-
-![](images/img_1490.jpg){.thumbnail}
+- **web**: Here you can find the various logs of your site visits, as well as the outgoing actions from your site. For example, this allows you to detect malicious access attempts.
+- **ftp**: The different FTP connections will be stored in these logs.
+- **error**: These logs contain the errors generated by your site.
+- **cgi**: These logs collect the various calls to the cgi.bin scripts that were made.
+- **out**: These are the external calls of your hosting.
+- **ssh**: These logs indicate the different connections made with the SSH protocol.
+- **cron**: The results of executing your [scheduled tasks](../hosting_automated_taskscron) are logged here.
 
 
-## Raw logs
-You can view your website logs virtually and practically live. Logs of your site are available in under 15 minutes, allowing you to check that your website is working correctly or to calculate your website logs in almost real time.
+## Go further
 
-Different types of logs are available :
-
-
-- Web Logs: here you can find different website consultation logs, as well as the different actions performed from your website. This could help you identify hacking attempts.
-
-
--FTP Logs: different FTP connections will be recorded and stored in the raw logs .
-
--Error logs error: different errors generated by your site.
-
--cgi logs: different calls to cgi.bin scripts that have been made.
-
-
-- Logs out: hosting statistics on various external calls made .
-
-- Ssh Logs: These logs show the different connections made with the SSH protocol.
-
-- Cron logs: the results of planned task execution
-
-
-
-![](images/img_2828.jpg){.thumbnail}
-
-
-## Is it possible to change the language of the statistical software Urchin?
-You can choose the language used by Urchin on its interface: click Preferences and then from the menu, choose the language and confirm (click on 'submit'). Urchin will remember your preferences.
-
+Join our community of users on <https://community.ovh.com/en/>.

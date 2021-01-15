@@ -16,7 +16,7 @@ La solución E-mail Pro le permite disfrutar de direcciones de correo electróni
 
 ## Requisitos
 
-- Tener una cuenta [E-mail Pro]({ovh_www}/emails/email-pro/){.external}.
+- Tener una cuenta [E-mail Pro](https://www.ovh.es/emails/email-pro/){.external}.
 - Haber recibido el mensaje de correo electrónico de confirmación de la instalación de la solución E-mail Pro.
 - Tener un nombre de dominio.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
@@ -49,13 +49,13 @@ A continuación, haga clic en `Siguiente`{.action}.
 
 Se mostrará un mensaje con la información relativa a la configuración de un modo.
 
-- **En cuanto a los nombres de dominio no gestionados por OVHcloud**, estos se configurarán por defecto en modo no autónomo.
+- **En cuanto a los nombres de dominio no gestionados por OVHcloud**, estos se configurarán por defecto en modo no autoritario.
 - **En cuanto a los dominios gestionados por OVHcloud**, tendrá que elegir entre dos modos.
 
 |Modo|Descripción|
 |---|---|
-|Autónomo|Es conveniente si solo utiliza la solución E-mail Pro con su nombre de dominio. No permite utilizar otra solución de correo conjuntamente con E-mail Pro.|
-|No autónomo|Es conveniente si utiliza con su nombre de dominio la solución E-mail Pro conjuntamente con otra solución de correo electrónico.| 
+|Autoritario|Es conveniente si solo utiliza la solución E-mail Pro con su nombre de dominio. No permite utilizar otra solución de correo conjuntamente con E-mail Pro.|
+|No autoritario|Es conveniente si utiliza con su nombre de dominio la solución E-mail Pro conjuntamente con otra solución de correo electrónico.| 
 
 > [!primary]
 >
@@ -124,14 +124,14 @@ Para configurar su dirección de correo electrónico en un cliente de correo o e
 
 |Tipo de servidor|Nombre del servidor|Tipo de seguridad|Puerto|
 |---|---|---|---|
-|Entrante|pro**X**.mail.ovh.net|SSL/TLS|993|
-|Saliente|pro**X**.mail.ovh.net|STARTTLS|587|
+|Entrante|pro**?**.mail.ovh.net|SSL/TLS|993|
+|Saliente|pro**?**.mail.ovh.net|STARTTLS|587|
 
 > [!primary]
 >
-> En nuestro ejemplo, utilizamos el nombre de servidor pro**X**.mail.ovh.net. Deberá sustituir la «X» por el número que designa el servidor del servicio E-mail Pro.
+> En nuestro ejemplo, utilizamos el nombre de servidor pro**?**.mail.ovh.net. Deberá sustituir la «?» por el número que designa el servidor del servicio E-mail Pro.
 > 
-> Encontrará este número en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en el apartado `Web`{.action} de la sección `E-mail Pro`{.action},
+> Encontrará este número en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en el apartado `Web Cloud`{.action} de la sección `E-mail Pro`{.action},
 >  en la columna de la izquierda. El nombre del servidor puede verse en el recuadro **« Conexión »** de la pestaña `Información General`{.action}.
 > 
 

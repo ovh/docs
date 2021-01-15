@@ -2,6 +2,8 @@
 title: Austausch eines defekten Hosts
 excerpt: Wie kann ich einen ausgefallenen Host zurückgeben, um einen neuen Host zu erhalten?
 slug: austausch_eines_defekten_hosts
+section: Wartung und Monitoring
+hidden: true
 ---
 
 Beim Ausfall eines Hosts erhalten Sie einen Spare-Host ("Ersatz"). Mehr Informationen dazu finden Sie auch in der url=GUIDE#860]Spare Host Hilfe[/url]. Dieser Spare-Host ist kein Austausch-Host: er erlaubt es Ihrer Infrastruktur, zu einer stabilen Situation zurückzukehren, und muss anschließend zurückgegeben werden.

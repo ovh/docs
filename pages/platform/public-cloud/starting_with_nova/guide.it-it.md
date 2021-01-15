@@ -132,7 +132,7 @@ admin@server-1:~$ nova flavor-list
 ## Visualizza la lista delle immagini disponibili
 Per recuperare l'ID dell'immagine che verrà utilizzata per la tua istanza, esegui questo comando:
 
-[code]admin@server-1:~$ nova image-list
+[code]admin@server-1:~$ glance image-list
 +--------------------------------------+------------------------+--------+--------+
 |ID|Name|Status|Server|
 

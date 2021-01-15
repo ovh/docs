@@ -29,11 +29,11 @@ Per sbloccare un archivio è necessario inviare una richiesta di unsealing e ver
 
 L’unsealing può essere effettuato tramite:
 
-- [Spazio Cliente OVH](../pca/unlock)
-- [API OpenStack](../dev/guide.it-it.md){.ref}
+- [Spazio Cliente OVH](../../)
+- [API OpenStack](../../)
 - gateway basati su protocolli SSH
 
 Lo stato di elaborazione dell’operazione può essere verificato tramite:
 
-- [Spazio Cliente OVH](../pca/unlock)
-- [API OpenStack](../dev/guide.it-it.md){.ref}
+- [Spazio Cliente OVH](../../)
+- [API OpenStack](../../)

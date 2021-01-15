@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Verkkotunnuksen ZoneCheck
 excerpt: Tässä ohjeessa kerrotaan kuinka tehdään ZoneCheck-toimenpide verkkotunnukselle
 slug: verkkotunnuksen_zonecheck

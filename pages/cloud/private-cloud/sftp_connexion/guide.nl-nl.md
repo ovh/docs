@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: SFTP-verbinding
 excerpt: ''
 slug: sftp-verbinding

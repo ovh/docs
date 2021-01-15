@@ -22,6 +22,16 @@ Esta guía explica cómo empezar con un SQL Privado.
 
 ## Procedimiento
 
+### Activación de su servidor SQL Privado incluido con su plan de hosting
+
+Si el plan de hosting incluye la opción SQL Privado, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. En la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} en la columna izquierda.
+
+En la pestaña `Información general`, en el cuadro `Configuración`, haga clic en el botón `...`{.action} situado a la derecha de la **Base de datos privada**. Por último, haga clic en `Activar`{.action} para iniciar el proceso de activación.
+
+![Información general](images/privatesql00-SQLactivation.png){.thumbnail}
+
+Para finalizar, siga las indicaciones que se ofrecen a continuación para determinar el tipo y la versión de su servidor SQL privado. A continuación, podrá acceder a ella desde la columna de la izquierda en la `Base de Datos`{.action}.
+
 ### Ver la información general de la instancia
 
 En la columna izquierda del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Bases de datos`{.action} y seleccione el servicio de bases de datos correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
@@ -113,7 +123,7 @@ En la nueva página, seleccione el permiso correspondiente haciendo clic. Para u
 
 Esta operación solo debe realizarse si desea importar una copia de seguridad de una base de datos preexistente (necesario para, por ejemplo, migrar un sitio web a OVHcloud o migrar las bases de datos a un SQL Privado). Si no tiene que importar ninguna base de datos, puede pasar a la siguiente operación.
 
-Hay varias maneras de importar una base de datos. OVHcloud ofrece una herramienta que permite hacerlo desde el área de cliente. A continuación vamos a explicar el funcionamiento de esa herramienta. Si desea utilizar otro método de importación, consulte la guía [Todo sobre el SQL Privado](../hosting/todo_sobre_el_sql_privado/){.external}.
+Hay varias maneras de importar una base de datos. OVHcloud ofrece una herramienta que permite hacerlo desde el área de cliente. A continuación vamos a explicar el funcionamiento de esa herramienta. Si desea utilizar otro método de importación, consulte la guía [Todo sobre el SQL Privado](https://docs.ovh.com/es/hosting/todo_sobre_el_sql_privado/).
 
 #### 1. Acceder a la importación de una base de datos
 
@@ -169,6 +179,6 @@ Ya puede finalizar la instalación de su sitio web o la migración de su base de
 
 ## Más información
 
-[Todo sobre el SQL Privado](../todo_sobre_el_sql_privado/){.external}
+[Todo sobre el SQL Privado](https://docs.ovh.com/es/hosting/todo_sobre_el_sql_privado//){.external}
 
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/).

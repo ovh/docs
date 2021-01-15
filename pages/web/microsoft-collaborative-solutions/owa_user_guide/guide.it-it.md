@@ -164,8 +164,9 @@ In OWA, puoi impostare una risposta automatica sul tuo indirizzo email per non l
 ![useowa](images/owa_exchange_step20.png){.thumbnail}
 
 Nella finestra che appare, seleziona l’opzione “Invia risposte automatiche”. Quindi puoi impostare il risponditore automatico in modo che rispetti diversi criteri:
-\- inviare email con risposte automatiche per un intervallo di tempo fissato, oppure regolarmente, fino a che non viene disabilitato manualmente
-\- definire quali mittenti riceveranno email di risposta automatica (solo mittenti interni, oppure includendo mittenti esterni)
+
+- inviare email con risposte automatiche per un intervallo di tempo fissato, oppure regolarmente, fino a che non viene disabilitato manualmente
+- definire quali mittenti riceveranno email di risposta automatica (solo mittenti interni, oppure includendo mittenti esterni)
 
 A questo punto, compila con le informazioni richieste a seconda dell’azione che desideri venga compiuta. Al termine clicca su `OK`{.action}.
 

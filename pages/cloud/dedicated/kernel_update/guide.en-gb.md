@@ -144,7 +144,7 @@ reboot
 
 ### Rollback
 
-In the event that you make a mistake or receive an error, it's possible to rollback your changes. To do so, the server must be placed in [Rescue mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}. This will require you to mount your system using the following commands:
+In the event that you make a mistake or receive an error, it's possible to rollback your changes. To do so, the server must be placed in [Rescue mode](../ovh-rescue/). This will require you to mount your system using the following commands:
 
 ```sh
 mount /dev/md1 /mnt
@@ -210,10 +210,10 @@ uname -r
 
 ## Go further
 
-[Rescue Mode](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}.
+[Rescue Mode](../ovh-rescue/)
 
-[Information on Meltdown and Spectre  vulnerabilities](https://docs.ovh.com/fr/dedicated/information-about-meltdown-spectre-vulnerability-fixes/){.external}.
+[Information on Meltdown and Spectre vulnerabilities](https://docs.ovh.com/fr/dedicated/information-about-meltdown-spectre-vulnerability-fixes/){.external}
 
-[Update following Meltdown and Spectrum vulnerabilities by operating system](https://docs.ovh.com/fr/dedicated/meltdown-spectre-kernel-update-per-operating-system/){.external}.
+[Update following Meltdown and Spectrum vulnerabilities by operating system](https://docs.ovh.com/fr/dedicated/meltdown-spectre-kernel-update-per-operating-system/){.external}
 
 Join our user community on  <https://community.ovh.com/en/>

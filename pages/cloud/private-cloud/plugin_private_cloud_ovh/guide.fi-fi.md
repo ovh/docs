@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH:n Private Cloud -liitännäisen käyttö'
 slug: ovh-private-cloud-liitannainen
 excerpt: 'Katso, kuinka OVH:n Private Cloud -liitännäistä käytetään'

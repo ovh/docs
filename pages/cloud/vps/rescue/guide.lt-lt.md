@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Activating Rescue Mode on VPS
 slug: rescue
 excerpt: This guide will show you how to reboot your VPS in rescue mode.

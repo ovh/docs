@@ -1,132 +1,120 @@
 ---
-title: 'Hosting condiviso: il protocollo SSH'
-excerpt: 'Hosting condiviso: il protocollo SSH'
+title: 'Accedere in SSH a un hosting Web'
+excerpt: 'Come utilizzare il protocollo SSH per accedere al tuo hosting Web OVHcloud'
 id: '1962'
 slug: hosting_condiviso_il_protocollo_ssh
+section: FTP e SSH
 legacy_guide_number: g1962
 ---
 
 
-## Che cos'è SSH e come utilizzarlo?
-Utilizzare SSH sul tuo hosting è possibile se hai attivato un'offerta Pro (per le [vecchie offerte](https://www.ovh.it/hosting-web/vecchie_offerte_hosting.xml), a partire dagli hosting della gamma Plan).
+**Ultimo aggiornamento: 04/08/2020**
 
-ATTENZIONE: con le vecchie offerte, l'accesso è possibile solo utilizzando l'account FTP principale, quindi gli utenti FTP aggiuntivi non possono accedere in SSH.
+## Obiettivo
 
-SSH ti permette di accedere al tuo hosting e modificarne i file (come in FTP).
-Per maggiori informazioni su questo protocollo, [clicca qui](https://it.wikipedia.org/wiki/Secure_shell).
+Le soluzioni di hosting Web OVHcloud mettono a disposizione uno spazio di storage in cui è possibile pubblicare i file del tuo sito Internet o delle tue applicazioni. L’accesso a questo spazio è possibile tramite un utente FTP o SSH e la relativa password associata.
 
+**Questa guida ti mostra come utilizzare il protocollo SSH per accedere al tuo hosting Web OVHcloud.**
 
-## Requisiti
-L'opzione SSH è disponibile su:
+## Prerequisiti
 
-- hosting a partire dall'[offerta Pro](https://www.ovh.it/hosting-web/hosting-web-pro.xml)
+- Disporre di una soluzione [hosting Web OVHcloud](https://www.ovh.it/hosting-web/) con accesso SSH
+- Disporre delle informazioni necessarie per l’accesso in SSH allo spazio di storage
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), sezione `Web Cloud`{.action}
 
-- un client SSH
+## Procedura
 
-- la porta 22 aperta sul tuo firewall e sul tuo router
+### Step 1: verifica che l’accesso SSH sia attivo
 
+Per prima cosa, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) nella sezione `Web Cloud`{.action}, quindi clicca su `hosting`{.action} nella barra delle applicazioni a sinistra. Seleziona il nome dell’hosting interessato e clicca sulla scheda `FTP - SSH`{.action}. Visualizzi le informazioni associate allo spazio di storage. 
 
+Nella tabella, individua la colonna “SSH” e verifica che l’utente SSH (o “Login SSH”) interessato, disponga di un accesso SSH attivo. In caso contrario visualizzi la voce ”Disattivato”.
 
+![usessh](images/use-ssh-step1.png){.thumbnail}
 
-## Attiva/disattiva l'SSH su un utente
-Per gestire i tuoi login SSH, accedi al tuo Spazio Cliente OVH. Seleziona il nome del tuo hosting nella colonna di sinistra e clicca su FTP - SSH.
+Se l’accesso SSH non è attivo, clicca sul pulsante `(...)`{.action} in corrispondenza dell’account interessato e seleziona `Modifica`{.action}. Quindi, nella nuova finestra, attiva l’accesso SSH e poi conferma la modifica. Se non hai la possibilità di attivarlo, assicurati che la tua [soluzione di hosting Web OVHcloud](https://www.ovh.it/hosting-web/) disponga di un accesso SSH.
 
-Creando nuovi utenti FTP, viene attivata automaticamente anche la connessione SSH.
+### Step 2: recupera i dati necessari a effettuare l’accesso
 
-![](images/img_3945.jpg){.thumbnail}
-Per disattivarla, clicca sull'icona a forma di ingranaggio in corrispondenza del login e poi su Modifica.
+Per accedere in SSH allo spazio di storage sono necessarie le seguenti informazioni, disponibili nella scheda `FTP - SSH`{.action}.
 
-Questa operazione diventa effettiva in pochi minuti.
+|Elemento|Dove trovarlo?|
+|---|---|
+|Utente SSH attivo|Puoi visualizzarlo nella colonna “Login SSH” della tabella. Ricorda: questo utente deve [disporre di un accesso SSH attivo](./#step-1-verifica-che-laccesso-ssh-sia-attivo).|
+|Password dell’utente SSH|Se hai dimenticato la password, è possibile modificarla cliccando sul pulsante `(...)`{.action}, e poi su `Modifica la password`{.action}.|
+|Indirizzo del server SSH|Individua la voce “Accesso SSH al cluster”. L’indirizzo del server SSH comincia dopo “ssh://” e termina prima dei due punti  (”:”).|
+|Porta di connessione al server SSH|Individua la voce “Accesso SSH al cluster”. Il numero della porta è indicato dopo i due punti (“:”).|
 
-![](images/img_3946.jpg){.thumbnail}
+Ad esempio :`ssh://ssh.cluster023.hosting.ovh.net:22/` Quindi “ssh.cluster023.hosting.ovh.net” come indirizzo del server SSH e “22” per la porta di connessione SSH.
 
+![usessh](images/use-ssh-step2.png){.thumbnail}
 
-## Prompt dei comandi
-Linux:
+### Step 3: accedi in SSH allo spazio di storage
 
-- Con KDE: apri il menu principale (di default in basso a sinistra del tuo desktop), scrivi "konsole" nella barra di ricerca e clicca sul primo risultato.
+Per connetterti in SSH, utilizza un terminale per interagire con lo spazio di storage direttamente da riga di comando. 
 
-Mac:
-- L'applicazione "Terminale" è preinstallata. Per avviarla, clicca sull'icona Finder > Applicazioni > Utility
+Su macOS, Linux et Windows 10 questo tool è installato di default. Sugli ambienti Windows meno recenti è invece necessario installare un software come PuTTY o aggiungere la funzionalità “OpenSSH”. La procedura da seguire varia in base al sistema operativo installato e non è quindi possibile fornirne i dettagli in questa guida.
 
-Windows:
+A seconda del metodo che utilizzi, hai due possibilità per accedere:
 
+#### 3.1  Da un terminale 
 
-- Su Windows non esistono client SSH preinstallati, è necessario scaricarne uno.
+> [!warning]
+> Le nostre soluzioni condivise non dispongono dell’accesso “super utente” (o “root”) in SSH.
 
-Il più conosciuto è Putty, disponibile [qui](http://www.putty.org/).
+Una volta aperto il terminale, utilizza il comando seguente sostituendo gli elementi “sshlogin”,”sshsrver” e “connectionport” con le tue credenziali SSH. 
 
-
-## Accedi al tuo hosting in SSH
-Con Linux e Mac:
-
-- apri il tuo prompt dei comandi e inserisci:
-ssh TuoLoginFtp@TuoServerFtp
-
-
-Se hai bisogno di recuperare le tue credenziali FTP, consulta [questa guida](https://www.ovh.it/g1909.hosting_web_gestisci_le_tue_password#le_password_associate_ai_tuoi_servizi_di_web_hosting_ovh_connessione_ftp).
-
-![](images/img_3093.jpg){.thumbnail}
-Con Windows:
-
-- ti consigliamo di consultare questa guida sull'utilizzo di [Putty](https://www.ovh.it/g1964.hosting_condiviso_utilizza_putty_su_windows).
-
-
-
-
-## Elenco dei comandi principali
-È sufficiente sostituire il termine arg con il nome della cartella o del file su cui vuoi lavorare.
-
-|Comando da inserire|Traduzione (in inglese)|Descrizione|
-|pwd|print working directory|Mostra la cartella corrente|
-|cd arg|change directory|Cambia la cartella corrente; arg corrisponde alla nuova cartella. Il comando cd senza aggiungere arg ti posiziona nella directory home|
-|cd ..|change directory to ..|Cambia la cartella corrente con quella del livello superiore|
-|ls arg|list|Se arg è una cartella, ne elenca il contenuto.  Senza arg, ls elenca il contenuto della cartella corrente|
-|ll arg|long list|Mostra le informazioni dettagliate del file arg|
-|ls -a arg|list all|Se arg è una cartella , mostra tutti i file, anche quelli che iniziano per ... Le opzioni di ls possono essere associate: ls -al|
-|chmod [tipo di permesso] arg|change mode|Modifica i permessi del file arg, in base al  tipo di permesso.|
-|mkdir arg|make directory|Crea la cartella arg.|
-|rmdir arg|remove directory|Elimina la cartella arg se è vuota.|
-|rm arg|remove|Elimina arg.|
-|rm -r arg|remove recursively|Elimina arg e tutti i file che contiene.|
-|mv arg1 arg2|move|Rinomina o sposta arg1 in arg2.|
-|touch arg|touch|Se non esiste già, crea un file vuoto chiamato arg. In caso contrario, aggiorna la data dell'ultima modifica con la data corrente.|
-
-
-
-
-## Esegui uno script con una versione specifica di PHP
-Per eseguire i tuoi script via SSH utilizzando una versione specifica di PHP, è necessario utilizzare questi comandi:
-
-|Comando|Versione|
-|php.ORIG.4 (cgi)|4.4.9|
-|php.ORIG.5_2 (cgi)|5.2.17|
-|php.ORIG.5_3 (cgi-fcgi)|5.3.29|
-|/usr/local/php5.3/bin/php (cli)|5.3.29|
-|php.ORIG.5_4 (cgi-fcgi)|5.4.38|
-|/usr/local/php5.4/bin/php (cli)|5.4.38|
-|/usr/local/php5.5/bin/php (cli)|5.5.22|
-|/usr/local/php5.6/bin/php (cli)|5.6.6|
-
-
-Ad esempio, per eseguire lo script "mioScript.php" con la versione 5.3 di PHP, è necessario eseguire il comando 
-```
-php.ORIG.5_3 mioScript.php
+```ssh
+ssh sshlogin@sshserver -p connectionport
 ```
 
+Una volta eseguito il comando, il sistema chiederà di inserire la password dell’utente SSH. Una volta connesso, passa allo step successivo “[Interagire in SSH con lo spazio di storage](./#step-4-interagire-in-ssh-con-lo-spazio-di-storage_1)”.
 
-È necessario indicare anche il percorso completo dello script prima del suo nome.
-Ad esempio, se il tuo file "mioScript.php" si trova nella cartella "WWW" e vuoi eseguirlo utilizzando la versione 5.3 di PHP, utilizza il comando
+![usessh](images/use-ssh-step3.png){.thumbnail}
 
+#### 3.2 Da un client
+
+Una volta aperto il client (PuTTY ad esempio), inserisci le informazioni di connessione SSH. Questa operazione varia in base al client che utilizzi, pertanto non possiamo entrare in ulteriori dettagli in questa guida. Ti ricordiamo le informazioni da inserire:
+
+|Informazione|Descrizione|
+|---|---|
+|Server SSH|Indica l’indirizzo del server SSH recuperato [allo Step 2](./#step-2-recupera-i-dati-necessari-a-effettuare-laccesso). In base al client utilizzato, potrebbe chiamarsi “Indirizzo del server”, “Host” o “Hostname”.|
+|Porta di connessione|Inserisci la porta di connessione SSH recuperata [allo Step 2](./#step-2-recupera-i-dati-necessari-a-effettuare-laccesso).|
+|Login SSH|Inserisci il nome utente SSH In base al client utilizzato, potrebbe chiamarsi “Nome utente”, “Identificativo”, “Login” oppure “Username”.|
+|Password dell’utente SSH|Indica la password associata al login SSH.<br><br> In base al client utilizzato, potrebbe chiamarsi: “Password”.|
+
+Una volta effettuato l’accesso, passa allo step successivo.
+
+### Step 4: Interagire in SSH con lo spazio di storage 
+
+Per interagire con il tuo spazio di storage, è necessario utilizzare vari comandi, il cui significato deriva dall’inglese. Se necessario, consulta la seguente lista: Attenzione: **questa lista non è esaustiva**.
+
+|Comando|Significato in inglese|Descrizione| 
+|---|---|---|
+|pwd|Print working directory|Mostra l’attuale directory di lavoro.| 
+|cd `arg`|Change directory|Consente di sostituire la directory di lavoro con quella indicata al posto di `arg`.|
+|cd `..`|Change directory|Consente di cambiare la directory di lavoro risalendo di un livello nell’albero delle directory.|
+|cd|Change directory|Se non viene specificato nessun argomento, consente di riposizionarsi alla radice dello spazio di storage (home).|
+|ls|List|Lista del contenuto della directory di lavoro. Aggiungi attributi per modificare la visualizzazione del risultato del comando (come `ls -ulhG`).| 
+|chmod `droit` `arg`|Change mode|Cambia i permessi del file o della directory indicata come argomento `arg`.| 
+|mkdir `arg`|Make directory|Consente di creare una directory con il nome dell’argomento `arg`.| 
+|touch `arg`|Touch|Crea un file vuoto, se non esiste già, con il nome indicato come argomento `arg`.|
+|rm `arg`|Remove|Elimina il file indicato come argomento  `arg`.| 
+|rm -r `arg`|Remove|Elimina la directory indicata come argomento `arg` e il suo contenuto in modo ricorsivo.| 
+|mv `arg1` `arg2`|Move|Rinomina o sposta un elemento (indicato come `arg`) in una nuova posizione (indicato come`arg2`).| 
+
+Tramite un comando, puoi anche avviare uno script utilizzando una versione specifica di PHP. Ad esempio, per la versione di PHP 7.1, utilizza il seguente comando: Adattane gli elementi alla tua situazione personale. 
+
+```sh
+/usr/local/php7.1/bin/php myscript.php
 ```
-php.ORIG.5_3 www/mioScript.php
-oppure
-php.ORIG.5_3 /www/mioScript.php
-```
 
+A seconda della versione di PHP che vuoi utilizzare, potrebbe essere necessario modificare l’ambiente di esecuzione per motivi di compatibilità. Consulta la nostra documentazione “>.
 
+## Per saperne di più
 
+[Modificare la configurazione di un hosting Web](../modifica_lambiente_di_esecuzione_del_tuo_hosting_web/)
 
-## Impronta delle chiavi pubbliche OVH (da confermare al momento della prima connessione in SSH)
-La prima volta che ti connetti sul server ti viene chiesto di confermare la tua chiave pubblica.
+[Configurare il file .ovhconfig di un hosting Web](../configurare-file-ovhconfig/)
 
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en>.

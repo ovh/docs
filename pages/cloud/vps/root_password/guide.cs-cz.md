@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Změna hesla root na VPS
 slug: root-password
 excerpt: Zjistěte, jak upravit heslo root na svém VPS v několika krocích

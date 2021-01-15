@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhosting: FileZilla gebruikershandleiding'
 excerpt: Hier leest u hoe u FileZilla kunt gebruiken.
 id: '1380'

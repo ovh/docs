@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Kadonneen SSH-avaimen vaihtaminen
 excerpt: Kadonneen SSH-avaimen vaihtaminen
 slug: kadonneen_ssh-avaimen_vaihtaminen

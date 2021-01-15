@@ -37,7 +37,7 @@ Wenn Sie die Sicherheit Ihres Accounts erhöhen möchten, können Sie die Zwei-F
 
 Bei der ersten Einrichtung muss die Zwei-Faktor-Authentifizierung zunächst für den Exchange Dienst aktiviert werden, bevor sie für dessen Accounts aktiviert werden kann.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und klicken Sie im Bereich `Web`{.action} links in der Menüleiste auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Wählen Sie den betreffenden Exchange Dienst aus und gehen Sie dann auf den Tab `Sicherheit`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und klicken Sie im Bereich `Web Cloud`{.action} links in der Menüleiste auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Wählen Sie den betreffenden Exchange Dienst aus und gehen Sie dann auf den Tab `Sicherheit`{.action}.
 
 Klicken Sie unter „Zwei-Faktor-Authentifizierung“ auf `Aktiviert`{.action}. Zum Abschluss scrollen Sie nach unten zum Ende der Seite und klicken Sie auf `Änderungen speichern`{.action}.
 
@@ -63,7 +63,7 @@ Bei Ihren nachfolgenden Verbindungen werden Sie nur noch nach dem von Ihrer OTP-
 
 Die Zwei-Faktor-Authentifizierung Ihres Exchange Accounts kann auf drei Arten deaktiviert werden.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und klicken Sie im Bereich `Web`{.action} links in der Menüleiste auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Wählen Sie den betreffenden Exchange Dienst aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und klicken Sie im Bereich `Web Cloud`{.action} links in der Menüleiste auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Wählen Sie den betreffenden Exchange Dienst aus.
 
 Vom Tab `E-Mail-Accounts`{.action} aus, klicken Sie auf `...`{.action} rechts des Accounts, auf dem die Zwei-Faktor-Authentifizierung bereits aktiv ist.
 

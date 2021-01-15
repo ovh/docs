@@ -57,7 +57,7 @@ If you would like to edit this DNS zone, in the [OVH Control Panel](https://www.
 > If you have just created the DNS zone but the domain name doesn’t appear under the list of services in the `Domains`{.action} section, please wait a few moments, then reload the page.
 >
 
-Once it appears, make the required changes. To learn more about how to edit a DNS zone, please read our guide to [Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/hosting_how_to_edit_my_dns_zone/){.external}. Once you have modified your domain name’s OVH DNS zone, you will need to allow 4-24 hours for the changes to fully propagate and take effect.
+Once it appears, make the required changes. To learn more about how to edit a DNS zone, please read our guide to [Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}. Once you have modified your domain name’s OVH DNS zone, you will need to allow 4-24 hours for the changes to fully propagate and take effect.
 
 ### Step 3: Edit the DNS servers for a domain name.
 
@@ -69,6 +69,6 @@ Once you have the details, **edit your domain name’s DNS servers using the int
 
 ## Go further
 
-[Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/hosting_how_to_edit_my_dns_zone/){.external}.
+[Editing an OVH DNS zone](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
 Join our community of users on <https://community.ovh.com/en/>.

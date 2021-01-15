@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Objektų konteinerių sinchronizavimas
 excerpt: Objektų konteinerių sinchronizavimas
 slug: objektu_konteineriu_sinchronizavimas

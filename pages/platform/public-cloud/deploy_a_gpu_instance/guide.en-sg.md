@@ -11,11 +11,11 @@ section: 'From the OVHcloud Control Panel'
 
 GPU instances are technically similar to the instances from the 2017 range, but they also have a graphics card (Graphic Processing Unit or GPU). The technology used (*pci_passthrough*) allows the instance’s operating system to control the GPU in exactly the same way a physical machine would.
 
-The GPUs offered are the NVIDIA GeForce GTX 1060, GTX 1070 and GTX 1080Ti. 
+The GPUs offered are the NVIDIA Tesla V100. 
 
 > [!warning]
 >
-> At the moment, GPU instances are only available in the GRA3, GRA5 and BHS3 datacentres. You may have to create a new project and choose the new 2017 range. [Find out more.](../faq-how-to-understand-the-new-flavor-naming-rules-for-the-2017-range/)
+> At the moment, GPU instances are only available in the GRA3, GRA5, GRA7 and BHS3 datacentres. You may have to create a new project and choose the new 2017 range.
 > 
 
 **This guide explains how to deploy a GPU instance on Linux or Windows**

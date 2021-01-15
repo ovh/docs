@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'OVH e-mail handleiding: Outlook 2010 configuratie'
 excerpt: ''
 slug: ovh_e-mail_handleiding_outlook_2010_configuratie
@@ -156,7 +157,7 @@ Hier zijn de gegevens die gebruikt moet worden om een POP e-mailaccount te confi
 POP configuratie met beveiligde SSL geactiveerd of gedeactiveerd:
 
 E-mailadres: uw volledige e-mailadres.
-Wachtwoord: het wachtwoord zoals in uw [Manager](https://www.ovh.com/managerv3/).
+Wachtwoord: het wachtwoord zoals in uw [Manager](https://www.ovh.com/auth/?action=gotomanager).
 Gebruikersnaam: uw volledige e-mailadres.
 Inkomende server: de server voor het ontvangen van e-mails: SSL0.OVH.NET
 Inkomende server port: de port van de inkomende server: 995 of 110
@@ -183,7 +184,7 @@ Hier zijn de gegevens die gebruikt moeten worden om een IMAP e-mailaccount te co
 IMAP configuratie met SSL beveiliging geactiveerd of gedeactiveerd:
 
  E-mailadres: uw volledige e-mailadres.
-Wachtwoord: het wachtwoord zoals in [het control panel](https://www.ovh.com/managerv3/).
+Wachtwoord: het wachtwoord zoals in [het control panel](https://www.ovh.com/auth/?action=gotomanager).
 Gebruikersnaam: uw volledige e-mailadres.
 Inkomende server: de server voor het ontvangen van e-mails: SSL0.OVH.NET
 Inkomende server port: de port van de inkomende server: 993 of 143

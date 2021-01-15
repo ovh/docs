@@ -19,6 +19,11 @@ Veeam Backup & Replication is a data protection software. It offers its users a 
 - a Veeam Enterprise solution
 - Windows Server 2012 or newer
 
+> [!primary]
+>
+> Our Veeam offers are currently not compatible with the latest version (10) offered by Veeam. OVHcloud will continue to offer version 9.5 until further notice. Please take this into consideration when configuring Veeam for your services.
+>
+
 ## Instructions
 
 ### Setting up Veeam Backup & Replication
@@ -118,7 +123,7 @@ If you go back to the **Security** window, you can check that the account has be
 
 ##### **Using the OVHcloud Control Panel**
 
-In your OVHcloud Control Panel, open the `Server` section, then select your service labelled **backupserverenterprise** under `Platforms and services`{.action} in the left-hand navigation bar. On this page, click on `Activate licence`{.action} in the `Shortcuts` box.
+In your OVHcloud Control Panel, open the `Bare Metal Cloud` section, then select your service labelled **backupserverenterprise** under `Platforms and services`{.action} in the left-hand navigation bar. On this page, click on `Activate licence`{.action} in the `Shortcuts` box.
 
 ![control panel register](images/veeam001.png){.thumbnail}
 

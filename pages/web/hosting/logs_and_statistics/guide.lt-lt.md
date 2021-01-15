@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Svetainių talpinimas: Svetainės statistikos ir sisteminių įrašų peržiūra'
 excerpt: Prieiga prie jūsų interneto svetainės statistikos
 id: '1344'

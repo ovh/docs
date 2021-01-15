@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellit: Kotisivujen suorituskyvyn optimointi'
 excerpt: Ohje kotisivujen suorituskyvyn optimointiin
 id: '1396'
@@ -80,7 +81,7 @@ Ohje PHP-FPM:stä:
 Eräitä palvelinmuuttujia muutetaan PHP-FPM:ää käytettäessä:
 
 |Muuttuja|ilman PHP-FPM:ää|PHP-FPM:n kanssa|
-|max_execution_time|120 s|300 s|
+|max_execution_time|120 s|165 s|
 |max_input_vars|2000|16000|
 |memory_limit|128 M|512 M|
 

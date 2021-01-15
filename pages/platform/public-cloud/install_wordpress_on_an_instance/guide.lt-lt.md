@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Wordpress diegimas virtualioje mašinoje
 excerpt: Wordpress diegimas virtualioje mašinoje
 slug: wordpress_diegimas_virtualioje_masinoje
@@ -94,7 +95,7 @@ admin@instance:~$ sudo service httpd restart
 
 
 ## WordPress atsisiuntimas
-[Wordpress](https://lt.wordpress.org/txt-download/) svetainėje atsisiųskite naujausią versiją, pvz.:
+[Wordpress](https://wordpress.org/download/) svetainėje atsisiųskite naujausią versiją, pvz.:
 
 
 ```

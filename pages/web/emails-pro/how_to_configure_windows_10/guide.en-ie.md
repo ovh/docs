@@ -32,9 +32,9 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 > [!primary]
 >
-> In this guide, we will use as the server name: pro**X**.mail.ovh.net. You will need to replace the "X" with the actual number indicating the appropriate server for your Email Pro service.
+> In this guide, we will use as the server name: pro**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), in the `Web`{.action} section, if you select `Professional Email`{.action} in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action} in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 Once you have launched Mail on your device, you can add an account in two different ways:
@@ -56,9 +56,9 @@ Enter the information requested:
 |Password|Enter the password for your email address.|
 |User name|Enter a name that will distinguish this account from any other accounts added in your Mail application.|
 |Send your messages using this name|Enter the sender name that you wish to be displayed when sending emails from this address.|
-|Incoming email server|Enter “pro**X**.mail.ovh.net:993”.|
+|Incoming email server|Enter “pro**?**.mail.ovh.net:993”.|
 |Account type|We recommend using **IMAP4**. You can however also select **POP** (in which emails are stored locally on your Mail app) in the drop-down menu.|
-|Outgoing email server|Enter “pro**X**.mail.ovh.net:587”.|
+|Outgoing email server|Enter “pro**?**.mail.ovh.net:587”.|
 
 Make sure that the checkboxes are ticked for the following options:
 
@@ -77,8 +77,8 @@ If you need to enter any settings manually in your account preferences, the tech
 
 |Server type|Server name|SSL|Port|
 |---|---|---|---|
-|Incoming|pro**X**.mail.ovh.net|Yes|993|
-|Outgoing|pro**X**.mail.ovh.net|Yes|587|
+|Incoming|pro**?**.mail.ovh.net|Yes|993|
+|Outgoing|pro**?**.mail.ovh.net|Yes|587|
 
 ### Step 2: Use the email address
 

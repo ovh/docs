@@ -3,7 +3,7 @@ title: 'Rimuovere un server host'
 slug: rimuovere-server-host
 excerpt: 'Scopri come rimuovere un server host da un’infrastruttura Private Cloud'
 legacy_guide_number: '1442308'
-section: 'Funzionalità OVH'
+section: 'Funzionalità OVHcloud'
 ---
 
 **Ultimo aggiornamento: 24/07/2020**

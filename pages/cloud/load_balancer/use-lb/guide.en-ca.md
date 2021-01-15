@@ -12,15 +12,15 @@ The goal of this guide is to assist you when you first operate your Load Balance
 ## Requirements
 
 - Access to your customer control panel
-- Owning a [Load Balancer](https://www.ovh.com/us/solutions/load-balancer)
+- Owning a [Load Balancer](https://www.ovh.com/ca/en/solutions/load-balancer/)
 
 ## In practice
 
 ### Managing your Load Balancer from the customer control panel
 
-In order to manage your Load Balancer from the customer control panel, simply go to the `Cloud`{.action} section (1) then to the `Load Balancer`{.action} section (2) in the left-side menu. The service home page should appear:
+In order to manage your Load Balancer from the customer control panel, simply go to the `Bare Metal Cloud`{.action} section (1) then to the `Load Balancer`{.action} section (2) in the left-side menu. The service home page should appear:
 
-![Load Balancer](images/lb_main_page.png){.thumbnail}
+![Load Balancer](images/lbip-main.png){.thumbnail}
 
 On this home page, you will find the following information:
 
@@ -42,7 +42,7 @@ To add a `front-end`{.action} or some `server farms`{.action}, simply click on t
 In order to add front-ends, all you need to do is go to the `Frontends`{.action} section and click on `Add a front-end`{.action}. You will then gain access to the following menu:
 
 
-![Add front-end](images/add_frontend.png){.thumbnail}
+![Add front-end](images/iplb-add-front-end.png){.thumbnail}
 
 Details of a front-end component
 
@@ -68,11 +68,11 @@ You also have access to advanced settings:
 |HTTP header|Add an HTTP header here|
 
 
-### Managing your farms
+### Managing your server cluster
 
-In order to add a server farm, all you need to do is go to the `Server Farms`{.action} section and click on `Add a server farm`{.action}. You will gain access to the same main features as for the frontend However, advanced options will be different:
+In order to add a server cluster, all you need to do is go to the `Server clusters`{.action} section and click on `Add a server cluster`{.action}. You will gain access to the same main features as for the frontend However, advanced options will be different:
 
-![Adding a farm](images/advanced_cluster.png){.thumbnail}
+![Adding a farm](images/iplb-cluster-adv.png){.thumbnail}
 
 |Element|Function|
 |---|---|
@@ -85,8 +85,9 @@ In order to add a server farm, all you need to do is go to the `Server Farms`{.a
 
 Once your server farm has been created, you need to add servers to it. Below are the details for advanced options:
 
-![Add a server](images/add_server.png){.thumbnail}
-![Add a server](images/add_server_advanced.png){.thumbnail}
+![Add a server](images/iplb-cluster-add-server.png){.thumbnail}
+![Add a server](images/iplb-cluster-add-server-1.png){.thumbnail}
+![Add a server](images/iplb-cluster-add-server-2.png){.thumbnail}
 
 
 |Element|Function|
@@ -110,19 +111,18 @@ An SSL certificate can be added to the Load Balancer in the `SSL Certificate`{.a
 
 To order an SSL certificate, simply go to the `SSL Certificate`{.action} section, then click on `Order an SSL Certificate`{.action} and let us guide you:
 
-![Ordering an SSL Certificate](images/ordering_ssl.png){.thumbnail}
+![Ordering an SSL Certificate](images/iplb-order-ssl.png){.thumbnail}
 
 |Element|Function|
 |---|---|
-|Name|You can name your certificate if you wish; this can be very useful when you have several of them to identify them quickly|
-|Types of certificate|Free (Let's Encrypt), Comodo DV or Comodo EV (find details here: https://www.ovh.co.uk/ssl/)|
+|Types of certificate|Free (Let's Encrypt), Comodo DV or Comodo EV (find details here: https://www.ovh.com/ca/en/web-hosting/shared-ssl.xml)|
 |Fully Qualified Domain Name (FQDN)|Affected domains|
 
 #### Adding an external SSL certificate
 
 If you already have your own SSL certificate, you can add it directly:
 
-![Adding an SSL Certificate](images/external_ssl.png){.thumbnail}
+![Adding an SSL Certificate](images/iplb-add-ssl.png){.thumbnail}
 
 |Element|Function|
 |---|---|

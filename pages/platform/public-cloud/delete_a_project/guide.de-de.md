@@ -3,6 +3,7 @@ title: 'Ein Public Cloud Projekt löschen'
 excerpt: 'Erfahren Sie hier, wie Sie Ihr Public Cloud Projekt löschen'
 slug: ein_projekt_loschen
 legacy_guide_number: g2129
+section: 'Projektverwaltung'
 ---
 
 **Letzte Aktualisierung am 03.12.2019**
@@ -43,11 +44,9 @@ Mit dem Klick auf `Projekt löschen`{.action} wird eine E-Mail an Sie gesendet, 
 
 ## Weiterführende Informationen
 
-[Auf einer Public Cloud Instanz einloggen](https://docs.ovh.com/de/public-cloud/erster-login)
+[Die ersten Schritte mit Ihrer Public Cloud Instanz](../public-cloud-erste-schritte/)
 
-[Die ersten Schritte mit Ihrer Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/die_ersten_schritte_mit_ihrer_public_cloud_instanz)
-
-[Auf das Horizon-Interface zugreifen](https://docs.ovh.com/de/public-cloud/erstellung_eines_zugangs_zu_horizon)
+[Auf das Horizon-Interface zugreifen](../erstellung_eines_zugangs_zu_horizon)
 
 
 Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en).

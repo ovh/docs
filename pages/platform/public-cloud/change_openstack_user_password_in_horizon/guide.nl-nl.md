@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Wijziging van het wachtwoord van een OpenStack-gebruiker in Horizon
 excerpt: Leer hoe u een gebruikerswachtwoord in de Horizon-interface kunt wijzigen.
 slug: wijziging-wachtwoord-openstack-gebruiker

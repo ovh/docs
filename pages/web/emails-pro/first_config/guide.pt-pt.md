@@ -16,7 +16,7 @@ Adquiriu um serviço E-mail Pro, que lhe permite beneficiar de endereços de e-m
 
 ## Requisitos
 
-- Ter o serviço [E-mail Pro]({ovh_www}/emails/email-pro/){.external}.
+- Ter o serviço [E-mail Pro](https://www.ovh.pt/emails/email-pro/){.external}.
 - Ter recebido o e-mail com a confirmação da instalação do serviço E-mail Pro.
 - Dispor de um domínio.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
@@ -128,14 +128,14 @@ Se desejar associar o seu endereço de e-mail a um software de correio eletróni
 
 |Tipo de servidor|Nome do servidor|Tipo de segurança|Porta|
 |---|---|---|---|
-|De entrada|pro**X**.mail.ovh.net|SSL/TLS|993|
-|De saída|pro**X**.mail.ovh.net|STARTTLS|587|
+|De entrada|pro**?**.mail.ovh.net|SSL/TLS|993|
+|De saída|pro**?**.mail.ovh.net|STARTTLS|587|
 
 > [!primary]
 >
-> No nosso exemplo, utilizamos a referência servidor: pro**X**.mail.ovh.net. Deve substituir o «X» pelo algarismo que designa o servidor do seu serviço E-mail Pro.
+> No nosso exemplo, utilizamos a referência servidor: pro**?**.mail.ovh.net. Deve substituir o «?» pelo algarismo que designa o servidor do seu serviço E-mail Pro.
 > 
-> Encontre esse algarismo na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na rubrica `Web`{.action}, em `E-mail Pro`{.action},
+> Encontre esse algarismo na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na rubrica `Web Cloud`{.action}, em `E-mail Pro`{.action},
 >  na coluna da esquerda. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
 > 
 

@@ -29,7 +29,7 @@ In diesem Tutorial richten wir mit Ghost einen Blog auf einem Cloud Web Hosting 
 - ein [OVH Cloud Web Hosting](https://www.ovh.de/hosting/cloud-web.xml){.external}.
 - Sie haben Node.js als Runtime Engine aktiviert.
 - Sie haben die betreffende Domain als Multisite hinzugefügt und Node.js als deren Runtime Engine festgelegt.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web`{.action}.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
 ## Beschreibung
 

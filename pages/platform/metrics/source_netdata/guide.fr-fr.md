@@ -89,7 +89,7 @@ parameters:
 
 Don't forget to add your own `WRITE TOKEN`{.action} and configure `period`{.action} according to your needs.
 
-If you are applying this configuration alongside [Real Time Monitoring (RTM)](../../../cloud/dedicated/installing_rtm/), you may want to filter data sent to Metrics Data Platform sink with the netdata default metric prefix.
+If you are applying this configuration alongside [Real Time Monitoring (RTM)](../../dedicated/installer-rtm/), you may want to filter data sent to Metrics Data Platform sink with the netdata default metric prefix.
 
 ```yaml
 sinks:

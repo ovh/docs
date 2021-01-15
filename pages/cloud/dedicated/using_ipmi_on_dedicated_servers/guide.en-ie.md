@@ -5,7 +5,7 @@ excerpt: 'With the IPMI, you can log in to your server without having to use any
 section: 'Getting started'
 ---
 
-**Last updated 16th August 2018**
+**Last updated 2020/10/13**
 
 ## Objective
 
@@ -15,7 +15,7 @@ Please note that you may also see the term KVM (Keyboard Video and Mouse) used f
 
 ## Requirements
 
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 
 ## Instructions
@@ -26,9 +26,9 @@ You can access the IPMI using two different methods: the Java applet (recommende
 
 You will need to ensure that Java is installed on your desktop for the Java applet to work. If you do not have Java installed, go to the [official page](https://www.java.com/en/download/){.external} to do so.
 
-In the `IPMI`{.action} section of the OVH Control Panel, click on `From a Java applet (KVM)`{.action}:
+In the `IPMI`{.action} section of the OVHcloud Control Panel, click on `From a Java applet (KVM)`{.action}:
 
-![IPMI Java initiated](images/java_ipmi_initiate.png){.thumbnail}
+![IPMI Java initiated](images/java_ipmi_initiate_2020.png){.thumbnail}
 
 Download the file `kvm.jnlp` when you are prompted to do so, and run it:
 
@@ -42,9 +42,9 @@ You can now manage your server.
 
 ### Access via your browser, using Serial over LAN (SoL).
 
-Although we would recommend that you log in via the Java applet, you can also access the IPMI using Serial over LAN. To do so, click on `From your browser`{.action} in the `IPMI`{.action} section of the OVH Control Panel:
+Although we would recommend that you log in via the Java applet, you can also access the IPMI using Serial over LAN. To do so, click on `From your browser`{.action} in the `IPMI`{.action} section of the OVHcloud Control Panel:
 
-![IPMI SoL activation](images/sol_ipmi_activation.png){.thumbnail}
+![IPMI SoL activation](images/sol_ipmi_activation_2020.png){.thumbnail}
 
 > [!warning]
 >
@@ -55,13 +55,68 @@ Although we would recommend that you log in via the Java applet, you can also ac
 
 Your IPMI may stop responding. If you cannot access it, you can test it first by clicking on `Test the IPMI`{.action}, and checking the result of the diagnostic:
 
-![IPMI test](images/ipmi_test.png){.thumbnail}
+![IPMI test](images/ipmi_test_2020.png){.thumbnail}
 
 If everything appears to be normal, as per our example, you may be experiencing a local technical issue (internet connection, local desktop). If the IPMI encounters any issues, you can reboot it by clicking `Reboot the IPMI`{.action}.
 
-![IPMI test](images/ipmi_reboot.png){.thumbnail}
+![IPMI test](images/ipmi_reboot_2020.png){.thumbnail}
 
 It will take several minutes for the IPMI to reboot.
+
+### Installing an OS Utilizing IPMI v1.
+
+[!warning] OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
+>
+To begin, open IPMI in a Java applet as described in the section Accessing IPMI from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). Then, click **Device** from the menu bar and select **Redirect ISO** from the drop-down menu.
+>
+![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
+>
+Next, select the ISO you wish to use from your local computer's file system. Once you have selected your ISO, press the **Ctrl Alt Del** button in the top-right corner of the screen to reboot the server. Press the appropriate `F` key to access the boot options.
+
+[!warning] Note: You may need to use the soft keyboard for inputs to register in IPMI. To access this, click the **Keyboard** option from the menu bar at the top of the window. Then, select **Soft Keyboard** from the dropdown menu and click **Show**.
+
+>
+Select the **UEFI Virtual CDROM 1.00** option from the boot menu to start the server from the ISO attached previously.
+>
+![UEFI_Virt](images/UEFIVirt.jpg){.thumbnail}
+>
+Complete the steps required to install the operating system. Do not forget to remove the ISO from the **Redirect ISO** option.
+>
+
+### Installing an OS Utilizing IPMI v2
+
+[!warning] OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
+>
+To begin, open IPMI in a Java applet as described in the section Accessing IPMI from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). Then, click **Virtual Media** and select **Virtual Storage**.
+>
+![Virtual_Storage](images/virtual_storage.png){.thumbnail}
+>
+From the new screen, select **ISO File** from the **Logical Drive Type** drop-down. Next, click **Open Image** and navigate to your ISO file. Finally, click **Plug in** and **OK** to finish.
+>
+![ISO_file](images/iso_file.png){.thumbnail}
+>
+In order to be able to boot from our ISO file, we need to access the BIOS and switch our boot options. To do so, select **Power Control** and click **Set Power Reset**.
+>
+![Power_Reserver](images/power_reset.png){.thumbnail}
+
+> [!warning]
+>
+> Note: You may need to use the soft keyboard for inputs to register in IPMI. To access this, click the **Virtual Media** option from the menu bar at the top of the window. Then, select **Virtual Keyboard** from the drop-down menu.
+>
+During the bootup process, press the `DEL` key when prompted to access the BIOS. You may also press the `F11` key and navigate to the BIOS by selecting the option **Enter Setup**.
+>
+![Boot_Menu](images/boot_menu.png){.thumbnail}
+>
+In the BIOS navigate to the **Boot** tab and change the **UEFI Boot Order #1** to **UEFI USB CD/DVD:UEFI: ATEN Virtual CDROM YSOJ**.
+>
+![Bios](images/bios.png){.thumbnail}
+>
+Lastly, press the `F4` key to save your changes and restart the server.
+>
+
+## Conclusion
+
+IPMI is an important tool for an experienced server administrator. Whether you need to access the BIOS, install a custom OS, or just access your server directly from the OVHcloud Control Panel, IPMI will allow you to accomplish your most important tasks.
 
 ## Go further
 

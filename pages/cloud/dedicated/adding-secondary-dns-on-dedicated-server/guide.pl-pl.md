@@ -9,7 +9,7 @@ section: 'Poziom zaawansowany'
 
 ## Wprowadzenie
 
-Jeśli chcesz używać Twojego [serwera dedykowanego](https://www.ovh.pl/serwery_dedykowane/){.external} jako głównego serwera DNS dla Twojej domeny, możesz dodać tę domenę także do Secondary DNS dostarczanego przez OVH.
+Jeśli chcesz używać Twojego [serwera dedykowanego](https://www.ovh.pl/serwery_dedykowane/){.external} jako głównego serwera DNS dla Twojej domeny, możesz dodać tę domenę także do Secondary DNS dostarczanego przez OVHcloud.
 
 **Niniejszy przewodnik wyjaśnia, jak uruchomić Secondary DNS i dodać do niego Twoją domenę.**
 
@@ -44,7 +44,7 @@ Pojawi się komunikat dotyczący stworzenia rekordu TXT dla Twojej domeny. Wynot
 
 ### Przystąp do weryfikacji domeny
 
-Po zalogowaniu do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} kliknij menu `Web`{.action}, następnie sekcję `Domeny`{.action} w kolumnie po lewej stronie, aby wyświetlić wszystkie domeny, którymi zarządzasz:
+Po zalogowaniu do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} kliknij menu `Web Cloud`{.action}, następnie sekcję `Domeny`{.action} w kolumnie po lewej stronie, aby wyświetlić wszystkie domeny, którymi zarządzasz:
 
 ![Weryfikacja domeny](images/domain-verification-01.png){.thumbnail}
 
@@ -90,6 +90,6 @@ Na koniec kliknij `Dodaj`{.action}, aby potwierdzić dodanie rekordu:
 
 ## Sprawdź również
 
-[Modyfikacja strefy DNS OVH](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}
+[Modyfikacja strefy DNS OVHcloud](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

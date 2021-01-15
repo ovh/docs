@@ -41,9 +41,9 @@ Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.co
 
 ![hosting zmiana wersji php](images/change-hosting-configuration-step1.png){.thumbnail}
 
-Jeśli przycisk `Zmień konfigurację`{.action} jest wyszarzony, możliwe jest, że trwa weryfikacja **głównej wersji PHP**. W takim przypadku obok wersji wyświetli się okrągły niebieski symbol oznaczający, że weryfikacja jest w toku. Odczekaj kilka minut, aby przycisk `Zmień konfigurację`{.action} stał się znowu aktywny.
-
-![hosting zmiana wersji php](images/change-hosting-configuration-step2.png){.thumbnail}
+> [!primary]
+>Jeśli przycisk `Zmień konfigurację`{.action} jest wyszarzony, możliwe jest, że trwa weryfikacja **głównej wersji PHP**. W takim przypadku obok wersji wyświetli się okrągły niebieski symbol oznaczający, że weryfikacja jest w toku. Odczekaj kilka minut, aby przycisk `Zmień konfigurację`{.action} stał się znowu aktywny.
+>
 
 #### Etap 2: zmiana konfiguracji hostingu
 
@@ -76,27 +76,20 @@ Kiedy zmieniasz konfigurację hostingu, masz kilka opcji do wyboru. W dalszej cz
 
 Zmiana frameworka umożliwia modyfikację niektórych parametrów technicznych Twojego hostingu. **Przed wprowadzeniem jakiejkolwiek zmiany upewnij się, że środowisko, które będziesz uruchamiać jest kompatybilne z Twoją stroną WWW.** 
 
-|Środowiska|Legacy|stable|testing|jessie.i386|
-|---|---|---|---|---|
-|Powiązany obraz|Legacy|jessie.i386|jessie.i386|jessie.i386|
-|Minimalna wersja PHP|4.4|5.3|5.3|5.3|
-|Openssl|0.9.8o|1.0.1k (TLS1.2 compatible)|1.0.1k (TLS1.2 compatible)|1.0.1k (TLS1.2 compatible)|
-|Rozszerzenie php imagick| - | Tak | Tak | Tak |
-|Rozszerzenie php memcached (PHP 5.6)| Tak | Tak | Tak | Tak |
-|Rozszerzenie php memcached (PHP 5.6)| - | Tak | Tak | Tak |
-|Rozszerzenie php mongo (PHP 5.4, 5.5, 5.6)| - | Tak | Tak | Tak |
-|Rozszerzenie mysqlnd (wyłącznie w utf-8)| - | Tak | Tak | Tak |
-|Rozszerzenie redis| - | Tak | Tak | Tak |
-|Opcache| Tak | Tak | Tak | Tak |
-|Python|2.6|2.7 i 3.4|2.7 i 3.4|2.7 i 3.4|
-|Ruby|1.8.7|2.1.5|2.1.5|2.1.5|
-|Rails|2.3.5|4.1.8|4.1.8|4.1.8|
-|Perl|5.10|5.20|5.20|5.20|
-|git|1.7.2.5|2.1.4|2.1.4|2.1.4|
+|Środowiska|Legacy|Stabilny|Stable64|
+|---|---|---|---|
+|architektura|32 bit|32 bit|64 bit|
+|Minimalna wersja PHP|5.6|7.3|7.4|
+|Openssl|1.0.1t|1.0.1t|1.1.1d|
+|Python|2.7 i 3.4|2.7 i 3.7|2.7 i 3.7|
+|Ruby|2.1|2.1|2.5|
+|Rails|4.1|4.1|5.2|
+|Perl|5.20|5.20|5.28|
+|git|2.1|2.1|2.20|
 
 > [!primary]
 >
-> Środowisko „legacy” może być użyteczne w przypadku starszych stron WWW korzystających z poprzednich wersji PHP. Zalecamy używanie środowiska „stable”, które zawiera najnowsze aktualizacje. **Zanim rozpoczniesz wprowadzanie jakichkolwiek zmian, upewnij się, że Twoja strona WWW jest z nimi kompatybilna.**
+> Środowisko „legacy” może być użyteczne w przypadku starszych stron WWW korzystających z poprzednich wersji PHP. Zalecamy używanie środowiska „stable64”, które zawiera najnowsze aktualizacje. **Zanim rozpoczniesz wprowadzanie jakichkolwiek zmian, upewnij się, że Twoja strona WWW jest z nimi kompatybilna.**
 > 
 
 Po dokonaniu wyboru masz dwie możliwości przeprowadzenia zmiany:

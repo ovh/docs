@@ -69,6 +69,12 @@ Es kann durchaus nützlich sein, die Datei nur umzubenennen, damit Sie diese zu 
 
 **Nützlicher Hinweis**: Sämtliche zu Ihrer Website gehörenden Dateien und Ordner müssen innerhalb des Ordners „www“ abgelegt werden, damit sie angezeigt werden.
 
+### Wie kann ich mein Webhosting-Angebot hochstufen?
+
+Wenn Sie Ihr derzeitiges Angebot auf ein höheres Angebot umstellen möchten, gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager)%7B.external%7D in den Bereich `Web Cloud`{.action}. Klicken Sie im linken Menü auf `Hosting-Pakete`{.action} und wählen Sie den entsprechenden Dienst aus.
+
+Klicken Sie im Tab `Allgemeine Informationen` im Feld Abo auf `...`{.action} rechts neben "Angebot" und danach auf `Upgraden`{.action}. Folgen Sie den nachfolgenden Anweisungen, um Ihre Bestellung abzuschließen. Dem neuen Abonnement wird die verbleibende Zeit Ihres aktuellen Angebots anteilig hinzugefügt.
+
 ## Weiterführende Informationen
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

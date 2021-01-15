@@ -1,130 +1,131 @@
 ---
-title: 'Exchange 2013/2016: How to use resource accounts'
-excerpt: This guide explains how to use resource accounts
+title: 'Using resource accounts'
+excerpt: 'Find out how to create and manage resource accounts'
 slug: exchange_20132016_how_to_use_resource_accounts
-section: Getting started
+section: 'Exchange account features'
+order: 4
 ---
 
+**Last updated 5th June 2020**
 
-## Step 1: Create a resource
-In your [Customer account](https://www.ovh.com/manager/web/login.html), select your Exchange service under "Exchange".
+## Objective
 
-Select "Advanced Mode" in the top right-hand corner. 
+This Exchange collaborative feature enables the creation of email addresses dedicated to resources in your organisation, such as conference rooms and shared equipment. Using these resource accounts helps with organising events in a collaborative environment by providing availability checks and seamlessly integrating resources with your Exchange calendars.
 
-Click "Resources" then "Add a resource account" on the right.
+**This guide explains the managing of resources using the OVHcloud Control Panel and the Outlook Web App (OWA).**
 
-![](images/img_1346.jpg){.thumbnail}
+## Requirements
 
+- an [OVHcloud Exchange solution](https://www.ovh.co.uk/emails/hosted-exchange) already set up
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- login credentials for the email account(s) accessing the resource
 
-## Step 2: Create a resource
-Fill in the required fields:
+## Instructions
 
-Resource name: enter the resource display name of your choice.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned. Click on `More +`{.action} in the horizontal menu, then on `Resources`{.action}.
 
-Resource email: enter the email address for the resource.  It must not be an  existing email address.
+### Step 1: Creating a resource
 
-Capacity: specify the size of your resource.
+![panelresource](images/exchange-resources-step1.png){.thumbnail}
 
-Resource type: two types of resources are available: "Room" and "Equipment".
+Click on the button `Add a resource account`{.action} to create your first resource. In the new window, fill in the fields:
 
-Click "Next" to proceed to step 3, then confirm the task by clicking "Create".
+![createresource](images/exchange-resources-step2.png){.thumbnail}
 
-![](images/img_1347.jpg){.thumbnail}
+|Name|Description|
+|---|---|
+|Resource email|Enter the address for the resource. Please note that you cannot choose an existing email address.|
+|Resource name|The display name that appears in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and in [OVHcloud webmail](https://www.ovh.co.uk/mail) (OWA).|
+|Capacity|You can define the maximum size of a resource (specifiying for example the seating capacity of a room or the seats in a shared company vehicle).|
+|Allow conflicts|If this box is ticked, you will be able to create overlapping calendar events involving the same resource.|
+|Resource type|Choose the resource type: "Equipment" or "Room".|
 
-
-## Step 3: Create a resource
-Once your resource is created, you can modify or delete it.
-
-The image shows a screenshot of the resource summary table, including the resource name, resource type (room or equipment) and the resource email address.
-
-The resource accounts are now activated. We will explain how to use them later on in this guide.
-
-![](images/img_1348.jpg){.thumbnail}
-
-
-## Step 1: Resource calendar
-Here's how to view the resource calendar via OWA.
-
-Open [OWA](https://ex.mail.ovh.net/owa/).
-
-Log in with your full email address and password.
-
-Select "Calendar", right-click on "OTHER CALENDARS", then choose "Open Calendar".
-
-![](images/img_1349.jpg){.thumbnail}
+Click `Next`{.action} to proceed to the summary, then confirm the task by clicking `Create`{.action}.
 
 
-## Step 2: Resource calendar
-Enter the resource name. As it is part of the GAL (Global address list), the Exchange server will find it automatically.
+### Step 2: Utilising resources
 
-Select "Open" to complete the task.
+Your resources can be managed from the table in the `Resources` tab. Click on `...`{.action} to modify or delete a resource. Additionally, the menu item `Manage delegations`{.action} will be displayed. With this option you will be able to delegate access in the same way as for an Exchange account. Please find the details in [this guide](../exchange_2013_how_to_grant_full_access_permissions_for_an_account).
 
-![](images/img_1350.jpg){.thumbnail}
+![resourceview](images/exchange-resources-step3.png){.thumbnail}
 
+### Adding a resource calendar in OWA
 
-## Step 3: Resource calendar
-You can now see the resource calendars you've created in OWA.
+> [!primary]
+>
+Please also refer to our guide on [Sharing calendars in OWA](../exchange_2016_how_to_share_calendars_via_owa).
+>
 
-Note that there is a "new event" button in the top left-hand corner. You can select this to create an event for your employees.
+Log in to your Exchange account via the [OVHcloud webmail](https://www.ovh.co.uk/mail). Switch to the "Calendar" interface by clicking on the "app launcher" in the top left-hand corner and then selecting the `Calendar`{.action} icon.
 
-![](images/img_1351.jpg){.thumbnail}
+![addcalendar](images/exchange-calendars-step1.png){.thumbnail}
 
+In the top navigation bar, click on `Add a calendar`{.action} and then on `From directory`{.action}.
 
-## Step 1: Manage a resource
-We will create an event using the resources we've just created.
+![selectresource](images/exchange-resources-step4.png){.thumbnail}
 
-To do this, select "new event" under "Calendar".
+Start typing to display suggestions from your contacts, enter a full email address or use the search option via `Search Directory`{.action}. However, the resource email address should be suggested at this point because it was automatically added to the global address list (GAL) at creation. Click on `Open`{.action} to add the resource calendar to your calendar overview.
 
-You will see the adjacent window:
+### Creating an event in OWA
 
-Fill in the required fields:
+To schedule an event, first click on `New`{.action} in the top menu bar and select `Calendar event`{.action}. In the new window you can set the details for your event and add your required  equipment and the location by adding the corresponding resource(s).
 
-Event: the name of your event.
+![scheduling](images/exchange-resources-step5_1.png){.thumbnail}
 
-Location: you can now enter your resource type, e.g. room.
+The event planner consists of three panes:
 
-Participants: enter your staff and "equipment" resources.
+#### **Details**
 
-Start: enter the event start time.
+- (1) Add a title for the event: this will be displayed in calendars.
+- (2) Add a location or room: here you can choose from your resource accounts.
+- (3) Start / End: define the duration of the event.
+- (4) Repeat: choose a repetition cycle if appropriate (daily, same day every month, etc.).
+- (5) Reminder: OWA will display a reminder window at the specified time.
+- (6) Show as: choose a status for your availability calendar.
+- (7) Add an email reminder: an option to send reminders via email to yourself or all attendees.
 
-Duration: specify the event duration.
+Type your invitation message into the editor below (8) and proceed to add attendees to your event.
 
-Show as: enter the status that you want to appear in the calendar.
+If you attempt to add a resource that is already booked ("busy"), a message will appear and suggest to use the ["Scheduling assistant"](./#schedule) (9) which provides a larger calendar overview of the chosen time frame.
 
-Reminder: specify when a reminder for the event should take place.
+#### **People**
 
-Repeat: specify the event frequency.
+Since a resource account is also a contact, you can add rooms and equipment in this pane, exactly as with other participants (10). Start typing to display suggestions from your contacts, enter a full email address or use the search option via `Search Directory`{.action}. (A click on `...`{.action} will open your contacts.)
 
-Select "Send" to finish creating your event.
+Once you have finalised the scheduling by clicking `Send`{.action} in the top menu bar, the resource account will send you a message to confirm that it is booked for your event. Tick the box "Request responses" if you require active confirmation from the invitees to auto-update your calendar.
 
-![](images/img_1352.jpg){.thumbnail}
+#### **Schedule**
 
+A calendar excerpt of your own events labelled **Schedule** will show up on the right-hand side as soon as you add a resource or person to the event. It provides a graphical preview of resource availability on the chosen day; you can set the time and duration of the event directly via mouse clicks and the selection menu on the top-right.
 
-## Step 2: Manage a resource
-The event "meeting" was accepted by room resource "MyRoom1" and equipment resource "equipment1".
-
-You will receive email notification to inform you if the event has been accepted or refused.
-
-![](images/img_1356.jpg){.thumbnail}
-
-
-## Step 3: Manage a resource
-You can view the status of resources in the calendar interface.
-
-We can see that after the event has been added, the resource status is showing as "Busy".
-
-![](images/img_1357.jpg){.thumbnail}
+If needed, click on `Scheduling assistant`{.action} in the **People** pane to open an even more detailed overview. This assistant is helpful for bigger events or if you have to manage conflicts, because it visualises the entire scheduling process. You can verify availability and adjust your planning by selecting locations and contacts, without leaving this interface.
 
 
-## Step 4: Manage a resource
-We will now add a new event on the same date as the previous one.
+![assistant](images/exchange-resources-step6.png){.thumbnail}
 
-We will be notified if the event is accepted or refused.
 
-Because the first event that is already scheduled on that date, there is a conflict between the first and second event. "speech" and "MyRoom1" resources therefore refused the second event.
+### Resource response messages
 
-Resource "equipment1" accepted the event.
-Even though an event is already scheduled for that date, conflict management is disabled on this resource.
+After creating the event (clicking `Send`{.action} in the top menu bar) Exchange will send out messages:
 
-![](images/img_1358.jpg){.thumbnail}
+- Attendees will receive invitations (to update the involved calendars or only their own, depending on whether you chose "Request responses" before).
 
+- You will receive a confirmation email by every chosen resource account (if the resource is available or if it is booked but you **did tick** "Allow conflicts" at creation).
+
+![acceptmessage](images/exchange-resources-step7.png){.thumbnail}
+
+- You will receive a decline email by every chosen resource account (if the resource is unavailable and you **did not tick** "Allow conflicts" at creation).
+
+![declinemessage](images/exchange-resources-step8.png){.thumbnail}
+
+
+
+## Go further
+
+[Using the Outlook Web App with an Exchange account](../exchange_2016_outlook_web_app_user_guide)
+
+[Sharing calendars in OWA](../exchange_2016_how_to_share_calendars_via_owa)
+
+[Sharing folders in OWA](../exchange_2016_how_to_share_a_folder_via_owa)
+
+Join our community of users on <https://community.ovh.com/en/>.

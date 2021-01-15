@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellin sähköposti: Sähköpostilistan käyttöpas'
 excerpt: Ohje sähköpostilistan käyttöön
 slug: webhotellin_sahkoposti_sahkopostilistan_kayttopas

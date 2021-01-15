@@ -1,27 +1,26 @@
 ---
 title: OVHcloud Network Plugin verwenden
 slug: ovhcloud-network-plugin
-excerpt: So verwenden Sie das OVHcloud Network Plugin für Ihre Private Cloud Lösung
-section: Funktionen von OVHcloud
-order: 03
+excerpt: So verwenden Sie das OVHcloud Network Plugin für Ihre Private Cloud
+section: OVHcloud Funktionen
 ---
 
-**Stand 17.07.2020**
+**Letzte Aktualisierung am 17.07.2020**
 
-## Einleitung
+## Ziel
 
-Das OVHcloud Network Plugin wurde entwickelt,  um alle IP-Adressen effizient zu verwalten, die mit Ihrer Private Cloud Lösung verbunden sind.
+Das OVHcloud Network Plugin wurde entwickelt, um alle IP-Adressen effizient zu verwalten, die mit Ihrer Private Cloud Lösung verbunden sind.
 
 **In dieser Anleitung erfahren Sie, wie Sie das OVHcloud Network Plugin für Ihre Private Cloud Lösung verwenden.**
 
 ## Voraussetzungen
 
-- Sie nutzen ein Angebot der Art [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/){.external}.
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) angemeldet.
+- Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
 - Sie haben einen mit Ihrer Private Cloud verbundenen IP-Block.
 - Sie haben Zugang zum vSphere Interface.
 
-## Praktische Anwendung
+## In der praktischen Anwendung
 
 Wenn Sie mit dem vSphere Interface verbunden sind, wählen Sie im Menü links Ihr Rechenzentrum aus. Gehen Sie auf den Reiter `Configure`{.action} und klicken Sie dann unter „OVHcloud“ auf `Network`{.action}. Es erscheint „Network summary“.
 
@@ -31,7 +30,7 @@ Hier sehen Sie Ihre IP-Blöcke und einige grundlegende Informationen zu ihnen. K
 
 ![Informationen über IPs und Blöcke](images/ovhcloudplugin_02.png){.thumbnail}
 
-Hier können Sie das Ziel jeder Adresse und ihre „Reverse-IP“ überprüfen. Einige Adressen werden als „Reserved“ markiert sein. Achten Sie darauf,  **nicht die fünf IP-Adressen zu verwenden, die für die Konfiguration des Blocks und die Hochverfügbarkeit reserviert sind**. Diese sind:
+Hier können Sie das Ziel jeder Adresse und ihre „Reverse-IP“ überprüfen. Einige Adressen werden als „Reserved“ markiert sein. Achten Sie darauf, **nicht die fünf IP-Adressen zu verwenden, die für die Konfiguration des Blocks und die Hochverfügbarkeit reserviert sind**. Diese sind:
 
 - die erste IP, die Ihren Block auf dem Router anzeigt;
 - die letzte IP, die für Broadcast verwendet wird;
@@ -57,4 +56,4 @@ Die neue „Reverse-IP“ wird dann in der Tabelle angezeigt.
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User-Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Für den Austausch mit unserer User Community gehen Sie auf  <https://community.ovh.com/en/>.

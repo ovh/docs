@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Käytä VMware Update Manageria
 excerpt: ''
 slug: kayta_vmware_update_manageria

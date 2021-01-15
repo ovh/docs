@@ -37,9 +37,9 @@ You can configure Email Pro accounts on email clients and online interfaces, if 
 
 > [!primary]
 >
-> In this guide, we will use as the server name: pro**X**.mail.ovh.net. You will need to replace the "X" with the actual number indicating the appropriate server for your Email Pro service.
+> In this guide, we will use as the server name: pro**?**.mail.ovh.net. You will need to replace the "?" with the actual number indicating the appropriate server for your Email Pro service.
 > 
-> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), in the `Web`{.action} section, if you select `Professional Email`{.action} in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
+> You can find this information in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), in the `Web Cloud`{.action} section, if you select `Professional Email`{.action} in the left-hand column. The server name is displayed in the **Connection** box in the `General Information`{.action} tab.
 >
 
 First of all, go to the Gmail online interface via your web browser. Then log in to your account using your Gmail credentials.
@@ -58,7 +58,7 @@ Now enter the settings for the POP server (incoming server) of your OVHcloud Ema
 |---|---| 
 |Username|Enter your **full** email address.|  
 |Password|Enter the password for your email address.|
-|POP server|Enter “pro**X**.mail.ovh.net”.|
+|POP server|Enter “pro**?**.mail.ovh.net”.|
 |Port|Select port 995.|
 
 Regarding the choices you can tick:
@@ -85,7 +85,7 @@ Now enter the settings for the SMTP server (outgoing server) of your OVHcloud Em
 
 |Information|Description| 
 |---|---| 
-|SMTP server|Enter “pro**X**.mail.ovh.net”.|
+|SMTP server|Enter “pro**?**.mail.ovh.net”.|
 |Port|Select port 587.|
 |Username|Enter your **full** email address.|  
 |Password|Enter the password for your email address.|

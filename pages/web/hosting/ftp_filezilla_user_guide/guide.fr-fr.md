@@ -2,7 +2,7 @@
 title: 'Utilisation logiciel FileZilla avec votre hebergement'
 slug: mutualise-guide-utilisation-filezilla
 legacy_guide_number: 1380
-excerpt: 'Retrouvez ici un tutoriel pour l''utilisation du logiciel Filezilla sur votre hebergement mutualise.'
+excerpt: "Retrouvez ici un tutoriel pour l'utilisation du logiciel Filezilla sur votre hebergement mutualise."
 section: 'FTP et SSH'
 ---
 

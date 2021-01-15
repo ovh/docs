@@ -66,6 +66,12 @@ To correct this, you will need to delete or rename the "index.html" file set up 
 
 **Other useful information**: make sure you upload your website files to the "www" folder, so that they are visible.
 
+### How do I upgrade my web hosting plan?
+
+If you would like to change your current solution to a higher one, go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and go to the `Web Cloud`{.action} section. Click `Hosting plans`{.action} in the services bar on the left-hand side, then click on the solution concerned.
+
+In the `General information` tab, in the `Plan` box, click on the `...`{.action} button next to “Plan”, then click `Upgrade`{.action}. Follow the instructions below to complete your order. A pro rata of the remaining time of your current solution will be added to the new solution.
+
 ## Go further
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

@@ -30,7 +30,7 @@ Sie können den Anbieter Ihrer Domain wechseln, indem Sie den Transfer der Domai
 
 ### Schritt 1: Transfer-Schutz der Domain aufheben
 
-Um den Transfer-Schutz Ihrer OVH Domain aufzuheben, gehen Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} in der oberen Serviceleiste in den Bereich `Web`{.action}. Gehen Sie dann im linken Menü in den Bereich `Domains`{.action} und klicken Sie auf die betreffende Domain. Im Tab `Allgemeine Informationen`{.action} nehmen Sie den Haken aus dem Feld `Transfer-Schutz`{.action} und klicken Sie anschließend auf `Bestätigen`{.action}.
+Um den Transfer-Schutz Ihrer OVH Domain aufzuheben, gehen Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} in der oberen Serviceleiste in den Bereich `Web Cloud`{.action}. Gehen Sie dann im linken Menü in den Bereich `Domains`{.action} und klicken Sie auf die betreffende Domain. Im Tab `Allgemeine Informationen`{.action} nehmen Sie den Haken aus dem Feld `Transfer-Schutz`{.action} und klicken Sie anschließend auf `Bestätigen`{.action}.
 
 > [!primary]
 >

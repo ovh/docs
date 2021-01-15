@@ -29,7 +29,7 @@ Your database can contain a lot of essential information for your website. It is
 
 ### Backing up and exporting a database from the Control Panel
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the SQL instance concerned. Next, go to the `Databases` tab.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the SQL instance concerned. Next, go to the `Databases` tab.
 
 In the **Backups** column, the number corresponds to the number of backups available for your database.
 
@@ -96,7 +96,7 @@ mysqldump --host=server --user=username --port=port --password=password database
 
 > [!warning]
 >
-> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it]( ../how_to_password_protect_a_directory_on_your_website/).
+> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](../how_to_password_protect_a_directory_on_your_website/).
 > - This action is only possible on an OVHcloud Web Hosting plan.
 >
 
@@ -129,7 +129,7 @@ pg_dump --host=server --port=port --user=usernmame --password=password database_
 
 > [!warning]
 >
-> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it]( ../how_to_password_protect_a_directory_on_your_website/).
+> - To prevent someone from accessing this file containing sensitive data, you can [secure access to it](../how_to_password_protect_a_directory_on_your_website/).
 > - This action is only possible on an OVHcloud Web Hosting plan.
 >
 

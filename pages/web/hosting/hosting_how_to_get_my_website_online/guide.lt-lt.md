@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Publishing a website on your Web Hosting space'
 slug: svetainiu_talpinimas_svetaines_ikelimas_i_interneta
 excerpt: 'Learn how to publish a website on your OVH web hosting space'

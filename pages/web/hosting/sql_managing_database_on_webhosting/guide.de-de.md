@@ -2,6 +2,7 @@
 title: Verwaltung einer Datenbank in Ihrem Webhosting
 slug: verwaltung-einer-datenbank-in-ihrem-webhosting
 legacy_guide_number: 1943
+hidden: true
 ---
 
 

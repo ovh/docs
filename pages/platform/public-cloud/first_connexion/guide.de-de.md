@@ -110,7 +110,7 @@ Sie werden dann in Ihre Instanz eingeloggt.
 
 > [!primary]
 >
-> Wenn Probleme beim Einloggen in Ihre Windows-Instanz auftreten, überprüfen Sie, ob Ihre Windows Firewall RDP-Verbindungen erlaubt. Bitte beachten Sie unsere Anleitung zur [Windows Server-Konfiguration](https://docs.ovh.com/gb/en/vps/windows-first-config), falls Sie weitere Informationen dazu benötigen.
+> Wenn Probleme beim Einloggen in Ihre Windows-Instanz auftreten, überprüfen Sie, ob Ihre Windows Firewall RDP-Verbindungen erlaubt. Bitte beachten Sie unsere Anleitung zur [Windows Server-Konfiguration](../../vps/windows-first-config), falls Sie weitere Informationen dazu benötigen.
 > 
 
 

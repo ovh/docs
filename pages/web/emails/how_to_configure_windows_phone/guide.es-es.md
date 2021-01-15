@@ -40,7 +40,7 @@ Pulse «otra cuenta» para añadir una cuenta de tipo POP o IMAP.
 ## Etapa 5: Configurar la cuenta
 En el primer campo, introduzca su dirección de correo electrónico completa.
 
-A continuación, introduzca la contraseña que haya asignado en su [manager](https://www.ovh.es/managerv3/) a la cuenta de correo OVH.
+A continuación, introduzca la contraseña que haya asignado en su [manager](https://www.ovh.com/auth/?action=gotomanager) a la cuenta de correo OVH.
 
 Para continuar, pulse el botón «iniciar sesión». Aparecerá un mensaje de advertencia. Pulse «avanzadas».
 
@@ -66,7 +66,7 @@ Tipo de cuenta:POP3 (también puede configurarla en IMAP, en cuyo caso deberá u
 
 Nombre de usuario: Dirección de correo electrónico completa.
 
-Contraseña: La contraseña elegida en el [manager](https://www.ovh.es/managerv3/) para la cuenta de correo OVH.
+Contraseña: La contraseña elegida en el [manager](https://www.ovh.com/auth/?action=gotomanager) para la cuenta de correo OVH.
 
 Servidor de correo saliente (SMTP):SSL0.OVH.NET
 
@@ -101,7 +101,7 @@ A continuación recordamos los valores de configuración de una cuenta de correo
 Configuración POP con la protección SSL activada o desactivada:
 
 Dirección de correo electrónico: Dirección de correo electrónico completa.
-Contraseña: La contraseña elegida en el [manager](https://www.ovh.es/managerv3/).
+Contraseña: La contraseña elegida en el [manager](https://www.ovh.com/auth/?action=gotomanager).
 Nombre de usuario: Dirección de correo electrónico completa.
 Servidor entrante:SSL0.OVH.NET
 Puerto del servidor entrante:995 o 110
@@ -126,7 +126,7 @@ A continuación recordamos los valores de configuración de una cuenta de correo
 Configuración IMAP con la protección SSL activada o desactivada:
 
 Dirección de correo electrónico: Dirección de correo electrónico completa.
-Contraseña: La contraseña elegida en el [manager](https://www.ovh.es/managerv3/).
+Contraseña: La contraseña elegida en el [manager](https://www.ovh.com/auth/?action=gotomanager).
 Nombre de usuario: Dirección de correo electrónico completa
 Servidor entrante:SSL0.OVH.NET
 Puerto del servidor entrante:993 o 143

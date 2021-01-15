@@ -3,7 +3,7 @@ title: Ajout de bloc IP
 slug: ajout-de-bloc-ip
 excerpt: Commander un bloc IP sur votre Hosted Private Cloud
 legacy_guide_number: '7766457'
-section: Fonctionnalités OVH
+section: Fonctionnalités OVHcloud
 order: 01
 ---
 
@@ -66,6 +66,8 @@ Après avoir confirmé la dernière étape, vous obtenez le bon de commande de v
 
 ### Migrer un bloc IP entre deux Hosted Private Cloud
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 La migration d'un bloc d'IP nécessite de déplacer manuellement les blocs via l'APIv6 OVHcloud.
 
 Utilisez l'appel API suivant :
@@ -100,7 +102,7 @@ Utilisez ensuite cet appel API pour déplacer l'IP dans le parking des IPS :
 > Cet appel coupe le réseau sur les VMs qui utilisent les IPs en question.
 >
 
-Vous pourrez suivre le déplacement du bloc IP depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Server`{.action} puis `Private Cloud`{.action}. Cliquez sur votre service Hosted Private Cloud puis sur l'onglet `Operations`{.action}.
+Vous pourrez suivre le déplacement du bloc IP depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Hosted Private Cloud`{.action} puis `Private Cloud`{.action}. Cliquez sur votre service Hosted Private Cloud puis sur l'onglet `Operations`{.action}.
 
 La référence de l'opération est « removeIpRipeBlock ».
 

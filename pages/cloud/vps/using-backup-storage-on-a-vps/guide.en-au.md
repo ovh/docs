@@ -6,7 +6,7 @@ section: 'Backup options'
 order: 1
 ---
 
-**Last updated 21st July 2020**
+**Last updated 23rd September 2020**
 
 
 ## Objective
@@ -17,18 +17,18 @@ Creating a snapshot is a fast and simple way to secure a functioning system befo
 
 > [!primary]
 >
-Before applying backup options, we recommend to consult the [VPS options]({ovh_www}/vps/options/) for pricing comparisons and further details.
+Before applying backup options, we recommend to consult the [VPS options](https://www.ovhcloud.com/en-au/vps/options/) for pricing comparisons and further details.
 >
 
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
-- an OVHcloud [VPS service]({ovh_www}/vps/) already set up
+- an OVHcloud [VPS service](https://www.ovhcloud.com/en-au/vps/) already set up
 
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), navigate to the "Server" section, and select your server from the left-hand sidebar under `VPS`{.action}.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), navigate to the "Bare Metal Cloud" section, and select your server from the left-hand sidebar under `VPS`{.action}.
 
 ### Step 1: Subscribing to the snapshot option
 
@@ -73,10 +73,16 @@ $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
-Start the service to ensure it is running:
+Reboot the VPS:
 
 ```
-$ sudo service qemu-guest-agent start
+$ sudo reboot
+```
+
+Check the service to ensure it is running:
+
+```
+$ sudo service qemu-guest-agent status
 ```
 
 ##### **Redhat-based distributions (Centos, Fedora)**
@@ -95,10 +101,15 @@ $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
-Start the agent and verify that it is running:
+Reboot the VPS:
 
 ```
-$ sudo service qemu-guest-agent start
+$ sudo reboot
+```
+
+Check the service to ensure it is running:
+
+```
 $ sudo service qemu-guest-agent status
 ```
 

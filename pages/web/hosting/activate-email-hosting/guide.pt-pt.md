@@ -24,7 +24,7 @@ Se adquiriu um alojamento web sem o associar diretamente a um nome de domínio, 
 
 ### Ativação da sua oferta de e-mail
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web`{.action}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o alojamento com a oferta de e-mail.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o alojamento com a oferta de e-mail.
 
 Na tabela `Configuração`, poderá ver a menção `Endereços de e-mail`. Clique no botão `...`{.action} à direita e, a seguir, em `Ativar a solução de e-mail`{.action}.
 
@@ -38,7 +38,7 @@ Aparecerá a janela de ativação. Escolha o nome de domínio ao qual pretende a
 
 Quando o seu alojamento web chega ao seu fim ou quando este deve ser eliminado, é possível conservar os seus endereços de e-mail.
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web`{.action}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o alojamento com a oferta de e-mail.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o alojamento com a oferta de e-mail.
 
 Na tabela `Configuração`, clique no botão `...`{.action} à direita de `Endereços de e-mail` e, a seguir, em `Desassociar a minha opção de e-mail`{.action}.
 

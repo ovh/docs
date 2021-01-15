@@ -2,6 +2,7 @@
 title: Bearbeiten einer Instanz in Horizon
 excerpt: Bearbeiten einer Instanz in Horizon
 slug: bearbeiten_einer_instanz_in_horizon
+section: 'Horizon'
 legacy_guide_number: g1777
 ---
 

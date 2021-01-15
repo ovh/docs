@@ -1,7 +1,7 @@
 ---
-title: 'Récupérer la sauvegarde de la base de données d''un hébergement web'
+title: "Récupérer la sauvegarde de la base de données d'un hébergement web"
 slug: exportation-bases-donnees
-excerpt: 'Découvrez comment récupérer la sauvegarde d''une base de données de votre hébergement web OVHcloud'
+excerpt: "Découvrez comment récupérer la sauvegarde d'une base de données de votre hébergement web OVHcloud"
 section: 'Bases de données'
 order: 3
 ---

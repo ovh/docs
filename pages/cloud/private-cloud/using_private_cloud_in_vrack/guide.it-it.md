@@ -1,62 +1,49 @@
 ---
-title: Aggiungere un Dedicated Cloud alla vRack 1.5 e configurare una VM
-description: In questa guida ti spieghiamo come aggiungere un Dedicated Cloud alla vRack 1.5 utilizzando il tuo Manager o l'API e come configurare una VM sulla vRack, facendo qualche esempio particolare.
-excerpt: In questa guida ti spieghiamo come aggiungere un Dedicated Cloud alla vRack 1.5 utilizzando il tuo Manager o l'API e come configurare una VM sulla vRack, facendo qualche esempio particolare.
+title: Utilizzare Hosted Private Cloud all'interno di una vRack
+excerpt:  Scopri come utilizzare la vRack con la tua soluzione Hosted Private Cloud
 slug: aggiungere_un_dedicated_cloud_alla_vrack_15_e_configurare_una_vm
 legacy_guide_number: g1257
+section: Servizi e opzioni OVHcloud
+order: 02
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
 
-## 
-Accedi al tuo [Manager](https://www.ovh.com/manager/dedicated/)
+**Ultimo aggiornamento: 02/07/2020**
 
-Aggiungi il tuo Dedicated Cloud alla vRack trasferendo semplicemente i server dalla sezione di sinistra a quella di destra (utilizzando i pulsanti "Aggiungi/Rimuovi"):
+## Obiettivo
 
-![](images/img_1062.jpg){.thumbnail}
-Il pulsante di aggiunta viene creato automaticamente.
+La vRack è la possibilità di connettere diversi servizi Cloud di OVHcloud all'interno di una o più reti private sicure (VLAN).
 
+**Questa guida ti mostra come attivarlo**
 
-## Connessione all'API (via script)
-Fai riferimento a questa guida: []({legacy}934)
+## Procedura
 
+### Spazio cliente
 
-## Connessione all'API (utilizzando l'interfaccia web)
-Vai alla [pagina dell'API](https://api.ovh.com/console/)
+Al momento della consegna del servizio [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/), la sezione *datacenter* è già all'interno di una vRack.
 
-Accedi cliccando sul pulsante "Login" che trovi in alto a destra.
+![Datacenter](images/vRackDatacenter.PNG){.thumbnail}
 
+Per spostare il *datacenter* del tuo Hosted Private Cloud in un'altra vRack, clicca sul pulsante `Sposta`{.action}
 
-## Aggiunta del Dedicated Cloud alla vRack 1.5
-Dopo aver effettuato l'accesso, entra nella sezione vRack, poi su GET /vrack e clicca su "Esegui" per recuperare il "ServiceName" della tua vRack:
+### Client vSphere
 
-![](images/img_1054.jpg){.thumbnail}
-Dopo aver recuperato il servizio, accedi a POST /vrack/Servicename/DedicatedCloud, inserisci il nome del tuo dedicatedcloud e poi su "Esegui":
+Nel client vSphere, le *VLANs* compatibili con la vRack sono disponibili nello switch virtuale distribuito (vds), a sua volta situato nella cartella **vrack**.
 
-![](images/img_1056.jpg){.thumbnail}
+> [!success]
+>
+> Di default, OVHcloud fornisce un'infrastruttura con 11 VLAN (da VLAN10 a VLAN20).
+>
 
+![VLAN](images/vRackVsphere.png){.thumbnail}
 
-## Rimozione del Dedicated Cloud dalla vRack 1.5
-Il processo è lo stesso dell'aggiunta, differisce soltanto dall'utilizzo della funzione "DELETE" dell'API:
+È possibile modificare le impostazioni o crearne di nuove seguendo la guida alla [creazione di VxLAN](../creazione-vlan-vxlan/.
 
-![](images/img_1057.jpg){.thumbnail}
+Questi *portgroup* possono essere assegnati alle interfacce di rete delle macchine virtuali.
 
+## Per saperne di più
 
-## In modalità VSS (Virtual Standard Switch)
-In questa configurazione, il metodo è molto semplice. Ti basta selezionare il portgroup "VM Network" nei parametri della scheda di rete, come nell'esempio qui sotto:
-
-![](images/img_1059.jpg){.thumbnail}
-
-
-## In modalità VDS (Virtual Distributed Switch) o 1000v
-Il processo è lo stesso che per la modalità VSS ma il nome portgroup cambia:
-
-![](images/img_1060.jpg){.thumbnail}
-
-
-## Utilizzo delle VXLAN sul 1000v
-Potresti anche voler utilizzare una VXLAN per evitare che le tue macchine siano totalmente esposte sulla VLAN pubblica del tuo Dedicated Cloud.
-
-Puoi utilizzare questa procedura dopo aver configurato una macchina aggiuntiva che svolge le funzioni di gateway per le VM nella VXLAN e una scheda sulla "VM Network" del 1000v come in questo esempio:
-
-![](images/img_1061.jpg){.thumbnail}
-
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

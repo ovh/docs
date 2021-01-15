@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Yhdistä Dedicated Cloudiin älypuhelimella tai iPadilla
 excerpt: ''
 slug: yhdista_dedicated_cloudiin_alypuhelimella_tai_ipadilla

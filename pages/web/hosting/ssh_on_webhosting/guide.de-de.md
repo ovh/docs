@@ -1,6 +1,6 @@
 ---
-title: 'Verwendung von SSH mit einem Webhosting'
-excerpt: 'Webhosting: SSH auf Ihren Webhostings'
+title: 'SSH-Zugang Ihres Webhostings verwenden'
+excerpt: 'Erfahren Sie hier, wie Sie den SSH-Zugang zur Verbindung mit Ihrem OVHcloud Webhosting nutzen'
 id: '1962'
 slug: webhosting_ssh_auf_ihren_webhostings
 legacy_guide_number: g1962
@@ -8,132 +8,113 @@ section: 'FTP und SSH'
 order: 4
 ---
 
+**Letzte Aktualisierung am 21.09.2020**
 
-## Was ist SSH und welche Vorteile bietet es?
-Die Nutzung von SSH ist ab den PRO Angeboten möglich (für die [alten Hosting Angebote](https://www.ovh.de/hosting/alte_hosting_angebote.xml) ab PLAN).
+## Ziel
 
-ACHTUNG: Bei den alten Angeboten ist der Zugriff nur über das primäre FTP-Konto möglich, zusätzliche FTP-Nutzer haben also keinen Zugriff auf SSH.
+Mit OVHcloud Webhosting Angeboten erhalten Sie einen Speicherplatz zum Online-Stellen der Dateien Ihrer Websites und Anwendungen. Auf diesen können Sie mithilfe eines SSH- oder FTP-Benutzers und den zugehörigen Passwörtern zugreifen.
 
-Über SSH können Sie sich mit Ihrem Hosting verbinden und die Dateien bearbeiten (wie über FTP).
-Mehr Informationen über das SSH-Protokoll finden Sie [hier](https://de.wikipedia.org/wiki/Secure_Shell).
-
+**Diese Anleitung erklärt, wie Sie den SSH-Zugang verwenden, um sich mit Ihrem OVHcloud Webhosting zu verbinden.**
 
 ## Voraussetzungen
 
-- Die Option SSH ist verfügbar für:
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovh.de/hosting/){.external} Angebot mit SSH-Zugang.
+- Sie verfügen über die erforderlichen Informationen, um sich via SSH mit Ihrem Speicherplatz zu verbinden.
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
-alle Hostings ab dem [Hosting PRO](https://www.ovh.de/hosting/hosting-pro.xml).
+## In der praktischen Anwendung
 
+### Schritt 1: Sicherstellen, dass der SSH-Zugang aktiv ist
 
-- Eine Software, die SSH-Zugriffe ermöglicht.
+Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und klicken Sie im Bereich `Web Cloud`{.action} links in der Menüleiste auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. Es werden nun die Informationen für Ihren Speicherplatz angezeigt. 
 
-- Port 22 muss auf Ihrer Firewall und Ihrem Router freigegeben sein.
+Gehen Sie in der angezeigten Tabelle zur Spalte „SSH“ und überprüfen Sie, dass der betreffende SSH-Benutzer (oder „SSH-Login“) über einen aktiven SSH-Zugang verfügt. Ist das nicht der Fall, wird der Status „Deaktiviert“ angezeigt.
 
+![SSH verwenden](images/use-ssh-step1.png){.thumbnail}
 
+Ist der SSH-Zugang nicht aktiv, klicken Sie rechts neben dem betreffenden Benutzer auf den Button `...`{.action} und dann auf `Bearbeiten`{.action}. Aktivieren Sie im daraufhin angezeigten Fenster den SSH-Zugang und schließen Sie die Änderung ab. Wenn Sie den Zugang nicht aktivieren können, überprüfen Sie, dass [Ihr OVHcloud Webhosting](https://www.ovh.de/hosting/){.external} über einen SSH-Zugang verfügt.
 
+### Schritt 2: Erforderliche Verbindungsinformationen abrufen
 
-## SSH für einen Benutzer aktivieren / deaktivieren
-Sie können Ihre SSH-Logins über das Kundencenter verwalten. Hierfür müssen Sie nur im Menü links auf den Namen des gewünschten Hostings klicken und dann das Tab "FTP - SSH" auswählen.
+Um sich per SSH in Ihren Speicherplatz einzuloggen, benötigen Sie die nachfolgenden Elemente. Sollten Sie diese Informationen nicht zur Hand haben, können Sie sie im Tab `FTP-SSH`{.action} einsehen.
 
-Wenn Sie neue FTP-Benutzer erstellen, aktiviert dies automatisch auch die SSH-Option für diese Benutzer.
-
-![](images/img_3945.jpg){.thumbnail}
-Sie können SSH auch für einen Benutzer deaktivieren. Klicken Sie hierfür auf das kleine Zahnrad neben dem entsprechenden Login und dann auf "Ändern".
-
-Die Änderung wird innerhalb weniger Minuten wirksam.
-
-![](images/img_3946.jpg){.thumbnail}
-
-
-## Die Eingabeaufforderung
-Unter Linux:
-
-- Unter KDE: Öffnen Sie das Hauptmenü (standardmäßig links unten auf Ihrem Bildschirm), geben Sie in die Suchleiste "konsole" ein und klicken Sie anschließend auf das erste Ergebnis der Suche.
-
-Unter Mac:
-- Klicken Sie auf die Festplatte auf Ihrem Desktop, klicken Sie dann auf das Anwendungsverzeichnis, dann das Verzeichnis Dienstprogramm und schließlich auf die Anwendung "Terminal".
-
-Unter Windows:
-
-
-- Unter Windows gibt es keinen nativen SSH-Client, daher müssen Sie einen herunterladen.
-
-Der bekannteste Client ist wohl Putty: [zum Download](http://www.putty.org/).
-
-
-## SSH-Verbindung zu Ihrem Hosting
-Unter Linux und Mac :
-
-- Um eine SSH-Verbindung zu Ihrem Hosting herzustellen, verfahren Sie wie oben beschrieben und geben Sie dann
-SSH IhrFtpLogin@IhrFtpServer ein.
-
-
-Alles zu Ihren FTP-Daten erfahren Sie in [dieser Anleitung](https://www.ovh.de/g1909.mutualise_gerer_et_acceder_a_ses_mots_de_passe#les_differents_mots_de_passe_lies_au_service_mutualise_dovh_la_connexion_ftp).
-
-![](images/img_3093.jpg){.thumbnail}
-Unter Windows :
-
-- Wenn Sie Windows verwenden, hilft Ihnen [diese Anleitung zu Putty](https://www.ovh.de/g1964.mutualise_utilisation_de_putty_sur_windows) weiter.
-
-
-
-
-## Liste der wichtigsten Befehle
-Sie müssen nur den jeweiligen Ausdruck arg durch den Namen der gewünschten Datei oder des gewünschten Verzeichnisses ersetzen.
-
-|Befehl|Übersetzung (Englisch)|Erklärung|
-|---|---|---|
-|pwd|print working directory|Zeigt das Arbeitsverzeichnis an|
-|cd arg|change directory|Wechselt das Arbeitsverzeichnis; arg ist dieses neue Verzeichnis. Der Befehl  cd ohne arg führt zum Verzeichnis  home.|
-|cd ..|change directory to ..|Wechselt das Arbeitsverzeichnis, indem in Ihrem Verzeichnisbaum eine Ebene höher gegangen wird.|
-|ls arg|list|Listet den Inhalt von arg, wenn es sich hierbei um ein Verzeichnis handelt. Ohne arg listet ls den Inhalt des Arbeitsverzeichnisses.|
-|ll arg|long list|Zeigt detaillierte Informationen zum Ordner arg.|
-|ls -a arg|list all|Zeigt alle Dateien in arg, auch die mit .. beginnenden, wenn es sich dabei um ein Verzeichnis handelt. Die Optionen von ls können auch kombiniert werden: ls -al.|
-|chmod droit arg|change droits|Ändert die Rechte der Datei arg, conformément à droit.|
-|mkdir arg|make directory|Erstellt das Verzeichnis arg.|
-|rmdir arg|remove directory|Löscht das Verzeichnis arg, wenn es leer ist.|
-|rm arg|remove|Löscht die Referenz arg.|
-|rm -r arg|remove recursively|Löscht arg und alle enthaltenen Dateien.|
-|mv arg1 arg2|move|Ändert den Namen oder verschiebt arg1 in arg2.|
-|touch arg|touch|Erstellt ein leeres Verzeichnis arg, wenn es noch nicht existiert. Andernfalls Aktualisierung mit dem aktuellen Datum, dem Datum der letzten Änderung.|
-
-
-
-
-## Ein Skript mit einer bestimmten PHP-Version starten
-Um Ihre Skripte mit einem SSH-Befehl auszuführen und dabei eine bestimmte PHP-Version zu verwenden, brauchen Sie ganz bestimmte Befehle.
-
-|Befehl|Version|
+|Element|Wo finde ich dieses?|
 |---|---|
-|php.ORIG.4 (cgi)|4.4.9|
-|php.ORIG.5_2 (cgi)|5.2.17|
-|php.ORIG.5_3 (cgi-fcgi)|5.3.29|
-|/usr/local/php5.3/bin/php (cli)|5.3.29|
-|php.ORIG.5_4 (cgi-fcgi)|5.4.38|
-|/usr/local/php5.4/bin/php (cli)|5.4.38|
-|/usr/local/php5.5/bin/php (cli)|5.5.22|
-|/usr/local/php5.6/bin/php (cli)|5.6.6|
+|Aktiver SSH-Benutzer|Diesen finden Sie in der Tabelle in der Spalte „SSH-Login“. Denken Sie daran, dass dieser Benutzer [über einen aktiven SSH-Zugang verfügen](./#schritt-1-sicherstellen-dass-der-ssh-zugang-aktiv-ist) muss.|
+|SSH-Benutzerpasswort|Wenn Sie dieses Passwort vergessen haben, können Sie es ändern, indem Sie auf den Button `...`{.action} und dann auf `Passwort ändern`{.action} klicken.|
+|SSH-Serveradresse|Gehen Sie zu „SSH-Zugang zum Cluster“. Die SSH-Serveradresse beginnt hinter „ssh://“ und endet vor dem Doppelpunkt („:“).|
+|SSH-Verbindungsport des Servers|Gehen Sie zu „SSH-Zugang zum Cluster“. Die Port-Nummer steht hinter dem Doppelpunkt („:“).|
 
+Beispiel: In `ssh://ssh.cluster023.hosting.ovh.net:22/`, ist „ssh.cluster023.hosting.ovh.net“ die SSH-Serveradresse und „22“ der SSH-Verbindungsport.
 
-Um das Skript "meinScript.php" mit PHP-Version 5.3 auszuführen, brauchen Sie folgenden Befehl:
+![SSH verwenden](images/use-ssh-step2.png){.thumbnail}
 
-```sh
-php.ORIG.5_3 meinScript.php
+### Schritt 3: Via SSH in den Speicherplatz einloggen
+
+Verwenden Sie für den Login via SSH ein Terminal, um direkt über Befehlszeilen mit Ihrem Speicherplatz zu kommunizieren. 
+
+Dieses Tool ist standardmäßig auf macOS, Linux und Windows 10 installiert. Bei einer älteren Windows-Umgebung muss ein Programm wie PuTTY installiert oder die OpenSSH-Funktion hinzugefügt werden. Dieser Vorgang variiert je nach verwendetem Betriebssystem. Wir können die Vorgehensweise daher in dieser Anleitung nicht im Detail beschreiben.
+
+Je nach der von Ihnen verwendeten Methode gibt es nun zwei Arten, um sich via SSH zu verbinden:
+
+#### 3.1 Über ein Terminal
+
+> [!warning]
+> Für unsere Shared Hosting Angebote gibt es keinen „Superuser“- oder „root“-Zugriff via SSH.
+
+Wenn das Terminal geöffnet ist, verwenden Sie folgenden Befehl und ersetzen Sie die Elemente „sshlogin“, „sshserver“ und „connectionport“ mit den entsprechenden Elementen aus Ihren SSH-Verbindungsinformationen. 
+
+```ssh
+ssh sshlogin@sshserver -p connectionport
 ```
 
+Nach Senden des Befehls werden Sie dazu aufgefordert, das Passwort des SSH-Benutzers einzugeben. Wenn Sie eingeloggt sind, können Sie zum nächsten Schritt „[Via SSH mit Ihrem Speicherplatz interagieren](./#schritt-4-via-ssh-mit-ihrem-speicherplatz-interagieren_1)“ übergehen.
 
-Außer dem Namen des Skripts müssen Sie auch angeben, wo es gespeichert ist.
-Wenn also z. B. Ihre Datei "meinScript.php" im "WWW" Verzeichnis liegt und Sie es in PHP-Version 5.3 ausführen wollen, brauchen Sie folgenden Befehl:
+![SSH verwenden](images/use-ssh-step3.png){.thumbnail}
+
+#### 3.2 Über eine Anwendung
+
+Wenn Sie die Anwendung (zum Beispiel PuTTY) geöffnet haben, geben Sie die SSH-Verbindungsinformationen ein. Das die Vorgehensweise vom verwendeten Programm abhängig ist, können wir diese hier nicht im Detail aufführen. Lesen Sie bei Bedarf die nachfolgenden Beschreibungen zu den anzugebenden Informationen:
+
+|Anzugebende Information|Beschreibung|
+|---|---|
+|SSH-Server|Geben Sie die [in Schritt 2](./#schritt-2-erforderliche-verbindungsinformationen-abrufen) erhaltene SSH-Serveradresse ein. Je nach verwendetem Programm sind verschiedene Bezeichnungen möglich: „Serveradresse“, „Host“. „Hostname“ etc.|
+|Verbindungsport|Geben Sie den [in Schritt 2](./#schritt-2-erforderliche-verbindungsinformationen-abrufen) erhaltenen Verbindungsport ein.|
+|SSH-Login|Geben Sie den SSH-Benutzer ein. Je nach verwendetem Programm sind verschiedene Bezeichnungen möglich: „Benutzername“, „Kennung“, „Login“, „Username“ etc.|
+|SSH-Benutzerpasswort|Geben Sie das Passwort des SSH-Benutzers ein.<br><br> Je nach verwendetem Programm sind verschiedene Bezeichnungen wie „Passwort“ oder „Kennwort“ möglich.|
+
+Wenn Sie eingeloggt sind, können Sie zum nächsten Schritt übergehen.
+
+### Schritt 4: Via SSH mit Ihrem Speicherplatz interagieren
+
+Um mit Ihrem Speicherplatz zu interagieren, müssen die entsprechenden Befehle verwendet werden. Jeder dieser Befehle hat eine direkte Bedeutung aus dem Englischen. Wenn Sie Hilfe brauchen, können Sie einige Bedeutungen in der nachstehenden Liste nachlesen. Bitte beachten Sie, dass **diese Liste nicht vollständig ist**.
+
+|Befehl|Englische Bedeutung|Beschreibung| 
+|---|---|---|
+|pwd|Print working directory|Zeigt das Arbeitsverzeichnis an, in dem Sie sich befinden.| 
+|cd `arg`|Change directory|Erlaubt das Ersetzen des Arbeitsverzeichnisses durch das Verzeichnis, dass anstelle von `arg` angegeben wird.|
+|cd `..`|Change directory|Erlaubt das Ändern des Arbeitsverzeichnisses, indem Sie in der Ordnerstruktur Ihrer Verzeichnisse um ein Level aufsteigen.|
+|cd|Change directory|Durch Auslassen des Arguments gelangt man mit diesem Befehl zurück ins Wurzelverzeichnis Ihres Speicherplatzes (home).|
+|ls|List|Listet den Inhalt des Arbeitsverzeichnisses auf. Sie können Attribute hinzufügen, um die Ergebnisanzeige des Befehls zu ändern (zum Beispiel `ls -ulhG`).| 
+|chmod `right` `arg`|Change mode|Ändert die Rechte der Datei oder des Verzeichnisses, das als Argument `arg` eingegeben wurde.| 
+|mkdir `arg`|Make directory|Erlaubt das Erstellen eines Verzeichnisses mit dem Namen des Arguments `arg`.| 
+|touch `arg`|Touch|Erstellt eine leere Datei (falls diese noch nicht existiert) mit dem als Argument `arg` eingegebenen Namen.|
+|rm `arg`|Remove|Löscht die als Argument `arg` benannte Datei.| 
+|rm -r `arg`|Remove|Löscht das als Argument `arg` benannte Verzeichnis inklusive aller Dateien und Unterordner (rekursiv).| 
+|mv `arg1` `arg2`|Move|Benennt ein als `arg1` eingegebenes Element um oder verschiebt dieses an einen neuen Speicherort (angegeben als `arg2`).| 
+
+Sie können über einen Befehl auch ein Skript ausführen, indem Sie eine bestimmte PHP-Version verwenden. Verwenden Sie zum Beispiel für die PHP-Version 7.1 den nachfolgenden Befehl. Passen Sie die enthaltenen Elemente an Ihre Situation an.
 
 ```sh
-php.ORIG.5_3 www/meinScript.php
-oder
-php.ORIG.5_3 /www/meinScript.php
+/usr/local/php7.1/bin/php myscript.php
 ```
 
+Je nach der PHP-Version, die Sie verwenden möchten, kann es sein, dass die Ausführungsumgebung aus Kompatibilitätsgründen angepasst werden muss. Weitere Informationen finden Sie in den unten aufgeführten Anleitungen.
 
+## Weiterführende Informationen
 
+[Konfiguration Ihres Webhostings bearbeiten](../die_laufzeitumgebung_meines_webhostings_andern/)
 
-## Unsere öffentlichen Schlüssel (Validierung bei der ersten SSH-Verbindung erforderlich)
-Wenn Sie sich zum ersten Mal mit dem Server verbinden, müssen Sie den öffentlichen Schlüssel validieren.
+[.ovhconfig-Datei Ihres Webhostings konfigurieren](../ovhconfig-datei-konfigurieren/)
 
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

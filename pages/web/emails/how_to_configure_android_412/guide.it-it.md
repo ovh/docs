@@ -17,7 +17,7 @@ Verifica che la connessione 3G o Wifi sia attiva.
 
 
 ## Parte 2: configurazione account email
-Inserisci il tuo indirizzo email completo e la password definita nel tuo [Spazio Cliente OVH](https://www.ovh.com/managerv3/) per il tuo account email.
+Inserisci il tuo indirizzo email completo e la password definita nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager) per il tuo account email.
 
 Clicca su "Configurazione manuale" per continuare.
 
@@ -37,7 +37,7 @@ Inserisci le informazioni del tuo account per proseguire
 
 "Nome utente": il tuo indirizzo email completo
 
-"Password": password che hai definito nel tuo [Spazio Cliente](https://www.ovh.com/managerv3/).
+"Password": password che hai definito nel tuo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager).
 
 "Server POP3": inserisci SSL0.OVH.NET
 
@@ -63,7 +63,7 @@ Inserisci le informazioni del tuo account email condiviso per il server in uscit
 
 "Nome utente": indirizzo email completo
 
-"Password": password inserita nel tuo [Spazio Cliente OVH](https://www.ovh.com/managerv3/).
+"Password": password inserita nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager).
 
 Clicca su "Avanti" per continuare.
 
@@ -103,7 +103,7 @@ Queste sono le informazioni da inserire nella configurazione IMAP per il tuo ser
 
 "Nome utente": il tuo indirizzo mail completo
 
-"Password": password definita nel tuo [Spazio Cliente OVH](https://www.ovh.com/managerv3/)
+"Password": password definita nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager)
 
 "Server IMAP": inserisci SSL0.OVH.NET
 
@@ -123,7 +123,7 @@ Queste sono le informazioni di configurazione IMAP per il server in uscita.
 
 "Nome utente": il tuo indirizzo email completo.
 
-"Password": password definita nel [Spazio Cliente OVH](https://www.ovh.com/managerv3/).
+"Password": password definita nel [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager).
 
 
 ## Configurazione POP
@@ -132,7 +132,7 @@ Ecco le informazioni che devi avere per configurare un indirizzo email POP.
 Configurazione POP con protocollo SSL attivato o disattivato: 
 
 Indirizzo Email: il tuo indirizzo email completo.
-Password: la password che hai indicato nello [Spazio Cliente OVH](https://www.ovh.com/managerv3/).
+Password: la password che hai indicato nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager).
 Nome utente: il tuo indirizzo email completo.
 Server in entrata: il server di ricezione delle email: SSL0.OVH.NET
 Porta server in entrata: La porta del server in entrata: 995 o 110
@@ -159,7 +159,7 @@ Ecco le informazioni che devi avere per configurare un indirizzo email IMAP.
 Configurazione IMAP con protocollo SSL attivato o disattivato: 
 
 Indirizzo Email: il tuo indirizzo email completo.
-Password: la password che hai indicato nello [Spazio Cliente OVH](https://www.ovh.com/managerv3/).
+Password: la password che hai indicato nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager).
 Nome utente: il tuo indirizzo email completo.
 Server in entrata: il server di ricezione delle email: SSL0.OVH.NET
 Porta server in entrata: La porta del server in entrata: 993 o 143

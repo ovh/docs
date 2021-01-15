@@ -22,7 +22,7 @@ Se precisa de configurar um endereço IP Failover numa das suas instâncias, que
 ## Requisitos
 
 * acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
-* um [endereço IP Failover](https://www.ovh.pt/servidores_dedicados/ip_failover.xml){.external} associado a um [servidor dedicado OVH](https://www.ovh.pt/servidores_dedicados/){.external}.
+* um [endereço IP Failover](https://www.ovhcloud.com/pt/bare-metal/ip/){.external}
 
 ## Instruções
 

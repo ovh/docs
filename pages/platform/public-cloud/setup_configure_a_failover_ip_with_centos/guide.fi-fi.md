@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'FailOver IP -osoitteen konfigurointi CentOS:ssa'
 excerpt: 'FailOver IP -osoitteen konfigurointi CentOS:ssa'
 slug: failover_ip_-osoitteen_konfigurointi_centosssa

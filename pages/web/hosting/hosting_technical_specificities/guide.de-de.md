@@ -30,8 +30,6 @@ section: 'Webhosting-Konfiguration'
 
 - FTP-Verbindungen müssen den **passiven Modus** verwenden. Stellen Sie sicher, dass Ihre Skripte bzw. Ihr FTP-Client entsprechend angepasst sind.
 
-- Für den Login via **SFTP** ist mindestens ein [**Pro Webhosting**](https://www.ovh.de/hosting/) oder höheres Angebot erforderlich. Sie können Ihr Angebot direkt in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) upgraden („Allgemeine Informationen“, „Abo“, „Upgraden“).
-
 ### Datenbank / SQL
 
 ### Simultane Verbindungen mit der Datenbank
@@ -88,7 +86,7 @@ PHP-FPM ist auf der Webhosting Infrastruktur standardmäßig aktiviert, um PHP-A
 
 |Variable|ohne PHP-FPM|mit PHP-FPM|
 |---|---|---|
-|max_execution_time|120s|300s|
+|max_execution_time|120s|165s|
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 
@@ -117,7 +115,7 @@ Bitte lesen Sie die entsprechenden Informationsseiten, um die für Ihr Webhostin
 
 Verschiedene Informationen zu Ihrem Cluster finden Sie jeweils über den Cluster-Link: <http://cluster015.hosting.ovh.net/infos/>
 
-Ersetzen Sie die Zahlen in der URL mit Ihrer Clusternummer. Um herauszufinden, in welchem Webhosting Cluster sich Ihr Dienst befindet, loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und wählen Sie im oberen Menü `Web`{.action} aus. Klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie dann auf den Tab `FTP - SSH`{.action}. Die Nummer des Clusters ist hier unter "FTP-Server" abzulesen.
+Ersetzen Sie die Zahlen in der URL mit Ihrer Clusternummer. Um herauszufinden, in welchem Webhosting Cluster sich Ihr Dienst befindet, loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und wählen Sie im oberen Menü `Web Cloud`{.action} aus. Klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie dann auf den Tab `FTP - SSH`{.action}. Die Nummer des Clusters ist hier unter "FTP-Server" abzulesen.
 
 Die technischen Eigenschaften des Cloud Web Angebots können Sie über folgenden Link einsehen: <https://cloudweb-infos.hosting.ovh.net/>.
 

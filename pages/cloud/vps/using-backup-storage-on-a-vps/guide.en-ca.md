@@ -6,7 +6,7 @@ section: 'Backup options'
 order: 1
 ---
 
-**Last updated 21st July 2020**
+**Last updated 23rd September 2020**
 
 
 ## Objective
@@ -28,7 +28,7 @@ Before applying backup options, we recommend to consult the [VPS options](https:
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), navigate to the "Server" section, and select your server from the left-hand sidebar under `VPS`{.action}.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), navigate to the "Bare Metal Cloud" section, and select your server from the left-hand sidebar under `VPS`{.action}.
 
 ### Step 1: Subscribing to the snapshot option
 
@@ -73,10 +73,16 @@ $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
-Start the service to ensure it is running:
+Reboot the VPS:
 
 ```
-$ sudo service qemu-guest-agent start
+$ sudo reboot
+```
+
+Check the service to ensure it is running:
+
+```
+$ sudo service qemu-guest-agent status
 ```
 
 ##### **Redhat-based distributions (Centos, Fedora)**
@@ -95,10 +101,15 @@ $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
-Start the agent and verify that it is running:
+Reboot the VPS:
 
 ```
-$ sudo service qemu-guest-agent start
+$ sudo reboot
+```
+
+Check the service to ensure it is running:
+
+```
 $ sudo service qemu-guest-agent status
 ```
 
@@ -118,6 +129,6 @@ Running  QEMU-GA            QEMU Guest Agent
 
 ## Go further
 
-[Using automated backups on a VPS](https://docs.ovh.com/ca/en/vps/using-automated-backups-on-a-vps)
+[Using automated backups on a VPS](../using-automated-backups-on-a-vps)
 
 Join our community of users on <https://community.ovh.com/en/>.

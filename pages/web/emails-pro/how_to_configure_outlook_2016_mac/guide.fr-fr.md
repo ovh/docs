@@ -38,9 +38,9 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 
 > [!primary]
 >
-> Dans notre exemple, nous utilisons la mention serveur : pro**X**.mail.ovh.net. Vous devrez remplacer le « X » par le chiffre désignant le serveur de votre service E-mail Pro.
+> Dans notre exemple, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
 > 
-> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web`{.action} puis `E-mail Pro`{.action}
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}
 >  dans la colonne de gauche. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 > 
 
@@ -60,9 +60,9 @@ Renseignez à présent votre adresse e-mail puis cliquez sur `Continuer`{.action
 |Adresse de courrier|Renseignez un nom vous permettant de reconnaître ce compte parmi d'autres affichés dans votre application Outlook.|
 |Nom d'utilisateur|Renseignez l'adresse e-mail complète.|
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|
-|Serveur entrant|Renseignez le serveur « pro**X**.mail.ovh.net ». Laissez cochée la case **Utiliser SSL pour se connecter**.|
+|Serveur entrant|Renseignez le serveur « pro**?**.mail.ovh.net ». Laissez cochée la case **Utiliser SSL pour se connecter**.|
 |Port entrant|Renseignez le port « 993 ».|
-|Serveur sortant|Renseignez le serveur « pro**X**.mail.ovh.net ». Laissez cochée la case **Utiliser SSL pour se connecter**.|
+|Serveur sortant|Renseignez le serveur « pro**?**.mail.ovh.net ». Laissez cochée la case **Utiliser SSL pour se connecter**.|
 |Port sortant|Renseignez le port « 587 ».|
 
 Une fois les informations complétées, cliquez sur `Ajouter un compte`{.action}. Si celles-ci sont correctes, la connexion au compte réussira.
@@ -75,8 +75,8 @@ Si vous devez renseigner manuellement des champs techniques dans les préférenc
 
 |Type de serveur|Nom du serveur|SSL|Port|
 |---|---|---|---|
-|Entrant|pro**X**.mail.ovh.net|Oui|993|
-|Sortant|pro**X**.mail.ovh.net|Oui|587|
+|Entrant|pro**?**.mail.ovh.net|Oui|993|
+|Sortant|pro**?**.mail.ovh.net|Oui|587|
 
 ### Étape 2 : utiliser l'adresse e-mail
 

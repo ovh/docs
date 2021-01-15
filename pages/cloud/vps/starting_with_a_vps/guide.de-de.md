@@ -6,7 +6,7 @@ section: 'Erste Schritte'
 order: 1
 ---
 
-**Letzte Aktualisierung am 15.06.2020**
+**Letzte Aktualisierung am 11.01.2021**
  
 ## Ziel
 
@@ -30,16 +30,16 @@ Ein Virtual Private Server oder VPS ist ein virtualisierter dedizierter Server. 
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Server`{.action} und wählen Sie links im Menü unter `VPS`{.action} Ihren Server aus. 
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie links im Menü unter `VPS`{.action} Ihren Server aus. 
 
 Dieses Dashboard enthält wichtige Informationen zu Ihrem Dienst und erlaubt Ihnen, grundlegende Operationen auszuführen. Es unterscheidet sich je nach Reihe Ihres VPS. 
 
 - Wenn Sie gerade erst einen VPS bestellt haben, sieht seine Referenz wie folgt aus: *vps-XXXXXXX.vps.ovh.net* (*X* sind eine Folge aus Ziffern und Buchstaben). 
 - Wenn Sie einen älteren VPS verwalten, ist dessen Referenz anders strukturiert: *vpsXXXX.ovh.net* (hier sind *X* stets Zahlen). 
 
-Zu einem VPS Service der aktuellen Reihe lesen Sie den nachfolgenden Abschnitt, **Erste Schritte (aktuelle VPS Reihe)**. 
+Zu einem VPS Service der aktuellen Reihe lesen Sie den nachfolgenden Abschnitt: **Erste Schritte (aktuelle VPS Reihe)**. 
 
-Für Informationen zur Verwendung älterer VPS Modelle, klicken Sie auf folgenden Link: [Erste Schritte (alte VPS Reihe)](./#erste-schritte-alte-vps-reihe_1).
+Für Informationen zur Verwendung älterer VPS Modelle, fahren Sie weiter unten fort unter [Erste Schritte (alte VPS Reihe)](./#erste-schritte-alte-vps-reihe_1).
 
 ### Erste Schritte (aktuelle VPS Reihe)
 
@@ -63,7 +63,7 @@ ssh nutzername@IPv4_Ihres_VPS
 Da Sie nun mit "Root"-Berechtigungen (sudo-Nutzer) eingeloggt sind, können Sie Befehle zur Ausführung administrativer Tasks eingeben. Wir empfehlen Ihnen, vorher Ihr Passwort zu ändern:
 
 ```sh
-$ sudo passwd
+~$ sudo passwd
 New password:
 Retype new password:
 passwd: password updated successfully
@@ -72,12 +72,16 @@ passwd: password updated successfully
 Beachten Sie, dass die Passwörter nicht angezeigt werden. Wechseln Sie anschließend zum root-Nutzer und vergeben Sie Ihr Admin-Passwort:
 
 ```sh
-$ sudo su -
-# passwd
+~$ sudo su -
+~# passwd
 New password:
 Retype new password:
 passwd: password updated successfully
 ```
+
+#### Aktivierung der Root-Verbindungen
+
+Aus Sicherheitsgründen ist die Verbindung mit dem Root-Benutzer standardmäßig deaktiviert. Wenn Sie diese Verbindungen erlauben möchten, folgen Sie den Instruktionen in [dieser Anleitung](../root-password/#rooterlauben).
 
 #### VPS installieren oder neu installieren (aktuelle Reihe)
 
@@ -94,7 +98,7 @@ Es wird ein Fenster geöffnet, in dem Sie Folgendes auswählen:
 
 > [!primary]
 >
->Einige Betriebssysteme bzw. Verwaltungsoberflächen wie Plesk oder cPanel benötigen Lizenzen, die zusätzliche Kosten verursachen. Lizenzen können im OVHcloud Kundencenter verwaltet werden: gehen Sie zum Bereich `Server`{.action} und klicken Sie in der linken Menüleiste auf `Lizenzen`{.action}.
+>Einige Betriebssysteme bzw. Verwaltungsoberflächen wie Plesk oder cPanel benötigen Lizenzen, die zusätzliche Kosten verursachen. Lizenzen können im OVHcloud Kundencenter verwaltet werden: gehen Sie zum Bereich `Bare Metal Cloud`{.action} und klicken Sie in der linken Menüleiste auf `Lizenzen`{.action}.
 >
 Um ein **Windows** Betriebssystem auf einem VPS zu betreiben, muss es **bei der Bestellung des Dienstes** ausgewählt werden. Ein VPS mit einem anderen Betriebssystem kann nicht nachträglich auf dem beschriebenen Weg mit Windows reinstalliert werden.
 >
@@ -136,14 +140,14 @@ Es wird ein Fenster geöffnet, in dem Sie Folgendes auswählen:
 
 - Ihr Betriebssystem aus dem Drop-down-Menü
 - die Nutzersprache
-- einen SSH-Schlüssel, falls Sie in Ihrem Kundencenter bereits einen Schlüssel erstellt haben
+- einen SSH-Schlüssel, falls Sie in Ihrem Kundencenter bereits einen Schlüssel erstellt haben.
 
 
 ![Auswahlmenü für die Neuinstallation](images/reinstall_menu.png){.thumbnail}
 
 > [!primary]
 >
->Einige Betriebssysteme bzw. Verwaltungsoberflächen wie Plesk oder cPanel benötigen Lizenzen, die zusätzliche Kosten verursachen. Lizenzen können im OVHcloud Kundencenter verwaltet werden: gehen Sie zum Bereich `Server`{.action} und klicken Sie in der linken Menüleiste auf `Lizenzen`{.action}.
+>Einige Betriebssysteme bzw. Verwaltungsoberflächen wie Plesk oder cPanel benötigen Lizenzen, die zusätzliche Kosten verursachen. Lizenzen können im OVHcloud Kundencenter verwaltet werden: gehen Sie zum Bereich `Bare Metal Cloud`{.action} und klicken Sie in der linken Menüleiste auf `Lizenzen`{.action}.
 >
 Um ein **Windows** Betriebssystem auf einem VPS zu betreiben, muss es **bei der Bestellung des Dienstes** ausgewählt werden. Ein VPS mit einem anderen Betriebssystem kann nicht nachträglich auf dem beschriebenen Weg mit Windows reinstalliert werden.
 >
@@ -169,4 +173,4 @@ Sie können aber auch die automatische Lösung von OVHcloud nutzen: [SSL Gateway
 
 [SSH Einführung](../../dedicated/ssh-einfuehrung/)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

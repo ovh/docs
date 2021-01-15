@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Configuratie van een dynamische DNS voor een domeinnaam'
 slug: hosting_dynhost
 excerpt: 'Ontdek hoe u een dynamisch DNS-record (DynHost) voor uw OVH domeinnaam kunt configureren'

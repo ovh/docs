@@ -1,5 +1,5 @@
 ---
-title: 'Réagir en cas d'indisponibilité de vos e-mails'
+title: "Réagir en cas d'indisponibilité de vos e-mails"
 slug: utilisation-avancee-des-e-mails
 legacy_guide_number: 2117
 excerpt: 'Vous trouverez dans ce guide differentes informations concernant les services e-mails chez OVHcloud.'

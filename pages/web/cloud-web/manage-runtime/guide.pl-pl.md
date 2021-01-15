@@ -16,7 +16,7 @@ W ramach Cloud Web udostępniamy różne języki programowania do tworzenia Twoj
 ## Wymagania początkowe
 
 - Posiadanie hostingu [Cloud Web](https://www.ovh.pl/hosting/cloud-web.xml)
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), sekcja `Web`{.action}
+- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), sekcja `Web Cloud`{.action}
 
 ## W praktyce
 

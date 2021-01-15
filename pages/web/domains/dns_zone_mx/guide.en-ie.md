@@ -47,6 +47,7 @@ In the table below, we have listed the OVH MX configuration to use for our MX Pl
 |*leave blank*|3600|MX|5|mx1.mail.ovh.net.|
 |*leave blank*|3600|MX|50|mx2.mail.ovh.net.|
 |*leave blank*|3600|MX|100|mx3.mail.ovh.net.|
+|*leave blank*|3600|MX|200|mx4.mail.ovh.net.|
 
 You will now need to add these MX records to your domain name’s DNS zone configuration. The next step will help you do so, in your domain name’s OVH DNS zone.
 
@@ -77,6 +78,6 @@ Once you have entered the information, finalise the steps, then click `Confirm`{
 
 [General information about DNS servers](https://docs.ovh.com/ie/en/domains/web_hosting_general_information_about_dns_servers/){.external}
 
-[Web hosting: How to edit your DNS zone](https://docs.ovh.com/ie/en/domains/hosting_how_to_edit_my_dns_zone/){.external}.
+[Web hosting: How to edit your DNS zone](https://docs.ovh.com/ie/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
 
 Join our community of users on <https://community.ovh.com/en/>.

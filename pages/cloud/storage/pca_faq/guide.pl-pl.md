@@ -29,11 +29,11 @@ Odblokowywanie archiwum polega na przesłaniu zlecenia odblokowania.
 
 Odblokowanie może zostać wykonane za pomocą:
 
-- [Panelu klienta](../unlock/guide.pl-pl.md){.ref}
-- [API Openstack](../dev/guide.pl-pl.md){.ref}
+- [Panelu klienta](../../)
+- [API Openstack](../../)
 - Protokołów opartych na SSH
 
 Status operacji można sprawdzić za pomocą:
 
-- [Panelu klienta](../unlock/guide.pl-pl.md){.ref}
-- [API Openstack](../dev/guide.pl-pl.md){.ref}
+- [Panelu klienta](../../)
+- [API Openstack](../../)

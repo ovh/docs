@@ -6,7 +6,7 @@ section: Sauvegarde
 order: 1
 ---
 
-**Dernière mise à jour le 21/07/2020**
+**Dernière mise à jour le 23/09/2020**
 
 ## Objectif
 
@@ -26,7 +26,7 @@ Un snapshot ne constitue pas pour autant une sauvegarde complète du système.
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, onglet `Server`{.action}. Cliquez sur `VPS`{.action} dans la barre de services à gauche, puis choisissez le serveur VPS concerné.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, onglet `Bare Metal Cloud`{.action}. Cliquez sur `VPS`{.action} dans la barre de services à gauche, puis choisissez le serveur VPS concerné.
 
 ### Étape 1 : souscrire l'option snapshot
 
@@ -72,10 +72,17 @@ $ sudo apt-get update
 $ sudo apt-get install qemu-guest-agent
 ```
 
-Démarrez le service pour vous assurer qu'il est en cours d'exécution :
+Redémarrez le vps :
 
 ```
-$ sudo service qemu-guest-agent start
+$ sudo reboot`
+```
+
+
+Vérifier le service pour vous assurer qu'il est en cours d'exécution :
+
+```
+$ sudo service qemu-guest-agent status
 ```
 
 ##### **Distributions Redhat (CentOS, Fedora)**
@@ -94,10 +101,15 @@ $ sudo yum install qemu-guest-agent
 $ sudo chkconfig qemu-guest-agent on
 ```
 
-Démarrez l'agent et vérifiez qu'il est en cours d'exécution :
+Redémarrez le vps :
 
 ```
-$ sudo service qemu-guest-agent start
+$ sudo reboot
+```
+
+Vérifier l'agent et vérifiez qu'il est en cours d'exécution :
+
+```
 $ sudo service qemu-guest-agent status
 ```
 

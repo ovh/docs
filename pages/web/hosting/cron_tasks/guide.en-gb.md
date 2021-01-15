@@ -28,7 +28,7 @@ On OVHcloud Web Hostings, you can use scripts to automate certain operations. Cr
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, navigate to the `Scheduled jobs - Cron`{.action} tab by selecting it in the `More +`{.action} submenu.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, navigate to the `Scheduled jobs - Cron`{.action} tab by selecting it in the `More +`{.action} submenu.
 
 In this section you will see an overview of your scheduled jobs and their settings.
 
@@ -66,7 +66,7 @@ The interface offers two modes to configure the frequency of your task. Use the 
 |Enter numeric values as you would in a *crontab*. The asterisk operator denotes "every value" of the time period, meaning the task would continuously run **once an hour every day** in this example.|
 |![cron frequency](images/cron-jobs-4.png){.thumbnail}|
 
-You can switch between the two modes during configuration to view the changes accordingly. Please also note the [limitations when scheduling a task on a Web Hosting](./#limitations-of-web-hosting-tasks).
+You can switch between the two modes during configuration to view the changes accordingly. Please also note the [limitations when scheduling a task on a Web Hosting](./#limitations-of-web-hosting-tasks_1).
 
 ![cron control panel](images/cron-jobs-5.gif){.thumbnail}
 
@@ -81,7 +81,7 @@ The task will be ready within a few minutes. You can then modify all of its sett
 
 ### Limitations of Web Hosting tasks
 
-|Step|Description|
+|Functionality|Description|
 |---|---|
 |Hourly scheduling|You might notice that the field for "Minutes of the hour" is disabled in the interface (set to "?" in the *crontab* view). A task can only be executed once an hour as the highest repetition frequency and the minute of execution cannot be specified.|
 |Running time|The time limit for a task is 60 minutes. If a script exceeds this running time, it will be stopped automatically by the system.|
@@ -99,7 +99,7 @@ A simple test to see if your script will produce an error is to run it in a web 
 
 #### Verifying the usage of absolute paths
 
-Always make sure to use absolute paths to files in your scripts. The "DIR" constant, for example, can help to receive the current path in PHP scripts ([PHP documentation](http://php.net/manual/en/language.constants.predefined.php)).
+Always make sure to use absolute paths to files in your scripts. The "DIR" constant, for example, can help to receive the current path in PHP scripts ([PHP documentation](http://php.net/manual/en/language.constants.predefined.php){.external}).
  
 #### Checking your execution logs
 
@@ -138,8 +138,8 @@ Please refer to [this guide](../shared_view_my_websites_logs_and_statistics/) fo
 - Example of a failed execution output because of a permissions error (chmod) or incorrect configuration of the .ovhconfig file
 
 ```
-[2020-08-11 18:07:10]
 [2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
+[2020-08-11 18:07:10]
 [2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
 ```
 

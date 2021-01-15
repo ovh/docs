@@ -210,7 +210,7 @@ Gdy wgrywasz archiwum, usługa OVH Public Cloud Archive aktualizuje spis zawarto
 
 W celu wprowadzenia obsługi funkcji dla przestrzeni dyskowej do archiwizacji, OVH nieznacznie zmodyfikowało generowanie spisu zawartości w porówaniu z infrastrukturami Openstack Swift, w celu zawarcia dodatkowych informacji związanych z procesem przechowywania danych. Dzięki temu posiadasz najważniejsze informacje o swoim archiwum, takie jak status odblokowywania oraz czas odzyskiwania.
 
-Więcej informacji [tutaj](../api/guide.pl-pl.md){.ref}.
+Więcej informacji [tutaj](https://docs.ovh.com/pl/storage/pca/api/).
 
 **Składnia**
 
@@ -353,7 +353,7 @@ OVH Public Cloud Archive pozwala na przechowywanie danych w atrakcyjnej cenie, k
 
 Zapytanie dotyczące odblokowania archiwum jest identyczne do zapytania o pobranie archiwum. Jedynie odpowiedź wysłana przez OVH Public Cloud Archive się różni i jest to charakterystyczne dla infrastruktury Openstack Swift uruchomionej przez OVH. Wysłane zapytanie o odblokowanie archiwum nie może zostać anulowane. Kolejne zapytania o odblokowanie będą się odnosić do operacji w trakcie.
 
-Więcej informacji na ten [temat](../api/guide.pl-pl.md){.ref}.
+Więcej informacji na ten [temat](https://docs.ovh.com/pl/storage/pca/api/).
 
 **Składnia**
 

@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Podvodné e-maily a phishing'
 slug: podvodne-emaily-phishing
 excerpt: 'Jak poznat, že jste se stali obětí phishingu? Jak v podobných případech postupovat?'

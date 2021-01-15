@@ -3,7 +3,7 @@ title: 'Uruchomienie testu obciążeniowego infrastruktury'
 slug: tryb-resilience
 excerpt: 'Dowiedz się, jak uruchomić tryb Resilience i przeprowadzić test obciążenia infrastruktury'
 legacy_guide_number: '7766742'
-section: 'Funkcjonalności OVH'
+section: 'Funkcjonalności OVHcloud'
 ---
 
 **Ostatnia aktualizacja z dnia 26-10-2018**

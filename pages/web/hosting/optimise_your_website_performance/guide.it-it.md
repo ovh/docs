@@ -1,6 +1,6 @@
 ---
 title: 'Ottimizza le performance del tuo sito'
-excerpt: 'Guida all''ottimizzazione delle performance del tuo sito'
+excerpt: "Guida all'ottimizzazione delle performance del tuo sito"
 id: '1396'
 slug: web_hosting_ottimizza_le_performance_del_tuo_sito
 legacy_guide_number: g1396
@@ -64,7 +64,7 @@ Utilizzando PHP-FPM cambiano alcune variabili del server:
 
 |Variabile|senza PHP-FPM|con PHP-FPM|
 | ------------- |:-------------:| -----:|
-|max_execution_time|120s|300s|
+|max_execution_time|120s|165s|
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 

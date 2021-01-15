@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Wijziging van de DNS-servers voor een OVH-domeinnaam'
 slug: gedeelde_hosting_algemene_informatie_over_dns_servers
 excerpt: 'DNS-servers voor een OVH-domeinnaam wijzigen'

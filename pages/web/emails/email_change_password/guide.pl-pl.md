@@ -17,7 +17,7 @@ Dzięki kontom e-mail MX Plan możesz wysyłać i odbierać wiadomości, korzyst
 ## Wymagania początkowe
 
 - Wykupienie usługi MX Plan Jest ona dostępna w ramach oferty: [Hosting]({ovh_www}/hosting/){.external}, [Hosting Start 10M]({ovh_www}/domeny/oferta_serwer_start10m.xml){.external} lub oferty MX Plan zamówionej oddzielnie.
-- W zależności od metody, z której korzystasz: zalogowanie do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Web`{.action} lub zalogowanie do konta e-mail za pośrednictwem interfejsu [Webmail]({ovh_www}/mail/){.external} Outlook Web Access (OWA).
+- W zależności od metody, z której korzystasz: zalogowanie do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Web Cloud`{.action} lub zalogowanie do konta e-mail za pośrednictwem interfejsu [Webmail]({ovh_www}/mail/){.external} Outlook Web Access (OWA).
 
 > [!primary]
 >
@@ -105,7 +105,7 @@ Po zmianie hasła kliknij przycisk `Zatwierdź`{.action}. Nowe hasło będzie ak
 
 Po zmianie hasła możesz zalogować się do konta e-mail. Możesz to zrobić na dwa różne sposoby.
 
-- Zaloguj się na stronie **Logowanie do interfejsu Webmail**, po czym wprowadź odpowiedni adres e-mail oraz hasło. Jeśli właśnie zmieniłeś hasło i uwierzytelnienie nie powiodło się, odczekaj kilka chwil, następnie spróbuj zalogować się ponownie. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail RoundCube, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail RoundCube](../korzystanie-roundcube/){.external}.
+- Zaloguj się na stronie **Logowanie do interfejsu Webmail**, po czym wprowadź odpowiedni adres e-mail oraz hasło. Jeśli właśnie zmieniłeś hasło i uwierzytelnienie nie powiodło się, odczekaj kilka chwil, następnie spróbuj zalogować się ponownie. Aby dowiedzieć się, jak korzystać z konta e-mail za pośrednictwem Webmail RoundCube, zapoznaj się z naszym przewodnikiem [Korzystanie z konta e-mail w interfejsie Webmail RoundCube](../webmail_przewodnik_dotyczacy_interfejsu_roundcube){.external}.
 
 - **Użyj kompatybilnego programu pocztowego**: konieczne jest wprowadzenie nowego hasła we wszystkich urządzeniach, w których konto e-mail zostało skonfigurowane. W przypadku niektórych programów pocztowych okno, do którego należy wpisać nowe hasło do konta e-mail wyświetli się automatycznie. Jeśli tak się nie stanie, [skorzystaj z naszych przewodników dotyczących konfiguracji](../) lub skontaktuj się z producentem używanego przez Ciebie oprogramowania.
 

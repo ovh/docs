@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: OVH Sharepoint įjungimas ir valdymas
 excerpt: OVH Sharepoint įjungimas ir valdymas
 slug: ovh_sharepoint_ijungimas_ir_valdymas

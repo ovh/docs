@@ -46,9 +46,9 @@ Cet ajout peut s'effectuer de deux manières différentes :
 
 > [!primary]
 >
-> Dans notre exemple, nous utilisons la mention serveur : pro**X**.mail.ovh.net. Vous devrez remplacer le « X » par le chiffre désignant le serveur de votre service E-mail Pro.
+> Dans notre exemple, nous utilisons la mention serveur : pro**?**.mail.ovh.net. Vous devrez remplacer le « ? » par le chiffre désignant le serveur de votre service E-mail Pro.
 > 
-> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web`{.action} puis `E-mail Pro`{.action}
+> Retrouvez ce chiffre dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web Cloud`{.action} puis `E-mail Pro`{.action}
 >  dans la colonne de gauche. Le nom du serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}.
 > 
 
@@ -73,8 +73,8 @@ Cliquez à présent sur le bouton `Se connecter`{.action}. Un message vous invit
 |Information|Description|  
 |---|---|  
 |Type de compte|Laissez IMAP déjà sélectionné dans le menu déroulant.| 
-|Serveur de réception|Renseignez le serveur « pro**X**.mail.ovh.net ».| 
-|Serveur d'envoi|Renseignez le serveur « pro**X**.mail.ovh.net ».|  
+|Serveur de réception|Renseignez le serveur « pro**?**.mail.ovh.net ».| 
+|Serveur d'envoi|Renseignez le serveur « pro**?**.mail.ovh.net ».|  
 
 Cliquez de nouveau sur le bouton `Se connecter`{.action}. Si les informations renseignées sont correctes, la connexion au compte réussira.
 
@@ -88,8 +88,8 @@ Si vous êtes amené à renseigner manuellement des paramètres dans les préfé
 
 |Type de serveur|Nom du serveur|SSL|Port|
 |---|---|---|---|
-|Entrant|pro**X**.mail.ovh.net|Oui|993|
-|Sortant|pro**X**.mail.ovh.net|Oui|587|
+|Entrant|pro**?**.mail.ovh.net|Oui|993|
+|Sortant|pro**?**.mail.ovh.net|Oui|587|
 
 ### Étape 2 : utiliser l'adresse e-mail
 

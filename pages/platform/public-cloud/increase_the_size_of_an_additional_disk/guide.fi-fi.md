@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Lisälevyn koon kasvattaminen
 excerpt: Lisälevyn koon kasvattaminen
 slug: lisalevyn_koon_kasvattaminen

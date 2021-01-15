@@ -32,11 +32,16 @@ Za sprawą interfejsu [webmail](https://www.ovh.pl/mail/){.external} w każdej c
 
 **Wskazówki i porady**: Jeśli konfigurujesz konto e-mail w programie pocztowym, zalecamy użycie protokołu IMAP. Dzięki temu wiadomości e-mail będą przechowywane na serwerze i będzie można uzyskać do nich dostęp z dowolnego miejsca za pomocą interfejsu [webmail](https://www.ovh.pl/mail/){.external}. W tym celu przejdź do [naszej dokumentacji](../hosting_www_informacje_ogolne_o_kontach_e-mail_ovh/).
 
-### Jak zarządzać moimi usługami e-mail? 
+### Zarządzanie usługami e-mail 
 
-Wszystkimi Twoimi adresami e-mail możesz zarządzać w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. W tym celu zaloguj się i przejdź do danego produktu. W Panelu możesz także zmienić hasło do kont e-mail, sprawdzić stan zapełnienia skrzynki, utworzyć nowe adresy lub usunąć istniejące.
+Wszystkimi Twoimi kontami e-mail zarządzasz w [Panelu klienta OVHcloud] (https://www.ovh.com/auth/?action=gotomanager){.external}. Zaloguj się do Panelu klienta i przejdź do odpowiedniej usługi. Możesz zmienić hasła do kont e-mail, sprawdzić dostępne miejsce na każdym z kont, utworzyć nowe konta lub usunąć istniejące. 
 
-**Wskazówki i porady**: W ofertach e-mail MX Plan możesz powierzyć zarządzanie kontem e-mail innemu kontu OVHcloud, zachowując jednocześnie kontrolę nad kontem e-mail. W tym celu w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} skonfiguruj nadanie uprawnień. Przejdź do [naszej dokumentacji](../deleguer-gestion-emails-autre-identifiant/). 
+**Porady i podpowiedzi**: Dzięki rozwiązaniom poczty elektronicznej MX Plan możesz delegować uprawnienia do zarządzania kontem e-mail innemu kontu OVHcloud, jednocześnie zachowując nad nim kontrolę. Nadaj uprawnienia odpowiedniemu kontu w [Panelu klienta OVHcloud] (https://www.ovh.com/auth/?action=gotomanager){.external}. W tym celu zaloguj się do Panelu klienta OVHcloud, przejdź do sekcji „Konta e-mail” i wybierz odpowiednią domenę. Następnie przejdź do zakładki „Konta e-mail” i wybierz opcję:
+
+- `Zarządzaj elementami współdzielonymi przez wszystkie konta e-mail`{.action} po prawej stronie, jeśli chcesz delegować uprawnienia do zarządzania wszystkimi kontami dla tej domeny
+- `Zarządzanie delegacjami uprawnień`{.action}, jeśli chcesz delegować uprawnienia do zarządzania określonym kontem (kliknij `...`{.action} obok konta)  
+
+Pamiętaj, że w przypadku obu opcji wymagane jest podanie identyfikatora klienta OVHcloud (NIC).
 
 ### Jak ograniczyć ilość otrzymywanego spamu? 
 

@@ -2,7 +2,7 @@
 Title: Managing an OVH Office 365 Reseller service (CSP2) 
 slug: order-and-manage-a-group-of-ovh-office-365-csp2-reseller-licences
 excerpt: Learn how to manage an Office 365 Reseller (CSP) program at OVH
-section: Office 365
+section: Office
 ---
 
 **Last updated 9th January, 2018**

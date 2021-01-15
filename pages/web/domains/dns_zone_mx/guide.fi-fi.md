@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: MX-kentän lisäys verkkotunnuksen konfiguraatioon
 excerpt: Opi lisäämään MX-kenttä verkkotunnukseesi OVH:lla
 slug: webhotellin_sahkoposti_opas_mx-konfiguraatioon_dns-alueella

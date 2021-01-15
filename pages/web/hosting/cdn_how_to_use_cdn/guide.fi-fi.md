@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Ohje GeoCache Kiihdytin -palvelun käyttöön webhotellissa
 excerpt: Käyttöohje webhotellipalveluun sisältyvälle GeoCache Kiihdytin -palvelulle
 id: '1290'

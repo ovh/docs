@@ -46,9 +46,9 @@ Od tego momentu niniejszy przewodnik opisuje jedynie konfigurację kont e-mail p
 
 > [!primary]
 >
-> W przewodniku używamy oznaczenia serwera: pro**X**.mail.ovh.net. Zastąp “X” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
+> W przewodniku używamy oznaczenia serwera: pro**?**.mail.ovh.net. Zastąp “?” cyfrą oznaczającą serwer powiązany z Twoją usługą E-mail Pro.
 > 
-> Odszukaj cyfrę w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, w sekcji `Web`{.action} =>  `E-mail Pro`{.action} => w kolumnie po lewej stronie. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
+> Odszukaj cyfrę w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, w sekcji `Web Cloud`{.action} =>  `E-mail Pro`{.action} => w kolumnie po lewej stronie. Nazwa serwera jest widoczna w ramce *Logowanie* w zakładce `Informacje ogólne`{.action}.
 >
 
 Po uruchomieniu aplikacji Mail na Twoim urządzeniu możesz dodać konto, korzystając z jednej z dwóch dostępnych metod.
@@ -72,8 +72,8 @@ Kliknij przycisk `Zaloguj się`{.action}. Pojawi się komunikat, w którym zosta
 |Informacja|Opis|  
 |---|---|  
 |Typ konta|Pozostaw IMAP zaznaczony w rozwijanym menu.| 
-|Serwer poczty przychodzącej|Wpisz serwer « pro**X**.mail.ovh.net ».| 
-|Serwer poczty wychodzącej|Wpisz serwer « pro**X**.mail.ovh.net ».|  
+|Serwer poczty przychodzącej|Wpisz serwer « pro**?**.mail.ovh.net ».| 
+|Serwer poczty wychodzącej|Wpisz serwer « pro**?**.mail.ovh.net ».|  
 
 Kliknij ponownie przycisk `Zaloguj się`{.action}. Jeśli wpisane informacje są poprawne, logowanie zakończy się sukcesem.
 
@@ -87,8 +87,8 @@ Jeśli wprowadzasz ręcznie dane techniczne w ustawieniach konta, poniżej znajd
 
 |Typ serwera|Nazwa serwera|SSL|Port|
 |---|---|---|---|
-|Serwer poczty przychodzącej|pro**X**.mail.ovh.net|Tak|993|
-|Serwer poczty wychodzącej|pro**X**.mail.ovh.net|Tak|587|
+|Serwer poczty przychodzącej|pro**?**.mail.ovh.net|Tak|993|
+|Serwer poczty wychodzącej|pro**?**.mail.ovh.net|Tak|587|
 
 ### Etap 2: korzystanie z konta e-mail
 

@@ -6,7 +6,7 @@ section: 'Object Storage'
 legacy_guide_number: g1868
 ---
 
-**Last updated O8th January 2020**
+**Last updated 8th January 2020**
 
 ## 
 Object Storage is a storage solution that is managed primarily through the OpenStack API.
@@ -18,8 +18,8 @@ This guide will explain how to configure Cyberduck to manage your Object Storage
 
 ## Prerequisites
 
-- You must have access to Horizon:[Accessing the Horizon interface](../platform/public-cloud/access_console_of_horizon_instance/guide.en-ie.md){.ref}
-- You must have your project and user ID, which you can get by downloading the OpenRC file in the [Access and Security](../platform/public-cloud/access_and_security_in_horizon/guide.en-ie.md){.ref} menu in Horizon.
+- You must have access to Horizon: [Accessing the Horizon interface](../../public-cloud/configure_user_access_to_horizon/)
+- You must have your project and user ID, which you can get by downloading the OpenRC file in the [Access and Security](../../public-cloud/access_and_security_in_horizon/) menu in Horizon.
 
 
 
@@ -30,12 +30,12 @@ This guide will explain how to configure Cyberduck to manage your Object Storage
 - Log in to a "Swift - OpenStack Object Storage" account
 
 
-
 ![objectstorage-cyberduck](images/Cyberduck.png){.thumbnail}
+
 Enter the following information:
 
 - Server: auth.cloud.ovh.net (Authentication server)
-- Tenant ID:Access Key : correspond to ID_of_Project : ID_Horizon_User
+- Project:Domain:Username : OS_TENANT_NAME:default:OS_USERNAME
 - Secret Key: your Horizon user password
 
 
@@ -47,6 +47,6 @@ Enter the following information:
 ![objectstorage-cyberduck](images/img_2756.jpg){.thumbnail}
 
 
-## 
- 
+##
 
+[Getting started with the Swift API](../../public-cloud/getting_started_with_the_swift_api/)

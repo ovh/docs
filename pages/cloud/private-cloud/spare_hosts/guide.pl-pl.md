@@ -1,35 +1,45 @@
 ---
-title: 'Hosty zapasowe'
-excerpt: 'Zarządzanie hostami zapasowymi w usłudze Dedicated Cloud'
+title: 'Host zapasowy'
+excerpt: 'Mechanizm wymiany hosta'
 slug: hosty_zapasowe
-section: 'Funkcjonalności OVH'
+section: 'Funkcjonalności OVHcloud'
 legacy_guide_number: g860
+order: 4
 ---
+
+**Ostatnia aktualizacja z dnia 02-09-2020**
+
+## Wymagania początkowe
+
+- Wykupienie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/).
 
 ## Wprowadzenie
 
-Otrzymałeś e-mail informujący o utworzeniu zgłoszenia awarii związanego z dodaniem hosta zapasowego do usługi Dedicated Cloud.
+OVHcloud w swoich umowach gwarantuje wymianę niedostępnego hosta.
 
-Host zapasowy jest dostarczany do twojej infrastruktury w przypadku uszkodzenia hosta wchodzącego w skład infrastruktury. Host ten jest darmowy. W zgłoszeniu awarii określone jest IP hosta, którego dotyczy przerwa w usłudze. 
-Możesz się zalogować do vSphere Client, aby sprawdzić alert związany z uszkodzonym hostem. 
-Jeśli prawidłowo skonfigurowałeś funkcje HA i DRS VMware, wirtualne maszyny automatycznie przeniosą się na host zapasowy. 
-Jeśli nie włączyłeś tych funkcji, będziesz musiał ręcznie przenieść swoje wirtualne maszyny.
+**Ten przewodnik wyjaśnia, na czym polega wymiana hosta.**
 
+## Dostarczenie zapasowego hosta
 
-## 
+W przypadku awarii jednego z hostów automatycznie dostarczamy bezpłatny host zapasowy, aby zapewnić ciągłość usług. 
 
-## Uwaga!!!
-OVH dostarcza host zapasowy, aby uniknąć utraty zasobów. Po przywróceniu hosta do prawidłowego działania, OVH odbiera host zapasowy.
+Gdy tylko host zostanie dostarczony, otrzymasz wiadomość e-mail ze wszystkimi potrzebnymi informacjami oraz adresem IP hosta, dzięki czemu łatwo go znajdziesz w interfejsie vSphere.
 
+Usługa VMware [High Availability](../vmware-ha-high-availability)(HA) jest domyślnie aktywowana w klastrze. Jeśli pozostawisz ją włączoną, Twoje wirtualne maszyny zostaną automatycznie zrestartowane. Jeśli usługa Distributed Resources Scheduler (DRS) jest włączona i skonfigurowana w trybie "Pełna automatyzacja", równoważenie obciążeń na hostach w klastrze będzie również wykonywane automatycznie.
 
-## 
-Należy oddać host zapasowy. Nie ma możliwości zachowania hosta zapasowego, ani przekształcenia go w host odpłatny. Jeśli chcesz wymienić uszkodzony hosta, zapoznaj się z tym przewodnikiem: url=GUIDE#861]Wymiana uszkodzonego hosta[/url]
+> [!warning]
+> 
+> Jeśli napęd CD/DVD jest nadal zamontowany lub podłączony do wirtualnej maszyny, usługa HA nie będzie w stanie uruchomić go ponownie na zapasowym hoście. Zalecamy, aby napęd CD/DVD zawsze był podłączony jako urządzenie klienckie.
+>
 
+## Jakie kroki należy wykonać po otrzymaniu hosta zapasowego
 
-## 
-Po przywróceniu prawidłowego działania hosta i zniknięciu alertów, możesz zwrócić host zapasowy. Wystarczy postępować zgodnie z procedurą opisaną w sekcji "usuwanie hosta" w przewodniku [Jak dodać hosta?]({legacy}605)
+Po przywróceniu działania oryginalnego hosta możesz nam zwrócić jeden z hostów (host zapasowy lub oryginalny).
 
+Rekomendujemy zwrócenie oryginalnego hosta, abyśmy mogli przeprowadzić testy diagnozujące przyczynę incydentu w celu uniknięcia potencjalnych awarii w przyszłości. W tym przypadku zachowasz host zapasowy. Zapoznaj się z przewodnikiem [Usunięcie hosta](../usuwanie-serwera-hosta/)
+
+OVHcloud automatycznie odzyska oryginalny host, gdy tylko zostanie on usunięty.
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

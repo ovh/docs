@@ -17,7 +17,7 @@ Os endereços de e-mail da oferta MX Plan permitem-lhe enviar e receber e-mails 
 ## Requisitos
 
 - Ter o serviço MX Plan (incluído num plano de [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external}, num [alojamento gratuito Start 10M](https://www.ovh.pt/dominios/oferta_alojamento_start10m.xml){.external} ou disponível em separado).
-- Em função do método que utilizar: aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web`{.action}, ou aceder ao endereço de e-mail através do [webmail]({ovh_www}/mail/){.external} Outlook Web Messenger (OWA).
+- Em função do método que utilizar: aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web Cloud`{.action}, ou aceder ao endereço de e-mail através do [webmail]({ovh_www}/mail/){.external} Outlook Web Messenger (OWA).
 
 > [!primary]
 >
@@ -83,7 +83,7 @@ Selecione a opção adequada e clique em `Seguinte`{.action} e, depois, em `Vali
 
 Depois de alterar a palavra-passe, poderá aceder ao endereço de e-mail. Para isso, existem duas opções:
 
-- **Utilizar o webmail**: aceda à página [Ligação ao webmail]({ovh_www}/mail/){.external} e introduza o seu endereço de e-mail e respetiva palavra-passe. Se acabou de alterar a sua palavra-passe e a autenticação falhar, aguarde alguns minutos e tente novamente. Para obter mais informações, consulte o nosso manual “[Utilizar um endereço de e-mail a partir do Outlook Web Access (OWA)](https://docs.ovh.com/gb/en/emails/using-owa/){.external}” (versão em inglês).
+- **Utilizar o webmail**: aceda à página [Ligação ao webmail]({ovh_www}/mail/){.external} e introduza o seu endereço de e-mail e respetiva palavra-passe. Se acabou de alterar a sua palavra-passe e a autenticação falhar, aguarde alguns minutos e tente novamente. Para obter mais informações, consulte o nosso manual “[Utilizar um endereço de e-mail a partir do Outlook Web Access (OWA)](../utilizacao-owa/).
 
 - **Utilizar um software de mensagens compatível**: deverá introduzir a nova palavra-passe em todos os dispositivos onde estiver configurado o endereço de e-mail. Para isso, é possível que apareça uma nova janela automática, solicitando-lhe a nova palavra-passe. Caso contrário, [consulte os nossos manuais de configuração](https://docs.ovh.com/pt/emails/) ou entre em contacto com o editor do software ou da aplicação que utiliza, pois esta operação é inerente a este último.
 
@@ -105,7 +105,7 @@ Selecione a opção adequada e clique em `Validar`{.action}. A implementação d
 
 Depois de alterar a palavra-passe, poderá aceder ao endereço de e-mail. Para isso, existem duas opções:
 
-- **Utilizar o webmail**: aceda à página [Ligação ao webmail]({ovh_www}/mail/){.external} e introduza o seu endereço de e-mail e respetiva palavra-passe. Se acabou de alterar a sua palavra-passe e a autenticação falhar, aguarde alguns minutos e tente novamente. Para obter mais informações, consulte o nosso manual “[Utilizar um endereço de e-mail a partir do Outlook Web Access (OWA)](../utilisation-roundcube/){.external}” (versão em inglês).
+- **Utilizar o webmail**: aceda à página [Ligação ao webmail]({ovh_www}/mail/){.external} e introduza o seu endereço de e-mail e respetiva palavra-passe. Se acabou de alterar a sua palavra-passe e a autenticação falhar, aguarde alguns minutos e tente novamente. Para obter mais informações, consulte o nosso manual “[Utilizar um endereço de e-mail a partir do Outlook Web Access (OWA)](../utilizacao-owa/)”.
 
 - **Utilizar um software de mensagens compatível**: deverá introduzir a nova palavra-passe em todos os dispositivos onde estiver configurado o endereço de e-mail. Para isso, é possível que apareça uma nova janela automática, solicitando-lhe a nova palavra-passe. Caso contrário, [consulte os nossos manuais de configuração](https://docs.ovh.com/pt/emails/) ou entre em contacto com o editor do software ou da aplicação que utiliza, pois esta operação é inerente a este último.
 

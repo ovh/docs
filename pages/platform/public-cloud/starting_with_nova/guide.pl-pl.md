@@ -136,7 +136,7 @@ Na koniec wystarczy pobrać ID obrazu, który będzie wykorzystywany dla instanc
 
 
 ```
-admin@serveur-1:~$ nova image-list
+admin@serveur-1:~$ glance image-list
 +--------------------------------------+------------------------+--------+--------+
 | ID | Name | Status | Server |
 +--------------------------------------+------------------------+--------+--------+

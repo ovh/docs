@@ -2,6 +2,7 @@
 title: Wie füge ich ein Storage hinzu?
 excerpt: ''
 slug: wie_fuge_ich_ein_storage_hinzu
+section: Ressourcen-Management
 legacy_guide_number: g606
 ---
 

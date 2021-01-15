@@ -30,4 +30,4 @@ We support the version of Torch (`pytorch`) : `1.6`
 
 ### HuggingFace
 
-We support the version of HuggingFace (`transformers`) : `3`
+We support the version of HuggingFace (`transformers`) : `3` with `PyTorch` backend

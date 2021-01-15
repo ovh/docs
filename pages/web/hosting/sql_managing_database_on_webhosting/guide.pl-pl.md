@@ -2,6 +2,7 @@
 title: Zarzadzanie baza danych na hostingu www
 slug: zarzadzanie-baza-danych-na-hostingu-www
 section: Bazy danych
+hidden: true
 ---
 
 

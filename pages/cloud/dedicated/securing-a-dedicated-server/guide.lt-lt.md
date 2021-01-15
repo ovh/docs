@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Securing a dedicated server
 slug: securing-a-dedicated-server
 excerpt: This guide offers some general tips for securing your server.

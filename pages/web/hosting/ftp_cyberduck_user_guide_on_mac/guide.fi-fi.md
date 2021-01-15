@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellit: Käyttöohje Cyberduck (MAC)'
 excerpt: Cyberduckin (MAC) käyttöohje
 id: '1598'

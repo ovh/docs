@@ -96,6 +96,6 @@ OVHcloud also has a web application you can use to access your email account fro
 
 
 
-[Configuring an Exchange account on Android via the Gmail app](../../microsoft-collaborative-solutions/exchange_2013_how_to_configure_on_android/){.external}.  
+[Configuring an Exchange account on Android via the Gmail app](../../microsoft-collaborative-solutions/exchange-configure-android/){.external}.  
 
 Join our community of users on <https://community.ovh.com/en/>.

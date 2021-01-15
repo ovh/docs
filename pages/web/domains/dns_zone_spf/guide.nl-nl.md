@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: Toevoegen van een SPF-veld aan de configuratie van uw domeinnaam
 excerpt: Ontdek hoe u een SPF-veld kunt toevoegen aan de configuratie van uw domeinnaam
 slug: het_spf_veld

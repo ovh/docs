@@ -1,4 +1,5 @@
 ---
+deprecated: true
 title: 'Webhotellin sähköposti: Sähköpostin uudelleenohjaus'
 excerpt: 'Webhotellin sähköposti: Sähköpostin uudelleenohjaus'
 slug: webhotellin_sahkoposti_sahkopostin_uudelleenohjaus

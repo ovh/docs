@@ -1,28 +1,28 @@
 ---
 title: Änderung des Nutzerpassworts
 slug: aenderung-des-nutzerpassworts
-excerpt: Erfahren Sie, wie Sie das Passwort eines Nutzers des vSphere Clients in Ihrem OVHcloud Kundencenter ändern können.
-section: Funktionen von OVHcloud
+excerpt: Erfahren Sie, wie Sie das Passwort eines Nutzers des vSphere Clients in Ihrem OVHcloud Kundencenter ändern können
+section: OVHcloud Funktionen
 ---
 
-**Letztes Update: 17.06.2020**
+**Letzte Aktualisierung am 17.06.2020**
  
-## Einleitung
+## Ziel
 
 Die Berechtigungen und Passwörter von Nutzern des vSphere Clients werden im OVHcloud Kundencenter verwaltet.
 
-**Sehen Sie hier, wie Sie Ihr Nutzerpasswort ändern können**
+**Diese Anleitung erklärt, wie Sie Ihr Nutzerpasswort ändern können.**
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} angemeldet.
-- Im OVHcloud Kundencenter wurde ein Nutzeraccount für Sie angelegt.  Bitte entnehmen Sie [dieser Anleitung](../manager-ovh-private-cloud/#nutzer) weitere Informationen.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Im OVHcloud Kundencenter wurde ein Nutzeraccount für Sie angelegt.  Bitte entnehmen Sie [dieser Anleitung](../manager-ovh-private-cloud/#benutzer) weitere Informationen.
 
-## Praktische Anwendung
+## In der praktischen Anwendung
 
 ### Passwort ändern
 
-Melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} an, gehen Sie in den Bereich `Server`{.action} (1), klicken Sie auf `Private Cloud`{.action} (2) und wählen Sie Ihren Server aus der Liste aus (3). Klicken Sie dann auf den Reiter `Nutzer`{.action} (4).
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und wählen Sie dann den Bereich `Hosted Private Cloud` (1). Klicken Sie im linken Menü auf `Private Cloud` (2) und wählen Sie die betreffende Infrastruktur aus (3). Klicken Sie dann auf den Tab `Nutzer`{.action} (4).
 
 ![Zugang zum Kundencenter](images/userpassword1.png){.thumbnail}
 
@@ -35,7 +35,7 @@ Geben Sie nun ein neues Passwort ein und bestätigen Sie es.
 ![Passwort ändern](images/userpassword3.png){.thumbnail}
 
 > [!primary]
-> Wenn Sie kein neues Passwort eingeben, wird ein nach dem Zufallsprinzip erstelltes Passwort per E-Mail an die Adresse gesandt, die mit dem Nutzer verbunden ist.
+> Wenn Sie kein neues Passwort eingeben, wird ein zufällig generiertes Passwort per E-Mail an die Adresse gesendet, die mit dem Nutzer verbunden ist.
 > 
 
 
@@ -55,10 +55,8 @@ Geben Sie nun ein neues Passwort ein und bestätigen Sie es.
 
 ## Weiterführende Informationen
 
-[Präsentation des Private Cloud Kundencenters von OVHcloud](../manager-ovh-private-cloud/)
+[Vorstellung des Private Cloud Kundencenters von OVHcloud](../manager-ovh-private-cloud/)
 
-[Die Rechte eines Nutzers ändern](../rechte-eines-nutzers-aendern/)
-
-[Das Passwort Ihres OVHcloud Accounts anlegen und verwalten](https://docs.ovh.com/de/customer/Passwort-verwalten/)
+[Das Passwort Ihres OVHcloud Accounts anlegen und verwalten](../../customer/Passwort-verwalten/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.

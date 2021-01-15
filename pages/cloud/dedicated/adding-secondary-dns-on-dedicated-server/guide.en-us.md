@@ -1,71 +1,77 @@
 ---
-title: Creating a secondary DNS on a Dedicated Server
+title: 'Configuring OVHcloud Secondary DNS on a dedicated server'
 slug: secondary-dns
-excerpt: This guide will show you how to create a secondary DNS and add it to your Dedicated Server
-section: Network Management
+excerpt: 'Find out how to add a secondary DNS server for your domain'
+section: 'Advanced use'
 ---
 
-**Last updated 2020/07/13**
+**Last updated 8th January 2021**
 
 ## Objective
 
-If you want to use your [Dedicated Server](https://www.ovh.com/world/dedicated-servers/){.external} as the primary DNS for your domain, you can add the domain as a secondary DNS to your server.
+If you are configuring your dedicated server as a DNS server, you can make use of the OVHcloud Secondary DNS service to host a secondary zone. This way, DNS for your domain will remain available even if the primary DNS server should become unresponsive.
 
-**This guide will show you how to create a secondary DNS, and add it to your Dedicated Server.**
+**This guide will explain how to add your domain in the OVHcloud Control Panel in order to utilise an OVHcloud Secondary DNS server.**
 
 ## Requirements
 
-* a [Dedicated Server](https://www.ovh.com/world/dedicated-servers/){.external} with Windows installed
-* a domain name
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- a domain name to which you have administrative access
+- a [dedicated server](https://www.ovhcloud.com/en/bare-metal/) in your OVHcloud account
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
+> [!warning]
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+>
 
 ## Instructions
 
-### Obtain a domain verification code
+### Adding a domain <a name="addingdomain"></a>
 
-Click the `Dedicated`{.action} menu, then click `Dedicated Servers`{.action} to expand the list of servers in your account:
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Bare Metal Cloud`{.action} section and then select your server from **Dedicated Servers** in the left-hand sidebar.
 
-![Secondary DNS](images/dns2-01_2020.png){.thumbnail}
+Switch to the tab `Secondary DNS`{.action} and click on the button `Add a domain`{.action}.
 
-Next, select the `Secondary DNS`{.action} tab, and click `Add a domain`{.action}:
+![Secondary DNS](images/cp-01.png){.thumbnail}
 
-![Secondary DNS](images/dns2-02_2020.png){.thumbnail}
+Enter your IP address and the domain to add, then click `Next`{.action}.
 
-Enter your domain in the `Domain` field, then click `Next`{.action}:
+![Secondary DNS](images/cp-02.png){.thumbnail}
 
-![Secondary DNS](images/dns2-03_2020.png){.thumbnail}
+Confirming with `Next`{.action} in this step will trigger the domain verification check. If you have not already fulfilled this requirement by adding a TXT record to your DNS zone, follow the instructions in the [guide section below](#verifyingdomain) first. Otherwise, continue by clicking on `Next`{.action}.
 
-You will now see a message instructing you to create a TXT record for your domain. Make a note of the sub-domain and target in the instructions, then click `Cancel`{.action}:
+![Secondary DNS](images/cp-03.png){.thumbnail}
 
-![Secondary DNS](images/dns2-04a_2020.png){.thumbnail}
+After clicking on `Add`{.action} in the last window, the domain will be added to the OVHcloud Secondary DNS server.
 
-### Verify your domain
+Added domains will be listed in this tab and can be deleted by clicking on the `...`{.action} button. The name of the secondary DNS server will be displayed next to the domain.
 
-Now that you have the details for domain verification, please log into your account with your domain registrar and and create a TXT record with the details in the last step.
+![Secondary DNS](images/cp-05.png){.thumbnail}
 
 
-### Add the secondary DNS to your server
+> [!primary]
+>
+> Other actions required to configure your own DNS for your domain(s) usually include:
+>
+> - configuring a DNS service (such as *BIND*)
+> - configuring GLUE records
+> - authorising zone transfers
+>
+> Please refer to the corresponding manuals and external knowledge resources if you need further instructions for these administrative tasks.
 
-Click the `Dedicated`{.action} menu, and then click `Dedicated Servers`{.action} to expand the list of servers in your account:
 
-![Secondary DNS](images/dns2-01_2020.png){.thumbnail}
+### Verifying authorisation for the domain <a name="verifyingdomain"></a>
 
-Next, select the `Secondary DNS`{.action} tab, and click `Add a domain`{.action}:
+It is necessary to confirm your authorisation to manage the concerned domain before it can be added to OVHcloud Secondary DNS. This is achieved via an automated DNS lookup on the subdomain *ownercheck.yourdomainname*. A unique string of characters is generated for this purpose and displayed in the OVHcloud Control Panel.
 
-![Secondary DNS](images/dns2-02_2020.png){.thumbnail}
+- If the domain is managed by an external registrar or uses external DNS servers at this point, log in to the control panel of your DNS provider and add a TXT record with the subdomain "ownercheck" and the value provided in step 2 of the ["Add a domain" dialogue box](#addingdomain).
 
-Enter your domain in the `Domain` field, then click `Next`{.action}:
+- If the domain is managed by OVHcloud as its registrar and it uses OVHcloud DNS servers, close the window by clicking on `Cancel`{.action} first. Then you can follow the instructions in [this guide](../../domains/web_hosting_how_to_edit_my_dns_zone/) to add the TXT record in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
 
-![Secondary DNS](images/dns2-03_2020.png){.thumbnail}
+![Secondary DNS](images/cp-04.png){.thumbnail}
 
-Since the TXT record for your domain has already been created, just click `Next`{.action} to continue:
-
-![Secondary DNS](images/dns2-04b_2020.png){.thumbnail}
-
-Finally, click `Add`{.action} to confirm your entry:
-
-![Secondary DNS](images/dns2-05_2020.png){.thumbnail}
+After successfully adding the TXT record to the domain's DNS zone, repeat the [steps above](#addingdomain) and finish the process.
 
 ## Go further
 

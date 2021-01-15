@@ -1,9 +1,9 @@
 ---
-title: Activer et utiliser Veeam Backup Managed
+title: Activer et utiliser Veeam Managed Backup
 slug: veeam-backup-as-a-service
-excerpt: Découvrez comment activer et utiliser l'option Veeam Backup Managed
+excerpt: Découvrez comment activer et utiliser l'option Veeam Managed Backup
 legacy_guide_number: '2883711'
-section: Services et options OVH
+section: Services et options OVHcloud
 order: 06
 ---
 
@@ -11,11 +11,11 @@ order: 06
 
 ## Objectif
 
-Veeam est un éditeur de logiciel spécialisé dans les solutions de sauvegarde et de plan de reprise d'activité (PRA) dans des environnements virtualisés. L'offre Veeam Backup Managed s'appuie sur la brique logicielle Veeam Availability Suite pour vous fournir une solution de backup à la demande.
+Veeam est un éditeur de logiciel spécialisé dans les solutions de sauvegarde et de plan de reprise d'activité (PRA) dans des environnements virtualisés. L'offre Veeam Managed Backup s'appuie sur la brique logicielle Veeam Availability Suite pour vous fournir une solution de backup à la demande.
 
 Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située à l’intérieur même de votre infrastructure [Hosted Private cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}. Les données sauvegardées sont, quant à elles, externalisées vers un espace de stockage indépendant, chez OVHcloud. Les sauvegardes s'effectuent la nuit, avec une durée de rétention en fonction du niveau d'offre choisi.
 
-**Ce guide vous explique comment déployer et utiliser l'option Veeam Backup Managed en quelques minutes.**
+**Ce guide vous explique comment déployer et utiliser l'option Veeam Managed Backup en quelques minutes.**
 
 ## Prérequis
 
@@ -26,14 +26,19 @@ Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située 
 * Avoir activé le [Distributed Ressource Scheduler (DRS)](https://docs.ovh.com/fr/private-cloud/vmware-drs-distributed-ressource-scheduler-new){.external} sur le ou les clusters.
 * Mettre en place la [gestion des licences Windows](https://docs.ovh.com/fr/private-cloud/facturation-private-cloud/#licences-windows){.external} sur le Private Cloud.
 
+> [!primary]
+>
+> Nos offres Veeam ne sont actuellement pas compatibles avec la dernière version (10) proposée par Veeam. OVHcloud continuera de proposer la version 9.5 jusqu'à nouvel ordre. Veuillez prendre en compte ce point lors de la configuration de Veeam pour vos services.
+>
+
 
 ## En pratique
 
 ### Activer le service
 
-La première étape consiste à activer le service depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Pour cela, rendez-vous dans la partie `Private Cloud`{.action} de l'onglet `Server`{.action}. Cliquez sur l'infrastructure vSphere concernée, puis sur le datacenter souhaité. Choisissez l'onglet `Backup`{.action}.
+La première étape consiste à activer le service depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Pour cela, rendez-vous dans la partie `Private Cloud`{.action} de l'onglet `Hosted Private Cloud`{.action}. Cliquez sur l'infrastructure vSphere concernée, puis sur le datacenter souhaité. Choisissez l'onglet `Backup`{.action}.
 
-![Activer le backup](images/backuppcc_01_fr.png){.thumbnail}
+![Activer le backup](images/veeam-managed-controlp_new.png){.thumbnail}
 
 Choisissez le niveau de l'offre de sauvegarde puis continuez en cliquant sur `Choisir l'offre`{.action}.
 
