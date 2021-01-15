@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment gérer les domaines de panne vSAN'
 section: 'Fonctionnalités VMware vSphere'
 ---
 
-**Dernière mise à jour le 23/09/2020**
+**Dernière mise à jour le 18/01/2021**
 
 ## Objectif
 
