@@ -13,62 +13,62 @@ Ce guide a pour objectif d’expliquer le fonctionnement et la mise en oeuvre de
 
 ## Prérequis
 
-* Posséder une offre [Private Cloud](https://www.ovh.com/fr/private-cloud/){.external},
-* Pouvoir accéder à l’interface de gestion vSphere via le client UI,
-* Disposer d'un cluster vSAN avec au moins 3 hosts
+- Posséder une offre [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
+- Être connecté à votre [client vSphere HTML](../connexion-interface-vsphere/)
+- Disposer d'un cluster vSAN avec au moins 3 hosts
 
 ## En pratique
 
 ### Fonctionnement
 
-Un domaine de pannes fait référence à un ensemble de serveurs, périphériques de stockage ou composants réseaux regroupés au sein d'un emplacement physique du centre de données, et pouvant être impacté collectivement lors d'une panne.
+Un domaine de pannes (fault domain) fait référence à un ensemble de serveurs, périphériques de stockage ou composants réseaux regroupés au sein d'un emplacement physique du centre de données, et pouvant être affectés collectivement lors d'une panne.
 
 Sur vSAN, il est possible de regrouper les serveurs au sein de domaines de pannes vSAN en prenant en compte leur emplacement physique.
-L'intérêt est donc de disposer de plusieurs domaines de pannes afin de bénéficier de la résilience apportée par vSAN, en répliquant ainsi les objets des VMs au travers de ces groupes de serveurs (plus de détails ici : https://core.vmware.com/resource/vmware-vsan-design-guide#sec8-sub3).
+L'intérêt est donc de disposer de plusieurs domaines de pannes afin de bénéficier de la résilience apportée par vSAN, en répliquant ainsi les objets des VMs au travers de ces groupes de serveurs. Retrouvez plus de détails sur [cette documentation](https://core.vmware.com/resource/vmware-vsan-design-guide#sec8-sub3).
 
-Les serveurs OVH mis à votre disposition sont répartis au sein de différentes baies. Ainsi, il est possible de créer des domaines de panne vSAN en fonction de ces baies.
+Les serveurs OVHcloud mis à votre disposition sont répartis au sein de différentes baies. Ainsi, il est possible de créer des domaines de panne vSAN en fonction de ces baies.
 
 Par exemple, la stratégie par defaut vSAN (niveau de tolérance FTT=1 avec RAID1 (Mirorring)) nécessite 3 domaines de pannes au minimum (pour 2 replicas + 1 objet witness).
 
 ### Mise en oeuvre
 
-Il est conseillé d’appliquer cette procédure lorsque plusieurs serveurs se trouvent sur la même baie. Privilégier également un nombre identique de serveurs par domaine de panne vSAN.
+Il est conseillé d’appliquer cette procédure lorsque plusieurs serveurs se trouvent sur la même baie. Privilégiez également un nombre identique de serveurs par domaine de panne vSAN.
 Les données seront ainsi mieux réparties et bénéficieront d’une meilleure protection en cas de dysfonctionnement d'un domaine de panne.
 
-Chaque serveur OVH dispose de l'information de la baie dans laquelle il est hébergé.
-Se rendre sur le menu `Hosts and Clusters`, cliquer sur le serveur concerné, puis sur l'onglet `Summary`. L'information se trouve au niveau de `Custom Attributes` : attribut `Rack`.
+Chaque serveur OVHcloud dispose de l'information de la baie dans laquelle il est hébergé.
 
-![](images/01.png){.thumbnail}
+Rendez-vous dans le menu `Hosts and Clusters`{.action}, cliquez sur le serveur concerné, puis sur l'onglet `Summary`{.action}. L'information se trouve au niveau de « Custom Attributes » : attribut **Rack**.
 
-Se rendre sur le menu `Hosts and Clusters`, sélectionner le cluster concerné, cliquer sur l'onglet `Configure` et choisir le menu `vSAN` puis `Fault Domains`.
+![attribut Rack](images/01.png){.thumbnail}
 
-Il suffit alors de glisser le serveur dans la case `+` des `Fault Domains`.
+Toujours dans le menu `Hosts and Clusters`{.action}, sélectionnez le cluster concerné puis cliquez sur l'onglet `Configure`{.action} et choisissez le menu `vSAN`{.action} puis `Fault Domains`{.action}.
 
-![](images/02.png){.thumbnail}
+Il suffit alors de glisser le serveur dans la case **+** des « Fault Domains ».
 
-Utiliser par exemple le nom de la baie comme `Fault domain name` puis confirmer avec `create`.
+![fault domain](images/02.png){.thumbnail}
 
-![](images/03.png){.thumbnail}
+Nommez le domaine de panne (vous pouvez utiliser, par exemple, le nom de la baie) dans le champ « Fault domain name » puis confirmez en cliquant sur `CREATE`{.action}.
 
-Il est possible de suivre l'avancement de la tâche de création du domaine de panne dans la fenêtre `Recent Tasks`.
+![nom fault domain](images/03.png){.thumbnail}
 
-![](images/04.png){.thumbnail}
+Vous pourrez alors suivre l'avancement de la tâche de création du domaine de panne dans la fenêtre `Recent Tasks`{.action}.
 
-Répéter l'opération sur autant de domaines de pannes qu'il y a de baie différentes.
+![fault domain task](images/04.png){.thumbnail}
 
-![](images/05.png){.thumbnail}
+Répétez l'opération sur autant de domaines de pannes qu'il y a de baies différentes.
 
-Ajouter au besoin un serveur dans un domaine de panne existant en le déplaçant dessus puis confirmer avec `move`.
+![ajout multiples fault domains](images/05.png){.thumbnail}
 
-![](images/06.png){.thumbnail}
+Ajoutez au besoin un serveur dans un domaine de panne existant en le déplaçant dessus puis confirmez en cliquant sur `MOVE`{.action}.
 
-Les infos d'espace disque utilisé, disponible et total s'affichent en survolant le domaine de panne.
+![ajout serveur](images/06.png){.thumbnail}
 
-![](images/07.png){.thumbnail}
+Les informations d'espace disque utilisé, disponible et total s'affichent en survolant le domaine de panne.
+
+![fault domain informations](images/07.png){.thumbnail}
 
 Le cluster vSAN dispose désormais de la résilience de données via les domaines de pannes.
 
 ## Aller plus loin
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
-
