@@ -10,8 +10,8 @@ order: 1
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER pour bénéficier des langages **Node.js**, **Python**et **Ruby** et souhaitez commencer à développer votre projet. 
-Retrouvez ici les principales informations relatives à l'interface de gestion de votre hébergement POWER via l'espace client OVHcloud ou via les API. 
+Vous avez souscrit à un hébergement web POWER pour bénéficier des langages **Node.js**, **Python** et **Ruby** et souhaitez commencer à développer votre projet. 
+Retrouvez ici les principales informations relatives à la gestion de votre hébergement POWER via l'espace client OVHcloud ou via les API. 
 
 **Découvrez comment débuter sur un hébergement web POWER.**
 
