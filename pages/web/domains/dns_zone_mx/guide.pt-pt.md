@@ -47,6 +47,7 @@ Consulte abaixo a configuração MX da OVH que deve utilizar nas soluções MX P
 |*deixar em branco*|3600|MX|5|mx1.mail.ovh.net.|
 |*deixar em branco*|3600|MX|50|mx2.mail.ovh.net.|
 |*deixar em branco*|3600|MX|100|mx3.mail.ovh.net.|
+|*deixar em branco*|3600|MX|200|mx4.mail.ovh.net.|
 
 Deve utilizar estes diferentes campos MX na configuração DNS do seu domínio. O passo seguinte permite-lhe efetuar esta operação na configuração DNS da OVH do domínio.
 

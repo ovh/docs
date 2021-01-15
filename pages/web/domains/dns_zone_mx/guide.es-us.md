@@ -47,6 +47,7 @@ A continuación se indica la configuración MX de OVHcloud que deberá utilizar 
 |Dejar el campo vacío|3600|MX|5|mx1.mail.ovh.net.|
 |Dejar el campo vacío|3600|MX|50|mx2.mail.ovh.net.|
 |Dejar el campo vacío|3600|MX|100|mx3.mail.ovh.net.|
+|Dejar el campo vacío|3600|MX|200|mx4.mail.ovh.net.|
 
 Deberá utilizar los registros MX anteriores en la configuración DNS del dominio. A continuación explicamos cómo realizar esta operación.
 

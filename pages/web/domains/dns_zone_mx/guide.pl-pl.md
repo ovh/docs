@@ -47,6 +47,7 @@ Zapoznaj się z przedstawioną poniżej konfiguracją MX OVH przewidzianą dla r
 |*pozostaw puste*|3600 |MX|5|mx1.mail.ovh.net.|
 |*pozostaw puste*|3600 |MX|50 |mx2.mail.ovh.net.|
 |*pozostaw puste*|3600 |MX|100|mx3.mail.ovh.net.|
+|*pozostaw puste*|3600 |MX|200|mx4.mail.ovh.net.|
 
 Teraz zastosuj rekordy MX w konfiguracji DNS Twojej domeny. Operacja ta została opisana w kolejnym etapie. 
 
