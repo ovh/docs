@@ -24,7 +24,7 @@ Ce guide a pour objectif d’expliquer le fonctionnement et la mise en oeuvre de
 Un domaine de pannes fait référence à un ensemble de serveurs, périphériques de stockage ou composants réseaux regroupés au sein d'un emplacement physique du centre de données, et pouvant être impacté collectivement lors d'une panne.
 
 Sur vSAN, il est possible de regrouper les serveurs au sein de domaines de pannes vSAN en prenant en compte leur emplacement physique.
-L'intérêt est donc de disposer de plusieurs domaines de pannes afin de bénéficier de la résilience apportée par vSAN, en répliquant ainsi les objets des VMs au travers de ces groupes de serveurs (plus de détails ici : https://storagehub.vmware.com/t/vsan-6-7-update-1-technical-overview/fault-domains-31/).
+L'intérêt est donc de disposer de plusieurs domaines de pannes afin de bénéficier de la résilience apportée par vSAN, en répliquant ainsi les objets des VMs au travers de ces groupes de serveurs (plus de détails ici : https://core.vmware.com/resource/vmware-vsan-design-guide#sec8-sub3).
 
 Les serveurs OVH mis à votre disposition sont répartis au sein de différentes baies. Ainsi, il est possible de créer des domaines de panne vSAN en fonction de ces baies.
 
