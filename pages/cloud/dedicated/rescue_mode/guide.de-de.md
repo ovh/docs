@@ -5,9 +5,13 @@ excerpt: 'In dieser Anleitung erfahren Sie, wie Sie den Rescue-Modus für einen 
 section: 'Diagnose & Rescue Modus'
 ---
 
-**Stand 22.08.2018**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
-## Einleitung
+**Stand 14.01.2021**
+
+## Ziel
 
 Der Rescue-Modus ist ein Tool Ihres dedizierten Servers, mit dem Sie diesen auf einem temporären Betriebssystem starten können, um Probleme zu diagnostizieren und zu beheben.
 
@@ -17,60 +21,60 @@ Der Rescue-Modus ist ein Tool Ihres dedizierten Servers, mit dem Sie diesen auf 
 
 ## Voraussetzungen
 
-- Sie haben SSH-Zugriff (Root-Zugriff) auf Ihren [Dedicated Server](https://www.ovh.de/dedicated_server/){.external}.
+- Sie verfügen über einen [dedizierten Server](https://www.ovhcloud.com/de/bare-metal/).
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) angemeldet.
 
+## In der praktischen Anwendung
 
-## Beschreibung
+Der Rescue-Modus kann nur über Ihr OVHcloud [Kundencenter aktiviert werden](https://www.ovh.com/auth/?action=gotomanager/){.external}. Wählen Sie Ihren Server aus, indem Sie in den Bereich `Bare Metal Cloud`{.action} und dann `Dedicated Server`{.action} gehen.
 
-Um den Rescue-Modus zu aktivieren, loggen Sie sich zunächst in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager/){.external} ein. Wählen Sie Ihren Server im Bereich `Bare Metal Cloud`{.action} unter `Dedicated Server`{.action}. Gehen Sie anschließend auf `Serverstatus`{.action} (auch: „Zustand des Servers") > `Allgemeine Informationen`{.action} > `...`{.action} und klicken Sie auf den Button `Ändern`{.action}, um den Startmodus zu ändern.
+Suchen Sie "Boot" im Bereich **Allgemeine Informationen** und klicken Sie auf `...`{.action} und dann auf `Bearbeiten`{.action}.
 
 ![Startmodus ändern](images/rescue-mode-01.png){.thumbnail}
 
-Wählen Sie im angezeigten Fenster `Im Rescue-Modus booten`{.action}. Wenn Ihr Server über ein Linux-Betriebssystem verfügt, wählen Sie `rescue64-pro`{.action} im Drop-down-Menü aus. Wenn Sie einen Server mit Windows verwenden, wählen Sie `WinRescue`{.action}. Um den Vorgang abzuschließen, geben Sie Ihre E-Mail-Adresse im Textfeld ein und klicken Sie dann auf `Weiter`{.action}.
+Wählen Sie im folgenden Fenster Im **Rescue-Modus booten**. Wenn Ihr Server über ein Linux-Betriebssystem verfügt, wählen Sie `rescue64-pro`{.action} im Drop-down-Menü aus. Wenn Ihr Server mit Windows läuft, wählen Sie `WinRescue`{.action} aus ([siehe unten stehende Anleitung](#windowsrescue). Geben Sie eine andere E-Mail-Adresse an, **wenn** Sie nicht möchten, dass die Login-Daten an die Hauptadresse Ihres OVHcloud Accounts gesendet werden.
+<br>Klicken Sie auf `Weiter`{.action} und `Bestätigen`{.action}.
 
 ![Rescue-Modus](images/rescue-mode-03.png){.thumbnail}
 
-Bestätigen Sie im nächsten Fenster die von Ihnen gewählten Optionen und starten Sie Ihren Server neu, um die Änderungen anzuwenden. 
+Wenn die Änderung abgeschlossen ist, klicken Sie auf `...`{.action}. rechts neben "Status" im Bereich mit dem Namen **Dienstleistungsstatus**.
+<br>Klicken Sie auf `Neu starten`{.action} und der Server wird im Rescue-Modus neu gestartet. Die Durchführung dieser Operation kann einige Minuten dauern.
+<br>Sie können den Fortschritt im Tab `Tasks`{.action} überprüfen. Es wird Ihnen eine E-Mail mit den Zugangsdaten (einschließlich des Verbindungspassworts) des Root-Benutzers des Rescue-Modus zugesandt.
 
 ![Server neu starten](images/rescue-mode-02.png){.thumbnail}
 
-Ihr Server wird jetzt im Rescue-Modus neu gestartet. Sie erhalten anschließend die Login-Daten an die von Ihnen angegebene E-Mail-Adresse. Um den Rescue-Modus zu beenden, ändern Sie einfach den Startmodus zu `Von Festplatte booten`{.action} und starten Sie Ihren Server erneut.
+Wenn Sie Ihre Tasks im Rescue-Modus beendet haben, denken Sie daran, den Netboot-Modus auf der `Von Festplatte booten`{.action} neu zu definieren und Ihren Server neu zu starten.
 
 ### Linux
 
-#### Das Webinterface verwenden
-
-Nachdem Sie den Server neu gestartet haben, erhalten Sie eine E-Mail mit den Login-Daten für den Rescue-Modus. Die E-Mail enthält außerdem einen Link zum Webinterface des Rescue-Modus, über das Sie folgende Tests ausführen können:
-
-- Festplatten: überprüft die Integrität der Laufwerke mit SMART-Tests.
-- Prozessoren: überprüft, ob die Prozessoren korrekt funktionieren.
-- Partitionen (Status): überprüft den Laufwerkstatus.
-- Partitionen (Dateisystem): überprüft das Dateisystem.
-- Partitionen (Explore): startet einen Browser zum Durchsuchen der Dateien. Sie können die Dateien mit diesem Tool nicht bearbeiten, aber Sie können ein Backup erstellen.
-- Memory: überprüft den installierten RAM.
-
-![Webinterface des Rescue-Modus](images/rescue-mode-04.png){.thumbnail}
-
-
-#### SSH verwenden (Kommandozeile)
+#### Verwendung des Rescue-Modus (SSH)
 
 > [!primary]
 > 
-> Falls Sie einen SSH-Schlüssel (in Ihrem OVH Kundencenter hinzugefügt) verwenden, wird Ihnen kein Passwort zugesandt. Sobald Ihr Server im Rescue-Modus neu gestartet ist, können Sie sich direkt mit Ihrem SSH-Schlüssel verbinden.
+> Wenn Sie einen SSH-Schlüssel verwenden (der ebenfalls in Ihrem OVHcloud-Kundencenter aktiviert ist), wird Ihnen kein Passwort zugesandt. Sobald der Server im Rescue-Modus ist, können Sie sich direkt mit Ihrem SSH-Schlüssel verbinden.
 >
 
-Nachdem Sie den Server neu gestartet haben, erhalten Sie eine E-Mail mit den Login-Daten für den Rescue-Modus. Verbinden Sie sich mit den üblichen Befehlen mit Ihrem Server, verwenden Sie dabei jedoch das Root-Passwort für den Rescue-Modus anstelle Ihres Passworts.
+Nach dem Neustart Ihres Servers erhalten Sie eine E-Mail mit Ihren Login-Daten im Rescue-Modus. Diese E-Mail ist auch in Ihrem OVHcloud [Kundencenter verfügbar](https://www.ovh.com/auth/?action=gotomanager). Klicken Sie in der oberen rechten Ecke Ihres Kundencenters auf den Namen Ihrer Kundenkennung und anschließend auf `E-Mails vom Support`{.action}.
+
+Sie müssen dann über die Befehlszeile oder über ein SSH-Tool auf Ihren Server zugreifen, indem Sie das für den Rescue-Modus generierte Root-Passwort verwenden.
 
 Zum Beispiel:
 
 ```sh
-ssh root@IP_ihres_servers
-Password: passworts_ihres_servers
+ssh root@your_server_IP
+root@your_server_password:
 ```
 
-Für die meisten Änderungen Ihres Servers im Rescue-Modus via SSH muss eine Partition gemountet werden. Denn dieser Modus nutzt sein eigenes temporäres Dateisystem. Folglich gehen alle im Rescue-Modus vorgenommenen Änderungen am Dateisystem beim Neustart des Servers im normalen Modus verloren.
+> [!warning]
+> 
+> Ihr SSH-Client wird die Verbindung wahrscheinlich zuerst sperren, da der ECDSA-Fingerabdruck nicht kompatibel ist. Dies ist normal, da der Rescue-Modus seinen eigenen temporären SSH-Server verwendet.
+>
+> Um dieses Problem zu umgehen, können Sie den Fußabdruck Ihres gewohnten Systems kommentieren, indem Sie in der Datei `#` vor seiner Zeile einen *known_hosts* hinzufügen. Achten Sie darauf, dieses Zeichen zu entfernen, bevor Sie den Server im normalen Modus neu starten.
+>
 
-Partitionen werden mit dem SSH-Befehl `mount` gemountet. Zunächst müssen jedoch Ihre Partitionen aufgelistet werden, um den Namen derjenigen Partition zu ermitteln, die Sie mounten möchten. Im Folgenden finden Sie einige Codebeispiele, an denen Sie sich orientieren können.
+Für die meisten Änderungen Ihres Servers via SSH im Rescue-Modus muss eine Partition gemountet werden. Dieser Modus verfügt über ein eigenes System temporärer Dateien. Folglich gehen alle im Rescue-Modus vorgenommenen Änderungen am Dateisystem beim Neustart des Servers im normalen Modus verloren.
+
+Die Partitionen werden mithilfe des Mount-Befehls per `SSH` gemountet. Zunächst müssen jedoch Ihre Partitionen aufgelistet werden, um den Namen derjenigen Partition zu ermitteln, die Sie mounten möchten. Im Folgenden finden Sie einige Codebeispiele, an denen Sie sich orientieren können.
 
 ```sh
 rescue:~# fdisk -l
@@ -100,36 +104,43 @@ rescue:~# mount /dev/hda1 /mnt/
 
 > [!primary]
 >
-> Ihre Partition wird nun gemountet. Sie können jetzt Operationen auf Ihrem Dateisystem vornehmen.
-> 
-> Wenn Ihr Server über eine Software-RAID-Konfiguration verfügt, muss Ihr RAID-Laufwerk gemountet werden (in der Regel `/dev/mdX/`).
+> Ihre Partition wird nun gemountet. Sie können dann Operationen im Dateisystem durchführen.
+>
+> Wenn Ihr Server über eine Software-RAID-Konfiguration verfügt, muss Ihr RAID-Volume gemountet werden (im Allgemeinen `/ dev/mdX`).
 >
 
+Um den Rescue-Modus zu verlassen, ändern Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager/) den Bootmodus wieder auf `Von Festplatte Booten`{.action} und starten Sie den Server über die Kommandozeile neu.
 
-### Windows
+### Windows <a name="windowsrescue"></a>
 
-#### Auf WinRescue zugreifen
+#### Verwendung der WinRescue-Tools
 
-Nachdem Sie den Server neu gestartet haben, erhalten Sie eine E-Mail mit den Login-Daten für den Rescue-Modus. Um diese zu verwenden, laden Sie entweder eine VNC-Konsole herunter und installieren diese, oder verwenden Sie das `IPMI`-Modul in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager/){.external}.
+Nach dem Neustart Ihres Servers erhalten Sie eine E-Mail mit Ihren Login-Daten im Rescue-Modus. Diese E-Mail ist auch in Ihrem OVHcloud [Kundencenter verfügbar](https://www.ovh.com/auth/?action=gotomanager). Klicken Sie in der oberen rechten Ecke Ihres Kundencenters auf den Namen Ihrer Kundenkennung und anschließend auf `E-Mails vom Support`{.action}.
+
+Um den von Windows angebotenen Rescue-Modus zu verwenden, müssen Sie eine VNC-Konsole herunterladen und installieren oder das `IPMI`-Modul in Ihrem [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager/){.external} verwenden.
 
 ![WinRescue Windows](images/rescue-mode-06.png){.thumbnail}
 
-#### WinRescue-Tools
+Folgende Werkzeuge sind bereits in diesem Modus installiert:
 
-|Tools|Beschreibung|
+|Tool|Beschreibung|
 |---|---|
-|Freecommander|Ein Dateimanager mit allen notwendigen Standardfunktionen.|
-|NTPWdi|Ein benutzerfreundlicher Passwort-Manager. Mit diesem Tool können Sie die Passwörter der Benutzerkonten Ihres Servers reaktivieren oder bearbeiten. Es ist besonders nützlich beim Verlust von Login-Daten sowie für die Reaktivierung eines Sicherheitskontos.|
-|FileZilla|Ein Open-Source-FTP-Client. Er unterstützt SSH- und SSL-Protokolle und verfügt über ein intuitives Drag-and-Drop-Interface. FileZilla kann für den Transfer von Daten auf einen FTP-Server verwendet werden, wie beispielsweise beim für die meisten OVH Server verfügbaren FTP-Backup.|
-|7-ZIP|Ein Datenkomprimierungs- und Datenarchivierungstool, das die folgenden Formate liest: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR und Z. Außerdem können Sie mit diesem Tool Ihre eigenen Archive in den folgenden Formaten anlegen : BZIP2, GZIP, TAR, WIM, XZ, Z und ZIP.|
-|Avast Virus Cleaner|Eine Antivirus-Anwendung mit Datenscan- und Datenbereinigungsfunktionen.|
-|ActivNIC|Ein Tool, mit dem Sie eine deaktivierte Netzwerk-Interface-Karte wieder aktivieren können.|
-|SRVFirewall|Ein Skript, das die Firewall Ihres Servers aktiviert oder deaktiviert.|
-|SysInternal|Eine Software-Suite von Microsoft mit zahlreichen Tools für Netzwerkwartung und Prozessverwaltung.|
-|Virtual Clone Drive|Ein Tool zum Mounten von BIN-, CCD- und ISO-Dateien in einem virtuellen CD-Laufwerk.|
 |Firefox|Ein Webbrowser.|
-|Testdisk|Eine leistungsstarke Anwendung zur Datenwiederherstellung. Mit diesem Tool können Sie beschädigte Partitionen wiederherstellen und bearbeiten, verlorene Partitionen wiederfinden, einen Bootsektor reparieren oder sogar einen fehlerhaften MBR rekonstruieren.|
+|Freecommander|Ein Dateimanager mit allen notwendigen Standardfunktionen.|
+|NTPWEdit|Ein benutzerfreundlicher Passwort-Manager. Damit können Sie die Passwörter der Benutzeraccounts auf Ihrem Server reaktivieren oder ändern. Dieses Tool ist bei Verlust von Login-Informationen oder für die Reaktivierung eines Sicherheitsaccounts praktisch.|
+|Avast Virus Cleaner|Eine Antivirus-Anwendung mit Datenscan- und Datenbereinigungsfunktionen.|
+|ActivNIC|Ein Werkzeug, mit dem Sie eine Netzwerkschnittstellenkarte reaktivieren können.|
+|BootSect|Ein Werkzeug, mit dem Sie den Startbereich reparieren können.|
+|Virtual Clone Drive|Ein Tool zum Mounten von BIN-, CCD- und ISO-Dateien in einem virtuellen CD-Laufwerk.|
+|smartCTL|Ein Werkzeug, mit dem Sie auf die automatischen Monitoring-Logs der Festplatten zugreifen können.|
+|Diskpart|Ein Werkzeug, mit dem Sie die Partitionen des Servers verwalten können.|
+|SysInternal|Eine Software-Suite von Microsoft, mit der Sie die Wartung des Netzwerks durchführen und die Prozesse verwalten können.|
+|TestDisk|Eine leistungsstarke Anwendung zur Datenwiederherstellung. Mit diesem Tool können Sie beschädigte Partitionen wiederherstellen und bearbeiten, verlorene Partitionen wiederfinden, einen Bootsektor reparieren oder sogar einen fehlerhaften MBR rekonstruieren.|
+|FileZilla|Ein Open-Source-FTP-Client. Er unterstützt SSH- und SSL-Protokolle und verfügt über ein intuitives Drag-and-Drop-Interface. Es kann verwendet werden, um Ihre Daten auf einen FTP-Server zu übertragen, zum Beispiel das FTP-Backup, das mit den meisten OVHcloud-Servermodellen bereitgestellt wird.|
+|7-ZIP|Ein Datenkomprimierungs- und Datenarchivierungstool, das die folgenden Formate liest: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR und Z. Außerdem können Sie mit diesem Tool Ihre eigenen Archive in den folgenden Formaten anlegen : BZIP2, GZIP, TAR, WIM, XZ, Z und ZIP.|
 
 ## Weiterführende Informationen
+
+[Administratorpasswort auf einem Windows Dedicated Server ändern](../windows-admin-passwort-aendern/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
