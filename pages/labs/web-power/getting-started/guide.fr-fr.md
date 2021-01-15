@@ -10,7 +10,7 @@ order: 1
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER pour bénéficier des langages **Node.js**, **Python**et **Ruby**. Vous souhaitez commencer à développer votre projet. 
+Vous avez souscrit à un hébergement web POWER pour bénéficier des langages **Node.js**, **Python**et **Ruby** et souhaitez commencer à développer votre projet. 
 Retrouvez ici les principales informations relatives à l'interface de gestion de votre hébergement POWER via l'espace client OVHcloud ou via les API. 
 
 **Découvrez comment débuter sur un hébergement web POWER.**
@@ -30,25 +30,25 @@ L'interface de gestion de votre offre d'hébergement web POWER se trouve dans la
 
 Lors de l'activation de votre offre d'hébergement web POWER, un e-mail vous est transmis avec les informations de connexion FTP et SSH. Vous pouvez également gérer ces accès depuis l'onglet `FTP - SSH`{.action}. 
 
-Vous trouverez également les informations complémentaires dans notre guide [Se connecter à l’espace de stockage de son hébergement web](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+Vous trouverez des informations complémentaires dans notre guide [Se connecter à l’espace de stockage de son hébergement web](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
 
 #### Ajouter un nom de domaine
 
-Par défaut, il n'y a pas de nom de domaine attaché à votre hébergement web POWER, néanmoins vous pouvez utilisez l'URL automatiquement attribuée, visible dans l'onglet `Multisite`{.action}. 
+Par défaut, aucun nom de domaine n'est attaché à votre hébergement web POWER. Vous pouvez néanmoins utiliser l'URL automatiquement attribuée, visible dans l'onglet `Multisite`{.action}. 
 
-pour plus de détails sur la déclaration d'un nom de domaine sur votre hébergement web, consulter notre guide [Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-1-acceder-a-la-gestion-multisite)
+Pour plus de détails sur la déclaration d'un nom de domaine sur votre hébergement web, consulter notre guide [Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-1-acceder-a-la-gestion-multisite)
 
-#### Consultation des Logs et statisque 
+#### Consultation des Logs et statisques
 
-Vous retrouvez l'ensemble des logs et statistiques de votre site dans l'onglet `Statistiques et logs`{.action}. 
+Retrouvez l'ensemble des logs et statistiques de votre site dans l'onglet `Statistiques et logs`{.action}. 
 
-Retrouvez également le guide  [Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#consulter-les-statistiques-et-les-logs), pour plus d'informations à ce sujet.
+Prenez connaissance du guide [Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#consulter-les-statistiques-et-les-logs) pour plus d'informations à ce sujet.
 
 ### Depuis les API
 
-Dans un premier temps, je vous invite à consulter notre guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/api-premiers-pas/), si vous n'êtes pas familiarisé avec celle-ci.
+Si vous n'êtes pas déjà familiarisé avec le fonctionnement des API OVHcloud, consultez le guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/api-premiers-pas/).
 
-Les [API OVHcloud](https://api.ovh.com/) actuellement disponible pour l'offre d'hébergement POWER sont les suivantes:
+Les [API OVHcloud](https://api.ovh.com/) actuellement disponibles pour l'offre d'hébergement POWER sont les suivantes :
 
 #### Lister les configurations disponibles
 
@@ -63,7 +63,7 @@ Les [API OVHcloud](https://api.ovh.com/) actuellement disponible pour l'offre d'
 >
 > @api {GET} /hosting/web/{serviceName}/configuration
 
-> Il vous permet, par exemple, de vérifier votre point d'entrée
+> Cet appel vous permet, par exemple, de vérifier votre point d'entrée
  
 #### Modifier la configuration
 
@@ -71,7 +71,7 @@ Les [API OVHcloud](https://api.ovh.com/) actuellement disponible pour l'offre d'
 >
 > @api {PUT} /hosting/web/{serviceName}/configuration
 
-> Il vous permet, par exemple, de modifier votre point d'entrée
+> Cet appel vous permet, par exemple, de modifier votre point d'entrée
 
 #### Redémarrer le service
 
@@ -164,7 +164,7 @@ run Application.new
 
 ### Redémarrer votre instance
 
-Pour chaque modification de votre application, il est conseillé de redémarrer votre instance. Pour cela il vous suffira de faire la commande suivante:
+Pour chaque modification de votre application, il est conseillé de redémarrer votre instance. Pour cela, il vous suffira de saisir la commande suivante:
 
 ```sh
 ~ $ cd www
@@ -174,7 +174,7 @@ Pour chaque modification de votre application, il est conseillé de redémarrer 
 
 > [!primary]
 >
-> L'application des modifications n'est pas immédiate, un délais d'environ 30 secondes peut s'appliquer.
+> L'application des modifications n'est pas immédiate, un délai d'environ 30 secondes peut s'avérer nécessaire.
 
 
 ## Aller plus loin
