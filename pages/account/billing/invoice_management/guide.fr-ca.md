@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment gérer vos factures et les paiements liés à celle
 section: Facturation
 ---
 
-**Dernière mise à jour le 14/01/2021**
+**Dernière mise à jour le 18/01/2021**
 
 ## Objectif
 
