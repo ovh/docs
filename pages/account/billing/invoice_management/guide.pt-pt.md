@@ -5,7 +5,7 @@ excerpt: 'Saiba como gerir as suas faturas e pagamentos na OVHcloud'
 section: Faturação
 ---
 
-**Última atualização: 14/01/2021**
+**Última atualização: 18/01/2021**
 
 ## Sumário
 
