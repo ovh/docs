@@ -1,6 +1,6 @@
 ---
-title: Créer une image OpenStack personnalisée avec Packer
-excerpt: Créer et personnaliser une image OpenStack à partir d'une image existante avec Packer
+title: 'Créer une image OpenStack personnalisée avec Packer'
+excerpt: "Créer et personnaliser une image OpenStack à partir d'une image existante avec Packer"
 slug: packer-openstack-builder
 section: Tutoriels
 ---
