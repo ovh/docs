@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment gérer vos factures et les paiements liés à celle
 section: Facturation
 ---
 
-**Dernière mise à jour le 03/07/2020**
+**Dernière mise à jour le 18/01/2021**
 
 ## Objectif
 
@@ -27,6 +27,12 @@ OVHcloud met à votre disposition un espace vous permettant de consulter, gérer
 
 
 ## En pratique
+
+> [!primary]
+> Mise à jour - Janvier 2021
+>
+Votre facture, lorsqu'elle est éditée par OVHcloud, vous est envoyée par e-mail sous la forme d'un lien cliquable et accessible directement en vous authentifiant à votre espace client OVHcloud. Toute facture reste également disponible depuis le tableau de bord de votre espace-client OVHcloud.
+>
 
 ### Comprendre votre facture
 
@@ -119,7 +125,6 @@ Depuis cet espace, vous pouvez également exporter vos justificatifs de paiement
 >
 > Si vous constatez une différence entre un paiement et le montant d'une facture, cela signifie que vous possédiez un avoir qui a automatiquement diminué le montant prélevé.
 >
-
 
 ## Aller plus loin
 
