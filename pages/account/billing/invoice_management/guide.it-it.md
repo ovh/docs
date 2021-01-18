@@ -5,7 +5,7 @@ excerpt: 'Come amministrare fatture e pagamenti dallo Spazio Cliente'
 section: Fatturazione
 ---
 
-**Ultimo aggiornamento: 14/01/2021**
+**Ultimo aggiornamento: 18/01/2021**
 
 ## Obiettivo
 
