@@ -126,7 +126,6 @@ Depuis cet espace, vous pouvez également exporter vos justificatifs de paiement
 > Si vous constatez une différence entre un paiement et le montant d'une facture, cela signifie que vous possédiez un avoir qui a automatiquement diminué le montant prélevé.
 >
 
-
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
