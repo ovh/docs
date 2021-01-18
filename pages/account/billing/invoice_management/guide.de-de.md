@@ -5,7 +5,7 @@ excerpt: 'Hier erfahren Sie, wie Sie Ihre Rechnungen und deren Bezahlung verwalt
 section: Abrechnung
 ---
 
-**Stand 15.04.2020**
+**Stand 18.01.2021**
 
 ## Einleitung
 
