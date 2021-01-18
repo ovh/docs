@@ -5,7 +5,7 @@ excerpt: 'Find out how to manage your bills and the payments associated with the
 section: 'Managing orders, bills and services'
 ---
 
-**Last updated 2021/01/14**
+**Last updated 2021/01/18**
 
 ## Objective
 
