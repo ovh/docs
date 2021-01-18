@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak zarządzać fakturami i związanymi z nimi płatnoś
 section: Płatności
 ---
 
-**Ostatnia aktualizacja z dnia 14-01-2021**
+**Ostatnia aktualizacja z dnia 18-01-2021**
 
 ## Wprowadzenie
 
