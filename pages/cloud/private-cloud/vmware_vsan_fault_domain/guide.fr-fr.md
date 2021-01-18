@@ -49,7 +49,7 @@ Il suffit alors de glisser le serveur dans la case **+** des « Fault Domains »
 
 Nommez le domaine de panne (vous pouvez utiliser, par exemple, le nom de la baie) dans le champ « Fault domain name » puis confirmez en cliquant sur `CREATE`{.action}.
 
-![nom fault domain](images/03.png){.thumbnail}
+<img src="https://raw.githubusercontent.com/ovh/docs/develop/pages/cloud/private-cloud/vmware_vsan_fault_domain/images/03.png" alt="nom fault domain" class="thumbnail" width="70%" height="70%">
 
 Vous pourrez alors suivre l'avancement de la tâche de création du domaine de panne dans la fenêtre `Recent Tasks`{.action}.
 
@@ -61,11 +61,11 @@ Répétez l'opération sur autant de domaines de pannes qu'il y a de baies diff�
 
 Ajoutez au besoin un serveur dans un domaine de panne existant en le déplaçant dessus puis confirmez en cliquant sur `MOVE`{.action}.
 
-![ajout serveur](images/06.png){.thumbnail}
+<img src="https://raw.githubusercontent.com/ovh/docs/develop/pages/cloud/private-cloud/vmware_vsan_fault_domain/images/06.png" alt="ajout serveur" class="thumbnail" width="70%" height="70%">
 
 Les informations d'espace disque utilisé, disponible et total s'affichent en survolant le domaine de panne.
 
-![fault domain informations](images/07.png){.thumbnail}
+<img src="https://raw.githubusercontent.com/ovh/docs/develop/pages/cloud/private-cloud/vmware_vsan_fault_domain/images/07.png" alt="fault domain informations" class="thumbnail" width="60%" height="60%">
 
 Le cluster vSAN dispose désormais de la résilience de données via les domaines de pannes.
 
