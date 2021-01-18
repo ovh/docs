@@ -5,7 +5,7 @@ excerpt: Find out what has changed in the images provided for Public Cloud & VPS
 section: 'Getting started'
 ---
 
-**Last updated 168th January 2021**
+**Last updated 18th January 2021**
 
 ## Objective
 
