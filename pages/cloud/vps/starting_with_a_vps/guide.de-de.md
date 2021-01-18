@@ -173,4 +173,6 @@ Sie können aber auch die automatische Lösung von OVHcloud nutzen: [SSL Gateway
 
 [SSH Einführung](../../dedicated/ssh-einfuehrung/)
 
+[VPS absichern](../vps-sicherheit/)
+
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

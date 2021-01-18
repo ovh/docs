@@ -169,4 +169,6 @@ For a more automated process, OVHcloud also offers the [SSL Gateway](https://www
 
 [Introduction to SSH](../../dedicated/ssh-introduction/)
 
+[Securing a VPS](../tips-for-securing-a-vps/)
+
 Join our community of users on <https://community.ovh.com/en/>.
