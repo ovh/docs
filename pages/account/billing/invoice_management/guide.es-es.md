@@ -5,7 +5,7 @@ excerpt: 'Cómo gestionar sus facturas y pagos en OVHcloud'
 section: 'Pedidos, facturas y servicios'
 ---
 
-**Última actualización: 14/01/2021**
+**Última actualización: 18/01/2021**
 
 ## Objetivo
 
