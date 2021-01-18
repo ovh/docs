@@ -5,7 +5,7 @@ excerpt: Find out what has changed in the images provided for Public Cloud & VPS
 section: 'Getting started'
 ---
 
-**Last updated 16th November 2020**
+**Last updated 168th January 2021**
 
 ## Objective
 
@@ -14,6 +14,22 @@ OVHcloud offers a variety of operating systems and pre-installed applications on
 ## Requirements
 
 This documentation will only apply to [VPS](https://www.ovhcloud.com/en-gb/vps/compare/) and [Public Cloud instances](https://www.ovhcloud.com/en-gb/public-cloud/compute/).
+
+## 2021 Changelog
+
+This section will display changelogs for each month in the year 2021.
+
+### November
+
+```
+--- 18 January 2021 ---
+Image: All
+Product: Public Cloud / VPS
+Changelog:
+1. Release of new Debian 10 - Plesk image
+2. All images contain new package / security updates from vendors since our last image updates
+
+```
 
 ## 2020 Changelog
 
