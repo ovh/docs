@@ -19,7 +19,7 @@ This documentation will only apply to [VPS](https://www.ovhcloud.com/en-gb/vps/c
 
 This section will display changelogs for each month in the year 2021.
 
-### November
+### January
 
 ```
 --- 18 January 2021 ---
