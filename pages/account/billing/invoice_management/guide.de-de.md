@@ -5,7 +5,7 @@ excerpt: 'Hier erfahren Sie, wie Sie Ihre Rechnungen und deren Bezahlung verwalt
 section: Abrechnung
 ---
 
-**Stand 15.04.2020**
+**Stand 18.01.2021**
 
 ## Einleitung
 
@@ -25,6 +25,12 @@ OVHcloud stellt Ihnen einen Bereich zur Verfügung, über den Sie alle Ihre Rech
 
 
 ## Beschreibung
+
+> [!primary]
+> Update - Januar 2021
+>
+Ihre Rechnung, wenn sie von OVHcloud erstellt wird, wird Ihnen per E-Mail in Form eines klickbaren Links zugesandt, auf den Sie direkt zugreifen können, indem Sie sich in Ihrem OVHcloud Kundencenter authentifizieren. Alle Rechnungen bleiben auch über das Dashboard Ihres OVHcloud Kundencenters verfügbar.
+>
 
 ### Aufbau Ihrer Rechnung
 

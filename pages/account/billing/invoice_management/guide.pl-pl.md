@@ -5,7 +5,7 @@ excerpt: 'Dowiedz się, jak zarządzać fakturami i związanymi z nimi płatnoś
 section: Płatności
 ---
 
-**Ostatnia aktualizacja z dnia 15-04-2020**
+**Ostatnia aktualizacja z dnia 18-01-2021**
 
 ## Wprowadzenie
 
@@ -25,6 +25,12 @@ OVHcloud oddaje do Twojej dyspozycji Panel klienta, w którym możesz wyświetla
 
 
 ## W praktyce
+
+> [!primary]
+> Aktualizacja - styczeń 2021
+>
+Faktura wystawiona przez OVHcloud jest wysyłana e-mailem za pomocą linku klikniętego i dostępnego bezpośrednio w Panelu klienta OVHcloud. Każda faktura jest również dostępna na dashboardzie w Panelu klienta.
+>
 
 ### Informacje na Twojej fakturze
 

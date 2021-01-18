@@ -5,7 +5,7 @@ excerpt: 'Cómo gestionar sus facturas y pagos en OVHcloud'
 section: 'Pedidos, facturas y servicios'
 ---
 
-**Última actualización: 15/04/2020**
+**Última actualización: 18/01/2021**
 
 ## Objetivo
 
@@ -24,6 +24,12 @@ Desde el área de cliente puede consultar, administrar y abonar sus facturas en 
 
 
 ## Procedimiento
+
+> [!primary]
+> Actualización - Enero de 2021
+>
+La factura, que se emite por OVHcloud, se envía por correo electrónico como un enlace accesible y accesible directamente desde el área de cliente de OVHcloud. Todas las facturas están disponibles en el panel de control de OVHcloud.
+>
 
 ### Partes de una factura de OVHcloud
 
