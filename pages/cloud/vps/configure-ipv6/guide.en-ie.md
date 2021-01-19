@@ -82,9 +82,9 @@ Once you have gathered the necessary information for the IPv6 configuration, log
 There are several ways to apply the IPv6 configuration. Use whichever method best suits your situation and requirements:
 
 - [Non-persistent application](#nonpersistent)
-- [Persistent application on Debian and its derivatives](./#persistentdebian)
-- [Persistent application on Red Hat and its derivatives](./#persistentredhat)
-- [Persistent application on Windows Server](./#persistentwindows)
+- [Persistent application on Debian and its derivatives](#persistentdebian)
+- [Persistent application on Red Hat and its derivatives](#persistentredhat)
+- [Persistent application on Windows Server](#persistentwindows)
 
 #### Non-persistent application <a name="nonpersistent"></a>
 
