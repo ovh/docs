@@ -46,12 +46,11 @@ Seuls s'affichent ici les noms de domaine OVHcloud pour lesquels vous êtes [con
 
 - **Ajouter un nom de domaine externe** :
 
-Si le nom de domaine n'apparaît pas dans la liste, il est alors considéré comme externe (à votre identifiant client ou à OVHcloud). Dans ce cas, sélectionnez `Ajouter un nom de domaine externe`{.action} puis cliquez sur `Suivant`{.action}. Poursuivez alors vers l'[étape 2.2: ajouter un nom de domaine externe](#add-external-domain).
+Dans le cas d'un nom de domaine externe à votre compte client (autre NIC handle) ou externe à OVHcloud (fourniseur de nom de domain tiers), sélectionnez `Ajouter un nom de domaine externe`{.action} puis cliquez sur `Suivant`{.action}. Poursuivez alors vers l'[étape 2.2: ajouter un nom de domaine externe](#add-external-domain).
 
 ![multisite](images/add-multisite-step1.png){.thumbnail}
 
 #### Étape 2.1 : ajouter un domaine enregistré chez OVHcloud <a name="add-ovhcloud-domain"></a>
-
 
 Cette étape ne s'applique que si vous avez sélectionné « Ajouter un domaine enregistré chez OVHcloud ». Pour les noms de domaine externes, passez à l'[étape 2.2 : ajouter un nom de domaine externe](#add-external-domain){.external}.
 
@@ -91,19 +90,19 @@ Maintenant que le domaine est ajouté, rendez-vous à l’[étape 3 : mettre vot
  
  Votre nom de domaine n'est donc pas enregistré chez OVHcloud **ou** il n'est pas enregistré dans **votre** compte OVHcloud. 
 
- > Avant de poursuivre, il est préférable de préparer la zone DNS du nom de domaine externe avant l'ajout de l'entrée multisite.
+ > Avant de poursuivre, il est préférable de modififer la zone DNS du nom de domaine externe avant l'ajout de l'entrée multisite.
  >
  > La modification de la configuration du nom de domaine externe (sa zone DNS) doit être réalisée depuis l’interface du prestataire gérant celle-ci. S’il s’agit d’OVHcloud, aidez-vous de notre documentation [« Éditer une zone DNS OVHcloud »](../../domains/editer-ma-zone-dns/){.external}. Une fois la modification effectuée, un temps de propagation de 1 à 24 heures est requis avant qu’elle ne soit pleinement effective.
 >
-> Retrouvez ci-dessous les éléments à modifier concernant la configuration DNS de votre nom de domaine externe :
+> Retrouvez ci-dessous les 2 éléments à modifier concernant la configuration DNS de votre nom de domaine externe :
 >
-> |Champ|Où trouver l'information ?|Description|
+> |Champ|Où trouver l'information ?|Action à réaliser|
 > |---|---|---|
 > |TXT|Onglet `Multisite`{.action} puis cliquez sur `Configuration du token ovhcontrol`{.action}|Permet à OVHcloud de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.mydomainovh). Vous devez valider uniquement le domaine principal, pas tous les sous-domaines. Dans le cas d'une délégation de zone, le champ doit être ajouté dans la zone faisant autorité pour le nom de domaine externe à ajouter.|
 >
 > ![multisite](images/add-multisite-external-step3.png){.thumbnail}
 >
-> |Champ|Où trouver l'information ?|Description|
+> |Champ|Où trouver l'information ?|Action à réaliser|
 > |---|---|---|
 > |A et AAAA|Onglet `Informations générales`{.action} puis à côté de **IPv4** et **IPv6**|Permet à votre domaine d'afficher le site internet que vous mettrez en ligne sur votre hébergement web.|
 >
