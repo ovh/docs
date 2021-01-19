@@ -3,11 +3,12 @@ title: Configure an additional volume
 slug: configure-an-additional-volume
 excerpt: Tutorial on configuring an additional disk on a cloud server from the Public Cloud offer
 section: Tutorials
+hidden: true
 ---
 
 
 ## Preamble
-You have probably [created a new additional volume]({ovh_www}/public-cloud/create_and_configure_an_additional_disk_on_an_instance/){.external}, or an additional disk.
+You have probably [created a new additional volume](../create_and_configure_an_additional_disk_on_an_instance/)){.external}, or an additional disk.
 
 This guide will explain how to create an additional disk, and then how to attach it to one of your instances.
 

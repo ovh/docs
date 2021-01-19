@@ -163,7 +163,6 @@ Once you have installed and secured your VPS, you may want to secure your domain
 You can install this SSL certificate yourself manually, directly on the VPS. Please refer to the official documentation that you have been using.
 
  
-
 ## Go further
 
 [Introduction to SSH](../../dedicated/ssh-introduction/)

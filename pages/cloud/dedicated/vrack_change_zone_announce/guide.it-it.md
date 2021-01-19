@@ -9,7 +9,7 @@ section: vRack
 
 ## Obiettivo
 
-La [vRack](https://www.ovh.it/soluzioni/vrack/){.external} è una rete privata che permette di configurare l’indirizzamento tra due o più [server dedicati OVH](https://www.ovh.it/server_dedicati/){.external}.
+La [vRack](https://www.ovh.it/soluzioni/vrack/){.external} è una rete privata che permette di configurare l’indirizzamento tra due o più [server dedicati OVH](https://www.ovhcloud.com/it/bare-metal/){.external}.
 
 **Questa guida ti mostra come definire la zona annunciata nella vRack per un blocco IP.**
 
@@ -37,7 +37,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-In questo esempio l’indirizzo IP testato è annunciato a **Roubaix**, come visibile nell’ultimo hop effettuato: vl1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms. Se necessario, consulta la pagina [Datacenter](https://www.ovh.it/aproposito/datacenter.xml){.external} del nostro sito per identificare la localizzazione corrispondente.
+In questo esempio l’indirizzo IP testato è annunciato a **Roubaix**, come visibile nell’ultimo hop effettuato: vl1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms.
 
 ### Step 2: modifica il blocco IP annunciato
 
@@ -81,7 +81,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-In questo esempio l’indirizzo IP testato è annunciato a **Gravelines**, come visibile nell’ultimo hop effettuato: be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms. Se necessario, consulta la pagina [Datacenter](https://www.ovh.it/aproposito/datacenter.xml){.external} del nostro sito per identificare la localizzazione corrispondente.
+In questo esempio l’indirizzo IP testato è annunciato a **Gravelines**, come visibile nell’ultimo hop effettuato: be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms.
 
 ## Per saperne di più
 

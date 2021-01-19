@@ -18,7 +18,7 @@ La mise en réseau en mode bridge peut être utilisée pour configurer vos machi
 ## Prérequis
 
 * Posséder un serveur dédié avec un hyperviseur installé ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, par exemple).
-* Bénéficier d'au moins une adresse [IP fail-over](https://www.ovh.com/ca/fr/serveurs_dedie/ip_failover.xml) connectée au serveur.
+* Bénéficier d'au moins une adresse [IP fail-over](https://www.ovhcloud.com/fr-ca/bare-metal/ip/) connectée au serveur.
 * Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique

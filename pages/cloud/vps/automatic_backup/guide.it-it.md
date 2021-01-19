@@ -3,6 +3,7 @@ title: Backup automatico
 excerpt: ''
 slug: backup_automatico
 legacy_guide_number: g1486
+hidden: true
 ---
 
 

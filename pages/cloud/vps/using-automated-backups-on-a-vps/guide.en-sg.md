@@ -17,13 +17,13 @@ This option offers a convenient way to frequently have complete VPS backups avai
 
 > [!primary]
 >
-Before applying backup options, we recommend to consult the [product pages and FAQ]({ovh_www}/vps/options/) for pricing comparisons and further details.
+Before applying backup options, we recommend to consult the [product pages and FAQ](https://www.ovhcloud.com/en-sg/vps/options/) for pricing comparisons and further details.
 >
 
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
-- an OVHcloud [VPS service]({ovh_www}/vps/) already set up
+- an OVHcloud [VPS service](https://www.ovhcloud.com/en-sg/vps/) already set up
 - administrative access (root) via SSH to your VPS (optional)
 
 ## Instructions

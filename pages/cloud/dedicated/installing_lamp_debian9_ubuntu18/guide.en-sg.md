@@ -20,7 +20,7 @@ These technologies form a stack, which you can use to host dynamic websites and 
 - SSH access 
 - access to edit text files in the command line (e.g. Vim, nano, Emacs)
 - ability to install a Linux distribution (here we are using Debian 9.4, but the guide steps are identical for Ubuntu 18.04)
-- a server or a virtual machine with a Linux distribution (a [VPS](https://www.ovh.com/sg/vps/){.external}, a [Dedicated Server](https://www.ovh.com/sg/dedicated-servers/all_servers.xml){.external} or [OVHcloud Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/prices/){.external})
+- a server or a virtual machine with a Linux distribution (a [VPS](https://www.ovhcloud.com/en-sg/vps/){.external}, a [Dedicated Server](https://www.ovhcloud.com/en-sg/bare-metal/){.external} or [OVHcloud Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/){.external})
 - admin (root) access to the server
 
 > [!warning]

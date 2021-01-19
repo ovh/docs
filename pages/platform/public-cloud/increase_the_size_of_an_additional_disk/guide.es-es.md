@@ -16,8 +16,8 @@ Si ha alcanzado la capacidad máxima de almacenamiento de su disco adicional, es
 
 ## Requisitos
 
-* Tener una [instancia Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} en su cuenta de OVHcloud
-* Tener un [disco adicional](https://www.ovhcloud.com/es/public-cloud/block-storage/){.external} asociado a su instancia
+* Tener una [instancia Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/){.external} en su cuenta de OVHcloud
+* Tener un [disco adicional](https://www.ovhcloud.com/es-es/public-cloud/block-storage/){.external} asociado a su instancia
 * Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
 * Tener acceso de administrador (root) a su instancia a través de SSH (solo para Linux)
 * Tener acceso de administrador a su instancia a través de RDP (solo para Windows)
