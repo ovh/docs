@@ -5,7 +5,7 @@ excerpt:  Descubra los cambios realizados en las imágenes que aparecen en las s
 section: 'Primeros pasos'
 ---
 
-**Última actualización: 30/11/2020**
+**Última actualización: 18/01/2021**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
@@ -18,6 +18,22 @@ OVHcloud ofrece una gran variedad de sistemas operativos y aplicaciones preinsta
 ## Requisitos
 
 Esta guía solo se aplica a las soluciones [VPS](https://www.ovhcloud.com/es/vps/compare/) y las instancias de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/compute/).
+
+## 2021 Changelog
+
+Esta sección muestra el changelog para cada mes del año 2021.
+
+### January
+
+```
+--- 18 January 2021 ---
+Image: All
+Product: Public Cloud / VPS
+Changelog:
+1. Release of new Debian 10 - Plesk image
+2. All images contain new package / security updates from vendors since our last image updates
+
+```
 
 ## Changelog 2020
 
