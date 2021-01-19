@@ -9,7 +9,7 @@ section: vRack
 
 ## Sumário
 
-O [vRack](https://www.ovh.pt/solucoes/vrack/){.external} é uma rede privada que lhe permite configurar o direcionamento entre dois ou mais [servidores dedicados](https://www.ovh.pt/servidores_dedicados/){.external} da OVH.
+O [vRack](https://www.ovh.pt/solucoes/vrack/){.external} é uma rede privada que lhe permite configurar o direcionamento entre dois ou mais [servidores dedicados](https://www.ovhcloud.com/pt/bare-metal/){.external} da OVH.
 
 **Saiba como definir uma zona de anúncio de um bloco IP no vRack.**
 
@@ -37,7 +37,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-O exemplo acima mostra que o endereço IP testado está atualmente anunciado em **Roubaix**. Isto é visível no último salto realizado: “vl1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms”. Se precisar de ajuda, consulte a nossa página “[Datacenters](https://www.ovh.pt/aproposito/datacenters.xml){.external}”.
+O exemplo acima mostra que o endereço IP testado está atualmente anunciado em **Roubaix**. Isto é visível no último salto realizado: “vl1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms”.
 
 ### 2 - Alterar o anúncio do bloco IP
 
@@ -81,7 +81,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-O exemplo acima mostra que o endereço IP testado está atualmente anunciado em **Gravelines**. Isto é visível no último salto realizado: “be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms”. Se precisar de ajuda, consulte a nossa página “[Datacenters](https://www.ovh.pt/aproposito/datacenters.xml){.external}”.
+O exemplo acima mostra que o endereço IP testado está atualmente anunciado em **Gravelines**. Isto é visível no último salto realizado: “be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms”.
 
 ## Quer saber mais?
 

@@ -9,13 +9,13 @@ section: vRack
 
 ## Objectif
 
-Le [vRack]({ovh_www}/solutions/vrack/){.external} est un réseau privé vous permettant de configurer l’adressage entre deux ou plusieurs [serveurs dédiés]({ovh_www}/serveurs_dedies/){.external} OVHcloud.
+Le [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external} est un réseau privé vous permettant de configurer l’adressage entre deux ou plusieurs [serveurs dédiés](https://www.ovhcloud.com/fr-ca/bare-metal/){.external} OVHcloud.
 
 **Apprenez à définir une zone d'annonce d'un bloc IP dans le vRack.**
 
 ## Prérequis :
 
-- Posséder un [vRack]({ovh_www}/solutions/vrack/){.external}.
+- Posséder un [vRack](https://www.ovh.com/ca/fr/solutions/vrack/){.external}.
 - Avoir [configuré un bloc d’adresses IP dans le vRack](../ajouter-ou-enlever-un-bloc-ip-du-vrack/).
 - Disposer de connaissances avancées en réseau.
 
@@ -37,7 +37,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-L'exemple ci-dessus montre que l'adresse IP testée est actuellement annoncée à **Roubaix**. Ceci est visible dans le dernier saut réalisé : « vl1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms ». Aidez-vous de notre page « [Datacenters]({ovh_www}/apropos/datacentres.xml){.external} » si besoin pour identifier celui concerné.
+L'exemple ci-dessus montre que l'adresse IP testée est actuellement annoncée à **Roubaix**. Ceci est visible dans le dernier saut réalisé : « vl1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms ».
 
 ### Étape 2 : modifier l'annonce du bloc IP
 
@@ -81,7 +81,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-L'exemple ci-dessus montre que l'adresse IP testée est à présent annoncée à **Gravelines**. Cette mention est visible dans le dernier saut réalisé : « be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms ». Aidez-vous de notre page « [Datacenters]({ovh_www}/apropos/datacentres.xml){.external} » si besoin pour identifier celui concerné.
+L'exemple ci-dessus montre que l'adresse IP testée est à présent annoncée à **Gravelines**. Cette mention est visible dans le dernier saut réalisé : « be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms ».
 
 ## Aller plus loin
 
