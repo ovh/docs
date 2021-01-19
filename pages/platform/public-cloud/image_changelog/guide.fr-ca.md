@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 12
 ---
 
-**Dernière mise à jour le 30/11/2020**
+**Dernière mise à jour le 18/01/2021**
 
 ## Objectif
 
@@ -15,6 +15,22 @@ OVHcloud offre une variété de systèmes d'exploitation et d'applications préi
 ## Prérequis
 
 Cette documentation s'applique uniquement aux solutions [VPS](https://www.ovhcloud.com/fr-ca/vps/compare/) et aux instances [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/compute/).
+
+## 2021 Changelog
+
+Cette section affiche le changelog pour chaque mois de l'année 2021.
+
+### January
+
+```
+--- 18 January 2021 ---
+Image: All
+Product: Public Cloud / VPS
+Changelog:
+1. Release of new Debian 10 - Plesk image
+2. All images contain new package / security updates from vendors since our last image updates
+
+```
 
 ## Changelog 2020
 

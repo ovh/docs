@@ -9,7 +9,7 @@ section: 'Erste Schritte'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 16.11.2020**
+**Letzte Aktualisierung am 18.01.2021**
 
 ## Ziel
 
@@ -18,6 +18,22 @@ OVHcloud bietet eine Vielzahl von Betriebssystemen und Anwendungen, die auf VPS 
 ## Voraussetzungen
 
 Diese Liste gilt ausschließlich für [VPS](https://www.ovhcloud.com/de/vps/compare/) und [Public Cloud Instanzen](https://www.ovhcloud.com/de/public-cloud/compute/).
+
+## 2021 Changelog
+
+Dieser Bereich enthält die Changelogs für jeden Monat des Jahres 2021.
+
+### January
+
+```
+--- 18 January 2021 ---
+Image: All
+Product: Public Cloud / VPS
+Changelog:
+1. Release of new Debian 10 - Plesk image
+2. All images contain new package / security updates from vendors since our last image updates
+
+```
 
 ## Changelog 2020
 
