@@ -83,7 +83,7 @@ There are several ways to apply the IPv6 configuration. Use whichever method bes
 
 - [Non-persistent application](#nonpersistent)
 - [Persistent application on Debian and its derivatives](./#persistentdebian)
-- [Persistent application on Redhat and its derivatives](./#persistentredhat)
+- [Persistent application on Red Hat and its derivatives](./#persistentredhat)
 - [Persistent application on Windows Server](./#persistentwindows)
 
 #### Non-persistent application <a name="nonpersistent"></a>
@@ -172,7 +172,6 @@ rm -f /etc/network/interfaces
 cp /etc/network/interfaces.back /etc/network/interfaces
 ```
 
-
 ##### Configuration using Netplan <a name="netplan"></a>
 
 The network configuration files are located in the `/etc/netplan/` directory. We recommend that you start by backing up the relevant configuration file. In this case, copy the `50-cloud-init.yaml` file using the following commands:
@@ -212,7 +211,7 @@ network:
             gateway6: "IPv6_GATEWAY"
             routes:
               - to: "IPv6_GATEWAY"
-                 scope: link
+                scope: link
 ```
 
 > [!warning]
@@ -232,7 +231,7 @@ If it is correct, apply it using the following command:
 netplan apply
 ```
 
-#### Persistent application on Redhat and its derivatives (CentOS, ClearOS, etc.) <a name="persistentredhat"></a>
+#### Persistent application on Red Hat and its derivatives (CentOS, ClearOS, etc.) <a name="persistentredhat"></a>
 
 The network configuration files are located in the `/etc/sysconfig/network-scripts/` directory. We recommend that you start by backing up the relevant configuration file. For example, copy the `ifcfg-eth0` file using the following commands. Remember to replace **eth0** with your actual interface if necessary.
 
@@ -257,15 +256,15 @@ IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
 ```
 
-> On CentOS 7, you have to create a routing file in addition to the steps above.
+**On CentOS 7, you have to create a routing file in addition to the steps above:**
 
-Create a file (with *sudo* privileges), indicating the default IPv6 routes:
+- Create a file (with *sudo* privileges), indicating the default IPv6 routes:
 
 ```bash
 # touch /etc/sysconfig/network-scripts/route6-eth0
 ```
 
-Edit the file and add the lines below. Replace the generic elements (*IPV6_GATEWAY* and **eth0** interface, if necessary) with your specific values.
+- Edit the file and add the lines below. Replace the generic elements (*IPV6_GATEWAY* and **eth0** interface, if necessary) with your specific values.
 
 ```
 IPV6_GATEWAY dev eth0
