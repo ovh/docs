@@ -55,7 +55,7 @@ Wählen Sie `ovh`{.action} in der Drop-down-Liste "Typ" aus, wenn Sie nicht VMwa
 
 ### Schritt 2: Die Adresse des Gateways bestimmen
 
-Um Ihre virtuellen Maschinen für den Internetzugang zu konfigurieren, müssen Sie das Gateway Ihrer Host-Maschine kennen, d. h. Ihres dedizierten Servers. Die Gateway-Adresse besteht aus den ersten drei Oktetten der Haupt-IP-Adresse Ihres Servers und 254 als das letzte Oktett. Wenn zum Beispiel die Haupt-IP-Adresse Ihres Servers wäre:
+Um Ihre virtuellen Maschinen für den Internetzugang zu konfigurieren, müssen Sie das Gateway Ihrer Host-Maschine kennen, d. h. Ihres dedizierten Servers. Die Gateway-Adresse besteht aus den ersten drei Oktetten der Haupt-IP-Adresse Ihres Servers und 254 als das letzte Oktett. Angenommen, die Haupt-IP-Adresse Ihres Servers wäre:
 
 - 169.254.010.020
 
@@ -333,9 +333,9 @@ Pingen Sie nun Ihre Failover IP von einem externen Gerät aus an.
 
 - Wenn der Host antwortet, bedeutet das wahrscheinlich, dass es auf der virtuellen Maschine oder dem Host einen Konfigurationsfehler gibt, der die Failover IP daran hindert, im normalen Betrieb zu funktionieren.
 
-- Wenn die IP-Adresse immer noch nicht reagiert, erstellen Sie ein Ticket in Ihrem OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager), um Ihre Testergebnisse an unsere Support-Teams weiterzuleiten. 
+- Wenn die IP-Adresse immer noch nicht reagiert, erstellen Sie ein Ticket in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager), um Ihre Testergebnisse an unsere Support-Teams weiterzuleiten. 
 
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

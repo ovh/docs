@@ -15,7 +15,7 @@ The Bring Your Own Image technology (BYOI) enables you to deploy *cloudready* im
 
 ## Requirements
 
-- a [dedicated server]({ovh_www}/dedicated_servers/) in your OVHcloud account
+- a [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) in your OVHcloud account
 - having your [APIv6 credentials](../../api/first-steps-with-ovh-api/) ready
 
 > [!warning]

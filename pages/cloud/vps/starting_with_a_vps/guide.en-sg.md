@@ -24,7 +24,7 @@ If you encounter any difficulties performing these actions, please contact a spe
 
 ## Requirements
 
-- a [Virtual Private Server]({ovh_www}/vps) in your OVHcloud account
+- a [Virtual Private Server](https://www.ovhcloud.com/en-sg/vps/) in your OVHcloud account
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 - login credentials received via email after the installation
 
@@ -167,5 +167,7 @@ You can install this SSL certificate yourself manually, directly on the VPS. Ple
 ## Go further
 
 [Introduction to SSH](../../dedicated/ssh-introduction/)
+
+[Securing a VPS](../tips-for-securing-a-vps/)
 
 Join our community of users on <https://community.ovh.com/en/>.
