@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 12
 ---
 
-**Ostatnia aktualizacja z dnia 30-11-2020**
+**Ostatnia aktualizacja z dnia 18-01-2021**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
@@ -20,7 +20,23 @@ OVHcloud oferuje wiele systemów operacyjnych i aplikacji zainstalowanych wstęp
 
 Niniejszy przewodnik dotyczy wyłącznie rozwiązań [VPS](https://www.ovhcloud.com/pl/vps/compare/) oraz instancji [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/compute/).
 
-## Zmiana 2020
+## 2021 Changelog
+
+W tej sekcji wyświetla się zmiany za każdy miesiąc 2021 roku.
+
+### January
+
+```
+--- 18 January 2021 ---
+Image: All
+Product: Public Cloud / VPS
+Changelog:
+1. Release of new Debian 10 - Plesk image
+2. All images contain new package / security updates from vendors since our last image updates
+
+```
+
+## 2020 Changelog
 
 W tej sekcji wyświetla się zmiany za każdy miesiąc 2020 roku.
 
