@@ -16,7 +16,7 @@ You can manage your Public Cloud projects easily via the [OVHcloud Control Panel
 
 ## Requirements
 
-- a [Public Cloud Instance]({ovh_www}/public-cloud) in your OVHcloud account
+- a [Public Cloud Instance](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
 - an [SSH key](../create-ssh-keys/)
 
 

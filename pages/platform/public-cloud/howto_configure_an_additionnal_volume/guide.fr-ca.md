@@ -4,6 +4,7 @@ slug: configurer-un-volume-additionnel
 excerpt: Tutoriel de configuration d'un disque additionnel sur un serveur cloud dans l'offre Public Cloud
 section: Stockage
 order: 5
+hidden: true
 ---
 
 

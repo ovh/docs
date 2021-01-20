@@ -23,10 +23,10 @@ IPv6 is the latest version of the *Internet Protocol*. Each OVHcloud VPS server 
 
 ## Requirements
 
-- a [Virtual Private Server](https://www.ovhcloud.com/en-sg/vps/) in your OVHcloud account
+- a [Virtual Private Server](https://www.ovhcloud.com/en-ie/vps/) in your OVHcloud account
 - administrative access (root) via SSH or remote desktop (Windows) to your server
 - a basic understanding of networking
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) / to the [OVHcloud API](https://ca.api.ovh.com/console/)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) / to the [OVHcloud API](https://api.ovh.com/console/)
 
 ## Instructions
 
@@ -49,7 +49,7 @@ The first step is to identify the IPv6 address and the IPv6 gateway assigned to 
 
 #### Via the OVHcloud Control Panel <a name="viacontrolpanel"></a>
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and open the `Bare Metal Cloud`{.action} section. Click `VPS`{.action} in the services bar on the left-hand side, then choose the VPS server concerned.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and open the `Bare Metal Cloud`{.action} section. Click `VPS`{.action} in the services bar on the left-hand side, then choose the VPS server concerned.
 
 The IPv6 address and the IPv6 gateway assigned to your server will appear in the `IP` section of the `Home`{.action} tab. Once you have copied them, continue with [applying the IPv6 configuration](#applyipv6).
 
@@ -57,7 +57,7 @@ The IPv6 address and the IPv6 gateway assigned to your server will appear in the
 
 #### Via the OVHcloud API <a name="viaapi"></a>
 
-On the [OVHcloud API page](https://ca.api.ovh.com/console/) click on `Login`{.action} in the top-right corner. On the following page, enter the credentials of your OVHcloud account.
+On the [OVHcloud API page](https://api.ovh.com/console/) click on `Login`{.action} in the top-right corner. On the following page, enter the credentials of your OVHcloud account.
 
 Use this call to retrieve the IPv6 address assigned to your server:
 

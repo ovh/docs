@@ -19,7 +19,7 @@ Estas tecnologías forman una pila, que usted puede utilizar para alojar sitio w
 - Acceso SSH
 - Acceso para editar texto mediante comando (ejem. Vim, nano, Emacs)
 - Capacidad para instalar una destrucción Linux (aquí estamos usando Debian 9.4, pero los pasos para Ubuntu 18.4 son identificás)
-- Un servidor o una máquina virtual con una distribución Linux [un VPS](https://www.ovh.com/world/es/vps/){.external}, [un servidor dedicado](https://www.ovh.com/world/es/servidores-dedicados/){.external} o [una instancia Public Cloud](https://www.ovh.com/world/es/public-cloud/){.external})
+- Un servidor o una máquina virtual con una distribución Linux [un VPS](https://www.ovhcloud.com/es/vps/){.external}, [un servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external} o [una instancia Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external})
 - Acceso administrador al servidor (root)
 
 > [!warning]

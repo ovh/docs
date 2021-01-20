@@ -9,15 +9,15 @@ section: Tutorial
 
 Your data is sensitive. Any loss or alteration of it could quickly result in serious issues for your business. Since there is no such thing as a risk-free approach, we strongly recommend creating backups at least daily, and preferably storing them on a server or storage solution that is separate to your production infrastructures.
 
-OVH offers a range of [Dedicated Servers](https://www.ovh.co.uk/dedicated_servers/storage/){.external} that are adapted to fit your storage operations, and equipped with at least four hard drives. You can use these resources to back up an infrastructure hosted with OVH or with another service provider, via the public network.
+OVH offers a range of [Dedicated Servers](https://www.ovhcloud.com/en-gb/bare-metal/storage/){.external} that are adapted to fit your storage operations, and equipped with at least four hard drives. You can use these resources to back up an infrastructure hosted with OVH or with another service provider, via the public network.
 
 In this guide, we will show you how to configure an OVH Storage Server to suit your needs, generate a tree-view for receiving backups, then automate backups for two remote servers via SCP protocol.
 
 
 ## Requirements
 
-- an [OVH Storage Server](https://www.ovh.co.uk/dedicated_servers/storage/){.external}
-- a production infrastructure ([VPS](https://www.ovh.co.uk/vps/){.external}, [Dedicated Servers](https://www.ovh.co.uk/dedicated_servers/){.external}, [Public Cloud](https://www.ovh.co.uk/public-cloud/instances/){.external}, etc.)
+- an [OVH Storage Server](https://www.ovhcloud.com/en-gb/bare-metal/storage/){.external}
+- a production infrastructure ([VPS](https://www.ovhcloud.com/en-gb/vps/){.external}, [Dedicated Servers](https://www.ovhcloud.com/en-gb/bare-metal/){.external}, [Public Cloud](https://www.ovhcloud.com/en-gb/public-cloud/){.external}, etc.)
 - an SSH connection between the Storage Servers and production infrastructure
 - a private network between your servers ([OVH vRack](https://www.ovh.co.uk/solutions/vrack/){.external}) is recommended
 - To follow this guide you need knowledge of: Linux administration, logging in via SSH, connecting to/backing up databases, installing operating systems (here we’re using Debian 9.4).
@@ -27,7 +27,7 @@ In this guide, we will show you how to configure an OVH Storage Server to suit y
 
 ### Step 1: Choose the right RAID mode.
 
-OVH offers a range of [Storage Servers](https://www.ovh.co.uk/dedicated_servers/storage/){.external} with hardware configurations that contain several hard disks. In our example, we are using a software RAID (or softRAID) with four disks, which each have 6 TB capacity.
+OVH offers a range of [Storage Servers](https://www.ovhcloud.com/en-gb/bare-metal/storage/){.external} with hardware configurations that contain several hard disks. In our example, we are using a software RAID (or softRAID) with four disks, which each have 6 TB capacity.
 
 With OVH, you can choose between RAID 0, 1, 5, 6 and 10 as configurations for storing your data. Each of these configurations have pros and cons in terms of performance and resilience. So with four disks, we can store data efficiently with RAID 5, 6 or 10 configuration (RAID 0 and 1 are not relevant here).
 
@@ -56,7 +56,7 @@ There is no such thing as a ‘best’ RAID configuration, as they all suit diff
 
 ### Step 2: Set up and configure your server.
 
-Go to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and set up your server. As a reminder, we’re using Debian 9.4 in this guide. For further information, please refer to our guide on [Getting started with a Dedicated Server](https://docs.ovh.com/gb/en/dedicated/getting-started-dedicated-server/){.external}.
+Go to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and set up your server. As a reminder, we’re using Debian 9.4 in this guide. For further information, please refer to our guide on [Getting started with a Dedicated Server](../getting-started-dedicated-server/){.external}.
 
 Once you have selected the operating system you want to install, tick `Customise the partition configuration`{.action}.
 

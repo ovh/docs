@@ -16,7 +16,7 @@ Lors de vos tests, vous serez probablement amené à vérifier la vitesse de vos
 
 ## Prérequis
 
-- Posséder une [instance Public Cloud](https://www.ovh.com/ca/1fr/public-cloud/instances/){.external}.
+- Posséder une [instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/){.external}.
 - Disposer d’un accès administratif (root) à cette instance via SSH (pour Linux uniquement).
 
 ## En pratique

@@ -4,6 +4,7 @@ title: Automatinis rezervinis kopijavimas
 excerpt: ''
 slug: automatinis_rezervinis_kopijavimas
 legacy_guide_number: g1486
+hidden: true
 ---
 
 

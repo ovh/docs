@@ -9,13 +9,13 @@ section: vRack
 
 ## Wprowadzenie
 
-Rozwiązanie [vRack]({ovh_www}/rozwiazania/vrack/){.external} umożliwia konfigurację sieci między dwoma lub więcej [serwerami dedykowanymi]({ovh_www}/serwery_dedykowane/){.external} OVH.
+Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwia konfigurację sieci między dwoma lub więcej [serwerami dedykowanymi](https://www.ovhcloud.com/pl/bare-metal/){.external} OVH.
 
 **Dowiedz się, jak zmienić strefę rozgłaszania bloku IP w sieci vRack.**
 
 ## Wymagania początkowe
 
-- Posiadanie usługi [vRack]({ovh_www}/rozwiazania/vrack/){.external}
+- Posiadanie usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
 - [Konfiguracja bloku adresów IP w sieci vRack](../dodawanie-lub-usuwanie-bloku-ip-vrack/)
 - Posiadanie zaawansowanej wiedzy w zakresie sieci
 
@@ -37,7 +37,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-Powyższy przykład pokazuje, że testowany adres IP jest obecnie rozgłaszany w **Roubaix.** Jest to widoczne w ostatnim zrealizowanym skoku: „vl1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms”. Skorzystaj z naszej strony [Centra danych]({ovh_www}/onas/centra-danych.xml){.external}, aby zidentyfikować centrum danych, w którym są Twoje usługi.
+Powyższy przykład pokazuje, że testowany adres IP jest obecnie rozgłaszany w **Roubaix.** Jest to widoczne w ostatnim zrealizowanym skoku: „vl1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms”.
 
 ### Etap 2: zmiana strefy rozgłaszania bloku IP
 
@@ -81,7 +81,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-Powyższy przykład pokazuje, że testowany adres IP jest obecnie rozgłaszany w **Gravelines** Jest to widoczne w ostatnim zrealizowanym skoku: „be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms”. Skorzystaj z naszej strony [Centra danych]({ovh_www}/onas/centra-danych.xml){.external}, aby zidentyfikować centrum danych, w którym są Twoje usługi.
+Powyższy przykład pokazuje, że testowany adres IP jest obecnie rozgłaszany w **Gravelines** Jest to widoczne w ostatnim zrealizowanym skoku: „be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms”.
 
 ## Sprawdź również
 

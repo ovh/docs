@@ -25,7 +25,7 @@ Dans ce tutoriel, nous allons apprendre à installer et configurer ces quatre br
 
 ### Ce que vous devez avoir
 
-- Un serveur ou une machine virtuelle sous Linux (un [VPS](https://www.ovh.com/fr/vps/){.external}, un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external} ou une [instance Public Cloud OVH](https://www.ovh.com/fr/public_cloud/){.external}).
+- Un serveur ou une machine virtuelle sous Linux (un [VPS](https://www.ovhcloud.com/fr/vps/){.external}, un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/){.external} ou une [instance Public Cloud OVH](https://www.ovhcloud.com/fr/public-cloud/){.external}).
 - Les droits administrateur sur ce serveur (être « root »).
 
 > [!warning]

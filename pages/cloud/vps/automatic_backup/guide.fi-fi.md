@@ -4,6 +4,7 @@ title: Automaattinen varmuuskopio
 excerpt: ''
 slug: automaattinen_varmuuskopio
 legacy_guide_number: g1486
+hidden: true
 ---
 
 
