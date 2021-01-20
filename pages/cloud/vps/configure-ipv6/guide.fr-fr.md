@@ -5,13 +5,13 @@ excerpt: "Apprenez à configurer l'IPv6 sur votre serveur VPS OVHcloud"
 section: 'Réseau et IP'
 ---
 
-**Dernière mise à jour le 12/03/2019**
+**Dernière mise à jour le 18/01/2021**
 
 ## Objectif
 
-L'IPv6 est la dernière version de l'*Internet Protocol* (IP). Chaque serveur VPS OVHcloud est livré avec une adresse IPv4 ainsi qu'une adresse IPv6. Par défaut, seule l'IPv4 y est configurée. Pour diverses raisons, vous pouvez également vouloir paramétrer l'IPv6.
+L'IPv6 est la dernière version de l'*Internet Protocol* (IP). Chaque serveur VPS OVHcloud est livré avec une adresse IPv4 ainsi qu'une adresse IPv6. Par défaut, seule l'IPv4 y est configurée. Si vous devez configurer l'IPv6, vous devez le faire manuellement sur votre système.
 
-**Apprenez à configurer l'IPv6 sur votre serveur VPS OVHcloud.**
+**Apprenez à configurer l'IPv6 sur votre serveur VPS OVHcloud via plusieurs méthodes.**
 
 > [!warning]
 >
@@ -21,9 +21,9 @@ L'IPv6 est la dernière version de l'*Internet Protocol* (IP). Chaque serveur VP
 ## Prérequis
 
 - Disposer d'un [serveur VPS OVHcloud](https://www.ovhcloud.com/fr/vps/){.external}.
-- Être connecté en SSH à votre VPS (accès root).
+- Être connecté à votre VPS en SSH (accès root) ou via un bureau à distance (Windows).
 - Disposer de connaissances basiques en réseau.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Cloud`{.action}.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} ou à l'[API OVHcloud](https://api.ovh.com/console/).
 
 ## En pratique
 
@@ -32,14 +32,14 @@ L'IPv6 est la dernière version de l'*Internet Protocol* (IP). Chaque serveur VP
 > Les configurations visibles dans ce guide sont fournies à titre d'exemple, celles-ci peuvent varier selon le système d'exploitation que vous utilisez sur votre VPS.
 > 
 
-La configuration de l'IPv6 sur votre serveur VPS s'effectue en plusieurs étapes. Durant ces dernières, vous serez invité à utiliser des commandes ou à personnaliser la configuration de votre serveur. 
+La configuration de l'IPv6 sur votre serveur VPS s'effectue en plusieurs étapes. Vous serez régulièrement invité à utiliser des commandes ou à personnaliser la configuration de votre serveur. 
 
 Avant de débuter, et afin d’utiliser les mêmes terminologies durant les manipulations, nous vous invitons à prendre connaissance du tableau ci-dessous. Il référence des termes que nous utiliserons dans cette documentation :
 
 |Terme|Description|Exemple|
 |---|---|---|
 |YOUR_IPV6|Il s'agit de l’adresse IPv6 assignée à votre service|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:yyyy|
-|IPv6_PREFIX|Il s'agit du préfixe (ou *netmask*) de votre bloc IPv6. Celui-ci est généralement de 128|2001:xxxx:xxxx:xxxx::/128|
+|IPv6_PREFIX|Il s'agit du préfixe (ou *netmask*) de votre bloc IPv6, généralement de 128|2001:xxxx:xxxx:xxxx::/128|
 |IPv6_GATEWAY|Il s'agit de la passerelle de votre bloc IPv6|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:zzzz|
 
 ### Étape 1 : obtenir les informations réseau nécessaires
@@ -53,7 +53,7 @@ La première étape consiste à récupérer l’adresse IPV6 et la gateway IPv6 
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Bare Metal Cloud`{.action}. Cliquez sur `VPS`{.action} dans la barre de services à gauche, puis choisissez le serveur VPS concerné. Assurez-vous d'être bien positionné sur l'onglet `Accueil`{.action}.
 
-L'adresse IPv6 et la gateway IPv6 assignées à votre serveur apparaissent dans la partie `IP`. Récupérez ces dernières puis poursuivez vers l'étape 2 « [Appliquer la configuration IPv6](#applyipv6).
+L'adresse IPv6 et la gateway IPv6 assignées à votre serveur apparaissent dans la partie `IP`. Récupérez ces dernières puis poursuivez vers l'étape 2 « [Appliquer la configuration IPv6](#applyipv6) ».
 
 ![configureipv6](images/configure-ipv6-step1.png){.thumbnail}
 
@@ -75,7 +75,7 @@ La seconde vous permet de récupérer la gateway IPv6 assignée à votre serveur
 > @api {GET} /vps/{serviceName}/ips/{ipAddress}
 >
 
-Récupérez ces dernières puis poursuivez vers l'étape 2 « [Appliquer la configuration IPv6](#applyipv6) ».
+Une fois les adresses récupérées, continuez à l'étape 2 « [Appliquer la configuration IPv6](#applyipv6) ».
 
 ### Étape 2 : appliquer la configuration IPv6 <a name="applyipv6"></a>
 
@@ -113,21 +113,22 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 > Avant de modifier un fichier de configuration, créez toujours une sauvegarde de l'original en cas de problème.
 >
 
-Il existe deux méthodes pour configurer votre réseau selon le système d'exploitation installé sur votre serveur :
+Deux méthodes existente pour configurer votre réseau selon le système d'exploitation installé sur votre serveur :
 
-- **pour Debian 8 et inférieure, Ubuntu 16.04 et inférieure** : utiliser la [méthode basée sur le fichier *interfaces*](#interfaces) ;
+- **pour Debian 8 et inférieure, Ubuntu 16.04 et inférieure** : utilisez la [méthode basée sur le fichier *interfaces*](#interfaces) ;
 
-- **pour Ubuntu 17.04 et versions ultérieures** : utiliser la [méthode basée sur la fonction *Netplan*](#netplan).
+- **pour Ubuntu 17.04 et versions ultérieures** : utilisez la [méthode basée sur la fonction *Netplan*](#netplan).
 
-Dans certains cas, il se peut que la méthode à utiliser ne soit pas celle spécifiée ci-dessus. Pour vous en assurer, naviguez dans votre système pour vérifier la méthode active dans votre cas.  Visitez le site <https://netplan.io/> pour plus d'informations, si nécessaire.<br>
+Dans certains cas, il se peut que la méthode à utiliser ne soit pas celle spécifiée ci-dessus. Pour vous en assurer, naviguez dans votre système pour vérifier la méthode active dans votre cas.  Visitez le site <https://netplan.io/> pour plus d'informations, si nécessaire.
 
 > [!primary]
 >
 > Soyez vigilant, les noms exacts de fichiers peuvent varier.
+>
 
 ##### Configuration des fichiers *interfaces* <a name="interfaces"></a>
 
-Créez un fichier de configuration dans le répertoire `/etc/network/interfaces.d/`:
+La méthode la plus souvent préconisée est de créer un fichier de configuration dans le répertoire `/etc/network/interfaces.d/`:
 
 ```bash
 nano /etc/network/interfaces.d/51-cloud-init-ipv6.cfg
@@ -135,7 +136,7 @@ nano /etc/network/interfaces.d/51-cloud-init-ipv6.cfg
 
 Cela vous permet de séparer la configuration IPv6 et de rétablir facilement les modifications en cas d'erreur.
 
-Ajoutez les lignes suivantes au fichier. Remplacer les éléments génériques (c'est-à-dire *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY*) ainsi que l'interface réseau (si votre serveur n'utilise pas **eth0**) avec vos valeurs spécifiques.
+Ajoutez les lignes suivantes au fichier. Remplacez les éléments génériques (c'est-à-dire *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY*) ainsi que l'interface réseau (si votre serveur n'utilise pas **eth0**) par vos valeurs personnalisées.
 
 ```
 auto eth0
@@ -149,7 +150,7 @@ pre-down /sbin/ip -6 route del default via IPV6_GATEWAY dev eth0
 pre-down /sbin/ip -6 route del IPV6_GATEWAY dev eth0
 ```
 
-Redémarrez ensuite votre service réseau avec l'une des commandes suivantes:
+Redémarrez ensuite votre service réseau avec l'une des commandes suivantes :
 
 ```bash
 service networking restart
@@ -159,18 +160,18 @@ service networking restart
 systemctl restart networking
 ```
 
-Vous pouvez également ajouter la configuration ci-dessus à l'un des fichiers suivants (avec les privilèges *sudo*), selon la génération du système d'exploitation installé sur le serveur:
+Vous pouvez également ajouter la configuration ci-dessus à l'un des fichiers suivants (avec les privilèges *sudo*), selon la génération du système d'exploitation installé sur le serveur :
 
 - le fichier `/etc/network/interfaces`
 - le fichier `/etc/network/interfaces.d/50-cloud-init.cfg`
 
-Nous vous recommandons de sauvegarder le fichier de configuration approprié. Par exemple, utilisez la commande suivante:
+Nous vous recommandons de sauvegarder le fichier de configuration approprié. Par exemple, utilisez la commande suivante :
 
 ```bash
 cp /etc/network/interfaces /etc/network/interfaces.back
 ```
 
-Vous pourrez alors annuler les modifications à l'aide des commandes suivantes:
+Vous pourrez alors annuler les modifications à l'aide des commandes suivantes :
 
 ```bash
 rm -f /etc/network/interfaces
@@ -179,7 +180,7 @@ cp /etc/network/interfaces.back /etc/network/interfaces
 
 ##### Configuration à l'aide de Netplan <a name="netplan"></a>
 
-Les fichiers de configuration réseau se trouvent dans le répertoire `/etc/netplan/`. Nous vous recommandons de commencer par sauvegarder le fichier de configuration approprié. Dans ce cas, copiez le fichier `50-cloud-init.yaml` à l'aide des commandes suivantes:
+Les fichiers de configuration réseau se trouvent dans le répertoire `/etc/netplan/`. Nous vous recommandons de commencer par sauvegarder le fichier de configuration approprié. Dans ce cas, copiez le fichier `50-cloud-init.yaml` à l'aide des commandes suivantes :
 
 ```bash
 cd /etc/netplan/
@@ -187,21 +188,21 @@ mkdir backup
 cp 50-cloud-init.yaml backup/50-cloud-init.yaml
 ```
 
-Vous pourrez alors annuler les modifications à l'aide des commandes suivantes:
+Vous pourrez alors annuler les modifications à l'aide des commandes suivantes :
 
 ```bash
 rm -f /etc/netplan/50-cloud-init.yaml
 cp /etc/netplan/backup/50-cloud-init.yaml /etc/netplan/50-cloud-init.yaml
 ```
 
-Avant de le modifier, créez une copie du fichier de configuration IPv6:
+Avant de le modifier, créez une copie du fichier de configuration IPv6 :
 
 ```bash
 cd /etc/netplan
 cp 50-cloud-init.yaml 51-cloud-init-ipv6.yaml
 ```
 
-Modifiez ensuite le fichier `51-cloud-init-ipv6.yaml`, en ajoutant la configuration IPv6 de votre serveur. Remplacer les éléments génériques (c'est-à-dire *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY*) ainsi que l'interface réseau (si votre serveur n'utilise pas **eth0**) avec vos valeurs spécifiques.
+Modifiez ensuite le fichier `51-cloud-init-ipv6.yaml`, en ajoutant la configuration IPv6 de votre serveur. Remplacez les éléments génériques (c'est-à-dire *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY*) ainsi que l'interface réseau (si votre serveur n'utilise pas **eth0**) par vos valeurs personnalisées.
 
 ```yaml
 network:
@@ -223,13 +224,13 @@ network:
 > Il est important de respecter l'alignement de chaque élément de ce fichier tel que représenté dans l'exemple ci-dessus. N'utilisez pas la touche de tabulation pour créer votre espacement. Seule la touche espace est nécessaire.
 >
 
-Vous pouvez tester votre configuration à l'aide de la commande suivante:
+Vous pouvez tester votre configuration à l'aide de la commande suivante :
 
 ```bash
 netplan try
 ```
 
-Si elle est correcte, appliquez-la à l'aide de la commande suivante:
+Si elle est correcte, appliquez-la à l'aide de la commande suivante :
 
 ```bash
 netplan apply
@@ -245,14 +246,14 @@ mkdir backup
 cp ifcfg-eth0 backup/ifcfg-eth0
 ```
 
-Vous pourrez alors annuler les modifications à l'aide des commandes suivantes:
+Vous pourrez alors annuler les modifications à l'aide des commandes suivantes :
 
 ```bash
 rm -f /etc/sysconfig/network-scripts/ifcfg-eth0
 cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
-Modifiez ensuite le fichier "ifcfg-eth0", en ajoutant la configuration IPv6 de votre serveur. Remplacer les éléments génériques (c'est-à-dire *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY*) avec vos valeurs spécifiques.
+Modifiez ensuite le fichier `ifcfg-eth0`, en ajoutant la configuration IPv6 de votre serveur. Remplacez les éléments génériques (c'est-à-dire *YOUR_IPV6*, *IPV6_PREFIX* et *IPV6_GATEWAY*) par vos valeurs personnalisées.
 
 ```
 IPV6INIT=yes
@@ -262,13 +263,13 @@ IPV6_DEFAULTGW=IPV6_GATEWAY
 
 **Sur CentOS 7, vous devez créer un fichier de routage en plus des étapes ci-dessus :**
 
-- Créez un fichier (avec les privilèges *sudo*), indiquant les itinéraires IPv6 par défaut:
+- Créez un fichier (avec les privilèges *sudo*), indiquant les itinéraires IPv6 par défaut :
 
 ```bash
 # touch /etc/sysconfig/network-scripts/route6-eth0
 ```
 
-- Modifiez le fichier et ajoutez les lignes ci-dessous. Remplacez les éléments génériques (*IPV6_GATEWAY* et **eth0**, si nécessaire) par vos valeurs spécifiques.
+- Modifiez le fichier et ajoutez les lignes ci-dessous. Remplacez les éléments génériques (*IPV6_GATEWAY* et **eth0**, si nécessaire) par vos valeurs personnalisées.
 
 ```
 IPV6_GATEWAY dev eth0
@@ -288,7 +289,7 @@ systemctl restart networking
 
 #### Application persistante sur Windows Server <a name="persistentwindows"></a>
 
-Par défaut, IPv6 n'est pas configuré sur les serveurs Windows. Pour l'activer, ouvrez le  `Panneau de configuration`{.action} et cliquez surAfficher l'état et les tâches du réseau`{.action}, puis sur `Modifier les paramètres de la carte`{.action}.
+Par défaut, IPv6 n'est pas configuré sur les serveurs Windows. Pour l'activer, ouvrez le `Panneau de configuration`{.action} et cliquez sur `Afficher l'état et les tâches du réseau`{.action}, puis sur `Modifier les paramètres de la carte`{.action}.
 
 ![configureipv6](images/configure-ipv6-step2.png){.thumbnail}
 
@@ -306,7 +307,7 @@ Enfin, cochez la case `Valider les paramètres en quittant` et cliquez sur le bo
 
 ![configureipv6](images/configure-ipv6-step4.png){.thumbnail}
 
-### Étape 3 : Vérifiez la configuration et testez la connexion.
+### Étape 3 : Vérifier la configuration et tester la connexion.
 
 Pour vérifier que la configuration est fonctionnelle, il existe plusieurs commandes possibles, selon le système d'exploitation.
 
@@ -369,7 +370,7 @@ Vous pouvez également tester la connexion à un autre serveur distant. Cependan
 >
 > - En fonction du système d'exploitation, tentez de remplacer le préfixe (ou *netmask*) de votre adresse IP par /128 et /64. Cela inclura la passerelle IPv6 dans votre sous-réseau.
 >
-> - En plus de relancer le service réseau, il se peut qu'un redémarrage de votre serveur soit nécessaire pour finaliser la prise en compte de votre configuration IPv6.
+> - En plus de redémarrer le service réseau, il se peut qu'un redémarrage de votre serveur soit nécessaire pour finaliser la prise en compte de votre configuration IPv6.
 > 
 > - Dans Windows, vérifiez que le pare-feu autorise les demandes ICMP pour IPv6.
 
@@ -384,9 +385,9 @@ Cloud-init est un package installé par défaut sur les instances VPS. Il s’ag
 
 Selon le système d'exploitation, Cloud-init va gérer : le réseau, le hostname, le fichier resolv.conf ou encore le partitionnement automatique du disque dur en cas d'upgrade.
 
-Dans le cas des distributions plus récentes (telles que CentOS, Debian 9, Ubuntu 16.x et versions ultérieures), la configuration par défaut du cloud.init va automatiquement au démarrage du serveur réinitialiser la configuration réseau.
+Dans le cas des distributions plus récentes (telles que CentOS, Debian 9, Ubuntu 16.x et versions ultérieures), la configuration par défaut du cloud.init va automatiquement réinitialiser la configuration réseau au démarrage du serveur.
 
-Afin de garder la main sur celle-ci, vous devez désactiver la gestion automatique du réseau dans le **cloud.init**. Pour cela, utilisez la commande suivante permettant de créer un fichier `/etc/cloud/cloud.cfg.d/98-disable-network-config.cf` comportant la valeur `network: {config: disabled}` :
+C'est donc pertinent pour des cas d'utilisation spécifiques dans lesquels il est recommandé d'éviter la réinitialisation en désactivant la gestion automatique du réseau dans Cloud-init. Pour cela, utilisez la commande suivante permettant de créer un fichier `/etc/cloud/cloud.cfg.d/98-disable-network-config.cf` comportant la valeur `network: {config: disabled}` :
 
 ```bash
 echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/98-disable-network-config.cfg
