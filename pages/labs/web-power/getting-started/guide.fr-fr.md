@@ -46,7 +46,7 @@ Prenez connaissance du guide [Consulter les statistiques et les logs de mon site
 
 #### Utiliser une base de données 
 
-Des bases de données sont incluses avec votre offre d'hébergement web POWER. Elles sont accessible depuis l'onglet `Bases de données`{.action}.
+Des bases de données sont incluses avec votre offre d'hébergement web POWER. Elles sont accessibles depuis l'onglet `Bases de données`{.action}.
 
 Si vous souhaitez d'avantage de détails sur la création d'une base de données sur votre hébergement POWER, consultez notre documentation [Créer une base de données sur son hébergement web](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
 
