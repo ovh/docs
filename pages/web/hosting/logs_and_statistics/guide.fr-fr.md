@@ -5,7 +5,7 @@ legacy_guide_number: 1344
 excerpt: 'Découvrez comment consulter les statistiques et logs de votre site internet'
 section: 'Optimiser son site'
 ---
-**Dernière mise à jour le 05/01/2020**
+**Dernière mise à jour le 05/01/2021**
 
 ## Objectif
 

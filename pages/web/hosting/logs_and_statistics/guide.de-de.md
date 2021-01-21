@@ -5,113 +5,98 @@ slug: webhosting_die_statistiken_und_logs_meiner_website_einsehen
 section: 'Webseitenoptimierung'
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
-## Verbindung mit dem Kundencenter
-Verbinden Sie sich mit Ihrer OVH Kundenkennung und dem dazugehörigen Passwort mit dem [OVH Kundencenter](https://www.ovh.com/manager/web/).
+**Stand 05.01.2021**
 
-Wählen Sie in dem Menü auf der linken Seite unter "Hosting-Pakete" den Domainnamen aus, für den Sie die Statistiken einsehen möchten.
+## Ziel
 
-![](images/img_2827.jpg){.thumbnail}
-Klicken Sie dann auf der Übersichtsseite auf den Link neben "Besucherstatistiken".
+Der Zugang zu den Logs und Statistiken Ihrer Website ist in Ihrem Webhosting Angebot enthalten, das über Ihr OVHcloud Kundencenter erreichbar ist.
 
-![](images/img_2826.jpg){.thumbnail}
+**Hier erfahren Sie, wie Sie die Statistiken und Logs Ihrer Website einsehen.**
 
+## Voraussetzungen
 
-## Zugang zu den Statistiken und Logs
-Sie können auf die Statistiken Ihrer Webseite zugreifen, indem Sie einfach folgenden Link Ihrem Domainnamen entsprechend anpassen:
+- Sie verfügen über ein kompatibles [Webhosting Angebot](https://www.ovh.de/hosting/){.external} .
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} angemeldet.
 
+## In der praktischen Anwendung
 
-- https://logs.ovh.net/ihredomain.tld
+Loggen Sie sich in Ihrem OVHcloud Kundencenter ein Klicken Sie auf den Tab `Web Cloud`{.action} und dann `in der`{.action} linken Spalte auf Hosting.
 
+Wählen Sie das betreffende Hosting aus und klicken Sie dann auf den Tab `Statistiken und Logs`{.action}
 
-Die Statistiken sind einfach zu verwenden. Sie können Ihre Webseite mit einigen Klicks analysieren, ohne zusätzliche statistische Berechnungen durchführen zu müssen.
+![Hosting](images/statistics01.png){.thumbnail}
 
-Klicken Sie auf den automatisch erstellten Link in Ihrem Kundencenter, um zu den Statistiken und Logs zu gelangen.
+Das angezeigte Fenster besteht aus 3 Abschnitten. Die erste zeigt **die** Statistiken, die zweite **die** Rohlogs Ihres Webhostings, die letzte dient der Verwaltung **der Benutzer, die Zugriff auf die** Statistiken haben.
 
-Sie müssen sich mit Ihrer OVH Kundenkennung und dem dazugehörigen Passwort anmelden.
+![Hosting](images/statistics02u.png){.thumbnail}
 
+### Verwaltung der Benutzer
 
-## Statistikbereich
-Nach der Verbindung mit dem Statistikbereich wird folgende Seite angezeigt.
+Die Erstellung eines Benutzers ermöglicht es einer Person, auf die Statistiken Ihres Hostings zuzugreifen, ohne Zugang zu Ihrem OVHcloud Kundencenter zu haben. 
 
-Die wichtigsten Funktionen:
+Klicken Sie im Bereich `Benutzer-Administration auf den Button`{.action} Einen neuen Benutzer` erstellen` und folgen Sie den Anweisungen.  
 
+![Hosting](images/user-statistics01.png){.thumbnail}
 
-- Zugriff auf die Urchin v6 Statistiken Ihrer Webseite (grüner Rahmen).
+> [!warning] 
+>
+> Wenn Sie die separaten Logs auf einem [Multisite-Eintrag](../multisites-mehrere-websites-konfigurieren/#schritt-2-eine-domain-oder-subdomain-hinzufugen) aktiviert haben, können die hier erstellten Benutzer nicht auf die Statistiken dieses Multisite-Eintrags zugreifen.
+>
 
-- Zugriff auf die Logs Ihrer Webseite in Echtzeit oder für einen früheren Zeitraum (oranger Rahmen).
+### Besucherstatistiken
 
+Um Ihnen dabei zu helfen, den Traffic Ihrer Webseiten besser zu verfolgen und zu steuern, verfügen Sie über ein Tool für Besucherstatistiken und die Messung der Zuschauerzahlen Ihrer auf Ihrem Shared Hosting gehosteten Webseiten, **OVHcloud Web Statistics**.
 
+![Hosting](images/OWStats01.gif){.thumbnail}
 
-![](images/img_2832.jpg){.thumbnail}
+Das Dashboard von OVHcloud Web Statistics ist in 6 Abschnitten im linken Bereich dargestellt.
 
+- Dashboard: Anzeige des Traffics auf den Webseiten Ihres Hostings.
+- Browsers: Klassifizierung der Webbrowser, die am häufigsten für die Anzeige Ihrer Websites verwendet werden.
+- Geolocalization:  Anteil der Besucher je nach Standort.
+- Requests: Sortierung der am häufigsten auf Ihren Webseiten genutzten Seiten.
+- Roboter: Visualisierung der Roboter, die auf Ihren Seiten vorbeikommen.
+- Status: statistische Fehlschläge und Erfolge, die anhand der zurückgegebenen HTTP-Codes festgestellt wurden.
+- FAQ: Rubrik für die häufigsten Fragen
 
-## Urchin v6
-In den Statistiken finden Sie zahlreiche Informationen zu Ihrer Webseite:
+Das Period `Selection` Framework oben rechts erlaubt es Ihnen, eine bestimmte Zeitspanne auszuwählen.
 
-Traffic Ihrer Webseite
+### Logs
 
+Sie können die Rohlogs Ihrer Website mit einer Verzögerung von etwa 5 Minuten visualisieren.
 
-- Anzahl der Besucher.
-- Anzahl der angezeigten Seiten.
-- Größe der angezeigten Seiten.
-- Anzahl der HTTP Anfragen.
+![Hosting](images/logs01.png){.thumbnail}
 
-Die Daten können für verschiedene Zeiträume (Stunde, Tag, Woche, Monat oder Jahr) angezeigt werden, um die Entwicklung Ihrer Seite besser abschätzen zu können.
+Es stehen Ihnen verschiedene Log-Typen zur Verfügung:
 
-Verbindungsdauer
+- Logs Web: Hier finden Sie die verschiedenen Logs zum Abrufen Ihrer Seite sowie die verschiedenen Aktionen, die von Ihrer Seite aus durchgeführt wurden. So können Sie beispielsweise Versuche erkennen, böswillige Handlungen zu begehen.
+- FTP Logs: Die verschiedenen FTP Verbindungen werden in diesen Logs gespeichert und gespeichert.
+- Logs fehlerhaft: die verschiedenen Fehler Ihrer Website.
+- CGI Logs: die verschiedenen Aufrufe zu den cgi.bin Skripten, die durchgeführt wurden.
+- Logs out: die Statistiken Ihres Webhostings zu den verschiedenen externen Anrufen.
+- SSH Logs: Diese Logs geben die verschiedenen Verbindungen an, die mit dem SSH-Protokoll hergestellt wurden.
+- CRON Logs: das Ergebnis der Ausführung Ihrer geplanten Tasks ([automatisierte Tasks (CRON) auf Ihrem Hosting](../webhosting_automatisierte_aufgaben_cron/)).
 
-- Durchschnittliche Dauer der Verbindungen mit der gesamten Webseite oder einer bestimmten Seite
+### Aktivität des Webhostings
 
-Ranking
+In diesem Bereich finden Sie die Aktivität der Infrastruktur Ihres Hostings, um den Verbrauch der Ihnen zur Verfügung gestellten Ressourcen zu visualisieren.
 
-- Wie haben Ihre Besucher von Ihrer Webseite erfahren?
-- Mit welchen Suchmaschinen haben sie die URL Ihrer Seite gefunden?
-- Welche Keywords haben sie bei ihrer Suche verwendet?
+Klicken Sie auf den Tab `Allgemeine`{.action} Informationen und gehen Sie dann nach unten.
 
-Beliebteste Seiten
+![Hosting](images/statistics03.png){.thumbnail}
 
-- Welche Seiten Ihrer Webseite wurden am häufigsten besucht?
-- Wie lange wurden die Seiten besucht?
-- Welche Seiten weisen Fehler welchen Typs auf?
+Im Drop-down-Menü oben links können Sie verschiedene Arten von Grafiken anzeigen:
 
-Verlauf
+- Ausgehende Verbindungen: Anfragen, die von Ihrer Website auf eine externe Seite versandt werden.
+- CPU-Nutzung: CPU-Verbrauch auf Ihrer Hosting-Instanz
+- Überschreitung der Ressourcenobergrenze: gibt an, wann Ihr Hosting sein Ressourcen-Quota überschreitet.
+- SQL Requests: Anzahl der Anfragen an die Datenbanken Ihres Hostings.
+- SQL Antwortzeit: Antwortzeit der an die Datenbanken Ihres Hostings gesendeten Anfragen.
 
-- Welche Seiten Ihrer Webseite werden von Ihren Besuchern zuerst aufgerufen?
-- Welche Seiten Ihrer Webseite werden zuletzt aufgerufen?
-- Wie ist die durchschnittliche Verweildauer pro Seite?
-- Wie viele Seiten werden im Durchschnitt pro Besuch aufgerufen?
+## Weiterführende Informationen
 
-
-
-![](images/img_1490.jpg){.thumbnail}
-
-
-## Direkter Zugriff auf die Logs
-Sie haben die Möglichkeit, die Logs Ihrer Webseite quasi in Echtzeit einzusehen. Die Logs Ihrer Webseite sind innerhalb von 15 Minuten verfügbar, so dass Sie beispielsweise sehr schnell die korrekte Funktion Ihrer Seite überprüfen können.
-
-Es stehen Ihnen verschiedene Logtypen zur Verfügung:
-
-
-- Web Logs: hier finden Sie die Logs zum Aufruf Ihrer Seite sowie zu den von dieser durchgeführten Aktionen. Damit können Sie zum Beispiel Hackversuche Ihrer Webseite aufspüren.
-
-- FTP Logs: in diesen Logs werden die FTP Verbindungen gespeichert.
-
-- Error Logs: hier werden die von Ihrer Webseite generierten Fehler abgelegt.
-
-- CGI Logs: in diesen Logs werden die Aufrufe der cgi.bin Skripte protokolliert.
-
-- Out Logs: hier finden Sie die Statistiken Ihrer Webseite zu den durchgeführten externen Aufrufen.
-
-- SSH Logs: hier werden über das SSH Protokoll getätigte Verbindungen gespeichert.
-
-- Cron Logs: hier werden die Ergebnisse der Ausführung Ihrer Cronjobs gespeichert.
-
-
-
-![](images/img_2828.jpg){.thumbnail}
-
-
-## Kann ich die Oberfläche von Urchin auf eine andere Sprache umstellen?
-Sie können die von Urchin verwendete Sprache direkt in dessen Interface ändern: klicken Sie im Menü auf "Preferences", wählen Sie die gewünschte Sprache aus und bestätigen Sie die Änderung mit einem Klick auf "Submit". Die Einstellung wird dann von Urchin dauerhaft gespeichert.
-
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
