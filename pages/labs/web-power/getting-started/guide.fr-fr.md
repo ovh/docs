@@ -17,7 +17,7 @@ Retrouvez ici les principales informations relatives à la gestion de votre héb
 
 ## Prérequis 
 
-- Disposer d'une des 3 offres d'hébergement web POWER. [Node.js](https://labs.ovh.com/managed-nodejs), [Python](https://labs.ovh.com/managed-python) ou [Ruby](o	https://labs.ovh.com/managed-ruby)
+- Disposer d'une des 3 offres d'hébergement web POWER. [Node.js](https://labs.ovh.com/managed-nodejs), [Python](https://labs.ovh.com/managed-python) ou [Ruby](https://labs.ovh.com/managed-ruby).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
