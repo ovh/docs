@@ -38,17 +38,17 @@ Par défaut, votre hébergement web POWER est attaché à une URL automatiquemen
 
 Pour plus de détails sur la déclaration d'un nom de domaine sur votre hébergement web, consulter notre guide [Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-1-acceder-a-la-gestion-multisite). 
 
-#### Consultation des logs et statisques
-
-Retrouvez l'ensemble des logs et statistiques de votre hébergement et de vos sites dans l'onglet `Statistiques et logs`{.action}. 
-
-Prenez connaissance du guide [Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#consulter-les-statistiques-et-les-logs) pour plus d'informations à ce sujet.
-
 #### Utiliser une base de données 
 
 Des bases de données sont incluses avec votre offre d'hébergement web POWER. Elles sont accessibles depuis l'onglet `Bases de données`{.action}.
 
 Si vous souhaitez d'avantage de détails sur la création d'une base de données sur votre hébergement POWER, consultez notre documentation [Créer une base de données sur son hébergement web](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
+
+#### Consultation des logs et statisques
+
+Retrouvez l'ensemble des logs et statistiques de votre hébergement et de vos sites dans l'onglet `Statistiques et logs`{.action}. 
+
+Prenez connaissance du guide [Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#consulter-les-statistiques-et-les-logs) pour plus d'informations à ce sujet.
 
 ### Node.js
 
