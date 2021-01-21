@@ -156,7 +156,7 @@ Si desea solicitar la sustitución de un disco, solo tiene que crear un tíquet 
 
 > [!primary]
 >
-> Este tipo de sustitución solo es posible en los servidores [FS-MAX](https://www.ovh.com/world/es/servidores_dedicados/fs/){.external} y los servidores [Big-HG](https://www.ovh.com/world/es/servidores_dedicados/hg/){.external} con tarjeta RAID.
+> Este tipo de sustitución solo es posible en los servidores FS-MAX y los servidores Big-HG con tarjeta RAID.
 > 
 
 Para la sustitución en caliente en un servidor con tarjeta MegaRAID, una vez que la intervención esté programada deberá hacer parpadear el LED del disco que quiera sustituir para facilitar su identificación por los técnicos.

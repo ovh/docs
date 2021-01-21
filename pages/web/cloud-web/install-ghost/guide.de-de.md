@@ -193,7 +193,7 @@ demonon@cloudweb-ssh:~/ghost $ ls
 Gruntfile.js  LICENSE  MigratorConfig.js  PRIVACY.md  README.md  content  core  index.js  package.json  public  server.js  yarn.lock
 ```
 
-Ghost verwendet [Yarn](https://yarnpkg.com/en/){.external}, eine Alternative für **npm**, als Manager für Node.js-Abhängigkeiten. Installieren Sie Yarn via **npm** und fügen Sie diese Binärdateien zu Ihrem „PATH“ hinzu.
+Ghost verwendet [Yarn](https://yarnpkg.com/){.external}, eine Alternative für **npm**, als Manager für Node.js-Abhängigkeiten. Installieren Sie Yarn via **npm** und fügen Sie diese Binärdateien zu Ihrem „PATH“ hinzu.
 
 ```sh
 demonon@cloudweb-ssh:~/ghost $ npm-node8 install yarn

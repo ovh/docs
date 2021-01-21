@@ -174,7 +174,7 @@ Vous pouvez également limiter l’accès à votre interface d’administration 
 
 
 ### Projet OWASP
-Le projet OWASP (pour Open Web Application Security Project) rassemble de très nombreuses bonnes pratiques et recommandations en matière de sécurité du Web : [Site OWASP](https://www.owasp.org/index.php){.external} [En]. Il réalise aussi, chaque année, le TOP 10 des failles les plus courantes.
+Le projet OWASP (pour Open Web Application Security Project) rassemble de très nombreuses bonnes pratiques et recommandations en matière de sécurité du Web : [Site OWASP](https://owasp.org/){.external} [En]. Il réalise aussi, chaque année, le TOP 10 des failles les plus courantes.
 
 
 ### Les regles CSP

@@ -10,7 +10,7 @@ A instalação da plataforma CUDA (Compute Unified Device Architecture) num serv
 
 ## Requisitos
 
-- Ter um [servidor GPU](https://www.ovh.pt/servidores_dedicados/gpu/).
+- Ter um [servidor GPU](https://www.ovhcloud.com/pt/bare-metal/).
 - Estar ligado ao servidor com protocolo SSH.
 
 ## Instruções

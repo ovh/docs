@@ -152,7 +152,7 @@ For more information, please refer to our guide: [Using the IPMI with dedicated 
 
 For any kind of issue the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
 
-Please refer to the [rescue mode guide](../ovh-rescue/).
+Please refer to the [rescue mode guide](../rescue_mode/).
 
 
 ## Go further

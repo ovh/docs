@@ -24,9 +24,9 @@ Grafana is an open-source solution that allows you to transform data into graphs
 To install Grafana, you need to use Docker. You can install it on different OVH solutions:
 
 
-- [VPS](https://www.ovh.com/world/vps/)
-- [Dedicated server](https://www.ovh.com/world/dedicated-servers/)
-- [Cloud Instance](https://www.ovhcloud.com/world/public-cloud/)
+- [VPS](https://www.ovhcloud.com/en/vps/)
+- [Dedicated server](https://www.ovhcloud.com/en/bare-metal/)
+- [Cloud Instance](https://www.ovhcloud.com/en/public-cloud/)
 
 
 

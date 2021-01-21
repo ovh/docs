@@ -12,7 +12,7 @@ Sie können CUDA (Compute Unified Device Architecture) auf einem GPU Server inst
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [GPU Server](https://www.ovh.de/dedicated_server/gpu/){.external}.
+- Sie verfügen über einen [GPU Server](https://www.ovhcloud.com/de/bare-metal/){.external}.
 - Sie sind via SSH mit dem Server verbunden.
 
 ## Beschreibung

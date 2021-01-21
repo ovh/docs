@@ -24,7 +24,7 @@ Neste tutorial, vamos explicar como instalar um blogue com Ghost num alojamento 
 
 ### O que precisa de ter
 
-- Ter um serviço de [alojamento Cloud Web da OVHcloud]({ovh_www}/alojamento-partilhado/cloud-web.xml){.external}.
+- Ter um serviço de [alojamento Cloud Web da OVHcloud](https://www.ovh.pt/alojamento-partilhado/cloud-web.xml){.external}.
 - Ter ativado Node.js como motor de execução.
 - Ter adicionado o domínio em questão como multisite e ter definido Node.js como o motor de execução.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web Cloud`{.action}.
@@ -190,7 +190,7 @@ demonon@cloudweb-ssh:~/ghost $ ls
 Gruntfile.js  LICENSE  MigratorConfig.js  PRIVACY.md  README.md  content  core  index.js  package.json  public  server.js  yarn.lock
 ```
 
-Ghost utiliza [Yarn](https://yarnpkg.com/en/){.external}, uma alternativa ao **npm**, para gerir as dependências Node.js. Instale o Yarn através de **npm** e adicione estes binários ao seu “PATH”:
+Ghost utiliza [Yarn](https://yarnpkg.com/){.external}, uma alternativa ao **npm**, para gerir as dependências Node.js. Instale o Yarn através de **npm** e adicione estes binários ao seu “PATH”:
 
 ```sh
 demonon@cloudweb-ssh:~/ghost $ npm-node8 install yarn
