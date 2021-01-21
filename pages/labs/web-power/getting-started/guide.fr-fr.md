@@ -55,8 +55,8 @@ Si vous souhaitez d'avantage de détails sur la création d'une base de données
 #### Créer une page Hello world 
 
 Version utilisée : nodejs 14
-Point d'entrée : index.js
-Dossier racine : www
+<br> Point d'entrée : index.js
+<br> Dossier racine : www
 
 ```sh
 ~/www $ cd www
@@ -80,8 +80,8 @@ app.listen(port);
 #### Créer une page Hello world 
 
 Version utilisée : Pyhton 3.7
-Point d'entrée : app.py
-Dossier racine : www
+<br> Point d'entrée : app.py
+<br> Dossier racine : www
 
 ```sh
 import sys
@@ -103,8 +103,8 @@ def application(environ, start_response):
 #### Créer un page Hello world 
 
 Version utilisée : Ruby 2.6
-Point d'entrée : app.py
-Dossier racine : www
+<br> Point d'entrée : app.py
+<br> Dossier racine : www
 
 ```sh
 require 'socket'
