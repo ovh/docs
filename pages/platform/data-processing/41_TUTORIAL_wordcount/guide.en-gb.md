@@ -6,7 +6,7 @@ section: Tutorials
 order: 2
 ---
 
-**Last updated 04<sup>th</sup> May, 2020**
+**Last updated 20<sup>th</sup> January, 2021**
 
 ## Objective
 This guide  gives you a basic example about using Apache Spark and OVHcloud Data Processing.
@@ -48,7 +48,7 @@ Let's go back to the tutorial. Click on the CSV file, then download "billboard_l
 
 > [!primary]
 >
-> You can download Python and Environment files generated here on [official OVHcloud Github repository](https://github.com/ovh/data-processing-samples){.external} 
+> You can download Python and Environment files generated here on [official OVHcloud Github repository](https://github.com/ovh/data-processing-samples){.external} [[1]](#notes) 
 > We recommend the use of Conda as a preferred Python environment.
 > Also, if you want to execute this code on your computer, it will require Apache Spark up and running, locally.
 >
@@ -271,6 +271,9 @@ Here is an extract :
 
 As you can see, all our the Python's print functions are displayed in the logs. It is the easiest way to keep track of a job run. We also see Apache Spark logs.
 
+## Notes
+
+[1] Please select the tag related to the Spark version you want to use.
 
 ## Go further
 
