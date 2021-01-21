@@ -190,4 +190,6 @@ Après chaque modification structurante de votre application, il est conseillé 
 
 [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/api-premiers-pas/)
 
+[Créer une base de données sur son hébergement web](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
