@@ -10,7 +10,7 @@ order: 1
 
 [Ghost](https://ghost.org/){.external} to silnik bloga z otwartym kodem źródłowym. Ma on na celu uproszczenie procesu publikacji online dla blogerów i dziennikarzy. To oprogramowanie jest napisane w JavaScript i wykorzystuje [Node.js](https://nodejs.org/){.external}, platformę programową do tworzenia witryn i interfejsów API w JavaScript po stronie serwera.
 
-[Hosting Cloud Web]({ovh_www}/hosting/cloud-web.xml){.external} umożliwia użycie Node.js jako frameworka dla Twoich stron WWW oraz instalację i hosting silnika Ghost lub innej aplikacji stworzonej na potrzeby Node.js.
+[Hosting Cloud Web](https://www.ovh.pl/hosting/cloud-web.xml){.external} umożliwia użycie Node.js jako frameworka dla Twoich stron WWW oraz instalację i hosting silnika Ghost lub innej aplikacji stworzonej na potrzeby Node.js.
 
 W niniejszym tutorialu wyjaśnimy, jak zainstalować blog za pomocą silnika Ghost na hostingu Cloud Web w OVH oraz jak udostępnić go pod Twoją domeną.
 
@@ -24,7 +24,7 @@ W niniejszym tutorialu wyjaśnimy, jak zainstalować blog za pomocą silnika Gho
 
 ### Powinieneś posiadać:
 
-- Hosting [Cloud Web]({ovh_www}/hosting/cloud-web.xml){.external} od OVH
+- Hosting [Cloud Web](https://www.ovh.pl/hosting/cloud-web.xml){.external} od OVH
 - Node.js aktywowany jako framework
 - Domenę dodaną w opcji MultiSite oraz Node.js wskazany jako jej framework.
 - Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Web Cloud`{.action}
@@ -191,7 +191,7 @@ demonon@cloudweb-ssh:~/ghost $ ls
 Gruntfile.js  LICENSE  MigratorConfig.js  PRIVACY.md  README.md  content  core  index.js  package.json  public  server.js  yarn.lock
 ```
 
-Ghost używa [Yarn](https://yarnpkg.com/en/){.external}, będącego alternatywą dla **npm**, jako menedżera zależności Node.js. Zainstaluj Yarn za pośrednictwem **npm** i dodaj następujące pliki binarne do „PATH”:
+Ghost używa [Yarn](https://yarnpkg.com/){.external}, będącego alternatywą dla **npm**, jako menedżera zależności Node.js. Zainstaluj Yarn za pośrednictwem **npm** i dodaj następujące pliki binarne do „PATH”:
 
 ```sh
 demonon@cloudweb-ssh:~/ghost $ npm-node8 install yarn

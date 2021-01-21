@@ -24,7 +24,7 @@ To install Grafana, you need to use Docker. You can install it on different OVH 
 
 - [VPS](https://www.ovh.co.uk/vps/)
 - [Dedicated server](https://www.ovh.co.uk/dedicated_servers/)
-- [Cloud Instance](https://www.ovh.co.uk/cloud/instances/)
+- [Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/)
 
 
 

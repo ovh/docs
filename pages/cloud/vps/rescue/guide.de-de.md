@@ -1,7 +1,7 @@
 ---
 title: Rescue-Modus für VPS
 slug: rescue
-excerpt: In dieser Anleitung erfahren Sie, wie Sie Ihren VPS in den Rescue-Modus versetzen
+excerpt: Erfahren Sie hier, wie Sie Ihren VPS in den Rescue-Modus versetzen
 section: Diagnose & Rescue Modus
 ---
 
@@ -31,7 +31,7 @@ Die Durchführung von Überprüfungen im Rescue-Modus hilft Ihnen auch, festzust
 > Wenn Sie Dienste auf Ihrem VPS im laufenden Betrieb haben, wird der Rescue-Modus diese Dienste unterbrechen, da der VPS in das Hilfsbetriebssystem neu gestartet wird.
 > 
 
-**In dieser Anleitung erfahren Sie, wie Sie Ihren VPS im Rescue-Modus neu starten.**
+**Diese Anleitung erklärt, wie Sie Ihren VPS im Rescue-Modus neu starten.**
 
 ## Voraussetzungen
 

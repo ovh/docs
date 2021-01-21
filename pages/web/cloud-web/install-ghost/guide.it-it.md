@@ -188,7 +188,7 @@ demonon@cloudweb-ssh:~/ghost $ ls
 Gruntfile.js  LICENSE  MigratorConfig.js  PRIVACY.md  README.md  content  core  index.js  package.json  public  server.js  yarn.lock
 ```
 
-Per gestire le dipendenze Node.js Ghost utilizza [Yarn](https://yarnpkg.com/en/){.external}, un framework alternativo a **npm**. Installalo via **npm**, e aggiungi questi binari nel “ PATH”:
+Per gestire le dipendenze Node.js Ghost utilizza [Yarn](https://yarnpkg.com/){.external}, un framework alternativo a **npm**. Installalo via **npm**, e aggiungi questi binari nel “ PATH”:
 
 ```sh
 demonon@cloudweb-ssh:~/ghost $ npm-node8 install yarn

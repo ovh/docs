@@ -12,7 +12,7 @@ Esta guía explica las acciones necesarias para instalar CUDA (Compute Unified D
 
 ## Requisitos
 
-- Tener un [servidor GPU](https://www.ovh.es/servidores_dedicados/gpu/).
+- Tener un [servidor GPU](https://www.ovhcloud.com/es-es/bare-metal/).
 - Estar conectado al servidor por SSH.
 
 ## Procedimiento

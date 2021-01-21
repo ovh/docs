@@ -67,8 +67,7 @@ Estas son las claves KMS disponibles para cada sistema operativo:
 |Windows Server 2019 Standard|N69G4-B89J2-4G8F4-WWYCC-J464C|
 |Windows Server 2019 Datacenter|WMDGN-G9PQG-XVVXX-R3X43-63DFG|
 
-Fuente: [Microsoft MSDN](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj612867(v=ws.11)){.external}.
-
+Fuente: [Microsoft](https://docs.microsoft.com/en-gb/windows-server/get-started/kmsclientkeys){.external}
 
 > [!primary]
 >
