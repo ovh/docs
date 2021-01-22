@@ -67,8 +67,6 @@ Alla saatavilla olevien KMS-avainten lista jokaiselle käyttöjärjestelmälle:
 |Windows Server 2019 Standard|N69G4-B89J2-4G8F4-WWYCC-J464C|
 |Windows Server 2019 Datacenter|WMDGN-G9PQG-XVVXX-R3X43-63DFG|
 
-Lähde: [Microsoft MSDN](http://ovh.to/gwzQ9s){.external}.
-
 
 > [!primary]
 >

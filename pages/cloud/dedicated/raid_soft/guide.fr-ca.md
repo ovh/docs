@@ -263,7 +263,10 @@ mount /dev/md2 /home
 
 ## Aller plus loin
 
-* [Hot Swap – RAID Matériel](../hotswap-raid-hard/){.external}
-* [Hot Swap – RAID Logiciel](../hotswap-raid-soft/){.external}
-* [RAID Matériel](../raid-hard/){.external}
-* Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+[Hot Swap – RAID Matériel](../hotswap-raid-hard/){.external}
+
+[Hot Swap – RAID Logiciel](../hotswap-raid-soft/){.external}
+
+[RAID Matériel](../raid-hard/){.external}
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

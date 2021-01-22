@@ -97,4 +97,3 @@ admin@server-1:~$ sudo vim /home/admin/.ssh/authorized_keys
 [Replacing your lost SSH key pair](../replacing_your_lost_ssh_key_pair/)
 
 Join our community of users on <https://community.ovh.com/en/>.
-

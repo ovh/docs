@@ -107,6 +107,6 @@ When you have selected the log types and month you want to view, the logs are ar
 
 [Retrieving the backup of a Web Hosting plan’s database](../web_hosting_database_export_guide/)
 
-[Everything you need to know about Private SQL](https://docs.ovh.com/fr/hosting/tout-sur-le-sql-prive/#sauvegarde-restauration-et-importation-depuis-lespace-client_1) (French only)
+[Private SQL](../getting-started-with-private-sql/)
 
 Join our community of users on <https://community.ovh.com/en/>.

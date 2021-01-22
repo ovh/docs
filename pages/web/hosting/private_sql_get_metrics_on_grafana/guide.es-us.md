@@ -26,9 +26,9 @@ Grafana es una solución de código abierto que permite transformar datos en for
 Para instalar Grafana, necesita utilizar Docker. Podrá instalarlo en diferentes soluciones de OVHcloud: 
 
 
-- [VPS](https://www.ovh.com/world/es/vps/)
-- [Servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/)
-- [Instancia Cloud](https://www.ovh.com/world/es/cloud/instances/)
+- [VPS](https://www.ovhcloud.com/es/vps/)
+- [Servidor dedicado](https://www.ovhcloud.com/es/bare-metal/)
+- [Instancia Cloud](https://www.ovhcloud.com/es/public-cloud/)
 
 
 

@@ -73,7 +73,7 @@ The following call allows you to recover the IPv6 gateway assigned to your serve
 > @api {GET} /vps/{serviceName}/ips/{ipAddress}
 >
 
-Once you have retrieved them, continue with [applying the IPv6 configuration](#applyipv6).
+Once you have retrieved these addresses, continue with [applying the IPv6 configuration](#applyipv6).
 
 ### Step 2: Apply the IPv6 configuration <a name="applyipv6"></a>
 
@@ -104,11 +104,11 @@ ip -6 route add IPV6_GATEWAY dev eth0
 ip -6 route add default via IPV6_GATEWAY dev eth0
 ```
 
-#### Persistent application on Debian and its derivatives (Ubuntu, Crunchbang, SteamOS, etc) <a name="persistentdebian"></a>
+#### Persistent application on Debian and its derivatives (Ubuntu, Crunchbang, SteamOS, etc.) <a name="persistentdebian"></a>
 
 > [!warning]
 >
-> Before modifying a configuration file, always create a backup of the original in case of any issues.
+> Before modifying a configuration file, always create a backup of the original.
 >
 
 There are two ways to configure your network depending on the operating system installed on your server:
