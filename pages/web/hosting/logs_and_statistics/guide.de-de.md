@@ -30,11 +30,11 @@ Klicken Sie auf den Tab `Statistiken und Logs`{.action}.
 
 ![Hosting](images/statistics01.png){.thumbnail}
 
-Dieser Tab besteht aus 3 Abschnitten. Der erste zeigt die **Statistiken** an, der zweite die **Website Logs** Ihres Webhostings, und der letzte ist für **die Verwaltung der Nutzer** bestimmt, die Zugriff auf die Statistiken haben.
+Dieser Tab besteht aus 3 Abschnitten. Der erste zeigt die **Statistiken** an, der zweite die **Website Logs** Ihres Webhostings, und der letzte ist für die **Verwaltung der Nutzer** bestimmt, die Zugriff auf die Statistiken haben.
 
 ![Hosting](images/statistics02u.png){.thumbnail}
 
-### Verwaltung der Benutzer
+### Verwaltung der Nutzer
 
 Die Erstellung eines Benutzers ermöglicht es einer Person, auf die Statistiken Ihres Hostings zuzugreifen, ohne Zugang zu Ihrem OVHcloud Kundencenter zu haben. 
 
