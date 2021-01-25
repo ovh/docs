@@ -16,6 +16,8 @@ En d'autres termes, ces enregistrements stockés sur des serveurs DNS rendent vo
 
 **Découvrez comment modifier les serveurs DNS pour votre nom de domaine OVHcloud.**
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Prérequis
 
 - Posséder un nom de domaine enregistré chez OVHcloud.
