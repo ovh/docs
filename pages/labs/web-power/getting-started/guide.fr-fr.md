@@ -59,21 +59,19 @@ Version utilisée : nodejs 14
 <br> Dossier racine : www
 
 ```sh
-~/www $ cd www
-~/www $ node -v
-v14.13.0
-~/www $ npm install express --save
-~/www $ vi index.js
-const express = require('express');
+~ $ vi www/index.js
+const http = require('http');
 const port = 3000;
 const msg = `Hello World from NodeJS ${process.version}\n`;
-const app = express();app.get('/', function (req, res) {
-res.send(msg);
+const server = http.createServer((req, res) => {
+res.statusCode = 200;
+res.setHeader('Content-Type', 'text/plain');
+res.end(msg);
 });
-app.listen(port);
-~/www $ mkdir -p tmp
-~/www $ touch tmp/restart.txt
+server.listen(port);
 ```
+
+Pour appliquer ces modification, pensez à [redémarrer votre instance](#restart).
 
 ### Python
 
@@ -95,8 +93,10 @@ def application(environ, start_response):
                         ('Content-Length', str(len(output)))]
     start_response(status, response_headers)
  
-    return [output]
+    return [output]    
 ```
+
+Pour appliquer ces modification, pensez à [redémarrer votre instance](#restart).
 
 ### Ruby
 
@@ -120,6 +120,7 @@ end
  
 run Application.new
 ```
+Pour appliquer ces modification, pensez à [redémarrer votre instance](#restart).
 
 ### Depuis les API
 
@@ -167,7 +168,7 @@ Dossier racine : www
 RewriteCond %{ENV:HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ```
-### Redémarrer votre instance
+### Redémarrer votre instance <a name="restart"></a>
 
 Après chaque modification structurante de votre application, il est conseillé de redémarrer votre instance pour constater les changements. Pour cela, il vous suffira de saisir la commande suivante:
 
