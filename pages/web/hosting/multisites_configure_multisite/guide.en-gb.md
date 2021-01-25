@@ -16,8 +16,8 @@ You can host multiple websites on a single web hosting plan, even if the domain 
 
 ## Requirements
 
-- a compatible OVHcloud [web hosting](https://www.ovh.co.uk/web-hosting/){.external} plan
-- You must have one or more [domain](https://www.ovh.co.uk/domains/){.external} names.
+- a compatible OVHcloud [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}
+- one or more [domain names](https://www.ovh.co.uk/domains/){.external}
 - the right to modify your domain name’s configuration (the DNS zone)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
@@ -143,7 +143,7 @@ However, if you would like to set up your website manually, you can put it onlin
 >
 > If you would like to add several websites, you will need to repeat this step.
 >
-> We recommend taking care with the number of websites you host on your Web Hosting plan. The more websites you host, the higher the demand will be on your allocated resources. [Our web](https://www.ovh.co.uk/web-hosting/){.external} hosting page shows the number of websites you can host on your plan.
+> We recommend taking care with the number of websites you host on your Web Hosting plan. The more websites you host, the higher the demand will be on your allocated resources. [Our Web Hosting page](https://www.ovh.co.uk/web-hosting/){.external} hosting page shows the number of websites you can host on your plan.
 >
 
 ## Go further
@@ -154,4 +154,4 @@ However, if you would like to set up your website manually, you can put it onlin
 
 [Publishing a website on your Web Hosting space](../web_hosting_how_to_get_my_website_online/){.external}.
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our community of users on <https://community.ovh.com/en/>.
