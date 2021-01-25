@@ -32,7 +32,7 @@ There are two aspects to migrating to a new vDC:
 
 ## Instructions
 
-This guide will utilise the notions of a **source infrastructure** and a **destination vDC**.
+This guide will utilise the notions of a **source vDC** and a **destination vDC**.
 
 ### OVHcloud context
 
@@ -42,11 +42,11 @@ This guide will utilise the notions of a **source infrastructure** and a **desti
 
 For connections to the VMware platform, you can choose to block access to vSphere by default. Please refer to our guide on the [vCenter access policy](../modify-vcenter-access-policy/) for details.
 
-If the access policy has been changed to "Restricted", you will need to apply the same connection IPs to the destination vDC as to the source infrastructure.
+If the access policy has been changed to "Restricted", you will need to apply the same connection IPs to the destination vDC as to the source vDC.
 
 ##### **Hosted Private Cloud users**
 
-In the lifecycle of the source infrastructure, a list of users may have been created for business or organisational needs. You must therefore create them again on the destination vDC and assign them the appropriate rights, depending on the configuration of the destination vDC.
+In the lifecycle of the source vDC, a list of users may have been created for business or organisational needs. You must therefore create them again on the destination vDC and assign them the appropriate rights, depending on the configuration of the destination vDC.
 
 To do this, please refer to our guides on [Changing user rights](../change-users-rights/), [Changing the User Password](../changing-user-password/) and [Associating an email with a vSphere user](../associate-email-with-vsphere-user/).
 
@@ -57,7 +57,7 @@ Please refer to our guide on [Enabling Virtual Machine Encryption](../vm-encrypt
 
 ##### **Certifications**
 
-For compliance reasons, [PCI DSS](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/pci-dss/) and [HDS](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/hds/) options may have been enabled on the source infrastructure.
+For compliance reasons, [PCI DSS](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/pci-dss/) and [HDS](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/hds/) options may have been enabled on the source vDC.
 
 These options must therefore be reactivated on the destination vDC. To do this, please refer to our [guide on activating them](../activate-pci-dss-option/).
 
@@ -74,24 +74,7 @@ As part of a migration process, you can link your Hosted Private Cloud services 
 
 ##### **Public network**
 
-> [!warning]
->
-> If your Hosted Private Cloud/PCC offer pre-dates 2016, please contact our support teams to verify the requirements.
->
-
-If the public IP addresses attached to the source infrastructure are required on the destination vDC, it will be necessary to transfer them.
-
-Please consult our guide to [Migrate an IP block between two Hosted Private Cloud services](../add-ip-block/#migrate-an-ip-block-between-two-hosted-private-cloud-solutions).
-
-The video below also shows how to migrate an IP block between two Hosted Private Cloud services.
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Gemao3Fd7rI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-##### **Distributed port group settings**
-
-Please verify portgroup settings including Security, VLAN, Teaming and failover, as if they have been modified on the source environment the same configuration will need to be applied on the destination.
-
-For more information, consult VMware's documentation on [how to edit general distributed port group settings](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html) and on [how to edit distributed port teaming and failover policies](https://docs.vmware.com/en/VMware-vSphere/6.0/com.vmware.vsphere.hostclient.doc/GUID-BB8EC262-5F85-4F42-AFC5-5FED456E2C11.html).
+The Public IP addresses attached to the source vDC will automatically be available for use in the destination vDC so there is no need to transfer public IP blocks.
 
 ### VMware context
 
@@ -171,7 +154,7 @@ For more information, consult VMware's documentation on [how to edit general dis
 
 ##### **1.7 Veeam backup config**
 
-If OVHcloud provided Veeam is currently in use to backup VMs on the source infrastructure, it will be necessary to use the OVH API to re-check the backup jobs after the VMs have been migrated to the new vDC.
+If OVHcloud provided Veeam is currently in use to backup VMs on the source vDC, it will be necessary to use the OVH API to re-check the backup jobs after the VMs have been migrated to the new vDC.
 
 Here is how to proceed:
 
