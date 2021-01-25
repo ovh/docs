@@ -68,14 +68,14 @@ Accedi al sito <https://api.ovh.com/console/> e inserisci il tuo identificativo 
 
 Per ottenere l’indirizzo IPv6 assegnato al VPS:
 
-> \[!api]
+> [!api]
 >
 > @api {GET} /vps/{serviceName}/ips
 >
 
 Per ottenere il gateway IPv6 assegnato al VPS:
 
-> \[!api]
+> [!api]
 >
 > @api {GET} /vps/{serviceName}/ips/{ipAddress}
 >
