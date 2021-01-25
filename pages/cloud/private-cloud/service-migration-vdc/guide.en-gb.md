@@ -175,8 +175,10 @@ If OVHcloud provided Veeam is currently in use to backup VMs on the source infra
 
 Here is how to proceed:
 
-1\. Enable backup for the new vDC
-2\. Migrate the VM(s) from source vDC to destination vDC
+1\. Enable backup for the new vDC.
+
+2\. Migrate the VM(s) from source vDC to destination vDC.
+
 3\. Run the OVHcloud API to re-check the backup date:
 
 > [!api]
@@ -184,8 +186,9 @@ Here is how to proceed:
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/checkBackupJobs
 >
 
-4\. Repeat steps 2 and 3 for all VMs that have backups enabled and have been migrated to the new vDC
-5\. Disable Veeam Backup on the old vDC
+4\. Repeat steps 2 and 3 for all VMs that have backups enabled and have been migrated to the new vDC.
+
+5\. Disable Veeam Backup on the old vDC.
 
 ##### **1.8 Inventory organisation (optional)**
 
@@ -232,14 +235,22 @@ To migrate an edge gateway, we need to instruct NSX manager to redeploy the edge
 
 You can migrate an NSX Edge by following these steps:
 
-1\. In the vSphere Client navigate to `Networking and Security`{.action}
-2\. Navigate to `NSX Edges`{.action}
-3\. Choose the Edge you wish to migrate
-4\. Click the `Configure`{.action} tab
-5\. Click on the `High Availability`{.action} tab
-6\. Click `Edit`{.action}
-7\. Set “HA Status” to **Disabled** and wait for the task to complete
-8\. Click the `Interfaces`{.action} tab
+1\. In the vSphere Client navigate to `Networking and Security`{.action}.
+
+2\. Navigate to `NSX Edges`{.action}.
+
+3\. Choose the Edge you wish to migrate.
+
+4\. Click the `Configure`{.action} tab.
+
+5\. Click on the `High Availability`{.action} tab.
+
+6\. Click `Edit`{.action}.
+
+7\. Set “HA Status” to **Disabled** and wait for the task to complete.
+
+8\. Click the `Interfaces`{.action} tab.
+
 9\. In here the goal is to change any interface that is connected to a VLAN backed portgroup, to a VXLAN backed portgroup (for example, the VM Network or any vRack port-group). 
 
 > [!primary]
@@ -249,14 +260,21 @@ You can migrate an NSX Edge by following these steps:
 > - Any VMs on a VLAN backed network that changes to a temporary VXLAN backed network will see network downtime
 >
 
-10\. Click the `Appliance Settings`{.action} tab
-11\. Under the “Edge Appliance VMs” heading select the cog and `Edit`{.action}
-12\. In here fill out the parameters pointing to the new vDC and click `Save`{.action}
-13\. The edge gateway will redeploy into the destination vDC
-14\. Once the redeploy task is completed click the `Configure`{.action} tab
-15\. Click the `Interfaces`{.action} tab
-16\. In here the goal is to revert any VLAN backed network that was changed to VXLAN backed in step 9, back to the correct VLAN backed network that exists in the new vDC
-17\. Repeat for all other NSX Edges
+10\. Click the `Appliance Settings`{.action} tab.
+
+11\. Under the “Edge Appliance VMs” heading select the cog and `Edit`{.action}.
+
+12\. In here fill out the parameters pointing to the new vDC and click `Save`{.action}.
+
+13\. The edge gateway will redeploy into the destination vDC.
+
+14\. Once the redeploy task is completed click the `Configure`{.action} tab.
+
+15\. Click the `Interfaces`{.action} tab.
+
+16\. In here the goal is to revert any VLAN backed network that was changed to VXLAN backed in step 9, back to the correct VLAN backed network that exists in the new vDC.
+
+17\. Repeat for all other NSX Edges.
 
 ###### **1.9.3 NSX Distributed Logical Routing**
 
