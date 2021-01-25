@@ -61,7 +61,7 @@ Suite à cette validation, un cadre vous indiquera l'adresse associée à ce num
 
 ##### **Si vous ne disposez d'aucun numéro à la nouvelle adresse**
 
-Cochez la case « Testez avec le nouvelle adresse » puis renseignez les champs requis (code postal, ville, numéro et rue).
+Cochez la case « Testez avec la nouvelle adresse » puis renseignez les champs requis (code postal, ville, numéro et rue).
 <br>Cliquez ensuite sur le bouton `Valider`{.action}.
 
 ![demenagement par adresse](images/move04-edit.png){.thumbnail}
