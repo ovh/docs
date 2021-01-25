@@ -68,14 +68,14 @@ Przejdź do strony WWW i zaloguj się <https://api.ovh.com/console/> do strony z
 
 Pierwsze umożliwia pobranie adresu IPv6 przypisanego do Twojego serwera.
 
-> \[!api]
+> [!api]
 >
 > @api {GET} /vps/{serviceName}/ips
 >
 
 Drugie zapytanie API umożliwia pobranie bramy IPv6 przypisanej do Twojego serwera.
 
-> \[!api]
+> [!api]
 >
 > @api {GET} /vps/{serviceName}/ips/{ipAddress}
 >

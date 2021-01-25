@@ -14,6 +14,8 @@ La zone Domain Name System (DNS) d'un nom de domaine constitue le fichier de con
 
 **Apprenez à éditer simplement votre zone DNS OVH via votre espace client.**
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Prérequis
 
 - Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
