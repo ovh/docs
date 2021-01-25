@@ -20,7 +20,7 @@ Es posible alojar varios sitios web en un mismo plan de hosting, aunque los domi
 
 ## Requisitos
 
-- Tener contratado un plan [de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external} compatible.
+- Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external} compatible.
 - Tener uno o más [dominios](https://www.ovh.com/world/es/dominios/){.external}.
 - Poder modificar la configuración de sus dominios (la zona DNS).
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
@@ -46,7 +46,7 @@ Para añadir un nuevo dominio o subdominio al alojamiento, haga clic en el botó
 
 - **Añadir un dominio registrado con OVHcloud** :
 
-Solo se muestran los dominios de OVHcloud para los que usted es [contacto técnico y/o administrador en su área de cliente](../../customer/gestion-de-los-contactos/). Seleccione un dominio de la lista y haga clic en `Siguiente`{.action}. Continúe en el [paso 2.1: Añadir un dominio registrado con OVHcloud](#add-ovhcloud-domain).
+Seleccione un dominio de la lista y haga clic en `Siguiente`{.action}. Continúe en el [paso 2.1: Añadir un dominio registrado con OVHcloud](#add-ovhcloud-domain).
 
 - **Añadir un dominio externo**
 
@@ -139,9 +139,9 @@ Compruebe que la información que se muestra es correcta y haga clic en `Aceptar
 
 Una vez añadido el dominio, solo tiene que publicar el sitio web correspondiente. Le recordamos que debe realizar esta operación en la carpeta raíz que haya indicado en el paso anterior.
 
-Si necesita ayuda, puede disfrutar de una infraestructura de sitio web lista para usar gracias a los módulos en 1 clic de OVHcloud. Si utiliza estos módulos, el sitio web se instalará automáticamente en la carpeta raíz configurada anteriormente. Para más información, consulte nuestra guía [Instalar un sitio web con un módulo en un clic](../modules-en-1-clic/){.external}. 
+Si necesita ayuda, puede disfrutar de una infraestructura de sitio web lista para usar gracias a los módulos en 1 clic de OVHcloud. Si utiliza estos módulos, el sitio web se instalará automáticamente en la carpeta raíz configurada anteriormente. Para más información, consulte nuestra guía [Instalar un sitio web con un módulo en un clic](../modulos-en-un-clic/){.external}. 
 
-Si, por el contrario, quiere instalar manualmente su sitio web, deberá subir los archivos a la carpeta raíz adecuada de su espacio de almacenamiento. Para más información, consulte nuestra guía [Publicar un sitio web en internet](../mettre-mon-site-en-ligne/){.external}.
+Si, por el contrario, quiere instalar manualmente su sitio web, deberá subir los archivos a la carpeta raíz adecuada de su espacio de almacenamiento. Para más información, consulte nuestra guía [Publicar un sitio web en internet](../web_hosting_publicar_un_sitio_web_en_internet/){.external}.
 
 > [!primary]
 >
