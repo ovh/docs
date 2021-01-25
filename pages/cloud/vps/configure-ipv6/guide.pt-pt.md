@@ -68,14 +68,14 @@ Aceda ao site <https://api.ovh.com/console/> e ligue-se ao mesmo com o seu ID OV
 
 A primeira permite-lhe obter o endereço IPv6 associado ao seu servidor.
 
-> \[!api]
+> [!api]
 >
 > @api {GET} /vps/{serviceName}/ips
 >
 
 A segunda serve para obter a gateway IPv6 associada ao seu servidor.
 
-> \[!api]
+> [!api]
 >
 > @api {GET} /vps/{serviceName}/ips/{ipAddress}
 >

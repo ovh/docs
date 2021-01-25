@@ -69,14 +69,14 @@ Klicken Sie auf der [OVHcloud API Seite](https://api.ovh.com/console/) oben rech
 
 Verwenden Sie diesen Aufruf, um die zu Ihrem Server gehörige IPv6-Adresse zu erhalten:
 
-> \[!api]
+> [!api]
 >
 > @api {GET} /vps/{serviceName}/ips
 >
 
 Mit dem folgenden Aufruf können Sie das Ihrem Server zugewiesene IPv6-Gateway abfragen:
 
-> \[!api]
+> [!api]
 >
 > @api {GET} /vps/{serviceName}/ips/{ipAddress}
 >

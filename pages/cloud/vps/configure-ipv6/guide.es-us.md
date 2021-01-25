@@ -68,14 +68,14 @@ Vaya al sitio web <https://ca.api.ovh.com/console/> y conéctese a él con su ID
 
 Para obtener la dirección IPv6 asignada al VPS:
 
-> \[!api]
+> [!api]
 >
 > @api {GET} /vps/{serviceName}/ips
 >
 
 Para obtener la puerta de enlace IPv6 asignada al VPS:
 
-> \[!api]
+> [!api]
 >
 > @api {GET} /vps/{serviceName}/ips/{ipAddress}
 >
