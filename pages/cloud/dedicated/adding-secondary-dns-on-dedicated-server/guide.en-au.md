@@ -11,7 +11,7 @@ section: 'Advanced use'
 
 If you are configuring your dedicated server as a DNS server, you can make use of the OVHcloud Secondary DNS service to host a secondary zone. This way, DNS for your domain will remain available even if the primary DNS server should become unresponsive.
 
-**This guide will explain how to add your domain in the OVHcloud Control Panel in order to utilise an OVHcloud Secondary DNS server.**
+**This guide explains how to add your domain in the OVHcloud Control Panel in order to utilise an OVHcloud Secondary DNS server.**
 
 ## Requirements
 

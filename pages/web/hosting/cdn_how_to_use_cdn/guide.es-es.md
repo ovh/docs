@@ -41,7 +41,7 @@ Para funcionar, cada servidor guarda en memoria caché una parte de su sitio web
 
 ####  Si la opción CDN no está contratada o activada en su alojamiento web
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. Haga clic en `..`{.action} a la derecha de "Opción CDN" y, seguidamente, en `Contratar una CDN`{.action} o `Activar la opción`{.action} si la opción CDN ya está incluida en el alojamiento.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. Haga clic en `...`{.action} a la derecha de "Opción CDN" y, seguidamente, en `Contratar una CDN`{.action} o `Activar la opción`{.action} si la opción CDN ya está incluida en el alojamiento.
 
 > [!primary]
 > 
@@ -74,7 +74,7 @@ En cuanto al SEO (posicionamiento en los motores de búsqueda), la velocidad de 
 
 > [!primary]
 > 
-> La opción Shared CDN ya está incluida en los planes de hosting Performance o está disponible para contratar desde el 19/11/20. Para las versiones más antiguas, consulte el apartado [Gestionar su CDN (versión histórica)](./#gestionar-su-cdn (versión histórica)_2).
+> La opción Shared CDN ya está incluida en los planes de hosting Performance o está disponible para contratar desde el 19/11/20. Para las versiones más antiguas, consulte el apartado [Gestionar su CDN (versión histórica)](./#gestionar-su-cdn-version-historica_2).
 
 #### Vaciar la caché del Shared CDN
 
@@ -86,7 +86,7 @@ Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`
 
 #### Configurar las opciones del Shared CDN
 
-Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `..`{.action} a la derecha de la entrada multisitio y luego `Editar la CDN`{.action}.
+Acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y luego `Editar la CDN`{.action}.
 
 > [!warning]
 > 
@@ -110,7 +110,7 @@ Una vez seleccionadas las opciones, haga clic en `Aplicar la configuración`{.ac
 
 ##### Crear una regla de almacenamiento en caché
 
-Para añadir una regla de caché a uno de los elementos de su sitio, acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `..`{.action} a la derecha de la entrada multisitio y seleccione `Configurar la CDN`{.action}.
+Para añadir una regla de caché a uno de los elementos de su sitio, acceda a la pestaña `Multisitio`{.action} de su alojamiento, haga clic en `...`{.action} a la derecha de la entrada multisitio y seleccione `Configurar la CDN`{.action}.
 
 Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla`{.action}.
 
@@ -126,7 +126,7 @@ Bajo la mención **Reglas de caché**, haga clic en el botón `Añadir una regla
 
 A continuación, haga clic en el botón `crear la regla`{.action}.
 
-Las reglas aparecen en una lista.  Puede modificarla haciendo clic en `..`{.action} a la derecha de la regla y luego en `Modificar la regla`{.action} o eliminarla haciendo clic en `Eliminar la regla`{.action}.
+Las reglas aparecen en una lista.  Puede modificarla haciendo clic en `...`{.action} a la derecha de la regla y luego en `Modificar la regla`{.action} o eliminarla haciendo clic en `Eliminar la regla`{.action}.
 
 ![CDN](images/manage_sharedCDN_05.png){.thumbnail}
 
