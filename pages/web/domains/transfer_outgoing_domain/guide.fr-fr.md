@@ -65,7 +65,7 @@ Cliquez sur le curseur et confirmez, dans la fenêtre qui s'affiche, que vous so
 
 Une fois la protection contre le transfert levée, vous pouvez récupérer le code de transfert de votre nom de domaine. Pour cela, toujours depuis l'onglet `Informations générales`{.action}, cliquez sur `AUTH/INFO`{.action} situé à côté de `Protection contre le transfert`. N'hésitez pas à actualiser la page si nécessaire.
 
-Une fenêtre s'affiche alors et contient votre code AUTH/INFO (également appelé clé de transfert, mot de passe de domaine, AUTH-CODE ou EPP-Code).
+Une fenêtre s'affiche alors et contient votre code AUTH/INFO (également appelé code de transfert, mot de passe de domaine, AUTH-CODE ou EPP-Code).
 
 ![outgoingtransfer](images/outgoing-transfer-step3.png){.thumbnail}
 
