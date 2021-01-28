@@ -101,7 +101,7 @@ Nachdem die Domain hinzugefügt wurde, gehen Sie zu [Schritt 3: Ihre Website onl
 >
 > |Feld|Wo finde ich die Information?|Durchzuführende Maßnahme|
 > |---|---|---|
-> |TXT|Tab `Multisite`{.action}, klicken Sie auf `Konfiguration des Tokens ovhcontrol`{.action}|OVHcloud stellt sicher, dass das Hinzufügen jeder externen Domain legitim ist. Achten Sie darauf, den TXT-Eintrag mit der Subdomain ovhcontrol (z.B. ovhcontrol.mydomainovh) zu erstellen. Es muss nur die Hauptdomain validiert werden, die Subdomains sind nicht erforderlich. Im Fall einer Zonenübertragung muss der Eintrag in die Zone, die die externe Domain autorisiert, eingefügt werden.|
+> |TXT|Tab `Multisite`{.action}, klicken Sie auf `Konfiguration des Tokens ovhcontrol`{.action}|OVHcloud stellt sicher, dass das Hinzufügen jeder externen Domain legitim ist. Achten Sie darauf, den TXT-Eintrag mit der Subdomain ovhcontrol (z.B. ovhcontrol.mydomain.ovh) zu erstellen. Es muss nur die Hauptdomain validiert werden, die Subdomains sind nicht erforderlich. Im Fall einer Zonenübertragung muss der Eintrag in die Zone, die die externe Domain autorisiert, eingefügt werden.|
 >
 > ![Multisite](images/add-multisite-external-step3.png){.thumbnail}
 >

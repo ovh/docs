@@ -10,7 +10,7 @@ order: 4
 
 ## Objective
 
-A **domain transfer** refers to the process of moving a registered domain name from one registrar to another. For example, if you have ordered a domain name on our website, OVHcloud is its current registrar. An outgoing domain transfer needs to be initiated by the new registrar. 
+**Domain transfer** refers to the process of moving a registered domain name from one registrar to another. For example, if you have ordered a domain name on our website, OVHcloud is its current registrar. An outgoing domain transfer needs to be initiated by the new registrar. 
 
 In order to prevent unauthorised domain transfers, domain names are usually locked by having the status *clientTransferProhibited* set. This protection must be lifted in the OVHcloud Control Panel before starting a transfer.
 
@@ -54,6 +54,8 @@ On the `General information`{.action} tab you can find the "Protection against d
 Click on the slider and confirm in the popup window that you want to remove this protection. Allow a few minutes for the status to change to `Disabled`{.action}.
 
 ![outgoingtransfer](images/outgoing-transfer-step2.png){.thumbnail}
+
+You can also refresh the page if it seems to take longer.
 
 > [!primary]
 >

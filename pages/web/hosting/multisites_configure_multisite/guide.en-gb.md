@@ -97,7 +97,7 @@ Now that you have added your domain, go to [Step 3: Put your website online](#si
 >
 > |Field|Where to find this information|Action to take|
 > |---|---|---|
-> |TXT|On the `Multisite`{.action} tab, click `Configuration of ovhcontrol token`{.action}|Allows OVHcloud to ensure that each external domain name is added legitimately. Ensure that you create the TXT record with the subdomain ovhcontrol (e.g. ovhcontrol.mydomainovh). You need to validate only the primary domain, not all subdomains. In the case of zone delegation, the record must be added to the authoritative zone for the external domain name to be validated.|
+> |TXT|On the `Multisite`{.action} tab, click `Configuration of ovhcontrol token`{.action}|Allows OVHcloud to ensure that each external domain name is added legitimately. Ensure that you create the TXT record with the subdomain ovhcontrol (e.g. ovhcontrol.mydomain.ovh). You need to validate only the primary domain, not all subdomains. In the case of zone delegation, the record must be added to the authoritative zone for the external domain name to be validated.|
 >
 > ![multisite](images/add-multisite-external-step3.png){.thumbnail}
 >
@@ -148,10 +148,10 @@ However, if you would like to set up your website manually, you can put it onlin
 
 ## Go further
 
-[Setting up your website with 1-click modules](../web_hosting_web_hosting_modules/){.external}.
+[Setting up your website with 1-click modules](../web_hosting_web_hosting_modules/){.external}
 
-[Editing an OVHcloud DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
+[Editing an OVHcloud DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/){.external}
 
-[Publishing a website on your Web Hosting plan](../web_hosting_how_to_get_my_website_online/){.external}.
+[Publishing a website on your Web Hosting plan](../web_hosting_how_to_get_my_website_online/){.external}
 
 Join our community of users on <https://community.ovh.com/en/>.
