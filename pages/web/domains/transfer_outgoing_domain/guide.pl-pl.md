@@ -1,57 +1,90 @@
 ---
-title: 'Transfer domeny z OVH do innego operatora'
+title: Transfer domeny do innego operatora
 slug: transfer_wychodzacy_domeny_globalnej_lub_geograficznej
-excerpt: 'Dowiedz się, jak wykonać transfer domeny z OVH do wybranego operatora'
+excerpt: Dowiedz się, jak wykonać transfer domeny z OVHcloud do wybranego operatora
 section: Transfer
 order: 4
 ---
 
-**Ostatnia aktualizacja dnia 2018-04-18**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+> 
+
+**Ostatnia aktualizacja z dnia 22-07-2020**
 
 ## Wprowadzenie
 
-Transfer domeny umożliwia jej przeniesienie do innego operatora. Po zakończeniu transferu, opłaty za domenę jak i zarządzanie ustawieniami serwerów DNS będziesz przeprowadzał u nowego operatora.
+**Transfer domeny** odnosi się do przeniesienia domeny z jednego operatora na drugi. Na przykład, jeśli zamówiłeś domenę na naszej stronie internetowej, OVHcloud jest jej aktualnym operatorem. Transfer domeny wychodzącej musi zostać zainicjowany przez nowego operatora.
 
-**Dowiedz się, jak wykonać transfer domeny z OVH do wybranego operatora.**
+Aby zapobiec przenoszeniu domeny bez zezwolenia, domeny są zazwyczaj blokowane przez status *clientTransferProhibited*. Ochrona ta musi zostać usunięta w Panelu klienta OVHcloud przed rozpoczęciem transferu.
+
+**Niniejszy przewodnik wyjaśnia, jak przygotować domenę do transferu wychodzącego.**
 
 ## Wymagania początkowe
-- Posiadanie domeny zarejestrowanej w OVH
-- Posiadanie uprawnień do złożenia wniosku o transfer domeny: właściciel i/lub administratorzy domeny powinni zostać poinformowani o wszczęciu takiej procedury
-- Dostęp do interfejsu zarządzania domeną w [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Od momentu utworzenia domeny upłynęło więcej niż 61 dni, ponadto domena nie była w tym czasie przenoszona ani nie został zmieniony jej właściciel
+
+- Posiadanie [domeny zarejestrowanej](https://www.ovh.pl/domeny/) w OVHcloud
+- Posiadanie uprawnień do złożenia wniosku o transfer domeny: właściciel i/lub administratorzy domeny powinni zostać poinformowani o wszczęciu takiej procedury. 
+- Dostęp do interfejsu zarządzania domeną w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Rejestracja tej domeny trwa co najmniej 60 dni i nie została przeniesiona ani wymieniona (tj. zmiana właściciela) w ciągu ostatnich 60 dni
 
 > [!primary]
 >
-> Niektóre rozszerzenia domeny podlegają specjalnej procedurze w zakresie zmiany operatora. Jeśli po wykonaniu poniżej opisanych etapów, nie udaje Ci się przenieść domeny, zalecamy kontakt z nowym operatorem w celu uzyskania dodatkowych informacji o krokach, jakie należy podjąć.
+> Jeśli jesteś **właścicielem** domeny, ale zarządzanie nią w Panelu klienta OVHcloud jest niedostępne, zarówno poprzez własny dostęp, jak i poprzez kontakt administracyjny domeny, zapoznaj się z [tym przewodnikiem](../../customer/zarzadzanie_kontaktami/#przypadek-wlasciciela-domeny).
 >
 
 ## W praktyce
 
-### Etap 1: wyłączenie ochrony przed transferem
+> [!warning]
+>
+> Poniższe instrukcje opisują najpopularniejszy sposób transferu domeny, ważny dla większości domen najwyższego poziomu (top-level domain lub TLD). Jednakże szczegółowe przepisy dotyczące procedur właściwych dla TLD są określane wyłącznie przez właściwy organ, tj. **rejestr**. Rejestratorzy, tacy jak OVHcloud, muszą przestrzegać tych zasad i nie mają wpływu na decyzje podejmowane przez rejestry.
+>
+> Dokładna procedura transferu domeny może się zatem różnić, w szczególności w przypadku niektórych TLD kodu kraju (np. ccTLD, np. .lu, .uk., .hk, .ro) i niektórych TLD specjalnych (.am, .fm, itp..). Transfery mogą być również zakazane z różnych powodów, np. w przypadku płatności oczekujących na płatność, nadużycia lub blokady rejestru.
+>
+> W przypadku wątpliwości zalecamy sprawdzenie następujących zasobów:
+>
+> - strona internetowa odpowiedniego rejestru TLD;
+> - Lista [TLD dostępnych w OVHcloud](https://www.ovh.pl/domeny/cennik/);
+> - [Wyjaśnienia ICANN dotyczące kodów statusu EPP](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (aby dowiedzieć się, które kody statusu mają obecnie zastosowanie do Twojej domeny, należy przeszukać *Whois*, najlepiej korzystając ze strony internetowej odpowiedniego rejestru TLD);
+> - Twoja strona WWW oraz interfejs zarządzania nowym operatorem, zwłaszcza w przypadku pytań dotyczących procesu transferu oczekującego na połączenie.
+>
 
-Aby wyłączyć ochronę przed transferem domeny, kliknij przycisk `Web Cloud`{.action} na pasku usług na górze strony w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Przejdź do sekcji `Domeny`{.action} po lewej stronie, następnie kliknij wybraną domenę. W zakładce `Informacje ogólne`{.action} kliknij suwak `Ochrona przed transferem`{.action}, następnie kliknij `Zatwierdź`{.action}.
+### Etap 1: wyłączenie ochrony przed transferem domeny
+
+Zaloguj się do swojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i na górnym pasku nawigacji wybierz `Web Cloud`{.action}. Kliknij `Domeny`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiednią nazwę domeny.
+
+W zakładce `Informacje ogólne`{.action} znajdziesz suwak `Ochrona przed transferem` pod **zabezpieczeniem**. Domyślnie ochrona ta jest `Aktywne`{.action}.
+
+![ochrona włączona](images/outgoing-transfer-step1.png){.thumbnail}
+
+Kliknij kursor i potwierdź w oknie, które się wyświetli, że chcesz usunąć tę ochronę. Odczekaj kilka minut, aż stan się `Wyłączone`{.action}.
+
+![dezaktywacja](images/outgoing-transfer-step2.png){.thumbnail}
 
 > [!primary]
 >
-> Po odblokowaniu Twojej domeny masz siedem (7) dni, aby rozpocząć jej transfer do nowego operatora. Po upływie tego terminu domena zablokuje się automatycznie, jeśli nie zostanie złożony wniosek o jej przeniesienie.
+> Po odblokowaniu domeny zostanie ona odblokowana na siedem dni. Po tym czasie ochrona zostanie automatycznie ponownie włączona. Jeśli w tym czasie nie wystąpi o transfer domeny do nowego operatora, konieczne będzie ponowne usunięcie ochrony domeny.
 >
 
-![outgoingtransfer](images/outgoing-transfer-step2.png){.thumbnail}
+### Etap 2: pobrać kod transferu
 
-### Etap 2: pobranie kodu transferu (authinfo)
+Po odblokowaniu Twojej domeny do transferu, pobierz jej kod transferu.  W tym celu, w zakładce `Informacje ogólne`{.action}, kliknij przycisk `AUTH/INFO`{.action} znajdujący się obok przycisku `Ochrona przed transferem`. Jeśli to konieczne, odśwież stronę.
 
-Po odblokowaniu Twojej domeny do transferu, pobierz jej kod transferu. W tym celu, w zakładce `Informacje ogólne`{.action}, kliknij przycisk `AUTH/INFO`{.action} znajdujący się obok przycisku `Ochrona przed transferem`{.action}. Jeśli to konieczne, odśwież stronę.
-
-Pobierz kod, który wyświetla się w oknie.
+Wyświetli się wówczas okno zawierające kod AUTH/INFO (zwany również kodem transferu, hasłem domeny, AUTH-CODE lub EPP-Code).
 
 ![outgoingtransfer](images/outgoing-transfer-step3.png){.thumbnail}
 
-### Etap 3: rozpoczęcie transferu domeny do nowego operatora
+Kod zostanie poproszony przez nowego operatora o zakończenie procesu transferu. Szczegóły możesz sprawdzić u nowego operatora.
 
-Jeśli jeszcze tego nie zrobiłeś, skontaktuj się z Twoim nowym operatorem, aby rozpocząć transfer domeny. Podaj mu pobrany na Etapie 3 kod transferu w sposób zgodny z procedurą obowiązującą u tego operatora. 
+Zamiast ręcznie wpisywać kod, zalecamy jego skopiowanie/wklejenie, ponieważ niektóre znaki mogą być łatwo mylone.
 
-Aby dowiedzieć się więcej o procesie transferu, w tym terminie jego realizacji, zapoznaj się z informacjami podanymi przez Twojego nowego operatora.
+### Etap 3: rozpocząć transfer do nowego operatora
+
+Po wykonaniu poprzednich etapów, możesz rozpocząć proces transferu, zazwyczaj składając zamówienie. Transfer może trwać do 10 dni. 
+
+Aby uzyskać więcej informacji, skontaktuj się z nowym operatorem.
 
 ## Sprawdź również
+
+[Transfer domeny.co.uk wychodzący](../transfer_wychodzacy_domeny_couk/)
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

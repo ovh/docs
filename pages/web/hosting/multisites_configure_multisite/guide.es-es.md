@@ -101,7 +101,7 @@ Una vez añadido el dominio, vaya al [paso 3\. publicar un sitio web en internet
 >
 > |Campo|¿Dónde encontrar la información?|Acción a realizar|
 > |---|---|---|
-> |TXT|En la pestaña `Multisitio`{.action}, haciendo clic en `Configuración del código de verificación ovhcontrol`{.action}|Permite a OVHcloud asegurarse de que la adición de cada dominio externo es legítima. Deberá crear el registro TXT con el subdominio ovhcontrol (p. ej., "ovhcontrol.mydomainovh"). Solo debe validar el dominio principal, no todos los subdominios. En el caso de una delegación de zona, el campo debe añadirse al área que da autoridad al dominio externo que vaya a añadirse.|
+> |TXT|En la pestaña `Multisitio`{.action}, haciendo clic en `Configuración del código de verificación ovhcontrol`{.action}|Permite a OVHcloud asegurarse de que la adición de cada dominio externo es legítima. Deberá crear el registro TXT con el subdominio ovhcontrol (p. ej., "ovhcontrol.mydomain.ovh"). Solo debe validar el dominio principal, no todos los subdominios. En el caso de una delegación de zona, el campo debe añadirse al área que da autoridad al dominio externo que vaya a añadirse.|
 >
 > ![Multisitio](images/add-multisite-external-step3.png){.thumbnail}
 >
