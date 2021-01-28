@@ -97,7 +97,7 @@ Maintenant que le domaine est ajouté, rendez-vous à l’[étape 3 : mettre vot
 >
 > |Champ|Où trouver l'information ?|Action à réaliser|
 > |---|---|---|
-> |TXT|Onglet `Multisite`{.action} puis cliquez sur `Configuration du token ovhcontrol`{.action}|Permet à OVHcloud de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.mydomainovh). Vous devez valider uniquement le domaine principal, pas tous les sous-domaines. Dans le cas d'une délégation de zone, le champ doit être ajouté dans la zone faisant autorité pour le nom de domaine externe à ajouter.|
+> |TXT|Onglet `Multisite`{.action} puis cliquez sur `Configuration du token ovhcontrol`{.action}|Permet à OVHcloud de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.mydomain.ovh). Vous devez valider uniquement le domaine principal, pas tous les sous-domaines. Dans le cas d'une délégation de zone, le champ doit être ajouté dans la zone faisant autorité pour le nom de domaine externe à ajouter.|
 >
 > ![multisite](images/add-multisite-external-step3.png){.thumbnail}
 >

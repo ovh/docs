@@ -1,75 +1,90 @@
 ---
-title: Transferência de saída de um nome de domínio genérico ou geográfico
-excerpt: Este guia explica como transferir o seu nome de domínio genérico para um outro prestador de serviços de domínio (registrar)
+title: Transferir um domínio para outro agente de registo
+excerpt: Saiba como transferir um domínio da OVHcloud para o agente de registo da sua escolha
 slug: transferencia_de_saida_de_um_nome_de_dominio_generico_ou_geografico
 legacy_guide_number: g1869
+section: Transferência
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Domínio genérico (GTLD)
+**Última atualização: 25/01/2021**
 
-Para poder transferir um nome de domínio genérico  (.com, .net, .org, .info, .biz e semelhantes) para a OVH, deve assegurar-se que respeita os seguintes pré-requisitos:
+## Objetivo
 
+**Transferência de domínio** refere-se à transferência de um domínio de um agente de registo para outro. Por exemplo, se encomendou um domínio para o nosso website, a OVHcloud é o seu agente de registo atual. O novo agente registador deve iniciar uma transferência de domínio para fora.
 
-- O seu domínio não está expirado. *
-- O seu domínio deve ter sido criado há mais do que 61 dias. *
-- A organização, o nome e o apelido do proprietário não podem ter sido modificados há menos de 61 dias. *
-- Não deve ter renovado o seu domínio há menos de 46 dias. (Recomendação)
-- Os endereços de e-mail de contactos na base Whois devem ser válidos. *
-- Os contactos na base Whois bem como o proprietário devem ser indicados no pedido de transferência. *
-- O domínio não deve estar bloqueado. *
-- A data de expiração do domínio deve ser superior a61 dias. (Recomendação)
+De modo a impedir as transferências de domínio não autorizadas, os nomes de domínio são geralmente bloqueados por um estatuto de *clientTransferProhibited*. Esta proteção deve ser levantada na Área de Cliente OVHcloud antes de começar qualquer transferência.
 
+**Este manual explica-lhe como preparar o seu domínio para uma transferência de saída.**
 
-( *Obrigatório)
+## Requisitos
 
+- Ter um [domínio](https://www.ovh.pt/dominios/) registado na OVHcloud
+- Ter o direito de solicitar a transferência do nome de domínio: o proprietário e/ou os administradores devem ser informados do pedido de transferência.
+- Ter acesso à secção de gestão do domínio na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- O registo do nome de domínio em questão data de há pelo menos 60 dias e não foi transferido ou trocado (ou seja, a mudança de proprietário) durante os últimos 60 dias
 
-## Domínio geográfico (CCTLD)
+> [!primary]
+>
+> Se é o **proprietário** do domínio mas a sua gestão na Área de Cliente OVHcloud está indisponível, seja através do seu próprio acesso ou através do contacto administrativo do domínio, consulte [este guia](../../customer/gestao_dos_contactos/#caso-especifico-de-um-proprietario-de-dominio) antes de continuar.
+>
 
-Para poder efetuar uma transferência de domínio geográfico (.fr, .re, .eu, .be, e similares) para um outro registrar, deve assegurar-se que respeita os seguintes pré-requisitos:
+## Instruções
 
+> [!warning]
+>
+> As instruções que se seguem descrevem a forma mais comum de transferir um nome de domínio, válido para a maioria dos domínios de primeiro nível (top-level domain, ou TLD). No entanto, as regras específicas de procedimentos aplicáveis aos TLD são definidas apenas pela autoridade competente, ou seja, pelo **registo**. Os agentes de registo, como a OVHcloud, devem respeitar estas regras e não têm qualquer influência sobre as decisões dos registos.
+>
+> Assim, o procedimento exato para as transferências de domínio pode variar, em particular no caso de certos TLD de código de país (ccTLD, tais como .lu, .uk, .hk, .ro) e de alguns TLD especiais (.am, .fm, etc..). As transferências podem igualmente ser proibidas por diversas razões, por exemplo, em caso de pagamento pendente, de abuso ou de bloqueio do registo.
+>
+> Em caso de dúvida, recomendamos que consulte os seguintes recursos:
+>
+> - O sítio Web do registo TLD correspondente;
+> - a [lista dos TLD disponíveis na OVHcloud](https://www.ovh.pt/dominios/precos/);
+> - [Explicações do ICANN sobre os códigos de estado EPP](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (para saber que códigos de estado se aplicam atualmente ao seu nome de domínio, efetue uma pesquisa *Whois*, utilizando de preferência o website do registo TLD correspondente);
+> - o website e a interface de gestão do seu novo agente de registo, especialmente para as questões relativas a um processo de transferência pendente.
+>
 
-- O seu domínio não está expirado. *
-- Não deve ter renovado o seu domínio há menos de 46 dias. (Recomendação)
-- Os contactos na base Whois bem como o proprietário devem ser indicados no pedido de transferência. *
-- O domínio não deve estar bloqueado. *
-- A data de expiração do domínio deve ser superior a61 dias. (Recomendação)
+### Etapa 1: eliminar a proteção contra a transferência do nome de domínio
 
+Ligue-se à sua Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e selecione `Web Cloud`{.action} na barra de navegação superior. Clique em `Domínios`{.action} na barra de serviços situada à esquerda e escolha o domínio em causa.
 
-(* : Obrigatório)
+No separador `Informações gerais`{.action}, encontrará o cursor `Proteção contra a transferência` sob **Segurança**. Por predefinição, esta proteção está `Ativada`{.action}.
 
+![proteção ativada](images/outgoing-transfer-step1.png){.thumbnail}
 
-## Etapa 1: Verificações das informações do domínio
-Pode encontrar estas informações a partir do seu Espaço Cliente acessível [aqui](https://www.ovh.com/manager/web/login/).
- É necessário ligar-se com o contacto administrador.
+Clique no cursor e confirme, na nova janela, que pretende eliminar esta proteção. Aguarde alguns minutos para que o estado passe para `Desativado`{.action}.
 
-Após estar ligado é necessário clicar no nome de domínio à esquerda no separador Domínios, e depois em Informações gerais.
+![desativação proteção](images/outgoing-transfer-step2.png){.thumbnail}
 
-![](images/img_3692.jpg){.thumbnail}
+> [!primary]
+>
+> Uma vez levantada a proteção, o domínio ficará desbloqueado durante sete dias. Após este período, a proteção será automaticamente reativada. Se não solicitar a transferência de domínio para o novo agente de registo durante este período, será necessário levantar novamente a proteção do domínio.
+>
 
+### Etapa 2: recuperar o código de transferência
 
-## Etapa 2: Desbloqueio do domínio
-É necessário clicar no botão de desativação no separador Proteção contra a transferência.
+Uma vez levantada a proteção contra a transferência, pode recuperar o código de transferência do seu nome de domínio. Para isso, ainda no separador `Informações gerais`{.action}, clique em `AUTH/INFO`{.action} situado ao lado de `Proteção contra a transferência`. Não hesite em atualizar a página caso seja necessário.
 
-![](images/img_3695.jpg){.thumbnail}
-Clique de seguida em Validar.
+Aparecerá uma janela com o seu código AUTH/INFO (também conhecido como código de transferência, palavra-passe de domínio, AUTH-CODE ou EPP-Code).
 
-![](images/img_3693.jpg){.thumbnail}
-Aguarde alguns minutos para que a operação seja corretamente tomada em conta.
+![outgoingtransfer](images/outgoing-transfer-step3.png){.thumbnail}
 
-![](images/img_3694.jpg){.thumbnail}
+O código será pedido pelo seu novo agente de registo para concluir o processo de transferência. Pode verificar os detalhes junto do seu novo agente de registo.
 
+Em vez de introduzir manualmente o código, recomendamos que o copie/cole, uma vez que alguns caracteres podem ser facilmente confundidos.
 
-## Etapa 3: Recuperação do código de transferência
-Após ter desativado o domínio, o botão AUTH/INFO aparecerá.
+### Etapa 3: iniciar a transferência para o novo agente de registo
 
-![](images/img_3696.jpg){.thumbnail}
-É necessário clicar em AUTH/INFO. Uma janela será apresentada com o código de transferência em baixo.
+Depois de realizar os passos anteriores, pode lançar o processo de transferência, geralmente através de uma encomenda. A transferência pode demorar até 10 dias. 
 
-![](images/img_3697.jpg){.thumbnail}
- O domínio ficará desprotegido durante 7 dias. Após este prazo o domínio voltará a ser bloqueado.
+Para mais informações contacte o seu novo agente de registo.
 
+## Saiba mais
 
-## Etapa 4: Transmita as informações ao novo registrar.
-As etapas estão agora terminadas do lado da OVH. Dispõe de todas as informações necessárias para transferir o seu nome de domínio.
+[Transferência de domínio .co.uk de saída](../transferencia_de_saida_de_um_dominio_couk/)
 
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
