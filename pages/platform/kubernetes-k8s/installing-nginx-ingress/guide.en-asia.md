@@ -43,76 +43,39 @@ You also need to have [Helm](https://docs.helm.sh/){.external} installer on your
 
 ## Installing the Nginx Ingress Controller Helm chart
 
-For this tutorial we are using the [Nginx Ingress Controller  Helm chart](https://github.com/helm/charts/tree/master/stable/nginx-ingress){.external} found on Helm repositories.
+For this tutorial we are using the [Nginx Ingress Controller  Helm chart](https://github.com/kubernetes/ingress-nginx/tree/master/charts/ingress-nginx){.external} found on its own Helm repository.
 
 The chart is fully configurable, but here we are using the default configuration.
 
 
 ```
-helm install stable/nginx-ingress
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm repo update
+helm install ngingress ingress-nginx/ingress-nginx
 ```
 
 The installing processus will begin:
 
-<pre class="console"><code>$ helm install  stable/nginx-ingress
-NAME:   winning-lizard
-LAST DEPLOYED: Thu Feb 14 23:01:46 2019
+<pre class="console"><code>$ helm install ngingress ingress-nginx/ingress-nginx
+NAME: ngingress
+LAST DEPLOYED: Thu Jan 28 11:45:21 2021
 NAMESPACE: default
-STATUS: DEPLOYED
-
-RESOURCES:
-==> v1beta1/RoleBinding
-NAME                          AGE
-winning-lizard-nginx-ingress  1s
-
-==> v1beta1/ClusterRole
-NAME                          AGE
-winning-lizard-nginx-ingress  1s
-
-==> v1beta1/ClusterRoleBinding
-NAME                          AGE
-winning-lizard-nginx-ingress  1s
-
-==> v1beta1/Role;
-NAME                          AGE
-winning-lizard-nginx-ingress  1s
-
-==> v1beta1/Deployment
-NAME                                          DESIRED  CURRENT  UP-TO-DATE  AVAILABLE  AGE
-winning-lizard-nginx-ingress-controller       1        1        1           0          1s
-winning-lizard-nginx-ingress-default-backend  1        1        1           0          1s
-
-==> v1/Pod(related)
-NAME                                                          READY  STATUS             RESTARTS  AGE
-winning-lizard-nginx-ingress-controller-95858789c-57dgj       0/1    ContainerCreating  0         1s
-winning-lizard-nginx-ingress-default-backend-5964fdb88-djcvw  0/1    ContainerCreating  0         1s
-
-==> v1/ConfigMap
-NAME                                     DATA  AGE
-winning-lizard-nginx-ingress-controller  1     1s
-
-==> v1/ServiceAccount
-NAME                          SECRETS  AGE
-winning-lizard-nginx-ingress  1        1s
-
-==> v1/Service
-NAME                                          TYPE          CLUSTER-IP    EXTERNAL-IP  PORT(S)                     AGE
-winning-lizard-nginx-ingress-controller       LoadBalancer  10.3.106.37   &lt;pending>    80:30782/TCP,443:30619/TCP  1s
-winning-lizard-nginx-ingress-default-backend  ClusterIP     10.3.105.236  &lt;none>       80/TCP                      1s
-</code></pre>
-
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
 
 At the end of the install, as usual with most helm charts, you get the configuration information and some tips to
-test your `nginx-ingress`:
+test your `nginx-ingress` but the YAML provided is based on old API version ()extensions/v1beta1), the newest version is :
 
 <pre class="console"><code>NOTES:
 The nginx-ingress controller has been installed.
 It may take a few minutes for the LoadBalancer IP to be available.
-You can watch the status by running 'kubectl --namespace default get services -o wide -w winning-lizard-nginx-ingress-controller'
+You can watch the status by running 'kubectl --namespace default get services -o wide -w ngingress-ingress-nginx-controller'
 
 An example Ingress that makes use of the controller:
 
-  apiVersion: extensions/v1beta1
+  apiVersion: networking.k8s.io/v1
   kind: Ingress
   metadata:
     annotations:
@@ -125,8 +88,9 @@ An example Ingress that makes use of the controller:
         http:
           paths:
             - backend:
-                serviceName: exampleService
-                servicePort: 80
+                service:
+                  name: exampleService
+                  port: 80
               path: /
     # This section is only required if TLS is to be enabled for the Ingress
     tls:
@@ -163,7 +127,7 @@ In order to test your `nginx-ingress`, I suggest you to [install a Wordpress](..
 
 
 ```
-apiVersion: extensions/v1beta1
+apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
@@ -176,8 +140,9 @@ spec:
       http:
         paths:
           - backend:
-              serviceName: [YOUR_WORDPRESS_SERVICE_NAME]
-              servicePort: 80
+              service:
+                name: [YOUR_WORDPRESS_SERVICE_NAME]
+                port: 80
             path: /
 ```
 
