@@ -1,7 +1,7 @@
 ---
-title: Installer Cameleon sur votre hébergement web POWER
-slug: nodejs-installer-cameleon
-excerpt: Découvrez comment installer Cameleon sur votre hébergement web POWER
+title: Installer Camaleon sur votre hébergement web POWER
+slug: nodejs-installer-camaleon
+excerpt: Découvrez comment installer Camaleon sur votre hébergement web POWER
 section: Ruby
 order: 1
 ---
@@ -10,7 +10,9 @@ order: 1
 
 ## Objectif
 
-## Prérequis
+Vous souhaitez une alternative aux CMS (**C**ontent **M**anagement **S**ystem) populaires tout en utilisant le langage Ruby. Camaleon est un CMS flexible vous permetant de créer une structure de contenu personalisée sans avoir à codé.
+
+**Découvrez comment installer Camaleon sur votre hébergement web POWER**
 
 ## Prérequis
 - Disposer d'une de l'offre d'hébergement web POWER [Ruby](https://labs.ovh.com/managed-ruby).
@@ -24,6 +26,8 @@ Moteur : ruby 2.6 <br>
 Point d'entrée : config.ru<br>
 Dossier racine : www<br>
 
+Vérfiez l'installation de Ruby
+
 ```sh
 ~ $ ruby -v
 ruby 2.6.6p146 (2020-03-31 revision 67876) [x86_64-linux]
@@ -31,7 +35,7 @@ ruby 2.6.6p146 (2020-03-31 revision 67876) [x86_64-linux]
 Rails 6.0.3.3
 ```
 
-
+Supprimez le dossier racine pour l'initialiser avec Rails. N'oubliez pas de d'exporter votre `gempath`ou l'installation du bundle va échouer.
 
 ```sh
 ~ $ rm -rf www
@@ -67,7 +71,7 @@ Done in 7.14s.
 Webpacker successfully installed 
 ```
 
-
+Préparez votre `Gemfile`
 
 ```sh
 ~/www $ echo "gem 'camaleon_cms', '>= 2.4.5'" >> Gemfile
@@ -75,7 +79,7 @@ Webpacker successfully installed
 ~/www $ echo "gem 'execjs', '>= 2.7.0'"  >> Gemfile
 ```
 
-
+Installez vos `Gems`
 
 ```sh
 ~/www $ bundle install
@@ -91,13 +95,13 @@ Bundle complete! 20 Gemfile dependencies, 103 gems now installed.
 Use bundle info [gemname] to see where a bundled gem is installed.
 ```
 
-
+Utilisez votre moteur Node.js pour Camaleon Javascript
 
 ```sh
 ~/www $ sed -i 's@\["nodejs", "node"\],@["/usr/local/nodejs14/bin/node"],@' ${GEM_HOME}/gems/execjs-2.7.0/lib/execjs/runtimes.rb
 ```
 
-
+Lancez Camaleon avec votre base de données sqlite. Avant, il y a 4 commandes différentes à lancer.
 
 ```sh
 ~/www $ RAILS_ENV=production rails generate camaleon_cms:install
@@ -145,9 +149,11 @@ Copied migration 20190625130648_adjust_field_length.camaleon_cms_engine.rb from 
 ~/www $ RAILS_ENV=production rake assets:precompile
 ```
 
+Redémarrez votre instance pour visualiser la modification 
 
 ```sh
-
+~ $ cd www
+~/www$ touch tmp/restart.txt
 ```
 
 ## Aller plus loin
