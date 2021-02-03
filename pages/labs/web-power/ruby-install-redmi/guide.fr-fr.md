@@ -24,7 +24,7 @@ Point d'entrée : config.ru<br>
 Dossier racine : www<br>
 
 
-Vérfiez l'installation de Ruby.
+Vérifiez l'installation de Ruby.
 
 ```sh
 ~ $ ruby -v
@@ -41,7 +41,7 @@ Décompressez le fichier `redmine` et renommez-le `www`.
 ~ $ mv redmine-4.1.1 www
 ```
 
-Lancez le bundle avec une base de donnée sqli. N'oubliez pas de d'exporter votre `gempath`ou l'installation du bundle va échouer.
+Lancez le bundle avec une base de donnée sqli. N'oubliez pas d'exporter votre `gempath`ou l'installation du bundle va échouer.
 
 ```sh
 ~/www $ export GEM_HOME=$(gem env gempath | cut -d ':' -f1)
