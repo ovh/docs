@@ -48,13 +48,19 @@ Supossons que vous avez la configuration normal pour un hébergement web POWER :
 - Dossier racine : www 
 
 
+Supossons que vous avez la configuration normal pour un hébergement web POWER :
+
+- Moteur : nodejs 14 
+- Point d'entrée : index.js 
+- Dossier racine : www 
+
+
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée e [Retrieve active configuration](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
 
 
-
-[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) to your POWER web hosting, and retrieve etherpad sources into the `www` folder:
+[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh)  à votre hébergement web POWER et récupérez les sources d'Etherpad dans le répertoire `www`:
 
 ```sh
 cd www
@@ -111,6 +117,8 @@ Clearing minified cache...
 ~/www $ mkdir -p tmp
 ~/www $ touch tmp/restart.txt</code></pre>
 
-## Going Further
+## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+
+**Pour discuter avec les autres utilisateurs du lab et avec l'équipe POWER Web Hosting, venez sur [notre room Gitter](https://gitter.im/ovh/power-web-hosting)**

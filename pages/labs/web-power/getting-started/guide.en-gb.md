@@ -288,3 +288,5 @@ In your document root you should `touch` the file `tmp/restart.txt`
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
 
+
+**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab**
