@@ -46,6 +46,11 @@ Supossons que vous avez la configuration normal pour un hébergement web POWER :
 - Moteur : ruby 2.6 
 - Point d'entrée : config.ru 
 - Dossier racine : www 
+- Environment: development 
+
+> [!alert]
+>
+> Attention, Rails depends on environment (`RAILS_ENV`)
 
 
 > [!primary]
@@ -61,6 +66,7 @@ Supprimez le dossier racine pour l'initialiser avec Rails. N'oubliez pas d'expor
 rm -rf www
 gem env gempath
 export GEM_HOME=$(gem env gempath | cut -d ':' -f1)
+export RAILS_ENV=${OVH_ENVIRONMENT}
 rails new www
 cd www/
 rails  webpacker:install
@@ -89,17 +95,36 @@ sed -i 's@\["nodejs", "node"\],@["/usr/local/nodejs14/bin/node"],@' ${GEM_HOME}/
 Lancez Camaleon avec votre base de données `sqlite`. Attention, il y a 4 commandes différentes à lancer :
 
 ```sh
-RAILS_ENV=production rails generate camaleon_cms:install
-RAILS_ENV=production rake camaleon_cms:generate_migrations
-RAILS_ENV=production rake db:migrate
-RAILS_ENV=production rake assets:precompile
+rails generate camaleon_cms:install
+rake camaleon_cms:generate_migrations
+rake db:migrate
+rake assets:precompile
 ```
 
+
+Déclarez votre nom de domaine sur liste blanche dans `www/config/environments/development.rb` :
+
+```ruby
+Rails.application.configure do
+  # Whitelist one hostname
+  config.hosts << "your-domain.ovh"
+```
+
+Et désactivez la vérification `check_yarn_integrity` dans la partie `development` de `www/config/webpacker.yml` :
+
+```yaml
+development:
+  <<: *default
+  compile: true
+
+  # Verifies that correct packages and versions are installed by inspecting package.json, yarn.lock, and node_modules
+  check_yarn_integrity: false
+```
 
 Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-POWER/#restart), votre CMS sur Camaleon sera en ligne.
 
 
-![Camaleon](images/nodejs-install-camaleon-01.png){.thumbnail}
+![Camaleon](images/ruby-install-camaleon-01.png){.thumbnail}
 
 
 Sortie de la console:
@@ -108,6 +133,10 @@ Sortie de la console:
 
 ~ $ gem env gempath
 /homez.41/powerlp/.gem/ruby/2.6.0:/usr/local/ruby2.6/lib/ruby/gems/2.6.0
+
+~ $ export GEM_HOME=$(gem env gempath | cut -d ':' -f1)
+
+~ $ export RAILS_ENV=${OVH_ENVIRONMENT}
 
 ~ $ rails new www
       create
@@ -178,7 +207,7 @@ Use bundle info [gemname] to see where a bundled gem is installed.
 
 ~/www $ sed -i 's@\["nodejs", "node"\],@["/usr/local/nodejs14/bin/node"],@' ${GEM_HOME}/gems/execjs-2.7.0/lib/execjs/runtimes.rb
 
- ~/www $ RAILS_ENV=production rails generate camaleon_cms:install
+ ~/www $ rails generate camaleon_cms:install
 Running via Spring preloader in process 3807
 WARNING: Spring is running in production. To fix this make sure the spring gem is only present in `development` and `test` groups in your Gemfile and make sure you always use `bundle install --without development test` in production
       create  config/system.json
@@ -192,7 +221,7 @@ WARNING: Spring is running in production. To fix this make sure the spring gem i
       append  config/initializers/assets.rb
       append  Gemfile
 
- ~/www $ RAILS_ENV=production rake camaleon_cms:generate_migrations
+ ~/www $ rake camaleon_cms:generate_migrations
 Copied migration 20210203210456_create_active_storage_tables.active_storage.rb from active_storage
 Copied migration 20210203210457_create_action_mailbox_tables.action_mailbox.rb from action_mailbox
 Copied migration 20210203210458_create_action_text_tables.action_text.rb from action_text
@@ -201,7 +230,7 @@ Copied migration 20210203210459_create_db_structure.cama_contact_form_engine.rb 
 Copied migration 20210203210469_create_media.camaleon_cms_engine.rb from camaleon_cms_engine
 Copied migration 20210203210470_adjust_field_length.camaleon_cms_engine.rb from camaleon_cms_engine
 
- ~/www $ RAILS_ENV=production rake db:migrate
+ ~/www $ rake db:migrate
 == 20210203210456 CreateActiveStorageTables: migrating ========================
 -- create_table(:active_storage_blobs, {})
    -> 0.0020s
@@ -212,7 +241,7 @@ Copied migration 20210203210470_adjust_field_length.camaleon_cms_engine.rb from 
    -> 0.0141s
 == 20210203210470 AdjustFieldLength: migrated (0.0479s) =======================
 
-~/www $ RAILS_ENV=production rake assets:precompile
+~/www $ rake assets:precompile
 yarn install v1.22.10
 [1/4] Resolving packages...
 success Already up-to-date.
