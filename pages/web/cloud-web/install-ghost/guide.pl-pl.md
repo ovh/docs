@@ -172,7 +172,7 @@ demonon@cloudweb-ssh:~ $ cd ghost/
 demonon@cloudweb-ssh:~/ghost $
 ```
 
-Pobierz [najnowszą wersję silnika Ghost](https://ghost.org/fr/developers/){.external} i rozpakuj jego zawartość.
+Pobierz [najnowszą wersję silnika Ghost](https://ghost.org/){.external} i rozpakuj jego zawartość.
 
 ```sh
 demonon@cloudweb-ssh:~/ghost $ ls

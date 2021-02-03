@@ -74,4 +74,4 @@ In the `General information` tab, in the `Plan` box, click on the `...`{.action}
 
 ## Go further
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our community of users on <https://community.ovh.com/en/>.

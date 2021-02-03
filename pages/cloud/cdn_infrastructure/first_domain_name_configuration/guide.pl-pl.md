@@ -106,7 +106,7 @@ Przypisanie określonej domeny do plików, które chcesz umieścić w pamięci c
 
 Jeśli chcesz skonfigurować nową subdomenę, aby użyć sieci CDN OVH, prawdopodobnie powinieneś także zmodyfikować konfigurację Twojej strony WWW i Twojej usługi WWW. 
 
-Upewnij się przedtem, że Twój serwis WWW działania poprawnie korzystając z tej subdomeny. W tym celu skonfiguruj [*vhost*](https://pl.wikipedia.org/wiki/Apache_HTTP_Server#Virtual_Hosts){.external} dla tej domeny - z własnym folderem docelowym lub jako alias innej domeny.
+Upewnij się przedtem, że Twój serwis WWW działania poprawnie korzystając z tej subdomeny. W tym celu skonfiguruj *vhost* dla tej domeny - z własnym folderem docelowym lub jako alias innej domeny.
 
 Jeśli domena odpowiada poprawnie na poziomie Twojej usługi WWW, zmodyfikuj kod HTML, aby zmienić źródła plików, które muszą przechodzić przez CDN i upewnij się, czy są one poprawnie wywoływane za pomocą Twojej subdomenie.
 

@@ -106,7 +106,7 @@ Además, atribuir un dominio específico a los archivos que quiera almacenar en 
 
 Si quiere configurar un nuevo subdominio para utilizar la CDN, seguramente deberá modificar determinados parámetros en el sitio web y el servicio web.
 
-En primer lugar, asegúrese de que su servicio web responde correctamente al subdominio. Para ello, configure un [vhost](https://es.wikipedia.org/wiki/Alojamiento_compartido){.external} para dicho dominio, ya sea con su propia carpeta de destino o como alias de otro dominio.
+En primer lugar, asegúrese de que su servicio web responde correctamente al subdominio. Para ello, configure un *vhost* para dicho dominio, ya sea con su propia carpeta de destino o como alias de otro dominio.
 
 Si el dominio responde correctamente en su servicio web, solo tendrá que editar el código HTML para modificar el origen de los archivos que deben pasar por la CDN y, por último, asegurarse de que reciben las peticiones enviadas a través del subdominio.
 

@@ -66,7 +66,7 @@ Sur cette nouvelle interface, renseignez dans le champ :
 
 "Adresse de messagerie" : L'adresse e-mail mutualisé OVH en entier.
 
-"Mot de passe" : Le mot de passe défini dans [l'espace client](https://www.ovh.com/managerv3){.external} pour ce compte e-mail.
+"Mot de passe" : Le mot de passe défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager){.external} pour ce compte e-mail.
 
 Cliquez sur l'icône "Connecter" pour continuer.
 
@@ -81,7 +81,7 @@ Dans cette interface, renseignez dans le champ :
 
 "Nom d'utilisateur" : Vous devez renseigner votre adresse e-mail entière.
 
-"Mot de passe" : Le mot de passe défini dans [l'espace client](https://www.ovh.com/managerv3){.external} pour ce compte e-mail.
+"Mot de passe" : Le mot de passe défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager){.external} pour ce compte e-mail.
 
 "Serveur de messagerie entrant (IMAP)" : L'adresse du serveur est donc  **SSL0.OVH.NET** Le  **"Port"**  est   **993** .
 

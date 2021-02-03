@@ -18,8 +18,10 @@ Dann können Sie direkt mit dem Abschnitt "Import" fortfahren.
 - Sie haben Ihre vmdk Datei abgerufen:
 
 Zuerst muss Ihre vmdk in eine vhdx Datei umgewandelt werden, damit sie mit HyperV kompatibel ist. Für die Konvertierung können Sie eines der folgenden Werkzeuge verwenden:
-[Microsoft Virtual Machine Converter Solution Accelerator](http://www.microsoft.com/en-us/download/details.aspx?id=34591)
-[2Tware Convert VHD](http://www.2tware.com/product/6/2twareconvertvhdfree)
+
+- Microsoft Virtual Machine Converter Solution Accelerator
+- 2Tware Convert VHD
+
 OVH nennt diese Werkzeuge lediglich zu informativen Zwecken, Sie können auch andere geeignete Werkzeuge verwenden.
 OVH kann keinen Support für diese von Drittanbietern entwickelten Werkzeuge bieten.
 

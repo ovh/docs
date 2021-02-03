@@ -109,7 +109,7 @@ By attributing a specific domain name to the files that you would like to cache,
 
 If you would like to configure a new subdomain to use our CDN, you will probably need to modify some of your website’s configurations.
 
-Before you proceed, check that your web service responds correctly to the subdomain. To do this, you will need to configure a [*vhost*](https://en.wikipedia.org/wiki/Virtual_hosting){.external} for this domain, either with its own destination folder, or under the alias of another domain name.
+Before you proceed, check that your web service responds correctly to the subdomain. To do this, you will need to configure a *vhost* for this domain, either with its own destination folder, or under the alias of another domain name.
 
 If the domain responds correctly to your web service, you simply need to modify your HTML code so that it changes the sources of files that pass through the CDN, and ensure that they are named correctly on your subdomain.
 

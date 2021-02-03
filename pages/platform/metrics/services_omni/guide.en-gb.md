@@ -131,7 +131,7 @@ steps:
 
 ### Drone definition
 
-A drone is a script run with custom parameters, which returns incidents from a metrics subset. You don't necssarily have to write drones, as basics ones are available on the [Registry](https://studio.metrics.ovh.net/omni/registry){.external}. **Life** drones, for example, will checks that a metric is recently pushed, and **range** drones will check that your metric's value is within a defined range.
+A drone is a script run with custom parameters, which returns incidents from a metrics subset. **Life** drones, for example, will checks that a metric is recently pushed, and **range** drones will check that your metric's value is within a defined range.
 
 If you wish to write your own, the script must be a WarpScript™, which takes and returns a specific structure.
 

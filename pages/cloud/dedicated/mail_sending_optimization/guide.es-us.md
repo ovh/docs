@@ -38,7 +38,7 @@ Si usted está usando una infraestructura dedicada (ejem. Un servidor dedicado, 
 > - `?`: neutro
 >
 
-Para más información sobre el registro SPF, vaya a la siguiente página: <http://www.open-spf.org/SPF_Record_Syntax.>
+Para más información sobre el registro SPF, vaya a la siguiente página: <http://www.open-spf.org/>
 
 Usted puede encontrar más información sobre como configurar el registro SPF para un dominio, o especificando directamente la dirección IPV6. Puede encontrar como hacerlo en la siguiente guía: [Añadir un registro SPF a la configuración del dominio](../../domains/web_hosting_el_registro_spf/)
 

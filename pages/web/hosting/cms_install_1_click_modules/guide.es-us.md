@@ -143,6 +143,4 @@ Para más información sobre las distintas funcionalidades de su nuevo sitio web
 
 Descubra nuestras [opciones de SQL Privado](https://www.ovh.com/world/es/hosting/opciones-sql.xml){.external}.
 
-Descubra nuestras [bases de datos Cloud Databases](https://www.ovh.com/world/es/cloud/cloud-databases/){.external}.
-
 Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

@@ -21,9 +21,9 @@ In this guide, you will learn how to use the [telegraf tool](https://www.influxd
 
 Some known tools have the possibility to collect Windows data, and then send them to a Backend. We will see how the [telegraf tool](https://www.influxdata.com/time-series-platform/telegraf/) and the [Prometheus ecosystem](https://prometheus.io/) can be used to collect and store data on the Metrics Data Platform.
 
-### telegraf
+### Telegraf
 
-[Telegraf runs on Windows](https://github.com/influxdata/docs.influxdata.com/blob/master/content/telegraf/v1.7/administration/windows_service.md){.external}. Following this documentation and setting a configuration as described in our [telegraf user documentation](../source-telegraf/){.ref} allow a user to push its own server and application data to Metrics.
+Telegraf runs on Windows. Following this documentation and setting a configuration as described in our [telegraf user documentation](../source-telegraf/) allow a user to push its own server and application data to Metrics.
 
 First go to [download telegraf page](https://portal.influxdata.com/downloads/){.external} and select the Windows binaries.
 
@@ -43,7 +43,7 @@ Once telegraf is unzipped, you shoud have a .exe file and a .conf one. Edit the 
 
 ```
 
-The telegraf basic configuration produced ~80 metrics for a single Windows 2016 server.
+The Telegraf basic configuration produced ~80 metrics for a single Windows 2016 server.
 
 If you want to record the total Metrics on the whole field, you can set:
 
@@ -75,13 +75,13 @@ As by default `WMI_EXPORTER` listens to `0.0.0.0` install it with `LISTEN_ADDR` 
 msiexec /i <path-to-msi-file> LISTEN_ADDR=127.0.0.1  # update the IP address used to bind WMI Exporter
 ```
 
-Once `WMI_EXPORTER` is installed all the server metrics are available at `http://127.0.0.1:9182/metrics`.
+Once `WMI_EXPORTER` is installed, all the server metrics are available at `http://127.0.0.1:9182/metrics`.
 
 If you want to access the `WMI_EXPORTER` metrics from internet you can expose them using `0.0.0.0` IP binded address but ensure that you apply **sufficient security**.
 
-Then [download Telegraf on Windows](https://portal.influxdata.com/downloads/), and follow previous installation steps.
+Then [download telegraf on Windows](https://portal.influxdata.com/downloads/), and follow previous installation steps.
 
-Configure Telegraf as declared previously and deactivate the `inputs.win_perf_counter plugin` if you do not want to record them by removing configuration lines or simply add a namedrop option to remove specific metrics:
+Configure Telegraf as declared previously and deactivate the `inputs.win_perf_counter plugin` if you do not want to record them (remove configuration lines or simply add a namedrop option to remove all windows metrics):
 
 ```yaml
 [[inputs.win_perf_counters]] # Add a the start of the telegraf win_perf_counters input plugin:
@@ -99,17 +99,17 @@ Then configure Telegraf to use the prometheus plugin:
 
 ```
 
-> The Telegraf prometheus plugin doesn't work on Telegraf test mode. Restart Telegraf Windows service and you should see your data on your Metrics account.
+> The Telegraf prometheus plugin doesn't work on telegraf test mode. Restart Telegraf windows service and you should see your data on your Metrics account.
 
-This telegraf configuration produced ~140 metrics for a single Windows 2016 server. Check the [WMI exporter collector](https://github.com/martinlindhe/wmi_exporter/blob/master/docs/README.md) documentation to select and collect the right metrics.
+This Telegraf configuration produced ~140 metrics for a single Windows 2016 server. Check the [WMI exporter collector](https://github.com/martinlindhe/wmi_exporter/blob/master/docs/README.md) documentation to select and collect the right metrics.
 
-In the same way, you can collect any kind of Metrics the Prometheus ecosystem exposed on a route using telegraf.
+In the same way, you can collect any kind of Metrics the Prometheus ecosystem exposed on a route using Telegraf.
 
 Happy collect on Windows!
 
 ## Go further
 
-- Documentation: [Guides](../product.fr-fr.md){.ref}
+- Documentation: [Guides](../product.en-gb.md){.ref}
 - Vizualize your data: [https://grafana.metrics.ovh.net/login](https://grafana.metrics.ovh.net/login){.external}
 - Community hub: [https://community.ovh.com](https://community.ovh.com/c/platform/data-platforms){.external}
 - Create an account: [Try it free!](https://www.ovh.com/fr/order/express/#/new/express/resume?products=~%28~%28planCode~%27metrics-free-trial~configuration~%28~%28label~%27region~values~%28~%27gra1%29%29%29~option~%28~%29~quantity~1~productId~%27metrics%29%29&paymentMeanRequired=0){.external}

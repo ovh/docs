@@ -115,7 +115,7 @@ Il faut aussi désinstaller les plugins non utilisés, la désactivation n'est p
 ## Cas 2 &#58; le piratage est plus ancien, la restauration non fonctionnelle
 
 ### Vous ne pouvez pas vous connecter a votre panneau administrateur WordPress
-Il faut dans ce cas modifier votre [mot de passe administrateur](https://codex.wordpress.org/fr:R%C3%A9initialisation_de_votre_mot_de_passe){.external} en suivant le guide officiel de Wordpress.
+Il faut dans ce cas modifier votre [mot de passe administrateur](https://codex.wordpress.org/){.external} en suivant le guide officiel de Wordpress.
 
 Si vous trouvez cela trop compliqué, il est possible de mettre à jour votre e-mail depuis [phpMyAdmin](https://phpmyadmin.ovh.net){.external} dans la table user et revenir à la page de connexion, cliquez sur Mot de passe oublié, et d'attendre que l'e-mail vous soit envoyé.
 

@@ -87,7 +87,7 @@ Denken Sie auch daran, nciht (mehr) verwendete Plugins zu deinstallieren. Bei ei
 Wenn der Hack länger zurückliegt und eine Wiederherstellung nicht möglich ist, müssen Sie folgendermaßen vorgehen:
 
 ## Sie können sich nicht auf Ihrem Wordpress Admin-Panel anmelden
-In diesem Fall müssen Sie Ihr [Administrator-Passwort](https://codex.wordpress.org/Resetting_Your_Password) zurücksetzen. Wie das geht, erfahren Sie im offiziellen WordPress Guide.
+In diesem Fall müssen Sie Ihr [Administrator-Passwort](https://codex.wordpress.org/) zurücksetzen. Wie das geht, erfahren Sie im offiziellen WordPress Guide.
 
 Wenn Ihnen das zu kompliziert ist, können Sie auch über [phpMyAdmin](https://phpmyadmin.ovh.net) Ihre E-Mail-Adresse in der Tabelle User aktualisieren. Wenn Sie dann auf die Login-Seite gehen und auf Passwort vergessen klicken, wird Ihnen eine entsprechende E-Mail zugesandt.
 

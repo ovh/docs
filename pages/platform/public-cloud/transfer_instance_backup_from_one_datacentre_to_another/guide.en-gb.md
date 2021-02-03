@@ -11,7 +11,7 @@ order: 7
 
 ## Objective
 
-A situation may arise where you need to move your [Public Cloud Instance](https://www.ovh.co.uk/public-cloud/instances/){.external} from one datacentre to another, either because you would prefer to move to a newly available datacentre or because you want to migrate from OVHcloud Labs to Public Cloud. 
+A situation may arise where you need to move your [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external} from one datacentre to another, either because you would prefer to move to a newly available datacentre or because you want to migrate from OVHcloud Labs to Public Cloud. 
 
 **This guide will show you how to transfer an Instance backup from one datacentre to another while preserving the configuration and state of the Instance.**
 
@@ -23,7 +23,7 @@ Before following these steps, it's recommended that you first complete this guid
 
 You will also need the following:
 
-* a [Public Cloud Instance](https://www.ovh.co.uk/public-cloud/instances/){.external} in your OVHcloud account
+* a [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external} in your OVHcloud account
 * administrative (root) access to your datacentre via SSH
 
 > [!primary]
@@ -142,7 +142,7 @@ To create an Instance from your backup, use the backup ID as the image with this
 #root@server:~$ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Server1_from_snap
 ```
 
+
 ## Go further
 
-* Join our community of users on <https://community.ovh.com/en/>.
-* [Transfer a volume backup from one datacentre to another](../transfer_volume_backup_from_one_datacentre_to_another/){.external}
+Join our community of users on <https://community.ovh.com/en/>.

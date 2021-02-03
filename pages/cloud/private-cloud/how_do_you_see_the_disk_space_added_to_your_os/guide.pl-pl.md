@@ -20,7 +20,6 @@ W przypadku dystrybucji Linux należy skorzystać z narzędzia do partycjonowani
 - [GParted LiveCD](http://gparted.sourceforge.net/livecd.php)
 - [Partition Logic](http://partitionlogic.org.uk)
 - [Paragon Partition Manager](http://www.partition-manager.com)
-- [Ranish Partition Manager](http://www.ranish.com/part)
 - [System Rescue CD](http://www.sysresccd.org/Main_Page)
 
 

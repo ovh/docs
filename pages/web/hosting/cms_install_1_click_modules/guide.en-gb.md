@@ -146,6 +146,6 @@ Below, we've included some links from these CMS publishers, to help you get star
 
 See our [Private SQL services](https://www.ovh.co.uk/web-hosting/sql-options.xml){.external}
 
-See our [CloudDB solutions](https://www.ovh.co.uk/cloud/cloud-databases/){.external}
+See our [CloudDB solutions](https://www.ovh.co.uk/cloud-databases/){.external}
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
+Join our community of users on <https://community.ovh.com/en/>.

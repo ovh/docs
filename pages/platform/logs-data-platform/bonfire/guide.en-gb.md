@@ -55,7 +55,7 @@ Enter stream number: [0]: 0
 
 ### Password management
 
-Typing your password can be avoided by using the `-k` switch that will store your password using the python keyring, this will store your password in your Desktop keyring system: [https://bitbucket.org/kang/python-keyring-lib](https://bitbucket.org/kang/python-keyring-lib){.external}
+Typing your password can be avoided by using the `-k` switch that will store your password using the python keyring, this will store your password in your Desktop keyring system.
 
 
 ### Config file

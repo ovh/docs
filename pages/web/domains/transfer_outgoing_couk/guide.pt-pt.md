@@ -28,7 +28,7 @@ Para poder efetuar a transferência de um domínio .co.uk, ou simular, para outr
 
 
 ## Etapa 1: Verificação das informações do domínio
-Poderá encontrar as informações a partir do seu Espaço Cliente disponível [aqui](https://www.ovh.com/manager/web/login/).
+Poderá encontrar as informações a partir do seu Espaço Cliente disponível [aqui](https://www.ovh.com/auth/?action=gotomanager).
 É necessário ligar-se com o contacto administrador.
 
 

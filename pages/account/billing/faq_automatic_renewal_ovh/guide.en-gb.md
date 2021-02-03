@@ -92,6 +92,4 @@ Follow the payment procedure described in the email, or login to your customer c
 
 You must pay any outstanding invoice within 7 days from the date of the payment incident. Please be aware that failing to settle the payment by the end of those 7 days will result in the suspension of your services and we will launch recovery proceedings against you. Moreover, we reserve the right to suspend all your services if you don’t settle your situation.
 
-- Your question is not listed in the FAQ?
-
-Contact us by email <[https://www.ovh.com/fr/support/nous-contacter/](https://www.ovh.com/fr/support/nous-contacter/){.external}>`__,  or by telephone at 0033 972 10 10 07 (local call rate, Monday to Friday, from 8:00 am to 8:00 pm and Saturday from 09:00 am to 5:00 pm
+Join our community of users on <https://community.ovh.com/en/>.

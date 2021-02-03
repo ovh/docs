@@ -86,7 +86,7 @@ Após ter efetuado um restauro deve verificar se existe alguma atualizações do
 Se o acto de pirataria é mais antigo e o restauro não resolve o problema veja como poderá voltar a recolocar o seu Wordpress a funcionar:
 
 ## Não se consegue ligar ao painel de administrador WordPress
-Deve, nesse caso, modificar a sua [password do administrador](https://codex.wordpress.org/Resetting_Your_Password) ao seguir o guia oficial do Wordpress.
+Deve, nesse caso, modificar a sua [password do administrador](https://codex.wordpress.org/) ao seguir o guia oficial do Wordpress.
 
 Se verifica que é complicado, é igualmente necessário atualizar o seu endereço de e-mail a partir do [phpMyAdmin](https://phpmyadmin.ovh.net) na tabela user e ao voltar à página de ligação clique em Perdeu a password?, e aguarde por um e-mail.
 

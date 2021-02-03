@@ -13,8 +13,8 @@ El nivel de RAID predeterminado para las instalaciones del servidor OVHcloud es 
 
 **Esta guía le ayudará a configurar los discos de su servidor con RAID 0, lo que le permitirá usar el espacio útil de todos sus discos.**
 
->[!warning]
->
+> [!warning]
+> 
 > Tenga en cuenta: RAID 0 no proporciona TOLERANCIA SIN FALLOS ni REDUNDANCIA DE DATOS, lo que hace muy probable la pérdida de datos en caso de fallo del disco.
 >
 

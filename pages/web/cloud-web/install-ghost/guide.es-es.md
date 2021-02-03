@@ -171,7 +171,7 @@ demonon@cloudweb-ssh:~ $ cd ghost/
 demonon@cloudweb-ssh:~/ghost $
 ```
 
-Descargue la [última versión de Ghost](https://ghost.org/docs/){.external} y descomprima el contenido.
+Descargue la [última versión de Ghost](https://ghost.org/){.external} y descomprima el contenido.
 
 ```sh
 demonon@cloudweb-ssh:~/ghost $ ls

@@ -15,7 +15,7 @@ The Netboot feature is a service offered for free by OVH, it allows you to start
 
 ## Requirements
 
-- a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
+- a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}
 - access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions
