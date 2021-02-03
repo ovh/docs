@@ -1,6 +1,6 @@
 ---
 title: Install Django on your POWER web hosting plan
-slug: python-installer-django
+slug: python-install-django
 excerpt: Find out how to install Django on your POWER web hosting plan
 section: Python
 order: 1
