@@ -1,11 +1,10 @@
 ---
-title: Installer Django sur votre hébergement web POWER
-slug: nodejs-installer-django
-excerpt: Découvrez comment installer Django sur votre hébergement web POWER
+title: Install Django on your POWER web hosting plan
+slug: python-installer-django
+excerpt: Find out how to install Django on your POWER web hosting plan
 section: Python
 order: 1
 ---
-
 
 <style>
  pre {
@@ -27,42 +26,44 @@ order: 1
  }
 </style>
 
-**Dernière mise à jour le 03/02/2021**
+**Last updated 3<sup>rd</sup> February 2021**
 
-## Objectif
+## Objective
 
+You've subscribed to a Web POWER web hosting plan to deploy **Python** applications, and you want to deploy [Django](https://www.djangoproject.com/) on it.
 
-Vous avez souscrit à un hébergement web POWER Python et vous voulez y deployer [Django](https://www.djangoproject.com/). Ce guide vous explique comment.
-
-**Découvrez comment installer Django sur votre hébergement web POWER**
-
-## Prérequis
-
-- Disposer d'une de l'offre d'hébergement web POWER [Python](https://labs.ovh.com/managed-python).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
-
-Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous conseillons de consulter notre guide [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) avant de poursuivre.
-
-## En pratique
-
-### Installer et mettre en ligne une première page
+This guide will explain how to do it.
 
 
-Supossons que vous avez la configuration normal pour un hébergement web POWER :
+**Find out how to install Django on your POWER web hosting plan.**
 
-- Moteur : Python 3.8 
-- Point d'entrée : app.py 
-- Dossier racine : www 
 
+## Requirements
+
+- A [Node.js](https://labs.ovh.com/managed-nodejs) POWER web hosting plan
+- Access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+
+If you have just started to use your Web POWER web hosting plan, we suggest you to have a look to our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.
+
+## Instructions
+
+
+Let's suppose you have the default configuration for Python hosting:
+
+- Runtime : Python 3.8   
+- Entrypoint : app.py 
+- DocumentRoot : www
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint
 
 
-Pour utiliser les frameworks [Python WSGI](https://www.fullstackpython.com/wsgi-servers.html), le plus simple d'utiliser [virtualenv](https://pypi.org/project/virtualenv/). 
+To use [Python WSGI](https://www.fullstackpython.com/wsgi-servers.html) frameworks, using [virtualenv](https://pypi.org/project/virtualenv/) is the simplest choice
+. 
 
-[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER et activez `virtualenv`: 
+[Access via SSH](../getting-started-with-power-web-hosting/#ssh) to your POWER web hosting and activate `virtualenv`:
+
 
 ```sh
 cd www
@@ -70,32 +71,31 @@ virtualenv venv
 source venv/bin/activate
 ```
 
-Mettez à jour `pip` :
+Update `pip`:
 
 ```sh
 pip install --upgrade pip
 ```
 
-Installez Django :
+Install Django:
 
 ```sh
 pip install django
 ```
 
-Créez le nouveau project Django :
+Create the new Django project:
 
 ```sh
 django-admin startproject config
 ```
 
-Par défaut, l'application `wsgi` de Django se trouve dans `config/wsgi.py`.
-Comme le point d'entrée configuré est `app.py`, vous pouvez créer le lien symbolique suivant :
+By default, Django's wsgi application is located in `config/wsgi.py`. As our configured hosting entrypoint is `app.py` we caan create the following symlink :
 
 ```sh
 ln -s config/wsgi.py app.py
 ```
 
-Django est installé dans un environnement virtuel, nous devez demander à l'application de l'utiliser. Nous pouvez le faire en ajoutant ces 2 lignes dans `app.py` avant l'importation de django.
+As django is installed inside a `virtualenv`, we should tell the app to use it. We can do so by adding these 2 lines in `app.py`  before django import :
 
 
 ```python
@@ -103,7 +103,7 @@ this_file = "venv/bin/activate_this.py"
 exec(open(this_file).read(), {'__file__': this_file})
 ```
 
-Vous obtenez alors ceci :
+The complete `app.py` file:
 
 ```python
 """
@@ -127,18 +127,19 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
 application = get_wsgi_application()
 ```
 
-Django doit déclarer les hôtes autorisés pour le site Web. Il sont déclarés dans `config/settings.py`, par exemple :
+Django needs to declare the allowed hosts used for the website. It's configured in `config/settings.py`, for example:
 
 ```python
 ALLOWED_HOSTS = ['yourdomainname', 'www.yourdomainname', 'yourftpuser.cluster022.hosting.ovh.net']
 ```
-Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-POWER/#restart), votre Django sera en ligne.
+
+
+Then [restart your instance](../getting-started-with-power-web-hosting/#restart), your Django will be online.
 
 
 ![Django](images/python-install-django-01.png){.thumbnail}
 
-
-Sortie de la console:
+Terminal output:
 
 <pre class="console"><code>~ $ cd www
 
@@ -237,13 +238,14 @@ ALLOWED_HOSTS = [ 'power.lostinbrittany.dev', 'xxxx.xxxx.hosting.ovh.net' ]
 </code></pre>
 
 
-### Plus d'informations sur Django
 
-Retrouvez la documentation officiel de Django sur <https://docs.djangoproject.com/fr/3.1/>
+### More information on Django
+
+To get more information on Django, go to the [official documentation site](https://docs.djangoproject.com/fr/3.1/).
 
 
-## Aller plus loin
+## Going Further
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
 
-**Pour discuter avec les autres utilisateurs du lab et avec l'équipe POWER Web Hosting, venez sur [notre room Gitter](https://gitter.im/ovh/power-web-hosting)**
+**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab**
