@@ -53,6 +53,11 @@ Let's suppose you have the default configuration for Ruby hosting:
 - Runtime : Ruby 2.6   
 - Entrypoint : config.ru 
 - DocumentRoot : www
+- Environment: development 
+
+> [!alert]
+>
+> Be careful, Rails depends of environment (`RAILS_ENV`)
 
 > [!primary]
 >
@@ -67,10 +72,12 @@ Delete your `DocumentRoot` to initiate it with rails (don't forget to export you
 rm -rf www
 gem env gempath
 export GEM_HOME=$(gem env gempath | cut -d ':' -f1)
+export RAILS_ENV=${OVH_ENVIRONMENT}
 rails new www
 cd www/
 rails  webpacker:install
 ```
+
 Now whitelist your domain name, in `www/config/environments/development.rb` :
 
 ```ruby
@@ -93,7 +100,7 @@ development:
 Then [restart your instance](../getting-started-with-power-web-hosting/#restart), your Rails will be online.
 
 
-![Rails](images/nodejs-install-rails-01.png){.thumbnail}
+![Rails](images/ruby-install-rails-01.png){.thumbnail}
 
 Now let's generate a "Hello World* with Rails: 
 
@@ -118,7 +125,7 @@ And build the *Hello Wolrd*:
 
 After another restart, your *Hello World* will be available in https://&lt;votre-nom-de-domaine>/demo/index.html
 
-![Rails](images/nodejs-install-rails-02.png){.thumbnail}
+![Rails](images/ruby-install-rails-02.png){.thumbnail}
 
 Sortie de la console:
 
@@ -126,6 +133,10 @@ Sortie de la console:
 
 ~ $ gem env gempath
 /homez.41/powerlp/.gem/ruby/2.6.0:/usr/local/ruby2.6/lib/ruby/gems/2.6.0
+
+~ $ export GEM_HOME=$(gem env gempath | cut -d ':' -f1)
+
+~ $ export RAILS_ENV=${OVH_ENVIRONMENT}
 
 ~ $ rails new www
       create
