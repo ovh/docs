@@ -19,7 +19,7 @@ Please take note however, some websites use CDNs to host Javascript libraries (l
 
 How do I know if my website is affected?
 
-Debugging tools provided by Mozilla Firefox and Google Chrome can tell you whether or not your website contains elements which are blocked due to mixed content. The documentation available on [the Mozilla Developer Network](https://developer.mozilla.org/fr/docs/S%C3%A9curit%C3%A9/MixedContent) tells you more about using these tools for mixed content.
+Debugging tools provided by Mozilla Firefox and Google Chrome can tell you whether or not your website contains elements which are blocked due to mixed content. The documentation available on [the Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content) tells you more about using these tools for mixed content.
 
 
 ## Duplicate content

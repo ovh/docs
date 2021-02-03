@@ -15,7 +15,7 @@ The Netboot feature is a service offered for free by OVHcloud, it allows you to 
 
 ## Requirements
 
-- a [dedicated server](https://www.ovh.com.au/dedicated_servers/){.external}
+- a [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/){.external}
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 ## Instructions

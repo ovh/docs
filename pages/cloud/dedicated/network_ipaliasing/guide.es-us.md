@@ -15,8 +15,8 @@ El alias de IP (*IP aliasing* en inglés) es una configuración especial de la r
 
 ## Requisitos
 
-- Tener un servidor ([servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/){.external}, [VPS](https://www.ovh.com/world/es/vps/){.external} o [instancia de Public Cloud](https://www.ovh.com/world/es/public-cloud/instancias/){.external}).
-- Tener una o más direcciones [IP Failover](https://www.ovh.com/world/es/servidores_dedicados/ip_failover.xml){.external}.
+- Tener un servidor ([servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/es/vps/){.external} o [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external}).
+- Tener una o más direcciones [IP Failover](https://www.ovhcloud.com/en/bare-metal/ip/){.external}.
 - Estar conectado al servidor por SSH (acceso *root*).
 
 

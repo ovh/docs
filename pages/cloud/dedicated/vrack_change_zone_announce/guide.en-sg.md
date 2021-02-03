@@ -9,13 +9,13 @@ section: vRack
 
 ## Objective
 
-The [vRack]({https://www.ovh.com/sg/solutions/vrack/){.external} is a private network that allows you to configure the address between two or more [OVHcloud dedicated servers](https://www.ovhcloud.com/en-sg/bare-metal/){.external}.
+The [vRack](https://www.ovh.com/sg/solutions/vrack/){.external} is a private network that allows you to configure the address between two or more [OVHcloud dedicated servers](https://www.ovhcloud.com/en-sg/bare-metal/){.external}.
 
 **Learn how to set the announcement zone of an IP block in vRack.**
 
 ## Requirements:
 
-- a [vRack]({https://www.ovh.com/sg/solutions/vrack/){.external}
+- a [vRack](https://www.ovh.com/sg/solutions/vrack/){.external}
 - a [configured block of IP addresses in the vRack](../ip-block-vrack/)
 - basic network knowledge
 

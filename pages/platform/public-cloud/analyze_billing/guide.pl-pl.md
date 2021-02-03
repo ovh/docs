@@ -95,7 +95,7 @@ Jeśli chcesz otrzymywać powiadomienia, kiedy prognozowany poziom zużycia zaso
 
 
 ## Instancje
-Ceny instancji cloud (lub serwerów cloud) możesz sprawdzić w interfejsie OVHcloud przed wdrożeniem instancji. Możesz sprawdzić je również dodatkowo na [stronie z cennikiem](https://www.ovh.com/fr/public-cloud/instances/tarifs/){.external}.
+Ceny instancji cloud (lub serwerów cloud) możesz sprawdzić w interfejsie OVHcloud przed wdrożeniem instancji. Możesz sprawdzić je również dodatkowo na [stronie z cennikiem](https://www.ovhcloud.com/pl/public-cloud/prices/){.external}.
 
 
 
@@ -138,7 +138,7 @@ Obliczenie wygląda następująco: (Cena za liczbę GB w danym miesiącu / 720 )
 
 Liczba GB za godzinę odpowiada maksymalnej liczbie GB przechowywanych w czasie jednej godziny. Na przykład, jeśli o 16:20 przechowywałeś 15 GB, o 16:40 - 17 GB, a o 16:50 - 14 GB, OVHcloud przyjmie na potrzeby kalkulacji 17 GB za przedział czasowy 16:00-17:00.
 
-Ceny za przechowywanie danych podane są na [stronie OVHcloud](https://www.ovh.com/fr/public-cloud/storage/){.external}.
+Ceny za przechowywanie danych podane są na [stronie OVHcloud](https://www.ovhcloud.com/pl/public-cloud/storage/){.external}.
 
 
 ### Dodatkowe dyski
@@ -154,7 +154,7 @@ Snapshoty dodatkowych dysków są fakturowane w taki sam sposób jak dyski stand
 
 
 ### Snapshoty i obrazy instancji
-Snapshoty instancji, podobnie jak obrazy (spoza katalogu obrazów dostarczanych przez OVHcloud) są rozliczane według stałego cennika za liczbę GB wykorzystanych w miesiącu, niezależnie od oryginalnej instancji czy typu obrazu. Przejdź do [strony z cennikiem](https://www.ovh.com/fr/public-cloud/instances/tarifs/){.external}.
+Snapshoty instancji, podobnie jak obrazy (spoza katalogu obrazów dostarczanych przez OVHcloud) są rozliczane według stałego cennika za liczbę GB wykorzystanych w miesiącu, niezależnie od oryginalnej instancji czy typu obrazu. Przejdź do [strony z cennikiem](https://www.ovhcloud.com/pl/public-cloud/prices/){.external}.
 
 
 ### Object Storage
@@ -196,4 +196,4 @@ W przypadku Cloud Archive fakturowane są trzy elementy:
 > 
 
 ## Sprawdź również
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com>https://community.ovh.com</https://community.ovh.com>{.external}
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

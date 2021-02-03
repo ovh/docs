@@ -220,10 +220,11 @@ network:
             addresses:
               - "YOUR_IPV6/IPv6_PREFIX"
             gateway6: "IPv6_GATEWAY"
-            strade:
+            routes:
               - to: "IPv6_GATEWAY"
                 scope: link
 ```
+
 > [!warning]
 >
 > È importante rispettare l'allineamento di ciascun elemento del file, come indicato nell'esempio di cui sopra. Non utilizzare il tasto di tabulazione per creare la tua spaziatura. E' necessario solo il tasto spazio.

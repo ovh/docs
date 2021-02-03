@@ -195,4 +195,4 @@ São faturados três elementos para o armazenamento de arquivos:
 > 
 
 ## Quer saber mais?
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

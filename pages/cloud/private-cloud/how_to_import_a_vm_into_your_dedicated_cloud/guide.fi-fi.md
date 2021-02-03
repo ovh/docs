@@ -18,8 +18,10 @@ Tässä tapauksessa voit siirtyä suoraan import-vaiheeseen (alla.
 - Nouto on tapahtunut VMDK-työkalulla:
 
 Sinun täytyy muuntaa virtuaalikone VMDK-muodosta VHDX-muotoon tehdäksesi siitä Hyper–V-yhteensopivan. Voit käyttää prosessia varten tehtyjä työkaluja:
-[Microsoft Virtual Machine Converter Solution Accelerator](http://www.microsoft.com/en-us/download/details.aspx?id=34591)
-[2Tware Convert VHD](http://www.2tware.com/product/6/2twareconvertvhdfree)
+
+- Microsoft Virtual Machine Converter Solution Accelerator
+- 2Tware Convert VHD
+
 Tämä ohje tarjoaa johdatuksen VM-siirtoon. Voit käyttää myös muita saatavilla olevia työkaluja. OVH ei voi kuitenkaan tarjota tukea 3. osapuolen kehittämille siirtotyökaluille.
 
 

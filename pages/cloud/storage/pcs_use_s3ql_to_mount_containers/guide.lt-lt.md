@@ -113,10 +113,3 @@ S3QL negalima naudoti „offline“ režimu.
 Be to, nepatariama sukonfigūruoti prijungimo /etc/fstab faile, geriau yra naudoti scenarijų, kuris būtų paleidžiamas kiekvieno serverio įkrovimo metu.
 
 
-## D.U.K.
-Rekomenduojame perskaityti [S3QL D.U.K.](https://bitbucket.org/nikratio/s3ql/wiki/FAQ)
-
-
-## 
-[Grįžti į Cloud gidų sąrašą]({legacy}1785)
-

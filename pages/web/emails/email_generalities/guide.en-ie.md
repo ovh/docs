@@ -1,135 +1,172 @@
 ---
-title: 'Web hosting: An overview of OVH email'
-excerpt: An overview of OVH email
+title: 'Getting started with an MX Plan solution'
 slug: web_hosting_an_overview_of_ovh_email
-legacy_guide_number: g1474
+excerpt: 'Find out how to get started with an MX Plan solution'
+section: 'Getting started'
+order: 3
 ---
 
+**Last updated 26th March 2019**
 
-## Windows
+## Objective
 
-- [Windows 8](https://www.ovh.co.uk/fr/hosting/guides/g1281.mail_mutualise_guide_configuration_sous_windows_8)
+If you have just purchased an MX Plan solution, you can have email addresses, which can be used to send and receive messages from any device. 
 
-- [Windows Mail](https://www.ovh.co.uk/fr/hosting/guides/g1300.mail_mutualise_guide_configuration_windows_mail)
+**Find out how to get started with an MX Plan solution.**
 
+## Requirements
 
+- an MX plan solution, available via a [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}, [the free Start10M Hosting plan](https://www.ovh.ie/domains/start10m_hosting_offer.xml){.external} or an MX Plan solution ordered separately
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
 
+## Instructions
 
-## Apple
+Once the MX Plan solution is created and available, you can manage it from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Depending on its activation date or if [it has been migrated recently](https://www.ovh.co.uk/mxplan-migration/){.external}, you may have the old or new version of the solution. You will need to check this before you proceed any further. 
 
-- [Mac email](https://www.ovh.co.uk/fr/hosting/guides/g1287.mail_mutualise_guide_configuration_mail_de_mac)
+To do this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and open the `Web Cloud`{.action} section. Click `Emails`{.action} in the services bar on the left-hand side, then choose the name of the plan concerned. Continue with the next steps, depending on which version you own.
 
-- [iPad iOS 7](https://www.ovh.co.uk/hosting/guides/g1348.mail_mutualise_guide_configuration_sous_ipad_ios_7)
+|MX Plan solution legacy version|MX Plan solution new version|
+|---|---|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Find the solution in the "Subscription" box|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the `Server reference` in the "Summary" box|
+|Continue to [Legacy version of the MX Plan solution](./#mx-plan-solution-legacy-version_2)|Continue to [New version of the MX Plan solution](./#new-version-of-the-mx-plan-solution)|
 
-[iPhone iOS 3](https://www.ovh.co.uk/fr/hosting/guides/g1296.mail_mutualise_guide_configuration_iphone_ios_3)
+### New version of the MX Plan solution.
 
-- [iPhone iOS 9.1](https://www.ovh.co.uk/fr/hosting/guides/g2004.mail_mutualise_guide_configuration_iphone_ios_91)
+#### Step 1: Log in to your solution’s interface.
 
+You have the new version of the MX Plan solution. This is the display you should get. If not, please ensure you follow the right path [by referring to the information above](./#instructions).  
 
+![email](images/mxplan-starter-new-step1.png){.thumbnail}
 
+#### Step 2: Create your email addresses.
 
-## Outlook
+To configure your email addresses, go to the `Email accounts`{.action} tab. The window that opens will list the email accounts already available, as well as those you can still create. Then click the `Add an account`{.action} button.
 
-- [Outlook 2007](https://www.ovh.co.uk/fr/hosting/guides/g1298.mail_mutualise_guide_configuration_outlook_2007)
+![email](images/mxplan-starter-new-step2.png){.thumbnail}
 
-- [Outlook 2010](https://www.ovh.co.uk/fr/hosting/guides/g1299.mail_mutualise_guide_configuration_outlook_2010)
+In the pop-up window, enter the following information:
 
-- [Outlook 2013](https://www.ovh.co.uk/fr/hosting/guides/g1286.mail_mutualise_guide_configuration_outlook_2013) (Video Guide)
+|Information|Description|  
+|---|---|  
+|Email account|A temporary name is already auto-filled in the text field. You can delete it and enter the name you would like for your email address (e.g. firstname.surname). The email address domain name is already pre-selected in the list.|  
+|First name|Enter a first name.|  
+|Last name|Enter a last name.|  
+|Display name|Enter the name that will be displayed when sending emails from this address.|
+|Password|Type in a password, and confirm it. For security reasons, we recommend not using the same password twice, and choosing one that does not contain any personal information (e.g. first name, surname and date of birth). We also recommend changing your password regularly.|
 
-- [Outlook 2011 on Mac](https://www.ovh.co.uk/fr/hosting/guides/g1345.mail_mutualise_guide_configuration_outlook_2011_sur_mac)
+Once you have completed the text fields, click `Next`{.action} and then check the information that appears in the summary. If it is all correct, click `Confirm`{.action} . Repeat this step as necessary according to the number of accounts you have.
 
+![email](images/mxplan-starter-new-step3.png){.thumbnail}
 
+#### Step 3: Use your email addresses.
 
+Once you have configured your email addresses, you can start using them straight away. There are two ways you can do this.
 
-## Other
+##### 1. Use Outlook Web Access (OWA) webmail.
 
-- [Thunderbird on Windows](https://www.ovh.co.uk/fr/hosting/guides/g1297.mail_mutualise_guide_de_configuration_pour_thunderbird)
+Go to the [Webmail login](https://www.ovh.ie/mail/){.external} page, then enter the email address and password. Then click the `Login`{.action} button.
 
-- [Tablet on Android 4.1.2](https://www.ovh.co.uk/fr/hosting/guides/g1283.mail_mutualise_guide_configuration_sous_tablette_android_412)
+When you first log in to webmail, you will be prompted to set the interface language, and the time zone you are in. Your inbox will then appear. To find out how to use your email address via OWA webmail, you can refer to our [Outlook Web App user guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/){.external}.
 
+![email](images/mxplan-starter-new-step4.png){.thumbnail}
 
+##### 2. Use the device of your choice.
 
+You will need to set up your email address on the device you want to check your email from (e.g. a smartphone or tablet). To do this, you can use our configuration guides:
 
-## Access
-You can send and receive emails via our Webmail by [clicking here](https://ssl0.ovh.net/en/:).
+|Windows|Outlook|Apple|Android|Other|
+|---|---|---|---|---|
+|[Windows 10 Mail](../mail-configuration-windows-10/){.external}|[Outlook 2016](../configuration-outlook-2016/){.external}|[macOS Mail](../guide-configuring-mail-on-macos/){.external}|[Android](../configuration-android/){.external}|[Gmail online interface](../gmail-configuration/){.external}|
+| | |[iPhone and iPad](../email_hosting_iphone_ios_91_configuration/){.external}| | |
 
-Access a guide on how to use Webmail [url=https://www.ovh.co.uk/fr/hosting/guides/g1302.webmail_guide_utilisation_roundcube"]
-here[/url].
+If you simply need the information required to configure your email account, the settings to use are listed below:
 
-![](images/img_2007.jpg){.thumbnail}
+- **For IMAP configuration (recommended)**
 
+|Server type|Server name|Port (with SSL)|Port (without SSL)|
+|---|---|---|---|
+|Incoming|SSL0.OVH.NET|993|143|
+|Outgoing|SSL0.OVH.NET|465|587|
 
-## IMAP configuration (Recommended)
-Here is the information you need to enter to set up an IMAP email account.
+- **For POP configuration**
 
-Configure IMAP with SSL security enabled or disabled: 
+|Server type|Server name|Port (with SSL)|Port (without SSL)|
+|---|---|---|---|
+|Incoming|SSL0.OVH.NET|995|110|
+|Outgoing|SSL0.OVH.NET|465|587|
 
-Email address: Your full email address.
-Password: The password you set in the [Control Panel](https://www.ovh.com/manager/web/login.html).
-User name: Your full OVH email address.
-Incoming server The incoming mail server:SSL0.OVH.NET
-Incoming server port:993 or 143
-Outgoing server: The outgoing mail server SSL0.OVH.NET
-Outgoing server port:465 or 587
+> [!warning]
+>
+> If you encounter any issues configuring your email address on your device, [you can use our configuration](../) guides or get in touch with the publishers of the application you are using, because the change required may be particular to the application.
+>
 
-Ports 143 and 587 correspond to a disabled SSL Security.
-Ports 993 and 465 correspond to enabled SSL security. 
+### MX Plan solution legacy version.
 
+#### Step 1: Log in to your solution’s interface.
 
-- You have to enable authentication for the SMTP outgoing server.
+If you have the legacy version of the MX Plan solution, this is the display you should see. If not, please ensure you follow the right path [by referring to the information above](./#instructions) . 
 
+![email](images/mxplan-starter-legacy-step1.png){.thumbnail}
 
-| Ports | SSL
-enabled | SSL
-disabled |
-|Incoming|993|143|
-|Outgoing|465|587|
+#### Step 2: Create your email addresses.
 
+To create an email address, please go to the `Emails`{.action} tab. The table that opens will contain all of the email addresses created as part of your solution. Then click the `Create Email Address`{.action} button.
 
+![email](images/mxplan-starter-legacy-step2.png){.thumbnail}
 
+In the pop-up window, enter the following information:
 
-## POP configuration
-Here is the information you need to enter to set up a POP email account.
+|Information|Description|  
+|---|---|  
+|User name|Enter the name for your email address (firstname.lastname, for example). The domain name concerned is already entered by default.|  
+|Account description|Enter a short description that will distinguish this account from any other accounts added in your OVH Control Panel.|  
+|Account size|Select the size of account you want. This size refers to the space available to your account for storing messages.|  
+|Password|Type in a password, and confirm it. For security reasons, we recommend not using the the same password twice, and choosing one that does not contain any personal information (e.g. first name, surname and date of birth). We also recommend changing your password regularly.|
 
-Configure POP with SSL security enabled or disabled: 
+Once you have completed the text fields, click `Next`{.action} and then check the information that appears in the summary. If it is all correct, click `Confirm`{.action} . Repeat this step as necessary according to the number of accounts you have.
 
-Email address: Your full email address.
-Password: The password you set in the [Control Panel](https://www.ovh.com/manager/web/login.html).
-User name: Your full OVH email address.
-Incoming server The incoming mail server: SSL0.OVH.NET
-Incoming server port: 995 or 110
-Outgoing server: The outgoing mail server: SSL0.OVH.NET
-Outgoing server port:465[/] or 587
+![email](images/mxplan-starter-legacy-step3.png){.thumbnail}
 
-Ports 110 and 
-587 correspond to a disabled SSL Security.
-Ports 995 and 465 correspond to an enabled SSL Security.
+#### Step 3: Use your email addresses.
 
+Once you have configured your email addresses, you can start using them straight away. There are two ways you can do this.
 
-- You have to enable authentication for the outgoing SMTP server.
+##### 1. Use the Roundcube webmail interface.
 
+Go to the [Webmail login](https://www.ovh.ie/mail/){.external} page, then enter the email address and password. Then click the `Login`{.action} button. Your inbox will appear.
 
-| Ports | SSL
-enabled | SSLdisabled |
-|Incoming|995|110|
-|Outgoing|465|587|
+![email](images/mxplan-starter-legacy-step4.png){.thumbnail}
 
+##### 2. Use the device of your choice.
 
+You will need to set up your email address on the device you want to check your email from (e.g. a smartphone or tablet). To do this, you can refer to our configuration guides:
 
+|Windows|Outlook|Apple|Android|Other|
+|---|---|---|---|---|
+|[Windows 10 Mail](../mail-configuration-windows-10/){.external}|[Outlook 2016](../configuration-outlook-2016/){.external}|[macOS Mail](../guide-configuring-mail-on-macos/){.external}|[Android](../configuration-android/){.external}|[Gmail online interface](../gmail-configuration/){.external}|
+| | |[iPhone and iPad](../email_hosting_iphone_ios_91_configuration/){.external}| | |
 
-## Reminder on authentication
-The outgoing server must be authenticated so that you can send emails without any issues.
+If you simply need the information required to configure your email account, the settings to use are listed below:
 
-Otherwise, this error may occur:
+- **For IMAP configuration (recommended)**
 
+|Server type|Server name|Port (with SSL)|Port (without SSL)|
+|---|---|---|---|
+|Incoming|SSL0.OVH.NET|993|143|
+|Outgoing|SSL0.OVH.NET|465|587|
 
-```
-"553 sorry, that domain isn't allowed to be relayed thru this MTA (#5.7.1)"
-```
+- **For POP configuration**
 
+|Server type|Server name|Port (with SSL)|Port (without SSL)|
+|---|---|---|---|
+|Incoming|SSL0.OVH.NET|995|110|
+|Outgoing|SSL0.OVH.NET|465|587|
 
+> [!warning]
+>
+> If you encounter any issues configuring your email address on your device, [you can use our configuration](../) guides or get in touch with the publishers of the application you are using, because the change required may be particular to the application.
+>
 
-- Make sure that SMTP authentication for outgoing messages is enabled in your email client.
+## Go further
 
-
-
+Join our community of users on <https://community.ovh.com/en/>.

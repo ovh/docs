@@ -177,4 +177,4 @@ A continuación se indican los parámetros necesarios para configurar una cuenta
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [ovh.es/community](https://www.ovh.es/community/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

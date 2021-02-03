@@ -106,8 +106,3 @@ swiftks://auth.cloud.ovh.net/GRA:CT_S3QL 1.0T 0 1.0T 0% /mnt/container
 
 
 Vous ne pouvez pas utiliser S3QL en mode hors ligne, vous ne devez pas configurer la persistance via le fichier /etc/fstab mais en utilisant un script qui sera exécuté au démarrage de votre serveur.
-
-
-## 
- 
-

@@ -104,4 +104,4 @@ Nachdem Sie den Logtyp und Monat ausgewählt haben, sind die Logs nach Tag archi
 
 [Backup einer Webhosting-Datenbank exportieren](https://docs.ovh.com/de/hosting/webhosting_hilfe_zum_export_von_datenbanken)
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en).
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -18,8 +18,10 @@ In dit geval kunt u de sectie import overslaan.
 - Ik beschik over vmdk:
 
 Het is eerst nodig om uw vmdk te converteren naar vhdx om compatibel met HyperV te zijn. Voor de conversie kunt u gebruik maken van een van deze tools: 
-[Microsoft Virtual Machine Converter Solution Accelerator](http://www.microsoft.com/en-us/download/details.aspx?id=34591)
-[2Tware Convert VHD](http://www.2tware.com/product/6/2twareconvertvhdfree)
+
+- Microsoft Virtual Machine Converter Solution Accelerator
+- 2Tware Convert VHD
+
 OVH communiceert deze tools alleen voor informatie. U kunt ook gebruik maken van andere tools.
 OVH kan geen support geven voor deze tools ontwikkeld door vendors.
 

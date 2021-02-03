@@ -11,7 +11,7 @@ section: Configuration
 
 Une IP fail-over (IPFO) est une adresse IP basculable d'un service à l'autre. Elle offre donc la possibilité de disposer d'une infrastructure résistant à une grande diversité de problèmes (pannes matérielles, surcharges de vos services, maintenance...).
 
-Pour plus d'informations sur l'IP fail-over nous vous recommandons la lecture du [document de présentation](https://www.ovh.com/ca/fr/serveurs-dedies/ip-incluses.xml){.external}.
+Pour plus d'informations sur l'IP fail-over nous vous recommandons la lecture du [document de présentation](https://www.ovhcloud.com/fr-ca/bare-metal/ip/){.external}.
 
 Le service OVH Load Balancer offre quant à lui des fonctionnalités de répartition de charge sur différents protocoles : HTTP, HTTPS, TCP et UDP. Associé à une IP fail-over, il devient possible de basculer votre infrastructure existante vers un Load Balancer sans perturber ou interrompre les services de vos clients. En effet il n'y aura désormais plus de changement d'adresse IP dans la mesure où vous utiliserez toujours l'IP fail-over, donc pas de délai de propagation des DNS.
 
@@ -23,7 +23,7 @@ Pour plus d'informations sur le service OVH Load Balancer, nous vous conseillons
 ## Prérequis
 
 - Disposer d'un [Load Balancer OVH](https://www.ovh.com/ca/fr/solutions/load-balancer/){.external} correctement configuré.
-- Disposer d'une [IP fail-over](https://www.ovh.com/ca/fr/serveurs-dedies/ip-incluses.xml){.external}.
+- Disposer d'une [IP fail-over](https://www.ovhcloud.com/fr-ca/bare-metal/ip/){.external}.
 
 > [!primary]
 >

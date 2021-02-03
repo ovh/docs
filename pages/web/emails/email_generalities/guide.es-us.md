@@ -16,12 +16,12 @@ La solución de alojamiento web permite disfrutar de direcciones de correo elect
 
 ## Requisitos
 
-- Tener una solución MX Plan  (incluida en un [plan de hosting de OVHcloud]({ovh_www}/hosting/){.external}, en un [alojamiento gratuito Start 10M]({ovh_www}/dominios/oferta_hosting_start10m.xml){.external} o contratada por separado).
+- Tener una solución MX Plan, incluida en un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/).
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action}.
 
 ## Procedimiento
 
-Una vez que el MX Plan haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente]({ovh_www}/mxplan-migration/){.external}, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
+Una vez que el MX Plan haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. En función de cuándo haya activado su MX Plan o de si [el servicio ha sido migrado recientemente](https://www.ovh.co.uk/mxplan-migration/){.external}, tendrá una versión diferente. Antes de continuar, compruebe de qué versión dispone. 
 
 Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio correspondiente. Siga leyendo esta guía en función de su versión:
 
@@ -169,4 +169,4 @@ A continuación se indican los parámetros necesarios para configurar una cuenta
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

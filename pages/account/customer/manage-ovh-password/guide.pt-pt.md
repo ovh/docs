@@ -120,6 +120,4 @@ Se a sua palavra-passe estiver comprometida, recomendamos vivamente que a [alter
 
 [O gestor de palavras-passe Keepass](https://keepass.info/){.external}
 
-
 Fale com a nossa comunidade de utilizadores em https://community.ovh.com/en/
-

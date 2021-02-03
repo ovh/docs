@@ -19,7 +19,7 @@ Achtung: Manche Webseiten verwenden CDNs für das Hosting ihrer JavaScript-Bibli
 
 Wie finde ich heraus, ob meine Webseite betroffen ist?
 
-Die Debugging-Tools von Mozilla Firefox und Google Chrome zeigen an, wenn sich auf der Webseite als Mixed Content blockiert Elemente befinden. In der Dokumentation des [Mozilla Developer Network](https://developer.mozilla.org/fr/docs/S%C3%A9curit%C3%A9/MixedContent) erfahren Sie mehr darüber, was bei Mixed Content zu tun ist.
+Die Debugging-Tools von Mozilla Firefox und Google Chrome zeigen an, wenn sich auf der Webseite als Mixed Content blockiert Elemente befinden. In der Dokumentation des [Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content) erfahren Sie mehr darüber, was bei Mixed Content zu tun ist.
 
 
 ## Duplicate Content

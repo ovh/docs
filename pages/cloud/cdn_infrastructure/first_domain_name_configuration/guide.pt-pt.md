@@ -106,7 +106,7 @@ A atribuição de um domínio específico aos ficheiros que quer armazenar em ca
 
 Se pretender configurar um novo subdomínio para utilizar a CDN, provavelmente deverá modificar determinadas configurações no website e no serviço web.
 
-Em primeiro lugar, certifique-se de que o seu serviço web responde corretamente a este subdomínio. Para isso, deve configurar um [*vhost*](https://pt.wikipedia.org/wiki/Hospedagem_virtual){.external} para este domínio, quer com a sua própria pasta de destino, quer como alias de outro domínio.
+Em primeiro lugar, certifique-se de que o seu serviço web responde corretamente a este subdomínio. Para isso, deve configurar um *vhost* para este domínio, quer com a sua própria pasta de destino, quer como alias de outro domínio.
 
 Se o domínio responde corretamente no seu serviço web, só terá de editar o código HTML para modificar a origem dos ficheiros que devem passar pela CDN, e assegurar-se de que estes têm o nome correto no subdomínio.
 

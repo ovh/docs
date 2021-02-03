@@ -46,7 +46,7 @@ Nesta nova interface, introduza no respetivo campo:
 
 "Endereço de e-mail": O endereço de e-mail partilhado OVH por inteiro.
 
-"Password": A password definida no [manager](https://www.ovh.com/auth/?action=gotomanagerl) para essa conta de e-mail.
+"Password": A password definida no [manager](https://www.ovh.com/auth/?action=gotomanager) para essa conta de e-mail.
 
 Clique no ícone "Ligar" para continuar.
 
@@ -60,7 +60,7 @@ Nesta interface, introduza no respetivo campo:
 
 "Nome do utilizador": O endereço de e-mail por inteiro.
 
-"Password": A password definida no [manager](https://www.ovh.com/auth/?action=gotomanagerl) para essa conta de e-mail.
+"Password": A password definida no [manager](https://www.ovh.com/auth/?action=gotomanager) para essa conta de e-mail.
 
 "Servidor de entrada(IMAP)":
 O endereço do servidor é então ssl0.ovh.net.

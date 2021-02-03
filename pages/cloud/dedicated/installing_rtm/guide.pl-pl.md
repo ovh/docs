@@ -280,7 +280,7 @@ Pakiet RTM obecnie nie jest kompatybilny z systemami Windows. Stale rozwijamy i 
 
 Po zainstalowaniu pakietu RTM dane monitorowania serwera można wyświetlać w Panelu klienta OVHcloud. (Być może będzie konieczne odświeżenie przeglądarki lub wylogowanie się i ponowne zalogowanie). Przejdź do sekcji `Serwer`{.action} i wybierz serwer z menu po lewej stronie. Na karcie `Informacje ogólne`{.action} przewiń w dół, aby znaleźć informacje monitorowania.
 
-![Real Time Monitoring](images/rtm_panel.png){.thumbnail}
+![Real Time Monitoring](images/rtm_panel1.png){.thumbnail}
 
 
 

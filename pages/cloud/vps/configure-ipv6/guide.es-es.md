@@ -220,10 +220,11 @@ network:
             addresses:
               - "YOUR_IPV6/IPv6_PREFIX"
             gateway6: "IPv6_GATEWAY"
-            carreteras:
+            routes:
               - to: "IPv6_GATEWAY"
                 scope: link
 ```
+
 > [!warning]
 >
 > Es importante mantener la alineación de cada elemento del archivo, tal y como se muestra en el ejemplo anterior. No use la tecla de tabulación para crear el espacio. Sólo es necesaria la tecla espacio.

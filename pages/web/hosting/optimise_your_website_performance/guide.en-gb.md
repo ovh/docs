@@ -87,7 +87,7 @@ You can find more details on this topic in the Step 5 below.
 ### Step 4: Optimising your scripts
 Correlate the graphs of resource usage of your hosting (more information below) to find the origin of the delays and consult the logs at the dates of these peaks.
 
-You can access your logs, statistics and graphs directly from the [OVHcloud Control Panel](https://www.ovh.com/manager/web/login.html){.external}.
+You can access your logs, statistics and graphs directly from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 How to access the logs:
 - Click on the domain in the `Hosting`{.action} section,

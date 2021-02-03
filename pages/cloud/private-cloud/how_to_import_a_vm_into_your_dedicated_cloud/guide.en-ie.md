@@ -18,8 +18,10 @@ In this case, you can move on to the import step.
 - I've retrieved my VMDK:
 
 First of all, you need to convert your VMDK to VHDX to make it compatible with HyperV. To do this, you can use one of the following tools:
-[Microsoft Virtual Machine Converter Solution Accelerator](http://www.microsoft.com/en-us/download/details.aspx?id=34591)
-[2Tware Convert VHD](http://www.2tware.com/product/6/2twareconvertvhdfree)
+
+- Microsoft Virtual Machine Converter Solution Accelerator
+- 2Tware Convert VHD
+
 OVH provides information on these tools for guidance. You can also use other tools.
 OVH can't provide support for tools that are developed by third party.
 

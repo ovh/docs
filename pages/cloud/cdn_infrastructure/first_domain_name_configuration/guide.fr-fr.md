@@ -104,7 +104,7 @@ L'attribution d'un nom de domaine spécifique aux fichiers que vous souhaitez av
 
 Si vous souhaitez configurer un nouveau sous-domaine pour utiliser notre CDN, vous devrez probablement modifier certaines configurations au niveau de votre site et de votre service web.
 
-Assurez-vous d'abord que votre service web répond correctement à ce sous-domaine. Pour cela, vous devez configurer un [*vhost*](https://fr.wikipedia.org/wiki/H%C3%A9bergement_virtuel){.external} pour ce domaine, soit avec son propre dossier-cible, soit en alias d'un autre nom de domaine.
+Assurez-vous d'abord que votre service web répond correctement à ce sous-domaine. Pour cela, vous devez configurer un *vhost* pour ce domaine, soit avec son propre dossier-cible, soit en alias d'un autre nom de domaine.
 
 Si le domaine répond correctement au niveau de votre service web, vous n'avez plus qu'à modifier votre code HTML afin de changer les sources des fichiers qui doivent passer par le CDN et vous assurer que ceux-ci sont bien appelés sur votre sous-domaine.
 

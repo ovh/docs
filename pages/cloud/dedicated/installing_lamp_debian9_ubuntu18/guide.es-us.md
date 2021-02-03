@@ -191,7 +191,7 @@ mysql -u root -p
 MariaDB \[(none)]> show databases; MariaDB \[(none)]> exit 
 ```
 
-Le recomendamos que cree una cuenta de usuario específico y dedicarla a la aplicación web. Si es necesario, puede consultar la siguiente guía [MySQL](https://dev.mysql.com/doc/refman/8.0/en/user-account-management.html){.external} y [MariaDB](https://mariadb.com/kb/en/library/user-account-management/{.external}.
+Le recomendamos que cree una cuenta de usuario específico y dedicarla a la aplicación web. Si es necesario, puede consultar la siguiente guía [MySQL](https://dev.mysql.com/){.external} y [MariaDB](https://mariadb.com/kb/en/library/user-account-management/{.external}.
 
 ### Paso 6: Instalar phpMyAdmin(opcional)
 

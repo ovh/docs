@@ -172,7 +172,7 @@ demonon@cloudweb-ssh:~ $ cd ghost/
 demonon@cloudweb-ssh:~/ghost $
 ```
 
-Download the [latest version of Ghost](https://docs.ghost.org/){.external}, and unzip its contents.
+Download the [latest version of Ghost](https://ghost.org/){.external}, and unzip its contents.
 
 ```sh
 demonon@cloudweb-ssh:~/ghost $ ls

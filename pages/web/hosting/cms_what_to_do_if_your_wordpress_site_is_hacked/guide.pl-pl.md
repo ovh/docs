@@ -84,7 +84,7 @@ Należy również odinstalować nieużywane wtyczki. Ich wyłączenie nie jest w
 Jeśli włamanie jest starsze a przywrócenie danych nie jest możliwe, przedstawiamy sposób przywrócenia wordpressa:
 
 ## Nie możesz zalogować się do panelu administracyjnego WordPress.
-W takim przypadku należy zmienić [hasło administratora](https://codex.wordpress.org/Resetting_Your_Password) korzystając z oficjalnego przewodnika Wordpress.
+W takim przypadku należy zmienić [hasło administratora](https://codex.wordpress.org/) korzystając z oficjalnego przewodnika Wordpress.
 
 Jeśli jest to zbyt skomplikowane, można zaktualizować adres e-mail w [interfejsie phpMyAdmin](https://phpmyadmin.ovh.net) w tabeli user, powrócić na stronę logowania, kliknąć na Nie pamiętasz hasła? i poczekać na wysłanie e-maila.
 
