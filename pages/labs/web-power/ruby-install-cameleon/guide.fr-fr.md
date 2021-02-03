@@ -30,7 +30,9 @@ order: 2
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Ruby et vous voulez y deployer [Camaleon](http://camaleon.tuzitio.com/), un CMS flexible vous permettant de créer une structure de contenu personnalisée sans avoir à coder. Ce guide vous explique comment.
+Vous avez souscrit à un hébergement web POWER Ruby et vous voulez y deployer [Camaleon](http://camaleon.tuzitio.com/), un CMS flexible vous permettant de créer une structure de contenu personnalisée sans avoir à coder.
+
+**Découvrez comment installer Camaleon sur votre hébergement web POWER**
 
 ## Prérequis
 
@@ -41,7 +43,7 @@ Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous c
 
 ## En pratique
 
-Supossons que vous avez la configuration normal pour un hébergement web POWER :
+Supposons que vous avez la configuration normale pour un hébergement web POWER :
 
 - Moteur : ruby 2.6 
 - Point d'entrée : config.ru 
@@ -50,12 +52,12 @@ Supossons que vous avez la configuration normal pour un hébergement web POWER :
 
 > [!alert]
 >
-> Attention, Rails depends on environment (`RAILS_ENV`)
+> Attention, Rails dépend de l'environnement (`RAILS_ENV`)
 
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration)
 
 
 [Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER. 
@@ -121,7 +123,7 @@ development:
   check_yarn_integrity: false
 ```
 
-Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-POWER/#restart), votre CMS sur Camaleon sera en ligne.
+[Rédemarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre CMS Camaleon sera en ligne.
 
 
 ![Camaleon](images/ruby-install-camaleon-01.png){.thumbnail}

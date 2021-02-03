@@ -31,7 +31,9 @@ order: 2
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Ruby et vous voulez y deployer [Rails](https://rubyonrails.org/), le framework de développement d'applications web en Ruby. Ce guide vous explique comment.
+Vous avez souscrit à un hébergement web POWER Ruby et vous voulez y deployer [Rails](https://rubyonrails.org/), le framework de développement d'applications web en Ruby.
+
+**Découvrez comment installer Rails sur votre hébergement web POWER**
 
 
 ## Prérequis
@@ -44,7 +46,7 @@ Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous c
 
 ## En pratique
 
-Supossons que vous avez la configuration normal pour un hébergement web POWER :
+Supposons que vous avez la configuration normale pour un hébergement web POWER :
 
 - Moteur : ruby 2.6 
 - Point d'entrée : config.ru 
@@ -53,7 +55,7 @@ Supossons que vous avez la configuration normal pour un hébergement web POWER :
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration)
 
 
 [Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER. 
@@ -88,20 +90,20 @@ development:
   check_yarn_integrity: false
 ```
 
-Faites un [rédemarrage de votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre Rail sera en ligne.
+[Rédemarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre Rails sera en ligne.
 
 
 ![Rails](images/ruby-install-rails-01.png){.thumbnail}
 
 
-Générez maintenant un *Hello World* with Rails : 
+Générez maintenant un *Hello World* avec Rails.
 
 ```sh
 export SPRING_SERVER_COMMAND="$HOME/www/bin/spring server"
 rails generate controller demo index
 ```
 
-Et créez un fichier `app/views/demo/index.html.erb` :
+Et créez un fichier `app/views/demo/index.html.erb`.
  
  ```html
 vim app/views/demo/index.html.erb
@@ -109,7 +111,7 @@ vim app/views/demo/index.html.erb
 <p>Hello World from Rails</p>
 ```
 
-Ensuite construisez le *Hello World* :
+Ensuite construisez le *Hello World*.
 
 ```sh
 ./bin/webpack
