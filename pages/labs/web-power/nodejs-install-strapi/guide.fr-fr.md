@@ -6,59 +6,102 @@ section: Node.js
 order: 6
 ---
 
-**Dernière mise à jour le 25/01/2021**
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+
+**Pour discuter avec les autres utilisateurs du lab et avec l'équipe POWER Web Hosting, venez sur [notre room Gitter](https://gitter.im/ovh/power-web-hosting)**
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #300A24; 
+   color: #ccc;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+ }
+ .small {
+     font-size: 0.75em;
+ }
+</style>
+
+**Dernière mise à jour le 03/02/2021**
 
 ## Objectif
 
+Vous avez souscrit à un hébergement web POWER Node.js et vous voulez y deployer un CMS *headless* basé sur [Strapi](https://strapi.io/). Ce guide vous explique comment.
+
 ## Prérequis
+
+- Disposer d'une de l'offre d'hébergement web POWER [Python](https://labs.ovh.com/managed-python).
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+
+Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous conseillons de consulter notre guide [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) avant de poursuivre.
 
 ## En pratique
 
-Moteur : nodejs 14 <br>
-Point d'entrée : index.js <br>
-Dossier racine : www <br>
+Supossons que vous avez la configuration normal pour un hébergement web POWER :
+
+- Moteur : nodejs 14 
+- Point d'entrée : index.js 
+- Dossier racine : www 
+
+
+> [!primary]
+>
+> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+
+
+[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER. 
+
+Commencez par éffacer le repertoire `www` et installez ensuite Strapi :
 
 ```sh
-~ $ rm -rf www
-~ $ yarn create strapi-app www --quickstart --no-run
+rm -rf www
+npx create-strapi-app www --quickstart --no-run
+```
 
-yarn create v1.22.10
-[1/4] Resolving packages...
-[2/4] Fetching packages...
-[3/4] Linking dependencies...
-[4/4] Building fresh packages...
+Allez dans `www` et créez le fichier point d'entréee, `index.js` :
+
+```javascript
+const strapi = require('strapi');
  
-success Installed "create-strapi-app@3.2.3" with binaries:
-      - create-strapi-app
-[#############################################################################################] 93/93Creating a new Strapi application at /home/abcdefg/www.
- 
+strapi(/* {...} */).start();
+```
+
+Créez aussi un fichier `.htaccess` pour gérer la redirection HTTPS :
+
+```sh
+RewriteCond %{ENV:HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+```
+
+
+Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-POWER/#restart), votre CMS sur Strapi sera en ligne.
+
+![Strapi](images/nodejs-install-strapi-01.png){.thumbnail}
+
+
+Terminal output:
+
+<pre class="console"><code> ~ $ rm -rf www
+
+~ $ npx create-strapi-app www --quickstart --no-run
+npx : 91 installé(s) en 6.741s
+Creating a new Strapi application at /home/user/www.
 Creating a quickstart project.
 Creating files.
 Dependencies installed successfully.
- 
-Your application was created at /home/abcdefg/www.
- 
-Available commands in your project:
- 
-  yarn develop
-  Start Strapi in watch mode.
- 
-  yarn start
-  Start Strapi without watch mode.
- 
-  yarn build
-  Build Strapi admin panel.
- 
-  yarn strapi
-  Display all available commands.
- 
-You can start by doing:
- 
-  cd /home/abcdefg/www
-  yarn develop
- 
-Done in 106.67s.
- 
+[...]
+
 ~ $ cat << 'EOF' > www/index.js
 const strapi = require('strapi');
  
@@ -69,30 +112,15 @@ RewriteCond %{ENV:HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 EOF
 
-~ $ ls -la www
-total 564
-drwxr-xr-x+    7 nodeder users     18 oct.  15 18:24 .
-drwx---r-x+    8 nodeder users     14 oct.  15 18:23 ..
-drwxr-xr-x+    2 nodeder users      3 oct.  15 18:22 api
-drwxr-xr-x+    3 nodeder users      5 oct.  15 18:22 config
--rw-r--r--+    1 nodeder users    249 oct.  15 18:22 .editorconfig
--rw-r--r--+    1 nodeder users     23 oct.  15 18:22 .env.example
--rw-r--r--+    1 nodeder users     32 oct.  15 18:22 .eslintignore
--rw-r--r--+    1 nodeder users    541 oct.  15 18:22 .eslintrc
-drwxr-xr-x+    2 nodeder users      3 oct.  15 18:22 extensions
--rw-r--r--+    1 nodeder users   3688 oct.  15 18:22 favicon.ico
--rw-r--r--+    1 nodeder users   1136 oct.  15 18:22 .gitignore
--rw-r--r--+    1 nodeder users     91 oct.  15 18:24 .htaccess
-drwxr-xr-x+ 1015 nodeder users   1016 oct.  15 18:23 node_modules
--rw-r--r--+    1 nodeder users    882 oct.  15 18:22 package.json
-drwxr-xr-x+    3 nodeder users      4 oct.  15 18:22 public
--rw-r--r--+    1 nodeder users     69 oct.  15 18:22 README.md
--rw-r--r--+    1 nodeder users     64 oct.  15 18:24 server.js
--rw-r--r--+    1 nodeder users 445672 oct.  15 18:23 yarn.lock
-~ $ mkdir -p www/tmp
-~ $ touch www/tmp/restart.txt
-```
+~/www $ mkdir -p tmp
+
+~/www $ touch tmp/restart.txt
+
+</code></pre>
+
 
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+
+**Pour discuter avec les autres utilisateurs du lab et avec l'équipe POWER Web Hosting, venez sur [notre room Gitter](https://gitter.im/ovh/power-web-hosting)**

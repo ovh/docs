@@ -94,7 +94,7 @@ VERSION=$(ghost --version | sed -n 's/Ghost version: \([0-9.]*\).*/\1/p')
 ln -fs versions/${VERSION}/index.js index.js
 ```
 
-Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-POWER/#restart), votre application Expresss sera en ligne.
+Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-POWER/#restart), votre plateforme Ghost sera en ligne.
 
 ![Ghost](images/nodejs-install-ghost-01.png){.thumbnail}
 
