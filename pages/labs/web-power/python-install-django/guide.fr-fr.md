@@ -10,7 +10,7 @@ order: 1
 
 ## Objectif
 
-Vous souhaitez bénéficier d'un environement de dévellopement simple vous permettant d'être rapide, le framework Django répond à ces qualités.
+Vous souhaitez bénéficier d'un environnement de développement simple vous permettant d'être rapide, le framework Django répond à ces qualités.
 
 **Découvrez comment installer Django sur votre hébergement web POWER**
 
@@ -43,7 +43,7 @@ Mettez à jour `pip`
 ~/www$ pip install --upgrade pip
 ```
 
-Installez maintenant Django
+Installez Django
 
 ```sh
 ~/www$ pip install django
@@ -68,7 +68,7 @@ Créez le nouveau project Django
 django-admin startproject config
 ```
 
-Par défaut, l'application `wsgi` de Django se trouve dans `config/wsgi.py`
+Par défaut, l'application `wsgi` de Django se trouve dans `config/wsgi.py`.
 Comme le point d'entrée configuré est `app.py`, vous pouvez créer le lien symbolique suivant :
 
 ```sh
@@ -309,7 +309,7 @@ class Choice(models.Model):
 EOF
 ```
 
-Maintenant le modèle en place et correct, créez un utilisateur "admin" et une façon d'y accéder via notre WebUI.
+Maintenant le modèle en place est correct, créez un utilisateur "admin" pour y accéder via le WebUI.
 
 ```sh
 pythontest@ssh00.cluster000.gra.hosting.ovh.net (python/3.8/development) ~/www $ python manage.py createsuperuser
@@ -345,7 +345,7 @@ Redémarrez **passenger**.
 pythontest@ssh00.cluster000.gra.hosting.ovh.net (python/3.8/development) ~/www $ touch tmp/restart.txt
 ```
 
-Vous êtes maintenant connecté
+Vous êtes maintenant connecté.
 
 ![django](images/django02.png){.thumbnail}
 
