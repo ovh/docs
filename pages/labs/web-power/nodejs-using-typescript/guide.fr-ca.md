@@ -30,12 +30,14 @@ order: 7
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Node.js et vous voulez y deployer du code fait avec [TypeScript](https://www.typescriptlang.org/) . Ce guide vous explique comment.
+Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y déployer votre développement sous [TypeScript](https://www.typescriptlang.org/).
+
+**Découvrez comment utiliser TypeScript sur votre hébergement web POWER**
 
 ## Prérequis
 
 - Disposer d'une de l'offre d'hébergement web POWER [Python](https://labs.ovh.com/managed-python).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous conseillons de consulter notre guide [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) avant de poursuivre.
 

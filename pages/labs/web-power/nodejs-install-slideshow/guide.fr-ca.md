@@ -30,7 +30,7 @@ order: 5
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Node.js et vous voulez y deployer une [solution de présentation de slides](https://nafeu.medium.com/real-time-presentation-slides-with-socket-io-express-node-js-and-javascript-cf08a95ff098).
+Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y déployer une [solution de présentation de slides](https://nafeu.medium.com/real-time-presentation-slides-with-socket-io-express-node-js-and-javascript-cf08a95ff098).
 
 **Découvrez comment installer slideshow sur votre hébergement web POWER**
 

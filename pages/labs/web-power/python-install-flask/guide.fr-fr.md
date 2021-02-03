@@ -31,7 +31,7 @@ order: 2
 ## Objectif
 
 
-Vous avez souscrit à un hébergement web POWER Python et vous voulez y deployer [Flask](https://flask.palletsprojects.com/en/1.1.x/), le micro-framework Python pour des projets simples mais qui restent extensibles. Ce guide vous explique comment.
+Vous avez souscrit à un hébergement web POWER Python et vous souhaitez y déployer [Flask](https://flask.palletsprojects.com/en/1.1.x/), le micro-framework Python pour des projets simples mais qui restent extensibles.
 
 **Découvrez comment installer Flask sur votre hébergement web POWER**
 
@@ -56,10 +56,10 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration)
 
 
-Pour utiliser les frameworks [Python WSGI](https://www.fullstackpython.com/wsgi-servers.html), le plus simple d'utiliser [virtualenv](https://pypi.org/project/virtualenv/). 
+Pour utiliser les frameworks [Python WSGI](https://www.fullstackpython.com/wsgi-servers.html), le plus simple est d'utiliser [virtualenv](https://pypi.org/project/virtualenv/). 
 
 [Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER et activez `virtualenv`: 
 
@@ -95,7 +95,7 @@ def hello_world():
     return 'Hello, World!'
 ```
 
-[Rédemarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre Django sera en ligne.
+[Rédemarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre projet Flask sera en ligne.
 
 
 ![Flask](images/python-install-flask-01.png){.thumbnail}

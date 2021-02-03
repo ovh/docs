@@ -31,7 +31,7 @@ order: 6
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Node.js et vous voulez y deployer un CMS *headless* basé sur [Strapi](https://strapi.io/).
+Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y déployer un CMS *headless* basé sur [Strapi](https://strapi.io/).
 
 **Découvrez comment installer strapi sur votre hébergement web POWER**
 

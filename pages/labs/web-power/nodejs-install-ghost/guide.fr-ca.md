@@ -32,7 +32,7 @@ order: 3
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Node.js et vous voulez y deployer une plateforme de blog [Ghost](https://ghost.org/).
+Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y déployer une plateforme de blog [Ghost](https://ghost.org/).
 
 **Découvrez comment installer Ghost sur votre hébergement web POWER**
 

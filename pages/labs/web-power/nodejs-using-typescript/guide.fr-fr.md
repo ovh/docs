@@ -30,7 +30,9 @@ order: 7
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Node.js et vous voulez y deployer du code fait avec [TypeScript](https://www.typescriptlang.org/) . Ce guide vous explique comment.
+Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y déployer votre développement sous [TypeScript](https://www.typescriptlang.org/).
+
+**Découvrez comment utiliser TypeScript sur votre hébergement web POWER**
 
 ## Prérequis
 
