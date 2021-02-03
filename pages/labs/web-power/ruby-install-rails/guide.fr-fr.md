@@ -91,7 +91,7 @@ development:
 Faites un [rédemarrage de votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre Rail sera en ligne.
 
 
-![Rails](images/nodejs-install-rails-01.png){.thumbnail}
+![Rails](images/ruby-install-rails-01.png){.thumbnail}
 
 
 Générez maintenant un *Hello World* with Rails : 
@@ -117,7 +117,7 @@ Ensuite construisez le *Hello World* :
 
 Après redémarrage de votre instance, vous pourez visualser votre page dans https://&lt;votre-nom-de-domaine>/demo/index.html
 
-![Rails](images/nodejs-install-rails-02.png){.thumbnail}
+![Rails](images/ruby-install-rails-02.png){.thumbnail}
 
 Sortie de la console:
 
