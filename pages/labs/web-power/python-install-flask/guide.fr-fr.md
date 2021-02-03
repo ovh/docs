@@ -84,7 +84,7 @@ Redémarrez votre instance pour visualiser les changements.
 >```
 >
 
-Retrouvez plus d'informations sur Flask sur la documentation depuis l'adresse <https://flask.palletsprojects.com/en/1.1.x/>
+Retrouvez plus de documentation sur Flask à l'adresse <https://flask.palletsprojects.com/en/1.1.x/>
 
 ## Aller plus loin
 
