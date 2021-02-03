@@ -1,9 +1,9 @@
 ---
-title: Installer Rails sur votre hébergement web POWER
-slug: nodejs-installer-rails
-excerpt: Découvrez comment installer Rails sur votre hébergement web POWER
+title: Install Rails on your POWER web hosting plan
+slug: ruby-install-rails
+excerpt: Find out how to install Rails on your POWER web hosting plan
 section: Ruby
-order: 2
+order: 1
 ---
 
 <style>
@@ -28,37 +28,40 @@ order: 2
 
 **Dernière mise à jour le 03/02/2021**
 
+## Objective
 
-## Objectif
+You've subscribed to a Web POWER web hosting plan to deploy **Ruby** applications, and you want to deploy [Rails](https://rubyonrails.org/) on it.
 
-Vous avez souscrit à un hébergement web POWER Ruby et vous voulez y deployer [Rails](https://rubyonrails.org/), le framework de développement d'applications web en Ruby. Ce guide vous explique comment.
-
-
-## Prérequis
-
-- Disposer d'une de l'offre d'hébergement web POWER [ruby](https://labs.ovh.com/managed-ruby).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
-
-Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous conseillons de consulter notre guide [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) avant de poursuivre.
+This guide will explain how to do it.
 
 
-## En pratique
+**Find out how to install Rails on your POWER web hosting plan.**
 
-Supossons que vous avez la configuration normal pour un hébergement web POWER :
 
-- Moteur : ruby 2.6 
-- Point d'entrée : config.ru 
-- Dossier racine : www 
+## Requirements
 
+- A [Ruby](https://labs.ovh.com/managed-ruby) POWER web hosting plan
+- Access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+
+If you have just started to use your Web POWER web hosting plan, we suggest you to have a look to our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.
+
+## Instructions
+
+
+Let's suppose you have the default configuration for Ruby hosting:
+
+- Runtime : Ruby 2.6   
+- Entrypoint : config.ru 
+- DocumentRoot : www
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint
 
 
-[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER. 
+[Access via SSH](../getting-started-with-power-web-hosting/#ssh) to your POWER web hosting.
 
-Supprimez le dossier racine pour l'initialiser avec Rails. N'oubliez pas d'exporter votre `gempath`ou l'installation du bundle va échouer :
+Delete your `DocumentRoot` to initiate it with rails (don't forget to export your `gempath` or your bundle install will failed):
 
 ```sh
 rm -rf www
@@ -68,8 +71,7 @@ rails new www
 cd www/
 rails  webpacker:install
 ```
-
-Déclarez votre nom de domaine sur liste blanche dans `www/config/environments/development.rb` :
+Now whitelist your domain name, in `www/config/environments/development.rb` :
 
 ```ruby
 Rails.application.configure do
@@ -77,7 +79,7 @@ Rails.application.configure do
   config.hosts << "your-domain.ovh"
 ```
 
-Et désactivez la vérification `check_yarn_integrity` dans la partie `development` de `www/config/webpacker.yml` :
+And inactivate  `check_yarn_integrity` check under `development` section in `www/config/webpacker.yml` :
 
 ```yaml
 development:
@@ -88,20 +90,19 @@ development:
   check_yarn_integrity: false
 ```
 
-Faites un [rédemarrage de votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre Rail sera en ligne.
+Then [restart your instance](../getting-started-with-power-web-hosting/#restart), your Rails will be online.
 
 
 ![Rails](images/nodejs-install-rails-01.png){.thumbnail}
 
-
-Générez maintenant un *Hello World* with Rails : 
+Now let's generate a "Hello World* with Rails: 
 
 ```sh
 export SPRING_SERVER_COMMAND="$HOME/www/bin/spring server"
 rails generate controller demo index
 ```
 
-Et créez un fichier `app/views/demo/index.html.erb` :
+Create the template `app/views/demo/index.html.erb` :
  
  ```html
 vim app/views/demo/index.html.erb
@@ -109,13 +110,13 @@ vim app/views/demo/index.html.erb
 <p>Hello World from Rails</p>
 ```
 
-Ensuite construisez le *Hello World* :
+And build the *Hello Wolrd*:
 
 ```sh
 ./bin/webpack
 ```
 
-Après redémarrage de votre instance, vous pourez visualser votre page dans https://&lt;votre-nom-de-domaine>/demo/index.html
+After another restart, your *Hello World* will be available in https://&lt;votre-nom-de-domaine>/demo/index.html
 
 ![Rails](images/nodejs-install-rails-02.png){.thumbnail}
 
@@ -210,12 +211,15 @@ Time: 1102ms
 </code></pre>
 
 
-### Plus d'information sur Rails
 
-Pour plus d'informations sur Rails, n'hésitez pas à consulter la documentation officiel sur <https://guides.rubyonrails.org/>.
 
-## Aller plus loin
+### More information on Rails
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+To get more information on Rails, go to the [official documentation site](<https://guides.rubyonrails.org).
 
-**Pour discuter avec les autres utilisateurs du lab et avec l'équipe POWER Web Hosting, venez sur [notre room Gitter](https://gitter.im/ovh/power-web-hosting)**
+
+## Going Further
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+
+**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab**

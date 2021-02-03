@@ -40,7 +40,7 @@ This guide will explain how to do it.
 
 ## Requirements
 
-- A [Node.js](https://labs.ovh.com/managed-nodejs) POWER web hosting plan
+- A [Python](https://labs.ovh.com/managed-python) POWER web hosting plan
 - Access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
 If you have just started to use your Web POWER web hosting plan, we suggest you to have a look to our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.

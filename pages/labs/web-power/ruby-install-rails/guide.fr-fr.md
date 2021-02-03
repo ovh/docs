@@ -6,17 +6,37 @@ section: Ruby
 order: 2
 ---
 
-**Dernière mise à jour le 25/01/2021**
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #300A24; 
+   color: #ccc;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+ }
+ .small {
+     font-size: 0.75em;
+ }
+</style>
+
+**Dernière mise à jour le 03/02/2021**
+
 
 ## Objectif
 
-Vous souhaitez développer votre projet web sur le motif de conception MVC (**M**odèle-**V**ue-**C**ontrôleur). Rails vous permet cela via un modèle de développement rapide et intuitif.
+Vous avez souscrit à un hébergement web POWER Ruby et vous voulez y deployer [Rails](https://rubyonrails.org/), le framework de développement d'applications web en Ruby. Ce guide vous explique comment.
 
-**Découvrez comment installer Rails sur votre hébergement web POWER**
 
 ## Prérequis
 
-- Disposer d'une de l'offre d'hébergement web POWER [Ruby](https://labs.ovh.com/managed-ruby).
+- Disposer d'une de l'offre d'hébergement web POWER [ruby](https://labs.ovh.com/managed-ruby).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
 Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous conseillons de consulter notre guide [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) avant de poursuivre.
@@ -24,86 +44,140 @@ Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous c
 
 ## En pratique
 
-Moteur : ruby 2.6 <br>
-Point d'entrée : config.ru<br>
-Dossier racine : www<br>
+Supossons que vous avez la configuration normal pour un hébergement web POWER :
 
-Vérfiez l'installation de Ruby
+- Moteur : ruby 2.6 
+- Point d'entrée : config.ru 
+- Dossier racine : www 
+
+
+> [!primary]
+>
+> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+
+
+[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER. 
+
+Supprimez le dossier racine pour l'initialiser avec Rails. N'oubliez pas d'exporter votre `gempath`ou l'installation du bundle va échouer :
 
 ```sh
-~ $ ruby -v
-ruby 2.6.6p146 (2020-03-31 revision 67876) [x86_64-linux]
-~ $ rails -v
-Rails 6.0.3.3
+rm -rf www
+gem env gempath
+export GEM_HOME=$(gem env gempath | cut -d ':' -f1)
+rails new www
+cd www/
+rails  webpacker:install
 ```
 
-Supprimez le dossier racine pour l'initialiser avec Rails. N'oubliez pas d'exporter votre `gempath`ou l'installation du bundle va échouer.
+Déclarez votre nom de domaine sur liste blanche dans `www/config/environments/development.rb` :
 
-
-```sh
-~ $ rm -rf www
-~ $ gem env gempath
-/home/user/.gem/ruby/2.6.0:/usr/local/ruby2.6/lib/ruby/gems/2.6.0
-~ $ export GEM_HOME=$(gem env gempath | cut -d ':' -f1)
-~ $ rails new www
-      create 
-      create  README.md
-      create  Rakefile
-...
-      remove  config/initializers/cors.rb
-      remove  config/initializers/new_framework_defaults_6_0.rb
-         run  bundle install
-The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
-Fetching gem metadata from https://rubygems.org/............
-Fetching gem metadata from https://rubygems.org/.
-Resolving dependencies...
-Using rake 13.0.1
-...
-* bin/rake: Spring inserted
-* bin/rails: Spring inserted
-       rails  webpacker:install
-~ $ cd www/
-~/www $ rails  webpacker:install
-      create  config/webpacker.yml
-Copying webpack core config
-      create  config/webpack
-      create  config/webpack/development.js
-...
-└─ ws@6.2.1
-Done in 7.14s.
-Webpacker successfully installed 
-```
-
-Déclarez votre nom de domaine sur liste blanche, et désactivez la vérification `check_yarn_integrity`.
-
-```sh
-~ $ vim www/config/environments/development.rb
+```ruby
 Rails.application.configure do
   # Whitelist one hostname
-  config.hosts << "mydomain.ovh"
-...
- 
-~ $ vim www/config/webpacker.yml
-...
+  config.hosts << "your-domain.ovh"
+```
+
+Et désactivez la vérification `check_yarn_integrity` dans la partie `development` de `www/config/webpacker.yml` :
+
+```yaml
 development:
   <<: *default
   compile: true
- 
+
+  # Verifies that correct packages and versions are installed by inspecting package.json, yarn.lock, and node_modules
   check_yarn_integrity: false
-...
 ```
 
-Redémarrez votre instance pour appliquer les changements.
+Faites un [rédemarrage de votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre Rail sera en ligne.
+
+
+![Rails](images/nodejs-install-rails-01.png){.thumbnail}
+
+
+Générez maintenant un *Hello World* with Rails : 
 
 ```sh
-~ $ cd www
-~/www$ touch tmp/restart.txt
+export SPRING_SERVER_COMMAND="$HOME/www/bin/spring server"
+rails generate controller demo index
 ```
 
-Générez le contenu "Hello World" 
+Et créez un fichier `app/views/demo/index.html.erb` :
+ 
+ ```html
+vim app/views/demo/index.html.erb
+<h1>Hello World</h1>
+<p>Hello World from Rails</p>
+```
+
+Ensuite construisez le *Hello World* :
 
 ```sh
+./bin/webpack
+```
+
+Après redémarrage de votre instance, vous pourez visualser votre page dans https://&lt;votre-nom-de-domaine>/demo/index.html
+
+![Rails](images/nodejs-install-rails-02.png){.thumbnail}
+
+Sortie de la console:
+
+<pre class="console"><code>~ $ rm -rf www
+
+~ $ gem env gempath
+/homez.41/powerlp/.gem/ruby/2.6.0:/usr/local/ruby2.6/lib/ruby/gems/2.6.0
+
+~ $ rails new www
+      create
+      create  README.md
+      create  Rakefile
+      create  .ruby-version
+[...]
+Fetching webpacker 4.3.0
+Installing webpacker 4.3.0
+Bundle complete! 17 Gemfile dependencies, 75 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+         run  bundle binstubs bundler
+[...]   
+Installing all JavaScript dependencies [4.3.0]
+         run  yarn add @rails/webpacker@4.3.0 from "."
+yarn add v1.22.10
+[...]
+├─ strip-eof@1.0.0
+├─ thunky@1.1.0
+├─ type-is@1.6.18
+├─ unpipe@1.0.0
+├─ url-parse@1.4.7
+├─ utils-merge@1.0.1
+├─ wbuf@1.7.3
+├─ webpack-dev-middleware@3.7.3
+├─ webpack-dev-server@3.11.2
+├─ websocket-driver@0.7.4
+├─ websocket-extensions@0.1.4
+└─ ws@6.2.1
+Done in 6.19s.
+Webpacker successfully installed 🎉 🍰
+
+~ $ cd www/
+
+~/www $ rails  webpacker:install
+   identical  config/webpacker.yml
+Copying webpack core config
+       exist  config/webpack
+   identical  config/webpack/development.js
+   identical  config/webpack/environment.js
+   identical  config/webpack/production.js
+   identical  config/webpack/test.js
+[...]
+info Direct dependencies
+└─ webpack-dev-server@3.11.2
+info All dependencies
+└─ webpack-dev-server@3.11.2
+Done in 3.81s.
+Webpacker successfully installed 🎉 🍰
+
+
 ~/www $ export SPRING_SERVER_COMMAND="$HOME/www/bin/spring server"
+
 ~/www $ rails generate controller demo index
 Running via Spring preloader in process 11410
       create  app/controllers/demo_controller.rb
@@ -119,35 +193,29 @@ Running via Spring preloader in process 11410
       invoke  assets
       invoke    scss
       create      app/assets/stylesheets/demo.scss
- 
+
 ~/www $ vim app/views/demo/index.html.erb
-<h1>Hello World</h1>
-<p>Hello World from Rails</p>
-~/www $ bin/webpack
+&lt;h1>Hello World&lt;/h1>
+&lt;p>Hello World from Rails&lt;/p>
+
+~/www $ ./bin/webpack
 Hash: 15d1bb7b54cf6326b9ba
 Version: webpack 4.44.2
 Time: 1102ms
-Built at: 10/05/2020 1:43:24 PM
-                                     Asset       Size       Chunks                         Chunk Names
-    js/application-9afcbb5693aa87623e69.js    124 KiB  application  [emitted] [immutable]  application
-js/application-9afcbb5693aa87623e69.js.map    139 KiB  application  [emitted] [dev]        application
-                             manifest.json  364 bytes               [emitted]             
-Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9afcbb5693aa87623e69.js.map
-[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
-[./app/javascript/channels/index.js] 211 bytes {application} [built]
-[./app/javascript/packs/application.js] 749 bytes {application} [built]
-[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
-    + 3 hidden modules
- 
-~/www $ touch tmp/restart.txt
-```
+[...]
 
-Après redémarrage de votre instance, vous pourez visualser votre page.
+~/www $ mkdir -p tmp
+
+~/www $ touch tmp/restart.txt
+</code></pre>
+
+
+### Plus d'information sur Rails
 
 Pour plus d'informations sur Rails, n'hésitez pas à consulter la documentation officiel sur <https://guides.rubyonrails.org/>.
-
-
 
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+
+**Pour discuter avec les autres utilisateurs du lab et avec l'équipe POWER Web Hosting, venez sur [notre room Gitter](https://gitter.im/ovh/power-web-hosting)**
