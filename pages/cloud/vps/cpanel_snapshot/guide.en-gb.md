@@ -1,7 +1,7 @@
 ---
 title: 'Automated Backup - Kernel panic (cPanel)'
 slug: cpanel_auto_backup
-excerpt: 'Find out how to fix issue with cPanel servers which get stuck during OVHcloud automated backup'
+excerpt: 'Find out how to fix issues with cPanel servers getting stuck during OVHcloud automated backup'
 section: 'Advanced usage'
 ---
 
@@ -9,7 +9,7 @@ section: 'Advanced usage'
 
 ## Objective
 
-When using the automated backup feature on a VPS which is running cPanel, you may experience cases when your VPS is stuck in backup status for a long time and may not be accessible. The root cause of this issue is when cPanel users use Jailed Shell access which creates a virtfs on your filesystem. When we take backup of your VPS (when you are subscribed to automated backups or snapshots), the hypervisor communicates to your VPS through the Qemu Guest Agent to freeze the filesystem on the VPS before we take the backup. This mechanism is there to ensure no writes happen to your disk while the backup is running and therefore ensures the consistency of the backup is good.
+When using the automated backup feature on a VPS which is running cPanel, you may experience cases when your VPS is stuck in backup status for a long time and may not be accessible. The root cause of this issue is when cPanel users use Jailed Shell access which creates a virtfs on your filesystem. When we create backups of your VPS (when you are subscribed to automated backups or snapshots), the hypervisor communicates to your VPS through the QEMU Guest Agent to freeze the filesystem on the VPS before we take the backup. This mechanism is there to ensure no writes happen to your disk while the backup is running and therefore ensures the consistency of the backup is good.
 
 However, the virtfs created by cPanel when you allow Jailed Shell access is not possible to freeze. Therefore when they hypervisor issues a guest filesystem freeze to your VPS it locks up and cause a kernel panic. There are three ways to avoid this from happening and we explore them below.
 
@@ -30,7 +30,7 @@ Please chose carefully as they each have their pros and cons.
 
 ### Disable QEMU Guest Agent
 
-Firstly, you need to check if QEMU guest agent is running on your server. You can check this with the following command:
+Firstly, you need to check if QEMU Guest Agent is running on your server. You can check this with the following command:
 
 ```
 systemctl status qemu-guest-agent
