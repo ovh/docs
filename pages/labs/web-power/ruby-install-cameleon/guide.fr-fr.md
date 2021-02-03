@@ -10,7 +10,7 @@ order: 1
 
 ## Objectif
 
-Vous souhaitez une alternative aux CMS (**C**ontent **M**anagement **S**ystem) populaires tout en utilisant le langage Ruby. Camaleon est un CMS flexible vous permetant de créer une structure de contenu personalisée sans avoir à codé.
+Vous souhaitez une alternative aux CMS (**C**ontent **M**anagement **S**ystem) populaires tout en utilisant le langage Ruby. Camaleon est un CMS flexible vous permettant de créer une structure de contenu personnalisée sans avoir à coder.
 
 **Découvrez comment installer Camaleon sur votre hébergement web POWER**
 
@@ -26,7 +26,7 @@ Moteur : ruby 2.6 <br>
 Point d'entrée : config.ru<br>
 Dossier racine : www<br>
 
-Vérfiez l'installation de Ruby
+Vérifiez l'installation de Ruby
 
 ```sh
 ~ $ ruby -v
@@ -35,7 +35,7 @@ ruby 2.6.6p146 (2020-03-31 revision 67876) [x86_64-linux]
 Rails 6.0.3.3
 ```
 
-Supprimez le dossier racine pour l'initialiser avec Rails. N'oubliez pas de d'exporter votre `gempath`ou l'installation du bundle va échouer.
+Supprimez le dossier racine pour l'initialiser avec Rails. N'oubliez pas d'exporter votre `gempath`ou l'installation du bundle va échouer.
 
 ```sh
 ~ $ rm -rf www
