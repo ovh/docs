@@ -85,7 +85,7 @@ pip install django
 Créez le nouveau project Django :
 
 ```sh
-django-admin startproject config
+django-admin startproject config .
 ```
 
 Par défaut, l'application `wsgi` de Django se trouve dans `config/wsgi.py`.
@@ -130,7 +130,7 @@ application = get_wsgi_application()
 Django doit déclarer les hôtes autorisés pour le site Web. Il sont déclarés dans `config/settings.py`, par exemple :
 
 ```python
-ALLOWED_HOSTS = ['yourdomainname', 'www.yourdomainname', 'yourftpuser.cluster022.hosting.ovh.net']
+ALLOWED_HOSTS = ['yourdomainname', 'www.yourdomainname', 'yourftpuser.cluster000.hosting.ovh.net']
 ```
 Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-POWER/#restart), votre Django sera en ligne.
 
