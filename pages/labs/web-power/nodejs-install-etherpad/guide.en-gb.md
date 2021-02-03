@@ -65,8 +65,12 @@ Let's suppose you have the default configuration for Node.js hosting:
 cd www
 git init
 git remote add origin https://github.com/ether/etherpad-lite.git
-git pull origin master
+git pull origin master/1.8.6
 ```
+
+> [!alert]
+>
+> At the time of writing this guide, Etherpad 1.8.7 doesn't work on POWER web hosting because [a problem with Web Sockets make it unable top run on the Passenger for Apache](https://github.com/ether/etherpad-lite/wiki/Running-Etherpad-on-Phusion-Passenger#phusion-passenger-for-apache) architecture underlaying our service.
 
 Then install Etherpad dependencies and setup the entry point:
 
@@ -96,8 +100,8 @@ remote: Total 36100 (delta 1), reused 0 (delta 0), pack-reused 36098
 Receiving objects: 100% (36100/36100), 16.57 MiB | 14.04 MiB/s, done.
 Resolving deltas: 100% (25484/25484), done.
 From https://github.com/ether/etherpad-lite
- * branch            master     -> FETCH_HEAD
- * [new branch]      master     -> origin/master
+ * branch            release/1.8.6     -> FETCH_HEAD
+ * [new branch]      release/1.8.6     -> origin/master
 Checking out files: 100% (492/492), done.
 ~/www $ bash bin/installDeps.sh
 Copy the settings template to settings.json...
