@@ -28,7 +28,7 @@ L'interface de gestion de votre offre d'hébergement web POWER se trouve dans la
 
 ![From the OVH Control Panel](images/getting-started-01.png){.thumbnail}
 
-#### Accès FTP - SSH <a name="#ssh"></a>
+#### Accès FTP - SSH <a name="ssh"></a>
 
 Lors de l'activation de votre offre d'hébergement web POWER, un e-mail vous est transmis avec les informations de connexion FTP et SSH. Vous pouvez également gérer ces accès depuis l'onglet `FTP - SSH`{.action}. 
 
@@ -188,7 +188,7 @@ Les [API OVHcloud](https://api.ovh.com/) actuellement disponibles pour l'offre d
 > @api {GET} /hosting/web/{serviceName}/availableConfigurations
 
 
-#### Visualiser la configuration active <a name="#api-get-active-configuration"></a>
+#### Visualiser la configuration active <a name="api-get-active-configuration"></a>
 
 > [!api]
 >
