@@ -10,7 +10,7 @@ order: 2
 
 ## Objectif
 
-Si vous cherchez un framework très légé pour des projets simple mais qui reste extensible, Flask répondra à ces critères
+Si vous cherchez un framework très léger pour des projets simples mais qui restent extensibles, Flask répondra à ces critères
 
 **Découvrez comment installer Flask sur votre hébergement web POWER**
 
@@ -34,7 +34,7 @@ Pour utiliser WSGI (**W**eb **S**erver **G**ateway Interface) sur frameworks pyt
 ~/www$ source venv/bin/activate
 ```
 
-Mettez `pip` à jour.
+Mettez à jour `pip`.
 
 ```sh
 ~/www$ pip install --upgrade pip
