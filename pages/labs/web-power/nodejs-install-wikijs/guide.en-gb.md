@@ -1,6 +1,6 @@
 ---
 title: Install WikiJS on your POWER web hosting plan
-slug: nodejs-install-strapi
+slug: nodejs-install-wikijs
 excerpt: Find out how to install WikiJS on your POWER web hosting plan
 section: Node.js
 order: 4
