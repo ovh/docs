@@ -26,7 +26,7 @@ Retrouvez ici les principales informations relatives à la gestion de votre héb
 
 L'interface de gestion de votre offre d'hébergement web POWER se trouve dans la section `Web Cloud`{.action}, puis `Hébergements`{.action} dans la colonne de gauche. 
 
-#### Accès FTP - SSH
+#### Accès FTP - SSH <a name="#ssh"></a>
 
 Lors de l'activation de votre offre d'hébergement web POWER, un e-mail vous est transmis avec les informations de connexion FTP et SSH. Vous pouvez également gérer ces accès depuis l'onglet `FTP - SSH`{.action}. 
 
@@ -54,12 +54,28 @@ Prenez connaissance du guide [Consulter les statistiques et les logs de mon site
 
 #### Créer une page Hello world 
 
-Version utilisée : nodejs 14
-<br> Point d'entrée : index.js
-<br> Dossier racine : www
+Supossons que vous avez la configuration normal pour un hébergement web POWER :
+
+- Moteur : nodejs 14 
+- Point d'entrée : index.js 
+- Dossier racine : www 
+
+
+> [!primary]
+>
+> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+
+
+[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER et y installer Express avec `npm`: 
 
 ```sh
-~ $ vi www/index.js
+npm install express --save
+```
+
+Then go to the `www` folder and create and `index.js` file there:
+
+`index.js`
+```javascript
 const http = require('http');
 const port = 3000;
 const msg = `Hello World from NodeJS ${process.version}\n`;
@@ -71,7 +87,8 @@ res.end(msg);
 server.listen(port);
 ```
 
-Pour appliquer ces modification, pensez à [redémarrer votre instance](#restart).
+Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-POWER/#restart), votre *Hello World* sera en ligne.
+
 
 ### Python
 
@@ -135,7 +152,7 @@ Les [API OVHcloud](https://api.ovh.com/) actuellement disponibles pour l'offre d
 > @api {GET} /hosting/web/{serviceName}/availableConfigurations
 
 
-#### Visualiser la configuration active
+#### Visualiser la configuration active <a name="#api-get-active-configuration"></a>
 
 > [!api]
 >
@@ -194,3 +211,5 @@ Après chaque modification structurante de votre application, il est conseillé 
 [Créer une base de données sur son hébergement web](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+
+**Pour discuter avec les autres utilisateurs du lab et avec l'équipe POWER Web Hosting, venez sur [notre room Gitter](https://gitter.im/ovh/power-web-hosting)**
