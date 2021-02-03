@@ -81,7 +81,7 @@ Version utilisée : Pyhton 3.7
 <br> Point d'entrée : app.py
 <br> Dossier racine : www
 
-```sh
+```python
 import sys
  
 def application(environ, start_response):
@@ -103,7 +103,7 @@ Pour appliquer ces modification, pensez à [redémarrer votre instance](#restart
 #### Créer un page Hello world 
 
 Version utilisée : Ruby 2.6
-<br> Point d'entrée : app.py
+<br> Point d'entrée : config.ru
 <br> Dossier racine : www
 
 ```sh

@@ -59,7 +59,7 @@ You can start by doing:
  
 Done in 106.67s.
  
-~ $ cat << 'EOF' > www/server.js
+~ $ cat << 'EOF' > www/index.js
 const strapi = require('strapi');
  
 strapi(/* {...} */).start();
