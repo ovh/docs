@@ -54,7 +54,7 @@ Prenez connaissance du guide [Consulter les statistiques et les logs de mon site
 
 #### Créer une page Hello world 
 
-Supossons que vous avez la configuration normal pour un hébergement web POWER :
+Supossons que vous avez la configuration normal pour un hébergement web POWER Node.js :
 
 - Moteur : nodejs 14 
 - Point d'entrée : index.js 
@@ -66,13 +66,9 @@ Supossons que vous avez la configuration normal pour un hébergement web POWER :
 > Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
 
 
-[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER et y installer Express avec `npm`: 
+[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER.
 
-```sh
-npm install express --save
-```
-
-Then go to the `www` folder and create and `index.js` file there:
+Allez au repertore `www` et y créez un fichier `index.js`:
 
 `index.js`
 ```javascript
@@ -94,10 +90,23 @@ Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-P
 
 #### Créer une page Hello world 
 
-Version utilisée : Pyhton 3.7
-<br> Point d'entrée : app.py
-<br> Dossier racine : www
+Supossons que vous avez la configuration normal pour un hébergement web POWER Python :
 
+- Moteur : Pyhton 3.7
+- Point d'entrée : app.py 
+- Dossier racine : www 
+
+
+> [!primary]
+>
+> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+
+
+[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER.
+
+Allez au repertore `www` et y créez un fichier `app.py`:
+
+`app.py`
 ```python
 import sys
  
@@ -118,12 +127,24 @@ Pour appliquer ces modification, pensez à [redémarrer votre instance](#restart
 ### Ruby
 
 #### Créer un page Hello world 
+Supossons que vous avez la configuration normal pour un hébergement web POWER Ruby :
 
-Version utilisée : Ruby 2.6
-<br> Point d'entrée : config.ru
-<br> Dossier racine : www
+- Moteur : Ruby 2.6
+- Point d'entrée : config.ru 
+- Dossier racine : www 
 
-```sh
+
+> [!primary]
+>
+> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+
+
+[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER.
+
+Allez au repertore `www` et y créez un fichier `config.ru`:
+
+`config.ru`
+```ruby
 require 'socket'
 require 'timeout'
  
@@ -137,6 +158,7 @@ end
  
 run Application.new
 ```
+
 Pour appliquer ces modification, pensez à [redémarrer votre instance](#restart).
 
 ### Depuis les API
