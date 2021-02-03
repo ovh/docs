@@ -64,7 +64,7 @@ Prenez connaissance du guide [Consulter les statistiques et les logs de mon site
 
 #### Créer une page Hello world 
 
-Supossons que vous avez la configuration normal pour un hébergement web POWER Node.js :
+Supposons que vous avez la configuration normale pour un hébergement web POWER Node.js :
 
 - Moteur : nodejs 14 
 - Point d'entrée : index.js 
@@ -73,12 +73,12 @@ Supossons que vous avez la configuration normal pour un hébergement web POWER N
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
 
 
 [Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER.
 
-Allez au repertore `www` et y créez un fichier `index.js`:
+Allez au repertoire `www` et y créez un fichier `index.js`:
 
 `index.js`
 ```javascript
@@ -93,7 +93,7 @@ res.end(msg);
 server.listen(port);
 ```
 
-Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-POWER/#restart), votre *Hello World* sera en ligne.
+Faites un [redémarrage de votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre *Hello World* sera en ligne.
 
 ![Hello World in Node.js](images/getting-started-06.png){.thumbnail}
 
@@ -101,7 +101,7 @@ Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-P
 
 #### Créer une page Hello world 
 
-Supossons que vous avez la configuration normal pour un hébergement web POWER Python :
+Supposons que vous avez la configuration normale pour un hébergement web POWER Python :
 
 - Moteur : Pyhton 3.7
 - Point d'entrée : app.py 
@@ -110,12 +110,12 @@ Supossons que vous avez la configuration normal pour un hébergement web POWER P
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
 
 
 [Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER.
 
-Allez au repertore `www` et y créez un fichier `app.py`:
+Allez au repertoire `www` et y créez un fichier `app.py`:
 
 `app.py`
 ```python
@@ -133,13 +133,13 @@ def application(environ, start_response):
     return [output]    
 ```
 
-Pour appliquer ces modification, pensez à [redémarrer votre instance](#restart).
+Pour appliquer ces modifications, pensez à [redémarrer votre instance](#restart).
 
 ### Ruby
 
 #### Créer un page Hello world 
 
-Supossons que vous avez la configuration normal pour un hébergement web POWER Ruby :
+Supposons que vous avez la configuration normale pour un hébergement web POWER Ruby :
 
 - Moteur : Ruby 2.6
 - Point d'entrée : config.ru 
@@ -148,12 +148,12 @@ Supossons que vous avez la configuration normal pour un hébergement web POWER R
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
 
 
 [Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER.
 
-Allez au repertore `www` et y créez un fichier `config.ru`:
+Allez au repertoire `www` et y créez un fichier `config.ru`:
 
 `config.ru`
 ```ruby
@@ -171,7 +171,7 @@ end
 run Application.new
 ```
 
-Pour appliquer ces modification, pensez à [redémarrer votre instance](#restart).
+Pour appliquer ces modifications, pensez à [redémarrer votre instance](#restart).
 
 ![Hello World in Ruby](images/getting-started-08.png){.thumbnail}
 

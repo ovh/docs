@@ -18,7 +18,7 @@ Retrouvez ici les principales informations relatives à la gestion de votre héb
 ## Prérequis 
 
 - Disposer d'une des 3 offres d'hébergement web POWER. [Node.js](https://labs.ovh.com/managed-nodejs), [Python](https://labs.ovh.com/managed-python) ou [Ruby](https://labs.ovh.com/managed-ruby).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 ## En pratique
 
@@ -26,9 +26,13 @@ Retrouvez ici les principales informations relatives à la gestion de votre héb
 
 L'interface de gestion de votre offre d'hébergement web POWER se trouve dans la section `Web Cloud`{.action}, puis `Hébergements`{.action} dans la colonne de gauche. 
 
+![From the OVH Control Panel](images/getting-started-01.png){.thumbnail}
+
 #### Accès FTP - SSH <a name="#ssh"></a>
 
 Lors de l'activation de votre offre d'hébergement web POWER, un e-mail vous est transmis avec les informations de connexion FTP et SSH. Vous pouvez également gérer ces accès depuis l'onglet `FTP - SSH`{.action}. 
+
+![FTP - SSH access](images/getting-started-02.png){.thumbnail}
 
 Vous trouverez des informations complémentaires dans notre guide [Se connecter à l’espace de stockage de son hébergement web](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
 
@@ -36,11 +40,15 @@ Vous trouverez des informations complémentaires dans notre guide [Se connecter 
 
 Par défaut, votre hébergement web POWER est attaché à une URL automatiquement attribuée. Vous pouvez néanmoins utiliser votre propre [nom de domaine](https://www.ovh.com/fr/domaines/), en l'ajoutant depuis l'onglet `Multisite`{.action}. 
 
+![Adding a domain name](images/getting-started-03.png){.thumbnail}
+
 Pour plus de détails sur la déclaration d'un nom de domaine sur votre hébergement web, consulter notre guide [Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-1-acceder-a-la-gestion-multisite). 
 
 #### Utiliser une base de données 
 
 Des bases de données sont incluses avec votre offre d'hébergement web POWER. Elles sont accessibles depuis l'onglet `Bases de données`{.action}.
+
+![Using a database](images/getting-started-04.png){.thumbnail}
 
 Si vous souhaitez d'avantage de détails sur la création d'une base de données sur votre hébergement POWER, consultez notre documentation [Créer une base de données sur son hébergement web](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
 
@@ -48,13 +56,15 @@ Si vous souhaitez d'avantage de détails sur la création d'une base de données
 
 Retrouvez l'ensemble des logs et statistiques de votre hébergement et de vos sites dans l'onglet `Statistiques et logs`{.action}. 
 
+![Accessing logs and statistics](images/getting-started-05.png){.thumbnail}
+
 Prenez connaissance du guide [Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#consulter-les-statistiques-et-les-logs) pour plus d'informations à ce sujet.
 
 ### Node.js
 
 #### Créer une page Hello world 
 
-Supossons que vous avez la configuration normal pour un hébergement web POWER Node.js :
+Supposons que vous avez la configuration normale pour un hébergement web POWER Node.js :
 
 - Moteur : nodejs 14 
 - Point d'entrée : index.js 
@@ -63,12 +73,12 @@ Supossons que vous avez la configuration normal pour un hébergement web POWER N
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
 
 
 [Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER.
 
-Allez au repertore `www` et y créez un fichier `index.js`:
+Allez au repertoire `www` et y créez un fichier `index.js`:
 
 `index.js`
 ```javascript
@@ -83,14 +93,15 @@ res.end(msg);
 server.listen(port);
 ```
 
-Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-POWER/#restart), votre *Hello World* sera en ligne.
+Faites un [redémarrage de votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre *Hello World* sera en ligne.
 
+![Hello World in Node.js](images/getting-started-06.png){.thumbnail}
 
 ### Python
 
 #### Créer une page Hello world 
 
-Supossons que vous avez la configuration normal pour un hébergement web POWER Python :
+Supposons que vous avez la configuration normale pour un hébergement web POWER Python :
 
 - Moteur : Pyhton 3.7
 - Point d'entrée : app.py 
@@ -99,12 +110,12 @@ Supossons que vous avez la configuration normal pour un hébergement web POWER P
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
 
 
 [Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER.
 
-Allez au repertore `www` et y créez un fichier `app.py`:
+Allez au repertoire `www` et y créez un fichier `app.py`:
 
 `app.py`
 ```python
@@ -122,12 +133,13 @@ def application(environ, start_response):
     return [output]    
 ```
 
-Pour appliquer ces modification, pensez à [redémarrer votre instance](#restart).
+Pour appliquer ces modifications, pensez à [redémarrer votre instance](#restart).
 
 ### Ruby
 
 #### Créer un page Hello world 
-Supossons que vous avez la configuration normal pour un hébergement web POWER Ruby :
+
+Supposons que vous avez la configuration normale pour un hébergement web POWER Ruby :
 
 - Moteur : Ruby 2.6
 - Point d'entrée : config.ru 
@@ -136,12 +148,12 @@ Supossons que vous avez la configuration normal pour un hébergement web POWER R
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
 
 
 [Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER.
 
-Allez au repertore `www` et y créez un fichier `config.ru`:
+Allez au repertoire `www` et y créez un fichier `config.ru`:
 
 `config.ru`
 ```ruby
@@ -159,7 +171,9 @@ end
 run Application.new
 ```
 
-Pour appliquer ces modification, pensez à [redémarrer votre instance](#restart).
+Pour appliquer ces modifications, pensez à [redémarrer votre instance](#restart).
+
+![Hello World in Ruby](images/getting-started-08.png){.thumbnail}
 
 ### Depuis les API
 

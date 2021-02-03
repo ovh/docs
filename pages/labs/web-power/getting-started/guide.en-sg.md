@@ -32,7 +32,7 @@ order: 1
 
 You've subscribed to a Web POWER web hosting plan to deploy **Node.js**, **Python** or **Ruby** applications, and you want to begin developing your project.
 
-This guide will explain how to manage your POWER web hosting using the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and the [OVHcloud APIs](https://api.ovh.com/).
+This guide will explain how to manage your POWER web hosting using the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and the [OVHcloud APIs](https://api.ovh.com/).
 
 **Find out how to get started with a POWER web hosting plan.**
 
@@ -40,7 +40,7 @@ This guide will explain how to manage your POWER web hosting using the [OVHcloud
 ## Requirements
 
 - one of the 3 POWER web hosting plans: [Node.js](https://labs.ovh.com/managed-nodejs), [Python](https://labs.ovh.com/managed-python) ou [Ruby](https://labs.ovh.com/managed-ruby)
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
 ## Instructions
 
