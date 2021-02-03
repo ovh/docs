@@ -10,7 +10,7 @@ order: 2
 
 ## Objectif
 
-Vous souhaitez développer votre projet web sur le motif de conception MVC (**M**odèle-**V**ue-**C**ontrôleur). Rails vous permet cela via un modèle de dévellopement rapide et intuitif.
+Vous souhaitez développer votre projet web sur le motif de conception MVC (**M**odèle-**V**ue-**C**ontrôleur). Rails vous permet cela via un modèle de développement rapide et intuitif.
 
 **Découvrez comment installer Rails sur votre hébergement web POWER**
 
@@ -37,7 +37,7 @@ ruby 2.6.6p146 (2020-03-31 revision 67876) [x86_64-linux]
 Rails 6.0.3.3
 ```
 
-Supprimez le dossier racine pour l'initialiser avec Rails. N'oubliez pas de d'exporter votre `gempath`ou l'installation du bundle va échouer.
+Supprimez le dossier racine pour l'initialiser avec Rails. N'oubliez pas d'exporter votre `gempath`ou l'installation du bundle va échouer.
 
 
 ```sh
@@ -74,7 +74,7 @@ Done in 7.14s.
 Webpacker successfully installed 
 ```
 
-Passez votre nom de domaine en liste blanche, et désactivez la vérification `check_yarn_integrity`.
+Déclarez votre nom de domaine sur liste blanche, et désactivez la vérification `check_yarn_integrity`.
 
 ```sh
 ~ $ vim www/config/environments/development.rb
@@ -142,9 +142,9 @@ Entrypoint application = js/application-9afcbb5693aa87623e69.js js/application-9
 ~/www $ touch tmp/restart.txt
 ```
 
-Après redémarrage de votre instance vous pourez visualser votre page
+Après redémarrage de votre instance, vous pourez visualser votre page.
 
-Pour plus d'information sur Rails, n'hésitez pas à consulter la documentation officiel sur <https://guides.rubyonrails.org/>
+Pour plus d'informations sur Rails, n'hésitez pas à consulter la documentation officiel sur <https://guides.rubyonrails.org/>.
 
 
 
