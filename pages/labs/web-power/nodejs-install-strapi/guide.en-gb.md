@@ -114,10 +114,12 @@ EOF
 
 ~/www $ touch tmp/restart.txt
 
-</code>
+</code></pre>
 
 
 
 ## Going Further
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+
+**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab**

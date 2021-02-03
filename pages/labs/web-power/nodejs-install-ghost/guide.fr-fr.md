@@ -158,7 +158,7 @@ added 420 packages from 208 contributors and audited 420 packages in 20.791s
 ~/www $ mkdir -p tmp
 
 ~/www $ touch tmp/restart.txt
-</code>
+</code></pre>
 
 
 
