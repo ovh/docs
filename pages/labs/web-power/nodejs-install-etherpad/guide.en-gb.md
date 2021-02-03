@@ -3,7 +3,7 @@ title: Install Etherpad on your POWER web hosting plan
 slug: nodejs-install-etherpad
 excerpt: Find out how to install Etherpad  on your POWER web hosting plan
 section: Node.js
-order: 1
+order: 2
 ---
 
 
@@ -59,7 +59,7 @@ Let's suppose you have the default configuration for Node.js hosting:
 >
 > To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint
 
-[Access via SSH](../getting-started-with-power-web-hosting/#ssh) to your POWER web hosting, and retroive etherpad sources into the `www` folder:
+[Access via SSH](../getting-started-with-power-web-hosting/#ssh) to your POWER web hosting, and retrieve etherpad sources into the `www` folder:
 
 ```sh
 cd www
@@ -75,28 +75,11 @@ bash bin/installDeps.sh
 ln -fs node_modules/ep_etherpad-lite/node/server.js index.js
 ```
 
-
-1. Move to a folder where you want to install Etherpad. Clone the git repository: `git clone --branch master git://github.com/ether/etherpad-lite.git`
-1. Change into the new directory containing the cloned source code: `cd etherpad-lite`
-1. run `bin/run`
-
 And [restart your instance](../getting-started-with-power-web-hosting/#restart), your Etherpad will be online.
 
-`index.js`
-```javascript
-const etherpad = require('etherpad');
-const port = 3000;
-const msg = `Hello World from NodeJS ${process.version}\n`;
-const app = etherpad();app.get('/', function (req, res) {
-res.send(msg);
-});
-app.listen(port);
-```
+![Etherpad](images/nodejs-install-etherpad-01.png){.thumbnail}
 
-And [restart your instance](../getting-started-with-power-web-hosting/#restart), your Etherpad *Hello World* will be online.
-
-![Etherpad Hello World](images/nodejs-install-etherpad-01.png){.thumbnail}
-
+Terminal output:
 
 <pre class="console"><code>~ $ node -v
 v14.15.4

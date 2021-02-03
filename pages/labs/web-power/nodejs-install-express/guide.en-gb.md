@@ -82,6 +82,7 @@ And [restart your instance](../getting-started-with-power-web-hosting/#restart),
 
 ![Express Hello World](images/nodejs-install-express-01.png){.thumbnail}
 
+Terminal output:
 
 <pre class="console"><code>~/www $ cd www
 ~/www $ node -v
