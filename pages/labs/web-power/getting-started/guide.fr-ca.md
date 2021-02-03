@@ -34,7 +34,7 @@ Lors de l'activation de votre offre d'hébergement web POWER, un e-mail vous est
 
 ![FTP - SSH access](images/getting-started-02.png){.thumbnail}
 
-Vous trouverez des informations complémentaires dans notre guide [Se connecter à l’espace de stockage de son hébergement web](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/).
+Vous trouverez des informations complémentaires dans notre guide [Se connecter à l’espace de stockage de son hébergement web](../../hosting/connexion-espace-stockage-ftp-hebergement-web/).
 
 #### Ajouter un nom de domaine
 
@@ -42,7 +42,7 @@ Par défaut, votre hébergement web POWER est attaché à une URL automatiquemen
 
 ![Adding a domain name](images/getting-started-03.png){.thumbnail}
 
-Pour plus de détails sur la déclaration d'un nom de domaine sur votre hébergement web, consulter notre guide [Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-1-acceder-a-la-gestion-multisite). 
+Pour plus de détails sur la déclaration d'un nom de domaine sur votre hébergement web, consulter notre guide [Partager son hébergement entre plusieurs sites](../../hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-1-acceder-a-la-gestion-multisite). 
 
 #### Utiliser une base de données 
 
@@ -50,7 +50,7 @@ Des bases de données sont incluses avec votre offre d'hébergement web POWER. E
 
 ![Using a database](images/getting-started-04.png){.thumbnail}
 
-Si vous souhaitez d'avantage de détails sur la création d'une base de données sur votre hébergement POWER, consultez notre documentation [Créer une base de données sur son hébergement web](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
+Si vous souhaitez d'avantage de détails sur la création d'une base de données sur votre hébergement POWER, consultez notre documentation [Créer une base de données sur son hébergement web](../../hosting/creer-base-de-donnees/).
 
 #### Consultation des logs et statisques
 
@@ -58,7 +58,7 @@ Retrouvez l'ensemble des logs et statistiques de votre hébergement et de vos si
 
 ![Accessing logs and statistics](images/getting-started-05.png){.thumbnail}
 
-Prenez connaissance du guide [Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#consulter-les-statistiques-et-les-logs) pour plus d'informations à ce sujet.
+Prenez connaissance du guide [Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](../../hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#consulter-les-statistiques-et-les-logs) pour plus d'informations à ce sujet.
 
 ### Node.js
 
@@ -73,10 +73,10 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration active](#api-get-active-configuration) de l'API OVHcloud
 
 
-[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER.
+[Accédez via SSH](#ssh) à votre hébergement web POWER.
 
 Allez au repertoire `www` et y créez un fichier `index.js`:
 
@@ -93,7 +93,7 @@ res.end(msg);
 server.listen(port);
 ```
 
-Faites un [redémarrage de votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre *Hello World* sera en ligne.
+Faites un [redémarrage de votre instance](#restart), votre *Hello World* sera en ligne.
 
 ![Hello World in Node.js](images/getting-started-06.png){.thumbnail}
 
@@ -110,10 +110,10 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration active](#api-get-active-configuration) de l'API OVHcloud
 
 
-[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER.
+[Accédez via SSH](#ssh) à votre hébergement web POWER.
 
 Allez au repertoire `www` et y créez un fichier `app.py`:
 
@@ -148,10 +148,10 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration active](#api-get-active-configuration) de l'API OVHcloud
 
 
-[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER.
+[Accédez via SSH](#ssh) à votre hébergement web POWER.
 
 Allez au repertoire `www` et y créez un fichier `config.ru`:
 
@@ -177,7 +177,7 @@ Pour appliquer ces modifications, pensez à [redémarrer votre instance](#restar
 
 ### Depuis les API
 
-Si vous n'êtes pas déjà familiarisé avec le fonctionnement des API OVHcloud, consultez le guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/api-premiers-pas/).
+Si vous n'êtes pas déjà familiarisé avec le fonctionnement des API OVHcloud, consultez le guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/).
 
 Les [API OVHcloud](https://api.ovh.com/) actuellement disponibles pour l'offre d'hébergement POWER sont les suivantes :
 
@@ -223,7 +223,7 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ```
 ### Redémarrer votre instance <a name="restart"></a>
 
-Après chaque modification structurante de votre application, il est conseillé de redémarrer votre instance pour constater les changements. Pour cela, il vous suffira de saisir la commande suivante:
+Après chaque modification structurante de votre application, il est conseillé de redémarrer votre instance pour visualiser les changements. Pour cela, il vous suffira de saisir la commande suivante:
 
 ```sh
 ~ $ cd www
@@ -238,13 +238,13 @@ Après chaque modification structurante de votre application, il est conseillé 
 
 ## Aller plus loin
 
-[Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-1-acceder-a-la-gestion-multisite)
+[Partager son hébergement entre plusieurs sites](../../hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-1-acceder-a-la-gestion-multisite)
 
-[Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](https://docs.ovh.com/fr/hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#consulter-les-statistiques-et-les-logs)
+[Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](../../hosting/mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/#consulter-les-statistiques-et-les-logs)
 
-[Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/api-premiers-pas/)
+[Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/)
 
-[Créer une base de données sur son hébergement web](https://docs.ovh.com/fr/hosting/creer-base-de-donnees/).
+[Créer une base de données sur son hébergement web](../../hosting/creer-base-de-donnees/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 

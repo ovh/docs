@@ -99,7 +99,7 @@ Let's suppose you have the default configuration for Node.js hosting:
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint
+> To verify your configuration, you can use the [Retrieve active configuration](#api-get-active-configuration) API endpoint
 
 Access via SSH to your POWER web hosting, go to the `www` folder and create and `index.js` file there:
 
@@ -148,7 +148,7 @@ Let's suppose you have the default configuration for Pyhton hosting:
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint
+> To verify your configuration, you can use the [Retrieve active configuration](#api-get-active-configuration) API endpoint
 
 Access via SSH to your POWER web hosting, go to the `www` folder and create and `app.py` file there:
 
@@ -184,7 +184,7 @@ Let's suppose you have the default configuration for Ruby hosting:
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint
+> To verify your configuration, you can use the [Retrieve active configuration](#api-get-active-configuration) API endpoint
 
 Access via SSH to your POWER web hosting, go to the `www` folder and create and `config.ru` file there:
 
