@@ -165,10 +165,13 @@ added 420 packages from 208 contributors and audited 420 packages in 20.791s
 ~/www $ mkdir -p tmp
 
 ~/www $ touch tmp/restart.txt
-</code>
+</code></pre>
 
 
 
 ## Going Further
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+
+
+**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab**

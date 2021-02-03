@@ -31,7 +31,7 @@ order: 5
 
 ## Objective
 
-You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy a [real-time presentation slide platform](https://nafeu.medium.com/real-time-presentation-slides-with-socket-io-express-node-js-and-javascript-cf08a95ff098) blogging platform on it.
+You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy a [real-time presentation slide platform](https://nafeu.medium.com/real-time-presentation-slides-with-socket-io-express-node-js-and-javascript-cf08a95ff098) on it.
 
 This guide will explain how to do it.
 
@@ -105,10 +105,13 @@ found 18 vulnerabilities (9 low, 3 moderate, 5 high, 1 critical)
 
 ~/www $ touch tmp/restart.txt
 
-</code>
+</code></pre>
 
 
 
 ## Going Further
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+
+
+**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab**
