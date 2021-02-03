@@ -5,6 +5,7 @@ excerpt: Découvrez comment installer slideshow sur votre hébergement web POWER
 section: Node.js
 order: 5
 ---
+
 <style>
  pre {
      font-size: 14px;
@@ -67,7 +68,7 @@ npm install --save
 ln -fs server.js index.js
 ```
 
-Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-POWER/#restart), votre application Expresss sera en ligne.
+Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-POWER/#restart), votre application de présentation de slides sera en ligne.
 
 ![Slideshow](images/nodejs-install-slideshow-01.png){.thumbnail}
 
