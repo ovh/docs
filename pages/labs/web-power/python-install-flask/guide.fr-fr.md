@@ -47,7 +47,7 @@ Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous c
 ### Installer et mettre en ligne une première page
 
 
-Supossons que vous avez la configuration normal pour un hébergement web POWER :
+Supposons que vous avez la configuration normale pour un hébergement web POWER :
 
 - Moteur : Python 3.8 
 - Point d'entrée : app.py 
@@ -95,7 +95,7 @@ def hello_world():
     return 'Hello, World!'
 ```
 
-Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-POWER/#restart), votre Django sera en ligne.
+[Rédemarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre Django sera en ligne.
 
 
 ![Flask](images/python-install-flask-01.png){.thumbnail}

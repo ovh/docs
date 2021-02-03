@@ -32,7 +32,9 @@ order: 3
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Node.js et vous voulez y deployer une plateforme de blog [Ghost](https://ghost.org/). Ce guide vous explique comment.
+Vous avez souscrit à un hébergement web POWER Node.js et vous voulez y deployer une plateforme de blog [Ghost](https://ghost.org/).
+
+**Découvrez comment installer Ghost sur votre hébergement web POWER**
 
 ## Prérequis
 
@@ -43,7 +45,7 @@ Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous c
 
 ## En pratique
 
-Supossons que vous avez la configuration normal pour un hébergement web POWER :
+Supposons que vous avez la configuration normale pour un hébergement web POWER :
 
 - Moteur : nodejs 14 
 - Point d'entrée : index.js 
@@ -52,16 +54,19 @@ Supossons que vous avez la configuration normal pour un hébergement web POWER :
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration)
 
 
-[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER. Commencez par définir le nom de domaine dans une variable `DOMAIN` :
+[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER. 
+
+Définissez le nom de domaine dans une variable `DOMAIN` :
 
 ```sh
 echo "Enter your domain (my-domain.ovh for example):"
 read DOMAIN
 ```
-Installez ensuite Ghost dans votre repertoire principal (pas dans `www`) avec `npm` :
+
+Installez Ghost dans votre repertoire principal (pas dans `www`) avec `npm` :
 
 ```sh
 cd $HOME
@@ -94,10 +99,9 @@ VERSION=$(ghost --version | sed -n 's/Ghost version: \([0-9.]*\).*/\1/p')
 ln -fs versions/${VERSION}/index.js index.js
 ```
 
-Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-POWER/#restart), votre plateforme Ghost sera en ligne.
+[Rédemarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), puis votre plateforme Ghost sera en ligne.
 
 ![Ghost](images/nodejs-install-ghost-01.png){.thumbnail}
-
 
 Sortie du terminal:
 
@@ -159,7 +163,6 @@ added 420 packages from 208 contributors and audited 420 packages in 20.791s
 
 ~/www $ touch tmp/restart.txt
 </code></pre>
-
 
 
 ## Aller plus loin

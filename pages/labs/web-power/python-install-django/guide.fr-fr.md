@@ -48,7 +48,7 @@ Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous c
 ### Installer et mettre en ligne une première page
 
 
-Supossons que vous avez la configuration normal pour un hébergement web POWER :
+Supposons que vous avez la configuration normale pour un hébergement web POWER :
 
 - Moteur : Python 3.8 
 - Point d'entrée : app.py 
@@ -132,7 +132,7 @@ Django doit déclarer les hôtes autorisés pour le site Web. Il sont déclarés
 ```python
 ALLOWED_HOSTS = ['yourdomainname', 'www.yourdomainname', 'yourftpuser.cluster000.hosting.ovh.net']
 ```
-Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-POWER/#restart), votre Django sera en ligne.
+[Rédemarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre Django sera en ligne.
 
 
 ![Django](images/python-install-django-01.png){.thumbnail}

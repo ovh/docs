@@ -73,7 +73,7 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration active](#api-get-active-configuration) de l'API OVHcloud
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](#api-get-active-configuration)
 
 
 [Accédez via SSH](#ssh) à votre hébergement web POWER.
@@ -110,7 +110,7 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration active](#api-get-active-configuration) de l'API OVHcloud
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](#api-get-active-configuration)
 
 
 [Accédez via SSH](#ssh) à votre hébergement web POWER.
@@ -148,8 +148,7 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration active](#api-get-active-configuration) de l'API OVHcloud
-
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](#api-get-active-configuration)
 
 [Accédez via SSH](#ssh) à votre hébergement web POWER.
 

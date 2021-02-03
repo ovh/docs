@@ -31,7 +31,9 @@ order: 6
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Node.js et vous voulez y deployer un CMS *headless* basé sur [Strapi](https://strapi.io/). Ce guide vous explique comment.
+Vous avez souscrit à un hébergement web POWER Node.js et vous voulez y deployer un CMS *headless* basé sur [Strapi](https://strapi.io/).
+
+**Découvrez comment installer strapi sur votre hébergement web POWER**
 
 ## Prérequis
 
@@ -42,7 +44,7 @@ Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous c
 
 ## En pratique
 
-Supossons que vous avez la configuration normal pour un hébergement web POWER :
+Supposons que vous avez la configuration normale pour un hébergement web POWER :
 
 - Moteur : nodejs 14 
 - Point d'entrée : index.js 
@@ -51,19 +53,19 @@ Supossons que vous avez la configuration normal pour un hébergement web POWER :
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration)
 
 
 [Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER. 
 
-Commencez par éffacer le repertoire `www` et installez ensuite Strapi :
+Éffacez le repertoire `www` et installez ensuite Strapi :
 
 ```sh
 rm -rf www
 npx create-strapi-app www --quickstart --no-run
 ```
 
-Allez dans `www` et créez le fichier point d'entréee, `index.js` :
+Allez dans le dossier `www` et créez le fichier de point d'entréee, `index.js` :
 
 ```javascript
 const strapi = require('strapi');
@@ -71,7 +73,7 @@ const strapi = require('strapi');
 strapi(/* {...} */).start();
 ```
 
-Créez aussi un fichier `.htaccess` pour gérer la redirection HTTPS :
+Créez un fichier `.htaccess` pour gérer la redirection HTTPS :
 
 ```sh
 RewriteCond %{ENV:HTTPS} !on
@@ -79,10 +81,9 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ```
 
 
-Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-POWER/#restart), votre CMS sur Strapi sera en ligne.
+[Rédemarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), puis votre CMS sur Strapi sera en ligne.
 
 ![Strapi](images/nodejs-install-strapi-01.png){.thumbnail}
-
 
 Terminal output:
 

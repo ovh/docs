@@ -31,18 +31,20 @@ order: 1
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Node.js et vous voulez y deployer un projet basé sur [Express](https://expressjs.com/). Ce guide vous explique comment.
+Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y deployer un projet basé sur [Express](https://expressjs.com/).
+
+**Découvrez comment installer Express sur votre hébergement web POWER**
 
 ## Prérequis
 
 - Disposer d'une de l'offre d'hébergement web POWER [Python](https://labs.ovh.com/managed-python).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
 
 Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous conseillons de consulter notre guide [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) avant de poursuivre.
 
 ## En pratique
 
-Supossons que vous avez la configuration normal pour un hébergement web POWER :
+Supposons que vous avez la configuration normale pour un hébergement web POWER :
 
 - Moteur : nodejs 14 
 - Point d'entrée : index.js 
@@ -51,16 +53,16 @@ Supossons que vous avez la configuration normal pour un hébergement web POWER :
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration)
 
 
-[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER et y installer Express avec `npm`: 
+[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER et installez Express avec `npm`: 
 
 ```sh
 npm install express --save
 ```
 
-Then go to the `www` folder and create and `index.js` file there:
+Allez dans le dossier `www` et créez le fichier `index.js` :
 
 `index.js`
 ```javascript
@@ -73,7 +75,7 @@ res.send(msg);
 app.listen(port);
 ```
 
-Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-POWER/#restart), votre application Expresss sera en ligne.
+[Rédemarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), puis votre application Express sera en ligne.
 
 ![Express](images/nodejs-install-express-01.png){.thumbnail}
 

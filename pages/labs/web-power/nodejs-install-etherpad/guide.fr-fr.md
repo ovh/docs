@@ -30,7 +30,9 @@ order: 2
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Node.js et vous voulez y installer un serveur [Etherpad](https://etherpad.org/). Ce guide vous explique comment.
+Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y installer un outil de production de texte collaboratif en ligne. [Etherpad](https://etherpad.org/)est l'outil idéal.
+
+**Découvrez comment installer Etherpad sur votre hébergement web POWER**
 
 ## Prérequis
 
@@ -41,26 +43,18 @@ Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous c
 
 ## En pratique
 
-Supossons que vous avez la configuration normal pour un hébergement web POWER :
+Supposons que vous avez la configuration normale pour un hébergement web POWER :
 
 - Moteur : nodejs 14 
 - Point d'entrée : index.js 
 - Dossier racine : www 
-
-
-Supossons que vous avez la configuration normal pour un hébergement web POWER :
-
-- Moteur : nodejs 14 
-- Point d'entrée : index.js 
-- Dossier racine : www 
-
 
 > [!primary]
 >
-> Pour vérifier votre configuration, vous pouvez appeler en point d'entrée [Visualiser la configuration activ](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration) de l'API OVHcloud
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration)
 
 
-[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh)  à votre hébergement web POWER et récupérez les sources d'Etherpad dans le répertoire `www`:
+[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER et récupérez les sources d'Etherpad dans le répertoire `www`:
 
 ```sh
 cd www
@@ -71,16 +65,16 @@ git pull origin master/1.8.6
 
 > [!alert]
 >
-> Au moment d'écrire cette guide, Etherpad 1.8.7 n'est pas compatible avec l'hébergement web POWER car [un soucis avec les web sockets lui empêche detourner sur Passenger pour Apache](https://github.com/ether/etherpad-lite/wiki/Running-Etherpad-on-Phusion-Passenger#phusion-passenger-for-apache), qui est l'architecture sur laquelle on a bâti ce service.
+> Actuellement, Etherpad 1.8.7 n'est pas compatible avec l'hébergement web POWER car [un défaut avec les web sockets l'empêche de detourner Passenger pour Apache](https://github.com/ether/etherpad-lite/wiki/Running-Etherpad-on-Phusion-Passenger#phusion-passenger-for-apache). Passenger sur Apache étant l'architecture sur laquelle est bâti cl'hébergement web POWER.
 
-Ensuite installez les dependances d'Etherpad, et configurez le point d'entrée:
+Installez les dependances d'Etherpad, et configurez le point d'entrée:
 
 ```sh
 bash bin/installDeps.sh
 ln -fs node_modules/ep_etherpad-lite/node/server.js index.js
 ```
 
-Faites un [rédemarrage de votre instace](../premiers-pas-avec-hebergement-web-POWER/#restart), votre Etherpad sera en ligne.
+[Rédemarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), puis votre Etherpad sera en ligne.
 
 ![Etherpad](images/nodejs-install-etherpad-01.png){.thumbnail}
 
