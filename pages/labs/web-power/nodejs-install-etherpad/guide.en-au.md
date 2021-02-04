@@ -70,7 +70,7 @@ git pull origin master/1.8.6
 
 > [!alert]
 >
-> At the time of writing this guide, Etherpad 1.8.7 doesn't work on POWER web hosting because [a problem with Web Sockets make it unable top run on the Passenger for Apache](https://github.com/ether/etherpad-lite/wiki/Running-Etherpad-on-Phusion-Passenger#phusion-passenger-for-apache) architecture underlaying our service.
+> Etherpad 1.8.7 is not compatible with POWER web hosting because [we currently do not support the "experimental-worker" option](https://github.com/ether/etherpad-lite/wiki/Running-Etherpad-on-Phusion-Passenger#phusion-passenger-for-apache).
 
 Then install Etherpad dependencies and setup the entry point:
 
