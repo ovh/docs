@@ -65,7 +65,7 @@ git pull origin master/1.8.6
 
 > [!alert]
 >
-> Actuellement, Etherpad 1.8.7 n'est pas compatible avec l'hébergement web POWER car [un défaut avec les web sockets l'empêche de detourner Passenger pour Apache](https://github.com/ether/etherpad-lite/wiki/Running-Etherpad-on-Phusion-Passenger#phusion-passenger-for-apache). Passenger sur Apache étant l'architecture sur laquelle est bâti cl'hébergement web POWER.
+> Actuellement, Etherpad 1.8.7 n'est pas compatible avec l'hébergement web POWER car [un défaut avec les web sockets l'empêche de détourner Passenger pour Apache](https://github.com/ether/etherpad-lite/wiki/Running-Etherpad-on-Phusion-Passenger#phusion-passenger-for-apache). Passenger sur Apache étant l'architecture sur laquelle est bâti l'hébergement web POWER.
 
 Installez les dependances d'Etherpad, et configurez le point d'entrée:
 

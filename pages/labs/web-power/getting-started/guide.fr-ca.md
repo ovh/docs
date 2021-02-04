@@ -135,6 +135,8 @@ def application(environ, start_response):
 
 Pour appliquer ces modifications, pensez à [redémarrer votre instance](#restart).
 
+![Hello World in Pyton](images/getting-started-07.png){.thumbnail}
+
 ### Ruby
 
 #### Créer un page Hello world 

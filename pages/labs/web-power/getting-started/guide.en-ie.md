@@ -170,7 +170,7 @@ def application(environ, start_response):
 
 Then [restart your instance](#restart)
 
-
+![Hello World in Pyton](images/getting-started-07.png){.thumbnail}
 
 ### Ruby
 
