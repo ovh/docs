@@ -105,7 +105,7 @@ rails generate controller demo index
 
 Et créez un fichier `app/views/demo/index.html.erb`.
  
- ```html
+```html
 vim app/views/demo/index.html.erb
 <h1>Hello World</h1>
 <p>Hello World from Rails</p>
