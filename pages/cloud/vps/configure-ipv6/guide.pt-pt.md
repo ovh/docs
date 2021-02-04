@@ -214,16 +214,17 @@ network:
     version: 2
     ethernets:
         eth0:
-            dhcp6: n.o
+            dhcp6: no
             match:
               name: eth0
             addresses:
               - "YOUR_IPV6/IPv6_PREFIX"
             gateway6: "IPv6_GATEWAY"
-            Estradas:
+            routes:
               - to: "IPv6_GATEWAY"
-                scópio: link
+                scope: link
 ```
+
 > [!warning]
 >
 > É importante respeitar o alinhamento de cada elemento deste ficheiro tal como representado no exemplo acima. Não utilize a tecla de tabulação para criar o seu espaçamento. Apenas a tecla de espaço é necessária.

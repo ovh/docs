@@ -38,7 +38,7 @@ Dans le cas d'une infrastructure dédiée (serveur dédié, VPS, instance Public
 > `?` : neutre
 >
 
-Pour plus d'informations sur la syntaxe du champ SPF, référez-vous au lien suivant : <http://www.open-spf.org/SPF_Record_Syntax>.
+Pour plus d'informations sur la syntaxe du champ SPF, référez-vous au lien suivant : <http://www.open-spf.org/>.
 
 Vous pouvez bien entendu aller plus loin, en configurant le champ SPF d'un domaine bien spécifique ou en spécifiant une IPv6.
 

@@ -76,9 +76,4 @@ Debe seguir el procedimiento indicado en el email, o acceder al manager. Usted d
 ### ¿Qué plazo tengo para regularizar una incidencia de pago?
 Usted deberá abonar cualquier saldo pendiente en los 7 días siguientes a partir de la recepción del email de incidencia de pago. Debe saber que, al finalizar este plazo, suspenderemos su servicio asociado a la incidencia de pago e iniciaremos un procedimiento de recaudación contra usted. Asimismo, nos reservamos el derecho de suspender todos sus servicios si, luego de transcurrido el plazo de 7 días, usted no ha abonado el saldo pendiente.
 
-
-
-## ¿Su pregunta no aparece entre las preguntas frecuentes?
-
-Contáctenos por correo electrónico <https://www.ovh.com/world/es/soporte/contacto/>`__, o por teléfono al 1-855-684-5463 (sin costo). Nuestro equipo está a su disposición 24x7. 
-
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

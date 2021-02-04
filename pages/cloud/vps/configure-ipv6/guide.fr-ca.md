@@ -219,6 +219,7 @@ network:
               - to: "IPv6_GATEWAY"
                 scope: link
 ```
+
 > [!warning]
 >
 > Il est important de respecter l'alignement de chaque élément de ce fichier tel que représenté dans l'exemple ci-dessus. N'utilisez pas la touche de tabulation pour créer votre espacement. Seule la touche espace est nécessaire.

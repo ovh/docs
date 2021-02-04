@@ -1,0 +1,104 @@
+---
+title: Installer Express sur votre hébergement web POWER
+slug: nodejs-installer-express
+excerpt: Découvrez comment installer Express sur votre hébergement web POWER
+section: Node.js
+order: 1
+---
+
+
+<style>
+ pre {
+     font-size: 14px;
+ }
+ pre.console {
+   background-color: #300A24; 
+   color: #ccc;
+   font-family: monospace;
+   padding: 5px;
+   margin-bottom: 5px;
+ }
+ pre.console code {
+   border: solid 0px transparent;
+   font-family: monospace !important;
+ }
+ .small {
+     font-size: 0.75em;
+ }
+</style>
+
+**Dernière mise à jour le 03/02/2021**
+
+## Objectif
+
+Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y déployer un projet basé sur [Express](https://expressjs.com/).
+
+**Découvrez comment installer Express sur votre hébergement web POWER**
+
+## Prérequis
+
+- Disposer d'une de l'offre d'hébergement web POWER [Python](https://labs.ovh.com/managed-python).
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+
+Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous conseillons de consulter notre guide [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) avant de poursuivre.
+
+## En pratique
+
+Supposons que vous avez la configuration normale pour un hébergement web POWER :
+
+- Moteur : nodejs 14 
+- Point d'entrée : index.js 
+- Dossier racine : www 
+
+
+> [!primary]
+>
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration)
+
+
+[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER et installez Express avec `npm`: 
+
+```sh
+npm install express --save
+```
+
+Allez dans le dossier `www` et créez le fichier `index.js` :
+
+`index.js`
+```javascript
+const express = require('express');
+const port = 3000;
+const msg = `Hello World from NodeJS ${process.version}\n`;
+const app = express();app.get('/', function (req, res) {
+res.send(msg);
+});
+app.listen(port);
+```
+
+[Redémarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), puis votre application Express sera en ligne.
+
+![Express](images/nodejs-install-express-01.png){.thumbnail}
+
+Sortie du terminal:
+
+<pre class="console"><code>~/www $ cd www
+~/www $ node -v
+v14.13.0
+~/www $ npm install express --save
+~/www $ vi index.js
+const express = require('express');
+const port = 3000;
+const msg = `Hello World from NodeJS ${process.version}\n`;
+const app = express();app.get('/', function (req, res) {
+res.send(msg);
+});
+app.listen(port);
+~/www $ mkdir -p tmp
+~/www $ touch tmp/restart.txt</code></pre>
+
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+
+**Pour discuter avec les autres utilisateurs du lab et avec l'équipe POWER Web Hosting, venez sur [notre room Gitter](https://gitter.im/ovh/power-web-hosting)**

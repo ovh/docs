@@ -46,7 +46,7 @@ W nowym interfejsie wypełnij pola:
 
 "Adres poczty elektronicznej": Cały adres e-mail
 
-"Hasło": Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanagerl) dla tego konta e-mail.
+"Hasło": Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager) dla tego konta e-mail.
 
 Kliknij na ikonkę "Połącz", aby kontynuować.
 
@@ -60,7 +60,7 @@ W tym interfejsie wypełnij pola:
 
 "Nazwa użytkownika": Cały adres e-mail
 
-"Hasło": Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanagerl) dla tego konta e-mail.
+"Hasło": Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager) dla tego konta e-mail.
 
 "Serwer poczty przychodzącej (IMAP)":
 Adres serwera to SSL0.OVH.NET

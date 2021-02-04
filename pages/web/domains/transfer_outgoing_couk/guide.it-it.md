@@ -30,7 +30,7 @@ Prima di trasferire il tuo dominio .co.uk verso un altro Registrar, assicurati c
 
 
 ## Step 1: verifica delle informazioni del tuo dominio
-Le informazioni sono disponibili nel tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login/).
+Le informazioni sono disponibili nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager).
 Per visualizzarle, accedi all'interfaccia utilizzando il contatto amministratore.
 
 

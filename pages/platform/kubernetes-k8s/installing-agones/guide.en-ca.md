@@ -123,7 +123,7 @@ STATUS: DEPLOYED
 [...]</code></pre>
 
 > [!warning]
-> The installation we have just done isn't suited for production, as the [official install instructions](https://agones.dev/site/docs/installation/helm/) recommend running Agones and the game servers in separate, dedicated pools of nodes.
+> The installation we have just done isn't suited for production, as the official install instructions recommend running Agones and the game servers in separate, dedicated pools of nodes.
 > But for the needs of our test, the basic setup is enough.
 
 ## Confirming Agones started successfully
@@ -265,6 +265,3 @@ unconnected changed name to [BOT]Scorcher
 
 The next step is mostly enjoyable: ask some friends to connect to the server and do a true deathmatch like in *Quake 2* times.
 
-## And now?
-
-You have a working game server, but this tutorial has barely uncovered the possibilities of Agones: deploying a [allocator service](https://agones.dev/site/docs/tutorials/allocator-service-go/){.external}. In future blog posts and tutorials we will dive deeper into it, and explore those possibilities.

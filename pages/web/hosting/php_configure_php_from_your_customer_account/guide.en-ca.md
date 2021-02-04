@@ -101,7 +101,7 @@ If you do want to return to a previous version, we suggest you refer to the para
 If you are not the developer, contact your webmaster.
 
 ## Check the version of PHP which is used in a specific directory
-Your customer account displays the "global" PHP version. If you have a particular configuration in a subdirectory, you can verify the PHP version used by downloading the info.php file 
+Your customer account displays the "global" PHP version. If you have a particular configuration in a subdirectory, you can verify the PHP version used by downloading the info.php file. 
 If you want to create this file yourself, just create a text file and include:
 
 ```

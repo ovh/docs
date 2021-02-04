@@ -21,7 +21,7 @@ No obstante, hay que prestar atención, ya que algunos sitios web utilizan servi
 
 ¿Cómo saber si esto afecta a mi sitio web?
 
-Las herramientas de depuración que incluyen Mozilla Firefox y Google Chrome indican cuándo el sitio contiene elementos bloqueados por contenido mixto. En la web [Mozilla Developer Network](https://developer.mozilla.org/es/docs/Seguridad/MixedContent) encontrará más información sobre estas herramientas relativa al contenido mixto.
+Las herramientas de depuración que incluyen Mozilla Firefox y Google Chrome indican cuándo el sitio contiene elementos bloqueados por contenido mixto. En la web [Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content) encontrará más información sobre estas herramientas relativa al contenido mixto.
 
 
 ## El contenido duplicado

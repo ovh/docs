@@ -17,7 +17,7 @@ La función Netboot es un servicio gratuito ofrecido por OVHcloud, le permite in
 
 ## Requisitos
 
-- Un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/){.external}
+- Un [servidor dedicado](https://www.ovhcloud.com/en/bare-metal/){.external}
 - Acceso al [panel de control OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
 
 ## Procedimiento

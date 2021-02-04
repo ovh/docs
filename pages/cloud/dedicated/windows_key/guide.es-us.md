@@ -16,8 +16,8 @@ Al instalar un sistema operativo Windows Server, es posible que la clave de acti
 
 ## Requisitos
 
-- Disponer de un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/){.external} con Windows instalado.
-- Disponer de una licencia Windows SPLA o [contratar una](https://www.ovh.com/world/es/servidores_dedicados/precios-licencias-windows-2014.xml){.external}.
+- Disponer de un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external} con Windows instalado.
+- Disponer de una licencia Windows SPLA o [contratar una](https://www.ovhcloud.com/en/bare-metal/os/server-windows/){.external}.
 - Tener acceso al escritorio remoto.
 
 

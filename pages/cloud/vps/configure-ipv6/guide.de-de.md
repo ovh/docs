@@ -85,7 +85,7 @@ Wenn Sie die Adressen erhalten haben, fahren Sie fort mit Schritt 2, [IPv6-Konfi
 
 ### Schritt 2: IPv6-Konfiguration anwenden <a name="applyipv6"></a>
 
-Sobald Sie die zur IPv6-Konfiguration notwendigen Informationen haben, verbinden Sie sich via SSH mit Ihrem VPS. Wenn nötig lesen Sie unsere Anleitung "[SSH Einführung](../../dedicated/ssh-introduction/)".
+Sobald Sie die zur IPv6-Konfiguration notwendigen Informationen haben, verbinden Sie sich via SSH mit Ihrem VPS. Wenn nötig lesen Sie unsere Anleitung "[SSH Einführung](../../dedicated/ssh-einfuehrung/)".
 
 Es gibt mehrere Vorgehensweisen, um die IPv6-Konfiguration anzuwenden. Folgen Sie der Methode, die am besten zu Ihrer Situation und Ihren Ansprüchen passt.
 
@@ -218,10 +218,11 @@ network:
             addresses:
               - "YOUR_IPV6/IPv6_PREFIX"
             gateway6: "IPv6_GATEWAY"
-            Straßen
-              - "IPv6_GATEWAY"
-                scope: ,
+            routes:
+              - to: "IPv6_GATEWAY"
+                scope: link
 ```
+
 > [!warning]
 >
 > Es ist wichtig, dass die Zeilenausrichtung jedes Elements dieser Datei, wie im Beispiel dargestellt, eingehalten wird. Verwenden Sie nicht die Tabulationstaste, um den Abstand zu erzeugen. Nur die Leertaste ist notwendig.

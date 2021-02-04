@@ -220,10 +220,11 @@ network:
             addresses:
               - "YOUR_IPV6/IPv6_PREFIX"
             gateway6: "IPv6_GATEWAY"
-            tras:
+            routes:
               - to: "IPv6_GATEWAY"
                 scope: link
 ```
+
 > [!warning]
 >
 > Ważne jest przestrzeganie wyrównania każdego elementu tego pliku, jak pokazano w powyższym przykładzie. Nie używaj przycisku tabulacji do tworzenia odstępów. Potrzebny jest tylko klawisz spacji.

@@ -33,8 +33,6 @@ Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=got
 
 Una vez conectado al área de cliente, podrá gestionar los accesos a su servidor FTP y a las bases de datos. Para ello, acceda a la sección `Alojamientos` y seleccione el servicio correspondiente. Podrá acceder a sus mensajes de correo electrónico desde la sección `Correo electrónico` del área de cliente. 
 
-**Ideas y consejos**: Si posee una solución Email Pro o Exchange, podrá gestionar sus accesos desde los respectivos webmails.
-
 ### ¿Cómo publicar mi sitio web? 
 
 Para publicar su sitio web en OVHcloud, debe disponer de un nombre de dominio, que corresponderá a la dirección desde la que el sitio web estará accesible (ejemplo: «ovh.com»). Asimismo, debe disponer de un alojamiento web en el que publicar su sitio web. Puede consultar la siguiente documentación: [Publicar un sitio web en internet](../web_hosting_publicar_un_sitio_web_en_internet).

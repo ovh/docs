@@ -28,7 +28,7 @@ Aby móc wykonać transfer domeny .co.uk do innego operatora, domena musi spełn
 
 
 ## Etap 1: Weryfikacja informacji o domenie
-Informacje te można odnaleźć w panelu klienta dostępnym [tutaj](https://www.ovh.com/manager/web/login/).
+Informacje te można odnaleźć w panelu klienta dostępnym [tutaj](https://www.ovh.com/auth/?action=gotomanager).
 Należy zalogować się jako kontakt administracyjny.
 
 

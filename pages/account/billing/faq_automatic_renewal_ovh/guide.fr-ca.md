@@ -84,7 +84,7 @@ Suivez la procédure de régularisation indiquée dans le courriel, ou connectez
 
 Vous devez régulariser une facture impayée dans les 7 jours à compter de l’incident de paiement. Sachez qu’à défaut de paiement au terme de ces 7 jours, nous suspendrons votre service et lancerons une procédure de recouvrement à votre encontre. Par ailleurs, nous nous réservons la possibilité de suspendre l’ensemble de vos services si vous n’avez pas régularisé votre situation.
 
-### Votre question ne figure pas dans la FAQ?
 
-Contactez-nous par [courriel](https://www.ovh.com/ca/fr/support/nous-contacter/) ou par téléphone (sans frais) au 1-855-684-5463 .  
+## Aller plus loin
 
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

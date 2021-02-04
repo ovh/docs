@@ -18,7 +18,7 @@ Inoltre, alcuni siti utilizzano CDN per ospitare librerie Javascript (ad esempio
 
 Come sapere se il tuo sito presenta questo problema?
 
-I tool di debug forniti da Mozilla Firefox e Google Chrome mostrano un messaggio quando la pagina del tuo sito contiene elementi bloccati per la presenza di contenuti misti. Per maggiori informazioni sui tool per individuare questo tipo di errore, consulta la documentazione disponibile sul [Mozilla Developer Network](https://developer.mozilla.org/it/docs/Security/MixedContent).
+I tool di debug forniti da Mozilla Firefox e Google Chrome mostrano un messaggio quando la pagina del tuo sito contiene elementi bloccati per la presenza di contenuti misti. Per maggiori informazioni sui tool per individuare questo tipo di errore, consulta la documentazione disponibile sul [Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content).
 
 
 ## Contenuti duplicati (duplicate content)

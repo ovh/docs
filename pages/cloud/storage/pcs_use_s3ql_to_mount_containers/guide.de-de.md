@@ -110,12 +110,3 @@ swiftks://auth.cloud.ovh.net/GRA:CT_S3QL 1.0T 0 1.0T 0% /mnt/container
 Die Verwendung von S3QL im "Offline-Modus" ist nicht möglich.
 
 Außerdem ist von einer Persistence-Konfiguration über die /etc/fstab-Datei abzuraten. Günstiger ist die Verwendung eines Skripts, das beim Hochfahren Ihres Servers gestartet wird.
-
-
-## FAQ
-Antworten auf zahlreiche Fragen finden Sie zweifellos in den [FAQ von S3QL](https://bitbucket.org/nikratio/s3ql/wiki/FAQ).
-
-
-## 
-... lesen Sie auch unsere anderen Hilfen zum Thema Cloud!
-

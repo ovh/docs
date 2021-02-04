@@ -281,7 +281,7 @@ Le package RTM n’est actuellement pas compatible avec les systèmes Windows. N
 
 Une fois l’installation du RTM réussie, vous pouvez à partir de votre espace client d’ OVHcloud, visualiser la façon dont les données de votre serveur sont surveillées. (Il peut s’avérer nécessaire d’actualiser votre navigateur ou alors de vous déconnecter avant de vous reconnecter).  Rendez vous à la section `Serveur`{.action}  et sélectionnez votre serveur à partir du menu de gauche. Déroulez l’onglet `Informations générales`{.action} pour obtenir les informations sur la surveillance.
 
-![Real Time Monitoring](images/rtm_panel.png){.thumbnail}
+![Real Time Monitoring](images/rtm_panel1.png){.thumbnail}
 
 
 

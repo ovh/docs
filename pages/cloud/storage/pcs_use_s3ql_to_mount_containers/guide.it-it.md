@@ -107,12 +107,3 @@ swiftks://auth.cloud.ovh.net/GRA:CT_S3QL 1.0T 0 1.0T 0% /mnt/container
 
 Non è possibile utilizzare S3QL in modalità "offline".
 Ti consigliamo di non effettuare una configurazione permanente utilizzando il file /etc/fstab, è preferibile utilizzare uno script da eseguire in automatico all'avvio del tuo server.
-
-
-## FAQ
-Per leggere tutte le FAQ relative all'S3QL, clicca [qui](https://bitbucket.org/nikratio/s3ql/wiki/FAQ)
-
-
-## 
-[Ritorna all'indice delle guide Cloud]({legacy}1785)
-

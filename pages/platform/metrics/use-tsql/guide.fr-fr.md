@@ -420,9 +420,9 @@ The **window** method expects
 
 * At least a **window function** to use: can be one of **max, mean, min, first, last, sum, delta, stddev, stdvar, join, median, count, and** or **or**. TSL expects the window function to be set as an ident field.
 * A single duration time window to compute the **over_time** method on for **Prometheus** or **Warp10**.
-* **Warp10** MAP frame supports two parameters as TSL window function a [pre and/or post](http://www.warp10.io/reference/frameworks/framework-map/){.external} parameter. The **pre** and **post** parameters can be a number of points to compute the window on, or a duration if the series was sampled before.
+* **Warp10** MAP frame supports two parameters as TSL window function a pre and/or post parameter. The **pre** and **post** parameters can be a number of points to compute the window on, or a duration if the series was sampled before.
 
-As Warp 10 is more flexible, you can either specify a duration or a number of points to apply on with the [pre and/or post](http://www.warp10.io/reference/frameworks/framework-map/){.external} parameter.
+As Warp 10 is more flexible, you can either specify a duration or a number of points to apply on with the pre and/or post parameter.
 
 Example:
 
@@ -501,7 +501,7 @@ The following TSL methods can be used to apply time related operators on metrics
 
 #### Time window methods
 
-TSL includ a method to apply an operation on a selected time window. This represents [**time window mapper**](http://www.warp10.io/reference/frameworks/framework-map/){.external} in Warp 10 and [**over_time**](https://prometheus.io/docs/prometheus/latest/querying/functions/#%3Caggregation%3E_over_time()){.external} operators in PromQL.
+TSL includ a method to apply an operation on a selected time window. This represents time window mapper in Warp 10 and [**over_time**](https://prometheus.io/docs/prometheus/latest/querying/functions/#%3Caggregation%3E_over_time()){.external} operators in PromQL.
 This methods apply a function to all values of a time window of each metrics and replace the current value by the result of this function. 
 
 The method applied can be one of

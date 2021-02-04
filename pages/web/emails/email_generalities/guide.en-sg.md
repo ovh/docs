@@ -16,7 +16,7 @@ If you have activated an OVHcloud Web Hosting plan, you can have email addresses
 
 ## Requirements
 
-- an MX plan solution, available via a [Web Hosting plan]({ovh_www}/web-hosting/) or [the free Start10M Hosting plan]({ovh_www}/domains/start10m_hosting_offer.xml)
+- an MX plan solution, available via a [Web Hosting plan](https://www.ovh.com/sg/web-hosting/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
 ## Instructions

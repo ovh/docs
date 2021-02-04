@@ -121,7 +121,7 @@ Vous trouverez le détail des appels d'API dans la section [Manipulation des rou
 ### Forcer le HTTPS pour les pages de login Wordpress
 Le HTTPS est devenu la norme. L'objectif est de rendre tous les sites disponibles de manière sécurisée en HTTPS grâce au protocole SSL/TLS. Si vous avez besoin d'un certificat SSL/TLS, vous pouvez utiliser votre service OVH Load Balancer pour en commander un qui sera géré pour vous de manière complètement automatique.
 
-Migrer un site en HTTPS demande du travail, notamment pour éviter les problèmes de "[Mixed-Content](https://developer.mozilla.org/fr/docs/S%C3%A9curit%C3%A9/MixedContent/regler_probleme_contenu_mixte_site_web){.external}". Il peut être intéressant de migrer section par section, en commençant par sécuriser les pages envoyant des identifiants.
+Migrer un site en HTTPS demande du travail, notamment pour éviter les problèmes de "[Mixed-Content](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content){.external}". Il peut être intéressant de migrer section par section, en commençant par sécuriser les pages envoyant des identifiants.
 
 Une approche pourrait être de se baser sur le début des URLs Wordpress. Par défaut, l'URL des pages de connexion de Wordpress commencent par "/wp-login". Nous aurions donc besoin :
 
@@ -138,7 +138,7 @@ Dans la pratique, cela donne une route :
 |weight|(vide)|
 |action.type|"redirect"|
 |action.status|302 pour une redirection temporaire, 301 pour une redirection permanente|
-|action.target|"[https:/](https:/){.external}/${host}${path}${arguments}" pour reprendre le même host, chemin et arguments|
+|action.target|"`https://${host}${path}${arguments}`" pour reprendre le même host, chemin et arguments|
 
 Et sur cette route, on vient attacher une règle :
 
@@ -693,7 +693,7 @@ L'URL de destination peut contenir des variables simples. Cela permet de redirig
 
 Par exemple, pour :
 
-- rediriger vers https : https://${host}${path}${arguments}
+- rediriger vers https : `https://${host}${path}${arguments}`
 - rediriger vers un nouveau domaine : ${protocol}://new.example.com${path}${arguments}
 - préfixer l'url: ${protocol}://${host}/staging${path}${arguments}
 

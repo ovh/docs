@@ -110,7 +110,7 @@ As the Metrics platform backend use [Warp 10](http://www.warp10.io/), the [Warp 
 
 The `WRITE_TOKEN` and `REGION` are to be replaced by your own information based on Metrics manager.
 
-## Telegraf tunning
+## Telegraf tuning
 
 To have the best experience with Telegraf on the Metrics platform we propose here some possible updates.
 
