@@ -27,7 +27,7 @@ order: 6
  }
 </style>
 
-**Last updated 3<sup>rd</sup> February 2021**
+**Last updated 4th February 2021**
 
 ## Objective
 
@@ -42,24 +42,23 @@ This guide will explain how to do it.
 ## Requirements
 
 - A [Node.js](https://labs.ovh.com/managed-nodejs) POWER web hosting plan
-- Access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
 
-If you have just started to use your Web POWER web hosting plan, we suggest you to have a look to our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.
+If you have just started to use your Web POWER web hosting plan, we suggest to have a look at our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.
 
 ## Instructions
 
-
 Let's suppose you have the default configuration for Node.js hosting:
 
-- Runtime : nodejs 14   
-- Entrypoint : index.js 
-- DocumentRoot : www
+- Runtime: nodejs 14   
+- Entrypoint: index.js 
+- DocumentRoot: www
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint
+> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint.
 
-[Access via SSH](../getting-started-with-power-web-hosting/#ssh) to your POWER web hosting.
+[Connect via SSH](../getting-started-with-power-web-hosting/#ssh) to your POWER web hosting.
 Let's begin by cleaning the `www` folder and installing Strapi:
 
 
@@ -68,7 +67,7 @@ rm -rf www
 npx create-strapi-app www --quickstart --no-run
 ```
 
-Now let's go into `www` folder and create the entrypoint `index.js`:
+Now let's go into the `www` folder and create the entrypoint `index.js`:
 
 ```javascript
 const strapi = require('strapi');
@@ -76,13 +75,13 @@ const strapi = require('strapi');
 strapi(/* {...} */).start();
 ```
 
-Create also a `.htaccess` file to manage HTTPS redirection:
+Create also an `.htaccess` file to manage HTTPS redirection:
 
 ```sh
 RewriteCond %{ENV:HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ```
-Then [restart your instance](../getting-started-with-power-web-hosting/#restart), your Strapi headless CMS will be online.
+Then [restart your instance](../getting-started-with-power-web-hosting/#restart) and your Strapi headless CMS will be online.
 
 
 ![Strapi](images/nodejs-install-strapi-01.png){.thumbnail}
@@ -93,7 +92,7 @@ Terminal output:
 <pre class="console"><code> ~ $ rm -rf www
 
 ~ $ npx create-strapi-app www --quickstart --no-run
-npx : 91 installé(s) en 6.741s
+npx: 91 installed in 6.741s
 Creating a new Strapi application at /home/user/www.
 Creating a quickstart project.
 Creating files.
@@ -118,8 +117,8 @@ EOF
 
 
 
-## Going Further
+## Go further
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
 
-**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab**
+**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab.**

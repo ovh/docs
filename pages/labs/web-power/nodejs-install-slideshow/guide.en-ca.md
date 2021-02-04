@@ -1,7 +1,7 @@
 ---
 title: Install a real-time presentation slide platform on your POWER web hosting plan
 slug: nodejs-install-slideshow
-excerpt: Find out how to install a real-time presentation slide platform  on your POWER web hosting plan
+excerpt: Find out how to install a real-time presentation slide platform on your POWER web hosting plan
 section: Node.js
 order: 5
 ---
@@ -27,7 +27,7 @@ order: 5
  }
 </style>
 
-**Last updated 3<sup>rd</sup> February 2021**
+**Last updated 4th February 2021**
 
 ## Objective
 
@@ -42,24 +42,24 @@ This guide will explain how to do it.
 ## Requirements
 
 - A [Node.js](https://labs.ovh.com/managed-nodejs) POWER web hosting plan
-- Access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
-If you have just started to use your Web POWER web hosting plan, we suggest you to have a look to our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.
+If you have just started to use your Web POWER web hosting plan, we suggest to have a look at our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.
 
 ## Instructions
 
 
 Let's suppose you have the default configuration for Node.js hosting:
 
-- Runtime : nodejs 14   
-- Entrypoint : index.js 
-- DocumentRoot : www
+- Runtime: nodejs 14   
+- Entrypoint: index.js 
+- DocumentRoot: www
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint
+> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint.
 
-[Access via SSH](../getting-started-with-power-web-hosting/#ssh) to your POWER web hosting.
+[Connect via SSH](../getting-started-with-power-web-hosting/#ssh) to your POWER web hosting.
 Let's begin by retrieving the sources of the project:
 
 ```sh
@@ -67,7 +67,7 @@ rm -rf www
 git clone https://github.com/nafeu/realtime-slides-tut.git www
 ```
 
-Now let's go into `www` folder, do an `npm install` and *symlinking* the entrypoint to the application main file :
+Now let's go into the `www` folder, do an `npm install` and *symlink* the entrypoint to the application main file:
 
 ```sh
 cd www
@@ -75,7 +75,7 @@ npm install --save
 ln -fs server.js index.js
 ```
 
-Then [restart your instance](../getting-started-with-power-web-hosting/#restart), your slideshow platform will be online.
+Then [restart your instance](../getting-started-with-power-web-hosting/#restart) and your slideshow platform will be online.
 
 
 ![Slideshow](images/nodejs-install-slideshow-01.png){.thumbnail}
@@ -86,10 +86,10 @@ Terminal output:
 <pre class="console"><code> ~ $ rm -rf www
 
 ~ $ git clone https://github.com/nafeu/realtime-slides-tut.git www
-Clonage dans 'www'...
+Cloning into 'www'...
 remote: Enumerating objects: 91, done.
 remote: Total 91 (delta 0), reused 0 (delta 0), pack-reused 91
-Dépaquetage des objets: 100% (91/91), fait.
+Extracting objects: 100% (91/91), done.
 
 ~ $ cd www
  
@@ -108,10 +108,8 @@ found 18 vulnerabilities (9 low, 3 moderate, 5 high, 1 critical)
 </code></pre>
 
 
-
-## Going Further
+## Go further
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
 
-
-**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab**
+**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab.**

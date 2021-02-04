@@ -26,7 +26,7 @@ order: 2
  }
 </style>
 
-**Dernière mise à jour le 03/02/2021**
+**Last updated 4th February 2021**
 
 ## Objective
 
@@ -41,32 +41,32 @@ This guide will explain how to do it.
 ## Requirements
 
 - A [Ruby](https://labs.ovh.com/managed-ruby) POWER web hosting plan
-- Access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
-If you have just started to use your Web POWER web hosting plan, we suggest you to have a look to our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.
+If you have just started to use your Web POWER web hosting plan, we suggest to have a look at our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.
 
 ## Instructions
 
 
 Let's suppose you have the default configuration for Ruby hosting:
 
-- Runtime : Ruby 2.6   
-- Entrypoint : config.ru 
-- DocumentRoot : www
-- Environment: development 
+- Runtime: Ruby 2.6   
+- Entrypoint: config.ru 
+- DocumentRoot: www
+- Environment:development 
 
 > [!alert]
 >
-> Be careful, Rails depends of environment (`RAILS_ENV`)
+> Be careful, Rails depends on the environment (`RAILS_ENV`).
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint
+> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint.
 
 
-[Access via SSH](../getting-started-with-power-web-hosting/#ssh) to your POWER web hosting.
+[Connect via SSH](../getting-started-with-power-web-hosting/#ssh) to your POWER web hosting.
 
-Delete your `DocumentRoot` to initiate it with rails (don't forget to export your `gempath` or your bundle install will failed):
+Delete your `DocumentRoot` to initiate it with rails (don't forget to export your `gempath` or your bundle install will fail):
 
 ```sh
 rm -rf www
@@ -92,13 +92,13 @@ Install your `Gems`:
 bundle install
 ```
 
-Force the right Node.js engine for Camaleon Javascript :
+Force the right Node.js engine for Camaleon Javascript:
 
 ```sh
 sed -i 's@\["nodejs", "node"\],@["/usr/local/nodejs14/bin/node"],@' ${GEM_HOME}/gems/execjs-2.7.0/lib/execjs/runtimes.rb
 ```
 
-Run Camaleon with your `sqlite` database (beware, there are four differents command to run) :
+Run Camaleon with your `sqlite` database (beware, there are four differents command to run):
 
 ```sh
 rails generate camaleon_cms:install
@@ -107,7 +107,7 @@ rake db:migrate
 rake assets:precompile
 ```
 
-Now whitelist your domain name, in `www/config/environments/development.rb` :
+Now whitelist your domain name, in `www/config/environments/development.rb`:
 
 ```ruby
 Rails.application.configure do
@@ -115,7 +115,7 @@ Rails.application.configure do
   config.hosts << "your-domain.ovh"
 ```
 
-And inactivate  `check_yarn_integrity` check under `development` section in `www/config/webpacker.yml` :
+Deactivate `check_yarn_integrity` check under section `development` in `www/config/webpacker.yml`:
 
 ```yaml
 development:
@@ -127,7 +127,7 @@ development:
 ```
 
 
-Then [restart your instance](../getting-started-with-power-web-hosting/#restart), your Camaleon will be online.
+Then [restart your instance](../getting-started-with-power-web-hosting/#restart) and your Camaleon will be online.
 
 ![Camaleon](images/ruby-install-camaleon-01.png){.thumbnail}
 
@@ -263,8 +263,8 @@ I, [2021-02-03T21:06:42.781108 #6031]  INFO -- : Creating symlink /home/powerlp/
 </code></pre>
 
 
-## Going Further
+## Go further
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
 
-**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab**
+**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab.**
