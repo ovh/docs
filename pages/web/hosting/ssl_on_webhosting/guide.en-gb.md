@@ -24,13 +24,35 @@ You can manage an SSL certificate on your Web Hosting plan. You can either order
 
 There are several ways of managing an SSL certificate on your OVH Web Hosting plan. We recommend reading these guides, and focusing on the method you wish to follow.
 
-- [Activate an SSL certificate on your Web Hosting plan.](https://docs.ovh.com/gb/en/hosting/ssl-certificates-on-web-hosting-plans/#activate-an-ssl-certificate-on-your-web-hosting-plan){.external} Helps you activate an SSL certificate on your Web Hosting plan. This can be a free or paid certificate ordered from OVH, or you can import your own SSL certificate ordered from another provider.
-
 - [Activate an SSL certificate on a multisite.](https://docs.ovh.com/gb/en/hosting/ssl-certificates-on-web-hosting-plans/#activate-an-ssl-certificate-on-a-multisite){.external} If you are able to do so with your SSL certificate or solution, you can give several of your multisites a secure SSL connection.
+
+- [Activate an SSL certificate on your Web Hosting plan.](https://docs.ovh.com/gb/en/hosting/ssl-certificates-on-web-hosting-plans/#activate-an-ssl-certificate-on-your-web-hosting-plan){.external} Helps you activate an SSL certificate on your Web Hosting plan. This can be a free or paid certificate ordered from OVH, or you can import your own SSL certificate ordered from another provider.
 
 - [Regenerate an SSL certificate on a Web Hosting plan.](https://docs.ovh.com/gb/en/hosting/ssl-certificates-on-web-hosting-plans/#regenerate-an-ssl-certificate-on-a-web-hosting-plan){.external}  Helps you regenerate an SSL certificate on your Web Hosting plan when you activate SSL on one or more multisites. 
 
 - [Delete an SSL certificate on a Web Hosting plan.](https://docs.ovh.com/gb/en/hosting/ssl-certificates-on-web-hosting-plans/#delete-an-ssl-certificate-on-a-web-hosting-plan){.external} Helps you delete an SSL certificate on an OVH Web Hosting plan. Please note that this may pose some risks, if any of your websites are currently using the certificate you intend to delete. 
+
+### Activate an SSL certificate on a multisite.
+
+Depending on which [SSL certificate](https://www.ovh.co.uk/ssl/){.external} you have ordered, you can activate a secure SSL connection on one or more of your multisites. To do this, log in to the OVH Control Panel, click [Web hosting](https://www.ovh.com/auth/?action=gotomanager){.external} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Go to the `Multisite`{.action} tab.
+
+The table displayed will contain all of the domain names that have been added to your Web Hosting plan. In the ‘SSL’ column, you will see the activation status for secure SSL connections on your multisites. 
+
+![managessl](images/manage-ssl-step5.png){.thumbnail}
+
+There are three types of status that may appear:
+
+|Status|Description|
+|---|---|
+|Enabled|An SSL certificate has already been activated for this multisite. However, if your website is not available via HTTPS, please refer to the instructions listed in our guide to [Activating HTTPS on your website with an SSL certificate](https://docs.ovh.com/gb/en/hosting/activate-https-website-ssl/){.external}.|
+|To generate|An SSL certificate has been activated for this website, but it is still not technically active. To activate the SSL certificate properly, you will need to regenerate it for your Web Hosting plan, so that it includes the new domain names.|
+|Disabled|An SSL certificate has not been activated for this multisite. To activate it, follow the steps listed below.|
+
+To activate SSL on a multisite, click on the cogwheel icon to the right of the multisite concerned, then `Edit`{.action}. In the window that pops up, tick the `SSL`{.action} box, then follow the steps until you confirm the change.
+
+Once you have submitted the activation request, the SSL secure connection status for the mutisite concerned should refresh in a few seconds, with the status changed to “To generate”. Repeat this action as necessary if you would like to activate SSL for other multisites. You can then go to [Regenerate an SSL certificate on a Web Hosting plan](https://docs.ovh.com/gb/en/hosting/ssl-certificates-on-web-hosting-plans/#regenerate-an-ssl-certificate-on-a-web-hosting-plan){.external}.
+
+![managessl](images/manage-ssl-step6.png){.thumbnail}
 
 ### Activate an SSL certificate on your Web Hosting plan.
 
@@ -63,28 +85,6 @@ Certificate setup may take between several minutes and several days, depending o
 ![managessl](images/manage-ssl-step4.png){.thumbnail}
 
 Once you have set it up, you can proceed with the [Activate an SSL certificate on a multisite](https://docs.ovh.com/gb/en/hosting/ssl-certificates-on-web-hosting-plans/#activate-an-ssl-certificate-on-a-multisite){.external} step, to ensure that all of the websites concerned have an active secure SSL connection.
-
-### Activate an SSL certificate on a multisite.
-
-Depending on which [SSL certificate](https://www.ovh.co.uk/ssl/){.external} you have ordered, you can activate a secure SSL connection on one or more of your multisites. To do this, log in to the OVH Control Panel, click [Web hosting](https://www.ovh.com/auth/?action=gotomanager){.external} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Go to the `Multisite`{.action} tab.
-
-The table displayed will contain all of the domain names that have been added to your Web Hosting plan. In the ‘SSL’ column, you will see the activation status for secure SSL connections on your multisites. 
-
-![managessl](images/manage-ssl-step5.png){.thumbnail}
-
-There are three types of status that may appear:
-
-|Status|Description|
-|---|---|
-|Enabled|An SSL certificate has already been activated for this multisite. However, if your website is not available via HTTPS, please refer to the instructions listed in our guide to [Activating HTTPS on your website with an SSL certificate](https://docs.ovh.com/gb/en/hosting/activate-https-website-ssl/){.external}.|
-|To generate|An SSL certificate has been activated for this website, but it is still not technically active. To activate the SSL certificate properly, you will need to regenerate it for your Web Hosting plan, so that it includes the new domain names.|
-|Disabled|An SSL certificate has not been activated for this multisite. To activate it, follow the steps listed below.|
-
-To activate SSL on a multisite, click on the cogwheel icon to the right of the multisite concerned, then `Edit`{.action}. In the window that pops up, tick the `SSL`{.action} box, then follow the steps until you confirm the change.
-
-Once you have submitted the activation request, the SSL secure connection status for the mutisite concerned should refresh in a few seconds, with the status changed to “To generate”. Repeat this action as necessary if you would like to activate SSL for other multisites. You can then go to [Regenerate an SSL certificate on a Web Hosting plan](https://docs.ovh.com/gb/en/hosting/ssl-certificates-on-web-hosting-plans/#regenerate-an-ssl-certificate-on-a-web-hosting-plan){.external}.
-
-![managessl](images/manage-ssl-step6.png){.thumbnail}
 
 ### Regenerate an SSL certificate on a Web Hosting plan.
 
