@@ -31,7 +31,7 @@ order: 2
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Ruby et vous voulez y deployer [Rails](https://rubyonrails.org/), le framework de développement d'applications web en Ruby.
+Vous avez souscrit à un hébergement web POWER Ruby et vous voulez y déployer [Rails](https://rubyonrails.org/), le framework de développement d'applications web en Ruby.
 
 **Découvrez comment installer Rails sur votre hébergement web POWER**
 
@@ -90,7 +90,7 @@ development:
   check_yarn_integrity: false
 ```
 
-[Rédemarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre Rails sera en ligne.
+[Redémarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre Rails sera en ligne.
 
 
 ![Rails](images/ruby-install-rails-01.png){.thumbnail}
@@ -214,7 +214,7 @@ Time: 1102ms
 
 ### Plus d'information sur Rails
 
-Pour plus d'informations sur Rails, n'hésitez pas à consulter la documentation officiel sur <https://guides.rubyonrails.org/>.
+Pour plus d'informations sur Rails, n'hésitez pas à consulter la documentation officielle sur <https://guides.rubyonrails.org/>.
 
 ## Aller plus loin
 

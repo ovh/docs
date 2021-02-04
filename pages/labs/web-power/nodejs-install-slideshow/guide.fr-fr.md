@@ -62,7 +62,7 @@ rm -rf www
 git clone https://github.com/nafeu/realtime-slides-tut.git www
 ```
 
-Allez dans le repertoire `www` et exécutez `npm install`, puis créez un lien symbolique entre le point d'entrée et le fichier principal de l'application :
+Allez dans le répertoire `www` et exécutez `npm install`, puis créez un lien symbolique entre le point d'entrée et le fichier principal de l'application :
 
 ```sh
 cd www
@@ -70,7 +70,7 @@ npm install --save
 ln -fs server.js index.js
 ```
 
-[Rédemarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre application de présentation de slideshow sera en ligne.
+[Redémarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre application de présentation de slideshow sera en ligne.
 
 ![Slideshow](images/nodejs-install-slideshow-01.png){.thumbnail}
 

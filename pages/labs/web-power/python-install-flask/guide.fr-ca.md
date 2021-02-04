@@ -95,7 +95,7 @@ def hello_world():
     return 'Hello, World!'
 ```
 
-[Rédemarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre projet Flask sera en ligne.
+[Redémarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre projet Flask sera en ligne.
 
 
 ![Flask](images/python-install-flask-01.png){.thumbnail}

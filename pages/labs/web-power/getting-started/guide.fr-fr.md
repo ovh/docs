@@ -78,7 +78,7 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 [Accédez via SSH](#ssh) à votre hébergement web POWER.
 
-Allez dans le repertoire `www` et créez un fichier `index.js`:
+Allez dans le répertoire `www` et créez un fichier `index.js`:
 
 `index.js`
 ```javascript
@@ -115,7 +115,7 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 [Accédez via SSH](#ssh) à votre hébergement web POWER.
 
-Allez dans le repertoire `www` et créez un fichier `app.py`:
+Allez dans le répertoire `www` et créez un fichier `app.py`:
 
 `app.py`
 ```python
@@ -155,7 +155,7 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 [Accédez via SSH](#ssh) à votre hébergement web POWER.
 
-Allez dans le repertoire `www` et créez un fichier `config.ru`:
+Allez dans le répertoire `www` et créez un fichier `config.ru`:
 
 `config.ru`
 ```ruby

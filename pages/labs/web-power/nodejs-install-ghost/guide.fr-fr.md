@@ -66,7 +66,7 @@ echo "Enter your domain (my-domain.ovh for example):"
 read DOMAIN
 ```
 
-Installez Ghost dans votre repertoire principal (pas dans `www`) avec `npm` :
+Installez Ghost dans votre répertoire principal (pas dans `www`) avec `npm` :
 
 ```sh
 cd $HOME
@@ -99,7 +99,7 @@ VERSION=$(ghost --version | sed -n 's/Ghost version: \([0-9.]*\).*/\1/p')
 ln -fs versions/${VERSION}/index.js index.js
 ```
 
-[Rédemarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), puis votre plateforme Ghost sera en ligne.
+[Redémarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), puis votre plateforme Ghost sera en ligne.
 
 ![Ghost](images/nodejs-install-ghost-01.png){.thumbnail}
 

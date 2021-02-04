@@ -30,7 +30,7 @@ order: 2
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Ruby et vous voulez y deployer [Camaleon](http://camaleon.tuzitio.com/), un CMS flexible vous permettant de créer une structure de contenu personnalisée sans avoir à coder.
+Vous avez souscrit à un hébergement web POWER Ruby et vous voulez y déployer [Camaleon](http://camaleon.tuzitio.com/), un CMS flexible vous permettant de créer une structure de contenu personnalisée sans avoir à coder.
 
 **Découvrez comment installer Camaleon sur votre hébergement web POWER**
 
@@ -123,7 +123,7 @@ development:
   check_yarn_integrity: false
 ```
 
-[Rédemarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre CMS Camaleon sera en ligne.
+[Redémarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre CMS Camaleon sera en ligne.
 
 
 ![Camaleon](images/ruby-install-camaleon-01.png){.thumbnail}

@@ -30,7 +30,7 @@ order: 4
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y deployer une base de connaissances basée sur [WikiJS](https://wiki.js.org/).
+Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y déployer une base de connaissances basée sur [WikiJS](https://wiki.js.org/).
 
 **Découvrez comment installer Wiki js sur votre hébergement web POWER**
 
@@ -90,7 +90,7 @@ ln -fs server/index.js index.js
 ```
 
 
-[Rédemarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), puis votre CMS Strapi sera en ligne.
+[Redémarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), puis votre CMS Strapi sera en ligne.
 
 ![WikiJS](images/nodejs-install-wikijs-01.png){.thumbnail}
 

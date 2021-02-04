@@ -31,7 +31,7 @@ order: 1
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y deployer un projet basé sur [Express](https://expressjs.com/).
+Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y déployer un projet basé sur [Express](https://expressjs.com/).
 
 **Découvrez comment installer Express sur votre hébergement web POWER**
 
@@ -75,7 +75,7 @@ res.send(msg);
 app.listen(port);
 ```
 
-[Rédemarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), puis votre application Express sera en ligne.
+[Redémarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), puis votre application Express sera en ligne.
 
 ![Express](images/nodejs-install-express-01.png){.thumbnail}
 

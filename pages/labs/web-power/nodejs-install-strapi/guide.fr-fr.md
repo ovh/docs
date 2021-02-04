@@ -58,7 +58,7 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 [Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER. 
 
-Éffacez le repertoire `www` et installez ensuite Strapi :
+Effacez le répertoire `www` et installez ensuite Strapi :
 
 ```sh
 rm -rf www
@@ -81,7 +81,7 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ```
 
 
-[Rédemarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), puis votre CMS sur Strapi sera en ligne.
+[Redémarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), puis votre CMS sur Strapi sera en ligne.
 
 ![Strapi](images/nodejs-install-strapi-01.png){.thumbnail}
 

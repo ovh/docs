@@ -133,7 +133,7 @@ Django doit déclarer les hôtes autorisés pour le site Web. Dans `config/setti
 ALLOWED_HOSTS = ['yourdomainname', 'www.yourdomainname', 'yourftpuser.cluster000.hosting.ovh.net']
 ```
 
-[Rédemarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre Django sera en ligne.
+[Redémarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre Django sera en ligne.
 
 
 ![Django](images/python-install-django-01.png){.thumbnail}
@@ -240,7 +240,7 @@ ALLOWED_HOSTS = [ 'power.lostinbrittany.dev', 'xxxx.xxxx.hosting.ovh.net' ]
 
 ### Plus d'informations sur Django
 
-Retrouvez la documentation officiel de Django sur <https://docs.djangoproject.com/fr/3.1/>
+Retrouvez la documentation officielle de Django sur <https://docs.djangoproject.com/fr/3.1/>
 
 
 ## Aller plus loin
