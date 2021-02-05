@@ -30,7 +30,7 @@ Elles proviennent parfois d'une mise à jour effectuée automatiquement par un c
 
 ## En pratique
 
-Testez votre site sur plusieurs appareils et navigateurs, afin de vérifier que la même anomalie.
+Avant de poursuivre, vérifiez votre site sur plusieurs appareils et navigateurs, afin de vérifier que la même anomalie apparaît bien dans toutes les situations.
 
 ### Restaurez votre site à son état antérieur
 
