@@ -2,7 +2,7 @@
 title: Migrating an infrastructure to a new vDC
 routes:
     canonical: 'https://docs.ovh.com/gb/en/private-cloud/service-migration/'
-excerpt: Find out how to manage all aspects of migrating a PCC infrastructure to a vDC
+excerpt: Find out how to manage all aspects of migrating from one vDC to another vDC in the same PCC
 slug: service-migration-vdc
 section: Getting started
 order: 6
@@ -74,7 +74,7 @@ As part of a migration process, you can link your Hosted Private Cloud services 
 
 ##### **Public network**
 
-The Public IP addresses attached to the source vDC will automatically be available for use in the destination vDC so there is no need to transfer public IP blocks.
+The Public IP addresses attached to the source vDC will automatically be available for use in the destination vDC.
 
 ### VMware context
 
@@ -152,7 +152,7 @@ For more information, consult VMware's documentation on [how to edit general dis
 
 **Automation tips:** Powercli cmdlet “Export-VDPortGroup” can retrieve Distibuted Virtual Portgroup information which can then be imported into the destination Distributed Switch with the use of the “New-VDPortgroup -BackupPath” cmdlet.
 
-##### **1.7 Veeam backup config**
+##### **1.7 Veeam backup configuration**
 
 If OVHcloud provided Veeam is currently in use to backup VMs on the source vDC, it will be necessary to use the OVH API to re-check the backup jobs after the VMs have been migrated to the new vDC.
 
