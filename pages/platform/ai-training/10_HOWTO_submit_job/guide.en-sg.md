@@ -15,13 +15,13 @@ This guide covers the initialisation of **AI Training** and the submission of [*
 
 -   a **Public cloud** project
 -   optionally **data** objects to attach to the **job** at step 8, see our [create **data** object](../data) guide.
--   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+-   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 ## Instructions
 
 ### Step 1 - Going to the AI Training menu
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Public Cloud`{.action} section and then to the `AI Training`{.action} section which is located under `AI & Machine Learning`.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), go to the `Public Cloud`{.action} section and then to the `AI Training`{.action} section which is located under `AI & Machine Learning`.
 
 ![image](images/00_training_menu.png){.thumbnail}
 
