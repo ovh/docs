@@ -17,7 +17,7 @@ Bei der Installation oder Neuinstallation eines Windows-Betriebssystems wird Ihn
 ## Voraussetzungen
 
 - Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/){.external}, auf dem Windows installiert ist in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 
 ## In der praktischen Anwendung
@@ -26,7 +26,7 @@ Die folgenden Schritte beschreiben den Vorgang zur Änderung des lokalen Admin-P
 
 ### Schritt 1: Server im Rescue-Modus neu starten <a name="bootinrescue"></a>
 
-Das System muss im Rescue-Modus gestartet werden, bevor das Administrator-Passwort geändert werden kann. Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in der linken Navigationsleiste unter `Dedicated Server`{.action} aus.
+Das System muss im Rescue-Modus gestartet werden, bevor das Administrator-Passwort geändert werden kann. Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in der linken Navigationsleiste unter `Dedicated Server`{.action} aus.
 
 Der Netboot-Modus muss auf "rescue64-pro (Customer rescue system (Linux))" umgestellt werden. Suchen Sie nach "Boot" im Bereich **Allgemeine Informationen** und klicken Sie auf `...`{.action}, dann auf `Bearbeiten`{.action}.
 <br>Setzen Sie im angezeigten Fenster einen Haken bei **Im Rescue-Modus booten** und wählen Sie "rescue64-pro" im Menü aus. Geben Sie im letzten Feld eine E-Mail-Adresse an, wenn die Login-Daten an eine andere Adresse als die Hauptadresse Ihres OVHcloud-Accounts gesendet werden sollen.
@@ -225,7 +225,7 @@ Write hive files? (y/n) [n] : y
 
 ### Schritt 4: Server neu starten 
 
-Beginnen Sie damit, den Netboot-Modus im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) wieder auf **Von Festplatte booten** umzustellen (siehe [Schritt 1](#bootinrescue)). 
+Beginnen Sie damit, den Netboot-Modus im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) wieder auf **Von Festplatte booten** umzustellen (siehe [Schritt 1](#bootinrescue)). 
 
 Über die Kommandozeile trennen Sie die Partition wieder ab und starten den Server neu mit den folgenden Befehlen:
 
@@ -241,7 +241,7 @@ System is going down for reboot NOW!
 
 ### Schritt 5: Ein neues Passwort festlegen (IPMI) <a name="passwordreset"></a>
 
-Gehen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) auf den Tab `IPMI`{.action}, um eine KVM-Session zu öffnen.
+Gehen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf den Tab `IPMI`{.action}, um eine KVM-Session zu öffnen.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -282,7 +282,7 @@ Es wird empfohlen, bei der Eingabe von Passwörtern in dieses Interface die virt
 
 #### Schritt 1: Server im Rescue-Modus neu starten <a name="bootinwinrescue"></a>
 
-Das System muss im Rescue-Modus gestartet werden, bevor das Administrator-Passwort geändert werden kann. Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in der linken Navigationsleiste unter `Dedicated Server`{.action} aus.
+Das System muss im Rescue-Modus gestartet werden, bevor das Administrator-Passwort geändert werden kann. Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in der linken Navigationsleiste unter `Dedicated Server`{.action} aus.
 
 Der Netboot-Modus muss auf "WinRescue (Rescue System for Windows)" umgestellt werden. Suchen Sie nach "Boot" im Bereich **Allgemeine Informationen** und klicken Sie auf `...`{.action}, dann auf `Bearbeiten`{.action}.
 <br>Setzen Sie im angezeigten Fenster einen Haken bei **Im Rescue-Modus booten** und wählen Sie "WinRescue" im Menü aus. Geben Sie im letzten Feld eine E-Mail-Adresse an, wenn die Login-Daten an eine andere Adresse als die Hauptadresse Ihres OVHcloud-Accounts gesendet werden sollen. 
@@ -301,7 +301,7 @@ Weitere Informationen zum Rescue-Modus finden Sie in [dieser Anleitung](../ovh-r
 
 #### Schritt 2: Derzeitiges Passwort löschen
 
-Gehen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) auf den Tab `IPMI`{.action}, um eine KVM-Session zu öffnen.
+Gehen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf den Tab `IPMI`{.action}, um eine KVM-Session zu öffnen.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -323,7 +323,7 @@ Der Server muss dann neu gestartet werden.
 
 #### Schritt 3: Server neu starten 
 
-Beginnen Sie damit, den Netboot-Modus im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) wieder auf **Von Festplatte booten** umzustellen (siehe [Schritt 1](#bootinwinrescue)).
+Beginnen Sie damit, den Netboot-Modus im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) wieder auf **Von Festplatte booten** umzustellen (siehe [Schritt 1](#bootinwinrescue)).
 
 Wechseln Sie wieder zum Fenster der KVM-Sitzung und wählen Sie die Herunterfahren-Option `Neu starten`{.action} über den Windows-Button unten links aus.
 

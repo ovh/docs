@@ -88,7 +88,7 @@ Sie haben außerdem die Möglichkeit, Ihre Bestellung mit einem [Webhosting Ange
 > - **die Wahl der DNS-Server der Domain**: Wenn Ihre Domain aktuell für eine Website oder E-Mail-Adressen verwendet wird, müssen unbedingt die von Ihrer Domain verwendeten DNS-Server angegeben werden, um eine Dienstunterbrechung zu vermeiden.
 >
 
-Wenn Sie den Bestellschein erhalten haben, zahlen Sie den angegebenen Betrag, damit der Domaintransfer gestartet wird. Der Transferprozess startet erst nach Erhalt Ihrer Zahlung. Nach dem Start können Sie den Fortschritt des Transfers jederzeit über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} nachverfolgen. Gehen Sie hierzu im linken Menü in den Bereich `Domains`{.action} und klicken Sie auf `Laufende Operationen`{.action}.
+Wenn Sie den Bestellschein erhalten haben, zahlen Sie den angegebenen Betrag, damit der Domaintransfer gestartet wird. Der Transferprozess startet erst nach Erhalt Ihrer Zahlung. Nach dem Start können Sie den Fortschritt des Transfers jederzeit über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} nachverfolgen. Gehen Sie hierzu im linken Menü in den Bereich `Domains`{.action} und klicken Sie auf `Laufende Operationen`{.action}.
 
 ### Schritt 4: Ersten Schritt der Transferbestätigung durchführen
 
@@ -112,7 +112,7 @@ An diesem Schritt sind mehrere Ergebnisse möglich, je nachdem, welche Aktionen 
 |Keine Antwort auf beide Bestätigungsanfragen|Übergang zum zweiten Bestätigungsschritt nach fünf Tagen|
 |Die Bestätigungsanfrage wird von einem der Kontakte abgelehnt.|Der Transfer wird nach Erhalt der Ablehnung durch einen der Kontakte abgebrochen.|
 
-Falls der Transfer abgebrochen wird, überprüfen Sie bitte, dass die verschiedenen Parteien diesem zustimmen und die E-Mail-Adressen aktuell sind. Anschließend kann der Transfer über das [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} unter `Domains`{.action} im Bereich `Laufende Operationen`{.action} erneut gestartet werden.
+Falls der Transfer abgebrochen wird, überprüfen Sie bitte, dass die verschiedenen Parteien diesem zustimmen und die E-Mail-Adressen aktuell sind. Anschließend kann der Transfer über das [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} unter `Domains`{.action} im Bereich `Laufende Operationen`{.action} erneut gestartet werden.
 
 ### Schritt 5: Zweiter Schritt der Transferbestätigung
 
@@ -124,11 +124,11 @@ Sobald der zweite Schritt eingeleitet wird, erhält der aktuelle Registrar (noch
 |Keine Antwort des aktuellen Registrars|Der Transfer erfolgt nach fünf Tagen.|
 |Ablehnung des aktuellen Registrars|Der Transfer wird nach Erhalt der Ablehnung abgebrochen.|
 
-Wenn der aktuelle Registrar den Transfer ablehnt, nehmen Sie mit diesem Kontakt auf, um die Gründe für seine Ablehnung zu erfahren. Anschließend kann der Transfer über das [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} unter `Domains`{.action} im Bereich `Laufende Operationen`{.action} erneut gestartet werden.
+Wenn der aktuelle Registrar den Transfer ablehnt, nehmen Sie mit diesem Kontakt auf, um die Gründe für seine Ablehnung zu erfahren. Anschließend kann der Transfer über das [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} unter `Domains`{.action} im Bereich `Laufende Operationen`{.action} erneut gestartet werden.
 
 ### Schritt 6: Domain bei OVH verwalten
 
-Sobald der Transfer abgeschlossen ist, können Sie die Domain über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} verwalten. Klicken Sie in Ihrem Kundencenter im linken Menü auf `Domains`{.action} und anschließend auf die entsprechende Domain.
+Sobald der Transfer abgeschlossen ist, können Sie die Domain über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} verwalten. Klicken Sie in Ihrem Kundencenter im linken Menü auf `Domains`{.action} und anschließend auf die entsprechende Domain.
 
 ## Weiterführende Informationen
 

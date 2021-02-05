@@ -23,7 +23,7 @@ Bei OVHcloud haben Sie die Möglichkeit, Benutzer zu erstellen und diesen Lese- 
 ## Voraussetzungen
 
 - Sie verfügen über einen aktiven OVHcloud Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
@@ -50,7 +50,7 @@ Der Inhaber des Accounts xx11111-ovh verfügt automatisch über **Administrator*
 
 ### Schritt 2: Benutzer hinzufügen
 
-Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) eingeloggt sind, klicken Sie oben rechts auf `Ihren Namen`{.action} (1) und klicken Sie dann auf Ihre Initialen (2).
+Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt sind, klicken Sie oben rechts auf `Ihren Namen`{.action} (1) und klicken Sie dann auf Ihre Initialen (2).
 Klicken Sie anschließend auf den Tab `Benutzerverwaltung`{.action} (3) und dann auf `Einen Benutzer hinzufügen`{.action} (4).
 
 ![Benutzerverwaltung](images/hubusers.png){.thumbnail}
@@ -73,7 +73,7 @@ Beispiel: **1234-567-89/john.smith**.
 
 ![Benutzerverwaltung](images/usersmanagement3.png){.thumbnail}
 
-Der Benutzer kann sich von nun an mit dieser Kennung im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) einloggen. 
+Der Benutzer kann sich von nun an mit dieser Kennung im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einloggen. 
 
 Darüber hinaus kann er sein Passwort ändern und seinen eigenen Zugang zu Ihrem Account mithilfe einer Zwei-Faktor-Authentifizierung zusätzlich schützen (diese betrifft nur seinen Zugriff als Benutzer). Um mehr über die Einrichtung der Zwei-Faktor-Authentifizierung zu erfahren, lesen Sie [diese Anleitung](../Account-mit-2FA-absichern/).
 

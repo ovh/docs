@@ -22,7 +22,7 @@ Beachten Sie bitte, dass SSH-Schlüssel bei Instanzen, auf denen das Windows-Bet
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
@@ -107,7 +107,7 @@ Sobald Sie die Maus bewegen, füllt sich der Fortschrittsbalken. Wenn er voll is
 
 ### Ihren SSH-Schlüssel ins OVHcloud Kundencenter importieren
 
-Markieren und kopieren Sie zuerst den Text Ihres öffentlichen Schlüssels und melden Sie sich dann im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) an.
+Markieren und kopieren Sie zuerst den Text Ihres öffentlichen Schlüssels und melden Sie sich dann im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) an.
 
 Wechseln Sie zum Bereich `Public Cloud`{.action}.
 

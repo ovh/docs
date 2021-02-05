@@ -22,14 +22,14 @@ Es kann aus verschiedenen Gründen erforderlich sein, dass Sie eine DNS-Zone fü
 - Sie besitzen eine Domain.
 - Die betreffende Domain hat noch keine OVH DNS-Zone und ist nicht Teil eines laufenden Vorgangs oder einer aktuellen Bestellung bei OVH.
 - Die technische Konfiguration der Domain ist korrekt (Status, SOA usw.).
-- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 
 ## Beschreibung
 
 ### Schritt 1: DNS-Zone über das Kundencenter erstellen
 
-Loggen Sie sich zunächst im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie links im Menü auf `Bestellen`{.action} und dann auf `DNS Zone`{.action}.
+Loggen Sie sich zunächst im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie links im Menü auf `Bestellen`{.action} und dann auf `DNS Zone`{.action}.
 
 Geben Sie auf der angezeigten Seite den Domainnamen ein, für den Sie die OVH DNS-Zone erstellen möchten. Warten Sie einen Moment, bis das Tool den Domainnamen überprüft hat.
 
@@ -52,7 +52,7 @@ Nachdem Sie eine Option ausgewählt haben, folgen Sie den angezeigten Schritten 
 
 Nun, da die DNS-Zone für Ihre Domain erstellt wurde, können Sie sie bearbeiten. Die Bearbeitung ist optional, kann jedoch erforderlich werden, um die ständige Verfügbarkeit der mit dieser Domain verbundenen Dienste (wie Websites und E-Mails) sicherzustellen.
 
-Loggen Sie sich für die Bearbeitung der DNS-Zone im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie links im Menü auf `Domains`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS Zone`{.action}.
+Loggen Sie sich für die Bearbeitung der DNS-Zone im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie links im Menü auf `Domains`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS Zone`{.action}.
 
 > [!primary]
 >

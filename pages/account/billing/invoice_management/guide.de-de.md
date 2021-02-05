@@ -15,12 +15,12 @@ OVHcloud stellt Ihnen einen Bereich zur Verfügung, über den Sie alle Ihre Rech
 
 > [!primary]
 >
-> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVHcloud Verträge, die Sie jederzeit in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im Bereich `Produkte und Dienstleistungen`{.action}, unter `Verträge`{.action} einsehen können.
+> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVHcloud Verträge, die Sie jederzeit in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `Produkte und Dienstleistungen`{.action}, unter `Verträge`{.action} einsehen können.
 >
 
 ## Voraussetzungen
 
-- Sie sind im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie sind im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 - Sie sind der Rechnungskontakt für Ihren Dienst (mehr Informationen zu den verschiedenen Kontakten finden Sie in der Anleitung „[Verwaltung der Kontakte Ihrer Dienstleistungen](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/){.external}“).
 
 
@@ -54,7 +54,7 @@ Die Steuern werden auf der Rechnung erst unten beim Gesamtpreis „Total inkl. M
 
 > [!primary]
 >
-> Wenn unter verwendetes Zahlungsmittel „Bankeinzug“ angegeben ist, dann handelt es sich um eine automatische Verlängerung, die von Ihrem Account abgebucht wird. Das genutzte Zahlungsmittel ist das Mittel, das in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} hinterlegt wurde.
+> Wenn unter verwendetes Zahlungsmittel „Bankeinzug“ angegeben ist, dann handelt es sich um eine automatische Verlängerung, die von Ihrem Account abgebucht wird. Das genutzte Zahlungsmittel ist das Mittel, das in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} hinterlegt wurde.
 >
 
 
@@ -62,7 +62,7 @@ Die Steuern werden auf der Rechnung erst unten beim Gesamtpreis „Total inkl. M
 
 #### Rechnungen einsehen und verwalten
 
-Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} angemeldet sind, klicken Sie oben rechts auf Ihren Namen, um über `Rechnungen`{.action} den Abrechnungsbereich aufzurufen.
+Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} angemeldet sind, klicken Sie oben rechts auf Ihren Namen, um über `Rechnungen`{.action} den Abrechnungsbereich aufzurufen.
 
 ![Kundencenter](images/hubinvoices.png){.thumbnail}
 

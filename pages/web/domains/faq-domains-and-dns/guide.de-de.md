@@ -11,11 +11,11 @@ section: 'DNS und DNS-Zone'
 
 ### Wie konfiguriere ich meine DNS-Zone? 
 
-Sobald Sie über eine Domain für Ihre Website verfügen, können Sie deren DNS-Zone konfigurieren. Loggen Sie sich hierzu in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, gehen Sie in den Bereich `Domains` und klicken Sie auf Ihren Domainnamen und dann auf den Tab `DNS-Zone`{.action}. 
+Sobald Sie über eine Domain für Ihre Website verfügen, können Sie deren DNS-Zone konfigurieren. Loggen Sie sich hierzu in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, gehen Sie in den Bereich `Domains` und klicken Sie auf Ihren Domainnamen und dann auf den Tab `DNS-Zone`{.action}. 
 
 Rechts auf der neu angezeigten Seite können Sie verschiedene Aktionen durchführen und unter anderem `Einträge erstellen/löschen`{.action}.
 
-**Tipps und Tricks**: Bei einer fehlerhaften Änderung können Sie Ihre DNS-Zone über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} zurücksetzen. Weitere Informationen hierzu finden Sie in [unserer Dokumentation](../webhosting_bearbeiten_der_dns_zone/).
+**Tipps und Tricks**: Bei einer fehlerhaften Änderung können Sie Ihre DNS-Zone über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} zurücksetzen. Weitere Informationen hierzu finden Sie in [unserer Dokumentation](../webhosting_bearbeiten_der_dns_zone/).
 
 ## Weiterführende Informationen
 

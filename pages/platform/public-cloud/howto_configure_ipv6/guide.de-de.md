@@ -20,7 +20,7 @@ Standardmäßig ist nur die IPv4-Adresse eingerichtet.
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen bereits über eine Public Cloud Instanz, wobei das Modell keine Rolle spielt.
 - Sie haben SSH-Kenntnisse.
 - Sie haben Grundkenntnisse zu Netzwerken.

@@ -19,7 +19,7 @@ Dies bedeutet, dass Sie den OVHcloud Kunden-Account, der Ihre Rechnungen verwalt
 ## Voraussetzungen
 
 - Sie verfügen über ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) für beide Kennungen.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) für beide Kennungen.
 - Sie haben sichergestellt, dass sowohl Administrator- als auch Rechnungskontakte derselben OVHcloud Filiale angehören.
 
 ## In der praktischen Anwendung
