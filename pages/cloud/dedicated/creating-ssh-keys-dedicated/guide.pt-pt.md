@@ -21,7 +21,7 @@ Note que as chaves SSH não são utilizadas para a autenticação nos servidores
 
 ## Requisitos
 
-- acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 - um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/) na sua conta OVHcloud
 - acesso administrativo (root) via SSH
 

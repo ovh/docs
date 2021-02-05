@@ -17,7 +17,7 @@ Já [criou uma pool - EN](https://docs.ovh.com/gb/en/cloud-desktop-infrastructur
 ## Requisitos
 
 - Abrir o VMware Horizon ou um navegador.
-- Conhecer o endereço (URL) do ponto de acesso, disponível na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Conhecer o endereço (URL) do ponto de acesso, disponível na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - [Ter autorizado o seu utilizador na pool - EN](https://docs.ovh.com/gb/en/cloud-desktop-infrastructure/assigning-desktop-access/){.external}.
 
 

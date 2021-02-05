@@ -25,7 +25,7 @@ Para proteger a sua infraestrutura geral e os servidores dos seus clientes, a OV
 ## Requisitos
 
 - Dispor de um serviço OVH com Firewall Network incluída: [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external}, [VPS](https://www.ovh.pt/vps/){.external}, [instância Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.pt/private-cloud/){.external}, [IP Failover](https://www.ovh.pt/servidores_dedicados/ip_failover.xml){.external}, etc.
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 
 ## Instruções
@@ -37,7 +37,7 @@ Para proteger a sua infraestrutura geral e os servidores dos seus clientes, a OV
 > A Firewall Network foi concebida para proteger os endereços de IP associados a uma máquina. Cada IP deverá ser configurado de forma independente. Não é possível realizar uma configuração simultânea dos IP do servidor.
 > 
 
-Depois de aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, vá à secção `IP`{.action} e clique em `...`{.action} para ativar a firewall no IPv4 pretendido.
+Depois de aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, vá à secção `IP`{.action} e clique em `...`{.action} para ativar a firewall no IPv4 pretendido.
 
 ![Ativação da Firewall Network](images/firewall_creation.png){.thumbnail}
 

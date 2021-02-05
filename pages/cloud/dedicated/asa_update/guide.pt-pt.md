@@ -15,7 +15,7 @@ Para proteger ao máximo o seu sistema, a firewall CISCO Adaptive Security Appli
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 
 ## Instruções
@@ -24,7 +24,7 @@ Para proteger ao máximo o seu sistema, a firewall CISCO Adaptive Security Appli
 
 O procedimento de atualização vai necessitar de várias reinicializações. Portanto, aconselhamos que desative a ASA para não deixar o servidor indisponível durante a atualização.
 
-Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Dedicado`{.action}. Escolha o seu servidor dedicado e depois a `Firewall Cisco ASA`{.action}. Por fim, clique com o botão direito em `Desativar a firewall Cisco ASA`{.action} 
+Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Dedicado`{.action}. Escolha o seu servidor dedicado e depois a `Firewall Cisco ASA`{.action}. Por fim, clique com o botão direito em `Desativar a firewall Cisco ASA`{.action} 
 
 ![Desativação da ASA](images/customer_panel_asa_disable.png){.thumbnail}
 
@@ -112,7 +112,7 @@ A reinicialização para carregar a configuração vai levar alguns minutos.
 
 ### Reativar a ASA a partir da Área de Cliente
 
-Tal como para a primeira etapa, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Dedicado`{.action}. Escolha o seu servidor dedicado e depois a `Firewall Cisco ASA`{.action}. Por fim, clique com o botão direito em `Ativar a firewall Cisco ASA`{.action}.
+Tal como para a primeira etapa, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Dedicado`{.action}. Escolha o seu servidor dedicado e depois a `Firewall Cisco ASA`{.action}. Por fim, clique com o botão direito em `Ativar a firewall Cisco ASA`{.action}.
 
 ![Ativação da ASA](images/customer_panel_asa_enable.png){.thumbnail}
 
@@ -124,7 +124,7 @@ Após a reinicialização, quando a ASA estiver ativa, verifique que todos os se
 
 Agora é preciso desativar a ASA como na primeira etapa.
 
-Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Dedicado`{.action}. A seguir escolha o seu servidor dedicado e depois a `Firewall Cisco ASA`{.action}. Por fim, clique com o botão direito em `Desativar a firewall Cisco ASA`{.action}.
+Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Dedicado`{.action}. A seguir escolha o seu servidor dedicado e depois a `Firewall Cisco ASA`{.action}. Por fim, clique com o botão direito em `Desativar a firewall Cisco ASA`{.action}.
 
 ![Desativação da ASA](images/customer_panel_asa_disable.png){.thumbnail}
 
@@ -422,7 +422,7 @@ Cryptochecksum: 4b86b1e4 2e731d6b 9d1fc491 a5eae0f3
 
 ### Reativar a ASA a partir da Área de Cliente
 
-Tal como para a primeira etapa, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Dedicado`{.action}. A seguir escolha o seu servidor dedicado e depois a `Firewall Cisco ASA`{.action}. Por fim, clique com o botão direito em `Ativar a firewall Cisco ASA`{.action}.
+Tal como para a primeira etapa, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Dedicado`{.action}. A seguir escolha o seu servidor dedicado e depois a `Firewall Cisco ASA`{.action}. Por fim, clique com o botão direito em `Ativar a firewall Cisco ASA`{.action}.
 
 ![Ativação da ASA](images/customer_panel_asa_enable.png){.thumbnail}
 

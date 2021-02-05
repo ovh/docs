@@ -17,7 +17,7 @@ Mesmo que tenha atingido a capacidade máxima de armazenamento no seu disco adic
 
 * uma [Instância de Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVH
 * um [disco adicional](https://www.ovhcloud.com/pt/public-cloud/block-storage/){.external} associado à sua instância
-* acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+* acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
 * acesso administrativo (raiz) à sua instância via SSH (apenas para Linux )
 * acesso administrativo à sua instância via RDP (apenas para Windows)
 
@@ -25,7 +25,7 @@ Mesmo que tenha atingido a capacidade máxima de armazenamento no seu disco adic
 
 ### Utilizando a Área de Cliente
 
-Para implementar uma instância Public Cloud, faça login na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique em `Public Cloud`{.action}no canto superior esquerdo da página. No ecrã seguinte, clique na seta ao lado do nome do seu projeto predefinido no canto superior esquerdo do ecrã. Agora selecione o projeto em que pretende editar o tamanho do disco adicional.
+Para implementar uma instância Public Cloud, faça login na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Public Cloud`{.action}no canto superior esquerdo da página. No ecrã seguinte, clique na seta ao lado do nome do seu projeto predefinido no canto superior esquerdo do ecrã. Agora selecione o projeto em que pretende editar o tamanho do disco adicional.
 
 ![área de cliente](images/select_project.png){.thumbnail}
 

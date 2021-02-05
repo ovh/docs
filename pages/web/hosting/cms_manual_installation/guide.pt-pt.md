@@ -23,7 +23,7 @@ Os nossos serviços de Alojamento Web são compatíveis com alguns dos mais popu
 ## Requisitos
 
 - um plano de Alojamento Web
-- acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 ## Instruções
 
@@ -31,7 +31,7 @@ Os nossos serviços de Alojamento Web são compatíveis com alguns dos mais popu
 > [!primary]
 >**Instalação automática**
 >
->Poderá instalar automaticamente cada um destes CMS com apenas alguns cliques a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Para isso, leia o seguinte guia:
+>Poderá instalar automaticamente cada um destes CMS com apenas alguns cliques a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para isso, leia o seguinte guia:
 >
 >[Configurar o seu website com módulos 1 clique](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/)
 >

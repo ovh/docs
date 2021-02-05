@@ -22,7 +22,7 @@ Este guia explica-lhe como usar os seus backups para recriar, duplicar ou restau
 
 ### Criar uma instância a partir de um backup
 
-Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e selecione `Public Cloud`{.action}. Selecione então a secção `Instance backup`{.action}.
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione `Public Cloud`{.action}. Selecione então a secção `Instance backup`{.action}.
 
 Clique então nas `...`{.action} do lado direito do backup escolhido e, por fim, em `Criar uma instância`{.action}.
 

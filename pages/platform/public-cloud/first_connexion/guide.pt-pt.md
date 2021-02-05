@@ -16,7 +16,7 @@ A conexão a uma instância Public Cloud é similar a uma conexão a um Servidor
 
 ## Requisitos
 
-* acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+* acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
 * uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} criada na sua conta
 
 ## Instruções
@@ -74,7 +74,7 @@ Para se conectar a uma instância Linux a partir do Windows, basta utilizar um p
 
 #### Finalizar a instalação
 
-Quando tiver criado a instância, é preciso finalizar o chamado *sysprep*. Para isso, na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, é preciso executar a consola VNC:
+Quando tiver criado a instância, é preciso finalizar o chamado *sysprep*. Para isso, na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, é preciso executar a consola VNC:
 
 ![consola VNC](images/vnc_console.png)
 

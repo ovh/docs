@@ -17,7 +17,7 @@ Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja
 ## Requisitos
 
 - Ter um serviço de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} (excluindo o Cloud Web).
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager).
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
@@ -34,7 +34,7 @@ Ao alterar a configuração do seu alojamento, estará a alterar a configuraçã
 
 #### 1 - Aceder à gestão da configuração do alojamento
 
-Para iniciar esta operação, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o alojamento web em causa. Certifique-se de que está no separador `Informações gerais`{.action}. A seguir, clique no botão dos três pontos correspondente à linha `Versão global de PHP`{.action} e selecione a opção `Alterar configuração`{.action}.
+Para iniciar esta operação, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o alojamento web em causa. Certifique-se de que está no separador `Informações gerais`{.action}. A seguir, clique no botão dos três pontos correspondente à linha `Versão global de PHP`{.action} e selecione a opção `Alterar configuração`{.action}.
 
 ![Configuração do alojamento](images/change-hosting-configuration-step1.png){.thumbnail}
 

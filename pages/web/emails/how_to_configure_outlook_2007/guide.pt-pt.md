@@ -41,7 +41,7 @@ Servidor de receçãoSSL0.OVH.NET
 Servidor de envio:SSL0.OVH.NET
 
 Nome do utilizador: o seu endereço de e-mail na íntegra (ex:test@ovh.net
-Password: A password que definiu no [manager](https://www.ovh.com/auth/?action=gotomanager) para a conta de e-mail partilhada.
+Password: A password que definiu no [manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para a conta de e-mail partilhada.
 
 Clique de seguida no botão "Parâmetros suplementares" para continuar.
 
@@ -52,7 +52,7 @@ Clique de seguida no botão "Parâmetros suplementares" para continuar.
 No separador "Servidor de envio" selecione a opção "O meu servidor de envio requer uma autenticação para se ligar" e depois "Ligar-se com a ajuda de:"
 
 Nome do utilizador: o seu endereço de e-mail na íntegra (ex:test@ovh.net
-Password: A password que definiu no [manager](https://www.ovh.com/auth/?action=gotomanager) para a conta de e-mail partilhada.
+Password: A password que definiu no [manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para a conta de e-mail partilhada.
 
 
 É imperativo que utilize a porta 587 em SMTP e selecione esta autenticação para se ligar ao servidor de envio. Trata-se da porta autenticada para todos os fornecedores de acesso à internet (ISP). 
@@ -96,7 +96,7 @@ Eis as informações a ter em conta para a configuração de uma conta de email 
 Configuração IMAP com encriptação SSL activada ou SSL desativada : 
 
 Endereço de Email : O seu endereço de email completo.
-Palavra-passe : A palavra-passe que definiu no seu espaço [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager).
+Palavra-passe : A palavra-passe que definiu no seu espaço [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 Nome de utilizador : O seu endereço de email completo.
 Servidor de receção : Servidor de receção de emails : SSL0.OVH.NET
 Porta do servidor de receção : A porta : 993 ou 143
@@ -123,7 +123,7 @@ Eis as informações a ter em conta para a configuração de uma conta de email 
 Configuração POP com encriptação SSL activada ou SSL desativada : 
 
 Endereço de Email : O seu endereço de email completo.
-Palavra-passe : A palavra-passe que definiu no seu espaço [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager).
+Palavra-passe : A palavra-passe que definiu no seu espaço [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 Nome de utilizador : O seu endereço de email completo.
 Servidor de receção : Servidor de receção de emails : SSL0.OVH.NET
 Porta do servidor de receção : A porta : 995 ou 110

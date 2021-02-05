@@ -19,7 +19,7 @@ O alojamento web da OVH oferece várias possibilidades de utilização e configu
 - Ter um serviço de [alojamento web OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
 - Ter recebido o e-mail com a confirmação da instalação do alojamento web.
 - Ter um [domínio](https://www.ovh.pt/dominios/){.external} (endereço que permite identificar e aceder ao seu site).
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
@@ -45,7 +45,7 @@ Nesta secção vai aprender a colocar o site no alojamento. A secção 4 (Domín
 
 Os módulos 1 clique da OVH permitem instalar um CMS de forma simples e rápida. O sistema OVH instala o CMS de forma automática e envia um e-mail com o link e os dados de acesso à interface de criação e gestão do site.
 
-Antes continuar, certifique-se que a pasta de instalação está vazia e que o sistema pode criar uma nova base de dados. Na primeira utilização do alojamento, esta verificação não é necessária. Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} para instalar o módulo CMS. No menu à esquerda, clique em `Alojamentos`{.action} e, de seguida, no nome do alojamento web que contratou. Depois, nos `Módulos 1 clique`{.action}, clique no botão `Adicionar um módulo`{.action}.
+Antes continuar, certifique-se que a pasta de instalação está vazia e que o sistema pode criar uma nova base de dados. Na primeira utilização do alojamento, esta verificação não é necessária. Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} para instalar o módulo CMS. No menu à esquerda, clique em `Alojamentos`{.action} e, de seguida, no nome do alojamento web que contratou. Depois, nos `Módulos 1 clique`{.action}, clique no botão `Adicionar um módulo`{.action}.
 
 ![Acesso aos módulos 1 clique](images/access_to_the_1_click_modules_section.png){/thumbnail}
 
@@ -64,7 +64,7 @@ Para instalar o módulo no modo avançado, certifique-se que:
 - a pasta de instalação do CMS está vazia; 
 - já tem uma base de dados criada no sistema.
 
-Para verificar ou criar uma bases de dados, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}. No menu à esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web que contratou. Selecione `Bases de dados`{.action}. Se não tiver nenhuma base de dados criada, clique no botão `Criar uma base de dados`{.action}. Siga as instruções, e aguarde a conclusão da instalação.
+Para verificar ou criar uma bases de dados, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. No menu à esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web que contratou. Selecione `Bases de dados`{.action}. Se não tiver nenhuma base de dados criada, clique no botão `Criar uma base de dados`{.action}. Siga as instruções, e aguarde a conclusão da instalação.
 
 ![Acesso aos módulos 1 clique](images/create_a_database.png){/thumbnail}
 
@@ -84,7 +84,7 @@ Atenção! Este processo pode variar de acordo com o tipo de site. Se precisar d
 
 ### 3 - Criar endereços de e-mail
 
-A utilização dos serviços de e-mail incluídos no [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external} é opcional. Para criar e usar um ou vários endereços de e-mail associados ao seu domínio, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}. No menu à esquerda, selecione `E-mails`{.action} e clique no alojamento contratado. No separador`E-mails`{.action}, clique no botão `Criar um endereço de e-mail`{.action}.
+A utilização dos serviços de e-mail incluídos no [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external} é opcional. Para criar e usar um ou vários endereços de e-mail associados ao seu domínio, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. No menu à esquerda, selecione `E-mails`{.action} e clique no alojamento contratado. No separador`E-mails`{.action}, clique no botão `Criar um endereço de e-mail`{.action}.
 
 ![Criar um endereço de e-mail](images/create_an_email_address.png){/thumbnail}
 
@@ -106,13 +106,13 @@ Existem dois registos DNS (campos A e MX) que permitem aceder ao seu site e rece
 
 - **Campo A (acesso ao site)**
 
-Para consultar o campo A, e os dados que deve usar na zona DNS, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}. No menu à esquerda, selecione `Alojamentos`{.action}, e clique no alojamento contratado. De seguida, em `Informações gerais`{.action}, tome nota do endereço IP indicado para «IPv4».
+Para consultar o campo A, e os dados que deve usar na zona DNS, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. No menu à esquerda, selecione `Alojamentos`{.action}, e clique no alojamento contratado. De seguida, em `Informações gerais`{.action}, tome nota do endereço IP indicado para «IPv4».
 
 ![Alterar o campo A](images/know_the_OVH_A_records.png){/thumbnail}
 
 - **Campos MX (receção de e-mail)**
 
-Para consultar os campos MX, e os dados que deve usar na zona DNS, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}. No menu à esquerda, selecione `E-mails`{.action} e clique no alojamento web contratado. De seguida, clique em `Informações gerais`{.action}, e tome nota das informações indicadas para os «Campos MX». Estes campos podem diferir entre serviços, em função da filtragem DNS selecionada na área de gestão do alojamento.
+Para consultar os campos MX, e os dados que deve usar na zona DNS, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. No menu à esquerda, selecione `E-mails`{.action} e clique no alojamento web contratado. De seguida, clique em `Informações gerais`{.action}, e tome nota das informações indicadas para os «Campos MX». Estes campos podem diferir entre serviços, em função da filtragem DNS selecionada na área de gestão do alojamento.
 
 ![Alterar os campos MX](images/know_the_OVH_MX_records.png){/thumbnail}
 
@@ -124,7 +124,7 @@ Agora que sabe os registos DNS associados ao seu alojamento web OVH, pode verifi
 
 Neste caso, a configuração do seu domínio foi efetuada de forma automática. Passe à secção 5 para **Criar e Personalizar o site com um CMS**. Se tiver alterado por engano a informação na zona DNS do seu domínio, deverá introduzir os dados corretos.
     
-Para aceder à zona DNS do seu domínio, aceda à [Área de cliente ](https://www.ovh.com/auth/?action=gotomanager){.external}. No menu à esquerda, selecione `Domínios`{.action}, e clique no domínio que pretende configurar. Selecione `Zona DNS`{.action}, verifique e altere as informações necessárias.
+Para aceder à zona DNS do seu domínio, aceda à [Área de cliente ](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. No menu à esquerda, selecione `Domínios`{.action}, e clique no domínio que pretende configurar. Selecione `Zona DNS`{.action}, verifique e altere as informações necessárias.
 
 - **Domínio que não usa a zona DNS da OVH**
     

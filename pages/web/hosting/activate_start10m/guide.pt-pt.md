@@ -17,11 +17,11 @@ Com o [Start 10M](https://www.ovh.pt/dominios/oferta_alojamento_start10m.xml){.e
 ## Requisitos
 
 - Dispor, na Área de Cliente OVHcloud, de um [domínio](https://www.ovh.pt/dominios/){.external} não associado a um alojamento web.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Domínios`{.action}(**1**) na barra à esquerda e escolha o domínio em causa.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Domínios`{.action}(**1**) na barra à esquerda e escolha o domínio em causa.
 
 No menu **Informações gerais**(**2**), encontrará *Alojamento web e e-mail gratuito*. À direita, clique no botão `...`{.action} e, a seguir, em `Ativar`{.action}(**3**).
 
