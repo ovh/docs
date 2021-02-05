@@ -2,7 +2,7 @@
 title: Que faire en cas d’erreur 500 Internal Server Error ?
 legacy_guide_number: 1987
 slug: erreur-500-internal-server-error
-excerpt: Analyser les cas les plus courants d'erreurs 500
+excerpt: Diagnostiquer les cas les plus courants d'erreurs 500
 section: Diagnostic
 ---
 
@@ -14,25 +14,24 @@ Les erreurs 500 « Internal Server Error » peuvent concerner tout ou partie de 
 
 ![error500](images/error-500.png)
 
-Elles proviennent parfois d'une mise à jour effectuée automatiquement par un composant de votre site et donc survenir sans action de votre part.
+Elles proviennent aussi parfois d'une mise à jour effectuée automatiquement par un composant de votre site et donc survenir sans action de votre part.
 
-**Les manipulations proposées dans ce guide vous permettront d'analyser les cas les plus courants d'erreurs 500.**
+**Les manipulations proposées dans ce guide vous permettront de diagnostiquer les cas les plus courants d'erreurs 500.**
 
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-de-thunderbird/#aller-plus-loin_1) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](../erreur-500-internal-server-error/#aller-plus-loin_1) de ce guide.
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement mutualisé](https://www.ovh.com/fr/hebergement-web/)
-- Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/)
+- Vous disposez d'une [offre d'hébergement mutualisé](https://www.ovh.com/fr/hebergement-web/)
+- Vous êtes connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/)
 
 ## En pratique
 
 Avant de poursuivre, vérifiez votre site sur plusieurs appareils et navigateurs, afin de vérifier que la même anomalie apparaît bien dans toutes ces situations.
 
-Il est tout à fait envisageable d'effectuer une restauration ftp de votre hébergement mais il reste préférable de faire un diagnostic approfondi de cette erreur (recherche de mise à jour récentes, changement de fichiers, etc...).
-
+Effectuer une restauration de votre site est une solution tout à fait envisageable. Toutefois, il reste préférable de réaliser un diagnostic approfondi, afin de déterminer l'origine précise de l'erreur 500 et éviter qu'elle réapparaisse.
 Mode développement / PHP
 
 Logs
@@ -71,7 +70,11 @@ Pour plus d'informations sur les connexions en ssh : [Cliquez ici](https://docs.
 
 ### Restaurez votre site à son état antérieur
 
-Pour restaurer votre site à son état antérieur, consultez notre guide [Restaurer l’espace de stockage son hébergement web](../restauration-ftp-filezilla-espace-client/).
+
+
+Pour restaurer votre site à son état antérieur, consultez notre guide [Restaurer l’espace de stockage son hébergement web](../restauration-ftp-filezilla-espace-client/). 
+
+(attention, cette opération va entraîner la restauration de l'ensemble des sites contenus dans votre hébergement)
 
 Si votre site comporte une base de données, consultez notre guide [Restaurer une sauvegarde de votre base de données](../mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client), afin de restaurer votre site à son date antérieure.
 
