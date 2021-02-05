@@ -17,18 +17,18 @@ Automated emails are messages that are sent via scripts. For example, they are u
 ## Requirements
 
 - You must have an [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}.
-- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 
 > [!primary]
 >
 > This guide is only relevant for emails sent using scripts located on your OVH Web Hosting plan.
 >
-> Are you looking to manage email addresses included in your MX Plan solution, or in your [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}? Go to the `Emails`{.action} section of your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+> Are you looking to manage email addresses included in your MX Plan solution, or in your [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}? Go to the `Emails`{.action} section of your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 >
 
 ## Instructions
 
-In your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, you can monitor and manage automated emails sent from your OVH Web Hosting plan. To do this, log in to your Control Panel, click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned from the list. Next, click `More +`{.action}, then `Email scripts`{.action}.
+In your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, you can monitor and manage automated emails sent from your OVH Web Hosting plan. To do this, log in to your Control Panel, click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned from the list. Next, click `More +`{.action}, then `Email scripts`{.action}.
 
 On the page that opens at this stage, you can monitor and manage automated emails sent from your OVH Web Hosting plan.
 

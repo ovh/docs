@@ -12,7 +12,7 @@ You can view and download a log of your sent SMS messages from your OVHcloud Con
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 - An OVHcloud SMS account with at least 1 sent SMS.
 
 ## Instructions
@@ -27,7 +27,7 @@ The log records the date, time, sender, recipient and contents of the sent SMS.
 
 ### Step 1: viewing the log in your Control Panel
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), then select `Telecom`{.action} (1). Next, click `SMS`{.action} on the left (2), and select your SMS account (3).
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then select `Telecom`{.action} (1). Next, click `SMS`{.action} on the left (2), and select your SMS account (3).
 
 Select the `SMS`{.action} tab (4), then `Sending Log`{.action} (5).
 
