@@ -21,13 +21,13 @@ Esto puede ser útil en los siguientes casos:
 
 ## Requisitos
 
-* Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}
 * Tener una [instancia Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/){.external} en su cuenta de OVHcloud.
 * Tener acceso a su instancia por SSH como administrador (root).
 
 ## Procedimiento
 
-Primero, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} y haga clic en el menú `Public Cloud`{.action}. Haga clic en el `Proyecto`{.action} en el que quiere crear la instancia.
+Primero, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y haga clic en el menú `Public Cloud`{.action}. Haga clic en el `Proyecto`{.action} en el que quiere crear la instancia.
 
 Ahora, haga clic en el botón `Acciones`{.action} y seleccione `Crear un volumen`{.action}.
 

@@ -28,11 +28,11 @@ En su alojamiento web de OVHcloud, puede utilizar scripts para automatizar deter
 ## Requisitos
 
 - Tener contratado un [plan de hosting](https://www.ovh.es/hosting/).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
-Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}.
+Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. En la columna izquierda, haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}.
 
 Seleccione el alojamiento correspondiente, abra la pestaña `Plus+`{.action} y haga clic en `Tareas planificadas - Cron.`{.action}
 
@@ -107,7 +107,7 @@ Utilice siempre rutas de acceso absolutas a los archivos de sus scripts. La cons
  
 #### Verificación de los logs de ejecución
 
-Podrá acceder a los logs de su alojamiento web desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) y ver la categoría de log denominada "CRON".
+Podrá acceder a los logs de su alojamiento web desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y ver la categoría de log denominada "CRON".
 
 Para más información, consulte nuestra guía ["Consultar las estadísticas y los logs de un sitio web alojado en un plan compartido"](../web_hosting_consultar_las_estadisticas_y_logs_de_un_sitio_web/).
 

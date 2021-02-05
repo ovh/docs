@@ -24,7 +24,7 @@ Si necesita cambiar la contraseña root en su sistema operativo Linux, Existen d
 
 - Tener su [VPS OVHcloud](https://www.ovhcloud.com/es/vps/){.external} ya configurado.
 - Disponer de las claves de acceso recibidas por correo electrónico después de la instalación (si siguen siendo válidas).
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} (para utilizar el modo de rescate).
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} (para utilizar el modo de rescate).
 
 > [!warning]
 >
@@ -69,7 +69,7 @@ Si desea autorizar la conexión como usuario root, siga los pasos de [esta secci
 
 #### Etapa 1: Reinicie el VPS en modo de rescate.
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) y reinicie el VPS en modo de rescate. Si necesita instrucciones adicionales sobre el uso del modo de rescate con un VPS, consulte la [guía del modo de rescate](../rescue/).
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y reinicie el VPS en modo de rescate. Si necesita instrucciones adicionales sobre el uso del modo de rescate con un VPS, consulte la [guía del modo de rescate](../rescue/).
 
 #### Etapa 2: Identificar el punto de montaje
 
@@ -143,7 +143,7 @@ passwd: password updated successfully
 
 De este modo, podrá volver a conectarse con el nombre de usuario después del reinicio, en caso de que la conexión root esté desactivada.
 
-Por último, reinicie su VPS en su disco desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+Por último, reinicie su VPS en su disco desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 
 ### Activar la contraseña root

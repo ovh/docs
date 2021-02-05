@@ -18,7 +18,7 @@ Este sistema solo le permitirá acceder a la carpeta «upload-vpn» de sus datas
 
 ## Requisitos
 
-- Haber creado una cuenta de usuario desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Haber creado una cuenta de usuario desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
 

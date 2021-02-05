@@ -52,7 +52,7 @@ Se abrirá una ventana en la que deberá introducir la **contraseña** de su cue
 >
 > Si aparece un mensaje indicándole que Outlook no ha podido configurar su cuenta, es posible que el registro SRV de OVH no esté correctamente configurado en la zona DNS del dominio.
 >
-> Compruebe la configuración del dominio en su servicio Exchange en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la pestaña `Dominios asociados`{.action}, en la columna **Diagnóstico** de la tabla.
+> Compruebe la configuración del dominio en su servicio Exchange en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la pestaña `Dominios asociados`{.action}, en la columna **Diagnóstico** de la tabla.
 >
 
 ![Exchange](images/configuration-outlook-2016-windows-exchange-step2.png){.thumbnail}

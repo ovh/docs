@@ -42,7 +42,7 @@ Para más información sobre el coste de envío en créditos de sus SMS en funci
 
 Para garantizar que su cuenta de SMS dispone siempre de crédito, puede activar la recarga automática. Con esta opción, cada vez que su cuenta de SMS baje de un número de créditos determinado, se añadirá de forma automática una nueva cantidad de crédito en su cuenta.
 
-Para activar la recarga automática, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, acceda a la pestaña `Telecom`{.action} y abra la sección `SMS`{.action} en el menú de la izquierda. Seleccione la cuenta de SMS en la que desea activar la recarga automática.
+Para activar la recarga automática, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, acceda a la pestaña `Telecom`{.action} y abra la sección `SMS`{.action} en el menú de la izquierda. Seleccione la cuenta de SMS en la que desea activar la recarga automática.
 
 Acceda al menú `Opciones`{.action} (1) y seleccione la opción `Recarga automática`{.action} (2).
 

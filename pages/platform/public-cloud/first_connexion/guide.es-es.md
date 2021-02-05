@@ -17,7 +17,7 @@ Para conectarse a una instancia de Public Cloud, el procedimiento es similar a u
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 - Haber creado una [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/){.external}.
 
 
@@ -76,7 +76,7 @@ Para iniciar sesión en una instancia de Linux utilizando Windows, puede utiliza
 
 #### Finalizar la instalación
 
-Una vez que haya creado su instancia, deberá finalizar algo denominado *sysrep*. Para hacerlo, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} y ejecute la consola VNC desde el panel de la instancia:
+Una vez que haya creado su instancia, deberá finalizar algo denominado *sysrep*. Para hacerlo, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y ejecute la consola VNC desde el panel de la instancia:
 
 ![VNC console](images/vnc_console.png)
 

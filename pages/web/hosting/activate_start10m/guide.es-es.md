@@ -17,11 +17,11 @@ Con [Start10M](https://www.ovh.es/dominios/oferta_hosting_start10m.xml){.externa
 ## Requisitos
 
 - Tener un [nombre de dominio](https://www.ovh.es/dominios/){.external} no asociado a ningún alojamiento web en su área de cliente de OVHcloud.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
 
-Inicie sesión el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `«Dominios»`{.action}(**1**) en la barra de servicios a la izquierda y seleccione el nombre de dominio correspondiente.
+Inicie sesión el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `«Dominios»`{.action}(**1**) en la barra de servicios a la izquierda y seleccione el nombre de dominio correspondiente.
 
 En la sección **«Información general»**(**2**), acceda al apartado*«Alojamiento web y correo electrónico gratis»*. Haga clic en el botón `...`{.action} a la derecha y, seguidamente, en `«Activar»`{.action}(**3**).
 

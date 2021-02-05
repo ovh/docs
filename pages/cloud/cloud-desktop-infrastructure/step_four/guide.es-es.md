@@ -17,7 +17,7 @@ Una vez [creado el pool](https://docs.ovh.com/es/cloud-desktop-infrastructure/cr
 
 ## Requisitos
 
-- Haber creado usuarios en el Active Directory, en caso de haber creado una relación de aprobación, o haber creado usuarios desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Haber creado usuarios en el Active Directory, en caso de haber creado una relación de aprobación, o haber creado usuarios desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 - Estar conectado a VMware Horizon 7.1.
 
 

@@ -66,7 +66,7 @@ Tras iniciar sesión en el área de cliente, haga clic en su nombre, en la parte
 
 ## ¿Cómo iniciar sesión en su área de cliente?
 
-Acceda a la [página de autenticación de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e introduzca su ID y contraseña.
+Acceda a la [página de autenticación de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} e introduzca su ID y contraseña.
 
 ![ID de cliente](images/nichandle03.png){.thumbnail}
 
