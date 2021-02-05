@@ -15,7 +15,7 @@ Les erreurs 500 « Internal Server Error » peuvent concerner tout ou partie de 
 
 ![error500](images/error-500.png)
 
-Elles proviennent aussi parfois d'une mise à jour effectuée automatiquement par un composant de votre site et donc survenir sans action de votre part.
+Elles proviennent aussi parfois d'une mise à jour effectuée **automatiquement** par un composant de votre site et donc survenir sans action de votre part.
 
 **Découvrez comment diagnostiquer les cas les plus courants d'erreurs 500.**
 
@@ -60,13 +60,11 @@ Une erreur 500 peut également être liée à une erreur au niveau des droits ac
 
 Pour accéder à ces fichiers, connectez-vous en FTP à votre hébergement selon ce [document](../connexion-espace-stockage-ftp-hebergement-web/).
 
-Puis vérifiez les éléments suivants : 
+Le guide [Utilisation logiciel FileZilla avec votre hébergement](../mutualise-guide-utilisation-filezilla/#droits-des-fichiers-dossiers) vous aidera ensuite à effectuer les vérifications suivantes : 
 
--	La **racine** de votre hébergement (Il s’agit du répertoire noté « / » ou « . » dans votre logiciel FTP) doit être obligatoirement en droits 705 (Ce sont les permissions par défaut). Nous vous conseillons de ne pas modifier ce niveau de droits.
+-	La **racine** de votre hébergement (Il s’agit du répertoire noté `/` ou `.` dans votre logiciel FTP) doit être obligatoirement en droits 705 (Ce sont les permissions par défaut). Nous vous conseillons de ne pas modifier ce niveau de droits.
 -	Les répertoires de votre hébergement doivent être en droits 705.
 -	Les fichiers doivent tous être en droits 604.
-
-Pour savoir comment modifier les droits d’un fichier ou répertoire : [Cliquer ici](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/#droits-des-fichiers-dossiers)
 
 ### Accédez aux détails des erreurs sur vos scripts
 
