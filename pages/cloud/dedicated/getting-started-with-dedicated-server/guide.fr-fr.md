@@ -27,7 +27,7 @@ Un serveur dédié est un serveur physique situé dans l'un de nos datacenters. 
 
 - Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
 - Être connecté en SSH (accès root) sous Linux ou en tant qu'administrateur sous Windows.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## En pratique
 
@@ -35,7 +35,7 @@ Lorsque votre serveur dédié est configuré pour la première fois, vous pouvez
 
 ### Installation ou réinstallation de votre serveur dédié
 
-Vous pouvez facilement réinstaller votre serveur et choisir un autre modèle de système d'exploitation dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} à côté de `Système (OS)`, puis cliquez sur `Installer`{.action}.
+Vous pouvez facilement réinstaller votre serveur et choisir un autre modèle de système d'exploitation dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} à côté de `Système (OS)`, puis cliquez sur `Installer`{.action}.
 
 ![Bouton Réinstaller](images/reinstalling-your-server-00.png){.thumbnail}
 
@@ -80,7 +80,7 @@ Pour obtenir une explication détaillée sur la création de clés SSH, reportez
 
 > [!primary]
 >
-> Certains systèmes d'exploitation ou plates-formes, tels que Plesk et Windows, nécessitent l'acquisition d'une licence avant l'installation. Vous pouvez acheter cette [licence auprès de OVHcloud](https://www.ovhcloud.com/fr/bare-metal/os/) ou auprès d'un revendeur. Vous devrez ensuite l'intégrer manuellement, via le système d'exploitation lui-même ou via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Vous pouvez gérer vos licences dans le Panneau de configuration de la section `Bare Metal Cloud`{.action} sous `Licences`{.action}. Dans cette section, vous pouvez également commander des licences (via le bouton `Commander`{.action} à gauche) ou ajouter votre propre licence de serveur SQL ou Windows SPLA (via le bouton `Ajouter une licence SPLA`{.action} à gauche).
+> Certains systèmes d'exploitation ou plates-formes, tels que Plesk et Windows, nécessitent l'acquisition d'une licence avant l'installation. Vous pouvez acheter cette [licence auprès de OVHcloud](https://www.ovhcloud.com/fr/bare-metal/os/) ou auprès d'un revendeur. Vous devrez ensuite l'intégrer manuellement, via le système d'exploitation lui-même ou via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Vous pouvez gérer vos licences dans le Panneau de configuration de la section `Bare Metal Cloud`{.action} sous `Licences`{.action}. Dans cette section, vous pouvez également commander des licences (via le bouton `Commander`{.action} à gauche) ou ajouter votre propre licence de serveur SQL ou Windows SPLA (via le bouton `Ajouter une licence SPLA`{.action} à gauche).
 >
 
 ### Connexion à votre serveur
@@ -149,7 +149,7 @@ Pour plus d'informations, reportez-vous à notre guide: [Utilisation de l’IPMI
 
 ### Mode rescue
 
-En cas de problème avec votre serveur, la première étape de dépannage consiste à redémarrer votre serveur en mode rescue. Pour activer le mode rescue, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) et accédez à la page de votre serveur. Dans le menu `Informations générales`, cliquez sur  `...`{.action} puis sur `Modifier`{.action} pour modifier le mode de démarrage.
+En cas de problème avec votre serveur, la première étape de dépannage consiste à redémarrer votre serveur en mode rescue. Pour activer le mode rescue, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et accédez à la page de votre serveur. Dans le menu `Informations générales`, cliquez sur  `...`{.action} puis sur `Modifier`{.action} pour modifier le mode de démarrage.
 
 ![Modifier la sélection de démarrage](images/rescue-mode-01.png){.thumbnail}
 

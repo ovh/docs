@@ -135,7 +135,7 @@ Toujours depuis l'[API OVH](https://api.ovh.com){.external}, l'appel suivant vou
 
 
 ### Depuis le Manager
-Il est enfin possible de définir vos IPFOs dédiées depuis l'[espace client](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Cloud`{.action}, section `Load Balancer`{.action}.
+Il est enfin possible de définir vos IPFOs dédiées depuis l'[espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Cloud`{.action}, section `Load Balancer`{.action}.
 
 Après avoir sélectionné le Load Balancer que vous souhaitez modifier,
 créez un nouveau Frontend, ou éditez en un existants.

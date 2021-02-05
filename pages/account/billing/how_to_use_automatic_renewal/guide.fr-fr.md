@@ -16,14 +16,14 @@ Vous avez la possibilité d'administrer le renouvellement et la résiliation de 
 
 > [!primary]
 >
-> Selon votre lieu de résidence, la législation locale, ainsi que les solutions concernées, certains détails de ce guide peuvent varier ou ne pas s'appliquer à votre situation. Si vous avez des doutes, veuillez consulter vos contrats OVHcloud. Ceux-ci sont disponibles depuis votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, en accédant à `Mes services`{.action} puis à `Mes contrats`{.action}.
+> Selon votre lieu de résidence, la législation locale, ainsi que les solutions concernées, certains détails de ce guide peuvent varier ou ne pas s'appliquer à votre situation. Si vous avez des doutes, veuillez consulter vos contrats OVHcloud. Ceux-ci sont disponibles depuis votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, en accédant à `Mes services`{.action} puis à `Mes contrats`{.action}.
 >
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dfpPCa0mUyo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 
-- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 - Posséder des services OVHcloud actifs.
 - Être [contact facturation](../../customer/gestion-des-contacts/#definition) de vos services OVHcloud.
 
@@ -43,7 +43,7 @@ Nous vous recommandons de lire les guides suivants, ainsi que de vous concentrer
 
 ### Accéder au paramétrage de vos services
 
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur le nom associé à votre identifiant client dans la barre de menus située dans le coin supérieur droit, puis choisissez `Produits et services`{.action}.
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur le nom associé à votre identifiant client dans la barre de menus située dans le coin supérieur droit, puis choisissez `Produits et services`{.action}.
 
 ![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 

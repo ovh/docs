@@ -18,7 +18,7 @@ Vous venez d'effectuer la commande d'une plateforme Private Exchange. Ce guide d
 ## Prérequis
 
 - Avoir commandé une [offre Private Exchange OVHcloud](https://www.ovh.com/fr/emails/){.external}.
-- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
 
@@ -26,7 +26,7 @@ Vous venez d'effectuer la commande d'une plateforme Private Exchange. Ce guide d
 
 Une fois la commande réalisée, vous recevrez, sur l'adresse e-mail de référence de votre espace client, les informations pour configurer votre plateforme Private Exchange. 
 
-Pour consulter cet e-mail depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), cliquez sur votre profil en haut à droite puis cliquez sur `Mon compte`{.action}. Dirigez-vous sur l'onglet `Emails reçus`{.action} et recherchez l'e-mail ayant pour objet:
+Pour consulter cet e-mail depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur votre profil en haut à droite puis cliquez sur `Mon compte`{.action}. Dirigez-vous sur l'onglet `Emails reçus`{.action} et recherchez l'e-mail ayant pour objet:
 
 > **[xx-11111-ovh] Votre service Private Exchange 20_xxx_ est en cours de livraison !**
 

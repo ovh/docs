@@ -17,7 +17,7 @@ Si vous avez reçu un e-mail indiquant que l'une de vos adresses e-mail est bloq
 ## Prérequis
 
 - Disposer d'une [offre e-mail OVHcloud](https://www.ovh.com/fr/emails/){.external}.
-- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), partie `Web Cloud`{.action}.
+- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie `Web Cloud`{.action}.
 
 ## En pratique
 
@@ -25,7 +25,7 @@ Si vous avez reçu un e-mail indiquant que l'une de vos adresses e-mail est bloq
 
 #### Pour une adresse e-mail Exchange
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) et dirigez-vous dans la section « Web ». Cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Exchange`{.action} et sélectionnez la plateforme Exchange concernée.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section « Web ». Cliquez sur `Microsoft`{.action} dans la barre de services à gauche puis sur `Exchange`{.action} et sélectionnez la plateforme Exchange concernée.
 
 Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » de l'adresse e-mail concernée mentionne « bloqué », cliquez sur `...`{.action} à droite du compte puis sur `Débloquer`{.action}. Passez ensuite à [l'étape 2](./#etape-2-acceder-au-ticket-dassistance_1){.external} du guide.
 
@@ -33,7 +33,7 @@ Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la 
 
 #### Pour une adresse E-mail Pro
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) et dirigez-vous dans la section « Web ». Cliquez sur `E-mail Pro`{.action} dans la barre de services à gauche puis sélectionnez la plateforme E-mail Pro concernée.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section « Web ». Cliquez sur `E-mail Pro`{.action} dans la barre de services à gauche puis sélectionnez la plateforme E-mail Pro concernée.
 
 Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » à droite de l'adresse e-mail concernée mentionne « Spam », cliquez sur cette mention puis sur `Répondre au ticket`{.action}. Passez ensuite à  [l'étape 2](./#etape-2-acceder-au-ticket-dassistance_1){.external} du guide.
 
@@ -41,7 +41,7 @@ Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la 
 
 #### Pour une adresse e-mail MX plan
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) et dirigez-vous dans la section « Web ». Cliquez sur `Emails`{.action} dans la barre de services à gauche, puis sélectionnez le nom de domaine concerné.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et dirigez-vous dans la section « Web ». Cliquez sur `Emails`{.action} dans la barre de services à gauche, puis sélectionnez le nom de domaine concerné.
 
 Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » à droite de l'adresse e-mail concernée mentionne « Spam », cliquez sur cette mention puis sur `Répondre au ticket`{.action}. Passez ensuite à [l'étape 2](./#etape-2-acceder-au-ticket-dassistance_1){.external} du guide.
 

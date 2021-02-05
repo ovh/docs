@@ -30,7 +30,7 @@ L'historique comprend la date, l'heure, l'expéditeur, le destinataire ainsi que
 
 ### Étape 1 : consulter l'historique dans votre espace client
 
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager) puis sélectionnez `Télécom`{.action} (1). Cliquez ensuite sur `SMS`{.action} à gauche (2)  puis choisissez votre compte SMS (3).
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action} (1). Cliquez ensuite sur `SMS`{.action} à gauche (2)  puis choisissez votre compte SMS (3).
 
 Dans la barre d'onglets, choisissez `SMS`{.action} (4) puis `Historique des envois`{.action} (5)
 

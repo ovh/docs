@@ -49,7 +49,7 @@ Vous avez reçu un e-mail au nom d'OVHcloud et vous voulez être sûr qu'il soit
 
 #### Identifier un SMS de phishing
 
-OVHcloud ne vous transmettra **jamais** de lien par SMS. Les SMS que nous envoyons sont généralement liés à la double authentification dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}. 
+OVHcloud ne vous transmettra **jamais** de lien par SMS. Les SMS que nous envoyons sont généralement liés à la double authentification dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. 
 
 Vous trouverez ci-dessous 2 exemples de SMS, le premier est correct et correspond à la double authentification et le second un SMS de fraude :
 

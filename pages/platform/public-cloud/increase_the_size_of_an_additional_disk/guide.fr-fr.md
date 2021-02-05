@@ -19,7 +19,7 @@ Si vous avez atteint la capacité de stockage maximale de votre disque suppléme
 
 * Une [Instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external} dans votre compte OVHcloud.
 * Un [disque supplémentaire](https://www.ovhcloud.com/fr/public-cloud/block-storage/){.external} attaché à votre instance.
-* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 * Disposer d’un accès administratif (root) à votre instance via SSH (pour Linux uniquement).
 * Disposer d’un accès administratif à votre instance via RDP (pour Windows uniquement).
 
@@ -27,7 +27,7 @@ Si vous avez atteint la capacité de stockage maximale de votre disque suppléme
 
 ### Utiliser l’espace client
 
-Pour déployer une instance public cloud, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} et sélectionnez `Public Cloud`{.action} en haut à gauche. Sur l’écran qui s’affiche, cliquez sur la flèche à côté du nom par défaut de votre projet, en haut à gauche. Maintenant sélectionnez le projet dont vous souhaitez modifier la taille du disque supplémentaire.
+Pour déployer une instance public cloud, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Public Cloud`{.action} en haut à gauche. Sur l’écran qui s’affiche, cliquez sur la flèche à côté du nom par défaut de votre projet, en haut à gauche. Maintenant sélectionnez le projet dont vous souhaitez modifier la taille du disque supplémentaire.
 
 ![tableau de bord](images/select_project.png){.thumbnail}
 

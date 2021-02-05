@@ -21,12 +21,12 @@ Un snapshot ne constitue pas pour autant une sauvegarde complète du système.
 
 ## Prérequis
 
-- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Un [VPS OVHcloud](https://www.ovhcloud.com/fr/vps/) déjà configuré.
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Bare Metal Cloud`{.action}. Cliquez sur `VPS`{.action} dans la barre de services à gauche, puis choisissez le serveur VPS concerné.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Bare Metal Cloud`{.action}. Cliquez sur `VPS`{.action} dans la barre de services à gauche, puis choisissez le serveur VPS concerné.
 
 ### Étape 1 : souscrire l'option snapshot
 
