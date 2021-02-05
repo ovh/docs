@@ -17,7 +17,7 @@ You can create an alert on all items in your Private Cloud: the data centre itse
 ## Requirements
 
 - a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/asia/enterprise/products/hosted-private-cloud/)
-- a user account with access to [vSphere](../login-vsphere-interface/) (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager))
+- a user account with access to [vSphere](../login-vsphere-interface/) (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia))
 
 ## Instructions
 

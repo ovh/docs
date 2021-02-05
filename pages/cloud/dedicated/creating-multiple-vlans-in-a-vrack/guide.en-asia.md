@@ -18,7 +18,7 @@ The standard [vRack configuration](https://docs.ovh.com/asia/en/dedicated/config
 * an active [vRack](https://www.ovh.com/asia/solutions/vrack/){.external} service in your account
 * two or more [vRack-compatible servers](https://www.ovh.com/asia/dedicated-servers/){.external}
 * administrative (root) access to the server via SSH
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
 * your chosen private IP address range
 * You must have completed the [vRack configuration guide](../configuring-vrack-on-dedicated-servers/){.external}.
 
