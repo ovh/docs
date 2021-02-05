@@ -26,7 +26,7 @@ order: 1
  }
 </style>
 
-**Last updated 3<sup>rd</sup> February 2021**
+**Last updated 4th February 2021**
 
 ## Objective
 
@@ -41,28 +41,28 @@ This guide will explain how to do it.
 ## Requirements
 
 - A [Node.js](https://labs.ovh.com/managed-nodejs) POWER web hosting plan
-- Access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
-If you have just started to use your Web POWER web hosting plan, we suggest you to have a look to our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.
+If you have just started to use your Web POWER web hosting plan, we suggest to have a look at our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.
 
 ## Instructions
 
 
 Let's suppose you have the default configuration for Python hosting:
 
-- Runtime : Python 3.8   
-- Entrypoint : app.py 
-- DocumentRoot : www
+- Runtime: Python 3.8   
+- Entrypoint: app.py 
+- DocumentRoot: www
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint
+> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint.
 
 
 To use [Python WSGI](https://www.fullstackpython.com/wsgi-servers.html) frameworks, using [virtualenv](https://pypi.org/project/virtualenv/) is the simplest choice
 . 
 
-[Access via SSH](../getting-started-with-power-web-hosting/#ssh) to your POWER web hosting and activate `virtualenv`:
+[Connect via SSH](../getting-started-with-power-web-hosting/#ssh) to your POWER web hosting and activate `virtualenv`:
 
 
 ```sh
@@ -89,13 +89,13 @@ Create the new Django project:
 django-admin startproject config
 ```
 
-By default, Django's wsgi application is located in `config/wsgi.py`. As our configured hosting entrypoint is `app.py` we caan create the following symlink :
+By default, Django's wsgi application is located in `config/wsgi.py`. As our configured hosting entrypoint is `app.py`, we can create the following symlink:
 
 ```sh
 ln -s config/wsgi.py app.py
 ```
 
-As django is installed inside a `virtualenv`, we should tell the app to use it. We can do so by adding these 2 lines in `app.py`  before django import :
+As Django is installed inside a `virtualenv`, we should tell the app to use it. We can do so by adding these 2 lines in `app.py` before Django import:
 
 
 ```python
@@ -130,11 +130,11 @@ application = get_wsgi_application()
 Django needs to declare the allowed hosts used for the website. It's configured in `config/settings.py`, for example:
 
 ```python
-ALLOWED_HOSTS = ['yourdomainname', 'www.yourdomainname', 'yourftpuser.cluster022.hosting.ovh.net']
+ALLOWED_HOSTS = ['yourdomainname', 'www.yourdomainname', 'yourFTPuser.cluster022.hosting.ovh.net']
 ```
 
 
-Then [restart your instance](../getting-started-with-power-web-hosting/#restart), your Django will be online.
+Then [restart your instance](../getting-started-with-power-web-hosting/#restart) and your Django will be online.
 
 
 ![Django](images/python-install-django-01.png){.thumbnail}
@@ -244,8 +244,8 @@ ALLOWED_HOSTS = [ 'power.lostinbrittany.dev', 'xxxx.xxxx.hosting.ovh.net' ]
 To get more information on Django, go to the [official documentation site](https://docs.djangoproject.com/fr/3.1/).
 
 
-## Going Further
+## Go further
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
 
-**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab**
+**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab.**

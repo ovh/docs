@@ -27,7 +27,7 @@ order: 2
  }
 </style>
 
-**Last updated 3<sup>rd</sup> February 2021**
+**Last updated 4th February 2021**
 
 ## Objective
 
@@ -41,25 +41,25 @@ This guide will explain how to do it.
 
 ## Requirements
 
-- A [Node.js](https://labs.ovh.com/managed-nodejs) POWER web hosting plan
-- Access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- a [Node.js](https://labs.ovh.com/managed-nodejs) POWER web hosting plan
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
-If you have just started to use your Web POWER web hosting plan, we suggest you to have a look to our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.
+If you have just started to use your Web POWER web hosting plan, we suggest to have a look at our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.
 
 ## Instructions
 
 
 Let's suppose you have the default configuration for Node.js hosting:
 
-- Runtime : nodejs 14   
-- Entrypoint : index.js 
-- DocumentRoot : www
+- Runtime: nodejs 14
+- Entrypoint: index.js 
+- DocumentRoot: www
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint
+> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint.
 
-[Access via SSH](../getting-started-with-power-web-hosting/#ssh) to your POWER web hosting, and retrieve etherpad sources into the `www` folder:
+[Access via SSH](../getting-started-with-power-web-hosting/#ssh) to your POWER web hosting, and retrieve Etherpad sources into the `www` folder:
 
 ```sh
 cd www
@@ -72,14 +72,14 @@ git pull origin master/1.8.6
 >
 > Etherpad 1.8.7 is not compatible with POWER web hosting because [we currently do not support the "experimental-worker" option](https://github.com/ether/etherpad-lite/wiki/Running-Etherpad-on-Phusion-Passenger#phusion-passenger-for-apache).
 
-Then install Etherpad dependencies and setup the entry point:
+Then install Etherpad dependencies and set up the entry point:
 
 ```sh
 bash bin/installDeps.sh
 ln -fs node_modules/ep_etherpad-lite/node/server.js index.js
 ```
 
-And [restart your instance](../getting-started-with-power-web-hosting/#restart), your Etherpad will be online.
+[Restart your instance](../getting-started-with-power-web-hosting/#restart) and your Etherpad will be online.
 
 ![Etherpad](images/nodejs-install-etherpad-01.png){.thumbnail}
 
@@ -116,9 +116,8 @@ Clearing minified cache...
 ~/www $ mkdir -p tmp
 ~/www $ touch tmp/restart.txt</code></pre>
 
-## Going Further
+## Go further
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
 
-
-**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab**
+**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab.**
