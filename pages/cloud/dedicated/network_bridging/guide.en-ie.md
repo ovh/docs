@@ -19,7 +19,7 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 
 - a dedicated server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
 - at least one [failover IP address](https://www.ovhcloud.com/en-ie/bare-metal/ip/) attached to the server
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 
@@ -37,7 +37,7 @@ Code samples in the following instructions have to be replaced with your own val
 
 ### Step 1: Assign a virtual MAC address
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and switch to the `Bare Metal Cloud`{.action} section. Then click on `IP`{.action} in the menu on the left-hand side and locate your failover IP address in the table.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and switch to the `Bare Metal Cloud`{.action} section. Then click on `IP`{.action} in the menu on the left-hand side and locate your failover IP address in the table.
 
 ![Failover IP](images/virtual_mac_01_2020_1.png){.thumbnail}
 
@@ -329,7 +329,7 @@ Next, ping your failover IP address from an external device.
 
 - If it responds, that probably means that there is a configuration error either on the VM or the host that prevents the failover IP from working in normal mode.
 
-- If the IP address is still not working, please create a ticket in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) to relay your test results to our support teams.
+- If the IP address is still not working, please create a ticket in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) to relay your test results to our support teams.
 
 ## Go further
 

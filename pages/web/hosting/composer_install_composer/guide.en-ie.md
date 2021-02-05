@@ -23,7 +23,7 @@ If you encounter any difficulties performing these actions, please contact a spe
 ## Requirements
 
 - an [OVHcloud Web Hosting plan](https://www.ovh.ie/web-hosting/) with SSH access
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 

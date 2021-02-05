@@ -17,14 +17,14 @@ The SharePoint solutions offer shared storage space for your collaborative work.
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - an [OVHcloud Exchange solution](https://www.ovh.ie/emails/hosted-exchange) already set up (for enabling an associated SharePoint platform)
 
 ## Instructions
 
 ### Step 1: Order a SharePoint platform
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click on `Order`{.action} in the services bar on the left-hand side, then `SharePoint`{.action}.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click on `Order`{.action} in the services bar on the left-hand side, then `SharePoint`{.action}.
 
 There are two platform types available:
 
@@ -39,7 +39,7 @@ Once you have chosen, click on `Order your solution`{.action} to complete your o
 
 Once your order has been confirmed and paid for, a confirmation email will be sent to the email address registered in your OVHcloud account, indicating that the platform is ready to be configured.
 
-To read this email, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), click on your account name in the top right-hand corner, then click on `Service emails`{.action}. Search for an email with the subject:
+To read this email, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), click on your account name in the top right-hand corner, then click on `Service emails`{.action}. Search for an email with the subject:
 
 > **\[xx-11111-ovh] Configure your Microsoft SharePoint service!**
 
@@ -55,7 +55,7 @@ Enter the name of your platform in the “SharePoint URL” box, then click `Con
 
 ### Step 3: Configure the SharePoint platform
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `SharePoint`{.action}. Next, select the SharePoint service concerned.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `SharePoint`{.action}. Next, select the SharePoint service concerned.
 
 #### **Standalone SharePoint**
 

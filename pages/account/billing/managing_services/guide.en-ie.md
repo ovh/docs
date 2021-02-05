@@ -16,12 +16,12 @@ In the OVHcloud Control Panel, you can manage all of your services.
 
 > [!primary]
 >
-> Depending on your place of residence and its local legislations, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to your OVHcloud contracts, which you can access via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by navigating to `My services`{.action} and `Contracts`{.action}.
+> Depending on your place of residence and its local legislations, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to your OVHcloud contracts, which you can access via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} by navigating to `My services`{.action} and `Contracts`{.action}.
 >
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - active OVHcloud services
 
 ## Instructions
@@ -34,7 +34,7 @@ Please note that in the “My services” interface, you can view all of your OV
 
 ### View your services via the “My services” interface.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Products and services`{.action}.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Products and services`{.action}.
 
 ![manageservices](images/hubservices.png){.thumbnail}
 
@@ -57,7 +57,7 @@ If you have several solutions, the table may be more than one page long. You can
 
 ### Manage your services via the “My services” interface.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Products and services`{.action}.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Products and services`{.action}.
 
 ![manageservices](images/hubservices.png){.thumbnail}
 
