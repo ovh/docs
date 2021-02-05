@@ -29,7 +29,13 @@ Elles proviennent parfois d'une mise à jour effectuée automatiquement par un c
 
 ## En pratique
 
-Avant de poursuivre, vérifiez votre site sur plusieurs appareils et navigateurs, afin de vérifier que la même anomalie apparaît bien dans toutes les situations.
+Avant de poursuivre, vérifiez votre site sur plusieurs appareils et navigateurs, afin de vérifier que la même anomalie apparaît bien dans toutes ces situations.
+
+Il est tout à fait envisageable d'effectuer une restauration ftp de votre hébergement mais il reste préférable de faire un diagnostic approfondi de cette erreur (recherche de mise à jour récentes, changement de fichiers, etc...).
+
+Mode développement / PHP
+
+Logs
 
 ### Testez le fichier .htaccess
 
@@ -69,7 +75,7 @@ Pour restaurer votre site à son état antérieur, consultez notre guide [Restau
 
 Si votre site comporte une base de données, consultez notre guide [Restaurer une sauvegarde de votre base de données](../mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client), afin de restaurer votre site à son date antérieure.
 
-Si l'erreur 500 est apparue suite à une mise à jour de la version PHP de votre hébergement [Configurer le PHP sur son hébergement] (https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/) pour revenir à la configuration précédente.
+Si l'erreur 500 est apparue suite à une mise à jour de la version PHP de votre hébergement [Configurer le PHP sur son hébergement](../configurer-le-php-sur-son-hebergement-web-mutu-2014/) pour revenir à la configuration précédente.
 
 Consultez ensuite l'onglet `Tâches en cours` dans la partie `Hébergements` de votre espace client OVHcloud, rafraîchissez votre page jusqu'à ce que plus aucune opération n'apparaisse. Effectuez ensuite un nouveau test de votre site, après avoir redémarré votre appareil.
 
