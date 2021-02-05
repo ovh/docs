@@ -16,7 +16,7 @@ Mějte prosím na paměti, že toto řešení je někdy také označováno jako 
 
 ## Prerekvizity
 
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager).
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 
 ## Postup

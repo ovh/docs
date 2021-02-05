@@ -42,7 +42,7 @@ Nabídka **IP Blocks** obsahuje seznam IP adres daného bloku. Následující IP
 
 OVH plugin je na používané veřejné IP adresy zapotřebí upozornit. Toho lze dosáhnout prostřednictvím ARP požadavku (_arping_), odeslaného z virtuálních strojů, které tyto adresy používají. Upozornění: pokud není ARP protokol autorizován, některé konfigurace s virtuálním firewallem mohou bránit doručování MAC adres.
 
-Následně můžete nakonfigurovat své reverzní IP (například pro mailový server). Tuto akci lze rovněž provést prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} či [OVH API](https://api.ovh.com/){.external}. U příslušné IP adresy klikněte na ikonku tří teček a vyberte volbu `Edit Reverse`{.action}.
+Následně můžete nakonfigurovat své reverzní IP (například pro mailový server). Tuto akci lze rovněž provést prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} či [OVH API](https://api.ovh.com/){.external}. U příslušné IP adresy klikněte na ikonku tří teček a vyberte volbu `Edit Reverse`{.action}.
 
 ![Tlačítko pro upravení reverzního záznamu](images/network_04.png){.thumbnail}
 

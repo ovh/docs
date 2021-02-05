@@ -19,13 +19,13 @@ Právě jste si zakoupili službu E-mail Pro, v jejímž rámci získáváte př
 - Služba [E-mail Pro](https://www.ovh.cz/emails/email-pro/){.external}.
 - E-mail s potvrzením o úspěšném dokončení instalace Vaší služby.
 - Doména.
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Postup
 
 ### Fáze 1: přístup do rozhraní pro správu služby
 
-Jakmile je služba E-mail Pro vytvořena a dostupná, můžete ji začít spravovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Jakmile je služba E-mail Pro vytvořena a dostupná, můžete ji začít spravovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 V levém postranním panelu vyberte sekci `E-mail Pro`{.action} a následně klikněte na požadovanou službu.
 

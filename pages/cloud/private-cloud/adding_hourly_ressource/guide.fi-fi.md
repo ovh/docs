@@ -18,7 +18,7 @@ section: 'OVH:n ominaisuudet'
 ## Edellytykset
 
 * [Private Cloud](https://www.ovh-hosting.fi/private-cloud/){.external} -tuote.
-* Olet antanut käyttäjälle “Resurssin lisäys” -oikeudet kyseiselle konesalille [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Olet antanut käyttäjälle “Resurssin lisäys” -oikeudet kyseiselle konesalille [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 * Olet kirjautunut vSphere-asiakasohjelmaan.
 
 

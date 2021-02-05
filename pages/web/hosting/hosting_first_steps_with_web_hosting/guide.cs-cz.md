@@ -20,7 +20,7 @@ Pořídili jste si webhostingové řešení OVH pro hostování svých webových
 - Některý z [webhostingových balíčků OVH](https://www.ovh.cz/webhosting/){.external}.
 - E-mail s potvrzením o úspěšném dokončení instalace webhostingu.
 - Doména, na níž bude váš web dostupný.
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Postup
 
@@ -48,7 +48,7 @@ Jakmile si o svém projektu a jeho účelu utvoříte jasnou představu, nezbýv
 
 Toto řešení využívá moduly OVH na jedno kliknutí, které umožňují snadnou a rychlou instalaci vybraného redakčního systému. Společnost OVH modul nainstaluje a zašle Vám přihlašovací údaje do Vaší e-mailové schránky.
 
-Před instalací modulu OVH na jedno kliknutí se prosím ujistěte, že v adresáři, kam se bude modul instalovat, nejsou uloženy žádné další soubory. Za účelem instalace modulu na jedno kliknutí se přihlaste se do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. V levém postranním panelu Zákaznického prostoru OVH klikněte na sekci `Hostingy`{.action} a vyberte webhosting, na nějž si přejete CMS nainstalovat. Přejděte do záložky `Moduly na jedno kliknutí`{.action} a klikněte na tlačítko `Přidat modul`{.action}.
+Před instalací modulu OVH na jedno kliknutí se prosím ujistěte, že v adresáři, kam se bude modul instalovat, nejsou uloženy žádné další soubory. Za účelem instalace modulu na jedno kliknutí se přihlaste se do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. V levém postranním panelu Zákaznického prostoru OVH klikněte na sekci `Hostingy`{.action} a vyberte webhosting, na nějž si přejete CMS nainstalovat. Přejděte do záložky `Moduly na jedno kliknutí`{.action} a klikněte na tlačítko `Přidat modul`{.action}.
 
 ![Přístup do sekce Moduly na jedno kliknutí](images/access_to_the_1_click_modules_section.png){/thumbnail}
 
@@ -68,7 +68,7 @@ Podmínky úspěšné instalace:
 - Databáze (pro vytvoření databáze na webhostingu přejděte do záložky `Databáze`{.action} a klikněte na tlačítko `Vytvoření databáze`{.action})
 
 Detailní postup pro vytvoření databáze: 
-ze všeho nejdříve přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. V levém postranním panelu klikněte na sekci `Hostingy`{.action} a vyberte webhosting, v jehož rámci si databázi přejete vytvořit. V záložce `Databáze`{.action} klikněte na tlačítko `Vytvoření databáze`{.action}. Vyplňte požadované údaje a vyčkejte na dokončení instalace.
+ze všeho nejdříve přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. V levém postranním panelu klikněte na sekci `Hostingy`{.action} a vyberte webhosting, v jehož rámci si databázi přejete vytvořit. V záložce `Databáze`{.action} klikněte na tlačítko `Vytvoření databáze`{.action}. Vyplňte požadované údaje a vyčkejte na dokončení instalace.
 
 ![Přístup do sekce Moduly na jedno kliknutí](images/create_a_database.png){/thumbnail}
 
@@ -88,7 +88,7 @@ Detailní informace naleznete v následující dokumentaci: [Spuštění stráne
 
 ### Fáze 3: vytvoření e-mailové adresy
 
-Pokud si nepřejete používat e-mailové adresy, které jsou součástí Vašeho [webhostingového balíčku](https://www.ovh.cz/webhosting/){.external}, tuto část přeskočte. Chcete-li vytvořit více či jednu e-mailovou adresu, ujistěte se prosím, že jste přihlášeni k [Zákaznickému prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. V levém postranním panelu Zákaznického prostoru OVH klikněte na sekci `E-maily`{.action} a vyberte webhosting, na němž si přejete e-mailovou adresu vytvořit. V záložce `E-maily`{.action} klikněte na tlačítko `Vytvořit e-mailovou adresu`{.action}.
+Pokud si nepřejete používat e-mailové adresy, které jsou součástí Vašeho [webhostingového balíčku](https://www.ovh.cz/webhosting/){.external}, tuto část přeskočte. Chcete-li vytvořit více či jednu e-mailovou adresu, ujistěte se prosím, že jste přihlášeni k [Zákaznickému prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. V levém postranním panelu Zákaznického prostoru OVH klikněte na sekci `E-maily`{.action} a vyberte webhosting, na němž si přejete e-mailovou adresu vytvořit. V záložce `E-maily`{.action} klikněte na tlačítko `Vytvořit e-mailovou adresu`{.action}.
 
 ![Vytvořit e-mailovou adresu](images/create_an_email_address.png){/thumbnail}
 
@@ -110,13 +110,13 @@ Existuje několik typů OVH DNS záznamů. Nás budou nyní zajímat dva záznam
 
 - **A záznam (pro internetové stránky)**
 
-Chcete-li znát A záznam, který je zapotřebí nastavit v DNS zóně Vaší domény, přihlaste se do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. V levém postranním panelu klikněte na sekci `Hostingy`{.action} a vyberte požadovaný webhosting. V záložce `Základní informace`{.action} si zkopírujte uvedenou IPv4 adresu.
+Chcete-li znát A záznam, který je zapotřebí nastavit v DNS zóně Vaší domény, přihlaste se do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. V levém postranním panelu klikněte na sekci `Hostingy`{.action} a vyberte požadovaný webhosting. V záložce `Základní informace`{.action} si zkopírujte uvedenou IPv4 adresu.
 
 ![Úprava A záznamu](images/know_the_OVH_A_records.png){/thumbnail}
 
 - **MX záznam (pro e-maily)**
 
-Chcete-li znát MX záznam, který je zapotřebí nastavit v DNS zóně Vaší domény, přihlaste se do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. V levém postranním panelu klikněte na sekci `E-maily`{.action} a vyberte požadovaný webhosting. V záložce `Základní informace`{.action} si zkopírujte informace uvedené pod hlavičkou „MX pole“. MX záznamy se mohou mezi jednotlivými službami lišit podle toho, jaký DNS filtr se rozhodnete použít.
+Chcete-li znát MX záznam, který je zapotřebí nastavit v DNS zóně Vaší domény, přihlaste se do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. V levém postranním panelu klikněte na sekci `E-maily`{.action} a vyberte požadovaný webhosting. V záložce `Základní informace`{.action} si zkopírujte informace uvedené pod hlavičkou „MX pole“. MX záznamy se mohou mezi jednotlivými službami lišit podle toho, jaký DNS filtr se rozhodnete použít.
 
 ![Úprava MX záznamu](images/know_the_OVH_MX_records.png){/thumbnail}
 
@@ -126,7 +126,7 @@ Nyní, když znáte DNS záznamy pro svůj webhosting OVH, je třeba je ověřit
 
 - **Objednávka domény s webhostingem OVH**
 
-V tomto případě je Vaše doména již nakonfigurována správně. Můžete přeskočit k další části této příručky. Pokud jste však v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} provedli změny v DNS zóně své domény, je možné, že doména již není nakonfigurována správně.
+V tomto případě je Vaše doména již nakonfigurována správně. Můžete přeskočit k další části této příručky. Pokud jste však v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} provedli změny v DNS zóně své domény, je možné, že doména již není nakonfigurována správně.
     
 Pro zobrazení konfiguračního rozhraní DNS zóny své domény přejděte do sekce `Domény`{.action} a vyberte požadovanou doménu. V záložce `DNS zóna`{.action}ověřte a upravte potřebné informace.
 

@@ -16,15 +16,15 @@ Met de SPF (Sender Policy Framework) kan een server die een e-mail ontvangt cont
 
 ## Vereisten
 
-- U moet gemachtigd zijn om de betreffende domeinnaam te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet gemachtigd zijn om de betreffende domeinnaam te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 - De domeinnaam in kwestie moet de OVH-configuratie gebruiken (dat wil zeggen de OVH DNS-servers).
 
 > [!warning]
 >
 > Als uw domeinnaam de OVH DNS-servers niet gebruikt, moet u de SPF aanpassen vanuit de interface van de provider die de configuratie van uw domeinnaam beheert.
 >
-> Als uw domeinnaam bij OVH is, kunt u controleren of deze onze OVH-configuratie gebruikt vanuit uw Control Panel in [DNS-servers](https://www.ovh.com/auth/?action=gotomanager){.external}, zodra deze op het betreffende domein is geplaatst.
+> Als uw domeinnaam bij OVH is, kunt u controleren of deze onze OVH-configuratie gebruikt vanuit uw Control Panel in [DNS-servers](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, zodra deze op het betreffende domein is geplaatst.
 >
 
 ## Instructie
@@ -59,7 +59,7 @@ Wanneer u een van deze oplossingen bestelt, raden wij u aan een SPF met OVH-info
 mypersonaldomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
-Als uw domein de OVH-configuratie gebruikt, kunt u controleren of een SPF al op deze manier is geconfigureerd. Log hiervoor in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} en ga naar de dienstenbalk aan de linkerkant. Ga naar het gedeelte `Domeinen`{.action}. Klik vervolgens op het betreffende domein en ga naar het tabblad `DNS-zone`{.action}.
+Als uw domein de OVH-configuratie gebruikt, kunt u controleren of een SPF al op deze manier is geconfigureerd. Log hiervoor in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en ga naar de dienstenbalk aan de linkerkant. Ga naar het gedeelte `Domeinen`{.action}. Klik vervolgens op het betreffende domein en ga naar het tabblad `DNS-zone`{.action}.
 
 Er zal een tabel verschijnen.  Hiermee wordt de configuratie van uw OVH-domein weergegeven. Het bestaat uit verschillende DNS-records, allemaal gesymboliseerd door een tabelregel.
 
@@ -85,7 +85,7 @@ In de tabel kan een filterveld worden gebruikt om de overeenkomstige regel naar 
 
 ### Stap 3: Bewerk de SPF
 
-Om de SPF in de OVH-configuratie van uw domein aan te passen, meldt u zich aan bij uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Ga naar het gedeelte `Domeinen`{.action} op de dienstenbalk aan de linkerkant, klik op het betreffende domein en ga vervolgens naar de `DNS-zone`{.action}.
+Om de SPF in de OVH-configuratie van uw domein aan te passen, meldt u zich aan bij uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Ga naar het gedeelte `Domeinen`{.action} op de dienstenbalk aan de linkerkant, klik op het betreffende domein en ga vervolgens naar de `DNS-zone`{.action}.
 
 De tabel geeft de OVH-configuratie van uw domein weer. Elke regel komt overeen met een DNS-record.
 

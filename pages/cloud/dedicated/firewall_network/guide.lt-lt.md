@@ -25,7 +25,7 @@ To protect its global infrastructure and its customers’ servers, OVH offers a 
 ## Requirements
 
 - You must have an OVH service with a Firewall Network ([Dedicated Server](https://www.ovh.lt/dedikuoti_serveriai/), [VPS](https://www.ovh.lt/vps/), [Public Cloud instance](https://www.ovh.lt/public-cloud/instances/), [Private Cloud](https://www.ovh.lt/private-cloud/),  [Failover IP](https://www.ovh.lt/dedikuoti_serveriai/ip_failover.xml), etc.)
-- You must have access to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager).
+- You must have access to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 - You must have basic network skills
 
 

@@ -18,7 +18,7 @@ V rámci nabídky [Private Cloud](https://www.ovh.cz/private-cloud/){.external} 
 ## Prerekvizity
 
 * [Private Cloud OVH](https://www.ovh.cz/private-cloud/){.external}.
-* [Uživatelský účet disponující právy pro vytváření nových zdrojů](https://docs.ovh.com/fr/private-cloud/changer-les-droits-d-un-utilisateur/){.external} (tato práva lze uživateli přidělit prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}).
+* [Uživatelský účet disponující právy pro vytváření nových zdrojů](https://docs.ovh.com/fr/private-cloud/changer-les-droits-d-un-utilisateur/){.external} (tato práva lze uživateli přidělit prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}).
 * Přístup k rozhraní vSphere.
 
 

@@ -30,7 +30,7 @@ Yksityinen virtuaalipalvelin (VPS eli Virtual Private Server) on virtualisoitu d
 
 ## Käytännössä
 
-Kun olet kirjautunut [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, voit katsoa VPS:äsi tiedot menemällä osioon `Cloud`{.action} ja sitten vasemmassa laidassa olevassa valikossa kohtaan `Palvelimet`{.action}. Näet täällä kaikki VPS-tuotteeseesi liittyvät tiedot: yleiset tiedot keskellä, mahdolliset toiminnot, joita voit tehdä kuvaruudun oikeassa reunassa näkyvien painikkeiden avulla sekä lisäoptiot alareunassa.
+Kun olet kirjautunut [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, voit katsoa VPS:äsi tiedot menemällä osioon `Cloud`{.action} ja sitten vasemmassa laidassa olevassa valikossa kohtaan `Palvelimet`{.action}. Näet täällä kaikki VPS-tuotteeseesi liittyvät tiedot: yleiset tiedot keskellä, mahdolliset toiminnot, joita voit tehdä kuvaruudun oikeassa reunassa näkyvien painikkeiden avulla sekä lisäoptiot alareunassa.
 
 ### Kirjaudu VPS-tuotteeseesi
 

@@ -48,7 +48,7 @@ Enter the incoming server settings. Some fields may be auto-filled.
 |Domain/Username|Enter your full email address.|  
 |Password|Enter the password for your email address.|
 |Client certificate|Do not select anything.|
-|Server|Enter the details for the server your Exchange service is hosted on. You will find these details in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
+|Server|Enter the details for the server your Exchange service is hosted on. You will find these details in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
 |Port|Enter port 443.|  
 |Security type|Choose ‘SSL/TLS’.|
 

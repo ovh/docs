@@ -20,15 +20,15 @@ Databáze umožňují ukládání tzv. dynamických prvků (uživatelé, koment�
 - Některý z [webhostingových balíčků OVH](https://www.ovh.cz/webhosting/){.external}.
 - Databáze vytvořená v rámci [webhostingového řešení OVH](https://www.ovh.cz/webhosting/){.external}.
 - Datová záloha, kterou si do databáze přejete importovat.
-- V závislosti na metodě, kterou se pro import datové rozhodnete využít, budete potřebovat přístup do administračního rozhraní příslušného webhostingu prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, nebo alespoň přihlašovací údaje pro připojení k databázi.
+- V závislosti na metodě, kterou se pro import datové rozhodnete využít, budete potřebovat přístup do administračního rozhraní příslušného webhostingu prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, nebo alespoň přihlašovací údaje pro připojení k databázi.
 
 ## Postup
 
 Než začnete, rozhodněte se, kterou metodu pro import datové zálohy do databáze použijete. Za tímto účelem je k dispozici několik možností, které se vzájemně liší co do času i požadavků na technické znalosti v dané oblasti.
 
-- **Obnovení dřívější verze databáze prostřednictvím Zákaznického prostoru:** toto řešení umožňuje obnovit obsah Vašich databází pomocí záloh uložených v nástroji pro správu záloh od společnosti OVH. Tato metoda nevyžaduje žádné specifické technické znalosti a lze je iniciovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- **Obnovení dřívější verze databáze prostřednictvím Zákaznického prostoru:** toto řešení umožňuje obnovit obsah Vašich databází pomocí záloh uložených v nástroji pro správu záloh od společnosti OVH. Tato metoda nevyžaduje žádné specifické technické znalosti a lze je iniciovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
-- **Import vlastní zálohy prostřednictvím Zákaznického prostoru:** toto řešení umožňuje provést import dat z Vaší vlastní zálohy. Tuto metodu lze iniciovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- **Import vlastní zálohy prostřednictvím Zákaznického prostoru:** toto řešení umožňuje provést import dat z Vaší vlastní zálohy. Tuto metodu lze iniciovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 - **Import prostřednictvím webového rozhraní phpMyAdmin:** toto řešení vyžaduje znalost rozhraní phpMyAdmin. Velikost importovaného souboru nesmí přesáhnout stanovenou velikost. 
 
@@ -49,7 +49,7 @@ V závislosti na zvolené metodě pokračujte do příslušné části této př
 
 ### Obnovení zálohy prostřednictvím Zákaznického prostoru
 
-Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V základním rozhraní pro správu webhostingu klikněte na záložku `Databáze`{.action}.
+Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V základním rozhraní pro správu webhostingu klikněte na záložku `Databáze`{.action}.
 
 Tabulka obsahuje přehled všech databází vytvořených na příslušném webhostingu. Pro obnovení dřívější verze databáze klikněte na ikonku tří teček v pravé části tabulky a vyberte možnost `Obnovení zálohy`{.action}. Mějte prosím na paměti, že tato akce bude mít za následek nahrazení aktuálního obsahu databáze obsahem zvolené zálohy.
 
@@ -63,7 +63,7 @@ Pro obnovení vybrané zálohy klikněte na ikonku tří teček v pravé části
 
 ### Import vlastní zálohy prostřednictvím Zákaznického prostoru
 
-Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V základním rozhraní pro správu webhostingu klikněte na záložku `Databáze`{.action}.
+Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V základním rozhraní pro správu webhostingu klikněte na záložku `Databáze`{.action}.
 
 Tabulka obsahuje přehled všech databází vytvořených na příslušném webhostingu. Pro import vlastní zálohy klikněte na ikonku tří teček v pravé části tabulky a vyberte možnost `Nahrát soubor`{.action}.
 
@@ -96,7 +96,7 @@ Nakonec klikněte na tlačítko `Schválit`{.action} a vyčkejte na dokončení 
 
 ### Import prostřednictvím webového rozhraní phpMyAdmin
 
-Připojte se k rozhraní phpMyAdmin. Odkaz pro přístup k rozhraní phpMyAdmin naleznete v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. V levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V základním rozhraní pro správu webhostingu klikněte na záložku `Databáze`{.action}.
+Připojte se k rozhraní phpMyAdmin. Odkaz pro přístup k rozhraní phpMyAdmin naleznete v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. V levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V základním rozhraní pro správu webhostingu klikněte na záložku `Databáze`{.action}.
 
 Tabulka obsahuje přehled všech databází vytvořených na příslušném webhostingu. Klikněte na ikonku tří teček v pravé části tabulky a vyberte možnost `Jít do phpMyAdmin`{.action}.
 

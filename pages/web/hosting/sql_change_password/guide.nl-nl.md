@@ -18,7 +18,7 @@ Een database ("DB") wordt gebruikt voor het opslaan van zogenaamde dynamische el
 ## Vereisten
 
 - U moet beschikken over een [OVH-webhosting plan](https://www.ovh.com/nl/shared-hosting/){.external}.
-- U moet gemachtigd zijn om MX Plan te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet gemachtigd zijn om MX Plan te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 > [!warning]
 >
@@ -42,7 +42,7 @@ Tegenwoordig gebruiken vrijwel alle CMS'en (WordPress, Joomla!, etc.) een databa
 
 ### Stap 2: Toegang krijgen tot het beheer van de webhosting-database
 
-Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Ga naar het `Databases`{.action}-tabblad.
+Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Ga naar het `Databases`{.action}-tabblad.
 
 De getoonde tabel bevat alle e-mailadressen die zijn aangemaakt als onderdeel van uw webhostingplan.
 

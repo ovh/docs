@@ -20,7 +20,7 @@ Na Internetu existuje nepřeberné množství stránek. Ať již chcete zveřejn
 - Některý z [webhostingových balíčků OVH](https://www.ovh.cz/webhosting/){.external}.
 - E-mail s potvrzením o úspěšném dokončení instalace webhostingu.
 - Doména, na níž bude váš web dostupný.
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Postup
 
@@ -64,7 +64,7 @@ Ujistěte se, že máte k dispozici kompletní balíček souborů webových str�
 
 Pro úspěšné připojení k úložišti budete potřebovat FTP uživatelské jméno, heslo a adresu serveru. Tyto informace naleznete v e-mailu, který Vám byl zaslán společně s potvrzením o úspěšné instalaci Vašeho webhostingového řešení. Pokud jste heslo ztratili, postupujte podle následující dokumentace: [Změna FTP hesla](https://docs.ovh.com/cz/cs/hosting/zmena-hesla-ftp/){.external}.
 
-Adresu serveru naleznete v `základním administračním rozhraní svého webhostingu`{.action} v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (záložka `FTP-SSH`{.action}). 
+Adresu serveru naleznete v `základním administračním rozhraní svého webhostingu`{.action} v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} (záložka `FTP-SSH`{.action}). 
 
 ![siteinstallation](images/get-website-online-step1.png){.thumbnail}
 
@@ -105,7 +105,7 @@ Pokud provádíte migraci webových stránek, můžete od svého předchozího p
 
 Pokud již v rámci služeb společnosti OVH disponujete databází, kterou si ke svým stránkám přejete připojit ([webhostingová databáze](https://www.ovh.cz/webhosting/){.external}, řešení [Private SQL](https://www.ovh.cz/webhosting/moznosti-sql.xml){.external} nebo [Cloud DB](https://www.ovh.cz/cloud/cloud-databases/){.external}), budete potřebovat své uživatelské jméno a heslo, název databáze a adresu serveru. V takovém případě přejděte k další části této příručky.
 
-Pokud si přejete vytvořit novou OVH databázi, přihlaste se do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} a v levém postranním panelu klikněte na sekci `Hostingy`{.action}. Vyberte příslušné webhostingové řešení a přejděte do záložky `Databáze`{.action}.
+Pokud si přejete vytvořit novou OVH databázi, přihlaste se do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} a v levém postranním panelu klikněte na sekci `Hostingy`{.action}. Vyberte příslušné webhostingové řešení a přejděte do záložky `Databáze`{.action}.
 
 Klikněte na tlačítko `Vytvořit databázi`{.action}. Pokud se tlačítko nezobrazuje, klikněte na `Akce`{.action} a následně vyberte možnost `Vytvoření databáze`{.action}. Vyplňte požadované informace.
 

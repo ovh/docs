@@ -17,7 +17,7 @@ KVM-konsoli mahdollistaa suoran yhteyden virtuaalipalvelimeesi ilman ulkopuolise
 
 ## Edellytykset
 
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager).
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 
 ## Käytännössä

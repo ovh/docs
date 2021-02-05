@@ -16,7 +16,7 @@ Lees meer over de verschillende omleidingstypen en hoe u er een kunt maken voor 
 
 ## Vereisten
 
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 - U moet ingelogd zijn op uw webhostingplan (als u een .htaccess-bestand wilt toevoegen).
 
 ## Instructies
@@ -37,7 +37,7 @@ Houd er rekening mee dat het instellen van een omleiding van invloed zal zijn op
 
 ### Leid een domeinnaam om vanaf het Control Panel
 
-Zodra u bent ingelogd op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, in de dienstenbalk aan de linkerkant, gaat u naar het `Domeinen`{.action}-gedeelte (*1*op de afbeelding hieronder), dan naar het tabblad `Redirection`{.action} (*2* op de afbeelding hieronder).
+Zodra u bent ingelogd op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, in de dienstenbalk aan de linkerkant, gaat u naar het `Domeinen`{.action}-gedeelte (*1*op de afbeelding hieronder), dan naar het tabblad `Redirection`{.action} (*2* op de afbeelding hieronder).
 
 De tabel geeft actieve omleidingen voor uw domeinnaam weer.
 

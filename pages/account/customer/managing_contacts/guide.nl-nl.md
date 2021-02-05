@@ -16,7 +16,7 @@ OVH-diensten zijn over het algemeen gekoppeld aan verschillende contacten. Deze 
 
 ## Vereisten
 
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 - U moet toegang hebben tot het e-mailadres dat aan uw profiel is gekoppeld.
 - U moet over de juiste rechten beschikken voor de betreffende dienst.
 - U moet de NIC handle van het nieuwe contactpersoon hebben (het contact dat u wilt toevoegen).
@@ -27,7 +27,7 @@ OVH-diensten zijn over het algemeen gekoppeld aan verschillende contacten. Deze 
 
 ### Toegang krijgen tot contactbeheer
 
-In de menubalk bovenaan uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} klikt u op uw NIC handle/klant-ID (met uw voor- en achternaam ervoor) en vervolgens op `Mijn contacten`{.action}.
+In de menubalk bovenaan uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} klikt u op uw NIC handle/klant-ID (met uw voor- en achternaam ervoor) en vervolgens op `Mijn contacten`{.action}.
 
 ![Contactbeheer](images/contactmanagement0.png){.thumbnail}
 

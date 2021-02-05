@@ -17,7 +17,7 @@ DNS zóna představuje konfigurační soubor domény a sestává z technických 
 
 ## Prerekvizity
 
-- Dostatečná oprávnění ke správě domény prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostatečná oprávnění ke správě domény prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - Doména musí být nakonfigurována na DNS servery OVH.
 - DynHost záznam, který se chystáte vytvořit, nesmí v OVH DNS zóně Vaší domény existovat ve formě A záznamu.
 
@@ -25,14 +25,14 @@ DNS zóna představuje konfigurační soubor domény a sestává z technických 
 >
 > - Pokud Vaše doména nepoužívá DNS servery OVH, kontaktujte prosím poskytovatele služby spravujícího konfiguraci Vaší domény a požádejte o informace týkající se postupu pro vytvoření příslušného záznamu.
 > 
-> - Pokud je Vaše doména registrována u OVH, můžete snadno ověřit, zda používá naši konfiguraci. Za tímto účelem přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, vyberte příslušnou doménu a přejděte do záložky `DNS servery`{.action}.
+> - Pokud je Vaše doména registrována u OVH, můžete snadno ověřit, zda používá naši konfiguraci. Za tímto účelem přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, vyberte příslušnou doménu a přejděte do záložky `DNS servery`{.action}.
 >
 
 ## Postup
 
 ### Fáze 1: vytvoření uživatele DynHost
 
-První krok spočívá ve vytvoření uživatele DynHost. Tento krok Vám umožní provést aktualizaci dynamického DNS záznamu, který se chystáte vytvořit. Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, v levém postranním panelu klikněte na položku `Domény`{.action} a následně vyberte doménu, v jejímž rámci si přejete provést požadované úpravy. Poté přejděte do záložky `DynHost`{.action}.
+První krok spočívá ve vytvoření uživatele DynHost. Tento krok Vám umožní provést aktualizaci dynamického DNS záznamu, který se chystáte vytvořit. Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, v levém postranním panelu klikněte na položku `Domény`{.action} a následně vyberte doménu, v jejímž rámci si přejete provést požadované úpravy. Poté přejděte do záložky `DynHost`{.action}.
 
 ![dynhost](images/use-dynhost-step1.png){.thumbnail}
 

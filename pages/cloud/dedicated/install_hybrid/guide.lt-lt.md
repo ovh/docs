@@ -18,7 +18,7 @@ OVH offers some [Dedicated Servers](https://www.ovh.lt/dedikuoti_serveriai/){.ex
 
 * an [OVH Hybrid Server](https://www.ovh.lt/dedikuoti_serveriai/){.external}
 * access to the [OVH API](https://api.ovh.com/console/){.external}
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 > [!warning]
 >
@@ -88,7 +88,7 @@ When you have finished specifying your options, click the `Execute`{.action} but
 
 ![Installation](images/install-01.png){.thumbnail}
 
-Your operating system will now be installed. You can check the progress of the installation by refreshing your server's page in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, or by going to the following API call, entering your server's references into the **serviceName** field, and clicking the `Execute`{.action} button:
+Your operating system will now be installed. You can check the progress of the installation by refreshing your server's page in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, or by going to the following API call, entering your server's references into the **serviceName** field, and clicking the `Execute`{.action} button:
 
 > [!api]
 >

@@ -65,7 +65,7 @@ Als u wilt controleren of het account correct is geconfigureerd, kunt u een test
 
 Als u problemen ondervindt bij het inloggen op uw account, dan raden we het volgende aan:
 
-- Controleer de configuratie van de domeinnaam op uw Exchange in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, op het tabblad `Gekoppelde domeinen`{.action} en vervolgens in de kolom `Diagnostiek`{.action} van de tabel.
+- Controleer de configuratie van de domeinnaam op uw Exchange in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, op het tabblad `Gekoppelde domeinen`{.action} en vervolgens in de kolom `Diagnostiek`{.action} van de tabel.
 
 - Probeer om de verbindings-URL in te voeren voor uw Exchange. Negeer de certificaatbeveiligingswaarschuwing en voer de verbindings-URL in, vul vervolgens de `interne URL`{.action} en de `externe URL`{.action} in met de details van uw Exchange-server.
 

@@ -47,7 +47,7 @@ Syötä nyt pyydetyt tiedot:
 |Salasana|Syötä sähköpostiosoitteen salasana.|
 |Käyttäjänimi|Syötä täydellinen sähköpostiosoite.|
 |Verkkotunnus|Älä syötä tähän mitään.|
-|Palvelin|Ilmoita palvelin, jossa Exchange-palveluasi ylläpidetään. Voit löytää sen [hallintapaneelista](https://www.ovh.com/auth/?action=gotomanager){.external} kyseisen Exchange-palvelun välilehdeltä `Yleiset tiedot`{.action} ja sitten kohdasta `Yhteys`{.action}.|
+|Palvelin|Ilmoita palvelin, jossa Exchange-palveluasi ylläpidetään. Voit löytää sen [hallintapaneelista](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} kyseisen Exchange-palvelun välilehdeltä `Yleiset tiedot`{.action} ja sitten kohdasta `Yhteys`{.action}.|
 |Palvelin vaatii salatun yhteyden (SSL)|Tähän ruutuun on ehdottomasti jätettävä rasti.|
 |Tilin nimi|Anna nimi, jolla tunnistat tilin muista Sähköposti-sovelluksessa näkyvistä tileistä.|
 

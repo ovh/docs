@@ -18,7 +18,7 @@ V předcházejících částech našeho seriálu jste se naučili [vytvořit poo
 ## Prerekvizity
 
 - Klient VMware Horizon nebo webový prohlížeč.
-- URL přístupových bodů (k dispozici v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}).
+- URL přístupových bodů (k dispozici v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}).
 - [Uživatelský účet s autorizací pro přístup k poolu](https://docs.ovh.com/cz/cs/cloud-desktop-infrastructure/pridani-uzivatele-plocha/){.external}.
 
 

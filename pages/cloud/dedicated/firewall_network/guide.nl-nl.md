@@ -26,7 +26,7 @@ Om de wereldwijde infrastructuur en servers van zijn klanten te beschermen, bied
 ## Vereisten
 
 - U moet geabonneerd zijn op een OVH dienst met de optie Network Firewall: ([Dedicated server](https://www.ovh.nl/dedicated_servers/){.external}, [VPS](https://www.ovh.nl/vps/){.external}, [Public Cloud instance](https://www.ovh.nl/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.nl/private-cloud/){.external}, [Failover-IP](https://www.ovh.com/nl/dedicated_servers/ip_failover.xml){.external}, etc.).
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 
 
 ## Instructie
@@ -38,7 +38,7 @@ Om de wereldwijde infrastructuur en servers van zijn klanten te beschermen, bied
 > De Network Firewall beschermt de IP's die aan een server zijn gekoppeld. Elk IP-adres moet daarom afzonderlijk worden geconfigureerd, er kan geen algemene serverconfiguratie worden gemaakt.
 > 
 
-Log u in op bij het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, ga naar het `IP`{.action}-gedeelte en klik op `...`{.action} om de firewall op een IPv4 te activeren.
+Log u in op bij het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, ga naar het `IP`{.action}-gedeelte en klik op `...`{.action} om de firewall op een IPv4 te activeren.
 
 ![Activering van Network Firewall](images/firewall_creation.png){.thumbnail}
 

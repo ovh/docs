@@ -17,7 +17,7 @@ De 1-klik modules maken een eenvoudige en snelle installatie van een Website mog
 ## Vereisten
 
 - U moet beschikken over een [webhosting](https://www.ovh.nl/shared-hosting/){.external}.
-- U moet erbonden zijn met de [OVH klantenruimte](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet erbonden zijn met de [OVH klantenruimte](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 - Bestanden hoeven niet te worden gedownload in de directory waar uw module wordt geïnstalleerd.
 - Het domein (indien gewenst met subdomein) dat gebruikt zal worden voor uw website moet aangemeld zijn als multisite.
 

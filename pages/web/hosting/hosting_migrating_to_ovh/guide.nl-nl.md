@@ -20,7 +20,7 @@ In deze handleiding vindt u de benodigde stappen voor het migreren van een websi
 - U moet toegang hebben tot de bestanden van de website.
 - U moet, indien van toepassing, toegang hebben tot de databases van de website.
 - U moet beschikken over de gegevens (gebruikersnaam, wachtwoord, servers) waarmee u zich kunt inloggen op uw huidige e-mailadressen.
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 ## Instructie
 
@@ -61,7 +61,7 @@ U moet hiervoor verschillende tussenstappen uitvoeren.
 |---|---|---|
 |1|Maak een backup van de website |U moet een volledige backup maken van uw website inclusief alle bestanden, evenals de database (indien van toepassing). Deze volledige website-backup is essentieel voor het migreren van uw website naar OVH.|
 |2|Zet uw website online bij OVH|Log in op uw opslag (FTP) om bestanden van uw site te importeren. U moet ze online plaatsen in de ‘**www**’-map. Uw FTP-inloggegevens worden u per e-mail toegestuurd.|
-|3|Creëer een OVH-database|Als uw website met een database werkt, moet u een nieuwe database creëren bij OVH vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.|
+|3|Creëer een OVH-database|Als uw website met een database werkt, moet u een nieuwe database creëren bij OVH vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.|
 |4|Import de database-backup|Importeer uw database-backup met de OVH-tool, beschikbaar in uw Control Panel.|
 ||Link de website aan de nieuwe database|De gegevens die zijn opgeslagen in uw oude database, zijn nog steeds aanwezig in het configuratiebestand van uw website. Wijzig dit bestand in uw OVH-opslagruimte door de informatie voor de OVH-database in te voeren.|
 
@@ -69,13 +69,13 @@ De configuratie van uw domeinnaam blijft ongewijzigd en uw website zal nog steed
 
 #### Stap 3: Maak uw e-mailadressen opnieuw aan bij OVH
 
-Nadat u uw website hebt overgedragen, [moet u dezelfde adressen, die u gebruikt bij uw huidige serviceprovider, instellen, maar dan bij OVH](https://docs.ovh.com/nl/emails/webhosting_e-mail_handleiding_het_aanmaken_van_een_e-mailadres/){.external}. Ze moeten op dezelfde manier worden geschreven. In uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, in de dienstenbalk aan de linkerkant, gaat u naar het onderdeel `E-mails`{.action}, en klikt u vervolgens op het webhostingplan dat u zojuist hebt besteld (met dezelfde heading als uw domeinnaam). Volg de stappen voor het aanmaken van e-mailadressen door op `Creëer een e-mailadres`{.action} te klikken.
+Nadat u uw website hebt overgedragen, [moet u dezelfde adressen, die u gebruikt bij uw huidige serviceprovider, instellen, maar dan bij OVH](https://docs.ovh.com/nl/emails/webhosting_e-mail_handleiding_het_aanmaken_van_een_e-mailadres/){.external}. Ze moeten op dezelfde manier worden geschreven. In uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, in de dienstenbalk aan de linkerkant, gaat u naar het onderdeel `E-mails`{.action}, en klikt u vervolgens op het webhostingplan dat u zojuist hebt besteld (met dezelfde heading als uw domeinnaam). Volg de stappen voor het aanmaken van e-mailadressen door op `Creëer een e-mailadres`{.action} te klikken.
 
 De configuratie van uw domeinnaam blijft ongewijzigd en u ontvangt nog steeds nieuwe e-mails via het e-mailadres dat u bij uw huidige serviceprovider hebt aangemaakt. U moet nog steeds het e-mailadres gebruiken dat is gemaakt met uw huidige serviceprovider voor het verzenden van e-mails.
 
 #### Stap 4: Wijzig de configuratie va uw domeinnaam
 
-Nu u uw website hebt overgedragen en uw e-mailadressen opnieuw hebt aangemaakt bij OVH, moet u vervolgens de configuratie van uw domeinnaam wijzigen. U kunt dit doen door de DNS-servers van uw domeinnaam te wijzigen, deze te vervangen door de OVH DNS-servers (verzonden per e-mail en ook weergegeven in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}). Deze wijziging heeft twee gevolgen:  
+Nu u uw website hebt overgedragen en uw e-mailadressen opnieuw hebt aangemaakt bij OVH, moet u vervolgens de configuratie van uw domeinnaam wijzigen. U kunt dit doen door de DNS-servers van uw domeinnaam te wijzigen, deze te vervangen door de OVH DNS-servers (verzonden per e-mail en ook weergegeven in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}). Deze wijziging heeft twee gevolgen:  
 
 - **Technische koppeling van uw domeinnaam aan OVH-oplossingen**: Uw OVH-webhostingplan zal worden gebruikt om uw website weer te geven en u ontvangt nieuwe e-mails op het e-mailadres dat u bij OVH hebt aangemaakt.
 - **Voorkoming van dienstuitval:** Als uw registrar besluit uw DNS-servers onmiddellijk te onderbreken zodra u uw domeinnaam overdraagt, worden uw diensten niet beïnvloed, omdat u de OVH-configuratie al zult gebruiken.
@@ -130,7 +130,7 @@ U moet hiervoor verschillende tussenstappen uitvoeren.
 |---|---|---|
 |1|Maak een backup van de website |U moet een volledige backup maken van uw website inclusief alle bestanden, evenals de database (indien van toepassing). Deze volledige website-backup is essentieel voor het migreren van uw website naar OVH.|
 |2|Zet uw website online bij OVH|Log in op uw opslag (FTP) om bestanden van uw site te importeren. U moet ze online plaatsen in de ‘**www**’-map. Uw FTP-inloggegevens worden u per e-mail toegestuurd.|
-|3|Creëer een OVH-database|Als uw website met een database werkt, moet u een nieuwe database creëren bij OVH vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.|
+|3|Creëer een OVH-database|Als uw website met een database werkt, moet u een nieuwe database creëren bij OVH vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.|
 |4|Import de database-backup|Importeer uw database-backup met de OVH-tool, beschikbaar in uw Control Panel.|
 |5|Link de website aan de nieuwe database|De gegevens die zijn opgeslagen in uw oude database, zijn nog steeds aanwezig in het configuratiebestand van uw website. Wijzig dit bestand in uw OVH-opslagruimte door de informatie voor de OVH-database in te voeren.|
 
@@ -138,7 +138,7 @@ De configuratie van uw domeinnaam blijft ongewijzigd en uw website zal nog steed
 
 #### Stap 3: Maak uw e-mailadressen opnieuw aan bij OVH
 
-**Zodra de overdracht van uw domeinnaam is voltooid**, ontvangt u een e-mail ter bevestiging dat de e-maildienst die bij uw hosting hoort is geïnstalleerd.  Nadat u uw website hebt overgedragen, moet u [dezelfde adressen, die u gebruikt bij uw huidige serviceprovider, bij OVH aanmaken](https://www.ovh.com/auth/?action=gotomanager){.external}. Ze moeten dezelfde naam hebben.  In uw OVH Control Panel, in de dienstenbalk aan de linkerkant, gaat u naar het onderdeel [E-mails](https://www.ovh.com/auth/?action=gotomanager){.external}, en klikt u vervolgens op het webhostingplan dat u zojuist hebt besteld (met dezelfde naam als uw domeinnaam). Volg de stappen voor het aanmaken van e-mailadressen door op `Creëer een e-mailadres`{.action} te klikken.
+**Zodra de overdracht van uw domeinnaam is voltooid**, ontvangt u een e-mail ter bevestiging dat de e-maildienst die bij uw hosting hoort is geïnstalleerd.  Nadat u uw website hebt overgedragen, moet u [dezelfde adressen, die u gebruikt bij uw huidige serviceprovider, bij OVH aanmaken](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Ze moeten dezelfde naam hebben.  In uw OVH Control Panel, in de dienstenbalk aan de linkerkant, gaat u naar het onderdeel [E-mails](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, en klikt u vervolgens op het webhostingplan dat u zojuist hebt besteld (met dezelfde naam als uw domeinnaam). Volg de stappen voor het aanmaken van e-mailadressen door op `Creëer een e-mailadres`{.action} te klikken.
 
 De configuratie van uw domeinnaam blijft ongewijzigd en u ontvangt nog steeds nieuwe e-mails via het e-mailadres dat u bij uw huidige serviceprovider hebt aangemaakt. U moet nog steeds het e-mailadres gebruiken dat is gemaakt met uw huidige serviceprovider voor het verzenden van e-mails.
 
@@ -146,7 +146,7 @@ De configuratie van uw domeinnaam blijft ongewijzigd en u ontvangt nog steeds ni
 
 Nu u uw website en domeinnaam hebt overgedragen en uw e-mailadressen opnieuw hebt aangemaakt bij OVH, moet u vervolgens de configuratie van uw domeinnaam wijzigen. Hiervoor vervangt u de DNS-servers van uw domeinnaam met die van OVH. 
 
-U kunt deze wijzigen vanaf uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.  U kunt hierbij de documentatie *[Algemene informatie over DNS-servers](https://docs.ovh.com/nl/domains/gedeelde_hosting_algemene_informatie_over_dns_servers/){.external}* raadplegen. 
+U kunt deze wijzigen vanaf uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.  U kunt hierbij de documentatie *[Algemene informatie over DNS-servers](https://docs.ovh.com/nl/domains/gedeelde_hosting_algemene_informatie_over_dns_servers/){.external}* raadplegen. 
 
 Deze wijziging heeft meerdere gevolgen: 
 

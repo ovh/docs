@@ -22,13 +22,13 @@ On erilaisia syitä, joiden vuoksi saatat joutua luomaan DNS-alueen verkkotunnuk
 - Sinulla on verkkotunnus.
 - Kyseisellä verkkotunnuksella ei ole ennestään OVH:n DNS-aluetta eikä sillä ole meneillään toimenpidettä tai tilausta OVH:lla.
 - Verkkotunnuksen tekninen konfigurointi on oikein (tila, SOA jne.).
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Käytännössä
 
 ### 1. vaihe: DNS-alueen luominen hallintapaneelissa
 
-Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa `Tilaa`{.action} vasemman reunan valikossa ja sitten `DNS-alue`{.action}.
+Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, klikkaa `Tilaa`{.action} vasemman reunan valikossa ja sitten `DNS-alue`{.action}.
 
 Syötä näkyviin tulevalle sivulle verkkotunnus, jolle haluat luoda DNS-alueen. Odota hetki, että työkalu suorittaa verkkotunnusta koskevat tarkistukset.
 
@@ -51,7 +51,7 @@ Kun olet tehnyt valintasi, seuraa vaiheita DNS-alueen luomiseen saakka.
 
 Kun verkkotunnuksesi DNS-alue on luotu, voit muokata sitä. Tämä toimenpide on valinnainen, mutta se voi olla välttämätön, jos haluat varmistua verkkotunnukseen liitettyjen palveluidesi (kuten verkkosivujen ja sähköpostiosoitteiden) käytettävyydestä.
 
-Jos haluat muokata DNS-aluetta [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Verkkotunnukset`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva verkkotunnus. Mene lopuksi välilehdelle `DNS-alue`{.action}.
+Jos haluat muokata DNS-aluetta [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, klikkaa kohtaa `Verkkotunnukset`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva verkkotunnus. Mene lopuksi välilehdelle `DNS-alue`{.action}.
 
 > [!primary]
 >

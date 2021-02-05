@@ -26,7 +26,7 @@ Za účelem ochrany své globální infrastruktury a serverů svých klientů na
 ## Prerekvizity
 
 - Jakákoli služba OVH se síťovým firewallem ([dedikovaný server](https://www.ovh.cz/dedikovane_servery/){.external}, [VPS](https://www.ovh.cz/vps/){.external}, [instance Public Cloud](https://www.ovh.cz/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.cz/private-cloud/){.external}, [Fail-over IP](https://www.ovh.cz/dedikovane_servery/ip_failover.xml){.external}...).
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 
 ## Postup
@@ -38,7 +38,7 @@ Za účelem ochrany své globální infrastruktury a serverů svých klientů na
 > Síťový firewall chrání IP adresy asociované s Vaším serverem. Každou IP adresu je zapotřebí nakonfigurovat zvlášť. Globální konfigurace není v tomto případě možná.
 > 
 
-Přihlaste se do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (sekce Dedicated) a v záložce `IP`{.action} klikněte u příslušné IPv4 adresy na ikonku tří teček `(...)`{.action}. Z nabídky vyberte možnost `Aktivovat firewall`{.action}.
+Přihlaste se do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} (sekce Dedicated) a v záložce `IP`{.action} klikněte u příslušné IPv4 adresy na ikonku tří teček `(...)`{.action}. Z nabídky vyberte možnost `Aktivovat firewall`{.action}.
 
 ![Aktivace síťového firewallu](images/firewall_creation.png){.thumbnail}
 

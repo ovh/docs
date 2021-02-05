@@ -20,13 +20,13 @@ De Hosted Exchange-dienst kan bedrijfsspecifieke e-mailadressen gebruiken die he
 - U moet een abonnement op een [Hosted Exchange](https://www.ovh.nl/emails/hosted-exchange/){.external}-oplossing hebben.
 - U moet een e-mail hebben ontvangen met daarin de bevestiging dat uw Hosted Exchange is geïnstalleerd.
 - U moet beschikken over een domeinnaam. 
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 ## Instructies
 
 ### Stap 1: Ga naar het beheer van uw dienst
 
-Nadat uw Hosted Exchange is aangemaakt en beschikbaar is, kunt u deze beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Nadat uw Hosted Exchange is aangemaakt en beschikbaar is, kunt u deze beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 Hiervoor logt u in, klikt u op `Microsoft`{.action}, en vervolgens op `Exchange`{.action} in de linkerbalk van de dienst. Klik dan op de naam van de betreffende Hosted Exchange-dienst.
 
@@ -59,7 +59,7 @@ Als u klaar bent met het configureren van uw domein, kunt u ook aanvullende dome
 > In the directory kunnen alle adressen die op uw Exchange-dienst zijn gemaakt, alle andere bijbehorende adressen bekijken, inclusief adressen die verschillende domeinnamen hebben. Om te voorkomen dat verschillende domeinnamen op deze manier worden weergegeven, moet u een nieuwe Hosted Exchange-oplossing bestellen voor de betreffende domeinnaam/namen.
 >
 
-Om een nieuwe domeinnaam toe te voegen, selecteert u de betreffende [Hosted Exchange](https://www.ovh.com/auth/?action=gotomanager){.external} in uw OVH Control Panel en klikt u op `Verwante domeinen`{.action}. U ziet een tabel met alle domeinnamen die momenteel zijn geconfigureerd of die binnenkort moeten worden geconfigureerd voor uw dienst. Om nieuwe toe te voegen, klikt u op de knop `Domeinnaam toevoegen`{.action} en volgt u vervolgens de verschillende stappen van het proces.
+Om een nieuwe domeinnaam toe te voegen, selecteert u de betreffende [Hosted Exchange](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} in uw OVH Control Panel en klikt u op `Verwante domeinen`{.action}. U ziet een tabel met alle domeinnamen die momenteel zijn geconfigureerd of die binnenkort moeten worden geconfigureerd voor uw dienst. Om nieuwe toe te voegen, klikt u op de knop `Domeinnaam toevoegen`{.action} en volgt u vervolgens de verschillende stappen van het proces.
 
 Raadpleeg deze handleiding over het [toevoegen van een domeinnaam aan een Exchange-dienst](https://docs.ovh.com/nl/microsoft-collaborative-solutions/toevoegen-domein-exchange/){.external} voor meer informatie.
 
@@ -74,7 +74,7 @@ Raadpleeg deze handleiding over het [toevoegen van een domeinnaam aan een Exchan
 
 Als u klaar bent met het configureren van uw domein, kunt u ook aanvullende domeinnamen configureren als u dat wilt, en als u dat nog niet hebt gedaan via de assistent.
 
-Hiervoor klikt u op de betreffende Hosted Exchange-service in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} en vervolgens op `E-mailaccounts`{.action}. U ziet een tabel met alle domeinnamen die momenteel zijn geconfigureerd of die binnenkort moeten worden geconfigureerd voor uw dienst.
+Hiervoor klikt u op de betreffende Hosted Exchange-service in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en vervolgens op `E-mailaccounts`{.action}. U ziet een tabel met alle domeinnamen die momenteel zijn geconfigureerd of die binnenkort moeten worden geconfigureerd voor uw dienst.
 
 U ziet een tabel met alle accounts die momenteel zijn geconfigureerd of die binnenkort moeten worden geconfigureerd voor uw dienst. Om ze te configureren, klikt u op het potloodpictogram.
 
@@ -91,7 +91,7 @@ Nadat u uw accounts hebt geconfigureerd, hoeft u ze alleen nog maar te gebruiken
 
 Als u uw e-mailadres wilt configureren in een e-mailprogramma of een apparaat (zoals een smartphone of een tablet), raadpleeg dan onze documentatie op: [https://docs.ovh.com/nl/microsoft-collaborative-solutions/](https://docs.ovh.com/nl/microsoft-collaborative-solutions/){.external}. Als u de manier wilt optimaliseren waarop u uw Exchange-e-mailadres op een e-mailclient gebruikt, moet u ervoor zorgen dat deze compatibel is met de dienst.
 
-OVH biedt Outlook-licenties in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} en Office 365-licenties op de pagina: [https://www.ovh.nl/office-365/](https://www.ovh.nl/office-365/){.external}. We raden u aan een van deze oplossingen te gebruiken als u de Outlook-e-mailclient of andere software van de Microsoft Office-suite wilt gebruiken.
+OVH biedt Outlook-licenties in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en Office 365-licenties op de pagina: [https://www.ovh.nl/office-365/](https://www.ovh.nl/office-365/){.external}. We raden u aan een van deze oplossingen te gebruiken als u de Outlook-e-mailclient of andere software van de Microsoft Office-suite wilt gebruiken.
 
 > [!primary]
 >
@@ -101,7 +101,7 @@ OVH biedt Outlook-licenties in het [OVH Control Panel](https://www.ovh.com/auth/
 
 ### Stap 6: Configureer teamwerkfuncties (optioneel)
 
-Nu uw Hosted Exchange-dienst is geconfigureerd en volledig functioneel is, kunt u de samenwerkingsfuncties van de dienst instellen in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. U kunt deze functies gebruiken om resources (vergaderruimten, apparatuur, enz.), groepen en nog veel meer te maken.
+Nu uw Hosted Exchange-dienst is geconfigureerd en volledig functioneel is, kunt u de samenwerkingsfuncties van de dienst instellen in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. U kunt deze functies gebruiken om resources (vergaderruimten, apparatuur, enz.), groepen en nog veel meer te maken.
 
 Om deze functies in te schakelen, selecteert u de verwante Hosted Exchange-dienst in uw OVH Control Panel en kiest u vervolgens uit de tabbladen die aangeven welke actie zal worden uitgevoerd.
 

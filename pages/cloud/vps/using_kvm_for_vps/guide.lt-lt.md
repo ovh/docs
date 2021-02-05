@@ -16,7 +16,7 @@ The KVM console allows you to connect directly to your VPS without the need to u
 
 ## Requirements
 
-- You must be logged in to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Instructions
 

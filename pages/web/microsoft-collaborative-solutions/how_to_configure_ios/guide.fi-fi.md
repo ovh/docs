@@ -61,7 +61,7 @@ Syötä nyt pyydetyt tiedot:
 |Tieto|Kuvaus|
 |---|---|
 |Osoite|Tämän kentän pitäisi olla täytetty. Mikäli näin ei ole, syötä täydellinen sähköpostiosoite.|
-|Palvelin|Ilmoita palvelin, jossa Exchange-palveluasi ylläpidetään. Voit löytää sen [hallintapaneelista](https://www.ovh.com/auth/?action=gotomanager){.external} kyseisen Exchange-palvelun välilehdeltä `Yleiset tiedot`{.action} ja sitten kohdasta `Yhteys`{.action}.|
+|Palvelin|Ilmoita palvelin, jossa Exchange-palveluasi ylläpidetään. Voit löytää sen [hallintapaneelista](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} kyseisen Exchange-palvelun välilehdeltä `Yleiset tiedot`{.action} ja sitten kohdasta `Yhteys`{.action}.|
 |Verkkotunnus|Älä syötä tähän mitään.|
 |Käyttäjänimi|Syötä täydellinen sähköpostiosoite.|  
 |Salasana|Tämän kentän pitäisi olla täytetty. Mikäli näin ei ole, syötä sähköpostiosoitteen salasana.|

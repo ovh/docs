@@ -17,15 +17,15 @@ Ontdek hoe u een MX-veld kunt toevoegen aan de configuratie van uw domeinnaam.
 
 ## Vereisten
 
-- U moet gemachtigd zijn om de betreffende domeinnaam te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- U moet gemachtigd zijn om de betreffende domeinnaam te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 - De domeinnaam in kwestie moet de OVH-configuratie gebruiken (dat wil zeggen de OVH DNS-servers).
 
 > [!warning]
 >
 > - Als uw domeinnaam de OVH DNS-servers niet gebruikt, moet u de MX-velden aanpassen vanuit de interface van de provider die de configuratie van uw domeinnaam beheert.
 >
-> - Als uw domeinnaam bij OVH is, kunt u controleren of deze onze OVH-configuratie gebruikt vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in `DNS-servers`{.action}, zodra deze op het betreffende domein is geplaatst.
+> - Als uw domeinnaam bij OVH is, kunt u controleren of deze onze OVH-configuratie gebruikt vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} in `DNS-servers`{.action}, zodra deze op het betreffende domein is geplaatst.
 >
 
 ## Instructies
@@ -53,7 +53,7 @@ U moet deze MX-records nu toevoegen aan de DNS-zone-configuratie van uw domeinna
 
 ### Stap 3: Wijzig de configuratie van een OVH MX-record
 
-Om de MX-velden in de OVH-configuratie van uw domein aan te passen, logt u zich in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Ga naar het gedeelte `Domeinen`{.action} op de dienstenbalk aan de linkerkant, klik op het betreffende domein en ga vervolgens naar de `DNS-zone`{.action}.
+Om de MX-velden in de OVH-configuratie van uw domein aan te passen, logt u zich in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Ga naar het gedeelte `Domeinen`{.action} op de dienstenbalk aan de linkerkant, klik op het betreffende domein en ga vervolgens naar de `DNS-zone`{.action}.
 
 De tabel geeft de OVH-configuratie van uw domein weer. Elke regel komt overeen met een DNS-record. Controleer om te beginnen of de MX-records al bestaan in de OVH DNS-zoneconfiguratie van uw domeinnaam. U kunt dit doen met behulp van het zoekfilter.
 
