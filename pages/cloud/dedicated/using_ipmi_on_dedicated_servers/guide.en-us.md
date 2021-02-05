@@ -15,7 +15,7 @@ Please note that you may also see the term KVM (Keyboard Video and Mouse) used f
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 
 ## Instructions
@@ -67,7 +67,7 @@ It will take several minutes for the IPMI to reboot.
 
 [!warning] OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
 >
-To begin, open IPMI in a Java applet as described in the section Accessing IPMI from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager). Then, click **Device** from the menu bar and select **Redirect ISO** from the drop-down menu.
+To begin, open IPMI in a Java applet as described in the section Accessing IPMI from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). Then, click **Device** from the menu bar and select **Redirect ISO** from the drop-down menu.
 >
 ![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
 >
@@ -87,7 +87,7 @@ Complete the steps required to install the operating system. Do not forget to re
 
 [!warning] OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
 >
-To begin, open IPMI in a Java applet as described in the section Accessing IPMI from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager). Then, click **Virtual Media** and select **Virtual Storage**.
+To begin, open IPMI in a Java applet as described in the section Accessing IPMI from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). Then, click **Virtual Media** and select **Virtual Storage**.
 >
 ![Virtual_Storage](images/virtual_storage.png){.thumbnail}
 >
