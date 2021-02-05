@@ -2,7 +2,7 @@
 title: Que faire en cas d’erreur 500 Internal Server Error ?
 legacy_guide_number: 1987
 slug: erreur-500-internal-server-error
-excerpt: Comment résoudre les cas les plus courants d'erreurs 500
+excerpt: Analyser les cas les plus courants d'erreurs 500
 section: Diagnostic
 ---
 
@@ -10,13 +10,13 @@ section: Diagnostic
 
 ## Objectif
 
-![error500](images/error-500.png)
-
 Les erreurs 500 « Internal Server Error » peuvent concerner tout ou partie de votre site, être aléatoires ou permanentes. Elles peuvent aussi apparaître sous la forme d'une page blanche.
+
+![error500](images/error-500.png)
 
 Elles proviennent parfois d'une mise à jour effectuée automatiquement par un composant de votre site et donc survenir sans action de votre part.
 
-**Les manipulations proposées dans ce guide vous permettront de résoudre les cas les plus courants d'erreur 500.**
+**Les manipulations proposées dans ce guide vous permettront d'analyser les cas les plus courants d'erreurs 500.**
 
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
@@ -24,7 +24,7 @@ Elles proviennent parfois d'une mise à jour effectuée automatiquement par un c
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement mutualisé](https://www.ovh.com/fr/hebergement-web/).
+- Disposer d'une [offre d'hébergement mutualisé](https://www.ovh.com/fr/hebergement-web/)
 - Connectez-vous à votre espace client OVHcloud
 
 ## En pratique
@@ -35,11 +35,11 @@ Testez votre site sur plusieurs appareils et navigateurs, afin de vérifier que 
 
 ### Restaurez votre site à son état antérieur
 
-Pour restaurer votre site à son état antérieur, consultez notre guide [Restaurer l’espace de stockage son hébergement web](../restauration-ftp-filezilla-espace-client/)
+Pour restaurer votre site à son état antérieur, consultez notre guide [Restaurer l’espace de stockage son hébergement web](../restauration-ftp-filezilla-espace-client/).
 
 Si votre site comporte une base de données, consultez notre guide [Restaurer une sauvegarde de votre base de données](../mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client), afin de restaurer votre site à son date antérieure.
 
-Si l'erreur 500 est apparue suite à une mise à jour de la version PHP de votre hébergement : [Cliquer ici](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/) pour revenir à la configuration précédente.
+Si l'erreur 500 est apparue suite à une mise à jour de la version PHP de votre hébergement [Configurer le PHP sur son hébergement] (https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/) pour revenir à la configuration précédente.
 
 Consultez ensuite l'onglet `Tâches en cours` dans la partie `Hébergements` de votre espace client OVHcloud, rafraîchissez votre page jusqu'à ce que plus aucune opération n'apparaisse. Effectuez ensuite un nouveau test de votre site, après avoir redémarré votre appareil.
 
