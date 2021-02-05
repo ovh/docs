@@ -10,7 +10,7 @@ section: Diagnostic
 
 ## Objectif
 
-![error500](error-500.png){.thumbnail}
+![error500](images/error-500.png){.thumbnail}
 
 Les erreurs 500 « Internal Server Error » peuvent concerner tout ou partie de votre site, être aléatoires ou permanentes. Elles peuvent aussi apparaître sous la forme d'une page blanche.
 
@@ -27,12 +27,13 @@ Elles proviennent parfois d'une mise à jour effectuée automatiquement par un c
 
 ## Prérequis
 
-- Vous disposez des identifiants d'accès à votre espace client OVHcloud.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 - Vous disposez d'une [offre d'hébergement mutualisé](https://www.ovh.com/fr/hebergement-web/){.external}.
-- Votre site est hébergé sur cette offre.
-- Vous avez testé votre site sur plusieurs appareils et navigateurs et avez constaté la même anomalie.
+
 
 ## En pratique
+
+Vous avez testé votre site sur plusieurs appareils et navigateurs et avez constaté la même anomalie.
 
 ### Restaurez votre site à son état antérieur
 
