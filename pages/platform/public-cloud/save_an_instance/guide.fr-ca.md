@@ -10,20 +10,20 @@ order: 1
 
 ## Objectif
 
-Vous avez la possibilité de créer à tout moment une sauvegarde d'une instance depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Cette dernière peut vous permettre de restaurer votre instance sur une ancienne configuration ; ou de pouvoir recréer cette dernière.
+Vous avez la possibilité de créer à tout moment une sauvegarde d'une instance depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Cette dernière peut vous permettre de restaurer votre instance sur une ancienne configuration ; ou de pouvoir recréer cette dernière.
 
 **Réalisez en quelques clics une sauvegarde d'une instance Public Cloud.**
 
 ## Prérequis
 
 - [Avoir créé une instance Public Cloud depuis votre compte](../create_an_instance_in_your_ovh_customer_account/).
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
 
 ### Créer une sauvegarde d'une instance
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, sélectionnez l'onglet Public Cloud puis la rubrique `Instances`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, sélectionnez l'onglet Public Cloud puis la rubrique `Instances`{.action}.
 
 Cliquez alors sur les `...`{.action} à droite de l'instance choisie et enfin sur `Créer un backup`{.action}.
 

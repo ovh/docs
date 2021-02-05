@@ -21,7 +21,7 @@ Il peut être nécessaire de modifier le mot de passe root sur votre système d'
 
 - Avoir votre [VPS OVHcloud](https://www.ovhcloud.com/fr-ca/vps/){.external} déjà configuré
 - Disposer des identifiants de connexion reçus par e-mail après l'installation (s'ils sont toujours valides)
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} (pour utiliser le mode rescue)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} (pour utiliser le mode rescue)
 
 > [!warning]
 >
@@ -66,7 +66,7 @@ Si vous devez autoriser la connexion en tant qu'utilisateur root, suivez les ét
 
 #### Étape 1 : Redémarrez le VPS en mode rescue.
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) et redémarrez le VPS en mode rescue. Si vous avez besoin d'instructions supplémentaires sur l'utilisation du mode rescue avec un VPS, consultez le [guide du mode rescue](../mode-rescue-vps/).
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et redémarrez le VPS en mode rescue. Si vous avez besoin d'instructions supplémentaires sur l'utilisation du mode rescue avec un VPS, consultez le [guide du mode rescue](../mode-rescue-vps/).
 
 #### Étape 2 : Identifier le point de montage
 
@@ -140,7 +140,7 @@ passwd: password updated successfully
 
 Vous pourrez ainsi vous reconnecter avec ce nom d'utilisateur après le redémarrage, au cas où la connexion root serait désactivée.
 
-Enfin, redémarrez votre VPS sur son disque depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
+Enfin, redémarrez votre VPS sur son disque depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 
 ### Activer le mot de passe root

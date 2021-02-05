@@ -29,7 +29,7 @@ En créant une instance Public Cloud, il est possible de choisir entre une factu
 ## Prérequis
 
 - Vous devez avoir créé une [instance Public Cloud](https://www.ovh.com/ca/fr/public-cloud/){.external}.
-- Vous devez être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Vous devez être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 
 ## En pratique

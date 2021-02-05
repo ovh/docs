@@ -53,7 +53,7 @@ Renseignez à présent les informations demandées :
 |Information|Description|
 |---|---|
 |Adresse|Ce champ doit déjà être rempli. Si ce n'est pas le cas, renseignez l'adresse e-mail complète.|
-|Serveur|Indiquez le serveur sur lequel est hébergé votre service Exchange. Vous pouvez le retrouver depuis votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} dans l'onglet `Informations générales`{.action} du service Exchange concerné, puis dans le cadre `Connexion`{.action}|
+|Serveur|Indiquez le serveur sur lequel est hébergé votre service Exchange. Vous pouvez le retrouver depuis votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans l'onglet `Informations générales`{.action} du service Exchange concerné, puis dans le cadre `Connexion`{.action}|
 |Domaine|Ne rien renseigner.|
 |Nom d'utilisateur|Indiquez l'adresse e-mail complète.|  
 |Mot de passe|Ce champ doit déjà être rempli. Si ce n'est pas le cas, renseignez le mot de passe de l'adresse e-mail.|

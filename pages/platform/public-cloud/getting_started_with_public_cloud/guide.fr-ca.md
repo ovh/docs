@@ -17,13 +17,13 @@ hidden: true
 
 ## Prérequis
 
-* Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
 
 ## Instructions
 
 ### Créer un projet
 
-Connectez-vous à votre [Espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Une fois connecté, cliquez sur le menu `Cloud`{.action}.
+Connectez-vous à votre [Espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Une fois connecté, cliquez sur le menu `Cloud`{.action}.
 
 ![menu cloud](images/menu.png){.thumbnail}
 

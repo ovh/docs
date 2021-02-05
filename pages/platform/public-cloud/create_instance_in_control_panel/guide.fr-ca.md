@@ -15,7 +15,7 @@ Le [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/){.external} vous 
 
 ## Prérequis
 
-* accès au [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager)
+* accès au [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 * un projet [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/){.external} créé dans votre compte OVHcloud
 * une clé SSH créée dans votre compte client OVHcloud
 
@@ -23,7 +23,7 @@ Le [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/){.external} vous 
 
 ### Créer une instance
 
-Tout d'abord, connectez-vous au Panneau de configuration [OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} et cliquez sur le menu `Public Cloud`{.action}.
+Tout d'abord, connectez-vous au Panneau de configuration [OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et cliquez sur le menu `Public Cloud`{.action}.
 
 ![cloud menu](images/pci-instance-cloud-01_2020.png){.thumbnail}
 

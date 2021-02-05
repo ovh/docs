@@ -20,14 +20,14 @@ Dans de telles circonstances, vous pouvez utiliser le mode rescue pour reconfigu
 ## Prérequis
 
 * Une [Instance Public Cloud](https://www.ovh.com/ca/fr/public-cloud/){.external} dans votre compte OVHcloud
-* Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
 * Avoir accès à votre instance via SSH en tant qu'administrateur (root)
 
 ## Instructions
 
 ### Activer le mode rescue
 
-Tout d’abord, connectez-vous à [l’espace client d’OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} et cliquez sur le menu `Cloud`{.action}.
+Tout d’abord, connectez-vous à [l’espace client d’OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et cliquez sur le menu `Cloud`{.action}.
 
 Sélectionnez votre projet Public Cloud dans le menu latéral gauche et allez dans Instances.
 
