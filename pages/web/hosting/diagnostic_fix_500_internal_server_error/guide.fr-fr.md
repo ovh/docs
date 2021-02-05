@@ -18,12 +18,9 @@ Elles proviennent parfois d'une mise à jour effectuée automatiquement par un c
 
 **Les manipulations proposées dans ce guide vous permettront de résoudre les cas les plus courants d'erreur 500.**
 
-> [!warning]
->
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](https://docs.ovh.com/fr/microsoft-collaborative-solutions/exchange-configuration-de-thunderbird/#aller-plus-loin_1) de ce guide.
->
 
 ## Prérequis
 
