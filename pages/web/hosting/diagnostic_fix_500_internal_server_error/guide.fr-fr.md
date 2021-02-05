@@ -74,11 +74,11 @@ Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous es
 
 ### Restaurez votre site à son état antérieur
 
-Un site est constitué d'un **code source** (les fichiers en .php ou .html par exemple de votre hébergement OVHcloud), auquel s'ajoutent souvent une **base de données**. Vous pouvez restaurer l'un ou l'autre indépendamment.
-
+> Un site est constitué d'un **code source** (les fichiers en .php ou .html par exemple de votre hébergement OVHcloud), auquel s'ajoutent souvent une **base de données**. Vous pouvez restaurer l'un ou l'autre indépendamment.
+> 
 > La restauration du code source concernera l'ensemble des sites de votre hébergement OVHcloud.
 > 
-> Par ailleurs, lors de ces opératiosn, le code source de votre hébergement, comme le contenu de votre base de données, seront remplacés par une sauvegarde. Les données présentes avant la restauration ne seront pas récupérables.
+> Lors de ces opérations, le code source de votre hébergement, comme le contenu de votre base de données, seront remplacés par une sauvegarde. Les données présentes avant la restauration ne seront pas récupérables.
 
 Pour restaurer le code source de votre site, consultez [Restaurer l’espace de stockage son hébergement web](../restauration-ftp-filezilla-espace-client/). 
 
