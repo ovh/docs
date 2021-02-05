@@ -12,7 +12,6 @@ section: Diagnostic
 
 Les erreurs 500 « Internal Server Error » peuvent concerner tout ou partie de votre site, être aléatoires ou permanentes. Elles peuvent aussi apparaître sous la forme d'une page blanche.
 
-
 ![error500](images/error-500.png)
 
 Elles proviennent parfois d'une mise à jour effectuée automatiquement par un composant de votre site et donc survenir sans action de votre part.
@@ -26,23 +25,13 @@ Elles proviennent parfois d'une mise à jour effectuée automatiquement par un c
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement mutualisé](https://www.ovh.com/fr/hebergement-web/)
-- Connectez-vous à votre espace client OVHcloud
+- Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/)
 
 ## En pratique
 
 Avant de poursuivre, vérifiez votre site sur plusieurs appareils et navigateurs, afin de vérifier que la même anomalie apparaît bien dans toutes les situations.
 
-### Restaurez votre site à son état antérieur
-
-Pour restaurer votre site à son état antérieur, consultez notre guide [Restaurer l’espace de stockage son hébergement web](../restauration-ftp-filezilla-espace-client/).
-
-Si votre site comporte une base de données, consultez notre guide [Restaurer une sauvegarde de votre base de données](../mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client), afin de restaurer votre site à son date antérieure.
-
-Si l'erreur 500 est apparue suite à une mise à jour de la version PHP de votre hébergement [Configurer le PHP sur son hébergement] (https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/) pour revenir à la configuration précédente.
-
-Consultez ensuite l'onglet `Tâches en cours` dans la partie `Hébergements` de votre espace client OVHcloud, rafraîchissez votre page jusqu'à ce que plus aucune opération n'apparaisse. Effectuez ensuite un nouveau test de votre site, après avoir redémarré votre appareil.
-
-### Tester le fichier .htaccess
+### Testez le fichier .htaccess
 
 Une erreur 500 peut aussi être liée à une erreur dans un fichier nommé « .htaccess ». 
 
@@ -73,6 +62,16 @@ Pour des raisons de sécurité, votre site masque les détails éventuels sur l'
 Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous est possible, à partir de la formule d’hébergement [pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml), de vous connecter à votre site via une connexion ssh.
 
 Pour plus d'informations sur les connexions en ssh : [Cliquez ici](https://docs.ovh.com/fr/hosting/mutualise-le-ssh-sur-les-hebergements-mutualises/).
+
+### Restaurez votre site à son état antérieur
+
+Pour restaurer votre site à son état antérieur, consultez notre guide [Restaurer l’espace de stockage son hébergement web](../restauration-ftp-filezilla-espace-client/).
+
+Si votre site comporte une base de données, consultez notre guide [Restaurer une sauvegarde de votre base de données](../mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client), afin de restaurer votre site à son date antérieure.
+
+Si l'erreur 500 est apparue suite à une mise à jour de la version PHP de votre hébergement [Configurer le PHP sur son hébergement] (https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/) pour revenir à la configuration précédente.
+
+Consultez ensuite l'onglet `Tâches en cours` dans la partie `Hébergements` de votre espace client OVHcloud, rafraîchissez votre page jusqu'à ce que plus aucune opération n'apparaisse. Effectuez ensuite un nouveau test de votre site, après avoir redémarré votre appareil.
 
 ## Aller plus loin
 
