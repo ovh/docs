@@ -13,7 +13,7 @@ This tutorial covers the process of building your own job image for specific nee
 
 ## Requirements
 
--   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+-   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 -   an **AI Training project** created inside a **public cloud** project
 -   a [user for AI Training](../create-user)
 -   [docker](https://www.docker.com/get-started) installed on your local computer
