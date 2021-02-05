@@ -58,11 +58,11 @@ To check that the account has been correctly configured, you can send a test ema
 
 If you experience any issues connecting your account, we recommend:
 
-- Checking the domain name configuration of your Exchange service in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Click on the `Associated domains`{.action} tab, then look in the `Diagnostic`{.action} column of the table.
+- Checking the domain name configuration of your Exchange service in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. Click on the `Associated domains`{.action} tab, then look in the `Diagnostic`{.action} column of the table.
 
 - Trying to enter the connection URL for your Exchange service. Enter this URL, ignoring the security certificate alert, then fill in the `Internal URL`{.action} and `External URL`{.action} fields with the details of your Exchange server.
 
-To find the server details you need, log in to your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and go to the Exchange service concerned. Click on the `General Information`{.action} tab. The relevant server and its details can be found in the `Connection`{.action} section.
+To find the server details you need, log in to your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, and go to the Exchange service concerned. Click on the `General Information`{.action} tab. The relevant server and its details can be found in the `Connection`{.action} section.
 
 ### Step 2: Use the email address
 

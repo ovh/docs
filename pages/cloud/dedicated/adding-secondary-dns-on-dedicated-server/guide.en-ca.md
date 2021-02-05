@@ -17,7 +17,7 @@ If you are configuring your dedicated server as a DNS server, you can make use o
 
 - a domain name to which you have administrative access
 - a [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
@@ -29,7 +29,7 @@ If you are configuring your dedicated server as a DNS server, you can make use o
 
 ### Adding a domain <a name="addingdomain"></a>
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Bare Metal Cloud`{.action} section and then select your server from **Dedicated Servers** in the left-hand sidebar.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Bare Metal Cloud`{.action} section and then select your server from **Dedicated Servers** in the left-hand sidebar.
 
 Switch to the tab `Secondary DNS`{.action} and click on the button `Add a domain`{.action}.
 

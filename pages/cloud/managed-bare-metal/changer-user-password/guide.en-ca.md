@@ -24,7 +24,7 @@ vSphere client user permissions and passwords are managed from the OVHcloud Cont
 
 ### Change Password
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, go to `Bare Metal Cloud`{.action} (1), click `Managed Bare Metal`{.action} (2) and select your server from the list (3). Click the `Users`{.action} (4) tab.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to `Bare Metal Cloud`{.action} (1), click `Managed Bare Metal`{.action} (2) and select your server from the list (3). Click the `Users`{.action} (4) tab.
 
 ![control panel](images/userpassword1.png){.thumbnail}
 
