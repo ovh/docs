@@ -42,8 +42,8 @@ Cette formule redirige chaque requête  **/letstest**  sur le script  **/test_ws
 
 ```bash
 RewriteEngine on
-Rewritecond %{HTTP_HOST} ^exemple.com$
-Rewriterule ^(.*) http://www.exemple.com/$1 [QSA,L,R=301]
+RewriteCond %{HTTP_HOST} ^exemple.com$
+RewriteRule ^(.*) http://www.exemple.com/$1 [QSA,L,R=301]
 ```
 
 
@@ -53,9 +53,9 @@ Rewriterule ^(.*) http://www.exemple.com/$1 [QSA,L,R=301]
 
 ```bash
 RewriteEngine on
-Rewritecond %{HTTP_HOST} ^exemple.com
-Rewritecond %{REQUEST_URI} !^/MonSite
-Rewriterule ^(.*)$ /MonSite/
+RewriteCond %{HTTP_HOST} ^exemple.com
+RewriteCond %{REQUEST_URI} !^/MonSite
+RewriteRule ^(.*)$ /MonSite/
 ```
 
 

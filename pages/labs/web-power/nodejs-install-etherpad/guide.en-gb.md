@@ -65,7 +65,7 @@ Let's suppose you have the default configuration for Node.js hosting:
 cd www
 git init
 git remote add origin https://github.com/ether/etherpad-lite.git
-git pull origin master/1.8.6
+git pull origin release/1.8.6
 ```
 
 > [!alert]
@@ -92,7 +92,7 @@ v14.15.4
 ~ $ cd www
 ~/www $ git init
 ~/www $ git remote add origin https://github.com/ether/etherpad-lite.git
-~/www $ git pull origin master
+~/www $ git pull origin release
 remote: Enumerating objects: 2, done.
 remote: Counting objects: 100% (2/2), done.
 remote: Compressing objects: 100% (2/2), done.
