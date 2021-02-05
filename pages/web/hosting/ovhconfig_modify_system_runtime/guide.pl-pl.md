@@ -20,7 +20,7 @@ Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prez
 ## Wymagania początkowe
 
 - Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external} (z wyjątkiem Cloud Web)
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager)
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
@@ -37,7 +37,7 @@ Zmieniając konfigurację hostingu, zmieniasz jednocześnie konfigurację Twojej
 
 #### Etap 1: zarządzanie konfiguracją hostingu
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz nazwę odpowiedniego hostingu. Przejdź do sekcji `Informacje ogólne`{.action}, a następnie w części `Konfiguracja` kliknij przycisk z trzema kropkami obok wersji PHP i wybierz `Zmień konfigurację`{.action}.
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz nazwę odpowiedniego hostingu. Przejdź do sekcji `Informacje ogólne`{.action}, a następnie w części `Konfiguracja` kliknij przycisk z trzema kropkami obok wersji PHP i wybierz `Zmień konfigurację`{.action}.
 
 ![hosting zmiana wersji php](images/change-hosting-configuration-step1.png){.thumbnail}
 

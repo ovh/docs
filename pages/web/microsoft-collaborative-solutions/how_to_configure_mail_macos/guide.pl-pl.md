@@ -65,11 +65,11 @@ Wykonaj test wysyłki e-maili, aby sprawdzić, czy konto zostało poprawnie skon
 
 Jeśli nie udaje Ci się zalogować, zalecamy, abyś:
 
-- sprawdź konfigurację domeny w usłudze Exchange w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, zakładka `Powiązane domeny`{.action}, kolumna `Diagnostyka`{.action} w tabeli;
+- sprawdź konfigurację domeny w usłudze Exchange w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, zakładka `Powiązane domeny`{.action}, kolumna `Diagnostyka`{.action} w tabeli;
 
 - wprowadź ręcznie linki dostępowe do usługi Exchange. Kontynuuj operację mimo alertu o bezpieczeństwie certyfikatu, następnie wpisz w polach `URL wewnętrzny`{.action} i `URL zewnętrzny`{.action} informacje o serwerze, na którym hostowana jest Twoja usługa Exchange.
 
-W celu sprawdzenia nazwy serwera zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i przejdź do usługi Exchange. Następnie przejdź do zakładki `Informacje ogólne`{.action} i wyszukaj serwer, który pojawia się w ramce `Połączenie`{.action}.
+W celu sprawdzenia nazwy serwera zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do usługi Exchange. Następnie przejdź do zakładki `Informacje ogólne`{.action} i wyszukaj serwer, który pojawia się w ramce `Połączenie`{.action}.
 
 ### Etap 2: korzystanie z konta e-mail
 

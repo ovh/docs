@@ -18,7 +18,7 @@ Oferta hostingu Cloud Web łączy w sobie 20 lat doświadczenia OVH w zakresie h
 - Posiadanie hostingu SSD [Cloud Web](https://www.ovh.pl/hosting/cloud-web.xml)
 - Otrzymanie wiadomość e-mail z potwierdzeniem, że usługa Cloud Web została zainstalowana
 - Posiadanie [domeny](https://www.ovh.pl/domeny/), pod którą dostępna będzie Twoja strona WWW
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager)
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
@@ -40,7 +40,7 @@ W ramach Cloud Web udostępniamy różne języki programowania do budowy Twojego
 
 Aktualnie dostępne języki to PHP i Node.js.
 
-Aby uzyskać dostęp do frameworków Twojego hostingu Cloud Web, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, a następnie wybierz nazwę odpowiedniego hostingu Cloud Web. Teraz przejdź do zakładki `Framework`{.action}.
+Aby uzyskać dostęp do frameworków Twojego hostingu Cloud Web, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, a następnie wybierz nazwę odpowiedniego hostingu Cloud Web. Teraz przejdź do zakładki `Framework`{.action}.
 
 Framework jest automatycznie tworzony podczas instalacji hostingu. Oznaczony jest jako `Wybór domyślny` w tabeli, która się wyświetli. Aby zmodyfikować wcześniej skonfigurowany framework, kliknij trzy kropki po jego prawej stronie, a następnie `Modyfikuj`{.action}. 
 
@@ -136,7 +136,7 @@ Ponieważ projekty różnią się od siebie, nie istnieje jeden uniwersalny spos
 
 Po zainstalowaniu Twojego projektu na hostingu Cloud Web możesz utworzyć konta e-mail. Jeśli nie chcesz ich tworzyć, przejdź od razu do kolejnego etapu. 
 
-Aby utworzyć jedno lub kilka kont e-mail, pozostań w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `E-maile`{.action} na pasku usług po lewej stronie, następnie wybierz nazwę domeny, którą wprowadziłeś podczas zamawiania hostingu Cloud Web.
+Aby utworzyć jedno lub kilka kont e-mail, pozostań w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `E-maile`{.action} na pasku usług po lewej stronie, następnie wybierz nazwę domeny, którą wprowadziłeś podczas zamawiania hostingu Cloud Web.
 
 Aby utworzyć nowe konto e-mail, kliknij przycisk `Załóż konto e-mail`{.action}. Zapoznaj się z naszą dokumentacją: [Tworzenie konta e-mail w ramach usługi MX Plan](https://docs.ovh.com/pl/emails/przewodnik_na_temat_zakladania_adresu_e-mail/){.external}.
 
@@ -154,8 +154,8 @@ Istnieje kilka rodzajów rekordów DNS w OVH. Będą Cię dotyczyły szczególni
 
 |Rekordy DNS|Powiązana usługa|Gdzie sprawdzić rekordy?|
 |---|---|---|
-|A|Dla strony WWW|W [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, w sekcji `Hosting`{.action} zaznacz odpowiedni hosting Cloud Web. Pobierz adres IP, który wyświetla się obok „IPv4” w zakładce `Informacje ogólne`{.action}.|
-|MX|Dla wiadomości e-mail|W [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, w sekcji `E-maile`{.action} zaznacz odpowiednią domenę. Pobierz informacje, które wyświetlają się obok „Pola MX” w zakładce `Informacje ogólne`{.action}.|
+|A|Dla strony WWW|W [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w sekcji `Hosting`{.action} zaznacz odpowiedni hosting Cloud Web. Pobierz adres IP, który wyświetla się obok „IPv4” w zakładce `Informacje ogólne`{.action}.|
+|MX|Dla wiadomości e-mail|W [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w sekcji `E-maile`{.action} zaznacz odpowiednią domenę. Pobierz informacje, które wyświetlają się obok „Pola MX” w zakładce `Informacje ogólne`{.action}.|
 
 #### 2. Sprawdź i/lub zmodyfikuj rekordy DNS
 
@@ -165,14 +165,14 @@ Teraz sprawdź, czy rekordy DNS przypisane do Twojego hostingu Cloud Web i kont 
 >
 > - Jeśli Twoja domena nie używa konfiguracji DNS OVH, przeprowadź zmianę w interfejsie dostawcy zarządzającego konfiguracją Twojej domeny.
 > 
-> - Jeśli domena jest zarejestrowana w OVH, możesz sprawdzić, czy używa konfiguracji DNS OVH. W tym celu przejdź do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, zaznacz nazwę odpowiedniej domeny i kliknij zakładkę `Serwery DNS`{.action}.
+> - Jeśli domena jest zarejestrowana w OVH, możesz sprawdzić, czy używa konfiguracji DNS OVH. W tym celu przejdź do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, zaznacz nazwę odpowiedniej domeny i kliknij zakładkę `Serwery DNS`{.action}.
 >
 
 Zapoznaj się z poniższymi wskazówkami, aby dowiedzieć się, gdzie przeprowadzić operacje:
 
 |Używana konfiguracja DNS|Gdzie przeprowadzić operacje?|
 |---|---|
-|OVH|W [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, w sekcji `Domeny`{.action} zaznacz odpowiednią domenę. W zakładce `Strefa DNS`{.action} sprawdź i zmodyfikuj niezbędne informacje. W razie potrzeby skorzystaj z naszej dokumentacji [Modyfikacja strefy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}.|
+|OVH|W [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w sekcji `Domeny`{.action} zaznacz odpowiednią domenę. W zakładce `Strefa DNS`{.action} sprawdź i zmodyfikuj niezbędne informacje. W razie potrzeby skorzystaj z naszej dokumentacji [Modyfikacja strefy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}.|
 |Inne|W interfejsie dostawcy zarządzającego konfiguracją DNS Twojej domeny. W przypadku trudności w przeprowadzeniu tych operacji zachęcamy do kontaktu z dostawcą zarządzającym konfiguracją DNS Twojej domeny.|
 
 Czas propagacji wprowadzonych w strefie DNS zmian wynosi maksymalnie 24 godziny. Jeśli dodałeś kilka domen do Twojego hostingu Cloud Web w opcji MultiSite, przeprowadź obydwie operacje dla każdej z domen. 

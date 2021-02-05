@@ -20,7 +20,7 @@ Oprócz prywatnego adresowania IP, [vRack](https://www.ovh.pl/rozwiazania/vrack/
 * Przygotowanie Twojego zakresu wybranych prywatnych adresów IP
 * Posiadanie [serwera kompatybilnego z vRack](https://www.ovh.pl/serwery_dedykowane/){.external}
 * Aktywacja usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
-* Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 
 ## W praktyce

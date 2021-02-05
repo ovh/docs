@@ -16,18 +16,18 @@ Dowiedz się, jak monitorować i zarządzać automatycznymi wiadomościami e-mai
 ## Wymagania początkowe
 
 - Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external}
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 > [!primary]
 >
 > Tematem tego przewodnika są tylko wiadomości e-mail wysyłane za pośrednictwem skryptów z Twojego hostingu w OVH.
 >
-> Aby zarządzać adresami e-mail zawartymi w MX Plan lub [hostingu OVH](https://www.ovh.pl/hosting/){.external}, przejdź do sekcji `E-maile`{.action} w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}.
+> Aby zarządzać adresami e-mail zawartymi w MX Plan lub [hostingu OVH](https://www.ovh.pl/hosting/){.external}, przejdź do sekcji `E-maile`{.action} w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 >
 
 ## W praktyce
 
-Możesz monitorować i zarządzać automatycznymi wiadomościami e-mail w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Zaloguj się do Panelu klienta, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz z listy odpowiedni hosting. Teraz kliknij zakładkę `Więcej`{.action}, a następnie `Skrypty e-mail`{.action}.
+Możesz monitorować i zarządzać automatycznymi wiadomościami e-mail w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Zaloguj się do Panelu klienta, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz z listy odpowiedni hosting. Teraz kliknij zakładkę `Więcej`{.action}, a następnie `Skrypty e-mail`{.action}.
 
 Wyświetli się strona, dzięki której będziesz mógł monitorować i zarządzać automatycznymi wiadomościami e-mail wysyłanymi z hostingu OVH
 

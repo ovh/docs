@@ -16,7 +16,7 @@ Skrót HA (High Availability) oznacza usługę wysokiej dostępności, czyli tak
 NAS-HA oferują centra danych zlokalizowane na terenie Francji (Roubaix, Strasbourg, Gravelines) oraz w Kanadzie (Beauharnois). Wyboru data center dokonuje się podczas zakupu. UWAGA: po zakupie zmiana lokalizacji jest niemożliwa.
 
 ### Czy można zarządzać NAS-HA przez Panel klienta?
-Tak, opcje zarządzania usługą są dostępne w Twoim [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, w rubryce `Cloud`{.action} i `Platformy i usługi`{.action}.
+Tak, opcje zarządzania usługą są dostępne w Twoim [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w rubryce `Cloud`{.action} i `Platformy i usługi`{.action}.
 
 ### Czy jest możliwość zwiększenia miejsca na usłudze NAS?
 Po zakupie nie ma możliwości zwiększenia pojemności NAS. W celu zwiększenia przestrzeni dyskowej należy przenieść dane na drugi NAS o większym rozmiarze.
@@ -40,7 +40,7 @@ Dyski NAS-HA są dedykowane. Inne zasoby maszyny są wspólne (RAM, CPU, przepus
 **Przypadek szczególny:** przy zakupie oferty 26,4 TB wszystkie zasoby serwera hostingowego są dedykowane (RAM, CPU, przepustowość).
 
 ### Na jaki okres mogę wykupić NAS-HA?
-Oferowane okresy to: 1, 3, 6 i 12 miesięcy. W przypadku braku złożenia wniosku o rozwiązanie umowy, po zakończeniu okresu rozliczeniowego subskrypcja jest przedłużana automatycznie. Wniosek można złożyć przez [Panel klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external} w trakcie całego okresu obowiązywania umowy.
+Oferowane okresy to: 1, 3, 6 i 12 miesięcy. W przypadku braku złożenia wniosku o rozwiązanie umowy, po zakończeniu okresu rozliczeniowego subskrypcja jest przedłużana automatycznie. Wniosek można złożyć przez [Panel klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w trakcie całego okresu obowiązywania umowy.
 
 ### Czy do dyspozycji jest pojemność wyświetlana przy zakupie?
 Tak jak w większości rozwiązań stosowanych przy przestrzeniach dyskowych, pojemność teoretyczna nieznacznie różni się od rzeczywistej pojemności użytkowej, ponieważ część zarezerwowana jest dla elementów zapewniających właściwe działanie dysku:
@@ -133,7 +133,7 @@ Częstotliwością tworzenia snapshotów można zarządzać z poziomu Panelu kli
 - raz w tygodniu. 
 
 
-W każdej chwili  możesz również tworzyć snapshoty ręcznie, przechowywać je bezterminowo lub usuwać. Te funkcje są dostępne w Twoim [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external} lub przez [API](https://api.ovh.com/){.external}:
+W każdej chwili  możesz również tworzyć snapshoty ręcznie, przechowywać je bezterminowo lub usuwać. Te funkcje są dostępne w Twoim [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub przez [API](https://api.ovh.com/){.external}:
 
 > [!api]
 >

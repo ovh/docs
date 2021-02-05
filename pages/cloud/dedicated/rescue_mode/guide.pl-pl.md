@@ -22,7 +22,7 @@ Tryb Rescue to narzędzie dostępne na serwerze dedykowanym. Umożliwia uruchomi
 ## Wymagania początkowe
 
 - Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
@@ -54,7 +54,7 @@ Po zakończeniu zadań w trybie Rescue pamiętaj o ponownym ustawieniu netbootu 
 > Jeśli używasz klucza SSH (aktywnego również w Panelu klienta OVHcloud), nie otrzymasz hasła. Po uruchomieniu serwera w trybie Rescue możesz połączyć się bezpośrednio z kluczem SSH.
 >
 
-Po restarcie serwera otrzymasz e-mail z danymi do połączenia w trybie Rescue. E-mail ten jest również dostępny w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Kliknij nazwę powiązaną z Twoim identyfikatorem klienta w prawym górnym rogu Panelu klienta, a następnie `E-maile od działu wsparcia`{.action}.
+Po restarcie serwera otrzymasz e-mail z danymi do połączenia w trybie Rescue. E-mail ten jest również dostępny w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij nazwę powiązaną z Twoim identyfikatorem klienta w prawym górnym rogu Panelu klienta, a następnie `E-maile od działu wsparcia`{.action}.
 
 Zaloguj się do serwera za pomocą wiersza poleceń lub narzędzia SSH, używając wygenerowanego hasła root dla trybu Rescue.
 
@@ -115,7 +115,7 @@ Aby wyłączyć tryb Rescue, zmień sposób uruchamiania serwera w sekcji `Uruch
 
 #### Korzystanie z narzędzi WinRescue
 
-Po restarcie serwera otrzymasz e-mail z danymi do połączenia w trybie Rescue. E-mail ten jest również dostępny w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Kliknij nazwę powiązaną z Twoim identyfikatorem klienta w prawym górnym rogu Panelu klienta, a następnie `E-maile od działu wsparcia`{.action}.
+Po restarcie serwera otrzymasz e-mail z danymi do połączenia w trybie Rescue. E-mail ten jest również dostępny w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij nazwę powiązaną z Twoim identyfikatorem klienta w prawym górnym rogu Panelu klienta, a następnie `E-maile od działu wsparcia`{.action}.
 
 Aby korzystać z trybu Rescue oferowanego przez Windows, pobierz i zainstaluj konsolę VNC lub skorzystaj z modułu `IPMI` w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager/){.external}.
 

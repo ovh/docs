@@ -15,15 +15,15 @@ SPF (Sender Policy Framework) umożliwia serwerowi, który otrzymał wiadomość
 
 ## Wymagania początkowe
 
-- Dostęp do funkcji zarządzania nazwą danej domeny z poziomu [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Zalogowanie do swojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostęp do funkcji zarządzania nazwą danej domeny z poziomu [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- Zalogowanie do swojego [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Nazwa danej domeny musi używać konfiguracji OVH (tzn. serwerów DNS OVH).
 
 > [!warning]
 >
 > Jeżeli Twoja nazwa domeny nie używa serwerów DNS OVH, konieczna będzie zmiana SPF z poziomu interfejsu dostawcy zarządzającego konfiguracją Twojej nazwy domeny.
 >
-> Jeżeli Twoja nazwa domeny znajduje się na serwerze OVH, możesz sprawdzić, czy używa on naszej konfiguracji OVH, wybierając daną domenę w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} w zakładce `Serwery DNS`{.action}.
+> Jeżeli Twoja nazwa domeny znajduje się na serwerze OVH, możesz sprawdzić, czy używa on naszej konfiguracji OVH, wybierając daną domenę w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w zakładce `Serwery DNS`{.action}.
 >
 
 ## W praktyce
@@ -55,7 +55,7 @@ Jeżeli dokonujesz zakupu jednego z tych rozwiązań, zalecamy korzystanie z rek
 mypersonaldomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
-Jeżeli Twoja domena wykorzystuje ustawienia OVH, możesz sprawdzić czy rekord SPF został już dla niej skonfigurowany. W tym celu zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, a następnie przejdź do menu usług znajdującego się po lewej stronie. Wybierz sekcję `Domeny`{.action}. Kliknij wybraną domenę, a następnie przejdź do zakładki `Strefa DNS`{.action}.
+Jeżeli Twoja domena wykorzystuje ustawienia OVH, możesz sprawdzić czy rekord SPF został już dla niej skonfigurowany. W tym celu zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, a następnie przejdź do menu usług znajdującego się po lewej stronie. Wybierz sekcję `Domeny`{.action}. Kliknij wybraną domenę, a następnie przejdź do zakładki `Strefa DNS`{.action}.
 
 Powinna pojawić się tabela. Zawiera ona ustawienia Twojej domeny na serwerach DNS OVH. Składa się z kilku typów rekordów DNS, umieszczonych w osobnych wierszach tabeli.
 
@@ -81,7 +81,7 @@ Aby odnaleźć w tabeli wiersz odpowiadający wpisowi SPF OVH, możesz skorzysta
 
 ### Etap 3: zmiana serwera SPF
 
-Aby zmienić wpis SPF w ustawieniach OVH swojej domeny, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Na pasku usług po lewej stronie wybierz sekcję `Domeny`{.action}, kliknij daną domenę, a następnie wybierz zakładkę `Strefa DNS`{.action}.
+Aby zmienić wpis SPF w ustawieniach OVH swojej domeny, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Na pasku usług po lewej stronie wybierz sekcję `Domeny`{.action}, kliknij daną domenę, a następnie wybierz zakładkę `Strefa DNS`{.action}.
 
 W tabeli wyświetlą się ustawienia OVH Twojej domeny. Każdy wiersz odpowiada danemu typowi rekordu DNS.
 

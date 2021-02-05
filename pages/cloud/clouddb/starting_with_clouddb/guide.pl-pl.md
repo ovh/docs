@@ -16,13 +16,13 @@ Rozwiązanie Cloud Databases (w skrócie CloudDB) umożliwia korzystanie z baz d
 ## Wymagania początkowe
 
 - Posiadanie [instancji Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external}
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce
 
 ### Wyświetlanie informacji ogólnych o instancji
 
-W menu usług po lewej stronie [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, przejdź do sekcji [Bazy danych](https://www.ovh.com/auth/?action=gotomanager){.external}, a następnie kliknij nazwę instancji. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
+W menu usług po lewej stronie [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji [Bazy danych](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, a następnie kliknij nazwę instancji. Następnie przejdź do sekcji `Informacje ogólne`{.action}.
 
 > [!primary]
 >

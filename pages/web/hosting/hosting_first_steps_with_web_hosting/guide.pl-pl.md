@@ -19,7 +19,7 @@ Właśnie kupiłeś hosting, aby stworzyć swoją stronę internetową. Umożliw
 - Zakupienie [hostingu OVH](https://www.ovh.pl/hosting/){.external}.
 - Otrzymanie wiadomości e-mail potwierdzającej uruchomienie usługi.
 - Posiadanie [nazwy domeny](https://www.ovh.pl/domeny/){.external}, czyli adresu, pod którym dostępna będzie Twoja strona.
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
 
@@ -46,7 +46,7 @@ Gdy projekt został już dokładnie określony, jedyne co pozostaje, to umieszcz
 
 Rozwiązanie to wykorzystuje pre-instalowane moduły OVH dostępne w Panelu klienta. Jest to narzędzie umożliwiające prostą i szybką instalację systemu CMS. OVH przeprowadza instalację strony, a następnie przekazuje klientowi dane do logowania.
 
-Aby instalacja modułu OVH była możliwa, upewnij się, że katalog instalacyjny modułu jest pusty (co ma miejsce, jeżeli nie zalogowałeś się jeszcze do Twojej przestrzeni dyskowej). Aby dokonać szybkiej instalacji modułu, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. W menu po lewej stronie wybierz sekcję `Hosting`{.action}, a następnie nazwę hostingu, który zakupiłeś. W zakładce `Moduły`{.action} wybierz opcję `Dodaj moduł`{.action}.
+Aby instalacja modułu OVH była możliwa, upewnij się, że katalog instalacyjny modułu jest pusty (co ma miejsce, jeżeli nie zalogowałeś się jeszcze do Twojej przestrzeni dyskowej). Aby dokonać szybkiej instalacji modułu, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W menu po lewej stronie wybierz sekcję `Hosting`{.action}, a następnie nazwę hostingu, który zakupiłeś. W zakładce `Moduły`{.action} wybierz opcję `Dodaj moduł`{.action}.
 
 ![Dostęp do modułów](images/access_to_the_1_click_modules_section.png){/thumbnail}
 
@@ -65,7 +65,7 @@ Aby instalacja modułu OVH była możliwa, koniecznie upewnij się, że:
 - katalog instalacyjny modułu jest pusty (co ma miejsce, jeżeli nie zalogowałeś się jeszcze do Twojej przestrzeni dyskowej);
 - baza danych została już utworzona na Twoim hostingu (w tym celu wybierz zakładkę `Bazy danych`{.action}, a następnie opcję `Stwórz bazę danych`{.action}).
 
-Aby utworzyć bazę danych, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Na pasku usług po lewej stronie wybierz sekcję `Hosting`{.action}, a następnie nazwę hostingu, który zakupiłeś. W zakładce `Bazy danych`{.action} wybierz opcję `Stwórz bazę danych`{.action}. Uzupełnij wymagane informacje, a następnie zaczekaj na zakończenie instalacji.
+Aby utworzyć bazę danych, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Na pasku usług po lewej stronie wybierz sekcję `Hosting`{.action}, a następnie nazwę hostingu, który zakupiłeś. W zakładce `Bazy danych`{.action} wybierz opcję `Stwórz bazę danych`{.action}. Uzupełnij wymagane informacje, a następnie zaczekaj na zakończenie instalacji.
 
 ![Dostęp do modułów OVH ](images/create_a_database.png){/thumbnail}
 
@@ -85,7 +85,7 @@ Biorąc pod uwagę, że strony internetowe mogą się w znaczącym stopniu od si
 
 ### Etap 3: tworzenie adresów e-mail
 
-Możesz pominąć ten etap, jeżeli nie chcesz korzystać z adresów e-mail wchodzących w skład Twojego [pakietu hostingowego](https://www.ovh.pl/hosting){.external}. Aby stworzyć jeden lub kilka adresów e-mail, upewnij się najpierw, że jesteś zalogowany do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Na pasku usług po lewej stronie wybierz sekcję `E-maile`{.action}, a następnie nazwę hostingu, który zakupiłeś. Następnie w zakładce `E-maile`{.action} wybierz opcję `Załóż adres e-mail`{.action}.
+Możesz pominąć ten etap, jeżeli nie chcesz korzystać z adresów e-mail wchodzących w skład Twojego [pakietu hostingowego](https://www.ovh.pl/hosting){.external}. Aby stworzyć jeden lub kilka adresów e-mail, upewnij się najpierw, że jesteś zalogowany do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Na pasku usług po lewej stronie wybierz sekcję `E-maile`{.action}, a następnie nazwę hostingu, który zakupiłeś. Następnie w zakładce `E-maile`{.action} wybierz opcję `Załóż adres e-mail`{.action}.
 
 ![Załóż adres e-mail](images/create_an_email_address.png){/thumbnail}
 
@@ -107,13 +107,13 @@ Istnieje wiele rekordów DNS dostępnych w OVH. Skupimy się w szczególności n
 
 - **Rekord A, dla strony internetowej**
 
-Aby sprawdzić rekord A, którego należy użyć w strefie DNS Twojej domeny, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Na pasku usług po lewej stronie wybierz sekcję `Hosting`{.action}, a następnie nazwę hostingu, który zakupiłeś. Następnie w zakładce `Informacje ogólne`{.action} odszukaj adres IP, który znajduje się obok `IPv4`{.action}.
+Aby sprawdzić rekord A, którego należy użyć w strefie DNS Twojej domeny, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Na pasku usług po lewej stronie wybierz sekcję `Hosting`{.action}, a następnie nazwę hostingu, który zakupiłeś. Następnie w zakładce `Informacje ogólne`{.action} odszukaj adres IP, który znajduje się obok `IPv4`{.action}.
 
 ![Zmień rekord A](images/know_the_OVH_A_records.png){/thumbnail}
 
 - **Rekordy MX, dla adresów e-mail**
 
-Aby sprawdzić rekordy MX, których należy użyć w strefie Twojej domeny, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Na pasku usług po lewej stronie wybierz sekcję `E-maile`{.action}, a następnie nazwę hostingu, który zakupiłeś. Następnie w zakładce `Informacje ogólne`{.action} odszukaj informacje, które znajdują się obok `Rekordów MX`{.action}. Rekordy te mogą różnić się w zależności od filtra DNS, który postanowiłeś zastosować.
+Aby sprawdzić rekordy MX, których należy użyć w strefie Twojej domeny, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Na pasku usług po lewej stronie wybierz sekcję `E-maile`{.action}, a następnie nazwę hostingu, który zakupiłeś. Następnie w zakładce `Informacje ogólne`{.action} odszukaj informacje, które znajdują się obok `Rekordów MX`{.action}. Rekordy te mogą różnić się w zależności od filtra DNS, który postanowiłeś zastosować.
 
 ![Zmień rekordy MX](images/know_the_OVH_MX_records.png){/thumbnail}
 
@@ -123,7 +123,7 @@ Teraz, gdy znasz już typy rekordów powiązane z Twoim hostingiem OVH, należy 
 
 - **Zakup domeny wraz z hostingiem OVH**
 
-Konfiguracja Twojej domeny jest już prawidłowa. Przejdź do następnego etapu. Jeżeli natomiast dokonałeś zmian w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} w strefie DNS Twojej domeny, może okazać się, że konfiguracja jest nieprawidłowa.
+Konfiguracja Twojej domeny jest już prawidłowa. Przejdź do następnego etapu. Jeżeli natomiast dokonałeś zmian w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w strefie DNS Twojej domeny, może okazać się, że konfiguracja jest nieprawidłowa.
  
 Aby uzyskać dostęp do strefy DNS Twojej domeny OVH wybierz sekcję `Domeny`{.action} na pasku zadań po lewej stronie i kliknij nazwę danej domeny. Następnie w zakładce `Strefa DNS`{.action} sprawdź i zmodyfikuj niezbędne informacje.
 

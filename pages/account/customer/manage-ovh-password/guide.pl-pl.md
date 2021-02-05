@@ -72,7 +72,7 @@ Jeśli Twoje hasło wykradzione, rekomendujemy [jego natychmiastową zmianę](./
 
 #### W panelu klienta OVHcloud
 
-- Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij nazwę w prawym górnym rogu, następnie kliknij swoje inicjały.
+- Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij nazwę w prawym górnym rogu, następnie kliknij swoje inicjały.
 
 ![manage-ovh-password](images/newhub2.png){.thumbnail}
 

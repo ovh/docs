@@ -19,13 +19,13 @@ Usługa Hosted Exchange pozwala na korzystanie z profesjonalnej poczty elektroni
 - Wykupienie usługi [Hosted Exchange](https://www.ovh.pl/emaile/hosted-exchange/){.external}.
 - Otrzymanie wiadomość e-mail z potwierdzeniem, że usługa Hosted Exchange została zainstalowana.
 - Zarejestrowana domena.
-- Dostęp [do Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostęp [do Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
 
 ### Etap 1: dostęp do panelu zarządzania usługą Exchange
 
-Po utworzeniu i udostępnieniu usługi Hosted Exchange, można nią zarządzać poprzez [Panel klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Po utworzeniu i udostępnieniu usługi Hosted Exchange, można nią zarządzać poprzez [Panel klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 W tym celu zaloguj się w Panelu klienta, kliknij `Microsoft`{.action}, a następnie `Exchange`{.action} na pasku usług po lewej stronie. W kolejnym kroku kliknij wybraną nazwę usługi  Hosted Exchange.
 
@@ -58,7 +58,7 @@ Kiedy pierwsza konfiguracja Twojej domeny zostanie zakończona, możesz, skonfig
 > Wszystkie konta e-mail utworzone w ramach Twojej usługi Exchange mogą wyświetlać w katalogu wszystkie adresy e-mail powiązane z usługą Exchange, również te, które mają różne nazwy domen. Aby wyłączyć ten sposób wyświetlania kont w domenach, musisz zamówić nową usługę Hosted Exchange dla wybranych domen.
 >
 
-Aby dodać nową domenę, zaznacz wybraną usługę Hosted Exchange w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i kliknij w zakładkę `Przypisane domeny`{.action}. W tabeli wyświetlone są nazwy domen aktualnie skonfigurowanych w Twojej usłudze lub których konfiguracja trwa. Aby dodać nowe domeny, kliknij przycisk `Dodaj domenę`{.action}, następnie postępuj zgodnie z kolejnymi poleceniami.
+Aby dodać nową domenę, zaznacz wybraną usługę Hosted Exchange w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij w zakładkę `Przypisane domeny`{.action}. W tabeli wyświetlone są nazwy domen aktualnie skonfigurowanych w Twojej usłudze lub których konfiguracja trwa. Aby dodać nowe domeny, kliknij przycisk `Dodaj domenę`{.action}, następnie postępuj zgodnie z kolejnymi poleceniami.
 
 Więcej informacji znajdziesz w dokumentacji [Dodawanie domeny do usługi Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/dodanie-domeny-exchange/){.external}.
 
@@ -73,7 +73,7 @@ Więcej informacji znajdziesz w dokumentacji [Dodawanie domeny do usługi Exchan
 
 Możesz skonfigurować dodatkowe domeny (o ile nie zrobiłeś tego jeszcze przy użyciu asystenta).
 
-Aby to uczynić, kliknij w wybraną usługę Hosted Exchange w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, następnie w zakładkę `Konta e-mail`{.action}. W tabeli wyświetlone są nazwy kont aktualnie skonfigurowanych w Twojej usłudze lub które oczekują na konfigurację.
+Aby to uczynić, kliknij w wybraną usługę Hosted Exchange w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, następnie w zakładkę `Konta e-mail`{.action}. W tabeli wyświetlone są nazwy kont aktualnie skonfigurowanych w Twojej usłudze lub które oczekują na konfigurację.
 
 Konta oczekujące na konfigurację wyświetlane są w tabeli w postaci “*@configureme.me*”. Aby przeprowadzić konfigurację kont, kliknij w ikonę ołówka, następnie postępuj zgodnie z poleceniami.
 
@@ -90,7 +90,7 @@ Po skonfigurowaniu Twoich kont możesz zacząć ich używać. OVH udostępnia w 
 
 Jeśli chcesz skonfigurować Twoje konto e-mail na smartfonie, tablecie lub programie pocztowym, skorzystaj z naszej dokumentacji dostępnej tutaj: [https://docs.ovh.com/pl/microsoft-collaborative-solutions/](https://docs.ovh.com/pl/microsoft-collaborative-solutions/){.external}. Abyś mógł korzystać z konta Exchange w sposób optymalny, upewnij się, czy jest ono kompatybilne z Twoim programem pocztowym.
 
-OVH oferuje licencje Outlook w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, a ponadto licencje Office 365 na stronie [https://www.ovh.pl/office-365/](https://www.ovh.pl/office-365/){.external}. Zalecamy skorzystanie z jednego z tych rozwiązań, jeśli chcesz używać programu pocztowego Outlook lub innych programów Office.
+OVH oferuje licencje Outlook w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, a ponadto licencje Office 365 na stronie [https://www.ovh.pl/office-365/](https://www.ovh.pl/office-365/){.external}. Zalecamy skorzystanie z jednego z tych rozwiązań, jeśli chcesz używać programu pocztowego Outlook lub innych programów Office.
 
 > [!primary]
 >
@@ -100,9 +100,9 @@ OVH oferuje licencje Outlook w [Panelu klienta](https://www.ovh.com/auth/?action
 
 ### Etap 6:  konfiguracja ustawień funkcji pracy zespołowej (opcjonalnie)
 
-Po skonfigurowaniu i uruchomieniu usługi Hosted Exchange możesz wprowadzić ustawienia funkcji pracy zespołowej w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Funkcje te umożliwiają między innymi tworzenie zasobów (sale spotkań, sprzęt, etc.) czy grup.
+Po skonfigurowaniu i uruchomieniu usługi Hosted Exchange możesz wprowadzić ustawienia funkcji pracy zespołowej w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Funkcje te umożliwiają między innymi tworzenie zasobów (sale spotkań, sprzęt, etc.) czy grup.
 
-W celu aktywowania dodatkowych funkcji zaznacz wybraną usługę Hosted Exchange w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, następnie wybierz ostatnią zakładkę zawierającą opcje dodatkowe, które pozwolą na utworzenie zasobów.
+W celu aktywowania dodatkowych funkcji zaznacz wybraną usługę Hosted Exchange w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, następnie wybierz ostatnią zakładkę zawierającą opcje dodatkowe, które pozwolą na utworzenie zasobów.
 
 Jeśli potrzebujesz pomocy odnośnie którejś z funkcji, skorzystaj z naszej dokumentacji dostępnej tutaj: [https://docs.ovh.com/pl/microsoft-collaborative-solutions/](https://docs.ovh.com/pl/microsoft-collaborative-solutions/){.external}.
 

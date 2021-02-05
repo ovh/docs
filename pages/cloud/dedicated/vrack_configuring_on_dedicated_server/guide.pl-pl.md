@@ -20,14 +20,14 @@ Technologia vRack (szafa wirtualna) umożliwia zgrupowanie dowolnej liczby serwe
 - Posiadanie usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
 - Posiadanie co najmniej dwóch [serwerów kompatybilnych z siecią vRack](https://www.ovh.pl/serwery_dedykowane/){.external}
 - Połączenie przez SSH (lub przez interfejs użytkownika) z Twoim serwerem Linux (dostęp root)
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - Zakresu prywatnych adresów IP
 
 ## W praktyce
 
 ### Dodanie serwerów do sieci vRack
 
-1. Po dodaniu rozwiązania vRack do Twojego konta przejdź do sekcji `Cloud`{.action} w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}.
+1. Po dodaniu rozwiązania vRack do Twojego konta przejdź do sekcji `Cloud`{.action} w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 2. Następnie wybierz menu `vRack`{.action} z listy po lewej stronie.
 3. Wybierz vRack, do którego chcesz dodać serwery.
 4. Na liście dostępnych usług zaznacz serwery, które chcesz dodać do szafy vRack, następnie kliknij na przycisk `Dodaj`{.action}.

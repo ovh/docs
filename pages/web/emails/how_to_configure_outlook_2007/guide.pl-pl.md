@@ -96,7 +96,7 @@ Oto informacje do konfiguracji konta e-mail POP.
 Konfiguracja POP z zabezpieczeniem SSL włączonym/green] lub wyłączonym:
 
 Adres Email : Cały adres e-mail
-Hasło: Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager).
+Hasło: Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 Nazwa użytkownika: Cały adres e-mail
 Serwer poczty przychodzącej:ssl0.ovh.net
 Port serwera poczty przychodzącej:995 lub 110
@@ -125,7 +125,7 @@ Oto informacje do konfiguracji konta e-mail IMAP.
 Konfiguracja IMAP z zabezpieczeniem SSL włączonym/green] lub wyłączonym:
 
 Adres Email : Cały adres e-mail
-Hasło: Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager).
+Hasło: Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 Nazwa użytkownika: Cały adres e-mail
 Serwer poczty przychodzącej:ssl0.ovh.net
 Port serwera poczty przychodzącej:993 lub 143

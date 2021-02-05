@@ -17,7 +17,7 @@ order: 5
 ## Wymagania początkowe
 
 - Dostęp do klienta VMware Horizon lub przeglądarki internetowej
-- Adres URL punktu dostępowego wskazany w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Adres URL punktu dostępowego wskazany w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - [Uprawnienia dostępu do puli pulpitów dla użytkownika](https://docs.ovh.com/pl/cloud-desktop-infrastructure/udostepnianie-pulpitu/){.external}
 
 

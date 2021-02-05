@@ -17,13 +17,13 @@ Wraz z pakietami hostingowymi OVH zyskujesz dostęp do przestrzeni dyskowej umo�
 ## Wymagania początkowe
 
 - Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external}
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce
 
 ### Etap 1: dostęp do zarządzania użytkownikami FTP
 
-Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiedni hosting. Teraz przejdź do zakładki `FTP - SSH`{.action}.
+Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiedni hosting. Teraz przejdź do zakładki `FTP - SSH`{.action}.
 
 W tabeli wyświetlają się nazwy użytkowników FTP utworzone na Twoim hostingu. Używając tych loginów, możesz zalogować się do Twojej przestrzeni dyskowej, aby umieścić w Internecie pliki Twojej strony WWW. Pierwszy użytkownik (login) tworzony jest automatycznie podczas instalacji hostingu.
 

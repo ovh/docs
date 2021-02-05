@@ -44,7 +44,7 @@ Wpisz Twój adres e-mail, po czym kliknij `Dalej`{.action}. Jeśli pojawi się l
 |Adres poczty elektronicznej|Wpisz nazwę pozwalającą odróżnić to konto od Twoich pozostałych kont wyświetlających się w aplikacji Outlook.|
 |DOMENA\nazwa użytkownika lub adres poczty elektronicznej|Wpisz pełny adres e-mail.|
 |Hasło|Wpisz hasło wybrane dla tego konta e-mail.|
-|Serwer|W zależności od konfiguracji DNS Twojej domeny wskazanie serwera, na którym hostujesz usługę Exchange może być fakultatywne. Jeśli jest to wymagane, wskaż serwer, na którym hostowana jest Twoja usługa Exchange. Możesz znaleźć go w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > zakładka `Informacje ogólne`{.action} dotyczące danej usługi Exchange > `Logowanie`{.action}.|
+|Serwer|W zależności od konfiguracji DNS Twojej domeny wskazanie serwera, na którym hostujesz usługę Exchange może być fakultatywne. Jeśli jest to wymagane, wskaż serwer, na którym hostowana jest Twoja usługa Exchange. Możesz znaleźć go w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > zakładka `Informacje ogólne`{.action} dotyczące danej usługi Exchange > `Logowanie`{.action}.|
 
 Po uzupełnieniu informacji kliknij przycisk `Dodaj konto`{.action}. Jeśli dane są prawidłowe, logowanie zakończy się sukcesem.
 

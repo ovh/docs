@@ -9,18 +9,18 @@ section: 'Zamówienia, faktury i usługi'
 
 ## Wprowadzenie
 
-Zamówienie w OVHcloud przechodzi przez kilka etapów, które możesz śledzić w Twoim [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Zamówienie w OVHcloud przechodzi przez kilka etapów, które możesz śledzić w Twoim [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 **Niniejszy przewodnik wyjaśnia, jak interpretować poszczególne etapy realizacji zamówienia.**
 
 > [!primary]
 >
-> Możliwe jest, że niektóre części niniejszego przewodnika nie mają zastosowania do Twojej sytuacji, która może być różna w zależności od tego, gdzie znajduje się siedziba Twojej firmy i pod jakie podlega ustawodawstwo. Jeśli masz wątpliwości, sprawdź zapisy w umowach OVHcloud dostępnych w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja`Produkty i usługi`{.action} > `Regulaminy`{.action}.
+> Możliwe jest, że niektóre części niniejszego przewodnika nie mają zastosowania do Twojej sytuacji, która może być różna w zależności od tego, gdzie znajduje się siedziba Twojej firmy i pod jakie podlega ustawodawstwo. Jeśli masz wątpliwości, sprawdź zapisy w umowach OVHcloud dostępnych w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja`Produkty i usługi`{.action} > `Regulaminy`{.action}.
 >
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - Złożenie co najmniej jednego zamówienia w OVHcloud
 
 
@@ -40,12 +40,12 @@ Formularz zamówienia tworzony jest na ostatnim etapie składania zamówienia. W
 |4|Tutaj znajdziesz dostępne metody płatności. Zostaną Ci zaproponowane jedynie metody płatności akceptowane w kraju, w którym zostało zarejestrowane konto lub metody związane z typem zarejestrowanego konta.|
 
 
-Możesz w każdym momencie odnaleźć Twoje zamówienie w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} w sposób, w jaki zostało to opisane w dalszej części tej dokumentacji.
+Możesz w każdym momencie odnaleźć Twoje zamówienie w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w sposób, w jaki zostało to opisane w dalszej części tej dokumentacji.
 
 
 ### Dostęp do zamówień w Panelu klienta
 
-Aby uzyskać dostęp do panelu zarządzania zamówieniami, kliknij `Dashboard` w lewym górnym rogu w aplecie [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, a następnie kliknij `Wyświetl moje zamówienia`{.action}.
+Aby uzyskać dostęp do panelu zarządzania zamówieniami, kliknij `Dashboard` w lewym górnym rogu w aplecie [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, a następnie kliknij `Wyświetl moje zamówienia`{.action}.
 
 ![Panel klienta](images/huborders.png){.thumbnail}
 
@@ -76,7 +76,7 @@ Możesz wyświetlić zamówienie, które ma status „dostarczanie w trakcie” 
 
 ### Śledzenie zamówienia
 
-Po wygenerowaniu formularza zamówienia możesz je śledzić z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Kliknij na `Dashboard`{.action}, a następnie na `Wyświetl moje zamówienia`{action} i wreszcie na `...`{.action} obok Twojego zamówienia. Wybierz `Informacje o zamówieniu`{.action}. Aby śledzić zamówienie, możesz też kliknąć jego stan w kolumnie „Status”.
+Po wygenerowaniu formularza zamówienia możesz je śledzić z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij na `Dashboard`{.action}, a następnie na `Wyświetl moje zamówienia`{action} i wreszcie na `...`{.action} obok Twojego zamówienia. Wybierz `Informacje o zamówieniu`{.action}. Aby śledzić zamówienie, możesz też kliknąć jego stan w kolumnie „Status”.
 
 ![Informacje o zamówieniu](images/order05b.png){.thumbnail}
 
@@ -93,7 +93,7 @@ Opcję skorzystania z prawa do odstąpienia od umowy znajdziesz w dalszym ciągu
 
 **Poniższa opcja nie jest dostępna dla klientów polskich:**
 
-Jeśli warunki dotyczące terminu odstąpienia od umowy są spełnione, możesz skorzystać z prawa odstąpienia od umowy bezpośrednio w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. W tym celu wykonaj takie same czynności, jak w przypadku wyświetlenia zamówienia, jednak zamiast wybrać `Informacje o zamówieniu`{.action}, wybierz `Anuluj zamówienie`{.action}.
+Jeśli warunki dotyczące terminu odstąpienia od umowy są spełnione, możesz skorzystać z prawa odstąpienia od umowy bezpośrednio w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W tym celu wykonaj takie same czynności, jak w przypadku wyświetlenia zamówienia, jednak zamiast wybrać `Informacje o zamówieniu`{.action}, wybierz `Anuluj zamówienie`{.action}.
 
 ![Anulowanie zamówienia](images/cancelorder1.png){.thumbnail}
 
