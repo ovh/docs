@@ -15,13 +15,13 @@ Cuando instala o reinstala un sistema operativo Windows, todas las cuentas tiene
 ## Requerimientos
 
 - Un [servidor dedicado](https://www.ovh.com/world/es/servidores-dedicados/){.external} con Windows instalado.
-- Acceso al [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- Acceso al [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
 
 ## Instrucciones
 
 ### Usando el IPMI
 
-Primero, inicie sesión en la página de su servidor en su [Panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Una vez allí, seleccione la pestaña `IPMI`{.action}. 
+Primero, inicie sesión en la página de su servidor en su [Panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Una vez allí, seleccione la pestaña `IPMI`{.action}. 
 
 >[!primary]
 >
@@ -44,7 +44,7 @@ Su contraseña ahora ha sido cambiada. Ahora puede acceder una vez más al servi
 
 ### Usando el modo rescate
 
-Primero, inicie su servidor en [modo de rescate](../modo_de_rescate) {.external} utilizando el entorno de arranque WinRescue. Una vez que el servidor se haya reiniciado, inicie sesión con un visor VNC o seleccione la pestaña `IPMI` {.action} en la página de su servidor en su {Panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Primero, inicie su servidor en [modo de rescate](../modo_de_rescate) {.external} utilizando el entorno de arranque WinRescue. Una vez que el servidor se haya reiniciado, inicie sesión con un visor VNC o seleccione la pestaña `IPMI` {.action} en la página de su servidor en su {Panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 A continuación, abra la herramienta NTPWdi. Si no aparece allí, puede descargarlo [aquí](http://cdslow.org.ru/files/ntpwedit/ntpwed07.zip){.external}.
 

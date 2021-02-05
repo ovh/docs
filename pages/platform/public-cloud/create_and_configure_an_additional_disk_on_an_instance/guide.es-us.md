@@ -27,7 +27,7 @@ Esto puede ser útil en los siguientes casos:
 
 ## Procedimiento
 
-Primero, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} y haga clic en el menú `Public Cloud`{.action}. Haga clic en el `Proyecto`{.action} en el que quiere crear la instancia.
+Primero, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y haga clic en el menú `Public Cloud`{.action}. Haga clic en el `Proyecto`{.action} en el que quiere crear la instancia.
 
 Ahora, haga clic en el botón `Acciones`{.action} y seleccione `Crear un volumen`{.action}.
 

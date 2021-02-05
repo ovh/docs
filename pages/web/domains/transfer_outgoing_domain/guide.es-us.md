@@ -24,7 +24,7 @@ Para evitar las transferencias de dominio no autorizadas, los dominios suelen es
 
 - Tener un [dominio](https://www.ovh.com/world/es/dominios/) registrado con OVHcloud.
 - Estar facultado para solicitar la transferencia del dominio. El propietario y las personas que lo administren deben haber sido informados.
-- Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 - El registro del dominio en cuestión data de hace al menos 60 días y no ha sido transferido ni intercambiado (es decir, el cambio de propietario) en los últimos 60 días.
 
 
@@ -46,7 +46,7 @@ Para evitar las transferencias de dominio no autorizadas, los dominios suelen es
 
 ### 1\. eliminar la protección contra la transferencia del dominio
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) y seleccione `Web Cloud`{.action} en la barra de navegación superior. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y seleccione `Web Cloud`{.action} en la barra de navegación superior. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente.
 
 En la pestaña `Información general`{.action}, encontrará el cursor `Protección contra la transferencia` en **Seguridad**. Por defecto, esta protección está `Activada`{.action}.
 

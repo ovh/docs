@@ -18,7 +18,7 @@ El [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external} es una red
 
 - Tener activado un servicio [vRack](https://www.ovh.com/world/es//soluciones/vrack/){.external}.
 - Tener un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/){.external} compatible con el vRack.
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 - Tener acceso al rango elegido de direcciones IP privadas.
 
 
@@ -26,7 +26,7 @@ El [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external} es una red
 
 ### Crear un proyecto de Public Cloud
 
-Inicie sesión en su [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Inicie sesión en su [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 Haga click en `Servidores`{.action} y a continuación en `contratar`{.action}.
 

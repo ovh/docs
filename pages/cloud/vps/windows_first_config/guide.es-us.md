@@ -14,7 +14,7 @@ Cuando instala Windows Server en un [VPS](https://www.ovhcloud.com/en-ca/vps/){.
 ## Requisitos
 
 - un VPS con Windows Server 2012, 2012 R2 o 2016;
-- acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 ## Procedimiento
 

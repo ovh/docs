@@ -18,15 +18,15 @@ La función Netboot es un servicio gratuito ofrecido por OVHcloud, le permite in
 ## Requisitos
 
 - Un [servidor dedicado](https://www.ovhcloud.com/en/bare-metal/){.external}
-- Acceso al [panel de control OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- Acceso al [panel de control OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
 
 ## Procedimiento
 
-La instalación de Netboot debe configurarse en el [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
+La instalación de Netboot debe configurarse en el [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
 
 ### Arranca tu servidor desde el disco
 
-Para iniciar su servidor en el disco, primero debe conectarse al [panel de control](https://ca.ovh.com/auth/?action=gotomanager){.external}
+Para iniciar su servidor en el disco, primero debe conectarse al [panel de control](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
 
 Haga clic en `Servidores`{.action}, sección `Servidores Dedicados`{.action} en la columna de la izquierda, seleccione su servidor de la lista.
 

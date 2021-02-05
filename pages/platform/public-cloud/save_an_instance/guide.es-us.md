@@ -9,20 +9,20 @@ section: 'Gestión de las instancias desde el área de cliente'
 
 ## Objetivo
 
-En cualquier momento, podrá crear una copia de seguridad de una instancia desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Con ella, podrá restaurar su instancia con una configuración anterior o crear una nueva.
+En cualquier momento, podrá crear una copia de seguridad de una instancia desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Con ella, podrá restaurar su instancia con una configuración anterior o crear una nueva.
 
 **Solo con unos clics, obtendrá una copia de seguridad de una instancia de Public Cloud.**
 
 ## Requisitos
 
 - [Haber creado una instancia de Public Cloud desde su cuenta de cliente](../crear_una_instancia_desde_el_area_de_cliente_de_ovh/).
-- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 ## Procedimiento
 
 ### Crear una copia de seguridad de una instancia
 
-Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}seleccione la pestaña Public Cloud y luego, a la sección`Instancias`{.action}.
+Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}seleccione la pestaña Public Cloud y luego, a la sección`Instancias`{.action}.
 
 Haga clic en los `...`{.action} a la derecha de la instancia seleccionada y por último, en `Crear un backup`{.action}.
 

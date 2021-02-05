@@ -17,7 +17,7 @@ OVHcloud ha desarrollado para sus clientes el plugin OVHcloud Network para ofrec
 ## Requisitos
 
 - Tener una solución [Hosted Private Cloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 - Tener un bloque de direcciones IP asociado a su Hosted Private Cloud.
 - Tener acceso a la interfaz vSphere.
 
@@ -52,7 +52,7 @@ El registro inverso aparecerá en la tabla.
 
 > [!primary]
 >
-> Este proceso de configuración también está disponible desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager). 
+> Este proceso de configuración también está disponible desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). 
 > 
 
 ## Más información
