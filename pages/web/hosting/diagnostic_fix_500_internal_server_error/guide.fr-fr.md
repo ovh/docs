@@ -29,9 +29,10 @@ Elles proviennent aussi parfois d'une mise à jour effectuée automatiquement pa
 
 ## En pratique
 
-Avant de poursuivre, vérifiez votre site sur plusieurs appareils et navigateurs, afin de vérifier que la même anomalie apparaît bien dans toutes ces situations.
+Avant de poursuivre, vérifiez tout d'abord votre site sur plusieurs appareils et navigateurs. Si l'erreur 500 apparaît dans une partie seulement de ces tests, faites  vérifier les appareils concernés par un prestataire informatique local.
 
 Effectuer une restauration de votre site est une solution tout à fait envisageable. Toutefois, il reste préférable de réaliser un diagnostic approfondi, afin de déterminer l'origine précise de l'erreur 500 et éviter qu'elle réapparaisse.
+
 Mode développement / PHP
 
 Logs
