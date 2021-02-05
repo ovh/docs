@@ -42,7 +42,7 @@ Per visualizzare i costi, in crediti, per l’invio dei tuoi SMS in base alle lo
 
 Per disporre sempre di credito sufficiente sul tuo account SMS, è possibile e attivare la ricarica automatica. Non appena viene raggiunta la soglia minima di crediti rimanenti, un nuovo numero di crediti viene automaticamente aggiunto al tuo account SMS.
 
-Per attivare la ricarica automatica, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sulla scheda `Telecom`{.action} e poi sulla sezione `SMS`{.action} nel menu a sinistra. Seleziona l’account SMS su cui attivare la ricarica automatica.
+Per attivare la ricarica automatica, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sulla scheda `Telecom`{.action} e poi sulla sezione `SMS`{.action} nel menu a sinistra. Seleziona l’account SMS su cui attivare la ricarica automatica.
 
 Clicca sul menu `Opzioni`{.action} (1) e poi su Ricarica automatica`{.action} (2).
 

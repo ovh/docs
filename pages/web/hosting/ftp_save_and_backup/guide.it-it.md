@@ -17,7 +17,7 @@ Le soluzioni di hosting Web OVH includono uno spazio di storage in cui è possib
 ## Prerequisiti
 
 - Disporre di un piano di [hosting Web OVH]({ovh_www}/hosting-web/){.external} (escluso il servizio Cloud Web)
-- In base al metodo utilizzato, disporre dell’accesso alla gestione della soluzione di hosting Web dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} o della password FTP per accedere allo spazio di storage 
+- In base al metodo utilizzato, disporre dell’accesso alla gestione della soluzione di hosting Web dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o della password FTP per accedere allo spazio di storage 
 
 ## Procedura
 
@@ -46,7 +46,7 @@ Una volta scelto il metodo di ripristino più adatto alle tue esigenze, prosegui
 
 ### Ripristina i dati dello storage dallo Spazio Cliente OVH
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} nel menu a sinistra e, nella scheda `FTP - SSH`{.action}, clicca sul pulsante `Ripristina un backup`{.action}.
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} nel menu a sinistra e, nella scheda `FTP - SSH`{.action}, clicca sul pulsante `Ripristina un backup`{.action}.
 
 ![backupftp](images/backupftp-step1.png){.thumbnail}
 
@@ -85,7 +85,7 @@ Per prima cosa, definisci quale software o interfaccia utilizzerai per accedere 
 
 - **Cyberduck**: il download di questo client è disponibile dal sito ufficiale. Per maggiori informazioni consulta la nostra [guida all’utilizzo di Cyberduck (MAC)](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_allutilizzo_di_cyberduck_mac/){.external}, tenendo però presente che non si sostituisce alla documentazione ufficiale del software.
 
-- **FTP Explorer**: questa interfaccia è disponibile nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}: seleziona il tuo servizio nella sezione `Hosting`{.action} del menu a sinistra, clicca sulla scheda `FTP - SSH`{.action} e poi sul pulsante `FTP Explorer`{.action}.
+- **FTP Explorer**: questa interfaccia è disponibile nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}: seleziona il tuo servizio nella sezione `Hosting`{.action} del menu a sinistra, clicca sulla scheda `FTP - SSH`{.action} e poi sul pulsante `FTP Explorer`{.action}.
 
 A questo punto, prosegui con lo step successivo.
 

@@ -17,7 +17,7 @@ La soluzione MX Plan di OVH permette di usufruire di una o più caselle email pe
 ## Prerequisiti
 
 - Disporre di una soluzione MX Plan (il servizio è disponibile con un piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}, un [hosting gratuito Start 10M](https://www.ovh.it/domini/offerta_hosting_start10m.xml){.external} o una soluzione MX Plan ordinata separatamente)
-- A seconda del metodo scelto, avere accesso alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} o alla [Webmail](https://www.ovh.it/mail/){.external} <i>Outlook on the web</i>
+- A seconda del metodo scelto, avere accesso alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o alla [Webmail](https://www.ovh.it/mail/){.external} <i>Outlook on the web</i>
 
 > [!primary]
 >
@@ -26,7 +26,7 @@ La soluzione MX Plan di OVH permette di usufruire di una o più caselle email pe
 
 ## Procedura
 
-In base alla data di attivazione o in caso di [recente migrazione del servizio](https://www.ovh.it/mxplan-migration/){.external}, la versione disponibile sarà differente. Per verificare quella attiva accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e, nella sezione `E-mail`{.action} nel menu a sinistra, seleziona il dominio a cui risulta associata la soluzione MX Plan. Prosegui nella lettura di questa guida in base alla versione di cui disponi.
+In base alla data di attivazione o in caso di [recente migrazione del servizio](https://www.ovh.it/mxplan-migration/){.external}, la versione disponibile sarà differente. Per verificare quella attiva accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e, nella sezione `E-mail`{.action} nel menu a sinistra, seleziona il dominio a cui risulta associata la soluzione MX Plan. Prosegui nella lettura di questa guida in base alla versione di cui disponi.
 
 |Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
 |---|---|

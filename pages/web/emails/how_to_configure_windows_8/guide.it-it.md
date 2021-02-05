@@ -47,7 +47,7 @@ Nella finestra che appare, inserisci le informazioni richieste:
 
 Indirizzo di posta: il tuo indirizzo email OVH completo
 
-Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager)
+Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 Clicca su Connetti per continuare.
 
@@ -105,7 +105,7 @@ Ecco le informazioni necessarie alla configurazione di un account email POP.
 Configurazione POP con protocollo SSL attivato o disattivato:
 
 Indirizzo email: il tuo indirizzo email completo.
-Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager).
+Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 Nome utente: il tuo indirizzo email completo.
 Server in entrata: il server di posta in arrivo, SSL0.OVH.NET.
 Porta del server in entrata: 995 o 110
@@ -130,7 +130,7 @@ Ecco le informazioni necessarie alla configurazione di un account email IMAP.
 Configurazione IMAP con protocollo SSL attivato o disattivato:
 
 Indirizzo email: il tuo indirizzo email completo.
-Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager).
+Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 Nome utente: il tuo indirizzo email completo.
 Server in entrata: il server di posta in arrivo, SSL0.OVH.NET.
 Porta del server in entrata:993 o 143.

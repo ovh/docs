@@ -25,7 +25,7 @@ Per proteggere la propria infrastruttura e i server dei propri clienti, OVH prop
 ## Prerequisiti
 
 - Disporre di un servizio OVH compatibile con il Firewall Network ([server dedicati](https://www.ovh.it/server_dedicati/){.external}, [VPS](https://www.ovh.it/vps/){.external}, [istanze Public Cloud](https://www.ovh.it/public-cloud/istanze/){.external}, [Private Cloud](https://www.ovh.it/private-cloud/){.external}, [IP Failover](https://www.ovh.it/server_dedicati/ip_failover.xml){.external}, ecc...).
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 
 ## Procedura
@@ -37,7 +37,7 @@ Per proteggere la propria infrastruttura e i server dei propri clienti, OVH prop
 > Il Firewall Network protegge gli IP associati a una macchina. Non è quindi possibile effettuare una configurazione globale del server, ma sarà necessario eseguirne una per ciascun IP separatamente.
 > 
 
-Dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, nella sezione `Dedicato`{.action} > `IP`{.action}, clicca sul pulsante `...`{.action} a destra dell’IPv4 in questione e seleziona `Crea Firewall`{.action}:
+Dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, nella sezione `Dedicato`{.action} > `IP`{.action}, clicca sul pulsante `...`{.action} a destra dell’IPv4 in questione e seleziona `Crea Firewall`{.action}:
 
 ![Attivazione del Firewall Network](images/firewall_creation.png){.thumbnail}
 

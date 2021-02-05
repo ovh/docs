@@ -25,7 +25,7 @@ I nostri servizi di hosting Web sono compatibili con alcuni dei più diffusi sis
 ## Prerequisiti
 
 - Disporre di una soluzione hosting Web
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
@@ -33,7 +33,7 @@ I nostri servizi di hosting Web sono compatibili con alcuni dei più diffusi sis
 > [!primary]
 >**Installazione automatica**
 >
->Con pochi click è possibile installare automaticamente un CMS dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).  Per farlo, prosegui nella lettura di questa guida: 
+>Con pochi click è possibile installare automaticamente un CMS dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).  Per farlo, prosegui nella lettura di questa guida: 
 >
 >[Installare i moduli in 1 click OVHcloud](https://docs.ovh.com/it/hosting/hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/)
 >

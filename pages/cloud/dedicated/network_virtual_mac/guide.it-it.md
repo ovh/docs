@@ -18,14 +18,14 @@ OVH ti permette di associare un indirizzo MAC virtuale a un indirizzo IP al fine
 
 * Possedere un [server dedicato](https://www.ovh.it/server_dedicati/){.external}
 * Disporre di un [indirizzo IP Failover](https://www.ovh.it/server_dedicati/ip_failover.xml){.external} o di un blocco IP Failover (RIPE)
-* Essere connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Essere connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 
 ## Procedura
 
 ### Assegna un indirizzo MAC
 
-Una volta connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, accedi al menu `Dedicato`{.action} e clicca sulla sezione `IP`{.action} nella colonna a sinistra.
+Una volta connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al menu `Dedicato`{.action} e clicca sulla sezione `IP`{.action} nella colonna a sinistra.
 
 ![IPFO](images/virtual_mac_01.png){.thumbnail}
 
@@ -57,7 +57,7 @@ Nella finestra di dialogo, seleziona il tipo di indirizzo dal menu a tendina, in
 > La rimozione di un indirizzo MAC è definitiva e non sarà quindi più possibile recuperarlo in seguito.
 > 
 
-Per eliminare un indirizzo MAC virtuale associato a un IP Failover, collegati al tuo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, accedi al menu `Dedicato`{.action} e clicca sulla sezione `IP`{.action} nella colonna a sinistra. Seleziona il server per visualizzare gli IP Failover o i blocchi IP associati.
+Per eliminare un indirizzo MAC virtuale associato a un IP Failover, collegati al tuo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al menu `Dedicato`{.action} e clicca sulla sezione `IP`{.action} nella colonna a sinistra. Seleziona il server per visualizzare gli IP Failover o i blocchi IP associati.
 
 Infine clicca sul pulsante `...`{.action} sulla destra e seleziona la voce `Elimina un MAC virtuale`{.action}.
 

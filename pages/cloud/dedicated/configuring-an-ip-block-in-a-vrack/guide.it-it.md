@@ -20,7 +20,7 @@ Oltre a consentire un indirizzamento IP privato, la [vRack](https://www.ovh.it/s
 * Aver selezionato un intervallo di indirizzi IP privati
 * Disporre di un [server compatibile con la vRack](https://www.ovh.it/server_dedicati/){.external}
 * Aver attivato un servizio [vRack](https://www.ovh.it/soluzioni/vrack/){.external}
-* Essere connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Essere connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 
 ## Procedura

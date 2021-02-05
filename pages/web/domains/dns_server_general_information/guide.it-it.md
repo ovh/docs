@@ -20,8 +20,8 @@ Si può quindi affermare che i record salvati su server DNS permettono ai domini
 ## Prerequisiti
 
 - Disporre di un [dominio](https://www.ovh.it/domini/){.external} registrato in OVH
-- Disporre delle [autorizzazioni per la gestione](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/){.external} del dominio dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Disporre delle [autorizzazioni per la gestione](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/){.external} del dominio dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 > [!warning]
 >
@@ -47,7 +47,7 @@ Attenzione:
 
 ### Step 1: accedi alla gestione dei server DNS del dominio
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Domini`{.action} della colonna a sinistra e clicca sulla scheda `Server DNS`{.action}.
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Domini`{.action} della colonna a sinistra e clicca sulla scheda `Server DNS`{.action}.
 
 Visualizzi una tabella con tutti i server DNS OVH configurati per il tuo dominio. A ogni riga corrisponde un server DNS. 
 
@@ -70,7 +70,7 @@ Una volta inserite tutte le informazioni, clicca su `Applica la configurazione`{
 
 Una volta completata l’operazione attendi il tempo necessario alla sua elaborazione, tenendo in considerazione che: 
 
-- la modifica apportata in OVH deve essere presa in carico dall’organismo che gestisce l’estensione del tuo dominio. Lo stato di avanzamento della richiesta è disponibile nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Operazioni in corso`{.action}.
+- la modifica apportata in OVH deve essere presa in carico dall’organismo che gestisce l’estensione del tuo dominio. Lo stato di avanzamento della richiesta è disponibile nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Operazioni in corso`{.action}.
 
 - una volta applicata dall’organismo responsabile, la propagazione delle modifiche potrebbe richiedere fino a 48 ore.
 

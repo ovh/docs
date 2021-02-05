@@ -17,7 +17,7 @@ I servizi Hosted Exchange e Private Exchange offrono una gestione flessibile del
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Disporre di una soluzione [Exchange](https://www.ovh.com/fr/emails/hosted-exchange/){.external}
 
 ## Procedura
@@ -26,7 +26,7 @@ I servizi Hosted Exchange e Private Exchange offrono una gestione flessibile del
 
 #### Ordina account aggiuntivi
 
-Accedi alla sezione “Web” dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action} nel menu a sinistra.
+Accedi alla sezione “Web” dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action} nel menu a sinistra.
 
 Quindi clicca sulla scheda `Account email`{.action} e poi sul pulsante `Azioni`{.action} in alto a sinistra. Infine clicca su `Ordina account`{.action}
 
@@ -35,7 +35,7 @@ Quindi clicca sulla scheda `Account email`{.action} e poi sul pulsante `Azioni`{
 
 #### Modifica la frequenza di rinnovo dei tuoi account
 
-Accedi alla sezione “Web” dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action} nel menu a sinistra.
+Accedi alla sezione “Web” dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action} nel menu a sinistra.
 
 Dall’interfaccia di gestione del tuo servizio Exchange, clicca sul pulsante `Azioni`{.action} in alto a destra e poi su `Configura il rinnovo`{.action}. 
 
@@ -63,7 +63,7 @@ Per eliminare un account dalla tua piattaforma Hosted, è necessario, innanzitut
 
 Una volta disattivato, il tuo account sarà sospeso alla data di scadenza. Per eliminare l’indirizzo email ospitato dall’account prima della data di scadenza, è necessario ripristinarlo.
 
-Per farlo, accedi alla sezione “Web” dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action} nel menu a sinistra.
+Per farlo, accedi alla sezione “Web” dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action} nel menu a sinistra.
 
 Clicca sulla scheda `Account email`{.action} della tua piattaforma, quindi clicca sui tre puntini`...`{.action}in corrispondenza dell’account interessato e infine clicca su `Ripristina`. Una volta ripristinato, il tuo account resterà vuoto fino alla scadenza.
 
@@ -75,7 +75,7 @@ Clicca sulla scheda `Account email`{.action} della tua piattaforma, quindi clicc
 
 #### Ordina account aggiuntivi
 
-Accedi alla sezione “Web” dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action} nel menu a sinistra.
+Accedi alla sezione “Web” dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action} nel menu a sinistra.
 
 Clicca sulla scheda `Account email`{.action}, poi sul pulsante `Azioni`{.action} in alto a sinistra e infine su `Aggiungi account`{.action} L’account verrà addebitato per il mese in corso.
 
@@ -84,7 +84,7 @@ Clicca sulla scheda `Account email`{.action}, poi sul pulsante `Azioni`{.action}
 
 #### Elimina account
 
-Accedi alla sezione “Web” dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action} nel menu a sinistra.
+Accedi alla sezione “Web” dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action} nel menu a sinistra.
 
 Dalla scheda `Account email`{.action}, clicca su `...`{.action} in corrispondenza dell’account interessato e poi clicca su `Elimina`{.action}.  L’account sarà rimosso dalla piattaforma immediatamente, quindi non sarà necessario disattivarlo.
 

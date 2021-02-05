@@ -28,7 +28,7 @@ section: PHP
 ## Prerequisiti
 
 - Disporre di una [soluzione di hosting Web](https://www.ovh.it/hosting-web/){.external} con accesso SSH
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 
 ## Procedura

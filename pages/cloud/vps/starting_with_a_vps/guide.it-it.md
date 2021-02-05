@@ -24,12 +24,12 @@ Un Virtual Private Server (VPS) è un server dedicato virtualizzato. A differenz
 ## Prerequisiti
 
 - Aver ordinato un VPS sul [sito OVHcloud](https://www.ovhcloud.com/it/vps/){.external}. 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Avere a disposizione le credenziali di accesso ricevute via email dopo l’installazione
 
 ## Procedura
 
-Per visualizzare le informazioni relative al tuo VPS, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e, nella colonna di sinistra, clicca su `Bare Metal Cloud`{.action} e poi seleziona il tuo servizio sotto la voce `VPS`{.action}. 
+Per visualizzare le informazioni relative al tuo VPS, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e, nella colonna di sinistra, clicca su `Bare Metal Cloud`{.action} e poi seleziona il tuo servizio sotto la voce `VPS`{.action}. 
 
 Questa dashboard contiene informazioni importanti sul tuo servizio e ti consente di effettuare le operazioni di base. Comparirà in modo diverso a seconda della gamma del tuo VPS. 
 
