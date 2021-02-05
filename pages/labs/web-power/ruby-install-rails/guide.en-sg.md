@@ -26,7 +26,7 @@ order: 1
  }
 </style>
 
-**Dernière mise à jour le 03/02/2021**
+**Last updated 4th February 2021**
 
 ## Objective
 
@@ -41,32 +41,31 @@ This guide will explain how to do it.
 ## Requirements
 
 - A [Ruby](https://labs.ovh.com/managed-ruby) POWER web hosting plan
-- Access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
 
-If you have just started to use your Web POWER web hosting plan, we suggest you to have a look to our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.
+If you have just started to use your Web POWER web hosting plan, we suggest to have a look at our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.
 
 ## Instructions
 
-
 Let's suppose you have the default configuration for Ruby hosting:
 
-- Runtime : Ruby 2.6   
-- Entrypoint : config.ru 
-- DocumentRoot : www
+- Runtime: Ruby 2.6   
+- Entrypoint: config.ru 
+- DocumentRoot: www
 - Environment: development 
 
 > [!alert]
 >
-> Be careful, Rails depends of environment (`RAILS_ENV`)
+> Be careful, Rails depends on the environment (`RAILS_ENV`).
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint
+> To verify your configuration, you can use the [Retrieve active configuration](../getting-started-with-power-web-hosting/#api-get-active-configuration) API endpoint.
 
 
-[Access via SSH](../getting-started-with-power-web-hosting/#ssh) to your POWER web hosting.
+[Connect via SSH](../getting-started-with-power-web-hosting/#ssh) to your POWER web hosting.
 
-Delete your `DocumentRoot` to initiate it with rails (don't forget to export your `gempath` or your bundle install will failed):
+Delete your `DocumentRoot` to initiate it with rails (don't forget to export your `gempath` or your bundle install will fail):
 
 ```sh
 rm -rf www
@@ -78,7 +77,7 @@ cd www/
 rails  webpacker:install
 ```
 
-Now whitelist your domain name, in `www/config/environments/development.rb` :
+Now whitelist your domain name in `www/config/environments/development.rb`:
 
 ```ruby
 Rails.application.configure do
@@ -86,7 +85,7 @@ Rails.application.configure do
   config.hosts << "your-domain.ovh"
 ```
 
-And inactivate  `check_yarn_integrity` check under `development` section in `www/config/webpacker.yml` :
+Deactivate `check_yarn_integrity` check under section `development` in `www/config/webpacker.yml`:
 
 ```yaml
 development:
@@ -97,37 +96,37 @@ development:
   check_yarn_integrity: false
 ```
 
-Then [restart your instance](../getting-started-with-power-web-hosting/#restart), your Rails will be online.
+Then [restart your instance](../getting-started-with-power-web-hosting/#restart) and your Rails will be online.
 
 
 ![Rails](images/ruby-install-rails-01.png){.thumbnail}
 
-Now let's generate a "Hello World* with Rails: 
+Now let's generate a *Hello World* with Rails: 
 
 ```sh
 export SPRING_SERVER_COMMAND="$HOME/www/bin/spring server"
 rails generate controller demo index
 ```
 
-Create the template `app/views/demo/index.html.erb` :
+Create the template `app/views/demo/index.html.erb`:
  
- ```html
+```html
 vim app/views/demo/index.html.erb
-<h1>Hello World</h1>
-<p>Hello World from Rails</p>
+&lt;h1>Hello World&lt;/h1>
+&lt;p>Hello World from Rails&lt;/p>
 ```
 
-And build the *Hello Wolrd*:
+Build the *Hello World*:
 
 ```sh
 ./bin/webpack
 ```
 
-After another restart, your *Hello World* will be available in https://&lt;votre-nom-de-domaine>/demo/index.html
+After another restart, your *Hello World* will be available in https://<i></i>yourdomain.ovh/demo/index.html.
 
 ![Rails](images/ruby-install-rails-02.png){.thumbnail}
 
-Sortie de la console:
+Terminal output:
 
 <pre class="console"><code>~ $ rm -rf www
 
@@ -223,14 +222,13 @@ Time: 1102ms
 
 
 
-
 ### More information on Rails
 
-To get more information on Rails, go to the [official documentation site](<https://guides.rubyonrails.org).
+To get more information on Rails, go to the [official documentation site](https://guides.rubyonrails.org).
 
 
-## Going Further
+## Go further
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
 
-**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab**
+**Join [our Gitter room](https://gitter.im/ovh/power-web-hosting) to discuss directly with the POWER Web Hosting team and the other users of this lab.**
