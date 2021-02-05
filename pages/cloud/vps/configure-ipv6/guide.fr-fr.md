@@ -150,6 +150,18 @@ pre-down /sbin/ip -6 route del default via IPV6_GATEWAY dev eth0
 pre-down /sbin/ip -6 route del IPV6_GATEWAY dev eth0
 ```
 
+Voici un exemple concret :
+
+```
+iface eth0 inet6 static
+address 2001:41d0:xxx:xxxx::999
+netmask 128
+post-up /sbin/ip -6 route add 2001:41d0:xxx:xxxx::111 dev eth0
+post-up /sbin/ip -6 route add default via 2001:41d0:xxx:xxxx::111 dev eth0
+pre-down /sbin/ip -6 route del default via 2001:41d0:xxx:xxxx::111 dev eth0
+pre-down /sbin/ip -6 route del 2001:41d0:xxx:xxxx::111 dev eth0
+```
+
 Redémarrez ensuite votre service réseau avec l'une des commandes suivantes :
 
 ```bash
@@ -259,6 +271,14 @@ Modifiez ensuite le fichier `ifcfg-eth0`, en ajoutant la configuration IPv6 de v
 IPV6INIT=yes
 IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
+```
+
+Voici un exemple concret :
+
+```
+IPV6INIT=yes
+IPV6ADDR=2001:41d0:xxx:xxxx::999/128
+IPV6_DEFAULTGW=2001:41d0:xxx:xxxx::111
 ```
 
 **Sur CentOS 7, vous devez créer un fichier de routage en plus des étapes ci-dessus :**
