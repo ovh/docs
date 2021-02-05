@@ -27,7 +27,7 @@ Elles proviennent parfois d'une mise à jour effectuée automatiquement par un c
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement mutualisé](https://www.ovh.com/fr/hebergement-web/){.external}.
+- Disposer d'une [offre d'hébergement mutualisé](https://www.ovh.com/fr/hebergement-web/).
 - Votre site est hébergé sur cette offre.
 - Vous avez testé votre site sur plusieurs appareils et navigateurs et avez constaté la même anomalie.
 
@@ -37,9 +37,9 @@ Elles proviennent parfois d'une mise à jour effectuée automatiquement par un c
 
 Pour restaurer votre site à son état antérieur :
 
-• [Cliquer ici] (https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/){.external} pour restaurer le code source de votre site
-• [Cliquer ici] (https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client){.external} pour restaurer la base de données de votre site à une date antérieure.
-• Si l'erreur 500 est apparue suite à une mise à jour de la version PHP de votre hébergement : [Cliquer ici] (https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/){.external} pour revenir à la configuration précédente.
+> • [Cliquer ici](https://docs.ovh.com/fr/hosting/restauration-ftp-filezilla-espace-client/) pour restaurer le code source de votre site
+> • [Cliquer ici](https://docs.ovh.com/fr/hosting/mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client) pour restaurer la base de données de votre site à une date antérieure.
+> • Si l'erreur 500 est apparue suite à une mise à jour de la version PHP de votre hébergement : [Cliquer ici](https://docs.ovh.com/fr/hosting/configurer-le-php-sur-son-hebergement-web-mutu-2014/) pour revenir à la configuration précédente.
 
 Consultez ensuite l'onglet `Tâches en cours`{.action} dans la partie `Hébergements`{.action} de votre espace client OVHcloud, rafraîchissez votre page jusqu'à ce que plus aucune opération n'apparaisse. Effectuez ensuite un nouveau test de votre site, après avoir redémarré votre appareil.
 
