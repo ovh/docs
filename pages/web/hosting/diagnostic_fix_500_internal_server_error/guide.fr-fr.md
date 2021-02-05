@@ -6,11 +6,11 @@ excerpt: Comment résoudre les cas les plus courants d'erreurs 500
 section: Diagnostic
 ---
 
-**Dernière mise à jour le 02/02/2021**
+**Dernière mise à jour le 05/02/2021**
 
 ## Objectif
 
-![error500](error-500.png){.thumbnail}
+![error500](images/error-500.png){.thumbnail}
 
 Les erreurs 500 « Internal Server Error » peuvent concerner tout ou partie de votre site, être aléatoires ou permanentes. Elles peuvent aussi apparaître sous la forme d'une page blanche.
 
