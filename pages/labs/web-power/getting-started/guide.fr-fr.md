@@ -18,7 +18,7 @@ Retrouvez ici les principales informations relatives à la gestion de votre héb
 ## Prérequis 
 
 - Disposer d'une des 3 offres d'hébergement web POWER. [Node.js](https://labs.ovh.com/managed-nodejs), [Python](https://labs.ovh.com/managed-python) ou [Ruby](https://labs.ovh.com/managed-ruby).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} ou aux [API OVHcloud](https://api.ovh.com/).
 
 ## En pratique
 
@@ -80,7 +80,6 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 Allez dans le répertoire `www` et créez un fichier `index.js`:
 
-`index.js`
 ```javascript
 const http = require('http');
 const port = 3000;
@@ -93,7 +92,7 @@ res.end(msg);
 server.listen(port);
 ```
 
-Faites un [redémarrage de votre instance](#restart), votre *Hello World* sera en ligne.
+Faites un [redémarrage de votre instance](#restart), votre *Hello World* sera alors en ligne.
 
 ![Hello World in Node.js](images/getting-started-06.png){.thumbnail}
 
@@ -117,7 +116,6 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 Allez dans le répertoire `www` et créez un fichier `app.py`:
 
-`app.py`
 ```python
 import sys
  
@@ -133,7 +131,7 @@ def application(environ, start_response):
     return [output]    
 ```
 
-Pour appliquer ces modifications, pensez à [redémarrer votre instance](#restart).
+Pour appliquer ces modifications, pensez à [redémarrer votre instance](#restart). Votre *Hello World* sera alors en ligne.
 
 ![Hello World in Pyton](images/getting-started-07.png){.thumbnail}
 
@@ -157,7 +155,6 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 Allez dans le répertoire `www` et créez un fichier `config.ru`:
 
-`config.ru`
 ```ruby
 require 'socket'
 require 'timeout'
@@ -173,7 +170,7 @@ end
 run Application.new
 ```
 
-Pour appliquer ces modifications, pensez à [redémarrer votre instance](#restart).
+Pour appliquer ces modifications, pensez à [redémarrer votre instance](#restart). Votre *Hello World* sera alors en ligne.
 
 ![Hello World in Ruby](images/getting-started-08.png){.thumbnail}
 
@@ -197,7 +194,8 @@ Les [API OVHcloud](https://api.ovh.com/) actuellement disponibles pour l'offre d
 > @api {GET} /hosting/web/{serviceName}/configuration
 
 > Cet appel vous permet, par exemple, de vérifier votre point d'entrée
- 
+
+
 #### Modifier la configuration
 
 > [!api]
@@ -205,6 +203,7 @@ Les [API OVHcloud](https://api.ovh.com/) actuellement disponibles pour l'offre d
 > @api {PUT} /hosting/web/{serviceName}/configuration
 
 > Cet appel vous permet, par exemple, de modifier votre point d'entrée
+
 
 #### Redémarrer le service
 

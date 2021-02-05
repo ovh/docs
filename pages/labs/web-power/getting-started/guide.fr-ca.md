@@ -18,7 +18,7 @@ Retrouvez ici les principales informations relatives à la gestion de votre héb
 ## Prérequis 
 
 - Disposer d'une des 3 offres d'hébergement web POWER. [Node.js](https://labs.ovh.com/managed-nodejs), [Python](https://labs.ovh.com/managed-python) ou [Ruby](https://labs.ovh.com/managed-ruby).
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} ou aux [API OVHcloud](https://ca.api.ovh.com/).
 
 ## En pratique
 
@@ -38,7 +38,7 @@ Vous trouverez des informations complémentaires dans notre guide [Se connecter 
 
 #### Ajouter un nom de domaine
 
-Par défaut, votre hébergement web POWER est attaché à une URL automatiquement attribuée. Vous pouvez néanmoins utiliser votre propre [nom de domaine](https://www.ovh.com/fr/domaines/), en l'ajoutant depuis l'onglet `Multisite`{.action}. 
+Par défaut, votre hébergement web POWER est attaché à une URL automatiquement attribuée. Vous pouvez néanmoins utiliser votre propre [nom de domaine](https://www.ovh.com/ca/fr/domaines/), en l'ajoutant depuis l'onglet `Multisite`{.action}. 
 
 ![Adding a domain name](images/getting-started-03.png){.thumbnail}
 
@@ -78,9 +78,8 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 [Accédez via SSH](#ssh) à votre hébergement web POWER.
 
-Allez au répertoire `www` et y créez un fichier `index.js`:
+Allez dans le répertoire `www` et créez un fichier `index.js`:
 
-`index.js`
 ```javascript
 const http = require('http');
 const port = 3000;
@@ -93,7 +92,7 @@ res.end(msg);
 server.listen(port);
 ```
 
-Faites un [redémarrage de votre instance](#restart), votre *Hello World* sera en ligne.
+Faites un [redémarrage de votre instance](#restart), votre *Hello World* sera alors en ligne.
 
 ![Hello World in Node.js](images/getting-started-06.png){.thumbnail}
 
@@ -115,9 +114,8 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 [Accédez via SSH](#ssh) à votre hébergement web POWER.
 
-Allez au répertoire `www` et y créez un fichier `app.py`:
+Allez dans le répertoire `www` et créez un fichier `app.py`:
 
-`app.py`
 ```python
 import sys
  
@@ -133,7 +131,7 @@ def application(environ, start_response):
     return [output]    
 ```
 
-Pour appliquer ces modifications, pensez à [redémarrer votre instance](#restart).
+Pour appliquer ces modifications, pensez à [redémarrer votre instance](#restart). Votre *Hello World* sera alors en ligne.
 
 ![Hello World in Pyton](images/getting-started-07.png){.thumbnail}
 
@@ -152,11 +150,11 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 >
 > Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](#api-get-active-configuration)
 
+
 [Accédez via SSH](#ssh) à votre hébergement web POWER.
 
-Allez au répertoire `www` et y créez un fichier `config.ru`:
+Allez dans le répertoire `www` et créez un fichier `config.ru`:
 
-`config.ru`
 ```ruby
 require 'socket'
 require 'timeout'
@@ -172,7 +170,7 @@ end
 run Application.new
 ```
 
-Pour appliquer ces modifications, pensez à [redémarrer votre instance](#restart).
+Pour appliquer ces modifications, pensez à [redémarrer votre instance](#restart). Votre *Hello World* sera alors en ligne.
 
 ![Hello World in Ruby](images/getting-started-08.png){.thumbnail}
 
@@ -180,7 +178,7 @@ Pour appliquer ces modifications, pensez à [redémarrer votre instance](#restar
 
 Si vous n'êtes pas déjà familiarisé avec le fonctionnement des API OVHcloud, consultez le guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/).
 
-Les [API OVHcloud](https://api.ovh.com/) actuellement disponibles pour l'offre d'hébergement POWER sont les suivantes :
+Les [API OVHcloud](https://ca.api.ovh.com/) actuellement disponibles pour l'offre d'hébergement POWER sont les suivantes :
 
 #### Lister les configurations disponibles
 
@@ -196,7 +194,8 @@ Les [API OVHcloud](https://api.ovh.com/) actuellement disponibles pour l'offre d
 > @api {GET} /hosting/web/{serviceName}/configuration
 
 > Cet appel vous permet, par exemple, de vérifier votre point d'entrée
- 
+
+
 #### Modifier la configuration
 
 > [!api]
@@ -204,6 +203,7 @@ Les [API OVHcloud](https://api.ovh.com/) actuellement disponibles pour l'offre d
 > @api {PUT} /hosting/web/{serviceName}/configuration
 
 > Cet appel vous permet, par exemple, de modifier votre point d'entrée
+
 
 #### Redémarrer le service
 
