@@ -97,30 +97,45 @@ ln -fs server/index.js index.js
 
 Sortie de la console:
 
-<pre class="console"><code> ~ $ rm -rf www
+<pre class="console"><code> ~ $ cd  www
 
-~ $ npx create-strapi-app www --quickstart --no-run
-npx : 91 installé(s) en 6.741s
-Creating a new Strapi application at /home/user/www.
-Creating a quickstart project.
-Creating files.
-Dependencies installed successfully.
-[...]
+~/www $ wget https://github.com/Requarks/wiki/releases/download/2.5.170/wiki-js.tar.gz
+--2021-02-03 14:50:23--  https://github.com/Requarks/wiki/releases/download/2.5.170/wiki-js.tar.gz
+Resolving github.com (github.com)… 140.82.121.4
+Connecting to github.com (github.com)|140.82.121.4|:443… connecté.
+TTP request sent, awaiting response... 200 OK
+Length: 65010291 (62M) [application/octet-stream]
+Saving to: « wiki-js.tar.gz »
 
-~ $ cat << 'EOF' > www/index.js
-const strapi = require('strapi');
+wiki-js.tar.gz                100%[===============================================>]  62,00M  19,9MB/s    ds 3,1s
+
+2021-02-03 14:50:28 (19,9 MB/s) — « wiki-js.tar.gz » saved [65010291/65010291]
+
+~/www $ tar xzf wiki-js.tar.gz
+
+~/www $ rm -f wiki-js.tar.gz
+
+~/www $ vi config.yml
+port: 3000
+db:
+  type: sqlite
+  storage: database.sqlite
+logLevel: info
+dataPath: ./data
  
-strapi(/* {...} */).start();
-EOF
-~ $ cat << 'EOF' > www/.htaccess
-RewriteCond %{ENV:HTTPS} !on
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-EOF
+~/www $ npm rebuild sqlite3 
+> sqlite3@5.0.0 install /home/user/www/node_modules/sqlite3
+> node-pre-gyp install --fallback-to-build 
+node-pre-gyp WARN Using request for node-pre-gyp https download
+[sqlite3] Success: "/home/user/www/node_modules/sqlite3/lib/binding/napi-v3-linux-x64/node_sqlite3.node" already installed
+Pass --update-binary to reinstall or --build-from-source to recompile
+sqlite3@5.0.0 /home/user/www/node_modules/sqlite3 
+ 
+~/www $ ln -fs server/index.js index.js
 
 ~/www $ mkdir -p tmp
 
 ~/www $ touch tmp/restart.txt
-
 </code></pre>
 
 
