@@ -13,7 +13,6 @@ section: Diagnostic
 
 Les erreurs 500 « Internal Server Error » peuvent concerner tout ou partie de votre site, être aléatoires ou permanentes. Elles peuvent aussi apparaître sous la forme d'une page blanche.
 
-
 ![error500](images/error-500.png)
 
 Elles proviennent aussi parfois d'une mise à jour effectuée **automatiquement** par un composant de votre site et donc survenir sans action de votre part.
@@ -43,13 +42,13 @@ Consultez tout d'abord ce [guide](../mutualise-consulter-les-statistiques-et-les
 
 ### Passez votre site en mode développement
 
-Passez ensuite votre hébergement en mode "développement", afin de faire apparaître d'éventuelles erreurs PHP, en suivant ces [indications](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#etape-2-modifier-la-configuration-de-lhebergement-web).
+Passez ensuite votre hébergement en mode `développement`, afin de faire apparaître d'éventuelles erreurs PHP, en suivant ces [indications](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#etape-2-modifier-la-configuration-de-lhebergement-web).
 
 ### Testez le fichier .htaccess
 
 Une erreur 500 peut aussi être liée à une erreur dans le fichier `.htaccess`. 
 
-Pour le vérifier, connectez-vous en FTP à votre hébergement : <https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/>.
+Pour le vérifier, [connectez-vous en FTP](../connexion-espace-stockage-ftp-hebergement-web/) à votre hébergement.
 
 Puis renommez ce fichier en `.htaccess.old` et retestez votre site. 
 
@@ -86,6 +85,7 @@ Pour restaurer le code source de votre site, consultez [Restaurer l’espace de 
 Si votre site comporte une base de données, consultez [Restaurer une sauvegarde de votre base de données](../mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client), afin de la restaurer à une date antérieure.
 
 Si l'erreur 500 est apparue enfin suite à une mise à jour de la version PHP de votre hébergement [Configurer le PHP sur son hébergement](../configurer-le-php-sur-son-hebergement-web-mutu-2014/) pour revenir à la configuration précédente.
+
 
 ## Aller plus loin
 
