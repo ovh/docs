@@ -29,8 +29,6 @@ Elles proviennent parfois d'une mise à jour effectuée automatiquement par un c
 
 ## En pratique
 
-### Vérifiez les caches de votre appareil
-
 Testez votre site sur plusieurs appareils et navigateurs, afin de vérifier que la même anomalie.
 
 ### Restaurez votre site à son état antérieur
