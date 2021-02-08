@@ -19,7 +19,7 @@ Das HA-NAS-Angebot ist in den französischen Rechenzentren (Roubaix, Straßburg,
 
 ### Kann der HA-NAS über eine Konfigurationsschnittstelle verwaltet werden?
 
-Ja, die Konfiguration erfolgt über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager) im Bereich `Cloud` unter `Plattformen und Dienstleistungen`.
+Ja, die Konfiguration erfolgt über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Bereich `Cloud` unter `Plattformen und Dienstleistungen`.
 
 ### Ist es möglich, die Gesamtkapazität meines NAS zu erhöhen?
 
@@ -47,7 +47,7 @@ Die Festplatten Ihres HA-NAS stehen ausschließlich Ihnen zur Verfügung. Die ü
 
 ### Für welchen Zeitraum kann ich einen HA-NAS abonnieren?
 
-Die angebotenen Vertragslaufzeiten sind 1, 3, 6 und 12 Monate. Am Ende jeder Vertragslaufzeit wird Ihr Abonnement automatisch verlängert, wenn keine Kündigung eingegangen ist. Sie können das Abonnement jederzeit über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} kündigen.
+Die angebotenen Vertragslaufzeiten sind 1, 3, 6 und 12 Monate. Am Ende jeder Vertragslaufzeit wird Ihr Abonnement automatisch verlängert, wenn keine Kündigung eingegangen ist. Sie können das Abonnement jederzeit über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} kündigen.
 
 ### Ist die bei der Bestellung angezeigte Kapazität auch tatsächlich nutzbar?
 Wie bei den meisten Storage-Lösungen unterscheidet sich die theoretische Kapazität geringfügig von der tatsächlich nutzbaren Kapazität, da ein Teil für den Betrieb der Festplatte benötigt wird:
@@ -140,7 +140,7 @@ Sie können die Snapshot-Frequenz in Ihrem Kundencenter einstellen und haben fol
 - wöchentlich 
 
 
-Sie können auch jederzeit manuelle Snapshots erstellen, zeitlich unbegrenzt speichern oder löschen. Diese Funktion ist über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} oder über die [API](https://api.ovh.com/){.external} verfügbar:
+Sie können auch jederzeit manuelle Snapshots erstellen, zeitlich unbegrenzt speichern oder löschen. Diese Funktion ist über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} oder über die [API](https://api.ovh.com/){.external} verfügbar:
 
 > [!api]
 >

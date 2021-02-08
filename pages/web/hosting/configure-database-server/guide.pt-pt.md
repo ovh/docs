@@ -17,13 +17,13 @@ Os servidores de bases de dados SQL Privado e Cloud Databases oferecem-lhe a pos
 ## Requisitos
 
 - Dispor de um [serviço de alojamento SQL Privado](https://www.ovh.pt/alojamento-partilhado/opcoes-sql.xml){.external} ou de [Cloud Databases](https://www.ovh.pt/cloud-databases/){.external}.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
 ### Visualizar as informações gerais do servidor de bases de dados
 
-Na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, no menu à esquerda, aceda à secção `Bases de dados`{.action} e clique na instância SQL que pretende configurar. Certifique-se de que está no separador `Informações gerais`{.action}.
+Na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, no menu à esquerda, aceda à secção `Bases de dados`{.action} e clique na instância SQL que pretende configurar. Certifique-se de que está no separador `Informações gerais`{.action}.
 
 Esta secção apresenta as informações essenciais da instância SQL. Sugerimos que dedique alguns minutos para verificar se estão corretas ou se correspondem às indicações descritas a abaixo.
 
@@ -43,7 +43,7 @@ Esta secção apresenta as informações essenciais da instância SQL. Sugerimos
 
 Para que o acesso à sua instância CloudDB funcione, é obrigatório indicar os IP ou intervalos de IP que podem conectar-se às suas bases de dados.
 
-Na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, no menu à esquerda, aceda à secção `Bases de dados`{.action} e clique na instância SQL em causa. 
+Na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, no menu à esquerda, aceda à secção `Bases de dados`{.action} e clique na instância SQL em causa. 
 
 Clique no separador `IP autorizados`{.action} e a seguir no botão `Adicionar um endereço IP/máscara`{.action}.
 
@@ -73,7 +73,7 @@ Depois de obter o número do cluster em que está o seu alojamento, consulte a p
 
 ### Modificar a solução do servidor de bases de dados
 
-Para modificar a solução do servidor de bases de dados, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados.
+Para modificar a solução do servidor de bases de dados, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados.
 No separador **«Informações gerais»**, que aparece de forma predefinida, clique em `...`{.action} à direita da menção «RAM» e, depois, em `Alterar o volume de RAM`{.action} de modo a proceder à encomenda desta modificação.
 
 ![sql-privado](images/private-sql-order-ram01.png){.thumbnail}
@@ -98,7 +98,7 @@ Após a validação dos contratos, será reencaminhado para a ordem de encomenda
 
 ### Alterar a configuração do servidor de bases de dados
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor SQL Privado. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor SQL Privado. 
 
 #### Instância MySQL e MariaDB
 
@@ -190,7 +190,7 @@ show variables like "version";
 
 Isto permite-lhe visualizar o tempo de execução dos pedidos no servidor de bases de dados nas últimas 24 horas.
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados. 
 
 Aceda ao separador `Métricas` do servidor de bases de dados. Vai encontrar o gráfico **«Estatísticas do tempo de execução dos pedidos»**.
 
@@ -204,7 +204,7 @@ Aceda ao separador `Métricas` do servidor de bases de dados. Vai encontrar o gr
 
 Estes logs, chamados **«slow-query.log»**, podem ser obtidos na raiz do espaço SFTP do servidor de bases de dados. 
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados. 
 
 No separador `Informações gerais`, vai encontrar a secção **«SFTP»** no quadro **«Informações de conexão»**.
 
@@ -217,7 +217,7 @@ Se o ficheiro estiver vazio, isso revela a inexistência de pedidos lentos.
 
 #### Acompanhar a RAM consumida
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados. 
 
 Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **«Estatísticas de memória RAM utilizada»**.
 
@@ -227,7 +227,7 @@ Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **�
 
 Este gráfico permite acompanhar, relativamente às últimas 24 horas, o volume de conexões por minuto no servidor de bases de dados.
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados. 
 
 Aceda ao separador `Métricas` da Área de Cliente. Vai encontrar o gráfico **«Estatísticas do total de conexões por minuto»**.
 

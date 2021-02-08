@@ -16,7 +16,7 @@ When you install Windows Server on a [VPS](https://www.ovhcloud.com/en-ca/vps/){
 ## Requirements
 
 * a [VPS](https://www.ovhcloud.com/en-ca/vps/){.external} with Windows Server installed
-* access to the OVH [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* access to the OVH [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 
 ## Instructions
 

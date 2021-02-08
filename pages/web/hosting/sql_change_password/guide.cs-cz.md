@@ -18,7 +18,7 @@ Databáze umožňuje ukládání tzv. dynamických prvků (uživatelé, komentá
 ## Prerekvizity
 
 - Některý z [webhostingových balíčků OVH](https://www.ovh.cz/webhosting){.external}.
-- Dostatečná oprávnění k provádění úprav v konfiguraci služby prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostatečná oprávnění k provádění úprav v konfiguraci služby prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 > [!warning]
 >
@@ -42,7 +42,7 @@ Databáze jsou v současné době využívány většinou systémů pro správu 
 
 ### Fáze 2: Přístup do rozhraní pro správu databází
 
-Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. Poté přejděte do záložky `Databáze`{.action}.
+Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. Poté přejděte do záložky `Databáze`{.action}.
 
 Tabulka obsahuje přehled všech databází vytvořených na příslušném webhostingu.
 

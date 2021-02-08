@@ -18,13 +18,13 @@ Utilizzati dalla maggior parte dei sistemi di gestione dei contenuti (Content Ma
 
 - Disporre di una soluzione di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}
 - Disporre di un database creato nell’ambito di una soluzione di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}
-- In base al metodo di backup scelto, avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} o disporre dei dati di connessione al database
+- In base al metodo di backup scelto, avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o disporre dei dati di connessione al database
 
 ## Procedura
 
 Prima di iniziare, è necessario indicare il metodo con cui intendi recuperare il backup del database. A seconda delle tue competenze tecniche a riguardo, puoi utilizzare diversi metodi:
 
-- **strumento di backup di OVH**: grazie a questo tool è possibile recuperare i backup direttamente dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. È la soluzione più semplice, perché non richiede particolari competenze tecniche.
+- **strumento di backup di OVH**: grazie a questo tool è possibile recuperare i backup direttamente dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. È la soluzione più semplice, perché non richiede particolari competenze tecniche.
 
 - **interfaccia Web phpMyAdmin**: questa soluzione richiede la conoscenza dell’applicazione Web phpMyAdmin e della sua interfaccia di gestione.
 
@@ -45,7 +45,7 @@ Continua la lettura in base al metodo di backup scelto.
 
 ### Strumento di backup di OVH
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Da questa pagina è possibile scegliere se creare un nuovo backup o ripristinarne uno esistente.
 
@@ -78,7 +78,7 @@ Per effettuare il download, clicca sui tre puntini in corrispondenza del backup 
 
 ### Interfaccia Web phpMyAdmin
 
-Per recuperare il link di accesso a phpMyAdmin accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
+Per recuperare il link di accesso a phpMyAdmin accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database di cui vuoi effettuare il backup e seleziona `Accedi a phpMyAdmin`{.action}.
 

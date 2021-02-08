@@ -20,7 +20,7 @@ La tecnología vRack (rack virtual) permite agrupar virtualmente varios servidor
 - Tener un [vRack](https://www.ovh.es/soluciones/vrack/){.external}.
 - Disponer de al menos dos [servidores compatibles con el vRack](https://www.ovh.es/servidores_dedicados/){.external}.
 - Estar conectado por SSH (o a través de una interfaz gráfica) al servidor Linux (con acceso *root*).
-- Tener acceso al [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Tener acceso al [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 - Tener un rango de direcciones IP privadas.
 
 
@@ -28,7 +28,7 @@ La tecnología vRack (rack virtual) permite agrupar virtualmente varios servidor
 
 ### Añadir los servidores al vRack
 
-1. Una vez que haya añadido el vRack a su cuenta, acceda a la sección `Cloud`{.action} del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+1. Una vez que haya añadido el vRack a su cuenta, acceda a la sección `Cloud`{.action} del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 2. En la columna izquierda, haga clic en `vRack`{.action} y seleccione el vRack.
 4. En la lista de servicios compatibles, seleccione los servidores que quiera añadir al vRack y haga clic en el botón `Añadir`{.action}.
 

@@ -17,13 +17,13 @@ When you install or reinstall a Windows operating system, all account have a def
 ## Requirements
 
 - A [dedicated server](https://www.ovh.com.au/dedicated-servers/){.external} with Windows installed.
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
 
 ## Instructions
 
 ### Using the IPMI
 
-First, log into your server's page in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Once there, select the `IPMI`{.action} tab.
+First, log into your server's page in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}. Once there, select the `IPMI`{.action} tab.
 
 > [!primary]
 >
@@ -46,7 +46,7 @@ Your password has now been changed. You can now once again access the server usi
 
 ### Using Rescue Mode
 
-First, boot your server into [rescue mode](../ovh-rescue/){.external} using the WinRescue boot environment. Once the server has rebooted, log in using a VNC viewer or select the `IPMI`{.action} tab on your server's page in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. 
+First, boot your server into [rescue mode](../ovh-rescue/){.external} using the WinRescue boot environment. Once the server has rebooted, log in using a VNC viewer or select the `IPMI`{.action} tab on your server's page in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}. 
 
 Next, open the NTPWdi tool. If it does not appear there, you can download a copy [here](http://cdslow.org.ru/files/ntpwedit/ntpwed07.zip){.external}
 

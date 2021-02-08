@@ -61,7 +61,7 @@ Následně budete požádáni o zadání následujících informací:
 |Informace|Popis|
 |---|---|
 |E-mail|Toto pole by již mělo být vyplněno. Pokud tomu tak není, zadejte celou e-mailovou adresu.|
-|Server|Zadejte server, na kterém je Vaše služba Exchange hostována. Informace o serveru naleznete ve svém [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (záložka `Obecné informace`{.action}, box `Připojení`{.action} u příslušné služby Exchange).|
+|Server|Zadejte server, na kterém je Vaše služba Exchange hostována. Informace o serveru naleznete ve svém [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} (záložka `Obecné informace`{.action}, box `Připojení`{.action} u příslušné služby Exchange).|
 |Doména|Ponechte prázdné.|
 |Uživatel|Zadejte celou e-mailovou adresu.|  
 |Heslo|Toto pole by již mělo být vyplněno. Pokud tomu tak není, zadejte heslo ke své e-mailové adrese.|

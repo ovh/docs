@@ -18,14 +18,14 @@ OVH umożliwia Ci powiązanie wirtualnego adresu MAC z adresem IP, abyś mógł 
 
 * Posiadanie [serwera dedykowanego](https://www.ovh.pl/serwery_dedykowane/){.external}
 * Posiadanie [adresu IP Failover](https://www.ovh.pl/serwery_dedykowane/ip_failover.xml){.external} lub bloku IP Failover (RIPE)
-* Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 
 ## W praktyce
 
 ### Przypisanie adresu MAC
 
-Po zalogowaniu się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} kliknij menu `Dedykowane`{.action}, po czym kliknij sekcję `IP`{.action} w kolumnie po lewej stronie.
+Po zalogowaniu się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} kliknij menu `Dedykowane`{.action}, po czym kliknij sekcję `IP`{.action} w kolumnie po lewej stronie.
 
 ![IPFO](images/virtual_mac_01.png){.thumbnail}
 
@@ -57,7 +57,7 @@ Po wyświetleniu okna dialogowego "Dodaj wirtualny adres MAC" wybierz typ adresu
 > Usunięcie adresu MAC jest nieodwracalne, nie jest możliwe jego późniejsze przywrócenie.
 > 
 
-Aby usunąć wirtualny adres MAC powiązany z IP Failover, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, następnie przejdź do menu `Dedykowane`{.action} i sekcji `IP`{.action}. Wybierz odpowiedni serwer, aby wyświetliły się powiązane z nim adresy IP Failover (lub blok IP).
+Aby usunąć wirtualny adres MAC powiązany z IP Failover, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, następnie przejdź do menu `Dedykowane`{.action} i sekcji `IP`{.action}. Wybierz odpowiedni serwer, aby wyświetliły się powiązane z nim adresy IP Failover (lub blok IP).
 
 Aby zakończyć, kliknij przycisk `...`{.action} po prawej stronie, po czym kliknij `Usuń wirtualny adres MAC`{.action}.
 

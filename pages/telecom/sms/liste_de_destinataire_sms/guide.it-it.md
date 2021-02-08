@@ -55,7 +55,7 @@ Il risultato ottenuto dovrebbe essere di questo tipo:
 
 ### Step 2: accedi all'interfaccia
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e seleziona `Telecom`. Quindi seleziona `SMS`{.action} nel menu a sinistra.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Telecom`. Quindi seleziona `SMS`{.action} nel menu a sinistra.
 
 Infine clicca sull’account SMS in questione.
 

@@ -15,7 +15,7 @@ Mit Real Time Monitoring (RTM) können Sie Ihren Server und seine Aktivitäten i
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben administrativen Zugriff (Root) über SSH (oder über die grafische Benutzeroberfläche) auf Ihren Server.
 
 

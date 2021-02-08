@@ -17,7 +17,7 @@ Considering best practices, OVHcloud Public Cloud instances require a different 
 ## Requirements
 
 - a [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 
 ## Instructions
@@ -144,7 +144,7 @@ Regardless of the method that was used to create the SSH keys, you will now have
 Stored SSH keys are useful for a faster creation of your instances. To change key pairs and add users afterwards, please refer to the guide on [Configuring additional SSH keys](../configuring_additional_ssh_keys/).
 >
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then, click on `SSH Keys`{.action} in the left-hand navigation bar under "Project Management".
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then, click on `SSH Keys`{.action} in the left-hand navigation bar under "Project Management".
 
 Click on the `Add an SSH key`{.action} button. In the new window, enter a name for the key and paste your key string (copied in [Step 1](./#step-1-creating-ssh-keys) from the public key file or the PuTTYgen window) into the "Key" field. Confirm by clicking `Add`{.action}.
 
@@ -153,7 +153,7 @@ Click on the `Add an SSH key`{.action} button. In the new window, enter a name f
 
 ### Step 3: Creating an instance
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. On the "Home" page, click on `Create an instance`{.action}. (You can find the same functionality on the "Instances" page by clicking `Instances`{.action} in the left-hand navigation bar under "Compute".)
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. On the "Home" page, click on `Create an instance`{.action}. (You can find the same functionality on the "Instances" page by clicking `Instances`{.action} in the left-hand navigation bar under "Compute".)
 
 ![instance select](images/instance-creation-01.png){.thumbnail}
 
@@ -217,7 +217,7 @@ Once you have made sure that your configuration choices are correct, click on th
 
 ### Step 4: Connecting to your instance
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then, click on `Instances`{.action} in the left-hand navigation bar under "Compute". Your instance is ready when the "Status" column in the table is set to "Activated". To verify, you can click on the "Refresh" button right next to `Create an instance`{.action}.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then, click on `Instances`{.action} in the left-hand navigation bar under "Compute". Your instance is ready when the "Status" column in the table is set to "Activated". To verify, you can click on the "Refresh" button right next to `Create an instance`{.action}.
 
 ![instances page](images/instance-connect-01.png){.thumbnail}
 
@@ -230,7 +230,7 @@ If you encounter issues with your connection, i.e. errors regarding your SSH key
 
 #### Connecting to a Linux OS instance from Linux OS / Mac
 
-You can now access your instance through a command line interface (Terminal) via SSH. Replace "username" in the following examples with your default user as explained above. You can also simply copy the complete login command from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) by clicking on it in the instance's "Dashboard" and then paste it into your Terminal.
+You can now access your instance through a command line interface (Terminal) via SSH. Replace "username" in the following examples with your default user as explained above. You can also simply copy the complete login command from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) by clicking on it in the instance's "Dashboard" and then paste it into your Terminal.
 
 ![instances page](images/instance-connect-02.png){.thumbnail}
 
@@ -248,7 +248,7 @@ New password:
 Retype new password:
 passwd: password updated successfully
 ```
-You can now use these credentials to log in via the `VNC console`{.action} in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager). Next, switch to the "root" user and set a secure password, then switch back to the previous user:
+You can now use these credentials to log in via the `VNC console`{.action} in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). Next, switch to the "root" user and set a secure password, then switch back to the previous user:
 
 ```sh
 $ sudo su -
@@ -268,7 +268,7 @@ Open PuTTY and expand "SSH" in the left-hand menu, then click on "Auth" to see t
 
 ![using putty](images/puttyconnect-01.png){.thumbnail}
 
-Click the `Browse`{.action} button to navigate to the folder where your private key file (.ppk) is located and open it. Next, switch to "Session" via the left-hand menu and enter your login credentials (username@IPv4_address). Replace "ubuntu" in the example screenshots with your appropriate default user according to the instance's "Dashboard" in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager). (Click on `Instances`{.action} in the left-hand navigation bar, then click on the instance's name.)
+Click the `Browse`{.action} button to navigate to the folder where your private key file (.ppk) is located and open it. Next, switch to "Session" via the left-hand menu and enter your login credentials (username@IPv4_address). Replace "ubuntu" in the example screenshots with your appropriate default user according to the instance's "Dashboard" in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). (Click on `Instances`{.action} in the left-hand navigation bar, then click on the instance's name.)
 
 For future connections, you can now save this session to have it available from the list in this interface. Enter a descriptive name under "Saved Sessions" and click on `Save`{.action} to add it.
 
@@ -314,7 +314,7 @@ If you experience any issues with this procedure, verify that remote (RDP) conne
 
 ##### **From a Linux OS**
 
-Public Cloud instances can be accessed via the built-in VNC console in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager). From your local device, connections must be established by a client application that is capable of the Remote Desktop Protocol (RDP).
+Public Cloud instances can be accessed via the built-in VNC console in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). From your local device, connections must be established by a client application that is capable of the Remote Desktop Protocol (RDP).
 
 For example, Remmina Remote Desktop Client is a compatible application which should be included in an Ubuntu Desktop installation. If you do not find Remmina in your environment, you can obtain it from the [official website](https://remmina.org/).
 

@@ -48,7 +48,7 @@ Vul de gegevens van de inkomende server in (sommige velden kunnen vooraf ingevul
 |Gebruikersnaam|Voer het volledige e-mailadres in.|  
 |Het wachtwoord|Voer het wachtwoord van het e-mailadres in.|
 |Clientcertificaat|Hier niets selecteren.|
-|Server|Voer de server in waar uw Exchange op gehost wordt.  U vindt deze gegevens in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} door naar het tabblad `Algemene informatie`{.action} van de betreffende Exchange-dienst te gaan en vervolgens naar het gedeelte `Inloggen`{.action}.|
+|Server|Voer de server in waar uw Exchange op gehost wordt.  U vindt deze gegevens in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} door naar het tabblad `Algemene informatie`{.action} van de betreffende Exchange-dienst te gaan en vervolgens naar het gedeelte `Inloggen`{.action}.|
 |Poort|Voer poort 443 in.|  
 |Soort beveiliging|Kies ‘SSL/TLS’.|
 

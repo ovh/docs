@@ -19,7 +19,7 @@ Uno spazio di hosting ti permette di creare il tuo sito con soluzioni chiavi in 
 - Disporre di un piano di [hosting Web](https://www.ovh.it/hosting-web/){.external} attivo
 - Aver ricevuto l'email di conferma dell'installazione del tuo hosting Web 
 - Disporre di un [dominio](https://www.ovh.it/domini/){.external} attivo, che corrisponderà all’indirizzo del tuo sito
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
@@ -47,7 +47,7 @@ Una volta definito il progetto non resta che svilupparlo nello spazio di hosting
 
 Questa soluzione utilizza i moduli in 1 click OVH, che permettono di installare un CMS in modo semplice e veloce. OVH esegue l'installazione del sito e ti fornisce i dati necessari alla sua gestione.
 
-Affinché l'operazione vada a buon fine è necessario che la directory di installazione del modulo sia vuota. Per installare il tuo modulo in 1 click, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Nel menu a sinistra, clicca su `Hosting`{.action} e seleziona il nome del tuo servizio. Nella scheda `CMS in 1 click`{.action}, clicca sul pulsante `Aggiungi un modulo`{.action}.
+Affinché l'operazione vada a buon fine è necessario che la directory di installazione del modulo sia vuota. Per installare il tuo modulo in 1 click, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Nel menu a sinistra, clicca su `Hosting`{.action} e seleziona il nome del tuo servizio. Nella scheda `CMS in 1 click`{.action}, clicca sul pulsante `Aggiungi un modulo`{.action}.
 
 ![Accesso ai moduli in 1 click](images/access_to_the_1_click_modules_section.png){/thumbnail}
 
@@ -66,7 +66,7 @@ Affinché l'operazione vada a buon fine è necessario assicurarsi che:
 - la directory di installazione del modulo sia vuota
 - sia già stato creato un database nello spazio di hosting
 
-Per creare il database, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Nel menu a sinistra, seleziona `Hosting`{.action} e poi il nome del tuo servizio. Clicca sulla scheda `Database`{.action} e poi su `Crea un database`{.action}. Inserisci le informazioni richieste e attendi che l'installazione sia terminata.
+Per creare il database, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Nel menu a sinistra, seleziona `Hosting`{.action} e poi il nome del tuo servizio. Clicca sulla scheda `Database`{.action} e poi su `Crea un database`{.action}. Inserisci le informazioni richieste e attendi che l'installazione sia terminata.
 
 ![Accesso ai moduli in 1 click](images/create_a_database.png){/thumbnail}
 
@@ -86,7 +86,7 @@ I siti Internet sono molto diversi tra loro e non esiste quindi una procedura un
 
 ### Step 3: crea i tuoi account email
 
-Se non intendi utilizzare gli account email inclusi nel tuo piano di [hosting](https://www.ovh.it/hosting-web/){.external}, questo step è facoltativo. Per creare uno o più indirizzi email, assicurati innanzitutto di essere connesso al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Nel menu a sinistra, seleziona `Email`{.action}, clicca sul nome del tuo servizio, poi sulla scheda `Email`{.action} e infine sul pulsante `Crea un indirizzo email`{.action}. 
+Se non intendi utilizzare gli account email inclusi nel tuo piano di [hosting](https://www.ovh.it/hosting-web/){.external}, questo step è facoltativo. Per creare uno o più indirizzi email, assicurati innanzitutto di essere connesso al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Nel menu a sinistra, seleziona `Email`{.action}, clicca sul nome del tuo servizio, poi sulla scheda `Email`{.action} e infine sul pulsante `Crea un indirizzo email`{.action}. 
 
 ![Crea un indirizzo email](images/create_an_email_address.png){/thumbnail}
 
@@ -108,13 +108,13 @@ Esistono diversi tipi di record DNS ma ci concentreremo in particolare su due di
 
 - **Record A, per un sito Internet**
 
-Per verificare il record A da utilizzare nella zona DNS del tuo dominio, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e, nel menu a sinistra, clicca su `Hosting`{.action} e poi sul nome del tuo servizio. L'indirizzo IP viene mostrato in corrispondenza della voce "IPv4" nella scheda `Informazioni generali`{.action}.
+Per verificare il record A da utilizzare nella zona DNS del tuo dominio, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e, nel menu a sinistra, clicca su `Hosting`{.action} e poi sul nome del tuo servizio. L'indirizzo IP viene mostrato in corrispondenza della voce "IPv4" nella scheda `Informazioni generali`{.action}.
 
 ![Modificare il record A](images/know_the_OVH_A_records.png){/thumbnail}
 
 - **Record MX, per un server di posta**
 
-Per verificare il record MX da utilizzare nella zona DNS del tuo dominio, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e, nel menu a sinistra, clicca su `Email`{.action} e poi sul nome del tuo servizio. L’informazione viene mostrata in corrispondenza della voce "Record MX" nella scheda `Informazioni generali`{.action} e può variare da un servizio all'altro in base al filtro DNS applicato.
+Per verificare il record MX da utilizzare nella zona DNS del tuo dominio, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e, nel menu a sinistra, clicca su `Email`{.action} e poi sul nome del tuo servizio. L’informazione viene mostrata in corrispondenza della voce "Record MX" nella scheda `Informazioni generali`{.action} e può variare da un servizio all'altro in base al filtro DNS applicato.
 
 ![Modificare i record MX](images/know_the_OVH_MX_records.png){/thumbnail}
 
@@ -124,7 +124,7 @@ Ora che conosci i record DNS associati al tuo hosting Web OVH è necessario veri
 
 - **Dominio registrato con un hosting Web OVH**
 
-Di default la configurazione del tuo dominio è già corretta e puoi quindi proseguire allo step successivo. Se però hai apportato modifiche alla tua zona DNS dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, potrebbero essere necessarie alcune correzioni.
+Di default la configurazione del tuo dominio è già corretta e puoi quindi proseguire allo step successivo. Se però hai apportato modifiche alla tua zona DNS dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, potrebbero essere necessarie alcune correzioni.
     
 Per accedere alla zona DNS, clicca su `Domini`{.action} nel menu a sinistra e seleziona il nome del tuo dominio. Nella scheda `Zona DNS`{.action} è possibile verificare ed eventualmente modificare le informazioni necessarie. 
 

@@ -20,13 +20,13 @@ Na svém webhostingu můžete hostovat několik webových stránek. Rozdělení 
 - Některý z [webhostingových balíčků OVH](https://www.ovh.cz/webhosting/){.external}.
 - Alespoň jedna [doména](https://www.ovh.cz/domeny/){.external}.
 - Dostatečná práva pro provádění úprav v konfiguraci domény (resp. v její DNS zóně).
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Postup
 
 ### Fáze 1: přístup do rozhraní pro správu Multisite
 
-Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V základním rozhraní pro správu webhostingu klikněte na záložku `Multisite`{.action}.
+Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V základním rozhraní pro správu webhostingu klikněte na záložku `Multisite`{.action}.
 
 Tabulka nabízí přehled všech domén připojených k Vašemu webhostingu. Některé z těchto domén byly při instalaci webhostingu vytvořeny automaticky.
 

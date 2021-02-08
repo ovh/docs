@@ -19,8 +19,8 @@ Diese Einträge, die auf den DNS-Servern gespeichert sind, sorgen also dafür, d
 ## Voraussetzungen
 
 - Sie besitzen eine bei OVH registrierte Domain.
-- Sie haben die [entsprechenden Rechte](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/){.external}, um die Domain über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} zu verwalten.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie haben die [entsprechenden Rechte](https://docs.ovh.com/de/customer/verwaltung-der-kontakte/){.external}, um die Domain über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} zu verwalten.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 > [!warning]
 >
@@ -48,7 +48,7 @@ Bitte beachten Sie:
 
 ### Schritt 1: Auf die Verwaltung der OVH DNS-Server der Domain zugreifen
 
-Loggen Sie sich zunächst im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie links im Menü auf `Domains`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS Server`{.action}.
+Loggen Sie sich zunächst im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie links im Menü auf `Domains`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS Server`{.action}.
 
 Die angezeigte Tabelle listet die DNS-Server auf, die derzeit bei OVH für Ihre Domain festgelegt sind. Es werden möglicherweise mehrere DNS-Server angezeigt. Eine Tabellenzeile entspricht dabei jeweils einem Server.
 
@@ -73,7 +73,7 @@ Nachdem Sie die Informationen eingegeben haben, klicken Sie auf `Konfiguration a
 
 Nachdem die erforderlichen Änderungen vorgenommen wurden, dauert es eine gewisse Zeit, bis diese effektiv sind. Dabei sind zwei aufeinanderfolgende Vorgänge zu beachten:
 
-- Die Änderung, die Sie bei OVH vorgenommen haben, muss zunächst von der Registry Ihrer Domainendung verarbeitet werden. Sie können den Fortschritt über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} nachverfolgen, indem Sie links im Menü in den Bereich `Domains`{.action} gehen und dann auf `Laufende Operationen`{.action} klicken.
+- Die Änderung, die Sie bei OVH vorgenommen haben, muss zunächst von der Registry Ihrer Domainendung verarbeitet werden. Sie können den Fortschritt über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} nachverfolgen, indem Sie links im Menü in den Bereich `Domains`{.action} gehen und dann auf `Laufende Operationen`{.action} klicken.
 - Nachdem die Registry Ihrer Domainendung die Änderung verarbeitet hat, ist eine Propagationszeit von maximal 48 Stunden erforderlich, bis sie voll wirksam ist.
 
 ## Weiterführende Informationen

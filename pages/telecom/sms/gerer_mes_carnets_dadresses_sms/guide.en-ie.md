@@ -15,14 +15,14 @@ All OVHcloud SMS accounts can use one or more address books. This guide explains
 ## Requirements
 
 - an active OVHcloud SMS account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - a spreadsheet or text editor tool
 
 ## Instructions
 
 ### Step 1: Create an address book via the OVHcloud Control Panel.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), and go to the Telecom section. Next, select SMS in the left-hand menu.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), and go to the Telecom section. Next, select SMS in the left-hand menu.
 
 Then click on the SMS account concerned.
 

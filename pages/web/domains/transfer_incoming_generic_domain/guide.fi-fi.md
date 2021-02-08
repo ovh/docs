@@ -86,7 +86,7 @@ Sinulla on mahdollisuus täydentää tilaustasi [webhotellituotteella](https://w
 > - **nimipalvelinten valintaa**: jos verkkotunnustasi käytetään tällä hetkellä verkkosivulla tai sähköpostiosoitteissa, ilmoita niiden nimipalvelimet palvelukatkoksen välttämiseksi.  
 >
 
-Kun tilauskaavake tulee näkyviin, maksa tilaus, jotta verkkotunnuksen siirto voi alkaa. Verkkotunnuksen siirto käynnistetään ainoastaan, kun maksusi on vastaanotettu. Tämän jälkeen voit seurata siirtoprosessia milloin tahansa [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} kautta osiossa `Verkkotunnukset`{.action} ja siellä `Käynnissä olevat operaatiot`{.action}.
+Kun tilauskaavake tulee näkyviin, maksa tilaus, jotta verkkotunnuksen siirto voi alkaa. Verkkotunnuksen siirto käynnistetään ainoastaan, kun maksusi on vastaanotettu. Tämän jälkeen voit seurata siirtoprosessia milloin tahansa [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} kautta osiossa `Verkkotunnukset`{.action} ja siellä `Käynnissä olevat operaatiot`{.action}.
 
 ### 4. vaihe: Suorita siirron vahvistuksen ensimmäinen vaihe
 
@@ -110,7 +110,7 @@ On olemassa useita mahdollisia skenaarioita vastauksista riippuen.
 |Ei vastausta kumpaankaan vahvistuspyyntöön|Siirtyminen toiseen vahvistusvaiheeseen viiden päivän kuluessa|
 |Yksi hylkäys (ei väliä kumpi kontakteista)|Siirto hylätään, jos yksikin kontakteista kieltää sen|
 
-Mikäli siirto hylätään, varmista, että kaikki osapuolet ovat samaa mieltä asiasta ja, että sähköpostiosoitteet ovat ajan tasalla. Siirto voidaan käynnistää myöhemmin uudelleen [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external} osiossa `Verkkotunnukset`{.action} ja `Käynnissä olevat operaatiot`{.action}.
+Mikäli siirto hylätään, varmista, että kaikki osapuolet ovat samaa mieltä asiasta ja, että sähköpostiosoitteet ovat ajan tasalla. Siirto voidaan käynnistää myöhemmin uudelleen [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} osiossa `Verkkotunnukset`{.action} ja `Käynnissä olevat operaatiot`{.action}.
 
 ### 5. vaihe: Suorita siirron vahvistuksen toinen vaihe
 
@@ -122,11 +122,11 @@ Kun toinen vaihe on käynnistetty, nykyinen verkkotunnusvälittäjä (joka ei ol
 |Ei vastausta nykyiseltä verkkotunnusvälittäjältä|Siirto tapahtuu viiden päivän kuluessa|
 |Nykyinen verkkotunnusvälittäjä hylkää siirron|Siirto hylätään, jos yksikin osapuoli kieltää sen|
 
-Jos nykyinen verkkotunnusvälittäjä hylkää pyynnön, kehotamme ottamaan tähän yhteyttä hylkäyksen syiden selvittämiseksi. Siirto voidaan käynnistää uudelleen [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external} osiossa `Verkkotunnukset`{.action} ja `Käynnissä olevat operaatiot`{.action}.
+Jos nykyinen verkkotunnusvälittäjä hylkää pyynnön, kehotamme ottamaan tähän yhteyttä hylkäyksen syiden selvittämiseksi. Siirto voidaan käynnistää uudelleen [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} osiossa `Verkkotunnukset`{.action} ja `Käynnissä olevat operaatiot`{.action}.
 
 ### 6. vaihe: Verkkotunnuksesi hallinnointi OVH:lla
 
-Siirtomenettelyn lopussa voit hallinnoida verkkotunnustasi [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Siirtomenettelyn lopussa voit hallinnoida verkkotunnustasi [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 Sinne päästäksesi klikkaa, sisään kirjauduttuasi, hallintapaneelin vasemmassa reunassa olevassa valikossa kohtaa `Verkkotunnukset`{.action} ja valitse tämän jälkeen kyseessä oleva verkkotunnus.
 

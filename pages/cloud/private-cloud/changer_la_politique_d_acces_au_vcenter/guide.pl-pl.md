@@ -19,11 +19,11 @@ Aby zwiększyć bezpieczeństwo infrastruktury Hosted Private Cloud, można ogra
 ## Wymagania początkowe
 
 - Wykupienie usługi [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), przejdź do sekcji `Serwer`{.action}, a następnie wybierz swoją usługę w sekcji `Private Cloud`{.action} na pasku nawigacji po lewej stronie.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Serwer`{.action}, a następnie wybierz swoją usługę w sekcji `Private Cloud`{.action} na pasku nawigacji po lewej stronie.
 
 Na stronie głównej serwisu kliknij zakładkę `Bezpieczeństwo`{.action}, a następnie `Zmień politykę dostępu do vCenter`{.action}.
 

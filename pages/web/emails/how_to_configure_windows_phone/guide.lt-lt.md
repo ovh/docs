@@ -40,7 +40,7 @@ Pasirinkite Other account, kad pridėtumėte POP arba IMAP tipo paskyrą.
 ## 5 dalis: Paskyros konfigūravimas
 Pirmajame laukelyje įveskite visą el. pašto adresą.
 
-Taip pat įveskite slaptažodį, kurį nurodėte [valdymo sąsajoje](https://www.ovh.com/auth/?action=gotomanager), kurdami paskyrą.
+Taip pat įveskite slaptažodį, kurį nurodėte [valdymo sąsajoje](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), kurdami paskyrą.
 
 Spustelėjus „Connect“ matysis naujas pranešimas.
 
@@ -68,7 +68,7 @@ Account type: POP3(taip pat galite rinktis IMAP, pastarojo tipo nustatymai patei
 
 User name: Visas el. pašto adresas.
 
-Password: Slaptažodis, kurį nurodėte [valdymo sąsajoje](https://www.ovh.com/auth/?action=gotomanager) kurdami paskyrą.
+Password: Slaptažodis, kurį nurodėte [valdymo sąsajoje](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) kurdami paskyrą.
 
 Outgoing mail server (SMTP): SSL0.OVH.NET
 
@@ -103,7 +103,7 @@ El. paštą galite naudoti spragtelėję atitinkamą piktogramą, esančią tele
 POP konfigūravimas su įjungta ar išjungta SSL apsauga:
 
 Email Address: Jūsų el. pašto adresas
-Password: Slaptažodis, kurį nurodėte [valdymo sąsajoje](https://www.ovh.com/auth/?action=gotomanager) kurdami paskyrą.
+Password: Slaptažodis, kurį nurodėte [valdymo sąsajoje](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) kurdami paskyrą.
 Username: Visas el. pašto adresas
 Incoming server:SSL0.OVH.NET
 Incoming Server Port:995 arba 110
@@ -130,7 +130,7 @@ Prievadai 995 ir 465 atitinka įjungtą SSL apsaugą.
 POP konfigūravimas su įjungta ar išjungta SSL apsauga:
 
 Email Address: Jūsų el. pašto adresas
-Password: Slaptažodis, kurį nurodėte [valdymo sąsajoje](https://www.ovh.com/auth/?action=gotomanager) kurdami paskyrą.
+Password: Slaptažodis, kurį nurodėte [valdymo sąsajoje](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) kurdami paskyrą.
 Username: Visas el. pašto adresas
 Incoming server:SSL0.OVH.NET
 Incoming Server Port:993 arba 143

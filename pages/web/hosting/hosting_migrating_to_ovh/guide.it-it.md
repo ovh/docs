@@ -19,7 +19,7 @@ Scopri come migrare un sito Web, uno o più database e i tuoi account email a pa
 - Avere accesso ai file del sito
 - Avere accesso al database del sito
 - Disporre delle informazioni (utente, password, server) necessarie per connettersi agli account email esistenti
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. 
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. 
 
 ## Procedura
 
@@ -60,7 +60,7 @@ Questa fase è a sua volta suddivisa in ulteriori passaggi.
 |---|---|---|
 |2.1.|Effettua un backup del sito|È necessario che sia un backup completo del tuo sito Web e che includa i file e i database. Questo backup è fondamentale per migrare il tuo sito in OVH.|
 |2.2.|Metti online il tuo sito con OVH|Connettiti al tuo spazio di storage (FTP) al fine di importare i file del tuo sito e caricarli nella cartella **"www"**. Riceverai le credenziali per la connessione al protocollo FTP via email.|
-|2.3.|Crea un database OVH|Se il tuo sito funziona con un database, è necessario [crearne uno nuovo presso OVH](https://docs.ovh.com/it/hosting/gestisci_un_database_dal_tuo_hosting_condiviso/){.external} dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.|
+|2.3.|Crea un database OVH|Se il tuo sito funziona con un database, è necessario [crearne uno nuovo presso OVH](https://docs.ovh.com/it/hosting/gestisci_un_database_dal_tuo_hosting_condiviso/){.external} dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.|
 |2.4.|Importa i dati del database|Importa il backup del tuo database attraverso lo Spazio Clienti OVH.|
 |2.5.|Associa il sito al nuovo database|Le informazioni relative al tuo precedente database sono sempre disponibili nel file di configurazione del tuo sito. Sul tuo spazio di storage OVH, modifica questo file e inserisci le informazioni del nuovo database OVH.|
 
@@ -68,13 +68,13 @@ Poiché la configurazione del dominio resta invariata, l’hosting utilizzato pe
 
 #### Step 3: crea i tuoi indirizzi email in OVH
 
-Una volta che il sito Web è stato trasferito, è necessario [creare in OVH gli stessi indirizzi email](https://docs.ovh.com/it/emails/servizio_email_guida_alla_creazione_di_un_indirizzo_email/){.external} che utilizzi presso il tuo attuale provider, con lo stesso identico nome.  Dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, nel menu a sinistra, clicca su `Email`{.action} e poi sull’hosting Web che hai appena acquistato (con lo stesso nome del tuo dominio). Seleziona la scheda `Email`{.action} e clicca su `Crea un indirizzo email`{.action}, dopodiché segui le indicazioni.
+Una volta che il sito Web è stato trasferito, è necessario [creare in OVH gli stessi indirizzi email](https://docs.ovh.com/it/emails/servizio_email_guida_alla_creazione_di_un_indirizzo_email/){.external} che utilizzi presso il tuo attuale provider, con lo stesso identico nome.  Dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, nel menu a sinistra, clicca su `Email`{.action} e poi sull’hosting Web che hai appena acquistato (con lo stesso nome del tuo dominio). Seleziona la scheda `Email`{.action} e clicca su `Crea un indirizzo email`{.action}, dopodiché segui le indicazioni.
 
 Non avendo ancora cambiato la configurazione del dominio, continuerai a ricevere i nuovi messaggi sugli indirizzi email creati presso il tuo attuale provider. Inoltre, è necessario continuare a utilizzare questi indirizzi anche per l’invio. 
 
 #### Step 4: modifica la configurazione del dominio
 
-Adesso che hai trasferito il tuo sito Web e creato i tuoi indirizzi email presso OVH, è necessario modificare la configurazione del tuo dominio. Per effettuare questa operazione, modifica i server DNS del tuo dominio con quelli di OVH (inviati via email e visibili nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}). Quest’azione ha due effetti:
+Adesso che hai trasferito il tuo sito Web e creato i tuoi indirizzi email presso OVH, è necessario modificare la configurazione del tuo dominio. Per effettuare questa operazione, modifica i server DNS del tuo dominio con quelli di OVH (inviati via email e visibili nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}). Quest’azione ha due effetti:
 
 - **vincolare tecnicamente il tuo dominio alle soluzioni OVH**: il tuo hosting OVH sarà utilizzato per mostrare il tuo sito Web e la ricezione dei nuovi messaggi avverrà sui tuoi indirizzi email creati presso OVH
 - **impedire un’interruzione del servizio**: se il tuo Registrar decide di interrompere la propria configurazione DNS nel momento in cui trasferirai il tuo dominio, ciò non avrà nessuna conseguenza dato che usufruirai già della configurazione OVH
@@ -129,7 +129,7 @@ Questa fase è a sua volta suddivisa in ulteriori passaggi.
 |---|---|---|
 |2.1.|Effettua un backup del sito|È necessario che sia un backup completo del tuo sito Web e che includa i file e i database. Questo backup è fondamentale per migrare il tuo sito in OVH.|
 |2.2.|Metti online il tuo sito con OVH|Connettiti al tuo spazio di storage (FTP) al fine di importare i file del tuo sito e caricarli nella cartella **"www"**. Riceverai le credenziali per la connessione al protocollo FTP via email.|
-|2.3.|Crea un database OVH|Se il tuo sito funziona con un database, è necessario [crearne uno nuovo presso OVH](https://docs.ovh.com/it/hosting/gestisci_un_database_dal_tuo_hosting_condiviso/){.external} dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.|
+|2.3.|Crea un database OVH|Se il tuo sito funziona con un database, è necessario [crearne uno nuovo presso OVH](https://docs.ovh.com/it/hosting/gestisci_un_database_dal_tuo_hosting_condiviso/){.external} dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.|
 |2.4.|Importa i dati del database|Importa il backup del tuo database utilizzando [il tool di OVH messo a disposizione](https://docs.ovh.com/it/hosting/web_hosting_come_importare_un_database_mysql/){.external} nel tuo Spazio Clienti OVH.|
 |2.5.|Associa il sito al nuovo database|Le informazioni relative al tuo precedente database sono sempre disponibili nel file di configurazione del tuo sito. Sul tuo spazio di storage OVH, modifica questo file e inserisci le informazioni del nuovo database OVH.|
 
@@ -137,13 +137,13 @@ Poiché la configurazione del dominio resta invariata, l’hosting utilizzato pe
 
 #### Step 3: crea i tuoi indirizzi email in OVH
 
-**Una volta che il dominio è stato trasferito**, riceverai una mail che ti comunicherà l’avvenuta installazione del servizio email associato al tuo hosting. A partire da questo momento, è necessario [creare in OVH gli stessi indirizzi email](https://docs.ovh.com/it/emails/servizio_email_guida_alla_creazione_di_un_indirizzo_email/){.external} che utilizzi presso il tuo attuale provider, con lo stesso identico nome. Dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, nel menu a sinistra, clicca su `Email`{.action} e poi sull’hosting Web che hai appena acquistato (con lo stesso nome del tuo dominio), Seleziona la scheda `Email`{.action} e clicca su `Crea un indirizzo email`{.action}, dopodiché segui le indicazioni.
+**Una volta che il dominio è stato trasferito**, riceverai una mail che ti comunicherà l’avvenuta installazione del servizio email associato al tuo hosting. A partire da questo momento, è necessario [creare in OVH gli stessi indirizzi email](https://docs.ovh.com/it/emails/servizio_email_guida_alla_creazione_di_un_indirizzo_email/){.external} che utilizzi presso il tuo attuale provider, con lo stesso identico nome. Dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, nel menu a sinistra, clicca su `Email`{.action} e poi sull’hosting Web che hai appena acquistato (con lo stesso nome del tuo dominio), Seleziona la scheda `Email`{.action} e clicca su `Crea un indirizzo email`{.action}, dopodiché segui le indicazioni.
 
 Non avendo ancora cambiato la configurazione del dominio, continuerai a ricevere i nuovi messaggi sugli indirizzi email creati presso il tuo attuale provider. Inoltre, è necessario continuare a utilizzare questi indirizzi anche per l’invio. 
 
 #### Step 4: modifica la configurazione del dominio
 
-Adesso che hai trasferito il tuo sito Web e creato i tuoi indirizzi email presso OVH, è necessario modificare la configurazione del tuo dominio. Per effettuare questa operazione, modifica i server DNS del tuo dominio con quelli di OVH attraverso lo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Adesso che hai trasferito il tuo sito Web e creato i tuoi indirizzi email presso OVH, è necessario modificare la configurazione del tuo dominio. Per effettuare questa operazione, modifica i server DNS del tuo dominio con quelli di OVH attraverso lo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 
  Per maggiore assistenza durante questa operazione, consulta la guida relativa a [Informazioni generali sui server DNS](https://docs.ovh.com/it/domains/web_hosting_gestisci_il_tuo_server_dns/){.external}.
 

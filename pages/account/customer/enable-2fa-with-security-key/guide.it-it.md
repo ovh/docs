@@ -17,7 +17,7 @@ La doppia autenticazione con chiave di sicurezza Universal Factor (U2F) è uno d
 ## Prerequisiti
 
 - Conoscere i [diversi metodi di doppia autenticazione proposti da OVHcloud](https://docs.ovh.com/it/customer/proteggi_il_tuo_account_con_2FA/).
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Disporre di una chiave di sicurezza U2F
 - Disporre di una porta USB sul tuo computer
 
@@ -25,7 +25,7 @@ La doppia autenticazione con chiave di sicurezza Universal Factor (U2F) è uno d
 
 ### Step 1: attiva la doppia autenticazione
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul tuo nome in alto a destra (1) e clicca sulle iniziali (2). Poi clicca su`Sicurezza`{.action} (3) e infine su `Attiva la doppia autenticazione`{.action} (4).
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul tuo nome in alto a destra (1) e clicca sulle iniziali (2). Poi clicca su`Sicurezza`{.action} (3) e infine su `Attiva la doppia autenticazione`{.action} (4).
 
 ![2FA securitykey](images/hub2FA.png){.thumbnail}
 

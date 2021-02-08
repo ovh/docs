@@ -18,11 +18,11 @@ Aby zwiększyć bezpieczeństwo infrastruktury Managed Bare Metal, można ograni
 ## Wymagania początkowe
 
 - Wykupienie usługi [Managed Bare Metal](https://www.ovhcloud.com/pl/managed-bare-metal/){.external}.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), przejdź do sekcji `Bare Metal Cloud`{.action}, a następnie wybierz swoją usługę w sekcji `Managed Bare Metal`{.action} na pasku nawigacji po lewej stronie.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action}, a następnie wybierz swoją usługę w sekcji `Managed Bare Metal`{.action} na pasku nawigacji po lewej stronie.
 
 Na stronie głównej serwisu kliknij zakładkę `Bezpieczeństwo`{.action}, a następnie `Zmień politykę dostępu do vCenter`{.action}.
 

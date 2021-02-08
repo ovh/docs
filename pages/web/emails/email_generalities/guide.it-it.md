@@ -18,11 +18,11 @@ La soluzione MX Plan di OVH permette di usufruire di una o più caselle email pe
 ## Prerequisiti
 
 - Disporre di una soluzione MX Plan (il servizio è disponibile con un piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}, un [hosting gratuito Start 10M](https://www.ovh.it/domini/offerta_hosting_start10m.xml){.external} o una soluzione MX Plan ordinata separatamente)
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web Cloud`{.action}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}
 
 ## Procedura
 
-Una volta che la soluzione MX Plan ordinata risulta attiva, le operazioni per la sua gestione sono disponibili direttamente nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. In base alla data di attivazione o in caso di [recente migrazione del servizio](https://www.ovh.it/mxplan-migration/){.external}, la versione disponibile sarà differente. Per verificare quella attiva accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona il tuo servizio nella sezione `Email`{.action} del menu a sinistra.
+Una volta che la soluzione MX Plan ordinata risulta attiva, le operazioni per la sua gestione sono disponibili direttamente nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. In base alla data di attivazione o in caso di [recente migrazione del servizio](https://www.ovh.it/mxplan-migration/){.external}, la versione disponibile sarà differente. Per verificare quella attiva accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona il tuo servizio nella sezione `Email`{.action} del menu a sinistra.
 
 Prosegui nella lettura di questa guida in base alla versione di cui disponi.
 

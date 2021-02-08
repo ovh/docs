@@ -17,15 +17,15 @@ Der MX-Eintrag (Mail Exchange) legt den für die E-Mail-Adressen der Domain zust
 
 ## Voraussetzungen
 
-- Sie haben über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} Zugriff auf die Verwaltung der betreffenden Domain.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie haben über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} Zugriff auf die Verwaltung der betreffenden Domain.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 - Die betreffende Domain verwendet die OVH Konfiguration (das heißt die OVH DNS-Server).
 
 > [!warning]
 >
 > - Wenn Ihre Domain nicht die DNS-Server von OVH verwendet, muss die Änderung über das Interface des Anbieters vorgenommen werden, bei dem die Konfiguration Ihrer Domain verwaltet wird.
 >
-> - Wenn Ihre Domain bei OVH registriert ist, können Sie überprüfen, ob diese die OVH Konfiguration verwendet. Gehen Sie hierzu in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} zur entsprechenden Domain und anschließend auf den Tab `DNS-Server`{.action}.
+> - Wenn Ihre Domain bei OVH registriert ist, können Sie überprüfen, ob diese die OVH Konfiguration verwendet. Gehen Sie hierzu in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} zur entsprechenden Domain und anschließend auf den Tab `DNS-Server`{.action}.
 >
 
 ## Beschreibung
@@ -54,7 +54,7 @@ Verwenden Sie diese MX-Einträge für die DNS-Konfiguration Ihrer Domain. Im nä
 
 ### Schritt 3: MX-Eintrag bearbeiten
 
-Um MX-Einträge in der Konfiguration Ihrer OVH Domain zu ändern, loggen Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein. Gehen Sie links im Menü in den Bereich `Domains`{.action}, klicken Sie auf die betreffende Domain und anschließend auf den Tab `DNS Zone`{.action}.
+Um MX-Einträge in der Konfiguration Ihrer OVH Domain zu ändern, loggen Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Gehen Sie links im Menü in den Bereich `Domains`{.action}, klicken Sie auf die betreffende Domain und anschließend auf den Tab `DNS Zone`{.action}.
 
 In der Tabelle wird die OVH Konfiguration Ihrer Domain angezeigt. Jede Zeile entspricht einem DNS-Eintrag. Überprüfen Sie über die Filterfunktion zunächst, ob in der DNS-Konfiguration Ihrer Domain bereits MX-Einträge vorhanden sind.
 

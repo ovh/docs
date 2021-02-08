@@ -28,7 +28,7 @@ Introduzca la información en los campos de texto:
 
 Su nombre: Introduzca aquí el nombre que quiere que se muestre.
 Dirección de correo: Dirección de correo electrónico completa.
-Contraseña: La contraseña introducida en el [manager](https://ca.ovh.com/auth/?action=gotomanager) para la cuenta de correo.
+Contraseña: La contraseña introducida en el [manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) para la cuenta de correo.
 Recordar contraseña: Marque esta opción.
 
 Thunderbird recuperará los ajustes de la dirección de correo y le ofrecerá dos configuraciones posibles: IMAP o POP3.
@@ -112,7 +112,7 @@ A continuación recordamos los valores de configuración de una cuenta de correo
 Configuración POP con la protección SSL activada o desactivada:
 
 Dirección de correo: Dirección de correo electrónico completa.
-Contraseña: La contraseña introducida en el [manager](https://ca.ovh.com/auth/?action=gotomanager) para la cuenta de correo.
+Contraseña: La contraseña introducida en el [manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) para la cuenta de correo.
 Nombre de usuario: Dirección de correo electrónico completa.
 Servidor entrante: El servidor de recepción del correo SSL0.OVH.NET.
 Puerto del servidor entrante: 995 o 110.
@@ -137,7 +137,7 @@ Los valores para la configuración de una cuenta de correo IMAP son los siguient
 Configuración IMAP con la protección SSL activada o desactivada:
 
 Dirección de correo: Dirección de correo electrónico completa.
-Contraseña: La contraseña introducida en el [manager](https://ca.ovh.com/auth/?action=gotomanager) para la cuenta de correo.
+Contraseña: La contraseña introducida en el [manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) para la cuenta de correo.
 Nombre de usuario: Dirección de correo electrónico completa.
 Servidor entrante: El servidor de recepción del correo SSL0.OVH.NET.
 Puerto del servidor entrante: 993 o 143

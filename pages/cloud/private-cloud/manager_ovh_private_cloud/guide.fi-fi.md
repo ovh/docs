@@ -16,7 +16,7 @@ OVH:n hallintapaneeli tarjoaa lukuisia vaihtoehtoja Private Cloud -infrastruktuu
 
 ## Edellytykset
 
-- Olet kirjautuneena [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external} osiossa `Dedikoidut`{.action}, sitten `Private Cloud`{.action}.
+- Olet kirjautuneena [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} osiossa `Dedikoidut`{.action}, sitten `Private Cloud`{.action}.
 - Sinulla on [Private Cloud](https://www.ovh-hosting.fi/private-cloud/){.external} -tuote.
 
 
@@ -24,7 +24,7 @@ OVH:n hallintapaneeli tarjoaa lukuisia vaihtoehtoja Private Cloud -infrastruktuu
 
 ### Yleinen välilehti
 
-Kun olet [hallintapaneeliisi osiossa](https://www.ovh.com/auth/?action=gotomanager){.external} `Dedikoidut`{.action} ja siellä `Private Cloud`{.action}, pääset Private Cloud -tuotteesi yleisnäkymään:
+Kun olet [hallintapaneeliisi osiossa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} `Dedikoidut`{.action} ja siellä `Private Cloud`{.action}, pääset Private Cloud -tuotteesi yleisnäkymään:
 
 ![Yleiset tiedot](images/manager_general.png){.thumbnail}
 

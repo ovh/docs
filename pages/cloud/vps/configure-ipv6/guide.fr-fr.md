@@ -23,7 +23,7 @@ L'IPv6 est la dernière version de l'*Internet Protocol* (IP). Chaque serveur VP
 - Disposer d'un [serveur VPS OVHcloud](https://www.ovhcloud.com/fr/vps/){.external}.
 - Être connecté à votre VPS en SSH (accès root) ou via un bureau à distance (Windows).
 - Disposer de connaissances basiques en réseau.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} ou à l'[API OVHcloud](https://api.ovh.com/console/).
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ou à l'[API OVHcloud](https://api.ovh.com/console/).
 
 ## En pratique
 
@@ -51,7 +51,7 @@ La première étape consiste à récupérer l’adresse IPV6 et la gateway IPv6 
 
 #### Via votre espace client <a name="viacontrolpanel"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Bare Metal Cloud`{.action}. Cliquez sur `VPS`{.action} dans la barre de services à gauche, puis choisissez le serveur VPS concerné. Assurez-vous d'être bien positionné sur l'onglet `Accueil`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Bare Metal Cloud`{.action}. Cliquez sur `VPS`{.action} dans la barre de services à gauche, puis choisissez le serveur VPS concerné. Assurez-vous d'être bien positionné sur l'onglet `Accueil`{.action}.
 
 L'adresse IPv6 et la gateway IPv6 assignées à votre serveur apparaissent dans la partie `IP`. Récupérez ces dernières puis poursuivez vers l'étape 2 « [Appliquer la configuration IPv6](#applyipv6) ».
 
@@ -148,6 +148,18 @@ post-up /sbin/ip -6 route add IPV6_GATEWAY dev eth0
 post-up /sbin/ip -6 route add default via IPV6_GATEWAY dev eth0
 pre-down /sbin/ip -6 route del default via IPV6_GATEWAY dev eth0
 pre-down /sbin/ip -6 route del IPV6_GATEWAY dev eth0
+```
+
+Voici un exemple concret :
+
+```
+iface eth0 inet6 static
+address 2001:41d0:xxx:xxxx::999
+netmask 128
+post-up /sbin/ip -6 route add 2001:41d0:xxx:xxxx::111 dev eth0
+post-up /sbin/ip -6 route add default via 2001:41d0:xxx:xxxx::111 dev eth0
+pre-down /sbin/ip -6 route del default via 2001:41d0:xxx:xxxx::111 dev eth0
+pre-down /sbin/ip -6 route del 2001:41d0:xxx:xxxx::111 dev eth0
 ```
 
 Redémarrez ensuite votre service réseau avec l'une des commandes suivantes :
@@ -259,6 +271,14 @@ Modifiez ensuite le fichier `ifcfg-eth0`, en ajoutant la configuration IPv6 de v
 IPV6INIT=yes
 IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
+```
+
+Voici un exemple concret :
+
+```
+IPV6INIT=yes
+IPV6ADDR=2001:41d0:xxx:xxxx::999/128
+IPV6_DEFAULTGW=2001:41d0:xxx:xxxx::111
 ```
 
 **Sur CentOS 7, vous devez créer un fichier de routage en plus des étapes ci-dessus :**

@@ -17,13 +17,13 @@ Bazy danych, wykorzystywane obecnie przez niemal wszystkie systemy zarządzania 
 
 - Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external}
 - Posiadanie bazy danych utworzonej w ramach pakietu [hostingowego WWW OVH](https://www.ovh.pl/hosting/){.external}
-- W zależności od metody tworzenia kopii zapasowej, jakiej użyjesz, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} lub posiadanie informacji umożliwiających zalogowanie do bazy danych
+- W zależności od metody tworzenia kopii zapasowej, jakiej użyjesz, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub posiadanie informacji umożliwiających zalogowanie do bazy danych
 
 ## W praktyce
 
 Przed rozpoczęciem operacji określ metodę, której użyjesz do pobrania kopii zapasowej bazy danych.  W zależności od Twoich kompetencji technicznych masz do wyboru kilka możliwości.
 
-- **Użycie narzędzia OVH do eksportu kopii zapasowych**: rozwiązanie to umożliwia pobranie kopii zapasowych baz danych w [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Jest to bardzo przystępne rozwiązanie, nie wymaga zaawansowanych kompetencji technicznych.
+- **Użycie narzędzia OVH do eksportu kopii zapasowych**: rozwiązanie to umożliwia pobranie kopii zapasowych baz danych w [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Jest to bardzo przystępne rozwiązanie, nie wymaga zaawansowanych kompetencji technicznych.
 
 - **Wykonanie kopii zapasowej w interfejsie phpMyAdmin**: przed operacją należy zalogować się do interfejsu phpMyAdmin. Konieczna jest zatem umiejętność korzystania z tego interfejsu.
 
@@ -44,7 +44,7 @@ Przejdź do metody tworzenia kopii zapasowej, która Cię interesuje opisanej w 
 
 ### Pobieranie kopii zapasowej za pomocą narzędzia OVH
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią nazwę hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią nazwę hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
 
 Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Teraz możesz utworzyć nową kopię zapasową lub pobrać istniejącą, korzystając z jednej z dwóch dostępnych metod.
 
@@ -74,7 +74,7 @@ Aby pobrać kopię zapasową, kliknij trzy kropki po jej prawej stronie, a nast�
 
 ### Pobieranie kopii zapasowej za pomocą interfejsu phpMyAdmin
 
-W celu przeprowadzenia operacji zaloguj się do phpMyAdmin. Aby uzyskać link dostępowy do phpMyAdmin, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią nazwę hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
+W celu przeprowadzenia operacji zaloguj się do phpMyAdmin. Aby uzyskać link dostępowy do phpMyAdmin, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią nazwę hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
 
 Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego. Kliknij trzy kropki po prawej stronie odpowiedniej bazy danych, po czym kliknij `Dostęp do phpMyAdmin`{.action}.
 

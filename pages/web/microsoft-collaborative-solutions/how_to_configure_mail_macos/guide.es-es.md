@@ -64,11 +64,11 @@ Si lo desea, puede realizar una prueba de envío para comprobar que la cuenta es
 
 Si la aplicación Mail no logra conectarse a la cuenta, le recomendamos que realice las siguientes comprobaciones:
 
-- Compruebe la configuración del dominio en su servicio Exchange en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la pestaña `Dominios asociados`{.action}, en la columna **Diagnóstico** de la tabla.
+- Compruebe la configuración del dominio en su servicio Exchange en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la pestaña `Dominios asociados`{.action}, en la columna **Diagnóstico** de la tabla.
 
 - Intente introducir manualmente las URL de conexión al servicio Exchange. Continúe con la operación, aunque aparezca un mensaje de alerta de seguridad del certificado, y complete los campos **URL interna** y **URL externa** con los datos del servidor en el que esté alojado su servicio Exchange.
 
-Para conocer dichos datos, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} y acceda al servicio Exchange correspondiente. Abra la pestaña `Información general`{.action}. El servidor se indica en el apartado **Conexión**.
+Para conocer dichos datos, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda al servicio Exchange correspondiente. Abra la pestaña `Información general`{.action}. El servidor se indica en el apartado **Conexión**.
 
 ### 2. Utilizar la dirección de correo electrónico
 

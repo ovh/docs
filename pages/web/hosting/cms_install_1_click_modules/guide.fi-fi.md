@@ -18,7 +18,7 @@ Yhden klikkauksen moduuleilla voidaan asentaa verkkosivu helposti ja nopeasti (t
 ## Edellytykset
 
 - Sinulla on [webhotelli](https://www.ovh-hosting.fi/webhotelli/).
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager).
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 - Et ole ladannut tiedostoja hakemistoon, jonne moduuli asennetaan.
 - Verkkosivullasi käytettävän verkkotunnuksen (sekä haluttaessa myös aliverkkotunnuksen) on oltava tyyppiä multisite.
 

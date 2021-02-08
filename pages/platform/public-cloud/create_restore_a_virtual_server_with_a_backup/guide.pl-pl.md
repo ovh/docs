@@ -23,7 +23,7 @@ Dzięki niniejszemu przewodnikowi dowiesz się, jak korzystać ze swoich kopii z
 
 ### Tworzenie instancji na podstawie kopii zapasowej
 
-Zaloguj się do swojego [panelu klient  OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} i kliknij opcję`Public Cloud`{.action}. Następnie wybierz rubrykę `Instance backup`{.action} (Kopia zapasowa instancji).
+Zaloguj się do swojego [panelu klient  OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij opcję`Public Cloud`{.action}. Następnie wybierz rubrykę `Instance backup`{.action} (Kopia zapasowa instancji).
 
 Kliknij `...`{.action} z prawej strony wybranej kopii zapasowej i wybierz opcję `Create an instance`{.action} (Utwórz instancję).
 

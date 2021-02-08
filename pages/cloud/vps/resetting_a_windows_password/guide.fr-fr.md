@@ -17,7 +17,7 @@ Il est possible que vous deviez réinitialiser un mot de passe dans votre VPS so
 
 ## En pratique
 
-Connectez-vous sur le VPS via le VNC de [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) avec les identifiants de connexion que vous avez reçu par e-mail.
+Connectez-vous sur le VPS via le VNC de [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) avec les identifiants de connexion que vous avez reçu par e-mail.
 
 Tapez les commandes suivantes pour monter le système de fichiers distant :
 

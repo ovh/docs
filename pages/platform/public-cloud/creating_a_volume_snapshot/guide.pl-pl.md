@@ -30,7 +30,7 @@ Z wykorzystaniem narzędzi API OpenStack można zautomatyzować operacje wykonyw
 ## Wymagania początkowe
 
 
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - [Utworzony wolumen (dysk dodatkowy)](https://docs.ovh.com/pl/public-cloud/utworzenie_i_konfiguracja_dodatkowego_dysku_dla_instancji/){.external} 
 
 

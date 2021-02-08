@@ -20,7 +20,7 @@ It may become necessary to change the root password on your Linux operating syst
 
 - an OVHcloud [VPS service](https://www.ovhcloud.com/en-ie/vps/) already set up
 - login credentials received via email after the installation (if still valid)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) (for using rescue mode)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) (for using rescue mode)
 
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
@@ -65,7 +65,7 @@ If you need to permit logging in as root, follow the steps in [this guide sectio
 
 #### Step 1: Restart the VPS into rescue mode
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and reboot the VPS in rescue mode. If you need further instructions about using rescue mode with a VPS, you may consult the [rescue mode guide](../rescue/).
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and reboot the VPS in rescue mode. If you need further instructions about using rescue mode with a VPS, you may consult the [rescue mode guide](../rescue/).
 
 #### Step 2: Identify the mount point
 
@@ -139,7 +139,7 @@ passwd: password updated successfully
 
 This will ensure that you can log in again with this username after rebooting, in case root login is disabled.
 
-Finally, reboot your VPS on its drive in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
+Finally, reboot your VPS on its drive in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 
 ### Enabling root login

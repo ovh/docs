@@ -16,8 +16,8 @@ Kun lisäät Exchange-palveluusi verkkotunnuksen, CNAME-kentän (DNS) konfiguroi
 
 ## Edellytykset
 
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Sinulla on valtuudet hallinnoida Exchange-palvelua [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
+- Sinulla on valtuudet hallinnoida Exchange-palvelua [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 - Olet lisännyt verkkotunnuksen Exchange-palveluun, joka pyytää CNAME-kentän lisäystä
 - Voit muokata verkkotunnuksesi konfiguraatiota (DNS-aluetta)
 

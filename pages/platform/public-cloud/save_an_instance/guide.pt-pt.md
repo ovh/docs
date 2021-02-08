@@ -9,20 +9,20 @@ legacy_guide_number: g1881
 
 ## Sumário
 
-Na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, poderá criar um backup de uma instância a qualquer momento e utilizá-la para restaurar a sua instância numa configuração anterior ou criar uma nova instância.
+Na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, poderá criar um backup de uma instância a qualquer momento e utilizá-la para restaurar a sua instância numa configuração anterior ou criar uma nova instância.
 
 **Efetue um backup de uma instância Public Cloud em apenas alguns cliques.**
 
 ## Requisitos
 
 - [Ter criado uma instância Public Cloud a partir da sua conta](https://docs.ovh.com/pt/public-cloud/criar_uma_instancia_a_partir_do_espaco_cliente_ovh/).
-- Estar ligado à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar ligado à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
 ### Criar um backup de uma instância
 
-Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, selecione o separador Public Cloud e a secção `Instâncias`{.action}.
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, selecione o separador Public Cloud e a secção `Instâncias`{.action}.
 
 Clique então nas `...`{.action} do lado direito da instância escolhida e, por fim, em `Criar um backup`{.action}.
 

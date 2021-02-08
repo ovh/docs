@@ -48,7 +48,7 @@ Nyní doplňte parametry příchozího serveru. Některá pole mohou být předv
 |Doména / uživatelské jméno|Zadejte celou e-mailovou adresu.|  
 |Heslo|Zadejte heslo ke svému e-mailovému účtu.|
 |Certifikát klienta|Nic nevybírejte.|
-|Server|Zadejte server, na kterém je Vaše služba Exchange hostována. Informace o serveru naleznete ve svém [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (záložka `Obecné informace`{.action} u příslušné služby Exchange, box `Připojení`{.action}).|
+|Server|Zadejte server, na kterém je Vaše služba Exchange hostována. Informace o serveru naleznete ve svém [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} (záložka `Obecné informace`{.action} u příslušné služby Exchange, box `Připojení`{.action}).|
 |Port|Vyberte port 443.|  
 |Typ zabezpečení|Zvolte „SSL / TLS“.|
 

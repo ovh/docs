@@ -18,7 +18,7 @@ El plan de hosting Cloud Web de OVH es el resultado de combinar veinte años de 
 - Tener contratado un plan de hosting [Cloud Web](https://www.ovh.es/hosting/cloud-web.xml) de OVH.
 - Haber recibido el email de confirmación de la instalación del hosting Cloud Web.
 - Disponer de un [dominio](https://www.ovh.es/dominios/) con el que poder acceder a su sitio web.
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager).
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
@@ -40,7 +40,7 @@ El hosting Cloud Web ofrece la posibilidad de desarrollar un proyecto en distint
 
 Los lenguajes disponibles actualmente son PHP y Node.js.
 
-Para ver los motores de ejecución de su hosting Cloud Web, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento Cloud Web correspondiente. A continuación, abra la pestaña `Motores de ejecución`{.action}.
+Para ver los motores de ejecución de su hosting Cloud Web, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento Cloud Web correspondiente. A continuación, abra la pestaña `Motores de ejecución`{.action}.
 
 Al instalar el alojamiento, se crea automáticamente un motor, que aparece en la tabla como **Opción por defecto**. Para cambiar de motor, haga clic en el botón `...`{.action} situado al final de la línea correspondiente y seleccione `Editar`{.action}. 
 
@@ -134,7 +134,7 @@ Aunque no existe un procedimiento universal, ya que cada proyecto es distinto, n
 
 Una vez instalado el proyecto en el alojamiento Cloud Web, es posible crear direcciones de correo electrónico. Si no quiere crear ninguna, omita este paso.
 
-Para crear una o más direcciones de correo electrónico, también en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Correo electrónico`{.action} en la columna izquierda y seleccione el dominio con el que haya contratado el hosting Cloud Web.
+Para crear una o más direcciones de correo electrónico, también en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Correo electrónico`{.action} en la columna izquierda y seleccione el dominio con el que haya contratado el hosting Cloud Web.
 
 Abra la pestaña `Correo electrónico`{.action} y haga clic en el botón  `Crear una dirección de correo`{.action}. A continuación, siga los pasos que se indican. Si lo necesita, consulte nuestra [Guía de creación de una dirección de correo electrónico](https://docs.ovh.com/es/emails/correo_guia_de_creacion_de_una_direccion_de_correo_electronico/){.external}.
 
@@ -152,8 +152,8 @@ Existen varios registros DNS específicos de OVH. A continuación explicamos dos
 
 |Registro DNS|Servicio asociado|Dónde consultarlo|
 |---|---|---|
-|A|El sitio web|En el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el hosting Cloud Web. A continuación, en la pestaña `Información general`{.action}, consulte la dirección IP que aparece en el apartado **IPv4**.|
-|MX|El correo electrónico |En el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Correo electrónico`{.action} y seleccione el dominio correspondiente. A continuación, en la pestaña `Información general`{.action}, consulte la información que aparece en el apartado **Registros MX**.|
+|A|El sitio web|En el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el hosting Cloud Web. A continuación, en la pestaña `Información general`{.action}, consulte la dirección IP que aparece en el apartado **IPv4**.|
+|MX|El correo electrónico |En el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Correo electrónico`{.action} y seleccione el dominio correspondiente. A continuación, en la pestaña `Información general`{.action}, consulte la información que aparece en el apartado **Registros MX**.|
 
 #### 7.2. Comprobar y/o modificar los registros DNS
 
@@ -163,14 +163,14 @@ Una vez que conozca los registros DNS específicos de su hosting Cloud Web y su 
 >
 > - Si el dominio no utiliza la configuración DNS de OVH, deberá realizar los cambios necesarios desde el panel que le ofrezca el proveedor que gestione dicha configuración.
 > 
-> - Si el dominio está registrado con OVH, compruebe que utiliza nuestra configuración DNS. Para ello, en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleccione el dominio en la columna izquierda y abra la pestaña `Servidores DNS`{.action}.
+> - Si el dominio está registrado con OVH, compruebe que utiliza nuestra configuración DNS. Para ello, en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, seleccione el dominio en la columna izquierda y abra la pestaña `Servidores DNS`{.action}.
 >
 
 A continuación se indica dónde realizar las operaciones correspondientes:
 
 |Configuración DNS utilizada|Dónde realizar las operaciones|
 |---|---|
-|OVH|En el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action} y revise la información, modificándola cuando sea necesario. Si lo necesita, puede consultar nuestra guía [Editar una zona DNS de OVH](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}.|
+|OVH|En el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action} y revise la información, modificándola cuando sea necesario. Si lo necesita, puede consultar nuestra guía [Editar una zona DNS de OVH](https://docs.ovh.com/es/domains/web_hosting_como_editar_mi_zona_dns/){.external}.|
 |Otros|Utilice el panel que le ofrezca el proveedor que gestione la configuración DNS de su dominio. Contacte con este último si tiene dificultades para realizar las operaciones.|
 
 Una vez que haya editado la configuración DNS del dominio, los cambios tardarán un máximo de 24 horas en propagarse y ser efectivos. Si ha añadido varios dominios a su hosting Cloud Web como multisitio, deberá realizar las dos operaciones anteriores para cada uno de ellos. 

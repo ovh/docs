@@ -16,8 +16,8 @@ When you add a domain name to your Exchange service, you may be required to conf
 
 ## Requirements
 
-- You must be logged in to your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
-- You need to have admin rights for the Exchange service on your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
+- You need to have admin rights for the Exchange service on your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
 - You need to have added a domain name to your Exchange service before requesting the addition of a CNAME record.
 - You must have the right to modify your domain name’s configuration (via its DNS zone).
 

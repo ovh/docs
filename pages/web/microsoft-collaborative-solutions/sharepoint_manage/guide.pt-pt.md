@@ -17,14 +17,14 @@ As ofertas SharePoint disponibilizam um espaço de armazenamento partilhado ao s
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Ter previamente subscrito uma plataforma [Hosted Exchange](https://www.ovh.pt/emails/hosted-exchange/){.external} para encomendar uma plataforma SharePoint associada.
 
 ## Instruções
 
 ### 1.ª etapa: Encomendar uma plataforma SharePoint
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), secção «Web». Na barra à esquerda, clique em `Encomendar`{.action} e depois em `Sharepoint`{.action}.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), secção «Web». Na barra à esquerda, clique em `Encomendar`{.action} e depois em `Sharepoint`{.action}.
 
 Vão ser-lhe propostos dois tipos de plataformas:
 
@@ -39,7 +39,7 @@ De seguida, clique em `Subscrever o serviço`{.action} para finalizar a encomend
 
 Depois de validar e pagar a encomenda, receberá no seu endereço de e-mail principal uma mensagem de confirmação a indicar que a plataforma se encontra preparada para a configuração.
 
-Para consultar a mensagem, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), clique no seu perfil (no topo da página, à direita) e, a seguir, nas suas iniciais. Clique no separador `E-mails recebidos`{.action} e procure o e-mail com o assunto:
+Para consultar a mensagem, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no seu perfil (no topo da página, à direita) e, a seguir, nas suas iniciais. Clique no separador `E-mails recebidos`{.action} e procure o e-mail com o assunto:
 
 > **\[xx-11111-ovh] Configurar o serviço Microsoft SharePoint!**
 
@@ -55,7 +55,7 @@ Defina o nome da plataforma no campo «URL do SharePoint» e clique em `Validar 
 
 ### 3.ª etapa: Configuração da plataforma SharePoint
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e dirija-se à secção `Web Cloud`. Na barra à esquerda, clique em `Microsoft`{.action} e em `SharePoint`{.action}. Por fim, selecione a plataforma SharePoint em questão.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e dirija-se à secção `Web Cloud`. Na barra à esquerda, clique em `Microsoft`{.action} e em `SharePoint`{.action}. Por fim, selecione a plataforma SharePoint em questão.
 
 #### **SharePoint standalone**
 

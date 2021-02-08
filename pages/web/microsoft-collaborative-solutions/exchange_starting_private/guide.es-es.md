@@ -18,7 +18,7 @@ Usted acaba de realizar el pedido de una plataforma Private Exchange. Esta guía
 ## Requisitos
 
 - Haber contratado el [plan Private Exchange de OVHcloud](https://www.ovh.es/emails/){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
@@ -26,7 +26,7 @@ Usted acaba de realizar el pedido de una plataforma Private Exchange. Esta guía
 
 Una vez realizado el pedido, le enviaremos la información necesaria para configurar la plataforma Private Exchange a la dirección de correo electrónico de contacto indicada en su área de cliente. 
 
-También puede consultar este mensaje de correo electrónico iniciando sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager), haciendo clic en su perfil en la esquina superior derecha y seleccionando `«Mi cuenta»`{.action}. Acceda a la pestaña `«Mensajes recibidos»`{.action} y busque el mensaje de correo electrónico con el siguiente asunto:
+También puede consultar este mensaje de correo electrónico iniciando sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haciendo clic en su perfil en la esquina superior derecha y seleccionando `«Mi cuenta»`{.action}. Acceda a la pestaña `«Mensajes recibidos»`{.action} y busque el mensaje de correo electrónico con el siguiente asunto:
 
 > **\[xx-11111-ovh] ¡Su servicio Private Exchange 20_xxx_ está en proceso de entrega!**
 

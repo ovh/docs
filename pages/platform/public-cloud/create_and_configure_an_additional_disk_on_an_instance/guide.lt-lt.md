@@ -22,13 +22,13 @@ This can be useful in cases where:
 
 ## Requirements
 
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 * a [Public Cloud Instance](https://www.ovh.lt/public-cloud/instances/){.external} in your OVH account
 * administrative (root) access to your instance via SSH
 
 ## Instructions
 
-Firstly, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu. Then click the `Servers`{.action} side-menu to expand your list of projects.
+Firstly, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} and click the `Cloud`{.action} menu. Then click the `Servers`{.action} side-menu to expand your list of projects.
 
 When you've found your project in the list, click it and then select the `Infrastructure`{.action} tab.
 

@@ -17,14 +17,14 @@ SPF záznam (Sender Policy Framework) umožňuje serveru, který obdrží e-mail
 
 ## Prerekvizity
 
-- Dostatečná oprávnění k provádění úprav v  DNS zóně domény prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostatečná oprávnění k provádění úprav v  DNS zóně domény prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - Doména musí být nakonfigurována na DNS servery OVH.
 
 > [!warning]
 >
 > Pokud Vaše doména není nakonfigurována na DNS servery OVH, budete muset úpravu SPF záznamu provést pomocí rozhraní pro správu domény u Vašeho současného poskytovatele.
-> Pokud je Vaše doména registrována u OVH, můžete její konfiguraci ověřit pomocí [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Za tímto účelem přejděte do základního rozhraní pro správu domény a vyberte záložku `DNS servery`{.action}.
+> Pokud je Vaše doména registrována u OVH, můžete její konfiguraci ověřit pomocí [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Za tímto účelem přejděte do základního rozhraní pro správu domény a vyberte záložku `DNS servery`{.action}.
 >
 
 ## Postup
@@ -59,7 +59,7 @@ Pokud si objednáte některé z těchto řešení, doporučujeme do konfigurace 
 mypersonaldomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
-Pokud Vaše doména používá konfiguraci OVH, můžete snadno ověřit, zda DNS zóna domény již SPF záznam neobsahuje. Za tímto účelem přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} a v levém postranním panelu klikněte na sekci `Domény`{.action}. Vyberte požadovanou doménu a přejděte do záložky `DNS zóna`{.action}.
+Pokud Vaše doména používá konfiguraci OVH, můžete snadno ověřit, zda DNS zóna domény již SPF záznam neobsahuje. Za tímto účelem přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} a v levém postranním panelu klikněte na sekci `Domény`{.action}. Vyberte požadovanou doménu a přejděte do záložky `DNS zóna`{.action}.
 
 Zobrazí se tabulka obsahující přehled aktuálně nakonfigurovaných vstupů domény (každý řádek obsahuje informace o jednom DNS záznamu).  
 
@@ -85,7 +85,7 @@ Pro snadnější nalezení řádku s OVH SPF záznamem můžete v tabulce apliko
 
 ### Fáze 3: modifikace SPF záznamu
 
-Za účelem úpravy SPF záznamu v OVH konfiguraci své domény se přihlaste do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. V levém postranním panelu vyberte sekci `Domény`{.action}, klikněte na požadovanou doménu a přejděte do záložky `DNS zóna`{.action}.
+Za účelem úpravy SPF záznamu v OVH konfiguraci své domény se přihlaste do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. V levém postranním panelu vyberte sekci `Domény`{.action}, klikněte na požadovanou doménu a přejděte do záložky `DNS zóna`{.action}.
 
 Zobrazí se tabulka s aktuální OVH konfigurací domény. Každý řádek obsahuje jeden DNS záznam.
 

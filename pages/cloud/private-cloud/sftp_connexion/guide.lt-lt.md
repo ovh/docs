@@ -18,7 +18,7 @@ This system will only allow you to access the upload-vpn folder in your datastor
 
 ## Requirements
 
-* You must have an active user account created from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* You must have an active user account created from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 
 ## Instructions

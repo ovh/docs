@@ -16,7 +16,7 @@ Logowanie do instancji OVHcloud Public Cloud odbywa się podobnie jak zwykłe lo
 
 ## Wymagania początkowe
 
-* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 * [instancja OVHcloud Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} utworzona na koncie
 
 ## W praktyce
@@ -74,7 +74,7 @@ Aby zalogować się do instancji systemu Linux przy użyciu systemu Windows, mo�
 
 #### Zakończenie instalacji
 
-Po utworzeniu instancji należy przeprowadzić do końca przygotowanie systemu, czyli tak zwany proces *sysprep*. W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} i uruchom konsolę VNC z poziomu pulpitu nawigacyjnego instancji:
+Po utworzeniu instancji należy przeprowadzić do końca przygotowanie systemu, czyli tak zwany proces *sysprep*. W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i uruchom konsolę VNC z poziomu pulpitu nawigacyjnego instancji:
 
 ![VNC console](images/vnc_console.png)
 

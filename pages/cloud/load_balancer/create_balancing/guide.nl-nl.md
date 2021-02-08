@@ -16,7 +16,7 @@ De nieuwe OVH Load Balancer biedt verschillende load balancing methodes voor uw 
 
 ## Vereisten
 
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 - U moet een serverfarm hebben gemaakt.
 
 

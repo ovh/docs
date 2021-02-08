@@ -21,7 +21,7 @@ Tenga en cuenta que las claves SSH no se utilizan con fines de autenticación en
 ## Requisitos
 
 * un proyecto [Public Cloud]({ovh_www}/public-cloud/){.external} en su cuenta de OVHcloud
-* acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
 
 ## Procedimiento
 
@@ -106,7 +106,7 @@ A medida que mueva su ratón, la barra de progreso irá rellenándose. Al llenar
 
 ### Importación de una clave SSH en el área de cliente de OVHcloud
 
-En primer lugar, resalte y copie el texto de su clave pública y, a continuación, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+En primer lugar, resalte y copie el texto de su clave pública y, a continuación, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 Ahora, haga clic en el menú `Public Cloud`{.action}.
 

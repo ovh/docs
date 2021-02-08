@@ -28,7 +28,7 @@ Historia zawiera informacje o dacie, godzinie, nadawcy, odbiorcy oraz treści wy
 
 ### Etap 1: sprawdzanie historii w Panelu klienta
 
-Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager) i wybierz opcję `Telecom`{.action} (1). Następnie kliknij pozycję `SMS`{.action} po lewej stronie (2) i wybierz Twoje konto SMS (3).
+Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz opcję `Telecom`{.action} (1). Następnie kliknij pozycję `SMS`{.action} po lewej stronie (2) i wybierz Twoje konto SMS (3).
 
 Na pasku kart wybierz pozycję `SMS`{.action} (4), a następnie `Historia wysyłek`{.action} (5).
 

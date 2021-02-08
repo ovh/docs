@@ -52,7 +52,7 @@ Cette authentification s'effectue par une clef DKIM à ajouter dans votre zone D
 
 Toujours dans le but d'optimiser l'envoi et d'éviter le blocage de vos e-mails, un *reverse IP* doit être configuré avec votre nom de domaine.
 
-Pour modifier votre *reverse IP* dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, allez dans la partie `Dédié`{.action} puis `IP`{.action}. Choisissez ensuite une IPv4, cliquez sur l'engrenage à droite puis sur `Modifier le reverse`{.action} :
+Pour modifier votre *reverse IP* dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, allez dans la partie `Dédié`{.action} puis `IP`{.action}. Choisissez ensuite une IPv4, cliquez sur l'engrenage à droite puis sur `Modifier le reverse`{.action} :
 
 ![Reverse IP](images/reverse_ip_2020.png)
 

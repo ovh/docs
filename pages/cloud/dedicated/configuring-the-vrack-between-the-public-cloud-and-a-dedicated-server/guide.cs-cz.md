@@ -19,7 +19,7 @@ section: vRack
 
 - Služba [vRack](https://www.ovh.cz/reseni/vrack/){.external}.
 - [Dedikovaný server](https://www.ovh.cz/dedikovane_servery/){.external} kompatibilní se službou vRack.
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - Přístup k Vámi zvolenému rozsahu privátních IP adres.
 
 
@@ -27,7 +27,7 @@ section: vRack
 
 ### Vytvoření Public Cloud projektu
 
-V cloudové sekci [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} klikněte na tlačítko `Objednat`{.action}.
+V cloudové sekci [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} klikněte na tlačítko `Objednat`{.action}.
 
 ![Vytvořit projekt](images/pci-project-01.png){.thumbnail}
 

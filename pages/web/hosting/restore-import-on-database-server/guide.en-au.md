@@ -17,7 +17,7 @@ Following an error on your database, you must be able to restore a backup or imp
 ## Requirements
 
 - a [Private SQL Web Hosting plan](https://www.ovh.com.au/web-hosting/sql-options.xml)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 ## Instructions
 
@@ -29,7 +29,7 @@ Following an error on your database, you must be able to restore a backup or imp
 
 ### Restoring and importing a database from the Control Panel
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the database name concerned. Next, switch to the `Databases` tab.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the database name concerned. Next, switch to the `Databases` tab.
 
 In the **Backups** column, the number corresponds to the available backups for your database.
 

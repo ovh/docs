@@ -14,7 +14,7 @@ The first part of the guide will be OVH specific for basic usage. The second par
 
 ## Prerequisites
 
-* Access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager). 
+* Access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). 
 
 ## Instructions
 

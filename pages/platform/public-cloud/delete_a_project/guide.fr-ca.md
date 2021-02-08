@@ -11,7 +11,7 @@ order: 2
 
 ## Objectif
 
-Lorsque vous n’avez plus besoin de votre projet [Public Cloud]({ovh_www}/public-cloud/){.external}, vous pouvez le supprimer directement depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Lorsque vous n’avez plus besoin de votre projet [Public Cloud]({ovh_www}/public-cloud/){.external}, vous pouvez le supprimer directement depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 La suppression de votre projet déclenchera la création d’une dernière facture correspondant à votre utilisation en cours. 
 
@@ -25,11 +25,11 @@ Veuillez noter que la procédure de suppression d’un projet est différente de
 ## Prérequis
 
 * un projet [Public Cloud]({ovh_www}public-cloud/){.external} créé dans votre compte OVH
-* Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+* Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
 
-Tout d’abord, connectez-vous à [l’Espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} et cliquez sur le menu `Public Cloud`{.action}.
+Tout d’abord, connectez-vous à [l’Espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et cliquez sur le menu `Public Cloud`{.action}.
 
 Cliquez ensuite sur `Project settings`{.action} sous le menu `Project Management` dans le volet de gauche.
 

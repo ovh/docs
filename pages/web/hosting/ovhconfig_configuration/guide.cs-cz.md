@@ -38,7 +38,7 @@ V následujícím textu bude do detailu rozebrána první z výše uvedených me
 
 Přichystejte si přístupové údaje k FTP prostoru svého webhostingu (uživatelské jméno, heslo a adresa serveru). Jakmile máte výše uvedené údaje k dispozici, připojte se ke svému FTP prostoru. V případě potíží se obraťte na následující dokumentaci: [ Připojení k webhostingovému úložišti](https://docs.ovh.com/cz/cs/hosting/spusteni-stranek-online/#2-pripojeni-k-webhostingovemu-ulozisti){.external}.
 
-**Pokud přístupové údaje nemáte k dispozici**, přihlaste se do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} a v levém postranním panelu klikněte na položku `Hostingy`{.action}. Vyberte příslušné webhostingové řešení a přejděte do záložky `FTP-SSH`{.action}. Zde naleznete veškeré údaje potřebné pro připojení ke svému FTP prostoru. Pokud si nepamatujete své přístupové heslo, postupujte podle následujících instrukcí: [Změna FTP hesla](https://docs.ovh.com/cz/cs/hosting/zmena-hesla-ftp/){.external}.
+**Pokud přístupové údaje nemáte k dispozici**, přihlaste se do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} a v levém postranním panelu klikněte na položku `Hostingy`{.action}. Vyberte příslušné webhostingové řešení a přejděte do záložky `FTP-SSH`{.action}. Zde naleznete veškeré údaje potřebné pro připojení ke svému FTP prostoru. Pokud si nepamatujete své přístupové heslo, postupujte podle následujících instrukcí: [Změna FTP hesla](https://docs.ovh.com/cz/cs/hosting/zmena-hesla-ftp/){.external}.
 
 ![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
 

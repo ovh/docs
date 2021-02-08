@@ -24,14 +24,14 @@ Nos services d’hébergement web sont compatibles avec certains des systèmes d
 ## Prérequis
 
 - Un hébergement web actif
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
 
 > [!primary]
 >**Installation automatique**
 >
->Vous pouvez installer chacun de ces CMS automatiquement en quelques clics à partir de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Veuillez lire le guide suivant :
+>Vous pouvez installer chacun de ces CMS automatiquement en quelques clics à partir de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Veuillez lire le guide suivant :
 >
 >[Installer son site avec les modules en 1 clic.](../modules-en-1-clic/)
 >

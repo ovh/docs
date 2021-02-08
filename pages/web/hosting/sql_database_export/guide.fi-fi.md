@@ -19,13 +19,13 @@ Nykyään lähes kaikki sisällönhallintajärjestelmät (WordPress, Joomla! jne
 
 - Sinulla on [webhotellituote](https://www.ovh-hosting.fi/webhotelli){.external}.
 - Sinulla on [OVH:n webhotellituotteen](https://www.ovh-hosting.fi/webhotelli){.external} yhteydessä luotu tietokanta.
-- Käytetystä varmuuskopiointitavasta riippuen, sinulla on pääsyoikeudet webhotellituotteesi hallintaan [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external} tai tiedot, joiden avulla voit kirjautua tietokantaan.
+- Käytetystä varmuuskopiointitavasta riippuen, sinulla on pääsyoikeudet webhotellituotteesi hallintaan [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} tai tiedot, joiden avulla voit kirjautua tietokantaan.
 
 ## Käytännössä
 
 Ennen toimenpiteen aloitusta sinun on määritettävä tapa, jolla tietokannan varmuuskopio haetaan. Siihen on olemassa useita vaihtoehtoja teknisen osaamisesi tasosta riippuen.
 
-- **OVH:n varmuuskopiointityökalun käyttäminen**: tämän vaihtoehdon avulla voit hakea tietokantojesi varmuuskopioita [OVH:n hallintapaneelista](https://www.ovh.com/auth/?action=gotomanager){.external}. Tämä on kaikkein helppokäyttöisin ratkaisu, sillä se ei edellytä teknistä erityisosaamista.
+- **OVH:n varmuuskopiointityökalun käyttäminen**: tämän vaihtoehdon avulla voit hakea tietokantojesi varmuuskopioita [OVH:n hallintapaneelista](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Tämä on kaikkein helppokäyttöisin ratkaisu, sillä se ei edellytä teknistä erityisosaamista.
 
 - **Varmuuskopiointi phpMyAdmin-käyttöliittymän kautta**: tämä vaihtoehto edellyttää kirjautumista phpMyAdmin-käyttöliittymään toimenpiteen tekemistä varten. Käyttöliittymän hallinnan osaaminen on edellytyksenä sen käytölle.
 
@@ -46,7 +46,7 @@ Jatka tämän dokumentaation lukemista halutun varmuuskopiointitavan mukaan.
 
 ### Varmuuskopion hakeminen OVH:n työkalun kautta
 
-Varmuuskopiointityökaluun päästäksesi kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `Tietokannat`{.action}.
+Varmuuskopiointityökaluun päästäksesi kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `Tietokannat`{.action}.
 
 Näkyviin tulevassa taulukossa on kaikki webhotellituotteen yhteydessä luodut tietokannat. Nyt voit valita uuden varmuuskopioinnin tekemisen sekä varmuuskopion hakemisen kahdella erillisellä tavalla.
 
@@ -76,7 +76,7 @@ Varmuuskopion lataamiseksi klikkaa kolmea pistettä sen vieressä ja sitten `Lat
 
 ### Varmuuskopion hakeminen phpMyAdmin-käyttöliittymästä
 
-Tämän toimenpiteen toteuttamiseksi sinun on kirjauduttava phpMyAdmin-käyttöliittymään. Sen kirjautumislinkin löydät kirjautumalla [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `Tietokannat`{.action}.
+Tämän toimenpiteen toteuttamiseksi sinun on kirjauduttava phpMyAdmin-käyttöliittymään. Sen kirjautumislinkin löydät kirjautumalla [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `Tietokannat`{.action}.
 
 Näkyviin tulevassa taulukossa on kaikki webhotellituotteen yhteydessä luodut tietokannat. Klikkaa kolmea pistettä halutun tietokannan oikealla puolella ja sitten `Pääsy phpMyAdminiin`{.action}.
 

@@ -13,12 +13,12 @@ In the OVHcloud Control Panel, you can save and manage different payment methods
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 - a valid payment method
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click your name in the top right-hand corner, then click `Payment method`{.action}.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, click your name in the top right-hand corner, then click `Payment method`{.action}.
 
 ![manage-payment-methods](images/hubpayment.png){.thumbnail}
 

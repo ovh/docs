@@ -18,7 +18,7 @@ Met [Private Cloud](https://www.ovh.nl/private-cloud/){.external} kunnen resourc
 ## Vereisten
 
 * U moet beschikken over [Private Cloud](https://www.ovh.nl/private-cloud/){.external}.
-* Uw gebruikersaccount moet beschikken over het [recht om nieuwe resources toe te voegen](https://docs.ovh.com/nl/private-cloud/gebruikersrechten-wijzigen/){.external} – deze rechten kunnen aan de gebruiker worden toegewezen via het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Uw gebruikersaccount moet beschikken over het [recht om nieuwe resources toe te voegen](https://docs.ovh.com/nl/private-cloud/gebruikersrechten-wijzigen/){.external} – deze rechten kunnen aan de gebruiker worden toegewezen via het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 * U moet ingelogd zijn op de vSphere client.
 
 

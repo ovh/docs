@@ -16,7 +16,7 @@ order: 6
 ## Prerequisiti
 
 - Disporre di un piano di [hosting Web](https://www.ovh.it/hosting-web/){.external} attivo
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
@@ -29,7 +29,7 @@ order: 6
 
 ### FTP
 
-- Errore di accesso (“Autenticazione di connessione 530 non riuscita”): È possibile verificare la correttezza delle credenziali di accesso allo Spazio Cliente FTP dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} nella scheda `FTP - SSH`. La password non vengono mai mostrate, ma possono essere modificate. Consulta le nostre [guide FTP](../accedere-spazio-storage-ftp-hosting-web/).
+- Errore di accesso (“Autenticazione di connessione 530 non riuscita”): È possibile verificare la correttezza delle credenziali di accesso allo Spazio Cliente FTP dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella scheda `FTP - SSH`. La password non vengono mai mostrate, ma possono essere modificate. Consulta le nostre [guide FTP](../accedere-spazio-storage-ftp-hosting-web/).
 
 - Le connessioni FTP devono utilizzare la **modalità passiva**. Assicurati che il tuo script o il tuo client FTP siano configurati correttamente.
 
@@ -70,7 +70,7 @@ Per maggiori informazioni sulla gestione dei database, consulta la guida [Creare
 
 - È possibile verificare i dettagli della configurazione del tuo hosting Web. Per farlo, consulta la rubrica \[”Informazioni tecniche del tuo hosting Web”\](.#informazioni-tecniche-del-tuo-hosting-web) in fondo a questa guida. 
 
-- È possibile modificare la versione PHP del tuo hosting Web dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)(“**Configurazione**”) oppure modificando il file .ovhconfig.  In questo ultimo caso sono possibili anche configurazioni miste. Per maggiori dettagli, consulta le nostre guide:
+- È possibile modificare la versione PHP del tuo hosting Web dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)(“**Configurazione**”) oppure modificando il file .ovhconfig.  In questo ultimo caso sono possibili anche configurazioni miste. Per maggiori dettagli, consulta le nostre guide:
 
 [Configurare il file .ovhconfig di un hosting Web](../configurare-file-ovhconfig/)  
 [Modificare la configurazione di un hosting Web](../modifica_lambiente_di_esecuzione_del_tuo_hosting_web/)
@@ -118,7 +118,7 @@ Consulta le rispettive pagine informative per verificare le librerie disponibili
 
 Ulteriori informazioni relative al tuo cluster sono disponibili a questo link: <https://cluster015.hosting.ovh.net/infos/>
 
-Sostituisci il cluster indicato nell’URL con il tuo. Per sapere su quale cluster di hosting Web si trova il tuo servizio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona `Web Cloud`{.action} nella barra di navigazione superiore. Clicca nella sezione `Hosting`{.action} del menu a sinistra e seleziona il tuo servizio. A questo punto clicca sulla scheda `FTP - SSH`{.action}. Il numero del cluster è indicato nell’URL di accesso FTP al tuo hosting.
+Sostituisci il cluster indicato nell’URL con il tuo. Per sapere su quale cluster di hosting Web si trova il tuo servizio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Web Cloud`{.action} nella barra di navigazione superiore. Clicca nella sezione `Hosting`{.action} del menu a sinistra e seleziona il tuo servizio. A questo punto clicca sulla scheda `FTP - SSH`{.action}. Il numero del cluster è indicato nell’URL di accesso FTP al tuo hosting.
 
 Le specifiche tecniche della soluzione di hosting Cloud Web sono disponibili a questo link: <https://cloudweb-infos.hosting.ovh.net/>
 

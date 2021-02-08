@@ -18,7 +18,7 @@ Exchange-palvelun avulla voidaan hyödyntää yrityssähköpostiosoitteita, jotk
 
 - Sinulla on [Exchange-tuote](https://www.ovh-hosting.fi/sahkopostit/){.external}.
 - Sinulla on vähintään kaksi aktiivista Exchange-tiliä konfiguroituna samalla OVH:n Exchange-alustalla.
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager).
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 - Sinulla on tunnukset sille Exchange-tilille, joka tulee saamaan uusia jaettuja oikeuksia.
 
 ## Käytännössä
@@ -40,7 +40,7 @@ Kun olet tunnistanut tilin, jonka oikeuksia jaetaan, määrittänyt jaettavat oi
 
 ### 1\. vaihe: Jaon toteutus
 
-Toimenpiteen aloittamiseksi kirjaudu [OVH:n hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}. Klikkaa kohtaa `Microsoft`{.action} vasemman reunan palveluvalikossa, sitten `Exchange`{.action}. Klikkaa sitten sitä Exchange-palvelua, jossa tili, jonka oikeuksia jaetaan, sijaitsee. Mene lopuksi välilehdelle `Sähköpostit`{.action}.
+Toimenpiteen aloittamiseksi kirjaudu [OVH:n hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Klikkaa kohtaa `Microsoft`{.action} vasemman reunan palveluvalikossa, sitten `Exchange`{.action}. Klikkaa sitten sitä Exchange-palvelua, jossa tili, jonka oikeuksia jaetaan, sijaitsee. Mene lopuksi välilehdelle `Sähköpostit`{.action}.
 
 Näkyviin tulevassa taulukossa on kaikki Exchange-palveluusi liitetyt tilit. Klikkaa oikeuksien jakamisen kohteena olevan tilin oikealla puolella olevaa kolmea pistettä ja sitten `Valtuutusten hallinta`{.action}.
 

@@ -14,11 +14,11 @@ section: Inviare SMS
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud con saldo SMS.
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 ## Procedura
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager) e seleziona `Telecom`. Quindi clicca su `SMS` a sinistra e seleziona il tuo account SMS.
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Telecom`. Quindi clicca su `SMS` a sinistra e seleziona il tuo account SMS.
 
 Il campo “Inviare un SMS” è il primo elemento disponibile nella lista delle azioni.
 

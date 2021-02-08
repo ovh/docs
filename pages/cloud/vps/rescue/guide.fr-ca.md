@@ -29,7 +29,7 @@ Effectuer des vérifications en mode rescue vous aide également à déterminer 
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 - Avoir votre [VPS OVHcloud](https://www.ovhcloud.com/fr/vps/){.external} déjà configuré.
 
 > [!warning]
@@ -41,7 +41,7 @@ Effectuer des vérifications en mode rescue vous aide également à déterminer 
 
 ### Activation du mode rescue
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager), accédez à la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur dans la liste de navigation de gauche sous `VPS`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), accédez à la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur dans la liste de navigation de gauche sous `VPS`{.action}.
 
 #### Avec une offre VPS actuelle
 
@@ -65,10 +65,10 @@ Une fois que vous avez lancé le redémarrage, une barre de progression indique 
 
 > [!primary]
 >
-> Vous recevrez un email automatisé avec les informations d'identification SSH pour accéder au mode rescue. Veuillez attendre la réception de l'e-mail avant de prendre toute autre mesure. Cet e-mail est également disponible dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager). Pour le retrouver, cliquez sur le nom associé à votre identifiant OVHcloud dans la barre de menus située dans le coin supérieur droit, puis sélectionnez `E-mails de service`{.action}.
+> Vous recevrez un email automatisé avec les informations d'identification SSH pour accéder au mode rescue. Veuillez attendre la réception de l'e-mail avant de prendre toute autre mesure. Cet e-mail est également disponible dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Pour le retrouver, cliquez sur le nom associé à votre identifiant OVHcloud dans la barre de menus située dans le coin supérieur droit, puis sélectionnez `E-mails de service`{.action}.
 >
 
-Vous pouvez maintenant vous connecter via SSH à votre VPS en utilisant les informations d'identification du mode rescue. Une fois vos actions terminées en mode rescue, redémarrez le VPS en mode « normal » à partir de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
+Vous pouvez maintenant vous connecter via SSH à votre VPS en utilisant les informations d'identification du mode rescue. Une fois vos actions terminées en mode rescue, redémarrez le VPS en mode « normal » à partir de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 ## Aller plus loin
 

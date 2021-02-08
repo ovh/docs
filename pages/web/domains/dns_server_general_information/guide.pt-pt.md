@@ -18,8 +18,8 @@ Por outras palavras, estes registos alojados nos servidores DNS fazem com que os
 ## Requisitos
 
 - Ter um nome de domínio registado na OVH.
-- Dispor das autorizações [adequadas para gerir](https://docs.ovh.com/pt/customer/gestao_dos_contactos/){.external} o nome de domínio a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dispor das autorizações [adequadas para gerir](https://docs.ovh.com/pt/customer/gestao_dos_contactos/){.external} o nome de domínio a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 > [!warning]
 >
@@ -47,7 +47,7 @@ No entanto, é importante ter em conta que:
 
 ### 1 - Aceder à zona de gestão dos servidores DNS OVH do domínio
 
-Para iniciar esta operação, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Domínios`{.action} na barra à esquerda e escolha o domínio em causa. A seguir, aceda ao separador `Servidores DNS`{.action}.
+Para iniciar esta operação, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Domínios`{.action} na barra à esquerda e escolha o domínio em causa. A seguir, aceda ao separador `Servidores DNS`{.action}.
 
 A tabela que aparecer apresenta os servidores DNS atualmente configurados na OVH para o domínio. Vários servidores DNS podem estar listados, sendo que cada um deles possui a sua própria linha na tabela.
 
@@ -72,7 +72,7 @@ Uma vez completada esta informação, clique em `Aplicar configuração`{.action
 
 Depois de realizar as alterações necessárias, deverá esperar que as alterações se propaguem. Deve ter em conta dois prazos diferentes:
 
-- O organismo responsável pela gestão da extensão do domínio deve ter em conta as alterações realizados na OVH. Para seguir o progresso na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na coluna à esquerda, clique em `Domínios`{.action} e em `Operações em curso`{.action}.
+- O organismo responsável pela gestão da extensão do domínio deve ter em conta as alterações realizados na OVH. Para seguir o progresso na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na coluna à esquerda, clique em `Domínios`{.action} e em `Operações em curso`{.action}.
 - Depois de o organismo responsável pela gestão da sua extensão registar as alterações, a modificação poderá demorar até 48 horas para ficar efetiva.
 
 ## Quer saber mais?

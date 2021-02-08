@@ -24,7 +24,7 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 ## Requirements
 
 - You must have an OVHcloud service with a Firewall Network ([Dedicated Server](https://www.ovh.com/sg/dedicated-servers/){.external}, [VPS](https://www.ovh.com/sg/vps/){.external}, [Public Cloud instance](https://www.ovhcloud.com/en-sg/public-cloud/){.external}, [Private Cloud](https://www.ovh.com/sg/private-cloud/){.external},  [Failover IP](https://www.ovh.com/sg/dedicated-servers/ip_failover.xml){.external}, etc.)
-- You must have access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- You must have access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}.
 - You must have basic network skills
 
 

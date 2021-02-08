@@ -18,7 +18,7 @@ Leer hoe u een OVH-domeinnaam overdraagt naar de registrar van uw keuze
 ## Vereisten
 - U moet een domeinnaam hebben geregistreerd bij OVH.
 - U moet gemachtigd zijn om de overdracht van de domeinnaam aan te vragen; de domeinnaamhouder en/of de beheerders ervan moeten op de hoogte worden gesteld van het overdrachtsverzoek.
-- U moet gemachtigd zijn om de betreffende domeinnaam te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet gemachtigd zijn om de betreffende domeinnaam te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 - De domeinnaam moet meer dan 61 dagen geleden zijn aangemaakt en mag gedurende die periode niet zijn overgedragen of van eigenaar zijn veranderd.
 
 > [!primary]
@@ -30,7 +30,7 @@ Leer hoe u een OVH-domeinnaam overdraagt naar de registrar van uw keuze
 
 ### Stap 1: Verwijder de overdrachtsbescherming voor de domeinnaam
 
-Als u de overdrachtsbescherming voor uw OVH-domeinnaam wilt verwijderen, klikt u op `Web Cloud`{.action} in de servicebalk bovenaan wanneer u bent verbonden met uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Ga naar het gedeelte `Domeinen`{.action} aan de linkerkant en klik vervolgens op de betreffende domeinnaam. Vink op het tabblad `Algemene informatie`{.action} het vak `Overdrachtsbeveiliging`{.action} uit en klik vervolgens op `Bevestigen`{.action}.
+Als u de overdrachtsbescherming voor uw OVH-domeinnaam wilt verwijderen, klikt u op `Web Cloud`{.action} in de servicebalk bovenaan wanneer u bent verbonden met uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Ga naar het gedeelte `Domeinen`{.action} aan de linkerkant en klik vervolgens op de betreffende domeinnaam. Vink op het tabblad `Algemene informatie`{.action} het vak `Overdrachtsbeveiliging`{.action} uit en klik vervolgens op `Bevestigen`{.action}.
 
 > [!primary]
 >

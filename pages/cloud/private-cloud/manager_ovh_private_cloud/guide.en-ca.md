@@ -17,14 +17,14 @@ The OVHcloud Hosted Private Cloud Control Panel enables you to easily manage the
 ## Requirements
 
 - a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-ca/enterprise/products/hosted-private-cloud/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 
 ## Instructions
 
 ### General information tab
 
-Once you have navigated to the "Hosted Private Cloud" section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), and selected your service under `Private Cloud`{.action} in the left-hand navigation bar, you will have access to a general overview of your Hosted Private Cloud service:
+Once you have navigated to the "Hosted Private Cloud" section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), and selected your service under `Private Cloud`{.action} in the left-hand navigation bar, you will have access to a general overview of your Hosted Private Cloud service:
 
 ![General information](images/controlpanel1.png){.thumbnail}
 

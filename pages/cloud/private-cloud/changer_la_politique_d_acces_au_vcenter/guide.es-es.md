@@ -19,11 +19,11 @@ Es posible restringir y gestionar el acceso al vCenter para mejorar la seguridad
 ## Requisitos
 
 - Tener una solución [Hosted Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
-Desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager), acceda a la sección `Servidores`{.action} y, en el menú de la izquierda, seleccione su servicio en la columna `Private Cloud.`{.action}
+Desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Servidores`{.action} y, en el menú de la izquierda, seleccione su servicio en la columna `Private Cloud.`{.action}
 
 Desde la página principal del servicio, haga clic en la pestaña `Seguridad`{.action} y, a continuación, en `Modificar la política de acceso al vCenter`{.action}.
 

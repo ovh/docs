@@ -19,13 +19,13 @@ La solución E-mail Pro le permite disfrutar de direcciones de correo electróni
 - Tener una cuenta [E-mail Pro](https://www.ovh.es/emails/email-pro/){.external}.
 - Haber recibido el mensaje de correo electrónico de confirmación de la instalación de la solución E-mail Pro.
 - Tener un nombre de dominio.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
 
 ### 1. Acceder a la gestión del servicio
 
-Una vez creado y activado el servicio E-mail Pro, puede administrarlo desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Una vez creado y activado el servicio E-mail Pro, puede administrarlo desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 Para ello, inicie sesión en el área de cliente. En la barra de servicios a la izquierda, haga clic en `E-mail Pro`{.action} y seleccione el nombre del servicio correspondiente.
 
@@ -83,7 +83,7 @@ Una vez añadido el nombre de dominio como dominio asociado, compruebe su config
 
 En la columna `Diagnóstico`{.action}, podrá ver si la configuración DNS del nombre de dominio es correcta. Si debe modificarla, se mostrará una señal roja. Existen dos posibilidades:
 
-- **Configuración automática al añadir un nombre de dominio de OVHcloud**: si acaba de realizar el cambio, pueden pasar algunas horas antes de que se muestre en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- **Configuración automática al añadir un nombre de dominio de OVHcloud**: si acaba de realizar el cambio, pueden pasar algunas horas antes de que se muestre en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 - **Configuración manual de un nombre dominio no gestionado por OVHcloud**: haga clic en la señal roja para ver los cambios que debe realizar. <br>*Para un registro CNAME*, consulte nuestra guía <br>*Para un registro MX*, consulte nuestra guía <br>*Para un registro SRV*, complete la zona DNS con la ayuda de la información proporcionada al hacer clic en la señal roja. Puede consultar la guía « [Editar una zona DNS de OVHcloud](../../domains/web_hosting_como_editar_mi_zona_dns/) » para añadir este registro.
 
@@ -131,7 +131,7 @@ Para configurar su dirección de correo electrónico en un cliente de correo o e
 >
 > En nuestro ejemplo, utilizamos el nombre de servidor pro**?**.mail.ovh.net. Deberá sustituir la «?» por el número que designa el servidor del servicio E-mail Pro.
 > 
-> Encontrará este número en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en el apartado `Web Cloud`{.action} de la sección `E-mail Pro`{.action},
+> Encontrará este número en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en el apartado `Web Cloud`{.action} de la sección `E-mail Pro`{.action},
 >  en la columna de la izquierda. El nombre del servidor puede verse en el recuadro **« Conexión »** de la pestaña `Información General`{.action}.
 > 
 

@@ -17,7 +17,7 @@ Il redirect è una funzione che permette di reindirizzare un dominio verso una n
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Essere connesso all’hosting Web (per aggiungere un [file .htaccess](https://docs.ovh.com/it/hosting/hosting_condiviso_tutto_sul_file_htaccess/){.external})
 
 ## Procedura
@@ -36,7 +36,7 @@ Ricordati che utilizzare un reindirizzamento può avere impatto anche sull’ind
 
 ### Reindirizza un dominio dallo Spazio Cliente OVH
 
-Accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo dominio nella sezione `Domini`{.action} nella colonna a sinistra (1) e clicca sulla scheda `Reindirizzamento`{.action} (2).
+Accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo dominio nella sezione `Domini`{.action} nella colonna a sinistra (1) e clicca sulla scheda `Reindirizzamento`{.action} (2).
 
 Visualizzerai una tabella con i reindirizzamenti attivi per il tuo dominio.
 

@@ -21,7 +21,7 @@ NAS-HA lze objednat ve všech francouzských datacentrech OVH (Roubaix, Štrasbu
 
 ### Lze službu NAS-HA spravovat prostřednictvím Zákaznického prostoru?
 
-Ano, službu NAS-HA lze spravovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (sekce `Cloud`, záložka `Platformy a služby`).
+Ano, službu NAS-HA lze spravovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} (sekce `Cloud`, záložka `Platformy a služby`).
 
 ### Je možné navyšovat kapacitu NAS úložiště?
 
@@ -48,7 +48,7 @@ Ano, pevné disky jsou vyhrazeny výhradně Vašim potřebám. Ostatní výpoče
 **Speciální výjimka:** pokud si objednáte nejvyšší variantu služby (26,4 TB), budou veškeré výpočetní zdroje serveru vyhrazeny výhradně pro Vaše použití.
 
 ### Na jak dlouho si lze službu NAS-HA objednat?
-Službu lze objednat na 1, 3, 6 nebo 12 měsíců. Služba je na konci fakturačního období automaticky obnovována. Automatickou prolongaci služby lze kdykoli deaktivovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Službu lze objednat na 1, 3, 6 nebo 12 měsíců. Služba je na konci fakturačního období automaticky obnovována. Automatickou prolongaci služby lze kdykoli deaktivovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ### Jaký je rozdíl mezi teoretickou a reálnou kapacitou nabízeného úložiště?
 Jelikož musí být část disku vždy vyhrazena pro souborový systém, teoretická a reálná kapacita úložného řešení se jemně liší:
@@ -141,7 +141,7 @@ Frekvenci vytváření snapshotů lze snadno upravit prostřednictvím Zákaznic
 - Každý týden 
 
 
-Snapshoty můžete vytvářet i manuálně. Takto vytvořené snapshoty lze uchovávat po neomezenou dobu a je možné je kdykoli smazat. Všechny výše popsané funkce jsou dostupné jak prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, tak OVH [API](https://api.ovh.com/){.external}:
+Snapshoty můžete vytvářet i manuálně. Takto vytvořené snapshoty lze uchovávat po neomezenou dobu a je možné je kdykoli smazat. Všechny výše popsané funkce jsou dostupné jak prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, tak OVH [API](https://api.ovh.com/){.external}:
 
 > [!api]
 >

@@ -18,7 +18,7 @@ O seu alojamento web permite-lhe gerir um certificado SSL. Podem encomendá-lo a
 
 - Dispor de um [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
 - Ter registado, pelo menos, um [nome de domínio](https://www.ovh.pt/dominios/){.external}.
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção “Web”.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”.
 
 ## Instruções
 
@@ -40,7 +40,7 @@ O alojamento web da OVH permite-lhe ativar um [certificado SSL graças a várias
 - um certificado SSL pago, [como opção num plano de alojamento web compatível](https://www.ovh.pt/ssl/){.external};
 - a importação de um certificado SSL encomendado junto de outro fornecedor.
 
-Para ativar o certificado, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento em causa. Clique no separador `Informações gerais`{.action}. Na secção “Certificado SSL”, deve surgir a menção “Não”, o que indica que não há nenhum certificado instalado no alojamento web. Clique nos três pontos junto de “Certificado SSL” e, a seguir, em `Encomendar um certificado SSL`{.action}.
+Para ativar o certificado, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento em causa. Clique no separador `Informações gerais`{.action}. Na secção “Certificado SSL”, deve surgir a menção “Não”, o que indica que não há nenhum certificado instalado no alojamento web. Clique nos três pontos junto de “Certificado SSL” e, a seguir, em `Encomendar um certificado SSL`{.action}.
 
 Por outro lado, se vir a menção “Sim”, isto significa que um certificado SSL já foi instalado e configurado no alojamento web. Por consequente, não poderá encomendar outro certificado enquanto já tiver um instalado.
 
@@ -66,7 +66,7 @@ Uma vez a configuração efetuada, consulte o passo [Ativar um certificado SSL n
 
 ### Ativar um certificado SSL num multisite
 
-Consoante o [certificado SSL](https://www.ovh.pt/ssl/){.external} de que dispõe, tem a possibilidade de ativar uma ligação SSL segura num ou vários dos seus multisites. Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento correspondente. Por fim, clique no separador `Multisite`{.action}.
+Consoante o [certificado SSL](https://www.ovh.pt/ssl/){.external} de que dispõe, tem a possibilidade de ativar uma ligação SSL segura num ou vários dos seus multisites. Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento correspondente. Por fim, clique no separador `Multisite`{.action}.
 
 Aparecerá uma tabela com todos os domínios adicionados ao seu alojamento web. A coluna “SSL” indica o estado de ativação das ligações SSL seguras nos seus multisites. 
 
@@ -95,7 +95,7 @@ Uma vez que tiver submetido o pedido de ativação, o estado da ligação segura
 
 Depois de ativar uma ligação SSL segura num ou vários dos seus multisites, o estado indica “A gerar / atualizar”. Esta geração é essencial para poder adicionar ao certificado SSL do seu alojamento web.
 
-Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos` na barra à esquerda e escolha o nome do alojamento correspondente. Clique no separador `Informações gerais`{.action}. A seguir, clique nos três pontos junto de “Certificado SSL” e selecione `Gerar / atualizar certificado SSL`{.action}.
+Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos` na barra à esquerda e escolha o nome do alojamento correspondente. Clique no separador `Informações gerais`{.action}. A seguir, clique nos três pontos junto de “Certificado SSL” e selecione `Gerar / atualizar certificado SSL`{.action}.
 
 ![managessl](images/manage-ssl-step7.png){.thumbnail}
 
@@ -111,7 +111,7 @@ Se pretender, também pode eliminar o certificado SSL atualmente instalado no se
 
 Como esta verificação se realiza diretamente na configuração do website, recomendamos que recorra a um fornecedor especializado se encontrar dificuldades. Não poderemos proporcionar-lhe assistência técnica.
 
-Quando estiver preparado para eliminar o certificado SSL, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o alojamento web em causa. Certifique-se de que está no separador `Informações gerais`{.action}. Clique nos três pontos junto de “Certificado SSL” e selecione a opção `Eliminar o certificado SSL`{.action}.
+Quando estiver preparado para eliminar o certificado SSL, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o alojamento web em causa. Certifique-se de que está no separador `Informações gerais`{.action}. Clique nos três pontos junto de “Certificado SSL” e selecione a opção `Eliminar o certificado SSL`{.action}.
 
 Na página que aparecer, valide a eliminação. Esta última será concluída em algumas horas. 
 

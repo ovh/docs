@@ -17,7 +17,7 @@ Ce guide a pour objectif d'expliquer les détails de la gestion de droits utilis
 ## Prérequis
 
 * Posséder une offre [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external}.
-* Etre connecter à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Etre connecter à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 

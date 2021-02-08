@@ -39,7 +39,7 @@ Aby jak najlepiej zarządzać zasileniami konta SMS, możesz ustalić ograniczen
 
 ### Etap 1: utworzenie użytkownika API
 
-Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager) i wybierz opcję `Telecom`{.action} (1). Następnie kliknij pozycję `SMS`{.action} po lewej stronie (2) i wybierz Twoje konto SMS (3).
+Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz opcję `Telecom`{.action} (1). Następnie kliknij pozycję `SMS`{.action} po lewej stronie (2) i wybierz Twoje konto SMS (3).
 
 Teraz kliknij kartę `Użytkownicy API`{.action} (4).
 

@@ -18,7 +18,7 @@ Ao instalar ou reinstalar uma distribuição ou um sistema operativo, irá receb
 
 * Possuir um [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external} com uma distribuição Linux instalada.
 * Ter acesso root ao servidor via SSH.
-* Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 
 ## Instruções

@@ -20,7 +20,7 @@ Bridged networking can be used to configure your virtual machines. Some tweaking
 
 * a Dedicated Server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, etc.)
 * at least one [failover IP](https://www.ovh.lt/dedikuoti_serveriai/ip_failover.xml) address attached to the server
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
 
@@ -32,7 +32,7 @@ For this example, we will use the following values in our code samples, which sh
 
 ### Assign a virtual MAC address
 
-Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click on the `Dedicated`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table.
+Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} and click on the `Dedicated`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table.
 
 ![Failover IP](images/virtual_mac_01_2020_1.png){.thumbnail}
 

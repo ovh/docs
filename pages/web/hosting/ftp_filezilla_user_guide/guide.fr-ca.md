@@ -63,7 +63,7 @@ Dans l'encadré vert tout en haut, afin d'établir la connexion au serveur dista
 |Mot de passe de l'utilisateur FTP|Il s'agit du mot de passe associé au login FTP.<br><br> Selon le logiciel utilisé, la dénomination peut ressembler à « Mot de passe » ou « Password ».|
 |Port de connexion|Celui-ci est généralement complété automatiquement par le logiciel. Si vous devez le renseigner :<br><br>- utilisez le port « 21 » pour une connexion utilisant le protocole FTP ;<br>- utilisez le port « 22 » pour une connexion utilisant le protocole SFTP (dans le cas où celui-ci est activé).|
 
-Si vous n’êtes pas en possession de ces éléments, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. Les informations liées à votre espace de stockage apparaissent alors.
+Si vous n’êtes pas en possession de ces éléments, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans la partie « Web », puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. Les informations liées à votre espace de stockage apparaissent alors.
 
 Une fois que tout est correctement saisi, cliquez sur *Connexion rapide* afin d'établir la connexion au serveur.
 
@@ -86,7 +86,7 @@ Le SFTP (pour **S**ecure **F**ile **T**ransfer **P**rotocol) est un protocole si
 #### Verifiez l'activation de SFTP
 Avant d'aller plus loin, vérifiez tout d'abord que le SFTP est activé pour votre compte.
 
-Rendez-vous dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external} > onglet SSH-FTP.
+Rendez-vous dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} > onglet SSH-FTP.
 
 S'il s'agit d'une offre d'hébergement "Start10M", vérifiez que "SFTP" est coché.
 

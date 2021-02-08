@@ -24,7 +24,7 @@ A dedicated server is a physical server located in one of our data centres. Unli
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - a [dedicated server](https://www.ovh.ie/dedicated_servers/) in your OVHcloud account
 - administrative access (root) via SSH or remote desktop (Windows) to your server
 
@@ -35,7 +35,7 @@ When your dedicated server is first set up, you can select which operating syste
 
 ### Installing or reinstalling your dedicated server
 
-You can easily reinstall your server and choose a different OS template in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). From the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
+You can easily reinstall your server and choose a different OS template in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). From the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
 
 ![Reinstall button](images/reinstalling-your-server-00.png){.thumbnail}
 
@@ -80,7 +80,7 @@ For a detailed explanation on how to generate SSH keys, please refer to [this gu
 
 > [!primary]
 >
-> Some operating systems or platforms, such as Plesk and Windows, require a licence to be purchased prior to installation. You can buy this [licence from OVHcloud](https://www.ovhcloud.com/en-ie/bare-metal/os/), or from a reseller. You will then need to integrate it manually, through the operating system itself, or through your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
+> Some operating systems or platforms, such as Plesk and Windows, require a licence to be purchased prior to installation. You can buy this [licence from OVHcloud](https://www.ovhcloud.com/en-ie/bare-metal/os/), or from a reseller. You will then need to integrate it manually, through the operating system itself, or through your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 >
 You can manage your licences in the Control Panel in the `Bare Metal Cloud`{.action} section under `Licences`{.action}. In this section, you can also order licences or add your own SPLA Windows or SPLA SQL server licence (via the `Actions`{.action} button).
 >
@@ -150,7 +150,7 @@ For more information, please refer to our guide: [Using the IPMI with dedicated 
 
 ### Rescue mode
 
-For any kind of issue the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
+For any kind of issue the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
 
 Please refer to the [rescue mode guide](../rescue_mode/).
 

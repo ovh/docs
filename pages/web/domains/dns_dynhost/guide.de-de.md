@@ -16,7 +16,7 @@ Die Domain Name System Zone (DNS-Zone) ist die Konfigurationsdatei einer Domain.
 
 ## Voraussetzungen
 
-- Sie haben über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} Zugriff auf die Verwaltung der betreffenden Domain.
+- Sie haben über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} Zugriff auf die Verwaltung der betreffenden Domain.
 - Die betreffende Domain verwendet die OVH Konfiguration (die OVH DNS-Server).
 - Der DynHost-Eintrag, den Sie erstellen möchten, ist noch nicht als A-Eintrag in der OVH DNS-Zone Ihrer Domain vorhanden.
 
@@ -24,14 +24,14 @@ Die Domain Name System Zone (DNS-Zone) ist die Konfigurationsdatei einer Domain.
 >
 > - Wenn Ihre Domain nicht die OVH DNS-Server verwendet, informieren Sie sich für die Vorgehensweise bei dem Anbieter, der die DNS-Konfiguration Ihrer Domain verwaltet.
 > 
-> - Wenn Ihre Domain bei OVH registriert ist, können Sie überprüfen, ob sie unsere Konfiguration verwendet. Gehen Sie hierzu in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} zur betreffenden Domain und klicken Sie anschließend auf den Tab `DNS Server`{.action}.
+> - Wenn Ihre Domain bei OVH registriert ist, können Sie überprüfen, ob sie unsere Konfiguration verwendet. Gehen Sie hierzu in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} zur betreffenden Domain und klicken Sie anschließend auf den Tab `DNS Server`{.action}.
 >
 
 ## Beschreibung
 
 ### Schritt 1: DynHost-Benutzer erstellen
 
-Erstellen Sie zunächst einen DynHost-Benutzer. Über diesen können Sie den dynamischen DNS-Eintrag, den Sie erstellen möchten, aktualisieren. Loggen Sie sich zunächst im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie links im Menü auf `Domains`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DynHost`{.action}.
+Erstellen Sie zunächst einen DynHost-Benutzer. Über diesen können Sie den dynamischen DNS-Eintrag, den Sie erstellen möchten, aktualisieren. Loggen Sie sich zunächst im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie links im Menü auf `Domains`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DynHost`{.action}.
 
 ![dynhost](images/use-dynhost-step1.png){.thumbnail}
 

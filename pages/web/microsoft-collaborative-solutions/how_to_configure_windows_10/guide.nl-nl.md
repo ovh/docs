@@ -42,7 +42,7 @@ Voer uw accountgegevens in:
 |Het wachtwoord|Voer het wachtwoord van het e-mailadres in.|
 |Gebruikersnaam|Voer het volledige e-mailadres in. |
 |Domein|Laat dit veld leeg.|
-|Server|Voer de server in waar uw Exchange op gehost wordt.  U vindt deze gegevens in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} door naar het tabblad `Algemene informatie`{.action} van de betreffende Exchange-dienst te gaan en vervolgens naar het gedeelte `Inloggen`{.action}.|
+|Server|Voer de server in waar uw Exchange op gehost wordt.  U vindt deze gegevens in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} door naar het tabblad `Algemene informatie`{.action} van de betreffende Exchange-dienst te gaan en vervolgens naar het gedeelte `Inloggen`{.action}.|
 |De server vereist een versleutelde verbinding (SSL-encryptie)|Laat dit aangevinkt. |
 |Accountnaam|Voer de naam in waarmee u dit account kunt herkennen tussen andere die worden weergegeven in uw Courrier-app.|
 

@@ -20,13 +20,13 @@ This can be useful in cases where:
 
 ## Requirements
 
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
 * a [Public Cloud Instance](https://www.ovh.com/world/public-cloud/instances/){.external} in your OVHcloud account
 * administrative (root) access to your instance via SSH
 
 ## Instructions
 
-Firstly, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu. Then click the `Servers`{.action} side-menu to expand your list of projects.
+Firstly, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} and click the `Cloud`{.action} menu. Then click the `Servers`{.action} side-menu to expand your list of projects.
 
 When you've found your project in the list, click it and then select the `Infrastructure`{.action} tab.
 

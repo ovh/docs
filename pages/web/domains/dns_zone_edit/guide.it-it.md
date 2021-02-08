@@ -16,15 +16,15 @@ La zona Domain Name System (DNS) di un dominio consiste nel file di configurazio
 
 ## Prerequisiti
 
-- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Essere connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Utilizzare i server DNS di OVHcloud per la configurazione del dominio in questione
 
 > [!warning]
 >
 > - Se il dominio non utilizza i server DNS di OVHcloud, è necessario realizzare la modifica dall’interfaccia del provider che gestisce la configurazione del tuo dominio.
 > 
-> - Se il dominio è registrato in OVHcloud, verifica che utilizzi la nostra configurazione accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} > `Server DNS`{.action} e selezionando il dominio interessato.
+> - Se il dominio è registrato in OVHcloud, verifica che utilizzi la nostra configurazione accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} > `Server DNS`{.action} e selezionando il dominio interessato.
 >
 
 ## Procedura
@@ -51,7 +51,7 @@ Essere a conoscenza delle diverse tipologie di record consente di modificare al 
 
 ### Step 1: accedi alla gestione dei server DNS del dominio
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Domini`{.action} della colonna a sinistra e clicca sulla scheda `Zona DNS`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Domini`{.action} della colonna a sinistra e clicca sulla scheda `Zona DNS`{.action}.
 
 Compare una tabella che mostra la configurazione OVHcloud del dominio: a ogni riga corrisponde un record DNS. Il contenuto può essere filtrato per tipo di record o per dominio.
 

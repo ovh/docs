@@ -43,7 +43,7 @@ On [this webpage](https://www.ovh.co.uk/sms/prices/), you can view the price in 
 
 To ensure that you are never short of credit on your account, you can enable automatic re-crediting. Once a minimum threshold of remaining credit has been reached, a new number of credits is automatically added to your SMS account.
 
-To enable automatic re-crediting, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then go to the `Telecom`{.action} tab. Next, click on the `SMS`{.action} section in the services bar on the left-hand side. Choose the SMS account you would like to enable automatic re-crediting for.
+To enable automatic re-crediting, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then go to the `Telecom`{.action} tab. Next, click on the `SMS`{.action} section in the services bar on the left-hand side. Choose the SMS account you would like to enable automatic re-crediting for.
 
 Go to the `Options`{.action} menu (1), then `Automatic re-crediting`{.action} (2).
 

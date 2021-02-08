@@ -60,7 +60,7 @@ Insira as informações relativas à conta:
 |Informação|Descrição|
 |---|---|
 |Endereço|Este campo já deverá estar preenchido. Se não for o caso, insira o endereço de e-mail completo.|
-|Servidor|Indique o servidor em que está alojado o serviço Exchange. Poderá encontrá-lo na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Informações gerais`{.action} do serviço Exchange, depois em `Conexão`{.action}.|
+|Servidor|Indique o servidor em que está alojado o serviço Exchange. Poderá encontrá-lo na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Informações gerais`{.action} do serviço Exchange, depois em `Conexão`{.action}.|
 |Domínio|Não preencher.|
 |Nome de utilizador|Insira o endereço de e-mail completo.|  
 |Palavra-passe|Este campo já deverá estar preenchido. Se não for o caso, insira a palavra-passe do e-mail.|

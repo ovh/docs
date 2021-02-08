@@ -8,7 +8,7 @@ legacy_guide_number: g1880
 **Last updated 5th May 2020**
 
 ## 
-You can set up geolocation for your website from your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager).
+You can set up geolocation for your website from your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
 
 Once you are logged on, click on the name of your main website under the Hostings section.
 

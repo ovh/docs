@@ -38,7 +38,7 @@ Jatka tämän dokumentaation lukemista, jos haluat muokata .ovhconfig-tiedostoa 
 
 Tarvitset pääkäyttäjän FTP-käyttäjätunnuksen, sen salasanan sekä FTP-palvelimen osoitteen. Kun sinulla on kaikki nämä elementit, kirjaudu tallennustilaasi. Katso tarvittaessa apua dokumentaation “Verkkosivun siirto verkkoon webhotellissa” kohdasta “[Kirjaudu tallennustilaasi](https://docs.ovh.com/fi/hosting/verkkosivun-siirto-verkkoon/#2-vaihe-sivun-tiedostojen-siirto-verkkoon-tallennustilassa){.external}”.
 
-**Jos sinulla ei ole enää näitä tietoja hallussasi**, kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external} ja klikkaa kohtaa `Webhotellit`{.action} vasemman puoleisessa palveluvalikossa. Valitse kyseessä oleva webhotelli ja mene sitten välilehdelle `FTP-SSH`{.action}. Löydät sieltä kirjautumiseen tarvittavat tiedot. FTP-käyttäjän salanaan liittyen mene tarvittaessa ohjeisiin, jotka on kuvattu dokumentaatiossa [“FTP-käyttäjän salasanan vaihtaminen”](https://docs.ovh.com/fi/hosting/ftp-kayttajan-salasanan-vaihtaminen/){.external}.
+**Jos sinulla ei ole enää näitä tietoja hallussasi**, kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} ja klikkaa kohtaa `Webhotellit`{.action} vasemman puoleisessa palveluvalikossa. Valitse kyseessä oleva webhotelli ja mene sitten välilehdelle `FTP-SSH`{.action}. Löydät sieltä kirjautumiseen tarvittavat tiedot. FTP-käyttäjän salanaan liittyen mene tarvittaessa ohjeisiin, jotka on kuvattu dokumentaatiossa [“FTP-käyttäjän salasanan vaihtaminen”](https://docs.ovh.com/fi/hosting/ftp-kayttajan-salasanan-vaihtaminen/){.external}.
 
 ![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
 

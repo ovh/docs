@@ -15,7 +15,7 @@ With Real Time Monitoring (RTM), you can partially monitor your server and its a
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 - root access via SSH (or via graphical user interface) on your server
 
 

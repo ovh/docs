@@ -15,7 +15,7 @@ Attenzione: incontrerai spesso anche il termine KVM (Keyboard Video and Mouse), 
 
 ## Prerequisiti
 
-- Essere connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager), sezione `Dedicato`{.action} > `Server Dedicati`{.action}
+- Essere connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Dedicato`{.action} > `Server Dedicati`{.action}
 
 
 ## Procedura

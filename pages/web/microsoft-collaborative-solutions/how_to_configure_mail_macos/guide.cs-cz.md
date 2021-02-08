@@ -66,11 +66,11 @@ Správnost nastavení ověřte odesláním zkušebního e-mailu.
 
 Pokud se připojení k účtu nezdaří, navrhujeme podniknout následující kroky: 
 
-- Zkontrolujte konfiguraci domény nastavené ve Vaší službě Exchange. Za tímto účelem přejděte do [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (záložka `Asociované domény`{.action}, sloupeček `Diagnostika`{.action}).
+- Zkontrolujte konfiguraci domény nastavené ve Vaší službě Exchange. Za tímto účelem přejděte do [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} (záložka `Asociované domény`{.action}, sloupeček `Diagnostika`{.action}).
 
 - Pokuste se URL pro připojení ke službě Exchange vyplnit manuálně. Pokračujte i přes varování o zabezpečení certifikátu a vyplňte pole `Interní URL`{.action} a `Externí URL`{.action} pomocí údajů o serveru, na němž je Vaše služba Exchange hostována.
 
-Informace o serveru naleznete v svém [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (v administračním rozhraní příslušné služby Exchange). Přejděte do záložky `Obecné informace`{.action} a vyhledejte server uvedený v rámečku `Připojení`{.action}.
+Informace o serveru naleznete v svém [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} (v administračním rozhraní příslušné služby Exchange). Přejděte do záložky `Obecné informace`{.action} a vyhledejte server uvedený v rámečku `Připojení`{.action}.
 
 ### Fáze 2: použití e-mailu
 

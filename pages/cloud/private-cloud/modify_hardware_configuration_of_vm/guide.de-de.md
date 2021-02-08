@@ -20,7 +20,7 @@ Wenn Sie Ihre virtuelle Maschine erstellt haben, stehen deren Ressourcen nicht p
 ## Voraussetzungen
 
 - Sie haben eine virtuelle Maschine auf einer [Hosted Private Cloud Infrastruktur](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) erstellt.
-- Sie haben einen Benutzeraccount mit Zugriff auf vSphere (erstellt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager)).
+- Sie haben einen Benutzeraccount mit Zugriff auf vSphere (erstellt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)).
 
 
 ## In der praktischen Anwendung

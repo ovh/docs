@@ -18,7 +18,7 @@ Er zijn enorm veel verschillende websites op het internet. Met uw [OVH webhostin
 ## Vereisten
 
 - U moet beschikken over een [OVH webhostingplan](https://www.ovh.nl/shared-hosting/){.external}.
-- Afhankelijk van de gebruikte methode, hebt u mogelijk toegang nodig tot het beheer van het webhostingplan via het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager), of de benodigde gegevens om u in te loggen op uw opslagruimte. 
+- Afhankelijk van de gebruikte methode, hebt u mogelijk toegang nodig tot het beheer van het webhostingplan via het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl), of de benodigde gegevens om u in te loggen op uw opslagruimte. 
 
 ## Instructie
 
@@ -47,7 +47,7 @@ U kunt ook de PHP-versie bekijken die momenteel door uw hosting wordt gebruikt. 
 
 |Methode|Omschrijving|
 |---|---|
-|Via het Control Panel|Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Op het tabblad `Algemene informatie`{.action} vindt u de huidige versie onder 'Globale PHP-versie'. Als er een blauw, rond pictogram naast de versie verschijnt, wacht dan even totdat de versie is bijgewerkt.|
+|Via het Control Panel|Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Op het tabblad `Algemene informatie`{.action} vindt u de huidige versie onder 'Globale PHP-versie'. Als er een blauw, rond pictogram naast de versie verschijnt, wacht dan even totdat de versie is bijgewerkt.|
 |Via een script|Creëer een **.php**-script dat alleen de code `<?php phpinfo(); ?>` bevat. Plaats het script online in uw opslagruimte en activeer het door de volledige URL te openen.|
 
 ![phpversion](images/change-php-version-step1.png){.thumbnail}

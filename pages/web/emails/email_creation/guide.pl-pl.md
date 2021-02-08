@@ -18,18 +18,18 @@ Dzięki kontom e-mail MX Plan możesz wysyłać i odbierać wiadomości, korzyst
 
 - Wykupienie usługi [MX Plan]({ovh_www}/hosting/){.external} Jest on dostępny w ramach: [pakietów hostingowych]({ovh_www}/hosting/){.external}, [bezpłatnego hostingu Start 10M]({ovh_www}/domeny/oferta_serwer_start10m.xml){.external} zawartego w ofercie domeny (uprzednio aktywowanej) lub oferty MX Plan zamówionej oddzielnie.
 - Możliwość tworzenia kont e-mail w ramach Twojej usługi
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Web Cloud`{.action}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Web Cloud`{.action}
 
 > [!primary]
 >
-> Jeśli chodzi o bezpłatny hosting Start 10M, konieczne jest wcześniejsze aktywowanie go przed utworzeniem konta e-mail. Możesz przeprowadzić tę operację w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, przechodząc do odpowiedniej domeny.
+> Jeśli chodzi o bezpłatny hosting Start 10M, konieczne jest wcześniejsze aktywowanie go przed utworzeniem konta e-mail. Możesz przeprowadzić tę operację w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przechodząc do odpowiedniej domeny.
 >
 
 ## W praktyce
 
 W zależności od daty aktywacji usługi MX Plan lub jeśli usługa została niedawno przeniesiona, możliwe jest, że dysponujesz jej starszą lub nową wersją.  Zanim przejdziesz dalej, ustal, jaką wersję posiadasz. 
 
-Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja Web. Kliknij E-maile na pasku usług po lewej stronie, po czym wybierz odpowiednią usługę MX Plan. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
+Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja Web. Kliknij E-maile na pasku usług po lewej stronie, po czym wybierz odpowiednią usługę MX Plan. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
 
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|

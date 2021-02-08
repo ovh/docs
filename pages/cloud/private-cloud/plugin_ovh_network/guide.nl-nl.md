@@ -42,7 +42,7 @@ In het gedeelte **IP Block** worden alle IP-adressen van uw blok vermeld. Let op
 
 Om de OVH plugin te informeren dat uw openbare IP-adressen al worden gebruikt, is het noodzakelijk om een ARP-aanvraag (_arping_) uit te voeren vanaf de virtuele machine(s) met behulp van deze adressen. Let op: bepaalde virtuele firewallconfiguraties staan niet toe dat MAC-adressen worden opgehaald als het ARP-protocol niet is toegestaan.
 
-Vervolgens kunt u uw Reverse IP-adres configureren, bijvoorbeeld naar een e-mailserver. Deze instelling is ook toegankelijk vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} en vanuit de [OVH API](https://api.ovh.com/){.external}. Klik op de drie verticale stippen links van het IP-adres en vervolgens op `Reverse bewerken`{.action}.
+Vervolgens kunt u uw Reverse IP-adres configureren, bijvoorbeeld naar een e-mailserver. Deze instelling is ook toegankelijk vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en vanuit de [OVH API](https://api.ovh.com/){.external}. Klik op de drie verticale stippen links van het IP-adres en vervolgens op `Reverse bewerken`{.action}.
 
 ![Reverse bewerken knop](images/network_04.png){.thumbnail}
 

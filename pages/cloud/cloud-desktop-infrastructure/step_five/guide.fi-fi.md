@@ -18,7 +18,7 @@ Sinulla on jo [pool luotuna](https://docs.ovh.com/fi/cloud-desktop-infrastructur
 ## Edellytykset
 
 - Olet avannut VMware Horizon -asiakasohjelman tai selaimen.
-- Tiedossasi on yhteyspisteen URL-osoite, joka on saatavilla [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Tiedossasi on yhteyspisteen URL-osoite, joka on saatavilla [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - [Olet hyväksynyt sen käyttäjän poolissa.](https://docs.ovh.com/fi/cloud-desktop-infrastructure/tyopoytien-jako){.external}
 
 

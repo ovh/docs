@@ -16,13 +16,13 @@ CloudDB consente di usufruire di un’istanza database, con risorse dedicate e g
 ## Prerequisiti
 
 - Disporre di un’[istanza CloudDB](https://www.ovh.it/cloud/cloud-databases/){.external}
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
 ### Visualizza le informazioni generali dell'istanza
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca su `Database`{.action} nel menu a sinistra e seleziona la tua istanza CloudDB. Assicurati di trovarti nella scheda `Informazioni generali`{.action}.
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Database`{.action} nel menu a sinistra e seleziona la tua istanza CloudDB. Assicurati di trovarti nella scheda `Informazioni generali`{.action}.
 
 > [!primary]
 >

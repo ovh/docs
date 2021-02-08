@@ -34,7 +34,7 @@ Realizar comprobaciones en modo de rescate también le ayudará a determinar si 
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 - Tener ya configurado su [VPS de OVHcloud](https://www.ovhcloud.com/es/vps/){.external}.
 
 > [!warning]
@@ -46,7 +46,7 @@ Realizar comprobaciones en modo de rescate también le ayudará a determinar si 
 
 ### Activación del modo de rescate
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager), acceda a la sección `Cloud`{.action} de la bare metal y seleccione el servidor de la lista de navegación de la izquierda con `VPS`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Cloud`{.action} de la bare metal y seleccione el servidor de la lista de navegación de la izquierda con `VPS`{.action}.
 
 #### Con una solución VPS actual
 
@@ -70,10 +70,10 @@ Una vez que haya iniciado el reinicio, una barra de progreso mostrará el progre
 
 > [!primary]
 >
-> Recibirá un email automatizado con las claves de acceso SSH para acceder al modo de rescate. Espere a que se reciba el mensaje de correo antes de tomar cualquier otra medida. Este mensaje de correo electrónico también está disponible en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager). Para ello, haga clic en el nombre asociado a su ID de cliente de OVHcloud en la esquina superior derecha y seleccione `Correo electrónico del servicio`{.action}.
+> Recibirá un email automatizado con las claves de acceso SSH para acceder al modo de rescate. Espere a que se reciba el mensaje de correo antes de tomar cualquier otra medida. Este mensaje de correo electrónico también está disponible en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Para ello, haga clic en el nombre asociado a su ID de cliente de OVHcloud en la esquina superior derecha y seleccione `Correo electrónico del servicio`{.action}.
 >
 
-Ahora puede conectarse a su VPS por SSH utilizando las claves de acceso del modo de rescate. Una vez que haya activado el modo de rescate, reinicie el VPS en modo "normal" desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
+Ahora puede conectarse a su VPS por SSH utilizando las claves de acceso del modo de rescate. Una vez que haya activado el modo de rescate, reinicie el VPS en modo "normal" desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Más información
 

@@ -29,11 +29,11 @@ L'objet de l'e-mail reçu est :
 >[**OVH - IMPORTANT**] Nous attendons votre procédure VoIP pour finaliser votre commande.
 >
 
-Vous pouvez également retrouver cet e-mail dans votre espace client. Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} puis cliquez sur `E-mails de service`{.action}
+Vous pouvez également retrouver cet e-mail dans votre espace client. Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis cliquez sur `E-mails de service`{.action}
 
 ![procédure email](images/email.png){.thumbnail}
 
-Si vous souhaitez générer la procédure manuellement (dans le cadre d'un changement de NIC Facturation) ou anticiper et valider votre compte OVHcloud pour la téléphonie en vue d'une prochaine commande de services VoIP, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} puis cliquez sur `Telecom`{.action} (1) et sur `Manager V4`{.action} (2).
+Si vous souhaitez générer la procédure manuellement (dans le cadre d'un changement de NIC Facturation) ou anticiper et valider votre compte OVHcloud pour la téléphonie en vue d'une prochaine commande de services VoIP, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis cliquez sur `Telecom`{.action} (1) et sur `Manager V4`{.action} (2).
 
 ![procédure espace client](images/procedure1.png){.thumbnail}
 

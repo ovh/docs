@@ -16,7 +16,7 @@ You can enable two-factor authentication (2FA). This is linked to your username-
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 - a smartphone (for the SMS method), a smartphone or tablet (for the mobile application method), or a Universal Second Factor (U2F) security key
 - an understanding of the [password management recommendations for accessing your account](../manage-password/)
 
@@ -88,7 +88,7 @@ You can also use one of the security codes provided to you.
 > - via valid security codes
 > 
 
-To remove a device, please log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Click on your name in the top right-hand corner (first step on the image below), then click your initials (second step). 
+To remove a device, please log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}. Click on your name in the top right-hand corner (first step on the image below), then click your initials (second step). 
 
 ![2FA](images/hub2FAb.png){.thumbnail}
 

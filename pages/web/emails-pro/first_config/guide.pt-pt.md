@@ -19,13 +19,13 @@ Adquiriu um serviço E-mail Pro, que lhe permite beneficiar de endereços de e-m
 - Ter o serviço [E-mail Pro](https://www.ovh.pt/emails/email-pro/){.external}.
 - Ter recebido o e-mail com a confirmação da instalação do serviço E-mail Pro.
 - Dispor de um domínio.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
 ### 1 - Aceder à interface de gestão do serviço
 
-Depois de ativado, o serviço E-mail Pro pode ser gerido a partir da [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Depois de ativado, o serviço E-mail Pro pode ser gerido a partir da [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 Para isso, clique em `E-mail Pro`{.action} no menu à esquerda e selecione o nome do serviço.
 
@@ -83,7 +83,7 @@ Depois de adicionar o domínio enquanto domínio associado, verifique as configu
 
 A coluna `Diagnóstico`{.action} permite-lhe controlar a configuração DNS do domínio. Se apresentar uma etiqueta vermelha, terá de alterar a configuração. Dispõe de duas possibilidades:
 
-- **Configuração automática quando adiciona um domínio OVHcloud**: se acabou de realizar a alteração, a visualização na [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} pode levar algumas horas.
+- **Configuração automática quando adiciona um domínio OVHcloud**: se acabou de realizar a alteração, a visualização na [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} pode levar algumas horas.
 
 - **Configuração manual para um domínio não gerido pela OVHcloud**: clique na etiqueta vermelha para ver as alterações a realizar.
 
@@ -135,7 +135,7 @@ Se desejar associar o seu endereço de e-mail a um software de correio eletróni
 >
 > No nosso exemplo, utilizamos a referência servidor: pro**?**.mail.ovh.net. Deve substituir o «?» pelo algarismo que designa o servidor do seu serviço E-mail Pro.
 > 
-> Encontre esse algarismo na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na rubrica `Web Cloud`{.action}, em `E-mail Pro`{.action},
+> Encontre esse algarismo na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na rubrica `Web Cloud`{.action}, em `E-mail Pro`{.action},
 >  na coluna da esquerda. O servidor é visível na secção **Ligação** do separador `Informações gerais`{.action}.
 > 
 

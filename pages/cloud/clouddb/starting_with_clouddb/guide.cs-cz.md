@@ -17,13 +17,13 @@ section: 'První kroky'
 ## Prerekvizity
 
 - [CloudDB instance](https://www.ovh.cz/cloud/cloud-databases/){.external}.
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Postup
 
 ### Přístup do administračního rozhraní instance
 
-V levém postranním panelu [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} klikněte na sekci `Databáze`{.action} a vyberte svou databázovou instanci. Přejděte do záložky `Obecné informace`{.action}.
+V levém postranním panelu [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} klikněte na sekci `Databáze`{.action} a vyberte svou databázovou instanci. Přejděte do záložky `Obecné informace`{.action}.
 
 > [!primary]
 >

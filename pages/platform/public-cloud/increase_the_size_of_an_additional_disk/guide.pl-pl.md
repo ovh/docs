@@ -18,7 +18,7 @@ Jeśli wykorzystano całą przestrzeń dyskową dodatkowego dysku, można zwięk
 
 * [instancja Public Cloud](https://www.ovh.pl/public-cloud/){.external} na koncie OVHcloud
 * [dodatkowy dysk](https://www.ovh.pl/public-cloud/block-storage/){.external} przyłączony do instancji
-* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 * dostęp administracyjny (uprawnienia użytkownika root) do instancji za pośrednictwem protokołu SSH (tylko w systemie Linux)
 * dostęp administracyjny do instancji za pośrednictwem protokołu RDP (tylko w systemie Windows)
 
@@ -26,7 +26,7 @@ Jeśli wykorzystano całą przestrzeń dyskową dodatkowego dysku, można zwięk
 
 ### W Panelu klienta
 
-Aby wdrożyć instancję Public Cloud, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Kliknij pozycję `Public Cloud`{.action} w lewym górnym rogu strony. Na następującym ekranie kliknij przycisk strzałki obok domyślnej nazwy projektu (w lewym górnym rogu ekranu). Wybierz projekt, w którym chcesz zmienić rozmiar dodatkowego dysku.
+Aby wdrożyć instancję Public Cloud, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij pozycję `Public Cloud`{.action} w lewym górnym rogu strony. Na następującym ekranie kliknij przycisk strzałki obok domyślnej nazwy projektu (w lewym górnym rogu ekranu). Wybierz projekt, w którym chcesz zmienić rozmiar dodatkowego dysku.
 
 ![control panel](images/select_project.png){.thumbnail}
 

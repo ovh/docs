@@ -67,7 +67,7 @@ Nello Spazio Cliente il tuo identificativo cliente è indicato in alto a destra,
 
 ## Come accedere allo Spazio Cliente?
 
-Apri la[pagina di login di OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e inserisci identificativo cliente e password.
+Apri la[pagina di login di OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e inserisci identificativo cliente e password.
 
 ![identificativo cliente](images/nichandle03.png){.thumbnail}
 

@@ -15,12 +15,12 @@ A OVHcloud disponibiliza-lhe um espaço que lhe permite consultar, gerir e pagar
 
 > [!primary]
 >
-> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Caso tenha alguma dúvida, consulte os contratos da OVHcloud disponíveis na sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}. Para isso, clique no seu ID de cliente no canto superior direito e selecione `Produtos e serviços`{.action} > `Contratos`{.action}.
+> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Caso tenha alguma dúvida, consulte os contratos da OVHcloud disponíveis na sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Para isso, clique no seu ID de cliente no canto superior direito e selecione `Produtos e serviços`{.action} > `Contratos`{.action}.
 >
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - Estar conectado como contacto de faturação do serviço (para mais informações sobre os vários tipos de contacto, consulte o manual “[Como gerir os contactos (gestores) dos serviços OVHcloud](https://docs.ovh.com/pt/customer/gestao_dos_contactos/){.external}”).
 
 ## Instruções
@@ -53,7 +53,7 @@ O preço com IVA aparece no final da tabela, com a menção “Total c/IVA”.
 
 > [!primary]
 >
-> Se a menção “Extracto de conta” aparece na linha correspondente ao pagamento, isto significa que se trata de uma renovação automática. O método de pagamento utilizado será obrigatoriamente aquele que foi validado na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+> Se a menção “Extracto de conta” aparece na linha correspondente ao pagamento, isto significa que se trata de uma renovação automática. O método de pagamento utilizado será obrigatoriamente aquele que foi validado na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 >
 
 
@@ -61,7 +61,7 @@ O preço com IVA aparece no final da tabela, com a menção “Total c/IVA”.
 
 #### Consultar e gerir faturas
 
-Para consultar as suas faturas, aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e aceda à secção `Faturas`{.action} clicando no seu ID de cliente no canto superior direito. 
+Para consultar as suas faturas, aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Faturas`{.action} clicando no seu ID de cliente no canto superior direito. 
 
 ![Area de cliente](images/hubinvoices.png){.thumbnail}
 

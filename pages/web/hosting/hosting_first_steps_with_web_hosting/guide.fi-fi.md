@@ -20,7 +20,7 @@ Olet hankkinut webhotellin verkkosivun luomista varten. Tässä webhotellissa on
 - Sinulla on [webhotellituote](https://www.ovh-hosting.fi/webhotelli){.external}.
 - Olet saanut vahvistussähköpostin webhotellisi asennusta koskien.
 - Sinulla on [verkkotunnus](https://www.ovh-hosting.fi/verkkotunnukset){.external}, joka on osoite verkkosivullesi.
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 
 ## Käytännössä
@@ -51,7 +51,7 @@ Kun projektisi on määritetty tarkasti, se täytyy enää toteuttaa webhotellis
 
 Tässä vaihtoehdossa käytetään OVH:n yhden klikkauksen moduulia, jolla voidaan asentaa sisällönhallintajärjestelmä helposti ja nopeasti. OVH toteuttaa verkkosivun asennuksen ja välittää sinulle sen hallinnoimiseen tarvittavat käyttäjätunnukset.
 
-Jotta OVH:n moduulin asennus onnistuu, varmista, että moduulin asennushakemisto on tyhjä (se on tyhjä, jos et ole vielä kirjautunut tallennustilaasi). Kirjaudu [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external} yhden klikkauksen moduulin asennusta varten. Mene  vasemmassa laidassa olevassa valikossa kohtaan `Webhotellit`{.action} ja sitten tilaamaasi webhotelliin. Klikkaa kuvakkeessa `Yhden klikkauksen moduulit`{.action} painiketta `Lisää moduuli`{.action}.
+Jotta OVH:n moduulin asennus onnistuu, varmista, että moduulin asennushakemisto on tyhjä (se on tyhjä, jos et ole vielä kirjautunut tallennustilaasi). Kirjaudu [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} yhden klikkauksen moduulin asennusta varten. Mene  vasemmassa laidassa olevassa valikossa kohtaan `Webhotellit`{.action} ja sitten tilaamaasi webhotelliin. Klikkaa kuvakkeessa `Yhden klikkauksen moduulit`{.action} painiketta `Lisää moduuli`{.action}.
 
 ![Mene yhden klikkauksen moduuleihin](images/access_to_the_1_click_modules_section.png){.thumbnail}
 
@@ -71,7 +71,7 @@ Jotta moduulin asennus onnistuu, varmista, että:
 - moduulin asennushakemisto on tyhjä (se on tyhjä, jos et ole vielä kirjautunut tallennustilaasi)
 - webhotellissasi on jo luotu tietokanta (mene kuvakkeeseen `Tietokannat`{.action} ja sitten kohtaan `Luo tietokanta`{.action} toimenpiteen tekemiseksi).
 
-Kirjaudu tietokannan luomista varten [Hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}. Mene vasemmassa laidassa olevassa valikossa kohtaan `Webhotellit`{.action} ja klikkaa sitten tilaamaasi webhotellia. Klikkaa kuvakkeessa `Tietokannat`{.action} painiketta `Luo tietokanta`{.action}. Täydennä pyydetyt tiedot ja odota sitten asennuksen valmistumista.
+Kirjaudu tietokannan luomista varten [Hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Mene vasemmassa laidassa olevassa valikossa kohtaan `Webhotellit`{.action} ja klikkaa sitten tilaamaasi webhotellia. Klikkaa kuvakkeessa `Tietokannat`{.action} painiketta `Luo tietokanta`{.action}. Täydennä pyydetyt tiedot ja odota sitten asennuksen valmistumista.
 
 ![Mene yhden klikkauksen moduuleihin](images/create_a_database.png){.thumbnail}
 
@@ -93,7 +93,7 @@ Tähän ei ole olemassa yleistä ohjetta, sillä sivut voivat poiketa toisistaan
 
 ### 3. vaihe: Sähköpostiosoitteiden luonti
 
-Tämä vaihe voi olla valinnainen, jos et halua käyttää [webhotellituotteeseesi](https://www.ovh-hosting.fi/webhotelli){.external} sisältyviä sähköpostiosoitteita. Varmista yhden tai useamman sähköpostiosoitteen luomista varten, että olet kirjautuneena [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}. Mene vasemmassa laidassa olevassa valikossa kohtaan `Sähköpostit`{.action} ja sitten tilaamaasi webhotelliin. Klikkaa sitten kuvakkeessa `Sähköpostit`{.action} painiketta `Luo sähköpostiosoite`{.action}.
+Tämä vaihe voi olla valinnainen, jos et halua käyttää [webhotellituotteeseesi](https://www.ovh-hosting.fi/webhotelli){.external} sisältyviä sähköpostiosoitteita. Varmista yhden tai useamman sähköpostiosoitteen luomista varten, että olet kirjautuneena [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Mene vasemmassa laidassa olevassa valikossa kohtaan `Sähköpostit`{.action} ja sitten tilaamaasi webhotelliin. Klikkaa sitten kuvakkeessa `Sähköpostit`{.action} painiketta `Luo sähköpostiosoite`{.action}.
 
 ![Luo sähköpostiosoite](images/create_an_email_address.png){.thumbnail}
 
@@ -117,13 +117,13 @@ OVH:lla on olemassa useita DNS-kenttiä. Keskitymme erityisesti niistä kahteen,
 
 - **A-kenttä verkkosivua varten**
 
-Tarkistaaksesi verkkotunnuksesi DNS-alueen käyttöä varten tarvittavan A-kentän, kirjaudu [OVH:n hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}. Mene vasemmassa laidassa olevassa valikossa kohtaan `Webhotellit`{.action} ja sitten tilaamaasi webhotelliin. Hae sitten kuvakkeesta `Yleiset tiedot`{.action} IP-osoite, joka löytyy kohdan “IPv4” alta.
+Tarkistaaksesi verkkotunnuksesi DNS-alueen käyttöä varten tarvittavan A-kentän, kirjaudu [OVH:n hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Mene vasemmassa laidassa olevassa valikossa kohtaan `Webhotellit`{.action} ja sitten tilaamaasi webhotelliin. Hae sitten kuvakkeesta `Yleiset tiedot`{.action} IP-osoite, joka löytyy kohdan “IPv4” alta.
 
 ![A-kentän muokkaus](images/know_the_OVH_A_records.png){.thumbnail}
 
 - **MX-kenttä sähköposteja varten**
 
-Tarkistaaksesi MX-kentän, jota täytyy käyttää verkkotunnuksesi DNS-alueella, kirjaudu [OVH:n hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}. Mene hallintapaneelin vasemmassa laidassa olevassa valikossa kohtaan `Sähköpostit`{.action} ja sitten tilaamaasi webhotelliin. Hae lopuksi kuvakkeesta `Yleiset tiedot`{.action} kohdan “MX-kentät” vieressä näkyvät tiedot. Nämä voivat vaihdella eri palveluissa valitsemastasi DNS-suodattimesta riippuen.
+Tarkistaaksesi MX-kentän, jota täytyy käyttää verkkotunnuksesi DNS-alueella, kirjaudu [OVH:n hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Mene hallintapaneelin vasemmassa laidassa olevassa valikossa kohtaan `Sähköpostit`{.action} ja sitten tilaamaasi webhotelliin. Hae lopuksi kuvakkeesta `Yleiset tiedot`{.action} kohdan “MX-kentät” vieressä näkyvät tiedot. Nämä voivat vaihdella eri palveluissa valitsemastasi DNS-suodattimesta riippuen.
 
 ![MX-kenttien muokkaus](images/know_the_OVH_MX_records.png){.thumbnail}
 
@@ -134,7 +134,7 @@ Nyt kun webhotelliisi sisältyvät DNS-tietueet ovat tulleet tutuiksi, täytyy n
 
 - **Verkkotunnuksen tilaus OVH:n webhotellin yhteydessä**
 
-Verkkotunnuksesi konfiguraatio on jo oikein. Jatka seuraavaan vaiheeseen. Mikäli olet kuitenkin tehnyt jo toimenpiteitä [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external} verkkotunnuksesi DNS-alueella, on mahdollista, ettei näin enää ole.
+Verkkotunnuksesi konfiguraatio on jo oikein. Jatka seuraavaan vaiheeseen. Mikäli olet kuitenkin tehnyt jo toimenpiteitä [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} verkkotunnuksesi DNS-alueella, on mahdollista, ettei näin enää ole.
     
 Verkkotunnuksesi DNS-alueelle pääset osiosta `Verkkotunnukset`{.action}, joka löytyy vasemmanpuoleisesta valikosta. Klikkaa sitten kyseessä olevaa verkkotunnusta. Tarkista lopuksi tiedot kuvakkeessa `DNS-alue`{.action} ja muokkaa niitä tarvittaessa.
 

@@ -19,7 +19,7 @@ Die vRack (Virtual Rack) Technologie erlaubt es, mehrere Server unabhängig von 
 - Sie besitzen ein [vRack](https://www.ovh.de/loesungen/vrack/){.external}.
 - Ihnen stehen mindestens zwei [mit vRack kompatible Server](https://www.ovh.de/dedicated_server/){.external} zur Verfügung.
 - Sie sind via SSH (oder über Ihre grafische Benutzeroberfläche) auf Ihrem Linux-Server eingeloggt (Root-Zugriff).
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 - Sie haben einen privaten IP-Adressbereich.
 
 
@@ -27,7 +27,7 @@ Die vRack (Virtual Rack) Technologie erlaubt es, mehrere Server unabhängig von 
 
 ### Server dem vRack hinzufügen
 
-1. Nachdem das vRack Ihrem Account hinzugefügt wurde, gehen Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} in den Bereich `Cloud`{.action}.
+1. Nachdem das vRack Ihrem Account hinzugefügt wurde, gehen Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} in den Bereich `Cloud`{.action}.
 2. Klicken Sie dann im Menü auf der linken Seite auf `vRack`{.action}.
 3. Wählen Sie anschließend in der angezeigten Liste Ihr vRack aus.
 4. Wählen Sie nun in der Liste der möglichen Dienste die Server aus, die Sie dem vRack hinzufügen möchten und klicken Sie dann auf `Hinzufügen`{.action}.

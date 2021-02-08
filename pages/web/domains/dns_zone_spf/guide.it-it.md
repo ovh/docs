@@ -17,14 +17,14 @@ Il record SPF (Sender Policy Framework) consente a un server di posta elettronic
 ## Prerequisiti
 
 - Avere l’autorizzazione per gestire il dominio o il piano di hosting (se presente in OVH)
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Il dominio deve utilizzare i server DNS di OVH
 
 > [!warning]
 >
 > Se il tuo dominio non utilizza i server DNS OVH, è necessario modificare il record SPF tramite l’interfaccia del provider che gestisce i nameserver del tuo dominio.
 > 
-> Se il tuo dominio è registrato presso OVH, puoi verificarne la configurazione attraverso lo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} cliccando sulla scheda `Server DNS`{.action}.
+> Se il tuo dominio è registrato presso OVH, puoi verificarne la configurazione attraverso lo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} cliccando sulla scheda `Server DNS`{.action}.
 >
 
 ## Procedura
@@ -83,7 +83,7 @@ Per ritrovare la riga corrispondente al record SPF OVH all’interno della tabel
 
 ### Step 3: modificare il record SPF
 
-Per modificare il record SPF, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Nel menu di sinistra scegli la sezione `Domini`{.action}, clicca sul dominio interessato e poi sulla scheda `Zona DNS`{.action}.
+Per modificare il record SPF, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Nel menu di sinistra scegli la sezione `Domini`{.action}, clicca sul dominio interessato e poi sulla scheda `Zona DNS`{.action}.
 
 La tabella ti mostra la zona DNS del tuo dominio in cui ciascuna riga corrisponde a un diverso record DNS.
 

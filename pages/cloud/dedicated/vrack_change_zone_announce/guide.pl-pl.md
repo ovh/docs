@@ -48,7 +48,7 @@ Kliknij link <https://api.ovh.com/console/> i zaloguj się za pomocą identyfika
 > @api {GET} /vrack#GET
 > 
 
-To żądanie API jest używany do pobierania listy usług vRack. Jeśli nie możesz odnaleźć odpowiedniej usługi za pomocą wyświetlonych nazw, skorzystaj z [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, aby ją odszukać. W tym celu przejdź do sekcji „Cloud”, a następnie „vRack”.
+To żądanie API jest używany do pobierania listy usług vRack. Jeśli nie możesz odnaleźć odpowiedniej usługi za pomocą wyświetlonych nazw, skorzystaj z [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, aby ją odszukać. W tym celu przejdź do sekcji „Cloud”, a następnie „vRack”.
 
 > [!api]
 >

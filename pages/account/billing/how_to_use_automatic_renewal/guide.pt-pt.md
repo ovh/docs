@@ -16,13 +16,13 @@ Tem a possibilidade de administrar a renovação e a rescisão dos seus serviço
 
 > [!primary]
 >
-> Em função do seu local de residência, da legislação local, assim como das soluções em questão, alguns pormenores deste guia podem variar ou não se aplicar à sua situação. Em caso de dúvidas, por favor consulte os seus contratos OVHcloud. Estes contratos estão disponíveis na sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, ao aceder a `Os meus serviços`{.action} e, depois, `Os meus contratos`{.action}.
+> Em função do seu local de residência, da legislação local, assim como das soluções em questão, alguns pormenores deste guia podem variar ou não se aplicar à sua situação. Em caso de dúvidas, por favor consulte os seus contratos OVHcloud. Estes contratos estão disponíveis na sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, ao aceder a `Os meus serviços`{.action} e, depois, `Os meus contratos`{.action}.
 >
 
 
 ## Requisitos
 
-- Ter acesso à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - Ter serviços da OVH ativos.
 - Ser contacto de faturação dos seus serviços OVHcloud
 
@@ -42,7 +42,7 @@ Consulte este documento em função da operação que pretende realizar.
 
 ### Aceder à parametrização dos seus serviços
 
-Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no seu ID de cliente no canto superior direito e, em seguida, clique em `Produtos e serviços`{.action}.
+Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique no seu ID de cliente no canto superior direito e, em seguida, clique em `Produtos e serviços`{.action}.
 
 ![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 

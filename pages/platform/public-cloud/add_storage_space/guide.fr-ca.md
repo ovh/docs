@@ -18,7 +18,7 @@ Le Public Cloud vous propose une solution de stockage sans limite avec une factu
 
 
 ## Ajout  d'un conteneur
-- Se connecter à [l'espace client cloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- Se connecter à [l'espace client cloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
 - Cliquer sur stockage d'objets
 - Cliquer sur Créer un conteneur
 - Choisir le datacentre

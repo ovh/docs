@@ -42,7 +42,7 @@ Koszt wysyłki wiadomości SMS (w zasileniach) w zależności od ich miejsca prz
 
 Aby nigdy nie zabrakło Ci zasileń na koncie, możesz aktywować automatyczne doładowanie. Po osiągnięciu minimalnego progu zasileń nowa ilość zasileń zostanie automatycznie dodana do Twojego konta SMS.
 
-Aby aktywować automatyczne doładowanie, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, przejdź do karty `Telecom`{.action}, a następnie na pasku usług po lewej stronie kliknij sekcję `SMS`{.action}. Wybierz konto SMS, dla którego chcesz aktywować automatyczne doładowanie.
+Aby aktywować automatyczne doładowanie, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do karty `Telecom`{.action}, a następnie na pasku usług po lewej stronie kliknij sekcję `SMS`{.action}. Wybierz konto SMS, dla którego chcesz aktywować automatyczne doładowanie.
 
 Przejdź do menu `Opcje`{.action} (1), a następnie `Automatyczne doładowanie`{.action} (2).
 

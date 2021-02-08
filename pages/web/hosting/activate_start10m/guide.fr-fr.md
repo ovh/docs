@@ -17,11 +17,11 @@ Avec le [Start10M](https://www.ovh.com/fr/domaines/offre_hebergement_start10m.xm
 ## Prérequis
 
 - Disposer d'un [nom de domaine](https://www.ovh.com/fr/domaines/){.external}, détaché de tout hébergement web, dans votre espace client OVHcloud.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Domaines`{.action}(**1**) dans la barre de services à gauche, puis choisissez le nom de domaine concerné.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Domaines`{.action}(**1**) dans la barre de services à gauche, puis choisissez le nom de domaine concerné.
 
 Dans le cadre **Informations générales**(**2**) vous trouverez la mention *Hébergement Web et e-mail gratuit*. Cliquez sur le bouton `...`{.action} à droite puis sur `Activer`{.action}(**3**).
 

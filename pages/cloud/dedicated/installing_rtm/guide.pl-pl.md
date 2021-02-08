@@ -15,7 +15,7 @@ Narzędzie RTM (Real Time Monitoring) umożliwia częściowe monitorowanie serwe
 
 ## Wymagania początkowe
 
-- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - dostęp do serwera z uprawnieniami administratora (użytkownika root) za pośrednictwem protokołu SSH (lub przy użyciu graficznego interfejsu użytkownika)
 
 

@@ -18,7 +18,7 @@ Este sistema permitir-lhe-á aceder apenas à pasta “upload-vpn” dos seus da
 
 ## Requisitos
 
-- Dispor de uma conta de utilizador ativa criada a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dispor de uma conta de utilizador ativa criada a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 

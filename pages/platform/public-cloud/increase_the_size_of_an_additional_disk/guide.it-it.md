@@ -17,7 +17,7 @@ Se hai raggiunto la capacità massima di storage del tuo disco aggiuntivo, puoi 
 
 * Aver creato un’istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external} nel tuo account OVHcloud
 * Disporre di un [disco aggiuntivo](https://www.ovhcloud.com/it/public-cloud/block-storage/){.external}
-* Avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 * Avere accesso all’istanza via SSH con l’utente root (solo per Linux)
 * Avere accesso all’istanza via RDP con l’utente root (solo per Windows)
 
@@ -25,7 +25,7 @@ Se hai raggiunto la capacità massima di storage del tuo disco aggiuntivo, puoi 
 
 ### Dallo Spazio Cliente
 
-Per distribuire un’istanza Public Cloud accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Clicca su`Public Cloud`{.action} in alto a sinistra. Poi, nella nuova pagina, clicca sulla freccia accanto al nome del progetto predefinito in alto a sinistra. Ora seleziona il progetto su cui vuoi modificare la dimensione del disco aggiuntivo.
+Per distribuire un’istanza Public Cloud accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca su`Public Cloud`{.action} in alto a sinistra. Poi, nella nuova pagina, clicca sulla freccia accanto al nome del progetto predefinito in alto a sinistra. Ora seleziona il progetto su cui vuoi modificare la dimensione del disco aggiuntivo.
 
 ![Spazio Cliente](images/select_project.png){.thumbnail}
 

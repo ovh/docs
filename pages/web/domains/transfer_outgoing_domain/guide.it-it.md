@@ -24,7 +24,7 @@ Per impedire trasferimenti di domini non autorizzati, i domini sono generalmente
 
 - Disporre di un [dominio](https://www.ovh.it/domini/) registrato in OVHcloud
 - Avere l’autorizzazione per richiedere il trasferimento di un dominio: il proprietario e/o gli amministratori devono essere informati della richiesta di trasferimento
-- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - La registrazione del dominio in questione risale ad almeno 60 giorni fa e non è stata trasferita o scambiata (ovvero la modifica del proprietario) negli ultimi 60 giorni
 
 > [!primary]
@@ -50,7 +50,7 @@ Per impedire trasferimenti di domini non autorizzati, i domini sono generalmente
 
 ### Step 1: togliere la protezione contro il trasferimento del dominio
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e seleziona `Web Cloud`{.action} nella barra di navigazione superiore. Clicca su `Domini`{.action} nel menu a sinistra e poi seleziona il tuo dominio.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action} nella barra di navigazione superiore. Clicca su `Domini`{.action} nel menu a sinistra e poi seleziona il tuo dominio.
 
 Nella scheda `Informazioni generali`{.action}, visualizzi il cursore `Richiedi Auth info` sotto **Sicurezza**. Di default, questa protezione è `Attiva`{.action}.
 

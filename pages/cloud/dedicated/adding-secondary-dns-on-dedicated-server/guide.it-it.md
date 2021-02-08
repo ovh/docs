@@ -22,7 +22,7 @@ Se configuri il tuo server dedicato come server DNS, puoi utilizzare il DNS OVHc
 
 - Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external}
 - Disporre di un [dominio](https://www.ovh.it/domini/){.external} di gestione amministrativa o tecnica
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 
 > [!warning]
 >
@@ -36,7 +36,7 @@ Se configuri il tuo server dedicato come server DNS, puoi utilizzare il DNS OVHc
 
 ### Aggiungi un dominio <a name="ajoutdomaine"></a>
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), accedi alla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server nella barra laterale sinistra del `server dedicati`{.action}.
+Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server nella barra laterale sinistra del `server dedicati`{.action}.
 
 Clicca sulla scheda `DNS secondaria`{.action} e poi sul pulsante `Aggiungi un dominio`{.action}.
 
@@ -72,7 +72,7 @@ Prima di poterlo aggiungere al DNS secondario OVHcloud, è necessario confermare
 
 - Se il dominio è gestito da un provider esterno o utilizza server DNS esterni allo stadio attuale, accedi allo Spazio Cliente del tuo provider DNS e aggiungi un record TXT con il sottodominio "ownercheck" e il valore fornito allo Step 2 dell'[Aggiungi un dominio"](#ajoutdomaine).
 
-- Se il dominio è gestito da OVHcloud come server di registrazione e utilizza server DNS OVHcloud, chiudi la finestra cliccando su `Annulla`{.action}. Segui le istruzioni di [questa guida](../../domains/web_hosting_modifica_la_tua_zona_dns/) per aggiungere il record TXT nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Se il dominio è gestito da OVHcloud come server di registrazione e utilizza server DNS OVHcloud, chiudi la finestra cliccando su `Annulla`{.action}. Segui le istruzioni di [questa guida](../../domains/web_hosting_modifica_la_tua_zona_dns/) per aggiungere il record TXT nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 ![DNS secondario](images/cp-04.png){.thumbnail}
 

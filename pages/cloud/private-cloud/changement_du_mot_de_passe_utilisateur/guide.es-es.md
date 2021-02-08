@@ -15,14 +15,14 @@ Es posible gestionar los permisos y contraseñas de los usuarios del cliente vSp
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 - Haber creado una cuenta de usuario desde el área de cliente de OVHcloud. Para más información, consulte [esta guía](../manager-ovh-private-cloud/#usuarios).
 
 ## Procedimiento
 
 ### Cambiar la contraseña
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, acceda al menú `Servidores`{.action} y, en la sección `Private Cloud`{.action}, seleccione su servidor en la lista. A continuación, haga clic en la pestaña `Usuarios` (4).
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, acceda al menú `Servidores`{.action} y, en la sección `Private Cloud`{.action}, seleccione su servidor en la lista. A continuación, haga clic en la pestaña `Usuarios` (4).
 
 ![acceso área de cliente](images/userpassword1.png){.thumbnail}
 

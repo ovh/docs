@@ -20,13 +20,13 @@ Dodatkowy dysk jest przydatny, jeśli:
 
 ## Wymagania początkowe
 
-* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 * [instancja Public Cloud](https://www.ovh.pl/public-cloud/){.external} na koncie OVHcloud
 * dostęp administracyjny (uprawnienia użytkownika root) do instancji za pośrednictwem protokołu SSH
 
 ## W praktyce
 
-Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} i kliknij menu `Public Cloud`{.action}. Następnie kliknij `projekt`{.action}, którego instancję chcesz utworzyć.
+Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij menu `Public Cloud`{.action}. Następnie kliknij `projekt`{.action}, którego instancję chcesz utworzyć.
 
 Kliknij przycisk `Działania`{.action} i wybierz pozycję `Utwórz wolumin`{.action}.
 
