@@ -76,7 +76,7 @@ You will need to set up your email address on the device you want to check your 
 
 |Windows|Outlook|Apple|Android|Other|
 |---|---|---|---|---|
-|[Windows 10 Mail](../mail-configuration-windows-10/){.external}|[Outlook 2016](../configuration-outlook-2016/){.external}|[macOS Mail](../guide-configuring-mail-on-macos/){.external}|[Android](../configuration-android/){.external}|[Gmail online interface](../gmail-configuration/){.external}|
+|[Windows 10 Mail](../mail-configuration-on-windows-10/){.external}|[Outlook 2016](../configuration-outlook-2016/){.external}|[macOS Mail](../guide-configuring-mail-on-macos/){.external}|[Android](../configuration-android/){.external}|[Gmail online interface](../gmail-configuration/){.external}|
 | | |[iPhone and iPad](../email_hosting_iphone_ios_91_configuration/){.external}| | |
 
 If you simply need the information required to configure your email account, the settings to use are listed below:
@@ -143,7 +143,7 @@ You will need to set up your email address on the device you want to check your 
 
 |Windows|Outlook|Apple|Android|Other|
 |---|---|---|---|---|
-|[Windows 10 Mail](../mail-configuration-windows-10/){.external}|[Outlook 2016](../configuration-outlook-2016/){.external}|[macOS Mail](../guide-configuring-mail-on-macos/){.external}|[Android](../configuration-android/){.external}|[Gmail online interface](../gmail-configuration/){.external}|
+|[Windows 10 Mail](../mail-configuration-on-windows-10/){.external}|[Outlook 2016](../configuration-outlook-2016/){.external}|[macOS Mail](../guide-configuring-mail-on-macos/){.external}|[Android](../configuration-android/){.external}|[Gmail online interface](../gmail-configuration/){.external}|
 | | |[iPhone and iPad](../email_hosting_iphone_ios_91_configuration/){.external}| | |
 
 If you simply need the information required to configure your email account, the settings to use are listed below:

@@ -42,7 +42,7 @@ This guide will explain how to deploy a simple *Hello World* server on Express.
 ## Requirements
 
 - a [Node.js](https://labs.ovh.com/managed-nodejs) POWER web hosting plan
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 If you have just started to use your Web POWER web hosting plan, we suggest to have a look at our [Getting started with a POWER web hosting plan](../getting-started-with-power-web-hosting/) guide before going further.
 

@@ -81,7 +81,7 @@ Una volta inseriti tutti i dati, clicca su `Seguente`{.action} e verifica la cor
 Selezionando un dominio registrato in OVHcloud, hai la possibilità di modificarne automaticamente o manualmente la configurazione DNS:
 
 - **Per una configurazione DNS automatica**, spunta la casella `Configurazione automatica (consigliata)`{.action}
-- **Per una configurazione DNS manuale**, deseleziona la casella `Configurazione automatica (consigliata)`{.action} e recupera i parametri da modificare. Per eseguire questa operazione, consulta la guida Modificare una zona DNS [di OVHcloud](../../domains/web_hosting_como_editar_mi_zona_dns/){.external}.
+- **Per una configurazione DNS manuale**, deseleziona la casella `Configurazione automatica (consigliata)`{.action} e recupera i parametri da modificare. Per eseguire questa operazione, consulta la guida Modificare una zona DNS [di OVHcloud](../../domains/web_hosting_modifica_la_tua_zona_dns/){.external}.
 
 Clicca su `Conferma`{.action} per aggiungere il dominio. Questa operazione potrebbe richiedere circa un’ora per essere completata e la propagazione della nuova configurazione DNS da 4 a 24 ore per diventare effettiva.
 
@@ -95,7 +95,7 @@ Ora che il dominio è stato aggiunto, passa allo [Step 3: mettere online](#site-
 
  > Prima di proseguire, è preferibile modificare la zona DNS del dominio esterno.
  >
- > La modifica della configurazione del nome di dominio esterno (la sua zona DNS) deve essere effettuata dall'interfaccia del provider che la gestisce. Se il provider è OVHcloud, consulta la guida ["Modificare una zona DNS OVHcloud"](../../domains/web_hosting_como_editar_mi_zona_dns/){.external}. La propagazione delle modifiche potrebbe richiedere da 1 a 24 ore.
+ > La modifica della configurazione del nome di dominio esterno (la sua zona DNS) deve essere effettuata dall'interfaccia del provider che la gestisce. Se il provider è OVHcloud, consulta la guida ["Modificare una zona DNS OVHcloud"](../../domains/web_hosting_modifica_la_tua_zona_dns/){.external}. La propagazione delle modifiche potrebbe richiedere da 1 a 24 ore.
 >
 > Di seguito trovi i 2 elementi da modificare relativi alla configurazione DNS del tuo dominio esterno:
 >
