@@ -21,7 +21,7 @@ Este guia irá fornecer-lhe informações básicas sobre os pontos que podem afe
 - um [plano de Alojamento Web OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external}
 - um e-mail a confirmar a configuração do seu plano de Alojamento Web
 - um [nome de domínio](https://www.ovh.pt/dominios/){.external} que pode ser utilizado para aceder ao seu website
-- acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
 
 ## Instruções
 
@@ -86,7 +86,7 @@ Encontrará mais informações sobre este tópico no Passo 5 abaixo.
 ### Passo 4: Otimizar os seus scripts
 Correlacione os gráficos da utilização de recursos do seu alojamento (mais informações abaixo) para encontrar a origem dos atrasos e consultar os logs nas datas destes picos.
 
-Pode aceder aos seus logs, estatísticas e gráficos diretamente a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Pode aceder aos seus logs, estatísticas e gráficos diretamente a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 Como aceder aos logs:
 \- Clique no domínio na secção `Alojamento`{.action},
@@ -157,7 +157,7 @@ _Este passo é opcional se não estiver a utilizar uma base de dados._
 Pode aceder à sua base de dados utilizando o PHPMyAdmin; as instruções sobre como utilizar o PHPMyAdmin sairiam do âmbito deste guia pelo que não serão detalhadas em maior pormenor.
 No entanto, existem vários guias externos sobre esta matéria.
 
-**Como aceder à base de dados via phpMyAdmin:** Para aceder à sua base de dados via phpMyAdmin, siga o procedimento disponibilizado na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}:
+**Como aceder à base de dados via phpMyAdmin:** Para aceder à sua base de dados via phpMyAdmin, siga o procedimento disponibilizado na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}:
 
 - Clique no seu domínio na secção `Alojamento`{.action}.
 - Aceda ao separador `Base de dados`{.action}.

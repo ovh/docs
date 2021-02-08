@@ -18,7 +18,7 @@ order: 1
 
 - Sie besitzen ein [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
 - Sie haben die Zugangsdaten, um sich mit dem Speicherplatz Ihres Hostings zu verbinden.
-- Sie sind im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
+- Sie sind im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
 ## Beschreibung
 
@@ -74,7 +74,7 @@ Stellen Sie im nächsten Schritt sicher, dass die verschiedenen Zusatzelemente I
 
 Sie erhalten so einen Überblick über die Aktivität Ihres Dienstes und Ihrer Website. Ziel ist es, zu analysieren, was zum Zeitpunkt der Deaktivierung passiert ist.
 
-Um die Aktivität und Logs Ihres Hostings einzusehen, loggen Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie nach dem Login links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Je nach den gesuchten Informationen haben Sie nun zwei Möglichkeiten:
+Um die Aktivität und Logs Ihres Hostings einzusehen, loggen Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie nach dem Login links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Je nach den gesuchten Informationen haben Sie nun zwei Möglichkeiten:
 
 - **Die Aktivität Ihres Webhostings einsehen**
 
@@ -183,7 +183,7 @@ Für die Reaktivierung Ihres Webhostings müssen Einstellungen in Ihrem Speicher
 
 Wenn Sie Ihr Webhosting selbst erneut aktivieren können, suchen Sie die notwendigen Informationen heraus, um sich mit Ihrem Speicherplatz zu verbinden (also mit dem FTP-Server, d. h. Sie benötigen den FTP-Benutzernamen und das zugehörige Passwort).
 
-Loggen Sie sich hierfür in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und klicken Sie links im Menü auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. Auf dieser Seite können Sie, wenn nötig, auch das [Passwort eines FTP-Benutzers ändern](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/){.external}.
+Loggen Sie sich hierfür in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und klicken Sie links im Menü auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. Auf dieser Seite können Sie, wenn nötig, auch das [Passwort eines FTP-Benutzers ändern](https://docs.ovh.com/de/hosting/ftp-benutzer-passwort-aendern/){.external}.
 
 ![Hosting Deaktivierung](images/hosting-deactivation-step3.png){.thumbnail}
 

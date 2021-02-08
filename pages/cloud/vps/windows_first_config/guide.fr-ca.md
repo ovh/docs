@@ -16,7 +16,7 @@ Lors de l'installation de Windows Server sur un [VPS](https://www.ovhcloud.com/f
 ## Prérequis
 
 - Posséder un [VPS](https://www.ovhcloud.com/fr-ca/vps/){.external} avec une distribution Windows installée.
-- Avoir accès à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager).
+- Avoir accès à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 
 ## En pratique

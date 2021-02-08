@@ -16,7 +16,7 @@ Los planes de hosting de OVHcloud incluyen un espacio de almacenamiento en el qu
 ## Requisitos
 
 - Tener contratado un [plan de hosting de OVH](https://www.ovh.com/world/es/hosting/){.external} (salvo el hosting Cloud Web).
-- Según el método utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} o disponer de la contraseña FTP necesaria para conectarse al espacio de almacenamiento. 
+- Según el método utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} o disponer de la contraseña FTP necesaria para conectarse al espacio de almacenamiento. 
 
 ## Procedimiento
 
@@ -44,7 +44,7 @@ Una vez que haya elegido el método de restauración más adecuado en función d
 
 ### Restaurar el espacio de almacenamiento desde el área de cliente
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. Abra la pestaña `FTP - SSH`{.action} y haga clic en el botón `Restaurar una copia de seguridad`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. Abra la pestaña `FTP - SSH`{.action} y haga clic en el botón `Restaurar una copia de seguridad`{.action}.
 
 ![backup ftp](images/backupftp-step1.png){.thumbnail}
 
@@ -83,7 +83,7 @@ En primer lugar, debe decidir qué programa o interfaz web va a utilizar para co
 
 - **Cyberduck**: Puede descargar este programa desde la web oficial. Para más información, consulte nuestra [guía de uso de Cyberduck (Mac)](../web_hosting_guia_de_uso_de_cyberduck_mac/){.external}. Esta guía no sustituye a la documentación oficial del editor.
 
-- **FTP Explorer**: Puede acceder desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Para ello, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. Abra la pestaña `FTP - SSH`{.action} y haga clic en el botón `Explorador FTP`{.action}.
+- **FTP Explorer**: Puede acceder desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para ello, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. Abra la pestaña `FTP - SSH`{.action} y haga clic en el botón `Explorador FTP`{.action}.
 
 ![backup ftp](images/backupftp-step3.png){.thumbnail}
 

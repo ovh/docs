@@ -17,7 +17,7 @@ Jeśli otrzymałeś e-mail z informacją, że jeden z Twoich adresów e-mail zos
 ## Wymagania początkowe
 
 - Posiadanie usługi [e-mail OVHcloud](https://www.ovh.pl/emaile/){.external}
-- Dostęp do[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), sekcja `Web Cloud`{.action}
+- Dostęp do[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), sekcja `Web Cloud`{.action}
 
 ## W praktyce
 
@@ -25,7 +25,7 @@ Jeśli otrzymałeś e-mail z informacją, że jeden z Twoich adresów e-mail zos
 
 #### W przypadku adresu e-mail Exchange
 
-Zaloguj się do swojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i przejdź do sekcji „Web”. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
+Zaloguj się do swojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji „Web”. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
 
 Przejdź do karty `Konta e-mail`{.action} w Twojej platformie. Jeśli w kolumnie „status” adresu e-mail widnieje „zablokowany”, kliknij `...`{.action} z prawej strony konta i wybierz opcję `Odblokuj`{.action}. Następnie przejdź do [etapu 2](./#etap-2-przejscie-do-zgloszenia-serwisowego_1){.external} niniejszego przewodnika.
 
@@ -33,7 +33,7 @@ Przejdź do karty `Konta e-mail`{.action} w Twojej platformie. Jeśli w kolumnie
 
 #### W przypadku adresu E-mail Pro
 
-Zaloguj się do swojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i przejdź do sekcji „Web”. Kliknij `E-mail Pro`{.action} na pasku usług po lewej stronie, a następnie wybierz odpowiednią platformę E-mail Pro.
+Zaloguj się do swojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji „Web”. Kliknij `E-mail Pro`{.action} na pasku usług po lewej stronie, a następnie wybierz odpowiednią platformę E-mail Pro.
 
 Przejdź do karty `Konta e-mail`{.action} w Twojej platformie. Jeśli kolumna „status” po prawej stronie danego adresu e-mail zawiera słowo „Spam”, kliknij je i wybierz opcję `Odpowiedz na zgłoszenie`{.action}. Następnie przejdź do [etapu 2](./#etap-2-przejscie-do-zgloszenia-serwisowego_1){.external} niniejszego przewodnika.
 
@@ -41,7 +41,7 @@ Przejdź do karty `Konta e-mail`{.action} w Twojej platformie. Jeśli kolumna �
 
 #### W przypadku adresu e-mail MX plan
 
-Zaloguj się do swojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i przejdź do sekcji „Web”. Kliknij `E-maile`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiednią nazwę domeny.
+Zaloguj się do swojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji „Web”. Kliknij `E-maile`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiednią nazwę domeny.
 
 Przejdź do karty `Konta e-mail`{.action} w Twojej platformie. Jeśli kolumna „status” po prawej stronie danego adresu e-mail zawiera słowo „Spam”, kliknij je i wybierz opcję `Odpowiedz na zgłoszenie`{.action}. Następnie przejdź do [etapu 2](./#etap-2-przejscie-do-zgloszenia-serwisowego_1){.external} niniejszego przewodnika.
 

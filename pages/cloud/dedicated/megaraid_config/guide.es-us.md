@@ -27,7 +27,7 @@ El nivel de RAID predeterminado para las instalaciones del servidor OVHcloud es 
 
 ### Usando el panel de control de OVHcloud
 
-En el [Panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) .external}, haga clic en el menú `Dedicado` {.action} y seleccione su servidor.
+En el [Panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) .external}, haga clic en el menú `Dedicado` {.action} y seleccione su servidor.
 
 A continuación, en la pestaña `Información general`{.action}, haga clic en el botón `Reinstalar` {.action} para instalar un nuevo sistema operativo con su configuración RAID 0 personalizada.
 
@@ -61,7 +61,7 @@ df -h
 
 ### Usando el modo de rescate
 
-En el [Panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en el menú `Dedicado`{.action} y seleccione su servidor.
+En el [Panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en el menú `Dedicado`{.action} y seleccione su servidor.
 
 En la pestaña `Información general` {.action}, haga clic en el botón `Modificar` {.action} para cambiar el sistema de boot.
 
@@ -77,7 +77,7 @@ Haga clic en `Siguiente`{.action} y luego haga clic en `Confirmar`{.action} en l
 
 ![megaraid](images/rescue_mode_raid0_03.png){.thumbnail}
 
-Haga clic en el botón `Reboot`{.action} en el [Panel de control](https://ca.ovh.com/auth/?action=gotomanager){.external}. 
+Haga clic en el botón `Reboot`{.action} en el [Panel de control](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. 
 
 ![megaraid](images/server_installation_raid0_06_2020.png){.thumbnail}
 

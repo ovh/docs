@@ -61,7 +61,7 @@ Voer uw accountgegevens in:
 |Informatie|Omschrijving|
 |---|---|
 |Adres|Dit veld moet al ingevuld zijn. Voer het volledige e-mailadres in.|
-|Server|Voer de server in waar uw Exchange op gehost wordt.  U vindt deze gegevens in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} door naar het tabblad `Algemene informatie`{.action} van de betreffende Exchange-dienst te gaan en vervolgens naar het gedeelte `Inloggen`{.action}.|
+|Server|Voer de server in waar uw Exchange op gehost wordt.  U vindt deze gegevens in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} door naar het tabblad `Algemene informatie`{.action} van de betreffende Exchange-dienst te gaan en vervolgens naar het gedeelte `Inloggen`{.action}.|
 |Domein|Laat dit veld leeg.|
 |Gebruikersnaam|Voer het volledige e-mailadres in.|  
 |Wachtwoord|Dit veld moet al ingevuld zijn. Voer het wachtwoord van het e-mailadres in.|

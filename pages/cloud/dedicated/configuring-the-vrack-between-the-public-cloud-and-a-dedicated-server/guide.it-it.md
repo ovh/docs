@@ -18,7 +18,7 @@ La [vRack](https://www.ovh.it/soluzioni/vrack/){.external} è una rete privata c
 
 - Aver attivato un servizio [vRack](https://www.ovh.it/soluzioni/vrack/){.external}
 - Disporre di un [server dedicato](https://www.ovh.it/server_dedicati/){.external} compatibile con la vRack
-- Essere connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Essere connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Avere accesso all’intervallo di indirizzi IP privati preselezionato
 
 
@@ -26,7 +26,7 @@ La [vRack](https://www.ovh.it/soluzioni/vrack/){.external} è una rete privata c
 
 ### Crea un progetto Public Cloud
 
-Una volta connesso al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul menu `Cloud`{.action} e poi sul pulsante `Ordina`{.action}.
+Una volta connesso al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul menu `Cloud`{.action} e poi sul pulsante `Ordina`{.action}.
 
 ![Creare un progetto](images/pci-project-01.png){.thumbnail}
 

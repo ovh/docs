@@ -46,7 +46,7 @@ Wyświetli się okienko, w którym należy wpisać **hasło**, które wybrałeś
 >
 > Jeśli pojawi się komunikat, że Twoje konto nie mogło zostać w programie Outlook skonfigurowane, może to oznaczać, że pole SRV OVH nie jest poprawnie skonfigurowane w strefie DNS Twojej domeny.
 >
-> W takiej sytuacji zalecamy sprawdzenie konfiguracji domeny w usłudze Exchange w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, zakładka `Powiązane domeny`{.action}, kolumna `Diagnostyka`{.action} w tabeli.
+> W takiej sytuacji zalecamy sprawdzenie konfiguracji domeny w usłudze Exchange w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, zakładka `Powiązane domeny`{.action}, kolumna `Diagnostyka`{.action} w tabeli.
 >
 
 Jeśli konfiguracja Twojej domeny jest prawidłowa, wyświetli się komunikat, w którym zostaniesz poproszony o zezwolenie na połączenie z serwerem OVH. Zaakceptuj to połączenie w celu uruchomienia automatycznej konfiguracji Twojego konta Exchange.

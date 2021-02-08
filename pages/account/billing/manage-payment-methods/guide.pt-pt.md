@@ -12,12 +12,12 @@ section: Faturação
 A Área de Cliente OVHcloud permite-lhe guardar e gerir vários métodos de pagamento.
 
 ## Requisitos
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - Dispor de um método de pagamento válido.
 
 ## Instruções
 
-Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no seu nome em cima à direita, e selecione `Métodos de pagamento`{.action}.
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique no seu nome em cima à direita, e selecione `Métodos de pagamento`{.action}.
 
 ![manage-payment-methods](images/hubpayment.png){.thumbnail}
 

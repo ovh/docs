@@ -18,7 +18,7 @@ A nossa oferta de alojamento [Cloud Web](https://www.ovh.pt/alojamento-partilhad
 - Ter um serviço de [alojamento Cloud Web](https://www.ovh.pt/alojamento-partilhado/cloud-web.xml){.external}.
 - Ter recebido o e-mail com a confirmação da instalação do alojamento Cloud Web.
 - Ter um [domínio](https://www.ovh.pt/dominios/){.external} (endereço que permite identificar e aceder ao seu site).
-- Aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
@@ -41,7 +41,7 @@ A [Cloud Web](https://www.ovh.pt/alojamento-partilhado/cloud-web.xml){.external}
 
 As linguagens atualmente disponíveis são: PHP e Node.js.
 
-Para aceder aos motores de execução do seu alojamento [Cloud Web](https://www.ovh.pt/alojamento-partilhado/cloud-web.xml){.external} vá à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento Cloud Web em causa. Por fim, clique no separador `Motores de execução`{.action}.
+Para aceder aos motores de execução do seu alojamento [Cloud Web](https://www.ovh.pt/alojamento-partilhado/cloud-web.xml){.external} vá à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento Cloud Web em causa. Por fim, clique no separador `Motores de execução`{.action}.
 
 Será automaticamente criado um motor durante a instalação do alojamento. É indicado como `Escolha padrão` no quadro que se apresenta. Para modificar um motor já parametrizado, clique nos três pontos à direita deste último e, a seguir, em `Modificar`{.action}. 
 
@@ -137,7 +137,7 @@ Como os projetos podem variar muito entre si, não existe um processo universal 
 
 Agora que o projeto se encontra instalado no seu alojamento Cloud Web, tem a possibilidade de criar endereços de e-mail. Se não deseja criá-los, passe diretamente para a etapa seguinte.
 
-Para criar um ou vários endereços de e-mail, e ainda conectado à sua [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} clique em `E-mails`{.action} na barra à esquerda. Depois escolha o domínio com o qual o alojamento Cloud Web foi subscrito.
+Para criar um ou vários endereços de e-mail, e ainda conectado à sua [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} clique em `E-mails`{.action} na barra à esquerda. Depois escolha o domínio com o qual o alojamento Cloud Web foi subscrito.
 
 Para criar um novo endereço de e-mail, clique no botão `Criar um endereço de e-mail`{.action} e siga as etapas que vão apresentar-se. Se tiver dificuldades, consulte o guia:  [E-mail partilhado: Guia de criação de um endereço de e-mail](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external}.
 
@@ -155,8 +155,8 @@ Há vários registos DNS inerentes à OVH. Vamos referir-nos a dois deles em par
 
 |Registo DNS|Serviço associado|Onde encontrá-lo?|
 |---|---|---|
-|A|Para o site|Na sua [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, posicionado na secção `Alojamentos`{.action}, no alojamento Cloud Web em causa. De seguida, em `Informações gerais`{.action}, tome nota do endereço IP indicado para «IPv4».|
-|MX|Para os e-mails|Na sua [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, posicionado na secção `E-mails`{.action}, no domínio em causa. De seguida, clique em `Informações gerais`{.action} e tome nota das informações indicadas para os «Campos MX».|
+|A|Para o site|Na sua [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, posicionado na secção `Alojamentos`{.action}, no alojamento Cloud Web em causa. De seguida, em `Informações gerais`{.action}, tome nota do endereço IP indicado para «IPv4».|
+|MX|Para os e-mails|Na sua [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, posicionado na secção `E-mails`{.action}, no domínio em causa. De seguida, clique em `Informações gerais`{.action} e tome nota das informações indicadas para os «Campos MX».|
 
 #### 2. Verificar e/ou alterar os registos DNS
 
@@ -167,14 +167,14 @@ Agora que conhece os registos DNS inerentes ao seu alojamento [Cloud Web](https:
 >
 > - Se o domínio não usar a configuração DNS da OVH, a configuração deverá ser efetuada no sistema do agente responsável pela gestão do seu domínio.
 > 
-> - Se o domínio estiver registado na OVH, pode verificar se este último utiliza a nossa configuração DNS. Para isso, vá à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no separador`Servidores DNS`{.action} e posicione-se sobre o domínio em questão.
+> - Se o domínio estiver registado na OVH, pode verificar se este último utiliza a nossa configuração DNS. Para isso, vá à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique no separador`Servidores DNS`{.action} e posicione-se sobre o domínio em questão.
 >
 
 Siga as indicações abaixo para saber onde efetuar estas manipulações:
 
 |Configuração DNS utilizada|Onde realizar as manipulações?|
 |---|---|
-|OVH|Na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, posicionado na secção `Domínios`{.action}, no domínio em causa. No separador `Zona DNS`{.action}, verifique e altere as informações necessárias. Se necessário, pode recorrer ao guia [Alojamento Partilhado: como editar a minha zona DNS?](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}.|
+|OVH|Na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, posicionado na secção `Domínios`{.action}, no domínio em causa. No separador `Zona DNS`{.action}, verifique e altere as informações necessárias. Se necessário, pode recorrer ao guia [Alojamento Partilhado: como editar a minha zona DNS?](https://docs.ovh.com/pt/domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}.|
 |Outra|No sistema do agente responsável pela gestão do seu domínio. Sugerimos que o contacte se sentir dificuldades durante as manipulações.|
 
 Uma vez modificada a configuração DNS do domínio, é necessário um tempo máximo de propagação de 24 horas até as alterações serem efetivas. Se adicionou vários domínios ao seu alojamento Cloud Web enquanto Multisite, deverá realizar estas duas manipulações para cada um deles. 

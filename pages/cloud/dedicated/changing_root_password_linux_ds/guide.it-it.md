@@ -18,7 +18,7 @@ Durante l’installazione o la reinstallazione di una distribuzione o di un sist
 
 * Disporre di un [server dedicato](https://www.ovh.it/server_dedicati/){.external} con una distribuzione Linux
 * Avere accesso in SSH (root)
-* Essere connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Essere connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 
 ## Procedura

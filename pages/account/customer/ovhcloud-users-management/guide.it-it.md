@@ -50,7 +50,7 @@ Il proprietario dell’account xx11111-ovh, dispone necessariamente del privileg
 
 ### Step 2: Aggiungi un utente
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul tuo`nome`{.action} (1) e poi sulle tue iniziali (2).
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul tuo`nome`{.action} (1) e poi sulle tue iniziali (2).
 A questo punto, clicca sulla scheda `Gestione utenti`{.action} (3), quindi su `Aggiungi un utente`{.action} (4).
 
 ![users-management](images/hubusers.png){.thumbnail}
@@ -73,7 +73,7 @@ Esempio: **1234-567-89/john.smith**.
 
 ![users-management](images/usersmanagement3.png){.thumbnail}
 
-A questo punto l’utente appena creato potrà accedere allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}usando questo identificativo. 
+A questo punto l’utente appena creato potrà accedere allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}usando questo identificativo. 
 
 Inoltre potrà modificare password e proteggere l’accesso al tuo account attivando la doppia autenticazione (solo ed esclusivamente per il suo accesso in qualità di utente). A questo proposito consulta [la guida relativa all’attivazione della doppia autenticazione](../proteggi_il_tuo_account_con_2FA/){.external}.
 

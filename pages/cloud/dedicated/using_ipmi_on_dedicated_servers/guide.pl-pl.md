@@ -16,7 +16,7 @@ Uwaga: napotkasz również termin KVM (Keyboard Video and Mouse), który jest u�
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager)
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 
 ## W praktyce

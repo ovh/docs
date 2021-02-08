@@ -9,7 +9,7 @@ section: 'Lignes téléphoniques'
 
 ## Objectif
 
-Les touches programmables (aussi appelées touches de fonction) permettent de lier une fonction aux touches de votre téléphone. À partir de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, vous pouvez les configurer afin, par exemple, de joindre un collaborateur, d'appeler votre répondeur, de rejeter un appel, de mettre une communication en attente ou de renvoyer un appel.
+Les touches programmables (aussi appelées touches de fonction) permettent de lier une fonction aux touches de votre téléphone. À partir de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, vous pouvez les configurer afin, par exemple, de joindre un collaborateur, d'appeler votre répondeur, de rejeter un appel, de mettre une communication en attente ou de renvoyer un appel.
 
 **Ce guide vous présente les différentes possibilités de programmation de vos touches, ainsi que la manière de les effectuer.**
 
@@ -18,14 +18,14 @@ Les touches programmables (aussi appelées touches de fonction) permettent de li
 
 - Posséder un téléphone fourni par OVHcloud avec des touches de fonction (cette information est disponible sur [notre site](https://www.ovhtelecom.fr/telephonie/comparatif-des-telephones.xml){.external}).
 - Détenir une offre VoIP compatible (voir « Fonctionnalités du téléphone » sur [notre site](https://www.ovhtelecom.fr/telephonie/services_inclus/){.external}).
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 
 ## En pratique
 
 ### Configurer des touches programmables via votre espace client
 
-Une fois connecté dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} partie `Télécom`{.action}, cliquez sur `Téléphonie` et sélectionnez la ligne concernée. Cliquez ensuite sur l'onglet `Téléphone`{.action} puis sur `Touches programmables`{.action}.
+Une fois connecté dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} partie `Télécom`{.action}, cliquez sur `Téléphonie` et sélectionnez la ligne concernée. Cliquez ensuite sur l'onglet `Téléphone`{.action} puis sur `Touches programmables`{.action}.
 
 ![Touches programmables](images/touches_programmables.png){.thumbnail}
 
@@ -109,7 +109,7 @@ Il s'agit des fonctions associées à un alias configuré en file d'appels.
 > Pour savoir si votre poste est compatible avec un module d'extension de touches, rendez-vous sur [notre site](https://www.ovhtelecom.fr/telephonie/comparatif-des-telephones.xml){.external}.
 > 
 
-Afin de bénéficier de cette option, il faut posséder un module d’extension de touches compatible avec votre poste téléphonique. Pour utiliser ce module, il est nécessaire dans un premier temps de l'activer en vous connectant à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Toujours dans l'onglet `Téléphone`{.action}, choisissez cette fois `Paramètres Plug & Phone personnalisés`{.action}.
+Afin de bénéficier de cette option, il faut posséder un module d’extension de touches compatible avec votre poste téléphonique. Pour utiliser ce module, il est nécessaire dans un premier temps de l'activer en vous connectant à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Toujours dans l'onglet `Téléphone`{.action}, choisissez cette fois `Paramètres Plug & Phone personnalisés`{.action}.
 
 ![Paramètres Plug & Phone](images/parametre_plug_play.png){.thumbnail}
 

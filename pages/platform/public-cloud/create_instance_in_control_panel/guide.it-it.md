@@ -16,13 +16,13 @@ Il [Public Cloud OVH](https://www.ovhcloud.com/it/public-cloud/){.external} ti p
 
 ## Prerequisiti
 
-* avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} OVHcloud
+* avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} OVHcloud
 * aver già creato un progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external} nel tuo account OVHcloud
 * disporre di una chiave SSH nel tuo Spazio Cliente OVHcloud
 
 ### Distribuire un’istanza Public Cloud 
 
-Per distribuire un’istanza Public Cloud accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} Clicca su`Public Cloud`{.action} in alto a sinistra. Poi, nella nuova pagina, clicca sulla freccia accanto al nome del progetto predefinito in alto a sinistra. Seleziona il progetto su cui vuoi creare una nuova istanza.
+Per distribuire un’istanza Public Cloud accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} Clicca su`Public Cloud`{.action} in alto a sinistra. Poi, nella nuova pagina, clicca sulla freccia accanto al nome del progetto predefinito in alto a sinistra. Seleziona il progetto su cui vuoi creare una nuova istanza.
 
 ![select_project](images/select_project.png){.thumbnail}
 

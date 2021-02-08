@@ -30,7 +30,7 @@ El historial de envíos incluye información sobre la fecha, el remitente, el de
 
 ### 1. Consultar el historial en el área de cliente
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) y haga clic en `Telecom`{.action} (1). A continuación, haga clic en `SMS`{.action} en la columna izquierda (2) y seleccione su cuenta de SMS (3).
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y haga clic en `Telecom`{.action} (1). A continuación, haga clic en `SMS`{.action} en la columna izquierda (2) y seleccione su cuenta de SMS (3).
 
 Acceda a la sección `SMS`{.action} (4) y, a continuación, seleccione `Historial de envíos`{.action} (5).
 

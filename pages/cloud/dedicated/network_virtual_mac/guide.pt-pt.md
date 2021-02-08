@@ -18,14 +18,14 @@ A OVH permite-lhe associar um endereço MAC virtual a um endereço de IP, de mod
 
 * Dispor de um [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external}.
 * Dispor de um [endereço de IP Fail-over](https://www.ovh.pt/servidores_dedicados/ip_failover.xml){.external} ou de um bloco de IP Fail-over (RIPE).
-* Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 
 ## Instruções
 
 ### Atribuir um endereço MAC
 
-Depois de aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no menu `Serviços Dedicados`{.action} e na secção `IP`{.action} na coluna à esquerda da página.
+Depois de aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique no menu `Serviços Dedicados`{.action} e na secção `IP`{.action} na coluna à esquerda da página.
 
 ![IPFO](images/virtual_mac_01.png){.thumbnail}
 
@@ -57,7 +57,7 @@ Quando aparecer a caixa de diálogo “Adicionar um MAC virtual”, selecione um
 > A eliminação de um endereço MAC é definitiva: não será possível recuperá-lo.
 > 
 
-Para eliminar um endereço MAC virtual associado a um IP Fail-over, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no menu `Serviços Dedicados`{.action} e selecione a secção `IP`{.action}. Escolha o servidor em causa, de modo a aparecer o IP Fail-over (ou o bloco de IP) a ele associado.
+Para eliminar um endereço MAC virtual associado a um IP Fail-over, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique no menu `Serviços Dedicados`{.action} e selecione a secção `IP`{.action}. Escolha o servidor em causa, de modo a aparecer o IP Fail-over (ou o bloco de IP) a ele associado.
 
 Para concluir, clique no botão `...`{.action} à direita e em `Eliminar um MAC virtual`{.action}.
 

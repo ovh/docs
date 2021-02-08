@@ -18,7 +18,7 @@ Jeśli wykupiłeś hosting w OVH, możesz uzyskać bezpłatny certyfikat SSL. Ce
 
 - Posiadanie [certyfikatu SSL](https://www.ovh.pl/ssl/){.external} zainstalowanego na [hostingu OVH](https://www.ovh.pl/hosting/){.external}
 - Posiadanie co najmniej jednej strony WWW zainstalowanej i dostępnej na Twoim hostingu OVH
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Web Cloud`{.action}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Web Cloud`{.action}
 
 ## W praktyce
 
@@ -41,7 +41,7 @@ Poniższa tabela pozwoli Ci lepiej zrozumieć przebieg operacji, którą należy
 
 ### Etap 1: aktywacja certyfikatu SSL na hostingu
 
-Aktywacja certyfikatu SSL na Twoim hostingu jest wykonywana w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. W tym celu przeprowadź dwie operacje:
+Aktywacja certyfikatu SSL na Twoim hostingu jest wykonywana w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W tym celu przeprowadź dwie operacje:
 
 |Operacja|Opis |
 |---|---|
@@ -50,7 +50,7 @@ Aktywacja certyfikatu SSL na Twoim hostingu jest wykonywana w [Panelu klienta](h
 
 Dokładny opis realizacji tych dwóch operacji dostępny jest w naszej dokumentacji [Zarządzanie certyfikatem SSL na hostingu](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/){.external}. Jeśli właśnie wykupiłeś hosting w OVH, możliwe, że jest już na nim zainstalowany bezpłatny certyfikat SSL oraz że jest on już aktywny dla stron w opcji MultiSite.
 
-Aby to sprawdzić, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Kliknij `Hosting`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiedni hosting. Następnie przejdź do sekcji`Informacje ogólne`{.action}. Pod napisem „Certyfikat SSL” powinna pojawić się informacja „Tak” wskazująca, że certyfikat SSL jest zainstalowany na Twoim hostingu. 
+Aby to sprawdzić, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij `Hosting`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiedni hosting. Następnie przejdź do sekcji`Informacje ogólne`{.action}. Pod napisem „Certyfikat SSL” powinna pojawić się informacja „Tak” wskazująca, że certyfikat SSL jest zainstalowany na Twoim hostingu. 
 
 ![https na stronie www](images/activate-https-website-ssl-step2.png){.thumbnail}
 

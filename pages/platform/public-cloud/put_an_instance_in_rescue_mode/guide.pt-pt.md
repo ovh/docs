@@ -18,14 +18,14 @@ Nestas circunstâncias, poderá utilizar o modo de resgate (rescue) para reconfi
 ## Requisitos
 
 * uma [Instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external} na sua conta OVH
-* acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+* acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
 * acesso administrativo (root) à sua instância via SSH
 
 ## Instruções
 
 ### Ativar o modo rescue
 
-Primeiro, inicie sessão na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e clique no menu `Public Cloud`{.action}.
+Primeiro, inicie sessão na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e clique no menu `Public Cloud`{.action}.
 
 Em seguida, selecione o seu projeto Public Cloud no menu lateral situado à esquerda do ecrã e vá até Instâncias.
 

@@ -50,7 +50,7 @@ Właściciel konta xx11111-ovh obowiązkowo ma uprawnienia na poziomie **Adminis
 
 ### Etap 2: Dodawanie użytkownika
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, w prawym górnym rogu kliknij `Twoją nazwę użytkownika`{.action} (1) i wybierz `Moje konto`{.action} (2).
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w prawym górnym rogu kliknij `Twoją nazwę użytkownika`{.action} (1) i wybierz `Moje konto`{.action} (2).
 Następnie wybierz kartę `Zarządzanie użytkownikami`{.action} (3), a potem `Dodaj użytkownika`{.action} (4).
 
 ![users-management](images/hubusers.png){.thumbnail}
@@ -73,7 +73,7 @@ Przykład: **1234-567-89/james.smith**.
 
 ![users-management](images/usersmanagement3.png){.thumbnail}
 
-Przy użyciu tego identyfikatora nowy użytkownik będzie mógł zalogować się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. 
+Przy użyciu tego identyfikatora nowy użytkownik będzie mógł zalogować się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. 
 
 Będzie również mógł zmienić swoje hasło i zabezpieczyć swój własny dostęp do Twojego konta, włączając procedurę weryfikacji dwuetapowej (która dotyczy wyłącznie jego dostępu jako użytkownika). W tym celu zapoznaj się z [przewodnikiem dotyczącym wdrażania weryfikacji dwuetapowej](../zabezpieczenie-konta-za-pomoca-2FA/){.external}.
 

@@ -28,7 +28,7 @@ O Identificador de Cliente (ID) é um código pessoal. Trata-se de um nome de ut
 
 ## Requisitos
 
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - Ter as permissões de acesso necessárias para este tipo de operação.
 - Ter acesso ao Identificador de Cliente (ID de Cliente) do utilizador que irá ser definido como contacto.
 - Todos os utilizadores envolvidos na alteração de um contacto devem ter acesso à conta de e-mail associada aos seus perfis.
@@ -38,7 +38,7 @@ O Identificador de Cliente (ID) é um código pessoal. Trata-se de um nome de ut
 
 ### Aceder à área de gestão dos contactos
 
-Aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, clique no nome do cliente no canto superior direito e, em seguida, clique em `Gestão dos contactos`{.action}.
+Aceda à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique no nome do cliente no canto superior direito e, em seguida, clique em `Gestão dos contactos`{.action}.
 
 ![Gestão de contactos](images/hubcontacts.png){.thumbnail}
 
@@ -96,7 +96,7 @@ Se um dos contactos não tiver recebido o e-mail, é possível que o endereço a
 
 ![Gestão de contactos](images/managing_contacts_06.png){.thumbnail}
 
-Se apenas um dos contactos confirmar a alteração, será mostrada uma mensagem para informar que o pedido precisa de ser confirmado por outro utilizador. A confirmação dos utilizadores pode demorar alguns minutos até ser atualizada na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Se apenas um dos contactos confirmar a alteração, será mostrada uma mensagem para informar que o pedido precisa de ser confirmado por outro utilizador. A confirmação dos utilizadores pode demorar alguns minutos até ser atualizada na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ![Gestão de contactos](images/managing_contacts_07.png){.thumbnail}
 

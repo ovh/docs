@@ -20,7 +20,7 @@ Cette documentation présente différentes façon de configurer cette options po
 
 - Disposer d'un [Load Balancer OVH](https://www.ovh.com/ca/fr/solutions/load-balancer/){.external}.
 - Avoir accès :
-    - à l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, ou bien
+    - à l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, ou bien
     - à l'[API OVH](https://ca.api.ovh.com/){.external}.
 
 

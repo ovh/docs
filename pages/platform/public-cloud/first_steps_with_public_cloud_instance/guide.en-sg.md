@@ -10,7 +10,7 @@ order: 5
 
 ## Objective
 
-You can manage your Public Cloud projects easily via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager). You will find all of your infrastructure (instances, backups, disks, SSH keys, etc.) and storage projects there (including the list of your containers).
+You can manage your Public Cloud projects easily via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg). You will find all of your infrastructure (instances, backups, disks, SSH keys, etc.) and storage projects there (including the list of your containers).
 
 **This guide explains the first steps with a Public Cloud Instance.**
 
@@ -24,7 +24,7 @@ You can manage your Public Cloud projects easily via the [OVHcloud Control Panel
 
 ### Access the management interface for the instance
 
-First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Public Cloud`{.action} section and select the Public Cloud service concerned. Then, click in the `Instances`{.action} tab on your left.
+First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), go to the `Public Cloud`{.action} section and select the Public Cloud service concerned. Then, click in the `Instances`{.action} tab on your left.
 
 On that page you will see a summary of all your Instances. There will be several pieces of information displayed here:
 

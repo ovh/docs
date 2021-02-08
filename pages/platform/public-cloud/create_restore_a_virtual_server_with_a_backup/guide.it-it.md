@@ -23,7 +23,7 @@ Questa guida ti mostra come utilizzare i tuoi backup per creare, duplicare o rip
 
 ### Crea un’istanza a partire da un backup
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona `Public Cloud`{.action}. Seleziona la sezione `Instance Backup`{.action}.
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Public Cloud`{.action}. Seleziona la sezione `Instance Backup`{.action}.
 
 E clicca sui `...` a destra del tuo backup e infine su `Crea un’istanza`{.action}.
 

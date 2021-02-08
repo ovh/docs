@@ -66,7 +66,7 @@ Pode encontrar o seu identificador na Área de Cliente. Para isso, clique no seu
 
 ## Como aceder à Área de Cliente?
 
-Aceda à [página de autenticação da OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Introduza o seu identificador de cliente e a palavra-passe.
+Aceda à [página de autenticação da OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Introduza o seu identificador de cliente e a palavra-passe.
 
 ![identificador de cliente](images/nichandle03.png){.thumbnail}
 

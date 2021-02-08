@@ -20,7 +20,7 @@ Yhtä Office 365 -lisenssiä voidaan käyttää viidellä PC:llä/Macilla, viide
 ## Käytännössä
 ### Office 365 Jälleenmyyjä -palvelun hallintaan kirjautuminen
 
-Kun Office 365 -palvelu on luotu ja käytettävissä, voit hallita sitä [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} kautta.
+Kun Office 365 -palvelu on luotu ja käytettävissä, voit hallita sitä [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} kautta.
 
 Kirjaudu hallintapaneeliin ja siirry sitten `Sunrise`{.action}-osioon. Valitse vasemmassa reunassa olevasta valikosta `Office 365 Revendeurs`{.action} ja valitse sitten palvelu.
 

@@ -17,7 +17,7 @@ OVH:n webhotellituotteeseen sisältyy pääsy tallennustilaan, jossa voit ylläp
 ## Edellytykset
 
 - Sinulla on [webhotellituote](https://www.ovh-hosting.fi/webhotelli/){.external} (ei toimi Cloud webhotellin kanssa).
-- Käytetystä varmuuskopiointitavasta riippuen sinulla on pääsyoikeudet webhotellituotteesi hallintaan [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external} tai FTP-käyttäjän salasana, jonka avulla voit kirjautua tallennustilaasi. 
+- Käytetystä varmuuskopiointitavasta riippuen sinulla on pääsyoikeudet webhotellituotteesi hallintaan [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} tai FTP-käyttäjän salasana, jonka avulla voit kirjautua tallennustilaasi. 
 
 ## Käytännössä
 
@@ -46,7 +46,7 @@ Kun olet valmis, jatka tämän dokumentaation lukemista valitun palautustavan mu
 
 ### Tallennustilan palautus hallintapaneelissa.
 
-Toimenpiteen tekemiseksi kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `FTP-SSH`{.action} ja klikkaa painiketta `Varmuuskopion palautus`{.action}.
+Toimenpiteen tekemiseksi kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `FTP-SSH`{.action} ja klikkaa painiketta `Varmuuskopion palautus`{.action}.
 
 ![backupftp](images/backupftp-step1.png){.thumbnail}
 
@@ -85,7 +85,7 @@ Määrittele ensin ohjelmisto tai käyttöliittymä, jolla kirjaudut tallennusti
 
 - **Cyberduck-sovelluksen käyttö**: tämä ohjelmisto on ladattava etukäteen sen kehittäjien verkkosivulta. OVH:lla on tarjolla ohje [“Cyberduck-ohjelmiston käyttö webhotellin kanssa”](https://docs.ovh.com/fi/hosting/webhotellit_kayttoohje_cyberduck_mac/){.external}, josta voit lukea, kuinka sitä käytetään. Se ei kuitenkaan korvaa kehittäjän alkuperäistä dokumentaatiota.
 
-- **FTP Explorer -käyttöliittymän käyttö**: käyttöliittymään on kirjauduttava etukäteen [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager){.external} kautta.  Kun olet kirjautunut, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä olevan webhotellin nimi. Mene lopuksi välilehdelle `FTP-SSH`{.action} ja klikkaa painiketta `FTP Explorer`{.action}.
+- **FTP Explorer -käyttöliittymän käyttö**: käyttöliittymään on kirjauduttava etukäteen [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} kautta.  Kun olet kirjautunut, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä olevan webhotellin nimi. Mene lopuksi välilehdelle `FTP-SSH`{.action} ja klikkaa painiketta `FTP Explorer`{.action}.
 
 Kun olet valmis jatkamaan menettelyä, jatka seuraavaan vaiheeseen.
 

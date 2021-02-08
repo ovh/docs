@@ -16,7 +16,7 @@ L’acronimo HA (High Availability) indica l’impegno di OVH a garantire una di
 Il servizio NAS-HA è disponibile nei datacenter europei di Roubaix, Strasburgo e Gravelines e in quello canadese di Beauharnois. La scelta del datacenter si effettua al momento dell’ordine. ATTENZIONE: una volta ordinato il servizio, non è possibile modificare il datacenter scelto.
 
 ### È possibile gestire il NAS-HA tramite un’interfaccia di amministrazione?
-Sì, è possibile gestire il servizio accedendo alla sezione `Cloud`{.action} dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e cliccando su `Piattaforme e servizi`{.action} nel menu a sinistra.
+Sì, è possibile gestire il servizio accedendo alla sezione `Cloud`{.action} dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e cliccando su `Piattaforme e servizi`{.action} nel menu a sinistra.
 
 ### È possibile aumentare la capacità totale del NAS?
 No, una volta effettuato l’ordine non è possibile aumentare la capacità del NAS-HA. Per disporre di uno spazio di storage maggiore, è necessario migrare i dati su un secondo NAS con capacità superiore.
@@ -40,7 +40,7 @@ I dischi del tuo NAS-HA sono dedicati, le altre risorse della macchina (RAM, CPU
 Unica eccezione la soluzione da 26,4 TB, in cui tutte le risorse del server host (RAM, CPU, banda passante) sono dedicate.
 
 ### Qual è la durata di sottoscrizione di un NAS-HA?
-I periodi proposti sono di 1, 3, 6 e 12 mesi. Se non ne viene richiesta la rescissione prima della data di scadenza, il contratto si rinnova automaticamente. Il servizio può essere disattivato in qualsiasi momento tramite lo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+I periodi proposti sono di 1, 3, 6 e 12 mesi. Se non ne viene richiesta la rescissione prima della data di scadenza, il contratto si rinnova automaticamente. Il servizio può essere disattivato in qualsiasi momento tramite lo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 
 ### La capacità visualizzata al momento dell’ordine è interamente a tua disposizione?
 Come per la maggior parte delle soluzioni di storage, la capacità teorica differisce leggermente da quella effettivamente utilizzabile, in quanto parte dello spazio è riservato al disco:
@@ -132,7 +132,7 @@ La frequenza degli Snapshot è configurabile dallo Spazio Cliente OVH. Le opzion
 - settimanale 
 
 
-In qualsiasi momento è inoltre possibile creare Snapshot manuali, conservarli senza limite di durata o eliminarli. Questa funzionalità è disponibile nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} o via [API](https://api.ovh.com/){.external}:
+In qualsiasi momento è inoltre possibile creare Snapshot manuali, conservarli senza limite di durata o eliminarli. Questa funzionalità è disponibile nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o via [API](https://api.ovh.com/){.external}:
 
 > [!api]
 >

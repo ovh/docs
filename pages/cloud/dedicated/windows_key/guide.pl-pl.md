@@ -17,7 +17,7 @@ Istnieje możliwość, że podczas instalacji systemu operacyjnego Windows Serve
 ## Wymagania początkowe
 
 - [Serwer dedykowany](https://www.ovh.pl/serwery_dedykowane/){.external} z systemem Windows.
-- Dostępna licencja Windows SPLA. [Sprawdź ofertę licencji Windows](https://www.ovh.pl/serwery_dedykowane/cennik-licencje-windows-2014.xml){.external} i zamów ją w [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostępna licencja Windows SPLA. [Sprawdź ofertę licencji Windows](https://www.ovh.pl/serwery_dedykowane/cennik-licencje-windows-2014.xml){.external} i zamów ją w [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Dostęp do zdalnego pulpitu.
 
 

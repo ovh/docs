@@ -17,7 +17,7 @@ Il servizio [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/produc
 ## Prerequisiti
 
 * Disporre di una soluzione [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external}
-* [Attribuire il permesso "Aggiunta di risorse"](../modificare-permessi-di-un-utente/) per il datacenter in questione all'utente dallo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* [Attribuire il permesso "Aggiunta di risorse"](../modificare-permessi-di-un-utente/) per il datacenter in questione all'utente dallo[Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 * Essere connesso al client vSphere
 
 

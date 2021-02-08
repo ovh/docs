@@ -19,8 +19,8 @@ Można więc powiedzieć, że dzięki rekordom DNS przechowywanym na serwerach D
 ## Wymagania początkowe
 
 - Posiadanie domeny zarejestrowanej w OVH
-- Posiadanie [odpowiednich uprawnień do zarządzania](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/){.external} domeną w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Posiadanie [odpowiednich uprawnień do zarządzania](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/){.external} domeną w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 > [!warning]
 >
@@ -48,7 +48,7 @@ Pamiętaj, że:
 
 ### Etap 1: dostęp do interfejsu zarządzania serwerami DNS domeny
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Domeny`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią domenę. Teraz przejdź do zakładki `Serwery DNS`{.action}.
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Domeny`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią domenę. Teraz przejdź do zakładki `Serwery DNS`{.action}.
 
 Pojawi się tabela wyszczególniająca serwery DNS aktualnie skonfigurowane w OVH dla Twojej domeny. Może pojawić się kilka serwerów DNS, przy czym jeden serwer odpowiada jednej linii w tabeli. 
 
@@ -73,7 +73,7 @@ Po uzupełnieniu informacji, kliknij przycisk `Zastosuj konfigurację`{.action}.
 
 Po zakończeniu operacji należy odczekać określony czas, zanim zmiany staną się widoczne. Na czas oczekiwania składają się dwa czynniki:
 
-- zmiana wprowadzona w OVH musi zostać uwzględniona przez organizację zarządzającą rozszerzeniem Twojej domeny. Możesz śledzić postęp procesu w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} (sekcja `Domeny`{.action} na pasku usług po lewej stronie > `Operacje w toku`{.action})
+- zmiana wprowadzona w OVH musi zostać uwzględniona przez organizację zarządzającą rozszerzeniem Twojej domeny. Możesz śledzić postęp procesu w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} (sekcja `Domeny`{.action} na pasku usług po lewej stronie > `Operacje w toku`{.action})
 - po uwzględnieniu zmiany przez organizację zarządzającą rozszerzeniem domeny konieczny jest następnie czas propagacji wynoszący maksymalnie 48 godzin, aby modyfikacje stały się w pełni widoczne.
 
 ## Sprawdź również

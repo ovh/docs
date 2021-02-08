@@ -17,7 +17,7 @@ You can access your database’s content via an interface. There are several way
 ## Requirements
 
 - a [Private SQL Web Hosting plan](https://www.ovh.com/world/web-hosting/sql-options.xml)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 ## Instructions
 
@@ -36,7 +36,7 @@ You can access your database’s content via an interface. There are several way
 
 ####  With OVHcloud phpMyAdmin
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the SQL instance concerned.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the SQL instance concerned.
 
 In the `General information` tab, you will find the access link in the **Database administration** box, under “User interface”.
 

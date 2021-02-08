@@ -21,7 +21,7 @@ vRack-virtuaaliräkkiteknologialla voidaan koota yhteen useita palvelimia riippu
 - Sinulla on [virtuaaliräkki](https://www.ovh-hosting.fi/ratkaisut/vrack/){.external}.
 - Sinulla on vähintään kaksi [vRack-yhteensopivaa palvelinta](https://www.ovh-hosting.fi/dedikoidut_palvelimet/){.external} tai enemmän.
 - Olet kirjautunut SSH-yhteydellä (tai graafisen käyttöliittymän kautta) Linux-palvelimeesi (pääkäyttäjänä).
-- Sinulla on käyttöoikeudet [OVH:n hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Sinulla on käyttöoikeudet [OVH:n hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - Valmistelet valitsemasi yksityisen IP-osoitealueen.
 
 
@@ -29,7 +29,7 @@ vRack-virtuaaliräkkiteknologialla voidaan koota yhteen useita palvelimia riippu
 
 ### Palvelinten lisäys virtuaaliräkkiin
 
-1. Kun virtuaaliräkki on lisätty tilillesi, mene [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} `Cloud`{.action}-osioon.
+1. Kun virtuaaliräkki on lisätty tilillesi, mene [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} `Cloud`{.action}-osioon.
 2. Valitse valikko `vRack`{.action} vasemman puoleisesta sarakkeesta.
 3. Valitse virtuaaliräkkisi ehdotetusta listasta.
 4. Valitse palvelulistasta virtuaaliräkkiin lisättävät palvelimet ja klikkaa `Lisää`{.action}.

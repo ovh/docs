@@ -18,7 +18,7 @@ Er zijn enorm veel verschillende websites op het internet. Of u nu een blog of e
 ## Vereisten
 
 - U moet beschikken over een [OVH webhostingplan](https://www.ovh.nl/shared-hosting/){.external} (behalve Cloud Web).
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager).
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl).
 
 ## Instructie
 
@@ -35,7 +35,7 @@ Wanneer u de configuratie van uw webhostingplan wijzigt, bewerkt u ook de config
 
 #### Stap 1: Ga naar de configuratie van de webhosting
 
-Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Zorg ervoor dat u zich op het tabblad `Algemene informatie`{.action} bevindt, klik op `...`{.action} en klik vervolgens op de knop `Configuratie bewerken`{.action}.
+Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Zorg ervoor dat u zich op het tabblad `Algemene informatie`{.action} bevindt, klik op `...`{.action} en klik vervolgens op de knop `Configuratie bewerken`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 

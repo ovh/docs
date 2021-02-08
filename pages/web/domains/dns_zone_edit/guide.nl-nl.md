@@ -17,14 +17,14 @@ Een Domain Name System (DNS) -zone is het configuratiebestand van een domeinnaam
 
 ## Vereisten
 
-- U moet gemachtigd zijn om de betreffende domeinnaam te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- U moet gemachtigd zijn om de betreffende domeinnaam te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 - De opgegeven domeinnaam maakt geen gebruik van de OVH-configuratie (op de DNS-servers).
 
 > [!warning]
 >
 > - Als uw domeinnaam de OVH DNS-servers niet gebruikt, moet u het aanpassen vanuit de interface van de provider die de configuratie van uw domeinnaam beheert.
-> - Als uw domeinnaam is geregistreerd bij OVH, kunt u controleren of de domeinnaam onze configuratie gebruikt. Ga hiervoor naar uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, selecteer het betreffende domein en ga naar het tabblad `DNS-servers`{.action}.
+> - Als uw domeinnaam is geregistreerd bij OVH, kunt u controleren of de domeinnaam onze configuratie gebruikt. Ga hiervoor naar uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, selecteer het betreffende domein en ga naar het tabblad `DNS-servers`{.action}.
 >
 
 ## Instructies
@@ -46,7 +46,7 @@ Door te begrijpen wat elk van deze records doet, krijgt u een beter inzicht in d
 
 ### Stap 1: Krijg toegang tot het beheer van de DNS OVH-zone van uw domein
 
-Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klik op `Domeinen`{.action} in de dienstenbalk aan de linkerkant, kies dan de betreffende domeinnaam. Ga naar het `DNS-zone`{.action}-tabblad.
+Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, klik op `Domeinen`{.action} in de dienstenbalk aan de linkerkant, kies dan de betreffende domeinnaam. Ga naar het `DNS-zone`{.action}-tabblad.
 
 De tabel die wordt geopend, geeft de configuratie van uw domeinnaam weer bij OVH. Het bestaat uit verschillende DNS-records, allemaal gesymboliseerd door een tabelregel. U kunt de tabelinhoud filteren op DNS-recordtype of op domeinnaam.
 

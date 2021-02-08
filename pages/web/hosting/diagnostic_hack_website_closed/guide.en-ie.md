@@ -18,7 +18,7 @@ Your Web Hosting plan allows you to upload one or more websites. You may have re
 
 - an [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}
 - the permissions necessary to connect to your hosting plan’s storage space
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
 
@@ -74,7 +74,7 @@ However, it is still advisable to ensure, in the next step, that the various add
 
 This provides you with full visibility of your service and sites’ activities. The goal is to analyse what happened when the deactivation of your hosting took place.
 
-To view your hosting activity and logs, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and open the `Web Cloud`{.action} section. Click `Web Hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. There are two options here, depending on the specific information you want to collect.
+To view your hosting activity and logs, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, and open the `Web Cloud`{.action} section. Click `Web Hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. There are two options here, depending on the specific information you want to collect.
 
 - **View your hosting activity**
 
@@ -183,7 +183,7 @@ In order to reactivate your Web Hosting plan, you have to make changes to your s
 
 If you are able to reactivate your Web Hosting plan yourself, please have ready the information needed to connect to your storage space (i.e. FTP server, FTP user and password).
 
-To retrieve them, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and click `Hosting Plans`{.action} in the services bar on the left-hand side. Select the name of the hosting plan concerned, and click on the `FTP - SSH`{.action} tab. On this page, you can [change the password of the FTP user](../modify-ftp-user-password/){.external}, if necessary.
+To retrieve them, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, and click `Hosting Plans`{.action} in the services bar on the left-hand side. Select the name of the hosting plan concerned, and click on the `FTP - SSH`{.action} tab. On this page, you can [change the password of the FTP user](../modify-ftp-user-password/){.external}, if necessary.
 
 ![hostingdeactivation](images/hosting-deactivation-step3.png){.thumbnail}
 

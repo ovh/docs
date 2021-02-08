@@ -18,7 +18,7 @@ Verkossa on olemassa valtava määrä verkkosivuja. Olipa kyse blogin tai verkko
 ## Edellytykset
 
 - Sinulla on yhteensopiva [webhotellituote](https://www.ovh-hosting.fi/webhotelli/){.external} (ei Cloud Web).
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager).
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 ## Käytännössä
 
@@ -35,7 +35,7 @@ Kun muutat webhotellisi konfiguraatiota, muokkaat verkkosivusi käyttämää web
 
 #### 1. vaihe: Mene webhotellin konfiguraation hallintaan
 
-Menettelyn aloittamiseksi kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Varmista, että olet välilehdellä `Yleiset tiedot`{.action}. Klikkaa siellä kolmea pistettä esittävää kuvaketta ja sitten painiketta `Muokkaa konfiguraatiota`{.action}.
+Menettelyn aloittamiseksi kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Varmista, että olet välilehdellä `Yleiset tiedot`{.action}. Klikkaa siellä kolmea pistettä esittävää kuvaketta ja sitten painiketta `Muokkaa konfiguraatiota`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 

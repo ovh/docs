@@ -17,7 +17,7 @@ Los planes de hosting de OVH permiten disponer de un espacio de almacenamiento e
 ## Requisitos
 
 - Tener contratado un [plan de hosting de OVH]({ovh_www}/hosting/){.external}.
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action}.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}.
 
 ## Procedimiento
 
@@ -37,7 +37,7 @@ Para conectarse a su espacio de almacenamiento necesitará lo siguiente:
 > Si ya dispone de ellos, vaya directamente al apartado [Acceder al espacio de almacenamiento](./#2-acceder-al-espacio-de-almacenamiento).
 > 
 
-Si no dispone de esta información, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} en la sección **Web** y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. 
+Si no dispone de esta información, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección **Web** y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. 
 
 Se mostrará la información relativa a su espacio de almacenamiento, así como una tabla con los usuarios FTP y SSH creados en el alojamiento.
 
@@ -70,7 +70,7 @@ Existen varias formas de conectarse al espacio de almacenamiento. Continúe leye
 
 #### 2.1. Conexión mediante un explorador FTP
 
-Para acceder al espacio de almacenamiento utilizando el explorador FTP, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} en la sección **Web**, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. 
+Para acceder al espacio de almacenamiento utilizando el explorador FTP, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección **Web**, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. 
 
 Abra la pestaña `FTP - SSH`{.action} y haga clic en el botón `Explorador FTP`{.action}. 
 

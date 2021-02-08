@@ -18,7 +18,7 @@ Nu de [creatie van uw pool](https://docs.ovh.com/nl/cloud-desktop-infrastructure
 
 ## Vereisten
 
-- U moet gebruikers hebben aangemaakt in de Active Directory, als er [een autorisatie is opgezet](https://docs.ovh.com/nl/cloud-desktop-infrastructure/approval-ad/){.external}, of u moet gebruikers hebben gemaakt via uw[ OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet gebruikers hebben aangemaakt in de Active Directory, als er [een autorisatie is opgezet](https://docs.ovh.com/nl/cloud-desktop-infrastructure/approval-ad/){.external}, of u moet gebruikers hebben gemaakt via uw[ OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 - U moet ingelogd zijn op de VMware Horizon 7.1-interface.
 
 

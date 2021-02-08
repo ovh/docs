@@ -17,13 +17,13 @@ Puoi gestire il rinnovo e l’annullamento dei tuoi servizi dallo Spazio Cliente
 
 > [!primary]
 >
-> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione.  In caso di difficoltà o dubbi, consulta i contratti disponibili nel tuo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `I tuoi servizi`{.action} >`I tuoi contratti`{.action}.
+> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione.  In caso di difficoltà o dubbi, consulta i contratti disponibili nel tuo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `I tuoi servizi`{.action} >`I tuoi contratti`{.action}.
 >
 
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Disporre di servizi OVH attivi
 - Essere contatto fatturazione dei tuoi servizi OVHcloud
 
@@ -43,7 +43,7 @@ Prosegui nella lettura di questa guida in base all’operazione che vuoi effettu
 
 ### Accedere alle impostazioni dei servizi
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul tuo nome utente in alto a destra e seleziona `Prodotti e servizi`{.action}.
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul tuo nome utente in alto a destra e seleziona `Prodotti e servizi`{.action}.
 
 ![Gestione rinnovo automatico](images/hubservices.png){.thumbnail}
 

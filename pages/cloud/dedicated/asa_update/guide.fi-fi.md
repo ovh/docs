@@ -16,7 +16,7 @@ Jotta palomuurisi CISCO Adaptive Security Appliance (ASA) voi suojata järjestel
 
 ## Edellytykset
 
-- Käyttöoikeudet [OVH:n hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Käyttöoikeudet [OVH:n hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 
 ## Käytännössä
@@ -25,7 +25,7 @@ Jotta palomuurisi CISCO Adaptive Security Appliance (ASA) voi suojata järjestel
 
 Päivitysprosessin aikana vaaditaan useita uudelleenkäynnistyksiä. Suosittelemme siis poistamaan ASAn käytöstä, jottei palvelimen käyttö esty päivityksen aikana.
 
-Mene [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} osioon `Dedikoidut tuotteet`{.action}. Valitse seuraavaksi dedikoitu palvelimesi ja sitten `Firewall Cisco ASA`{.action}. Klikkaa lopuksi oikealla `Deaktivoi ASA-palomuuri`{.action}
+Mene [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} osioon `Dedikoidut tuotteet`{.action}. Valitse seuraavaksi dedikoitu palvelimesi ja sitten `Firewall Cisco ASA`{.action}. Klikkaa lopuksi oikealla `Deaktivoi ASA-palomuuri`{.action}
 
 ![ASAn deaktivointi](images/customer_panel_asa_disable.png){.thumbnail}
 
@@ -113,7 +113,7 @@ Uudelleenkäynnistys konfiguraation lataamiseksi vie joitakin minuutteja.
 
 ### ASAn uudelleenaktivointi hallintapaneelissa
 
-Kuten ensimmäisessä vaiheessa, mene [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} osioon `Dedikoidut-tuotteet`{.action}. Valitse seuraavaksi dedikoitu palvelimesi ja sitten `Firewall Cisco ASA`{.action}. Klikkaa lopuksi oikealta `Aktivoi ASA-palomuuri`{.action}.
+Kuten ensimmäisessä vaiheessa, mene [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} osioon `Dedikoidut-tuotteet`{.action}. Valitse seuraavaksi dedikoitu palvelimesi ja sitten `Firewall Cisco ASA`{.action}. Klikkaa lopuksi oikealta `Aktivoi ASA-palomuuri`{.action}.
 
 ![ASAn aktivointi](images/customer_panel_asa_enable.png){.thumbnail}
 
@@ -125,7 +125,7 @@ Kun ASA on toiminnassa uudelleenkäynnistyksen jälkeen, varmista, että kaikki 
 
 ASA täytyy poistaa jälleen käytöstä kuten ensimmäisessä vaiheessa.
 
-Mene [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} osioon `Dedikoidut tuotteet`{.action}. Valitse seuraavaksi dedikoitu palvelimesi ja sitten `Firewall Cisco ASA`{.action}. Klikkaa lopuksi oikealla `Deaktivoi ASA-palomuuri`{.action}.
+Mene [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} osioon `Dedikoidut tuotteet`{.action}. Valitse seuraavaksi dedikoitu palvelimesi ja sitten `Firewall Cisco ASA`{.action}. Klikkaa lopuksi oikealla `Deaktivoi ASA-palomuuri`{.action}.
 
 ![ASAn deaktivointi](images/customer_panel_asa_disable.png){.thumbnail}
 
@@ -422,7 +422,7 @@ Cryptochecksum: 4b86b1e4 2e731d6b 9d1fc491 a5eae0f3
 
 ### ASAn uudelleenaktivointi hallintapaneelissa
 
-Kuten ensimmäisessä vaiheessa, mene [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} osioon `Dedikoidut-tuotteet`{.action}. Valitse seuraavaksi dedikoitu palvelimesi ja sitten `Firewall Cisco ASA`{.action}. Klikkaa lopuksi oikealta `Aktivoi ASA-palomuuri`{.action}.
+Kuten ensimmäisessä vaiheessa, mene [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} osioon `Dedikoidut-tuotteet`{.action}. Valitse seuraavaksi dedikoitu palvelimesi ja sitten `Firewall Cisco ASA`{.action}. Klikkaa lopuksi oikealta `Aktivoi ASA-palomuuri`{.action}.
 
 ![ASAn aktivointi](images/customer_panel_asa_enable.png){.thumbnail}
 

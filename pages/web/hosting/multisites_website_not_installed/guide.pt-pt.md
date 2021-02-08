@@ -19,7 +19,7 @@ A página “Site não instalado” aparece quando a configuração DNS do seu n
 - Ter um serviço de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
 - Poder gerir o [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external} no qual está alojado o site em questão.
 - Poder gerir a configuração do nome de domínio afetado (ou seja, a sua zona DNS).
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
@@ -34,7 +34,7 @@ A seguir, explicamos-lhe como verificar as duas configurações para resolver o 
 
 ### 1 - Verificar a configuração do alojamento web (Multi-site)
 
-Para verificar se o nome de domínio foi adicionado corretamente enquanto multi-site no alojamento web, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e clique em `Alojamentos`{.action} na barra à esquerda. Na lista, selecione o alojamento onde está alojado o site que apresenta a página “Site não instalado”. Por fim, clique no separador `Multi-site`{.action}.
+Para verificar se o nome de domínio foi adicionado corretamente enquanto multi-site no alojamento web, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e clique em `Alojamentos`{.action} na barra à esquerda. Na lista, selecione o alojamento onde está alojado o site que apresenta a página “Site não instalado”. Por fim, clique no separador `Multi-site`{.action}.
 
 A tabela que vai aparecer contém todos os domínios adicionados ao seu alojamento enquanto multi-site. A barra de pesquisa pode ajudá-lo a encontrar o domínio afetado.
 
@@ -58,14 +58,14 @@ Esta informação irá permitir-lhe verificar a configuração DNS do seu domín
 
 > [!primary]
 >
-> Se o domínio estiver registado na OVH, pode verificar se este último utiliza a nossa configuração. Inicie sessão na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Domínios`{.action} na barra à esquerda e, em seguida, no domínio em questão. Por fim, clique no separador `Servidores DNS`{.action}.
+> Se o domínio estiver registado na OVH, pode verificar se este último utiliza a nossa configuração. Inicie sessão na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Domínios`{.action} na barra à esquerda e, em seguida, no domínio em questão. Por fim, clique no separador `Servidores DNS`{.action}.
 >
 
 Dependendo da configuração utilizada pelo seu domínio, poderá realizar a verificação de duas formas:
 
 - **o seu domínio não utiliza a configuração da OVH**: deverá efetuar a verificação (descrita acima) através da interface do agente responsável pela configuração do seu domínio;
 
-- **o seu domínio utiliza a configuração da OVH**: a verificação é efetuada através da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Aceda à janela `Zona DNS`{.action} do domínio correspondente. A configuração DNS aparece numa tabela onde cada linha representa um registo DNS específico. Poderá filtrar o conteúdo por tipo de registo ou por nome de domínio.
+- **o seu domínio utiliza a configuração da OVH**: a verificação é efetuada através da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Aceda à janela `Zona DNS`{.action} do domínio correspondente. A configuração DNS aparece numa tabela onde cada linha representa um registo DNS específico. Poderá filtrar o conteúdo por tipo de registo ou por nome de domínio.
 
 ![sitenotinstalled](images/site-not-installed-edit-ovh-dns-zone.png){.thumbnail}
 

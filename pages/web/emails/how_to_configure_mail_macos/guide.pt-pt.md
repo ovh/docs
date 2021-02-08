@@ -159,7 +159,7 @@ Eis as informações a reter para a configuração de uma conta de e-mail POP.
 Configuração POP com segurança SSL ativada ou desativada :
 
 Endereço de Email:: O seu endereço de e-mail partilhado na íntegra.
-Password: A password que definiu no [espaço cliente](https://www.ovh.com/auth/?action=gotomanager).
+Password: A password que definiu no [espaço cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 Nome do utilizador: O seu endereço de e-mail partilhado na íntegra.
 Servidor de receção: O servidor de receção de e-mails SSL0.OVH.NET
 Porta do servidor de receção: A porta do servidor de receção: 995 ou 110
@@ -186,7 +186,7 @@ Eis as informações a reter para a configuração de uma conta de e-mail IMAP.
 Configuração POP com segurança SSL ativada ou desativada :
 
 Endereço de Email:: O seu endereço de e-mail partilhado na íntegra.
-Password: A password que definiu no [espaço cliente](https://www.ovh.com/auth/?action=gotomanager).
+Password: A password que definiu no [espaço cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 Nome do utilizador: O seu endereço de e-mail partilhado na íntegra.
 Servidor de receção: O servidor de receção de e-mails SSL0.OVH.NET
 Porta do servidor de receção: A porta do servidor de receção: 993 ou 143

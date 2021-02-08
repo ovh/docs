@@ -18,7 +18,7 @@ Le protocole SSH permet d’accéder à un serveur et de communiquer avec lui de
 ## Prérequis
 
 - Avoir créé un project [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre espace client.
-- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Avoir une [clé SSH](https://docs.ovh.com/fr/public-cloud/creation-des-cles-ssh/){.ref}
 
 ## En pratique

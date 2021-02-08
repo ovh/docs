@@ -16,7 +16,7 @@ Puede activar la autentificación de dos factores (2FA). Esta se agrega a su nom
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 - Disponer de un móvil (para el método por SMS), un teléfono inteligente o una tableta (para el método a través de la aplicación móvil) o una llave de seguridad U2F (Universal Second Factor).
 - Haber consultado las [recomendaciones sobre la gestión de la contraseña de acceso a su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contrase%C3%B1a/).
 
@@ -90,7 +90,7 @@ También puede utilizar uno de los códigos de seguridad que tiene a su disposic
 > - Códigos de seguridad válidos.
 > 
 
-Si desea eliminar un dispositivo, inicie sesión en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Haga clic en su nombre en la esquina superior derecha (primer paso en la siguiente imagen) y, seguidamente, en sus iniciales (segundo paso). 
+Si desea eliminar un dispositivo, inicie sesión en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en su nombre en la esquina superior derecha (primer paso en la siguiente imagen) y, seguidamente, en sus iniciales (segundo paso). 
 
 ![2FA](images/hub2FAb.png){.thumbnail}
 

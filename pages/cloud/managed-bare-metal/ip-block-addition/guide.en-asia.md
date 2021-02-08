@@ -20,7 +20,7 @@ An IP address block can be used to make your services available over the Interne
 ## Requirements
 
 - a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/asia/managed-bare-metal/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 ## Instructions
 
@@ -94,7 +94,7 @@ Then use this API call to move the IP addresses to "IP parking":
 > This call cuts the network on VMs that use the IPs in question.
 >
 
-You can track the IP block movement from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} in the `Bare Metal Cloud`{.action} part and then `Managed Bare Metal`{.action}. Click on your Managed Bare Metal service and then click the `Operations`{.action} tab.
+You can track the IP block movement from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external} in the `Bare Metal Cloud`{.action} part and then `Managed Bare Metal`{.action}. Click on your Managed Bare Metal service and then click the `Operations`{.action} tab.
 
 The operation name is removeIpRipeBlock.
 

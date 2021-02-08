@@ -17,7 +17,7 @@ Os serviços Hosted Exchange e Private Exchange dispõem de uma gestão flexíve
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - Ter uma oferta [Hosted Exchange](https://www.ovh.pt/emails/hosted-exchange/){.external}.
 
 ## Instruções
@@ -26,7 +26,7 @@ Os serviços Hosted Exchange e Private Exchange dispõem de uma gestão flexíve
 
 #### Encomendar contas suplementares
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e selecione a secção «Web». Na coluna à esquerda, clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. Por fim, selecione a plataforma Exchange em questão.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione a secção «Web». Na coluna à esquerda, clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. Por fim, selecione a plataforma Exchange em questão.
 
 Clique no separador `Contas de e-mail`{.action} e, depois, no botão `Ações`{.action} (canto superior esquerdo). Então, clique em `Encomendar contas`{.action}.
 
@@ -35,7 +35,7 @@ Clique no separador `Contas de e-mail`{.action} e, depois, no botão `Ações`{.
 
 #### Alterar a periodicidade das contas
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e selecione a secção «Web». Na coluna à esquerda, clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. Por fim, selecione a plataforma Exchange em questão.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione a secção «Web». Na coluna à esquerda, clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. Por fim, selecione a plataforma Exchange em questão.
 
 Na janela de gestão da plataforma Exchange, clique no botão `Ações`{.action} (canto superior direito) e em `Configuração da renovação`{.action}. 
 
@@ -63,7 +63,7 @@ Para eliminar uma conta da plataforma Hosted, primeiro tem de a cancelar alteran
 
 Após o cancelamento, a conta será suspensa na data de expiração. Se deseja eliminar o endereço de e-mail alojado pela conta antes da data de expiração, tem de o restaurar.
 
-Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e selecione a secção «Web». Na coluna à esquerda, clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. Por fim, selecione a plataforma Exchange em questão.
+Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione a secção «Web». Na coluna à esquerda, clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. Por fim, selecione a plataforma Exchange em questão.
 
 Aceda ao separador `Contas de e-mail`{.action} da plataforma, clique no botão `...`{.action} junto à conta em causa e, por fim, clique em `Restaurar`{.action}. Após o restauro, a conta permanecerá virgem até à data de expiração.
 
@@ -75,7 +75,7 @@ Aceda ao separador `Contas de e-mail`{.action} da plataforma, clique no botão `
 
 #### Encomendar contas suplementares
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e selecione a secção «Web». Na coluna à esquerda, clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. Por fim, selecione a plataforma Exchange em questão.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione a secção «Web». Na coluna à esquerda, clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. Por fim, selecione a plataforma Exchange em questão.
 
 Clique no separador `Contas de e-mail`{.action} e, depois, no botão `Ações`{.action} (canto superior esquerdo). Então, clique em `Adicionar uma conta`{.action}. A conta será faturada no âmbito do mês em curso.
 
@@ -84,7 +84,7 @@ Clique no separador `Contas de e-mail`{.action} e, depois, no botão `Ações`{.
 
 #### Eliminar contas
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e selecione a secção «Web». Na coluna à esquerda, clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. Por fim, selecione a plataforma Exchange em questão.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione a secção «Web». Na coluna à esquerda, clique em `Microsoft`{.action} e, a seguir, em `Exchange`{.action}. Por fim, selecione a plataforma Exchange em questão.
 
 No separador `Contas de e-mail`{.action}, clique em `...`{.action} à direita da conta em causa e, a seguir, clique em `Eliminar`{.action}.  A conta será imediatamente retirada da plataforma, pelo que não haverá nenhum cancelamento a realizar.
 

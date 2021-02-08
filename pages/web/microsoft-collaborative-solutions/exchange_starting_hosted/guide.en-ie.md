@@ -19,13 +19,13 @@ With the Hosted Exchange service, you can get professional emails to use for col
 - You need to have a subscription to a [Hosted Exchange](https://www.ovh.ie/emails/hosted-exchange/) solution.
 - You need to have received an email confirming that your Hosted Exchange solution has been set up.
 - You must have a domain name.
-- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Instructions
 
 ### Step 1: Log in to your service's interface
 
-Once your Hosted Exchange service has been created and is available, you can manage it from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Once your Hosted Exchange service has been created and is available, you can manage it from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 To do this, log in and click `Microsoft`{.action}, then `Exchange`{.action} in the left-hand services bar. The click on the name of the Hosted Exchange service concerned.
 
@@ -58,7 +58,7 @@ Once you have finished configuring your domain, you can also configure additiona
 > In the directory, all of the addresses created on your Exchange service can view all other addresses associated with it, including those that have different domain names. To stop different domain names from being displayed this way, you will need to order a new Hosted Exchange solution for the domain name(s) concerned.
 >
 
-To add a new domain name, select the Hosted Exchange concerned in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and click on `Associated domains`{.action}. You will see a table showing all of the domain names currently configured, or about to be configured on your service. To add new ones, click on the `Add a domain`{.action} button, then follow the various steps of the process.
+To add a new domain name, select the Hosted Exchange concerned in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, and click on `Associated domains`{.action}. You will see a table showing all of the domain names currently configured, or about to be configured on your service. To add new ones, click on the `Add a domain`{.action} button, then follow the various steps of the process.
 
 To find out more, please refer to this guide on [Adding a domain name to an Exchange service](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/adding-domain-exchange/){.external}.
 
@@ -73,7 +73,7 @@ To find out more, please refer to this guide on [Adding a domain name to an Exch
 
 You can configure additional accounts if you wish, and if you have not already done so via the assistant.
 
-To do this, click on the Hosted Exchange service concerned in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then on `Email accounts`{.action}. You will see a table showing all of the accounts currently configured, or about to be configured on your service.
+To do this, click on the Hosted Exchange service concerned in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, then on `Email accounts`{.action}. You will see a table showing all of the accounts currently configured, or about to be configured on your service.
 
 The accounts that have not yet been configured configuration will appear in the table as “*@configureme.me*”. To configure them, click on the pencil icon, then follow the steps.
 
@@ -90,7 +90,7 @@ Once you have configured your accounts, you can now start using them. To do this
 
 If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), please refer to our documentation via this portal: [https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/){.external}. To optimise the way you use your Exchange email address on an email client, ensure that it is compatible with the service.
 
-OVH offers Outlook licences in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and Office 365 licences on the following page: [https://www.ovh.ie/office-365/](https://www.ovh.ie/office-365/){.external}. We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
+OVH offers Outlook licences in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, and Office 365 licences on the following page: [https://www.ovh.ie/office-365/](https://www.ovh.ie/office-365/){.external}. We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
 
 > [!primary]
 >
@@ -100,9 +100,9 @@ OVH offers Outlook licences in the [OVH Control Panel](https://www.ovh.com/auth/
 
 ### Step 6: Configuring collaborative features (optional)
 
-Now that your Hosted Exchange service is configured and fully functional, you can set up the service’s collaborative features in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. You can use these features to create resources (meeting rooms, equipment, etc.), groups, and much more.
+Now that your Hosted Exchange service is configured and fully functional, you can set up the service’s collaborative features in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. You can use these features to create resources (meeting rooms, equipment, etc.), groups, and much more.
 
-To enable these features, select the Hosted Exchange service concerned in your  [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then choose from the tabs that show which action will be carried out.
+To enable these features, select the Hosted Exchange service concerned in your  [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, then choose from the tabs that show which action will be carried out.
 
 For assistance with these features, please refer to our documentation in this portal: [https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/](https://docs.ovh.com/ie/en/microsoft-collaborative-solutions/){.external}.
 

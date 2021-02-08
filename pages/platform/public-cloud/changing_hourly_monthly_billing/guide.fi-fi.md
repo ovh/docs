@@ -23,12 +23,12 @@ Kun luot Public Cloud -instanssin, on mahdollista valita tuntiperusteinen laskut
 ## Edellytykset
 
 - Olet luonut [Public Cloud -instanssin](https://www.ovh-hosting.fi/public-cloud/instances/){.external}.
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 
 ## Käytännössä
 
-Valitse [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external} instanssi, jonka laskutustapaa haluat muokata ja avaa sen valinnat. Näet nyt painikkeen `Vaihda kuukausilaskutukseen`{.action}:
+Valitse [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} instanssi, jonka laskutustapaa haluat muokata ja avaa sen valinnat. Näet nyt painikkeen `Vaihda kuukausilaskutukseen`{.action}:
 
 ![Laskennan muokkaaminen](images/1_swich_to_monthly_sub.png){.thumbnail}
 

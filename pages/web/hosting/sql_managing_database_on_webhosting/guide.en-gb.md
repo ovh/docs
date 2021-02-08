@@ -19,7 +19,7 @@ OVH provides two types of databases: MySQL and PostgreSQL
 ## Managing a database
 
 ### Creating a database
-Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} with your ID (nic-handle, for example " **xx999-ovh** ") - and password.
+Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} with your ID (nic-handle, for example " **xx999-ovh** ") - and password.
 
 
 ![hosting](images/3035.png){.thumbnail}

@@ -16,15 +16,15 @@ An MX record is used to point a domain name to an email server. It enables serve
 
 ## Requirements
 
-- You must have permission to manage the domain name from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must have permission to manage the domain name from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 - The domain name must use the OVH configuration (i.e. the OVH DNS servers).
 
 > [!warning]
 >
 > - If your domain name does not use the OVH DNS servers, you will need to modify the MX records using the interface given by the provider that manages your domain name configuration.
 >
-> - If your domain name is registered with OVH, you can check if it is using the OVH configuration in your [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Select the domain, and go to the `DNS servers`{.action} tab.
+> - If your domain name is registered with OVH, you can check if it is using the OVH configuration in your [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Select the domain, and go to the `DNS servers`{.action} tab.
 >
 
 ## Instructions
@@ -53,7 +53,7 @@ You will now need to add these MX records to your domain name’s DNS zone confi
 
 ### Step 3: Modify an OVH MX record’s configuration
 
-To modify the MX records in your domain’s OVH configuration, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Select `Domains`{.action} in the services menu on the left-hand side, click on the domain, then go to the `DNS Zone`{.action} tab.
+To modify the MX records in your domain’s OVH configuration, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Select `Domains`{.action} in the services menu on the left-hand side, click on the domain, then go to the `DNS Zone`{.action} tab.
 
 This table displays your domain’s OVH configuration. Each row corresponds to a DNS record. To start with, please check if the MX records already exist in your domain name’s OVH DNS zone configuration. You can do this using the search filter.
 

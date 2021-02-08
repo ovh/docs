@@ -15,14 +15,14 @@ A zona Domain Name System (DNS) constitui o ficheiro de configuração de um dom
 
 ## Requisitos
 
-- Ter acesso à secção de gestão do domínio na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à secção de gestão do domínio na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - Utilizar a configuração da OVH (os servidores DNS) para o domínio em questão.
 
 > [!warning]
 >
 > - Se o domínio não usar os servidores DNS da OVH, a alteração deverá ser efetuada na interface do fornecedor responsável pela configuração do seu domínio.
-> - Se o domínio estiver registado na OVH, pode verificar se este último utiliza a nossa configuração. Para isso, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em “Domínios” e selecione o domínio em questão. A seguir, clique no separador `Servidores DNS`{.action}.
+> - Se o domínio estiver registado na OVH, pode verificar se este último utiliza a nossa configuração. Para isso, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em “Domínios” e selecione o domínio em questão. A seguir, clique no separador `Servidores DNS`{.action}.
 >
 
 ## Instruções
@@ -44,7 +44,7 @@ Compreender os diferentes registos irá permitir-lhe perceber as alterações qu
 
 ### 1 - Aceder à gestão da zona DNS da OVH do seu domínio
 
-Para iniciar esta operação, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Domínios`{.action} na barra à esquerda e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
+Para iniciar esta operação, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Domínios`{.action} na barra à esquerda e escolha o domínio em causa. De seguida, clique no separador `Zona DNS`{.action}.
 
 Na tabela, pode ver a configuração do seu domínio na OVH. Esta tabela inclui vários registos DNS (um por cada linha). Poderá filtrar o conteúdo por tipo de registo ou por nome de domínio.
 

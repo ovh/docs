@@ -20,7 +20,7 @@ Er zijn enorm veel verschillende websites op het internet. Of u nu een blog of e
 - U moet beschikken over een [OVH webhostingplan](https://www.ovh.com/nl/shared-hosting).
 - U moet een e-mail hebben ontvangen met daarin de bevestiging dat uw webhosting is geïnstalleerd.
 - U moet beschikken over een [domeinnaam](https://www.ovh.com/nl/domains/){.external}, wat het adres zal worden waarop uw website te vinden zal zijn.
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 
 ## Instructie
 
@@ -64,7 +64,7 @@ Zorg ervoor dat u alle bestanden hebt voor de te publiceren website. Als u een b
 
 Als u een FTP-gebruikersnaam, een wachtwoord en een serveradres hebt, kunt u inloggen op uw opslagruimte. Deze zijn in de e-mail naar u verzonden met de mededeling dat uw hostingplan was opgezet. Als u niet langer in het bezit bent van het wachtwoord, raadpleegt u de instructies in onze handleiding [Wijziging van het wachtwoord wijzigen voor een FTP-gebruiker](https://docs.ovh.com/nl/hosting/wijzigen-wachtwoord-ftp-gebruiker/){.external}.
 
-Om het serveradres of de gebruikersnaam van uw opslagruimte te verkrijgen, logt u in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} en klikt u vervolgens op `Hosting`{.action} in de dienstenbalk aan de linkerkant. Selecteer de naam van het betreffende hostingplan en klik op het tabblad `FTP - SSH`{.action}.
+Om het serveradres of de gebruikersnaam van uw opslagruimte te verkrijgen, logt u in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en klikt u vervolgens op `Hosting`{.action} in de dienstenbalk aan de linkerkant. Selecteer de naam van het betreffende hostingplan en klik op het tabblad `FTP - SSH`{.action}.
 
 ![siteinstallation](images/get-website-online-step1.png){.thumbnail}
 
@@ -105,7 +105,7 @@ Als u een bestaande website migreert, kunt u deze bestanden verkrijgen bij uw vo
 
 Als u al een database hebt en deze wilt gebruiken (vanuit een [OVH webhostingplan](https://www.ovh.com/nl/shared-hosting/){.external} of een [private SQL](https://www.ovh.com/nl/shared-hosting/opties-sql.xml){.external}- of [Cloud DB](https://www.ovh.com/nl/cloud/cloud-databases/){.external}-oplossing), hebt u uw gebruikersnaam en wachtwoord, de naam van de database en het adres van de server nodig. Ga verder met de volgende stap.
 
-Als u een nieuwe database bij OVH wilt maken, meldt u zich aan bij uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} en klikt u vervolgens op `Hosting-plannen`{.action} in de dienstenbalk aan de linkerkant. Selecteer de naam van het betreffende hostingplan en klik op het tabblad `Database`{.action}.
+Als u een nieuwe database bij OVH wilt maken, meldt u zich aan bij uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en klikt u vervolgens op `Hosting-plannen`{.action} in de dienstenbalk aan de linkerkant. Selecteer de naam van het betreffende hostingplan en klik op het tabblad `Database`{.action}.
 
 Klik nu op de knop `Een database maken`{.action}, of klik, als deze knop nu wordt weergegeven, op `Acties`{.action} en vervolgens op `Een database maken`{.action}. Volg nu de weergegeven informatie.
 

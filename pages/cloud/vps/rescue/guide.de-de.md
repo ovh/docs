@@ -35,7 +35,7 @@ Die Durchführung von Überprüfungen im Rescue-Modus hilft Ihnen auch, festzust
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben einen bereits eingerichteten [OVHcloud VPS](https://www.ovhcloud.com/de/vps/){.external} in Ihrem Kunden-Account.
 
 > [!warning]
@@ -49,7 +49,7 @@ Die Durchführung von Überprüfungen im Rescue-Modus hilft Ihnen auch, festzust
 
 ### Aktivierung des Rescue-Modus
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in der linken Navigationsleiste unter `VPS`{.action} aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in der linken Navigationsleiste unter `VPS`{.action} aus.
 
 #### Mit einem aktuellen VPS Angebot
 
@@ -73,10 +73,10 @@ Sobald Sie den Neustart ausgeführt haben, gibt ein Fortschrittsbalken den Forts
 
 > [!primary]
 >
-> Sie erhalten eine automatische E-Mail mit den SSH-Login-Daten, um im Rescue-Modus auf den VPS zuzugreifen. Bitte warten Sie auf den Eingang der E-Mail, bevor Sie weitere Maßnahmen ergreifen. Diese E-Mail ist auch in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) verfügbar, sobald sie versendet wurde. Klicken Sie in der rechten oberen Ecke auf den mit Ihrer OVHcloud-Kennung assoziierten Namen und wählen Sie `E-Mails vom Support`{.action} aus.
+> Sie erhalten eine automatische E-Mail mit den SSH-Login-Daten, um im Rescue-Modus auf den VPS zuzugreifen. Bitte warten Sie auf den Eingang der E-Mail, bevor Sie weitere Maßnahmen ergreifen. Diese E-Mail ist auch in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verfügbar, sobald sie versendet wurde. Klicken Sie in der rechten oberen Ecke auf den mit Ihrer OVHcloud-Kennung assoziierten Namen und wählen Sie `E-Mails vom Support`{.action} aus.
 >
 
-Sie können sich nun via SSH mit Ihrem VPS verbinden, indem Sie die Login-Daten für den Rescue-Modus verwenden. Sobald Ihre Maßnahmen im Rescue-Modus abgeschlossen sind, starten Sie den VPS über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) im "normalen" Modus noch einmal neu.
+Sie können sich nun via SSH mit Ihrem VPS verbinden, indem Sie die Login-Daten für den Rescue-Modus verwenden. Sobald Ihre Maßnahmen im Rescue-Modus abgeschlossen sind, starten Sie den VPS über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im "normalen" Modus noch einmal neu.
 
 ## Weiterführende Informationen
 

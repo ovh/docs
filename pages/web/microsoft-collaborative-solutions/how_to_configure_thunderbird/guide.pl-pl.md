@@ -59,7 +59,7 @@ Kliknij przycisk `Konfiguracja ręczna`{.action}, aby przejść do dalszych etap
 >
 > Poniżej stosujemy przykładową nazwę serwera, np. **X**.mail.ovh.net.
 > 
-> Aby uzyskać dane Twojego serwera, przejdź do[panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, wybierz sekcję `Web Cloud`{.action}, a następnie `Microsoft`{.action}
+> Aby uzyskać dane Twojego serwera, przejdź do[panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, wybierz sekcję `Web Cloud`{.action}, a następnie `Microsoft`{.action}
 >  w lewej kolumnie. Wybierz `Exchange`{.action}, a następnie Twoją platformę. Serwer jest widoczny w ramce **Połączenie** w karcie `Informacje ogólne`{.action}
 > 
 

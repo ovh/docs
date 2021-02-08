@@ -17,13 +17,13 @@ CloudDB-ratkaisun avulla on mahdollista käyttää tietokantainstanssia, jonka r
 ## Edellytykset
 
 - Sinulla on [CloudDB-instanssi](https://www.ovh-hosting.fi/cloud/cloud-databases/){.external}.
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Käytännössä
 
 ### Katso instanssin yleiset tiedot
 
-Mene [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager){.external} vasemmassa laidassa olevassa valikossa kohtaan `Tietokannat`{.action} ja sitten kyseessä olevaan instanssiin. Varmista, että olet kohdassa `Yleiset tiedot`{.action}.
+Mene [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} vasemmassa laidassa olevassa valikossa kohtaan `Tietokannat`{.action} ja sitten kyseessä olevaan instanssiin. Varmista, että olet kohdassa `Yleiset tiedot`{.action}.
 
 > [!primary]
 >

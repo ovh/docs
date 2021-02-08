@@ -65,7 +65,7 @@ Um Ihre Kundenkennung im Kundencenter einzusehen, klicken Sie oben rechts auf Ih
 
 ## Wie kann ich mich in meinem Kundencenter einloggen?
 
-Gehen Sie auf die [OVHcloud Authentifizierungsseite](https://www.ovh.com/auth/?action=gotomanager) und geben Sie Ihre Kundenkennung und Ihr Passwort ein.
+Gehen Sie auf die [OVHcloud Authentifizierungsseite](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und geben Sie Ihre Kundenkennung und Ihr Passwort ein.
 
 ![Kundenkennung](images/nichandle03.png){.thumbnail}
 

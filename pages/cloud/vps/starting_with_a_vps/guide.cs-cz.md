@@ -30,7 +30,7 @@ Virtuální privátní server (VPS) je server běžící na virtualizovaném har
 
 ## V praxi
 
-Po přihlášení do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} přejděte do sekce `Cloud`{.action} a v levé části obrazovky vyberte možnost `Servery`{.action}. Následně se zobrazí základní rozhraní pro správu Vašeho VPS: obecné informace uprostřed, široké spektrum akcí v podobě tlačítek umístěných v pravé části obrazovky s dalšími možnostmi v dolní části rozhraní.
+Po přihlášení do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} přejděte do sekce `Cloud`{.action} a v levé části obrazovky vyberte možnost `Servery`{.action}. Následně se zobrazí základní rozhraní pro správu Vašeho VPS: obecné informace uprostřed, široké spektrum akcí v podobě tlačítek umístěných v pravé části obrazovky s dalšími možnostmi v dolní části rozhraní.
 
 ### Připojení k VPS
 

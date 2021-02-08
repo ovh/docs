@@ -24,7 +24,7 @@ Questa guida ti mostra come effettuare questa operazione.
 
 ### Delega il tuo progetto
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona `Public Cloud`{.action}. Clicca su `Contatti e Permessi`{.action} nella sezione **Gestione e consumo del progetto**
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Public Cloud`{.action}. Clicca su `Contatti e Permessi`{.action} nella sezione **Gestione e consumo del progetto**
 
 ![public-cloud-delegate-projects](images/pcidelegateprojects1.png){.thumbnail}
 

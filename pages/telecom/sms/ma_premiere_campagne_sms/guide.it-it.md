@@ -21,7 +21,7 @@ OVHcloud mette a tua disposizione strumenti integrati nello Spazio Cliente per l
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e seleziona `ADSL e telefono`{.action}. Clicca su `SMS`{.action} a sinistra e poi seleziona il tuo account SMS.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `ADSL e telefono`{.action}. Clicca su `SMS`{.action} a sinistra e poi seleziona il tuo account SMS.
 
 La barra degli strumenti e le scorciatoie ti permetteranno di accedere alle funzionalità principali per inviare la tua campagna di SMS.
 

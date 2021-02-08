@@ -17,13 +17,13 @@ If you have just purchased an MX Plan solution, you can have email addresses, wh
 ## Requirements
 
 - an MX plan solution, available via a [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}, [the free Start10M Hosting plan](https://www.ovh.ie/domains/start10m_hosting_offer.xml){.external} or an MX Plan solution ordered separately
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
 
-Once the MX Plan solution is created and available, you can manage it from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Depending on its activation date or if [it has been migrated recently](https://www.ovh.co.uk/mxplan-migration/){.external}, you may have the old or new version of the solution. You will need to check this before you proceed any further. 
+Once the MX Plan solution is created and available, you can manage it from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Depending on its activation date or if [it has been migrated recently](https://www.ovh.co.uk/mxplan-migration/){.external}, you may have the old or new version of the solution. You will need to check this before you proceed any further. 
 
-To do this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and open the `Web Cloud`{.action} section. Click `Emails`{.action} in the services bar on the left-hand side, then choose the name of the plan concerned. Continue with the next steps, depending on which version you own.
+To do this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, and open the `Web Cloud`{.action} section. Click `Emails`{.action} in the services bar on the left-hand side, then choose the name of the plan concerned. Continue with the next steps, depending on which version you own.
 
 |MX Plan solution legacy version|MX Plan solution new version|
 |---|---|

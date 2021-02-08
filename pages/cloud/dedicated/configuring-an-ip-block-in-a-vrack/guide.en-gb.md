@@ -19,7 +19,7 @@ As well as private IP addressing, the [vRack](https://www.ovh.co.uk/solutions/vr
 * your chosen private IP address range
 * a [vRack compatible server](https://www.ovh.co.uk/dedicated_servers/){.external}
 * a [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account
-* access to the OVH [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* access to the OVH [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions
 

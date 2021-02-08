@@ -17,13 +17,13 @@ Odnawianiem i rezygnacją z usług możesz zarządzać w Panelu klienta.
 
 > [!primary]
 >
-> Niektóre elementy tego przewodnika mogą się różnić lub mogą nie mieć zastosowania w Twojej sytuacji, w zależności od miejsca pobytu, lokalnych przepisów i wykorzystywanych rozwiązań. W razie wątpliwości sprawdź zapisy w umowach OVHcloud. Aby je znaleźć, w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} przejdź do sekcji `Moje usługi`{.action}, na następnie wybierz `Moje umowy`{.action}.
+> Niektóre elementy tego przewodnika mogą się różnić lub mogą nie mieć zastosowania w Twojej sytuacji, w zależności od miejsca pobytu, lokalnych przepisów i wykorzystywanych rozwiązań. W razie wątpliwości sprawdź zapisy w umowach OVHcloud. Aby je znaleźć, w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} przejdź do sekcji `Moje usługi`{.action}, na następnie wybierz `Moje umowy`{.action}.
 >
 
 
 ## Wymagania początkowe
 
-- Posiadanie dostępu do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Posiadanie dostępu do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - Posiadanie aktywnych usług OVH
 - Posiadanie statusu kontaktu księgowego usług OVHcloud
 
@@ -43,7 +43,7 @@ Aby dowiedzieć się więcej na temat operacji, które chcesz wykonać, zalecamy
 
 ### Uzyskiwanie dostępu do konfiguracji usług
 
-Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Na pasku menu w prawym górnym rogu kliknij nazwę powiązaną z Twoim identyfikatorem klienta, a następnie wybierz pozycję `Produkty i usługi`{.action}.
+Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Na pasku menu w prawym górnym rogu kliknij nazwę powiązaną z Twoim identyfikatorem klienta, a następnie wybierz pozycję `Produkty i usługi`{.action}.
 
 ![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 

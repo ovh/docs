@@ -18,14 +18,14 @@ Private SQL -palvelun avulla voidaan käyttää OVH:n webhotellin parina toimiva
 
 - Sinulla on Private SQL -instanssi (sisältyy [webhotellituotteeseen](https://www.ovh-hosting.fi/webhotelli/){.external} tai sen voi tilata [lisäpalveluna](https://www.ovh-hosting.fi/sql-optiot.xml){.external}).
 - Sinulla on [webhotelli](https://www.ovh-hosting.fi/webhotelli){.external}, jonka ylläpito tapahtuu samassa konesalissa kuin Private SQL -instanssisi (tämä tieto on näkyvissä hallintapaneelissa).
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 
 ## Käytännössä
 
 ### Katso instanssin yleiset tiedot
 
-Mene [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager){.external} vasemmassa laidassa olevassa valikossa kohtaan `Tietokannat`{.action} ja sitten kyseessä olevaan SQL-instanssiin. Varmista, että olet kohdassa `Yleiset tiedot`{.action}.
+Mene [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} vasemmassa laidassa olevassa valikossa kohtaan `Tietokannat`{.action} ja sitten kyseessä olevaan SQL-instanssiin. Varmista, että olet kohdassa `Yleiset tiedot`{.action}.
 
 > [!primary]
 >

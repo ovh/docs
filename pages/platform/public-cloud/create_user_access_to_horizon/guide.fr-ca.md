@@ -19,7 +19,7 @@ Horizon est l’interface graphique d’administration d’OpenStack. Certaines 
 ## Prérequis
 
 - Un projet Public Cloud activé
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
 

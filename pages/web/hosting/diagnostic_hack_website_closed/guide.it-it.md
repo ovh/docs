@@ -18,7 +18,7 @@ Se hai pubblicato il tuo sito su un hosting Web OVH, potresti ricevere un messag
 
 - Disporre di un piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external} attivo
 - Disporre delle credenziali di accesso allo spazio di storage dell’hosting
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web Cloud`{.action}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}
 
 ## Procedura
 
@@ -74,7 +74,7 @@ Prosegui al prossimo step per verificare che i diversi elementi aggiuntivi del s
 
 Questa operazione permette di conoscere l’attività del tuo servizio e del tuo sito, consentendo di analizzare nel dettaglio ciò che è successo al momento della disattivazione.
 
-Per consultare l’attività e i log dell’hosting accedi alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra. A questo punto, in base alle informazioni che vuoi raccogliere, si presentano due possibilità:
+Per consultare l’attività e i log dell’hosting accedi alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra. A questo punto, in base alle informazioni che vuoi raccogliere, si presentano due possibilità:
 
 - **consultare l’attività dell’hosting**
 
@@ -175,7 +175,7 @@ Per riattivare l’hosting Web è necessario eseguire un’operazione specifica 
 
 Se invece hai la possibilità di riattivarlo, assicurati d disporre di tutti i dati necessari per effettuare l’accesso allo spazio di storage (server FTP, utente FTP e password associata).
 
-Per recuperare queste informazioni, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `FTP - SSH`{.action}. Se necessario, da questa pagina è possibile anche [modificare la password dell’utente FTP](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/){.external}.
+Per recuperare queste informazioni, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `FTP - SSH`{.action}. Se necessario, da questa pagina è possibile anche [modificare la password dell’utente FTP](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/){.external}.
 
 ![disattivazione hosting](images/hosting-deactivation-step3.png){.thumbnail}
 

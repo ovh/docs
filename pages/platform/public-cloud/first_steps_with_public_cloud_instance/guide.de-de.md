@@ -10,13 +10,13 @@ legacy_guide_number: g2018
 
 ## Ziel
 
-Sie können die OVHcloud Public Cloud einfach über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) verwalten. Dort finden Sie Ihre gesamte Infrastruktur (Instanzen, Backups, Festplatten, SSH-Schlüssel usw.) und Storage-Projekte (einschließlich der Liste Ihrer Container).
+Sie können die OVHcloud Public Cloud einfach über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwalten. Dort finden Sie Ihre gesamte Infrastruktur (Instanzen, Backups, Festplatten, SSH-Schlüssel usw.) und Storage-Projekte (einschließlich der Liste Ihrer Container).
 
 **Diese Anleitung erläutert die Grundlagen der Verwaltung von Public Cloud Instanzen.**
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
 - Sie haben im OVHcloud Kundencenter einen [SSH-Schlüssel hinzugefügt](https://docs.ovh.com/de/public-cloud/create-ssh-keys/).
 
@@ -25,7 +25,7 @@ Sie können die OVHcloud Public Cloud einfach über das [OVHcloud Kundencenter](
 
 ### Zugriff auf die Verwaltungsschnittstelle der Instanz
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action}. Klicken Sie dann im folgenden Bereich auf die Pfeilschaltfläche neben Ihrem Standardprojektnamen in der oberen linken Ecke der Anzeige. Wählen Sie nun das gewünschte Projekt aus und klicken anschließend im linken Menü auf `Instances`{.action}.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action}. Klicken Sie dann im folgenden Bereich auf die Pfeilschaltfläche neben Ihrem Standardprojektnamen in der oberen linken Ecke der Anzeige. Wählen Sie nun das gewünschte Projekt aus und klicken anschließend im linken Menü auf `Instances`{.action}.
 
 Auf dieser Seite sehen Sie eine Zusammenfassung aller Ihrer Instanzen. Hier werden verschiedene Informationen angezeigt:
 

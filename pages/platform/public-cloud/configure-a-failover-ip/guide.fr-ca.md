@@ -23,7 +23,7 @@ Toutefois, les adresses IP fail-over ne seront pas automatiquement configurées 
 
 ## Prérequis
 
-* Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+* Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 * Bénéficier d’une [instance Public Cloud](https://www.ovh.com/ca/fr/public-cloud/){.external} dans votre compte OVHcloud.
 * Posséder une [adresse IP fail-over](https://www.ovh.com/ca/fr/serveurs_dedies/ip_failover.xml){.external} sur votre compte OVHcloud.
 * Disposer d’un accès root à votre instance en SSH (pour Linux uniquement).

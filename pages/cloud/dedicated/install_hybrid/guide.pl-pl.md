@@ -24,7 +24,7 @@ Możesz dzierżawić od OVH [serwery dedykowane](https://www.ovh.pl/serwery_dedy
 
 * Posiadanie [serwera hybrydowego OVH](https://www.ovh.pl/serwery_dedykowane/){.external}
 * Dostęp do [API OVH](https://api.ovh.com/console/){.external}
-* Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 > [!warning]
 >
@@ -89,7 +89,7 @@ Po uzupełnieniu wszystkich opcji, kliknij przycisk `Execute`{.action}:
 
 ![Instalacja](images/install-01.png){.thumbnail}
 
-Twój system operacyjny zostanie teraz zainstalowany. Możesz sprawdzić postęp instalacji, aktualizując stronę Twojego serwera w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} lub realizując następujące wywołanie API poprzez wprowadzenie nazwy serwera w polu **serviceName** i kliknięcie przycisku `Execute`{.action}:
+Twój system operacyjny zostanie teraz zainstalowany. Możesz sprawdzić postęp instalacji, aktualizując stronę Twojego serwera w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} lub realizując następujące wywołanie API poprzez wprowadzenie nazwy serwera w polu **serviceName** i kliknięcie przycisku `Execute`{.action}:
 
 > [!api]
 >

@@ -42,7 +42,7 @@ Atsidarys dar vienas langas.
 
 Email address: Jūsų el. pašto adresas.
 
-Password: Slaptažodis, kurį nurodėte [valdymo sąsajoje](https://www.ovh.com/auth/?action=gotomanager) kurdami paskyrą.
+Password: Slaptažodis, kurį nurodėte [valdymo sąsajoje](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) kurdami paskyrą.
 
 Username: Visas el. pašto adresas.
 
@@ -120,7 +120,7 @@ Kortelėje „Security“ galimi išsamūs saugumo nustatymai
 POP konfigūravimas su įjungta ar išjungta SSL apsauga:
 
 Email Address: Jūsų el. pašto adresas
-Password: Slaptažodis, kurį nurodėte [valdymo sąsajoje](https://www.ovh.com/auth/?action=gotomanager) kurdami paskyrą.
+Password: Slaptažodis, kurį nurodėte [valdymo sąsajoje](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) kurdami paskyrą.
 Username: Visas el. pašto adresas
 Incoming server:SSL0.OVH.NET
 Incoming Server Port:995 arba 110
@@ -147,7 +147,7 @@ Prievadai 995 ir 465 atitinka SSL su įjungta apsauga.
 IMAP konfigūravimas su įjungta ar išjungta SSL apsauga:
 
 Email Address: Jūsų el. pašto adresas
-Password: Slaptažodis, kurį nurodėte [valdymo sąsajoje](https://www.ovh.com/auth/?action=gotomanager) kurdami paskyrą.
+Password: Slaptažodis, kurį nurodėte [valdymo sąsajoje](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) kurdami paskyrą.
 Username: Visas el. pašto adresas
 Incoming server:SSL0.OVH.NET
 Incoming Server Port:993 arba 143

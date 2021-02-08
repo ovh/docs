@@ -24,7 +24,7 @@ In order for this to work, each server stores a part of your website in its cach
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - an [OVHcloud Web Hosting plan](https://www.ovh.ie/web-hosting)
 
 ## Instructions
@@ -37,7 +37,7 @@ In order for this to work, each server stores a part of your website in its cach
 
 #### If the CDN option is not ordered or enabled on your Web Hosting plan
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant Web Hosting plan. Click on `...`{.action} to the right of “CDN option”, then on `Order a CDN`{.action} or `Activate option`{.action} if the CDN option is already included in your hosting.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant Web Hosting plan. Click on `...`{.action} to the right of “CDN option”, then on `Order a CDN`{.action} or `Activate option`{.action} if the CDN option is already included in your hosting.
 
 > [!primary]
 > 
@@ -49,7 +49,7 @@ You will be redirected to a page where you can generate a purchase order. Once t
 
 #### If the CDN option is already enabled on your Web Hosting plan
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant Web Hosting plan. On the `Multisite`{.action} tab, click on `...`{.action} to the right of the Multisite entry, then click on `Modify domain`{.action}.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant Web Hosting plan. On the `Multisite`{.action} tab, click on `...`{.action} to the right of the Multisite entry, then click on `Modify domain`{.action}.
 
 Select the “Activate the CDN” option, click `Next`{.action} and then `Confirm`{.action}.
 
@@ -138,7 +138,7 @@ Once you have configured your rules and chosen your options, click `Apply config
 
 It is sometimes useful to clear the CDN cache, particularly when you modify static files - for example, when launching a new version of your site. In this case, you can completely clear the CDN cache.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant Web Hosting plan. Click on `...`{.action} to the right of “CDN option”, then on `Clear cache`{.action}.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant Web Hosting plan. Click on `...`{.action} to the right of “CDN option”, then on `Clear cache`{.action}.
 
 ![CDN](images/manage_CDN_02.png){.thumbnail}
 
@@ -173,7 +173,7 @@ If you are not using a CMS, you can also use the CDN cache. To do this, you must
 
 This action allows you to deactivate the CDN for one or more of your Multisite entries without removing the CDN option from your Web Hosting.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant the Web Hosting plan. On the `Multisite`{.action} tab, click on `...`{.action} to the right of the Multisite entry, then click on `Modify domain`{.action}.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant the Web Hosting plan. On the `Multisite`{.action} tab, click on `...`{.action} to the right of the Multisite entry, then click on `Modify domain`{.action}.
 
 Untick “Activate the CDN”, click `Next`{.action} and then `Confirm`{.action}.
 
@@ -183,7 +183,7 @@ Untick “Activate the CDN”, click `Next`{.action} and then `Confirm`{.action}
 
 This action will remove the CDN option from your entire Web Hosting solution.
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant the Web Hosting plan. Click `...`{.action} to the right of “CDN option”, then on `Cancel the CDN`{.action}.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the relevant the Web Hosting plan. Click `...`{.action} to the right of “CDN option”, then on `Cancel the CDN`{.action}.
 
 ![CDN](images/manage_CDN_04.png){.thumbnail}
 

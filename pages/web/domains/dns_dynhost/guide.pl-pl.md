@@ -17,7 +17,7 @@ Strefa Domain Name System (DNS) to plik konfiguracyjny domeny. Zawiera on inform
 
 ## Wymagania początkowe
 
-- Dostęp do interfejsu zarządzania domeną w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do interfejsu zarządzania domeną w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - Używanie przez domenę konfiguracji OVH (serwerów DNS OVH) 
 - Rekord DynHost nie może już istnieć w strefie DNS OVH Twojej domeny jako rekord „A”
 
@@ -25,14 +25,14 @@ Strefa Domain Name System (DNS) to plik konfiguracyjny domeny. Zawiera on inform
 >
 > - Jeśli Twoja domena nie używa serwerów DNS OVH, zwróć się do administratora zarządzającego jej konfiguracją, aby dowiedzieć się, jakie kroki powinieneś podjąć.
 > 
-> - Jeśli domena jest zarejestrowana w OVH, możesz sprawdzić, czy używa konfiguracji OVH. Po wybraniu domeny w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, przejdź do zakładki `Serwery DNS`{.action}.
+> - Jeśli domena jest zarejestrowana w OVH, możesz sprawdzić, czy używa konfiguracji OVH. Po wybraniu domeny w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do zakładki `Serwery DNS`{.action}.
 >
 
 ## W praktyce
 
 ### Etap 1: utworzenie identyfikatora DynHost
 
-Pierwszy etap polega na utworzeniu identyfikatora DynHost. Dzięki temu będziesz mógł aktualizować dynamiczny rekord DNS, który chcesz utworzyć. Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Domeny`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią domenę. Teraz przejdź do zakładki `DynHost`{.action}.
+Pierwszy etap polega na utworzeniu identyfikatora DynHost. Dzięki temu będziesz mógł aktualizować dynamiczny rekord DNS, który chcesz utworzyć. Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Domeny`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią domenę. Teraz przejdź do zakładki `DynHost`{.action}.
 
 ![dynhost](images/use-dynhost-step1.png){.thumbnail}
 

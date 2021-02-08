@@ -97,7 +97,7 @@ Jūsų paskyra sukonfigūruota
 IMAP konfigūravimas su įjungta ar išjungta SSL apsauga:
 
 Email Address: Jūsų el. pašto adresas
-Password: Slaptažodis, kurį nurodėte [valdymo sąsajoje](https://www.ovh.com/auth/?action=gotomanager) kurdami paskyrą.
+Password: Slaptažodis, kurį nurodėte [valdymo sąsajoje](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) kurdami paskyrą.
 Username: Visas el. pašto adresas
 Incoming server:SSL0.OVH.NET
 Incoming Server Port:993 arba 143
@@ -124,7 +124,7 @@ Prievadai 993 ir 465 atitinka SSL su įjungta apsauga.
 POP konfigūravimas su įjungta ar išjungta SSL apsauga:
 
 Email Address: Jūsų el. pašto adresas
-Password: Slaptažodis, kurį nurodėte [valdymo sąsajoje](https://www.ovh.com/auth/?action=gotomanager) kurdami paskyrą.
+Password: Slaptažodis, kurį nurodėte [valdymo sąsajoje](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) kurdami paskyrą.
 Username: Visas el. pašto adresas
 Incoming server:SSL0.OVH.NET
 Incoming Server Port:995 arba 110

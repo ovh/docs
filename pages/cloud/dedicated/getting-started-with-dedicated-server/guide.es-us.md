@@ -30,7 +30,7 @@ Un servidor dedicado es un servidor físico situado en uno de nuestros datacente
 
 - Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/){.external}.
 - Estar conectado por SSH (acceso root) en Linux o como administrador en Windows.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento
 
@@ -38,7 +38,7 @@ Al configurar un servidor dedicado por primera vez, puede seleccionar el sistema
 
 ### Instalar o reinstalar el servidor dedicado
 
-Puede reinstalar fácilmente el servidor y elegir otro modelo de sistema operativo desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager). En la pestaña `Información general`{.action}, haga clic en `..`{.action} junto al `sistema (SO)` y seleccione `Instalar`{.action}.
+Puede reinstalar fácilmente el servidor y elegir otro modelo de sistema operativo desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la pestaña `Información general`{.action}, haga clic en `..`{.action} junto al `sistema (SO)` y seleccione `Instalar`{.action}.
 
 ![Reinstalar](images/reinstalling-your-server-00.png){.thumbnail}
 
@@ -83,7 +83,7 @@ Para más información sobre la creación de llaves SSH, consulte [esta guía](h
 
 > [!primary]
 >
-> Algunos sistemas operativos o plataformas, como Plesk y Windows, requieren la adquisición de una licencia antes de la instalación. Puede adquirir esta [licencia en OVHcloud](https://www.ovhcloud.com/es-es/bare-metal/os/) o a través de un revendedor. A continuación, deberá añadirla manualmente, ya sea a través del propio sistema operativo o desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager). Puede gestionar sus licencias en el Panel de configuración de la sección `Bare Metal Cloud`{.action}, con `licencias`{.action}. En esta sección también puede contratar licencias (utilizando el botón `Contratar`{.action} a la izquierda) o añadir su propia licencia de servidor SQL o Windows SPLA (utilizando el botón `Añadir una licencia SPLA`{.action} a la izquierda).
+> Algunos sistemas operativos o plataformas, como Plesk y Windows, requieren la adquisición de una licencia antes de la instalación. Puede adquirir esta [licencia en OVHcloud](https://www.ovhcloud.com/es-es/bare-metal/os/) o a través de un revendedor. A continuación, deberá añadirla manualmente, ya sea a través del propio sistema operativo o desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). Puede gestionar sus licencias en el Panel de configuración de la sección `Bare Metal Cloud`{.action}, con `licencias`{.action}. En esta sección también puede contratar licencias (utilizando el botón `Contratar`{.action} a la izquierda) o añadir su propia licencia de servidor SQL o Windows SPLA (utilizando el botón `Añadir una licencia SPLA`{.action} a la izquierda).
 >
 
 ### Conexión al servidor
@@ -152,7 +152,7 @@ Para más información, consulte nuestra guía: [Uso de IPMI para los servidores
 
 ### Modo de rescate
 
-Si tiene algún problema con el servidor, reinicie el servidor en modo de rescate. Para activar el modo de rescate, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) y acceda a la página del servidor. En el menú `Información general`, haga clic en `...`{.action} y luego en `Editar`{.action} para cambiar el modo de arranque.
+Si tiene algún problema con el servidor, reinicie el servidor en modo de rescate. Para activar el modo de rescate, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la página del servidor. En el menú `Información general`, haga clic en `...`{.action} y luego en `Editar`{.action} para cambiar el modo de arranque.
 
 ![Editar la selección de inicio](images/rescue-mode-01.png){.thumbnail}
 

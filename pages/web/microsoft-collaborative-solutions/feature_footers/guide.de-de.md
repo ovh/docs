@@ -24,14 +24,14 @@ order: 3
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf das [ OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf das [ OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen über eine bereits eingerichtete [OVHcloud Exchange](https://www.ovh.de/emails/hosted-exchange) oder [E-Mail Pro](https://www.ovh.de/emails/email-pro) Lösung.
 
 
 ## In der praktischen Anwendung
 
 
-Loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich „Web“ und wählen Sie in der linken Menüleiste unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus. Klicken Sie im horizontalen Menü auf den Tab `Mehr+`{.action} und wählen Sie `Fußzeilen`{.action} aus.
+Loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich „Web“ und wählen Sie in der linken Menüleiste unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus. Klicken Sie im horizontalen Menü auf den Tab `Mehr+`{.action} und wählen Sie `Fußzeilen`{.action} aus.
 
 ![Exchange Signaturen](images/exchange-footer-step1.png){.thumbnail}
 

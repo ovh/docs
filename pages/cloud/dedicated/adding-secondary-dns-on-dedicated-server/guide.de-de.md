@@ -22,7 +22,7 @@ Wenn Sie Ihren dedizierten Server als DNS-Server konfigurieren, können Sie den 
 
 - Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
 - Sie haben adminstrativen Zugriff auf eine [Domain](https://www.ovh.de/domains/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 > [!warning]
 >
@@ -36,7 +36,7 @@ Wenn Sie Ihren dedizierten Server als DNS-Server konfigurieren, können Sie den 
 
 ### Eine Domain hinzufügen <a name="ajoutdomaine"></a>
 
-Loggen Sie sich [in Ihr OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager), gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server im linken Menü unter `Dedicated Server`{.action} aus.
+Loggen Sie sich [in Ihr OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie dann Ihren Server im linken Menü unter `Dedicated Server`{.action} aus.
 
 Wechseln Sie zum Tab `Sekundärer DNS`{.action} und klicken Sie auf den Button `Domain hinzufügen`{.action}.
 
@@ -72,7 +72,7 @@ Es ist erforderlich, Ihre Berechtigung zum Verwalten der Domain zu überprüfen,
 
 - Wenn die Domain zu diesem Zeitpunkt von einem externen Registrar verwaltet wird oder externe DNS-Server verwendet, loggen Sie sich in die Verwaltungsoberfläche Ihres DNS-Anbieters ein und fügen Sie Ihrer Zone einen TXT-Eintrag mit der Subdomain "ownercheck" und dem Wert, den Sie in Schritt 2 des Dialogs ["Domain hinzufügen"](#ajoutdomaine) erhalten haben, hinzu.
 
-- Wenn die Domain von OVHcloud als Registrar verwaltet wird **und** OVHcloud DNS-Server verwendet, klicken Sie in Schritt 2 des Dialogs zunächst auf `Abbrechen`{.action}. Folgen Sie anschließend den Anweisungen in [dieser Anleitung](../../domains/webhosting_bearbeiten_der_dns_zone/), um den TXT-Eintrag über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) hinzuzufügen.
+- Wenn die Domain von OVHcloud als Registrar verwaltet wird **und** OVHcloud DNS-Server verwendet, klicken Sie in Schritt 2 des Dialogs zunächst auf `Abbrechen`{.action}. Folgen Sie anschließend den Anweisungen in [dieser Anleitung](../../domains/webhosting_bearbeiten_der_dns_zone/), um den TXT-Eintrag über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) hinzuzufügen.
 
 ![Sekundärer DNS](images/cp-04.png){.thumbnail}
 

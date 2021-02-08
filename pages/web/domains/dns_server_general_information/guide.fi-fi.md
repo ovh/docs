@@ -20,8 +20,8 @@ Voidaan siis sanoa, että näiden nimipalvelimille varastoitujen DNS-tietueiden 
 ## Edellytykset
 
 - Sinulla on OVH:lla rekisteröity verkkotunnus.
-- Sinulla on pääsyoikeus verkkotunnuksen hallintaan [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Sinulla on pääsyoikeus verkkotunnuksen hallintaan [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 > [!warning]
 >
@@ -47,7 +47,7 @@ Ole kuitenkin varovainen:
 
 ### 1. Mene verkkotunnuksesi OVH:n nimipalvelinten hallintaan
 
-Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa `Verkkotunnukset`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva verkkotunnus. Mene lopuksi välilehdelle `Nimipalvelimet`{.action}.
+Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, klikkaa `Verkkotunnukset`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva verkkotunnus. Mene lopuksi välilehdelle `Nimipalvelimet`{.action}.
 
 Näkyviin tuleva taulukko näyttää tämän hetkiset verkkotunnuksellesi määritetyt nimipalvelimet OVH:lla. Näkyvissä voi olla useita nimipalvelimia, joita kaikkia symboloi yksi taulukon rivi.
 
@@ -72,7 +72,7 @@ Kun tiedot on annettu, klikkaa painiketta `Aseta konfiguraatio`{.action}. Nimipa
 
 Kun toimenpide on tehty, on odotettava sen toteutumista. Kaksi perättäistä määräaikaa on otettava huomioon:
 
-- OVH:lla toteutettu muutos täytyy rekisteröidä verkkotunnuspäätettäsi hallinnoivalla organisaatiolla. Voit seurata etenemistä [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} osassa `Verkkotunnukset`{.action}, vasemmanpuoleisessa palveluvalikossa kohdassa `Meneillään olevat operaatiot`{.action}.
+- OVH:lla toteutettu muutos täytyy rekisteröidä verkkotunnuspäätettäsi hallinnoivalla organisaatiolla. Voit seurata etenemistä [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} osassa `Verkkotunnukset`{.action}, vasemmanpuoleisessa palveluvalikossa kohdassa `Meneillään olevat operaatiot`{.action}.
 
 - Kun verkkotunnustasi hallinnoiva organisaatio on rekisteröinyt muutoksen, seuraa enintään 48 tunnin mittainen propagaatioaika ennen kuin muutokset ovat astuneet täysin voimaan.
 

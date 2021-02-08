@@ -18,7 +18,7 @@ Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwi
 
 - Aktywowanie usługi [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external}
 - Posiadanie [serwera dedykowanego](https://www.ovh.pl/serwery_dedykowane//){.external} kompatybilnego z rozwiązaniem vRack
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - Dostęp do wybranego zakresu Twoich prywatnych adresów IP
 
 
@@ -26,7 +26,7 @@ Rozwiązanie [vRack](https://www.ovh.pl/rozwiazania/vrack/){.external} umożliwi
 
 ### Utworzenie projektu Public Cloud
 
-Po zalogowaniu się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} kliknij menu `Cloud`{.action}, następnie przycisk `Zamów`{.action}.
+Po zalogowaniu się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} kliknij menu `Cloud`{.action}, następnie przycisk `Zamów`{.action}.
 
 ![Utwórz projekt](images/pci-project-01.png){.thumbnail}
 

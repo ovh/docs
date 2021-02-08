@@ -17,7 +17,7 @@ If you are configuring your dedicated server as a DNS server, you can make use o
 
 - a domain name to which you have administrative access
 - a [dedicated server](https://www.ovhcloud.com/en-sg/bare-metal/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
@@ -29,7 +29,7 @@ If you are configuring your dedicated server as a DNS server, you can make use o
 
 ### Adding a domain <a name="addingdomain"></a>
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Bare Metal Cloud`{.action} section and then select your server from **Dedicated Servers** in the left-hand sidebar.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), go to the `Bare Metal Cloud`{.action} section and then select your server from **Dedicated Servers** in the left-hand sidebar.
 
 Switch to the tab `Secondary DNS`{.action} and click on the button `Add a domain`{.action}.
 
@@ -67,7 +67,7 @@ It is necessary to confirm your authorisation to manage the concerned domain bef
 
 - If the domain is managed by an external registrar or uses external DNS servers at this point, log in to the control panel of your DNS provider and add a TXT record with the subdomain "ownercheck" and the value provided in step 2 of the ["Add a domain" dialogue box](#addingdomain).
 
-- If the domain is managed by OVHcloud as its registrar and it uses OVHcloud DNS servers, close the window by clicking on `Cancel`{.action} first. Then you can follow the instructions in [this guide](../../domains/web_hosting_how_to_edit_my_dns_zone/) to add the TXT record in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
+- If the domain is managed by OVHcloud as its registrar and it uses OVHcloud DNS servers, close the window by clicking on `Cancel`{.action} first. Then you can follow the instructions in [this guide](../../domains/web_hosting_how_to_edit_my_dns_zone/) to add the TXT record in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
 
 ![Secondary DNS](images/cp-04.png){.thumbnail}
 

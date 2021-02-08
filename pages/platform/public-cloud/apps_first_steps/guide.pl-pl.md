@@ -27,7 +27,7 @@ OVHcloud udostępnia klientom Public Cloud obrazy wstępnie zainstalowanych apli
 
 #### Zainstaluj wybraną wstępnie zainstalowaną aplikację
 
-W [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), API OVHcloud lub API OpenStack Horizon zainstaluj wybraną aplikację na Twojej instancji Public Cloud.
+W [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), API OVHcloud lub API OpenStack Horizon zainstaluj wybraną aplikację na Twojej instancji Public Cloud.
 
 #### Szczegóły logowania do aplikacji
 

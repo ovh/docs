@@ -160,7 +160,7 @@ Configuration  **POP**  avec sécurisation SSL activée ou désactivée :
 
 Adresse Email : Votre adresse e-mail mutualisée entière.
 
-Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 Nom d'utilisateur : Votre adresse e-mail mutualisée entière.
 
@@ -193,7 +193,7 @@ Configuration  **IMAP**  avec sécurisation SSL activée ou désactivée :
 
 Adresse Email : Votre adresse e-mail mutualisée entière.
 
-Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Mot de passe : Le mot de passe que vous avez défini dans [l'espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 Nom d'utilisateur : Votre adresse e-mail mutualisée entière.
 

@@ -20,13 +20,13 @@ può essere utile, ad esempio, per:
 
 ## Prerequisiti
 
-* Avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 * Aver creato un’istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}nel tuo account OVHcloud
 * Avere accesso all’istanza via SSH con l’utente root
 
 ## Procedura
 
-Per prima cosa, accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e clicca sul menu`Public Cloud`{.action}. Poi clicca sul`Progetto`{.action} su cui vuoi creare un’istanza.
+Per prima cosa, accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca sul menu`Public Cloud`{.action}. Poi clicca sul`Progetto`{.action} su cui vuoi creare un’istanza.
 
 A questo punto, clicca sul pulsante`Azioni`{.action}e seleziona `Crea un volume`{.action}.
 

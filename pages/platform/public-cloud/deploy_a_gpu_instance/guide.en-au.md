@@ -39,7 +39,7 @@ All the images we offer can be used on a GPU instance.
 > If you don’t feel comfortable with manually compiling a kernel module, we recommend using a distribution that is officially supported by Nvidia and for which they provide *turnkey* drivers: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Once you are logged in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, in your Public Cloud project, click on `Add server`{.action}and choose a GPU instance:
+Once you are logged in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}, in your Public Cloud project, click on `Add server`{.action}and choose a GPU instance:
 
 ![public-cloud](images/EN-Flavors_2020.png){.thumbnail}
 

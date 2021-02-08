@@ -20,8 +20,8 @@ Obecně lze tedy říci, že DNS záznamy, uložené na DNS serverech, zpřístu
 ## Prerekvizity
 
 - Doména registrovaná u společnosti OVH.
-- Dostatečná oprávnění ke správě domény prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostatečná oprávnění ke správě domény prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 > [!warning]
 >
@@ -47,7 +47,7 @@ Je však potřeba zdůraznit, že:
 
 ### Fáze 1: přístup do rozhraní pro správu DNS serverů
 
-Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, v levém postranním panelu klikněte na položku `Domény`{.action} a následně vyberte doménu, v jejímž rámci si přejete provést požadované úpravy. V základním rozhraní pro správu domény klikněte na záložku `DNS servery`{.action}.
+Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, v levém postranním panelu klikněte na položku `Domény`{.action} a následně vyberte doménu, v jejímž rámci si přejete provést požadované úpravy. V základním rozhraní pro správu domény klikněte na záložku `DNS servery`{.action}.
 
 Zobrazí se tabulka obsahující seznam DNS serverů, aktuálně nastavených u OVH pro Vaši doménu. Každý řádek tabulky obsahuje jeden DNS server.
 
@@ -72,7 +72,7 @@ Po vyplnění údajů klikněte na tlačítko `Aplikovat konfiguraci`{.action}. 
 
 Aplikace úprav provedených v nastavení DNS serverů není okamžitá. V úvahu je zapotřebí vzít dvě po sobě jdoucí časové prodlevy:
 
-- Změna provedená na straně OVH musí být zpracována organizací, která spravuje Vaši doménovou koncovku. Postup procesu můžete sledovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (sekce `Domény`{.action}, záložka `Nedávné úkoly`{.action}).
+- Změna provedená na straně OVH musí být zpracována organizací, která spravuje Vaši doménovou koncovku. Postup procesu můžete sledovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} (sekce `Domény`{.action}, záložka `Nedávné úkoly`{.action}).
 
 - Jakmile organizace spravující Vaši doménovou koncovku změny zpracuje, dojde v rozmezí 48 hodin k úplné propagaci provedených úprav.
 

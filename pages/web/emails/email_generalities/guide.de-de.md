@@ -17,13 +17,13 @@ Sie haben gerade eine MX Plan Lösung erworben und können sie nun verwenden, um
 ## Voraussetzungen
 
 - Sie haben ein MX Plan Angebot, verfügbar mit einer [Webhosting](https://www.ovh.de/hosting/){.external} Lösung, dem [kostenlosen Start 10M Hosting](https://www.ovh.de/domains/angebot_hosting_start10m.xml){.external} oder separat bestellbar.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
 ## Beschreibung
 
-Sobald Ihr MX Plan Angebot angelegt und verfügbar ist, können Sie es über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} verwalten. Je nach Aktivierungsdatum oder falls Ihr Angebot [vor Kurzem migriert wurde](https://www.ovh.de/mxplan-migration/){.external}, verfügen Sie entweder über die historische oder die neue MX Plan Version. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Angebotsversion. 
+Sobald Ihr MX Plan Angebot angelegt und verfügbar ist, können Sie es über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} verwalten. Je nach Aktivierungsdatum oder falls Ihr Angebot [vor Kurzem migriert wurde](https://www.ovh.de/mxplan-migration/){.external}, verfügen Sie entweder über die historische oder die neue MX Plan Version. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Angebotsversion. 
 
-Um diese zu überprüfen, loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein. Klicken Sie im linken Menü auf `E-Mails`{.action} und wählen Sie den Namen Ihres Angebots aus. Fahren Sie entsprechend Ihrer MX Plan Version fort.
+Um diese zu überprüfen, loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Klicken Sie im linken Menü auf `E-Mails`{.action} und wählen Sie den Namen Ihres Angebots aus. Fahren Sie entsprechend Ihrer MX Plan Version fort.
 
 |Historische MX Plan Version|Neue MX Plan Version|
 |---|---|

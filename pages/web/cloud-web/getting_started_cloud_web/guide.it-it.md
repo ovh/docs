@@ -18,7 +18,7 @@ La nuova soluzione di hosting Cloud Web combina i nostri 20 anni di esperienza n
 - Disporre di un piano di hosting [Cloud Web](https://www.ovh.it/hosting-web/cloud-web.xml) attivo
 - Aver ricevuto l'email di conferma dell'installazione del tuo hosting Cloud Web
 - Disporre di un [dominio](https://www.ovh.it/domini/) attivo, che corrisponderà all’indirizzo del tuo sito
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager)
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
@@ -40,7 +40,7 @@ Cloud Web mette a tua disposizione diversi linguaggi di programmazione per conse
 
 I linguaggi di programmazione disponibili sono PHP e Node.js.
 
-Per accedere al programma d’esecuzione del tuo hosting Cloud Web, effettua l’accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca su `Hosting`{.action} nella barra dei servizi a sinistra e scegli il nome del tuo Cloud Web. Infine, posizionati sulla scheda `Programma d’esecuzione`{.action}.
+Per accedere al programma d’esecuzione del tuo hosting Cloud Web, effettua l’accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Hosting`{.action} nella barra dei servizi a sinistra e scegli il nome del tuo Cloud Web. Infine, posizionati sulla scheda `Programma d’esecuzione`{.action}.
 
 Nel momento in cui installi il tuo hosting, un programma viene utilizzato automaticamente e inserito come `Opzione predefinita`. Per modificare il programma d’esecuzione già configurato, clicca sui 3 puntini a destra, poi su `Modifica`{.action}. 
 
@@ -136,7 +136,7 @@ Poiché i progetti possono essere diversi tra loro, non esiste un procedimento u
 
 Una volta installato il tuo progetto sul Cloud Web, hai la possibilità di creare indirizzi email. Se non sei interessato, passa direttamente allo step successivo.
 
-Per creare uno o più indirizzi email, sempre dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca su `Email`{.action} nella barra dei servizi a sinistra, poi scegli il dominio associato al tuo Cloud Web.
+Per creare uno o più indirizzi email, sempre dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Email`{.action} nella barra dei servizi a sinistra, poi scegli il dominio associato al tuo Cloud Web.
 
 Per creare un nuovo indirizzo email, clicca su `Crea un indirizzo email`{.action}, poi segui le indicazioni. In caso di necessità, consulta la nostra guida (in inglese): [Creare un account email con il servizio MX Plan](https://docs.ovh.com/gb/en/emails/hosted_email_how_to_set_up_an_email_address/){.external}.
 
@@ -154,8 +154,8 @@ Esistono diversi record DNS relativi a OVH. Ci concentreremo in particolare su d
 
 |Record DNS|Servizio associato|Dove recuperarlo?|
 |---|---|---|
-|A|Per il sito Internet|Nello [Spazio Clienti OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca su `Hosting`{.action} e seleziona il tuo hosting Cloud Web. L'indirizzo IP viene mostrato in corrispondenza della voce "IPv4" nella scheda `Informazioni generali`{.action}.|
-|MX|Per le email|Nello [Spazio Clienti OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca su `Email`{.action} e seleziona il tuo dominio. L’informazione viene mostrata in corrispondenza della voce "Record MX" nella scheda `Informazioni generali`{.action}.|
+|A|Per il sito Internet|Nello [Spazio Clienti OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Hosting`{.action} e seleziona il tuo hosting Cloud Web. L'indirizzo IP viene mostrato in corrispondenza della voce "IPv4" nella scheda `Informazioni generali`{.action}.|
+|MX|Per le email|Nello [Spazio Clienti OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Email`{.action} e seleziona il tuo dominio. L’informazione viene mostrata in corrispondenza della voce "Record MX" nella scheda `Informazioni generali`{.action}.|
 
 #### 7.2. Verificare e modificare i record DNS
 
@@ -165,14 +165,14 @@ Adesso che conosci i record DNS relativi al tuo Cloud Web e il tuo servizio di p
 >
 > - Se il tuo dominio non utilizza i DNS di OVH, è necessario effettuare la modifica tramite l’interfaccia del provider che gestisce i nameserver del tuo dominio.
 > 
-> - Se il tuo dominio è registrato presso OVH, puoi verificare se utilizza i nostri DNS accedendo allo [Spazio Clienti OVH](https://www.ovh.com/auth/?action=gotomanager){.external} > `Server DNS`{.action} e seleziona il tuo dominio.
+> - Se il tuo dominio è registrato presso OVH, puoi verificare se utilizza i nostri DNS accedendo allo [Spazio Clienti OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} > `Server DNS`{.action} e seleziona il tuo dominio.
 >
 
 Segui le indicazioni sottostanti per sapere dove effettuare le operazioni:
 
 |Configurazione DNS utilizzata|Dove effettuare le operazioni?|
 |---|---|
-|OVH|Nello [Spazio Clienti OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca su `Domini`{.action} e seleziona il tuo dominio. Nella scheda `Zona DNS`{.action} è possibile verificare ed eventualmente modificare le informazioni necessarie. Per maggiore assistenza, puoi consultare la nostra guida (in inglese) [Modificare una zona DNS OVH](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.|
+|OVH|Nello [Spazio Clienti OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Domini`{.action} e seleziona il tuo dominio. Nella scheda `Zona DNS`{.action} è possibile verificare ed eventualmente modificare le informazioni necessarie. Per maggiore assistenza, puoi consultare la nostra guida (in inglese) [Modificare una zona DNS OVH](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.|
 |Altro|Attraverso l’interfaccia del provider che gestisce la configurazione DNS del tuo dominio. Ti suggeriamo inoltre di contattarlo se trovi difficoltà nello svolgere queste operazioni.|
 
 Una volta modificata la configurazione DNS del tuo dominio, la propagazione delle modifiche potrebbe richiedere fino a 24 ore. Se hai aggiunto più domini al tuo hosting Cloud Web come Multisito, è necessario ripetere queste due operazioni per ciascun dominio. 

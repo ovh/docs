@@ -17,7 +17,7 @@ When you install or reinstall a Windows operating system, you are provided with 
 ## Requirements
 
 - a [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) with Windows installed in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 
 ## Instructions
@@ -26,7 +26,7 @@ The following steps describe the process of changing the local admin password by
 
 ### Step 1: Rebooting the server into rescue mode
 
-The system has to be started in rescue mode before the admin password can be changed. Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `Dedicated Servers`{.action}.
+The system has to be started in rescue mode before the admin password can be changed. Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `Dedicated Servers`{.action}.
 
 The netboot needs to be switched to "rescue64-pro (Customer rescue system (Linux))". Look for "Boot" in the **General informations** box and click on `...`{.action}, then on `Modify`{.action}.<br>
 In the popup window, tick **Boot in rescue mode** and select "rescue64-pro" from the menu. Specify an alternative email address below if you do *not* want the login credentials sent to your customer account's primary address.
@@ -216,7 +216,7 @@ Write hive files? (y/n) [n] : y
 
 ### Step 4: Rebooting the server 
 
-First, change the netboot back to **Boot from the hard disk** in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) (see [step 1](./#step-1-rebooting-the-server-into-rescue-mode)).
+First, change the netboot back to **Boot from the hard disk** in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) (see [step 1](./#step-1-rebooting-the-server-into-rescue-mode)).
 
 Back in the CLI, unmount the partition and restart the server with these commands:
 
@@ -232,7 +232,7 @@ The system is going down for reboot NOW!
 
 ### Step 5: Setting a new password (IPMI)
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), navigate to the `IPMI`{.action} tab to open a KVM session.
+In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), navigate to the `IPMI`{.action} tab to open a KVM session.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -273,7 +273,7 @@ It is advisable to use the virtual keyboard when typing passwords in this interf
 
 #### Step 1: Rebooting the server into rescue mode
 
-The system has to be started in rescue mode before the admin password can be changed. Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `Dedicated Servers`{.action}.
+The system has to be started in rescue mode before the admin password can be changed. Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `Dedicated Servers`{.action}.
 
 The netboot needs to be switched to "WinRescue (Rescue System for Windows)". Look for "Boot" in the **General informations** box and click on `...`{.action}, then on `Modify`{.action}. In the popup window, tick **Boot in rescue mode** and select "WinRescue" from the menu. Specify an email address below if the login credentials should *not* be sent to your customer account's primary address. Click on `Next`{.action} and `Confirm`{.action}.
 
@@ -287,7 +287,7 @@ For more information about rescue mode, please refer to [this guide](../ovh-resc
 
 #### Step 2: Clearing the current password
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), navigate to the `IPMI`{.action} tab to open a KVM session.
+In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), navigate to the `IPMI`{.action} tab to open a KVM session.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -307,7 +307,7 @@ After this, the server needs to be rebooted again.
 
 #### Step 3: Rebooting the server 
 
-First, change the netboot back to **Boot from the hard disk** in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) (see [step 1](./#step-1-rebooting-the-server-into-rescue-mode_1)).
+First, change the netboot back to **Boot from the hard disk** in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) (see [step 1](./#step-1-rebooting-the-server-into-rescue-mode_1)).
 
 Back in the KVM window, select the shutdown option `Restart`{.action} via the Windows "Start" button on the bottom left.
 

@@ -18,7 +18,7 @@ When you install or reinstall a distribution or operating system, you are given 
 
 * a [dedicated server](https://www.ovh.lt/dedikuoti_serveriai/){.external}
 * administrative (root) access to the server via SSH
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
 

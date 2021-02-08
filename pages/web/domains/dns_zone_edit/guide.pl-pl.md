@@ -16,15 +16,15 @@ Strefa Domain Name System (DNS) to plik konfiguracyjny domeny. Zawiera on inform
 
 ## Wymagania początkowe
 
-- Dostęp do interfejsu zarządzania domeną w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do interfejsu zarządzania domeną w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - Używanie przez domenę konfiguracji OVH (serwerów DNS OVH) 
 
 > [!warning]
 >
 > - Jeśli Twoja domena nie używa konfiguracji OVH, przeprowadź zmianę w interfejsie dostawcy zarządzającego konfiguracją Twojej domeny. 
 >
-> - Jeśli domena jest zarejestrowana w OVH, możesz sprawdzić, czy używa konfiguracji OVH. Po wybraniu domeny w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, przejdź do zakładki `Serwery DNS`{.action}.
+> - Jeśli domena jest zarejestrowana w OVH, możesz sprawdzić, czy używa konfiguracji OVH. Po wybraniu domeny w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do zakładki `Serwery DNS`{.action}.
 >
 
 ## W praktyce
@@ -46,7 +46,7 @@ Poznanie poszczególnych rekordów będzie pomocne w lepszym zrozumieniu zmian, 
 
 ### Etap 1: dostęp do interfejsu zarządzania strefą DNS
 
-Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Domeny`{.action} na pasku usług po lewej stronie, następnie wybierz domenę. Teraz przejdź do zakładki `Strefa DNS`{.action}.
+Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Domeny`{.action} na pasku usług po lewej stronie, następnie wybierz domenę. Teraz przejdź do zakładki `Strefa DNS`{.action}.
 
 W tabeli, która się wyświetli znajdziesz konfigurację Twojej domeny w OVH. Na konfigurację składają się rekordy DNS, każdy zaznaczony w oddzielnym wierszu tabeli. Możesz sortować zawartość tabeli według typu rekordu lub nazwy domeny. 
 

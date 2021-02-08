@@ -27,7 +27,7 @@ O Intel SGX oferece funcionalidades avançadas de encriptação de segurança pa
 
 ### A partir da Área de Cliente OVHcloud
 
-Ligue-se à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), aceda à secção `Bare Metal Cloud`{.action} e selecione o servidor no qual deseja ativar SGX na secção **Servidores dedicados** do menu à esquerda.
+Ligue-se à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Bare Metal Cloud`{.action} e selecione o servidor no qual deseja ativar SGX na secção **Servidores dedicados** do menu à esquerda.
 
 #### Ativação da opção
 

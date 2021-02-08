@@ -24,7 +24,7 @@ To protect its global infrastructure and its customers’ servers, OVH offers a 
 ## Requirements
 
 - an OVH service with a Network Firewall ([Dedicated Server](https://www.ovh.co.uk/dedicated_servers){.external}, [VPS](https://www.ovh.co.uk/vps/){.external}, [Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.co.uk/private-cloud/){.external},  [Failover IP](https://www.ovh.co.uk/dedicated_servers/ip_failover.xml){.external}, etc.)
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 
 ## Instructions
@@ -36,7 +36,7 @@ To protect its global infrastructure and its customers’ servers, OVH offers a 
 > The Network Firewall protects the IPs that are associated with a server. As a result, you need to configure each IP separately. You cannot configure the server as a whole.
 > 
 
-Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `IP`{.action} section, and click on `...`{.action} to activate the firewall on an IPv4.
+Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, go to the `IP`{.action} section, and click on `...`{.action} to activate the firewall on an IPv4.
 
 ![Enabling the Firewall Network](images/firewall_creation.png){.thumbnail}
 

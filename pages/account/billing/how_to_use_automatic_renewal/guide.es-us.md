@@ -16,13 +16,13 @@ Tiene la posibilidad de administrar la renovación y la baja de sus servicios en
 
 > [!primary]
 >
-> Tenga en cuenta que —en función de su lugar de residencia y de la legislación vigente, así como de los servicios contratados— es posible que algunas secciones de esta guía sean diferentes o no se apliquen a su caso particular. En caso de duda, consulte sus contratos suscritos con OVHcloud, a los que puede acceder en el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager){.external}. Para ello, acceda a `«Mis servicios»`{.action} y, seguidamente, a `Mis contratos`{.action}.
+> Tenga en cuenta que —en función de su lugar de residencia y de la legislación vigente, así como de los servicios contratados— es posible que algunas secciones de esta guía sean diferentes o no se apliquen a su caso particular. En caso de duda, consulte sus contratos suscritos con OVHcloud, a los que puede acceder en el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para ello, acceda a `«Mis servicios»`{.action} y, seguidamente, a `Mis contratos`{.action}.
 >
 
 
 ## Requisitos
 
-- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 - Tener servicios de OVHcloud activos.
 - Ser el contacto de facturación de sus servicios OVHcloud
 
@@ -42,7 +42,7 @@ Le recomendamos que lea las guías siguientes, centrándose particularmente en l
 
 ### Acceder a la configuración de los servicios
 
-Tras haber iniciado sesión en el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `Productos y servicios`{.action}.
+Tras haber iniciado sesión en el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `Productos y servicios`{.action}.
 
 ![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 

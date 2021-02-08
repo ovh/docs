@@ -18,7 +18,7 @@ Usługi Hosted Exchange i Private Exchange umożliwiają elastyczne zarządzenie
 
 ## Wymagania początkowe
 
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Wykupienie usługi [Exchange](https://www.ovh.pl/emaile/hosted-exchange/){.external}.
 
 ## W praktyce
@@ -27,7 +27,7 @@ Usługi Hosted Exchange i Private Exchange umożliwiają elastyczne zarządzenie
 
 #### Zamówienie dodatkowych kont
 
-Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i przejdź do sekcji „Web”. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
+Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji „Web”. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
 
 Przejdź do karty `Konta e-mail`{.action}, następnie kliknij przycisk `Akcje`{.action}w lewym górnym rogu i wybierz opcję `Zamów konta`{.action}
 
@@ -36,7 +36,7 @@ Przejdź do karty `Konta e-mail`{.action}, następnie kliknij przycisk `Akcje`{.
 
 #### Zmiana częstotliwości odnawiania usługi dla Twoich kont
 
-Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i przejdź do sekcji „Web”. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
+Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji „Web”. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
 
 W oknie zarządzania Twoją usługą Exchange kliknij przycisk `Akcje`{.action} w prawym górnym rogu, a następnie wybierz opcję `Konfiguracja odnawiania usługi`{.action}. 
 
@@ -64,7 +64,7 @@ Aby usunąć konto z usługi Hosted, należy najpierw zrezygnować z niego, prze
 
 Po rezygnacji konto będzie zawieszone do daty wygaśnięcia. Jeśli chcesz usunąć adres e-mail obsługiwany na koncie przed jego datą wygaśnięcia, należy go zresetować.
 
-W tym celu zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i przejdź do sekcji „Web”. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
+W tym celu zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji „Web”. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
 
 Przejdź do karty `Konta e-mail`{.action} Twojej usługi, kliknij przycisk `...`{.action} przed danym kontem, a następnie kliknij `Zresetuj`{.action}. Po zresetowaniu konto pozostanie nieaktywne do czasu wygaśnięcia.
 
@@ -76,7 +76,7 @@ Przejdź do karty `Konta e-mail`{.action} Twojej usługi, kliknij przycisk `...`
 
 #### Zamówienie dodatkowych kont
 
-Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i przejdź do sekcji „Web”. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
+Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji „Web”. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
 
 Przejdź do karty `Konta e-mail`{.action}, następnie kliknij przycisk `Akcje`{.action} w lewym górnym rogu i wybierz opcję `Dodaj konto`{.action}. Konto zostanie zafakturowane za bieżący miesiąc.
 
@@ -85,7 +85,7 @@ Przejdź do karty `Konta e-mail`{.action}, następnie kliknij przycisk `Akcje`{.
 
 #### Usuwanie kont
 
-Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i przejdź do sekcji „Web”. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
+Zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji „Web”. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, następnie `Exchange`{.action}, po czym wybierz odpowiednią usługę Exchange.
 
 W karcie `Konta e-mail`{.action} kliknij `...`{.action} z prawej strony danego konta i wybierz `Usuń`{.action}. Konto zostanie natychmiastowo usunięte z usługi, nie ma więc potrzeby przeprowadzenia procesu rezygnacji.
 

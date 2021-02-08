@@ -23,7 +23,7 @@ Licence Office 365 může být požívána na pěti PC/Mac zařízeních, pěti 
 
 ### Přístup ke správě služby Office 365 Reseller
 
-Službu Office 365 můžete spravovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Službu Office 365 můžete spravovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 Rozhraní pro správu služby Office 365 naleznete v sekci `Sunrise`{.action}. V levém postranním panelu klikněte na tlačítko `Office 365 Reseller`{.action} a vyberte požadovanou službu.
 

@@ -16,7 +16,7 @@ Voor een optimale beveiliging van uw systeem raden we aan de toegang ertoe te be
 
 ## Vereisten
 
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 
 ## Instructies
 
@@ -24,14 +24,14 @@ Voor een optimale beveiliging van uw systeem raden we aan de toegang ertoe te be
 
 Deze eerste methode betreft het beperken van toegang per IP-adres. We raden aan te blijven werken met een registratiesysteem dat gebruikmaakt van whitelisting. Deze techniek weigert standaard toegang voor alle IP-adressen. U kunt vervolgens handmatig de IP's toevoegen die toegang tot uw infrastructuur vereisen.
 
-U kunt dit rechtstreeks vanaf uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} doen. Ga naar uw Private Cloud-gedeelte en vervolgens naar  `Beveiliging`{.action}. In dit gedeelte ziet u een tabel met alle geautoriseerde of geweigerde IP-adressen. Als u nieuwe wilt toevoegen, klikt u op `IP-adressen toevoegen`{.action} aan de rechterkant:
+U kunt dit rechtstreeks vanaf uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} doen. Ga naar uw Private Cloud-gedeelte en vervolgens naar  `Beveiliging`{.action}. In dit gedeelte ziet u een tabel met alle geautoriseerde of geweigerde IP-adressen. Als u nieuwe wilt toevoegen, klikt u op `IP-adressen toevoegen`{.action} aan de rechterkant:
 
 ![IP toevoegen](images/adding_ip.png){.thumbnail}
 
 
 ### Maak specifieke gebruikers aan
 
-We raden ten zeerste aan persoonlijke accounts te maken voor elke gebruiker die toegang tot uw infrastructuur nodig heeft. U kunt dit ook doen in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, maar deze keer moet u naar het tabblad `Gebruikers`{.action} gaan. Om nieuwe gebruikers toe te voegen, klikt u op de knop aan de rechterkant: Maak een gebruiker aan
+We raden ten zeerste aan persoonlijke accounts te maken voor elke gebruiker die toegang tot uw infrastructuur nodig heeft. U kunt dit ook doen in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, maar deze keer moet u naar het tabblad `Gebruikers`{.action} gaan. Om nieuwe gebruikers toe te voegen, klikt u op de knop aan de rechterkant: Maak een gebruiker aan
 
 ![Gebruikers](images/users.png){.thumbnail}
 
@@ -60,7 +60,7 @@ U kunt vervolgens de rechten van elke gebruiker beheren door op het tandwielpict
 
 Wanneer gebruikers een sessie beëindigen, raden wij aan de sessie dienovereenkomstig te sluiten. Om de verbindingstijd te beperken, kunt u een vervaltijd instellen voor de sessie.
 
-Ga hiervoor naar uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Ga naar uw Private Cloud-gedeelte en vervolgens naar  `Beveiliging`{.action}. Klik vervolgens op de knop `De vervaldatum wijzigen`{.action} aan de rechterkant van het scherm. In het volgende venster kunt u de tijd (in minuten) kiezen voordat een sessie verloopt.
+Ga hiervoor naar uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Ga naar uw Private Cloud-gedeelte en vervolgens naar  `Beveiliging`{.action}. Klik vervolgens op de knop `De vervaldatum wijzigen`{.action} aan de rechterkant van het scherm. In het volgende venster kunt u de tijd (in minuten) kiezen voordat een sessie verloopt.
 
 ![Vervaldatum van de sessie](images/expiration.png){.thumbnail}
 

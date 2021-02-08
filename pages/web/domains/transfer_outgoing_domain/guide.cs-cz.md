@@ -18,7 +18,7 @@ Doménu registrovanou u společnosti OVH je možné převést k jinému doménov
 ## Prerekvizity
 - Doména registrovaná u společnosti OVH.
 - Dostatečná oprávnění k převodu domény. Vlastník domény a/nebo její administrátoři musejí být s požadavkem na převod obeznámeni.
-- Dostatečná oprávnění ke správě domény prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostatečná oprávnění ke správě domény prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - Doména musí být starší 61 dnů. Na doméně nesmí být za posledních 61 dnů provedena změna vlastníka. Doména nesmí být v daném období převáděna.
 
 > [!primary]

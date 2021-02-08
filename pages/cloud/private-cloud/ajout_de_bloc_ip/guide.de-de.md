@@ -16,7 +16,7 @@ IP-Blöcke können verwendet werden, um Ihre Dienste über das Internet zugängl
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) eingeloggt.
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
 - Sie verfügen über eine [Hosted Private Cloud Infrastruktur](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) in Ihrem OVHcloud Account.
 
 ## In der praktischen Anwendung
@@ -101,7 +101,7 @@ Verwenden Sie anschließend diesen API-Aufruf, um die IP in den IP-Parkplatz zu 
 > Dieser Aufruf trennt das Netzwerk auf den VMs, die die betreffenden IPs verwenden.
 >
 
-Sie können die Migration Ihres IP-Blocks über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) im Bereich `Hosted Private Cloud`{.action} unter `Private Cloud`{.action} nachverfolgen. Klicken Sie auf Ihren Hosted Private Cloud Dienst und dann auf den Tab `Operationen`{.action}.
+Sie können die Migration Ihres IP-Blocks über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Bereich `Hosted Private Cloud`{.action} unter `Private Cloud`{.action} nachverfolgen. Klicken Sie auf Ihren Hosted Private Cloud Dienst und dann auf den Tab `Operationen`{.action}.
 
 Die Referenz der Operation lautet „removeIpRipeBlock“.
 

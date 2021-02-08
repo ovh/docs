@@ -90,7 +90,7 @@ Będziesz mógł rozszerzyć Twoje zamówienie, dodając [usługę hostingu](htt
 > - **wyboru serwerów DNS domeny**: jeśli Twoja domena jest aktualnie używana przez stronę WWW lub konta e-mail, wskaż odpowiednie serwery DNS, aby zapobiec przerwie w ciągłości usług.
 >
 
-Kiedy zamówienie zostanie wygenerowane, ureguluj należność, aby rozpocząć transfer. Procedura zostanie uruchomiona wyłącznie po wpłynięciu płatności. Od tego momentu będziesz mógł śledzić transfer w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Domeny`{.action} dostępna na pasku usług po lewej stronie > `Operacje w toku`{.action}. 
+Kiedy zamówienie zostanie wygenerowane, ureguluj należność, aby rozpocząć transfer. Procedura zostanie uruchomiona wyłącznie po wpłynięciu płatności. Od tego momentu będziesz mógł śledzić transfer w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Domeny`{.action} dostępna na pasku usług po lewej stronie > `Operacje w toku`{.action}. 
 
 ### Etap 4: realizacja pierwszego etapu zatwierdzania transferu
 
@@ -114,7 +114,7 @@ Możliwych jest kilka scenariuszy w zależności od działań podjętych przez w
 |Brak odpowiedzi na obydwie prośby o zatwierdzenie transferu|Transfer przechodzi do drugiego etapu zatwierdzenia po pięciu dniach.|
 |Odmowa (właściciela lub administratora)|Transfer jest anulowany z chwilą otrzymania powiadomienia o odmowie przesłanego przez właściciela lub administratora.|
 
-W przypadku anulowania transferu upewnij się, że wszystkie strony są zgodne co do anulowania, i że ich adresy e-mail są aktualne. Proces może zostać ponownie uruchomiony w późniejszym czasie w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Domeny`{.action} > `Operacje w toku`{.action}.
+W przypadku anulowania transferu upewnij się, że wszystkie strony są zgodne co do anulowania, i że ich adresy e-mail są aktualne. Proces może zostać ponownie uruchomiony w późniejszym czasie w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Domeny`{.action} > `Operacje w toku`{.action}.
 
 ### Etap 5: realizacja drugiego etapu zatwierdzania transferu
 
@@ -126,12 +126,12 @@ Po uruchomieniu drugiego etapu aktualny operator (którym nie jest jeszcze OVH) 
 |Brak odpowiedzi od aktualnego operatora|Transfer zostaje zrealizowany po pięciu dniach.|
 |Odmowa aktualnego operatora domeny|Transfer zostaje anulowany po otrzymaniu powiadomienia o odmowie.|
 
-W przypadku odmowy transferu ze strony aktualnego operatora zachęcamy do kontaktu z nim w celu ustalenia przyczyny. Proces może zostać ponownie uruchomiony w późniejszym czasie w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Domeny`{.action} > `Operacje w toku`{.action}.
+W przypadku odmowy transferu ze strony aktualnego operatora zachęcamy do kontaktu z nim w celu ustalenia przyczyny. Proces może zostać ponownie uruchomiony w późniejszym czasie w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Domeny`{.action} > `Operacje w toku`{.action}.
 
 ### Etap 6: zarządzanie domeną w OVH
 
-Po zakończeniu operacji transferu możesz zarządzać domeną w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. 
-W tym celu kliknij w [Domeny](https://www.ovh.com/auth/?action=gotomanager){.external} na pasku usług po lewej stronie w `Panelu klienta`{.action}, następnie w nazwę wybranej domeny.
+Po zakończeniu operacji transferu możesz zarządzać domeną w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. 
+W tym celu kliknij w [Domeny](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} na pasku usług po lewej stronie w `Panelu klienta`{.action}, następnie w nazwę wybranej domeny.
 
 ## Sprawdź również
 

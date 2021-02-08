@@ -15,12 +15,12 @@ L’elaborazione completa degli ordini effettuati in OVHcloud include diversi st
 
 > [!primary]
 >
-> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. In caso di difficoltà o dubbi consulta i contratti disponibili nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Prodotti e servizi`{.action} > `Contratti`{.action}.
+> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. In caso di difficoltà o dubbi consulta i contratti disponibili nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Prodotti e servizi`{.action} > `Contratti`{.action}.
 >
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Aver effettuato almeno un ordine in OVHcloud
 
 
@@ -40,12 +40,12 @@ Il buono d’ordine viene generato nel momento in cui si effettua l’ordine. Co
 |4|In questa sezione vengono mostrati i metodi di pagamento accettati nel Paese di origine dell’account o quelli associati al tipo di account registrato.|
 
 
-È possibile recuperare il buono d’ordine in qualsiasi momento direttamente nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, come spiegato nel paragrafo successivo.
+È possibile recuperare il buono d’ordine in qualsiasi momento direttamente nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, come spiegato nel paragrafo successivo.
 
 
 ### Visualizza i tuoi ordini nello Spazio Cliente OVHcloud
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul `Dashboard` utente in alto a sinistra e seleziona `Visualizza i tuoi ordini`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul `Dashboard` utente in alto a sinistra e seleziona `Visualizza i tuoi ordini`{.action}.
 
 ![Spazio Cliente OVH](images/huborders.png){.thumbnail}
 
@@ -77,7 +77,7 @@ Se lo stato è “Consegna in corso” o “Pagamento non ricevuto”, l’ordin
 
 ### Gestione degli ordini
 
-Dopo aver generato il buono d’ordine, è possibile verificare lo stato dell’ordine dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Per farlo, clicca sul tuo nome utente, seleziona `I tuoi ordini`{.action} e infine clicca sui tre puntini`...`{.action} in corrispondenza dell’ordine in questione. Seleziona `Gestione degli ordini`{.action}. Inoltre è possibile verificare lo stato dell’ordine dal menu “Stato”.
+Dopo aver generato il buono d’ordine, è possibile verificare lo stato dell’ordine dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Per farlo, clicca sul tuo nome utente, seleziona `I tuoi ordini`{.action} e infine clicca sui tre puntini`...`{.action} in corrispondenza dell’ordine in questione. Seleziona `Gestione degli ordini`{.action}. Inoltre è possibile verificare lo stato dell’ordine dal menu “Stato”.
 
 ![Gestione degli ordini](images/order05b.png){.thumbnail}
 

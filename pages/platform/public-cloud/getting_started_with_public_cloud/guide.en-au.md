@@ -17,13 +17,13 @@ hidden: true
 
 ## Requirements
 
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
 
 ## Instructions
 
 ### Create a project
 
-Log into to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Once you're logged in, click on the `Cloud`{.action} menu.
+Log into to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}. Once you're logged in, click on the `Cloud`{.action} menu.
 
 ![cloud menu](images/menu.png){.thumbnail}
 

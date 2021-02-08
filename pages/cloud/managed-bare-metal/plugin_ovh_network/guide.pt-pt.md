@@ -19,7 +19,7 @@ O plugin OVHcloud Network foi concebido para permitir uma gestão mais orientada
 ## Requisitos
 
 - Dispor de uma oferta [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Um bloco de endereços IP associado ao seu Managed Bare Metal.
 - Aceder à interface vSphere.
 
@@ -54,7 +54,7 @@ O novo “reverse” será então apresentado na tabela.
 
 > [!primary]
 >
-> Este processo de configuração também é acessível na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). 
+> Este processo de configuração também é acessível na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). 
 > 
 
 ## Quer saber mais?

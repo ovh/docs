@@ -13,7 +13,7 @@ Le nouveau service OVH Load Balancer offre différents types de répartition de 
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager).
+- Être connecté à l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Posséder une ferme de serveurs créée.
 
 

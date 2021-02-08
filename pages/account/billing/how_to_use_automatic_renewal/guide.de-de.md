@@ -17,13 +17,13 @@ Sie können die Verlängerung und die Kündigung Ihrer Dienste in Ihrem OVHcloud
 
 > [!primary]
 >
-> In Abhängigkeit von ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVHcloud Verträge, die Sie jederzeit in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager) im Bereich „Meine Dienste“ unter `Verträge`{.action} einsehen können.
+> In Abhängigkeit von ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVHcloud Verträge, die Sie jederzeit in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Bereich „Meine Dienste“ unter `Verträge`{.action} einsehen können.
 >
 
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben aktive OVHcloud Dienstleistungen.
 - Sie sind der Rechnungskontakt Ihrer OVHcloud Dienstleistungen.
 
@@ -43,7 +43,7 @@ Sie können entsprechend der gewünschten Aktion direkt zu den passenden Hilfen 
 
 ### Übersicht "Meine Dienste" aufrufen
 
-Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) angemeldet sind, klicken Sie oben rechts auf den zu Ihrer Kundenkennung gehörigen Namen und wählen Sie dann `Produkte und Dienstleistungen`{.action} aus.
+Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angemeldet sind, klicken Sie oben rechts auf den zu Ihrer Kundenkennung gehörigen Namen und wählen Sie dann `Produkte und Dienstleistungen`{.action} aus.
 
 ![manageautomaticrenewal](images/hubservices.png){.thumbnail}
 

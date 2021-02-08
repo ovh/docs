@@ -19,13 +19,13 @@ E-mailové adresy MX Plan dovolují odesílat a přijímat zprávy prostřednict
 
 - Služba MX Plan (jako samostatné řešení nebo jako součást [webhostingového balíčku OVH](https://www.ovh.cz/webhosting/){.external}).
 - Možnost vytvářet e-mailové adresy v rámci dané služby.
-- Dostatečná oprávnění k provádění úprav v konfiguraci služby prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostatečná oprávnění k provádění úprav v konfiguraci služby prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Postup
 
 ### Fáze 1: přístup do rozhraní pro správu služby
 
-Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. V levém postranním panelu rozbalte položku `E-maily`{.action} a vyberte doménu, na níž je daná služba MX Plan vytvořena. Poté přejděte do záložky `E-maily`{.action}.
+Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. V levém postranním panelu rozbalte položku `E-maily`{.action} a vyberte doménu, na níž je daná služba MX Plan vytvořena. Poté přejděte do záložky `E-maily`{.action}.
 
 Tabulka obsahuje přehled všech e-mailových adres vytvořených v rámci služby MX Plan na dané doméně.
 

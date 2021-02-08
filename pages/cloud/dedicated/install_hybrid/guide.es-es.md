@@ -24,7 +24,7 @@ OVH le ofrece la posibilidad de contratar [servidores dedicados](https://www.ovh
 
 * Tener un [servidor híbrido de OVH](https://www.ovh.es/servidores_dedicados/){.external}.
 * Tener acceso a la [API de OVH](https://api.ovh.com/console/){.external}.
-* Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 > [!warning]
 >
@@ -89,7 +89,7 @@ Los otros campos son opcionales. Cumplimente los que desee y haga clic en el bot
 
 ![Instalación](images/install-01.png){.thumbnail}
 
-El sistema operativo se instalará. Puede consultar el progreso de la operación actualizando la página del servidor en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} o con la siguiente llamada a la API, introduciendo el nombre del servidor en el campo **serviceName** y haciendo clic en el botón `Execute`{.action}:
+El sistema operativo se instalará. Puede consultar el progreso de la operación actualizando la página del servidor en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o con la siguiente llamada a la API, introduciendo el nombre del servidor en el campo **serviceName** y haciendo clic en el botón `Execute`{.action}:
 
 > [!api]
 >

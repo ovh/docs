@@ -18,10 +18,10 @@ La maggior parte delle volte, i problemi di invio e ricezione delle email sono d
 
 Dopo aver inviato un’email sul tuo account email, ricevi un messaggio di errore? Se sì, ritrova il messaggio d’errore, che potrebbe indicarne il motivo (casella piena, casella non esistente, ecc.).
 
-Puoi anche verificare che il tuo dominio consegni le e-mail al posto giusto. Per farlo, accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona la zona DNS del tuo dominio e consulta i record MX applicati. Questi record devono essere in questo formato “mx\*.mail.ovh.net.” (sostituisci l’asterisco * con una cifra tra 0 e 3).
+Puoi anche verificare che il tuo dominio consegni le e-mail al posto giusto. Per farlo, accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona la zona DNS del tuo dominio e consulta i record MX applicati. Questi record devono essere in questo formato “mx\*.mail.ovh.net.” (sostituisci l’asterisco * con una cifra tra 0 e 3).
 Se i record MX sono diversi, è possibile che tu disponga di un servizio di posta elettronica di un operatore diverso da OVHcloud.
 
-**Consigli e suggerimenti**: Se non riesci ad accedere alla tua Webmail, è probabile che la tua password sia errata. Verifica la tua password e, se necessario, modificala dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} prima di effettuare nuovamente il login. Per questa procedura, consulta la [nostra guida](../modificare-password-account-email-mxplan/).
+**Consigli e suggerimenti**: Se non riesci ad accedere alla tua Webmail, è probabile che la tua password sia errata. Verifica la tua password e, se necessario, modificala dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} prima di effettuare nuovamente il login. Per questa procedura, consulta la [nostra guida](../modificare-password-account-email-mxplan/).
 
 ### Come configurare il tuo indirizzo email e utilizzarlo con la Webmail? 
 
@@ -34,9 +34,9 @@ Attraverso la [Webmail](https://www.ovh.com/it/mail/){.external} è possibile ac
 
 ### Come gestire i servizi di posta? 
 
-Tutti gli indirizzi email possono essere gestiti dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Una volta effettuato l’accesso, seleziona il servizio in questione. A questo punto è possibile modificare la password associata agli account di posta elettronica, verificare la percentuale di spazio utilizzato, creare nuovi indirizzi email o eliminare quelli esistenti. 
+Tutti gli indirizzi email possono essere gestiti dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Una volta effettuato l’accesso, seleziona il servizio in questione. A questo punto è possibile modificare la password associata agli account di posta elettronica, verificare la percentuale di spazio utilizzato, creare nuovi indirizzi email o eliminare quelli esistenti. 
 
-**Suggerimenti**: le soluzioni email MX Plan consentono di delegare a un altro account OVHcloud la gestione di uno o più account di posta, continuando a mantenerne il controllo. Per effettuare questa operazione è sufficiente configurare una delega dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}: accedi alla sezione `Email` nella colonna a sinistra e seleziona il dominio in questione, poi clicca sulla scheda `Email` e scegli una di queste opzioni:
+**Suggerimenti**: le soluzioni email MX Plan consentono di delegare a un altro account OVHcloud la gestione di uno o più account di posta, continuando a mantenerne il controllo. Per effettuare questa operazione è sufficiente configurare una delega dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}: accedi alla sezione `Email` nella colonna a sinistra e seleziona il dominio in questione, poi clicca sulla scheda `Email` e scegli una di queste opzioni:
 
 - `Gestisci autorizzazioni`{.action}, nella parte destra dell’interfaccia, per delegare la gestione di tutti gli account di questo dominio
 - `Gestisci la delega`{.action}, per delegare la gestione di un account specifico (clicca sul pulsante `...`{.action} in corrispondenza dell’account)  
@@ -46,11 +46,11 @@ Ti ricordiamo che in entrambi i casi è necessario inserire l’identificativo c
 ### Come limitare la ricezione di spam?  
 
 Per limitare la ricezione di SPAM, è possibile impostare filtri sulle email (chiamati “Filtri” nella soluzione MX Plan), per eliminare o spostare email nella cartella “posta indesiderata” fin dal loro arrivo.
-Per farlo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Email` e seleziona il tuo dominio. Clicca sulla scheda `Email`{.action} e, nella colonna `Filtro`{.action}, clicca sul pulsante di azione.
+Per farlo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Email` e seleziona il tuo dominio. Clicca sulla scheda `Email`{.action} e, nella colonna `Filtro`{.action}, clicca sul pulsante di azione.
 
 Se nello Spazio Cliente non è presente la colonna `Filtro`{.action}, è necessario creare i filtri seguendo le regole di gestione della posta in arrivo di [ Webmail](https://www.ovh.com/it/mail/){.external}. Per maggiori dettagli, consulta questa guida: [Regole della posta in arrivo dall’interfaccia OWA](../../microsoft-collaborative-solutions/creare-regole-posta-in-arrivo-in-owa/).
 
-**Consigli e suggerimenti**: Se imposti un filtro sulla ricezione di SPAM, è probabile che alcune email legittime vengano considerate come SPAM. Queste email vengono chiamate “falsi positivi”. In tal caso, ti invitiamo a creare una richiesta di assistenza dal tuo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external} per informarci. In questo modo potremo fare il necessario per fare in modo che queste email non vengano considerate come SPAM anche in futuro. 
+**Consigli e suggerimenti**: Se imposti un filtro sulla ricezione di SPAM, è probabile che alcune email legittime vengano considerate come SPAM. Queste email vengono chiamate “falsi positivi”. In tal caso, ti invitiamo a creare una richiesta di assistenza dal tuo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} per informarci. In questo modo potremo fare il necessario per fare in modo che queste email non vengano considerate come SPAM anche in futuro. 
 
 ### La soluzione 365 Pro Plus include una licenza Skype?  
 

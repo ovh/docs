@@ -22,12 +22,12 @@ If you need to configure a failover IP address on your instances because:
 
 ## Requirements
 
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}
 * a [failover IP address](https://www.ovhcloud.com/en-sg/bare-metal/ip/){.external}
 
 ## Instructions
 
-Firstly, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click the `Publlic Cloud{.action} menu. Then click the Right Arrow side-menu to expand your list of projects.
+Firstly, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external} and click the `Publlic Cloud{.action} menu. Then click the Right Arrow side-menu to expand your list of projects.
 
 When you've found your project in the list, click it and then select the `Failover IP`{.action} tab.
 

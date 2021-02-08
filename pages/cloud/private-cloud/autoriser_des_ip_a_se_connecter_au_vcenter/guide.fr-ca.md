@@ -17,14 +17,14 @@ Il est possible de restreindre l'accès au vCenter en autorisant uniquement cert
 
 ## Prérequis
 
-* Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+* Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 * Posséder une [infrastructure Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/){.external} sur votre compte OVHcloud.
 
 ## En pratique
 
 Lorsque [la politique d'accès au vCenter est restreinte](../changer-la-politique-d-acces-au-vcenter/), il est nécessaire d'ajouter les IPs qui seront autorisées à se connecter au service.
 
-L'opération se réalise dans [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external-link}. Dans la section `Hosted Private Cloud`, cliquez sur la rubrique `Private Cloud`. Sélectionnez l'infrastructure puis rendez-vous dans l'onglet `Sécurité` et enfin cliquez sur `Ajouter une nouvelle plage d'adresses IP`{.action}.
+L'opération se réalise dans [l'espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external-link}. Dans la section `Hosted Private Cloud`, cliquez sur la rubrique `Private Cloud`. Sélectionnez l'infrastructure puis rendez-vous dans l'onglet `Sécurité` et enfin cliquez sur `Ajouter une nouvelle plage d'adresses IP`{.action}.
 
 ![vCenter](images/restrictIP.JPG){.thumbnail}
 

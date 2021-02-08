@@ -17,13 +17,13 @@ Lorsque vous installez ou réinstallez un système d'exploitation Windows, tous 
 ## Prérequis
 
 * Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external} avec Windows installé.
-* Être connecté à l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+* Être connecté à l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
 
 ### Utilisation de l'IPMI
 
-Pour commencer, connectez-vous à la page de votre serveur dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Ensuite, sélectionnez l'onglet "IPMI"{.action}.
+Pour commencer, connectez-vous à la page de votre serveur dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Ensuite, sélectionnez l'onglet "IPMI"{.action}.
 
 > [!primary]
 >
@@ -46,7 +46,7 @@ Votre mot de passe a été modifié. Vous pouvez à nouveau accéder au serveur 
 
 ### Utilisation du mode rescue
 
-Pour démarrer, démarrez votre serveur en [mode rescue](../ovh-rescue/){.external} en utilisant l'environnement d'initialisation WinRescue. Une fois le serveur redémarré, connectez-vous à l'aide d'une visionneuse VNC ou sélectionnez l'onglet "IPMI"{.action} sur la page de votre serveur dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Pour démarrer, démarrez votre serveur en [mode rescue](../ovh-rescue/){.external} en utilisant l'environnement d'initialisation WinRescue. Une fois le serveur redémarré, connectez-vous à l'aide d'une visionneuse VNC ou sélectionnez l'onglet "IPMI"{.action} sur la page de votre serveur dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 Ensuite, ouvrez l'outil NTPWdi. S'il n'y apparaît pas, vous pouvez télécharger une copie [ici](http://cdslow.org.ru/files/ntpwedit/ntpwed07.zip){.external}
 

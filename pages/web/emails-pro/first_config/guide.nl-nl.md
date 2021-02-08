@@ -19,13 +19,13 @@ U hebt onlangs de oplossing E-mail Pro aangeschaft. Hiermee kunt u profiteren va
 - U moet beschikken over [E-mail Pro](https://www.ovh.nl/emails/email-pro/){.external}.
 - U moet een e-mail hebben ontvangen met daarin de bevestiging dat uw E-mail Pro is geïnstalleerd.
 - U moet beschikken over een domeinnaam. 
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 ## Instructie
 
 ### Stap 1: Ga naar het beheer van uw dienst
 
-Nadat uw E-mail Pro is aangemaakt en beschikbaar is, kunt u deze beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Nadat uw E-mail Pro is aangemaakt en beschikbaar is, kunt u deze beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 Log hiervoor in op uw Control Panel, klik op `E-mail Pro`{.action} in de dienstenbalk aan de linkerkant, en kies vervolgens de naam van de betreffende dienst.
 

@@ -24,7 +24,7 @@ Może zaistnieć konieczność zmiany hasła root do systemu operacyjnego Linux.
 
 - Posiadanie [serwera VPS OVHcloud](https://www.ovhcloud.com/pl/vps/){.external} już skonfigurowanego
 - Posiadanie danych do logowania otrzymanych e-mailem po instalacji (jeśli są one nadal prawidłowe)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} (aby korzystać z trybu Rescue)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} (aby korzystać z trybu Rescue)
 
 > [!warning]
 >
@@ -69,7 +69,7 @@ Jeśli chcesz zezwolić na logowanie jako użytkownik root, postępuj zgodnie z 
 
 #### Etap 1: Zrestartuj serwer VPS do trybu Rescue.
 
-Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i zrestartuj serwer VPS w trybie Rescue. Jeśli potrzebujesz dodatkowych instrukcji dotyczących trybu Rescue na serwerze VPS, zapoznaj się z [przewodnikiem dotyczącym trybu Rescue](../rescue/).
+Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i zrestartuj serwer VPS w trybie Rescue. Jeśli potrzebujesz dodatkowych instrukcji dotyczących trybu Rescue na serwerze VPS, zapoznaj się z [przewodnikiem dotyczącym trybu Rescue](../rescue/).
 
 #### Etap 2: Sprawdzenie punktu montowania
 
@@ -143,7 +143,7 @@ passwd: password updated successfully
 
 Po restarcie będziesz mógł ponownie zalogować się z tą nazwą użytkownika, jeśli połączenie root zostanie wyłączone.
 
-Następnie zrestartuj Twój VPS z dysku w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+Następnie zrestartuj Twój VPS z dysku w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 
 ### Włącz hasło root

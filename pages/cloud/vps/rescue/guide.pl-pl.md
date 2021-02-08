@@ -34,7 +34,7 @@ Wykonanie weryfikacji w trybie Rescue pomoże Ci również ustalić, czy problem
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Posiadanie [serwera VPS OVHcloud](https://www.ovhcloud.com/pl/vps/){.external} już skonfigurowanego
 
 > [!warning]
@@ -46,7 +46,7 @@ Wykonanie weryfikacji w trybie Rescue pomoże Ci również ustalić, czy problem
 
 ### Aktywacja trybu Rescue
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer z listy nawigacyjnej po lewej stronie, na `serwerze VPS`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer z listy nawigacyjnej po lewej stronie, na `serwerze VPS`{.action}.
 
 #### W ofercie VPS
 
@@ -70,10 +70,10 @@ Po uruchomieniu restartu pasek postępu wskazuje postęp zadania. Może to potrw
 
 > [!primary]
 >
-> Otrzymasz automatyczny e-mail z danymi do logowania przez SSH, aby uzyskać dostęp do trybu Rescue. Zaczekaj na otrzymanie e-maila przed podjęciem jakichkolwiek dalszych kroków. E-mail ten jest również dostępny w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Aby odnaleźć Twoje konto, kliknij nazwę powiązaną z Twoim identyfikatorem OVHcloud na pasku menu w prawym górnym rogu i wybierz pozycję `E-maile usługi`{.action}.
+> Otrzymasz automatyczny e-mail z danymi do logowania przez SSH, aby uzyskać dostęp do trybu Rescue. Zaczekaj na otrzymanie e-maila przed podjęciem jakichkolwiek dalszych kroków. E-mail ten jest również dostępny w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Aby odnaleźć Twoje konto, kliknij nazwę powiązaną z Twoim identyfikatorem OVHcloud na pasku menu w prawym górnym rogu i wybierz pozycję `E-maile usługi`{.action}.
 >
 
-Możesz teraz zalogować się przez SSH do Twojego VPS, używając informacji dotyczących trybu Rescue. Po zakończeniu operacji w trybie Rescue uruchom ponownie serwer VPS w trybie "normalnym" w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+Możesz teraz zalogować się przez SSH do Twojego VPS, używając informacji dotyczących trybu Rescue. Po zakończeniu operacji w trybie Rescue uruchom ponownie serwer VPS w trybie "normalnym" w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## Sprawdź również
 

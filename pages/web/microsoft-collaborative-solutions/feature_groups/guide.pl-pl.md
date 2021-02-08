@@ -18,7 +18,7 @@ Grupy w programie Exchange umożliwiają komunikację wielu uczestników naraz p
 
 ## Wymagania początkowe
 
-- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - skonfigurowane [rozwiązanie OVHcloud Exchange](https://www.ovh.pl/emaile/hosted-exchange/)
 
 
@@ -26,7 +26,7 @@ Grupy w programie Exchange umożliwiają komunikację wielu uczestników naraz p
 
 ### Krok 1: utworzenie nowej grupy
 
-Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), przejdź do sekcji „Web” i wybierz usługę Exchange z kolumny znajdującej się w obszarze `Microsoft`{.action} `Exchange`{.action} (po lewej stronie). Kliknij kartę `Grupy`{.action} w menu poziomym.
+Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji „Web” i wybierz usługę Exchange z kolumny znajdującej się w obszarze `Microsoft`{.action} `Exchange`{.action} (po lewej stronie). Kliknij kartę `Grupy`{.action} w menu poziomym.
 
 ![contactgroups](images/exchange-groups-step1.png){.thumbnail}
 
@@ -37,7 +37,7 @@ Kliknięcie przycisku `Utwórz grupę kontaktów`{.action} spowoduje otwarcie no
 |Nazwa|Opis|
 |---|---|
 |Adres e-mail|Nowy adres do wysyłania wiadomości na listę wysyłkową. Uwaga: nie można podać istniejącego adresu e-mail.|
-|Nazwa grupy|Nazwa wyświetlana, która będzie widoczna w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) oraz w interfejsie [OVHcloud webmail](https://www.ovh.pl/mail/) (OWA).|
+|Nazwa grupy|Nazwa wyświetlana, która będzie widoczna w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) oraz w interfejsie [OVHcloud webmail](https://www.ovh.pl/mail/) (OWA).|
 |Maks. rozmiar poczty przychodzącej/wychodzącej|Możesz określić maksymalny rozmiar przychodzących i wychodzących e-maili.|
 |Ukryj w programie Outlook|Po zaznaczeniu tego pola wyboru adres grupy nie będzie widoczny na liście adresów usługi Exchange.|
 |Wymagane uwierzytelnienie|Po zaznaczeniu tego pola wyboru tylko użytkownicy tej samej platformy będą mogli wysyłać wiadomości przy użyciu adresu grupy.|

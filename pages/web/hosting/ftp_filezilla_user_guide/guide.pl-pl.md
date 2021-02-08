@@ -64,7 +64,7 @@ Do połączenia z serwerem niezbędne są poniższe informacje:
 |Hasło użytkownika FTP|Hasło powiązane z loginem FTP.<br><br> W zależności od użytego programu możesz zostać poproszony o „Hasło” lub z angielskiego „Password”.|
 |Port połączenia|Jest on zazwyczaj uzupełniany automatycznie przez program. Jeśli jednak zostaniesz poproszony o jego wprowadzenie:<br><br>\- użyj portu „21”, aby połączyć się przez protokół FTP;<br>\- użyj portu „22”, aby połączyć się przez protokół SFTP (w przypadku gdy jest on aktywny);|
 
-[Jeśli nie posiadasz wskazanych wyżej informacji](https://www.ovh.com/auth/?action=gotomanager){.external}, zaloguj się do `Panelu klienta`{.action} i kliknij `Hosting`{.action} na pasku usług po lewej stronie. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. Wyświetlą się wówczas informacje dotyczące Twojej przestrzeni dyskowej oraz tabela zawierająca nazwy użytkowników FTP i SSH utworzonych na Twoim hostingu.
+[Jeśli nie posiadasz wskazanych wyżej informacji](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, zaloguj się do `Panelu klienta`{.action} i kliknij `Hosting`{.action} na pasku usług po lewej stronie. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. Wyświetlą się wówczas informacje dotyczące Twojej przestrzeni dyskowej oraz tabela zawierająca nazwy użytkowników FTP i SSH utworzonych na Twoim hostingu.
 
 Po wpisaniu danych kliknij na Szybkie łączenie, aby uzyskać połączenie z serwerem.
 

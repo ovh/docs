@@ -16,14 +16,14 @@ A Domain Name System (DNS) zone is a domain name’s config file. It is composed
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) with the necessary permissions to manage the domain
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) with the necessary permissions to manage the domain
 - the correct OVHcloud configuration (DNS servers) for the domain already set up
 
 > [!warning]
 >
 > - If your domain name does not use the OVHcloud DNS servers, you will need to edit the configuration using the interface given by the service provider that manages your domain name.
 > 
-> - If your domain name is registered with OVHcloud, you can check if the domain name is using our configuration. To do this, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, select the domain concerned, and go to the `DNS servers`{.action} tab.
+> - If your domain name is registered with OVHcloud, you can check if the domain name is using our configuration. To do this, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, select the domain concerned, and go to the `DNS servers`{.action} tab.
 >
 
 ## Instructions
@@ -50,7 +50,7 @@ By considering what DNS records actually do, you will gain a better understandin
 
 ### Step 1: Accessing the area for managing your domain’s OVHcloud DNS zone
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Next, navigate to the `DNS zone`{.action} tab.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Next, navigate to the `DNS zone`{.action} tab.
 
 The table that opens will display your domain name’s configuration at OVHcloud. It is made up of several DNS records, one per row in the table. You can filter the table content by DNS record type or by domain name.
 

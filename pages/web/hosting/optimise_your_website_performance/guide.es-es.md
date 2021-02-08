@@ -21,7 +21,7 @@ Esta guía le ayudará a obtener un entendimiento básico de los puntos que pued
 - Un [plan de hospedaje web de OVHcloud](https://www.ovh.es/hosting/){.external}
 - Un mensaje de correo electrónico que confirme que su plan de hospedaje web ha sido contratado
 - Un [nombre de dominio](https://www.ovh.es/dominios/){.external} que pueda utilizarse para acceder a su sitio web
-- Haber iniciado sesión en el [área de cliente de OVHcloud para tener acceso al panel de control](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Haber iniciado sesión en el [área de cliente de OVHcloud para tener acceso al panel de control](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}
 
 ## Procedimiento
 
@@ -159,7 +159,7 @@ _Este paso es opcional si no está usando una base de datos._
 Puede acceder a su base de datos usando PHPMyAdmin. Las instrucciones sobre cómo usar PHPMyAdmin escapan del ámbito de esta guía, por lo que no se proporcionan más detalles.
 Sin embargo, existe una gran cantidad de guías externas sobre este tema.
 
-**Cómo acceder a la base de datos mediante phpMyAdmin:** A continuación, se detalla el procedimiento para acceder a su base de datos mediante phpMyAdmin, disponible en el panel de control una vez iniciada sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}:
+**Cómo acceder a la base de datos mediante phpMyAdmin:** A continuación, se detalla el procedimiento para acceder a su base de datos mediante phpMyAdmin, disponible en el panel de control una vez iniciada sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}:
 
 - En la sección `Hospedaje`{.action}, haga clic en su dominio.
 - Acceda a la pestaña `Base de datos`{.action}.

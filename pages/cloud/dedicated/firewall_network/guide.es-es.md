@@ -25,7 +25,7 @@ Para proteger su infraestructura mundial y los servidores de sus clientes, OVH o
 ## Requisitos
 
 - Tener contratado un servicio de OVH que utilice el firewall de red ([servidores dedicados](https://www.ovh.es/servidores_dedicados/){.external}, [VPS](https://www.ovh.es/vps/){.external}, [instancias de Public Cloud](https://www.ovh.es/public-cloud/instancias/){.external}, [Private Cloud](https://www.ovh.es/private-cloud/){.external}, [IP Failover](https://www.ovh.es/servidores_dedicados/ip_failover.xml){.external}...).
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Dedicado`{.action}.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Dedicado`{.action}.
 
 
 ## Procedimiento

@@ -25,7 +25,7 @@ Unsere Webhosting-Dienste sind mit einigen der beliebtesten Content-Management-S
 ## Voraussetzungen
 
 - Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
@@ -33,7 +33,7 @@ Unsere Webhosting-Dienste sind mit einigen der beliebtesten Content-Management-S
 > [!primary]
 >**Automatische Installation**
 >
->Sie können jedes dieser CMS mit nur wenigen Klicks automatisch von Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) aus installieren. Bitte beachten Sie die folgende Anleitung:
+>Sie können jedes dieser CMS mit nur wenigen Klicks automatisch von Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) aus installieren. Bitte beachten Sie die folgende Anleitung:
 >
 >[Installation Ihrer Website mit 1-Klick-Modulen](../webhosting_installation_von_webhosting-modulen/)
 >

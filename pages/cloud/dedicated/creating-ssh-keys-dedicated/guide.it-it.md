@@ -21,7 +21,7 @@ Ti ricordiamo che le chiavi SSH non sono utilizzate sulle istanze con sistema op
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) nel tuo account OVHcloud
 - Accesso come amministratore (root) mediante SSH al tuo VPS (opzionale)
 

@@ -21,7 +21,7 @@ Ti ricordiamo che le chiavi SSH non sono utilizzate sulle istanze con sistema op
 ## Prerequisiti
 
 * Aver creato un progetto [Public Cloud](https://www.ovh.it/public-cloud/){.external} nel tuo account OVHcloud
-* Avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
@@ -106,7 +106,7 @@ La barra inizierà a riempirsi gradualmente e, una volta piena, la chiave sarà 
 
 ### Importa la chiave SSH nello Spazio Cliente
 
-Per prima cosa seleziona e copia il testo della chiave pubblica, poi accedi alla sezione `Public Cloud`{.action} dello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Per prima cosa seleziona e copia il testo della chiave pubblica, poi accedi alla sezione `Public Cloud`{.action} dello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 
 
 

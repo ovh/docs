@@ -15,12 +15,12 @@ Lo Spazio Cliente OVHcloud offre un’amministrazione completa di tutti i serviz
 
 > [!primary]
 >
-> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. In caso di difficoltà o dubbi, consulta i contratti disponibili nel tuo Spazio Cliente, sezione [Prodotti e servizi](https://www.ovh.com/auth/?action=gotomanager){.external} > `Contratti`{.action}.
+> Ti ricordiamo che in base al luogo di residenza, alla normativa vigente e ai servizi attivati, è possibile che alcune sezioni di questa guida varino o non siano applicabili alla tua situazione. In caso di difficoltà o dubbi, consulta i contratti disponibili nel tuo Spazio Cliente, sezione [Prodotti e servizi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} > `Contratti`{.action}.
 >
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Essere connesso come contatto di fatturazione del servizio (per maggiori informazioni sulle diverse tipologie di contatti, consulta la guida [Gestire i contatti dei servizi OVHcloud](https://docs.ovh.com/it/customer/gestisci_i_tuoi_contatti/){.external}.
 
 
@@ -54,7 +54,7 @@ L’importo totale e comprensivo di IVA è indicato alla fine della tabella, in 
 
 > [!primary]
 >
-> Se in corrispondenza del metodo di pagamento compare la dicitura “Informativa conto”, significa che si tratta di un rinnovo automatico. In questo caso il metodo di pagamento utilizzato è quello impostato nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}.
+> Se in corrispondenza del metodo di pagamento compare la dicitura “Informativa conto”, significa che si tratta di un rinnovo automatico. In questo caso il metodo di pagamento utilizzato è quello impostato nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 >
 
 
@@ -62,7 +62,7 @@ L’importo totale e comprensivo di IVA è indicato alla fine della tabella, in 
 
 #### Consulta e gestisci le tue fatture
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul tuo nome utente in alto a destra e seleziona `Fatture`{.action}. 
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul tuo nome utente in alto a destra e seleziona `Fatture`{.action}. 
 
 ![Spazio cliente](images/hubinvoices.png){.thumbnail}
 

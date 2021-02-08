@@ -20,7 +20,7 @@ Následující příručka popisuje jednotlivé fáze migračního procesu webov
 - Přístup k souborům webových stránek.
 - Přístup k databázi webových stránek (pokud existuje).
 - Přístupové údaje k příslušným e-mailovým účtům (uživatelské jméno, heslo, servery).
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Postup
 
@@ -61,7 +61,7 @@ Tato fáze je rozdělena do několika dalších pod-fází.
 |---|---|---|
 |1|Vytvoření kopie webových stránek|Vytvořte kompletní zálohu svých stránek, obsahující jak veškeré soubory, tak i databázi (pokud je vyžadováno). Kompletní záloha je nezbytným předpokladem úspěšné migrace stránek.|
 |2|Spuštění stránek na webhostingu OVH online|Importujte veškerá data svých stránek na FTP úložiště. Nezapomeňte, že data, která mají být přístupná online, je zapotřebí importovat do adresáře **"www"**. Přihlašovací údaje k FTP Vám budou zaslány do Vaší e-mailové schránky.|
-|3|Vytvoření databáze OVH|Pokud Vaše stránky komunikují s databází, je zapotřebí [vytvořit novou databázi OVH](https://docs.ovh.com/gb/en/hosting/managing-a-database-on-a-web-hosting-package/){.external} pomocí [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.|
+|3|Vytvoření databáze OVH|Pokud Vaše stránky komunikují s databází, je zapotřebí [vytvořit novou databázi OVH](https://docs.ovh.com/gb/en/hosting/managing-a-database-on-a-web-hosting-package/){.external} pomocí [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.|
 |4|Import databázových dat|Importujte data ze staré databáze do nové [prostřednictvím nástrojů, které jsou Vám k dispozici v Zákaznickém prostoru OVH](https://docs.ovh.com/gb/en/hosting/web_hosting_guide_to_importing_a_mysql_database/){.external}.|
 |5|Propojení stránek s novou databází|Informace o databázi jsou uloženy v konfiguračním souboru Vašich webových stránek. Přejděte do FTP úložiště svého webhostingového řešení OVH a v konfiguračním souboru svých stránek nahraďte informace o staré databázi informacemi o nové databázi OVH.|
 
@@ -69,13 +69,13 @@ Konfigurace Vaší domény prozatím zůstává nezměněna a Vaše stránky st�
 
 #### Fáze 3: znovuvytvoření e-mailových adres u OVH
 
-Jakmile jsou Vaše webové stránky přeneseny, je zapotřebí znovuvytvořit stejné e-mailové adresy, jako ty, které stále ještě používáte u svého dosavadního poskytovatele. Tyto adresy musejí být identické. V levém postranním panelu [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} klikněte na sekci `E-maily`{.action} a vyberte Váš nový webhosting. V záložce „E-maily“ klikněte na tlačítko `Vytvořit e-mailovou adresu`{.action} a postupujte podle instrukcí.
+Jakmile jsou Vaše webové stránky přeneseny, je zapotřebí znovuvytvořit stejné e-mailové adresy, jako ty, které stále ještě používáte u svého dosavadního poskytovatele. Tyto adresy musejí být identické. V levém postranním panelu [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} klikněte na sekci `E-maily`{.action} a vyberte Váš nový webhosting. V záložce „E-maily“ klikněte na tlačítko `Vytvořit e-mailovou adresu`{.action} a postupujte podle instrukcí.
 
 Konfigurace domény prozatím zůstává nezměněna a Vaše e-mailové adresy stále ještě fungují na webhostingu Vašeho starého poskytovatele. Pro správu své elektronické pošty v této fázi musíte stále ještě využívat služeb svého starého poskytovatele.
 
 #### Fáze 4: změna konfigurace domény
 
-Jakmile jsou Vaše webové stránky přeneseny a Vaše e-mailové adresy znovuvytvořeny u OVH, je zapotřebí provést nezbytné úpravy v konfiguraci Vaší domény. Tyto úpravy spočívají v nahrazení dosavadních DNS serverů domény DNS servery OVH (veškeré informace týkající se našich DNS serverů naleznete ve své e-mailové schránce a v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}). Změny v konfiguraci domény budou mít tyto následky:
+Jakmile jsou Vaše webové stránky přeneseny a Vaše e-mailové adresy znovuvytvořeny u OVH, je zapotřebí provést nezbytné úpravy v konfiguraci Vaší domény. Tyto úpravy spočívají v nahrazení dosavadních DNS serverů domény DNS servery OVH (veškeré informace týkající se našich DNS serverů naleznete ve své e-mailové schránce a v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}). Změny v konfiguraci domény budou mít tyto následky:
 
 - **Technické propojení domény s řešeními OVH**: Váš OVH webhosting bude používán pro zobrazování Vašich stránek online, stejně tak jako pro přijímání a odesílání Vaší elektronické pošty.
 - **Prevence přerušení dostupnosti služby**: pokud se Váš doménový registrátor rozhodne suspendovat DNS servery okamžitě po obdržení požadavku na převod domény, nebude to mít žádný vliv na dostupnost Vaší služby, jelikož tou dobou již budete používat konfiguraci OVH.
@@ -130,7 +130,7 @@ Tato fáze je rozdělena do několika dalších pod-fází.
 |---|---|---|
 |1|Vytvoření kopie webových stránek|Vytvořte kompletní zálohu svých stránek, obsahující jak veškeré soubory, tak i databázi (pokud je vyžadováno). Kompletní záloha je nezbytným předpokladem úspěšné migrace stránek.|
 |2|Spuštění stránek na webhostingu OVH online|Importujte veškerá data svých stránek na FTP úložiště. Nezapomeňte, že data, která mají být přístupná online, je zapotřebí importovat do adresáře **"www"**. Přihlašovací údaje k FTP Vám budou zaslány do Vaší e-mailové schránky.|
-|3|Vytvoření databáze OVH|Pokud Vaše stránky komunikují s databází, je zapotřebí [vytvořit novou databázi OVH](https://docs.ovh.com/gb/en/hosting/managing-a-database-on-a-web-hosting-package/){.external} pomocí [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.|
+|3|Vytvoření databáze OVH|Pokud Vaše stránky komunikují s databází, je zapotřebí [vytvořit novou databázi OVH](https://docs.ovh.com/gb/en/hosting/managing-a-database-on-a-web-hosting-package/){.external} pomocí [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.|
 |4|Import databázových dat|Importujte data ze staré databáze do nové [prostřednictvím nástrojů, které jsou Vám k dispozici v Zákaznickém prostoru OVH](https://docs.ovh.com/gb/en/hosting/web_hosting_guide_to_importing_a_mysql_database/){.external}.|
 |5|Propojení stránek s novou databází|Informace o databázi jsou uloženy v konfiguračním souboru Vašich webových stránek. Přejděte do FTP úložiště svého webhostingového řešení OVH a v konfiguračním souboru svých stránek nahraďte informace o staré databázi informacemi o nové databázi OVH.|
 
@@ -138,7 +138,7 @@ Konfigurace Vaší domény prozatím zůstává nezměněna a Vaše stránky st�
 
 #### Fáze 3: znovuvytvoření e-mailových adres u OVH
 
-**Po dokončení převodu domény** obdržíte e-mail s informacemi o tom, že e-mailová služba asociovaná s Vaším webhostingem byla nainstalována. Nyní je zapotřebí [znovuvytvořit stejné e-mailové adresy](https://docs.ovh.com/cz/cs/emails/webhosting_-_e-mail_prirucka_o_vytvareni_e-mailovych_adres/){.external}, jako ty, které stále používáte u svého dosavadního poskytovatele (adresy musí mít stejný název). V levém postranním panelu [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} klikněte na sekci `E-maily`{.action} a vyberte Váš nový webhosting. V záložce „E-maily“ klikněte na tlačítko `Vytvořit e-mailovou adresu`{.action} a postupujte podle instrukcí.
+**Po dokončení převodu domény** obdržíte e-mail s informacemi o tom, že e-mailová služba asociovaná s Vaším webhostingem byla nainstalována. Nyní je zapotřebí [znovuvytvořit stejné e-mailové adresy](https://docs.ovh.com/cz/cs/emails/webhosting_-_e-mail_prirucka_o_vytvareni_e-mailovych_adres/){.external}, jako ty, které stále používáte u svého dosavadního poskytovatele (adresy musí mít stejný název). V levém postranním panelu [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} klikněte na sekci `E-maily`{.action} a vyberte Váš nový webhosting. V záložce „E-maily“ klikněte na tlačítko `Vytvořit e-mailovou adresu`{.action} a postupujte podle instrukcí.
 
 Konfigurace Vaší domény prozatím zůstává nezměněna a Vaše e-mailové adresy stále ještě fungují na webhostingu Vašeho starého poskytovatele (pokud nedošlo k suspendování DNS serverů). Pro správu své elektronické pošty v této fázi musíte stále ještě využívat služeb svého starého poskytovatele.
 
@@ -146,7 +146,7 @@ Konfigurace Vaší domény prozatím zůstává nezměněna a Vaše e-mailové a
 
 Jakmile jsou Vaše webové stránky naimportovány, e-mailové adresy znovuvytvořeny a doména přenesena k OVH, nezbývá než upravit samotné nastavení domény. Tyto úpravy spočívají v nahrazení dosavadních DNS serverů domény DNS servery OVH.
 
-Změnu nastavení lze provést prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Detailní informace týkající se úprav nastavení DNS naleznete v následující příručce: *[Obecné informace o DNS serverech](https://docs.ovh.com/gb/en/domains/web_hosting_general_information_about_dns_servers/){.external}*.
+Změnu nastavení lze provést prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Detailní informace týkající se úprav nastavení DNS naleznete v následující příručce: *[Obecné informace o DNS serverech](https://docs.ovh.com/gb/en/domains/web_hosting_general_information_about_dns_servers/){.external}*.
 
 Změny v konfiguraci domény budou mít následující následky:
 

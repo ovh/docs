@@ -16,7 +16,7 @@ The acronym HA (High Availability) means that OVH is committed to providing you 
 You can use a NAS-HA in our French data centres (Roubaix, Strasbourg, Gravelines) as well as our Canadian data center located in Beauharnois. The choice of a data centre can be made when ordering. WARNING: once the product has been ordered, the data centre can no longer be changed.
 
 ### Can we manage the NAS-HA through a configuration interface?
-Yes, that interface is accessible through your [OVH customer control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, under `Cloud`{.action} and `Platforms and services`{.action}.
+Yes, that interface is accessible through your [OVH customer control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, under `Cloud`{.action} and `Platforms and services`{.action}.
 
 ### Is it possible to increase the total capacity of my NAS?
 A NAS-HA’s capacity cannot be increased once the solution has been ordered. To increase your storage, you need to migrate your data to a second NAS with a larger capacity.
@@ -40,7 +40,7 @@ Your NAS-HA has dedicated disks. Other resources for the machine are shared (RAM
 **Particular case:** If you choose the 26.4 TB package, all resources for the host server will be dedicated (RAM, CPU, bandwidth).
 
 ### How long can I rent a NAS-HA for?
-The available rental periods are 1, 3, 6 and 12 months. At the end of your commitment period, your plan will be automatically renewed if you didn’t submit any cancellation request. Such a request can be made throughout the duration of your plan via your [OVH customer control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+The available rental periods are 1, 3, 6 and 12 months. At the end of your commitment period, your plan will be automatically renewed if you didn’t submit any cancellation request. Such a request can be made throughout the duration of your plan via your [OVH customer control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
 
 ### Do we get the same capacity as displayed when ordering?
 As with most storage solutions, the theoretical capacity always differs slightly from the usable capacity, since part of that space must be used for disk operation:
@@ -132,7 +132,7 @@ Snapshot frequency can be managed from your customer control panel. You can choo
 - Weekly. 
 
 
-At any time you can also create manual snapshots, keep them with no time limit or delete them. This feature is available in your [OVH customer control panel](https://ca.ovh.com/auth/?action=gotomanager){.external} or through the[API](https://ca.api.ovh.com/){.external}:
+At any time you can also create manual snapshots, keep them with no time limit or delete them. This feature is available in your [OVH customer control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} or through the[API](https://ca.api.ovh.com/){.external}:
 
 > [!api]
 >

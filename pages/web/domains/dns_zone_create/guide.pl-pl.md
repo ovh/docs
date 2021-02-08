@@ -20,13 +20,13 @@ Strefa Domain Name System (DNS) to plik konfiguracyjny domeny. Zawiera on inform
 - Zarejestrowana domena
 - Domena nie może mieć strefy DNS OVH i nie może być przedmiotem trwającej operacji lub zamówienia w OVH
 - Prawidłowa konfiguracja techniczna domeny (status, SOA, etc.)
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce
 
 ### Etap 1: utworzenie strefy DNS w Panelu klienta
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Zamów`{.action} na pasku usług po lewej stronie, następnie kliknij `Strefa DNS`{.action}. 
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Zamów`{.action} na pasku usług po lewej stronie, następnie kliknij `Strefa DNS`{.action}. 
 
 Na stronie, która się pojawi, wpisz nazwę domeny, dla której chcesz utworzyć strefę DNS. Odczekaj chwilę, aż narzędzie OVH dokona weryfikacji domeny.
 
@@ -49,7 +49,7 @@ Po wybraniu odpowiedniej opcji postępuj zgodnie z instrukcjami podanymi w kolej
 
 Po utworzeniu strefy DNS Twojej domeny możesz ją edytować. Operacja ta jest opcjonalna, jednak może okazać się niezbędna, jeśli chcesz zapewnić nieprzerwaną dostępność usług powiązanych z tą domeną (takich jak strona WWW i konta e-mail).
 
-Aby edytować strefę DNS, pozostań zalogowany do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Domeny`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią domenę. Teraz przejdź do zakładki `Strefa DNS`{.action}.
+Aby edytować strefę DNS, pozostań zalogowany do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Domeny`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią domenę. Teraz przejdź do zakładki `Strefa DNS`{.action}.
 
 > [!primary]
 >

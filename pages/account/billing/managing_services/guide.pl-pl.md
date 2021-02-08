@@ -16,13 +16,13 @@ Panel klienta daje Ci możliwość pełnego zarządzania wszystkimi Twoimi usłu
 
 > [!primary]
 >
-> Możliwe jest, że niektóre części niniejszego przewodnika nie mają zastosowania do Twojej sytuacji, która może być różna w zależności od tego, gdzie znajduje się siedziba Twojej firmy i pod jakie podlega ustawodawstwo. Jeśli masz wątpliwości, sprawdź zapisy w umowach OVH dostępnych w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Moje usługi`{.action} > `Regulaminy`{.action}.
+> Możliwe jest, że niektóre części niniejszego przewodnika nie mają zastosowania do Twojej sytuacji, która może być różna w zależności od tego, gdzie znajduje się siedziba Twojej firmy i pod jakie podlega ustawodawstwo. Jeśli masz wątpliwości, sprawdź zapisy w umowach OVH dostępnych w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Moje usługi`{.action} > `Regulaminy`{.action}.
 >
 
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - Posiadanie aktywnych usług OVH
 
 ## W praktyce
@@ -40,7 +40,7 @@ Przejdź do opisu operacji, którą chcesz przeprowadzić.
 
 ### Wyświetl Twoje usługi w interfejsie „Zarządzanie usługami”
 
-Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij nazwisko powiązane z Twoim identyfikatorem klienta na pasku menu w górnym prawym rogu, następnie kliknij `Moje usługi`{.action}.
+Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij nazwisko powiązane z Twoim identyfikatorem klienta na pasku menu w górnym prawym rogu, następnie kliknij `Moje usługi`{.action}.
 
 ![manageservices](images/manage-ovh-services-step1.png){.thumbnail}
 

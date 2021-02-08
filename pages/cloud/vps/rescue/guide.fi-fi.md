@@ -23,7 +23,7 @@ Tässä ohjeessa kerrotaan, kuinka VPS käynnistetään Rescue-tilassa.
 
 ## Edellytykset
 
-- Olet kirjautuneena [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager).
+- Olet kirjautuneena [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 
 ## Käytännössä
