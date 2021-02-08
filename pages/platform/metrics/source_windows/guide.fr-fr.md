@@ -59,7 +59,7 @@ To record **only** the total metric, activate at the end of the `win_perf_counte
   instance = [ "_Total" ]  
 ```
 
-Otherwise to blacklist specific instance you can use `tagdrop` instead of `tagpass`. To learn more on how to configure telegraf, you can check this detailed [guide](https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md){.external}.
+Otherwise to blacklist specific instance you can use `tagdrop` instead of `tagpass`. To learn more on how to configure telegraf, you can check this detailed <a class="external" href="https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md">guide</a>.
 
 ### Prometheus ecosystem
 
@@ -101,7 +101,7 @@ Then configure Telegraf to use the prometheus plugin:
 
 > The Telegraf prometheus plugin doesn't work on telegraf test mode. Restart Telegraf windows service and you should see your data on your Metrics account.
 
-This Telegraf configuration produced ~140 metrics for a single Windows 2016 server. Check the [WMI exporter collector](https://github.com/martinlindhe/wmi_exporter/blob/master/docs/README.md) documentation to select and collect the right metrics.
+This Telegraf configuration produced ~140 metrics for a single Windows 2016 server. Check the <a class="external" href="https://github.com/martinlindhe/wmi_exporter/blob/master/docs/README.md">WMI exporter collector</a> documentation to select and collect the right metrics.
 
 In the same way, you can collect any kind of Metrics the Prometheus ecosystem exposed on a route using Telegraf.
 

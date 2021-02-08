@@ -101,4 +101,4 @@ Informationen zum Hinzufügen Ihres ersten Domainnamens zu Ihrer Plattform und z
 
 [Eine Domain zu Ihrem Exchange Dienst hinzufügen](../domain-zu-exchange-hinzufugen/) 
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en>.
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

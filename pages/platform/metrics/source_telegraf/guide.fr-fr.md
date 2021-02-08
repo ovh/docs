@@ -151,7 +151,7 @@ Telegraf is used to record a lot of servers indicators as mem, system, net, cpu,
 
 However some inputs indicators might required telegraf to run as **root** user (on linux). For example, this can be the case of some network stats on a grsec kernel (you can check it using the `cat /proc/net/dev` command, a user not granted will always see 0 as value).
 
-All **inputs** parameters, can be configured in telegraf main configuration file. To control the cardinality of the data send to the Metrics platform, we can, in the previous example, update the [**CPU** inputs](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/cpu/README.md){.external} as below, setting **percpu** to false.
+All **inputs** parameters, can be configured in telegraf main configuration file. To control the cardinality of the data send to the Metrics platform, we can, in the previous example, update the <a class="external" href="https://github.com/influxdata/telegraf/blob/master/plugins/inputs/cpu/README.md"><strong>CPU</strong> inputs</a> as below, setting **percpu** to false.
 
 ```toml
 [[inputs.cpu]]
