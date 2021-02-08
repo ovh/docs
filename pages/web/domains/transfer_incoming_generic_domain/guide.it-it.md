@@ -89,7 +89,7 @@ Gli step successivi permettono di completare l’ordine scegliendo un piano di [
 > - **scelta dei server DNS del dominio**: se utilizzi il tuo dominio per un sito o un servizio di posta, assicurati di specificare i server DNS attualmente in uso per evitare un’interruzione del servizio.
 >
 
-Una volta visualizzato il buono d’ordine, effettua il saldo.  Alla ricezione del pagamento, la procedura di trasferimento verrà avviata. Da questo momento, lo stato di avanzamento della procedura sarà disponibile nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Domini`{.action} > `Operazioni in corso`{.action}.
+Una volta visualizzato il buono d’ordine, effettua il saldo.  Alla ricezione del pagamento, la procedura di trasferimento verrà avviata. Da questo momento, lo stato di avanzamento della procedura sarà disponibile nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Domini`{.action} > `Operazioni in corso`{.action}.
 
 ### Step 4: prima fase di conferma del trasferimento
 
@@ -113,7 +113,7 @@ In base alle azioni effettuate, sono possibili diversi scenari di risposta:
 |Nessuna risposta alle due richieste di conferma|Passaggio al secondo step di conferma al termine di un periodo di 5 giorni|
 |Rifiuto da parte di uno dei contatti|Il trasferimento viene sospeso a partire dalla ricezione della notifica del rifiuto|
 
-In caso di sospensione della richiesta di trasferimento, assicurati che i contatti siano in accordo relativamente all’operazione e che i loro indirizzi email siano aggiornati. Il trasferimento potrà essere riavviato dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Domini`{.action} > `Operazioni in corso`{.action}.
+In caso di sospensione della richiesta di trasferimento, assicurati che i contatti siano in accordo relativamente all’operazione e che i loro indirizzi email siano aggiornati. Il trasferimento potrà essere riavviato dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Domini`{.action} > `Operazioni in corso`{.action}.
 
 ### Step 5: seconda fase di conferma del trasferimento
 
@@ -125,11 +125,11 @@ Una volta iniziato il secondo step, il Registrar attuale (non ancora OVH) riceve
 |Nessuna risposta da parte del provider attuale|Il trasferimento viene effettuato al termine di un periodo di 5 giorni|
 |Rifiuto da parte del provider attuale|Il trasferimento viene sospeso a partire dalla ricezione della notifica del rifiuto|
 
-In quest’ultimo caso, contatta il tuo provider per conoscerne le motivazioni del rifiuto. Il trasferimento potrà essere riavviato dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Domini`{.action} > `Operazioni in corso`{.action}.
+In quest’ultimo caso, contatta il tuo provider per conoscerne le motivazioni del rifiuto. Il trasferimento potrà essere riavviato dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Domini`{.action} > `Operazioni in corso`{.action}.
 
 ### Step 6: gestisci il tuo dominio
 
-Una volta completata la procedura, è possibile gestire il dominio dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, selezionando la voce `Domini`{.action} nel menu a sinistra e cliccando sul dominio corrispondente.
+Una volta completata la procedura, è possibile gestire il dominio dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, selezionando la voce `Domini`{.action} nel menu a sinistra e cliccando sul dominio corrispondente.
 
 ## Per saperne di più
 

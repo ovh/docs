@@ -16,7 +16,7 @@ When you install Windows Server 2012, 2012 R2 or 2016 on a [VPS](https://www.ovh
 ## Requirements
 
 * a [VPS](https://www.ovh.co.uk/vps/){.external} with Windows Server 2012, 2012 R2 or 2016 installed
-* access to the OVH [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* access to the OVH [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions
 

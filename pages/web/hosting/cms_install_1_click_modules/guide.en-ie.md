@@ -20,7 +20,7 @@ order: 1
 ## Requirements
 
 - an [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/)
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - no files stored in the directory that your module will be installed in
 - The website’s domain (with a subdomain, if applicable) must be declared as a multisite.
 

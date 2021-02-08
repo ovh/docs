@@ -17,7 +17,7 @@ MX Plan -tuotteen sähköpostiosoitteilla voit lähettää ja vastaanottaa viest
 
 ## Edellytykset
 - Sinulla on MX Plan -tuote (sisältyy [OVH:n webhotellituotteeseen](https://www.ovh-hosting.fi/webhotelli){.external} tai saatavilla erikseen).
-- Sinulla on pääsyoikeudet MX Plan -tuotteen hallintaan [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Sinulla on pääsyoikeudet MX Plan -tuotteen hallintaan [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 > [!primary]
 >
@@ -28,7 +28,7 @@ MX Plan -tuotteen sähköpostiosoitteilla voit lähettää ja vastaanottaa viest
 
 ### 1. vaihe: Mene sähköpostipalvelun hallintaan
 
-Toimenpiteen aloittamiseksi kirjaudu [OVH:n hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}. Klikkaa kohtaa `Sähköpostit`{.action} vasemmalla olevassa palveluvalikossa ja valitse sitten verkkotunnus, jolle MX Plan -tuote on hankittu. Mene lopuksi välilehdelle `Sähköpostit`{.action}.
+Toimenpiteen aloittamiseksi kirjaudu [OVH:n hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Klikkaa kohtaa `Sähköpostit`{.action} vasemmalla olevassa palveluvalikossa ja valitse sitten verkkotunnus, jolle MX Plan -tuote on hankittu. Mene lopuksi välilehdelle `Sähköpostit`{.action}.
 
 Näkyviin tulevassa taulukossa on kaikki MX Plan -tuotteen yhteydessä luodut sähköpostiosoitteet.
 

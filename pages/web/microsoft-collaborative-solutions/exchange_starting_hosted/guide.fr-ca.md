@@ -19,13 +19,13 @@ Le service Exchange Hébergé permet de bénéficier d’adresses e-mail profess
 - Avoir souscrit une offre [Exchange Hébergé](https://www.ovh.com/ca/fr/emails/hosted-exchange/){.external}.
 - Avoir reçu l’e-mail vous confirmant l’installation de votre solution Exchange Hébergé.
 - Disposer d'un nom de domaine.
-- Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
 
 ### Étape 1 : accéder à la gestion de votre service
 
-Une fois votre service Exchange Hébergé créé et disponible, vous pouvez le gérer depuis votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Une fois votre service Exchange Hébergé créé et disponible, vous pouvez le gérer depuis votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 Pour cela, connectez-vous à ce dernier, cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action} dans la barre de services à gauche. Cliquez enfin sur le nom du service Exchange Hébergé concerné.
 
@@ -57,7 +57,7 @@ Une fois la première configuration de votre domaine terminée, vous pouvez éga
 > Toutes les adresses créées sur votre service Exchange seront en mesure de visualiser dans l'annuaire l'ensemble des adresses de ce service, y compris celles possédant un nom de domaine différent. Pour dissocier l'affichage des domaines, vous devez commander un nouveau service Exchange Hébergé pour le ou les noms de domaine concernés.
 >
 
-Pour ajouter un nouveau nom de domaine, sélectionnez le service Exchange Hébergé concerné dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} et cliquez sur l'onglet `Domaines associés`{.action}. Le tableau affiche les noms de domaines actuellement configurés ou en passe de l'être sur votre service. Pour en ajouter de nouveaux, cliquez sur le bouton `Ajouter un domaine`{.action}, puis suivez les différentes étapes du processus.
+Pour ajouter un nouveau nom de domaine, sélectionnez le service Exchange Hébergé concerné dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et cliquez sur l'onglet `Domaines associés`{.action}. Le tableau affiche les noms de domaines actuellement configurés ou en passe de l'être sur votre service. Pour en ajouter de nouveaux, cliquez sur le bouton `Ajouter un domaine`{.action}, puis suivez les différentes étapes du processus.
 
 Pour en apprendre plus, vous pouvez consulter la documentation intitulée [Ajouter un nom de domaine sur son service Exchange](https://docs.ovh.com/ca/fr/microsoft-collaborative-solutions/ajouter-domaine-exchange/){.external}.
 
@@ -72,7 +72,7 @@ Pour en apprendre plus, vous pouvez consulter la documentation intitulée [Ajout
 
 Vous pouvez configurer des comptes additionnels si vous le souhaitez et si vous ne l'avez pas déjà fait via l'assistant.
 
-Pour cela, cliquez sur le service Exchange Hébergé concerné dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, puis sur l'onglet `Comptes courriel`{.action}. Le tableau affiche les comptes actuellement configurés ou en attente de l'être sur votre service.
+Pour cela, cliquez sur le service Exchange Hébergé concerné dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, puis sur l'onglet `Comptes courriel`{.action}. Le tableau affiche les comptes actuellement configurés ou en attente de l'être sur votre service.
 
 Les comptes en attente de configuration s'affichent dans le tableau sous la forme “*@configureme.me*”. Pour les configurer, cliquez sur le logo représentant trois points, cliquez sur `Modifier`{.action}, puis suivez les étapes.
 
@@ -98,9 +98,9 @@ Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie 
 
 ### Étape 6 : paramétrer les fonctions collaboratives (facultatif)
 
-Maintenant que votre service Exchange Hébergé est configuré et fonctionnel, vous pouvez mettre en place les fonctionnalités collaboratives inhérentes au service dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}. Celles-ci peuvent vous donner la possibilité de créer des ressources (salles de réunion, équipements, etc.), mais aussi des groupes, entre autres.
+Maintenant que votre service Exchange Hébergé est configuré et fonctionnel, vous pouvez mettre en place les fonctionnalités collaboratives inhérentes au service dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Celles-ci peuvent vous donner la possibilité de créer des ressources (salles de réunion, équipements, etc.), mais aussi des groupes, entre autres.
 
-Pour activer ces différentes fonctions, sélectionnez le service Exchange Hébergé concerné dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, puis choisissez parmi les onglets qui s'affichent l'action à effectuer.
+Pour activer ces différentes fonctions, sélectionnez le service Exchange Hébergé concerné dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, puis choisissez parmi les onglets qui s'affichent l'action à effectuer.
 
 ![Fonctions collaboratives](images/first-steps-hosted-exchange-intro-to-functions.png){.external}
 

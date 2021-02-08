@@ -24,7 +24,7 @@ Beachten Sie bitte, dass SSH-Schlüssel bei Servern, auf denen Windows installie
 ## Voraussetzungen
 
 - Sie haben einen [Dedicated Server](https://www.ovh.de/dedicated_server/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben administrativen Zugriff (Root) über SSH auf Ihren Server.
 
 ## In der praktischen Anwendung

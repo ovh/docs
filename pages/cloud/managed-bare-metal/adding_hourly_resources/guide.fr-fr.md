@@ -18,7 +18,7 @@ L'offre [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.e
 ## Prérequis
 
 * Posséder une offre [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external}.
-* [Donner le droit "Ajout de ressources"](../changer-les-droits-d-un-utilisateur/) pour le datacenter concerné à l'utilisateur depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* [Donner le droit "Ajout de ressources"](../changer-les-droits-d-un-utilisateur/) pour le datacenter concerné à l'utilisateur depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 * Être connecté au client vSphere.
 
 ## En pratique

@@ -39,7 +39,7 @@ Wszystkich oferowanych obrazów można użyć w instancji GPU.
 > Jeśli ręczne skompilowanie modułu jądra stanowi problem, zalecamy użycie dystrybucji wspieranej przez firmę Nvidia, do której są udostępnione *gotowe* sterowniki: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Po zalogowaniu do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} przejdź do projektu Public Cloud, kliknij przycisk `Utwórz instancję`{.action} i wybierz instancję GPU:
+Po zalogowaniu do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} przejdź do projektu Public Cloud, kliknij przycisk `Utwórz instancję`{.action} i wybierz instancję GPU:
 
 ![public-cloud](images/gpu.png){.thumbnail}
 
@@ -104,7 +104,7 @@ Instancja GPU działa i jest gotowa do użycia.
 Istnieją problemy ze zgodnością sterownika NVIDIA i rozwiązania wirtualizacji *KVM/pci_passthrough*. **Standardowe obrazy systemu Windows nie działają.**
 Dlatego oferujemy specjalne obrazy oparte na wirtualnym systemie BIOS UEFI, które umożliwiają prawidłowe działanie sterownika (dotyczy tylko instancji G1, G2 i G3 z oferty 2017 oraz wcześniejszej).
 
-Po zalogowaniu do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} przejdź do projektu Public Cloud, kliknij przycisk `Utwórz instancję`{.action} i wybierz instancję GPU:
+Po zalogowaniu do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} przejdź do projektu Public Cloud, kliknij przycisk `Utwórz instancję`{.action} i wybierz instancję GPU:
 
 ![public-cloud](images/gpu.png){.thumbnail}
 

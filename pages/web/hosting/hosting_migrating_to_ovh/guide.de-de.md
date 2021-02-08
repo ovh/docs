@@ -19,7 +19,7 @@ Diese Anleitung zeigt Ihnen die verschiedenen Schritte zur Migration einer Websi
 - Sie haben Zugriff auf die Dateien der Website.
 - Sie haben, falls nötig, Zugriff auf die Datenbanken.
 - Sie haben die notwendigen Informationen (Benutzer, Passwort, Server), um sich auf Ihren aktuellen E-Mail-Adressen einzuloggen.
-- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 ## Beschreibung
 
@@ -68,13 +68,13 @@ Die Konfiguration Ihrer Domain bleibt unverändert und Ihre Website wird weiterh
 
 #### Schritt 3: Ihre E-Mail-Adressen bei OVH neu erstellen
 
-Nachdem Ihre Website fertig transferiert ist, [erstellen Sie die gleichen E-Mail-Adressen bei OVH](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external}, die Sie bei Ihrem bisherigen Anbieter verwenden (sie müssen denselben Namen haben). Gehen Sie links in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} in den Bereich `E-Mails`{.action} und klicken Sie anschließend auf das Webhosting Angebot, das Sie soeben bestellt haben (mit demselben Namen wie Ihre Domain). Klicken Sie auf den Button `Eine E-Mail-Adresse erstellen`{.action} und folgen Sie den Schritten des Assistenten.
+Nachdem Ihre Website fertig transferiert ist, [erstellen Sie die gleichen E-Mail-Adressen bei OVH](https://docs.ovh.com/de/emails/e-mail-adresse-erstellen/){.external}, die Sie bei Ihrem bisherigen Anbieter verwenden (sie müssen denselben Namen haben). Gehen Sie links in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} in den Bereich `E-Mails`{.action} und klicken Sie anschließend auf das Webhosting Angebot, das Sie soeben bestellt haben (mit demselben Namen wie Ihre Domain). Klicken Sie auf den Button `Eine E-Mail-Adresse erstellen`{.action} und folgen Sie den Schritten des Assistenten.
 
 Da die Konfiguration Ihrer Domain nicht verändert wurde, werden neue Nachrichten weiterhin über die E-Mail-Adressen bei Ihrem bisherigen Anbieter empfangen. Verwenden Sie diese auch weiterhin für den Versand Ihrer E-Mails.
 
 #### Schritt 4: Die Konfiguration Ihrer Domain bearbeiten
 
-Nun, da Ihre Website transferiert ist und Ihre E-Mail-Adressen bei OVH neu angelegt sind, muss auch die Konfiguration Ihrer Domain angepasst werden. Ersetzen Sie hierzu die bisherigen DNS Server Ihrer Domain mit den OVH DNS Servern (die Angaben wurden Ihnen per E-Mail zugesandt und Sie können sie außerdem in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} einsehen). Durch diese Änderung erreichen Sie zwei Dinge:
+Nun, da Ihre Website transferiert ist und Ihre E-Mail-Adressen bei OVH neu angelegt sind, muss auch die Konfiguration Ihrer Domain angepasst werden. Ersetzen Sie hierzu die bisherigen DNS Server Ihrer Domain mit den OVH DNS Servern (die Angaben wurden Ihnen per E-Mail zugesandt und Sie können sie außerdem in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} einsehen). Durch diese Änderung erreichen Sie zwei Dinge:
 
 - **Ihre Domain ist nun mit den OVH Lösungen verbunden**: Ihr OVH Webhosting wird für die Anzeige Ihrer Website verwendet und der E-Mail-Empfang läuft ab sofort über Ihre OVH E-Mail-Adressen.
 - **Eine mögliche Dienstunterbrechung wird verhindert**: Wenn Ihr Registrar seine eigenen DNS Server sperrt, sobald Sie Ihre Domain transferieren, hat das keine Auswirkungen auf Ihren Dienst, wenn Sie bereits die OVH Konfiguration verwenden.
@@ -129,7 +129,7 @@ Hierzu sind mehrere Zwischenschritte notwendig.
 |---|---|---|
 |1|Ein Backup der Website erstellen|Sie benötigen ein vollständiges Backup Ihrer Website, inklusive aller Dateien und Datenbanken (soweit vorhanden). Diese Sicherung ist absolut notwendig, um Ihre Website zu OVH zu migrieren.|
 |2|Ihre Website bei OVH online stellen|Verbinden Sie sich mit Ihrem Storage (FTP), um die Dateien Ihrer Website dorthin zu importieren. Legen Sie diese im Ordner **„www“** ab, um sie online zu stellen. Ihre FTP-Login-Daten werden Ihnen per E-Mail zugesandt.|
-|3|Eine OVH Datenbank anlegen|Wenn Ihre Website eine Datenbank verwendet, muss über Ihr [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eine [neue Datenbank bei OVH eingerichtet](https://docs.ovh.com/de/hosting/verwaltung-einer-datenbank-in-ihrem-webhosting/){.external} werden.|
+|3|Eine OVH Datenbank anlegen|Wenn Ihre Website eine Datenbank verwendet, muss über Ihr [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eine [neue Datenbank bei OVH eingerichtet](https://docs.ovh.com/de/hosting/verwaltung-einer-datenbank-in-ihrem-webhosting/){.external} werden.|
 |4|Die Daten der Datenbank importieren|Importieren Sie das Backup Ihrer Datenbank mithilfe des [Tools, das Ihnen OVH in Ihrem Kundencenter zu Verfügung stellt](https://docs.ovh.com/de/hosting/webhosting_import_einer_mysql-datenbank/){.external}.|
 |5|Website mit einer neuen Datenbank verbinden|Die Konfigurationsdatei Ihrer Website enthält immer noch die Informationen Ihrer bisherigen Datenbank. Bearbeiten Sie diese Datei in Ihrem OVH Storage und geben Sie die Daten der OVH Datenbank an.|
 
@@ -137,7 +137,7 @@ Die Konfiguration Ihrer Domain bleibt unverändert und Ihre Website wird weiterh
 
 #### Schritt 3: Ihre E-Mail-Adressen bei OVH neu erstellen
 
-**Sobald der Transfer Ihrer Domain abgeschlossen ist**, erhalten Sie eine E-Mail, die Sie darüber informiert, dass Ihr E-Mail-Dienst und Ihr Webhosting fertig installiert wurden. Anschließend erstellen Sie die gleichen E-Mail-Adressen bei OVH, die Sie bei Ihrem bisherigen Anbieter verwenden (sie müssen denselben Namen haben). Gehen Sie links in Ihrem OVH Kundencenter in den Bereich [E-Mails](https://www.ovh.com/auth/?action=gotomanager){.external} und klicken Sie anschließend auf das Webhosting Angebot, das Sie soeben bestellt haben (mit demselben Namen wie Ihre Domain). Klicken Sie auf den Button `Eine E-Mail-Adresse erstellen`{.action} und folgen Sie den Schritten des Assistenten.
+**Sobald der Transfer Ihrer Domain abgeschlossen ist**, erhalten Sie eine E-Mail, die Sie darüber informiert, dass Ihr E-Mail-Dienst und Ihr Webhosting fertig installiert wurden. Anschließend erstellen Sie die gleichen E-Mail-Adressen bei OVH, die Sie bei Ihrem bisherigen Anbieter verwenden (sie müssen denselben Namen haben). Gehen Sie links in Ihrem OVH Kundencenter in den Bereich [E-Mails](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und klicken Sie anschließend auf das Webhosting Angebot, das Sie soeben bestellt haben (mit demselben Namen wie Ihre Domain). Klicken Sie auf den Button `Eine E-Mail-Adresse erstellen`{.action} und folgen Sie den Schritten des Assistenten.
 
 Da die Konfiguration Ihrer Domain nicht verändert wurde, werden neue Nachrichten weiterhin über die E-Mail-Adressen bei Ihrem bisherigen Anbieter empfangen, solange die DNS Auflösung aktiv ist. Verwenden Sie diese auch weiterhin für den Versand Ihrer E-Mails.
 
@@ -145,7 +145,7 @@ Da die Konfiguration Ihrer Domain nicht verändert wurde, werden neue Nachrichte
 
 Nun, da Ihre Website transferiert ist, Ihre E-Mail-Adressen bei OVH neu angelegt sind und auch Ihre Domain zu OVH transferiert wurde, muss die Konfiguration Ihrer Domain angepasst werden. Ersetzen Sie hierzu die bisherigen DNS Server Ihrer Domain mit den OVH DNS Servern.
 
-Diese Änderung erfolgt über Ihre [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}. Hilfreiche Informationen hierzu finden Sie in der Anleitung *[Allgemeine Informationen zu den DNS Servern](https://docs.ovh.com/de/domains/webhosting_allgemeine_informationen_zu_den_dns_servern/){.external}*.
+Diese Änderung erfolgt über Ihre [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Hilfreiche Informationen hierzu finden Sie in der Anleitung *[Allgemeine Informationen zu den DNS Servern](https://docs.ovh.com/de/domains/webhosting_allgemeine_informationen_zu_den_dns_servern/){.external}*.
 
 Mit dieser Änderung können Sie folgendes erreichen:
 

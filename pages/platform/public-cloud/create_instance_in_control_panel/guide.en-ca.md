@@ -16,7 +16,7 @@ The [Public Cloud](https://www.ovhcloud.com/en-ca/public-cloud/){.external} lets
 
 ## Requirements
 
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 * a [Public Cloud](https://www.ovhcloud.com/en-ca/public-cloud/){.external} project created in your OVHcloud account
 * an SSH key created in your OVHcloud customer account
 
@@ -25,7 +25,7 @@ The [Public Cloud](https://www.ovhcloud.com/en-ca/public-cloud/){.external} lets
 
 ### Add an instance
 
-First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click on the `Public Cloud`{.action} menu.
+First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} and click on the `Public Cloud`{.action} menu.
 
 ![cloud menu](images/pci-instance-cloud-01_2020.png){.thumbnail}
 

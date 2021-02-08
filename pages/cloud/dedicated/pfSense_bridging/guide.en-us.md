@@ -15,7 +15,7 @@ Bridged networking can be used to configure your pfSense virtual machine to be a
 
 - A dedicated server with a hypervisor installed (e.g. [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, [Citrix Xenserver](https://www.citrix.com/products/citrix-hypervisor/){.external}, [Proxmox](https://www.proxmox.com/en/proxmox-ve){.external}, etc.)
 - At least one [failover IP](https://www.ovhcloud.com/en/bare-metal/ip/) address attached to the server 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} 
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} 
 
 ## Recommendations for your pfSense virtual machine
 
@@ -42,7 +42,7 @@ For the pfSense virtual machines network configuration, we will use the followin
 
 #### Assigning a virtual MAC address
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click on the `Bare Metal Cloud`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} and click on the `Bare Metal Cloud`{.action} menu. Then click on the `IP`{.action} menu on the left side of the page, and then locate your failover IP address in the table.
 
 ![Failover IP](images/virtual_mac_01_2020.png){.thumbnail}
 

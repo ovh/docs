@@ -18,7 +18,7 @@ Na Internetu existuje nepřeberné množství stránek. Ať již chcete zveřejn
 ## Prerekvizity
 
 - Některý z [webhostingových balíčků OVH](https://www.ovh.cz/webhosting/){.external}.
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager).
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 ## Postup
 
@@ -35,7 +35,7 @@ Při úpravách konfigurace webhostingu dochází k úpravám v konfiguraci, kte
 
 #### Fáze 1: přístup do administračního rozhraní webhostingu
 
-Přihlaste se do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V záložce `Základní informace`{.action} přejděte do karty Konfigurace. V řádku `Verze globálního PHP`{.action} klikněte na ikonku tří teček `(...)`{.action} a vyberte možnost `Upravit konfiguraci`{.action}.
+Přihlaste se do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V záložce `Základní informace`{.action} přejděte do karty Konfigurace. V řádku `Verze globálního PHP`{.action} klikněte na ikonku tří teček `(...)`{.action} a vyberte možnost `Upravit konfiguraci`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 

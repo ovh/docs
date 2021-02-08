@@ -52,7 +52,7 @@ La autenticación se lleva a cabo médiente una clave DKIM que debe de añadir a
 
 ara optimizar el envío de correos electrónicos y evitar que sus correos sean bloqueado, usted puede configurar la IP inversa con su nombre de dominio.
 
-Para modificar la IP inversa en su [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) {.external}, vaya a `servidores` {.action}, `IP`{.action}. Entonces seleccione la dirección IPV4, haga click en la rueda dentada en la parte derecha, haga click en `Modificar la inversa`{.action}:
+Para modificar la IP inversa en su [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) {.external}, vaya a `servidores` {.action}, `IP`{.action}. Entonces seleccione la dirección IPV4, haga click en la rueda dentada en la parte derecha, haga click en `Modificar la inversa`{.action}:
 
 ![Reverse IP](images/reverse_ip_2020.png)
 

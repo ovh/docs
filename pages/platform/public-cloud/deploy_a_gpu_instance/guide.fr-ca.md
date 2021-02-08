@@ -39,7 +39,7 @@ Toutes les images que nous proposons peuvent être utilisées sur une instance G
 > Si vous n'êtes pas à l'aise avec la compilation manuelle de module noyau, nous vous recommandons d'utiliser une distribution officiellement supportée par Nvidia, pour laquelle ils fournissent des drivers *clés-en-main* : <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Une fois connecté dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} dans votre project Public Cloud, cliquez sur `Ajouter un serveur`{.action} et choisissez une instance GPU :
+Une fois connecté dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans votre project Public Cloud, cliquez sur `Ajouter un serveur`{.action} et choisissez une instance GPU :
 
 ![public-cloud](images/EN-Flavors_2020.png){.thumbnail}
 

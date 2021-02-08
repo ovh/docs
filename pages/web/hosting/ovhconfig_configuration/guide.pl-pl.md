@@ -37,7 +37,7 @@ Kontynuuj lekturę przewodnika, jeśli chcesz zmodyfikować ręcznie plik .ovhco
 
 Przygotuj główny identyfikator FTP, hasło oraz adres serwera FTP. Następnie, przy użyciu tych informacji, zaloguj się do Twojej przestrzeni dyskowej. Jeśli potrzebujesz pomocy, skorzystaj z dokumentacji zatytułowanej [Logowanie do przestrzeni dyskowej](https://docs.ovh.com/pl/hosting/hosting_www_umieszczenie_strony_w_internecie/#2-logowanie-do-przestrzeni-dyskowej){.external}.
 
-**Jeśli nie posiadasz wskazanych wyżej informacji**, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i kliknij `Hosting`{.action} na pasku usług po lewej stronie. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. Znajdziesz tam informacje potrzebne do zalogowania się. Jeśli nie posiadasz hasła FTP, zapoznaj się z instrukcjami zawartymi w przewodniku [Zmiana hasła do konta FTP](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/){.external}.
+**Jeśli nie posiadasz wskazanych wyżej informacji**, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij `Hosting`{.action} na pasku usług po lewej stronie. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. Znajdziesz tam informacje potrzebne do zalogowania się. Jeśli nie posiadasz hasła FTP, zapoznaj się z instrukcjami zawartymi w przewodniku [Zmiana hasła do konta FTP](https://docs.ovh.com/pl/hosting/zmiana-hasla-konto-ftp/){.external}.
 
 ![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
 

@@ -16,7 +16,7 @@ When creating an instance, it isn't possible to configure only one SSH key. Howe
 
 ## Requirements
 
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
 * a [Public Cloud Instance](https://www.ovh.com/asia/public-cloud/instances/){.external} in your OVHcloud account
 * Command line access to your instance via SSH
 

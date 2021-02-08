@@ -16,13 +16,13 @@ OVHcloud [Public Cloud](https://www.ovh.pl/public-cloud/){.external} umożliwia 
 
 ## Wymagania początkowe
 
-* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 * projekt [Public Cloud](https://www.ovh.pl/public-cloud/){.external} utworzony na koncie OVHcloud
 * klucz SSH utworzony w Panelu klienta OVHcloud
 
 ### Wdrażanie instancji Public Cloud
 
-Aby wdrożyć instancję Public Cloud, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Kliknij pozycję `Public Cloud`{.action} w lewym górnym rogu strony. Na następującym ekranie kliknij przycisk strzałki obok domyślnej nazwy projektu (w lewym górnym rogu ekranu). Wybierz projekt, w którym chcesz utworzyć nową instancję.
+Aby wdrożyć instancję Public Cloud, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij pozycję `Public Cloud`{.action} w lewym górnym rogu strony. Na następującym ekranie kliknij przycisk strzałki obok domyślnej nazwy projektu (w lewym górnym rogu ekranu). Wybierz projekt, w którym chcesz utworzyć nową instancję.
 
 ![select_project](images/select_project.png){.thumbnail}
 

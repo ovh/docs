@@ -25,7 +25,7 @@ Zum Schutz seiner weltweiten Infrastruktur und der Server seiner Kunden bietet O
 ## Voraussetzungen
 
 - Sie haben eine OVH Dienstleistung abonniert, in der die Firewall Network Option enthalten ist ([Dedicated Server](https://www.ovh.de/dedicated_server/){.external}, [VPS](https://www.ovh.de/virtual_server/){.external}, [Public Cloud Instanz](https://www.ovh.de/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.de/private-cloud/){.external}, [Failover-IP](https://www.ovh.de/dedicated_server/ip_failover.xml){.external}, ...)
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 - Sie verfügen über grundlegende Netzwerkkenntnisse.
 
 
@@ -38,7 +38,7 @@ Zum Schutz seiner weltweiten Infrastruktur und der Server seiner Kunden bietet O
 > Firewall Network schützt die IP-Adressen, die mit einer Maschine verbunden sind. Daher ist es notwendig, jede IP-Adresse einzeln zu konfigurieren, eine globale Serverkonfiguration ist nicht möglich.
 > 
 
-Wenn Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt sind, gehen Sie in den Bereich `IP`{.action} und klicken Sie auf `...`{.action}, um die Firewall für die gewünschte IPv4-Adresse zu aktivieren.
+Wenn Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt sind, gehen Sie in den Bereich `IP`{.action} und klicken Sie auf `...`{.action}, um die Firewall für die gewünschte IPv4-Adresse zu aktivieren.
 
 ![Aktivierung der Firewall Network](images/firewall_creation.png){.thumbnail}
 

@@ -17,14 +17,14 @@ Um die APIs für Horizon oder OpenStack verwenden zu können, müssen Sie einen 
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account. (Es muss älter als 7 Tage sein, wenn es Ihr erstes Projekt ist. Wenden Sie sich über eine Support-Anfrage an das Cloud Team, um zu prüfen, ob Sie das Projekt frühzeitig entsperren können. Für andere Projekte gilt diese Einschränkung nicht.)
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 
 ## In der praktischen Anwendung
 
 ### Einen OpenStack-Benutzer erstellen
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend über die blaue die Pfeilschaltfläche Ihr Projekt aus.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action} und wählen Sie anschließend über die blaue die Pfeilschaltfläche Ihr Projekt aus.
 
 Klicken im linken Menü auf `Users & Roles`{.action} unter "Project Management".
 

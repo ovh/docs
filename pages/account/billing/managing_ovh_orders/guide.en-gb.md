@@ -9,18 +9,18 @@ section: Billing
 
 ## Objective
 
-When you place an order, you can track and manage it from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager).
+When you place an order, you can track and manage it from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
 **This guide will explain how to manage your orders.**
 
 > [!primary]
 >
-> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you need to, please refer to your OVHcloud contracts, which you can access from the [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} by going to `My services`{.action}, then `Contracts`{.action}.
+> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you need to, please refer to your OVHcloud contracts, which you can access from the [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} by going to `My services`{.action}, then `Contracts`{.action}.
 >
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - at least one OVHcloud product order
 
 
@@ -39,11 +39,11 @@ A purchase order is generated when you place an order. It lists the products ord
 |3|If you have set a default payment method, it will be offered here. If your product is renewed automatically, a default payment method is required.|
 |4|Here, you will find the available payment methods. We can only offer the payment methods authorised in the account’s country of origin, or those linked to the account type.|
 
-You can view your purchase order at any time in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, as explained below.
+You can view your purchase order at any time in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, as explained below.
 
 ### Accessing purchase orders via the OVHcloud Control Panel
 
-To access the area for managing orders, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then click `View my orders`{.action} in your `Dashboard`.
+To access the area for managing orders, go to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then click `View my orders`{.action} in your `Dashboard`.
 
 ![Control Panel](images/huborders.png){.thumbnail}
 
@@ -73,7 +73,7 @@ You can also view the purchase order in HTML format by clicking on `...`{.action
 
 ### Tracking your order
 
-After generating your purchase order, you can track your order from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Navigate to the `Dashboard`, then click `View my orders`{.action}. Click on `...`{.action} next to your order and select `Order tracking`{.action}. You can also track your order by clicking on the order’s status in the “Status” column.
+After generating your purchase order, you can track your order from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Navigate to the `Dashboard`, then click `View my orders`{.action}. Click on `...`{.action} next to your order and select `Order tracking`{.action}. You can also track your order by clicking on the order’s status in the “Status” column.
 
 ![Order tracking](images/order05b.png){.thumbnail}
 
@@ -85,7 +85,7 @@ The below window will appear, allowing you to track it at 4 stages.
 
 The terms and conditions for the right of withdrawal can be found in our [General terms and conditions of services](https://www.ovh.co.uk/support/contracts/).
 
-If the eligibility criteria for the withdrawal period are met, you can withdraw from a service using the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Navigate to the `Dashboard`, then click `View my orders`{.action}. Click on `...`{.action} next to your order and select `Cancel the order`{.action}.
+If the eligibility criteria for the withdrawal period are met, you can withdraw from a service using the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Navigate to the `Dashboard`, then click `View my orders`{.action}. Click on `...`{.action} next to your order and select `Cancel the order`{.action}.
 
 ![Cancelling an order](images/cancelorder1.png){.thumbnail}
 

@@ -16,7 +16,7 @@ OVH services are generally linked to several contacts. These contacts manage you
 
 ## Requirements
 
-- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - You must have access to the email address linked to your profile.
 - You must have the correct rights for the service concerned.
 - You must have the new contact’s NIC handle (the contact you want to add).
@@ -27,7 +27,7 @@ OVH services are generally linked to several contacts. These contacts manage you
 
 ### Accessing contact management
 
-Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the name linked to your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then click `My contacts`{.action}.
+Log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, click on the name linked to your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then click `My contacts`{.action}.
 
 ![Contact management](images/contactmanagement0.png){.thumbnail}
 
@@ -91,7 +91,7 @@ If one of the contacts has not received this email, the contact email address li
 
 ![Contact management](images/contactmanagement5.png){.thumbnail}
 
-If only one contact has validated the change, a message will appear confirming that the request is still pending validation from the other contact. If one of the contacts has just validated the request, it may take a few minutes for the information to be updated and appear correctly in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+If only one contact has validated the change, a message will appear confirming that the request is still pending validation from the other contact. If one of the contacts has just validated the request, it may take a few minutes for the information to be updated and appear correctly in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ![Contact management](images/contactmanagement6.png){.thumbnail}
 

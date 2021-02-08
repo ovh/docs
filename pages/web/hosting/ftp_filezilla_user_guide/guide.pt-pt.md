@@ -64,7 +64,7 @@ No quadro verde em cima, para que possa estabelecer a ligação ao servidor dist
 |Palavra-passe do utilizador FTP|Trata-se da palavra-passe associada ao login FTP.<br><br> Em função do tipo de software, pode denominar-se “palavra-passe” ou “password”.|
 |Porta de ligação|Este campo é preenchido de forma automática pelo software. Se tiver de preencher alguma informação:<br><br>\- utilize a porta 21 para uma ligação através do protocolo FTP;<br>\- utilize a porta 22 para uma ligação através do protocolo SFTP (caso este esteja ativo).|
 
-Se não possuir estas informações, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção “Web”, e clique em `Alojamentos`{.action} na barra à esquerda. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}. Poderá ver as informações relativas ao seu espaço de armazenamento, assim como uma tabela com os utilizadores FTP e SSH criados no seu alojamento.
+Se não possuir estas informações, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”, e clique em `Alojamentos`{.action} na barra à esquerda. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}. Poderá ver as informações relativas ao seu espaço de armazenamento, assim como uma tabela com os utilizadores FTP e SSH criados no seu alojamento.
 
 Após tudo preenchido de forma correta, clique em Ligação rápida para estabelecer a ligação ao servidor.
 

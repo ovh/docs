@@ -17,7 +17,7 @@ Podczas dodawania konta sprawdź, czy jest włączone połączenie 3G lub Wifi.
 
 
 ## Część 2: Konfiguracja konta e-mail
-Wpisz adres e-mail oraz przypisane do niego hasło (zdefiniowane w [panelu klienta manager](https://www.ovh.com/auth/?action=gotomanager)).
+Wpisz adres e-mail oraz przypisane do niego hasło (zdefiniowane w [panelu klienta manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)).
 
 Następnie kliknij na "Konfiguracja ręczna".
 
@@ -37,7 +37,7 @@ Wpisz informacje dotyczące konta e-mail dla serwera poczty przychodzącej.
 
 "Nazwa użytkownika": cały adres e-mail
 
-"Hasło": Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager).
+"Hasło": Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 "Serwer POP3": SSL0.OVH.NET
 
@@ -63,7 +63,7 @@ Wpisz informacje dotyczące konta e-mail dla serwera poczty wychodzącej.
 
 "Nazwa użytkownika": cały adres e-mail
 
-"Hasło": Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager).
+"Hasło": Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 Kliknij na "Dalej", aby kontynuować.
 
@@ -105,7 +105,7 @@ Informacje dotyczące konfiguracji IMAP dla serwera poczty przychodzącej.
 
 "Nazwa użytkownika": cały adres e-mail
 
-"Hasło": Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager).
+"Hasło": Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 "Serwer IMAP": wpisz ssl0.ovh.net
 
@@ -125,7 +125,7 @@ Informacje dotyczące konfiguracji IMAP dla serwera poczty wychodzącej.
 
 "Nazwa użytkownika": cały adres e-mail
 
-"Hasło": Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager).
+"Hasło": Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 
 ## Konfiguracja POP
@@ -134,7 +134,7 @@ Oto informacje do konfiguracji konta e-mail POP.
 Konfiguracja POP z zabezpieczeniem SSL włączonym/green] lub wyłączonym:
 
 Adres Email : Cały adres e-mail
-Hasło: Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager).
+Hasło: Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 Nazwa użytkownika: Cały adres e-mail
 Serwer poczty przychodzącej:ssl0.ovh.net
 Port serwera poczty przychodzącej:995 lub 110
@@ -162,7 +162,7 @@ Oto informacje do konfiguracji konta e-mail IMAP.
 Konfiguracja IMAP z zabezpieczeniem SSL włączonym/green] lub wyłączonym:
 
 Adres Email : Cały adres e-mail
-Hasło: Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager).
+Hasło: Hasło zdefiniowane w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 Nazwa użytkownika: Cały adres e-mail
 Serwer poczty przychodzącej:ssl0.ovh.net
 Port serwera poczty przychodzącej:993 lub 143

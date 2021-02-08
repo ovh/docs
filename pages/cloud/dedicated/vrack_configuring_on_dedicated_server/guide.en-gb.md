@@ -20,7 +20,7 @@ The vRack or virtual rack allows multiple servers to be grouped together (regard
 - a [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account
 - two or more [vRack compatible servers](https://www.ovh.co.uk/dedicated_servers/){.external}
 - administrative (root) access to the server via SSH
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 - your chosen private IP address range
 
 

@@ -18,13 +18,13 @@ La solution CloudDB permet de bénéficier d’une instance de bases de données
 ## Prérequis
 
 - Disposer d'une [instance CloudDB](https://www.ovh.com/fr/cloud/cloud-databases/){.external}.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
 ### Visionner les informations générales de l'instance
 
-Dans la barre de services à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, rendez-vous dans la section `Bases de données`{.action}, puis sur l'instance concernée. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}.
+Dans la barre de services à gauche de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, rendez-vous dans la section `Bases de données`{.action}, puis sur l'instance concernée. Assurez-vous d'être bien positionné sur l'onglet `Informations générales`{.action}.
 
 > [!primary]
 >
@@ -156,7 +156,7 @@ Sur la fenêtre qui s'affiche, indiquez l'adresse IP ou le masque que vous dési
 
 Pour un hébergement web OVHcloud, vous devez autoriser l'adresse IP « passerelle de sortie » (gateway) de celui-ci . 
 
-Pour retrouvez l'adresse IP « passerelle de sortie », rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur`Hébergement`{.action} dans la colonne de gauche. Sélectionnez votre hébergement dans la liste, puis cliquez sur l'onglet `FTP - SSH`.
+Pour retrouvez l'adresse IP « passerelle de sortie », rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur`Hébergement`{.action} dans la colonne de gauche. Sélectionnez votre hébergement dans la liste, puis cliquez sur l'onglet `FTP - SSH`.
 
 Retrouvez la mention **« Serveur FTP »**, celle-ci vous indiquera le numéro de cluster sur lequel vous êtes, comme ci-dessous.
 

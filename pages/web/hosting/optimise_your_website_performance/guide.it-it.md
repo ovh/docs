@@ -21,7 +21,7 @@ Ti proponiamo qualche spunto per risolvere i problemi di un sito lento e per ott
 - Una [soluzione Web Hosting OVHcloud](https://www.ovh.it/hosting-web/){.external}
 - Una email conferma che la tua soluzione di Web Hosting è stato configurato
 - Un [dominio](https://www.ovh.it/domini/){.external}per accedere al tuo sito
-- avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}OVHcloud
+- avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}OVHcloud
 
 ## Procedura
 
@@ -161,7 +161,7 @@ _Se non usi un database, questo step è facoltativo_
 È possibile accedere al database utilizzando PHPMyAdmin. (Dato che le istruzioni su come utilizzare PHPMyAdmin andrebbero oltre lo scopo di questa guida, non saranno forniti ulteriori dettagli).
 Tuttavia, sono disponibili numerose guide esterne su questo argomento.
 
-**Come accedere al database tramite phpMyAdmin:** Per accedere al database tramite phpMyAdmin, segui la procedura dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}:
+**Come accedere al database tramite phpMyAdmin:** Per accedere al database tramite phpMyAdmin, segui la procedura dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}:
 
 - Clicca sul tuo dominio nella sezione `Hosting`{.action}
 - Vai alla scheda `Database`{.action}

@@ -45,7 +45,7 @@ Revenons quelques instants à notre site de petites annonces. Il nous faut maint
 ### Configurer le multisite blog.mypersonaldomain.ovh
 Tout se passe au sein de l’espace client d’OVH :
 
-- Connectez-vous avec vos identifiant et mot de passe sur l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Connectez-vous avec vos identifiant et mot de passe sur l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Dans le menu, vous retrouverez votre hébergement web dans la rubrique **Hébergements**, avec le domaine que vous avez commandé simultanément. Pour nous, il s’agit de **mypersonaldomain.ovh**
 
 ![Menu contenant mypersonaldomain.ovh](images/menu.png){.thumbnail}

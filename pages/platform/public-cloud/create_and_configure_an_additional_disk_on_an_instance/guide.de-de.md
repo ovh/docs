@@ -19,14 +19,14 @@ Es ist möglich, zusätzliche Festplatten für Ihre OVHcloud Public Cloud Instan
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen über eine [Public Cloud-Instanz](https://www.ovhcloud.com/de/public-cloud).
 - Sie haben administrativen Zugriff (Root) auf Ihre Instanz über SSH (nur Linux).
 - Sie haben Administratorzugriff auf Ihre Instanz über RDP (nur Windows).
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und klicken Sie Sie oben auf der Seite auf `Public Cloud`{.action}. Wählen Sie links zunächst das Projekt aus, in dem Sie die Festplatte erstellen möchten.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie Sie oben auf der Seite auf `Public Cloud`{.action}. Wählen Sie links zunächst das Projekt aus, in dem Sie die Festplatte erstellen möchten.
 
 Klicken Sie hier auf die Schaltfläche `Volume erstellen`{.action}.
 

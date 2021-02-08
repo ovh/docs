@@ -18,7 +18,7 @@ Oto odpowiedni przewodnik: [Dodanie usługi vRack do instancji Public cloud prze
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - Uruchomiona usługa vRack - [Włączanie i wyłączanie usługi vRack w Projekcie](https://docs.ovh.com/pl/public-cloud/Wlaczanie-wylaczanie-vrack/){.external}
 - Uruchomiony i przypisany Projekt do usługi vRack - [Połączenie instancji Public Cloud z innymi produktami OVH za pomocą vRack](https://docs.ovh.com/pl/public-cloud/polaczenie-vrack-public-cloud-inne-uslugi/){.external}
 

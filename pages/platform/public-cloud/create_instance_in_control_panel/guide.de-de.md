@@ -16,7 +16,7 @@ Sie können die OVHcloud [Public Cloud](https://www.ovhcloud.com/de/public-cloud
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben bereits ein [Public Cloud-Projekt](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account angelegt.
 - Sie haben im OVHcloud Kundencenter einen SSH-Schlüssel hinzugefügt.
 

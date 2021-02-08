@@ -40,7 +40,7 @@ Afin de gérer au mieux le crédit de votre compte SMS, il est possible de fixer
 
 ### Étape 1 : créer un utilisateur API
 
-Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager), puis sélectionnez `Télécom`{.action} (1). Cliquez ensuite sur `SMS`{.action} à gauche (2)  puis choisissez votre compte SMS (3).
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis sélectionnez `Télécom`{.action} (1). Cliquez ensuite sur `SMS`{.action} à gauche (2)  puis choisissez votre compte SMS (3).
 
 Cliquez enfin sur l'onglet `Utilisateurs API`{.action} (4).
 

@@ -15,7 +15,7 @@ O novo Load Balancer OVH oferece diferentes tipos de repartição de carga para 
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - Ter uma Farm de servidores criada.
 
 

@@ -16,7 +16,7 @@ Konsola KVM pozwala na bezpośrednie połączenie z serwerem VPS bez koniecznoś
 ## Wymagania początkowe
 
 - Jeden [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud.
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager)
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
@@ -24,13 +24,13 @@ Konsola KVM pozwala na bezpośrednie połączenie z serwerem VPS bez koniecznoś
 
 #### Aktualna gama VPS
 
-Zaloguj się do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), wejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer na liście nawigacyjnej znajdującej się po lewej stronie, pod `VPS`{.action}. W tej sekcji kliknij `...`{.action} po prawej stronie nazwy serwera VPS w polu "Twój VPS".
+Zaloguj się do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), wejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer na liście nawigacyjnej znajdującej się po lewej stronie, pod `VPS`{.action}. W tej sekcji kliknij `...`{.action} po prawej stronie nazwy serwera VPS w polu "Twój VPS".
 
 ![Otwórz KVM](images/kvm-new1.png){.thumbnail}
 
 #### Poprzednia gama VPS
 
-Zaloguj się do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), wejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer na liście nawigacyjnej znajdującej się po lewej stronie, pod `VPS`{.action}. W tej sekcji kliknij link skrócony o nazwie `KVM`{.action}.
+Zaloguj się do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), wejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer na liście nawigacyjnej znajdującej się po lewej stronie, pod `VPS`{.action}. W tej sekcji kliknij link skrócony o nazwie `KVM`{.action}.
 
 ![Kliknij przycisk](images/kvm-new2.png){.thumbnail}
 

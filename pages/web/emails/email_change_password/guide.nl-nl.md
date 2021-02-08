@@ -17,7 +17,7 @@ Ontdek hoe u het wachtwoord van een MX Plan e-mailadres kunt wijzigen.
 
 ## Vereisten
 - U moet beschikken over het MX Plan-pakket (inbegrepen bij [OVH-webhosting](https://www.ovh.com/nl/shared-hosting/){.external} of apart verkrijgbaar).
-- U moet gemachtigd zijn om MX Plan te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet gemachtigd zijn om MX Plan te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 > [!primary]
 >
@@ -28,7 +28,7 @@ Ontdek hoe u het wachtwoord van een MX Plan e-mailadres kunt wijzigen.
 
 ### Stap 1: Ga naar het beheer van uw e-maildienst
 
-Log in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} om met de bewerking te beginnen.  Klik op `E-mails`{.action} in het servicemenu aan de linkerkant en selecteer vervolgens de domeinnaam waarvoor u een MX Plan-pakket hebt afgesloten. Ga naar het `E-mails`{.action}-tabblad.
+Log in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} om met de bewerking te beginnen.  Klik op `E-mails`{.action} in het servicemenu aan de linkerkant en selecteer vervolgens de domeinnaam waarvoor u een MX Plan-pakket hebt afgesloten. Ga naar het `E-mails`{.action}-tabblad.
 
 De getoonde tabel bevat alle e-mailadressen die zijn aangemaakt als onderdeel van uw MX Plan-pakket.
 

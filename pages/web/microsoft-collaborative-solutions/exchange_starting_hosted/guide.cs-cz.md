@@ -20,13 +20,13 @@ Služba Hosted Exchange nabízí profesionální e-mailové účty a široké sp
 - Předplatné služby [Hosted Exchange](https://www.ovh.cz/emails/hosted-exchange/){.external}.
 - E-mail s potvrzením o úspěšném dokončení instalace služby Hosted Exchange.
 - Doména.
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Postup
 
 ### Fáze 1: přístup do rozhraní pro správu služby
 
-Jakmile je služba Hosted Exchange vytvořena a dostupná, můžete ji začít spravovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Jakmile je služba Hosted Exchange vytvořena a dostupná, můžete ji začít spravovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 Připojte se do Zákaznického prostoru, v levém postranním panelu klikněte na sekci `Microsoft`{.action} a následně vyberte `Exchange`{.action}. Ze seznamu vyberte požadovanou službu Hosted Exchange.
 
@@ -91,7 +91,7 @@ Jakmile jsou Vaše účty nakonfigurovány, nezbývá než začít je naplno vyu
 
 Pokud si svůj e-mail přejete nakonfigurovat na externím e-mailovém klientu, smartphonu či tabletu, podívejte se do následující dokumentace: <https://docs.ovh.com/cz/cs/microsoft-collaborative-solutions/>. Pro optimální výkon vždy prosím ověřte kompatibilitu používaného softwaru se službou Exchange.
 
-Licence Outlook si můžete objednat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Licence Office 365 si můžete objednat na webových stránkách <https://www.ovh.cz/office-365/>. 
+Licence Outlook si můžete objednat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Licence Office 365 si můžete objednat na webových stránkách <https://www.ovh.cz/office-365/>. 
 
 > [!primary]
 >
@@ -101,7 +101,7 @@ Licence Outlook si můžete objednat prostřednictvím [Zákaznického prostoru 
 
 ### Fáze 6: konfigurace funkcí pro týmovou spolupráci (volitelné)
 
-Jakmile je Vaše služba Hosted Exchange nakonfigurována a plně funkční, můžete v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} začít spravovat funkce pro týmovou spolupráci. Díky těmto funkcím budete moci vytvářet nové zdroje (konferenční místnosti, vybavení apod.), skupiny a další.
+Jakmile je Vaše služba Hosted Exchange nakonfigurována a plně funkční, můžete v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} začít spravovat funkce pro týmovou spolupráci. Díky těmto funkcím budete moci vytvářet nové zdroje (konferenční místnosti, vybavení apod.), skupiny a další.
 
 Pro jejich aktivaci přejděte do základního rozhraní pro správu služby Hosted Exchange a klikněte na příslušnou záložku.
 

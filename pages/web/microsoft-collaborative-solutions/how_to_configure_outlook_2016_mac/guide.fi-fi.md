@@ -44,7 +44,7 @@ Ilmoita sähköpostiosoitteesi ja klikkaa `Jatka`{.action}. Jos näkyviin tulee 
 |Postiosoite|Anna nimi, jolla tunnistat tilin muista Outlook-sovelluksessa näkyvistä tileistä.|
 |VERKKOTUNNUS\käyttäjänimi tai postiosoite|Syötä täydellinen sähköpostiosoite.|
 |Salasana|Syötä sähköpostiosoitteen salasana.|
-|Palvelin|Verkkotunnuksesi DNS-konfiguroinnista riippuen palvelimen syöttäminen voi olla valinnaista. Ilmoita tarvittaessa palvelin, jolla Exchange-palveluasi ylläpidetään. Voit löytää sen [hallintapaneelista](https://www.ovh.com/auth/?action=gotomanager){.external} kyseisen Exchange-palvelun välilehdeltä `Yleiset tiedot`{.action} ja sitten kohdasta `Yhteys`{.action}.|
+|Palvelin|Verkkotunnuksesi DNS-konfiguroinnista riippuen palvelimen syöttäminen voi olla valinnaista. Ilmoita tarvittaessa palvelin, jolla Exchange-palveluasi ylläpidetään. Voit löytää sen [hallintapaneelista](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} kyseisen Exchange-palvelun välilehdeltä `Yleiset tiedot`{.action} ja sitten kohdasta `Yhteys`{.action}.|
 
 Kun tiedot on annettu, klikkaa painiketta `Lisää tili`{.action}. Jos tiedot ovat oikein, tilille kirjautuminen onnistuu.
 

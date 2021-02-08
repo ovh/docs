@@ -24,7 +24,7 @@ Vous pouvez par exemple proposer à vos appelants, via la seule composition de v
 ## Prérequis
 
 - Disposer d'un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/){.external}.
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, partie `Télécom`{.action}
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}
 
 ## Lexique
 
@@ -40,7 +40,7 @@ Vous pouvez par exemple proposer à vos appelants, via la seule composition de v
 
 ### Étape 1 : Appliquer la configuration Contact Center Solution
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, partie « Télécom ». Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez le numéro concerné. 
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie « Télécom ». Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez le numéro concerné. 
 Dans l'onglet `Configuration`{.action}, cliquez sur `Passer en mode expert`{.action} pour sélectionner **Contact Center Solution**. 
 Validez en cliquant sur `Paramétrer`{.action}. L'application de la configuration prend quelques secondes.
 

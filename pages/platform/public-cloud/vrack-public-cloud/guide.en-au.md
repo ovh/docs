@@ -17,7 +17,7 @@ The [vRack](https://www.ovh.com.au/solutions/vrack/) is a private network that a
 ## Requirements
 
 - Have a Public Cloud project
-- Be connected to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- Be connected to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
 - Create an OpenStack user (optional)
 - Basic networking knowledge
 
@@ -31,7 +31,7 @@ Depending on your technical profile and your needs, you will have to choose whic
 
 ### OVHcloud Client Space
 
-The [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) is a completely visual interface, making it an ideal interface if you have only one vLan to manage. You will not be able to customize the private IP range that will only be in 10.x.x.x/16.
+The [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) is a completely visual interface, making it an ideal interface if you have only one vLan to manage. You will not be able to customize the private IP range that will only be in 10.x.x.x/16.
 
 The vLan will be deployed by default to all zones. You will only have the option of activating the gateways or not.
 
@@ -105,7 +105,7 @@ Once the vRack is activated, you will find this service under the name "pn-xxxxx
 
 #### From OVHcloud Client Space
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, go to the `Public Cloud' section{.action} and then select the Public Cloud project of your choice at the top left.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}, go to the `Public Cloud' section{.action} and then select the Public Cloud project of your choice at the top left.
 
 ![project selection](images/vrack1.png){.thumbnail}
 
@@ -375,7 +375,7 @@ So, for example, if you have a eth0 public interface, you will also have an eth1
 
 ##### **From OVHcloud** Client Space
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, go to the `Public Cloud' section{.action} and then select the relevant Public Cloud project in the top left.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}, go to the `Public Cloud' section{.action} and then select the relevant Public Cloud project in the top left.
 
 Then click `Instances`{.action} in the left side menu. Then click the button `...`{.action} to the right of the instance concerned and then to `Instance Detail`{.action}.
 

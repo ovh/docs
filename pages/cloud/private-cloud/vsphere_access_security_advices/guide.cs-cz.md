@@ -16,7 +16,7 @@ Pro zajištění optimální integrity Vaší infrastruktury je zapotřebí omez
 
 ## Prerekvizity
 
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Postup
 
@@ -24,13 +24,13 @@ Pro zajištění optimální integrity Vaší infrastruktury je zapotřebí omez
 
 Jako první krok pro zabezpečení Vašeho klienta vSphere se nabízí omezení přístupu pro určité IP adresy. Za tímto účelem doporučujeme pracovat s registračním systémem, používajícím whitelisting. Tato technika funguje na principu odepírání přístupu pro všechny IP adresy. Následně je možné přidávat IP adresy, jimž si ke své IP adrese přejete přístup umožnit.
 
-Tato akce je dostupná přímo v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Přejděte do administračního rozhraní služby Private Cloud a klikněte na záložku `Zabezpečení`{.action}. Zobrazí se tabulka obsahující přehled všech autorizovaných a zamítnutých IP adres. Pro přidání nové IP adresy klikněte na tlačítko `Přidat IP adresy`{.action} v pravé části obrazovky:
+Tato akce je dostupná přímo v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Přejděte do administračního rozhraní služby Private Cloud a klikněte na záložku `Zabezpečení`{.action}. Zobrazí se tabulka obsahující přehled všech autorizovaných a zamítnutých IP adres. Pro přidání nové IP adresy klikněte na tlačítko `Přidat IP adresy`{.action} v pravé části obrazovky:
 
 ![Přidat IP adresu](images/adding_ip.png){.thumbnail}
 
 ### Vytvoření specifických uživatelů
 
-Důrazně doporučujeme vytvářet individuální uživatelské účty pro každého uživatele, který vyžaduje přístup k Vaší infrastruktuře. Tato akce je opět dostupná přímo v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (záložka `Uživatelé`{.action}). Pro přidání nového uživatele klikněte na tlačítko `Vytvořit uživatele`{.action} v pravé části obrazovky. 
+Důrazně doporučujeme vytvářet individuální uživatelské účty pro každého uživatele, který vyžaduje přístup k Vaší infrastruktuře. Tato akce je opět dostupná přímo v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} (záložka `Uživatelé`{.action}). Pro přidání nového uživatele klikněte na tlačítko `Vytvořit uživatele`{.action} v pravé části obrazovky. 
 
 ![Uživatelé](images/users.png){.thumbnail}
 
@@ -58,7 +58,7 @@ Práva jednotlivých uživatelů je možné spravovat po kliknutí na ikonku ozu
 
 Na konci používání služby je vhodné příslušnou relaci řádně ukončit. Za účelem omezení času spojení je možné nastavit přesný čas, po jehož uplynutí daná relace expiruje.
 
-Tato akce je opět dostupná přímo v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Přejděte do administračního rozhraní služby Private Cloud a klikněte na záložku `Zabezpečení`{.action}. Následně klikněte na tlačítko `Upravit dobu expirace`{.action} v pravé části obrazovky. Zobrazí se dialogové okno, v jehož rámci můžete nastavit čas (v minutách), po jehož uplynutí relace expiruje.
+Tato akce je opět dostupná přímo v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Přejděte do administračního rozhraní služby Private Cloud a klikněte na záložku `Zabezpečení`{.action}. Následně klikněte na tlačítko `Upravit dobu expirace`{.action} v pravé části obrazovky. Zobrazí se dialogové okno, v jehož rámci můžete nastavit čas (v minutách), po jehož uplynutí relace expiruje.
 
 ![Expirace relace](images/expiration.png){.thumbnail}
 

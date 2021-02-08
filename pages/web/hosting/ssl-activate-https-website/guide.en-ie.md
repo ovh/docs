@@ -18,7 +18,7 @@ With an OVH Web Hosting plan, you can get a free SSL certificate. An SSL certifi
 
 - an [SSL certificate](https://www.ovh.co.uk/ssl/){.external} set up on your [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}
 - at least one website set up and accessible via your OVH Web Hosting plan
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
 
@@ -41,7 +41,7 @@ The table below provides a breakdown of the changes you will need to make.
 
 ### Step 1: Activate the SSL certificate on the Web Hosting plan.
 
-You can activate the SSL certificate on your Web Hosting plan via the  [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. To do this, you will need to make two separate changes:
+You can activate the SSL certificate on your Web Hosting plan via the  [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. To do this, you will need to make two separate changes:
 
 |Change|Description|
 |---|---|
@@ -50,7 +50,7 @@ You can activate the SSL certificate on your Web Hosting plan via the  [OVH Cont
 
 You can read a detailed version of the changes you need to make in our guide to [Managing an SSL certificate on a Web Hosting plan](../ssl-certificates-on-web-hosting-plans){.external}. If you have just ordered an OVH Web Hosting plan, you may find that a free SSL certificate has already been set up on it, and that the multisite already has an active SSL connection.
 
-To check this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Click on the `General information`{.action} tab. Beneath ‘SSL certificate’, the word ‘Yes’ should be visible, showing that an SSL certificate is set up on your Web Hosting plan. 
+To check this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Click `Web hosting`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Click on the `General information`{.action} tab. Beneath ‘SSL certificate’, the word ‘Yes’ should be visible, showing that an SSL certificate is set up on your Web Hosting plan. 
 
 ![httpswebsite](images/activate-https-website-ssl-step2.png){.thumbnail}
 

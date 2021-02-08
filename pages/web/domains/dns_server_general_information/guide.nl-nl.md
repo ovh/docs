@@ -20,8 +20,8 @@ Deze handleiding legt uit hoe u de DNS-servers voor uw OVH-domeinnaam wijzigen.
 ## Vereisten
 
 - U moet een domeinnaam hebben geregistreerd bij OVH.
-- U moet gemachtigd zijn om de betreffende domeinnaam te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet gemachtigd zijn om de betreffende domeinnaam te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 > [!warning]
 >
@@ -47,7 +47,7 @@ Echter:
 
 ### Stap 1: Toegang tot het beheer van de DNS OVH-zone van uw domein
 
-Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klik op `Domeinen`{.action} in de dienstenbalk aan de linkerkant, kies dan de betreffende domeinnaam. Ga naar het `DNS-servers`{.action}-tabblad.
+Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, klik op `Domeinen`{.action} in de dienstenbalk aan de linkerkant, kies dan de betreffende domeinnaam. Ga naar het `DNS-servers`{.action}-tabblad.
 
 De tabel die verschijnt, toont de DNS-servers die momenteel zijn ingesteld met OVH voor uw domeinnaam. Verschillende DNS-servers kunnen worden vermeld, met een rij in de tabel voor elke server.
 
@@ -72,7 +72,7 @@ Nadat u deze informatie hebt ingevoerd, klikt u op `Configuratie toepassen`{.act
 
 Nadat u de vereiste wijzigingen hebt aangebracht, moet u wachten tot ze volledig effectief zijn. Er moet rekening worden gehouden met twee opeenvolgende termijnen:
 
-- De wijziging aan de OVH-kant moet in acht worden genomen door de organisatie die de extensie van uw domeinnaam beheert. U kunt de voortgang hiervan volgen in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} door naar het gedeelte `Domeinen`{.action} op de dienstenbalk aan de linkerkant te gaan, en vervolgens `Lopende procedures (‘Bewerkingen in uitvoering’)`{.action}.
+- De wijziging aan de OVH-kant moet in acht worden genomen door de organisatie die de extensie van uw domeinnaam beheert. U kunt de voortgang hiervan volgen in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} door naar het gedeelte `Domeinen`{.action} op de dienstenbalk aan de linkerkant te gaan, en vervolgens `Lopende procedures (‘Bewerkingen in uitvoering’)`{.action}.
 
 - Nadat de wijziging door de organisatie die uw domeinnaamextensie beheert, in aanmerking is genomen, moet u maximaal 48 uur wachten voordat de door u doorgevoerde wijzigingen volledig van kracht zijn.
 

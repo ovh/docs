@@ -18,7 +18,7 @@ Met Exchange kunt u zakelijke e-mailadressen gebruiken die het voor een team gem
 
 - U moet beschikken over [Exchange](https://www.ovh.nl/emails/){.external}.
 - U moet beschikken over minstens twee actieve Exchange accounts op hetzelfde OVH Exchange platform. 
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager).
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl).
 - U moet toegang hebben tot het Exchange account waarvan rechten worden toegewezen.
 
 ## Instructie
@@ -40,7 +40,7 @@ Wanneer u het account waaraan u rechten wilt toebedelen, de rechten die u wilt t
 
 ### Stap 1: Uitvoeren van de overdracht
 
-Log in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} om met de bewerking te beginnen. Klik op `Microsoft`{.action} in de dienstenbalk aan de linkerkant en vervolgens op `Exchange`{.action}. Klik vervolgens op de naam van de Exchange dienst met het account waarvan u de rechten wilt toebedelen. Ga naar het E-mailaccounts-tabblad.
+Log in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} om met de bewerking te beginnen. Klik op `Microsoft`{.action} in de dienstenbalk aan de linkerkant en vervolgens op `Exchange`{.action}. Klik vervolgens op de naam van de Exchange dienst met het account waarvan u de rechten wilt toebedelen. Ga naar het E-mailaccounts-tabblad.
 
 In de weergegeven tabel worden alle accounts getoond die aan uw Exchange zijn gekoppeld. Klik op de drie stippen rechts van het account waarvoor u rechten wilt delegeren en vervolgens `Autorisaties beheren`{.action}.
 

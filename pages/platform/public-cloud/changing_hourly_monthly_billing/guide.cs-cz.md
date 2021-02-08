@@ -22,7 +22,7 @@ Při vytváření Public Cloud instancí můžete volit mezi hodinovým a měsí
 ## Prerekvizity
 
 - [Instance Public Cloud](https://www.ovh.cz/public-cloud/instances/){.external}.
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Postup
 

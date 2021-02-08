@@ -17,7 +17,7 @@ Se hai appena ordinato una soluzione Private Exchange, segui questi passaggi per
 ## Prerequisiti
 
 - Aver ordinato una [soluzione Private Exchange OVHcloud](https://www.ovh.it/emails/){.external}.
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
@@ -25,7 +25,7 @@ Se hai appena ordinato una soluzione Private Exchange, segui questi passaggi per
 
 Una volta saldato il tuo ordine, ricevi un’email all’indirizzo di contatto indicato nel tuo Spazio Cliente, con le informazioni necessarie per eseguire l’installazione della tua piattaforma Private Exchange. 
 
-Per consultare questa email dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), clicca sul tuo profilo in alto a destra e poi su `Il tuo account`{.action}. Clicca sulla scheda `Email ricevute`{.action} e cerca l’email che ha come oggetto:
+Per consultare questa email dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo profilo in alto a destra e poi su `Il tuo account`{.action}. Clicca sulla scheda `Email ricevute`{.action} e cerca l’email che ha come oggetto:
 
 > **[xx-11111-ovh] Il tuo servizio Private Exchange 20_xxx_ è in consegna!**
 

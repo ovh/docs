@@ -22,13 +22,13 @@ Cela peut être utile dans les cas suivants :
 
 ## Prérequis
 
-* Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 * Avoir une [Instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external}dans votre compte OVHcloud.
 * Avoir accès à votre instance via SSH en tant qu'administrateur (root).
 
 ## En pratique
 
-Tout d’abord, connectez-vous à votre [Espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} et cliquez sur le menu `Public Cloud`{.action}. Cliquez ensuite sur le `Projet`{.action} dans lequel vous souhaitez créer l’instance.
+Tout d’abord, connectez-vous à votre [Espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et cliquez sur le menu `Public Cloud`{.action}. Cliquez ensuite sur le `Projet`{.action} dans lequel vous souhaitez créer l’instance.
 
 Cliquez sur le bouton `Actions`{.action} puis sélectionnez `Créer un volume`{.action}.
 

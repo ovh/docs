@@ -20,7 +20,7 @@ Varoitussivu “Verkkosivu ei asennettu” merkitsee, että verkkotunnuksen nimi
 - Sinulla on [webhotellituote](https://www.ovh-hosting.fi/webhotelli){.external}.
 - Sinulla on valtuudet hallita [webhotelliasi](https://www.ovh-hosting.fi/webhotelli/){.external} (, joka ylläpitää kyseistä verkkosivua).
 - Sinulla on valtuudet hallita kyseisen verkkotunnuksen konfigurointia (eli sen DNS-aluetta).
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Käytännössä
 
@@ -35,7 +35,7 @@ Kahden alla olevan vaiheen avulla voit tarkistaa nämä kaksi konfigurointia ja 
 
 ### 1. vaihe: Tarkista webhotellin konfiguraatio (Multisite)
 
-Jotta voit tarkistaa, onko verkkotunnuksesi lisätty oikein Multisite-ominaisuudessa webhotelliisi, kirjaudu [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}. Klikkaa sitten `Webhotellit`{.action} vasemmanpuoleisessa palveluvalikossa. Valitse webhotellilistasta se, jonka ylläpitämälle verkkosivulle “Asentamattoman sivun”-virhe näkyy. Mene lopuksi välilehdelle `Multisite`{.action}.
+Jotta voit tarkistaa, onko verkkotunnuksesi lisätty oikein Multisite-ominaisuudessa webhotelliisi, kirjaudu [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Klikkaa sitten `Webhotellit`{.action} vasemmanpuoleisessa palveluvalikossa. Valitse webhotellilistasta se, jonka ylläpitämälle verkkosivulle “Asentamattoman sivun”-virhe näkyy. Mene lopuksi välilehdelle `Multisite`{.action}.
 
 Näkyviin tuleva taulukko sisältää kaikki webhotelliisi Multisite-ominaisuudessa lisätyt verkkotunnukset. Voit käyttää kyseessä olevan verkkotunnuksen etsimisessä apuna hakupalkkia.
 
@@ -59,14 +59,14 @@ Voit nyt tarkistaa verkkotunnuksesi DNS-konfiguroinnin. Tämä tarkistus on teht
 
 > [!primary]
 >
-> Jos verkkotunnuksesi on rekisteröity OVH:lle, voit tarkistaa käyttääkö se konfiguraatiotamme. Klikkaa sitä varten [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager){.external} vasemmassa reunassa olevassa valikossa kohtaa `Verkkotunnukset`{.action} ja tämän jälkeen kyseessä olevaa verkkotunnusta. Mene lopuksi välilehdelle `Nimipalvelimet`{.action}.
+> Jos verkkotunnuksesi on rekisteröity OVH:lle, voit tarkistaa käyttääkö se konfiguraatiotamme. Klikkaa sitä varten [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} vasemmassa reunassa olevassa valikossa kohtaa `Verkkotunnukset`{.action} ja tämän jälkeen kyseessä olevaa verkkotunnusta. Mene lopuksi välilehdelle `Nimipalvelimet`{.action}.
 >
 
 Tarkistus voi tapahtua kahdessa eri paikassa verkkotunnuksesi käyttämästä konfiguraatiosta riippuen:
 
 - **Verkkotunnuksesi ei käytä OVH:n nimipalvelimia**: sinun on tehtävä tarkistus (kuvattu alla) verkkotunnuksesi konfiguraatiota hallinnoivan palveluntarjoajan käyttöliittymässä.
 
-- **Verkkotunnuksesi käyttää OVH:n konfiguraatiota**: tee tarkistus [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}. Mene välilehdelle `DNS-alue`{.action}, kun olet siirtynyt kyseessä olevaan verkkotunnukseen. DNS-konfiguraatio on näkyvissä taulukossa, jonka jokainen rivi vastaa tiettyä DNS-tietuetta. Sisältöä on mahdollista suodattaa tietueen tyypin tai verkkotunnuksen perusteella.
+- **Verkkotunnuksesi käyttää OVH:n konfiguraatiota**: tee tarkistus [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Mene välilehdelle `DNS-alue`{.action}, kun olet siirtynyt kyseessä olevaan verkkotunnukseen. DNS-konfiguraatio on näkyvissä taulukossa, jonka jokainen rivi vastaa tiettyä DNS-tietuetta. Sisältöä on mahdollista suodattaa tietueen tyypin tai verkkotunnuksen perusteella.
 
 ![sitenotinstalled](images/site-not-installed-edit-ovh-dns-zone.png){.thumbnail}
 

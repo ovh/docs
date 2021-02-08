@@ -15,7 +15,7 @@ order: 6
 ## Wymagania początkowe
 
 - Posiadanie kompatybilnego [hostingu WWW](https://www.ovh.pl/hosting/){.external}
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
 
@@ -28,7 +28,7 @@ order: 6
 
 ### FTP
 
-- Błąd dostępu („Uwierzytelnienie połączenia 530 zakończyło się niepowodzeniem”): Upewnij się, że informacje dotyczące dostępu do Twojej przestrzeni FTP są poprawne, sprawdzając je w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} w karcie `FTP - SSH`. Hasła nigdy nie są wyświetlane, ale można je zmieniać. Zapoznaj się z [przewodnikami dotyczącymi FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web//).
+- Błąd dostępu („Uwierzytelnienie połączenia 530 zakończyło się niepowodzeniem”): Upewnij się, że informacje dotyczące dostępu do Twojej przestrzeni FTP są poprawne, sprawdzając je w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w karcie `FTP - SSH`. Hasła nigdy nie są wyświetlane, ale można je zmieniać. Zapoznaj się z [przewodnikami dotyczącymi FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web//).
 
 - Połączenia FTP muszą korzystać z **trybu pasywnego**. Upewnij się, że Twój skrypt lub klient FTP jest odpowiednio skonfigurowany.
 
@@ -69,7 +69,7 @@ Aby uzyskać więcej informacji na temat zarządzania bazami danych, zapoznaj si
 
 - Możesz sprawdzić szczegóły konfiguracji Twojego hostingu. W tym celu sprawdź rubrykę [„Informacje techniczne o Twoim hostingu”](./#informacje-techniczne-o-twoim-hostingu) na dole niniejszego przewodnika. 
 
-- Wersję PHP hostingu możesz zmienić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) („**Konfiguracja**”) lub modyfikując plik .ovhconfig. W przypadku tego drugiego rozwiązania możliwe są również konfiguracje mieszane. Szczegółowe instrukcje znajdują się w przewodnikach:
+- Wersję PHP hostingu możesz zmienić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) („**Konfiguracja**”) lub modyfikując plik .ovhconfig. W przypadku tego drugiego rozwiązania możliwe są również konfiguracje mieszane. Szczegółowe instrukcje znajdują się w przewodnikach:
 
 [Konfiguracja pliku .ovhconfig w hostingu](../konfiguracja-pliku-ovhconfig/)  
 [Zmiana konfiguracji hostingu](../zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/)
@@ -117,7 +117,7 @@ Zapoznaj się z odpowiednimi stronami informacyjnymi, aby sprawdzić, które bib
 
 Różne informacje na temat Twojego klastra znajdziesz pod tym linkiem: [https://cluster015.hosting.ovh.net/infos/](https://cluster015.hosting.ovh.net/infos/){.external}
 
-Zamień klaster wskazany w adresie URL na Twój klaster. Aby dowiedzieć się, na jakim klastrze hostingu znajduje się Twoja usługa, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} i na górnym pasku nawigacji wybierz pozycję `Web Cloud`{.action}. Na pasku usług po lewej stronie kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Następnie kliknij kartę `FTP - SSH`{.action}. Adres URL dostępu FTP do Twojego hostingu wskazuje numer klastra.
+Zamień klaster wskazany w adresie URL na Twój klaster. Aby dowiedzieć się, na jakim klastrze hostingu znajduje się Twoja usługa, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i na górnym pasku nawigacji wybierz pozycję `Web Cloud`{.action}. Na pasku usług po lewej stronie kliknij `Hosting`{.action}, po czym wybierz odpowiedni hosting. Następnie kliknij kartę `FTP - SSH`{.action}. Adres URL dostępu FTP do Twojego hostingu wskazuje numer klastra.
 
 Aby poznać informacje techniczne dotyczące oferty Cloud Web, przejdź bezpośrednio na stronę <https://cloudweb-infos.hosting.ovh.net/>.
 

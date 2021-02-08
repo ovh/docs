@@ -17,7 +17,7 @@ In einer Datenbank (DB) können sogenannte dynamische Elemente, wie zum Beispiel
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
-- Sie haben über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} Zugriff auf die Verwaltung des betreffenden Webhosting Angebots.
+- Sie haben über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} Zugriff auf die Verwaltung des betreffenden Webhosting Angebots.
 
 > [!warning]
 >
@@ -41,7 +41,7 @@ Heute verwenden praktisch alle Content Management Systeme (CMS) wie WordPress od
 
 ### Schritt 2: Auf die Verwaltung der Webhosting-Datenbanken zugreifen
 
-Loggen Sie sich zunächst in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
+Loggen Sie sich zunächst in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
 
 Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden.
 

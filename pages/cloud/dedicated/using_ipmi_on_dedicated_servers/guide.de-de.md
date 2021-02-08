@@ -15,7 +15,7 @@ Bitte beachten Sie, dass in der Anleitung auch der Begriff KVM (Keyboard Video a
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 ## Beschreibung
 

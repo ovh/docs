@@ -19,7 +19,7 @@ Niniejszy przewodnik prezentuje poszczególne etapy migracji strony WWW, jednej 
 - Dostęp do plików strony WWW
 - Dostęp do bazy danych strony WWW
 - Posiadanie danych dostępowych umożliwiających zalogowanie się do aktualnych kont e-mail (nazwa użytkownika, hasło, serwery)
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce
 
@@ -61,7 +61,7 @@ Etap ten obejmuje kilka kroków.
 |---|---|---|
 |1|Wykonaj kopię zapasową strony WWW.|Kopia musi obejmować całość Twojej strony, łącznie z plikami i bazą danych. Kompletna kopia zapasowa jest kluczowa dla poprawnej migracji Twojej strony WWW do OVH.|
 |2|Opublikuj Twoją stronę WWW przeniesioną na hosting OVH|Zaloguj się do przestrzeni FTP, aby importować do niej pliki z Twojej strony WWW. Umieść je w folderze **WWW**. Dane do logowania do FTP otrzymasz w e-mailu informującym o instalacji hostingu.|
-|3|Utworzenie bazy danych OVH|Jeśli Twoja strona działa w oparciu o bazę danych powinieneś [stworzyć nową bazę na hostingu OVH](https://docs.ovh.com/pl/hosting/zarzadzanie-baza-danych-na-hostingu-www/){.external}, korzystając z [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}.|
+|3|Utworzenie bazy danych OVH|Jeśli Twoja strona działa w oparciu o bazę danych powinieneś [stworzyć nową bazę na hostingu OVH](https://docs.ovh.com/pl/hosting/zarzadzanie-baza-danych-na-hostingu-www/){.external}, korzystając z [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.|
 |4|Importuj dane z bazy|Importuj kopię Twojej bazy danych, korzystając z [narzędzia OVH udostępnionego w Panelu klienta](https://docs.ovh.com/pl/hosting/hosting_www_importowanie_bazy_danych_mysql/){.external}.|
 |5|Powiąż nową bazę ze stroną WWW|Dane dostępowe do starej bazy danych są w dalszym ciągu zawarte w pliku konfiguracyjnym Twojej strony WWW. Zmodyfikuj ten plik przez FTP OVH, wprowadzając dane dostępowe do bazy danych utworzonej w OVH.|
 
@@ -69,13 +69,13 @@ Ponieważ konfiguracja Twojej domeny nie została zmieniona, hosting używany do
 
 #### Etap 3: odtworzenie adresów e-mail
 
-Po przeniesieniu strony WWW [stwórz w OVH konta e-mail, używając tych samych adresów](https://docs.ovh.com/pl/emails/przewodnik_na_temat_zakladania_adresu_e-mail/){.external}, z których korzystałeś u dotychczasowego operatora. Konta muszą mieć taką samą nazwę. W [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, na pasku usług po lewej stronie, wybierz sekcję `E-maile`{.action}, następnie wybierz hosting, który zamówiłeś (oznaczony taką samą nazwą, co Twoja domena). Przejdź kolejne etapy tworzenia kont, klikając na przycisk `Załóż adres e-mail`{.action}.
+Po przeniesieniu strony WWW [stwórz w OVH konta e-mail, używając tych samych adresów](https://docs.ovh.com/pl/emails/przewodnik_na_temat_zakladania_adresu_e-mail/){.external}, z których korzystałeś u dotychczasowego operatora. Konta muszą mieć taką samą nazwę. W [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, na pasku usług po lewej stronie, wybierz sekcję `E-maile`{.action}, następnie wybierz hosting, który zamówiłeś (oznaczony taką samą nazwą, co Twoja domena). Przejdź kolejne etapy tworzenia kont, klikając na przycisk `Załóż adres e-mail`{.action}.
 
 Ponieważ konfiguracja Twojej domeny nie została zmieniona, nowe wiadomości spływają w dalszym ciągu do skrzynki odbiorczej kont utworzonych u dotychczasowego operatora. W dalszym ciągu używaj ich do wysyłania e-maili.
 
 #### Etap 4: zmiana konfiguracji Twojej domeny
 
-Po przeprowadzeniu migracji strony WWW i odtworzeniu kont e-mail na hostingu OVH należy zmodyfikować konfigurację Twojej domeny. Modyfikacja ta polega na zamianie serwerów DNS domeny na serwery OVH (stosowna informacja jest wysłana e-mailem oraz zamieszczona w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}). Powyższe operacje mają dwa cele:
+Po przeprowadzeniu migracji strony WWW i odtworzeniu kont e-mail na hostingu OVH należy zmodyfikować konfigurację Twojej domeny. Modyfikacja ta polega na zamianie serwerów DNS domeny na serwery OVH (stosowna informacja jest wysłana e-mailem oraz zamieszczona w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}). Powyższe operacje mają dwa cele:
 
 - **powiązanie Twojej domeny z rozwiązaniami OVH**: Twój hosting OVH będzie używany do wyświetlania Twojej strony WWW i nowe wiadomości e-mail będą spływały na konta utworzone w OVH;
 - **brak przerwy w dostępności usług**: nawet jeśli dotychczasowy operator usuwa swoją konfigurację DNS, kiedy przenosisz domenę do OVH, nie spowoduje to przerwy w dostępności usług, gdyż używasz już konfiguracji OVH.
@@ -130,7 +130,7 @@ Etap ten obejmuje kilka kroków.
 |---|---|---|
 |1|Wykonaj kopię zapasową strony WWW.|Kopia musi obejmować całość Twojej strony, łącznie z plikami i bazą danych. Kompletna kopia zapasowa jest kluczowa dla poprawnej migracji Twojej strony WWW do OVH.|
 |2|Opublikuj stronę WWW w sieci, korzystając z hostingu OVH.|Zaloguj się do przestrzeni FTP, aby importować do niej pliki z Twojej strony WWW. Umieść je w folderze **WWW**. Dane do logowania do FTP otrzymasz w e-mailu informującym o instalacji hostingu.|
-|3|Utworzenie bazy danych OVH|Jeśli Twoja strona działa w oparciu o bazę danych powinieneś [stworzyć nową bazę na hostingu OVH](https://docs.ovh.com/pl/hosting/zarzadzanie-baza-danych-na-hostingu-www/){.external}, korzystając z [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}.|
+|3|Utworzenie bazy danych OVH|Jeśli Twoja strona działa w oparciu o bazę danych powinieneś [stworzyć nową bazę na hostingu OVH](https://docs.ovh.com/pl/hosting/zarzadzanie-baza-danych-na-hostingu-www/){.external}, korzystając z [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.|
 |4|Importuj dane z bazy|Importuj kopię Twojej bazy danych, korzystając z [narzędzia OVH udostępnionego w Panelu klienta](https://docs.ovh.com/pl/hosting/hosting_www_importowanie_bazy_danych_mysql/){.external}.|
 |5|Powiąż nową bazę ze stroną WWW|Dane dostępowe do starej bazy danych są w dalszym ciągu zawarte w pliku konfiguracyjnym Twojej strony WWW. Zmodyfikuj ten plik przez FTP OVH, wprowadzając dane dostępowe do bazy danych utworzonej w OVH.|
 
@@ -138,7 +138,7 @@ Ponieważ konfiguracja Twojej domeny nie została zmieniona, hosting używany do
 
 #### Etap 3: odtworzenie adresów e-mail
 
-[Po zakończeniu transferu Twojej domeny](https://docs.ovh.com/pl/emails/przewodnik_na_temat_zakladania_adresu_e-mail/){.external} otrzymasz wiadomość e-mail z informacją, że konto e-mail powiązane z Twoim hostingiem zostało zainstalowane. Teraz [stwórz w OVH konta e-mail, używając tych samych adresów](https://www.ovh.com/auth/?action=gotomanager){.external}, z których korzystałeś u dotychczasowego operatora (konta muszą mieć taką samą nazwę). W [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, na pasku usług po lewej stronie, wybierz sekcję `E-maile`{.action}, następnie wybierz hosting, który zamówiłeś (oznaczony taką samą nazwą, co Twoja domena). Przejdź kolejne etapy tworzenia kont, klikając na przycisk `Załóż adres e-mail`{.action}.
+[Po zakończeniu transferu Twojej domeny](https://docs.ovh.com/pl/emails/przewodnik_na_temat_zakladania_adresu_e-mail/){.external} otrzymasz wiadomość e-mail z informacją, że konto e-mail powiązane z Twoim hostingiem zostało zainstalowane. Teraz [stwórz w OVH konta e-mail, używając tych samych adresów](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, z których korzystałeś u dotychczasowego operatora (konta muszą mieć taką samą nazwę). W [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, na pasku usług po lewej stronie, wybierz sekcję `E-maile`{.action}, następnie wybierz hosting, który zamówiłeś (oznaczony taką samą nazwą, co Twoja domena). Przejdź kolejne etapy tworzenia kont, klikając na przycisk `Załóż adres e-mail`{.action}.
 
 Ponieważ konfiguracja Twojej domeny nie została zmieniona, nowe e-maile spływają na konta e-mail utworzone u Twojego dotychczasowego operatora, o ile konfiguracja DNS jest wciąż aktywna. W dalszym ciągu używaj ich do wysyłania e-maili.
 
@@ -146,7 +146,7 @@ Ponieważ konfiguracja Twojej domeny nie została zmieniona, nowe e-maile spływ
 
 Po przeprowadzeniu migracji strony WWW, utworzeniu kont e-mail i przeniesieniu domeny do OVH należy zmodyfikować konfigurację domeny. Modyfikacja ta polega na zamianie serwerów DNS Twojej domeny na serwery OVH.
 
-Modyfikacji dokonaj w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Pomocna w tym procesie może być dokumentacja *[Informacje na temat serwerów DNS](https://docs.ovh.com/pl/domains/hosting_www_informacje_na_temat_serwerow_dns/){.external}*.
+Modyfikacji dokonaj w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Pomocna w tym procesie może być dokumentacja *[Informacje na temat serwerów DNS](https://docs.ovh.com/pl/domains/hosting_www_informacje_na_temat_serwerow_dns/){.external}*.
 
 Istnieje kilka możliwych efektów tej operacji:
 

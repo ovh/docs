@@ -17,7 +17,7 @@ A solução CDN da OVH permite-lhe otimizar os tempos de resposta dos seus websi
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 
 ## Instruções
@@ -26,7 +26,7 @@ A solução CDN da OVH permite-lhe otimizar os tempos de resposta dos seus websi
 
 Ao contratar a solução CDN, poderá usufruir de **1 TB** de tráfego incluído. Contudo, este limite não é renovado mensalmente juntamente com a sua solução. Uma vez consumido (independentemente do prazo), deverá renovar o tráfego disponível.
 
-Caso necessite de tráfego adicional, poderá adicionar diretamente a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Caso necessite de tráfego adicional, poderá adicionar diretamente a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ![Adquirir tráfego](images/add_quota.png){.thumbnail}
 

@@ -18,7 +18,7 @@ Real Time Monitoring (RTM) umožňuje provádět částečný monitoring aktivit
 
 - SSH připojení k linuxovému serveru (*root* přístup).
 - Připojení ke vzdálené ploše serveru s operačním systémem Windows (*administrátorský* přístup).
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Postup
 

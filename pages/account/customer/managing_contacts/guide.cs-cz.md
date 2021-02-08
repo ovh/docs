@@ -16,7 +16,7 @@ Ke každé službě OVH je obvykle přiřazeno několik kontaktů. Tyto kontakty
 
 ## Prerekvizity
 
-- Přihlášení do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Přihlášení do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 - Přístup k e-mailové adrese přiřazené k Vašem profilu
 - Dostatečná oprávnění pro příslušnou službu
 - Zákaznický identifikátor nového kontaktu (pro nějž úpravu provádíte)
@@ -27,7 +27,7 @@ Ke každé službě OVH je obvykle přiřazeno několik kontaktů. Tyto kontakty
 
 ### Přístup ke správě kontaktů
 
-V panelu nabídky, umístěném v pravé horní části [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, rozklikněte svůj zákaznický identifikátor a poté klikněte na tlačítko `Moje kontakty`{.action}. 
+V panelu nabídky, umístěném v pravé horní části [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, rozklikněte svůj zákaznický identifikátor a poté klikněte na tlačítko `Moje kontakty`{.action}. 
 
 ![Contact management](images/contactmanagement0.png){.thumbnail}
 
@@ -91,7 +91,7 @@ Pokud některý ze zúčastněných kontaktů e-mail neobdrží, zkontrolujte pr
 
 ![Contact management](images/contactmanagement5.png){.thumbnail}
 
-Pokud změnu schválí pouze jeden kontakt, zobrazí se zpráva informující o tom, že požadavek stále čeká na schválení druhým kontaktem. Pokud některý z kontaktů požadavek schválil před krátkou chvílí, může určitou dobu trvat, než se provedené změny v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} zobrazí.
+Pokud změnu schválí pouze jeden kontakt, zobrazí se zpráva informující o tom, že požadavek stále čeká na schválení druhým kontaktem. Pokud některý z kontaktů požadavek schválil před krátkou chvílí, může určitou dobu trvat, než se provedené změny v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} zobrazí.
 
 ![Contact management](images/contactmanagement6.png){.thumbnail}
 

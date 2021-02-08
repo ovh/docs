@@ -17,7 +17,7 @@ Dzięki kontom e-mail MX Plan możesz wysyłać i odbierać wiadomości, korzyst
 ## Wymagania początkowe
 
 - Wykupienie usługi MX Plan Jest ona dostępna w ramach oferty: [Hosting]({ovh_www}/hosting/){.external}, [Hosting Start 10M]({ovh_www}/domeny/oferta_serwer_start10m.xml){.external} lub oferty MX Plan zamówionej oddzielnie.
-- W zależności od metody, z której korzystasz: zalogowanie do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Web Cloud`{.action} lub zalogowanie do konta e-mail za pośrednictwem interfejsu [Webmail]({ovh_www}/mail/){.external} Outlook Web Access (OWA).
+- W zależności od metody, z której korzystasz: zalogowanie do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action} lub zalogowanie do konta e-mail za pośrednictwem interfejsu [Webmail]({ovh_www}/mail/){.external} Outlook Web Access (OWA).
 
 > [!primary]
 >
@@ -28,7 +28,7 @@ Dzięki kontom e-mail MX Plan możesz wysyłać i odbierać wiadomości, korzyst
 
 W zależności od daty aktywacji usługi lub jeśli usługa została niedawno przeniesiona, możliwe jest, że dysponujesz jej starszą lub nową wersją. Zanim przejdziesz dalej, ustal jaką wersję posiadasz. 
 
-W tym celu zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja „Web”. Kliknij E-maile na pasku usług po lewej stronie, po czym wybierz odpowiednią usługę MX Plan. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
+W tym celu zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja „Web”. Kliknij E-maile na pasku usług po lewej stronie, po czym wybierz odpowiednią usługę MX Plan. Następnie postępuj zgodnie z instrukcjami odnoszącymi się do wersji, którą posiadasz.
 
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|

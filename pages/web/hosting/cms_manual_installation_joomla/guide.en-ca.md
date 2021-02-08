@@ -16,7 +16,7 @@ To install the Joomla! platform on your shared hosting package, we advise your t
 
 ## Necessary credentials
 
-Make sure that you have your customer ID (nic-handle) and password so you can log in to your [OVHcloud customer account](https://ca.ovh.com/auth/?action=gotomanager) if necessary.
+Make sure that you have your customer ID (nic-handle) and password so you can log in to your [OVHcloud customer account](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) if necessary.
 
 
 - Get your FTP ID and password so you can log in to your hosting package. 

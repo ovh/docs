@@ -12,31 +12,31 @@ section: 'Erste Schritte'
 
 ### Was tun, wenn mein Webhosting nicht korrekt funktioniert? 
 
-Es gibt mehrere mögliche Ursachen für eine Fehlfunktion Ihrer Website. Um diese zu ermitteln, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und stellen Sie sicher, dass alle Ihre Dienste verlängert wurden und aktiv sind. Wenn Sie damit fertig sind, überprüfen Sie die laufenden Wartungsarbeiten auf der [OVH Status-Seite](http://travaux.ovh.net/){.external} (Travaux). Sind alle Ihre Dienste aktiv und wird keine Wartungsarbeit durchgeführt, die Ihre Website beeinträchtigt, können Sie eine tiefgründigere Diagnose durchführen. Befolgen Sie hierzu [unsere Diagnose-Anleitungen](../).
+Es gibt mehrere mögliche Ursachen für eine Fehlfunktion Ihrer Website. Um diese zu ermitteln, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und stellen Sie sicher, dass alle Ihre Dienste verlängert wurden und aktiv sind. Wenn Sie damit fertig sind, überprüfen Sie die laufenden Wartungsarbeiten auf der [OVH Status-Seite](http://travaux.ovh.net/){.external} (Travaux). Sind alle Ihre Dienste aktiv und wird keine Wartungsarbeit durchgeführt, die Ihre Website beeinträchtigt, können Sie eine tiefgründigere Diagnose durchführen. Befolgen Sie hierzu [unsere Diagnose-Anleitungen](../).
 
-**Tipps und Tricks**: Ist Ihre Website plötzlich nach einer Aktion Ihrerseits nicht mehr verfügbar, können Sie deren Inhalt über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} wiederherstellen. Gehen Sie hierzu in den Tab `FTP - SSH` Ihres Webhostings und klicken Sie rechts auf den Button `Backup wiederherstellen`{.action}. Weitere Informationen zur Vorgehensweise finden Sie in der folgenden Dokumentation: [Den Speicherplatz Ihres Webhostings wiederherstellen](../webhosting-speicherplatz-wiederherstellen/).
+**Tipps und Tricks**: Ist Ihre Website plötzlich nach einer Aktion Ihrerseits nicht mehr verfügbar, können Sie deren Inhalt über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} wiederherstellen. Gehen Sie hierzu in den Tab `FTP - SSH` Ihres Webhostings und klicken Sie rechts auf den Button `Backup wiederherstellen`{.action}. Weitere Informationen zur Vorgehensweise finden Sie in der folgenden Dokumentation: [Den Speicherplatz Ihres Webhostings wiederherstellen](../webhosting-speicherplatz-wiederherstellen/).
 
 ### Wie konfiguriere ich mein Webhosting? 
 
-Um Ihr Webhosting zu konfigurieren, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein. Im Bereich `Hosting` können Sie Ihre SSL-Zertifikate, PHP-Versionen, CDN, Multisites, Datenbanken etc. verwalten.
+Um Ihr Webhosting zu konfigurieren, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Im Bereich `Hosting` können Sie Ihre SSL-Zertifikate, PHP-Versionen, CDN, Multisites, Datenbanken etc. verwalten.
 
 **Tipps und Tricks**: Weitere Informationen zur Konfiguration Ihres Webhostings finden Sie im Bereich <br> „Erste Schritte“ in unserer [Dokumentation](../).
 
 ### Wie erstelle oder lösche ich ein Element auf meinem Produkt/Dienst (E-Mail-Account, Datenbank, ...)?
 
-Um ein Element zu erstellen oder zu löschen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und wählen Sie das betreffende Produkt aus (`E-Mail`, `Datenbank`, `Module`). So können Sie Ihr Produkt nach Ihren Wünschen abändern.
+Um ein Element zu erstellen oder zu löschen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie das betreffende Produkt aus (`E-Mail`, `Datenbank`, `Module`). So können Sie Ihr Produkt nach Ihren Wünschen abändern.
 
-**Tipps und Tricks**: Sie können über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} regelmäßige Backups Ihrer Datenbanken durchführen.
+**Tipps und Tricks**: Sie können über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} regelmäßige Backups Ihrer Datenbanken durchführen.
 
 ### Wie verwalte ich meine Passwörter? 
 
-Um Ihre Passwörter zu verwalten, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein. Sollten Sie Ihre Kennung oder Ihr Passwort vergessen haben, klicken Sie unter dem Login-Fenster auf `Login oder Passwort vergessen`{.action}. Ihnen wird eine E-Mail mit der Vorgehensweise zum Zurücksetzen zugesandt.
+Um Ihre Passwörter zu verwalten, loggen Sie sich zunächst in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Sollten Sie Ihre Kennung oder Ihr Passwort vergessen haben, klicken Sie unter dem Login-Fenster auf `Login oder Passwort vergessen`{.action}. Ihnen wird eine E-Mail mit der Vorgehensweise zum Zurücksetzen zugesandt.
 Sie können auch die Anleitung [Passwort Ihres Kunden-Accounts anlegen und verwalten](../../customer/Passwort-verwalten/){.external} lesen.
 
 Sobald Sie in Ihrem Kundencenter eingeloggt sind, können Sie die verschiedenen Zugänge verwalten, darunter: 
 
-* den Zugang zu Ihrem FTP-Server und den Datenbanken. Gehen Sie hierzu in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} in den Bereich `Hosting` und wählen Sie das betreffende Produkt / den betreffenden Dienst aus.
-* den Zugang zu Ihren E-Mails, über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im Bereich `E-Mail`.
+* den Zugang zu Ihrem FTP-Server und den Datenbanken. Gehen Sie hierzu in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} in den Bereich `Hosting` und wählen Sie das betreffende Produkt / den betreffenden Dienst aus.
+* den Zugang zu Ihren E-Mails, über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `E-Mail`.
 
 **Tipps und Tricks**: Bei E-Mail Pro oder Exchange können Sie den Zugang außerdem über die entsprechenden Webmails verwalten.
 
@@ -71,7 +71,7 @@ Es kann durchaus nützlich sein, die Datei nur umzubenennen, damit Sie diese zu 
 
 ### Wie kann ich mein Webhosting-Angebot hochstufen?
 
-Wenn Sie Ihr derzeitiges Angebot auf ein höheres Angebot umstellen möchten, gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager)%7B.external%7D in den Bereich `Web Cloud`{.action}. Klicken Sie im linken Menü auf `Hosting-Pakete`{.action} und wählen Sie den entsprechenden Dienst aus.
+Wenn Sie Ihr derzeitiges Angebot auf ein höheres Angebot umstellen möchten, gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)%7B.external%7D in den Bereich `Web Cloud`{.action}. Klicken Sie im linken Menü auf `Hosting-Pakete`{.action} und wählen Sie den entsprechenden Dienst aus.
 
 Klicken Sie im Tab `Allgemeine Informationen` im Feld Abo auf `...`{.action} rechts neben "Angebot" und danach auf `Upgraden`{.action}. Folgen Sie den nachfolgenden Anweisungen, um Ihre Bestellung abzuschließen. Dem neuen Abonnement wird die verbleibende Zeit Ihres aktuellen Angebots anteilig hinzugefügt.
 

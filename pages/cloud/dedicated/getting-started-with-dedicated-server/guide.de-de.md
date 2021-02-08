@@ -29,7 +29,7 @@ Ein dedizierter Server ist ein physischer Server in einem unserer Rechenzentren.
 ## Voraussetzungen
 
 - Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/){.external} in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben administrativen Zugriff (Root) über SSH auf Ihren Server (oder RDP für Windows).
 
 ## In der praktischen Anwendung
@@ -38,7 +38,7 @@ Wenn Ihr dedizierter Server zum ersten Mal eingerichtet wird, können Sie das zu
 
 ### Ihren Server installieren oder reinstallieren
 
-Sie können Ihren Server in wenigen Schritten in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) reinstallieren und ein anderes Betriebssystem auswählen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf `...`{.action} neben `System (OS)` und danach auf `Installieren`{.action}.
+Sie können Ihren Server in wenigen Schritten in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) reinstallieren und ein anderes Betriebssystem auswählen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf `...`{.action} neben `System (OS)` und danach auf `Installieren`{.action}.
 
 ![Button Reinstallieren](images/reinstalling-your-server-00.png){.thumbnail}
 
@@ -83,7 +83,7 @@ Weitere Informationen zur Erstellung von SSH-Schlüsseln finden Sie in [dieser A
 
 > [!primary]
 >
-> Einige Betriebssysteme oder Plattformen wie Plesk und Windows benötigen vor der Installation eine Lizenz. Sie können diese Lizenz [bei OVHcloud](https://www.ovhcloud.com/de/bare-metal/os/) oder einem Reseller kaufen. Anschließend müssen Sie sie manuell über das Betriebssystem selbst oder über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) einfügen.
+> Einige Betriebssysteme oder Plattformen wie Plesk und Windows benötigen vor der Installation eine Lizenz. Sie können diese Lizenz [bei OVHcloud](https://www.ovhcloud.com/de/bare-metal/os/) oder einem Reseller kaufen. Anschließend müssen Sie sie manuell über das Betriebssystem selbst oder über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einfügen.
 >
 Sie können Ihre Lizenzen im Kundencenter unter `Bare Metal Cloud`{.action} im Bereich `Lizenzen`{.action} verwalten. In diesem Bereich können Sie auch Lizenzen bestellen oder Ihre eigene SPLA Windows- oder SPLA SQL Server-Lizenz hinzufügen (über den Button `Aktionen`{.action}).
 >
@@ -153,7 +153,7 @@ Weitere Informationen finden Sie in unserer Anleitung: [Verwendung der IPMI-Kons
 
 ### Rescue-Modus
 
-Bei jeglichen Problemen sollte üblicherweise der erste Schritt zur Behebung sein, den Server über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) im Rescue-Modus neu zu starten. Es ist wichtig, Fehler in diesem Modus einzugrenzen, auch um einen Software-Zusammenhang auszuschließen, bevor Sie unsere Support-Teams kontaktieren.
+Bei jeglichen Problemen sollte üblicherweise der erste Schritt zur Behebung sein, den Server über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Rescue-Modus neu zu starten. Es ist wichtig, Fehler in diesem Modus einzugrenzen, auch um einen Software-Zusammenhang auszuschließen, bevor Sie unsere Support-Teams kontaktieren.
 
 Bitte folgen Sie unserer [Anleitung zum Rescue-Modus](../ovh-rescue/).
 

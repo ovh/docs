@@ -56,7 +56,7 @@ You should end up with the result below:
 
 ### Step 2: Log in to the interface.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), then select `Telecom`{.action}. Next, select `SMS`{.action} in the left-hand menu.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then select `Telecom`{.action}. Next, select `SMS`{.action} in the left-hand menu.
 
 Then click on the SMS account concerned.
 

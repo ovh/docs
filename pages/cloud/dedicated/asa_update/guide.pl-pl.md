@@ -15,7 +15,7 @@ Aby zapewnić optymalną ochronę systemu, należy regularnie aktualizować zapo
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 
 ## W praktyce
@@ -24,7 +24,7 @@ Aby zapewnić optymalną ochronę systemu, należy regularnie aktualizować zapo
 
 Proces aktualizacji będzie wymagał kilkukrotnego restartu systemu. Dlatego zalecamy wyłączenie ASA, aby podczas aktualizacji nie nastąpiła przerwa w ciągłości pracy serwera.
 
-Aby wyłączyć ASA, przejdź do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Serwery dedykowane`{.action}. Wybierz serwer dedykowany, a następnie`Firewall Cisco ASA`{.action}. Na koniec kliknij przycisk po prawej stronie`Wyłącz Cisco ASA`{.action}
+Aby wyłączyć ASA, przejdź do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Serwery dedykowane`{.action}. Wybierz serwer dedykowany, a następnie`Firewall Cisco ASA`{.action}. Na koniec kliknij przycisk po prawej stronie`Wyłącz Cisco ASA`{.action}
 
 ![Wyłączenie ASA](images/customer_panel_asa_disable.png){.thumbnail}
 
@@ -112,7 +112,7 @@ Restart mający na celu ponowne załadowanie konfiguracji zajmie kilka minut.
 
 ### Włącz ponownie ASA w Panelu klienta
 
-Podobnie, jak w pierwszym etapie, przejdź do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Serwery dedykowane`{.action}. Wybierz serwer dedykowany, a następnie`Firewall Cisco ASA`{.action}. Na koniec kliknij przycisk po prawej stronie `Włącz Cisco ASA`{.action}.
+Podobnie, jak w pierwszym etapie, przejdź do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Serwery dedykowane`{.action}. Wybierz serwer dedykowany, a następnie`Firewall Cisco ASA`{.action}. Na koniec kliknij przycisk po prawej stronie `Włącz Cisco ASA`{.action}.
 
 ![Włączenie ASA](images/customer_panel_asa_enable.png){.thumbnail}
 
@@ -124,7 +124,7 @@ Po restarcie, kiedy ASA jest już włączona, sprawdź, czy działają wszystkie
 
 Wyłącz ponownie ASA, podobnie jak w etapie pierwszym.
 
-Aby wyłączyć ASA, przejdź do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Serwery dedykowane`{.action}. Wybierz serwer dedykowany, a następnie kliknij `Firewall Cisco ASA`{.action}. Na koniec kliknij przycisk po prawej stronie `Wyłącz Cisco ASA`{.action}.
+Aby wyłączyć ASA, przejdź do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Serwery dedykowane`{.action}. Wybierz serwer dedykowany, a następnie kliknij `Firewall Cisco ASA`{.action}. Na koniec kliknij przycisk po prawej stronie `Wyłącz Cisco ASA`{.action}.
 
 ![Wyłączenie ASA](images/customer_panel_asa_disable.png){.thumbnail}
 
@@ -421,7 +421,7 @@ Cryptochecksum: 4b86b1e4 2e731d6b 9d1fc491 a5eae0f3
 
 ### Ponowne włączacznie ASA w Panelu klienta
 
-Podobnie jak w pierwszym etapie, przejdź do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Serwery dedykowane`{.action}. Wybierz serwer dedykowany, a następnie kliknij `Firewall Cisco ASA`{.action}. Na koniec kliknij przycisk po prawej stronie `Włącz Cisco ASA`{.action}.
+Podobnie jak w pierwszym etapie, przejdź do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Serwery dedykowane`{.action}. Wybierz serwer dedykowany, a następnie kliknij `Firewall Cisco ASA`{.action}. Na koniec kliknij przycisk po prawej stronie `Włącz Cisco ASA`{.action}.
 
 ![Włączenie ASA](images/customer_panel_asa_enable.png){.thumbnail}
 

@@ -18,7 +18,7 @@ To ensure continuity of service and avoid data loss, OVHcloud automatically take
 ## Requirements
 
 - a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/asia/enterprise/products/hosted-private-cloud/)
-- a user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager))
+- a user account with access to vSphere (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia))
 
 ## Instructions
 
@@ -75,7 +75,7 @@ You now need to follow the VM Creation Wizard to complete the procedure.
 >Hourly snapshots are **not** a backup system and are **not** guaranteed.
 >
 
-OVHcloud retains the other 23 hourly snapshots (up to H-24) on a datastore to which you do not have direct access. However, you can request to restore a particular snapshot beyond H-1 for a single VM via a **paid intervention** by creating a support ticket containing the necessary information in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager). We will only be able to restore the requested snapshot on the same datastore, and we cannot guarantee this restoration under any circumstances.
+OVHcloud retains the other 23 hourly snapshots (up to H-24) on a datastore to which you do not have direct access. However, you can request to restore a particular snapshot beyond H-1 for a single VM via a **paid intervention** by creating a support ticket containing the necessary information in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). We will only be able to restore the requested snapshot on the same datastore, and we cannot guarantee this restoration under any circumstances.
 
 Keep in mind that hourly snapshots are an additional security measure for internal purposes, and should only be used as a last resort in order to prevent any potential data loss.
 

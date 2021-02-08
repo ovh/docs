@@ -18,7 +18,7 @@ Verkossa on olemassa valtava määrä verkkosivuja. [OVH:n webhotellissa](https:
 ## Edellytykset
 
 - Sinulla on yhteensopiva [webhotellituote](https://www.ovh-hosting.fi/webhotelli/){.external} (ei Cloud Web)
-- Käytetystä tavasta riippuen, sinulla on pääsyoikeudet webhotellituotteesi hallintaan [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager) tai tiedot, joiden avulla voit kirjautua tallennustilaan. 
+- Käytetystä tavasta riippuen, sinulla on pääsyoikeudet webhotellituotteesi hallintaan [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) tai tiedot, joiden avulla voit kirjautua tallennustilaan. 
 
 ## Käytännössä
 
@@ -46,7 +46,7 @@ Tarvittaessa sinulla on mahdollisuus selvittää webhotellisi tällä hetkellä 
 
 |Tapa|Kuvaus|
 |---|---|
-|Hallintapaneelin kautta|Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Välilehdellä `Yleiset tiedot`{.action} poimi versio kohdan “**Globaali PHP-versio**” alapuolelta. Jos näet sinisen pyöreän symbolin, odota muutama minuutti version päivittymistä.|
+|Hallintapaneelin kautta|Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Välilehdellä `Yleiset tiedot`{.action} poimi versio kohdan “**Globaali PHP-versio**” alapuolelta. Jos näet sinisen pyöreän symbolin, odota muutama minuutti version päivittymistä.|
 |Skriptin kautta|Luo **.php**-skripti, joka sisältää ainoastaan koodin `<?php phpinfo(); ?>`. Aseta se verkkoon tallennustilassasi ja kutsu sitä sitten menemällä sen täydelliseen URL-osoitteeseen.|
 
 ![php-versio](images/change-php-version-step1.png){.thumbnail}

@@ -10,7 +10,7 @@ section: Premiers pas
 ## L'acces au manager d'OVHcloud
 Il s'agit du mot de passe lié à votre identifiant* OVHcloud. Votre identifiant est sous la forme "ab12345-ovh". Cet identifiant est généré automatiquement lors de votre inscription depuis le site [OVHcloud](http://www.ovh.com/ca/fr){.external}.
 
-*L'identifiant OVHcloud est aussi appelé nic-handle ou nic.* Vous définissez vous-même le mot de passe lié à cet identifiant. Celui-ci ne vous sera pas transmis par e-mail pour des raisons de sécurité car depuis votre espace client vous pouvez gérer l'ensemble de vos services (création, suppression, modification). Si vous ne vous souvenez plus de votre mot de passe pour l'accès à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}, vous pouvez modifier celui- ci depuis la page de connexion au manager OVHcloud.
+*L'identifiant OVHcloud est aussi appelé nic-handle ou nic.* Vous définissez vous-même le mot de passe lié à cet identifiant. Celui-ci ne vous sera pas transmis par e-mail pour des raisons de sécurité car depuis votre espace client vous pouvez gérer l'ensemble de vos services (création, suppression, modification). Si vous ne vous souvenez plus de votre mot de passe pour l'accès à votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, vous pouvez modifier celui- ci depuis la page de connexion au manager OVHcloud.
 
 
 ![hosting](images/2847.png){.thumbnail}

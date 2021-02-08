@@ -30,7 +30,7 @@ Um servidor dedicado é um servidor físico situado num dos nossos datacenters. 
 
 - Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external}.
 - Estar conectado em SSH (acesso root) em Linux ou enquanto administrador em Windows.
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
@@ -38,7 +38,7 @@ Quando o seu servidor dedicado estiver configurado pela primeira vez, pode selec
 
 ### Instalação ou reinstalação do servidor dedicado
 
-Pode facilmente reinstalar o seu servidor e escolher outro modelo de sistema operativo na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). No separador `Informações gerais`{.action}, clique em `...`{.action} junto ao `Sistema (OS)` e, a seguir, em `Instalar`{.action}.
+Pode facilmente reinstalar o seu servidor e escolher outro modelo de sistema operativo na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). No separador `Informações gerais`{.action}, clique em `...`{.action} junto ao `Sistema (OS)` e, a seguir, em `Instalar`{.action}.
 
 ![Botão Reinstalar](images/reinstalling-your-server-00.png){.thumbnail}
 
@@ -83,7 +83,7 @@ Para obter uma explicação detalhada sobre a criação das chaves SSH, consulte
 
 > [!primary]
 >
-> Certos sistemas operativos ou plataformas, como o Plesk e o Windows, requerem a aquisição de uma licença antes da instalação. Pode adquirir esta [licença junto da OVHcloud](https://www.ovhcloud.com/pt/bare-metal/os/) ou junto de um revendedor. De seguida, deverá integrá-la manualmente, através do próprio sistema operativo ou através da Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Pode gerir as suas licenças no Painel de configuração da secção `Bare Metal Cloud`{.action} sob `Licenças`{.action}. Nesta secção, pode também encomendar licenças (através do botão `Encomendar`{.action} à esquerda) ou adicionar a sua própria licença de servidor SQL ou Windows SPLA (através do botão `Adicionar uma licença SPLA`{.action} à esquerda).
+> Certos sistemas operativos ou plataformas, como o Plesk e o Windows, requerem a aquisição de uma licença antes da instalação. Pode adquirir esta [licença junto da OVHcloud](https://www.ovhcloud.com/pt/bare-metal/os/) ou junto de um revendedor. De seguida, deverá integrá-la manualmente, através do próprio sistema operativo ou através da Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Pode gerir as suas licenças no Painel de configuração da secção `Bare Metal Cloud`{.action} sob `Licenças`{.action}. Nesta secção, pode também encomendar licenças (através do botão `Encomendar`{.action} à esquerda) ou adicionar a sua própria licença de servidor SQL ou Windows SPLA (através do botão `Adicionar uma licença SPLA`{.action} à esquerda).
 >
 
 ### Ligação ao seu servidor
@@ -152,7 +152,7 @@ Para mais informações, consulte o nosso guia: [Utilização do IPMI para servi
 
 ### Modo rescue
 
-Em caso de problema com o seu servidor, a primeira etapa de reparação consiste em reiniciar o seu servidor em modo rescue. Para ativar o modo rescue, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e aceda à página do seu servidor. No menu `Informações gerais`, clique em `...`{.action} e em `Alterar`{.action} para modificar o modo de arranque.
+Em caso de problema com o seu servidor, a primeira etapa de reparação consiste em reiniciar o seu servidor em modo rescue. Para ativar o modo rescue, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à página do seu servidor. No menu `Informações gerais`, clique em `...`{.action} e em `Alterar`{.action} para modificar o modo de arranque.
 
 ![Modificar a seleção de arranque](images/rescue-mode-01.png){.thumbnail}
 

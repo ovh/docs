@@ -17,13 +17,13 @@ O serviço SQL Privado permite associar uma instância SQL, com recursos dedicad
 
 - Ter uma instância SQL Privado (associada a um [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external}, ou contratar uma através da página [Opções SQL](https://www.ovh.pt/alojamento-partilhado/opcoes-sql.xml){.external}).
 - Ter um [Alojamento Web](https://www.ovh.pt/alojamento-partilhado/){.external} e o serviço SQL Privado localizados no mesmo datacenter (confirme esta informação na Área de cliente OVH).
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
 ### Ativação do seu servidor SQL Privado incluído com o seu plano de alojamento web
 
-Se a sua oferta de alojamento inclui a opção SQL privado, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Na secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} na coluna da esquerda.
+Se a sua oferta de alojamento inclui a opção SQL privado, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Na secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} na coluna da esquerda.
 
 No separador `Informações gerais`, no quadro `Configuração`, clique no botão `...`{.action} à direita da **Base de dados privada**. Finalmente, clique em `Ativar`{.action} para lançar o processo de ativação.
 
@@ -33,7 +33,7 @@ Para concluir, siga as instruções seguintes para determinar o tipo e a versão
 
 ### Consultar as informações gerais da instância SQL Privado
 
-Na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, no menu à esquerda, aceda à secção `Bases de dados`{.action} e clique na instância SQL que pretende configurar. Certifique-se que está no separador `Informações gerais`{.action}.
+Na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, no menu à esquerda, aceda à secção `Bases de dados`{.action} e clique na instância SQL que pretende configurar. Certifique-se que está no separador `Informações gerais`{.action}.
 
 > [!primary]
 >

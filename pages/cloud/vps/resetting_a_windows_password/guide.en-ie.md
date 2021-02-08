@@ -17,7 +17,7 @@ In some cases you might need to reset a Windows password. This guide will show y
 
 ## Instructions
 
-Connect to the VPS via VNC in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) with the login details you have received by email.
+Connect to the VPS via VNC in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) with the login details you have received by email.
 
 Type the following commands to mount the remote file system:
 

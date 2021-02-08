@@ -17,14 +17,14 @@ Zjistěte, jak aktivovat a používat funkci Backup Storage na svém dedikované
 ## Prerekvizity
 
 - [Dedikovaný server OVH](https://www.ovh.cz/dedikovane_servery/){.external}.
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 
 ## Postup
 
 ### Aktivace Backup Storage
 
-Přihlaste se do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} a přejděte do `základního administračního rozhraní`{.action} svého dedikovaného serveru. Přejděte do záložky `Backup Storage`{.action} a klikněte na tlačítko `Aktivovat Backup Storage`{.action}.
+Přihlaste se do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} a přejděte do `základního administračního rozhraní`{.action} svého dedikovaného serveru. Přejděte do záložky `Backup Storage`{.action} a klikněte na tlačítko `Aktivovat Backup Storage`{.action}.
 
 ![Aktivace Backup Storage](images/backup_storage_activation.png){.thumbnail}
 

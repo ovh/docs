@@ -21,7 +21,7 @@ Klucze SSH nie służą do uwierzytelniania w instancjach z systemem operacyjnym
 ## Wymagania początkowe
 
 * projekt [Public Cloud](https://www.ovh.pl/public-cloud/){.external} na koncie OVHcloud
-* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce
 
@@ -106,7 +106,7 @@ Przesuwanie kursora myszy spowoduje wypełnianie paska postępu. Całkowite wype
 
 ### Importowanie klucza SSH do Panelu klienta OVHcloud
 
-Najpierw zaznacz i skopiuj tekst klucza publicznego, a następnie zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Najpierw zaznacz i skopiuj tekst klucza publicznego, a następnie zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 Kliknij menu `Public Cloud`{.action}.
 

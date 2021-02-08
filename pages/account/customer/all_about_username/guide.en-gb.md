@@ -24,7 +24,7 @@ At OVHcloud, it is known as a NIC handle.
 
 ## How to create a NIC handle
 
-If you do not have a NIC handle yet, start by creating one on the [OVHcloud login page](https://www.ovh.com/auth/?action=gotomanager). 
+If you do not have a NIC handle yet, start by creating one on the [OVHcloud login page](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). 
 
 Fill in the online form, and please ensure you use a **valid email address**.
 
@@ -65,7 +65,7 @@ You can verify your NIC handle in the OVHcloud Control Panel by clicking your na
 
 ## How to log in to the OVHcloud Control Panel
 
-Go to the [OVHcloud login page](https://www.ovh.com/auth/?action=gotomanager), and enter your NIC handle and password.
+Go to the [OVHcloud login page](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and enter your NIC handle and password.
 
 ![NIC handle](images/nichandle03.png){.thumbnail}
 

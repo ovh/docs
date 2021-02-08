@@ -89,7 +89,7 @@ Los otros campos son opcionales. Cumplimente los que desee y haga clic en el bot
 
 ![Instalación](images/install-01.png){.thumbnail}
 
-El sistema operativo se instalará. Puede consultar el progreso de la operación actualizando la página del servidor en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} o con la siguiente llamada a la API, introduciendo el nombre del servidor en el campo **serviceName** y haciendo clic en el botón `Execute`{.action}:
+El sistema operativo se instalará. Puede consultar el progreso de la operación actualizando la página del servidor en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} o con la siguiente llamada a la API, introduciendo el nombre del servidor en el campo **serviceName** y haciendo clic en el botón `Execute`{.action}:
 
 > [!api]
 >

@@ -22,12 +22,12 @@ Jeśli chcesz skonfigurować adres IP Failover w swoich instancjach, ponieważ:
 
 ## Wymagania początkowe
 
-* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 * [adres IP Failover](https://www.ovhcloud.com/pl/bare-metal/ip/){.external}
 
 ## W praktyce
 
-Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij menu `Public Cloud`{.action} i wybierz `Projekt`{.action}.
+Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij menu `Public Cloud`{.action} i wybierz `Projekt`{.action}.
 
 Wybierz pozycję `Adres IP Failover`{.action} w sekcji Sieć.
 

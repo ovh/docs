@@ -22,13 +22,13 @@ Prima di applicare le opzioni di backup, consigliamo di fare riferimento alle pa
 
 ## Prerequisiti
 
-- avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - un servizio [VPS OVHcloud](https://www.ovhcloud.com/it/vps/) già impostato
 - accesso come amministratore (root) mediante SSH al tuo VPS (opzionale)
 
 ## Procedura
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), vai alla sezione "Bare Metal Cloud" e seleziona il tuo server dalla barra laterale sinistra in `VPS`{.action}.
+Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai alla sezione "Bare Metal Cloud" e seleziona il tuo server dalla barra laterale sinistra in `VPS`{.action}.
 
 ### Step 1: Attivare l’opzione Backup automatizzati
 

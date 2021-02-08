@@ -14,14 +14,14 @@ Wszystkie konta OVHcloud mogą używać jednej lub więcej książek adresowych.
 ## Wymagania początkowe
 
 - Posiadanie aktywnego konta SMS OVHcloud
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Posiadanie arkusza kalkulacyjnego lub edytora tekstu.
 
 ## W praktyce
 
 ### Etap 1: tworzenie książki adresowej w Panelu klienta
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i przejdź do rubryki Telecom. Następnie z menu po lewej stronie wybierz SMS.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do rubryki Telecom. Następnie z menu po lewej stronie wybierz SMS.
 
 Teraz wybierz żądane konto SMS.
 

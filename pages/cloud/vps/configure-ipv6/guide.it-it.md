@@ -28,7 +28,7 @@ L’IPv6 è la versione più recente dell’*Internet Protocol*(IP). Ogni server
 - Disporre di un [server VPS OVHcloud](https://www.ovhcloud.com/it/vps/){.external}
 - Essere connesso al tuo VPS in SSH (accesso root) o tramite desktop remoto (Windows)
 - Possedere conoscenze base di rete
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} o all'[API OVHcloud](https://api.ovh.com/console/).
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o all'[API OVHcloud](https://api.ovh.com/console/).
 
 ## Procedura
 
@@ -56,7 +56,7 @@ Per prima cosa, è necessario avere a disposizione l’indirizzo IPV6 e il gatew
 
 #### Dallo Spazio Cliente OVH <a name="viacontrolpanel"></a>
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Bare Metal Cloud`{.action}. Seleziona il tuo servizio cliccando sul `VPS`{.action} nel menu a sinistra. Assicurati di essere posizionato nella scheda `Home`{.action}:
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Bare Metal Cloud`{.action}. Seleziona il tuo servizio cliccando sul `VPS`{.action} nel menu a sinistra. Assicurati di essere posizionato nella scheda `Home`{.action}:
 
 nel riquadro `IP` è possibile visualizzare l’indirizzo IP e il gateway IPv6 assegnato al server. Una volta recuperate queste informazioni è possibile passare allo [Step 2: applica la configurazione IPv6](#applyipv6).
 

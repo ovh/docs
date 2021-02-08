@@ -17,14 +17,14 @@ Esta guía explica cómo empezar con un SQL Privado.
 
 - Tener un SQL Privado (incluido en un [plan de hosting](https://www.ovh.es/hosting/){.external} o contratado como [opción SQL](https://www.ovh.es/hosting/opciones-sql.xml){.external}).
 - Tener un [plan de hosting ](https://www.ovh.es/hosting/){.external} alojado en el mismo datacenter que el SQL Privado (puede consultar dicha información en el área de cliente de OVH).
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 
 ## Procedimiento
 
 ### Activación de su servidor SQL Privado incluido con su plan de hosting
 
-Si el plan de hosting incluye la opción SQL Privado, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. En la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} en la columna izquierda.
+Si el plan de hosting incluye la opción SQL Privado, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. En la sección `Web Cloud`{.action}, haga clic en `Alojamientos`{.action} en la columna izquierda.
 
 En la pestaña `Información general`, en el cuadro `Configuración`, haga clic en el botón `...`{.action} situado a la derecha de la **Base de datos privada**. Por último, haga clic en `Activar`{.action} para iniciar el proceso de activación.
 
@@ -34,7 +34,7 @@ Para finalizar, siga las indicaciones que se ofrecen a continuación para determ
 
 ### Ver la información general de la instancia
 
-En la columna izquierda del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Bases de datos`{.action} y seleccione el servicio de bases de datos correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
+En la columna izquierda del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Bases de datos`{.action} y seleccione el servicio de bases de datos correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
 
 > [!primary]
 >

@@ -55,7 +55,7 @@ Otrzymany rezultat powinien wyglądać następująco:
 
 ### Etap 2: logowanie do interfejsu
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i wybierz opcję `Telecom`{.action}. Następnie z menu po lewej stronie wybierz `SMS`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz opcję `Telecom`{.action}. Następnie z menu po lewej stronie wybierz `SMS`{.action}.
 
 Kliknij żądane konto SMS.
 

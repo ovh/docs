@@ -23,7 +23,7 @@ Ontdek hoe u uw VPS in de Reddingsmodus kunt opstarten.
 
 ## Vereisten
 
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl)
 
 
 ## Instructies

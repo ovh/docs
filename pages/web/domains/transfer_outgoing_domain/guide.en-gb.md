@@ -19,7 +19,7 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 ## Requirements
 
 - a [domain name](https://www.ovh.co.uk/domains/) registered with OVHcloud
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) with the necessary permissions to manage the domain name (domain administrator)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) with the necessary permissions to manage the domain name (domain administrator)
 - the registration of the domain name in question was at least 60 days ago **and** it has not been transferred or traded (i.e. change of owner) during the last 60 days
 
 > [!primary]
@@ -45,7 +45,7 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 
 ### Step 1: Remove the transfer protection for the domain name
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned.
 
 On the `General information`{.action} tab you can find the "Protection against domain name transfer" slider button under **Security**, set to `Enabled`{.action} by default.
 

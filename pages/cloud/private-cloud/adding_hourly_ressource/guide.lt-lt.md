@@ -18,7 +18,7 @@ With our [Private Cloud solutions](https://www.ovh.lt/private-cloud/){.external}
 ## Requirements
 
 - a [Private Cloud](https://www.ovh.lt/private-cloud/){.external} solution
-- [the "Add resources"](https://docs.ovh.com/fr/private-cloud/changer-les-droits-d-un-utilisateur/){.external} (French guide, English pending) right for the datacentre concerned (this right is granted via the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external})
+- [the "Add resources"](https://docs.ovh.com/fr/private-cloud/changer-les-droits-d-un-utilisateur/){.external} (French guide, English pending) right for the datacentre concerned (this right is granted via the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external})
 - access to the vSphere client
 
 

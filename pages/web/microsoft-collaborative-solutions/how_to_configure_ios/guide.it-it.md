@@ -60,7 +60,7 @@ Inserisci le informazioni richieste:
 |Informazione|Descrizione|
 |---|---|
 |Email|Questo campo dovrebbe essere precompilato. Se così non fosse, inserisci l’indirizzo email completo.|
-|Server|Indica il server che ospita il il tuo servizio Exchange. Puoi ritrovarlo nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} > scheda `Informazioni generali`{.action} del servizio Exchange corrispondente > sezione `Connessione`{.action}.|
+|Server|Indica il server che ospita il il tuo servizio Exchange. Puoi ritrovarlo nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} > scheda `Informazioni generali`{.action} del servizio Exchange corrispondente > sezione `Connessione`{.action}.|
 |Dominio|Lascia il campo vuoto|
 |Nome utente|Inserisci l’indirizzo email completo|  
 |Password|Questo campo dovrebbe essere precompilato. In caso contrario, inserisci la password associata all’indirizzo email.|

@@ -19,7 +19,7 @@ In deze handleiding wordt uitgelegd hoe u aan de slag kunt met een Cloud Web hos
 - U moet beschikken over een [Cloud Web plan](https://www.ovh.nl/shared-hosting/cloud-web.xml).
 - U moet een e-mail hebben ontvangen met daarin de bevestiging dat uw Cloud Web is geïnstalleerd.
 - U moet beschikken over een [domeinnaam](https://www.ovh.nl/domains/), wat het adres zal worden waarop uw website te vinden zal zijn.
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager).
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl).
 
 ## Instructiex
 
@@ -41,7 +41,7 @@ Met Cloud Web kunt u een reeks verschillende codeertalen gebruiken om uw project
 
 De momenteel beschikbare talen zijn: PHP en Node.js.
 
-Om toegang te krijgen tot de runtime software-toepassingen voor uw Cloud Web hostingplan, meldt u zich aan bij uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klikt u op Webhosting in de dienstenbalk aan de linkerkant en selecteert u vervolgens de naam van het betrokken `Cloud Web`{.action} hostingplan. Ga naar het `Runtime software`{.action}-tabblad.
+Om toegang te krijgen tot de runtime software-toepassingen voor uw Cloud Web hostingplan, meldt u zich aan bij uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, klikt u op Webhosting in de dienstenbalk aan de linkerkant en selecteert u vervolgens de naam van het betrokken `Cloud Web`{.action} hostingplan. Ga naar het `Runtime software`{.action}-tabblad.
 
 Wanneer u uw webhostingplan instelt, wordt automatisch een runtime software-toepassing gemaakt. Het is opgenomen als `standaardkeuze` in de tabel die wordt weergegeven. Als u een reeds geïnstalleerde runtime software wilt wijzigen, klikt u op de drie puntjes ernaast en vervolgens op `Wijzigen`{.action}. 
 
@@ -137,7 +137,7 @@ Er is geen algemene procedure, omdat het aantal projecten sterk kan variëren. O
 
 Nu u uw project hebt opgezet in uw Cloud Web hostingplan, kunt u beginnen met het maken van e-mailadressen. Als u geen e-mailadressen wilt maken, slaat u deze stap over en gaat u verder met stap 7.
 
-Om een of meer e-mailadressen aan te maken, klikt u in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} op `E-mails`{.action} in de dienstenbalk aan de linkerkant en kiest u vervolgens de domeinnaam die aan uw Cloud Web hostingplan is gekoppeld.
+Om een of meer e-mailadressen aan te maken, klikt u in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} op `E-mails`{.action} in de dienstenbalk aan de linkerkant en kiest u vervolgens de domeinnaam die aan uw Cloud Web hostingplan is gekoppeld.
 
 Om een nieuw e-mailadres aan te maken, klikt u op `Creëer e-mailadres`{.action} en volgt u de weergegeven stappen. Raadpleeg zo nodig onze handleidingen: [Creatie van een e-mailadres met MX Plan](https://docs.ovh.com/nl/emails/webhosting_e-mail_handleiding_het_aanmaken_van_een_e-mailadres/){.external}.
 
@@ -155,8 +155,8 @@ Er zijn verschillende OVH DNS-records. We zullen ons concentreren op twee specif
 
 |DNS-record|Bijbehorende dienst|Waar kan het worden gevonden?|
 |---|---|---|
-|A|Voor de website|Ga in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} naar de sectie `Webhosting`{.action} voor het betreffende Cloud Web hostingplan. Kopieer het IP-adres dat verschijnt naast "IPv4" op het tabblad `Algemene informatie`{.action}.|
-|MX|Voor e-mails|Ga in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} naar het gedeelte `E-mails`{.action} voor de betreffende domeinnaam. Kopieer de informatie die wordt weergegeven naast 'MX-records' op het tabblad `Algemene informatie`{.action}.|
+|A|Voor de website|Ga in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} naar de sectie `Webhosting`{.action} voor het betreffende Cloud Web hostingplan. Kopieer het IP-adres dat verschijnt naast "IPv4" op het tabblad `Algemene informatie`{.action}.|
+|MX|Voor e-mails|Ga in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} naar het gedeelte `E-mails`{.action} voor de betreffende domeinnaam. Kopieer de informatie die wordt weergegeven naast 'MX-records' op het tabblad `Algemene informatie`{.action}.|
 
 #### 2. DNS-records verifiëren en/of wijzigen
 
@@ -166,14 +166,14 @@ Nu u meer bekend bent met de OVH DNS-records voor uw Cloud Web hostingplan en uw
 >
 > - Als uw domeinnaam de OVH DNS-configuratie niet gebruikt, moet u wijzigingen aanbrengen met behulp van de interface die wordt gegeven door de serviceprovider die uw domeinnaam beheert.
 > 
-> - Als uw domeinnaam is geregistreerd bij OVH, kunt u controleren of de domeinnaam onze DNS-configuratie gebruikt. Ga hiervoor naar uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, selecteer de bijbehorende domeinnaam en ga naar het tabblad `DNS-servers`{.action}.
+> - Als uw domeinnaam is geregistreerd bij OVH, kunt u controleren of de domeinnaam onze DNS-configuratie gebruikt. Ga hiervoor naar uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, selecteer de bijbehorende domeinnaam en ga naar het tabblad `DNS-servers`{.action}.
 >
 
 Lees de onderstaande instructies om te zien waar u de wijzigingen moet aanbrengen:
 
 |Gebruikte DNS-configuratie |Waar worden de wijzigingen aangebracht?|
 |---|---|
-|OVH|Ga in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} naar het gedeelte `Domeinen`{.action} voor de betreffende domeinnaam. Verifieer en wijzig de nodige informatie in de tab DNS-zone. Als u verdere hulp nodig heeft, kunt u onze handleiding over het [bewerken van een OVH DNS-zone](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external} lezen.|
+|OVH|Ga in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} naar het gedeelte `Domeinen`{.action} voor de betreffende domeinnaam. Verifieer en wijzig de nodige informatie in de tab DNS-zone. Als u verdere hulp nodig heeft, kunt u onze handleiding over het [bewerken van een OVH DNS-zone](https://docs.ovh.com/nl/domains/hosting_hoe_wijzig_ik_mijn_dns_zone/){.external} lezen.|
 |Verder|Via de interface van de serviceprovider die de DNS-configuratie van uw domeinnaam beheert. Neem contact op met uw serviceprovider als u problemen ondervindt bij het maken van deze wijzigingen.|
 
 Nadat u de DNS-configuratie van uw domeinnaam hebt gewijzigd, moet u een maximum van 24 uur toestaan voordat de wijzigingen volledig worden doorgevoerd en effectief zijn. Als u meerdere domeinnamen als multisite aan uw Cloud Web hostingplan hebt toegevoegd, moet u deze twee wijzigingen aanbrengen voor elk van uw domeinnamen. 

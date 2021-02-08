@@ -18,14 +18,14 @@ section: Storage
 ## Edellytykset
 
 - Sinulla on [dedikoitu palvelin](https://www.ovh-hosting.fi/dedikoidut_palvelimet/){.external}.
-- Olet kirjautunut [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager){.external} `Dedikoidut`{.action}-osioon.
+- Olet kirjautunut [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} `Dedikoidut`{.action}-osioon.
 
 
 ## Käytännössä
 
 ### Aktivoi tallennustilasi
 
-Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external} ja mene palvelimesi sivulle `Dedikoidut`{.action}-osiossa. Valitse välilehti `Backup Storage`{.action}, klikkaa sitten painiketta `Aktivoi Backup Storage`{.action} ja vahvista.
+Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} ja mene palvelimesi sivulle `Dedikoidut`{.action}-osiossa. Valitse välilehti `Backup Storage`{.action}, klikkaa sitten painiketta `Aktivoi Backup Storage`{.action} ja vahvista.
 
 ![Aktivoi tallennustilasi](images/backup_storage_activation.png){.thumbnail}
 

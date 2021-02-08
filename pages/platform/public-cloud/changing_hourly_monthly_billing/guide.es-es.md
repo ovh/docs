@@ -27,12 +27,12 @@ Al crear una instancia de Public Cloud, puede elegir entre una tarifa por horas 
 ## Requisitos
 
 - Debe haber creado una [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external}
-- Debe haber iniciado sesión en el [área de cliente de OVHcloud para tener acceso al panel de control](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Debe haber iniciado sesión en el [área de cliente de OVHcloud para tener acceso al panel de control](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 
 ## Procedimiento
 
-Una vez iniciada sesión en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, seleccione la instancia cuya tarifa de facturación desea cambiar en el panel de control y abra su menú de opciones haciendo clic en los tres puntos a la derecha de dicha instancia. A continuación, podrá ver el botón `«Cambiar a suscripción mensual»`{.action}:
+Una vez iniciada sesión en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, seleccione la instancia cuya tarifa de facturación desea cambiar en el panel de control y abra su menú de opciones haciendo clic en los tres puntos a la derecha de dicha instancia. A continuación, podrá ver el botón `«Cambiar a suscripción mensual»`{.action}:
 
 ![Change billing calculation](images/switch.png){.thumbnail}
 

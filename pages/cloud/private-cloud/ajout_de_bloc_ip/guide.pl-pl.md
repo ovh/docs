@@ -17,7 +17,7 @@ Blok IP umożliwia udostępnianie witryn w Internecie.
 
 ## Wymagania początkowe
 
-* Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 * Posiadanie [infrastruktury Hosted Private Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} na koncie OVHcloud.
 
 ## W praktyce
@@ -102,7 +102,7 @@ Następnie użyj tego wywołania API, aby przenieść IP na „parking adresów 
 > To wywołanie odcina dostęp do sieci maszynom wirtualnym, które wykorzystują dane adresy IP.
 >
 
-Możesz śledzić przenoszenie bloku IP z poziomu Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} w sekcji `Serwer`{.action}, a następnie `Private Cloud`{.action}. Kliknij Twoją usługę Hosted Private Cloud, a następnie kartę `Operacje`{.action}.
+Możesz śledzić przenoszenie bloku IP z poziomu Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w sekcji `Serwer`{.action}, a następnie `Private Cloud`{.action}. Kliknij Twoją usługę Hosted Private Cloud, a następnie kartę `Operacje`{.action}.
 
 Odnośnik do operacji to „removeIpRipeBlock”.
 

@@ -20,7 +20,7 @@ La pagina di avviso "Sito non installato" indica che la configurazione DNS del t
 - Disporre di un piano di [hosting Web](https://www.ovh.it/hosting-web/){.external} attivo
 - Essere in grado di gestire l'[hosting Web](https://www.ovh.it/hosting-web/){.external} su cui è ospitato il tuo sito Web
 - Essere in grado di gestire la configurazione del dominio pertinente, ovvero la sua zona DNS
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 
 
 ## Procedura
@@ -36,7 +36,7 @@ Per evitare questo tipo di problema, grazie ai due seguenti passaggi puoi contro
 
 ### Step 1: verifica della configurazione dell’hosting Web (Multisito)
 
-Per verificare che il dominio sia stato aggiunto correttamente come Multisito al tuo hosting Web, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, e clicca su `Hosting`{.action} nel menu di sinistra. Nell'elenco dei tuoi hosting, seleziona quello che ospita il sito Web per il quale viene visualizzata la pagina "Sito non installato". Infine, vai alla scheda `Multisito`{.action}.
+Per verificare che il dominio sia stato aggiunto correttamente come Multisito al tuo hosting Web, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, e clicca su `Hosting`{.action} nel menu di sinistra. Nell'elenco dei tuoi hosting, seleziona quello che ospita il sito Web per il quale viene visualizzata la pagina "Sito non installato". Infine, vai alla scheda `Multisito`{.action}.
 
 La tabella che appare contiene tutti i domini che sono stati aggiunti al tuo hosting come Multisito. La barra di ricerca può aiutarti a trovare il dominio.
 
@@ -60,14 +60,14 @@ Ora puoi verificare la configurazione del servizio DNS del tuo dominio. Tale ver
 
 > [!primary]
 >
-> Se il tuo dominio è registrato presso OVH, puoi verificare se utilizza la nostra configurazione. Per fare ciò, sempre nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, fai clicca su `Domini`{.action} nel menu di sinistra, dopodiché sul dominio interessato. Infine, vai alla scheda `Server DNS`{.action}.
+> Se il tuo dominio è registrato presso OVH, puoi verificare se utilizza la nostra configurazione. Per fare ciò, sempre nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, fai clicca su `Domini`{.action} nel menu di sinistra, dopodiché sul dominio interessato. Infine, vai alla scheda `Server DNS`{.action}.
 >
 
 La verifica può essere effettuata in due punti diversi, a seconda della configurazione utilizzata dal tuo dominio:
 
 - **il tuo dominio non usa la configurazione di OVH**\: in tal caso, è necessario eseguire la verifica (descritta di seguito) dall'interfaccia del fornitore che gestisce il servizio DNS del tuo dominio;
 
-- **il tuo dominio utilizza la configurazione di OVH**\: la verifica viene eseguita dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Vai alla scheda `Zona DNS`{.action}, una volta che ti sei posizionato sul dominio interessato. La configurazione DNS viene visualizzata in una tabella, con ogni riga che rappresenta un record DNS specifico. Puoi filtrare il contenuto per tipo di record o per sottodominio.
+- **il tuo dominio utilizza la configurazione di OVH**\: la verifica viene eseguita dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Vai alla scheda `Zona DNS`{.action}, una volta che ti sei posizionato sul dominio interessato. La configurazione DNS viene visualizzata in una tabella, con ogni riga che rappresenta un record DNS specifico. Puoi filtrare il contenuto per tipo di record o per sottodominio.
 
 ![sitenotinstalled](images/site-not-installed-edit-ovh-dns-zone.png){.thumbnail}
 

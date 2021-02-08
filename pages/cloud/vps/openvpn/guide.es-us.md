@@ -11,7 +11,7 @@ OpenVPN es un software que le brinda la posibilidad de crear una Red Virtual Pri
 
 ## Requisitos
 
-- Acceso al [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager)
+- Acceso al [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 - un [servicio OVHcloud VPS](https://www.ovh.com/world/es/vps/){.external}
 
 ## Orden

@@ -16,7 +16,7 @@ Zjistěte, jak aktualizovat svůj Cisco ASA firewall.
 
 ## Prerekvizity
 
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 
 ## Postup
@@ -25,7 +25,7 @@ Zjistěte, jak aktualizovat svůj Cisco ASA firewall.
 
 V průběhu aktualizace se zařízení několikrát restartuje. Z toho důvodu doporučujeme Cisco ASA firewall nejdříve deaktivovat, a zabránit tak případné nedostupnosti serveru v průběhu aktualizačního procesu.
 
-Za účelem deaktivace firewallu přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sekce `Dedicated`{.action}. V levém postranním panelu vyberte požadovaný server a přejděte do záložky `Cisco ASA firewall`{.action}. Následně klikněte na tlačítko `Deaktivovat Cisco ASA firewall`{.action} v pravé části obrazovky.
+Za účelem deaktivace firewallu přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, sekce `Dedicated`{.action}. V levém postranním panelu vyberte požadovaný server a přejděte do záložky `Cisco ASA firewall`{.action}. Následně klikněte na tlačítko `Deaktivovat Cisco ASA firewall`{.action} v pravé části obrazovky.
 
 ![Deaktivace Cisco ASA](images/customer_panel_asa_disable.png){.thumbnail}
 
@@ -110,7 +110,7 @@ Restart pro obnovení konfigurace může trvat několik minut.
 
 ### Reaktivace firewallu Cisco ASA prostřednictvím Zákaznického prostoru OVH
 
-Stejně jako v první fázi přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sekce `Dedicated`{.action}. V levém postranním panelu vyberte požadovaný server a přejděte do záložky `Cisco ASA firewall`{.action}. Následně klikněte na tlačítko `Aktivovat Cisco ASA firewall`{.action} v pravé části obrazovky.
+Stejně jako v první fázi přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, sekce `Dedicated`{.action}. V levém postranním panelu vyberte požadovaný server a přejděte do záložky `Cisco ASA firewall`{.action}. Následně klikněte na tlačítko `Aktivovat Cisco ASA firewall`{.action} v pravé části obrazovky.
 
 ![Aktivace Cisco ASA](images/customer_panel_asa_enable.png){.thumbnail}
 
@@ -120,7 +120,7 @@ Po dokončení restartu zkontrolujte funkčnost služeb na daném serveru. Pokud
 
 Nyní je zapotřebí provést opětovnou deaktivaci firewallu Cisco ASA.
 
-Za účelem deaktivace firewallu přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sekce `Dedicated`{.action}. V levém postranním panelu vyberte požadovaný server a přejděte do záložky `Cisco ASA firewall`{.action}. Následně klikněte na tlačítko `Aktivovat Cisco ASA firewall`{.action} v pravé části obrazovky.
+Za účelem deaktivace firewallu přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, sekce `Dedicated`{.action}. V levém postranním panelu vyberte požadovaný server a přejděte do záložky `Cisco ASA firewall`{.action}. Následně klikněte na tlačítko `Aktivovat Cisco ASA firewall`{.action} v pravé části obrazovky.
 
 ![Deaktivace Cisco ASA](images/customer_panel_asa_disable.png){.thumbnail}
 
@@ -398,7 +398,7 @@ Cryptochecksum: 4b86b1e4 2e731d6b 9d1fc491 a5eae0f3
 
 ### Reaktivace firewallu Cisco ASA prostřednictvím Zákaznického prostoru OVH
 
-Stejně jako v první fázi přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sekce `Dedicated`{.action}. V levém postranním panelu vyberte požadovaný server a přejděte do záložky `Cisco ASA firewall`{.action}. Následně klikněte na tlačítko `Aktivovat Cisco ASA firewall`{.action} v pravé části obrazovky.
+Stejně jako v první fázi přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, sekce `Dedicated`{.action}. V levém postranním panelu vyberte požadovaný server a přejděte do záložky `Cisco ASA firewall`{.action}. Následně klikněte na tlačítko `Aktivovat Cisco ASA firewall`{.action} v pravé části obrazovky.
 
 ![Aktivace Cisco ASA](images/customer_panel_asa_enable.png){.thumbnail}
 

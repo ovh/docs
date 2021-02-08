@@ -17,7 +17,7 @@ OVHcloud Public Cloud Instanzen erfordern einen anderen Ansatz als VPS oder Dedi
 ## Voraussetzungen
 
 - Sie verfügen über ein [Public Cloud](https://www.ovhcloud.com/de/public-cloud/) Projekt in Ihrem OVHcloud Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 
 ## In der praktischen Anwendung
@@ -144,7 +144,7 @@ Unabhängig von der zur Erstellung der SSH-Schlüssel verwendeten Methode verfü
 Gespeicherte SSH-Schlüssel ermöglichen es Ihnen, Ihre Instanzen schneller zu erstellen. Zur Änderung von Schlüsselpaaren oder zum späteren Hinzufügen von Benutzern lesen Sie bitte die Anleitung „[Configuring additional SSH keys](https://docs.ovh.com/gb/en/public-cloud/configuring_additional_ssh_keys/)“ (Englisch).
 >
 
-Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter „Project Management“ auf `SSH-Schlüssel`{.action}.
+Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter „Project Management“ auf `SSH-Schlüssel`{.action}.
 
 Klicken Sie auf den Button `SSH-Schlüssel hinzufügen`{.action}. Geben Sie im neu geöffneten Fenster einen Namen für den Schlüssel ein und fügen Sie Ihre Schlüsselfolge (in [Schritt 1](./#schritt-1-ssh-schlussel-erstellen) aus der öffentlichen Schlüsseldatei bzw. dem PuTTYgen-Fenster kopiert) in das Feld „Schlüssel“ ein. Bestätigen Sie den Vorgang, indem Sie auf `Hinzufügen`{.action} klicken.
 
@@ -153,7 +153,7 @@ Klicken Sie auf den Button `SSH-Schlüssel hinzufügen`{.action}. Geben Sie im n
 
 ### Schritt 3: Instanz erstellen
 
-Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie auf der „Start“-Seite auf `Instanz erstellen`{.action}. (Sie finden dieselbe Funktion auch auf der „Instanzen“-Seite, indem Sie in der linken Menüzeile unter „Compute“ auf `Instances`{.action} klicken.)
+Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie auf der „Start“-Seite auf `Instanz erstellen`{.action}. (Sie finden dieselbe Funktion auch auf der „Instanzen“-Seite, indem Sie in der linken Menüzeile unter „Compute“ auf `Instances`{.action} klicken.)
 
 ![Instanz auswählen](images/instance-creation-01.png){.thumbnail}
 
@@ -217,7 +217,7 @@ Nachdem Sie überprüft haben, dass Ihre Konfigurationseinstellungen korrekt sin
 
 ### Schritt 4: Mit Ihrer Instanz verbinden
 
-Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter „Compute“ auf `Instanzen`{.action}. Ihre Instanz steht bereit, sobald in der entsprechenden Tabellenspalte als Status „Aktiviert“ angezeigt wird. Um dies zu überprüfen, können Sie rechts neben `Instanz erstellen`{.action} auf den Aktualisierungsbutton klicken.
+Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie dann in der linken Menüleiste unter „Compute“ auf `Instanzen`{.action}. Ihre Instanz steht bereit, sobald in der entsprechenden Tabellenspalte als Status „Aktiviert“ angezeigt wird. Um dies zu überprüfen, können Sie rechts neben `Instanz erstellen`{.action} auf den Aktualisierungsbutton klicken.
 
 ![Instanzen-Seite](images/instance-connect-01.png){.thumbnail}
 
@@ -230,7 +230,7 @@ Sollten Verbindungsprobleme auftreten, d. h. kommt es zu Fehlern mit Ihren SSH-S
 
 #### Über Linux / Mac mit einer Linux-Instanz verbinden
 
-Sie können jetzt über die Kommandozeile (Terminal) via SSH auf Ihre Instanz zugreifen. Ersetzen Sie „username“ in den nachfolgenden Beispielen wie zuvor beschrieben mit Ihrem Standardbenutzer. Sie können auch einfach den gesamten Login-Befehl aus dem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) kopieren, indem Sie diesen im „Dashboard“ Ihrer Instanz anklicken und in Ihr Terminal kopieren.
+Sie können jetzt über die Kommandozeile (Terminal) via SSH auf Ihre Instanz zugreifen. Ersetzen Sie „username“ in den nachfolgenden Beispielen wie zuvor beschrieben mit Ihrem Standardbenutzer. Sie können auch einfach den gesamten Login-Befehl aus dem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) kopieren, indem Sie diesen im „Dashboard“ Ihrer Instanz anklicken und in Ihr Terminal kopieren.
 
 ![Instanzen-Seite](images/instance-connect-02.png){.thumbnail}
 
@@ -248,7 +248,7 @@ New password:
 Retype new password:
 passwd: password updated successfully
 ```
-Sie können diese Login-Daten anschließend verwenden, um sich über die `VNC-Konsole`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager) einzuloggen. Wechseln Sie nun zum „root“-Benutzer und legen Sie ein sicheres Passwort fest. Wechseln Sie dann wieder zum vorherigen Benutzer.
+Sie können diese Login-Daten anschließend verwenden, um sich über die `VNC-Konsole`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) einzuloggen. Wechseln Sie nun zum „root“-Benutzer und legen Sie ein sicheres Passwort fest. Wechseln Sie dann wieder zum vorherigen Benutzer.
 
 ```sh
 $ sudo su -
@@ -268,7 +268,7 @@ Nachdem Sie Ihre SSH-Schlüssel erstellt und gespeichert ([Schritt 1](./#schritt
 
 ![PuTTY verwenden](images/puttyconnect-01.png){.thumbnail}
 
-Klicken Sie auf den Button `Browse`{.action}, um zu dem Ordner zu navigieren, in dem sich Ihre private Schlüsseldatei (.ppk) befindet, und öffnen Sie diese. Wechseln Sie dann im linken Menü zu „Session“ und geben Sie Ihre Login-Daten (benutzer@IPv4_adresse) ein. Ersetzen Sie „ubuntu“ in den Beispiel-Screenshots mit dem zugehörigen Standardbenutzer, der im „Dashboard“ der Instanz im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) angezeigt wird. (Klicken Sie in der linken Menüleiste auf `Instances`{.action}, dann auf den Namen der Instanz.)
+Klicken Sie auf den Button `Browse`{.action}, um zu dem Ordner zu navigieren, in dem sich Ihre private Schlüsseldatei (.ppk) befindet, und öffnen Sie diese. Wechseln Sie dann im linken Menü zu „Session“ und geben Sie Ihre Login-Daten (benutzer@IPv4_adresse) ein. Ersetzen Sie „ubuntu“ in den Beispiel-Screenshots mit dem zugehörigen Standardbenutzer, der im „Dashboard“ der Instanz im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angezeigt wird. (Klicken Sie in der linken Menüleiste auf `Instances`{.action}, dann auf den Namen der Instanz.)
 
 Sie können diese Sitzung nun für zukünftige Verbindungen speichern, damit sie über die Liste in diesem Interface verfügbar ist. Geben Sie unter „Saved Sessions“ einen beschreibenden Namen ein und klicken Sie auf `Save`{.action}, um diesen hinzuzufügen.
 
@@ -314,7 +314,7 @@ Sollten bei diesem Vorgang Probleme auftreten, stellen Sie sicher, dass Remoteve
 
 ##### **Über Linux**
 
-Sie können über die eingebaute VNC-Konsole im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) auf Public Cloud Instanzen zugreifen. Für den Login über Ihr lokales Gerät müssen die Verbindungen über eine Client-Anwendung hergestellt werden, die das Remote Desktop Protocol (RDP) unterstützt.
+Sie können über die eingebaute VNC-Konsole im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf Public Cloud Instanzen zugreifen. Für den Login über Ihr lokales Gerät müssen die Verbindungen über eine Client-Anwendung hergestellt werden, die das Remote Desktop Protocol (RDP) unterstützt.
 
 Remmina Remote Desktop Client beispielsweise ist eine kompatible Anwendung, die bei einer Ubuntu-Desktop-Installation enthalten sein sollte. Wenn Sie Remmina in Ihrer Umgebung nicht finden können, können Sie es von der [offiziellen Webseite](https://remmina.org/) herunterladen.
 

@@ -9,7 +9,7 @@ order: 2
 
 ## Diagnose durchführen
 
-Loggen Sie sich in Ihr OVH Kundencenter ein:[OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+Loggen Sie sich in Ihr OVH Kundencenter ein:[OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 Wählen Sie dann im Menü links unter Microsoft Ihren Exchange Service aus.
 

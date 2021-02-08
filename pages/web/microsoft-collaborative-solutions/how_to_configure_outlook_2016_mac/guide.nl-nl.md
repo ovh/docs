@@ -45,7 +45,7 @@ Voer uw e-mailwachtwoord in en klik op `Volgende`{.action}. Als provider selecte
 |Postadres|Voer de naam in waarmee u dit account kunt herkennen tussen andere die worden weergegeven in uw Outlook-app.|
 |DOMEIN\gebruikersnaam of e-mailadres|Voer het volledige e-mailadres in. |
 |Het wachtwoord|Voer het wachtwoord van het e-mailadres in. |
-|Server|Afhankelijk van de DNS-configuratie van uw domeinnaam, kan het invullen van de server optioneel zijn. Voer de server in waar uw Exchange op gehost wordt. U vindt deze gegevens in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} door naar het tabblad `Algemene informatie`{.action} van de betreffende Exchange-dienst te gaan en vervolgens naar het gedeelte `Inloggen`{.action}.|
+|Server|Afhankelijk van de DNS-configuratie van uw domeinnaam, kan het invullen van de server optioneel zijn. Voer de server in waar uw Exchange op gehost wordt. U vindt deze gegevens in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} door naar het tabblad `Algemene informatie`{.action} van de betreffende Exchange-dienst te gaan en vervolgens naar het gedeelte `Inloggen`{.action}.|
 
 Nadat u deze informatie hebt ingevoerd, klikt u op `Volgende`{.action}. Als de informatie correct is, maakt Outlook verbinding met het account.
 

@@ -12,13 +12,13 @@ section: 'Pierwsze kroki'
 
 ### Co zrobić w przypadku awarii mojej strony www? 
 
-U podstaw nieprawidłowego działania Twojej strony internetowej może znajdować się kilka przyczyn. Aby ustalić źródło problemu, rozpocznij od sprawdzenia, czy wszystkie Twoje usługi zostały odnowione i są włączone, logując się do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Następnie sprawdź [aktualnie prowadzone prace](http://travaux.ovh.net/){.external}. Jeżeli wszystkie usługi są aktywne, a Twoja strona nie jest objęta żadną z prowadzonych przez nas prac, zapraszamy do przeprowadzenia szczegółowej diagnostyki w oparciu o [nasze przewodniki do diagnostyki](../).
+U podstaw nieprawidłowego działania Twojej strony internetowej może znajdować się kilka przyczyn. Aby ustalić źródło problemu, rozpocznij od sprawdzenia, czy wszystkie Twoje usługi zostały odnowione i są włączone, logując się do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Następnie sprawdź [aktualnie prowadzone prace](http://travaux.ovh.net/){.external}. Jeżeli wszystkie usługi są aktywne, a Twoja strona nie jest objęta żadną z prowadzonych przez nas prac, zapraszamy do przeprowadzenia szczegółowej diagnostyki w oparciu o [nasze przewodniki do diagnostyki](../).
 
-**Wskazówki i porady**: Jeżeli Twoja strona nagle stała się niedostępna na skutek wykonanej przez Ciebie operacji, możesz odzyskać jej zawartość z poziomu Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. W tym celu udaj się do zakładki `FTP - SSH` Twojej usługi hostingu i kliknij przycisk `Przywróć kopię zapasową`{.action} znajdujący się po prawej stronie Twojego ekranu. Możesz również zapoznać się z treścią dokumentacji: [Przywracanie plików na przestrzeni dyskowej hostingu](../hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/).
+**Wskazówki i porady**: Jeżeli Twoja strona nagle stała się niedostępna na skutek wykonanej przez Ciebie operacji, możesz odzyskać jej zawartość z poziomu Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W tym celu udaj się do zakładki `FTP - SSH` Twojej usługi hostingu i kliknij przycisk `Przywróć kopię zapasową`{.action} znajdujący się po prawej stronie Twojego ekranu. Możesz również zapoznać się z treścią dokumentacji: [Przywracanie plików na przestrzeni dyskowej hostingu](../hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/).
 
 ### W jaki sposób skonfigurować moją usługę hostingu? 
 
-W celu skonfigurowania Twojej usługi hostingu, udaj się najpierw do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. W rubryce `Hosting` będziesz mieć, między innymi, możliwość zarządzania Twoimi certyfikatami SSL, Twoimi wersjami PHP, Twoimi systemami CDN, Twoimi stronami podpiętymi w opcji MultiSite, Twoimi bazami danych...
+W celu skonfigurowania Twojej usługi hostingu, udaj się najpierw do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W rubryce `Hosting` będziesz mieć, między innymi, możliwość zarządzania Twoimi certyfikatami SSL, Twoimi wersjami PHP, Twoimi systemami CDN, Twoimi stronami podpiętymi w opcji MultiSite, Twoimi bazami danych...
 
 **Wskazówki i porady**: Aby w sposób nieskomplikowany skonfigurować Twoją usługę hostingu, zapoznaj się z treścią rubryki <br> „Pierwsze kroki”, którą odnajdziesz [tutaj](../).
 
@@ -26,17 +26,17 @@ W celu skonfigurowania Twojej usługi hostingu, udaj się najpierw do Twojego [p
 
 Aby stworzyć lub usunąć dany element, zaloguj się do odpowiedniej usługi > (`E-mail`, `Baza danych`, `Moduły`). Będziesz mógł(mogła) modyfikować lub uaktualnić Twój produkt zgodnie z Twoimi potrzebami.
 
-**Wskazówki i porady**\: z poziomu Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} możesz regularnie tworzyć kopie zapasowe Twoich baz danych.
+**Wskazówki i porady**\: z poziomu Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} możesz regularnie tworzyć kopie zapasowe Twoich baz danych.
 
 ### Jak zarządzać swoimi hasłami? 
 
-Aby zarządzać swoimi hasłami, musisz najpierw zalogować się do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Jeżeli nie pamiętasz swojego loginu lub hasła, kliknij opcję `Nie pamiętam identyfikatora lub hasła`{.action} znajdującą się pod okienkiem logowania. Zostanie do Ciebie wysłana wiadomość e-mail z procedurą przywracania danych.
+Aby zarządzać swoimi hasłami, musisz najpierw zalogować się do Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Jeżeli nie pamiętasz swojego loginu lub hasła, kliknij opcję `Nie pamiętam identyfikatora lub hasła`{.action} znajdującą się pod okienkiem logowania. Zostanie do Ciebie wysłana wiadomość e-mail z procedurą przywracania danych.
 Możesz również zapoznać się z treścią przewodnika [Tworzenie i zarządzanie hasłem do konta](../../customer/zarzadzanie-haslem/).
 
 Po zalogowaniu się do panelu klienta będziesz mógł(mogła) zarządzać swoimi poszczególnymi dostępami, takimi jak: 
 
-- dostęp do Twojego serwera FTP oraz dostęp do baz danych. W tym celu, udaj się do rubryki `Hosting` Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i wybierz odpowiedni produkt/usługę.
-- dostęp do Twoich e-maili z poziomu Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), rubryka `E-mail`.
+- dostęp do Twojego serwera FTP oraz dostęp do baz danych. W tym celu, udaj się do rubryki `Hosting` Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz odpowiedni produkt/usługę.
+- dostęp do Twoich e-maili z poziomu Twojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), rubryka `E-mail`.
 
 **Wskazówki i porady**: W przypadku oferty E-mail Pro lub Exchange możesz zarządzać swoimi dostępami również z wykorzystaniem systemów webmail odpowiadających tym ofertom.
 
@@ -71,7 +71,7 @@ Sama zmiana jego nazwy może być dobrym rozwiązaniem, gdyż pozwoli na ponown�
 
 ### Jak zmienić ofertę hostingu?
 
-Jeśli chcesz zmienić aktualną ofertę na wyższą, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, do sekcji `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie.
+Jeśli chcesz zmienić aktualną ofertę na wyższą, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, do sekcji `Web Cloud`{.action}. Kliknij przycisk `Hosting`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie.
 
 W zakładce `Informacje ogólne` w sekcji `Abonament` kliknij przycisk `...`{.action} przed "Ofertą", a następnie kliknij przycisk `Zmień ofertę`{.action}. Postępuj zgodnie z poniższymi instrukcjami, aby sfinalizować zamówienie. Do nowej oferty dodana jest proporcjonalna część pozostałego czasu trwania Twojej aktualnej oferty.
 

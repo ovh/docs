@@ -17,7 +17,7 @@ Po [utworzeniu puli](https://docs.ovh.com/pl/cloud-desktop-infrastructure/jak-ut
 
 ## Wymagania początkowe
 
-- Utworzenie kont użytkowników w Active Directory, jeśli wcześniej [została utworzona relacja zaufania](https://docs.ovh.com/fr/cloud-desktop-infrastructure/approval-ad/){.external} lub utworzenie kont użytkowników w [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Utworzenie kont użytkowników w Active Directory, jeśli wcześniej [została utworzona relacja zaufania](https://docs.ovh.com/fr/cloud-desktop-infrastructure/approval-ad/){.external} lub utworzenie kont użytkowników w [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Dostęp do interfejsu VMware Horizon 7.1.
 
 

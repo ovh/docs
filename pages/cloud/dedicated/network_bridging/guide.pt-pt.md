@@ -23,7 +23,7 @@ A ligação em rede em modo bridge pode ser utilizada para configurar as suas m�
 
 - Dispor de um servidor dedicado com um hipervisor instalado ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, por exemplo).
 - Beneficiar de, pelo menos, um endereço [IP Failover](https://www.ovhcloud.com/pt/bare-metal/ip/) ligado ao servidor.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
@@ -40,7 +40,7 @@ Para este exemplo, utilizaremos os seguintes valores nos nossos exemplos de cód
 
 ### Atribuir um endereço MAC virtual
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e clique no menu `Bare Metal Cloud`{.action}. A seguir, clique no menu `IP`{.action} na barra à esquerda e, em seguida, procure o seu endereço IP Failover na tabela.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e clique no menu `Bare Metal Cloud`{.action}. A seguir, clique no menu `IP`{.action} na barra à esquerda e, em seguida, procure o seu endereço IP Failover na tabela.
 
 ![Failover IP](images/virtual_mac_01_2020_1.png){.thumbnail}
 
@@ -66,7 +66,7 @@ O seu endereço de gateway será então:
 
 > [!primary]
 >
-Para todos os sistemas operativos e distribuições, deve configurar a sua máquina virtual com o endereço MAC virtual criado na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Para todos os sistemas operativos e distribuições, deve configurar a sua máquina virtual com o endereço MAC virtual criado na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 >
 
 #### Proxmox
@@ -332,7 +332,7 @@ ip addr add FAILOVER_IP/32 dev test-bridge
 
 Substitua "MAC_ADDRESS" pelo endereço MAC virtual gerado no painel de configuração e "FAILOVER_IP" pelo IP Failover real.
 
-Depois, basta fazer um ping ao IP Failover a partir do exterior. Se isto funcionar, isto provavelmente significa que existe um erro de configuração na máquina virtual ou no host que impede o IP fail-over de funcionar em modo normal. Se, pelo contrário, o IP ainda não funcionar, abra um ticket à equipa de assistência através da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} para uma investigação complementar.
+Depois, basta fazer um ping ao IP Failover a partir do exterior. Se isto funcionar, isto provavelmente significa que existe um erro de configuração na máquina virtual ou no host que impede o IP fail-over de funcionar em modo normal. Se, pelo contrário, o IP ainda não funcionar, abra um ticket à equipa de assistência através da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} para uma investigação complementar.
 
 ## Quer saber mais?
 

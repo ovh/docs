@@ -22,13 +22,13 @@ Przed zastosowaniem opcji tworzenia kopii zapasowych zalecamy przejrzenie [stron
 
 ## Wymagania początkowe
 
-- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - skonfigurowana [usługa VPS](https://www.ovhcloud.com/pl/vps/) OVHcloud
 
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), przejdź do sekcji „Serwer” i wybierz serwer na lewym pasku bocznym pod pozycją `VPS`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji „Serwer” i wybierz serwer na lewym pasku bocznym pod pozycją `VPS`{.action}.
 
 ### Krok 1: subskrybowanie opcji kopii zapasowej
 

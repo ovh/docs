@@ -14,14 +14,14 @@ Możesz ograniczyć dostęp do vCenter, pozwalając na łączenie się z nim tyl
 
 ## Wymagania początkowe
 
-* Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 * Posiadanie [infrastruktury Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external} na koncie OVHcloud.
 
 ## W praktyce
 
 Kiedy[polityka dostępu do vCenter jest ograniczona](../autoryzacja-IP-ktore-moga-laczyc-sie-z-vCenter/), konieczne jest dodanie adresów IP, które będą mogły łączyć się z usługą.
 
-Operacja ta przeprowadzana jest w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external-link}. W sekcji `Serwer`, kliknij sekcję `Private Cloud`. Wybierz infrastrukturę, przejdź do zakładki `Bezpieczeństwo`, po czym kliknij `Dodaj nowy zakres adresów IP`{.action}.
+Operacja ta przeprowadzana jest w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external-link}. W sekcji `Serwer`, kliknij sekcję `Private Cloud`. Wybierz infrastrukturę, przejdź do zakładki `Bezpieczeństwo`, po czym kliknij `Dodaj nowy zakres adresów IP`{.action}.
 
 ![vCenter](images/restrictIP.JPG){.thumbnail}
 

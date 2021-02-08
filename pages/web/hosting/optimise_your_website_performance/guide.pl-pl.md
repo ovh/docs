@@ -21,7 +21,7 @@ Zawiera podstawowe informacje o tym, co wpływa na wydajność witryn internetow
 - [plan hostingu WWW OVHcloud](https://www.ovh.pl/hosting/){.external}
 - e-mail potwierdzający skonfigurowanie planu hostingu WWW
 - [nazwa domeny](https://www.ovh.pl/domeny/){.external} umożliwiająca dostęp do witryny internetowej
-- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce
 
@@ -86,7 +86,7 @@ Więcej informacji na ten temat zawiera poniższy krok 5.
 ### Krok 4: optymalizacja skryptów
 Aby znaleźć źródło opóźnień, przejrzyj wykresy wykorzystania zasobów hostingu (więcej informacji poniżej). Następnie sprawdź w logach wpisy z okresów, w których wystąpiło szczytowe wykorzystanie.
 
-Logi, statystyki i wykresy są dostępne bezpośrednio w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Logi, statystyki i wykresy są dostępne bezpośrednio w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 Dostęp do logów:
 \- Kliknij domenę w sekcji `Hosting`{.action}.
@@ -157,7 +157,7 @@ _Ten krok jest opcjonalny, jeśli nie korzystasz z bazy danych._
 Dostęp do bazy danych umożliwia narzędzie PHPMyAdmin. Instrukcja korzystania z narzędzia PHPMyAdmin wykracza poza zakres tego przewodnika, więc to zagadnienie nie zostanie rozwinięte.
 Szczegółowe informacje można znaleźć w wielu przewodnikach zewnętrznych.
 
-**Dostęp do bazy danych za pośrednictwem narzędzia phpMyAdmin:** Aby uzyskać dostęp do bazy danych za pomocą narzędzia phpMyAdmin, skorzystaj z[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}:
+**Dostęp do bazy danych za pośrednictwem narzędzia phpMyAdmin:** Aby uzyskać dostęp do bazy danych za pomocą narzędzia phpMyAdmin, skorzystaj z[Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}:
 
 - Kliknij domenę w sekcji `Hosting`{.action}.
 - Przejdź do karty `Baza danych`{.action}.

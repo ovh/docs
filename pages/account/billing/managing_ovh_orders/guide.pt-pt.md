@@ -9,18 +9,18 @@ section: 'Gerir as encomendas, faturas e serviços'
 
 ## Objetivo
 
-Sempre que efetuar uma encomenda, pode segui-la e interagir com ela a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Sempre que efetuar uma encomenda, pode segui-la e interagir com ela a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 **Este guia explica-lhe como gerir as suas encomendas.**
 
 > [!primary]
 >
-> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Caso tenha alguma dúvida, consulte os contratos OVHcloud disponíveis na sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}. Para isso, clique no seu ID de cliente no canto superior direito e selecione `Produtos e serviços`{.action} > `Contratos`{.action}.
+> Dependendo do seu local de residência e da legislação em vigor, assim como dos produtos afetados, é possível que algumas secções deste manual variem e/ou não sejam aplicáveis à sua situação. Caso tenha alguma dúvida, consulte os contratos OVHcloud disponíveis na sua [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Para isso, clique no seu ID de cliente no canto superior direito e selecione `Produtos e serviços`{.action} > `Contratos`{.action}.
 >
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - Ter realizado, pelo menos, uma encomenda na OVHcloud.
 
 
@@ -40,12 +40,12 @@ A nota de encomenda é criada quando efetua uma encomenda. Indica os produtos en
 |4|Nesta secção, encontrará os métodos de pagamento disponíveis. Apenas serão sugeridos os métodos de pagamento autorizados no país de origem da conta ou os que estão associados ao tipo de conta registada.|
 
 
-Pode consultar a sua nota de encomenda a qualquer momento através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, conforme explicado abaixo.
+Pode consultar a sua nota de encomenda a qualquer momento através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, conforme explicado abaixo.
 
 
 ### Aceder às notas de encomenda na Área de Cliente OVHcloud
 
-Para aceder ao painel de gestão das encomendas, deverá clicar no seu `Paneil de controlo`{.action} no canto superior esquerdo da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, e clicar em `Ver as minhas encomendas`{.action}.
+Para aceder ao painel de gestão das encomendas, deverá clicar no seu `Paneil de controlo`{.action} no canto superior esquerdo da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, e clicar em `Ver as minhas encomendas`{.action}.
 
 ![Área de Cliente](images/huborders.png){.thumbnail}
 
@@ -75,7 +75,7 @@ Se o estado do pedido for “Entrega em curso” ou “Aguardar pagamento”, po
 
 ### Seguir a sua encomenda.
 
-Após criar a sua nota de encomenda, pode seguir a sua encomenda a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique em `Paneil de controlo`{.action}, depois em `Ver as minhas encomendas`{.action} e por fim em `...`{.action} junto à sua encomenda. Selecione `Seguir encomenda`{.action}. O acompanhamento de encomendas pode ser igualmente exibido, clicando no estado de uma encomenda na coluna "Estado".
+Após criar a sua nota de encomenda, pode seguir a sua encomenda a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Paneil de controlo`{.action}, depois em `Ver as minhas encomendas`{.action} e por fim em `...`{.action} junto à sua encomenda. Selecione `Seguir encomenda`{.action}. O acompanhamento de encomendas pode ser igualmente exibido, clicando no estado de uma encomenda na coluna "Estado".
 
 ![Acompanhamento de encomendas](images/order05b.png){.thumbnail}
 
@@ -90,7 +90,7 @@ O artigo 12.º das nossas [Condições gerais de serviço](https://www.ovh.pt/su
 
 Para mais informações, consulte as nossas Condições gerais de serviço.
 
-Se o cliente cumprir os requisitos necessários para exercer o seu direito de retratação, poderá fazê-lo diretamente na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique em `Paneil de controlo`{.action}, depois em `Ver as minhas encomendas`{.action} e por fim em `...`{.action} junto à sua encomenda. Selecione `Anular a encomenda`{.action}.
+Se o cliente cumprir os requisitos necessários para exercer o seu direito de retratação, poderá fazê-lo diretamente na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Paneil de controlo`{.action}, depois em `Ver as minhas encomendas`{.action} e por fim em `...`{.action} junto à sua encomenda. Selecione `Anular a encomenda`{.action}.
 
 ![Anular uma encomenda](images/cancelorder1.png){.thumbnail}
 

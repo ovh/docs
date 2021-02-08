@@ -18,14 +18,14 @@ Bij het installeren of opnieuw installeren van uw Windows-besturingssysteem ontv
 ## Vereisten
 
 * U moet beschikken over een [dedicated server](https://www.ovh.nl/dedicated_servers/){.external} waarop Windows is geïnstalleerd.
-* U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 
 
 ## Instructie
 
 Start uw server in de reddingsmodus met behulp van de opstartomgeving van WinRescue om aan de slag te gaan. Indien nodig kunt u de handleiding over de [reddingsmodus](https://docs.ovh.com/nl/dedicated/ovh-rescue/){.external} te raadplegen. 
 
-Nadat de server opnieuw is opgestart, selecteert u het tabblad `IPMI`{.action} op uw serverpagina in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Nadat de server opnieuw is opgestart, selecteert u het tabblad `IPMI`{.action} op uw serverpagina in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 > [!primary]
 >

@@ -9,18 +9,18 @@ section: 'Managing orders, bills and services'
 
 ## Objective
 
-There are various stages in the OVHcloud order process, and you can track them in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+There are various stages in the OVHcloud order process, and you can track them in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}.
 
 **This guide will provide you with more information on your purchase order, and its various statuses.**
 
 > [!primary]
 >
-> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not be applicable to your situation. If you have any doubts, please refer to your OVHcloud contracts, which you can access from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} by going to `My services`{.action}, then `My contracts`{.action}.
+> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not be applicable to your situation. If you have any doubts, please refer to your OVHcloud contracts, which you can access from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} by going to `My services`{.action}, then `My contracts`{.action}.
 >
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
 - at least one OVHcloud product order
 
 
@@ -40,12 +40,12 @@ A purchase order is generated when you place an order. It lists the products ord
 |4|Here, you will find the available payment methods. We can only offer the payment methods authorised in the account’s country of origin, or those linked to the account type.|
 
 
-As a reminder, you can view your purchase order at any time in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+As a reminder, you can view your purchase order at any time in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}.
 
 
 ### Access purchase orders via the OVHcloud Control Panel.
 
-To access the area for managing orders, simply click on your first name in the top right-hand corner of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, then `My orders`{.action}.
+To access the area for managing orders, simply click on your first name in the top right-hand corner of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}, then `My orders`{.action}.
 
 ![Control Panel](images/customer_panel_order_ca.png){.thumbnail}
 

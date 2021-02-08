@@ -20,7 +20,7 @@ Tässä ohjeessa kerrotaan verkkosivun, yhden tai useamman tietokannan ja sähk�
 - Sinulla on pääsy verkkosivun tiedostoihin.
 - Sinulla on tarvittaessa pääsy verkkosivun tietokantaan.
 - Sinulla on tiedot (käyttäjätunnus, salasana, palvelimet), joiden avulla voit kirjautua sähköpostiosoitteisiin.
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Käytännössä
 
@@ -75,7 +75,7 @@ Verkkotunnuksesi konfiguraatio ei ole muuttunut ja uusien viestien vastaanotto t
 
 #### 4\. vaihe: Muokkaa verkkotunnuksesi konfiguraatiota
 
-Nyt kun verkkosivusi on siirretty ja sähköpostiosoitteesi on luotu uudelleen OVH:lla, on tarpeen muokata verkkotunnuksesi konfiguraatiota. Tämä tapahtuu muuttamalla verkkotunnuksesi nimipalvelimet OVH:n nimipalvelimiin (ne on lähetetty sähköpostitse ja lisäksi ne näkyvät [hallintapaneelissasi](https://www.ovh.com/auth/?action=gotomanager){.external}.) Tämä muokkaus vaikuttaa kahdella tapaa:
+Nyt kun verkkosivusi on siirretty ja sähköpostiosoitteesi on luotu uudelleen OVH:lla, on tarpeen muokata verkkotunnuksesi konfiguraatiota. Tämä tapahtuu muuttamalla verkkotunnuksesi nimipalvelimet OVH:n nimipalvelimiin (ne on lähetetty sähköpostitse ja lisäksi ne näkyvät [hallintapaneelissasi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.) Tämä muokkaus vaikuttaa kahdella tapaa:
 
 - **verkkotunnuksesi yhdistyy teknisesti OVH:n ratkaisuihin**: OVH:n webhotelliasi käytetään verkkosivusi näyttämiseen ja uusien viestien vastaanotto tapahtuu OVH:n sähköpostiosoitteilla.
 - **estetään palvelukatkos**: jos verkkotunnusvälittäjäsi päättää katkaista oman nimipalvelinkonfiguraationsa kun siirrät verkkotunnuksesi, tällä ei ole vaikutusta, jos käytät jo OVH:n konfiguraatiota.
@@ -130,7 +130,7 @@ Tähän kuuluu useita välivaiheita.
 |---|---|---|
 |1|Verkkosivun varmuuskopion hakeminen|Kyseessä on verkkosivusi täydellinen varmuuskopio, joka sisältää tiedostot sekä (tarvittaessa) tietokannan. Tämä kattava varmuuskopio on välttämätön verkkosivusi siirtämiseksi OVH:lle.|
 |2|Verkkosivun siirto verkkoon OVH:lla|Kirjaudu tallennustilaasi (FTP) tuodaksesi sieltä verkkosivusi tiedostot. Siirrä ne verkkoon asettamalle ne **“www”**-kansioon. FTP-tunnuksesi saat sähköpostitse.|
-|3|OVH:n tietokannan luominen|Jos verkkosivusi toimii tietokannalla, sinun on [luotava uusi tietokanta OVH:lla](https://docs.ovh.com/fi/hosting/){.external} [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} kautta.|
+|3|OVH:n tietokannan luominen|Jos verkkosivusi toimii tietokannalla, sinun on [luotava uusi tietokanta OVH:lla](https://docs.ovh.com/fi/hosting/){.external} [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} kautta.|
 |4|Tietokantojen tuominen|Tuo tietokantasi varmuuskopio käyttämällä [OVH:n tarjoamaa työkalua hallintapaneelissasi.](https://docs.ovh.com/fi/hosting/webhotellit_ohje_mysql-tietokannan_tuonnista/){.external}|
 |5|Verkkosivun yhdistäminen uuteen tietokantaan|Vanhan tietokantasi tiedot ovat edelleen verkkosivusi konfigurointitiedostossa. Muokkaa tätä tiedostoa OVH:n tallennustilassasi syöttämällä sinne OVH:n tietokannan tiedot.|
 
@@ -138,7 +138,7 @@ Verkkotunnuksesi konfiguraatio ei ole muuttunut ja verkkosivusi näyttämiseen k
 
 #### 3. vaihe: Sähköpostiosoitteiden uudelleen luominen OVH:lla
 
-**Kun sähköpostiosoitteesi siirto on päättynyt**, saat sähköpostiviestin ilmoituksena webhotelliisi liitetyn sähköpostipalvelun asennuksesta. Nyt sinun on [luotava OVH:lle uudelleen samat osoitteet](https://docs.ovh.com/fi/emails/webhotellit_ja_sahkopostit_ohje_postilaatikon_luomiseen/){.external}, joita käytät vanhalla palveluntarjoajallasi (nimien täytyy olla samat). Mene [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager){.external} vasemmassa laidassa olevassa valikossa kohtaan `Sähköpostit`{.action} ja sitten tilaamaasi webhotelliin (jolla on sama nimi kuin verkkotunnuksellasi). Seuraa vaiheita klikkaamalla painiketta `Luo sähköpostiosoite`{.action}.
+**Kun sähköpostiosoitteesi siirto on päättynyt**, saat sähköpostiviestin ilmoituksena webhotelliisi liitetyn sähköpostipalvelun asennuksesta. Nyt sinun on [luotava OVH:lle uudelleen samat osoitteet](https://docs.ovh.com/fi/emails/webhotellit_ja_sahkopostit_ohje_postilaatikon_luomiseen/){.external}, joita käytät vanhalla palveluntarjoajallasi (nimien täytyy olla samat). Mene [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} vasemmassa laidassa olevassa valikossa kohtaan `Sähköpostit`{.action} ja sitten tilaamaasi webhotelliin (jolla on sama nimi kuin verkkotunnuksellasi). Seuraa vaiheita klikkaamalla painiketta `Luo sähköpostiosoite`{.action}.
 
 Verkkotunnuksesi konfiguraatio ei ole muuttunut ja uusien viestien vastaanotto tapahtuu yhä nykyisellä palveluntarjoajallasi luoduilla sähköpostiosoitteilla, jos nimipalvelimen selvitys on vielä toiminnassa. Jatka niiden käyttöä lähetyksiäsi varten.
 
@@ -146,7 +146,7 @@ Verkkotunnuksesi konfiguraatio ei ole muuttunut ja uusien viestien vastaanotto t
 
 Nyt kun verkkosivusi on siirretty, sähköpostiosoitteesi on luotu uudelleen ja verkkotunnuksesi on siirretty OVH:lle, on tarpeen muokata verkkotunnuksesi konfiguraatiota. Tämä tapahtuu muuttamalla verkkotunnuksesi nimipalvelimet OVH:n nimipalvelimiin.
 
-Muokkaus on tehtävä [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}. Apua toimenpiteeseen löydät dokumentaatiosta *[Yleistä nimipalvelimista](https://docs.ovh.com/fi/domains/webhotellit_yleista_nimipalvelimista/){.external}*.
+Muokkaus on tehtävä [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Apua toimenpiteeseen löydät dokumentaatiosta *[Yleistä nimipalvelimista](https://docs.ovh.com/fi/domains/webhotellit_yleista_nimipalvelimista/){.external}*.
 
 Tämä muokkaus vaikuttaa kahdella tapaa:
 

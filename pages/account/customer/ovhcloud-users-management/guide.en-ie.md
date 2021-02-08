@@ -23,7 +23,7 @@ With OVHcloud, you can create additional users with read or write access to your
 ## Requirements
 
 - an active OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 
@@ -50,7 +50,7 @@ The holder of the account xx11111-ovh always has **administrator** access, so th
 
 ### Step 2: Add a user
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), click `your name`{.action} (1) in the top right-hand corner, then click on your initials (2).
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), click `your name`{.action} (1) in the top right-hand corner, then click on your initials (2).
 Next, click on the `User management`{.action} tab (3), and `Add a user`{.action} (4).
 
 ![users-management](images/hubusers.png){.thumbnail}
@@ -73,7 +73,7 @@ Example: **1234-567-89/john.smith**.
 
 ![users-management](images/usersmanagement3.png){.thumbnail}
 
-The user you have created can then log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) using this ID. 
+The user you have created can then log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) using this ID. 
 
 They can also change their password and secure their own access to your account by enabling two-factor authentication (this is only for their access as a user). To find out how to enable two-factor authentication, you can refer to [this guide](../secure-account-with-2FA/){.external}.
 

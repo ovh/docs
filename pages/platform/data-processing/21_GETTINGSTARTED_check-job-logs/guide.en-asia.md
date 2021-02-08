@@ -12,7 +12,7 @@ order: 1
 
 This guide will help you to check your job's logs while your job is running or after your job is finished. 
 
-In this guide, we are assuming that you're using the [OVHcloud Manager](https://ca.ovh.com/auth/?action=gotomanager){.external} to use the Data Processing platform.
+In this guide, we are assuming that you're using the [OVHcloud Manager](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external} to use the Data Processing platform.
 
 To read an introduction about Data Processing service you can visit [Data Processing Overview](../overview){.external}.
 

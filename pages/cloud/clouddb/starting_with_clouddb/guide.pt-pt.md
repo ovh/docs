@@ -17,13 +17,13 @@ O serviço CloudDB permite que beneficie de uma instância de bases de dados cuj
 ## Requisitos
 
 - Dispor de uma [instância CloudDB](https://www.ovh.pt/cloud/cloud-databases/){.external}.
-- Aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
 ### Consultar informações gerais da instância SQL Privado
 
-Na[Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, no menu à esquerda, aceda à secção `Bases de dados`{.action} e clique na instância em causa. Certifique-se que está no separador `Informações gerais`{.action}.
+Na[Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, no menu à esquerda, aceda à secção `Bases de dados`{.action} e clique na instância em causa. Certifique-se que está no separador `Informações gerais`{.action}.
 
 > [!primary]
 >

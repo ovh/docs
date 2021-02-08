@@ -17,7 +17,7 @@ Si recibe un mensaje de correo electrónico indicándole que una de sus direccio
 ## Requisitos
 
 - Tener un [plan de correo en OVHcloud](https://www.ovh.es/emails/){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) y accedido a la sección `«Web»`{.action}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y accedido a la sección `«Web»`{.action}.
 
 ## Procedimiento
 
@@ -25,7 +25,7 @@ Si recibe un mensaje de correo electrónico indicándole que una de sus direccio
 
 #### Para una dirección de correo electrónico de Exchange
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) y acceda a la sección «Web». En la barra de servicios a la izquierda, haga clic en `«Microsoft»`{.action}, luego en `«Exchange»`{.action} y, por último, seleccione la plataforma Exchange correspondiente.
+Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección «Web». En la barra de servicios a la izquierda, haga clic en `«Microsoft»`{.action}, luego en `«Exchange»`{.action} y, por último, seleccione la plataforma Exchange correspondiente.
 
 Acceda a la pestaña `«Cuentas de correo electrónico»`{.action} de su plataforma. Si la columna «Estado» de la dirección de correo electrónico correspondiente indica «bloqueado», haga clic en `«...»`{.action} a la derecha de la cuenta y, seguidamente, en `«Desbloquear»`{.action}. Seguidamente, continúe con el [paso 2](./#paso-2-acceder-al-tique-de-asistencia_1){.external} de la guía.
 
@@ -33,7 +33,7 @@ Acceda a la pestaña `«Cuentas de correo electrónico»`{.action} de su platafo
 
 #### Para una dirección Email Pro
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) y acceda a la sección «Web». En la barra de servicios a la izquierda, haga clic en `«Email Pro» y,`{.action} seguidamente, seleccione la plataforma Email Pro correspondiente.
+Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección «Web». En la barra de servicios a la izquierda, haga clic en `«Email Pro» y,`{.action} seguidamente, seleccione la plataforma Email Pro correspondiente.
 
 Acceda a la pestaña `«Cuentas de correo electrónico»`{.action} de su plataforma. Si la columna «Estado» a la derecha de la dirección de correo electrónico correspondiente indica «Correo no deseado», haga clic en esa opción y, seguidamente, en `Responder al tique`{.action}. Seguidamente, continúe [con el paso 2](./#paso-2-acceder-al-tique-de-asistencia_1){.external} de la guía.
 
@@ -41,7 +41,7 @@ Acceda a la pestaña `«Cuentas de correo electrónico»`{.action} de su platafo
 
 #### Para una dirección de correo electrónico MX plan
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) y acceda a la sección «Web». En la barra de servicios a la izquierda, haga clic en `«Correos electrónicos»`{.action} y seleccione el nombre de dominio correspondiente.
+Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección «Web». En la barra de servicios a la izquierda, haga clic en `«Correos electrónicos»`{.action} y seleccione el nombre de dominio correspondiente.
 
 Acceda a la pestaña `«Cuentas de correo electrónico»`{.action} de su plataforma. Si la columna «Estado» —a la derecha de la dirección de correo electrónico correspondiente— indica «Correo no deseado», haga clic en esa opción y, seguidamente, en `«Responder al tique»`{.action}. Seguidamente, continúe con el [paso 2](./#paso-2-acceder-al-tique-de-asistencia_1){.external} de la guía.
 

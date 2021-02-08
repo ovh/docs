@@ -9,20 +9,20 @@ section: 'Zarządzanie w Panelu klienta OVH'
 
 ## Wprowadzenie
 
-Możesz w dowolnym momencie utworzyć w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} kopię zapasową instancji. Dzięki kopii zapasowej możesz przywrócić Twoją instancję z pierwotną konfiguracją lub też ją odtworzyć.
+Możesz w dowolnym momencie utworzyć w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} kopię zapasową instancji. Dzięki kopii zapasowej możesz przywrócić Twoją instancję z pierwotną konfiguracją lub też ją odtworzyć.
 
 **Utwórz w prosty sposób kopię zapasową instancji Public Cloud.**
 
 ## Wymagania początkowe
 
 - [Utworzona na Twoim koncie instancja Public Cloud](https://docs.ovh.com/pl/public-cloud/tworzenie_instancji_w_panelu_klienta_ovh/)
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce
 
 ### Tworzenie kopii zapasowej instancji
 
-Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, wybierz kartę Public Cloud,  a następnie rubrykę`Instances`{.action} (Instancje).
+Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, wybierz kartę Public Cloud,  a następnie rubrykę`Instances`{.action} (Instancje).
 
 Kliknij wówczas wielokropek `...`{.action} z prawej strony wybranej instancji, a następnie `Create snapshot`{.action} (Utwórz kopię zapasową).
 

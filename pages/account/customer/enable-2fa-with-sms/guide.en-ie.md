@@ -17,14 +17,14 @@ Two-factor authentication via SMS is one of the methods offered by OVHcloud to h
 ## Requirements
 
 - knowledge of the [two-factor authentication methods offered by OVHcloud](../secure-account-with-2FA/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 - a mobile number for receiving SMS messages
 
 ## Instructions
 
 ### Step 1: Enable two-factor authentication.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click your name in the top right-hand corner (1), then click your initials (2). Next, click `Security`{.action} (3) and `Enable two-factor authentication`{.action} (4).
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, click your name in the top right-hand corner (1), then click your initials (2). Next, click `Security`{.action} (3) and `Enable two-factor authentication`{.action} (4).
 
 ![2FA sms](images/hub2FA.png){.thumbnail}
 

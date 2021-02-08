@@ -17,15 +17,15 @@ DNS zóna představuje konfigurační soubor domény a sestává z technických 
 
 ## Prerekvizity
 
-- Dostatečná oprávnění k provádění úprav v  DNS zóně domény prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostatečná oprávnění k provádění úprav v  DNS zóně domény prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - Doména musí být nakonfigurována na DNS servery OVH.
 
 > [!warning]
 >
 > - Pokud Vaše doména není nakonfigurována na DNS servery OVH, musíte změny provést pomocí příslušného rozhraní pro správu domény.
 >
-> - Pokud je Vaše doména registrována u OVH, můžete snadno ověřit, zda používá naší konfiguraci. Za tímto účelem přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, vyberte příslušnou doménu a přejděte do záložky `DNS servery`{.action}.
+> - Pokud je Vaše doména registrována u OVH, můžete snadno ověřit, zda používá naší konfiguraci. Za tímto účelem přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, vyberte příslušnou doménu a přejděte do záložky `DNS servery`{.action}.
 >
 
 ## Postup
@@ -47,7 +47,7 @@ Seznámením se s jednotlivými typy DNS záznamů získáte lepší porozuměn�
 
 ### Fáze 1: přístup do rozhraní pro správu DNS zóny
 
-Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, v levém postranním panelu klikněte na položku `Domény`{.action} a následně vyberte doménu, v jejímž rámci si přejete provést požadované úpravy. V základním rozhraní pro správu domény klikněte na záložku `DNS zóna`{.action}.
+Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, v levém postranním panelu klikněte na položku `Domény`{.action} a následně vyberte doménu, v jejímž rámci si přejete provést požadované úpravy. V základním rozhraní pro správu domény klikněte na záložku `DNS zóna`{.action}.
 
 Zobrazí se tabulka s aktuální OVH konfigurací domény. Každý řádek obsahuje jeden DNS záznam.  Obsah tabulky lze filtrovat v závislosti na druhu DNS záznamu či názvu domény.
 

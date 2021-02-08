@@ -20,13 +20,13 @@ Hosted Exchange -palvelulla voidaan hyödyntää yrityskäyttöön tarkoitettuja
 - Olet tilannut [Hosted Exchange](https://www.ovh-hosting.fi/sahkopostit/hosted-exchange/){.external} -tuotteen
 - Olet saanut vahvistussähköpostin Hosted Exchange -ratkaisun asennusta koskien
 - Sinulla on verkkotunnus.
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Käytännössä
 
 ### 1. vaihe: Mene palvelusi hallintaan
 
-Kun Hosted Exchange -palvelusi on luotu ja käytettävissä, voit hallita sitä [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Kun Hosted Exchange -palvelusi on luotu ja käytettävissä, voit hallita sitä [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 Klikkaa sitä varten vasemman reunan valikossa kohtaa `Microsoft`{.action} ja sitten `Exchange`{.action}. Klikkaa lopuksi kyseessä olevan Hosted Exchange -palvelun nimeä.
 
@@ -59,7 +59,7 @@ Kun verkkotunnuksesi aloituskonfiguraatio on valmis, voit myös halutessasi konf
 > Kaikki Exchange-palvelussasi luodut osoitteet voidaan näyttää palvelun kaikkien osoitteiden luettelossa, mukaan lukien ne, joilla on eri verkkotunnus. Irrottaaksesi verkkotunnukset näkymästä sinun on tilattava uusi Hosted Exchange-ratkaisu näille kyseisille verkkotunnuksille.
 >
 
-Uuden verkkotunnuksen lisäämiseksi valitse kyseinen Hosted Exchange -palvelu [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager){.external} ja klikkaa välilehteä `Liitetyt verkkotunnukset`{.action}. Taulukossa näkyvät tällä hetkellä konfiguroidut tai palveluusi siirtymässä olevat verkkotunnukset. Uusien lisäämiseksi klikkaa painiketta `Lisää verkkotunnus`{.action} ja seuraa sitten prosessin eri vaiheita.
+Uuden verkkotunnuksen lisäämiseksi valitse kyseinen Hosted Exchange -palvelu [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} ja klikkaa välilehteä `Liitetyt verkkotunnukset`{.action}. Taulukossa näkyvät tällä hetkellä konfiguroidut tai palveluusi siirtymässä olevat verkkotunnukset. Uusien lisäämiseksi klikkaa painiketta `Lisää verkkotunnus`{.action} ja seuraa sitten prosessin eri vaiheita.
 
 Voit lukea lisää aiheesta dokumentaatiostamme [Verkkotunnuksen lisääminen Exchange-palveluun](https://docs.ovh.com/fi/microsoft-collaborative-solutions/verkkotunnuksen-lisaaminen-exchange-palveluun/){.external}.
 
@@ -75,7 +75,7 @@ Voit lukea lisää aiheesta dokumentaatiostamme [Verkkotunnuksen lisääminen Ex
 
 Voit halutessasi konfiguroida ylimääräisiä verkkotunnuksia, mikäli et sitä jo tehnyt avustajan kautta.
 
-Klikkaa kyseistä Hosted Exchange -palvelua [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external} ja sitten välilehteä `Sähköpostitilit`{.action}. Taulukossa näkyvät palvelussasi tällä hetkellä konfiguroidut tai sitä odottavat verkkotunnukset.
+Klikkaa kyseistä Hosted Exchange -palvelua [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} ja sitten välilehteä `Sähköpostitilit`{.action}. Taulukossa näkyvät palvelussasi tällä hetkellä konfiguroidut tai sitä odottavat verkkotunnukset.
 
 Konfigurointia odottavat tilit näkyvät taulukossa muodossa “*@configureme.me*”. Klikkaa niiden konfiguroimiseksi kynänmuotoista kuvaketta.
 
@@ -92,7 +92,7 @@ Kun tilisi on konfiguroitu, voit aloittaa niiden käytön! Tätä varten OVH tar
 
 Jos haluat konfiguroida sähköpostiosoitteen sähköpostiohjelmistoon tai laitteeseen kuten älypuhelimelle tai tabletille, tutustu dokumentaatioomme tässä portaalissa: [https://docs.ovh.com/fi/microsoft-collaborative-solutions/](https://docs.ovh.com/fi/microsoft-collaborative-solutions/){.external}. Tarkista Exchange-osoitteen yhteensopivuus palvelun kanssa, jotta voit varmistua sen toimivan moitteettomasti ohjelmistossa.
 
-OVH tarjoaa Outlook-lisenssejä [hallintapaneelista](https://www.ovh.com/auth/?action=gotomanager){.external} sekä Office 365 -lisenssejä sivulla [https://www.ovh-hosting.fi/office-365/](https://www.ovh-hosting.fi/office-365/){.external}. Suosittelemme jompaakumpaa näistä ratkaisuista, mikäli haluat hyödyntää Outlook-sähköpostiohjelmistoa tai useampaa Office Suiten ohjelmistoa tarpeidesi mukaan.
+OVH tarjoaa Outlook-lisenssejä [hallintapaneelista](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} sekä Office 365 -lisenssejä sivulla [https://www.ovh-hosting.fi/office-365/](https://www.ovh-hosting.fi/office-365/){.external}. Suosittelemme jompaakumpaa näistä ratkaisuista, mikäli haluat hyödyntää Outlook-sähköpostiohjelmistoa tai useampaa Office Suiten ohjelmistoa tarpeidesi mukaan.
 
 > [!primary]
 >
@@ -102,9 +102,9 @@ OVH tarjoaa Outlook-lisenssejä [hallintapaneelista](https://www.ovh.com/auth/?a
 
 ### 6. vaihe: Ryhmätyöominaisuuksien asetusten määritys (valinnainen)
 
-Nyt kun Hosted Exchange -palvelusi on konfiguroitu ja toiminnallinen, voit asentaa palveluun sisältyviä ryhmätyöominaisuuksia [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}. Ne antavat mahdollisuuden resurssien (kokoustilat, laitteistot jne.) ja myös muun muassa ryhmien luomiseen.
+Nyt kun Hosted Exchange -palvelusi on konfiguroitu ja toiminnallinen, voit asentaa palveluun sisältyviä ryhmätyöominaisuuksia [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Ne antavat mahdollisuuden resurssien (kokoustilat, laitteistot jne.) ja myös muun muassa ryhmien luomiseen.
 
-Näiden eri toimintojen aktivoimiseksi valitse kyseinen Hosted Exchange -palvelu [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager){.external} ja valitse sitten näkyviin tulevista välilehdistä haluamasi toiminto.
+Näiden eri toimintojen aktivoimiseksi valitse kyseinen Hosted Exchange -palvelu [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} ja valitse sitten näkyviin tulevista välilehdistä haluamasi toiminto.
 
 Mikäli haluat saada apua johonkin ominaisuuteen liittyen, tutustu dokumentaatioomme, joka on saatavilla portaalissa [https://docs.ovh.com/fi/microsoft-collaborative-solutions/](https://docs.ovh.com/fi/microsoft-collaborative-solutions/){.external}.
 

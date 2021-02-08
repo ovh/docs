@@ -17,7 +17,7 @@ order: 5
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement SQL Privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml){.external} ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external}.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
@@ -28,7 +28,7 @@ order: 5
 
 ### Restaurer et importer une base de données depuis l'espace client
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur de bases de données. Dirigez-vous-vous dans l'onglet `Bases de données`.
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur de bases de données. Dirigez-vous-vous dans l'onglet `Bases de données`.
 
 Au niveau de la colonne **« Sauvegardes »**, le chiffre correspond au nombre de sauvegardes disponibles pour votre base de données.
 

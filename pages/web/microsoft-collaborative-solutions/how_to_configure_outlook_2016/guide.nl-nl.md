@@ -46,7 +46,7 @@ Er verschijnt een beveiligingsvenster waarin u wordt gevraagd om het **wachtwoor
 >
 > Als een bericht aangeeft dat Outlook uw account niet kon instellen, kan dit betekenen dat het SRV-veld van OVH niet juist is geconfigureerd in de DNS-zone van uw domeinnaam.
 >
-> Controleer de configuratie van de domeinnaam op uw Exchange in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, op het tabblad `Gekoppelde domeinen`{.action} en vervolgens in de kolom `Diagnostiek`{.action} van de tabel.
+> Controleer de configuratie van de domeinnaam op uw Exchange in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, op het tabblad `Gekoppelde domeinen`{.action} en vervolgens in de kolom `Diagnostiek`{.action} van de tabel.
 >
 
 Als de configuratie van uw domeinnaam correct is, verschijnt een bericht waarin u wordt gevraagd om een verbinding met de OVH-server te autoriseren. Accepteer deze verbinding om automatische configuratie van uw Exchange-account mogelijk te maken.

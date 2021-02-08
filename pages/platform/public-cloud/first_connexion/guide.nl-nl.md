@@ -18,7 +18,7 @@ In deze handleiding wordt uitgelegd hoe u zich inlogt op Public Cloud-instances 
 
 ## Vereisten
 
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 - U moet een [Public Cloud-instance](https://www.ovh.com/nl/public-cloud/instances/){.external} hebben aangemaakt. 
 
 
@@ -77,7 +77,7 @@ Om u in te loggen op een Linux-instance vanaf Windows, kunt u een softwareprogra
 
 #### Voltooi de installatie
 
-Nadat u uw instance hebt aangemaakt, moet u *sysprep* voltooien. Hiervoor start u in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} de VNC-console:
+Nadat u uw instance hebt aangemaakt, moet u *sysprep* voltooien. Hiervoor start u in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} de VNC-console:
 
 ![VNC-console](images/vnc_console.png)
 

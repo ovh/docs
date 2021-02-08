@@ -16,13 +16,13 @@ This guide covers the creation of [**data**](../data) objects in **AI Training**
 -   a [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
 -   **AI Training activated** for your account, see [how to submit a job Step 2](../submit-job)
 -   a user for AI Training [how to submit a job Step 3](../submit-job)
--   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+-   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 ## Instructions
 
 ### Creating an Object Storage container
 
-You can access the Object Storage page in the `Public Cloud` section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) under `Storage` > `Object Storage`.
+You can access the Object Storage page in the `Public Cloud` section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) under `Storage` > `Object Storage`.
 
 ![image](images/00_storage_menu.png){.thumbnail}
 

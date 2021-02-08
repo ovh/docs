@@ -48,7 +48,7 @@ Renseignez à présent les paramètres du serveur entrant. Certains champs peuve
 |Domaine/Nom d'utilisateur|Renseignez l'adresse e-mail complète.|  
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail.|
 |Certificat client|Ne sélectionnez rien.|
-|Serveur|Indiquez le serveur sur lequel est hébergé votre service Exchange. Vous pouvez le retrouver depuis votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} dans l'onglet `Informations générales`{.action} du service Exchange concerné, puis dans le cadre `Connexion`{.action}.|
+|Serveur|Indiquez le serveur sur lequel est hébergé votre service Exchange. Vous pouvez le retrouver depuis votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} dans l'onglet `Informations générales`{.action} du service Exchange concerné, puis dans le cadre `Connexion`{.action}.|
 |Port|Renseignez le port  443 .|  
 |Type de sécurité|Choisissez « SSL/TLS ».|
 

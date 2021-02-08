@@ -17,7 +17,7 @@ Antes de efetuar a adição da conta, verifique que a sua ligação 3G ou Wifi e
 
 
 ## Parte 2: Configuração da conta de e-mail
-Introduza o endereço de e-mail partilhado na íntegra bem como a password definida no seu [manager](https://www.ovh.com/auth/?action=gotomanager) para o seu endereço de e-mail.
+Introduza o endereço de e-mail partilhado na íntegra bem como a password definida no seu [manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para o seu endereço de e-mail.
 
 Clique de seguida em "Configuração manual" para continuar.
 
@@ -37,7 +37,7 @@ Introduza as informações da sua conta de e-mail partilhada para o servidor de 
 
 "Nome do utilizador": o seu endereço de e-mail na íntegra.
 
-"Password": A password definida na interface [manager](https://www.ovh.com/auth/?action=gotomanager).
+"Password": A password definida na interface [manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 "Servidor POP3": introduza ssl0.ovh.net
 
@@ -63,7 +63,7 @@ Introduza as informações da sua conta de e-mail partilhada para o servidor de 
 
 "Nome do utilizador": o seu endereço de e-mail na íntegra.
 
-"Password": A password definida na sua interface [manager](https://www.ovh.com/auth/?action=gotomanager).
+"Password": A password definida na sua interface [manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 Clique em "Seguinte" para continuar.
 
@@ -105,7 +105,7 @@ Veja as informações de configuração em IMAP para o servidor de receção.
 
 "Nome do utilizador": o seu endereço de e-mail na íntegra.
 
-"Password": A password definida na sua interface [manager](https://www.ovh.com/auth/?action=gotomanager).
+"Password": A password definida na sua interface [manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 "Servidor IMAP": introduza ssl0.ovh.net
 
@@ -125,7 +125,7 @@ Vejas as informações de configuração em IMAP para o servidor de envio.
 
 "Nome do utilizador": o seu endereço de e-mail na íntegra.
 
-"Password": A password definida na sua interface [manager](https://www.ovh.com/auth/?action=gotomanager).
+"Password": A password definida na sua interface [manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 
 ## Configuração POP
@@ -134,7 +134,7 @@ Eis as informações a ter em conta para a configuração de uma conta de email 
 Configuração POP com encriptação SSL activada ou SSL desativada : 
 
 Endereço de Email : O seu endereço de email completo.
-Palavra-passe : A palavra-passe que definiu no seu espaço [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager).
+Palavra-passe : A palavra-passe que definiu no seu espaço [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 Nome de utilizador : O seu endereço de email completo.
 Servidor de receção : Servidor de receção de emails : SSL0.OVH.NET
 Porta do servidor de receção : A porta : 995 ou 110
@@ -161,7 +161,7 @@ Eis as informações a ter em conta para a configuração de uma conta de email 
 Configuração IMAP com encriptação SSL activada ou SSL desativada : 
 
 Endereço de Email : O seu endereço de email completo.
-Palavra-passe : A palavra-passe que definiu no seu espaço [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager).
+Palavra-passe : A palavra-passe que definiu no seu espaço [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 Nome de utilizador : O seu endereço de email completo.
 Servidor de receção : Servidor de receção de emails : SSL0.OVH.NET
 Porta do servidor de receção : A porta : 993 ou 143

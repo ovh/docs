@@ -23,13 +23,13 @@ Sie können mehrere Websites auf einem einzigen Webhosting-Angebot hosten, auch 
 - Sie haben ein kompatibles [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
 - Sie besitzen eine oder mehrere [Domains](https://www.ovh.de/domains/){.external}.
 - Sie sind berechtigt, die Konfiguration Ihrer Domains (die DNS-Zone) zu ändern.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 ### Schritt 1: Auf die Multisite-Verwaltung zugreifen
 
-Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie im linken Menü auf `Hosting-Pakete`{.action}, wählen Sie den betreffenden Dienst aus und gehen Sie zum Tab `Multisite`{.action}.
+Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie im linken Menü auf `Hosting-Pakete`{.action}, wählen Sie den betreffenden Dienst aus und gehen Sie zum Tab `Multisite`{.action}.
 
 Die angezeigte Tabelle listet alle Domains und Subdomains auf, die Ihrer Webhosting-Lösung hinzugefügt wurden. Einige wurden bei der Installation Ihres Hostings automatisch hinzugefügt.
 

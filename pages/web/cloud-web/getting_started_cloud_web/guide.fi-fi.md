@@ -19,7 +19,7 @@ Cloud Web -webhotellissamme yhdistyvät kahdenkymmenen vuoden kokemuksemme webho
 - Sinulla on [Cloud Web -webhotellituote](https://www.ovh-hosting.fi/webhotelli/cloud-web.xml).
 - Olet saanut Cloud Web -webhotellisi asennusta koskevan vahvistussähköpostin.
 - Sinulla on [verkkotunnus](https://www.ovh-hosting.fi/verkkotunnukset/), joka on osoite verkkosivullesi.
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager).
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 ## Käytännössä
 
@@ -41,7 +41,7 @@ Cloud Web tarjoaa useita ohjelmointikieliä projektisi rakentamiseen. Jos haluat
 
 Tällä hetkellä saatavilla olevat ohjelmointikielet ovat PHP ja Node.js.
 
-Runtime engine -moottoriin päästäksesi kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva Cloud Web -webhotelli. Mene lopuksi välilehdelle `Runtime engine -moottorit`{.action}.
+Runtime engine -moottoriin päästäksesi kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva Cloud Web -webhotelli. Mene lopuksi välilehdelle `Runtime engine -moottorit`{.action}.
 
 Yksi moottori on luotu automaattisesti webhotellisi asennuksen yhteydessä. Se on `oletusvalintana` näkyviin tulevassa taulukossa. Muokataksesi jo määritettyä moottoria klikkaa sen vieressä olevia kolmea pistettä ja sitten `Muokkaa`{.action}. 
 
@@ -137,7 +137,7 @@ Yleistä menettelyä ei ole olemassa, sillä projektit voivat vaihdella toisista
 
 Nyt kun projektisi on asennettu Cloud Web -webhotelliin, voit luoda sähköpostiosoitteita. Jos et halua luoda sähköpostiosoitetta, siirry suoraan seuraavaan vaiheeseen.
 
-Luodaksesi yhden tai useamman sähköpostiosoitteen pysy edelleen [hallintapaneelissasi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Sähköpostit`{.action} vasemman reunan palveluvalikossa ja valitse sitten verkkotunnus, johon Cloud Web on tilattu.
+Luodaksesi yhden tai useamman sähköpostiosoitteen pysy edelleen [hallintapaneelissasi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, klikkaa kohtaa `Sähköpostit`{.action} vasemman reunan palveluvalikossa ja valitse sitten verkkotunnus, johon Cloud Web on tilattu.
 
 Luodaksesi uuden sähköpostiosoitteen klikkaa painiketta `Luo sähköpostiosoite`{.action} ja seuraa näkyviin tulevia vaiheita. Tutustu tarvittaessa dokumentaatioomme: [“Sähköpostiosoitteen luominen MX Plan -tuotteella”](https://docs.ovh.com/fi/emails/webhotellit_ja_sahkopostit_ohje_postilaatikon_luomiseen/){.external}
 
@@ -155,8 +155,8 @@ OVH:lla on olemassa useita DNS-tietueita. Keskitymme erityisesti niistä kahteen
 
 |DNS-tietue|Palvelu, johon tietue liittyy|Mistä se löytyy?|
 |---|---|---|
-|A|Verkkosivu|[Hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} osiosta `Webhotellit`{.action} kyseessä olevan Cloud Web -webhotellin kohdalla. Hae IP-osoite, joka näkyy välilehdellä `Yleiset tiedot`{.action} kohdan ”IPv4” vieressä.|
-|MX|Sähköpostit|[Hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} osiosta `Sähköpostit`{.action} kyseisen verkkotunnuksen kohdalla. Hae tiedot, jotka näkyvät välilehdellä `Yleiset tiedot`{.action} kohdan “MX-kentät” vieressä.|
+|A|Verkkosivu|[Hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} osiosta `Webhotellit`{.action} kyseessä olevan Cloud Web -webhotellin kohdalla. Hae IP-osoite, joka näkyy välilehdellä `Yleiset tiedot`{.action} kohdan ”IPv4” vieressä.|
+|MX|Sähköpostit|[Hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} osiosta `Sähköpostit`{.action} kyseisen verkkotunnuksen kohdalla. Hae tiedot, jotka näkyvät välilehdellä `Yleiset tiedot`{.action} kohdan “MX-kentät” vieressä.|
 
 #### 2. Tarkista ja/tai muokkaa DNS-tietueita
 
@@ -166,14 +166,14 @@ Nyt kun tiedät Cloud Web -webhotelliisi kuuluvat DNS-tietueet sekä OVH:n sähk
 >
 > - Jos verkkotunnuksesi ei käytä OVH:n nimipalvelimia, sinun on tehtävä muokkaus verkkotunnuksesi konfiguraatiota hallinnoivan palveluntarjoajan käyttöliittymässä.
 > 
-> - Jos verkkotunnuksesi on rekisteröity OVH:lle, voit tarkistaa, käyttääkö se konfiguraatiotamme. Mene sitä varten [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager){.external} välilehdelle `Nimipalvelimet`{.action}, kun olet ensin siirtynyt kyseiseen verkkotunnukseen.
+> - Jos verkkotunnuksesi on rekisteröity OVH:lle, voit tarkistaa, käyttääkö se konfiguraatiotamme. Mene sitä varten [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} välilehdelle `Nimipalvelimet`{.action}, kun olet ensin siirtynyt kyseiseen verkkotunnukseen.
 >
 
 Toimenpiteiden suorittamiseksi katso alla olevia ohjeita:
 
 |Käytetty DNS-konfigurointi|Missä toimenpide tehdään?|
 |---|---|
-|OVH|[Hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} osiossa `Verkkotunnukset`{.action} kyseisen verkkotunnuksen kohdalla. Tarkista tiedot välilehdeltä `DNS-alue`{.action} ja muokkaa niitä tarvittaessa. Voit katsoa tarvittaessa apua dokumentaatiosta [“OVH:n DNS-alueen muokkaus”](https://docs.ovh.com/fi/domains/miten_dns-aluetta_muokataan/){.external}.|
+|OVH|[Hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} osiossa `Verkkotunnukset`{.action} kyseisen verkkotunnuksen kohdalla. Tarkista tiedot välilehdeltä `DNS-alue`{.action} ja muokkaa niitä tarvittaessa. Voit katsoa tarvittaessa apua dokumentaatiosta [“OVH:n DNS-alueen muokkaus”](https://docs.ovh.com/fi/domains/miten_dns-aluetta_muokataan/){.external}.|
 |Muu|Verkkotunnuksesi DNS-konfiguraatiota hallinnoivan palveluntarjoajan käyttöliittymässä. Kehotamme ottamaan yhteyttä tähän tahoon, jos kohtaat hankaluuksia toimenpiteen teossa.|
 
 Kun verkkotunnuksesi DNS-aluetta on muokattu, tarvitaan enintään 24 tuntia kestävä propagaatioaika, jotta muutokset astuvat voimaan. Jos olet liittänyt useamman verkkotunnuksen Cloud Web -webhotelliisi Multisite-verkkotunnuksina, sinun on tehtävä nämä kaksi toimenpidettä kummallekin verkkotunnukselle. 

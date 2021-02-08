@@ -27,7 +27,7 @@ Our Web Hosting plans have been IPv6 compatible since 2011 but enabling this pro
 
 - a [domain name](https://www.ovh.com/world/domains/) registered with OVHcloud, using OVHcoud DNS servers
 - an [OVHcloud Web Hosting plan](https://www.ovh.com/world/web-hosting/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 ## Instructions
 
@@ -45,7 +45,7 @@ To test whether your website is compatible with IPv6, you can use the [ipv6-test
 
 ### Step 1: Retrieve your Web Hosting plan’s IPv6 address
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned.
 
 In the `General information` section, copy the entry from the **IPv6** field and move on to the next step.
 

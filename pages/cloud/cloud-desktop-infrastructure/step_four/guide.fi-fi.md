@@ -18,7 +18,7 @@ Nyt kun [poolisi on luotu](https://docs.ovh.com/fi/cloud-desktop-infrastructure/
 
 ## Edellytykset
 
-- Olet luonut käyttäjiä Active Directoryssä, jos luottamussuhde on luotu, tai olet luonut käyttäjiä [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Olet luonut käyttäjiä Active Directoryssä, jos luottamussuhde on luotu, tai olet luonut käyttäjiä [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - Olet kirjautunut VMware Horizon 7.1 -käyttöliittymään.
 
 

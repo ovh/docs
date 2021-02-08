@@ -15,14 +15,14 @@ Die Domain Name System Zone (DNS-Zone) ist die Konfigurationsdatei einer Domain.
 
 ## Voraussetzungen
 
-- Sie haben über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} Zugriff auf die Verwaltung der betreffenden Domain.
-- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie haben über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} Zugriff auf die Verwaltung der betreffenden Domain.
+- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 - Die angegebene Domain verwendet die OVH Konfiguration (die OVH DNS-Server).
 
 > [!warning]
 >
 > - Wenn Ihre Domain nicht die DNS-Server von OVH verwendet, muss die Änderung über das Interface des Anbieters vorgenommen werden, bei dem die Konfiguration Ihrer Domain verwaltet wird.
-> - Wenn Ihre Domain bei OVH registriert ist, können Sie überprüfen, ob sie unsere Konfiguration verwendet. Gehen Sie hierzu in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} zur betreffenden Domain und klicken Sie anschließend auf den Tab `DNS Server`{.action}.
+> - Wenn Ihre Domain bei OVH registriert ist, können Sie überprüfen, ob sie unsere Konfiguration verwendet. Gehen Sie hierzu in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} zur betreffenden Domain und klicken Sie anschließend auf den Tab `DNS Server`{.action}.
 >
 
 ## Beschreibung
@@ -44,7 +44,7 @@ Ein genaueres Verständnis der verschiedenen Einträge ermöglicht es Ihnen, die
 
 ### Schritt 1: Auf die Verwaltung der OVH DNS-Zone Ihrer Domain zugreifen
 
-Loggen Sie sich zunächst in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie links im Menü auf `Domains`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS Zone`{.action}.
+Loggen Sie sich zunächst in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie links im Menü auf `Domains`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS Zone`{.action}.
 
 Die angezeigte Tabelle enthält die Konfiguration Ihrer Domain bei OVH. Sie besteht aus mehreren DNS-Einträgen, die in jeweils einer Zeile der Tabelle stehen. Sie können die Einträge nach dem Eintragstyp oder der zugehörigen Domain filtern.
 

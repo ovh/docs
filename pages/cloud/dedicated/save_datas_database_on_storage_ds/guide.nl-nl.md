@@ -67,7 +67,7 @@ Er bestaat niet zoiets als een 'beste' RAID-configuratie, omdat ze allemaal vold
 
 ### Stap 2: Installeer en configureer uw server
 
-Hiervoor gaat u naar uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} en installeert u uw server. Ter herinnering: in deze handleiding gebruiken we Debian 9.4. Raadpleeg onze handleiding [Aan de slag met een dedicated server](https://docs.ovh.com/nl/dedicated/eerste-stappen-dedicated-server/){.external} voor meer informatie.
+Hiervoor gaat u naar uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en installeert u uw server. Ter herinnering: in deze handleiding gebruiken we Debian 9.4. Raadpleeg onze handleiding [Aan de slag met een dedicated server](https://docs.ovh.com/nl/dedicated/eerste-stappen-dedicated-server/){.external} voor meer informatie.
 
 Nadat u het systeem voor installatie hebt geselecteerd, vinkt u het vakje `Partitieconfiguratie aanpassen`{.action} aan.
 

@@ -59,7 +59,7 @@ Haga clic en `«Configuración manual»`{.action} y continúe con las distintas 
 >
 > En nuestro ejemplo, utilizamos el nombre de servidor ex**X**.mail.ovh.net.
 > 
-> Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, acceda a la sección `«Web»`{.action}y, seguidamente, en la sección `«Microsoft»`{.action}
+> Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, acceda a la sección `«Web»`{.action}y, seguidamente, en la sección `«Microsoft»`{.action}
 >  en la columna izquierda. Seleccione `Exchange`{.action} y, a continuación, su plataforma. El servidor puede verse en el recuadro **«Conexión»** de la pestaña `«Información General»`{.action}.
 > 
 

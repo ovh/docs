@@ -15,7 +15,7 @@ The new OVH Load Balancer service offers a variety of load balancing methods for
 
 ## Requirements
 
-- You must be logged in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager).
+- You must be logged in to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 - You need to have created a server farm.
 
 

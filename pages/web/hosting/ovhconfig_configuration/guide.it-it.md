@@ -37,7 +37,7 @@ Se invece vuoi modificare manualmente il file, prosegui nella lettura di questa 
 
 Recupera nome utente FTP principale, password, indirizzo del server FTP ed effettua il login allo spazio di storage. In caso di necessità, consulta il paragrafo “Connettersi allo spazio di storage” della guida [Mettere online un sito Internet su un hosting Web](https://docs.ovh.com/it/hosting/hosting_condiviso_come_mettere_online_il_tuo_sito/#2-connettersi-allo-spazio-di-storage){.external}. 
 
-**Se non disponi più di questi dati**, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} nel menu a sinistra e clicca sulla scheda `FTP - SSH`{.action}.  In questa pagina sono riportate le informazioni necessarie per accedere allo storage. Se non ricordi la tua password FTP, consulta la guida [Modificare la password di un utente FTP](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/){.external}.
+**Se non disponi più di questi dati**, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} nel menu a sinistra e clicca sulla scheda `FTP - SSH`{.action}.  In questa pagina sono riportate le informazioni necessarie per accedere allo storage. Se non ricordi la tua password FTP, consulta la guida [Modificare la password di un utente FTP](https://docs.ovh.com/it/hosting/modificare-la-password-utente-ftp/){.external}.
 
 ![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
 

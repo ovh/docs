@@ -20,15 +20,15 @@ Nykyään lähes kaikki sisällönhallintajärjestelmät (WordPress, Joomla! jne
 - Sinulla on [webhotellituote](https://www.ovh-hosting.fi/webhotelli){.external}.
 - Sinulla on [OVH:n webhotellituotteen](https://www.ovh-hosting.fi/webhotelli){.external} yhteydessä luotu tietokanta.
 - Sinulla on varmuuskopio, jonka haluat tuoda tietokantaasi tai pystyt hankkimaan sen.
-- Tuontitavasta riippuen sinulla on pääsyoikeudet webhotellituotteesi hallintaan [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external} tai tiedot, joiden avulla voit kirjautua tietokantaan.
+- Tuontitavasta riippuen sinulla on pääsyoikeudet webhotellituotteesi hallintaan [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} tai tiedot, joiden avulla voit kirjautua tietokantaan.
 
 ## Käytännössä
 
 Ennen aloitusta sinun on määritettävä tapa, jolla kyseinen varmuuskopio tuodaan tietokantaan. Siihen on olemassa useita vaihtoehtoja teknisen osaamisesi tasosta riippuen.
 
-- **Tietokannan palauttaminen muutamalla klikkauksella aiempaan päivämäärään**: tämä vaihtoehto palauttaa tietokannan sisällön OVH:n varmuuskopiointityökalussa olevien varmuuskopioiden ansiosta. Tämä vaihtoehto ei edellytä erityistä teknistä osaamista ja sen voi tehdä [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- **Tietokannan palauttaminen muutamalla klikkauksella aiempaan päivämäärään**: tämä vaihtoehto palauttaa tietokannan sisällön OVH:n varmuuskopiointityökalussa olevien varmuuskopioiden ansiosta. Tämä vaihtoehto ei edellytä erityistä teknistä osaamista ja sen voi tehdä [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
-- **Oman varmuuskopiotiedostosi tuonti muutamalla klikkauksella**: tämä vaihtoehto tuo oman etukäteen hallussasi olleen varmuuskopiotiedoston tiedot yhteen tietokannoistasi. Tämä vaihtoehto toteutetaan [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- **Oman varmuuskopiotiedostosi tuonti muutamalla klikkauksella**: tämä vaihtoehto tuo oman etukäteen hallussasi olleen varmuuskopiotiedoston tiedot yhteen tietokannoistasi. Tämä vaihtoehto toteutetaan [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 - **Tuonti phpMyAdmin-käyttöliittymän kautta**: tämä vaihtoehto edellyttää kirjautumista phpMyAdmin-käyttöliittymään toimenpiteen tekemistä varten. Käyttöliittymän käytön osaaminen on siis tarpeellista, jotta tätä vaihtoehtoa voidaan käyttää ja tiedoston koolle on asetettu raja.
 
@@ -49,7 +49,7 @@ Jatka tämän dokumentaation lukemista halutun tuontitavan mukaan.
 
 ### Palauta varmuuskopio hallintapaneelissa
 
-Toimenpiteen tekemiseksi kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `Tietokannat`{.action}.
+Toimenpiteen tekemiseksi kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `Tietokannat`{.action}.
 
 Näkyviin tulevassa taulukossa on kaikki webhotellituotteen yhteydessä luodut tietokannat. Klikkaa nyt kolmea pistettä aiempaan päivään palautettavan tietokannan kohdalla, klikkaa sitten `Palauta varmuuskopio`{.action}. Huomaa, että tämä toiminto korvaa tietokannan nykyisen sisällön varmuuskopiolla.
 
@@ -63,7 +63,7 @@ Klikkaa kolmea pistettä palautettavan varmuuskopion kohdalla ja kikkaa sitten `
 
 ### Palauta oma varmuuskopiosi hallintapaneelissa
 
-Toimenpiteen tekemiseksi kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `Tietokannat`{.action}.
+Toimenpiteen tekemiseksi kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `Tietokannat`{.action}.
 
 Näkyviin tulevassa taulukossa on kaikki webhotellituotteen yhteydessä luodut tietokannat. Klikkaa nyt kolmea pistettä tietokannan kohdalla (sen, johon haluat tuoda tietoja), klikkaa sitten `Tuo tiedosto`{.action}.
 
@@ -96,7 +96,7 @@ Kun olet tehnyt valintasi, klikkaa painiketta `Vahvista`{.action}, odota sitten 
 
 ### Tuominen phpMyAdmin-verkkokäyttöliittymän kautta
 
-Tämän toimenpiteen toteuttamiseksi sinun on kirjauduttava phpMyAdmin-käyttöliittymään. Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `Tietokannat`{.action}.
+Tämän toimenpiteen toteuttamiseksi sinun on kirjauduttava phpMyAdmin-käyttöliittymään. Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `Tietokannat`{.action}.
 
 Näkyviin tulevassa taulukossa on kaikki webhotellituotteen yhteydessä luodut tietokannat. Klikkaa kolmea pistettä halutun tietokannan oikealla puolella ja sitten `Pääsy phpMyAdminiin`{.action}.
 

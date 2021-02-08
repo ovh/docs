@@ -20,7 +20,7 @@ Die Seite mit der Fehlermeldung „Seite nicht installiert“ bedeutet entweder,
 - Sie besitzen ein [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
 - Sie können Ihr [OVH Webhosting](https://www.ovh.de/hosting/){.external}, auf dem die betreffende Website gehostet ist, verwalten.
 - Sie können die betreffende Domainkonfiguration verwalten (d. h. die DNS-Zone der Domain).
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 ## Beschreibung
 
@@ -35,7 +35,7 @@ Im Folgenden erklären wir Ihnen, wie Sie beide Einstellungen überprüfen, um d
 
 ### Schritt 1: Webhosting-Konfiguration überprüfen (Multisite)
 
-Um zu überprüfen, ob die Domain Ihrem Webhosting korrekt als Multisite hinzugefügt wurde, loggen Sie sich im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und gehen Sie links im Menü auf `Hosting-Pakete`{.action}. Wählen Sie in der Liste Ihrer Hosting-Pakete das Webhosting aus, auf dem die Website gehostet ist, für die Sie die Fehlermeldung „Seite nicht installiert“ erhalten. Gehen Sie dann auf den Tab `Multisite`{.action}.
+Um zu überprüfen, ob die Domain Ihrem Webhosting korrekt als Multisite hinzugefügt wurde, loggen Sie sich im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie links im Menü auf `Hosting-Pakete`{.action}. Wählen Sie in der Liste Ihrer Hosting-Pakete das Webhosting aus, auf dem die Website gehostet ist, für die Sie die Fehlermeldung „Seite nicht installiert“ erhalten. Gehen Sie dann auf den Tab `Multisite`{.action}.
 
 Die angezeigte Tabelle listet alle Domains auf, die Ihrem Hosting als Multisite zugewiesen sind. Sie können auch die Suchfunktion verwenden, um die betreffende Domain zu suchen.
 
@@ -59,14 +59,14 @@ Sie können nun die DNS-Konfiguration Ihrer Domain überprüfen. Verwenden Sie d
 
 > [!primary]
 >
-> Wenn Ihre Domain bei OVH registriert ist, können Sie überprüfen, ob sie unsere Konfiguration verwendet. Klicken Sie dazu im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} links im Menü auf `Domains`{.action} und anschließend auf die entsprechende Domain. Gehen Sie dann auf den Tab `DNS Server`{.action}.
+> Wenn Ihre Domain bei OVH registriert ist, können Sie überprüfen, ob sie unsere Konfiguration verwendet. Klicken Sie dazu im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} links im Menü auf `Domains`{.action} und anschließend auf die entsprechende Domain. Gehen Sie dann auf den Tab `DNS Server`{.action}.
 >
 
 Je nach Konfiguration der Domain können Sie diese auf zwei Arten überprüfen:
 
 - **Ihre Domain verwendet nicht die OVH Konfiguration** (d. h. sie verwendet nicht die DNS-Server von OVH): Überprüfen Sie die Konfiguration Ihrer Domain über das Interface des Anbieters, bei dem diese verwaltet wird.
 
-- **Ihre Domain verwendet die OVH Konfiguration**: Überprüfen Sie die Konfiguration im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}. Nachdem Sie die betreffende Domain ausgewählt haben, klicken Sie auf den Tab `DNS Zone`{.action}. Die DNS-Konfiguration wird Ihnen in einer Tabelle angezeigt. Jede Zeile entspricht einem DNS-Eintrag. Sie können die Einträge nach dem Eintragstyp oder der Domain filtern.
+- **Ihre Domain verwendet die OVH Konfiguration**: Überprüfen Sie die Konfiguration im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Nachdem Sie die betreffende Domain ausgewählt haben, klicken Sie auf den Tab `DNS Zone`{.action}. Die DNS-Konfiguration wird Ihnen in einer Tabelle angezeigt. Jede Zeile entspricht einem DNS-Eintrag. Sie können die Einträge nach dem Eintragstyp oder der Domain filtern.
 
 ![sitenotinstalled](images/site-not-installed-edit-ovh-dns-zone.png){.thumbnail}
 

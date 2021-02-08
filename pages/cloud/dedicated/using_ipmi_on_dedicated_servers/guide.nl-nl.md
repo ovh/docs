@@ -16,7 +16,7 @@ Let op, u komt hierin ook de term KVM (Keyboard Video and Mouse) tegen, die onde
 
 ## Vereisten
 
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl)
 
 
 ## Instructie

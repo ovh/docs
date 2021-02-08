@@ -19,13 +19,13 @@ Olet hankkinut E-mail Pro -ratkaisun. Sen avulla saat käyttöösi yrityskäytt�
 - Sinulla on [E-mail Pro -tuote](https://www.ovh-hosting.fi/sahkopostit/email-pro/){.external}.
 - Olet saanut vahvistussähköpostin E-mail Pro -ratkaisun asennusta koskien.
 - Sinulla on verkkotunnus.
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Käytännössä
 
 ### 1. vaihe: Mene palvelusi hallintaan
 
-Kun E-mail Pro -palvelusi on luotu ja käytettävissä, voit hallita sitä [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Kun E-mail Pro -palvelusi on luotu ja käytettävissä, voit hallita sitä [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 Kirjautuaksesi palveluun klikkaa kohtaa `E-mail Pro`{.action} vasemmassa reunassa olevassa valikossa, ja valitse sitten kyseinen palvelu.
  

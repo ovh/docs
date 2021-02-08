@@ -64,7 +64,7 @@ Al hacer clic en sus iniciales, también podrá encontrar el `código de cliente
 
 ## Cómo iniciar sesión en el Panel de control de OVHcloud
 
-Vaya a la [página de inicio de sesión de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, e ingrese su nombre de usuario y contraseña de NIC.
+Vaya a la [página de inicio de sesión de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, e ingrese su nombre de usuario y contraseña de NIC.
 
 ![NIC handle](images/nichandle03.png){.thumbnail}
 

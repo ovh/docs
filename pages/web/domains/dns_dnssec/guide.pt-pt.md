@@ -18,7 +18,7 @@ Para compreender como funciona esta proteção, aconselhamos que consulte a segu
 
 - Ter um nome de domínio registado na OVH.
 - O nome de domínio afetado deve dispor de uma extensão compatível com o DNSSEC.
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web Cloud`{.action}.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
 
 ## Instruções
 
@@ -30,12 +30,12 @@ Para compreender como funciona esta proteção, aconselhamos que consulte a segu
 
 > [!primary]
 >
-> Para verificar se o domínio utiliza a configuração DNS da OVH, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, selecione o domínio e clique em `Servidores DNS`{.action}.
+> Para verificar se o domínio utiliza a configuração DNS da OVH, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, selecione o domínio e clique em `Servidores DNS`{.action}.
 >
 
 ### 1 - Aceder à gestão do nome de domínio
 
-Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção “Web”. A seguir, clique em Alojamentos na barra à esquerda e, em seguida, selecione o domínio correspondente.
+Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”. A seguir, clique em Alojamentos na barra à esquerda e, em seguida, selecione o domínio correspondente.
 
 Poderá consultar as informações gerais do domínio na nova janela que irá aparecer. 
 

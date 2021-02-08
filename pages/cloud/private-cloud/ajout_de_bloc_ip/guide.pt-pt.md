@@ -16,7 +16,7 @@ Um bloco IP pode servir para tornar os seus serviços acessíveis na Internet.
 
 ## Requisitos
 
-* Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 * Dispor de uma [infraestrutura Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external} na sua conta OVHcloud.
 
 ## Instruções
@@ -101,7 +101,7 @@ De seguida, utilize esta chamada API para mover o IP no “IP parking”:
 > Esta chamada associa a rede nas VM que utilizam os IP em questão.
 >
 
-Poderá acompanhar a transferência do bloco IP na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} na secção `Hosted Private Cloud`{.action} > `Private Cloud`{.action}. Clique no seu serviço Hosted Private Cloud e, depois, no separador `Operações`{.action}.
+Poderá acompanhar a transferência do bloco IP na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} na secção `Hosted Private Cloud`{.action} > `Private Cloud`{.action}. Clique no seu serviço Hosted Private Cloud e, depois, no separador `Operações`{.action}.
 
 A referência da operação é “removeIpRipeBlock”.
 

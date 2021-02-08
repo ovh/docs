@@ -20,7 +20,7 @@ Afin d'empêcher les transferts de domaine non autorisés, les noms de domaine s
 
 - Disposer d'un [nom de domaine](https://www.ovh.com/fr/domaines/) enregistré chez OVHcloud
 - Être habilité à demander le transfert du nom de domaine : le propriétaire et/ou les personnes l'administrant doivent être informés de la demande du transfert.
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 - Le nom de domaine doit avoir été créé il y a plus de 61 jours **et** ne doit pas avoir été transféré ou avoir changé de propriétaire durant cette période.
 
 > [!primary]
@@ -46,7 +46,7 @@ Afin d'empêcher les transferts de domaine non autorisés, les noms de domaine s
 
 ### Étape 1 : lever la protection contre le transfert du nom de domaine
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) et sélectionnez `Web Cloud`{.action} dans la barre de navigation supérieure. Cliquez sur `Domaines`{.action} dans la barre de services située à gauche, puis choisissez le nom de domaine concerné.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action} dans la barre de navigation supérieure. Cliquez sur `Domaines`{.action} dans la barre de services située à gauche, puis choisissez le nom de domaine concerné.
 
 Sous l'onglet `Informations générales`{.action}, vous trouverez le curseur `Protection contre le transfert` sous **Securité**. Par défaut, cette protection est `Activée`{.action}.
 

@@ -20,7 +20,7 @@ As well as private IP addressing, the [vRack](https://www.ovh.lt/sprendimai/vrac
 * your chosen private IP address range
 * a [vRack compatible server](https://www.ovh.lt/dedikuoti_serveriai/){.external}
 * a [vRack](https://www.ovh.lt/sprendimai/vrack/){.external} service activated in your account
-* access to the OVH [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* access to the OVH [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
 

@@ -17,13 +17,13 @@ Il servizio SQL Privato consente di utilizzare un'istanza SQL che funziona paral
 
 - Disporre di un'istanza SQL Privato (inclusa nelle soluzioni di [hosting Web](https://www.ovh.it/hosting-web/){.external} o attivata tramite un’[opzione SQL](https://www.ovh.it/hosting-web/opzioni-sql.xml){.external}).
 - Disporre di un piano di [hosting Web](https://www.ovh.it/hosting-web/){.external} attivo e ospitato nello stesso datacenter dell'istanza SQL Privato (questa informazione è disponibile nello Spazio Cliente OVH)
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
 ### Attiva il tuo server SQL Privato incluso con la tua offerta di hosting Web
 
-Se la tua offerta di hosting include l'opzione SQL Privato, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Dalla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} nella colonna di sinistra.
+Se la tua offerta di hosting include l'opzione SQL Privato, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Dalla sezione `Web Cloud`{.action}, clicca su `Hosting`{.action} nella colonna di sinistra.
 
 Nella scheda `Informazioni generali`, riquadro `Configurazione`, clicca sul pulsante `...`{.action} a destra del **Database privato**. Clicca su `Attiva`{.action} per avviare il processo di attivazione.
 
@@ -33,7 +33,7 @@ Per completare l'operazione segui le istruzioni riportate qui di seguito per det
 
 ### Visualizza le informazioni generali dell'istanza
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e, nel menu a sinistra, clicca su `Database`{.action} e poi seleziona la tua istanza SQL. Assicurati di trovarti nella scheda `Informazioni generali`{.action}.
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e, nel menu a sinistra, clicca su `Database`{.action} e poi seleziona la tua istanza SQL. Assicurati di trovarti nella scheda `Informazioni generali`{.action}.
 
 > [!primary]
 >

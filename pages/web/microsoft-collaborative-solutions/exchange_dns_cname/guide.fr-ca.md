@@ -16,8 +16,8 @@ Lors de l'ajout d'un nom de domaine à votre service Exchange, une configuration
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
-- Être en mesure d’administrer le service Exchange depuis votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Être en mesure d’administrer le service Exchange depuis votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 - Avoir effectué l'ajout d'un nom de domaine sur votre service Exchange demandant l'ajout d'un champ CNAME.
 - Pouvoir modifier la configuration de votre nom de domaine (sa zone DNS).
 

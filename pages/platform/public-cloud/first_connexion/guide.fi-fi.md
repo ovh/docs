@@ -18,7 +18,7 @@ Kirjautuminen Public Cloud -instanssiin tapahtuu samalla tavalla kuin “normaal
 
 ## Edellytykset
 
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - Olet luonut [Public Cloud -instanssin](https://www.ovh-hosting.fi/public-cloud/instances/){.external}.
 
 
@@ -77,7 +77,7 @@ Jotta voit kirjautua Linux-instanssille Windowsilla, tarvitset  [PuTTY](https://
 
 #### Asennuksen viimeistely
 
-Kun instanssisi on luotu, on viimeisteltävä *sysprep*. Sitä varten [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external} on käynnistettävä VNC-konsoli:
+Kun instanssisi on luotu, on viimeisteltävä *sysprep*. Sitä varten [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} on käynnistettävä VNC-konsoli:
 
 ![VNC-konsoli](images/vnc_console.png)
 

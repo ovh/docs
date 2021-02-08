@@ -21,7 +21,7 @@ OVHcloud ofrece una serie de herramientas, disponibles en el área de cliente, q
 
 ## Procedimiento
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) y seleccione `Telecom`{.action}. Haga clic en `SMS`{.action} en la columna izquierda y seleccione su cuenta de SMS.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Telecom`{.action}. Haga clic en `SMS`{.action} en la columna izquierda y seleccione su cuenta de SMS.
 
 La barra de herramientas y los accesos rápidos le permitirán acceder a las principales funcionalidades para enviar su campaña de SMS.
 

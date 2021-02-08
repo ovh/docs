@@ -19,13 +19,13 @@ Deze handleiding legt uit hoe u een e-mailadres met MX Plan kunt creëren.
 
 - U moet beschikken over MX Plan (inbegrepen bij  [OVH-webhosting](https://www.ovh.com/nl/shared-hosting/){.external} of apart verkrijgbaar).
 - U moet nog steeds e-mailadressen kunnen maken als onderdeel van uw pakket.
-- U moet gemachtigd zijn om MX Plan te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet gemachtigd zijn om MX Plan te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 ## Instructies
 
 ### Stap 1: Ga naar het beheer van uw e-maildienst
 
-Log in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} om met de procedure te beginnen. Klik op `E-mails`{.action} in het servicemenu aan de linkerkant en selecteer vervolgens de domeinnaam waarvoor u een MX Plan-pakket hebt afgesloten. Ga naar het `E-mails`{.action}-tabblad.
+Log in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} om met de procedure te beginnen. Klik op `E-mails`{.action} in het servicemenu aan de linkerkant en selecteer vervolgens de domeinnaam waarvoor u een MX Plan-pakket hebt afgesloten. Ga naar het `E-mails`{.action}-tabblad.
 
 De getoonde tabel bevat alle e-mailadressen die zijn aangemaakt als onderdeel van uw MX Plan-pakket.
 

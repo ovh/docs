@@ -24,7 +24,7 @@ Aby zapobiec przenoszeniu domeny bez zezwolenia, domeny są zazwyczaj blokowane 
 
 - Posiadanie [domeny zarejestrowanej](https://www.ovh.pl/domeny/) w OVHcloud
 - Posiadanie uprawnień do złożenia wniosku o transfer domeny: właściciel i/lub administratorzy domeny powinni zostać poinformowani o wszczęciu takiej procedury. 
-- Dostęp do interfejsu zarządzania domeną w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostęp do interfejsu zarządzania domeną w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Rejestracja tej domeny trwa co najmniej 60 dni i nie została przeniesiona ani wymieniona (tj. zmiana właściciela) w ciągu ostatnich 60 dni
 
 > [!primary]
@@ -50,7 +50,7 @@ Aby zapobiec przenoszeniu domeny bez zezwolenia, domeny są zazwyczaj blokowane 
 
 ### Etap 1: wyłączenie ochrony przed transferem domeny
 
-Zaloguj się do swojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i na górnym pasku nawigacji wybierz `Web Cloud`{.action}. Kliknij `Domeny`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiednią nazwę domeny.
+Zaloguj się do swojego [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i na górnym pasku nawigacji wybierz `Web Cloud`{.action}. Kliknij `Domeny`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiednią nazwę domeny.
 
 W zakładce `Informacje ogólne`{.action} znajdziesz suwak `Ochrona przed transferem` pod **zabezpieczeniem**. Domyślnie ochrona ta jest `Aktywne`{.action}.
 

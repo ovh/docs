@@ -24,7 +24,7 @@ Potrebbe essere necessario modificare la password di root sul tuo sistema operat
 
 - Disporre di un [VPS OVHcloud](https://www.ovhcloud.com/it/vps/){.external} già configurato
 - Disporre delle credenziali di accesso ricevute via email dopo l'installazione (se ancora valide)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} (per utilizzare la modalità Rescue)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} (per utilizzare la modalità Rescue)
 
 > [!warning]
 >
@@ -69,7 +69,7 @@ Per autorizzare la connessione come utente root, segui gli step di [questa sezio
 
 #### Step 1: Riavvia il VPS in modalità Rescue.
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e riavvia il VPS in modalità Rescue. Se hai bisogno di ulteriori istruzioni sull'utilizzo della modalità Rescue con un VPS, consulta la [guida della modalità Rescue](../rescue/).
+Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e riavvia il VPS in modalità Rescue. Se hai bisogno di ulteriori istruzioni sull'utilizzo della modalità Rescue con un VPS, consulta la [guida della modalità Rescue](../rescue/).
 
 #### Step 2: Identificare il punto di mount
 
@@ -143,7 +143,7 @@ passwd: password updated successfully
 
 In questo modo, in caso di disattivazione della connessione root, potrai riconnetterti con questo nome utente dopo il riavvio.
 
-Riavvia il tuo VPS sul disco dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+Riavvia il tuo VPS sul disco dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 
 ### Attiva la password di root

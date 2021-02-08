@@ -9,18 +9,18 @@ section: Abrechnung
 
 ## Ziel
 
-Eine Bestellung bei OVHcloud durchläuft verschiedene Stadien, die Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) nachverfolgen können.
+Eine Bestellung bei OVHcloud durchläuft verschiedene Stadien, die Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) nachverfolgen können.
 
 **In dieser Anleitung erfahren Sie alles über die Informationen auf Ihrem Bestellschein und die einzelnen Bestellschritte.**
 
 > [!primary]
 >
-> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVHcloud Verträge, die Sie jederzeit in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im Bereich `Produkte und Dienstleistungen`{.action}, unter `Verträge`{.action} einsehen können.
+> In Abhängigkeit von Ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVHcloud Verträge, die Sie jederzeit in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `Produkte und Dienstleistungen`{.action}, unter `Verträge`{.action} einsehen können.
 >
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben mindestens eine Bestellung bei OVHcloud aufgegeben.
 
 
@@ -40,12 +40,12 @@ Der Bestellschein wird erstellt, sobald Sie eine Bestellung bei OVHcloud aufgebe
 |4|In diesem Bereich finden Sie die zur Verfügung stehenden Zahlungsarten. Dabei werden nur die in dem Land, in dem der Account erstellt wurde, zulässigen bzw. die mit dem Kontotyp verbundenen Zahlungsmittel aufgeführt.|
 
 
-Ihren Bestellschein können Sie jederzeit wie im nachfolgenden Abschnitt beschrieben in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} abrufen.
+Ihren Bestellschein können Sie jederzeit wie im nachfolgenden Abschnitt beschrieben in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} abrufen.
 
 
 ### Auf die Bestellscheine im OVHcloud Kundencenter zugreifen
 
-Um den Verwaltungsbereich Ihrer Bestellungen aufzurufen, klicken Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} auf Ihrem `Dashboard` auf `Meine Bestellungen anzeigen`{.action}.
+Um den Verwaltungsbereich Ihrer Bestellungen aufzurufen, klicken Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} auf Ihrem `Dashboard` auf `Meine Bestellungen anzeigen`{.action}.
 
 ![Kundencenter](images/huborders.png){.thumbnail}
 
@@ -81,7 +81,7 @@ Gemäß unserer [Allgemeinen Geschäftsbedingungen](https://www.ovh.de/support/a
 
 Weitere Informationen zur Ausübung ihres Widerrufsrechts finden Sie in unseren AGB.
 
-Sofern die Voraussetzungen für die Ausübung des Widerrufsrechts erfüllt sind, ist der Widerruf direkt über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} möglich. Gehen Sie hierfür so vor, wie oben für die Ansicht des Bestellscheins beschrieben, wählen Sie dann aber anstatt `Bestellung im HTML-Format abrufen`{.action} den Punkt `Bestellung stornieren`{.action}.
+Sofern die Voraussetzungen für die Ausübung des Widerrufsrechts erfüllt sind, ist der Widerruf direkt über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} möglich. Gehen Sie hierfür so vor, wie oben für die Ansicht des Bestellscheins beschrieben, wählen Sie dann aber anstatt `Bestellung im HTML-Format abrufen`{.action} den Punkt `Bestellung stornieren`{.action}.
 
 ![Stornierung einer Bestellung](images/cancel_order.png){.thumbnail}
 

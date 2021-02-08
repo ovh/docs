@@ -42,7 +42,7 @@ Tulet nyt `Summary`-osioon, johon on koottuna omistamasi IP-lohkot sekä jokaise
 
 Jotta voit ilmoittaa OVH-liitännäisille, että julkiset IP-osoitteet on jo käytetty, on tarpeen toteuttaa ARP-kysely (_arping_) näitä osoitteita käyttävillä virtuaalikoneilla. Huomio: tietyt virtuaalisella palomuurilla varustetut konfiguraatiot eivät salli MAC-osoitteiden takaisin saamista, jos ARP-protokollaa ei ole sallittu.
 
-Voit seuraavaksi konfiguroida Reverse IP -osoitteen esimerkiksi sähköpostipalvelimelle. Tähän asetukseen pääsee myös [hallintapaneelista](https://www.ovh.com/auth/?action=gotomanager){.external} sekä [OVH:n API-ohjelmistoilla](https://api.ovh.com/){.external}. Klikkaa IP-osoitteen vieressä olevaa kolmea pistettä ja sitten `Edit Reverse`{.action}.
+Voit seuraavaksi konfiguroida Reverse IP -osoitteen esimerkiksi sähköpostipalvelimelle. Tähän asetukseen pääsee myös [hallintapaneelista](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} sekä [OVH:n API-ohjelmistoilla](https://api.ovh.com/){.external}. Klikkaa IP-osoitteen vieressä olevaa kolmea pistettä ja sitten `Edit Reverse`{.action}.
 
 ![Reversen muokkauspainike](images/network_04.png){.thumbnail}
 

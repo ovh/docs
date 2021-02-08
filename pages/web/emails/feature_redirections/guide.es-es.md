@@ -34,14 +34,14 @@ Existen dos tipos de redirecciones:
 
 ## Requisitos
 
-- Conectarse al[área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Conectarse al[área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 - Tener una solución MX Plan. Esta solución viene incluida en el [plan de hosting de OVHcloud](https://www.ovh.es/hosting/){.external}, en el [alojamiento gratuito Start 10M](https://www.ovh.es/dominios/oferta_hosting_start10m.xml){.external} o puede contratarse por separado.
 
 ## Procedimiento
 
 La versión puede variar en función de la fecha de activación de su servicio MX Plan o en el caso de que [el servicio haya sido migrado recientemente]({ovh_www}/mxplan-migration/){.external}. Antes de continuar, compruebe de qué versión dispone. 
 
-Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, y vaya a la sección «Web». En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio correspondiente. Siga leyendo esta guía en función de su versión:
+Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, y vaya a la sección «Web». En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio correspondiente. Siga leyendo esta guía en función de su versión:
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|

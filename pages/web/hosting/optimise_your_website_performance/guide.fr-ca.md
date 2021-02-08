@@ -45,7 +45,7 @@ Pour cela, cliquez sur la touche `F12`de votre clavier et dirigez-vous vers l'on
 
 
 ### Statistiques de votre site
-Il vous est maintenant possible depuis le nouvel [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} d'accéder à des nouvelles statistiques de votre site.
+Il vous est maintenant possible depuis le nouvel [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} d'accéder à des nouvelles statistiques de votre site.
 
 - Requêtes HTTP : Indique le nombre de hits moyen sur le site. (Hit : Requête de demande d'accès à un fichier (quelle que soit sa nature, texte, image, etc.) formée lors de l'appel d'une page web par votre navigateur).
 

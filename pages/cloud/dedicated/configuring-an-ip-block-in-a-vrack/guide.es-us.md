@@ -20,7 +20,7 @@ Además del direccionamiento IP privado, el [vRack](https://www.ovh.com/world/es
 * Haber elegido un rango de direcciones IP privadas.
 * Tener un [servidor compatible con el vRack](https://www.ovh.com/world/es/servidores_dedicados/){.external}.
 * Haber activado un servicio [vRack](https://www.ovh.com/world/es/soluciones/vrack/){.external}.
-* Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+* Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 
 ## Procedimiento

@@ -19,7 +19,7 @@ Lors de l’installation ou de la réinstallation d’une distribution ou d’un
 
 * Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}.
 * Être connecté en SSH avec l’identifiant root.
-* Avoir accès à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Avoir accès à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
