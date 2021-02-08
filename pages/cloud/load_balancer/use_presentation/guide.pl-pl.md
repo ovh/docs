@@ -112,8 +112,6 @@ Dzięki Load balancerowi, zadbasz o redundancję i zrównoważone obciążenie s
 
 ## Sprawdź również
 
-[Dowiedz się więcej o równoważeniu obciążenia](https://pl.wikipedia.org/wiki/R%C3%B3wnowa%C5%BCenie_obci%C4%85%C5%BCenia){.external}.
-
 [Dowiedz się więcej o Haproxy](http://www.haproxy.org/#desc){.external}.
 
 [Dowiedz się więcej o Nginx](https://pl.wikipedia.org/wiki/Nginx){.external}.

@@ -25,7 +25,7 @@ Plus d'informations [dans ce guide](../modifier-lenvironnement-dexecution-de-mon
 
 Si vous souhaitez installer d'autres modules/CMS, consultez [ce guide]({legacy}1375){.ref}.
 
-Les CMS sont des [systèmes de gestion de contenu](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu){.external}, ils ont généralement besoin d'une plateforme d'hébergement comprenant un serveur FTP, une base de données, et un nom de domaine.
+Les CMS sont des [systèmes de gestion de contenu](https://fr.wikipedia.org/w/index.php?title=Systeme_de_gestion_de_contenu&redirect=no){.external}, ils ont généralement besoin d'une plateforme d'hébergement comprenant un serveur FTP, une base de données, et un nom de domaine.
 
 Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovh.com/fr/hebergement-web/){.external}.
 
