@@ -16,13 +16,13 @@ section: 'Primeros pasos'
 
 ## Requisitos
 
-* acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+* acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
 * un proyecto [Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} creado en su cuenta de OVHcloud
 * una llave SSH creada en el área de cliente de OVHcloud
 
 ### Desplegar una instancia de Public Cloud
 
-Para desplegar una instancia public cloud, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Haga clic en `Public Cloud`{.action} en la esquina superior izquierda. En la pantalla siguiente, haga clic en la flecha junto al nombre por defecto del proyecto en la esquina superior izquierda de la pantalla. Seleccione el proyecto en el que quiere crear una nueva instancia.
+Para desplegar una instancia public cloud, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Haga clic en `Public Cloud`{.action} en la esquina superior izquierda. En la pantalla siguiente, haga clic en la flecha junto al nombre por defecto del proyecto en la esquina superior izquierda de la pantalla. Seleccione el proyecto en el que quiere crear una nueva instancia.
 
 ![select_project](images/select_project.png){.thumbnail}
 

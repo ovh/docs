@@ -42,8 +42,8 @@ This code redirects each /letstest request to the /test_wslash/testing.php scrip
 
 ```
 RewriteEngine on
-Rewritecond %{HTTP_HOST} ^example.com$
-Rewriterule ^(.*) http://www.example.com/$1 [QSA,L,R=301]
+RewriteCond %{HTTP_HOST} ^example.com$
+RewriteRule ^(.*) http://www.example.com/$1 [QSA,L,R=301]
 ```
 
 
@@ -52,14 +52,14 @@ Rewriterule ^(.*) http://www.example.com/$1 [QSA,L,R=301]
 
 ## Redirect to a particular folder without displaying the folder in question
 
-- If your website is not in the target folder, this will force all requests to use www.example.com, when in reality the page is called: www.example.com/MySite
+- If your website is not in the target folder, this will force all requests to use www.example.com, when in reality the page is called: ww.example.com/MySite
 
 
 ```
 RewriteEngine on
-Rewritecond %{HTTP_HOST} ^example.com
-Rewritecond %{REQUEST_URI} !^/MySite
-Rewriterule ^(.*)$ /MySite/
+RewriteCond %{HTTP_HOST} ^example.com
+RewriteCond %{REQUEST_URI} !^/MySite
+RewriteRule ^(.*)$ /MySite/
 ```
 
 

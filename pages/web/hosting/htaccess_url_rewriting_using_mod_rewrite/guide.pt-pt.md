@@ -41,8 +41,8 @@ Esta formula reencaminha cada pedido /letstest para o script /test_wslash/testin
 
 ```
 RewriteEngine on
-Rewritecond %{HTTP_HOST} ^exemplo.com$
-Rewriterule ^(.*) http://www.exemplo.com/$1 [QSA,L,R=301]
+RewriteCond %{HTTP_HOST} ^exemplo.com$
+RewriteRule ^(.*) http://www.exemplo.com/$1 [QSA,L,R=301]
 ```
 
 
@@ -56,9 +56,9 @@ Rewriterule ^(.*) http://www.exemplo.com/$1 [QSA,L,R=301]
 
 ```
 RewriteEngine on
-Rewritecond %{HTTP_HOST} ^exemplo.com
-Rewritecond %{REQUEST_URI} !^/MeuSite
-Rewriterule ^(.*)$ /MeuSite/
+RewriteCond %{HTTP_HOST} ^exemplo.com
+RewriteCond %{REQUEST_URI} !^/MeuSite
+RewriteRule ^(.*)$ /MeuSite/
 ```
 
 

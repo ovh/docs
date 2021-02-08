@@ -38,7 +38,7 @@ Vous avez souscrit à un hébergement web POWER Python et vous souhaitez y dépl
 ## Prérequis
 
 - Disposer d'une de l'offre d'hébergement web POWER [Python](https://labs.ovh.com/managed-python).
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous conseillons de consulter notre guide [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) avant de poursuivre.
 
