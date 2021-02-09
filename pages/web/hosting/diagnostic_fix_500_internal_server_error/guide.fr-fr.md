@@ -84,7 +84,7 @@ Pour restaurer le code source de votre site, consultez [Restaurer l’espace de 
 
 Si votre site comporte une base de données, consultez [Restaurer une sauvegarde de votre base de données](../mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client), afin de la restaurer à une date antérieure.
 
-Si l'erreur 500 est apparue enfin suite à une mise à jour de la version PHP de votre hébergement, consultez [Configurer le PHP sur son hébergement](../configurer-le-php-sur-son-hebergement-web-mutu-2014/) pour revenir à la configuration précédente.
+Si l'erreur 500 est apparue enfin suite à une mise à jour de la version PHP de votre hébergement, consultez [Configurer le PHP sur son hébergement](./configurer-le-php-sur-son-hebergement-web-mutu-2014/) pour revenir à la configuration précédente.
 
 
 ## Aller plus loin
