@@ -32,7 +32,12 @@ Elles proviennent aussi parfois d'une mise à jour effectuée **automatiquement*
 
 ## En pratique
 
-Avant de poursuivre, vérifiez votre site sur plusieurs appareils et navigateurs. Si l'erreur 500 apparaît uniquement dans certains tests et pas dans d'autres, c'est qu'elle n'est pas liée à vos services OVHcloud. Redémarrez vos appareils puis contactez si besoin un technicien informatique proche de votre domicile.
+Avant de poursuivre, vérifiez votre site sur plusieurs appareils et navigateurs. Si l'erreur 500 apparaît uniquement dans certains cas et pas dans d'autres, c'est qu'elle n'est pas liée à vos services OVHcloud. Redémarrez vos appareils puis contactez si nécessaire un technicien informatique proche de votre domicile.
+
+Un site est constitué d'un **code source** (les fichiers en .php par exemple, visibles lors d'une connexion à votre hébergement en [FTP](../connexion-espace-stockage-ftp-hebergement-web/)), auquel s'ajoutent souvent une **base de données**. Malgré l'erreur 500, il est fortement conseillé d'effectuer une sauvegarde locale de l'ensemble de vos données avant toute autre manipulation :
+
+- Pour le code source de votre site, consultez ce [guide](https://docs.ovh.com/fr/hosting/mutualise-guide-utilisation-filezilla/)
+- Si votre site utilise une base de données, suivez également ce [guide](https://docs.ovh.com/fr/hosting/exportation-bases-donnees/)
 
 Dans le cas d'une erreur 500, effectuer une [restauration](https://docs.ovh.com/fr/hosting/erreur-500-internal-server-error/#restaurer-son-site) de votre site est tout à fait possible. Il reste toutefois préférable de réaliser un diagnostic approfondi, afin de déterminer l'origine précise de l'erreur 500.
 
@@ -55,6 +60,8 @@ Puis renommez ce fichier en `.htaccess.old` et retestez votre site.
 Si ce dernier est de nouveau accessible alors le `.htaccess` est en cause. Il devra donc être modifié. Si vous le souhaitez, contactez l'un de nos [partenaires](https://marketplace.ovhcloud.com/) à ce sujet.
 
 ### Vérifiez les permissions sur les dossiers et les fichiers
+
+Les fichiers et dossiers de votre hébergement, visibles via une connexion en [FTP](../connexion-espace-stockage-ftp-hebergement-web/), possèdent tous un certain niveau de "droits" (lecture, écriture, exécution), permettant de les protéger d'é A FINIR
 
 Une erreur 500 peut également être liée à une erreur au niveau des droits accordés à certains dossiers ou fichiers composant votre site.
 
@@ -84,7 +91,7 @@ Pour restaurer le code source de votre site, consultez [Restaurer l’espace de 
 
 Si votre site comporte une base de données, consultez [Restaurer une sauvegarde de votre base de données](../mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client), afin de la restaurer à une date antérieure.
 
-Si l'erreur 500 est apparue enfin suite à une mise à jour de la version PHP de votre hébergement, consultez [Configurer le PHP sur son hébergement](./configurer-le-php-sur-son-hebergement-web-mutu-2014/) pour revenir à la configuration précédente.
+Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP de votre hébergement, consultez [Configurer le PHP sur son hébergement](./configurer-le-php-sur-son-hebergement-web-mutu-2014/) pour revenir à la configuration précédente.
 
 
 ## Aller plus loin
