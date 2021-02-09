@@ -61,9 +61,9 @@ Si ce dernier est de nouveau accessible alors le `.htaccess` est en cause. Il de
 
 ### Vérifiez les permissions sur les dossiers et les fichiers
 
-Les fichiers et dossiers de votre hébergement, visibles via une connexion en [FTP](../connexion-espace-stockage-ftp-hebergement-web/), possèdent tous un certain niveau de "droits" (lecture, écriture, exécution), permettant de les protéger d'é A FINIR
+Les fichiers et dossiers qui constituent votre site possèdent tous un certain niveau de "permissions" en lecture, en écriture et en exécution. Ceci afin de les protéger contre une manipulation malveillante ou erronée.
 
-Une erreur 500 peut également être liée à une erreur au niveau des droits accordés à certains dossiers ou fichiers composant votre site.
+Une erreur 500 peut également être liée à un niveau de drioits d'accès erroné sur certains dossiers ou fichiers de votre site.
 
 Pour accéder à ces fichiers, connectez-vous en FTP à votre hébergement selon ce [document](../connexion-espace-stockage-ftp-hebergement-web/).
 
@@ -87,19 +87,19 @@ Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous es
 > 
 > Lors d'une restauration, le contenu de votre espace FTP ou celui de votre base de données sont remplacés par une sauvegarde. Vous ne pourrez pas récupérer ensuite les données présentes juste avant la restauration.
 
-Pour restaurer le code source de votre site, consultez [Restaurer l’espace de stockage son hébergement web](../../domain//restauration-ftp-filezilla-espace-client/). 
+Pour restaurer le code source de votre site, consultez [Restaurer l’espace de stockage son hébergement web](../domain//restauration-ftp-filezilla-espace-client/). 
 
 Si votre site comporte une base de données, consultez [Restaurer une sauvegarde de votre base de données](../mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client), afin de la restaurer à une date antérieure.
 
-Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP de votre hébergement, consultez [Configurer le PHP sur son hébergement](./configurer-le-php-sur-son-hebergement-web-mutu-2014/) pour revenir à la configuration précédente.
+Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP de votre hébergement, consultez [Configurer le PHP sur son hébergement](../configurer-le-php-sur-son-hebergement-web-mutu-2014/) pour revenir à la configuration précédente.
 
 
 ## Aller plus loin
 
-[Tout sur le fichier .htaccess](https://docs.ovh.com/fr/hosting/mutualise-tout-sur-le-fichier-htaccess/)
+[Tout sur le fichier .htaccess](../hosting/mutualise-tout-sur-le-fichier-htaccess/)
 
-[Comment diagnostiquer une page blanche ?](https://docs.ovh.com/fr/hosting/comment-diagnostiquer-page-blanche/)
+[Comment diagnostiquer une page blanche ?](../hosting/comment-diagnostiquer-page-blanche/)
 
-[Les codes de reponse d’un serveur HTTP](https://docs.ovh.com/fr/hosting/mutualise-les-codes-de-reponse-dun-serveur-http/)
+[Les codes de reponse d’un serveur HTTP](../hosting/mutualise-les-codes-de-reponse-dun-serveur-http/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
