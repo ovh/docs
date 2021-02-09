@@ -32,7 +32,7 @@ Elles proviennent aussi parfois d'une mise à jour effectuée **automatiquement*
 
 ## En pratique
 
-Avant de poursuivre, vérifiez votre site sur plusieurs appareils et navigateurs. Si l'erreur 500 n'apparaît que dans certains cas, c'est qu'elle n'est pas liée à vos services OVHcloud. Redémarrez vos appareils puis contactez si besoin un réparateur informatique proche de votre domicile.
+Avant de poursuivre, vérifiez votre site sur plusieurs appareils et navigateurs. Si l'erreur 500 apparaît uniquement dans certains tests et pas dans d'autres, c'est qu'elle n'est pas liée à vos services OVHcloud. Redémarrez vos appareils puis contactez si besoin un technicien informatique proche de votre domicile.
 
 Dans le cas d'une erreur 500, effectuer une [restauration](../erreur-500-internal-server-error/#restaurer-son-site) de votre site est tout à fait possible. Il reste toutefois préférable de réaliser un diagnostic approfondi, afin de déterminer l'origine précise de l'erreur 500.
 
