@@ -16,7 +16,7 @@ order: 5
 
 OVHcloud propose avec sa solution [Insight](https://docs.ovh.com/fr/metrics/metrics-insight/) de partager les métriques de vos services pour les intégrer à vos propres solutions.
 
-**Découvrez comment activer Insights et mettre en place votre premier tableau de bord Grafana pour monitorer vos accès Internet.**
+**Découvrez comment activer Insight et mettre en place votre premier tableau de bord Grafana pour monitorer vos accès Internet.**
 
 ## Prérequis
 
