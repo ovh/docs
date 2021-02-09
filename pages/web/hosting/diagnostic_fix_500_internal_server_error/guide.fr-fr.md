@@ -34,7 +34,7 @@ Elles proviennent aussi parfois d'une mise à jour effectuée **automatiquement*
 
 Avant de poursuivre, vérifiez votre site sur plusieurs appareils et navigateurs. Si l'erreur 500 apparaît uniquement dans certains tests et pas dans d'autres, c'est qu'elle n'est pas liée à vos services OVHcloud. Redémarrez vos appareils puis contactez si besoin un technicien informatique proche de votre domicile.
 
-Dans le cas d'une erreur 500, effectuer une [restauration](../erreur-500-internal-server-error/#restaurer-son-site) de votre site est tout à fait possible. Il reste toutefois préférable de réaliser un diagnostic approfondi, afin de déterminer l'origine précise de l'erreur 500.
+Dans le cas d'une erreur 500, effectuer une [restauration](https://docs.ovh.com/fr/hosting/erreur-500-internal-server-error/#restaurer-son-site) de votre site est tout à fait possible. Il reste toutefois préférable de réaliser un diagnostic approfondi, afin de déterminer l'origine précise de l'erreur 500.
 
 ### Vérifiez les logs de votre hébergement
 
@@ -42,7 +42,7 @@ Consultez tout d'abord ce [guide](../mutualise-consulter-les-statistiques-et-les
 
 ### Passez votre site en mode développement
 
-Passez ensuite votre hébergement en mode `développement`, afin de faire apparaître d'éventuelles erreurs PHP, en suivant ces [indications](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#etape-2-modifier-la-configuration-de-lhebergement-web).
+Afin de faire apparaître d'éventuelles erreurs PHP, passez ensuite votre hébergement en mode `développement` grâce à ces [indications](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#etape-2-modifier-la-configuration-de-lhebergement-web).
 
 ### Testez le fichier .htaccess
 
@@ -63,8 +63,8 @@ Pour accéder à ces fichiers, connectez-vous en FTP à votre hébergement selon
 Le guide [Utilisation logiciel FileZilla avec votre hébergement](../mutualise-guide-utilisation-filezilla/#droits-des-fichiers-dossiers) vous aidera ensuite à effectuer les vérifications suivantes : 
 
 -	La **racine** de votre hébergement (Il s’agit du répertoire noté `/` ou `.` dans votre logiciel FTP) doit être obligatoirement en droits 705 (Ce sont les permissions par défaut). Nous vous conseillons de ne pas modifier ce niveau de droits.
--	Les répertoires de votre hébergement doivent être en droits 705.
--	Les fichiers doivent tous être en droits 604.
+-	Les dossiers doivent être en droits 705.
+-	Les fichiers doivent être en droits 604.
 
 ### Accédez aux détails des erreurs sur vos scripts
 
@@ -74,17 +74,17 @@ Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous es
 
 ### Restaurez votre site à son état antérieur
 
-> Un site est constitué d'un **code source** (les fichiers en .php ou .html par exemple de votre hébergement OVHcloud), auquel s'ajoutent souvent une **base de données**. Vous pouvez restaurer l'un ou l'autre indépendamment.
+> Un site est constitué d'un **code source** (les fichiers en .php par exemple, visibles lors d'une connexion à votre hébergement en [FTP](../connexion-espace-stockage-ftp-hebergement-web/)), auquel s'ajoutent souvent une **base de données**. Vous pouvez restaurer l'un ou l'autre indépendamment.
 > 
 > La restauration du code source concernera l'ensemble des sites de votre hébergement OVHcloud.
 > 
-> Lors de ces opérations, le code source de votre hébergement, comme le contenu de votre base de données, seront remplacés par une sauvegarde. Les données présentes avant la restauration ne seront pas récupérables.
+> Lors d'une restauration, le contenu de votre espace FTP ou celui de votre base de données est remplacé par une sauvegarde. Vous ne pourrez pas récupérer ensuite les données présentes juste avant la restauration.
 
 Pour restaurer le code source de votre site, consultez [Restaurer l’espace de stockage son hébergement web](../restauration-ftp-filezilla-espace-client/). 
 
 Si votre site comporte une base de données, consultez [Restaurer une sauvegarde de votre base de données](../mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client), afin de la restaurer à une date antérieure.
 
-Si l'erreur 500 est apparue enfin suite à une mise à jour de la version PHP de votre hébergement [Configurer le PHP sur son hébergement](../configurer-le-php-sur-son-hebergement-web-mutu-2014/) pour revenir à la configuration précédente.
+Si l'erreur 500 est apparue enfin suite à une mise à jour de la version PHP de votre hébergement, consultez [Configurer le PHP sur son hébergement](../configurer-le-php-sur-son-hebergement-web-mutu-2014/) pour revenir à la configuration précédente.
 
 
 ## Aller plus loin
