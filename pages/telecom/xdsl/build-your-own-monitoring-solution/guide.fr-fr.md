@@ -1,6 +1,6 @@
 ---
 title: 'Mettre en place votre propre solution de monitoring'
-slug: build-your-own-monitoring-solution
+slug: mettre-en-place-une-solution-de-monitoring
 excerpt: 'Mettre en place votre propre solution de monitoring de vos accès Internet en utilisant OVHcloud Insight et Grafana'
 section: 'Diagnostic et dépannage'
 order: 5
