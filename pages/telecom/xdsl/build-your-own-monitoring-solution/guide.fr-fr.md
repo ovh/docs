@@ -14,24 +14,24 @@ order: 5
 
 ## Objectif
 
-OVH propose avec sa solution Insight de partager les métriques de vos services pour les intégrer à vos propres solutions.
+OVHcloud propose avec sa solution [Insight](https://docs.ovh.com/fr/metrics/metrics-insight/) de partager les métriques de vos services pour les intégrer à vos propres solutions.
 
-**Découvrez comment activer Insight et mettre en place votre premier tableau de bord Grafana pour monitorer vos accès Internet.**
+**Découvrez comment activer Insights et mettre en place votre premier tableau de bord Grafana pour monitorer vos accès Internet.**
 
 ## Prérequis
 
-* Disposer d’un [accès internet xDSL ou fibre OVHcloud](https://www.ovhtelecom.fr/offre-internet/){.external};
-* La configuration à distance est de votre modem doit être activée.
+- Disposer d’un [accès internet xDSL ou fibre OVHcloud](https://www.ovhtelecom.fr/offre-internet/){.external}.
+- La [configuration à distance](https://docs.ovh.com/fr/xdsl/configuration_du_modem_a_partir_de_votre_espace_client/#etape-1-acceder-a-la-gestion-de-votre-box) de votre modem doit être activée.
 
 ## En pratique
 
-### Etape 1 : Récupérer votre jeton de lecture de métrique OVH Insight
+### Etape 1 : récupérer votre jeton de lecture de métrique OVHcloud Insight
 
-1. Rendez-vous sur la console APIv6 à cette adresse : [https://api.ovh.com/console/](https://api.ovh.com/console/){.external}
+1\. Rendez-vous sur la console APIv6 à cette adresse : [https://api.ovh.com/console/](https://api.ovh.com/console/){.external}
 
-2. Authentifiez-vous avec vos indentifiants OVHcloud
+2\. Authentifiez-vous avec vos identifiants OVHcloud. Retrouvez plus d'informations sur l'utilisation des API sur le guide [Premiers pas avec les API OVHcloud](https://docs.ovh.com/fr/api/api-premiers-pas/).
 
-3. Executez la méthode suivante pour récupérer votre jeton de lecture :
+3\. Executez la méthode suivante pour récupérer votre jeton de lecture :
 
 > [!api]
 >
@@ -40,19 +40,19 @@ OVH propose avec sa solution Insight de partager les métriques de vos services 
 
 ![apiGetInsightToken](images/token.png){.thumbnail}
 
-4. Enregistrez de manière sécurisé votre jeton de lecture retourné sous la clé `access`.
+4\. Enregistrez de manière sécurisée votre jeton de lecture retourné sous la clé `access`.
 
-### Etape 2 : Mettre en place votre premier tableau de bord Grafana
+### Etape 2 : mettre en place votre premier tableau de bord Grafana
 
-1. Rendez-vous sur l'interface Grafana fournie par OVHcloud à l'adresse : [https://grafana.metrics.ovh.net](https://grafana.metrics.ovh.net){.external}
+1\. Rendez-vous sur l'interface Grafana fournie par OVHcloud à l'adresse : [https://grafana.metrics.ovh.net](https://grafana.metrics.ovh.net){.external}
 
-2. Authentifiez-vous avec vos indentifiants OVHcloud
+2\. Authentifiez-vous avec vos identifiants OVHcloud.
 
-3. Choisissez `Add data source`{.action}
+3\. Choisissez `Add data source`{.action}.
 
 ![grafanaAddSource](images/grafana1.png){.thumbnail}
 
-4. Configurez la source de donnée tel que :
+4\. Configurez la source de donnée telle que :
 
 ```
 Name : Insight Warp10
@@ -62,17 +62,17 @@ Type : Warp10
 Url  : https://warp10.insight.eu.metrics.ovh.net
 ```
 
-5. Ajoutez une constante nommée `token` en utilisant votre jeton de lecture OVHcloud Insight
+5\. Ajoutez une constante nommée `token` en utilisant votre jeton de lecture OVHcloud Insight.
 
 ![grafanaAddConstant](images/grafana2.png){.thumbnail}
 
-6. Cliquez sur `Add`{.action} pour finaliser
+6\. Cliquez sur `Add`{.action} pour finaliser cette configuration.
 
-7. Cliquez sur l'icône Grafana en haut à gauche et choisissez dans le menu : `Dashboard`{.action}, puis `Import`{.action}
+7\. Cliquez sur l'icône Grafana en haut à gauche et choisissez dans le menu : `Dashboard`{.action}, puis `Import`{.action}
 
-8. Uploader le template suivant : [internet-access-grafana-dashboard-v1.json](http://files.isp.ovh.net/grafana/internet-access-grafana-dashboard-v1.json)
+8\. Uploadez le template suivant : [internet-access-grafana-dashboard-v1.json](http://files.isp.ovh.net/grafana/internet-access-grafana-dashboard-v1.json)
 
-9. Cliquez sur `Import`{.action} pour finaliser
+9\. Cliquez sur `Import`{.action} pour finaliser l'ajout du template.
 
 ![grafanaDashboard](images/grafana3.png){.thumbnail}
 
@@ -86,19 +86,17 @@ Url  : https://warp10.insight.eu.metrics.ovh.net
 
 Les informations suivantes sont actuellement disponibles pour vos accès Internet :
 
-* traffic entrant et sortant,
-
-* latence.
-
+- traffic entrant et sortant
+- latence
 
 Et si votre modem est compatible :
 
-* synchronisation,
+- synchronisation
+- SNR *(Signal to Noise Ratio)*
+- atténuation
+- erreurs CRC *(Contrôle de Redondance Cyclique)*
+- uptime de la synchronisation, de la connection et du modem
 
-* SNR *(Signal to Noise Ratio)*,
+## Aller plus loin
 
-* atténuation,
-
-* erreurs CRC *(Contrôle de Redondance Cyclique)*,
-
-* uptime de la synchronisation, de la connection et du modem.
+Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
