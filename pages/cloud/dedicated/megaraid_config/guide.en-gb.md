@@ -22,7 +22,7 @@ The default RAID level for OVH server installations is RAID 1, which doubles the
 
 ## Requirements
 
-- a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external} with hardware RAID
+- a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/){.external} with hardware RAID
 - administrative (root) access to the server via SSH
 
 ## Instructions

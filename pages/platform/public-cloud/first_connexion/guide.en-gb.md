@@ -18,7 +18,7 @@ Logging in to your OVH Public Cloud instances is similar to a standard login for
 ## Requirements
 
 * access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
-* an [OVH Public Cloud instance](https://www.ovh.co.uk/public-cloud/instances/){.external} created in your account
+* an [OVH Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external} created in your account
 
 ## Instructions
 

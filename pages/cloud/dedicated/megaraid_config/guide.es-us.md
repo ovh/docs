@@ -20,7 +20,7 @@ El nivel de RAID predeterminado para las instalaciones del servidor OVHcloud es 
 
 ## Requisitos
 
-* Un [servidor dedicado](https://www.ovh.com/world/es/servidores-dedicados/){.external} conhardware RAID 
+* Un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external} conhardware RAID 
 * Acceso administrativo (root) al servidor a través de SSH
 
 ## Instrucciones

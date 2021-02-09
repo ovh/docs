@@ -57,11 +57,11 @@ Wählen Sie `ovh`{.action} in der Drop-down-Liste "Typ" aus, wenn Sie nicht VMwa
 
 Um Ihre virtuellen Maschinen für den Internetzugang zu konfigurieren, müssen Sie das Gateway Ihrer Host-Maschine kennen, d. h. Ihres dedizierten Servers. Die Gateway-Adresse besteht aus den ersten drei Oktetten der Haupt-IP-Adresse Ihres Servers und 254 als das letzte Oktett. Angenommen, die Haupt-IP-Adresse Ihres Servers wäre:
 
-- 169.254.010.020
+- 169.254.10.020
 
 Ihre Gateway-Adresse wäre dann:
 
-- 169.254.010.**254**
+- 169.254.10.**254**
 
 ### Schritt 3: Host vorbereiten
 
@@ -201,7 +201,7 @@ Speichern und schließen Sie die Datei.<br>
 Öffnen Sie anschließend die Routing-Datei der VM, die sich in `/etc/sysconfig/network-scripts/route-(Interface_Name)` befindet. Bearbeiten Sie die Datei, um die unten stehende Konfiguration wiederzugeben. (Denken Sie daran, Ihre eigenen Werte einzufügen.)
 
 ```bash
-GATEWAY_IP - 169.254.010.254 (interface-name)
+GATEWAY_IP - 169.254.10.254 (interface-name)
 NETWORK_GW_VM - 255.255.255.0 (interface-name)
 default GATEWAY_IP
 ```
