@@ -478,7 +478,7 @@ section: Meltdown and Spectre informations
                      <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span>
                      <p><a class="external-link" href="https://security-tracker.debian.org/tracker/CVE-2017-5754" rel="nofollow">https://security-tracker.debian.org/tracker/CVE-2017-5754</a></p>
                      <div>
-                        <p><span style="color: rgb(212,212,212);text-decoration: underline;"><a class="external-link" href="https://www.debian.org/doc/manuals/debian-faq/ch-uptodate.en.html" rel="nofollow">https://www.debian.org/doc/manuals/debian-faq/ch-uptodate.en.html</a></span></p>
+                        <p><span style="color: rgb(212,212,212);text-decoration: underline;"><a class="external-link" href="https://www.debian.org/doc/manuals/debian-faq/" rel="nofollow">https://www.debian.org/doc/manuals/debian-faq/</a></span></p>
                      </div>
                   </div>
                </td>

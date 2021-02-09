@@ -53,11 +53,11 @@ Choose `ovh`{.action} from the "Type" drop-down menu unless you are using VMware
 
 To configure your virtual machines for internet access, you will need to know the gateway of your host machine (i.e. your dedicated server). The gateway IP address is made up of the first three octets of your server's main IP address, with 254 as the last octet. For example, if your server's main IP address was:
 
-- 169.254.010.20
+- 169.254.10.20
 
 Your gateway address would therefore be:
 
-- 169.254.010.**254**
+- 169.254.10.**254**
 
 ###  Step 3: Prepare the host
 
@@ -197,7 +197,7 @@ Save and close the file.<br>
 Next, open the virtual machine's routing file, which is located in `/etc/sysconfig/network-scripts/route-(interface-name)`. Edit the file so that it reflects the configuration below (please remember to fill in your own values).
 
 ```bash
-GATEWAY_IP - 169.254.010.254 (interface-name)
+GATEWAY_IP - 169.254.10.254 (interface-name)
 NETWORK_GW_VM - 255.255.255.0 (interface-name)
 default GATEWAY_IP
 ```
