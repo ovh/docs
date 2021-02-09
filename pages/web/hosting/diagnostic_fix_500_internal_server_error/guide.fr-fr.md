@@ -78,7 +78,7 @@ Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous es
 > 
 > La restauration du code source concernera l'ensemble des sites de votre hébergement OVHcloud.
 > 
-> Lors d'une restauration, le contenu de votre espace FTP ou celui de votre base de données est remplacé par une sauvegarde. Vous ne pourrez pas récupérer ensuite les données présentes juste avant la restauration.
+> Lors d'une restauration, le contenu de votre espace FTP ou celui de votre base de données sont remplacés par une sauvegarde. Vous ne pourrez pas récupérer ensuite les données présentes juste avant la restauration.
 
 Pour restaurer le code source de votre site, consultez [Restaurer l’espace de stockage son hébergement web](../../domain//restauration-ftp-filezilla-espace-client/). 
 
