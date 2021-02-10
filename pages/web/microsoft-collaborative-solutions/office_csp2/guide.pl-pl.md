@@ -22,7 +22,7 @@ Licencja Office 365 może być wykorzystywana na 5 komputerach PC/Mac, 5 tableta
 
 ### Dostęp do zarządzania Office 365 Reseller
 
-Po utworzeniu i udostępnieniu usługi Office 365, można nią zarządzać poprzez [Panel klienta](https://www.ovh.com/auth/?action=gotomanager/){.external}.
+Po utworzeniu i udostępnieniu usługi Office 365, można nią zarządzać poprzez [Panel klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 Aby to zrobić, wejdź do panelu, a następnie przejdź do sekcji `Sunrise`{.action}. W lewym menu, przejdź do `Office 365 Reseller`{.action} i wybierz usługę.
 

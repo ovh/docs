@@ -51,7 +51,7 @@ Necesitará reiniciar el servidor para que los cambios se hagan efectivos.
 >Esta parte esta destinada a servidor Linux. Para las distribuciones Windows, FreeBSD y Virtualizaciones, solo es posible el modo Disco duro o rescate.
 >
 
-Para iniciar el servidor en el kernel de red, primero debe de conectarse al [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager/){.external}.
+Para iniciar el servidor en el kernel de red, primero debe de conectarse al [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 Haga clic en `Servidores`{.action}, sección `Servidores Dedicados`{.action} en la columna de la izquierda, seleccione su servidor de la lista.
 
