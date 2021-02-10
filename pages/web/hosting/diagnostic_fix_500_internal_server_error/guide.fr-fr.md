@@ -6,7 +6,7 @@ excerpt: Diagnostiquez les cas les plus courants d'erreurs 500
 section: Diagnostic
 ---
 
-**Dernière mise à jour le 05/02/2021**
+**Dernière mise à jour le 10/02/2021**
 
 
 ## Objectif
@@ -15,7 +15,7 @@ Les erreurs 500 « Internal Server Error » peuvent concerner tout ou partie de 
 
 ![error500](images/error-500-2.PNG)
 
-Elles proviennent aussi parfois d'une mise à jour effectuée **automatiquement** par un composant de votre site et donc survenir sans action de votre part.
+Elles proviennent parfois aussi d'une mise à jour effectuée **automatiquement** par un composant de votre site et donc survenir sans action de votre part.
 
 **Découvrez comment diagnostiquer les cas les plus courants d'erreurs 500.**
 
@@ -27,25 +27,26 @@ Elles proviennent aussi parfois d'une mise à jour effectuée **automatiquement*
 ## Prérequis
 
 - Vous disposez d'une [offre d'hébergement mutualisé](https://www.ovh.com/fr/hebergement-web/)
-- Vous êtes connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/)
+- Vous êtes connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 
 ## En pratique
 
-Avant de poursuivre, vérifiez votre site sur plusieurs appareils et navigateurs. Si l'erreur 500 apparaît uniquement dans certains cas et pas dans d'autres, c'est qu'elle n'est pas liée à vos services OVHcloud. Redémarrez vos appareils puis contactez si nécessaire un technicien informatique proche de votre domicile.
+Avant de poursuivre, vérifiez votre site sur plusieurs appareils et navigateurs. Si l'erreur 500 n'apparaît pas dans certains cas de figure (par exemple via un navigateur différent du vôtre), c'est qu'elle n'est pas liée à vos services OVHcloud. Redémarrez vos appareils puis contactez si nécessaire un technicien informatique proche de votre domicile.
 
-Un site est constitué d'un **code source** (les fichiers en .php par exemple, visibles lors d'une connexion à votre hébergement en [FTP](../connexion-espace-stockage-ftp-hebergement-web/)), auquel s'ajoutent souvent une **base de données**. Malgré l'erreur 500, il est fortement conseillé d'effectuer une sauvegarde locale de l'ensemble de vos données avant toute autre manipulation :
+Un site est constitué d'un **code source** (les fichiers en .php par exemple, visibles lors d'une connexion à votre hébergement en [FTP](../connexion-espace-stockage-ftp-hebergement-web/)), auquel s'ajoute souvent une **base de données**. 
+<br>Malgré l'erreur 500, il est fortement conseillé d'effectuer une sauvegarde locale de l'ensemble de vos données avant toute autre manipulation :
 
-- Suivez ce [guide](../mutualise-guide-utilisation-filezilla/) pour récupérer une copie de votre code source 
-- Si votre site utilise une base de données, consultez également ce [document](../exportation-bases-donnees/) pour en récupérez une copie
+- Suivez ce [guide](../mutualise-guide-utilisation-filezilla/) pour récupérer une copie de votre code source. 
+- Si votre site utilise une base de données, consultez également ce [document](../exportation-bases-donnees/) pour en récupérer une copie.
 
 Dans le cas d'une erreur 500, effectuer une [restauration](../erreur-500-internal-server-error/#restaurer-son-site) de votre site est tout à fait possible. Il reste toutefois préférable de réaliser un diagnostic approfondi, afin de déterminer l'origine précise de l'erreur.
 
-### Vérifiez les logs de votre hébergement
+### Vérifier les logs de votre hébergement
 
-Consultez tout d'abord ce [guide](../mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/), afin de rechercher dans les logs de votre hébergement la cause de l'erreur 500.
+Consultez tout d'abord ce [guide](../mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/) afin de rechercher la cause de l'erreur 500 dans les logs de votre hébergement.
 
-### Passez votre site en mode développement
+### Passer votre site en mode développement
 
 Afin de faire apparaître d'éventuelles erreurs PHP, passez ensuite votre hébergement en mode `développement` grâce à ces [indications](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#etape-2-modifier-la-configuration-de-lhebergement-web).
 
@@ -57,39 +58,42 @@ Pour le vérifier, [connectez-vous en FTP](../connexion-espace-stockage-ftp-hebe
 
 Puis renommez ce fichier en `.htaccess.old` et retestez votre site. 
 
-Si ce dernier est de nouveau accessible alors le `.htaccess` est en cause. Il devra donc être modifié. Si vous le souhaitez, contactez l'un de nos [partenaires](https://marketplace.ovhcloud.com/) à ce sujet.
+Si ce dernier est de nouveau accessible, alors le `.htaccess` est en cause. Il devra donc être modifié. Si vous le souhaitez, contactez l'un de nos [partenaires](https://marketplace.ovhcloud.com/) à ce sujet.
 
-### Vérifiez les permissions sur les dossiers et les fichiers
+### Vérifier les permissions sur les dossiers et les fichiers
 
-Les fichiers et dossiers qui constituent votre site possèdent tous un certain niveau de "permissions" en lecture, en écriture et en exécution. Ceci afin de les protéger contre toute manipulation malveillante ou erronée.
+Les fichiers et dossiers qui constituent votre site possèdent tous un certain niveau de « permissions » en lecture, en écriture et en exécution. Ceci afin de les protéger contre toute manipulation malveillante ou erronée.
 
 Une erreur 500 peut être liée à un niveau de droits d'accès incorrect sur certains des dossiers ou fichiers de votre site.
 
-Pour accéder à ces fichiers, connectez-vous en FTP à votre hébergement selon ce [document](../connexion-espace-stockage-ftp-hebergement-web/).
+Pour accéder à ces fichiers, connectez-vous en FTP à votre hébergement en suivant notre [documentation](../connexion-espace-stockage-ftp-hebergement-web/).
 
-Le guide [Utilisation logiciel FileZilla avec votre hébergement](../mutualise-guide-utilisation-filezilla/#droits-des-fichiers-dossiers) vous aidera ensuite à vérifier les éléments suivants : 
+Le guide [Utilisation du logiciel FileZilla avec votre hébergement](../mutualise-guide-utilisation-filezilla/#droits-des-fichiers-dossiers) vous aidera ensuite à vérifier les éléments suivants : 
 
--	La **racine** de votre hébergement (Il s’agit du répertoire noté `/` ou `.` dans votre logiciel FTP) doit être obligatoirement en droits 705 (Ce sont les permissions par défaut). Nous vous conseillons de ne pas modifier ce niveau de droits.
+-	La **racine** de votre hébergement (Il s’agit du répertoire noté `/` ou `.` dans votre logiciel FTP) doit être obligatoirement en droits 705 (ce sont les permissions par défaut). Nous vous conseillons de ne pas modifier ce niveau de droits.
 -	Les dossiers doivent être en droits 705.
 -	Les fichiers doivent être en droits 604.
 
-### Accédez aux détails des erreurs sur vos scripts
+### Accéder aux détails des erreurs sur vos scripts
 
 Pour des raisons de sécurité, votre site masque les détails éventuels sur l'origine de l'erreur 500 à toute personne s'y connectant par un navigateur web.
 
 Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous est possible, à partir de la formule d’hébergement [pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml), de vous connecter à votre site via une [connexion ssh](../mutualise-le-ssh-sur-les-hebergements-mutualises/).
 
-### Restaurez votre site à son état antérieur
+### Restaurer votre site à son état antérieur
 
+> [!warning]
+>
 > La restauration du code source de votre site concernera l'ensemble des sites de votre hébergement OVHcloud.
 > 
-> Lors d'une restauration, le contenu de votre espace FTP ou celui de votre base de données sont remplacés par une sauvegarde. Vous ne pourrez donc pas récupérer ensuite les données présentes sur le serveur juste avant la restauration.
+> Lors d'une restauration, le contenu de votre espace FTP, ou celui de votre base de données, est remplacé par une sauvegarde. Vous ne pourrez donc pas récupérer ensuite les données présentes sur le serveur juste avant la restauration.
+>
 
-Pour restaurer le code source de votre site, consultez [Restaurer l’espace de stockage son hébergement web](../domain//restauration-ftp-filezilla-espace-client/). 
+Pour restaurer le code source de votre site, consultez notre guide « [Restaurer l’espace de stockage son hébergement web](../domain//restauration-ftp-filezilla-espace-client/) ». 
 
-Si votre site comporte une base de données, consultez [Restaurer une sauvegarde de votre base de données](../mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client), afin de la restaurer à un état antérieur.
+Si votre site comporte une base de données, consultez notre guide « [Restaurer une sauvegarde de votre base de données](../mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client) » afin de la restaurer à un état antérieur.
 
-Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP de votre hébergement, consultez [Configurer le PHP sur son hébergement](../configurer-le-php-sur-son-hebergement-web-mutu-2014/) pour revenir à la configuration précédente.
+Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP de votre hébergement, consultez notre guide « [Configurer le PHP sur son hébergement](../configurer-le-php-sur-son-hebergement-web-mutu-2014/) » pour revenir à la configuration précédente.
 
 
 ## Aller plus loin
