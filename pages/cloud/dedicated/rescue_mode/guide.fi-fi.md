@@ -23,7 +23,7 @@ Rescue-tila on yksi dedikoidun palvelimesi työkaluista. Sen avulla palvelin voi
 
 ## Käytännössä
 
-Voit aktivoida rescue-tilan kirjautumalla [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager/){.external}. Valitse dedikoitu palvelimesi osiosta `Dedikoidut`{.action} ja sitten kohdasta `Dedikoidut palvelimet`{.action}. Mene tämän jälkeen kohtaan `Palvelimen tila`{.action} > `Yleiset tiedot`{.action} > `...`{.action} ja klikkaa painiketta `Muokkaa`{.action} käynnistystilan vaihtamiseksi.
+Voit aktivoida rescue-tilan kirjautumalla [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Valitse dedikoitu palvelimesi osiosta `Dedikoidut`{.action} ja sitten kohdasta `Dedikoidut palvelimet`{.action}. Mene tämän jälkeen kohtaan `Palvelimen tila`{.action} > `Yleiset tiedot`{.action} > `...`{.action} ja klikkaa painiketta `Muokkaa`{.action} käynnistystilan vaihtamiseksi.
 
 ![Muokkaa käynnistystilaa](images/rescue-mode-01.png){.thumbnail}
 
@@ -111,7 +111,7 @@ rescue:~# mount /dev/hda1 /mnt/
 
 #### Kirjautuminen WinRescueen
 
-Palvelimen uudelleenkäynnistyksen jälkeen saat sähköpostiviestin, jossa on rescue-tilan kirjautumistietosi. Tunnusten käyttämiseksi sinun on ladattava ja asennettava VNC-konsoli tai käytettävä `IPMI`-moduulia [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager/){.external}.
+Palvelimen uudelleenkäynnistyksen jälkeen saat sähköpostiviestin, jossa on rescue-tilan kirjautumistietosi. Tunnusten käyttämiseksi sinun on ladattava ja asennettava VNC-konsoli tai käytettävä `IPMI`-moduulia [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ![Winrescue Windows](images/rescue-mode-06.png){.thumbnail}
 

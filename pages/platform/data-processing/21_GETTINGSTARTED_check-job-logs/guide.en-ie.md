@@ -18,7 +18,7 @@ To read an introduction about Data Processing service you can visit [Data Proces
 
 ## Requirements 
 
-- Access to [OVHcloud Manager]( https://www.ovh.com/auth/?action=gotomanager){.external}
+- Access to [OVHcloud Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 - A job that has been already submitted to Data Processing
 
 ## Instructions
