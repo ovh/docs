@@ -50,7 +50,7 @@ Consultez tout d'abord ce [guide](../mutualise-consulter-les-statistiques-et-les
 
 Afin de faire apparaître d'éventuelles erreurs PHP, passez ensuite votre hébergement en mode `développement` grâce à ces [indications](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#etape-2-modifier-la-configuration-de-lhebergement-web).
 
-### Testez le fichier .htaccess
+### Tester le fichier .htaccess
 
 Une erreur 500 peut être liée à une anomalie dans un fichier `.htaccess`. Ce fichier est généralement situé au premier niveau dans le dossier contenant votre site sur votre FTP. 
 
@@ -87,7 +87,6 @@ Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous es
 > La restauration du code source de votre site concernera l'ensemble des sites de votre hébergement OVHcloud.
 > 
 > Lors d'une restauration, le contenu de votre espace FTP, ou celui de votre base de données, est remplacé par une sauvegarde. Vous ne pourrez donc pas récupérer ensuite les données présentes sur le serveur juste avant la restauration.
->
 
 Pour restaurer le code source de votre site, consultez notre guide « [Restaurer l’espace de stockage de son hébergement web](../restauration-ftp-filezilla-espace-client/) ». 
 
