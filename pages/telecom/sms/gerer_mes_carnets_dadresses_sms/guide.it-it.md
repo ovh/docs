@@ -97,7 +97,7 @@ Per modificare il nome di una rubrica, seleziona la tua lista di contatti nel me
 
 Per eliminare una rubrica, selezionala nel menu a tendina (1) e clicca su `Elimina rubrica indirizzi`{.action} (3).
 
-Per modificare o eliminare un contatto, clicca sui tre puntini`...`{.action} nella colonna “Azioni” (4) accanto al contatto corrispondente. A questo punto, puoi selezionare l’opzione che desideri (5).
+Per modificare o eliminare un contatto, clicca sui tre puntini`...`{.action} nella colonna “Azioni” (4) accanto al contatto corrispondente. A questo punto, puoi selezionare l’opzione che desideri.
 
 ![phonebook](images/smsphonebook7.png){.thumbnail}
 
