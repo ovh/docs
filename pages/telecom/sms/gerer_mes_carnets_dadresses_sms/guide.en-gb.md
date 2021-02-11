@@ -98,7 +98,7 @@ If you would like to edit the name of an address book, select it in the dropdown
 
 To delete an address book, click `Delete address book`{.action} after you have selected it in the dropdown menu (1).
 
-To edit or delete a contact, click `...`{.action} in the Actions column (4) across from the contact concerned. You will then see a menu offering you these choices (5).
+To edit or delete a contact, click `...`{.action} in the Actions column (4) across from the contact concerned. You will then see a menu offering you these choices.
 
 ![phonebook](images/smsphonebook7.png){.thumbnail}
 
