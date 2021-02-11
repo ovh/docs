@@ -1,7 +1,7 @@
 ---
 title: 'Éditer une zone DNS OVH'
 slug: editer-ma-zone-dns
-excerpt: 'Apprenez à éditer une zone DNS OVH via votre espace client'
+excerpt: 'Apprenez à éditer une zone DNS OVHcloud via votre espace client'
 section: 'DNS et zone DNS'
 order: 3
 ---
