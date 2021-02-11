@@ -23,7 +23,7 @@ De reddingsmodus is een tool op uw dedicated server die u op een tijdelijk bestu
 
 ## Instructie
 
-U kunt de reddingsmode activeren door in te loggen op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager/){.external}. Kies uw server in het `Dedicated`{.action}-gedeelte en vervolgens `Dedicated Servers`{.action}. Ga vervolgens naar `Serverstatus`{.action} > `Algemene informatie`{.action} > `...`{.action} en klik op de knop `Bewerken`{.action} om de opstartmodus te wijzigen.
+U kunt de reddingsmode activeren door in te loggen op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Kies uw server in het `Dedicated`{.action}-gedeelte en vervolgens `Dedicated Servers`{.action}. Ga vervolgens naar `Serverstatus`{.action} > `Algemene informatie`{.action} > `...`{.action} en klik op de knop `Bewerken`{.action} om de opstartmodus te wijzigen.
 
 ![Wijzig de opstartmodus](images/rescue-mode-01.png){.thumbnail}
 
@@ -111,7 +111,7 @@ rescue:~# mount /dev/hda1 /mnt/
 
 #### Toegang tot WinRescue
 
-Nadat uw server opnieuw is opgestart, ontvangt u een e-mail met de inloggegevens voor uw reddingsmodus. Om ze te gebruiken, moet u een VNC-console downloaden en installeren of de `IPMI`-module gebruiken in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager/){.external}.
+Nadat uw server opnieuw is opgestart, ontvangt u een e-mail met de inloggegevens voor uw reddingsmodus. Om ze te gebruiken, moet u een VNC-console downloaden en installeren of de `IPMI`-module gebruiken in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ![Winrescue Windows](images/rescue-mode-06.png){.thumbnail}
 

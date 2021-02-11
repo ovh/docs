@@ -23,7 +23,7 @@ Režim rescue umožňuje spuštění serveru s dočasným operačním systémem,
 
 ## Postup
 
-Režim rescue lze aktivovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager/){.external}. V sekci `Dedicated`{.action} přejděte do `základního administračního rozhraní`{.action} svého dedikovaného serveru. V tabulce `Základní informace`{.action} klikněte na ikonku tří teček u kolonky`Boot`{.action} a vyberte možnost `Upravit`{.action}.
+Režim rescue lze aktivovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. V sekci `Dedicated`{.action} přejděte do `základního administračního rozhraní`{.action} svého dedikovaného serveru. V tabulce `Základní informace`{.action} klikněte na ikonku tří teček u kolonky`Boot`{.action} a vyberte možnost `Upravit`{.action}.
 
 ![Upravit netboot](images/rescue-mode-01.png){.thumbnail}
 
@@ -111,7 +111,7 @@ rescue:~# mount /dev/hda1 /mnt/
 
 #### Přístup k WinRescue
 
-Po restartu serveru obdržíte e-mail s přístupovými údaji k režimu rescue. Pro připojení je zapotřebí stáhnout a nainstalovat VNC konzoli nebo použít `IPMI modul` v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager/){.external}.
+Po restartu serveru obdržíte e-mail s přístupovými údaji k režimu rescue. Pro připojení je zapotřebí stáhnout a nainstalovat VNC konzoli nebo použít `IPMI modul` v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ![Winrescue Windows](images/rescue-mode-06.png){.thumbnail}
 

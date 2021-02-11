@@ -23,7 +23,7 @@ Vous pouvez créer des volumes supplémentaires (ou des disques supplémentaires
 
 ## Création du volume
 
-- Connectez-vous au l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager/){.external}
+- Connectez-vous au l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Cliquez sur le bouton `Ajouter un volume`{.action}
 
 ![public-cloud](images/create_volume.png){.thumbnail}

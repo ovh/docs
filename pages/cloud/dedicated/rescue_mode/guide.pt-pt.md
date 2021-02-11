@@ -27,7 +27,7 @@ O modo rescue é uma ferramenta do seu servidor dedicado. Permite-lhe iniciar nu
 
 ## Instruções
 
-O modo rescue só pode ser ativado a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager/){.external}. Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. 
+O modo rescue só pode ser ativado a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. 
 
 Procure "Boot" na zona **Informações gerais** e clique em `...`{.action} e depois em `Alterar`{.action}.
 
@@ -110,7 +110,7 @@ rescue:~# mount /dev/hda1 /mnt/
 > Se o seu servidor dispõe de uma configuração RAID de software, deve montar o seu volume RAID (geralmente `/dev/mdX`).
 >
 
-Para sair do modo rescue, redefina o modo de arranque em `Fazer boot no disco rígido`{.action} na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager/) e reinicie o servidor em linha de comandos.
+Para sair do modo rescue, redefina o modo de arranque em `Fazer boot no disco rígido`{.action} na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e reinicie o servidor em linha de comandos.
 
 ### Windows <a name="windowsrescue"></a>
 
@@ -118,7 +118,7 @@ Para sair do modo rescue, redefina o modo de arranque em `Fazer boot no disco r�
 
 Após o reboot do seu servidor, receberá um e-mail com os dados de acesso em modo rescue. Este e-mail também está disponível na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no nome associado ao seu ID de cliente no canto superior direito da sua Área de Cliente e, a seguir, em `E-mails de serviço`{.action}.
 
-Para utilizar o modo rescue proposto pelo Windows, deve descarregar e instalar uma consola VNC ou utilizar o módulo `IPMI` na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager/){.external}.
+Para utilizar o modo rescue proposto pelo Windows, deve descarregar e instalar uma consola VNC ou utilizar o módulo `IPMI` na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ![Windows WinRescue](images/rescue-mode-06.png){.thumbnail}
 

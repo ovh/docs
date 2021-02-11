@@ -26,7 +26,7 @@ El modo *rescue* o modo de rescate permite arrancar un servidor dedicado sobre u
 
 ## Procedimiento
 
-Solo es posible activar el modo de rescate desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager/){.external} en la sección `Bare Metal Cloud`{.action}. En la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccione el servidor.
+Solo es posible activar el modo de rescate desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) en la sección `Bare Metal Cloud`{.action}. En la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccione el servidor.
 
 Busque "Boot" en la zona **Información general** y haga clic en `..`{.action} y luego en `Editar`{.action}.
 
@@ -109,7 +109,7 @@ rescue:~# mount /dev/hda1 /mnt/
 > Si el servidor dispone de una configuración RAID por software, debe montar el volumen RAID (en general `/dev/mdX`).
 >
 
-Para salir del modo de rescate, redefina el modo de arranque en `Arrancar en el disco duro`{.action} en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager/) y reinicie el servidor en línea de comandos.
+Para salir del modo de rescate, redefina el modo de arranque en `Arrancar en el disco duro`{.action} en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y reinicie el servidor en línea de comandos.
 
 ### Windows <a name="windowsrescue"></a>
 
@@ -117,7 +117,7 @@ Para salir del modo de rescate, redefina el modo de arranque en `Arrancar en el 
 
 Una vez reiniciado el servidor, recibirá por correo electrónico las claves de acceso en modo de rescate. Este mensaje de correo electrónico también está disponible en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la esquina superior derecha del área de cliente, haga clic en el nombre asociado a su identificador de cliente y seleccione `Emails de servicio`{.action}.
 
-Para utilizar el modo de rescate que ofrece Windows, es necesario descargar e instalar una consola VNC o utilizar el módulo `IPMI` en el [área de cliente de OVH](https://ca.ovh.com/auth/?action=gotomanager/){.external}.
+Para utilizar el modo de rescate que ofrece Windows, es necesario descargar e instalar una consola VNC o utilizar el módulo `IPMI` en el [área de cliente de OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ![WinRescue Windows](images/rescue-mode-06.png){.thumbnail}
 
