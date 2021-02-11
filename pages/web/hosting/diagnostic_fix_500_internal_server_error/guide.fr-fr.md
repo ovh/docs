@@ -68,7 +68,7 @@ Une erreur 500 peut être liée à un niveau de droits d'accès incorrect sur ce
 
 Pour accéder à ces fichiers, connectez-vous en FTP à votre hébergement en suivant notre [documentation](../connexion-espace-stockage-ftp-hebergement-web/).
 
-Le guide [Utilisation du logiciel FileZilla avec votre hébergement](../mutualise-guide-utilisation-filezilla/#droits-des-fichiers-dossiers) vous aidera ensuite à vérifier les éléments suivants : 
+Le guide « [Utilisation du logiciel FileZilla avec votre hébergement](../mutualise-guide-utilisation-filezilla/#droits-des-fichiers-dossiers) » vous aidera ensuite à vérifier les éléments suivants : 
 
 -	La **racine** de votre hébergement (Il s’agit du répertoire noté `/` ou `.` dans votre logiciel FTP) doit être obligatoirement en droits 705 (ce sont les permissions par défaut). Nous vous conseillons de ne pas modifier ce niveau de droits.
 -	Les dossiers doivent être en droits 705.
