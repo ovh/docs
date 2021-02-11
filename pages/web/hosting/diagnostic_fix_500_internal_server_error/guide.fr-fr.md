@@ -6,7 +6,7 @@ excerpt: Diagnostiquez les cas les plus courants d'erreurs 500
 section: Diagnostic
 ---
 
-**Dernière mise à jour le 10/02/2021**
+**Dernière mise à jour le 11/02/2021**
 
 
 ## Objectif
@@ -89,7 +89,7 @@ Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous es
 > Lors d'une restauration, le contenu de votre espace FTP, ou celui de votre base de données, est remplacé par une sauvegarde. Vous ne pourrez donc pas récupérer ensuite les données présentes sur le serveur juste avant la restauration.
 >
 
-Pour restaurer le code source de votre site, consultez notre guide « [Restaurer l’espace de stockage son hébergement web](../domain//restauration-ftp-filezilla-espace-client/) ». 
+Pour restaurer le code source de votre site, consultez notre guide « [Restaurer l’espace de stockage de son hébergement web](../restauration-ftp-filezilla-espace-client/) ». 
 
 Si votre site comporte une base de données, consultez notre guide « [Restaurer une sauvegarde de votre base de données](../mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client) » afin de la restaurer à un état antérieur.
 
