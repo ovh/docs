@@ -6,7 +6,7 @@ section: Getting started
 order: 6
 ---
 
-**Last updated 11th January 2021**
+**Last updated 12th February 2021**
 
 ## Objective
 
@@ -16,6 +16,11 @@ There are two aspects to migrating a PCC infrastructure:
 - The VMware infrastructure, which includes the entire VMware eco-system.
 
 **This guide explains how to cover all aspects of migrating a PCC service.**
+
+> [!primary]
+>
+> Should you choose to migrate an infrastructure to a new vDC instead, please follow [this dedicated guide](../service-migration-vdc).
+>
 
 ## Requirements
 
