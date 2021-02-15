@@ -15,7 +15,7 @@ Para realizar determinadas tareas en un servidor (como la instalación de paquet
 
 ## Requisitos
 
-* Tener un proyecto de [Public Cloud](https://www.ovh.com/world/es/public-cloud/instancias/){.external} activo.
+* Tener un proyecto de [Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} activo.
 * Poder conectarse al servidor por SSH.
 
 > [!primary]

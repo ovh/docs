@@ -16,7 +16,7 @@ Lorsque vous disposez d'une ligne ou d'un numéro chez un opérateur, il est obl
 ## Prérequis
 
 - Disposer d’un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/){.external} ou d'une [ligne VoIP OVH](https://www.ovhtelecom.fr/telephonie/){.external}.
-- Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
 
 ## En pratique
 
@@ -34,7 +34,7 @@ Assurez-vous ainsi d'indiquer et de maintenir à jour les coordonnées de l'ense
 
 ### Étape 2 : modifier ses coordonnées et demander leur parution
 
-Connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne ou le numéro OVH concerné.
+Connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne ou le numéro OVH concerné.
 
 Positionnez-vous ensuite sur l'onglet `Coordonnées`{.action}. L'image ci-dessous montre l'accès pour modifier les coordonnées d'un numéro OVH. Vous pourriez avoir davantage d'onglets si vous réalisez la manipulation pour une ligne OVH.
 
@@ -59,7 +59,7 @@ Une fois toutes les informations complétées, cliquez sur le bouton `Appliquer 
 > Cette étape s'applique uniquement si vous avez choisi de publier vos informations dans les annuaires en ligne. 
 >
 
-Vous avez la possibilité de suivre la parution de vos informations dans les annuaires en ligne depuis votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`. Pour cela, une fois connecté, positionnez-vous sur l'onglet `Coordonnées`{.action} de la ligne ou du numéro OVH concerné.
+Vous avez la possibilité de suivre la parution de vos informations dans les annuaires en ligne depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`. Pour cela, une fois connecté, positionnez-vous sur l'onglet `Coordonnées`{.action} de la ligne ou du numéro OVH concerné.
 
 Descendez en bas de la page jusqu'à la section `Parution dans les annuaires`. Vérifiez alors le statut qui s'affiche : 
 

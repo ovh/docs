@@ -20,7 +20,7 @@ In caso di errore, è possibile che le credenziali inserite non siano corrette. 
 ## Quanto spazio è ancora disponibile sul tuo sito?
 Se lo spazio disponibile sul tuo hosting condiviso non è sifficiente, si potrebbero verificare malfunzionamenti quando tenti di mettere online nuovi contenuti.
 
-- Per verificare lo spazio a tua disposizione, accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login/) e seleziona la tua piattaforma di hosting.
+- Per verificare lo spazio a tua disposizione, accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona la tua piattaforma di hosting.
 
 
 

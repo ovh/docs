@@ -69,7 +69,7 @@ Tipo de conta: Selecione IMAP (pode selecionar POP e nesse caso deve introduzir 
 
 Nome de utilizador: o seu endereço de e-mail na íntegra.
 
-Password : a password definida no seu[Manager](https://www.ovh.com/manager/web/login/)para a conta de e-mail partilhado OVH.
+Password : a password definida no seu[Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)para a conta de e-mail partilhado OVH.
 
 Servidor de e-mail de envio (SMTP): SSL0.OVH.NET
 

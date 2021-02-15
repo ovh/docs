@@ -16,7 +16,7 @@ Votre ligne SIP OVH vous permet de recevoir et d’émettre des appels. Afin d'�
 ## Prérequis
 
 - Disposer d'une [ligne SIP OVH](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
-- Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
 
 ## En pratique
 
@@ -76,7 +76,7 @@ Pour cela, vous devrez gérer le filtrage d'appels depuis votre espace client. R
 
 Maintenant que vous avez appris à sécuriser votre ligne SIP OVH ou que vous venez de le faire, il est intéressant de savoir où suivre en temps réel la consommation inhérente à votre ligne.
 
-Pour cela, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée.
+Pour cela, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée.
 
 Positionnez-vous sur l'onglet `Consommation`{.action} et cliquez sur `Appels émis`{.action}.
 

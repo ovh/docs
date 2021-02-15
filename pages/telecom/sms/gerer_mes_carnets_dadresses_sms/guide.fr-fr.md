@@ -6,11 +6,11 @@ legacy_guide_number: g2118
 section: 'Gérer mon offre'
 ---
 
-**Dernière mise à jour le 19/05/2020**
+**Dernière mise à jour le 11/02/2021**
 
 ## Objectif
 
-Tous les comptes SMS OVHcloud peuvent utiliser un ou plusieurs carnets d'adresses. Ce guide décrit comment les créer dans votre espace client.
+Tous les comptes SMS OVHcloud peuvent utiliser un ou plusieurs carnets d'adresses. Ce guide décrit comment les créer dans votre espace client OVHcloud.
 
 ## Prérequis
 
@@ -22,13 +22,11 @@ Tous les comptes SMS OVHcloud peuvent utiliser un ou plusieurs carnets d'adresse
 
 ### Étape 1 : créer un carnet d'adresses dans votre espace client
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rubrique Telecom. Sélectionnez ensuite SMS dans les menus de gauche.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rubrique `Telecom`. Sélectionnez ensuite `SMS`{.action} dans les menus de gauche.
 
-Cliquez ensuite sur le compte SMS souhaité.
+Cliquez sur le compte SMS souhaité et choisissez l'onglet `Contacts`{.action} puis `Carnet d'adresses`{.action}.
 
-![phonebook](images/smsphonebook1.png){.thumbnail}
-
-Choisissez l'onglet `Carnet d'adresses`{.action}.
+![phonebook](images/smsphonebook01.png){.thumbnail}
 
 Cliquez sur `Ajouter un carnet d'adresses`{.action} et nommez alors votre nouveau carnet.
 
@@ -57,6 +55,8 @@ Remplissez les champs souhaités et validez pour enregistrer vos modifications. 
 Si vous souhaitez utiliser ou créer un document au format tableur, il vous faudra le présenter comme ci-dessous et l'exporter au format «.csv ».
 
 ![phonebook](images/smsphonebook-spreadsheet1.png){.thumbnail}
+
+Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/telecom/sms/gerer_mes_carnets_dadresses_sms/images/phonebook.csv" download>ce lien</a> un modèle de carnet d'adresses au format «.csv » à compléter par vos soins.
 
 La grande majorité des tableurs ne prendra pas en compte le format international attendu pour les numéros de téléphone / fax (+33xxxxxxxxx). Il vous faudra donc modifier le format des cellules comportant ces numéros (workPhone, workMobile, ...). Pour ce faire, sélectionnez les colonnes concernées et appliquez un format “Texte” sur celles-ci.
 
@@ -98,7 +98,7 @@ Si vous souhaitez modifier le nom d'un carnet d'adresses, sélectionnez votre ca
 
 Pour supprimer un carnet, cliquez sur `Supprimer le carnet d'adresses`{.action} après l'avoir préalablement sélectionné dans le menu déroulant (1).
 
-Pour éditer ou supprimer un contact, cliquez, dans la colonne « Actions », sur `...`{.action} (4) en face du contact choisi. Vous aurez ainsi accès au menu vous proposant ces choix (5).
+Pour éditer ou supprimer un contact, cliquez, dans la colonne « Actions », sur `...`{.action} (4) en face du contact choisi. Vous aurez ainsi accès au menu vous proposant ces choix.
 
 ![phonebook](images/smsphonebook7.png){.thumbnail}
 

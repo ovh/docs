@@ -97,7 +97,7 @@ Jeśli chcesz zmienić nazwę książki adresowej, z rozwijanego menu (1) wybier
 
 Aby usunąć książkę, wybierz ją z rozwijanego menu (1) i kliknij polecenie `Usuń książkę adresową`{.action}.
 
-Aby zmienić lub usunąć kontakt, w kolumnie „Działania” kliknij `...`{.action} (4) obok wybranego kontaktu. W ten sposób uzyskasz dostęp do menu umożliwiającego edycję lub usunięcie kontaktu (5).
+Aby zmienić lub usunąć kontakt, w kolumnie „Działania” kliknij `...`{.action} (4) obok wybranego kontaktu. W ten sposób uzyskasz dostęp do menu umożliwiającego edycję lub usunięcie kontaktu.
 
 ![phonebook](images/smsphonebook7.png){.thumbnail}
 

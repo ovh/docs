@@ -44,7 +44,7 @@ Wypełnij poniższe pola, podając:
 
 - Twoje imię i nazwisko: *Tutaj podaj nazwę użytkownika, która ma być wyświetlana*
 - Adres e-mail: *Twój kompletny adres e-mail.*
-- Hasło: *Hasło ustawione w [panelu klienta](https://www.ovh.com/manager/web/login.html){.external} Twojego konta Exchange.*
+- Hasło: *Hasło ustawione w [panelu klienta]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)){.external} Twojego konta Exchange.*
 - Zapamiętaj hasło: *Musisz zaznaczyć tę opcję.*
 
 Kliknij przycisk `Konfiguracja ręczna`{.action}, aby przejść do dalszych etapów instalacji.

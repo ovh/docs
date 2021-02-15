@@ -11,7 +11,7 @@ Si vous créez des sites à vocation internationale, vous vous intéressez forte
 
 ## Utilisation
 La mise en place de la géolocalisation se fait à partir de votre [Espace
-Client](https://www.ovh.com/manager/web/login/){.external}.
+Client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 Une fois connecté, il faut que vous cliquiez sur le nom de votre site principal se trouvant à gauche dans la partie Hébergement
 

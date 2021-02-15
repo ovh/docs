@@ -22,7 +22,7 @@ Puoi scaricare dal tuo Spazio Cliente OVH una di queste versioni di Outlook:
 
 
 ## Esempio per piattaforma Hosted Exchange
-Vai al tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login/), clicca sulla tua piattaforma Exchange e poi sulla scheda "Account e-mail".
+Vai al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sulla tua piattaforma Exchange e poi sulla scheda "Account e-mail".
 Vicino all'indirizzo Exchange c'è un'icona a forma di carello nella colonna "Outlook".
 
 Cliccandola apparirà questa finestra:
@@ -49,7 +49,7 @@ Cliccandola apparirà questa finestra:
 
 
 ## Esempio per piattaforma Private Exchange
-Vai al tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login/), clicca sulla tua piattaforma Exchange e poi sulla scheda "Account e-mail".
+Vai al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sulla tua piattaforma Exchange e poi sulla scheda "Account e-mail".
 Clicca sull'icona  accanto all'indirizzo Exchange.
 
 ![](images/img_2562.jpg){.thumbnail}
