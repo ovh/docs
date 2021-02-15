@@ -38,7 +38,7 @@ Vous pouvez par exemple proposer à vos appelants, via la seule composition de v
 
 ## En pratique
 
-### Étape 1 : Appliquer la configuration Contact Center Solution
+### Étape 1 : Appliquer la configuration Contact Center Solution <a name="appliquer-CCS"></a>
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie « Télécom ». Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez le numéro concerné. 
 Dans l'onglet `Configuration`{.action}, cliquez sur `Passer en mode expert`{.action} pour sélectionner **Contact Center Solution**. 
@@ -60,11 +60,11 @@ La configuration se présente sous la forme d'une arborescence étape par étape
 
 ![contact-center-solution](images/ccs-step1-2.png){.thumbnail}
 
-### Étape 2 : gérer les sons / gérer les TTS
+### Étape 2 : gérer les sons / gérer les TTS <a name="gerer-sons-tts"></a>
 
 L'accueil téléphonique de vos appelants peut être amélioré grâce à l'ajout d'un ou plusieurs fichiers-sons, préalablement créés par vos soins ou définis via des Text-To-Speech (TTS) depuis l'espace client.
 
-#### 2.1 Gérer les sons
+#### 2.1 Gérer les sons <a name="gerer-sons"></a>
 
 Cliquez sur la bulle `...`{.action} du menu principal puis sur `Gérer les sons`{.action}.
 
@@ -72,7 +72,7 @@ Cliquez sur la bulle `...`{.action} du menu principal puis sur `Gérer les sons`
 
 Cliquez sur `Ajouter un son`{.action} pour téléverser un son depuis votre poste. Vous pouvez ainsi ajouter un son d'accueil d'un menu interactif ou encore une musique d'attente pour faire patienter vos appelants pendant que vos lignes sont occupées.
 
-#### 2.2 Gérer les TTS
+#### 2.2 Gérer les TTS <a name="gerer-tts"></a>
 
 Cliquez sur la bulle `...`{.action} du menu principal puis sur `Gérer les TTS`{.action}.
 
@@ -80,13 +80,13 @@ Cliquez sur la bulle `...`{.action} du menu principal puis sur `Gérer les TTS`{
 
 Cliquez alors sur `+ Ajouter un TTS`{.action}, choisissez une voix parmi celles proposées puis tapez le texte qui sera récité. Cliquez enfin sur `Créer`{.action}.
 
-### Étape 3 : créer les files
+### Étape 3 : créer les files <a name="creer-files"></a>
 
 Les files d'appels regroupent plusieurs agents (des lignes téléphoniques internes ou externes) qui vont sonner selon une stratégie que vous définissez dans l'espace client.
 
 Leur fonctionnement est identique à la configuration [File d'appels](../les-files-d-appels/) applicable directement sur un numéro alias.
 
-#### 3.1 Ajouter les agents
+#### 3.1 Ajouter les agents <a name="ajouter-agents"></a>
 
 Afin de créer vos files d'appels, vous devez d'abord ajouter toutes les lignes qui pourront être contactées lorsque votre numéro alias sera appelé.
 
@@ -120,7 +120,7 @@ Les attributs que vous pouvez modifier sont les suivants :
 |Appels simultanés|Permet de définir le nombre d'appels que la ligne pourra recevoir.|
 |État|Permet de rendre disponible ou déconnecter un agent au sein des files.|
 
-#### 3.2 Créer les files d'appels
+#### 3.2 Créer les files d'appels <a name="creer-files"></a>
 
 Vos agents sélectionnés, vous devez à présent les organiser dans une ou plusieurs files d'appels.
 
@@ -156,11 +156,11 @@ Vous pouvez également modifier (2) ici les attributs d'un agent ou supprimer ce
 
 Vous pouvez créer autant de files que nécessaire pour répondre à votre besoin.
 
-### Étape 4 : créer les menus interactifs (facultatif)
+### Étape 4 : créer les menus interactifs (facultatif) <a name="creer-svi"></a>
 
 À la différence de la configuration d'un numéro alias en [Serveur Vocal Interactif (SVI)](../svi-serveur-vocal-interactif/), le CCS permet aux appelants de faire sonner des files entières (et non plus une simple ligne) en composant les touches de leurs téléphones.
 
-#### 4.1 Créer le premier menu
+#### 4.1 Créer le premier menu <a name="creer-menu-svi"></a>
 
 Cliquez sur la bulle `...`{.action} du menu principal puis sur `Gérer les menus interactifs`{.action}.
 
@@ -194,7 +194,7 @@ Une fois les informations complétées, cliquez sur `Créer`{.action}. Répétez
 
 Selon vos besoins, répétez ces manipulations si vous voulez créer plusieurs menus interactifs. Vous pourrez également les imbriquer en tant que sous-menus d'un menu interactif principal, si vous souhaitez par exemple proposer de nouveaux choix après le premier menu interactif.
 
-### Étape 5 : configurer votre CCS
+### Étape 5 : configurer votre CCS <a name="configurer-CCS"></a>
 
 Une fois vos files et menus interactifs créés, il faut maintenant les articuler dans le CCS.
 Chaque appel entrant va suivre une ou plusieurs étapes successives que vous allez définir. Au sein de chaque étape, une ou plusieurs actions devront également être créés. 
@@ -211,7 +211,7 @@ Pour ajouter une étape, cliquez sur le bouton **`+`{.action}** (1) le plus en b
 
 ![contact-center-solution](images/ccs-step5-1.png){.thumbnail}
 
-#### Ajouter une condition à une étape
+#### Ajouter une condition à une étape <a name="ajouter-condition"></a>
 
 Lorsqu'une ou plusieurs conditions sont ajoutées à une étape, celles-ci doivent être remplies pour que l'étape se déclenche. Si les conditions ne sont pas remplies, le cheminement prévu dans votre CCS passera à l'étape suivante.
 
@@ -230,7 +230,7 @@ Un appel en dehors de ces plages horaires sera réceptionné sur le répondeur d
 
 ![contact-center-solution](images/ccs-step5-2-3.png){.thumbnail}
 
-##### **Condition de « Jours exceptionnels »**
+##### **Condition de « Jours exceptionnels »** <a name="jours-exceptionnels"></a>
 
 Après avoir cliqué sur `Jours exceptionnels`{.action} depuis la fenêtre de configuration avancée, choisissez le créneau que vous souhaitez appliquer. Vous revenez ensuite automatiquement dans la fenêtre de configuration avancée. Cliquez alors sur `Modifier`{.action}.
 
@@ -254,7 +254,7 @@ Une fois les informations renseignées, cliquez sur `Créer l'événement`{.acti
 
 ![CCS configuration](images/ccs-step5-1-5.png){.thumbnail}
 
-##### **Condition de « Plages horaires génériques »**
+##### **Condition de « Plages horaires génériques »** <a name="plages-horaires"></a>
 
 Après avoir cliqué sur `Plages horaires génériques`{.action} depuis la fenêtre de configuration avancée, deux possibilités existent :
 
@@ -265,7 +265,7 @@ Configurez maintenant les plages horaires qui correspondent à vos besoins. Pour
 
 ![contact-center-solution](images/ccs-step5-2.gif){.thumbnail}
 
-##### **Condition de « Filtrages d'appels »**
+##### **Condition de « Filtrages d'appels »** <a name="filtrages-appels"></a>
 
 Après avoir cliqué sur `Filtrages d'appels`{.action} depuis la fenêtre de configuration avancée, choisissez si vous souhaitez filtrer vos communications selon une « liste noire » ou une « liste blanche ». 
 
@@ -281,7 +281,7 @@ Pour terminer la manipulation, utilisez le bouton `<`{.action} situé dans la pa
 ![CCS configuration](images/ccs-step5-2-6.png){.thumbnail}
 
 
-### Consulter le tableau de bord
+### Consulter le tableau de bord <a name="tableau-de-bord"></a>
 
 Le tableau de bord vous permet d'obtenir des statistiques détaillées sur les appels reçus par votre numéro configuré en CCS et  par les différentes files le composant.
 Vous pourrez également obtenir des informations en temps réel sur les appels en cours sur votre numéros ainsi que sur la disponibilité de chaque ligne.
@@ -290,7 +290,7 @@ Pour consulter le tableau de bord, cliquez sur le bouton `...`{.action} le plus 
 
 ![CCS configuration](images/ccs-stats.png){.thumbnail}
 
-### Consulter les enregistrements
+### Consulter les enregistrements <a name="enregistrements"></a>
 
 Le CCS vous permet d'enregistrer les appels entrants sur votre numéro. 
 

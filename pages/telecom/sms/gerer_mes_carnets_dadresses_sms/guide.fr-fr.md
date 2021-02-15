@@ -56,7 +56,7 @@ Si vous souhaitez utiliser ou créer un document au format tableur, il vous faud
 
 ![phonebook](images/smsphonebook-spreadsheet1.png){.thumbnail}
 
-Vous trouverez sur [ce lien](https://raw.githubusercontent.com/ovh/docs/develop/pages/telecom/sms/gerer_mes_carnets_dadresses_sms/images/phonebook.csv) un modèle de carnet d'adresses au format «.csv » à compléter par vos soins.
+Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/develop/pages/telecom/sms/gerer_mes_carnets_dadresses_sms/images/phonebook.csv" download>ce lien</a> un modèle de carnet d'adresses au format «.csv » à compléter par vos soins.
 
 La grande majorité des tableurs ne prendra pas en compte le format international attendu pour les numéros de téléphone / fax (+33xxxxxxxxx). Il vous faudra donc modifier le format des cellules comportant ces numéros (workPhone, workMobile, ...). Pour ce faire, sélectionnez les colonnes concernées et appliquez un format “Texte” sur celles-ci.
 
