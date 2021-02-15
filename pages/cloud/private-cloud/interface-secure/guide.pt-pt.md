@@ -16,7 +16,7 @@ A OVHcloud disponibiliza-lhe uma interface segura para validar as operações se
 
 ## Requisitos
 
-- Dispor de uma infraestrutura com a opção **advanced security** (incluída nas ofertas [PCI-DSS](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) e [HDS](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/safety-compliance/hds/)). Este direito permite a validação.
+- Dispor de uma infraestrutura com a opção **advanced security** (incluída nas ofertas [PCI-DSS](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/safety-compliance/sddc/) e [HDS](https://www.ovhcloud.com/pt/enterprise/certification-conformity/hds/)). Este direito permite a validação.
 - Ter acesso à interface segura do PCC, exemplo: https://pcc-xxx-xxx-xxx-xxx.ovh.com/secure/ (atenção para não esquecer a “/” final do endereço).
 
 ## Instruções

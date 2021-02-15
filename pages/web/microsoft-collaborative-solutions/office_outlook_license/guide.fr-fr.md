@@ -29,7 +29,7 @@ Ce logiciel se présente sous diverses versions, téléchargeables depuis l'espa
 ## Comment souscrire a l'option de Licence Outlook ?
 
 ### Cas d'une plate-forme de type Hosted Exchange
-Rendez-vous dans votre [espace client](https://www.ovh.com/manager/web/login/){.external}, cliquez sur votre plate-forme Exchange, puis onglet "Comptes E-mail". Vous verrez alors en face de l'adresse Exchange pour laquelle vous souhaitez bénéficier du logiciel Outlook un icône en forme de caddie dans la colonne "Outlook".
+Rendez-vous dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur votre plate-forme Exchange, puis onglet "Comptes E-mail". Vous verrez alors en face de l'adresse Exchange pour laquelle vous souhaitez bénéficier du logiciel Outlook un icône en forme de caddie dans la colonne "Outlook".
 
 Cliquez sur cet icône, la fenêtre suivante apparaîtra :
 
@@ -53,7 +53,7 @@ Cliquez sur cet icône, la fenêtre suivante apparaîtra :
 
 
 ### Cas d'une plate-forme de type Private Exchange
-Rendez-vous dans votre [espace client](https://www.ovh.com/manager/web/login/){.external}, cliquez sur votre plate-forme Exchange, puis onglet "Comptes E-mail".
+Rendez-vous dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur votre plate-forme Exchange, puis onglet "Comptes E-mail".
 
 - Cliquez sur l'icône  en face de l'adresse Exchange concernée.
 

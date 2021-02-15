@@ -57,7 +57,7 @@ Nome do utilizador: o seu endereço de e-mail na íntegra.
 
 Endereço eletrónico: o seu endereço de e-mail na íntegra.
 
-Password: a password definida no seu[Manager](https://www.ovh.com/manager/web/login/)para a conta de e-mail partilhado OVH.
+Password: a password definida no seu[Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)para a conta de e-mail partilhado OVH.
 
 Endereço do servidor: SSL0.OVH.NET
 

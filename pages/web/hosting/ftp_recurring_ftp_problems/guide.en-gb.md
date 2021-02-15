@@ -21,7 +21,7 @@ If it still doesn't work, your credentials are probably incorrect.
 ## How much space do I have left on my wesite?
 If you are running out of space on your website this could cause problems when you want to upload new files. 
 
-- To check this, log in to your [customer account](https://www.ovh.com/manager/web/login/).
+- To check this, log in to your [customer account](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 - Select your hosting platform
 
 

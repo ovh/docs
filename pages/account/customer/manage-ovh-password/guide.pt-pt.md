@@ -116,7 +116,7 @@ Se a sua palavra-passe estiver comprometida, recomendamos vivamente que a [alter
 
 ## Quer saber mais?
 
-[Normas CNCS para criar e gerir palavras-passe](https://www.cncs.gov.pt/content/files/bp_p.pdf){.external}
+[Normas CNCS para criar e gerir palavras-passe](https://www.cncs.gov.pt/content/files/bp_pp_nov19.pdf){.external}
 
 [O gestor de palavras-passe Keepass](https://keepass.info/){.external}
 

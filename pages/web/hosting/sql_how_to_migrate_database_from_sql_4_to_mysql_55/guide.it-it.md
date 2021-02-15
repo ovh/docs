@@ -17,7 +17,7 @@ Se segui la nostra guida, la tua migrazione dovrebbe richiedere tra i 10 e 40 mi
 
 
 ## Recupera le credenziali del tuo database
-Accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login/), seleziona il tuo hosting nella sezione "Hosting" a sinistra e clicca su "Database".
+Accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona il tuo hosting nella sezione "Hosting" a sinistra e clicca su "Database".
 
 Visualizzi la lista dei database esistenti.
 Individua il tuo database in versione 4. Il Nome utente e l'Indirizzo del server (posiziona il mouse sopra per maggiori dettagli) ti serviranno nello step successivo.
@@ -32,7 +32,7 @@ Hai due possibilità:
 
 - utilizza [questo link](https://phpmyadmin.ovh.net/old/)
 o
-- accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login/), clicca sulla sezione "Hosting" e seleziona la scheda "Database", poi clicca sull'icona a forma di ingranaggio in corrispondenza del tuo database. Seleziona l'opzione Accedi a phpMyAdmin e clicca su [https://phpmyadmin.ovh.net/old/](https://phpmyadmin.ovh.net/old/) (in fondo alla pagina).
+- accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sulla sezione "Hosting" e seleziona la scheda "Database", poi clicca sull'icona a forma di ingranaggio in corrispondenza del tuo database. Seleziona l'opzione Accedi a phpMyAdmin e clicca su [https://phpmyadmin.ovh.net/old/](https://phpmyadmin.ovh.net/old/) (in fondo alla pagina).
 
 
 
@@ -81,7 +81,7 @@ Si apre una finestra, clicca su "Sì" per confermare l'operazione.
 
 ## Come eliminare il tuo database SQL 4?
 Non è necessario utilizzare PhpMyAdmin.
-Accedi di nuovo al tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login/), clicca sul tuo hosting e poi su "Database".
+Accedi di nuovo al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul tuo hosting e poi su "Database".
 
 Clicca sull'icona a forma di ingranaggio in corrispondenza del tuo database SQL 4 e seleziona "Elimina il database".
 
@@ -94,7 +94,7 @@ L'eliminazione definitiva del tuo databse richiede 10-15 minuti.
 
 ## Come creare il tuo database MySQL 5.5?
 Ora che hai eliminato il tuo database SQL 4, puoi crearne uno in versione MySQL 5.5.
-Per farlo, accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login/), sezione Hosting, scheda Database.
+Per farlo, accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione Hosting, scheda Database.
 
 Clicca su Crea un database.
 
@@ -124,7 +124,7 @@ Se ti sei rivolto a uno sviluppatore per costruire il tuo sito, ti consigliamo d
 
 Una volta individuato il file sul tuo spazio FTP, copialo in locale sul tuo pc e modificalo con un editor di testo, ad esempio WordPad o Blocco note.
 
-Modifica le righe di tipo DB_NAME, DBPASSWORD, DB_USER e DB_HOST (il nome delle variabili può cambiare in base al tipo di sito) e il loro valore, sostituiendole con quelli che trovi nella scheda Database del tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login/).
+Modifica le righe di tipo DB_NAME, DBPASSWORD, DB_USER e DB_HOST (il nome delle variabili può cambiare in base al tipo di sito) e il loro valore, sostituiendole con quelli che trovi nella scheda Database del tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 
 ## Errore "Connessione sicura non riuscita"

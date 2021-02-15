@@ -20,7 +20,7 @@ Ce type de configuration offre plusieurs possibilités, comme définir des péri
 
 - Disposer d'un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/){.external}.
 - [Avoir configué le numéro](../quelle-configuration-est-adaptee-a-mes-besoins/) en tant que « serveur vocal interactif ».
-- Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
 
 ## En pratique
 
