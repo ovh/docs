@@ -4,6 +4,7 @@ title: 'Svetainių talpinimas: D.U.K. - Migravimas į naujausią PHP versiją'
 excerpt: 'Svetainių talpinimas: D.U.K. - Migravimas į naujausią PHP versiją'
 slug: svetainiu_talpinimas_duk_-_migravimas_i_naujausia_php_versija
 legacy_guide_number: g1758
+hidden: true
 ---
 
 
@@ -94,42 +95,3 @@ Išsaugokite failą pavadinimu .ovhconfig ir įkelkite jį į šakninį svetain�
 
 
 Daugiau informacijos apie tai, kokius parametrus keisti, rasite [šiame gide](https://www.ovh.lt/g1207.php_nustatymai).
-
-
-## Naudojimo atvejis
-Kaip sužinoti, kurią PHP versiją mano svetainė naudoja?
-
-Tiesiog atsisiųskite šią bylą: [info.php](https://www.ovh.com/fr/documents/info.php) (spragtelėkite dešiniuoju pelės mygtuku ir tuomet Save As).
-
-Jeigu norite sukurti savo bylą, sukurkite tuščią bylą, įdėkite į ją  <?php phpinfo(); ?> ir išsaugokite ją .php formatu pavadindami 'info.php'.
-
-Paskelbkite bylą per FTP įkėlę į šakninį katalogą ar kitos svetainės aplanką (jeigu tokios pridėtos kaip subdomenai). Pavyzdžiui: /www/mywordpress/
-
-Tuomet naršyklėje atverkite šią bylą info.php. Pavyzdžiui: www.svetainė.tld/mywordpress/info.php
-
-![](images/img_2601.jpg){.thumbnail}
-OVH taip pat informavo klientus el. paštu apie naudojamas PHP versijas.
-Naudoju subdomenus ar multidomenus, ar galiu naudoti skirtingas PHP versijas?
-
-Taip, OVH leidžia naudoti skirtingas PHP versijas kiekvienam jūsų subdomenui ar multidomenui (multidomenas laikomas subdomenu).
-
-Jums tereikia sukurti .ovhconfig failą svetainės šakniniame kataloge. Failas .ovhconfig įkraunamas tokiu būdu:
-
-
-- Failas atveriamas užklausiamo domeno šakniniame kataloge. Pavyzdžiui, www.domenas.tld yra nukreipiamas į katalogą "/www", o beta.example.com į katalogą "/beta", failas /www/.ovhconfig yra naudojamas užklausai į http://www.domenas.tld/index.php, o failas "/beta/.ovhconfig" naudojamas užklausai į http://beta.domenas.tld/index.php.
-- Jeigu nerandamas atskiras subdomeno failas .ovhconfig, tuomet naudojamas failas "/.ovhconfig".
-- Jeigu tokios failo iš viso nėra, tuomet naudojama standartinė paslaugos konfigūracija (PHP 5.6 su FPM)
-
-
-Aš turiu sukonfigūravęs .htaccess failą su PHP versija. Kas bus su šiuo failu?
-
-Pagal nutylėjimą, svetainės naudos 5.6 PHP versiją. Jeigu norite naudoti naujesnę versiją (pavyzdžiui, 7.0), įjunkite ją naudodami .ovhconfig failą (įkeliamas per FTP).
-
-Kiti .htaccess failo nustatymai, pavyzdžiui, URL rewriting, redirection, ir pan., veiks toliau.
-Ar galiu naudoti 7 PHP versiją?
-
-7 PHP versiją galima naudoti mūsų talpinimo planuose.
-Man nepavyksta migruoti. Ką man daryti?
-
-Mūsų pagalbos tarnyba negali migruoti jūsų svetainės už jus, tačiau galime padėti nustatyti kitą PHP versiją (naudojant .ovhconfig bylą). Tokiais atvejais pagalbos tarnyba nėra atsakinga už galimus sutrikimus.
-
