@@ -75,33 +75,3 @@ Speichern Sie die Datei unter dem Namen .ovhconfig ab. Sie können diese Datei b
 
 Mehr Informationen zu den Einstellmöglichkeiten in der .ovhconfig Datei finden Sie [hier](http://www.ovh.de/g1207.konfiguration_von_php_fur_ein_ovh_webhosting_2014).
 
-
-## Häufige Fragen
-Wie kann ich die von meiner Seite verwendete PHP Version überprüfen?
-Sie können einfach die hier verlinkte Datei herunterladen (Rechtsklick und dann "Speichern unter..."): [info.php](https://www.ovh.com/fr/documents/info.php)
-Wenn Sie diese Datei lieber selbst erstellen möchten, tragen Sie folgenden Code in eine Textdatei ein: <?php phpinfo(); ?>
-Speichern Sie die Datei anschließend unter dem Namen info.php ab.
-
-Übertragen Sie dann die Datei per FTP in das Wurzelverzeichnis Ihrer Webseite (oder Webseiten, falls mehrere Seiten mit Subdomains verwenden), zum Beispiel /www/meinwordpress/
-Rufen Sie danach diese info.php Datei mit Ihrem Browser auf, Beispiellink: www.ihre-seite.tld/meinwordpress/info.php
-
-![](images/img_2601.jpg){.thumbnail}
-OVH hat den betroffenen Benutzern im März und April 2015 auch eine E-Mail mit einer Auflistung der verwendeten PHP Versionen zugesandt.
-Ich verfüge über Subdomains oder ein Multi-Domain Angebot, kann ich verschiedene PHP Versionen parallel aktivieren?
-Ja, sie können eine andere PHP Version für jede Ihrer Subdomains verwenden (Multi-Domains werden dabei wie Subdomains behandelt).
-Erstellen Sie dazu einfach eine eigene .ovhconfig Datei im Wurzelverzeichnis der gewünschten Subdomain. Die .ovhconfig Datei wird wie folgt geladen:
-
-
-- Die Datei wird vom Wurzelverzeichnis der Domain aus geladen. Wenn zum Beispiel "www.beispiel.tld" auf den Ordner "/www" verweist und "beta.beispiel.tld" auf den Ordner "/beta", wird die Datei "/www/.ovhconfig" bei der Anfrage von http://www.beispiel.tld/index.php berücksichtigt, und die Datei "/beta/.ovhconfig" wird bei einer Anfrage an http://beta.beispiel.tld/index.php geladen.
-- Wenn keine eigene .ovhconfig Datei für die in Schritt 1 aufgerufene Subdomain gefunden wird, wird die Datei "/.ovhconfig" geladen.
-- Wenn keine dieser Dateien existiert, wird die Standardkonfiguration des Accounts angewandt (PHP 5.4 mit FPM).
-
-
-Ich habe eine .htaccess Datei konfiguriert, um eine bestimmte Version von PHP zu erzwingen, was geschieht damit?
-Diese Einstellung wird ab dem 24.09.2015 nicht mehr berücksichtigt. Ihre Webseiten werden dann standardmäßig auf PHP 5.4 umgestellt. Wenn Sie eine verfügbare neuere Version verwenden möchten (zum Beispiel PHP 5.6), erfolgt diese Einstellung dann über die auf Ihrem FTP Speicherplatz vorhandene .ovhconfig Datei.
-Wenn Ihre .htaccess Datei noch weitere Einstellungen enthält (URL Rewriting, Weiterleitungen...), so bleiben diese weiterhin aktiv.
-Ich habe Schwierigkeiten mit der Migration, wie muss ich vorgehen?
-Unser Support kann die Migration Ihrer Seite nicht für Sie durchführen, er kann Sie jedoch bei der Änderung der PHP Version mit Hilfe der .ovhconfig Datei unterstützen. Unser Support übernimmt dabei keine Haftung für eventuell auftretende Fehlfunktionen.
-
-Sie benötigen Hilfe? Finden Sie einen Dienstleister aus unserem Partnernetzwerk, der Sie bei der Migration Ihrer Seite begleitet: [http://www.ovh.biz/de/](http://www.ovh.biz/de/)
-

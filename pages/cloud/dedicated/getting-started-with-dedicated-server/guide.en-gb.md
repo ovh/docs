@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 13th January 2021**
+**Last updated 15th January 2021**
 
 ## Objective
 
@@ -31,19 +31,30 @@ A dedicated server is a physical server located in one of our data centres. Unli
 
 ## Instructions
 
-When your dedicated server is first set up, you can select which operating system will be installed.
+When your dedicated server is first set up during the order process, you can select which operating system will be installed.
 
 ### Installing or reinstalling your dedicated server
 
-You can easily reinstall your server and choose a different OS template in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). From the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
+You can easily reinstall your server and choose a different OS image in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). From the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
 
 ![Reinstall button](images/reinstalling-your-server-00.png){.thumbnail}
 
-On the next screen, select either `Install from an OVH template`{.action} (to use one of our installation templates) or `Install one of your templates`{.action} (to use your own), then click `Next`{.action}.
+On the next screen, select either `Install from an OVHcloud template`{.action} or `Install one of your templates`{.action} in order to use a template for the installation. 
+
+To be able to install a customised image on the server, choose the third option `Install from custom image`{.action}. Please refer to the [BYOI guide](../bringyourownimage/) to learn about the settings of this functionality.
+
+> [!primary]
+>
+> Some proprietary operating systems or platforms such as Plesk or Windows require licences which generate additional fees. You can buy licences [via OVHcloud](https://www.ovhcloud.com/en-gb/bare-metal/os/) or from an external reseller. You will then need to apply your licence, in the operating system itself or by using your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+>
+You can manage all your licences in the `Bare Metal Cloud`{.action} section under `Licences`{.action}. In this section, you can also order licences or add existing ones via the `Actions`{.action} button.
+>
+
+Click `Next`{.action} to continue.
 
 ![Template selection](images/reinstalling-your-server-02.png){.thumbnail}
 
-Select the operating system you want to install and click `Next`{.action}.
+After choosing `Install from an OVHcloud template`{.action} you can select the operating system from the drop-down menus.
 
 ![Operating selection](images/reinstalling-your-server-03.png){.thumbnail}
 
@@ -53,9 +64,17 @@ If you need to modify the partioning scheme of your operating system, check the 
 
 After you have finished your adjustments, click `Next`{.action} to arrive at the summary page.
 
-### Adding an SSH key (optional)
+#### Installing Real Time Monitoring (optional) <a name="installrtm"></a>
 
-If you are installing a Linux-based operating system, you can add your SSH key in the last step of the installation process.
+If you have selected a compatible GNU/Linux-based operating system, the option to activate RTM for the server will appear.
+
+![RTM](images/reinstalling-your-server-04.png){.thumbnail}
+
+Set the slider to `Enabled`{.action} to install it. You can find out more about the RTM feature in [this guide](../install-rtm/).
+
+#### Adding an SSH key (optional)
+
+If you are installing a GNU/Linux-based operating system, you can add your SSH key in the last step of the installation process.
 
 ![Customise the partition configuration](images/SSH_03.png){.thumbnail}
 
@@ -69,22 +88,13 @@ In "My services", switch to the `SSH keys`{.action} tab and click on `Add an SSH
 
 ![Customise the partition configuration](images/SSH_14.png){.thumbnail}
 
-As we are installing a dedicated server (or a VPS), make sure to select "Dedicated" from the drop-down menu.
+As we are installing a dedicated server, make sure to select "Dedicated" from the drop-down menu (viable for a VPS as well).
 
 In the new window, enter an ID (a name of your choice) and the key itself (of type RSA, ECDSA or Ed25519) into the respective fields.
 
 ![Customise the partition configuration](images/SSH_12.png){.thumbnail}
 
 For a detailed explanation on how to generate SSH keys, please refer to [this guide](../../public-cloud/create-ssh-keys).
-
-
-> [!primary]
->
-> Some operating systems or platforms, such as Plesk and Windows, require a licence to be purchased prior to installation. You can buy this [licence from OVHcloud](https://www.ovhcloud.com/en-gb/bare-metal/os/), or from a reseller. You will then need to integrate it manually, through the operating system itself, or through your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
->
-You can manage your licences in the Control Panel in the `Bare Metal Cloud`{.action} section under `Licences`{.action}. In this section, you can also order licences or add your own SPLA Windows or SPLA SQL server licence (via the `Actions`{.action} button).
->
-
 
 ### Logging on to your server
 

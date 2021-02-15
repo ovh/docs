@@ -18,7 +18,7 @@ order: 3
 > Si vous venez de réaliser le paiement de votre offre Dedicated Exchange, il est nécessaire de suivre le guide suivant <legacy:2074> avant de pouvoir réaliser les différentes actions ci-dessous.
 > 
 
-Rendez-vous sur l'espace client via ce lien : [Espace client OVH]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external}
+Rendez-vous sur l'espace client via ce lien : [Espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
 
 Une fois connecté, vous avez accès à cette interface :
 

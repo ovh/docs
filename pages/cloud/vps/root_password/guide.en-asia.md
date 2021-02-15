@@ -9,7 +9,7 @@ section: Diagnostics and rescue mode
 
 ## Objective
 
-It may become necessary to change the root password on your Linux operating system. There are two possible scenarios:
+It may become necessary to change the root password on your GNU/Linux operating system. There are two possible scenarios:
 
 - You are still able to log in via SSH
 - You are unable to log in via SSH because you have lost your password
@@ -25,7 +25,8 @@ It may become necessary to change the root password on your Linux operating syst
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+>
 
 ## Instructions
 
@@ -54,7 +55,7 @@ passwd: password updated successfully
 
 > [!primary]
 >
-> On a Linux distribution, the password you enter **will not appear**.
+> On a GNU/Linux distribution, the password you enter **will not appear**.
 >
 
 If you need to permit logging in as root, follow the steps in [this guide section](./#enabling-root-login_1).

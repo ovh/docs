@@ -8,10 +8,6 @@ Retrouvez ici les réponses à vos questions qui portent sur le nouveau processu
 
 ## Quels sont les grands changements?
 
-### Quels sont les produits concernés?
-
-À partir de décembre 2017 les produits concernés sont : [serveurs dédiés](https://www.ovh.com/ca/fr/serveurs-dedies/), [VPS](https://www.ovh.com/ca/fr/vps/) et [Exchange Hébergé](https://www.ovh.com/ca/fr/emails/hosted-exchange/).
-
 ###	La commande de ces produits sera-t-elle modifiée?
 
 Lors de vos nouvelles commandes, il suffira d’enregistrer un moyen de paiement afin d’assurer le bon fonctionnement du renouvellement automatique.

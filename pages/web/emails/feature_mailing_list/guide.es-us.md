@@ -257,4 +257,4 @@ A continuación, le presentamos una lista de archivos con los textos de las resp
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en https://community.ovh.com/en.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
