@@ -4,6 +4,7 @@ title: 'Hosting: FAQ - Migrate to the latest versions of PHP'
 excerpt: 'Hosting: FAQ - Migrate to the latest versions of PHP'
 slug: hosting_faq_-_migrate_to_the_latest_versions_of_php
 legacy_guide_number: g1758
+hidden: true
 ---
 
 
@@ -81,35 +82,4 @@ Save this file under the name ".ovhconfig" and upload it to the root of your hos
 
 
 For more information on the specifications of this file, refer to this OVH guide [here](https://www.ovh.co.uk/g1207.how_to_configure_php_on_your_ovh_web_server_2014)
-
-
-## Use case
-How do I know which version of PHP my website uses?
-Simply download this file: [info.php](https://www.ovh.com/fr/documents/info.php) (right-click on it and then Save As).
-If you want to create the file yourself, simply create a text file containing then save it in .php format and name it 'info.php'.
-
-Publish the file via FTP to the root of your website, or your websites (if you have several which are attached to sub-domains). For example /www/mywordpress/
-With your web browser, go to info.php. For example: www.your-site.com/mywordpress/info.php
-
-![](images/img_2601.jpg){.thumbnail}
-Users with old versions of PHP will shortly receive an email which lists the supported versions.
-Mám sub-domény a multi-domény. Musím aktivovat stejnou verzi PHP na každé z nich?
-
-Ne, OVH umožňuje mít různé verze PHP pro každou Vaší sub-doménu (multi-doména je ve skutečnosti také sub-doménou). Pro toto stačí jednoduše vytvořit .ovhconfig soubor v kořenovém adresáři každé subdomény. Soubor .ovhconfig se načítá následovně:
-
-
-- soubor je otevřen z kořenového adresáře domény. Jestliže tedy například www.priklad.com směřuje do adresáře /www a beta.priklad.com do /beta adresáře, soubor /www/.ovhconfig se načte pro http://www.priklad.com/index.php požadavek. Soubor  /beta/.ovhconfig se však načte pro požadavky směrované na http://beta.example.com/index.php.
-- Jestliže soubor .ovhconfig pro konkrétní doménu není nalezen, načte se nastavení z /.ovhconfig.
-- Jestliže neexistuje žádný výše zmíněný soubor, Vás účt bude automaticky nastaven na PHP 5.6 s FPM.
-
-
-I've configured an .htaccess file to force a version of PHP. What will happen to it?
-Your files will migrate to PHP 5.6 by default. If you want to force a more recent version of PHP (PHP 7 for example), you need to configure .ovhconfig (a file on your FTP).
-Any other directives on the .htaccess file, e.g. URL rewriting, redirection, etc., will remain active.
- Can I use PHP 7
-PHP 7 is available on our webhosting packages.
-I'm having problems migrating. What can I do?
-Our support team can't migrate your website for you, however it can help you to update your version of PHP (using the .ovhconfig file). This team isn't liable for any issues that may occur.
-
-Need more help? You can look for a web service provider among our list of partners who will be able to guide you in your website migration: [http://www.ovh.biz/](http://www.ovh.biz/)
 

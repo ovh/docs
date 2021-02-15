@@ -4,6 +4,7 @@ excerpt: 'Hosting www: FAQ - Migracja na najnowsze wersje PHP'
 id: '1758'
 slug: hosting_www_faq_-_migracja_na_najnowsze_wersje_php
 section: PHP
+hidden: true
 ---
 
 ## Informacje związane z PHP
@@ -82,34 +83,4 @@ Zapisz plik pod nazwą ".ovhconfig" i wgraj pliki do katalogu głównego na host
 
 Więcej informacji na temat parametrów tego pliku znajduje się w tym 
 [przewodniku](https://www.ovh.pl/g1207.konfiguracja-php-hosting-www)
-
-
-## Przykłady zastosowań
-Jak sprawdzić wersję PHP, z której korzysta strona www?
-Możesz pobrać ten plik (kliknij prawym przyciskiem i wybierz "Zapisz jako"): [info.php](https://www.ovh.com/fr/documents/info.php)
-Jeśli chcesz sam zrealizować taki plik, wystarczy utworzyć plik tekstowy i wpisać w nim: <?php phpinfo(); ?>
-Następnie zapisz plik w formacie .php i nazwij go info.php.
-
-Zapisz plik na FTP w katalogu głównym strony (lub stron, jeśli masz ich więcej i są one na przykład przypisane do subdomen). Na przykład: /www/mojwordpress/
-Korzystając z przeglądarki www przejdź do pliku info.php. Na przykład www.moja-strona.com/mojwordpress/info.php
-
-![](images/img_2601.jpg){.thumbnail}
-OVH wysłało również e-mail z informacjami na temat wyłączenia starych wersji PHP do użytkowników, których dotyczy ta operacja (marzec/kwiecień 2015). W e-mailu tym znajdowała się lista używanych wersji PHP.
-Dysponuję subdomenami i ofertą multi-domen. Czy mogę włączyć różne wersje PHP?
-Tak, OVH zezwala na różne wersje PHP dla każdej z subdomen (multidomena jest postrzegana jak subdomena). 
-W tym celu wystarczy utworzyć plik .ovhconfig w katalogu głównym danej subdomeny. Plik .ovhconfig jest pobierany w następujący sposób:
-
-
-- Plik jest pobierany z katalogu głównego danej domeny. Na przykład jeśli « www.exemple.com » wskazuje na katalog « /www » a « beta.exemple.com » wskazuje na katalog « /beta », plik « /www/.ovhconfig » jest brany pod uwagę dla zapytania http://www.exemple.com/index.php, podczas gdy plik « /beta/.ovhconfig » będzie pobierany dla zapytania http://beta.exemple.com/index.php.
-- Jeśli plik .ovhconfig specyficzny dla subdomeny z etapu 1 nie został odnaleziony, pobierany jest plik « /.ovhconfig ».
-- Jeśli żaden z dwóch powyższych plików nie istnieje, stosowana jest domyślna konfiguracja (PHP 5.6 z FPM).
-
-
-Skonfigurowałem plik .htaccess, aby zmienić wersję PHP. Co się z nim stanie?
-Domyślnie strony przejdą na PHP 5.6. Jeśli chcesz korzystać z wyższej dostępnej wersji (na przykład 7.0), należy to ustawić w pliku .ovhconfig (plik dostępny na FTP). 
-Jeśli Twój plik .htaccess zawiera inne dyrektywy (URL rewriting, przekierowanie, ...), będą one nadal aktywne.
-Czy mogę używać wersji PHP 7?
-Wersja PHP 7 jest dostępna ma hostingach www.
-Mam trudności ze zmianą wersji PHP. Co mam zrobić?
-Nie możemy przenieść Twojej strony za Ciebie. Możemy przekazać Ci informacje na temat aktualizacji PHP (za pomocą pliku .ovhconfig). Zespół pomocy nie odpowiada za ewentualne problemy z działaniem.
 

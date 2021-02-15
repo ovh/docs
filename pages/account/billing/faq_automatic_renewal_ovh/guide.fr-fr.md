@@ -9,9 +9,6 @@ La version anglaise de ce guide est disponible [ici](https://docs.ovh.com/gb/en/
 
 
 ## Quels sont les grands changements?
-- Quels sont les produits concernés ?
-
-A partir de Mai 2017 les produits concernés sont : [Hébergement mutualisé](https://www.ovh.com/fr/hebergement-web/){.external}, [Nom de domaine](https://www.ovh.com/fr/domaines/){.external}, [SQL Privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml){.external}, [DNSAnycast](https://www.ovh.com/fr/domaines/dns-anycast/){.external}, [CDN](https://www.ovh.com/fr/cdn/){.external}, [Serveur Dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, [VPS](https://www.ovh.com/fr/vps/){.external}, [Exchange Hosted](https://www.ovh.com/fr/emails/hosted-exchange/){.external} et Exchange Provider.
 
 - La commande de ces produits sera-t-elle modifiée ?
 

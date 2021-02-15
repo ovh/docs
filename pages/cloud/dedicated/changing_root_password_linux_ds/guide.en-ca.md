@@ -1,52 +1,67 @@
 ---
-title: Changing the root password on a Linux dedicated server
+title: Changing the root password on a dedicated server
 slug: root-password
-excerpt: This guide will show you how to change the root password on a Linux dedicated server.
+excerpt: Find out how to change the root or admin password of a dedicated server
 section: Server Management
+order: 1
 ---
 
-**Last updated 2018/06/20**
+**Last updated 15th January 2021**
 
 ## Objective
 
-When you install or reinstall a distribution or operating system, you are given a root access password. We strongly recommend that you change it, as detailed in our guide to [securing a Dedicated Server](../securing-a-dedicated-server/#change-the-password-associated-with-the-root-user){.external}. You may also find that you have lost this password, and need to change it.
+It may become necessary to change the root password (or the one of your admin/sudo user) on your GNU/Linux operating system. There are two possible scenarios:
 
-**This guide will take you through both scenarios and show you how to change the root password of your sever.**
+- You are still able to log in via SSH
+- You are unable to log in via SSH because you have lost your password
+
+**This guide will explain how to proceed with changing your admin password depending on the initial situation.**
 
 ## Requirements
 
-* a [dedicated server](https://www.ovh.com/ca/en/dedicated-servers/){.external}
-* administrative (root) access to the server via SSH
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
+- a [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/) in your OVHcloud account
+- login credentials received via email after the installation (if still valid)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) (for using rescue mode)
+
+
+> [!warning]
+>OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+>
 
 ## Instructions
 
-### Changing the password with root access
+### Changing the password if you still have access (sudo user or root)
 
-If you have root access with your current password and simply want to change it, then establish an SSH connection to the server via the command line and type the following command:
+Log in to your server via SSH. Switch to the root user, if necessary:
 
 ```sh
-# passwd
+~$ sudo su -
+~#
 ```
-Next, enter your new password twice, as shown below:
+
+To change the password of the current user, type `passwd`:
 
 ```sh
-Enter new UNIX password:
-Retype new UNIX password:
+~# passwd
+
+New password:
+Retype new password:
 passwd: password updated successfully
 ```
 
 
 > [!primary]
 >
-> Please note that on a Linux distribution, the characters of your password **will not appear** as you type them.
+> On a GNU/Linux distribution, the password you enter **will not appear**.
 >
 
-### Changing a password after you have lost it
+### Changing the password if you have lost it
 
 #### Step 1: Identify the system partition
 
-After putting your server into [rescue mode](../rescue-mode/){.external}, you will need to identify the system partition. You can do this with the following command:
+After restarting your server into [rescue mode](../rescue-mode/), you will need to identify the system partition. You can do this with the following command:
 
 ```sh
 # fdisk -l
@@ -72,12 +87,15 @@ In the example above, the system partition is /dev/hda1.
 
 > [!primary]
 >
-If your server has a software RAID configuration, you will need to mount your raid volume (usually /dev/mdX). 
+If your server has a RAID configuration, you will need to mount your raid volume.
 >
+> - If you are using Softraid, your root partition will be /dev/mdX.
+> - If you are using Hardraid, your root partition will be /dev/sdX.
+
 
 #### Step 2: Mount the system partition
 
-Once you've identified the system partition, you can mount it with the following command:
+Once you have identified the system partition, you can mount it with the following command:
 
 ```sh
 # mount /dev/hda1 /mnt/
@@ -85,7 +103,7 @@ Once you've identified the system partition, you can mount it with the following
 
 #### Step 3: Edit the root partition
 
-The system partition is locked for editing by default so you'll need to open it for write access, which you can do with the following command:
+The system partition is locked for editing by default so you need to open it for write access first, which you can do with the following command:
 
 ```sh
 # chroot /mnt
@@ -103,8 +121,10 @@ Retype new UNIX password:
 passwd: password updated successfully
 ```
 
-When this is done, change the boot mode on your server back to `boot from hard disk`{.action} and restart it. Your root password will now be changed.
+When this is done, change the boot mode of your server back to `Boot from the hard disk`{.action} and restart it. Your root password will now be changed.
 
 ## Go further
+
+[Securing a dedicated server](../securing-a-dedicated-server/)
 
 Join our community of users on <https://community.ovh.com/en/>.

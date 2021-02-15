@@ -16,7 +16,7 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 ## Requirements
 
 * a [Dedicated Server](https://www.ovh.com/world/dedicated-servers/){.external}
-* a [failover IP address](https://www.ovh.com/world/dedicated-servers/ip_failover.xml){.external} or a failover IP block (RIPE)
+* a [failover IP address](https://www.ovhcloud.com/es/bare-metal/ip/){.external} or a failover IP block (RIPE)
 * access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
 
 
