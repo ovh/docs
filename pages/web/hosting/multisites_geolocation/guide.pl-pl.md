@@ -8,7 +8,7 @@ section: Adresacja IP w OVH
 
 
 ## 
-Opcja geolokalizacji jest dostępna w [panelu klienta](https://www.ovh.com/manager/web/login/).
+Opcja geolokalizacji jest dostępna w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 Po zalogowaniu należy kliknąć na nazwę strony głównej znajdującą się z lewej strony w sekcji Hosting.
 

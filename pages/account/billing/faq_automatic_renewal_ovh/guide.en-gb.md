@@ -8,7 +8,7 @@ section: FAQ
 ## What are the major changes?
 - Which products does it cover?
 
-Starting in May, 2017, the products that will be covered are: [Shared Webhosting](https://www.ovh.com/fr/hebergement-web/){.external}, [Domain name](https://www.ovh.com/fr/domaines/){.external}, [Private SQL](https://www.ovh.com/fr/hebergement-web/options-sql.xml/){.external}, [DNS Anycast](https://www.ovh.com/fr/domaines/dns-anycast/){.external}, [CDN](https://www.ovh.com/fr/cdn/){.external}, [Dedicated servers](https://www.ovh.com/fr/serveurs_dedies/){.external}, [VPS](https://www.ovh.com/fr/vps/){.external}, [Exchange Hosted](https://www.ovh.com/fr/emails/hosted-exchange/){.external} and Exchange Provider.
+Starting in May, 2017, the products that will be covered are: [Shared Webhosting](https://www.ovh.com/fr/hebergement-web/){.external}, [Domain name](https://www.ovh.com/fr/domaines/){.external}, [Private SQL](https://www.ovh.co.uk/web-hosting/sql-options.xml){.external}, [DNS Anycast](https://www.ovh.com/fr/domaines/dns-anycast/){.external}, [CDN](https://www.ovh.com/fr/cdn/){.external}, [Dedicated servers](https://www.ovh.com/fr/serveurs_dedies/){.external}, [VPS](https://www.ovh.com/fr/vps/){.external}, [Exchange Hosted](https://www.ovh.com/fr/emails/hosted-exchange/){.external} and Exchange Provider.
 
 - Will the ordering process for these products be modified?
 

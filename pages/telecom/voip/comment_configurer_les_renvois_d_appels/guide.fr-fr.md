@@ -16,7 +16,7 @@ Votre ligne SIP OVH vous permet de recevoir et d'émettre des appels. Pour diver
 ## Prérequis
 
 - Disposer d'une [ligne SIP OVH](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
-- Disposer d'un accès à la gestion de la ligne SIP concernée depuis votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`{.action}.
+- Disposer d'un accès à la gestion de la ligne SIP concernée depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
 
 ## En pratique
 
@@ -36,7 +36,7 @@ Poursuivez la lecture de cette documentation en fonction de la solution que vous
 
 ### Activer le verrouillage des appels sortants
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée.
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Verrouillage des appels sortants`{.action}.
 
@@ -50,7 +50,7 @@ Vous avez la possibilité d'appliquer ce verrouillage à plusieurs lignes grâce
 
 ### Activer le renvoi d'appel
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée.
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Renvoi d'appel`{.action}.
 
@@ -85,7 +85,7 @@ Vous avez la possibilité d'appliquer vos choix de configuration à plusieurs li
 
 ### Activer le filtrage d'appels
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée.
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne SIP concernée.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Filtrage d'appels`{.action}.
 

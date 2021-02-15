@@ -20,7 +20,7 @@ Wenn Sie alle in dieser Anleitung beschriebenen Schritte genau befolgen, sollte 
 
 
 ## Wenn Sie die Zugangsdaten vergessen haben
-Loggen Sie sich zunächst in Ihr [Kundencenter](https://www.ovh.com/manager/web/login/) ein.
+Loggen Sie sich zunächst in Ihr [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein.
 
 Wählen Sie dann im Menü links unter "Hosting-Pakete" das gewünschte Hosting aus.
 Gehen Sie anschließend in den Tab "Datenbank".
@@ -40,7 +40,7 @@ Um sich mit Ihrer SQL 4 Datenbank zu verbinden, haben Sie zwei Möglichkeiten:
 
 - Verwenden Sie [diesen Link](https://phpmyadmin.ovh.net/old/).
 oder
-- Gehen Sie in Ihrem [Kundencenter](https://www.ovh.com/manager/web/login/) in den Bereich "Hosting-Pakete" und dort in den Tab "Datenbank", klicken Sie auf das kleine Zahnrad rechts neben der betroffenen SQL 4 Datenbank. Klicken Sie dann auf "Zugang zu phpMyAdmin" und dann unten auf der Seite auf den Link [https://phpmyadmin.ovh.net/old/](https://phpmyadmin.ovh.net/old/).
+- Gehen Sie in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich "Hosting-Pakete" und dort in den Tab "Datenbank", klicken Sie auf das kleine Zahnrad rechts neben der betroffenen SQL 4 Datenbank. Klicken Sie dann auf "Zugang zu phpMyAdmin" und dann unten auf der Seite auf den Link [https://phpmyadmin.ovh.net/old/](https://phpmyadmin.ovh.net/old/).
 
 
 
@@ -92,7 +92,7 @@ Wenn Sie diese Operation ausgeführt haben, ist Ihre Datenbank leer.
 
 ## Wie kann ich meine SQL 4 Datenbank löschen?
 Sie können PhpMyAdmin jetzt verlassen.
-Wählen Sie nun in Ihrem [Kundencenter](https://www.ovh.com/manager/web/login/) das gewünschte Hosting aus und begeben Sie sich in den Tab "Datenbank".
+Wählen Sie nun in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) das gewünschte Hosting aus und begeben Sie sich in den Tab "Datenbank".
 
 Klicken Sie rechts neben Ihrer MYSQL v4.0 Datenbank auf das kleine Zahnrad und dann auf "Die Datenbank löschen".
 
@@ -105,7 +105,7 @@ Es wird nun 10 bis 15 Minuten dauern, bis Ihre Datenbank endgültig gelöscht is
 
 ## Wie erstelle ich eine MySQL 5.5 Datenbank?
 Wenn Ihre SQL 4 Datenbank gelöscht ist, müssen Sie eine neue Datenbank in MySQL Version 5.5 erstellen.
-Gehen Sie hierfür in Ihrem [Kundencenter](https://www.ovh.com/manager/web/login/) im Bereich Hosting-Pakete, in den Tab Datenbank.
+Gehen Sie hierfür in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Bereich Hosting-Pakete, in den Tab Datenbank.
 
 Klicken Sie rechts auf den Button Eine Datenbank erstellen.
 
@@ -136,7 +136,7 @@ Für die anderen CMS oder von einem Entwickler erstellt Webseiten empfehlen wir 
 Wenn Sie die Datei in Ihrem FTP-Bereich gefunden haben, müssen Sie sie bearbeiten.
 Erstellen Sie zunächst eine lokale Kopie auf Ihrem Rechner und bearbeiten Sie diese mit einem Textbearbeitungsprogramm wie WordPad.
 
-Sie müssen alle Zeilen des Typs "DB_NAME", "DBPASSWORD", "DB_USER" und "DB_HOST" (kann je nach Webseitentyp auch anders benannt sein) ändern und die neuen korrekten Werte angeben, die Sie in Ihrem [Kundencenter](https://www.ovh.com/manager/web/login/) im Tab "Datenbank" finden.
+Sie müssen alle Zeilen des Typs "DB_NAME", "DBPASSWORD", "DB_USER" und "DB_HOST" (kann je nach Webseitentyp auch anders benannt sein) ändern und die neuen korrekten Werte angeben, die Sie in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im Tab "Datenbank" finden.
 
 
 ## Fehlermeldung "Sichere Verbindung fehlgeschlagen"

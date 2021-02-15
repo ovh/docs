@@ -38,7 +38,7 @@ O remetente (sender) transmite o e-mail à mailing list. O moderador (moderator)
 ## Requisitos
 
 - Ter uma oferta de e-mail MX Plan 100 no mínimo ou um [Alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external} elegível para as listas de difusão.
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/manager/web/login/){.external}.
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 

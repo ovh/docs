@@ -19,7 +19,7 @@ Se não funcionar, os identificadores utilizados não devem ser os corretos, e n
 ## Qual o espaço que me resta no meu website?
 A falta de espaço no seu alojamento partilhado pode gerar maus funcionamentos se tentar colocar online novos ficheiros.
 
-- Para verificar esta situação deve aceder ao seu [espaço cliente](https://www.ovh.com/manager/web/login/).
+- Para verificar esta situação deve aceder ao seu [espaço cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Selecione o seu alojamento.
 
 

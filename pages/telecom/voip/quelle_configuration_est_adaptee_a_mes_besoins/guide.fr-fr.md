@@ -17,7 +17,7 @@ Lorsque vous disposez d'un numéro alias chez OVH, qu'il soit nouvellement comma
 ## Prérequis
 
 - Disposer d'un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/){.external}.
-- Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
 
 ## En pratique
 
