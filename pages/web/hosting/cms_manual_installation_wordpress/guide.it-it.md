@@ -13,7 +13,7 @@ legacy_guide_number: g1977
 Per installare la piattaforma WordPress sulla tua offerta di hosting condiviso, ti consigliamo di utilizzare un client FTP come FileZilla (gratuito).
 
 ## [b]Credenziali[/b]
-Assicurati di disporre delle credenziali (Nic-handle e password) di accesso al tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login/).
+Assicurati di disporre delle credenziali (Nic-handle e password) di accesso al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 
 - Recupera le credenziali FTP per accedere al tuo hosting Web.

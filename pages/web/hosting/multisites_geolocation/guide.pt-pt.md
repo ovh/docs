@@ -8,7 +8,7 @@ legacy_guide_number: g1880
 
 
 ## 
-A implementação da geolocalização efetua-se a partir do seu [Espaço Cliente](https://www.ovh.com/manager/web/login/).
+A implementação da geolocalização efetua-se a partir do seu [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 Após ter estabelecido ligação basta que clique no nome do seu website principal que se encontra à esquerda no separador Alojamentos
 

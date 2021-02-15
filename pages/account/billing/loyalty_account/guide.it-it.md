@@ -7,7 +7,7 @@ legacy_guide_number: g1875
 
 
 ## Visualizza il tuo conto fedeltà
-Accedi alla sezione Fatturazione del tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web/login/).
+Accedi alla sezione Fatturazione del tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 ![](images/img_2780.jpg){.thumbnail}
 In Il tuo spazio fedeltà è disponibile lo storico dei tuoi ordini e il saldo dei punti accumulati.

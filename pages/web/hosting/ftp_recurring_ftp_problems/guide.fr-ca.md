@@ -28,7 +28,7 @@ Vérifiez bien que vous recopiez correctement le mot de passe. Le mieux est de l
 ### Quel espace me reste-t-il sur mon site ?
 Le manque d'espace sur votre hébergement mutualisé peut générer des dysfonctionnements si vous tenter de mettre en ligne de nouveaux fichiers.
 
-- Pour vérifier cela, vous devez vous connectez à votre [espaceclient](https://www.ovh.com/manager/web/login/){.external} .
+- Pour vérifier cela, vous devez vous connectez à votre [espaceclient](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} .
 - Sélectionnez votre plateforme d'hébergement.
 
 

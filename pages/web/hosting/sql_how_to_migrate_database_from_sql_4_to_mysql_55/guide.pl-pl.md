@@ -19,7 +19,7 @@ Migracja trwa od 10 do 40 minut.
 
 
 ## Gdzie można odnaleźć dane dostępowe do bazy danych?
-Zaloguj się do [panelu klienta](https://www.ovh.com/manager/web/login/).
+Zaloguj się do [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 Po zalogowaniu wybierz swój hosting z lewej strony z menu Hosting. 
 Przejdź do zakładki Baza danych.
@@ -37,7 +37,7 @@ Istnieją dwie możliwości zalogowania się do bazy danych SQL 4:
 
 - Skorzystaj z [tego linka](https://phpmyadmin.ovh.net/old/).
 lub
-- W[panelu klienta](https://www.ovh.com/manager/web/login/), w sekcji Hosting, Baza danych kliknij na koło zębate z prawej strony na poziomie bazy danych SQL 4 i wybierz "Dostęp do phpMyAdmin" i "https://phpmyadmin.ovh.net/old/" (w dolnej części strony).
+- W[panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w sekcji Hosting, Baza danych kliknij na koło zębate z prawej strony na poziomie bazy danych SQL 4 i wybierz "Dostęp do phpMyAdmin" i "https://phpmyadmin.ovh.net/old/" (w dolnej części strony).
 
 
 
@@ -87,7 +87,7 @@ Po wykonaniu tej operacji baza będzie pusta.
 
 ## Jak usunąć bazę danych w wersji SQL 4?
 Możesz wylogować się z interfejsu PhpMyAdmin.
-W [panelu klienta](https://www.ovh.com/manager/web/login/) kliknij na hosting i na zakładkę Bazy danych.
+W [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) kliknij na hosting i na zakładkę Bazy danych.
 
 Z prawej strony bazy danych w wersji MYSQL v4.0 kliknij na ikonkę koła zębatego i wybierz opcję "Usuń bazę danych". 
 
@@ -99,7 +99,7 @@ Operacja usuwania bazy danych może trwać około 10-15 minut.
 
 
 ## Jak utworzyć bazę danych w wersji MySQL 5.5?
-Po usunięciu bazy danych w wersji SQL4 będziesz mógł utworzyć nową bazę danych w wersji MySQL 5.5. Zaloguj się do [panelu klienta](https://www.ovh.com/manager/web/login/), wybierz domenę w sekcji Hosting i przejdź do zakładki Bazy danych.
+Po usunięciu bazy danych w wersji SQL4 będziesz mógł utworzyć nową bazę danych w wersji MySQL 5.5. Zaloguj się do [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), wybierz domenę w sekcji Hosting i przejdź do zakładki Bazy danych.
 
 Kliknij na przycisk Stwórz bazę danych.
 
@@ -132,7 +132,7 @@ Po odnalezieniu pliku należy go wyedytować.
 Skopiuj plik lokalnie na swój komputer i wyedytuj plik za pomocą odpowiedniego programu, jak na przykład WordPad lub notes. 
 
 
-Należy zmodyfikować linie typu "DB_NAME", "DBPASSWORD", "DB_USER" oraz "DB_HOST" (mogą one nosić inne nazwy w zależności od typu strony), wprowadzając nowe wartości. Można je odnaleźć w [panelu klienta](https://www.ovh.com/manager/web/login/) w zakładce "Bazy danych".
+Należy zmodyfikować linie typu "DB_NAME", "DBPASSWORD", "DB_USER" oraz "DB_HOST" (mogą one nosić inne nazwy w zależności od typu strony), wprowadzając nowe wartości. Można je odnaleźć w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w zakładce "Bazy danych".
 
 
 ## Otrzymujesz błąd bezpiecznego połączenia.

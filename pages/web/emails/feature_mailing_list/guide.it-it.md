@@ -39,7 +39,7 @@ Il mittente (sender) trasmette l’email alla mailing list. Il moderatore (moder
 ## Prerequisiti
 
 - Disponi di una soluzione MX Plan 100 o di un [hosting Web](https://www.ovh.com/fr/hebergement-web/){.external} adatto per le mailing list
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/manager/web/login/){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 

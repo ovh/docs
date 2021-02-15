@@ -23,7 +23,7 @@ Existen diferentes versiones del programa, que podrá descargar desde el área d
 
 
 ## Para una plataforma Hosted Exchange
-Acceda al [área de cliente](https://www.ovh.com/manager/web/login/), seleccione su plataforma Exchange y haga clic en la pestaña «Cuentas de correo».
+Acceda al [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), seleccione su plataforma Exchange y haga clic en la pestaña «Cuentas de correo».
 Haga clic en el icono con forma de carrito situado en la línea correspondiente a la dirección Exchange con la que quiera utilizar Outlook.
 
 Se abrirá el cuadro de diálogo de la imagen.
@@ -41,7 +41,7 @@ Es posible que deba esperar hasta un máximo de dos horas hasta que el enlace de
 
 
 ## Para una plataforma Private Exchange
-Acceda al [área de cliente](https://www.ovh.com/manager/web/login/), seleccione su plataforma Exchange y haga clic en la pestaña «Cuentas de correo».
+Acceda al [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), seleccione su plataforma Exchange y haga clic en la pestaña «Cuentas de correo».
 Haga clic en el icono «Configuración», con forma de lápiz, situado en la línea correspondiente a la dirección Exchange con la que quiera utilizar Outlook.
 
 ![](images/img_2562.jpg){.thumbnail}
@@ -53,7 +53,7 @@ Continúe a la siguiente etapa y acepte la contratación de la licencia Outlook.
 
 
 ## Información general
-Acceda al [área de cliente](https://www.ovh.com/manager/web/login/), seleccione su plataforma Exchange y haga clic en la pestaña «Cuentas de correo».
+Acceda al [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), seleccione su plataforma Exchange y haga clic en la pestaña «Cuentas de correo».
 
 En la columna «Outlook» verá el botón verde «Sí». Haga clic en ese botón para elegir la versión de Outlook y el idioma utilizado.
 

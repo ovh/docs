@@ -41,7 +41,7 @@ Preencha os seguintes campos com os valores correspondentes:
 
 Endereço de e-mail: O seu endereço de e-mail na íntegra.
 
-Password: A password que definiu no [manager](https://www.ovh.com/manager/web/login/).
+Password: A password que definiu no [manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 Nome do utilizador: O seu endereço de e-mail na íntegra.
 

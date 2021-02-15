@@ -22,7 +22,7 @@ Este software encontra-se presente em várias versões, podendo efetuar o downlo
 
 
 ## Caso tenha uma plataforma do tipo Hosted Exchange
-Aceda ao seu [espaço de cliente](https://www.ovh.com/manager/web/login/), clique na sua plataforma Exchange, e depois aceda ao separador "Contas de E-mail".
+Aceda ao seu [espaço de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique na sua plataforma Exchange, e depois aceda ao separador "Contas de E-mail".
 Verá depois ao lado do endereço de Exchange para o qual deseja usufruir do software Outlook um ícone sobre a forma de carrinho na coluna "Outlook".
 
 Clique nesse ícone e a seguinte janela aparecerá:
@@ -49,7 +49,7 @@ Clique nesse ícone e a seguinte janela aparecerá:
 
 
 ## Caso tenha uma plataforma do tipo Private Exchange
-Aceda ao seu [espaço de cliente](https://www.ovh.com/manager/web/login/), clique na sua plataforma Exchange, e depois aceda ao separador "Contas de E-mail".
+Aceda ao seu [espaço de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique na sua plataforma Exchange, e depois aceda ao separador "Contas de E-mail".
 
 - Clique no ícone  ao lado do endereço Exchange em questão.
 

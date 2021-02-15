@@ -9,7 +9,7 @@ section: Optimización del sitio web
 
 
 ## 
-Puede geolocalizar sus sitios web directamente desde el [área de cliente](https://www.ovh.com/manager/web/login/).
+Puede geolocalizar sus sitios web directamente desde el [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 Una vez dentro, deberá seleccionar el nombre de su sitio web en el apartado «Alojamientos», en la parte izquierda.
 
