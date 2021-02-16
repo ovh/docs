@@ -31,7 +31,7 @@ order: 7
 
 ## Objective
 
-You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy [TypeScript](https://www.typescriptlang.org/) code.
+You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy [TypeScript](https://www.typescriptlang.org/){.external} code.
 
 This guide will explain how to do it.
 
@@ -56,7 +56,7 @@ You should include typescript as dev dependency module for your project:
 npm add --save-dev typescript
 ```
 
-Create a `tsconfig.json` (if you don't have one already) with the following content for example (see the [TypeScript doc](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html) for more information):
+Create a `tsconfig.json` (if you don't have one already) with the following content for example (see the [TypeScript doc](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html){.external} for more information):
 
 ```json
 {

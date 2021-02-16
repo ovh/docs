@@ -31,16 +31,16 @@ order: 1
 
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Python et vous souhaitez y déployer [Django](https://www.djangoproject.com/).
+Vous avez souscrit à un hébergement web POWER Python et vous souhaitez y déployer [Django](https://www.djangoproject.com/){.external}.
 
 **Découvrez comment installer Django sur votre hébergement web POWER**
 
 ## Prérequis
 
-- Disposer d'une de l'offre d'hébergement web POWER [Python](https://labs.ovh.com/managed-python).
+- Disposer de l'offre d'hébergement web POWER [Python](https://labs.ovh.com/managed-python).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
-Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous conseillons de consulter notre guide [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) avant de poursuivre.
+Si vous n'êtes pas encore familier avec l'utilisation de votre hébergement web POWER, nous vous conseillons de consulter notre guide « [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) » avant de poursuivre la lecture de ce guide.
 
 ## En pratique
 
@@ -48,17 +48,16 @@ Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous c
 
 Supposons que vous avez la configuration normale pour un hébergement web POWER :
 
-- Moteur : Python 3.8 
-- Point d'entrée : app.py 
-- Dossier racine : www 
+- Moteur : Python 3.8
+- Point d'entrée : app.py
+- Dossier racine : www
 
 
 > [!primary]
 >
 > Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration)
 
-
-Pour utiliser les frameworks [Python WSGI](https://www.fullstackpython.com/wsgi-servers.html), le plus simple est d'utiliser [virtualenv](https://pypi.org/project/virtualenv/). 
+Pour utiliser les frameworks [Python WSGI](https://www.fullstackpython.com/wsgi-servers.html), le plus simple est d'utiliser [virtualenv](https://pypi.org/project/virtualenv/).
 
 [Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER et activez `virtualenv`: 
 
@@ -80,10 +79,10 @@ Installez Django.
 pip install django
 ```
 
-Créez le nouveau project Django.
+Créez le nouveau projet Django.
 
 ```sh
-django-admin startproject config .
+django-admin startproject config
 ```
 
 Par défaut, l'application `wsgi` de Django se trouve dans `config/wsgi.py`.
@@ -95,7 +94,7 @@ ln -s config/wsgi.py app.py
 
 Django est installé dans un environnement virtuel, vous devez demander à l'application de l'utiliser. 
 
-Ajoutez ces 2 lignes dans `app.py` avant l'importation de Django:
+Ajoutez ces 2 lignes dans `app.py` avant l'importation de Django :
 
 
 ```python
@@ -237,11 +236,9 @@ ALLOWED_HOSTS = [ 'power.lostinbrittany.dev', 'xxxx.xxxx.hosting.ovh.net' ]
 ~/www $ touch tmp/restart.txt
 </code></pre>
 
-
 ### Plus d'informations sur Django
 
-Retrouvez la documentation officielle de Django sur <https://docs.djangoproject.com/fr/3.1/>
-
+Retrouvez la documentation officielle de Django sur <https://docs.djangoproject.com/fr/3.1/>.
 
 ## Aller plus loin
 

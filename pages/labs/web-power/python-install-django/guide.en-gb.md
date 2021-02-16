@@ -30,7 +30,7 @@ order: 1
 
 ## Objective
 
-You've subscribed to a Web POWER web hosting plan to deploy **Python** applications, and you want to deploy [Django](https://www.djangoproject.com/) on it.
+You've subscribed to a Web POWER web hosting plan to deploy **Python** applications, and you want to deploy [Django](https://www.djangoproject.com/){.external} on it.
 
 This guide will explain how to do it.
 
