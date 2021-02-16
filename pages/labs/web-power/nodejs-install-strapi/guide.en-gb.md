@@ -31,7 +31,7 @@ order: 6
 
 ## Objective
 
-You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy [Strapi](https://strapi.io/) headless CMS on it.
+You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy [Strapi](https://strapi.io/){.external} headless CMS on it.
 
 This guide will explain how to do it.
 

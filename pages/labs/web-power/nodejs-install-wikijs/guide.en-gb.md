@@ -31,7 +31,7 @@ order: 4
 
 ## Objective
 
-You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy a [WikiJS](https://wiki.js.org/) wiki platform on it.
+You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy a [WikiJS](https://wiki.js.org/){.external} wiki platform on it.
 
 This guide will explain how to do it.
 
