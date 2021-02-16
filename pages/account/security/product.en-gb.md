@@ -1,14 +1,14 @@
 ---
 title: Security
 slug: security
-excerpt: OVHcloud security policies and best practice
-Sections: Security policies, Best practice
+excerpt: OVHcloud security policies and best practices
+Sections: Security policies, Best practices
 hidden: true
 ---
 
 > [!product-section]
 >
-> ### Best practice
+> ### Best practices
 >
 > - [Setting and managing an account password](https://docs.ovh.com/gb/en/customer/manage-password/)
 > - [Securing your OVHcloud account with two-factor authentication](https://docs.ovh.com/gb/en/customer/secure-account-with-2FA/)

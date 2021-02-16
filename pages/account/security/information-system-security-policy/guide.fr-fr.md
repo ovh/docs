@@ -2,6 +2,7 @@
 title: "Politique de sécurité du système d'information (PSSI)"
 slug: pssi
 section: Politiques de sécurité
+hidden: true
 ---
 
 **Dernière mise à jour le 15/02/2021**
@@ -12,7 +13,7 @@ La Politique de Sécurité du Système d'information (PSSI) fournit le cadre de 
 
 - Le contexte des opérations d'OVHcloud permettant de comprendre les principaux risques de sécurité d'OVHcloud
 - Les engagements en matière de sécurité vis-à-vis des parties intéressées d'OVHcloud et les principes de mise en œuvre et de maintien en condition de sécurité des systèmes d'information
-- - La déclinaison de ces principes au sein d'OVHcloud
+- La déclinaison de ces principes au sein d'OVHcloud
 
 OVHcloud opère au sein d'un écosystème dynamique dans un contexte qui évolue continuellement. Les pratiques visant à assurer la sécurité doivent donc évoluer rapidement pour rester pertinentes. La PSSI est la marque d'un engagement dans la durée de la direction générale. Elle vise à définir les critères permettant l'évaluation des risques, les principes guidant l'établissement des mesures de sécurité à mettre en place et la gestion de la sécurité au sein d'OVHcloud.
 
@@ -179,9 +180,9 @@ OVHcloud déploie une approche unifiée de gestion des incidents de sécurité e
 - Corréler les évenements indiquant une éventuelle atteinte à la sécurité de l'information et déclencher la prise en charge de l'incident le plus rapidement possible
 - Mobiliser les experts et décisionnaires en charge de la résolution de l'incident
 - Prendre en charge l'incident avec les objectifs suivants
-  - Réduire les impacts opérationnels
-  - Préserver les éléments de preuve permettant de supporter une éventuelle judiciarisation ou des sanctions
-  - Revenir à une situation nominale
+  * Réduire les impacts opérationnels
+  * Préserver les éléments de preuve permettant de supporter une éventuelle judiciarisation ou des sanctions
+  * Revenir à une situation nominale
 - Informer les parties intéressées en accord avec les obligations légales et contractuelles
 - Identifier les causes racines, mettre à jour les analyses de risques et définir les plans d'actions éventuels pour réduire le risque de nouvel occurrence
 
