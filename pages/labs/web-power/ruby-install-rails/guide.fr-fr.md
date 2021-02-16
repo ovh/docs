@@ -28,39 +28,35 @@ order: 2
 
 **Dernière mise à jour le 03/02/2021**
 
-
 ## Objectif
 
-Vous avez souscrit à un hébergement web POWER Ruby et vous voulez y déployer [Rails](https://rubyonrails.org/), le framework de développement d'applications web en Ruby.
+Vous avez souscrit à un hébergement web POWER Ruby et vous voulez y déployer [Rails](https://rubyonrails.org/){.external}, le framework de développement d'applications web en Ruby.
 
 **Découvrez comment installer Rails sur votre hébergement web POWER**
 
 
 ## Prérequis
 
-- Disposer d'une de l'offre d'hébergement web POWER [Ruby](https://labs.ovh.com/managed-ruby).
+- Disposer de l'offre d'hébergement web POWER [Ruby](https://labs.ovh.com/managed-ruby).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
-Si vous venez de commencer à utiliser votre hébergement web POWER, nous vous conseillons de consulter notre guide [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) avant de poursuivre.
-
+Si vous n'êtes pas encore familier avec l'utilisation de votre hébergement web POWER, nous vous conseillons de consulter notre guide « [Premiers pas avec un hébergement web POWER](../premiers-pas-avec-hebergement-web-POWER/) » avant de poursuivre la lecture de ce guide.
 
 ## En pratique
 
 Supposons que vous avez la configuration normale pour un hébergement web POWER :
 
-- Moteur : ruby 2.6 
-- Point d'entrée : config.ru 
-- Dossier racine : www 
-
+- Moteur : ruby 2.6
+- Point d'entrée : config.ru
+- Dossier racine : www
 
 > [!primary]
 >
-> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration)
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](../premiers-pas-avec-hebergement-web-POWER/#api-get-active-configuration).
 
+[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER.
 
-[Accédez via SSH](../premiers-pas-avec-hebergement-web-POWER/#ssh) à votre hébergement web POWER. 
-
-Supprimez le dossier racine pour l'initialiser avec Rails. N'oubliez pas d'exporter votre `gempath`ou l'installation du bundle va échouer :
+Supprimez le dossier racine pour l'initialiser avec Rails. N'oubliez pas d'exporter votre `gempath` ou l'installation du bundle va échouer :
 
 ```sh
 rm -rf www
@@ -79,7 +75,7 @@ Rails.application.configure do
   config.hosts << "your-domain.ovh"
 ```
 
-Et désactivez la vérification `check_yarn_integrity` dans la partie `development` de `www/config/webpacker.yml` :
+Désactivez la vérification `check_yarn_integrity` dans la partie `development` de `www/config/webpacker.yml` :
 
 ```yaml
 development:
@@ -90,11 +86,9 @@ development:
   check_yarn_integrity: false
 ```
 
-[Redémarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre Rails sera en ligne.
-
+[Redémarrez votre instance](../premiers-pas-avec-hebergement-web-POWER/#restart), votre Rails sera alors en ligne.
 
 ![Rails](images/ruby-install-rails-01.png){.thumbnail}
-
 
 Générez maintenant un *Hello World* avec Rails.
 
@@ -117,11 +111,11 @@ Ensuite construisez le *Hello World*.
 ./bin/webpack
 ```
 
-Après redémarrage de votre instance, vous pourez visualser votre page dans https://&lt;votre-nom-de-domaine>/demo/index.html
+Après redémarrage de votre instance, vous pourrez visualiser votre page dans https://&lt;votre-nom-de-domaine>/demo/index.html
 
 ![Rails](images/ruby-install-rails-02.png){.thumbnail}
 
-Sortie de la console:
+Sortie de la console :
 
 <pre class="console"><code>~ $ rm -rf www
 
@@ -220,4 +214,4 @@ Pour plus d'informations sur Rails, n'hésitez pas à consulter la documentation
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
 
-**Pour discuter avec les autres utilisateurs du lab et avec l'équipe POWER Web Hosting, venez sur [notre room Gitter](https://gitter.im/ovh/power-web-hosting)**
+**Pour discuter avec les autres utilisateurs du lab et avec l'équipe POWER Web Hosting, venez sur [notre room Gitter](https://gitter.im/ovh/power-web-hosting).**

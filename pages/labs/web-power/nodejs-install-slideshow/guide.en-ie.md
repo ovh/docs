@@ -31,7 +31,7 @@ order: 5
 
 ## Objective
 
-You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy a [real-time presentation slide platform](https://nafeu.medium.com/real-time-presentation-slides-with-socket-io-express-node-js-and-javascript-cf08a95ff098) on it.
+You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy a [real-time presentation slide platform](https://nafeu.medium.com/real-time-presentation-slides-with-socket-io-express-node-js-and-javascript-cf08a95ff098){.external} on it.
 
 This guide will explain how to do it.
 
