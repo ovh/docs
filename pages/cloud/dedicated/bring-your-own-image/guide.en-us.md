@@ -5,7 +5,7 @@ slug: bringyourownimage
 section: Advanced use
 ---
 
-**Last updated 15th January 2021**
+**Last updated 16th February 2021**
 
 ## Objective
 
