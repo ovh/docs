@@ -16,7 +16,7 @@ DNS signifie **D**omain **N**ame **S**ystem, c'est un enssemble d'éléments per
 
 Par exemple, lorsque vous souhaitez accéder au site *mydomain.ovh*, votre requête est traitée par cet ensemble DNS permettant de faire le lien avec l'hébergement du site *mydomain.ovh*.
 
-Nous allons nous interresser aux deux éléments DNS que vous serrez amenez à manipuler dans votre espace client OVHcloud, à savoir les **serveur DNS** et les **zones DNS**. Il ne faut pas les confondre, en effet, le **serveur DNS** contient des **zones DNS** :
+Nous allons nous intérresser aux deux éléments DNS que vous serrez amenez à manipuler dans votre espace client OVHcloud, à savoir les **serveurs DNS** et les **zones DNS**. Il ne faut pas les confondre, en effet, le **serveur DNS** contient des **zones DNS** :
 
 ![DNS](images/dnsserver.png){.thumbnail}
 
@@ -51,7 +51,7 @@ La zone DNS d'un nom de domaine est un fichier de configuration composé d'**enr
 
 ### Accéder à la gestion d'une zone DNS OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans le section `Web Cloud`{.action}. Cliquez sur `Domaines`{.action} dans la barre de services à gauche, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la section `Web Cloud`{.action}. Cliquez sur `Domaines`{.action} dans la barre de services à gauche, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
 
 Le tableau qui apparaît affiche la configuration de votre nom de domaine chez OVHcloud. Elle est constituée de plusieurs enregistrements DNS, tous symbolisés par une ligne du tableau. Vous avez la possibilité d'en filtrer le contenu par type d'enregistrement ou par domaine.
 
@@ -72,7 +72,7 @@ Le tableau qui apparaît affiche la configuration de votre nom de domaine chez O
 > Un enregistrement TXT utilisant le même domaine ou sous-domaine qu'un enregistrement CNAME perturbe le fonctionnement de ce dernier. Votre enregistrement CNAME fonctionnera partiellement ou pas du tout.
 >
 
-**Champ NS** : Definir les serveurs DNS associés à votre zone DNS. Par exemple, si les enregistrements NS de votre zone DNS affichent les serveurs *dns19.ovh.net* et *ns19.ovh.net*, vous devrez alors utilisez ces derniers dans l'onglet `Serveurs DNS`{.action} de votre espace client. Consulter notre documentation [Modifier les serveurs DNS d’un nom de domaine OVH](../generalites-serveurs-dns/) pour plus d'information.
+**Champ NS** : Définir les serveurs DNS associés à votre zone DNS. Par exemple, si les enregistrements NS de votre zone DNS affichent les serveurs *dns19.ovh.net* et *ns19.ovh.net*, vous devrez alors utiliser ces derniers dans l'onglet `Serveurs DNS`{.action} de votre espace client. Consulter notre documentation [Modifier les serveurs DNS d’un nom de domaine OVH](../generalites-serveurs-dns/) pour plus d'information.
 
 > [!warning]
 >
@@ -86,12 +86,12 @@ Le tableau qui apparaît affiche la configuration de votre nom de domaine chez O
 
 **SPF** : Permet d'éviter les potentielles usurpations d’identité avec les adresses e-mail utilisant votre nom de domaine. Par exemple, *v=spf1 include:mx.ovh.com ~all* cet enregistrement peut indiquer que seul le serveur de votre fournisseur de solution e-mail doit être identifié comme étant une source légitime d'envoi. Il est possible de renseigner cet enregistrement sous la forme d'un champ TXT. Consulter notre documentation [Ajouter un champ SPF à la configuration de son nom de domaine](../le-champ-spf/){.external} pour en savoir plus.
 
-**DKIM** : Permet de vérifier l'authenticité du nom de domaine de l'expéditeur et assurer l'intégrité de l'e-mail envoyé. L'enregistrement DKIM se présente sous la forme d'une clé composé de plusieurs caractères. La clé DKIM est fournie par votre prestataire e-mail, il est possible de la renseigner sous la forme d'un champ TXT.
+**DKIM** : Permet de vérifier l'authenticité du nom de domaine de l'expéditeur et assurer l'intégrité de l'e-mail envoyé. L'enregistrement DKIM se présente sous la forme d'une clé composée de plusieurs caractères. La clé DKIM est fournie par votre prestataire e-mail, il est possible de la renseigner sous la forme d'un champ TXT.
 
 **DMARC** : Contribue à l'authentification des e-mails en s'appuyant des méthodes SPF et/ou DKIM. Cette valeur vous sera donnée par votre fournisseur e-mail, elle sera au minimum associée à un enregistrement SPF ou DKIM.
 
 
-#### Enregistrements étendu
+#### Enregistrements étendus
 
 **TXT** : Permet d'ajouter la valeur de votre choix , au format textuel, dans la zone DNS de votre nom de domaine. Cet enregistrement est souvent utilisé lors de processus de vérification.
 
@@ -99,7 +99,7 @@ Le tableau qui apparaît affiche la configuration de votre nom de domaine chez O
 
 **CAA** : Permet de lister les autorités de certification autorisées à délivrer des certificats SSL pour un nom de domaine.
 
-**NAPTR** : Utiliser en télécommunication pour diriger une requète emise par un terminal mobile vers un serveur. 
+**NAPTR** : Utiliser en télécommunication pour diriger une requête émise par un terminal mobile vers un serveur. 
 
 **LOC** : Utiliser pour renseigner les informations de position géographique.
 
@@ -139,7 +139,7 @@ Nous vous invitons toutefois à vérifier si cet enregistrement n'existe pas dé
 
 ![dnszone](images/edit-dns-zone-ovh-add-entry.png){.thumbnail}
 
-> Lorsque la cible de votre enregistrement est une URL, penssez à ponctuer celle-ci. En effet, si vous ne le faite pas, votre nom de domaine sera automatiquement ajouté à la fin de votre cible.
+> Lorsque la cible de votre enregistrement est une URL, penssez à ponctuer celle-ci. En effet, si vous ne le faites pas, votre nom de domaine sera automatiquement ajouté à la fin de votre cible.
 >
 >Exemple. Je souhaite créer un enregistrement CNAME de *test.mydomain.ovh* vers *mydomain.ovh*.
 >

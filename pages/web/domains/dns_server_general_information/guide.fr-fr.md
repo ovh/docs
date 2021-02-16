@@ -12,7 +12,7 @@ order: 1
 
 ### Comprendre la notion de DNS 
 
-DNS signifie **D**omain **N**ame **S**ystem, c'est un enssemble d'éléments permétant de faire correspondre un nom de domaine avec une adresse IP.
+DNS signifie **D**omain **N**ame **S**ystem, c'est un ensemble d'éléments permettant de faire correspondre un nom de domaine avec une adresse IP.
 
 Retrouvez l'explication complète sur le guide [Éditer une zone DNS OVHcloud](../aditer-ma-zone-dns/#understanddns).
 
@@ -56,7 +56,7 @@ Toutefois, il est important de noter que :
 
 - certaines organisations, les registres, qui gèrent les extensions de noms de domaine, ont des exigences particulières concernant les serveurs DNS (quantité de serveurs de noms, valeur des enregistrements...). En cas de doute, vérifiez auprès du registre responsable de la fin du domaine.
 
-- assurez-vous que le modifications ne rendront pas votre nom de domaine inaccessible. Si vous n'êtes pas sûr de cela, veuillez contacter la personne qui vous demande d'apporter ces modifications.
+- assurez-vous que les modifications ne rendront pas votre nom de domaine inaccessible. Si vous n'êtes pas sûr de cela, veuillez contacter la personne qui vous demande d'apporter ces modifications.
 
 
 ### Accéder à la gestion des serveurs DNS OVHcloud
@@ -75,7 +75,7 @@ Dans les champs de texte, **remplacez** les valeurs actuelles des serveurs DNS p
 
 > [!warning]
 >
-> Il ne faut pas mélanger un groupe de serveurs DNS avec un autres. Par exemple, déclarer *dns19.ovh.net* et *ns19.ovh.net* avec une pair 
+> Il ne faut pas mélanger un groupe de serveurs DNS avec un autre. Par exemple, déclarer *dns19.ovh.net* et *ns19.ovh.net* avec une paire. 
 
 
 Une fois que vous avez entré ces informations, cliquez sur `Appliquer la configuration`{.action}. Les statuts des serveurs DNS seront alors mis à jour dans le tableau et afficheront les nouvelles informations que vous venez de fournir.
