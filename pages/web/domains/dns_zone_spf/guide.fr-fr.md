@@ -161,7 +161,8 @@ Le tableau affiche la configuration OVHCloud de votre domaine. Chaque ligne corr
 
 S'il s'agit d'une entrée TXT, vous devrez modifier la valeur actuelle par celle que vous souhaitez utiliser. Cliquez sur `Suivant`{.action}, assurez-vous que les informations affichées soient bien correctes, puis cliquez sur `Confirmer`{.action}.
 
-(image)
+![domain](images/spf_records_edit_txt_entry_step1.png){.thumbnail}
+![domain](images/spf_records_edit_txt_entry_step2.png){.thumbnail}
 
 > [!primary]
 >
@@ -172,7 +173,8 @@ S'il s'agit d'une entrée TXT, vous devrez modifier la valeur actuelle par celle
 
 S'il s'agit d'une entrée SPF, l'assistant de configuration vous permettra de modifier les différentes parties du champ SPF que vous devez mettre à jour.
 
-(image)
+![domain](images/spf_records_edit_entry_step1.png){.thumbnail}
+![domain](images/spf_records_edit_entry_step2.png){.thumbnail}
 
 Afin de compléter les différents champs, référez-vous au tableau présent dans la section Comprendre l'assistant de configuration SPF. Cliquez sur `Suivant`{.action}, assurez-vous que les informations affichées soient bien correctes, puis cliquez sur `Confirmer`{.action}.
 
