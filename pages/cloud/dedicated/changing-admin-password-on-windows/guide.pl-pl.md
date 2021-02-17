@@ -134,6 +134,8 @@ Used for data: 359/39024 blocks/bytes, unused: 33/18064 blocks/bytes.
 | 01f8 | WDAGUtilityAccount             |        | dis/lock |
 ```
 
+Jeśli polecenie nie działa, najpierw zainstaluj narzędzie: `apt get install chntpw`.
+
 Usuń hasło użytkownika administratora za pomocą następującego polecenia. (Wybierz "Administrator", jeśli "admin" nie istnieje.)
 
 ```
