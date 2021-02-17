@@ -125,6 +125,8 @@ Used for data: 359/39024 blocks/bytes, unused: 33/18064 blocks/bytes.
 | 01f8 | WDAGUtilityAccount             |        | dis/lock |
 ```
 
+If the command does not work, install the tool first: `apt get install chntpw`.
+
 Clear the password for the admin user with the following command. (Choose "Administrator" if "admin" does not exist.)
 
 ```

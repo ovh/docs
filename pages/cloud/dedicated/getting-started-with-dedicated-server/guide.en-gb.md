@@ -113,7 +113,7 @@ ssh root@IPv4_of_your_server
 **Example with a pre-configured user:**
 
 ```sh
-ssh ubuntu@your_server's_reference_name
+ssh ubuntu@reference_name_of_your_server
 ```
 
 You can learn more about SSH in [this guide](../ssh-introduction/).
@@ -121,6 +121,18 @@ You can learn more about SSH in [this guide](../ssh-introduction/).
 #### Windows
 
 Once the installation is completed, you will receive an email containing your password for administrative (root) access. You will need to use these credentials to connect to the server via RDP (**R**emote **D**esktop **P**rotocol). After logging in, Windows will guide you through an intial setup.
+
+### Restarting your dedicated server
+
+A reboot might become necessary in order to apply updated configurations or to fix an issue. Whenever feasible, perform a "soft reboot" via the command line:
+
+```sh
+reboot
+```
+
+However, you can carry out a "hard reboot" at any time in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). From the `General information`{.action} tab, click on `...`{.action} next to "Status" in the **Service status** box, then click `Restart`{.action} and `Confirm`{.action} the action in the popup window.
+
+![Rebooting](images/rebooting-your-server.png){.thumbnail}
 
 ### Securing your dedicated server
 
@@ -161,4 +173,3 @@ For more information, please refer to our guide: [Using the IPMI with dedicated 
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
-

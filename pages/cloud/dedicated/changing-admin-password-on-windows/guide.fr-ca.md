@@ -132,6 +132,8 @@ Used for data: 359/39024 blocks/bytes, unused: 33/18064 blocks/bytes.
 | 01f8 | WDAGUtilityAccount             |        | dis/lock |
 ```
 
+Si la commande ne fonctionne pas, installez d'abord l'outil : `apt get install chntpw`.
+
 Effacez le mot de passe de l'utilisateur admin à l'aide de la commande suivante. (Choisissez « Administrator » si « admin » n'existe pas.)
 
 ```
