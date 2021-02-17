@@ -13,7 +13,7 @@ order: 2
 
 Une page **Site non installé** apparaît parfois en lieu et place de votre site, notamment lors de la mise en place de vos services d'hébergement.
 
-![site-not-installed](site-not-installed.png)
+![site-not-installed](images/site-not-installed.png)
 
 **Trouvez l'origine de la page « Site non installé »**
 
@@ -99,7 +99,7 @@ Pour les opérations permettant de récupérer la gestion de votre zone DNS depu
 Vous disposez de l’adresse IP à laquelle est rattachée votre nom de domaine. Vous devez maintenant vérifier qu’elle correspond bien à celle de votre serveur d’hébergement web.
 Pour retrouver cette dernière, rendez-vous dans la partie « Hébergements » de votre espace client OVHcloud et positionnez-vous dans l’onglet Informations générales.
 
-![hosting-general-informations](hosting-general-informations.png)
+![hosting-general-informations](images/hosting-general-informations.png)
 
 Vous pouvez à présent comparer cette adresse IP et celle inscrite dans la zone DNS active de votre domaine. Deux cas possibles : 
 
