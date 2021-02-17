@@ -104,6 +104,7 @@ Pour retrouver cette dernière, rendez-vous dans la partie « Hébergements » d
 Vous pouvez à présent comparer cette adresse IP et celle inscrite dans la zone DNS active de votre domaine. Deux cas possibles : 
 
 |Scénarios possibles|Action à entreprendre|
+|---|---|
 |Les adresses IP sont identiques|Ceci indique que la configuration de votre nom de domaine est correcte. Si vous avez modifié sa configuration DNS il y a moins de 48 heures, laissez passer ce délai afin que le changement soit pleinement effectif. Pensez également à redémarrer vos appareils (PC, smartphone, box, etc.) et à vider le cache de votre navigateur.|
 |Les adresses IP ne sont pas identiques|Vous devrez donc remplacer l’adresse IP indiquée dans la zone DNS de votre domaine par celle inscrite dans la partie « Informations générales » de votre hébergement OVH.
 Si vous ne disposez pas de la gestion de la zone DNS concernée, merci de contacter la personne qui possède cette gestion.
