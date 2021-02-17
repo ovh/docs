@@ -1,21 +1,21 @@
 ---
-title: 'Résoudre le cas « Site non installé »'
+title: Résoudre le cas « Site non installé »
 slug: erreur-site-non-installe
 excerpt: Diagnostiquez l'erreur « Site non installé »
 section: "Configuration de l'hébergement"
 order: 2
 ---
 
-**Dernière mise à jour le 10/02/2021**
+**Dernière mise à jour le 17/02/2021**
 
 
 ## Objectif
 
-Une page **Site non installé** apparaît parfois en lieu et place de votre site, notamment lors de la mise en place de vos services d'hébergement.
-
-![site-not-installed](images/site-not-installed.png)
+Votre site peut afficher une page **Site non installé**, notamment lors de sa mise en place.
 
 **Trouvez l'origine de la page « Site non installé »**
+
+![site-not-installed](images/site-not-installed.png)
 
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
@@ -29,44 +29,45 @@ Une page **Site non installé** apparaît parfois en lieu et place de votre site
 
 ## En pratique
 
-La page **Site non installé** s’affiche uniquement dans deux cas précis :
+La page **Site non installé** s’affiche dans deux situations :
 
-Cas 1 : Le nom de votre site n’apparaît pas dans le [multisite](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-1-acceder-a-la-gestion-multisite) de votre hébergement OVHcloud.
+- Le nom de votre site n’apparaît pas dans le [multisite](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-1-acceder-a-la-gestion-multisite) de votre hébergement.
 
-Cas 2 : Votre domaine n'est pas relié à l’adresse **IPV4** (exemple : « 213.186.33.xx ») de votre hébergement via sa [zone DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/). 
+- Votre domaine n'est pas relié à l’adresse **IPV4** (exemple : `213.186.33.24`) de votre hébergement via sa `zone DNS`. 
 
 > Vous pouvez retrouver l’adresse `IPv4` de votre hébergement web dans votre espace client OVHcloud : 
 - Cliquez sur `Web Cloud`, puis sur le nom de votre site dans la rubrique `Hébergements`. 
 - L'adresse IPV4 apparaîtra alors dans l’onglet `Informations générales`.
-> Si votre nom de domaine est géré depuis votre espace client OVH, les serveurs DNS auxquels il est connecté sont indiqués dans la partie « Domaines » et « serveurs DNS ».
+> 
+> Si votre nom de domaine est géré depuis votre espace client OVH, les serveurs DNS auxquels il est connecté sont indiqués dans la partie `Domaines` et dans l'onglet `serveurs DNS`.
 
-Les vérifications suivantes vous permettront de résoudre l’erreur « Site non installé » dans ces deux situations.
+Les étapes suivantes vous permettront de résoudre l’erreur `Site non installé` dans ces deux situations.
 
 ### Étape 1 : Vérifier que votre domaine est bien présent dans le multisite de votre hébergement
 
-Connectez-vous à votre espace client OVHcloud, puis cliquez sur « Web cloud » en haut à gauche de votre écran, puis sur « Hébergements » dans la barre de services également à gauche. 
-Dans la liste de vos hébergements, cliquez sur celui de votre site, puis sur l’onglet « Multisite ». Faites ensuite une recherche dans le tableau qui apparaît. Plusieurs scénarios sont possibles : 
+Dans votre espace client OVHcloud, cliquez sur `Web cloud` en haut de votre écran. Rendez vous ensuite dans `Hébergements`. 
+
+Dans la liste de vos hébergements, choisissez celui de votre site. Allez dans l’onglet `Multisite`. Plusieurs scénarios sont possibles : 
 
 |Scénarios possibles|Action à entreprendre|
 |---|---|
-|Le nom de votre site apparaît dans le tableau.|Si vous venez d’ajouter le nom de votre site dans le multisite de votre hébergement, patientez une vingtaine de minutes puis redémarrez votre ordinateur ou votre tablette. Si le message « Site non installé » apparaît encore, poursuivez vers [l'étape 2](https://docs.ovh.com/fr/hosting/erreur-site-non-installe/#etape-2-verifier-la-configuration-dns-du-nom-de-domaine)|
-|Le nom de votre site n'apparaît plus dans le tableau.|Si vous aviez ajouté le nom de domaine et qu'il n'apparaît plus dans le tableau, il se peut que vous n'ayez pas effectué toutes les étapes pour ajouter celui-ci à votre hébergement web ou que vous l'ayez supprimé par inadvertance. Afin d'ajouter de nouveau le nom de domaine,  suivez les étapes décrites [ici](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#en-pratique).|
-|Le nom de votre site n’apparaît pas dans le tableau.|Vous n'avez pas encore ajouté votre site au multisite de votre hébergement web OVH. Pour effectuer cette manipulation, suivez les étapes décrites [ici](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#en-pratique).|
-|Le nom de domaine n’est pas entièrement géré depuis votre compte et a été supprimé sans action de votre part.|Cette situation peut apparaître lorsque le nom de domaine de votre site ou sa zone DNS ne sont pas gérés depuis le même espace client que votre hébergement ou qu’ils ne sont pas gérés par OVHcloud.
-Pour effectuer correctement l’ajout de votre domaine dans cette situation, suivez les étapes décrites [ici](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/%23etape-22-ajouter-un-nom-de-domaine-externe).|
+|Le nom de votre site apparaît dans le tableau.|Si vous venez d’ajouter le nom de votre site dans le multisite de votre hébergement, patientez une vingtaine de minutes puis redémarrez votre ordinateur ou votre tablette. Si le message « Site non installé » apparaît encore, poursuivez vers [l'étape 2](../erreur-site-non-installe/#etape-2-verifier-la-configuration-dns-du-nom-de-domaine)|
+|Le nom de votre site n’apparaît pas dans le tableau.|Vous n'avez pas encore ajouté votre site au multisite de votre hébergement web OVH. Pour effectuer cette manipulation, suivez les étapes décrites [ici](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine).|
+|Le nom de domaine n’est pas entièrement géré depuis votre compte et a été supprimé sans action de votre part.|Cette situation peut apparaître lorsque le nom de domaine de votre site ou sa zone DNS ne sont pas gérés depuis votre espace client OVHcloud.
+Pour effectuer correctement l’ajout de votre domaine dans cette situation, suivez les étapes décrites [ici](../multisites-configurer-un-multisite-sur-mon-hebergement-web/%23etape-22-ajouter-un-nom-de-domaine-externe).|
 
 ### Étape 2 : Vérifier que votre nom de domaine est relié à votre hébergement par sa zone DNS
 
 Cette étape vise à vérifier que votre domaine, via sa zone DNS, est bien relié à l’hébergement de votre site.
 
-#### Etape 2.1 : Accéder au site qui gère votre domaine
+#### Étape 2.1 : Accéder au site qui gère votre domaine
 
 Vous devez d’abord accéder à l’espace client par lequel votre domaine est géré, afin de déterminer les serveurs DNS auxquels il est relié. Il peut s’agir notamment :
 
 - De votre espace client OVHcloud, ou de celui de votre webmaster, collègue, associé, etc.
 - De son équivalent chez l’ancien hébergeur de votre site ou de l’espace client sur lequel la gestion de votre domaine a été transférée récemment.
 
-Pour déterminer le nom de l’entreprise qui gère techniquement votre domaine (sous la mention « registrar ») et les serveurs DNS auxquels il est lié, vous pouvez également utiliser notre outil [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl)
+Pour déterminer le nom de l’entreprise qui gère techniquement votre domaine (sous la mention « registrar ») et les serveurs DNS auxquels il est lié, vous pouvez également utiliser notre outil [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl) FIN RELECTURE
 
 > Attention : selon votre nom de domaine, il est possible que ces informations ne soient pas visibles dans le WHOIS. Nous vous invitons alors à vous référer au site du registre de votre nom de domaine (Vous pourrez retrouver ce dernier en tapant « NIC [extension de votre nom de domaine (.fr, .com, etc.)] dans votre moteur de recherche).
 
@@ -74,9 +75,9 @@ Pour déterminer le nom de l’entreprise qui gère techniquement votre domaine 
 
 Vous êtes connecté à l’espace client qui gère votre nom de domaine. Vous pouvez maintenant déterminer ses serveurs DNS. 
 
-Si votre nom de domaine est géré dans un espace client OVH, ses serveurs DNS sont notés dans la partie « Web », puis « Domaines » (cliquez sur le nom de votre site dans la liste) et sur l’onglet « Serveurs DNS ». 
+Si votre nom de domaine est géré dans un espace client OVH, ses serveurs DNS sont notés dans la partie `Web cloud`, puis `Domaines` (cliquez sur le nom de votre site dans la liste) et sur l’onglet `Serveurs DNS`. 
 
-> Attention : si, dans cette partie, le titre apparaissant dans le haut de la page est « Zone DNS de [votre domaine] » et non votre nom de domaine uniquement, c’est que ce dernier n’est pas géré depuis votre espace client OVH.
+> Attention : si, dans cette partie, le titre apparaissant dans le haut de la page est `Zone DNS` de [votre domaine] et non votre nom de domaine uniquement, c’est que ce dernier n’est pas géré depuis votre espace client OVH.
 
 Si votre nom de domaine est géré par une autre entreprise qu’OVHcloud, nous vous conseillons, en cas de besoin, de contacter cette société.
 
@@ -88,7 +89,7 @@ Plusieurs cas sont alors possibles :
 
 |Scénarios possibles|Action à entreprendre|
 |---|---|
-|Votre nom de domaine, ses serveurs DNS et sa zone DNS sont gérés depuis un espace client OVHcloud.|Vous retrouverez cette adresse IP dans l’onglet « Zone DNS » (Entrée de type A) dans la colonne de droite. Notez cette adresse et passez à l’étape [2.4](lien interne en markdown?).|
+|Votre nom de domaine, ses serveurs DNS et sa zone DNS sont gérés depuis un espace client OVHcloud.|Vous retrouverez cette adresse IP dans l’onglet « Zone DNS » (Entrée de type A) dans la colonne de droite. Notez cette adresse et passez à l’étape 2.4.|
 |Votre nom de domaine et ses serveurs DNS sont gérés depuis votre espace client OVHcloud, mais sa zone DNS est inaccessible.|Cette situation intervient lorsque la zone DNS de votre domaine est gérée par un autre compte client OVHcloud. Disposez-vous d’un autre compte ? Avez-vous vérifié s’il ne comporte pas cette zone DNS ? Il est également possible que la gestion de ce domaine vous ait été délivrée par un tiers. Avez-vous contacté cette personne à ce sujet ? Peut-être que cette personne a simplement omis de vous donner la gestion de la zone DNS de votre nom de domaine ?
 Pour les opérations permettant de récupérer la gestion de votre zone DNS depuis un autre compte client, cliquez [ici](https://docs.ovh.com/fr/customer/gestion-des-contacts/#modifier-les-contacts-dun-service).|
 |Votre nom de domaine est géré par OVHcloud, mais pas les serveurs DNS qui lui sont associés. |Dans cette situation, si vous n’avez pas accès à la zone DNS à laquelle est rattaché votre domaine ou que vous ne retrouvez pas son adresse IP, vous devrez contacter la société qui gère ses DNS.|
