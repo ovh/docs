@@ -94,7 +94,7 @@ Force the right Node.js engine for Camaleon Javascript:
 sed -i 's@\["nodejs", "node"\],@["/usr/local/nodejs14/bin/node"],@' ${GEM_HOME}/gems/execjs-2.7.0/lib/execjs/runtimes.rb
 ```
 
-Run Camaleon with your `sqlite` database (beware, there are four different command to run):
+Run Camaleon with your `sqlite` database (beware, there are four different commands to run):
 
 ```sh
 rails generate camaleon_cms:install
