@@ -62,7 +62,9 @@ Cette étape vise à vérifier que votre domaine, via sa zone DNS, est bien reli
 
 #### Étape 2.1 : Accéder au site qui gère votre domaine
 
-Vous devez d’abord accéder à l’espace client par lequel votre domaine est géré, afin de déterminer les serveurs DNS auxquels il est relié. Il peut s’agir notamment :
+Vous devez d’abord accéder à l’espace client par lequel votre domaine est géré, afin de déterminer les serveurs DNS auxquels il est relié. 
+
+Il peut s’agir notamment :
 
 - De votre espace client OVHcloud, ou de celui de votre webmaster, collègue, associé, etc.
 - De son équivalent chez l’ancien hébergeur de votre site ou de l’espace client sur lequel la gestion de votre domaine a été transférée récemment.
@@ -83,33 +85,36 @@ Si votre nom de domaine n'est géré par OVHcloud, contactez l'entreprise concer
 
 #### Étape 2.3 : Retrouver l’adresse IP indiquée dans la zone DNS de votre domaine
 
-Vous avez accès à l’interface de gestion de votre domaine et vous savez à quels serveurs DNS, il est rattaché. Il vous faut maintenant retrouver, dans sa zone DNS, l’adresse IP à laquelle il est connecté. Ceci afin de vérifier qu’elle correspond bien à celle de l’hébergement sur lequel vous avez installé votre site. 
+Vous avez accès à l’interface de gestion de votre domaine et vous connaissez les serveurs DNS auxquels il est rattaché. 
+
+Vous pouvez maintenant vérifier, dans sa zone DNS, si l'adresse IP de votre domaine correspond bien à celle de l’hébergement de votre site. 
 
 Plusieurs cas sont alors possibles : 
 
 |Scénarios possibles|Action à entreprendre|
 |---|---|
-|Votre nom de domaine, ses serveurs DNS et sa zone DNS sont gérés depuis un espace client OVHcloud.|Vous retrouverez cette adresse IP dans l’onglet « Zone DNS » (Entrée de type A) dans la colonne de droite. Notez cette adresse et passez à l’étape 2.4.|
-|Votre nom de domaine et ses serveurs DNS sont gérés depuis votre espace client OVHcloud, mais sa zone DNS est inaccessible.|Cette situation intervient lorsque la zone DNS de votre domaine est gérée par un autre compte client OVHcloud. Disposez-vous d’un autre compte ? Avez-vous vérifié s’il ne comporte pas cette zone DNS ? Il est également possible que la gestion de ce domaine vous ait été délivrée par un tiers. Avez-vous contacté cette personne à ce sujet ? Peut-être que cette personne a simplement omis de vous donner la gestion de la zone DNS de votre nom de domaine ? Pour les opérations permettant de récupérer la gestion de votre zone DNS depuis un autre compte client, cliquez [ici](https://docs.ovh.com/fr/customer/gestion-des-contacts/#modifier-les-contacts-dun-service).|
-|Votre nom de domaine est géré par OVHcloud, mais pas les serveurs DNS qui lui sont associés. |Dans cette situation, si vous n’avez pas accès à la zone DNS à laquelle est rattaché votre domaine ou que vous ne retrouvez pas son adresse IP, vous devrez contacter la société qui gère ses DNS.|
+|Votre nom de domaine, ses serveurs DNS et sa zone DNS sont gérés depuis un espace client OVHcloud.|Vous retrouverez son adresse IP dans l’onglet `Zone DNS` (Entrée de type A) dans la colonne de droite. Notez cette adresse et passez à l’étape 2.4.|
+|Votre nom de domaine et ses serveurs DNS sont gérés depuis votre espace client OVHcloud, mais sa zone DNS est inaccessible.|Cette situation intervient lorsque la zone DNS de votre domaine est gérée par un autre compte client OVHcloud. Disposez-vous d’un autre compte ? Avez-vous vérifié s’il ne comporte pas cette zone DNS ? Il est également possible que la gestion de ce domaine vous ait été donnée par un tiers. Avez-vous contacté cette personne à ce sujet ? Peut-être qu'elle a simplement omis de vous donner la gestion de la zone DNS pour ce domaine ? Pour les opérations permettant de récupérer la gestion de votre zone DNS depuis un autre compte client, cliquez [ici](https://docs.ovh.com/fr/customer/gestion-des-contacts/#modifier-les-contacts-dun-service).|
+|Votre nom de domaine est géré par OVHcloud, mais pas les serveurs DNS qui lui sont associés. |Dans cette situation, si vous n’avez pas accès à sa zone DNS ou que vous ne retrouvez pas son adresse IP, contactez la société qui gère les DNS de votre domaine.|
 |Votre nom de domaine et/ou sa zone DNS sont gérés par OVHcloud, mais par un espace client auquel vous n’avez pas accès.|Vous devrez donc contacter la personne qui en a la gestion. Si cette personne est injoignable et que vous êtes propriétaire de votre nom de domaine, vous pourrez également en récupérer la gestion par cette [procédure](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeContacts.cgi).|
 
 #### Étape 2.4 : Récupérer l’adresse IPV4 de votre hébergement OVHcloud
 
 Vous disposez de l’adresse IP à laquelle est rattachée votre nom de domaine. Vous devez maintenant vérifier qu’elle correspond bien à celle de votre serveur d’hébergement web.
-Pour retrouver cette dernière, rendez-vous dans la partie « Hébergements » de votre espace client OVHcloud et positionnez-vous dans l’onglet Informations générales.
+
+Pour retrouver cette dernière, rendez vous dans la partie `Hébergements` de votre espace client OVHcloud et positionnez-vous dans l’onglet `Informations générales`.
 
 ![hosting-general-informations](images/hosting-general-informations.png)
 
-Vous pouvez à présent comparer cette adresse IP et celle inscrite dans la zone DNS active de votre domaine. Deux cas possibles : 
+Vous pouvez à présent comparer cette adresse IP et celle inscrite dans la zone DNS active de votre domaine.
 
 |Scénarios possibles|Action à entreprendre|
 |---|---|
-|Les adresses IP sont identiques|Ceci indique que la configuration de votre nom de domaine est correcte. Si vous avez modifié sa configuration DNS il y a moins de 48 heures, laissez passer ce délai afin que le changement soit pleinement effectif. Pensez également à redémarrer vos appareils (PC, smartphone, box, etc.) et à vider le cache de votre navigateur.|
-|Les adresses IP ne sont pas identiques|Vous devrez donc remplacer l’adresse IP indiquée dans la zone DNS de votre domaine par celle inscrite dans la partie « Informations générales » de votre hébergement OVH.
-Si vous ne disposez pas de la gestion de la zone DNS concernée, merci de contacter la personne qui possède cette gestion.
-Si votre domaine est lié à une zone DNS OVH, nous vous invitons à suivre les étapes décrites dans notre documentation «[Éditer une zone DNS OVH](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/)». Dans le cas contraire, suivez les indications décrites dans l'interface de l’hébergeur de votre domaine. 
-Une fois la modification effectuée, un temps de propagation de 24 heures maximum est nécessaire afin que le changement soit effectif.|
+|Aucune adresse IP n'est indiquée dans la zone DNS de votre domaine|Ajoutez l'adresse `IPv4` de votre hébergement (entrée de type `A`) puis patientez 24 heures maximum.|
+|Les adresses IP sont identiques|Ceci indique que la configuration de votre nom de domaine est correcte. Suite aux dernières modifications dans vos DNS, patientez 48 heures maximum (Délai de propagation DNS). Pensez également à redémarrer vos appareils (PC, smartphone, box, etc.) et à vider le cache de votre navigateur.|
+|Les adresses IP ne sont pas identiques|Vous devrez donc remplacer l’adresse IP indiquée dans la zone DNS active de votre domaine par celle de votre hébergement.|
+
+Si votre domaine est lié à une zone DNS OVHcloud, nous vous invitons à suivre les étapes décrites dans notre documentation «[Éditer une zone DNS OVH](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/)». Dans le cas contraire, suivez les indications décrites dans l'interface de l’hébergeur de votre domaine. 
 
 ## Aller plus loin
 
