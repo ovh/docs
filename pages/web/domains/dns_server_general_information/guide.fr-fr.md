@@ -75,7 +75,8 @@ Dans les champs de texte, **remplacez** les valeurs actuelles des serveurs DNS p
 
 > [!warning]
 >
-> Il ne faut pas mélanger un groupe de serveurs DNS avec un autre. Par exemple, déclarer *dns19.ovh.net* et *ns19.ovh.net* avec une paire. 
+> Il ne faut pas mélanger un groupe de serveurs DNS avec un autre. 
+> Par exemple, *dns19.ovh.net* et *ns19.ovh.net* correspondent à un groupe de serveurs DNS OVHcloud, ils sont identiques et synchronisés. Si vous y ajoutez des serveurs DNS externe à OVHcloud (ou d'un groupe OVHcloud différent), la résolution DNS se fera de manière aléatoire entre les serveurs DNS OVHcloud et les serveurs DNS externes renseignés.
 
 Une fois que vous avez saisi ces informations, cliquez sur `Appliquer la configuration`{.action}. Les statuts des serveurs DNS seront alors mis à jour dans le tableau et afficheront les nouvelles informations que vous venez de fournir.
 
