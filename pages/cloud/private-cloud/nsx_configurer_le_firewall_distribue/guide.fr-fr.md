@@ -10,7 +10,7 @@ order: 08
 
 ## Objectif
 
-Le pare-feu permet d’appliquer des restrictions de communication par le trafic géré par la Edge, via plusieurs paramètres configurables en terme de source ou de destination par exemple.
+Le firewall distribué permet de surveiller les connexions actives afin d’autoriser ou de bloquer le trafic au niveau ESXi.
 
 **Ce guide explique comment établir cette solution.**
 
