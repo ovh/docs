@@ -98,7 +98,12 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 
 **TXT** : Permet d'ajouter la valeur de votre choix , au format textuel, dans la zone DNS de votre nom de domaine. Cet enregistrement est souvent utilisé lors de processus de vérification.
 
-**SRV** : Permet d'indiquer l'adresse d'un serveur gérant un service. Par exemple, cet enregistrement peut indiquer l'adresse d'un serveur SIP ou celle d'un serveur permettant à un logiciel de messagerie de se configurer automatiquement, selon le principe de l'autodiscover.
+> [!warning]
+> 
+> L'enregistrement TXT est limité à 255 caractères. Il est néanmoins possible, dans certains cas, de scinder votre valeur en plusieurs enregistrements. Renseignez-vous auprès de votre prestataire lorsque celui-ci vous demande de renseigner une valeur dépassant le quota des 255 caractères.
+> 
+
+**SRV** : Permet d'indiquer l'adresse d'un serveur gérant un service. Par exemple, il peut indiquer l'adresse d'un serveur SIP ou celle d'un serveur permettant la configuration automatique d'un logiciel de messagerie.
 
 **CAA** : Permet de lister les autorités de certification autorisées à délivrer des certificats SSL pour un nom de domaine.
 
