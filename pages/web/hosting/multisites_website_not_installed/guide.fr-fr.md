@@ -70,7 +70,7 @@ Pour déterminer le nom de l’entreprise qui gère techniquement votre domaine 
 
 > Attention : selon votre nom de domaine, il est possible que ces informations ne soient pas visibles dans le WHOIS. Nous vous invitons alors à vous référer au site du registre de votre nom de domaine (Vous pourrez retrouver ce dernier en tapant `NIC` suivi de l'extension de votre nom de domaine (.com, .fr, etc.) dans votre moteur de recherche).
 
-#### Etape 2.2 : Déterminer les serveurs DNS de votre domaine
+#### Étape 2.2 : Déterminer les serveurs DNS de votre domaine
 
 Vous êtes connecté à l’espace client qui gère votre nom de domaine. Vous pouvez maintenant déterminer ses serveurs DNS. 
 
@@ -80,7 +80,7 @@ Si votre nom de domaine est géré dans un espace client OVHcloud, ses serveurs 
 
 Si votre nom de domaine n'est géré par OVHcloud, contactez l'entreprise concernée.
 
-#### Etape 2.3 : Retrouver l’adresse IP indiquée dans la zone DNS de votre domaine
+#### Étape 2.3 : Retrouver l’adresse IP indiquée dans la zone DNS de votre domaine
 
 Vous avez accès à l’interface de gestion de votre domaine et vous savez à quels serveurs DNS, il est rattaché. Il vous faut maintenant retrouver, dans sa zone DNS, l’adresse IP à laquelle il est connecté. Ceci afin de vérifier qu’elle correspond bien à celle de l’hébergement sur lequel vous avez installé votre site. 
 
@@ -94,7 +94,7 @@ Pour les opérations permettant de récupérer la gestion de votre zone DNS depu
 |Votre nom de domaine est géré par OVHcloud, mais pas les serveurs DNS qui lui sont associés. |Dans cette situation, si vous n’avez pas accès à la zone DNS à laquelle est rattaché votre domaine ou que vous ne retrouvez pas son adresse IP, vous devrez contacter la société qui gère ses DNS.|
 |Votre nom de domaine et/ou sa zone DNS sont gérés par OVHcloud, mais par un espace client auquel vous n’avez pas accès.|Vous devrez donc contacter la personne qui en a la gestion. Si cette personne est injoignable et que vous êtes propriétaire de votre nom de domaine, vous pourrez également en récupérer la gestion par cette [procédure](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeContacts.cgi).|
 
-#### Etape 2.4 : Récupérer l’adresse IPV4 de votre hébergement OVHcloud
+#### Étape 2.4 : Récupérer l’adresse IPV4 de votre hébergement OVHcloud
 
 Vous disposez de l’adresse IP à laquelle est rattachée votre nom de domaine. Vous devez maintenant vérifier qu’elle correspond bien à celle de votre serveur d’hébergement web.
 Pour retrouver cette dernière, rendez-vous dans la partie « Hébergements » de votre espace client OVHcloud et positionnez-vous dans l’onglet Informations générales.
