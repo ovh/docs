@@ -53,8 +53,7 @@ Dans la liste de vos hébergements, choisissez celui de votre site. Allez dans l
 |---|---|
 |Le nom de votre site apparaît dans le tableau.|Si vous venez d’ajouter le nom de votre site dans le multisite de votre hébergement, patientez une vingtaine de minutes puis redémarrez votre ordinateur ou votre tablette. Si le message « Site non installé » apparaît encore, poursuivez vers [l'étape 2](../erreur-site-non-installe/#etape-2-verifier-la-configuration-dns-du-nom-de-domaine)|
 |Le nom de votre site n’apparaît pas dans le tableau.|Vous n'avez pas encore ajouté votre site au multisite de votre hébergement web OVH. Pour effectuer cette manipulation, suivez les étapes décrites [ici](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine).|
-|Le nom de domaine n’est pas entièrement géré depuis votre compte et a été supprimé sans action de votre part.|Cette situation peut apparaître lorsque le nom de domaine de votre site ou sa zone DNS ne sont pas gérés depuis votre espace client OVHcloud.
-</br>Pour effectuer correctement l’ajout de votre domaine dans cette situation, suivez les étapes décrites [ici](../multisites-configurer-un-multisite-sur-mon-hebergement-web/%23etape-22-ajouter-un-nom-de-domaine-externe).|
+|Le nom de domaine n’est pas entièrement géré depuis votre compte et a été supprimé sans action de votre part.|Cette situation peut apparaître lorsque le nom de domaine de votre site ou sa zone DNS ne sont pas gérés depuis votre espace client OVHcloud. Pour effectuer correctement l’ajout de votre domaine dans cette situation, suivez les étapes décrites [ici](../multisites-configurer-un-multisite-sur-mon-hebergement-web/%23etape-22-ajouter-un-nom-de-domaine-externe).|
 
 ### Étape 2 : Vérifier que votre nom de domaine est relié à votre hébergement par sa zone DNS
 
