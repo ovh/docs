@@ -10,9 +10,9 @@ order: 08
 
 ## Objectif
 
-Le firewall distribué permet 
+Le pare-feu permet d’appliquer des restrictions de communication par le trafic géré par la Edge, via plusieurs paramètres configurables en terme de source ou de destination par exemple.
 
-**Ce guide explique comment établir cette solution**
+**Ce guide explique comment établir cette solution.**
 
 ## Prérequis
 
