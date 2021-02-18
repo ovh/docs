@@ -114,7 +114,7 @@ Vous pouvez à présent comparer cette adresse IP et celle inscrite dans la zone
 |Les adresses IP sont identiques|Ceci indique que la configuration de votre nom de domaine est correcte. Suite aux dernières modifications dans vos DNS, patientez 48 heures maximum (Délai de propagation DNS). Pensez également à redémarrer vos appareils (PC, smartphone, box, etc.) et à vider le cache de votre navigateur.|
 |Les adresses IP ne sont pas identiques|Vous devrez donc remplacer l’adresse IP indiquée dans la zone DNS active de votre domaine par celle de votre hébergement.|
 
-Si votre domaine est lié à une zone DNS OVHcloud, nous vous invitons à suivre les étapes décrites dans notre documentation «[Éditer une zone DNS OVH](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/)». Dans le cas contraire, suivez les indications décrites dans l'interface de l’hébergeur de votre domaine. 
+Si votre domaine est lié à une zone DNS OVHcloud, nous vous invitons à consulter [Éditer une zone DNS OVH](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/). Dans le cas contraire, suivez les indications décrites dans l'interface de l’hébergeur de votre domaine. 
 
 ## Aller plus loin
 
