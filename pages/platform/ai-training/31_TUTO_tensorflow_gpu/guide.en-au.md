@@ -25,9 +25,7 @@ If you want to launch it from the [OVHcloud Control Panel](https://ca.ovh.com/au
 If you want to launch it with the `CLI`, just choose the number of GPU (`<nb-gpus>`) to use on jour job and use the following command :
 
 ``` {.bash}
-ovhai job run \
-    --image ovhcom/ai-training-tensorflow:2.3.0 \
-    --gpu <nb-gpus>
+ovhai job run ovhcom/ai-training-tensorflow:2.3.0 --gpu <nb-gpus>
 ```
 
 You can then reach your notebook's url once the job is `Running`.
@@ -43,7 +41,7 @@ Inside your notebook, open a new `Terminal` tab by clicking `File` > `New` > `Te
 Run the following command in the notebook's terminal to clone the repository :
 
 ``` {.bash}
-git clone git@github.com:ovh/ai-training-examples.git
+git clone https://github.com/ovh/ai-training-examples.git
 ```
 
 ## Experiment with examples notebooks
