@@ -31,15 +31,16 @@ Votre site peut afficher une page **Site non installé**, notamment lors de sa m
 
 La page **Site non installé** s’affiche dans deux situations :
 
-- Le nom de votre site n’apparaît pas dans le [multisite](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-1-acceder-a-la-gestion-multisite) de votre hébergement.
+1. Le nom de votre site n’apparaît pas dans le [multisite](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-1-acceder-a-la-gestion-multisite) de votre hébergement.
 
-- Votre domaine n'est pas relié à l’adresse **IPV4** (exemple : `213.186.33.24`) de votre hébergement via sa `zone DNS`. 
+2. Votre domaine n'est pas relié à l’adresse **IPV4** (exemple : `213.186.33.24`) de votre hébergement via sa `zone DNS`. 
 
-> Vous pouvez retrouver l’adresse `IPv4` de votre hébergement web dans votre espace client OVHcloud : 
+Vous pouvez retrouver l’adresse `IPv4` de votre hébergement web dans votre espace client OVHcloud : 
+
 - Cliquez sur `Web Cloud`, puis sur le nom de votre site dans la rubrique `Hébergements`. 
 - L'adresse IPV4 apparaîtra alors dans l’onglet `Informations générales`.
-> 
-> Si votre nom de domaine est géré depuis votre espace client OVH, les serveurs DNS auxquels il est connecté sont indiqués dans la partie `Domaines` et dans l'onglet `serveurs DNS`.
+ 
+Si votre nom de domaine est géré depuis votre espace client OVH, les serveurs DNS auxquels il est connecté sont indiqués dans la partie `Domaines` et dans l'onglet `serveurs DNS`.
 
 Les étapes suivantes vous permettront de résoudre l’erreur `Site non installé` dans ces deux situations.
 
@@ -89,8 +90,7 @@ Plusieurs cas sont alors possibles :
 |Scénarios possibles|Action à entreprendre|
 |---|---|
 |Votre nom de domaine, ses serveurs DNS et sa zone DNS sont gérés depuis un espace client OVHcloud.|Vous retrouverez cette adresse IP dans l’onglet « Zone DNS » (Entrée de type A) dans la colonne de droite. Notez cette adresse et passez à l’étape 2.4.|
-|Votre nom de domaine et ses serveurs DNS sont gérés depuis votre espace client OVHcloud, mais sa zone DNS est inaccessible.|Cette situation intervient lorsque la zone DNS de votre domaine est gérée par un autre compte client OVHcloud. Disposez-vous d’un autre compte ? Avez-vous vérifié s’il ne comporte pas cette zone DNS ? Il est également possible que la gestion de ce domaine vous ait été délivrée par un tiers. Avez-vous contacté cette personne à ce sujet ? Peut-être que cette personne a simplement omis de vous donner la gestion de la zone DNS de votre nom de domaine ?
-Pour les opérations permettant de récupérer la gestion de votre zone DNS depuis un autre compte client, cliquez [ici](https://docs.ovh.com/fr/customer/gestion-des-contacts/#modifier-les-contacts-dun-service).|
+|Votre nom de domaine et ses serveurs DNS sont gérés depuis votre espace client OVHcloud, mais sa zone DNS est inaccessible.|Cette situation intervient lorsque la zone DNS de votre domaine est gérée par un autre compte client OVHcloud. Disposez-vous d’un autre compte ? Avez-vous vérifié s’il ne comporte pas cette zone DNS ? Il est également possible que la gestion de ce domaine vous ait été délivrée par un tiers. Avez-vous contacté cette personne à ce sujet ? Peut-être que cette personne a simplement omis de vous donner la gestion de la zone DNS de votre nom de domaine ? Pour les opérations permettant de récupérer la gestion de votre zone DNS depuis un autre compte client, cliquez [ici](https://docs.ovh.com/fr/customer/gestion-des-contacts/#modifier-les-contacts-dun-service).|
 |Votre nom de domaine est géré par OVHcloud, mais pas les serveurs DNS qui lui sont associés. |Dans cette situation, si vous n’avez pas accès à la zone DNS à laquelle est rattaché votre domaine ou que vous ne retrouvez pas son adresse IP, vous devrez contacter la société qui gère ses DNS.|
 |Votre nom de domaine et/ou sa zone DNS sont gérés par OVHcloud, mais par un espace client auquel vous n’avez pas accès.|Vous devrez donc contacter la personne qui en a la gestion. Si cette personne est injoignable et que vous êtes propriétaire de votre nom de domaine, vous pourrez également en récupérer la gestion par cette [procédure](https://www.ovh.com/fr/cgi-bin/fr/procedure/procedureChangeContacts.cgi).|
 
