@@ -13,9 +13,9 @@ order: 2
 
 Votre site peut afficher une page **Site non installé**, notamment lors de sa mise en place.
 
-**Trouvez l'origine de la page « Site non installé »**
-
 ![site-not-installed](images/site-not-installed.png)
+
+**Trouvez l'origine de la page « Site non installé »**
 
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
@@ -67,19 +67,19 @@ Vous devez d’abord accéder à l’espace client par lequel votre domaine est 
 - De votre espace client OVHcloud, ou de celui de votre webmaster, collègue, associé, etc.
 - De son équivalent chez l’ancien hébergeur de votre site ou de l’espace client sur lequel la gestion de votre domaine a été transférée récemment.
 
-Pour déterminer le nom de l’entreprise qui gère techniquement votre domaine (sous la mention « registrar ») et les serveurs DNS auxquels il est lié, vous pouvez également utiliser notre outil [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl) FIN RELECTURE
+Pour déterminer le nom de l’entreprise qui gère techniquement votre domaine (sous la mention « registrar ») et les serveurs DNS auxquels il est lié, vous pouvez également utiliser notre outil [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl)
 
-> Attention : selon votre nom de domaine, il est possible que ces informations ne soient pas visibles dans le WHOIS. Nous vous invitons alors à vous référer au site du registre de votre nom de domaine (Vous pourrez retrouver ce dernier en tapant « NIC [extension de votre nom de domaine (.fr, .com, etc.)] dans votre moteur de recherche).
+> Attention : selon votre nom de domaine, il est possible que ces informations ne soient pas visibles dans le WHOIS. Nous vous invitons alors à vous référer au site du registre de votre nom de domaine (Vous pourrez retrouver ce dernier en tapant `NIC` suivi de l'extension de votre nom de domaine (.com, .fr, etc.) dans votre moteur de recherche).
 
 #### Etape 2.2 : Déterminer les serveurs DNS de votre domaine
 
 Vous êtes connecté à l’espace client qui gère votre nom de domaine. Vous pouvez maintenant déterminer ses serveurs DNS. 
 
-Si votre nom de domaine est géré dans un espace client OVH, ses serveurs DNS sont notés dans la partie `Web cloud`, puis `Domaines` (cliquez sur le nom de votre site dans la liste) et sur l’onglet `Serveurs DNS`. 
+Si votre nom de domaine est géré dans un espace client OVHcloud, ses serveurs DNS sont notés dans la partie `Web cloud`, puis `Domaines` (sélectionnez votre domaine) et dans l’onglet `Serveurs DNS`. 
 
-> Attention : si, dans cette partie, le titre apparaissant dans le haut de la page est `Zone DNS` de [votre domaine] et non votre nom de domaine uniquement, c’est que ce dernier n’est pas géré depuis votre espace client OVH.
+> Attention : si, dans cette partie, le titre apparaissant dans le haut de la page est `Zone DNS` de (votre domaine) et non votre nom de domaine uniquement, c’est que ce dernier n’est pas géré depuis cet espace client OVHcloud.
 
-Si votre nom de domaine est géré par une autre entreprise qu’OVHcloud, nous vous conseillons, en cas de besoin, de contacter cette société.
+Si votre nom de domaine n'est géré par OVHcloud, contactez l'entreprise concernée.
 
 #### Etape 2.3 : Retrouver l’adresse IP indiquée dans la zone DNS de votre domaine
 
