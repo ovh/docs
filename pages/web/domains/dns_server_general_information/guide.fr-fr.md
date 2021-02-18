@@ -16,13 +16,13 @@ DNS signifie **D**omain **N**ame **S**ystem, c'est un ensemble d'éléments perm
 
 Retrouvez l'explication complète sur le guide « [Éditer une zone DNS OVHcloud](../editer-ma-zone-dns/#understanddns) ».
 
-### les serveurs DNS 
+### Les serveurs DNS 
 
 Les **serveurs DNS** contiennent les fichiers de configurations DNS des noms de domaine, appelés **zones DNS**.
 
 ![DNS](images/dnsserver.png){.thumbnail}
 
-Les zones DNS sont généralement utilisés par paires ou plus, des copies servant de sauvegardes en cas de défaillance d'un des serveurs DNS.
+Les serveurs DNS sont généralement utilisés en groupes (en général 2), dans le but d'obtenir une redondance en cas de défaillance de l'un des serveurs DNS.
 
 **Découvrez comment modifier les serveurs DNS pour votre nom de domaine OVHcloud.**
 
@@ -67,7 +67,9 @@ Le tableau qui apparaît affiche les serveurs DNS actuellement définis par OVHc
 
 ![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
 
-### Modifier les serveurs DNS 
+### Modifier les serveurs DNS
+
+Si vous souhaitez utiliser des serveurs DNS externes, vous devez les substituer aux serveurs DNS OVHcloud et non les additionner à ces derniers.
 
 Cliquez sur `Modifier les serveurs DNS`{.action} à droite.
 
@@ -75,8 +77,8 @@ Dans les champs de texte, **remplacez** les valeurs actuelles des serveurs DNS p
 
 > [!warning]
 >
-> Il ne faut pas mélanger un groupe de serveurs DNS avec un autre. 
-> Par exemple, *dns19.ovh.net* et *ns19.ovh.net* correspondent à un groupe de serveurs DNS OVHcloud, ils sont identiques et synchronisés. Si vous y ajoutez des serveurs DNS externe à OVHcloud (ou d'un groupe OVHcloud différent), la résolution DNS se fera de manière aléatoire entre les serveurs DNS OVHcloud et les serveurs DNS externes renseignés.
+> Veillez à ne pas mélanger un groupe de serveurs DNS avec un autre. 
+> Par exemple, *dns19.ovh.net* et *ns19.ovh.net* correspondent à un groupe de serveurs DNS OVHcloud, ils sont identiques et synchronisés. Si vous y ajoutez des serveurs DNS externes à OVHcloud (ou d'un groupe OVHcloud différent), la résolution DNS se fera de manière aléatoire entre les serveurs DNS OVHcloud et les serveurs DNS externes renseignés.
 
 Une fois que vous avez saisi ces informations, cliquez sur `Appliquer la configuration`{.action}. Les statuts des serveurs DNS seront alors mis à jour dans le tableau et afficheront les nouvelles informations que vous venez de fournir.
 
