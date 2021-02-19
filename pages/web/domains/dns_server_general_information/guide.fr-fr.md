@@ -52,7 +52,7 @@ Toutefois, il est important de noter que :
 
 - Lors d'un changement de serveur DNS (e.g. DNS externe par DNS OVHCloud) le contenu de l'ancienne configuration DNS n'est pas automatiquement répliqué dans la nouvelle. Assurez-vous que votre nouvelle zone DNS inclut toutes les enregistrements DNS requis pour que les services associés à votre nom de domaine fonctionnent correctement (par exemple, votre site web et vos adresses de messagerie);
 
-- si vous ne souhaitez modifier qu'un seul élément de votre configuration DNS actuelle (par exemple un enregistrement DNS), nous vous recommandons de suivre notre guide pour modifier la zone DNS à la place : « [Éditer une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external} »;
+- si vous ne souhaitez modifier qu'un seul élément de votre configuration DNS actuelle (par exemple un enregistrement DNS), nous vous recommandons plutôt de suivre notre guide pour modifier la zone DNS : « [Éditer une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external} »;
 
 - certaines organisations, les registres, qui gèrent les extensions de noms de domaine, ont des exigences particulières concernant les serveurs DNS (quantité de serveurs de noms, valeur des enregistrements...). En cas de doute, vérifiez auprès du registre responsable du domaine.
 
