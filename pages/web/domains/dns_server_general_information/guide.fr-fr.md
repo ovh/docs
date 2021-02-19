@@ -12,7 +12,7 @@ order: 1
 
 ### Comprendre la notion de DNS 
 
-Le sigle DNS signifiant **D**omain **N**ame **S**ystem est un ensemble d'éléments permettant de faire correspondre un nom de domaine avec une adresse IP.
+Le sigle DNS, signifiant **D**omain **N**ame **S**ystem, est un ensemble d'éléments permettant de faire correspondre un nom de domaine avec une adresse IP.
 
 Retrouvez l'explication complète sur le guide « [Éditer une zone DNS OVHcloud](../editer-ma-zone-dns/#understanddns) ».
 
@@ -22,7 +22,7 @@ Les **serveurs DNS** contiennent les fichiers de configurations DNS des noms de 
 
 ![DNS](images/dnsserver.png){.thumbnail}
 
-Les serveurs DNS sont généralement utilisés par groupe de deux (primaire et secondaire), dans le but d'obtenir une redondance en cas de défaillance de l'un des serveurs DNS.
+Les serveurs DNS sont généralement utilisés par groupes de deux (primaire et secondaire), dans le but d'obtenir une redondance en cas de défaillance de l'un des serveurs DNS.
 
 **Découvrez comment modifier les serveurs DNS pour votre nom de domaine OVHcloud.**
 
@@ -50,13 +50,13 @@ Lorsque vous modifiez les serveurs DNS de votre nom de domaine, vous changez sa 
 
 Toutefois, il est important de noter que :
 
-- Lors d'un changement de serveur DNS (e.g. DNS externe par DNS OVHCloud) le contenu de l'ancienne configuration DNS n'est pas automatiquement répliqué dans la nouvelle. Assurez-vous que votre nouvelle zone DNS inclut toutes les enregistrements DNS requis pour que les services associés à votre nom de domaine fonctionnent correctement (par exemple, votre site web et vos adresses de messagerie);
+- Lors d'un changement de serveur DNS (e.g. DNS externe par DNS OVHCloud), le contenu de l'ancienne configuration DNS n'est pas automatiquement répliqué dans la nouvelle. Assurez-vous que votre nouvelle zone DNS inclut toutes les enregistrements DNS requis pour que les services associés à votre nom de domaine fonctionnent correctement (par exemple, votre site web et vos adresses de messagerie).
 
-- si vous ne souhaitez modifier qu'un seul élément de votre configuration DNS actuelle (par exemple un enregistrement DNS), nous vous recommandons plutôt de suivre notre guide pour modifier la zone DNS : « [Éditer une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external} »;
+- Si vous ne souhaitez modifier qu'un seul élément de votre configuration DNS actuelle (par exemple un enregistrement DNS), nous vous recommandons plutôt de suivre notre guide pour modifier la zone DNS : « [Éditer une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external} ».
 
-- certaines organisations, les registres, qui gèrent les extensions de noms de domaine, ont des exigences particulières concernant les serveurs DNS (quantité de serveurs de noms, valeur des enregistrements...). En cas de doute, vérifiez auprès du registre responsable du domaine.
+- Certaines organisations, les registres, qui gèrent les extensions de noms de domaine, ont des exigences particulières concernant les serveurs DNS (quantité de serveurs de noms, valeur des enregistrements...). En cas de doute, vérifiez auprès du registre responsable du domaine.
 
-- assurez-vous que les modifications ne rendront pas votre nom de domaine inaccessible. Si vous n'êtes pas sûr de cela, veuillez contacter la personne qui vous demande d'apporter ces modifications.
+Assurez-vous que les modifications ne rendront pas votre nom de domaine inaccessible. Si vous n'êtes pas sûr de cela, veuillez contacter la personne qui vous demande d'apporter ces modifications.
 
 
 ### Accéder à la gestion des serveurs DNS OVHcloud
