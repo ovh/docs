@@ -18,7 +18,7 @@ Par exemple, lorsque vous souhaitez accéder au site *mydomain.ovh*, votre requ�
 
 Au vu des manipulations que vous serez amenés à effectuer dans l'espace client, il est important de différencier les **serveurs DNS** et la **zone DNS**. En effet, c'est au niveau du **serveur DNS** qu'est configuré la **zone DNS**. 
 
-Vous trouvez les informations relatives aux **serveurs DNS** et leur modification sur notre guide [Modifier les serveurs DNS d’un nom de domaine OVHcloud](../generalites-serveurs-dns/).
+Vous trouvez les informations relatives aux **serveurs DNS** et leur modification sur notre guide « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](../generalites-serveurs-dns/) » .
 
 ![DNS](images/dnsserver.png){.thumbnail}
 
