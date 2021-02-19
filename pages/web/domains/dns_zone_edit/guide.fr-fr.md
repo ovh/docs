@@ -12,11 +12,13 @@ order: 3
 
 ### Comprendre la notion de DNS <a name="understanddns"></a>
 
-DNS signifie **D**omain **N**ame **S**ystem, c'est un enssemble d'éléments permettant de faire correspondre un nom de domaine avec une adresse IP.
+Le sigle DNS signifiant **D**omain **N**ame **S**ystem est un enssemble d'éléments permettant de faire correspondre un nom de domaine avec une adresse IP.
 
-Par exemple, lorsque vous souhaitez accéder au site *mydomain.ovh*, votre requête est traitée par cet ensemble DNS permettant de faire le lien avec l'hébergement du site *mydomain.ovh*.
+Par exemple, lorsque vous souhaitez accéder au site *mydomain.ovh*, votre requête est initialement traitée par cet ensemble DNS qui va aiguiller celle-ci vers l'adresse IP du serveur hébergeant le site *mydomain.ovh*.
 
-Nous allons nous intéresser aux deux éléments DNS que vous serez amené à manipuler dans votre espace client OVHcloud, à savoir les **serveurs DNS** et les **zones DNS**. Il ne faut pas les confondre. En effet, le **serveur DNS** contient des **zones DNS** :
+Au vu des manipulations que vous serez amenés à effectuer dans l'espace client, il est important de différencier les **serveurs DNS** et la **zone DNS**. En effet, c'est au niveau du **serveur DNS** qu'est configuré la **zone DNS**. 
+
+Vous trouvez les informations relatives aux **serveurs DNS** et leur modification sur notre guide [Modifier les serveurs DNS d’un nom de domaine OVHcloud](../generalites-serveurs-dns/).
 
 ![DNS](images/dnsserver.png){.thumbnail}
 
@@ -26,7 +28,7 @@ Si nous reprenons l'exemple plus haut, lorsque vous tapez *mydomain.ovh*, les **
 
 ### La zone DNS 
 
-La zone DNS d'un nom de domaine est un fichier de configuration composé d'**enregistrements**. Ces derniers permettent de faire le lien entre votre nom de domaine et les serveurs qui hébergent vos services internet, tel que des sites web ou des adresses e-mail.
+La zone DNS d'un nom de domaine est un fichier de configuration composé d'**enregistrements**. Ces derniers permettent de faire le lien entre votre nom de domaine et les serveurs qui hébergent vos services internet, tel que des sites web (via l'enregistrement A) ou des adresses e-mail (enregistrement MX).
 
 ![DNS](images/dnszone.png){.thumbnail}
 
@@ -53,7 +55,7 @@ La zone DNS d'un nom de domaine est un fichier de configuration composé d'**enr
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la section `Web Cloud`{.action}. Cliquez sur `Domaines`{.action} dans la barre de services à gauche, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
 
-Le tableau qui apparaît affiche la configuration de votre nom de domaine chez OVHcloud. Elle est constituée de plusieurs enregistrements DNS, tous symbolisés par une ligne du tableau. Vous avez la possibilité d'en filtrer le contenu par type d'enregistrement ou par domaine.
+Le tableau qui apparaît, affiche pour chaque ligne un enregistrement DNS lié à votre nom de domaine chez OVHCloud. Vous avez la possibilité d'en filtrer le contenu par type d'enregistrement ou par domaine.
 
 ![dnszone](images/edit-dns-zone-ovh-control-panel.png){.thumbnail}
 
@@ -87,7 +89,7 @@ Comprendre ces différents enregistrements vous permettra de mieux appréhender 
 
 **MX** : Relier un nom de domaine à un serveur e-mail. Par exemple, l'adresse *10 mx1.mail.ovh.net* correspond à l'un des serveurs e-mail OVHcloud lorsque vous possédez une offre e-mail OVHcloud. Il est probable que votre fournisseur e-mail dispose de plusieurs serveurs e-mail : plusieurs champs MX doivent donc être créés. Consultez notre documentation « [Ajouter un champ MX à la configuration de son nom de domaine](../mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/) ».
 
-**SPF** : Permet d'éviter les potentielles usurpations d’identité sur les adresses e-mail utilisant votre nom de domaine. Par exemple, l'enregistrement *v=spf1 include:mx.ovh.com ~all* indique que seul le serveur de votre fournisseur de solution e-mail doit être identifié comme étant une source légitime d'envoi. Il est possible de renseigner cet enregistrement sous la forme d'un champ TXT. Consultez notre documentation « [Ajouter un champ SPF à la configuration de son nom de domaine](../le-champ-spf/) » pour en savoir plus.
+**SPF** : Permet d'éviter les potentielles usurpations d’identité sur les adresses e-mail utilisant votre nom de domaine (spoofing). Par exemple, l'enregistrement *v=spf1 include:mx.ovh.com ~all* indique que seuls les serveurs d'envoi liés à votre offre mail OVHCloud peuvent être considérés par le serveur de réception comme légitimes. Il est possible de renseigner cet enregistrement sous la forme d'un champ TXT ou via notre système de configuration automatique. Consultez notre documentation « [Ajouter un champ SPF à la configuration de son nom de domaine](../le-champ-spf/) » pour en savoir plus.
 
 **DKIM** : Permet de vérifier l'authenticité du nom de domaine de l'expéditeur et assurer l'intégrité de l'e-mail envoyé. L'enregistrement DKIM se présente sous la forme d'une clé composée de plusieurs caractères. La clé DKIM est fournie par votre prestataire e-mail, il est possible de la renseigner sous la forme d'un champ TXT.
 
