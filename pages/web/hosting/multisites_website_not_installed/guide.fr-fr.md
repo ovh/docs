@@ -13,7 +13,7 @@ order: 2
 
 Votre site peut afficher une page **Site non installé**, notamment lors de sa mise en place.
 
-![site-not-installed](images/hosting-general-informations.png)
+![site-not-installed](images/site-not-installed.png)
 
 **Trouvez l'origine de la page « Site non installé »**
 
