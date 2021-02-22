@@ -86,7 +86,7 @@ Puede encontrar más información sobre este tema más adelante, en el paso 5.
 ### Paso 4: optimizar las secuencias de comandos
 Correlacione los gráficos de recursos utilizados de su hospedaje (más información a continuación) para descubrir el origen de los retrasos y consulte los registros de las fechas de dichos picos.
 
-Puede acceder a sus registros, estadísticas y gráficos directamente desde el panel de control, iniciando sesión en el [área de cliente de OVHcloud]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)){.external}.
+Puede acceder a sus registros, estadísticas y gráficos directamente desde el panel de control, iniciando sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)){.external}.
 
 Cómo acceder a los registros:
 - Haga clic en el dominio en la sección `Hospedaje`{.action}.

@@ -17,7 +17,7 @@ Durante a adição da conta, verifique que a sua ligação 3G ou Wi-Fi está ati
 
 
 ## Parte 2 : Configuração da conta de email
-Introduza o seu endereço de email Exchange completo e a palavra-passe definida no seu [Espacço Cliente]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)) para a conta Exchange.
+Introduza o seu endereço de email Exchange completo e a palavra-passe definida no seu [Espacço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)) para a conta Exchange.
 
 Clique de seguida em "Configuração manual" para continuar.
 
@@ -36,7 +36,7 @@ Terá de introduzir as seguintes informações para usar a sua conta Exchange.
 
 "Domínio\Nome de utilizador": não introduza o domínio; adicione uma anti-slash ("\") e o seu endereço de email completo.
 
-"Palavra-passe": a palavra-passe definida no seu [Espaço Cliente]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)).
+"Palavra-passe": a palavra-passe definida no seu [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)).
 
 "Servidor Exchange": o servidor da sua conta Exchange.
 No caso de uma conta do tipo Hosted, trata-se do servidor ex.mail.ovh.net ; Para as ofertas Private deverá introduzir  nome que escolheu durante a instalação Exchange.

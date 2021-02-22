@@ -122,7 +122,7 @@ Sélectionnez le compte e-mail, les informations de ce compte vont apparaître.
 - Serveur de réception : Le serveur e-mail SSL0.OVH.NET
 - Nom d'utilisateur : Votre adresse e-mail complète.
 - Mot de passe : Le mot de passe que vous avez défini dans [l'espace
-client]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external} .
+client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external} .
 - Serveur d'envoi (SMTP) : Le serveur mail d'envoi configuré pour le compte.
 
 

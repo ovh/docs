@@ -7,7 +7,7 @@ section: Fonctionnalités des comptes Exchange
 order: 1
 ---
 
-Voici comment ajouter un alias sur un e-mail avec l'offre Exchange depuis le [Manager]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external}. Vous devez vous munir de vos identifiants OVH afin de réaliser la manipulation.
+Voici comment ajouter un alias sur un e-mail avec l'offre Exchange depuis le [Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external}. Vous devez vous munir de vos identifiants OVH afin de réaliser la manipulation.
 
 Cliquez [ici](https://www.ovh.com/fr/emails/hosted-exchange/guides/){.external} pour retrouver nos différents guides.
 
@@ -15,7 +15,7 @@ Cliquez [ici](https://www.ovh.com/fr/emails/hosted-exchange/guides/){.external} 
 ## Mise en place des alias sur l'offre Exchange.
 
 ### Ajouter un alias &#58; Partie 1
-Vous devez réaliser la manipulation depuis votre [espace client]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external}.
+Vous devez réaliser la manipulation depuis votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external}.
 
 Une fois connecté, sélectionnez votre service Exchange.
 

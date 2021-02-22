@@ -45,7 +45,7 @@ Renseignez les champs affichés :
 
 - Vos nom et prénom : *Renseignez ici le nom d'affichage désiré.*
 - Adresse électronique : *Votre adresse e-mail complète.*
-- Mot de passe : *Le mot de passe défini dans votre [espace client]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external} pour le compte Exchange.*
+- Mot de passe : *Le mot de passe défini dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external} pour le compte Exchange.*
 - Retenir le mot de passe : *Vous devez cocher cette option.*
 
 Cliquez sur `Configuration manuelle`{.action} pour poursuivre les étapes d'installation.
