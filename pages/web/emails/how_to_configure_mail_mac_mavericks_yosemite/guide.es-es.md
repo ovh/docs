@@ -122,7 +122,7 @@ Se mostrarán los siguientes datos:
 
 - Nombre de usuario: Su dirección de correo electrónico completa.
 
-- Contraseña: La contraseña de su cuenta de correo que haya indicado en el [área de cliente]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)).
+- Contraseña: La contraseña de su cuenta de correo que haya indicado en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)).
 
 - Servidor de correo saliente (SMTP): El servidor de correo saliente que haya configurado en la cuenta.
 
@@ -162,7 +162,7 @@ En «Avanzado»:
 
 - Nombre de usuario: Su dirección de correo electrónico completa.
 
-- Contraseña: La contraseña de su cuenta de correo que haya indicado en el [área de cliente]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)).
+- Contraseña: La contraseña de su cuenta de correo que haya indicado en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)).
 
 
 

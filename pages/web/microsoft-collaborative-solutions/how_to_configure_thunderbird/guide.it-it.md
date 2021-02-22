@@ -44,7 +44,7 @@ Completa i campi richiesti:
 
 - Nome e Cognome *Inserisci qui il nome da visualizzare.*
 - Indirizzo di posta elettronica: *Inserisci l’indirizzo email completo.*
-- Password:  *La password definita nel tuo [Spazio Cliente]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)){.external} per l’account Exchange.*
+- Password:  *La password definita nel tuo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)){.external} per l’account Exchange.*
 - Ricorda password:  *È necessario selezionare questa opzione.*
 
 Clicca su `Configurazione manuale`{.action} per continuare l’installazione.

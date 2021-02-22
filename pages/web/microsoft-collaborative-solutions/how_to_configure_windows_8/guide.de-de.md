@@ -48,7 +48,7 @@ Tragen Sie hier die Angaben Ihres Exchange E-Mail-Accounts ein.
 
 "E-Mail-Adresse": die vollständige Exchange E-Mail-Adresse.
 
-"Kennwort": das in Ihrem [OVH Kundencenter]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)) für den Exchange Account angegebene Passwort.
+"Kennwort": das in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)) für den Exchange Account angegebene Passwort.
 
 Klicken Sie anschließend auf "Verbinden".
 
@@ -69,7 +69,7 @@ Bei einem Private Exchange Angebot müssen Sie den Namen des Servers angeben, de
 
 "Benutzername": Tragen Sie hier die vollständige E-Mail-Adresse ein.
 
-"Kennwort": das in Ihrem [OVH Kundencenter]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)) für den Exchange Account angegebene Passwort.
+"Kennwort": das in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)) für den Exchange Account angegebene Passwort.
 
 Klicken Sie anschließend auf "Verbinden".
 
@@ -131,7 +131,7 @@ Tragen Sie hier die Angaben Ihres Exchange E-Mail-Accounts ein.
 
 "E-Mail-Adresse": die vollständige Exchange E-Mail-Adresse.
 
-"Kennwort": das in Ihrem [OVH Kundencenter]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)) für den Exchange Account angegebene Passwort.
+"Kennwort": das in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)) für den Exchange Account angegebene Passwort.
 
 Klicken Sie anschließend auf "Verbinden".
 
@@ -146,7 +146,7 @@ Tragen Sie hier die Angaben Ihres Exchange E-Mail-Accounts ein.
 
 "Benutzername": Tragen Sie hier die vollständige E-Mail-Adresse ein.
 
-"Kennwort": das in Ihrem [OVH Kundencenter]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)) für den Exchange Account angegebene Passwort.
+"Kennwort": das in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)) für den Exchange Account angegebene Passwort.
 
 Posteingangsserver (IMAP)": Der Server Ihres Exchange Accounts.
 In unserem Beispiel eines Hosted Exchange Angebots handelt es sich um den Server ex.mail.ovh.net

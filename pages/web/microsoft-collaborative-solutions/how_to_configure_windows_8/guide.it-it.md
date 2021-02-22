@@ -49,7 +49,7 @@ Nella nuova interfaccia, trovi diversi campi.
 
 Indirizzo di posta: indirizzo mail Exchange completo.
 
-Password: password inserita nel tuo [Spazio Cliente OVH]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)) per questo account Exchange.
+Password: password inserita nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)) per questo account Exchange.
 
 Clicca su Connetti per continuare.
 
@@ -69,7 +69,7 @@ Dominio: è facoltativo, ti consigliamo di non inserire nulla.
 
 Nome utente: inserisci il tuo indirizzo email completo.
 
-Password: password che hai scelto nel tuo [Spazio Cliente OVH]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)) per questo account Exchange.
+Password: password che hai scelto nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)) per questo account Exchange.
 
 Clicca su Connetti per continuare.
 
@@ -133,7 +133,7 @@ Nella nuova interfaccia, trovi diversi campi.
 
 Indirizzo di posta: indirizzo mail Exchange completo.
 
-Password: password inserita nel tuo [Spazio Cliente OVH]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)) per questo account Exchange.
+Password: password inserita nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)) per questo account Exchange.
 
 Clicca su Connetti per continuare.
 
@@ -149,7 +149,7 @@ Indirizzo di posta: l'indirizzo email Exchange completo.
 Nome utente: inserisci il tuo indirizzo email completo.
 
 
-Password: password che hai scelto nel tuo [Spazio Cliente OVH]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)) per questo account Exchange.
+Password: password che hai scelto nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)) per questo account Exchange.
 
 Server di posta in entrata (IMAP):  nel nostro esempio l'account Exchange è un account di tipo Hosted, in cui l'indirizzo del server è ex.mail.ovh.net.
 Per un'offerta Private, inserisci il nome del server che hai scelto durante l'installazione della tua offerta Exchange.

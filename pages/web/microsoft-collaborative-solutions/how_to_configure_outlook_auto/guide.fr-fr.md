@@ -57,7 +57,7 @@ Sélectionnez "Compte de messagerie" puis cliquez sur "Suivant".
 ![emails](images/994.png){.thumbnail}
 
 ### Étape 4 : Configuration de compte automatique
-Nom : le nom d'affichage dans Outlook Adresse de messagerie : votre adresse e-mail complète. Mot de passe : le mot de passe choisi lors de la création de votre compte Exchange via votre [espace client]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external}.
+Nom : le nom d'affichage dans Outlook Adresse de messagerie : votre adresse e-mail complète. Mot de passe : le mot de passe choisi lors de la création de votre compte Exchange via votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external}.
 
 Cliquez ensuite sur "Suivant".
 

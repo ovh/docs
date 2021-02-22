@@ -179,7 +179,7 @@ The code example above contains variables, which you will need to substitute wit
 
 > [!primary]
 >
-> To use FTPS you must change the hostname of the backup storage. For example, if the name of your backup storage is ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net, you need to change it to ftpback-rbxX-YYY.mybackup.ovh.net. You also need to add the -ssl flag to the commands below.
+> To use FTPS you must change the hostname of the backup storage. For example, if the name of your backup storage is ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net, you need to change it to ftpback-rbxX-YYY.mybackup.ovh.net(if the server is located in Canada, it should be ftpback-bhsX-YYY.mybackup.ovh.ca). You also need to add the -ssl flag to the commands below.
 >
 
 To save individual files to your backup storage, you can use the following command:
@@ -230,7 +230,7 @@ The code example above contains variables, which you will need to substitute wit
 
 > [!primary]
 >
-> lftp uses FTP+SSL/TLS by default. So you must change the host name of the backup storage. For example, if the name of your backup storage is ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net, you need to change it to ftpback-rbxX-YYY.mybackup.ovh.net.
+> lftp uses FTP+SSL/TLS by default. So you must change the host name of the backup storage. For example, if the name of your backup storage is ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net, you need to change it to ftpback-rbxX-YYY.mybackup.ovh.net(if the server is located in Canada, it should be ftpback-bhsX-YYY.mybackup.ovh.ca).
 >
 
 To save individual files to your backup storage, you can use the following command:
