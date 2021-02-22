@@ -35,7 +35,7 @@ Pour effectuer cette migration, vous devez posséder :
 > <br>Une interruption de service est probable.
 >
 
-### Passer en dégroupage Total {#passer-en-dégroupage-total}
+### Demander le dégroupage total sur votre accès {#passer-en-dégroupage-total}
 
 Connectez-vous à la rubrique `Telecom` de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Cliquez ensuite sur `Accès Internet`{.action} dans le menu de gauche, sélectionnez votre offre puis cliquez sur la référence de ligne support de connexion. 
 
