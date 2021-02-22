@@ -41,11 +41,11 @@ Connectez-vous à la rubrique `Telecom` de votre [espace client OVHcloud](https:
 
 Vous retrouverez, dans les `Informations générales`, la possibilité de migrer votre accès en dégroupage total.
 
-![Infos_Générales](images/part_to_total_1.png){.thumbnail}
+![Infos_Générales](images/part_to_total_1.PNG){.thumbnail}
 
 Pour la portabilité du numéro support de connexion, vous devrez renseigner son RIO.
 
-![RIO_validation](images/part_to_total_2.png){.thumbnail}
+![RIO_validation](images/part_to_total_2.PNG){.thumbnail}
 
 Cette demande prend en moyenne 7 jours ouvrés et ne peut pas être anticipée. L'interruption de service est en théorie de 30 minutes.
 
