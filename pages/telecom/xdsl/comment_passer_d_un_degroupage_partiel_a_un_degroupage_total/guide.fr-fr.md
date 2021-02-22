@@ -44,7 +44,7 @@ Vous retrouverez, dans les `Informations générales`, la possibilité de migrer
 ![Infos_Générales](images/part_to_total_1.PNG){.thumbnail}
 
 
-#### Pour la portabilité du numéro support de connexion, vous devrez renseigner son RIO.
+#### Pour la portabilité du numéro support de connexion, vous devrez renseigner son RIO avant de valider l'opération.
 
 ![RIO_validation](images/part_to_total_2.PNG){.thumbnail}
 
