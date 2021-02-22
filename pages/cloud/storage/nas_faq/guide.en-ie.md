@@ -63,7 +63,7 @@ Please note that the information provided is accurate on the ‘last updated’ 
 ## Using the product
 
 ### In what cases should I use a HA-NAS solution?
-In an infrastructure, the HA-NAS is a storage space to which you can attach several [dedicated servers](https://www.ovh.ie/dedicated_servers/){.external}, [Private Cloud](https://www.ovh.ie/private-cloud/){.external} or [Public Cloud instances](hhttps://www.ovh.ie/public-cloud/instances/){.external}.
+In an infrastructure, the HA-NAS is a storage space to which you can attach several [dedicated servers](https://www.ovh.ie/dedicated_servers/){.external}, [Private Cloud](https://www.ovh.ie/private-cloud/){.external} or [Public Cloud instances](https://www.ovhcloud.com/en-ie/public-cloud/){.external}.
 
 There are many use cases for it, but the high availability of OVH HA-NAS is particularly beneficial for the following uses:
 

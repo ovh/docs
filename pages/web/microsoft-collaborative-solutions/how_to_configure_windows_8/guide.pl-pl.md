@@ -45,7 +45,7 @@ W nowym interfejsie wypełnij poszczególne pola.
 
 "Adres poczty elektronicznej": Pełny adres e-mail Exchange
 
-"Hasło": Hasło określone dla tego konta Exchange w [panelu klienta]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)).
+"Hasło": Hasło określone dla tego konta Exchange w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)).
 
 Kliknij na "Połącz", aby kontynuować.
 
@@ -65,7 +65,7 @@ W przypadku oferty Private należy wpisać nazwę serwera wybranego podczas inst
 
 "Nazwa użytkownika": Należy podać pełny adres e-mail
 
-"Hasło": Hasło zdefiniowane dla tego konta Exchange w [panelu klienta]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)).
+"Hasło": Hasło zdefiniowane dla tego konta Exchange w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)).
 
 Kliknij na "Połącz", aby kontynuować.
 
@@ -125,7 +125,7 @@ W nowym interfejsie wypełnij poszczególne pola.
 
 "Adres poczty elektronicznej": Pełny adres e-mail Exchange
 
-"Hasło": Hasło określone dla tego konta Exchange w [panelu klienta]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)).
+"Hasło": Hasło określone dla tego konta Exchange w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)).
 
 Kliknij na "Połącz", aby kontynuować.
 
@@ -140,7 +140,7 @@ W nowym interfejsie wypełnij poszczególne pola.
 
 "Nazwa użytkownika": Należy podać pełny adres e-mail.
 
-"Hasło": Hasło zdefiniowane dla tego konta Exchange w [panelu klienta]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)).
+"Hasło": Hasło zdefiniowane dla tego konta Exchange w [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)).
 
 "Serwer poczty przychodzącej (IMAP): w naszym przykładzie konto Exchange to konto Hosted. Adres serwera to ex.mail.ovh.net
 W przypadku oferty Private należy wpisać nazwę serwera wybranego podczas instalacji oferty Exchange.

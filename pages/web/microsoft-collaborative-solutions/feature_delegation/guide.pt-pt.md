@@ -7,7 +7,7 @@ legacy_guide_number: g1249
 
 
 ## Implementação das permissões "Full Access" Parte 1:
-Deverá realizar a operação a parir da interface [Manager]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)).
+Deverá realizar a operação a parir da interface [Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)).
 
 Uma vez ligado, selecione o seu serviço Exchange.
 

@@ -70,7 +70,7 @@ Sélectionnez "Exchange, Office 365" afin de continuer.
 ### Partie 5 &#58; Configuration du compte
 Dans le premier champ, renseignez votre adresse e-mail entière.
 
-Renseignez ensuite le mot de passe défini via votre [Espace Client]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external} pour le compte Exchange.
+Renseignez ensuite le mot de passe défini via votre [Espace Client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external} pour le compte Exchange.
 
 Pour continuer, sélectionnez "se connecter".
 

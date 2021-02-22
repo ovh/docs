@@ -8,7 +8,7 @@ order: 5
 
 Accessible depuis Outlook et OWA (webmail Exchange) grâce à une délégation. Ce type de compte vous permet par exemple de créer une boîte générale à laquelle chaque compte Exchange peut avoir accès. Un compte partagé ne possède pas de mot de passe, il est donc nécessaire de déléguer son accès à un compte standard.
 
-Vous devez avoir accès à votre [Espace client]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external}.
+Vous devez avoir accès à votre [Espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external}.
 
 Cliquez [ici](https://www.ovh.com/fr/emails/hosted-exchange-2013/documents/){.external} pour retrouver nos différents guides.
 
@@ -16,7 +16,7 @@ Cliquez [ici](https://www.ovh.com/fr/emails/hosted-exchange-2013/documents/){.ex
 ## Ajouter un compte partage
 
 ### Création du compte
-Afin de créer votre compte, connectez-vous à votre [Espace client]((https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external}.
+Afin de créer votre compte, connectez-vous à votre [Espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external}.
 
 Sélectionnez votre offre Exchange dans le menu **"Microsoft"**.
 
