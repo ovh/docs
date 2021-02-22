@@ -45,7 +45,7 @@ Vous retrouverez, dans les `Informations générales`, la possibilité de migrer
 
 Pour la portabilité du numéro support de connexion, vous devrez renseigner son RIO.
 
-![Infos_Générales](images/part_to_total_2.png){.thumbnail}
+![RIO_validation](images/part_to_total_2.png){.thumbnail}
 
 Cette demande prend en moyenne 7 jours ouvrés et ne peut pas être anticipée. L'interruption de service est en théorie de 30 minutes.
 
