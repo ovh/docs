@@ -5,54 +5,45 @@ excerpt: Découvrez comment demander le passage de votre accès xDSL en dégroup
 section: 'Gestion de mon offre'
 ---
 
-### Préambule {#préambule}
+**Dernière mise à jour le 22/02/2021**
 
-Le passage de dégroupage partiel à total permet d'avoir la ligne gérée complètement par OVHcloud, de faire porter votre numéro et de pouvoir l'utiliser avec votre téléphonie OVHcloud.
+## Objectif
 
-Il vous permet aussi de simplifier et de réduire votre facture en vous affranchissant de l'abonnement France Telecom présent dessus.
+Le passage d'un dégroupage partiel à total permet de confier à OVHcloud la gestion complète de votre ligne, de faire porter votre numéro et de pouvoir l'utiliser avec votre téléphonie OVHcloud.
+<br>Il vous permet aussi de simplifier et de réduire votre facture en vous affranchissant de l'abonnement France Telecom présent dessus.
 
-**Sommaire :**
+**Découvez comment demander le dégroupage total de votre ligne depuis votre espace client OVHcloud**
 
-Niveau : Débutant
+## Prérequis
 
-------------------------------------------------------------------------
-
-
-
-
-### Prérequis {#prérequis}
-
-Pour effectuer cette migration, vous devez posséder :
-
--   Un accès OVHcloud en dégroupage partiel.
--   Une offre éligible.
+-   Disposer d'un accès OVHcloud en dégroupage partiel.
+-   Disposer d'une offre éligible.
 
 > [!primary]
 > A savoir :
 >
-> Le passage de dégroupage partiel à total est irréversible.
-> <br>Si vous bénéficiez d'une ancienne offre, il est nécessaire de passer à l'une de nos offres Express ou Entreprise ([Changer l'offre d'un accès xDSL](https://docs.ovh.com/fr/xdsl/comment-changer-mon-offre-xdsl/)).
+> Le passage d'un dégroupage partiel à total est irréversible.
+> <br>Si vous bénéficiez d'une ancienne offre, il est nécessaire de passer à l'une de nos offres Express ou Entreprise. Consultez notre guide « [Changer l'offre d'un accès xDSL](https://docs.ovh.com/fr/xdsl/comment-changer-mon-offre-xdsl/) ».
 > <br>Une interruption de service est probable.
 >
 
-### Demander le dégroupage total sur votre accès {#demander-le-dégroupage-total-sur-votre-accès}
+## En pratique
 
-Connectez-vous à la rubrique `Telecom` de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Cliquez ensuite sur `Accès Internet`{.action} dans le menu de gauche, sélectionnez votre offre puis cliquez sur la référence de ligne support de connexion. 
+### Demander le dégroupage total sur votre accès
 
-Vous retrouverez, dans les `Informations générales`, la possibilité de migrer votre accès en dégroupage total.
+Connectez-vous à la rubrique `Telecom` de votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr). Cliquez ensuite sur `Accès Internet`{.action} dans le menu de gauche, sélectionnez votre offre puis cliquez sur la référence de ligne support de connexion. 
+
+Dans l'onglet `Mon accès`{.action}, vous retrouverez, dans les `Informations générales`, la possibilité de migrer votre accès en dégroupage total.
 
 ![Infos_Générales](images/part_to_total_1.PNG){.thumbnail}
 
-
-#### Pour la portabilité du numéro support de connexion, vous devrez renseigner son RIO avant de valider l'opération.
+Pour effectuer la portabilité du numéro support de connexion, vous devrez renseigner son RIO avant de valider l'opération. Contactez les services de Orange/France Télécom pour obtenir le RIO.
 
 ![RIO_validation](images/part_to_total_2.PNG){.thumbnail}
 
-
 Cette demande prend en moyenne 7 jours ouvrés et ne peut pas être anticipée. L'interruption de service est en théorie de 30 minutes.
 
-Votre ligne fixe est résiliée techniquement auprès de votre opérateur ligne fixe.
-
+Votre ligne fixe sera alors résiliée techniquement auprès de votre précédent opérateur.
 
 ## Aller plus loin
 
