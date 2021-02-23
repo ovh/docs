@@ -1,9 +1,9 @@
 ---
 title: Migrating an infrastructure to a new vDC
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/service-migration/'
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/migration-service/'
 excerpt: Find out how to manage all aspects of migrating an infrastructure to a vDC
-slug: service-migration-vdc
+slug: migration-service-vdc
 section: Getting started
 order: 6
 hidden: true
