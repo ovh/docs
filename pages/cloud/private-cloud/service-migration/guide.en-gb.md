@@ -1,7 +1,7 @@
 ---
 title: Migrating a PCC to Hosted Private Cloud 
 excerpt: Find out how to manage all aspects of migrating a PCC infrastructure
-slug: service-migration
+slug: migration-service
 section: Getting started
 order: 6
 ---
