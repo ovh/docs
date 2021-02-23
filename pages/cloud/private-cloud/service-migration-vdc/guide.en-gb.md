@@ -28,7 +28,7 @@ There are two aspects to migrating to a new vDC:
 ## Requirements
 
 - a PCC infrastructure (SDDC)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) (`Private Cloud`{.action} in the `Hosted Private Cloud`{.action} section)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (`Private Cloud`{.action} in the `Hosted Private Cloud`{.action} section)
 
 ## Instructions
 
