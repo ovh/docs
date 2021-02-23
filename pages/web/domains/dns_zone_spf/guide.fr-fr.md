@@ -15,7 +15,7 @@ Le SPF (Sender Policy Framework) permet à un serveur qui reçoit un e-mail de s
 Cette action est rendue possible grâce aux informations renseignées dans le SPF lui-même. On peut y retrouver :
 
 - **des serveurs ou plusieurs adresses IP** : ceci permettra de les identifier en tant que source d'envoi légitime ;
-- **un qualifieur** : il permettra de préconiser au serveur réceptionnant les e-mails une manière spécifique de réagir à un message considéré comme non légitime, c'est à dire provenant d'une source présentant un risque potentiel.
+- **un qualifieur** : il permettra de préconiser au serveur réceptionnant les e-mails une manière spécifique de réagir à un message considéré comme non légitime, c'est à dire provenant d'une source présentant un risque .
 
 Vous devrez donc vous assurer de mettre dans le SPF les sources d'envoi que vous utilisez pour émettre vos e-mails avec votre domaine. Ces sources peuvent être votre propre serveur, celui de votre prestataire ou l'une des solutions e-mail d'OVHcloud.
 
@@ -45,7 +45,7 @@ Vous devrez donc vous assurer de mettre dans le SPF les sources d'envoi que vous
 
 La configuration OVHcloud s'applique aux solutions ci-dessous :
 
-- MX Plan seule ou incluse dans une offre d’[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external} ;
+- MX Plan seul ou inclus dans une offre d’[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external} ;
 - [E-mail Pro](https://www.ovh.com/fr/emails/email-pro/){.external} ;
 - [Hosted Exchange](https://www.ovh.com/fr/emails/hosted-exchange/){.external}.
 
@@ -102,9 +102,9 @@ Pour ajouter un enregistrement SPF, cliquez sur `Ajouter une entrée`{.action}.
 
 Dans la fenêtre qui s’affiche, plusieurs enregistrements DNS vous sont proposés. Concernant l’ajout d’un SPF, deux possibilités s’offrent à vous :
 
-- [ajouter un enregistrement TXT](#txtrecord) : pour les utilisateurs avertis ou disposant déjà de l'enregistrement complet. Par exemple, votre fournisseur de solution e-mail vous transmet la valeur;
-- [ajouter un enregistrement SPF](#spfrecord) : pour les utilisateurs ne possédant pas l'intégralité de l'enregistrement. Par exemple, vous disposez uniquement d'une adresse IP ou du nom d'hôte du serveur e-mail.
-- [ajouter un enregistrement SPF ](#spfrecordovhcloud) **et utiliser la configuration OVHcloud**: pour les utilisateurs possédant uniquement les offres e-mail OVHcloud sur leur nom de domaine (Hors [Private Exchange](https://www.ovh.com/fr/emails/hosted-exchange/){.external} et Exchange Provider)
+- [Ajouter un enregistrement TXT](#txtrecord) : pour les utilisateurs avertis ou disposant déjà de l'enregistrement complet. Par exemple, votre fournisseur de solution e-mail vous transmet la valeur;
+- [Ajouter un enregistrement SPF](#spfrecord) : pour les utilisateurs ne possédant pas l'intégralité de l'enregistrement. Par exemple, vous disposez uniquement d'une adresse IP ou du nom d'hôte du serveur e-mail.
+- [Ajouter un enregistrement SPF ](#spfrecordovhcloud) **et utiliser la configuration OVHcloud**: pour les utilisateurs possédant uniquement les offres e-mail OVHcloud sur leur nom de domaine (Hors [Private Exchange](https://www.ovh.com/fr/emails/hosted-exchange/){.external} et Exchange Provider)
 
 ![domain](images/spf_records_add_entry.png){.thumbnail}
 
@@ -137,7 +137,7 @@ Concernant la question : "**D'autres serveurs envoient-ils le courrier avec votr
 |ptr|Renseignez ici des noms d'hôtes dont le *reverse* est fonctionnel (grâce à un enregistrement PTR dans la zone DNS). Ils seront ainsi identifiés comme une source d'envoi légitime.|
 |ip4|Indiquez les IP ou les plages d'IP (IPv4) autorisées à envoyer des e-mails avec vos adresses.|
 |ip6|Indiquez les IP ou les plages d'IP (IPv6) autorisées à envoyer des e-mails avec vos adresses.|
-|include|Renseignez ici des noms de domaine incluant leurs propre règles SPF. Cela permettra ces dernières pour votre propre domaine. Par exemple, OVHcloud utilise cette méthode dans sa configuration SPF :  "v=spf1 include:mx.ovh.com ~all", ce qui permet à OVHcloud de gérer le SPF de mx.ovh.com et de permettre à ses clients de l'utiliser.|
+|include|Renseignez ici des noms de domaine incluant leurs propres règles SPF. Cela permettra ces dernières pour votre propre domaine. Par exemple, OVHcloud utilise cette méthode dans sa configuration SPF :  "v=spf1 include:mx.ovh.com ~all", ce qui permet à OVHcloud de gérer le SPF de mx.ovh.com et de permettre à ses clients de l'utiliser.|
 
 Enfin, concernant la question : "**Est-ce que les informations que vous avez indiquées décrivent tous les hôtes qui envoient du courrier avec votre domaine ?**", trois choix sont possibles :
 
