@@ -1,9 +1,9 @@
 ---
 title: Migrating an infrastructure to a new vDC
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/service-migration/'
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/migration-service/'
 excerpt: Find out how to manage all aspects of migrating from one vDC to another vDC in the same PCC
-slug: service-migration-vdc
+slug: migration-service-vdc
 section: Getting started
 order: 6
 hidden: true
@@ -52,14 +52,13 @@ To do this, please refer to our guides on [Changing user rights](../change-users
 
 ##### **Key Management Server (KMS)**
 
-If virtual machines are protected by encryption and this is a prerequisite for the destination vDC, it will be necessary to recreate the encryption context on the destination vDC.
-Please refer to our guide on [Enabling Virtual Machine Encryption](../vm-encrypt/) in order to enable KMS on the destination vDC.
+This option is to enable and configure per vCenter and apply to any vDC.
+If virtual machines are protected by encryption, they stay protected on the destination vDC.
 
 ##### **Certifications**
 
-For compliance reasons, [PCI DSS](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/pci-dss/) and [HDS](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/safety-compliance/hds/) options may have been enabled on the source vDC.
-
-These options must therefore be reactivated on the destination vDC. To do this, please refer to our [guide on activating them](../activate-pci-dss-option/).
+These options are enabled per vCenter and apply to any vDC.
+If an option has been enabled, they stay available on the destination vDC.
 
 #### Network
 
