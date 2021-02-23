@@ -26,7 +26,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsucc
 
 ### Branchement du fax sur le Cisco ATA 191
 
-Le télécopieur utilisé se branche sur la prise RJ11 « **Phone 1** » de votre adaptateur. L'adaptateur doit également être branché en **Ethernet** sur votre routeur.
+Le télécopieur utilisé se branche sur la prise RJ11 « **Phone 1** » de votre adaptateur. Bien évidemment, l'adaptateur doit être raccordé au secteur et également être branché en **Ethernet** sur votre routeur.
 
 ![branchement Cisco ATA-191](images/cisco-ATA-191.png){.thumbnail}
 
@@ -60,10 +60,10 @@ Il s'agit du mode normal de réception des fax, lorsqu'un télécopieur fonction
 
 Depuis le menu de `Renvoi d'appel`{.action}, cochez la case devant `Renvoi quand il n'y a pas de réponse`{.action} et définissez le nombre de secondes à 45.
 <br>Ce renvoi laisse donc 45 secondes à votre télécopieur pour décrocher lors d'une réception de fax. Au delà de ce délai, le fax est renvoyé vers votre adresse e-mail ou vers le logiciel Ecofax. 
-<br>Choisissez de `Renvoyer vers un`{.action} **Fax** et sélectionnez le numéro de votre ligne Plug & Fax.
+<br>Choisissez de `Renvoyer vers un`{.action} **Fax** et renseignez le numéro de votre ligne Plug & Fax.
 
 De même, cochez la case devant `Renvoi quand la ligne est injoignable ou déconnectée`{.action}.
-<br>Choisissez de `Renvoyer vers un`{.action} **Fax** et sélectionnez le numéro de votre ligne Plug & Fax.
+<br>Choisissez de `Renvoyer vers un`{.action} **Fax** et renseignez le numéro de votre ligne Plug & Fax.
 
 Enfin, cliquez sur `Valider`{.action}.
 
@@ -78,7 +78,9 @@ Vous pouvez choisir de ne recevoir les fax que par e-mail, par exemple lors d'un
 Dans ce cas de figure, un renvoi d'appel inconditionnel est préconisé afin de rediriger tous les fax entrants vers votre adresse e-mail ou le logiciel Ecofax.
 
 Depuis le menu de `Renvoi d'appel`{.action}, cochez la case devant `Renvoi de tous les appels`{.action}.
-<br>Choisissez de `Renvoyer vers un`{.action} **Fax** et sélectionnez le numéro de votre ligne Plug & Fax.
+<br>Choisissez de `Renvoyer vers un`{.action} **Fax** et renseignez le numéro de votre ligne Plug & Fax.
+
+Enfin, cliquez sur `Valider`{.action}.
 
 ![renvoi d'appels inconditionnel](images/renvoi_dappel2.png){.thumbnail}
 
