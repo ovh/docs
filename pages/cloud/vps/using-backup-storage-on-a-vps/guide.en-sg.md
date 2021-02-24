@@ -28,11 +28,11 @@ Before applying backup options, we recommend to consult the [VPS options](https:
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), navigate to the "Bare Metal Cloud" section, and select your server from the left-hand sidebar under `VPS`{.action}.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), navigate to the "Bare Metal Cloud" section, and select your server from the left-hand sidebar under `Virtual Private Servers`{.action}.
 
 ### Step 1: Subscribing to the snapshot option
 
-From the `Home`{.action} tab, scroll down to the box labelled "Summary of options". Click on `...`{.action} next to the option "Snapshot" and in the context menu click on `Order`{.action}.
+From the `Home`{.action} tab, scroll down to the box labelled **Summary of options**. Click on `...`{.action} next to the option "Snapshot" and in the context menu click on `Order`{.action}.
 
 ![snapshotvps](images/snapshot_vps_step1b.png){.thumbnail}
 
@@ -40,7 +40,7 @@ In the next step, please take note of the pricing information, then click on `Or
 
 ### Step 2: Taking a snapshot
 
-Once the option is enabled, click on `...`{.action} next to the option "Snapshot" and in the context menu click `Take a snapshot`{.action}. Creating the snapshot might take a few minutes. Afterwards, the timestamp of the creation will appear in the "Summary of options" box.
+Once the option is enabled, click on `...`{.action} next to the option "Snapshot" and in the context menu click `Take a snapshot`{.action}. Creating the snapshot might take a few minutes. Afterwards, the timestamp of the creation will appear in the **Summary of options** box.
 
 ### Step 3: Deleting / restoring a snapshot
 
