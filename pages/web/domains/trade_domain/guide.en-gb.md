@@ -3,14 +3,15 @@ title: 'Changing the owner of a domain name'
 slug: how-to-change-domain-name-owner
 legacy_guide_number: 1350
 excerpt: 'This guide will provide you with information on how to change the owner of a domain name.'
-section: 'Changing owners'
+section: 'Changing owner'
 ---
 
 **Last updated 30th January 2020**
 
 ## Objective
 
-Beside [three contacts](https://docs.ovh.com/gb/en/customer/managing-contacts/), to register a domain name, you need to enter information on the owner. This guide will detail how to change owner details.
+Beside [three contacts](https://docs.ovh.com/gb/en/customer/managing-contacts/), to register a domain name, you need to enter information on the owner. Owner of the domain is legal owner in the domain registry. This guide will detail how to change owner details.
+
 
 [primary!]
 >This operation will not move your domain to another account within OVH.
@@ -32,7 +33,7 @@ Beside [three contacts](https://docs.ovh.com/gb/en/customer/managing-contacts/),
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. In the `Domains`{.action} section of the OVHcloud Control Panel, select the generic top-level domain (gTLD) you would like to change the owner of.
 
 
-![hosting](images/SS_2.PNG){.thumbnail}
+![hosting](images/SS_2.png){.thumbnail}
 
 
 ### Change the owner.
@@ -47,10 +48,12 @@ In the `General information`{.action} tab, go to the **Plan** section on the rig
 > Any changes to the owner’s first name, surname, organisation, legal status and email address will be
 > considered as a change of owner.
 > 
+> If you want to change other details for the owner you can use option `Refresh owner information`{.action} 
+> Continue to [Refresh owner information](./#refresh-owner-information).
 
 New tab in your browser will open with all available domains. Choose domain on the list, by marking it with checkbox and click `Continue`{.action}. It is possible to choose few domains with the same extension.
 
-![hosting](images/3657.png){.thumbnail}
+![hosting](images/3657.PNG){.thumbnail}
 
 Then you will be asked to fill all changes for the owner. All fields with * needs to be filled. 
 
@@ -81,6 +84,15 @@ Once the two recipients confirm their agreement via email, the domain name owner
 > If the domain name owner is changed successfully, the domain name will be
 > locked, and cannot be part of an outgoing transfer for a 60-day period.
 > 
+
+### Refresh owner information.
+
+If you want to update some information linke phone number, address etc. You do not need to start trade procedure, it can be done by `Refresh owner information`{.action}. With this operation you do not need to confirm changes by email. 
+
+![hosting](images/3658.png){.thumbnail}
+
+
+
 
 ## Go further
 
