@@ -174,9 +174,9 @@ Vous pouvez aussi modifier le TTL d'un enregistrement DNS. Cependant, cette mani
 
 ## Aller plus loin
 
-[Généralités sur les serveurs DNS](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/){.external}.
+[Généralités sur les serveurs DNS](../generalites-serveurs-dns/){.external}.
 
-[Ajouter un champ SPF à la configuration de son nom de domaine](https://docs.ovh.com/fr/domains/le-champ-spf/){.external}.
+[Ajouter un champ SPF à la configuration de son nom de domaine](../domains/le-champ-spf/){.external}.
 
 [Protégez votre domaine contre le Cache Poisoning avec le DNSSEC](https://www.ovh.com/fr/domaines/service_dnssec.xml){.external}.
 
