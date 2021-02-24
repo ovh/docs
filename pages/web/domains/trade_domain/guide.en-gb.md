@@ -36,7 +36,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 
 ### Change the owner.
-In the `General information`{.action} tab, go to the **Subscription** section. Click `...`{.action} next to the contacts, then click `Change owner`{.action}.
+In the `General information`{.action} tab, go to the **Plan** section on the right bottom corner.  Click `...`{.action} next to the contacts, then click `Change domain name holder`{.action}.
 
 
 ![hosting](images/3652-2.png){.thumbnail}
@@ -48,13 +48,19 @@ In the `General information`{.action} tab, go to the **Subscription** section. C
 > considered as a change of owner.
 > 
 
-An information message will open. Click `Continue`{.action}.
+New tab in your browser will open with all available domains. Choose domain on the list, by marking it with checkbox and click `Continue`{.action}. It is possible to choose few domains with the same extension.
+
+![hosting](images/3657.png){.thumbnail}
+
+Then you will be asked to fill all changes for the owner. All fields with * needs to be filled. 
+
 
 Once you have confirmed your action, two emails will be sent to confirm or decline this change:
 
 - one sent to the current owner’s email address
 - one sent to the future owner’s email address
 
+If you are not changing email address - one recipient will receive two emails, both needs to be confirmed.
 Once the two recipients confirm their agreement via email, the domain name owner change will become effective.
 
 
