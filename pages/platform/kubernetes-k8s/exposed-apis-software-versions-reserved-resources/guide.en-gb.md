@@ -11,7 +11,7 @@ We list here some details on the APIs we expose, the software versions we use an
 
 ## OVH APIs
 
-We have added a [Kubernetes section](https://ca.api.ovh.com/console/#/cloud/project/{serviceName}/kube) to the [OVH API](https://api.ovh.com/).  
+We have added a [Kubernetes section](https://api.ovh.com/console/#/cloud/project/{serviceName}/kube) to the [OVH API](https://api.ovh.com/).  
 Using it you will be able to add and remove nodes, update and reset your clusters or getting `kubectl` configuration.
 
 > [!primary]
@@ -47,9 +47,8 @@ The OS and Docker demon version on your nodes will be regularly updated. Current
 
 As recommended by Kubernetes, `docker` used as CRI is now deprecated since `1.20`, more information [here](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/).
 
-* If you create a new cluster or a new node pool, `containerd` is used as the default CRI for each nodes in the Kubernetes cluster.
-* If you already had a cluster with node installed before `1.20` was out, `docker` might still be used as the CRI on your nodes.
-Then, the CRI will not be changed until you update your cluster version to, at least, `1.20`.
+* If you create a new cluster or a node pool after February 2021, the 19th (in any supported Kubernetes version) or if you upgrade an existing cluster to 1.20, `containerd` is used as the default CRI for each nodes. Docker remains installed in our managed OS to ensure compatibilty for specific use cases.
+* For nodes pools created before that date, existing node pools will still use `docker` as the CRI on all nodes until you update that cluster to `1.20` or above.
 
 
 ## CNI (Cluster Network Interface)
