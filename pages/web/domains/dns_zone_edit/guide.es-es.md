@@ -15,7 +15,7 @@ section: 'DNS (servidor y zona)'
 
 ### Entender el concepto de DNS <a name="understanddns"></a>
 
-La sigla DNS, que significa **Dominio** **Name** **System**, es un conjunto de elementos que permiten hacer coincidir un dominio con una dirección IP.
+La sigla DNS, que significa **D**ominio **N**ame **S**ystem, es un conjunto de elementos que permiten hacer coincidir un dominio con una dirección IP.
 
 Por ejemplo, cuando quiere acceder al sitio *mydomain.ovh*, la solicitud se realiza inicialmente por este conjunto DNS, que la aconseja a la dirección IP del servidor que aloja el sitio *mydomain.ovh*.
 
