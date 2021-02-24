@@ -43,7 +43,7 @@ ovhai job list
 
 You should see the job you just ran, you need its `Id` to get more information about it.
 
-To see all jobs information use the following command:
+To see a job information use the following command:
 
 ``` {.console}
 ovhai job get <job-id>
