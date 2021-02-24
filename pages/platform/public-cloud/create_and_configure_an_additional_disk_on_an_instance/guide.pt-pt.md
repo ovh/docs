@@ -229,7 +229,7 @@ SAN Policy : Offline Shared
 ```
 DISKPART> san policy = OnlineAll
 
-DiskPart successfully changed the SAN policy for the current operating system . [/ Code]
+DiskPart successfully changed the SAN policy for the current operating system.
 
 Implementação da estratégia no disco adicional:
 [Code] DISKPART> list disk
