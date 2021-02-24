@@ -1,6 +1,6 @@
 ---
-title: 'Editar una zona DNS de OVH'
-excerpt: 'Cómo editar una zona DNS desde el área de cliente de OVH'
+title: 'Editar una zona DNS de OVHcloud'
+excerpt: 'Cómo editar una zona DNS desde el área de cliente de OVHcloud'
 slug: web_hosting_como_editar_mi_zona_dns
 section: 'DNS (servidor y zona)'
 ---
@@ -15,7 +15,7 @@ section: 'DNS (servidor y zona)'
 
 ### Entender el concepto de DNS <a name="understanddns"></a>
 
-La sigla DNS, que significa ****Dominio ****Name ****System, es un conjunto de elementos que permiten hacer coincidir un dominio con una dirección IP.
+La sigla DNS, que significa **Dominio** **Name** **System**, es un conjunto de elementos que permiten hacer coincidir un dominio con una dirección IP.
 
 Por ejemplo, cuando quiere acceder al sitio *mydomain.ovh*, la solicitud se realiza inicialmente por este conjunto DNS, que la aconseja a la dirección IP del servidor que aloja el sitio *mydomain.ovh*.
 
@@ -92,7 +92,7 @@ Conocer los distintos tipos de registros le permitirá entender mejor los cambio
 
 **MX**: Conecta un dominio a un servidor de correo. Por ejemplo, la dirección *10 mx1.mail.ovh.net* corresponde a uno de los servidores de correo de OVHcloud cuando usted dispone de una solución de correo de OVHcloud. Es probable que su proveedor de correo disponga de varios servidores de correo: es necesario crear varios registros MX. Consulte nuestra guía [Añadir un registro MX a la configuración del dominio](../anadir-registro-mx-configuracion-dominio/).
 
-**SPF**: Permite evitar posibles usurpaciones de identidad en las direcciones de correo electrónico que utilizan su dominio (spoofing). Por ejemplo, el registro *v=spf1 include:mx.ovh.com ~all* indica que el servidor de recepción solo puede considerar legítimos los servidores de envío asociados a su solución de correo OVHloud. Es posible introducir este registro en forma de registro TXT o a través de nuestro sistema de configuración automática. Para más información, consulte nuestra guía [Añadir un registro SPF a la configuración del dominio](../web_hosting_the_spf_record/).
+**SPF**: Permite evitar posibles usurpaciones de identidad en las direcciones de correo electrónico que utilizan su dominio (spoofing). Por ejemplo, el registro *v=spf1 include:mx.ovh.com ~all* indica que el servidor de recepción solo puede considerar legítimos los servidores de envío asociados a su solución de correo OVHloud. Es posible introducir este registro en forma de registro TXT o a través de nuestro sistema de configuración automática. Para más información, consulte nuestra guía [Añadir un registro SPF a la configuración del dominio](../web_hosting_el_registro_spf/).
 
 **DKIM**: Permite verificar la autenticidad del nombre de dominio del remitente y garantizar la integridad del mensaje de correo electrónico enviado. El registro DKIM se presenta como una clave de varios caracteres. La clave DKIM es proporcionada por su proveedor de correo, que puede introducir en forma de registro TXT.
 
@@ -179,7 +179,7 @@ También puede modificar el TTL de un registro DNS. Sin embargo, esta operación
 
 [Cambiar los servidores DNS de un dominio en OVH](../web_hosting_informacion_general_sobre_los_servidores_dns/){.external}
 
-[Añadir un registro SPF a la configuración del dominio](../web_hosting_the_spf_record/){.external}
+[Añadir un registro SPF a la configuración del dominio](../web_hosting_el_registro_spf/){.external}
 
 [Proteja su dominio contra el «cache poisoning» con el servicio DNSSEC](../proteja_su_dominio_con_dnssec/){.external}
 
