@@ -5,11 +5,15 @@ slug: bringyourownimage
 section: Fortgeschrittene Nutzung
 ---
 
-**Letzte Aktualisierung am 21.07.2020**
+**Letzte Aktualisierung am 25.02.2021**
 
 ## Ziel
 
 Mithilfe der Funktion *Bring Your Own Image* (BYOI) können Sie *cloudready* Images direkt auf Ihren Dedicated Servern einrichten. Somit können Sie Bare Metal Dienste als Ressource für Ihre Deployments verwenden.
+
+**Was bedeutet *cloudready*?**
+<br>In einem Satz agnostisch zu sein von der Infrastruktur, auf der das Bild beginnt.
+Zusätzlich zu den unten genannten Voraussetzungen und Einschränkungen muss sichergestellt werden, dass das (gewonnene, erstellte) Image die technischen Anforderungen eines Cloudready-Images erfüllt. Das Image muss in der Lage sein, unabhängig von der Servertypologie, von der es ausgeht, einen korrekten Booster zu erstellen. Im Falle der Verwendung eines Config Drive muss es auch den Cloud Init Dienst einbeziehen. Schließlich müssen die Systemkonfigurationen es ermöglichen, das Betriebssystem, insbesondere die Netzwerkkonfigurationen, vollständig in Gang setzen zu lassen.
 
 **Diese Anleitung erklärt, wie Sie *Bring Your Own Image* über die OVHcloud APIv6 verwenden.**
 
