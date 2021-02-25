@@ -85,19 +85,19 @@ Once the server has rebooted, log in and open Hyper-V Manager.
 
 Select your server on the left and click 'New' and select "Virtual Machine"
 
-![create-vm](images/create-vm.png]{.thumbnail}
+![create-vm](images/create-vm.png){.thumbnail}
 
 In the 'New Virtual Machine Wizard' Configure the VM as you please. When you get to the 'Configure Networking' step. Make sure to select the virtual switch. Once selected, click 'Next' to continue.
 
-![create-vm](images/create-vm-2.png]{.thumbnail}
+![create-vm](images/create-vm-2.png){.thumbnail}
 
 Once you reach the 'Installation Options' section, be sure to add the ISO for the operating system you are going to install. Click 'Next' to continue.
 
-![create-vm](images/create-vm-3.png]{.thumbnail}
+![create-vm](images/create-vm-3.png){.thumbnail}
 
 When you reach the 'Summary' page, ensure that the Virtual Switch and Operating System settings are correct and click 'Finish'
 
-![create-vm](images/create-vm-4.png]{.thumbnail}
+![create-vm](images/create-vm-4.png){.thumbnail}
 
 ### Installing the OS and Configuring the IP
 
