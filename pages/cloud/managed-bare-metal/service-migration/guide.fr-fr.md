@@ -1,9 +1,9 @@
 ---
 title: Migrer une infrastructure vers Managed Bare Metal
 routes:
-    canonical: 'https://docs.ovh.com/fr/private-cloud/migration-service/'
+    canonical: 'https://docs.ovh.com/fr/private-cloud/sddc-migration/'
 excerpt: Découvrez comment gérer tous les aspects liés à la migration d'une infrastructure vers la solution Managed Bare Metal
-slug: migration-service
+slug: sddc-migration
 section: Premiers pas
 order: 5
 ---
