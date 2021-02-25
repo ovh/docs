@@ -48,11 +48,11 @@ There are three types of status that may appear:
 |To generate|An SSL certificate has been activated for this website, but it is still not technically active. To activate the SSL certificate properly, you will need to regenerate it for your Web Hosting plan, so that it includes the new domain names.|
 |Disabled|An SSL certificate has not been activated for this multisite. To activate it, follow the steps listed below.|
 
-To activate SSL on a multisite, click on the cogwheel icon to the right of the multisite concerned, then `Edit`{.action}. In the window that pops up, tick the `SSL`{.action} box, then follow the steps until you confirm the change.
-
-Once you have submitted the activation request, the SSL secure connection status for the mutisite concerned should refresh in a few seconds, with the status changed to “To generate”. Repeat this action as necessary if you would like to activate SSL for other multisites. You can then go to [Regenerate an SSL certificate on a Web Hosting plan](https://docs.ovh.com/gb/en/hosting/ssl-certificates-on-web-hosting-plans/#regenerate-an-ssl-certificate-on-a-web-hosting-plan){.external}.
+To activate SSL on a multisite, click on the three dots icon to the right of the multisite concerned, then `Edit`{.action}. In the window that pops up, tick the `SSL`{.action} box, then follow the steps until you confirm the change.
 
 ![managessl](images/manage-ssl-step6.png){.thumbnail}
+
+Once you have submitted the activation request, the SSL secure connection status for the mutisite concerned should refresh in a few seconds, with the status changed to “To generate”. Repeat this action as necessary if you would like to activate SSL for other multisites. Activate the Let's Encrypt SSL certificate now by clicking the "Order SSL Certificate"{.action} button on the right side of the screen. You can then go to [Regenerate an SSL certificate on a Web Hosting plan](https://docs.ovh.com/gb/en/hosting/ssl-certificates-on-web-hosting-plans/#regenerate-an-ssl-certificate-on-a-web-hosting-plan){.external}.
 
 ### Activate an SSL certificate on your Web Hosting plan.
 
