@@ -93,7 +93,7 @@ By understanding what each of these records does, you will gain a better underst
 
 **DKIM**: Checks the authenticity of the sender’s domain name, and ensures the integrity of the email sent. The DKIM record is a key that consists of several characters. The DKIM key is provided by your email service provider. You can enter it as a TXT record.
 
-**DMARC**: Helps authenticate e-mails in association with SPF and/or DKIM methods. This value will be given to you by your email provider, and will at least be associated with an SPF or DKIM record.
+**DMARC**: Helps authenticate emails in association with SPF and/or DKIM methods. This value will be given to you by your email provider, and will at least be associated with an SPF or DKIM record.
 
 #### Extended records
 
@@ -101,7 +101,7 @@ By understanding what each of these records does, you will gain a better underst
 
 > [!warning]
 > 
-> The TXT record is limited to 255 characters. However, in some cases, you can split your value into several records. Ask your service provider if they ask you to enter a value that exceeds the 255-character quota.
+> The TXT record is limited to 255 characters. However, in some cases, you can split your value into several records. Ask your service provider if they request to enter a value that exceeds the 255-character quota.
 > 
 
 **SRV**: The SRV record is used to define information on the address of a server that manages a service. For example, it can indicate the address of a SIP server or the address of a server that allows the automatic configuration of an email software.
@@ -157,7 +157,7 @@ To modify a DNS record, click the `...`{.action} icon in the table in the row of
 
 #### Delete a DNS record.
 
-To modify a DNS record, click the `...`{.action} icon in the table in the row of the record you want to edit in the `DNS zone`{.action} tab. Then click `Delete record`{.action}, and follow the steps that open.
+To delete a DNS record, click the `...`{.action} icon in the table in the row of the record you want to edit in the `DNS zone`{.action} tab. Then click `Delete record`{.action}, and follow the steps that open.
 
 You can delete several entries at once by ticking them on the left-hand side of the table, then clicking the `Delete`{.action} button.
 
@@ -168,7 +168,8 @@ You can delete several entries at once by ticking them on the left-hand side of 
 Once you have modified your domain name’s DNS zone, you will need to allow a maximum of 24 hours for the changes to propagate fully, and be effective.
 
 If you would like the propagation time to be shorter the next time you edit your OVHcloud DNS zone, you can shorten it slightly by adjusting the TTL (*Time To Live*) that applies to all of the DNS records.
-To do this, go to the `DNS Zone`{.action} tab in the OVHcloud Control Panel, click `Modify default TTL`{.action}, and follow the steps that open. 
+
+To do this, go to the `DNS Zone`{.action} tab in the OVHcloud Control Panel, click `Modify default TTL`{.action}, and follow the steps. 
 
 You can also modify the TTL of a DNS record. However, you can only do this on one record at a time, by editing it, or when adding it.
 

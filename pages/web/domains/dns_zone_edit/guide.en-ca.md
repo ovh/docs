@@ -6,7 +6,7 @@ section: 'DNS and DNS zone'
 order: 3
 ---
 
-**Last updated 16/02/2021**
+**Last updated 16th February 2021**
 
 ## Objective
 
@@ -16,9 +16,9 @@ DNS stands for **D**omain **N**ame **S**ystem and is a set of elements used to m
 
 For example, when you want to access the website *mydomain.ovh*, your request is initially processed by this DNS set, which will direct it to the IP address of the server hosting the website *mydomain.ovh*.
 
-Given the changes you will need to make in the OVHcloud Control Panel, it is important to differentiate between **DNS servers** and the **DNS zone**. The DNS zone is configured at the **DNS server** level, with the **DNS zone** configured. 
+Given the changes you will need to make in the OVHcloud Control Panel, it is important to differentiate between **DNS servers** and the **DNS zone**. A **DNS zone** is effectively configured on the **DNS server** on which it is stored.
 
-You can find information about **DNS servers** and how to change it in our guide on [Editing DNS servers for an OVHcloud](../web_hosting_general_information_about_dns_servers/) domain name.
+You can find information about **DNS servers** and how to change them in our guide on [Editing DNS servers for an OVHcloud](../web_hosting_general_information_about_dns_servers/) domain name.
 
 ![DNS](images/dnsserver.png){.thumbnail}
 
@@ -26,9 +26,9 @@ If we go back to the example above, when you type *mydomain.ovh*, the **DNS serv
 
 ![DNS](images/dnssolve.gif){.thumbnail}
 
-### DNS zone 
+### DNS zone
 
-The DNS zone for a domain name is a configuration file made up of **records**. You can use these commands to link your domain name to the servers that host your internet services, such as websites (with the A record) and email addresses (with the MX record).
+The DNS zone for a domain name is a configuration file made up of **records**. You can use these to link your domain name to the servers that host your internet services, such as websites (with the A record) and email addresses (with the MX record).
 
 ![DNS](images/dnszone.png){.thumbnail}
 
@@ -38,24 +38,24 @@ The DNS zone for a domain name is a configuration file made up of **records**. Y
 
 ## Requirements
 
-- You must have access to manage the domain name from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
-- Use the OVHcloud configuration (on its DNS servers) for the domain name concerned. 
+- appropriate access to manage the domain name from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
+- OVHcloud DNS servers in use for the domain name concerned
 
 > [!warning]
 >
 > - If your domain name does not use OVHcloud DNS servers, you will need to edit the configuration using the interface given by the service provider that manages your domain name.
 > 
-> - If your domain name is registered with OVHcloud, you can check if it is using our configuration. To do this, go to your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, and select the domain name in question’s DNS `Servers`{.action} tab.
+> - If your domain name is registered with OVHcloud, you can check if it is using our configuration. To do this, go to your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), and select the domain name in question’s `DNS servers`{.action} tab.
 >
 
 ## Instructions
 
 ### Access the area for managing an OVHcloud DNS zone
 
-Log in to the OVHcloud Control [Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} in the `Web Cloud`{.action} section. Click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) in the `Web Cloud`{.action} section. Click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned. Go to the `DNS zone`{.action} tab.
 
-The table that appears will display a DNS record linked to your OVHcloud domain name for each row. You can filter the table content by DNS record type, or by domain name.
+The table that appears will display a DNS record linked to your OVHcloud domain name for each row. You can filter the table content by DNS record type or by domain name.
 
 ![dnszone](images/edit-dns-zone-ovh-control-panel.png){.thumbnail}
 
@@ -78,22 +78,22 @@ By understanding what each of these records does, you will gain a better underst
 > A TXT record using the same domain or subdomain as a CNAME record will disrupt the CNAME record. Your CNAME record will only work partially or not at all.
 >
 
-**NS** field: Defines the DNS servers associated with your DNS zone. For example, if the NS records in your DNS zone display the servers *dns19.ovh.net* and *ns19.ovh.net*, you will need to use them in the `DNS servers`{.action}  tab in your Control Panel. Please refer to our [guide on Editing DNS servers for an OVHcloud](../web_hosting_general_information_about_dns_servers/) domain name for more information.
+**NS** fields: Define the DNS servers associated with your DNS zone. For example, if the NS records in your DNS zone display the servers *dns19.ovh.net* and *ns19.ovh.net*, you will need to use them in the `DNS servers`{.action}  tab in your Control Panel. Please refer to our guide on [Editing DNS servers for an OVHcloud domain name](../web_hosting_general_information_about_dns_servers/) for more information.
 
 > [!warning]
 >
-> Do not modify the NS records in your DNS zone using the `Modify button in text`{.action} mode, in favour of DNS servers external to OVHcloud. This DNS zone works **only** with OVHcloud DNS servers.
+> Do not modify the NS records in your DNS zone using the button `Change in text format`{.action}, in favour of DNS servers external to OVHcloud. This DNS zone works **only** with OVHcloud DNS servers.
 >
 
 #### Email records
 
-**MX**: Links a domain name to an email server. For example, the address *10 mx1.mail.ovh.net* corresponds to one of the OVHcloud email servers when you have an OVHcloud email solution. Your email provider may have several email servers: Several MX fields must therefore be created. Please read our guide on [Adding an MX record to your domain](../mail-mutualise-guide-de-configuration-mx-avec-zone-dns-ovh/) name’s configuration.
+**MX**: Links a domain name to an email server. For example, the address *10 mx1.mail.ovh.net* corresponds to one of the OVHcloud email servers when you have an OVHcloud email solution. Your email provider may have several email servers: Several MX fields must therefore be created. Please read our guide on [Adding an MX record to your domain name’s configuration](../web_hosting_configuring_mx_with_the_ovh_dns_zone/).
 
-**SPF**: Avoids potential identity theft on email addresses using your domain name (spoofing). For example, the record *v=spf1 include:mx.ovh.com ~all* indicates that only the outgoing servers linked to your OVHcloud mail offer can be considered legitimate by the incoming server. You can enter this record as a TXT record, or via our automatic configuration system. For further information, please refer to our guide on [Adding an SPF record to your domain](../web_hosting_the_spf_record/) name’s configuration.
+**SPF**: Avoids potential identity theft on email addresses using your domain name (spoofing). For example, the record *v=spf1 include:mx.ovh.com ~all* indicates that only the outgoing servers linked to your OVHcloud mail offer can be considered legitimate by the incoming server. You can enter this record as a TXT record, or via our automatic configuration system. For further information, please refer to our guide on [Adding an SPF record to your domain name’s configuration](../web_hosting_the_spf_record/).
 
 **DKIM**: Checks the authenticity of the sender’s domain name, and ensures the integrity of the email sent. The DKIM record is a key that consists of several characters. The DKIM key is provided by your email service provider. You can enter it as a TXT record.
 
-**DMARC**: Helps authenticate e-mails in association with SPF and/or DKIM methods. This value will be given to you by your email provider, and will at least be associated with an SPF or DKIM record.
+**DMARC**: Helps authenticate emails in association with SPF and/or DKIM methods. This value will be given to you by your email provider, and will at least be associated with an SPF or DKIM record.
 
 #### Extended records
 
@@ -101,7 +101,7 @@ By understanding what each of these records does, you will gain a better underst
 
 > [!warning]
 > 
-> The TXT record is limited to 255 characters. However, in some cases, you can split your value into several records. Ask your service provider if they ask you to enter a value that exceeds the 255-character quota.
+> The TXT record is limited to 255 characters. However, in some cases, you can split your value into several records. Ask your service provider if they request to enter a value that exceeds the 255-character quota.
 > 
 
 **SRV**: The SRV record is used to define information on the address of a server that manages a service. For example, it can indicate the address of a SIP server or the address of a server that allows the automatic configuration of an email software.
@@ -124,7 +124,7 @@ You can edit your domain name’s OVHcloud DNS zone by adding, modifying or dele
 
 For informed users only. 
 
-In the `DNS zone`{.action}  tab, click `Modify in text`{.action} mode, then follow the steps that appear.
+In the `DNS zone`{.action}  tab, click `Change in text format`{.action}, then follow the steps that appear.
 
 #### Use our configuration assistants
 
@@ -132,14 +132,14 @@ From this point onwards, this guide will only cover configuration using our conf
 
 > [!primary]
 >
-> Get the information you want to modify in your OVHcloud DNS zone. If you are making this change at the request of a service provider, the service provider must provide you with a list of the items to change.
+> In order to modify your OVHcloud DNS zone successfully, make sure to gather all the required information first. If you are making this change at the request of a service provider, the service provider must provide you with a list of the items to change.
 >
 
 #### Add a new DNS record.
 
-To add a new DNS record, in your domain name’s `DNS Zone`{.action} tab, click the `Add record`{.action} button to the right of the table. Select the DNS record type, then follow the steps.
+To add a new DNS record, in your domain name’s `DNS zone`{.action} tab, click the `Add an entry`{.action} button to the right of the table. Select the DNS record type, then follow the steps.
 
-Please check in advance if this record does not already exist, and does not point to a different target. To check this, you can filter content by record type or domain. If the record already exists, you can modify it using the steps described below.
+Please check in advance whether this record already exists and might point to a different target. To check this, you can filter the table contents by record type or domain. If the record exists, you can modify it using the steps described below.
 
 ![dnszone](images/edit-dns-zone-ovh-add-entry.png){.thumbnail}
 
@@ -151,13 +151,13 @@ Please check in advance if this record does not already exist, and does not poin
 
 #### Modify an existing DNS record. 
 
-To modify a DNS record, in the DNS `Zone`{.action} tab in the OVHcloud Control Panel, click the `...`{.action} icon in the table to the right of the record you want to edit. Then click `Edit record`{.action}, and follow the steps that open.
+To modify a DNS record, click the `...`{.action} icon in the table in the row of the record you want to edit in the `DNS zone`{.action} tab. Then click `Modify record`{.action}, and follow the steps that open.
 
 ![dnszone](images/edit-dns-zone-ovh-modify-entry.png){.thumbnail}
 
 #### Delete a DNS record.
 
-To delete a DNS record, in the `DNS Zone`{.action} tab in the OVHcloud Control Panel, click the `...`{.action} icon in the table to the right of the record you want to edit. Then click `Delete record`{.action}, and follow the steps that open.
+To delete a DNS record, click the `...`{.action} icon in the table in the row of the record you want to edit in the `DNS zone`{.action} tab. Then click `Delete record`{.action}, and follow the steps that open.
 
 You can delete several entries at once by ticking them on the left-hand side of the table, then clicking the `Delete`{.action} button.
 
@@ -168,7 +168,8 @@ You can delete several entries at once by ticking them on the left-hand side of 
 Once you have modified your domain name’s DNS zone, you will need to allow a maximum of 24 hours for the changes to propagate fully, and be effective.
 
 If you would like the propagation time to be shorter the next time you edit your OVHcloud DNS zone, you can shorten it slightly by adjusting the TTL (*Time To Live*) that applies to all of the DNS records.
-To do this, go to the `DNS Zone`{.action} tab in the OVHcloud Control Panel, click `Modify default TTL`{.action}, and follow the steps that open. 
+
+To do this, go to the `DNS Zone`{.action} tab in the OVHcloud Control Panel, click `Modify default TTL`{.action}, and follow the steps. 
 
 You can also modify the TTL of a DNS record. However, you can only do this on one record at a time, by editing it, or when adding it.
 
