@@ -1,6 +1,6 @@
 ---
 title: Configuration de votre ligne Fax
-slug: configuration_du_fax
+slug: configuration-fax
 excerpt: Découvrez comment configurer votre ligne Fax depuis votre espace client OVHcloud
 section: Divers
 ---
