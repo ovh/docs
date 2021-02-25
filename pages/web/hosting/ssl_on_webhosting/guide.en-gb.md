@@ -54,12 +54,12 @@ To activate SSL on a multisite, click on the three dots icon to the right of the
 
 Once you have submitted the activation request, the SSL secure connection status for the mutisite concerned should refresh in a few seconds, with the status changed to “To generate”. Repeat this action as necessary if you would like to activate SSL for other multisites. 
 
->[!primary]
->You can have two situations in this state:
->- no active SSL certificate?
->Activate the Let's Encrypt SSL certificate now by clicking the "Order SSL Certificate"{.action} button on the right side of the screen and choose "Free certificate (Let's Encrypt)".
->- SSL certificate is active, but have you added more multisites?
->You can then go to [Regenerate an SSL certificate on a Web Hosting plan] (https://docs.ovh.com/gb/en/hosting/ssl-certificates-on-web-hosting-plans/#regenerate-an-ssl-certificate-on-a-web-hosting-plan){.external} to regenerate the SSL certificate for the remaining multisites.
+> [!primary]
+> You can have two situations in this state:
+> - **no active SSL certificate?**
+> Activate the Let's Encrypt SSL certificate now by clicking the "Order SSL Certificate"{.action} button on the right side of the screen and choose "Free certificate (Let's Encrypt)".
+> - **SSL certificate is active, but have you added more multisites?**
+> You can then go to [Regenerate an SSL certificate on a Web Hosting plan] (https://docs.ovh.com/gb/en/hosting/ssl-certificates-on-web-hosting-plans/#regenerate-an-ssl-certificate-on-a-web-hosting-plan){.external} to regenerate the SSL certificate for the remaining multisites.
 
 <!-- You can then go to [Regenerate an SSL certificate on a Web Hosting plan](https://docs.ovh.com/gb/en/hosting/ssl-certificates-on-web-hosting-plans/#regenerate-an-ssl-certificate-on-a-web-hosting-plan){.external}.
 Activate the Let's Encrypt SSL certificate now by clicking the "Order SSL Certificate"{.action} button on the right side of the screen and choose "Free certificate (Let's Encrypt)".  -->
