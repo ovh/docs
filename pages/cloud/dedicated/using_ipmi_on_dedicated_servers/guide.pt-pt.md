@@ -15,7 +15,7 @@ Atenção: por vezes, poderá encontrar o termo KVM (Keyboard Video and Mouse), 
 
 ## Requisitos
 
-- Aceder à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager).
+- Aceder à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 
 ## Instruções

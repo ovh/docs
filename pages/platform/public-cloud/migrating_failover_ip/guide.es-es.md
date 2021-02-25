@@ -18,7 +18,7 @@ Esta guía explica cómo migrar una IP de conmutación de una instancia a otra. 
 
 - Tener al menos dos instancias de Public Cloud ejecutándose
 - Tener una IP de conmutación
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
 

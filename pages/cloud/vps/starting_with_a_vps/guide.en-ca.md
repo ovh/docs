@@ -24,14 +24,14 @@ If you encounter any difficulties performing these actions, please contact a spe
 
 ## Requirements
 
-- a [Virtual Private Server]({ovh_www}/vps) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- a [Virtual Private Server](https://www.ovhcloud.com/en-ca/vps/) in your OVHcloud account
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 - login credentials received via email after the installation
 
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `VPS`{.action}. This dashboard contains important information about your service and allows you to perform essential operations. It will appear differently, depending on the product range of your VPS solution. 
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Bare Metal Cloud`{.action} section and select your server from the list in the left-hand navigation under `Virtual Private Servers`{.action}. This dashboard contains important information about your service and allows you to perform essential operations. It will appear differently, depending on the product range of your VPS solution. 
 
 - If you have recently ordered a VPS, its reference name will look like this: *vps-XXXXXXX.vps.ovh.net* (where *X* stands for numbers and letters). 
 
@@ -167,5 +167,7 @@ For a more automated process, OVHcloud also offers the [SSL Gateway]({ovh_www}/s
 ## Go further
 
 [Introduction to SSH](../../dedicated/ssh-introduction/)
+
+[Securing a VPS](../tips-for-securing-a-vps/)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -13,12 +13,12 @@ L'espace client OVHcloud vous permet d'enregistrer et gérer différents moyens 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/YCSMAjDcoyQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
-- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 - Disposer d'un moyen de paiement valide.
 
 ## En pratique
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur votre nom en haut à droite, puis sélectionnez `Moyen de paiement`{.action}.
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur votre nom en haut à droite, puis sélectionnez `Moyen de paiement`{.action}.
 
 ![manage-payment-methods](images/hubpayment.png){.thumbnail}
 

@@ -38,7 +38,7 @@ Si usted está usando una infraestructura dedicada (ejem. Un servidor dedicado, 
 > - `?`: neutro
 >
 
-Para más información sobre el registro SPF, vaya a la siguiente página: <http://www.openspf.org/SPF_Record_Syntax.>
+Para más información sobre el registro SPF, vaya a la siguiente página: <http://www.open-spf.org/>
 
 Usted puede encontrar más información sobre como configurar el registro SPF para un dominio, o especificando directamente la dirección IPV6. Puede encontrar como hacerlo en la siguiente guía: [Añadir un registro SPF a la configuración del dominio](../../domains/web_hosting_el_registro_spf/)
 
@@ -52,7 +52,7 @@ La autenticación se lleva a cabo médiente una clave DKIM que debe de añadir a
 
 ara optimizar el envío de correos electrónicos y evitar que sus correos sean bloqueado, usted puede configurar la IP inversa con su nombre de dominio.
 
-Para modificar la IP inversa en su [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) {.external}, vaya a `servidores` {.action}, `IP`{.action}. Entonces seleccione la dirección IPV4, haga click en la rueda dentada en la parte derecha, haga click en `Modificar la inversa`{.action}:
+Para modificar la IP inversa en su [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) {.external}, vaya a `servidores` {.action}, `IP`{.action}. Entonces seleccione la dirección IPV4, haga click en la rueda dentada en la parte derecha, haga click en `Modificar la inversa`{.action}:
 
 ![Reverse IP](images/reverse_ip_2020.png)
 

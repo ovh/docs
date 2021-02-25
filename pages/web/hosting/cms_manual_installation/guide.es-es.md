@@ -24,7 +24,7 @@ Nuestros servicios de alojamiento web son compatibles con algunos de los sistema
 ## Requisitos
 
 - Tener un plan de alojamiento web
-- Tener acceso al [panel de control de OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Tener acceso al [panel de control de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 
 ## Procedimiento
 
@@ -32,7 +32,7 @@ Nuestros servicios de alojamiento web son compatibles con algunos de los sistema
 > [!primary]
 >**Instalación automática**
 >
->Puede instalar automáticamente cada uno de estos CMS en pocos clics desde su [panel de control de OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Lea la siguiente guía:
+>Puede instalar automáticamente cada uno de estos CMS en pocos clics desde su [panel de control de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Lea la siguiente guía:
 >
 >[Instalación de su sitio web con módulos de un clic](../modulos-en-un-clic/)
 >

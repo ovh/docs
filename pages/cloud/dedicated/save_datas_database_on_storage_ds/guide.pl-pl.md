@@ -9,7 +9,7 @@ section: Tutoriale
 
 Twoje dane są wrażliwe: ich utrata lub uszkodzenie mogłyby szybko doprowadzić do problemów w prowadzeniu Twojej działalności. Ponieważ zawsze istnieje ryzyko utraty danych, zalecamy wykonywanie kopii zapasowych co najmniej raz dziennie, najlepiej przy użyciu serwera czy rozwiązania do wykonywania kopii zapasowych innego niż Twoja infrastruktura produkcyjna.
 
-OVH oferuje gamę serwerów [dedykowanych Storage](https://www.ovh.pl/serwery_dedykowane/storage/){.external} dostosowanych do przechowywania kopii zapasowych i wyposażonych w minimum cztery dyski twarde. Istnieje możliwość wykorzystania tych zasobów do zapisywania kopii zapasowych infrastruktury hostowanej w OVH lub u innego dostawcy za pośrednictwem sieci publicznej.
+OVH oferuje gamę serwerów [dedykowanych Storage](https://www.ovhcloud.com/pl/bare-metal/storage/){.external} dostosowanych do przechowywania kopii zapasowych i wyposażonych w minimum cztery dyski twarde. Istnieje możliwość wykorzystania tych zasobów do zapisywania kopii zapasowych infrastruktury hostowanej w OVH lub u innego dostawcy za pośrednictwem sieci publicznej.
 
 Niniejszy przewodnik wyjaśnia, jak skonfigurować odpowiadający Twoim potrzebom serwer kopii zapasowych, jak utworzyć drzewo kopii zapasowych oraz jak zautomatyzować wykonywanie kopii zapasowych danych z dwóch zdalnych serwerów za pośrednictwem protokołu SCP.
 
@@ -26,8 +26,8 @@ Niniejszy przewodnik wyjaśnia, jak skonfigurować odpowiadający Twoim potrzebo
 
 ### Powinieneś posiadać:
 
-- [Serwer Storage OVH](https://www.ovh.pl/serwery_dedykowane/storage/){.external}
-- Infrastrukturę produkcyjną ([VPS](https://www.ovh.pl/vps/){.external}, [serwery dedykowane](https://www.ovh.pl/serwery_dedykowane/){.external}, [Public Cloud](https://www.ovh.pl/public-cloud/instances/){.external}…)
+- [Serwer Storage OVH](https://www.ovhcloud.com/pl/bare-metal/storage/){.external}
+- Infrastrukturę produkcyjną ([VPS](https://www.ovhcloud.com/pl/vps/){.external}, [serwery dedykowane](https://www.ovhcloud.com/pl/bare-metal/){.external}, [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external}…)
 - Połączenie SSH skonfigurowane między serwerem kopii zapasowych a infrastrukturą produkcyjną
 - Zalecane: sieć prywatna między serwerami ([OVH vRack](https://www.ovh.pl/rozwiazania/vrack/){.external})
 
@@ -37,7 +37,7 @@ Niniejszy przewodnik wyjaśnia, jak skonfigurować odpowiadający Twoim potrzebo
 
 ### Etap 1: wybierz odpowiedni tryb RAID
 
-OVH oferuje gamę [serwerów dedykowanych](https://www.ovh.pl/serwery_dedykowane/storage/){.external}, które posiadają kilka dysków twardych. W poniższym przykładzie prezentujemy RAID programowy (_soft RAID_) z czterema dyskami o pojemności 6 TB każdy. 
+OVH oferuje gamę [serwerów dedykowanych](https://www.ovhcloud.com/pl/bare-metal/storage/){.external}, które posiadają kilka dysków twardych. W poniższym przykładzie prezentujemy RAID programowy (_soft RAID_) z czterema dyskami o pojemności 6 TB każdy. 
 
 OVH umożliwia wybranie konfiguracji przechowywania danych, proponując RAID 0, 1, 5, 6 i 10. Każdy z tych rodzajów macierzy ma swoje zalety i wady w zakresie wydajności i elastyczności. W przypadku czterech dysków możesz przechowywać dane w konfiguracji RAID 5, 6 lub 10 (RAID 0 i 1 nie są w tym przypadku odpowiednie).
 
@@ -66,7 +66,7 @@ Nie można powiedzieć, że jeden RAID jest lepszy od innego, każdy z nich odpo
 
 ### Etap 2: instalacja i konfiguracja serwera
 
-Przejdź do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i wykonaj instalację systemu. Jak zostało wspomniane na początku, będziemy używać dystrybucji Debian 9.4. Więcej informacji znajdziesz w przewodniku [Pierwsze kroki z serwerem dedykowanym](https://docs.ovh.com/pl/dedicated/pierwsze-kroki-z-serwerem-dedykowanym/#instalacja-lub-reinstalacja-serwera-dedykowanego_1){.external}.
+Przejdź do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wykonaj instalację systemu. Jak zostało wspomniane na początku, będziemy używać dystrybucji Debian 9.4. Więcej informacji znajdziesz w przewodniku [Pierwsze kroki z serwerem dedykowanym](https://docs.ovh.com/pl/dedicated/pierwsze-kroki-z-serwerem-dedykowanym/#instalacja-lub-reinstalacja-serwera-dedykowanego_1){.external}.
 
 Po wybraniu systemu do instalacji zaznacz pole `Spersonalizuj konfigurację partycji`{.action}.
 

@@ -17,7 +17,7 @@ Das Einloggen in Ihre OVHcloud Public Cloud Instanzen erfolgt ähnlich einem Log
 ## Voraussetzungen
 
 - Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 
 ## In der praktischen Anwendung
@@ -75,7 +75,7 @@ Um sich unter Windows mit einer Linux-Instanz zu verbinden, können Sie eine Anw
 
 #### Schritt 1: Abschließen der Installation
 
-Wenn Sie Ihre Instanz erstellt haben, muss noch _sysprep_ ausgeführt werden. Hierzu loggen Sie sich ins [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und starten die `VNC-Konsole`{.action} von der Startseite der ausgewählten Instanz.
+Wenn Sie Ihre Instanz erstellt haben, muss noch _sysprep_ ausgeführt werden. Hierzu loggen Sie sich ins [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und starten die `VNC-Konsole`{.action} von der Startseite der ausgewählten Instanz.
 
 ![VNC Instrumententafel](images/vnc_console.png)
 

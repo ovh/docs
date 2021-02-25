@@ -83,7 +83,7 @@ You should also uninstall any plugins that you do not need.
 If the attack occurred before the last backup period, here's how to reset your WordPress site:
 
 ## You cannot log in to your WordPress administrator panel
-In this instance, reset your [administrator password](https://codex.wordpress.org/Resetting_Your_Password) by following the official WordPress guide. 
+In this instance, reset your [administrator password](https://codex.wordpress.org/) by following the official WordPress guide. 
 
 If you find this too complicated, you can update your email from [phpMyAdmin](https://phpmyadmin.ovh.net) in the userstable. Then go back to the login page, click on Forgotten password, and wait to receive an email.
 

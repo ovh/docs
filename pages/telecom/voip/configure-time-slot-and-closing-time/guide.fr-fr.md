@@ -16,7 +16,7 @@ Votre ligne téléphonique OVH vous permet de recevoir des appels. Pour diverses
 ## Prérequis
 
 - Disposer d'une [ligne OVH avec un forfait compatible](https://www.ovhtelecom.fr/telephonie/voip/){.external} ou d'une ligne Trunk.
-- Disposer d'un accès à la gestion de la ligne concernée depuis votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`{.action}.
+- Disposer d'un accès à la gestion de la ligne concernée depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
 
 ## En pratique
 
@@ -36,7 +36,7 @@ Poursuivez la lecture de cette documentation en fonction de la configuration que
 
 #### Étape 1 : accéder à la gestion des plages horaires
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée.
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Gérer les plages horaires`{.action}.
 
@@ -95,7 +95,7 @@ Pour compléter vos plages horaires, vous avez la possibilité de créer des fer
 > Les fermetures exceptionnelles complètent [vos plages horaires paramétrées](https://docs.ovh.com/fr/voip/configurer-plages-horaires-fermetures-exceptionnelles-ligne/#gerer-les-plages-horaires){.external}. Il est donc indispensable que ces dernières soient activées pour que les fermetures exceptionnelles s’appliquent.
 >
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée.
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée.
 
 Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Gérer les fermetures exceptionnelles`{.action}.
 

@@ -28,7 +28,7 @@ Die Kundenkennung (auch NIC-Handle) ist eine persönliche Kennung, die Sie per E
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben Zugriff auf die E-Mail-Adresse Ihres Kunden-Accounts.
 - Sie verfügen über ausreichende Zugriffsrechte für den betreffenden Dienst.
 - Sie haben die Kundenkennung des neuen Kontakts (der Kontakt, für den Sie die Änderung durchführen möchten).
@@ -39,7 +39,7 @@ Die Kundenkennung (auch NIC-Handle) ist eine persönliche Kennung, die Sie per E
 
 ### Auf die Kontaktverwaltung zugreifen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, klicken Sie oben rechts auf den zu Ihrer Kundenkennung gehörigen Namen und wählen Sie dann `Verwaltung der Kontakte`{.action} aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie oben rechts auf den zu Ihrer Kundenkennung gehörigen Namen und wählen Sie dann `Verwaltung der Kontakte`{.action} aus.
 
 ![Kontaktverwaltung](images/hubcontacts.png){.thumbnail}
 
@@ -97,7 +97,7 @@ Sollte einer der Kontakte die E-Mail nicht erhalten haben, kann es sein, dass di
 
 ![Kontaktverwaltung](images/managing_contacts_06.png){.thumbnail}
 
-Wenn nur ein Kontakt die Änderung bestätigt hat, wird eine Meldung angezeigt, die Sie darüber informiert, dass die Bestätigung der Änderungsanfrage durch den anderen Kontakt noch nicht erfolgt ist. Wenn einer der Kontakte die Anfrage gerade erst bestätigt hat, dauert es ein paar Minuten, bis die Anzeige im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) aktualisiert wird.
+Wenn nur ein Kontakt die Änderung bestätigt hat, wird eine Meldung angezeigt, die Sie darüber informiert, dass die Bestätigung der Änderungsanfrage durch den anderen Kontakt noch nicht erfolgt ist. Wenn einer der Kontakte die Anfrage gerade erst bestätigt hat, dauert es ein paar Minuten, bis die Anzeige im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) aktualisiert wird.
 
 ![Kontaktverwaltung](images/managing_contacts_07.png){.thumbnail}
 

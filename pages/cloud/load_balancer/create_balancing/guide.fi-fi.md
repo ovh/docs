@@ -16,7 +16,7 @@ OVH:n uusi Kuormantasaaja tarjoaa palveluillesi erilaisia kuormanjakotyyppejä. 
 
 ## Edellytykset
 
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - Sinulla on luotuna palvelinfarmi.
 
 

@@ -22,7 +22,7 @@ OVH tarjoaa Windows- ja SQL Server -mallipohjia (OVF-formaatissa), joita voit k�
 ## Edellytykset
 
 - Sinulla on pääsyoikeudet web-asiakasohjelmaan tai työasemapohjaiseen ohjelmaan.
-- [Olet aktivoinut Windows-lisenssit](https://www.ovh-hosting.fi/private-cloud/lisapalvelut/kuvat-lisenssit.xml#Windows){.external} [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager){.external} (konesalin välilehti `Windows-lisenssi`{.action}). 
+- [Olet aktivoinut Windows-lisenssit](https://www.ovh-hosting.fi/private-cloud/lisapalvelut/kuvat-lisenssit.xml#Windows){.external} [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} (konesalin välilehti `Windows-lisenssi`{.action}). 
 
 
 ## Käytännössä

@@ -38,13 +38,13 @@ O remetente (sender) transmite o e-mail à mailing list. O moderador (moderator)
 ## Requisitos
 
 - Ter uma oferta de e-mail MX Plan 100 no mínimo ou um [Alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external} elegível para as listas de difusão.
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/manager/web/login/){.external}.
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
 ### Criação da sua mailing list
 
-Para criar a sua mailing list, vá à sua [Área de Cliente OVHcloud](http://www.ovh.com/manager/web){.external} e selecione o separador `Web Cloud`{.action} no topo.
+Para criar a sua mailing list, vá à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione o separador `Web Cloud`{.action} no topo.
 
 Após a conexão, clique na coluna da esquerda, em `E-mails`{.action}, e depois no respetivo nome de domínio. Vá ao separador `mailing lists`{.action} do seu serviço de e-mail.
 
@@ -254,6 +254,6 @@ Pode encontrar, em seguida, uma lista dos ficheiros com os textos de resposta e 
 > Por exemplo: Se pretender alterar o rodapé predefinido dos e-mails enviados para a sua mailing list, terá de enviar uma mensagem para o endereço "newsletter-edit.bottom@testinterne.ovh". Receberá então um novo e-mail a explicar como personalizar o rodapé.
 > 
 
-## Quer saber mais?
+## Saiba mais
 
-Fale com a nossa comunidade de utilizadores: https://community.ovh.com/en/
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

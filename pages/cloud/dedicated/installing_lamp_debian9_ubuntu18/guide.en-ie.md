@@ -20,7 +20,7 @@ These technologies form a stack, which you can use to host dynamic websites and 
 - SSH access 
 - access to edit text files in the command line (e.g. Vim, nano, Emacs)
 - ability to install a Linux distribution (here we are using Debian 9.4, but the guide steps are identical for Ubuntu 18.04)
-- a server or a virtual machine with a Linux distribution (a [VPS](https://www.ovh.ie/vps/){.external}, a [Dedicated Server](https://www.ovh.ie/dedicated_servers/all_servers.xml){.external} or [OVH Public Cloud instance](https://www.ovh.ie/public-cloud/instances/prices/){.external})
+- a server or a virtual machine with a Linux distribution (a [VPS](https://www.ovhcloud.com/en-ie/vps/){.external}, a [Dedicated Server](https://www.ovhcloud.com/en-ie/bare-metal/){.external} or [OVH Public Cloud instance](https://www.ovhcloud.com/en-ie/public-cloud/){.external})
 - admin (root) access to the server
 
 > [!warning]
@@ -197,7 +197,7 @@ mysql -u root -p
 MariaDB \[(none)]> show databases; MariaDB \[(none)]> exit 
 ```
 
-We recommend creating a specific user account, and dedicating it to your web application. If required, you can refer to the official guide documentation released by [MySQL](https://dev.mysql.com/doc/refman/8.0/en/user-account-management.html){.external} and [MariaDB](https://mariadb.com/kb/en/library/user-account-management/){.external}.
+We recommend creating a specific user account, and dedicating it to your web application. If required, you can refer to the official guide documentation released by [MySQL](https://dev.mysql.com/){.external} and [MariaDB](https://mariadb.com/kb/en/library/user-account-management/){.external}.
 
 ### Step 6: Install phpMyAdmin (optional).
 

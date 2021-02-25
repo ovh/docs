@@ -23,7 +23,7 @@ La puesta en red en modo bridge puede utilizarse para configurar sus máquinas v
 
 - Tener un servidor dedicado con un hipervisor instalado (por ejemplo, [VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server y Proxmox).
 - Tener al menos una dirección [IP failover](https://www.ovhcloud.com/es/bare-metal/ip/) conectada al servidor.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 ## Procedimiento
 
@@ -40,7 +40,7 @@ Para este ejemplo, utilizaremos los siguientes valores en nuestros ejemplos de c
 
 ### Asignar una dirección MAC virtual
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} y haga clic en el menú `Bare Metal Cloud`{.action}. En la columna izquierda, haga clic en `IP`{.action} y seleccione su dirección IP Failover.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y haga clic en el menú `Bare Metal Cloud`{.action}. En la columna izquierda, haga clic en `IP`{.action} y seleccione su dirección IP Failover.
 
 ![IP Failover](images/virtual_mac_01_2020_1.png){.thumbnail}
 
@@ -56,17 +56,17 @@ Seleccione "OVH" en la lista desplegable "Tipo", escriba un nombre en el campo "
 
 Para configurar sus máquinas virtuales para el acceso a Internet, debe conocer la pasarela de su máquina host, es decir, su servidor dedicado. La dirección de la pasarela está formada por los tres primeros bytes de la dirección IP principal del servidor, el último byte es de 254. Por ejemplo, si la dirección IP principal del servidor es:
 
-- 123.456.789.012
+- 169.254.10.020
 
 Su dirección de pasarela será:
 
-- 123.456.789.254
+- 169.254.10.254
 
 ### Preparar el host
 
 > [!primary]
 >
-Para todos los sistemas operativos y distribuciones, debe configurar su máquina virtual con la dirección MAC virtual creada en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Para todos los sistemas operativos y distribuciones, debe configurar su máquina virtual con la dirección MAC virtual creada en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 >
 
 #### Proxmox
@@ -203,7 +203,7 @@ Guarde y cierre el archivo.
 Abra el archivo de enrutado de la máquina virtual, que se encuentra en `/etc/sysconfig/network-scripts/route-(nombre de la interfaz)`. Modifique el archivo para que refleje la configuración que se muestra a continuación. No olvide sustituir las variables por sus propios valores:
 
 ```bash
-GATEWAY_IP - 123.456.789.254 (nombre-interfaz)
+GATEWAY_IP - 169.254.10.254 (nombre-interfaz)
 NETWORK_GW_VM - 255.255.255.0 (inserte el nombre de la interfaz)
 default GATEWAY_IP
 ```
@@ -333,7 +333,7 @@ ip addr add FAILOVER_IP/32 dev test-bridge
 
 Sustituya "MAC_ADDRESS" por la dirección MAC virtual generada en el panel de configuración y "FAILOVER_IP" por la IP failover real.
 
-A continuación, solo tiene que hacer ping a su IP Failover desde el exterior. Si funciona, probablemente significa que hay un error de configuración en la máquina virtual o en el host que impide que la IP failover funcione en modo normal. Si, por el contrario, la IP todavía no funciona, abra un tíquet al equipo de soporte desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} para más información.
+A continuación, solo tiene que hacer ping a su IP Failover desde el exterior. Si funciona, probablemente significa que hay un error de configuración en la máquina virtual o en el host que impide que la IP failover funcione en modo normal. Si, por el contrario, la IP todavía no funciona, abra un tíquet al equipo de soporte desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} para más información.
 
 ## Más información
 

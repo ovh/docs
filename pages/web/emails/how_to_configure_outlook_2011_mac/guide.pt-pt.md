@@ -41,7 +41,7 @@ Preencha os seguintes campos com os valores correspondentes:
 
 Endereço de e-mail: O seu endereço de e-mail na íntegra.
 
-Password: A password que definiu no [manager](https://www.ovh.com/manager/web/login/).
+Password: A password que definiu no [manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 Nome do utilizador: O seu endereço de e-mail na íntegra.
 
@@ -117,7 +117,7 @@ Eis as informações a ter em conta para a configuração de uma conta de email 
 Configuração POP com encriptação SSL activada ou SSL desativada : 
 
 Endereço de Email : O seu endereço de email completo.
-Palavra-passe : A palavra-passe que definiu no seu espaço [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager).
+Palavra-passe : A palavra-passe que definiu no seu espaço [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 Nome de utilizador : O seu endereço de email completo.
 Servidor de receção : Servidor de receção de emails : SSL0.OVH.NET
 Porta do servidor de receção : A porta : 995 ou 110
@@ -144,7 +144,7 @@ Eis as informações a ter em conta para a configuração de uma conta de email 
 Configuração IMAP com encriptação SSL activada ou SSL desativada : 
 
 Endereço de Email : O seu endereço de email completo.
-Palavra-passe : A palavra-passe que definiu no seu espaço [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager).
+Palavra-passe : A palavra-passe que definiu no seu espaço [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 Nome de utilizador : O seu endereço de email completo.
 Servidor de receção : Servidor de receção de emails : SSL0.OVH.NET
 Porta do servidor de receção : A porta : 993 ou 143

@@ -67,9 +67,6 @@ Hieronder is een lijst met KMS-sleutels beschikbaar voor elk besturingssysteem:
 |Windows Server 2019 Standard|N69G4-B89J2-4G8F4-WWYCC-J464C|
 |Windows Server 2019 Datacenter|WMDGN-G9PQG-XVVXX-R3X43-63DFG|
 
-Bron [Microsoft MSDN](http://ovh.to/uLicqrr){.external}.
-
-
 > [!primary]
 >
 > Core-versies gebruiken dezelfde KMS-sleutels als niet-Core-versies.

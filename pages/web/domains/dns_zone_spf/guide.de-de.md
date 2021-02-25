@@ -16,15 +16,15 @@ Das SPF (Sender Policy Framework) ermöglicht es einem Server, bei Empfang einer
 
 ## Voraussetzungen
 
-- Sie haben über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} Zugriff auf die Verwaltung der betreffenden Domain.
-- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie haben über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} Zugriff auf die Verwaltung der betreffenden Domain.
+- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 - Die betreffende Domain verwendet die OVH Konfiguration (das heißt die OVH DNS-Server).
 
 > [!warning]
 >
 > Wenn Ihre Domain nicht die DNS-Server von OVH verwendet, muss die Änderung des SPF über das Interface des Anbieters vorgenommen werden, bei dem die Konfiguration Ihrer Domain verwaltet wird.
 > 
-> Wenn Ihre Domain bei OVH registriert ist, können Sie überprüfen, ob diese die OVH Konfiguration verwendet. Gehen Sie hierzu in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} zur entsprechenden Domain und anschließend in den Tab `DNS Server`{.action}.
+> Wenn Ihre Domain bei OVH registriert ist, können Sie überprüfen, ob diese die OVH Konfiguration verwendet. Gehen Sie hierzu in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} zur entsprechenden Domain und anschließend in den Tab `DNS Server`{.action}.
 >
 
 ## Beschreibung
@@ -59,7 +59,7 @@ Wenn Sie eine dieser Lösungen bestellen, empfehlen wir Ihnen, in Ihrer Domainko
 mypersonaldomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
-Wenn Ihre Domain die OVH Konfiguration verwendet, können Sie überprüfen, ob für Letztere bereits ein SPF eingerichtet ist. Melden Sie sich hierzu in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} an und gehen Sie anschließend im Menü auf der linken Seite in den Bereich `Domains`{.action}.  Klicken Sie auf die betreffende Domain und gehen Sie dann in den Tab `DNS Zone`{.action}.
+Wenn Ihre Domain die OVH Konfiguration verwendet, können Sie überprüfen, ob für Letztere bereits ein SPF eingerichtet ist. Melden Sie sich hierzu in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} an und gehen Sie anschließend im Menü auf der linken Seite in den Bereich `Domains`{.action}.  Klicken Sie auf die betreffende Domain und gehen Sie dann in den Tab `DNS Zone`{.action}.
 
 Es sollte eine Tabelle angezeigt werden. In dieser ist die Konfiguration Ihrer Domain bei OVH angezeigt. Sie besteht aus mehreren DNS-Einträgen, die in jeweils einer Zeile der Tabelle stehen.
 
@@ -85,7 +85,7 @@ Um in der Tabelle die Zeile zu finden, die dem OVH SPF entspricht, können Sie e
 
 ### Schritt 3: Das SPF bearbeiten
 
-Um das SPF in der OVH Konfiguration Ihrer Domain zu ändern, melden Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} an. Gehen Sie im linken Menü in den Bereich `Domains`{.action}, klicken Sie auf die betreffende Domain und anschließend in den Tab `DNS Zone`{.action}.
+Um das SPF in der OVH Konfiguration Ihrer Domain zu ändern, melden Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} an. Gehen Sie im linken Menü in den Bereich `Domains`{.action}, klicken Sie auf die betreffende Domain und anschließend in den Tab `DNS Zone`{.action}.
 
 In der Tabelle ist die OVH Konfiguration Ihrer Domain angezeigt. Jede Zeile entspricht einem DNS-Eintrag.
 

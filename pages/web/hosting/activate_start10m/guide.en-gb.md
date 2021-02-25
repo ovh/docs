@@ -16,11 +16,11 @@ With [Start10M](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml){.exter
 ## Requirements
 
 - a [domain name](https://www.ovh.co.uk/domains/){.external}, detached from any Web Hosting plans, in the OVHcloud Control Panel
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions
 
-First of all, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Domains`{.action}(**1**) in the services bar on the left-hand side, then choose the domain name concerned.
+First of all, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, click `Domains`{.action}(**1**) in the services bar on the left-hand side, then choose the domain name concerned.
 
 In the **General information** box (**2**), you will see *Web hosting with free email*. Click `...`{.action} on the right-hand side, then `Enable`{.action}(**3**).
 

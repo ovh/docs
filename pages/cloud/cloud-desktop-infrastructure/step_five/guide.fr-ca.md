@@ -17,7 +17,7 @@ Vous avez désormais un [pool créé](https://docs.ovh.com/ca/fr/cloud-desktop-i
 ## Prérequis
 
 - Ouvrir le client VMware Horizon ou un navigateur.
-- Connaître l'adresse (URL) de son point d'accès, disponible dans l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Connaître l'adresse (URL) de son point d'accès, disponible dans l'[espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 - [Avoir autorisé son utilisateur sur le pool](https://docs.ovh.com/ca/fr/cloud-desktop-infrastructure/attribution-desk/){.external}.
 
 

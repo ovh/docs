@@ -42,7 +42,7 @@ Enter the following information:
 |Password|Enter the password for your email address.|
 |User name|Enter your full email address.|
 |Domain|Leave this field blank.|
-|Server|Enter the details of the server your Exchange service is hosted on. You will find these in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
+|Server|Enter the details of the server your Exchange service is hosted on. You will find these in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
 |This server requires a secure connection (SSL)|You must leave this box ticked.|
 |Account name|Enter a name that will distinguish this account from any other accounts added in your Mail application.|
 

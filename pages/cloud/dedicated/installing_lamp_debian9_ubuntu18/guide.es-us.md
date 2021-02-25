@@ -19,7 +19,7 @@ Estas tecnologías forman una pila, que usted puede utilizar para alojar sitio w
 - Acceso SSH
 - Acceso para editar texto mediante comando (ejem. Vim, nano, Emacs)
 - Capacidad para instalar una destrucción Linux (aquí estamos usando Debian 9.4, pero los pasos para Ubuntu 18.4 son identificás)
-- Un servidor o una máquina virtual con una distribución Linux [un VPS](https://www.ovh.com/world/es/vps/){.external}, [un servidor dedicado](https://www.ovh.com/world/es/servidores-dedicados/){.external} o [una instancia Public Cloud](https://www.ovh.com/world/es/public-cloud/){.external})
+- Un servidor o una máquina virtual con una distribución Linux [un VPS](https://www.ovhcloud.com/es/vps/){.external}, [un servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external} o [una instancia Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external})
 - Acceso administrador al servidor (root)
 
 > [!warning]
@@ -191,7 +191,7 @@ mysql -u root -p
 MariaDB \[(none)]> show databases; MariaDB \[(none)]> exit 
 ```
 
-Le recomendamos que cree una cuenta de usuario específico y dedicarla a la aplicación web. Si es necesario, puede consultar la siguiente guía [MySQL](https://dev.mysql.com/doc/refman/8.0/en/user-account-management.html){.external} y [MariaDB](https://mariadb.com/kb/en/library/user-account-management/{.external}.
+Le recomendamos que cree una cuenta de usuario específico y dedicarla a la aplicación web. Si es necesario, puede consultar la siguiente guía [MySQL](https://dev.mysql.com/){.external} y [MariaDB](https://mariadb.com/kb/en/library/user-account-management/{.external}.
 
 ### Paso 6: Instalar phpMyAdmin(opcional)
 

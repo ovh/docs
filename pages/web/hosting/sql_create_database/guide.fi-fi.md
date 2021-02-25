@@ -21,13 +21,13 @@ Tietokanta (*database* tai DB) mahdollistaa dynaamisiksi kutsuttujen elementtien
 
 - Sinulla on [webhotellituote](https://www.ovh-hosting.fi/webhotelli){.external}.
 - Sinulla on mahdollisuus luoda tietokantoja tuotteesi puitteissa.
-- Sinulla on pääsyoikeudet webhotellituotteen hallintaan [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Sinulla on pääsyoikeudet webhotellituotteen hallintaan [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Käytännössä
 
 ### 1. Mene webhotellin tietokantojen hallintaan
 
-Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `Tietokannat`{.action}.
+Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `Tietokannat`{.action}.
 
 Näkyviin tulevassa taulukossa on kaikki webhotellituotteen yhteydessä luodut tietokannat.
 

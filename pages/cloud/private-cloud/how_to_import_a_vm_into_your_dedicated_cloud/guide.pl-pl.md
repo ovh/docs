@@ -17,8 +17,10 @@ W tym przypadku możesz przejść bezpośrednio do sekcji import.
 - Pobieram vmdk:
 
 Najpierw należy skonwertować vmdk do vhdx, aby dane były kompatybilne z Hyperv. Do konwersji możesz użyć jednego z tych narzędzi:
-[Microsoft Virtual Machine Converter Solution Accelerator](http://www.microsoft.com/en-us/download/details.aspx?id=34591)
-[2Tware Convert VHD](http://www.2tware.com/product/6/2twareconvertvhdfree)
+
+- Microsoft Virtual Machine Converter Solution Accelerator
+- 2Tware Convert VHD
+
 Możesz skorzystać z innego narzędzia. OVH nie zapewnia obsługi narzędzi udostępnionych przez innych producentów.
 
 

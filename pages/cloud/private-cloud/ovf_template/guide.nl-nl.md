@@ -17,7 +17,7 @@ Deze handleiding legt uit hoe u een sjabloon kunt gebruiken met de vSphere fat-c
 ## Vereisten
 
 - U moet toegang hebben tot de webclient
-- U moet de Windows-licentie hebben geactiveerd vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} (het tabblad `Windows-licentie`{.action} voor het datacenter) 
+- U moet de Windows-licentie hebben geactiveerd vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} (het tabblad `Windows-licentie`{.action} voor het datacenter) 
 
 
 ## Instructies

@@ -22,7 +22,7 @@ Program ten jest dostępny w różnych wersjach, które można pobrać z poziomu
 
 
 ## Przykład dla platformy Hosted Exchange
-Przejdź do [panelu klienta](https://www.ovh.com/manager/web/login/), kliknij na platformę Exchange i wybierz zakładkę "Konta E-mail".
+Przejdź do [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij na platformę Exchange i wybierz zakładkę "Konta E-mail".
 Koło adresu Exchange, dla którego chcesz zamówić program Outlook, zobaczysz ikonkę w kształcie koszyka w kolumnie "Outlook".
 
 Kliknij na tę ikonkę. Pojawi się takie okno:
@@ -49,7 +49,7 @@ Kliknij na tę ikonkę. Pojawi się takie okno:
 
 
 ## Przykład dla platformy Private Exchange
-Przejdź do [panelu klienta](https://www.ovh.com/manager/web/login/), kliknij na platformę Exchange i wybierz zakładkę "Konta E-mail".
+Przejdź do [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij na platformę Exchange i wybierz zakładkę "Konta E-mail".
 
 - Kliknij na ikonkę  przy wybranym adresie Exchange.
 

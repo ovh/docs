@@ -22,13 +22,13 @@ Questa guida ti mostra come creare una zona DNS OVH dal tuo Spazio Cliente.
 - Disporre di un dominio
 - Il dominio in questione non deve disporre già di una zona DNS OVH o essere associato a operazioni e buoni d’ordine in corso
 - La configurazione tecnica del dominio deve essere corretta (stato, SOA, ecc...)
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
 ### Step 1: crea la zona DNS dallo Spazio Cliente OVH
 
-Accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca su `Ordina`{.action} nel menu a sinistra e seleziona `Zona DNS`{.action}.
+Accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Ordina`{.action} nel menu a sinistra e seleziona `Zona DNS`{.action}.
 
 Nella nuova pagina, inserisci il dominio per cui vuoi creare la zona DNS OVH. Attendi qualche istante, il tempo necessario al sistema per effettuare un controllo delle informazioni relative al dominio.
 
@@ -51,7 +51,7 @@ Dopo aver effettuato la scelta, segui gli step fino a completare la creazione de
 
 Ora che la zona DNS del tuo dominio è stata creata, è possibile modificarla. Questa operazione è facoltativa, ma può rivelarsi fondamentale per garantire la disponibilità dei servizi associati al dominio (come un sito Internet o un account di posta elettronica).
 
-Per modificare la zona DNS accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca su `Domini`{.action} nel menu a sinistra e seleziona il tuo dominio. Clicca sulla scheda `Zona DNS`{.action}.
+Per modificare la zona DNS accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Domini`{.action} nel menu a sinistra e seleziona il tuo dominio. Clicca sulla scheda `Zona DNS`{.action}.
 
 > [!primary]
 >

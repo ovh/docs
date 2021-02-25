@@ -16,7 +16,7 @@ I moduli in 1 click permettono di creare un sito Web in modo semplice e veloce, 
 ## Prerequisiti
 
 - Disporre di una soluzione di [hosting Web](https://www.ovh.it/hosting-web/){.external} attiva
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Non aver salvato file nella directory in cui verrà installato il modulo
 - Aver impostato come multisito il dominio (ed eventualmente il sottodominio) che verrà utilizzato per il sito Web
 

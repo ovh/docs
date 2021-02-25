@@ -7,7 +7,7 @@ section: Troubleshooting
 
 
 ## Running a diagnostic
-Go to your OVH control panel using this link: [OVH control panel](https://www.ovh.com/ca/en/manager/web/login/).
+Go to your OVH control panel using this link: [OVH control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
 Once logged in, choose the Microsoft menu from the left column then go to your Exchange account.
 

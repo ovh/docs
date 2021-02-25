@@ -26,9 +26,9 @@ Databases worden gebruikt in vrijwel alle moderne content management systemen (C
 
 Voordat u aan de slag gaat, moet u kiezen welke methode u gaat gebruiken om de backup in de betreffende database te importeren. Er zijn drie manieren om dit te doen, afhankelijk van uw niveau van technische kennis.
 
-- **Herstel een eerdere versie van uw database** in slechts een paar klikken: deze oplossing kan worden gebruikt om de inhoud van uw databases te herstellen, dankzij de backups die aanwezig zijn in de OVH backup-tool. Deze oplossing heeft geen specifieke technische kennis en kan worden uitgevoerd vanaf uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- **Herstel een eerdere versie van uw database** in slechts een paar klikken: deze oplossing kan worden gebruikt om de inhoud van uw databases te herstellen, dankzij de backups die aanwezig zijn in de OVH backup-tool. Deze oplossing heeft geen specifieke technische kennis en kan worden uitgevoerd vanaf uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
-- **Importeer uw eigen backup-bestand** in slechts een paar klikken: met deze oplossing kunt u de gegevens uit uw eigen backup-bestand, dat al in uw bezit is, importeren in een van uw databases. Deze oplossing wordt uitgevoerd vanaf uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- **Importeer uw eigen backup-bestand** in slechts een paar klikken: met deze oplossing kunt u de gegevens uit uw eigen backup-bestand, dat al in uw bezit is, importeren in een van uw databases. Deze oplossing wordt uitgevoerd vanaf uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 - **Voer de import uit vanuit de phpMyAdmin webinterface**: bij deze oplossing moet u zich inloggen bij de phpMyAdmin-interface om de procedure uit te voeren. U moet daarom vertrouwd zijn met deze interface om deze methode te gebruiken, en het backup-bestand mag een bepaald formaat niet overschrijden.
 
@@ -49,7 +49,7 @@ We raden u aan om deze documentatie te lezen in overeenstemming met de importmet
 
 ### Een backup terugzetten vanaf uw Control Panel
 
-Log hiervoor eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Ga naar het `Databases`{.action}-tabblad.
+Log hiervoor eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Ga naar het `Databases`{.action}-tabblad.
 
 De getoonde tabel bevat alle e-mailadressen die zijn aangemaakt als onderdeel van uw webhostingplan. U kunt nu klikken op de drie stippen rechts van de database die u op een eerdere datum in zijn versie wilt herstellen en vervolgens op `Backup terugzetten`{.action}. Merk op dat dit de huidige inhoud van de database zal vervangen door de inhoud van de backup.
 
@@ -63,7 +63,7 @@ Klik op de drie stippen rechts van de backup die u wilt herstellen en vervolgens
 
 ### Uw backup importeren vanaf uw Control Panel
 
-Log hiervoor eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Ga naar het `Databases`{.action}-tabblad.
+Log hiervoor eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Ga naar het `Databases`{.action}-tabblad.
 
 De getoonde tabel bevat alle e-mailadressen die zijn aangemaakt als onderdeel van uw webhostingplan. U kunt nu klikken op de drie stippen rechts van de database waarin u data wilt importeren, en vervolgens op `Bestand importeren`{.action}.
 
@@ -96,7 +96,7 @@ Nadat u uw keuze hebt gemaakt, klikt u op de knop `Bevestigen`{.action} en wacht
 
 ### Voer de import uit vanuit de phpMyAdmin webinterface
 
-Om deze procedure uit te voeren, moet u inloggen op phpMyAdmin. Log hiervoor eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Ga naar het `Databases`{.action}-tabblad.
+Om deze procedure uit te voeren, moet u inloggen op phpMyAdmin. Log hiervoor eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Ga naar het `Databases`{.action}-tabblad.
 
 De getoonde tabel bevat alle e-mailadressen die zijn aangemaakt als onderdeel van uw webhostingplan. Klik in deze tabel op de drie stippen rechts van de betreffende database en vervolgens op `Ga naar phpMyAdmin`{.action}.
 

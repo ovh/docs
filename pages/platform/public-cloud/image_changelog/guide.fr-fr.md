@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 12
 ---
 
-**Dernière mise à jour le 30/11/2020**
+**Dernière mise à jour le 18/01/2020**
 
 ## Objectif
 
@@ -15,6 +15,36 @@ OVHcloud offre une variété de systèmes d'exploitation et d'applications préi
 ## Prérequis
 
 Cette documentation s'applique uniquement aux solutions [VPS](https://www.ovhcloud.com/fr/vps/compare/) et aux instances [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/compute/).
+
+## 2021 Changelog
+
+Cette section affiche le changelog pour chaque mois de l'année 2021.
+
+### February
+
+```
+--- 03 February 2021 ---
+Image: All
+Product: Public Cloud / VPS
+Travaux: http://travaux.ovh.net/?do=details&id=48820
+Changelog:
+1. All images contain new package / security updates from vendors since our last image updates
+2. Centos 7 - cPanel image: we disabled QEMU Guest Agent on this image due to issues caused by creation of a virtfs when allowing Jailed Shell access. This virtfs cannot be frozen by QEMU Guest Agent and therefore causes a kernel panic. Customers with previous release of this image should check [this guide for fix](https://docs.ovh.com/gb/en/vps/cpanel_auto_backup/)
+
+```
+
+### January
+
+```
+--- 18 January 2021 ---
+Image: All
+Product: Public Cloud / VPS
+Travaux: http://travaux.ovh.net/?do=details&id=48592
+Changelog:
+1. Release of new Debian 10 - Plesk image
+2. All images contain new package / security updates from vendors since our last image updates
+
+```
 
 ## Changelog 2020
 

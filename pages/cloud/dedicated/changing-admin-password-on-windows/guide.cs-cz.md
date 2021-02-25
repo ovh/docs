@@ -18,14 +18,14 @@ Při instalaci či reinstalaci operačního systému Windows dochází k automat
 ## Prerekvizity
 
 * [Dedikovaný server](https://www.ovh.cz/dedikovane_servery/){.external} s operačním Systémem Windows
-* Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 
 ## Postup
 
 Restartujte svůj server do režimu rescue pomocí bootovacího prostředí WinRescue. V případě potíží s restartem do režimu rescue se obraťte na následující příručku: [Režim rescue (EN)](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}. 
 
-Jakmile je server spuštěn v režimu rescue, přejděte do záložky `IPMI`{.action} ve svém [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (záložku naleznete v administračním rozhraní svého dedikovaného serveru).
+Jakmile je server spuštěn v režimu rescue, přejděte do záložky `IPMI`{.action} ve svém [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} (záložku naleznete v administračním rozhraní svého dedikovaného serveru).
 
 > [!primary]
 >

@@ -18,14 +18,14 @@ La technologie Intel SGX fournit des fonctions de sécurité avancées de chiffr
 
 - Avoir un [serveur dédié de la gamme Infrastructure](https://www.ovhcloud.com/fr/bare-metal/infra/){.external}, avec l’option [SGX](https://www.ovhcloud.com/fr/bare-metal/intel-software-guard-extensions/){.external}
 - Disposer d’un accès administrateur (root) à votre serveur via SSH
-- Avoir accès à à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) ou l’[API OVHcloud](https://api.ovh.com/console/){.external}
+- Avoir accès à à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou l’[API OVHcloud](https://api.ovh.com/console/){.external}
 - Ubuntu 18.04 ou équivalent installé sur le serveur
 
 ## En pratique
 
 ### Depuis l'espace client OVHcloud
 
-Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), accédez à la section `Bare Metal Cloud`{.action}, puis sélectionnez le serveur sur lequel vous souhaitez activer SGX dans la section **Serveurs dédiés** du menu de gauche.
+Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Bare Metal Cloud`{.action}, puis sélectionnez le serveur sur lequel vous souhaitez activer SGX dans la section **Serveurs dédiés** du menu de gauche.
 
 #### Activation de l'option
 

@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment activer un lien de secours LTE'
 section: 'Configurations techniques avancées'
 ---
 
-**Dernière mise à jour le 21/12/2020**
+**Dernière mise à jour le 05/02/2021**
 
 ## Objectif
 
@@ -45,7 +45,8 @@ Retournez sur l'onglet `Accueil` pour vérifier que vous êtes bien connecté. S
 
 Par défaut, le modem Zyxel est déjà configuré pour supporter les liens de secours LTE, il suffit donc uniquement de brancher votre clé Huawei E3372 sur le port USB du modem.
 
-Des configurations plus avancées sont disponibles à partir de l'interface locale.  Consultez le [guide utilisateur du modem Zyxel](http://files.isp.ovh.net/zyxel/VMG8823-B50B_V5.13_5.50.pdf){.external} (en anglais) pour plus de détails.
+Des configurations plus avancées sont disponibles à partir de l'interface locale. Consultez le [guide utilisateur du modem Zyxel](http://files.isp.ovh.net/zyxel/VMG8823-B50B_V5.13_5.50.pdf){.external} (en anglais) pour plus de détails.
+En complément, une liste des clés LTE supportées par Zyxel est disponible [ici](http://files.isp.ovh.net/zyxel/LTE_dongle_supportList.pdf){.external}
 
 #### Modem Technicolor TG799vac
 
@@ -58,9 +59,9 @@ Activer le lien de secours LTE sur un modem TG799vac nécessite quelques configu
 
 ##### **Mettre à jour le modem**
 
-Pour que le lien de secours LTE fonctionne, le modem doit être sur le firmware « 17.1.7960.01 ». 
+Pour que le lien de secours LTE fonctionne, le modem doit être sur le firmware « 17.1.7960.01 ».
 
-Afin de mettre à jour le modem, vous devez vous connecter à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action} dans la barre de services à gauche, puis sélectionnez le pack et l’accès Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon Modem`{.action}.
+Afin de mettre à jour le modem, vous devez vous connecter à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie « Télécom ». Cliquez sur `Accès Internet`{.action} dans la barre de services à gauche, puis sélectionnez le pack et l’accès Internet concerné. Assurez-vous d'être positionné sur l'onglet `Mon Modem`{.action}.
 
 Dans le cadre « Configurations avancées », sélectionnez le firmware « 17.1.7960.01 » dans la liste déroulante de la section `Firmware`.
 

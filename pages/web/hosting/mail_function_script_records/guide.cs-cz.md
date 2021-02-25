@@ -17,18 +17,18 @@ Automatické e-maily jsou odesílány prostřednictvím skriptů a své využit�
 ## Prerekvizity
 
 - Některý z [webhostingových balíčků OVH](https://www.ovh.cz/webhosting/){.external}.
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 > [!primary]
 >
 > Předmětem této příručky jsou pouze e-maily odesílané prostřednictvím skriptů na Vašem webhostingovém řešení OVH.
 >
-> Pro správu e-mailových adres zahrnutých ve službě MX Plan nebo [webhostingovém řešení OVH](https://www.ovh.cz/webhosting/){.external} přejděte do sekce `E-maily`{.action} v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. 
+> Pro správu e-mailových adres zahrnutých ve službě MX Plan nebo [webhostingovém řešení OVH](https://www.ovh.cz/webhosting/){.external} přejděte do sekce `E-maily`{.action} v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. 
 >
 
 ## Postup
 
-Monitoring a správa automatických e-mailů se provádí pomocí [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Přihlaste se do svého Zákaznického prostoru OVH, v levém postranním panelu klikněte na tlačítko `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. Následně klikněte na záložku `Více +`{.action} a z rozbalovací nabídky vyberte možnost `E-mailové skripty`{.action}.
+Monitoring a správa automatických e-mailů se provádí pomocí [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Přihlaste se do svého Zákaznického prostoru OVH, v levém postranním panelu klikněte na tlačítko `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. Následně klikněte na záložku `Více +`{.action} a z rozbalovací nabídky vyberte možnost `E-mailové skripty`{.action}.
 
 Zobrazí se rozhraní pro monitoring a správu automatických e-mailů, které jsou odesílány z Vašeho webhostingového řešení OVH.
 

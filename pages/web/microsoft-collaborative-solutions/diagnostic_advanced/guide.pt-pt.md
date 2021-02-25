@@ -7,7 +7,7 @@ legacy_guide_number: g2277
 
 
 ## Efetuar um diagnóstico
-Aceda ao seu Espaço Cliente a partir deste link: [Espaço cliente OVH](https://www.ovh.com/manager/web/login/).
+Aceda ao seu Espaço Cliente a partir deste link: [Espaço cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 Após estar ligado selecione na coluna da esquerda o menu Microsoft e depois clique no seu serviço Exchange.
 

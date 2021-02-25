@@ -46,7 +46,7 @@ Inserisci le informazioni richieste:
 |Password|Digita la password associata all’indirizzo email|
 |Nome utente|Inserisci l’indirizzo email completo|
 |Settore|Lasciare il campo vuoto|
-|Server|Seleziona il server che ospita il tuo servizio Exchange Puoi ritrovarlo nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} nella scheda `Informazioni generali`{.action} del servizio Exchange corrispondente, poi sotto la voce `Connessione`{.action}|
+|Server|Seleziona il server che ospita il tuo servizio Exchange Puoi ritrovarlo nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella scheda `Informazioni generali`{.action} del servizio Exchange corrispondente, poi sotto la voce `Connessione`{.action}|
 |Il server richiede una connessione cifrata (SSL)|Non rimuovere la spunta da questa casella|
 |Nome dell’account|Inserisci un nome che ti permetterà di riconoscere questo account tra quelli presenti nella tua applicazione Posta|
 

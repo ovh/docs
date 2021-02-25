@@ -1,58 +1,88 @@
 ---
-title: 'OVH Domain zu einem anderen Registrar transferieren'
+title: Eine Domain zu einem anderen Registrar transferieren
 slug: ausgehender-transfer-einer-generischen-oder-geografischen-domain
-excerpt: 'In dieser Anleitung erfahren Sie, wie Sie Ihre OVH Domain zu einem anderen Registrar transferieren.'
+excerpt: Erfahren Sie hier, wie Sie Ihre Domain von OVHcloud zu einem Provider Ihrer Wahl transferieren
 section: Transfer
 order: 4
 ---
 
-**Stand 10.01.2019**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
-## Einleitung
+**Letzte Aktualisierung am 25.01.2021**
 
-Sie können den Anbieter Ihrer Domain wechseln, indem Sie den Transfer der Domain beantragen. So können Sie auch Ihre OVH Domain zu einem anderen Registrar transferieren.
+## Ziel
 
-**Hier erfahren Sie, wie Sie Ihre OVH Domain zu einem anderen Registrar transferieren.**
+**Domaintransfer** bezeichnet den Umzug einer Domain von einem Registrar zu einem anderen. Wenn Sie zum Beispiel eine Domain auf unserer Webseite bestellt haben, ist OVHcloud deren aktueller Registrar. Ein ausgehender Domaintransfer muss vom neuen Registrar gestartet werden.
+
+Um unbefugte Transferanfragen zu verhindern, sind Domains in der Regel vom Registrar gesperrt, indem sie in den Status *clientTransferProhibited* gesetzt werden. Dieser Schutz muss im OVHcloud Kundencenter aufgehoben werden, bevor mit dem Transfer begonnen wird.
+
+**Diese Anleitung erklärt, wie Sie Ihre Domain für einen ausgehenden Transfer vorbereiten.**
 
 ## Voraussetzungen
 
-- Sie besitzen eine bei OVH registrierte Domain.
-- Sie besitzen die Verfügungsberechtigung, um den Transfer der Domain zu veranlassen. Die Inhaber und/oder Administratoren sind über den gewünschten Transfer informiert.
-- Sie haben über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} Zugriff auf die Verwaltung der betreffenden Domain.
-- Die Domain wurde vor mehr als 61 Tagen erstellt und in diesem Zeitraum auch nicht transferiert und der Inhaber hat nicht gewechselt.
+- Sie verfügen über eine bei OVHcloud registrierte [Domain](https://www.ovh.de/domains/).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den erforderlichen Berechtigungen zum Verwalten der Domain (Domainadministrator).
+- Die Registrierung der betreffenden Domain erfolgte vor mindestens 60 Tagen und sie wurde in den letzten 60 Tagen weder transferiert noch übertragen (Inhaberwechsel).
 
 > [!primary]
 >
-> Für manche Domainendungen gelten andere Regeln für den Wechsel des Registrars. Wenn Sie Ihre Domain mit den nachfolgenden Schritten nicht transferieren können, kontaktieren Sie bitte Ihren neuen Registrar, um weitere Informationen zur Vorgehensweise zu erhalten.
+> Wenn Sie der **Inhaber** der Domain sind, deren Verwaltung Ihnen im OVHcloud Kundencenter jedoch nicht möglich ist, weder über Ihren eigenen Zugang noch den Administrator-Kontakt der Domain, konsultieren Sie bitte [diese Anleitung](../../customer/verwaltung-der-kontakte/#sonderfall-bei-domaininhabern), bevor Sie fortfahren.
 >
 
-## Beschreibung
+## In der praktischen Anwendung
+
+> [!warning]
+>
+> Die folgenden Instruktionen beschreiben die gängigste Methode zum Transfer einer Domain, die für die meisten Top-Level-Domains (TLD) gültig ist. Die spezifischen Verfahrensvorschriften für TLDs werden jedoch ausschließlich von der zuständigen Vergabestelle, d.h. der **Registry** festgelegt. Registrare wie OVHcloud müssen diese Regeln einhalten und haben keinen Einfluss auf die Entscheidungen der Registry.
+>
+> Das genaue Verfahren für den Transfer von Domains kann daher variieren, insbesondere bei bestimmten Ländercode-TLDs (ccTLD, z.B. .lu, .uk, .hk, .ro) und einigen Spezial-TLDs (.am, .fm., etc.). Domaintransfers können auch aus außerordentlichen Gründen verhindert werden; hierzu zählen etwa: ausstehende Zahlung, Missbrauchsfall oder Registry-Sperre.
+>
+> Wir empfehlen, im Zweifelsfall folgende Ressourcen zu Rate zu ziehen:
+>
+> - die Webseite der zuständigen TLD-Registry
+> - die [Liste der bei OVHcloud verfügbaren TLDs](https://www.ovh.de/domains/preise/)
+> - [Erläuterungen der ICANN zu den EPP-Statuscodes](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (um herauszufinden, welche Statuscodes derzeit für Ihre Domain gelten, führen Sie eine *Whois*-Suche aus, vorzugsweise unter Verwendung der Webseite der entsprechenden TLD-Registry)
+> - die Webseite und das Verwaltungsinterface Ihres neuen Registrars, insbesondere für Fragen im Zusammenhang mit einem ausstehenden Transferprozess
+>
 
 ### Schritt 1: Transfer-Schutz der Domain aufheben
 
-Um den Transfer-Schutz Ihrer OVH Domain aufzuheben, gehen Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} in der oberen Serviceleiste in den Bereich `Web Cloud`{.action}. Gehen Sie dann im linken Menü in den Bereich `Domains`{.action} und klicken Sie auf die betreffende Domain. Im Tab `Allgemeine Informationen`{.action} nehmen Sie den Haken aus dem Feld `Transfer-Schutz`{.action} und klicken Sie anschließend auf `Bestätigen`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie in der oberen Menüleiste `Web Cloud`{.action} aus. Klicken Sie `Domains`{.action} im linken Menü und wählen Sie die betreffende Domain aus.
+
+Im Tab `Allgemeine Informationen`{.action} finden Sie den Regler `Transfer-Schutz` unter **Sicherheit** mit der Standardeinstellung `Aktiviert`{.action}.
+
+![Schutz aktiviert](images/outgoing-transfer-step1.png){.thumbnail}
+
+Klicken Sie auf den Slider-Button und bestätigen Sie im Popup-Fenster, dass Sie diesen Schutz entfernen möchten. Warten Sie einige Minuten, bis der Status sich auf `Deaktiviert`{.action} ändert.
+
+![Deaktivierung](images/outgoing-transfer-step2.png){.thumbnail}
+
+Sie können auch die Seite aktualisieren, falls zu lange keine Änderung eintritt.
 
 > [!primary]
 >
-> Sobald Ihre Domain freigegeben ist, haben Sie sieben Tage Zeit, um den Transfer Ihrer Domain zum neuen Registrar zu starten. Wenn bis Ablauf der Frist kein Antrag zum Wechsel des Registrars eingeht, wird die Domain automatisch wieder gesperrt.
+> Wenn der Schutz entfernt wird, bleibt die Domain sieben Tage lang entsperrt. Nach diesem Zeitraum wird der Schutz automatisch reaktiviert. Wenn Sie in dieser Zeit keinen Transfer Ihrer Domain bei Ihrem neuen Registrar beantragen, muss die Domain noch einmal entsperrt werden.
 >
-
-![outgoingtransfer](images/outgoing-transfer-step2.png){.thumbnail}
 
 ### Schritt 2: Transfer-Code abrufen
 
-Nun, da der Transfer-Schutz aufgehoben wurde, können Sie den Transfer-Code Ihrer Domain abrufen. Bleiben Sie hierzu im Tab `Allgemeine Informationen`{.action} und klicken Sie neben `Transfer-Schutz`{.action} auf `AUTH/INFO`{.action}. Wenn nötig, aktualisieren Sie die Seite.
-
-Speichern Sie den Code im angezeigten Fenster.
+Sobald sich der Status der Domain auf `Deaktiviert`{.action} aktualisiert, erscheint unter `Transfer-Schutz` der Link `AUTH/INFO`{.action}. Klicken Sie darauf, um ein Fenster zu öffnen, in dem Ihr AUTH/INFO-Code angezeigt wird (auch als Transferschlüssel, Domainpasswort, AUTH-CODE oder EPP-Code bezeichnet).
 
 ![outgoingtransfer](images/outgoing-transfer-step3.png){.thumbnail}
 
-### Schritt 3: Transfer zum neuen Registrar starten
+Dieser Code wird von Ihrem neuen Registrar angefordert werden, um den Transfer abzuschließen. Sie können die Details bei Ihrem Provider überprüfen.
 
-Falls Sie das noch nicht getan haben, kontaktieren Sie Ihren neuen Registrar, um den Transfer Ihrer Domain zu starten. Während des Transfervorgangs dieses Registrars werden Sie dazu aufgefordert, den in Schritt 2 gespeicherten Transfer-Code anzugeben.
+Anstatt den Code manuell einzugeben, empfehlen wir Ihnen, diesen zu kopieren und einzufügen, da einige Zeichen leicht verwechselt werden können.
 
-Um die genauen Fristen des Domaintransfers zu erfahren, lesen Sie die von Ihrem neuen Registrar bereitgestellten Informationen.
+### Schritt 3: Transfer zum neuen Registrar beauftragen
+
+Nach erfolgreicher Durchführung der vorherigen Schritte können Sie den Transferprozess starten, in der Regel indem Sie eine Bestellung bei Ihrem neuen Provider aufgeben. Der Transfer kann dann bis zu 10 Tage dauern. 
+
+Weitere Informationen hierzu erhalten Sie bei Ihren neuen Registrar.
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

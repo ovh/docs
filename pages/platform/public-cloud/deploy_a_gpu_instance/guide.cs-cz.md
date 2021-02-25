@@ -40,7 +40,7 @@ Instance GPU jsou kompatibilní se všemi systémovými distribucemi nabízeným
 > Pokud nejste dostatečně obeznámeni s manuální kompilací kernelového modulu, doporučujeme nainstalovat distribuci, která je oficiálně podporována společností Nvidia a pro níž jsou dostupné *ovladače na klíč*: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-V [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} přejděte do administračního rozhraní svého Public Cloud projektu, klikněte na tlačítko `Akce > Přidat server`{.action} a zvolte GPU instanci (Vysoký výpočetní výkon).
+V [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} přejděte do administračního rozhraní svého Public Cloud projektu, klikněte na tlačítko `Akce > Přidat server`{.action} a zvolte GPU instanci (Vysoký výpočetní výkon).
 
 ![public-cloud](images/EN-Flavors.png){.thumbnail}
 

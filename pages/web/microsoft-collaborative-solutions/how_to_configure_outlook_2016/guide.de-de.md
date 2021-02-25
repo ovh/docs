@@ -45,7 +45,7 @@ Es erscheint ein Fenster, in dem Sie das **Kennwort** der E-Mail-Adresse angeben
 >
 > Wenn eine Nachricht erscheint, dass Ihr Konto nicht eingerichtet werden konnte, ist der OVH SRV-Eintrag möglicherweise nicht korrekt in der DNS-Zone konfiguriert.
 >
-> Überprüfen Sie die Domainkonfiguration Ihres Exchange Dienstes im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}. Gehen Sie hierzu auf den Tab `Assoziierte Domains`{.action} und dann in die Spalte `Diagnose`{.action}.
+> Überprüfen Sie die Domainkonfiguration Ihres Exchange Dienstes im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Gehen Sie hierzu auf den Tab `Assoziierte Domains`{.action} und dann in die Spalte `Diagnose`{.action}.
 >
 
 Ist die Konfiguration Ihrer Domain korrekt, erscheint eine Nachricht, die Sie auffordert, die Verbindung zu den OVH Servern zu erlauben. Akzeptieren Sie die Verbindung, damit Ihr Exchange Account automatisch konfiguriert werden kann.

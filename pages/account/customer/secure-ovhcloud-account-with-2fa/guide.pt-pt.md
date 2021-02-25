@@ -16,7 +16,7 @@ Pode ativar a autenticação com dois fatores (2FA). É adicionada ao seu par ut
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Dispor de um telemóvel (para o método por SMS), um smartphone ou um tablet (para o método via aplicação móvel) ou uma chave de segurança Universal Second Factor (U2F).
 - Ter tomado conhecimento das [recomendações sobre a gestão da sua palavra-passe de acesso à sua conta](https://docs.ovh.com/pt/customer/gerir-a-palavra-passe/).
 
@@ -87,7 +87,7 @@ Também pode utilizar um dos códigos de segurança disponíveis.
 > - códigos de segurança válidos.
 > 
 
-Para eliminar um periférico, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, Clique no seu nome no canto superior direito (etapa 1 na imagem abaixo), depois em suas iniciais (etapa 2). 
+Para eliminar um periférico, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, Clique no seu nome no canto superior direito (etapa 1 na imagem abaixo), depois em suas iniciais (etapa 2). 
 
 ![2FA](images/hub2FAb.png){.thumbnail}
 

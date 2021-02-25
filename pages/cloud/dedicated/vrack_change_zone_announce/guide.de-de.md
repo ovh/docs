@@ -9,13 +9,13 @@ section: vRack
 
 ## Einleitung
 
-Das [vRack]({ovh_www}/loesungen/vrack/){.external} ist ein privates Netzwerk, mit dem Sie das Routing zwischen zwei oder mehr OVH [Dedicated Servern]({ovh_www}/dedicated_server/){.external} einrichten können.
+Das [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein privates Netzwerk, mit dem Sie das Routing zwischen zwei oder mehr OVH [Dedicated Servern](https://www.ovhcloud.com/de/bare-metal/){.external} einrichten können.
 
 **In dieser Anleitung erfahren Sie, wie Sie die IP-Block-Ankündigung im vRack ändern.**
 
 ## Voraussetzungen
 
-- Sie besitzen ein [vRack]({ovh_www}/loesungen/vrack/){.external}.
+- Sie besitzen ein [vRack](https://www.ovh.de/loesungen/vrack/){.external}.
 - Sie haben [einen IP-Adressblock im vRack eingerichtet](../vrack-ip-block-hinzufuegen-oder-entfernen/).
 - Sie verfügen über fortgeschrittene Netzwerkkenntnisse.
 
@@ -37,7 +37,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-Das oben stehende Beispiel zeigt, dass die getestete IP-Adresse aktuell in **Roubaix** angekündigt wird. Dies ist aus dem letzten Hop ersichtlich: „vl1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms“. Falls nötig, nutzen Sie unsere [Datacenter](https://www.ovh.de/unternehmen/rechenzentren.xml){.external}-Seite, um das betreffende Rechenzentrum zu identifizieren.
+Das oben stehende Beispiel zeigt, dass die getestete IP-Adresse aktuell in **Roubaix** angekündigt wird. Dies ist aus dem letzten Hop ersichtlich: „vl1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms“.
 
 ### Schritt 2: IP-Block-Ankündigung ändern
 
@@ -48,7 +48,7 @@ Gehen Sie auf den Link <https://api.ovh.com/console/> und loggen Sie sich mit Ih
 > @api {GET} /vrack#GET
 > 
 
-So können Sie über die API die Liste der vRack Dienste aufrufen. Wenn Sie den betreffenden Dienst über diese Referenzen nicht identifizieren können, finden Sie seinen Namen in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}. Gehen Sie hierzu in den Bereich „Server“ (früher „Cloud“) und dann zu „vRack“.
+So können Sie über die API die Liste der vRack Dienste aufrufen. Wenn Sie den betreffenden Dienst über diese Referenzen nicht identifizieren können, finden Sie seinen Namen in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Gehen Sie hierzu in den Bereich „Server“ (früher „Cloud“) und dann zu „vRack“.
 
 > [!api]
 >
@@ -81,7 +81,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-Das oben stehende Beispiel zeigt, dass die getestete IP-Adresse jetzt in **Gravelines** angekündigt wird. Dies ist aus dem letzten Hop ersichtlich: „be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms“. Falls nötig, nutzen Sie unsere [Datacenter](https://www.ovh.de/unternehmen/rechenzentren.xml){.external}-Seite, um das betreffende Rechenzentrum zu identifizieren.
+Das oben stehende Beispiel zeigt, dass die getestete IP-Adresse jetzt in **Gravelines** angekündigt wird. Dies ist aus dem letzten Hop ersichtlich: „be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms“.
 
 ## Weiterführende Informationen
 

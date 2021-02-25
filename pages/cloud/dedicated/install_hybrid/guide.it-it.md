@@ -24,7 +24,7 @@ Alcuni [server dedicati OVH](https://www.ovh.it/server_dedicati/){.external} dis
 
 * Disporre di un [server ibrido OVH](https://www.ovh.it/server_dedicati/){.external}
 * Avere accesso all’[API OVH](https://api.ovh.com/console/){.external}
-* Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 > [!warning]
 >
@@ -87,7 +87,7 @@ Dopo aver inserito tutte le informazioni necessarie, clicca su `Execute`{.action
 
 ![Installazione](images/install-01.png){.thumbnail}
 
-A questo punto inizierà l’installazione del sistema operativo: per verificare lo stato di avanzamento del processo, aggiorna la pagina del tuo server nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} o effettua la chiamata API qui sotto, inserendo il nome del tuo server nel campo **serviceName** e cliccando sul pulsante `Execute`{.action}.
+A questo punto inizierà l’installazione del sistema operativo: per verificare lo stato di avanzamento del processo, aggiorna la pagina del tuo server nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o effettua la chiamata API qui sotto, inserendo il nome del tuo server nel campo **serviceName** e cliccando sul pulsante `Execute`{.action}.
 
 > [!api]
 >

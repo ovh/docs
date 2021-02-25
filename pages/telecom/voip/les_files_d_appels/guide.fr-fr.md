@@ -20,13 +20,13 @@ Par exemple, pour un petit support téléphonique, un appel entrant peut être r
  
 - Disposer d'un [numéro alias](https://www.ovhtelecom.fr/telephonie/numeros/){.external}.
 - Disposer d'un accès la gestion du numéro alias en tant que contact administrateur ou technique.
-- Être connecté à l’[espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`{.action}.
+- Être connecté à l’[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
  
 ## En pratique
  
 ### Étape 1 : configurer le numéro en tant que file d'appels
  
-Pour débuter la manipulation, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} et assurez-vous de vous situer dans la section « Télécom ». Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis choisissez le numéro alias sur lequel vous souhaitez configurer la file d'appels.
+Pour débuter la manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et assurez-vous de vous situer dans la section « Télécom ». Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis choisissez le numéro alias sur lequel vous souhaitez configurer la file d'appels.
 
 Dès lors, deux possibilités existent selon la configuration actuelle du numéro concerné :
 

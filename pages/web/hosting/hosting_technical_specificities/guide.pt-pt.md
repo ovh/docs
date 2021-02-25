@@ -15,7 +15,7 @@ order: 4
 ## Requisitos
 
 - Ter um serviço de [alojamento web OVH](https://www.ovh.pt/alojamento-partilhado/){.external} compatível.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
@@ -28,7 +28,7 @@ order: 4
 
 ### FTP
 
-- Erro de acesso («Erro de autenticação de login 530»): Assegure-se de que as informações de acesso ao seu espaço FTP estão corretas. Para isso, verifique-as através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, no separador `FTP - SSH`. As palavras-passe nunca são exibidas, mas podem ser alteradas. Consulte os nossos [guias FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/).
+- Erro de acesso («Erro de autenticação de login 530»): Assegure-se de que as informações de acesso ao seu espaço FTP estão corretas. Para isso, verifique-as através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, no separador `FTP - SSH`. As palavras-passe nunca são exibidas, mas podem ser alteradas. Consulte os nossos [guias FTP](https://docs.ovh.com/pt/hosting/aceder-espaco-de-armazenamento-ftp-alojamento-web/).
 
 - As conexões FTP devem utilizar o **modo passivo**. Certifique-se de que o script ou o cliente FTP está ajustado em conformidade.
 
@@ -69,7 +69,7 @@ Para mais informações sobre a gestão das bases de dados, consulte o guia [Cri
 
 - Verifique os detalhes de configuração do seu alojamento web. Para isso, consulte a rubrica «Informações técnicas do seu alojamento web», mais abaixo neste guia. 
 
-- Pode modificar a versão PHP do seu alojamento web, quer a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) («**Configuração**»), quer alterando o ficheiro .ovhconfig. Também são possíveis configurações mistas neste último caso. Os seguintes guias contêm instruções pormenorizadas:
+- Pode modificar a versão PHP do seu alojamento web, quer a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) («**Configuração**»), quer alterando o ficheiro .ovhconfig. Também são possíveis configurações mistas neste último caso. Os seguintes guias contêm instruções pormenorizadas:
 
 [Configurar o ficheiro .ovhconfig do alojamento web](https://docs.ovh.com/pt/hosting/configurar-ficheiro-ovhconfig/)  
 [Alterar a configuração do alojamento web](https://docs.ovh.com/pt/hosting/modificar_o_ambiente_de_execucao_do_meu_alojamento_web/)
@@ -117,7 +117,7 @@ Consulte as respetivas páginas de informação para verificar as bibliotecas di
 
 Pode encontrar várias informações sobre o seu cluster através da seguinte ligação: [https://cluster015.hosting.ovh.net/infos/](https://cluster015.hosting.ovh.net/infos/){.external}
 
-Substitua o cluster indicado no URL pelo seu. Para saber em que cluster de alojamento web está o seu serviço, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e selecione `Web Cloud`{.action} na barra de navegação superior. Clique em `Alojamento`{.action} na barra à esquerda e escolha o alojamento em causa. De seguida, clique no separador `FTP - SSH`{.action}. O URL de acesso FTP ao seu alojamento indicará o número do cluster.
+Substitua o cluster indicado no URL pelo seu. Para saber em que cluster de alojamento web está o seu serviço, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione `Web Cloud`{.action} na barra de navegação superior. Clique em `Alojamento`{.action} na barra à esquerda e escolha o alojamento em causa. De seguida, clique no separador `FTP - SSH`{.action}. O URL de acesso FTP ao seu alojamento indicará o número do cluster.
 
 Para conhecer as especificidades técnicas do serviço Cloud Web, clique aqui: <https://cloudweb-infos.hosting.ovh.net/>
 

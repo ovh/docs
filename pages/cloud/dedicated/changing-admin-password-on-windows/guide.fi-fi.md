@@ -18,14 +18,14 @@ Windows-käyttöjärjestelmän asennuksen tai uudelleenasennuksen yhteydessä sa
 ## Edellytykset
 
 * Sinulla on asennettuna [dedikoitu palvelin](https://www.ovh-hosting.fi/dedikoidut_palvelimet/){.external} Windowsilla.
-* Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 
 ## Käytännössä
 
 Käynnistä aluksi palvelimesi rescue-tilassa käyttäen WinRescue-käynnistysympäristöä. Voit katsoa tarvittaessa apua rescue-tilaan liittyvästä [ohjeesta](https://docs.ovh.com/fi/dedicated/ovh-rescue/){.external}. 
 
-Kun palvelin on uudelleenkäynnistetty, valitse `IPMI`{.action}-kuvake palvelimesi sivulta [hallintapaneelista](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Kun palvelin on uudelleenkäynnistetty, valitse `IPMI`{.action}-kuvake palvelimesi sivulta [hallintapaneelista](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 > [!primary]
 >

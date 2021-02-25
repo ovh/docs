@@ -16,7 +16,7 @@ Możesz aktywować uwierzytelnianie z wykorzystaniem weryfikacji dwuetapowej (2F
 
 ## Wymagania początkowe
 
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 - Posiadanie telefonu komórkowego (w przypadku metody SMS-owej), smartfona lub tabletu (w przypadku aplikacji mobilnej), bądź klucza sprzętowego Universal Second Factor (U2F).
 - Zapoznanie się z [zaleceniami dotyczącymi zarządzania hasłem dostępu do konta](../zarzadzanie-haslem/).
 
@@ -88,7 +88,7 @@ Możesz także wykorzystać jeden z otrzymanych kodów bezpieczeństwa.
 > - prawidłowymi kodami bezpieczeństwa.
 > 
 
-Aby usunąć urządzenie, zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Kliknij Twoją nazwę użytkownika w prawym górnym rogu (pierwszy etap na poniższym obrazie), a następnie `Moje konto`{.action} (drugi etap). 
+Aby usunąć urządzenie, zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij Twoją nazwę użytkownika w prawym górnym rogu (pierwszy etap na poniższym obrazie), a następnie `Moje konto`{.action} (drugi etap). 
 
 ![2FA](images/hub2FAb.png){.thumbnail}
 

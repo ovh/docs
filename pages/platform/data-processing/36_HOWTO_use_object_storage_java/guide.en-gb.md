@@ -6,7 +6,7 @@ section: How to
 order: 6
 ---
 
-**Last updated 19<sup>th</sup> May, 2020**
+**Last updated 20<sup>th</sup> January, 2021**
 
 ## Objective
 This guide gives you a basic example about using OpenStack Swift and its S3 API with OVHcloud Data Processing using Java.
@@ -16,11 +16,11 @@ We will use the OpenStack S3 API to read and write data to OVHcloud Object Stora
 Samples are based on the well-known WordCount. We will first read data from a text file, then count the occurrences of each word in this particular file. And then print the result in output log and also write the result in a text file in OVHcloud Swift Object Storage. 
 
 ## Requirements
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 - An OVHcloud account.
 - A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details).
 - Data Processing activated (see [How to activate the Data Processing service](../activation){.external} for details).
-- The input file 'novel.txt' used by the following samples is available [here](https://github.com/ovh/data-processing-samples/tree/master/java_S3WordCount/novel.txt){.external}.
+- The input file 'novel.txt' used by the following samples is available [here](https://github.com/ovh/data-processing-samples/tree/master/java_S3WordCount/novel.txt){.external} [[1]](#notes).
 You have to upload it in an Object Storage container. (see [Getting started with the Swift API](../../public-cloud/getting_started_with_the_swift_api/){.external} to read more about how to create an OVHcloud Object Storage container). In this example, we created a container named 'textfile" and uploaded the novel.txt object into that container. 
 - OVHcloud Object Storage "secret key" and "access key" for the container that you have uploaded the 'novel.txt' text file (textfile container in this example). (See [How to create EC2 credentials](../../public-cloud/getting_started_with_the_swift_S3_API/){.external} for more details).
 
@@ -182,7 +182,11 @@ pom.xml :
 > Everything in OVHcloud object storage container in which you uploaded your code, will be downloaded to the Data Processing cluster. If you have big volume of data, the best practice is to put your data in a separated Object Storage container. 
 
 
-You can find the source code of this project in OVHcloud github repository in this address: [ovh/data-processing-samples](https://github.com/ovh/data-processing-samples/tree/master/){.external}
+You can find the source code of this project in OVHcloud github repository in this address: [ovh/data-processing-samples](https://github.com/ovh/data-processing-samples/tree/master/){.external} [[1]](#notes)
+
+## Notes
+
+[1] Please select the tag related to the Spark version you want to use.
 
 ## Go further
 

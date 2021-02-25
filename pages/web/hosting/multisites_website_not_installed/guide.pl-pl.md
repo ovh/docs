@@ -18,7 +18,7 @@ Strona z komunikatem *Strona nie została zainstalowana* informuje, że konfigur
 - Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external}
 - Możliwość zarządzania [hostingiem](https://www.ovh.pl/hosting/){.external} (na którym zainstalowana jest strona WWW)
 - Możliwość modyfikacji konfiguracji domeny (jej strefy DNS) 
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce
 
@@ -33,7 +33,7 @@ Przedstawione poniżej etapy opisują, w jaki sposób sprawdzić obydwie konfigu
 
 ### Etap 1: weryfikacja konfiguracji MultiSite
 
-Aby sprawdzić, czy domena została poprawnie dodana do hostingu jako MultiSite, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, następnie kliknij `Hosting`{.action} na pasku usług po lewej stronie. Z listy wybierz hosting, z którego ma korzystać domena, pod którą wyświetla się komunikat *Strona nie została zainstalowana*. Przejdź następnie do zakładki `MultiSite`{.action}.
+Aby sprawdzić, czy domena została poprawnie dodana do hostingu jako MultiSite, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, następnie kliknij `Hosting`{.action} na pasku usług po lewej stronie. Z listy wybierz hosting, z którego ma korzystać domena, pod którą wyświetla się komunikat *Strona nie została zainstalowana*. Przejdź następnie do zakładki `MultiSite`{.action}.
 
 Tabela, która się wyświetla zawiera wszystkie domeny dodane do Twojego hostingu. W celu odnalezienia właściwej domeny możesz skorzystać z paska wyszukiwania. 
 
@@ -57,14 +57,14 @@ Teraz możesz sprawdzić konfigurację DNS Twojej domeny. Weryfikację należy p
 
 > [!primary]
 >
-> Jeśli domena jest zarejestrowana w OVH, możesz sprawdzić, czy korzysta z konfiguracji OVH. Kliknij w [Domeny](https://www.ovh.com/auth/?action=gotomanager){.external} na pasku usług po lewej stronie w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, następnie w nazwę wybranej domeny. Teraz przejdź do zakładki `Serwery DNS`{.action}.
+> Jeśli domena jest zarejestrowana w OVH, możesz sprawdzić, czy korzysta z konfiguracji OVH. Kliknij w [Domeny](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} na pasku usług po lewej stronie w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, następnie w nazwę wybranej domeny. Teraz przejdź do zakładki `Serwery DNS`{.action}.
 >
 
 W zależności od konfiguracji domeny, należy sprawdzić ustawienia w jednym z dwóch miejsc:
 
 - **Twoja domena nie używa konfiguracji OVH**: sprawdź (opisaną poniżej) w interfejsie dostawcy zarządzającego ustawieniami Twojej domeny; 
 
-- **Twoja domena używa konfiguracji OVH**: sprawdź w [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Wybierz domenę i przejdź do zakładki `Strefa DNS`{.action}. Konfiguracja DNS wyświetla się w tabeli, każdy wiersz odpowiada jednemu rekordowi DNS. Możesz sortować zawartość tabeli według typu rekordu lub nazwy domeny.
+- **Twoja domena używa konfiguracji OVH**: sprawdź w [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz domenę i przejdź do zakładki `Strefa DNS`{.action}. Konfiguracja DNS wyświetla się w tabeli, każdy wiersz odpowiada jednemu rekordowi DNS. Możesz sortować zawartość tabeli według typu rekordu lub nazwy domeny.
 
 ![sitenotinstalled](images/site-not-installed-edit-ovh-dns-zone.png){.thumbnail}
 

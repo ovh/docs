@@ -10,7 +10,7 @@ order: 2
 
 ## Objectif
 
-Vous pouvez gérer facilement vos projets Public Cloud OVHcloud depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Vous y trouverez tous vos projets d’infrastructure (instances, sauvegardes, disques, clés SSH, etc.) et de stockage (y compris la liste de vos conteneurs).
+Vous pouvez gérer facilement vos projets Public Cloud OVHcloud depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Vous y trouverez tous vos projets d’infrastructure (instances, sauvegardes, disques, clés SSH, etc.) et de stockage (y compris la liste de vos conteneurs).
 
 **Découvrez comment démarrer avec une instance Public Cloud.**
 
@@ -23,7 +23,7 @@ Vous pouvez gérer facilement vos projets Public Cloud OVHcloud depuis votre [es
 
 ### Accéder à l’interface de gestion de l’instance.
 
-Tout d’abord, connectez-vous à votre [Espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} et sélectionnez l'onglet Public Cloud. Sélectionnez le service Public Cloud concerné. Cliquez ensuite sur l’onglet `Instances`{.action} à gauche.
+Tout d’abord, connectez-vous à votre [Espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez l'onglet Public Cloud. Sélectionnez le service Public Cloud concerné. Cliquez ensuite sur l’onglet `Instances`{.action} à gauche.
 
 Sur la page qui s’affiche, vous verrez un résumé de toutes vos instances. Plusieurs informations vont s’afficher ici :
 

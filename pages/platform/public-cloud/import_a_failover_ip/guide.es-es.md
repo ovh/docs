@@ -22,12 +22,12 @@ Si necesita configurar una dirección IP de conmutación en sus instancias porqu
 
 ## Requisitos
 
-* Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
-* Tener una [dirección IP de conmutación](https://www.ovh.es/servidores_dedicados/ip_failover.xml){.external} asignada a un [servidor dedicado de OVHcloud](https://www.ovh.es/servidores_dedicados/){.external}
+* Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}
+* Tener una [dirección IP de conmutación](https://www.ovhcloud.com/es-es/bare-metal/ip/){.external}
 
 ## Procedimiento
 
-Primero, inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en el menú `Public Cloud`{.action} y, después, en su `proyecto`{.action}.
+Primero, inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en el menú `Public Cloud`{.action} y, después, en su `proyecto`{.action}.
 
 Seguidamente, seleccione `«IP de conmutación»`{.action} en la sección «Red».
 

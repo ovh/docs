@@ -18,13 +18,13 @@ Leer hoe u het wachtwoord van een FTP-gebruiker op uw OVH-webhosting kunt wijzig
 ## Vereisten
 
 - U moet beschikken over een [OVH-webhosting plan](https://www.ovh.com/nl/shared-hosting/){.external}.
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 ## Instructies
 
 ### Stap 1: Ga naar het beheer van de FTP-gebruikers
 
-Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Ga naar het `FTP - SSH`{.action}-tabblad.
+Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Ga naar het `FTP - SSH`{.action}-tabblad.
 
 De tabel toont de FTP-gebruikers die zijn aangemaakt op uw webhosting.  Met deze gebruikers hebt u toegang tot uw opslagruimte om online bestanden van uw website te plaatsen. Sommige hiervan zijn automatisch gemaakt wanneer uw webhostingplan is opgezet.
 

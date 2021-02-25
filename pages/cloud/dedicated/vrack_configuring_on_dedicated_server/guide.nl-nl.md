@@ -21,7 +21,7 @@ Virtual Rack (vRack)-technologie maakt het mogelijk om meerdere servers, ongeach
 - U moet beschikken over een [vRack](https://www.ovh.nl/oplossing/vrack/){.external}. 
 - Er moeten ten minste twee of meer vRack-compatibele servers beschikbaar zijn.
 - U moet via SSH (of op uw graphic interface) ingelogd zijn op uw Linux-server (root-toegang).
-- U moet toegang hebben tot uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet toegang hebben tot uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 - De door u gekozen reeks IP-adressen moet zijn voorbereid. 
 
 
@@ -29,7 +29,7 @@ Virtual Rack (vRack)-technologie maakt het mogelijk om meerdere servers, ongeach
 
 ### Voeg de servers toe aan de vRack
 
-1. Zodra vRack aan uw account is toegevoegd, gaat u naar het gedeelte `Cloud`{.action} van uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+1. Zodra vRack aan uw account is toegevoegd, gaat u naar het gedeelte `Cloud`{.action} van uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 2. Selecteer vervolgens het `vRack`{.action}-menu in de linkerkolom.
 3. Selecteer uw vRack in de weergegeven lijst.
 4. Selecteer, in de lijst met beschikbare diensten, de servers die u aan de vRack wilt toevoegen, en klik op de knop `Toevoegen`{.action}.

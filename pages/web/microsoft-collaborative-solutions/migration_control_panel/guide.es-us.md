@@ -23,7 +23,7 @@ OVHcloud ofrece varias soluciones de correo electrónico: MX Plan (incluido en u
 - Disponer de una cuenta MX Plan (plan de [hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}).
 - Tener un servicio [Exchange](https://www.ovh.com/world/es/emails/hosted-exchange/){.external} con al menos una cuenta no configurada (que aparecerá como "@configureme.me").
 - No haber configurado ninguna redirección en la dirección de correo MX Plan que quiera migrar.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 
 ## Procedimiento
@@ -32,7 +32,7 @@ OVHcloud ofrece varias soluciones de correo electrónico: MX Plan (incluido en u
 
 Este paso es opcional si ya tiene un servicio Exchange al que quiere realizar la migración.
 
-En caso contrario, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, y haga clic en ` Contratar`{.action} en la columna izquierda. A continuación, seleccione el servicio que quiere contratar. Será redirigido a la página de contratación. Siga los pasos que se indican y espere a que se instale el servicio. Recibirá un mensaje de correo electrónico cuando haya finalizado la operación.
+En caso contrario, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, y haga clic en ` Contratar`{.action} en la columna izquierda. A continuación, seleccione el servicio que quiere contratar. Será redirigido a la página de contratación. Siga los pasos que se indican y espere a que se instale el servicio. Recibirá un mensaje de correo electrónico cuando haya finalizado la operación.
 
 > [!primary]
 >
@@ -43,7 +43,7 @@ En caso contrario, conéctese al [área de cliente de OVHcloud](https://ca.ovh.c
 
 Antes de realizar la migración, deberá identificar la versión del MXPlan desde el que migrará.
 
-Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio correspondiente. Continúe leyendo esta guía en el apartado correspondiente a la versión:
+Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Correo electrónico`{.action} y seleccione el servicio correspondiente. Continúe leyendo esta guía en el apartado correspondiente a la versión:
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
@@ -68,7 +68,7 @@ Continúe leyendo esta guía en la interfaz seleccionada. Le recordamos que el t
 
 ##### **Migración desde el asistente de configuración de Exchange**
 
-Para ello, seleccione el servicio en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} en la columna izquierda. El asistente aparecerá para ayudarle a configurar su nuevo servicio Exchange. Durante este proceso, podrá seleccionar las cuentas MX Plan que quiera migrar.
+Para ello, seleccione el servicio en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} en la columna izquierda. El asistente aparecerá para ayudarle a configurar su nuevo servicio Exchange. Durante este proceso, podrá seleccionar las cuentas MX Plan que quiera migrar.
 
 Si no aparece el asistente de configuración, la información general del servicio Exchange se mostrará en su lugar. En ese caso, deberá realizar la migración de sus cuentas a través de la interfaz MX Plan.
 
@@ -132,7 +132,7 @@ Para ello, seleccione el servicio Exchange correspondiente en la columna izquier
 
 > [!primary]
 >
-> Si acaba de realizar la migración o de modificar un registro DNS del dominio, es posible que la actualización tarde unas horas en mostrarse en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+> Si acaba de realizar la migración o de modificar un registro DNS del dominio, es posible que la actualización tarde unas horas en mostrarse en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 >
 
 Para modificar la configuración, haga clic en la etiqueta roja y realice la operación solicitada. Esta operación tarda entre 4 y 24 horas en propagarse y ser efectiva.

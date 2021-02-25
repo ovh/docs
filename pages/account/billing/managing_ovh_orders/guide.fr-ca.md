@@ -9,18 +9,18 @@ section: 'Gérer ses commandes, factures et services'
 
 ## Objectif
 
-Une commande chez OVHcloud passe par différents états, que vous pouvez suivre dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Une commande chez OVHcloud passe par différents états, que vous pouvez suivre dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 **Ce guide vous explique comment comprendre votre bon de commande et ses différents états.**
 
 > [!primary]
 >
-> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}, rubrique `Mes services`{.action} puis `Mes contrats`{.action}.
+> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, rubrique `Mes services`{.action} puis `Mes contrats`{.action}.
 >
 
 ## Prérequis
 
-- Être connecté à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 - Avoir passé au moins une commande chez OVHcloud.
 
 
@@ -40,12 +40,12 @@ Le bon de commande est créé au moment du passage d'une commande. Il liste les 
 |4|Vous trouverez ici les moyens de paiement disponibles. Ne vous seront proposés que les moyens de paiement autorisés dans le pays d'origine du compte ou ceux liés au type de compte enregistré.|
 
 
-Vous pouvez à tout moment retrouver votre bon de commande dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} comme expliqué dans la partie suivante.
+Vous pouvez à tout moment retrouver votre bon de commande dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} comme expliqué dans la partie suivante.
 
 
 ### Accéder aux bons de commandes dans l'espace client OVHcloud
 
-Pour accéder au panneau de gestion des commandes, il vous suffit de cliquer en haut à droite dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} sur votre prénom, puis sur `Mes commandes`{.action}.
+Pour accéder au panneau de gestion des commandes, il vous suffit de cliquer en haut à droite dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} sur votre prénom, puis sur `Mes commandes`{.action}.
 
 ![Espace client](images/customer_panel_order_ca.png){.thumbnail}
 

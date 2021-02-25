@@ -5,7 +5,7 @@ excerpt: 'Cómo gestionar sus facturas y pagos en OVHcloud'
 section: 'Pedidos, facturas y servicios'
 ---
 
-**Última actualización: 15/04/2020**
+**Última actualización: 18/01/2021**
 
 ## Objetivo
 
@@ -15,14 +15,20 @@ Desde el área de cliente puede consultar, administrar y abonar sus facturas en 
 
 > [!primary]
 >
-> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicio en cuestión, es posible que algunos apartados de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVHcloud aplicables, que encontrará en el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager){.external}. Para ello, haga clic en su nombre en la esquina superior derecha y seleccione `Productos y servicios`{.action}. En la página de administración de sus servicios, haga clic en `Contratos`{.action}.
+> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicio en cuestión, es posible que algunos apartados de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVHcloud aplicables, que encontrará en el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para ello, haga clic en su nombre en la esquina superior derecha y seleccione `Productos y servicios`{.action}. En la página de administración de sus servicios, haga clic en `Contratos`{.action}.
 >
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} como contacto de facturación del servicio
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} como contacto de facturación del servicio
 
 ## Procedimiento
+
+> [!primary]
+> Actualización - Enero de 2021
+>
+La factura, que se emite por OVHcloud, se envía por correo electrónico como un enlace accesible y accesible directamente desde el área de cliente de OVHcloud. Todas las facturas están disponibles en el panel de control de OVHcloud.
+>
 
 ### Partes de una factura de OVHcloud
 
@@ -47,7 +53,7 @@ El precio total del servicio con el IVA incluido se indica al final de la tabla,
 
 > [!primary]
 >
-> Si, en la esquina superior derecha, aparece «Número de cuenta» como forma de pago, significa que se trata de una renovación automática. En ese caso, se utilizará la forma de pago que haya configurado en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+> Si, en la esquina superior derecha, aparece «Número de cuenta» como forma de pago, significa que se trata de una renovación automática. En ese caso, se utilizará la forma de pago que haya configurado en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 >
 
 
@@ -55,7 +61,7 @@ El precio total del servicio con el IVA incluido se indica al final de la tabla,
 
 #### Consultar y gestionar las facturas de OVHcloud
 
-Para consultar sus facturas, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `Facturas`{.action}. 
+Para consultar sus facturas, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `Facturas`{.action}. 
 
 ![area de cliente](images/hubinvoices.png){.thumbnail}
 
@@ -112,7 +118,7 @@ En cualquiera de los casos, confirme haciendo clic en el botón `Abonar el impor
 
 ### Consultar los pagos
 
-Puede realizar un seguimiento de los pagos en la sección de facturación del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, en la pestaña `Seguimiento de los pagos`{.action}. La página muestra los pagos de facturas realizados con la forma de pago configurada en el área de cliente. La referencia de los justificantes de pago siempre empieza por «PA_ES».
+Puede realizar un seguimiento de los pagos en la sección de facturación del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la pestaña `Seguimiento de los pagos`{.action}. La página muestra los pagos de facturas realizados con la forma de pago configurada en el área de cliente. La referencia de los justificantes de pago siempre empieza por «PA_ES».
 
 ![Seguimiento de los pagos](images/payment_tracking.png){.thumbnail}
 

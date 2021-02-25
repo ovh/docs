@@ -15,7 +15,7 @@ Además de [gestionar los contactos](https://docs.ovh.com/us/es/customer/gestion
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 - Tener un nombre de dominio registrado en OVHcloud.
 - Ser el [contacto administrador](https://docs.ovh.com/us/es/customer/gestion-de-los-contactos/) del nombre de dominio en cuestión.
 - Contar con el consentimiento del propietario actual del nombre de dominio para realizar el cambio de propietario.

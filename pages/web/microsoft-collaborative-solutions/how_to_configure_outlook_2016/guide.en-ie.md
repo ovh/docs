@@ -45,7 +45,7 @@ A security window will pop up and ask you to enter the **password** for the emai
 >
 > If you get a message saying that Outlook was unable to configure your account, this may mean that the OVH SRV field has not been set up correctly in your domain name's DNS area.
 >
-> We recommend that you check the domain name configuration for your Exchange service in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, in the`Associated domains`{.action} tab, then the Diagnostic column of the table.
+> We recommend that you check the domain name configuration for your Exchange service in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, in the`Associated domains`{.action} tab, then the Diagnostic column of the table.
 >
 
 If the domain name configuration is correct, a message will appear asking you to authorise a connection to the OVH server. Accept this connection in order to allow your Exchange account to be configured automatically.

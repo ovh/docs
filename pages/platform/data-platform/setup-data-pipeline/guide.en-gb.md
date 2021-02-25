@@ -20,7 +20,7 @@ Analytics cluster comes with a few ways to ingest data :
 
 
 In this part you will use Ambari Files view to ingest a CSV dataset.
-The source data is the very popular sample from New York City cab service, specifically the trips they made in January 2017, available on: http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
+The source data is the very popular sample from New York City cab service, specifically the trips they made in January 2017, available on: <http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml>
 
 To access Ambari's Files View, click on Ambari's top bar's 9-squares
 icon and choose Files View which will redirect you to this screen:
@@ -84,9 +84,7 @@ With our database now created, we can continue by...
 Before you can use your data sets imported previously into Hive, you
 first have to explain to Hive how your data is structured. This is done
 by creating an external table. External tables work like standard SQL
-tables, with a limited number of supported data types (supported data
-types can be found
-[here](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Types>).
+tables, with a limited number of supported data types.
 
 Let's continue with previous example of NYC taxi trips. The first
 thing to do is to find out what our columns are and to which

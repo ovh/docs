@@ -22,7 +22,7 @@ Please note that SSH keys are not used for authentication on instances running t
 ## Requirements
 
 * a [Public Cloud](https://www.ovh.lt/public-cloud/instances/){.external} project in your OVH account
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
 
@@ -107,7 +107,7 @@ As you move your mouse, the progress bar will start to fill up. When it's comple
 
 ### Import your SSH key into the OVH Control Panel
 
-First, highlight and copy the text of your public key, then log into the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+First, highlight and copy the text of your public key, then log into the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 Now click on the `Cloud`{.action} menu.
 

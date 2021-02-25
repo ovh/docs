@@ -16,15 +16,15 @@ Le champ MX permet de relier un nom de domaine à un serveur e-mail. Ceci permet
 
 ## Prérequis
 
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Disposer d'un accès à la gestion du nom de domaine concerné depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 - Le nom de domaine concerné doit utiliser la configuration OVHcloud (c'est à dire les serveurs DNS d'OVHcloud).
 
 > [!warning]
 >
 > - Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, vous devez réaliser la modification des champs MX depuis l'interface du prestataire gérant la configuration de votre nom de domaine.
 >
-> - Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager){.external} depuis l'onglet `Serveurs DNS`{.action}, une fois positionné sur le domaine concerné.
+> - Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} depuis l'onglet `Serveurs DNS`{.action}, une fois positionné sur le domaine concerné.
 >
 
 ## En pratique
@@ -47,12 +47,13 @@ Retrouvez ci-dessous la configuration MX d'OVHcloud à utiliser pour nos solutio
 |*laisser vide*|3600|MX|5|mx1.mail.ovh.net.|
 |*laisser vide*|3600|MX|50|mx2.mail.ovh.net.|
 |*laisser vide*|3600|MX|100|mx3.mail.ovh.net.|
+|*laisser vide*|3600|MX|200|mx4.mail.ovh.net.|
 
 Vous devez à présent utiliser ces différents champs MX dans la configuration DNS de votre nom de domaine. L'étape suivante vous permet d'effectuer cette manipulation dans la configuration DNS OVHcloud de votre nom de domaine.
 
 ### Étape 3 : modifier la configuration d'un champ MX OVHcloud
 
-Pour modifier les champs MX dans la configuration OVHcloud de votre nom de domaine, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Dans la barre de services à gauche, rendez-vous dans la section `Domaines`{.action}, cliquez sur le domaine concerné, puis rendez-vous dans l'onglet `Zone DNS`{.action}.
+Pour modifier les champs MX dans la configuration OVHcloud de votre nom de domaine, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Dans la barre de services à gauche, rendez-vous dans la section `Domaines`{.action}, cliquez sur le domaine concerné, puis rendez-vous dans l'onglet `Zone DNS`{.action}.
 
 Le tableau affiche la configuration OVHcloud de votre nom de domaine. Chaque ligne correspond à un enregistrement DNS. Nous vous invitons à vérifier dans un premier temps si des enregistrements MX existent déjà dans la configuration DNS OVHcloud de votre nom de domaine en vous aidant du champ de filtrage.
 

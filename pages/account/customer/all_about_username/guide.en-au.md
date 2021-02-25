@@ -68,7 +68,7 @@ By clicking on your initials, you will also be able to find the `client code` th
 
 ## How to log in to the OVHcloud Control Panel
 
-Go to the [OVHcloud login page](https://ca.ovh.com/auth/?action=gotomanager){.external}, and enter your NIC handle and password.
+Go to the [OVHcloud login page](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}, and enter your NIC handle and password.
 
 ![NIC handle](images/nichandle03.png){.thumbnail}
 

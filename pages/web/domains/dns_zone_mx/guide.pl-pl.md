@@ -16,15 +16,15 @@ Pole MX umożliwia powiązanie domeny z serwerem poczty elektronicznej. Dzięki 
 
 ## Wymagania początkowe
 
-- Dostęp do interfejsu zarządzania domeną w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do interfejsu zarządzania domeną w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - Wybrana domena powinna używać konfiguracji OVH (serwerów DNS OVH)
 
 > [!warning]
 >
 > - Jeśli Twoja domena nie używa serwerów DNS OVH, zmodyfikuj rekordy MX w interfejsie dostawcy zarządzającego konfiguracją Twojej domeny.
 >
-> - Jeśli Twoja domena jest zarejestrowana w OVH, możesz sprawdzić w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, w zakładce [Serwery DNS](https://www.ovh.com/auth/?action=gotomanager){.external}, czy używa ona konfiguracji OVH.
+> - Jeśli Twoja domena jest zarejestrowana w OVH, możesz sprawdzić w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w zakładce [Serwery DNS](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, czy używa ona konfiguracji OVH.
 >
 
 ## W praktyce
@@ -47,12 +47,13 @@ Zapoznaj się z przedstawioną poniżej konfiguracją MX OVH przewidzianą dla r
 |*pozostaw puste*|3600 |MX|5|mx1.mail.ovh.net.|
 |*pozostaw puste*|3600 |MX|50 |mx2.mail.ovh.net.|
 |*pozostaw puste*|3600 |MX|100|mx3.mail.ovh.net.|
+|*pozostaw puste*|3600 |MX|200|mx4.mail.ovh.net.|
 
 Teraz zastosuj rekordy MX w konfiguracji DNS Twojej domeny. Operacja ta została opisana w kolejnym etapie. 
 
 ### Etap 3: modyfikacja konfiguracji rekordu MX OVH
 
-Aby zmodyfikować rekordy MX w konfiguracji OVH Twojej domeny, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Na pasku usług po lewej stronie kliknij `Domeny`{.action}, następnie wybierz domenę i przejdź do zakładki `Strefa DNS`{.action}.
+Aby zmodyfikować rekordy MX w konfiguracji OVH Twojej domeny, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Na pasku usług po lewej stronie kliknij `Domeny`{.action}, następnie wybierz domenę i przejdź do zakładki `Strefa DNS`{.action}.
 
 W tabeli, która się wyświetli znajdziesz konfigurację Twojej domeny OVH. Każdy wiersz odpowiada jednemu rekordowi DNS. Zalecamy sprawdzenie w pierwszym kroku, czy jakieś rekordy MX zostały już wcześniej dodane do konfiguracji DNS Twojej domeny. Możesz posłużyć się w tym celu oknem filtrowania.
 

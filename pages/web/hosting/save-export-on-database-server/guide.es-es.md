@@ -21,7 +21,7 @@ Su base de datos puede contener una gran cantidad de información esencial para 
 ## Requisitos
 
 - Tener contratado un plan de [hosting SQL Privado](https://www.ovh.es/hosting/opciones-sql.xml) o [Cloud Databases](https://www.ovh.es/cloud-databases/).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
@@ -32,7 +32,7 @@ Su base de datos puede contener una gran cantidad de información esencial para 
 
 ### Guardar y exportar una base de datos desde el área de cliente
 
-Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Haga clic en la pestaña `Web` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos. Acceda a la pestaña `Bases de datos`.
+Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Haga clic en la pestaña `Web` y seleccione `Base de datos`{.action} en el panel izquierdo. Seleccione el nombre del servidor de bases de datos. Acceda a la pestaña `Bases de datos`.
 
 En la columna **"Copias de seguridad"**, la cifra corresponde al número de copias de seguridad disponibles para la base de datos.
 

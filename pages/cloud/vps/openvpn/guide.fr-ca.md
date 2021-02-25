@@ -11,7 +11,7 @@ OpenVPN est un logiciel permettant de créer un Réseau Virtuel Privé (ou Virtu
 
 ## Prérequis
 
-- Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
+- Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Un [VPS OVHcloud](https://www.ovhcloud.com/fr-ca/vps/)
 
 

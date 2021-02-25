@@ -16,7 +16,7 @@ To ensure that your system is optimally protected, you will need to regularly up
 
 ## Requirements
 
-- You must have access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- You must have access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}.
 
 
 ## Instructions
@@ -25,7 +25,7 @@ To ensure that your system is optimally protected, you will need to regularly up
 
 The upgrade process will require your system to reboot several times. For this reason, we recommend disabling the Cisco ASA firewall, so that your server does not experience any outages during the upgrade process.
 
-To do this, go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and open the `Bare Metal Cloud`{.action} section. Then select your dedicated server, and `Cisco ASA Firewall`{.action}. Next, click `Disable the Cisco ASA firewall`{.action}, on the right-hand side.
+To do this, go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, and open the `Bare Metal Cloud`{.action} section. Then select your dedicated server, and `Cisco ASA Firewall`{.action}. Next, click `Disable the Cisco ASA firewall`{.action}, on the right-hand side.
 
 ![Disable ASA](images/customer_panel_asa_disable.png){.thumbnail}
 
@@ -113,7 +113,7 @@ The reboot to reload the configuration will take a few minutes.
 
 ### Re-enable the Cisco ASA firewall through the Control Panel
 
-As per the first step, go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and open the `Bare Metal Cloud`{.action} section. Select your dedicated server, then `Cisco ASA Firewall`{.action}. Next, click `Enable the Cisco ASA firewall`{.action}, on the right-hand side.
+As per the first step, go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, and open the `Bare Metal Cloud`{.action} section. Select your dedicated server, then `Cisco ASA Firewall`{.action}. Next, click `Enable the Cisco ASA firewall`{.action}, on the right-hand side.
 
 ![Enable ASA](images/customer_panel_asa_enable.png){.thumbnail}
 
@@ -125,7 +125,7 @@ After the reload, once the ASA firewall is enabled again, check that all of your
 
 You now need to disable the Cisco ASA firewall again, as you did in the first step.
 
-To do this, go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and open the `Bare Metal Cloud`{.action} section. Then select your dedicated server, and `Cisco ASA Firewall`{.action}. Next, click `Disable the Cisco ASA firewall`{.action}, on the right-hand side.
+To do this, go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, and open the `Bare Metal Cloud`{.action} section. Then select your dedicated server, and `Cisco ASA Firewall`{.action}. Next, click `Disable the Cisco ASA firewall`{.action}, on the right-hand side.
 
 ![Disable ASA](images/customer_panel_asa_disable.png){.thumbnail}.
 
@@ -421,7 +421,7 @@ Cryptochecksum: 4b86b1e4 2e731d6b 9d1fc491 a5eae0f3
 
 ### Re-enable the Cisco ASA firewall through the Control Panel
 
-As per the first step, go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and open the `Bare Metal Cloud`{.action} section. Then select your dedicated server, and `Cisco ASA Firewall`{.action}. Next, click `Enable the Cisco ASA firewall`{.action}, on the right-hand side.
+As per the first step, go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, and open the `Bare Metal Cloud`{.action} section. Then select your dedicated server, and `Cisco ASA Firewall`{.action}. Next, click `Enable the Cisco ASA firewall`{.action}, on the right-hand side.
 
 ![Enable ASA](images/customer_panel_asa_enable.png){.thumbnail}
 

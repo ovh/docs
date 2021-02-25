@@ -263,7 +263,10 @@ mount /dev/md2 /home
 
 ## Weiterführende Informationen
 
-* [Hot Swap – Hardware RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/){.external} (Englisch)
-* [Hot Swap – Software RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-soft/){.external} (Englisch)
-* [Hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} (Englisch)
-* Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+[Hot Swap – Hardware RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-hard/){.external} (Englisch)
+
+[Hot Swap – Software RAID](https://docs.ovh.com/gb/en/dedicated/hotswap-raid-soft/){.external} (Englisch)
+
+[Hardware RAID](https://docs.ovh.com/gb/en/dedicated/raid-hard/){.external} (Englisch)
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

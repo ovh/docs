@@ -19,13 +19,13 @@ Abyste mohli účty své služby Exchange naplno využívat, je zapotřebí k n�
 - Služba [Exchange](https://www.ovh.cz/emails/){.external}.
 - Alespoň jedna doména.
 - Dostatečná práva pro provádění úprav v DNS zóně domény.
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Postup
 
 ### Fáze 1: přístup do rozhraní pro správu služby
 
-Jakmile je služba Exchange vytvořena a dostupná, můžete ji začít spravovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Jakmile je služba Exchange vytvořena a dostupná, můžete ji začít spravovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 Připojte se do Zákaznického prostoru, v levém postranním panelu klikněte na sekci `Microsoft`{.action} a následně vyberte `Exchange`{.action}. Ze seznamu vyberte požadovanou službu Exchange.
 

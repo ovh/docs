@@ -18,7 +18,7 @@ Este guia explica como poderá migrar um IP Failover de uma instância para outr
 
 - Dispor de, no mínimo, duas instâncias [Public Cloud iniciadas](https://www.ovhcloud.com/pt/public-cloud/){.external}
 - Um IP Failover
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager)
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 ## Instruções
 

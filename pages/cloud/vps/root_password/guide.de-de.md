@@ -25,7 +25,7 @@ Es kann sein, dass Sie das Root-Passwort Ihres Linux-Betriebssystems ändern mü
 
 - Sie verfügen über einen [OVHcloud VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
 - Sie verfügen über die Zugangsdaten, die Sie nach der Installation per E-Mail erhalten haben (sofern diese noch gültig sind).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) (um den Rescue-Modus zu verwenden).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) (um den Rescue-Modus zu verwenden).
 
 > [!warning]
 >OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
@@ -71,7 +71,7 @@ Wenn Sie den Login als Root-Benutzer erlauben möchten, folgen Sie den Schritten
 
 #### Schritt 1: Starten Sie den VPS im Rescue-Modus neu.
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und starten Sie den VPS im Rescue-Modus neu. Wenn Sie weitere Anweisungen zur Verwendung des Rescue-Modus mit einem VPS benötigen, lesen Sie die Anleitung zum [Rescue-Modus](../rescue/).
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und starten Sie den VPS im Rescue-Modus neu. Wenn Sie weitere Anweisungen zur Verwendung des Rescue-Modus mit einem VPS benötigen, lesen Sie die Anleitung zum [Rescue-Modus](../rescue/).
 
 #### Schritt 2: Mountpoint identifizieren
 
@@ -145,7 +145,7 @@ passwd: password updated successfully
 
 Damit wird sichergestellt, dass Sie sich nach dem Neustart auch wieder mit diesem Benutzernamen anmelden können, falls der Root-Login deaktiviert ist.
 
-Starten Sie Ihren VPS schließlich über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) neu vom Systemlaufwerk.
+Starten Sie Ihren VPS schließlich über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) neu vom Systemlaufwerk.
 
 
 ### Root-Login aktivieren <a name="rooterlauben"></a>

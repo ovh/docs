@@ -16,7 +16,7 @@ With OVHcloud Hosted Exchange you can send and receive your emails using a devic
 
 ## Requirements
 
-- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans]({ovh_www}/web-hosting), or ordered separately as a standalone solution; [**Hosted Exchange**]({ovh_www}/emails/hosted-exchange) or [**Email Pro**]({ovh_www}/emails/email-pro))
+- an OVHcloud email solution already set up (**MX Plan**, available as part of our [Web Hosting plans](https://www.ovh.com/ca/en/web-hosting/) or [**Hosted Exchange**](https://www.ovh.com/ca/en/emails/hosted-exchange/)
 - login credentials for the email address you want to configure
 
 ## Instructions
@@ -31,7 +31,7 @@ This guide will give you a better understanding of the usual email account tasks
 
 ### 1. Accessing OWA webmail
 
-To log in to OWA webmail with your email address, go to the general [webmail login page]({ovh_www}/mail). Enter your full email address and password, then click the `Login`{.action} button.
+To log in to OWA webmail with your email address, go to the general [webmail login page](https://www.ovh.com/ca/en/mail/). Enter your full email address and password, then click the `Login`{.action} button.
 
 ![useowa](images/owa_exchange_step1.png){.thumbnail}
 

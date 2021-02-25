@@ -10,21 +10,21 @@ section: 'Getting started'
 
 ## Objective
 
-The [Public Cloud](https://www.ovh.com/asia/public-cloud/instances/){.external} lets you create instances (i.e. virtual servers) quickly and easily, in just a few clicks.
+The [Public Cloud](https://www.ovhcloud.com/asia/public-cloud/){.external} lets you create instances (i.e. virtual servers) quickly and easily, in just a few clicks.
 
 **This guide will show you how to create an instance in your Public Cloud account.**
 
 ## Requirements
 
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
-* a [Public Cloud](https://www.ovh.com/asia/public-cloud/instances/){.external} project created in your OVHcloud account
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
+* a [Public Cloud](https://www.ovhcloud.com/asia/public-cloud/){.external} project created in your OVHcloud account
 * an SSH key created in your OVHcloud customer account
 
 ## Intructions
 
 ### Add an instance
 
-First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click on the `Public Cloud`{.action} menu.
+First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external} and click on the `Public Cloud`{.action} menu.
 
 ![cloud menu](images/pci-instance-cloud-01_2020.png){.thumbnail}
 

@@ -15,7 +15,7 @@ En otros documentos puede encontrar el término KVM, del inglés *keyboard, vide
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager), en la sección `Dedicado`{.action} > `Servidores dedicados`{.action}.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), en la sección `Dedicado`{.action} > `Servidores dedicados`{.action}.
 
 
 ## Procedimiento

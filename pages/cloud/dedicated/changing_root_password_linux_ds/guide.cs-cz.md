@@ -19,7 +19,7 @@ Při instalaci či reinstalaci systémové distribuce dochází k automatickému
 
 * [Dedikovaný server](https://www.ovh.cz/dedikovane_servery/){.external} s linuxovou systémovou distribucí.
 * SSH root přístup k serveru.
-* Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 
 ## Postup

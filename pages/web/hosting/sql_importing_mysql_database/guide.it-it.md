@@ -19,15 +19,15 @@ Utilizzati dalla maggior parte dei sistemi di gestione dei contenuti (Content Ma
 - Disporre di una soluzione di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}
 - Disporre di un database creato nell’ambito di una soluzione di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}
 - Avere accesso al backup da importare nel database o essere in grado di recuperarlo
-- In base al metodo di importazione scelto, avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} o disporre dei dati di connessione al database
+- In base al metodo di importazione scelto, avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o disporre dei dati di connessione al database
 
 ## Procedura
 
 Prima di iniziare, è necessario indicare il metodo con cui intendi importare il backup del database. A seconda delle tue competenze tecniche a riguardo, puoi utilizzare diversi metodi:
 
-- **ripristinare lo stato di una data precedente**: questa soluzione permette di ripristinare il contenuto dei tuoi database grazie ai backup presenti nel tool di backup OVH. Non richiede particolari competenze tecniche ed è disponibile direttamente nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- **ripristinare lo stato di una data precedente**: questa soluzione permette di ripristinare il contenuto dei tuoi database grazie ai backup presenti nel tool di backup OVH. Non richiede particolari competenze tecniche ed è disponibile direttamente nello [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 
-- **file di backup**: questa soluzione permette di importare i dati del tuo file di backup in uno dei tuoi database ed è disponibile direttamente nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- **file di backup**: questa soluzione permette di importare i dati del tuo file di backup in uno dei tuoi database ed è disponibile direttamente nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 
 - **interfaccia Web phpMyAdmin**: questa soluzione richiede la conoscenza dell’applicazione Web phpMyAdmin e della sua interfaccia di gestione. Inoltre, la dimensione del file di backup ha dei limiti.
 
@@ -48,7 +48,7 @@ Continua la lettura in base al metodo di importazione scelto.
 
 ### Ripristino dallo Spazio Cliente OVH
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database da ripristinare e seleziona `Ripristina un backup`{.action}. Ti ricordiamo che scegliendo questa opzione il contenuto del database verrà sostituito con quello del backup.
 
@@ -62,7 +62,7 @@ Clicca sui tre puntini in corrispondenza del database da ripristinare e selezion
 
 ### Importazione dallo Spazio Cliente OVH
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database da importare e seleziona `Importa un file`{.action}.
 
@@ -95,7 +95,7 @@ Una volta effettuata la tua scelta, clicca su `Conferma`{.action} e attendi la f
 
 ### Interfaccia Web phpMyAdmin
 
-Per recuperare il link di accesso a phpMyAdmin accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
+Per recuperare il link di accesso a phpMyAdmin accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting. Clicca sui tre puntini in corrispondenza del database di cui vuoi importare il backup e seleziona `Accedi a phpMyAdmin`{.action}.
 

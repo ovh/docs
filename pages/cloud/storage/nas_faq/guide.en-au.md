@@ -19,7 +19,7 @@ You can sign up to HA-NAS in datacentres based in France (Roubaix, Strasbourg, G
 
 ### Can I manage my HA-NAS via a configuration panel?
 
-Yes, you can manage it from your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager) by going to the `Cloud`{.action} section, then `Platforms and services`{.action}.
+Yes, you can manage it from your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) by going to the `Cloud`{.action} section, then `Platforms and services`{.action}.
 
 ### Can I increase the total storage capacity of my NAS?
 
@@ -45,7 +45,7 @@ The disks of your HA-NAS are dedicated to your services. The machine’s other r
 **Special case:** if you sign up to the 26.4 TB solution, all of the host server’s resources are dedicated to your services (RAM, CPU, bandwidth).
 
 ### How long can I subscribe to a HA-NAS solution?
-The subscription periods offered are 1 month, 3 months, 6 months and 12 months. At the end of your subscription period, your subscription is renewed automatically unless you submit a cancellation request. You can do this at any time during your subscription period, via your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager).
+The subscription periods offered are 1 month, 3 months, 6 months and 12 months. At the end of your subscription period, your subscription is renewed automatically unless you submit a cancellation request. You can do this at any time during your subscription period, via your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 
 ### Will I have access to all of the storage space displayed in the order?
 For most storage solutions, theoretical capacity differs slightly from the usable capacity, since a portion of storage space is needed for the disk to operate:
@@ -137,7 +137,7 @@ You can set the frequency of snapshots from your Control Panel. You can choose t
 - once every week. 
 
 
-You can also create manual snapshots at any time, save them without any time limit, or delete them. This feature is available in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager) or via the[API](https://ca.api.ovh.com/):
+You can also create manual snapshots at any time, save them without any time limit, or delete them. This feature is available in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) or via the[API](https://ca.api.ovh.com/):
 
 > [!api]
 >

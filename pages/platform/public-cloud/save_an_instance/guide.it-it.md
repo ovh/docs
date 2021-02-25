@@ -10,20 +10,20 @@ section: 'Spazio Cliente OVH'
 
 ## Obiettivo
 
-Dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} è possibile creare uno Snapshot in qualsiasi momento e utilizzarlo per ripristinare una configurazione precedente o creare una nuova istanza.
+Dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} è possibile creare uno Snapshot in qualsiasi momento e utilizzarlo per ripristinare una configurazione precedente o creare una nuova istanza.
 
 **Questa guida ti mostra come eseguire l’istantanea di un’istanza Public Cloud OVHcloud in pochi click.**
 
 ## Prerequisiti
 
 - [Disporre di un’istanza Public Cloud](https://docs.ovh.com/it/public-cloud/crea_unistanza_dallo_spazio_cliente_ovh/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
 ### Effettua un backup dell’istanza
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona la scheda Public Cloud e poi la sezione `Istanze`{.action}.
+Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona la scheda Public Cloud e poi la sezione `Istanze`{.action}.
 
 Clicca sui `...`{.action} a destra dell’istanza che ti interessa e poi su `Crea uno Snapshot`{.action}.
 

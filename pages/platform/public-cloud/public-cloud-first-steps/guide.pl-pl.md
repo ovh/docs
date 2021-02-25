@@ -17,7 +17,7 @@ Z najlepszych praktyk wynika, że instancje chmury publicznej w ramach usługi P
 ## Wymagania początkowe
 
 - [projekt Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) na koncie OVHcloud
-- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 
 ## W praktyce
@@ -144,7 +144,7 @@ Niezależnie od wybranej metody tworzenia kluczy SSH teraz można dodać klucz p
 Zapisane klucze SSH umożliwiają szybsze tworzenie instancji. Aby zmienić pary kluczy i następnie dodać użytkowników, zapoznaj się z przewodnikiem [Konfiguracja dodatkowych kluczy SSH](https://docs.ovh.com/pl/public-cloud/konfiguracja_dodatkowych_kluczy_ssh/).
 >
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij pozycję `Klucze SSH`{.action} na lewym pasku nawigacyjnym w obszarze „Zarządzanie projektami”.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij pozycję `Klucze SSH`{.action} na lewym pasku nawigacyjnym w obszarze „Zarządzanie projektami”.
 
 Kliknij przycisk `Dodaj klucz SSH`{.action}. W nowym oknie wpisz nazwę klucza i wklej ciąg klucza (skopiowany w [kroku 1](./#krok-1-utworzenie-kluczy-ssh) z pliku klucza publicznego lub okna PuTTYgen) w polu „Klucz”. Potwierdź, klikając przycisk `Dodaj`{.action}.
 
@@ -153,7 +153,7 @@ Kliknij przycisk `Dodaj klucz SSH`{.action}. W nowym oknie wpisz nazwę klucza i
 
 ### Krok 3: tworzenie instancji
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Na stronie głównej kliknij pozycję `Utwórz instancję`{.action}. (To samo można uzyskać na stronie „Instancje”, klikając pozycję `Instancje`{.action} na lewym pasku nawigacyjnym w obszarze „Środowisko obliczeniowe”).
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Na stronie głównej kliknij pozycję `Utwórz instancję`{.action}. (To samo można uzyskać na stronie „Instancje”, klikając pozycję `Instancje`{.action} na lewym pasku nawigacyjnym w obszarze „Środowisko obliczeniowe”).
 
 ![instance select](images/instance-creation-01.png){.thumbnail}
 
@@ -217,7 +217,7 @@ Po upewnieniu się, że wybrana konfiguracja jest prawidłowa kliknij przycisk `
 
 ### Krok 4: połączenie z instancją
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij pozycję `Instancje`{.action} na lewym pasku nawigacyjnym w obszarze „Środowisko obliczeniowe”. Instancja jest gotowa, gdy w kolumnie „Status” ma ustawienie „Aktywowano”. Aby to sprawdzić, możesz kliknąć przycisk „Odśwież” obok przycisku `Utwórz instancję`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Następnie kliknij pozycję `Instancje`{.action} na lewym pasku nawigacyjnym w obszarze „Środowisko obliczeniowe”. Instancja jest gotowa, gdy w kolumnie „Status” ma ustawienie „Aktywowano”. Aby to sprawdzić, możesz kliknąć przycisk „Odśwież” obok przycisku `Utwórz instancję`{.action}.
 
 ![instances page](images/instance-connect-01.png){.thumbnail}
 
@@ -230,7 +230,7 @@ W przypadku problemów z połączeniem, tj. błędów dotyczących kluczy SSH, z
 
 #### Połączenie z instancją z systemem operacyjnym Linux z systemu Linux/Mac
 
-Instancja jest dostępna z poziomu interfejsu wiersza polecenia (terminala) przez SSH. Zastąp nazwę użytkownika („username” w poniższych przykładach) swoją domyślną nazwą użytkownika, jak wyjaśniono powyżej. Możesz też po prostu skopiować całe polecenie logowania się z [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), klikając je w „Panelu nawigacyjnym” instancji i wklejając w oknie terminala.
+Instancja jest dostępna z poziomu interfejsu wiersza polecenia (terminala) przez SSH. Zastąp nazwę użytkownika („username” w poniższych przykładach) swoją domyślną nazwą użytkownika, jak wyjaśniono powyżej. Możesz też po prostu skopiować całe polecenie logowania się z [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), klikając je w „Panelu nawigacyjnym” instancji i wklejając w oknie terminala.
 
 ![instances page](images/instance-connect-02.png){.thumbnail}
 
@@ -248,7 +248,7 @@ New password:
 Retype new password:
 passwd: password updated successfully
 ```
-Teraz możesz użyć tych poświadczeń do zalogowania się za pośrednictwem `Konsoli VNC`{.action} do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Następnie przełącz się na użytkownika „root” i ustaw hasło bezpieczeństwa, a potem przełącz się z powrotem na poprzedniego użytkownika.
+Teraz możesz użyć tych poświadczeń do zalogowania się za pośrednictwem `Konsoli VNC`{.action} do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Następnie przełącz się na użytkownika „root” i ustaw hasło bezpieczeństwa, a potem przełącz się z powrotem na poprzedniego użytkownika.
 
 ```sh
 $ sudo su -
@@ -268,7 +268,7 @@ Otwórz aplikację PuTTY i rozwiń pozycję „SSH” w lewym menu. Następnie k
 
 ![using putty](images/puttyconnect-01.png){.thumbnail}
 
-Kliknij przycisk `Browse`{.action} (Przeglądaj), aby przejść do folderu, w którym znajduje się plik klucza prywatnego (.ppk), i go otworzyć. Następnie za pomocą lewego menu przejdź do pozycji „Session” (Sesja) i wpisz swoje dane logowania (nazwa_użytkownika@adres_IPv4). Zastąp nazwę użytkownika „ubuntu” widoczną na przykładowych zrzutach ekranu swoją domyślną nazwą użytkownika — zgodnie z danymi w „Panelu nawigacyjnym” instancji w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager). (Kliknij pozycję `Instancje`{.action} na lewym pasku nawigacyjnym, a następnie kliknij nazwę instancji).
+Kliknij przycisk `Browse`{.action} (Przeglądaj), aby przejść do folderu, w którym znajduje się plik klucza prywatnego (.ppk), i go otworzyć. Następnie za pomocą lewego menu przejdź do pozycji „Session” (Sesja) i wpisz swoje dane logowania (nazwa_użytkownika@adres_IPv4). Zastąp nazwę użytkownika „ubuntu” widoczną na przykładowych zrzutach ekranu swoją domyślną nazwą użytkownika — zgodnie z danymi w „Panelu nawigacyjnym” instancji w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). (Kliknij pozycję `Instancje`{.action} na lewym pasku nawigacyjnym, a następnie kliknij nazwę instancji).
 
 Sesję możesz zapisać na potrzeby przyszłych połączeń, aby była dostępna na liście w tym interfejsie. Aby dodać sesję, podaj opisową nazwę w polu „Saved Sessions” (Zapisane sesje) i kliknij przycisk `Save`{.action} (Zapisz).
 
@@ -314,7 +314,7 @@ Jeśli wystąpią problemy z wykonaniem tej procedury, sprawdź, czy na urządze
 
 ##### **System Linux**
 
-Instancje Public Cloud są dostępne za pośrednictwem wbudowanej konsoli VNC w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Połączenia z urządzenia lokalnego należy nawiązywać z aplikacji klienckiej, która obsługuje protokół RDP (Remote Desktop Protocol).
+Instancje Public Cloud są dostępne za pośrednictwem wbudowanej konsoli VNC w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Połączenia z urządzenia lokalnego należy nawiązywać z aplikacji klienckiej, która obsługuje protokół RDP (Remote Desktop Protocol).
 
 Zgodną aplikacją jest na przykład klient pulpitu zdalnego Remmina, który powinien znajdować się w pakiecie instalacyjnym systemu Ubuntu. Jeśli nie znajdziesz aplikacji Remmina w swoim środowisku, możesz ją uzyskać z [oficjalnej witryny internetowej](https://remmina.org/).
 

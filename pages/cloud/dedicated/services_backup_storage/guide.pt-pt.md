@@ -17,14 +17,14 @@ No âmbito das ofertas de [servidores dedicados](https://www.ovh.pt/servidores_d
 ## Requisitos
 
 - Ter um [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external}.
-- Aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Serviços Dedicados`{.action}.
+- Aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Serviços Dedicados`{.action}.
 
 
 ## Instruções
 
 ### Ativar o seu espaço de armazenamento
 
-Ligue-se à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e entre na página do servidor na secção `Serviços Dedicados`{.action}. De seguida, selecione a janela `Backup Storage`{.action}, clique no botão `Ativar backup storage`{.action} e valide.
+Ligue-se à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e entre na página do servidor na secção `Serviços Dedicados`{.action}. De seguida, selecione a janela `Backup Storage`{.action}, clique no botão `Ativar backup storage`{.action} e valide.
 
 ![Ativar o seu espaço de armazenamento](images/backup_storage_activation.png){.thumbnail}
 

@@ -11,19 +11,19 @@ order : 3
 
 ## Objective
 
-You can use the OVHcloud [Public Cloud](https://www.ovh.co.uk/public-cloud/instances/) to create instances (i.e. virtual servers) quickly and easily, in just a few clicks.
+You can use the OVHcloud [Public Cloud](https://www.ovhcloud.com/en-gb/public-cloud/) to create instances (i.e. virtual servers) quickly and easily, in just a few clicks.
 
 **Find out how to create an instance in the OVHcloud Public Cloud Control Panel.**
 
 ## Requirements
 
-* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
-* a [Public Cloud](https://www.ovh.co.uk/public-cloud/instances/){.external} project created in your OVHcloud account
+* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+* a [Public Cloud](https://www.ovhcloud.com/en-gb/public-cloud/){.external} project created in your OVHcloud account
 * an SSH key created in the OVHcloud Control Panel
 
 ### Deploy a Public Cloud Instance.
 
-In order to deploy a public cloud instance, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Click `Public Cloud`{.action} in the top-left corner of the page. Then, on the following screen, click the arrow button next to your default project name in the top-left corner of the screen. Now select the project on which you would like to create a new instance.
+In order to deploy a public cloud instance, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Click `Public Cloud`{.action} in the top-left corner of the page. Then, on the following screen, click the arrow button next to your default project name in the top-left corner of the screen. Now select the project on which you would like to create a new instance.
 
 ![select_project](images/select_project.png){.thumbnail}
 

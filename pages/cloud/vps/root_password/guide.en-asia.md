@@ -9,7 +9,7 @@ section: Diagnostics and rescue mode
 
 ## Objective
 
-It may become necessary to change the root password on your Linux operating system. There are two possible scenarios:
+It may become necessary to change the root password on your GNU/Linux operating system. There are two possible scenarios:
 
 - You are still able to log in via SSH
 - You are unable to log in via SSH because you have lost your password
@@ -20,12 +20,13 @@ It may become necessary to change the root password on your Linux operating syst
 
 - an OVHcloud [VPS service](https://www.ovhcloud.com/asia/vps/) already set up
 - login credentials received via email after the installation (if still valid)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) (for using rescue mode)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) (for using rescue mode)
 
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+>
 
 ## Instructions
 
@@ -54,7 +55,7 @@ passwd: password updated successfully
 
 > [!primary]
 >
-> On a Linux distribution, the password you enter **will not appear**.
+> On a GNU/Linux distribution, the password you enter **will not appear**.
 >
 
 If you need to permit logging in as root, follow the steps in [this guide section](./#enabling-root-login_1).
@@ -65,7 +66,7 @@ If you need to permit logging in as root, follow the steps in [this guide sectio
 
 #### Step 1: Restart the VPS into rescue mode
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and reboot the VPS in rescue mode. If you need further instructions about using rescue mode with a VPS, you may consult the [rescue mode guide](../rescue/).
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and reboot the VPS in rescue mode. If you need further instructions about using rescue mode with a VPS, you may consult the [rescue mode guide](../rescue/).
 
 #### Step 2: Identify the mount point
 
@@ -139,7 +140,7 @@ passwd: password updated successfully
 
 This will ensure that you can log in again with this username after rebooting, in case root login is disabled.
 
-Finally, reboot your VPS on its drive in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager).
+Finally, reboot your VPS on its drive in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
 
 
 ### Enabling root login
@@ -188,7 +189,7 @@ This should be sufficient to apply the changes. Alternatively, reboot the VPS (`
 If you encounter boot issues after you have changed your password and initiated the reboot:
 
 - Check the KVM for important information as to why the VPS is unable to start. Consult the [KVM guide](../use-kvm-for-vps/) for help using this feature in the OVHcloud Control Panel.
-- If the KVM is showing the VPS booting or unable to find the disk, ensure you have [boot logs enabled](../use-kvm-for-vps/). Relay the pertinent logs to our support teams by creating a support request in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) for further investigations.
+- If the KVM is showing the VPS booting or unable to find the disk, ensure you have [boot logs enabled](../use-kvm-for-vps/). Relay the pertinent logs to our support teams by creating a support request in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) for further investigations.
 
 ## Go further
 

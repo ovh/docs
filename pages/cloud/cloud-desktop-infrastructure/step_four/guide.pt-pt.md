@@ -17,7 +17,7 @@ Agora que a [pool está criada - EN](https://docs.ovh.com/gb/en/cloud-desktop-in
 
 ## Requisitos
 
-- Ter criado utilizadores no Active Directory se [foi criada uma relação de aprovação - EN](https://docs.ovh.com/gb/en/cloud-desktop-infrastructure/approval-ad/){.external}; ou ter criado os utilizadores na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager) {.external}.
+- Ter criado utilizadores no Active Directory se [foi criada uma relação de aprovação - EN](https://docs.ovh.com/gb/en/cloud-desktop-infrastructure/approval-ad/){.external}; ou ter criado os utilizadores na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) {.external}.
 - Estar conectado à interface VMware Horizon 7.1.
 
 

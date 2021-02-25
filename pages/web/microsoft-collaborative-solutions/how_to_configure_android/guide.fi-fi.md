@@ -48,7 +48,7 @@ Syötä nyt saapuvan postin palvelimen asetukset. Tietyt kentät saattavat olla 
 |Verkkotunnus/Käyttäjänimi|Syötä täydellinen sähköpostiosoite.|  
 |Salasana|Syötä sähköpostiosoitteen salasana.|
 |Asiakassertifikaatti|Älä valitse mitään.|
-|Palvelin|Ilmoita palvelin, jossa Exchange-palveluasi ylläpidetään. Voit löytää sen [hallintapaneelista](https://www.ovh.com/auth/?action=gotomanager){.external} kyseisen Exchange-palvelun välilehdeltä `Yleiset tiedot`{.action} ja sitten kohdasta `Yhteys`{.action}.|
+|Palvelin|Ilmoita palvelin, jossa Exchange-palveluasi ylläpidetään. Voit löytää sen [hallintapaneelista](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} kyseisen Exchange-palvelun välilehdeltä `Yleiset tiedot`{.action} ja sitten kohdasta `Yhteys`{.action}.|
 |Portti|Syötä portti 443.|  
 |Salaus|Valitse “SSL/TLS”|
 

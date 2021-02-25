@@ -1,6 +1,6 @@
 ---
-title: Créer une image OpenStack personnalisée avec Packer
-excerpt: Créer et personnaliser une image OpenStack à partir d'une image existante avec Packer
+title: 'Créer une image OpenStack personnalisée avec Packer'
+excerpt: "Créer et personnaliser une image OpenStack à partir d'une image existante avec Packer"
 slug: packer-openstack-builder
 section: Tutoriels
 ---
@@ -41,7 +41,7 @@ apt-get install jq
 
 ### Récupérer votre configuration openrc.sh
 
-À partir de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), récupérez votre fichier de configuration `openrc.sh`. 
+À partir de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), récupérez votre fichier de configuration `openrc.sh`. 
 
 Vous pouvez le retrouver via le menu OpenStack dans le panneau latéral gauche puis sous le bouton `...`{.action} sur la droite, vous trouverez le bouton `Télécharger un fichier de configuration OpenStack`{.action} 
 

@@ -17,7 +17,7 @@ Usługi e-mail OVHcloud umożliwiają korzystanie z profesjonalnych kont e-mail.
 ## Wymagania początkowe
 
 - Posiadanie usługi [e-mail OVHcloud](https://www.ovh.pl/emaile/){.external}
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), sekcja `Web Cloud`{.action}
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), sekcja `Web Cloud`{.action}
 
 ## W praktyce
 
@@ -28,7 +28,7 @@ Zarządzanie polityką bezpieczeństwa usługi e-mail może wiązać się z czt
 - wzmocnienie weryfikacji wiadomości przychodzących na serwery OVH i na Twoje konta e-mail (dotyczy wyłącznie kont [Exchange](https://www.ovh.pl/emaile/hosted-exchange/){.external});
 - zdefiniowanie, jak wiadomości „niechciane” będą wyświetlane w Twoich skrzynkach e-mail (dotyczy wyłącznie kont [Exchange](https://www.ovh.pl/emaile/hosted-exchange/){.external}).
 
-Aby przejść do polityki bezpieczeństwa usługi e-mail, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i przejdź do sekcji `Web Cloud`{.action}. 
+Aby przejść do polityki bezpieczeństwa usługi e-mail, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. 
 
 |E-maile i E-mail Pro|Exchange| 
 |---|---| 

@@ -22,7 +22,7 @@ Le licenze Office 365 possono essere utilizzate su 5 PC/Mac, 5 tablet e 5 smartp
 
 ### Accedi all’interfaccia di gestione
 
-Una volta attivato il servizio Office 365, è possibile gestirlo dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Una volta attivato il servizio Office 365, è possibile gestirlo dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 
 Accedi alla sezione `Sunrise`{.action}. Nel menu a sinistra, clicca su `Office 365 Reseller`{.action} e poi seleziona il tuo gruppo di licenze.
 

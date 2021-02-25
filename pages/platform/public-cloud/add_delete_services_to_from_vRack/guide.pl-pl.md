@@ -22,7 +22,7 @@ vRack, działa między różnymi Rejonami centrów danych OVH, co daje możliwo�
     - [serwer dedykowany OVH](https://www.ovh.pl/serwery_dedykowane/){.external} (zgodnie z ofertą danego serwera)
     - [dodatkowy blok IP](https://www.ovh.pl/serwery_dedykowane/ip-zawarte.xml){.external}
     - [Private Cloud](https://www.ovh.pl/private-cloud/){.external}
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 
 ## W praktyce

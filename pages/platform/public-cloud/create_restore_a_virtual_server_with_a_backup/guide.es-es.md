@@ -23,7 +23,7 @@ En esta guía, explicaremos cómo utilizar sus snapshots para volver a crear, du
 
 ### Crear una instancia a partir de un snapshot
 
-Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} y seleccione `Public Cloud`{.action}. Luego, seleccione la sección `Instancia de backup`{.action}.
+Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione `Public Cloud`{.action}. Luego, seleccione la sección `Instancia de backup`{.action}.
 
 Haga clic en los `...`{.action} a la derecha del snapshot seleccionado y por último, en `Crear una instancia`{.action}.
 

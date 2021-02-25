@@ -17,13 +17,13 @@ Los planes de hosting de OVH permiten disponer de un espacio de almacenamiento e
 ## Requisitos
 
 - Tener contratado un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external}.
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
 
 ### 1. Acceder a la gestión de los usuarios FTP
 
-Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `FTP-SSH`{.action}.
+Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `FTP-SSH`{.action}.
 
 Se mostrará una tabla que contiene los usuarios FTP creados en su alojamiento. Estos usuarios le permiten acceder a su espacio de almacenamiento para publicar los archivos de su sitio web. Al instalar el alojamiento, se crea un usuario automáticamente.
 

@@ -87,7 +87,7 @@ U kunt uw bestelling ook voltooien met een [webhostingplan](https://www.ovh.nl/s
 > - **Het invoeren van de DNS-servers voor uw domeinnaam**: Als u momenteel uw domeinnaam gebruikt om een website of e-maildienst online te houden, moet u hun DNS-servers opgeven om dienstonderbrekingen te voorkomen.  
 >
 
-Nadat u de bestelling hebt ontvangen, betaalt u het gevraagde bedrag voor het overdrachtsproces van de domeinnaam om te beginnen. Het overdrachtsproces begint zodra we uw betaling hebben ontvangen. Zodra u dit hebt gedaan, kunt u de voortgang van de overdracht volgen via het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Om de voortgang bij te houden, gaat u naar het gedeelte `Domeinen`{.action} via de menubalk aan de linkerkant en vervolgens `Lopende processen`{.action}.
+Nadat u de bestelling hebt ontvangen, betaalt u het gevraagde bedrag voor het overdrachtsproces van de domeinnaam om te beginnen. Het overdrachtsproces begint zodra we uw betaling hebben ontvangen. Zodra u dit hebt gedaan, kunt u de voortgang van de overdracht volgen via het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Om de voortgang bij te houden, gaat u naar het gedeelte `Domeinen`{.action} via de menubalk aan de linkerkant en vervolgens `Lopende processen`{.action}.
 
 ### Stap 4: Voltooi de eerste validatiestap van de overdracht.
 
@@ -111,7 +111,7 @@ Er zijn verschillende mogelijke resultaten in deze fase, afhankelijk van de acti
 |Het andere contact geeft geen antwoord.|De overdracht vordert binnen vijf dagen naar de tweede validatiefase.|
 |Een weigering wordt ontvangen (van beide contactpersonen).|Het overdrachtsproces wordt geannuleerd zodra een weigering door een van de contactpersonen is ontvangen.|
 
-Als een overdracht wordt geannuleerd, moet u ervoor zorgen dat de verschillende partijen hiermee instemmen en dat hun e-mailadressen up-to-date zijn. De overdracht kan later opnieuw worden gestart vanaf uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, in het gedeelte `Domeinen`{.action}, vervolgens `Lopende processen`{.action}.
+Als een overdracht wordt geannuleerd, moet u ervoor zorgen dat de verschillende partijen hiermee instemmen en dat hun e-mailadressen up-to-date zijn. De overdracht kan later opnieuw worden gestart vanaf uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, in het gedeelte `Domeinen`{.action}, vervolgens `Lopende processen`{.action}.
 
 ### Stap 5: De tweede validatiestap van de overdracht
 
@@ -123,11 +123,11 @@ Nadat de tweede stap is gestart, ontvangt de huidige domeinnaamregistrar (die no
 |Geen reactie ontvangen van de huidige registrar.|De overdracht is voltooid na een periode van vijf dagen.|
 |Een weigering wordt ontvangen van de huidige registrar.|Het overdrachtsproces wordt geannuleerd zodra een weigering door een van de contactpersonen is ontvangen.|
 
-Als de huidige registrar een weigering verzendt, neem dan contact met hen op om de redenen te achterhalen waarom ze de overdracht hebben geweigerd. De overdracht kan opnieuw worden gestart vanaf uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, in het gedeelte `Domeinen`{.action}, vervolgens `Lopende processen`{.action}.
+Als de huidige registrar een weigering verzendt, neem dan contact met hen op om de redenen te achterhalen waarom ze de overdracht hebben geweigerd. De overdracht kan opnieuw worden gestart vanaf uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, in het gedeelte `Domeinen`{.action}, vervolgens `Lopende processen`{.action}.
 
 ### Stap 6: Beheer uw domein bij OVH
 
-Zodra de overdrachtsprocedure is voltooid, kunt u uw domein beheren via het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Zodra de overdrachtsprocedure is voltooid, kunt u uw domein beheren via het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 Om dit te doen, blijft u in uw `OVH Control Panel`{.action}, klikt u op `Domeinen`{.action} in de dienstenbalk aan de linkerkant, en klikt u vervolgens op de betreffende domeinnaam.
 

@@ -18,7 +18,7 @@ Wenn Sie die maximale Speicherkapazität auf Ihrer zusätzlichen Festplatte erre
 
 - Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
 - Sie haben eine [zusätzliche Festplatte](https://www.ovhcloud.com/de/public-cloud/block-storage) mit Ihrer Instanz verbunden.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben administrativen Zugang (Root) zu Ihrer Instanz über SSH (nur Linux).
 - Sie haben Administratorzugriff auf Ihre Instanz über RDP (nur Windows).
 
@@ -26,7 +26,7 @@ Wenn Sie die maximale Speicherkapazität auf Ihrer zusätzlichen Festplatte erre
 
 ### Vorgehensweise im OVHcloud Kundencenter
 
-Um eine Public Cloud Instanz bereitzustellen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action}. Klicken Sie dann im folgenden Bereich auf die Pfeilschaltfläche neben Ihrem Standardprojektnamen in der oberen linken Ecke der Anzeige. Wählen Sie nun das Projekt aus, in dem Sie die Größe der zusätzlichen Festplatte bearbeiten möchten.
+Um eine Public Cloud Instanz bereitzustellen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action}. Klicken Sie dann im folgenden Bereich auf die Pfeilschaltfläche neben Ihrem Standardprojektnamen in der oberen linken Ecke der Anzeige. Wählen Sie nun das Projekt aus, in dem Sie die Größe der zusätzlichen Festplatte bearbeiten möchten.
 
 ![control panel](images/select_project.png){.thumbnail}
 

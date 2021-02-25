@@ -16,13 +16,13 @@ The CloudDB solution gives you access to a database instance offering dedicated,
 ## Requirements
 
 - a [CloudDB instance](https://www.ovh.co.uk/cloud/cloud-databases/){.external}
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions
 
 ### View general information about the instance
 
-In the services bar on the left-hand side of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Databases`{.action} section, then to the instance. Click on the `General information`{.action} tab.
+In the services bar on the left-hand side of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, go to the `Databases`{.action} section, then to the instance. Click on the `General information`{.action} tab.
 
 > [!primary]
 >
@@ -156,7 +156,7 @@ In the window that pops up, enter the IP address or mask that you wish to author
 
 To access the database from an OVHcloud Web Hosting, the outgoing IP address (gateway) of the hosting cluster has to be authorised.
 
-To find out the appropriate gateway IP address for your service, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
+To find out the appropriate gateway IP address for your service, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Next, navigate to the `FTP - SSH`{.action} tab.
 
 You can verify the cluster number of the Web Hosting on this page under **FTP server**:
 

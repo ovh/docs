@@ -9,9 +9,6 @@ La version anglaise de ce guide est disponible [ici](https://docs.ovh.com/gb/en/
 
 
 ## Quels sont les grands changements?
-- Quels sont les produits concernés ?
-
-A partir de Mai 2017 les produits concernés sont : [Hébergement mutualisé](https://www.ovh.com/fr/hebergement-web/){.external}, [Nom de domaine](https://www.ovh.com/fr/domaines/){.external}, [SQL Privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml/){.external}, [DNSAnycast](https://www.ovh.com/fr/domaines/dns-anycast/){.external}, [CDN](https://www.ovh.com/fr/cdn/){.external}, [Serveur Dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, [VPS](https://www.ovh.com/fr/vps/){.external}, [Exchange Hosted](https://www.ovh.com/fr/emails/hosted-exchange/){.external} et Exchange Provider.
 
 - La commande de ces produits sera-t-elle modifiée ?
 
@@ -94,6 +91,7 @@ Suivez la procédure de régularisation indiquée dans l’e-mail, ou connectez-
 
 Vous devez régulariser une facture impayée dans les 7 jours à compter de l’incident de paiement. Sachez qu’à défaut de paiement au terme de ces 7 jours, nous suspendrons votre service et lancerons une procédure de recouvrement à votre encontre. Par ailleurs, nous nous réservons la possibilité de suspendre l’ensemble de vos services si vous n’avez pas régularisé votre situation.
 
-- Votre question ne figure pas dans la FAQ ?
 
-Contactez-nous par [mail](https://www.ovh.com/fr/support/nous-contacter/){.external}.
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

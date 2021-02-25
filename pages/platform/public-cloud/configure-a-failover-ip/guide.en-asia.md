@@ -22,7 +22,7 @@ However, failover IPs will not be automatically configured on your instance.
 
 ## Requirements
 
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
 * a [Public Cloud Instance](https://www.ovh.com/asia/public-cloud/instances/){.external} in your OVHcloud account
 * a [failover IP address](https://www.ovh.com/asia/dedicated-servers/ip_failover.xml){.external} in your OVHcloud account
 * administrative (root) access to your instance with SSH (Linux only)

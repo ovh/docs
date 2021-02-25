@@ -21,7 +21,6 @@ For Linux distributions. You must use a repartitioning utility. There are severa
 - [GParted LiveCD](http://gparted.sourceforge.net/livecd.php)
 - [Partition Logic](http://partitionlogic.org.uk)
 - [Paragon Partition Manager](http://www.partition-manager.com)
-- [Ranish Partition Manager](http://www.ranish.com/part)
 - [System Rescue CD](http://www.sysresccd.org/Main_Page)
 
 

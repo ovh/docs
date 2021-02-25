@@ -71,6 +71,5 @@ Follow the procedure to clear your account as indicated in the email you receive
 ### How much time do I have to resolve a payment incident?
 You must pay for any outstanding invoice within 7 days of the date when the payment incident occurred. Please know that if you fail to pay within 7 days, we will suspend your service and we will launch a recovery process against you. Moreover, we reserve the right to suspend all of your services if you haven’t corrected the situation.  
 
-## Your question doesn’t appear in the FAQ?
-Contact us by email ({ovh_www}/support/contact-us/ ).  
 
+Join our community of users on <https://community.ovh.com/en/>.

@@ -8,7 +8,7 @@ legacy_guide_number: g2277
 
 
 ## Diagnostikos atlikimas
-Prisijunkite prie savo kliento valdymo sąsajos paspaudę [čia](https://www.ovh.com/manager/web/login/).
+Prisijunkite prie savo kliento valdymo sąsajos paspaudę [čia](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 Po prisijungimo kairiajame stulpelyje pasirinkite Microsoft meniu ir savo Exchange paslaugą.
 

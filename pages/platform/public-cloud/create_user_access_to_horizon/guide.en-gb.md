@@ -25,11 +25,11 @@ Horizon is the graphical management interface for OpenStack. Certain features ca
 
 ### Create an OpenStack user account
 
-First of all, to access the Horizon interface, you need to create an OpenStack user account. To do this, log in to your Control Panel and go to the `Public Cloud`{.action} section in the top-left corner of the page. Then, on the following screen, click the `arrow button`{.action} next to your project name in the top-left corner of the screen.
+First of all, to access the Horizon interface, you need to create an OpenStack user account. To do this, log in to your Control Panel and go to the `Public Cloud`{.action} section in the top-left corner of the page. Then, on the following screen, click the arrow button next to your project name in the top-left corner of the screen.
 
 ![Add user](images/select_project.png){.thumbnail}
 
-Under "Project management" on the left-hand sidebar, select `Users & Roles user`{.action}.
+Under "Project management" on the left-hand sidebar, select `Users & Roles`{.action}.
 
 ![User roles](images/users_roles.png){.thumbnail}
 
@@ -45,7 +45,7 @@ Click the `Confirm`{.action} button when you are finished and you will see the f
 
 ![User_pw](images/user_pw.png){.thumbnail}
 
-Be sure to save your password now as this is the only time you will be able to recover it. However, if you lose it you can always create a new one by clicking the ellipses (...) on the following menu and selecting `Generate a password:`{.action}
+Be sure to save your password now as this is the only time you will be able to retrieve it. However, if you lose it you can always create a new one by clicking `...`{.action} next to the user and selecting `Generate a password`{.action}.
 
 ![Generate](images/generatepw.png){.thumbnail}
 
@@ -53,7 +53,7 @@ Once your user has been created, you can use these credentials to log into the H
 
 ### Log in to OpenStack Horizon
 
-To open the menu, click on the three-dot icon at the end of the line (`...`{.action}). Next, click the `Open OpenStack Horizon`{.action} link. The [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} login page will then appear. To log in, enter your `User Name` and your password.
+To open the menu, click on `...`{.action} at the end of the line. Next, click the `Open OpenStack Horizon`{.action} link. The [Horizon](https://horizon.cloud.ovh.net/auth/login/){.external} login page will then appear. To log in, enter your `User Name` and your password.
 
 ![Project menu](images/3_H_open_menu.png){.thumbnail}
 

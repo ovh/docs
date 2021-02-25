@@ -17,9 +17,9 @@ If you have reached the maximum storage capacity on your additional disk, you ca
 
 ## Requirements
 
-* a [Public Cloud Instance]({ovh_www}/public-cloud/instances/){.external} in your your OVHcloud account
-* an [additional disk]({ovh_www}/public-cloud/storage/additional-disks/){.external} attached to your instance
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* a [Public Cloud Instance](https://www.ovhcloud.com/en-sg/public-cloud/){.external} in your your OVHcloud account
+* an [additional disk](https://www.ovhcloud.com/en-sg/public-cloud/block-storage/){.external} attached to your instance
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}
 * administrative (root) access to your instance via SSH (for Linux only)
 * administrative access to your instance via RDP (for Windows only)
 
@@ -27,7 +27,7 @@ If you have reached the maximum storage capacity on your additional disk, you ca
 
 ### Using the OVHcloud Control Panel.
 
-In order to deploy a public cloud instance, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Click `Public Cloud`{.action} in the top-left corner of the page. Then, on the following screen, click the arrow button next to your default project name in the top-left corner of the screen. Now select the project on which you would like to edit the size of the additional disk.
+In order to deploy a public cloud instance, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}. Click `Public Cloud`{.action} in the top-left corner of the page. Then, on the following screen, click the arrow button next to your default project name in the top-left corner of the screen. Now select the project on which you would like to edit the size of the additional disk.
 
 ![control panel](images/select_project.png){.thumbnail}
 

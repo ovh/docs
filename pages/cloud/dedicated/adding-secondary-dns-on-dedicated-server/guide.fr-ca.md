@@ -17,8 +17,8 @@ Si vous souhaitez utiliser votre [serveur dédié](https://www.ovh.com/ca/fr/ser
 ## Prérequis
 
 * Disposer d'un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}.
-* Disposer d'un [nom de domaine](https://www.ovh.com/ca/fr/domaines/){.external} et pouvoir le gérer dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
-* Être connecté à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+* Disposer d'un [nom de domaine](https://www.ovh.com/ca/fr/domaines/){.external} et pouvoir le gérer dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
+* Être connecté à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
 
@@ -43,7 +43,7 @@ Un message vous confirmant l'enregistrement de type TXT pour votre domaine appar
 
 ### Procéder à la vérification du nom de domaine
 
-Une fois connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le menu `Web Cloud`{.action}, puis dans la section `Domaines`{.action} dans la colonne de gauche afin de faire apparaître tous les domaines que vous gérez :
+Une fois connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur le menu `Web Cloud`{.action}, puis dans la section `Domaines`{.action} dans la colonne de gauche afin de faire apparaître tous les domaines que vous gérez :
 
 ![Vérification de domaine](images/domain-verification-01.png){.thumbnail}
 

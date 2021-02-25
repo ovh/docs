@@ -67,7 +67,7 @@ Ei ole olemassa kaikista parasta RAIDia, vaan kaikki vastaavat erilaisiin tarpei
 
 ### 2\. vaihe: Asenna ja konfiguroi palvelin
 
-Mene [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external} ja asenna palvelin. Kuten alussa kerrottiin käytämme tässä Debian 9.4 -versiota. Lisätietoa voit katsoa ohjeesta [Dedikoidun palvelimen käytön aloitus](https://docs.ovh.com/fi/dedicated/dedikoidun-palvelimen-kayton-aloitus/#dedikoidun-palvelimen-asennus-tai-uudelleenasennus_1){.external}.
+Mene [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} ja asenna palvelin. Kuten alussa kerrottiin käytämme tässä Debian 9.4 -versiota. Lisätietoa voit katsoa ohjeesta [Dedikoidun palvelimen käytön aloitus](https://docs.ovh.com/fi/dedicated/dedikoidun-palvelimen-kayton-aloitus/#dedikoidun-palvelimen-asennus-tai-uudelleenasennus_1){.external}.
 
 Kun olet valinnut asennettavan järjestelmän, rastita ruutu `Osioiden konfiguraation kustomointi`{.action}.
 

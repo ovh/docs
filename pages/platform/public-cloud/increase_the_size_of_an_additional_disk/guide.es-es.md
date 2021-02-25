@@ -16,9 +16,9 @@ Si ha alcanzado la capacidad máxima de almacenamiento de su disco adicional, es
 
 ## Requisitos
 
-* Tener una [instancia Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} en su cuenta de OVHcloud
-* Tener un [disco adicional](https://www.ovhcloud.com/es/public-cloud/block-storage/){.external} asociado a su instancia
-* Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Tener una [instancia Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/){.external} en su cuenta de OVHcloud
+* Tener un [disco adicional](https://www.ovhcloud.com/es-es/public-cloud/block-storage/){.external} asociado a su instancia
+* Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}
 * Tener acceso de administrador (root) a su instancia a través de SSH (solo para Linux)
 * Tener acceso de administrador a su instancia a través de RDP (solo para Windows)
 
@@ -26,7 +26,7 @@ Si ha alcanzado la capacidad máxima de almacenamiento de su disco adicional, es
 
 ### Desde el área de cliente
 
-Para desplegar una instancia public cloud, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Haga clic en `Public Cloud`{.action} en la esquina superior izquierda. En la pantalla siguiente, haga clic en la flecha junto al nombre por defecto del proyecto en la esquina superior izquierda de la pantalla. Seleccione a continuación el proyecto en el que desea ampliar el tamaño del disco adicional.
+Para desplegar una instancia public cloud, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Haga clic en `Public Cloud`{.action} en la esquina superior izquierda. En la pantalla siguiente, haga clic en la flecha junto al nombre por defecto del proyecto en la esquina superior izquierda de la pantalla. Seleccione a continuación el proyecto en el que desea ampliar el tamaño del disco adicional.
 
 ![control panel](images/select_project.png){.thumbnail}
 

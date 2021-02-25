@@ -16,9 +16,9 @@ If you have reached the maximum storage capacity on your additional disk, you ca
 
 ## Requirements
 
-* a [Public Cloud Instance](https://www.ovh.ie/public-cloud/instances/){.external} in your your OVH account
-* an [additional disk](https://www.ovh.ie/public-cloud/storage/additional-disks/){.external} attached to your instance
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* a [Public Cloud Instance](https://www.ovhcloud.com/en-ie/public-cloud/){.external} in your your OVH account
+* an [additional disk](https://www.ovhcloud.com/en-ie/public-cloud/block-storage/){.external} attached to your instance
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 * administrative (root) access to your instance via SSH (for Linux only)
 * administrative access to your instance via RDP (for Windows only)
 
@@ -26,7 +26,7 @@ If you have reached the maximum storage capacity on your additional disk, you ca
 
 ### Using the OVH Control Panel
 
-Firstly, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu. Then click the `Servers`{.action} side-menu to expand your list of projects.
+Firstly, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} and click the `Cloud`{.action} menu. Then click the `Servers`{.action} side-menu to expand your list of projects.
 
 When you’ve found your project in the list, click it and then select the `Infrastructure`{.action} tab.
 

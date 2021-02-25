@@ -4,6 +4,7 @@ excerpt: 'Hosting condiviso: FAQ - Come aggiornare la tua versione di PHP'
 id: '1758'
 slug: hosting_condiviso_faq_-_come_aggiornare_la_tua_versione_di_php
 legacy_guide_number: g1758
+hidden: true
 ---
 
 
@@ -80,46 +81,4 @@ Salva questo file con il nome ".ovhconfig" e caricalo nella root del tuo disco.
 
 
 Per maggiori informazioni, consulta questa [guida](https://www.ovh.it/g1207.configurare-php-hosting-web)
-
-
-## Casi di utilizzo
-Come fai a sapere quale versione PHP è presente sul tuo sito?
-Utilizza questo comando: 
-
-
-```
-<?php
-phpinfo();
-?>
-```
-
-
-
-Se vuoi creare il file da solo: apri un file di testo che contiene <?php phpinfo(); ?>, poi salvalo in formato .php e rinominalo "info.php".
-
-Pubblica il file via FTP nella root del tuo sito (o dei tuoi siti se ne possiedi più di uno per i tuoi sottodomini). Ad esempio /www/miowordpress/
-Apri il browser e vai su info.php. Ad esempio www.tuo-sito.com/miowordpress/info.php
-
-![](images/img_2601.jpg){.thumbnail}
-A marzo/aprile 2015 OVH ti ha inviato un'email con l'elenco delle versioni PHP utilizzate.
-Puoi attivare diverse versioni PHP se hai dei sottodomini o un'opzione multidominio?
-
-Sì, OVH ti permette di utilizzare una versione PHP per ciascuno dei tuoi sottodomini (un multidominio è considerato come un sottodominio).
-Per farlo, crea un file .ovhconfig nella root di uno specifico sottodominio. Questo file viene caricato in questo modo:
-
-
-- Il file viene aperto a partire dalla root del dominio. Ad esempio, se «www.esempio.com» richiama la cartella «/www» e «beta.esempio.com» richiama la cartella «/beta», per la richiesta http://www.esempio.com/index.php viene utilizzato il file «/www/.ovhconfig», e per la richiesta http://beta.esempio.com/index.php viene utilizzato il file «/beta/.ovhconfig».
-- Se non viene trovato il file .ovhconfig relativo al sottodominio, viene caricato il file «/.ovhconfig»
-- Se nessuno di questi file esiste, viene utilizzata la configurazione di default del tuo account (PHP 5.6 con FPM)
-
-
-Hai configurato un file .htaccess per forzare una versione di PHP: che cosa succederà?
-Di default, i tuoi siti passeranno alla versione PHP 5.6. Se vuoi impostare una versione più recente (ad esempio la 7.0), configura il file .ovhconfig che si trova sul tuo FTP.
-Tutte le altre direttive (URL rewriting, reindirizzamento, ecc...) resteranno attive.
-Puoi utilizzare la versione 7 di PHP?
-La versione 7 di PHP è disponibile sugli hosting Web.
-Hai problemi durante il trasferimento: cosa devi fare?
-Occupati del trasferimento del tuo sito e, se ne hai bisogno, richiedi l'aiuto del nostro supporto per aggiornare la versione di PHP (tramite il file .ovhconfig). 
-
-Hai bisogno di aiuto? Rivolgiti agli [OVH Partners](http://www.ovh.biz/)!
 

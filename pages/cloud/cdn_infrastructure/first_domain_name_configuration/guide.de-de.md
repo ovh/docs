@@ -19,7 +19,7 @@ Bei der ersten Konfiguration des Content Delivery Network (CDN) müssen zunächs
 
 - Sie nutzen das [OVH Content Delivery Network (CDN)](https://www.ovh.de/cdn/){.external}.
 - Sie haben Zugriff auf die Verwaltung der DNS-Zone Ihrer Domain.
-- Sie haben Zugriff auf Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Sie haben Zugriff auf Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}.
 
 
 ## Beschreibung
@@ -28,7 +28,7 @@ Bei der ersten Konfiguration des Content Delivery Network (CDN) müssen zunächs
 
 Fügen Sie dem CDN zunächst eine Subdomain Ihrer Wahl hinzu, damit es HTTP(S)-Anfragen für diese Domain akzeptiert.
 
-Gehen Sie dazu im [OVH Kundencenter ](https://www.ovh.com/auth/?action=gotomanager){.external} in den Bereich `Dedicated`{.action} und dann auf `NAS und CDN`{.action}.
+Gehen Sie dazu im [OVH Kundencenter ](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} in den Bereich `Dedicated`{.action} und dann auf `NAS und CDN`{.action}.
 
 Klicken Sie auf `Eine Domain zum CDN hinzufügen`{.action}:
 
@@ -106,7 +106,7 @@ Zudem wird die Datei- und Rechnungsverwaltung vereinfacht, wenn Sie den Dateien,
 
 Wenn Sie eine neue Subdomain für die Nutzung unseres CDN einrichten möchten, müssen wahrscheinlich einige Parameter auf Ihrer Website und in Ihrem Webservice angepasst werden.
 
-Vergewissern Sie sich zunächst, dass Ihr Webservice korrekt auf die Subdomain reagiert. Richten Sie dazu für diese Domain einen [*vhost*](https://de.wikipedia.org/wiki/Virtual_Hosting){.external} ein − entweder mit einem eigenen Zielordner oder als Alias einer anderen Domain.
+Vergewissern Sie sich zunächst, dass Ihr Webservice korrekt auf die Subdomain reagiert. Richten Sie dazu für diese Domain einen *vhost* ein − entweder mit einem eigenen Zielordner oder als Alias einer anderen Domain.
 
 Wenn die Domain korrekt in Ihrem Webservice reagiert, müssen Sie nur den HTML-Code bearbeiten, um die Quellen der Dateien zu ändern, die über das CDN geleitet werden sollen. Stellen Sie sicher, dass diese korrekt über Ihre Subdomain aufgerufen werden.
 

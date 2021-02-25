@@ -10,13 +10,13 @@ section: Erste Schritte
 
 ## Ziel
 
-Sie können die OVHcloud [Public Cloud](https://www.ovh.co.uk/public-cloud/instances) nutzen, um Instanzen (d.h. virtuelle Server) schnell und einfach mit nur wenigen Klicks zu erstellen.
+Sie können die OVHcloud [Public Cloud](https://www.ovhcloud.com/de/public-cloud/) nutzen, um Instanzen (d.h. virtuelle Server) schnell und einfach mit nur wenigen Klicks zu erstellen.
 
 **In dieser Anleitung erfahren Sie, wie Sie eine Instanz in der Public Cloud Oberfläche des OVHcloud Kundencenters erzeugen und konfigurieren.**
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben bereits ein [Public Cloud-Projekt](https://www.ovhcloud.com/de/public-cloud) in Ihrem Kunden-Account angelegt.
 - Sie haben im OVHcloud Kundencenter einen SSH-Schlüssel hinzugefügt.
 

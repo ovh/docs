@@ -4,6 +4,7 @@ title: 'Webhosting: FAQ Migratie naar de meest recente PHP versies'
 excerpt: FAQ voor migratie naar de meest recente PHP versies
 slug: webhosting_faq_migratie_naar_de_meest_recente_php_versies
 legacy_guide_number: g1758
+hidden: true
 ---
 
 
@@ -73,37 +74,4 @@ Bewaar dit bestand als ".ovhconfig", en upload het naar de root van de webserver
 
 - Als u al een .ovhconfig bestand hebt, controleer dan de content ervan met behulp van een text editor, bijv. Bloc-Notes.
 
-
-Voor meer informatie over het configureren van dit bestand, raden wij u aan deze handleiding[/url]: [url="http://www.ovh.co.uk/g1207.configure-php-web-hosting"] te raadplegen.
-
-
-## Gebruiksvoorbeeld
-Hoe weet ik welke PHP versie mijn website gebruikt?
-Download dit bestand: [info.php](https://www.ovh.com/fr/documents/info.php) (rechter muisklik en dan 'Save As').
-Als u zelf het bestand wilt aanmaken, is het afdoende om een tekstbestand aan te maken en hier in te zetten: <?php phpinfo(); ?>
-Registreer het vervolgens in .php format en geef het de volgende naam: 'info.php'.
-
-Publiceer het bestand via FTP naar de root van uw website of websites (indien u er verschillende heeft die zijn gekoppeld aan subdomeinen). Bijvoorbeeld: /www/mywordpress/
-Ga met uw webbrowser naar info.php. Bijvoorbeeld: www.your-site.com/mywordpress/info.php
-
-![](images/img_2601.jpg){.thumbnail}
-OVH heeft ook afgelopen maart-april 2015 preventief een e-mail verzonden aan de betreffende gebruikers, met een opsomming van de gebruikte PHP-versies.
-Ik beschik over subdomeinen of een multi-domein aanbod, kan ik verschillende PHP versies activeren?
-Ja, OVH autoriseert een verschillende PHP versie voor elk van uw subdomeinen (een multi-domein wordt gezien als een subdomein).
-Hiervoer dient u een .ovhconfig bestand aan te maken op de root van een bepaald subdomein. Het .ovhconfig bestand wordt als volgt geüpload: 
-
-
-- Het bestand is geopend vanaf de root van het domein van de applicatie. Bijvoorbeeld «www.exemple.com» verwijst naar het bestand «/www» en «beta.example.com» verwijst naar het bestand «/beta», het bestand «/www/.ovhconfig» 
-
-wordt meegenomen in de query http://www.exemple.com/index.php, terwijl het bestand «/beta/.ovhconfig» verantwoordelijk zal zijn voor een query naar http://beta.exemple.com/index.php.
-
-- Als het bestand .ovhconfig niet specifiek op het subdomein van fase 1 wordt gevonden, wordt vervolgens het bestand «/.ovhconfig» geladen
-- Als geen van de bovenstaande bestanden bestaan, wordt de standaard configuratie van uw account toegepast (PHP 5.4 met FPM)
-
-
-Ik heb een .htaccess bestand geconfigureerd om een PHP versie te forceren. Wat zal hiermee gebeuren?
-Vanaf 24/09/2015, zal het gebruik van .htaccess niet langer support ontvangen op de server voor de SetEnv PHP_VER 5 directive. Uw website zal automatisch migreren naar PHP 5.4. Als u een latere versie wilt forceren, zoals 5.6, moet u .ovhconfig (een bestand op uw FTP) configureren.
-Andere directives op het .htaccess bestand, bijv. URL rewriting, redirection, etc., zullen actief blijven.
-Ik heb problemen met het migreren. Wat kan ik doen?
-Ons support team kan uw website niet migreren voor u, maar het team kan u wel helpen bij het updaten van uw PHP versie (met behulp van het .ovhconfig file). Dit team is niet aansprakelijk voor eventuele problemen die zich kunnen voordoen.
 

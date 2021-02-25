@@ -126,7 +126,7 @@ You can read about API calls in more detail in the [Edit routes](#edit-routes){.
 
 HTTPS protocol has become the norm. Its purpose is to make all websites available securely in HTTPS, with the SSL/TLS protocol. If you need an SSL/TLS certificate, you can use the OVH Load Balancer service to order a new one, which will be automatically managed for you.
 
-Migrating a website to HTTPS involves a lot of work, especially to avoid [mixed content](https://developer.mozilla.org/en-US/docs/Web/Security/Mixed_content/How_to_fix_website_with_mixed_content){.external}. It may be worth migrating your website section by section, and starting by securing pages that send login credentials.
+Migrating a website to HTTPS involves a lot of work, especially to avoid [mixed content](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content){.external}. It may be worth migrating your website section by section, and starting by securing pages that send login credentials.
 
 One approach could be to base it on the beginning of WordPress URLs. By default, the URL the login pages for WordPress start with "/wp-login". So we would need:
 
@@ -143,7 +143,7 @@ In practice, this gives a route like this:
 |weight|(empty)|
 |action.type|"redirect"|
 |action.status|302 for a temporary redirection, 301 for a permanent redirection|
-|action.target|"[https:/](https:/){.external}/${host}${path}${arguments}" to take the same host, path and arguments|
+|action.target|"`https://${host}${path}${arguments}`" to take the same host, path and arguments|
 
 On this route, we will attach a rule:
 
@@ -711,7 +711,7 @@ The target URL may contain simple variables. This helps users redirect to anothe
 
 For example, for:
 
-- redirect to https: https://${host}${path}${arguments}
+- redirect to https: `https://${host}${path}${arguments}`
 - redirect to a new domain: ${protocol}://new.example.com${path}${arguments}
 - prefix the URL: ${protocol}://${host}/staging${path}${arguments}
 

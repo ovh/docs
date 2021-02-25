@@ -17,7 +17,7 @@ Een Domain Name System (DNS) -zone is het configuratiebestand van een domeinnaam
 
 ## Vereisten
 
-- U moet gemachtigd zijn om de betreffende domeinnaam te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet gemachtigd zijn om de betreffende domeinnaam te beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 - De opgegeven domeinnaam maakt geen gebruik van de OVH-configuratie (op de DNS-servers).
 - Het DynHost-record dat u gaat maken, kan niet al bestaan als een A-record in de OVH DNS-zone van uw domeinnaam.
 
@@ -25,14 +25,14 @@ Een Domain Name System (DNS) -zone is het configuratiebestand van een domeinnaam
 >
 > - Als uw domeinnaam geen OVH DNS-servers gebruikt, moet u contact opnemen met de serviceprovider die de configuratie beheert om erachter te komen welke aanpak u moet volgen.
 > 
-> - Als uw domeinnaam is geregistreerd bij OVH, kunt u controleren of de domeinnaam onze configuratie gebruikt. Ga hiervoor naar uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, selecteer het betreffende domein en ga naar het tabblad `DNS-servers`{.action}.
+> - Als uw domeinnaam is geregistreerd bij OVH, kunt u controleren of de domeinnaam onze configuratie gebruikt. Ga hiervoor naar uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, selecteer het betreffende domein en ga naar het tabblad `DNS-servers`{.action}.
 >
 
 ## Instructies
 
 ### Stap 1: Creëer een DynHost-gebruikersnaam.
 
-De eerste stap bestaat uit het aanmaken van een DynHost-gebruikersnaam. Hiermee kunt u vervolgens het dynamische DNS-record dat u wilt maken bijwerken. Log hiervoor eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klik op `Domeinen`{.action} in de dienstenbalk aan de linkerkant, en kies de betreffende domeinnaam. Ga naar het `DynHost`{.action}-tabblad.
+De eerste stap bestaat uit het aanmaken van een DynHost-gebruikersnaam. Hiermee kunt u vervolgens het dynamische DNS-record dat u wilt maken bijwerken. Log hiervoor eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, klik op `Domeinen`{.action} in de dienstenbalk aan de linkerkant, en kies de betreffende domeinnaam. Ga naar het `DynHost`{.action}-tabblad.
 
 ![dynhost](images/use-dynhost-step1.png){.thumbnail}
 

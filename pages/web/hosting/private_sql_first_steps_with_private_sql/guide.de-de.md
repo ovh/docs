@@ -18,13 +18,13 @@ Dank SQL Private können Sie eine SQL-Instanz mit einem OVH Webhosting verbinden
 
 - Sie verfügen über eine SQL Private Instanz (im [Webhosting Angebot](https://www.ovh.de/hosting/){.external} enthalten oder als [SQL-Option](https://www.ovh.de/hosting/sql-optionen.xml){.external} zusätzlich bestellt).
 - Ihr [Webhosting](https://www.ovh.de/hosting/){.external} befindet sich im gleichen Rechenzentrum wie Ihre SQL Private Instanz (diese Information finden Sie in Ihrem OVH Kundencenter).
-- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 ## Beschreibung
 
 ### Aktivierung des in Ihrem Webhosting-Angebot enthaltenen Private SQL Servers
 
-Wenn Ihr Hosting-Angebot die Option "Private SQL" beinhaltet, können Sie diese in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} aktivieren. Klicken Sie im Bereich `WebCloud`{.action} links auf `Hosting-Pakete.`{.action}
+Wenn Ihr Hosting-Angebot die Option "Private SQL" beinhaltet, können Sie diese in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} aktivieren. Klicken Sie im Bereich `WebCloud`{.action} links auf `Hosting-Pakete.`{.action}
 
 Klicken Sie im Tab `Allgemeine Informationen`im Rahmen `Konfiguration` auf `...`{.action} rechts von **Private Datenbank**. Klicken Sie dann auf `Aktivieren`{.action}, um den Aktivierungsvorgang zu starten.
 
@@ -34,7 +34,7 @@ Folgen Sie den Anweisungen, um Typ und Version Ihres Private SQL Servers zu best
 
 ### Die allgemeinen Informationen der Instanz einsehen
 
-Gehen Sie In Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im linken Menü in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende SQL-Instanz. Achten Sie darauf, dass Sie sich in dem Tab `Allgemeine Informationen`{.action} befinden.
+Gehen Sie In Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im linken Menü in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende SQL-Instanz. Achten Sie darauf, dass Sie sich in dem Tab `Allgemeine Informationen`{.action} befinden.
 
 > [!primary]
 >

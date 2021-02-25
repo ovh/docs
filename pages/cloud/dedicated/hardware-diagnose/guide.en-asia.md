@@ -24,7 +24,7 @@ At some point during the life of your server, you may encounter a fault due to a
 
 ### Activate rescue mode
 
-You can activate rescue mode by logging into your [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and going to your server's page. Then go to `General information`{.action} > `Boot`{.action} and click the `···`{.action} button and click `Modify`{.action} button  to change the boot mode.
+You can activate rescue mode by logging into your [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, and going to your server's page. Then go to `General information`{.action} > `Boot`{.action} and click the `···`{.action} button and click `Modify`{.action} button  to change the boot mode.
 
 ![General Information](images/rescue-mode-01_2020.png){.thumbnail}
 

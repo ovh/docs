@@ -16,15 +16,15 @@ O campo MX permite associar um domínio a um servidor de e-mail para que os serv
 
 ## Requisitos
 
-- Ter acesso à secção de gestão do domínio na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Ter acesso à [Área de cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à secção de gestão do domínio na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter acesso à [Área de cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - O domínio do e-mail tem de usar a configuração da OVH (os servidores DNS da OVH).
 
 > [!warning]
 >
 > - Se o domínio não usar os servidores DNS da OVH, os campos MX deverão ser alterados a partir da interface do agente responsável pela configuração do seu domínio.
 >
-> - Se o seu domínio for gerido pela OVH, verifique se este está a usar a configuração OVH. Para tal, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, selecione o domínio e clique em `Servidores DNS`{.action}.
+> - Se o seu domínio for gerido pela OVH, verifique se este está a usar a configuração OVH. Para tal, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, selecione o domínio e clique em `Servidores DNS`{.action}.
 >
 
 ## Instruções
@@ -47,12 +47,13 @@ Consulte abaixo a configuração MX da OVH que deve utilizar nas soluções MX P
 |*deixar em branco*|3600|MX|5|mx1.mail.ovh.net.|
 |*deixar em branco*|3600|MX|50|mx2.mail.ovh.net.|
 |*deixar em branco*|3600|MX|100|mx3.mail.ovh.net.|
+|*deixar em branco*|3600|MX|200|mx4.mail.ovh.net.|
 
 Deve utilizar estes diferentes campos MX na configuração DNS do seu domínio. O passo seguinte permite-lhe efetuar esta operação na configuração DNS da OVH do domínio.
 
 ### 3 - Alterar a configuração de um campo MX da OVH
 
-Para alterar os campos MX na configuração da OVH do seu domínio, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. No menu à esquerda, selecione `Domínios`{.action}, clique no domínio pretendido e aceda ao separador `Zona DNS`{.action}.
+Para alterar os campos MX na configuração da OVH do seu domínio, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. No menu à esquerda, selecione `Domínios`{.action}, clique no domínio pretendido e aceda ao separador `Zona DNS`{.action}.
 
 Na tabela pode ver a configuração OVH do seu domínio. Cada linha corresponde a um registo DNS. Recomendamos que comece por verificar se já existem registos MX na configuração DNS da OVH do seu domínio através dos filtros.
 

@@ -122,7 +122,7 @@ Hier zijn de gegevens die gebruikt moeten worden om een POP e-mailaccount te con
 POP-configuratie met geactiveerde of gedeactiveerde SSL-beveiliging:
 
 E-mailadres: uw volledige OVH e-mailadres.
-Wachtwoord: het wachtwoord dat u moet instellen in [de Manager](https://www.ovh.com/auth/?action=gotomanager).
+Wachtwoord: het wachtwoord dat u moet instellen in [de Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl).
 Gebruikersnaam: uw volledige e-mailadres.
 Inkomende server: de server voor het ontvangen van e-mails: SSL0.OVH.NET
 Inkomende server port: de port van de inkomende server: 995 of 110
@@ -149,7 +149,7 @@ Hier zijn de gegevens die gebruikt moeten worden om een IMAP e-mailaccount te co
 IMAP-configuratie met SSL-beveiliging geactiveerd of gedeactiveerd:
 
 E-mailadres: uw volledige e-mailadres.
-Wachtwoord: het wachtwoord dat u moet instellen in [de Manager](https://www.ovh.com/auth/?action=gotomanager).
+Wachtwoord: het wachtwoord dat u moet instellen in [de Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl).
 Gebruikersnaam: uw volledige e-mailadres.
 Inkomende server: de server voor het ontvangen van e-mails: SSL0.OVH.NET
 Inkomende server port: de port van de inkomende server: 993 of 143

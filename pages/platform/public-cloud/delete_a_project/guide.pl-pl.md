@@ -10,7 +10,7 @@ section: 'Zarządzanie projektami'
 
 ## Wprowadzenie
 
-Jeśli projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} nie jest już potrzebny, można go usunąć bezpośrednio w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Jeśli projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} nie jest już potrzebny, można go usunąć bezpośrednio w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 Po usunięciu projektu Public Cloud zostanie utworzona końcowa faktura za pozostałą należność.
 
@@ -24,11 +24,11 @@ Usunięcie projektu nie jest tym samym co dezaktywacja instancji Public Cloud. P
 ## Wymagania początkowe
 
 * projekt [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} na koncie OVHcloud
-* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 ## W praktyce
 
-Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} i kliknij menu `Public Cloud`{.action}.
+Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij menu `Public Cloud`{.action}.
 
 Następnie kliknij pozycję `Ustawienia projektu`{.action} w sekcji Zarządzanie projektami.
 

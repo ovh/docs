@@ -95,7 +95,7 @@ admin@instance:~$ sudo service httpd restart
 
 
 ## WordPress atsisiuntimas
-[Wordpress](https://lt.wordpress.org/txt-download/) svetainėje atsisiųskite naujausią versiją, pvz.:
+[Wordpress](https://wordpress.org/download/) svetainėje atsisiųskite naujausią versiją, pvz.:
 
 
 ```

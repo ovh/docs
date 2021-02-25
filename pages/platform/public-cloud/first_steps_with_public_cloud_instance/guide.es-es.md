@@ -9,7 +9,7 @@ section: 'Primeros pasos'
 
 ## Objetivo
 
-Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} para gestionar fácilmente su Public Cloud mediante el panel de control. Ahí, encontrará todos sus proyectos de infraestructura (instancias, copias de seguridad, discos, claves SSH, etc.) y almacenamiento (incluyendo la lista de sus contenedores).
+Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} para gestionar fácilmente su Public Cloud mediante el panel de control. Ahí, encontrará todos sus proyectos de infraestructura (instancias, copias de seguridad, discos, claves SSH, etc.) y almacenamiento (incluyendo la lista de sus contenedores).
 
 **Descubra cómo dar los primeros pasos con una instancia de Public Cloud.**
 
@@ -22,7 +22,7 @@ Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?ac
 
 ### Acceda a la interfaz de administración de la instancia.
 
-Primero, inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, acceda a la sección «Public Cloud» y seleccione el servicio Public Cloud de su interés. A continuación, haga clic en la pestaña `«Instancias»`{.action} a la izquierda.
+Primero, inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, acceda a la sección «Public Cloud» y seleccione el servicio Public Cloud de su interés. A continuación, haga clic en la pestaña `«Instancias»`{.action} a la izquierda.
 
 En esa página, verá un resumen de todas sus instancias. En ella se presentan varios datos:
 

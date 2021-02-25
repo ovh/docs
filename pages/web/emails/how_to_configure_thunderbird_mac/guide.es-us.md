@@ -90,7 +90,7 @@ Configuración POP con seguridad SSL activada o desactivada:
 
 Dirección de correo: Su dirección completa de correo.
 
-Contraseña: La contraseña que haya definido en su [área de cliente](https://ca.ovh.com/auth/?action=gotomanager).
+Contraseña: La contraseña que haya definido en su [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 Nombre de usuario: Su dirección completa de correo.
 
@@ -123,7 +123,7 @@ Configuración IMAP con seguridad SSL activada o desactivada:
 
 Dirección de correo: Su dirección completa de correo.
 
-Contraseña: La contraseña que haya definido en su [área de cliente](https://ca.ovh.com/auth/?action=gotomanager).
+Contraseña: La contraseña que haya definido en su [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 Nombre de usuario: Su dirección completa de correo.
 

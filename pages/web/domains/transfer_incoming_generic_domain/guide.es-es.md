@@ -88,7 +88,7 @@ Si lo desea, puede completar el pedido con un [plan de hosting](https://www.ovh.
 > - **Los servidores DNS del dominio**: Si el dominio es utilizado por un sitio web o el correo, introduzca los servidores DNS que estén configurados actualmente para evitar una interrupción del servicio.
 >
 
-Una vez generada la orden de pedido, deberá abonarla para que comience la transferencia. El procedimiento de transferencia se iniciará cuando recibamos el pago. Puede consultar el progreso desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleccionando `Dominios`{.action} en la columna izquierda y haciendo clic en `Operaciones en curso`{.action}.
+Una vez generada la orden de pedido, deberá abonarla para que comience la transferencia. El procedimiento de transferencia se iniciará cuando recibamos el pago. Puede consultar el progreso desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, seleccionando `Dominios`{.action} en la columna izquierda y haciendo clic en `Operaciones en curso`{.action}.
 
 ### 4. Realizar la primera fase de verificación
 
@@ -112,7 +112,7 @@ A continuación, pueden darse varias situaciones, en función de las acciones re
 |Ninguno de los dos contactos responde a la solicitud|La transferencia pasa a la segunda fase de verificación al cabo de cinco días.|
 |Uno de los dos contactos rechaza la solicitud|La transferencia se anula una vez notificado el rechazo por uno cualquiera de los dos contactos.|
 
-En caso de que se anule la transferencia, asegúrese de que las distintas partes implicadas estén de acuerdo con la misma y de que sus direcciones de correo electrónico sean correctas. El proceso podrá reanudarse más adelante desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleccionando `Dominios`{.action} en la columna izquierda y haciendo clic en `Operaciones en curso`{.action}.
+En caso de que se anule la transferencia, asegúrese de que las distintas partes implicadas estén de acuerdo con la misma y de que sus direcciones de correo electrónico sean correctas. El proceso podrá reanudarse más adelante desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, seleccionando `Dominios`{.action} en la columna izquierda y haciendo clic en `Operaciones en curso`{.action}.
 
 ### 5. Realizar la segunda fase de verificación
 
@@ -124,11 +124,11 @@ En la segunda fase, el actual agente registrador (que todavía no es OVH) recibi
 |El actual agente registrador no responde a la solicitud.|La transferencia se realiza al cabo de cinco días.|
 |El actual agente registrador rechaza la solicitud.|La transferencia se anula una vez notificado el rechazo.|
 
-En caso de que el actual agente registrador rechace la transferencia, le invitamos a que contacte con él para conocer el motivo. El proceso podrá reanudarse más adelante desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleccionando `Dominios`{.action} en la columna izquierda y haciendo clic en `Operaciones en curso`{.action}.
+En caso de que el actual agente registrador rechace la transferencia, le invitamos a que contacte con él para conocer el motivo. El proceso podrá reanudarse más adelante desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, seleccionando `Dominios`{.action} en la columna izquierda y haciendo clic en `Operaciones en curso`{.action}.
 
 ### 6. Administrar el dominio en OVH
 
-Una vez finalizado el procedimiento de transferencia, podrá administrar el dominio desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente.
+Una vez finalizado el procedimiento de transferencia, podrá administrar el dominio desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Para ello, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente.
 
 ## Más información
 

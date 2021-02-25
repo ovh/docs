@@ -31,7 +31,7 @@ Un server dedicato è una macchina fisica localizzata in uno dei nostri datacent
 
 - Disporre di un [server dedicato OVH](https://www.ovhcloud.com/it/bare-metal/){.external}
 - Essere connesso in SSH (accesso root) con Linux o come amministratore con Windows
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
@@ -39,7 +39,7 @@ Quando il tuo server dedicato è configurato per la prima volta, puoi selezionar
 
 ### Installa o reinstalla il tuo server dedicato
 
-Reinstalla facilmente il tuo server e scegli un altro modello di sistema operativo nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Nella scheda `Informazioni generali`{.action}, clicca sui tre puntini `...`{.action} in corrispondenza del Sistema operativo e seleziona `Installa`{.action}.
+Reinstalla facilmente il tuo server e scegli un altro modello di sistema operativo nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca sui tre puntini `...`{.action} in corrispondenza del Sistema operativo e seleziona `Installa`{.action}.
 
 ![Pulsante Reinstalla](images/reinstalling-your-server-00.png){.thumbnail}
 
@@ -84,7 +84,7 @@ Per maggiori informazioni sulla creazione di chiavi SSH, consulta [questa guida]
 
 > [!primary]
 >
-> Alcuni sistemi operativi o piattaforme, come Plesk e Windows, richiedono l'acquisizione di una licenza prima dell'installazione. Questa [licenza può essere acquistata presso OVHcloud](https://www.ovhcloud.com/it/bare-metal/os/) o un rivenditore. La licenza dovrà poi essere integrata manualmente, tramite il sistema operativo o attraverso lo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Puoi gestire le tue licenze nella cartella di configurazione della sezione `Bare Metal Cloud`{.action} con `Licenze`{.action}. In questa sezione, puoi anche ordinare licenze (tramite il pulsante `Ordina`{.action} a sinistra) o aggiungere la tua licenza di server SQL o Windows SPLA (tramite il pulsante `Aggiungi una licenza SPLA`{.action} a sinistra).
+> Alcuni sistemi operativi o piattaforme, come Plesk e Windows, richiedono l'acquisizione di una licenza prima dell'installazione. Questa [licenza può essere acquistata presso OVHcloud](https://www.ovhcloud.com/it/bare-metal/os/) o un rivenditore. La licenza dovrà poi essere integrata manualmente, tramite il sistema operativo o attraverso lo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Puoi gestire le tue licenze nella cartella di configurazione della sezione `Bare Metal Cloud`{.action} con `Licenze`{.action}. In questa sezione, puoi anche ordinare licenze (tramite il pulsante `Ordina`{.action} a sinistra) o aggiungere la tua licenza di server SQL o Windows SPLA (tramite il pulsante `Aggiungi una licenza SPLA`{.action} a sinistra).
 >
 
 ### Connessione al tuo server
@@ -153,7 +153,7 @@ Per maggiori informazioni, consulta la nostra guida: [Utilizzare l'IPMI sui serv
 
 ### Modalità Rescue
 
-In caso di problemi sul tuo server, per prima cosa riavvia il server in modalità Rescue. Per attivare la modalità Rescue, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e accedi alla pagina del tuo server. Nel menu `Informazioni generali`, clicca su `...`{.action} poi su `Modifica`{.action} per modificare la modalità di avvio.
+In caso di problemi sul tuo server, per prima cosa riavvia il server in modalità Rescue. Per attivare la modalità Rescue, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e accedi alla pagina del tuo server. Nel menu `Informazioni generali`, clicca su `...`{.action} poi su `Modifica`{.action} per modificare la modalità di avvio.
 
 ![Modifica la selezione di avvio](images/rescue-mode-01.png){.thumbnail}
 

@@ -31,7 +31,7 @@ order: 5
 ## Procedure
 
 ### Étape 1 &#58; Verifications des informations du domaine
-Vous pouvez retrouver les informations à partir de votre Espace client accessible [ici](https://ca.ovh.com/auth/?action=gotomanager){.external}. Il faut vous connecter avec le contact administrateur.
+Vous pouvez retrouver les informations à partir de votre Espace client accessible [ici](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Il faut vous connecter avec le contact administrateur.
 
 - Une fois connecté, il vous suffit de cliquer sur votre nom de domaine en haut à gauche dans la partie Domaines , puis sur Informations générales .
 

@@ -23,12 +23,12 @@ Wanneer u een Public Cloud-instance maakt, kunt u kiezen voor een facturatie per
 ## Vereisten
 
 - U moet een [Public Cloud-instance](https://www.ovh.com/fr/public-cloud/instances/){.external} hebben aangemaakt. 
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 
 
 ## Instructies
 
-Kies in het [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} de instance waarvoor u het facturatietype wilt wijzigen, en selecteer de bijbehorende opties. U ziet dan de knop `Maandelijks abonnement instellen `{.action}:
+Kies in het [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} de instance waarvoor u het facturatietype wilt wijzigen, en selecteer de bijbehorende opties. U ziet dan de knop `Maandelijks abonnement instellen `{.action}:
 
 ![Wijzig facturatietype](images/1_swich_to_monthly_sub.png){.thumbnail}
 

@@ -17,7 +17,7 @@ Utilizzati dalla maggior parte dei sistemi di gestione dei contenuti (Content Ma
 ## Prerequisiti
 
 - Disporre di un piano di [hosting Web OVH](https://www.ovh.it/hosting-web/){.external}
-- Avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso alla gestione dell’hosting Web dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 > [!warning]
 >
@@ -41,7 +41,7 @@ Quasi tutti gli attuali sistemi di gestione dei contenuti utilizzano un database
 
 ### Step 2: accedi alla gestione dei database dell’hosting
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} della colonna a sinistra e clicca sulla scheda `Database`{.action}.
 
 Visualizzi una tabella con tutti i database creati per la tua soluzione di hosting.
 

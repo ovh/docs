@@ -25,12 +25,12 @@ Ein Virtual Private Server oder VPS ist ein virtualisierter dedizierter Server. 
 ## Voraussetzungen
 
 - Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen über die Zugangsdaten, die Ihnen nach der Installation per E-Mail zugesandt wurden.
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie links im Menü unter `VPS`{.action} Ihren Server aus. 
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie links im Menü unter `VPS`{.action} Ihren Server aus. 
 
 Dieses Dashboard enthält wichtige Informationen zu Ihrem Dienst und erlaubt Ihnen, grundlegende Operationen auszuführen. Es unterscheidet sich je nach Reihe Ihres VPS. 
 
@@ -172,5 +172,7 @@ Sie können aber auch die automatische Lösung von OVHcloud nutzen: [SSL Gateway
 ## Weiterführende Informationen
 
 [SSH Einführung](../../dedicated/ssh-einfuehrung/)
+
+[VPS absichern](../vps-sicherheit/)
 
 Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

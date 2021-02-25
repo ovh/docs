@@ -17,7 +17,7 @@ V rámci svého webhostingového řešení OVH máte přístup k FTP prostoru, d
 ## Prerekvizity
 
 - [Webhostingové řešení OVH](https://www.ovh.cz/webhosting/){.external} (neplatí pro Cloud Web).
-- Přístup do administračního rozhraní webhostingu prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} nebo přístupové údaje pro připojení k FTP. 
+- Přístup do administračního rozhraní webhostingu prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} nebo přístupové údaje pro připojení k FTP. 
 
 ## Postup
 
@@ -46,7 +46,7 @@ V závislosti na zvolené metodě pokračujte k příslušné části této př�
 
 ### Obnovení zálohy pomocí Zákaznického prostoru OVH
 
-Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. Přejděte do záložky `FTP-SSH`{.action} a klikněte na tlačítko `Obnovení zálohy`{.action}.
+Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. Přejděte do záložky `FTP-SSH`{.action} a klikněte na tlačítko `Obnovení zálohy`{.action}.
 
 ![backupftp](images/backupftp-step1.png){.thumbnail}
 
@@ -85,7 +85,7 @@ V první řadě je zapotřebí vybrat software či prostředí, které pro přip
 
 - **Cyberduck**: klienta je zapotřebí stáhnout a nainstalovat z webových stránek vydavatele softwaru. Detailní informace o použití klienta Cyberduck naleznete v následující dokumentaci: [Použití klienta Cyberduck s webhostingovým řešením OVH](https://docs.ovh.com/cz/cs/hosting/webhosting_uzivatelska_prirucka_cyberduck_mac/){.external}. Pozor, tato dokumentace neslouží jako substitut za oficiální dokumentaci vydavatele softwaru.
 
-- **Rozhraní FTP Explorer**: rozhraní je k dispozici v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Za účelem přístupu k rozhraní FTP Explorer se přihlaste do svého Zákaznického prostoru OVH, v levém postranním panelu klikněte na položku Hostingy a vyberte příslušné  webhostingové řešení. Přejděte do záložky `FTP-SSH`{.action} a klikněte na tlačítko `FTP Explorer`{.action}.
+- **Rozhraní FTP Explorer**: rozhraní je k dispozici v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Za účelem přístupu k rozhraní FTP Explorer se přihlaste do svého Zákaznického prostoru OVH, v levém postranním panelu klikněte na položku Hostingy a vyberte příslušné  webhostingové řešení. Přejděte do záložky `FTP-SSH`{.action} a klikněte na tlačítko `FTP Explorer`{.action}.
 
 ![backupftp](images/backupftp-step3.png){.thumbnail}
 

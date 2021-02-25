@@ -20,14 +20,14 @@ Con Hosted Exchange puoi usufruire di account email professionali che semplifica
 - Disporre di una soluzione [Hosted Exchange](https://www.ovh.it/emails/hosted-exchange/){.external}
 - Aver ricevuto l’email di conferma dell’installazione di Hosted Exchange
 - Disporre di un dominio
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 
 ## Procedura
 
 ### Step 1: accedi all’interfaccia di gestione del tuo servizio
 
-Una volta che il tuo Hosted Exchange è pronto per l’utilizzo, puoi gestirlo direttamente dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+Una volta che il tuo Hosted Exchange è pronto per l’utilizzo, puoi gestirlo direttamente dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 cliccando su `Microsoft`{.action} e poi su `Exchange`{.action} nella barra del menu di sinistra. Infine selezione il nome del tuo Hosted Exchange.
 
@@ -60,7 +60,7 @@ Una volta terminata la prima configurazione del tuo dominio, puoi anche impostar
 > Tutti gli indirizzi creati sul tuo Exchange saranno all’interno della stessa directory degli altri indirizzi email associati al servizio, inclusi quelli con un dominio diverso. Se vuoi che alcuni domini non vengano visualizzati nella stessa directory, è necessario ordinare un altro Hosted Exchange.
 >
 
-Per aggiungere un nuovo dominio, seleziona il tuo Hosted Exchange dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e clicca sulla scheda `Domini associati`{.action}. La tabella mostra la lista dei domini configurati o in fase di configurazione nel tuo servizio. Per aggiungerne altri, clicca sul pulsante `Aggiungi un dominio`{.action} e segui le indicazioni.
+Per aggiungere un nuovo dominio, seleziona il tuo Hosted Exchange dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca sulla scheda `Domini associati`{.action}. La tabella mostra la lista dei domini configurati o in fase di configurazione nel tuo servizio. Per aggiungerne altri, clicca sul pulsante `Aggiungi un dominio`{.action} e segui le indicazioni.
 
 Per saperne di più, consulta la guida [Aggiungere un dominio sul servizio Exchange](https://docs.ovh.com/it/microsoft-collaborative-solutions/aggiungere-dominio-su-exchange/){.external}.
 
@@ -76,7 +76,7 @@ Per saperne di più, consulta la guida [Aggiungere un dominio sul servizio Excha
 
 Una volta terminata la prima configurazione del tuo dominio, puoi anche impostare i domini supplementari se necessario e se non l’hai già fatto attraverso la configurazione assistita.
 
-Accedendo allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, dopo aver cliccato sul tuo Hosted Exchange, seleziona la scheda `Account email`{.action}. La tabella mostra la lista dei domini configurati o in fase di configurazione nel tuo servizio.
+Accedendo allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, dopo aver cliccato sul tuo Hosted Exchange, seleziona la scheda `Account email`{.action}. La tabella mostra la lista dei domini configurati o in fase di configurazione nel tuo servizio.
 
 Gli account in attesa di configurazione includono “*@configureme.me*” accanto al nome dell’account. Per procedere con la configurazione, clicca sull’icona a forma di matita e segui i vari passaggi.
 
@@ -93,7 +93,7 @@ Una volta configurati gli account, non rimane che utilizzarli! OVH ti fornisce l
 
 Per configurare l’account email su un client di posta o un dispositivo (ad esempio smartphone o tablet), consulta la documentazione disponibile in questa pagina: [https://docs.ovh.com/it/microsoft-collaborative-solutions/](https://docs.ovh.com/it/microsoft-collaborative-solutions/){.external}. Per un utilizzo ottimale del tuo account Exchange, assicurati che il tuo client sia compatibile con il servizio.
 
-OVH propone licenze Outlook nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, così come licenze Office 365 alla pagina [https://www.ovh.it/office-365/](https://www.ovh.it/office-365/){.external}. Se vuoi utilizzare un client di posta Outlook o più programmi della suite Office, ti consigliamo una di queste soluzioni.
+OVH propone licenze Outlook nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, così come licenze Office 365 alla pagina [https://www.ovh.it/office-365/](https://www.ovh.it/office-365/){.external}. Se vuoi utilizzare un client di posta Outlook o più programmi della suite Office, ti consigliamo una di queste soluzioni.
 
 > [!primary]
 >
@@ -103,9 +103,9 @@ OVH propone licenze Outlook nello [Spazio Cliente OVH](https://www.ovh.com/auth/
 
 ### Step 6: impostare le funzioni collaborative (facoltativo)
 
-Una volta che Hosted Exchange è stato configurato ed è operativo, puoi attivare le funzionalità di collaborazione attraverso il tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, le quali ti consentono di creare risorse (sale riunioni, attrezzatura, ecc...) così come gruppi.
+Una volta che Hosted Exchange è stato configurato ed è operativo, puoi attivare le funzionalità di collaborazione attraverso il tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, le quali ti consentono di creare risorse (sale riunioni, attrezzatura, ecc...) così come gruppi.
 
-Per attivare le diverse funzioni, seleziona il servizio Exchange dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e scegli tra le varie schede a seconda dell'azione che vuoi effettuare.
+Per attivare le diverse funzioni, seleziona il servizio Exchange dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e scegli tra le varie schede a seconda dell'azione che vuoi effettuare.
 
 Per maggiori informazioni sulle funzionalità, consulta la nostra documentazione disponibile a questo link: <https://docs.ovh.com/it/microsoft-collaborative-solutions/>.
 

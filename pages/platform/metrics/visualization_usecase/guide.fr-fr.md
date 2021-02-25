@@ -36,7 +36,7 @@ Following tools are all compatible with Metrics Data Platform. This is not exhau
 
 ### WebComponents
 
-**Warp 10™ WebComponents**: Warp 10™ is providing [WebComponents](https://www.webcomponents.org/){.external} to integrate graphs into your own web pages. You can find examples on their [Github account](https://github.com/senx/warp10-quantumviz){.external}.
+**Warp 10™ WebComponents**: Warp 10™ is providing [WebComponents](https://www.webcomponents.org/){.external} to integrate graphs into your own web pages. You can find examples on their [Github account](https://github.com/senx/warp10-platform){.external}.
 
 ## Go further
 

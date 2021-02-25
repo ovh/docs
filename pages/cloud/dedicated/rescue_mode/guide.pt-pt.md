@@ -6,72 +6,76 @@ legacy_guide_number: g920
 section: 'Diagnóstico e Modo Rescue'
 ---
 
-**Última atualização a 20/08/2018**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 14/01/2021**
 
 ## Objetivo
 
 O modo rescue é uma ferramenta do seu servidor dedicado. Permite-lhe iniciar num sistema operativo temporário, com o objetivo de diagnosticar e resolver problemas.
 
-**Este manual explica-lhe como ativar e utilizar o modo rescue do seu servidor.**
+**Saiba como ativar e utilizar o modo rescue do seu servidor.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UdMZSgXATFU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Requisitos
 
-- Ter um acesso em SSH (root) para o seu [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external}.
-
+- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
-Pode ativar o modo rescue ligando-se à sua [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager/){.external}. Selecione o seu servidor na secção `Serviços Dedicados`{.action} e, em seguida, em `Servidores Dedicados`{.action}. De seguida, em `Estado do servidor`{.action} > `Informações gerais`{.action} > `...`{.action} e clique no botão `Modificar`{.action} para alterar o modo de arranque.
+O modo rescue só pode ser ativado a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. 
 
-![Modificar o modo de arranque](images/rescue-mode-01.png){.thumbnail}
+Procure "Boot" na zona **Informações gerais** e clique em `...`{.action} e depois em `Alterar`{.action}.
 
-No ecrã seguinte, selecione `Fazer boot em modo rescue`{.action}. Se o seu servidor possuir um sistema operativo Linux, selecione a opção `rescue64-pro`{.action} no menu pendente. Caso tenha um servidor Windows, selecione `WinRescue`{.action}. Finalmente, insira o seu endereço de e-mail no campo de texto e, em seguida, clique em `Seguinte`{.action}.
+![Alterar o modo de arranque](images/rescue-mode-01.png){.thumbnail}
+
+No ecrã seguinte, selecione **Fazer boot em modo rescue**. Se o seu servidor possuir um sistema operativo Linux, selecione a opção `rescue64-pro`{.action} no menu pendente. Se o seu servidor está em Windows, escolha `WinRescue`{.action} (ver [secção do guia abaixo](#windowsrescue)). Especifique outro endereço de e-mail se **não** pretender que os dados de acesso sejam enviados para o endereço principal da sua conta OVHcloud.
+<br>Clique em `Seguinte`{.action} e `Validar`{.action}.
 
 ![Modo rescue-pro](images/rescue-mode-03.png){.thumbnail}
 
-Confirme as suas opções no ecrã seguinte e, em seguida, reinicie o seu servidor para aplicar as modificações. 
+Concluída a alteração, clique em `...`{.action} à direita do "Estado" na zona **Estado dos serviços**.
+<br>Clique em `Reiniciar`{.action} e o servidor será reiniciado em modo rescue. Esta operação pode demorar alguns minutos.
+<br>Pode verificar o progresso sob o separador `Tarefas`{.action}. Receberá um e-mail com os dados de acesso (incluindo a palavra-passe) do utilizador "root" do modo rescue.
 
 ![Reiniciar o servidor](images/rescue-mode-02.png){.thumbnail}
 
-O seu servidor irá ser reiniciado em modo rescue e receberá as informações de identificação para se poder ligar com o endereço de e-mail que indicou. Para sair do modo rescue, basta alterar o modo de arranque em `Fazer boot no disco rígido`{.action} e reiniciar o seu servidor.
+Quando tiver terminado as suas tarefas em modo rescue, não se esqueça de redefinir o netboot no `Fazer boot do disco rígido`{.action} e reinicie o seu servidor.
 
 ### Linux
 
-#### Utilizar a interface web
-
-Depois de reiniciar o seu servidor, receberá um e-mail com as informações de acesso em modo rescue. Ser-lhe-á indicada uma ligação para a interface web do modo rescue, que lhe permitirá efetuar os seguintes testes:
-
-- discos rígidos: verificação da sua integridade com testes SMART;
-- processadores: verificação do seu funcionamento normal;
-- partições (estado): verificação do estado dos leitores;
-- partições (sistema de ficheiros): verificação do sistema de ficheiros do servidor;
-- partições (explore): lançamento de um navegador para explorar os ficheiros. Não é possível editá-los com esta ferramenta, mas pode efetuar uma cópia de segurança.
-- memória: verificação da RAM instalada.
-
-![Interface web do modo rescue](images/rescue-mode-04.png){.thumbnail}
-
-#### Utilizar o SSH (linha de comandos)
-
+#### Utilização do modo rescue (SSH)
 
 > [!primary]
 > 
-> Em caso de utilização de uma chave SSH (igualmente ativa na sua Área de Cliente OVH), não receberá nenhuma palavra-passe. Assim que o servidor estiver em modo Rescue, poderá ligar-se diretamente através da sua chave SSH.
+> Se utilizar uma chave SSH (também ativa na sua Área de Cliente OVHcloud), não receberá nenhuma palavra-passe. Uma vez o servidor em modo rescue, poderá ligar-se diretamente com a sua chave SSH.
 >
 
-Depois de reiniciar o seu servidor, receberá um e-mail com as informações de acesso em modo rescue. Deverá aceder ao seu servidor através da linha de comandos habitual, utilizando a palavra-passe root do modo rescue em vez da sua.
+Após o reboot do seu servidor, receberá um e-mail com os dados de acesso em modo rescue. Este e-mail também está disponível na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no nome associado ao seu ID de cliente no canto superior direito da sua Área de Cliente e, a seguir, em `E-mails de serviço`{.action}.
+
+De seguida, deverá aceder ao servidor através de uma linha de comandos ou através de uma ferramenta SSH, utilizando a palavra-passe root gerada para o modo rescue.
 
 Por exemplo:
 
 ```sh
-ssh root@IP_o_seu_servidor
-root@IP_da_palavra_passe_do_seu_servidor:
+ssh root@your_server_IP
+root@your_server_password:
 ```
 
-A maioria das modificações realizadas no servidor através de SSH em modo rescue requerem a montagem de uma partição. De facto, este modo possui o seu próprio sistema de ficheiros temporário. Por isso, as modificações realizadas no sistema de ficheiros em modo rescue serão perdidas ao reiniciar o servido em modo normal.
+> [!warning]
+> 
+> É provável que o seu cliente SSH bloqueie a ligação em primeiro lugar, devido a uma incompatibilidade da marca ECDSA. Isto é normal, pois o modo rescue utiliza o seu próprio servidor SSH temporário.
+>
+> Para contornar este problema, pode comentar a pegada do seu sistema habitual adicionando um `#` à frente da sua linha no ficheiro *known_hosts*. Tenha o cuidado de retirar este caráter antes que o servidor volte ao estado normal.
+>
 
-A montagem das partições é efetuada através do comando `mount` em SSH. Deverá listar as suas partições com antecedência para poder recuperar o nome da partição que pretende montar. Aqui tem alguns exemplos de códigos:
+A maior parte das modificações efetuadas no seu servidor através de SSH em modo rescue requerem a montagem de uma partição. De facto, este modo possui o seu próprio sistema de ficheiros temporários. Por isso, as modificações realizadas no sistema de ficheiros em modo rescue serão perdidas ao reiniciar o servido em modo normal.
+
+Para montar as partições, utilize o comando `mount` em SSH. Deverá listar as suas partições com antecedência para poder recuperar o nome da partição que pretende montar. Aqui tem alguns exemplos de códigos:
 
 ```sh
 rescue:~# fdisk -l
@@ -101,36 +105,43 @@ rescue:~# mount /dev/hda1 /mnt/
 
 > [!primary]
 >
-> A sua partição vai ser montada. Poderá então realizar as operações no sistema de ficheiros.
+> A sua partição vai ser montada. Poderá então efetuar operações no sistema de ficheiros.
 > 
-> Caso o seu servidor possua uma configuração RAID software, deverá montar o seu volume RAID (geralmente, `/dev/mdX`).
+> Se o seu servidor dispõe de uma configuração RAID de software, deve montar o seu volume RAID (geralmente `/dev/mdX`).
 >
 
+Para sair do modo rescue, redefina o modo de arranque em `Fazer boot no disco rígido`{.action} na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e reinicie o servidor em linha de comandos.
 
-### Windows
+### Windows <a name="windowsrescue"></a>
 
-#### Aceder ao WinRescue
+#### Utilização das ferramentas WinRescue
 
-Depois de reiniciar o seu servidor, receberá um e-mail com as informações de acesso em modo rescue. Para as utilizar, deverá descarregar e instalar uma consola VNC ou utilizar o módulo `IPMI` na sua [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager/){.external}.
+Após o reboot do seu servidor, receberá um e-mail com os dados de acesso em modo rescue. Este e-mail também está disponível na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no nome associado ao seu ID de cliente no canto superior direito da sua Área de Cliente e, a seguir, em `E-mails de serviço`{.action}.
 
-![Winrescue Windows](images/rescue-mode-06.png){.thumbnail}
+Para utilizar o modo rescue proposto pelo Windows, deve descarregar e instalar uma consola VNC ou utilizar o módulo `IPMI` na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
-#### Ferramenta WinRescue
+![Windows WinRescue](images/rescue-mode-06.png){.thumbnail}
 
-|Ferramentas|Descrição|
+Já estão instaladas neste modo as seguintes ferramentas:
+
+|Ferramenta|Descrição|
 |---|---|
-|Freecommander|Um gestor de ficheiros com todas as funcionalidades standard de que precisa.|
-|NTPWdi|Um gestor de palavras-passe fácil de utilizar. Permite-lhe reativar ou modificar as palavras-passe das contas de utilizadores no seu servidor. Esta ferramenta é prática em caso de perda de informações de identificação ou para reativar uma conta de segurança.|
-|FileZilla|Um cliente FTP open source. Trata dos protocolos SSH e SSL, e dispõe de uma interface arrastar-soltar clara e intuitiva. Pode ser utilizado para transferir dados para um servidor FTP, tal como o backup FTP incluído na maior parte dos modelos de servidores da OVH.|
-|7-ZIP|Utilitário de compressão e de arquivamento de ficheiros compatível com os seguintes formatos: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR e Z. Poderá também criar os seus próprios arquivos nos seguintes formatos: BZIP2, GZIP, TAR, WIM, XZ, Z e ZIP.|
-|Avast Virus Cleaner|Uma aplicação antivírus com capacidades de verificação e de limpeza dos ficheiros.|
-|ActivNIC|Uma ferramenta que lhe permite reativar uma placa de interface de rede desativada.|
-|SRVFirewall|Um script que ativa ou desativa a firewall do seu servidor.|
-|SysInternal|Uma suite de aplicações da Microsoft que inclui várias ferramentas para a manutenção da rede ou a gestão dos processos.|
-|Virtual Clone Drive|Uma ferramenta com a qual poderá montar ficheiros BIN, CCD e ISO num leitor CD virtual.|
 |Firefox|Um navegador web.|
-|Testdisk|Uma aplicação eficaz de recuperação de dados. Permite-lhe recuperar e modificar partições danificadas, encontrar partições perdidas, corrigir um setor de arranque ou até reconstruir um MBR com defeito.|
+|Freecommander|Um gestor de ficheiros com todas as funcionalidades standard de que precisa.|
+|NTPWEdit|Um gestor de palavras-passe fácil de utilizar. Permite-lhe reativar ou modificar as palavras-passe das contas de utilizador no seu servidor. Esta ferramenta é prática em caso de perda de informações de ligação ou para a reativação de uma conta de segurança.|
+|Avast Virus Cleaner|Uma aplicação antivírus com capacidades de verificação e de limpeza dos ficheiros.|
+|ActivNIC|Uma ferramenta que lhe permite reativar uma placa de interface de rede.|
+|BootSect|Uma ferramenta que lhe permite reparar o sector de arranque.|
+|Virtual Clone Drive|Uma ferramenta com a qual poderá montar ficheiros BIN, CCD e ISO num leitor CD virtual.|
+|smartCTL|Uma ferramenta que lhe permite aceder aos logs automáticos de monitorização dos discos rígidos.|
+|Diskpart|Uma ferramenta que lhe permite manipular as partições do servidor.|
+|SysInternal|Uma suite de software da Microsoft que lhe permite efetuar a manutenção da rede e gerir os processos.|
+|TestDisk|Uma aplicação eficaz de recuperação de dados. Permite-lhe recuperar e modificar partições danificadas, encontrar partições perdidas, corrigir um setor de arranque ou até reconstruir um MBR com defeito.|
+|FileZilla|Um cliente FTP open source. Trata dos protocolos SSH e SSL, e dispõe de uma interface arrastar-soltar clara e intuitiva. Pode ser utilizado para transferir os seus dados para um servidor FTP, como o backup FTP incluído na maior parte dos modelos de servidores da OVHcloud.|
+|7-ZIP|Utilitário de compressão e de arquivamento de ficheiros compatível com os seguintes formatos: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR e Z. Poderá também criar os seus próprios arquivos nos seguintes formatos: BZIP2, GZIP, TAR, WIM, XZ, Z e ZIP.|
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+[Alterar a palavra-passe administrador num servidor dedicado Windows](../alterar-palavra-passe-admin-windows//)
+
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

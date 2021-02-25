@@ -24,7 +24,7 @@ Chez OVH, vous pouvez louer des [serveurs dédiés](https://www.ovh.com/fr/serve
 
 * Disposer d’un [serveur hybride OVH](https://www.ovh.com/fr/serveurs_dedies/){.external}.
 * Avoir accès à l’[API OVH](https://api.ovh.com/console/){.external}.
-* Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 > [!warning]
 >
@@ -89,7 +89,7 @@ Après avoir spécifié toutes vos options, cliquez sur le bouton `Execute`{.act
 
 ![Installation](images/install-01.png){.thumbnail}
 
-Votre système d'exploitation va maintenant être installé. Vous pouvez vérifier la progression cette installation en actualisant la page de votre serveur dans l’[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} ou en effectuant l'appel API suivant, en saisissant les références de votre serveur dans le champ **serviceName**, puis en cliquant sur le bouton `Execute`{.action}:
+Votre système d'exploitation va maintenant être installé. Vous pouvez vérifier la progression cette installation en actualisant la page de votre serveur dans l’[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ou en effectuant l'appel API suivant, en saisissant les références de votre serveur dans le champ **serviceName**, puis en cliquant sur le bouton `Execute`{.action}:
 
 > [!api]
 >

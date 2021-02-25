@@ -16,7 +16,7 @@ Om ervoor te zorgen dat uw systeem optimaal wordt beschermd, moet u uw firewall 
 
 ## Vereisten
 
-- U moet toegang hebben tot een [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet toegang hebben tot een [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 
 ## Instructies
@@ -25,7 +25,7 @@ Om ervoor te zorgen dat uw systeem optimaal wordt beschermd, moet u uw firewall 
 
 Het upgradeproces vereist dat uw systeem meerdere keren opnieuw opstart. Daarom raden we aan de Cisco ASA-firewall uit te schakelen, zodat uw server tijdens het upgradeproces geen storingen ondervindt.
 
-Hiervoor gaat u naar uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in het gedeelte `Dedicated`{.action}. Kies vervolgens uw dedicated server, en ` Cisco ASA Firewall`{.action}. Klik vervolgens op `Cisco ASA-firewall uitschakelen`{.action} aan de rechterkant.
+Hiervoor gaat u naar uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} in het gedeelte `Dedicated`{.action}. Kies vervolgens uw dedicated server, en ` Cisco ASA Firewall`{.action}. Klik vervolgens op `Cisco ASA-firewall uitschakelen`{.action} aan de rechterkant.
 
 ![Schakel ASA uit](images/customer_panel_asa_disable.png){.thumbnail}
 
@@ -113,7 +113,7 @@ De herstart voor het opnieuw laden van de configuratie duurt enkele minuten.
 
 ### Schakel de ASA opnieuw in via het Control Panel
 
-Hiervoor gaat u naar uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in het gedeelte `Dedicated`{.action}. Kies vervolgens uw dedicated server, en ` Cisco ASA Firewall`{.action}. Klik vervolgens op `Cisco ASA-firewall inschakelen`{.action} aan de rechterkant.
+Hiervoor gaat u naar uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} in het gedeelte `Dedicated`{.action}. Kies vervolgens uw dedicated server, en ` Cisco ASA Firewall`{.action}. Klik vervolgens op `Cisco ASA-firewall inschakelen`{.action} aan de rechterkant.
 
 ![Schakel ASA in](images/customer_panel_asa_enable.png){.thumbnail}
 
@@ -125,7 +125,7 @@ Na het herladen, nadat de ASA-firewall opnieuw is ingeschakeld, controleert u of
 
 Nu moet u de Cisco ASA-firewall opnieuw uitschakelen, net als in de eerste stap.
 
-Hiervoor gaat u naar uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in het gedeelte `Dedicated`{.action}. Kies vervolgens uw dedicated server, en `Cisco ASA Firewall`{.action}. Klik vervolgens op `Cisco ASA-firewall uitschakelen`{.action} aan de rechterkant.
+Hiervoor gaat u naar uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} in het gedeelte `Dedicated`{.action}. Kies vervolgens uw dedicated server, en `Cisco ASA Firewall`{.action}. Klik vervolgens op `Cisco ASA-firewall uitschakelen`{.action} aan de rechterkant.
 
 ![Schakel ASA uit](images/customer_panel_asa_disable.png){.thumbnail}
 
@@ -423,7 +423,7 @@ Cryptochecksum: 4b86b1e4 2e731d6b 9d1fc491 a5eae0f3
 
 ### Schakel de ASA opnieuw in via het Control Panel
 
-Hiervoor gaat u naar uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in het gedeelte `Dedicated`{.action}. Kies vervolgens uw dedicated server, en `Cisco ASA Firewall`{.action}. Klik vervolgens op `Cisco ASA-firewall inschakelen`{.action} aan de rechterkant.
+Hiervoor gaat u naar uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} in het gedeelte `Dedicated`{.action}. Kies vervolgens uw dedicated server, en `Cisco ASA Firewall`{.action}. Klik vervolgens op `Cisco ASA-firewall inschakelen`{.action} aan de rechterkant.
 
 ![Schakel ASA in](images/customer_panel_asa_enable.png){.thumbnail}
 

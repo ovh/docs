@@ -17,7 +17,7 @@ Neben weiteren Methoden, um den Zugang zu Ihrem Kundencenter abzusichern, bietet
 ## Voraussetzungen
 
 - Sie haben sich über die [verschiedenen Methoden der Zwei-Faktor-Authentifizierung bei OVHcloud](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern) informiert.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben eine mobile OTP-Applikation auf einem Smartphone oder Tablet mit Android oder iOS installiert.
 
 > [!primary]

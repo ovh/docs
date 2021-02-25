@@ -19,7 +19,7 @@ order: 1
 ## Requirements
 
 - an [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/)
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - no files stored in the directory that your module will be installed in
 - The website’s domain (with a subdomain, if applicable) must be declared as a multisite.
 
@@ -146,6 +146,6 @@ Below, we've included some links from these CMS publishers, to help you get star
 
 See our [Private SQL services](https://www.ovh.co.uk/web-hosting/sql-options.xml){.external}
 
-See our [CloudDB solutions](https://www.ovh.co.uk/cloud/cloud-databases/){.external}
+See our [CloudDB solutions](https://www.ovh.co.uk/cloud-databases/){.external}
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
+Join our community of users on <https://community.ovh.com/en/>.

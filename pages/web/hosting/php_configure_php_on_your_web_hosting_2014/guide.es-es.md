@@ -17,7 +17,7 @@ Actualmente, hay una ingente cantidad de sitios web en la red. Los [planes de ho
 ## Requisitos
 
 - Tener contratado un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external} (salvo los planes de hosting Cloud Web).
-- Según el método utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager) o disponer de las claves necesarias para conectarse al espacio de almacenamiento. 
+- Según el método utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) o disponer de las claves necesarias para conectarse al espacio de almacenamiento. 
 
 ## Procedimiento
 
@@ -45,7 +45,7 @@ Puede consultar la versión de PHP que utiliza su alojamiento web de dos formas 
 
 |Método|Descripción|
 |---|---|
-|Desde el área de cliente|Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. En la pestaña `Información general`{.action}, puede consultar la versión de PHP en el recuadro **Configuración**, en el apartado **Versión PHP global**. Si aparece un círculo de color azul en lugar de la versión, espere hasta que esta termine de actualizarse.|
+|Desde el área de cliente|Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Alojamientos`{.action} en la columna izquierda y seleccione el alojamiento correspondiente. En la pestaña `Información general`{.action}, puede consultar la versión de PHP en el recuadro **Configuración**, en el apartado **Versión PHP global**. Si aparece un círculo de color azul en lugar de la versión, espere hasta que esta termine de actualizarse.|
 |Mediante un script|Cree un script **.php** que contenga únicamente el siguiente código: `<?php phpinfo(); ?>`. A continuación súbalo a su espacio de almacenamiento y llámelo accediendo a su dirección URL completa desde un navegador de internet.|
 
 ![Versión de PHP](images/change-php-version-step1.png){.thumbnail}

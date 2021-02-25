@@ -15,7 +15,7 @@ Neben der Angabe von [Kontakten](https://docs.ovh.com/de/customer/verwaltung-der
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Ihr Domainname ist bei OVHcloud registriert.
 - Sie sind der [Administratorkontakt](https://docs.ovh.com/de/customer/verwaltung-der-kontakte) des entsprechenden Domainnamens.
 - Sie haben die Zustimmung des **aktuellen Inhabers** des Domainnamens, den Inhaberwechsel durchzuführen.

@@ -6,7 +6,7 @@ section: Tutorials
 order: 1
 ---
 
-**Last updated 30<sup>th</sup> April, 2020**
+**Last updated 20<sup>th</sup> January, 2021**
 
 ## Objective
 This guide  gives you a basic example about using Apache Spark and OVHcloud Data Processing.
@@ -20,7 +20,7 @@ This probabilty can be estimated by picking a high number of random points and t
 
 
 ## Requirements 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 - An OVHcloud account 
 - A cloud project in your OVHcloud account (see [How to create a cloud project](../../public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project){.external} for details.)
 - Data Processing activated (see [How to activate the Data Processing service](../activation){.external} for details.)
@@ -68,7 +68,7 @@ Spark allows us to use this method much faster. Instead of making each calculati
 ### Step 1 : Write a python code using Apache Spark
 
 Here is a code sample written in Python do calculate π.
-Save it in a file called 'pi-spark.py' or download it from this repository: [Data Processing Samples - Calculate Pi](https://github.com/ovh/data-processing-samples/tree/master/python_calculatePi).
+Save it in a file called 'pi-spark.py' or download it from this repository: [Data Processing Samples - Calculate Pi](https://github.com/ovh/data-processing-samples/tree/master/python_calculatePi) [[1]](#notes).
 
 
 ```python
@@ -240,6 +240,9 @@ Here is a graphical representation of the results :
 
 ![Monte Carlo comparison](images/comparison_chart.png){.thumbnail}
 
+## Notes
+
+[1] Please select the tag related to the Spark version you want to use.
 
 ## Go further
 

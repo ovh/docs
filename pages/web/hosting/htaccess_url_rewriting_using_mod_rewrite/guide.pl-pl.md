@@ -34,15 +34,15 @@ RewriteRule letstest /test_wslash/testing.php
 Ta formuła przekieruje każde zapytanie /letstest na skrypt /test_wslash/testing.php.
 
 
-## Przekierowanie exemple.com na www.exemple.com
+## Przekierowanie example.com na www.example.com
 
-- Ta formuła wymusza adres strony typu www.exemple.com, co jest użyteczne w zakresie pozycjonowania:
+- Ta formuła wymusza adres strony typu www.example.com, co jest użyteczne w zakresie pozycjonowania:
 
 
 ```
 RewriteEngine on
-Rewritecond %{HTTP_HOST} ^exemple.com$
-Rewriterule ^(.*) http://www.exemple.com/$1 [QSA,L,R=301]
+RewriteCond %{HTTP_HOST} ^example.com$
+RewriteRule ^(.*) http://www.example.com/$1 [QSA,L,R=301]
 ```
 
 
@@ -51,14 +51,14 @@ Rewriterule ^(.*) http://www.exemple.com/$1 [QSA,L,R=301]
 
 ## Przekierowanie na określony katalog bez wyświetlania nazwy katalogu
 
-- Jeśli Twoja strona znajduje się w katalogu docelowym, formuła ta wymusza adres strony typu www.exemple.com, podczas gdy prawidłowy adres strony to: www.exemple.com/MonSite.
+- Jeśli Twoja strona znajduje się w katalogu docelowym, formuła ta wymusza adres strony typu www.example.com, podczas gdy prawidłowy adres strony to: www.example.com/MySite.
 
 
 ```
 RewriteEngine on
-Rewritecond %{HTTP_HOST} ^exemple.com
-Rewritecond %{REQUEST_URI} !^/MonSite
-Rewriterule ^(.*)$ /MonSite/
+RewriteCond %{HTTP_HOST} ^example.com
+RewriteCond %{REQUEST_URI} !^/MySite
+RewriteRule ^(.*)$ /MySite/
 ```
 
 

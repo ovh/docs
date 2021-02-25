@@ -23,7 +23,7 @@ Ezmlm yra labai plačiai naudojamas ir našus el. pašto konferencijų valdiklis
 
 ## El. pašto konferencijos sukūrimas
 Mūsų atveju, tai el. pašto konferencijos paslauga, suteikiama su PRO talpinimo planu.
-Norėdami sukurti savo el. pašto konferenciją, jūs turėtumėte prisijungti prie [OVH valdymo sąsajos](http://www.ovh.com/manager/web). 
+ 
 
 Iškart po prisijungimo pasirinkite savo talpinimo planą skiltyje El. paštas ir pasirinkite El. pašto konferencijos.
 

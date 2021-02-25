@@ -19,7 +19,7 @@ Bei der Installation oder Neuinstallation einer Distribution oder eines Betriebs
 
 * Sie verfügen über einen [Dedicated Server](https://www.ovh.de/dedicated-server/){.external} mit installierter Linux-Distribution.
 * Sie sind via SSH als Root-Benutzer eingeloggt (wenn Sie das aktuelle Passwort besitzen).
-* Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+* Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 
 ## Beschreibung

@@ -23,7 +23,7 @@ Nasze usługi hostingu WWW są kompatybilne z popularnymi systemami zarządzania
 ## Wymagania początkowe
 
 - hosting
-- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
@@ -31,7 +31,7 @@ Nasze usługi hostingu WWW są kompatybilne z popularnymi systemami zarządzania
 > [!primary]
 >**Instalacja automatyczna**
 >
->Aby automatycznie zainstalować wybrany moduł CMS, wystarczy kilka kliknięć w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Zapoznaj się z następującym przewodnikiem:
+>Aby automatycznie zainstalować wybrany moduł CMS, wystarczy kilka kliknięć w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Zapoznaj się z następującym przewodnikiem:
 >
 >[Automatyczna instalacja strony WWW za pomocą modułu CMS](https://docs.ovh.com/pl/hosting/hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/)
 >

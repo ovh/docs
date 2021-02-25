@@ -22,13 +22,13 @@ Prima di applicare opzioni di backup, consigliamo di fare riferimento alle pagin
 
 ## Prerequisiti
 
-- avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - un servizio [VPS OVHcloud](https://www.ovhcloud.com/it/vps/) già impostato
 
 
 ## Procedura
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), vai fino alla sezione "Bare Metal Cloud" e seleziona il tuo server dalla barra laterale sinistra in `VPS`{.action}.
+Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), vai fino alla sezione "Bare Metal Cloud" e seleziona il tuo server dalla barra laterale sinistra in `VPS`{.action}.
 
 ### Step 1: Attivare l’opzione snapshot
 

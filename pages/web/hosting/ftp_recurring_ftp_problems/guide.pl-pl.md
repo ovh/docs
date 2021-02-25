@@ -20,7 +20,7 @@ Jeśli to nie działa, używane dane do logowania są prawdopodobnie nieprawidł
 ## Ile przestrzeni zostało mi na serwerze FTP?
 Brak przestrzeni na hostingu www może powodować problemy z działaniem, jeśli próbujesz wgrać nowe pliki. 
 
-- Aby to sprawdzić, zaloguj się do [panelu klienta](https://www.ovh.com/manager/web/login/).
+- Aby to sprawdzić, zaloguj się do [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 - Wybierz domenę w menu w sekcji Hosting.
 
 

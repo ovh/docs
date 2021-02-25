@@ -17,13 +17,13 @@ Die SQL-Server Privat und Cloud Databases geben Ihnen die Möglichkeit, auf die 
 ## Voraussetzungen
 
 - Sie haben ein [OVHcloud Webhosting mit SQL Private](https://www.ovh.de/hosting/sql-optionen.xml) in Ihrem Kunden-Account oder nutzen [Cloud Databases](https://www.ovh.de/cloud-databases/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 ### Abrufen der allgemeinen Informationen eines Datenbank-Servers
 
-Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) im linken Menü in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende SQL-Instanz. Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden.
+Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) im linken Menü in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende SQL-Instanz. Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden.
 
 Hier können Sie wichtige Informationen zu Ihrer SQL-Instanz einsehen. Wir bitten Sie, sich einen Moment Zeit zu nehmen und zu überprüfen, dass die angezeigten Daten korrekt sind bzw. mit den nachfolgenden Angaben übereinstimmen.
 
@@ -43,7 +43,7 @@ Hier können Sie wichtige Informationen zu Ihrer SQL-Instanz einsehen. Wir bitte
 
 Damit auf Ihre CloudDB Instanz zugegriffen werden kann, müssen zunächst die IP-Adressen oder IP-Bereiche festgelegt werden, die sich mit dieser verbinden dürfen.
 
-Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im linken Menü in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende SQL-Instanz. 
+Gehen Sie In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im linken Menü in den Bereich `Datenbanken`{.action} und klicken Sie anschließend auf die entsprechende SQL-Instanz. 
 
 Klicken Sie hierzu im Tab `Autorisierte IPs`{.action} auf den Button `IP-Adresse / Maske hinzufügen`{.action}.
 
@@ -57,7 +57,7 @@ Geben Sie im angezeigten Fenster im Feld `IP / Maske`{.action} die IP-Adresse od
 
 Für OVHcloud Webhostings müssen Sie die ausgehende IP-Adresse („gateway“) des Hostings hinzufügen. 
 
-Die ausgehende IP-Adresse können Sie über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) herausfinden. Klicken Sie auf `Web Cloud` und dann auf `Hosting-Pakete`{.action} in der linken Spalte. Wählen Sie Ihr Hosting aus der Liste und klicken Sie dann auf den Tab `FTP - SSH`.
+Die ausgehende IP-Adresse können Sie über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) herausfinden. Klicken Sie auf `Web Cloud` und dann auf `Hosting-Pakete`{.action} in der linken Spalte. Wählen Sie Ihr Hosting aus der Liste und klicken Sie dann auf den Tab `FTP - SSH`.
 
 Unter **FTP Server** wird Ihnen die Cluster-Nummer, auf der Ihr Hosting liegt, angezeigt.
 
@@ -73,7 +73,7 @@ Nachdem Sie die Cluster-Nummer Ihres Hostings abgerufen haben, überprüfen Sie 
 
 ### Wechseln des Datenbank-Angebots
 
-Um das Angebot Ihres Datenbanken-Servers zu wechseln, melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) an. Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus.
+Um das Angebot Ihres Datenbanken-Servers zu wechseln, melden Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) an. Klicken Sie auf `Web Cloud`{.action} und dann auf `Datenbanken`{.action} in der linken Spalte. Wählen Sie den Namen Ihres Datenbankservers aus.
 
 In der Standardansicht **Allgemeine Informationen** klicken Sie auf `...`{.action} rechts neben "RAM" und dann auf `RAM Menge ändern`{.action}, um zur Bestellung geleitet zu werden.
 

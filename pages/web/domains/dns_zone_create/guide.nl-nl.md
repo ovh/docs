@@ -23,13 +23,13 @@ Om een aantal redenen moet u mogelijk een DNS-zone aanmaken voor uw domeinnaam b
 - U moet beschikken over een domeinnaam.
 - De betreffende domeinnaam mag nog geen OVH DNS-zone hebben, of deel uitmaken van een actie of bestelling die momenteel bij OVH wordt verwerkt.
 - De technische configuratie van de domeinnaam moet correct zijn (status, SOA, etc.).
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 
 ## Instructies
 
 ### Stap 1: Creëer de DNS-zone via het Control Panel.
 
-Log u eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klik op `Bestelling`{.action} in de dienstenbalk aan de linkerkant en vervolgens op `DNS-zone`{.action}.
+Log u eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, klik op `Bestelling`{.action} in de dienstenbalk aan de linkerkant en vervolgens op `DNS-zone`{.action}.
 
 Voer in het popup-venster de domeinnaam in waarvoor u een OVH DNS wilt aanmaken. Wacht dan even totdat de tool zijn verificaties op de domeinnaam uitvoert.
 
@@ -52,7 +52,7 @@ Nadat u een optie hebt geselecteerd, gaat u door met het volgen van de volgende 
 
 Nu de DNS-zone van uw domeinnaam is gecreëerd, kunt u deze bewerken. Deze stap is optioneel, maar het kan van cruciaal belang zijn als u ervoor wilt zorgen dat aan uw domeinnaam gekoppelde diensten (bijvoorbeeld uw website en e-maildiensten) geen downtime ervaren.
 
-Als u deze DNS-zone wilt bewerken, klikt u in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} op `Domeinen`{.action} op de dienstenbalk aan de linkerkant en kiest u vervolgens de betreffende domeinnaam. Ga naar het `DNS-zone`{.action}-tabblad.
+Als u deze DNS-zone wilt bewerken, klikt u in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} op `Domeinen`{.action} op de dienstenbalk aan de linkerkant en kiest u vervolgens de betreffende domeinnaam. Ga naar het `DNS-zone`{.action}-tabblad.
 
 > [!primary]
 >

@@ -17,7 +17,7 @@ Verkkotunnuksen Domain Name System (DNS) -alue sisältää sen konfigurointitied
 
 ## Edellytykset
 
-- Sinulla on pääsyoikeus verkkotunnuksen hallintaan [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Sinulla on pääsyoikeus verkkotunnuksen hallintaan [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - Käytät kyseistä verkkotunnusta varten OVH:n konfiguraatiota (nimipalvelimia).
 - DynHost-tietue, jonka luomiseen valmistaudut, ei saa olla olemassa verkkotunnuksesi DNS-alueella “A”-tietueena.
 
@@ -25,14 +25,14 @@ Verkkotunnuksen Domain Name System (DNS) -alue sisältää sen konfigurointitied
 >
 > - Jos verkkotunnuksesi ei käytä OVH:n nimipalvelimia, sinun on lähestyttävä sen konfiguraatiota hallinnoivaa palveluntarjoajaa seuraavaa vaihetta varten.
 > 
-> - Jos verkkotunnuksesi on rekisteröity OVH:lle, voit tarkistaa, käyttääkö se konfiguraatiotamme. Mene sitä varten [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager){.external} välilehdelle `Nimipalvelimet`{.action}, kun olet ensin siirtynyt kyseiseen verkkotunnukseen.
+> - Jos verkkotunnuksesi on rekisteröity OVH:lle, voit tarkistaa, käyttääkö se konfiguraatiotamme. Mene sitä varten [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} välilehdelle `Nimipalvelimet`{.action}, kun olet ensin siirtynyt kyseiseen verkkotunnukseen.
 >
 
 ## Käytännössä
 
 ### 1. vaihe: DynHost-käyttäjän luominen
 
-Ensimmäinen vaihe koostuu DynHost-käyttäjän luomisesta. Tämän avulla voit toteuttaa dynaamisen DNS-tietueen päivityksen, jonka haluat luoda. Menettelyn aloittamiseksi kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa `Verkkotunnukset`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva verkkotunnus. Mene lopuksi välilehdelle `Sähköpostit`{.action}.
+Ensimmäinen vaihe koostuu DynHost-käyttäjän luomisesta. Tämän avulla voit toteuttaa dynaamisen DNS-tietueen päivityksen, jonka haluat luoda. Menettelyn aloittamiseksi kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, klikkaa `Verkkotunnukset`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva verkkotunnus. Mene lopuksi välilehdelle `Sähköpostit`{.action}.
 
 ![dynhost](images/use-dynhost-step1.png){.thumbnail}
 

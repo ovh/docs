@@ -19,7 +19,7 @@ The “Website not installed” warning page is designed to flag that your domai
 - You must have an [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}.
 - You must have the appropriate rights to manage the [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external} that your website is hosted on.
 - You must have the appropriate rights to manage the configuration for the domain name concerned (i.e. its DNS zone).
-- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Instructions
 
@@ -34,7 +34,7 @@ By following the two steps listed below, you can check these two configurations 
 
 ### Step 1: Check your Web Hosting plan’s configuration (Multisite)
 
-To check that the domain name has been correctly added as a multisite in your Web Hosting plan, go to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then click `Web hosting`{.action} in the left-hand services bar. In the Web Hosting plan list, click on the one hosting the website for which the “Website not installed” page appears. Go to the `Multisite`{.action} tab.
+To check that the domain name has been correctly added as a multisite in your Web Hosting plan, go to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, then click `Web hosting`{.action} in the left-hand services bar. In the Web Hosting plan list, click on the one hosting the website for which the “Website not installed” page appears. Go to the `Multisite`{.action} tab.
 
 The table that opens will contain all of the domain names added to your Web Hosting plan as multisites. You can use the search bar to find for the domain name concerned.
 
@@ -58,14 +58,14 @@ You can now check your domain name’s DNS configuration. You will need to do th
 
 > [!primary]
 >
-> If your domain name is registered with OVH, you can check if it uses our configuration. To do this, stay in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Domains`{.action} in the services bar on the left-hand side, then click on the domain name concerned. Next, go to the `DNS servers`{.action} tab.
+> If your domain name is registered with OVH, you can check if it uses our configuration. To do this, stay in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, click `Domains`{.action} in the services bar on the left-hand side, then click on the domain name concerned. Next, go to the `DNS servers`{.action} tab.
 >
 
 There are two areas where you can check this, depending on your domain name’s configuration:
 
 - **If your domain name does not use the OVH configuration:** you will need to check the configuration using the interface provided by the registrar that manages your domain name configuration.
 
-- **If your domain name uses the OVH configuration:** you will need to check the configuration from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Once you have clicked on the domain name concerned, go to the `DNS zone`{.action} tab. The DNS configuration will open in a table, with each line representing a different DNS record. You can filter the table content by DNS record type, or by domain name.
+- **If your domain name uses the OVH configuration:** you will need to check the configuration from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Once you have clicked on the domain name concerned, go to the `DNS zone`{.action} tab. The DNS configuration will open in a table, with each line representing a different DNS record. You can filter the table content by DNS record type, or by domain name.
 
 ![sitenotinstalled](images/site-not-installed-edit-ovh-dns-zone.png){.thumbnail}
 

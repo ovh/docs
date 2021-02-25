@@ -16,11 +16,11 @@ When you install or reinstall a Windows operating system, you are given an admin
 ## Requirements
 
 * a [Dedicated Server](https://www.ovh.lt/dedikuoti_serveriai/){.external} with Windows installed
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
 
-First, boot your server into [rescue mode](https://docs.ovh.com/lt/dedicated/ovh-rescue/){.external} using the WinRescue boot environment. Once the server has rebooted, select the `IPMI`{.action} tab on your server's page in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+First, boot your server into [rescue mode](https://docs.ovh.com/lt/dedicated/ovh-rescue/){.external} using the WinRescue boot environment. Once the server has rebooted, select the `IPMI`{.action} tab on your server's page in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 > [!primary]
 >

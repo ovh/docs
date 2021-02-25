@@ -9,13 +9,13 @@ section: vRack
 
 ## Objetivo
 
-El [vRack]({ovh_www}/soluciones/vrack/){.external} es una red privada que permite configurar el direccionamiento entre dos o más [servidores dedicados]({ovh_www}/servidores_dedicados/){.external} de OVH.
+El [vRack](https://www.ovh.es/soluciones/vrack/){.external} es una red privada que permite configurar el direccionamiento entre dos o más [servidores dedicados](https://www.ovhcloud.com/es-es/bare-metal/){.external} de OVH.
 
 **Esta guía explica cómo definir la zona de anuncio de un bloque de IP en el vRack.**
 
 ## Requisitos
 
-- Tener un [vRack]({ovh_www}/soluciones/vrack/){.external}.
+- Tener un [vRack](https://www.ovh.es/soluciones/vrack/){.external}.
 - Haber [configurado un bloque de IP en el vRack](../configurar-un-bloque-ip-en-el-vrack/).
 - Tener conocimientos avanzados de redes.
 
@@ -37,7 +37,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-En el ejemplo anterior, la dirección IP está anunciada en **Roubaix**. Puede verse en el último salto realizado: vl1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms. Si lo necesita, puede consultar nuestra página [Datacenters]({ovh_www}/quienes_somos/cpd.xml){.external} para identificar el datacenter correspondiente.
+En el ejemplo anterior, la dirección IP está anunciada en **Roubaix**. Puede verse en el último salto realizado: vl1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms.
 
 ### 2. Modificar el anuncio del bloque de IP
 
@@ -48,7 +48,7 @@ Conéctese a la [API de OVH](https://api.ovh.com/console/){.external} con su ID 
 > @api {GET} /vrack
 > 
 
-Esta llamada a la API permite mostrar la lista de vRacks. Si el nombre mostrado en la API no le permite identificar el vRack, puede consultarlo en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Cloud`{.action}. Haga clic en `vRack`{.action} en la columna izquierda y se desplegarán los vRacks existentes.
+Esta llamada a la API permite mostrar la lista de vRacks. Si el nombre mostrado en la API no le permite identificar el vRack, puede consultarlo en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Cloud`{.action}. Haga clic en `vRack`{.action} en la columna izquierda y se desplegarán los vRacks existentes.
 
 > [!api]
 >
@@ -81,7 +81,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-En el ejemplo anterior, la dirección IP está anunciada en **Gravelines**. Puede verse en el último salto realizado: be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms. Si lo necesita, puede consultar nuestra página [Datacenters]({ovh_www}/quienes_somos/cpd.xml){.external} para identificar el datacenter correspondiente.
+En el ejemplo anterior, la dirección IP está anunciada en **Gravelines**. Puede verse en el último salto realizado: be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms.
 
 ## Más información
 

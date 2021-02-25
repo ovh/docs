@@ -17,7 +17,7 @@ Diese Anleitung erläutert die Verwaltung der Nutzerrechte für das Managed Bare
 ## Voraussetzungen
 
 * Sie nutzen ein [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/){.external} Angebot.
-* Sie sind in Ihrem [OVHcloud Kunden Center](https://www.ovh.com/auth/?action=gotomanager){.external} angemeldet.
+* Sie sind in Ihrem [OVHcloud Kunden Center](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} angemeldet.
 
 ## Beschreibung
 

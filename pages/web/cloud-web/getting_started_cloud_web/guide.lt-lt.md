@@ -19,7 +19,7 @@ For our new [Cloud Web](https://www.ovh.lt/svetainiu-talpinimas/cloud-web.xml) s
 - a [Cloud Web hosting plan](https://www.ovh.lt/svetainiu-talpinimas/cloud-web.xml)
 - an email confirming that your hosting plan has been set up
 - a [domain name](https://www.ovh.lt/domenai/) for your website
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 
@@ -41,7 +41,7 @@ With [Cloud Web](https://www.ovh.lt/svetainiu-talpinimas/cloud-web.xml), you can
 
 The languages currently available are PHP and Node.js.
 
-To access the runtime software applications for your [Cloud Web](https://www.ovh.lt/svetainiu-talpinimas/cloud-web.xml) hosting plan, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime software`{.action} tab.
+To access the runtime software applications for your [Cloud Web](https://www.ovh.lt/svetainiu-talpinimas/cloud-web.xml) hosting plan, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the name of the Cloud Web hosting plan concerned. Next, go to the `Runtime software`{.action} tab.
 
 When you set up your hosting plan, a runtime software application will be created automatically. It is included as the `Default choice` in the table that appears. To modify a runtime software that has already been set, click on the three dots next to it, then `Modify`{.action}. 
 
@@ -137,7 +137,7 @@ There is no clear-cut, single approach to take since every project is different,
 
 Now that you have set up your project on your Cloud Web hosting plan, you can start creating email addresses. If you do not want to create any email addresses, please skip this step and move on to step 7.
 
-To create one or more email addresses, in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} click on `Emails`{.action} in the services bar on the left-hand side, then choose the domain name attached to your hosting plan.
+To create one or more email addresses, in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} click on `Emails`{.action} in the services bar on the left-hand side, then choose the domain name attached to your hosting plan.
 
 To create a new email address, click on `Create email address`{.action}, then follow the steps that appear. If you need any further assistance, please read our guide: [Creating an email address with your MX Plan package](https://docs.ovh.com/lt/emails/svetainiu_talpinimo_el_pastas_el_pasto_dezutes_kurimo_gidas/){.external}.
 
@@ -155,8 +155,8 @@ There are several OVH DNS records. We will focus on two particular records, whic
 
 |DNS record|Associated service|Where to find it|
 |---|---|---|
-|A|For the website|In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Hosting`{.action} section for the hosting plan concerned. Copy the IP address that appears next to "IPv4" in the `General information`{.action} tab.|
-|MX|For emails|In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Emails`{.action} section for the domain name concerned. Copy the information that appears next to “MX records” in the `General information`{.action} tab.|
+|A|For the website|In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, go to the `Hosting`{.action} section for the hosting plan concerned. Copy the IP address that appears next to "IPv4" in the `General information`{.action} tab.|
+|MX|For emails|In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, go to the `Emails`{.action} section for the domain name concerned. Copy the information that appears next to “MX records” in the `General information`{.action} tab.|
 
 #### 2. Check and/or modify the DNS records.
 
@@ -166,14 +166,14 @@ Now that you are more familiar with the OVH DNS records for your [Cloud Web](htt
 >
 > - If your domain name does not use the OVH DNS configuration, you will need to make changes using the interface given by the service provider managing your domain name.
 > 
-> - If your domain name is registered with OVH, you can check if the domain name is using our DNS configuration. To do this, go to the [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, select the domain name concerned, and go to the `DNS servers`{.action} tab.
+> - If your domain name is registered with OVH, you can check if the domain name is using our DNS configuration. To do this, go to the [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, select the domain name concerned, and go to the `DNS servers`{.action} tab.
 >
 
 Please read the instructions below to see where you should make the changes:
 
 |DNS configuration used|Where to make the changes|
 |---|---|
-|OVH|In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Domains`{.action} section for the domain name concerned. Then in the DNS zone tab, check and edit the information as required. If you need any further assistance, you can read our guide to [Editing an OVH DNS zone](https://docs.ovh.com/lt/domains/svetainiu_talpinimas_kaip_redaguoti_dns_zona/){.external}.|
+|OVH|In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, go to the `Domains`{.action} section for the domain name concerned. Then in the DNS zone tab, check and edit the information as required. If you need any further assistance, you can read our guide to [Editing an OVH DNS zone](https://docs.ovh.com/lt/domains/svetainiu_talpinimas_kaip_redaguoti_dns_zona/){.external}.|
 |Other|From the interface given by the service provider managing your domain name’s DNS configuration. Please contact your service provider if you encounter any difficulties making these changes.|
 
 Once you have modified your domain name’s DNS configuration, you will need to allow a maximum of 24 hours for the changes to fully propagate and take effect. If you have added several domain names to your Cloud Web hosting plan as a multisite, you will need to make these two changes for each individual domain name. 

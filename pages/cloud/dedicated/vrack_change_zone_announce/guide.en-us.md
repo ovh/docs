@@ -37,7 +37,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-In this example, the tested IP address is currently announced to **Roubaix**. This is visible in the last completed hop: 'l1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms.' Use our "[Datacentres](https://www.ovhcloud.com/en/about-us/infrastructure-software/){.external}" page to identify the one concerned, if necessary.
+In this example, the tested IP address is currently announced to **Roubaix**. This is visible in the last completed hop: 'l1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms.'
 
 ### Step 2: Change the announcement zone of the IP block
 
@@ -48,7 +48,7 @@ Go to <https://ca.api.ovh.com/console/>, then sign in with your OVHcloud custome
 > @api {GET} /vrack#GET
 > 
 
-This API allows you to retrieve the list of vRack services. If you can't identify the service concerned with these references, they can be found in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. To do this, go to the “Cloud” section, then “vRack”.
+This API allows you to retrieve the list of vRack services. If you can't identify the service concerned with these references, they can be found in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}. To do this, go to the “Cloud” section, then “vRack”.
 
 > [!api]
 >
@@ -81,7 +81,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-In this example, the tested IP address is now announced to **Gravelines**. This is visible in the last hop: 'be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms.’ Use our "[Datacentres](https://www.ovhcloud.com/en/about-us/infrastructure-software/){.external}" page to identify the one concerned, if necessary.
+In this example, the tested IP address is now announced to **Gravelines**. This is visible in the last hop: 'be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms.’
 
 ## Go further
 

@@ -23,7 +23,7 @@ Una licencia Office 365 puede utilizarse en 5 PC o Mac, 5 tablets y 5 smartphone
 
 ### Acceder al área de cliente para administrar un servicio Office 365 Reseller
 
-Una vez que el servicio Office 365 haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Una vez que el servicio Office 365 haya sido creado y esté disponible, puede administrarlo desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 Para ello, acceda a la sección `Sunrise`{.action} del área de cliente. En la columna izquierda, haga clic en `Office 365 Revendeurs`{.action} y seleccione el servicio.
 

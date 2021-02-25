@@ -61,7 +61,7 @@ Geben Sie nun folgende Daten ein:
 |Information|Beschreibung|
 |---|---|
 |E-Mail-Adresse|Dieses Feld sollte bereits ausgefüllt sein. Ist das nicht der Fall, geben Sie bitte Ihre vollständige E-Mail-Adresse ein.|
-|Server|Tragen Sie hier den Server ein, auf dem Ihr Exchange Dienst gehostet ist. Sie finden die Server-Informationen in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}, wenn Sie im Menü den betreffenden Exchange Dienst auswählen. Gehen Sie dann auf den Tab `Allgemeine Informationen`{.action}. Der entsprechende Server wird unter `Verbindung`{.action} angezeigt.|
+|Server|Tragen Sie hier den Server ein, auf dem Ihr Exchange Dienst gehostet ist. Sie finden die Server-Informationen in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, wenn Sie im Menü den betreffenden Exchange Dienst auswählen. Gehen Sie dann auf den Tab `Allgemeine Informationen`{.action}. Der entsprechende Server wird unter `Verbindung`{.action} angezeigt.|
 |Domain|Nichts eingeben.|
 |Benutzername|Geben Sie Ihre vollständige E-Mail-Adresse ein.|  
 |Passwort|Dieses Feld sollte bereits ausgefüllt sein. Ist das nicht der Fall, geben Sie das Passwort der E-Mail-Adresse ein.|

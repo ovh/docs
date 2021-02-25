@@ -17,13 +17,13 @@ I database server SQL Privato e Cloud Database ti danno la possibilità di agire
 ## Prerequisiti
 
 - Disporre di una [soluzione di hosting SQL Privato](https://www.ovh.it/hosting-web/opzioni-sql.xml) o [Cloud Database](https://www.ovh.it/cloud-databases/)
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
 ### Visualizza le informazioni generali del tuo database server
 
-Nel menu a sinistra del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), clicca su Database` nella sezione `{.action}Database e seleziona l'istanza SQL. Assicurati di trovarti nella scheda `Informazioni generali`{.action}.
+Nel menu a sinistra del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su Database` nella sezione `{.action}Database e seleziona l'istanza SQL. Assicurati di trovarti nella scheda `Informazioni generali`{.action}.
 
 In questa interfaccia vengono mostrate anche le informazioni principali della tua istanza SQL. Ti consigliamo di verificarne la correttezza e assicurarti che corrispondano alle descrizioni indicate qui sotto:
 
@@ -43,7 +43,7 @@ In questa interfaccia vengono mostrate anche le informazioni principali della tu
 
 Per il corretto funzionamento dell'accesso alla tua istanza CloudDB, è necessario indicare gli indirizzi IP o le classi di IP che possono connettersi ai tuoi database.
 
-nel menu a sinistra del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), seleziona `Database`{.action} > Istanza SQL corrispondente. 
+nel menu a sinistra del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), seleziona `Database`{.action} > Istanza SQL corrispondente. 
 
 Clicca sulla scheda `IP autorizzati`{.action} e poi sul pulsante `Aggiungi un indirizzo IP/mask`{.action}.
 
@@ -57,7 +57,7 @@ Nella finestra che appare indica l’indirizzo IP o la mask da autorizzare in `I
 
 Per gli hosting Web OVHcloud è necessario autorizzare l'indirizzo IP gateway di uscita. 
 
-Per recuperare l'indirizzo IP "**gateway**" accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Clicca sulla scheda `Web Cloud` e poi `su Hosting`{.action} nella colonna di sinistra. Seleziona il tuo hosting dalla lista e clicca sulla scheda `FTP - SSH`.
+Per recuperare l'indirizzo IP "**gateway**" accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi `su Hosting`{.action} nella colonna di sinistra. Seleziona il tuo hosting dalla lista e clicca sulla scheda `FTP - SSH`.
 
 Ritrova la voce **"Server FTP"**, che ti indicherà il numero di cluster su cui sei, come mostrato qui di seguito.
 
@@ -73,7 +73,7 @@ Dopo aver recuperato il numero del cluster su cui è situato il tuo hosting, con
 
 ### Modifica l'offerta del database server
 
-Per modificare l'offerta del tuo database server, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo database server.
+Per modificare l'offerta del tuo database server, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo database server.
 Nella scheda **"Informazioni generali"**, visualizzata di default, clicca su `...`{.action} a destra della voce "RAM" e poi su `Modifica la quantità di RAM`{.action} per accedere all'ordine di questo passaggio.
 
 ![private-sql](images/private-sql-order-ram01.png){.thumbnail}
@@ -98,7 +98,7 @@ Dopo la conferma dei contratti, verrai reindirizzato al buono d'ordine da cui sa
 
 ### Modifica la configurazione del tuo database server
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo server SQL privato. 
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo server SQL privato. 
 
 #### Istanza MySQL e MariaDB
 
@@ -191,7 +191,7 @@ show variabili like "version";
 
 In questo modo è possibile visualizzare il tempo di esecuzione delle richieste sul tuo database server nelle ultime 24 ore.
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo database server. 
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo database server. 
 
 Clicca sulla scheda `Metriche` del tuo database server. Il grafico **"Statistiche dei tempi di esecuzione delle richieste"**.
 
@@ -205,7 +205,7 @@ Clicca sulla scheda `Metriche` del tuo database server. Il grafico **"Statistich
 
 Questi log, chiamati **"slow-query.log"**, possono essere recuperati alla radice dello spazio SFTP del tuo database server. 
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo database server. 
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo database server. 
 
 Nella scheda `informazioni generali`, consulta la sezione **"SFTP"** nel riquadro **"Informazioni di connessione"**
 
@@ -218,7 +218,7 @@ Se questo file è vuoto, significa che non hai richieste lente.
 
 #### Monitora la RAM consumata
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo database server. 
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo database server. 
 
 Clicca sulla scheda `Metriche` dello Spazio Cliente. Il grafico **"Statistiche della memoria RAM utilizzata"**.
 
@@ -228,7 +228,7 @@ Clicca sulla scheda `Metriche` dello Spazio Cliente. Il grafico **"Statistiche d
 
 Questo grafico permette di seguire, nelle ultime 24 ore, il carico di connessione al minuto sul tuo database server.
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo database server. 
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo database server. 
 
 Clicca sulla scheda `Metriche` dello Spazio Cliente. Il grafico **"Statistiche del totale delle connessioni al minuto"**.
 

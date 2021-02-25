@@ -41,8 +41,8 @@ This code redirects each /letstest request to the /test_wslash/testing.php scrip
 
 ```
 RewriteEngine on
-Rewritecond %{HTTP_HOST} ^example.com$
-Rewriterule ^(.*) http://www.example.com/$1 [QSA,L,R=301]
+RewriteCond %{HTTP_HOST} ^example.com$
+RewriteRule ^(.*) http://www.example.com/$1 [QSA,L,R=301]
 ```
 
 
@@ -56,9 +56,9 @@ Rewriterule ^(.*) http://www.example.com/$1 [QSA,L,R=301]
 
 ```
 RewriteEngine on
-Rewritecond %{HTTP_HOST} ^example.com
-Rewritecond %{REQUEST_URI} !^/MySite
-Rewriterule ^(.*)$ /MySite/
+RewriteCond %{HTTP_HOST} ^example.com
+RewriteCond %{REQUEST_URI} !^/MySite
+RewriteRule ^(.*)$ /MySite/
 ```
 
 

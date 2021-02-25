@@ -22,7 +22,7 @@ OVHcloud offre aux clients VPS des images d'applications préinstallées pour un
 
 ### Installer l'application préinstallée de votre choix
 
-Depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager) ou les API OVHcloud, installez l'application de votre choix. Vous pouvez également consulter notre guide [Débuter avec un VPS](../debuter-avec-vps/).
+Depuis [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou les API OVHcloud, installez l'application de votre choix. Vous pouvez également consulter notre guide [Débuter avec un VPS](../debuter-avec-vps/).
  
 #### cPanel
 

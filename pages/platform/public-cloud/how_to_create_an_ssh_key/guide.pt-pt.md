@@ -21,7 +21,7 @@ Note que as chaves SSH não são utilizadas para a autenticação nas instância
 ## Requisitos
 
 * um projeto [Public Cloud](https://www.ovh.pt/public-cloud/){.external} na sua conta OVH
-* acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+* acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
 
 ## Instruções
 
@@ -106,7 +106,7 @@ Em seguida, mova o rato de forma aleatória na zona vazia situada por baixo da b
 
 ### Como importar a sua chave SSH para a Área de Cliente OVH
 
-Primeiro, selecione e copie o texto da sua chave pública e, em seguida, faça login na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Primeiro, selecione e copie o texto da sua chave pública e, em seguida, faça login na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 Agora clique no menu `Public Cloud`{.action}.
 

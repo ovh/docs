@@ -21,7 +21,7 @@ OVHcloud udostępnia Ci zintegrowane z Panelem klienta narzędzia umożliwiając
 
 ## W praktyce
 
-Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i wybierz `Telefonia`{.action}. Następnie kliknij pozycję `SMS`{.action} po lewej stronie, po czym wybierz Twoje konto SMS.
+Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Telefonia`{.action}. Następnie kliknij pozycję `SMS`{.action} po lewej stronie, po czym wybierz Twoje konto SMS.
 
 Pasek narzędzi oraz skróty ułatwiają dostęp do głównych funkcji służących do wysyłania kampanii SMS.
 

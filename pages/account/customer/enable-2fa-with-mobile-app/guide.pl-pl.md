@@ -17,7 +17,7 @@ Weryfikacja dwuetapowa za pomocą systemu *one-time password* (OTP) dostępna za
 ## Wymagania początkowe
 
 - Zapoznanie się z [różnymi metodami weryfikacji dwuetapowej przez OVHcloud](https://docs.ovh.com/pl/customer/zabezpieczenie-konta-za-pomoca-2FA/).
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Zainstalowanie aplikacji OTP na smartfonie lub tablecie z systemem Android lub iOS.
 
 > [!primary]
@@ -33,7 +33,7 @@ Weryfikacja dwuetapowa za pomocą systemu *one-time password* (OTP) dostępna za
 
 ### Etap 1: włączenie weryfikacji dwuetapowej
 
-Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Kliknij Twoją nazwę użytkownika w prawym górnym rogu (pierwszy etap na poniższym obrazie), a następnie `Moje konto`{.action} (drugi etap). Następnie kliknij `Bezpieczeństwo`{.action} (trzeci etap) i `Aktywuj weryfikację dwuetapową `{.action} (czwarty etap).
+Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij Twoją nazwę użytkownika w prawym górnym rogu (pierwszy etap na poniższym obrazie), a następnie `Moje konto`{.action} (drugi etap). Następnie kliknij `Bezpieczeństwo`{.action} (trzeci etap) i `Aktywuj weryfikację dwuetapową `{.action} (czwarty etap).
 
 ![2FA mobileapp](images/hub2FA.png){.thumbnail}
 

@@ -13,7 +13,7 @@ This guide covers the process of starting a simple interactive notebook leveragi
 
 ## Requirements
 
--   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+-   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 -   an **AI Training project** created inside a **public cloud** project
 -   a [user for AI Training](../create-user)
 

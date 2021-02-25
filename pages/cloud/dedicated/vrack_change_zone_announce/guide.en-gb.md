@@ -9,13 +9,13 @@ section: vRack
 
 ## Objective
 
-The [vRack]({ovh_www}/solutions/vrack/){.external} is a private network that allows you to configure the address between two or more [OVH dedicated servers]({ovh_www}/dedicated_servers/){.external}.
+The [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} is a private network that allows you to configure the address between two or more [OVH dedicated servers](https://www.ovhcloud.com/en-gb/bare-metal/){.external}.
 
 **Learn how to set the announcement zone of an IP block in vRack.**
 
 ## Requirements:
 
-- a [vRack]({ovh_www}/solutions/vrack/){.external}
+- a [vRack](https://www.ovh.co.uk/solutions/vrack/){.external}
 - a [configured block of IP addresses in the vRack](../ip-block-vrack/)
 - basic network knowledge
 
@@ -37,7 +37,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-In this example, the tested IP address is currently announced to **Roubaix**. This is visible in the last completed hop: 'l1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms.' Use our "[Datacentres]({ovh_www}/aboutus/datacentres.xml){.external}" page to identify the one concerned, if necessary.
+In this example, the tested IP address is currently announced to **Roubaix**. This is visible in the last completed hop: 'l1247.**rbx**-g1-a75.fr.eu (37.187.231.234) 1.816 ms.' 
 
 ### Step 2: Change the announcement zone of the IP block
 
@@ -48,7 +48,7 @@ Go to <https://api.ovh.com/console/>, then sign in with your OVH customer ID. Us
 > @api {GET} /vrack#GET
 > 
 
-This API allows you to retrieve the list of vRack services. If you can't identify the service concerned with these references, they can be found in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. To do this, go to the “Cloud” section, then “vRack”.
+This API allows you to retrieve the list of vRack services. If you can't identify the service concerned with these references, they can be found in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. To do this, go to the “Cloud” section, then “vRack”.
 
 > [!api]
 >
@@ -81,7 +81,7 @@ traceroute to 1.2.3.4, 30 hops max, 60 byte packets
  8  1.2.3.4  2.865 ms
 ```
 
-In this example, the tested IP address is now announced to **Gravelines**. This is visible in the last hop: 'be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms.’ Use our "[Datacentres]({ovh_www}/aboutus/datacentres.xml){.external}" page to identify the one concerned, if necessary.
+In this example, the tested IP address is now announced to **Gravelines**. This is visible in the last hop: 'be120.**gra**-d1-a75.fr.eu (37.187.232.74) 0.351 ms.’ 
 
 ## Go further
 

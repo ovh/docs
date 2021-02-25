@@ -16,7 +16,7 @@ Přesměrováním domény můžete svou doménu nasměrovat na nový cíl. Exist
 
 ## Prerekvizity
 
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - Přístup k webhostingovému řešení (pokud si přejete přidat soubor .htaccess).
 
 ## Postup
@@ -37,7 +37,7 @@ Mějte prosím na paměti, že přesměrování ovlivní SEO rating Vašich webo
 
 ### Přesměrování domény pomocí Zákaznického prostoru OVH
 
-Přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} a levém postranním panelu vyberte sekci `Domény`{.action} (číslo *1* na obrázku níže). Vyberte požadovanou doménu a přejděte do záložky `Přesměrování`{.action} (číslo *2* na obrázku níže).
+Přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} a levém postranním panelu vyberte sekci `Domény`{.action} (číslo *1* na obrázku níže). Vyberte požadovanou doménu a přejděte do záložky `Přesměrování`{.action} (číslo *2* na obrázku níže).
 
 Tabulka nabízí seznam všech aktivních přesměrování, která jsou na doméně nakonfigurována.
 

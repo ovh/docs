@@ -17,7 +17,7 @@ Se hai ricevuto un’email che ti informa che uno dei tuoi indirizzi email è bl
 ## Prerequisiti
 
 - Disporre di un [servizio di posta elettronica OVHcloud](https://www.ovh.it/emails/){.external}.
-- Avere accesso alla sezione [Web](https://www.ovh.com/auth/?action=gotomanager) dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Avere accesso alla sezione [Web](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
@@ -25,7 +25,7 @@ Se hai ricevuto un’email che ti informa che uno dei tuoi indirizzi email è bl
 
 #### Per un indirizzo email Exchange
 
-Accedi alla sezione “Web” dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action}nel menu a sinistra.
+Accedi alla sezione “Web” dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action}nel menu a sinistra.
 
 Clicca sulla scheda `Account email`{.action} della tua piattaforma. Se la colonna “stato” dell’indirizzo email interessato indica “bloccato”, clicca sui tre puntini `...`{.action} a destra in corrispondenza dell’account e poi su `Sblocca`{.action}. A questo punto punto, passa allo [Step 2](./#step-2-accedi-al-ticket-di-assistenza_1){.external} della guida.
 
@@ -33,7 +33,7 @@ Clicca sulla scheda `Account email`{.action} della tua piattaforma. Se la colonn
 
 #### Per un indirizzo E-mail Pro
 
-Accedi alla sezione “Web” dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > Exchangenel menu a sinistra.
+Accedi alla sezione “Web” dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Seleziona il tuo servizio cliccando su `Microsoft`{.action} > Exchangenel menu a sinistra.
 
 Clicca sulla scheda `Account email`{.action} della tua piattaforma. Se la colonna “stato” a destra dell’indirizzo email in questione indica “Spam”, clicca su questa voce e poi su `Rispondi al ticket`{.action}. Quindi passa allo [Step 2](./#step-2-accedi-al-ticket-di-assistenza_1){.external} della guida.
 
@@ -41,7 +41,7 @@ Clicca sulla scheda `Account email`{.action} della tua piattaforma. Se la colonn
 
 #### Per un indirizzo email MX Plan
 
-Accedi alla sezione “Web” dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). e seleziona il tuo servizio nella sezione `Email`{.action} del menu a sinistra.
+Accedi alla sezione “Web” dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). e seleziona il tuo servizio nella sezione `Email`{.action} del menu a sinistra.
 
 Clicca sulla scheda `Account email`{.action} della tua piattaforma. Se la colonna “stato” a destra dell’indirizzo email in questione indica “Spam”, clicca su questa voce e poi su `Rispondi al ticket`{.action}. A questo punto, passa allo [Step 2](./#step-2-accedi-al-ticket-di-assistenza_1){.external} della guida.
 

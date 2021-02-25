@@ -75,7 +75,7 @@ admin@instance:~$ sudo service httpd restart
 
 
 ### Telechargement de Wordpress
-Rendez vous sur le site de [Wordpress](https://fr.wordpress.org/txt-download/){.external} afin de télécharger la version la plus récente :
+Rendez vous sur le site de [Wordpress](https://wordpress.org/download/){.external} afin de télécharger la version la plus récente :
 
 
 ```bash

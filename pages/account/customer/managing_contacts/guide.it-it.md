@@ -28,7 +28,7 @@ L'identificativo cliente è un codice personale che viene inviato via email al m
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Avere accesso all'indirizzo email inserito nel tuo profilo
 - Disporre dei diritti sufficienti sul servizio interessato
 - Avere a disposizione l’identificativo cliente del nuovo contatto (per cui si sta effettuando la modifica)
@@ -39,7 +39,7 @@ L'identificativo cliente è un codice personale che viene inviato via email al m
 
 ### Accedi alla pagina di gestione dei contatti
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, clicca sul tuo nome utente in alto a destra e seleziona `Gestisci i contatti`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca sul tuo nome utente in alto a destra e seleziona `Gestisci i contatti`{.action}.
 
 ![Gestione dei contatti](images/hubcontacts.png){.thumbnail}
 
@@ -99,7 +99,7 @@ Se uno dei contatti non ha ricevuto l'email, l'indirizzo di contatto inserito ne
 
 ![Gestione dei contatti](images/managing_contacts_06.png){.thumbnail}
 
-Se la modifica viene confermata da uno solo dei contatti, verrà visualizzato un messaggio che informa che la richiesta è ancora in attesa di convalida da parte dell'altro contatto. Nel caso che uno dei contatti abbia appena confermato la richiesta, è possibile che l’aggiornamento della pagina nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} richieda alcuni minuti.
+Se la modifica viene confermata da uno solo dei contatti, verrà visualizzato un messaggio che informa che la richiesta è ancora in attesa di convalida da parte dell'altro contatto. Nel caso che uno dei contatti abbia appena confermato la richiesta, è possibile che l’aggiornamento della pagina nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} richieda alcuni minuti.
 
 ![Gestione dei contatti](images/managing_contacts_07.png){.thumbnail}
 

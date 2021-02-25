@@ -25,7 +25,7 @@ Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVH udost�
 ## Wymagania początkowe
 
 - Korzystanie z usługi OVH ze zintegrowaną zaporą ogniową, Network Firewall: ([serwer dedykowany](https://www.ovh.pl/serwery_dedykowane/){.external}, [serwer VPS](https://www.ovh.pl/vps/){.external}, [instancje Public Cloud](https://www.ovh.pl/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh.pl/private-cloud/){.external}, [IP Failover](https://www.ovh.pl/serwery_dedykowane/ip_failover.xml){.external}, etc.)
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 
 ## W praktyce
@@ -37,7 +37,7 @@ Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVH udost�
 > Network Firewall chroni adresy IP powiązane z serwerem.  Należy zatem skonfigurować reguły dla każdego adresu IP oddzielnie. Wprowadzenie wspólnej konfiguracji dla całego serwera nie jest możliwe.
 > 
 
-Po zalogowaniu do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, przejdź do sekcji `IP`{.action} i kliknij `...`{.action}, aby aktywować zaporę na wybranym adresie IPv4.
+Po zalogowaniu do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `IP`{.action} i kliknij `...`{.action}, aby aktywować zaporę na wybranym adresie IPv4.
 
 ![Aktywacja Network Firewall ](images/firewall_creation.png){.thumbnail}
 

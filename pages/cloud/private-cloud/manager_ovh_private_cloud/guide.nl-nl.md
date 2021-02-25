@@ -16,7 +16,7 @@ Het OVH Control Panel biedt u talrijke mogelijkheden voor het instellen van uw P
 
 ## Vereisten
 
-- U moet zijn ingelogd op uw[OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in het `Dedicated`{.action}-gedeelte en vervolgens `Private Cloud`{.action}.
+- U moet zijn ingelogd op uw[OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} in het `Dedicated`{.action}-gedeelte en vervolgens `Private Cloud`{.action}.
 - U moet beschikken over een [Private Cloud](https://www.ovh.com/nl/private-cloud/){.external} product.
 
 
@@ -24,7 +24,7 @@ Het OVH Control Panel biedt u talrijke mogelijkheden voor het instellen van uw P
 
 ### Algemeen
 
-Nadat u hebt geklikt op `Dedicated`{.action} en u `Private Cloud`{.action} van uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} geopend hebt, ziet u een algemeen overzicht van uw Private Cloud:
+Nadat u hebt geklikt op `Dedicated`{.action} en u `Private Cloud`{.action} van uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} geopend hebt, ziet u een algemeen overzicht van uw Private Cloud:
 
 ![Algemene informatie](images/manager_general.png){.thumbnail}
 

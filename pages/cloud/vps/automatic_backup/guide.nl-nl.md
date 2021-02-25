@@ -4,6 +4,7 @@ title: Automatische back-up
 excerpt: ''
 slug: automatische_back-up
 legacy_guide_number: g1486
+hidden: true
 ---
 
 

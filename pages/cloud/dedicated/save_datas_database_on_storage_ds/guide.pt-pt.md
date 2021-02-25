@@ -9,7 +9,7 @@ section: Tutoriais
 
 Os seus dados informáticos são sensíveis: a sua perda ou alteração pode afetar a sua atividade. Uma vez que existem sempre riscos, aconselhamos que efetue cópias de segurança diariamente e, de preferência, para um servidor ou uma solução de armazenamento diferente das suas infraestruturas de produção.
 
-A OVH propõe uma gama de [servidores dedicados](https://www.ovh.pt/servidores_dedicados/armazenamento/){.external} adaptados às suas operações de armazenamento e que incluem, no mínimo, quatro discos rígidos. É possível utilizar estes recursos para armazenar uma infraestrutura alojada na OVH ou noutro fornecedor, através da rede pública (Internet).
+A OVH propõe uma gama de [servidores dedicados](https://www.ovhcloud.com/pt/bare-metal/storage/){.external} adaptados às suas operações de armazenamento e que incluem, no mínimo, quatro discos rígidos. É possível utilizar estes recursos para armazenar uma infraestrutura alojada na OVH ou noutro fornecedor, através da rede pública (Internet).
 
 Neste tutorial, ficará a saber como configurar um servidor de armazenamento da OVH para responder às suas necessidades, como criar a arborescência de receção de backups e como automatizar o backup dos dados dos dois servidores distantes através do protocolo SCP.
 
@@ -26,9 +26,9 @@ Neste tutorial, ficará a saber como configurar um servidor de armazenamento da 
 
 ### O que precisa de ter
 
-- Um [servidor de armazenamento OVH](https://www.ovh.pt/servidores_dedicados/armazenamento/
+- Um [servidor de armazenamento OVH](https://www.ovhcloud.com/pt/bare-metal/storage/)
 ){.external}.
-- Uma infraestrutura de produção ([VPS](https://www.ovh.pt/vps/){.external}, [servidores dedicados](https://www.ovh.pt/servidores_dedicados/){.external}, [Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external}, etc.).
+- Uma infraestrutura de produção ([VPS](https://www.ovhcloud.com/pt/vps/){.external}, [servidores dedicados](https://www.ovhcloud.com/pt/bare-metal/){.external}, [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/){.external}, etc.).
 - Um acesso SSH configurado entre o servidor de armazenamento e a infraestrutura de produção.
 - Recomendação: uma rede privada entre os servidores ([vRack OVH](https://www.ovh.pt/solucoes/vrack/){.external}).
 
@@ -38,7 +38,7 @@ Neste tutorial, ficará a saber como configurar um servidor de armazenamento da 
 
 ### 1 - Escolher o modo RAID apropriado
 
-A OVH dispõe de uma gama de [servidores de armazenamento](https://www.ovh.pt/servidores_dedicados/armazenamento/){.external}, cujas configurações materiais incluem vários discos rígidos. No exemplo que apresentamos, dispomos de um RAID por software (ou _soft RAID_) de quatro discos com capacidade de 6 TB cada.
+A OVH dispõe de uma gama de [servidores de armazenamento](https://www.ovhcloud.com/pt/bare-metal/storage/){.external}, cujas configurações materiais incluem vários discos rígidos. No exemplo que apresentamos, dispomos de um RAID por software (ou _soft RAID_) de quatro discos com capacidade de 6 TB cada.
 
 A OVH permite-lhe escolher a configuração de armazenamento dos dados com as opções de RAID 0, 1, 5, 6 e 10. Cada um destes modos apresenta vantagens e desvantagens no que diz respeito ao desempenho e à resiliência. Assim, com quatro discos, é possível armazenar informações de forma eficiente em RAID 5, 6 ou 10 (os RAID 0 e 1 não são adequados para esta situação).
 
@@ -67,7 +67,7 @@ Não há um RAID melhor que o outro: todos eles respondem a necessidades diferen
 
 ### 2 - Instalar e configurar o servidor
 
-Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e instale o seu servidor. Tal como indicado anteriormente, iremos utilizar o Debian 9.4. Para obter mais informações, consulte o nosso manual que explica os [Primeiros passos com um servidor dedicado](https://docs.ovh.com/pt/dedicated/primeiros-passos-servidor-dedicado/){.external}.
+Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e instale o seu servidor. Tal como indicado anteriormente, iremos utilizar o Debian 9.4. Para obter mais informações, consulte o nosso manual que explica os [Primeiros passos com um servidor dedicado](https://docs.ovh.com/pt/dedicated/primeiros-passos-servidor-dedicado/){.external}.
 
 Depois de selecionar o sistema para a instalação, selecione a opção `Personalizar a configuração das partições`{.action}.
 

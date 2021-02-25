@@ -22,7 +22,7 @@ Todas las cuentas de SMS de OVHcloud permiten utilizar una o varias agendas de c
 
 ### 1. Crear una agenda de contactos en el área de cliente
 
-Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager), en la pestaña `Telecom`{.action}. A continuación, haga clic en `SMS`{.action} en la columna izquierda
+Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la pestaña `Telecom`{.action}. A continuación, haga clic en `SMS`{.action} en la columna izquierda
 
 y seleccione su cuenta de SMS.
 
@@ -98,7 +98,7 @@ Si quiere modificar el nombre de una agenda de contactos, selecciónela en el me
 
 Para eliminar una agenda, selecciónela en el menú desplegable (1) y haga clic en `Eliminar la agenda de contactos`{.action} (3). 
 
-Para editar o eliminar un contacto, haga clic en el icono con forma de tres puntos (`...`{.action}) que aparece en la columna «Acciones» (4), junto al contacto correspondiente. Podrá elegir entre realizar cualquiera de estas dos acciones (5).
+Para editar o eliminar un contacto, haga clic en el icono con forma de tres puntos (`...`{.action}) que aparece en la columna «Acciones» (4), junto al contacto correspondiente. Podrá elegir entre realizar cualquiera de estas dos acciones.
 
 ![](images/smsphonebook7.png){.thumbnail}
 

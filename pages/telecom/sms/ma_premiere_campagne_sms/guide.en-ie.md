@@ -17,7 +17,7 @@ OVHcloud provides tools integrated into the OVHcloud Control Panel, for sending 
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), then select `Telecom`{.action}. Next, click `SMS`{.action} on the left, and select your SMS account.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), then select `Telecom`{.action}. Next, click `SMS`{.action} on the left, and select your SMS account.
 
 The toolbar and shortcuts will give you access to the main features for sending SMS campaigns.
 

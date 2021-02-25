@@ -18,7 +18,7 @@ Vous pouvez ainsi dissocier le compte OVHcloud qui se chargera de payer vos fact
 
 ## Prérequis
 
-- Deux comptes OVHcloud, chacune des entités devant avoir accès à son propre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Deux comptes OVHcloud, chacune des entités devant avoir accès à son propre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
 - Un projet Public Cloud
 - Assurez-vous que les contacts administratifs et de facturation appartiennent à la même filiale
 
@@ -26,7 +26,7 @@ Vous pouvez ainsi dissocier le compte OVHcloud qui se chargera de payer vos fact
 
 ### Modifier les contacts
 
-Connectez-vous à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} du compte administrant actuellement votre projet Public cloud. Cliquez ensuite sur `Public Cloud`{.action}. Choisissez le projet Public cloud concerné puis cliquez sur `Contacts and Rights`{.action} dans le menu `Project Management`
+Connectez-vous à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} du compte administrant actuellement votre projet Public cloud. Cliquez ensuite sur `Public Cloud`{.action}. Choisissez le projet Public cloud concerné puis cliquez sur `Contacts and Rights`{.action} dans le menu `Project Management`
 
 ![changement contacts](images/contact.png){.thumbnail}
 
@@ -55,7 +55,7 @@ La modification doit être confirmée dans les deux comptes.
 > Cette étape doit être réalisée sur chacun des deux comptes OVHcloud.
 >
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur votre nom en haut à droite puis sur `Gestion des contacts`{.action}.
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur votre nom en haut à droite puis sur `Gestion des contacts`{.action}.
 
 ![hub gestion des contacts](images/hub-contacts.png){.thumbnail}
 

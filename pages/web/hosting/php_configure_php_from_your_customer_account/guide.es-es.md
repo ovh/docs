@@ -113,7 +113,7 @@ Si desea volver a la versión de PHP anterior, le invitamos a consultar el apart
 Si usted no es el desarrollador de su sitio, puede ponerse en contacto con su webmaster.
 
 ## ¿Cómo conocer la versión de PHP que se utiliza en un directorio específico?
-Su área de cliente muestra la versión de PHP «global», es decir, la que se define en la raíz del alojamiento. Si ha guardado una configuración particular en un subdirectorio, puede ver la versión de PHP utilizada descargando el siguiente archivo: [info.php](https://www.ovh.com/fr/documents/info.php). 
+Su área de cliente muestra la versión de PHP «global», es decir, la que se define en la raíz del alojamiento. 
 Si desea hacerlo manualmente, basta con crear un archivo de texto e incluir: 
 
 ```
