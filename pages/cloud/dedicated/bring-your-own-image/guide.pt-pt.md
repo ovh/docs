@@ -5,11 +5,15 @@ slug: bringyourownimage
 section: Uso avançado
 ---
 
-**Última atualização: 20/10/2020**
+**Última atualização: 25/02/2021**
 
 ## Objetivo
 
 Graças à tecnologia Bring Your Own Image, é-lhe agora possível implementar imagens *cloudready* diretamente nos seus servidores dedicados. Assim, pode utilizar o produto bare metal como recurso para as suas implementações.
+
+**O que significa *cloudready*?**
+<br>Numa frase, ser agnóstico da infraestrutura na qual a imagem começa.
+Para além dos requisitos e limitações citados abaixo, é necessário assegurar que a imagem (recuperada, gerada) responde à boa definição das expetativas técnicas de uma imagem cloudready. A imagem deve ser capaz de bootar corretamente qualquer que seja a tipologia de servidor em que começa, deve também embarcar o serviço Cloud Init no caso de utilização de um Config Drive. Por último, as configurações do sistema devem permitir que o SO se inicie plenamente, em especial as relativas à rede.
 
 **Saiba como configurar BringYourOwnImage a partir da APIv6 OVHcloud**
 
