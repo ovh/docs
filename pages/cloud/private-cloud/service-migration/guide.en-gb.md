@@ -1,7 +1,7 @@
 ---
 title: Migrating a PCC to Hosted Private Cloud 
 excerpt: Find out how to manage all aspects of migrating a PCC infrastructure
-slug: migration-service
+slug: sddc-migration
 section: Getting started
 order: 6
 ---
@@ -19,7 +19,7 @@ There are two aspects to migrating a PCC infrastructure:
 
 > [!primary]
 >
-> Should you choose to migrate an infrastructure to a new vDC instead, please follow [this dedicated guide](../migration-service-vdc).
+> Should you choose to migrate an infrastructure to a new vDC instead, please follow [this dedicated guide](../vdc-migration).
 >
 
 ## Requirements
