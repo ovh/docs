@@ -31,7 +31,6 @@ Les serveurs DNS sont généralement utilisés par groupes de deux (primaire et 
 ## Prérequis
 
 - Posséder un [nom de domaine](https://www.ovh.com/ca/fr/domaines/) enregistré chez OVHcloud.
-- Disposer des autorisations [appropriées pour gérer](../../customer/gestion-des-contacts/){.external} le nom de domaine depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
 
 > [!primary]

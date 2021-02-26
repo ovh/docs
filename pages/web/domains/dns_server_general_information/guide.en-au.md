@@ -19,7 +19,7 @@ In other words, these records stored on DNS servers are what make your domain na
 ## Requirements
 
 - You must have a domain name registered with OVHcloud.
-- You must have the [appropriate permissions to manage](../../customer/managing-contacts/) the domain name from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}.
+
 - You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}.
 
 > [!warning]
