@@ -66,7 +66,7 @@ Une fois la configuration effectuée, passez à l'étape « [Activer un certifi
 
 ### Activer un certificat SSL sur un multisite
 
-Selon le [certificat SSL ](https://www.ovh.com.fr/ssl/){.external} que vous avez commandé, vous pouvez activer une connexion SSL sécurisée sur un ou plusieurs de vos multisites. Pour ce faire, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Positionnez-vous ensuite sur l'onglet ` Multisite`{.action}.
+Selon le [certificat SSL ](https://www.ovh.com/fr/ssl/){.external} que vous avez commandé, vous pouvez activer une connexion SSL sécurisée sur un ou plusieurs de vos multisites. Pour ce faire, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement web concerné. Positionnez-vous ensuite sur l'onglet ` Multisite`{.action}.
 
 Le tableau qui s'affiche contient tous les noms de domaine ajoutés à votre hébergement web. La colonne « SSL » vous montre l'état d'activation des connexions SSL sécurisées sur vos multisites. 
 
