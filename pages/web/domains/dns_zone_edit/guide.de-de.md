@@ -3,6 +3,7 @@ title: 'Bearbeiten der OVHcloud DNS-Zone'
 excerpt: 'Erfahren Sie hier, wie Sie eine DNS-Zone über Ihr Kundencenter bearbeiten'
 slug: webhosting_bearbeiten_der_dns_zone
 legacy_guide_number: g1604
+section: 'DNS und DNS-Zone'
 ---
 
 
