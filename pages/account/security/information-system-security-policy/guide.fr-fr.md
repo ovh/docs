@@ -179,10 +179,10 @@ OVHcloud déploie une approche unifiée de gestion des incidents de sécurité e
 - Détecter et consolider les évenements pouvant impacter la sécurité des systèmes d'information et des services
 - Corréler les évenements indiquant une éventuelle atteinte à la sécurité de l'information et déclencher la prise en charge de l'incident le plus rapidement possible
 - Mobiliser les experts et décisionnaires en charge de la résolution de l'incident
-- Prendre en charge l'incident avec les objectifs suivants
-  * Réduire les impacts opérationnels
-  * Préserver les éléments de preuve permettant de supporter une éventuelle judiciarisation ou des sanctions
-  * Revenir à une situation nominale
+- Prendre en charge l'incident avec les objectifs suivants :
+    - Réduire les impacts opérationnels
+    - Préserver les éléments de preuve permettant de supporter une éventuelle judiciarisation ou des sanctions
+    - Revenir à une situation nominale
 - Informer les parties intéressées en accord avec les obligations légales et contractuelles
 - Identifier les causes racines, mettre à jour les analyses de risques et définir les plans d'actions éventuels pour réduire le risque de nouvel occurrence
 
