@@ -13,7 +13,7 @@ section: vRack
 
 ## Requirements
 
-- A [vRack](https://www.ovh.com/ca/en/solutions/vrack/) compatible dedicated server with Windows Server installed.
+- A [vRack](https://www.ovh.com/sg/solutions/vrack/) compatible dedicated server with Windows Server installed.
 - An ISO for the OS that will be installed on your VM. (CentOS 7 will be used as an example in this guide)
 -  A vRack delivered to your OVHcloud account.
 -  A Failover IP block of 4 or more IPs.
@@ -21,7 +21,7 @@ section: vRack
 
 ## Instructions
 
-Ths guide assumes that you have already installed Windows Server, connected via Remote Desktop, and have already assigned your dedicated server and IP block to a vRack. For more information on these steps please refer to steps 1 through 4 on our guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers).
+This guide assumes that you have already installed Windows Server, connected via Remote Desktop, and have already assigned your dedicated server and IP block to a vRack. For more information on these steps please refer to steps 1 through 4 on our guide: [Configuring the vRack on your Dedicated Servers](../configuring-vrack-on-dedicated-servers).
 
 ### Installing Hyper-V
 
@@ -138,11 +138,11 @@ In our example, the IP block assigned to the vRack is 192.99.134.80/29. The foll
 
 We are going to be using 192.99.134.81 in our example. The configuration should look like the following
 
-
 Address: 192.168.134.81
 Subnet Mask: 255.255.255.248
 Gateway: 192.99.134.86
 DNS: 213.186.33.99 (You can put another DNS if you wish)
+
 
 Once the OS is installed. It should have already be connected.
 
