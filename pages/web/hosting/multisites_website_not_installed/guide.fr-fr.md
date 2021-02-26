@@ -39,7 +39,7 @@ Les étapes suivantes vous permettront de corriger l’erreur `Site non install�
 
 ### Étape 1 : Vérifier que votre domaine est bien présent dans l'onglet multisite de votre hébergement
 
-Dirigez-vous dans la section `Web cloud`{.action} en haut, puis sur`Hébergements`{.action} dans la colonne de gauche.
+Dirigez-vous dans la section `Web cloud`{.action} en haut, puis sur `Hébergements`{.action} dans la colonne de gauche.
 
 Sélectionnez l'hébergement concerné dans la liste, puis cliquez sur l’onglet `Multisite`{.action}. Plusieurs sénarios sont possibles : 
 
