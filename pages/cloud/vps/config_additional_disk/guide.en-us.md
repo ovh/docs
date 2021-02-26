@@ -48,7 +48,7 @@ If a GNU/Linux distribution is installed on your VPS, establish an SSH connectio
 
 The examples below presume you are logged in as a user with elevated permissions.
 
-You can use the following command to verify the name of the newly attached device:
+You can use the following command to verify the name of the new device:
 
 ```
 $ lsblk
