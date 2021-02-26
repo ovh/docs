@@ -35,7 +35,7 @@ DNS Server werden in der Regel in Doppelkonfigurationen (primärer und sekundär
 ## Voraussetzungen
 
 - Sie verfügen über eine bei OVHcloud registrierte [Domain](https://www.ovh.de/domains/).
-- Sie verfügen über die [entsprechenden Berechtigungen](../../customer/verwaltung-der-kontakte/){.external} für die Verwaltung der Domain über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}.
+- Sie verfügen über die [entsprechenden Berechtigungen](../../customer/verwaltung-der-kontakte/){.external} für die Verwaltung der Domain über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de
 ) mit den [erforderlichen Berechtigungen](../../customer/verwaltung-der-kontakte/) zum Verwalten der Domain
 
