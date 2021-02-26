@@ -19,6 +19,11 @@ La migration d'un service Managed Bare Metal comprend deux aspects :
 
 **Découvez comment couvrir tous les aspects liés à la migration vers un service Managed Bare Metal**
 
+> [!primary]
+>
+> Si vous choisissez de migrer une infrastructure vers un nouveau vDC, veuillez suivre [ce guide dédié](../vdc-migration).
+>
+
 ## Prérequis
 
 * Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action}.
