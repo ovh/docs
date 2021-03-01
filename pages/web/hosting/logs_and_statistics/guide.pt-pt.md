@@ -6,118 +6,98 @@ slug: partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site
 legacy_guide_number: g1344
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Ligação ao espaço de cliente
-Ligue-se ao seu [Espaço Cliente](https://www.ovh.com/manager/web/) com a ajuda do seu identificador (nic-handle) e respetiva password.
+**Última atualização: 05/01/2021**
 
-Após o login efetuado, selecione o nome de domínio onde deseja consultar as estatísticas.
+## Objetivo
 
-![](images/img_2827.jpg){.thumbnail}
-No menu à esquerda selecione o seu nome de domínio por baixo da categoria "Alojamento" e depois clique em "Mais +" e, por fim "Estatísticas e Logs".
+O acesso aos logs e às estatísticas do seu site está incluído no seu plano de alojamento web, acessível através da Área de Cliente OVHcloud.
 
-![](images/img_2826.jpg){.thumbnail}
+**Saiba como consultar as estatísticas e logs do seu website.**
 
+## Requisitos
 
-## Acesso à página Estatísticas & Logs
-Pode aceder às estatísticas do seu site ao aceder ao seguinte link:
+- Ter um serviço [de alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external} compatível.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
 
+## Instruções
 
-- https://logs.ovh.net/seudominio
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web Cloud`{.action} e, a seguir, em `Alojamentos`{.action} na coluna da esquerda.
 
+Selecione o alojamento correspondente e clique no separador `Estatísticas e logs`{.action}
 
-Deve introduzir o seu NIC-Handle e a palavra-passe associada.
+![alojamento](images/statistics01.png){.thumbnail}
 
-Elas são simples de serem utilizadas e consultadas. Em alguns cliques pode analisar o seu site sem ter de fornecer outros cálculos.
+A janela que se apresenta é composta por 3 secções. A primeira apresenta as **estatísticas**, a segunda os **logs** brutos do seu alojamento, a última é dedicada à administração **dos utilizadores** autorizados a aceder às estatísticas.
 
-Clique no link gerado automaticamente no Manager para aceder às estatísticas e aos logs.
+![alojamento](images/statistics02u.png){.thumbnail}
 
-Deve identificar-se com a sua referência cliente (nichandle) e respetiva password.
+### Administração dos utilizadores
 
+A criação de um utilizador permitirá a uma pessoa aceder às estatísticas do seu alojamento sem ter acesso à sua Área de Cliente OVHcloud. 
 
-## Espaço estatísticas
-Após estabelecer ligação ao espaço de estatísticas, veja a página que irá aparecer (imagem ao lado).
+Clique no botão `Criar um novo utilizador`{.action} na secção `Administração dos utilizadores` e siga as instruções abaixo.  
 
-São-lhe oferecidas duas possibilidades:
+![alojamento](images/user-statistics01.png){.thumbnail}
 
+> [!warning] 
+>
+> Se ativou os logs separados numa [entrada multi-site](../multisites-configurar-um-multisite-no-meu-alojamento-web/#2-adicionar-um-dominio-ou-subdominio), os utilizadores criados aqui não podem aceder às estatísticas desta entrada multi-site.
+>
 
-- Aceder às estatísticas do seu site através do urchin (quadrado a verde).
+### Estatísticas das visitas
 
-- Consultar os logs "brutos" do seu site em tempo real ou num período anterior (quadrado a laranja).
+Para o ajudar a seguir e controlar melhor o tráfego dos seus websites, dispõe de uma ferramenta de estatísticas de visitas e de medição de audiência dos seus websites alojados no seu alojamento partilhado, **OVHcloud Web Statistics**.
 
+![alojamento](images/OWStats01.gif){.thumbnail}
 
+O painel de controlo das OVHcloud Web Statistics encontra-se em 6 secções no painel de esquerda.
 
-![](images/img_2832.jpg){.thumbnail}
+- Dashboard: visualização do tráfego nos sites do seu alojamento.
+- Browsers: classificação dos browsers mais utilizados para visualizar os seus websites.
+- Geolocalization:  proporção de visitantes em função da sua localização.
+- Pedidos: classificação das páginas mais consultadas nos seus websites.
+- Robôs: visualização dos robôs que passam pelos seus websites.
+- Estado: estatísticas de falhas e sucessos encontrados em função dos códigos HTTP devolvidos.
+- FAQ: secção dedicada às questões mais frequentes
 
+O quadro `Period selection` no canto superior direito permite-lhe selecionar um período preciso.
 
-## Urchin v6
-Estas estatísticas fornecem informações sobre:
+### Logs
 
-O tráfego do seu site
+Tem a possibilidade de visualizar os logs brutos do seu site com um atraso de cerca de 5 minutos.
 
+![alojamento](images/logs01.png){.thumbnail}
 
-- O número de visitantes,
-- O número de páginas consultadas,
-- O "peso" das páginas consultadas,
-- O número de pedidos http.
+Tem à sua disposição diferentes tipos de logs:
 
-Esses dados podem ser apresentados por hora, dia, semana, mês ou ano, para comprender melhor a evolução do seu site.
+- Logs Web: veja aqui os diferentes logs de consulta do seu site, assim como as diferentes ações realizadas a partir do seu site. Isto permite-lhe, por exemplo, detetar tentativas de ações maliciosas.
+- Logs FTP: as diferentes ligações FTP serão registadas e conservadas nestes logs.
+- Logs erro: os diferentes erros gerados pelo seu site.
+- Logs CGI: as várias chamadas para os scripts cgi.bin que foram feitas.
+- Logs out: as estatísticas do seu alojamento sobre as diferentes chamadas externas efetuadas.
+- Logs SSH: estes logs indicam as diferentes ligações realizadas com o protocolo SSH.
+- Logs CRON: o resultado da execução das tarefas planeadas ([As tarefas automatizadas (CRON) no seu alojamento](../alojamento_partilhado_tarefas_agendadas_cron/)).
 
-As páginas
+### Atividades do alojamento
 
-- As durações médias de ligação ao conjunto do seu site ou a uma página em específico
+Encontre nesta secção a atividade da infraestrutura do seu alojamento, de forma a visualizar o consumo dos recursos colocados à sua disposição.
 
-Siga o seu referenciamento
+Clique no separador `Informações gerais`{.action} e, a seguir, desça na parte inferior da página.
 
-- Como é que os visitantes da sua página a conheceram?
-- Em quais motores de pesquisa encontraram o URL do seu site?
-- Quais as chaves que utilizaram na sua pesquisa?
+![alojamento](images/statistics03.png){.thumbnail}
 
+É possível apresentar diferentes tipos de gráficos a partir do menu pendente no canto superior esquerdo:
 
-Melhore a gestão das páginas do seu site e saiba quais as páginas que mais interessam aos seus visitantes
+- Ligações de saída: pedidos enviados do seu site para um site externo.
+- Utilização do CPU: nível de consumo do processador na instância de alojamento.
+- Superação do limite máximo dos recursos: indica os momentos em que o seu alojamento ultrapassa a sua quota de recursos.
+- Pedidos SQL: quantidade de pedidos para as bases de dados do seu alojamento.
+- Tempo de resposta SQL: tempo de resposta dos pedidos enviados para as bases de dados do seu alojamento.
 
+## Quer saber mais?
 
-- Quais as páginas mais consultadas do seu site?
-- Durante quanto tempo?
-- Quais as páginas que apresentam erro e quais os tipos de erro encontrados?
-
-
-Seguimento
-
-- Quais as páginas do seu site visitadas em primeiro lugar pelos seus visitantes?
-- Quais as páginas visualizadas em último lugar?
-- Quanto tempo consultam em média por página?
-- Qual o número de páginas consultadas em média por visita?
-
-
-
-![](images/img_1490.jpg){.thumbnail}
-
-
-## Logs brutos (em formato de texto)
-Tem a possibilidade de consultar os logs do seu site praticamente em tempo real. Os logs do seu site estão disponíveis em menos de 15 minutos o que permite que verifique o bom funcionamento do seu site ou calcule os logs do seu site quase em tempo real.
-
-Estão à sua disposição diferentes tipos de logs:
-
-
-- Logs Web: encontra aqui os diferentes logs brutos de consulta do seu site, bem como as diferentes ações realizadas a partir do seu site. Isto permite-nos, por exemplo, reparar as tentativas de hack.
-
-- Logs FTP: as diferentes ligações FTP são registadas e conservadas nos logs brutos.
-
-- Logs de erro: os diferentes erros gerados pelo seu site.
-
-- Logs CGI: as diferentes "chamadas" aos scripts cgi.bin que são realizadas.
-
-- Logs out: as estatísticas do seu alojamento sobre diferentes ligações externas realizadas.
-
-- Logs SSH: estes logs indicam as diferentes ligações realizadas com recurso ao protocolo SSH.
-
-- Logs cron : o resultado da execução das suas tarefas planeadas (http://guias.ovh.pt/PartilhadoCron)
-
-
-
-![](images/img_2828.jpg){.thumbnail}
-
-
-## É possível utilizar o software de estatísticas Urchin em Português?
-Pode escolher a lingua utilizada pelo Urchin na sua interface: clica nas preferência no menu, escolhe a linguagem e depois clica valida (clique em 'submit'. O Urchin irá lembrar-se sempre das suas preferências.
-
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
