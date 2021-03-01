@@ -111,8 +111,6 @@ Si votre domaine est lié à une zone DNS OVHcloud, nous vous invitons à consul
 
 [Partager son hébergement entre plusieurs sites](../multisites-configurer-un-multisite-sur-mon-hebergement-web/)
 
-[Éditer une zone DNS OVH](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/)
-
 [Liste des adresses IP des clusters et hebergements web](../liste-des-adresses-ip-des-clusters-et-hebergements-web/)
 
 [Modifier les serveurs DNS d’un nom de domaine OVHcloud](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/)
