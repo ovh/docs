@@ -17,18 +17,18 @@ Deze handleiding legt uit hoe u geautomatiseerde e-mails, die vanuit uw OVH-webh
 ## Vereisten
 
 - U moet beschikken over een [OVH-webhosting plan](https://www.ovh.com/nl/shared-hosting/){.external}.
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 
 > [!primary]
 >
 > Deze handleiding is alleen relevant voor e-mails die worden verzonden met behulp van scripts die zich bevinden in uw OVH-webhostingsplan.
 >
-> Wilt u e-mailadressen beheren die zijn opgenomen in uw MX Plan of in uw [OVH-webhosting](https://www.ovh.com/nl/shared-hosting/){.external}? Ga naar het gedeelte `Emails`{.action} van uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+> Wilt u e-mailadressen beheren die zijn opgenomen in uw MX Plan of in uw [OVH-webhosting](https://www.ovh.com/nl/shared-hosting/){.external}? Ga naar het gedeelte `Emails`{.action} van uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 >
 
 ## Instructies
 
-In uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} kunt u geautomatiseerde e-mails controleren en beheren die vanuit uw OVH-webhosting zijn verzonden. Log eerst in op uw OVH Control Panel, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhosting. Klik vervolgens op `Meer +`{.action} en vervolgens op `E-mailscripts`{.action}.
+In uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} kunt u geautomatiseerde e-mails controleren en beheren die vanuit uw OVH-webhosting zijn verzonden. Log eerst in op uw OVH Control Panel, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhosting. Klik vervolgens op `Meer +`{.action} en vervolgens op `E-mailscripts`{.action}.
 
 Met deze handleiding kunt u leren hoe u geautomatiseerde e-mails, die vanuit uw OVH-webhosting worden verzonden, kunt monitoren en beheren.
 

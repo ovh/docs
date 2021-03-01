@@ -17,7 +17,7 @@ Le offerte di hosting Web di OVH danno accesso a uno spazio di archiviazione che
 ## Prerequisiti
 
 - Disporre di un piano di [hosting Web](https://www.ovh.it/hosting-web/){.external} attivo
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 

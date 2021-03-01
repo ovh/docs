@@ -106,8 +106,3 @@ swiftks://auth.cloud.ovh.net/GRA:CT_S3QL 1.0T 0 1.0T 0% /mnt/container
 
 
 You cannot use S3QL in offline mode, you should not configure persistance via the /etc/fstab file but by using a script which will run when your sever starts up.
-
-
-## 
- 
-

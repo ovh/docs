@@ -18,13 +18,13 @@ Zjistěte, jak změnit přístupové heslo FTP uživatele na webhostingu OVH.
 ## Prerekvizity
 
 - Některý z [webhostingových balíčků OVH](https://www.ovh.cz/webhosting/){.external}.
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Postup
 
 ### Fáze 1: přechod do rozhraní pro správu FTP uživatelů
 
-Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V základním rozhraní pro správu webhostingu klikněte na záložku `FTP - SSH`{.action}.
+Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V základním rozhraní pro správu webhostingu klikněte na záložku `FTP - SSH`{.action}.
 
 Tabulka nabízí přehled všech FTP uživatelů vytvořených na Vašem webhostingu. Pomocí těchto uživatelských účtů se můžete připojit ke svému FTP úložišti a provádět správu zde uložených souborů. Při instalaci webhostingu je automaticky vytvořen jeden FTP uživatel.
 

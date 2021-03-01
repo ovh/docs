@@ -15,12 +15,12 @@ OVHcloud provides you with a space where you can view, manage and pay your vario
 
 > [!primary]
 >
-> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to your OVHcloud contracts, which you can access from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} by going to `My services`{.action} then `My contracts`{.action}.
+> Depending on your place of residence and its local legislation, as well as the products concerned, some details may vary from the information provided in this guide, and some information may not apply to your situation. If you have any doubts, please refer to your OVHcloud contracts, which you can access from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} by going to `My services`{.action} then `My contracts`{.action}.
 >
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 - access as a billing contact for your service (you can read more about the different contact types in our guide to [Managing contacts for your services](../../customer/managing-contacts/){.external})
 
 
@@ -54,7 +54,7 @@ VAT is added at the bottom of the bill in the overall total, marked as “Total 
 
 > [!primary]
 >
-> If “Account statement” appears as the payment method used, this means that the service has been renewed automatically. The payment method used will be the default payment method saved in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+> If “Account statement” appears as the payment method used, this means that the service has been renewed automatically. The payment method used will be the default payment method saved in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}.
 >
 
 
@@ -62,7 +62,7 @@ VAT is added at the bottom of the bill in the overall total, marked as “Total 
 
 #### View and manage bills.
 
-To view your bills, go to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, and open the `Billing`{.action} section by clicking on your first name in the top right-hand corner. You will then land on a page summarising your bills: 
+To view your bills, go to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, and open the `Billing`{.action} section by clicking on your first name in the top right-hand corner. You will then land on a page summarising your bills: 
 
 ![Bill summary](images/billing-section_ca.png){.thumbnail}
 

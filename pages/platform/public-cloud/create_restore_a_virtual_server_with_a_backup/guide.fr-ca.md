@@ -24,7 +24,7 @@ Ce guide vous explique comment utiliser vos sauvegardes pour recréer, dupliquer
 
 ### Créer une instance a partir d'une sauvegarde
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} et sélectionnez `Public Cloud`{.action}. Sélectionnez ensuite la rubrique `Instance backup`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez `Public Cloud`{.action}. Sélectionnez ensuite la rubrique `Instance backup`{.action}.
 
 Cliquez alors sur les `...`{.action} à droite de la sauvegarde choisie et enfin sur `Créer une instance`{.action}.
 

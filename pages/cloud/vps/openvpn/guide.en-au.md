@@ -12,7 +12,7 @@ OpenVPN is a software giving you the possibility to create a Private Virtual Net
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 - an OVHcloud [VPS service]({ovh_www}/vps/){.external}
 
 

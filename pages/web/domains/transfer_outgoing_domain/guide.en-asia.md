@@ -1,57 +1,81 @@
 ---
-title: Transferring your OVHcloud domain name to another registrar
+title: Transferring a domain name to another registrar
 slug: outgoing-transfer-of-generic-or-geographical-domain-name
-excerpt: Learn how to transfer an OVHcloud domain name to the registrar of your choice
+excerpt: Find out how to move a domain name from OVHcloud to a provider of your choice
 section: Transfer
 order: 4
 ---
 
-**Last updated 5th May 2020**
+**Last updated 25th January 2021**
 
 ## Objective
 
-It is possible to transfer an OVHcloud domain name, allowing you to work with your preferred registrar. 
+**Domain transfer** refers to the process of moving a registered domain name from one registrar to another. For example, if you have ordered a domain name on our website, OVHcloud is its current registrar. An outgoing domain transfer needs to be initiated by the new registrar. 
 
-**Learn how to transfer an OVHcloud domain name to the registrar of your choice.**
+In order to prevent unauthorised domain transfers, domain names are usually locked by having the status *clientTransferProhibited* set. This protection must be lifted in the OVHcloud Control Panel before starting a transfer.
+
+**This guide explains how to prepare your domain name for an outgoing transfer.**
 
 ## Requirements
-- You must have a domain name registered with OVHcloud.
-- You must be authorised to request the domain name transfer. Furthermore, the domain name holder and/or its administrators must be informed of the transfer request.
-- You must have the appropriate permissions to manage the domain name from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager).
-- The domain name must have been created over 61 days ago, and must not have been transferred or changed ownership during that period.
 
-> [!primary]
->
-> Some extensions are covered by a separate procedure with regard to changing registrars. If you cannot transfer your domain name using the steps set out below, please contact your new registrar for more information on the procedure to follow.
->
+- a [domain name](https://www.ovh.com/asia/domains/) registered with OVHcloud
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) with the necessary permissions to manage the domain name (domain administrator)
+- the registration of the domain name in question was at least 60 days ago **and** it has not been transferred or traded (i.e. change of owner) during the last 60 days
+
 
 ## Instructions
 
+> [!warning]
+>
+> The following instructions describe the most common way to transfer a domain name, valid for most Top Level Domains (TLD). However, the specific rules for processes regarding TLDs are solely defined by the appropriate allocation authority i.e. the **registry**. Registrars such as OVHcloud must adhere to these rules and have no influence over registry decisions.
+>
+> The exact procedure for domain transfers may therefore vary, especially in case of some country-code TLDs (ccTLD, such as .lu, .uk., .hk, .ro) and a few special purpose TLDs (.am, .fm, etc.). Transfers might also be prohibited for various reasons, e.g. outstanding payment, abuse case or registry lock. 
+>
+> We recommend to consult the following resources in case of any doubt:
+>
+> - the website of the respective TLD registry
+> - the [list of TLDs available at OVHcloud](https://www.ovh.com/asia/domains/prices/)
+> - [ICANN's explanation of EPP Status Codes](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (to find out which status codes currently apply to your domain name, carry out a *Whois* search, preferably using the respective TLD registry's website)
+> - your new registrar's website and management interface, especially for questions about a pending transfer process
+>
+
 ### Step 1: Remove the transfer protection for the domain name
 
-To remove the transfer protection for your OVHcloud domain name, when you are logged in to your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, click `Web Cloud`{.action} in the service bar at the top. Go to the `Domains`{.action} section on the left, then click on the domain name in question. In the `General information`{.action} tab, untick the `Protection against domain name transfer`{.action} box, then click `Confirm`{.action}.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and select `Web Cloud`{.action} in the top navigation bar. Click `Domains`{.action} in the services bar on the left-hand side, then choose the domain name concerned.
 
-> [!primary]
->
-> Once you have unlocked your domain name, you will have seven days to begin transferring it to the new registrar. After this seven-day period, your domain will be automatically locked again if you do not submit a request to change your domain name registrar.
->
+On the `General information`{.action} tab you can find the "Protection against domain name transfer" slider button under **Security**, set to `Enabled`{.action} by default.
+
+![outgoingtransfer](images/outgoing-transfer-step1.png){.thumbnail}
+
+Click on the slider and confirm in the popup window that you want to remove this protection. Allow a few minutes for the status to change to `Disabled`{.action}.
 
 ![outgoingtransfer](images/outgoing-transfer-step2.png){.thumbnail}
 
+You can also refresh the page if it seems to take longer.
+
+> [!primary]
+>
+> Once the status has changed, the domain name will remain unlocked for seven days. After this period, the protection will automatically turn back on. If you do not request a domain transfer at your new registrar during this time, it will be necessary to unlock the domain again.
+>
+
 ### Step 2: Retrieve the transfer code
 
-Once you have removed the transfer protection, you can retrieve the transfer code for your domain name. To do this, in the `General information`{.action} tab, click on `AUTH/INFO`{.action}, next to `Protection against domain name transfer`{.action}. Refresh the page if necessary.
-
-Retrieve the code shown in the window.
+Once the status is set to `Disabled`{.action}, a link labelled `AUTH/INFO`{.action} will appear. Clicking on this link will open a window that contains your AUTH/INFO code (also known as transfer key, domain password, AUTH-CODE or EPP-Code).
 
 ![outgoingtransfer](images/outgoing-transfer-step3.png){.thumbnail}
 
-### Step 3: Launch the transfer to the new registrar
+The code will be requested by your new registrar to complete the transfer process. You can verify the details with your provider.
 
-If you have not already done so, contact your new registrar to begin the transfer of your domain name. You will need to provide the transfer code retrieved during step 3 as part of the process, which is different for each registrar.
+Make sure to copy and paste the code as opposed to typing it by hand, since some characters are easily confused.
 
-Consult the information provided by your new registrar to find out how long the transfer will take.
+### Step 3: Launch the transfer at your new registrar
+
+After completing the previous steps you can initiate the transfer process, usually by placing an order. Afterwards, the transfer may take up to 10 days. 
+
+You can contact your provider for more information about this.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+[Outgoing .co.uk domain name transfer](../outgoing_couk_domain_name_transfer/)
+
+Join our community of users on <https://community.ovh.com/en/>. 

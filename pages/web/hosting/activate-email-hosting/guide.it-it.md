@@ -18,13 +18,13 @@ Ordinare un hosting Web senza associarlo direttamente a un dominio richiede l’
 
 - Aver registrato un [dominio](https://www.ovh.it/domini/){.external} nello Spazio Cliente OVHcloud
 - Disporre di una soluzione di [hosting Web](https://www.ovh.it/hosting-web/){.external} attiva
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
 ### Attiva il servizio di posta
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona il tuo servizio dalla sezione `Hosting`{.action} nella colonna a sinistra.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona il tuo servizio dalla sezione `Hosting`{.action} nella colonna a sinistra.
 
 Nel riquadro `Configurazione` è disponibile la dicitura `Account email`: clicca sul pulsante `...`{.action} a destra e poi su `Attiva il tuo servizio di posta`{.action}.
 
@@ -38,7 +38,7 @@ Si apre la pagina di attivazione. Seleziona il dominio a cui intendi associare g
 
 Una volta che la soluzione giunge a scadenza o è necessario eliminarla, è possibile conservare gli indirizzi email ad essa associati.
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona il tuo servizio dalla sezione `Hosting`{.action} nella colonna a sinistra.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona il tuo servizio dalla sezione `Hosting`{.action} nella colonna a sinistra.
 
 Nel riquadro `Configurazione`, clicca sul pulsante `...`{.action} in corrispondenza della dicitura `Account email` e seleziona `Scollega la tua opzione email`{.action}.
 
@@ -54,7 +54,7 @@ Il servizio di posta associato all’hosting Web può anche essere eliminato def
 >
 > Questa operazione è irreversibile: non è possibile riattivare il servizio di posta in seguito alla sua disattivazione.
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona il tuo servizio dalla sezione `Hosting`{.action} nella colonna a sinistra.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona il tuo servizio dalla sezione `Hosting`{.action} nella colonna a sinistra.
 
 Nel riquadro `Configurazione`, clicca sul pulsante `...`{.action} in corrispondenza della dicitura `Account email` e seleziona `Disattiva l’opzione email`{.action}.
 

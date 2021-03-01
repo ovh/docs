@@ -8,10 +8,6 @@ Retrouvez ici les réponses à vos questions qui portent sur le nouveau processu
 
 ## Quels sont les grands changements?
 
-### Quels sont les produits concernés?
-
-À partir de décembre 2017 les produits concernés sont : [serveurs dédiés](https://www.ovh.com/ca/fr/serveurs-dedies/), [VPS](https://www.ovh.com/ca/fr/vps/) et [Exchange Hébergé](https://www.ovh.com/ca/fr/emails/hosted-exchange/).
-
 ###	La commande de ces produits sera-t-elle modifiée?
 
 Lors de vos nouvelles commandes, il suffira d’enregistrer un moyen de paiement afin d’assurer le bon fonctionnement du renouvellement automatique.
@@ -84,7 +80,7 @@ Suivez la procédure de régularisation indiquée dans le courriel, ou connectez
 
 Vous devez régulariser une facture impayée dans les 7 jours à compter de l’incident de paiement. Sachez qu’à défaut de paiement au terme de ces 7 jours, nous suspendrons votre service et lancerons une procédure de recouvrement à votre encontre. Par ailleurs, nous nous réservons la possibilité de suspendre l’ensemble de vos services si vous n’avez pas régularisé votre situation.
 
-### Votre question ne figure pas dans la FAQ?
 
-Contactez-nous par [courriel](https://www.ovh.com/ca/fr/support/nous-contacter/) ou par téléphone (sans frais) au 1-855-684-5463 .  
+## Aller plus loin
 
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

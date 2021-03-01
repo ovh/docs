@@ -16,7 +16,7 @@ Huomaa, että tulet törmäämään myös termiin KVM (Keyboard Video and Mouse)
 
 ## Edellytykset
 
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager).
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 
 ## Käytännössä

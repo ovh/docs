@@ -19,7 +19,7 @@ Afin d'adapter votre téléphonie à votre activité professionnelle, vous pouve
 ## Prérequis
 
 - Disposer d'une [ligne VoIP](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
 
@@ -27,7 +27,7 @@ Afin d'adapter votre téléphonie à votre activité professionnelle, vous pouve
 
 Un changement dans votre activité peut vous amener à vouloir modifier le forfait de votre ligne VoIP, pour le passer en Offre VoIP Entreprise ou ajouter des heures de communication vers les téléphones mobiles. Ce changement peut être effectué depuis votre espace client.
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Télécom`{.action} puis sur `Téléphonie`{.action}. Sélectionnez votre groupe de téléphonie puis la ligne VoIP souhaitée.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Télécom`{.action} puis sur `Téléphonie`{.action}. Sélectionnez votre groupe de téléphonie puis la ligne VoIP souhaitée.
 Dans l'onglet `Gestion`{.action}, cliquez sur `Changer d'offre`{.action}. L'offre actuelle de votre ligne VoIP vous sera alors présentée. Cliquez sur `Modifier l'offre`{.action} pour accéder aux offres disponibles.
 
 Sélectionnez, dans le menu déroulant des offres disponibles, l'offre de votre choix. Le cas échéant, vous pouvez choisir d'appliquer cette nouvelle offre à plusieurs de vos lignes VoIP en cliquant sur `Appliquer à plusieurs lignes`{.action}. Validez enfin votre choix en cliquant sur `Valider`{.action}.

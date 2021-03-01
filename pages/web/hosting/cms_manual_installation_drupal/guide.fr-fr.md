@@ -25,7 +25,7 @@ Plus d'informations [dans ce guide](../modifier-lenvironnement-dexecution-de-mon
 
 Si vous souhaitez installer d'autres modules/CMS, consultez [ce guide]({legacy}1375){.ref}.
 
-Les CMS sont des [systèmes de gestion de contenu](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu){.external}, ils ont généralement besoin d'une plateforme d'hébergement comprenant un serveur FTP, une base de données, et un nom de domaine.
+Les CMS sont des [systèmes de gestion de contenu](https://fr.wikipedia.org/w/index.php?title=Systeme_de_gestion_de_contenu&redirect=no){.external}, ils ont généralement besoin d'une plateforme d'hébergement comprenant un serveur FTP, une base de données, et un nom de domaine.
 
 Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovh.com/fr/hebergement-web/){.external}.
 
@@ -37,7 +37,7 @@ Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovh.com/fr
 ### Partie 1 &#58; preparation de linstallation
 **Outils nécessaires**
 
-Pour installer le CMS  **Drupal**  sur votre offre d'hébergement mutualisé, nous vous conseillons de vous munir d'un logiciel  **FTP**  tel que **FileZilla**  (gratuit). *Assurez-vous d'être en possession de votre identifiant client (nic-handle) et de votre mot de passe, pour pouvoir vous connecter à votre* [espace client OVH](https://www.ovh.com/manager/web/login/){.external} *si nécessaire.*
+Pour installer le CMS  **Drupal**  sur votre offre d'hébergement mutualisé, nous vous conseillons de vous munir d'un logiciel  **FTP**  tel que **FileZilla**  (gratuit). *Assurez-vous d'être en possession de votre identifiant client (nic-handle) et de votre mot de passe, pour pouvoir vous connecter à votre* [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} *si nécessaire.*
 
 - Récupérez votre identifiant et le mot de passe FTP qui vous permettent de vous connecter sur l'hébergement web.
 - Il est aussi nécessaire d'avoir en votre possession votre identifiant et le mot de passe de la base de données SQL qui vous permettent de vous connecter dans la base de données.

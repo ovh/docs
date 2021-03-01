@@ -14,7 +14,7 @@ The first part of the guide will be OVH specific for basic usage. The second par
 
 ## Prerequisites
 
-* Access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. 
+* Access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}. 
 
 ## Instructions
 

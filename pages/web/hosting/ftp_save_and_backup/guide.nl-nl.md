@@ -17,7 +17,7 @@ Uw OVH webhosting geeft u toegang tot opslagruimte waarop u uw websites kunt hos
 ## Vereisten
 
 - U moet beschikken over een [webhostingplan](https://www.ovh.nl/shared-hosting/){.external} (behalve Cloud Web).
-- Afhankelijk van de gebruikte methode, moet u toegang hebben tot een webhostingplan vanaf uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, of een FTP-gebruikerswachtwoord waarmee u zich kunt inloggen op uw opslagruimte. 
+- Afhankelijk van de gebruikte methode, moet u toegang hebben tot een webhostingplan vanaf uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, of een FTP-gebruikerswachtwoord waarmee u zich kunt inloggen op uw opslagruimte. 
 
 ## Instructies
 
@@ -46,7 +46,7 @@ Als u klaar bent om dit te doen, lees dan het gedeelte van deze handleiding dat 
 
 ### Uw opslagruimte herstellen vanaf het Control Panel
 
-Log hiervoor eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Ga ten slotte naar het tabblad `FTP-SSH`{.action} en klik op de knop `Backup herstellen`{.action}.
+Log hiervoor eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Ga ten slotte naar het tabblad `FTP-SSH`{.action} en klik op de knop `Backup herstellen`{.action}.
 
 ![backupftp](images/backupftp-step1.png){.thumbnail}
 

@@ -45,7 +45,7 @@ Vyplňte svou e-mailovou adresu a klikněte na `Pokračovat`{.action}. Pokud se 
 |E-mailová adresa|Zadejte název, díky kterému účet rozpoznáte mezi ostatními účty v aplikaci Outlook.|
 |DOMÉNA\uživatelské jméno nebo e-mailová adresa|Zadejte celou e-mailovou adresu.|
 |Heslo|Zadejte heslo ke svému e-mailovému účtu.|
-|Server|V závislosti na DNS konfiguraci Vaší domény nemusí být vyplnění informací o serveru vyžadováno. Pokud však budete o vyplnění těchto informací požádáni, zadejte server, na kterém je Vaše služba Exchange hostována. Informace o serveru naleznete ve svém [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (záložka `Obecné informace`{.action} u příslušné služby Exchange, box `Připojení`{.action}).|
+|Server|V závislosti na DNS konfiguraci Vaší domény nemusí být vyplnění informací o serveru vyžadováno. Pokud však budete o vyplnění těchto informací požádáni, zadejte server, na kterém je Vaše služba Exchange hostována. Informace o serveru naleznete ve svém [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} (záložka `Obecné informace`{.action} u příslušné služby Exchange, box `Připojení`{.action}).|
 
 Po vyplnění požadovaných údajů klikněte na tlačítko `Přidat účet`{.action}. Pokud jste zadali správné údaje, připojení proběhne úspěšně.
 

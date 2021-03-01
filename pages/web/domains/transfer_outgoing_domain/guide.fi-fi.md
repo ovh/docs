@@ -18,7 +18,7 @@ Verkkotunnusta siirtämällä sen verkkotunnusvälittäjä vaihtuu. Siirto on ma
 ## Edellytykset
 - Sinulla on OVH:lla rekisteröity verkkotunnus.
 - Sinulla on valtuudet pyytää verkkotunnuksen siirtoa: verkkotunnuksen omistajan ja/tai sitä hallinnoivien henkilöiden on oltava tietoisia siirtopyynnöstä.
-- Sinulla on pääsyoikeus verkkotunnuksen hallintaan [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Sinulla on pääsyoikeus verkkotunnuksen hallintaan [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - Verkkotunnuksen luomisesta on kulunut yli 61 päivää, sitä ei ole sinä aikana siirretty eikä sen omistaja ole muuttunut.
 
 > [!primary]
@@ -30,7 +30,7 @@ Verkkotunnusta siirtämällä sen verkkotunnusvälittäjä vaihtuu. Siirto on ma
 
 ### vaihe 1: Poista verkkotunnuksen siirtoa koskeva suojaus
 
-Verkkotunnuksen siirron estävän suojauksen poistamiseksi klikkaa [hallintapaneelissasi](https://www.ovh.com/auth/?action=gotomanager){.external} yläreunan palveluvalikon kohtaa `Web Cloud`{.action}. Mene vasemmalla osioon `Verkkotunnukset`{.action} ja klikkaa kyseistä verkkotunnusta. Poista välilehdellä `Yleiset tiedot`{.action} rasti kohdasta `Suojaus siirrolta`{.action} ja klikkaa sitten `Vahvista`{.action}.
+Verkkotunnuksen siirron estävän suojauksen poistamiseksi klikkaa [hallintapaneelissasi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} yläreunan palveluvalikon kohtaa `Web Cloud`{.action}. Mene vasemmalla osioon `Verkkotunnukset`{.action} ja klikkaa kyseistä verkkotunnusta. Poista välilehdellä `Yleiset tiedot`{.action} rasti kohdasta `Suojaus siirrolta`{.action} ja klikkaa sitten `Vahvista`{.action}.
 
 > [!primary]
 >

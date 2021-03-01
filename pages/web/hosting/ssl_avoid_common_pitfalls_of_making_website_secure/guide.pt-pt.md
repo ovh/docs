@@ -18,7 +18,7 @@ No entanto, atenção. Existem alguns websits que utilizem o CDM para alojar lib
 
 Como saber se o meu website poderá sofrer impacto?
 
-As ferramentas de "debugging" fornecidas pela Mozilla Firefox e Google Chrome indiquem quando um website contém elementos bloqueados por mixed content. A documentação disponível em [le Mozilla Developer Network](https://developer.mozilla.org/fr/docs/S%C3%A9curit%C3%A9/MixedContent) permite saber mais sobre estas ferramentas caso haja mixed content.
+As ferramentas de "debugging" fornecidas pela Mozilla Firefox e Google Chrome indiquem quando um website contém elementos bloqueados por mixed content. A documentação disponível em [le Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content) permite saber mais sobre estas ferramentas caso haja mixed content.
 
 
 ## O "duplicated content"

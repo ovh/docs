@@ -17,14 +17,14 @@ W ramach oferty [serwerów dedykowanych](https://www.ovh.pl/serwery_dedykowane/)
 ## Wymagania początkowe
 
 - Posiadanie [serwera dedykowanego](https://www.ovh.pl/serwery_dedykowane/){.external}
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Dedykowane`{.action}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Dedykowane`{.action}
 
 
 ## W praktyce
 
 ### Aktywacja przestrzeni Backup Storage
 
-Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} i przejdź do strony serwera w sekcji `Dedykowane`{.action}. Następnie wybierz zakładkę `Backup Storage`{.action}, kliknij przycisk `Aktywuj backup Storage`{.action} i zatwierdź.
+Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do strony serwera w sekcji `Dedykowane`{.action}. Następnie wybierz zakładkę `Backup Storage`{.action}, kliknij przycisk `Aktywuj backup Storage`{.action} i zatwierdź.
 
 ![Aktywacja przestrzeni Backup Storage](images/backup_storage_activation.png){.thumbnail}
 

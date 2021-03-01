@@ -18,7 +18,7 @@ Als u de vorige stappen hebt gevolgd, hebt u [een pool aangemaakt](https://docs.
 ## Vereisten
 
 - U moet de VMware Horizon-client of uw browser geopend hebben.
-- U moet de URL voor uw toegangspunt weten, die beschikbaar is in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet de URL voor uw toegangspunt weten, die beschikbaar is in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 - [Uw gebruikersaccount moet geautoriseerd zijn voor toegang tot de desktop-pool.](https://docs.ovh.com/nl/cloud-desktop-infrastructure/attribution-desk/){.external}
 
 

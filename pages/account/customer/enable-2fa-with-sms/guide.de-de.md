@@ -17,7 +17,7 @@ Neben weiteren Methoden stellt Ihnen OVHcloud die Zwei-Faktor-Authentifizierung 
 ## Voraussetzungen
 
 - Sie haben sich über die [verschiedenen Methoden der Zwei-Faktor-Authentifizierung bei OVHcloud](https://docs.ovh.com/de/customer/Account-mit-2FA-absichern) informiert.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben Ihr Mobiltelefon bei sich, um die SMS zu empfangen.
 
 ## In der praktischen Anwendung

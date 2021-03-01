@@ -17,7 +17,7 @@ The default RAID level for OVHcloud server installations is RAID 1, which double
 
 ## Requirements
 
-* a [dedicated server](https://www.ovh.com/ca/en/dedicated_servers/){.external} with a software RAID configuration
+* a [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/){.external} with a software RAID configuration
 * administrative (root) access to the server via SSH
 
 ## Instructions
@@ -265,7 +265,10 @@ mount /dev/md2 /home
 
 ## Go Further
 
-* [Hot Swap – Hardware RAID](../hotswap-raid-hard/){.external}
-* [Hot Swap – Software RAID](../hotswap-raid-soft/){.external}
-* [Hardware RAID](../raid-hard/){.external}
-* Join our community of users on <https://community.ovh.com/en/>.
+[Hot Swap – Hardware RAID](../hotswap-raid-hard/)
+
+[Hot Swap – Software RAID](../hotswap-raid-soft/)
+
+[Hardware RAID](../raid-hard/)
+
+Join our community of users on <https://community.ovh.com/en/>.

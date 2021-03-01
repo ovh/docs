@@ -19,7 +19,7 @@ Al asociar un dominio a su servicio de correo, es posible que deba configurar un
 - Tener una solución de correo electrónico en OVH.
 - Haber añadido al servicio de correo un dominio que requiera la creación de un registro CNAME.
 - Poder modificar la configuración (la zona DNS) del dominio.
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action}.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Web Cloud`{.action}.
 
 ## Procedimiento
 

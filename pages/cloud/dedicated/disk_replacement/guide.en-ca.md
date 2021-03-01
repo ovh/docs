@@ -139,7 +139,7 @@ root@rescue:~# nvme list
 
 #### Cold-swapping the disk (server downtime required)
 
-To request a disk replacement, you simply need to create a ticket through your [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. You can speed up the process by providing the information required for the tests. Below is a list of what you will need to provide:
+To request a disk replacement, you simply need to create a ticket through your [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. You can speed up the process by providing the information required for the tests. Below is a list of what you will need to provide:
 
 - **The serial number of the disk that needs to be replaced, as well as the serial numbers for all other disks that are working properly**. To retrieve the serial number of the disk that needs to be replaced, please follow [this guide](../find-disk-serial-number/){.external}. If, for any reason, you are unable to retrieve the disk’s serial number, please let us know in the ticket, and list the serial numbers of the disks that don’t need to be replaced. 
 

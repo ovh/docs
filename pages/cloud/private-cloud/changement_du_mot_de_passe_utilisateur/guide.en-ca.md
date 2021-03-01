@@ -15,14 +15,14 @@ vSphere client user permissions and passwords are managed from the OVHcloud Cont
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](hhttps://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 - a user account created from the OVHcloud Control Panel (see [this guide](../control-panel-ovh-private-cloud/#users-tab))
 
 ## Instructions
 
 ### Change Password
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, go to `Hosted Private Cloud`{.action} (1), click `Private Cloud`{.action} (2) and select your server from the list (3). Click the `Users`{.action} (4) tab.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, go to `Hosted Private Cloud`{.action} (1), click `Private Cloud`{.action} (2) and select your server from the list (3). Click the `Users`{.action} (4) tab.
 
 ![control panel](images/userpassword1.png){.thumbnail}
 

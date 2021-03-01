@@ -19,14 +19,14 @@ Met OVH kunt u een virtueel MAC-adres aan een IP-adres koppelen, zodat u virtuel
 
 * U moet beschikken over een [dedicated server](https://www.ovh.com/nl/dedicated_servers/){.external}.
 * U moet beschikken over een [failover-IP-adres](https://www.ovh.nl/dedicated_servers/ip_failover.xml){.external} of een failover-IP-blok (RIPE). 
-* U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 
 
 ## Instructie
 
 ### Toewijzen van een MAC-adres
 
-Nadat u zich hebt ingelogd op het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klikt u op het `Dedicated`{.action} menu, en vervolgens op het `IP`{.action}-gedeelte in de linkerkolom van de pagina.
+Nadat u zich hebt ingelogd op het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, klikt u op het `Dedicated`{.action} menu, en vervolgens op het `IP`{.action}-gedeelte in de linkerkolom van de pagina.
 
 ![IPFO](images/virtual_mac_01.png){.thumbnail}
 
@@ -58,7 +58,7 @@ Wanneer het dialoogvenster "Virtuele MAC toevoegen" verschijnt, selecteert u een
 > Het verwijderen van een MAC-adres is definitief, er zal geen herstel mogelijk zijn.
 > 
 
-Als u een virtueel MAC-adres wilt verwijderen dat is gekoppeld aan een failover-IP, logt u zich eerst in op uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} en gaat u vervolgens naar het menu `Dedicated`{.action} en het gedeelte `IP`{.action}. Selecteer de relevante server zodat de failover-IP (of IP-blok) die eraan is gekoppeld, wordt weergegeven.
+Als u een virtueel MAC-adres wilt verwijderen dat is gekoppeld aan een failover-IP, logt u zich eerst in op uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en gaat u vervolgens naar het menu `Dedicated`{.action} en het gedeelte `IP`{.action}. Selecteer de relevante server zodat de failover-IP (of IP-blok) die eraan is gekoppeld, wordt weergegeven.
 
 Klik ten slotte op de knop`...`{.action} rechts en klik vervolgens op `Virtuele MAC verwijderen`{.action}.
 

@@ -43,7 +43,7 @@ Le lien suivant vous permettra de retrouver le coût d'envoi, en crédits, de vo
 
 Afin de n'être jamais à court de crédit sur votre compte, vous pouvez activer la recharge automatique. Dès qu'un seuil minimum de crédits restants est atteint, une nouvelle quantité de crédits est automatiquement ajoutée sur votre compte SMS.
 
-Pour activer la recharge automatique, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, rendez-vous dans l'onglet `Télécom`{.action} puis cliquez sur la section `SMS`{.action} dans la barre de services à gauche. Choisissez le compte SMS sur lequel activer la recharge automatique.
+Pour activer la recharge automatique, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, rendez-vous dans l'onglet `Télécom`{.action} puis cliquez sur la section `SMS`{.action} dans la barre de services à gauche. Choisissez le compte SMS sur lequel activer la recharge automatique.
 
 Rendez-vous dans le menu `Options`{.action} (1) puis `Recharge automatique`{.action} (2).
 

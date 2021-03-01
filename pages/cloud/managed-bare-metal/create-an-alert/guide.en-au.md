@@ -19,7 +19,7 @@ You can create an alert on all items in your Managed Bare Metal: the datacentre 
 ## Requirements
 
 - a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-au/managed-bare-metal/)
-- a user account with access to [vSphere](../login-vsphere-interface/) (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager))
+- a user account with access to [vSphere](../login-vsphere-interface/) (created in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au))
 
 ## Instructions
 

@@ -18,7 +18,7 @@ Služba Exchange nabízí profesionální e-mailové adresy s širokým spektrem
 
 - Služba [Exchange](https://www.ovh.cz/emails/){.external}.
 - Minimálně dva aktivní Exchange účty nakonfigurované na platformě OVH Exchange.
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager).
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 - Přístupové údaje k účtu, kterému mají být nová práva přidělena.
 
 ## Postup
@@ -40,7 +40,7 @@ Ze všeho nejdříve si ujasněte, jaká oprávnění si pro daný účet přeje
 
 ### Fáze 1: ustavení delegace
 
-Přihlaste se do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. V levém postranním panelu otevřete nabídku `Microsoft`{.action} a klikněte na tlačítko `Exchange`{.action}. Ze seznamu dostupných služeb zvolte tu, na níž je vytvořen účet, pro který si přejete zřídit delegaci. V základním rozhraní pro správu služby Exchange přejděte do záložky E-mailové účty.
+Přihlaste se do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. V levém postranním panelu otevřete nabídku `Microsoft`{.action} a klikněte na tlačítko `Exchange`{.action}. Ze seznamu dostupných služeb zvolte tu, na níž je vytvořen účet, pro který si přejete zřídit delegaci. V základním rozhraní pro správu služby Exchange přejděte do záložky E-mailové účty.
 
 Tabulka obsahuje přehled e-mailových účtů vytvořených v rámci příslušné služby Exchange. U e-mailového účtu, pro nějž si přejete zřídit delegaci, klikněte na ikonku tří teček `(...)`{.action} a z nabídky vyberte možnost `Spravovat delegace`{.action}.
 

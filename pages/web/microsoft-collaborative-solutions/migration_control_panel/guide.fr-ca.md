@@ -19,7 +19,7 @@ OVHcloud propose plusieurs solutions e-mail : MX Plan (vendu seul ou compris dan
 - Disposer d'une adresse e-mail MX Plan (via l'offre MX Plan ou incluse dans une offre d'[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}).
 - Disposer d'un service [Exchange](https://www.ovh.com/ca/fr/emails/hosted-exchange/){.external} avec au minimum un compte non configuré (qui apparaîtra sous la forme « @configureme.me »).
 - Ne pas avoir paramétré de redirection sur l'adresse e-mail MX Plan que vous souhaitez migrer.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 
 ## En pratique
@@ -34,7 +34,7 @@ Si vous devez migrer plusieurs comptes, nous vous conseillons de mettre en place
 
 Cette étape est facultative si vous disposez déjà d'un service Exchange vers lequel vous effectuez cette migration.
 
-Dans le cas contraire, pour réaliser la manipulation, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, puis cliquez sur le bouton `Commander`{.action} dans la barre de services à gauche. Sélectionnez ensuite le service que vous voulez commander. Vous serez dirigé vers la page de commande. Suivez les différentes étapes, puis patientez jusqu'à l'installation effective du service. Un e-mail vous sera envoyé dès la fin de celle-ci.
+Dans le cas contraire, pour réaliser la manipulation, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, puis cliquez sur le bouton `Commander`{.action} dans la barre de services à gauche. Sélectionnez ensuite le service que vous voulez commander. Vous serez dirigé vers la page de commande. Suivez les différentes étapes, puis patientez jusqu'à l'installation effective du service. Un e-mail vous sera envoyé dès la fin de celle-ci.
 
 > [!primary]
 >
@@ -45,7 +45,7 @@ Dans le cas contraire, pour réaliser la manipulation, connectez-vous à votre [
 
 Avant de débuter votre migration, il vous faudra identifier la version du MXPlan depuis lequel vous migrez.
 
-Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie `Web Cloud`{.action}. Cliquez sur `Emails`{.action} dans la barre de services à gauche, puis choisissez le nom de l'offre concernée. Poursuivez selon la version que vous possédez en vous référant au tableau ci-dessous.
+Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, partie `Web Cloud`{.action}. Cliquez sur `Emails`{.action} dans la barre de services à gauche, puis choisissez le nom de l'offre concernée. Poursuivez selon la version que vous possédez en vous référant au tableau ci-dessous.
 
 |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 |---|---|
@@ -70,7 +70,7 @@ Une fois que vous êtes prêt, poursuivez la lecture de cette documentation selo
 
 ##### **Migration depuis l'assistant de configuration Exchange**
 
-Pour y accéder, sélectionnez dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} le service concerné dans la barre de services à gauche. L'assistant devrait apparaître afin de vous aider à configurer votre nouveau service Exchange. Durant ce processus, vous pourrez sélectionner les comptes e-mails MX Plan à migrer.
+Pour y accéder, sélectionnez dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} le service concerné dans la barre de services à gauche. L'assistant devrait apparaître afin de vous aider à configurer votre nouveau service Exchange. Durant ce processus, vous pourrez sélectionner les comptes e-mails MX Plan à migrer.
 
 Si l'assistant de configuration ne s'affiche pas, les informations générales du service Exchange apparaîtront à la place. Dans ce cas, vous devrez réaliser la migration de vos comptes via l'interface MX Plan.
 
@@ -114,7 +114,7 @@ Dans l'onglet `Comptes e-mail`{.action} de votre plateforme Exchange, cliquez su
 
 3\. **Migrez** le compte MXPlan vers le compte de votre nouvelle plateforme à l'aide de notre outil [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
 
-Pour plus d'informations sur OMM, consultez notre guide [Migrer des comptes e-mail via OVH Mail Migrator](../migration-de-comptes-e-mail-ovh-mail-migrator/).
+Pour plus d'informations sur OMM, consultez notre guide [Migrer des comptes e-mail via OVH Mail Migrator](../migration-comptes-e-mail-ovh-mail-migrator/).
 
 ![exchange](images/mxplan-migration-configure-account03.png){.thumbnail}
 
@@ -134,7 +134,7 @@ Pour cela, sélectionnez le service Exchange concerné dans la barre de services
 
 > [!primary]
 >
-> Si vous venez juste de réaliser la migration ou de modifier un enregistrement DNS de votre domaine, il se peut que l’affichage dans l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} nécessite quelques heures pour se mettre à jour.
+> Si vous venez juste de réaliser la migration ou de modifier un enregistrement DNS de votre domaine, il se peut que l’affichage dans l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} nécessite quelques heures pour se mettre à jour.
 >
 
 Pour modifier la configuration, cliquez sur la pastille rouge et réalisez la manipulation demandée. Cette dernière nécessite un temps de propagation de 4 à 24 heures maximum avant d’être pleinement effective.

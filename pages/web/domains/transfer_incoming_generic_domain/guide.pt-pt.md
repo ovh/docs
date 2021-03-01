@@ -89,7 +89,7 @@ Poderá concluir a sua encomenda com uma oferta de [alojamento web](https://www.
 > - **Os servidores DNS do domínio:** se o domínio for utilizado por um website ou um serviço de correio, especifique os servidores DNS configurados para evitar uma interrupção do serviço.
 >
 
-Quando a nota de encomenda aparecer, efetue o pagamento para que a transferência possa ser iniciada.  O procedimento apenas será iniciado após o pagamento. De seguida, poderá acompanhar a transferência a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Basta aceder à secção `Domínios`{.action} na barra lateral à esquerda e, em seguida, clicar em `Operações em curso`{.action}.
+Quando a nota de encomenda aparecer, efetue o pagamento para que a transferência possa ser iniciada.  O procedimento apenas será iniciado após o pagamento. De seguida, poderá acompanhar a transferência a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Basta aceder à secção `Domínios`{.action} na barra lateral à esquerda e, em seguida, clicar em `Operações em curso`{.action}.
 
 ### 4 - Realizar a primeira etapa de validação da transferência
 
@@ -113,7 +113,7 @@ Dependendo das ações realizadas pelo proprietário do domínio e o administrad
 |Nenhum dos contactos responde ao pedido|A transferência passa para a segunda etapa de validação no prazo de cinco dias|
 |Um dos contactos recusa o pedido|A transferência é cancelada quando existe uma notificação de recusa por parte de um dos contactos|
 
-Em caso de cancelamento da transferência, certifique-se de que as diferentes partes concordam e que os seus endereços de e-mail estão atualizados. O processo poderá ser executado mais tarde na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, através da secção `Domínios`{.action} e, em seguida, em `Operações em curso`{.action}.
+Em caso de cancelamento da transferência, certifique-se de que as diferentes partes concordam e que os seus endereços de e-mail estão atualizados. O processo poderá ser executado mais tarde na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, através da secção `Domínios`{.action} e, em seguida, em `Operações em curso`{.action}.
 
 ### 5 - Realizar a segunda etapa de validação da transferência
 
@@ -125,11 +125,11 @@ Na segunda fase, o agente registador (que ainda não é a OVH) receberá um pedi
 |O agente registador não responde ao pedido|A transferência é realizada no prazo de cinco dias|
 |O agente registador atual recusa o pedido|A transferência é cancelada quando existe uma notificação de recusa|
 
-Caso o agente registador atual recuse a transferência, sugerimos que o contacte para saber o motivo. O processo poderá ser reiniciado na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, através da secção `Domínios`{.action} e, em seguida, em `Operações em curso`{.action}.
+Caso o agente registador atual recuse a transferência, sugerimos que o contacte para saber o motivo. O processo poderá ser reiniciado na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, através da secção `Domínios`{.action} e, em seguida, em `Operações em curso`{.action}.
 
 ### 6 - Gerir o nome de domínio na OVH
 
-Uma vez concluído o processo de transferência, poderá gerir o domínio através da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Para isso, clique em `Domínios`{.action} na barra de serviços à esquerda e, em seguida, selecione o nome de domínio correspondente.
+Uma vez concluído o processo de transferência, poderá gerir o domínio através da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Para isso, clique em `Domínios`{.action} na barra de serviços à esquerda e, em seguida, selecione o nome de domínio correspondente.
 
 ## Quer saber mais?
 

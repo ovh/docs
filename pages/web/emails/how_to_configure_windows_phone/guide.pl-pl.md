@@ -39,7 +39,7 @@ Wybierz "inne konto", aby dodać konto POP lub IMAP.
 ## Część 5: Konfiguracja konta
 W pierwszym polu wpisz cały adres e-mail. 
 
-Następnie podaj hasło zdefiniowane w panelu [manager](https://www.ovh.com/auth/?action=gotomanager).
+Następnie podaj hasło zdefiniowane w panelu [manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 Po wybraniu opcji logowania pojawi się wiadomość z ostrzeżeniem.
 
@@ -103,7 +103,7 @@ Oto informacje niezbędne do skonfigurowania konta e-mail POP.
 Konfiguracja POP z włączonym lub wyłączonym szyfrowaniem SSL:
 
 Adres e-mail: Cały adres e-mail
-Hasło: Hasło zdefiniowane w panelu [Manager](https://www.ovh.com/auth/?action=gotomanager).
+Hasło: Hasło zdefiniowane w panelu [Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 Nazwa użytkownika: Cały adres e-mail
 Serwer poczty przychodzącej:SSL0.OVH.NET
 Port serwera poczty przychodzącej:995 lub 110
@@ -130,7 +130,7 @@ Oto informacje niezbędne do skonfigurowania konta e-mail IMAP
 Konfiguracja IMAP z włączonym lub wyłączonym szyfrowaniem SSL:
 
 Adres e-mail: Cały adres e-mail
-Hasło: Hasło zdefiniowane w panelu [Manager](https://www.ovh.com/auth/?action=gotomanager).
+Hasło: Hasło zdefiniowane w panelu [Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 Nazwa użytkownika: Cały adres e-mail
 Serwer poczty przychodzącej:SSL0.OVH.NET
 Port serwera poczty przychodzącej:993 lub 143

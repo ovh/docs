@@ -17,13 +17,13 @@ The CloudDB solution gives you access to a database instance offering dedicated,
 ## Requirements
 
 - a [CloudDB instance](https://www.ovh.lt/cloud/cloud-databases/){.external}
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
 
 ### View general information about the instance
 
-In the services bar on the left-hand side of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Databases`{.action} section, then to the instance. Click on the `General information`{.action} tab.
+In the services bar on the left-hand side of the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, go to the `Databases`{.action} section, then to the instance. Click on the `General information`{.action} tab.
 
 > [!primary]
 >

@@ -20,7 +20,7 @@ Voit tilata NAS-HA -tuotteen Ranskassa sijaitsevista konesaleistamme (Roubaix, S
 
 ### Voiko NAS-HA-palvelinta hallinnoida konfigurointipaneelin kautta?
 
-Kyllä, pääset tähän paneeliin [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager) osasta `Cloud` ja `Alustat ja palvelut`.
+Kyllä, pääset tähän paneeliin [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) osasta `Cloud` ja `Alustat ja palvelut`.
 
 ### Voiko NAS-palvelimen kokonaiskapasiteettia kasvattaa?
 
@@ -48,7 +48,7 @@ NAS-HA-palvelimen levyt ovat dedikoituja eikä niitä jaeta muiden kanssa. Muut 
 
 ### Minkä pituiselle jaksolle NAS-HA-palvelimen voi tilata?
 
-Tarjolla olevat tilausjaksot ovat 1, 3, 6 ja 12 kuukautta. Tilausjaksosi päättyessä tilauksesi jatkuu ilman eri toimenpiteitä, mikäli et ole pyytänyt irtisanomista. Voit tehdä sen milloin tahansa tilausjakson aikana [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager).
+Tarjolla olevat tilausjaksot ovat 1, 3, 6 ja 12 kuukautta. Tilausjaksosi päättyessä tilauksesi jatkuu ilman eri toimenpiteitä, mikäli et ole pyytänyt irtisanomista. Voit tehdä sen milloin tahansa tilausjakson aikana [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 ### Onko tilaushetkellä näkyvä kapasiteetti käytettävissä?
 
@@ -153,7 +153,7 @@ Voit hallinnoida tilannekuvien aikaväliä hallintapaneelissasi. Voit valita aik
 - joka viikko 
 
 
-Voit myös milloin tahansa ottaa käsin tilannekuvia, säilyttää niitä ilman aikarajaa tai poistaa niitä. Tämä ominaisuus on saatavilla [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager) tai [APIn](https://api.ovh.com/) kautta.
+Voit myös milloin tahansa ottaa käsin tilannekuvia, säilyttää niitä ilman aikarajaa tai poistaa niitä. Tämä ominaisuus on saatavilla [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) tai [APIn](https://api.ovh.com/) kautta.
 
 > [!api]
 >

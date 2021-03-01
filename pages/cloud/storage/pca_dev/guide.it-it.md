@@ -7,11 +7,11 @@ section: Public Cloud Archive
 
 
 ## Cose OVH Public Cloud Archive?
-[OVH Public Cloud Archive](https://www.ovh.it/public-cloud/storage/cloud-archive/){.external} è una soluzione di storage low cost destinata all’archiviazione a lungo termine dei dati. È basata su [OpenStack Swift](https://swift.openstack.org){.external}, un sistema di storage open source, ridondato, distribuito e consistente che permette agli sviluppatori di accedere a un’infrastruttura estremamente scalabile, affidabile e dal prezzo contenuto. Su questa piattaforma OVH implementa alcune delle sue soluzioni interne.
+[OVH Public Cloud Archive](https://www.ovhcloud.com/it/public-cloud/cloud-archive/){.external} è una soluzione di storage low cost destinata all’archiviazione a lungo termine dei dati. È basata su [OpenStack Swift](https://swift.openstack.org){.external}, un sistema di storage open source, ridondato, distribuito e consistente che permette agli sviluppatori di accedere a un’infrastruttura estremamente scalabile, affidabile e dal prezzo contenuto. Su questa piattaforma OVH implementa alcune delle sue soluzioni interne.
 
 Il servizio OVH Public Cloud Archive è progettato per dati consultati raramente: meno frequentemente viene richiesto lo sblocco di un archivio, minore sarà il tempo necessario al suo recupero. Per questo motivo è la soluzione ideale per chi cerca uno storage durevole, a basso costo e che non richiede ore di attesa per il recupero dei dati importanti quando necessario.
 
-Per chi invece ha necessità di accedere di frequente ai propri dati, è preferibile utilizzare la soluzione [OVH Public Cloud Storage](https://www.ovh.it/public-cloud/storage/object-storage/){.external}.
+Per chi invece ha necessità di accedere di frequente ai propri dati, è preferibile utilizzare la soluzione [OVH Public Cloud Storage](https://www.ovhcloud.com/it/public-cloud/object-storage/){.external}.
 
 
 

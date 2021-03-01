@@ -17,7 +17,7 @@ Uma base de dados (*database*, “DB” ou “BDD”) permite armazenar elemento
 ## Requisitos
 
 - Ter um serviço de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
-- Ter acesso à secção de gestão do alojamento web a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à secção de gestão do alojamento web a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 > [!warning]
 >
@@ -41,7 +41,7 @@ Hoje em dia, praticamente todos os CMS (WordPress, Joomla!, etc.) usam uma base 
 
 ### 2 - Aceder à gestão das bases de dados do alojamento
 
-Para iniciar a operação, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos`{.action} na barra à esquerda e selecione o nome do alojamento que pretende. Por fim, clique no separador `Base de dados`{.action}.
+Para iniciar a operação, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} na barra à esquerda e selecione o nome do alojamento que pretende. Por fim, clique no separador `Base de dados`{.action}.
 
 Aparecerá uma tabela com todas as bases de dados criadas no quadro do plano de alojamento web.
 

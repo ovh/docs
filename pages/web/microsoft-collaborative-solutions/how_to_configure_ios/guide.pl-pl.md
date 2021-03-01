@@ -60,7 +60,7 @@ Następnie wpisz informacje:
 |Dane|Opis|
 |---|---|
 |Adres|To pole musi być wypełnione. Jeśli nie jest wypełnione, wpisz kompletny adres e-mail.|
-|Serwer|Wskaż serwer, na którym hostowana jest Twoja usługa Exchange. Możesz znaleźć go w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} zakładka `Informacje ogólne`{.action} dotyczące danej usługi Exchange `Logowanie`{.action}|
+|Serwer|Wskaż serwer, na którym hostowana jest Twoja usługa Exchange. Możesz znaleźć go w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} zakładka `Informacje ogólne`{.action} dotyczące danej usługi Exchange `Logowanie`{.action}|
 |Domena|Pozostaw to pole puste.|
 |Nazwa użytkownika|Wpisz kompletny adres e-mail.|
 |Hasło|To pole musi być wypełnione. Jeśli nie jest wypełnione, wpisz Twoje hasło do konta e-mail.|

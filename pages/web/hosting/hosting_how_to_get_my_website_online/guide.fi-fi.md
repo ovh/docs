@@ -20,7 +20,7 @@ Verkossa on olemassa valtava määrä verkkosivuja. Olipa kyse blogin tai verkko
 - Sinulla on [webhotellituote](https://www.ovh-hosting.fi/webhotelli){.external}.
 - Olet saanut webhotellisi asennusta koskevan vahvistussähköpostin.
 - Sinulla on [verkkotunnus](https://www.ovh-hosting.fi/verkkotunnukset){.external}, joka on osoite verkkosivullesi.
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Käytännössä
 
@@ -64,7 +64,7 @@ Varmista, että sinulla on tiedostot sivulle, jonka haluat siirtää verkkoon. J
 
 FTP-tunnisteen, salasanan sekä palvelimen osoitteen avulla voit kirjautua tallennustilaasi. Nämä tiedot löytyvät sähköpostiviestistä, jossa ilmoitettiin webhotellisi asennuksesta. Jos sinulla ei ole enää salasanaa, mene ohjeisiin, jotka on kuvattu dokumentaatiossa [“FTP-käyttäjän salasanan vaihtaminen”](https://docs.ovh.com/fi/hosting/ftp-kayttajan-salasanan-vaihtaminen/){.external}.
 
-Palvelimen osoitteen tai tallennustilaan kirjautumisen mahdollistavan tunnisteen voit hakea [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa sitten `Webhotellit`{.action} palveluvalikossa vasemmassa reunassa. Valitse kyseessä oleva webhotelli ja mene sitten välilehdelle `FTP-SSH`{.action}.
+Palvelimen osoitteen tai tallennustilaan kirjautumisen mahdollistavan tunnisteen voit hakea [hallintapaneelistasi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, klikkaa sitten `Webhotellit`{.action} palveluvalikossa vasemmassa reunassa. Valitse kyseessä oleva webhotelli ja mene sitten välilehdelle `FTP-SSH`{.action}.
 
 ![siteinstallation](images/get-website-online-step1.png){.thumbnail}
 
@@ -105,7 +105,7 @@ Jos olet siirtämässä olemassa olevia verkkosivuja, hae olemassa oleva tietoka
 
 Jos sinulla on jo tietokanta, jota haluat käyttää ([OVH:n webhotellituotteeseen](https://www.ovh-hosting.fi/webhotelli/){.external} sisältyvä tai [Private SQL](https://www.ovh-hosting.fi/webhotelli/sql-optiot.xml){.external} tai [Cloud DB](https://www.ovh-hosting.fi/cloud/cloud-databases/){.external} -ratkaisu), syötä sen käyttäjänimi, tietokannan salasana sekä palvelimen osoite. Jatka sitten seuraavaan vaiheeseen.
 
-Jos haluat luoda uuden tietokannan OVH:lla, [kirjaudu hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external} ja klikkaa kohtaa `Webhotellit`{.action} vasemman puoleisessa palveluvalikossa. Valitse kyseessä oleva webhotelli ja mene sitten välilehdelle `Tietokannat`{.action}.
+Jos haluat luoda uuden tietokannan OVH:lla, [kirjaudu hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} ja klikkaa kohtaa `Webhotellit`{.action} vasemman puoleisessa palveluvalikossa. Valitse kyseessä oleva webhotelli ja mene sitten välilehdelle `Tietokannat`{.action}.
 
 Klikkaa nyt painiketta `Luo tietokanta`{.action} tai jos sitä ei näy, kohtaa `Toiminnot`{.action} ja sitten `Luo tietokanta`{.action}. Seuraa sitten näkyviä tietoja.
 

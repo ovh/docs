@@ -30,7 +30,7 @@ Een virtual private server (VPS) is een dedicated virtual server. In tegenstelli
 
 ## Instructie
 
-Nadat u bent ingelogd op uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager), hoeft u alleen maar de informatie over uw VPS te lezen, naar het `Cloud`-gedeelte te gaan en vervolgens naar `Servers`in de linkerkolom. In dit gedeelte ziet u alles over uw VPS: algemene informatie in het midden, de bewerkingen die u kunt uitvoeren weergegeven als knoppen aan de rechterkant van het scherm, en opties onderaan.
+Nadat u bent ingelogd op uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl), hoeft u alleen maar de informatie over uw VPS te lezen, naar het `Cloud`-gedeelte te gaan en vervolgens naar `Servers`in de linkerkolom. In dit gedeelte ziet u alles over uw VPS: algemene informatie in het midden, de bewerkingen die u kunt uitvoeren weergegeven als knoppen aan de rechterkant van het scherm, en opties onderaan.
 
 ### Log in op uw VPS
 

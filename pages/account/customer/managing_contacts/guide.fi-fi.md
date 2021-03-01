@@ -16,7 +16,7 @@ OVH:lla luotuun palveluun on yhdistetty yleensä useita kontakteja, jotka hallit
 
 ## Edellytykset
 
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 - Sinulla on käyttöoikeus asiakastunnuksen tiedoissa annettuun sähköpostiosoitteeseen.
 - Sinulla on riittävät käyttöoikeudet kyseiseen palveluun.
 - Sinulla on uuden kontaktin (henkilön, jonka haluat lisätä palvelun kontaktiksi) asiakastunnus.
@@ -27,7 +27,7 @@ OVH:lla luotuun palveluun on yhdistetty yleensä useita kontakteja, jotka hallit
 
 ### Mene kontaktien hallintaan
 
-Klikkaa [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager){.external} yläpalkissa olevasta valikosta löytyvää asiakastunnustasi (jonka edessä näkyy etu- ja sukunimesi) ja sitten `Omat kontaktit`{.action}.
+Klikkaa [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} yläpalkissa olevasta valikosta löytyvää asiakastunnustasi (jonka edessä näkyy etu- ja sukunimesi) ja sitten `Omat kontaktit`{.action}.
 
 ![Contact management](images/contactmanagement0.png){.thumbnail}
 
@@ -91,7 +91,7 @@ Mikäli jokin kontakteista ei ole saanut viestiä, on mahdollista, että asiakas
 
 ![Contact management](images/contactmanagement5.png){.thumbnail}
 
-Mikäli vain yksi kontakti on vahvistanut muutoksen, näet viestin, joka ilmoittaa pyynnön odottavan edelleen toisen osapuolen vahvistusta. Jos jokin kontakti on vasta aivan hetkeä aiemmin hyväksynyt pyynnön, saattaa kestää hetki, ennen kuin tiedot päivittyvät näkyviin [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Mikäli vain yksi kontakti on vahvistanut muutoksen, näet viestin, joka ilmoittaa pyynnön odottavan edelleen toisen osapuolen vahvistusta. Jos jokin kontakti on vasta aivan hetkeä aiemmin hyväksynyt pyynnön, saattaa kestää hetki, ennen kuin tiedot päivittyvät näkyviin [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ![Contact management](images/contactmanagement6.png){.thumbnail}
 

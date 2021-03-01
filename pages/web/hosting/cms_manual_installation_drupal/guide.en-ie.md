@@ -13,7 +13,7 @@ Necessary tools
 To install the Drupal platform on your shared hosting package, we advise your to get an FTP program such as  FileZilla (free).
 
 ## Necessary credentials
-Make sure that you have your customer ID (nic-handle) and password so you can log in to your [OVH customer account](https://www.ovh.com/manager/web/login/) if necessary.
+Make sure that you have your customer ID (nic-handle) and password so you can log in to your [OVH customer account](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) if necessary.
 
 
 - Get your FTP ID and password so you can log in to your hosting package. 

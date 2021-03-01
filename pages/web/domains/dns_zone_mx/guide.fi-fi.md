@@ -17,15 +17,15 @@ MX-kenttä mahdollistaa verkkotunnuksen yhdistämisen sähköpostipalvelimeen. S
 
 ## Edellytykset
 
-- Sinulla on pääsyoikeudet verkkotunnuksen hallintaan [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Sinulla on pääsyoikeudet verkkotunnuksen hallintaan [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - Kyseessä olevan verkkotunnuksen on käytettävä OVH:n konfigurointia (eli OVH:n nimipalvelimia).
 
 > [!warning]
 >
 > - Jos verkkotunnuksesi ei käytä OVH:n nimipalvelimia, sinun on tehtävä muokkaus verkkotunnuksesi konfiguraatiota hallinnoivan palveluntarjoajan käyttöliittymässä.
 >
-> - Jos verkkotunnuksesi on OVH:n ylläpitämä, voit tarkistaa käyttääkö se konfiguraatiotamme [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} `Nimipalvelimet`{.action}-välilehdeltä kyseessä olevan verkkotunnuksen kohdalta.
+> - Jos verkkotunnuksesi on OVH:n ylläpitämä, voit tarkistaa käyttääkö se konfiguraatiotamme [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} `Nimipalvelimet`{.action}-välilehdeltä kyseessä olevan verkkotunnuksen kohdalta.
 >
 
 ## Käytännössä
@@ -53,7 +53,7 @@ Näitä eri MX-kenttiä on nyt käytettävä verkkotunnuksesi DNS-alueen konfigu
 
 ### 3. OVH:n MX-kentän konfiguraation muokkaus
 
-Muokataksesi MX-kenttiä verkkotunnuksesi OVH:n konfiguraatiossa, kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}. Mene vasemmanpuoleisessa valikossa osioon `Verkkotunnukset`{.action}, klikkaa kyseessä olevaa verkkotunnusta ja mene sitten `DNS-alue`{.action}-välilehdelle.
+Muokataksesi MX-kenttiä verkkotunnuksesi OVH:n konfiguraatiossa, kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Mene vasemmanpuoleisessa valikossa osioon `Verkkotunnukset`{.action}, klikkaa kyseessä olevaa verkkotunnusta ja mene sitten `DNS-alue`{.action}-välilehdelle.
 
 Taulukossa näkyy verkkotunnuksesi konfiguraatio OVH:lla. Kukin rivi vastaa DNS-tietuetta. Kehotamme tarkistamaan aluksi, onko MX-kenttiä jo olemassa verkkotunnuksesi OVH:n DNS-konfiguraatiossa. Voit käyttää apuna suodatuskenttää.
 

@@ -17,7 +17,7 @@ Postup pro připojení k instanci Public Cloud se podobá „normálnímu“ př
 
 ## Prerekvizity
 
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - [Instance Public Cloud](https://www.ovh.cz/public-cloud/instances/){.external}
 
 
@@ -76,7 +76,7 @@ Pro připojení k linuxové instanci pomocí operačního systému Windows můž
 
 #### Dokončení instalace
 
-Jakmile vytvoříte instanci, budete muset dokončit proces zvaný *sysprep*. Za tímto účelem přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} a spusťte VNC konzoli:
+Jakmile vytvoříte instanci, budete muset dokončit proces zvaný *sysprep*. Za tímto účelem přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} a spusťte VNC konzoli:
 
 ![Konzole VNC](images/vnc_console.png)
 

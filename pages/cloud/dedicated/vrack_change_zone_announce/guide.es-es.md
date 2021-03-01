@@ -48,7 +48,7 @@ Conéctese a la [API de OVH](https://api.ovh.com/console/){.external} con su ID 
 > @api {GET} /vrack
 > 
 
-Esta llamada a la API permite mostrar la lista de vRacks. Si el nombre mostrado en la API no le permite identificar el vRack, puede consultarlo en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Cloud`{.action}. Haga clic en `vRack`{.action} en la columna izquierda y se desplegarán los vRacks existentes.
+Esta llamada a la API permite mostrar la lista de vRacks. Si el nombre mostrado en la API no le permite identificar el vRack, puede consultarlo en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Cloud`{.action}. Haga clic en `vRack`{.action} en la columna izquierda y se desplegarán los vRacks existentes.
 
 > [!api]
 >

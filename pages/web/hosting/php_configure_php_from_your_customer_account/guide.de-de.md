@@ -104,7 +104,7 @@ Wenn Sie aufgrund von Problemen zu einer älteren PHP-Version zurückkehren müs
 Wenn Sie nicht der Entwickler Ihrer Webseite sind, wenden Sie sich an Ihren Webmaster
 
 ## Welche PHP-Version wird in einem bestimmten Verzeichnis verwendet?
-In Ihrem Kundencenter wird nur die "globale" PHP-Version angezeigt, also diejenige, die in Ihrem Wurzelverzeichnis festgelegt ist. Wenn Sie in einem Unterverzeichnis eine andere Konfiguration vorgenommen haben, die Sie nun überprüfen wollen, laden Sie folgende Datei herunter (Rechtsklick, "Ziel speichern unter"): [info.php](https://www.ovh.com/fr/documents/info.php)
+In Ihrem Kundencenter wird nur die "globale" PHP-Version angezeigt, also diejenige, die in Ihrem Wurzelverzeichnis festgelegt ist. Wenn Sie in einem Unterverzeichnis eine andere Konfiguration vorgenommen haben, die Sie nun überprüfen wollen, laden Sie die info.php Datei herunter. 
 Wenn Sie diese Datei selbst erstellen wollen, erstellen Sie einfach eine Textdatei mit:
 
 ```

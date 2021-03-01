@@ -5,6 +5,7 @@ excerpt: 'Webhotellit: UKK - Migraatio uusimpiin PHP-versioihin'
 id: '1758'
 slug: webhotellit_ukk_-_migraatio_uusimpiin_php-versioihin
 legacy_guide_number: g1758
+hidden: true
 ---
 
 
@@ -81,36 +82,4 @@ Tallenna tiedosto nimellä ".ovhconfig" ja siirrä se webhotellin juureen.
 
 
 Lisätietoja tiedoston asetuksista, katso [ohje](https://www.ovh-hosting.fi/g1207.configurer-php-web).
-
-
-## Käyttöesimerkkejä
-Mistä tietää, mikä PHP-versio on käytössä?
-Lataa oheinen tiedosto (oikeanpuoleinen hiiren näppäin ja "Tallenna sivu nimellä...":
-[info.php](https://www.ovh.com/fr/documents/info.php)
-Tiedoston voi luoda itse avaamalla uuden tekstitiedoston ja syöttämällä siihen:
-<?php phpinfo(); ?>
-Sitten tallenna tiedosto .php-muodossa ja antamalla sen nimeksi info.php
-
-Julkaise tiedosto FTP-yhteydellä websivuston juurihakemistoon (tai sivustojen, mikäli on useita aliverkkotunnuksia käytössä). Esimerkiksi /www/mywordpress/
-Sitten omalla webselaimella mene info-php:hen. Esimerkiksi www.my-site.com/mywordpress/info.php
-
-![](images/img_2601.jpg){.thumbnail}
-Lisäksi OVH on lähettänyt maalis-huhtikuussa 2015 sähköpostin, jossa listattiin asiakkaan käyttämät PHP-versiot.
-Omistan aliverkkotunnuksia ja/tai moniverkkotunnuksia, voinko aktivoida eri PHP-versioita?
-Kyllä voit. OVH sallii eri PHP-versioiden käytön eri aliverkkotunnuksille (moniverkkotunnuksia pidetään aliverkkotunnuksina).
-Tämän tekemiseksi on luotava .ovhconfig-tiedosto kyseisen aliverkkotunnuksen juureen ja tiedosto ladataan seuraavasti:
-
-
-- Tiedosto avataan kyselyn verkkotunnuksen juuresta. Esimerkiksi www.example.com osoittaa hakemistoon /www ja beta.example.com osoittaa hakemistoon /beta, tiedosto /www/.ovhconfig otetaan huomioon kyselyssä http://www.example.com/index.php, kun taas tiedosto /beta/.ovhconfig vastaa kyselystä kohteeseen http://beta.example.com/index.php.
-- Jos vaiheessa 1 aliverkkotunnuksen omaa .ovhconfig-tiedostoa ei löydy, ladataan tiedosto /.ovhconfig
-- Mikäli kumpaakaan ylläolevaa tiedostoa ei löydy, käytetään tilin oletusarvoa (FPM:n kanssa PHP 5.6)
-
-
-Olen konfiguroinut .htaccess-tiedoston pakottaakseni tietyn PHP-version, mitä silloin tapahtuu?
-Oletuksena sivustot siirtyvät PHP-versioon 5.6. Jos haluat käyttää uudempaa versiota (esimerkiksi 7.0), asetuksen voi muuttaa .ovhconfig-tiedostolla (FTP:ssä oleva tiedosto).
-Jos .htaccess-tiedostossa on toisia määräyksiä (mm. URL rewriting tai uudelleenohjaus) ne pysyvät edelleen aktiivisina.
-Voinko käyttää PHP:n 7 versiota?
-PHP:n versio 7 on käytettävissä webhotelleissa.
-Migraatiossa on ongelmia, mitä voin tehdä?
-Asiakaspalvelumme ei voi tehdä migraatiota asiakkaiden puolesta. Voimme kuitenkin auttaa PHP-version päivityksessä (.ovhconfig-tiedoston kautta). Asiakaspalvelumme ei ole vastuussa mahdollisista toimintahäiriöistä.
 

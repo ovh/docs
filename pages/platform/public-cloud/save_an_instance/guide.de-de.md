@@ -11,20 +11,20 @@ section: 'Verwaltung im OVHcloud Kundencenter'
 
 ## Ziel
 
-Sie können jederzeit über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) eine Sicherheitskopie einer Instanz erstellen. Damit können Sie Ihre Instanz auf eine frühere Konfiguration zurücksetzen oder auf deren Basis eine neue Instanz erstellen.
+Sie können jederzeit über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eine Sicherheitskopie einer Instanz erstellen. Damit können Sie Ihre Instanz auf eine frühere Konfiguration zurücksetzen oder auf deren Basis eine neue Instanz erstellen.
 
 **Diese Anleitung erklärt, wie Sie in der Public Cloud Oberfläche des OVHcloud Kundencenters Backups erstellen und planen.**
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
 
 ## In der praktischen Anwendung
 
 ### Ein Backup einer Instanz erstellen
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action}. Klicken Sie dann im folgenden Bereich auf die Pfeilschaltfläche neben Ihrem Standardprojektnamen in der oberen linken Ecke der Anzeige. Wählen Sie nun das gewünschte Projekt aus und klicken anschließend im linken Menü auf `Instances`{.action}.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie oben auf der Seite auf `Public Cloud`{.action}. Klicken Sie dann im folgenden Bereich auf die Pfeilschaltfläche neben Ihrem Standardprojektnamen in der oberen linken Ecke der Anzeige. Wählen Sie nun das gewünschte Projekt aus und klicken anschließend im linken Menü auf `Instances`{.action}.
 
 Klicken Sie dann auf `...`{.action} rechts neben der Instanz und wählen Sie `Backup erstellen`{.action}.
 

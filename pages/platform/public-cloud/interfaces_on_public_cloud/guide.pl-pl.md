@@ -12,7 +12,7 @@ order: 4
 
 Usługa [Public Cloud](https://www.ovh.pl/public-cloud/){.external} ze względu na swoją specyfikę może być zarządzana za pośrednictwem różnych interfejsów użytkownika.
 
-Pierwszymi, do których uzyskujesz dostęp jako klient OVH, jest [Panel klienta](https://www.ovh.com/auth/?action=gotomanager){.external} oraz [API OVH](https://api.ovh.com/){.external}.
+Pierwszymi, do których uzyskujesz dostęp jako klient OVH, jest [Panel klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} oraz [API OVH](https://api.ovh.com/){.external}.
 
 Panel klienta służy do zarządzania zakupionymi usługami, a także zarządzania kontem klienta OVH, w tym płatnościami, fakturami oraz własnością usług . Interfejs ten korzysta z API OVH, które również udostępniamy Klientom. 
 API OVH, może posłużyć do budowania własnych skryptów i aplikacji, aby w pełny i zautomatyzowany sposób zarządzać usługami według własnych potrzeb. Niektóre, zaawansowane funkcje są obecne tylko w OVH API.
@@ -26,7 +26,7 @@ OpenStack API może być obsługiwany poprzez narzędzia CLI (Command Line Inter
 ## Wymagania początkowe
 
 - [Konto klienta OVH](https://www.ovh.pl/pomoc/new_nic.xml){.external}
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - Dostęp do [API OVH](https://api.ovh.com/){.external}
 - Utworzony [projekt Public Cloud](https://docs.ovh.com/pl/public-cloud/tworzenie-usuwanie-projektow){.external}
 - Dostęp do [OpenStack Horizon](https://horizon.cloud.ovh.net/auth/login/){.external}

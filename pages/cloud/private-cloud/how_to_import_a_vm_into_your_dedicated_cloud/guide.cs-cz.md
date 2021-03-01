@@ -18,8 +18,10 @@ V takovém případě se můžete přejít k importu.
 - Vytvořil jsem si VMDK:
 
 Nejdříve musíte konvertovat VMDK na VHDX tak, aby to bylo kompatibilní s Hyper-V. Použijte pro to jeden z následujících nástrojů:
-[Microsoft Virtual Machine Converter Solution Accelerator](http://www.microsoft.com/en-us/download/details.aspx?id=34591)
-[2Tware Convert VHD](http://www.2tware.com/product/6/2twareconvertvhdfree)
+
+- Microsoft Virtual Machine Converter Solution Accelerator
+- 2Tware Convert VHD
+
 OVH poskytuje informace o těchto nástrojích jako příklad. Vy pochopitelně můžete použít i jiné nástroje.
 OVH neposkytuje podporu pro nástroje, které jsou vytvořeny třetími stranami.
 

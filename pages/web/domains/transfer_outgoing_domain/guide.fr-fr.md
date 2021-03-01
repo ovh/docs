@@ -1,57 +1,86 @@
 ---
-title: Transférer son nom de domaine OVH vers un autre bureau d'enregistrement
+title: Transférer un nom de domaine vers un autre bureau d'enregistrement
 slug: transfert-sortant-dun-nom-de-domaine-generique-ou-geographique
-excerpt: Découvrez comment effectuer le transfert d’un nom de domaine OVH vers le bureau d'enregistrement de votre choix
+excerpt: Découvrez comment effectuer le transfert d’un nom de domaine OVHcloud vers le bureau d'enregistrement de votre choix
 section: Transfert
 order: 4
 ---
 
-**Dernière mise à jour le 08/03/2018**
+**Dernière mise à jour le 25 janvier 2021**
 
 ## Objectif
 
-Le transfert d’un nom de domaine permet de changer le bureau d’enregistrement de ce dernier. Ce transfert est possible vers un autre bureau d'enregistrement.
+Un **transfert de domaine** fait référence au déplacement d'un nom de domaine d'un bureau d'enregistrement à un autre. Par exemple, si vous avez commandé un nom de domaine sur notre site Web, OVHcloud est son bureau d'enregistrement actuel. Un transfert de domaine sortant doit être initié par le nouveau bureau d'enregistrement.
 
-**Découvrez comment effectuer le transfert d’un nom de domaine OVH vers le bureau d'enregistrement de votre choix.**
+Afin d'empêcher les transferts de domaine non autorisés, les noms de domaine sont généralement verrouillés par un statut *clientTransferProhibited*. Cette protection doit être levée dans l'espace client OVHcloud avant de commencer tout transfert.
+
+**Ce guide vous explique comment préparer votre nom de domaine pour un transfert sortant.**
 
 ## Prérequis
-- Disposer d'un nom de domaine enregistré chez OVH.
+
+- Disposer d'un [nom de domaine](https://www.ovh.com/fr/domaines/) enregistré chez OVHcloud
 - Être habilité à demander le transfert du nom de domaine : le propriétaire et/ou les personnes l'administrant doivent être informés de la demande du transfert.
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Le nom de domaine doit avoir été créé il y a plus de 61 jours et ne doit pas avoir été transféré ou avoir changé de propriétaire durant cette période.
+- Disposer d'un accès à la gestion du nom de domaine concerné depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Le nom de domaine doit avoir été créé il y a plus de 61 jours **et** ne doit pas avoir été transféré ou avoir changé de propriétaire durant cette période.
 
 > [!primary]
 >
-> Certaines extensions font l'objet d'une procédure particulière concernant le changement de bureau d'enregistrement. Si les étapes ci-dessous ne vous permettent pas de transférer votre nom de domaine, nous vous invitons à prendre contact avec votre nouveau bureau d'enregistrement pour obtenir plus d'informations concernant la marche à suivre.
+> Si vous êtes le **propriétaire** du domaine mais que sa gestion dans l'espace client OVHcloud est indisponible, que ce soit via votre propre accès ou via le contact administratif du domaine, veuillez consulter [ce guide](../../customer/gestion-des-contacts/#cas-particulier-dun-proprietaire-de-domaine) avant de continuer.
 >
 
 ## En pratique
 
+> [!warning]
+>
+> Les instructions suivantes décrivent le moyen le plus courant de transférer un nom de domaine, valide pour la plupart des domaines de premier niveau (top-level domain, ou TLD). Toutefois, les règles spécifiques de procédures propres aux TLD sont uniquement définies par l'autorité appropriée, c'est-à-dire le **registre**. Les bureaux d'enregistrement tels que OVHcloud doivent respecter ces règles et n'ont aucune influence sur les décisions des registres.
+>
+> La procédure exacte pour les transferts de domaine peut donc varier, en particulier dans le cas de certains TLD de code de pays (ccTLD, tels que .lu, .uk., .hk, .ro) et de quelques TLD spéciaux (.am, .fm, etc...). Les transferts peuvent également être interdits pour diverses raisons, par exemple dans les cas d'un paiement en attente, d'abus ou de verrouillage du registre.
+>
+> Nous vous recommandons de consulter les ressources suivantes en cas de doute :
+>
+> - le site Web du registre TLD correspondant;
+> - la [liste des TLD disponibles chez OVHcloud](https://www.ovh.com/fr/domaines/tarifs/);
+> - [Les explications de l'ICANN sur les codes de statut EPP](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (pour savoir quels codes de statut s'appliquent actuellement à votre nom de domaine, effectuez une recherche *Whois*, en utilisant de préférence le site Web du registre TLD correspondant);
+> - le site Web et l'interface de gestion de votre nouveau bureau d'enregistrement, en particulier pour les questions relatives à un processus de transfert en attente.
+>
+
 ### Étape 1 : lever la protection contre le transfert du nom de domaine
 
-Pour lever la protection contre le transfert de votre nom de domaine OVH, toujours connecté à votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Web Cloud`{.action} dans la barre de services en haut. Rendez-vous dans la section `Domaines`{.action} située à gauche, puis cliquez sur le nom de domaine concerné. Depuis l'onglet `Informations générales`{.action}, décochez la case `Protection contre le transfert`{.action}, puis cliquez sur `Valider`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action} dans la barre de navigation supérieure. Cliquez sur `Domaines`{.action} dans la barre de services située à gauche, puis choisissez le nom de domaine concerné.
+
+Sous l'onglet `Informations générales`{.action}, vous trouverez le curseur `Protection contre le transfert` sous **Securité**. Par défaut, cette protection est `Activée`{.action}.
+
+![protection activée](images/outgoing-transfer-step1.png){.thumbnail}
+
+Cliquez sur le curseur et confirmez, dans la fenêtre qui s'affiche, que vous souhaitez supprimer cette protection. Patientez quelques minutes pour que l'état passe à `Désactivée`{.action}.
+
+![désactivation protection](images/outgoing-transfer-step2.png){.thumbnail}
 
 > [!primary]
 >
-> À compter du déverrouillage de votre nom de domaine, vous disposez de sept jours pour initier son transfert vers le nouveau bureau d'enregistrement. Au-delà de ce délai, celui-ci se verrouille automatiquement de nouveau si aucune demande de changement de bureau d’enregistrement n’a été effectuée.
+> Une fois la protection levée, le nom de domaine reste déverrouillé pendant sept jours. Après cette période, la protection sera automatiquement réactivée. Si vous ne demandez pas de transfert de domaine à votre nouveau bureau d'enregistrement pendant cet intervalle, il sera nécessaire de lever à nouveau la protection sur le domaine.
 >
-
-![outgoingtransfer](images/outgoing-transfer-step2.png){.thumbnail}
 
 ### Étape 2 : récupérer le code de transfert
 
-Une fois la protection contre le transfert levée, vous pouvez récupérer le code de transfert de votre nom de domaine. Pour cela, toujours depuis l'onglet `Informations générales`{.action}, cliquez sur `AUTH/INFO`{.action} situé à côté de `Protection contre le transfert`{.action}. N'hésitez pas à actualiser la page si nécessaire.
+Une fois la protection contre le transfert levée, vous pouvez récupérer le code de transfert de votre nom de domaine. Pour cela, toujours depuis l'onglet `Informations générales`{.action}, cliquez sur `AUTH/INFO`{.action} situé à côté de `Protection contre le transfert`. N'hésitez pas à actualiser la page si nécessaire.
 
-Récupérez le code qui s'affiche dans la fenêtre.
+Une fenêtre s'affiche alors et contient votre code AUTH/INFO (également appelé code de transfert, mot de passe de domaine, AUTH-CODE ou EPP-Code).
 
 ![outgoingtransfer](images/outgoing-transfer-step3.png){.thumbnail}
 
+Le code sera demandé par votre nouveau bureau d'enregistrement pour terminer le processus de transfert. Vous pouvez vérifier les détails auprès de votre nouveau bureau d'enregistrement.
+
+Plutôt que de taper manuellement le code, nous vous recommandons de copier/coller celui-ci, car certains caractères peuvent être facilement confondus.
+
 ### Étape 3 : débuter le transfert vers le nouveau bureau d'enregistrement
 
-Si ce n'est pas déjà fait, prenez contact avec votre nouveau bureau d'enregistrement pour initier le transfert de votre nom de domaine. Vous devrez lui communiquer le code de transfert récupéré lors de l'étape 3 durant le processus propre à ce bureau.
+Une fois les étapes précédentes effectuées, vous pouvez lancer le processus de transfert, généralement en passant une commande. Le transfert peut prendre jusqu'à 10 jours. 
 
-Reportez-vous aux informations communiquées par votre nouveau bureau d'enregistrement pour en apprendre plus sur les délais de transfert.
+Pour plus d'informations, contactez votre nouveau bureau d'enregistrement.
 
 ## Aller plus loin
+
+[Transfert de nom de domaine .co.uk sortant](../transfert-sortant-dun-nom-de-domaine-couk/)
 
 Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.

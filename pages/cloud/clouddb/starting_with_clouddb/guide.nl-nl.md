@@ -17,13 +17,13 @@ Deze handleiding legt uit hoe u aan de slag kunt met CloudDB.
 ## Vereisten
 
 - U moet beschikken over een [CloudDB-instance](https://www.ovh.nl/cloud/cloud-databases/){.external}.
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 ## Instructies
 
 ### De algemene informatie van de instance weergeven
 
-In de servicebalk links van uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} gaat u naar het onderdeel `Databases`{.action} en vervolgens naar de betreffende SQL-instance. Ga na of u het tabblad `Algemene informatie`{.action} geopend hebt.
+In de servicebalk links van uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} gaat u naar het onderdeel `Databases`{.action} en vervolgens naar de betreffende SQL-instance. Ga na of u het tabblad `Algemene informatie`{.action} geopend hebt.
 
 > [!primary]
 >

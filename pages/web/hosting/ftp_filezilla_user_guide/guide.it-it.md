@@ -65,7 +65,7 @@ Nel riquadro verde in alto, per accedere al server remoto, ti chiediamo:
 |Password dell’utente FTP|Password associata all’utente FTP.<br><br> |
 |Porta di connessione|Questo campo, in genere, viene completato automaticamente dal client. In caso contrario:<br><br>\- utilizza la porta 21 per stabilire una connessione via protocollo FTP<br>\- utilizza la porta 22 per stabilire una connessione via protocollo SFTP (se attivo)|
 
-Per recuperare le informazioni necessarie, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} nel menu a sinistra e clicca sulla scheda `FTP - SSH`{.action}. Nella nuova pagina, visualizzi tutte le informazioni relative allo storage e una tabella con gli utenti FTP e SSH creati sul tuo hosting.
+Per recuperare le informazioni necessarie, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} nel menu a sinistra e clicca sulla scheda `FTP - SSH`{.action}. Nella nuova pagina, visualizzi tutte le informazioni relative allo storage e una tabella con gli utenti FTP e SSH creati sul tuo hosting.
 
 Dopo aver inserito tutte le informazioni, clicca su Connessione rapida per accedere al server.
 

@@ -17,7 +17,7 @@ Wraz z pakietami hostingowymi OVH otrzymujesz dostęp do przestrzeni dyskowej um
 ## Wymagania początkowe
 
 - Posiadanie [hostingu OVH]({ovh_www}/hosting/){.external}
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Web Cloud`{.action}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Web Cloud`{.action}
 
 ## W praktyce
 
@@ -37,7 +37,7 @@ Aby zalogować się do przestrzeni dyskowej, powinieneś posiadać następujące
 > **Jeśli masz już dostęp do tych danych**, przejdź bezpośrednio do etapu 2: [Dostęp do przestrzeni dyskowej](./#etap-2-dostep-do-przestrzeni-dyskowej).
 > 
 
-[Jeśli nie posiadasz wskazanych wyżej informacji](https://www.ovh.com/auth/?action=gotomanager){.external}, zaloguj się do `Panelu klienta`{.action} i kliknij `Hosting`{.action} na pasku usług po lewej stronie. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. 
+[Jeśli nie posiadasz wskazanych wyżej informacji](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, zaloguj się do `Panelu klienta`{.action} i kliknij `Hosting`{.action} na pasku usług po lewej stronie. Wybierz odpowiedni hosting i przejdź do zakładki `FTP - SSH`{.action}. 
 
 Wyświetlą się wówczas informacje dotyczące Twojej przestrzeni dyskowej oraz tabela zawierająca nazwy użytkowników FTP i SSH utworzonych na Twoim hostingu.
 
@@ -70,7 +70,7 @@ Logowanie do przestrzeni dyskowej można przeprowadzić na kilka sposobów. Prze
 
 #### 1. Logowanie przez FTP Explorer
 
-Aby zalogować się do Twojej przestrzeni dyskowej przez FTP Explorer, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią nazwę hostingu. 
+Aby zalogować się do Twojej przestrzeni dyskowej przez FTP Explorer, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiednią nazwę hostingu. 
 
 Przejdź do zakładki `FTP - SSH`{.action} i kliknij przycisk `FTP Explorer`{.action}. 
 

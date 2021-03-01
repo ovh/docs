@@ -21,13 +21,13 @@ This can be useful in cases where:
 
 ## Requirements
 
-* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 * a [Public Cloud Instance](https://www.ovh.co.uk/public-cloud/instances/){.external} in your OVH account.
 * administrative (root) access to your instance via SSH.
 
 ## Instructions
 
-Firstly, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Public Cloud`{.action} menu. Then click on the `Project`{.action} you want to create the instance.
+Firstly, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} and click the `Public Cloud`{.action} menu. Then click on the `Project`{.action} you want to create the instance.
 
 Now click the `Actions`{.action} button and then select `Create a volume`{.action}.
 
@@ -203,7 +203,7 @@ Next, select `MBR`{.action} and click `OK`{.action}.
 
 ![initialise disk](images/initialise-disk.png){.thumbnail}
 
-#### Initialsing the disk using DISKPART
+#### Initialising the disk using DISKPART
 
 First, right-click on the `Start Menu`{.action} button and then click `Run`{.action}
 
@@ -230,7 +230,7 @@ SAN Policy : Offline Shared
 ```
 DISKPART> san policy = OnlineAll
 
-DiskPart successfully changed the SAN policy for the current operating system . [/ Code]
+DiskPart successfully changed the SAN policy for the current operating system .
 
 - Implementation of the strategy on the extra disk:
 [Code] DISKPART> list disk

@@ -18,7 +18,7 @@ Graças ao alojamento web da OVH, pode beneficiar de um certificado SSL. Este ú
 
 - Ter um [certificado SSL](https://www.ovh.com/pt/ssl/){.external} instalado no [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
 - Dispor de, pelo menos, um website instalado e acessível no alojamento web da OVH.
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web Cloud`{.action}.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
 
 
 ## Instruções
@@ -42,7 +42,7 @@ A tabela abaixo permite-lhe compreender de forma mais clara este processo.
 
 ### 1 - Ativar o certificado SSL no alojamento
 
-A ativação do certificado SSL no alojamento web é feita a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Nesse sentido, tem de realizar as seguintes operações:
+A ativação do certificado SSL no alojamento web é feita a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Nesse sentido, tem de realizar as seguintes operações:
 
 |Operação|Descrição|
 |---|---|
@@ -51,7 +51,7 @@ A ativação do certificado SSL no alojamento web é feita a partir da [Área de
 
 Para mais informações sobre estas ações, consulte o manual [Gerir um certificado SSL no alojamento web](https://docs.ovh.com/pt/hosting/os-certificados-ssl-nos-alojamentos-web/){.external}. Se acabou de contratar o seu alojamento web com a OVH, é possível que já tenha um certificado SSL instalado e que a ligação SSL para o multi-site já esteja ativa.
 
-Para o verificar, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique em `Alojamentos`{.action} na barra à esquerda e escolha o alojamento correspondente. Certifique-se de que está no separador `Informações gerais`{.action}. Na secção “Certificado SSL”, deve estar indicado “Sim”, o que significa que já está instalado no alojamento web um certificado SSL. 
+Para o verificar, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Alojamentos`{.action} na barra à esquerda e escolha o alojamento correspondente. Certifique-se de que está no separador `Informações gerais`{.action}. Na secção “Certificado SSL”, deve estar indicado “Sim”, o que significa que já está instalado no alojamento web um certificado SSL. 
 
 ![httpswebsite](images/activate-https-website-ssl-step2.png){.thumbnail}
 

@@ -19,13 +19,13 @@ La soluzione Email Pro permette di usufruire di un servizio di posta elettronica
 - Disporre di una soluzione [Email Pro](https://www.ovh.it/emails/email-pro/){.external}
 - Aver ricevuto l’email di conferma dell’installazione di Email Pro
 - Disporre di un dominio OVH
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
 ### Step 1: accedi alla gestione del servizio
 
-Per gestire la soluzione Email Pro accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+Per gestire la soluzione Email Pro accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 e seleziona il tuo servizio nella sezione `Email Pro`{.action} del menu a sinistra.
 
@@ -83,7 +83,7 @@ A operazioni ultimata, il dominio aggiunto dovrebbe risultare come dominio assoc
 
 Nella colonna `Diagnostica`{.action} è possibile assicurarsi della corretta configurazione del dominio. Se è presente una casellina rossa, significa che è necessario modificare alcuni parametri. Quindi hai due possibilità: 
 
-- ** In caso di configurazione automatica**, l’aggiornamento nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} potrebbe richiedere qualche ora.
+- ** In caso di configurazione automatica**, l’aggiornamento nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} potrebbe richiedere qualche ora.
 
 - **Se il dominio inserito non è gestito da OVH**, clicca sulla casellina rossa per visualizzare le modifiche da apportare. <br>
 *Nel caso sia necessario intervenire su un record di tipo CNAME*, consulta la guida “[Creare un record CNAME per aggiungere un dominio associato](../../microsoft-collaborative-solutions/exchange_20132016_aggiungi_un_record_di_tipo_cname/)” <br>
@@ -134,7 +134,7 @@ Per configurare l’account su un altro client di posta o dispositivi come _smar
 >
 > Nel nostro esempio, usiamo il nome del server, ad esempio: pro**?**.mail.ovh.net, dove “?” dovrà essere sostituito con il numero che indica il server del servizio Email Pro.
 > 
-> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action}
+> Questa informazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}, selezionando `Email Pro`{.action}
 >  nella colonna a sinistra. Il nome del server è visibile nel riquadro **Connessione** della `scheda Informazioni generali`{.action}.
 > 
 

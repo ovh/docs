@@ -18,7 +18,7 @@ Al instalar o reinstalar una distribución o sistema operativo, recibirá una co
 
 * Tener un [servidor dedicado](https://www.ovh.es/servidores_dedicados/){.external} con una distribución Linux instalada.
 * Estar conectado por SSH con el usuario root (si dispone de la contraseña actual).
-* Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (si no dispone de la contraseña actual).
+* Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} (si no dispone de la contraseña actual).
 
 
 ## Procedimiento

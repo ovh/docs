@@ -10,7 +10,7 @@ section: API
 ## 
 Pour connaitre les bases de notre API :
 
-[Bases de l'API](https://api.ovh.com/g934.first_step_with_api)
+[Bases de l'API](https://docs.ovh.com/fr/api/api-premiers-pas/)
 
 
 ## 

@@ -17,7 +17,7 @@ No seguimento de um erro numa base de dados, deve estar preparado para restaurar
 ## Requisitos
 
 - Dispor de um [serviço de alojamento SQL Privado](https://www.ovh.pt/alojamento-partilhado/opcoes-sql.xml){.external} ou de [Cloud Databases](https://www.ovh.pt/cloud-databases/){.external}.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
@@ -28,7 +28,7 @@ No seguimento de um erro numa base de dados, deve estar preparado para restaurar
 
 ### Restaurar e importar uma base de dados a partir da Área de Cliente
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados. Clique no separador `Bases de dados`.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Base de dados`{.action} no menu à esquerda. Selecione o nome do seu servidor de bases de dados. Clique no separador `Bases de dados`.
 
 Ao nível da coluna **«Backups»**, o algarismo corresponde ao número de salvaguardas disponíveis para a sua base de dados.
 

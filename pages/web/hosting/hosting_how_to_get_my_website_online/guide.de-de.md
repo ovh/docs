@@ -20,7 +20,7 @@ Im Internet gibt es viele verschiedene Websites. Egal ob Sie einen Blog einricht
 - Sie besitzen ein [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
 - Sie haben die Bestätigungs-E-Mail zur Installation Ihres Webhostings erhalten.
 - Sie besitzen eine [Domain](https://www.ovh.de/domains/){.external}, über die Ihre Website erreichbar sein wird.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 ## Beschreibung
 
@@ -69,7 +69,7 @@ Um sich mit Ihrem Speicherplatz zu verbinden, benötigen Sie die folgenden Eleme
 - die Serveradresse
 - den Verbindungsport des Servers
 
-Diese Informationen wurden Ihnen per E-Mail bei der Installation Ihres Webhostings mitgeteilt. Wenn Sie nicht mehr im Besitz dieser Daten sind, loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und klicken Sie im Bereich „Web“ links in der Menüleiste auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. 
+Diese Informationen wurden Ihnen per E-Mail bei der Installation Ihres Webhostings mitgeteilt. Wenn Sie nicht mehr im Besitz dieser Daten sind, loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und klicken Sie im Bereich „Web“ links in der Menüleiste auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. 
 
 ![website installation](images/get-website-online-step1.png){.thumbnail}
 
@@ -112,7 +112,7 @@ Wenn Sie eine bereits bestehende Website migrieren, erhalten Sie die Datenbankda
 
 Wenn Sie bereits eine Datenbank besitzen, die Sie verwenden möchten (beispielsweise aus einem [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot oder einer [SQL Private](https://www.ovh.de/hosting/sql-optionen.xml){.external} oder [Cloud DB](https://www.ovh.de/cloud/cloud-databases/){.external} Lösung), halten Sie bitte folgende Informationen bereit: Benutzername, zugehöriges Passwort, Name der Datenbank sowie die Serveradresse. Gehen Sie nun zum nächsten Schritt über.
 
-Wenn Sie eine neue Datenbank bei OVH erstellen möchten, loggen Sie sich im [ OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und klicken Sie links im Menü auf `Hosting-Pakete`{.action}. Wählen Sie das gewünschte Hosting aus und gehen Sie dann auf den Tab `Datenbanken`{.action}.
+Wenn Sie eine neue Datenbank bei OVH erstellen möchten, loggen Sie sich im [ OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und klicken Sie links im Menü auf `Hosting-Pakete`{.action}. Wählen Sie das gewünschte Hosting aus und gehen Sie dann auf den Tab `Datenbanken`{.action}.
 
 Klicken Sie nun auf den Button `Datenbank erstellen`{.action} oder, wenn der Button nicht angezeigt wird, auf `Aktionen`{.action} und dann auf `Datenbank erstellen`{.action}. Folgen Sie nun den angezeigten Informationen.
 

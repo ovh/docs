@@ -15,7 +15,7 @@ Vous possédez un téléphone Plug and Phone et vous ne pouvez plus émettre ni 
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
 - Disposer d'une [ligne téléphonique OVH](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
 - Disposer d'un [téléphone](https://www.ovhtelecom.fr/telephonie/comparatif-des-telephones.xml){.external} Plug and Phone et l'avoir installé.
 
@@ -23,7 +23,7 @@ Vous possédez un téléphone Plug and Phone et vous ne pouvez plus émettre ni 
 
 ### Étape 1 : accéder à l'assistant de dépannage
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis choisissez la ligne concernée. 
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis choisissez la ligne concernée. 
 
 Positionnez-vous à présent sur l'onglet `Assistance`{.action}, puis cliquez sur le bouton `Dépannage Plug & Phone`{.action}.
 

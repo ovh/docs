@@ -26,7 +26,7 @@ OVHcloud ofrece a los clientes VPS imágenes de aplicaciones preinstaladas para 
 
 ### Instalar la aplicación preinstalada que desee
 
-Instale [la aplicación que desee desde el área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) o las API de OVHcloud. También puede consultar nuestra guía [Primeros pasos con un VPS](../primeros-pasos-con-vps/).
+Instale [la aplicación que desee desde el área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) o las API de OVHcloud. También puede consultar nuestra guía [Primeros pasos con un VPS](../primeros-pasos-con-vps/).
  
 #### cPanel
 
@@ -57,7 +57,7 @@ No es necesario realizar ningún otro paso para finalizar la primera configuraci
 > ¿Por qué establecer la contraseña root?
 >> WHM utiliza por defecto el usuario root para la autenticación. La URL de un solo uso permite acceder a la primera configuración y cambiar la contraseña root. La próxima vez que se conecte a WHM, deberá utilizar el usuario root y la contraseña que haya establecido.
 > ¿Dónde está mi licencia para cPanel?
->> Puede contratar su licencia cPanel para su VPS desde [el área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
+>> Puede contratar su licencia cPanel para su VPS desde [el área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 #### Plesk
 

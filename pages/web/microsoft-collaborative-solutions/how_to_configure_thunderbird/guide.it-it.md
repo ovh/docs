@@ -44,7 +44,7 @@ Completa i campi richiesti:
 
 - Nome e Cognome *Inserisci qui il nome da visualizzare.*
 - Indirizzo di posta elettronica: *Inserisci l’indirizzo email completo.*
-- Password:  *La password definita nel tuo [Spazio Cliente](https://www.ovh.com/manager/web/login.html){.external} per l’account Exchange.*
+- Password:  *La password definita nel tuo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)){.external} per l’account Exchange.*
 - Ricorda password:  *È necessario selezionare questa opzione.*
 
 Clicca su `Configurazione manuale`{.action} per continuare l’installazione.
@@ -59,7 +59,7 @@ Clicca su `Configurazione manuale`{.action} per continuare l’installazione.
 >
 > Nel nostro esempio, usiamo il nome del server, ad esempio: **X**.mail.ovh.net.
 > 
-> Per recuperare i dati del server accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web Cloud`{.action}, quindi seleziona `Microsoft`{.action}
+> Per recuperare i dati del server accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}, quindi seleziona `Microsoft`{.action}
 >  nella colonna a sinistra. Seleziona `Exchange`{.action}, quindi la tua piattaforma. Il server è visibile nel riquadro **Connessione** della scheda `Informazioni Generali`{.action}
 > 
 

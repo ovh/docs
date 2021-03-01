@@ -19,7 +19,7 @@ As well as private IP addressing, the [vRack](https://www.ovh.com/ca/en/solution
 * your chosen private IP address range
 * a [vRack compatible server](https://www.ovh.com/ca/en/solutions/vrack/){.external}
 * a [vRack](https://www.ovh.com/ca/en/solutions/vrack/){.external} service activated in your account
-* access to the OVHcloud [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* access to the OVHcloud [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
 
 ## Instructions
 

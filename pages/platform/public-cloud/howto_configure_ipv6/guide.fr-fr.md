@@ -101,7 +101,7 @@ Voici un exemple concret :
 
 ```
 IPV6INIT=yes
-IPV6ADDR=2001:41d0:xxx:xxxx::999
+IPV6ADDR=2001:41d0:xxx:xxxx::999/128
 IPV6_DEFAULTGW=2001:41d0:xxx:xxxx::111
 ```
 

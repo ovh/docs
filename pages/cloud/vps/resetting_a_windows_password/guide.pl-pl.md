@@ -21,7 +21,7 @@ Możliwe, że musisz zresetować hasło na serwerze VPS z systemem Windows. Nini
 
 ## W praktyce
 
-Zaloguj się na serwerze VPS poprzez VNC w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) za pomocą identyfikatora logowania otrzymanego e-mailem.
+Zaloguj się na serwerze VPS poprzez VNC w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) za pomocą identyfikatora logowania otrzymanego e-mailem.
 
 Wpisz następujące polecenia, aby zamontować zdalny system plików:
 

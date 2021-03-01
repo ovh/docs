@@ -19,7 +19,7 @@ Para empezar a utilizar la solución Content Delivery Network (CDN) de OVH, es n
 
 - Tener contratada la solución [CDN de OVH](https://www.ovh.es/cdn/){.external}.
 - Tener acceso a la gestión de la zona DNS del dominio.
-- Tener acceso al [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Tener acceso al [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 
 ## Procedimiento
@@ -28,7 +28,7 @@ Para empezar a utilizar la solución Content Delivery Network (CDN) de OVH, es n
 
 En primer lugar, es necesario añadir el subdominio a la CDN para que esta última acepte las peticiones HTTP(S) relativas al mismo.
 
-Para ello, en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external} acceda a la sección `Dedicado`{.action}. En la columna izquierda, haga clic en `NAS y CDN`{.action} y seleccione el servicio CDN correspondiente.
+Para ello, en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} acceda a la sección `Dedicado`{.action}. En la columna izquierda, haga clic en `NAS y CDN`{.action} y seleccione el servicio CDN correspondiente.
 
 Haga clic en el atajo `Añadir un dominio a la CDN`{.action}.
 
@@ -106,7 +106,7 @@ Además, atribuir un dominio específico a los archivos que quiera almacenar en 
 
 Si quiere configurar un nuevo subdominio para utilizar la CDN, seguramente deberá modificar determinados parámetros en el sitio web y el servicio web.
 
-En primer lugar, asegúrese de que su servicio web responde correctamente al subdominio. Para ello, configure un [vhost](https://es.wikipedia.org/wiki/Alojamiento_compartido){.external} para dicho dominio, ya sea con su propia carpeta de destino o como alias de otro dominio.
+En primer lugar, asegúrese de que su servicio web responde correctamente al subdominio. Para ello, configure un *vhost* para dicho dominio, ya sea con su propia carpeta de destino o como alias de otro dominio.
 
 Si el dominio responde correctamente en su servicio web, solo tendrá que editar el código HTML para modificar el origen de los archivos que deben pasar por la CDN y, por último, asegurarse de que reciben las peticiones enviadas a través del subdominio.
 

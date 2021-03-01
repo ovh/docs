@@ -22,14 +22,14 @@ Le niveau de RAID par défaut des serveurs OVHcloud est le RAID 1\. Celui-ci dou
 
 ## Prérequis
 
-- Disposer d’un [serveur dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external} avec un RAID matériel.
+- Disposer d’un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external} avec un RAID matériel.
 - Avoir accès à votre serveur via SSH en tant qu'administrateur (root)
 
 ## En pratique
 
 ### Utiliser votre espace client OVHcloud
 
-Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le menu `Dédié`{.action} et sélectionnez votre serveur.
+Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur le menu `Dédié`{.action} et sélectionnez votre serveur.
 
 Ensuite, sous l'onglet `État du serveur`{.action}, cliquez sur le bouton `Réinstaller`{.action} pour installer un nouveau système d'exploitation avec votre configuration RAID 0 personnalisée.
 
@@ -63,7 +63,7 @@ df -h
 
 ### Utiliser le mode rescue
 
-Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur le menu `Dédié`{.action} et sélectionnez votre serveur.
+Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur le menu `Dédié`{.action} et sélectionnez votre serveur.
 
 Sous l'onglet `État du serveur`{.action}, cliquez sur le bouton `Modifier`{.action} pour changer le système de démarrage.
 
@@ -79,7 +79,7 @@ Cliquez sur `Suivant`{.action} puis sur `Confirmer`{.action} dans l'écran qui s
 
 ![MegaRAID](images/rescue_mode_raid0_03.png){.thumbnail}
 
-Cliquez sur le bouton `Redémarrer`{.action} dans [l’espace client](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Cliquez sur le bouton `Redémarrer`{.action} dans [l’espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ![MegaRAID](images/server_installation_raid0_06_2020.png){.thumbnail}
 

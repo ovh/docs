@@ -18,7 +18,7 @@ When creating an instance, it is not possible to configure only one SSH key. How
 ## Requirements
 
 - a [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - access to your instance via SSH
 
 ## Instructions
@@ -97,4 +97,3 @@ admin@server-1:~$ sudo vim /home/admin/.ssh/authorized_keys
 [Replacing your lost SSH key pair](../replacing_your_lost_ssh_key_pair/)
 
 Join our community of users on <https://community.ovh.com/en/>.
-

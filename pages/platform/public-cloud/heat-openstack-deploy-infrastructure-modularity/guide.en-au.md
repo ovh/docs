@@ -15,7 +15,7 @@ We recommend starting off by reading our guide on [Deploying a basic infrastruct
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
 - a Public Cloud project
 - an OpenStack user account
 - how to manipulate YAML files

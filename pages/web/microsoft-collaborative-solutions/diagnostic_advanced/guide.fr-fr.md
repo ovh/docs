@@ -13,7 +13,7 @@ Vous avez réalisé un diagnostic de votre compte Exchange et une ou plusieurs e
 ## Réaliser un diagnostic de votre compte Exchange
 
 ### Realiser un diagnostic
-Rendez-vous sur l'espace client via ce lien : [Espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Rendez-vous sur l'espace client via ce lien : [Espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 Une fois connecté, sélectionnez dans la colonne de gauche le menu **Microsoft**  puis votre service Exchange.
 

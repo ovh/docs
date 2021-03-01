@@ -24,7 +24,7 @@ Note that in order to complete this tutorial, you should have at least:
 
 ## Preparation
  
-Before we dive into this tutorial, it is important to understand how we will deploy Fluent Bit. The configuration of Fluent Bit will be similar as the one you can find in the [official documentation](https://docs.fluentbit.io/manual/installation/kubernetes). Fluent Bit will be deployed as a *DaemonSet* in every node of the kubernetes cluster. Fluent Bit will read, parse and ship every log of every pods of your cluster by default. It will also enrich each log with precious metadata like pod name and id, container name and ids, labels and annotations. As stated in the Fluent Bit documentation, a built-in Kubernetes filter will use Kubernetes API to gather some of these information. 
+Before we dive into this tutorial, it is important to understand how we will deploy Fluent Bit. The configuration of Fluent Bit will be similar as the one you can find in the [official documentation](http://fluentbit.io/). Fluent Bit will be deployed as a *DaemonSet* in every node of the kubernetes cluster. Fluent Bit will read, parse and ship every log of every pods of your cluster by default. It will also enrich each log with precious metadata like pod name and id, container name and ids, labels and annotations. As stated in the Fluent Bit documentation, a built-in Kubernetes filter will use Kubernetes API to gather some of these information. 
 
 
 ## Instructions 
@@ -63,7 +63,7 @@ We create a *ldp-token* secret with only one key named *ldp-token* as the value 
 
 #### ConfigMap File
 
-Even if it is undocumented, Fluent Bit supports [GELF](https://docs.graylog.org/en/stable/pages/gelf.html){.external} as a standard output with udp,tcp and TLS protocols out of the box. We will modify the proposed file of the documentation to parse and convert Fluent Bit logs to GELF:
+Even if it is undocumented, Fluent Bit supports [GELF](https://docs.graylog.org/){.external} as a standard output with udp,tcp and TLS protocols out of the box. We will modify the proposed file of the documentation to parse and convert Fluent Bit logs to GELF:
 
 ```yaml
 apiVersion: v1
@@ -203,7 +203,7 @@ The differences with the proposed file in the documentation are in the filter co
 - We use a **modify** filter to copy the pod name which generated the log to the name of the source
 - We finally use a **modify** filter to rename the log field to the standard  *short_message* value
 
-If you need more information on what you can do with the filters, don't hesitate to navigate to the [Fluent Bit filter documentation](https://docs.fluentbit.io/manual/filter){.external}. With the Fluent Bit filters, you can specify which pods should be logged and what data must be included or discarded. 
+If you need more information on what you can do with the filters, don't hesitate to navigate to the [Fluent Bit filter documentation](http://fluentbit.io/){.external}. With the Fluent Bit filters, you can specify which pods should be logged and what data must be included or discarded. 
 
 The second modified file is the *output-ldp.conf* file. Here we configure the *Gelf output* with environment variables and activate the TLS. 
 The final part of the file is some parsers that you can use to create structured logs from well known log formats. 

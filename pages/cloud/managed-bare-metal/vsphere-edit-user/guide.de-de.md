@@ -18,11 +18,11 @@ Ein Name, Vorname, eine Telefonnummer und E-Mail-Adresse können mit dem vSphere
 ## Voraussetzungen
 
 - Sie verfügen über eine [Managed Bare Metal](https://www.ovhcloud.com/de/managed-bare-metal/) Infrastruktur.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und wählen Sie dann den Bereich `Bare Metal Cloud`. Klicken Sie im linken Menü auf `Managed Bare Metal` und wählen Sie die betreffende Infrastruktur aus.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie dann den Bereich `Bare Metal Cloud`. Klicken Sie im linken Menü auf `Managed Bare Metal` und wählen Sie die betreffende Infrastruktur aus.
 
 ![vSphere-Nutzer](images/addMailOnUser01.png){.thumbnail}
 

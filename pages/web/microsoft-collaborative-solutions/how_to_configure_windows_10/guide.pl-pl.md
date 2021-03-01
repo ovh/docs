@@ -46,7 +46,7 @@ Następnie wpisz informacje:
 |Hasło|Wpisz hasło przypisane do tego konta e-mail.|
 |Nazwa użytkownika|Wpisz pełny adres e-mail.|
 |Domena|Pozostaw to pole puste.|
-|Serwer|Wskaż serwer, na którym hostowana jest Twoja usługa Exchange. Możesz znaleźć go w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > zakładka `Informacje ogólne`{.action} dotyczące danej usługi Exchange > `Połączenie`{.action}.|
+|Serwer|Wskaż serwer, na którym hostowana jest Twoja usługa Exchange. Możesz znaleźć go w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > zakładka `Informacje ogólne`{.action} dotyczące danej usługi Exchange > `Połączenie`{.action}.|
 |Serwer wymaga szyfrowanego połączenia (SSL).|Pozostaw to pole zaznaczone.|
 |Nazwa konta|Wpisz nazwę pozwalającą odróżnić to konto od Twoich pozostałych kont wyświetlających się w aplikacji Poczta.|
 

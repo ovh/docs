@@ -14,7 +14,7 @@ section: 'Webhosting-Konfiguration'
 ## Voraussetzungen
 
 - Sie verfügen über ein kompatibles [OVHcloud Webhosting](https://www.ovh.com/de/hosting/) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
@@ -26,7 +26,7 @@ section: 'Webhosting-Konfiguration'
 
 ### FTP
 
-- Verbindungsfehler („Fehler 530: Login-Authentifizierung fehlgeschlagen“): Stellen Sie sicher, dass die Zugangsdaten für Ihren FTP-Bereich korrekt sind. Gehen Sie hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} und überprüfen Sie die Daten im Tab `FTP-SSH`. Die Passwörter werden nie angezeigt, können jedoch geändert werden. Weitere Informationen finden Sie in unseren [FTP-Anleitungen](../verbindung-ftp-speicher-webhosting/).
+- Verbindungsfehler („Fehler 530: Login-Authentifizierung fehlgeschlagen“): Stellen Sie sicher, dass die Zugangsdaten für Ihren FTP-Bereich korrekt sind. Gehen Sie hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und überprüfen Sie die Daten im Tab `FTP-SSH`. Die Passwörter werden nie angezeigt, können jedoch geändert werden. Weitere Informationen finden Sie in unseren [FTP-Anleitungen](../verbindung-ftp-speicher-webhosting/).
 
 - FTP-Verbindungen müssen den **passiven Modus** verwenden. Stellen Sie sicher, dass Ihre Skripte bzw. Ihr FTP-Client entsprechend angepasst sind.
 
@@ -67,7 +67,7 @@ Weitere Informationen zur Verwaltung von Datenbanken finden Sie in der Anleitung
 
 - Sie können die Konfigurationsdetails Ihres Webhostings überprüfen. Gehen Sie hierzu zum Abschnitt [„Technische Konfigurationen der Webhostings“](./#technische-konfigurationen-der-webhostings) am Ende dieser Anleitung. 
 
-- Sie können die PHP Versions Ihres Webhostings ändern, entweder über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) („**Konfiguration**“) oder indem Sie die Datei .ovhconfig entsprechend bearbeiten. Es sind auch gemischte Konfigurationen möglich. Ausführliche Instruktionen finden Sie in folgenden Anleitungen:
+- Sie können die PHP Versions Ihres Webhostings ändern, entweder über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) („**Konfiguration**“) oder indem Sie die Datei .ovhconfig entsprechend bearbeiten. Es sind auch gemischte Konfigurationen möglich. Ausführliche Instruktionen finden Sie in folgenden Anleitungen:
 
 [.ovhconfig-Datei Ihres Webhostings konfigurieren](../ovhconfig-datei-konfigurieren/)  
 [Konfiguration Ihres Webhostings bearbeiten](../die_laufzeitumgebung_meines_webhostings_andern/)
@@ -115,7 +115,7 @@ Bitte lesen Sie die entsprechenden Informationsseiten, um die für Ihr Webhostin
 
 Verschiedene Informationen zu Ihrem Cluster finden Sie jeweils über den Cluster-Link: <http://cluster015.hosting.ovh.net/infos/>
 
-Ersetzen Sie die Zahlen in der URL mit Ihrer Clusternummer. Um herauszufinden, in welchem Webhosting Cluster sich Ihr Dienst befindet, loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und wählen Sie im oberen Menü `Web Cloud`{.action} aus. Klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie dann auf den Tab `FTP - SSH`{.action}. Die Nummer des Clusters ist hier unter "FTP-Server" abzulesen.
+Ersetzen Sie die Zahlen in der URL mit Ihrer Clusternummer. Um herauszufinden, in welchem Webhosting Cluster sich Ihr Dienst befindet, loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im oberen Menü `Web Cloud`{.action} aus. Klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Klicken Sie dann auf den Tab `FTP - SSH`{.action}. Die Nummer des Clusters ist hier unter "FTP-Server" abzulesen.
 
 Die technischen Eigenschaften des Cloud Web Angebots können Sie über folgenden Link einsehen: <https://cloudweb-infos.hosting.ovh.net/>.
 

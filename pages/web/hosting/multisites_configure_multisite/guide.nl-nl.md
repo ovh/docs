@@ -20,13 +20,13 @@ Deze handleiding behandelt de stappen voor het hosten van meerdere websites op u
 - U moet beschikken over een [OVH webhostingplan](https://www.ovh.nl/shared-hosting/){.external}.
 - U moet beschikken over meerdere [domeinnamen](https://www.ovh.nl/domains/){.external}.
 - U moet het recht hebben om de configuratie van uw domeinnaam te wijzigen (via de DNS-zone).
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 ## Instructie
 
 ### Stap 1: Ga naar het Multisite beheer
 
-Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Ga naar het `Multisite`{.action}-tabblad.
+Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Ga naar het `Multisite`{.action}-tabblad.
 
 In de onderstaande tabel staan alle domeinen die aan uw webhostingplan zijn toegewezen. Sommige hiervan zijn automatisch gemaakt wanneer uw webhostingplan is opgezet.
 

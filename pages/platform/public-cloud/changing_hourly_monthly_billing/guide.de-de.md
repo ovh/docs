@@ -27,12 +27,12 @@ Wenn Sie eine Public Cloud Instanz erstellen, können Sie wählen, ob die Abrech
 ## Voraussetzungen
 
 - Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 
 ## In der praktischen Anwendung
 
-Wählen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) unter `Instances`{.action} die Instanz für welche Sie den Abrechnungssatz ändern möchten. Öffnen Sie das Kontextmenü indem Sie auf die 3 Punkte rechts neben der Instanz klicken. Sie sehen dann die Option `Auf monatliche Abrechnung umstellen`{.action}:
+Wählen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) unter `Instances`{.action} die Instanz für welche Sie den Abrechnungssatz ändern möchten. Öffnen Sie das Kontextmenü indem Sie auf die 3 Punkte rechts neben der Instanz klicken. Sie sehen dann die Option `Auf monatliche Abrechnung umstellen`{.action}:
 
 ![Change billing calculation](images/switch.png){.thumbnail}
 

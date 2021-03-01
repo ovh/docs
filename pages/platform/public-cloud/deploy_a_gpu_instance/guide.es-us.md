@@ -39,7 +39,7 @@ Todas las imágenes que ofrecemos pueden utilizarse en una instancia de GPU.
 > Si no se siente a gusto con la compilación manual de un módulo kernel, le recomendamos usar una distribución con soporte oficial de Nvidia y para la que se proporcionen controladores *listos para usar*: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Una vez iniciada sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, en su proyecto de Public Cloud en el panel de control, haga clic en `«Crear una instancia»`{.action}y elija una instancia de GPU:
+Una vez iniciada sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en su proyecto de Public Cloud en el panel de control, haga clic en `«Crear una instancia»`{.action}y elija una instancia de GPU:
 
 ![public-cloud](images/gpu.png){.thumbnail}
 

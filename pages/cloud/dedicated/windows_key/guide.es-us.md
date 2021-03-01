@@ -16,8 +16,8 @@ Al instalar un sistema operativo Windows Server, es posible que la clave de acti
 
 ## Requisitos
 
-- Disponer de un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/){.external} con Windows instalado.
-- Disponer de una licencia Windows SPLA o [contratar una](https://www.ovh.com/world/es/servidores_dedicados/precios-licencias-windows-2014.xml){.external}.
+- Disponer de un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external} con Windows instalado.
+- Disponer de una licencia Windows SPLA o [contratar una](https://www.ovhcloud.com/en/bare-metal/os/server-windows/){.external}.
 - Tener acceso al escritorio remoto.
 
 
@@ -67,8 +67,7 @@ Estas son las claves KMS disponibles para cada sistema operativo:
 |Windows Server 2019 Standard|N69G4-B89J2-4G8F4-WWYCC-J464C|
 |Windows Server 2019 Datacenter|WMDGN-G9PQG-XVVXX-R3X43-63DFG|
 
-Fuente: [Microsoft MSDN](https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/jj612867(v=ws.11)){.external}.
-
+Fuente: [Microsoft](https://docs.microsoft.com/en-gb/windows-server/get-started/kmsclientkeys){.external}
 
 > [!primary]
 >

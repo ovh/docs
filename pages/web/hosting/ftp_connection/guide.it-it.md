@@ -17,7 +17,7 @@ Le soluzioni di [hosting Web OVH]({ovh_www}/hosting-web/){.external} mettono a d
 ## Prerequisiti
 
 - Disporre di un piano di [hosting Web OVH]({ovh_www}/hosting-web/){.external}
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web Cloud`{.action}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}
 
 ## Procedura
 
@@ -37,7 +37,7 @@ Per accedere allo spazio di storage della tua soluzione di hosting, è necessari
 > **Se hai già tutti i dati**, passa direttamente allo [Step 2: accedi allo spazio di storage](./#step-2-accedi-allo-spazio-di-storage).
 > 
 
-Per recuperare le informazioni necessarie, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} nel menu a sinistra e clicca sulla scheda `FTP - SSH`{.action}. 
+Per recuperare le informazioni necessarie, accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} nel menu a sinistra e clicca sulla scheda `FTP - SSH`{.action}. 
 
 Nella nuova pagina, visualizzi tutte le informazioni relative allo storage e una tabella con gli utenti FTP e SSH creati sul tuo hosting.
 
@@ -70,7 +70,7 @@ Per effettuare l’accesso, sono disponibili diverse opzioni. Prosegui nella let
 
 #### 1. FTP Explorer
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} nel menu a sinistra e, nella scheda `FTP - SSH`{.action}, clicca sul pulsante `FTP Explorer`{.action}. 
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} nel menu a sinistra e, nella scheda `FTP - SSH`{.action}, clicca sul pulsante `FTP Explorer`{.action}. 
 
 ![ftpconnect](images/connect-ftp-step3.png){.thumbnail}
 

@@ -15,7 +15,7 @@ With Real Time Monitoring (RTM), you can partially monitor your server and its a
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - root access via SSH (or via graphical user interface) on your server
 
 
@@ -280,7 +280,7 @@ The RTM package is currently not compatible with Windows systems. We are continu
 
 Once you have successfully installed RTM, you can view the monitoring data for your server in the the OVHcloud Control Panel. (It might be necessary to refresh your browser or to log out and log in again). Navigate to the `Bare Metal Cloud`{.action} section and select your server from the left-hand menu. On the `General information`{.action} tab, scroll down to find the monitoring information.
 
-![Real Time Monitoring](images/rtm_panel.png){.thumbnail}
+![Real Time Monitoring](images/rtm_panel1.png){.thumbnail}
 
 
 ## Go further

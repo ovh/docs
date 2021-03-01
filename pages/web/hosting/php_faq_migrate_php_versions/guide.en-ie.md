@@ -4,6 +4,7 @@ excerpt: FAQ - Migrate to the latest versions of PHP
 id: '1758'
 slug: faq_-_migrate_to_the_latest_versions_of_php
 legacy_guide_number: g1758
+hidden: true
 ---
 
 
@@ -85,8 +86,7 @@ For more information on the specifications of this file, see to this OVH guide [
 
 ## Use case
 How do I know which version of PHP my website uses?
-Simply download this file: [info.php](https://www.ovh.com/fr/documents/info.php) (right-click on it and then Save As).
-If you want to create the file yourself, simply create a text file containing <?php phpinfo(); ?> then save it in .php format and name it 'info.php'.
+Simply create a text file containing <?php phpinfo(); ?> then save it in .php format and name it 'info.php'.
 
 Publish the file via FTP to the root of your website, or your websites (if you have several which are attached to subdomains). For example /www/mywordpress/
 With your web browser, go to info.php. For example: www.your-site.com/mywordpress/info.php

@@ -20,7 +20,7 @@ You will however only be able to access the "upload-vpn" folder of your datastor
 ## Requirements
 
 - a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/en-gb/managed-bare-metal/)
-- a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager))
+- a user account with access to vSphere (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 
 
 ## Instructions

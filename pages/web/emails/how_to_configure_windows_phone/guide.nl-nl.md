@@ -38,7 +38,7 @@ Selecteer "andere account" om een POP of IMAP account type toe te voegen.
 ## Deel 5: Configuratie van een account
 Voer uw volledige e-mailadres in het eerste veld in.
 
-Vul vervolgens het wachtwoord in, vastgesteld via uw  [Manager](https://www.ovh.com/auth/?action=gotomanager) voor de OVH account.
+Vul vervolgens het wachtwoord in, vastgesteld via uw  [Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl) voor de OVH account.
 
 Nadat u "verbinding" heeft geselecteerd zal er een waarschuwing verschijnen.
 
@@ -66,7 +66,7 @@ Account type: POP3 (u kunt ook IMAP configureren, gebruik in dat geval de inform
 
 Gebruikersnaam: uw volledige e-mailadres./i]
 
-Wachtwoord: het wachtwoord zoals vastgesteld via uw[Manager](https://www.ovh.com/auth/?action=gotomanager)voor de OVH webhosting account.
+Wachtwoord: het wachtwoord zoals vastgesteld via uw[Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl)voor de OVH webhosting account.
 
 Uitgaande mailserver(SMTP): SSL0.OVH.NET
 
@@ -101,7 +101,7 @@ Hier zijn de gegevens die moeten worden gebruikt voor de configuratie van een PO
 POP-configuratie met geactiveerde of gedeactiveerde SSL-beveiliging:
 
 E-mailadres: uw volledige e-mailadres
-Wachtwoord: het wachtwoord dat u heeft ingesteld in [de Manager](https://www.ovh.com/auth/?action=gotomanager).
+Wachtwoord: het wachtwoord dat u heeft ingesteld in [de Manager](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl).
 Gebruikersnaam: uw volledige e-mailadres
 Inkomende server:SSL0.OVH.NET
 Inkomende server port:995 of 110

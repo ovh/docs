@@ -42,7 +42,7 @@ The following instructions are divided into two parts:
 
 If you have an [OVHcloud Exchange email account](https://www.ovh.co.uk/emails/hosted-exchange/), you can export it directly in PST format via the OVHcloud Control Panel.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then go to the `Web Cloud`{.action} section. Select `Microsoft`{.action} in the left-hand column, then `Exchange`{.action}. Click the name of the concerned Hosted Exchange service.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then go to the `Web Cloud`{.action} section. Select `Microsoft`{.action} in the left-hand column, then `Exchange`{.action}. Click the name of the concerned Hosted Exchange service.
 
 In the `Email accounts`{.action} tab, click the `...`{.action} button to the right of the email account you want to export, then `Export in PST`{.action} format.
 

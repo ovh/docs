@@ -37,10 +37,10 @@ Avant de suivre ce tutoriel, veuillez vous référer à ces guides :
 
 ## Prérequis
 
-- Avoir une [instance de Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/){.external} dans [l’espace client d’OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} avec Ubuntu 18.04 installé
+- Avoir une [instance de Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/){.external} dans [l’espace client d’OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} avec Ubuntu 18.04 installé
 - Accès root SSH sur l'Instance
-- [ Stockage d'objets](https://www.ovh.com/ca/fr/public-cloud/storage/object-storage/){.external} dans le même datacenter que votre Public Cloud Instance (facultatif)
-- [Disque supplémentaire de haute performance](https://www.ovhcloud.com/fr-ca/public-cloud/object-storage/){.external} dans le même datacenter que votre instance de Public Cloud (en option)
+- [ Stockage d'objets](https://www.ovhcloud.com/fr-ca/public-cloud/object-storage/){.external} dans le même datacenter que votre Public Cloud Instance (facultatif)
+- [Disque supplémentaire de haute performance](https://www.ovhcloud.com/fr-ca/public-cloud/block-storage/){.external} dans le même datacenter que votre instance de Public Cloud (en option)
 
 
 ## Instructions
@@ -205,7 +205,7 @@ Il y a des avantages et des inconvénients à utiliser le stockage sur disque lo
 
 En utilisant l’Object Storage OpenStack d’OVH, vous pouvez stocker vos fichiers en externe, sans limite sur le volume total des données ou la durée de stockage. De plus, OVH garantit une durabilité des données à 100 % et réplique vos données sur trois sites différents, pour un rapport qualité/prix exceptionnel.
 
-En savoir plus sur [l’Object Storage d’OVH](https://www.ovh.com/ca/fr/public-cloud/storage/object-storage/){.external}.
+En savoir plus sur [l’Object Storage d’OVH](https://www.ovhcloud.com/fr-ca/public-cloud/object-storage/){.external}.
 Lire le guide d'utilisation de l’Object Storage pour ownCloud : [Object Storage pour ownCloud](https://docs.ovh.com/ca/en/storage/configure_owncloud_with_object_storage/){.external}.
 
 ### Utilisation d'un disque supplémentaire comme stockage (facultatif)

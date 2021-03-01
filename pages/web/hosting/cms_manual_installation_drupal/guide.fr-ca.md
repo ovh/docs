@@ -38,7 +38,7 @@ Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovh.com/ca
 ### Partie 1 &#58; preparation de linstallation
 **Outils nécessaires**
 
-Pour installer le CMS  **Drupal**  sur votre offre d'hébergement mutualisé, nous vous conseillons de vous munir d'un logiciel  **FTP**  tel que **FileZilla**  (gratuit). *Assurez-vous d'être en possession de votre identifiant client (nic-handle) et de votre mot de passe, pour pouvoir vous connecter à votre* [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} *si nécessaire.*
+Pour installer le CMS  **Drupal**  sur votre offre d'hébergement mutualisé, nous vous conseillons de vous munir d'un logiciel  **FTP**  tel que **FileZilla**  (gratuit). *Assurez-vous d'être en possession de votre identifiant client (nic-handle) et de votre mot de passe, pour pouvoir vous connecter à votre* [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} *si nécessaire.*
 
 - Récupérez votre identifiant et le mot de passe FTP qui vous permettent de vous connecter sur l'hébergement web.
 - Il est aussi nécessaire d'avoir en votre possession votre identifiant et le mot de passe de la base de données SQL qui vous permettent de vous connecter dans la base de données.

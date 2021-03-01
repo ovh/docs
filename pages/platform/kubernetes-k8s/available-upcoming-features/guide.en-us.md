@@ -5,23 +5,21 @@ slug: available-upcoming-features
 section: Technical resources
 ---
 
-**Last updated May 20, 2020.**
+**Last updated February 15th, 2021.**
 
 We list here the most frequently requested OVHcloud Managed Kubernetes features that are currently available or planned in the upcoming year.
 
 ### Available features
 
-- **Persistent Volumes ** Use the integrated Cinder Volumes to host the persistent data of your stateful containerized workloads. Details in the[working with persistent volumes ](https://docs.ovh.com/gb/en/kubernetes/ovh-kubernetes-persistent-volumes/) guide.
-- **Load Balancer** Use the integrated External Load balancers to expose your services on any port of a dedicated public IPv4. Details available in the [exposing your services](https://docs.ovh.com/gb/en/kubernetes/using-lb/) guide.
+- **Persistent Volumes** Use the integrated Cinder Volumes to host the persistent data of your stateful containerized workloads. Details in the[working with persistent volumes ](../ovh-kubernetes-persistent-volumes/) guide.
+- **Load Balancer** Use the integrated External Load Balancers to expose your services on any port of a dedicated public IPv4. Details available in the [exposing your services](../using-lb/) guide.
+- **New versions** : We support the last 3 stable K8s versions and offer the latest one during the quarter following its official release. We also propose managed version upgrades.
+- **RBAC and APIserver IP restrictions** Use the standard [RBAC authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/){.external} mode to distribute rights within your organization and/or assure compatibility with specific applications. You can additionaly choose to restrict access to your Kubernetes APIserver to a selection of IPv4 ranges.
 - **Pod autoscaling** Use the  [standard horizontal pod autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/){.external} to distribute dynamically your containerized workloads on a given set of worker nodes.
-- **RBAC** Use the standard [RBAC authorization](https://kubernetes.io/docs/reference/access-authn-authz/rbac/){.external} mode to distribute rights within your organization and/or assure compatibility with specific applications.
-- **New versions** : We support upcoming versions, during the quarter following their official release. We also propose managed version upgrades.
-- **Localisation choice** : We offer you the possibility to choose one of multiple OVH Public Cloud datacenters at cluster creation. We currently propose the service in France (GRA) and Canada (BHS). During 2020 we will add other OVH Public Cloud datacenters at cluster creation.
+- **Node pools management**: Easily [resize you cluster through our UI or directly using standard Kubernetes tooling by editing a Nodepool CRD ](../node-pools-crd/) .
+- **Localisation choice** : We offer you the possibility to choose one of multiple OVHcloud Public Cloud datacenters at cluster creation. We currently offer the service in France (GRA and SBG), Canada (BHS), Poland (WAW), and APAC (SYD and SYN). We will progressively open Managed Kubernetes Service in all OVHcloud Public Cloud regions.
 
 ### Planned features
 
-- **vRack** : You can already encrypt all traffic between your nodes using a custom CNI. We will offer private clusters in OVHcloud private network (vRack) later in the year.
-- **Nodes autoscaling** : Additionnaly to pod autoscaling, we will provide you the concept of node pools and nodes autoscaling, allowing your cluster to grow automatically between your user-defined limits.
-- **Bare metal worker nodes** : We will integrate bare metal (physical machines) servers in the worker nodes choice.
-
-and many more : feel free to open a feature request ticket though our support team.
+We now expose the roadmap of this service, as all of our Public Cloud services, publicly in the OVHcloud GitHub repo.
+When visiting [the "containers and orchestration" board of the roadmap](https://github.com/ovh/public-cloud-roadmap/projects/1){.external} you can view all the backlog, vote or subscribe to notifications on features and even propose new ones to be considered.

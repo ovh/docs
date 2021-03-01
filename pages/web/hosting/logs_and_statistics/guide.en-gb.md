@@ -17,11 +17,13 @@ Web server logs and website statistics are included in your Web Hosting plan, ea
 ## Requirements
 
 - an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar.
+
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned.
+
 
 From `Hosting plans`{.action} in the services bar on the left-hand side, choose the Web Hosting plan concerned and open the `Statistics and logs`{.action} tab.
 

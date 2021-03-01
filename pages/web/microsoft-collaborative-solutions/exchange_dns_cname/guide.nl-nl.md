@@ -16,8 +16,8 @@ Wanneer u een domeinnaam aan uw Exchange-dienst toevoegt, moet u mogelijk het CN
 
 ## Vereisten
 
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- U moet beheerdersrechten hebben voor de Exchange-dienst op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
+- U moet beheerdersrechten hebben voor de Exchange-dienst op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 - U moet een domeinnaam aan uw Exchange-dienst hebben toegevoegd om de toevoeging van een CNAME-record aan te vragen.
 - U moet het recht hebben om de configuratie van uw domeinnaam te wijzigen (via de DNS-zone).
 

@@ -83,7 +83,7 @@ También deberá desinstalar los plugins que no utilice. No basta con desactivar
 Si el pirateo es más antiguo y la restauración no funciona, estos son los pasos que debe seguir para volver a poner en línea su sitio WordPress.
 
 ## No puede conectarse al panel de administración de WordPress
-En ese caso, deberá modificar su [contraseña de administrador](https://codex.wordpress.org/Resetting_Your_Password) siguiendo la guía oficial de WordPress. 
+En ese caso, deberá modificar su [contraseña de administrador](https://codex.wordpress.org/
 
 Si le resulta demasiado complicado, podrá actualizar su correo desde [phpMyAdmin](https://phpmyadmin.ovh.net) en la tabla «user». Vuelva a la página de conexión, haga clic en «He olvidado mi contraseña» y espere a que se le envíe un mensaje de correo electrónico.
 

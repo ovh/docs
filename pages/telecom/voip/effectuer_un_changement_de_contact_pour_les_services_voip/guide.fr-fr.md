@@ -37,7 +37,7 @@ Les lignes téléphoniques VoIP et numéros alias peuvent appartenir à un ou pl
 
 
 ## Prérequis 
-- Être connecté à  votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Être connecté à  votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
 - Disposer d’un accès à l’adresse e-mail renseignée dans votre profil.
 - Posséder l’identifiant client du nouveau contact (destinataire de la modification).
 - Le nouveau contact doit quant à lui disposer d’un accès à l’adresse e-mail renseignée dans son profil.
@@ -53,7 +53,7 @@ Les lignes téléphoniques VoIP et numéros alias peuvent appartenir à un ou pl
 > En cas de changement de tous les contacts pour un service, le contact administrateur est à modifier **en dernier**. En effet, si vous le modifiez en premier, vous ne disposerez plus des droits nécessaires pour modifier les contacts technique ou facturation.
 >
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Télécom`{.action} puis sur `Téléphonie`{.action}. Sélectionnez votre groupe de téléphonie puis cliquez sur `Gestion des contacts`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Télécom`{.action} puis sur `Téléphonie`{.action}. Sélectionnez votre groupe de téléphonie puis cliquez sur `Gestion des contacts`{.action}.
 
 Vous pourrez alors cliquer sur `Modifier`{.action} à droite de votre groupe de téléphonie et renseigner le nouveau NIC (identifiant client) qui récupérera la gestion de ce groupe. Cliquez sur `Valider`{.action} pour valider la modification. Ce changement s'appliquera à tous les services du groupe.
 
@@ -63,7 +63,7 @@ Un e-mail va être envoyé aux contacts impliqués dans ce processus de modifica
 
 ### Modifier le contact technique d'une ligne VoIP ou d'un numéro alias
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Télécom`{.action} puis sur `Téléphonie`{.action}. Sélectionnez votre groupe de téléphonie puis cliquez sur `Gestion des contacts`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Télécom`{.action} puis sur `Téléphonie`{.action}. Sélectionnez votre groupe de téléphonie puis cliquez sur `Gestion des contacts`{.action}.
 
 Vous pourrez alors cliquer sur `Modifier`{.action} à droite de votre ligne VoIP ou de votre numéro alias pour modifier uniquement le contact technique de ce service. Renseignez le nouveau NIC (identifiant client) qui récupérera la gestion technique de ce service. Cliquez sur `Valider`{.action} pour valider la modification.
 

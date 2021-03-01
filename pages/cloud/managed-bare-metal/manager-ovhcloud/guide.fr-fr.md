@@ -18,7 +18,7 @@ L'espace client OVHcloud vous propose de nombreuses options de paramétrage de v
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action}.
 - Posséder un produit [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external}.
 
 
@@ -26,7 +26,7 @@ L'espace client OVHcloud vous propose de nombreuses options de paramétrage de v
 
 ### Onglet général
 
-Une fois dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, vous aurez accès à un aperçu général de votre Managed Bare Metal :
+Une fois dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, vous aurez accès à un aperçu général de votre Managed Bare Metal :
 
 ![Informations générales](images/controlpanel1-e.png){.thumbnail}
 

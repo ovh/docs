@@ -18,13 +18,13 @@ OVH:n webhotellituotteet tarjoavat pääsyn tallennustilaan, jonka avulla voit a
 ## Edellytykset
 
 - Sinulla on [webhotellituote](https://www.ovh-hosting.fi/webhotelli){.external}.
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Käytännössä
 
 ### vaihe 1: Mene FTP-käyttäjien hallintaan
 
-Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä olevan webhotellin nimi. Mene lopuksi välilehdelle `FTP - SSH`{.action}.
+Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä olevan webhotellin nimi. Mene lopuksi välilehdelle `FTP - SSH`{.action}.
 
 Taulukossa on näkyvissä webhotellissasi luodut FTP-käyttäjät. Näiden käyttäjien avulla voit kirjautua tallennustilaasi ja siirtää verkkosivusi tiedostot verkkoon. Yksi käyttäjä on luotu automaattisesti webhotellisi asennuksen yhteydessä.
 

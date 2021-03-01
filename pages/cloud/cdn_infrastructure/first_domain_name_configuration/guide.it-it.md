@@ -20,14 +20,14 @@ Per iniziare a utilizzare il servizio Content Delivery Network (CDN) di OVH, è 
 
 - Usufruire della [Content Delivery Network (CDN) OVH](https://www.ovh.it/cdn/){.external}
 - Avere accesso alla gestione della zona DNS del dominio
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 
 
 ## Procedura
 
 ### Aggiungi il dominio sulla CDN
 
-Per prima cosa, è necessario aggiungere un sottodominio alla CDN in modo che possa accettare richieste HTTP(S) per questo dominio: accedi alla sezione `Dedicato`{.action} dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e clicca su `NAS e CDN`{.action} nel menu a sinistra. 
+Per prima cosa, è necessario aggiungere un sottodominio alla CDN in modo che possa accettare richieste HTTP(S) per questo dominio: accedi alla sezione `Dedicato`{.action} dello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca su `NAS e CDN`{.action} nel menu a sinistra. 
 
 Clicca su `Aggiungi un dominio alla CDN`{.action}:
 
@@ -105,7 +105,7 @@ Inoltre, attribuire un dominio specifico ai file da memorizzare in cache permett
 
 Per configurare un nuovo sottodominio con la nostra CDN, probabilmente sarà necessario modificare alcuni parametri del tuo sito e del tuo servizio Web.
 
-Per prima cosa, assicurati che il servizio Web risponda correttamente al sottodominio. Per effettuare questa verifica, configura un [vhost](https://it.wikipedia.org/wiki/Virtual_hosting){.external} per il dominio, con la sua directory di destinazione o con l’alias di un altro dominio.
+Per prima cosa, assicurati che il servizio Web risponda correttamente al sottodominio. Per effettuare questa verifica, configura un *vhost* per il dominio, con la sua directory di destinazione o con l’alias di un altro dominio.
 
 Se il dominio risponde correttamente nel tuo servizio Web, sarà sufficiente modificare il codice HTML per utilizzare i nuovi indirizzi dei file che passano per la CDN e assicurarti che ricevano le richieste tramite il sottodominio.
 

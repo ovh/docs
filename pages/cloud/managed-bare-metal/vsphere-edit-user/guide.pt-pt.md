@@ -18,11 +18,11 @@ section: Funcionalidades da OVHcloud
 ## Requisitos
 
 - Dispor de uma oferta [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e selecione a secção `Bare Metal Cloud`. Clique em `Managed Bare Metal` na barra de serviços à esquerda e selecione a infraestrutura correspondente.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione a secção `Bare Metal Cloud`. Clique em `Managed Bare Metal` na barra de serviços à esquerda e selecione a infraestrutura correspondente.
 
 ![utilizador vsphere](images/addMailOnUser01.png){.thumbnail}
 

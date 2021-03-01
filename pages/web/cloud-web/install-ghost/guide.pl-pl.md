@@ -10,7 +10,7 @@ order: 1
 
 [Ghost](https://ghost.org/){.external} to silnik bloga z otwartym kodem źródłowym. Ma on na celu uproszczenie procesu publikacji online dla blogerów i dziennikarzy. To oprogramowanie jest napisane w JavaScript i wykorzystuje [Node.js](https://nodejs.org/){.external}, platformę programową do tworzenia witryn i interfejsów API w JavaScript po stronie serwera.
 
-[Hosting Cloud Web]({ovh_www}/hosting/cloud-web.xml){.external} umożliwia użycie Node.js jako frameworka dla Twoich stron WWW oraz instalację i hosting silnika Ghost lub innej aplikacji stworzonej na potrzeby Node.js.
+[Hosting Cloud Web](https://www.ovh.pl/hosting/cloud-web.xml){.external} umożliwia użycie Node.js jako frameworka dla Twoich stron WWW oraz instalację i hosting silnika Ghost lub innej aplikacji stworzonej na potrzeby Node.js.
 
 W niniejszym tutorialu wyjaśnimy, jak zainstalować blog za pomocą silnika Ghost na hostingu Cloud Web w OVH oraz jak udostępnić go pod Twoją domeną.
 
@@ -24,16 +24,16 @@ W niniejszym tutorialu wyjaśnimy, jak zainstalować blog za pomocą silnika Gho
 
 ### Powinieneś posiadać:
 
-- Hosting [Cloud Web]({ovh_www}/hosting/cloud-web.xml){.external} od OVH
+- Hosting [Cloud Web](https://www.ovh.pl/hosting/cloud-web.xml){.external} od OVH
 - Node.js aktywowany jako framework
 - Domenę dodaną w opcji MultiSite oraz Node.js wskazany jako jej framework.
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > sekcja `Web Cloud`{.action}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action}
 
 ## W praktyce
 
 ### Etap 1: włącz Node.js jako framework
 
-Aby uzyskać dostęp do frameworków Twojego hostingu Cloud Web, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Po zalogowaniu kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiedni hosting Cloud Web. Teraz przejdź do zakładki `Frameworki`{.action}.
+Aby uzyskać dostęp do frameworków Twojego hostingu Cloud Web, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Po zalogowaniu kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiedni hosting Cloud Web. Teraz przejdź do zakładki `Frameworki`{.action}.
 
 Wyświetli się tabela z listą frameworków obecnie dodanych do Twojego hostingu Cloud Web. Upewnij się, czy framework Node.js jest aktywowany. Jeśli tak, przejdź do etapu 2 [Powiąż Node.js ze stroną podpiętą w opcji MultiSite](./#etap-2-powiaz-nodejs-ze-strona-podpieta-w-opcji-multisite).
 
@@ -172,7 +172,7 @@ demonon@cloudweb-ssh:~ $ cd ghost/
 demonon@cloudweb-ssh:~/ghost $
 ```
 
-Pobierz [najnowszą wersję silnika Ghost](https://ghost.org/fr/developers/){.external} i rozpakuj jego zawartość.
+Pobierz [najnowszą wersję silnika Ghost](https://ghost.org/){.external} i rozpakuj jego zawartość.
 
 ```sh
 demonon@cloudweb-ssh:~/ghost $ ls
@@ -191,7 +191,7 @@ demonon@cloudweb-ssh:~/ghost $ ls
 Gruntfile.js  LICENSE  MigratorConfig.js  PRIVACY.md  README.md  content  core  index.js  package.json  public  server.js  yarn.lock
 ```
 
-Ghost używa [Yarn](https://yarnpkg.com/en/){.external}, będącego alternatywą dla **npm**, jako menedżera zależności Node.js. Zainstaluj Yarn za pośrednictwem **npm** i dodaj następujące pliki binarne do „PATH”:
+Ghost używa [Yarn](https://yarnpkg.com/){.external}, będącego alternatywą dla **npm**, jako menedżera zależności Node.js. Zainstaluj Yarn za pośrednictwem **npm** i dodaj następujące pliki binarne do „PATH”:
 
 ```sh
 demonon@cloudweb-ssh:~/ghost $ npm-node8 install yarn
@@ -249,7 +249,7 @@ Instalacja i konfiguracja silnika Ghost są zakończone. Teraz uruchom ponownie 
 
 ### Etap 7: ponowne uruchomienie *daemona* Node.js
 
-Aby ponownie uruchomić *daemon* Node.js, wróć do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Przejdź do zakładki `MultiSite`{.action}, kliknij koło zębate po prawej stronie nazwy odpowiedniej domeny, po czym kliknij `Uruchom ponownie`{.action}.
+Aby ponownie uruchomić *daemon* Node.js, wróć do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Przejdź do zakładki `MultiSite`{.action}, kliknij koło zębate po prawej stronie nazwy odpowiedniej domeny, po czym kliknij `Uruchom ponownie`{.action}.
 
 W wyniku tej operacji aplikacja będzie dostępna za pośrednictwem nazwy domeny wybranej w konfiguracji Twojej strony podpiętej w opcji MultiSite.
 

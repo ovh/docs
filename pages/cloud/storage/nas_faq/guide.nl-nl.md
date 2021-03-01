@@ -20,7 +20,7 @@ U kunt zich abonneren op HA-NAS in datacenters in Frankrijk (Roubaix, Strasbourg
 
 ### Kan ik mijn NAS-HA beheren via een configuratiepanel?
 
-Ja, deze ruimte is toegankelijk via uw [OVH control panel](https://www.ovh.com/auth/?action=gotomanager), onder `Cloud` en `Plateforms en services`.
+Ja, deze ruimte is toegankelijk via uw [OVH control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl), onder `Cloud` en `Plateforms en services`.
 
 ### Kan ik de totale opslagcapaciteit van mijn NAS vergroten?
 
@@ -48,7 +48,7 @@ De disks van uw NAS-HA zijn dedicated aan uw diensten.  De andere resources van 
 
 ### Voor hoe lang kan ik me abonneren op NAS-HA?
 
-De aangeboden abonnementsperioden zijn 1 maand, 3 maanden, 6 maanden en 12 maanden. Aan het einde van uw abonnementsperiode wordt uw abonnement automatisch verlengd, tenzij u een annuleringsverzoek indient. U kunt dit op elk moment tijdens uw abonnementsperiode doen via uw [OVH control panel](https://www.ovh.com/auth/?action=gotomanager).
+De aangeboden abonnementsperioden zijn 1 maand, 3 maanden, 6 maanden en 12 maanden. Aan het einde van uw abonnementsperiode wordt uw abonnement automatisch verlengd, tenzij u een annuleringsverzoek indient. U kunt dit op elk moment tijdens uw abonnementsperiode doen via uw [OVH control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl).
 
 ### Heb ik toegang tot alle opslagruimte die wordt weergegeven in de bestelling?
 
@@ -154,7 +154,7 @@ U kunt de frequentie van snapshots instellen via uw control panel. U kunt de fre
 - Een keer per week.  
 
 
-U kunt ook op elk moment handmatige snapshots maken, ze opslaan zonder tijdslimiet of ze verwijderen. Deze functie is beschikbaar vanaf uw [OVH control panel](https://www.ovh.com/auth/?action=gotomanager) of via de[API](https://api.ovh.com/):
+U kunt ook op elk moment handmatige snapshots maken, ze opslaan zonder tijdslimiet of ze verwijderen. Deze functie is beschikbaar vanaf uw [OVH control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl) of via de[API](https://api.ovh.com/):
 
 > [!api]
 >

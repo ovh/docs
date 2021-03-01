@@ -7,7 +7,7 @@ legacy_guide_number: g1875
 
 
 ## Consulte a sua conta
-No seu Espaço Cliente acessível [aqui](https://www.ovh.com/manager/web/login/), aceda à parte Faturação no canto superior direito.
+No seu Espaço Cliente acessível [aqui](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à parte Faturação no canto superior direito.
 
 ![](images/img_2780.jpg){.thumbnail}
 Ao clicar em A minha conta fidelidade, terá o histórico das suas encomendas com o número de pontos que foram atribuídos.

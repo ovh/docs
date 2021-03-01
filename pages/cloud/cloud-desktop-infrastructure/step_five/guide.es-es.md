@@ -17,7 +17,7 @@ Una vez que el [pool está creado](https://docs.ovh.com/es/cloud-desktop-infrast
 ## Requisitos
 
 - Abrir el cliente VMware Horizon o un navegador.
-- Conocer la dirección (URL) del punto de acceso, que puede consultarse en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Conocer la dirección (URL) del punto de acceso, que puede consultarse en el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 - [Haber autorizado al usuario en el pool](https://docs.ovh.com/es/cloud-desktop-infrastructure/asignar-escritorios-virtuales/){.external}.
 
 

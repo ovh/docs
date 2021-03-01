@@ -18,7 +18,7 @@ Usługa Exchange umożliwia korzystanie z profesjonalnych kont e-mail, które u�
 
 - Wykupienie usługi [Exchange](https://www.ovh.pl/emaile/){.external}
 - Posiadanie co najmniej dwóch aktywnych kont Exchange skonfigurowanych na tej samej platformie Exchange OVH
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager)
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Posiadanie danych dostępowych do konta Exchange, dla którego przydzielone zostaną nowe prawa
 
 ## W praktyce
@@ -40,7 +40,7 @@ Po określeniu konta, dla którego będziesz nadawał uprawnienia, wybraniu praw
 
 ### Etap 1: nadanie uprawnień
 
-Aby rozpocząć operację, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, po czym kliknij `Exchange`{.action}. Następnie kliknij nazwę usługi Exchange, w której znajduje się konto, do którego będziesz nadawał uprawnienia. Teraz przejdź do zakładki `Konta e-mail`{.action}.
+Aby rozpocząć operację, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij `Microsoft`{.action} na pasku usług po lewej stronie, po czym kliknij `Exchange`{.action}. Następnie kliknij nazwę usługi Exchange, w której znajduje się konto, do którego będziesz nadawał uprawnienia. Teraz przejdź do zakładki `Konta e-mail`{.action}.
 
 Pojawi się tabela, w której wyświetlają się konta powiązane z Twoją usługą Exchange. Kliknij trzy kropki po prawej stronie nazwy konta, do którego chcesz utworzyć uprawnienie, następnie kliknij `Zarządzaj uprawnieniami`{.action}.
 

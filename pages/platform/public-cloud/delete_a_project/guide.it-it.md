@@ -9,7 +9,7 @@ legacy_guide_number: g2129
 
 ## Obiettivo
 
-Se hai deciso di eliminare il tuo progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}, puoi effettuare l’operazione direttamente dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Se hai deciso di eliminare il tuo progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external}, puoi effettuare l’operazione direttamente dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 
 L’eliminazione del tuo progetto comporta l’emissione di un’ultima fattura, corrispondente ai tuoi consumi aggiornati in tempo reale.
 
@@ -23,11 +23,11 @@ Tieni presente che l’eliminazione di un progetto non equivale alla disattivazi
 ## Prerequisiti
 
 * Aver creato un progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external} nel tuo account OVHcloud
-* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
-Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e clicca sul menu`Public Cloud`{.action}.
+Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca sul menu`Public Cloud`{.action}.
 
 Poi clicca su`Impostazioni progetto`nella sezione Project Management.
 

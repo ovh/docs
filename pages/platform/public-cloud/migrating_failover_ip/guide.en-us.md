@@ -19,11 +19,11 @@ Being able to migrate IP addresses generally limits or removes the possibility t
 
 - at least two [Public Cloud instances]({ovh_www}/public-cloud/) in your OVHcloud account
 - a failover IP address
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 ## Instructions
 
-First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Public Cloud`{.action} section and select the Public Cloud service concerned. Then, select Failover IP in the “Network” section.
+First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Public Cloud`{.action} section and select the Public Cloud service concerned. Then, select Failover IP in the “Network” section.
 In our example, a failover IP is routed to "Instance_A" and we want to redirect it towards "Instance_B".
 
 ![migrating failover IP](images/failover.png){.thumbnail}

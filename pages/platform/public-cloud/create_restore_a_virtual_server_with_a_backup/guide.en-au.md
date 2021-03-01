@@ -24,7 +24,7 @@ This guide will show you how to use backups to re-create, duplicate and restore 
 
 ### Create an instance from a backup.
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, then select `Public Cloud`{.action}. Next, select the `Instance backup`{.action} section.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}, then select `Public Cloud`{.action}. Next, select the `Instance backup`{.action} section.
 
 Click on the `...`{.action} button to the right of the backup, then `Create an instance`{.action}.
 

@@ -10,7 +10,7 @@ legacy_guide_number: g2018
 
 ## Obiettivo
 
-La sezione Cloud dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} è stata progettata per consentire una gestione semplice e veloce delle istanze attive.  Da questa interfaccia è possibile visualizzare tutti i progetti di infrastruttura (istanze, backup, dischi, chiavi SSH, ecc…) e storage (inclusa la lista dei container).
+La sezione Cloud dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} è stata progettata per consentire una gestione semplice e veloce delle istanze attive.  Da questa interfaccia è possibile visualizzare tutti i progetti di infrastruttura (istanze, backup, dischi, chiavi SSH, ecc…) e storage (inclusa la lista dei container).
 
 **Questa guida ti mostra le operazioni di base da effettuare sulla tua istanza Public Cloud OVHcloud.**
 
@@ -23,7 +23,7 @@ La sezione Cloud dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?actio
 
 ### Accedi alla gestione dell’istanza
 
-Per iniziare, accedi all’area “Cloud” dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona il tuo servizio. Poi, clicca su `Istanze`{.action} nel riquadro a sinistra.
+Per iniziare, accedi all’area “Cloud” dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona il tuo servizio. Poi, clicca su `Istanze`{.action} nel riquadro a sinistra.
 
 L’interfaccia mostra la tua infrastruttura e diverse informazioni relative all’istanza:
 

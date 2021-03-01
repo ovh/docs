@@ -27,11 +27,11 @@ Sull'hosting Web OVHcloud è possibile utilizzare script per automatizzare alcun
 ## Prerequisiti
 
 - Disporre di una soluzione di [hosting Web](https://www.ovh.it/hosting-web/) attiva
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Clicca sulla scheda `Web Cloud`{.action} e poi su `Hosting`{.action} nella colonna di sinistra.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sulla scheda `Web Cloud`{.action} e poi su `Hosting`{.action} nella colonna di sinistra.
 
 Seleziona l'hosting, clicca sulla scheda `Plus+`{.action} e poi su `Task pianificati - Cron`{.action}
 
@@ -106,7 +106,7 @@ Ti consigliamo di utilizzare percorsi di accesso assoluti ai file dei tuoi scrip
  
 #### Verifica dei log di esecuzione
 
-Nei log del tuo hosting Web, accessibili dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, visualizzerai la categoria di log intitolata "CRON".
+Nei log del tuo hosting Web, accessibili dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, visualizzerai la categoria di log intitolata "CRON".
 
 Consulta la nostra guida ["Consulta le statistiche e i log del tuo sito su un'offerta condivisa"](../hosting_condiviso_consulta_le_statistiche_e_i_log_del_tuo_sito/) per maggiori dettagli.
 

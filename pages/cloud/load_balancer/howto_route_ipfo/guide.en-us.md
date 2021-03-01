@@ -11,7 +11,7 @@ section: Configuration
 
 A failover IP (FOIP) is an IP address that can be switched from one service to another. In doing so, it helps you avoid a wide range of issues for your infrastructure (hardware failures, overload for your services, maintenance, etc.).
 
-For more information on failover IPs, you can consult our [webpage](https://www.ovh.com/world/dedicated-servers/ip_failover.xml){.external}.
+For more information on failover IPs, you can consult our [webpage](https://www.ovhcloud.com/en/bare-metal/ip/){.external}.
 
 The OVH Load Balancer solution offers load balancing features for a range of different protocols: HTTP, HTTPS, TCP and UDP. When you link it to a failover IP, you can switch over your existing infrastructure to a Load Balancer without disturbing or interrupting services for your customers. Effectively, you will not need to change the IP address any longer if you are still using the failover IP, so you will not need to wait for your DNS zone to propagate any changes.
 
@@ -23,7 +23,7 @@ For more information on the OVH Load Balancer solution, you can read our [Introd
 ## Requirements
 
 - a correctly configured [OVH Load Balancer](https://www.ovh.com/world/solutions/load-balancer/){.external}
-- a [failover IP](https://www.ovh.com/world/dedicated-servers/ip_failover.xml){.external}
+- a [failover IP](https://www.ovhcloud.com/en/bare-metal/ip/){.external}
 
 > [!primary]
 >
@@ -133,7 +133,7 @@ From the [OVH API](https://ca.api.ovh.com){.external}, you can use the following
 
 ### Via the OVH Control Panel.
 
-You can define dedicated FOIPs via the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} by going to the `Cloud`{.action} section, then `Load Balancer`{.action}.
+You can define dedicated FOIPs via the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external} by going to the `Cloud`{.action} section, then `Load Balancer`{.action}.
 
 Once you have selected the Load Balancer you want to modify, create a new front-end, or edit an existing one.
 

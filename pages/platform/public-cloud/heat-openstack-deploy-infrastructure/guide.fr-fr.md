@@ -22,7 +22,7 @@ Nous vous apportons une première approche de Heat et des *stacks* représentant
 
 ## Prérequis
 
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager).
+- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir créé un projet Public Cloud.
 - Posséder un compte utilisateur OpenStack.
 - Savoir manipuler un fichier YAML.
@@ -35,11 +35,11 @@ Nous vous apportons une première approche de Heat et des *stacks* représentant
 Dans notre langage, voici ce que l'on pourrait transmettre à Heat.
 
 « Mon application est composée de :
-- trois serveurs frontaux web de type [B2-15](https://www.ovh.com/fr/public-cloud/instances/tarifs/){.external} ;
-- deux serveurs de base de données de type [C2-30](https://www.ovh.com/fr/public-cloud/instances/tarifs/){.external} ;
+- trois serveurs frontaux web de type [B2-15](https://www.ovhcloud.com/fr/public-cloud/prices/){.external} ;
+- deux serveurs de base de données de type [C2-30](https://www.ovhcloud.com/fr/public-cloud/prices/){.external} ;
 - deux disques additionnels raccordés aux serveurs de base de données ;
 - l'ensemble communique via un réseau privé ;
-- le scénario de *scaling* consiste à ajouter un serveur frontal web [B2-15](https://www.ovh.com/fr/public-cloud/instances/tarifs/){.external}. »
+- le scénario de *scaling* consiste à ajouter un serveur frontal web [B2-15](https://www.ovhcloud.com/fr/public-cloud/prices/){.external}. »
 
 Suite à cela, il est possible déployer votre infrastructure complète avec une simple commande et de déclencher le scénario de *scaling* lorsque c'est pertinent.
 

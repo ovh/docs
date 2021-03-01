@@ -17,7 +17,7 @@ Bei einer Hosted Hosted Private Cloud-Lösung können Sie stündlich abgerechnet
 ## Voraussetzungen
 
 - Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
-- [Dem Benutzer die Berechtigung "Hinzufügen von Ressourcen"](../die-rechte-eines-nutzers-aendern/) für das betreffende Rechenzentrum über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} erteilen.
+- [Dem Benutzer die Berechtigung "Hinzufügen von Ressourcen"](../die-rechte-eines-nutzers-aendern/) für das betreffende Rechenzentrum über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} erteilen.
 - Sie haben Zugriff zum vSphere-Client.
 
 

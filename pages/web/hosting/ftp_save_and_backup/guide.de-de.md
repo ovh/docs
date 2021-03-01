@@ -17,7 +17,7 @@ order: 3
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVH Webhosting](https://www.ovh.com/de/hosting/){.external} Angebot (mit Ausnahme von Cloud Web).
-- Je nach der verwendeten Methode benötigen Sie Zugriff auf die Verwaltung des Webhostings über das [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} oder das Passwort des FTP-Benutzers, um sich mit Ihrem Speicherplatz zu verbinden. 
+- Je nach der verwendeten Methode benötigen Sie Zugriff auf die Verwaltung des Webhostings über das [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} oder das Passwort des FTP-Benutzers, um sich mit Ihrem Speicherplatz zu verbinden. 
 
 ## Beschreibung
 
@@ -46,7 +46,7 @@ Folgen Sie dieser Anleitung nun entsprechend der ausgewählten Wiederherstellung
 
 ### Speicherplatz über das Kundencenter wiederherstellen
 
-Loggen Sie sich zunächst in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `FTP - SSH`{.action} und klicken Sie auf den Button `Backup wiederherstellen`{.action}.
+Loggen Sie sich zunächst in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `FTP - SSH`{.action} und klicken Sie auf den Button `Backup wiederherstellen`{.action}.
 
 ![FTP-Backup](images/backupftp-step1.png){.thumbnail}
 
@@ -85,7 +85,7 @@ Entscheiden Sie sich zunächst, welche Software oder welches Interface Sie verwe
 
 - **Cyberduck**: Laden Sie Cyberduck zunächst über die Website des Herausgebers herunter. OVH stellt Ihnen für die Verwendung von Cyberduck folgende Anleitung zur Verfügung: „[Web hosting: Cyberduck user guide (on Mac)](https://docs.ovh.com/gb/en/hosting/web_hosting_cyberduck_user_guide_on_mac/){.external}“ (Englisch). Diese Anleitung ersetzt jedoch nicht die offizielle Dokumentation des Herausgebers.
 
-- **Interface des FTP-Explorers**: Zugriff auf das Interface des FTP-Explorers erhalten Sie über das [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}. Klicken Sie nach dem Login links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `FTP - SSH`{.action} und klicken Sie auf den Button `FTP-Explorer`{.action}.
+- **Interface des FTP-Explorers**: Zugriff auf das Interface des FTP-Explorers erhalten Sie über das [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Klicken Sie nach dem Login links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `FTP - SSH`{.action} und klicken Sie auf den Button `FTP-Explorer`{.action}.
 
 Gehen Sie zum nächsten Schritt über, um mit der Wiederherstellung fortzufahren.
 

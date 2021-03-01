@@ -1,57 +1,84 @@
 ---
-title: 'Transferir un dominio de OVHcloud a otro agente registrador'
+title: Transferir un dominio a otro agente registrador
 slug: transferencia_saliente_de_un_dominio_generico_o_geografico
-excerpt: 'Cómo transferir un dominio de OVHcloud a otro agente registrador'
+excerpt: Cómo transferir un dominio de OVHcloud al agente registrador que elija
 section: 'Operaciones en los dominios'
 order: 3
 ---
 
-**Última actualización: 05/05/2020**
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
+
+**Última actualización: 25/1/2021**
 
 ## Objetivo
 
-La transferencia de un dominio permite cambiar el agente registrador que lo gestiona. Es posible transferir un dominio de OVHcloud a otro agente registrador.
+**Transferencia de dominio** hace referencia a la transferencia de un dominio de un agente registrador a otro. Por ejemplo, si ha contratado un dominio en nuestro sitio web, OVHcloud es su actual agente registrador. El nuevo agente registrador debe iniciar una transferencia de dominio saliente.
 
-**Esta guía explica cómo transferir un dominio de OVHcloud al agente registrador que usted elija.**
+Para evitar las transferencias de dominio no autorizadas, los dominios suelen estar bloqueados por un estado de *clientTransferProhibited*. Es necesario eliminar esta protección desde el área de cliente de OVHcloud antes de iniciar la transferencia.
+
+**Esta guía explica cómo preparar un dominio para una transferencia saliente.**
 
 ## Requisitos
-- Tener un dominio registrado en OVHcloud.
-- Estar facultado para solicitar la transferencia del dominio. El propietario y las personas que lo administren deben haber sido informados.
-- Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
-- El dominio debe haber sido creado más de 61 días antes, y no debe haber sido transferido ni haber cambiado de propietario durante ese período.
 
-> [!primary]
->
-> Para algunas extensiones de dominio será necesario seguir un procedimiento específico de transferencia. Si los pasos que se indican a continuación no le permiten transferir su dominio, contacte con su nuevo agente registrador para que este le informe sobre el procedimiento que debe seguir.
->
+- Tener un [dominio](https://www.ovh.com/world/es/dominios/) registrado con OVHcloud.
+- Estar facultado para solicitar la transferencia del dominio. El propietario y las personas que lo administren deben haber sido informados.
+- Tener acceso a la gestión del dominio desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
+- El registro del dominio en cuestión data de hace al menos 60 días y no ha sido transferido ni intercambiado (es decir, el cambio de propietario) en los últimos 60 días.
+
 
 ## Procedimiento
 
-### 1. Desactivar la protección contra la transferencia del dominio
+> [!warning]
+>
+> Las instrucciones siguientes describen la forma más común de transferir un dominio, válido para la mayoría de los dominios de primer nivel (top-level domain, o TLD). No obstante, las normas específicas de procedimiento de los TLD son definidas únicamente por la autoridad competente, es decir, el **registro**. Los agentes registradores como OVHcloud deben respetar estas reglas y no influyen en las decisiones de los registros.
+>
+> El procedimiento exacto para las transferencias de dominio puede variar, en particular en el caso de determinados TLD de código de país (ccTLD, como .lu, .uk, .hk, .ro) y de algunos TLD especiales (.am, .fm, etc.). Las transferencias también pueden prohibirse por diversos motivos, por ejemplo en los casos de pago en espera, abuso o bloqueo del registro.
+>
+> En caso de duda, le recomendamos que consulte los siguientes recursos:
+>
+> - el sitio web del registro TLD correspondiente;
+> - la [lista de TLD disponibles en OVHcloud](https://www.ovh.com/world/es/dominios/precios/);
+> - [Las explicaciones de la ICANN sobre los códigos de estado EPP](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) (para saber qué códigos de estado se aplican actualmente a su nombre de dominio, realice una búsqueda *Whois*, utilizando preferentemente el sitio web del registro TLD correspondiente);
+> - el sitio web y la interfaz de gestión de su nuevo agente registrador, especialmente en lo que respecta a las cuestiones relativas a un proceso de transferencia pendiente.
+>
 
-Para desactivar la protección de OVHcloud contra la transferencia del dominio, también desde el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio. En la pestaña `Información general`{.action}, desmarque la opción `Protección contra la transferencia`{.action} y haga clic en `Aceptar`{.action}.
+### 1\. eliminar la protección contra la transferencia del dominio
+
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y seleccione `Web Cloud`{.action} en la barra de navegación superior. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente.
+
+En la pestaña `Información general`{.action}, encontrará el cursor `Protección contra la transferencia` en **Seguridad**. Por defecto, esta protección está `Activada`{.action}.
+
+![protección activada](images/outgoing-transfer-step1.png){.thumbnail}
+
+Haga clic en el cursor y confirme en la nueva ventana que desea eliminar la protección. Espere unos minutos a que el estado pase a `Desactivado`{.action}.
+
+![desactivación de la protección](images/outgoing-transfer-step2.png){.thumbnail}
 
 > [!primary]
 >
-> Una vez desbloqueado el dominio, dispone de 7 días para solicitar su transferencia al nuevo agente registrador. Pasado ese plazo, el dominio volverá a bloquearse si no se ha realizado ninguna solicitud de transferencia.
+> Una vez desbloqueada la protección, el dominio permanece desbloqueado durante siete días. Después de este período, la protección se reactivará automáticamente. Si no solicita la transferencia del dominio a su nuevo agente registrador durante este período, será necesario volver a eliminar la protección del dominio.
 >
 
-![Transferencia saliente](images/outgoing-transfer-step2.png){.thumbnail}
+### 2\. obtener el código de transferencia
 
-### 2. Obtener el código de transferencia
+Una vez desbloqueada la protección contra la transferencia, deberá obtener el código de transferencia del dominio. Para ello, en la pestaña `Información general`{.action}, haga clic en el enlace `AUTH/INFO`{.action}, situado junto a `Protección contra la transferencia`. Actualice la página si es necesario.
 
-Una vez desbloqueada la protección contra la transferencia, deberá obtener el código de transferencia del dominio. Para ello, en la pestaña `Información general`{.action}, haga clic en el enlace `Auth-Info`{.action}, situado junto a `Protección contra la transferencia`{.action}. Actualice la página si es necesario.
-
-Guarde el código que aparecerá en una ventana.
+Se abrirá una ventana en la que podrá consultar su código AUTH/INFO (también llamado código de transferencia, contraseña de dominio, AUTH-CODE o EPP-Code).
 
 ![Transferencia saliente](images/outgoing-transfer-step3.png){.thumbnail}
 
-### 3. Iniciar la transferencia al nuevo agente registrador
+El nuevo agente registrador solicitará el código para finalizar la transferencia. Puede consultar los detalles en el nuevo agente registrador.
 
-Si todavía no lo ha hecho, contacte con el nuevo agente registrador para iniciar la transferencia del dominio y proporciónele el código de transferencia que obtuvo en el paso anterior.
+En lugar de escribir manualmente el código, le recomendamos que copie y pegue el código, ya que algunos caracteres pueden confundirse fácilmente.
 
-Si desea información sobre los plazos de transferencia, consulte con el nuevo agente registrador.
+### 3\. iniciar la transferencia al nuevo agente registrador
+
+Una vez que haya realizado los pasos anteriores, puede iniciar la transferencia, generalmente haciendo un pedido. La transferencia puede tardar hasta 10 días. 
+
+Para más información, contacte con su nuevo agente registrador.
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -18,7 +18,7 @@ Sie haben bei Ihrem Webhosting die Möglichkeit, ein SSL-Zertifikat einzurichten
 
 - Sie verfügen über ein [OVH Webhosting](https://www.ovh.de/hosting/){.external}.
 - Sie haben mindestens eine [Domain](https://www.ovh.de/domains/){.external} registriert.
-- Sie haben Zugriff auf Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im Bereich „Web“.
+- Sie haben Zugriff auf Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich „Web“.
 
 ## Beschreibung
 
@@ -40,7 +40,7 @@ Bei Ihrem OVH Webhosting haben Sie für die Aktivierung eines [SSL-Zertifikats v
 - ein kostenpflichtiges SSL-Zertifikat [als optionale Zusatzleistung bei allen kompatiblen Webhosting Angeboten](https://www.ovh.de/ssl/){.external}
 - Import eines Zertifikats, das bei einem anderen Anbieter bestellt wurde
 
-Um Ihr Zertifikat zu aktivieren, loggen Sie sich zunächst in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Klicken Sie auf den Tab `Allgemeine Informationen`{.action}. Unterhalb von „SSL-Zertifikat“ müsste ein kleines „Nein“ stehen, was anzeigt, dass bisher kein SSL-Zertifikat auf Ihrem Webhosting eingerichtet oder installiert wurde. Klicken Sie rechts neben „SSL-Zertifikat“ auf die drei Punkte und anschließend auf `SSL-Zertifikat bestellen`{.action}.
+Um Ihr Zertifikat zu aktivieren, loggen Sie sich zunächst in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Klicken Sie auf den Tab `Allgemeine Informationen`{.action}. Unterhalb von „SSL-Zertifikat“ müsste ein kleines „Nein“ stehen, was anzeigt, dass bisher kein SSL-Zertifikat auf Ihrem Webhosting eingerichtet oder installiert wurde. Klicken Sie rechts neben „SSL-Zertifikat“ auf die drei Punkte und anschließend auf `SSL-Zertifikat bestellen`{.action}.
 
 Sollte an der genannten Stelle ein kleines „Ja“ erscheinen, so bedeutet dies, dass auf Ihrem Webhosting bereits ein SSL-Zertifikat installiert und eingerichtet wurde. Aus diesem Grund können Sie kein neues SSL-Zertifikat bestellen, solange das vorhandene Zertifikat installiert ist.
 
@@ -66,7 +66,7 @@ Nach Abschluss der Konfiguration können Sie [SSL auf einer Multisite aktivieren
 
 ### SSL-Zertifikat auf einer Multisite aktivieren
 
-Je nach Art Ihres [SSL-Zertifikats](https://www.ovh.de/ssl/){.external} können Sie eine sichere SSL-Verbindung für eine oder mehrere Ihrer Multisites aktivieren. Loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Multisite`{.action}.
+Je nach Art Ihres [SSL-Zertifikats](https://www.ovh.de/ssl/){.external} können Sie eine sichere SSL-Verbindung für eine oder mehrere Ihrer Multisites aktivieren. Loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Multisite`{.action}.
 
 Die angezeigte Tabelle listet alle Domains auf, die Ihrem Webhosting zugewiesen sind. In der Spalte „SSL“ finden Sie den Aktivierungsstatus der sicheren SSL-Verbindung für Ihre verschiedenen Multisites. 
 
@@ -95,7 +95,7 @@ Sobald die Aktivierung angefordert wurde, ändert sich die Statusanzeige zur sic
 
 Wenn Sie die sichere SSL-Verbindung für eine oder mehrere Ihrer Multisites aktiviert haben, wird als Status „Zu erstellen“ angezeigt. Dieser Erstellungsvorgang ist unbedingt notwendig, um das SSL-Zertifikat zu Ihrem Webhosting hinzuzufügen.
 
-Loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete` und wählen Sie das betreffende Webhosting aus. Klicken Sie auf den Tab `Allgemeine Informationen`{.action}. Klicken Sie dann rechts neben „SSL-Zertifikat“ auf die drei Punkte und anschließend auf `SSL-Zertifikat neu erstellen`{.action}.
+Loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete` und wählen Sie das betreffende Webhosting aus. Klicken Sie auf den Tab `Allgemeine Informationen`{.action}. Klicken Sie dann rechts neben „SSL-Zertifikat“ auf die drei Punkte und anschließend auf `SSL-Zertifikat neu erstellen`{.action}.
 
 ![ssl verwalten](images/manage-ssl-step7.png){.thumbnail}
 
@@ -111,7 +111,7 @@ Sie können ein auf Ihrem Webhosting installiertes SSL-Zertifikat jederzeit lös
 
 Da hierfür die Überprüfung Ihrer Website-Einstellungen erforderlich ist, empfehlen wir Ihnen, sich im Falle von Problemen mit einem spezialisierten Dienstleister in Verbindung zu setzen. Für externe Dienstleistungen können wir Ihnen leider keine Unterstützung anbieten.
 
-Wenn Sie das SSL-Zertifikats löschen möchten, loggen Sie sich zunächst in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden und Klicken Sie dann rechts neben „SSL-Zertifikat“ auf die drei Punkte und anschließend auf `SSL löschen`{.action}.
+Wenn Sie das SSL-Zertifikats löschen möchten, loggen Sie sich zunächst in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Vergewissern Sie sich, dass Sie sich im Tab `Allgemeine Informationen`{.action} befinden und Klicken Sie dann rechts neben „SSL-Zertifikat“ auf die drei Punkte und anschließend auf `SSL löschen`{.action}.
 
 Bestätigen Sie auf der angezeigten Seite den Löschvorgang. Dieser dauert höchstens ein paar Stunden. 
 

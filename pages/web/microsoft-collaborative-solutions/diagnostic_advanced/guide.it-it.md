@@ -7,7 +7,7 @@ legacy_guide_number: g2277
 
 
 ## Esegui una diagnostica
-Accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager) e clicca sul tuo servizio Exchange nella sezione Microsoft della colonna a sinistra.
+Accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sul tuo servizio Exchange nella sezione Microsoft della colonna a sinistra.
 
 ![](images/img_4450.jpg){.thumbnail}
 Clicca sulla scheda Diagnostica, inserisci l'account email Exchange e la password associata e avvia la diagnostica.

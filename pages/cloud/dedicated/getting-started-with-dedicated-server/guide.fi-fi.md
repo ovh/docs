@@ -24,7 +24,7 @@ Dedikoitu palvelin on fyysinen palvelin, joka sijaitsee jossakin konesaleistamme
 
 ## Edellytykset
 
-* Sinulla on [dedikoitu palvelin](https://www.ovh-hosting.fi/dedikoidut_palvelimet/){.external}, joka on näkyvissä [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} osion `Dedikoidut`{.action} kohdassa `Dedikoidut palvelimet`{.action}.
+* Sinulla on [dedikoitu palvelin](https://www.ovh-hosting.fi/dedikoidut_palvelimet/){.external}, joka on näkyvissä [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} osion `Dedikoidut`{.action} kohdassa `Dedikoidut palvelimet`{.action}.
 
 
 ## Käytännössä
@@ -55,7 +55,7 @@ Kun dedikoitu palvelimesi on konfiguroitu ensimmäisen kerran, saat salasanasi j
 
 ### Dedikoidun palvelimen asennus tai uudelleenasennus
 
-Mene [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external} palvelimesi sivulle ja valitse siellä `Yleiset tiedot`, klikkaa kohtaa `...`{.action} ja sitten `Uudelleenasenna`{.action} osiossa `Järjestelmä (OS)`.
+Mene [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} palvelimesi sivulle ja valitse siellä `Yleiset tiedot`, klikkaa kohtaa `...`{.action} ja sitten `Uudelleenasenna`{.action} osiossa `Järjestelmä (OS)`.
 
 ![Uudelleenasennuspainike](images/reinstalling-your-server-01.png){.thumbnail}
 
@@ -72,7 +72,7 @@ Seuraa loput ohjeet kuvaruudulta ja klikkaa sitten `Vahvista`{.action} asennukse
 
 > [!primary]
 >
-> Tietyt käyttöjärjestelmät tai alustat, kuten Plesk tai Windows, edellyttävät lisenssin ostoa ennen niiden asennusta. Voit hankkia sellaisen OVH:n kautta [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} osiosta `Dedikoidut`{.action} ja sitten `Lisenssit`{.action} tai jälleenmyyjältä. Tämän jälkeen on sisällytettävä se käsin joko käyttöjärjestelmän itsensä kautta tai [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} kautta. 
+> Tietyt käyttöjärjestelmät tai alustat, kuten Plesk tai Windows, edellyttävät lisenssin ostoa ennen niiden asennusta. Voit hankkia sellaisen OVH:n kautta [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} osiosta `Dedikoidut`{.action} ja sitten `Lisenssit`{.action} tai jälleenmyyjältä. Tämän jälkeen on sisällytettävä se käsin joko käyttöjärjestelmän itsensä kautta tai [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} kautta. 
 > 
 
 
@@ -119,7 +119,7 @@ Lisätietoa voit lukea ohjeesta [IPMIn käyttö dedikoiduilla palvelimilla](http
 
 ### Rescue-tila
 
-Jos palvelimellasi on ongelma, ensimmäinen askel korjauksessa on sen uudelleenkäynnistäminen rescue-tilassa. Kirjaudu sen aktivoimiseksi [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external} ja mene palvelimesi sivulle. Mene sitten kohtaan `Palvelimen tila`{.action} ja sitten `Yleiset tiedot`{.action} ja `Uudelleenkäynnistä`{.action}. Klikkaa painiketta `Muokkaa`{.action} käynnistystilan vaihtamiseksi.
+Jos palvelimellasi on ongelma, ensimmäinen askel korjauksessa on sen uudelleenkäynnistäminen rescue-tilassa. Kirjaudu sen aktivoimiseksi [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} ja mene palvelimesi sivulle. Mene sitten kohtaan `Palvelimen tila`{.action} ja sitten `Yleiset tiedot`{.action} ja `Uudelleenkäynnistä`{.action}. Klikkaa painiketta `Muokkaa`{.action} käynnistystilan vaihtamiseksi.
 
 ![Vaihda käynnistysvalinta](images/rescue-mode-01.png){.thumbnail}
 

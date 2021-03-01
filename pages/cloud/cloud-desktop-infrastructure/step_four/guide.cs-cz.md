@@ -18,7 +18,7 @@ Jakmile je Váš [pool úspěšně vytvořen](https://docs.ovh.com/cz/cs/cloud-d
 
 ## Prerekvizity
 
-- Vytvoření uživatelé v Active Directory (pokud byl vytvořen [Trust Relationship - EN](https://docs.ovh.com/gb/en/cloud-desktop-infrastructure/approval-ad/){.external}), nebo v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Vytvoření uživatelé v Active Directory (pokud byl vytvořen [Trust Relationship - EN](https://docs.ovh.com/gb/en/cloud-desktop-infrastructure/approval-ad/){.external}), nebo v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - Přístup do rozhraní VMware Horizon 7.1.
 
 

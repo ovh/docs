@@ -8,7 +8,7 @@ legacy_guide_number: g2277
 
 
 ## Diagnostiikan toteutus
-Mene hallintapaneeliin tästä linkistä: [Hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager).
+Mene hallintapaneeliin tästä linkistä: [Hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 Kun olet kirjautunut, valitse vasemmanpuoleisesta sarakkaeesta valikko Microsoft ja sitten Echxhange-palvelu.
 

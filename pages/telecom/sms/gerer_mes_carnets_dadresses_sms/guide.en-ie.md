@@ -15,14 +15,14 @@ All OVHcloud SMS accounts can use one or more address books. This guide explains
 ## Requirements
 
 - an active OVHcloud SMS account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - a spreadsheet or text editor tool
 
 ## Instructions
 
 ### Step 1: Create an address book via the OVHcloud Control Panel.
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), and go to the Telecom section. Next, select SMS in the left-hand menu.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), and go to the Telecom section. Next, select SMS in the left-hand menu.
 
 Then click on the SMS account concerned.
 
@@ -98,7 +98,7 @@ If you would like to edit the name of an address book, select it in the dropdown
 
 To delete an address book, click `Delete address book`{.action} after you have selected it in the dropdown menu (1).
 
-To edit or delete a contact, click `...`{.action} in the Actions column (4) across from the contact concerned. You will then see a menu offering you these choices (5).
+To edit or delete a contact, click `...`{.action} in the Actions column (4) across from the contact concerned. You will then see a menu offering you these choices.
 
 ![phonebook](images/smsphonebook7.png){.thumbnail}
 

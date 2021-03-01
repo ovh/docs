@@ -22,14 +22,14 @@ The default RAID level for OVH server installations is RAID 1, which doubles the
 
 ## Requirements
 
-- a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external} with hardware RAID
+- a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/){.external} with hardware RAID
 - administrative (root) access to the server via SSH
 
 ## Instructions
 
 ### Using the OVH Control Panel
 
-In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the `Bare Metal Cloud`{.action} menu and select your server.
+In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, click on the `Bare Metal Cloud`{.action} menu and select your server.
 
 Next, on the `Server status`{.action} tab, click the `Reinstall`{.action} button to install a new operating system with your custom RAID 0 configuration.
 
@@ -63,7 +63,7 @@ df -h
 
 ### Using rescue mode
 
-In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click on the `Bare Metal Cloud`{.action} menu and select your server.
+In the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, click on the `Bare Metal Cloud`{.action} menu and select your server.
 
 On the `Server status`{.action} tab, click the `Edit`{.action} button to change the boot system.
 
@@ -79,7 +79,7 @@ Click `Next`{.action} and then click `Confirm`{.action} on the following screen.
 
 ![megaraid](images/rescue_mode_raid0_03.png){.thumbnail}
 
-Click the `Restart`{.action} button in the [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Click the `Restart`{.action} button in the [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 
 ![megaraid](images/server_installation_raid0_06.png){.thumbnail}
 

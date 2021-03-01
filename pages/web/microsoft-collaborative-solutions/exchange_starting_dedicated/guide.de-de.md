@@ -8,7 +8,8 @@ hidden: true
 
 ## Schritt 1: Zugang zur Dienstleistung
 Wenn Sie Ihr Enterprise Exchange eben erst bezahlt haben, müssen Sie zunächst die in [dieser Anleitung](https://www.ovh.de/g2074.exchange_premiers_pas_avec_un_serveur_private) beschriebenen Schritte ausführen, bevor Sie die hier erklärten Aktionen ausführen können.
-Melden Sie sich zunächst über folgenden Link in Ihrem OVH Kundencenter an: [OVH Kundencenter](https://www.ovh.com/manager/web/login.html)
+
+Melden Sie sich zunächst über folgenden Link in Ihrem OVH Kundencenter an: [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
 
 Nach dem Login haben Sie Zugang zu folgendem Interface:
 

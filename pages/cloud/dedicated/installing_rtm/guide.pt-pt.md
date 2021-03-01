@@ -15,7 +15,7 @@ O Real Time Monitoring (RTM) permite monitorizar parcialmente um servidor e a su
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 - Aceder através de SSH (ou através da interface gráfica) ao servidor Linux (acesso root).
 
 
@@ -280,7 +280,7 @@ Atualmente, os pacotes RTM não são compatíveis com sistemas Windows. À medid
 
 Depois de instalar o RTM, poderá consultar os dados de monitoramento do seu servidor na Área de Cliente OVHcloud. (Poderá ser necessário atualizar o navegador ou sair e voltar a entrar na sua conta.) Dirija-se à secção `Servidor`{.action} e selecione o seu servidor no menu à esquerda. Em `Informações gerais`{.action}, percorra a lista até encontrar as informações de monitoramento.
 
-![Real Time Monitoring](images/rtm_panel.png){.thumbnail}
+![Real Time Monitoring](images/rtm_panel1.png){.thumbnail}
 
 
 

@@ -16,7 +16,7 @@ De KVM-console staat een directe verbinding met uw VPS toe, zonder gebruik te ho
 
 ## Vereisten
 
-- U moet ingelogd zijn op uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager/){.external}.
+- U moet ingelogd zijn op uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Instructie
 

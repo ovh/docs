@@ -22,11 +22,11 @@ Tryb Rescue to narzędzie dostępne na serwerze dedykowanym. Umożliwia uruchomi
 ## Wymagania początkowe
 
 - Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
-Tryb Rescue można włączyć tylko w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager/){.external}. Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. 
+Tryb Rescue można włączyć tylko w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. 
 
 Wyszukaj "Boot" w sekcji **Informacje ogólne** i kliknij `...`{.action} a następnie `Zmień`{.action}.
 
@@ -54,7 +54,7 @@ Po zakończeniu zadań w trybie Rescue pamiętaj o ponownym ustawieniu netbootu 
 > Jeśli używasz klucza SSH (aktywnego również w Panelu klienta OVHcloud), nie otrzymasz hasła. Po uruchomieniu serwera w trybie Rescue możesz połączyć się bezpośrednio z kluczem SSH.
 >
 
-Po restarcie serwera otrzymasz e-mail z danymi do połączenia w trybie Rescue. E-mail ten jest również dostępny w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Kliknij nazwę powiązaną z Twoim identyfikatorem klienta w prawym górnym rogu Panelu klienta, a następnie `E-maile od działu wsparcia`{.action}.
+Po restarcie serwera otrzymasz e-mail z danymi do połączenia w trybie Rescue. E-mail ten jest również dostępny w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij nazwę powiązaną z Twoim identyfikatorem klienta w prawym górnym rogu Panelu klienta, a następnie `E-maile od działu wsparcia`{.action}.
 
 Zaloguj się do serwera za pomocą wiersza poleceń lub narzędzia SSH, używając wygenerowanego hasła root dla trybu Rescue.
 
@@ -109,15 +109,15 @@ rescue:~# mount /dev/hda1 /mnt/
 > Jeśli na Twoim serwerze skonfigurowana jest programowa macierz RAID, zamontuj wolumin RAID (zwykle `/dev/mdX`).
 >
 
-Aby wyłączyć tryb Rescue, zmień sposób uruchamiania serwera w sekcji `Uruchom z dysku twardego.`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager/) i zrestartuj serwer z linii poleceń.
+Aby wyłączyć tryb Rescue, zmień sposób uruchamiania serwera w sekcji `Uruchom z dysku twardego.`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i zrestartuj serwer z linii poleceń.
 
 ### Windows <a name="windowsrescue"></a>
 
 #### Korzystanie z narzędzi WinRescue
 
-Po restarcie serwera otrzymasz e-mail z danymi do połączenia w trybie Rescue. E-mail ten jest również dostępny w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Kliknij nazwę powiązaną z Twoim identyfikatorem klienta w prawym górnym rogu Panelu klienta, a następnie `E-maile od działu wsparcia`{.action}.
+Po restarcie serwera otrzymasz e-mail z danymi do połączenia w trybie Rescue. E-mail ten jest również dostępny w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij nazwę powiązaną z Twoim identyfikatorem klienta w prawym górnym rogu Panelu klienta, a następnie `E-maile od działu wsparcia`{.action}.
 
-Aby korzystać z trybu Rescue oferowanego przez Windows, pobierz i zainstaluj konsolę VNC lub skorzystaj z modułu `IPMI` w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager/){.external}.
+Aby korzystać z trybu Rescue oferowanego przez Windows, pobierz i zainstaluj konsolę VNC lub skorzystaj z modułu `IPMI` w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ![WinRescue Windows](images/rescue-mode-06.png){.thumbnail}
 

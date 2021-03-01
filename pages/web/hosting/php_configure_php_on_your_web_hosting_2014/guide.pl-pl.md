@@ -17,7 +17,7 @@ W sieci istnieje bardzo wiele stron WWW. Twój [hosting](https://www.ovh.pl/host
 ## Wymagania początkowe
 
 - Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external} (z wyjątkiem Cloud Web)
-- W zależności od wybranej metody zmiany wersji PHP, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager) lub posiadanie informacji umożliwiających zalogowanie do przestrzeni dyskowej 
+- W zależności od wybranej metody zmiany wersji PHP, posiadanie dostępu do interfejsu zarządzania usługą hostingu WWW w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) lub posiadanie informacji umożliwiających zalogowanie do przestrzeni dyskowej 
 
 ## W praktyce
 
@@ -45,7 +45,7 @@ Możesz również sprawdzić wersję PHP aktualnie używaną przez Twój hosting
 
 |Metoda|Opis |
 |---|---|
-|Za pośrednictwem Panelu klienta|Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiedni hosting. Przejdź do zakładki `Informacje ogólne`{.action} i sprawdź wersję PHP w sekcji **Ogólna wersja PHP**. Jeśli pojawiło się niebieskie kółko aktualizacji, odczekaj kilka minut, aż aktualizacja wersji się zakończy.|
+|Za pośrednictwem Panelu klienta|Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiedni hosting. Przejdź do zakładki `Informacje ogólne`{.action} i sprawdź wersję PHP w sekcji **Ogólna wersja PHP**. Jeśli pojawiło się niebieskie kółko aktualizacji, odczekaj kilka minut, aż aktualizacja wersji się zakończy.|
 |Za pomocą skryptu|Utwórz skrypt **.php** zawierający jedynie kod `<?php phpinfo(); ?>`. Następnie umieść go na Twojej przestrzeni dyskowej w katalogu WWW a następnie wywołaj go za pomocą adresu URL.|
 
 ![phpversion](images/change-php-version-step1.png){.thumbnail}

@@ -15,7 +15,7 @@ Mit Real Time Monitoring (RTM) können Sie Ihren Server und seine Aktivitäten i
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben administrativen Zugriff (Root) über SSH (oder über die grafische Benutzeroberfläche) auf Ihren Server.
 
 
@@ -280,7 +280,7 @@ Das RTM-Paket ist derzeit nicht mit Windows-Systemen kompatibel. Wir entwickeln 
 
 Nach der erfolgreichen Installation von RTM können Sie die Monitoringdaten für Ihren Server im OVHcloud Kundencenter einsehen. (Möglicherweise müssen Sie Ihren Browser aktualisieren oder sich abmelden und erneut anmelden.) Gehen Sie zum Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server aus dem Menü auf der linken Seite aus. Scrollen Sie auf dem Tab `Allgemeine Informationen `{.action} nach unten, um die Überwachungsinformationen zu finden.
 
-![Real Time Monitoring](images/rtm_panel.png){.thumbnail}
+![Real Time Monitoring](images/rtm_panel1.png){.thumbnail}
 
 
 

@@ -23,7 +23,7 @@ Do konfiguracji wirtualnych maszyn możesz użyć konfiguracji sieci w trybie br
 
 - Posiadanie serwera dedykowanego z zainstalowanym hypervisorem ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox)
 - Posiadanie co najmniej jednego adresu [IP Failover](https://www.ovhcloud.com/pl/bare-metal/ip/) podłączonego do serwera
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
 
@@ -40,7 +40,7 @@ Dla tego przykładu użyjemy następujących wartości w naszych przykładach ko
 
 ### Przypisz wirtualny adres MAC
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} i kliknij menu `Bare Metal Cloud`{.action}. Następnie kliknij menu `IP`{.action} na pasku usług po lewej stronie, po czym w tabeli kliknij Twój adres IP Failover.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij menu `Bare Metal Cloud`{.action}. Następnie kliknij menu `IP`{.action} na pasku usług po lewej stronie, po czym w tabeli kliknij Twój adres IP Failover.
 
 ![Failover IP](images/virtual_mac_01_2020_1.png){.thumbnail}
 
@@ -56,17 +56,17 @@ Wybierz "OVH" z rozwijanej listy "Typ", wpisz nazwę w polu "Nazwa wirtualnej ma
 
 Aby skonfigurować wirtualne maszyny umożliwiające dostęp do Internetu, musisz znać bramę maszyny hosta, czyli serwera dedykowanego. Adres bramy składa się z pierwszych trzech bajtów głównego adresu IP Twojego serwera. Ostatni bajt to 254. Na przykład, jeśli głównym adresem IP Twojego serwera jest:
 
-- 169.254.010.020
+- 169.254.10.020
 
 Adres bramy:
 
-- 169.254.010.254
+- 169.254.10.254
 
 ### Przygotowanie hosta
 
 > [!primary]
 >
-W przypadku wszystkich systemów operacyjnych i dystrybucji skonfiguruj wirtualną maszynę za pomocą wirtualnego adresu MAC utworzonego w  [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+W przypadku wszystkich systemów operacyjnych i dystrybucji skonfiguruj wirtualną maszynę za pomocą wirtualnego adresu MAC utworzonego w  [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 >
 
 #### Proxmox
@@ -203,7 +203,7 @@ Zapisz i zamknij plik.
 Następnie otwórz plik routingu wirtualnej maszyny, który znajduje się w `/etc/sysconfig/network-scripts/route-(nazwa interfejsu)`. Zmodyfikuj plik, aby odzwierciedlał poniższą konfigurację. Pamiętaj, aby zastąpić nasze zmienne własnymi wartościami:
 
 ```bash
-GATEWAY_IP - 169.254.010.254 (nazwa interfejsu)
+GATEWAY_IP - 169.254.10.254 (nazwa interfejsu)
 NETWORK_GW_VM - 255.255.255.0 (wpisz nazwę interfejsu)
 default GATEWAY_IP
 ```
@@ -333,7 +333,7 @@ ip addr add FAILOVER_IP/32 dev test-bridge
 
 Zastąp "MAC_ADDRESS" wirtualnym adresem MAC wygenerowanym w panelu konfiguracyjnym oraz "FAILOVER_IP" rzeczywistym IP Failover.
 
-Następnie wykonaj ping na IP Failover z zewnątrz. Jeśli to działa, prawdopodobnie oznacza to, że na maszynie wirtualnej lub hoście wystąpi błąd konfiguracji, który uniemożliwia działanie adresu IP Failover w trybie normalnym. Jeśli zamiast tego IP nadal nie działa, otwórz zgłoszenie do zespołu pomocy w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} w celu przeprowadzenia dodatkowego badania.
+Następnie wykonaj ping na IP Failover z zewnątrz. Jeśli to działa, prawdopodobnie oznacza to, że na maszynie wirtualnej lub hoście wystąpi błąd konfiguracji, który uniemożliwia działanie adresu IP Failover w trybie normalnym. Jeśli zamiast tego IP nadal nie działa, otwórz zgłoszenie do zespołu pomocy w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w celu przeprowadzenia dodatkowego badania.
 
 ## Sprawdź również
 

@@ -15,12 +15,12 @@ OVHcloud oddaje do Twojej dyspozycji Panel klienta, w którym możesz wyświetla
 
 > [!primary]
 >
-> Możliwe, że niektóre części niniejszego przewodnika nie mają zastosowania do Twojej sytuacji, która może różnić się w zależności od tego, gdzie znajduje się siedziba Twojej firmy i pod jakie podlega ustawodawstwo. Jeśli masz wątpliwości, sprawdź zapisy w umowach OVHcloud dostępnych w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, sekcja `Produkty i usługi`{.action} > `Regulaminy`{.action}.
+> Możliwe, że niektóre części niniejszego przewodnika nie mają zastosowania do Twojej sytuacji, która może różnić się w zależności od tego, gdzie znajduje się siedziba Twojej firmy i pod jakie podlega ustawodawstwo. Jeśli masz wątpliwości, sprawdź zapisy w umowach OVHcloud dostępnych w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Produkty i usługi`{.action} > `Regulaminy`{.action}.
 >
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - Zalogowanie jako kontakt księgowy (więcej szczegółów o rodzajach kontaktów w przewodniku [Zarządzanie kontaktami](https://docs.ovh.com/pl/customer/zarzadzanie_kontaktami/){.external})
 
 
@@ -54,7 +54,7 @@ Kwota podatku jest wyszczególniona na dole w podsumowaniu całkowitej kwoty nal
 
 > [!primary]
 >
-> Jeśli przy użytym sposobie płatności pojawia się napis „Termin zapłaty wg regulaminu”, oznacza to, że usługa objęta jest automatycznym odnowieniem. Użyty sposób płatności to sposób zarejestrowany w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}.
+> Jeśli przy użytym sposobie płatności pojawia się napis „Termin zapłaty wg regulaminu”, oznacza to, że usługa objęta jest automatycznym odnowieniem. Użyty sposób płatności to sposób zarejestrowany w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 >
 
 
@@ -62,7 +62,7 @@ Kwota podatku jest wyszczególniona na dole w podsumowaniu całkowitej kwoty nal
 
 #### Wyświetlanie i zarządzanie fakturami
 
-Aby wyświetlać faktury, przejdź do sekcji `Faktury`{.action} w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, klikając Twoje imię na górze po prawej stronie. 
+Aby wyświetlać faktury, przejdź do sekcji `Faktury`{.action} w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, klikając Twoje imię na górze po prawej stronie. 
 
 ![Panelu klienta](images/hubinvoices.png){.thumbnail}
 

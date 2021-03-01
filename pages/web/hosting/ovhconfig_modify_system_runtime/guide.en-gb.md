@@ -17,7 +17,7 @@ You can use a range of different configurations on an OVH Web Hosting plan. Whet
 ## Requirements
 
 - an [OVH Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external} (excluding Cloud Web)
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
@@ -34,7 +34,7 @@ When you modify your Web Hosting plan’s configuration, you will also change th
 
 #### Step 1: Access the Web Hosting plan’s configuration management.
 
-First of all, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the Web Hosting plan concerned. Click on the `General information`{.action} tab. Next, click on the three dots, then, `Modify configuration`{.action}.
+First of all, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, click `Web Hosting`{.action} in the services bar on the left-hand side, then select the Web Hosting plan concerned. Click on the `General information`{.action} tab. Next, click on the three dots, then, `Modify configuration`{.action}.
 
 ![hostingconfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 

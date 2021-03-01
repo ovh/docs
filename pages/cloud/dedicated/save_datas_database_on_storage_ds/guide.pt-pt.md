@@ -67,7 +67,7 @@ Não há um RAID melhor que o outro: todos eles respondem a necessidades diferen
 
 ### 2 - Instalar e configurar o servidor
 
-Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e instale o seu servidor. Tal como indicado anteriormente, iremos utilizar o Debian 9.4. Para obter mais informações, consulte o nosso manual que explica os [Primeiros passos com um servidor dedicado](https://docs.ovh.com/pt/dedicated/primeiros-passos-servidor-dedicado/){.external}.
+Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e instale o seu servidor. Tal como indicado anteriormente, iremos utilizar o Debian 9.4. Para obter mais informações, consulte o nosso manual que explica os [Primeiros passos com um servidor dedicado](https://docs.ovh.com/pt/dedicated/primeiros-passos-servidor-dedicado/){.external}.
 
 Depois de selecionar o sistema para a instalação, selecione a opção `Personalizar a configuração das partições`{.action}.
 

@@ -16,13 +16,13 @@ La solución Cloud Databases permite disfrutar de una instancia de bases de dato
 ## Requisitos
 
 - Tener una instancia [Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external}.
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
 
 ### Ver la información general del servicio
 
-En la columna izquierda de la sección Web del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Bases de datos`{.action} y seleccione el servicio Cloud Databases correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
+En la columna izquierda de la sección Web del [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Bases de datos`{.action} y seleccione el servicio Cloud Databases correspondiente. Por defecto, se abrirá la pestaña `Información general`{.action}.
 
 > [!primary]
 >

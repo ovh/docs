@@ -86,7 +86,7 @@ Disinstalla i plugin che non utilizzi: la loro semplice disattivazione non è su
 Se l’attacco è avvenuto in una data precedente al periodo di backup, ecco come ripristinare il tuo Wordpress:
 
 ## Non riesci ad accedere al pannello di amministrazione WordPress
-In questo caso, modifica la tua [password amministratore](https://codex.wordpress.org/fr:R%C3%A9initialisation_de_votre_mot_de_passe) seguendo la guida ufficiale di Wordpress.
+In questo caso, modifica la tua [password amministratore](https://codex.wordpress.org/) seguendo la guida ufficiale di Wordpress.
 
 È possibile aggiornare la tua email dalla tabella user di [phpMyAdmin](https://phpmyadmin.ovh.net). Ritorna poi alla pagina di login, clicca su Hai dimenticato la password? e aspetta che ti venga inviata l'email.
 

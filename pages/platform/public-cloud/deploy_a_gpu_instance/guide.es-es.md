@@ -39,7 +39,7 @@ Todas las imágenes que ofrecemos pueden utilizarse en una instancia de GPU.
 > Si no se siente a gusto con la compilación manual de un módulo kernel, le recomendamos usar una distribución con soporte oficial de Nvidia y para la que se proporcionen controladores *listos para usar*: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Una vez iniciada sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en su proyecto de Public Cloud en el panel de control, haga clic en `«Crear una instancia»`{.action}y elija una instancia de GPU:
+Una vez iniciada sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en su proyecto de Public Cloud en el panel de control, haga clic en `«Crear una instancia»`{.action}y elija una instancia de GPU:
 
 ![public-cloud](images/gpu.png){.thumbnail}
 
@@ -104,7 +104,7 @@ A partir de ahí, la instancia de GPU estará completamente funcional y podrá u
 Existen incompatibilidades entre el controlador NVIDIA y la solución de virtualización *KVM/pci_passthrough*. **Las imágenes estándar de Windows no funcionan.**
 Por ello, ofrecemos imágenes especiales, basadas en una BIOS UEFI virtual que permite que el controlador funcione correctamente (solo en el caso de instancias de G1, G2 y G3, gama 2017 y anteriores).
 
-Una vez iniciada sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en su proyecto de Public Cloud en el panel de control, haga clic en `«Crear una instancia»`{.action} y elija una instancia de GPU:
+Una vez iniciada sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en su proyecto de Public Cloud en el panel de control, haga clic en `«Crear una instancia»`{.action} y elija una instancia de GPU:
 
 ![public-cloud](images/gpu.png){.thumbnail}
 

@@ -15,8 +15,10 @@ Jeigu išsisaugoję diską formatu vhdx:
 
 Jeigu išsisaugoję diską formatu vmdk:
 Būtina konvertuoti vmdk į vhdx, kad ji būtų suderinama su HyperV. Šiam tikslui galite naudoti vieną šių priemonių:
-[Microsoft Virtual Machine Converter Solution Accelerator](http://www.microsoft.com/en-us/download/details.aspx?id=34591)
-[2Tware Convert VHD](http://www.2tware.com/product/6/2twareconvertvhdfree)
+
+- Microsoft Virtual Machine Converter Solution Accelerator
+- 2Tware Convert VHD
+
 Galima naudoti ir kitokius įrankius. Tačiau OVH neneša jokios atsakomybės už visus įrankius, sukurtus kitų gamintojų.
 
 

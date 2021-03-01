@@ -17,7 +17,7 @@ Możesz sprawdzić zawartość Twojej bazy danych w interfejsie. Aby to zrobić,
 ## Wymagania początkowe
 
 - Posiadanie [oferty hostingu Private](https://www.ovh.pl/hosting/opcje-sql.xml){.external} SQL lub [Cloud Databases](https://www.ovh.pl/cloud-databases/){.external}
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
 
@@ -36,7 +36,7 @@ Możesz sprawdzić zawartość Twojej bazy danych w interfejsie. Aby to zrobić,
 
 ####  Przez phpMyAdmin OVHcloud (tylko w przypadku oferty Prywatnego SQL)
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Kliknij kartę `Web`, a następnie `Baza danych`{.action} w panelu po lewej stronie. Wybierz nazwę serwera baz danych.
+Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web`, a następnie `Baza danych`{.action} w panelu po lewej stronie. Wybierz nazwę serwera baz danych.
 
 W zakładce `Informacje ogólne` link w polu **"Zarządzanie bazą danych"** znajduje się pod nagłówkiem "Interfejs użytkownika".
 

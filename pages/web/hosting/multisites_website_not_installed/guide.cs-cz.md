@@ -20,7 +20,7 @@ Pokud se po zadání URL adresy do webového prohlížeče objeví chybové hlá
 - Některý z [webhostingových balíčků OVH](https://www.ovh.cz/webhosting/){.external}.
 - Administrátorský přístup k [webhostingovému balíčku OVH](https://www.ovh.cz/webhosting/){.external} (k tomu, na němž jsou nedostupné webové stránky hostovány).
 - Přístup do konfigurace domény (právo na provádění úprav v DNS zóně).
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Postup
 
@@ -35,7 +35,7 @@ Následující části příručky Vás provedou postupem pro ověření výše 
 
 ### Fáze 1: ověření konfigurace webhostingu (Multisite)
 
-Za účelem ověření, zda je Vaše doména na webhostingu přidána jako Multisite, přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} a v levém postranním panelu klikněte na tlačítko `Hostingy`{.action}. V rozbalovací nabídce vyberte webhosting, jehož se daný problém týká. V základním rozhraní pro správu webhostingu klikněte na záložku `Multisite`{.action}.
+Za účelem ověření, zda je Vaše doména na webhostingu přidána jako Multisite, přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} a v levém postranním panelu klikněte na tlačítko `Hostingy`{.action}. V rozbalovací nabídce vyberte webhosting, jehož se daný problém týká. V základním rozhraní pro správu webhostingu klikněte na záložku `Multisite`{.action}.
 
 Tabulka nabízí přehled všech domén, které jsou k Vašemu webhostingu připojené jako Multisite. Pro snadnější vyhledání požadované domény v seznamu můžete použít vyhledávací lištu.
 
@@ -59,14 +59,14 @@ Nyní můžete ověřit DNS konfiguraci své domény. Ověření musí být prov
 
 > [!primary]
 >
-> Pokud je Vaše doména registrována u společnosti OVH,  můžete ověřit, zda používá naší konfiguraci prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (sekce `Domény`{.action} v levém postranním panelu, záložka `DNS servery`{.action}). 
+> Pokud je Vaše doména registrována u společnosti OVH,  můžete ověřit, zda používá naší konfiguraci prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} (sekce `Domény`{.action} v levém postranním panelu, záložka `DNS servery`{.action}). 
 >
 
 Proces ověření DNS konfigurace domény se liší v závislosti na tom, jakou konfiguraci používá:
 
 - **Pokud Vaše doména nepoužívá konfiguraci OVH**, musíte její nastavení ověřit pomocí rozhraní pro správu domény u svého současného poskytovatele.
 
-- **Pokud Vaše doména používá konfiguraci OVH**, můžete její nastavení ověřit prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Vyberte příslušnou doménu a přejděte do záložky `DNS zóna`{.action}. Zobrazí se tabulka obsahující DNS konfiguraci domény (každý řádek představuje jeden DNS záznam). Obsah tabulky lze filtrovat v závislosti na druhu DNS záznamu či názvu domény.
+- **Pokud Vaše doména používá konfiguraci OVH**, můžete její nastavení ověřit prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Vyberte příslušnou doménu a přejděte do záložky `DNS zóna`{.action}. Zobrazí se tabulka obsahující DNS konfiguraci domény (každý řádek představuje jeden DNS záznam). Obsah tabulky lze filtrovat v závislosti na druhu DNS záznamu či názvu domény.
 
 ![sitenotinstalled](images/site-not-installed-edit-ovh-dns-zone.png){.thumbnail}
 

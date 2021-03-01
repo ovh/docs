@@ -67,8 +67,7 @@ In der nachstehenden Tabelle finden Sie die verfügbaren KMS Keys für die versc
 |Windows Server 2019 Standard|N69G4-B89J2-4G8F4-WWYCC-J464C|
 |Windows Server 2019 Datacenter|WMDGN-G9PQG-XVVXX-R3X43-63DFG|
 
-Quelle: [Microsoft MSDN](http://ovh.to/B8XJVVg){.external}.
-
+Quelle: [Microsoft](https://docs.microsoft.com/en-gb/windows-server/get-started/kmsclientkeys){.external}
 
 > [!primary]
 >

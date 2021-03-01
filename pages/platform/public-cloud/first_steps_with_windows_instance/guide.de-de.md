@@ -18,7 +18,7 @@ Sobald Ihre Instanz erstellt ist, muss die Installation über die VNC-Konsole ab
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben bereits eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud) mit Windows [erstellt](../erstellung_einer_instanz_im_ovh_kundencenter/).
 
 ## In der praktischen Anwendung

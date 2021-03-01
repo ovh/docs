@@ -19,13 +19,13 @@ To use the accounts included with an Exchange service, you will need to add a do
 - You must have an [Exchange solution](https://www.ovh.com/world/emails/hosted-exchange/){.external}.
 - You must have one or several domain names.
 - You must have the right to modify your domain name’s configuration (via its DNS zone).
-- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}.
 
 ## Instructions
 
 ### Step 1: Log in to your service’s interface
 
-Once your Exchange service has been created and is available, you can manage it from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Once your Exchange service has been created and is available, you can manage it from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}.
 
 To do this, log in and click `Microsoft`{.action}, then `Exchange`{.action} in the left-hand services bar. Then select the name of the Exchange service concerned.
 

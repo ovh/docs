@@ -23,7 +23,7 @@ L'IPv6 est la dernière version de l'*Internet Protocol* (IP). Chaque serveur VP
 - Disposer d'un [serveur VPS OVHcloud](https://www.ovhcloud.com/fr-ca/vps/){.external}.
 - Être connecté à votre VPS en SSH (accès root) ou via un bureau à distance (Windows).
 - Disposer de connaissances basiques en réseau.
-- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} ou à l'[API OVHcloud](https://ca.api.ovh.com/console/).
+- Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} ou à l'[API OVHcloud](https://ca.api.ovh.com/console/).
 
 ## En pratique
 
@@ -51,7 +51,7 @@ La première étape consiste à récupérer l’adresse IPV6 et la gateway IPv6 
 
 #### Via votre espace client <a name="viacontrolpanel"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, partie `Bare Metal Cloud`{.action}. Cliquez sur `VPS`{.action} dans la barre de services à gauche, puis choisissez le serveur VPS concerné. Assurez-vous d'être bien positionné sur l'onglet `Accueil`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, partie `Bare Metal Cloud`{.action}. Cliquez sur `VPS`{.action} dans la barre de services à gauche, puis choisissez le serveur VPS concerné. Assurez-vous d'être bien positionné sur l'onglet `Accueil`{.action}.
 
 L'adresse IPv6 et la gateway IPv6 assignées à votre serveur apparaissent dans la partie `IP`. Récupérez ces dernières puis poursuivez vers l'étape 2 « [Appliquer la configuration IPv6](#applyipv6) ».
 
@@ -219,6 +219,7 @@ network:
               - to: "IPv6_GATEWAY"
                 scope: link
 ```
+
 > [!warning]
 >
 > Il est important de respecter l'alignement de chaque élément de ce fichier tel que représenté dans l'exemple ci-dessus. N'utilisez pas la touche de tabulation pour créer votre espacement. Seule la touche espace est nécessaire.

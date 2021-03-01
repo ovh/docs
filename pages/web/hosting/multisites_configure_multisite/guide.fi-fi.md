@@ -20,13 +20,13 @@ Webhotelli on mahdollista jakaa usean verkkosivun kesken. Tämä menettely on ma
 - Sinulla on yhteensopiva [webhotellituote](https://www.ovh-hosting.fi/webhotelli/){.external}
 - Sinulla on yksi tai useampi [verkkotunnus](https://www.ovh-hosting.fi/verkkotunnukset/){.external}
 - Voit muokata verkkotunnuksesi tai verkkotunnustesi konfiguraatiota (DNS-aluetta)
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Käytännössä
 
 ### 1. vaihe: Mene Multisiten hallintaan
 
-Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `Multisite`{.action}.
+Kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä oleva webhotelli. Mene lopuksi välilehdelle `Multisite`{.action}.
 
 Näkyviin tuleva taulukko sisältää kaikki webhotelliisi lisätyt verkkotunnukset. Jotkut niistä on luotu automaattisesti webhotellisi asennuksen yhteydessä.
 

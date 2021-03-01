@@ -39,7 +39,7 @@ Todas as imagens que disponibilizamos são compatíveis com uma instância GPU.
 > Se não se sentir à vontade para compilar manualmente um módulo do kernel, recomendamos que utilize uma distribuição oficialmente suportada pela Nvidia e para a qual a Nvidia forneça drivers *prontos a usar*: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Depois de iniciar sessão na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, aceda ao seu projeto Public Cloud, clique em `Criar uma instância`{.action}e escolha uma instância GPU:
+Depois de iniciar sessão na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda ao seu projeto Public Cloud, clique em `Criar uma instância`{.action}e escolha uma instância GPU:
 
 ![public-cloud](images/gpu.png){.thumbnail}
 
@@ -104,7 +104,7 @@ A instância GPU está agora totalmente funcional e utilizável.
 Existem incompatibilidades entre o driver NVIDIA e a solução de virtualização *KVM/pci_passthrough*. **As imagens padrão do Windows não funcionam.**
 Por isso, oferecemos imagens especiais, baseadas numa BIOS UEFI virtual, que permitem ao driver funcionar corretamente (tal só se aplica às instâncias G1, G2 e G3 - gama 2017 e anterior).
 
-Depois de iniciar sessão na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, aceda ao seu projeto Public Cloud, clique em `Criar uma instância`{.action}e escolha uma instância GPU:
+Depois de iniciar sessão na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda ao seu projeto Public Cloud, clique em `Criar uma instância`{.action}e escolha uma instância GPU:
 
 ![public-cloud](images/gpu.png){.thumbnail}
 

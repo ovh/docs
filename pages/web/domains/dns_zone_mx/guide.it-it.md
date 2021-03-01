@@ -17,15 +17,15 @@ Il record MX è un elemento che permette di associare un dominio e un server di 
 
 ## Prerequisiti
 
-- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Il dominio deve utilizzare i server DNS OVH
 
 > [!warning]
 >
 > - Se il dominio non utilizza i server DNS OVH, la modifica dei record MX deve essere eseguita dall’interfaccia del provider che ne gestisce la configurazione.
 >
-> - Per i domini registrati in OVH è invece possibile verificare la configurazione direttamente dallo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, cliccando sulla scheda `Server DNS`{.action}.
+> - Per i domini registrati in OVH è invece possibile verificare la configurazione direttamente dallo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, cliccando sulla scheda `Server DNS`{.action}.
 >
 
 ## Procedura
@@ -54,7 +54,7 @@ A questo punto è necessario utilizzare i diversi record MX nella configurazione
 
 ### Step 3: modifica la configurazione di un record MX OVH
 
-Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Nel menu a sinistra, seleziona il tuo dominio nella sezione `Domini`{.action} e clicca sulla scheda `Zona DNS`{.action}.
+Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Nel menu a sinistra, seleziona il tuo dominio nella sezione `Domini`{.action} e clicca sulla scheda `Zona DNS`{.action}.
 
 Compare una tabella che mostra la configurazione OVH del tuo dominio: ogni riga corrisponde a un diverso record DNS. Per prima cosa, utilizza i filtri per verificare se esistono record MX nella configurazione DNS OVH del tuo dominio.
 

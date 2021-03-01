@@ -19,7 +19,7 @@ Ao configurar a solução Content Delivery Network (CDN) pela primeira vez, deve
 
 - Possuir a solução [Content Delivery Network (CDN) da OVH](https://www.ovh.pt/cdn/){.external}.
 - Ter acesso à gestão da zona DNS do seu nome de domínio.
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 
 ## Instruções
@@ -28,7 +28,7 @@ Ao configurar a solução Content Delivery Network (CDN) pela primeira vez, deve
 
 O primeiro passo desta configuração é a adição de um subdomínio à sua escolha na CDN para que esta última aceite os pedidos HTTP(S) deste domínio.
 
-Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na janela `Serviços Dedicados`{.action} selecione a opção `NAS e CDN`{.action}.
+Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na janela `Serviços Dedicados`{.action} selecione a opção `NAS e CDN`{.action}.
 
 A seguir, clique em `Adicionar domínio à CDN`{.action}.
 
@@ -106,7 +106,7 @@ A atribuição de um domínio específico aos ficheiros que quer armazenar em ca
 
 Se pretender configurar um novo subdomínio para utilizar a CDN, provavelmente deverá modificar determinadas configurações no website e no serviço web.
 
-Em primeiro lugar, certifique-se de que o seu serviço web responde corretamente a este subdomínio. Para isso, deve configurar um [*vhost*](https://pt.wikipedia.org/wiki/Hospedagem_virtual){.external} para este domínio, quer com a sua própria pasta de destino, quer como alias de outro domínio.
+Em primeiro lugar, certifique-se de que o seu serviço web responde corretamente a este subdomínio. Para isso, deve configurar um *vhost* para este domínio, quer com a sua própria pasta de destino, quer como alias de outro domínio.
 
 Se o domínio responde corretamente no seu serviço web, só terá de editar o código HTML para modificar a origem dos ficheiros que devem passar pela CDN, e assegurar-se de que estes têm o nome correto no subdomínio.
 

@@ -21,7 +21,7 @@ order: 3
 ## Prerequisiti
 
 - Disporre di una [soluzione di hosting SQL Privato](https://www.ovh.it/hosting-web/opzioni-sql.xml){.external} o [Cloud Database](https://www.ovh.it/cloud-databases/){.external}
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
@@ -40,7 +40,7 @@ order: 3
 
 ####  Per phpMyAdmin OVHcloud (solo per l'offerta SQL Privato)
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo database server.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sulla scheda `Web Cloud` e poi su `Database`{.action} nel pannello di sinistra. Seleziona il nome del tuo database server.
 
 Dalla scheda `Informazioni generali`, il link di accesso nel riquadro **"Amministrazione del database"** è disponibile nella sezione "Interfaccia utente".
 

@@ -67,8 +67,7 @@ Below is a list of the product keys available for each operating system:
 |Windows Server 2019 Standard|N69G4-B89J2-4G8F4-WWYCC-J464C|
 |Windows Server 2019 Datacenter|WMDGN-G9PQG-XVVXX-R3X43-63DFG|
 
-Source: [Microsoft MSDN](http://ovh.to/FVDqwaM){.external}.
-
+Source: [Microsoft](https://docs.microsoft.com/en-gb/windows-server/get-started/kmsclientkeys){.external}
 
 > [!primary]
 >

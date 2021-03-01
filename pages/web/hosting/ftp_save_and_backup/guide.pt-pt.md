@@ -16,7 +16,7 @@ A sua solução de alojamento web da OVH dá-lhe acesso a um espaço de armazena
 ## Requisitos
 
 - Ter um [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external} (não funciona com um alojamento Cloud Web).
-- Consoante o método utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} ou dispor da palavra-passe do utilizador FTP que lhe permite aceder ao seu espaço de armazenamento. 
+- Consoante o método utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} ou dispor da palavra-passe do utilizador FTP que lhe permite aceder ao seu espaço de armazenamento. 
 
 ## Instruções
 
@@ -45,7 +45,7 @@ Aceda à informação correspondente ao método de restauração escolhido.
 
 ### Restaurar o espaço de armazenamento a partir da Área de Cliente
 
-Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento correspondente. Aceda à janela `FTP - SSH`{.action} e clique no botão `Restaurar um backup`{.action}.
+Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento correspondente. Aceda à janela `FTP - SSH`{.action} e clique no botão `Restaurar um backup`{.action}.
 
 ![backupftp](images/backupftp-step1.png){.thumbnail}
 
@@ -84,7 +84,7 @@ Em primeiro lugar, deve decidir qual o programa ou interface que vai utilizar pa
 
 - **Cyberduck**: deverá descarregar este programa no website oficial. Para mais informações, consulte o manual [“Guia de utilização do Cyberduck (MAC)”](https://docs.ovh.com/pt/hosting/partilhado_guia_de_utilizacao_do_cyberduck_mac/){.external}. Este manual não substitui a documentação oficial do editor.
 
-- **FTP Explorer**: deverá aceder previamente através da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Para aceder, basta iniciar sessão, clicar em `Alojamentos`{.action} na barra à esquerda e, em seguida, selecionar o alojamento correspondente. Aceda à janela `FTP - SSH`{.action} e clique no botão `Explorador FTP`{.action}.
+- **FTP Explorer**: deverá aceder previamente através da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Para aceder, basta iniciar sessão, clicar em `Alojamentos`{.action} na barra à esquerda e, em seguida, selecionar o alojamento correspondente. Aceda à janela `FTP - SSH`{.action} e clique no botão `Explorador FTP`{.action}.
 
 Assim que estiver pronto para continuar a operação, avance para o passo seguinte.
 

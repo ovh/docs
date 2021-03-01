@@ -18,13 +18,13 @@ hidden: true
 
 ## Requirements
 
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
 
 ### Create a project
 
-Log into to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Once you're logged in, click on the `Cloud`{.action} menu.
+Log into to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Once you're logged in, click on the `Cloud`{.action} menu.
 
 ![cloud menu](images/menu.png){.thumbnail}
 

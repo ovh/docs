@@ -19,7 +19,7 @@ Nabídka Cloud Web představuje unikátní kombinaci více než dvaceti let zku�
 - Některý z webhostingových balíčků [Cloud Web](https://www.ovh.cz/webhosting/cloud-web.xml).
 - E-mail s potvrzením o úspěšném dokončení instalace služby.
 - [Doména](https://www.ovh.cz/domeny/), na níž bude váš web dostupný.
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager).
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 ## Postup
 
@@ -41,7 +41,7 @@ Po zhodnocení výše uvedených kritérií se můžete pustit do práce.
 
 Aktuálně dostupné programovací jazyky: php a Node.js.
 
-Pro přístup k nabídce Runtime enginů řešení Cloud Web přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V základním rozhraní pro správu domény klikněte na záložku `Runtime Engines`{.action}.
+Pro přístup k nabídce Runtime enginů řešení Cloud Web přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V základním rozhraní pro správu domény klikněte na záložku `Runtime Engines`{.action}.
 
 Při instalaci webhostingu je automaticky vytvořen jeden Runtime engine. Tento engine je v tabulce uveden jako `výchozí`. Pro konfiguraci již vytvořeného enginu klikněte na ikonu tří teček v pravé části řádku a vyberte možnost `Upravit`{.action}. 
 
@@ -137,7 +137,7 @@ Detailní postup pro instalaci a migraci webových stránek naleznete v následu
 
 Nyní, když je Váš projekt na webhostingu Cloud Web úspěšně nainstalován, můžete si vytvořit e-mailové adresy. Pokud si e-mailové adresy nepřejete vytvořit, tuto část přeskočte.
 
-Pro vytvoření e-mailových adres přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, v levém postranním panelu klikněte na položku `E-maily`{.action} a vyberte doménu, na níž byl Váš webhosting Cloud Web vytvořen.
+Pro vytvoření e-mailových adres přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, v levém postranním panelu klikněte na položku `E-maily`{.action} a vyberte doménu, na níž byl Váš webhosting Cloud Web vytvořen.
 
 Pro vytvoření nové e-mailové adresy klikněte na tlačítko `Vytvořit e-mailovou adresu`{.action} a řiďte se uvedenými pokyny. V případě potíží se obraťte na následující dokumentaci: [Vytvoření e-mailové adresy v rámci služby MX Plan](https://docs.ovh.com/cz/cs/emails/webhosting_-_e-mail_prirucka_o_vytvareni_e-mailovych_adres/){.external}.
 
@@ -155,8 +155,8 @@ Existuje několik typů OVH DNS záznamů. Nás budou nyní zajímat dva záznam
 
 |DNS záznam|Služba|Umístění|
 |---|---|---|
-|A|Webové stránky|[Zákaznický prostor OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sekce `Hostingy`{.action}, příslušný webhosting Cloud Web. Ze záložky `Základní informace`{.action} si zkopírujte IPv4 adresu.|
-|MX|E-maily|[Zákaznický prostor OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sekce `E-maily`{.action}, příslušný webhosting Cloud Web. Ze záložky `Základní informace`{.action} si zkopírujte informace uvedené pod hlavičkou „MX pole“.|
+|A|Webové stránky|[Zákaznický prostor OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, sekce `Hostingy`{.action}, příslušný webhosting Cloud Web. Ze záložky `Základní informace`{.action} si zkopírujte IPv4 adresu.|
+|MX|E-maily|[Zákaznický prostor OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, sekce `E-maily`{.action}, příslušný webhosting Cloud Web. Ze záložky `Základní informace`{.action} si zkopírujte informace uvedené pod hlavičkou „MX pole“.|
 
 #### 2. Ověření a/nebo modifikace DNS záznamu
 
@@ -166,14 +166,14 @@ Nyní, když znáte DNS záznamy svého webhostingu a e-mailového řešení OVH
 >
 > - Pokud Vaše doména není nakonfigurována na DNS servery OVH, musíte úpravy provést pomocí příslušného rozhraní pro správu domény u Vašeho poskytovatele.
 > 
-> - Pokud je Vaše doména registrována u OVH, můžete snadno ověřit, zda používá naši konfiguraci. Za tímto účelem přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, vyberte příslušnou doménu a přejděte do záložky `DNS servery`{.action}.
+> - Pokud je Vaše doména registrována u OVH, můžete snadno ověřit, zda používá naši konfiguraci. Za tímto účelem přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, vyberte příslušnou doménu a přejděte do záložky `DNS servery`{.action}.
 >
 
 Detailní informace týkající se úprav v DNS zóně naleznete v následující tabulce:
 
 |DNS konfigurace|Kde provést potřebné úpravy?|
 |---|---|
-|OVH|V [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, sekce `Domény`{.action}, rozhraní pro správu příslušné domény. V záložce `DNS zóna`{.action} ověřte a v případě potřeby upravte potřebné informace. Detailní informace o postupu naleznete v následující dokumentaci: [Modifikace DNS zóny](https://docs.ovh.com/cz/cs/domains/modifikace-dns-zony/){.external}.|
+|OVH|V [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, sekce `Domény`{.action}, rozhraní pro správu příslušné domény. V záložce `DNS zóna`{.action} ověřte a v případě potřeby upravte potřebné informace. Detailní informace o postupu naleznete v následující dokumentaci: [Modifikace DNS zóny](https://docs.ovh.com/cz/cs/domains/modifikace-dns-zony/){.external}.|
 |Externí poskytovatel|Rozhraní pro správu služby příslušného správce DNS konfigurace Vaší domény. V případě problémů se obraťte na zákaznickou podporu externího poskytovatele.|
 
 Propagace změn v DNS zóně domény může trvat až 24 hodin. Pokud jste ke svému webhostingu Cloud Web přidali vícero domén v režimu Multisite, budete tyto úpravy muset provést pro každou z nich zvlášť. 

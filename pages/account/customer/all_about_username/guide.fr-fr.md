@@ -67,7 +67,7 @@ Vous pouvez retrouver votre identifiant dans votre espace client, en cliquant su
 
 ## Comment vous connecter à votre espace client ?
 
-Rendez-vous sur [la page d'authentification OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, renseignez votre identifiant et votre mot de passe.
+Rendez-vous sur [la page d'authentification OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, renseignez votre identifiant et votre mot de passe.
 
 ![identifiant client](images/nichandle03.png){.thumbnail}
 

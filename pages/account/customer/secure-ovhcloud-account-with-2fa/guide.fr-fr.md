@@ -18,7 +18,7 @@ Vous pouvez activer une authentification à deux facteurs (2FA). Celle-ci vient 
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Posséder un téléphone mobile (pour la méthode par SMS), un smartphone ou une tablette (pour la méthode via application mobile) ou une clé de sécurité Universal Second Factor (U2F).
 - Avoir pris connaissance des [recommandations sur la gestion du mot de passe d'accès à votre compte](https://docs.ovh.com/fr/customer/gerer-son-mot-de-passe/).
 
@@ -93,7 +93,7 @@ Vous pouvez également utiliser l'un des codes de sécurité mis à votre dispos
 > - de codes de sécurité valides.
 > 
 
-Pour supprimer un périphérique, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur votre nom en haut à droite (première étape sur l'image ci-dessous), puis sur vos initiales (seconde étape). 
+Pour supprimer un périphérique, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur votre nom en haut à droite (première étape sur l'image ci-dessous), puis sur vos initiales (seconde étape). 
 
 ![2FA](images/hub2FAb.png){.thumbnail}
 

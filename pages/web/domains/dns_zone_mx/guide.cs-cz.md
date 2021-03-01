@@ -17,15 +17,15 @@ MX záznam slouží ke směrování domény na mailový server. To umožňuje se
 
 ## Prerekvizity
 
-- Dostatečná oprávnění ke správě domény prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostatečná oprávnění ke správě domény prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - Doména musí být nakonfigurována na DNS servery OVH.
 
 > [!warning]
 >
 > - Pokud Vaše doména není nakonfigurována na DNS servery OVH, musíte změny provést pomocí příslušného rozhraní pro správu domény.
 >
-> - Pokud je Vaše doména registrována u OVH, můžete její konfiguraci ověřit pomocí [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Za tímto účelem přejděte do základního rozhraní pro správu domény a vyberte záložku `DNS servery`{.action}.
+> - Pokud je Vaše doména registrována u OVH, můžete její konfiguraci ověřit pomocí [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Za tímto účelem přejděte do základního rozhraní pro správu domény a vyberte záložku `DNS servery`{.action}.
 >
 
 ## Postup
@@ -53,7 +53,7 @@ Výše uvedené MX záznamy použijte v DNS konfiguraci své domény. Za tímto 
 
 ### Fáze 3: úprava konfigurace MX záznamu OVH
 
-Za účelem úpravy MX záznamů v OVH konfiguraci své domény se přihlaste do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. V levém postranním panelu vyberte sekci `Domény`{.action}, klikněte na požadovanou doménu a přejděte do záložky `DNS zóna`{.action}.
+Za účelem úpravy MX záznamů v OVH konfiguraci své domény se přihlaste do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. V levém postranním panelu vyberte sekci `Domény`{.action}, klikněte na požadovanou doménu a přejděte do záložky `DNS zóna`{.action}.
 
 Zobrazí se tabulka s aktuální OVH konfigurací domény. Každý řádek obsahuje jeden DNS záznam. Nejdříve se ujistěte, zda v DNS konfiguraci Vaší domény již MX záznamy neexistují. Pro usnadnění vyhledávání použijte vyhledávací filtr.
 

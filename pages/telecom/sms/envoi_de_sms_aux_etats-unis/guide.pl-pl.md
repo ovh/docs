@@ -35,7 +35,7 @@ Zatwierdzenie modeli wiadomości jest wykonywane nieodpłatne przez zespoły OVH
 
 #### 2.1 Za pośrednictwem Panelu klienta
 
-Zaloguj się do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz opcję `Telecom`{.action} (1). Następnie kliknij pozycję `SMS`{.action} po lewej stronie i wybierz Twoje `konto SMS`{.action} (2). Kliknij zakładkę `SMS`{.action} (3), a następnie `Zarządzanie modelami`{.action} (4).
+Zaloguj się do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz opcję `Telecom`{.action} (1). Następnie kliknij pozycję `SMS`{.action} po lewej stronie i wybierz Twoje `konto SMS`{.action} (2). Kliknij zakładkę `SMS`{.action} (3), a następnie `Zarządzanie modelami`{.action} (4).
 
 ![Wiadomości SMS do Stanów Zjednoczonych](images/smstousa1.png){.thumbnail}
 

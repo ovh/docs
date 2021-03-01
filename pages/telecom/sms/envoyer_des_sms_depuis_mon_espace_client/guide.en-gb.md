@@ -14,11 +14,11 @@ You can send SMS messages directly via the OVHcloud Control Panel. This guide gi
 ## Requirements
 
 - an OVHcloud SMS account with SMS credits
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), then select `Telecom`{.action}. Next, click `SMS`{.action} on the left, and your SMS account.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then select `Telecom`{.action}. Next, click `SMS`{.action} on the left, and your SMS account.
 
 The “Send an SMS” field is the first item available in the list of actions.
 

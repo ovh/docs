@@ -18,13 +18,13 @@ Os planos de alojamento web da OVH dão acesso a um espaço de armazenamento que
 
 - Ter um serviço de [alojamento web OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
 
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
 ### 1 - Aceder à gestão dos utilizadores FTP
 
-Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento correspondente. De seguida, clique no separador `FTP - SSH`{.action}.
+Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento correspondente. De seguida, clique no separador `FTP - SSH`{.action}.
 
 Aparecerá uma tabela com os utilizadores FTP criados no seu alojamento. Estes utilizadores permitem-lhe aceder ao seu espaço de armazenamento e publicar ficheiros no seu site. Um utilizador será automaticamente criado durante a instalação do alojamento.
 

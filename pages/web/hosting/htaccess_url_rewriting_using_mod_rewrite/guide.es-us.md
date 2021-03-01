@@ -1,5 +1,5 @@
 ---
-title: 'Web hosting: .htaccess, reescritura de URL con mod_rewrite'
+title: '.htaccess, reescritura de URL con mod_rewrite'
 excerpt: El mod_rewrite está disponible en todos los planes de OVHcloud (menos en los 20GP).
 id: '1971'
 slug: web_hosting_htaccess_reescritura_de_url_con_mod_rewrite
@@ -43,8 +43,8 @@ De este modo redirige todas las peticiones /letstest al script /test_wslash/test
 
 ```
 RewriteEngine on
-Rewritecond %{HTTP_HOST} ^exemple.com$
-Rewriterule ^(.*) http://www.exemple.com/$1 [QSA,L,R=301]
+RewriteCond %{HTTP_HOST} ^ejemplo.com$
+RewriteRule ^(.*) http://www.ejemplo.com/$1 [QSA,L,R=301]
 ```
 
 
@@ -58,9 +58,9 @@ Rewriterule ^(.*) http://www.exemple.com/$1 [QSA,L,R=301]
 
 ```
 RewriteEngine on
-Rewritecond %{HTTP_HOST} ^exemple.com
-Rewritecond %{REQUEST_URI} !^/MonSite
-Rewriterule ^(.*)$ /MonSite/
+RewriteCond %{HTTP_HOST} ^ejemplo.com
+RewriteCond %{REQUEST_URI} !^/MiSitio
+RewriteRule ^(.*)$ /MiSitio/
 ```
 
 

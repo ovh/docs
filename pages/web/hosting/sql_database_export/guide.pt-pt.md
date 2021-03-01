@@ -18,13 +18,13 @@ As bases de dados, utilizadas pela maioria dos sistemas de gestão de conteúdos
 
 - Ter um serviço de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
 - Possuir uma base de dados criada no âmbito de uma oferta de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
-- Consoante o método de backup utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} ou às informações que lhe permitem aceder à base de dados.
+- Consoante o método de backup utilizado, ter acesso à gestão do alojamento web a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} ou às informações que lhe permitem aceder à base de dados.
 
 ## Instruções
 
 Antes de começar, deve escolher o método que quer utilizar para recuperar a cópia de segurança da base de dados. Para isso, existem várias opções, adequadas a diferentes competências técnicas.
 
-- **Utilizar a ferramenta de backup da OVH**: esta solução permite recuperar backups das suas bases de dados a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Trata-se da solução mais acessível, pois não requer competências técnicas especiais.
+- **Utilizar a ferramenta de backup da OVH**: esta solução permite recuperar backups das suas bases de dados a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Trata-se da solução mais acessível, pois não requer competências técnicas especiais.
 
 - **Realizar a cópia de segurança a partir da interface web phpMyAdmin**: deverá aceder à interface phpMyAdmin. A utilização desta última exige conhecimentos específicos.
 
@@ -45,7 +45,7 @@ Consulte este manual de acordo com o método de backup pretendido.
 
 ### Recuperar uma cópia de segurança através da ferramenta da OVH
 
-Para iniciar a operação, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento em causa. Por fim, clique no separador `Base de dados`{.action}.
+Para iniciar a operação, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o nome do alojamento em causa. Por fim, clique no separador `Base de dados`{.action}.
 
 Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento web. Poderá optar por realizar um novo backup ou importar um já existente através de duas operações.
 
@@ -75,7 +75,7 @@ Para transferir um backup, clique nos três pontos à direita daquele que deseja
 
 ### Recuperar um backup a partir da interface web phpMyAdmin
 
-Em primeiro lugar, deverá aceder ao phpMyAdmin. Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos`{.action} na barra à esquerda e selecione o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
+Em primeiro lugar, deverá aceder ao phpMyAdmin. Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} na barra à esquerda e selecione o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
 
 Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento web. Clique nos três pontos à direita da linha correspondente à base de dados e selecione `Aceder ao phpMyAdmin`{.action}.
 

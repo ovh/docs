@@ -18,7 +18,7 @@ Se possui um website num alojamento da OVH, poderá ter recebido um e-mail infor
 
 - Ter um serviço de [alojamento web da OVH](https://www.ovh.pt/alojamento-partilhado/){.external}.
 - Dispor das credenciais necessárias para aceder ao espaço de armazenamento do alojamento.
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web Cloud`{.action}.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
 
 ## Instruções
 
@@ -75,7 +75,7 @@ Assim, certifique-se de que os diferentes elementos adicionais do seu website se
 
 Isto irá permitir-lhe conhecer de forma mais detalhada as ações que foram realizadas no serviço e website para poder determinar o que pode ter motivado a desativação do alojamento.
 
-Para consultar a atividade e os logs do alojamento, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web Cloud`{.action}. Na coluna à esquerda, clique em `Alojamentos`{.action} e selecione o alojamento correspondente. A seguir, poderá realizar duas ações diferentes em função da informação à qual pretende aceder:
+Para consultar a atividade e os logs do alojamento, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}. Na coluna à esquerda, clique em `Alojamentos`{.action} e selecione o alojamento correspondente. A seguir, poderá realizar duas ações diferentes em função da informação à qual pretende aceder:
 
 - **Consultar a atividade do alojamento**
 
@@ -184,7 +184,7 @@ Para reativar o alojamento web, é necessário realizar uma operação no espaç
 
 Se tiver a possibilidade de reativar você mesmo o alojamento, reúna as informações necessárias para aceder ao espaço de armazenamento (ou seja, o servidor FTP e a respetiva palavra-passe).
 
-Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e clique em `Alojamentos`{.action} na barra à esquerda. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}. Nessa página, poderá [alterar a palavra-passe de um utilizador FTP](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-utilizador-ftp/){.external}, caso seja necessário. 
+Para isso, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e clique em `Alojamentos`{.action} na barra à esquerda. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}. Nessa página, poderá [alterar a palavra-passe de um utilizador FTP](https://docs.ovh.com/pt/hosting/alterar-palavra-passe-utilizador-ftp/){.external}, caso seja necessário. 
 
 ![hostingdeactivation](images/hosting-deactivation-step3.png){.thumbnail}
 

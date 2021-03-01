@@ -16,7 +16,7 @@ Chaque ligne OVH est associée à un répondeur que vous pouvez personnaliser et
 ## Prérequis
 
 - Disposer d'une [ligne téléphonique OVH](https://www.ovhtelecom.fr/telephonie/){.external}.
-- Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
 
 ## En pratique
 
@@ -58,11 +58,11 @@ Depuis votre ligne téléphonique OVH, composez le **123** pour accéder au serv
 
 Une fois en communication avec le serveur de messagerie, laissez-vous guider par celui-ci en appuyant sur les touches correspondant aux actions que vous souhaitez réaliser. Sachez que si vous appelez depuis une autre ligne, vous devrez indiquer le numéro associé au répondeur que vous souhaitez consulter, ainsi que son mot de passe d'accès à distance préalablement défini. 
 
-Si vous n'avez pas défini de mot de passe d'accès à distance : connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} partie Télécom, cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée. Positionnez-vous ensuite sur l'onglet `Répondeur`{.action}, cliquez sur `Mot de passe accès répondeur`{.action} et suivez les indications.
+Si vous n'avez pas défini de mot de passe d'accès à distance : connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} partie Télécom, cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée. Positionnez-vous ensuite sur l'onglet `Répondeur`{.action}, cliquez sur `Mot de passe accès répondeur`{.action} et suivez les indications.
 
 #### Consulter son répondeur via votre espace client
 
-Connecté à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie Télécom, cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne pour laquelle vous souhaitez consulter le répondeur. Positionnez-vous ensuite sur l'onglet `Répondeur`{.action} et cliquez sur `Écoute et gestion des messages`{.action}.
+Connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom, cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne pour laquelle vous souhaitez consulter le répondeur. Positionnez-vous ensuite sur l'onglet `Répondeur`{.action} et cliquez sur `Écoute et gestion des messages`{.action}.
 
 ![repondeur](images/voicemail-step7.png){.thumbnail}
 
@@ -78,7 +78,7 @@ Si vous souhaitez consulter ou modifier les adresses e-mail utilisées pour les 
 
 ### Personnaliser la configuration de son répondeur
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée. Positionnez-vous sur l'onglet `Répondeur`{.action}, puis cliquez sur `Configuration du répondeur`{.action}. 
+Pour démarrer la manipulation, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée. Positionnez-vous sur l'onglet `Répondeur`{.action}, puis cliquez sur `Configuration du répondeur`{.action}. 
 
 ![repondeur](images/voicemail-step3.png){.thumbnail}
 
@@ -117,7 +117,7 @@ Trois parties sont visibles sur la page qui apparaît alors. Configurez votre r�
 
 Cette association s'effectue par le biais de deux manipulations : la première permet de choisir le répondeur qui pourra être consulté depuis la ligne et la seconde permet de définir vers quel répondeur les correspondants sont renvoyés.
 
-Pour débuter, connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée. Positionnez-vous sur l'onglet `Répondeur`{.action}, puis cliquez sur `Choix de la messagerie par défaut`{.action}.
+Pour débuter, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée. Positionnez-vous sur l'onglet `Répondeur`{.action}, puis cliquez sur `Choix de la messagerie par défaut`{.action}.
 
 ![repondeur](images/voicemail-step1.png){.thumbnail}
 

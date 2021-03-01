@@ -17,7 +17,7 @@ Moduly na jedno kliknutí umožňují snadné a rychlé spuštění webových st
 ## Prerekvizity
 
 - Některý z [webhostingových balíčků OVH](https://www.ovh.cz/webhosting/){.external}.
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - Prázdný instalační adresář (ujistěte se prosím, že v adresáři, kam se bude modul instalovat, nejsou uloženy žádné další soubory).
 - Doména (s případnou subdoménou), která se použije pro vaše webové stránky, musí být vedena jako „multisite“.
 

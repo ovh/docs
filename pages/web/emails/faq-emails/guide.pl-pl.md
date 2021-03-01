@@ -18,10 +18,10 @@ W większości przypadków brak możliwości wysyłania/odbierania wiadomości e
 
 Czy po wysłaniu e-maila na Twoje konto e-mail dostajesz komunikat błędu? Jeśli tak, zlokalizuj ten komunikat — znajdziesz w nim przyczynę problemów (przepełniona lub nieistniejąca skrzynka itp.).
 
-Możesz także sprawdzić, czy Twoja domena dostarcza wiadomości e-mail we właściwe miejsce. W tym celu przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, wybierz strefę DNS Twojej domeny i spójrz na ustawione wpisy typu MX. Wpisy te powinny mieć następujący format: „mx\*.mail.ovh.net.” (symbol „\*” zastąp cyfrą od 0 do 3).
+Możesz także sprawdzić, czy Twoja domena dostarcza wiadomości e-mail we właściwe miejsce. W tym celu przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, wybierz strefę DNS Twojej domeny i spójrz na ustawione wpisy typu MX. Wpisy te powinny mieć następujący format: „mx\*.mail.ovh.net.” (symbol „\*” zastąp cyfrą od 0 do 3).
 Jeśli wpisy MX są różne, to znaczy, że być może korzystasz z oferty e-mail od innego operatora niż OVHcloud.
 
-**Wskazówki i porady**: Jeśli nie możesz się zalogować do interfejsu webmail, to znaczy, że hasło może być błędne. Sprawdź hasło, a w razie potrzeby zmień je w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} i zaloguj się ponownie. W tym celu przejdź do [naszej dokumentacji](../zaawansowane_korzystanie_z_e-maili_ovh/).
+**Wskazówki i porady**: Jeśli nie możesz się zalogować do interfejsu webmail, to znaczy, że hasło może być błędne. Sprawdź hasło, a w razie potrzeby zmień je w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i zaloguj się ponownie. W tym celu przejdź do [naszej dokumentacji](../zaawansowane_korzystanie_z_e-maili_ovh/).
 
 ### Jak skonfigurować mój adres e-mail i używać go w interfejsie webmail? 
 
@@ -34,9 +34,9 @@ Za sprawą interfejsu [webmail](https://www.ovh.pl/mail/){.external} w każdej c
 
 ### Zarządzanie usługami e-mail 
 
-Wszystkimi Twoimi kontami e-mail zarządzasz w [Panelu klienta OVHcloud] (https://www.ovh.com/auth/?action=gotomanager){.external}. Zaloguj się do Panelu klienta i przejdź do odpowiedniej usługi. Możesz zmienić hasła do kont e-mail, sprawdzić dostępne miejsce na każdym z kont, utworzyć nowe konta lub usunąć istniejące. 
+Wszystkimi Twoimi kontami e-mail zarządzasz w [Panelu klienta OVHcloud] (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Zaloguj się do Panelu klienta i przejdź do odpowiedniej usługi. Możesz zmienić hasła do kont e-mail, sprawdzić dostępne miejsce na każdym z kont, utworzyć nowe konta lub usunąć istniejące. 
 
-**Porady i podpowiedzi**: Dzięki rozwiązaniom poczty elektronicznej MX Plan możesz delegować uprawnienia do zarządzania kontem e-mail innemu kontu OVHcloud, jednocześnie zachowując nad nim kontrolę. Nadaj uprawnienia odpowiedniemu kontu w [Panelu klienta OVHcloud] (https://www.ovh.com/auth/?action=gotomanager){.external}. W tym celu zaloguj się do Panelu klienta OVHcloud, przejdź do sekcji „Konta e-mail” i wybierz odpowiednią domenę. Następnie przejdź do zakładki „Konta e-mail” i wybierz opcję:
+**Porady i podpowiedzi**: Dzięki rozwiązaniom poczty elektronicznej MX Plan możesz delegować uprawnienia do zarządzania kontem e-mail innemu kontu OVHcloud, jednocześnie zachowując nad nim kontrolę. Nadaj uprawnienia odpowiedniemu kontu w [Panelu klienta OVHcloud] (https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W tym celu zaloguj się do Panelu klienta OVHcloud, przejdź do sekcji „Konta e-mail” i wybierz odpowiednią domenę. Następnie przejdź do zakładki „Konta e-mail” i wybierz opcję:
 
 - `Zarządzaj elementami współdzielonymi przez wszystkie konta e-mail`{.action} po prawej stronie, jeśli chcesz delegować uprawnienia do zarządzania wszystkimi kontami dla tej domeny
 - `Zarządzanie delegacjami uprawnień`{.action}, jeśli chcesz delegować uprawnienia do zarządzania określonym kontem (kliknij `...`{.action} obok konta)  
@@ -46,11 +46,11 @@ Pamiętaj, że w przypadku obu opcji wymagane jest podanie identyfikatora klient
 ### Jak ograniczyć ilość otrzymywanego spamu? 
 
 Aby ograniczyć liczbę wiadomości-śmieci, możesz skonfigurować filtry dla poczty e-mail (w ofercie MXPlan — „Filtrowanie”). Ich celem jest usunięcie lub przeniesienie tego typu wiadomości do folderu „Spam” w momencie ich odebrania.
-W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, przejdź do rubryki `E-mail`, a następnie wybierz daną domenę, kartę `E-mail`{.action}, a potem w kolumnie `Filtrowanie`{.action} kliknij przycisk akcji.
+W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do rubryki `E-mail`, a następnie wybierz daną domenę, kartę `E-mail`{.action}, a potem w kolumnie `Filtrowanie`{.action} kliknij przycisk akcji.
 
 Jeśli w Panelu klienta nie widzisz kolumny `Filtrowanie`{.action}, wówczas tworzenie filtrów odbywa się za pośrednictwem reguł zarządzania skrzynką odbiorczą w interfejsie [webmail](https://www.ovh.pl/mail/){.external}. Więcej szczegółów znajdziesz w przewodniku: [Reguły skrzynki odbiorczej w interfejsie OWA](../../microsoft-collaborative-solutions/tworzenie-regul-skrzynki-odbiorczej-w-owa/).
 
-**Wskazówki i porady**: Jeśli włączysz filtr antyspamowy, możliwe, że niektóre prawidłowe wiadomości zostaną uznane za spam. Jest to tzw. wynik „fałszywie pozytywny”. Jeśli tak się zdarzy, zachęcamy do otwarcia zgłoszenia w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, aby poinformować nas o tym. Dzięki temu będziemy mogli podjąć odpowiednie kroki, aby takie wiadomości nie były w przyszłości uznawane za spam.
+**Wskazówki i porady**: Jeśli włączysz filtr antyspamowy, możliwe, że niektóre prawidłowe wiadomości zostaną uznane za spam. Jest to tzw. wynik „fałszywie pozytywny”. Jeśli tak się zdarzy, zachęcamy do otwarcia zgłoszenia w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, aby poinformować nas o tym. Dzięki temu będziemy mogli podjąć odpowiednie kroki, aby takie wiadomości nie były w przyszłości uznawane za spam.
 
 ### Czy oferta Office 365 Pro Plus zawiera licencję Skype? 
 

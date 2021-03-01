@@ -16,14 +16,14 @@ Enabling Intel Software Guard Extensions (SGX) on your server allows you to run 
 ## Requirements
 
 - a dedicated server in the [Infrastructure range](https://www.ovhcloud.com/en-sg/bare-metal/infra/) with the [SGX](https://www.ovhcloud.com/en-sg/bare-metal/intel-software-guard-extensions/) option in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) / to the [OVHcloud API](https://ca.api.ovh.com/console/)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) / to the [OVHcloud API](https://ca.api.ovh.com/console/)
 - root access via SSH on your server
 
 ## Instructions
 
 ### From the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Bare Metal Cloud`{.action} section and then select the server on which you wish to enable SGX from **Dedicated Servers** in the left-hand sidebar.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), go to the `Bare Metal Cloud`{.action} section and then select the server on which you wish to enable SGX from **Dedicated Servers** in the left-hand sidebar.
 
 #### Enabling the option
 

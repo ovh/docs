@@ -20,7 +20,7 @@ Na Internet, existem inúmeros sites. Quer seja para criar um blogue ou uma loja
 
 - Ter recebido o e-mail com a confirmação da instalação do alojamento web.
 - Ter um [domínio](https://www.ovh.pt/dominios/){.external} (endereço que permite identificar e aceder ao seu site).
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
@@ -69,7 +69,7 @@ Para se ligar ao espaço de armazenamento, deve dispor dos seguintes elementos:
 - o endereço deste servidor;
 - a porta de ligação ao servidor.
 
-Estes elementos foram-lhe enviados por e-mail após a instalação do seu alojamento web. Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção “Web”, e clique em `Alojamentos`{.action} na barra à esquerda. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}. 
+Estes elementos foram-lhe enviados por e-mail após a instalação do seu alojamento web. Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”, e clique em `Alojamentos`{.action} na barra à esquerda. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}. 
 
 ![siteinstallation](images/get-website-online-step1.png){.thumbnail}
 
@@ -112,7 +112,7 @@ Se estiver a migrar um site já existente, obtenha a base de dados junto do anti
 
 Se já dispõe de uma base de dados que pretende utilizar (associada a um plano de [alojamento web OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external} ou a uma solução [SQL Privado](https://www.ovh.pt/alojamento-partilhado/opcoes-sql.xml){.external} ou [Cloud DB](https://www.ovh.pt/cloud-databases/){.external}), obtenha o nome de utilizador, a respetiva palavra-passe, o nome da base de dados e o endereço do servidor. Passe para a etapa seguinte.
 
-Se pretende criar uma nova base de dados na OVHcloud, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e clique em `Alojamentos`{.action} na barra à esquerda. De seguida, selecione o nome do alojamento correspondente e clique no separador `Base de dados`{.action}.
+Se pretende criar uma nova base de dados na OVHcloud, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e clique em `Alojamentos`{.action} na barra à esquerda. De seguida, selecione o nome do alojamento correspondente e clique no separador `Base de dados`{.action}.
 
 Clique em `Criar uma base de dados`{.action} ou, se este botão não aparecer, em `Ações`{.action} e `Criar uma base de dados`{.action}. Siga as indicações que surgirem.
 

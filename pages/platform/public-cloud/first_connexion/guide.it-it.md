@@ -16,7 +16,7 @@ Per connettersi a un’istanza Public Cloud OVH, il procedimento da seguire è s
 
 ## Prerequisiti
 
-* Avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}
+* Avere accesso allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 * Aver creato un’[istanza Public Cloud OVH](https://www.ovhcloud.com/it/public-cloud/){.external}
 
 ## Procedura
@@ -75,7 +75,7 @@ Per connetterti a un’istanza Linux da Windows, è sufficiente utilizzare un pr
 
 #### Completare l’installazione
 
-Dopo aver creato la tua istanza, è necessario portare a termine il cosiddetto *sysprep*.  Per fare ciò, avvia la console VNC dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}:
+Dopo aver creato la tua istanza, è necessario portare a termine il cosiddetto *sysprep*.  Per fare ciò, avvia la console VNC dal tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}:
 
 ![VNC console](images/vnc_console.png)
 

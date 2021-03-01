@@ -24,7 +24,7 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVHclo
 ## Prérequis
 
 - Posséder un service OVHcloud bénéficiant d’un Firewall Network ([serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, [VPS](https://www.ovh.com/fr/vps/){.external},[instance Public Cloud](https://www.ovh.com/fr/public-cloud/){.external}, [Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), [IP fail-over](https://www.ovh.com/fr/serveurs_dedies/ip_failover.xml){.external}, etc.)
-- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 
 ## En pratique
@@ -36,7 +36,7 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVHclo
 > Le Firewall Network protège les adresses IP associées à une machine. Vous devez donc configurer chaque adresse IP indépendamment. Une configuration globale du serveur est impossible.
 > 
 
-Connectez-vous à[ l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, accédez à la section `IP`{.action} et cliquez sur `...`{.action} pour activer le pare-feu sur une adresse IPv4.
+Connectez-vous à[ l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, accédez à la section `IP`{.action} et cliquez sur `...`{.action} pour activer le pare-feu sur une adresse IPv4.
 
 ![Activation du Firewall Network](images/firewall_creation.png){.thumbnail}
 

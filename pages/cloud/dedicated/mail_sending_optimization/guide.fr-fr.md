@@ -38,7 +38,7 @@ Dans le cas d'une infrastructure dédiée (serveur dédié, VPS, instance Public
 > `?` : neutre
 >
 
-Pour plus d'informations sur la syntaxe du champ SPF, référez-vous au lien suivant : <http://www.open-spf.org/SPF_Record_Syntax>.
+Pour plus d'informations sur la syntaxe du champ SPF, référez-vous au lien suivant : <http://www.open-spf.org/>.
 
 Vous pouvez bien entendu aller plus loin, en configurant le champ SPF d'un domaine bien spécifique ou en spécifiant une IPv6.
 
@@ -52,7 +52,7 @@ Cette authentification s'effectue par une clef DKIM à ajouter dans votre zone D
 
 Toujours dans le but d'optimiser l'envoi et d'éviter le blocage de vos e-mails, un *reverse IP* doit être configuré avec votre nom de domaine.
 
-Pour modifier votre *reverse IP* dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, allez dans la partie `Dédié`{.action} puis `IP`{.action}. Choisissez ensuite une IPv4, cliquez sur l'engrenage à droite puis sur `Modifier le reverse`{.action} :
+Pour modifier votre *reverse IP* dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, allez dans la partie `Dédié`{.action} puis `IP`{.action}. Choisissez ensuite une IPv4, cliquez sur l'engrenage à droite puis sur `Modifier le reverse`{.action} :
 
 ![Reverse IP](images/reverse_ip.png)
 

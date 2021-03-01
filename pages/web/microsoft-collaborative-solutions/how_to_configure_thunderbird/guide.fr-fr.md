@@ -45,7 +45,7 @@ Renseignez les champs affichés :
 
 - Vos nom et prénom : *Renseignez ici le nom d'affichage désiré.*
 - Adresse électronique : *Votre adresse e-mail complète.*
-- Mot de passe : *Le mot de passe défini dans votre [espace client](https://www.ovh.com/manager/web/login.html){.external} pour le compte Exchange.*
+- Mot de passe : *Le mot de passe défini dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)){.external} pour le compte Exchange.*
 - Retenir le mot de passe : *Vous devez cocher cette option.*
 
 Cliquez sur `Configuration manuelle`{.action} pour poursuivre les étapes d'installation.
@@ -60,7 +60,7 @@ Cliquez sur `Configuration manuelle`{.action} pour poursuivre les étapes d'inst
 >
 > Dans notre exemple, nous utilisons la mention serveur : ex**X**.mail.ovh.net.
 > 
-> Retrouvez l'information de votre serveur dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dans la rubrique `Web Cloud`{.action} puis `Microsoft`{.action}
+> Retrouvez l'information de votre serveur dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans la rubrique `Web Cloud`{.action} puis `Microsoft`{.action}
 >  dans la colonne de gauche. Sélectionnez `Exchange`{.action} puis votre plateforme. Le serveur est visible dans le cadre **Connexion** de l'onglet `Informations Générales`{.action}
 > 
 

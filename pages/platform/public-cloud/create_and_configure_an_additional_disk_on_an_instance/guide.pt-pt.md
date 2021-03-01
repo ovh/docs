@@ -20,13 +20,13 @@ Isto pode ser útil caso pretenda:
 
 ## Requisitos
 
-* acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 * uma [Instância de Public Cloud](https://www.ovh.pt/public-cloud/){.external} na sua conta OVHcloud.
 * acesso administrativo (root) à sua instância via SSH.
 
 ## Instruções
 
-Primeiro, faça login na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e clique no menu `Public Cloud.`{.action} Em seguida, clique em `Project`{.action} onde pretende criar a instância.
+Primeiro, faça login na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e clique no menu `Public Cloud.`{.action} Em seguida, clique em `Project`{.action} onde pretende criar a instância.
 
 Agora, clique no botão`Actions`{.action} e em seguida selecione `Create a volume`{.action}.
 
@@ -229,7 +229,7 @@ SAN Policy : Offline Shared
 ```
 DISKPART> san policy = OnlineAll
 
-DiskPart successfully changed the SAN policy for the current operating system . [/ Code]
+DiskPart successfully changed the SAN policy for the current operating system.
 
 Implementação da estratégia no disco adicional:
 [Code] DISKPART> list disk

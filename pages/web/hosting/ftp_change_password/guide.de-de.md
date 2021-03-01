@@ -17,13 +17,13 @@ Mit OVH Webhosting Angeboten verfügen Sie über einen Speicherplatz für das On
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 ## Vorgehensweise
 
 ### Schritt 1: Auf die Verwaltung der FTP-Benutzer zugreifen
 
-Loggen Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das gewünschte Hosting aus. Gehen Sie dann auf den Tab `FTP - SSH`{.action}.
+Loggen Sie sich in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das gewünschte Hosting aus. Gehen Sie dann auf den Tab `FTP - SSH`{.action}.
 
 Die angezeigte Tabelle enthält die auf Ihrem OVH Webhosting erstellten FTP-Benutzer. Mit diesen können Sie auf Ihren Speicherplatz zugreifen, um dort Ihre Website-Dateien online zu stellen. Bei der Installation Ihres Hostings wird automatisch ein Benutzer erstellt.
 

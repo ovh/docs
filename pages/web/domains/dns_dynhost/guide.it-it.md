@@ -16,7 +16,7 @@ La zona Domain Name System (DNS) contiene la configurazione di un dominio ed è 
 
 ## Prerequisiti
 
-- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso alla gestione del dominio dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Utilizzare i server DNS di OVH per la configurazione del dominio in questione
 - Il DynHost da creare non deve essere già presente nella zona DNS OVH del dominio come record di tipo A
 
@@ -24,14 +24,14 @@ La zona Domain Name System (DNS) contiene la configurazione di un dominio ed è 
 >
 > - Se il dominio non utilizza i server DNS di OVH, è necessario rivolgersi al provider che ne gestisce la configurazione per conoscere la procedura da seguire.
 > 
-> - Se il dominio è registrato in OVH, verifica che utilizzi la nostra configurazione accedendo allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} > `Server DNS`{.action} e selezionando il dominio interessato.
+> - Se il dominio è registrato in OVH, verifica che utilizzi la nostra configurazione accedendo allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} > `Server DNS`{.action} e selezionando il dominio interessato.
 >
 
 ## Procedura
 
 ### Step 1: crea un utente DynHost
 
-Il primo step consiste nel creare un utente Dynhost: questa operazione permetterà infatti di effettuare l’aggiornamento del record DNS dinamico. Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Domini`{.action} della colonna a sinistra. e clicca sulla scheda `DynHost`{.action}.
+Il primo step consiste nel creare un utente Dynhost: questa operazione permetterà infatti di effettuare l’aggiornamento del record DNS dinamico. Accedi allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Domini`{.action} della colonna a sinistra. e clicca sulla scheda `DynHost`{.action}.
 
 Clicca sul pulsante `Gestisci gli accessi`{.action} e poi su `Crea un identificativo`{.action}. Nella nuova finestra, inserisci le informazioni richieste:
 

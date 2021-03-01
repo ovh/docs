@@ -19,13 +19,13 @@ Deze handleiding legt uit hoe u een database in uw webhostingplan kunt creëren.
 
 - U moet beschikken over een [OVH-webhosting plan](https://www.ovh.nl/shared-hosting/){.external}.
 - U moet over de mogelijkheid om databases te maken als onderdeel van uw aanbod.
-- U moet toegang hebben om het betreffende webhostingplan vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} te beheren.
+- U moet toegang hebben om het betreffende webhostingplan vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} te beheren.
 
 ## Instructies
 
 ### Stap 1: Toegang krijgen tot het beheer van de webhosting-databases
 
-Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Ga naar het `Databases`{.action}-tabblad.
+Log eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, klik op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, kies dan het bijbehorende webhostingplan. Ga naar het `Databases`{.action}-tabblad.
 
 De getoonde tabel bevat alle e-mailadressen die zijn aangemaakt als onderdeel van uw webhostingplan.
 

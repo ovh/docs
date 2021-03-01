@@ -1,59 +1,70 @@
 ---
-title: 'Configurare un indirizzo IPv6 su un VPS'
+title: Configurare IPv6 su un server VPS
 slug: configurare-ipv6
-excerpt: 'Come utilizzare un IPv6 sul tuo server VPS OVHcloud'
+excerpt: Come configurare IPv6 sul tuo VPS OVHcloud
 section: 'Rete e IP'
 order: 1
 ---
 
-**Ultimo aggiornamento: 12/03/2020**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 18/01/2021**
 
 ## Obiettivo
 
-L’IPv6 è la versione più recente dell’*Internet Protocol* (IP). Tutti i VPS OVHcloud vengono consegnati con un indirizzo IPv4 e un indirizzo IPv6. Di default è configurato soltanto l’IPv4 ma, per diversi motivi, potrebbe essere necessario utilizzare anche l’IPv6.
+L’IPv6 è la versione più recente dell’*Internet Protocol*(IP). Ogni server VPS OVHcloud viene consegnato con un indirizzo IPv4 e un indirizzo IPv6. Di default è configurato soltanto l’IPv4 ma, Se devi configurare l'IPv6, devi farlo manualmente sul tuo sistema.
 
-**Questa guida ti mostra come abilitare l’IPv6 sul tuo server privato virtuale OVHcloud.**
+**Questa guida ti mostra come configurare l'IPv6 sul tuo server VPS OVHcloud utilizzando diversi metodi.**
 
 > [!warning]
 >
-> OVHcloud mette a disposizione i server, ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente. Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi relativamente ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida.
+> OVHcloud mette a disposizione i server,  ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente. Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più”.
 > 
 
 ## Prerequisiti
 
-- Disporre di un [VPS OVHcloud](https://www.ovhcloud.com/fr/vps/){.external}
-- Essere connesso al VPS in SSH (accesso root)
+- Disporre di un [server VPS OVHcloud](https://www.ovhcloud.com/it/vps/){.external}
+- Essere connesso al tuo VPS in SSH (accesso root) o tramite desktop remoto (Windows)
 - Possedere conoscenze base di rete
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o all'[API OVHcloud](https://api.ovh.com/console/).
 
 ## Procedura
 
-Configurare un IPv6 su un VPS è un’operazione che prevede diversi step, durante i quali potrebbe essere necessario eseguire comandi specifici o personalizzare i parametri del server. 
+> [!primary]
+>
+> Le configurazioni visibili in questa guida sono fornite a titolo d'esempio e possono variare in base al sistema operativo utilizzato sul tuo VPS.
+> 
+
+Configurare un IPv6 su un VPS è un’operazione che prevede diversi step, Ti verrà chiesto regolarmente di eseguire comandi o personalizzare la configurazione del tuo server. 
 
 Prima di iniziare ti consigliamo di consultare la tabella qui sotto, che contiene i termini utilizzati in questa guida e la loro descrizione: 
 
 |Termine|Descrizione|Esempio|
 |---|---|---|
-|YOUR_IPV6|Indirizzo IPv6 assegnato al servizio|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:yyyy|
-|IPv6_PREFIX|Prefisso o *netmask* del blocco IPv6 (in genere, 128)|2001:xxxx:xxxx:xxxx::/128|
-|IPv6_GATEWAY|Gateway del blocco IPv6|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:zzzz|
+|YOUR_IPV6|Indirizzo IPv6 assegnato al servizio.|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:yyyy|
+|IPv6_PREFIX|Prefisso (o *netmask*) del blocco IPv6, generalmente 128|2001:xxxx:xxxx:xxxx::/128|
+|IPv6_GATEWAY|Gateway del blocco IPv6.|2001:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:zzzz|
 
 ### Step 1: recupera le informazioni relative alla rete
 
-Per prima cosa, è necessario avere a disposizione l’indirizzo IPv6 e il gateway IPv6 assegnati al server. Esistono due modi per ottenere questa informazione:
+Per prima cosa, è necessario avere a disposizione l’indirizzo IPV6 e il gateway IPv6 assegnati al server. Esistono due modi per ottenere questa informazione:
 
-- [dallo Spazio Cliente OVHcloud](https://docs.ovh.com/it/vps/configurare-ipv6/#dallo-spazio-cliente-ovhcloud)
-- [via API](https://docs.ovh.com/it/vps/configurare-ipv6/#via-api)
+- [dallo Spazio Cliente OVH](#viacontrolpanel)
+- [via API](#viaapi)
 
-#### Dallo Spazio Cliente OVHcloud
+#### Dallo Spazio Cliente OVH <a name="viacontrolpanel"></a>
 
-Accedi all’area `Cloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona il tuo VPS nella sezione`Bare Metal Cloud`{.action} della colonna a sinistra. Assicurati di essere posizionato nella scheda `Home`{.action}: nel riquadro `IP` è possibile visualizzare l’indirizzo IP e il gateway IPv6 assegnato al server. Una volta recuperate queste informazioni è possibile passare allo [Step 2: applica la configurazione IPv6](https://docs.ovh.com/it/vps/configurare-ipv6/#step-2-applica-la-configurazione-ipv6_1){.external}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Bare Metal Cloud`{.action}. Seleziona il tuo servizio cliccando sul `VPS`{.action} nel menu a sinistra. Assicurati di essere posizionato nella scheda `Home`{.action}:
+
+nel riquadro `IP` è possibile visualizzare l’indirizzo IP e il gateway IPv6 assegnato al server. Una volta recuperate queste informazioni è possibile passare allo [Step 2: applica la configurazione IPv6](#applyipv6).
 
 ![configureipv6](images/configure-ipv6-step1.png){.thumbnail}
 
-#### Via API
+#### Tramite le API OVHcloud <a name="viaapi"></a>
 
-Accedi alla pagina <https://api.ovh.com/console/> con l’identificativo cliente OVHcloud e relativa password ed esegui le chiamate API indicate di seguito.
+Accedi al sito <https://api.ovh.com/console/> e inserisci il tuo identificativo OVHcloud. ed esegui le chiamate API indicate di seguito.
 
 Per ottenere l’indirizzo IPv6 assegnato al VPS:
 
@@ -69,20 +80,20 @@ Per ottenere il gateway IPv6 assegnato al VPS:
 > @api {GET} /vps/{serviceName}/ips/{ipAddress}
 >
 
-Una volta recuperate queste informazioni è possibile passare allo [Step 2: applica la configurazione IPv6](https://docs.ovh.com/it/vps/configurare-ipv6/#step-2-applica-la-configurazione-ipv6_1){.external}.
+Dopo aver recuperato gli indirizzi, continua allo Step 2: [Applica la configurazione IPv6](#applyipv6).
 
-### Step 2: applica la configurazione IPv6
+### Step 2: applicare la configurazione IPv6 <a name="applyipv6"></a>
 
-Una volta che disponi dei dati necessari per la configurazione dell’IPv6, accedi al VPS in SSH. Se hai bisogno di aiuto per questa operazione, consulta la guida [Introduzione a SSH](https://docs.ovh.com/it/dedicated/introduzione-ssh/){.external}.
+Una volta che disponi dei dati necessari per la configurazione dell’IPv6, accedi al VPS in SSH. Se hai bisogno di aiuto per questa operazione, consulta la guida [Introduzione a SSH](../../dedicated/introduzione-ssh/){.external}
 
 La configurazione IPv6 può essere applicata in diversi modi. Prosegui nella lettura di questa guida in base alle tue esigenze:
 
-- [Applicazione non persistente](https://docs.ovh.com/it/vps/configurare-ipv6/#applicazione-non-persistente)
-- [Applicazione persistente su Debian e derivati (Ubuntu, Crunchbang, SteamOS...)](https://docs.ovh.com/it/vps/configurare-ipv6/#applicazione-persistente-su-debian-e-derivati-ubuntu-crunchbang-steamos)
-- [Applicazione persistente su Red Hat e derivati (CentOS, ClearOS...)](https://docs.ovh.com/it/vps/configurare-ipv6/#applicazione-persistente-su-redhat-e-derivati-centos-clearos_1)
-- [Applicazione persistente su Windows Server](https://docs.ovh.com/it/vps/configurare-ipv6/#applicazione-persistente-su-windows-server)
+- [Applicazione non persistente](#nonpersistent)
+- [Applicazione persistente su Debian e derivati (Ubuntu, Crunchbang, SteamOS...)](#persistentdebian)
+- [Applicazione persistente su Red Hat e derivati (CentOS, ClearOS...)](#persistentredhat)
+- [Applicazione persistente su Windows Server](#persistentwindows)
 
-#### Applicazione non persistente
+#### Applicazione non persistente <a name="nonpersistent"></a>
 
 > [!warning]
 >
@@ -91,7 +102,7 @@ La configurazione IPv6 può essere applicata in diversi modi. Prosegui nella let
 
 Una volta effettuato l’accesso al VPS in SSH, esegui questi comandi ricordandoti di personalizzare:
 
-- i valori generici (*YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) con i dati recuperati precedentemente
+- i valori generici (*YOUR_IPV6*,*IPV6_PREFIX* e *IPV6_GATEWAY*) con i dati recuperati precedentemente
 - l’interfaccia di rete, se quella utilizzata non è **eth0**
 
 ```bash
@@ -100,50 +111,42 @@ ip -6 route add IPV6_GATEWAY dev eth0
 ip -6 route add default via IPV6_GATEWAY dev eth0
 ```
 
-#### Applicazione persistente su Debian e derivati (Ubuntu, Crunchbang, SteamOS...)
-
-In base al sistema operativo installato sul server, la configurazione di rete può essere effettuata in due diversi modi:
-
-- **per Debian 8 e Ubuntu 16.04 (e versioni inferiori)**, utilizza il metodo basato sul file <b>interfaces</b>
-
-- **per Debian 9 e Ubuntu 17.04 (e versioni superiori)**, utilizza il metodo basato sulla funzionalità <b>Netplan</b>
-
-In alcuni casi (in particolare con Debian 9), è possibile che il metodo descritto in questa guida non sia applicabile.  Per verificare la procedura disponibile, controlla la configurazione attiva sul tuo sistema. Se necessario, consulta la pagina <https://netplan.io/> per ulteriori informazioni.
+#### Applicazione persistente su Debian e derivati (Ubuntu, Crunchbang, SteamOS...) <a name="persistentdebian"></a>
 
 > [!warning]
 >
-> Prima di apportare qualsiasi modifica al file di configurazione, ricordati di effettuarne un backup: in caso di errore, potrai facilmente annullare l’operazione.
-> 
+> Prima di modificare un file di configurazione, crea sempre un backup dell'originale in caso di problemi.
+>
 
-A questo punto prosegui nella lettura di questa guida in base all’operazione che vuoi effettuare:
+Esistono due metodi per configurare la tua rete in base al sistema operativo installato sul tuo server:
 
-- [Configurazione del file “interfaces”](https://docs.ovh.com/it/vps/configurare-ipv6/#configurazione-del-file-interfaces)
-- [Configurazione tramite la funzionalità Netplan](https://docs.ovh.com/it/vps/configurare-ipv6/#configurazione-tramite-la-funzionalita-netplan)
+- **per Debian 8 e inferiore, Ubuntu 16.04 e inferiore**\: utilizza il [metodo basato sul file *interfaces*](#interfaces)
 
-#####  Configurazione del file “interfaces”
+- **per Ubuntu 17.04 e versioni successive**\: utilizza il [metodo basato sulla funzione *Netplan*](#netplan).
 
-In base alla generazione del sistema operativo installato sul server, sarà necessario modificare con i privilegi *sudo* uno di questi file:
+In alcuni casi, il metodo da utilizzare potrebbe non essere quello indicato sopra. Verifica il metodo attivo nel tuo caso e, per verificarlo, accedi al tuo sistema.  Se necessario, consulta il sito <https://netplan.io/> per maggiori informazioni.
 
-- `/etc/network/interfaces`
-- `/etc/network/interfaces.d/50-cloud-int.cfg`
+> [!primary]
+>
+> Presta particolare attenzione, i nomi esatti dei file possono variare.
+>
 
-Prima di iniziare ti consigliamo di effettuare un backup dei file di configurazione eseguendo, ad esempio, questo comando:
+##### Configurazione dei file *interfaces* <a name="interfaces"></a>
 
-```bash
-cp /etc/network/interfaces /etc/network/interfaces.back
-```
-
-Per annullare l’operazione e ripristinare lo stato precedente, esegui i comandi:
+Il metodo più frequente consigliato è creare un file di configurazione nella directory `/etc/network/interfaces.d/`:
 
 ```bash
-rm -f /etc/network/interfaces
-cp /etc/network/interfaces /etc/network/interfaces
+nano /etc/network/interfaces.d/51-cloud-init-ipv6.cfg
 ```
 
-A questo punto tutto è pronto. Per prima cosa aggiungi le righe qui sotto al file di configurazione. Ricordati di sostituire i valori generici (*YOUR_IPV6*, *IPV6_PREFIX* e*IPV6_GATEWAY*) con le informazioni corrispondenti e l’interfaccia di rete se quella utilizzata non è **eth0**.
+In questo modo è possibile separare la configurazione IPv6 e ripristinare facilmente le modifiche in caso di errore.
+
+Aggiungi queste righe al file. Sostituisci i valori generici (cioè *YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) e l'interfaccia di rete (se il tuo server non utilizza **eth0**) con i valori personalizzati.
 
 ```
+auto eth0
 iface eth0 inet6 static
+mtu 1500
 address YOUR_IPV6
 netmask IPV6_PREFIX
 post-up /sbin/ip -6 route add IPV6_GATEWAY dev eth0
@@ -152,15 +155,37 @@ pre-down /sbin/ip -6 route del default via IPV6_GATEWAY dev eth0
 pre-down /sbin/ip -6 route del IPV6_GATEWAY dev eth0
 ```
 
-Riavvia il servizio di rete con il comando:
+Riavvia il tuo servizio di rete con uno dei comandi seguenti:
 
 ```bash
 service networking restart
 ```
 
-#####  Configurazione tramite la funzionalità Netplan
+```bash
+systemctl restart networking
+```
 
-I file di configurazione di rete si trovano nella directory `/etc/netplan/`. Ti ricordiamo che, prima di iniziare, è preferibile effettuarne un backup. In questo caso copia il file `50-cloud-init.yaml` con i comandi:
+Puoi anche aggiungere la configurazione di cui sopra a uno dei file seguenti (con i privilegi *sudo*), a seconda della generazione del sistema operativo installato sul server:
+
+- il file `/etc/network/interfaces`
+- il file `/etc/network/interfaces.d/50-cloud-init.cfg`
+
+Ti consigliamo di salvare il file di configurazione più adatto. Ad esempio, esegui questo comando:
+
+```bash
+cp /etc/network/interfaces /etc/network/interfaces.back
+```
+
+Puoi annullare le modifiche utilizzando questi comandi:
+
+```bash
+rm -f /etc/network/interfaces
+cp /etc/network/interfaces /etc/network/interfaces
+```
+
+##### Configurazione tramite Netplan <a name="netplan"></a>
+
+I file di configurazione di rete si trovano nella directory `/etc/netplan/`. Ti consigliamo di iniziare effettuando un backup del file di configurazione più adatto. In questo caso, copia il file `50-cloud-init.yaml` con questi comandi:
 
 ```bash
 cd /etc/netplan/
@@ -168,21 +193,21 @@ mkdir backup
 cp 50-cloud-init.yaml backup/50-cloud-init.yaml
 ```
 
-Per annullare l’operazione e ripristinare lo stato precedente, esegui i comandi:
+Puoi annullare le modifiche utilizzando questi comandi:
 
 ```bash
 rm -f /etc/netplan/50-cloud-init.yaml
 cp /etc/netplan/backup/50-cloud-init.yaml /etc/netplan/50-cloud-init.yaml
 ```
 
-A questo punto tutto è pronto. Per prima cosa crea una copia del file IPv4: 
+Prima di modificarlo, crea una copia del file di configurazione IPv6:
 
 ```bash
 cd /etc/netplan
 cp 50-cloud-init.yaml 51-cloud-init-ipv6.yaml
 ```
 
-Poi modifica il file `51-cloud-init-ipv6.yaml` in modo che contenga la configurazione IPv6 del tuo server. Ricordati di sostituire i valori generici (*YOUR_IPV6*, *IPV6_PREFIX* e*IPV6_GATEWAY*) con le informazioni corrispondenti e l’interfaccia di rete se quella utilizzata non è **eth0**.
+Modificare il file `51-cloud-init-ipv6.yaml` aggiungendo la configurazione IPv6 del tuo server. Sostituisci i valori generici (cioè *YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) e l'interfaccia di rete (se il tuo server non utilizza **eth0**) con i valori personalizzati.
 
 ```yaml
 network:
@@ -195,28 +220,31 @@ network:
             addresses:
               - "YOUR_IPV6/IPv6_PREFIX"
             gateway6: "IPv6_GATEWAY"
+            routes:
+              - to: "IPv6_GATEWAY"
+                scope: link
 ```
 
 > [!warning]
 >
-> Al momento della scrittura del file è fondamentale rispettare l’allineamento degli argomenti come nell’esempio. Non utilizzare il tasto TAB per aggiungere spazi, ma la barra spaziatrice.
+> È importante rispettare l'allineamento di ciascun elemento del file, come indicato nell'esempio di cui sopra. Non utilizzare il tasto di tabulazione per creare la tua spaziatura. E' necessario solo il tasto spazio.
 >
 
-Verifica la configurazione con il comando:
+Per testare la tua configurazione utilizza questo comando:
 
 ```bash
 netplan try
 ```
 
-Se è corretta, applicala utilizzando il comando:
+Se è corretta, applicala utilizzando il seguente comando:
 
 ```bash
 netplan apply
 ```
 
-#### Applicazione persistente su Red Hat e derivati (CentOS, ClearOS...)
+#### Applicazione persistente su Red Hat e suoi derivati (CentOS, ClearOS, ecc...) <a name="persistentredhat"></a>
 
-I file di configurazione di rete si trovano nella directory `/etc/sysconfig/network-scripts/`. Ti ricordiamo che, prima di iniziare, è preferibile effettuarne un backup. In questo caso, copia il file `ifcfg-eth0` con questi comandi, personalizzando l’interfaccia di rete se quella utilizzata non è **eth0**:
+I file di configurazione di rete si trovano nella directory `/etc/sysconfig/network-scripts/`. Ti consigliamo di iniziare effettuando un backup del file di configurazione più adatto. Ad esempio, copia il file `ifcfg-eth0` con i comandi seguenti. Ricordati di sostituire **eth0** con la tua interfaccia reale, se necessario.
 
 ```bash
 cd /etc/sysconfig/network-scripts/
@@ -224,14 +252,14 @@ mkdir backup
 cp ifcfg-eth0 backup/ifcfg-eth0
 ```
 
-Per annullare l’operazione e ripristinare lo stato precedente, esegui i comandi:
+Puoi annullare le modifiche utilizzando questi comandi:
 
 ```bash
 rm -f /etc/sysconfig/network-scripts/ifcfg-eth0
 cp /etc/sysconfig/network-scripts/backup/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0
 ```
 
-A questo punto tutto è pronto. Per prima cosa aggiungi queste righe al file di configurazione, sostituendo i valori generici (*YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) con le informazioni corrispondenti:
+Modifica il file `ifcfg-eth0` aggiungendo la configurazione IPv6 del tuo server. Sostituisci i valori generici (*YOUR_IPV6*, *IPV6_PREFIX* e *IPV6_GATEWAY*) con i valori personalizzati.
 
 ```
 IPV6INIT=yes
@@ -239,48 +267,57 @@ IPV6ADDR=YOUR_IPV6/IPV6_PREFIX
 IPV6_DEFAULTGW=IPV6_GATEWAY
 ```
 
-Utilizza i privilegi `sudo` per creare un file che contenga le rotte predefinite:
+**Su CentOS 7, è necessario creare un file di routing in aggiunta agli step seguenti:**
+
+- Crea un file (con i privilegi *sudo*) che indica gli indirizzi IPv6 predefiniti:
 
 ```bash
 # touch /etc/sysconfig/network-scripts/route6-eth0
 ```
 
-Personalizzalo inserendo il valore corrispondente a *IPV6_GATEWAY* e, se necessario, all’interfaccia **eth0**. 
+- Modifica il file e aggiungi le righe qui sotto. Sostituisci i valori generici (*IPV6_GATEWAY* e **eth0**, se necessario) con i valori personalizzati.
 
 ```
 IPV6_GATEWAY dev eth0
 default via IPV6_GATEWAY
 ```
 
-Riavvia il servizio di rete per consentire al sistema di applicare la nuova configurazione:
+Riavvia il servizio di rete per consentire al sistema di applicare la nuova configurazione con uno dei comandi seguenti:
 
 ```bash
-service network restart
+service networking restart
 ```
 
-#### Applicazione persistente su Windows Server
+```bash
+systemctl restart networking
+```
 
-Di default, su Windows Server l’IPv6 non è configurato. Per attivarlo apri il `Pannello di controllo`, clicca su `Visualizza attività e stato della rete`{.action} in corrispondenza della voce **Rete e Internet** e poi su `Modifica impostazioni scheda`{.action}.
+
+#### Applicazione persistente su Windows Server <a name="persistentwindows"></a>
+
+Di default, IPv6 non è configurato sui server Windows. Per attivarlo, apri il `Pannello di configurazione`{.action} e clicca su `Visualizza lo stato e le operazioni della rete`{.action}, poi su `Modifica le impostazioni della scheda`{.action}.
 
 ![configureipv6](images/configure-ipv6-step2.png){.thumbnail}
 
-Apri lo stato della connessione `Ethernet` e clicca su `Proprietà`{.action}. Nella nuova finestra seleziona `Protocollo Internet versione 6 (TCP/IPv6)` e clicca sul pulsante `Proprietà`{.action}.
+Clicca su `Ethernet`{.action} per aprire le impostazioni e clicca sul pulsante `Proprietà`{.action} per visualizzare `Proprietà Ethernet`.
+
+Seleziona `Protocol Internet version 6 (TCP/IPv6)`{.action} e clicca sul pulsante `Proprietà`{.action}.
 
 ![configureipv6](images/configure-ipv6-step3.png){.thumbnail}
 
-Nella nuova finestra seleziona l’opzione `Utilizza l’indirizzo IPv6 seguente:`{.action} e completa i campi sottostanti con le informazioni recuperate nello Step 1 di questa guida. 
+Nella finestra Proprietà IPv6 seleziona `Utilizza questo indirizzo IPv6`. Inserisci gli indirizzi IP recuperati nel primo step.
 
-Nei campi disponibili in corrispondenza della voce `Utilizza i seguenti indirizzi server DNS`{.action} è possibile inserire i _resolver DNS IPv6_ che intendi utilizzare. Questa operazione è facoltativa nel caso in cui i _resolver_ indicati nella configurazione IPv4 svolgano già questa funzione.
+Puoi anche inserire le risoluzioni DNS IPv6 che preferisci `utilizzando questo` indirizzo server DNS. Ciò non è obbligatorio se i resolver DNS della configurazione IPv4 sono già operativi.
 
-Una volta completate le informazioni, seleziona la casella `Convalida impostazioni all’uscita` e clicca su `OK`{.action} per applicare le modifiche. Se il gateway inserito non si trova sulla stessa sottorete IPv6 (ad esempio, /128 e /64), potrebbe comparire un messaggio di errore. In tal caso dovrebbe essere possibile ignorare il messaggio e proseguire allo step successivo.
+Seleziona la casella `Conferma le impostazioni lasciando` e clicca su `OK`{.action} per confermare le modifiche. Se il gateway specificato non si trova sulla stessa sottorete IPv6 (ad esempio, /128 e /64), può essere visualizzato un messaggio di errore. Puoi ignorare questo messaggio e passare allo step successivo.
 
 ![configureipv6](images/configure-ipv6-step4.png){.thumbnail}
 
-### Step 3: verifica la configurazione e testa la connessione
+### Step 3: Verifica la configurazione e prova la connessione.
 
-In base al sistema operativo installato, per verificare la correttezza della configurazione sono disponibili diversi comandi. 
+A seconda del sistema operativo, è possibile verificare la funzionalità tramite diversi comandi.
 
-- **Nei sistemi Linux** è possibile applicare uno di questi due esempi, ricordando di personalizzare il valore dell’interfaccia di rete se quella utilizzata non è **eth0**.
+- **Per un impianto GNU/Linux**, ecco due esempi per l'interfaccia **eth0** (da adattare se necessario):
 
 ```bash
 ip -6 addr show eth0
@@ -301,17 +338,17 @@ eth0      Link encap:Ethernet  HWaddr ab:cd:ef:gf:ij:kl
           [...]
 ```
 
-Per verificare la connessione, esegui il comando: 
+Per verificare la connessione, utilizza il seguente comando:
 
 ```bash
 ping6 proof.ovh.net
 ```
 
-- **Nei sistemi Windows** utilizza questi comandi:
+- **Per un sistema Windows**, utilizza il comando:
 
 ```
 ipconfig
- 
+
 Windows IP Configuration
 
 Ethernet adapter Ethernet:
@@ -325,24 +362,25 @@ Ethernet adapter Ethernet:
                                        51.xxx.xxx.y
 ```
 
-Per verificare la connessione, esegui il comando: 
+Per verificare la connessione, utilizza il seguente comando:
 
 ```
 ping -6 proof.ovh.net
 ```
 
-La connessione può essere testata anche verso un altro server remoto ma, affinché l’operazione vada a buon fine, è necessario che sulla macchina sia attivo l’IPv6. 
+Puoi anche testare la connessione a un altro server remoto. Per il corretto funzionamento dell'operazione è tuttavia necessario che l'IPv6 sia attivo sul server remoto.
 
 > [!primary]
 >
-> Se l’IPv6 non dovesse funzionare sul server, è possibile che sia necessario effettuare ulteriori azioni, ad esempio:
+> Se, nonostante queste modifiche, IPv6 non sembra funzionare sul tuo server, è possibile (in rari casi) che sia necessario apportare modifiche aggiuntive. In questo caso, effettua le seguenti operazioni:
 >
-> - in base al sistema operativo, prova a modificare il prefisso (o *netmask*) del tuo IP da /128 a /64 per includere il gateway IPv6 nella tua sottorete
+> - In base al sistema operativo, prova a sostituire il prefisso (o *netmask*) del tuo indirizzo IP con /128 e /64. Includerà il gateway IPv6 nella tua sottorete.
 >
-> - oltre al riavvio del servizio di rete, per l’applicazione della configurazione IPv6 potrebbe essere necessario anche un reboot del server
->
+> - Oltre a riavviare il servizio di rete, potrebbe essere necessario un riavvio del server per completare l'elaborazione della configurazione IPv6.
+> 
+> - In Windows, verifica che il firewall autorizzi le richieste ICMP per IPv6.
 
-### Step 4: disattiva la gestione della rete tramite cloud-init
+### Step 4: Disattiva la gestione della rete Cloud-init (in opzione)
 
 > [!primary]
 >
@@ -353,15 +391,18 @@ Cloud-init è un pacchetto installato di default sulle istanze VPS. È un framew
 
 In base al sistema operativo, cloud-init sarà in grado di gestire la rete, l’hostname, il file <b>resolv.conf</b> e il partizionamento automatico dell’hard disk in caso di upgrade.
 
-Nelle distribuzioni più recenti (come CentOS, Debian 9, Ubuntu 16.x e versioni superiori), di default cloud.init reinizializzerà automaticamente i parametri di rete al riavvio del server.
+Nelle distribuzioni più recenti (come CentOS, Debian 9, Ubuntu 16.x e versioni successive), la configurazione di default di cloud.init può a volte reinizializzare automaticamente la configurazione di rete all'avvio del server.
 
-Per mantenere il controllo su questa configurazione è necessario disabilitare la gestione automatica della rete per **cloud.init** tramite un comando che permetterà di creare un file `/etc/cloud/cloud.cfg.d/98-disable-network-config.cf` contenente il valore `network: {config: disabled}`:
+In casi specifici di utilizzo, ti consigliamo di evitare la reinizializzazione disattivando la gestione automatica della rete in Cloud-Init. tramite un comando che permetterà di creare un file `/etc/cloud/cloud.cfg.d/98-disable-network-config.cf` contenente il valore `network: {config: disabled}`:
 
 ```bash
 echo "network: {config: disabled}" > /etc/cloud/cloud.cfg.d/98-disable-network-config.cfg
 ```
 
-Riavvia il server per applicare le modifiche. 
+> [!warning]
+>
+> Riavvia il tuo server affinché l'operazione sia presa in carico. 
+>
 
 Per ripristinare la gestione automatica del server tramite cloud-Init, rimuovi il file creato o spostalo in un’altra cartella.
 

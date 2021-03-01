@@ -17,7 +17,7 @@ A Cloud Web oferece a possibilidade de construir um projeto em diferentes lingua
 ## Requisitos
 
 - Ter um serviço de alojamento [Cloud Web](https://www.ovh.pt/alojamento-partilhado/cloud-web.xml).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), secção `Web Cloud`{.action}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), secção `Web Cloud`{.action}.
 
 ## Instruções
 
@@ -29,7 +29,7 @@ Depois de escolher o ou os motores de execução que pretende utilizar, pode efe
 
 ### Etapa 1: aceder à gestão dos motores de execução
 
-Para aceder aos motores de execução do seu alojamento Cloud Web, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique em `Alojamentos`{.action} na barra de serviços à esquerda e, em seguida, selecione o alojamento Cloud Web correspondente. Por fim, clique no separador `Motores de execução`{.action}.
+Para aceder aos motores de execução do seu alojamento Cloud Web, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Alojamentos`{.action} na barra de serviços à esquerda e, em seguida, selecione o alojamento Cloud Web correspondente. Por fim, clique no separador `Motores de execução`{.action}.
 
 A tabela que aparece indica os motores de execução adicionados atualmente ao seu alojamento Cloud Web. Ao instalar um alojamento, um motor será automaticamente criado.
 

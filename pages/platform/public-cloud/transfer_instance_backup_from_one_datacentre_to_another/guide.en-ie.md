@@ -10,7 +10,7 @@ section: 'Resource management'
 
 ## Objective
 
-A situation may arise where you need to move your [Public Cloud Instance](https://www.ovh.ie/public-cloud/instances/){.external} from one datacentre to another, either because you would prefer to move to a newly available datacentre or because you want to migrate from OVH Labs to Public Cloud. 
+A situation may arise where you need to move your [Public Cloud Instance](https://www.ovhcloud.com/en-ie/public-cloud/){.external} from one datacentre to another, either because you would prefer to move to a newly available datacentre or because you want to migrate from OVH Labs to Public Cloud. 
 
 **This guide will show you how to transfer an Instance backup from one datacentre to another while preserving the configuration and state of the Instance.**
 
@@ -22,7 +22,7 @@ Before following these steps, it's recommended that you first complete this guid
 
 You will also need the following:
 
-* a [Public Cloud Instance](https://www.ovh.ie/public-cloud/instances/){.external} in your OVH account
+* a [Public Cloud Instance](https://www.ovhcloud.com/en-ie/public-cloud/){.external} in your OVH account
 * administrative (root) access to your datacentre via SSH
 
 > [!primary]
@@ -143,5 +143,4 @@ To create an Instance from your backup, use the backup ID as the image with this
 
 ## Go further
 
-* Join our community of users on <https://community.ovh.com/en/>.
-* [Transfer a volume backup from one datacentre to another](https://docs.ovh.com/ie/en/public-cloud/transfer_volume_backup_from_one_datacentre_to_another/){.external}
+Join our community of users on <https://community.ovh.com/en/>.

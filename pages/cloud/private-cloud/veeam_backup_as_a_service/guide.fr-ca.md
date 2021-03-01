@@ -20,7 +20,7 @@ Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située 
 ## Prérequis
 
 * Posséder une offre [Hosted Private cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/).
-* [Donner le droit « Ajout de ressources »](../changer-les-droits-d-un-utilisateur/) pour le datacenter concerné à l'utilisateur depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager).
+* [Donner le droit « Ajout de ressources »](../changer-les-droits-d-un-utilisateur/) pour le datacenter concerné à l'utilisateur depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 * Être connecté au client vSphere.
 * Avoir activé la [haute disponibilité (HA)](../vmware-ha-high-availability/).
 * Avoir activé le [Distributed Ressource Scheduler (DRS)](../vmware-drs-distributed-ressource-scheduler-new/) sur le ou les clusters.
@@ -35,7 +35,7 @@ Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située 
 
 ### Activer le service
 
-La première étape consiste à activer le service depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager). Pour cela, rendez-vous dans la partie `Private Cloud`{.action} de l'onglet `Hosted Private Cloud`{.action}. Cliquez sur l'infrastructure vSphere concernée, puis sur le datacenter souhaité. Choisissez l'onglet `Backup`{.action}.
+La première étape consiste à activer le service depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Pour cela, rendez-vous dans la partie `Private Cloud`{.action} de l'onglet `Hosted Private Cloud`{.action}. Cliquez sur l'infrastructure vSphere concernée, puis sur le datacenter souhaité. Choisissez l'onglet `Backup`{.action}.
 
 ![Activer le backup](images/veeam-managed-controlp_new.png){.thumbnail}
 

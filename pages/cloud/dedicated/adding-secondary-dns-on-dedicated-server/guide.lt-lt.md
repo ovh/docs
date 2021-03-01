@@ -17,8 +17,8 @@ If you want to use your [Dedicated Server](https://www.ovh.lt/dedikuoti_serveria
 ## Requirements
 
 * a [Dedicated Server](https://www.ovh.lt/dedikuoti_serveriai/){.external} 
-* a [domain](https://www.ovh.lt/domenai/){.external} in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
-* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* a [domain](https://www.ovh.lt/domenai/){.external} in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
+* access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 
 ## Instructions
@@ -43,7 +43,7 @@ You will now see a message instructing you to create a TXT record for your domai
 
 ### Verify your domain
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click the `Web Cloud`{.action} menu. Then click `Domains`{.action} to expand the list of domains:
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} and click the `Web Cloud`{.action} menu. Then click `Domains`{.action} to expand the list of domains:
 
 ![Domain verification](images/domain-verification-01.png){.thumbnail}
 

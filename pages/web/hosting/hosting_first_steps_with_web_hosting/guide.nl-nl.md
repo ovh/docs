@@ -20,7 +20,7 @@ U heeft onlangs een webhosting plan aangeschaft om uw website te kunnen maken. M
 - U moet beschikken over een [OVH-webhosting plan](https://www.ovh.nl/shared-hosting/){.external}.
 - U moet een e-mail hebben ontvangen met daarin de bevestiging dat uw webhosting is geïnstalleerd.
 - U moet beschikken over een [domeinnaam](https://www.ovh.nl/domains/){.external}, wat het adres zal worden waarop uw website te vinden zal zijn.
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 ## Instructie
 
@@ -48,7 +48,7 @@ Als uw project eenmaal precies is vastgesteld, hoeft het alleen nog maar te word
 
 Deze oplossing maakt gebruik van de 1-klik-modules van OVH, een tool waarmee snel en eenvoudig een CMS kan worden geïnstalleerd. OVH installeert de website en geeft u uw gebruikersgegevens door.
 
-Om de installatie van de OVH-module mogelijk te maken, dient u ervoor te zorgen dat de installatiedirectory leeg is (dit is het geval als u nog niet bent ingelogd op uw opslagruimte). Om de installatie van de 1-klik-module te realiseren, logt u in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Ga in het linkermenu naar `Hosting`{.action} en vervolgens naar de naam van de webhosting die u hebt besteld. Klik vervolgens in de tab `1-klik-modules`{.action} op de knop `Module toevoegen`{.action}.
+Om de installatie van de OVH-module mogelijk te maken, dient u ervoor te zorgen dat de installatiedirectory leeg is (dit is het geval als u nog niet bent ingelogd op uw opslagruimte). Om de installatie van de 1-klik-module te realiseren, logt u in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Ga in het linkermenu naar `Hosting`{.action} en vervolgens naar de naam van de webhosting die u hebt besteld. Klik vervolgens in de tab `1-klik-modules`{.action} op de knop `Module toevoegen`{.action}.
 
 ![Toegang tot 1-klik-modules](images/access_to_the_1_click_modules_section.png){/thumbnail}
 
@@ -67,7 +67,7 @@ Om de installatie van de OVH-module mogelijk te kunnen maken, dient u zich ervan
 - de installatie-directory leeg is (wat het geval is wanneer u nog niet bent ingelogd op uw opslagruimte);
 - er al een database is aangemaakt op uw hosting (ga naar de tab `Database`{.action} en vervolgens naar `Een database aanmaken`{.action} om de handeling te verrichten).
 
-Om de database aan te maken, logt u in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Ga in het linkermenu naar `Hosting`{.action} en vervolgens naar de naam van de webhosting die u heeft besteld. Klik in de tab `Database`{.action} op de knop `Database aanmaken`{.action}. Vul de gevraagde gegevens in en wacht terwijl de installatie wordt uitgevoerd.
+Om de database aan te maken, logt u in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Ga in het linkermenu naar `Hosting`{.action} en vervolgens naar de naam van de webhosting die u heeft besteld. Klik in de tab `Database`{.action} op de knop `Database aanmaken`{.action}. Vul de gevraagde gegevens in en wacht terwijl de installatie wordt uitgevoerd.
 
 ![Toegang tot 1-klik-modules](images/create_a_database.png){/thumbnail}
 
@@ -87,7 +87,7 @@ Er bestaat geen universeel stappenplan omdat de websites behoorlijk van elkaar k
 
 ### Stap 3: Creëer uw e-mailadressen 
 
-Deze stap is niet verplicht als u geen gebruik wenst te maken van de e-mailadressen die zijn inbegrepen bij uw [webhosting](https://www.ovh.nl/shared-hosting/){.external}. Om één of meer e-mailadressen aan te maken, dient u te zijn ingelogd op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Ga in het menu aan de linkerkant naar het gedeelte `E-mails`{.action}, en klik vervolgens op de naam van de webhosting die u hebt besteld. Klik vervolgens in de tab `E-mails`{.action} op de knop `Maak een e-mailadres aan`{.action}.
+Deze stap is niet verplicht als u geen gebruik wenst te maken van de e-mailadressen die zijn inbegrepen bij uw [webhosting](https://www.ovh.nl/shared-hosting/){.external}. Om één of meer e-mailadressen aan te maken, dient u te zijn ingelogd op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Ga in het menu aan de linkerkant naar het gedeelte `E-mails`{.action}, en klik vervolgens op de naam van de webhosting die u hebt besteld. Klik vervolgens in de tab `E-mails`{.action} op de knop `Maak een e-mailadres aan`{.action}.
 
 ![Een e-mailadres aanmaken](images/create_an_email_address.png){/thumbnail}
 
@@ -109,13 +109,13 @@ Er zijn meerdere DNS-velden eigen aan OVH. We gaan vooral naar twee van hen in h
 
 - **Veld A, voor de website**
 
-Om veld A te verifiëren dat u moet gebruiken in de DNS-zone van uw domein, logt u in op uw [OVH-Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Ga in het menu aan de linkerkant naar `Hostings`{.action} en klik op de naam van de webhosting die u hebt besteld. In de tab `Algemene informatie`{.action}, ziet u het IP-adres naast de "IPv4".
+Om veld A te verifiëren dat u moet gebruiken in de DNS-zone van uw domein, logt u in op uw [OVH-Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Ga in het menu aan de linkerkant naar `Hostings`{.action} en klik op de naam van de webhosting die u hebt besteld. In de tab `Algemene informatie`{.action}, ziet u het IP-adres naast de "IPv4".
 
 ![Veld A wijzigen A](images/know_the_OVH_A_records.png){/thumbnail}{/thumbnail}
 
 - **De MX-velden, voor de e-mails**
 
-Om de MX-velden te verifiëren die u moet gebruiken in de zone van uw domein, logt u in op [OVH-klantenaccount](https://www.ovh.com/auth/?action=gotomanager){.external}{.external}. Ga in het menu aan de linkerkant naar `E-mails`{.action} en klik op de naam van de webhosting die u hebt besteld. In de tab `Algemene informatie`{.action} ziet u de informatie naast het "MX-veld". Deze kunnen verschillen van dienst tot dienst, afhangende van het DNS-filter dat u heeft toegepast.
+Om de MX-velden te verifiëren die u moet gebruiken in de zone van uw domein, logt u in op [OVH-klantenaccount](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}{.external}. Ga in het menu aan de linkerkant naar `E-mails`{.action} en klik op de naam van de webhosting die u hebt besteld. In de tab `Algemene informatie`{.action} ziet u de informatie naast het "MX-veld". Deze kunnen verschillen van dienst tot dienst, afhangende van het DNS-filter dat u heeft toegepast.
 
 ![ MX-velden wijzigen](images/know_the_OVH_MX_records.png){/thumbnail}
 
@@ -125,7 +125,7 @@ Nu u de DNS-records kent die eigen zijn aan uw OVH-webhosting, moet u ze verifi�
 
 - **Een domeinnaam bestellen met een OVH-webhosting**
 
-De configuratie van uw domein is juist. Ga verder met de volgende stap. Als u echter wijzigingen hebt aangebracht in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} aan de DNS-zone van uw domein, kan het zijn dat deze niet meer juist is.
+De configuratie van uw domein is juist. Ga verder met de volgende stap. Als u echter wijzigingen hebt aangebracht in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} aan de DNS-zone van uw domein, kan het zijn dat deze niet meer juist is.
     
 Om toegang te krijgen tot de DNS-zone van uw domein, gaat u in het linkermenu naar `Domeinen`{.action} en klikt u op de naam van het betreffende domein. Verifieer en wijzig de nodige informatie in de tab `DNS-zone`{.action}.
 

@@ -17,12 +17,12 @@ This Exchange collaborative feature enables the creation of email addresses dedi
 ## Requirements
 
 - an [OVHcloud Exchange solution](https://www.ovh.com/world/emails/hosted-exchange/) already set up
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 - login credentials for the email account(s) accessing the resource
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned. Click on `More +`{.action} in the horizontal menu, then on `Resources`{.action}.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. Click `Microsoft`{.action} in the services bar on the left-hand side, then `Exchange`{.action}. Next, select the Exchange service concerned. Click on `More +`{.action} in the horizontal menu, then on `Resources`{.action}.
 
 ### Step 1: Creating a resource
 
@@ -35,7 +35,7 @@ Click on the button `Add a resource account`{.action} to create your first resou
 |Name|Description|
 |---|---|
 |Resource email|Enter the address for the resource. Please note that you cannot choose an existing email address.|
-|Resource name|The display name that appears in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and in [OVHcloud webmail](https://www.ovh.com/world/mail/) (OWA).|
+|Resource name|The display name that appears in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and in [OVHcloud webmail](https://www.ovh.com/world/mail/) (OWA).|
 |Capacity|You can define the maximum size of a resource (specifiying for example the seating capacity of a room or the seats in a shared company vehicle).|
 |Allow conflicts|If this box is ticked, you will be able to create overlapping calendar events involving the same resource.|
 |Resource type|Choose the resource type: "Equipment" or "Room".|

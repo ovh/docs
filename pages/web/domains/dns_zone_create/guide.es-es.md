@@ -21,13 +21,13 @@ Existen diversos motivos por los que podría necesitar crear una zona DNS para u
 - Tener un dominio.
 - No debe existir una operación o un pedido asociados al dominio, y este no debe disponer de otra zona DNS en OVH.
 - La configuración técnica del dominio debe ser correcta (estado, SOA...).
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
 
 ### 1. Crear la zona DNS desde el área de cliente
 
-Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Contratar`{.action} en la columna izquierda y seleccione `Zona DNS`{.action}.
+Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Contratar`{.action} en la columna izquierda y seleccione `Zona DNS`{.action}.
 
 En la nueva página, introduzca el dominio para el que quiera crear una zona DNS en OVH. Espere unos segundos a que la herramienta realice las comprobaciones necesarias sobre el dominio.
 
@@ -50,7 +50,7 @@ Continúe las distintas etapas hasta finalizar la creación de la zona DNS.
 
 Una vez que haya creado la zona DNS para el dominio, ya puede editarla. Esta manipulación es opcional, pero puede ser necesaria para garantizar la disponibilidad de los servicios asociados al dominio (como un sitio web o una cuenta de correo electrónico).
 
-Para editar la zona DNS, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
+Para editar la zona DNS, conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en `Dominios`{.action} en la columna izquierda y seleccione el dominio correspondiente. A continuación, abra la pestaña `Zona DNS`{.action}.
 
 > [!primary]
 >

@@ -15,7 +15,7 @@ Przekierowanie nazwy domeny pozwala na skierowanie jej na nową stronę docelow�
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Nawiązane połączenie z hostingiem przez ftp (jeżeli chcesz dodać plik .htaccess).
 
 ## W praktyce
@@ -36,7 +36,7 @@ Pamiętaj, że stworzenie przekierowania może mieć wpływ na pozycjonowanie Tw
 
 ### Przekierowanie domeny w Panel klienta
 
-Kiedy już zalogujesz się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, w menu usług po lewej stronie, przejdź do sekcji `Domeny`{.action} (zazn. 1 na grafice poniżej), a następnie do zakładki `Przekierowanie`{.action} (zazn. 2 na grafice poniżej).
+Kiedy już zalogujesz się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w menu usług po lewej stronie, przejdź do sekcji `Domeny`{.action} (zazn. 1 na grafice poniżej), a następnie do zakładki `Przekierowanie`{.action} (zazn. 2 na grafice poniżej).
 
 Tabela wyświetli aktywne przekierowania dla Twojej nazwy domeny. 
 

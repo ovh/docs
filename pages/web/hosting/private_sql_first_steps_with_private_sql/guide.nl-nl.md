@@ -18,13 +18,13 @@ Met Private SQL kunt u profiteren van een SQL-instance in combinatie met OVH-web
 
 - U moet beschikken over een Private SQL-instance (inbegrepen in een [webhosting-programma](https://www.ovh.nl/shared-hosting/){.external}, of besteld via een [SQL-optie](https://www.ovh.nl/shared-hosting){.external}).
 - U moet beschikken over een[Webhosting](https://www.ovh.nl/shared-hosting/){.external} op hetzelfde datacenter als uw Private SQL-instance (u kunt deze informatie vinden in uw OVH Control Panel).
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 
 ## Instructie
 
 ### De algemene informatie van de instance weergeven
 
-In de servicebalk links van uw [OVH-Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} gaat u naar het onderdeel `Databases`{.action} en vervolgens naar de betreffende SQL-instance. Ga na of u het tabblad `Algemene informatie`{.action} geopend hebt.
+In de servicebalk links van uw [OVH-Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} gaat u naar het onderdeel `Databases`{.action} en vervolgens naar de betreffende SQL-instance. Ga na of u het tabblad `Algemene informatie`{.action} geopend hebt.
 
 > [!primary]
 >

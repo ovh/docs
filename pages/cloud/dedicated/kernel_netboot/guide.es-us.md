@@ -17,16 +17,16 @@ La función Netboot es un servicio gratuito ofrecido por OVHcloud, le permite in
 
 ## Requisitos
 
-- Un [servidor dedicado](https://www.ovh.com/world/es/servidores_dedicados/){.external}
-- Acceso al [panel de control OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- Un [servidor dedicado](https://www.ovhcloud.com/en/bare-metal/){.external}
+- Acceso al [panel de control OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
 
 ## Procedimiento
 
-La instalación de Netboot debe configurarse en el [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
+La instalación de Netboot debe configurarse en el [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
 
 ### Arranca tu servidor desde el disco
 
-Para iniciar su servidor en el disco, primero debe conectarse al [panel de control](https://ca.ovh.com/auth/?action=gotomanager){.external}
+Para iniciar su servidor en el disco, primero debe conectarse al [panel de control](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
 
 Haga clic en `Servidores`{.action}, sección `Servidores Dedicados`{.action} en la columna de la izquierda, seleccione su servidor de la lista.
 
@@ -51,7 +51,7 @@ Necesitará reiniciar el servidor para que los cambios se hagan efectivos.
 >Esta parte esta destinada a servidor Linux. Para las distribuciones Windows, FreeBSD y Virtualizaciones, solo es posible el modo Disco duro o rescate.
 >
 
-Para iniciar el servidor en el kernel de red, primero debe de conectarse al [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager/){.external}.
+Para iniciar el servidor en el kernel de red, primero debe de conectarse al [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 Haga clic en `Servidores`{.action}, sección `Servidores Dedicados`{.action} en la columna de la izquierda, seleccione su servidor de la lista.
 

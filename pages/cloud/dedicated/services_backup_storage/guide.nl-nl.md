@@ -18,14 +18,14 @@ Als onderdeel van ons [dedicated server](https://www.ovh.nl/dedicated_servers){.
 ## Vereisten
 
 - U moet in het bezit zijn van een [dedicated server](https://www.ovh.nl/dedicated_servers/){.external}.
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, in het gedeelte `Dedicated`{.action}. 
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, in het gedeelte `Dedicated`{.action}. 
 
 
 ## Instructie
 
 ### Activeer uw opslagruimte
 
-Log in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} en ga naar uw serverpagina in het `Dedicated`{.action}-gedeelte. Selecteer vervolgens het tabblad `Backup Storage`{.action} en klik op de knop `Backup Storage inschakelen`{.action}, en bevestig dit.
+Log in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en ga naar uw serverpagina in het `Dedicated`{.action}-gedeelte. Selecteer vervolgens het tabblad `Backup Storage`{.action} en klik op de knop `Backup Storage inschakelen`{.action}, en bevestig dit.
 
 ![Activeer uw opslagruimte](images/backup_storage_activation.png){.thumbnail}
 

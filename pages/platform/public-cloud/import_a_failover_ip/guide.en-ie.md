@@ -23,13 +23,13 @@ If you need to configure a failover IP address on your instances because
 ## Requirements
 
 - a [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - a [failover IP address](https://www.ovhcloud.com/en-ie/bare-metal/ip/)
 
 
 ## Instructions
 
-First, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), go to the `Public Cloud`{.action} section and select the Public Cloud service concerned. Then, select `Failover IP`{.action} in the "Network" section.
+First, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Public Cloud`{.action} section and select the Public Cloud service concerned. Then, select `Failover IP`{.action} in the "Network" section.
 
 ![IP Section](images/import.png){.thumbnail}
 

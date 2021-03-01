@@ -15,13 +15,13 @@ Pode utilizar a [Public Cloud](https://www.ovh.pt/public-cloud/){.external} OVHc
 
 ## Requisitos
 
-* acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+* acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}
 * um projeto [Public Cloud](https://www.ovh.pt/public-cloud/){.external} criado na sua conta OVHcloud
 * uma chave SSH criada na Área de Cliente OVHcloud
 
 ### Com Implementar uma Instância Public Cloud
 
-Para implementar uma instância Public Cloud, faça login na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Clique em `Public Cloud`{.action}no canto superior esquerdo da página. No ecrã seguinte, clique na seta ao lado do nome do seu projeto predefinido no canto superior esquerdo do ecrã. Agora selecione o projeto onde pretende criar uma nova instância.
+Para implementar uma instância Public Cloud, faça login na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Public Cloud`{.action}no canto superior esquerdo da página. No ecrã seguinte, clique na seta ao lado do nome do seu projeto predefinido no canto superior esquerdo do ecrã. Agora selecione o projeto onde pretende criar uma nova instância.
 
 ![select_project](images/select_project.png){.thumbnail}
 

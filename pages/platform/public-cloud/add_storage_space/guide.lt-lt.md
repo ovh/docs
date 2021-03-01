@@ -24,12 +24,12 @@ Our object containers include:
 
 ## Requirements
 
-* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 * a Public Cloud project in your OVH account
 
 ## Instructions
 
-First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} and click on `Cloud`{.action}.
+First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} and click on `Cloud`{.action}.
 
 ![cloud menu](images/cloud-menu.png){.thumbnail}
 

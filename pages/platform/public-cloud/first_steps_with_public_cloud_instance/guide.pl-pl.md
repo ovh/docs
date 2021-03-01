@@ -10,7 +10,7 @@ section: 'Pierwsze kroki'
 
 ## Wprowadzenie
 
-Instancjami OVHcloud Public Cloud można łatwo zarządzać za pośrednictwem [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Znajdują się w nim informacje o całej infrastrukturze (instancjach, kopiach zapasowych, dyskach, kluczach SSH itd.) oraz projektach przestrzeni dyskowej (w tym lista kontenerów).
+Instancjami OVHcloud Public Cloud można łatwo zarządzać za pośrednictwem [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Znajdują się w nim informacje o całej infrastrukturze (instancjach, kopiach zapasowych, dyskach, kluczach SSH itd.) oraz projektach przestrzeni dyskowej (w tym lista kontenerów).
 
 **Dowiedz się, jak rozpocząć pracę z instancją Public Cloud.**
 
@@ -23,7 +23,7 @@ Instancjami OVHcloud Public Cloud można łatwo zarządzać za pośrednictwem [P
 
 ### Dostęp do interfejsu zarządzania instancją
 
-Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, przejdź do sekcji „Public Cloud” i wybierz odpowiednią usługę Public Cloud. Następnie kliknij kartę `Instancje`{.action} po lewej stronie.
+Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji „Public Cloud” i wybierz odpowiednią usługę Public Cloud. Następnie kliknij kartę `Instancje`{.action} po lewej stronie.
 
 Zostanie wyświetlona strona ze skrótem informacji o wszystkich instancjach. Widoczne będą następujące informacje:
 

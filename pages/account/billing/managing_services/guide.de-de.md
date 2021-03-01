@@ -16,13 +16,13 @@ Im Kundencenter können Sie alle Ihre OVHcloud Dienste verwalten.
 
 > [!primary]
 >
-> In Abhängigkeit von ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVH Verträge, die Sie jederzeit in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} im Bereich `Meine Dienstleistungen`{.action}, unter `Meine Verträge`{.action} einsehen können.
+> In Abhängigkeit von ihrem Wohnsitz und der dort geltenden Rechtsordnung sowie den betreffenden Produkten können einige Details von den hier angeführten Informationen abweichen und/oder Teile dieser Anleitung nicht auf Ihre Situation zutreffen. Im Zweifel beachten Sie bitte die für Sie geltenden OVH Verträge, die Sie jederzeit in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} im Bereich `Meine Dienstleistungen`{.action}, unter `Meine Verträge`{.action} einsehen können.
 >
 
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 - Sie haben aktive OVH Dienste.
 
 ## Beschreibung
@@ -40,7 +40,7 @@ Folgen Sie dieser Anleitung nun entsprechend der von Ihnen gewünschten Aktion:
 
 ### Dienste anzeigen
 
-Loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie oben rechts auf den zu Ihrer Kundenkennung gehörigen Namen und wählen Sie dann `Meine Dienstleistungen`{.action} aus.
+Loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie oben rechts auf den zu Ihrer Kundenkennung gehörigen Namen und wählen Sie dann `Meine Dienstleistungen`{.action} aus.
 
 ![Dienste verwalten](images/manage-ovh-services-step1.png){.thumbnail}
 
@@ -65,7 +65,7 @@ Wenn Sie sehr viele OVH Dienste in Anspruch nehmen, kann die Tabelle mehrere Sei
 
 ### Dienste verwalten
 
-Loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie oben rechts auf den zu Ihrer Kundenkennung gehörigen Namen und wählen Sie dann `Meine Dienstleistungen`{.action} aus.
+Loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie oben rechts auf den zu Ihrer Kundenkennung gehörigen Namen und wählen Sie dann `Meine Dienstleistungen`{.action} aus.
 
 ![Dienste verwalten](images/manage-ovh-services-step1.png){.thumbnail}
 

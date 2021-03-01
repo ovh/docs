@@ -31,7 +31,7 @@ Serwer dedykowany to fizyczny serwer zlokalizowany w jednym z naszych centrów d
 
 - Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external}
 - Połączenie przez SSH (dostęp root) z systemem Linux lub jako administrator z systemem Windows
-- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
@@ -39,7 +39,7 @@ Po skonfigurowaniu pierwszego serwera dedykowanego możesz wybrać system operac
 
 ### Instalacja lub reinstalacja serwera dedykowanego
 
-W prosty sposób możesz przeprowadzić reinstalację serwera i wybrać inny model systemu operacyjnego w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager). W zakładce `Informacje ogólne`{.action} kliknij przycisk `...`{.action} obok `systemu (OS)`, a następnie `Zainstaluj`{.action}.
+W prosty sposób możesz przeprowadzić reinstalację serwera i wybrać inny model systemu operacyjnego w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Informacje ogólne`{.action} kliknij przycisk `...`{.action} obok `systemu (OS)`, a następnie `Zainstaluj`{.action}.
 
 ![Przycisk Reinstalacja](images/reinstalling-your-server-00.png){.thumbnail}
 
@@ -84,7 +84,7 @@ Aby uzyskać szczegółowe wyjaśnienie dotyczące tworzenia kluczy SSH, zapozna
 
 > [!primary]
 >
-> Niektóre systemy operacyjne lub platformy, takie jak Plesk i Windows, wymagają nabycia licencji przed instalacją. Licencję można kupić u OVHcloud[ ](https://www.ovhcloud.com/pl/bare-metal/os/) lub u pośrednika. Następnie wprowadź ją ręcznie za pośrednictwem systemu operacyjnego lub [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager). Licencje możesz zarządzać na Panelu konfiguracyjnym w sekcji `Bare Metal Cloud`{.action} pod `Licencjami`{.action}. W tej sekcji możesz również zamawiać licencje (przez przycisk `Zamów`{.action} po lewej stronie) lub dodać własną licencję serwera SQL lub Windows SPLA (przez przycisk `Dodaj licencję SPLA`{.action} po lewej stronie).
+> Niektóre systemy operacyjne lub platformy, takie jak Plesk i Windows, wymagają nabycia licencji przed instalacją. Licencję można kupić u OVHcloud[ ](https://www.ovhcloud.com/pl/bare-metal/os/) lub u pośrednika. Następnie wprowadź ją ręcznie za pośrednictwem systemu operacyjnego lub [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Licencje możesz zarządzać na Panelu konfiguracyjnym w sekcji `Bare Metal Cloud`{.action} pod `Licencjami`{.action}. W tej sekcji możesz również zamawiać licencje (przez przycisk `Zamów`{.action} po lewej stronie) lub dodać własną licencję serwera SQL lub Windows SPLA (przez przycisk `Dodaj licencję SPLA`{.action} po lewej stronie).
 >
 
 ### Połączenie z serwerem
@@ -153,7 +153,7 @@ Więcej informacji znajdziesz w naszym przewodniku: [Korzystanie z IPMI dla serw
 
 ### Tryb Rescue
 
-W przypadku problemów z serwerem pierwszym krokiem w procesie rozwiązywania problemów jest uruchomienie serwera w trybie rescue. Aby włączyć tryb Rescue, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager) i przejdź do strony Twojego serwera. W menu `Informacje ogólne` kliknij przycisk `...`{.action}, a następnie `Zmień`{.action}, aby zmienić tryb uruchamiania.
+W przypadku problemów z serwerem pierwszym krokiem w procesie rozwiązywania problemów jest uruchomienie serwera w trybie rescue. Aby włączyć tryb Rescue, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do strony Twojego serwera. W menu `Informacje ogólne` kliknij przycisk `...`{.action}, a następnie `Zmień`{.action}, aby zmienić tryb uruchamiania.
 
 ![Zmodyfikuj wybór uruchamiania](images/rescue-mode-01.png){.thumbnail}
 

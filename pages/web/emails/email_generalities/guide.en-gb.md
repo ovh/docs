@@ -17,13 +17,13 @@ If you have just purchased an MX Plan solution, you can have email addresses, wh
 ## Requirements
 
 - an MX plan solution, available via a [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}, [the free Start10M Hosting plan](https://www.ovh.co.uk/domains/start10m_hosting_offer.xml){.external} or an MX Plan solution ordered separately
-- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- access to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions
 
-Once the MX Plan solution is created and available, you can manage it from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Depending on its activation date or if [it has been migrated recently](https://www.ovh.co.uk/mxplan-migration/){.external}, you may have the old or new version of the solution. You will need to check this before you proceed any further. 
+Once the MX Plan solution is created and available, you can manage it from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Depending on its activation date or if [it has been migrated recently](https://www.ovh.co.uk/mxplan-migration/){.external}, you may have the old or new version of the solution. You will need to check this before you proceed any further. 
 
-To do this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and open the `Web Cloud`{.action} section. Click `Emails`{.action} in the services bar on the left-hand side, then choose the name of the plan concerned. Continue with the next steps, depending on which version you own.
+To do this, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, and open the `Web Cloud`{.action} section. Click `Emails`{.action} in the services bar on the left-hand side, then choose the name of the plan concerned. Continue with the next steps, depending on which version you own.
 
 |MX Plan solution legacy version|MX Plan solution new version|
 |---|---|
@@ -64,9 +64,9 @@ Once you have configured your email addresses, you can start using them straight
 
 ##### 1. Use Outlook Web Access (OWA) webmail.
 
-Go to the [Webmail login]({ovh_www}/mail/){.external} page, then enter the email address and password. Then click the `Login`{.action} button.
+Go to the [Webmail login](https://www.ovh.co.uk/mail/){.external} page, then enter the email address and password. Then click the `Login`{.action} button.
 
-When you first log in to webmail, you will be prompted to set the interface language, and the time zone you are in. Your inbox will then appear. To find out how to use your email address via OWA webmail, you can refer to our [](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/){.external}Outlook Web App user guide.
+When you first log in to webmail, you will be prompted to set the interface language, and the time zone you are in. Your inbox will then appear. To find out how to use your email address via OWA webmail, you can refer to our [Outlook Web App user guide](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/).
 
 ![email](images/mxplan-starter-new-step4.png){.thumbnail}
 
@@ -133,7 +133,7 @@ Once you have configured your email addresses, you can start using them straight
 
 ##### 1. Use the Roundcube webmail interface.
 
-Go to the [Webmail login]({ovh_www}/mail/){.external} page, then enter the email address and password. Then click the `Login`{.action} button. Your inbox will appear.
+Go to the [Webmail login](https://www.ovh.co.uk/mail/){.external} page, then enter the email address and password. Then click the `Login`{.action} button. Your inbox will appear.
 
 ![email](images/mxplan-starter-legacy-step4.png){.thumbnail}
 

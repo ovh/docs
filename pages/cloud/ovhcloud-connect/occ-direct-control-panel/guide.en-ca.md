@@ -22,11 +22,11 @@ With OVHcloud Connect, you can link your company network to your private OVHclou
 
 - an OVHcloud Connect Direct [solution](https://www.ovhcloud.com/en-ca/network-security/ovhcloud-connect/)
 - an OVHcloud [vRack](https://www.ovh.com/ca/en/solutions/vrack/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), click `Bare Metal Cloud`{.action} in the top navigation bar, then select `Network`{.action} from the left-hand menu. Open `OVHcloud Connect`{.action} and click on your solution.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), click `Bare Metal Cloud`{.action} in the top navigation bar, then select `Network`{.action} from the left-hand menu. Open `OVHcloud Connect`{.action} and click on your solution.
 
 ![ovhcloud connect selection](images/occ01.png){.thumbnail}
 

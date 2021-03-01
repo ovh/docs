@@ -17,11 +17,11 @@ Con l’opzione [Start10M](https://www.ovh.it/domini/offerta_hosting_start10m.xm
 ## Prerequisiti
 
 - Disporre di un [dominio](https://www.ovh.it/domini/){.external}, separato da qualsiasi hosting Web, nel tuo Spazio Cliente.
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, seleziona il tuo servizio nella sezione `Domini`{.action}(**1**) della colonna a sinistra.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Domini`{.action}(**1**) della colonna a sinistra.
 
 Nel riquadro **Informazioni generali**(**2**) visualizzi la voce *Hosting Web e email gratis*. Clicca sui tre puntini `...`{.action} a destra e poi su `Attiva`{.action}(**3**).
 

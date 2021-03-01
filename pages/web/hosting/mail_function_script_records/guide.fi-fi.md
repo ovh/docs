@@ -17,18 +17,18 @@ Automatisoidut sähköpostit ovat skriptien kautta lähetettyjä viestejä. Niit
 ## Edellytykset
 
 - Sinulla on [webhotellituote](https://www.ovh-hosting.fi/webhotelli/){.external}.
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 > [!primary]
 >
 > Tämä ohje keskittyy ainoastaan OVH:n webhotellissasi sijaitsevista skripteistä lähetettyihin viesteihin.
 >
-> Haluatko hallita MX Plan -tuotteeseesi tai [OVH:n webhotelliisi](https://www.ovh-hosting.fi/webhotelli/){.external} sisältyviä sähköpostiosoitteita? Mene [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} osioon `Sähköpostit`{.action}.
+> Haluatko hallita MX Plan -tuotteeseesi tai [OVH:n webhotelliisi](https://www.ovh-hosting.fi/webhotelli/){.external} sisältyviä sähköpostiosoitteita? Mene [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} osioon `Sähköpostit`{.action}.
 >
 
 ## Käytännössä
 
-Webhotellisi automatisoitujen sähköpostien seuranta ja hallinnointi tapahtuu [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}. Kirjaudu hallintapaneeliin, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä olevan webhotellin nimi. Klikkaa sitten välilehteä `Enemmän +`{.action} ja sitten `Sähköpostien skriptit`{.action}.
+Webhotellisi automatisoitujen sähköpostien seuranta ja hallinnointi tapahtuu [hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Kirjaudu hallintapaneeliin, klikkaa kohtaa `Webhotellit`{.action} vasemman reunan valikossa ja valitse sitten kyseessä olevan webhotellin nimi. Klikkaa sitten välilehteä `Enemmän +`{.action} ja sitten `Sähköpostien skriptit`{.action}.
 
 Näkyviin tulevalla sivulla voit seurata ja hallita OVH:n webhotellin lähettämiä automatisoituja sähköpostiviestejä.
 

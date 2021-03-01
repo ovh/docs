@@ -28,7 +28,7 @@ Nos hébergements web sont compatibles IPv6 depuis 2011. Mais l'activation de ce
 
 - Disposer d'un [nom de domaine](https://www.ovh.com/ca/fr/domaines/){.external} dans votre espace client OVHcloud.
 - Posséder une [offre d'hébergement web](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
-- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
 
@@ -47,7 +47,7 @@ Pour tester si votre site web est compatible avec IPv6, vous pouvez utiliser le 
 
 ### Étape 1 : Récupérer l'adresse IPv6 de votre hébergement web
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur `Hébergements`{.action} dans la barre de services à gauche, puis choisissez l'hébergement.
 
 Dans la rubrique `Informations générales`, dans le cadre **IPv6**, copiez l'entrée et passez à l'étape suivante.
 

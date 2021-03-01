@@ -16,7 +16,7 @@ Le [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external} OVHcloud
 
 ## Prérequis
 
-* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 * Un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external} créé dans votre compte OVHcloud
 * Une clé SSH créée dans votre espace client OVHcloud
 
@@ -24,7 +24,7 @@ Le [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external} OVHcloud
 
 ### Déployer une instance Public Cloud.
 
-Pour déployer une instance public cloud, connectez-vous à [l’espace client d’OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur `Public Cloud`{.action} en haut à gauche. Sur l’écran qui s’affiche, cliquez sur la flèche à côté du nom par défaut de votre projet, en haut à gauche. Sélectionnez le projet dans lequel vous souhaitez créer une nouvelle instance.
+Pour déployer une instance public cloud, connectez-vous à [l’espace client d’OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur `Public Cloud`{.action} en haut à gauche. Sur l’écran qui s’affiche, cliquez sur la flèche à côté du nom par défaut de votre projet, en haut à gauche. Sélectionnez le projet dans lequel vous souhaitez créer une nouvelle instance.
 
 ![select_project](images/select_project.png){.thumbnail}
 

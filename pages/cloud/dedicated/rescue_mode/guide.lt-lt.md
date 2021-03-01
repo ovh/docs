@@ -23,7 +23,7 @@ Rescue mode is a tool on your server that allows you to boot into a temporary op
 
 ## Instructions
 
-You can activate rescue mode by logging into your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager/){.external} and going to your server's page. Then go to `Server Status`{.action} > `General information`{.action} >`Boot`{.action} and click the `Edit`{.action} button to change the boot mode.
+You can activate rescue mode by logging into your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} and going to your server's page. Then go to `Server Status`{.action} > `General information`{.action} >`Boot`{.action} and click the `Edit`{.action} button to change the boot mode.
 
 ![Boot mode edit](images/rescue-mode-01.png){.thumbnail}
 
@@ -105,7 +105,7 @@ rescue:~# mount /dev/hda1 /mnt/
 
 #### Accessing WinRescue
 
-Once your server has rebooted, you'll receive an email with your rescue mode access credentials. To access rescue mode, you'll need to download and install a VNC console, or use the `IPMI` module in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager/){.external}.
+Once your server has rebooted, you'll receive an email with your rescue mode access credentials. To access rescue mode, you'll need to download and install a VNC console, or use the `IPMI` module in your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ![Winrescue window](images/rescue-mode-06.png){.thumbnail}
 

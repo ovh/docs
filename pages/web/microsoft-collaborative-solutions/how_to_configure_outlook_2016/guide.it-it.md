@@ -45,7 +45,7 @@ A questo punto compare una finestra in cui inserire la **password** dell'indiriz
 >
 > Se un messaggio ti indica che Outlook non ha potuto configurare il tuo account, ciò potrebbe indicare che il campo SRV di OVH non è stato configurato correttamente nella zona DNS del tuo dominio. 
 >
-> Ti consigliamo di verificare la configurazione del dominio impostato per il tuo servizio Exchange attraverso lo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} > scheda `Domini associati`{.action} > colonna `Diagnostica`{.action}
+> Ti consigliamo di verificare la configurazione del dominio impostato per il tuo servizio Exchange attraverso lo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} > scheda `Domini associati`{.action} > colonna `Diagnostica`{.action}
 >
 
 Se la configurazione del tuo dominio è corretta, appare un messaggio di richiesta di autorizzazione per una connessione verso il server OVH. Accetta questa connessione per consentire la configurazione automatica del tuo account Exchange. 

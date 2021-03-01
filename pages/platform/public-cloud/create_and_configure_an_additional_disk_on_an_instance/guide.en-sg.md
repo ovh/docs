@@ -20,13 +20,13 @@ This can be useful in cases where:
 
 ## Requirements
 
-* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}
 * a [Public Cloud Instance](https://www.ovhcloud.com/en-sg/public-cloud/){.external} in your OVHcloud account
 * administrative (root) access to your instance via SSH
 
 ## Instructions
 
-Firstly, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} and click the `Cloud`{.action} menu. Then click the `Servers`{.action} side-menu to expand your list of projects.
+Firstly, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external} and click the `Cloud`{.action} menu. Then click the `Servers`{.action} side-menu to expand your list of projects.
 
 When you've found your project in the list, click it and then select the `Infrastructure`{.action} tab.
 
@@ -234,7 +234,7 @@ SAN Policy : Offline Shared
 ```
 DISKPART> san policy = OnlineAll
 
-DiskPart successfully changed the SAN policy for the current operating system . [/ Code]
+DiskPart successfully changed the SAN policy for the current operating system.
 
 - Implementation of the strategy on the extra disk:
 [Code] DISKPART> list disk

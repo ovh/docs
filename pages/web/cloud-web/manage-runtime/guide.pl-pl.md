@@ -16,7 +16,7 @@ W ramach Cloud Web udostępniamy różne języki programowania do tworzenia Twoj
 ## Wymagania początkowe
 
 - Posiadanie hostingu [Cloud Web](https://www.ovh.pl/hosting/cloud-web.xml)
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager), sekcja `Web Cloud`{.action}
+- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), sekcja `Web Cloud`{.action}
 
 ## W praktyce
 
@@ -28,7 +28,7 @@ Po dokładnym wskazaniu frameworku lub frameworków, których będziesz używał
 
 ### Etap 1: dostęp do zarządzania frameworkami
 
-Aby uzyskać dostęp do frameworków Twojego hostingu Cloud Web, zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Po zalogowaniu kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiedni hosting Cloud Web. Teraz przejdź do karty `Frameworki`{.action}.
+Aby uzyskać dostęp do frameworków Twojego hostingu Cloud Web, zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Po zalogowaniu kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiedni hosting Cloud Web. Teraz przejdź do karty `Frameworki`{.action}.
 
 Wyświetli się tabela z listą frameworków obecnie dodanych do Twojego hostingu Cloud Web. Framework jest automatycznie tworzony podczas instalacji hostingu.
 

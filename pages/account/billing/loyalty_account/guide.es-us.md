@@ -9,7 +9,7 @@ hidden: true
 
 
 ## Visualizar la cuenta
-Acceda al área de cliente desde [aquí](https://www.ovh.com/manager/web/login/). En la parte superior derecha, seleccione «Facturación».
+Acceda al área de cliente desde [aquí](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la parte superior derecha, seleccione «Facturación».
 
 ![](images/img_2780.jpg){.thumbnail}
 Acceda al «Área de fidelidad», desde donde podrá ver el historial de todas sus operaciones y el número de puntos acumulados. Puede seleccionar el periodo que se muestra haciendo clic en el icono con forma de calendario.

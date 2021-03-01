@@ -16,8 +16,8 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 ## Requirements
 
 * a [Dedicated Server](https://www.ovh.com/world/dedicated-servers/){.external}
-* a [failover IP address](https://www.ovh.com/world/dedicated-servers/ip_failover.xml){.external} or a failover IP block (RIPE)
-* access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* a [failover IP address](https://www.ovhcloud.com/es/bare-metal/ip/){.external} or a failover IP block (RIPE)
+* access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}
 
 
 ## Instructions
@@ -58,7 +58,7 @@ When the 'Add a virtual MAC' box appears, select a type from the dropdown list, 
 > When a MAC address is deleted, it will not be recoverable.
 > 
 
-To remove a virtual MAC address associated with a failover IP, you must first connect to your [control panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. Once connected, go to the `IP`{.action} section and select the correct server, so that the failover IP (or IP block) attached to it appears.
+To remove a virtual MAC address associated with a failover IP, you must first connect to your [control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}. Once connected, go to the `IP`{.action} section and select the correct server, so that the failover IP (or IP block) attached to it appears.
 
 Finally, click on the `...`{.action} button on the right, then click `Delete a Virtual MAC`{.action}.
 
