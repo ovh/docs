@@ -1,107 +1,190 @@
 ---
-title: 'Bearbeiten der OVH DNS-Zone'
-excerpt: 'In dieser Anleitung erfahren Sie, wie Sie eine OVH DNS-Zone über Ihr Kundencenter bearbeiten.'
+title: 'Bearbeiten der OVHcloud DNS-Zone'
+excerpt: 'Erfahren Sie hier, wie Sie eine DNS-Zone über Ihr Kundencenter bearbeiten'
 slug: webhosting_bearbeiten_der_dns_zone
 legacy_guide_number: g1604
+section: 'DNS und DNS-Zone'
 ---
 
-**Stand 26.06.2018**
 
-## Einleitung
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
-Die Domain Name System Zone (DNS-Zone) ist die Konfigurationsdatei einer Domain. Sie besteht aus technischen Angaben, die als Einträge bezeichnet werden. DNS-Zonen werden üblicherweise dazu verwendet, Ihre Domain mithilfe dieser Einträge mit dem oder den Servern zu verbinden, auf denen Ihre Website oder E-Mail-Adressen gehostet werden.
+**Letzte Aktualisierung am 16.02.2021**
 
-**Hier erfahren Sie, wie Sie eine OVH DNS-Zone über Ihr Kundencenter bearbeiten.**
+## Ziel
+
+### DNS Konzept verstehen <a name="understanddns"></a>
+
+**D**omain **N**ame **S**ystem ist ein Datensatz, um eine Domain mit einer IP-Adresse zu verbinden.
+
+Wenn Sie zum Beispiel auf die Website *mydomain.ovh* zugreifen möchten, wird Ihre Anfrage zunächst von diesem DNS-Array bearbeitet, das sie auf die IP-Adresse des Servers leitet, auf dem die Website *mydomain.ovh gehostet wird*.
+
+Aufgrund der Änderungen, die Sie im Kundencenter vornehmen müssen, ist es wichtig, die **DNS Server** und die **DNS Zone** zu unterscheiden. Die DNS Zone wird auf der Ebene des **DNS Servers** konfiguriert. 
+
+Informationen zu den **DNS Servern** finden Sie in unserer Anleitung zu [DNS Servern](../webhosting_allgemeine_informationen_zu_den_dns_servern/).
+
+![DNS](images/dnsserver.png){.thumbnail}
+
+Wenn wir oben das Beispiel anführen, wenn Sie *mydomain.ovh* eingeben, werden die zu dieser Domain gehörenden **DNS Server** abgefragt. Diese enthalten die **DNS Zone** der Domain *mydomain.ovh*, in der die IP-Adresse des Hostings von mydomain.ovh angegeben *ist*. So kann Ihr Browser die auf dem Hosting enthaltene *mydomain.ovh* Website anzeigen. Man nennt es eine DNS-Auflösung.
+
+![DNS](images/dnssolve.gif){.thumbnail}
+
+### Die DNS Zone 
+
+Die DNS-Zone einer Domain ist eine Konfigurationsdatei bestehend aus **Datensätzen**. Mit diesen können Sie Ihre Domain mit den Servern verbinden, auf denen Ihre Internetdienste gehostet werden, wie zum Beispiel Websites (über A-Eintrag) oder E-Mail-Adressen (MX-Eintrag).
+
+![DNS](images/dnszone.png){.thumbnail}
+
+**Diese Anleitung erklärt, wie Sie Ihre OVHcloud DNS-Zone über Ihr Kundencenter bearbeiten.**
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Voraussetzungen
 
-- Sie haben über Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} Zugriff auf die Verwaltung der betreffenden Domain.
-- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
-- Die angegebene Domain verwendet die OVH Konfiguration (die OVH DNS-Server).
+- Sie haben über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ausreichenden Zugriff auf die Verwaltung der betreffenden Domain.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- OVHcloud DNS-Server sind in Verwendung für die betreffende Domain
 
 > [!warning]
 >
-> - Wenn Ihre Domain nicht die DNS-Server von OVH verwendet, muss die Änderung über das Interface des Anbieters vorgenommen werden, bei dem die Konfiguration Ihrer Domain verwaltet wird.
-> - Wenn Ihre Domain bei OVH registriert ist, können Sie überprüfen, ob sie unsere Konfiguration verwendet. Gehen Sie hierzu in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} zur betreffenden Domain und klicken Sie anschließend auf den Tab `DNS Server`{.action}.
+> - Wenn Ihre Domain nicht die DNS-Server von OVHcloud verwendet, muss die Änderung über das Interface des Anbieters vorgenommen werden, der die Konfiguration Ihrer Domain verwaltet.
+> 
+> - Wenn Ihre Domain bei OVHcloud registriert ist, können Sie überprüfen, ob diese unsere Konfiguration verwendet. Gehen Sie hierzu in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Tab `DNS Server`{.action}  der betreffenden Domain.
 >
 
-## Beschreibung
+## In der praktischen Anwendung
 
-**Seien Sie vorsichtig bei der Bearbeitung der DNS-Zone**: Wenn Sie eine falsche Änderung vornehmen, kann es sein, dass Ihre Website nicht mehr erreichbar ist oder Ihre E-Mail-Adressen keine Nachrichten empfangen können.
+### Zugang zur Verwaltung einer OVHcloud DNS-Zone
 
-Ein genaueres Verständnis der verschiedenen Einträge ermöglicht es Ihnen, die notwendigen Änderungen der DNS-Zone Ihrer Domain besser zu bestimmen. Lesen Sie hierzu in der folgenden Tabelle die Beschreibungen zu den einzelnen Einträgen. 
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie links im Menü auf `Domains`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS Zone`{.action}.
 
-|Eintrag|Beschreibung|  
-|---|---|
-|A|Der A-Eintrag weist einer Domain eine IP-Adresse (IPv4) zu. Zum Beispiel: die IP-Adresse des Servers, auf dem Ihre Website gehostet ist.|
-|AAAA|Der AAAA-Eintrag weist einer Domain eine IP-Adresse (IPv6) zu. Zum Beispiel: die IP-Adresse des Servers, auf dem Ihre Website gehostet ist.|
-|CNAME|Erlaubt es einer Domain, den oder die IP-Adressen einer anderen Domain zu verwenden, indem diese durch die Erstellung eines Alias miteinander verbunden werden (IP-Aliasing). Ist zum Beispiel *www.mypersonaldomain.ovh* ein Alias von *mypersonaldomain.ovh*, so verwendet *www.mypersonaldomain.ovh* die IP-Adresse(n) von *mypersonaldomain.ovh*.|
-|MX|Der MX-Eintrag legt den für die E-Mail-Adressen der Domain zuständigen E-Mail-Server fest. Zum Beispiel: die IP-Adresse des Servers, auf dem Ihre E-Mail-Lösung gehostet ist. Wahrscheinlich verfügt Ihr Anbieter über mehrere E-Mail-Server. In dem Fall müssen mehrere MX-Einträge angelegt werden.|
-|SRV|Der SRV-Eintrag enthält Informationen zur Adresse eines Servers, der einen Dienst bereitstellt. Dieser Eintrag kann zum Beispiel die Adresse eines SIP-Servers angeben oder die Adresse eines Servers, den ein E-Mail-Client für die automatische Konfiguration per Autodiscover verwendet.|
-|TXT|Mit einem TXT-Eintrag können Sie zusätzliche, frei definierbare Werte (in Textform) zur DNS-Zone Ihrer Domain hinzufügen. Dieser Eintrag wird häufig für den Verifizierungsprozess verwendet.|
-|SPF|Mit dem SPF-Eintrag soll Identitätsdiebstahl und somit die missbräuchliche Verwendung von E-Mail-Adressen mit Ihrem Domainnamen verhindert werden. Mit diesem Eintrag kann zum Beispiel festgelegt werden, dass nur der Server des Anbieters Ihrer E-Mail-Lösung als legitime Quelle angesehen wird. Weitere Informationen hierzu finden Sie in unserer Anleitung [„Einen SPF-Eintrag zur Konfiguration Ihrer Domain hinzufügen“](https://docs.ovh.com/de/domains/webhosting_spf-eintrag/){.external}|
-|CAA|Der CAA-Eintrag wird dazu verwendet, die Zertifizierungsstellen aufzulisten, die SSL-Zertifikate für eine Domain ausstellen dürfen.|
-
-### Schritt 1: Auf die Verwaltung der OVH DNS-Zone Ihrer Domain zugreifen
-
-Loggen Sie sich zunächst in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie links im Menü auf `Domains`{.action} und wählen Sie die betreffende Domain aus. Gehen Sie dann auf den Tab `DNS Zone`{.action}.
-
-Die angezeigte Tabelle enthält die Konfiguration Ihrer Domain bei OVH. Sie besteht aus mehreren DNS-Einträgen, die in jeweils einer Zeile der Tabelle stehen. Sie können die Einträge nach dem Eintragstyp oder der zugehörigen Domain filtern.
+Die Tabelle zeigt für jede Zeile einen DNS-Eintrag zu Ihrer Domain bei OVHCloud an. Sie können die Einträge nach dem Eintragstyp oder der zugehörigen Domain filtern.
 
 ![dnszone](images/edit-dns-zone-ovh-control-panel.png){.thumbnail}
 
-### Schritt 2: OVH DNS-Zone Ihrer Domain bearbeiten
+### DNS Einträge
 
-Sie können die OVH DNS-Zone Ihrer Domain bearbeiten und DNS-Einträge hinzufügen, bearbeiten oder löschen. Hierzu haben Sie zwei Optionen:
+**Seien Sie vorsichtig bei der Bearbeitung der DNS-Zone**: Wenn Sie eine falsche Änderung vornehmen, kann es sein, dass Ihre Website nicht mehr erreichbar ist oder Ihre E-Mail-Adressen keine neuen Nachrichten empfangen können.
 
-- **DNS-Zone manuell im Textmodus bearbeiten**: nur für fortgeschrittene Nutzer. Klicken Sie im Tab `DNS Zone`{.action} auf `Im Textmodus bearbeiten`{.action} und folgend Sie den Anweisungen.
+Ein genaueres Verständnis der verschiedenen Einträge ermöglicht es Ihnen, die notwendigen Änderungen der DNS-Zone Ihrer Domain besser zu bestimmen. Bitte lesen Sie die unten stehende Liste. Sie enthält die Ziele und Besonderheiten jeder Registrierung.
 
-- **Konfigurationsassistenten verwenden**
+#### Verweiseinträge
 
-Die vorliegende Anleitung beschreibt von hier an nur die Konfiguration über unsere Konfigurationsassistenten.
+**A**: Verbindet einen Domainnamen mit einer IPv4-Adresse. Zum Beispiel die IPv4-Adresse des Servers, auf dem Ihre Website gehostet ist.
+
+**AAAA**: Verbindet einen Domainnamen mit einer IPv6-Adresse. Zum Beispiel die IPv6-Adresse des Servers, auf dem Ihre Website gehostet ist.
+
+**CNAME**: Verwendet die IP-Adresse einer anderen Domain, indem ein Link erstellt wird, der als Alias bezeichnet wird. Ist zum Beispiel *www.mydomain.ovh* ein Alias von *mydomain.ovh*, so bedeutet dies, dass *www.mydomain.ovh* die IP-Adresse von *mydomain.ovh* verwendet.
+
+> [!alert]
+>
+> Ein TXT-Eintrag, der die gleiche Domain oder Subdomain wie ein CNAME-Eintrag verwendet, beeinträchtigt deren Funktion. Ihr CNAME-Eintrag wird dann nur teilweise oder gar nicht funktionieren.
+>
+
+**NS Einträge**: Legt die zu Ihrer DNS Zone gehörenden DNS Server fest. Wenn zum Beispiel die NS-Einträge Ihrer DNS-Zone die Server *dns19.ovh.net* und *ns19.ovh.net* anzeigen, müssen Sie diese im Tab `DNS Server`{.action} Ihres Kundencenters verwenden. Weitere Informationen finden Sie in unserer Anleitung zu [DNS Servern](../webhosting_allgemeine_informationen_zu_den_dns_servern/).
+
+> [!warning]
+>
+> Ändern Sie nicht die NS-Einträge Ihrer DNS-Zone über den Button `Im Textmodus bearbeiten`{.action}, um DNS-Server außerhalb von OVHcloud zu verwenden. Diese DNS Zone funktioniert ausschließlich mit **OVHcloud DNS Servern**.
+>
+
+#### E-Mail Einträge
+
+**MX**: Verbindet einen Domainnamen mit einem E-Mail-Server. Die Adresse *10 mx1.mail.ovh.net* entspricht beispielsweise einem der OVHcloud E-Mail-Server, wenn Sie ein OVHcloud E-Mail-Angebot haben. Ihr E-Mail-Anbieter verfügt wahrscheinlich über mehrere E-Mail-Server. Es müssen daher mehrere MX-Einträge erstellt werden.
+Lesen Sie dazu die Anleitung zum [Hinzufügen eines MX-Eintrags](../webhosting_e-mail_mx-konfiguration_mit_dns_zone_von_ovh/).
+
+**SPF**: Damit können potenzielle Identitätsdiebstähle bei E-Mail-Adressen, die Ihre Domain verwenden (Spoofing), vermieden werden. Zum Beispiel legt der Eintrag *v=spf1 include:mx.ovh.com ~all* fest, dass nur die ausgehenden OVHCloud Server des E-Mail-Dienstes vom Empfangsserver als legitim angesehen werden können. Sie können den Eintrag entweder als TXT-Eintrag oder über unser automatisches Konfigurationssystem eingeben. Weitere Informationen finden Sie in der Anleitung zum [SPF-Eintrag](../webhosting_spf-eintrag/).
+
+**DKIM**: Ermöglicht die Überprüfung der Authentizität der Domain des Absenders und die Sicherstellung der Integrität der versandten E-Mail. Der DKIM-Eintrag ist ein aus mehreren Zeichen bestehender Schlüssel. Der DKIM-Schlüssel wird von Ihrem E-Mail-Anbieter bereitgestellt. Sie können ihn in einem TXT-Eintrag eingeben.
+
+**DMARC**: Unterstützt die Authentifizierung von E-Mails in Verbindung mit SPF- und/oder DKIM-Methoden. Dieser Wert wird Ihnen von Ihrem E-Mail-Anbieter mitgeteilt und wird mindestens mit einem SPF- oder DKIM-Eintrag verbunden.
+
+#### Erweiterte Einträge
+
+**TXT**: Hier können Sie den Wert Ihrer Wahl im Textformat zur DNS-Zone Ihrer Domain hinzufügen. Dieser Eintragstyp wird häufig für Verifizierungsprozesse verwendet.
+
+> [!warning]
+> 
+> Der TXT Eintrag ist auf 255 Zeichen begrenzt. In manchen Fällen können Sie Ihren Wert jedoch in mehrere Einträge aufteilen. Fragen Sie bei Ihrem Dienstleister nach, wenn dieser Sie auffordert, einen Wert anzugeben, der 255 Zeichen übersteigt.
+> 
+
+**SRV**: Der SRV-Eintrag enthält Informationen zur Adresse eines Servers, der einen Dienst bereitstellt. So kann er beispielsweise die Adresse eines SIP Servers oder eines Servers angeben, der die automatische Konfiguration eines E-Mail-Programms ermöglicht.
+
+**CAA**: Der CAA-Eintrag wird dazu verwendet, die Zertifizierungsstellen aufzulisten, die SSL-Zertifikate für eine Domain ausstellen dürfen.
+
+**NAPTR**: In der Telekommunikation verwendet, um eine von einem mobilen Endgerät ausgehende Anfrage auf einen Server zu leiten. 
+
+**LOC**: Zur Angabe der Ortsdaten verwendet.
+
+**SSHFP**: Verwendet, um den Fingerprint eines öffentlichen SSH-Schlüssels einzugeben.
+
+**TLSA**: Verwendet, um den Fingerprint eines SSL/TLS-Zertifikats einzugeben.
+
+### Bearbeiten der OVHcloud DNS-Zone Ihrer Domain
+
+Sie können die OVHcloud DNS-Zone Ihrer Domain bearbeiten, indem Sie einen DNS-Eintrag hinzufügen, ändern oder löschen. Hierzu haben Sie zwei Optionen:
+
+#### Zone manuell im Textmodus ändern 
+
+Diese Methode empfiehlt sich nur für erfahrene Anwender.
+
+Klicken Sie im Tab `DNS Zone`{.action} auf `Im Textmodus bearbeiten`{.action} und folgen Sie den angezeigten Schritten.
+
+#### Unsere Konfigurationsassistenten verwenden
+
+Im Folgenden werden nur noch die Konfigurationen über unsere Assistenten beschrieben.
 
 > [!primary]
 >
-> Bitte halten Sie die Informationen bereit, die Sie in Ihrer OVH DNS-Zone ändern möchten. Wenn Sie diese Änderung auf Anfrage eines Dienstleisters durchführen, sollte Ihnen dieser eine Lister der vorzunehmenden Änderungen zugesandt haben.
+> Halten Sie die Informationen bereit, die Sie in Ihrer OVHcloud DNS-Zone ändern möchten. Wenn Sie diese Änderung auf Anfrage eines Diensteanbieters vornehmen, muss dieser Ihnen die Liste der zu ändernden Elemente übermitteln.
 >
 
-- **Neuen DNS-Eintrag hinzufügen**
+#### Neuen DNS-Eintrag hinzufügen
 
-Um einen neuen DNS-Eintrag hinzuzufügen, gehen Sie in Ihrem Kundencenter auf den Tab `DNS Zone`{.action} und klicken Sie rechts neben der Tabelle auf den Button `Einen Eintrag hinzufügen`{.action}. Wählen Sie den gewünschten Eintragstyp aus und folgen Sie den Anweisungen.
+Um einen neuen DNS-Eintrag hinzuzufügen, klicken Sie im Tab `DNS Zone`{.action} Ihrer Domain auf den Button `Eintrag hinzufügen`{.action} rechts neben der Tabelle. Wählen Sie den Typ des DNS Eintrags aus und folgen Sie den Schritten.
 
-Wir empfehlen Ihnen, zunächst zu überprüfen, dass dieser Eintrag nicht bereits existiert und auf ein anderes Ziel verweist. Filtern Sie hierzu die angezeigten Einträge nach Eintragstyp oder der verbundenen Domain. Wenn der Eintrag bereits existiert, können Sie diesen, wie im nächsten Schritt beschrieben, bearbeiten.
+Bitte überprüfen Sie zunächst, ob dieser Eintrag bereits existiert und auf ein anderes Ziel verweist. Filtern Sie hierzu die angezeigten Einträge nach Eintragstyp oder der verbundenen Domain. Wenn der Eintrag bereits existiert, ändern Sie ihn gemäß der nachfolgenen Anweisungen.
 
 ![dnszone](images/edit-dns-zone-ovh-add-entry.png){.thumbnail}
 
-- **Existierenden DNS-Eintrag bearbeiten**
+> Wenn Ihr Ziel eine URL ist, denken Sie daran, diese mit einem Punkt abzuschließen. Wenn Sie dies nicht tun, wird Ihre Domain am Ende Ihres Zieles automatisch hinzugefügt.
+>
+>Beispiel: Sie möchten einen CNAME-Eintrag für *test.mydomain.ovh* auf *mydomain.ovh* erstellen.
+>
+>Sie müssen dann als Ziel *mydomain.ovh.* haben, anstatt *mydomain.ovh* ohne **.** am Ende.
 
-Um einen existierenden DNS-Eintrag zu bearbeiten, klicken Sie in Ihrem Kundencenter im Tab `DNS Zone`{.action} rechts neben dem entsprechenden Eintrag auf das Zahnrad-Symbol. Klicken Sie anschließend auf `Eintrag bearbeiten`{.action} und folgen Sie den angezeigten Schritten.
+#### Existierenden DNS-Eintrag bearbeiten 
+
+Um einen DNS-Eintrag zu ändern, klicken Sie im Tab `DNS Zone`{.action} auf den Button `...`{.action} in der gewünschen Tabellenzeile. Klicken Sie anschließend auf `Eintrag bearbeiten`{.action} und folgen Sie den angezeigten Schritten.
 
 ![dnszone](images/edit-dns-zone-ovh-modify-entry.png){.thumbnail}
 
-- **DNS-Eintrag löschen**
+#### DNS-Eintrag löschen
 
-Um einen DNS-Eintrag zu löschen, klicken Sie in Ihrem Kundencenter im Tab `DNS Zone`{.action} rechts neben dem entsprechenden Eintrag auf das Zahnrad-Symbol. Klicken Sie anschließend auf `Eintrag löschen`{.action} und folgen Sie den angezeigten Schritten.
+Um einen DNS-Eintrag zu löschen, klicken Sie im Tab `DNS Zone`{.action} auf den Button `...`{.action} in der gewünschen Tabellenzeile. Klicken Sie anschließend auf `Eintrag löschen`{.action} und folgen Sie den angezeigten Schritten.
 
-Sie können mehrere Einträge auf einmal löschen, indem Sie links in der Tabelle neben den betreffenden Einträgen einen Haken setzen und anschließend auf den Button `Löschen`{.action} klicken.
+Sie können mehrere Einträge auf einmal löschen, indem Sie im linken Teil der Tabelle einen Haken setzen und dann auf den Button `Löschen`{.action} klicken.
 
 ![dnszone](images/edit-dns-zone-ovh-delete-entry.png){.thumbnail}
 
-### Schritt 3: Propagationszeit abwarten
+### Propagationszeit
 
-Die Änderung der DNS-Konfiguration Ihrer Domain erfordert eine Propagationszeit von bis zu 24 Stunden, bis sie voll wirksam ist.
+Nach der Änderung der DNS-Zone Ihrer Domain ist eine Propagationszeit von maximal 24 Stunden erforderlich, bis die Änderungen wirksam sind.
 
-Wenn Sie die Propagationszeit für die nächste Bearbeitung Ihrer OVH DNS-Zone verkürzen möchten, können Sie das bis zu einem gewissen Grad tun, indem Sie die TTL (*Time To Live*) anpassen, die für alle Einträge der DNS-Zone angewandt wird.
-Klicken Sie hierzu in Ihrem Kundencenter im Tab `DNS Zone`{.action} auf den Button `Standardmäßige TTL ändern`{.action} und folgen Sie den angezeigten Schritten. 
+Wenn Sie die Frist für die nächste Bearbeitung Ihrer OVHcloud DNS-Zone verkürzen möchten, können Sie diese bis zu einem gewissen Grad beeinflussen, indem Sie die TTL (*Time To Live*) anpassen, die für alle Einträge in der DNS-Zone gilt.
 
-Sie können auch die TTL eines DNS-Eintrags ändern. Diese Änderung muss jedoch für jeden Eintrag einzeln vorgenommen werden, indem Sie diesen bearbeiten oder bei Hinzufügen die entsprechende TTL angeben.
+Gehen Sie hierzu in Ihrem Kundencenter auf den Tab `DNS Zone`{.action}, klicken Sie auf `Standardmäßige TTL ändern`{.action} und folgen Sie den angezeigten Schritten. 
+
+Sie können auch die TTL eines DNS-Eintrags ändern. Dies kann jedoch nur einzeln bei Hinzufügen oder Bearbeiten eines Eintrages erfolgen.
 
 ## Weiterführende Informationen
 
-[Webhosting − Allgemeine Informationen zu den DNS-Servern](https://docs.ovh.com/de/domains/webhosting_allgemeine_informationen_zu_den_dns_servern/){.external}
+[DNS-Server ändern](../webhosting_allgemeine_informationen_zu_den_dns_servern/){.external}
 
-[Einen SPF-Eintrag zur Konfiguration Ihrer Domain hinzufügen](https://docs.ovh.com/de/domains/webhosting_spf-eintrag/){.external}
+[Einen SPF-Eintrag hinzufügen](../webhosting_spf-eintrag/){.external}
 
-[Schützen Sie Ihre Domain vor Cache Poisoning](https://www.ovh.de/domains/dnssec_dienst.xml){.external}
+[DNSSEC](../sichern_sie_ihre_domain_mit_dnssec_ab/){.external}
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
