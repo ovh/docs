@@ -1,6 +1,6 @@
 ---
-title: 'Configuration d'un machine virtuel avec un Failover IP et d'Hyper-V sur un vRack'
-excerpt: 'Utilisation d'Hyper-V avec des IP de basculement sur un vRack'
+title: "Configuration d'un machine virtuel avec un Failover IP et d'Hyper-V sur un vRack"
+excerpt: "Utilisation d'Hyper-V avec des IP de basculement sur un vRack"
 slug: ipfo-vrack-hyperv
 section: vRack 
 ---

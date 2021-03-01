@@ -1,6 +1,6 @@
 ---
-title: 'Setting up a Virtual Machine using Failover IPs and Hyper-V over a vRack'
-excerpt: 'How to use Hyper-V with Failover-IPs over a vRack'
+title: "Setting up a Virtual Machine using Failover IPs and Hyper-V over a vRack"
+excerpt: "How to use Hyper-V with Failover-IPs over a vRack"
 slug: foip-vrack-hyperv
 section: vRack
 ---
