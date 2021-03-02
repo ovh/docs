@@ -119,25 +119,25 @@ Configurez le système d'exploitation comme vous le souhaite.
 
 Pour les paramètres réseau, définissez une adresse IP statique.
 
-Dans notre exemple, le bloc IP assigné au vRack est 192.99.134.80/29. Voici la répartition du bloc:
+Dans notre exemple, le bloc IP assigné au vRack est 192.xxx.xxx.80/29. Voici la répartition du bloc:
 
 <br>
-192.99.134.80 -  Adresse réseau (Réservé - Inutilisable)<br>
-192.99.134.81 -  Premier IP utilisable<br>
-192.99.134.82<br>
-192.99.134.83<br>
-192.99.134.84<br>
-192.99.134.85 - Dernière adresse IP utilisable<br>
-192.99.134.86 - Passerelle par défaut (Réservée - Inutilisable)<br>
-192.99.134.87 - Adresse de diffusion (Réservé - Inutilisable)<br>
+192.xxx.xxx.80 -  Adresse réseau (Réservé - Inutilisable)<br>
+192.xxx.xxx.81 -  Premier IP utilisable<br>
+192.xxx.xxx.82<br>
+192.xxx.xxx.83<br>
+192.xxx.xxx.84<br>
+192.xxx.xxx.85 - Dernière adresse IP utilisable<br>
+192.xxx.xxx.86 - Passerelle par défaut (Réservée - Inutilisable)<br>
+192.xxx.xxx.87 - Adresse de diffusion (Réservé - Inutilisable)<br>
 <br>
 
-Nous allons utiliser 192.99.134.81 dans notre exemple. La configuration doit se présenter comme ceci:
+Nous allons utiliser 192.xxx.xxx.81 dans notre exemple. La configuration doit se présenter comme ceci:
 
 <br>
-Address: 192.168.134.81<br>
+Address: 192.168.xxx.81<br>
 Subnet Mask: 255.255.255.248<br>
-Gateway: 192.99.134.86<br>
+Gateway: 192.xxx.xxx.86<br>
 DNS: 213.186.33.99 (Vous pouvez mettre un autre DNS si vous le souhaitez)<br>
 <br>
 
