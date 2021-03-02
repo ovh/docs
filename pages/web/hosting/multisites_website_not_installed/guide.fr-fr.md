@@ -64,7 +64,7 @@ Il peut s’agir notamment :
 
 Pour déterminer le nom de l’entreprise qui gère techniquement votre nom de domaine (sous la mention « registrar ») et les serveurs DNS auxquels il est lié, vous pouvez également utiliser notre outil [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl)
 
-> Attention : selon votre nom de domaine, il est possible que ces informations ne soient pas visibles dans le WHOIS. Nous vous invitons alors à vous référer au site du registre de votre nom de domaine (Vous pourrez retrouver ce dernier en tapant `NIC` suivi de l'extension de votre nom de domaine (.com, .fr, etc.) dans votre moteur de recherche).
+> Attention : selon votre nom de domaine, il est possible que ces informations ne soient pas visibles dans le WHOIS. Référez-vous alors au site du registre de votre nom de domaine (Vous pourrez retrouver ce dernier en tapant `NIC` suivi de l'extension de votre nom de domaine (.com, .fr, etc.) dans votre moteur de recherche).
 
 #### Étape 2.2 : Déterminer les serveurs DNS de votre domaine
 
