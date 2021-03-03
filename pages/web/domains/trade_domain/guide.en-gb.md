@@ -14,7 +14,7 @@ Beside [three contacts](https://docs.ovh.com/gb/en/customer/managing-contacts/),
 
 
 [primary!]
->This operation will not move your domain to another account within OVH.
+>This operation will not move your domain to another account within OVHcloud.
 >
 >To do this you need to change [contacts](https://docs.ovh.com/gb/en/customer/managing-contacts/).
 
@@ -70,8 +70,6 @@ New tab in your browser will open with all available domains. Choose domain on t
 
 ![hosting](images/3657.PNG){.thumbnail}
 
-Then you will be asked to fill all changes for the owner. All fields with * needs to be filled. 
-
 
 Once you have confirmed your action, two emails will be sent to confirm or decline this change:
 
@@ -102,7 +100,7 @@ Once the two recipients confirm their agreement via email, the domain name owner
 
 ### Refresh owner information.
 
-If you want to update some information linke phone number, address etc. You do not need to start trade procedure, it can be done by `Refresh owner information`{.action}. With this operation you do not need to confirm changes by email. 
+If you want to update some information like phone number, address etc. You do not need to start trade procedure, it can be done by `Refresh owner information`{.action}. With this operation you do not need to confirm changes by email. 
 
 ![hosting](images/3658.png){.thumbnail}
 
