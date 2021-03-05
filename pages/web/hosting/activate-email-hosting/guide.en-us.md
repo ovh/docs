@@ -18,13 +18,13 @@ If you have ordered a Web Hosting plan without directly linking it to a domain n
 
 - a [domain name](https://www.ovh.com/world/domains/){.external} registered with OVHcloud
 - an [OVHcloud Web Hosting plan](https://www.ovh.com/world/web-hosting/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) with the necessary permissions to manage the Web Hosting plan
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) with the necessary permissions to manage the Web Hosting plan
 
 ## Instructions
 
 ### Activating your email solution
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan that has the email solution.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan that has the email solution.
 
 In the `Configuration` box, you will see `Email addresses`. Click the `...`{.action} button on the right, then `Enable email solution`{.action}.
 
@@ -38,7 +38,7 @@ The activation window appears. Choose the domain name you would like to link you
 
 When your Web Hosting plan expires or needs to be deleted, you can keep your email addresses.
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan that has the email solution.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan that has the email solution.
 
 In the `Configuration` box, click the `...`{.action} button to the right of the `Email addresses` entry, then click the `Detach my email option`{.action} button
 
@@ -54,7 +54,7 @@ You can permanently delete the email solution linked to your Web Hosting plan.
 >
 >This action cannot be undone. You will not be able to reactivate the email solution after it has been cancelled.
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan that has the email solution.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan that has the email solution.
 
 In the `Configuration` box, click the `...`{.action} button to the right of the `Email addresses` entry, then click the `Cancel the email option`{.action} button.
 

@@ -16,7 +16,7 @@ Es kann vorkommen, dass Sie Ihre Public Cloud Instanz von einem Rechenzentrum in
 
 ## Voraussetzungen
 
-* Sie haben eine [Public Cloud Instanz](https://www.ovh.de/public-cloud/instances/){.external} in Ihrem Account erstellt.
+* Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/){.external} in Ihrem Account erstellt.
 * Sie haben Administrator-Zugriff (Root) zu Ihrem Rechenzentrum via SSH.
 * Sie haben die Anleitung „[Vorbereitung der Umgebung für die Verwendung der OpenStack API](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/){.external}“ gelesen (empfohlen).
 

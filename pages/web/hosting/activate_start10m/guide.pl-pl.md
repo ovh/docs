@@ -16,11 +16,11 @@ Usługa [Start 10M](https://www.ovh.pl/domeny/oferta_serwer_start10m.xml){.exter
 ## Wymagania początkowe
 
 - Zarejestrowana [domena](https://www.ovh.pl/domeny/){.external} bez hostingu WWW w panelu klienta OVHcloud.
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij pozycję `Domeny`{.action}(**1**) na pasku usług po lewej stronie, a następnie wybierz odpowiednią domenę.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij pozycję `Domeny`{.action}(**1**) na pasku usług po lewej stronie, a następnie wybierz odpowiednią domenę.
 
 W ramce **Informacje ogólne**(**2**) znajduje się pozycja *Darmowy hosting WWW i e-mail*. Kliknij przycisk `…`{.action} po prawej stronie, a następnie przycisk `Włącz`{.action}(**3**).
 

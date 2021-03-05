@@ -52,7 +52,7 @@ Introduzca su dirección de correo electrónico y haga clic en `Continuar`{.acti
 |Dirección de correo electrónico|Introduzca un nombre que le permita diferenciar su cuenta del resto de cuentas de su aplicación Outlook.|
 |DOMINIO\nombre de usuario o dirección de correo electrónico|Introduzca la dirección de correo electrónico completa.|
 |Contraseña|Introduzca la contraseña de la dirección de correo electrónico.|
-|Servidor|Según la configuración DNS de su dominio, es posible que no sea obligatorio introducir un servidor. Si fuera necesario, indique el servidor en el que está alojado su servicio Exchange. Puede consultar esta información desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la pestaña `Información general`{.action} de su servicio Exchange, en el recuadro **Conexión**.|
+|Servidor|Según la configuración DNS de su dominio, es posible que no sea obligatorio introducir un servidor. Si fuera necesario, indique el servidor en el que está alojado su servicio Exchange. Puede consultar esta información desde el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la pestaña `Información general`{.action} de su servicio Exchange, en el recuadro **Conexión**.|
 
 Una vez introducidos los datos, haga clic en el botón `Agregar cuenta`{.action}. Si son correctos, la aplicación se conectará a la cuenta.
 

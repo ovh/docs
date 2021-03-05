@@ -9,18 +9,18 @@ section: 'Pedidos, facturas y servicios'
 
 ## Objetivo
 
-En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} puede realizar un seguimiento de los pedidos para conocer en qué estado se encuentran.
+En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} puede realizar un seguimiento de los pedidos para conocer en qué estado se encuentran.
 
 **Esta guía explica los diferentes estados por los que pasa una orden de pedido y le ayuda a interpretarla.**
 
 > [!primary]
 >
-> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicio en cuestión, es posible que algunos apartados de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVHcloud aplicables, que encontrará en el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager){.external}. Para ello, haga clic en su nombre en la esquina superior derecha y seleccione `Productos y servicios`{.action}. En la página de administración de sus servicios, haga clic en `Contratos`{.action}.
+> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como del producto o servicio en cuestión, es posible que algunos apartados de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVHcloud aplicables, que encontrará en el [área de cliente](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para ello, haga clic en su nombre en la esquina superior derecha y seleccione `Productos y servicios`{.action}. En la página de administración de sus servicios, haga clic en `Contratos`{.action}.
 >
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 - Haber realizado al menos un pedido en OVHcloud.
 
 
@@ -45,7 +45,7 @@ En cualquier momento puede ver las órdenes de pedido desde el área de cliente 
 
 ### Acceder a las órdenes de pedido desde el área de cliente de OVHcloud
 
-Para gestionar sus pedidos, haga clic en su `Panel de control` en la esquina superior izquierda del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} y seleccione `Ver mis pedidos`{.action}.
+Para gestionar sus pedidos, haga clic en su `Panel de control` en la esquina superior izquierda del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y seleccione `Ver mis pedidos`{.action}.
 
 ![Área de cliente](images/huborders.png){.thumbnail}
 
@@ -76,7 +76,7 @@ Si el estado del pedido es «Entregando...» o «Pago no recibido», podrá ver 
 
 ### Seguimiento de su pedido.
 
-Una vez generado el pedido, puede realizar su seguimiento desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Haga clic en su `Panel de control`, luego en `Ver mis pedidos`{.action} y, por último, en `...`{.action} delante del pedido. Seleccione `Seguimiento de los pedidos`{.action}. También puede visualizar el seguimiento del pedido haciendo clic en el estado de un pedido en la columna «Estado».
+Una vez generado el pedido, puede realizar su seguimiento desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Haga clic en su `Panel de control`, luego en `Ver mis pedidos`{.action} y, por último, en `...`{.action} delante del pedido. Seleccione `Seguimiento de los pedidos`{.action}. También puede visualizar el seguimiento del pedido haciendo clic en el estado de un pedido en la columna «Estado».
 
 ![Seguimiento de los pedidos](images/order05b.png){.thumbnail}
 

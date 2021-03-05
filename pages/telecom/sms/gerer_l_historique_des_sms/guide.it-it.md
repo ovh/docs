@@ -28,7 +28,7 @@ I dettagli elencati nella cronologia includono la data, l’ora, il mittente, il
 
 ### Step 1: consulta la cronologia dal tuo Spazio Cliente
 
-Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager) e seleziona `Telecom` (1). Quindi clicca su `SMS` a sinistra (2) e seleziona il tuo account SMS (3).
+Accedi allo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Telecom` (1). Quindi clicca su `SMS` a sinistra (2) e seleziona il tuo account SMS (3).
 
 Nella barra delle schede, seleziona `SMS`{.action} (4) e poi `Cronologia dei messaggi inviati`{.action} (5).
 

@@ -23,7 +23,7 @@ Diese IPFOs können nur für Instanzen desselben Projekts migriert werden.
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) eingeloggt.
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
 - Sie verfügen über mindestens eine Instanz. Konsultieren Sie hierzu [die Anleitung zur Erstellung einer Instanz von Ihrem Kunden-Account aus](../erstellung_einer_instanz_im_ovh_kundencenter/).
 
 ## In der praktischen Anwendung
@@ -73,7 +73,7 @@ Anschließend wird ein Bestellschein erstellt. Erlauben Sie die Anzeige von Pop-
 
 ![failoverIP](images/buyfailoverip3.png){.thumbnail}
 
-Sie können den Bestellschein auch in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) finden, indem Sie auf `Mein Account`{.action} klicken und dann auf `Meine Bestellungen`{.action}.
+Sie können den Bestellschein auch in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) finden, indem Sie auf `Mein Account`{.action} klicken und dann auf `Meine Bestellungen`{.action}.
 
 ![failoverIP](images/buyfailoverip4.png){.thumbnail}
 

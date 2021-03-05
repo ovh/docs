@@ -17,7 +17,7 @@ A solução [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/produc
 ## Requisitos
 
 * Dispor do serviço [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/){.external}.
-* Dar ao utilizador a autorização [“Adição de recursos”](../alterar-os-direitos-de-um-utilizador/){.external} quanto ao datacenter em causa a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Dar ao utilizador a autorização [“Adição de recursos”](../alterar-os-direitos-de-um-utilizador/){.external} quanto ao datacenter em causa a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 * Estabelecer uma ligação ao cliente vSphere.
 
 ## Instruções

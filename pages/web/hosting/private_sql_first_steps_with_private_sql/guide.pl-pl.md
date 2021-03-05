@@ -17,13 +17,13 @@ Rozwiązanie Private SQL umożliwia korzystanie z instancji SQL, posiadającej d
 
 - Posiadanie usługi Private SQL (zawartego w ofercie [pakiecie hostingowym](https://www.ovh.pl/hosting/){.external} lub zakupionego w ramach [opcji SQL](https://www.ovh.pl/hosting/opcje-sql.xml){.external}).
 - Posiadanie [hostingu](https://www.ovh.pl/hosting/){.external} znajdującego się w tym samym centrum danych co instancja Private SQL (informacja ta widoczna jest w Panelu klienta OVH).
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
 
 ### Włączenie prywatnego serwera SQL zawartego w ofercie hostingu
 
-Jeśli Twój hosting zawiera opcję prywatnego serwera SQL, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. W sekcji `Web Cloud`{.action} kliknij `Hosting`{.action} w kolumnie z lewej strony.
+Jeśli Twój hosting zawiera opcję prywatnego serwera SQL, przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W sekcji `Web Cloud`{.action} kliknij `Hosting`{.action} w kolumnie z lewej strony.
 
 W zakładce `Informacje ogólne` w ramce `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie prywatnej **bazy danych**. Następnie kliknij przycisk `Aktywuj`{.action}, aby rozpocząć proces aktywacji.
 
@@ -33,7 +33,7 @@ Aby sfinalizować operację, postępuj zgodnie z instrukcjami podanymi poniżej,
 
 ### Ogólne informacje o instancji
 
-Na pasku usług po lewej stronie [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} wybierz sekcję `Bazy danych`{.action}, a następnie określoną instancję SQL. Następnie wybierz zakładkę `Informacje ogólne`{.action}.
+Na pasku usług po lewej stronie [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} wybierz sekcję `Bazy danych`{.action}, a następnie określoną instancję SQL. Następnie wybierz zakładkę `Informacje ogólne`{.action}.
 
 > [!primary]
 >

@@ -15,14 +15,14 @@ Die Berechtigungen und Passwörter von Nutzern des vSphere Clients werden im OVH
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Im OVHcloud Kundencenter wurde ein Nutzeraccount für Sie angelegt.  Bitte entnehmen Sie [dieser Anleitung](../manager-ovh-private-cloud/#benutzer) weitere Informationen.
 
 ## In der praktischen Anwendung
 
 ### Passwort ändern
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und wählen Sie dann den Bereich `Hosted Private Cloud` (1). Klicken Sie im linken Menü auf `Private Cloud` (2) und wählen Sie die betreffende Infrastruktur aus (3). Klicken Sie dann auf den Tab `Nutzer`{.action} (4).
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie dann den Bereich `Hosted Private Cloud` (1). Klicken Sie im linken Menü auf `Private Cloud` (2) und wählen Sie die betreffende Infrastruktur aus (3). Klicken Sie dann auf den Tab `Nutzer`{.action} (4).
 
 ![Zugang zum Kundencenter](images/userpassword1.png){.thumbnail}
 

@@ -42,7 +42,7 @@ Následně budete požádáni o zadání následujících informací:
 |Heslo|Zadejte heslo ke svému e-mailovému účtu.|
 |Uživatelské jméno|Zadejte e-mailovou adresu.|
 |Doména|Ponechte prázdné.|
-|Server|Zadejte server, na kterém je Vaše služba Exchange hostována.  Informace o serveru naleznete ve svém [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (záložka `Obecné informace`{.action} u příslušné služby Exchange, box `Připojení`{.action}).|
+|Server|Zadejte server, na kterém je Vaše služba Exchange hostována.  Informace o serveru naleznete ve svém [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} (záložka `Obecné informace`{.action} u příslušné služby Exchange, box `Připojení`{.action}).|
 |Server vyžaduje šifrované připojení (SSL)|Toto pole ponechte zaškrtnuté.|
 |Název účtu|Zadejte název, díky kterému účet rozpoznáte mezi ostatními účty v aplikaci Pošta.|
 

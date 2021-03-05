@@ -21,13 +21,13 @@ DNS zóna představuje konfigurační soubor domény. DNS zóna je tvořena DNS 
 - Doména
 - Doména nesmí disponovat DNS zónou OVH a zároveň nesmí být předmětem probíhající operace či objednávky ze strany společnosti OVH.
 - Doména musí být správně nakonfigurována (stav, SOA záznam apod.)
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Postup
 
 ### Fáze 1: vytvoření DNS zóny prostřednictvím Zákaznického prostoru OVH
 
-Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, v levém postranním panelu klikněte na tlačítko `Objednat`{.action} a ze seznamu vyberte možnost `DNS zóna`{.action}.
+Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, v levém postranním panelu klikněte na tlačítko `Objednat`{.action} a ze seznamu vyberte možnost `DNS zóna`{.action}.
 
 Zadejte název domény, pro níž si DNS zónu přejete vytvořit. Vyčkejte, dokud nástroj neověří aktuální konfiguraci domény.
 
@@ -50,7 +50,7 @@ Potvrďte svůj souhlas se smluvními podmínkami a klikněte na tlačítko `Gen
 
 Po vytvoření DNS zóny můžete upravit její konfiguraci. Tento krok je dobrovolný, může však být nezbytný v případě potřeby zajistit kontinuitu dostupnosti služeb asociovaných s danou doménou (např. webové stránky a e-maily).
 
-Za účelem úpravy konfigurace DNS zóny se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, v levém postranním panelu klikněte na položku `Domény`{.action} a následně vyberte doménu, v jejímž rámci si požadované úpravy přejete provést. V základním rozhraní pro správu domény klikněte na záložku `DNS zóna`{.action}.
+Za účelem úpravy konfigurace DNS zóny se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, v levém postranním panelu klikněte na položku `Domény`{.action} a následně vyberte doménu, v jejímž rámci si požadované úpravy přejete provést. V základním rozhraní pro správu domény klikněte na záložku `DNS zóna`{.action}.
 
 > [!primary]
 >

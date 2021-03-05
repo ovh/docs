@@ -90,7 +90,7 @@ Lorsque nous avons reçu votre équipement, vous recevez cet e-mail :
 
 Si une caution est restituée, elle sera disponible sur votre compte OVHcloud pour payer vos prochaines factures. Si vous le souhaitez , vous pouvez en demander le versement sur votre compte bancaire via ces étapes :
 
--   connectez vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), partie **Telecom** ;
+-   connectez vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), partie **Telecom** ;
 -   cliquez sur **Téléphonie**;****
 -   cliquez sur le bouton "**Groupe**" ;
 -   cliquez sur "**Facturation**" ;

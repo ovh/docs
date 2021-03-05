@@ -19,13 +19,13 @@ Als u de accounts wilt gebruiken die bij een Exchange-dienst zijn geleverd, moet
 - U moet beschikken over een [Exchange-oplossing](https://www.ovh.nl/emails/){.external}.
 - U moet beschikken over meerdere domeinnamen. 
 - U moet het recht hebben om de configuratie van uw domeinnaam te wijzigen (via de DNS-zone).
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 
 ## Instructies
 
 ### Stap 1: Ga naar het beheer van uw dienst
 
-Nadat uw Exchange is aangemaakt en beschikbaar is, kunt u deze beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Nadat uw Exchange is aangemaakt en beschikbaar is, kunt u deze beheren vanuit uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 Hiervoor logt u in, klikt u op `Microsoft`{.action}, en vervolgens op `Exchange`{.action} in de linkerbalk van de dienst. Selecteer dan de naam van de betreffende Exchange-dienst. 
 
@@ -108,7 +108,7 @@ In the directory kunnen alle adressen die op uw Exchange-dienst zijn gemaakt, al
 
 Nadat u uw accounts hebt geconfigureerd, hoeft u ze alleen nog maar te gebruiken! Hiervoor biedt OVH de *webmail* **Outlook Web Application** (OWA), die u kunt openen via de link: [https://www.ovh.nl/mail/](https://www.ovh.nl/mail/){.external}. Als u de manier wilt optimaliseren waarop u uw Exchange-e-mailadres op een e-mailclient gebruikt, moet u ervoor zorgen dat deze compatibel is met de dienst. Als u uw e-mailadres wilt configureren in een e-mailprogramma of een apparaat (zoals een smartphone of een tablet), raadpleeg dan onze documentatie op: [https://docs.ovh.com/nl/microsoft-collaborative-solutions/](https://docs.ovh.com/nl/microsoft-collaborative-solutions/){.external}.
 
-OVH biedt Outlook-licenties in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} en Office 365-licenties op de pagina: [https://www.ovh.nl/office-365/](https://www.ovh.nl/office-365/){.external}. We raden u aan een van deze oplossingen te gebruiken als u de Outlook-e-mailclient of andere software van de Microsoft Office-suite wilt gebruiken.
+OVH biedt Outlook-licenties in het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en Office 365-licenties op de pagina: [https://www.ovh.nl/office-365/](https://www.ovh.nl/office-365/){.external}. We raden u aan een van deze oplossingen te gebruiken als u de Outlook-e-mailclient of andere software van de Microsoft Office-suite wilt gebruiken.
 
 ## Verder
 

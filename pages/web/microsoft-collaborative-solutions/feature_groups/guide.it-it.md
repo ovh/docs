@@ -18,7 +18,7 @@ I gruppi Exchange consentono agli utenti di comunicare inviando email a un unico
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Disporre di una [soluzione Exchange OVHcloud](https://www.ovh.it/emails/hosted-exchange/) attiva
 
 
@@ -26,7 +26,7 @@ I gruppi Exchange consentono agli utenti di comunicare inviando email a un unico
 
 ### Step 1: crea un nuovo gruppo
 
-Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), sezione “Web”, e seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action} nel menu a sinistra. Clicca sulla scheda `Gruppi`{.action} nel menu orizzontale.
+Per prima cosa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione “Web”, e seleziona il tuo servizio cliccando su `Microsoft`{.action} > `Exchange`{.action} nel menu a sinistra. Clicca sulla scheda `Gruppi`{.action} nel menu orizzontale.
 
 ![contactgroups](images/exchange-groups-step1.png){.thumbnail}
 
@@ -37,7 +37,7 @@ Quindi clicca su `Crea un gruppo di contatti`{.action}. A questo punto, si apre 
 |Nome|Descrizione|
 |---|---|
 |Indirizzo email|Il nuovo indirizzo email per inviare messaggi alla Mailing List. Attenzione: non utilizzare un indirizzo email già esistente.|
-|Nome del gruppo|Il nome che appare nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e nella [Webmail OVHcloud](https://www.ovh.it/mail/) (OWA).|
+|Nome del gruppo|Il nome che appare nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e nella [Webmail OVHcloud](https://www.ovh.it/mail/) (OWA).|
 |Dimensione massima di entrata/uscita|Puoi specificare la dimensione massima dei messaggi in entrata e in uscita.|
 |Nascondi in Outlook|Se spunti questa casella, l’indirizzo email del gruppo non apparirà nella lista degli indirizzi del servizio Exchange.|
 |Autenticazione richiesta|Se spunti questa casella, solo gli utenti della stessa piattaforma potranno inviare un messaggio tramite l’indirizzo email del gruppo.|

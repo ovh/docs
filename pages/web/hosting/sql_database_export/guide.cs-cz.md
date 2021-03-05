@@ -19,13 +19,13 @@ Databáze umožňují ukládání tzv. dynamických prvků (uživatelé, koment�
 
 - Některý z [webhostingových balíčků OVH](https://www.ovh.cz/webhosting/){.external}.
 - Databáze vytvořená v rámci [webhostingového řešení OVH](https://www.ovh.cz/webhosting/){.external}.
-- V závislosti na zvolené zálohovací metodě budete potřebovat přístup do administračního rozhraní příslušného webhostingu prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, nebo alespoň přihlašovací údaje pro připojení k příslušné databázi.
+- V závislosti na zvolené zálohovací metodě budete potřebovat přístup do administračního rozhraní příslušného webhostingu prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, nebo alespoň přihlašovací údaje pro připojení k příslušné databázi.
 
 ## Postup
 
 Než začnete, rozhodněte se, kterou metodu pro export databázové zálohy použijete. Za tímto účelem je k dispozici několik možností, které se vzájemně liší co do časové náročnosti a technických znalostí v dané oblasti.
 
-- **Export zálohy prostřednictvím Zákaznického prostoru**: toto řešení umožňuje stažení záloh Vašich databází pomocí [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Tato metoda nevyžaduje žádné specifické technické znalosti a lze je iniciovat prostřednictvím Zákaznického prostoru OVH.
+- **Export zálohy prostřednictvím Zákaznického prostoru**: toto řešení umožňuje stažení záloh Vašich databází pomocí [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Tato metoda nevyžaduje žádné specifické technické znalosti a lze je iniciovat prostřednictvím Zákaznického prostoru OVH.
 
 - **Export zálohy prostřednictvím webového rozhraní phpMyAdmin**: toto řešení vyžaduje znalost rozhraní phpMyAdmin. 
 
@@ -46,7 +46,7 @@ V závislosti na zvolené metodě přejděte do příslušné části této př�
 
 ### Export zálohy prostřednictvím Zákaznického prostoru
 
-Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V základním rozhraní pro správu webhostingu klikněte na záložku `Databáze`{.action}.
+Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V základním rozhraní pro správu webhostingu klikněte na záložku `Databáze`{.action}.
 
 Tabulka obsahuje přehled všech databází vytvořených na příslušném webhostingu. V závislosti na tom, zda si přejete vytvořit novou zálohu nebo exportovat již existující zálohu, postupujte podle následujících instrukcí:
 
@@ -77,7 +77,7 @@ Pro stažení zálohy klikněte na ikonku tří teček v pravé části tabulky 
 
 ### Export zálohy prostřednictvím webového rozhraní phpMyAdmin
 
-Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V základním rozhraní pro správu webhostingu klikněte na záložku `Databáze`{.action}.
+Ze všeho nejdříve se přihlaste do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte webhostingové řešení, v jehož rámci si přejete provést požadované úpravy. V základním rozhraní pro správu webhostingu klikněte na záložku `Databáze`{.action}.
 
 Tabulka obsahuje přehled všech databází vytvořených na příslušném webhostingu. Klikněte na ikonku tří teček v pravé části tabulky a vyberte možnost `Jít do phpMyAdmin`{.action}.
 

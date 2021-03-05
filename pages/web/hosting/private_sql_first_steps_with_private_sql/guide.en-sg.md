@@ -17,13 +17,13 @@ With the Private SQL service, you can get an SQL instance that works hand-in-han
 
 - You must have a Private SQL instance (included in [web hosting plans](https://www.ovh.com/sg/web-hosting/){.external}, or available to order as an [SQL option](https://www.ovh.com/sg/web-hosting/sql-options.xml){.external}).
 - You must have a [web hosting plan](https://www.ovh.com/sg/web-hosting/){.external} hosted in the same datacentre as your Private SQL instance (you can view this information in your OVHcloud Control Panel).
-- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}.
 
 ## Instructions
 
 ## Private SQL server activation included with your Web Hosting plan
 
-If your hosting plan includes the Private SQL option, go to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. In the `Web Cloud`{.action} section, click `Web Hosting`{.action} in the left-hand column.
+If your hosting plan includes the Private SQL option, go to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}. In the `Web Cloud`{.action} section, click `Web Hosting`{.action} in the left-hand column.
 
 In the `General information` tab, in the `Configuration` box, click the `...`{.action} button to the right of **Private** database. Then click `Enable`{.action} to start the activation process.
 
@@ -33,7 +33,7 @@ To complete the activation, follow the instructions to determine the type and ve
 
 ### View general information on the instance
 
-In the services bar on the left-hand side of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}, go to the `Databases`{.action} section, then to the SQL instance concerned. Click on the `General information`{.action} tab.
+In the services bar on the left-hand side of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, go to the `Databases`{.action} section, then to the SQL instance concerned. Click on the `General information`{.action} tab.
 
 > [!primary]
 >

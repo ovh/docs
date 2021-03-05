@@ -16,8 +16,8 @@ Zjistěte, k čemu slouží CNAME záznam a jak ho přidat v rozhraní OVH
 
 ## Prerekvizity
 
-- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Administrátorská práva ke službě Exchange v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+- Administrátorská práva ke službě Exchange v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - Předtím, než požádáte o přidání CNAME záznamu, musíte ke své službě Exchange přidat doménu.
 - Dostatečná práva pro provádění úprav v konfiguraci domény (resp. v její DNS zóně).
 

@@ -46,7 +46,7 @@ Objeví se okno s žádostí o zadání **přístupového hesla** k dané e-mail
 >
 > Pokud se objeví hlášení o tom, že aplikace Outlook nebyla schopna Váš účet nastavit, může to znamenat, že OVH SRV záznam nebyl v DNS zóně domény správně nakonfigurován.
 >
-> V takovém případě prosím ověřte konfiguraci domény nastavené ve Vaší službě Exchange. Za tímto účelem přejděte do [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (záložka `Asociované domény`{.action}, sloupeček `Diagnostika`{.action}).
+> V takovém případě prosím ověřte konfiguraci domény nastavené ve Vaší službě Exchange. Za tímto účelem přejděte do [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} (záložka `Asociované domény`{.action}, sloupeček `Diagnostika`{.action}).
 >
 
 Pokud je Vaše doména nakonfigurována správně, zobrazí se žádost o autorizaci připojení k serveru OVH. Za účelem provedení automatické konfigurace Vašeho Exchange účtu žádost potvrďte.

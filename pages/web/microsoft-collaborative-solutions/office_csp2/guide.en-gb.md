@@ -22,7 +22,7 @@ An Office 365 licence can be used on 5 PCs/Macs, 5 tablets and 5 smartphones. Yo
 
 ### Access Office 365 Reseller service management
 
-Once the Office 365 service has been created and is available, you can manage it from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Once the Office 365 service has been created and is available, you can manage it from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 
 To do this, log in and go to the `Sunrise`{.action} section. In the left-hand menu, choose `Office 365 Resellers`{.action}, then select the service.
 

@@ -122,7 +122,7 @@ Se mostrarán los siguientes datos:
 
 - Nombre de usuario: Su dirección de correo electrónico completa.
 
-- Contraseña: La contraseña de su cuenta de correo que haya indicado en el [área de cliente](https://www.ovh.com/manager/web/login.html).
+- Contraseña: La contraseña de su cuenta de correo que haya indicado en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)).
 
 - Servidor de correo saliente (SMTP): El servidor de correo saliente que haya configurado en la cuenta.
 
@@ -162,7 +162,7 @@ En «Avanzado»:
 
 - Nombre de usuario: Su dirección de correo electrónico completa.
 
-- Contraseña: La contraseña de su cuenta de correo que haya indicado en el [área de cliente](https://www.ovh.com/manager/web/login.html).
+- Contraseña: La contraseña de su cuenta de correo que haya indicado en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)).
 
 
 
@@ -188,7 +188,7 @@ Para configurar una cuenta de correo POP, necesitará la información que se ind
 Configuración POP con la protección SSL activada o desactivada:
 
 Dirección de correo: Dirección de correo electrónico completa.
-Contraseña: La contraseña introducida en el [área de cliente](https://www.ovh.com/manager/web/login/) para la cuenta de correo.
+Contraseña: La contraseña introducida en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) para la cuenta de correo.
 Nombre de usuario: Dirección de correo electrónico completa.
 Servidor de correo entrante: El servidor de recepción SSL0.OVH.NET.
 Puerto del servidor entrante:995 o 110.
@@ -213,7 +213,7 @@ Para configurar una cuenta de correo IMAP, necesitará la información que se in
 Configuración IMAP con la protección SSL activada o desactivada:
 
 Dirección de correo: Dirección de correo electrónico completa.
-Contraseña: La contraseña introducida en el [área de cliente](https://www.ovh.com/manager/web/login/) para la cuenta de correo.
+Contraseña: La contraseña introducida en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) para la cuenta de correo.
 Nombre de usuario: Dirección de correo electrónico completa.
 Servidor de correo entrante: El servidor de recepción SSL0.OVH.NET.
 Puerto del servidor entrante:993 o 143.

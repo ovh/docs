@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated September 29, 2020.**
+**Last updated February 17, 2021.**
 
 <style>
  pre {
@@ -76,6 +76,8 @@ In any case, there are some ports that you shouldn't block on your instances if 
 ### Ports to open from instances to public network (OUTPUT)
 
 - TCP Port 8090 (*internal service*): needed for nodes management by OVH
+- UDP Port 123: needed to allow NTP servers synchronization (*systemd-timesync*)
+- TCP/UDP Port 53: needed to allow domain name resolution (*systemd-resolve*)
 
 ### Ports to open from others worker nodes (INPUT/OUPUT)
 
@@ -99,6 +101,7 @@ If you try to decrease the storage size, you will get a message like:
 ```bash
 The PersistentVolumeClaim "mysql-pv-claim" is invalid: spec.resources.requests.storage: Forbidden: field can not be less than previous value
 ```
+
 For more details, please refer to the [Resizing Persistent Volumes documentation](../resizing-persistent-volumes/).
 
 The Persistent Volumes are using our Cinder-based block-storage solution through Cinder CSI.

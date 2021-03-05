@@ -52,7 +52,7 @@ Aparecerá uma janela de segurança a solicitar-lhe a **palavra-passe** do ender
 >
 > Se aparecer uma mensagem indicando que o Outlook não pôde configurar a sua conta, é possível que o campo SRV da OVH não esteja corretamente configurado na zona DNS do seu domínio.
 >
-> Verifique se a configuração do domínio no seu serviço Exchange na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na janela `Domínios associados`{.action} na coluna `Diagnóstico`{.action} da tabela.
+> Verifique se a configuração do domínio no seu serviço Exchange na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na janela `Domínios associados`{.action} na coluna `Diagnóstico`{.action} da tabela.
 >
 
 Se a configuração do domínio estiver correta, aparecerá uma mensagem solicitando-lhe que autorize a ligação para o servidor da OVH. Aceite este pedido para permitir a configuração automática da sua conta Exchange.

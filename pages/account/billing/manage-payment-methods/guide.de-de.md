@@ -15,12 +15,12 @@ Ihr OVHcloud Kunden-Account ermöglicht Ihnen, verschiedene Zahlungsarten zu hin
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) eingeloggt.
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
 - Sie verfügen über eine gültige Zahlungsart.
 
 ## In der praktischen Anwendung
 
-Klicken Sie auf Ihren Namen oben rechts im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) und wählen Sie dann im Menü `Zahlungsmittel`{.action}.
+Klicken Sie auf Ihren Namen oben rechts im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und wählen Sie dann im Menü `Zahlungsmittel`{.action}.
 
 ![manage-payment-methods](images/hubpayment.png){.thumbnail}
 

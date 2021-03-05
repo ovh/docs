@@ -10,7 +10,7 @@ section: 'Gestión del proyecto'
 
 ## Objetivo
 
-Cuando ya no necesite su proyecto de [Public Cloud]({ovh_www}/public-cloud/){.external}, puede eliminarlo directamente desde el panel de control, accediendo al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Cuando ya no necesite su proyecto de [Public Cloud]({ovh_www}/public-cloud/){.external}, puede eliminarlo directamente desde el panel de control, accediendo al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 Cuando elimine su proyecto de Public Cloud, se creará una factura final en concepto del resto de lo que debe pagar.
 
@@ -24,11 +24,11 @@ Tenga en cuenta que eliminar un proyecto no es lo mismo que desactivar sus insta
 ## Requisitos
 
 * un proyecto [Public Cloud]({ovh_www}/public-cloud/){.external} en su cuenta de OVHcloud
-* Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* Tener acceso al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}
 
 ## Procedimiento
 
-En primer lugar, inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} para acceder al panel de control y, seguidamente, haga clic en el menú `Public Cloud`{.action}.
+En primer lugar, inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} para acceder al panel de control y, seguidamente, haga clic en el menú `Public Cloud`{.action}.
 
 A continuación, haga clic en `Configuración del proyecto`{.action}, debajo de «Gestión de proyectos».
 

@@ -19,13 +19,13 @@ To use the accounts included with an Exchange service, you will need to add a do
 - You must have an [Exchange solution](https://www.ovh.lt/El_pastas/){.external}.
 - You must have one or several domain names.
 - You must have the right to modify your domain name’s configuration (via its DNS zone).
-- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Instructions
 
 ### Step 1: Log in to your service’s interface
 
-Once your Exchange service has been created and is available, you can manage it from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Once your Exchange service has been created and is available, you can manage it from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 To do this, log in and click `Microsoft`{.action}, then `Exchange`{.action} in the left-hand services bar. Then select the name of the Exchange service concerned.
 
@@ -108,7 +108,7 @@ As a reminder, all of the addresses created on your Exchange service can view al
 
 Once you have finished configuring your accounts, you can now start using them. To do this, OVH offers the *webmail* **Outlook Web Application** (OWA) which you can access via the following link: [https://www.ovh.lt/mail/](https://www.ovh.lt/mail/){.external}. To optimise the way you use your Exchange email address on an email client, ensure that it is compatible with the service. If you would like to configure your email address on an email client, a device such as a smartphone or tablet, or if you would like assistance regarding Exchange features, please refer to the documentation accessible via this portal: [https://docs.ovh.com/lt/microsoft-collaborative-solutions/](https://docs.ovh.com/lt/microsoft-collaborative-solutions/){.external}.
 
-You can get Outlook licences in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, and Office 365 licences on the following page: [https://www.ovh.lt/office-365/](https://www.ovh.lt/office-365/){.external}. We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
+You can get Outlook licences in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, and Office 365 licences on the following page: [https://www.ovh.lt/office-365/](https://www.ovh.lt/office-365/){.external}. We recommend using one of these solutions if you would like to use the Outlook email client, or other software from the Microsoft Office suite.
 
 ## Go further
 

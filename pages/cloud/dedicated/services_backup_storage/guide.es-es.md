@@ -17,7 +17,7 @@ Todos los [servidores dedicados](https://www.ovh.es/servidores_dedicados/){.exte
 ## Requisitos
 
 - Tener un [servidor dedicado](https://www.ovh.es/servidores_dedicados/){.external}.
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Dedicado`{.action}.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Dedicado`{.action}.
 
 
 ## Procedimiento

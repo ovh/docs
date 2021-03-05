@@ -34,7 +34,7 @@ Verificar o modo rescue também ajuda a determinar se existe um problema relacio
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - Ter o seu [VPS OVHcloud](https://www.ovhcloud.com/pt/vps/){.external} já configurado.
 
 > [!warning]
@@ -46,7 +46,7 @@ Verificar o modo rescue também ajuda a determinar se existe um problema relacio
 
 ### Ativação do modo rescue
 
-Ligue-se à sua Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager), aceda à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na lista de navegação à esquerda em `VPS`{.action}.
+Ligue-se à sua Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Bare Metal Cloud`{.action} e selecione o seu servidor na lista de navegação à esquerda em `VPS`{.action}.
 
 #### Com uma oferta VPS atual
 
@@ -70,10 +70,10 @@ Depois de iniciar a reinicialização, uma barra de progresso indica o avanço d
 
 > [!primary]
 >
-> Receberá um email automatizado com as informações de identificação SSH para aceder ao modo rescue. Aguarde a receção do e-mail antes de tomar qualquer outra medida. Este e-mail também está disponível na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Para aceder, clique no seu ID de cliente OVHcloud no canto superior direito e selecione `E-mails de serviço`{.action}.
+> Receberá um email automatizado com as informações de identificação SSH para aceder ao modo rescue. Aguarde a receção do e-mail antes de tomar qualquer outra medida. Este e-mail também está disponível na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para aceder, clique no seu ID de cliente OVHcloud no canto superior direito e selecione `E-mails de serviço`{.action}.
 >
 
-Pode desde já conectar-se ao VPS via SSH, utilizando as informações de identificação do modo rescue. Uma vez terminadas as ações em modo de rescue, reinicie o VPS em modo "normal" a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+Pode desde já conectar-se ao VPS via SSH, utilizando as informações de identificação do modo rescue. Uma vez terminadas as ações em modo de rescue, reinicie o VPS em modo "normal" a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Quer saber mais?
 

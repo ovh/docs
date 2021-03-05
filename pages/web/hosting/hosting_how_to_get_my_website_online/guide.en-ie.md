@@ -19,7 +19,7 @@ There are a multitude of different websites on the internet. Whether you are cre
 - You must have an [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}.
 - You must have received an email confirming that your Web Hosting plan has been set up.
 - You must have a [domain name](https://www.ovh.ie/domains/){.external} that can be used to access your website.
-- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Instructions
 
@@ -62,7 +62,7 @@ Make sure you have all the files for the website that you are looking to publish
 
 If you have an FTP username, a password and a server address, you will be able to log in to your storage space. These elements were sent to you in the email informing you that your OVH Web Hosting plan had been set up. If you are no longer in possession of the password, refer to the instructions set out in this guide: [“Changing the password for an FTP user”](https://docs.ovh.com/ie/en/hosting/modify-ftp-user-password/){.external}.
 
-To obtain the server address or username to allow you to access your storage space, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then click on `Hosting Plans`{.action} in the service bar on the left. Select the name of the hosting plan concerned and click on the `FTP - SSH`{.action} tab.
+To obtain the server address or username to allow you to access your storage space, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, then click on `Hosting Plans`{.action} in the service bar on the left. Select the name of the hosting plan concerned and click on the `FTP - SSH`{.action} tab.
 
 ![siteinstallation](images/get-website-online-step1.png){.thumbnail}
 
@@ -103,7 +103,7 @@ If you are migrating an existing website, you can recover your existing database
 
 If you already have a database and wish to use it (from an [OVH Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}, a [Private SQL](https://www.ovh.ie/web-hosting/sql-options.xml){.external}, or a [Cloud DB](https://www.ovh.ie/cloud/cloud-databases/){.external}) you will need your username and password, the name of the database and the address of the server. You can now proceed to the next step.
 
-If you want to create a new database with OVH, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then click on `Hosting plans`{.action} in the services bar on the left. Select the name of the hosting plan concerned and click on the `Database`{.action} tab.
+If you want to create a new database with OVH, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, then click on `Hosting plans`{.action} in the services bar on the left. Select the name of the hosting plan concerned and click on the `Database`{.action} tab.
 
 Now click the `Create a database`{.action} button, or, if this button is not shown, click on `Actions`{.action}, then on `Create a database`{.action}. Follow the instructions shown.
 

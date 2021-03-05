@@ -16,7 +16,7 @@ A sigla HA (High Availability) significa que a OVH se compromete em garantir um 
 A oferta NAS está disponível em França (datacenters de Roubaix, Estrasburgo, Gravelines) e no Canadá (datacenter de Beauharnois). A seleção do datacenter é efetuada durante o processo de contratação. ATENÇÃO: depois de registado o pedido, o datacenter já não pode ser alterado.
 
 ### É possível obter o NAS-HA através da área de gestão do serviço?
-Sim, esta ferramenta está disponível na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, secção `Cloud`{.action}, subsecção `Plataformas e serviços`{.action}.
+Sim, esta ferramenta está disponível na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, secção `Cloud`{.action}, subsecção `Plataformas e serviços`{.action}.
 
 ### É possível aumentar a capacidade total do meu NAS?
 Depois de registado o pedido, já não é possível aumentar a capacidade de armazenamento. Para aumentar a capacidade de armazenamento, terá que migrar os seus dados para um NAS com maior espaço de armazenamento.
@@ -39,7 +39,7 @@ Os discos do NAS-HA são dedicados. Os outros recursos (RAM, CPU, Banda Larga) s
 **Exceção:** se subscrever a oferta de 26,4 TB, todos os recursos do servidor de alojamento são dedicados.
 
 ### Quais são os períodos de subscrição do NAS-HA?
-O serviço pode ser contratado por 1, 3, 6 e 12 meses. Se não houver qualquer cancelamento, o serviço é renovado no final do período da subscrição. O cancelamento pode ser efetuado a qualquer momento, através da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+O serviço pode ser contratado por 1, 3, 6 e 12 meses. Se não houver qualquer cancelamento, o serviço é renovado no final do período da subscrição. O cancelamento pode ser efetuado a qualquer momento, através da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ### O armazenamento anunciado corresponde ao espaço útil disponível?
 À semelhança da maior parte das soluções de alojamento, a capacidade potencial difere ligeiramente da capacidade útil. O sistema precisa sempre de reservar uma parcela de espaço para poder operar o disco.
@@ -131,7 +131,7 @@ A frequência das Snapshots está predefinida para ser executada de hora em hora
 - semanal. 
 
 
-Também pode criar Snapshots manuais a qualquer momento. Esta funcionalidade pode ser acedida através da [Área de Cliente ](https://www.ovh.com/auth/?action=gotomanager){.external} ou através da[API](https://api.ovh.com/){.external}:
+Também pode criar Snapshots manuais a qualquer momento. Esta funcionalidade pode ser acedida através da [Área de Cliente ](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} ou através da[API](https://api.ovh.com/){.external}:
 
 > [!api]
 >

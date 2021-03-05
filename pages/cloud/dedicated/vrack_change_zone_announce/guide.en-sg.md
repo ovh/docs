@@ -9,13 +9,13 @@ section: vRack
 
 ## Objective
 
-The [vRack]({https://www.ovh.com/sg/solutions/vrack/){.external} is a private network that allows you to configure the address between two or more [OVHcloud dedicated servers](https://www.ovhcloud.com/en-sg/bare-metal/){.external}.
+The [vRack](https://www.ovh.com/sg/solutions/vrack/){.external} is a private network that allows you to configure the address between two or more [OVHcloud dedicated servers](https://www.ovhcloud.com/en-sg/bare-metal/){.external}.
 
 **Learn how to set the announcement zone of an IP block in vRack.**
 
 ## Requirements:
 
-- a [vRack]({https://www.ovh.com/sg/solutions/vrack/){.external}
+- a [vRack](https://www.ovh.com/sg/solutions/vrack/){.external}
 - a [configured block of IP addresses in the vRack](../ip-block-vrack/)
 - basic network knowledge
 
@@ -48,7 +48,7 @@ Go to <https://ca.api.ovh.com/console/>, then sign in with your OVHcloud custome
 > @api {GET} /vrack#GET
 > 
 
-This API allows you to retrieve the list of vRack services. If you can't identify the service concerned with these references, they can be found in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}. To do this, go to the “Cloud” section, then “vRack”.
+This API allows you to retrieve the list of vRack services. If you can't identify the service concerned with these references, they can be found in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}. To do this, go to the “Cloud” section, then “vRack”.
 
 > [!api]
 >

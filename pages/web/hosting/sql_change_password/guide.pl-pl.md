@@ -17,7 +17,7 @@ Baza danych (z ang.*database* lub w skrócie „DB”) umożliwia przechowywanie
 ## Wymagania początkowe
 
 - Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external}
-- Dostęp do interfejsu zarządzania hostingiem w [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do interfejsu zarządzania hostingiem w [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 > [!warning]
 >
@@ -41,7 +41,7 @@ Obecnie niemal wszystkie systemy zarządzania treścią (WordPress, Joomla!, etc
 
 ### Etap 2: zarządzanie bazami danych na hostingu
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz nazwę odpowiedniego hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz nazwę odpowiedniego hostingu. Teraz przejdź do zakładki `Bazy danych`{.action}.
 
 Tabela, która się wyświetla zawiera listę wszystkich baz danych utworzonych w ramach Twojego pakietu hostingowego.
 

@@ -18,7 +18,7 @@ The [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} allows you to con
 
 * a [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} service activated in your account
 * a vRack-compatible [Dedicated Server](https://www.ovhcloud.com/en-ie/bare-metal/){.external}
-* access to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+* access to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 * your chosen private IP address range
 
 
@@ -26,7 +26,7 @@ The [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} allows you to con
 
 ### Create a Public Cloud project
 
-Log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 Click on the `Cloud`{.action} menu and then click the `Order`{.action} button.
 

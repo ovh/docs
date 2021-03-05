@@ -21,7 +21,7 @@ Klucze SSH nie służą do uwierzytelniania na serwerach z systemem operacyjnym 
 
 ## Wymagania początkowe
 
-- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - [serwer dedykowany](https://www.ovhcloud.com/pl/bare-metal/) w ramach konta OVHcloud
 - dostęp administracyjny (uprawnienia użytkownika root) za pośrednictwem protokołu SSH
 

@@ -18,7 +18,7 @@ Zjistěte, jak změnit verzi PHP na svém webhostingovém řešení OVH.
 ## Prerekvizity
 
 - Některý z [webhostingových balíčků OVH](https://www.ovh.cz/webhosting/){.external}.
-- Přístup do administračního rozhraní webhostingu prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager) nebo přístupové údaje pro připojení k FTP. 
+- Přístup do administračního rozhraní webhostingu prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) nebo přístupové údaje pro připojení k FTP. 
 
 ## Postup
 
@@ -45,7 +45,7 @@ Informace o aktuální verzi PHP používané Vaším webhostingovým řešením
 
 |Metoda|Popis|
 |---|---|
-|Zákaznický prostor OVH|Přihlaste se do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte příslušné webhostingové řešení. V záložce `Základní informace`{.action} přejděte do karty **Konfigurace**, v níž je uvedena aktuálně používaná verze globálního PHP. |
+|Zákaznický prostor OVH|Přihlaste se do svého [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, v levém postranním panelu klikněte na položku `Hostingy`{.action} a vyberte příslušné webhostingové řešení. V záložce `Základní informace`{.action} přejděte do karty **Konfigurace**, v níž je uvedena aktuálně používaná verze globálního PHP. |
 |Skript|Vytvořte **.php** skript obsahující následující kód: `<?php phpinfo(); ?>`. Po nahrání na webhostingové úložiště skript spusťte zadáním jeho kompletní URL adresy.|
 
 ![phpversion](images/change-php-version-step1.png){.thumbnail}

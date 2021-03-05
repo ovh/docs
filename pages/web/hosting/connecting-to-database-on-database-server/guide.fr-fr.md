@@ -17,7 +17,7 @@ Il est possible de consulter le contenu de votre base de données via une interf
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement SQL Privé](https://www.ovh.com/fr/hebergement-web/options-sql.xml){.external} ou [Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external}.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
@@ -37,7 +37,7 @@ Il est possible de consulter le contenu de votre base de données via une interf
 
 ####  Par phpMyAdmin OVHcloud (uniquement pour l'offre SQL Privé)
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur de bases de données.
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`, puis sur `Base de données`{.action} dans le panneau de gauche. Sélectionnez le nom de votre serveur de bases de données.
 
 Depuis l'onglet `Informations générales`, vous trouverez le lien d'accès dans le cadre **« Administration de la base de données »**  sous la mention « Interface utilisateur ».
 

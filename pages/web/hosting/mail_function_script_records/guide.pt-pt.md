@@ -10,7 +10,7 @@ legacy_guide_number: g1974
 
 ## Manipulações
 
-- Ligar-se ao seu [Espaço Cliente](https://www.ovh.com/manager/web/login/);
+- Ligar-se ao seu [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt);
 Se não tem acesso ao seu Espaço Cliente, pode seguir o [seguinte guia](https://www.ovh.com/fr/g1909.mutualise_gerer_et_acceder_a_ses_mots_de_passe#les_differents_mots_de_passe_lies_au_service_mutualise_dovh_lacces_au_manager_dovh) para definir uma nova palavra-passe;
 - Na coluna da esquerda "Alojamentos", clique no nome de domínio associado ao seu alojamento;
 - Clique, de seguida, em "Mais +" "Scripts e-mails".

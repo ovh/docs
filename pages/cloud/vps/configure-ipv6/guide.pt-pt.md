@@ -28,7 +28,7 @@ O IPv6 é a versão mais recente do *Internet Protocol (IP). Cada servidor VPS d
 - Dispor de um [servidor VPS da OVHcloud](https://www.ovhcloud.com/pt/vps/){.external}.
 - Ter acesso ao VPS através de SSH (acesso root) ou de um ambiente de trabalho remoto (Windows).
 - Ter conhecimentos básciso de rede.
-- Ter acesso à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} ou à [API OVHcloud](https://api.ovh.com/console/).
+- Ter acesso à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} ou à [API OVHcloud](https://api.ovh.com/console/).
 
 ## Instruções
 
@@ -56,7 +56,7 @@ A primeira etapa consiste em recuperar o endereço IPV6 e a gateway IPv6 associa
 
 #### Através da Área de Cliente <a name="viacontrolpanel"></a>
 
-Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Bare Metal Cloud`{.action}. Clique em `VPS`{.action} na barra à esquerda e selecione o servidor VPS correspondente. Certifique-se de que está no separador `Página Inicial`{.action}.
+Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Bare Metal Cloud`{.action}. Clique em `VPS`{.action} na barra à esquerda e selecione o servidor VPS correspondente. Certifique-se de que está no separador `Página Inicial`{.action}.
 
 O endereço IPv6 e a gateway IPv6 associados ao servidor aparecem na secção `IP`. Consulte-os e siga para a etapa n.º 2 “[Aplicar a configuração IPv6](#applyipv6)”.
 
@@ -214,16 +214,17 @@ network:
     version: 2
     ethernets:
         eth0:
-            dhcp6: n.o
+            dhcp6: no
             match:
               name: eth0
             addresses:
               - "YOUR_IPV6/IPv6_PREFIX"
             gateway6: "IPv6_GATEWAY"
-            Estradas:
+            routes:
               - to: "IPv6_GATEWAY"
-                scópio: link
+                scope: link
 ```
+
 > [!warning]
 >
 > É importante respeitar o alinhamento de cada elemento deste ficheiro tal como representado no exemplo acima. Não utilize a tecla de tabulação para criar o seu espaçamento. Apenas a tecla de espaço é necessária.

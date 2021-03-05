@@ -47,7 +47,7 @@ Wpisz parametry serwera poczty przychodzącej. Niektóre pola mogą być wstępn
 |Domena/Nazwa użytkownika|Wpisz pełny adres e-mail.|  
 |Hasło|Wpisz hasło przypisane do tego konta e-mail.|
 |Certyfikat klienta|Pozostaw puste.|
-|Serwer|Wskaż serwer, na którym hostowana jest Twoja usługa Exchange. Możesz znaleźć go w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > zakładka `Informacje ogólne`{.action} dotyczące danej usługi Exchange > `Połączenie`{.action}.|
+|Serwer|Wskaż serwer, na którym hostowana jest Twoja usługa Exchange. Możesz znaleźć go w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > zakładka `Informacje ogólne`{.action} dotyczące danej usługi Exchange > `Połączenie`{.action}.|
 |Port|Wpisz port 443.|  
 |Typ zabezpieczenia|Wybierz « SSL/TLS ».|
 

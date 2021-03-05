@@ -18,18 +18,18 @@ Os endereços de e-mail da oferta MX Plan permitem enviar e receber e-mails no d
 
 - Ter uma oferta MX Plan (incluída num plano de [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external}, num [alojamento gratuito Start 10M](https://www.ovh.pt/dominios/oferta_alojamento_start10m.xml){.external} ou disponível em separado).
 - Ainda ter a possibilidade de criar endereços de e-mail no âmbito do seu plano.
-- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção `Web Cloud`{.action}.
+- Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
 
 > [!primary]
 >
-> Relativamente ao alojamento gratuito Start 10M: é obrigatório ativá-lo antes para poder criar um endereço de e-mail. Pode realizar esta operação a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, selecionando o domínio correspondente.
+> Relativamente ao alojamento gratuito Start 10M: é obrigatório ativá-lo antes para poder criar um endereço de e-mail. Pode realizar esta operação a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, selecionando o domínio correspondente.
 >
 
 ## Instruções
 
 A versão da sua oferta MX Plan (antiga ou nova) irá depender da data de ativação ou de [se o serviço foi migrado recentemente](https://www.ovh.pt/mxplan-migration/){.external}. Antes de continuar, deve verificar a versão de que dispõe. 
 
-Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, na secção Web. Clique em `E-mails`{.action} na barra à esquerda e selecione o serviço MX Plan correspondente. Continue a ler em função da sua versão:
+Aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção Web. Clique em `E-mails`{.action} na barra à esquerda e selecione o serviço MX Plan correspondente. Continue a ler em função da sua versão:
 
 |Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|

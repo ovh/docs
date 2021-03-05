@@ -57,11 +57,11 @@ Vous pouvez effectuer un test d'envoi pour vérifier que le compte est correctem
 
 Si la connexion au compte n'aboutit pas, nous vous conseillons de :
 
-- vérifier la configuration du nom de domaine paramétré sur votre service Exchange dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, onglet `Domaines associés`{.action} puis colonne `Diagnostic`{.action} du tableau ;
+- vérifier la configuration du nom de domaine paramétré sur votre service Exchange dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, onglet `Domaines associés`{.action} puis colonne `Diagnostic`{.action} du tableau ;
 
 - essayer de renseigner manuellement les URL de connexion au service Exchange. Poursuivez la manipulation malgré l'alerte du sécurité du certificat, puis complétez les champs `URL interne`{.action} et `URL externe`{.action} avec les informations du serveur sur lequel est hébergé votre service Exchange.
 
-Pour retrouver ce serveur, connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} et rendez-vous sur le service Exchange concerné. Positionnez-vous ensuite sur l'onglet `Informations générales`{.action}, puis récupérez le serveur qui s'affiche dans le cadre `Connexion`{.action}.
+Pour retrouver ce serveur, connectez-vous à votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et rendez-vous sur le service Exchange concerné. Positionnez-vous ensuite sur l'onglet `Informations générales`{.action}, puis récupérez le serveur qui s'affiche dans le cadre `Connexion`{.action}.
 
 ### Étape 2 : utiliser l'adresse e-mail
 

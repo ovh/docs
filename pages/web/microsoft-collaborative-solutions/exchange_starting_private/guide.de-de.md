@@ -18,7 +18,7 @@ Nach Bestellung einer Private Exchange Plattform sind einige Punkte zu beachten,
 ## Voraussetzungen
 
 - Sie haben einen [Private Exchange](https://www.ovh.de/emails/) Dienst in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
@@ -26,7 +26,7 @@ Nach Bestellung einer Private Exchange Plattform sind einige Punkte zu beachten,
 
 Sobald die Bestellung aufgegeben wurde, erhalten Sie die Informationen zum Konfigurieren Ihres Private Exchange an die hinterlegte E-Mail-Adresse des Kunden-Accounts.
 
-Um diese E-Mail von Ihrem [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager) aus einzusehen, klicken Sie auf Ihren Account-Namen oben rechts und klicken Sie danach auf `E-Mails vom Support`{.action}. Suchen Sie nach der E-Mail mit folgendem Betreff:
+Um diese E-Mail von Ihrem [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) aus einzusehen, klicken Sie auf Ihren Account-Namen oben rechts und klicken Sie danach auf `E-Mails vom Support`{.action}. Suchen Sie nach der E-Mail mit folgendem Betreff:
 
 > **\[xx-11111-ovh] Ihr Private Exchange 20_xxx_ wird bereitgestellt!**
 
@@ -101,4 +101,4 @@ Informationen zum Hinzufügen Ihres ersten Domainnamens zu Ihrer Plattform und z
 
 [Eine Domain zu Ihrem Exchange Dienst hinzufügen](../domain-zu-exchange-hinzufugen/) 
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en>.
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

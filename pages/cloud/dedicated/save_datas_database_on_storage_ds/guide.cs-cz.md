@@ -67,7 +67,7 @@ Obecně nelze říci, že by některý RAID by lepší než jiný, neboť každ�
 
 ### Fáze 2: instalace a konfigurace serveru
 
-Přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} a nainstalujte svůj server. Jak bylo zmíněno již v úvodní části této příručky, pro naše účely zvolíme Debian 9.4. Detailní informace týkající se instalace systémové distribuce naleznete v následující dokumentaci: [Začínáme s dedikovaným serverem](https://docs.ovh.com/cz/cs/dedicated/zaciname-s-dedikovanym-serverem/){.external}.
+Přejděte do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} a nainstalujte svůj server. Jak bylo zmíněno již v úvodní části této příručky, pro naše účely zvolíme Debian 9.4. Detailní informace týkající se instalace systémové distribuce naleznete v následující dokumentaci: [Začínáme s dedikovaným serverem](https://docs.ovh.com/cz/cs/dedicated/zaciname-s-dedikovanym-serverem/){.external}.
 
 Po výběru systémové distribuce zaškrtněte políčko `Upravení nastavení diskových oddílů`{.action}.
 

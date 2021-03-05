@@ -17,7 +17,7 @@ Grazie alle guide precedenti, hai potuto [creare un pool](https://docs.ovh.com/i
 ## Prerequisiti
 
 - Aprire il client VMware Horizon oppure un browser
-- Conoscere l’indirizzo (URL) del proprio punto di accesso, disponibile nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Conoscere l’indirizzo (URL) del proprio punto di accesso, disponibile nello [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - [Aver autorizzato il proprio utente sul pool](https://docs.ovh.com/it/cloud-desktop-infrastructure/assegnare-desktop-virtuali){.external}
 
 

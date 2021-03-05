@@ -66,11 +66,11 @@ Voit tehdä testilähetyksen tarkistaaksesi, että tilisi asetukset on määrite
 
 Jos yhteys ei onnistu, suosittelemme:
 
-- tarkistamaan Exchange-palvelussasi määritetyn verkkotunnuksesi konfiguroinnin [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager){.external} välilehdeltä `Liitetyt verkkotunnukset`{.action} ja sieltä sarakkeen taulukon `Vianhaku`{.action}.
+- tarkistamaan Exchange-palvelussasi määritetyn verkkotunnuksesi konfiguroinnin [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} välilehdeltä `Liitetyt verkkotunnukset`{.action} ja sieltä sarakkeen taulukon `Vianhaku`{.action}.
 
 - yrittämään URL-yhteysosoitteiden syöttämistä käsin Exchange-palveluun. Seuraa menettelyä varmenteen tietoturvavaroituksesta huolimatta, täytä sitten kentät `Sisäinen URL`{.action} ja `Ulkoinen URL`{.action} sen palvelimen tiedoilla, jossa Exchange-palveluasi ylläpidetään.
 
-Tämän palvelimen löydät kirjautumalla [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external} ja menemällä siellä kyseiseen Exchange-palveluun. Siirry seuraavaksi välilehdelle `Yleiset tiedot`{.action} ja hae sitten palvelin, joka näkyy kohdassa `Yhteys`{.action}.
+Tämän palvelimen löydät kirjautumalla [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} ja menemällä siellä kyseiseen Exchange-palveluun. Siirry seuraavaksi välilehdelle `Yleiset tiedot`{.action} ja hae sitten palvelin, joka näkyy kohdassa `Yhteys`{.action}.
 
 ### 2. vaihe: Sähköpostiosoitteen käyttö
 

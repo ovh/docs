@@ -58,7 +58,7 @@ To do this, you must have :
 >
 **Enable/Disable Monitoring**
 >
->First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. On the left-hand tab select the Dedicated Server in question from the **Dedicated servers** drop-down menu.
+>First, log in to the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. On the left-hand tab select the Dedicated Server in question from the **Dedicated servers** drop-down menu.
 >
 ![Service_Status](images/ServiceStatus.jpg){.thumbnail}
 >

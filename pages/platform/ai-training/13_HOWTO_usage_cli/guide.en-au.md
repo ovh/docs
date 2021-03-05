@@ -43,6 +43,12 @@ ovhai job list
 
 You should see the job you just ran, you need its `Id` to get more information about it.
 
+To see a job information use the following command:
+
+``` {.console}
+ovhai job get <job-id>
+```
+
 To see its logs in live use the following command:
 
 ``` {.console}
@@ -91,6 +97,67 @@ ovhai job exec <id> -- bash
 ```
 
 This way you can interact with a running job.
+
+### Run a job with ssh access
+
+You can create a job with some ssh access
+
+``` {.console}
+ovhai job run -s ~/.ssh/id_ed25519.pub ovhcom/ai-training-fastai
+```
+
+Multiple `-s` arguments can be provided.
+
+Once the job is `RUNNING`, you can retrieve the `sshUrl` with
+
+``` {.console}
+ovhai job get <job-id>
+
+---
+id: 0d916855-1cd4-4b66-8803-b4782bc13902
+createdAt: "2021-02-23T08:45:01.297780Z"
+updatedAt: "2021-02-23T08:45:19.823082Z"
+user: user-xxx
+spec:
+  image: ovhcom/ai-training-fastai
+  env: []
+  defaultHttpPort: 8080
+  resources:
+    gpu: 1
+    gpuModel: Tesla-V100S
+    cpu: 7
+  volumes: []
+  timeout: 0
+  name: ai-training-fastai-kind
+  sshPublicKeys:
+    - ssh-ed25519 AAAAC3NzaC1someKey
+status:
+  state: RUNNING
+  queuedAt: "2021-02-23T08:45:01.297318Z"
+  startedAt: "2021-02-23T08:45:13Z"
+  stoppedAt: ~
+  ip: 10.42.155.122
+  infos: ~
+  history:
+    - state: QUEUED
+      date: "2021-02-23T08:45:01.297012Z"
+    - state: INITIALIZING
+      date: "2021-02-23T08:45:04.356856Z"
+    - state: PENDING
+      date: "2021-02-23T08:45:10.163754Z"
+    - state: RUNNING
+      date: "2021-02-23T08:45:19.822354Z"
+  duration: 6
+  jobUrl: "http://0d916855-1cd4-4b66-8803-b4782bc13902.job.gra.training.ai.cloud.ovh.net"
+  sshUrl: "ssh://0d916855-1cd4-4b66-8803-b4782bc13902@gra.training.ai.cloud.ovh.net"
+  monitoringUrl: "http://monitoring.gra.training.ai.cloud.ovh.net/d/job/job-monitoring?var-job=0d916855-1cd4-4b66-8803-b4782bc13902&from=1614069913000"
+```
+
+Then you can connect to it with a terminal
+
+``` {.console}
+ssh 0d916855-1cd4-4b66-8803-b4782bc13902@gra.training.ai.cloud.ovh.net -i ~/.ssh/id_ed25519
+```
 
 ### Manage registries
 

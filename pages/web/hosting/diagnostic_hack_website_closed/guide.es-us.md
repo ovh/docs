@@ -18,7 +18,7 @@ Si tiene un sitio web en un alojamiento de OVHcloud, podría recibir en algún m
 
 - Tener contratado un [plan de hosting de OVHcloud](https://www.ovh.com/world/es/hosting/){.external}.
 - Disponer de las claves necesarias para conectarse al espacio de almacenamiento del alojamiento.
-- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action}.
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}.
 
 ## Procedimiento
 
@@ -74,7 +74,7 @@ Asegúrese, pues, de que los diferentes elementos adicionales de su sitio web so
 
 Esto le permitirá conocer con mayor detalle las acciones que se han realizado sobre el servicio y el sitio web para poder determinar qué ha podido haber motivado la desactivación del alojamiento.
 
-Para consultar la actividad y los logs del alojamiento, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, en la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, podrá realizar dos acciones diferentes en función de la información a la que desee acceder:
+Para consultar la actividad y los logs del alojamiento, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, podrá realizar dos acciones diferentes en función de la información a la que desee acceder:
 
 - **Consultar la actividad del alojamiento**
 
@@ -183,7 +183,7 @@ Para reactivar el alojamiento web, es necesario realizar una operación en el es
 
 Si tiene la posibilidad de reactivar usted mismo el alojamiento, recopile la información necesaria para conectarse a su espacio de almacenamiento (es decir, el servidor FTP, el usuario FTP y la contraseña asociada).
 
-Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Desde el mismo lugar también podrá [cambiar la contraseña del usuario FTP](../cambiar-contrasena-usuario-ftp/){.external} si fuera necesario.
+Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. Desde el mismo lugar también podrá [cambiar la contraseña del usuario FTP](../cambiar-contrasena-usuario-ftp/){.external} si fuera necesario.
 
 ![Desactivación del hosting](images/hosting-deactivation-step3.png){.thumbnail}
 

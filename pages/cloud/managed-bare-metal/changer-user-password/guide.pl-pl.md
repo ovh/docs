@@ -17,14 +17,14 @@ Uprawnieniami i hasłami użytkowników klienta vSphere zarządzasz w Panelu kli
 
 ## Wymagania początkowe
 
-- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 - Posiadanie aktywnego użytkownika utworzonego w Panelu klienta OVHcloud. Aby uzyskać więcej informacji, zapoznaj się z [przewodnikiem](../manager-ovhcloud/#uzytkownicy)
 
 ## W praktyce
 
 ### Zmień hasło
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, przejdź do sekcji `Bare Metal Cloud`{.action} (1), kliknij `Managed Bare Metal`{.action} (2) i wybierz serwer z listy (3). Teraz kliknij zakładkę [Użytkownicy](https://www.ovh.com/auth/?action=gotomanager){.external} (4).
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, przejdź do sekcji `Bare Metal Cloud`{.action} (1), kliknij `Managed Bare Metal`{.action} (2) i wybierz serwer z listy (3). Teraz kliknij zakładkę [Użytkownicy](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} (4).
 
 ![dostęp do Panelu klienta](images/userpassword1.png){.thumbnail}
 

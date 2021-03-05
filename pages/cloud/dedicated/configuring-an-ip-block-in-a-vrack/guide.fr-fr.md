@@ -20,7 +20,7 @@ En plus de l'adressage IP privé, le [vRack](https://www.ovh.com/fr/solutions/vr
 * Préparer votre plage d'adresses IP privées choisies.
 * Posséder un [serveur compatible vRack](https://www.ovh.com/fr/serveurs_dedies/){.external}.
 * Activer un service [vRack](https://www.ovh.com/fr/solutions/vrack/){.external}.
-* Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 
 ## En pratique

@@ -14,14 +14,14 @@ Tutti gli account SMS OVHcloud possono utilizzare una o più rubriche. Questa gu
 ## Prerequisiti
 
 - Disporre di un account SMS OVHcloud attivo
-- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Disporre di un programma di fogli di calcolo o un editor di testo
 
 ## Procedura
 
 ### Step 1: crea una rubrica di contatti nel tuo Spazio Cliente
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Quindi seleziona SMS nel menu a sinistra.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Quindi seleziona SMS nel menu a sinistra.
 
 Clicca sull’account SMS interessato.
 
@@ -97,7 +97,7 @@ Per modificare il nome di una rubrica, seleziona la tua lista di contatti nel me
 
 Per eliminare una rubrica, selezionala nel menu a tendina (1) e clicca su `Elimina rubrica indirizzi`{.action} (3).
 
-Per modificare o eliminare un contatto, clicca sui tre puntini`...`{.action} nella colonna “Azioni” (4) accanto al contatto corrispondente. A questo punto, puoi selezionare l’opzione che desideri (5).
+Per modificare o eliminare un contatto, clicca sui tre puntini`...`{.action} nella colonna “Azioni” (4) accanto al contatto corrispondente. A questo punto, puoi selezionare l’opzione che desideri.
 
 ![phonebook](images/smsphonebook7.png){.thumbnail}
 

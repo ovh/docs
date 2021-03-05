@@ -23,12 +23,12 @@ Our object containers include:
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 - a [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
 
 ## Instructions
 
-First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) and click on `Public Cloud`{.action}.
+First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and click on `Public Cloud`{.action}.
 
 ![cloud menu](images/cloud-menu.png){.thumbnail}
 

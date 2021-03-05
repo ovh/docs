@@ -17,7 +17,7 @@ Sie können den Inhalt Ihrer Datenbank einsehen, indem Sie sich in ein entsprech
 ## Voraussetzungen
 
 - Sie verfügen über ein [SQL Private Webhosting](https://www.ovh.de/hosting/sql-optionen.xml) oder nutzen [Cloud Databases](https://www.ovh.de/cloud-databases/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
@@ -35,7 +35,7 @@ Sie können den Inhalt Ihrer Datenbank einsehen, indem Sie sich in ein entsprech
 
 #### phpMyAdmin von OVHcloud (nur SQL Private)
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und klicken Sie im Bereich `Web Cloud`{.action} links in der Menüleiste auf `Datenbanken`{.action}. Wählen Sie den Datenbanknamen aus und gehen Sie dann auf den Tab `Allgemeine Informationen`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} links in der Menüleiste auf `Datenbanken`{.action}. Wählen Sie den Datenbanknamen aus und gehen Sie dann auf den Tab `Allgemeine Informationen`{.action}.
 
 Hier finden Sie den Zugangslink im Kasten **Administration der Datenbank** unter "Benutzer-Interface".
 

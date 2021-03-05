@@ -29,7 +29,7 @@ IPv6 ist die neueste Version des *Internet Protocol* (IP). Jeder OVHcloud VPS wi
 - Sie verfügen über einen [OVHcloud VPS](https://www.ovhcloud.com/de/vps/).
 - Sie haben administrativen Zugriff (Root) auf Ihren VPS über SSH oder RDP (Windows).
 - Sie verfügen über grundlegende Netzwerkkenntnisse.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) / die [OVHcloud API](https://api.ovh.com/console/).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) / die [OVHcloud API](https://api.ovh.com/console/).
 
 ## In der praktischen Anwendung
 
@@ -57,7 +57,7 @@ Der erste Schritt besteht darin, die Ihrem Server zugewiesene IPv6-Adresse sowie
 
 #### Über Ihr Kundencenter <a name="viacontrolpanel"></a>
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie links im Menü unter `VPS`{.action} Ihren Server aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie links im Menü unter `VPS`{.action} Ihren Server aus.
 
 Die Ihrem Server zugewiesene IPv6-Adresse sowie das zugehörige IPv6-Gateway werden im Tab `Start`{.action} unter `IP` angezeigt. Kopieren Sie diese und fahren Sie fort mit Schritt 2, [IPv6-Konfiguration anwenden](#applyipv6).
 
@@ -85,7 +85,7 @@ Wenn Sie die Adressen erhalten haben, fahren Sie fort mit Schritt 2, [IPv6-Konfi
 
 ### Schritt 2: IPv6-Konfiguration anwenden <a name="applyipv6"></a>
 
-Sobald Sie die zur IPv6-Konfiguration notwendigen Informationen haben, verbinden Sie sich via SSH mit Ihrem VPS. Wenn nötig lesen Sie unsere Anleitung "[SSH Einführung](../../dedicated/ssh-introduction/)".
+Sobald Sie die zur IPv6-Konfiguration notwendigen Informationen haben, verbinden Sie sich via SSH mit Ihrem VPS. Wenn nötig lesen Sie unsere Anleitung "[SSH Einführung](../../dedicated/ssh-einfuehrung/)".
 
 Es gibt mehrere Vorgehensweisen, um die IPv6-Konfiguration anzuwenden. Folgen Sie der Methode, die am besten zu Ihrer Situation und Ihren Ansprüchen passt.
 
@@ -218,10 +218,11 @@ network:
             addresses:
               - "YOUR_IPV6/IPv6_PREFIX"
             gateway6: "IPv6_GATEWAY"
-            Straßen
-              - "IPv6_GATEWAY"
-                scope: ,
+            routes:
+              - to: "IPv6_GATEWAY"
+                scope: link
 ```
+
 > [!warning]
 >
 > Es ist wichtig, dass die Zeilenausrichtung jedes Elements dieser Datei, wie im Beispiel dargestellt, eingehalten wird. Verwenden Sie nicht die Tabulationstaste, um den Abstand zu erzeugen. Nur die Leertaste ist notwendig.

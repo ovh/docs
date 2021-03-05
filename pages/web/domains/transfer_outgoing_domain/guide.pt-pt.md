@@ -24,7 +24,7 @@ De modo a impedir as transferências de domínio não autorizadas, os nomes de d
 
 - Ter um [domínio](https://www.ovh.pt/dominios/) registado na OVHcloud
 - Ter o direito de solicitar a transferência do nome de domínio: o proprietário e/ou os administradores devem ser informados do pedido de transferência.
-- Ter acesso à secção de gestão do domínio na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à secção de gestão do domínio na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - O registo do nome de domínio em questão data de há pelo menos 60 dias e não foi transferido ou trocado (ou seja, a mudança de proprietário) durante os últimos 60 dias
 
 > [!primary]
@@ -50,7 +50,7 @@ De modo a impedir as transferências de domínio não autorizadas, os nomes de d
 
 ### Etapa 1: eliminar a proteção contra a transferência do nome de domínio
 
-Ligue-se à sua Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) e selecione `Web Cloud`{.action} na barra de navegação superior. Clique em `Domínios`{.action} na barra de serviços situada à esquerda e escolha o domínio em causa.
+Ligue-se à sua Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione `Web Cloud`{.action} na barra de navegação superior. Clique em `Domínios`{.action} na barra de serviços situada à esquerda e escolha o domínio em causa.
 
 No separador `Informações gerais`{.action}, encontrará o cursor `Proteção contra a transferência` sob **Segurança**. Por predefinição, esta proteção está `Ativada`{.action}.
 

@@ -47,7 +47,7 @@ Configurazione POP con sicurezza SSL attivata o disattivata:
 
 Indirizzo email: il tuo indirizzo di mail condivisa completo
 
-Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager)
+Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 Nome utente: il tuo indirizzo di mail condivisa completo
 Server di posta in entrata, il server che riceve i messaggi: ssl0.ovh.net
@@ -76,7 +76,7 @@ Configurazione IMAP con sicurezza SSL attivata o disattivata:
 
 Indirizzo email: il tuo indirizzo di mail condivisa completo
 
-Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager)
+Password: la password che hai definito nel tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 Nome utente: il tuo indirizzo di mail condivisa completo
 Server di posta in entrata, il server che riceve i messaggi: ssl0.ovh.net

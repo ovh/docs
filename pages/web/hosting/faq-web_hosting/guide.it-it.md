@@ -12,13 +12,13 @@ section: Per iniziare
 
 ### Cosa fare se il tuo sito Web non funziona? 
 
-Il malfunzionamento del tuo sito Internet potrebbe essere dovuto a diversi motivi. Per capirne la causa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e verifica che tutti i tuoi servizi siano stati rinnovati correttamente e siano quindi attivi. Una volta effettuata la verifica, consulta gli [interventi in corso](http://travaux.ovh.net/){.external}. Se i tuoi servizi sono attivi e nessun intervento in corso sta avendo un impatto sul tuo sito, ti invitiamo a effettuare una diagnostica più approfondita, consultando le [nostre guide di diagnostica](../).
+Il malfunzionamento del tuo sito Internet potrebbe essere dovuto a diversi motivi. Per capirne la causa, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e verifica che tutti i tuoi servizi siano stati rinnovati correttamente e siano quindi attivi. Una volta effettuata la verifica, consulta gli [interventi in corso](http://travaux.ovh.net/){.external}. Se i tuoi servizi sono attivi e nessun intervento in corso sta avendo un impatto sul tuo sito, ti invitiamo a effettuare una diagnostica più approfondita, consultando le [nostre guide di diagnostica](../).
 
-**Consigli e suggerimenti**: Se, in seguito a un’errata manipolazione da parte tua, il tuo sito appare improvvisamente non disponibile, puoi ripristinarne il contenuto dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Per farlo, clicca sulla scheda `FTP-SSH` del tuo hosting e clicca sul pulsante `Ripristina backup`{.action}, a destra dello schermo. Inoltre, puoi consultare questa guida: [Ripristinare i dati dello spazio di storage di un hosting Web](../web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/).
+**Consigli e suggerimenti**: Se, in seguito a un’errata manipolazione da parte tua, il tuo sito appare improvvisamente non disponibile, puoi ripristinarne il contenuto dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Per farlo, clicca sulla scheda `FTP-SSH` del tuo hosting e clicca sul pulsante `Ripristina backup`{.action}, a destra dello schermo. Inoltre, puoi consultare questa guida: [Ripristinare i dati dello spazio di storage di un hosting Web](../web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/).
 
 ### Come configurare il tuo hosting? 
 
-Per configurare il tuo hosting, accedi innanzitutto allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Dalla sezione `Hosting` è possibile gestire i certificati SSL, le versioni PHP, i CDN, i multisiti, i database, ecc.
+Per configurare il tuo hosting, accedi innanzitutto allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Dalla sezione `Hosting` è possibile gestire i certificati SSL, le versioni PHP, i CDN, i multisiti, i database, ecc.
 
 **Consigli e suggerimenti**: Per configurare il tuo hosting, ti invitiamo a consultare la sezione <br> “Per iniziare” disponibile [qui](../).
 
@@ -26,17 +26,17 @@ Per configurare il tuo hosting, accedi innanzitutto allo [Spazio Cliente OVHclou
 
 Per creare o eliminare un elemento, accedi a (`Email`, `Database`, `Moduli`). Potrai modificare il tuo prodotto in base alle tue esigenze.
 
-**Consigli e suggerimenti**: dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, è possibile effettuare backup regolari dei tuoi database.
+**Consigli e suggerimenti**: dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, è possibile effettuare backup regolari dei tuoi database.
 
 ### Come gestire le tue password? 
 
-Per gestire le password, è necessario innanzitutto accedere allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. Se hai dimenticato l’identificativo o la password, clicca su `Identificativo o password dimenticati`{.action} nella finestra di login. Riceverai un’email con la procedura di rispristino.
+Per gestire le password, è necessario innanzitutto accedere allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Se hai dimenticato l’identificativo o la password, clicca su `Identificativo o password dimenticati`{.action} nella finestra di login. Riceverai un’email con la procedura di rispristino.
 È inoltre possibile consultare la guida [Impostare e gestire la password di un account OVHcloud](https://docs.ovh.com/it/customer/gestire-la-password/){.external}.
 
 Una volta connesso al tuo Spazio Cliente, puoi gestire i diversi accessi, tra cui:
 
-- l’accesso al server FTP e ai database. Per farlo, accedi alla sezione `Hosting` del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e seleziona il tuo prodotto/servizio.
-- l’accesso alle tue email, dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} `Email`.
+- l’accesso al server FTP e ai database. Per farlo, accedi alla sezione `Hosting` del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona il tuo prodotto/servizio.
+- l’accesso alle tue email, dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} `Email`.
 
 **Consigli e suggerimenti**: Se disponi di una soluzione Email Pro o Exchange, puoi gestire i tuoi accessi dalle rispettive Webmail.
 
@@ -71,7 +71,7 @@ oppure rinominalo per poterlo riutilizzare quando ne hai bisogno.
 
 ### Come far evolvere la tua offerta di hosting Web?
 
-Per modificare la tua offerta attuale con un'offerta superiore, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nel menu a sinistra e seleziona il tuo servizio.
+Per modificare la tua offerta attuale con un'offerta superiore, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nel menu a sinistra e seleziona il tuo servizio.
 
 Nella scheda `Informazioni generali`, nel riquadro `Abbonamento`, clicca sul pulsante `...`{.action} davanti a "Offerta" e poi clicca su `Cambia offerta`{.action}. Segui queste istruzioni per completare l'ordine. Aggiungi alla nuova offerta una quota del tempo residuo della tua offerta attuale.
 

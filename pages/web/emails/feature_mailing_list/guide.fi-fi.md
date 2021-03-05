@@ -23,7 +23,7 @@ Ezmlm on erittäin tehokas ja käytetty jakelulistojen hallintaväline. Tässä 
 
 ## Luo oma postituslista
 Esimerkissä käytämme postituslistaa, joka littyy Pro-webhotellin palveluiden tiedottamiseen.
-Jotta voit luoda postituslistan, kirjaudu ensin hallintapanleelin[](http://www.ovh.com/manager/web).
+
 
 Kun olet kirjautunut, valitse webhotellisi osiosta "Sähköpostit" ja klikkaa  "Postituslistat"-kuvaketta.
 

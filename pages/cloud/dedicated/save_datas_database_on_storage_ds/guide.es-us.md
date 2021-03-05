@@ -27,7 +27,7 @@ Esta guía explica cómo configurar un servidor de almacenamiento de OVHcloud pa
 ### Hardware y software necesarios
 
 - Un [servidor de almacenamiento](https://www.ovhcloud.com/es/bare-metal/storage/){.external} de OVHcloud.
-- Una infraestructura de producción ([VPS](https://www.ovhcloud.com/es/vps/){.external}, [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external}, [instancia de Public Cloud](https://www.ovh.com/world/es/public-cloud/instancias/){.external}…).
+- Una infraestructura de producción ([VPS](https://www.ovhcloud.com/es/vps/){.external}, [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external}, [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external}…).
 - Conexión SSH configurada entre el servidor de almacenamiento y la infraestructura de producción.
 - Una [red privada](https://www.ovh.com/world/es/soluciones/vrack/){.external} entre los servidores (recomendado).
 
@@ -66,7 +66,7 @@ No existe un modo RAID mejor que otro, ya que cada uno responde a necesidades di
 
 ### 2. Instalar y configurar el servidor
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} e instale el servidor.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} e instale el servidor.
  Como indicamos al principio, utilizaremos Debian 9.4. Para más información, consulte nuestra guía [Primeros pasos con un servidor dedicado](../primeros-pasos-servidor-dedicado/#instalar-o-reinstalar-el-servidor-dedicado_1){.external}.
 
 Una vez seleccionado el sistema operativo, marque la casilla `Personalizar la configuración de las particiones`{.action} y haga clic en `Siguiente`{.action}.

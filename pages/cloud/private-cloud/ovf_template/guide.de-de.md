@@ -28,7 +28,7 @@ Windows VMs, die von einem Template aus eingerichtet werden, verwenden automatis
 ## Voraussetzungen
 
 - Sie haben Zugriff auf den Web Client (HTML5).
-- [Sie haben die Windows Lizenzen](../manager-ovh-private-cloud/#windows-lizenz) über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager)  aktiviert.
+- [Sie haben die Windows Lizenzen](../manager-ovh-private-cloud/#windows-lizenz) über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)  aktiviert.
 
 
 ## In der praktischen Anwendung

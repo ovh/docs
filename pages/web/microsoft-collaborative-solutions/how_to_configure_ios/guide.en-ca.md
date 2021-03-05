@@ -53,7 +53,7 @@ Enter the following information:
 |Information|Description|
 |---|---|
 |Email address|This field should be filled in automatically. If it is not, enter your full email address.|
-|Server|Enter the details for the server your Exchange service is hosted on. You will find these details in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external} by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
+|Server|Enter the details for the server your Exchange service is hosted on. You will find these details in your [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} by going to the `General information`{.action} tab for the Exchange service concerned, then the `Connection`{.action} section.|
 |Domain|Leave this field blank.|
 |Username|Enter your full email address.|  
 |Password|This field should be filled in automatically. If it is not, enter the password for your email address.|

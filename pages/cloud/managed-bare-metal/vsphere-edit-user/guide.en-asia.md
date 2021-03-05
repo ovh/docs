@@ -19,11 +19,11 @@ You can associate a name, first name, phone number, and email address with a vSp
 ## Requirements
 
 - a [Managed Bare Metal infrastructure](https://www.ovhcloud.com/asia/managed-bare-metal/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 ## Instructions
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) go to the section `Bare Metal Cloud`. Click on `Managed Bare Metal` in the service bar on the left and select your infrastructure.
+In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) go to the section `Bare Metal Cloud`. Click on `Managed Bare Metal` in the service bar on the left and select your infrastructure.
 
 ![user vsphere](images/addMailOnUser01.png){.thumbnail}
 

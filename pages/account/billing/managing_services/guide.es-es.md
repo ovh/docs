@@ -16,12 +16,12 @@ En el área de cliente puede administrar todos sus servicios de OVH.
 
 > [!primary]
 >
-> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como de los servicios contratados, es posible que algunas secciones de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVH aplicables, que encontrará en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager){.external}. Para ello, haga clic en su nombre en la esquina superior derecha y seleccione `Mis servicios`{.action}. En la página de administración de sus servicios, haga clic en `Mis contratos`{.action} en la columna izquierda.
+> Tenga en cuenta que, en función de su lugar de residencia y de la legislación vigente, así como de los servicios contratados, es posible que algunas secciones de esta guía sean diferentes para usted o no se apliquen a su caso particular. En caso de duda, consulte los contratos de OVH aplicables, que encontrará en el [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Para ello, haga clic en su nombre en la esquina superior derecha y seleccione `Mis servicios`{.action}. En la página de administración de sus servicios, haga clic en `Mis contratos`{.action} en la columna izquierda.
 >
 
 ## Requisitos
 
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 - Tener servicios de OVH activos.
 
 ## Procedimiento
@@ -38,7 +38,7 @@ Continúe leyendo esta guía en el apartado correspondiente a la acción que qui
 
 ### Ver los servicios
 
-En el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `Mis servicios`{.action}.
+En el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `Mis servicios`{.action}.
 
 ![Administrar mis servicios](images/manage-ovh-services-step1.png){.thumbnail}
 
@@ -63,7 +63,7 @@ Si tiene muchas soluciones contratadas con OVH, es posible que la tabla tenga va
 
 ### Administrar los servicios
 
-En el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `Mis servicios`{.action}.
+En el [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `Mis servicios`{.action}.
 
 ![Administrar mis servicios](images/manage-ovh-services-step1.png){.thumbnail}
 

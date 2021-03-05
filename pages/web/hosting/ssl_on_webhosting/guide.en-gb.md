@@ -80,6 +80,7 @@ To start activating your certificate, log in to the [OVHcloud Web Control Panel]
 
 Click on the three dots next to ‘SSL certificate’, then `Order an SSL certificate`{.action}.
 
+
 If the word ‘Yes’ is visible, this means that an SSL certificate has already been set up on the Web Hosting plan. As a result, you will not be able to order another certificate while the existing one is set up.
 
 ![managessl](images/manage-ssl-step1.png){.thumbnail}
@@ -111,6 +112,7 @@ Once you have activated a secure SSL connection across one or more of your multi
 
 To do this, log in to the [OVHcloud Web Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, select the tab [Web Cloud](https://www.ovh.com/manager/web/#/configuration){.external}, click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Click on the `General information`{.action} tab. Then click on the three dots next to ‘SSL certificate’, then `Regenerate SSL certificate`{.action}.
 
+
 ![managessl](images/manage-ssl-step7.png){.thumbnail}
 
 Read the information listed in the window that appears, then click `Confirm`{.action}. Then wait for your SSL certificate to be regenerated. This may take several hours.
@@ -124,6 +126,7 @@ Please note that Let's Encrypt, the authority that delivers the SSL certificate 
 You can also delete an SSL certificate that has been set up on your Web Hosting plan. Before you start making any changes, **we strongly advise ensuring that the certificate deletion will not render your websites inaccessible**. Please keep in mind that your web users will see a security error when they try to access a website that works in HTTPS, but does not have a secure SSL connection. 
 
 Since this verification involves checking your website settings, we recommend contacting a specialist service provider if you experience any difficulties in this regard. We will not be able to assist you with this ourselves. 
+
 
 Once you are ready to delete the SSL certificate, log in to the [OVHcloud Web Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, select the tab [Web Cloud](https://www.ovh.com/manager/web/#/configuration){.external}, click `Hosting plans`{.action} in the services bar on the left-hand side, then select the service name concerned. Click on the `General information`{.action} tab. Then click on the three dots next to `SSL certificate`{.action}, then `Delete SSL`{.action}.
 

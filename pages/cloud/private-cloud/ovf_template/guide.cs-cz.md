@@ -22,7 +22,7 @@ OVH poskytuje šablony Windows a SQL server (ve formátu OVF), které lze na Va�
 ## Prerekvizity
 
 - Přístup k webovému či tlustému klientovi v závislosti na používané verzi.
-- Aktivní licence Windows (aktivaci lze provést prostřednictvím [Zákaznického prostoru OVH](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/#windows-licence){.external}, záložka [Licence Windows](https://www.ovh.com/auth/?action=gotomanager){.external} u příslušného datacentra). 
+- Aktivní licence Windows (aktivaci lze provést prostřednictvím [Zákaznického prostoru OVH](https://docs.ovh.com/gb/en/private-cloud/control-panel-ovh-private-cloud/#windows-licence){.external}, záložka [Licence Windows](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} u příslušného datacentra). 
 
 
 ## Postup

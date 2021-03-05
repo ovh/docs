@@ -35,7 +35,7 @@ Setting message templates is free and is carried out by the OVHcloud teams withi
 
 #### 2.1 Via the Control Panel
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, then select `Telecom`{.action} (1). Next, click `SMS`{.action} on the left, and select your `SMS account`{.action} (2). Click on the `SMS`{.action} tab (3) and finally on `Manage templates`{.action} (4).
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, then select `Telecom`{.action} (1). Next, click `SMS`{.action} on the left, and select your `SMS account`{.action} (2). Click on the `SMS`{.action} tab (3) and finally on `Manage templates`{.action} (4).
 
 ![SMS messages to the USA](images/smstousa1.png){.thumbnail}
 

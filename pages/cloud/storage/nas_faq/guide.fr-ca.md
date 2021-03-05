@@ -16,7 +16,7 @@ Le sigle HA (ou « High Availability » pour haute disponibilité) signifie qu'O
 Vous pouvez souscrire à l'offre NAS-HA dans les centres de données français (Roubaix, Strasbourg, Gravelines) ainsi que dans celui situé au Canada à Beauharnois. Le choix du centre de données se fait au moment de la commande. ATTENTION : une fois le produit commandé, le centre de données ne pourra plus être modifié.
 
 ### Peut-on gérer le NAS-HA via un espace de configuration?
-Oui, cet espace est accessible depuis votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}, rubrique `Cloud`{.action} et `Plateformes et services`{.action}.
+Oui, cet espace est accessible depuis votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, rubrique `Cloud`{.action} et `Plateformes et services`{.action}.
 
 ### Est-il possible d'augmenter la capacité totale de mon NAS?
 Il n'est pas possible d'augmenter la capacité d'un NAS-HA une fois celui-ci commandé. Pour augmenter votre capacité de stockage, vous devrez migrer vos données sur un second NAS de plus grande capacité.
@@ -40,7 +40,7 @@ Les disques de votre NAS-HA vous sont dédiés. Les autres ressources de la mach
 **Cas particulier :** si vous vous abonnez à l'offre 26,4 To, l'ensemble des ressources du serveur hôte vous sont dédiées (mémoire vive, processeur, bande passante).
 
 ### Pour quelle durée puis-je souscrire à un NAS-HA?
-Les périodes proposées sont de 1, 3, 6 et 12 mois. À la fin de votre période d'engagement, votre abonnement est renouvelé automatiquement si aucune demande de résiliation n'a été formulée. Celle-ci peut être effectuée durant toute la durée de votre abonnement via votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Les périodes proposées sont de 1, 3, 6 et 12 mois. À la fin de votre période d'engagement, votre abonnement est renouvelé automatiquement si aucune demande de résiliation n'a été formulée. Celle-ci peut être effectuée durant toute la durée de votre abonnement via votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ### Dispose-t-on de la capacité affichée lors de la commande?
 Comme pour la plupart des solutions de stockage, la capacité théorique diffère légèrement de la capacité utilisable, une partie de l’espace étant nécessaire pour permettre l’exploitation du disque :
@@ -132,7 +132,7 @@ La fréquence des images instantanées est administrable depuis votre espace cli
 - hebdomadaire. 
 
 
-Vous pouvez aussi, à tout moment, créer des images instantanées manuelles, les conserver sans limitation de durée ou les supprimer. Cette fonctionnalité est disponible au sein de votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager){.external} ou via l'[API](https://api.ovh.com/){.external}:
+Vous pouvez aussi, à tout moment, créer des images instantanées manuelles, les conserver sans limitation de durée ou les supprimer. Cette fonctionnalité est disponible au sein de votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} ou via l'[API](https://api.ovh.com/){.external}:
 
 > [!api]
 >

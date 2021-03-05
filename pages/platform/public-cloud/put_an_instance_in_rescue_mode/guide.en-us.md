@@ -20,14 +20,14 @@ In such circumstances, you can use the rescue mode to reconfigure your instance 
 ## Requirements
 
 - a [Public Cloud instance]({ovh_www}/public-cloud/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 - administrative access (root) to your instance via SSH
 
 ## Instructions
 
 ### Step 1: Activating rescue mode
 
-First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager), go to the `Public Cloud`{.action} section and select the Public Cloud service concerned. Then, click on the `Instances`{.action} tab in the left-hand navigation.
+First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Public Cloud`{.action} section and select the Public Cloud service concerned. Then, click on the `Instances`{.action} tab in the left-hand navigation.
 
 ![control panel](images/compute.png){.thumbnail}
 

@@ -17,7 +17,7 @@ Mit OVH Webhosting Angeboten verfügen Sie über einen Speicherplatz für das On
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVH Webhosting](https://www.ovh.de/hosting/){.external} Angebot.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
 ## Beschreibung
 
@@ -37,7 +37,7 @@ Um sich mit Ihrem Speicherplatz zu verbinden, benötigen Sie die folgenden Eleme
 > **Wenn Sie diese Daten bereits haben**, gehen Sie direkt zu Schritt 2 „[Auf den Speicherplatz zugreifen](./#schritt-2-auf-den-speicherplatz-zugreifen)“ über.
 > 
 
-Wenn Sie nicht mehr im Besitz dieser Daten sind, loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und klicken Sie im Bereich „Web“ links in der Menüleiste auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. 
+Wenn Sie nicht mehr im Besitz dieser Daten sind, loggen Sie sich in Ihr [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und klicken Sie im Bereich „Web“ links in der Menüleiste auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. 
 
 Hier werden alle zum Speicherplatz gehörigen Informationen sowie eine Tabelle angezeigt, in der die für Ihr Webhosting angelegten FTP- und SSH-Benutzer aufgelistet werden.
 
@@ -70,7 +70,7 @@ Um sich mit dem Speicherplatz zu verbinden, haben Sie verschiedene Möglichkeite
 
 #### 1. Via FTP-Explorer verbinden
 
-Um sich via FTP-Explorer mit Ihrem Speicherplatz zu verbinden, loggen Sie sich zunächst im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein, klicken Sie im Bereich „Web“ links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. 
+Um sich via FTP-Explorer mit Ihrem Speicherplatz zu verbinden, loggen Sie sich zunächst im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein, klicken Sie im Bereich „Web“ links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. 
 
 Gehen Sie dann auf den Tab FTP - SSH und klicken Sie auf den Button FTP-Explorer. 
 

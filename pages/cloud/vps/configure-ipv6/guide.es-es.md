@@ -28,7 +28,7 @@ El protocolo de internet versión 6 (IPv6) es la última versión del protocolo 
 - Tener un [VPS de OVHcloud](https://www.ovhcloud.com/es-es/vps/){.external}.
 - Estar conectado al VPS por SSH (acceso root) o a través de un escritorio remoto (Windows).
 - Tener conocimientos básicos de redes.
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} o a la [API de OVHcloud](https://api.ovh.com/console/).
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} o a la [API de OVHcloud](https://api.ovh.com/console/).
 
 ## Procedimiento
 
@@ -56,7 +56,7 @@ En primer lugar, es necesario conocer la dirección IPV6 y la puerta de enlace I
 
 #### Desde el área de cliente <a name="viacontrolpanel"></a>
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, en la sección `Cloud`{.action} de la pestaña "Bare Metal Cloud". En la columna izquierda, haga clic en `VPS`{.action} y seleccione el VPS correspondiente. Por defecto, se abrirá la pestaña `Inicio`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Cloud`{.action} de la pestaña "Bare Metal Cloud". En la columna izquierda, haga clic en `VPS`{.action} y seleccione el VPS correspondiente. Por defecto, se abrirá la pestaña `Inicio`{.action}.
 
 En el apartado IP podrá ver la dirección IPv6 y la puerta de enlace IPv6 asignadas al VPS. Anótelas y continúe en el apartado [2\. Aplicar la configuración IPv6](#applyipv6).
 
@@ -220,10 +220,11 @@ network:
             addresses:
               - "YOUR_IPV6/IPv6_PREFIX"
             gateway6: "IPv6_GATEWAY"
-            carreteras:
+            routes:
               - to: "IPv6_GATEWAY"
                 scope: link
 ```
+
 > [!warning]
 >
 > Es importante mantener la alineación de cada elemento del archivo, tal y como se muestra en el ejemplo anterior. No use la tecla de tabulación para crear el espacio. Sólo es necesaria la tecla espacio.

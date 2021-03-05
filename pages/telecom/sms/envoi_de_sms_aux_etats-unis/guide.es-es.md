@@ -36,7 +36,7 @@ La validación de las plantillas de mensajes, realizada por el equipo de OVHclou
 
 #### 2.1. Desde el área de cliente
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} en la sección `Telecom`{.action} (1). Haga clic en `SMS`{.action} en la columna izquierda (2) y seleccione su cuenta de SMS. A continuación, haga clic en la pestaña `SMS`{.action} (3) y, por último, seleccione `Gestionar las plantillas`{.action} (4).
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Telecom`{.action} (1). Haga clic en `SMS`{.action} en la columna izquierda (2) y seleccione su cuenta de SMS. A continuación, haga clic en la pestaña `SMS`{.action} (3) y, por último, seleccione `Gestionar las plantillas`{.action} (4).
 
 ![SMS a Estados Unidos](images/smstousa1.png){.thumbnail}
 

@@ -39,13 +39,13 @@ El remitente (<i>sender</i>) transmite el correo electrónico a la lista de difu
 ## Requisitos
 
 - Disponga al menos de una solución de correo electrónico MX Plan 100 o de un [Web hosting](https://www.ovh.com/world/es/hosting/){.external} compatible con las listas de difusión.
-- Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 ## Procedimiento
 
 ### Crear una lista de difusión
 
-Para crear una lista de difusión, inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} y, seguidamente, seleccione la pestaña `Web Cloud`{.action} en la parte superior.
+Para crear una lista de difusión, inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y, seguidamente, seleccione la pestaña `Web Cloud`{.action} en la parte superior.
 
 Una vez iniciada la sesión, haga clic en `Correos electrónicos`{.action} (en la columna de la izquierda) y, seguidamente, en el nombre del dominio correspondiente. Acceda a la pestaña `Listas de difusión`{.action} de su servicio de correo electrónico.
 
@@ -257,4 +257,4 @@ A continuación, le presentamos una lista de archivos con los textos de las resp
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en https://community.ovh.com/en.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

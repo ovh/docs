@@ -17,7 +17,7 @@ Your database can contain a lot of essential information for your website. It is
 ## Requirements
 
 - a [Private SQL Web Hosting plan](https://www.ovh.co.uk/web-hosting/sql-options.xml) or a [Cloud Database](https://www.ovh.co.uk/cloud-databases/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
@@ -29,7 +29,7 @@ Your database can contain a lot of essential information for your website. It is
 
 ### Backing up and exporting a database from the Control Panel
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the SQL instance concerned. Next, go to the `Databases` tab.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Databases`{.action} in the services bar on the left-hand side, then choose the SQL instance concerned. Next, go to the `Databases` tab.
 
 In the **Backups** column, the number corresponds to the number of backups available for your database.
 

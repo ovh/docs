@@ -16,7 +16,7 @@ Uudelleenohjauksella verkkotunnus voidaan ohjata uuteen kohteeseen. On olemassa 
 
 ## Edellytykset
 
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 - Olet kirjautunut webhotelliisi (jos haluat lisätä [.htaccess-tiedoston](https://docs.ovh.com/fi/hosting/webhotelli_kaikki_mita_haluat_tietaa_htaccess-tiedostosta/){.external})
 
 ## Käytännössä
@@ -37,7 +37,7 @@ Tiedäthän, että uudelleenohjauksen asettaminen saattaa vaikuttaa verkkosivusi
 
 ### Verkkotunnuksen uudelleenohjaus hallintapaneelin kautta
 
-Kun olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}, mene vasemmanpuoleisen valikon osioon `Verkkotunnukset`{.action} (*1* alla olevassa kuvassa) ja sitten välilehdelle `Uudelleenohjaus`{.action} (*2* alla olevassa kuvassa).
+Kun olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, mene vasemmanpuoleisen valikon osioon `Verkkotunnukset`{.action} (*1* alla olevassa kuvassa) ja sitten välilehdelle `Uudelleenohjaus`{.action} (*2* alla olevassa kuvassa).
 
 Taulukossa on näkyvissä verkkotunnuksesi aktiiviset uudelleenohjaukset.
 

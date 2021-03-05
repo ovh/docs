@@ -41,7 +41,7 @@ To ensure using the last release, please refer to the [Github project](https://g
 
 The Metrics platform allow the user to push directly in InfluxDB with Telegraf, or with Warp 10 using a Warp 10 output plugin. To set up correctly Telegraf to use it you have to refer to the [plugin Github repository](https://github.com/CleverCloud/telegraf-output-warp10){.external}.
 
-### Telegrag configuration file
+### Telegraf configuration file
 
 Once getting started with Telegraf you have to specify the data to record. With Telegraf you can generate basic default configuration file (as for example for the CPU data below).
 
@@ -110,7 +110,7 @@ As the Metrics platform backend use [Warp 10](http://www.warp10.io/), the [Warp 
 
 The `WRITE_TOKEN` and `REGION` are to be replaced by your own information based on Metrics manager.
 
-## Telegraf tunning
+## Telegraf tuning
 
 To have the best experience with Telegraf on the Metrics platform we propose here some possible updates.
 
@@ -151,7 +151,7 @@ Telegraf is used to record a lot of servers indicators as mem, system, net, cpu,
 
 However some inputs indicators might required telegraf to run as **root** user (on linux). For example, this can be the case of some network stats on a grsec kernel (you can check it using the `cat /proc/net/dev` command, a user not granted will always see 0 as value).
 
-All **inputs** parameters, can be configured in telegraf main configuration file. To control the cardinality of the data send to the Metrics platform, we can, in the previous example, update the [**CPU** inputs](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/cpu/README.md){.external} as below, setting **percpu** to false.
+All **inputs** parameters, can be configured in telegraf main configuration file. To control the cardinality of the data send to the Metrics platform, we can, in the previous example, update the <a class="external" href="https://github.com/influxdata/telegraf/blob/master/plugins/inputs/cpu/README.md"><strong>CPU</strong> inputs</a> as below, setting **percpu** to false.
 
 ```toml
 [[inputs.cpu]]
@@ -163,13 +163,13 @@ All **inputs** parameters, can be configured in telegraf main configuration file
 
 This will record only one set of metrics for the **CPU** data. In our previous example, we will get only **10** metrics instead of 50. This doesn't look like a lot, but if you have hosts with 8 or 16 CPU, you still have only 10 series (and not 90 or 170). When deploying telegraf on several hosts, this can reduce by a lot the number of metrics saved on a long time storage and to process. But most of all it's get easier to predict the number of series created per host.
 
-For all inputs, each configuration parameters are detailed in [Telegraf Github repository](https://github.com/influxdata/telegraf/tree/master/plugins/inputs){.external}: As example the interesting parameters to reduce the recorded data:
+For all inputs, each configuration parameters are detailed in [Telegraf Github repository](https://github.com/influxdata/telegraf/tree/master/plugins/inputs){.external}. As example the interesting parameters to reduce the recorded data:
 
-- For the [**disks** input](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/disk/README.md){.external} are: **mount_points** or **ingore_fs**.
-- For the [**diskio** input](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/diskio){.external} are: **devices** or **name_templates**.
-- For the [**net** input](https://github.com/influxdata/telegraf/blob/master/plugins/inputs/net/NET_README.md){.external} is **interfaces**.
+- for the <a class="external" href="https://github.com/influxdata/telegraf/blob/master/plugins/inputs/disk/README.md"><strong>disks</strong> input</a> are: **mount_points** or **ingore_fs**.
+- for the [**diskio** input](https://github.com/influxdata/telegraf/tree/master/plugins/inputs/diskio){.external} are: **devices** or **name_templates**.
+- for the <a class="external" href="https://github.com/influxdata/telegraf/blob/master/plugins/inputs/net/NET_README.md"><strong>net</strong> input</a> is **interfaces**.
 
-To only record specific metrics, a Telegraf [filtering](https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#measurement-filtering){.external} can be applied on any inputs.
+To only record specific metrics, a Telegraf <a class="external" href="https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md#measurement-filtering">filtering</a> can be applied on any inputs.
 The **field** parameter applied to the Metrics platform **classnames** when **tags** applied to **labels**.
 
 - For example, to white list only a subset of indicators to record : fill the **fieldpass** parameter with a pattern to match:
@@ -218,7 +218,7 @@ When using tagpass or tagrop, you have to first declare all settings of an input
   name_override = "something"
 ```
 
-You can check the [Telegraf configuration](https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md){.external} guidelines to find a lot of other interesting parameters.
+You can check the <a class="external" href="https://github.com/influxdata/telegraf/blob/master/docs/CONFIGURATION.md">Telegraf configuration</a> guidelines to find a lot of other interesting parameters.
 
 Selecting the metrics to record on your infrastructure might looks like a lost of time at first sight, but it will save you a lot in the future as you will have the full control on them.
 

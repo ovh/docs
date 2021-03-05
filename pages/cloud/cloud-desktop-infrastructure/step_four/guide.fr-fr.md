@@ -17,7 +17,7 @@ Maintenant que [votre pool est créé](https://docs.ovh.com/fr/cloud-desktop-inf
 
 ## Prérequis
 
-- Avoir créé des utilisateurs dans l'Active Directory si une [relation d'approbation a été créée](https://docs.ovh.com/fr/cloud-desktop-infrastructure/approval-ad/){.external} ou avoir créé les utilisateurs dans l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Avoir créé des utilisateurs dans l'Active Directory si une [relation d'approbation a été créée](https://docs.ovh.com/fr/cloud-desktop-infrastructure/approval-ad/){.external} ou avoir créé les utilisateurs dans l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 - Être connecté sur l'interface VMware Horizon 7.1.
 
 

@@ -29,7 +29,7 @@ Technologie vRack (virtuální rack) umožňuje seskupení serverů (nezávisle 
 
 ### Přidání serveru ke službě vRack
 
-1. Jakmile je služba vRack přidána k Vašemu účtu, přejděte do sekce `Cloud`{.action} v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+1. Jakmile je služba vRack přidána k Vašemu účtu, přejděte do sekce `Cloud`{.action} v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 2. V levém postranním panelu klikněte na tlačítko `vRack`{.action}.
 3. Z rozbalovací nabídky vyberte požadovanou službu.
 4. Ze seznamu kompatibilních služeb vyberte servery, které si přejete ke službě vRack připojit, a klikněte na tlačítko `Přidat`{.action}. 

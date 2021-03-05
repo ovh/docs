@@ -19,7 +19,7 @@ La tecnologia vRack (rack virtuale) permette di raggruppare diversi server, indi
 - Essere in possesso di una [vRack](https://www.ovh.it/soluzioni/vrack/){.external}
 - Disporre di almeno due o più [server compatibili con la vRack](https://www.ovh.it/server_dedicati/){.external}
 - Essere connesso in SSH (o attraverso l’interfaccia grafica) al server Linux (accesso <i>root</i>)
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Aver selezionato un intervallo di indirizzi IP privati
 
 
@@ -27,7 +27,7 @@ La tecnologia vRack (rack virtuale) permette di raggruppare diversi server, indi
 
 ### Aggiungi i server alla vRack
 
-1. Dopo aver aggiunto la vRack al tuo account, accedi alla sezione `Cloud`{.action} del tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+1. Dopo aver aggiunto la vRack al tuo account, accedi alla sezione `Cloud`{.action} del tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 2. Successivamente seleziona il menu `vRack`{.action} nella colonna a sinistra.
 3. Seleziona la tua vRack e,
 4. nella lista dei servizi compatibili, seleziona i server che vuoi aggiungere alla vRack, poi clicca su `Aggiungi`{.action}.

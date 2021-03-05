@@ -65,11 +65,11 @@ Puoi effettuare un test d’invio per verificare che l’account sia impostato c
 
 Se non riesci ad accedere all’account, ti suggeriamo di:
 
-- verificare la configurazione del dominio impostato sul tuo servizio Exchange attraverso lo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} > scheda `Domini associati`{.action} > colonna `Diagnostica`{.action}
+- verificare la configurazione del dominio impostato sul tuo servizio Exchange attraverso lo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} > scheda `Domini associati`{.action} > colonna `Diagnostica`{.action}
 
 - provare a inserire manualmente le URL di connessione al servizio Exchange nonostante l’avviso di sicurezza del certificato e completare i campi `URL interno`{.action} e `URL esterno`{.action} con le informazioni del server su cui è ospitato il servizio Exchange.
 
-Per ritrovare questo server, accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external} e clicca sul servizio Exchange interessato. Accedi poi alla scheda `Informazioni generali`{.action} e recupera il server che appare nel riquadro `Connessione`{.action}.
+Per ritrovare questo server, accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca sul servizio Exchange interessato. Accedi poi alla scheda `Informazioni generali`{.action} e recupera il server che appare nel riquadro `Connessione`{.action}.
 
 ### Step 2: utilizza il tuo account 
 

@@ -17,7 +17,7 @@ Cloning a VM creates a copy of the source VM.
 ## Requirements
 
 - a [Hosted Private Cloud infrastructure](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- a user account with access to [vSphere](../login-vsphere-interface/) (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager))
+- a user account with access to [vSphere](../login-vsphere-interface/) (created in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB))
 - a VM in your cluster
 
 ## Instructions

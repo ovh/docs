@@ -22,13 +22,13 @@ Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny ni
 - Posiadanie kompatybilnego [hostingu OVHcloud](https://www.ovh.pl/hosting/){.external}.
 - Zarejestrowana domena lub kilka [domen](https://www.ovh.pl/domeny/){.external}.
 - Możliwość modyfikacji konfiguracji Twoich domen (strefy DNS)
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
 
 ### Etap 1: zarządzanie opcją MultiSite
 
-Po pierwsze, zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action} na pasku usług po lewej stronie, wybierz odpowiednią ofertę, następnie wybierz zakładkę `MultiSite`{.action}.
+Po pierwsze, zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action} na pasku usług po lewej stronie, wybierz odpowiednią ofertę, następnie wybierz zakładkę `MultiSite`{.action}.
 
 Tabela, która się wyświetla zawiera listę wszystkich domen i subdomen dodanych do Twojego rozwiązania hostingowego. Niektóre z nich zostały utworzone automatycznie podczas instalacji Twojego hostingu.
 
@@ -71,7 +71,7 @@ Teraz spersonalizuj dodanie domeny lub subdomeny. W zależności od wykupionego 
 |Włącz CDN|Umożliwia aktywację CDN dla wybranej domeny (zapisywanie w pamięci podręcznej elementów statycznych Twojej strony WWW, takich jak obrazy). Dowiedz się więcej na [naszej stronie CDN](https://www.ovh.pl/hosting/cdn.xml){.external}. Aktywując SSL i CDN, możesz również użyć protokołu **HTTP2** (jest on włączony domyślnie w naszym centrum danych w Gravelines).|
 |Krajowy adres IP|Umożliwia korzystanie z geolokalizowanego adresu IP (w wymienionych krajach) dla wybranej domeny. Dowiedz się więcej na [naszej stronie IP](https://www.ovh.pl/hosting/ip.xml){.external}.|
 |Włącz firewall|Umożliwia aktywację zapory (analiza zapytań) dla danej domeny. Dowiedz się więcej na [naszej stronie ModSecurity](https://www.ovh.pl/hosting/mod_security.xml){.external}.|
-|Rozdzielone logi|Umożliwia wydzielenie logów dotyczących wybranej domeny.  Wybierz z listy nazwę domeny, która będzie stanowiła dostęp do wydzielonych logów. Dowiedz się więcej na [naszej stronie szczegółowych](https://www.ovh.pl/hosting/website_statistics.xml){.external} statystyk.|
+|Rozdzielone logi|Umożliwia wydzielenie logów dotyczących wybranej domeny.  Wybierz z listy nazwę domeny, która będzie stanowiła dostęp do wydzielonych logów. Dowiedz się więcej na [naszej stronie szczegółowych](https://www.ovh.pl/hosting/statystyki_stron.xml){.external} statystyk.|
 
 Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}{.action}. Następnie sprawdź podsumowanie, które się wyświetli.
 
@@ -80,7 +80,7 @@ Po uzupełnieniu informacji, kliknij przycisk `Dalej`{.action}{.action}. Następ
 Po wybraniu domeny zarejestrowanej w OVHcloud możesz automatycznie lub ręcznie zmienić jej konfigurację DNS:
 
 - **w przypadku automatycznej konfiguracji DNS**: zaznacz kratkę `Konfiguracja automatyczna (zalecana)`{.action};
-- **w przypadku ręcznej konfiguracji DNS**: usuń zaznaczenie w kratce `Konfiguracja automatyczna (zalecana)`{.action}, następnie pobierz informacje odnośnie zmian, które się wyświetlają. Jeśli chcesz przeprowadzić tę konfigurację, skorzystaj z dokumentacji ["Modyfikacja strefy DNS OVHcloud"](../../hosting_www_jak_edytowac_strefe_dns/){.external}.
+- **w przypadku ręcznej konfiguracji DNS**: usuń zaznaczenie w kratce `Konfiguracja automatyczna (zalecana)`{.action}, następnie pobierz informacje odnośnie zmian, które się wyświetlają. Jeśli chcesz przeprowadzić tę konfigurację, skorzystaj z dokumentacji ["Modyfikacja strefy DNS OVHcloud"](../../domains/hosting_www_jak_edytowac_strefe_dns/){.external}.
 
 Kliknij przycisk `Zatwierdź`{.action}, aby rozpocząć dodawanie domeny. Może do potrwać do godziny. Efekty modyfikacji domeny staną się widoczne po upływie 4-24 godzin ze względu na niezbędny czas propagacji.
 

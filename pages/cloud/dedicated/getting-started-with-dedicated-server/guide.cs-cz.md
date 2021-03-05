@@ -24,7 +24,7 @@ Dedikovaný server je fyzický server umístěný v jednom z našich datacenter.
 
 ## Prerekvizity
 
-* [Dedikovaný server OVH](https://www.ovh.cz/dedikovane_servery/){.external}, přístupný prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (sekce `Dedicated`{.action}, záložka `Dedikované servery`{.action}).
+* [Dedikovaný server OVH](https://www.ovh.cz/dedikovane_servery/){.external}, přístupný prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} (sekce `Dedicated`{.action}, záložka `Dedikované servery`{.action}).
 
 
 ## Postup
@@ -55,7 +55,7 @@ Ihned po dokončení prvotní konfigurace dedikovaného serveru obdržíte e-mai
 
 ### Instalace a reinstalace dedikovaného serveru
 
-Přejděte do `základního administračního rozhraní` svého serveru v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. V tabulce `Základní informace` klikněte u kolonky Operační systém na `ikonku tří teček`{.action} a vyberte možnost `Reinstalace`{.action}.
+Přejděte do `základního administračního rozhraní` svého serveru v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. V tabulce `Základní informace` klikněte u kolonky Operační systém na `ikonku tří teček`{.action} a vyberte možnost `Reinstalace`{.action}.
 
 ![Tlačítko reinstalace](images/reinstalling-your-server-01.png){.thumbnail}
 
@@ -72,7 +72,7 @@ Pokračujte podle uvedených instrukcí. Zvolenou konfiguraci v posledním kroku
 
 > [!primary]
 >
-> Použití některých operačních systémů či platforem (jako např. Windows a Plesk) je podmíněno zakoupením licence. Licenci můžete zakoupit přímo od [společnosti OVH](https://www.ovh.com/auth/?action=gotomanager){.external} nebo od některého z oficiálních resellerů. Zakoupenou licenci je následně zapotřebí integrovat do samotného operačního systému, a to buď manuálně nebo prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. 
+> Použití některých operačních systémů či platforem (jako např. Windows a Plesk) je podmíněno zakoupením licence. Licenci můžete zakoupit přímo od [společnosti OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} nebo od některého z oficiálních resellerů. Zakoupenou licenci je následně zapotřebí integrovat do samotného operačního systému, a to buď manuálně nebo prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. 
 > 
 
 
@@ -119,7 +119,7 @@ Detailní informace na toto téma naleznete v následující dokumentaci: [Použ
 
 ### Režim rescue
 
-Prvním krokem při řešení potíží s dedikovaným serverem je restart do režimu rescue. Režim rescue lze aktivovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. V sekci Dedicated přejděte do `základního administračního rozhraní`{.action} svého dedikovaného serveru. V tabulce `Základní informace`{.action} klikněte na ikonku tří teček u kolonky `Boot`{.action} a vyberte možnost `Upravit`{.action}. 
+Prvním krokem při řešení potíží s dedikovaným serverem je restart do režimu rescue. Režim rescue lze aktivovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. V sekci Dedicated přejděte do `základního administračního rozhraní`{.action} svého dedikovaného serveru. V tabulce `Základní informace`{.action} klikněte na ikonku tří teček u kolonky `Boot`{.action} a vyberte možnost `Upravit`{.action}. 
 
 ![Změna bootovacího režimu](images/rescue-mode-01.png){.thumbnail}
 

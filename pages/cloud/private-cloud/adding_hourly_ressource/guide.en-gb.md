@@ -17,7 +17,7 @@ With our [Hosted Private Cloud solutions](https://www.ovhcloud.com/en-gb/enterpr
 ## Requirements
 
 - a [Hosted Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/){.external} solution
-- [the "Add resources"](../change-users-rights/){.external} right for the datacentre concerned (this right is granted via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external})
+- [the "Add resources"](../change-users-rights/){.external} right for the datacentre concerned (this right is granted via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external})
 - access to the vSphere client
 
 ## Instructions

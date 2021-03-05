@@ -21,7 +21,7 @@ Al instalar o reinstalar un sistema operativo Windows, recibirá una contraseña
 ## Requisitos
 
 * Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/){.external} con Windows instalado.
-* Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
 
@@ -29,7 +29,7 @@ Las siguientes etapas describen el proceso de modificación de la contraseña lo
 
 ### 1. reiniciar el servidor en modo de rescate
 
-El sistema debe arrancarse en modo de rescate antes de poder cambiar la contraseña de administrador. Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la lista de navegación de la izquierda en `Servidores Dedicados`{.action}.
+El sistema debe arrancarse en modo de rescate antes de poder cambiar la contraseña de administrador. Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la lista de navegación de la izquierda en `Servidores Dedicados`{.action}.
 
 El netboot debe pasarse a "rescue64-pro (Customer rescue system (Linux)". Busque "Boot" en la zona **Información general** y haga clic en `...`{.action} y luego en `Editar`{.action}.
 <br>En la nueva ventana, marque **Arrancar en modo rescue** y seleccione "rescue64-pro" en el menú. Indique una dirección de correo electrónico en el último campo si las claves de acceso deben enviarse a una dirección distinta de la dirección principal de su cuenta de OVHcloud. 
@@ -136,6 +136,8 @@ Used for data: 359/39024 blocks/bytes, unused: 33/18064 blocks/bytes.
 | 01f8 | WDAGUtilityAccount             |        | dis/lock |
 ```
 
+Si el comando no funciona, instale la herramienta primero: `apt get install chntpw`.
+
 Borre la contraseña del usuario admin con el siguiente comando. (Seleccione "Administrator" si "admin" no existe.)
 
 ```
@@ -229,7 +231,7 @@ Write hive files? (y/n) [n] : y
 
 ### 4. Reiniciar el servidor 
 
-En primer lugar, sustituya el netboot por **Arrancar en el disco duro** en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) (ver [Etapa 1](./#1-reiniciar-el-servidor-en-modo-de-rescate_1)). 
+En primer lugar, sustituya el netboot por **Arrancar en el disco duro** en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) (ver [Etapa 1](./#1-reiniciar-el-servidor-en-modo-de-rescate_1)). 
 
 Desmonte la partición y reinicie el servidor con los siguientes comandos:
 
@@ -245,7 +247,7 @@ The system is going down for reboot NOW!
 
 ### 5. establecer una nueva contraseña (IPMI)
 
-En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager), acceda a la pestaña `IPMI`{.action} para abrir una sesión de KVM.
+En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la pestaña `IPMI`{.action} para abrir una sesión de KVM.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -286,7 +288,7 @@ Se recomienda utilizar el teclado virtual al introducir las contraseñas en esta
 
 #### 1. reiniciar el servidor en modo de rescate
 
-El sistema debe arrancarse en modo de rescate antes de poder cambiar la contraseña de administrador. Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la lista de navegación de la izquierda en `Servidores Dedicados`{.action}.
+El sistema debe arrancarse en modo de rescate antes de poder cambiar la contraseña de administrador. Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la lista de navegación de la izquierda en `Servidores Dedicados`{.action}.
 
 El netboot debe migrarse a "WinRescue (Rescue System for Windows)". Busque "Boot" en la zona **Información general** y haga clic en `...`{.action} y luego en `Editar`{.action}.
 <br>En la nueva ventana, marque **Arrancar en modo rescue** y seleccione "WinRescue" en el menú. Indique una dirección de correo electrónico en el último campo si las claves de acceso deben enviarse a una dirección distinta de la dirección principal de su cuenta de OVHcloud. 
@@ -306,7 +308,7 @@ Para más información sobre el modo de rescate, consulte [esta guía](../modo_d
 
 #### 2. eliminar la contraseña actual
 
-En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager), acceda a la pestaña `IPMI`{.action} para abrir una sesión de KVM.
+En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la pestaña `IPMI`{.action} para abrir una sesión de KVM.
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
@@ -328,7 +330,7 @@ El servidor debe reiniciarse.
 
 #### 3. reiniciar el servidor 
 
-En primer lugar, sustituya el netboot por **Arrancar en el disco duro** en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager) (ver [Etapa 1](./#1-reiniciar-el-servidor-en-modo-de-rescate_1)). 
+En primer lugar, sustituya el netboot por **Arrancar en el disco duro** en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) (ver [Etapa 1](./#1-reiniciar-el-servidor-en-modo-de-rescate_1)). 
 
 Al volver a la ventana de KVM, seleccione la opción de apagado `Reiniciar`{.action} con el botón Windows "Iniciar" en la parte inferior izquierda.
 

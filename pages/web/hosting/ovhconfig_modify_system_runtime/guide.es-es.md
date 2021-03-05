@@ -17,7 +17,7 @@ Actualmente, hay una ingente cantidad de sitios web en la red. Tanto si quiere c
 ## Requisitos
 
 - Tener contratado un [plan de hosting de OVH](https://www.ovh.es/hosting/){.external} (salvo los planes de hosting Cloud Web).
-- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager).
+- Estar conectado al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ## Procedimiento
 
@@ -34,7 +34,7 @@ Al modificar la configuración de un alojamiento, también se modifica la config
 
 #### 1. Acceder a la gestión de la configuración del alojamiento
 
-Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. En la pestaña `Información general`{.action}, en el recuadro **Configuración**, haga clic en el botón `···`{.action} correspondiente al epígrafe **Versión PHP global** y seleccione `Cambiar la configuración`{.action}.
+Conéctese al [área de cliente de OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. En la pestaña `Información general`{.action}, en el recuadro **Configuración**, haga clic en el botón `···`{.action} correspondiente al epígrafe **Versión PHP global** y seleccione `Cambiar la configuración`{.action}.
 
 ![Configuración del alojamiento](images/change-hosting-configuration-step1.png){.thumbnail}
 

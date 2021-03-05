@@ -1,9 +1,9 @@
 ---
 title: Migrer une infrastructure vers Managed Bare Metal
 routes:
-    canonical: 'https://docs.ovh.com/fr/private-cloud/service-migration/'
+    canonical: 'https://docs.ovh.com/fr/private-cloud/sddc-migration/'
 excerpt: Découvrez comment gérer tous les aspects liés à la migration d'une infrastructure vers la solution Managed Bare Metal
-slug: service-migration
+slug: sddc-migration
 section: Premiers pas
 order: 5
 ---
@@ -19,9 +19,14 @@ La migration d'un service Managed Bare Metal comprend deux aspects :
 
 **Découvez comment couvrir tous les aspects liés à la migration vers un service Managed Bare Metal**
 
+> [!primary]
+>
+> Si vous choisissez de migrer une infrastructure vers un nouveau vDC, veuillez suivre [ce guide dédié](../vdc-migration).
+>
+
 ## Prérequis
 
-* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action}.
+* Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Bare Metal Cloud`{.action} puis `Managed Bare Metal`{.action}.
 * Posséder un produit [Managed Bare Metal](https://www.ovhcloud.com/fr/managed-bare-metal/){.external}.
 
 ## En pratique

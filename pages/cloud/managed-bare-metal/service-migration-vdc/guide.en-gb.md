@@ -1,9 +1,9 @@
 ---
 title: Migrating an infrastructure to a new vDC
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/service-migration/'
+    canonical: 'https://docs.ovh.com/gb/en/private-cloud/sddc-migration/'
 excerpt: Find out how to manage all aspects of migrating an infrastructure to a vDC
-slug: service-migration-vdc
+slug: vdc-migration
 section: Getting started
 order: 6
 hidden: true
@@ -28,7 +28,7 @@ There are two aspects to migrating an infrastructure to a new vDC:
 ## Requirements
 
 - a PCC infrastructure
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 

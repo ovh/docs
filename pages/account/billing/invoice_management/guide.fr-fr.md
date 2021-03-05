@@ -15,14 +15,14 @@ OVHcloud met à votre disposition un espace vous permettant de consulter, gérer
 
 > [!primary]
 >
-> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager){.external}, rubrique `Mes services`{.action} puis `Mes contrats`{.action}.
+> En fonction de votre lieu de résidence et de sa législation en vigueur, ainsi que du ou des produits concernés, il est possible que certaines parties de ce guide varient et/ou ne s’appliquent pas à votre situation. Si vous avez le moindre doute, référez-vous à vos contrats OVHcloud disponibles dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, rubrique `Mes services`{.action} puis `Mes contrats`{.action}.
 >
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/iiQmopMhzik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 
-- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 - Être connecté en tant que contact facturation de votre service (plus de détails sur les différents contacts dans le guide « [Gérer les contacts de ses services](https://docs.ovh.com/fr/customer/gestion-des-contacts/){.external} »).
 
 
@@ -56,7 +56,7 @@ Les taxes seront ajoutées en bas, dans le récapitulatif global du montant indi
 
 > [!primary]
 >
-> Si la mention « Relevé de compte » apparaît au niveau du moyen de paiement utilisé, cela signifie qu'il s'agit d'un renouvellement automatique. Le moyen de paiement utilisé sera forcément celui qui a été validé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+> Si la mention « Relevé de compte » apparaît au niveau du moyen de paiement utilisé, cela signifie qu'il s'agit d'un renouvellement automatique. Le moyen de paiement utilisé sera forcément celui qui a été validé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 >
 
 
@@ -64,7 +64,7 @@ Les taxes seront ajoutées en bas, dans le récapitulatif global du montant indi
 
 #### Consulter et gérer ses factures
 
-Pour consulter vos factures, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, cliquez sur votre prénom en haut à droite puis sur `Factures`{.action}. 
+Pour consulter vos factures, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur votre prénom en haut à droite puis sur `Factures`{.action}. 
 
 ![Facturation](images/hubinvoices.png){.thumbnail}
 

@@ -18,7 +18,7 @@ Real Time Monitoring (RTM) -järjestelmällä voidaan osittain monitoroida palve
 
 - Olet kirjautunut SSH-yhteydellä (tai graafisen käyttöliittymän kautta) Linux-palvelimeesi (*pääkäyttäjänä*).
 - Olet kirjautunut Windows -palvelimesi etätyöpöydälle (*administraattorina*).
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 ## Käytännössä
 

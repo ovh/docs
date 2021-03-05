@@ -20,7 +20,7 @@ Quick links:
 
 ## Prerequisites
 
-* Access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager). 
+* Access to the [OVH Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). 
 
 ## Instructions
 

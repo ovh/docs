@@ -17,8 +17,8 @@ Dopo aver aggiunto un dominio al servizio Exchange, potrebbe essere richiesta an
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
-- Avere i permessi necessari per gestire Exchange dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere i permessi necessari per gestire Exchange dallo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Aver aggiunto un dominio sul servizio Exchange che necessita l’aggiunta di un record CNAME
 - Avere i permessi necessari per modificare la configurazione del tuo dominio (zona DNS)
 

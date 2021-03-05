@@ -87,7 +87,7 @@ Enfin, appuyez sur la touche de fonction `transfert`{.action} (touche en bas à 
 
 #### Configurer la gestion des transferts d'appels depuis l'espace client
 
-Une fois connecté dans l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, rendez-vous dans la partie `Télécom`{.action}, puis `Téléphonie`{.action}. Sélectionnez ensuite dans la colonne de gauche la ligne téléphonique concernée, puis cliquez sur le téléphone que vous souhaitez paramétrer. Cliquez ensuite sur `Téléphone`{.action} et `Paramètres Plug & Phone personnalisés`{.action}.
+Une fois connecté dans l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, rendez-vous dans la partie `Télécom`{.action}, puis `Téléphonie`{.action}. Sélectionnez ensuite dans la colonne de gauche la ligne téléphonique concernée, puis cliquez sur le téléphone que vous souhaitez paramétrer. Cliquez ensuite sur `Téléphone`{.action} et `Paramètres Plug & Phone personnalisés`{.action}.
 
 ![Espace client Telecom](images/control_panel_telecom.png){.thumbnail}
 

@@ -22,7 +22,7 @@ Une licence Office 365 peut être utilisée sur 5 PC/Mac, 5 tablettes et 5 smart
 ## En pratique
 ### Accéder à la gestion d'un service Office 365 Revendeur
 
-Une fois le service Office 365 créé et disponible, vous pouvez le gérer depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Une fois le service Office 365 créé et disponible, vous pouvez le gérer depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 Pour cela, connectez-vous à ce dernier, puis rendez-vous dans la section `Sunrise`{.action}. Dans le menu de gauche, choisissez `Office 365 Revendeurs`{.action} puis sélectionnez le service.
 

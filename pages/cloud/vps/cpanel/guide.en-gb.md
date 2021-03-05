@@ -15,8 +15,8 @@ cPanel is a control panel designed for web hosting. Web hosting tasks are simpli
 
 ## Requirements
 
-- a current [VPS solution](https://www.ovh.co.uk/vps/) (VPS ranges Value, Essential, Comfort, or Elite) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- a current [VPS solution](https://www.ovhcloud.com/en-gb/vps/) (VPS ranges Value, Essential, Comfort, or Elite) in your OVHcloud account
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
@@ -30,7 +30,7 @@ When your VPS is ready, you will receive an email providing the information to c
 >
 >You can connect to cPanel from https://*hostname*:2087/*session_parameters*
 
-If you already have a VPS and want to have cPanel on it, you can reinstall the VPS from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) with the "CentOS 7 - cPanel" template (available only with a compatible VPS solution).
+If you already have a VPS and want to have cPanel on it, you can reinstall the VPS from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) with the "CentOS 7 - cPanel" template (available only with a compatible VPS solution).
 
 > [!warning]
 >

@@ -18,7 +18,7 @@ Met Real Time Monitoring (RTM) kunt u uw server en de activiteiten ervan gedeelt
 
 - U moet via SSH (of op uw graphic interface) verbonden zijn op uw Linux-server (*root*-toegang).
 - U moet remote desktop ingelogd zijn op uw Windows-server (*admin*-toegang).
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}
 
 ## Instructies
 

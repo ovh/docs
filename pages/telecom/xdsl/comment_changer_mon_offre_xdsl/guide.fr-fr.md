@@ -23,7 +23,7 @@ Vous pouvez faire évoluer votre offre xDSL/FTTH afin de pouvoir accéder à de 
 
 ### Changer d’offre
 
-La demande de changement d'offre s'effectue via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+La demande de changement d'offre s'effectue via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 <br>Dans l'onglet `Télécom`{.action}, sélectionnez la rubrique `Accès Internet`{.action} puis choisissez le pack que vous souhaitez faire évoluer.
 <br>Cliquez ensuite sur `Changer d'offre`{.action} dans le cadre « Informations Générales ».
 

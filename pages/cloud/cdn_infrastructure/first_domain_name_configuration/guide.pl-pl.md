@@ -19,7 +19,7 @@ Podczas pierwszej konfiguracji usługi CDN (Content Delivery Network) konieczne 
 
 - Posiadanie usługi [CDN (Content Delivery Network) od OVH](https://www.ovh.pl/cdn/){.external}
 - Dostęp do interfejsu zarządzania strefą DNS Twojej domeny
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager){.external}
+- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 
 
 ## W praktyce
@@ -28,7 +28,7 @@ Podczas pierwszej konfiguracji usługi CDN (Content Delivery Network) konieczne 
 
 Pierwszy etap konfiguracji polega na dodaniu wybranej przez Ciebie subdomeny do usługi CDN, aby mogła ona przyjmować zapytania HTTP(S) dla tej domeny. 
 
-W tym celu przejdź do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external} > zakładka `Serwery dedykowane`{.action} > `NAS i CDN`{.action}.
+W tym celu przejdź do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > zakładka `Serwery dedykowane`{.action} > `NAS i CDN`{.action}.
 
 Następnie kliknij `Dodanie domeny do CDN`{.action}:
 
@@ -106,7 +106,7 @@ Przypisanie określonej domeny do plików, które chcesz umieścić w pamięci c
 
 Jeśli chcesz skonfigurować nową subdomenę, aby użyć sieci CDN OVH, prawdopodobnie powinieneś także zmodyfikować konfigurację Twojej strony WWW i Twojej usługi WWW. 
 
-Upewnij się przedtem, że Twój serwis WWW działania poprawnie korzystając z tej subdomeny. W tym celu skonfiguruj [*vhost*](https://pl.wikipedia.org/wiki/Apache_HTTP_Server#Virtual_Hosts){.external} dla tej domeny - z własnym folderem docelowym lub jako alias innej domeny.
+Upewnij się przedtem, że Twój serwis WWW działania poprawnie korzystając z tej subdomeny. W tym celu skonfiguruj *vhost* dla tej domeny - z własnym folderem docelowym lub jako alias innej domeny.
 
 Jeśli domena odpowiada poprawnie na poziomie Twojej usługi WWW, zmodyfikuj kod HTML, aby zmienić źródła plików, które muszą przechodzić przez CDN i upewnij się, czy są one poprawnie wywoływane za pomocą Twojej subdomenie.
 

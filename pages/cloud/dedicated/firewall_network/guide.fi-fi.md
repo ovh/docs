@@ -26,7 +26,7 @@ Globaalin infrastruktuurinsa ja asiakkaidensa palvelinten suojaamiseksi OVH tarj
 ## Edellytykset
 
 - Sinulla on palvelu, johon sisältyy Firewall Network ([dedikoitu palvelin](https://www.ovh-hosting.fi/dedikoidut_palvelimet/){.external}, [virtuaalipalvelin](https://www.ovh-hosting.fi/vps/){.external}, [Public Cloud -instanssi](https://www.ovh-hosting.fi/public-cloud/instances/){.external}, [Private Cloud](https://www.ovh-hosting.fi/private-cloud/){.external}, [Fail-over IP -osoite](https://www.ovh-hosting.fi/dedikoidut_palvelimet/ip_failover.xml){.external}, jne.)
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 
 ## Käytännössä
@@ -38,7 +38,7 @@ Globaalin infrastruktuurinsa ja asiakkaidensa palvelinten suojaamiseksi OVH tarj
 > Firewall Network suojaa yhteen koneeseen liittyvät IP-osoitteet. Jokainen IP-osoite on siis konfiguroitava erikseen, mitään palvelimen yleistä konfigurointia ei ole mahdollista tehdä.
 > 
 
-Kun olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}, mene `IP`{.action}-osioon ja klikkaa `...`{.action} halutun IPv4-palomuurin aktivoimiseksi.
+Kun olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, mene `IP`{.action}-osioon ja klikkaa `...`{.action} halutun IPv4-palomuurin aktivoimiseksi.
 
 ![Firewall Network -palomuurin aktivointi](images/firewall_creation.png){.thumbnail}
 

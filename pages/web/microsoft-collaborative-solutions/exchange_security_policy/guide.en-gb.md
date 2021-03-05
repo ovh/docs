@@ -17,7 +17,7 @@ With OVHcloud email services, you can create professional email addresses. In or
 ## Requirements
 
 - an [OVHcloud email solution](https://www.ovh.co.uk/emails/)
-- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager)
+- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
@@ -28,7 +28,7 @@ The security policy management of your email service has four aspects:
 - strengthening the verification of incoming messages on our servers and to your email addresses (for [Exchange](https://www.ovh.co.uk/emails/hosted-exchange/) accounts only)
 - configuring how so-called “unwanted” messages will be displayed in your inbox (for [Exchange](https://www.ovh.co.uk/emails/hosted-exchange/) accounts only)
 
-To access the security policy of your email service, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and make sure you are in the `Web Cloud`{.action} section. 
+To access the security policy of your email service, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and make sure you are in the `Web Cloud`{.action} section. 
 
 |Emails and Email Pro|Exchange| 
 |---|---| 

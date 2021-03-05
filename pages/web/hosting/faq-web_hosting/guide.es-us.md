@@ -11,29 +11,27 @@ section: 'Primeros pasos'
 
 ### ¿Qué hacer si mi sitio web no funciona bien? 
 
-Existen varios motivos por los que un sitio web puede funcionar de forma incorrecta. Para identificar la causa del fallo, compruebe en primer lugar que ha renovado todos sus servicios y que estos están activos, desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. A continuación, consulte las tareas en progreso desde la página [Status](http://travaux.ovh.net/){.external} de OVHcloud. Si todos los servicios están activos y no hay tareas que afecten a su sitio, deberá realizar un diagnóstico más profundo desde la sección «Diagnóstico» de [esta página](../). 
+Existen varios motivos por los que un sitio web puede funcionar de forma incorrecta. Para identificar la causa del fallo, compruebe en primer lugar que ha renovado todos sus servicios y que estos están activos, desde su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. A continuación, consulte las tareas en progreso desde la página [Status](http://travaux.ovh.net/){.external} de OVHcloud. Si todos los servicios están activos y no hay tareas que afecten a su sitio, deberá realizar un diagnóstico más profundo desde la sección «Diagnóstico» de [esta página](../). 
 
-**Ideas y consejos**: Si su sitio deja de estar disponible tras una acción realizada por usted, puede restaurar el contenido directamente desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Para ello, acceda la pestaña `FTP - SSH` de su alojamiento y haga clic en el botón `Restaurar una copia de seguridad`{.action}, situado en la parte derecha. Para más información, consulte la siguiente documentación: [Restaurar el espacio de almacenamiento de un alojamiento web](../restaurar-espacio-almacenamiento-alojamiento-web).
+**Ideas y consejos**: Si su sitio deja de estar disponible tras una acción realizada por usted, puede restaurar el contenido directamente desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Para ello, acceda la pestaña `FTP - SSH` de su alojamiento y haga clic en el botón `Restaurar una copia de seguridad`{.action}, situado en la parte derecha. Para más información, consulte la siguiente documentación: [Restaurar el espacio de almacenamiento de un alojamiento web](../restaurar-espacio-almacenamiento-alojamiento-web).
 
 ### ¿Cómo configurar mi alojamiento? 
 
-Para configurar su alojamiento, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}. Desde la sección `Alojamientos` podrá gestionar sus certificados SSL, versiones PHP, CDN, multisitios, bases de datos, etc. 
+Para configurar su alojamiento, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. Desde la sección `Alojamientos` podrá gestionar sus certificados SSL, versiones PHP, CDN, multisitios, bases de datos, etc. 
 
 **Ideas y consejos**: Para ayudarle a configurar su alojamiento, le invitamos a consultar la sección «Primeros pasos» de [esta página](../).
 
 ### ¿Cómo crear o eliminar un elemento en mi producto o servicio (cuenta de correo electrónico, bases de datos, etc.)?
 
-Para crear o eliminar un elemento, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} y seleccione el producto correspondiente (Correo electrónico, Bases de datos, etc.). De este modo, podrá configurar su alojamiento para adaptarlo a sus necesidades. 
+Para crear o eliminar un elemento, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y seleccione el producto correspondiente (Correo electrónico, Bases de datos, etc.). De este modo, podrá configurar su alojamiento para adaptarlo a sus necesidades. 
 
-**Ideas y consejos**: Puede realizar copias de seguridad diarias de sus bases de datos directamente desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+**Ideas y consejos**: Puede realizar copias de seguridad diarias de sus bases de datos directamente desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 ### ¿Cómo administrar mis contraseñas? 
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} para gestionar sus contraseñas. Si ha olvidado su ID de cliente o contraseña, haga clic en «¿No recuerda su ID de cliente o contraseña?» en la página de conexión. Recibirá la información necesaria por correo electrónico. Para más información, consulte la siguiente documentación: [Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contrase%C3%B1a/).
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} para gestionar sus contraseñas. Si ha olvidado su ID de cliente o contraseña, haga clic en «¿No recuerda su ID de cliente o contraseña?» en la página de conexión. Recibirá la información necesaria por correo electrónico. Para más información, consulte la siguiente documentación: [Establecer y gestionar la contraseña de su cuenta](https://docs.ovh.com/es/customer/gestionar-su-contrase%C3%B1a/).
 
 Una vez conectado al área de cliente, podrá gestionar los accesos a su servidor FTP y a las bases de datos. Para ello, acceda a la sección `Alojamientos` y seleccione el servicio correspondiente. Podrá acceder a sus mensajes de correo electrónico desde la sección `Correo electrónico` del área de cliente. 
-
-**Ideas y consejos**: Si posee una solución Email Pro o Exchange, podrá gestionar sus accesos desde los respectivos webmails.
 
 ### ¿Cómo publicar mi sitio web? 
 
@@ -65,7 +63,7 @@ Para ello, elimine o renombre el archivo «index.html» creado por OVHcloud en s
 
 ### ¿Cómo mejorar mi plan de hosting?
 
-Si desea cambiar su plan actual por uno superior, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} y seleccione el servicio `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
+Si desea cambiar su plan actual por uno superior, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y seleccione el servicio `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
 
 En la pestaña `Información general`, en el recuadro `Suscripción`, haga clic en el botón `...`{.action} delante de "Producto" y luego en `Cambiar de producto`{.action}. Siga las siguientes instrucciones para finalizar el pedido. Se añade a la nueva oferta una parte proporcional al tiempo restante de su producto actual.
 

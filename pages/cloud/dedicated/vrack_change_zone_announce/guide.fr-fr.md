@@ -48,7 +48,7 @@ Rendez-vous sur le lien <https://api.ovh.com/console/>, puis connectez-vous avec
 > @api {GET} /vrack#GET
 > 
 
-Cette API permet de récupérer la liste des services vRack. Si vous n'arrivez pas à identifier le service concerné grâce à ces références, aidez-vous de votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager){.external} pour le récupérer. Pour cela, positionnez-vous dans la partie « Cloud », puis « vRack ».
+Cette API permet de récupérer la liste des services vRack. Si vous n'arrivez pas à identifier le service concerné grâce à ces références, aidez-vous de votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} pour le récupérer. Pour cela, positionnez-vous dans la partie « Cloud », puis « vRack ».
 
 > [!api]
 >

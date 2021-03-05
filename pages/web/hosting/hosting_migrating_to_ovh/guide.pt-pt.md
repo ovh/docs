@@ -19,7 +19,7 @@ Este guia explica como migrar um site, bases de dados e endereços de e-mail par
 - Ter acesso aos ficheiros do site.
 - Ter acesso às bases de dados do site (para sites com BD).
 - Ter acesso aos dados associados aos endereços de e-mail (utilizador, palavra-passe, servidores).
-- Ter acesso à [Área de cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
@@ -58,7 +58,7 @@ Aceda ao site [OVH](https://ovh.pt/){.external} e subscreva um serviço de aloja
 |---|---|---|
 |1|Efetuar um backup (cópia) do site|Faça o backup de todos os ficheiros do site e, se necessário, da base de dados. O backup completo é essencial para garantir o sucesso da transferência do site para a OVH.|
 |2|Colocar o seu site online com o serviços OVH|Aceda ao espaço de alojamento (FTP), para importar os ficheiros do site. Para ficarem online, os ficheiros devem ser colocados na pasta **"www"**. Os dados de acesso FTP são transmitidos por e-mail.|
-|3|Criação de uma base de dados OVH|Se o seu site funcionar com uma base de dados, terá de [criar uma nova base de dados](https://docs.ovh.com/pt/hosting/gestao-de-uma-base-de-dados-a-partir-de-um-alojamento-partilhado-ovh/){.external} na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.|
+|3|Criação de uma base de dados OVH|Se o seu site funcionar com uma base de dados, terá de [criar uma nova base de dados](https://docs.ovh.com/pt/hosting/gestao-de-uma-base-de-dados-a-partir-de-um-alojamento-partilhado-ovh/){.external} na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.|
 |4|Importar dados existentes na base de dados inicial|Importe o backup da base de dados usando [a ferramenta disponível na Área de Cliente](https://docs.ovh.com/pt/hosting/partilhado_guia_de_importacao_de_uma_base_de_dados_mysql/){.external}.|
 |5|Associar o site à nova base de dados|As informações da base de dados inicial estão guardadas no ficheiro de configuração do seu site. No espaço de armazenamento OVH, altere o ficheiro, introduzindo as informações relativas à base de dados OVH.|
 
@@ -66,13 +66,13 @@ A configuração do domínio continua inalterada. O seu site ainda está a usar 
 
 #### 3 - Criar endereços de e-mail na OVH
 
-Após a transferência do site, [registe os endereços de e-mail na OVH](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external}. Os endereços devem ser iguais aos usados com o outro operador. Na [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, no menu à esquerda, selecione `E-mails`{.action}, e clique no alojamento web que contratou (com a designação do seu domínio). Clique no botão `Criar um endereço de e-mail`{.action} e siga as instruções apresentadas.
+Após a transferência do site, [registe os endereços de e-mail na OVH](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external}. Os endereços devem ser iguais aos usados com o outro operador. Na [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, no menu à esquerda, selecione `E-mails`{.action}, e clique no alojamento web que contratou (com a designação do seu domínio). Clique no botão `Criar um endereço de e-mail`{.action} e siga as instruções apresentadas.
 
 A configuração do domínio continua inalterada. O e-mail continua a funcionar no alojamento do outro operador. Como tal, deverá continuar a usar este serviço para enviar e receber e-mail.
 
 #### 4 - Alterar a configuração do domínio.
 
-O seu site foi transferido para a OVH e os endereços de e-mail foram criados no sistema da OVH. Agora é necessário alterar a configuração DNS do seu domínio. Esta ação implica substituir os servidores DNS do outro operador pelos servidores DNS da OVH (enviados por e-mail e visíveis na [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}). A nova configuração permite:
+O seu site foi transferido para a OVH e os endereços de e-mail foram criados no sistema da OVH. Agora é necessário alterar a configuração DNS do seu domínio. Esta ação implica substituir os servidores DNS do outro operador pelos servidores DNS da OVH (enviados por e-mail e visíveis na [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}). A nova configuração permite:
 
 - **associar o seu domínio aos serviços OVH**: o alojamento OVH será usado para colocar o seu site online e enviar e receber e-mail;
 - **evitar a interrupção do serviço**: se o agente de registo suspender a resolução DNS quando solicitar a transferência de domínio, não haverá problema. O sistema OVH está pronto para garantir o funcionamento do site e dos seus e-mails.
@@ -121,7 +121,7 @@ A transferência foi efetuada. O site, os e-mails e o domínio foram migrados pa
 |---|---|---|
 |1|Efetuar um backup (cópia) do site|Faça o backup de todos os ficheiros do site e, se necessário, da base de dados. O backup completo é essencial para garantir o sucesso da transferência do site para a OVH.|
 |2|Colocar o seu site online com o serviços OVH|Aceda ao espaço de alojamento (FTP), para importar os ficheiros do site. Para ficarem online, os ficheiros devem ser colocados na pasta **"www"**. Os dados de acesso FTP são transmitidos por e-mail.|
-|3|Criação de uma base de dados OVH|Se o seu site funcionar com uma base de dados, terá de [criar uma nova base de dados](https://docs.ovh.com/pt/hosting/gestao-de-uma-base-de-dados-a-partir-de-um-alojamento-partilhado-ovh/){.external} na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.|
+|3|Criação de uma base de dados OVH|Se o seu site funcionar com uma base de dados, terá de [criar uma nova base de dados](https://docs.ovh.com/pt/hosting/gestao-de-uma-base-de-dados-a-partir-de-um-alojamento-partilhado-ovh/){.external} na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.|
 |4|Importar dados existentes na base de dados inicial|Importe o backup da base de dados usando [a ferramenta disponível na Área de Cliente](https://docs.ovh.com/pt/hosting/partilhado_guia_de_importacao_de_uma_base_de_dados_mysql/){.external}.|
 |5|Associar o site à nova base de dados|As informações da base de dados inicial estão guardadas no ficheiro de configuração do seu site. No espaço de armazenamento OVH, altere o ficheiro, introduzindo as informações relativas à base de dados OVH.|
 
@@ -129,7 +129,7 @@ A configuração do domínio continua inalterada. Se a resolução DNS ainda est
 
 #### 3 - Criar endereços de e-mail na OVH
 
-**Após a transferência do domínio**, irá receber um e-mail para informar que o serviço de e-mail associado ao seu alojamento acabou de ser instalado. Agora tem de [registar os endereços de e-mail no sistema da OVH](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external}. Os endereços devem ser iguais aos usados com o serviço do operador anterior. Na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}, no menu à esquerda, selecione `E-mails`{.action}, e clique no alojamento web que contratou (com a designação do seu domínio). Clique no botão `Criar um endereço de e-mail`{.action} e siga as instruções apresentadas.
+**Após a transferência do domínio**, irá receber um e-mail para informar que o serviço de e-mail associado ao seu alojamento acabou de ser instalado. Agora tem de [registar os endereços de e-mail no sistema da OVH](https://docs.ovh.com/pt/emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external}. Os endereços devem ser iguais aos usados com o serviço do operador anterior. Na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, no menu à esquerda, selecione `E-mails`{.action}, e clique no alojamento web que contratou (com a designação do seu domínio). Clique no botão `Criar um endereço de e-mail`{.action} e siga as instruções apresentadas.
 
 A configuração do domínio continua inalterada. Se a resolução DNS continuar ativa, o e-mail continua a funcionar no alojamento do outro operador. Como tal, deverá continuar a usar este serviço para enviar e receber e-mail.
 
@@ -137,7 +137,7 @@ A configuração do domínio continua inalterada. Se a resolução DNS continuar
 
 O seu site e o seu domínio foram transferidos para a OVH, e os endereços de e-mail foram criados no sistema da OVH. Agora é necessário alterar a configuração DNS do seu domínio. Esta ação implica substituir os servidores DNS do outro operador pelos servidores DNS da OVH.
 
-A alteração é efetuada através da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. Se tiver dúvidas, consulte o guia sobre *[Gestão dos servidores DNS](https://docs.ovh.com/pt/domains/partilhado_generalidades_sobre_os_servidores_dns/){.external}*.
+A alteração é efetuada através da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Se tiver dúvidas, consulte o guia sobre *[Gestão dos servidores DNS](https://docs.ovh.com/pt/domains/partilhado_generalidades_sobre_os_servidores_dns/){.external}*.
 
 A nova configuração permite:
 

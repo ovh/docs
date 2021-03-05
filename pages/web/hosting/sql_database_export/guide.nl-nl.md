@@ -25,7 +25,7 @@ Databases worden gebruikt in vrijwel alle moderne content management systemen (C
 
 Voordat u deze procedure start, moet u kiezen welke methode u gaat gebruiken om de backup van de database op te halen. Er zijn drie manieren om dit te doen, afhankelijk van uw niveau van technische kennis.
 
-- **Gebruik de OVH backup-tool**: met deze oplossing kunt u backups van uw databases verkrijgen via het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Dit is de meest toegankelijke oplossing, omdat er geen specifieke technische kennis voor nodig is.
+- **Gebruik de OVH backup-tool**: met deze oplossing kunt u backups van uw databases verkrijgen via het [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Dit is de meest toegankelijke oplossing, omdat er geen specifieke technische kennis voor nodig is.
 
 - **Voer de backup uit vanuit de phpMyAdmin-webinterface**: deze oplossing houdt in dat u zich aanmeldt bij de phpMyAdmin-interface om de procedure uit te voeren. Daarom moet u deze tool goed beheersen als u deze methode wilt gebruiken.
 
@@ -46,7 +46,7 @@ Lees deze documentatie verder volgens de gewenste backup-methode.
 
 ### Een backup verkrijgen met behulp van de OVH tool
 
-Om uw OVH backup-tool te openen logt u eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klik dan op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, en kies het bijbehorende webhostingplan. Ga naar het `Databases`{.action}-tabblad.
+Om uw OVH backup-tool te openen logt u eerst in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, klik dan op `Webhosting`{.action} in de dienstenbalk aan de linkerkant, en kies het bijbehorende webhostingplan. Ga naar het `Databases`{.action}-tabblad.
 
 De weergegeven tabel bevat alle e-mailadressen die zijn aangemaakt als onderdeel van uw webhostingplan. U kunt nu kiezen om een nieuwe backup uit te voeren en een bestaande backup op te halen, in twee afzonderlijke stappen.
 
@@ -76,7 +76,7 @@ Als u een backup wilt laden, klikt u op de drie puntjes rechts van de backup die
 
 ### Een backup herstellen via de webinterface phpMyAdmin
 
-Om deze procedure uit te voeren, moet u inloggen op phpMyAdmin. Om de toegangslink voor deze interface te krijgen logt u in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klikt u op `Webhosting`{.action} in de dienstenbalk aan de linkerkant en selecteert u vervolgens het betreffende plan. Ga naar het `Databases`{.action}-tabblad.
+Om deze procedure uit te voeren, moet u inloggen op phpMyAdmin. Om de toegangslink voor deze interface te krijgen logt u in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, klikt u op `Webhosting`{.action} in de dienstenbalk aan de linkerkant en selecteert u vervolgens het betreffende plan. Ga naar het `Databases`{.action}-tabblad.
 
 De weergegeven tabel bevat alle e-mailadressen die zijn aangemaakt als onderdeel van uw webhostingplan. Klik in deze tabel op de drie puntjes rechts van de betreffende database en vervolgens op `Ga naar phpMyAdmin`{.action}.
 

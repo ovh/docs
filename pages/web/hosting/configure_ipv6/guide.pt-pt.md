@@ -31,7 +31,7 @@ Os nossos alojamentos web são compatíveis com IPv6 desde 2011. Mas a ativaçã
 
 - Dispor de um [nome de domínio](https://www.ovh.pt/dominios/){.external} na sua Área de Cliente OVHcloud.
 - Ter um serviço de [alojamento Web da OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external}.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
@@ -48,7 +48,7 @@ Para testar se o seu website é compatível com IPv6, pode utilizar o website [i
 
 ### Etapa 1: Obter o endereço IPv6 do seu alojamento web
 
-Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o alojamento.
+Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} na barra à esquerda e escolha o alojamento.
 
 Na secção `Informações gerais`, no quadro **IPv6**, copie a entrada e passe ao passo seguinte.
 

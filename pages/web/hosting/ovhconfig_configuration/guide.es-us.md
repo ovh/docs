@@ -37,7 +37,7 @@ A continuación explicamos cómo editar manualmente el archivo .ovhconfig.
 
 Para conectarse al espacio de almacenamiento, necesitará el usuario FTP principal y la contraseña FTP, así como la dirección del servidor FTP. Conéctese al espacio de almacenamiento. Si necesita ayuda, consulte el apartado «Conectarse al espacio de almacenamiento» de la guía [Publicar un sitio web en internet.](../web_hosting_publicar_un_sitio_web_en_internet/#22-conectarse-al-espacio-de-almacenamiento){.external}
 
-Si no conoce los datos anteriores, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. En la tabla podrá consultar los datos de conexión. Si no conoce la contraseña FTP, consulte nuestra guía [Cambiar la contraseña de un usuario FTP](../cambiar-contrasena-usuario-ftp/){.external}.
+Si no conoce los datos anteriores, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y, en la columna izquierda, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. En la tabla podrá consultar los datos de conexión. Si no conoce la contraseña FTP, consulte nuestra guía [Cambiar la contraseña de un usuario FTP](../cambiar-contrasena-usuario-ftp/){.external}.
 
 ![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
 

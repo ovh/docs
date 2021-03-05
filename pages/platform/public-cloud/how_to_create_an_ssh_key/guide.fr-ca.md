@@ -22,7 +22,7 @@ Veuillez noter que les clés SSH ne sont pas utilisées pour l'authentification 
 ## Prérequis
 
 * Un projet [Public Cloud](https://www.ovh.com/ca/fr/public-cloud/instances/){.external} créé dans votre compte OVHcloudcloud.
-* Être connecté à votre [espace client OVHcloudcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+* Être connecté à votre [espace client OVHcloudcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
 
@@ -112,7 +112,7 @@ Lorsque vous déplacez votre souris, la barre de progression commence à se remp
 
 ### Importez votre clé SSH dans l’Espace client OVHcloudcloud
 
-Tout d’abord, sélectionnez et copiez le texte de votre clé publique, puis connectez-vous à votre [Espace client d’OVHcloudcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Tout d’abord, sélectionnez et copiez le texte de votre clé publique, puis connectez-vous à votre [Espace client d’OVHcloudcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 Cliquez ensuite sur le menu `Public Cloud`{.action}.
 

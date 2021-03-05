@@ -35,14 +35,14 @@ Es gibt zwei Arten von Weiterleitungen:
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie besitzen ein MX Plan Angebot, verfügbar mit einer [Webhosting](https://www.ovh.de/hosting/) Lösung, dem [kostenlosen Start 10M Hosting](https://www.ovh.de/domains/angebot_hosting_start10m.xml) oder separat bestellbar.
 
 ## In der praktischen Anwendung
 
 Je nach Aktivierungsdatum Ihres MX Plan Angebots, oder falls [dieses vor Kurzem migriert wurde](https://www.ovh.de/mxplan-migration/), verfügen Sie entweder über die historische oder die neue Version des Angebots. Bevor Sie fortfahren, ermitteln Sie zunächst Ihre Angebotsversion. 
 
-Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und gehen Sie in den Bereich „Web“. Klicken Sie im linken Menü auf `E-Mails`{.action} und wählen Sie den Namen Ihres Angebots aus. Fahren Sie entsprechend Ihrer MX Plan Version fort.
+Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich „Web“. Klicken Sie im linken Menü auf `E-Mails`{.action} und wählen Sie den Namen Ihres Angebots aus. Fahren Sie entsprechend Ihrer MX Plan Version fort.
 
 |Historische MX Plan Version|Neue MX Plan Version|
 |---|---|

@@ -18,7 +18,7 @@ To perform certain administrative functions on your server (e.g. installing pack
 ## Requirements
 
 * a Public Cloud project activated
-* access to the OVH [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+* access to the OVH [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 ## Instructions
 

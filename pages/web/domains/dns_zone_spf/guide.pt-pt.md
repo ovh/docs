@@ -16,14 +16,14 @@ O registo SPF (Sender Policy Framework) é um sistema de autenticação de mensa
 
 ## Requisitos
 
-- Ter acesso à secção de gestão do domínio na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Ter acesso à [Área de cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à secção de gestão do domínio na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter acesso à [Área de cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - O domínio do e-mail tem que usar a configuração da OVH (os servidores DNS da OVH).
 
 > [!warning]
 >
 > Se o domínio não usar os servidores DNS da OVH, a configuração SPF deverá ser efetuada no sistema do agente responsável pela gestão do seu domínio.
-> Se o seu domínio for gerido pela OVH, verifique se este está usar a configuração OVH. Para tal, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager){.external}, selecione o domínio e clique em `Servidores DNS`{.action}.
+> Se o seu domínio for gerido pela OVH, verifique se este está usar a configuração OVH. Para tal, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, selecione o domínio e clique em `Servidores DNS`{.action}.
 >
 
 ## Instruções
@@ -59,7 +59,7 @@ O domínio associado a estes serviços deverá usar o SPF com os parâmetros da 
 mypersonaldomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
-Se o seu domínio estiver a usar a configuração DNS OVH, verifique se o registo SPF já está configurado. Para tal, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. No menu da esquerda, aceda à secção `Domínios`{.action}, selecione o domínio pretendido e clique no separador `Zona DNS`{.action}.
+Se o seu domínio estiver a usar a configuração DNS OVH, verifique se o registo SPF já está configurado. Para tal, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. No menu da esquerda, aceda à secção `Domínios`{.action}, selecione o domínio pretendido e clique no separador `Zona DNS`{.action}.
 
 De seguida irá visualizar a tabela relativa à configuração DNS do seu domínio. Esta tabela inclui vários registos (um por cada linha). 
 
@@ -86,7 +86,7 @@ Esta informação pode estar incluída no registo SPF ou no registo TXT. Para fa
 
 ### 3 - Alterar o SPF
 
-Para alterar a autenticação SPF do seu domínio, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager){.external}. No menu à esquerda, selecione `Domínios`{.action}. Agora clique no domínio pretendido para consultar a `Zona DNS`{.action}.
+Para alterar a autenticação SPF do seu domínio, aceda à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. No menu à esquerda, selecione `Domínios`{.action}. Agora clique no domínio pretendido para consultar a `Zona DNS`{.action}.
 
 Na tabela pode ver a configuração OVH do seu domínio. Cada linha corresponde a um registo DNS.
 

@@ -86,7 +86,7 @@ Objednávku převodu domény je možné rozšířit o [webhostingové řešení 
 > - **Nastavení DNS serverů**: pokud je Vaše doména asociována s webovými stránkami či e-mailovou službou, ujistěte se prosím, že zadáváte DNS servery, které Vaše doména v současné době používá.  
 >
 
-Převod domény ke společnosti OVH bude zahájen ihned po uhrazení vytvořené objednávky. Průběh procesu budete v závislosti na typu koncovky dané domény moci sledovat v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (sekce `Domény`{.action}, záložka `Nedávné úkoly`{.action}).
+Převod domény ke společnosti OVH bude zahájen ihned po uhrazení vytvořené objednávky. Průběh procesu budete v závislosti na typu koncovky dané domény moci sledovat v [Zákaznickém prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} (sekce `Domény`{.action}, záložka `Nedávné úkoly`{.action}).
 
 ### Krok 4.1: první fáze ověření převodu domény
 
@@ -110,7 +110,7 @@ V závislosti na obdržených odpovědích mohou nastat následující scénář
 |Ani jedno ověření|Postup k druhé části ověřovacího procesu (po uplynutí 5 dnů)|
 |Negativní reakce (lhostejno od koho)|Ověřovací proces je okamžitě přerušen|
 
-Pokud dojde k přerušení ověřovacího procesu, ujistěte se prosím, že s tím jednotlivé strany souhlasí. Zároveň se ujistěte, že jsou jejich e-mailové adresy aktuální. Převod domény lze později obnovit prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (sekce `Domény`{.action}, záložka `Probíhající operace`{.action}).
+Pokud dojde k přerušení ověřovacího procesu, ujistěte se prosím, že s tím jednotlivé strany souhlasí. Zároveň se ujistěte, že jsou jejich e-mailové adresy aktuální. Převod domény lze později obnovit prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} (sekce `Domény`{.action}, záložka `Probíhající operace`{.action}).
 
 ### Krok 4.2: druhá fáze ověření převodu domény
 
@@ -122,11 +122,11 @@ V rámci druhé fáze ověření obdrží současný registrátor domény (stál
 |Žádná odpověď|Ověřovací proces je dokončen po uplynutí 5 dnů|
 |Zamítnutí současným registrátorem|Ověřovací proces je okamžitě přerušen|
 
-Pokud dojde k zamítnutí ze strany současného registrátora, pokuste se ho prosím zkontaktovat a zjistit důvody, které ho k tomuto rozhodnutí dovedly. Převod domény lze později obnovit prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external} (sekce `Domény`{.action}, záložka `Probíhající operace`{.action}).
+Pokud dojde k zamítnutí ze strany současného registrátora, pokuste se ho prosím zkontaktovat a zjistit důvody, které ho k tomuto rozhodnutí dovedly. Převod domény lze později obnovit prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} (sekce `Domény`{.action}, záložka `Probíhající operace`{.action}).
 
 ### Krok 5: administrace domény u společnosti OVH
 
-Jakmile je celý proces úspěšně dokončen, můžete svou doménu začít spravovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Jakmile je celý proces úspěšně dokončen, můžete svou doménu začít spravovat prostřednictvím [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 
 

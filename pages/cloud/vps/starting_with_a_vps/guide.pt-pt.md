@@ -24,12 +24,12 @@ Um VPS (Virtual Private Server) é um servidor dedicado virtual. Ao contrário d
 ## Requisitos
 
 - Ter contratado um [VPS OVHcloud](https://www.ovhcloud.com/pt/vps/){.external}.
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 - Ter recebido um e-mail depois da instalação com os dados de utilizador.
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, dirija-se à secção `Bare Metal Cloud`{.action} e selecione o seu servidor no menu à esquerda, em `VPS`{.action}. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, dirija-se à secção `Bare Metal Cloud`{.action} e selecione o seu servidor no menu à esquerda, em `VPS`{.action}. 
 
 Este painel de controlo contém informações importantes sobre o serviço e permite-lhe realizar operações essenciais. O seu aspeto pode variar em função da gama do VPS. 
 

@@ -2,14 +2,26 @@
 title: 'Activating and using rescue mode'
 slug: rescue-mode
 excerpt: 'Find out how to activate and use rescue mode on a dedicated server'
-section: Diagnostic and rescue mode
+section: 'Diagnostic and rescue mode'
+order: 1
 ---
 
-**Last updated 12th January 2021**
+**Last updated 9th February 2021**
 
 ## Objective
 
-Rescue mode is a tool on your server that allows you to boot into a temporary operating system for the purpose of diagnosing and resolving issues. 
+Rescue mode is a tool on your server that allows you to boot into a temporary operating system for the purpose of diagnosing and resolving issues.
+
+Usual tasks the rescue mode is appropriate for include:
+
+- Resetting your root password
+- Diagnosing network problems
+- Repairing a broken operating system
+- Fixing a software firewall misconfiguration
+- Testing disk performance
+- Testing CPU and RAM
+
+Backing up your data should be the first step in rescue mode if you do not already have recent backups available.
 
 **This guide will show you how to activate and use your server's rescue mode.**
 
@@ -18,18 +30,19 @@ Rescue mode is a tool on your server that allows you to boot into a temporary op
 ## Requirements
 
 - a [dedicated server](https://www.ovhcloud.com/en/bare-metal/) in your OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 ## Instructions
 
-You can activate rescue mode only from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager/){.external}. Go to the `Bare Metal Cloud`{.action} section and then select the server on which you wish to enable rescue mode from **Dedicated Servers** in the left-hand sidebar. 
+You can activate rescue mode only from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). Go to the `Bare Metal Cloud`{.action} section and then select the server on which you wish to enable rescue mode from **Dedicated Servers** in the left-hand sidebar. 
 
 Look for "Boot" in the **General informations** box and click on `...`{.action}, then on `Modify`{.action}.
 
 ![Modify boot mode](images/rescue-mode-01.png){.thumbnail}
 
 In the popup window, tick **Boot in rescue mode**. If your server has a Linux-based OS, select "rescue64-pro" from the menu. If your server runs on Windows, you can also choose "WinRescue" (see the [guide section below](#windowsrescue)). Specify an alternative email address below if you do *not* want the login credentials sent to your customer account's primary address.
-<br>Click on `Next`{.action} and `Confirm`{.action}.
+
+Click on `Next`{.action} and `Confirm`{.action}.
 
 ![Mode rescue-pro](images/rescue-mode-03.png){.thumbnail}
 
@@ -48,7 +61,7 @@ Remember to change the netboot back to `Boot from the hard disk`{.action} before
 > If you are using an SSH key (also active in the OVHcloud Control Panel), you will not be sent a password. Once the server is in rescue mode, you can connect directly via your SSH key.
 >
 
-Once your server has rebooted, you will receive an email with your rescue mode access credentials. This email is also available in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) when it is sent: Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Service emails`{.action}.
+Once your server has rebooted, you will receive an email with your rescue mode access credentials. This email is also available in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) as soon as it is sent: Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Service emails`{.action}.
 
 You will then need to access your server via the command line or an SSH tool, using the root password generated for the rescue mode.
 
@@ -102,15 +115,33 @@ rescue:~# mount /dev/hda1 /mnt/
 > If your server uses a softRAID configuration, you will need to mount your RAID volume (usually `/dev/mdX`).
 >
 
-To exit rescue mode, change the boot mode back to `Boot from the hard disk`{.action} in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager/) and restart the server from the command line.
+To exit rescue mode, change the boot mode back to `Boot from the hard disk`{.action} in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and restart the server from the command line.
+
+### Using the rescue mode web interface ("rescue64-pro" only)
+
+Once your server has rebooted, you can access the web interface by entering `your_server_IP:81` into your browsers address bar. With https, use port *444* instead. For example:
+
+```sh
+https://169.254.10.20:444
+```
+
+If you have already secured your data, you can use the rescue mode web interface to test the following components.
+
+- **Disk test**: Checks their integrity using SMART.
+- **Processors**: Checks that the CPU is functioning normally. (This may take a while.)
+- **Partitions**: Checks the states of readers.
+- **Memory**: Checks the RAM installed on the server. (This may take a while.)
+- **Network**: Checks the connection to an OVHcloud-internal reference system as well as the connection to your browser.
+
+![Web interface for rescue mode](images/rescue-mode-04.png){.thumbnail}
 
 ### Windows <a name="windowsrescue"></a>
 
 #### Using WinRescue tools
 
-Once your server has rebooted, you will receive an email with your rescue mode access credentials. This email is also available in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager) when it is sent: Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Service emails`{.action}.
+Once your server has rebooted, you will receive an email with your rescue mode access credentials. This email is also available in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) as soon as it is sent: Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Service emails`{.action}.
 
-To use the Windows rescue mode GUI, you will need to download and install a VNC console or use the `IPMI` module in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager/){.external}.
+To use the Windows rescue mode GUI, you will need to download and install a VNC console or use the `IPMI` module in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
 
 ![Winrescue Windows](images/rescue-mode-06.png){.thumbnail}
 

@@ -11,12 +11,12 @@ section: 'Pedidos, facturas y servicios'
 En el área de cliente de OVHcloud, puede registrar y gestionar diferentes formas de pago.
 
 ## Requisitos
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 - Disponer de un medio de pago válido.
 
 ## Procedimiento
 
-Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}, haga clic en su nombre en la esquina superior derecha y, seguidamente, seleccione `Forma de pago`{.action}.
+Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en su nombre en la esquina superior derecha y, seguidamente, seleccione `Forma de pago`{.action}.
 
 ![manage-payment-methods](images/hubpayment.png){.thumbnail}
 

@@ -37,7 +37,7 @@ Niektóre strony korzystają z usług CDN do obsługiwania bibliotek Javascript 
 
 **Jak sprawdzić, czy problem dotyczy Twojej strony?**
 
-Narzędzia debugujące dostarczane przez przeglądarki Mozilla Firefox i Google Chrome informują, jeśli strona zawiera elementy zablokowane z powodu treści mieszanych. Dokumentacja dostępna w ramach [Mozilla Developer Network](https://developer.mozilla.org/en/docs/Security/Mixed_content) pozwala na uzyskanie dodatkowych informacji na ten temat.
+Narzędzia debugujące dostarczane przez przeglądarki Mozilla Firefox i Google Chrome informują, jeśli strona zawiera elementy zablokowane z powodu treści mieszanych. Dokumentacja dostępna w ramach [Mozilla Developer Network](https://developer.mozilla.org/en-us/docs/Web/Security/Mixed_content) pozwala na uzyskanie dodatkowych informacji na ten temat.
 
 
 ### Powielone treści

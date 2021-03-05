@@ -39,7 +39,7 @@ If you are using a dedicated infrastructure (e.g. a dedicated server, VPS, Publi
 > - `?`: neutral
 >
 
-For further information on the SPF record, refer to the following page: <http://www.open-spf.org/SPF_Record_Syntax>.
+For further information on the SPF record, refer to the following page: <http://www.open-spf.org/>.
 
 You can go even further by configuring the SPF record of a specific domain, or by specifying an IPV6 address. You can find out how to do this in our guide to [adding an SPF record](https://docs.ovh.com/gb/en/domains/web_hosting_the_spf_record/).
 
@@ -53,7 +53,7 @@ The authentication is carried out by a DKIM key that needs to be added in your D
 
 To further optimise email sending and stop your emails from being blocked, you can configure a reverse IP with your domain name.
 
-To modify your reverse IP in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, go to the `Bare Metal Cloud`{.action} section, then `IP`{.action}. Then select an IPv4 address, click the cogwheel on the right-hand side, then click `Modify the reverse`{.action}:
+To modify your reverse IP in the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, go to the `Bare Metal Cloud`{.action} section, then `IP`{.action}. Then select an IPv4 address, click the cogwheel on the right-hand side, then click `Modify the reverse`{.action}:
 
 ![Reverse IP](images/reverse_ip.png)
 

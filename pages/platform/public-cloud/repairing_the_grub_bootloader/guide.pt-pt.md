@@ -21,7 +21,7 @@ section: Tutoriais
 
 ## Instruções
 
-Ligue-se à instância através do VNC da Área [de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager) ou através do SSH.
+Ligue-se à instância através do VNC da Área [de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) ou através do SSH.
 
 Introduza os seguintes comandos para montar o sistema de ficheiros distante e iniciar a reparação do GRUB:
 

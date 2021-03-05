@@ -28,7 +28,7 @@ Para funcionar, cada servidor guarda en memoria caché una parte de su sitio web
 
 ## Requisitos
 
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 - Tener contratado un [plan de alojamiento web](https://www.ovh.com/world/es/hosting/){.external}.
 
 ## Procedimiento
@@ -41,7 +41,7 @@ Para funcionar, cada servidor guarda en memoria caché una parte de su sitio web
 
 ####  Si la opción CDN no está contratada o activada en su alojamiento web
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. Haga clic en `...`{.action} a la derecha de "Opción CDN" y, seguidamente, en `Contratar una CDN`{.action} o `Activar la opción`{.action} si la opción CDN ya está incluida en el alojamiento.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. Haga clic en `...`{.action} a la derecha de "Opción CDN" y, seguidamente, en `Contratar una CDN`{.action} o `Activar la opción`{.action} si la opción CDN ya está incluida en el alojamiento.
 
 > [!primary]
 > 
@@ -53,7 +53,7 @@ Se le redirigirá a la generación del pedido. Unos minutos después de haber ab
 
 #### Si la opción CDN ya está activada en su alojamiento web
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. En la pestaña `Multisitio`{.action}, haga clic en el icono con forma de rueda dentada a la derecha de la entrada multisitio y, seguidamente, pulse `Modificar`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. En la pestaña `Multisitio`{.action}, haga clic en el icono con forma de rueda dentada a la derecha de la entrada multisitio y, seguidamente, pulse `Modificar`{.action}.
 
 Marque la opción «Activar la CDN», haga clic en `Siguiente`{.action} y, seguidamente, en `Validar`{.action}.
 
@@ -142,7 +142,7 @@ Una vez que haya configurado las reglas y las opciones, haga clic en `Aplicar la
 
 En ocasiones, resulta útil vaciar la caché de la CDN, principalmente cuando se actualizan los archivos estáticos. Por ejemplo, cuando pone en línea una nueva versión de su sitio web. En dicho caso, vacíe por completo la caché de la CDN.
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. Haga clic en `...`{.action} a la derecha de «Opción CDN» y, seguidamente, en `Vaciar la caché`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. Haga clic en `...`{.action} a la derecha de «Opción CDN» y, seguidamente, en `Vaciar la caché`{.action}.
 
 ![CDN](images/manage_CDN_02.png){.thumbnail}
 
@@ -176,7 +176,7 @@ En caso de no utilizar ningún sistema de gestión de contenidos, puede disponer
 
 Esta acción permite desactivar la CDN para uno o más de sus registros multisitio, sin eliminar la opción CDN de su alojamiento web.
 
-Acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. En la pestaña `Multisitio`{.action}, haga clic en `...`{.action} a la derecha de la entrada multisitio y luego en `Editar`{.action}.
+Acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. En la pestaña `Multisitio`{.action}, haga clic en `...`{.action} a la derecha de la entrada multisitio y luego en `Editar`{.action}.
 
 Desmarque la opción «Activar la CDN», haga clic en `Siguiente`{.action} y, a continuación, en `Validar`{.action}.
 
@@ -186,7 +186,7 @@ Desmarque la opción «Activar la CDN», haga clic en `Siguiente`{.action} y, a 
 
 Esta acción permite eliminar la opción CDN en todo su alojamiento web.
 
-Acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. Haga clic en `...`{.action} a la derecha de «Opción CDN» y, seguidamente, en `Anular la CDN`{.action}.
+Acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y seleccione `Web Cloud`{.action}. En la barra de servicios a la izquierda, haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. Haga clic en `...`{.action} a la derecha de «Opción CDN» y, seguidamente, en `Anular la CDN`{.action}.
 
 ![CDN](images/manage_CDN_04.png){.thumbnail}F
 

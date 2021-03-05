@@ -23,13 +23,13 @@ Pode alojar vários websites no mesmo alojamento web, mesmo que os nomes de dom�
 - Ter um serviço [de alojamento web OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external} compatível.
 - Dispor de um ou vários [domínios](https://www.ovh.pt/dominios/){.external}.
 - Poder alterar a configuração dos seus nomes de domínio (a zona DNS).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
 ### 1 - Aceder à gestão multisite
 
-Em primeiro lugar, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} e selecione a `Web Cloud`{.action}. Depois, clique em `Alojamentos`{.action} na barra à esquerda, selecione o serviço correspondente e clique no separador `Multisite`{.action}.
+Em primeiro lugar, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione a `Web Cloud`{.action}. Depois, clique em `Alojamentos`{.action} na barra à esquerda, selecione o serviço correspondente e clique no separador `Multisite`{.action}.
 
 Aparecerá uma tabela com todos os domínios e subdomínios adicionados à sua solução de alojamento web. Alguns foram criados automaticamente durante a instalação do alojamento.
 
@@ -81,7 +81,7 @@ Concluída esta etapa, clique no botão `Seguinte`{.action}. De seguida, verifiq
 Ao selecionar um domínio registado na OVHcloud, tem a possibilidade de modificar automaticamente ou manualmente a sua configuração DNS:
 
 - **para uma configuração DNS automática**: selecione a opção `Configuração automática (recomendada)`{.action};
-- **para uma configuração DNS manual**: desselecione a opção `Configuração automática (recomendada)`{.action} e anote as informações apresentadas. Quando efetuar esta configuração, consulte a nossa documentação ["Editar uma zona DNS da OVHcloud"](../../domains/hosting_www_jak_edytowac_strefe_dns/){.external}.
+- **para uma configuração DNS manual**: desselecione a opção `Configuração automática (recomendada)`{.action} e anote as informações apresentadas. Quando efetuar esta configuração, consulte a nossa documentação ["Editar uma zona DNS da OVHcloud"](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}.
 
 Em seguida, clique em `Validar`{.action} para adicionar o domínio. Esta operação pode demorar até uma hora. No entanto, a propagação das alterações da configuração DNS do seu domínio pode demorar entre 4 a 24 horas.
 
@@ -95,7 +95,7 @@ Agora que o domínio foi adicionado, consulte o [passo 3: colocar o seu website 
 
  > Antes de continuar, é preferível alterar a zona DNS do nome de domínio externo antes da adição da entrada multisite.
  >
- > A alteração da configuração do domínio externo (a sua zona DNS) deve ser realizada a partir da interface do prestador que a gere. Se se tratar da OVHcloud, consulte o nosso manual ["Editar uma zona DNS da OVHcloud"](../../domains/hosting_www_jak_edytowac_strefe_dns/){.external}. Depois de efetuar a alteração, é necessário aguardar entre 1 a 24 horas até que esta seja implementada.
+ > A alteração da configuração do domínio externo (a sua zona DNS) deve ser realizada a partir da interface do prestador que a gere. Se se tratar da OVHcloud, consulte o nosso manual ["Editar uma zona DNS da OVHcloud"](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/){.external}. Depois de efetuar a alteração, é necessário aguardar entre 1 a 24 horas até que esta seja implementada.
 >
 > Encontre aqui os 2 elementos a modificar relativos à configuração DNS do seu nome de domínio externo:
 >

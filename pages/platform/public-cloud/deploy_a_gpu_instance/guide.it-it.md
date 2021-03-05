@@ -40,7 +40,7 @@ Tutte le immagini proposte da OVHcloud sono compatibili con le istanze GPU.
 > Se preferisci non compilare manualmente il modulo del kernel, ti consigliamo di utilizzare una distribuzione ufficialmente supportata da Nvidia e per la quale esistono dei driver *pronti all’uso*: <https://developer.nvidia.com/cuda-downloads>
 > 
 
-Una volta connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, accedi al tuo progetto Public Cloud, clicca su `Crea un’istanza`{.action} e seleziona un’istanza GPU:
+Una volta connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al tuo progetto Public Cloud, clicca su `Crea un’istanza`{.action} e seleziona un’istanza GPU:
 
 ![/public-cloud](images/gpu.png){.thumbnail}
 
@@ -105,7 +105,7 @@ Da questo momento l’istanza GPU è pienamente operativa e pronta per essere ut
 A causa di alcune incompatibilità tra il driver Nvidia e la soluzione di virtualizzazione *KVM/pci_passthrough*, **le immagini Windows standard non funzionano.**
 OVHcloud fornisce immagini speciali, basate su un BIOS virtuale UEFI, che permettono al driver di funzionare correttamente (valide solo per le istanze G1, G2 e G3 - gamma 2017 e meno recenti)
 
-Una volta connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, accedi al tuo progetto Public Cloud, clicca su `Crea un’istanza`{.action} e seleziona un’istanza GPU:
+Una volta connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al tuo progetto Public Cloud, clicca su `Crea un’istanza`{.action} e seleziona un’istanza GPU:
 
 ![/public-cloud](images/gpu.png){.thumbnail}
 

@@ -14,7 +14,7 @@ Licencja Office 365 może być wykorzystywana na 5 komputerach PC/Mac, 5 tableta
 **Zobacz, jak zarządzać usługą Office 365 Reseller (CSP2) w OVH.**
 
 ## Wymagania początkowe
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Dołączenie do programu partnerskiego **Community Web,** poprzez rejestrację na stronie [http://partners.ovh.com/](http://partners.ovh.com/){.external}. 
 - Posiadanie licencje Office 365 CSP2.
 
@@ -22,7 +22,7 @@ Licencja Office 365 może być wykorzystywana na 5 komputerach PC/Mac, 5 tableta
 
 ### Dostęp do zarządzania Office 365 Reseller
 
-Po utworzeniu i udostępnieniu usługi Office 365, można nią zarządzać poprzez [Panel klienta](https://www.ovh.com/auth/?action=gotomanager/){.external}.
+Po utworzeniu i udostępnieniu usługi Office 365, można nią zarządzać poprzez [Panel klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 Aby to zrobić, wejdź do panelu, a następnie przejdź do sekcji `Sunrise`{.action}. W lewym menu, przejdź do `Office 365 Reseller`{.action} i wybierz usługę.
 

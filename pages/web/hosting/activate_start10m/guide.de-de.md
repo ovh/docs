@@ -16,11 +16,11 @@ Mit dem [Start 10M](https://www.ovh.de/domains/angebot_hosting_start10m.xml) Hos
 ## Voraussetzungen
 
 - Sie verfügen über einen [Domainnamen](https://www.ovh.de/domains/), der mit keinem Webhosting verbunden ist.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein, klicken Sie links im Menü auf `Domains`{.action} (**3**) und wählen Sie die betreffende Domain aus.
+Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, klicken Sie links im Menü auf `Domains`{.action} (**3**) und wählen Sie die betreffende Domain aus.
 
 Im Bereich **Allgemeine Informationen** (**2**) finden Sie den Abschnitt *Webhosting und Gratis-E-Mail*. Klicken Sie rechts auf den Button `...`{.action} und anschließend auf `Aktivieren`{.action} (**3**).
 

@@ -17,7 +17,7 @@ La connexion à vos instances Public Cloud avec OVHcloud est similaire à une co
 
 ## Prérequis
 
-* Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+* Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 * Avoir créé une [instance Public Cloud OVHcloud]({ovh_www}public-cloud/){.external} dans votre compte
 
 ## En pratique
@@ -75,7 +75,7 @@ Pour vous connecter à une instance Linux à l'aide de Windows, vous pouvez util
 
 #### Finaliser l'installation
 
-Une fois que vous avez créé votre instance, vous devrez finaliser une chose appelée *sysprep*. Pour cela, connectez-vous à [l’Espace client d’OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} et lancez la console VNC:
+Une fois que vous avez créé votre instance, vous devrez finaliser une chose appelée *sysprep*. Pour cela, connectez-vous à [l’Espace client d’OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et lancez la console VNC:
 
 ![Console VNC](images/vnc_console.png)
 

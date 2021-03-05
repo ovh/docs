@@ -7,7 +7,7 @@ legacy_guide_number: g1875
 
 
 ## Sprawdź status konta
-Zaloguj się do [panelu klienta](https://www.ovh.com/manager/web/login/) i przejdź do sekcji Płatności w prawym górnym rogu.
+Zaloguj się do [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji Płatności w prawym górnym rogu.
 
 ![](images/img_2780.jpg){.thumbnail}
 Klikając na Konto prepaid zobaczysz historię swoich zamówień wraz z liczbą punktów.

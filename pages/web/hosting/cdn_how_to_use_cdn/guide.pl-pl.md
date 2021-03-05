@@ -28,7 +28,7 @@ Każdy serwer przechowuje w pamięci podręcznej (cache) część Twojej witryny
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Posiadanie [hostingu WWW](https://www.ovh.pl/hosting/){.external}.
 
 ## W praktyce
@@ -41,7 +41,7 @@ Każdy serwer przechowuje w pamięci podręcznej (cache) część Twojej witryny
 
 ####  Jeśli opcja CDN nie jest zamówiona lub włączona na Twoim hostingu
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji CDN", a następnie `Zamów CDN`{.action} lub `Włącz opcję`{.action}, jeśli opcja CDN jest już zawarta w Twoim hostingu.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie "Opcji CDN", a następnie `Zamów CDN`{.action} lub `Włącz opcję`{.action}, jeśli opcja CDN jest już zawarta w Twoim hostingu.
 
 > [!primary]
 > 
@@ -53,7 +53,7 @@ Zostaniesz przekierowany do formularza zamówienia. Usługa zostanie aktywowana 
 
 #### Jeśli opcja CDN jest już włączona na Twoim hostingu
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. W karcie `Multisite`{.action} kliknij ikonę koła zębatego po prawej stronie, a następnie wybierz `Zmień`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. W karcie `Multisite`{.action} kliknij ikonę koła zębatego po prawej stronie, a następnie wybierz `Zmień`{.action}.
 
 Zaznacz opcję „Aktywuj CDN”, kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
@@ -142,7 +142,7 @@ Po skonfigurowaniu reguł i wybraniu opcji kliknij `Zastosuj konfigurację`{.act
 
 Czasem konieczne może okazać się usunięcie pamięci podręcznej z CDN, zwłaszcza po wprowadzeniu zmian w plikach statycznych. Na przykład przy publikowaniu nowej wersji swojej witryny. Należy wówczas całkowicie wyczyścić pamięć podręczną w CDN.
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie „Opcji CDN”, a następnie `Wyczyść pamięć cache`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie „Opcji CDN”, a następnie `Wyczyść pamięć cache`{.action}.
 
 ![CDN](images/manage_CDN_02.png){.thumbnail}
 
@@ -176,7 +176,7 @@ Jeśli nie korzystasz z CMS-a, również możesz korzystać z usługi CDN. W tym
 
 Operacja ta pozwala wyłączyć CDN dla jednej lub kilku pozycji podpiętych w opcji MultiSite, bez usuwania opcji CDN z Twojego hostingu WWW.
 
-Przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. W zakładce `MultiSite`{.action} kliknij `...`{.action}. po prawej stronie wpisu MultiSite, a następnie `Zmień`{.action}.
+Przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. W zakładce `MultiSite`{.action} kliknij `...`{.action}. po prawej stronie wpisu MultiSite, a następnie `Zmień`{.action}.
 
 Usuń zaznaczenie opcji „Aktywuj CDN”, kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
 
@@ -186,7 +186,7 @@ Usuń zaznaczenie opcji „Aktywuj CDN”, kliknij przycisk `Dalej`{.action}, a 
 
 Celem tego działania jest usunięcie opcji CDN dla całego hostingu WWW.
 
-Przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie „Opcji CDN”, a następnie `Rezygnacja z CDN`{.action}.
+Przejdź do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} na pasku usług po lewej stronie i wybierz odpowiednie rozwiązanie. Kliknij `...`{.action} po prawej stronie „Opcji CDN”, a następnie `Rezygnacja z CDN`{.action}.
 
 ![CDN](images/manage_CDN_04.png){.thumbnail}
 

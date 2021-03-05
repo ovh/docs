@@ -46,7 +46,7 @@ Näkyviin tulee turvaikkuna, joka pyytää syöttämään sähköpostiosoitteesi
 >
 > Jos näet viestin, ettei Outlook voinut määrittää tiliäsi, voi se tarkoittaa virheellistä SRV-kentän konfigurointia verkkotunnuksesi DNS-alueella.
 >
-> Suosittelemme tarkistamaan Exchange-palvelussasi määritetyn verkkotunnuksen konfiguroinnin [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager){.external} välilehdeltä `Liitetyt verkkotunnukset`{.action} ja sieltä taulukon `Vianhaku`{.action}-sarakkeesta.
+> Suosittelemme tarkistamaan Exchange-palvelussasi määritetyn verkkotunnuksen konfiguroinnin [hallintapaneelin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} välilehdeltä `Liitetyt verkkotunnukset`{.action} ja sieltä taulukon `Vianhaku`{.action}-sarakkeesta.
 >
 
 Jos verkkotunnuksesi konfigurointi on oikein, näkyviin tulee pyyntö hyväksyä yhdistäminen OVH:n palvelimelle. Hyväksy yhteys, jotta Exchange-tilisi voidaan konfiguroida automaattisesti.

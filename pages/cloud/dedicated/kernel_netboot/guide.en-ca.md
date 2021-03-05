@@ -15,16 +15,16 @@ The Netboot feature is a service offered for free by OVHcloud, it allows you to 
 
 ## Requirements
 
-- a [dedicated server](https://www.ovh.com/ca/en/dedicated_servers/){.external}
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+- a [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/){.external}
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 
 ## Instructions
 
-The Netboot facility needs to be configured in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+The Netboot facility needs to be configured in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 
 ### Boot your server from the disk
 
-To start your server on Disk, you must first connect to the [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+To start your server on Disk, you must first connect to the [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 
 Go to the `Bare Metal Cloud`{.action} section, `Dedicated Servers`{.action} on the left-hand column, then select your server in the list.
 
@@ -50,7 +50,7 @@ You will now need to reboot the server so that the new netboot takes effect.
 > This part is intended for servers running Linux. For Windows, FreeBSD, and Virtualization distributions, only Hard Disk mode selection or Rescue modes are possible.
 > 
 
-To start your server on a network kernel, you must first connect to your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+To start your server on a network kernel, you must first connect to your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 
 Go to the `Bare Metal Cloud`{.action} section, `Dedicated Servers`{.action} on the left-hand column, then select your server in the list.
 
@@ -92,7 +92,7 @@ You will now need to reboot the server so that the new netboot takes effect.
 
 
 ### Boot from Rescue mode
-To start your server in rescue mode, you must first connect to your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager){.external}
+To start your server in rescue mode, you must first connect to your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 
 Go to the `Bare Metal Cloud`{.action} section, `Dedicated Servers`{.action} on the left-hand column, then select your server in the list.
 

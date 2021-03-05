@@ -20,7 +20,7 @@ Ontdek hoe u de fout 'Website niet geïnstalleerd' kunt oplossen
 - U moet beschikken over een [OVH-webhostingplan](https://www.ovh.com/nl/shared-hosting/){.external}.
 - U moet over de admin-rechten beschikken om uw [OVH-webhostingplan](https://www.ovh.com/nl/shared-hosting/){.external} te beheren (het plan waarop uw website wordt gehost).
 - U moet over de juiste rechten beschikken om de configuratie voor de betreffende domeinnaam (ofwel de DNS-zone) te beheren.
-- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- U moet ingelogd zijn op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}.
 
 ## Instructies
 
@@ -35,7 +35,7 @@ Door de twee onderstaande stappen te volgen, kunt u deze twee configuraties cont
 
 ### Stap 1: Controleer de configuratie van uw webhostingplan (Multisite)
 
-Om te controleren of de domeinnaam correct is toegevoegd als een multisite in uw webhostingplan, gaat u naar uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} en klikt u vervolgens op `Webhosting`{.action} op de dienstenbalk aan de linkerkant. Klik op het webhostingplan van de website waarvoor de pagina 'Website is niet geïnstalleerd' wordt weergegeven. Ga naar het `Multisite`{.action}-tabblad.
+Om te controleren of de domeinnaam correct is toegevoegd als een multisite in uw webhostingplan, gaat u naar uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en klikt u vervolgens op `Webhosting`{.action} op de dienstenbalk aan de linkerkant. Klik op het webhostingplan van de website waarvoor de pagina 'Website is niet geïnstalleerd' wordt weergegeven. Ga naar het `Multisite`{.action}-tabblad.
 
 De weergegeven tabel bevat alle domeinnamen die aan uw webhostingplan zijn toegevoegd. U kunt de zoekbalk gebruiken om naar de betreffende domeinnaam te zoeken.
 
@@ -59,14 +59,14 @@ U kunt nu de DNS-configuratie van uw domeinnaam controleren. U moet de configura
 
 > [!primary]
 >
-> Als uw domeinnaam is geregistreerd bij OVH, kunt u controleren of de domeinnaam onze configuratie gebruikt. Om dit te doen, blijft u in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, klikt u op `Domeinen`{.action} in de dienstenbalk aan de linkerkant, en klikt u vervolgens op de betreffende domeinnaam. Ga naar het `DNS-servers`{.action}-tabblad.
+> Als uw domeinnaam is geregistreerd bij OVH, kunt u controleren of de domeinnaam onze configuratie gebruikt. Om dit te doen, blijft u in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}, klikt u op `Domeinen`{.action} in de dienstenbalk aan de linkerkant, en klikt u vervolgens op de betreffende domeinnaam. Ga naar het `DNS-servers`{.action}-tabblad.
 >
 
 Er zijn twee gebieden waar u dit kunt controleren, afhankelijk van de configuratie van uw domeinnaam:
 
 - **Als uw domeinnaam de OVH-configuratie niet gebruikt**: u moet de configuratie controleren met behulp van de interface die wordt aangeboden door de provider die de configuratie van uw domeinnaam beheert.
 
-- **Als uw domeinnaam de OVH-configuratie gebruikt**: u moet de configuratie controleren via uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}. Zodra u op de betreffende domeinnaam heeft geklikt, gaat u naar het tabblad `DNS-zone`{.action}. De DNS-configuratie wordt geopend in een tabel, waarbij elke regel een ander DNS-record vertegenwoordigt. U kunt de tabelinhoud filteren op DNS-recordtype of op domeinnaam.
+- **Als uw domeinnaam de OVH-configuratie gebruikt**: u moet de configuratie controleren via uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external}. Zodra u op de betreffende domeinnaam heeft geklikt, gaat u naar het tabblad `DNS-zone`{.action}. De DNS-configuratie wordt geopend in een tabel, waarbij elke regel een ander DNS-record vertegenwoordigt. U kunt de tabelinhoud filteren op DNS-recordtype of op domeinnaam.
 
 ![sitenotinstalled](images/site-not-installed-edit-ovh-dns-zone.png){.thumbnail}
 

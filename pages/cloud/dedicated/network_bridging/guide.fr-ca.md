@@ -19,7 +19,7 @@ La mise en réseau en mode bridge peut être utilisée pour configurer vos machi
 
 * Posséder un serveur dédié avec un hyperviseur installé ([VMware ESXi](http://www.vmware.com/products/esxi-and-esx/overview.html){.external}, Citrix Xen Server, Proxmox, par exemple).
 * Bénéficier d'au moins une adresse [IP fail-over](https://www.ovhcloud.com/fr-ca/bare-metal/ip/) connectée au serveur.
-* Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+* Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
 
@@ -36,7 +36,7 @@ Pour cet exemple, nous utiliserons les valeurs suivantes dans nos exemples de co
 
 ### Assigner une adresse MAC virtuelle
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} et cliquez sur le menu `Bare Metal Cloud`{.action}. Cliquez ensuite sur le menu `IP`{.action} dans la barre de services à gauche, puis recherchez votre adresse IP fail-over dans le tableau.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et cliquez sur le menu `Bare Metal Cloud`{.action}. Cliquez ensuite sur le menu `IP`{.action} dans la barre de services à gauche, puis recherchez votre adresse IP fail-over dans le tableau.
 
 ![Failover IP](images/virtual_mac_01_2020_1.png){.thumbnail}
 
@@ -52,17 +52,17 @@ Sélectionnez « OVHcloud » dans la liste déroulante « Type », tapez un no
 
 Pour configurer vos machines virtuelles pour l'accès à Internet, vous devez connaître la passerelle de votre machine hôte, c’est-à-dire, votre serveur dédié. L'adresse de la passerelle est constituée des trois premiers octets de l'adresse IP principale de votre serveur, le dernier octet étant de 254. Par exemple, si l’adresse IP principale de votre serveur est :
 
-* 169.254.010.020
+* 169.254.10.020
 
 Votre adresse de passerelle sera alors :
 
-* 169.254.010.254
+* 169.254.10.254
 
 ### Préparer l'hôte
 
 > [!primary]
 >
-Pour tous les systèmes d'exploitation et distributions, vous devez configurer votre machine virtuelle avec l'adresse MAC virtuelle créée dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external}.
+Pour tous les systèmes d'exploitation et distributions, vous devez configurer votre machine virtuelle avec l'adresse MAC virtuelle créée dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 >
 
 #### Proxmox
@@ -196,7 +196,7 @@ Sauvegardez et fermez le fichier.
 Ouvrez ensuite le fichier de routage de la machine virtuelle, qui se trouve dans `/etc/sysconfig/network-scripts/route-(nom-de l’interface)`. Modifiez le fichier pour qu'il reflète la configuration ci-dessous. N'oubliez pas de remplacer nos variables par vos propres valeurs :
 
 ```bash
-GATEWAY_IP - 169.254.010.254 (nom-interface)
+GATEWAY_IP - 169.254.10.254 (nom-interface)
 NETWORK_GW_VM - 255.255.255.0 (insérez le nom de l'interface)
 default GATEWAY_IP
 ```
@@ -325,7 +325,7 @@ ip addr add FAILOVER_IP/32 dev test-bridge
 
 Remplacez « MAC_ADDRESS » par l'adresse MAC virtuelle générée dans le panneau de configuration et « FAILOVER_IP » par l'IP fail-over réel.
 
-Ensuite, il vous suffit d'effectuer un ping sur votre IP fail-over depuis l'extérieur. Si cela fonctionne, cela signifie probablement qu'il y a une erreur de configuration sur la machine virtuelle ou sur l'hôte qui empêche l'IP fail-over de fonctionner en mode normal. Si, au contraire, l'IP ne fonctionne toujours pas, veuillez ouvrir un ticket à l'équipe d'assistance via votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager){.external} pour une enquête complémentaire.
+Ensuite, il vous suffit d'effectuer un ping sur votre IP fail-over depuis l'extérieur. Si cela fonctionne, cela signifie probablement qu'il y a une erreur de configuration sur la machine virtuelle ou sur l'hôte qui empêche l'IP fail-over de fonctionner en mode normal. Si, au contraire, l'IP ne fonctionne toujours pas, veuillez ouvrir un ticket à l'équipe d'assistance via votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} pour une enquête complémentaire.
 
 ## Aller plus loin
 

@@ -65,11 +65,11 @@ Sie können eine Test-E-Mail versenden, um zu überprüfen, ob der Account korre
 
 Sollten Sie Probleme bei der Verbindung Ihres Accounts haben, empfehlen wir Folgendes:
 
-- Überprüfen Sie im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} die Domainkonfiguration Ihres Exchange Dienstes. Gehen Sie hierzu auf den Tab `Assoziierte Domains`{.action} und dann in die Spalte `Diagnose`{.action}.
+- Überprüfen Sie im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} die Domainkonfiguration Ihres Exchange Dienstes. Gehen Sie hierzu auf den Tab `Assoziierte Domains`{.action} und dann in die Spalte `Diagnose`{.action}.
 
 - Geben Sie die URL für die Verbindung mit dem Exchange Dienst manuell ein. Fahren Sie trotz Sicherheitswarnung des Zertifikats fort und vervollständigen Sie die Felder `Interne URL`{.action} und `Externe URL`{.action} mit den Informationen zum Server, auf dem Ihr Exchange Dienst gehostet ist.
 
-Sie finden die Server-Informationen im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}, wenn Sie im Menü den betreffenden Exchange Dienst auswählen. Gehen Sie dann auf den Tab `Allgemeine Informationen`{.action}. Der entsprechende Server wird unter `Verbindung`{.action} angezeigt.
+Sie finden die Server-Informationen im [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, wenn Sie im Menü den betreffenden Exchange Dienst auswählen. Gehen Sie dann auf den Tab `Allgemeine Informationen`{.action}. Der entsprechende Server wird unter `Verbindung`{.action} angezeigt.
 
 ### Schritt 2: E-Mail-Adresse verwenden
 

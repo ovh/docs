@@ -29,13 +29,13 @@ In diesem Tutorial richten wir mit Ghost einen Blog auf einem Cloud Web Hosting 
 - ein [OVH Cloud Web Hosting](https://www.ovh.de/hosting/cloud-web.xml){.external}.
 - Sie haben Node.js als Runtime Engine aktiviert.
 - Sie haben die betreffende Domain als Multisite hinzugefügt und Node.js als deren Runtime Engine festgelegt.
-- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
+- Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
 
 ## Beschreibung
 
 ### Schritt 1: Node.js als Runtime Engine aktivieren
 
-Um auf die Runtime Engines Ihres Cloud Web Hostings zuzugreifen, loggen Sie sich zunächst in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein. Klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Cloud Hosting aus. Gehen Sie dann auf den Tab `Runtime Engines`{.action}.
+Um auf die Runtime Engines Ihres Cloud Web Hostings zuzugreifen, loggen Sie sich zunächst in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Klicken Sie links im Menü auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Cloud Hosting aus. Gehen Sie dann auf den Tab `Runtime Engines`{.action}.
 
 Es wird eine Tabelle angezeigt, die alle aktuell hinzugefügten Runtime Engines enthält. Vergewissern Sie sich, dass Node.js als Runtime Engine aktiviert ist. Ist das der Fall, gehen Sie zu Schritt 2 „[Node.js mit einer Multisite verbinden](./#schritt-2-nodejs-mit-einer-multisite-verbinden)“ über.
 
@@ -174,7 +174,7 @@ demonon@cloudweb-ssh:~ $ cd ghost/
 demonon@cloudweb-ssh:~/ghost $
 ```
 
-Laden Sie die [neueste Version von Ghost](https://ghost.org/docs/){.external} herunter und entpacken Sie den Inhalt.
+Laden Sie die [neueste Version von Ghost](https://ghost.org/){.external} herunter und entpacken Sie den Inhalt.
 
 ```sh
 demonon@cloudweb-ssh:~/ghost $ ls
@@ -251,7 +251,7 @@ Installation und Konfiguration von Ghost sind hiermit abgeschlossen. Starten Sie
 
 ### Schritt 7: Node.js-*Daemon* neu starten
 
-Um den Node.js-*Daemon* neu zu starten, gehen Sie zunächst in Ihr [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external}. Gehen Sie zum Tab `Multisite`{.action} und klicken Sie rechts neben der betreffenden Domain auf das Zahnrad-Symbol, dann auf `Neu starten`{.action}.
+Um den Node.js-*Daemon* neu zu starten, gehen Sie zunächst in Ihr [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Gehen Sie zum Tab `Multisite`{.action} und klicken Sie rechts neben der betreffenden Domain auf das Zahnrad-Symbol, dann auf `Neu starten`{.action}.
 
 Nach dem Neustart ist die Anwendung über die in der Konfiguration Ihrer Multisite ausgewählte Domain erreichbar.
 

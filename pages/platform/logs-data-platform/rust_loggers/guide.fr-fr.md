@@ -18,7 +18,7 @@ Rust has a logging implementation ([log](https://docs.rs/log/*/log/){.external})
 
 Those loggers will:
 
-- serialize log entries  using the [serde_gelf](https://crates.io/crates/serde_gelf){.external} crate.
+- serialize log entries using the serde_gelf crate.
 - bufferize the result into memory.
 - batch send over network using TCP/TLS.
 - a facility to ensure fields suits the [LDP naming conventions](../field-naming-conventions){.ref}.

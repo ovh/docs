@@ -16,11 +16,11 @@ Um die Sicherheit Ihrer Hosted Private Cloud Infrastruktur zu verbessern, könne
 ## Voraussetzungen
 
 - Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) ein und wählen Sie dann den Bereich `Hosted Private Cloud`. Klicken Sie im linken Menü auf `Private Cloud` und wählen Sie die betreffende Infrastruktur aus.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie dann den Bereich `Hosted Private Cloud`. Klicken Sie im linken Menü auf `Private Cloud` und wählen Sie die betreffende Infrastruktur aus.
 
 Klicken Sie auf der Startseite des Dienstes auf `Sicherheit`{.action} und danach auf `Zugangseinstellungen für vCenter bearbeiten`{.action}.
 

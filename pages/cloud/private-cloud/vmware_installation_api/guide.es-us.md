@@ -72,7 +72,7 @@ from pyVmomi import vim
  
  
 def vconnect():
-    s = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
+    s = ssl.SSLContext(ssl.PROTOCOL_TLS)
     s.verify_mode = ssl.CERT_NONE
  
     service_instance = connect.SmartConnect(host="pcc-149-202-xxx-xxx.ovh.com",
@@ -105,7 +105,7 @@ from pyVmomi import vim
  
  
 def vconnect():
-    s = ssl.SSLContext(ssl.PROTOCOL_TLSv1)
+    s = ssl.SSLContext(ssl.PROTOCOL_TLS)
     s.verify_mode = ssl.CERT_NONE
  
     service_instance = connect.SmartConnect(host="pcc-149-202-xxx-xxx.ovh.com",

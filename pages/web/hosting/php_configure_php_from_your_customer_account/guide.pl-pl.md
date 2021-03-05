@@ -113,7 +113,8 @@ Jeśli musisz wrócić do poprzedniej wersji php, sugerujemy sprawdzenie częśc
 Jeśli nie tworzysz samodzielnie swojej strony, skontaktuj się w tej sprawie ze swoim webmasterem.
 
 ## Jak sprawdzić wersję PHP używaną w danym katalogu?
-W panelu klienta widoczna jest ogólna wersja PHP, czyli wersja zdefiniowana dla katalogu głównego na hostingu. Jeśli korzystasz ze specyficznej konfiguracji dla podkatalogu, możesz sprawdzić wykorzystywaną w nim wersję PHP pobierając poniższy plik (kliknij prawym przyciskiem i wybierz "Zapisz jako"):  [info.php](https://www.ovh.com/fr/documents/info.php)
+W panelu klienta widoczna jest ogólna wersja PHP, czyli wersja zdefiniowana dla katalogu głównego na hostingu. Jeśli korzystasz ze specyficznej konfiguracji dla podkatalogu, możesz sprawdzić wykorzystywaną w nim wersję PHP pobierając poniższy plik: info.php.
+
 Jeśli chcesz samodzielnie utworzyć taki plik, wystarczy utworzyć plik tekstowy z taką zawartością:
 
 ```

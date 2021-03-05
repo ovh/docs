@@ -10,7 +10,7 @@ section: Tutoriales
 
 ## Objetivo
 
-El módulo **cloud-init** permite configurar una [instancia de Public Cloud](https://www.ovh.com/world/es/public-cloud/instancias/){.external} al crearla, pero también cada vez que se reinicie. Por eso, si quiere volver a configurar el hostname, bien porque se produjo un error al crear la instancia, o bien para reconfigurar el servidor de correo, deberá desactivar primero el módulo cloud-init, que es el encargado de configurar el hostname para que no se restablezca.
+El módulo **cloud-init** permite configurar una [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external} al crearla, pero también cada vez que se reinicie. Por eso, si quiere volver a configurar el hostname, bien porque se produjo un error al crear la instancia, o bien para reconfigurar el servidor de correo, deberá desactivar primero el módulo cloud-init, que es el encargado de configurar el hostname para que no se restablezca.
 
 **Esta guía explica cómo reconfigurar cloud-init para poder cambiar el hostname de una instancia.**
 
@@ -24,7 +24,7 @@ El módulo **cloud-init** permite configurar una [instancia de Public Cloud](htt
 
 ## Requisitos
 
-- Haber creado una [instancia de Public Cloud](https://www.ovh.com/world/es/public-cloud/instancias/){.external}.
+- Haber creado una [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/){.external}.
 - [Conectarse a la instancia por SSH](../primera-conexion/){.external} (root).
 
 

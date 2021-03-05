@@ -16,15 +16,15 @@ SPF:n (Sender Policy Framework) avulla sähköpostin vastaanottava palvelin voi 
 
 ## Edellytykset
 
-- Olet kirjautunut verkkotunnuksen hallintaan [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager){.external}.
-- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- Olet kirjautunut verkkotunnuksen hallintaan [OVH:n hallintapaneelissa](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+- Olet kirjautunut [hallintapaneeliin](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - Kyseessä olevan verkkotunnuksen on käytettävä OVH:n konfigurointia (eli OVH:n nimipalvelimia).
 
 > [!warning]
 >
 > Jos verkkotunnuksesi ei käytä OVH:n nimipalvelimia, sinun on tehtävä SPF-muokkaus verkkotunnuksesi konfiguraatiota hallinnoivalla palveluntarjoajalla.
 >
-> Jos verkkotunnuksesi on OVH:n ylläpitämä, voit tarkistaa käyttääkö se konfiguraatiotamme [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager){.external} `Nimipalvelimet`{.action}-välilehdeltä kyseessä olevan verkkotunnuksen kohdalta.
+> Jos verkkotunnuksesi on OVH:n ylläpitämä, voit tarkistaa käyttääkö se konfiguraatiotamme [hallintapaneelisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} `Nimipalvelimet`{.action}-välilehdeltä kyseessä olevan verkkotunnuksen kohdalta.
 >
 
 ## Käytännössä
@@ -59,7 +59,7 @@ Kun tilaat jonkin näistä ratkaisuista, suosittelemme käyttämään OVH:n tied
 mypersonaldomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
-Jos verkkotunnuksesi käyttää OVH:n konfiguraatiota, voit tarkistaa, onko SPF jo konfiguroitu siihen. Kirjaudu sitä varten [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external} ja mene sitten vasemmanpuoleiseen valintapalkkiin. Mene osioon `Verkkotunnukset`{.action}. Klikkaa sitten kyseessä olevaa verkkotunnusta ja jatka `DNS-alue`{.action}-välilehdelle.
+Jos verkkotunnuksesi käyttää OVH:n konfiguraatiota, voit tarkistaa, onko SPF jo konfiguroitu siihen. Kirjaudu sitä varten [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} ja mene sitten vasemmanpuoleiseen valintapalkkiin. Mene osioon `Verkkotunnukset`{.action}. Klikkaa sitten kyseessä olevaa verkkotunnusta ja jatka `DNS-alue`{.action}-välilehdelle.
 
 Näkyviin pitäisi tulla taulukko. Siinä on näkyvissä verkkotunnuksesi konfiguraatio OVH:lla. Se koostuu useista DNS-tietueista, joita kutakin symboloi yksi taulukon rivi.
 
@@ -85,7 +85,7 @@ Voit löytää suodatuskentän avulla taulukosta SPF:ää vastaavan rivin. Täm�
 
 ### 3. vaihe: SPF:n muokkaus
 
-Muokataksesi SPF:ää verkkotunnuksesi OVH:n konfiguraatiossa kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager){.external}. Mene vasemmanpuoleisessa valikossa osioon `Verkkotunnukset`{.action}, klikkaa kyseessä olevaa verkkotunnusta ja mene sitten `DNS-alue`{.action}-välilehdelle.
+Muokataksesi SPF:ää verkkotunnuksesi OVH:n konfiguraatiossa kirjaudu [hallintapaneeliisi](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Mene vasemmanpuoleisessa valikossa osioon `Verkkotunnukset`{.action}, klikkaa kyseessä olevaa verkkotunnusta ja mene sitten `DNS-alue`{.action}-välilehdelle.
 
 Taulukossa on näkyvissä verkkotunnuksesi konfiguraatio OVH:lla. Kukin rivi vastaa DNS-tietuetta.
 

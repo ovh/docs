@@ -23,7 +23,7 @@ Bei den eingesetzten GPUs handelt es sich um NVIDIA Tesla V100.
 ## Voraussetzungen
 
 - Sie haben ein [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud) mit Zugriff auf die Regionen, in denen GPUs verfügbar sind (GRA3, GRA5, GRA7 und BHS3) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 
 ## In der praktischen Anwendung
@@ -41,7 +41,7 @@ Alle von uns angebotenen Images können auf einer GPU Instanz verwendet werden.
 > Wenn Sie mit dem manuellen Kompilieren eines Kernelmoduls nicht vertraut sind, empfehlen wir die Verwendung einer Distribution, die offiziell von NVIDIA unterstützt wird und für die _turnkey_ Treiber angeboten werden: <https://developer.nvidia.com/cuda-downloads>.
 > 
 
-Wenn Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) angemeldet haben, klicken Sie im Dashboard Ihres Public Cloud Projekts auf `Instanz erstellen`{.action} und wählen Sie eine GPU Instanz:
+Wenn Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angemeldet haben, klicken Sie im Dashboard Ihres Public Cloud Projekts auf `Instanz erstellen`{.action} und wählen Sie eine GPU Instanz:
 
 ![public-cloud](images/gpu.png){.thumbnail}
 
@@ -106,7 +106,7 @@ Die GPU Instanz ist jetzt voll funktionsfähig und verwendbar.
 Es gibt Inkompatibilitäten zwischen dem NVIDIA-Treiber und der Visualisierungslösung *KVM/pci_passthrough*. **Standard-Windows-Images funktionieren nicht.**
 Aus diesem Grund bieten wir spezielle Images an, die auf einem virtuellen UEFI-BIOS basieren und dem Treiber eine ordnungsgemäße Funktion ermöglichen (dies gilt nur für G1-, G2- und G3-Instanzen; Reihe 2017 und frühere).
 
-Wenn Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager) angemeldet haben, klicken Sie im Dashboard Ihres Public Cloud Projekts auf `Instanz erstellen`{.action} und wählen Sie eine GPU Instanz:
+Wenn Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angemeldet haben, klicken Sie im Dashboard Ihres Public Cloud Projekts auf `Instanz erstellen`{.action} und wählen Sie eine GPU Instanz:
 
 ![public-cloud](images/gpu.png){.thumbnail}
 

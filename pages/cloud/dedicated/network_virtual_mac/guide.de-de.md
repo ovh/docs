@@ -18,14 +18,14 @@ Bei OVH können Sie eine virtuelle MAC-Adresse mit einer IP-Adresse verbinden, u
 
 * Sie verfügen über einen [dedizierten Server](https://www.ovh.de/dedicated_server/){.external}.
 * Sie haben eine [Failover-IP-Adresse](https://www.ovh.de/dedicated_server/ip_failover.xml){.external} oder einen Failover-IP-Block (RIPE).
-* Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+* Sie sind in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
 
 
 ## Beschreibung
 
 ### MAC-Adresse zuweisen
 
-Wenn Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} eingeloggt sind, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und klicken Sie links im Menü auf `IP`{.action}.
+Wenn Sie in Ihrem [OVH Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt sind, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und klicken Sie links im Menü auf `IP`{.action}.
 
 ![Failover-IP](images/virtual_mac_01.png){.thumbnail}
 
@@ -57,7 +57,7 @@ Wenn das Dialogfeld „Virtuelle MAC-Adresse hinzufügen“ erscheint, wählen S
 > Der Löschvorgang einer MAC-Adresse ist unwiderruflich. Die Adresse kann danach nicht wiederhergestellt werden.
 > 
 
-Um eine mit einer Failover-IP verbundene virtuelle MAC-Adresse zu löschen, loggen Sie sich in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager){.external} ein und klicken Sie im Bereich `Bare Metal Cloud`{.action} auf der linken Seite auf `IP`{.action}. Wählen Sie den betreffenden Server aus, damit die verbundene Failover-IP (oder der mit dem Server verbundene IP-Block) angezeigt wird.
+Um eine mit einer Failover-IP verbundene virtuelle MAC-Adresse zu löschen, loggen Sie sich in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und klicken Sie im Bereich `Bare Metal Cloud`{.action} auf der linken Seite auf `IP`{.action}. Wählen Sie den betreffenden Server aus, damit die verbundene Failover-IP (oder der mit dem Server verbundene IP-Block) angezeigt wird.
 
 Um den Vorgang abzuschließen, klicken Sie rechts in der Zeile auf den Button `...`{.action} und dann auf `Virtuelle MAC-Adresse löschen`{.action}.
 

@@ -17,7 +17,7 @@ Now that you have [created your pool](../how-to-create-pool/){.external}, you ca
 
 ## Requirements
 
-- You need to have created users in the Active Directory, if a [trust relationship has been created](../approval-ad/), or created users via your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}.
+- You need to have created users in the Active Directory, if a [trust relationship has been created](../approval-ad/), or created users via your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - You need to be logged in to the VMware Horizon 7.1 interface.
 
 

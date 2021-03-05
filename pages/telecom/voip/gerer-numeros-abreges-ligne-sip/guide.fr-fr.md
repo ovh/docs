@@ -16,7 +16,7 @@ Votre ligne SIP OVH vous permet de recevoir et d’émettre des appels. Afin de 
 ## Prérequis
 
 - Disposer d'au moins une [ligne SIP OVH](https://www.ovhtelecom.fr/telephonie/voip/){.external}.
-- Être connecté à l'[espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external}, partie `Télécom`{.action}.
+- Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie `Télécom`{.action}.
 
 ## En pratique
 
@@ -26,13 +26,13 @@ Vous avez la possibilité de gérer les numéros abrégés d'une seule ligne ou 
 
 - **Pour accéder à la gestion des numéros abrégés d'une seule ligne** :
 
-Connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} et rendez-vous dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée. Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Numéros abrégés`{.action}.
+Connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et rendez-vous dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée. Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Numéros abrégés`{.action}.
  
 ![configurationnumerosabreges](images/configurer-numeros-abreges-step1.png){.thumbnail}
 
 - **Pour accéder à la gestion des numéros abrégés d'un groupe de lignes** :
 
-Connectez-vous à votre [espace client OVH](https://www.ovhtelecom.fr/manager/auth/?action=gotomanager){.external} et rendez-vous dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez le groupe de lignes concerné. Cliquez enfin sur le bouton `Numéros abrégés`{.action}.
+Connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et rendez-vous dans la section `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez le groupe de lignes concerné. Cliquez enfin sur le bouton `Numéros abrégés`{.action}.
  
 ![configurationnumerosabreges](images/configurer-numeros-abreges-step2.png){.thumbnail}
 

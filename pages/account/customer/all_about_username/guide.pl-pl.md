@@ -23,7 +23,7 @@ Jest też nazywany „NIC-handle”.
 
 ## Jak utworzyć identyfikator klienta?
 
-Jeśli jeszcze nie masz identyfikatora, wystarczy przejść na stronę [tworzenia konta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}. 
+Jeśli jeszcze nie masz identyfikatora, wystarczy przejść na stronę [tworzenia konta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. 
 
 W internetowym formularzu wprowadź swoje dane, uważając, aby podać **prawidłowy adres e-mail**.
 
@@ -65,7 +65,7 @@ Identyfikator znajdziesz w Panelu klienta, klikając swoją nazwę w prawym gór
 
 ## Jak zalogować się do Panelu klienta?
 
-Przejdź do [strony uwierzytelniania OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, a następnie podaj identyfikator i hasło.
+Przejdź do [strony uwierzytelniania OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, a następnie podaj identyfikator i hasło.
 
 ![identyfikator klienta](images/nichandle03.png){.thumbnail}
 

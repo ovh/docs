@@ -5,11 +5,18 @@ slug: bringyourownimage
 section: Advanced use
 ---
 
-**Last updated 22nd July 2020**
+**Last updated 25th February 2021**
 
 ## Objective
 
 The Bring Your Own Image technology (BYOI) enables you to deploy *cloudready* images directly on your dedicated server. You can therefore use the bare metal service as a resource for your deployments.
+
+**What does *cloudready* mean?**
+<br>In short, to be agnostic of the infrastructure on which the image is deployed.
+In addition to the prerequisites and limitations mentioned below, you must ensure that the image (downloaded or generated) answers correctly to the definition of technical expectations of a cloudready image.
+The image must be able to boot correctly, whatever the server type, it must also embed the Cloud-Init service if Config Drive is used. Finally, the system configurations must allow the OS to be fully initiated, especially those related to the network.
+
+You can also make use of this option when reinstalling a server from the OVHcloud Control Panel ([see the "Getting started" guide](../getting-started-dedicated-server/#installrtm)). Please use the instructions below as a reference.
 
 **This guide explains how to use BYOI through the OVHcloud APIv6.**
 

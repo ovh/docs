@@ -13,7 +13,7 @@ This tutorial covers the process of building your own job image for specific nee
 
 ## Requirements
 
--   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager)
+-   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
 -   an **AI Training project** created inside a **public cloud** project
 -   a [user for AI Training](../create-user)
 -   [docker](https://www.docker.com/get-started) installed on your local computer
@@ -36,7 +36,7 @@ Here is the list of base images without notebooks that we use :
 -   [pytorch/pytorch:1.6.0-cuda10.1-cudnn7-runtime](https://hub.docker.com/r/pytorch/pytorch)
 -   [tensorflow/tensorflow:2.3.0-gpu](https://hub.docker.com/r/tensorflow/tensorflow)
 -   [transformers/transformers-pytorch-gpu:3.1.0](https://hub.docker.com/r/transformers/transformers)
--   [mxnet/python:1.5.0\_gpu\_cu101\_py3](https://hub.docker.com/r/mxnet/python)
+-   [mxnet/python:1.5.0_gpu_cu101_py3](https://hub.docker.com/r/mxnet/python)
 -   [fastdotai/fastai-course:2.0.9](https://hub.docker.com/r/fastdotai/fastai-course)
 
 Here is the list of base images including notebooks (jupyterlab + Visual Studio Code) that we use :

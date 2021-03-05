@@ -17,8 +17,10 @@ nesse caso, pode passar diretamente à secção de importação.
 - Recuperei o meu ficheiro vmdk:
 
 será necessário, nesse caso, converter o seu ficheiro vmdk num ficheiro vhdx para que o mesmo seja compatível com hyperV. Para a conversão, pode utilizar uma destas ferramentas:
-[Microsoft Virtual Machine Converter Solution Accelerator](http://www.microsoft.com/en-us/download/details.aspx?id=34591)
-[2Tware Convert VHD](http://www.2tware.com/product/6/2twareconvertvhdfree)
+
+- Microsoft Virtual Machine Converter Solution Accelerator
+- 2Tware Convert VHD
+
 A indicação dessas ferramentas é meramente a título indicativo. Pode utilizar outras ferramentas. Lembra-se também que a OVH não pode assegurar o suporte a essas ferramentas, desenvolvidas por terceiros.
 
 

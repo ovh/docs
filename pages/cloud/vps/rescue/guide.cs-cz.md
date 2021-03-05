@@ -23,7 +23,7 @@ Zjistěte jak restartovat své VPS v režimu rescue
 
 ## Prerekvizity
 
-Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager){.external}.
+Přístup do [Zákaznického prostoru OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 
 ## Postup

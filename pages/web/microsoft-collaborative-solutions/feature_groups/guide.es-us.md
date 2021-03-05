@@ -17,7 +17,7 @@ Los grupos de Exchange permiten que varios participantes puedan comunicarse a tr
 
 ## Requisitos
 
-- Tener acceso al [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager)
+- Tener acceso al [panel de control de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
 - Tener una [solución Exchange de OVHcloud](https://www.ovh.com/world/es/emails/hosted-exchange/) activa.
 
 
@@ -25,7 +25,7 @@ Los grupos de Exchange permiten que varios participantes puedan comunicarse a tr
 
 ### Paso 1: Crear un grupo nuevo
 
-Primero acceda a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager), diríjase a la sección «Web», y seleccione su servicio Exchange de la columna que está debajo de `Microsoft`{.action} `Exchange`{.action} del menú de la izquierda. Haga clic en la pestaña `Grupos`{.action} del menú horizontal.
+Primero acceda a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), diríjase a la sección «Web», y seleccione su servicio Exchange de la columna que está debajo de `Microsoft`{.action} `Exchange`{.action} del menú de la izquierda. Haga clic en la pestaña `Grupos`{.action} del menú horizontal.
 
 ![contactgroups](images/exchange-groups-step1.png){.thumbnail}
 
@@ -36,7 +36,7 @@ Al hacer clic en `Crear un grupo de contactos`{.action} se abrirá una nueva ven
 |Nombre|Descripción|
 |---|---|
 |Dirección de correo electrónico|La nueva dirección que mandará los mensajes a la lista de correo. Tenga en cuenta que no puede introducir una dirección de correo ya existente.|
-|Nombre del grupo|El nombre que aparecerá en su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager) y en el [webmail de OVHcloud](https://www.ovh.com/world/mail/) (OWA).|
+|Nombre del grupo|El nombre que aparecerá en su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y en el [webmail de OVHcloud](https://www.ovh.com/world/mail/) (OWA).|
 |Tamaño máx. de entrada/salida|Puede especificar el tamaño máximo de sus correos entrantes y salientes.|
 |Ocultar en Outlook|Si marca esta casilla, la dirección del grupo no aparecerá en la lista de direcciones del servicio Exchange.|
 |Autenticación obligatoria|Si marca esta casilla, los usuarios de la misma plataforma serán los únicos que podrán mandar un mensaje utilizando la dirección del grupo.|

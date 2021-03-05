@@ -28,11 +28,11 @@ No seu alojamento Web OVHcloud, pode utilizar scripts para automatizar certas op
 ## Requisitos
 
 - Ter um serviço de [alojamento Web da OVHcloud](https://www.ovh.pt/alojamento-partilhado/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager). Clique no separador `Web Cloud`{.action} e, a seguir, em `Alojamentos`{.action} na coluna da esquerda.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no separador `Web Cloud`{.action} e, a seguir, em `Alojamentos`{.action} na coluna da esquerda.
 
 Selecione o alojamento em causa, clique no separador `Plus+`{.action} e, a seguir, em `Tarefas programadas - Cron`{.action}
 
@@ -107,7 +107,7 @@ Tenha o cuidado de utilizar caminhos de acesso absolutos aos ficheiros dos seus 
  
 #### Verificação dos logs de execução
 
-No \[logs] do seu alojamento Web, acessível a partir da sua Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}, poderá ver a categoria de log intitulada "CRON".
+No \[logs] do seu alojamento Web, acessível a partir da sua Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, poderá ver a categoria de log intitulada "CRON".
 
 Para mais informações, consulte o nosso guia ["Consultar as estatísticas e os logs do meu site alojado numa oferta partilhada"](../partilhado_consultar_as_estatisticas_e_os_logs_do_meu_site/).
 

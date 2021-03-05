@@ -19,14 +19,14 @@ W takiej sytuacji można ponownie skonfigurować instancję lub odzyskać dane p
 ## Wymagania początkowe
 
 * [instancja Public Cloud](https://www.ovhcloud.com/pl/public-cloud/){.external} utworzona na koncie OVHcloud
-* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}
+* dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
 * dostęp administracyjny (uprawnienia użytkownika root) do instancji za pośrednictwem protokołu SSH
 
 ## W praktyce
 
 ### Aktywacja trybu ratunkowego
 
-Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external} i kliknij menu `Public Cloud`{.action}.
+Najpierw zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i kliknij menu `Public Cloud`{.action}.
 
 Następnie wybierz projekt Public Cloud z menu bocznego po lewej stronie ekranu i przejdź do pozycji Instancje.
 

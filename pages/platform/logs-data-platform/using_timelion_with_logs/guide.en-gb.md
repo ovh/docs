@@ -96,7 +96,6 @@ We have only scratched the surface of what you can do with Timelion. Head to the
 
 
 - [Timelion Elastic blog post](https://www.elastic.co/blog/timelion-timeline){.external}
-- [Experiments with Timelion](http://rmoff.net/2016/03/29/experiments-with-kibana-timelion-2/){.external}
 - [Anomaly detection with Timelion](https://www.elastic.co/blog/implementing-a-statistical-anomaly-detector-part-1){.external}
 - [45 minutes of Timelion with its creator](https://www.youtube.com/watch?v=L5LvP_Cj0A0){.external}
 

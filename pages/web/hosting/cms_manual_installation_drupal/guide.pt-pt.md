@@ -12,7 +12,7 @@ Ferramentas necessárias
 Para instalar o CMS Drupal no seu alojamento partilhado, aconselhamos a utilização de um cliente FTP como FileZilla (gratuito)
 
 ## Dados de autenticação necessários para a instalação
-Assegure-se que possui o seu identificador de cliente (NIC-Handle) e a sua palavra-passe para poder estabelecer ligação ao seu [Espaço Cliente OVH](https://www.ovh.com/manager/web/login/), se necessário.
+Assegure-se que possui o seu identificador de cliente (NIC-Handle) e a sua palavra-passe para poder estabelecer ligação ao seu [Espaço Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), se necessário.
 
 
 - Obtenha o seu identificador e a palavra-passe FTP que lhe permite estabelecer ligação ao seu servidor de armazenamento dos seus ficheiros.

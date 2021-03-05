@@ -27,7 +27,7 @@ Auf Ihrem OVHcloud Webhosting können Sie Skripte verwenden, um bestimmte Operat
 ## Voraussetzungen
 
 - Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
@@ -106,7 +106,7 @@ Achten Sie immer darauf, absolute Zugriffspfade zu den Dateien Ihrer Skripte zu 
  
 #### Überprüfung der Ausführungsprotokolle
 
-In den Logs Ihres Webhostings, einsehbar im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager), finden Sie die Log-Kategorie "cron".
+In den Logs Ihres Webhostings, einsehbar im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), finden Sie die Log-Kategorie "cron".
 
 Weitere Informationen finden Sie in unserer Anleitung zu [Statistiken und Logs](../webhosting_die_statistiken_und_logs_meiner_website_einsehen/).
 

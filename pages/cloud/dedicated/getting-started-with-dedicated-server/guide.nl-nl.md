@@ -24,7 +24,7 @@ Een dedicated server is een fysieke server in een van onze datacenters. In tegen
 
 ## Vereisten
 
-* U moet beschikken over een [dedicated server](https://www.ovh.nl/dedicated_servers/){.external} in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in het gedeelte `Dedicated`{.action}, dan `Dedicated Servers`{.action}. 
+* U moet beschikken over een [dedicated server](https://www.ovh.nl/dedicated_servers/){.external} in uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} in het gedeelte `Dedicated`{.action}, dan `Dedicated Servers`{.action}. 
 
 
 ## Instructie
@@ -55,7 +55,7 @@ Wanneer uw dedicated server voor het eerst wordt ingesteld, ontvangt u een e-mai
 
 ### Uw dedicated server installeren of opnieuw installeren
 
-Ga naar uw serverpagina in uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} en klik vervolgens in `Algemene informatie` op `...`{.action} en dan op `Opnieuw installeren`{.action} in het gedeelte `Systeem (OS)`.
+Ga naar uw serverpagina in uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en klik vervolgens in `Algemene informatie` op `...`{.action} en dan op `Opnieuw installeren`{.action} in het gedeelte `Systeem (OS)`.
 
 ![Opnieuw installeren](images/reinstalling-your-server-01.png){.thumbnail} knop
 
@@ -72,7 +72,7 @@ Volg de rest van de instructies op het scherm en klik vervolgens op `Bevestigen`
 
 > [!primary]
 >
-> Sommige besturingssystemen of platforms, zoals Plesk en Windows, vereisen de aanschaf van een licentie voorafgaand aan de installatie. U kunt deze kopen via OVH in uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} in het `Dedicated`{.action}-gedeelte, vervolgens in `Licenties`{.action} of bij een reseller. U moet het dan handmatig, via het besturingssysteem zelf, of via uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} integreren. 
+> Sommige besturingssystemen of platforms, zoals Plesk en Windows, vereisen de aanschaf van een licentie voorafgaand aan de installatie. U kunt deze kopen via OVH in uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} in het `Dedicated`{.action}-gedeelte, vervolgens in `Licenties`{.action} of bij een reseller. U moet het dan handmatig, via het besturingssysteem zelf, of via uw [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} integreren. 
 > 
 
 
@@ -119,7 +119,7 @@ Raadpleeg de handleiding [IPMI gebruiken voor uw dedicated server](https://docs.
 
 ### Reddingsmodus
 
-Als u een probleem hebt met uw server, is de eerste stap bij het oplossen van problemen het opnieuw opstarten in de reddingsmodus. Om de reddingsmodus te activeren, logt u in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external} en gaat u naar de pagina van uw server. Vervolgens gaat u naar `Server status`{.action}, `Algemene informatie`{.action} en `Boot`{.action}.  Klik op `Bewerken`{.action} om de opstartmodus te wijzigen. 
+Als u een probleem hebt met uw server, is de eerste stap bij het oplossen van problemen het opnieuw opstarten in de reddingsmodus. Om de reddingsmodus te activeren, logt u in op uw [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.nl/&ovhSubsidiary=nl){.external} en gaat u naar de pagina van uw server. Vervolgens gaat u naar `Server status`{.action}, `Algemene informatie`{.action} en `Boot`{.action}.  Klik op `Bewerken`{.action} om de opstartmodus te wijzigen. 
 
 ![Startmodus wijzigen](images/rescue-mode-01.png){.thumbnail}
 

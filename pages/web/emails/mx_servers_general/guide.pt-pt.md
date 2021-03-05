@@ -27,7 +27,7 @@ Poderemos esquematizar o nome de domínio, os servidores DNS e a zona DNS assim:
 
 ## Pré-requisitos
 
-- Dispor de acesso ao seu [Espaço Cliente](https://www.ovh.com/manager/web/login/).
+- Dispor de acesso ao seu [Espaço Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 Se não possui acesso ao seu Espaço Cliente consulte o [seguinte guia](https://www.ovh.pt/g1909.partilhado_gerir_e_aceder_as_minhas_passwords#as_diferentes_passwords_associadas_a_um_servico_partilhado_da_ovh).
 

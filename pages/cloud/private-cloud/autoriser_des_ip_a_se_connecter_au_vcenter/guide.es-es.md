@@ -17,14 +17,14 @@ Es posible limitar el acceso al vCenter autorizando solo la conexión de determi
 
 ## Requisitos
 
-* Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external}.
+* Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 * Disponer de una [infraestructura Private Cloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/){.external} en su cuenta de OVHcloud.
 
 ## Procedimiento
 
 Cuando [la política de acceso al vCenter está restringida](../modificar-politica-acceso-al-vcenter/), es necesario añadir las direcciones IP autorizadas a conectarse al servicio.
 
-Esta operación se realiza desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager){.external-link}. En el menú `Servidores`, acceda a la sección `Private Cloud`. Seleccione la infraestructura y, a continuación, abra la pestaña `Seguridad`. Por último, haga clic en `Añadir un nuevo rango de direcciones IP`{.action}.
+Esta operación se realiza desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external-link}. En el menú `Servidores`, acceda a la sección `Private Cloud`. Seleccione la infraestructura y, a continuación, abra la pestaña `Seguridad`. Por último, haga clic en `Añadir un nuevo rango de direcciones IP`{.action}.
 
 ![vCenter](images/restrictIP.JPG){.thumbnail}
 
