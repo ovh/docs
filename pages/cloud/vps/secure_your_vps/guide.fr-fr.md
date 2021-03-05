@@ -5,7 +5,7 @@ section: 'Premiers pas'
 excerpt: 'Découvrez les éléments de base vous permettant de sécuriser votre VPS'
 ---
 
-**Dernière mise à jour le 13/06/2019**
+**Dernière mise à jour le 15 janvier 2021**
 
 ## Objectif
 
@@ -20,14 +20,20 @@ Lorsque vous commandez votre VPS, une distribution ou un système d'exploitation
 > 
 
 
-## Prérequis
+## Exigences
 
-- Être connecté en SSH à votre VPS (accès root).
+- une offre [VPS](https://www.ovhcloud.com/fr/vps/) sur votre compte OVHcloud
+- accès administratif (racine) via SSH à votre serveur
 
+## Instructions
 
-## En pratique
+> [!primary]
+>
+> Gardez à l'esprit qu'il s'agit d'un guide général. Certaines commandes doivent être adaptées au système de distribution ou d'exploitation que vous utilisez et des conseils vous conseilleront d'utiliser des outils tiers. Si vous avez besoin d'aide, reportez-vous à la documentation officielle de ces applications.
+>
+> Si vous configurez votre premier VPS OVHcloud, nous vous recommandons de consulter notre guide sur [la mise en route d'un VPS](../debuter-avec-vps/) en premier.
+>
 
-Plusieurs conseils vont vous être apportés. Attention, ce guide est général. Certaines commandes nécessitent d’être adaptées à la distribution que vous utilisez. Quelques informations vous conseillent d’utiliser des outils externes. N’hésitez pas à vous référer à la documentation officielle de ceux-ci pour obtenir de l’aide.
 
 ### Mettre à jour le système
 
@@ -52,7 +58,7 @@ Une fois cette étape terminée, votre système est à jour. Cette opération es
 
 ### Modifier le port d'écoute par défaut du service SSH
 
-L'une des premières actions à effectuer sur votre serveur est de configurer le service SSH en changeant le port d'écoute. L'écoute est par défaut définie sur le **<b>port 22</b>**. Il est donc conseillé de ne pas le laisser en l’état et de le modifier. En effet, la plupart des tentatives de piratage de serveur sont effectuées par des robots ciblant par défaut le port 22. Modifier son paramétrage leur compliquera la tâche et rendra votre serveur plus difficile à atteindre.
+L'une des premières actions à effectuer sur votre serveur est de configurer le service SSH en changeant le port d'écoute. L'écoute est par défaut définie sur le **port 22**. Il est donc conseillé de ne pas le laisser en l’état et de le modifier. En effet, la plupart des tentatives de piratage de serveur sont effectuées par des robots ciblant par défaut le port 22. Modifier son paramétrage leur compliquera la tâche et rendra votre serveur plus difficile à atteindre.
 
 Voici la commande pour modifier le fichier de configuration du service :
 
@@ -65,72 +71,66 @@ nano /etc/ssh/sshd_config
 > La commande `nano` est donnée comme exemple, vous pouvez utiliser la commande `vim` ou toute autre commande permettant de modifier le fichier « sshd_config ».
 >
 
-Vous devez ensuite trouver la ligne suivante :
+Vous devez ensuite trouver les lignes suivantes:
 
 ```sh
 # What ports, IPs and protocols we listen for Port 22
 Port 22
 ```
 
-Remplacez le nombre **22** par le numéro de port de votre choix. ** <b>Veillez toutefois à ne pas renseigner un numéro de port déjà utilisé sur votre système</b>**. Enregistrez et quittez le fichier de configuration.
+Remplacez le numéro **22** par le numéro de port de votre choix. **N'entrez pas de numéro de port déjà utilisé sur votre système**. Pour des raisons de sécurité, utilisez un nombre compris entre 49152 et 65535. <br>Enregistrez et quittez le fichier de configuration.
 
-Vous devez ensuite redémarrer votre service :
-
-```sh
-/etc/init.d/ssh restart
-```
-
-À présent, lors de votre demande de connexion SSH à votre machine, vous devrez obligatoirement renseigner le nouveau port :
+Redémarrez le service:
 
 ```sh
-ssh root@YourVps.ovh.net -p NewPort
+systemctl restart sshd
 ```
 
-### Modifier le mot de passe associé à l'utilisateur « root »
+Cela devrait suffire pour appliquer les modifications. Vous pouvez également redémarrer le VPS (`~$ reboot`).
 
-À l’installation d’une distribution, un mot de passe est créé automatiquement pour l’accès principal (root). Il est très fortement recommandé de le personnaliser en le modifiant. Pour ce faire, une fois connecté, il vous suffit d'entrer la commande suivante :
+N'oubliez pas que vous devez indiquer le nouveau port chaque fois que vous demandez une connexion SSH à votre serveur, par exemple:
 
 ```sh
-passwd root
+username@IPv4_of_your_VPS -p NewPortNumber
 ```
 
-Votre système vous demandera ensuite d'entrer votre nouveau mot de passe deux fois pour le valider. Attention, pour des raisons de sécurité, **l<b>e mot de passe ne sera pas affiché lors de l’écriture</b>**. Vous ne pourrez donc pas voir les caractères saisis.
+### Modification du mot de passe associé à l'utilisateur "root"
 
-Une fois cette opération effectuée, vous devez renseigner le nouveau mot de passe dès votre prochaine connexion au système.
+Il est fortement recommandé de modifier le mot de passe de l'utilisateur root de façon à ne pas le laisser à la valeur par défaut sur un nouveau système. Pour plus d'informations, reportez-vous aux informations de [ce guide](../root-password/).
 
-### Créer un utilisateur avec des droits restreints et agir dans le système avec des droits root
+### Création d'un utilisateur avec des droits restreints
 
-Vous pouvez créer un nouvel utilisateur avec la commande suivante :
+En général, les tâches qui ne nécessitent pas de privilèges root doivent être effectuées via un utilisateur standard. Vous pouvez créer un utilisateur à l'aide de la commande suivante:
 
 ```sh
 adduser NomUtilisateurPersonnalisé
 ```
 
-Vous devez ensuite remplir les informations demandées par le système : mot de passe, nom, etc.
+Remplissez ensuite les informations demandées par le système (mot de passe, nom, etc.).
 
-Cet utilisateur sera autorisé à se connecter à votre système en SSH avec le mot de passe indiqué lors de la création du compte.
+Le nouvel utilisateur sera autorisé à se connecter via SSH. Lors de la connexion, utilisez les informations d'identification spécifiées.
 
-Une fois connecté à votre système avec ces informations d'identification, si vous souhaitez effectuer des opérations nécessitant des droits d'administrateur, il suffira de taper la commande suivante :
+Une fois connecté à votre système avec ces informations d'identification, si vous souhaitez effectuer des opérations nécessitant des droits administrateur, tapez la commande suivante :
 
 ```sh
 su root
 ```
 
-Vous devez ensuite entrer le mot de passe associé à l'utilisateur root pour valider l'opération.
+Entrez le mot de passe lorsque vous y êtes invité et la connexion active sera basculée vers l'utilisateur root.
 
-### Désactiver l'accès au serveur via l'utilisateur root
+### Désactivation de l'accès au serveur via l'utilisateur root
 
-L'utilisateur root est créé par défaut sur les systèmes UNIX et il possède les droits les plus élevés sur votre système. Il n'est pas conseillé et même dangereux de laisser votre VPS accessible uniquement via cet utilisateur, car ce compte peut effectuer des opérations irréversibles sur votre serveur.
+L'utilisateur root est créé par défaut sur les systèmes GNU/Linux. L'accès à la racine signifie avoir le plus d'autorisations sur un système d'exploitation. Il n'est pas recommandé ni même dangereux de laisser votre VPS accessible uniquement par racine, car ce compte peut effectuer des opérations irréversiblement dommageables.
 
-Il est recommandé de désactiver l'accès direct des utilisateurs root via le protocole SSH.
+Nous vous recommandons de désactiver l'accès direct à l'utilisateur root via le protocole SSH. N'oubliez pas de créer un autre utilisateur avant de suivre les étapes ci-dessous.
 
-Pour effectuer cette opération, vous devez modifier le fichier de configuration SSH comme vous l'avez fait précédemment pour modifier le port d'accès à votre serveur.
+Vous devez modifier le fichier de configuration SSH de la même manière que décrit ci-dessus:
 
 ```sh
 nano /etc/ssh/sshd_config
 ```
 
-Recherchez ensuite la section suivante :
+Localisez la section suivante:
 
 ```sh
 # Authentication: 
@@ -139,18 +139,18 @@ PermitRootLogin yes
 StrictModes yes
 ```
 
-Remplacez le **oui** par **non** sur la ligne ` PermitRootLogin`.
+Remplacez **yes** par **no** sur la ligne `PermitRootLogin`.
 
-Pour que cette modification soit prise en compte, vous devez redémarrer le service SSH :
+Pour que cette modification soit prise en compte, vous devez redémarrer le service SSH:
 
 ```sh
-/etc/init.d/ssh restart
+systemctl restart sshd
 ```
 
-Maintenant, pour vous connecter à votre système, utilisez les informations d'identification de compte (utilisateur) que vous venez de créer.
+Par la suite, les connexions à votre serveur via l'utilisateur root (`ssh root@IPv4_of_your_VPS`) seront rejetées.
 
 
-### Installer et configurer le paquet Fail2ban
+### Installation de Fail2ban
 
 Fail2ban est un framework de prévention contre les intrusions dont le but est de bloquer les adresses IP inconnues qui tentent de pénétrer dans votre système. Ce logiciel est recommandé, même essentiel, pour se prémunir contre toute attaque brutale contre vos services.
 
@@ -180,7 +180,7 @@ Une fois ces modifications terminées, redémarrez le service à l'aide de la co
 
 Pour toute demande complémentaire concernant Fail2Ban, n’hésitez pas à consulter la documentation officielle de cet outil en cliquant sur  [ce lien](https://www.fail2ban.org/wiki/index.php/Main_Page){.external}.
 
-### Configurez le pare-feu interne : les iptables
+### Configuration du pare-feu interne (iptables)
 
 Les distributions Linux et UNIX sont fournies avec un service de pare-feu nommé iptables. Par défaut, ce service ne possède aucune règle active. Vous pouvez le constater en tapant la commande suivante :
 
@@ -190,26 +190,27 @@ iptables -L
 
 Nous vous recommandons alors de créer et d’ajuster à votre utilisation des règles sur ce pare-feu. Pour plus d'informations sur les diverses manipulations possibles, reportez-vous à la section correspondante de la documentation officielle de la distribution utilisée.
 
-### Configuration du réseau de pare-feu OVHcloud
+### Configuration du pare-feu réseau OVHcloud 
 
-Les solutions OVHcloud incluent un pare-feu à l'entrée de l'infrastructure, appelé firewall network. Sa mise en place et sa configuration permettent le blocage des protocoles avant même leur arrivée sur votre serveur.
+Les solutions OVHcloud incluent la possibilité d'activer un pare-feu au point d'entrée de l'infrastructure, appelé pare-feu réseau. La configuration correcte permet de bloquer les connexions avant même qu'elles n'arrivent sur votre serveur.
 
-Nous vous proposons également un guide sur la [configuration de ce réseau](https://docs.ovh.com/fr/dedicated/firewall-network/){.external} de pare-feu.
+Reportez-vous au [Network Firewall Guide](../../dedicated/firewall-network/) si vous souhaitez l'activer.
 
-### Sauvegarder votre système et vos données
+### Sauvegarde de votre système et de vos données
 
-La notion de sécurité ne se limite pas uniquement à la protection d’un système contre des attaques.
+Le concept de sécurité ne se limite pas à la protection d'un système contre les attaques.
 
-La sécurisation de vos données est un élément clé, c'est pourquoi OVHcloud vous propose trois options de sauvegarde :
+La sécurisation de vos données est un élément clé, c'est pourquoi OVHcloud vous offre plusieurs options de sauvegarde en tant que service:
 
-- l'option snapshot, qui vous permet de créer un instantané manuel de votre machine virtuelle (disponible sur VPS SSD, Cloud et Cloud RAM) ;
-- l'option backup automatisé vous permet d'effectuer une sauvegarde régulière de votre VPS (hors disques additionnels), puis de l'exporter et de la répliquer trois fois avant d'être disponible à partir de votre espace client (disponible uniquement sur les VPS Cloud et les VPS Cloud RAM) ;
-- l'option backup automatisé qui vous permet de déposer et de récupérer manuellement des fichiers sur un espace disque dédié. Les protocoles de transfert de fichiers disponibles sont FTP, NFS et CIFS, pour garantir la compatibilité avec les méthodes d'accès aux fichiers de tous les systèmes d'exploitation. Cela vous permet de protéger vos données en cas d'interruption de service (uniquement disponible sur les VPS Cloud et Cloud RAM VPS).
+- L'option `Snapshot` qui vous permet de créer un instantané manuel.
+- L'option `Automated Backup` vous permet de conserver des sauvegardes régulières de votre VPS (à l'exception des disques supplémentaires).
 
-Vous trouverez toutes les informations sur nos solutions de sauvegarde VPS ici : <https://www.ovhcloud.com/fr/vps/>.
+Vous trouverez toutes les informations sur les solutions de sauvegarde disponibles pour votre service sur la [page produit](https://www.ovhcloud.com/fr/vps/options/) et dans les [guides respectifs](../).
 
-## Aller plus loin
+## Allez plus loin
 
-[Guide sur le firewall network](https://docs.ovh.com/fr/dedicated/firewall-network//){.external}
+[Débuter avec un VPS](../debuter-avec-vps/) 
+
+[Guide de pare-feu réseau](../../dedicated/firewall-network/)
 
 Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.
