@@ -45,7 +45,7 @@ There are three types of status that may appear:
 |Status|Description|
 |---|---|
 |Enabled|An SSL certificate has already been activated for this multisite. However, if your website is not available via HTTPS, please refer to the instructions listed in our guide to [Activating HTTPS on your website with an SSL certificate](https://docs.ovh.com/gb/en/hosting/activate-https-website-ssl/){.external}.|
-|To generate|An SSL certificate has been activated for this website, but it is still not technically active. To activate the SSL certificate properly, you will need to regenerate it for your Web Hosting plan, so that it includes the new domain names.|
+|To generate|An SSL certificate has been activated for this website, but it is still not technically active. To activate the SSL certificate properly, you will need to [Regenerate an SSL certificate on a Web Hosting plan](https://docs.ovh.com/gb/en/hosting/ssl-certificates-on-web-hosting-plans/#regenerate-an-ssl-certificate-on-a-web-hosting-plan){.external}, so that it includes the new domain names.|
 |Disabled|An SSL certificate has not been activated for this multisite. To activate it, follow the steps listed below.|
 
 To activate SSL on a multisite, click on the three dots icon to the right of the multisite concerned, then `Modify domain`{.action}. In the window that pops up, tick the `SSL`{.action} box. You can also tick the option to modify the www subdomain at once if you modify its proper domain name. Then follow the steps until you confirm the change.
@@ -109,7 +109,7 @@ Certificate setup may take between several minutes and several days, depending o
 
 Once you have activated a secure SSL connection across one or more of your multisites, the status will then change to “To generate”. This generation is essential for adding the domain names concerned to the SSL certificate on your Web Hosting plan. 
 
-To do this, log in to the [OVHcloud Web Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, select the tab `Web Cloud`{.action}, click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Click on the `General information`{.action} tab. Then click on the three dots next to ‘SSL certificate’, then `Regenerate SSL certificate`{.action}.
+To do this, log in to the [OVHcloud Web Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, select the tab [Web Cloud](https://www.ovh.com/manager/web/#/configuration){.external}, click `Hosting plans`{.action} in the services bar on the left-hand side, then choose the Web Hosting plan concerned. Click on the `General information`{.action} tab. Then click on the three dots next to ‘SSL certificate’, then `Regenerate SSL certificate`{.action}.
 
 ![managessl](images/manage-ssl-step7.png){.thumbnail}
 
@@ -125,7 +125,7 @@ You can also delete an SSL certificate that has been set up on your Web Hosting 
 
 Since this verification involves checking your website settings, we recommend contacting a specialist service provider if you experience any difficulties in this regard. We will not be able to assist you with this ourselves. 
 
-Once you are ready to delete the SSL certificate, log in to the [OVHcloud Web Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, select the tab `Web Cloud`{.action}, click `Hosting plans`{.action} in the services bar on the left-hand side, then select the service name concerned. Click on the `General information`{.action} tab. Then click on the three dots next to `SSL certificate`{.action}, then `Delete SSL`{.action}.
+Once you are ready to delete the SSL certificate, log in to the [OVHcloud Web Control Panel](https://www.ovh.com/auth/?action=gotomanager){.external}, select the tab [Web Cloud](https://www.ovh.com/manager/web/#/configuration){.external}, click `Hosting plans`{.action} in the services bar on the left-hand side, then select the service name concerned. Click on the `General information`{.action} tab. Then click on the three dots next to `SSL certificate`{.action}, then `Delete SSL`{.action}.
 
 On the page that appears, confirm the deletion. The deletion will take effect in a few hours, at most. 
 
