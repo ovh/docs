@@ -59,7 +59,7 @@ In the `General information`{.action} tab, go to the **Plan** section in the bot
 > 
 > If you are only changing owner details other than mentioned above, continue with the section [Updating the owner information](./#updateownerinformation) below.
 
-A new browser tab will open with all eligible domains. Select a domain name on the list by using the checkbox to the left of it. This step can also be used to launch a bulk operation: it is possible to initiate a domain trade for multiple domain names at once, for example to change the owner of all .ovh domains. When you made your choices, click `Continue`{.action}.
+A new browser tab will open with all eligible domains. Select a domain name on the list by using the checkbox to the left of it. This step can also be used to launch a bulk operation: it is possible to initiate a domain trade for multiple domain names at once, for example to change the owner of all .ovh domains. When you have made your choices, click `Continue`{.action}.
 
 ![changing owner](images/3657.PNG){.thumbnail}
 
