@@ -1,7 +1,7 @@
 ---
 title: 'Sauvegarde automatique - Kernel panic (cPanel)'
 slug: cpanel_auto_backup
-excerpt: 'Découvrez comment résoudre les problèmes de blocage des serveurs cPanel lors de la sauvegarde automatisée OVHcloud''
+excerpt: 'Découvrez comment résoudre les problèmes de blocage des serveurs cPanel lors de la sauvegarde automatisée OVHcloud'
 section: 'Utilisation avancée'
 ---
 
