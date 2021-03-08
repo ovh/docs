@@ -16,7 +16,7 @@ Private Registry is currently available in Western Europe (GRA region).
 All traffic to and from the registry is completely free.
 
 ### What service levels are included in the Private Registry service?
-Private Registry is covered by a service level (SLA) that guarantees very high availability to give you the assurance of a high efficiency of your developments and deployments. M and L plans have an SLA that also covers components such as the user interface and vulnerability scanning. You will find all the details in the [Special Conditions for OVHcloud Public Cloud Service](https://www.ovh.co.uk/support/termsofservice/Specific_Conditions_for_OVH_Public_Cloud_Service.pdf){.external}.
+Private Registry is covered by a service level (SLA) that guarantees very high availability to give you the assurance of a high efficiency of your developments and deployments. M and L plans have an SLA that also covers components such as the user interface and vulnerability scanning. You will find all the details in the [Special Conditions for OVHcloud Public Cloud Service](https://www.ovh.com/sg/support/contracts/){.external}.
 
 ### Do I have to use the OVHcloud Managed Kubernetes Service service with Private Registry?
 No, because by subscribing to the Private Registry service you will have your own Docker Registry and your own Harbor (API and GUI). Once you receive your IDs, you will be able to use the Private Registry service with any container or orchestrator tool, the OVHcloud Kubernetes solution or another one.
