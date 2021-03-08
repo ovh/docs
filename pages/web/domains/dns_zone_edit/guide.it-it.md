@@ -180,7 +180,7 @@ Clicca sulla scheda `Zona DNS`{.action} dello Spazio Cliente, clicca sul pulsant
 
 [Modificare i server DNS di un dominio OVH](../web_hosting_gestisci_il_tuo_server_dns/){.external}
 
-[Aggiungere un record SPF alla configurazione di un dominio](../le-champ-spf/){.external}
+[Aggiungere un record SPF alla configurazione di un dominio](../hosting_condiviso_il_record_spf/){.external}
 
 [Proteggere il dominio dal Cache Poisoning con DNSSEC](../proteggi_il_tuo_dominio_con_dnssec/){.external}
 
