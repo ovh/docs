@@ -6,13 +6,13 @@ excerpt: Find out how to change the owner of a a domain name in the OVHcloud Con
 section: Trade
 ---
 
-**Last updated 30th January 2020**
+**Last updated 8th March 2021**
 
 ## Objective
 
-Beside the [three contacts](../../customer/managing-contacts/), you need to provide information on the owner when registering a domain name. "**Owner**" in this context pertains to a person or company holding the rights to this domain name. **Domain trade** refers to a change of ownership by modifying this information in a legally binding way. For example, this process is the mandatory procedure in case of a company changing its name.
+Besides the [three contacts](../../customer/managing-contacts/), you need to provide information on the owner when registering a domain name. "**Owner**" in this context pertains to a person or company holding the rights to this domain name. **Domain trade** refers to a change of ownership by modifying this information in a legally binding way. For example, this process is the mandatory procedure in case of a company changing its name.
 
-[primary!]
+> [!primary]
 >This operation will not move your domain name to another OVHcloud customer account.
 >
 >To do this you need to change the domain name's [contacts](../../customer/managing-contacts/).
