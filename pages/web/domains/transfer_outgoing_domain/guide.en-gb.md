@@ -33,7 +33,7 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 >
 > The following instructions describe the most common way to transfer a domain name, valid for most Top Level Domains (TLD). However, the specific rules for processes regarding TLDs are solely defined by the appropriate allocation authority i.e. the **registry**. Registrars such as OVHcloud must adhere to these rules and have no influence over registry decisions.
 >
-> The exact procedure for domain transfers may therefore vary, especially in case of some country-code TLDs (ccTLD, such as .lu, .uk., .hk, .ro) and a few special purpose TLDs (.am, .fm, etc.). Transfers might also be prohibited for various reasons, e.g. outstanding payment, abuse case or registry lock. 
+> The exact procedure for domain transfers may therefore vary, especially in case of some country-code TLDs (ccTLD, such as .lu, .uk, .hk, .ro) and a few special purpose TLDs (.am, .fm, etc.). Transfers might also be prohibited for various reasons, e.g. outstanding payment, abuse case or registry lock. 
 >
 > We recommend to consult the following resources in case of any doubt:
 >
@@ -74,9 +74,9 @@ Make sure to copy and paste the code as opposed to typing it by hand, since some
 
 ### Step 3: Launch the transfer at your new registrar
 
-After completing the previous steps you can initiate the transfer process, usually by placing an order. Afterwards, the transfer may take up to 10 days. 
+After completing the previous steps you can initiate the transfer, usually by placing an order. Afterwards, the transfer may take up to 10 days. 
 
-You can contact your provider for more information about this.
+You can contact your provider for more information about this process.
 
 ## Go further
 

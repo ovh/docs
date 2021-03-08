@@ -38,7 +38,7 @@ No matter your level of expertise in Python or Java programming, the Data Proces
 
 ### From which countries can customers order the Data Processing solution?
 
-They can order Data Processing via [OVHcloud EU or CA Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. 
+They can order Data Processing via [OVHcloud EU or CA Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. 
 <br>However, the product is not available via the OVHcloud US Control Panel.
 
 
@@ -118,7 +118,7 @@ Storage and Storage transfer are not included in the Data processing offer.
 
 ### What  are the SLA linked to the Data processing offer?
 
-For more information, we invite you to read our [specific conditions for Public Cloud service](https://www.ovh.co.uk/support/contracts/).
+For more information, we invite you to read our [specific conditions for Public Cloud service](https://www.ovh.com/asia/support/contracts/).
 
 
 ### How to monitor a cluster?  Is Datadog compatible?
