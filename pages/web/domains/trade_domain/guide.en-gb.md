@@ -6,7 +6,7 @@ excerpt: Find out how to change the owner of a a domain name in the OVHcloud Con
 section: Trade
 ---
 
-**Last updated 8th March 2020**
+**Last updated 8th March 2021**
 
 ## Objective
 
