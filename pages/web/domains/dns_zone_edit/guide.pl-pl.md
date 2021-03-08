@@ -22,7 +22,7 @@ Na przykład, jeśli chcesz uzyskać dostęp do strony *mojadomena.ovh*, Twoje z
 
 W związku z operacjami, które przeprowadzasz w Panelu klienta, ważne jest rozróżnienie **serwerów DNS** i **strefy DNS**. To na poziomie **serwera DNS** jest skonfigurowana **strefa DNS**. 
 
-Informacje dotyczące **serwerów DNS** oraz ich modyfikacja znajdziesz w przewodniku "[Zmiana serwerów DNS domeny OVHcloud](../generalites-serveurs-dhosting_www_informacje_na_temat_serwerow_dns/ns/)".
+Informacje dotyczące **serwerów DNS** oraz ich modyfikacja znajdziesz w przewodniku "[Zmiana serwerów DNS domeny OVHcloud](../hosting_www_informacje_na_temat_serwerow_dns/)".
 
 ![DNS](images/dnsserver.png){.thumbnail}
 
@@ -44,7 +44,7 @@ Strefa DNS domeny to plik konfiguracyjny składający się z **rekordów**. Umo�
 
 - Dostęp do interfejsu zarządzania domeną w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Używanie konfiguracji OVHcloud (serwerów DNS OVH) dla danej domeny. 
+- Używanie konfiguracji OVHcloud (serwerów DNS OVH) dla danej domeny.
 
 > [!warning]
 >
