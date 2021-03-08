@@ -67,7 +67,7 @@ La migration peut être effectuée depuis deux interfaces :<br>
 - **celle de l'assistant de configuration Hosted Exchange**, uniquement si vous venez de commander un service Hosted Exchange et que vous n'avez encore rien paramétré sur ce dernier ;
 - **celle du MX Plan**, dès que vous êtes en possession d'un service E-mail Pro ou Exchange (déjà configuré ou non) et d'une adresse MX Plan que vous souhaitez migrer.
 
-> Pour rappel, avant de débuter la migration, assurez-vous qu'aucune **redirection** ou qu'aucun **répondeur** ne sont paramétrés sur votre MXplan.
+> Pour rappel, avant de débuter la migration, assurez-vous qu'aucune **redirection** ou qu'aucun **répondeur** ne soient paramétrés sur votre MXplan.
 > ![email](images/mxplan-legacy-redirect.png){.thumbnail}
 
 Une fois que vous êtes prêt, poursuivez la lecture de cette documentation selon l'interface sélectionnée. Nous vous rappelons que le délai de migration dépend de la quantité de contenu à migrer vers votre nouveau compte. Celui-ci peut varier de quelques minutes à plusieurs heures.
@@ -103,7 +103,7 @@ Confirmez enfin le mot de passe de l'adresse e-mail source (celle que vous voule
 
 Avant de commencer votre migration, si vous venez de commander votre nouvelle offre e-mail, ajoutez d'abord le nom de domaine à votre plateforme [E-mail Pro](../../emails-pro/premiere-configuration/#etape-2-ajouter-votre-nom-de-domaine) ou [Exchange](../../microsoft-collaborative-solutions/ajouter-domaine-exchange/).
 
-> Pour rappel, avant de débuter la migration, assurez-vous qu'aucune **redirection** n'est paramétrée sur votre MXplan depuis l'espace client OVHcloud.
+> Pour rappel, avant de débuter la migration, assurez-vous qu'aucune **redirection** ne soit paramétrée sur votre MXplan depuis l'espace client OVHcloud.
 > ![email](images/mxplan-new-redirect.png){.thumbnail}
 
 La migration de votre MXPlan se fera en 3 grandes étapes, **Renommer**,**Créer** et **Migrer**.
