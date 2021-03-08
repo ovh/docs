@@ -27,7 +27,7 @@ The guide sections below describe the options available when managing an SSL cer
 - [Enabling SSL on a multisite](#multisite): You can give several of your multisites a secure SSL connection, depending on the Web Hosting plan and the certificate type.
 - [Enabling SSL on your Web Hosting plan](#enablessl): Helps you activate an SSL certificate on your Web Hosting plan. This can be a free or paid certificate ordered from OVHcloud, or you can import your own SSL certificate ordered from another provider.
 - [Regenerating SSL certificates on a Web Hosting plan](#regeneratessl): Helps you regenerate an SSL certificate on your Web Hosting plan when you activate SSL on one or more multisites. 
-- [Deleting SSL certificates on a Web Hosting plan](#deletessl) Helps you delete an SSL certificate on an OVHcloud Web Hosting plan. Please note that this may pose a risk, if any of your websites are currently using the certificate you intend to delete. 
+- [Deleting SSL certificates on a Web Hosting plan](#deletessl): Helps you delete an SSL certificate on an OVHcloud Web Hosting plan. Please note that this may pose a risk, if any of your websites are currently using the certificate you intend to delete. 
 
 ### Enabling SSL on a multisite <a name="multisite"></a>
 
