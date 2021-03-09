@@ -74,7 +74,7 @@ strapi(/* {...} */).start();
 Construire le site admin UI : 
 ```sh
 cd www
-npm run build
+yarn build
 ```
 
 Créez un fichier `.htaccess` pour gérer la redirection HTTPS :
