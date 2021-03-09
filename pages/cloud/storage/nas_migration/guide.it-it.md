@@ -5,6 +5,10 @@ excerpt: Questa guida ti mostra come migrare i dati da un Nas a un altro tramite
 section: NAS
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
 **Ultimo aggiornamento: 09/02/2020**
 
 ## Obiettivo
