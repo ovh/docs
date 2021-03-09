@@ -71,7 +71,7 @@ Migracja może zostać przeprowadzona z dwóch interfejsów:<br>
 - **adres asystenta konfiguracji Hosted Exchange**, tylko jeśli zamówiłeś usługę Hosted Exchange i nie skonfigurowałeś jeszcze usługi Hosted Exchange;
 - **adres MX Plan**, jeśli posiadasz usługę E-mail Pro lub Exchange (skonfigurowaną lub nie) oraz adres MX Plan, który chcesz przenieść.
 
-> Przypominamy, że przed rozpoczęciem migracji upewnij się, że na serwerze MXplan nie ma **przekierowania* lub żadna **autoresponder**.
+> Przypominamy, że przed rozpoczęciem migracji upewnij się, że na serwerze MXplan nie ma **przekierowania** lub żadna **autoresponder**.
 > ![e-mail](images/mxplan-legacy-redirect.png){.thumbnail}
 
 Kiedy wszystko jest gotowe, przejdź do opisu operacji w wybranym interfejsie. Przypominamy, że czas migracji zależy od ilości treści, które chcesz przenieść na nowe konto. Może się on różnić od kilku minut do kilku godzin.
