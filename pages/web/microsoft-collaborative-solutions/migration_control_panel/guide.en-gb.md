@@ -18,7 +18,7 @@ OVHcloud offers several email solutions: MX Plan (stand-alone or included in a W
 
 - an MX Plan email address (via the MX Plan solution or included in an OVHcloud [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external})
 - an [Exchange](https://www.ovh.co.uk/emails/hosted-exchange/){.external} or [Email Pro](https://www.ovh.co.uk/emails/email-pro/){.external} service with at least one unconfigured account (which will appear as “@configureme.me”).
-- no redirections set on the MX Plan email address you want to migrate
+- **no redirections set on the MX Plan email address you want to migrate**
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 
 
@@ -67,6 +67,9 @@ You can migrate from two interfaces:<br>
 - **the configuration wizard for Hosted Exchange**, only if you have just ordered a Hosted Exchange service and have not yet set up anything on it.
 - **the MX Plan** solution, as soon as you have an Email Pro or Exchange service (already configured or not) and an MX Plan address that you want to migrate.
 
+> As a reminder, before starting the migration, make sure that no **redirection** or **auto-replies** are configured on your MXplan.
+> ![email](images/mxplan-legacy-redirect.png){.thumbnail}
+
 Once you are ready, follow the steps below, depending on the interface you have selected. Please note that the migration time depends on the quantity of content to be migrated to your new account. This may vary from a few minutes to several hours.
 
 > [!warning]
@@ -99,6 +102,7 @@ Finally, confirm the password for the source email address (the one you want to 
 #### 3.2 Migrating the new version of MXPlan <a name="NewVersionMxplan"></a>
 
 Before you begin your migration, if you have just ordered your new email solution, first add the domain name to your [Email Pro](../../emails-pro/first-configuration-email-pro/#step-2-add-your-domain-name) or [Exchange](../../microsoft-collaborative-solutions/adding-domain-exchange/) platform.
+
 
 Your MXPlan migration will be done in 3 main steps: **Renaming**, **Creating** and **Migrating**.
 

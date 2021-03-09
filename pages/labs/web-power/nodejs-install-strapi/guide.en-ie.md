@@ -73,6 +73,14 @@ Now let's go into the `www` folder and create the entrypoint `index.js`:
 const strapi = require('strapi');
  
 strapi(/* {...} */).start();
+
+```
+
+Build admin UI site : 
+
+```sh
+cd www
+yarn build
 ```
 
 Create also an `.htaccess` file to manage HTTPS redirection:
