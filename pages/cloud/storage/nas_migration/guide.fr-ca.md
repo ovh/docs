@@ -5,7 +5,7 @@ excerpt: Decouvrez ici comment migrer vos données d'un Nas à un autre via un p
 section: NAS
 ---
 
-**Dernière mise à jour le 09/02/2020**
+**Dernière mise à jour le 09/02/2021**
 
 ## Objectif
 
