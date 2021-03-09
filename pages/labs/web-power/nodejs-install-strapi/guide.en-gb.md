@@ -75,6 +75,13 @@ const strapi = require('strapi');
 strapi(/* {...} */).start();
 ```
 
+Build admin UI site : 
+
+```sh
+cd www
+yarn build
+```
+
 Create also an `.htaccess` file to manage HTTPS redirection:
 
 ```sh
