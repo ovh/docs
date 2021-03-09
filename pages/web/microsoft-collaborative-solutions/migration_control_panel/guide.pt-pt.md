@@ -22,7 +22,7 @@ A OVHcloud oferece várias soluções de e-mail: MX Plan (vendido isoladamente o
 
 - Ter um endereço de e-mail MX Plan (através da oferta MX Plan ou incluída numa oferta de [alojamento web da OVHcloud](https://www.ovh.pt/alojamento-partilhado/){.external}).
 - Dispor de um serviço [Exchange](https://www.ovh.pt/emails/hosted-exchange/){.external} ou [E-mail Pro](https://www.ovh.pt/emails/email-pro/){.external} com pelo menos uma conta não configurada (que aparecerá sob a forma "@configureme.me").
-- Não ter configurado um reencaminhamento para o endereço de e-mail MX Plan que pretende migrar.
+- **Não ter configurado um reencaminhamento para o endereço de e-mail MX Plan que pretende migrar.**
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 
@@ -71,6 +71,9 @@ A migração pode ser efetuada a partir de duas interfaces:<br>
 - **o do assistente de configuração Hosted Exchange**, apenas se encomendou um serviço Hosted Exchange e ainda não o configurou;
 - **do MX Plan**, quando tiver um serviço E-mail Pro ou Exchange (configurado ou não) e um endereço MX Plan que pretende migrar.
 
+> Lembre-se de que antes de iniciar a migração, certifique-se de que nenhum **reencaminhamento* ou que nenhum **atendedor automático* está configurado no seu MXplan.
+> ![email](images/mxplan-legacy-redirect.png) {.thumbnail}
+
 Quando estiver pronto, continue a ler este manual em função da interface selecionada. Lembramos que o tempo de migração depende da quantidade de conteúdo a migrar para a sua nova conta. Pode variar de alguns minutos a várias horas.
 
 > [!warning]
@@ -103,6 +106,7 @@ Por fim, confirme a palavra-passe do endereço de e-mail original (aquela que pr
 #### 3.2 Migrar a nova versão do MXPlan <a name="NouvelleVersionMxplan"></a>
 
 Antes de iniciar a migração, caso tenha encomendado a nova oferta de e-mail, adicione o domínio à plataforma [E-mail Pro](../../emails-pro/configuracao-inicial/#2-adicionar-o-dominio) ou [Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/adding-domain-exchange/).
+
 
 A migração do seu MXPlan far-se-á em 3 grandes etapas, **Renomear**, **Criar** e **Migrar**.
 
