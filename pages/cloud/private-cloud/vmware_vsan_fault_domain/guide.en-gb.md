@@ -5,7 +5,7 @@ excerpt: 'Find out how to manage vSAN fault domains'
 section: 'VMware vSphere features'
 ---
 
-**Last updated 18/01/2021**
+**Last updated 18th January 2021**
 
 ## Objective
 
@@ -23,7 +23,7 @@ The aim of this guide is to explain how vSAN fault domains work and how they are
 
 A fault domain refers to a set of servers, storage devices, or network components that are grouped within a physical location in the data centre and can be collectively assigned during a failure.
 
-With vSAN, you can group servers into vSAN fault domains, taking into account their physical location.
+With vSAN, you can group servers into vSAN fault domains, taking into account their physical location.<br>
 The advantage is that you have multiple fault domains, so you can benefit from the resilience provided by vSAN. This way, you can replicate the VMs’ objects across these server groups. You can find more details in [this guide](https://core.vmware.com/resource/vmware-vsan-design-guide#sec8-sub3).
 
 The OVHcloud servers provided to you are spread across several racks. This way, you can create vSAN fault domains based on these arrays.
