@@ -9,13 +9,14 @@ legacy_guide_number: '8355855'
 
 ## Objectif
 
-Vous pouvez configurer la réception de vos fax via votre espace client OVHcloud afin d'ajuster la configuration du télécopieur utilisé pour obtenir le meilleur rendu..
+Vous pouvez configurer la réception de vos fax via votre espace client OVHcloud afin d'ajuster la configuration du télécopieur utilisé pour obtenir le meilleur rendu.
 
 **Ce guide vous permet de comprendre le fonctionnement de l'offre Plug & Fax.**
 
 ## Prérequis
 
-- Disposer d’une ligne [Plug & Fax OVHcloud](https://www.ovhtelecom.fr/fax/plug-and-fax.xml).
+- Disposer d’une ligne [Plug & Fax OVHcloud](https://www.ovhtelecom.fr/fax/plug-and-fax.xml)
+- Disposer d'un télécopieur
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr)
 
 ## En pratique
