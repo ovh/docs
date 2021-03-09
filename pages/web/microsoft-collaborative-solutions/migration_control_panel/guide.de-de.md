@@ -107,8 +107,6 @@ Bestätigen Sie anschließend das Passwort der Quell-E-Mail-Adresse (die Adresse
 
 Wenn Sie Ihr neues E-Mail-Angebot gerade bestellt haben, fügen Sie zuerst den Domainnamen zu Ihrer [E-Mail Pro oder](../../emails-pro/erstkonfiguration/#schritt-2-ihre-domain-hinzufugen)[Exchange](../domain-zu-exchange-hinzufugen/) Plattform hinzu.
 
-> Zur Erinnerung: Vergewissern Sie sich vor Beginn der Migration, dass im OVHcloud Kundencenter keine **Weiterleitung** für Ihren MXplan eingerichtet ist.
-> ![E-Mail](images/mxplan-new-redirect.png) {.thumbnail}
 
 Die Migration Ihres MXPlan erfolgt in 3 Schritten: **Umbenennen**, **Erstellen** und **Migrieren**.
 

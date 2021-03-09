@@ -107,8 +107,6 @@ Conferma la password associata all'indirizzo email sorgente (quello che vuoi mig
 
 Se hai appena ordinato il nuovo servizio di posta, prima aggiungi il dominio alla tua piattaforma [Email Pro](../../emails-pro/prima-configurazione/) o [Exchange](../aggiungere-dominio-su-exchange/).
 
-> Ti ricordiamo che, prima di iniziare la migrazione, assicurati che dal tuo Spazio Cliente OVHcloud non venga configurata alcuna **reindirizzamento**.
-> ![email](images/mxplan-new-redirect.png){.thumbnail}
 
 La migrazione del tuo MXPlan avverrà in 3 step, **Rinommer**, **Creare** e **Migrare**.
 

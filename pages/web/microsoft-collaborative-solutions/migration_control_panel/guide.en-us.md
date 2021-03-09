@@ -95,6 +95,7 @@ Finally, confirm the password for the source email address (the one you want to 
 
 Before you begin your migration, if you have just ordered your new email solution, first add the domain name to your [Exchange](../../microsoft-collaborative-solutions/adding-domain-exchange/) platform.
 
+
 Your MXPlan migration will be done in 3 main steps: **Renaming**, **Creating** and **Migrating**.
 
 ![Exchange](images/mxplan-migration-configure-account.gif){.thumbnail}

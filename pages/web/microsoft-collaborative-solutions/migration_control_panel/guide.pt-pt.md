@@ -107,8 +107,6 @@ Por fim, confirme a palavra-passe do endereço de e-mail original (aquela que pr
 
 Antes de iniciar a migração, caso tenha encomendado a nova oferta de e-mail, adicione o domínio à plataforma [E-mail Pro](../../emails-pro/configuracao-inicial/#2-adicionar-o-dominio) ou [Exchange](https://docs.ovh.com/gb/en/microsoft-collaborative-solutions/adding-domain-exchange/).
 
-> Relembramos que, antes de iniciar a migração, certifique-se de que nenhum **reencaminhamento** está configurado no seu MXplan a partir da Área de Cliente OVHcloud.
-> ![email](images/mxplan-new-redirect.png) {.thumbnail}
 
 A migração do seu MXPlan far-se-á em 3 grandes etapas, **Renomear**, **Criar** e **Migrar**.
 

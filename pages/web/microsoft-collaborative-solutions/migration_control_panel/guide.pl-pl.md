@@ -107,8 +107,6 @@ Następnie potwierdź hasło do źródłowego konta e-mail (które chcesz przeni
 
 Przed rozpoczęciem migracji, jeśli właśnie zamówiłeś nową ofertę e-mail, dodaj najpierw nazwę domeny do platformy [E-mail Pro](../../emails-pro/pierwsza-konfiguracja-email-pro/#etap-2-dodanie-domeny) lub [Exchange](../dodanie-domeny-exchange/).
 
-> Przypominamy, że przed rozpoczęciem migracji upewnij się, że w Panelu klienta OVHcloud nie jest ustawione żadne **przekierowanie**.
-> ![e-mail](images/mxplan-new-redirect.png){.thumbnail}
 
 Migracja MXPlan przebiega 3 etapach. **Zmień nazwę**, **Utwórz** i **Migracja**.
 

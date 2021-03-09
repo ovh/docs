@@ -95,8 +95,6 @@ Confirmez enfin le mot de passe de l'adresse e-mail source (celle que vous voule
 
 Avant de commencer votre migration, si vous venez de commander votre nouvelle offre e-mail, ajoutez d'abord le nom de domaine à votre plateforme [Exchange](../ajouter-domaine-exchange/).
 
-> Pour rappel, avant de débuter la migration, assurez-vous qu'aucune **redirection** ne soit paramétrée sur votre MXplan depuis l'espace client OVHcloud.
-> ![email](images/mxplan-new-redirect.png){.thumbnail}
 
 La migration de votre MXPlan se fera en 3 grandes étapes, **Renommer**,**Créer** et **Migrer**.
 

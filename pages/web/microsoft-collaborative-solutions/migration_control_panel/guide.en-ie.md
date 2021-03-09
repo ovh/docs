@@ -67,8 +67,8 @@ You can migrate from two interfaces:<br>
 - **the configuration wizard for Hosted Exchange**, only if you have just ordered a Hosted Exchange service and have not yet set up anything on it.
 - **the MX Plan** solution, as soon as you have an Email Pro or Exchange service (already configured or not) and an MX Plan address that you want to migrate.
 
-> As a reminder, before starting the migration, make sure that no **redirection** or **auto-replies** are configured on your MXplan.
-> ![email](images/mxplan-legacy-redirect.png){.thumbnail}
+> As a reminder, before starting the migration, please ensure that no **redirections** or **external contacts** are set up on your MXplan from the OVHcloud Control Panel.
+>![email](images/mxplan-new-redirect.png) {.thumbnail}
 
 Once you are ready, follow the steps below, depending on the interface you have selected. Please note that the migration time depends on the quantity of content to be migrated to your new account. This may vary from a few minutes to several hours.
 

@@ -95,8 +95,6 @@ Finally, confirm the password for the source email address (the one you want to 
 
 Before you begin your migration, if you have just ordered your new email solution, first add the domain name to your [Exchange](../../microsoft-collaborative-solutions/adding-domain-exchange/) platform.
 
-> As a reminder, before starting the migration, make sure that no **redirection** is set up on your MXplan from the OVHcloud Control Panel.
-> ![email](images/mxplan-new-redirect.png) {.thumbnail}
 
 Your MXPlan migration will be done in 3 main steps: **Renaming**, **Creating** and **Migrating**.
 

@@ -93,8 +93,7 @@ Por último, confirme la contraseña de la dirección de correo de origen (la qu
 
 Antes de realizar la migración, si acaba de contratar la nueva solución de correo, añada el dominio a su plataforma [Exchange](../anadir-dominio-exchange/).
 
-> Le recordamos que antes de iniciar la migración no tendrá que configurar ninguna **redirección* en su MXplan desde el área de cliente de OVHcloud.
-> ![email](images/mxplan-new-redirect.png) {.thumbnail}
+
 
 La migración de su MXPlan se realizará en 3 grandes etapas: **Renombrar**, **Crear** y **Migrar**.
 
