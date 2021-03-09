@@ -45,7 +45,7 @@ No menu `Hosts and Clusters`{.action}, clique no servidor em causa e, a seguir, 
 
 ![atributo Rack](images/01.png){.thumbnail}
 
-Ainda no menu `Hosts and Clusters`{.action}, selecione o cluster em causa e clique no separador `Configura`{.action} e escolha o menu `vSAN`{.action} e depois `Fault Domains`{.action}.
+Ainda no menu `Hosts and Clusters`{.action}, selecione o cluster em causa e clique no separador `Configure`{.action} e escolha o menu `vSAN`{.action} e depois `Fault Domains`{.action}.
 
 Basta, então, arrastar o servidor para a caixa **+** dos "Fault Domains".
 

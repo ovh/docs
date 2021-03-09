@@ -41,11 +41,11 @@ Dzięki temu dane będą lepiej rozproszone i lepiej chronione w przypadku awari
 
 Każdy serwer OVHcloud dysponuje informacjami na temat szafy, w której jest hostowany.
 
-Przejdź do menu `Hosty i Klastry`{.action}, kliknij odpowiedni serwer, a następnie zakładkę `Summary`{.action}. Informacja znajduje się na poziomie "Custom Atrybuty": atrybut **Rack**.
+Przejdź do menu `Hosts and Clusters`{.action}, kliknij odpowiedni serwer, a następnie zakładkę `Summary`{.action}. Informacja znajduje się na poziomie "Custom Atrybuty": atrybut **Rack**.
 
 ![atrybut Rack](images/01.png){.thumbnail}
 
-W menu `Hosty i Klastry`{.action} wybierz odpowiedni klaster, następnie kliknij zakładkę `Konfiguracja`{.action} i wybierz menu `vSAN`{.action}, a następnie `Fault Domains`{.action}.
+W menu `Hosts and Clusters`{.action} wybierz odpowiedni klaster, następnie kliknij zakładkę `Configure`{.action} i wybierz menu `vSAN`{.action}, a następnie `Fault Domains`{.action}.
 
 Wystarczy, że przesuniesz serwer w polu **+** "Fault Domains".
 
