@@ -1,19 +1,17 @@
 ---
 title: Migrating data from one NAS to another via NFS
 slug: nas/nas-migration
-excerpt: Find out how to migrate your data from one NAS to another via an NFS share.
+excerpt: Find out how to migrate your data from one NAS to another via an NFS share
 section: NAS
 ---
 
-**Last updated 09/02/2020**
+**Last updated 9th February 2021**
 
 ## Objective
 
 This guide details how to transfer data from one NAS to another. 
 
 ## Requirements
-
-To transfer your data, you will need to:
 
 - An OVHcloud NAS / OVHcloud mini-NAS / OVHcloud HA-NAS
 - An NFS-compatible distribution
@@ -38,9 +36,9 @@ rsync -Pva /mnt/SrcNas /mnt/DstNas
 
 > [!alert]
 >
-> Warning: if you add other options to rsync, these may not be compatible with the rights and permissions system of HA-NAS.
+> Warning: if you add other options to `rsync`, these may not be compatible with the rights and permissions system of HA-NAS.
 >
 
 ## Go further
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Join our community of users on <https://community.ovh.com/en/>.
