@@ -12,7 +12,7 @@ order: 3
 
 Avec les VPS OVHcloud, vous avez la possibilité d'ajouter un espace de stockage sécurisé en tant qu'option de service. Ce stockage est séparé de la capacité de stockage interne de la solution VPS, ce qui en fait un endroit sûr pour vos sauvegardes ou autres données statiques. Le disque additionnel sera uniquement accessible à partir de l'adresse IP du serveur et les données qu'il contient ne seront pas affectées, même si le VPS est réinstallé ou doit subir une perte de données.
 
-**Ce guide explique comment activer l'option de disque additionnel et configurer l'espace de stockage pour l'utiliser avec le VPS.**
+**Découvrez comment activer l'option de disque additionnel et configurer l'espace de stockage pour l'utiliser avec le VPS.**
 
 ## Prérequis
 
@@ -30,14 +30,14 @@ Après avoir sélectionné votre VPS, cliquez sur l'onglet `Disque additionnel`{
 
 ![adddiskvps](images/disk_vps01.png){.thumbnail}
 
-Prenez note des informations de tarification, puis cliquez sur `Order`{.action}. Vous serez guidé dans le processus de commande et recevrez un e-mail de confirmation dès que le disque sera installé.
+Prenez note des informations de tarification, puis cliquez sur `Commander`{.action}. Vous serez guidé dans le processus de commande et recevrez un e-mail de confirmation dès que le disque sera installé.
 
 ### Monter le nouvel espace de stockage
 
 > [!warning]
 > OVHcloud vous fournit des services dont vous êtes responsable en ce qui concerne leur configuration et leur gestion. Vous êtes donc responsable de leur bon fonctionnement.
 >
->Si vous rencontrez des difficultés pour effectuer ces actions, veuillez contacter un prestataire de services spécialisé et/ou discuter du problème avec notre communauté sur https://community.ovh.com/. OVHcloud ne peut pas vous fournir de support technique sur ce sujet.
+>Si vous rencontrez des difficultés pour effectuer ces actions, veuillez contacter un prestataire de services spécialisé et/ou discuter du problème avec notre communauté d'utilisateurs sur https://community.ovh.com/. OVHcloud ne peut pas vous fournir de support technique sur ce sujet.
 >
 
 #### Sur un VPS Linux
@@ -113,6 +113,7 @@ Writing inode tables: done
 Creating journal (65536 blocks): done
 Writing superblocks and filesystem accounting information: done  
 ```
+
 La dernière étape consiste à monter le disque :
 
 ```
@@ -120,7 +121,7 @@ $ sudo mkdir /mnt/disk
 $ sudo mount /dev/sdb1 /mnt/disk
 ```
 
-Vous pouvez voir dans la dernière ligne que le disque additionnel est maintenant monté à `/mnt/disk` :
+Vous pouvez voir sur la dernière ligne que le disque additionnel est maintenant monté à `/mnt/disk` :
 
 ```
 $ df -h
@@ -176,7 +177,7 @@ Ajoutez la ligne ci-dessous au fichier et remplacez l'UUID par le vôtre :
 UUID=87571b68-30e1-498b-a64c-49ec5cd4f31c /mnt/disk ext4 nofail 0 0
 ```
 
-Enregistrez et quittez l'éditeur. Dès lors, le disque devrait alors être automatiquement monté après chaque redémarrage.
+Enregistrez et quittez l'éditeur. Dès lors, le disque devrait être automatiquement monté après chaque redémarrage.
 
 #### Sur un VPS Windows
 
