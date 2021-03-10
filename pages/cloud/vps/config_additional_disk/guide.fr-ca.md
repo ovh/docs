@@ -1,5 +1,5 @@
 ---
-title: 'Configurer 'un disque additionnel'
+title: 'Configurer un disque additionnel'
 excerpt: "Découvrez comment ajouter et configurer de l'espace de stockage supplémentaire sur un VPS"
 slug: configurer-disque-additionnel
 section: 'Sauvegarde'
