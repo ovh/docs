@@ -15,7 +15,7 @@ When you install Windows on a server with a hardware RAID configuration, the RAI
 
 ## Requirements
 
-- a [Dedicated Server](https://www.ovh.com/asia/dedicated_servers/){.external} with Windows installed and a hardware RAID card (LSI MegaRaid)
+- a [Dedicated Server](https://www.ovhcloud.com/asia/bare-metal/){.external} with Windows installed and a hardware RAID card (LSI MegaRaid)
 - at least two identical disks
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
 

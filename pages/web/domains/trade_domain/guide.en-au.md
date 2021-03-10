@@ -27,7 +27,7 @@ Beside [managing contacts](../../customer/managing-contacts/), to register a dom
 In the `Domains`{.action} section of the OVHcloud Control Panel, select the generic top-level domain (gTLD) you would like to change the holder of.
 
 
-![hosting](images/SS_2.PNG){.thumbnail}
+![hosting](images/SS_2.png){.thumbnail}
 
 
 ### Change the holder.

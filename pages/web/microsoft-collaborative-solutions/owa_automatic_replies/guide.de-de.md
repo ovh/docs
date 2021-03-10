@@ -65,4 +65,4 @@ In das zweite Feld kann eine alternative Nachricht für externe Absender eingege
 
 [Kalender in OWA freigeben](../exchange_2016_einen_kalender_via_owa_webmail_freigeben/)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

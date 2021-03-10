@@ -211,4 +211,4 @@ Als u een server hebt die gebruik maakt van softRAID, raden wij u aan om uw schi
 
 [Reddingsmodus - EN](https://docs.ovh.com/gb/en/dedicated/rescue_mode/){.external}
 
-Ga in gesprek met andere communityleden op <https://community.ovh.com/en>.
+Ga in gesprek met andere communityleden op <https://community.ovh.com/en/>.

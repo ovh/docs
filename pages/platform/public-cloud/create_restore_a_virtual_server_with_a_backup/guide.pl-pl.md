@@ -68,4 +68,4 @@ Wybierz wówczas w rubryce `Image`{.action} (Obraz) ten, który zawiera kopię z
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>

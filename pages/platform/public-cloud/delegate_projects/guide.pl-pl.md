@@ -61,4 +61,4 @@ Osoby z kontami OVHcloud dodanymi w ten sposób mogą zobaczyć projekt w swoich
 
 [Pierwsze kroki z instancją Public Cloud](https://docs.ovh.com/pl/public-cloud/rozpoczecie_pracy_z_instancja_public_cloud/)
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>

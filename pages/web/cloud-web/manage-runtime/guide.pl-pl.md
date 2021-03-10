@@ -144,4 +144,4 @@ Po dokonaniu wyboru wykonaj poszczególne kroki aż do zakończenia operacji.
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
