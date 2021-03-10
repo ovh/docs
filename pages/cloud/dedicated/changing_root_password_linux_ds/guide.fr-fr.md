@@ -88,8 +88,8 @@ Dans l'exemple ci-dessus, la partition système est /dev/hda1.
 > [!primary]
 >
 > Si votre serveur dispose d'une configuration RAID, vous devez monter votre volume raid :
-- avec un RAID logiciel, votre partition racine sera `/dev/mdX` ;
-- avec un RAID matériel, votre partition racine sera `/dev/sdX`.
+> - avec un RAID logiciel, votre partition racine sera `/dev/mdX` ;
+> - avec un RAID matériel, votre partition racine sera `/dev/sdX`.
 >
 
 #### Étape 2 : monter la partition système
