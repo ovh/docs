@@ -15,7 +15,7 @@ Il peut s'avérer nécessaire de changer le mot de passe root (ou celui de votre
 - Vous pouvez toujours vous connecter via SSH
 - Vous ne pouvez pas vous connecter via SSH car vous avez perdu votre mot de passe
 
-**Ce guide explique comment modifier votre mot de passe administrateur en fonction de la situation initiale.**
+**Découvrez comment modifier votre mot de passe administrateur en fonction de la situation initiale.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
