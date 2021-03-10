@@ -98,4 +98,4 @@ Bestätigen Sie nun die Stornierung der Bestellung, indem Sie den Haken bei `Ja,
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -68,4 +68,4 @@ Quindi, nella sezione`Immagine`{.action}, seleziona quella del backup da riprist
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en>
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>

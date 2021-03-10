@@ -41,7 +41,7 @@ There are three status types that may appear:
 
 |Status|Description|
 |---|---|
-|Enabled|An SSL certificate has already been activated for this multisite. However, if your website is not available via HTTPS, please refer to the instructions listed in our guide on [Activating HTTPS on your website with an SSL certificate](../../activate-https-website-ssl/).|
+|Enabled|An SSL certificate has already been activated for this multisite. However, if your website is not available via HTTPS, please refer to the instructions listed in our guide on [Activating HTTPS on your website with an SSL certificate](../activate-https-website-ssl/).|
 |To generate|An SSL certificate has been activated for this website, but it is still not technically active. To activate the SSL certificate properly, you will need to [regenerate an SSL certificate on a Web Hosting plan](#regeneratessl), so that it includes the new domain names.|
 |Disabled|An SSL certificate has not been activated for this multisite. To activate it, follow the steps listed below.|
 

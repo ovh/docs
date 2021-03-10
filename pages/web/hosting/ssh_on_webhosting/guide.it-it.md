@@ -117,4 +117,4 @@ A seconda della versione di PHP che vuoi utilizzare, potrebbe essere necessario 
 
 [Configurare il file .ovhconfig di un hosting Web](../configurare-file-ovhconfig/)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

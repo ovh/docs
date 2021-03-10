@@ -81,4 +81,4 @@ Kopie zapasowe będą dostępne w rubryce `Instance Backup`{.action} (Kopia zapa
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en>.
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

@@ -125,5 +125,5 @@ Teraz możesz już edytować pliki Office 365 bezpośrednio w interfejsie WWW Tw
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en>.
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
 

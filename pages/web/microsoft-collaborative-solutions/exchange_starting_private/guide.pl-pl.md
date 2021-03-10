@@ -101,4 +101,4 @@ Aby dodać pierwszą nazwę domeny do platformy i rozpocząć konfigurowanie kon
 
 [Dodanie domeny do usługi Exchange](https://docs.ovh.com/pl/microsoft-collaborative-solutions/dodanie-domeny-exchange/) 
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
