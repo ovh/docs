@@ -5,11 +5,22 @@ excerpt: 'Comment activer et utiliser le mode rescue sur un serveur dédié'
 section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 14/01/2021**
+**Dernière mise à jour le 09/02/2021**
 
 ## Objectif
 
 Le mode rescue est un outil de votre serveur dédié. Il vous permet de démarrer sur un système d’exploitation temporaire, dans le but de diagnostiquer et de résoudre les problèmes.
+
+Le mode rescue est généralement adapté aux tâches suivantes :
+
+- Réinitialisation du mot de passe root
+- Diagnostic des problèmes réseau
+- Réparation d'un système d'exploitation défectueux
+- Correction d'une configuration incorrecte d'un pare-feu logiciel
+- Test des performances des disques
+- Test du processeur et de la mémoire RAM
+
+Prenez soin d'effectuer une sauvegarde de vos données si vous ne disposez pas encore de sauvegardes récentes.
 
 **Découvrez comment activer et utiliser le mode rescue de votre serveur.**
 
@@ -106,6 +117,24 @@ rescue:~# mount /dev/hda1 /mnt/
 >
 
 Pour quitter le mode rescue, redéfinissez le mode de démarrage sur `Booter sur le disque dur`{.action} dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et redémarrez le serveur en ligne de commande.
+
+### Utilisation de l'interface Web du mode rescue (« rescue64-pro » uniquement)
+
+Une fois le serveur redémarré, vous pouvez accéder à l'interface Web en entrant `your_server_IP:81` dans la barre d'adresses de votre navigateur. Avec https, utilisez le port *444* à la place. Par exemple :
+
+```sh
+https://169.254.10.20:444
+```
+
+Si vous avez déjà sécurisé vos données, vous pouvez utiliser l'interface Web du mode de récupération pour tester les composants suivants :
+
+- **Test du disque** : Vérifie leur intégrité via SMART.
+- **Processeurs** : Vérifie que le processeur fonctionne normalement (cette opération peut prendre un certain temps).
+- **Partitions** : Vérifie les états des lecteurs.
+- **Mémoire** : Vérifie la mémoire RAM installée sur le serveur (cette opération peut prendre un certain temps).
+- **Réseau** : Vérifie la connexion à un système de référence interne OVHcloud ainsi que la connexion à votre navigateur.
+
+![Interface Web pour le mode rescue](images/rescue-mode-04.png){.thumbnail}
 
 ### Windows <a name="windowsrescue"></a>
 
