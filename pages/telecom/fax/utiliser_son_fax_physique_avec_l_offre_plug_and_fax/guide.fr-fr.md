@@ -5,7 +5,7 @@ excerpt: Découvrez comment configurer l’offre Plug & Fax pour utiliser un fax
 legacy_guide_number: '8355855'
 ---
 
-**Dernière mise à jour le 23/02/2021**
+**Dernière mise à jour le 11/03/2021**
 
 ## Objectif
 
@@ -21,7 +21,7 @@ Vous pouvez configurer la réception de vos fax via votre espace client OVHcloud
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `Téléphonie`{.action} puis sur le groupe où se trouve votre ligne Plug And Fax. Sélectionnez la ligne Plug & Fax.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `Téléphonie`{.action} puis sur le groupe où se trouve votre ligne Plug & Fax. Sélectionnez la ligne Plug & Fax.
 
 ## En pratique
 
@@ -35,22 +35,22 @@ Le télécopieur utilisé se branche sur la prise RJ11 « **Phone 1** » de votr
 
 Dans le cadre de l'utilisation de l'offre Plug & Fax, nous vous conseillons d'adapter la configuration de votre télécopieur. Vérifiez les paramètres suivants :
 
-- **La vitesse de transmission** : 9600 bauds maximum.
-- **Décroché automatique** : À activer au bout de 2 ou 3 sonneries maximum.
-- **La correction d'erreur** : À désactiver.
+- **La vitesse de transmission** : 9600 bauds/sec maximum.
+- **Décroché automatique** : à activer au bout de 2 ou 3 sonneries maximum.
+- **La correction d'erreur** : à désactiver.
 
 Sur certains télécopieurs, la correction d'erreur peut être appelée **ECM** ou **EMC**.
 
 ### Configurer le mode de réception des fax
 
-L'offre Plug & Fax permet d'utiliser deux modes de réception :
+L'offre Plug & Fax permet d'utiliser deux modes de réception, au choix :
 
-- soit uniquement sur le télécopieur;
-- soit uniquement par e-mail ou via le logiciel Ecofax.
+- uniquement sur le télécopieur;
+- uniquement par e-mail ou via le logiciel Ecofax.
 
-La sélection de l'un ou l'autre des modes s'effectue via la configuration de renvois d'appels sur votre ligne Plug & Fax.
+La sélection d'un de ces deux modes s'effectue via les renvois d'appels sur votre ligne Plug & Fax.
 Pour y accéder, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action}. 
-<br>Cliquez ensuite sur `Téléphonie`{.action} puis sur le groupe où se trouve votre ligne Plug And Fax. Sélectionnez la ligne concernée.
+<br>Cliquez ensuite sur `Téléphonie`{.action} puis sur le groupe où se trouve votre ligne Plug & Fax. Sélectionnez la ligne concernée.
 <br>Cliquez sur `Gestion des appels`{.action} puis sur `Renvoi d'appel`{.action}
 
 ![Gestion des appels](images/gestion_des_appels.png){.thumbnail}
@@ -92,7 +92,7 @@ Pour configurer les notifications par e-mail de votre ligne, reportez vous au gu
 Avec l'offre Plug & Fax, vous pouvez modifier la présentation du numéro lors des appels sortants.
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action}. 
-<br>Cliquez ensuite sur `Téléphonie`{.action} puis sur le groupe où se trouve votre ligne Plug And Fax. Sélectionnez la ligne concernée.
+<br>Cliquez ensuite sur `Téléphonie`{.action} puis sur le groupe où se trouve votre ligne Plug & Fax. Sélectionnez la ligne concernée.
 
 <br>Cliquez sur `Gestion des appels`{.action} puis sur `Présentation du numéro`{.action}
 
