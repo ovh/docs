@@ -41,7 +41,7 @@ Annota le informazioni relative alla tariffazione e clicca su `Ordina`{.action}.
 > [!warning]
 > OVHcloud fornisce i servizi di cui sei responsabile per la configurazione e la gestione. Sei quindi responsabile del loro corretto funzionamento.
 >
->In caso di difficoltà nell'effettuare queste azioni, contatta un fornitore di servizi specializzato e/o discuta il problema con la nostra Community di utenti all'indirizzo https://community.ovh.com/. OVHcloud non può fornirti assistenza tecnica su questo argomento.
+>In caso di difficoltà nell'effettuare queste azioni, contatta un fornitore di servizi specializzato e/o discuta il problema con la nostra Community di utenti all'indirizzo https://community.ovh.com/en/. OVHcloud non può fornirti assistenza tecnica su questo argomento.
 >
 
 #### Su un VPS Linux
@@ -169,7 +169,7 @@ $ sudo blkid
 /dev/sdb1: UUID="87571b68-30e1-498b-a64c-49ec5cd4f31c" TYPE="ext4" PARTUUID="c965cbdf-01"
 ```
 
-Apri/`etc/fstab` con un editor di testo:
+Apri `etc/fstab` con un editor di testo:
 
 ```
 $ sudo nano /etc/fstab
@@ -297,7 +297,7 @@ Assegna un nome al volume (facoltativo) e conferma le opzioni di formattazione c
 
 ![winmountdiskvps](images/disk_vps_win11.png){.thumbnail}
 
-Nell'ultima finestra, clicca su `Terminer`{.action} per formattare il disco. Dopo l'operazione sarà disponibile come lettore nell'Explorer di File.
+Nell'ultima finestra, clicca su `Terminare`{.action} per formattare il disco. Dopo l'operazione sarà disponibile come lettore nell'Explorer di File.
 
 ### Disattiva l'opzione di disco aggiuntivo
 

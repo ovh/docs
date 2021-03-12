@@ -30,7 +30,7 @@ Loggen Sie sich [in Ihr OVHcloud](https://www.ovh.com/auth/?action=gotomanager&f
 
 ### Zusätzliche Festplatte bestellen
 
-Nachdem Sie Ihren VPS ausgewählt haben, klicken Sie im horizontalen Menü auf den `Tab`{.action} zusätzliche Festplatte. Klicken Sie auf `Eine zusätzliche`{.action} Festplatte bestellen und wählen Sie in der angezeigten Auswahl eine Festplattengröße aus.
+Nachdem Sie Ihren VPS ausgewählt haben, klicken Sie im horizontalen Menü auf den Tab `zusätzliche Festplatte`{.action}. Klicken Sie auf `Eine zusätzliche Festplatte`{.action} bestellen und wählen Sie in der angezeigten Auswahl eine Festplattengröße aus.
 
 ![adddiskvps](images/disk_vps01.png){.thumbnail}
 
@@ -62,9 +62,9 @@ sda 8:0 0 80G 0 disk
 sdb 8:16 0 50G 0 disk
 ```
 
-In diesem Beispiel wird die zusätzliche Festplatte als sdb `bezeichnet`.
+In diesem Beispiel wird die zusätzliche Festplatte als `sdb` bezeichnet.
 
-Führen `Sie` fdisk aus, um eine Partition auf der Festplatte zu erstellen. Wenn Sie dazu eingeladen sind, geben Sie `` n für eine neue Partition ein und akzeptieren Sie die folgenden Standardwerte, indem Sie auf Eingehend (" ↩") klicken. Verwenden Sie den Befehl `w`, um die Änderungen auf die Festplatte zu schreiben.
+Führen `Sie` fdisk aus, um eine Partition auf der Festplatte zu erstellen. Wenn Sie dazu eingeladen sind, geben Sie `n`  für eine neue Partition ein und akzeptieren Sie die folgenden Standardwerte, indem Sie auf Eingehend (" ↩") klicken. Verwenden Sie den Befehl `w`, um die Änderungen auf die Festplatte zu schreiben.
 
 ```
 $ sudo fdisk /dev/sdb
@@ -101,7 +101,7 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-Nun, da die `sdb` Partition erstellt wurde, können Sie diese mit ext4 formatieren:
+Nun, da die `sdb1` Partition erstellt wurde, können Sie diese mit ext4 formatieren:
 
 ```
 $ sudo mkfs.ext4 /dev/sdb1
@@ -187,7 +187,7 @@ Registrieren und verlassen Sie den Editor. Daher sollte die Festplatte nach jede
 
 Wenn ein Windows-Betriebssystem auf Ihrem VPS installiert ist, stellen Sie eine Remotedesktop-Verbindung (RDP) mit Ihrem Server her.
 
-Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf `Menu Start`{.action} und öffnen Sie das `Festplattenverwaltungswerkzeug`{.action}.
+Wenn Sie eingeloggt sind, klicken Sie mit der rechten Maustaste auf `Startmenü`{.action} und öffnen Sie das `Festplattenverwaltungswerkzeug`{.action}.
 
 ![winmountdiskvps](images/disk_vps_win01.png){.thumbnail}
 

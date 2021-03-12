@@ -199,7 +199,7 @@ Se o disco estiver marcado como fora de ligação, deve ser iniciado. Para isso,
 
 ##### **Iniciar o disco na ferramenta "Gestão dos discos"** <a name="initDiskManagement"></a>
 
- Clique com o botão direito do rato no disco e selecione `online`{.action}. 
+ Clique com o botão direito do rato no disco e selecione `Online`{.action}. 
 
 ![winmountdiskvps](images/disk_vps_win03.png){.thumbnail}
 

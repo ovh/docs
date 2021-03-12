@@ -20,7 +20,7 @@ Wraz z ofertą VPS OVHcloud możesz dodać bezpieczną przestrzeń dyskową jako
 
 ## Wymagania początkowe
 
-- Posiadanie serwera [VPS](https://www.ovhcloud.com/fr/vps/) na koncie OVHcloud
+- Posiadanie [serwera VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
 - Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Dostęp administracyjny przez SSH lub RDP do serwera VPS
 
@@ -30,7 +30,7 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 ### Zamów dodatkowy dysk
 
-Po zaznaczeniu serwera VPS kliknij kartę Dodatkowy `dysk`{.action} w menu poziomym. Kliknij polecenie `Zamów dodatkowy`{.action} dysk i wybierz rozmiar dysku w wyborze, który się wyświetli.
+Po zaznaczeniu serwera VPS kliknij kartę `Dodatkowy dysk`{.action} w menu poziomym. Kliknij polecenie `Zamów dodatkowy dysk`{.action} i wybierz rozmiar dysku w wyborze, który się wyświetli.
 
 ![adddiskvps](images/disk_vps01.png){.thumbnail}
 
@@ -150,7 +150,7 @@ tmpfs 385M 0 385M 0% /run/user/1000
 
 > [!primary]
 >
-Poprzedni etap nie jest trwały, ponieważ dysk zostanie odłączony, jeśli serwer VPS zostanie zrestartowany. Aby zautomatyzować proces montowania, plik "fstab" musi zostać zmodyfikowany.
+Poprzedni etap nie jest trwały, ponieważ dysk zostanie odłączony, jeśli serwer VPS zostanie zrestartowany. Aby zautomatyzować proces montowania, plik `fstab` musi zostać zmodyfikowany.
 >
 
 Po pierwsze, pobierz UID (ID bloku) urządzenia:
