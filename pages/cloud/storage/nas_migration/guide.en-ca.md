@@ -1,31 +1,32 @@
 ---
-title: Data migration from one NAS to another via NFS
+title: Migrating data from one NAS to another via NFS
 slug: nas/nas-migration
-excerpt: Find out here how to migrate your data from one NAS to another via NFS.
+excerpt: Find out how to migrate your data from one NAS to another via an NFS share
 section: NAS
 ---
 
+**Last updated 9th February 2021**
+
+## Objective
+
+This guide details how to transfer data from one NAS to another. 
 
 ## Requirements
 
-This guide explains how to transfer data from one NAS to another. In order to transfer your data, you need:
+- An OVHcloud NAS / OVHcloud mini-NAS / OVHcloud HA-NAS
+- An NFS-compatible distribution
+- You need to have mounted your NAS beforehand by following the guide to [mount your NAS via an NFS](https://docs.ovh.com/ca/en/storage/nas-nfs/){.external} share.
 
-- An OVHcloud NAS / miniNAS / HA-NAS
-- NFS compatible distribution
-- a NAS mounted beforehand by following the guide to [mounting your NAS via NFS share](https://docs.ovh.com/ca/en/storage/nas-nfs/){.external}.
-
-
-## Settings
+## Instructions
 
 Compatibility: Debian 6/7/8 & Ubuntu 12/13/14
 
+To transfer your data, we will use the `rsync` command. There are several ways to transfer your data. It's up to you to use one over another.
 
-There are several solutions to transfer your data. This example will use the "rsync" command. However, you can choose another method for the data transfer.
-
-The example command below allows you to transfer your data from a Source mount point to a Destination mount point.
+The following example moves your data from a Source mount point to a Destination mount point.
 
 ```sh
-rsync -Pvah /mnt/SrcNas /mnt/DstNas
+rsync -Pva /mnt/SrcNas /mnt/DstNas
 ```
 
 |Argument|Description|
@@ -35,5 +36,9 @@ rsync -Pvah /mnt/SrcNas /mnt/DstNas
 
 > [!alert]
 >
-> Be careful if you add other options to rsync, they may not be compatible with the HA-NAS rights and permissions system.
+> Warning: if you add other options to `rsync`, these may not be compatible with the rights and permissions system of HA-NAS.
 >
+
+## Go further
+
+Join our community of users on <https://community.ovh.com/en/>.

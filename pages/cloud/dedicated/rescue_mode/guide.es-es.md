@@ -61,7 +61,7 @@ A continuación, acceda al servidor en línea de comandos o a través de una her
 
 por ejemplo,
 
-```sh
+```
 ssh root@your_server_IP
 root@your_server_password:
 ```
@@ -77,7 +77,7 @@ Para realizar la mayoría de los cambios en el servidor por SSH en modo de resca
 
 Para montar las particiones, utilice el comando `mount` por SSH. Previamente deberá mostrar la lista de las particiones para conocer el nombre de la partición que quiera montar. A continuación ofrecemos algunos ejemplos de código:
 
-```sh
+```
 rescue:~# fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
@@ -99,7 +99,7 @@ Device Boot Start End Blocks Id System
 
 Una vez que haya identificado el nombre de la partición que quiere montar, utilice el siguiente comando:
 
-```sh
+```
 rescue:~# mount /dev/hda1 /mnt/
 ```
 

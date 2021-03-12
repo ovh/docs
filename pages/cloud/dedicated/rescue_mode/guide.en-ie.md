@@ -67,7 +67,7 @@ You will then need to access your server via the command line or an SSH tool, us
 
 For example:
 
-```sh
+```
 ssh root@your_server_IP
 root@your_server_password:
 ```
@@ -82,7 +82,7 @@ For most changes you make to your server via SSH while in rescue mode, you will 
 
 You can mount partitions using the `mount` command in SSH. Firstly, list your partitions in order to retrieve the name of the partition you need to mount. You can refer to the following code examples:
 
-```sh
+```
 rescue:~# fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
@@ -104,7 +104,7 @@ Device Boot Start End Blocks Id System
 
 Once you have found the name of the partition you want to mount, use the command below:
 
-```sh
+```
 rescue:~# mount /dev/hda1 /mnt/
 ```
 
@@ -117,11 +117,33 @@ rescue:~# mount /dev/hda1 /mnt/
 
 To exit rescue mode, change the boot mode back to `Boot from the hard disk`{.action} in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and restart the server from the command line.
 
+#### Mounting a datastore
+
+You can mount a VMware datastore in a similar way as described in the previous segment. Firstly, install the necessary package:
+
+```
+rescue:~# apt-get update && apt-get install vmfs-tools
+```
+
+Then list your partitions in order to retrieve the name of the datastore partition:
+
+```
+rescue:~# fdisk -l
+```
+
+Now mount the partition with the following command, replacing `sdbX` with the value identified in the previous step:
+
+```
+rescue:~# vmfs-fuse /dev/sdbX /mnt
+```
+
+To exit rescue mode, change the boot mode back to `Boot from the hard disk`{.action} in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and restart the server from the command line.
+
 ### Using the rescue mode web interface ("rescue64-pro" only)
 
 Once your server has rebooted, you can access the web interface by entering `your_server_IP:81` into your browsers address bar. With https, use port *444* instead. For example:
 
-```sh
+```
 https://169.254.10.20:444
 ```
 
