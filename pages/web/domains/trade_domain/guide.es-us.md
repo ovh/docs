@@ -26,7 +26,7 @@ Además de [gestionar los contactos](https://docs.ovh.com/us/es/customer/gestion
 En la sección `Dominios`{.action}, seleccione el nombre del dominio genérico (gTLD) para el que desee modificar el propietario.
 
 
-![hosting](images/SS_2.PNG){.thumbnail}
+![hosting](images/SS_2.png){.thumbnail}
 
 
 ### Cambiar el propietario

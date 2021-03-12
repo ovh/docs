@@ -53,5 +53,5 @@ Consulte o guia de [criação de um endereço de e-mail com a oferta MX Plan](..
 
 [Criar um endereço de e-mail com a oferta MX Plan](../../emails/e-mail_partilhado_guia_de_criacao_de_um_endereco_de_e-mail/){.external}
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en>
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>
 

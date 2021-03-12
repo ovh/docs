@@ -126,4 +126,4 @@ Po uzupełnieniu informacji w oknie w lewym górnym rogu kliknij przycisk `OK`{.
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -26,7 +26,7 @@ Per registrare un dominio, oltre alla [gestione dei contatti](https://docs.ovh.c
 Dalla rubrica `Domini`{.action} seleziona il dominio generico (gTLD) di cui intendi cambiare il proprietario.
 
 
-![hosting](images/SS_2.PNG){.thumbnail}
+![hosting](images/SS_2.png){.thumbnail}
 
 
 ### Cambio del proprietario

@@ -33,8 +33,8 @@ Per visualizzare le informazioni relative al tuo VPS, accedi al tuo [Spazio Clie
 
 Questa dashboard contiene informazioni importanti sul tuo servizio e ti consente di effettuare le operazioni di base. Comparirà in modo diverso a seconda della gamma del tuo VPS. 
 
-- L'indirizzo di riferimento inizia sempre con *vpsXXXX.ovh.net* (dove le*X*sono una serie di cifre). 
-- Se gestisci un VPS meno recente, noterai che il suo indirizzo di riferimento è strutturato diversamente: *vpsXXXX.ovh.net* (dove le*X*sono una serie di numeri). 
+- L'indirizzo di riferimento inizia sempre con *vps-XXXXXXX.vps.ovh.net* (dove le *X* sono una serie di cifre). 
+- Se gestisci un VPS meno recente, noterai che il suo indirizzo di riferimento è strutturato diversamente: *vpsXXXX.ovh.net* (dove le *X* sono una serie di numeri). 
 
 Per l’attuale gamma di VPS, prosegui nella lettura di questa guida, alla sezione: **Iniziare a utilizzare un VPS (gamma attuale)**. 
 

@@ -22,7 +22,7 @@ OVHcloud oferuje kilka rozwiązań poczty elektronicznej: MX Plan (sprzedawany s
 
 - Posiadanie konta e-mail MX Plan (w ramach pakietu MX Plan lub zawartego w pakiecie [hostingowym OVHcloud](https://www.ovh.pl/hosting/){.external})
 - Posiadanie usługi [Exchange](https://www.ovh.pl/emaile/hosted-exchange/){.external} lub [E-mail Pro](https://www.ovh.pl/emaile/email-pro/){.external} z co najmniej jednym nieskonfigurowanym kontem (pojawiającym się w postaci "@configureme.me")
-- Nie skonfigurowałeś przekierowania na adres e-mail MX Plan, który chcesz przenieść.
+- **Nie skonfigurowałeś przekierowania na adres e-mail MX Plan, który chcesz przenieść.**
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 
@@ -71,6 +71,9 @@ Migracja może zostać przeprowadzona z dwóch interfejsów:<br>
 - **adres asystenta konfiguracji Hosted Exchange**, tylko jeśli zamówiłeś usługę Hosted Exchange i nie skonfigurowałeś jeszcze usługi Hosted Exchange;
 - **adres MX Plan**, jeśli posiadasz usługę E-mail Pro lub Exchange (skonfigurowaną lub nie) oraz adres MX Plan, który chcesz przenieść.
 
+> Przypominamy, że przed rozpoczęciem migracji upewnij się, że na serwerze MXplan nie ma **przekierowania** lub żadna **autoresponder**.
+> ![e-mail](images/mxplan-legacy-redirect.png){.thumbnail}
+
 Kiedy wszystko jest gotowe, przejdź do opisu operacji w wybranym interfejsie. Przypominamy, że czas migracji zależy od ilości treści, które chcesz przenieść na nowe konto. Może się on różnić od kilku minut do kilku godzin.
 
 > [!warning]
@@ -103,6 +106,7 @@ Następnie potwierdź hasło do źródłowego konta e-mail (które chcesz przeni
 #### 3.2 Przeniesienie nowej wersji MXPlan <a name="NouvelleVersionMxplan"></a>
 
 Przed rozpoczęciem migracji, jeśli właśnie zamówiłeś nową ofertę e-mail, dodaj najpierw nazwę domeny do platformy [E-mail Pro](../../emails-pro/pierwsza-konfiguracja-email-pro/#etap-2-dodanie-domeny) lub [Exchange](../dodanie-domeny-exchange/).
+
 
 Migracja MXPlan przebiega 3 etapach. **Zmień nazwę**, **Utwórz** i **Migracja**.
 

@@ -27,7 +27,7 @@ Oprócz [zarządzania kontaktami, zarejestrowanie domeny wymaga podania informac
 W sekcji `Domeny`{.action} wybierz domenę globalną (gTLD), dla której chcesz zmienić właściciela.
 
 
-![hosting](images/SS_2.PNG){.thumbnail}
+![hosting](images/SS_2.png){.thumbnail}
 
 
 ### Zmiana właściciela

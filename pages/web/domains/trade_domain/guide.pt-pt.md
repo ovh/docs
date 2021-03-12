@@ -26,7 +26,7 @@ Para além da [gestão dos contactos](https://docs.ovh.com/pt/customer/gestao_do
 Na rubrica `Domínios`{.action}, selecione o nome de domínio genérico (gTLD) para o qual pretende alterar o titular.
 
 
-![alojamento](images/SS_2.PNG){.thumbnail}
+![alojamento](images/SS_2.png){.thumbnail}
 
 
 ### Alteração de titular

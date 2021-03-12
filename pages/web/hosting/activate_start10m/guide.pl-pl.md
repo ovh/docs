@@ -52,7 +52,7 @@ Zapoznaj się z przewodnikiem na temat [tworzenia konta e-mail MX Plan](https://
 
 [Tworzenie konta e-mail w ramach usługi MX Plan](https://docs.ovh.com/pl/emails/przewodnik_na_temat_zakladania_adresu_e-mail/){.external}
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en>
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>
 
 
 

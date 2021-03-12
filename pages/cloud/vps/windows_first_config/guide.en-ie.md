@@ -50,7 +50,7 @@ Open the `Administrative Tools`{.action} of the `System and Security`{.action} c
 
 ![Admin](images/windows4.png){.thumbnail}
 
-Here you can enable the respective `ICMP` and `Remote Resktop` rules (right-click on the rule and select `Enable rule`{.action} in the context menu).
+Here you can enable the respective `ICMP` and `Remote Desktop` rules (right-click on the rule and select `Enable rule`{.action} in the context menu).
 
 ![Enabled](images/windows5.png){.thumbnail}
 

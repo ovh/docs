@@ -139,4 +139,4 @@ sudo systemctl force-reload memcached
 ## Sprawdź również
 
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>.
+Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

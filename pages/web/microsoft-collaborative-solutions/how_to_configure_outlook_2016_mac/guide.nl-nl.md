@@ -65,4 +65,4 @@ OVH biedt ook een web-app met [teamwerk-functies](https://www.ovh.com/nl/emails/
 
 [Configuratie van uw E-mail Pro-account in Outlook 2016 voor Mac](https://docs.ovh.com/nl/emails-pro/configuratie-outlook-2016-mac/){.external}
 
-Ga in gesprek met andere communityleden op <https://community.ovh.com/en>.
+Ga in gesprek met andere communityleden op <https://community.ovh.com/en/>.

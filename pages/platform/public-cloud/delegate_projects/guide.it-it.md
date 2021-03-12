@@ -57,4 +57,4 @@ Gli account OVHcloud aggiunti seguendo questa procedura potranno visualizzare il
 
 [Iniziare a utilizzare un’istanza Public Cloud](https://docs.ovh.com/it/public-cloud/come_utilizzare_la_tua_istanza_public_cloud/)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en>
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>

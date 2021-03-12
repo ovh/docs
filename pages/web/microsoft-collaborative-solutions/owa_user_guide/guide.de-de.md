@@ -208,4 +208,4 @@ Sie können dann die Baumstruktur „Optionen“ links auf der Seite durchsuchen
 
 [Kontaktgruppen erstellen](../exchange_20132016_verwendung_der_gruppen_mailinglisten/)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
