@@ -1,5 +1,5 @@
 ---
-title: 'Zabezpieczenie serwera VPS
+title: Zabezpieczenie serwera VPS
 slug: porady-zabezpieczenie-vps
 section: 'Pierwsze kroki'
 excerpt: 'Odkryj podstawowe elementy umożliwiające zabezpieczenie serwera VPS'
