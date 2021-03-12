@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment activer et utiliser le service Backup Storage'
 section: Stockage
 ---
 
-**Dernière mise à jour le 17/06/2019**
+**Dernière mise à jour le 12/03/2021**
 
 ## Objectif
 
