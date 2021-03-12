@@ -1,11 +1,11 @@
 ---
 title: 'Using backup storage on a dedicated server'
 slug: services-backup-storage
-excerpt: 'This guide explains how to enable the Backup Storage functionality and how to use it.'
+excerpt: 'Find out how to enable the Backup Storage functionality and how to use it'
 section: Server management
 ---
 
-**Last updated 5th January, 2021**
+**Last updated 12th March 2021**
 
 ## Objective
 
@@ -20,13 +20,13 @@ OVHcloud provides backup space for storing your data and configuration files. Th
 ## Requirements
 
 * Access to a [dedicated server](https://www.ovh.co.uk/dedicated_servers/){.external}
-* Access to your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+* Access to your [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
 ### Activate Backup storage
 
-Log into your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab, and click the `Activate the Backup Storage`{.action} button.
+Log into your [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and go to your server's page. Then select the `Backup storage`{.action} tab, and click the `Activate the Backup Storage`{.action} button.
 
 ![Activate Backup storage](images/backup-storage-01-edited.png){.thumbnail}
 
@@ -39,11 +39,11 @@ You will now receive an activation email, and your backup storage will be config
 
 ### Set up access control
 
-Access to your Backup storage is restricted by IP address using an access control list (ACL). Only IPs in your OVH Account will be able to access the Storage, once they are whitelisted in the ACL. They The other protocols (NFS and CIFS) are not authorised by default. To authorise them, you will need to create an ACL.
+Access to your Backup storage is restricted by IP address using an access control list (ACL). Only IPs in your OVHcloud Account will be able to access the Storage, once they are whitelisted in the ACL. They The other protocols (NFS and CIFS) are not authorised by default. To authorise them, you will need to create an ACL.
 
 #### Add backup access
 
-Log into your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab, and click the `Add an access button`{.action}.
+Log into your [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and go to your server's page. Then select the `Backup storage`{.action} tab, and click the `Add an access button`{.action}.
 
 ![Add backup access](images/backup-storage-03-edited.png){.thumbnail}
 
@@ -51,7 +51,7 @@ You will then need to select the IP block that you want to authorise. After sele
 
 > [!primary]
 >
-> You can only authorise IP blocks in your OVH account to access the backup storage.
+> You can only authorise IP blocks in your OVHcloud account to access the backup storage.
 >
 
 ![Add backup access](images/backup-storage-07-edited.png){.thumbnail}
@@ -80,9 +80,45 @@ And then click to confirm.
 
 Access to the backup storage will now be revoked for that IP block.
 
+#### Accessing Backup Storage from an IP address outside of your account <a name="accessbackup"></a>
+
+Access to the storage space of your dedicated server is restricted to IP addresses linked to your OVHcloud customer acccount.
+
+In order to add other IP addresses from which to access, you can use the OVHcloud API. This will allow you to retrieve your backup data from a different service.
+
+> [!warning]
+> Only OVHcloud IP addresses can be authorised.
+>
+
+Log in to [api.ovh.com](https://api.ovh.com/) and use the following call:
+
+> [!api]
+>
+> @api {POST} /dedicated/server/{serviceName}/features/backupFTP/access
+>
+
+Fill in the fields as follows:
+
+- `serviceName`: The service name of your server
+- `cifs`: check if necessary
+- `ftp`: check if necessary
+- `ipBlock`: enter the IP address that will have access in the form `1.2.3.4/32`
+- `nfs`: check if necessary
+
+![apiacladdress](images/aclapi01.png){.thumbnail}
+
+To verify that your IP address is authorised, use the following call:
+
+> [!api]
+>
+> @api {GET} /dedicated/server/{serviceName}/features/backupFTP/access
+>
+
+![apiacladdress](images/aclapi02.png){.thumbnail}
+
 ### Reset your password
 
-Log into your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab and click the `Forgotten your password`{.action} button.
+Log into your [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and go to your server's page. Then select the `Backup storage`{.action} tab and click the `Forgotten your password`{.action} button.
 
 ![Reset your password](images/backup-storage-04-edited.png){.thumbnail}
 
@@ -94,7 +130,7 @@ A password recover email will now be sent to the email address registered to you
 
 ### Delete the Backup Storage
 
-Log into your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab and click the `Delete the Backup Storage button`{.action}
+Log into your [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and go to your server's page. Then select the `Backup storage`{.action} tab and click the `Delete the Backup Storage button`{.action}
 
 ![Delete the Backup storage](images/backup-storage-05-edited.png){.thumbnail}
 
@@ -106,7 +142,7 @@ The Backup storage will now be deleted after a few minutes.
 
 ### Order disk space
 
-Log into your [OVH control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab and click the `Order disk space`{.action} button.
+Log into your [OVHcloud control panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and go to your server's page. Then select the `Backup storage`{.action} tab and click the `Order disk space`{.action} button.
 
 ![Order disk space](images/backup-storage-06-edited.png){.thumbnail}
 

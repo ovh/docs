@@ -76,6 +76,43 @@ Puis cliquez pour confirmer.
 
 L'accès au Backup Storage sera désormais révoqué pour ce bloc d’IP.
 
+#### Accéder au Backup Storage depuis une IP externe à votre service <a name="accessbackup"></a>
+
+L'accès à votre Backup Storage peut être restreint au service auquel il est lié via votre espace client OVHcloud.
+
+Afin de pouvoir ajouter d'autres adresses IP de services différents, vous pouvez utiliser l'API OVHcloud.
+Cela vous permettra alors de récupérer vos backups depuis un service d'une autre localisation.
+
+> [!warning]
+> Seules les adresse IP OVHcloud peuvent être autorisées.
+>
+
+Connectez-vous sur [api.ovh.com](https://api.ovh.com/) et utilisez l'appel suivant :
+
+> [!api]
+>
+> @api {POST} /dedicated/server/{serviceName}/features/backupFTP/access
+>
+
+Renseignez les champs ainsi :
+
+- `serviceName` : le nom de votre serveur dédié
+- `cifs` : cochez si nécessaire
+- `ftp` : cochez si nécessaire
+- `ipBlock` : renseignez l'IP qui aura accès sous la forme `1.2.3.4/32`
+- `nfs` : cochez si nécessaire
+
+![apiacladdress](images/aclapi01.png){.thumbnail}
+
+Afin de vérifier que votre adresse IP est bien autorisée, utilisez l'appel suivant :
+
+> [!api]
+>
+> @api {GET} /dedicated/server/{serviceName}/features/backupFTP/access
+>
+
+![apiacladdress](images/aclapi02.png){.thumbnail}
+
 ### Changer votre mot de passe
 
 Connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et rendez-vous sur la page de votre serveur dans l’espace `Dédié`{.action}. Sélectionnez ensuite l'onglet `Backup Storage`{.action} puis cliquez sur le bouton `Mot de passe oublié ?`{.action}

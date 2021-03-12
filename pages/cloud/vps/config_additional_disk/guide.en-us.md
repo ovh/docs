@@ -42,8 +42,6 @@ Take note of the pricing information, then click on `Order`{.action}. You will b
 
 #### On a Linux VPS
 
-Use the command terminal or a SSH client application to connect to your VPS.
-
 If a GNU/Linux distribution is installed on your VPS, establish an SSH connection to your server from the command line terminal or by using a SSH client application.
 
 The examples below presume you are logged in as a user with elevated permissions.

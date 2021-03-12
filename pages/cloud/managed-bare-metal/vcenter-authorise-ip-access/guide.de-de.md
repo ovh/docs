@@ -35,4 +35,4 @@ Nun müssen Sie nur noch bestätigen: Klicken Sie auf `Weiter`{.action}, und sob
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -76,4 +76,4 @@ Pojawią się wówczas wszystkie aktywowane metody.
 
 Oficjalna witryna [FIDO Alliance](https://fidoalliance.org/){.external}.
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en>.
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

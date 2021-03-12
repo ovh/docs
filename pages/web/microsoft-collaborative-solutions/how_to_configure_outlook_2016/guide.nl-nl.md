@@ -67,4 +67,4 @@ OVH biedt ook een web-app met [teamwerk-functies](https://www.ovh.com/nl/emails/
 
 [Configuratie van uw Email Pro-account in Outlook 2016 voor Windows](https://docs.ovh.com/nl/emails-pro/configuratie-outlook-2016/){.external}
 
-Ga in gesprek met andere communityleden op <https://community.ovh.com/en>.
+Ga in gesprek met andere communityleden op <https://community.ovh.com/en/>.

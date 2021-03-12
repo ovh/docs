@@ -14,7 +14,7 @@ The aim of this guide is to explain how vSAN fault domains work and how they are
 ## Requirements
 
 - a [Hosted Private Cloud solution](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/)
-- access to your vSphere [client HTML](../login-vsphere-interface/)
+- access to your vSphere [HTML client](../login-vsphere-interface/)
 - a vSAN cluster with at least 3 hosts
 
 ## Instructions

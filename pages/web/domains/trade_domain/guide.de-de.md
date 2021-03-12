@@ -26,7 +26,7 @@ Neben der Angabe von [Kontakten](https://docs.ovh.com/de/customer/verwaltung-der
 Wählen Sie im Bereich `Domains`{.action} den generischen Domainnamen (gTLD) aus, für den Sie den Inhaberwechsel durchführen möchten.
 
 
-![Hosting](images/SS_2.PNG){.thumbnail}
+![Hosting](images/SS_2.png){.thumbnail}
 
 
 ### Wechsel des Inhabers

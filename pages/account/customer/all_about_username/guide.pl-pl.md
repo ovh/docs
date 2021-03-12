@@ -166,4 +166,4 @@ Jeśli zauważysz podejrzaną aktywność na koncie, [skontaktuj się z obsług�
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
