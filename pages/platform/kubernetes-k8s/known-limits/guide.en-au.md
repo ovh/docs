@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated February 17, 2021.**
+**Last updated March 12, 2021.**
 
 <style>
  pre {
@@ -37,6 +37,8 @@ While we are fairly sure it can go further, we advise you to keep under those li
 Nodepools with anti-affinity are limited to 5 nodes (but you can create multiple node pools with the same instance flavor if needed of course).
 
 In general, it's better to have several mid-size Kubernetes clusters than one monster-size one.
+
+To ensure high availability for your services, it is recommended to possess the computation power to handle your workload even when one of your nodes becomes unavailable. Note that any operation requested to our services, like node deletions or updates, will be performed even if budget restrictions are present.
 
 Delivering a fully managed service, including OS and other component updates, you will neither need nor be able to SSH as root into your nodes.
 
