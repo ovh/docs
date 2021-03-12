@@ -76,7 +76,7 @@ Puis cliquez pour confirmer.
 
 L'accès au Backup Storage sera désormais révoqué pour ce bloc d’IP.
 
-#### Accéder au Backup Storage depuis une IP externe à votre service <a name="accessbackupex"></a>
+#### Accéder au Backup Storage depuis une IP externe à votre service <a name="accessbackup"></a>
 
 L'accès à votre Backup Storage peut être restreint au service auquel il est lié via votre espace client OVHcloud.
 
