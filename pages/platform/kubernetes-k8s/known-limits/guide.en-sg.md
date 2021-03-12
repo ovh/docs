@@ -38,7 +38,7 @@ Nodepools with anti-affinity are limited to 5 nodes (but you can create multiple
 
 In general, it's better to have several mid-size Kubernetes clusters than one monster-size one.
 
-To ensure high availability for your services, it is recommended to possess the computation power to handle your workload even when one of your nodes becomes unavailable. Note that any operation requested to our services, like node deletions or updates, will be performed even if budget restrictions are present.
+To ensure high availability for your services, it is recommended to possess the computation power capable of handling your workload even when one of your nodes becomes unavailable. Note that any operation requested to our services, like node deletions or updates, will be performed even if Kubernetes budget restrictions are present.
 
 Delivering a fully managed service, including OS and other component updates, you will neither need nor be able to SSH as root into your nodes.
 
