@@ -80,7 +80,7 @@ And then click to confirm.
 
 Access to the backup storage will now be revoked for that IP block.
 
-#### Accessing Backup Storage from an IP address outside of your account <a name="accessbackupex"></a>
+#### Accessing Backup Storage from an IP address outside of your account <a name="accessbackup"></a>
 
 Access to the storage space of your dedicated server is restricted to IP addresses linked to your OVHcloud customer acccount.
 
