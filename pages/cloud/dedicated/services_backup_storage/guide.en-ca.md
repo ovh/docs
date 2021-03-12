@@ -5,7 +5,7 @@ excerpt: This guide explains how to enable the Backup Storage functionality and 
 section: Storage
 ---
 
-**Last updated 5th January, 2021**
+**Last updated 12th January, 2021**
 
 ## Objective
 
@@ -79,6 +79,42 @@ And then click to confirm.
 ![Modifying access](images/backup-storage-15-edited_2020.png){.thumbnail}
 
 Access to the backup storage will now be revoked for that IP block.
+
+#### Accessing Backup Storage from an IP address outside of your account <a name="accessbackup"></a>
+
+Access to the storage space of your dedicated server is restricted to IP addresses linked to your OVHcloud customer acccount.
+
+In order to add other IP addresses from which to access, you can use the OVHcloud API. This will allow you to retrieve your backup data from a different service.
+
+> [!warning]
+> Only OVHcloud IP addresses can be authorised.
+>
+
+Log in to [ca.api.ovh.com](https://ca.api.ovh.com/) and use the following call:
+
+> [!api]
+>
+> @api {POST} /dedicated/server/{serviceName}/features/backupFTP/access
+>
+
+Fill in the fields as follows:
+
+- `serviceName`: The service name of your server
+- `cifs`: check if necessary
+- `ftp`: check if necessary
+- `ipBlock`: enter the IP address that will have access in the form `1.2.3.4/32`
+- `nfs`: check if necessary
+
+![apiacladdress](images/aclapi01.png){.thumbnail}
+
+To verify that your IP address is authorised, use the following call:
+
+> [!api]
+>
+> @api {GET} /dedicated/server/{serviceName}/features/backupFTP/access
+>
+
+![apiacladdress](images/aclapi02.png){.thumbnail}
 
 ### Reset your password
 

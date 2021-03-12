@@ -80,6 +80,43 @@ And then click to confirm.
 
 Access to the backup storage will now be revoked for that IP block.
 
+#### Accessing Backup Storage from an IP address outside of your account <a name="accessbackup"></a>
+
+Access to the storage space of your dedicated server is restricted to IP addresses linked to your OVHcloud customer acccount.
+
+In order to add other IP addresses from which to access, you can use the OVHcloud API. This will allow you to retrieve your backup data from a different service.
+
+> [!warning]
+> Only OVHcloud IP addresses can be authorised.
+>
+
+Log in to [ca.api.ovh.com](https://ca.api.ovh.com/) and use the following call:
+
+> [!api]
+>
+> @api {POST} /dedicated/server/{serviceName}/features/backupFTP/access
+>
+
+Fill in the fields as follows:
+
+- `serviceName`: The service name of your server
+- `cifs`: check if necessary
+- `ftp`: check if necessary
+- `ipBlock`: enter the IP address that will have access in the form `1.2.3.4/32`
+- `nfs`: check if necessary
+
+![apiacladdress](images/aclapi01.png){.thumbnail}
+
+To verify that your IP address is authorised, use the following call:
+
+> [!api]
+>
+> @api {GET} /dedicated/server/{serviceName}/features/backupFTP/access
+>
+
+![apiacladdress](images/aclapi02.png){.thumbnail}
+
+
 ### Reset your password
 
 Log into your [OVHcloud control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}, and go to your server's page. Then select the `Backup storage`{.action} tab and click the `Forgotten your password`{.action} button.
