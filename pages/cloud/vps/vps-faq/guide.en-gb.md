@@ -87,6 +87,43 @@ The bandwidth listed on our solution pages is guaranteed. It is the minimum amou
 
 OVHcloud offers a 99.9% SLA across the VPS ranges.
 
+### How can I access my Backup Storage from an IP address outside my service ? <a name="backupstorage"></a>
+
+Access to the backup storage of your VPS (FTP Storage) might be restricted to IP addresses linked to a service within your OVHcloud customer acccount.
+
+In order to add other IP addresses from which to access, you can use the OVHcloud API.
+This will allow you to retrieve your backup data from a different service.
+
+> [!warning]
+> Only OVHcloud IP addresses can be authorised.
+>
+
+Log in to [https://api.ovh.com/](https://api.ovh.com/) and use the following call:
+
+> [!api]
+>
+> @api {POST} vps/{serviceName}/backupftp/access
+>
+
+Fill in the fields as follows:
+
+- `serviceName`: the service name of your VPS
+- `cifs`: check if necessary
+- `ftp`: check if necessary
+- `ipBlock`: enter the IP address that will have access in the form `1.2.3.4/32`
+- `nfs`: check if necessary
+
+![screenshot 1](images/post-api.png){.thumbnail}
+
+To verify that your IP address is authorised, use the following call:
+
+> [!api]
+>
+> @api {GET} /vps/{serviceName}/backupftp/access
+>
+
+![screenshot 1](images/get-api.png){.thumbnail}
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
