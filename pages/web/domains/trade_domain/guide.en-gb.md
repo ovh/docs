@@ -6,13 +6,13 @@ excerpt: Find out how to change the owner of a a domain name in the OVHcloud Con
 section: Trade
 ---
 
-**Last updated 30th January 2020**
+**Last updated 4th March 2021**
 
 ## Objective
 
-Beside the [three contacts](../../customer/managing-contacts/), you need to provide information on the owner when registering a domain name. "**Owner**" in this context pertains to a person or company holding the rights to this domain name. **Domain trade** refers to a change of ownership by modifying this information in a legally binding way. For example, this process is the mandatory procedure in case of a company changing its name.
+Besides the [three contacts](../../customer/managing-contacts/), you need to provide information on the owner when registering a domain name. "**Owner**" in this context pertains to a person or company holding the rights to this domain name. **Domain trade** refers to a change of ownership by modifying this information in a legally binding way. For example, this process is the mandatory procedure in case of a company changing its name.
 
-[primary!]
+> [primary!]
 >This operation will not move your domain name to another OVHcloud customer account.
 >
 >To do this you need to change the domain name's [contacts](../../customer/managing-contacts/).
@@ -21,7 +21,7 @@ Beside the [three contacts](../../customer/managing-contacts/), you need to prov
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - a domain name registered with OVHcloud
 - access as the [admin contact](../../customer/managing-contacts/) for the domain name concerned
 - permission from the current domain name owner to change owners
@@ -39,7 +39,7 @@ Beside the [three contacts](../../customer/managing-contacts/), you need to prov
 >
 > - the website of the respective TLD registry
 > - the [list of TLDs available at OVHcloud](https://www.ovh.co.uk/domains/prices/)
-> - the `Ongoing operations`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) to check any pending status updates of the domain name
+> - the `Ongoing operations`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) to check any pending status updates of the domain name
 
 ### Step 1: Select the domain
 
@@ -57,7 +57,7 @@ In the `General information`{.action} tab, go to the **Plan** section in the bot
 >
 > Any changes to the owner’s first name, surname, organisation, legal status and email address are treated as a change of owner.
 > 
-> If you are only changing owner details other than mentioned above, continue with the section [Updating the owner information](./#updateownerinformation) below.
+> If you are only changing owner details other than mentioned above, continue with the section [Updating the owner information](#updateownerinformation) below.
 
 A new browser tab will open with all eligible domains. Select a domain name on the list by using the checkbox to the left of it. This step can also be used to launch a bulk operation: it is possible to initiate a domain trade for multiple domain names at once, for example to change the owner of all .ovh domains. When you have made your choices, click `Continue`{.action}.
 
@@ -85,7 +85,7 @@ If the email address is not changed as part of the domain trade, one recipient w
 
 ### Updating the owner information <a name="updateownerinformation"></a>
 
-If you need to update some secondary information such as phone number, address etc., you do not have to start a trade procedure. It can be edited directly in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+If you need to update some secondary information such as phone number, address etc., you do not have to start a trade procedure. It can be edited directly in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
 In the **Plan** section of the `General information`{.action} tab, click on `...`{.action} next to the contacts, then click `Refresh owner information`{.action}.
 

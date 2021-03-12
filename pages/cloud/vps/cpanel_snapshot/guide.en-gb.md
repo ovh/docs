@@ -5,13 +5,15 @@ excerpt: 'Find out how to fix issues with cPanel servers getting stuck during OV
 section: 'Advanced usage'
 ---
 
-**Last updated 3rd February 2021**
+**Last updated 9th March 2021**
 
 ## Objective
 
-When using the automated backup feature on a VPS which is running cPanel, you may experience cases when your VPS is stuck in backup status for a long time and may not be accessible. The root cause of this issue is when cPanel users use Jailed Shell access which creates a virtfs on your filesystem. When we create backups of your VPS (when you are subscribed to automated backups or snapshots), the hypervisor communicates to your VPS through the QEMU Guest Agent to freeze the filesystem on the VPS before we take the backup. This mechanism is there to ensure no writes happen to your disk while the backup is running and therefore ensures the consistency of the backup is good.
+When using the automated backup feature on a VPS which is running cPanel, you may experience cases when your VPS is stuck in backup status for a long time and may not be accessible. The root cause of this issue is when cPanel users use Jailed Shell access which creates a *virtfs* on your filesystem.
 
-However, the virtfs created by cPanel when you allow Jailed Shell access is not possible to freeze. Therefore when they hypervisor issues a guest filesystem freeze to your VPS it locks up and cause a kernel panic. There are three ways to avoid this from happening and we explore them below.
+When we create backups of your VPS (when you are subscribed to automated backups or snapshots), the hypervisor communicates to your VPS through the QEMU Guest Agent to freeze the filesystem on the VPS before we take the backup. This mechanism is there to ensure no writes happen to your disk while the backup is running and therefore ensures the consistency of the backup.
+
+However, if Jailed Shell access is enabled, cPanel creates a *virtfs* which cannot be frozen in this way. It will therefore lock up and cause a kernel panic as soon as the hypervisor initiates a freeze on the VPS. There are three ways to avoid this from happening and we explore them below.
 
 1. Disable QEMU Guest Agent
 2. Do not allow Jailed Shell
@@ -26,7 +28,7 @@ However, the virtfs created by cPanel when you allow Jailed Shell access is not 
 
 Decide on which of the 3 options above you would wish to proceed with and follow the section of the guide that corresponds to your choice. You only have to do one of the three options.
 
-Please chose carefully as they each have their pros and cons.
+Please choose carefully as they each have their pros and cons.
 
 ### Disable QEMU Guest Agent
 
@@ -47,7 +49,7 @@ systemctl disable qemu-guest-agent
 
 You can read about what is Jailed and Normal Shell [here](https://support.cpanel.net/hc/en-us/articles/360051992634-Differences-Between-Normal-and-Jailed-Shell)
 
-To disable a jailed shell environment for all new and modified users, you will need to disable jailshell by default option in WHM’s Tweak Settings interface (WHM >> Home >> Server Configuration >> Tweak Settings).
+To disable a jailed shell environment for all new and modified users, you will need to disable the jailshell by default option in WHM’s Tweak Settings interface (WHM >> Home >> Server Configuration >> Tweak Settings).
 
 This option allows you to enable/disable the use of a jailed shell for new accounts and accounts that you subsequently edit in the following interfaces:
 

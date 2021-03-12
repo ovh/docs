@@ -41,8 +41,8 @@ There are three status types that may appear:
 
 |Status|Description|
 |---|---|
-|Enabled|An SSL certificate has already been activated for this multisite. However, if your website is not available via HTTPS, please refer to the instructions listed in our guide on [Activating HTTPS on your website with an SSL certificate](../../activate-https-website-ssl/).|
-|To generate|An SSL certificate has been activated for this website, but it is still not technically active. To activate the SSL certificate properly, you will need to [regenerate an SSL certificate on a Web Hosting plan](#regeneratessl), so that it includes the new domain names.|
+|Enabled|An SSL certificate has already been activated for this multisite. However, if your website is not available via HTTPS, please refer to the instructions listed in our guide on [Activating HTTPS on your website with an SSL certificate](../activate-https-website-ssl/).|
+|To generate|An SSL certificate has been activated for this website, but it is still not technically active. To activate the SSL certificate properly, you will need to [regenerate the certificate](#regeneratessl), in order to include the new domain names.|
 |Disabled|An SSL certificate has not been activated for this multisite. To activate it, follow the steps listed below.|
 
 To activate SSL on a multisite, click on `...`{.action} icon to the right of the multisite concerned, then `Modify domain`{.action}. In the window that pops up, tick the `SSL`{.action} box. You can also tick the option to modify the www subdomain at once if you modify its proper domain name. Then follow the steps until you confirm the change.
@@ -54,8 +54,10 @@ Once you have submitted the activation request, the SSL secure connection status
 > [!primary]
 >
 > You can have two situations in this state:
+>
 > - **You do not have a certificate.**  
 >     Go to the section [Enabling SSL on a multisite](#enablessl) and choose "Free certificate (Let's Encrypt)" which supports multisites.
+>
 > - **SSL certificate is active, but have you added more multisites.**  
 >     Proceed to [Regenerating SSL certificates on a Web Hosting plan](#regeneratessl) to regenerate the SSL certificate for the remaining multisites.
 >
@@ -82,7 +84,7 @@ If the word "Yes" is visible, an SSL certificate has already been set up on the 
 
 ![managessl](images/manage-ssl-step1.png){.thumbnail}
 
-In the window that appears, select the SSL certificate you would like to order. Depending on the [Web Hosting plan](https://www.ovh.co.uk/web-hosting){.external} you have ordered and its configuration, it may be the case that none of the solutions listed below are available. Once you have selected an option, click on the `Next`{.action} button.
+In the window that appears, select the SSL certificate you would like to order. Depending on the [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external} you have ordered and its configuration, it may be the case that none of the solutions listed below are available. Once you have selected an option, click on the `Next`{.action} button.
 
 ![managessl](images/manage-ssl-step2.png){.thumbnail}
 
