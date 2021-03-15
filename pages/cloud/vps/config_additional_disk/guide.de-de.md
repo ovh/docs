@@ -26,7 +26,7 @@ Mit den VPS von OVHcloud können Sie als Dienstoption einen sicheren Speicherpla
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich [in Ihr OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) Kundencenter ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server im linken Menü unter `Virtual Private Server`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server im linken Menü unter `Virtual Private Server`{.action}.
 
 ### Zusätzliche Festplatte bestellen
 
@@ -41,7 +41,7 @@ Achten Sie auf die Preisinformationen und klicken Sie dann auf `Bestellen`{.acti
 > [!warning]
 > OVHcloud stellt Ihnen Dienste zur Verfügung, für deren Konfiguration und Verwaltung Sie verantwortlich sind. Sie sind also verantwortlich für das ordnungsgemäße Funktionieren dieser Systeme.
 >
->Sollten Sie Schwierigkeiten haben, diese Aktionen durchzuführen, kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder besprechen Sie das Problem mit unserer User Community unter https://community.ovh.com/. OVHcloud kann Ihnen hierzu keinen technischen Support bieten.
+>Sollten Sie Schwierigkeiten haben, diese Aktionen durchzuführen, kontaktieren Sie bitte einen spezialisierten Dienstleister und/oder besprechen Sie das Problem mit unserer User Community unter https://community.ovh.com/en/. OVHcloud kann Ihnen hierzu keinen technischen Support bieten.
 >
 
 #### Auf einem Linux VPS
@@ -125,7 +125,7 @@ $ sudo mkdir /mnt/disk
 $ sudo mount /dev/sdb1 /mnt/disk
 ```
 
-Auf der letzten Zeile sehen Sie, dass die zusätzliche Festplatte nun auf/mnt/disk `montiert ist`:
+Auf der letzten Zeile sehen Sie, dass die zusätzliche Festplatte nun auf `/mnt/disk` montiert ist:
 
 ```
 $ df -h
@@ -150,7 +150,7 @@ Schlümpfe 5.0M 0 5,0M 0% /run/lock
 
 > [!primary]
 >
-Dieser vorherige Schritt ist nicht persistent, da die Festplatte abgetrennt wird, wenn der VPS neu gestartet wird. Zur Automatisierung des Montagevorgangs muss die Datei "fstab"geändert werden.
+Dieser vorherige Schritt ist nicht persistent, da die Festplatte abgetrennt wird, wenn der VPS neu gestartet wird. Zur Automatisierung des Montagevorgangs muss die Datei `fstab` geändert werden.
 >
 
 Ermitteln Sie zunächst die Block-UID des Geräts:

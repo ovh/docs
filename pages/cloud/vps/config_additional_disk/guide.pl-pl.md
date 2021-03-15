@@ -55,11 +55,11 @@ Możesz użyć następującego polecenia, aby sprawdzić nazwę nowego urządzen
 ```
 $ lsblk
 
-sda 8:0 0 80G 0 disk
-├─da1 8:1 0 79.9G 0 part /
-├ mięsda14 8:14 0 4M 0 part
-└ mięsda15 8:15 0 106M 0 part /boot/efi
-sdb 8:16 0 50G 0 disk
+sda       8:0    0   80G  0 disk
+├─sda1    8:1    0 79.9G  0 part /
+├─sda14   8:14   0    4M  0 part
+└─sda15   8:15   0  106M  0 part /boot/efi
+sdb       8:16   0   50G  0 disk
 ```
 
 W tym przykładzie dodatkowy dysk jest nazywany `sdb`.
