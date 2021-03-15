@@ -95,7 +95,7 @@ Afin de pouvoir ajouter d'autres adresses IP de services différents, vous pouve
 Cela vous permettra alors de récupérer vos backups depuis un service d'une autre localisation.
 
 > [!warning]
-> Seules les adresse IP OVHcloud peuvent être autorisées.
+> Seules les adresses IP OVHcloud peuvent être autorisées.
 >
 
 Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/) et utilisez l'appel suivant :
