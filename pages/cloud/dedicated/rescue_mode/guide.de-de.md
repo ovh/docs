@@ -9,11 +9,22 @@ section: 'Diagnose & Rescue Modus'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 14.01.2021**
+**Letzte Aktualisierung am 09.02.2021**
 
 ## Ziel
 
 Der Rescue-Modus ist ein Tool Ihres dedizierten Servers, mit dem Sie diesen auf einem temporären Betriebssystem starten können, um Probleme zu diagnostizieren und zu beheben.
+
+Der Rescue-Modus ist generell an folgende Aufgaben angepasst:
+
+- Zurücksetzen des Root-Passworts
+- Diagnose von Netzwerkproblemen
+- Reparatur eines fehlerhaften Betriebssystems
+- Korrektur einer fehlerhaften Konfiguration einer Software-Firewall
+- Performance-Test der Festplatten
+- Test des Prozessors und des RAM
+
+Achten Sie darauf, ein Backup Ihrer Daten durchzuführen, wenn Sie noch nicht über aktuelle Backups verfügen.
 
 **Diese Anleitung erklärt, wie Sie Ihren OVHcloud Dedicated Server im Rescue-Modus neu starten.**
 
@@ -72,6 +83,8 @@ root@your_server_password:
 > Um dieses Problem zu umgehen, können Sie den regulären Fingerprint des Systems auskommentieren, indem Sie in der Datei *known_hosts* ein `#` in der entsprechenden Zeile hinzufügen. Achten Sie darauf, dieses Zeichen zu entfernen, bevor Sie den Server im normalen Modus neu starten.
 >
 
+#### Mounten Ihrer Partitionen
+
 Für die meisten Änderungen Ihres Servers via SSH im Rescue-Modus muss eine Partition gemountet werden. Dieser Modus verfügt über ein eigenes temporäres Daateisystem. Folglich gehen alle im Rescue-Modus vorgenommenen Änderungen am Dateisystem beim Neustart des Servers im normalen Modus verloren.
 
 Die Partitionen werden über SSH per `mount` Befehl gemountet. Zunächst müssen jedoch Ihre Partitionen aufgelistet werden, um den Namen derjenigen Partition zu ermitteln, die Sie mounten möchten. Im Folgenden finden Sie Codebeispiele, an denen Sie sich orientieren können.
@@ -110,6 +123,46 @@ rescue:~# mount /dev/hda1 /mnt/
 >
 
 Um den Rescue-Modus zu verlassen, ändern Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) den Bootmodus wieder auf `Von Festplatte Booten`{.action} und starten Sie den Server über die Kommandozeile neu.
+
+#### Mounten eines Datenspeichers
+
+Sie können einen VMware Datenladen genauso mounten wie im vorherigen Segment beschrieben. Installieren Sie zuerst das erforderliche Paket:
+
+```
+rescue:~# apt-get update && apt-get install vmfs-tools
+```
+
+Geben Sie anschließend Ihre Partitionen ein, um den Namen der Partition des Datastores abzurufen:
+
+```
+rescue:~# fdisk -l
+```
+
+Fügen Sie nun die Partition mit folgendem Befehl hinzu, indem Sie den im vorherigen Schritt identifizierten Wert =sdbX` ersetzen:
+
+```
+rescue:~# vmfs-fuse /dev/sdbX /mnt
+```
+
+Um den Rescue-Modus zu verlassen, ändern Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) den Bootmodus wieder auf `Von Festplatte Booten`{.action} und starten Sie den Server über die Kommandozeile neu.
+
+### Verwendung des Webinterfaces des Rescue-Modus ( ausschließlich "rescue64-pro")
+
+Sobald der Server neu gestartet ist, können Sie auf das Web-Interface zugreifen, indem Sie den Adressbalken Ihres Browsers auf einen bloßen_server_IP:81` eingeben. Verwenden Sie stattdessen den Port *444*. Zum Beispiel:
+
+```sh
+https://169.254.10.20:444
+```
+
+Wenn Sie Ihre Daten bereits gesichert haben, können Sie die folgenden Komponenten über das Webinterface des Wiederherstellungsmodus testen:
+
+- **Festplattentest**: Überprüfen Sie ihre Integrität über SMART.
+- **Prozessoren**: Überprüft, ob der Prozessor normal funktioniert (diese Operation kann einige Zeit in Anspruch nehmen).
+- **Partitionen**: Überprüfe die Leserstatus.
+- **RAM**: Überprüft den auf dem Server installierten RAM (diese Operation kann einige Zeit in Anspruch nehmen).
+- **Netzwerk**: Überprüft die Verbindung zu einem internen Referenzsystem von OVHcloud und die Verbindung zu Ihrem Browser.
+
+![Webinterface für den Rescue-Modus](images/rescue-mode-04.png){.thumbnail}
 
 ### Windows <a name="windowsrescue"></a>
 

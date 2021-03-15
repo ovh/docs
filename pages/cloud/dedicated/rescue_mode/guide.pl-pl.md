@@ -15,6 +15,17 @@ section: 'Diagnostyka i tryb Rescue'
 
 Tryb Rescue to narzędzie dostępne na serwerze dedykowanym. Umożliwia uruchomienie tymczasowego systemu operacyjnego w celu zdiagnozowania i rozwiązania problemów.
 
+Tryb zapasowy jest zazwyczaj dostosowany do następujących zadań:
+
+- Reset hasła root
+- Diagnostyka problemów z siecią
+- Naprawa wadliwego systemu operacyjnego
+- Naprawa nieprawidłowej konfiguracji zapory sieciowej
+- Test wydajności dysków
+- Test procesora i pamięci RAM
+
+Tworzenie kopii zapasowych danych musi być pierwszym krokiem w sposobie odzyskiwania danych, jeśli nie posiadasz jeszcze aktualnych kopii zapasowych.
+
 **Dowiedz się, jak aktywować i korzystać z trybu Rescue na Twoim serwerze.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nvlAbXNM8Bk?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -72,6 +83,8 @@ root@your_server_password:
 > Aby obejść ten problem, możesz skomentować odcisk palca Twojego zwykłego systemu dodając `#` przed jego linią w pliku "known_hosts". Pamiętaj, aby usunąć ten znak przed restartem serwera w trybie normalnym.
 >
 
+#### Montowanie partycji
+
 Większość modyfikacji wprowadzonych na Twoim serwerze przez SSH w trybie Rescue wymaga zamontowania partycji. Tryb ten posiada własny system plików tymczasowych. W związku z tym modyfikacje wprowadzane do systemu plików w trybie Rescue zostaną utracone w trakcie restartu serwera w trybie zwykłym.
 
 Partycje montowane są za pomocą komendy `mount` przez SSH. Wyświetl listę partycji, aby odnaleźć tę, którą chcesz zamontować. Możesz użyć przykładowych poleceń:
@@ -110,6 +123,46 @@ rescue:~# mount /dev/hda1 /mnt/
 >
 
 Aby wyłączyć tryb Rescue, zmień sposób uruchamiania serwera w sekcji `Uruchom z dysku twardego.`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i zrestartuj serwer z linii poleceń.
+
+### Montowanie sklepu danych
+
+Możesz zamontować sklep danych VMware w sposób opisany w poprzednim segmencie. Po pierwsze, zainstaluj niezbędny pakiet:
+
+```
+rescue:~# apt-get update && apt-get install vmfs-tools
+```
+
+Następnie przełącz partycje, aby pobrać nazwę partycji sklepu danych:
+
+```
+rescue:~# fdisk -l
+```
+
+Teraz zamontuj partycję za pomocą następującego polecenia, zastępując `sdbX` wartością zidentyfikowaną na poprzednim etapie:
+
+```
+rescue:~# vmfs-fuse /dev/sdbX /mnt
+```
+
+Aby wyłączyć tryb Rescue, zmień sposób uruchamiania serwera w sekcji `Uruchom z dysku twardego.`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i zrestartuj serwer z linii poleceń.
+
+### Korzystanie z interfejsu sieciowego trybu zapasowego ("wyłącznie cue64-pro")
+
+Po ponownym uruchomieniu serwera możesz uzyskać dostęp do interfejsu www poprzez wstawienie `your_server_IP:81` na pasku adresowym przeglądarki. Korzystając z protokołu https, użyj portu *444* zamiast tego. Na przykład:
+
+```
+https://169.254.10.20:444
+```
+
+Jeśli posiadasz już bezpieczne dane, możesz skorzystać z interfejsu www do trybu odzyskiwania danych, aby przetestować następujące komponenty.
+
+- **Test dysku**: Sprawdź ich integralność za pomocą SMART.
+- **Procesory**: Sprawdź, czy procesor działa prawidłowo. (Operacja ta może zająć trochę czasu.)
+- **Partycje**: Sprawdź stan czytników.
+- **Pamięć**: Sprawdź pamięć RAM zainstalowaną na serwerze. (Operacja ta może zająć trochę czasu.)
+- **Sieć**: Sprawdź połączenie z wewnętrznym systemem OVHcloud i połączenie z przeglądarką.
+
+![Interfejs www dla trybu awaryjnego](images/rescue-mode-04.png){.thumbnail}
 
 ### Windows <a name="windowsrescue"></a>
 

@@ -15,6 +15,17 @@ section: 'Diagnóstico y modo de rescate'
 
 El modo *rescue* o modo de rescate permite arrancar un servidor dedicado sobre un sistema operativo temporal con el objetivo de diagnosticar y resolver problemas.
 
+El modo de rescate se adapta generalmente a las siguientes tareas:
+
+- Restauración de la contraseña root
+- Diagnóstico de problemas de red
+- Reparación de un sistema operativo defectuoso
+- Corrección de una configuración incorrecta de un cortafuegos de software
+- Prueba del rendimiento de los discos
+- Prueba del procesador y la memoria RAM
+
+Si todavía no dispone de backups recientes, la copia de seguridad de sus datos debe ser la primera etapa del modo de recuperación.
+
 **Esta guía explica cómo activar y utilizar el modo de rescate en un servidor dedicado.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UdMZSgXATFU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -72,6 +83,9 @@ root@your_server_password:
 > Para evitar este problema, puede comentar la huella de su sistema habitual añadiendo una `#` delante de su línea en el archivo *known_hosts*. Elimine este carácter antes de reiniciar el servidor en modo normal.
 >
 
+
+#### Montaje de sus particiones
+
 Para realizar la mayoría de los cambios en el servidor por SSH en modo de rescate, es necesario montar una partición. para realizar la mayoría de los cambios en este modo es necesario montar previamente una partición en el servidor. De lo contrario, los cambios que realizase en el sistema de archivos en modo de rescate se perderían al reiniciar el servidor en modo normal.
 
 Para montar las particiones, utilice el comando `mount` por SSH. Previamente deberá mostrar la lista de las particiones para conocer el nombre de la partición que quiera montar. A continuación ofrecemos algunos ejemplos de código:
@@ -110,6 +124,46 @@ rescue:~# mount /dev/hda1 /mnt/
 >
 
 Para salir del modo de rescate, redefina el modo de arranque en `Arrancar en el disco duro`{.action} en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y reinicie el servidor en línea de comandos.
+
+#### Montaje de una tienda de datos
+
+Puede montar un almacén de datos VMware de la misma forma que se describe en el segmento anterior. En primer lugar, instale el paquete necesario:
+
+```
+rescue:~# apt-get update && apt-get install vmfs-tools
+```
+
+A continuación, seleccione las particiones para consultar el nombre de la partición del almacén de datos:
+
+```
+rescue:~# fdisk -l
+```
+
+Ahora monte la partición con el siguiente comando, sustituyendo `sdbX` por el valor indicado en el paso anterior:
+
+```
+rescue:~# vmfs-fuse /dev/sdbX /mnt
+```
+
+Para salir del modo de rescate, redefina el modo de arranque en `Arrancar en el disco duro`{.action} en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y reinicie el servidor en línea de comandos.
+
+### Uso de la interfaz web del modo de rescate ("rescue64-pro" únicamente)
+
+Una vez reiniciado el servidor, puede acceder a la interfaz web introduciendo 'your_server_IP:81` en la barra de direcciones de su navegador. Utilice el puerto *444* en su lugar. Por ejemplo:
+
+```
+https://169.254.10.20:444
+```
+
+Si ya ha protegido sus datos, puede utilizar la interfaz web del modo de recuperación para probar los siguientes componentes.
+
+- **Test del disco**: Comprueba su integridad con SMART.
+- **Procesadores*: Comprueba que la CPU funciona con normalidad. (Esta operación puede tardar un tiempo.)
+- **Particiones**: Comprueba el estado de los lectores.
+- **Memoria**: Comprueba la memoria RAM instalada en el servidor. (Esta operación puede tardar un tiempo.)
+- **Red**: Comprueba la conexión a un sistema de referencia interno de OVHcloud y la conexión al navegador.
+
+![Interfaz web para el modo de rescate](images/rescue-mode-04.png) {.thumbnail}
 
 ### Windows <a name="windowsrescue"></a>
 
