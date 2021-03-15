@@ -18,7 +18,7 @@ Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra 
 ## Requisitos
 
 - Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external} na Área de Cliente OVHcloud.
-- Dispor de um [endereço IP Failover](https://www.ovhcloud.com/ptbare-metal/ip/).
+- Dispor de um [endereço IP Failover](https://www.ovhcloud.com/pt/bare-metal/ip/).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
