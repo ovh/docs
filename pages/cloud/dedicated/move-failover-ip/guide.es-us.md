@@ -21,9 +21,9 @@ Esta tecnología le permite intercambiar las direcciones IP de una solución a o
 
 ## Requisitos
 
-- Tener un [servidor dedicado](https://www.ovhcloud.com/es-es/bare-metal/){.external} en el área de cliente de OVHcloud.
-- Tener una [dirección IP failover](https://www.ovhcloud.com/es-es/bare-metal/ip/).
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+- Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external} en el área de cliente de OVHcloud.
+- Tener una [dirección IP failover](https://www.ovhcloud.com/es/bare-metal/ip/).
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 ## Procedimiento
 
@@ -32,7 +32,7 @@ Esta tecnología le permite intercambiar las direcciones IP de una solución a o
 
 ### Migrar una IP desde el área de cliente de OVHcloud
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en el menú `Cloud`{.action} de la barra de herramientas y seleccione la sección `IP`{.action} situada en la esquina inferior izquierda de la página.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en el menú `Cloud`{.action} de la barra de herramientas y seleccione la sección `IP`{.action} situada en la esquina inferior izquierda de la página.
 
 ![área de cliente](images/manager01.png){.thumbnail}
 
@@ -50,7 +50,7 @@ Haga clic en `Siguiente`{.action} y, seguidamente, en `Aceptar`{.action}.
 
 ### Mover una IP a través de las API
 
-Conéctese a la página web de las [API de OVHcloud](https://api.ovh.com/).
+Conéctese a la página web de las [API de OVHcloud](https://ca.api.ovh.com/).
 
 En primer lugar, es mejor comprobar si la dirección IP se puede mover correctamente.
 <br>Para comprobar si la IP puede moverse a uno de sus servidores dedicados, utilice la siguiente llamada:
