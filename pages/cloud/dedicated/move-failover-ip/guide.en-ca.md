@@ -70,4 +70,6 @@ To move the IP address, use the following call:
 - `serviceName`: the destination dedicated server reference
 - `ip`: the failover IP address to move
 
+## Go further
+
 Join our community of users on <https://community.ovh.com/en/>.
