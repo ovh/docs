@@ -91,6 +91,43 @@ El ancho de banda que aparece en la página de nuestros productos está garantiz
 
 En todas las gamas de VPS, OVHcloud ofrece un SLA del 99,9%.
 
-## Ir más lejos
+### ¿Cómo acceder al Backup Storage desde una dirección IP distinta de mi servicio? <a name="backupstorage"></a>
+
+El acceso al backup FTP puede restringirse al servicio al que esté asociado desde el área de cliente de OVHcloud.
+
+Para poder añadir más direcciones IP de distintos servicios, puede utilizar la API de OVHcloud.
+para así poder recuperar los backups desde un servicio de otra localización.
+
+> [!warning]
+> Solo es posible autorizar las direcciones IP de OVHcloud.
+>
+
+Conéctese a [https://api.ovh.com/](https://api.ovh.com/) y utilice la siguiente llamada:
+
+> [!api]
+>
+> @api {POST} vps/{serviceName}/backupftp/access
+>
+
+Introduzca los campos de la siguiente forma:
+
+- `serviceName `: el nombre de su VPS
+- `cifs `: marque si es necesario
+- `ftp`: marque si es necesario
+- `ipBlock`: introduzca la IP con el formato `1.2.3.4/32`
+- `nfs`: marque si es necesario
+
+![post api](images/post-api.png){.thumbnail}
+
+Para comprobar que su dirección IP está autorizada, utilice la siguiente llamada:
+
+> [!api]
+>
+> @api {GET} /vps/{serviceName}/backupftp/access
+>
+
+![get api](images/get-api.png){.thumbnail}
+
+## Más información
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
