@@ -2,7 +2,7 @@
 title: 'Configura un disco aggiuntivo'
 excerpt: Come aggiungere e configurare spazio di storage aggiuntivo su un VPS
 slug: config-additional-disk-vps
-section: Backup
+section: Opzioni di backup
 order: 3
 ---
 
@@ -10,7 +10,7 @@ order: 3
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 24 febbraio 2021**
+**Ultimo aggiornamento: 24/02/2021**
 
 ## Obiettivo
 
@@ -305,6 +305,6 @@ Nella scheda `Home`{.action}, sposta lo schermo fino all'area intitolata **Sinte
 
 ![disattivazione disco aggiuntivo](images/disk_vps02.png){.thumbnail}
 
-## Spingiti oltre
+## Per saperne di più
 
 Unisciti alla nostra Community di utenti <https://community.ovh.com/en/>.
