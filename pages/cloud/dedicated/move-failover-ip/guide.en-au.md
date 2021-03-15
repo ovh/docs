@@ -17,9 +17,9 @@ With this technology, you can switch IP addresses from one solution to another i
 
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
-- a [failover IP address](https://www.ovhcloud.com/en-gb/bare-metal/ip/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- a [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/) in your OVHcloud account
+- a [failover IP address](https://www.ovhcloud.com/en-au/bare-metal/ip/)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 ## Instructions
 
@@ -29,7 +29,7 @@ With this technology, you can switch IP addresses from one solution to another i
 
 ### Moving an IP from the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on the `Bare Metal Cloud`{.action} menu, then click on the `IP`{.action} section at the bottom of the column on the left of the page.
+Log in to the [OVHcloud Control](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), click on the `Bare Metal Cloud`{.action} menu, then click on the `IP`{.action} section at the bottom of the column on the left of the page.
 
 ![move failover](images/manager01.png){.thumbnail}
 
@@ -47,7 +47,7 @@ Click `Next`{.action}, then `Confirm`{.action}.
 
 ### Moving an IP via the API
 
-Log in to the OVHcloud [API webpage](https://api.ovh.com/).
+Log in to the OVHcloud [API webpage](https://ca.api.ovh.com/).
 
 First, it is best to check if the IP address can be moved.
 <br>To check if the IP can be moved to one of your dedicated servers, use the following call:
