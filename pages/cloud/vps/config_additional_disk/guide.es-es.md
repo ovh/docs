@@ -26,7 +26,7 @@ Con los VPS de OVHcloud, puede añadir un espacio de almacenamiento seguro como 
 
 ## Procedimiento
 
-Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección "`Cloud Metal" y seleccione el servidor en la lista del menú de la izquierda, en `{.action}servidores privados virtuales` `{.action}.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la lista del menú de la izquierda, en `Servidores privados virtuales`{.action}.
 
 ### Contratar un disco adicional
 
@@ -41,7 +41,7 @@ Tome nota de la información sobre los precios y haga clic en `Contratar`{.actio
 > [!warning]
 > OVHcloud le ofrece los servicios que usted es responsable de configurar y gestionar. Usted es responsable de su buen funcionamiento.
 >
->Si necesita ayuda, póngase en contacto con un proveedor de servicios especializado o debata el problema con nuestra comunidad de usuarios en https://community.ovh.com/. OVHcloud no puede ofrecerle soporte técnico sobre este asunto.
+>Si necesita ayuda, póngase en contacto con un proveedor de servicios especializado o debata el problema con nuestra comunidad de usuarios en https://community.ovh.com/en/. OVHcloud no puede ofrecerle soporte técnico sobre este asunto.
 >
 
 #### En un VPS Linux
@@ -305,6 +305,6 @@ En la pestaña `Inicio`{.action}, desplace la pantalla hasta el cuadro **Resumen
 
 ![baja del disco adicional](images/disk_vps02.png){.thumbnail}
 
-## Vaya más lejos
+## Más información
 
 Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
