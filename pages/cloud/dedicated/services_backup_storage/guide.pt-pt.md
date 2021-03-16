@@ -1,124 +1,146 @@
 ---
 title: 'Utilizar o Backup Storage num servidor dedicado'
 slug: servicos-backup-storage
-excerpt: 'Saiba como ativar e utilizar o serviço Backup Storage'
+excerpt: 'Saiba como ativar e aceder ao espaço de armazenamento adicional'
 section: Armazenamento
 ---
 
-**Última atualização: 27/08/2018**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Sumário
+**Última atualização: 15/03/2021**
 
-No âmbito das ofertas de [servidores dedicados](https://www.ovh.pt/servidores_dedicados/){.external}, tem à sua disposição um espaço de armazenamento de 500 GB por servidor que lhe permite [proteger os seus dados](https://docs.ovh.com/pt/dedicated/proteger-um-servidor-dedicado/){.external}.
+## Objetivo
 
-**Este manual explica-lhe como ativar e utilizar este espaço de armazenamento.**
+Os servidores dedicados OVHcloud incluem um espaço de backup suplementar para armazenar os dados e os ficheiros de configuração importantes. Este espaço é escalável, seguro e independente do servidor principal
 
+**Este manual explica-lhe como ativar e utilizar o seu espaço de backup**.
+
+> [!primary]
+> Para mais pormenores, recomendamos que consulte a [página comercial](https://www.ovhcloud.com/pt/bare-metal/backup-storage/) da opção Backup Storage.
+>
+> Este guia não se aplica aos serviços da OVHcloud US.
+>
 
 ## Requisitos
 
-- Ter um [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external}.
-- Aceder à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Serviços Dedicados`{.action}.
-
+* Dispor de um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external} na sua conta OVHcloud.
+* Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
 
-### Ativar o seu espaço de armazenamento
+### Ativar o Backup Storage
 
-Ligue-se à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e entre na página do servidor na secção `Serviços Dedicados`{.action}. De seguida, selecione a janela `Backup Storage`{.action}, clique no botão `Ativar backup storage`{.action} e valide.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. No separador `Backup Storage`{.action}, clique no botão `Ativar Backup Storage`{.action}.
 
-![Ativar o seu espaço de armazenamento](images/backup_storage_activation.png){.thumbnail}
+![Ativar o Backup Storage](images/backup-storage01.png){.thumbnail}
 
-Receberá um e-mail de ativação e o seu Backup Storage ficará disponível em apenas alguns minutos.
+Clique em `Confirmar`{.action} no menu contextual que aparece.
 
+![Ativar o Backup Storage](images/backup-storage02.png){.thumbnail}
+
+O seu Backup Storage será configurado em alguns minutos. Receberá um e-mail de confirmação assim que a configuração estiver terminada.
 
 ### Configurar o controlo de acesso
 
-O acesso ao seu espaço de armazenamento é restrito pelo endereço de IP através de uma lista de controlo de acesso ou *Access Control List* (ACL). Por predefinição, todos os endereços de IP da sua conta têm um acesso FTP/FTPS ao espaço de armazenamento. Os outros protocolos (NFS e CIDFS) não são autorizados, por predefinição. Para os autorizar, deverá criar uma ACL.
+O acesso ao seu espaço de armazenamento é restrito por endereços IP através de uma lista de controlo de acesso (<i>Access Control List</i> ou ACL). Apenas os endereços IP da sua conta OVHcloud registados no ACL poderão aceder ao armazenamento. Os protocolos de acesso (FTP, NFS e CIFS) não são autorizados por predefinição, mas podem ser selecionados aquando da adição de endereços IP.
 
+#### Adicionar um acesso backup
 
-#### Adicionar um acesso
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. De seguida, selecione o separador `Backup Storage`{.action} e clique no botão `Adicionar acesso`{.action}.
 
-Na secção `Backup Storage`{.action}, clique em `Adicionar acesso`{.action}.
+![Adicionar um acesso backup](images/backup-storage03.png){.thumbnail}
 
-![Adicionar um acesso backup](images/add_access.png){.thumbnail}
-
-Selecione o bloco do IP que pretende autorizar. Depois de selecionado, escolha o protocolo que quer autorizar e, em seguida, clique em `Seguinte`{.action}.
+Selecione o bloco IP que deseja autorizar. Depois de selecionado, selecione o(s) protocolo(s) a autorizar e clique em `Seguinte`{.action}.
 
 > [!primary]
 >
-> Para aceder ao armazenamento, só pode autorizar os blocos de IP presentes na sua conta OVH.
+> Apenas blocos de endereços IP da sua conta OVHcloud podem ser adicionados à ACL a partir da sua Área de Cliente.
 >
 
-![Adicionar um acesso backup](images/add_access_ip.png){.thumbnail}
+![Adicionar um acesso backup](images/backup-storage04.png){.thumbnail}
 
-Para confirmar a adição do acesso, clique em `Concluir`{.action}.
+Confirme ao clicar em `Terminar`{.action}.
 
-![Adicionar um acesso backup](images/add_access_confirmation.png){.thumbnail}
+De seguida, poderá aceder ao Backup Storage do seu servidor a partir do bloco de IP que selecionou.
 
-Poderá aceder ao Backup Storage do servidor a partir do bloco de IP selecionado.
+#### Alterar ou eliminar um acesso ao backup
 
+Uma vez ativado o serviço, a tabela ACL aparecerá no separador `Backup Storage`{.action}. Clique em `...`{.action} à direita de um bloco IP para abrir o menu de acesso.
 
-#### Alterar um acesso
+![Adicionar um acesso backup](images/backup-storage05.png){.thumbnail}
 
-Para alterar os protocolos de um bloco de IP autorizado, clique no botão `...`{.action} e em `Alterar acesso`{.action} na linha correspondente ao bloco que pretende alterar. Selecione ou desselecione os protocolos pretendidos. Quando tiver terminado, clique em `Validar`{.action} para confirmar estas alterações.
+Para alterar os protocolos de um bloco IP autorizado, clique em `Modificar o acesso`{.action} e selecione/desselecione os protocolos no menu que aparecer. Registe as modificações ao clicar em `Confirmar`{.action}.
 
-![Alterar o acesso](images/modify_access.png){.thumbnail}
+Para eliminar a autorização de um bloco IP, clique em `Eliminar o acesso`{.action} e depois em `Confirmar`{.action} no menu que aparecer.
 
+#### Aceder ao Backup Storage a partir de um IP externo ao seu serviço <a name="accessbackup"></a>
 
-#### Eliminar um acesso
+O acesso ao Backup Storage pode ser restrito ao serviço ao qual está associado através da Área de Cliente OVHcloud.
 
-Para anular a autorização de um bloco de IP autorizado, clique no botão `...`{.action} e em `Alterar acesso`{.action} na linha correspondente ao bloco que pretende eliminar.
+Para poder adicionar outros endereços IP de serviços diferentes, pode utilizar a API OVHcloud.
+Isto permitir-lhe-á recuperar os seus backups a partir de um serviço de outra localização.
 
-![Alterar o acesso](images/delete_access.png){.thumbnail}
+> [!warning]
+> Apenas os endereços IP OVHcloud podem ser autorizados.
+>
 
-Finalmente, clique em `Validar`{.action} para confirmar. O acesso ao Backup Storage ficará anulado para o bloco de IP em causa.
+Ligue-se ao [api.ovh.com](https://api.ovh.com/) e utilize a seguinte chamada:
 
+> [!api]
+>
+> @api {POST} /dedicated/server/{serviceName}/features/backupFTP/access
+>
 
-### Alterar a palavra-passe
+Introduza os campos da seguinte forma:
 
-Na secção `Backup Storage`{.action}, clique em `Perdeu a palavra-passe?`{.action} e valide.
+- `serviceName`\: o nome do seu servidor dedicado
+- `ovos`\: assinalar se necessário
+- `ftp`\: assinalar se necessário
+- `ipBlock`\: indique o IP que terá acesso sob a forma `1.2.3.4/32`
+- `nfs`\: assinalar se necessário
 
-![Alterar a palavra-passe](images/forgotten_password.png){.thumbnail}
+![apiamendress](images/aclapi01.png){.thumbnail}
 
-Um e-mail de recuperação de palavra-passe será enviado para o endereço de e-mail registado na sua conta de administrador. Basta seguir as indicações para reinicializar a sua palavra-passe.
+Para verificar se o seu endereço IP está corretamente autorizado, utilize a seguinte chamada:
 
+> [!api]
+>
+> @api {GET} /dedicated/server/{serviceName}/features/backupFTP/access
+>
+
+![apiamendress](images/aclapi02.png){.thumbnail}
+
+### Reinicializar a sua password
+
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. De seguida, selecione o separador `Backup Storage`{.action} e clique no botão `Perdeu a palavra-passe?`{.action}.
+
+Depois de clicar em `Confirmar`{.action} na janela que aparecer, um e-mail de recuperação da password será enviado para o endereço de e-mail registado na sua conta de administrador. Siga as instruções para reinicializar a sua palavra-passe.
 
 ### Eliminar o Backup Storage
 
-Na secção `Backup Storage`{.action}, clique em `Eliminar Backup Storage`{.action} e valide.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. De seguida, selecione o separador `Backup Storage`{.action} e clique no botão `Eliminar o Backup Storage`{.action}.
 
-![Eliminar o Backup Storage](images/backup_storage_delete.png){.thumbnail}
+Clique em `Confirmar`{.action} na mensagem de aviso para proceder à eliminação. O seu Backup Storage será eliminado após alguns minutos. Todos os dados do espaço de armazenamento serão eliminados.
 
-> [!warning]
-> 
-> O pedido de eliminação é irreversível.
-> 
+### Encomendar espaço em disco adicional
 
-O Backup Storage será definitivamente eliminado após alguns minutos.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. De seguida, selecione o separador `Backup Storage`{.action} e clique no botão `Encomendar espaço de disco`{.action}.
 
+![Encomendar espaço em disco adicional](images/backup-storage06.png){.thumbnail}
 
-### Encomendar espaço de disco adicional
+Selecione a capacidade de armazenamento que deseja encomendar e, a seguir, clique em `Seguinte`{.action}.
 
-Na secção `Backup Storage`{.action}, clique no botão `Encomendar espaço de disco`{.action}. 
-
-![Encomendar espaço de disco](images/additional_space_order.png){.thumbnail}
-
-Selecione a capacidade de armazenamento desejada e, em seguida, clique em `Seguinte`{.action}.
-
-![Seleção do espaço adicional](images/additional_space_order_selection.png){.thumbnail}
-
-Só precisa de ler e validar as condições gerais, assim como o pedido clicando em `Confirmar`{.action}
-
-Uma nota de encomenda será criada e, assim que o pagamento for efetuado, o espaço de armazenamento adicional ficará disponível.
-
+Tome conhecimento da tarifação e das condições gerais e valide a sua encomenda clicando em `Confirmar`{.action}.
+Será criada uma nota de encomenda. Uma vez o pagamento registado, será notificado da extensão do seu espaço de armazenamento.
 
 ### Utilizar o Backup Storage
 
 > [!primary]
 >
-> O serviço Backup Storage não efetua backups automáticos dos seus dados e apenas disponibiliza o espaço e os protocolos de acesso. É da responsabilidade do cliente estabelecer uma estratégia de armazenamento apropriada através de ferramentas à sua escolha. A OVH não poderá ser responsabilizada pelos dados guardados neste espaço.
+> O serviço Backup Storage não efetua backups automáticos dos seus dados. e apenas disponibiliza o espaço e os protocolos de acesso. É da responsabilidade do cliente estabelecer uma estratégia de armazenamento apropriada através de ferramentas à sua escolha. A OVHcloud não poderá ser responsabilizada pelos dados contidos nestes espaços.
 >
-
 
 #### FTP/FTPS
 
@@ -127,204 +149,54 @@ Uma nota de encomenda será criada e, assim que o pagamento for efetuado, o espa
 Para guardar um único ficheiro, pode utilizar o comando seguinte:
 
 ```sh
-ncftpput -u FtpUserName -p FtpPassword HostName /FolderLocation /File
+# ncftpput -u FtpUserName -p FtpPassword HostName /FolderLocation /File
 ```
 
-**Este comando não suporta o protocolo FTPS. Se necessitar de efetuar uma transferência segura, deverá utilizar o cliente lftp  ou a interface cURL.**
+**Este comando não suporta o protocolo FTPS. Se precisar de efetuar uma transferência segura, deverá utilizar o cliente lftp ou cURL.**
 
 O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
 
-* **FtpUsername**: o seu nome de utilizador FTP.
-* **FtpPassword**: a sua palavra-passe FTP.
-* **HostName**: o nome do seu Backup Storage.
-* **FolderLocation**: o caminho de acesso ao diretório no qual pretende gravar o ficheiro.
-* **File**: o nome do ficheiro que pretende guardar.
-
-Para guardar um diretório, só precisa de o arquivar e transferi-lo no seu diretório de backup:
-
-```sh
-tar czf - /FolderName | ncftpput -u FtpUserName -p FtpPassword -c HostName ArchiveName.tar.gz
-```
-
-O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
-
-* **FolderName**: o caminho de acesso ao diretório que pretende guardar.
-* **FtpUsername**: o seu nome de utilizador FTP.
-* **FtpPassword**: a sua palavra-passe FTP.
-* **HostName**: o nome do seu Backup Storage.
-* **ArchiveName**: o nome do diretório que pretende guardar.
-
-Para descarregar um ficheiro de arquivo a partir do seu espaço de armazenamento, pode utilizar o comando seguinte:
-
-```sh
-ncftpget -v -u FtpUsername -p FtpPassword HostName /LocalFolder /File
-```
-
-O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
-
-* **FtpUsername**: o seu nome de utilizador FTP.
-* **FtpPassword**: a sua palavra-passe FTP.
-* **HostName**: o nome do seu Backup Storage.
-* **LocalFolder**: o caminho de acesso ao diretório local no qual pretende gravar o ficheiro.
-* **File**: o caminho de acesso ao ficheiro que pretende descarregar.
-
-##### cURL (para Linux)
-
-> [!primary]
->
-> Para utilizar o protocolo FTPS, tem de mudar o nome do seu Backup Storage. Por exemplo: se o nome é “ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net”, deverá alterá-lo para “ftpback-rbxX-YYY.mybackup.ovh.net”. Além disso, também deverá adicionar o argumento `-ssl` ao comando abaixo.
->
-
-Para guardar um único ficheiro, pode utilizar o comando seguinte:
-
-```sh
-curl -aT File ftp://FtpUsername:FtpPassword@HostName/FolderLocation
-```
-
-O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
-
-* **File**: o nome do ficheiro que pretende guardar.
-* **FtpUsername**: o seu nome de utilizador FTP.
-* **FtpPassword**: a sua palavra-passe FTP.
-* **HostName**: o nome do seu Backup Storage.
-* **FolderLocation**: o caminho de acesso ao diretório no qual pretende gravar o ficheiro.
-
-Para guardar um diretório, só precisa de o arquivar e transferi-lo no seu diretório de backup:
-
-```sh
-tar czf - /FolderName | curl ftp://FtpUsername:FtpPassword@HostName/FolderLocation/ArchiveName-$(date +%Y%m%d%H%M).tar.gz -T -
-```
-
-O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
-
-* **FolderName**: o caminho de acesso ao diretório que pretende guardar.
-* **FtpUsername**: o seu nome de utilizador FTP.
-* **FtpPassword**: a sua palavra-passe FTP.
-* **HostName**: o nome do seu Backup Storage.
-* **FolderLocation**: o caminho de acesso ao diretório local no qual pretende gravar o ficheiro.
-* **ArchiveName**: o nome do diretório que pretende guardar.
-
-Para descarregar um ficheiro de arquivo a partir do seu espaço de armazenamento, pode utilizar o comando seguinte:
-
-```sh
-cd /LocalFolder
-curl -u FtpUsername:FtpPassword ftp://HostName/File 
-```
-
-O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
-
-* **FtpUsername**: o seu nome de utilizador FTP.
-* **FtpPassword**: a sua palavra-passe FTP.
-* **HostName**: o nome do seu Backup Storage.
-* **LocalFolder**: o nome do diretório local no qual pretende gravar o ficheiro.
-* **File**: o caminho de acesso ao ficheiro que pretende descarregar.
-
-
-##### lftp (para Linux)
-
-> [!primary]
->
-> lftp utiliza FTP+SSL/TLS por predefinição. Por isso, é necessário alterar o nome do seu Backup Storage. Por exemplo: se o nome é “ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net”, deverá alterá-lo para “ftpback-rbxX-YYY.mybackup.ovh.net”.
->
-
-Para guardar um único ficheiro, pode utilizar o comando seguinte:
-
-```sh
-lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put File; quit"
-```
-
-O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
-
-* **File**: o nome do ficheiro que pretende guardar.
-* **FtpUsername**: o seu nome de utilizador FTP.
-* **FtpPassword**: a sua palavra-passe FTP.
-* **HostName**: o nome do seu Backup Storage.
-* **FolderLocation**: o caminho de acesso ao diretório no qual pretende gravar o ficheiro.
-
-Para guardar um diretório, só precisa de o arquivar e transferi-lo no seu diretório de backup:
-
-```sh
-tar czf - /FolderName | ftp://FtpUsername:FtpPassword@HostName:21 -e "cd FolderLocation; put /dev/stdin -o ArchiveName-$(date +%Y%m%d%H%M).tar.gz;quit"
-```
-
-O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
-
-* **FolderName**: o caminho de acesso ao diretório que pretende guardar.
-* **FtpUsername**: o seu nome de utilizador FTP.
-* **FtpPassword**: a sua palavra-passe FTP.
-* **HostName**: o nome do seu Backup Storage.
-* **FolderLocation**: o caminho de acesso ao diretório local no qual pretende gravar o ficheiro.
-* **ArchiveName**: o nome do diretório que pretende guardar.
-
-Para descarregar um ficheiro de arquivo a partir do seu espaço de armazenamento, pode utilizar o comando seguinte:
-
-```sh
-cd /LocalFolder
-lftp ftp://FtpUsername:FtpPassword@HostName:21 -e "get /File; quit"
-```
-
-O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
-
-* **FtpUsername**: o seu nome de utilizador FTP.
-* **FtpPassword**: a sua palavra-passe FTP.
-* **HostName**: o nome do seu Backup Storage.
-* **LocalFolder**: o nome do diretório local no qual pretende gravar o ficheiro.
-* **File**: o caminho de acesso ao ficheiro que pretende descarregar.
-
-##### FileZilla
-
-Depois de instalar o FileZilla no seu servidor, poderá configurá-lo para se ligar ao Backup Storage através das informações de identificação FTP que recebeu no momento da ativação do seu Backup Storage. Para uma ligação bem-sucedida, precisará do nome de utilizador e da respetiva palavra-passe.
-
-
-#### NFS
-
-Em primeiro lugar, certifique-se de que autorizou o acesso dos seus blocos de IP ao armazenamento e que estes podem utilizar o protocolo NFS. Dependendo do seu sistema operativo Linux, é possível que tenha de instalar o cliente NFS e executar o serviço NFS/portmap.
-
-Depois de executar o cliente NFS e o serviço portmap, poderá estabelecer a partilha NFS como uma partição normal, tal como indicado abaixo:
-
-```sh
-mount -t nfs HostName:/export/ftpbackup/ServiceName /FolderMount
-```
-
-O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
-
-* **HostName**: o nome do seu Backup Storage.
-* **ServiceName**: o nome do seu servidor (ex: ns0000000.ip-123-123-123.net).
-* **FolderMount**: o diretório onde pretende estabelecer a partilha NFS.
-
-Depois de estabelecer a partilha, pode utilizar os comandos **cp** e rsync, tal como procederia com um diretório normal.
-
-
-#### CIFS
-
-##### Windows
-
-Ligue-se ao seu servidor, abra a linha de comandos e introduza o comando seguinte:
-
-```sh
-net use z: \\HostName\ServiceName
-```
-
-O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
-
-* **HostName**: o nome do seu Backup Storage.
-* **ServiceName**: o nome do seu servidor (ex: ns0000000.ip-123-123-123.net).
-
-##### Linux
-
-Abra uma ligação SSH para o seu servidor e introduza o comando abaixo:
-
-```sh
-mount -t cifs -o sec=ntlm,uid=root,gid=100,dir_mode=0700,username=root,password= //HostName/ServiceName /mnt/FolderMount
-```
-
-O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
-
+* **FtpUsername**\: o seu nome de utilizador FTP.
+* **FtpPassword**\: a sua palavra-passe FTP.
 * **HostName**\: o nome do seu Backup Storage.
-* **ServiceName**\: o nome do seu servidor (ex: ns0000000.ip-123-123-123.net).
-* **FolderMount**\: o diretório onde pretende estabelecer a partilha (já existente).
+* **FolderLocation**\: o caminho de acesso ao diretório no qual pretende gravar o ficheiro.
+* **File**\: o nome do ficheiro que pretende guardar.
 
+Para guardar um diretório, só precisa de o arquivar e transferi-lo no seu diretório de backup:
+
+```sh
+# czf - /FolderName | ncftpput -u FtpUserName -p FtpPassword -c HostName ArchiveName.tar.gz
+```
+
+O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
+
+* **FolderName**\: o caminho de acesso ao diretório que pretende guardar.
+* **FtpUsername**\: o seu nome de utilizador FTP.
+* **FtpPassword**\: a sua palavra-passe FTP.
+* **HostName**\: o nome do seu Backup Storage.
+* **ArchiveName**\: o nome do diretório que pretende guardar.
+
+Para descarregar um ficheiro de arquivo a partir do seu Backup Storage, pode utilizar o seguinte comando:
+
+```sh
+# ncftpget -v -u FtpUsername -p FtpPassword HostName /LocalFolder /File
+```
+
+O exemplo acima contém as variáveis que deverá substituir pelos seus valores.
+
+* **FtpUsername**\: o seu nome de utilizador FTP.
+* **FtpPassword**\: a sua palavra-passe FTP.
+* **HostName**\: o nome do seu Backup Storage.
+* **LocalFolder**\: o caminho de acesso ao diretório local no qual pretende gravar o ficheiro
+* **File**\: o caminho de acesso do ficheiro a descarregar
+
+##### Curl (para Linux)
+
+> [!primary]
+>
+> Para utilizar FTPS, deve alterar o nome do Backup Storage. Por exemplo, se o nome do Backup Storage for "ftpback-rbxX-YYY.ip-Z.Z.Z.Z.net", deverá alterá-lo para "ftpback-rbxX-YYY.mybackup.ovh.net". Também terá de adicionar o argumento nm\` ao comando abaixo.
+>
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: [Comunidade OVH](https://community.ovh.com/en/){.external}.
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
