@@ -40,7 +40,7 @@ Si todavía no dispone de backups recientes, la copia de seguridad de sus datos 
 
 Solo es posible activar el modo de rescate desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} en la sección `Bare Metal Cloud`{.action}. En la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccione el servidor.
 
-Busque "Boot" en la zona **Información general** y haga clic en `..`{.action} y luego en `Editar`{.action}.
+Busque "Boot" en la zona **Información general** y haga clic en `...`{.action} y luego en `Editar`{.action}.
 
 ![Cambiar el modo de arranque](images/rescue-mode-01.png){.thumbnail}
 
