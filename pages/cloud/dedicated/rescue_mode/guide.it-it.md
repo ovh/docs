@@ -148,9 +148,9 @@ rescue:~# vmfs-fuse /dev/sdbX /mnt
 
 Per uscire dalla modalità Rescue, ridefinisci la modalità di avvio su `Avviare da hard disk`{.action} nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e riavvia il server da riga di comando.
 
-### Uso de la interfaz web del modo de rescate ("cue64-pro" únicamente)
+### Uso de la interfaz web del modo de rescate ("rescue64-pro" únicamente)
 
-Una vez reiniciado el servidor, puede acceder a la interfaz web introduciendo 'your_server_IP:81` en la barra de direcciones de su navegador. Utilice el puerto *444* en su lugar. Por ejemplo:
+Una vez reiniciado el servidor, puede acceder a la interfaz web introduciendo `your_server_IP:81` en la barra de direcciones de su navegador. Utilice el puerto *444* en su lugar. Por ejemplo:
 
 ```
 https://169.254.10.20:444
@@ -159,7 +159,7 @@ https://169.254.10.20:444
 Si ya ha protegido sus datos, puede utilizar la interfaz web del modo de recuperación para probar los siguientes componentes.
 
 - **Test del disco**: Comprueba su integridad con SMART.
-- **Procesadores*: Comprueba que la CPU funciona con normalidad. (Esta operación puede tardar un tiempo.)
+- **Procesadores**: Comprueba que la CPU funciona con normalidad. (Esta operación puede tardar un tiempo.)
 - **Particiones**: Comprueba el estado de los lectores.
 - **Memoria**: Comprueba la memoria RAM instalada en el servidor. (Esta operación puede tardar un tiempo.)
 - **Red**: Comprueba la conexión a un sistema de referencia interno de OVHcloud y la conexión al navegador.
