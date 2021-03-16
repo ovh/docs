@@ -137,7 +137,7 @@ Une fenêtre s'ouvre et vous aurez alors à choisir :
 
 - votre distribution parmi celles proposées ;
 - la langue ;
-- une [clé SSH](../../dedicated/ssh-introduction/) (facultatif).
+- une [clé SSH](../../dedicated/creer-cle-ssh-serveur-dediees/) (facultatif).
 
 ![Menu de réinstallation](images/reinstall_menu.png){.thumbnail}
 
@@ -170,7 +170,7 @@ De manière plus automatique, OVHcloud vous propose le [SSL Gateway](https://www
 
 ## Allez plus loin
 
-[Créer une clé SSH](../../dedicated/ssh-introduction/)
+[Créer une clé SSH](../../dedicated/creer-cle-ssh-serveur-dediees/)
 
 [Sécuriser un VPS](../conseils-securisation-vps/)
 

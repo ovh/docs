@@ -111,7 +111,7 @@ En el área de cliente se mostrará una barra de progreso indicando el estado de
 
 #### Conexión a su VPS
 
-Al instalar (o reinstalar) su VPS, recibirá por correo electrónico una contraseña de acceso root, la conexión que utiliza el protocolo SSH. SSH es un protocolo de comunicaciones seguras. Para más información, consulte [esta guía de introducción al SSH para servidores dedicados OVHcloud](../../dedicated/crear-claves-ssh-dedicadas/). 
+Al instalar (o reinstalar) su VPS, recibirá por correo electrónico una contraseña de acceso root, la conexión que utiliza el protocolo SSH. SSH es un protocolo de comunicaciones seguras. Para más información, consulte [esta guía de introducción al SSH para servidores dedicados OVHcloud](../../dedicated/introduccion-ssh/). 
 
 Puede acceder al servidor a través de un terminal de línea de comandos (en Linux o Mac) o utilizando un software de terceros en Windows (le recomendamos PuTTy).
 
