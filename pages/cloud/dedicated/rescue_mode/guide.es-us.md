@@ -39,7 +39,7 @@ Si todavía no dispone de backups recientes, la copia de seguridad de sus datos 
 
 Solo es posible activar el modo de rescate desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) en la sección `Bare Metal Cloud`{.action}. En la columna izquierda, haga clic en `Servidores dedicados`{.action} y seleccione el servidor.
 
-Busque "Boot" en la zona **Información general** y haga clic en `..`{.action} y luego en `Editar`{.action}.
+Busque "Boot" en la zona **Información general** y haga clic en `...`{.action} y luego en `Editar`{.action}.
 
 ![Cambiar el modo de arranque](images/rescue-mode-01.png){.thumbnail}
 
@@ -149,7 +149,7 @@ Para salir del modo de rescate, redefina el modo de arranque en `Arrancar en el 
 
 ### Uso de la interfaz web del modo de rescate ("rescue64-pro" únicamente)
 
-Una vez reiniciado el servidor, puede acceder a la interfaz web introduciendo 'your_server_IP:81` en la barra de direcciones de su navegador. Utilice el puerto *444* en su lugar. Por ejemplo:
+Una vez reiniciado el servidor, puede acceder a la interfaz web introduciendo `your_server_IP:81` en la barra de direcciones de su navegador. Utilice el puerto *444* en su lugar. Por ejemplo:
 
 ```
 https://169.254.10.20:444
@@ -158,7 +158,7 @@ https://169.254.10.20:444
 Si ya ha protegido sus datos, puede utilizar la interfaz web del modo de recuperación para probar los siguientes componentes.
 
 - **Test del disco**: Comprueba su integridad con SMART.
-- **Procesadores*: Comprueba que la CPU funciona con normalidad. (Esta operación puede tardar un tiempo.)
+- **Procesadores**: Comprueba que la CPU funciona con normalidad. (Esta operación puede tardar un tiempo.)
 - **Particiones**: Comprueba el estado de los lectores.
 - **Memoria**: Comprueba la memoria RAM instalada en el servidor. (Esta operación puede tardar un tiempo.)
 - **Red**: Comprueba la conexión a un sistema de referencia interno de OVHcloud y la conexión al navegador.
@@ -171,7 +171,7 @@ Si ya ha protegido sus datos, puede utilizar la interfaz web del modo de recuper
 
 Una vez reiniciado el servidor, recibirá por correo electrónico las claves de acceso en modo de rescate. Este mensaje de correo electrónico también está disponible en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la esquina superior derecha del área de cliente, haga clic en el nombre asociado a su identificador de cliente y seleccione `Emails de servicio`{.action}.
 
-Para utilizar el modo de rescate que ofrece Windows, es necesario descargar e instalar una consola VNC o utilizar el módulo `IPMI` en el [área de cliente de OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+Para utilizar el modo de rescate que ofrece Windows, es necesario descargar e instalar una consola VNC o utilizar el módulo `IPMI` en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ![WinRescue Windows](images/rescue-mode-06.png){.thumbnail}
 
