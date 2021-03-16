@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 1
 ---
 
-**Dernière mise à jour le 26 février 2021**
+**Dernière mise à jour le 16 mars 2021**
 
 ## Objectif
 
@@ -81,6 +81,18 @@ passwd: password updated successfully
 
 Par mesure de sécurité, la connexion avec l'utilisateur « root » est désactivée par défaut. Si vous devez autoriser ce type de connexions, reportez-vous aux instructions de [ce guide](../root-password/#activer-le-mot-de-passe-root_1).
 
+#### Redémarrer votre VPS <a name="reboot-current-range"></a>
+
+Un redémarrage peut être nécessaire pour appliquer des configurations mises à jour ou pour résoudre un problème. Dans la mesure du possible, effectuez un « soft reboot » du serveur via la ligne de commande suivante :
+
+```sh
+reboot
+```
+
+Cependant, vous pouvez effectuer un « hard reboot » à tout moment dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Sous l'onglet `Accueil`{.action}, cliquez sur `...`{.action} en face de « Boot » dans la zone **Votre VPS**, puis cliquez sur `Redémarrer mon VPS`{.action} et `Confirmer`{.action} dans la fenêtre contextuelle.
+
+![Reboot](images/reboot-vps-current.png){.thumbnail}
+
 #### Installation ou réinstallation de votre VPS
 
 Vous pouvez effectuer toute réinstallation directement dans l'espace client OVHcloud. Sous l'onglet « Accueil », recherchez « OS / Distribution » dans la zone **Votre VPS**. Cliquez sur `...`{.action}, puis sur `Réinstaller mon VPS`{.action}.
@@ -126,6 +138,18 @@ Ou alors :
 ```sh
 ssh root@Référence_de_votre_VPS
 ```
+
+#### Redémarrer votre VPS <a name="reboot-older-range"></a>
+
+Un redémarrage peut être nécessaire pour appliquer des configurations mises à jour ou pour résoudre un problème. Dans la mesure du possible, effectuez un « soft reboot » du serveur via la ligne de commande suivante :
+
+```sh
+reboot
+```
+
+Cependant, vous pouvez effectuer un « hard reboot » à tout moment dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Sous l'onglet `Accueil`{.action}, cliquez sur `Redémarrer mon VPS`{.action}  puis sur `Confirmer`{.action} dans la fenêtre contextuelle.
+
+![Reboot](images/reboot-vps-older.png){.thumbnail}
 
 #### Installation ou réinstallation de votre VPS
 
