@@ -146,7 +146,7 @@ rescue:~# vmfs-fuse /dev/sdbX /mnt
 
 Aby wyłączyć tryb Rescue, zmień sposób uruchamiania serwera w sekcji `Uruchom z dysku twardego.`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i zrestartuj serwer z linii poleceń.
 
-### Korzystanie z interfejsu sieciowego trybu zapasowego ("wyłącznie cue64-pro")
+### Korzystanie z interfejsu sieciowego trybu zapasowego ("rescue64-pro")
 
 Po ponownym uruchomieniu serwera możesz uzyskać dostęp do interfejsu www poprzez wstawienie `your_server_IP:81` na pasku adresowym przeglądarki. Korzystając z protokołu https, użyj portu *444* zamiast tego. Na przykład:
 
@@ -170,7 +170,7 @@ Jeśli posiadasz już bezpieczne dane, możesz skorzystać z interfejsu www do t
 
 Po restarcie serwera otrzymasz e-mail z danymi do połączenia w trybie Rescue. E-mail ten jest również dostępny w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij nazwę powiązaną z Twoim identyfikatorem klienta w prawym górnym rogu Panelu klienta, a następnie `E-maile od działu wsparcia`{.action}.
 
-Aby korzystać z trybu Rescue oferowanego przez Windows, pobierz i zainstaluj konsolę VNC lub skorzystaj z modułu `IPMI` w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+Aby korzystać z trybu Rescue oferowanego przez Windows, pobierz i zainstaluj konsolę VNC lub skorzystaj z modułu `IPMI` w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ![WinRescue Windows](images/rescue-mode-06.png){.thumbnail}
 
