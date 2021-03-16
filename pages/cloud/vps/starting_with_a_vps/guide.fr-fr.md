@@ -28,23 +28,23 @@ Si vous rencontrez des difficultés pour effectuer ces actions, veuillez contact
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, accédez à la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur dans la liste de navigation de gauche sous `Serveurs privés virtuels`{.action}. 
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, accédez à la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur dans la liste de navigation de gauche sous `Serveurs privés virtuels`{.action}.
 
-Le tableau de bord qui vous est présenté contient des informations importantes sur votre service et vous permet d'effectuer des opérations essentielles. Il apparaîtra différemment selon la gamme de votre VPS. 
+Le tableau de bord qui vous est présenté contient des informations importantes sur votre service et vous permet d'effectuer des opérations essentielles. Il apparaîtra différemment selon la gamme de votre VPS.
 
-- Si vous venez de commander un VPS, sa référence se présente ainsi : *vps-XXXXXXX.vps.ovh.net* (où les *X* sont une suite de chiffres et de lettres). 
-- Si vous gérez un VPS plus ancien, vous remarquerez que sa référence est structurée différemment: *vpsXXXX.ovh.net* (dans lequel les *X* sont un nombre). 
+- Si vous venez de commander un VPS, sa référence se présente ainsi : *vps-XXXXXXX.vps.ovh.net* (où les *X* sont une suite de chiffres et de lettres).
+- Si vous gérez un VPS plus ancien, vous remarquerez que sa référence est structurée différemment: *vpsXXXX.ovh.net* (dans lequel les *X* sont un nombre).
 
-Pour la gamme actuelle de VPS, poursuivez la lecture de ce guide à la section suivante, **Premiers pas (gamme VPS actuelle)**. 
+Pour la gamme actuelle de VPS, poursuivez la lecture de ce guide à la section suivante, **Premiers pas (gamme VPS actuelle)**.
 
 Pour un modèle VPS plus ancien, poursuivez la lecture de ce guide en cliquant sur le lien suivant : [Premiers pas (ancienne gamme VPS)](./#premiers-pas-ancienne-gamme-vps_1).
 
 ### Premiers pas (gamme VPS actuelle)
 
-#### Connexion à votre VPS
+#### Connexion à votre VPS (gamme VPS actuelle)
 
 Lors de la première installation ou d'une réinstallation à partir de l'espace client, un utilisateur disposant de l'intégralité des droits sera créé et vous recevrez un e-mail contenant ses informations d'identification.
-Le nom d'utilisateur sera généré en fonction du système d'exploitation, par exemple « ubuntu » ou « debian ». 
+Le nom d'utilisateur sera généré en fonction du système d'exploitation, par exemple « ubuntu » ou « debian ».
 
 Vous pouvez vous connecter à votre VPS en SSH avec le nom d'utilisateur et le mot de passe. (Le SSH est un protocole de communication sécurisé. Pour en savoir plus, consultez [ce guide d'introduction au SSH pour les serveurs dédiés OVHcloud](../../dedicated/ssh-introduction/). Vous pouvez accéder à votre serveur via un terminal de ligne de commande (Linux ou MAC) ou via un logiciel tiers sous Windows (nous vous recommandons PuTTy).
 
@@ -81,7 +81,7 @@ passwd: password updated successfully
 
 Par mesure de sécurité, la connexion avec l'utilisateur « root » est désactivée par défaut. Si vous devez autoriser ce type de connexions, reportez-vous aux instructions de [ce guide](../root-password/#activer-le-mot-de-passe-root_1).
 
-#### Redémarrer votre VPS <a name="reboot-current-range"></a>
+#### Redémarrer votre VPS (gamme VPS actuelle) <a name="reboot-current-range"></a>
 
 Un redémarrage peut être nécessaire pour appliquer des configurations mises à jour ou pour résoudre un problème. Dans la mesure du possible, effectuez un « soft reboot » du serveur via la ligne de commande suivante :
 
@@ -93,7 +93,7 @@ Cependant, vous pouvez effectuer un « hard reboot » à tout moment dans votre 
 
 ![Reboot](images/reboot-vps-current.png){.thumbnail}
 
-#### Installation ou réinstallation de votre VPS
+#### Installation ou réinstallation de votre VPS (gamme VPS actuelle)
 
 Vous pouvez effectuer toute réinstallation directement dans l'espace client OVHcloud. Sous l'onglet « Accueil », recherchez « OS / Distribution » dans la zone **Votre VPS**. Cliquez sur `...`{.action}, puis sur `Réinstaller mon VPS`{.action}.
 
@@ -117,7 +117,7 @@ Une barre de progression s'affichera dans votre espace client, vous informant de
 
 ### Premiers pas (ancienne gamme VPS)
 
-#### Connexion à votre VPS
+#### Connexion à votre VPS (ancienne gamme VPS)
 
 Lors de l'installation (ou de la réinstallation) de votre VPS, un e-mail vous sera envoyé contenant un mot de passe pour l'accès root, la connexion utilisant le protocole SSH. Le SSH est un protocole de communication sécurisé. Pour en savoir plus, consultez [ce guide d'introduction au SSH pour les serveurs dédiés OVHcloud](../../dedicated/ssh-introduction/). 
 
@@ -139,7 +139,7 @@ Ou alors :
 ssh root@Référence_de_votre_VPS
 ```
 
-#### Redémarrer votre VPS <a name="reboot-older-range"></a>
+#### Redémarrer votre VPS (ancienne gamme VPS) <a name="reboot-older-range"></a>
 
 Un redémarrage peut être nécessaire pour appliquer des configurations mises à jour ou pour résoudre un problème. Dans la mesure du possible, effectuez un « soft reboot » du serveur via la ligne de commande suivante :
 
@@ -151,7 +151,7 @@ Cependant, vous pouvez effectuer un « hard reboot » à tout moment dans votre 
 
 ![Reboot](images/reboot-vps-older.png){.thumbnail}
 
-#### Installation ou réinstallation de votre VPS
+#### Installation ou réinstallation de votre VPS (ancienne gamme VPS)
 
 Toute réinstallation se fait directement dans votre espace client. Il vous suffit pour cela de cliquer sur le bouton `Réinstaller mon VPS`{.action} depuis l'onglet `Accueil`{.action} :
 

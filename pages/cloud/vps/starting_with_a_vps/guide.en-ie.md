@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 26th February 2021**
+**Last updated 16th March 2021**
 
 ## Objective
 
@@ -79,6 +79,18 @@ passwd: password updated successfully
 
 Connecting with the "root" user is disabled by default as a security measure. If you need to permit these connections, refer to the instructions in [this guide](../root-password/#enabling-root-login_1).
 
+#### Restarting your VPS (current VPS range) <a name="reboot-current-range"></a>
+
+A reboot might become necessary in order to apply updated configurations or to fix an issue. Whenever feasible, perform a "soft reboot" via the command line:
+
+```sh
+reboot
+```
+
+However, you can carry out a "hard reboot" at any time in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). From the `Home`{.action} tab, click on `...`{.action} next to "Boot" in the **Your VPS** box, then click `Reboot my VPS`{.action} and `Confirm`{.action} the action in the popup window.
+
+![Reboot](images/reboot-vps-current.png){.thumbnail}
+
 #### Installing or reinstalling your VPS <a name="reinstallvps"></a>
 
 You can carry out any reinstallations directly in your Control Panel. From the `Home`{.action} tab, look for "OS/Distribution" in the box **Your VPS**. Click on `...`{.action} and then on `Reinstall my VPS`{.action}.
@@ -124,6 +136,18 @@ Or:
 ```sh
 ssh root@your_VPS_reference_name
 ```
+
+#### Restarting your VPS (for older ranges) <a name="reboot-older-range"></a>
+
+A reboot might become necessary in order to apply updated configurations or to fix an issue. Whenever feasible, perform a "soft reboot" via the command line:
+
+```sh
+reboot
+```
+
+However, you can carry out a "hard reboot" at any time in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). From the `Home`{.action} tab, click on `Reboot my VPS`{.action}, then click `Confirm`{.action} in the popup window.
+
+![Reboot](images/reboot-vps-older.png){.thumbnail}
 
 #### Installing or reinstalling your VPS (for older ranges)
 
