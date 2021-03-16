@@ -147,7 +147,7 @@ rescue:~# vmfs-fuse /dev/sdbX /mnt
 
 Para sair do modo rescue, redefina o modo de arranque em `Fazer boot no disco rígido`{.action} na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e reinicie o servidor em linha de comandos.
 
-### Utilização da interface Web do modo de segurança ("cue64-pro" apenas)
+### Utilização da interface Web do modo de segurança ("rescue64-pro" apenas)
 
 Depois de reiniciar o servidor, pode aceder à interface Web ao introduzir `your_server_IP:81` na barra de endereços do seu browser. Com https, utilize a porta *444* em vez disso. Por exemplo:
 
@@ -160,7 +160,7 @@ Se já protegeu os seus dados, pode utilizar a interface Web do modo de recupera
 - **Teste do disco**: Verifique a sua integridade com o SMART.
 - **Processadores**: Verifique que o processador funciona normalmente. (Esta operação pode levar algum tempo)
 - **Partitions**: Verifica os estados dos leitores.
-- ** Memória*: Verifique a memória RAM instalada no servidor. (Esta operação pode levar algum tempo)
+- **Memória**: Verifique a memória RAM instalada no servidor. (Esta operação pode levar algum tempo)
 - **Rede**: Verifique a ligação a um sistema de referência interno da OVHcloud, bem como a ligação ao seu browser.
 
 ![Interface Web para o modo de segurança](images/rescue-mode-04.png) {.thumbnail}
