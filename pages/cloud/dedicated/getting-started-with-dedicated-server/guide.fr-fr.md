@@ -36,7 +36,7 @@ Sur l'écran suivant, sélectionnez `Installer à partir d'un template OVH`{.act
 
 Pour pouvoir installer une image personnalisée sur le serveur, choisissez la troisième option `Installer à partir d'une image personnalisée`{.action}. Reportez-vous au guide « [Utiliser la fonctionnalité Bring Your Own Image](../bringyourownimage/) » pour en savoir plus sur les paramètres de cette fonctionnalité.
 
->  [!primary]
+> [!primary]
 >
 > Certains systèmes d'exploitation ou plates-formes propriétaires tels que Plesk ou Windows nécessitent des licences qui génèrent des frais supplémentaires. Vous pouvez acheter des licences [auprès de OVHcloud](https://www.ovhcloud.com/fr/bare-metal/os/) ou auprès d'un revendeur externe. Vous devrez ensuite appliquer votre licence, dans le système d'exploitation lui-même ou à l'aide de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 >
@@ -63,7 +63,7 @@ Si vous avez sélectionné un système d'exploitation compatible GNU/Linux, l'op
 
 ![RTM](images/reinstalling-your-server-04.png){.thumbnail}
 
-Réglez le curseur sur `Activer`{.action} pour l'installer. Pour en savoir plus sur la fonctionnalité RTM, consultez notre guide « [Installer le Real Time Monitoring (RTM)](../installer-rtm/).
+Réglez le curseur sur `Activer`{.action} pour l'installer. Pour en savoir plus sur la fonctionnalité RTM, consultez notre guide « [Installer le Real Time Monitoring (RTM)](../installer-rtm/) ».
 
 #### Ajout d'une clé SSH (facultatif)
 
@@ -135,7 +135,7 @@ Cependant, vous pouvez effectuer un « hard reboot » à tout moment dans votre 
 
 ### Sécurisation de votre serveur dédié
 
-Comme expliqué dans la section « Objectif » de ce guide, vous êtes l'administrateur de votre serveur dédié. En tant que tel, vous êtes responsable de vos données et de leur sécurité. Pour en savoir plus sur la sécurisation de votre serveur, consultez notre guide « [Sécuriser un serveur dédié](../securiser-un-serveur-dedie/).
+Comme expliqué dans la section « Objectif » de ce guide, vous êtes l'administrateur de votre serveur dédié. En tant que tel, vous êtes responsable de vos données et de leur sécurité. Pour en savoir plus sur la sécurisation de votre serveur, consultez notre guide « [Sécuriser un serveur dédié](../securiser-un-serveur-dedie/) ».
 
 ### Configuration réseau
 
