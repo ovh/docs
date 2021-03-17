@@ -21,7 +21,7 @@ Please note that you may also see the term KVM (Keyboard Video and Mouse) used f
 
 You can access the IPMI using two different methods: the Java applet (recommended) or the browser (Serial over LAN).
 
-### Access via the Java applet
+### Access via the Java applet <a name="applet-java"></a>
 
 You will need to ensure that Java is installed on your desktop for the Java applet to work. If you do not have Java installed, go to the [official page](https://www.java.com/en/download/){.external} to do so.
 
@@ -68,21 +68,21 @@ It will take several minutes for the IPMI to reboot.
 > OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
 >
 
-To begin, open IPMI in a Java applet as described in the section Accessing IPMI from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Then, click **Device** from the menu bar and select **Redirect ISO** from the drop-down menu.
+To begin, open [IPMI in a Java applet](./#applet-java) from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Then, click `Device`{.action} from the menu bar and select `Redirect ISO`{.action} from the drop-down menu.
 
 ![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
 
-Next, select the ISO you wish to use from your local computer's file system. Once you have selected your ISO, press the **Ctrl Alt Del** button in the top-right corner of the screen to reboot the server. Press the appropriate `F` key to access the boot options.
+Next, select the ISO you wish to use from your local computer's file system. Once you have selected your ISO, press the `Ctrl Alt Del`{.action} button in the top-right corner of the screen to reboot the server. Press the appropriate `F` key to access the boot options.
 
 > [!primary]
-> You may need to use the soft keyboard for inputs to register in IPMI. To access this, click the **Keyboard** option from the menu bar at the top of the window. Then, select **Soft Keyboard** from the dropdown menu and click **Show**.
+> You may need to use the soft keyboard for inputs to register in IPMI. To access this, click the `Keyboard`{.action} option from the menu bar at the top of the window. Then, select `Soft Keyboard` from the dropdown menu and click `Show`{.action}.
 >
 
 Select the **UEFI Virtual CDROM 1.00** option from the boot menu to start the server from the ISO attached previously.
 
 ![UEFI_Virt](images/UEFIVirt.jpg){.thumbnail}
 
-Complete the steps required to install the operating system. Do not forget to remove the ISO from the **Redirect ISO** option.
+Complete the steps required to install the operating system. Do not forget to remove the ISO from the "Redirect ISO" option.
 
 ### Installing an OS Utilizing IPMI v2
 
@@ -90,28 +90,28 @@ Complete the steps required to install the operating system. Do not forget to re
 > OVHcloud does not guarantee the functionality of any operating systems installed via IPMI. This route should only be taken by an experienced server administrator.
 >
 
-To begin, open IPMI in a Java applet as described in the section Accessing IPMI from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Then, click **Virtual Media** and select **Virtual Storage**.
+To begin, open [IPMI in a Java applet](./#applet-java) from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Then, click `Virtual Media`{.action} and select `Virtual Storage`{.action}.
 
 ![Virtual_Storage](images/virtual_storage.png){.thumbnail}
 
-From the new screen, select **ISO File** from the **Logical Drive Type** drop-down. Next, click **Open Image** and navigate to your ISO file. Finally, click **Plug in** and **OK** to finish.
+From the new screen, select `ISO File` from the "Logical Drive Type" drop-down menu. Next, click `Open Image`{.action} and navigate to your ISO file. Finally, click `Plug-in`{.action} and `OK`{.action} to finish.
 
 ![ISO_file](images/iso_file.png){.thumbnail}
 
-In order to be able to boot from our ISO file, we need to access the BIOS and switch our boot options. To do so, select **Power Control** and click **Set Power Reset**.
+In order to be able to boot from our ISO file, we need to access the BIOS and switch our boot options. To do so, select `Power Control`{.action} and click `Set Power Reset`{.action}.
 
 ![Power_Reserver](images/power_reset.png){.thumbnail}
 
 > [!primary]
 >
-> You may need to use the soft keyboard for inputs to register in IPMI. To access this, click the **Virtual Media** option from the menu bar at the top of the window. Then, select **Virtual Keyboard** from the drop-down menu.
+> You may need to use the soft keyboard for inputs to register in IPMI. To access this, click the `Virtual Media`{.action} option from the menu bar at the top of the window. Then, select `Virtual Keyboard`{.action} from the drop-down menu.
 >
 
-During the bootup process, press the `DEL` key when prompted to access the BIOS. You may also press the `F11` key and navigate to the BIOS by selecting the option **Enter Setup**.
+During the bootup process, press the `DEL` key when prompted to access the BIOS. You may also press the `F11` key and navigate to the BIOS by selecting the option `Enter Setup`{.action}.
 
 ![Boot_Menu](images/boot_menu.png){.thumbnail}
 
-In the BIOS navigate to the **Boot** tab and change the **UEFI Boot Order #1** to **UEFI USB CD/DVD:UEFI: ATEN Virtual CDROM YSOJ**.
+In the BIOS navigate to the `Boot`{.action} tab and change the `UEFI Boot Order #1` to `UEFI USB CD/DVD:UEFI: CDROM virtuel ATEN YSOJ`.
 
 ![Bios](images/bios.png){.thumbnail}
 

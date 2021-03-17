@@ -79,17 +79,17 @@ Pour commencer, ouvrez [IPMI depuis une applet Java](./#applet-java) via votre [
 
 ![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
 
-Sélectionnez ensuite l'ISO que vous souhaitez utiliser dans le système de fichiers de votre ordinateur local. Une fois que vous avez sélectionné votre ISO, appuyez sur le bouton `Ctrl Alt Suppr`{.action} dans le coin supérieur droit de l'écran pour redémarrer le serveur. Appuyez sur la touche **F** pour accéder aux options de démarrage.
+Sélectionnez ensuite l'ISO que vous souhaitez utiliser dans le système de fichiers de votre ordinateur local. Une fois que vous avez sélectionné votre ISO, appuyez sur le bouton `Ctrl Alt Del`{.action} dans le coin supérieur droit de l'écran pour redémarrer le serveur. Appuyez sur la touche `F` pour accéder aux options de démarrage.
 
 > [!primary]
 > Vous devrez peut-être utiliser le clavier logiciel pour enregistrer les entrées dans IPMI. Pour y accéder, cliquez sur l'option `Keyboard`{.action} dans la barre de menus en haut de la fenêtre. Sélectionnez ensuite `Soft Keyboard` dans le menu déroulant et cliquez sur `Show`{.action}.
-> 
+>
 
-Sélectionnez l'option **UEFI Virtual CDROM 1.00** dans le menu de démarrage (Boot) pour démarrer le serveur à partir de l'ISO précédemment attaché.
+Sélectionnez l'option `UEFI Virtual CDROM 1.00` dans le menu de démarrage (Boot) pour démarrer le serveur à partir de l'ISO précédemment attaché.
 
 ![UEFI_Virt](images/UEFIVirt.jpg){.thumbnail}
 
-Suivez les étapes requises pour installer le système d'exploitation. N'oubliez pas de supprimer l'ISO de l'option **Redirect ISO**.
+Suivez les étapes requises pour installer le système d'exploitation. N'oubliez pas de supprimer l'ISO de l'option « Redirect ISO ».
 
 ### Installation d'un système d'exploitation à l'aide d'IPMI v2
 
@@ -113,13 +113,15 @@ Afin de démarrer à partir de votre fichier ISO, vous devez accéder au BIOS et
 > Vous devrez peut-être utiliser le clavier logiciel pour enregistrer les entrées dans IPMI. Pour y accéder, cliquez sur l'option `Virtual Media`{.action} dans la barre de menus en haut de la fenêtre. Sélectionnez ensuite `Virtual Keyboard`{.action} dans le menu déroulant.
 >
 
-Pendant le processus de démarrage, appuyez sur la touche **SUPPR** lorsque vous êtes invité à accéder au BIOS. Vous pouvez également appuyer sur la touche **F11** et accéder au BIOS en sélectionnant l'option `Enter Setup`{.action}.
+Pendant le processus de démarrage, appuyez sur la touche `SUPPR` lorsque vous êtes invité à accéder au BIOS. Vous pouvez également appuyer sur la touche `F11` et accéder au BIOS en sélectionnant l'option `Enter Setup`{.action}.
 
 ![Menu_démarrage](images/boot_menu.png){.thumbnail}
 
 Dans le BIOS, naviguez jusqu'à l'onglet `Boot`{.action} et remplacez `UEFI Boot Order #1` par `UEFI USB CD/DVD:UEFI: CDROM virtuel ATEN YSOJ`.
 
-Enfin, appuyez sur la touche F4 pour enregistrer vos modifications et redémarrer le serveur.
+![Bios](images/bios.png){.thumbnail}
+
+Enfin, appuyez sur la touche `F4` pour enregistrer vos modifications et redémarrer le serveur.
 
 ## Aller plus loin
 
