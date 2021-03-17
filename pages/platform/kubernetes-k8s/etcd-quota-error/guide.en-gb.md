@@ -7,9 +7,9 @@ section: FAQ
 
 **Last updated March 15<sup>th</sup>, 2021.**
 
-A lot of customers encounter some trouble with the quota on ETCD allowed disk space.
+Some customers might encounter troubles with the quota on ETCD storage usage.
 
-## Issues
+## Issue
 
 When you want to manage an objects into your Kubernetes cluster, you can reached an error like this:
 
@@ -67,18 +67,23 @@ kubectl get certificates --all-namespaces -o json \
 
 * Update cert-manager
 
-In this case, we don't have a generic solution, but if you have use Helm, we recommend to use Helm for the update.
+There is no generic way to do this, but if you use Helm we recommend you to use it for the update.
 [Cert Manager official documentation](https://cert-manager.io/docs/installation/kubernetes/)
 
 * Fix the issue
 
-We recommend you to follow the steps for troubleshoot, and ensure all is correctly configured
+We recommend you to take the following steps to troubleshoot your cert-manager, and to ensure that everything is correctly configured:
 [Acme troubleshoot](https://cert-manager.io/docs/faq/acme/)
 
-* Start the cert-manager operator
+* Start cert-manager
 
 ### Other usecase
 
-If cert-manager is not the root causes, you should turn to the other installed operator.
+If cert-manager is not the root causes, you should turn to the other running operators.
 
-The way is to find the objects creates by the operator, it is possible the operator create a lots of objects like cert-manager.
+We have found that the following resources can sometimes be generated continuously by existing operators:
+> backups.velero.io
+ingress.networking.k8s.io
+ingress.extensions
+
+If that still  does not cover your case, you can use a tool like [ketall](https://github.com/corneliusweig/ketall) to easily list and count resources in your cluster.
