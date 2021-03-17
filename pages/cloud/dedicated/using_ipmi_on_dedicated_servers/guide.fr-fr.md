@@ -66,9 +66,9 @@ Si tout est normal comme dans notre exemple, vous faites probablement face à un
 
 Le redémarrage de l'IPMI prend quelques minutes.
 
-> [!Primary]
->
+> [!primary]
 > Cette opération n'affecte pas le fonctionnement du serveur.
+>
 
 ### Installation d'un système d'exploitation à l'aide d'IPMI v1
 
