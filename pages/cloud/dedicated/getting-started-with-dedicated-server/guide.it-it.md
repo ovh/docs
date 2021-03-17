@@ -10,7 +10,7 @@ order: 1
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 16 febbraio 2021**
+**Ultimo aggiornamento: 16/02/2021**
 
 ## Obiettivo
 
@@ -22,7 +22,7 @@ Un server dedicato è una macchina fisica localizzata in uno dei nostri datacent
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](https://www.ovhcloud.com/fr/bare-metal/){.external} nello Spazio Cliente OVHcloud
+- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external} nello Spazio Cliente OVHcloud
 - Essere connesso al tuo server in SSH (accesso root) con Linux o tramite un desktop remoto con Windows.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 

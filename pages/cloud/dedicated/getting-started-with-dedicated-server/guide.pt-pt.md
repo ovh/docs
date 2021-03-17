@@ -9,7 +9,7 @@ section: Introdução
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em “Contribuir” nesta página.
 >
 
-**Última atualização: 16 de fevereiro de 2021**
+**Última atualização: 16/02/2021**
 
 ## Objetivo
 
@@ -66,7 +66,7 @@ Se selecionou um sistema operativo compatível GNU/Linux, aparece a opção de a
 
 ![RTM](images/reinstalling-your-server-04.png){.thumbnail}
 
-Pagar o cursor em `Ativar`{.action} para o instalar. Para saber mais sobre a funcionalidade RTM, consulte o nosso guia ["Instalar o Real Time Monitoring (RTM)"](../instalar-rtm/).
+Pagar o cursor em `Ativar`{.action} para o instalar. Para saber mais sobre a funcionalidade RTM, consulte o nosso guia [Instalar o Real Time Monitoring (RTM)](../instalar-rtm/).
 
 #### Adicionar uma chave SSH (facultativo)
 
@@ -118,7 +118,7 @@ ssh root@IPv4_do_servidor
 ssh root@nome_de_referência_do_servidor
 ```
 
-Para saber mais sobre SSH, consulte o nosso guia "[Introdução ao SSH](../ssh-introduction/)".
+Para saber mais sobre SSH, consulte o nosso guia [Introdução ao SSH](../ssh-introduction/).
 
 #### Windows
 
@@ -138,7 +138,7 @@ No entanto, pode efetuar um "hard reboot" a qualquer momento na sua [Área de Cl
 
 ### Segurança do seu servidor dedicado
 
-Como explicado acima, o cliente é o administrador do seu servidor dedicado. Enquanto tal, é responsável pelos seus dados e pela sua segurança. Para saber mais sobre a segurança do seu servidor, consulte o nosso guia ["Proteger um servidor dedicado"](../proteger-um-servidor-dedicado/).
+Como explicado acima, o cliente é o administrador do seu servidor dedicado. Enquanto tal, é responsável pelos seus dados e pela sua segurança. Para saber mais sobre a segurança do seu servidor, consulte o nosso guia [Proteger um servidor dedicado](../proteger-um-servidor-dedicado/).
 
 ### Configuração de rede
 
@@ -154,11 +154,11 @@ Para mais informações sobre o modo bridge, consulte o nosso manual: [Modo brid
 
 O modo alias IP associa dois endereços IP ou mais a uma interface de rede. Isto permite que o seu servidor estabeleça várias ligações a uma rede, cada uma delas com um objetivo diferente.
 
-Para obter instruções detalhadas sobre a configuração do alias IP, consulte o manual "[Configurar o endereço IP em alias](../network-ipaliasing)".
+Para obter instruções detalhadas sobre a configuração do alias IP, consulte o manual [Configurar o endereço IP em alias](../network-ipaliasing).
 
 #### Configuração IPv6
 
-Todos os servidores dedicados OVHcloud são entregues com um bloco /64 IPv6. Para utilizar os endereços deste bloco, deve introduzir modificações na configuração da rede. Consulte o nosso guia "[Configuração IPv6](../rede-ipv6/)".
+Todos os servidores dedicados OVHcloud são entregues com um bloco /64 IPv6. Para utilizar os endereços deste bloco, deve introduzir modificações na configuração da rede. Consulte o nosso guia [Configuração IPv6](../rede-ipv6/).
 
 ### Modo rescue
 

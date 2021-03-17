@@ -134,7 +134,7 @@ Ein Neustart kann notwendig sein, um aktualisierte Konfigurationen anzuwenden od
 reboot
 ```
 
-Sie können jedoch jederzeit einen "Hard Reboot" in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie im Tab `Allgemeine Informationen`{.action} auf `...`{.action} gegenüber "Status"im **Bereich der Dienstleistungen und klicken Sie dann im Kontextfenster auf **Neu starten` und `{.action}Bestätigen` `{.action}.
+Sie können jedoch jederzeit einen "Hard Reboot" in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie im Tab `Allgemeine Informationen`{.action} auf `...`{.action} gegenüber "Status" im Bereich der **Dienstatus** und klicken Sie dann im Kontextfenster auf `Neu starten`{.action} und `Bestätigen`{.action}.
 
 ![Neustart](images/rebooting-your-server.png){.thumbnail}
 

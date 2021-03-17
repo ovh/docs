@@ -7,9 +7,9 @@ section: 'Primeros pasos'
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
+>
 
-**Última actualización: 16 de febrero de 2021**
+**Última actualización: 16/02/2021**
 
 ## Objetivo
 
@@ -31,19 +31,19 @@ Cuando su servidor dedicado esté configurado por primera vez durante el proceso
 
 ### Instalar o reinstalar el servidor dedicado
 
-Puede reinstalar fácilmente el servidor y elegir otra imagen del sistema operativo desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). En la pestaña `Información general`{.action}, haga clic en `...`{.action} delante del sistema operativo y seleccione `Instalar`{.action}.
+Puede reinstalar fácilmente el servidor y elegir otra imagen del sistema operativo desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En la pestaña `Información general`{.action}, haga clic en `...`{.action} delante del sistema operativo y seleccione `Instalar`{.action}.
 
 ![Reinstalar](images/reinstalling-your-server-00.png){.thumbnail}
 
 A continuación, seleccione `Instalar desde una plantilla de OVH`{.action} o `Instalar una de sus plantillas`{.action} para utilizar una plantilla de instalación.
 
-Para instalar una imagen personalizada en el servidor, seleccione la tercera opción `Instalar desde una imagen personalizada`{.action}. Para más información sobre los parámetros de esta funcionalidad, consulte la guía "[Utilizar la funcionalidad Bring Your Own Image](../bringyourownimage/)".
+Para instalar una imagen personalizada en el servidor, seleccione la tercera opción `Instalar desde una imagen personalizada`{.action}. Para más información sobre los parámetros de esta funcionalidad, consulte la guía [Utilizar la funcionalidad Bring Your Own Image](../bringyourownimage/).
 
 > [!primary]
 >
 > Algunos sistemas operativos o plataformas propietarias, como Plesk o Windows, necesitan licencias que generan costes adicionales. Puede adquirir licencias [con OVHcloud](https://www.ovhcloud.com/es-es/bare-metal/os/) o con un revendedor externo. A continuación, deberá aplicar la licencia en el propio sistema operativo o desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 >
-> Puede gestionar todas sus licencias en la sección `Bare Metal Cloud`{.action}, con `licencias`{.action}. En esta sección también puede contratar licencias o añadir licencias existentes a través del botón `Acciones`{.action}.
+> Puede gestionar todas sus licencias en la sección `Bare Metal Cloud`{.action}, con `Licencias`{.action}. En esta sección también puede contratar licencias o añadir licencias existentes a través del botón `Acciones`{.action}.
 >
 
 Haga clic en `Siguiente`{.action} para continuar.
@@ -124,7 +124,7 @@ Para más información sobre SSH, consulte nuestra guía [Introducción al SSH](
 
 Una vez finalizada la instalación, recibirá un mensaje de correo electrónico con la contraseña del acceso de administrador (root). Utilice estas claves de acceso para conectarse al servidor a través de RDP (**R**emote **D**esktop **P**rotocol). Una vez conectado, Windows le guiará durante la instalación inicial.
 
-### Reinicio del servidor dedicado <a name="resboot"></a>
+### Reinicio del servidor dedicado <a name="reboot"></a>
 
 Es posible que necesite reiniciar para aplicar configuraciones actualizadas o resolver un problema. En la medida de lo posible, ejecute el "soft reboot" del servidor en la siguiente línea de comandos:
 
@@ -132,7 +132,7 @@ Es posible que necesite reiniciar para aplicar configuraciones actualizadas o re
 reboot
 ```
 
-No obstante, puede realizar "hard reboot" en cualquier momento desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En la pestaña `Información general`{.action}, haga clic en `...`{.action} frente a "Estado" en la zona **estado de los servicios** y seleccione `Reiniciar`{.action} y `Aceptar`{.action} en la ventana emergente.
+No obstante, puede realizar "hard reboot" en cualquier momento desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). En la pestaña `Información general`{.action}, haga clic en `...`{.action} frente a "Estado" en la zona **Estado de los servicios** y seleccione `Reiniciar`{.action} y `Aceptar`{.action} en la ventana emergente.
 
 ![Reinicio](images/rebooting-your-server.png){.thumbnail}
 
@@ -176,6 +176,6 @@ Para más información, consulte nuestra guía [Uso de IPMI con servidores dedic
 
 [Proteger un servidor dedicado](../seguridad-de-un-servidor-dedicado/)
 
-[Activar y utilizar el modo de rescate](../ovh-rescue/)
+[Activar y utilizar el modo de rescate](../modo_de_rescate/)
 
 Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

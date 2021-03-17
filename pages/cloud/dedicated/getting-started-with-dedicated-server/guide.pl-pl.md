@@ -10,7 +10,7 @@ order: 1
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 2 kwietnia 2020 r**
+**Ostatnia aktualizacja z dnia 16/02/2021**
 
 ## Wprowadzenie
 
@@ -38,11 +38,11 @@ W prosty sposób możesz przeprowadzić reinstalację serwera i wybrać inny obr
 
 Na następnym ekranie wybierz `Zainstaluj szablon OVH`{.action} lub `Zainstaluj jeden z Twoich szablonów`{.action}, aby korzystać z szablonu instalacyjnego.
 
-Aby zainstalować spersonalizowany obraz serwera, wybierz trzecią opcję `Zainstaluj na podstawie spersonalizowanego`{.action} obrazu. Zapoznaj się z przewodnikiem ["Korzystanie z funkcji Bring Your Own Image"](./https://docs.ovh.com/gb/en/dedicated/bringyourownimage/), aby uzyskać więcej informacji na temat parametrów tej funkcji.
+Aby zainstalować spersonalizowany obraz serwera, wybierz trzecią opcję `Zainstaluj na podstawie spersonalizowanego`{.action} obrazu. Zapoznaj się z przewodnikiem ["Korzystanie z funkcji Bring Your Own Image"](https://docs.ovh.com/gb/en/dedicated/bringyourownimage/), aby uzyskać więcej informacji na temat parametrów tej funkcji.
 
 > [!primary]
 >
-> Niektóre zastrzeżone systemy operacyjne lub platformy, takie jak Plesk lub Windows, wymagają licencji, które generują dodatkowe koszty. Licencje możesz kupić [u OVHcloud](https://www.ovhcloud.com/fr/bare-metal/os/) lub u zewnętrznego resellera. Następnie zastosuj Twoją licencję do systemu operacyjnego lub za pomocą Panelu [klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+> Niektóre zastrzeżone systemy operacyjne lub platformy, takie jak Plesk lub Windows, wymagają licencji, które generują dodatkowe koszty. Licencje możesz kupić [u OVHcloud](https://www.ovhcloud.com/pl/bare-metal/os/) lub u zewnętrznego resellera. Następnie zastosuj Twoją licencję do systemu operacyjnego lub za pomocą Panelu [klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 >
 > Wszystkie licencje możesz zarządzać w sekcji `Bare Metal Cloud`{.action} z `licencjami `{.action}. W tej sekcji możesz również zamawiać licencje lub dodawać istniejące licencje za pomocą przycisku `Operacje`{.action}.
 >
@@ -133,13 +133,13 @@ Restart może być niezbędny do aktualizacji konfiguracji lub rozwiązania prob
 reboot
 ```
 
-W każdej chwili możesz jednak wykonać "reboot hard" w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Informacje ogólne`{.action} kliknij `...`{.action} naprzeciwko "Status" w strefie **stanowej usług**, następnie `kliknij Uruchom`{.action} ponownie i `Zatwierdź`{.action} w oknie kontekstowym.
+W każdej chwili możesz jednak wykonać "reboot hard" w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Informacje ogólne`{.action} kliknij `...`{.action} naprzeciwko "Status" w strefie **Stan usług**, następnie `Restart`{.action} ponownie i `Zatwierdź`{.action} w oknie kontekstowym.
 
 ![Restart](images/rebooting-your-server.png){.thumbnail}
 
 ### Bezpieczeństwo serwera dedykowanego
 
-Zgodnie z informacją w części „Wprowadzenie” niniejszego przewodnika, jesteś administratorem Twojego serwera dedykowanego. Jesteś odpowiedzialny za Twoje dane i ich bezpieczeństwo. Aby uzyskać więcej informacji na temat bezpieczeństwa serwera, zapoznaj się z naszym przewodnikiem "[Zabezpieczenie serwera dedykowanego](../porady-zabezpieczanie-serwera-dedykowanego/)".
+Zgodnie z informacją w części „Wprowadzenie” niniejszego przewodnika, jesteś administratorem Twojego serwera dedykowanego. Jesteś odpowiedzialny za Twoje dane i ich bezpieczeństwo. Aby uzyskać więcej informacji na temat bezpieczeństwa serwera, zapoznaj się z naszym przewodnikiem [Zabezpieczenie serwera dedykowanego](../porady-zabezpieczanie-serwera-dedykowanego/).
 
 ### Konfiguracja sieci
 
