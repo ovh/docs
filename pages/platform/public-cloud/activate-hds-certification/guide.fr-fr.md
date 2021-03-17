@@ -43,7 +43,7 @@ Vous aurez alors accès aux conditions particulières relatives à l'hébergemen
 
 ![activer HDS nouveau projet](images/hds-new-project.png){.thumbnail}
 
-### Activer l'option sur un projet Public Cloud existant
+### Activer l'option HDS sur un projet Public Cloud existant
 
 Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez le projet Public Cloud pour lequel vous souhaitez que les services soient certifiés HDS.
 
