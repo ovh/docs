@@ -63,7 +63,7 @@ Si vous avez sélectionné un système d'exploitation compatible GNU/Linux, l'op
 
 ![RTM](images/reinstalling-your-server-04.png){.thumbnail}
 
-Réglez le curseur sur `Activer`{.action} pour l'installer. Pour en savoir plus sur la fonctionnalité RTM, consultez notre guide [« Installer le Real Time Monitoring (RTM) »](../installer-rtm/).
+Réglez le curseur sur `Activer`{.action} pour l'installer. Pour en savoir plus sur la fonctionnalité RTM, consultez notre guide « [Installer le Real Time Monitoring (RTM)](../installer-rtm/) ».
 
 #### Ajout d'une clé SSH (facultatif)
 
@@ -135,7 +135,7 @@ Cependant, vous pouvez effectuer un « hard reboot » à tout moment dans votre 
 
 ### Sécurisation de votre serveur dédié
 
-Comme expliqué dans la section « Objectif » de ce guide, vous êtes l'administrateur de votre serveur dédié. En tant que tel, vous êtes responsable de vos données et de leur sécurité. Pour en savoir plus sur la sécurisation de votre serveur, consultez notre guide « [Sécuriser un serveur dédié](../securiser-un-serveur-dedie/).
+Comme expliqué dans la section « Objectif » de ce guide, vous êtes l'administrateur de votre serveur dédié. En tant que tel, vous êtes responsable de vos données et de leur sécurité. Pour en savoir plus sur la sécurisation de votre serveur, consultez notre guide « [Sécuriser un serveur dédié](../securiser-un-serveur-dedie/) ».
 
 ### Configuration réseau
 

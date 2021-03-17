@@ -6,37 +6,40 @@ section: 'Primeiros passos'
 order: 1
 ---
 
-**Última atualização: 21/12/2020**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+**Última atualização: 16/03/2021**
  
 ## Objetivo
 
-Um VPS (Virtual Private Server) é um servidor dedicado virtual. Ao contrário de um alojamento web (com recursos partilhados), cuja gestão técnica cabe à OVHcloud, a gestão e a utilização de um VPS é da total responsabilidade do cliente.
+Um VPS (Virtual Private Server) é um servidor dedicado virtual. Ao contrário de um alojamento web (partilhado) onde a gestão técnica é da responsabilidade da OVHcloud, a administração do VPS é da total responsabilidade do cliente.
 
-**Este guia fornece instruções sobre a instalação e a gestão básica do VPS que acabou de contratar.**
-
+**Este guia fornece informações de base para o ajudar a gerir o seu VPS.**
 
 > [!warning]
+>A OVHcloud fornece-lhe serviços pelos quais é responsável em termos de configuração e gestão. Assim, é responsável pelo seu bom funcionamento.
 >
-> A utilização e a gestão dos serviços da OVHcloud são da responsabilidade do cliente. A OVHcloud não tem permissões de acesso aos VPS e o cliente é o único responsável pela gestão e pela segurança do serviço. Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção abaixo intitulada: «Quer saber mais?»
-> 
-
+Se encontrar dificuldades para realizar estas ações, contacte um fornecedor de serviços especializado e/ou discuta o problema com a nossa comunidade de utilizadores em https://community.ovh.com/en/. A OVHcloud não lhe pode fornecer apoio técnico a este respeito.
+>
 
 ## Requisitos
 
 - Ter contratado um [VPS OVHcloud](https://www.ovhcloud.com/pt/vps/){.external}.
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
-- Ter recebido um e-mail depois da instalação com os dados de utilizador.
+- Dispor dos dados de acesso enviados por e-mail após a instalação
 
 ## Instruções
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, dirija-se à secção `Bare Metal Cloud`{.action} e selecione o seu servidor no menu à esquerda, em `VPS`{.action}. 
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, dirija-se à secção `Bare Metal Cloud`{.action} e selecione o seu servidor no menu à esquerda, em `Servidores privados virtuais`{.action}. 
 
-Este painel de controlo contém informações importantes sobre o serviço e permite-lhe realizar operações essenciais. O seu aspeto pode variar em função da gama do VPS. 
+Este painel de controlo contém informações importantes sobre o serviço e permite-lhe realizar operações essenciais. O seu aspeto pode variar em função da gama do VPS.
 
-- Se acabou de encomendar um VPS, a referência terá a seguinte forma: *vps-XXXXXXX.vps.ovh.net* (em que os *X* são uma sequência de algarismos e letras). 
-- Se dispõe de um VPS mais antigo, reparará que a referência tem uma estrutura diferente: *vpsXXXX.ovh.net* (em que os *X* são algarismos). 
+- Se acabou de encomendar um VPS, a referência terá a seguinte forma: *vps-XXXXXXX.vps.ovh.net* (em que os *X* são uma sequência de algarismos e letras).
+- Se dispõe de um VPS mais antigo, reparará que a referência tem uma estrutura diferente: *vpsXXXX.ovh.net* (em que os *X* são algarismos).
 
-Quanto à gama atual de VPS, continue a ler este guia a partir da secção **Primeiros passos (gama VPS atual)**. 
+Quanto à gama atual de VPS, continue a ler este guia a partir da secção **Primeiros passos (gama VPS atual)**.
 
 Quanto a modelos VPS mais antigos, prossiga a leitura deste guia clicando na seguinte ligação: [Primeiros passos (gama VPS antiga)](./#primeiros-passos-gama-vps-antiga_1).
 
@@ -59,7 +62,7 @@ Uma vez aberto o terminal, introduza o comando seguinte para se conectar ao VPS 
 ssh nome_de_utilizador@IPv4_do_VPS
 ```
 
-Como estará conectado com privilégios root (utilizador sudo), pode introduzir comandos para efetuar tarefas de administração. Mas, antes de mais, é recomendável que altere a sua palavra-passe:
+Uma vez que está ligado com elevadas taxas de utilização (um utilizador *sudo*), pode introduzir comandos para efetuar tarefas administrativas. Mas, antes de mais, é recomendável que altere a sua palavra-passe:
 
 ```sh
 ~$ sudo passwd
@@ -68,7 +71,7 @@ Retype new password:
 passwd: password updated successfully
 ```
 
-Atenção: as palavras-passe não são exibidas. De seguida, passe para o utilizador root e defina a palavra-passe admin:
+Atenção: as palavras-passe não são exibidas. De seguida, passe para o utilizador "root" e defina a sua palavra-passe admin:
 
 ```sh
 ~$ sudo su -
@@ -82,6 +85,18 @@ passwd: password updated successfully
 
 Por razões de segurança, a ligação ao utilizador "root" é desativada de forma padrão. Para autorizar este tipo de ligações, consulte as instruções [deste manual](../root-password/#ativar-a-password-root_1).
 
+#### Reinicialização do VPS (gama atual) <a name="reboot-current-range"></a>
+
+Pode ser necessário um reboot para aplicar configurações atualizadas ou para resolver um problema. Na medida do possível, faça o "soft reboot" do servidor através da seguinte linha de comando:
+
+```sh
+reboot
+```
+
+No entanto, pode efetuar um "hard reboot" a qualquer momento na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). No separador `Página Inicial`{.action}, clique em `...`{.action} em face de "Boot" na zona **O seu VPS** e, a seguir, em `Reiniciar o meu VPS`{.action} e `Confirmar`{.action} na janela contextual.
+
+![Reiniciar](images/reboot-vps-current.png){.thumbnail}
+
 #### Instalação ou reinstalação do VPS (gama atual)
 
 Pode realizar qualquer reinstalação diretamente a partir da Área de Cliente OVHcloud. No separador «Home», procure «SO/Distribuição» na caixa **O seu VPS**. Clique em `...`{.action} e, a seguir, em `Reinstalar o meu VPS`{.action}.
@@ -91,7 +106,7 @@ Pode realizar qualquer reinstalação diretamente a partir da Área de Cliente O
 Depois, surge uma janela onde poderá escolher:
 
 - o sistema operativo;
-- uma chave SSH, caso já tenha criado chaves na Área de Cliente.
+- uma [chave SSH](../../dedicated/criar-chaves-ssh-dedicadas/) (opcional).
 
 ![Reinstalação do VPS](images/2020panel_01.png){.thumbnail}
 
@@ -108,7 +123,7 @@ Durante a instalação, irá surgir uma barra de progresso. Esta indica o andame
 
 #### Conexão ao VPS (gama antiga)
 
-Após a instalação (ou reinstalação) do VPS, é enviado um e-mail com a palavra-passe de acesso root via SSH. O SSH é um protocolo de comunicação segura. Para saber mais, consulte [este guia de introdução ao SSH para os servidores dedicados OVHcloud](../../dedicated/ssh-introducao/). 
+Após a instalação (ou reinstalação) do VPS, é enviado um e-mail com a palavra-passe de acesso root via SSH. O SSH é um protocolo de comunicação segura. Para saber mais, consulte [este guia de introdução ao SSH para os servidores dedicados OVHcloud](../../dedicated/ssh-introducao/).
 
 O acesso ao VPS é feito através do terminal de linhas de comando (Linux ou MAC) ou, no caso dos sistemas Windows, por intermédio de um software de terceiros (por exemplo, PuTTy).
 
@@ -128,9 +143,21 @@ Ou:
 ssh root@Referência_do_seu_VPS
 ```
 
+#### Reinicialização do VPS (gama antiga) <a name="reboot-older-range"></a>
+
+Pode ser necessário um reboot para aplicar configurações atualizadas ou para resolver um problema. Na medida do possível, faça o "soft reboot" do servidor através da seguinte linha de comando:
+
+```sh
+reboot
+```
+
+No entanto, pode efetuar um "hard reboot" a qualquer momento na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). No separador `Página Inicial`{.action}, clique em `Reiniciar o meu VPS`{.action} e `Confirmar`{.action} na janela contextual.
+
+![Reiniciar](images/reboot-vps-older.png){.thumbnail}
+
 #### Instalação ou reinstalação do VPS (gama antiga)
 
-A instalação é realizada através da Área de Cliente. Para tal, clique no botão `Reinstalar o meu VPS`{.action}:
+A instalação é realizada através da Área de Cliente. Para tal, clique no botão `Reinstalar o meu VPS`{.action} a partir do separador `Página Inicial`{.action}:
 
 ![Reinstalação do VPS](images/reinstall_manager.png){.thumbnail}
 
@@ -138,8 +165,7 @@ Depois, surge uma janela onde poderá escolher:
 
 - o sistema operativo;
 - o idioma;
-- uma chave SSH, caso já tenha criado chaves na Área de Cliente.
-
+- uma [chave SSH](../../dedicated/criar-chaves-ssh-dedicadas/) (opcional).
 
 ![Menu de opções de reinstalação](images/reinstall_menu.png){.thumbnail}
 
@@ -154,10 +180,13 @@ Durante a instalação, irá surgir uma barra de progresso. Esta indica o andame
 
 ### Como proteger o VPS
 
-O cliente é responsável pela gestão do VPS, incluindo a segurança do servidor e dos dados nele armazenados. Desta forma, é o único responsável pelos dados e pela segurança destes.
+Como explicado na secção "Objetivo" deste guia, é o administrador do seu VPS. Enquanto tal, é responsável pelos seus dados e pela sua segurança.
 
-Para saber mais sobre a segurança do VPS, consulte o guia [Como proteger um VPS](../como-proteger-vps/){.external}.
+Para obter conselhos de base, consulte o guia [Proteger um VPS](../como-proteger-vps/).
 
+### Associar um domínio
+
+A utilização do seu VPS para a publicação de um website implica normalmente a associação de um nome de domínio via DNS. Se gerir o seu domínio na OVHcloud, consulte o nosso guia sobre a [modificação da sua zona DNS](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/) para obter instruções.
 
 ### Como proteger um domínio com um certificado SSL
 
@@ -167,9 +196,10 @@ O certificado SSL pode ser instalado manualmente pelo utilizador no VPS. Para ta
 
 Se preferir uma instalação automática, recomendamos o [SSL Gateway](https://www.ovh.pt/ssl-gateway/). Para mais informação, consulte a [página do produto](https://www.ovh.pt/ssl-gateway/){.external} ou o [manual](https://docs.ovh.com/pt/ssl-gateway/){.external} relativo a esta oferta.
 
-
 ## Quer saber mais?
 
 Consulte o manual [Introdução ao SSH](../../dedicated/ssh-introducao/){.external}.
+
+[Proteger um VPS](../como-proteger-vps/)
 
 Ou fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
