@@ -7,7 +7,7 @@ section: FAQ
 
 **Last updated March 15<sup>th</sup>, 2021.**
 
-A lot of customers encounter some trouble with the quota on ETCD allowed disk space.
+Some customers might encounter troubles with the quota on ETCD storage usage.
 
 ## Issues
 
