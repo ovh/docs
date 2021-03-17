@@ -81,4 +81,9 @@ We recommend you to take the following steps to troubleshoot your cert-manager, 
 
 If cert-manager is not the root causes, you should turn to the other running operators.
 
-The way is to find the objects creates by the operator, it is possible the operator create a lots of objects like cert-manager.
+We have found that the following resources can sometimes be generated continuously by existing operators:
+> backups.velero.io
+ingress.networking.k8s.io
+ingress.extensions
+
+If that still  does not cover your case, you can use a tool like [ketall](https://github.com/corneliusweig/ketall) to easily list and count resources in your cluster.
