@@ -85,7 +85,7 @@ passwd: password updated successfully
 
 Aus Sicherheitsgründen ist die Verbindung mit dem Root-Benutzer standardmäßig deaktiviert. Wenn Sie diese Verbindungen erlauben möchten, folgen Sie den Instruktionen in [dieser Anleitung](../root-password/#rooterlauben).
 
-#### Neustart Ihres VPS verbinden (aktuelle Reihe) <a name="reboot-current-range"></a>
+#### Neustart Ihres VPS (aktuelle Reihe) <a name="reboot-current-range"></a>
 
 Ein Neustart kann notwendig sein, um aktualisierte Konfigurationen anzuwenden oder Fehler zu beheben. Wenn möglich, führen Sie über die Befehlszeile einen "Soft Reboot" des Servers durch:
 
@@ -143,7 +143,7 @@ Alternativ:
 ssh root@Referenz_Ihres_VPS
 ```
 
-#### Neustart Ihres VPS verbinden (alte Reihe) <a name="reboot-older-range"></a>
+#### Neustart Ihres VPS (alte Reihe) <a name="reboot-older-range"></a>
 
 Ein Neustart kann notwendig sein, um aktualisierte Konfigurationen anzuwenden oder Fehler zu beheben. Wenn möglich, führen Sie über die Befehlszeile einen "Soft Reboot" des Servers durch:
 
