@@ -10,7 +10,7 @@ order: 1
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 26-02-2021**
+**Ostatnia aktualizacja z dnia 16-03-2021**
  
 ## Wprowadzenie
 
@@ -84,6 +84,18 @@ passwd: password updated successfully
 
 Ze względów bezpieczeństwa połączenie z użytkownikiem "root" zostało wyłączone. Jeśli chcesz zezwolić na tego typu połączenia, skorzystaj z instrukcji zawartych w [tym przewodniku](../root-password/#wlacz-haslo-root_1).
 
+#### Restart Twojego serwera VPS (gama aktualna) <a name="reboot-current-range"></a>
+
+Restart może być niezbędny do aktualizacji konfiguracji lub rozwiązania problemu. Jeśli to możliwe, wykonaj "soft reboot" serwera za pomocą wiersza poleceń:
+
+```sh
+reboot
+```
+
+W każdej chwili możesz jednak wykonać "reboot hard" w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Strona główna`{.action} kliknij `...`{.action} naprzeciwko "Boot" w strefie **Twój VPS**, następnie `Restart serwera VPS`{.action} ponownie i `Zatwierdź`{.action} w oknie kontekstowym.
+
+![Restart](images/reboot-vps-current.png){.thumbnail}
+
 #### Instalacja lub reinstalacja Twojego serwera VPS (gama aktualna)
 
 Każdą reinstalację możesz przeprowadzić bezpośrednio z poziomu panelu klienta OVHcloud. Z zakładce „Strona główna” odszukaj  „OS / Dystrybucja” w części **Twój VPS**. Kliknij `...`{.action}, a następnie `Reinstalacja serwera VPS`{.action}.
@@ -129,6 +141,18 @@ Albo:
 ```sh
 ssh root@your_VPS_reference_name
 ```
+
+#### Restart Twojego serwera VPS (poprzednia gama) <a name="reboot-older-range"></a>
+
+Restart może być niezbędny do aktualizacji konfiguracji lub rozwiązania problemu. Jeśli to możliwe, wykonaj "soft reboot" serwera za pomocą wiersza poleceń:
+
+```sh
+reboot
+```
+
+W każdej chwili możesz jednak wykonać "reboot hard" w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Strona główna`{.action} kliknij  `Restart serwera VPS`{.action} ponownie i `Zatwierdź`{.action} w oknie kontekstowym.
+
+![Restart](images/reboot-vps-older.png){.thumbnail}
 
 #### Instalacja lub reinstalacja Twojego serwera VPS (poprzednia gama)
 
