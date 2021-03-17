@@ -67,7 +67,7 @@ kubectl get certificates --all-namespaces -o json \
 
 * Update cert-manager
 
-In this case, we don't have a generic solution, but if you have use Helm, we recommend to use Helm for the update.
+There is no generic way to do this, but if you use Helm we recommend you to use it for the update.
 [Cert Manager official documentation](https://cert-manager.io/docs/installation/kubernetes/)
 
 * Fix the issue
