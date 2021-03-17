@@ -72,7 +72,7 @@ There is no generic way to do this, but if you use Helm we recommend you to use 
 
 * Fix the issue
 
-We recommend you to follow the steps for troubleshoot, and ensure all is correctly configured
+We recommend you to take the following steps to troubleshoot your cert-manager, and to ensure that everything is correctly configured:
 [Acme troubleshoot](https://cert-manager.io/docs/faq/acme/)
 
 * Start the cert-manager operator
