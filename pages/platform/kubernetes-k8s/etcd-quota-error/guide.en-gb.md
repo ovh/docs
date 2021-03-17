@@ -9,7 +9,7 @@ section: FAQ
 
 Some customers might encounter troubles with the quota on ETCD storage usage.
 
-## Issues
+## Issue
 
 When you want to manage an objects into your Kubernetes cluster, you can reached an error like this:
 
