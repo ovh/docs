@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 1
 ---
 
-**Dernière mise à jour le 16 février 2021**
+**Dernière mise à jour le 16/02/2021**
 
 ## Objectif
 
@@ -40,7 +40,7 @@ Pour pouvoir installer une image personnalisée sur le serveur, choisissez la tr
 >
 > Certains systèmes d'exploitation ou plates-formes propriétaires tels que Plesk ou Windows nécessitent des licences qui génèrent des frais supplémentaires. Vous pouvez acheter des licences [auprès de OVHcloud](https://www.ovhcloud.com/fr/bare-metal/os/) ou auprès d'un revendeur externe. Vous devrez ensuite appliquer votre licence, dans le système d'exploitation lui-même ou à l'aide de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 >
-Vous pouvez gérer toutes vos licences dans la section `Bare Metal Cloud`{.action} sous `Licences`{.action}. Dans cette section, vous pouvez également commander des licences ou ajouter des licences existantes via le bouton `Actions`{.action}.
+> Vous pouvez gérer toutes vos licences dans la section `Bare Metal Cloud`{.action} sous `Licences`{.action}. Dans cette section, vous pouvez également commander des licences ou ajouter des licences existantes via le bouton `Actions`{.action}.
 >
 
 Cliquez sur `Suivant`{.action} pour continuer.
@@ -87,7 +87,7 @@ Dans la nouvelle fenêtre, entrez un ID (nom de votre choix) et la clé elle-mê
 
 ![Personnaliser la configuration de la partition](images/SSH_12.png){.thumbnail}
 
-Pour obtenir une explication détaillée sur la génération de clés SSH, reportez-vous notre [guide](../creer-cle-ssh-serveur-dediees/).
+Pour obtenir une explication détaillée sur la génération de clés SSH, reportez-vous à notre [guide](../creer-cle-ssh-serveur-dediees/).
 
 > [!warning]
 >OVHcloud vous fournit des services dont vous êtes responsable en ce qui concerne leur configuration et leur gestion. Vous êtes donc responsable de leur bon fonctionnement.
@@ -121,7 +121,7 @@ Pour en savoir plus sur SSH, consultez notre guide « [Introduction au SSH](../s
 
 Une fois l'installation terminée, vous recevrez un e-mail contenant votre mot de passe pour l'accès administrateur (root). Vous devez utiliser ces informations d'identification pour vous connecter au serveur via RDP (**R**Remote **D**esktop **P**rotocol). Une fois connecté, Windows vous guidera tout au long de l'installation initiale.
 
-### Redémarrage de votre serveur dédié
+### Redémarrage de votre serveur dédié <a name="reboot"></a>
 
 Un redémarrage peut être nécessaire pour appliquer des configurations mises à jour ou pour résoudre un problème. Dans la mesure du possible, effectuez un « soft reboot » du serveur via la ligne de commande suivante :
 
@@ -129,7 +129,7 @@ Un redémarrage peut être nécessaire pour appliquer des configurations mises �
 reboot
 ```
 
-Cependant, vous pouvez effectuer un « hard reboot » à tout moment dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face de « Statut » dans la zone **Etat des services**, puis cliquez sur `Redémarrer`{.action} et `Valider`{.action} dans la fenêtre contextuelle.
+Cependant, vous pouvez effectuer un « hard reboot » à tout moment dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face de « Statut » dans la zone **Etat des services**, puis cliquez sur `Redémarrer`{.action} et `Valider`{.action} dans la fenêtre contextuelle.
 
 ![Redémarrage](images/rebooting-your-server.png){.thumbnail}
 

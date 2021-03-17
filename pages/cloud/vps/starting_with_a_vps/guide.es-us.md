@@ -10,7 +10,7 @@ order: 1
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 26/02/2021**
+**Última actualización: 16/03/2021**
 
 ## Objetivo
 
@@ -43,9 +43,9 @@ Para la gama actual de VPS, lea detenidamente la sección siguiente de esta guí
 
 Para un modelo de VPS más antiguo, siga leyendo esta guía haciendo clic en el enlace siguiente: [Primeros pasos (antigua gama de VPS)](./#primeros-pasos-antigua-gama-de-vps_1).
 
-### Primeros pasos (gama actual de VPS):
+### Primeros pasos (gama actual de VPS)
 
-#### Conexión a su VPS
+#### Conexión a su VPS (gama actual de VPS)
 
 Al instalar el VPS por primera vez o reinstalarlo desde el área de cliente, se creará un usuario con todos los derechos y recibirá un correo electrónico con los datos de acceso.
 El nombre de usuario se generará en función del sistema operativo, por ejemplo, «ubuntu» o «debian». 
@@ -85,7 +85,19 @@ passwd: password updated successfully
 
 Por motivos de seguridad, la conexión con el usuario root está desactivada por defecto. Si debe autorizar este tipo de conexiones, consulte las instrucciones de [esta guía](../root-password/#activar-la-contrasena-root_1).
 
-#### Instalación o reinstalación de su VPS
+#### Reinicio de su VP (gama actual de VPS) <a name="reboot-current-range"></a>
+
+Es posible que necesite reiniciar para aplicar configuraciones actualizadas o resolver un problema. En la medida de lo posible, ejecute el "soft reboot" del servidor en la siguiente línea de comandos:
+
+```sh
+reboot
+```
+
+No obstante, puede realizar "hard reboot" en cualquier momento desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la pestaña `Inicio`{.action}, haga clic en `...`{.action} frente a "Boot" en la zona **Su VPS** y seleccione `Reiniciar mi VPS`{.action} y `Confirmar`{.action} en la ventana emergente.
+
+![Reboot](images/reboot-vps-current.png){.thumbnail}
+
+#### Instalación o reinstalación de su VPS (gama actual de VPS)
 
 Puede realizar cualquier reinstalación directamente desde el área de cliente de OVHcloud. En la pestaña «Inicio», busque «SO / Distribución» en la sección **Su VPS**. Haga clic en `...`{.action}, y en `Reinstalar mi VPS`{.action}.
 
@@ -109,7 +121,7 @@ En el área de cliente se mostrará una barra de progreso indicando el estado de
 
 ### Primeros pasos (antigua gama de VPS)
 
-#### Conexión a su VPS
+#### Conexión a su VPS (antigua gama de VPS)
 
 Al instalar (o reinstalar) su VPS, recibirá por correo electrónico una contraseña de acceso root, la conexión que utiliza el protocolo SSH. SSH es un protocolo de comunicaciones seguras. Para más información, consulte [esta guía de introducción al SSH para servidores dedicados OVHcloud](../../dedicated/introduccion-ssh/). 
 
@@ -131,7 +143,19 @@ Como alternativa, también puede utilizar este comando:
 ssh root@referencia_de_su_VPS
 ```
 
-#### Instalación o reinstalación de su VPS
+#### Reinicio de su VP (antigua gama de VPS) <a name="reboot-older-range"></a>
+
+Es posible que necesite reiniciar para aplicar configuraciones actualizadas o resolver un problema. En la medida de lo posible, ejecute el "soft reboot" del servidor en la siguiente línea de comandos:
+
+```sh
+reboot
+```
+
+No obstante, puede realizar "hard reboot" en cualquier momento desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la pestaña `Inicio`{.action}, haga clic en `Reiniciar mi VPS`{.action} y `Confirmar`{.action} en la ventana emergente.
+
+![Reboot](images/reboot-vps-older.png){.thumbnail}
+
+#### Instalación o reinstalación de su VPS (antigua gama de VPS)
 
 La reinstalación se realiza directamente desde el área de cliente. Para ello, haga clic en el botón `Reinstalar mi VPS`{.action} en la pestaña `Inicio`{.action}.
 

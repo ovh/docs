@@ -10,7 +10,7 @@ order: 1
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 26/02/2021**
+**Última atualização: 16/03/2021**
  
 ## Objetivo
 
@@ -85,6 +85,18 @@ passwd: password updated successfully
 
 Por razões de segurança, a ligação ao utilizador "root" é desativada de forma padrão. Para autorizar este tipo de ligações, consulte as instruções [deste manual](../root-password/#ativar-a-password-root_1).
 
+#### Reinicialização do VPS (gama atual) <a name="reboot-current-range"></a>
+
+Pode ser necessário um reboot para aplicar configurações atualizadas ou para resolver um problema. Na medida do possível, faça o "soft reboot" do servidor através da seguinte linha de comando:
+
+```sh
+reboot
+```
+
+No entanto, pode efetuar um "hard reboot" a qualquer momento na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). No separador `Página Inicial`{.action}, clique em `...`{.action} em face de "Boot" na zona **O seu VPS** e, a seguir, em `Reiniciar o meu VPS`{.action} e `Confirmar`{.action} na janela contextual.
+
+![Reiniciar](images/reboot-vps-current.png){.thumbnail}
+
 #### Instalação ou reinstalação do VPS (gama atual)
 
 Pode realizar qualquer reinstalação diretamente a partir da Área de Cliente OVHcloud. No separador «Home», procure «SO/Distribuição» na caixa **O seu VPS**. Clique em `...`{.action} e, a seguir, em `Reinstalar o meu VPS`{.action}.
@@ -131,6 +143,18 @@ Ou:
 ssh root@Referência_do_seu_VPS
 ```
 
+#### Reinicialização do VPS (gama antiga) <a name="reboot-older-range"></a>
+
+Pode ser necessário um reboot para aplicar configurações atualizadas ou para resolver um problema. Na medida do possível, faça o "soft reboot" do servidor através da seguinte linha de comando:
+
+```sh
+reboot
+```
+
+No entanto, pode efetuar um "hard reboot" a qualquer momento na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). No separador `Página Inicial`{.action}, clique em `Reiniciar o meu VPS`{.action} e `Confirmar`{.action} na janela contextual.
+
+![Reiniciar](images/reboot-vps-older.png){.thumbnail}
+
 #### Instalação ou reinstalação do VPS (gama antiga)
 
 A instalação é realizada através da Área de Cliente. Para tal, clique no botão `Reinstalar o meu VPS`{.action} a partir do separador `Página Inicial`{.action}:
@@ -171,7 +195,6 @@ Depois de instalar e proteger o VPS, é necessário garantir a segurança do seu
 O certificado SSL pode ser instalado manualmente pelo utilizador no VPS. Para tal, consulte os manuais do sistema operativo ou do software de gestão do VPS.
 
 Se preferir uma instalação automática, recomendamos o [SSL Gateway](https://www.ovh.pt/ssl-gateway/). Para mais informação, consulte a [página do produto](https://www.ovh.pt/ssl-gateway/){.external} ou o [manual](https://docs.ovh.com/pt/ssl-gateway/){.external} relativo a esta oferta.
-
 
 ## Quer saber mais?
 

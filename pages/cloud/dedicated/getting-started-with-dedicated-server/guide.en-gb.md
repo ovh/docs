@@ -122,7 +122,7 @@ You can learn more about SSH in [this guide](../ssh-introduction/).
 
 Once the installation is completed, you will receive an email containing your password for administrative (root) access. You will need to use these credentials to connect to the server via RDP (**R**emote **D**esktop **P**rotocol). After logging in, Windows will guide you through an intial setup.
 
-### Restarting your dedicated server
+### Restarting your dedicated server <a name="reboot"></a>
 
 A reboot might become necessary in order to apply updated configurations or to fix an issue. Whenever feasible, perform a "soft reboot" via the command line:
 
