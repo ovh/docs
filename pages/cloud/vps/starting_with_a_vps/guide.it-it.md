@@ -10,7 +10,7 @@ order: 1
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 26/02/2021**
+**Ultimo aggiornamento: 16/03/2021**
 
 ## Obiettivo
 
@@ -84,6 +84,18 @@ passwd: password updated successfully
 
 Per motivi di sicurezza, la connessione con l'utente "root" viene disattivata di default. Per autorizzare questo tipo di connessioni, consulta questa [guida](../root-password/#attiva-la-password-di-root_1).
 
+#### Riavvio del tuo VPS (gamma attuale) <a name="reboot-current-range"></a>
+
+Il riavvio può essere necessario per applicare configurazioni aggiornate o risolvere un problema. Per quanto possibile, effettua un "soft reboot" del server tramite la seguente linea di comando:
+
+```sh
+reboot
+```
+
+ma è possibile effettuare un reboot "hard" in qualsiasi momento dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Home Page`{.action}, clicca `...`{.action} in corrispondenza di "Boot" nella sezione **Il tuo VPS** e poi clicca su `Riavvia il tuo VPS`{.action} e `Conferma`{.action} nella finestra contestuale.
+
+![Riavvia](images/reboot-vps-current.png){.thumbnail}
+
 #### Installa o reinstalla il tuo VPS (gamma attuale)
 
 Le operazioni di installazione possono essere effettuate direttamente dallo Spazio Cliente OVHcloud. Apri la scheda “Home Page”, seleziona “SO/Distribuzione” nell’aera **Il tuo VPS**, quindi clicca sui tre puntini`...`{.action} e infine su `Reinstalla il tuo VPS`{.action}.
@@ -129,6 +141,18 @@ o
 ```sh
 ssh root@indirizzo_di_riferimento_del_tuo_VPS
 ```
+
+#### Riavvio del tuo VPS (gamma meno recente) <a name="reboot-older-range"></a>
+
+Il riavvio può essere necessario per applicare configurazioni aggiornate o risolvere un problema. Per quanto possibile, effettua un "soft reboot" del server tramite la seguente linea di comando:
+
+```sh
+reboot
+```
+
+ma è possibile effettuare un reboot "hard" in qualsiasi momento dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Home Page`{.action}, clicca `Riavvia il tuo VPS`{.action} e `Conferma`{.action} nella finestra contestuale.
+
+![Riavvia](images/reboot-vps-older.png){.thumbnail}
 
 #### Installa o reinstalla il tuo VPS (gamma meno recente)
 
