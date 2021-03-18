@@ -55,11 +55,11 @@ Puede utilizar el siguiente comando para comprobar el nombre del nuevo dispositi
 ```
 $ lsblk
 
-sda 8:0 0 80G 0 disk
+sda       8:0    0   80G  0 disk
 ├─sda1    8:1    0 79.9G  0 part /
 ├─sda14   8:14   0    4M  0 part
-safe15 8:15 0 106M 0 part /boot/efi
-sdb 8:16 0 50G 0 disk
+└─sda15   8:15   0  106M  0 part /boot/efi
+sdb       8:16   0   50G  0 disk
 ```
 
 En este ejemplo, el disco adicional se llama `sdb`.
@@ -70,16 +70,16 @@ Ejecute `fdisk` para crear una partición en el disco. Cuando se le pida, introd
 $ sudo fdisk /dev/sdb
 
 Welcome to fdisk (util-linux 2.34).
-Changes will remain in memory only, until you to Decit write them.
+Changes will remain in memory only, until you decide to write them.
 Be careful before using the write command.
 ```
 
 ```
 Command (m for help): n
 
-Partición tipo
-   p primary (0 primary, 0 extended, 4 free)
-   e extended (container for logical partitions)
+Partition type
+   p   primary (0 primary, 0 extended, 4 free)
+   e   extended (container for logical partitions)
 
 Select (default p):
 ```
@@ -88,7 +88,7 @@ Select (default p):
 Partition number (1-4, default 1): 
 
 First sector (2048-104857599, default 2048):
-Last sector, +/-sectores or +/-size {K,M,G,T,P} (2048-104857599, default 104857599):
+Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-104857599, default 104857599):
 
 Created a new partition 1 of type 'Linux' and of size 50 GiB.
 ```
@@ -96,7 +96,7 @@ Created a new partition 1 of type 'Linux' and of size 50 GiB.
 ```
 Command (m for help): w
 
-La partición mesa cuenta con una buena alternativa.
+The partition table has been altered.
 Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
@@ -129,22 +129,22 @@ En la última línea, puede ver que el disco adicional está ahora montado a `/m
 
 ```
 $ df -h
-Filesystem Size Used Avail Use% Mounted on
-udev 1.9G 0 1.9G 0% /dev
-tmpfs 385M 1.1M 384M 1% /run
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           385M  1.1M  384M   1% /run
 /dev/sda1        78G  2.4G   75G   4% /
 tmpfs           1.9G     0  1.9G   0% /dev/shm
 tmpfs           5.0M     0  5.0M   0% /run/lock
 tmpfs           1.9G     0  1.9G   0% /sys/fs/cgroup
-/dev/sda15 105M 3.9M 101M 4% /boot/efi
+/dev/sda15      105M  3.9M  101M   4% /boot/efi
 /dev/loop1       68M   68M     0 100% /snap/lxd/18150
 /dev/loop3       32M   32M     0 100% /snap/snapd/10707
 /dev/loop4       56M   56M     0 100% /snap/core18/1944
 /dev/loop5       70M   70M     0 100% /snap/lxd/19188
-tmpfs 385M 0 385M 0% /run/user/0
+tmpfs           385M     0  385M   0% /run/user/0
 /dev/loop6       56M   56M     0 100% /snap/core18/1988
 /dev/loop2       32M   32M     0 100% /snap/snapd/11036
-tmpfs 385M 0 385M 0% /run/user/1000
+tmpfs           385M     0  385M   0% /run/user/1000
 /dev/sdb1        49G   53M   47G   1% /mnt/disk
 ```
 
@@ -241,7 +241,7 @@ DISKPART> san policy = OnlineAll
 DiskPart successfully changed the SAN policy for the current operating system.
 
 - Implementation of the strategy on the extra disk:
-[Código] DISKPART> list disk
+[Code] DISKPART> list disk
 
 Disk ### Status Size Free Dyn Gpt
 -------- ------------- ------- ------- --- ---
@@ -262,15 +262,15 @@ Disk atributos cleared successfully.
 ```
 
 ```
-DISKPART> atributos disk
+DISKPART> attributes disk
 
 Current Read-only State : No
-Read-only: No
-Boot Disk: No
-Pagefile Disk: No
-Hibernación File Disk : No
-Crashdump Disk: No
-Clustered Disk: No
+Read-only : No
+Boot Disk : No
+Pagefile Disk : No
+Hibernation File Disk : No
+Crashdump Disk : No
+Clustered Disk : No
 ```
 
 ```

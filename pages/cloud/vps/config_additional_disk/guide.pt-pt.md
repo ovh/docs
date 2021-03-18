@@ -41,7 +41,7 @@ Tome nota das informações de tarifação e clique em `Encomendar`{.action}. Se
 > [!warning]
 > A OVHcloud fornece-lhe serviços pelos quais é responsável em termos de configuração e gestão. Assim, é responsável pelo seu bom funcionamento.
 >
->Se encontrar dificuldades para realizar estas ações, contacte um fornecedor de serviços especializado e/ou discuta o problema com a nossa comunidade de utilizadores em https://community.ovh.com/. A OVHcloud não lhe pode fornecer apoio técnico sobre este assumpto.
+> Se encontrar dificuldades para realizar estas ações, contacte um fornecedor de serviços especializado e/ou discuta o problema com a nossa comunidade de utilizadores em <https://community.ovh.com/>. A OVHcloud não lhe pode fornecer apoio técnico sobre este assumpto.
 >
 
 #### Num VPS Linux
@@ -55,11 +55,11 @@ Pode utilizar o seguinte comando para verificar o nome do novo periférico:
 ```
 $ lsblk
 
-sda 8:0 0 80G 0 disk
-├ ─ sda1 8:1 0 79.9G 0 parte /
-├ ─ sda14 8:14 0 4M 0 parte
-└ ─ sda15 8:15 0 106M 0 parte /boot/efi
-sdb 8:16 0 50G 0 disk
+sda       8:0    0   80G  0 disk
+├─sda1    8:1    0 79.9G  0 part /
+├─sda14   8:14   0    4M  0 part
+└─sda15   8:15   0  106M  0 part /boot/efi
+sdb       8:16   0   50G  0 disk
 ```
 
 Neste exemplo, o disco adicional é chamado `sdb`.
@@ -70,16 +70,16 @@ Execute o `fdisk` para criar uma partição no disco. Quando for convidado, insi
 $ sudo fdisk /dev/sdb
 
 Welcome to fdisk (util-linux 2.34).
-Mudanças will remain in memory only, until you decidiu to write them.
-Be careful before using the write encomend.
+Changes will remain in memory only, until you decide to write them.
+Be careful before using the write command.
 ```
 
 ```
 Command (m for help): n
 
-Partição-tipo
-   p primary (0 primary, 0 extended, 4 free)
-   e extended (container for logical partitions)
+Partition type
+   p   primary (0 primary, 0 extended, 4 free)
+   e   extended (container for logical partitions)
 
 Select (default p):
 ```
@@ -90,7 +90,7 @@ Partition number (1-4, default 1):
 First sector (2048-104857599, default 2048):
 Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-104857599, default 104857599):
 
-Created a new partition 1 of do tipo 'Linux' and of size 50 GiB.
+Created a new partition 1 of type 'Linux' and of size 50 GiB.
 ```
 
 ```
@@ -106,16 +106,16 @@ Agora que a partição `sdb1` foi criada, pode formá-la com ext4:
 ```
 $ sudo mkfs.ext4 /dev/sdb1
 
-Creating filesystem with 13106944 4k blocks e 3276800 inodes
+Creating filesystem with 13106944 4k blocks and 3276800 inodes
 Filesystem UUID: a667d351-cf36-49f2-94b4-daf03d7a86a6
 Superblock backups stored on blocks:
 32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208,
 4096000, 7962624, 11239424
 
-Alocating group tables: done                           
-Writing desconhecidas: done                           
-Creating Journal (65536 blocks): done
-Writing superblocks e filesystem accounting information: done  
+Allocating group tables: done                           
+Writing inode tables: done                           
+Creating journal (65536 blocks): done
+Writing superblocks and filesystem accounting information: done  
 ```
 
 A última etapa consiste em montar o disco:
@@ -129,7 +129,7 @@ Pode ver na última linha que o disco adicional está agora montado a `/mnt/disk
 
 ```
 $ df -h
-Filesystem Size Used Avail Use% Mounted on
+Filesystem      Size  Used Avail Use% Mounted on
 udev            1.9G     0  1.9G   0% /dev
 tmpfs           385M  1.1M  384M   1% /run
 /dev/sda1        78G  2.4G   75G   4% /
@@ -150,7 +150,7 @@ tmpfs           385M     0  385M   0% /run/user/1000
 
 > [!primary]
 >
-Esta etapa anterior não é persistente pois o disco será desassociado se o VPS for reiniciado. Para automatizar o processo de montagem, o ficheiro "fstab" deve ser modificado.
+This previous step is not persistent because the disk will be detached if the VPS is restarted. In order to automate the mounting process, the `fstab` file needs to be edited.
 >
 
 Em primeiro lugar, obtenha a UID (ID do bloco) do periférico:
@@ -159,12 +159,12 @@ Em primeiro lugar, obtenha a UID (ID do bloco) do periférico:
 $ sudo blkid
 /dev/sda1: LABEL="cloudimg-rootfs" UUID="e616a2cd-3c02-4c79-9823-9b1bb5c13b26" TYPE="ext4" PARTUUID="a44089a3-f407-41e6-b7a5-1ed7672cef20"
 /dev/sda15: LABEL_FATBOOT="UEFI" LABEL="UEFI" UUID="4411-1580" TYPE="vfat" PARTUUID="e1746ac7-80c1-4859-9b4d-fa6ce11b3ae9"
-/dev/loop1: TIPO="squashfs"
-/dev/loop2: TIPO="squashfs"
-/dev/loop3: TIPO="squashfs"
-/dev/loop4: TIPO="squashfs"
-/dev/loop5: TIPO="squashfs"
-/dev/loop6: TIPO="squashfs"
+/dev/loop1: TYPE="squashfs"
+/dev/loop2: TYPE="squashfs"
+/dev/loop3: TYPE="squashfs"
+/dev/loop4: TYPE="squashfs"
+/dev/loop5: TYPE="squashfs"
+/dev/loop6: TYPE="squashfs"
 /dev/sda14: PARTUUID="7d19a2c9-75df-443e-8301-0bb85931df7d"
 /dev/sdb1: UUID="87571b68-30e1-498b-a64c-49ec5cd4f31c" TYPE="ext4" PARTUUID="c965cbdf-01"
 ```
@@ -236,12 +236,12 @@ SAN Policy: Offline Shared
 ```
 
 ```
-DISKPart> san policy = OnlineAll
+DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
 
-- Implementação da estratégia sobre o extra disk:
-[Código] DISKpart> list disk
+- Implementation of the strategy on the extra disk:
+[Code] DISKPART> list disk
 
 Disk ### Status Size Free Dyn Gpt
 -------- ------------- ------- ------- --- ---
@@ -262,15 +262,15 @@ Disk atributos cleared successfully.
 ```
 
 ```
-DISKPart> atributos disk
+DISKPART> attributes disk
 
-Current Read-only State: N.o
-Read-only: N.o
-Boot Disk: N.o
-Pagefile Disk: N.o
-Hibernação File Disk: N.o
-Crashdump Disk: N.o
-Clustered Disk: N.o
+Current Read-only State : No
+Read-only : No
+Boot Disk : No
+Pagefile Disk : No
+Hibernation File Disk : No
+Crashdump Disk : No
+Clustered Disk : No
 ```
 
 ```

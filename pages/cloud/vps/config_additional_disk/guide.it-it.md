@@ -55,11 +55,11 @@ Per verificare il nome della nuova periferica utilizza il seguente comando:
 ```
 $ lsblk
 
-sda 8:0 0 80G 0 disk
-├ ─ sda1 8:1 0 79.9G 0 part /
-├ ─ sda14 8:14 0 4M 0 parte
-└ ─ sda15 8:15 0 106M 0 parte /boot/efi
-sdb 8:16 0 50G 0 disk
+sda       8:0    0   80G  0 disk
+├─sda1    8:1    0 79.9G  0 part /
+├─sda14   8:14   0    4M  0 part
+└─sda15   8:15   0  106M  0 part /boot/efi
+sdb       8:16   0   50G  0 disk
 ```
 
 In questo esempio, il disco aggiuntivo è chiamato `sdb`.
@@ -78,8 +78,8 @@ Be careful before using the write command.
 Command (m for help): n
 
 Partition type
-   p primary (0 primary, 0 extended, 4 free)
-   e extended (container for logical partitions)
+   p   primary (0 primary, 0 extended, 4 free)
+   e   extended (container for logical partitions)
 
 Select (default p):
 ```
@@ -108,13 +108,13 @@ $ sudo mkfs.ext4 /dev/sdb1
 
 Creating filesystem with 13106944 4k blocks and 3276800 inodes
 Filesystem UUID: a667d351-cf36-49f2-94b4-daf03d7a86a6
-Superblock backup stored on blocks:
+Superblock backups stored on blocks:
 32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208,
 4096000, 7962624, 11239424
 
-Allocating group table: done                           
-Writing inode table: done                           
-Creating Journal (65536 blocks): done
+Allocating group tables: done                           
+Writing inode tables: done                           
+Creating journal (65536 blocks): done
 Writing superblocks and filesystem accounting information: done  
 ```
 
@@ -130,9 +130,9 @@ Sull'ultima riga puoi vedere che il disco aggiuntivo è stato montato a/`mnt/dis
 ```
 $ df -h
 Filesystem      Size  Used Avail Use% Mounted on
-udev 1.9G 0 1.9G 0% /dev
-tmpfs 385M 1.1M 384M 1% /run
-/dev/sda1 78G 2.4G 75G 4% /
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           385M  1.1M  384M   1% /run
+/dev/sda1        78G  2.4G   75G   4% /
 tmpfs           1.9G     0  1.9G   0% /dev/shm
 tmpfs           5.0M     0  5.0M   0% /run/lock
 tmpfs           1.9G     0  1.9G   0% /sys/fs/cgroup
@@ -155,9 +155,10 @@ Questo step precedente non è persistente perché il disco verrà scollegato se 
 
 Per prima cosa recupera l'UUID (ID del blocco) della periferica:
 
+
 ```
 $ sudo blkid
-/dev/sda1: LABEL="cloudimg-rootfs" UUID="e616a2cd-3c02-4c79-9823-9b1bb5c13b26" TYPE="ext4" PARTUUID="a4089a3-f4 07-41e6-b7a5-1ed7672cef20"
+/dev/sda1: LABEL="cloudimg-rootfs" UUID="e616a2cd-3c02-4c79-9823-9b1bb5c13b26" TYPE="ext4" PARTUUID="a44089a3-f407-41e6-b7a5-1ed7672cef20"
 /dev/sda15: LABEL_FATBOOT="UEFI" LABEL="UEFI" UUID="4411-1580" TYPE="vfat" PARTUUID="e1746ac7-80c1-4859-9b4d-fa6ce11b3ae9"
 /dev/loop1: TYPE="squashfs"
 /dev/loop2: TYPE="squashfs"
@@ -241,7 +242,7 @@ DISKPART> san policy = OnlineAll
 DiskPart successfully changed the SAN policy for the current operating system.
 
 - Implementation of the strategy on the extra disk:
-[Codice] DISKpart> list disk
+[Code] DISKPART> list disk
 
 Disk ### Status Size Free Dyn Gpt
 -------- ------------- ------- ------- --- ---
@@ -252,25 +253,25 @@ Disk 0 Online 200 GB 0 B
 ```
 DISKPART> select disk 1
 
-Disk 1 is now the selected disk
+Disk 1 is now the selected disk.
 ```
 
 ```
-DISKpart> attributi disk clear readonly
+DISKPART> attributes disk clear readonly
 
-Disk attributi cleared successfully.
+Disk attributes cleared successfully.
 ```
 
 ```
-DISKpart> attributi disk
+DISKPART> attributes disk
 
 Current Read-only State : No
-Read-only: No
-Boot Disk: No
-Pagefile Disk: No
-Hibernazione File Disk: No
-Crashdump Disk: No
-Clustered Disk: No
+Read-only : No
+Boot Disk : No
+Pagefile Disk : No
+Hibernation File Disk : No
+Crashdump Disk : No
+Clustered Disk : No
 ```
 
 ```

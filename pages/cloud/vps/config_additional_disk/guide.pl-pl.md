@@ -70,7 +70,7 @@ Uruchom `fdisk`, aby utworzyć partycję na dysku. Po zaproszeniu, wprowadź `n`
 $ sudo fdisk /dev/sdb
 
 Welcome to fdisk (util-linux 2.34).
-Change will remain in memory only, until you decide to write them.
+Changes will remain in memory only, until you decide to write them.
 Be careful before using the write command.
 ```
 

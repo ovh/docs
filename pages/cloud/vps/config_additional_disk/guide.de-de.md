@@ -55,11 +55,11 @@ Sie können folgenden Befehl verwenden, um den Namen des neuen Geräts zu überp
 ```
 $ lsblk
 
-sda 8:0 0 80G 0 disk
-├─sda1 8:1 0 79.9G 0 part /
-├─sda14 8:14 0 4M 0 part
-└─ sda15 8:15 0 106M 0 part /boot/efi
-sdb 8:16 0 50G 0 disk
+sda       8:0    0   80G  0 disk
+├─sda1    8:1    0 79.9G  0 part /
+├─sda14   8:14   0    4M  0 part
+└─sda15   8:15   0  106M  0 part /boot/efi
+sdb       8:16   0   50G  0 disk
 ```
 
 In diesem Beispiel wird die zusätzliche Festplatte als `sdb` bezeichnet.
@@ -77,9 +77,9 @@ Be careful before using the write command.
 ```
 Command (m for help): n
 
-Partition Type
-   p primary (0 primary, 0 extended, 4 free)
-   e extended (container for logical partition)
+Partition type
+   p   primary (0 primary, 0 extended, 4 free)
+   e   extended (container for logical partitions)
 
 Select (default p):
 ```
@@ -88,7 +88,7 @@ Select (default p):
 Partition number (1-4, default 1): 
 
 First sector (2048-104857599, default 2048):
-Last sector, +/-sectors or +/-size {K,M,G,T,P} (2048-104857599, default 104857599):
+Last sector, +/-sectors or +/-size{K,M,G,T,P} (2048-104857599, default 104857599):
 
 Created a new partition 1 of type 'Linux' and of size 50 GiB.
 ```
@@ -96,7 +96,7 @@ Created a new partition 1 of type 'Linux' and of size 50 GiB.
 ```
 Command (m for help): w
 
-Die Partition has been altered.
+The partition table has been altered.
 Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
@@ -112,9 +112,9 @@ Superblock backups stored on blocks:
 32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208,
 4096000, 7962624, 11239424
 
-Allocating Group Table: done                           
-Writing Inode: done                           
-Creating Journal (65536 Blöcke): done
+Allocating group tables: done                           
+Writing inode tables: done                           
+Creating journal (65536 blocks): done
 Writing superblocks and filesystem accounting information: done  
 ```
 
@@ -129,23 +129,23 @@ Auf der letzten Zeile sehen Sie, dass die zusätzliche Festplatte nun auf `/mnt/
 
 ```
 $ df -h
-Filesystem Size Used Avail Use% Mounted on
-udev 1.9G 0 1.9G 0% /dev
-385M 1,1M 384M 1% /run
-/dev/sda1 78G 2.4G 75G 4% /
-Schlümpfe 1.9G 0 1.9G 0% /dev/shm
-Schlümpfe 5.0M 0 5,0M 0% /run/lock
-1.9G 0 1.9G 0% /sys/fs/cgroup
-/dev/sda15 105M 3.9M 101M 4% /boot/efi
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           385M  1.1M  384M   1% /run
+/dev/sda1        78G  2.4G   75G   4% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           1.9G     0  1.9G   0% /sys/fs/cgroup
+/dev/sda15      105M  3.9M  101M   4% /boot/efi
 /dev/loop1       68M   68M     0 100% /snap/lxd/18150
 /dev/loop3       32M   32M     0 100% /snap/snapd/10707
-/dev/loop4 56M 56M 0 100% /snap/core18/1944
-/dev/loop5 70M 70M 0 100% /snap/lxd/19188
-385M 0 385M 0% /run/user/0
-/dev/loop6 56M 56M 0 100% /snap/core18/1988
-/dev/loop2 32M 32M 0 100% /snap/snapd/11036
-385M 0 385M 0% /run/user/1000
-/dev/sdb1 49G 53M 47G 1% /mnt/disk
+/dev/loop4       56M   56M     0 100% /snap/core18/1944
+/dev/loop5       70M   70M     0 100% /snap/lxd/19188
+tmpfs           385M     0  385M   0% /run/user/0
+/dev/loop6       56M   56M     0 100% /snap/core18/1988
+/dev/loop2       32M   32M     0 100% /snap/snapd/11036
+tmpfs           385M     0  385M   0% /run/user/1000
+/dev/sdb1        49G   53M   47G   1% /mnt/disk
 ```
 
 > [!primary]
@@ -155,9 +155,10 @@ Dieser vorherige Schritt ist nicht persistent, da die Festplatte abgetrennt wird
 
 Ermitteln Sie zunächst die Block-UID des Geräts:
 
+
 ```
 $ sudo blkid
-/dev/sda1: UID="cloudimg-rootfs" UUID="e616a2cd-3c02-4c79-9823-9b1b13b26" TYPE="ext4" PARTUUID="a44089 a3f407-eeba 5 aedCecef"
+/dev/sda1: LABEL="cloudimg-rootfs" UUID="e616a2cd-3c02-4c79-9823-9b1bb5c13b26" TYPE="ext4" PARTUUID="a44089a3-f407-41e6-b7a5-1ed7672cef20"
 /dev/sda15: LABEL_FATBOOT="UEFI" LABEL="UEFI" UUID="4411-1580" TYPE="vfat" PARTUUID="e1746ac7-80c1-4859-9b4d-fa6ce11b3ae9"
 /dev/loop1: TYPE="squashfs"
 /dev/loop2: TYPE="squashfs"
@@ -166,7 +167,7 @@ $ sudo blkid
 /dev/loop5: TYPE="squashfs"
 /dev/loop6: TYPE="squashfs"
 /dev/sda14: PARTUUID="7d19a2c9-75df-443e-8301-0bb85931df7d"
-/dev/sdb1: UUID="87571b68-30e1-498b-a64c-49ec5cd4f31c" TYPE="4"PARTUUID"="c965cbdf-01"
+/dev/sdb1: UUID="87571b68-30e1-498b-a64c-49ec5cd4f31c" TYPE="ext4" PARTUUID="c965cbdf-01"
 ```
 
 Öffnen `/etc/fstab` mit einem Texteditor:
@@ -223,8 +224,9 @@ Geben `Sie` cmd ein und klicken Sie auf `OK`{.action}, um die Kommandozeilenanwe
 
 In der Eingabeaufforderung lesen Sie DISKPART:
 
+
 ```
-C:\> Diskpart
+C:\> diskpart
 ```
 
 Verwenden Sie folgende Befehle nach DISKPART, um die Festplatte online zu konfigurieren:
@@ -232,7 +234,7 @@ Verwenden Sie folgende Befehle nach DISKPART, um die Festplatte online zu konfig
 ```
 DISKPART> san
 
-SAN Policy: Offline Shared
+SAN Policy : Offline Shared
 ```
 
 ```
@@ -240,7 +242,7 @@ DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system.
 
-- Umsetzung des Strategy on the extra disk:
+- Implementation of the strategy on the extra disk:
 [Code] DISKPART> list disk
 
 Disk ### Status Size Free Dyn Gpt
@@ -256,21 +258,21 @@ Disk 1 is now the selected disk.
 ```
 
 ```
-DISKPART> attribute disk clear readonly
+DISKPART> attributes disk clear readonly
 
-Disk schreibt cleared successfully zu.
+Disk attributes cleared successfully.
 ```
 
 ```
-DISKPART> zugewiesen
+DISKPART> attributes disk
 
-Current Read-only State: Nein
-Read-only: Nein
-Boot Disk: Nein
-Pagefile Disk : Nein
-Hibernation File Disk: Nein
-Crashdump Disk: Nein
-Clustered Disk: Nein
+Current Read-only State : No
+Read-only : No
+Boot Disk : No
+Pagefile Disk : No
+Hibernation File Disk : No
+Crashdump Disk : No
+Clustered Disk : No
 ```
 
 ```
