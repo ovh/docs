@@ -135,7 +135,7 @@ Lastly, press the `F4` key to save your changes and restart the server.
 
 ## Conclusion
 
-IPMI is an important tool for an experienced server administrator. Whether you need to access the BIOS, install a custom OS, or just access your server directly from the OVHcloud Control Panel, IPMI will allow you to accomplish your most important tasks.
+IPMI is an important tool for an experienced server administrator. If you need to access the BIOS, install a custom OS, or just access your server directly from the OVHcloud Control Panel, IPMI will allow you to accomplish your most important tasks.
 
 ## Go further
 
