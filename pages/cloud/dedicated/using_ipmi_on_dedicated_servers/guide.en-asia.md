@@ -5,7 +5,7 @@ excerpt: 'With the IPMI, you can log in to your server without having to use any
 section: 'Getting started'
 ---
 
-**Last updated 17th March 2020**
+**Last updated 18th March 2020**
 
 ## Objective
 
@@ -19,7 +19,9 @@ Please note that you may also see the term KVM (Keyboard Video and Mouse) used f
 
 ## Instructions
 
-You can access the IPMI using two different methods: the Java applet (recommended) or the browser (Serial over LAN).
+You can access the IPMI using several different methods, the Java applet (recommended), the KVM tool from a web browser (recommended but only available for the latest servers) or the browser (Serial over LAN).
+
+To enable one of these methods, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). In the `Bare Metal Cloud`{.action} section, click on `Dedicated Servers`{.action} in the left-hand menu, select your server and click the `IPMI`{.action} tab.
 
 ### Access via the Java applet <a name="applet-java"></a>
 
@@ -38,6 +40,20 @@ You will then land on the login page, where you will be prompted to enter your `
 ![IPMI Java login](images/java_ipmi_login.png){.thumbnail}
 
 You can now manage your server.
+
+### Access via the KVM tool from a web browser (only for the latest servers)
+
+In the `IPMI`{.action} section of the OVHcloud Control Panel, click on `Via your web browser (KVM)`{.action}:
+
+![IPMI browser](images/KVM-web-browser01.png){.thumbnail}
+
+Activation takes a few seconds. You will receive a message confirming that the IPMI connection is available.
+
+![IPMI browser](images/KVM-web-browser02.png){.thumbnail}
+
+Then click on `Access the console (KVM)`{.action} to open the console in your web browser.
+
+![IPMI browser](images/KVM-web-browser03b.png){.thumbnail}
 
 ### Access via your browser, using Serial over LAN (SoL)
 
@@ -119,7 +135,7 @@ Lastly, press the `F4` key to save your changes and restart the server.
 
 ## Conclusion
 
-IPMI is an important tool for an experienced server administrator. Whether you need to access the BIOS, install a custom OS, or just access your server directly from the OVHcloud Control Panel, IPMI will allow you to accomplish your most important tasks.
+IPMI is an important tool for an experienced server administrator. If you need to access the BIOS, install a custom OS, or just access your server directly from the OVHcloud Control Panel, IPMI will allow you to accomplish your most important tasks.
 
 ## Go further
 

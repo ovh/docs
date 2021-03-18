@@ -53,7 +53,7 @@ Activation takes a few seconds. You will receive a message confirming that the I
 
 Then click on `Access the console (KVM)`{.action} to open the console in your web browser.
 
-![IPMI browser](images/KVM-web-browser03.png){.thumbnail}
+![IPMI browser](images/KVM-web-browser03b.png){.thumbnail}
 
 ### Access via your browser, using Serial over LAN (SoL)
 

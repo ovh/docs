@@ -59,7 +59,7 @@ L'activation prend quelques secondes. Un message vous informera de la disponibil
 
 Cliquez alors sur `Accéder à la console (KVM)` pour ouvrir la console dans votre navigateur.
 
-![IPMI navigateur](images/KVM-web-browser03.png){.thumbnail}
+![IPMI navigateur](images/KVM-web-browser03b.png){.thumbnail}
 
 ### Se connecter depuis votre navigateur en Serial over LAN (SoL)
 
