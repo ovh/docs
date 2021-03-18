@@ -5,7 +5,7 @@ excerpt: "L'IPMI permet de vous connecter à votre serveur sans utiliser un logi
 section: 'Premiers pas'
 ---
 
-**Dernière mise à jour le 17/03/2021**
+**Dernière mise à jour le 18/03/2021**
 
 ## Objectif
 
@@ -19,11 +19,15 @@ La console IPMI (Intelligent Platform Management Interface) permet d’établir 
 
 ## En pratique
 
-La connexion à l’IPMI peut s’effectuer via deux méthodes : l’applet Java (conseillé) ou le navigateur (Serial over LAN).
+La connexion à l’IPMI peut s’effectuer principalement via plusieurs méthodes : l’applet Java (conseillé) ou le navigateur (Serial over LAN).
 
-**Applet Java** : permet d'utiliser un outil KVM (clavier, vidéo, souris) via une console Java pour effectuer les actions souhaitées. Il existe ici deux options, à savoir clavier et souris.
+- **Applet Java** : permet d'utiliser un outil KVM (clavier, vidéo, souris) via une console Java pour effectuer les actions souhaitées. Il existe ici deux options, à savoir clavier et souris.
 
-**Navigateur (Serial over LAN)** : permet d'accéder à distance à la console du serveur, via un navigateur web.
+- **Navigateur (Serial over LAN)** : permet d'accéder à distance à la console du serveur, via un navigateur web.
+
+- Une troisième méthode, uniquement disponible pour les serveurs les plus récents, permet d'utiliser un outil KVM depuis un navigateur web.
+
+Pour activer l'une de ces méthodes, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Dans la partie `Bare Metal Cloud`{.action}, cliquez sur `Serveurs dédiés`{.action} dans le menu de gauche, sélectionnez votre serveur puis cliquez sur l'onglet `IPMI`{.action}.
 
 ### Se connecter avec l’applet Java <a name="applet-java"></a>
 
@@ -42,6 +46,20 @@ Vous accédez alors à la page de connexion. Entrez vos identifiants `root`, com
 ![Connexion Java IPMI](images/java_ipmi_login.png){.thumbnail}
 
 Vous pouvez désormais gérer votre serveur.
+
+### Utiliser le KVM via votre navigateur web (uniquement pour les serveurs les plus récents)
+
+Dans la partie `IPMI`{.action} de votre espace client OVHcloud, cliquez sur `Depuis votre navigateur (KVM)`{.action} :
+
+![IPMI navigateur](images/KVM-web-browser01.png){.thumbnail}
+
+L'activation prend quelques secondes. Un message vous informera de la disponibilité de la connexion via IPMI.
+
+![IPMI navigateur](images/KVM-web-browser02.png){.thumbnail}
+
+Cliquez alors sur `Accéder à la console (KVM)` pour ouvrir la console dans votre navigateur.
+
+![IPMI navigateur](images/KVM-web-browser03b.png){.thumbnail}
 
 ### Se connecter depuis votre navigateur en Serial over LAN (SoL)
 
