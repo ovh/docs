@@ -1,6 +1,6 @@
 ---
-title: Eine zusätzliche Festplatte konfigurieren
-excerpt: Erfahren Sie hier, wie Sie zusätzlichen Speicherplatz einem VPS hinzufügen und konfigurieren
+title: Zusätzliche Festplatte konfigurieren
+excerpt: Erfahren Sie hier, wie Sie auf einem VPS zusätzlichen Speicherplatz hinzufügen und konfigurieren
 slug: config-additional-disk-vps
 section: Backup Optionen
 order: 3
