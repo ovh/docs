@@ -1,7 +1,7 @@
 ---
-title: 'Verwendung der IPMI-Konsole für Dedicated Server'
+title: Verwendung der IPMI-Konsole für Dedicated Server
 slug: verwendung-ipmi-dedicated-server
-excerpt: 'Mit IPMI können Sie sich mit Ihrem Server verbinden, ohne auf externe Software zurückgreifen zu müssen.
+excerpt: Mit IPMI können Sie sich mit Ihrem Server verbinden, ohne auf externe Software zurückgreifen zu müssen
 section: Erste Schritte
 ---
 
