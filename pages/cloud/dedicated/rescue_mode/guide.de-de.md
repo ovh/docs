@@ -9,7 +9,7 @@ section: 'Diagnose & Rescue Modus'
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 15.03.2021**
+**Letzte Aktualisierung am 19.03.2021**
 
 ## Ziel
 
@@ -172,21 +172,19 @@ Nach dem Neustart Ihres Servers erhalten Sie eine E-Mail mit den Login-Daten des
 
 Um die GUI für den Windows-Rescue-Modus zu verwenden, müssen Sie eine VNC-Konsole herunterladen und installieren oder das `IPMI`-Modul in Ihrem [OVHcloud-Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} verwenden.
 
-![WinRescue Windows](images/rescue-mode-06.png){.thumbnail}
+![WinRescue Windows](images/rescue-mode-07.png){.thumbnail}
 
-Folgende Werkzeuge sind bereits in diesem Modus installiert:
+Folgende Anwendungen sind bereits in diesem Modus installiert:
 
 |Tool|Beschreibung|
 |---|---|
-|Firefox|Ein Webbrowser.|
-|Freecommander|Ein Dateimanager mit Standardfunktionen.|
-|Avast Virus Cleaner|Eine Antivirus-Anwendung mit Datenscan- und Datenbereinigungsfunktionen.|
-|ActivNIC|Ein Werkzeug, mit dem Sie eine Netzwerkschnittstelle reaktivieren können.|
-|BootSect|Ein Werkzeug, mit dem Sie den Bootsektor reparieren können.|
-|Virtual Clone Drive|Ein Tool zum Mounten von BIN-, CCD- und ISO-Dateien in einem virtuellen CD-Laufwerk.|
-|smartctl|Ein Werkzeug, mit dem Sie auf die automatischen Monitoring-Logs der Festplatten zugreifen können.|
-|Diskpart|Ein Werkzeug, mit dem Sie die Partitionen des Servers verwalten können.|
-|SysInternal|Eine Software-Suite von Microsoft, mit der Sie die Wartung des Netzwerks durchführen und die Prozesse verwalten können.|
+|Mozilla ULight|Ein Webbrowser.|
+|Memory Diagnostics Tool|Ein Windows Tool zum Testen des RAM.|
+|Explorer_Q-Dir|Ein Dateiexplorer.|
+|GSmartControl|Ein Werkzeug zur Überprüfung von Festplatten/SSDs.|
+|PhotoRec|Ein Tool zum Abruf potenziell verlorener Dateien auf einer Festplatte.|
+|SilverSHielD|Ein SSH2 und SFTP Server.|
+|System Recovery|Ein Windows Tool zur Systemwiederherstellung und Fehlerbehebung.|
 |TestDisk|Eine leistungsstarke Anwendung zur Datenwiederherstellung. Mit diesem Tool können Sie beschädigte Partitionen wiederherstellen und bearbeiten, verlorene Partitionen wiederfinden, einen Bootsektor reparieren oder sogar einen fehlerhaften MBR rekonstruieren.|
 |FileZilla|Ein Open-Source-FTP-Client. Er unterstützt SSH- und SSL-Protokolle und verfügt über ein intuitives Drag-and-Drop-Interface. Es kann verwendet werden, um Ihre Daten auf einen FTP-Server zu übertragen, zum Beispiel das FTP-Backup, das mit den meisten OVHcloud-Servermodellen bereitgestellt wird.|
 |7-ZIP|Ein Datenkomprimierungs- und Datenarchivierungstool, das die folgenden Formate liest: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR und Z. Außerdem können Sie mit diesem Tool Ihre eigenen Archive in den folgenden Formaten anlegen: BZIP2, GZIP, TAR, WIM, XZ, Z und ZIP.|

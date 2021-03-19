@@ -5,7 +5,7 @@ excerpt: 'Comment activer et utiliser le mode rescue sur un serveur dédié'
 section: 'Diagnostic et mode Rescue'
 ---
 
-**Dernière mise à jour le 09/02/2021**
+**Dernière mise à jour le 19/03/2021**
 
 ## Objectif
 
@@ -144,22 +144,19 @@ Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos identi
 
 Pour utiliser le mode rescue proposé par Windows, vous devez télécharger et installer une console VNC ou utiliser le module `IPMI` dans votre [espace client OVH](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
-![WinRescue Windows](images/rescue-mode-06.png){.thumbnail}
+![WinRescue Windows](images/rescue-mode-07.png){.thumbnail}
 
 Les outils suivants sont déjà installés dans ce mode :
 
 |Outil|Description|
 |---|---|
-|Firefox|Un navigateur web.|
-|Freecommander|Un gestionnaire de fichiers avec toutes les fonctionnalités standards dont vous avez besoin.|
-|NTPWEdit|Un gestionnaire de mots de passe facile à utiliser. Il vous permet de réactiver ou de modifier les mots de passe des comptes utilisateur dans votre serveur. Cet outil est pratique en cas de perte d'informations de connexion ou pour la réactivation d'un compte de sécurité.|
-|Avast Virus Cleaner|Une application antivirus avec des capacités de balayage et de nettoyage des fichiers.|
-|ActivNIC|Un outil vous permettant de réactiver une carte d'interface réseau.|
-|BootSect|Un outil vous permettant de réparer le secteur d'amorçage.|
-|Virtual Clone Drive|Un outil vous permettant de monter des fichiers BIN, CCD et ISO dans un lecteur de CD virtuel.|
-|smartCTL|Un outil vous permettant d'accéder aux logs automatiques de monitoring des disques durs.|
-|Diskpart|Un outil vous permettant de manipuler les partitions du serveur.|
-|SysInternal|Une suite logicielle de Microsoft vous permettant d’effectuer la maintenance du réseau et de gérer les processus.|
+|Mozilla ULight|Un navigateur web.|
+|Memory Diagnostics Tool|Un outil Windows permettant de tester la mémoire RAM.|
+|Explorer_Q-Dir|Un explorateur de fichiers.|
+|GSmartControl|Un outil de vérification des disques durs et des disques durs SSD.|
+|PhotoRec|Un outil de récupération de fichiers potentiellement perdus sur un disque.|
+|SilverSHielD|Un serveur SSH2 et SFTP.|
+|System Recovery|Un outil Windows de restauration et de dépannage du système.|
 |TestDisk|Une puissante application de récupération de données. Elle vous permet de récupérer et de modifier des partitions corrompues, de trouver des partitions perdues, de réparer un secteur de démarrage et même de reconstruire un MBR défectueux.|
 |FileZilla|Un client FTP open source. Il prend en charge les protocoles SSH et SSL, et dispose d'une interface glisser-déposer claire et intuitive. Il peut être utilisé pour transférer vos données vers un serveur FTP, comme la sauvegarde FTP fournie avec la plupart des modèles de serveurs OVHcloud.|
 |7-ZIP|Un utilitaire de compression et d'archivage de fichiers qui lit les formats suivants : ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR et Z. Il vous permet également de créer vos propres archives dans les formats suivants : BZIP2, GZIP, TAR, WIM, XZ, Z et ZIP.|

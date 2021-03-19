@@ -9,7 +9,7 @@ section: 'Diagnostyka i tryb Rescue'
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 09-02-2021**
+**Ostatnia aktualizacja z dnia 19-03-2021**
 
 ## Wprowadzenie
 
@@ -172,22 +172,19 @@ Po restarcie serwera otrzymasz e-mail z danymi do połączenia w trybie Rescue. 
 
 Aby korzystać z trybu Rescue oferowanego przez Windows, pobierz i zainstaluj konsolę VNC lub skorzystaj z modułu `IPMI` w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
-![WinRescue Windows](images/rescue-mode-06.png){.thumbnail}
+![WinRescue Windows](images/rescue-mode-07.png){.thumbnail}
 
 W trybie tym zainstalowane są już następujące narzędzia:
 
 |Narzędzie|Opis|
 |---|---|
-|Firefox|Przeglądarka internetowa.|
-|Freecommander|Manager plików ze wszystkimi standardowymi funkcjonalnościami, których potrzebujesz.|
-|PWE|Prosty w użyciu manager haseł. Umożliwia przywrócenie lub modyfikację haseł do kont użytkowników na Twoim serwerze. Narzędzie to jest praktyczne w przypadku utraty danych do logowania lub przywrócenia konta bezpieczeństwa.|
-|Avast Virus Cleaner|Aplikacja antywirusowa z funkcjami skanowania i czyszczenia plików.|
-|ActivNIC|Narzędzie umożliwiające ponowną aktywację karty interfejsu sieciowego.|
-|BootSect|Narzędzie do naprawy sektora rozruchowego.|
-|Virtual Clone Drive|Narzędzie umożliwiające montowanie plików BIN, CCD oraz ISO w wirtualnym napędzie CD.|
-|smartCTL|Narzędzie umożliwiające dostęp do logów automatycznych do monitoringu dysków twardych.|
-|Diskpart|Narzędzie do zarządzania partycjami serwera.|
-|SysInternal|Pakiet oprogramowania Microsoft pozwalający na utrzymanie sieci i zarządzanie procesami.|
+|Mozilla ULight|Przeglądarka internetowa.|
+|Memory Diagnostics Tool|Narzędzie Windows do testowania pamięci RAM.|
+|Explorer_Q-Dir|Dostęp do plików.|
+|GSmartControl|Narzędzie do sprawdzania dysków twardych i dysków twardych SSD.|
+|PhotoRec|Narzędzie do odzyskiwania plików, które mogą zostać utracone na dysku.|
+|SilverSHielD|Serwer SSH2 i SFTP.|
+|System Recovery|System Windows do przywracania i rozwiązywania problemów systemu.|
 |TestDisk|Wydajna aplikacja do odzyskiwania danych.  Umożliwia odzyskiwanie i modyfikację uszkodzonych partycji, odnajdowanie zgubionych partycji, naprawę sektora rozruchowego, a nawet odbudowę uszkodzonego MBR. |
 |FileZilla|Open source’owy klient FTP  Obsługuje protokoły SSH i SSL, posiada przejrzysty i intuicyjny interfejs typu „przeciągnij i upuść”. Może być używany do przesyłania danych na serwer FTP, na przykład kopii zapasowej FTP dostarczanej z większością modeli serwerów OVHcloud.|
 |7-ZIP|Narzędzie do kompresji i archiwizacji plików czytające następujące formaty: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR oraz Z. Umożliwia również tworzenie Twoich własnych archiwów w następujących formatach: BZIP2, GZIP, TAR, WIM, XZ, Z oraz ZIP.|
