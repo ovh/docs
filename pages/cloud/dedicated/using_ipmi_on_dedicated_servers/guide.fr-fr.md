@@ -135,7 +135,7 @@ Pendant le processus de démarrage, appuyez sur la touche `SUPPR` lorsque vous �
 
 ![Menu_démarrage](images/boot_menu.png){.thumbnail}
 
-Dans le BIOS, naviguez jusqu'à l'onglet `Boot`{.action} et remplacez `UEFI Boot Order #1` par `UEFI USB CD/DVD:UEFI: CDROM virtuel ATEN YSOJ`.
+Dans le BIOS, naviguez jusqu'à l'onglet `Boot`{.action} et remplacez `UEFI Boot Order #1` par `UEFI USB CD/DVD:UEFI: CDROM virtual ATEN YSOJ`.
 
 ![Bios](images/bios.png){.thumbnail}
 
