@@ -1,57 +1,74 @@
 ---
-title: 'Modificare la password di root su un server dedicato Linux'
+title: Modificare la password di root su un server dedicato
 slug: modificare-password-root-server-linux
-excerpt: 'Come modificare la password dell’utente root su un server Linux'
+excerpt: Come modificare la password di root del tuo server dedicato
 section: 'Diagnostica e modalità Rescue'
 ---
 
-**Ultimo aggiornamento: 05/12/2018**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 16/02/2021**
 
 ## Obiettivo
 
-Durante l’installazione o la reinstallazione di una distribuzione o di un sistema operativo, viene fornita una password per accedere con i privilegi di root. Per motivi di sicurezza ti consigliamo di modificarla seguendo la procedura descritta in questa [guida](https://docs.ovh.com/it/dedicated/mettere-in-sicurezza-un-server-dedicato/){.external}, valida anche in caso di perdita della password. 
+Potrebbe essere necessario modificare la password di root (o quella dell'utente admin/sudo) sul tuo sistema operativo GNU/Linux.
+<br>Sono possibili due scenari:
 
-**Questa guida ti mostra come effettuare l’operazione in queste due situazioni.**
+- Accedi sempre via SSH
+- Non puoi connetterti via SSH perché hai perso la password
 
+**Questa guida ti mostra come modificare la password amministratore in base alla situazione iniziale.**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prerequisiti
 
-* Disporre di un [server dedicato](https://www.ovh.it/server_dedicati/){.external} con una distribuzione Linux
-* Avere accesso in SSH (root)
-* Essere connesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/)
+- Disporre delle credenziali di accesso ricevute via email dopo l'installazione (se ancora valide)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) (per utilizzare la modalità Rescue)
 
+> [!warning]
+>OVHcloud fornisce i servizi di cui sei responsabile per la configurazione e la gestione. Sei quindi responsabile del loro corretto funzionamento.
+>
+>Questa guida ti mostra come eseguire le operazioni necessarie per eseguire l'operazione. Tuttavia, in caso di difficoltà o dubbi relativamente all'amministrazione, all'utilizzo o alla realizzazione dei servizi su un server, ti consigliamo di contattare un fornitore di servizi specializzato.
+>
 
 ## Procedura
 
-### Modifica la password per l’accesso root
+### Modifica la password se hai sempre accesso (utente sudo o root)
 
-Se hai già effettuato una connessione con accesso root utilizzando la tua password attuale e vuoi semplicemente modificarla, connettiti al server in SSH e inserisci il seguente comando:
+Accedi al tuo server via SSH. Se necessario, passa all'utente root:
 
-```sh
-passwd
+```
+~$ sudo su -
+~#
 ```
 
-Successivamente, digita due volte la tua nuova password come indicato di seguito:
+Per modificare la password dell'utente attuale, digita `passwd`. Successivamente, digita due volte la tua nuova password come indicato di seguito:
 
-```sh
-Enter new UNIX password:
-Retype new UNIX password:
+```
+~# passwd
+
+New password:
+Retype new password:
 passwd: password updated successfully
 ```
 
 > [!primary]
 >
-> Sulle distribuzioni Linux, la password impostata **non verrà mostrata sullo schermo**.
+> Ti ricordiamo che su una distribuzione GNU/Linux, i caratteri della password **non appaiono** man mano che le digitate.
 >
 
-### Modifica la password persa o dimenticata
+### Modifica la password se l'hai persa
 
 #### Step 1: individua la partizione di sistema
 
-Per eseguire questa operazione, dopo aver attivato la [modalità Rescue](https://docs.ovh.com/it/dedicated/rescue_mode/){.external} sul tuo server inserisci il seguente comando: 
+Dopo aver riavviato il server in [modalità Rescue](../rescue_mode/), è necessario identificare la partizione di sistema. Per eseguire questa operazione, esegui il comando:
 
-```sh
-fdisk -l
+```
+# fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
@@ -70,48 +87,52 @@ Device Boot Start End Blocks Id System
 /dev/sda1 1 31488 8060912 c W95 FAT32 (LBA)
 ```
 
-Nell’esempio appena illustrato, la partizione di sistema è `/dev/hda1`. 
+Nel nostro esempio, la partizione di sistema è /dev/hda1.
 
 > [!primary]
 >
-> Se il tuo server è configurato con un RAID software, è necessario effettuare il mount del volume RAID (in generale `/dev/mdX`). 
+> Se il tuo server dispone di una configurazione RAID, è necessario montare il volume raid:
+>
+> - con un RAID software, la tua partizione radice sarà `/dev/mdX`;
+> - con un RAID hardware, la tua partizione radice sarà `/dev/sdX`.
 >
 
 #### Step 2: esegui il mount della partizione di sistema
 
 Una volta individuata la partizione di sistema puoi effettuarne il mount attraverso il seguente comando:
 
-```sh
-mount /dev/hda1 /mnt/
+```
+# mount /dev/hda1 /mnt/
 ```
 
 #### Step 3: modifica la partizione di root
 
-Di default, non è possibile apportare modifiche sulla partizione di sistema. Pertanto è necessario effettuare un accesso in scrittura utilizzando questo comando:
+Di default, la partizione di sistema è bloccata per la modifica. Per effettuare l'accesso in scrittura, esegui questo comando:
 
-```sh
-chroot /mnt
+```
+# chroot /mnt
 ```
 
 #### Step 4: modifica la password di root
 
-L’ultimo step consiste nel modificare la password con il seguente comando:
+L'ultimo step consiste nel modificare la password con il seguente comando:
 
-```sh
-passwd
+```
+#passwd
 
 Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated successfully
 ```
 
-Dopo aver aggiornato la password, modifica la modalità di avvio sul tuo server ed esegui il riavvio. 
-
+Una volta completato questo step, modifica la modalità di avvio sul tuo server per `Booter sull'hard disk`{.action} e riavvialo. La password di root è stata modificata.
 
 ## Per saperne di più
 
-[Attivare e utilizzare la modalità rescue](https://docs.ovh.com/it/dedicated/rescue_mode/){.external}
+[Attivare e utilizzare la modalità rescue](../rescue_mode/)
 
-[Modificare la password amministratore su un server dedicato Windows](https://docs.ovh.com/it/dedicated/modificare-password-admin-su-server-windows/){.external}
+[Mettere in sicurezza un server dedicato](../mettere-in-sicurezza-un-server-dedicato/)
 
-Contatta la nostra Community di utenti all’indirizzo <https://www.ovh.it/community/>.
+[Modificare la password amministratore su un server dedicato Windows](../modificare-password-admin-su-server-windows/)
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
