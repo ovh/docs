@@ -19,9 +19,10 @@ By transferring your domain name, you will change your domain name registrar. Yo
 - a domain name registered with another registrar
 - a domain name more than 60 days old
 - a domain name that has not been transferred or changed holders within the last 60 days
-- an unlocked domain name
+- a domain name status is ok, or transferable - domain cannot be expired
+- if a domain name will expiry during transfer process - it will be interrupted
+- an unlocked domain name with a transfer code, or the ability to receive one
 - the authority to request a transfer for the domain name
-- a transfer code, or the ability to receive one
 - The domain name holder and/or its administrators must be informed of the transfer request.
 
 ## Instructions
@@ -40,7 +41,7 @@ The transfer procedure has several steps. These steps will involve various entit
 
 > [!warning]
 >
-> This procedure applies to most transfers. However, depending on your domain name extension, it may be different. We recommend checking the information displayed on the page for the extension concerned, via: <https://www.ovh.co.uk/domains/prices/>.
+> The exact procedure for domain transfer may therefore vary, especially in case of some country-code TLDs (ccTLD, such as .pl, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) and a few special purpose TLDs (.am, .fm, etc.). However, depending on your domain name extension, it may be different. We recommend checking the information displayed on the page for the extension concerned, via: <https://www.ovh.co.uk/domains/prices/>.
 >
 
 ### Step 1: Check the information associated with the domain.
@@ -71,9 +72,13 @@ Please note that OVH is not your current domain name registrar. We are, therefor
 
 ### Step 3: Request a domain name transfer to OVH.
 
-Now that your domain name is unlocked and you have your transfer code, you can request for your domain name to be transferred to OVH. To do this, you will need to order a domain name transfer on [our website](https://www.ovh.co.uk/){.external}. Enter your domain name, and follow the order process.
+Now that your domain name is unlocked and you have your transfer code, you can request for your domain name to be transferred to OVH. To do this, you will need to order a domain name transfer on [our website](https://www.ovh.co.uk/domains/domain_transfer.xml){.external}. Enter your domain name, and follow the order process.
 
-When you are asked to provide your transfer code, enter it in the box next to your domain name. If you do not have the transfer code, you can tick a box labelled `Enter transfer code at a later stage`{.action}. However, we strongly advise ensuring that you have the code to hand before you continue any further.
+![domain](images/Domain_transfer_order.png){.thumbnail}
+
+When you are asked to provide your transfer code, enter it in the box next to your domain name. If you do not have the transfer code, you can tick a box labelled `Enter transfer code at a later stage`{.action} to receive email with link that will allow you to add AuthInfo. However, we strongly advise ensuring that you have the code to hand before you continue any further. Remember that transfer will not start untill AuthInfo will be added. 
+
+![domain](images/step_authinfo_add.png){.thumbnail}
 
 You can also complete your order with a [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}, and other OVH solutions. This may be of interest to you, if you are also looking to migrate your services to OVH. Our guide on [Migrating your website and emails to OVH](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external} will provide you with instructions on how to do this.
 
@@ -85,6 +90,14 @@ You can also complete your order with a [Web Hosting plan](https://www.ovh.co.uk
 >
 > - **Entering the DNS servers for your domain name.** If you are currently using your domain name to keep a website or email service online, you will need to specify their DNS servers in order to avoid any service interruptions.  
 >
+
+#### Manage owner and DNS servers details
+
+If you want your domain to connect with specific DNS servers on this step you will be ablle to change it by choosing `Change the configuration`{.action}. If transfer will be finished domain will be already connected with those DNS servers. If you will keep it as it is - we will create DNS zone for you.
+
+Some of the domain names extension might need some additional information regarding owner of the domain to finish transfer process. To add this information you will need to choose an option `Manage contacts/owner`{.action}.
+
+![domain](image/order_summary.png){.thumbnail}
 
 Once you receive the purchase order, pay the amount requested for the transfer process to begin. The process will only start when we receive your payment. Once you have done this, you can then track the transfer progress via the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. To track progress, go to the `Domains`{.action} section via the menu bar on the left-hand side, then `Ongoing operations`{.action}.
 
