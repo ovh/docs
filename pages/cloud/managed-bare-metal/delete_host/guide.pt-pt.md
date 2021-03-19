@@ -8,7 +8,7 @@ legacy_guide_number: '1442308'
 section: 'Funcionalidades da OVHcloud'
 ---
 
-**Última atualização: 18/11/2020**
+**Última atualização: 19/03/2021**
 
 ## Sumário
 
@@ -21,8 +21,12 @@ Em certas situações, pode ser útil eliminar um servidor host do seu cluster, 
 * Dispor do serviço [Managed Bare Metal](https://www.ovhcloud.com/pt/managed-bare-metal/){.external}.
 * Aceder à interface de gestão vSphere.
 
-
 ## Instruções
+
+> [!warning]
+>
+> Atenção: não desligue o servidor host que deseja retirar, pois isso não teria o efeito desejado. Com efeito, isto implicaria a entrega de um servidor host de spare e o servidor host desligado não seria automaticamente retirado.
+>
 
 A eliminação de um servidor host passa por duas etapas: em primeiro lugar, deve pôr este recurso em modo de manutenção para, posteriormente, proceder à eliminação.
 
@@ -36,11 +40,9 @@ Na caixa de diálogo, confirme a ativação do modo de manutenção clicando em 
 
 ![Confirmação do modo de manutenção](images/removehost02.png){.thumbnail}
 
-
 Poderá seguir o progresso da operação na secção `Recent Tasks`.
 
 ![Progresso da ativação do modo de manutenção](images/removehost03.png){.thumbnail}
-
 
 ### Eliminar o servidor host
 
@@ -60,14 +62,12 @@ Poderá seguir o progresso da operação na secção `Recent Tasks`.
 
 ![Progresso da eliminação do host](images/removehost07.png){.thumbnail}
 
-O servidor host será eliminado em poucos minutos e deixará de aparecer no inventário. 
-
+O servidor host será eliminado em poucos minutos e deixará de aparecer no inventário.
 
 > [!primary]
 >
 > Se adicionar algum ficheiro ou diretório que não estava inicialmente presente no armazenamento local do servidor host, ocorrerá um erro que irá impedir a eliminação do servidor. Apenas os diretórios de base e os ficheiros de vSwap não bloqueiam a operação de eliminação.
-> 
-
+>
 
 ## Quer saber mais?
 
