@@ -30,13 +30,13 @@ You can make use of these instance backups for two basic purposes:
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to the `Public Cloud`{.action} section. Click on `Instance backup`{.action} in the left-hand sidebar.
 
-![public-cloud-instance-backup](images/restorebackup1.png){.thumbnail}
+![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
 
 Click on the `...`{.action} button in the row of the relevant backup, then select `Create an instance`{.action}.
 
 You will see a shortened version of the instance creation page where you can decide on some options.
 
-![public-cloud-instance-backup](images/restorebackup2.png){.thumbnail}
+![public-cloud-instance-backup](images/restorebackup02.png){.thumbnail}
 
 Some elements are pre-defined:
 
@@ -44,7 +44,7 @@ Some elements are pre-defined:
 - **Image**: The image will correspond to your backup.
 - **Model**: Only the models that are compatible with your image are available, depending on your quota.
 
-![public-cloud-instance-backup](images/restorebackup3.png){.thumbnail}
+![public-cloud-instance-backup](images/restorebackup03.png){.thumbnail}
 
 Choose the new instance's name, SSH key, vRack and billing period, then click on the `Create the instance`{.action} button.
 
@@ -59,7 +59,7 @@ For further information on creating an instance, please refer to [this guide](..
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to the `Public Cloud`{.action} section. Click on `Instances`{.action} in the left-hand sidebar.
 
-![public-cloud-instance-backup](images/restorebackup4.png){.thumbnail}
+![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}
 
 Click on the `...`{.action} button in the row of the relevant instance, then select `Edit`{.action}.
 
@@ -72,7 +72,7 @@ This opens the page for editing an instance where you can change:
 
 Make your changes if necessary and switch to the `Backups`{.action} tab of the **Image** section.
 
-![public-cloud-instance-backup](images/restorebackup5.png){.thumbnail}
+![public-cloud-instance-backup](images/restorebackup05.png){.thumbnail}
 
 Select from the list of available backups. Click on `Modify image`{.action} if you are certain that you want to overwrite the current image with the backup. 
 
