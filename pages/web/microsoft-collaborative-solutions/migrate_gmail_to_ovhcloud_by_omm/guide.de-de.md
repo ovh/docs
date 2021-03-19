@@ -167,4 +167,4 @@ Das Migrationsüberwachungsfenster wird angezeigt. Sie können es geöffnet lass
 
 [Weniger sichere Verbindungen in Google Mail zulassen](https://docs.ovh.com/de/microsoft-collaborative-solutions/migration-gmail-mit-ovh-mail-migrator/gmail-sicherheit).
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en).
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/).

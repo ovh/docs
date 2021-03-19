@@ -332,4 +332,4 @@ Se il tuo SMS ha carattere pubblicitario, puoi inviare SMS solamente dalle 8:00 
 La console di API ([https://api.ovh.com/console/#/sms](https://api.ovh.com/console/#/sms)) ti permetterà di scoprire altri metodi per facilitare l’integrazione di servizi SMS quali: SMS che permettono la risposta (unicamente per gli account OVHcloud in Francia), invio in massa con file CSV, mailing o con conferma di ricezione...
 
 
-Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en](https://community.ovh.com/en)
+Contatta la nostra Community di utenti all’indirizzo [https://community.ovh.com/en](https://community.ovh.com/en/)
