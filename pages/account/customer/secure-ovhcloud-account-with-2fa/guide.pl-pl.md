@@ -99,4 +99,4 @@ Następnie kliknij przycisk `Bezpieczeństwo`{.action} (pierwszy etap na poniżs
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie [https://community.ovh.com](https://community.ovh.com/en)
+Dołącz do społeczności naszych użytkowników na stronie [https://community.ovh.com](https://community.ovh.com/en/)

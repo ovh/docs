@@ -6,7 +6,7 @@ legacy_guide_number: '1442308'
 section: 'Funzionalità OVHcloud'
 ---
 
-**Ultimo aggiornamento: 24/07/2020**
+**Ultimo aggiornamento: 19/03/2021**
 
 ## Obiettivo
 
@@ -19,8 +19,12 @@ In alcuni casi eliminare un server host può risultare utile, ad esempio per res
 * Disporre di una soluzione [Hosted Private Cloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/){.external}
 * Avere accesso all’interfaccia di gestione vSphere
 
-
 ## Procedura
+
+> [!warning]
+>
+> Attenzione a non spegnere il server host che desideri rimuovere perché ciò non avrebbe l'effetto desiderato. Ciò comporterebbe infatti la consegna di un server host di spare e il server host spento non verrebbe automaticamente rimosso.
+>
 
 La rimozione di un server host si svolge in due step: l’attivazione della modalità manutenzione di questa risorsa e successivamente la rimozione della stessa.
 
@@ -58,13 +62,12 @@ Puoi seguire lo stato di avanzamento della rimozione del server host nell’area
 
 ![Controllo dell’attività di rimozione](images/removehost07.png){.thumbnail}
 
-Il server host verrà rimosso entro pochi minuti e non sarà più visibile. 
+Il server host verrà rimosso entro pochi minuti e non sarà più visibile.
 
 > [!primary]
 >
 > Se si aggiungono directory o file che non erano inizialmente presenti nello storage locale del server, la rimozione non sarà possibile a causa di un errore. Soltanto le directory di base e i file vSwap consentono di eseguire questa operazione.
-> 
-
+>
 
 ## Per saperne di più
 

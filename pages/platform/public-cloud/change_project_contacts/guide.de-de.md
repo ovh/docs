@@ -68,5 +68,5 @@ Danach werden die Kontakte wie gewünscht geändert.
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en).
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en/).
 

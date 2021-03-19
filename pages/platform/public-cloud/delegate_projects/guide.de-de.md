@@ -59,4 +59,4 @@ Die so hinzugefügten Kundenkennungen können das Projekt in ihrem eigenen OVHcl
 
 [Die ersten Schritte mit Ihrer Public Cloud Instanz](https://docs.ovh.com/de/public-cloud/die_ersten_schritte_mit_ihrer_public_cloud_instanz/)
 
-Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en).
+Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en](https://community.ovh.com/en/).
