@@ -174,17 +174,17 @@ Um die GUI für den Windows-Rescue-Modus zu verwenden, müssen Sie eine VNC-Kons
 
 ![WinRescue Windows](images/rescue-mode-07.png){.thumbnail}
 
-Folgende Werkzeuge sind bereits in diesem Modus installiert:
+Folgende Anwendungen sind bereits in diesem Modus installiert:
 
 |Tool|Beschreibung|
 |---|---|
 |Mozilla ULight|Ein Webbrowser.|
 |Memory Diagnostics Tool|Ein Windows Tool zum Testen des RAM.|
 |Explorer_Q-Dir|Ein Dateiexplorer.|
-|GSmartControl|Ein Werkzeug zur Überprüfung der Festplatten und der SSD Festplatten.|
+|GSmartControl|Ein Werkzeug zur Überprüfung von Festplatten/SSDs.|
 |PhotoRec|Ein Tool zum Abruf potenziell verlorener Dateien auf einer Festplatte.|
 |SilverSHielD|Ein SSH2 und SFTP Server.|
-|System Recovery|Ein Windows-Werkzeug zur Wiederherstellung und Fehlerbehebung des Systems.|
+|System Recovery|Ein Windows Tool zur Systemwiederherstellung und Fehlerbehebung.|
 |TestDisk|Eine leistungsstarke Anwendung zur Datenwiederherstellung. Mit diesem Tool können Sie beschädigte Partitionen wiederherstellen und bearbeiten, verlorene Partitionen wiederfinden, einen Bootsektor reparieren oder sogar einen fehlerhaften MBR rekonstruieren.|
 |FileZilla|Ein Open-Source-FTP-Client. Er unterstützt SSH- und SSL-Protokolle und verfügt über ein intuitives Drag-and-Drop-Interface. Es kann verwendet werden, um Ihre Daten auf einen FTP-Server zu übertragen, zum Beispiel das FTP-Backup, das mit den meisten OVHcloud-Servermodellen bereitgestellt wird.|
 |7-ZIP|Ein Datenkomprimierungs- und Datenarchivierungstool, das die folgenden Formate liest: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR und Z. Außerdem können Sie mit diesem Tool Ihre eigenen Archive in den folgenden Formaten anlegen: BZIP2, GZIP, TAR, WIM, XZ, Z und ZIP.|
