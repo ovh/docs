@@ -6,7 +6,7 @@ section: 'Diagnostics and rescue mode'
 order: 1
 ---
 
-**Last updated 9th February 2021**
+**Last updated 19th March 2021**
 
 ## Objective
 

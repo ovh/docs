@@ -6,7 +6,7 @@ section: 'Diagnostic and rescue mode'
 order: 1
 ---
 
-**Last updated 9th February 2021**
+**Last updated 19th March 2021**
 
 ## Objective
 
@@ -165,25 +165,22 @@ Once your server has rebooted, you will receive an email with your rescue mode a
 
 To use the Windows rescue mode GUI, you will need to download and install a VNC console or use the `IPMI` module in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
 
-![Winrescue Windows](images/rescue-mode-06.png){.thumbnail}
+![Winrescue Windows](images/rescue-mode-07.png){.thumbnail}
 
 The following tools are already installed in this mode:
 
 |Tool|Description|
 |---|---|
-|Firefox|A web browser.|
-|Freecommander|A file manager with standard features.|
-|Avast Virus Cleaner|An anti-virus application that scans and cleans files.|
-|ActivNIC|A tool you can use to enable a disabled network interface card.|
-|BootSect|A tool that allows to repair the boot sector.|
-|Virtual Clone Drive|A tool you can use to mount BIN, CCD and ISO files in a virtual CD reader.|
-|smartctl|A tool to to access self monitoring logs of the drives.|
-|Diskpart|A tool to manipulate the partitions of the Server.|
-|SysInternal|A software suite from Microsoft that includes several tools you can use to carry out network maintenance and manage processes.|
+|Mozilla ULight|A web browser.|
+|Memory Diagnostics Tool|A Windows tool to test the RAM.|
+|Explorer_Q-Dir|An alternative file explorer.|
+|GSmartControl|A tool to check HDDs and SSDs.|
+|PhotoRec|A tool to recover possibly lost files from a disk.|
+|SilverSHielD|A SSH2 and SFTP server.|
+|System Recovery|The built-in Windows system restore and troubleshooting tool.|
 |TestDisk|A powerful data recovery application. You can use it to recover and modify corrupted partitions, find lost partitions, repair a boot sector and even rebuild a defective MBR.|
 |FileZilla|An open-source FTP client. It supports SSH and SSL protocols, and has a clear and intuitive drag-and-drop interface. You can use it to transfer your data to an FTP server, like the FTP backup service included with most OVHcloud server models.|
 |7-Zip|A utility for compressing and archiving files, which reads the following formats: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR and Z. You can also use it to create your own archives in the following formats: BZIP2, GZIP, TAR, WIM, XZ, Z and ZIP.|
-
 
 ## Go further
 
