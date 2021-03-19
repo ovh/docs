@@ -68,7 +68,7 @@ This opens the page for editing an instance where you can change:
 - the instance's name
 - the instance's image
 - the instance's model
-- the instance's billing mode (from ‘hourly’ to ‘monthly’ only)
+- the instance's billing mode (from `hourly` to `monthly` only)
 
 Make your changes if necessary and switch to the `Backups`{.action} tab of the **Image** section.
 
@@ -76,7 +76,7 @@ Make your changes if necessary and switch to the `Backups`{.action} tab of the *
 
 Select from the list of available backups. Click on `Modify image`{.action} if you are certain that you want to overwrite the current image with the backup. 
 
-The instance will have the status ‘Re-installation‘ until the process is completed. It might be necessary to refresh the page in the browser in order to see the current status.
+The instance will have the status `Re-installation` until the process is completed. It might be necessary to refresh the page in the browser in order to see the current status.
 
 > [!warning]
 >
