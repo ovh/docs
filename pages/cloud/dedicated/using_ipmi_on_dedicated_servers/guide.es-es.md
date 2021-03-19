@@ -61,13 +61,13 @@ La activación tarda unos segundos. Un mensaje le informará de la disponibilida
 
 ![IPMI navegador](images/KVM-web-browser02.png){.thumbnail}
 
-Haga clic en `Acceder a la consola (KVM)` para abrir la consola en su navegador.
+Haga clic en `Acceder a la consola (KVM)`{.action} para abrir la consola en su navegador.
 
 ![IPMI navegador](images/KVM-web-browser03b.png){.thumbnail}
 
 ### Conectarse desde el navegador con Serial Over LAN (SoL)
 
-Aunque le recomendamos que se conecte a través del applet Java, también puede utilizar IPMI en Serial Over LAN (SoL). Para ello, haga clic en `Desde su navegador (SoL)`{.action} en la sección `IPMI`{.action} del área de cliente.
+Aunque le recomendamos que se conecte a través del applet Java, también puede utilizar IPMI en Serial Over LAN (SoL). Para ello, haga clic en `Desde el navegador (SoL)`{.action} en la sección `IPMI`{.action} del área de cliente.
 
 ![Activación de la declaración de integridad IPMI](images/sol_ipmi_activation_2020.png){.thumbnail}
 

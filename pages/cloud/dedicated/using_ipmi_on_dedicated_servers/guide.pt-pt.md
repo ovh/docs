@@ -15,11 +15,11 @@ section: Introdução
 
 A consola IPMI (Intelligent Platform Management Interface) permite estabelecer uma ligação direta ao seu servidor dedicado sem utilizar um software externo (um terminal ou PuTTY, por exemplo). Este manual explica-lhe como iniciar esta consola.
 
-Atenção: por vezes, poderá encontrar o termo KVM (Keyboard Video and Mouse), o equivalente ao IPMI no âmbito dos VPS 
+Atenção: por vezes, poderá encontrar o termo KVM (Keyboard Video and Mouse), o equivalente ao IPMI no âmbito dos VPS.
 
 ## Requisitos
 
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
@@ -31,13 +31,13 @@ A ligação ao IPMI pode ser efetuada principalmente através de vários método
 
 - Um terceiro método, unicamente disponível para os servidores mais recentes, permite utilizar uma ferramenta KVM a partir de um browser web.
 
-Para ativar um destes métodos, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)). Na secção `Bare Metal Cloud`{.action}, clique em `Servidores dedicados`{.action} no menu à esquerda, selecione o seu servidor e clique no separador `IPMI`{.action}.
+Para ativar um destes métodos, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)). Na secção `Bare Metal Cloud`{.action}, clique em `Servidores dedicados`{.action} no menu à esquerda, selecione o seu servidor e clique no separador `IPMI`{.action}.
 
 ### Aceder com a applet Java <a name="applet-java"></a>
 
 Para que a applet Java funcione, é necessário que o Java esteja instalado no seu computador. Se ainda não o fez, aceda à [página oficial](https://www.java.com/en/download/){.external}.
 
-Na secção `IPMI`{.action} da Área de Cliente OVHcloud, clique em `A partir de uma applet Java (KVM)`{.action}:
+Na secção `IPMI`{.action} da Área de Cliente OVHcloud, clique em `A partir de applet Java (KVM)`{.action}:
 
 ![IPMI Java iniciado](images/java_ipmi_initiate_2020.png){.thumbnail}
 
@@ -53,7 +53,7 @@ Pode desde já gerir o seu servidor.
 
 ### Utilizar o KVM através do seu browser (apenas para os servidores mais recentes)
 
-Na secção `IPMI`{.action} da sua Área de Cliente OVHcloud, clique em `A partir do seu browser (KVM)`{.action}:
+Na secção `IPMI`{.action} da sua Área de Cliente OVHcloud, clique em `A partir do navegador (KVM)`{.action}:
 
 ![IPMI browser](images/KVM-web-browser01.png){.thumbnail}
 
@@ -61,13 +61,13 @@ A ativação demora alguns segundos. Receberá uma mensagem informando-o da disp
 
 ![IPMI browser](images/KVM-web-browser02.png){.thumbnail}
 
-A seguir, clique em `Aceder à consola (KVM)` para abrir a consola no seu browser.
+A seguir, clique em `Aceder à consola (KVM)`{.action} para abrir a consola no seu browser.
 
 ![IPMI browser](images/KVM-web-browser03b.png){.thumbnail}
 
 ### Aceder através do navegador, via Serial over LAN (SoL)
 
-Mesmo que o recomendemos para se ligar através da applet Java, também pode utilizar o IPMI através de Serial over LAN (SoL). Para isso, clique em `A partir do seu browser (SoL)`{.action} na secção `IPMI`{.action} da sua Área de Cliente.
+Mesmo que o recomendemos para se ligar através da applet Java, também pode utilizar o IPMI através de Serial over LAN (SoL). Para isso, clique em `A partir do seu navegador (SoL)`{.action} na secção `IPMI`{.action} da sua Área de Cliente.
 
 ![Ativação da declaração de integridade IPMI](images/sol_ipmi_activation_2020.png){.thumbnail}
 
@@ -97,7 +97,7 @@ A reinicialização do IPMI demora alguns minutos.
 > [!warning]
 > A OVHcloud não garante a funcionalidade dos sistemas operativos instalados através do IPMI. Este método só deve ser considerado por um administrador de servidores experiente.
 
-Para começar, abra o [IPMI a partir de uma applet Java](./#applet-java) através da sua Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)). A seguir, clique em `Device`{.action} na barra de menus e selecione `Redirect ISO`{.action} no menu pendente.
+Para começar, abra o [IPMI a partir de uma applet Java](./#applet-java) através da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)). A seguir, clique em `Device`{.action} na barra de menus e selecione `Redirect ISO`{.action} no menu pendente.
 
 ![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
 

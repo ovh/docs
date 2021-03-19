@@ -37,7 +37,7 @@ Per attivare uno di questi metodi, accedi allo [Spazio Cliente OVHcloud](https:/
 
 Per il corretto funzionamento dell'applet, è necessario che Java sia installato sul dispositivo. Se non lo hai ancora fatto, accedi alla [pagina ufficiale](https://www.java.com/en/download/){.external}.
 
-Nella sezione `IPMI`{.action} dello Spazio Cliente OVHcloud, clicca su `Da un'applet Java (KVM)`{.action}:
+Nella sezione `IPMI`{.action} dello Spazio Cliente OVHcloud, clicca su `Da una applet Java (KVM)`{.action}:
 
 ![IPMI Java iniziato](images/java_ipmi_initiate_2020.png){.thumbnail}
 
@@ -53,7 +53,7 @@ Da questo momento puoi gestire il tuo server.
 
 ### Utilizza KVM sul tuo browser Web (solo per i server più recenti)
 
-Nella sezione `IPMI`{.action} dello Spazio Cliente OVHcloud, clicca su `Dal browser (KVM)`{.action}:
+Nella sezione `IPMI`{.action} dello Spazio Cliente OVHcloud, clicca su `Dal tuo navigatore (KVM)`{.action}:
 
 ![IPMI browser](images/KVM-web-browser01.png){.thumbnail}
 
@@ -61,7 +61,7 @@ L'attivazione richiede alcuni secondi. Un messaggio ti informerà della disponib
 
 ![IPMI browser](images/KVM-web-browser02.png){.thumbnail}
 
-Clicca su `Accedi alla console (KVM)` per aprire la console nel tuo browser.
+Clicca su `Accedi alla console (KVM)`{.action} per aprire la console nel tuo browser.
 
 ![IPMI browser](images/KVM-web-browser03b.png){.thumbnail}
 
@@ -97,7 +97,7 @@ Il riavvio dell'IPMI richiede alcuni minuti.
 > [!warning]
 > OVHcloud non garantisce la funzionalità dei sistemi operativi installati tramite IPMI. Questo metodo deve essere preso in considerazione solo da un amministratore di server esperto.
 
-Per iniziare, apri [IPMI da un'applet Java](./#applet-java) attraverso il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Device`{.action} nella barra dei menu e seleziona `Redirect ISO`{.action} nel menu a tendina.
+Per iniziare, apri [IPMI da una applet Java](./#applet-java) attraverso il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Device`{.action} nella barra dei menu e seleziona `Redirect ISO`{.action} nel menu a tendina.
 
 ![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
 
@@ -119,7 +119,7 @@ Segui gli step per installare il sistema operativo. Ricordati di eliminare l'ISO
 > OVHcloud non garantisce la funzionalità dei sistemi operativi installati tramite IPMI. Questo metodo deve essere preso in considerazione solo da un amministratore di server esperto.
 >
 
-Per iniziare, apri [IPMI da un'applet Java](./#applet-java) attraverso il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Virtual Media`{.action} e poi su `Virtual Storage`{.action}.
+Per iniziare, apri [IPMI da una applet Java](./#applet-java) attraverso il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Virtual Media`{.action} e poi su `Virtual Storage`{.action}.
 
 ![Virtual storage](images/virtual_storage.png){.thumbnail}
 

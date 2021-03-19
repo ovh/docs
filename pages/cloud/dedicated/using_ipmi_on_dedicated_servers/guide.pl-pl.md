@@ -19,7 +19,7 @@ Uwaga: napotkasz również termin KVM (Keyboard Video and Mouse), który jest u�
 
 ## Wymagania początkowe
 
-- Dostęp do [Panelu klienta OVHcloud]( https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
@@ -31,13 +31,13 @@ Połączenie z IPMI można wykonać głównie za pomocą kilku metod: apletu Jav
 
 - Trzecia metoda, dostępna tylko dla najnowszych serwerów, pozwala na korzystanie z narzędzia KVM przy użyciu przeglądarki internetowej.
 
-Aby aktywować jedną z tych metod, zaloguj się do [Panelu klienta OVHcloud]( https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W części `Bare Metal Cloud`{.action} kliknij `Serwery dedykowane`{.action} w menu po lewej stronie, wybierz serwer i kliknij zakładkę `IPMI`{.action}.
+Aby aktywować jedną z tych metod, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W części `Bare Metal Cloud`{.action} kliknij `Serwery dedykowane`{.action} w menu po lewej stronie, wybierz serwer i kliknij zakładkę `IPMI`{.action}.
 
 ### Logowanie za pomocą apletu Java <a name="applet-java"></a>
 
-Aby aplet Java działał, na komputerze musi być zainstalowana Java. Jeśli jeszcze tego nie zrobiłeś, przejdź do oficjalnej [strony](https://www.java.com/en/download/){.external}.
+Aby aplet Java działał, na komputerze musi być zainstalowana Java. Jeśli jeszcze tego nie zrobiłeś, przejdź do [oficjalnej strony](https://www.java.com/en/download/){.external}.
 
-W części `IPMI`{.action} w Panelu klienta OVHcloud kliknij `Z poziomu apletu Java (KVM)`{.action}:
+W części `IPMI`{.action} w Panelu klienta OVHcloud kliknij `Z poziomu apletu java (KVM)`{.action}:
 
 ![IPMI Java zainicjowany](images/java_ipmi_initiate_2020.png){.thumbnail}
 
@@ -61,7 +61,7 @@ Aktywacja zajmie kilka sekund. Pojawi się komunikat o dostępności połączeni
 
 ![IPMI przeglądarki](images/KVM-web-browser02.png){.thumbnail}
 
-Kliknij `Dostęp do konsoli (KVM)`, aby otworzyć konsolę w przeglądarce.
+Kliknij `Dostęp do konsoli (KVM)`{.action}, aby otworzyć konsolę w przeglądarce.
 
 ![IPMI przeglądarki](images/KVM-web-browser03b.png){.thumbnail}
 
@@ -97,7 +97,7 @@ Ponowne uruchomienie IPMI zajmuje kilka minut.
 > [!warning]
 > OVHcloud nie gwarantuje funkcjonalności systemów operacyjnych zainstalowanych za pomocą IPMI. Metoda ta powinna być rozważana tylko przez doświadczonego administratora serwerów.
 
-Aby rozpocząć, otwórz [IPMI z poziomu apletu Java](./#applet-java) w Panelu [klienta OVHcloud]( https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Następnie kliknij `Device`{.action} na pasku menu i wybierz `Redirect ISO`{.action} z rozwijanego menu.
+Aby rozpocząć, otwórz [IPMI z poziomu apletu Java](./#applet-java) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Następnie kliknij `Device`{.action} na pasku menu i wybierz `Redirect ISO`{.action} z rozwijanego menu.
 
 ![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
 
@@ -119,7 +119,7 @@ Postępuj zgodnie z instrukcjami potrzebnymi do zainstalowania systemu operacyjn
 > OVHcloud nie gwarantuje funkcjonalności systemów operacyjnych zainstalowanych za pomocą IPMI. Metoda ta powinna być rozważana tylko przez doświadczonego administratora serwerów.
 >
 
-Aby rozpocząć, otwórz [IPMI z poziomu apletu Java](./#applet-java) w Panelu [klienta OVHcloud]( https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij `Virtual Media`{.action}, a następnie `Virtual Storage`{.action}.
+Aby rozpocząć, otwórz [IPMI z poziomu apletu Java](./#applet-java) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij `Virtual Media`{.action}, a następnie `Virtual Storage`{.action}.
 
 ![Virtual storage](images/virtual_storage.png){.thumbnail}
 

@@ -57,7 +57,7 @@ L'activation prend quelques secondes. Un message vous informera de la disponibil
 
 ![IPMI navigateur](images/KVM-web-browser02.png){.thumbnail}
 
-Cliquez alors sur `Accéder à la console (KVM)` pour ouvrir la console dans votre navigateur.
+Cliquez alors sur `Accéder à la console (KVM)`{.action} pour ouvrir la console dans votre navigateur.
 
 ![IPMI navigateur](images/KVM-web-browser03b.png){.thumbnail}
 
