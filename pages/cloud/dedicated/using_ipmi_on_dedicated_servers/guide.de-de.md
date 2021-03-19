@@ -1,66 +1,149 @@
 ---
-title: 'Verwendung der IPMI-Konsole für Dedicated Server'
+title: Verwendung der IPMI-Konsole für Dedicated Server
 slug: verwendung-ipmi-dedicated-server
-excerpt: 'Mit IPMI können Sie sich mit Ihrem Server verbinden, ohne auf externe Software zurückgreifen zu müssen.'
+excerpt: Mit IPMI können Sie sich mit Ihrem Server verbinden, ohne auf externe Software zurückgreifen zu müssen
 section: Erste Schritte
 ---
 
-**Letzte Aktualisierung am 20.08.2018**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
-## Einleitung
+**Letzte Aktualisierung am 18.03.2021**
 
-Die IPMI-Konsole (Intelligent Platform Management Interface) ermöglicht eine direkte Verbindung zu Ihrem Dedicated Server, ohne externe Software (z. B. Terminal oder Putty) installieren zu müssen. In dieser Anleitung erfahren Sie, wie Sie diese Konsole starten.
+## Ziel
+
+Die IPMI-Konsole (Intelligent Platform Management Interface) erlaubt es, eine direkte Verbindung zu Ihrem Dedicated Server herzustellen, ohne externe Software (z. B. ein Terminal oder PuTTY) zu verwenden. In dieser Anleitung erfahren Sie, wie Sie diese Konsole starten.
 
 Bitte beachten Sie, dass in der Anleitung auch der Begriff KVM (Keyboard Video and Mouse) verwendet wird, der vor allem in Zusammenhang mit VPS gebräuchlich ist.
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
-## Beschreibung
+## In der praktischen Anwendung
 
-Die Verbindung zu IPMI kann auf zwei Arten hergestellt werden: Per Java-Applet (empfohlen) oder über den Browser (Serial over LAN).
+Die Verbindung zur IPMI kann über mehrere Methoden hergestellt werden: Java-Applet (empfohlen, jedoch nur für neuere Server verfügbar) oder Browser (Serial over LAN).
 
-### Verbindung per Java-Applet
+- **Java Applet**: Mit dieser Option können Sie ein KVM-Tool (Tastatur, Video, Maus) über eine Java-Konsole verwenden, um die gewünschten Aktionen auszuführen.
 
-Damit das Java-Applet funktionieren kann, muss Java auf Ihrem Computer installiert sein. Ist dies nicht der Fall, gehen Sie auf die [offizielle Website](https://www.java.com/de/download/){.external} von Java.
+- **Browser (Serial over LAN)**: Diese Methode verwendet den Webbrowser zum Fernzugriff auf die Server-Konsole.
 
-Im Tab `IPMI`{.action} in Ihrem Kundencenter, klicken Sie auf `Mit einem Java-Applet (KVM)`{.action}:
+- Eine dritte Methode, die nur für neuere Server verfügbar ist, erlaubt die Verwendung des KVM-Tools auch über einen Webbrowser.
 
-![IPMI Java initiated](images/java_ipmi_initiate.png){.thumbnail}
+Um eine dieser Methoden zu aktivieren, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie im Bereich `Bare Metal Cloud`{.action} im linken Menü auf `Dedicated Server`{.action}, wählen Sie Ihren Server aus und klicken Sie dann auf den Tab `IPMI`{.action}.
 
-Laden Sie die Datei `kvm.jnlp` herunter und führen Sie diese aus:
+### Über Java Applet verbinden <a name="applet-java"></a>
 
-![IPMI Java opening](images/java_ipmi_activation.png){.thumbnail}
+Damit das Java Applet funktionieren kann, muss Java auf Ihrem Computer installiert sein. Ist das nicht der Fall, gehen Sie auf die [offizielle Seite](https://www.java.com/en/download/){.external}.
 
-Sie gelangen dann auf die Login-Seite, auf der Sie Ihre `Root`-Zugangsdaten eingegeben, genau wie bei der Verbindung über ein Terminal oder eine externe Software:
+Klicken Sie im `IPMI`{.action}-Bereich Ihres OVHcloud Kundencenters auf `Mit einem Java-Applet (KVM)`{.action}.
 
-![IPMI Java login](images/java_ipmi_login.png){.thumbnail}
+![IPMI Java initiiert](images/java_ipmi_initiate_2020.png){.thumbnail}.
 
-Danach können Sie Ihren Server wie gewohnt verwalten.
+Laden Sie die `kvm.jnlp`-Datei herunter, wenn Sie dazu aufgefordert sind, und starten Sie sie.
 
-### Verbindung über den Browser (Serial over LAN - SoL).
+![IPMI Java](images/java_ipmi_activation.png){.thumbnail}
 
-Auch wenn die Verbindung per Java-Applet empfohlen wird, ist es durchaus möglich, IPMI auch über den Browser (Serial over LAN) zu verwenden. Klicken Sie dazu im Tab `IPMI`{.action} auf den Button `Mit Ihrem Browser (SoL)`{.action}:
+Sie gelangen dann zur Login-Seite. Geben Sie Ihre `Root`-Login-Daten ein, wie bei einer Verbindung über ein Terminal oder einen GUI-Client.
 
-![IPMI SoL Aktivierung](images/sol_ipmi_activation.png){.thumbnail}
+![Java IPMI Verbindung](images/java_ipmi_login.png){.thumbnail}
+
+Sie können nun Ihren Server verwalten.
+
+### KVM über Ihren Webbrowser verwenden (nur für neuere Server)
+
+Klicken Sie im `IPMI`{.action}-Bereich Ihres OVHcloud Kundencenters auf `Über Ihren Browser (KVM)`{.action}:
+
+![Browser-IPMI](images/KVM-web-browser01.png){.thumbnail}
+
+Die Aktivierung dauert einige Sekunden. Sie werden über die Verfügbarkeit der IPMI-Verbindung informiert.
+
+![Browser-IPMI](images/KVM-web-browser02.png){.thumbnail}
+
+Klicken Sie dann auf `Zur Konsole (KVM)`, um die Konsole in Ihrem Browser zu öffnen.
+
+![Browser-IPMI](images/KVM-web-browser03b.png){.thumbnail}
+
+### Verbindung über den Browser mit Serial over LAN (SoL)
+
+Wir empfehlen, sich via Java-Applet einzuloggen; Sie können IPMI aber auch als Serial over LAN (SoL) verwenden. Klicken Sie `Mit Ihrem Browser (SoL)`{.action} im Bereich `IPMI`{.action} Ihres Kundencenters.
+
+![Aktivierung der IPMI Integritätserklärung](images/sol_ipmi_activation_2020.png){.thumbnail}
 
 > [!warning]
 >
-> Es kann mehrere Minuten dauern, bis die Verbindung über SoL hergestellt ist. Deshalb wird die Verwendung des Applets empfohlen.
+> Die Verbindung mit SoL kann mehrere Minuten in Anspruch nehmen, weshalb das Java-Applet normalwerweise vorzuziehen ist.
 >
 
 ### IPMI testen und neu starten
 
-Es ist möglich, dass IPMI nicht mehr reagiert. Wenn Sie keine Verbindung zu IPMI herstellen können, führen Sie zunächst einen Funktionstest durch, indem Sie auf `IPMI Test`{.action} klicken und sich das Diagnoseergebnis anzeigen lassen:
+Es kann vorkommen, dass die IPMI nicht mehr reagiert. Sie können dann zunächst einen Test durchführen, indem Sie auf `IPMI-Test `{.action} klicken. Die Ergebnisse der Diagnose werden unten auf der Seite angezeigt.
 
-![IPMI Test](images/ipmi_test.png){.thumbnail}
+![IPMI-Test](images/ipmi_test_2020.png){.thumbnail}
 
-Wenn, wie in unserem Beispiel, alles normal erscheint, liegt wahrscheinlich ein lokales Problem vor (Internetverbindung, Fehler auf lokalem Rechner usw.). Wenn das Problem mit IPMI zusammenhängt, können Sie mit einem Klick auf die Schaltfläche `IPMI neu starten`{.action} einen Neustart durchführen.
+Wenn alles normal ist, wie in hier verwendeten Beispiel, dann haben Sie wahrscheinlich lokale Probleme (Internetverbindung, lokales Gerät). Wenn die IPMI-Funktion tatsächlich auf Schwierigkeiten stößt, können Sie sie neu starten, indem Sie auf `IPMI neu starten`{.action} klicken.
 
-![IPMI Test](images/ipmi_reboot.png){.thumbnail}
+![IPMI-Test](images/ipmi_reboot_2020.png){.thumbnail}
 
-Der Neustart dauert mehrere Minuten.
+Der Neustart des IPMI dauert einige Minuten.
+
+> [!primary]
+> Dieser Vorgang beeinträchtigt nicht den Betrieb des Servers.
+>
+
+### Installation eines Betriebssystems mit IPMIv1
+
+> [!warning]
+> OVHcloud garantiert nicht die Funktionalität von über IPMI installierten Betriebssystemen. Diese Methode sollte nur von einem erfahrenen Server-Administrator erwogen werden.
+
+Um zu beginnen, öffnen Sie [IPMI über Java-Applet](./#applet-java) in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie anschließend im Menü auf `Device`{.action} und wählen Sie im Drop-down-Menü `Redirect ISO`{.action} aus.
+
+![Redirect_ISO](images/RedirectISO.jpg){.thumbnail}
+
+Wählen Sie dann die ISO aus, die Sie im Dateisystem Ihres lokalen Computers verwenden möchten. Wenn Sie Ihr ISO-Zertifikat ausgewählt haben, klicken Sie auf den `Ctrl Alt Del`{.action} in der oberen rechten Ecke des Bildschirms, um den Server neu zu starten. Tippen Sie auf die Taste `F`, um auf die Startoptionen zuzugreifen.
+
+> [!primary]
+> Vielleicht müssen Sie die Software-Tastatur verwenden, um die Einträge in IPMI zu speichern. Um darauf zuzugreifen, klicken Sie oben im Fenster auf die `Keyboard`{.action}-Option . Wählen Sie anschließend im Drop-down-Menü `Soft Keyboard` aus und klicken Sie auf `Show`{.action}.
+>
+
+Wählen Sie die `UEFI Virtual CDROM 1.00` im Startmenü (Boot) aus, um den Server von der zuvor verbundenen ISO zu starten.
+
+![UEFI_Virt](images/UEFIVirt.jpg){.thumbnail}
+
+Folgen Sie den notwendigen Schritten für die Installation des Betriebssystems. Vergessen Sie nicht, die ISO-Norm aus der Option "Redirect ISO"zu löschen.
+
+### Installation eines Betriebssystems mit IPMIv2
+
+> [!warning]
+> OVHcloud garantiert nicht die Funktionalität der über IPMI installierten Betriebssysteme. Diese Methode sollte nur von einem erfahrenen Server-Administrator erwogen werden.
+>
+
+Um zu beginnen, öffnen Sie [IPMI mit einem Java-Applet](./#applet-java) über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Klicken Sie dann auf `Virtual Media`{.action} und auf `Virtual Storage`{.action}.
+
+![Virtual Storage](images/virtual_storage.png){.thumbnail}
+
+Wählen Sie im angezeigten Fenster `ISO File` aus der Drop-down-Liste "Logical Drive Type". Klicken Sie anschließend auf `Open Image`{.action} und navigieren Sie zu Ihrer ISO Datei. Klicken Sie abschließend auf `Plug-in`{.action} und `OK`{.action}.
+
+![ISO_file](images/iso_file.png){.thumbnail}
+
+Um von Ihrer ISO Datei aus zu starten müssen Sie auf das BIOS zugreifen und die Startoptionen ändern. Klicken Sie hierzu auf `Power Control`{.action} und dann auf `Set Power Reset`{.action}.
+
+![Power_Reserver](images/power_reset.png){.thumbnail}
+
+> [!primary]
+> Möglicherweise müssen Sie die Software-Tastatur verwenden, um die Einträge in IPMI zu speichern. Um darauf zuzugreifen, klicken Sie oben im Fenster auf die Option `Virtual Media` {.action}. Wählen Sie dann `Virtual Keyboard`{.action} im Drop-down-Menü aus.
+>
+
+Klicken Sie auf die `ENTF` Taste während des Startvorgangs, um zum BIOS-Interface zu gelangen. Sie können auch die Taste `F11` drücken und auf das BIOS zugreifen, indem Sie die Option `Enter Setup`{.action} auswählen.
+
+![Startmenü](images/boot_menu.png){.thumbnail}
+
+Gehen Sie im BIOS zum Tab `Boot`{.action} und ändern Sie die `UEFI Boot Order #1` zu `UEFI USB CD/DVD:UEFI: CDROM virtual ATEN YSOJ`.
+
+![Bios](images/bios.png){.thumbnail}
+
+Klicken Sie auf die Taste `F4`, um die Änderungen zu speichern und den Server neu zu starten.
 
 ## Weiterführende Informationen
 

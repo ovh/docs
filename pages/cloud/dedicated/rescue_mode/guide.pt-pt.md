@@ -10,7 +10,7 @@ section: 'Diagnóstico e Modo Rescue'
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 09/02/2021**
+**Última atualização: 19/03/2021**
 
 ## Objetivo
 
@@ -173,22 +173,19 @@ Após o reboot do seu servidor, receberá um e-mail com os dados de acesso em mo
 
 Para utilizar o modo rescue proposto pelo Windows, deve descarregar e instalar uma consola VNC ou utilizar o módulo `IPMI` na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
-![Windows WinRescue](images/rescue-mode-06.png){.thumbnail}
+![Windows WinRescue](images/rescue-mode-07.png){.thumbnail}
 
 Já estão instaladas neste modo as seguintes ferramentas:
 
 |Ferramenta|Descrição|
 |---|---|
-|Firefox|Um navegador web.|
-|Freecommander|Um gestor de ficheiros com todas as funcionalidades standard de que precisa.|
-|NTPWEdit|Um gestor de palavras-passe fácil de utilizar. Permite-lhe reativar ou modificar as palavras-passe das contas de utilizador no seu servidor. Esta ferramenta é prática em caso de perda de informações de ligação ou para a reativação de uma conta de segurança.|
-|Avast Virus Cleaner|Uma aplicação antivírus com capacidades de verificação e de limpeza dos ficheiros.|
-|ActivNIC|Uma ferramenta que lhe permite reativar uma placa de interface de rede.|
-|BootSect|Uma ferramenta que lhe permite reparar o sector de arranque.|
-|Virtual Clone Drive|Uma ferramenta com a qual poderá montar ficheiros BIN, CCD e ISO num leitor CD virtual.|
-|smartCTL|Uma ferramenta que lhe permite aceder aos logs automáticos de monitorização dos discos rígidos.|
-|Diskpart|Uma ferramenta que lhe permite manipular as partições do servidor.|
-|SysInternal|Uma suite de software da Microsoft que lhe permite efetuar a manutenção da rede e gerir os processos.|
+|Mozilla ULight|Um browser.|
+|Memory Diagnostics Tool|Uma ferramenta Windows que permite testar a memória RAM.|
+|Explorer_Q-Dir|Um explorador de ficheiros.|
+|GSmartControl|Uma ferramenta de verificação dos discos rígidos e dos discos rígidos SSD.|
+|PhotoRec|Uma ferramenta de recuperação de ficheiros potencialmente perdidos num disco.|
+|SilverSHielD|Um servidor SSH2 e SFTP.|
+|System Recovery|Uma ferramenta Windows de restauro e reparação do sistema.|
 |TestDisk|Uma aplicação eficaz de recuperação de dados. Permite-lhe recuperar e modificar partições danificadas, encontrar partições perdidas, corrigir um setor de arranque ou até reconstruir um MBR com defeito.|
 |FileZilla|Um cliente FTP open source. Trata dos protocolos SSH e SSL, e dispõe de uma interface arrastar-soltar clara e intuitiva. Pode ser utilizado para transferir os seus dados para um servidor FTP, como o backup FTP incluído na maior parte dos modelos de servidores da OVHcloud.|
 |7-ZIP|Utilitário de compressão e de arquivamento de ficheiros compatível com os seguintes formatos: ARJ, CAB, CHM, CPIO, CramFS, DEB, DMG, FAT, HFS, ISO, LZH, LZMA, MBR, MSI, NSIS, NTFS, RAR, RPM, SquashFS, UDF, VHD, WIM, XAR e Z. Poderá também criar os seus próprios arquivos nos seguintes formatos: BZIP2, GZIP, TAR, WIM, XZ, Z e ZIP.|

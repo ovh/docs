@@ -57,7 +57,7 @@ L'activation prend quelques secondes. Un message vous informera de la disponibil
 
 ![IPMI navigateur](images/KVM-web-browser02.png){.thumbnail}
 
-Cliquez alors sur `Accéder à la console (KVM)` pour ouvrir la console dans votre navigateur.
+Cliquez alors sur `Accéder à la console (KVM)`{.action} pour ouvrir la console dans votre navigateur.
 
 ![IPMI navigateur](images/KVM-web-browser03b.png){.thumbnail}
 
@@ -135,7 +135,7 @@ Pendant le processus de démarrage, appuyez sur la touche `SUPPR` lorsque vous �
 
 ![Menu_démarrage](images/boot_menu.png){.thumbnail}
 
-Dans le BIOS, naviguez jusqu'à l'onglet `Boot`{.action} et remplacez `UEFI Boot Order #1` par `UEFI USB CD/DVD:UEFI: CDROM virtuel ATEN YSOJ`.
+Dans le BIOS, naviguez jusqu'à l'onglet `Boot`{.action} et remplacez `UEFI Boot Order #1` par `UEFI USB CD/DVD:UEFI: CDROM virtual ATEN YSOJ`.
 
 ![Bios](images/bios.png){.thumbnail}
 

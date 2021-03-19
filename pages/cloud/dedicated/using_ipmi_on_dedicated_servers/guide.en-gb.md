@@ -5,7 +5,7 @@ excerpt: 'With the IPMI, you can log in to your server without having to use any
 section: 'Getting started'
 ---
 
-**Last updated 18th March 2020**
+**Last updated 18th March 2021**
 
 ## Objective
 
@@ -127,7 +127,7 @@ During the bootup process, press the `DEL` key when prompted to access the BIOS.
 
 ![Boot_Menu](images/boot_menu.png){.thumbnail}
 
-In the BIOS navigate to the `Boot`{.action} tab and change the `UEFI Boot Order #1` to `UEFI USB CD/DVD:UEFI: CDROM virtuel ATEN YSOJ`.
+In the BIOS navigate to the `Boot`{.action} tab and change the `UEFI Boot Order #1` to `UEFI USB CD/DVD:UEFI: CDROM virtual ATEN YSOJ`.
 
 ![Bios](images/bios.png){.thumbnail}
 
