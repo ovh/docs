@@ -6,7 +6,7 @@ legacy_guide_number: '1442308'
 section: OVHcloud Funktionen
 ---
 
-**Letzte Aktualisierung am 24.07.2020**
+**Letzte Aktualisierung am 19.03.2021**
 
 ## Ziel
 
@@ -19,8 +19,12 @@ In einigen Fällen kann es nützlich sein, einen Host-Server aus Ihrem Cluster z
 - Sie verfügen über eine [Hosted Private Cloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur.
 - Sie haben Zugriff auf das vSphere-Verwaltungsinterface.
 
-
 ## In der praktischen Anwendung
+
+> [!warning]
+>
+> Achten Sie darauf, den Host-Server, den Sie entfernen möchten, nicht auszuschalten, da dies nicht die gewünschte Wirkung hätte. Es würde stattdessen die Lieferung eines Spare-Host-Servers zur Folge haben, und der ausgeschaltete Host-Server würde nicht automatisch entfernt.
+>
 
 Das Löschen eines Host-Servers erfolgt in zwei Schritten: Zuerst wird die Ressource in den Wartungsmodus versetzt und anschließend gelöscht.
 
@@ -58,13 +62,12 @@ Sie können den Fortschritt des Löschvorgangs des Host-Servers im Bereich `Rece
 
 ![Nachverfolgung des Löschvorgangs](images/removehost07.png){.thumbnail}
 
-Der Host-Server wird innerhalb einiger Minuten gelöscht und erscheint nicht mehr in Ihrem Inventar. 
+Der Host-Server wird innerhalb einiger Minuten gelöscht und erscheint nicht mehr in Ihrem Inventar.
 
 > [!primary]
 >
 > Wird während des Vorgangs ein Verzeichnis oder eine Datei im lokalen Speicher des Host-Servers hinzugefügt, wird der Löschvorgang aufgrund eines Fehlers unterbrochen. Nur Basisverzeichnisse und vSwap-Dateien blockieren den Vorgang nicht.
-> 
-
+>
 
 ## Weiterführende Informationen
 

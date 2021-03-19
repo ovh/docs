@@ -109,4 +109,4 @@ OVHcloud oferuje również aplikację internetową posiadającą [funkcje pracy 
 
 [Konfiguracja konta Exchange na urządzeniu iPhone lub iPad](https://docs.ovh.com/pl/microsoft-collaborative-solutions/exchange_20132016_automatyczna_konfiguracja_z_poziomu_ios_iphone_-_ipad/){.external}
 
-Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com/en](https://community.ovh.com/en){.external}.
+Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com/en](https://community.ovh.com/en/){.external}.

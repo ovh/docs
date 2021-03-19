@@ -1,57 +1,74 @@
 ---
-title: 'Alterar a palavra-passe root num servidor dedicado Linux'
+title: 'Alterar a palavra-passe root num servidor dedicado'
 slug: alterar-palavra-passe-root-linux-num-servidor-dedicado
-excerpt: 'Saiba como alterar a palavra-passe root num servidor dedicado Linux'
+excerpt: 'Saiba como alterar a palavra-passe root do seu servidor dedicado'
 section: 'Diagnóstico e Modo Rescue'
 ---
 
-**Última atualização: 08/11/2018**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Sumário
+**Última atualização: 16/02/2021**
 
-Ao instalar ou reinstalar uma distribuição ou um sistema operativo, irá receber uma palavra-passe de acesso root. Para maior segurança, sugerimos a alteração da mesma, conforme as indicações apresentadas no manual “[Proteger um servidor dedicado](https://docs.ovh.com/pt/dedicated/proteger-um-servidor-dedicado/){.external}”. Também é possível que precise de a alterar porque a perdeu.
+## Objetivo
 
-**Este manual apresenta-lhe estas duas situações e explica-lhe como alterar a palavra-passe root do seu servidor.**
+Pode ser necessário alterar a palavra-passe root (ou a do utilizador admin/sudo) no seu sistema operativo GNU/Linux.
+<br>Existem dois cenários possíveis:
 
+- Pode sempre ligar-se através de SSH
+- Não pode ligar-se através de SSH porque perdeu a palavra-passe
+
+**Saiba como alterar a sua palavra-passe de administrador em função da situação inicial.**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gi7JqUvcEt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Requisitos
 
-* Possuir um [servidor dedicado](https://www.ovh.pt/servidores_dedicados/){.external} com uma distribuição Linux instalada.
-* Ter acesso root ao servidor via SSH.
-* Ter acesso à [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external}.
+- Ter dados de acesso recebidos por e-mail após a instalação (se estes ainda estiverem válidos)
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} (para utilizar o modo rescue).
 
+> [!warning]
+>A OVHcloud fornece-lhe serviços pelos quais é responsável em termos de configuração e gestão. Assim, é responsável pelo seu bom funcionamento.
+>
+>Este guia foi concebido para o ajudar o mais possível nas tarefas mais comuns. No entanto, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação dos serviços num servidor, recomendamos que contacte um fornecedor especializado.
+>
 
 ## Instruções
 
-### Alterar a palavra-passe para o acesso root
+### Alterar a palavra-passe se ainda tem acesso (utilizador sudo ou root)
 
-Se estabeleceu uma ligação por root com a sua palavra-passe atual e pretende alterá-la, aceda ao servidor por SSH em linha de comandos e introduza o seguinte comando:
+Ligue-se ao seu servidor através de SSH. Migre para o utilizador root, se necessário:
 
-```sh
-passwd
+```
+~$ sudo su -
+~#
 ```
 
-A seguir, deverá indicar a sua nova palavra-passe duas vezes, tal como indicado abaixo:
+Para alterar a palavra-passe do utilizador atual, introduza a `palavra-passe`. A seguir, deverá indicar a sua nova palavra-passe duas vezes, tal como indicado abaixo:
 
-```sh
-Enter new UNIX password:
-Retype new UNIX password:
+```
+~# passwd
+
+New password:
+Retype new password:
 passwd: password updated successfully
 ```
 
 > [!primary]
 >
-> Nas distribuições Linux, a palavra-passe **não será mostrada** à medida que a introduz.
+> Tenha em conta que numa distribuição GNU/Linux, os caracteres da sua palavra-passe **não** aparecem à medida que os escreve.
 >
 
-### Como alterar uma palavra-passe perdida ou esquecida
+### Alterar a palavra-passe se a perdeu
 
-#### 1 - Identificar a partição do sistema
+#### Etapa 1: Identificar a partição do sistema
 
-Depois de ativar o [modo Rescue](https://docs.ovh.com/pt/dedicated/rescue_mode/){.external} no seu servidor, deve identificar a partição do sistema. Para isso, pode usar o seguinte comando:
+Depois de reiniciar o servidor em [modo rescue](../rescue_mode/), deve identificar a partição do sistema. Para isso, execute o seguinte comando:
 
-```sh
-fdisk -l
+```
+# fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
@@ -70,48 +87,52 @@ Device Boot Start End Blocks Id System
 /dev/sda1 1 31488 8060912 c W95 FAT32 (LBA)
 ```
 
-No exemplo acima, a partição do sistema é `/dev/hda1`. 
+No exemplo acima, a partição do sistema é /dev/hda1.
 
 > [!primary]
 >
-> Caso o seu servidor possua uma configuração com um RAID por software, deverá montar o seu volume RAID (geralmente, `/dev/mdX`). 
+> Se o seu servidor dispõe de uma configuração RAID, deve montar o seu volume raid:
+>
+> - com um RAID por software, a sua partição raiz será `/dev/mdX`;
+> - com um RAID por hardware, a sua partição raiz será `/dev/sdX`.
 >
 
-#### 2 - Montar a partição do sistema
+#### Etapa 2: Montar a partição do sistema
 
 Uma vez a partição identificada, pode montá-la através do seguinte comando:
 
-```sh
-mount /dev/hda1 /mnt/
+```
+# mount /dev/hda1 /mnt/
 ```
 
-#### 3 - Alterar a partição root
+#### Etapa 3: Alterar a partição root
 
-Por predefinição, não é possível editar a partição do sistema. Para a editar, aceda à mesma em modo de escrita através do seguinte comando:
+Por predefinição, a partição do sistema está bloqueada para a edição. Por isso, deve abri-la para um acesso de escrita através do seguinte comando:
 
-```sh
-chroot /mnt
+```
+# chroot /mnt
 ```
 
-#### 4 - Alterar a palavra-passe root
+#### Etapa 4: alterar a palavra-passe root
 
-O último passo consiste em alterar a palavra-passe utilizando o seguinte comando:
+A última etapa consiste em alterar a sua palavra-passe, com o seguinte comando:
 
-```sh
-passwd
+```
+# passwd
 
 Enter new UNIX password:
 Retype new UNIX password:
 passwd: password updated successfully
 ```
 
-Uma vez alterada a palavra-passe, modifique o modo de arranque no seu servidor para `Fazer boot no disco rígido`{.action} e reinicie-o. A sua palavra-passe root foi alterada com sucesso.
-
+Depois de realizar esta etapa, altere o modo de arranque no seu servidor para `Fazer boot no disco rígido`{.action} e reinicie-o. A sua palavra-passe root foi alterada.
 
 ## Quer saber mais?
 
-[Ativar e utilizar o modo Rescue](https://docs.ovh.com/pt/dedicated/rescue_mode/){.external}
+[Ativar e utilizar o modo rescue](../rescue_mode/)
 
-[Alterar a palavra-passe de um administrador num servidor dedicado Windows](https://docs.ovh.com/pt/dedicated/alterar-palavra-passe-admin-windows/){.external}
+[Proteger um servidor dedicado](../proteger-um-servidor-dedicado/)
 
-Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
+[Alterar a palavra-passe administrador num servidor dedicado Windows](../alterar-palavra-passe-admin-windows/)
+
+Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

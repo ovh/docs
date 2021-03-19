@@ -6,11 +6,11 @@ legacy_guide_number: '1442308'
 section: 'Funkcjonalności OVHcloud'
 ---
 
-**Ostatnia aktualizacja z dnia 24-07-2020**
+**Ostatnia aktualizacja z dnia 19-03-2021**
 
 ## Wprowadzenie
 
-W niektórych przypadkach może zaistnieć potrzeba usunięcia serwera hosta z Twojego klastra, np. jeśli jest nieużywany i chcesz go zwrócić lub jeśli chcesz zacząć korzystać z wyższej gamy serwerów. 
+W niektórych przypadkach może zaistnieć potrzeba usunięcia serwera hosta z Twojego klastra, np. jeśli jest nieużywany i chcesz go zwrócić lub jeśli chcesz zacząć korzystać z wyższej gamy serwerów.
 
 **Niniejszy przewodnik wyjaśnia, jak usunąć w bezpieczny sposób hosta z Twojej infrastruktury Private Cloud.**
 
@@ -19,8 +19,12 @@ W niektórych przypadkach może zaistnieć potrzeba usunięcia serwera hosta z T
 * Posiadanie oferty [Hosted Private Cloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/){.external}
 * Dostęp do interfejsu zarządzania vSphere
 
-
 ## W praktyce
+
+> [!warning]
+>
+> Pamiętaj, aby nie wyłączać serwera hosta, który chcesz usunąć, ponieważ nie przyniesie to pożądanych efektów. Doprowadziłoby to do dostarczenia serwera hosta spare, a wyłączony serwer hosta nie zostanie automatycznie usunięty.
+>
 
 Usunięcie hosta składa się z dwóch etapów: przełączenie serwera w tryb konserwacji i usunięcie serwera.
 
@@ -34,11 +38,9 @@ Włączenie trybu konserwacji wymaga dodatkowego potwierdzenia. Zapoznaj się z 
 
 ![Potwierdzenie trybu konserwacji](images/removehost02.png){.thumbnail}
 
-
 Możesz monitorować postęp uruchamiania trybu konserwacji w sekcji `Recent Tasks`.
 
 ![Monitoring trybu konserwacji](images/removehost03.png){.thumbnail}
-
 
 ### Usunięcie serwera hosta
 
@@ -58,13 +60,12 @@ Możesz monitorować postęp usuwania serwera hosta w sekcji `Recent Tasks`.
 
 ![Zadanie monitorowania usunięcia hosta](images/removehost07.png){.thumbnail}
 
-W ciągu kilku minut serwer hosta zostanie usunięty i nie będzie już widoczny. 
+W ciągu kilku minut serwer hosta zostanie usunięty i nie będzie już widoczny.
 
 > [!primary]
 >
 > Jeśli w międzyczasie jakiekolwiek katalogi lub pliki zostaną dodane do lokalnej pamięci masowej serwera hosta, usunięcie zostanie zablokowane z powodu błędu. Jedynie podstawowe katalogi oraz pliki vSwap nie blokują tej operacji.
-> 
-
+>
 
 ## Sprawdź również
 
