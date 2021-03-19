@@ -30,11 +30,11 @@ Vous pouvez être amenés à vouloir restaurer votre instance grâce à une sauv
 
 Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez `Public Cloud`{.action}. Cliquez ensuite sur  `Instance backup`{.action} dans le menu à gauche.
 
-![public-cloud-instance-backup](images/restorebackup01.png)){.thumbnail}
+![public-cloud-instance-backup](images/restorebackup01.png){.thumbnail}
 
 Cliquez alors sur les `...`{.action} à droite de la sauvegarde choisie et enfin sur `Créer une instance`{.action}.
 
-Une version abrégée de la page de création de l'instance s'affiche, dans laquelle vous pouvez décider de certaines options.
+Une version abrégée de la page de création de l'instance s'affiche, dans laquelle vous pouvez modifier certaines options.
 
 ![public-cloud-instance-backup](images/restorebackup02.png){.thumbnail}
 
@@ -59,7 +59,7 @@ Pour plus d'informations sur la création d'une instance, consultez [ce guide](.
 
 Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez `Public Cloud`{.action}. Cliquez ensuite sur  `Instances`{.action} dans le menu à gauche.
 
-![public-cloud-instance-backup](images/restorebacku04.png){.thumbnail}
+![public-cloud-instance-backup](images/restorebackup04.png){.thumbnail}
 
 Cliquez sur le bouton `...`{.action} à droite de l'instance que vous souhaitez restaurer et cliquez sur `Editer`{.action}.
 
@@ -80,7 +80,7 @@ L'instance aura le statut `Réinstallation` jusqu'à ce que le processus soit te
 
 > [!warning]
 >
->Comme indiqué dans l'encadré jaune qui vous est alors précisé, aucune donnée ajoutée après la création de cette sauvegarde ne pourra être récupérée.
+> Comme indiqué dans l'encadré jaune qui vous est alors précisé, aucune donnée ajoutée après la création de cette sauvegarde ne pourra être récupérée.
 >
 
 ## Aller plus loin
