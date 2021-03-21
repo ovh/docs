@@ -1,7 +1,7 @@
 ---
-title: Restaurer une sauvegarde via les API OVHcloud
+title: Restaurer des sauvegardes via les API OVHcloud
 slug: veeam-backup-restoration
-excerpt: Découvrez comment restaurer une sauvegarde Veeam Managed Backup via les API OVHcloud
+excerpt: Découvrez comment restaurer des sauvegardes Veeam Managed Backup via les API OVHcloud
 section: Services et options OVHcloud
 order: 06
 ---
@@ -23,7 +23,7 @@ Si vous n'êtes pas habitué au fonctionnement des API OVHcloud, consultez notre
 
 ### Étape 1 : générer un rapport de sauvegardes
 
-Il vous faut dans un premier temps cibler la ou les sauvegarde(s) à restaurer.
+Il vous faut dans un premier temps cibler les sauvegardes à restaurer.
 
 Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/) et utilisez l'appel suivant :
 
@@ -34,21 +34,22 @@ Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/) et utilisez l'ap
 Renseignez les variables :
 
 - serviceName : la référence de votre PCC sous la forme `pcc-XX-XX-XX-XX`
-- datacenterId : l'ID du datacenter sauvegardé
+- datacenterId : l'ID du datacentre sur lequel est activée votre solution Veeam Managed Backup
 
 Cet appel va générer un rapport de sauvegardes. Il sera envoyé par e-mail à l'adresse référencée sur le compte administrateur du service Hosted Private Cloud.
 <br>L'e-mail liste les éléments suivants :
 
+- Nom de la VM
 - Sauvegardes effectuées
 - Taille de chaque sauvegarde
 - **Dossier de stockage (BackupRepository)**
 - Dernier point de restauration
 
-![email](images/backup-email.png){.thumbnail}
+![email](images/backup-report-email.png){.thumbnail}
 
 Prenez note du dossier de stockage (BackupRepository), celui-ci vous permettra de restaurer la sauvegarde à l'étape suivante.
 
-### Étape 2 : restaurer la sauvegarde
+### Étape 2 : restaurer les sauvegardes
 
 > [!warning]
 >
@@ -68,7 +69,7 @@ Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/) et utilisez l'ap
 Renseignez les variables :
 
 - serviceName : la référence de votre PCC sous la forme `pcc-XX-XX-XX-XX`
-- datacenterId : l'ID du datacenter qui va récupérer les sauvegardes
+- datacenterId : l'ID du datacentre sur lequel est activée votre solution Veeam Managed Backup
 - backupRepositoryName : le nom du backupRepository obtenu à l'étape 1
 
 Une fois la restauration terminée, vous retrouverez, dans votre interface vSphere, les VM correspondant aux sauvegardes restaurées.
