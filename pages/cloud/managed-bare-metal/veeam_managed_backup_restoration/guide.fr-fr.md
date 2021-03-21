@@ -1,6 +1,8 @@
 ---
 title: Restaurer des sauvegardes via les API OVHcloud
 slug: veeam-backup-restoration
+routes:
+    canonical: 'https://docs.ovh.com/fr/private-cloud/veeam-backup-restoration/'
 excerpt: Découvrez comment restaurer des sauvegardes Veeam Managed Backup via les API OVHcloud
 section: Services et options OVHcloud
 order: 06
@@ -15,7 +17,7 @@ order: 06
 ## Prérequis
 
 - Être connecté aux [API OVHcloud](https://api.ovh.com/)
-- [Veeam Managed Backup activé](../veeam-backup-as-a-service) sur votre offre Hosted Private Cloud
+- [Veeam Managed Backup activé](../veeam-backup-as-a-service) sur votre offre Managed Bare Metal
 
 ## En pratique
 
