@@ -4,7 +4,6 @@ slug: vsphere-register-vm-vmx
 excerpt: Découvrez comment réenregistrer des VM sur un nouveau service depuis d'anciens datastores
 section: Fonctionnalités VMware vSphere
 order: 06
-hidden: true
 ---
 
 **Dernière mise à jour le 22/03/2021**
@@ -49,18 +48,6 @@ En cas d'erreur de paramétrage, un message d'erreur vous sera affiché lorsque 
 Vous pourrez rallumer une VM en faisant un clic droit sur celle-ci puis en cliquant sur `Power On`
 
 ![enregistrer VM](images/restore-vm-05.png){.thumbnail}
-
-### Automatisation
-
-Dans le cas où vous auriez plusieurs dizaines de VM et/ou datastores, il est possible d'utilier des scripts pour effectuer le parcours des datastores et l'enregistrement des VM s'y trouvant.
-
-#### Avec PowerCLI
-
-> [!warning]
->
-> En cours !
->
-
 
 ## Aller plus loin
 
