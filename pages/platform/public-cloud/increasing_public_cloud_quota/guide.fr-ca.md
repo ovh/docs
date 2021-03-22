@@ -1,39 +1,39 @@
 ---
 title: 'Augmenter le quota Public Cloud'
-excerpt: 'Apprenez à augmenter vos quotas Public Cloud'
+excerpt: 'Découvez comment demander l’augmentation de vos quotas Public Cloud'
 slug: augmenter-le-quota-public-cloud
 legacy_guide_number: 1904
 section: 'Gestion de projets'
 order: 6
 ---
 
-**Dernière mise à jour le 25/11/2019**
+**Dernière mise à jour le 22/03/2021**
 
 ## Objectif
 
 Par défaut, le nombre de ressources (RAM, CPU, espace disque, nombre d'instance...) et de projets que vous pouvez créer est limité.
 
-Si en créer davantage vous est nécessaire, cela doit passer par une augmentation de quota. 
+Si vous souhaitez en créer davantage, une augmentation de quota est alors nécessaire.
 
-**Découvrez comment procéder en suivant ce guide.**
-
+**Découvrez comment demander une augmentation de quota Public Cloud depuis votre espace client OVHcloud.**
 
 ## Prérequis
 
-- [Ajouter un moyen de paiement]({legacy}1984){.ref}
+- [Disposer d'un moyen de paiement valide](../../billing/manage-payment-methods/) dans votre espace client OVHcloud
 - Avoir atteint le nombre maximum de projets utilisés sur votre compte OVHCloud.
 
 ## En pratique
 
 Pour demander l'augmentation du nombre de projets et/ou des quotas d'un projet, il vous faut effectuer une demande auprès du support.
 
-Pour cela, sélectionnez votre projet puis la rubrique `Quota and location`{.action}. Vous verrez alors les quotas actuels de votre projet.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud.
+<br> Dans la rubrique `Project Management`, cliquez sur `Quota and Regions`{.action}. Vous verrez alors un récapitulatif des quotas actuels de votre projet.
 
-Cliquez alors sur `Augmenter mes quotas`{.action}.
+Cliquez sur `Augmenter mes quotas`{.action}.
 
-![raise-pci-quota](images/raisepciquota1.png){.thumbnail}
+![raise-pci-quota](images/raisepciquota2021.png){.thumbnail}
 
-Vous serez alors redirigé vers la création d'un ticket support. Il vous suffit de compléter les champs requis, votre demande sera traitée dans les plus brefs délais.
+Vous serez redirigé vers la création d'un ticket support. Complétez les champs requis, votre demande sera traitée dans les plus brefs délais.
 
 ## Aller plus loin
 
