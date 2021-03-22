@@ -1,8 +1,8 @@
 ---
-title: Restaurer des VM dans un nouveau PCC
-slug: restore-vms-on-new-service
-excerpt: Découvrez comment restaurer des VM sur un nouveau service depuis d'anciens datastores
-section: Services et options OVHcloud
+title: Re-enregistrer des VM dans un nouveau PCC
+slug: vsphere-register-vm-vmx
+excerpt: Découvrez comment Re-enregistrer des VM sur un nouveau service depuis d'anciens datastores
+section: Fonctionnalités VMware vSphere
 order: 06
 hidden: true
 ---
@@ -11,15 +11,14 @@ hidden: true
 
 ## Objectif
 
-Suite à un incident, vous pouvez restaurer vos VM sur un nouveau PCC.
+Suite à un incident, des machines virtuelles n'apparaissent plus dans votre inventaire vSphere mais l'ensemble les fichiers sont toujours présent sur les datastores.
 
-**Découvrez comment restaurer des VM sur un nouveau service depuis d'anciens datastores**
+**Découvrez comment réinscrire des VM d'un datastore dans votre inventaire vSphere**
 
 ## Prérequis
 
-- Posséder un produit [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
 - Être connecté à votre [interface vSphere](../connexion-interface-vsphere/).
-- Disposer de datastores restaurés ou sauvegardés.
+- Disposer des datastores contenant les fichiers de machines virtuelles.
 
 ## En pratique
 
@@ -39,9 +38,9 @@ Complétez les informations requises puis cliquez sur `Terminer`.
 
 ![enregistrer VM](images/restore-vm-04.png){.thumbnail}
 
-Ces mêmes opérations sont à répéter sur chaque datastore pour chaque VM à restaurer.
+Ces mêmes opérations sont à répéter sur chaque datastore et pour chaque VM à re-enregister.
 
-Vérifiez les paramètres de vos VM (nom, paramètres réseau, portgroup, etc...) en faisant un clic droit sur chacune d'elles puis en sélectionnant `Edit Settings`.
+Vérifiez les paramètres de vos VM (nom, [portgroup](creation-vlan-vxlan), etc...) en faisant un clic droit sur chacune d'elles puis en sélectionnant `Edit Settings`.
 
 ![modifier paramètres](images/restore-vm-06.png){.thumbnail}
 
@@ -50,6 +49,18 @@ En cas d'erreur de paramétrage, un message d'erreur vous sera affiché lorsque 
 Vous pourrez rallumer une VM en faisant un clic droit sur celle-ci puis en cliquant sur `Power On`
 
 ![enregistrer VM](images/restore-vm-05.png){.thumbnail}
+
+## Automatisation
+
+Dans le cas où vous auriez plusieurs dizaines de VM et/ou datastores, il est possible d'utilier des scripts pour effectuer le parcourt des datastores et l'enregistrement des VM s'y trouvant.
+
+### Avec PowerCLI
+
+> [!warning]
+>
+> En cours !
+>
+
 
 ## Aller plus loin
 
