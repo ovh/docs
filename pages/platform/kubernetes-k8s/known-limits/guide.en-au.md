@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated March 12, 2021.**
+**Last updated March 22, 2021.**
 
 <style>
  pre {
@@ -44,11 +44,14 @@ Delivering a fully managed service, including OS and other component updates, yo
 
 ## LoadBalancer
 
-Based on a new highly-available infrastructure since late May  2020, the external load-balancer included in Managed Kubernetes Service is currently offered free-of-charge until July 1st 2020.
-There is a default quota of 16 external `LoadBalancers` per cluster.  
-This limit can be exceptionally raised upon request though our support team.  
+Creating a Kubernetes service of type LoadBalancer in a Managed Kubernetes cluster triggers the creation of a Public Cloud Load Balancer.
+The lifespan of the external Load Balancer (and thus the associated IP address) is linked to the lifespan of this Kubernetes resource.
+
+There is a default quota of 16 external Load Balancers per Openstack project (also named Openstack tenant).
+This limit can be exceptionally raised upon request through our support team.
+
 There is also a limit of __10 open ports__ on every `LoadBalancer`, and these ports must be in a range between __6 and 65535__.
-(Additonally, node-ports are using default range of 30000 - 32767 , allowing you to expose 2767 services/ports).
+(Additionally, node-ports are using default range of 30000 - 32767 , allowing you to expose 2767 services/ports).
 
 ## OpenStack
 
