@@ -1,7 +1,7 @@
 ---
-title: Re-enregistrer des VM dans un nouveau PCC
+title: Réenregistrer des VM dans un nouveau PCC
 slug: vsphere-register-vm-vmx
-excerpt: Découvrez comment Re-enregistrer des VM sur un nouveau service depuis d'anciens datastores
+excerpt: Découvrez comment réenregistrer des VM sur un nouveau service depuis d'anciens datastores
 section: Fonctionnalités VMware vSphere
 order: 06
 hidden: true
@@ -11,7 +11,7 @@ hidden: true
 
 ## Objectif
 
-Suite à un incident, des machines virtuelles n'apparaissent plus dans votre inventaire vSphere mais l'ensemble les fichiers sont toujours présent sur les datastores.
+Suite à un incident, des machines virtuelles n'apparaissent plus dans votre inventaire vSphere mais l'ensemble des fichiers est toujours présent sur les datastores.
 
 **Découvrez comment réinscrire des VM d'un datastore dans votre inventaire vSphere**
 
@@ -40,7 +40,7 @@ Complétez les informations requises puis cliquez sur `Terminer`.
 
 Ces mêmes opérations sont à répéter sur chaque datastore et pour chaque VM à re-enregister.
 
-Vérifiez les paramètres de vos VM (nom, [portgroup](creation-vlan-vxlan), etc...) en faisant un clic droit sur chacune d'elles puis en sélectionnant `Edit Settings`.
+Vérifiez les paramètres de vos VM (nom, [portgroup](../creation-vlan-vxlan), etc...) en faisant un clic droit sur chacune d'elles puis en sélectionnant `Edit Settings`.
 
 ![modifier paramètres](images/restore-vm-06.png){.thumbnail}
 
@@ -50,11 +50,11 @@ Vous pourrez rallumer une VM en faisant un clic droit sur celle-ci puis en cliqu
 
 ![enregistrer VM](images/restore-vm-05.png){.thumbnail}
 
-## Automatisation
+### Automatisation
 
-Dans le cas où vous auriez plusieurs dizaines de VM et/ou datastores, il est possible d'utilier des scripts pour effectuer le parcourt des datastores et l'enregistrement des VM s'y trouvant.
+Dans le cas où vous auriez plusieurs dizaines de VM et/ou datastores, il est possible d'utilier des scripts pour effectuer le parcours des datastores et l'enregistrement des VM s'y trouvant.
 
-### Avec PowerCLI
+#### Avec PowerCLI
 
 > [!warning]
 >
