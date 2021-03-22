@@ -31,7 +31,7 @@ Sélectionnez un datastore dans la liste.
 
 ![sélectionner datastore](images/restore-vm-02.png){.thumbnail}
 
-Dans les dossier de ce datastore, sélectionnez un fichier `.vmx` et cliquez sur `Enregistrer la VM`.
+Dans les dossiers de ce datastore, sélectionnez le fichier `.vmx` et cliquez sur `Enregistrer la VM`.
 
 ![enregistrer VM](images/restore-vm-03.png){.thumbnail}
 
@@ -41,13 +41,13 @@ Complétez les informations requises puis cliquez sur `Terminer`.
 
 Ces mêmes opérations sont à répéter sur chaque datastore pour chaque VM à restaurer.
 
-Vérifiez les paramètres de vos VM (Nom, paramètres réseau) en faisant un clic droit sur chacune d'elles puis en sélectionnant `Edit Settings`.
+Vérifiez les paramètres de vos VM (nom, paramètres réseau, portgroup, etc...) en faisant un clic droit sur chacune d'elles puis en sélectionnant `Edit Settings`.
 
 ![modifier paramètres](images/restore-vm-06.png){.thumbnail}
 
 En cas d'erreur de paramétrage, un message d'erreur vous sera affiché lorsque vous rallumerez la VM.
 
-Vous pourrez enfin rallumer une VM en faisant un clic droit sur celle-ci puis en cliquant sur `Power On`
+Vous pourrez rallumer une VM en faisant un clic droit sur celle-ci puis en cliquant sur `Power On`
 
 ![enregistrer VM](images/restore-vm-05.png){.thumbnail}
 
