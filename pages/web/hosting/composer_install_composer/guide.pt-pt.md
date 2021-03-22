@@ -1,5 +1,5 @@
 ---
-title: Instalar Compor num alojamento web
+title: Instalar Composer num alojamento web
 slug: instalacao_do_composer_nos_alojamentos_partilhados
 legacy_guide_number: 1894
 excerpt: Saiba como instalar e dar os primeiros passos em Composer
@@ -13,9 +13,9 @@ excerpt: Saiba como instalar e dar os primeiros passos em Composer
 
 ## Objetivo
 
-[Compor](https://getcomposer.org/){.external} é um gestor de dependências criado para a linguagem PHP. Permite aos programadores PHP incluir bibliotecas externas nos seus programas. "Compor" permitiu aos projetos PHP simplificar a distribuição de livrarias e a manutenção do seu código. Aliás, desde a criação desta ferramenta, foram propostas numerosas boas práticas de desenvolvimento no seio da comunidade PHP e melhoraram as livrarias da comunidade PHP. Estas boas práticas são documentadas sob a forma de [PSR](http://www.php-fig.org/){.external}.
+[Composer](https://getcomposer.org/){.external} é um gestor de dependências criado para a linguagem PHP. Permite aos programadores PHP incluir bibliotecas externas nos seus programas. "Composer" permitiu aos projetos PHP simplificar a distribuição de livrarias e a manutenção do seu código. Aliás, desde a criação desta ferramenta, foram propostas numerosas boas práticas de desenvolvimento no seio da comunidade PHP e melhoraram as livrarias da comunidade PHP. Estas boas práticas são documentadas sob a forma de [PSR](http://www.php-fig.org/){.external}.
 
-**Saiba como instalar e dar os primeiros passos em Compor**
+**Saiba como instalar e dar os primeiros passos em Composer**
 
 > [!warning]
 >
@@ -53,7 +53,7 @@ Aconselhamos que permaneça na pasta raiz do seu alojamento para não tornar ace
 curl -sS https://getcomposer.org/installer | php
 ```
 
-Parabéns, "Compor" está agora disponível no seu alojamento partilhado!
+Parabéns, "Composer está agora disponível no seu alojamento partilhado!
 
 
 ### Exemplos de utilização
@@ -82,7 +82,7 @@ Para o instalar, só precisa de executar o comando seguinte na mesma pasta:
 
 
 ```bash
-php compor.phar install
+php composer.phar install
 ```
 
 Para utilizar esta livraria, pode consultar a documentação, assim como o código, disponíveis em [github](https://github.com/ovh/php-ovh){.external}

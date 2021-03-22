@@ -1,5 +1,5 @@
 ---
-title: Instalar Componer en un alojamiento web
+title: Instalar Composer en un alojamiento web
 excerpt: Esta guía explica cómo instalar y dar los primeros pasos en Composer
 id: '1894'
 slug: instalacion_de_composer_en_un_alojamiento_compartido
