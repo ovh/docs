@@ -6,18 +6,18 @@ section: VMware vSphere features
 order: 06
 ---
 
-**Last updated 22/03/2021**
+**Last updated 22th March 2021**
 
 ## Objective
 
-Following an incident, some virtual machines no longer appear in your vSphere inventory, but all files are still present in the datastores.
+Following an incident, some virtual machines may no longer appear in your vSphere inventory, but all files are still present in the datastores.
 
-**Find out how to reregister VMs from a datastore in your vSphere inventory**
+**Find out how to reregister VMs from a datastore in your vSphere inventory.**
 
 ## Requirements
 
-- Access to your vSphere [interface](../login-vsphere-interface/)
-- You must have datastores containing the virtual machine files.
+- access to your vSphere [interface](../login-vsphere-interface/)
+- datastores containing the virtual machine files
 
 ## Instructions
 
@@ -29,7 +29,7 @@ Select a datastore from the list.
 
 ![select datastore](images/restore-vm-02.png){.thumbnail}
 
-In the folders for this datastore, select the `.vmx` file, and click `Register VM`{.action}.
+In the folders for this datastore, select the `.vmx` file and click `Register VM`{.action}.
 
 ![reregister VM](images/restore-vm-03.png){.thumbnail}
 
@@ -43,7 +43,7 @@ Check the settings of your VMs (name, [portgroup](../creation-vlan-vxlan/), etc.
 
 ![change](images/restore-vm-06.png){.thumbnail}
 
-If you get a configuration error, you will receive an error message when you reactivate the VM.
+In the event of a configuration error, an error message will be displayed when you restart the VM. 
 
 You can reactivate a VM by right-clicking on it, then clicking `Power On`{.action}.
 
