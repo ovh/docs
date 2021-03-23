@@ -1,5 +1,5 @@
 ---
-title: Cloud
+title: Univers Cloud
 slug: cloud
 excerpt: Débuter avec vos produits Cloud OVH.com
 color: gold

@@ -1,6 +1,6 @@
 ---
 deprecated: true
-title: Web
+title: Web Cloud
 slug: web
 excerpt: All about OVH Web products
 color: green
