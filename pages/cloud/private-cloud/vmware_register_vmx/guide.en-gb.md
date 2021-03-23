@@ -49,15 +49,15 @@ You can reactivate a VM by right-clicking on it, then clicking `Power On`{.actio
 
 ![enregistrer VM](images/register-vmx-05.png){.thumbnail}
 
-## Automation
+### Automation
 
 In case you have several dozen VMs and/or datastores, it is possible to use scripts to browse the datastores and record the VMs in them.
 
-### With PowerCLI
+#### With PowerCLI
 
-VMware provide PowerCLI for VMware administrators using PowerShell : [Installez PowerCLI](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html)
+VMware provides PowerCLI for VMware administrators using PowerShell : [Install PowerCLI](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html).
 
-Then you can use the script below from [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/)
+Then you can use the script below from [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/){.external}.
 
 ```powershell
 function register-vmxX {
@@ -169,9 +169,9 @@ function register-vmxX {
     }
 ```
 
-> [!info]
+> [!primary]
 >
-> The following script has been adapted to VMware OVHCloud environments.
+> The following script has been adapted to VMware OVHcloud environments.
 > NFS datastores are enabled by default.
 >
 
