@@ -55,7 +55,7 @@ In case you have several dozen VMs and/or datastores, it is possible to use scri
 
 #### With PowerCLI
 
-VMware provides PowerCLI for VMware administrators using PowerShell : [Install PowerCLI](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html).
+VMware provides PowerCLI for VMware administrators using PowerShell : [Install PowerCLI](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html){.external}.
 
 Then you can use the script below from [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/){.external}.
 
