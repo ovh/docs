@@ -1,6 +1,6 @@
 ---
 deprecated: true
-title: Cloud
+title: Cloud Universe
 slug: cloud
 excerpt: Vše o cloudových produktech OVH
 color: gold

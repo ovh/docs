@@ -1,6 +1,6 @@
 ---
 deprecated: true
-title: Web
+title: Web Cloud
 slug: web
 excerpt: Vše o webových službách OVH
 color: green

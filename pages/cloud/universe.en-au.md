@@ -1,5 +1,5 @@
 ---
-title: Cloud
+title: Cloud Universe
 slug: cloud
 excerpt: Get some help with your OVH.com.au Cloud products
 color: gold
