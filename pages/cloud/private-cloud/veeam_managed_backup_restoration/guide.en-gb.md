@@ -45,7 +45,7 @@ This call will generate a backup report. It will be sent by email to the address
 - **Storage Folder (BackupRepository)**
 - Last restore point
 
-![email](images/backup-report-email.png){.thumbnail}
+![email](images/backup-report-email2.png){.thumbnail}
 
 Take note of the BackupRepository reference, this will allow you to restore backups in the next step.
 
@@ -76,7 +76,7 @@ Once the restore is complete, you will find the VMs corresponding to the restore
 <br>To identify them, their names contain the *BatchRestore* suffix and a restore timestamp.
 <br>VMs are restored and switched off. It is up to you to switch them back on.
 
-![vSphere](images/vcenter.png){.thumbnail}
+![vSphere](images/vcenter2.png){.thumbnail}
 
 ## Go further
 

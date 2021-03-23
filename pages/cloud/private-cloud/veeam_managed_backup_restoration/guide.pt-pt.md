@@ -49,7 +49,7 @@ Esta chamada vai gerar um relatório de backups. Será enviado por e-mail para o
 - **Pasta de armazenamento (BackupRepository)**
 - Último ponto de restauro
 
-![email](images/backup-report-email.png){.thumbnail}
+![email](images/backup-report-email2.png){.thumbnail}
 
 Tome nota da pasta de armazenamento (BackupRepository), esta permite-lhe restaurar os backups na etapa seguinte.
 
@@ -80,7 +80,7 @@ Uma vez terminado o restauro, encontrará na sua interface vSphere as VM corresp
 <br>Para os identificar, os seus nomes contêm o sufixo *BatchRestore*, assim como um horário da restauração.
 <br>As VM são restauradas desligadas. A sua carga de as ligar.
 
-![vSphere](images/vcenter.png){.thumbnail}
+![vSphere](images/vcenter2.png){.thumbnail}
 
 ## Saiba mais
 

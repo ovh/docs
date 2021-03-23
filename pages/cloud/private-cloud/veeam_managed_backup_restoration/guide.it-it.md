@@ -49,7 +49,7 @@ Questa chiamata genererà un report dei backup. Riceverai un'email all'indirizzo
 - **Cartella di storage (BackupRepository)**
 - Ultimo punto di ripristino
 
-![email](images/backup-report-email.png){.thumbnail}
+![email](images/backup-report-email2.png){.thumbnail}
 
 Annota la cartella di storage (BackupRepository), che ti permetterà di ripristinare i backup nello step successivo.
 
@@ -80,7 +80,7 @@ Una volta terminato il ripristino, nell'interfaccia vSphere sono disponibili le 
 <br>Per identificarli, i loro nomi contengono il suffisso *BatchRestore* e un orario della ristorazione.
 <br>Le VM sono ripristinate spente. A vostra carico, accenderli.
 
-![vSphere](images/vcenter.png){.thumbnail}
+![vSphere](images/vcenter2.png){.thumbnail}
 
 ## Per saperne di più
 

@@ -49,7 +49,7 @@ Dieser Aufruf generiert einen Backup-Report. Er wird per E-Mail an den Administr
 - **Storage-Ordner (BackupRepository)**
 - Letzter Wiederherstellungspunkt
 
-![E-Mail](images/backup-report-email.png){.thumbnail}
+![E-Mail](images/backup-report-email2.png){.thumbnail}
 
 Achten Sie auf den Storage-Ordner (BackupRepository), mit dem Sie die Sicherungen im nächsten Schritt wiederherstellen können.
 
@@ -78,7 +78,7 @@ Sobald die Wiederherstellung abgeschlossen ist, finden Sie in Ihrem vSphere Inte
 <br>Um sie zu identifizieren, enthalten ihre Namen einen *BatchRestore*-Suffix sowie den Zeitstempel der Wiederherstellung.
 <br>Die VMs werden abgeschaltet wiederhergestellt. Sie müssen deshalb noch eingeschaltet werden.
 
-![vSphere](images/vcenter.png){.thumbnail}
+![vSphere](images/vcenter2.png){.thumbnail}
 
 ## Weiterführende Informationen
 

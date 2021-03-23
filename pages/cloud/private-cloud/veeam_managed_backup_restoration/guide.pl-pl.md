@@ -49,7 +49,7 @@ To wywołanie generuje raport z kopii zapasowych. Zostanie on wysłany e-mailem 
 - **Katalog przechowywania (BackupRepository)**
 - Ostatni punkt przywracania
 
-![email](images/backup-report-email.png){.thumbnail}
+![email](images/backup-report-email2.png){.thumbnail}
 
 Zapisz się do katalogu (BackupRepository) i przywróć kopie zapasowe na kolejnym etapie.
 
@@ -80,7 +80,7 @@ Po zakończeniu przywracania wirtualne maszyny odpowiadające przywróconym kopi
 <br>Aby je zidentyfikować, ich nazwy zawierają sufiks *BatchRestore* oraz znacznik czasu przywrócenia.
 <br>Wirtualne maszyny zostały przywrócone. Proszę je włączyć.
 
-![vSphere](images/vcenter.png){.thumbnail}
+![vSphere](images/vcenter2.png){.thumbnail}
 
 ## Sprawdź również
 

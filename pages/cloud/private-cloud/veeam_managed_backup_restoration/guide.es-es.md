@@ -49,7 +49,7 @@ Esta llamada va a generar un informe de copias de seguridad. Se enviará por cor
 - **Carpeta de almacenamiento (BackupRepository)**
 - Último punto de restauración
 
-![Correo electrónico](images/backup-report-email.png){.thumbnail}
+![Correo electrónico](images/backup-report-email2.png){.thumbnail}
 
 Tenga en cuenta que el backup repository permite restaurar las copias de seguridad en la siguiente etapa.
 
@@ -80,7 +80,7 @@ Una vez completada la restauración, en la interfaz vSphere podrá ver las MV co
 <br>Para identificarlos, sus nombres contienen el sufijo *BatchRestore* así como una marca de tiempo de la restauración.
 <br>Las MV se restauran apagadas. A su cargo, encenderlo.
 
-![vSphere](images/vcenter.png){.thumbnail}
+![vSphere](images/vcenter2.png){.thumbnail}
 
 ## Más información
 
