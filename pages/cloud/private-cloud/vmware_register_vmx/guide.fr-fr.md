@@ -1,6 +1,6 @@
 ---
 title: Réenregistrer des VM dans un nouveau PCC
-slug: vsphere-register-vmx-vmx
+slug: vsphere-register-vm-vmx
 excerpt: Découvrez comment réenregistrer des VM sur un nouveau service depuis d'anciens datastores
 section: Fonctionnalités VMware vSphere
 order: 06
@@ -49,15 +49,15 @@ Vous pourrez rallumer une VM en faisant un clic droit sur celle-ci puis en cliqu
 
 ![enregistrer VM](images/register-vmx-05.png){.thumbnail}
 
-## Automatisation
+### Automatisation
 
-Dans le cas où vous auriez plusieurs dizaines de VM et/ou datastores, il est possible d'utilier des scripts pour effectuer le parcourt des datastores et l'enregistrement des VM s'y trouvant.
+Dans le cas où vous auriez plusieurs dizaines de VM et/ou datastores, il est possible d'utiliser des scripts pour effectuer le parcours des datastores et l'enregistrement des VM s'y trouvant.
 
-### Avec PowerCLI
+#### Avec PowerCLI
 
-VMware fournit les PowerCLI pour les administrateurs VMware utilisant PowerShell : [Installez PowerCLI](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html)
+VMware fournit les PowerCLI pour les administrateurs VMware utilisant PowerShell : [Installez PowerCLI](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html){.external}.
 
-Ensuite vous pouvez utiliser le script ci-dessous dériver de l'excellent [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/)
+Ensuite vous pouvez utiliser le script ci-dessous dériver de l'excellent [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/){.external}.
 
 ```powershell
 function register-vmxX {
@@ -169,13 +169,13 @@ function register-vmxX {
     }
 ```
 
-> [!info]
+> [!primary]
 >
-> Le script ci-dessous à été adapter aux l'environnements VMware OVHCloud.
-> Le parcourt des datastores NFS est activé par défaut.
+> Le script ci-dessous à été adapté pour l'environnement VMware OVHcloud.
+> Le parcours des datastores NFS est activé par défaut.
 >
 
-Après avoir déclarer le script dans votre environnement, vous pouvez l'utiliser de la façon suivante :
+Après avoir déclaré le script dans votre environnement, vous pouvez l'utiliser de la façon suivante :
 
 ```powershell
 register-vmxX -entityName "pcc-192-0-2-1_datacenter1337"
