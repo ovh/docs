@@ -6,7 +6,7 @@ section: VMware vSphere features
 order: 06
 ---
 
-**Last updated 22th March 2021**
+**Last updated 22nd March 2021**
 
 ## Objective
 
