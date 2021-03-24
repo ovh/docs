@@ -37,7 +37,7 @@ During the day-to-day life of your cluster, you may want to dynamically adjust t
 
 > [!primary]
 >
-> The cluster auto-scaler feature is currently a beta. We expect it to reach General Availability by Summer 2021. 
+> The cluster auto-scaler feature is currently available in beta. We expect it to reach General Availability (including support in OVHcloud control panel) by Summer 2021. 
 
 
 ## Before you begin
