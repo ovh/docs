@@ -16,7 +16,7 @@ OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase 
 
 ## Requirements
 
-- an OVHcloud [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/)
+- a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
@@ -35,11 +35,9 @@ Make sure that both your interfaces, or interface groups, are selected and give 
 
 This may take a few minutes. Once it is complete, the next step is to configure the interfaces in your operating system via a NIC link or NIC team. For the method to use, refer to the following guides for the most popular operating systems:
 
-[How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9](../ola-debian9/).
-
-[How to Configure Your NIC for OVHcloud Link Aggregation in CentOS 7](../ola-centos7/).
-
-[How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/).
+- [How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9](../ola-debian9/).
+- [How to Configure Your NIC for OVHcloud Link Aggregation in CentOS 7](../ola-centos7/).
+- [How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/).
 
 ### Restoring OLA to default values
 
@@ -51,10 +49,10 @@ This may take a few minutes.
 
 ## Go further
 
-[How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9](../ola-debian9/).
+[How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9](../ola-debian9/)
 
-[How to Configure Your NIC for OVHcloud Link Aggregation in CentOS 7](../ola-centos7/).
+[How to Configure Your NIC for OVHcloud Link Aggregation in CentOS 7](../ola-centos7/)
 
-[How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/).
+[How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/)
 
 Join our community of users on <https://community.ovh.com/en/>.
