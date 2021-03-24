@@ -23,7 +23,7 @@ OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase 
 
 ### Configuring OLA in the OVHcloud Control Panel
 
-To start configuring OLA, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} and choose the `Bare Metal Cloud`{.action} section. Click on `Dedicated Servers`{.action} in the left-hand sidebar, then select your server from the list.
+To start configuring OLA, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} and choose the `Bare Metal Cloud`{.action} section. Click on `Dedicated Servers`{.action} in the left-hand sidebar, then select your server from the list.
 
 ![network interfaces](images/network_interfaces2021.png){.thumbnail}
 
