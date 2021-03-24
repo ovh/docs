@@ -11,9 +11,9 @@ hidden: true
 ## Objectif
 
 Suite à l'incident survenu sur le datacentre SBG, vous pouvez migrer les datastores d'un PCC concerné par l'incident vers un PCC de destination.
- 
+
 **Découvez comment migrer un datastore d'un PCC vers un autre PCC via les API OVHcloud**
- 
+
 ## Prérequis
 
 - Être connecté aux [API OVHcloud](https://api.ovh.com/)
@@ -22,15 +22,15 @@ Suite à l'incident survenu sur le datacentre SBG, vous pouvez migrer les datast
 > [!warning]
 >
 > Si votre PCC source dispose d'une certification [HDS](https://www.ovhcloud.com/fr/enterprise/certification-conformity/hds/) ou [PCI-DSS](https://www.ovhcloud.com/fr/enterprise/certification-conformity/pci-dss/), votre PCC de destination devra disposer de la même certification afin de récupérer le datastore.
-> 
+>
 > Pour plus d'informations, consultez notre guide [Activation de la mise en conformité Healthcare (HDS) ou Payment Services (PCI DSS)](../activer-l-option-hds-ou-pci-dss/).
-> 
- 
+>
+
 ## En pratique
 
 Si vous n'êtes pas habitué au fonctionnement des API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/).
 
-### Récupérer le filer du datastore
+### Etape 1 : récupérer le filer du datastore
 
 Vous devez d'abord cibler le filerId à migrer.
 
@@ -45,7 +45,7 @@ Renseignez les variables :
 - serviceName : le nom du PCC situé à sbg1a.
 - datacenterId : l'ID du datacentre source.
 
-### Migrer le datastore
+### Etape 2 : migrer le datastore
 
 > [!warning]
 >
@@ -65,7 +65,7 @@ Renseignez les variables :
 
 La réplication des données peut durer plusieurs heures. Lorsque celle-ci est terminée, vous recevrez un e-mail confirmant la réussite de la migration.
 
-### Accéder au datastore depuis vSphere
+### Etape 3 : accéder au datastore depuis vSphere
 
 Dans votre [interface vSphere](../connexion-interface-vsphere/), placez-vous dans la vue `Stockage`{.action}.
 
@@ -77,5 +77,5 @@ La réplication apparaît alors sur tous les hosts du datacenter de destination,
 >
 
 ## Aller plus loin
- 
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
