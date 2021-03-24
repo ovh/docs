@@ -22,11 +22,13 @@ La technologie OVHcloud Link Aggregation (OLA) est conçue par nos équipes pour
 ## En pratique
 
 Étant donné que nous avons une configuration privée-privée pour nos NIC sur OLA, il est impossible de se connecter en SSH au serveur. Par conséquent, vous devrez utiliser l’outil IPMI pour accéder au serveur.
-<br>Pour cela, connectez-vous à [l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez l'univers `Bare Metal Cloud`{.action}. Cliquez sur le bouton `Serveurs dédiés`{.action} en haut de l'écran, puis sélectionnez votre serveur dans le menu déroulant de la barre latérale gauche. Cliquez ensuite sur l'onglet `IPMI`{.action} (1).
+<br>Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez l'onglet `Bare Metal Cloud`{.action}. Cliquez sur `Serveurs dédiés`{.action} dans le menu de gauche et sélectionnez votre serveur dans la liste.
+
+Cliquez ensuite sur l'onglet `IPMI`{.action} (1) puis sur le bouton `Depuis un applet Java (KVM)`{.action} (2).
 
 ![remote kvm](images/remote_kvm2021.png){.thumbnail}
 
-Cliquez ensuite sur le bouton `Depuis un applet Java (KVM)`{.action} (2). Un logiciel JNLP sera téléchargé. Lancez le logiciel pour accéder à l’IPMI. Connectez-vous en utilisant les informations d’identification associées au serveur.
+Un logiciel JNLP sera téléchargé. Lancez le logiciel pour accéder à l’IPMI. Connectez-vous en utilisant les informations d’identification associées au serveur.
 
 Une fois connecté au serveur, ouvrez le « Gestionnaire de serveur ». S’il n’est pas ouvert par défaut, il sera affiché dans le menu « Démarrer ».
 
