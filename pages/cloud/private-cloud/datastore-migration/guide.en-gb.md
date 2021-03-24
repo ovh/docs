@@ -61,6 +61,7 @@ Once the filerId has been identified, use the following call to migrate the data
 Enter the variables:
 
 - serviceName: the name of the destination PCC
+- datacenterId: the destination datacentre ID
 - filerId: the filerId retrieved in the previous step.
 
 Data replication can take several hours. When the migration is complete, you will receive an email confirming that the migration has been successful.

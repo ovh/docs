@@ -61,6 +61,7 @@ Une fois le filerId identifié, utilisez l'appel suivant pour migrer le datastor
 Renseignez les variables :
 
 - serviceName : le nom du PCC de destination.
+- datacenterId: l'ID du datacentre de destination.
 - filerId : le filerId récupéré à l'étape précédente.
 
 La réplication des données peut durer plusieurs heures. Lorsque celle-ci est terminée, vous recevrez un e-mail confirmant la réussite de la migration.
