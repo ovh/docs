@@ -6,7 +6,7 @@ section: 'Utilisation avancée'
 order: 1
 ---
 
-**Dernière mise à jour le 23/03/2021**
+**Dernière mise à jour le 24/03/2021**
 
 ## Objectif
 
@@ -23,15 +23,15 @@ La technologie OVHcloud Link Aggregation (OLA) est conçue par nos équipes pour
 
 ### Configurer OLA dans votre espace client OVHcloud
 
-Pour commencer à configurer OLA, connectez-vous à [votre espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez l'univers `Bare Metal Cloud`{.action}. Cliquez sur le bouton `Serveurs dédiés`{.action} en haut de l'écran, puis sélectionnez votre serveur dans le menu déroulant de la barre latérale gauche. Cliquez ensuite sur l'onglet `Interfaces réseau`{.action} (1).
-
-Cliquez sur le bouton `...`{.action} (2) à droite de « Mode » dans le cadre « OLA: OVHcloud Link Aggregation ». Cliquez alors sur `Configurer l'agrégation privée`{.action} (2).
+Pour commencer à configurer OLA, connectez-vous à [votre espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez l'onglet `Bare Metal Cloud`{.action}. Cliquez sur `Serveurs dédiés`{.action} dans le menu de gauche et sélectionnez votre serveur dans la liste.
 
 ![network interfaces](images/network_interfaces2021.png){.thumbnail}
 
-Vérifiez que vos deux interfaces, ou groupes d'interfaces, sont bien sélectionnées et donnez une nom à l'interface OLA. Cliquez sur `Confirmer`{.action} une fois vos vérifications terminées.
+Dans l'onglet `Interfaces réseau`{.action} (1), cliquez sur le bouton `...`{.action} (2) à droite de « Mode » dans le cadre **OLA: OVHcloud Link Aggregation**. Cliquez alors sur `Configurer l'agrégation privée`{.action} (2).
 
 ![interface select](images/interface_select2021.png){.thumbnail}
+
+Vérifiez que vos deux interfaces, ou groupes d'interfaces, sont bien sélectionnés et donnez un nom à l'interface OLA. Cliquez sur `Confirmer`{.action} une fois vos vérifications terminées.
 
 L'opération peut prendre quelques minutes. Une fois celle-ci terminée, l'étape suivante consiste à configurer les interfaces dans votre système d'exploitation via une liaison NIC ou une équipe NIC. Pour connaître la méthode à appliquer, consultez les guides suivants qui la détaillent pour les systèmes d'exploitation les plus populaires :
 
@@ -43,7 +43,7 @@ L'opération peut prendre quelques minutes. Une fois celle-ci terminée, l'étap
 
 ### Restaurer OLA aux valeurs par défaut
 
-Pour restaurer OLA aux valeurs par défaut, cliquez sur le bouton `...`{.action} à droite de « Mode » dans le cadre « OLA: OVHcloud Link Aggregation ». Cliquez alors sur `Déconfigurer l'agrégation privée`{.action}. Cliquez sur `Confirmer`{.action} dans le menu contextuel.
+Pour restaurer OLA aux valeurs par défaut, cliquez sur le bouton `...`{.action} à droite de « Mode » dans le cadre **OLA: OVHcloud Link Aggregation**. Cliquez alors sur `Déconfigurer l'agrégation privée`{.action}. Cliquez sur `Confirmer`{.action} dans le menu contextuel.
 
 ![network interfaces](images/default_settings2021.png){.thumbnail}
 
