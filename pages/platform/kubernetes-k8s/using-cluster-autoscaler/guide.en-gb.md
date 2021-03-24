@@ -86,7 +86,7 @@ The cluster autoscaler also works the other way around, monitoring underutilized
 > 
 > For more information on this factors disrupting the scaling down of the cluster, please see the [What types of pods can prevent CA from removing a node?](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md#what-types-of-pods-can-prevent-ca-from-removing-a-node) page.
 
-In order to scale up and down the cluster, the autoscaler uses user-defined parameters for things like limits (*what are the upper and lower number of nodes limits in your cluster?*), nodes resource thresholds (*at what load level we add or remove a node?*) or time intervals (*how often we scale the cluster?*). These parameters are described in the [Autoscaler parameters](#autoscaler-parameters) section. 
+In order to scale up and down the cluster, the autoscaler uses user-defined parameters for things like limits (*what are the upper and lower number of nodes limits in your cluster?*), nodes resource thresholds (*at what load level we add or remove a node?*) or time intervals (*how often we scale the cluster?*). These parameters are described in the [Configuring the cluster autoscaler](../configuring-cluster-autoscaler/) guide. 
 
 ## Enabling the autoscaler
 
