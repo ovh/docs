@@ -14,7 +14,7 @@ order: 06
 
 ## Requirements
 
-- Access to the [OVHcloud API](https://api.ovh.com/)
+- Access to the [OVHcloud API](https://ca.api.ovh.com/)
 - [Veeam Managed Backup enabled](../veeam-backup-as-a-service) on your Hosted Private Cloud solution
 
 ## Instructions
@@ -25,7 +25,7 @@ If you are not familiar with OVHcloud APIs, please refer to our [Getting started
 
 First, you need to target the backups you want to restore.
 
-Log in to [https://api.ovh.com/](https://api.ovh.com/) and use the following call:
+Log in to [https://ca.api.ovh.com/](https://ca.api.ovh.com/) and use the following call:
 
 > [!api]
 >
@@ -59,7 +59,7 @@ Take note of the BackupRepository reference, this will allow you to restore back
 
 The API call will restore the last valid restore points for each backup in the storage folder.
 
-Log in to [https://api.ovh.com/](https://api.ovh.com/) and use the following call:
+Log in to [https://ca.api.ovh.com/](https://ca.api.ovh.com/) and use the following call:
 
 > [!api]
 >
