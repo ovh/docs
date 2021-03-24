@@ -52,9 +52,9 @@ This guide follows up the [Using the cluster autoscaler](../using-cluster-autosc
 
 ## Cluster autoscaler configuration
 
-When the autoscaler is enabled in a node pool, is uses a by default configuration. 
+When the autoscaler is enabled in a node pool, is uses a default configuration. 
 
-Here you have a description of the parameters used in the autoscaler configuration, and their by-default values:
+Here you have a description of the parameters used in the autoscaler configuration, and their default values:
 
 
 | Setting	| Description |	Default value |
@@ -65,19 +65,21 @@ Here you have a description of the parameters used in the autoscaler configurati
 | scale-down-delay-after-failure	| How long after scale down failure that scale down evaluation resumes	| 3 minutes |
 | scale-down-unneeded-time	| How long a node should be unneeded before it is eligible for scale down	| 10 minutes |
 | scale-down-unready-time	| How long an unready node should be unneeded before it is eligible for scale down	| 20 minutes |
-| scale-down-utilization-threshold	| Node utilization level, defined as sum of requested resources divided by capacity, below which a node can be considered for  scale down	| 0.5 |
+| scale-down-utilization-threshold	| Node utilization level, defined as sum of requested resources divided by capacity, below which a node can be considered for scale down	| 0.5 |
 | max-graceful-termination-sec	| Maximum number of seconds the cluster autoscaler waits for pod termination when trying to scale down a node	| 600 seconds |
-| balance-similar-node-groups	| Detects similar node pools and balances the number of nodes between them	| false |
+| balance-similar-node-groups	| Detects node pools with the same instance type and the same set of labels and balances the number of nodes between them	| false |
 | expander	| Type of node pool expander to be used in scale up. Possible values: most-pods, random, least-waste, priority	| random |
 | skip-nodes-with-local-storage	| If true cluster autoscaler will never delete nodes with pods with local storage, for example, EmptyDir or HostPath	| true |
 | skip-nodes-with-system-pods	| If true cluster autoscaler will never delete nodes with pods from kube-system (except for DaemonSet or mirror pods)	| true |
 | max-empty-bulk-delete	| Maximum number of empty nodes that can be deleted at the same time	| 10 nodes |
-| new-pod-scale-up-delay	| For scenarios like burst/batch scale where you don't want CA to act before the kubernetes scheduler could schedule all the pods, you can tell CA to ignore unscheduled pods before they're a certain age.	| 0 seconds |
+| new-pod-scale-up-delay	| For scenarios like burst/batch scale where you don't want cluster autosscaler to act before the kubernetes scheduler could schedule all the pods, you can tell CA to ignore unscheduled pods before they're a certain age.	| 0 seconds |
 | max-total-unready-percentage	| Maximum percentage of unready nodes in the cluster. After this percentage is exceeded, CA halts operations	| 45% |
 | max-node-provision-time	| Maximum time the autoscaler waits for a node to be provisioned	| 15 minutes |
 | ok-total-unready-count	| Number of allowed unready nodes, irrespective of max-total-unready-percentage	| 3 node |
 | | | 
 
+You can get more information on those parameters on the [Kubernetes autoscaler documentation](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md).
+If you consider we should reevaluate the default value and/or prioritize the possible customization of of one of those parameters, we are looking for your feedback concerning this beta feature in the [Gitter community channel around OVHcloud Managed Kubernetes service](https://gitter.im/ovh/kubernetes).
 
 ## Go further
 
