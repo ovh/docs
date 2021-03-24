@@ -72,7 +72,7 @@ Geben Sie die Variablen an:
 
 - serviceName: die Referenz Ihrer PCC als `pcc-XX-XX-XX-XX`
 - datacenterId: die ID des Rechenzentrums, in dem Ihre Veeam Managed Backup Lösung aktiviert ist
-- backupRepositoryName: Name des in Schritt 1 erhaltenen BackupRepository
+- backupRepositoryName: Name des in Schritt 1 erhaltenen "BackupRepository"
 
 Sobald die Wiederherstellung abgeschlossen ist, finden Sie in Ihrem vSphere Interface die VMs, die den wiederhergestellten Sicherungen entsprechen.
 <br>Um sie zu identifizieren, enthalten ihre Namen einen *BatchRestore*-Suffix sowie den Zeitstempel der Wiederherstellung.
