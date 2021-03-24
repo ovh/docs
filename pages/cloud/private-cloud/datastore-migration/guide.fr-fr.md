@@ -7,7 +7,7 @@ hidden: true
 ---
 
 **Dernière mise à jour le 24/03/2021**
- 
+
 ## Objectif
 
 Suite à l'incident survenu sur le datacentre SBG, vous pouvez migrer les datastores d'un PCC concerné par l'incident vers un PCC de destination.
@@ -18,6 +18,13 @@ Suite à l'incident survenu sur le datacentre SBG, vous pouvez migrer les datast
 
 - Être connecté aux [API OVHcloud](https://api.ovh.com/)
 - Être connecté à votre [interface vSphere](../connexion-interface-vsphere/).
+
+> [!warning]
+>
+> Si votre PCC source dispose d'une certification [HDS](https://www.ovhcloud.com/fr/enterprise/certification-conformity/hds/) ou [PCI-DSS](https://www.ovhcloud.com/fr/enterprise/certification-conformity/pci-dss/), votre PCC de destinatation devra disposer de la même certification afin de récupérer le datastore.
+> 
+> Pour plus d'informations, consultez notre guide [Activation de la mise en conformité Healthcare (HDS) ou Payment Services (PCI DSS)](../activer-l-option-hds-ou-pci-dss/).
+> 
  
 ## En pratique
 
