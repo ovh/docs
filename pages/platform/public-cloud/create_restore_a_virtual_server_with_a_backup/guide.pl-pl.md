@@ -71,9 +71,9 @@ Wyświetli się wówczas strona edycji instancji. Można tu zmienić:
 - nazwę instancji,
 - obraz instancji,
 - model instancji.
-- Sposób rozliczenia dla instancji (tylko od „Godzinowe” do „Miesięczne”).
+- Sposób rozliczenia dla instancji (tylko od `Godzinowe` do `Miesięczne`).
 
-Wprowadź niezbędne zmiany, a następnie wybierz zakładkę `Backup`{.action} w sekcji "Obraz".
+Wprowadź niezbędne zmiany, a następnie wybierz zakładkę `Backup`{.action} w sekcji **Obraz**.
 
 ![public-cloud-instance-backup](images/restorebackup05.png){.thumbnail}
 
