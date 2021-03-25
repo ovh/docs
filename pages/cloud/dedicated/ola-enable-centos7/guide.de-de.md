@@ -3,27 +3,34 @@ title: 'So konfigurieren Sie Ihre Netzwerkkarte für die OVHcloud Link Aggregati
 slug: ola-centos7
 excerpt: 'Die OVHcloud Link Aggregation auf Ihrem CentOS 7-Server aktivieren'
 section: 'Fortgeschrittene Nutzung'
+order: 3
 ---
 
-**Letzte Aktualisierung am 24\. Oktober 2019**
+**Letzte Aktualisierung am 25.03.2021**
 
 ## Ziel
 
-Die OVHcloud Link Aggregation (OLA)-Technologie wurde von unseren Teams entwickelt, um die Verfügbarkeit Ihres Servers zu erhöhen und die Effizienz Ihrer Netzwerkverbindungen zu steigern. Mit nur wenigen Klicks können Sie Ihre Netzwerkkarten aggregieren und Ihre Netzwerkverbindungen überflüssig machen. Wenn also eine Verbindung ausfällt, wird der Datenverkehr automatisch auf eine andere verfügbare Verbindung umgeleitet. In diesem Artikel werden wir behandeln, wie Sie Ihre Netzwerkkarten verbinden, um sie für OLA in CentOS 7 zu verwenden.
+Die OVHcloud Link Aggregation (OLA)-Technologie wurde von unseren Teams entwickelt, um die Verfügbarkeit Ihres Servers zu erhöhen und die Effizienz Ihrer Netzwerkverbindungen zu steigern. Mit nur wenigen Klicks können Sie Ihre Netzwerkkarten aggregieren und Ihre Netzwerkverbindungen überflüssig machen. Wenn also eine Verbindung ausfällt, wird der Datenverkehr automatisch auf eine andere verfügbare Verbindung umgeleitet.
+
+**In diesem Artikel werden wir behandeln, wie Sie Ihre Netzwerkkarten verbinden, um sie für OLA in CentOS 7 zu verwenden.**
 
 ## Anforderungen
 
-[So konfigurieren Sie Ihre Netzwerkkarte für die OVHcloud Link Aggregation im OVH-Manager](https://docs.ovh.com/de/dedicated/ola-manager){.external}
+- [So konfigurieren Sie Ihre Netzwerkkarte für die OVHcloud Link Aggregation im OVHcloud Kundencenter](../ola-manager)
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## Anleitung
 
-Da wir für unsere NICs in OLA eine privat-private Konfiguration haben, können wir keine SSH-Verbindung zum Server herstellen. Daher müssen wir das IPMI-Tool nutzen, um auf den Server zuzugreifen. Melden Sie sich dazu zuerst beim [OVH-Manager](https://www.ovh.com/manager/){.external} an.  Wählen Sie dann in der linken Seitenleiste den Server aus, den Sie konfigurieren möchten, und klicken Sie auf die Registerkarte **IPMI**.
+Da wir für unsere NICs in OLA eine privat-private Konfiguration haben, können wir keine SSH-Verbindung zum Server herstellen. Daher müssen wir das IPMI-Tool nutzen, um auf den Server zuzugreifen.
+<br>Loggen Sie sich hierzu in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie im Bereich `Bare Metal Cloud`{.action} im linken Menü auf `Dedicated Server`{.action}, wählen Sie Ihren Server aus und klicken Sie dann auf den Tab `IPMI`{.action} (1).
 
-![remote_kvm](images/remote_kvm.png){.thumbnail}
+Klicken Sie anschließend auf die Schaltfläche `Aus einem Java-Applet (KVM)`{.action} (2).
 
-Klicken Sie anschließend auf die Schaltfläche **Aus einem Java-Applet (KVM)**. Ein JNLP-Programm wird heruntergeladen. Öffnen Sie das Programm, um das IPMI aufzurufen. Melden Sie sich mit gültigen Anmeldeinformationen für den Server an.
+![remote_kvm](images/remote_kvm2021.png){.thumbnail}
 
-Bei Verwendung einer OVH-Vorlage werden die NICs standardmäßig mit *eth0* und *eth1* gekennzeichnet. Wenn Sie keine OVH-Vorlage verwenden, können Sie die Namen Ihrer Schnittstellen mit dem folgenden Befehl ermitteln:
+Ein JNLP-Programm wird heruntergeladen. Öffnen Sie das Programm, um das IPMI aufzurufen. Melden Sie sich mit gültigen Anmeldeinformationen für den Server an.
+
+Bei Verwendung einer OVHcloud-Vorlage werden die NICs standardmäßig mit *eth0* und *eth1* gekennzeichnet. Wenn Sie keine OVHcloud-Vorlage verwenden, können Sie die Namen Ihrer Schnittstellen mit dem folgenden Befehl ermitteln:
 
 ```bash
 ip a
@@ -133,6 +140,12 @@ systemctl-Netzwerk neu starten
 
 Um zu testen, ob unsere Verbindung funktioniert, senden Sie einen Ping-Befehl an einen anderen Server im selben vRack. Wenn es funktioniert, sind Sie bereit. Ist dies nicht der Fall, überprüfen Sie Ihre Einstellungen oder starten Sie den Server neu.
 
-## Fazit
+## Weiterführende Informationen
 
-OVHcloud bietet unseren Kunden die Freiheit und Flexibilität, ihre Hardware so einzusetzen, wie es ihren Bedürfnissen am besten entspricht. Nachdem Sie diesen Artikel gelesen haben, sollten Sie in der Lage sein, OVHcloud Link Aggregation (OLA) in CentOS 7 zu konfigurieren, um beide Ihrer NICs als verbundene private Schnittstellen zu verwenden.
+[So konfigurieren Sie die OVHcloud Link Aggregation im OVH-Manager](../ola-manager/).
+
+[So konfigurieren Sie Ihre Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9](../ola-debian9/).
+
+[So konfigurieren Sie Ihre Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/).
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
