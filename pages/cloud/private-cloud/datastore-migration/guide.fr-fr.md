@@ -1,7 +1,7 @@
 ---
 title: Copier un datastore entre deux PCC
 slug: datastore-copy
-excerpt: Découvrez comment acceder à la copie d'un datastore d'un PCC vers un autre PCC via les API OVHcloud
+excerpt: Découvrez comment accéder à la copie d'un datastore d'un PCC depuis un autre PCC via les API OVHcloud
 section: Fonctionnalités OVHcloud
 hidden: true
 ---
@@ -12,7 +12,7 @@ hidden: true
 
 Suite à l'incident survenu sur le datacentre SBG, vous pouvez migrer les datastores d'un PCC concerné par l'incident vers un PCC de destination.
 
-**Découvrez comment acceder à la copie d'un datastore d'un PCC vers un autre PCC via les API OVHcloud**
+**Découvrez comment acceder à la copie d'un datastore d'un PCC depuis un autre PCC via les API OVHcloud**
 
 ## Prérequis
 
@@ -30,9 +30,9 @@ Suite à l'incident survenu sur le datacentre SBG, vous pouvez migrer les datast
 
 Si vous n'êtes pas habitué au fonctionnement des API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/).
 
-### Etape 1 : récupérer le filer du datastore
+### Etape 1 : récupérer le filerId du datastore
 
-Vous devez d'abord cibler le filerId à migrer.
+Vous devez d'abord cibler le filerId à copier.
 
 Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/) et utilisez l'appel suivant :
 
@@ -52,7 +52,7 @@ Renseignez les variables :
 > Le PCC de destination doit être situé dans une zone différente de sbg1a.
 >
 
-Une fois le filerId identifié, utilisez l'appel suivant pour migrer le datastore vers le PCC de destination :
+Une fois le filerId identifié, utilisez l'appel suivant pour copier le datastore sur le PCC de destination :
 
 > [!api]
 >
@@ -64,7 +64,7 @@ Renseignez les variables :
 - datacenterId: l'ID du datacentre de destination (ex: 1515).
 - filerId : le filerId récupéré à l'étape précédente (ex: 001234).
 
-La réplication des données peut durer plusieurs heures. Lorsque celle-ci est terminée, vous recevrez un e-mail confirmant la réussite de la migration.
+La réplication des données peut durer plusieurs heures. Lorsque celle-ci est terminée, vous recevrez un e-mail confirmant la réussite de la copie.
 
 ### Etape 3 : accéder à la copie depuis vSphere
 
@@ -79,7 +79,7 @@ La copie est présentée au travers d'un datastore sur tous les hosts du datacen
 > Le datastore récupéré est en lecture-seule.
 >
 
-Pour les machines virtuelles, il faut [enregistrer celle-ci dans l'inventaire vSphere](../vsphere-register-vm-vmx) puis [cloner](../cloner-une-vm) celle-ci vers un des datastores avant de pouvoir démarrer celle-ci.
+Pour les machines virtuelles, il faut [enregistrer celles-ci dans l'inventaire vSphere](../vsphere-register-vm-vmx) puis les [cloner](../cloner-une-vm) vers un des datastores avant de pouvoir les démarrer.
 
 ## Aller plus loin
 
