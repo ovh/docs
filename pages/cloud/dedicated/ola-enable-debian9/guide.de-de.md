@@ -3,17 +3,21 @@ title: 'So konfigurieren Sie Ihre NetzweSo konfigurieren Sie Ihre Netzwerkkarte 
 slug: ola-debian9
 excerpt: 'Die OVHcloud Link Aggregation auf Ihrem Debian 9-Server aktivieren'
 section: 'Fortgeschrittene Nutzung'
+order: 2
 ---
 
-**Letzte Aktualisierung am 24\. Oktober 2019**
+**Letzte Aktualisierung am 25.03.2021**
 
 ## Ziel
 
-Die OVHcloud Link Aggregation (OLA)-Technologie wurde von unseren Teams entwickelt, um die Verfügbarkeit Ihres Servers zu erhöhen und die Effizienz Ihrer Netzwerkverbindungen zu steigern. Mit nur wenigen Klicks können Sie Ihre Netzwerkkarten aggregieren und Ihre Netzwerkverbindungen überflüssig machen. Wenn also eine Verbindung ausfällt, wird der Datenverkehr automatisch auf eine andere verfügbare Verbindung umgeleitet. In diesem Artikel werden wir behandeln, wie Sie Ihre Netzwerkkarten verbinden, um sie für OLA in Debian 9 zu verwenden.  
+Die OVHcloud Link Aggregation (OLA)-Technologie wurde von unseren Teams entwickelt, um die Verfügbarkeit Ihres Servers zu erhöhen und die Effizienz Ihrer Netzwerkverbindungen zu steigern. Mit nur wenigen Klicks können Sie Ihre Netzwerkkarten aggregieren und Ihre Netzwerkverbindungen überflüssig machen. Wenn also eine Verbindung ausfällt, wird der Datenverkehr automatisch auf eine andere verfügbare Verbindung umgeleitet.
+
+**Diese Anleitung erklärt, wie Sie Ihre Netzwerkkarten verbinden, um sie für OLA in Debian 9 zu verwenden.**
 
 ## Anforderungen
 
-[So konfigurieren Sie Ihre Netzwerkkarte für die OVHcloud Link Aggregation im OVH-Manager](https://docs.ovh.com/de/dedicated/ola-manager){.external}
+- [Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation im OVHcloud Kundencenter](../ola-manager).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 > [!warning]
 >
@@ -26,13 +30,16 @@ Die OVHcloud Link Aggregation (OLA)-Technologie wurde von unseren Teams entwicke
 
 ## Anleitung
 
-Da wir für unsere NICs in OLA eine privat-private Konfiguration haben, können wir keine SSH-Verbindung zum Server herstellen. Daher müssen wir das IPMI-Tool nutzen, um auf den Server zuzugreifen. Melden Sie sich dazu zuerst beim [OVH-Manager](https://www.ovh.com/manager/){.external} an.  Wählen Sie dann in der linken Seitenleiste den Server aus, den Sie konfigurieren möchten, und klicken Sie auf die Registerkarte **IPMI**.
+Da wir für unsere NICs in OLA eine privat-private Konfiguration haben, können wir keine SSH-Verbindung zum Server herstellen. Daher müssen wir das IPMI-Tool nutzen, um auf den Server zuzugreifen.
+<br>Loggen Sie sich hierzu in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Klicken Sie im Bereich `Bare Metal Cloud`{.action} im linken Menü auf `Dedicated Server`{.action}, wählen Sie Ihren Server aus und klicken Sie dann auf den Tab `IPMI`{.action} (1).
 
-![Remote-KVM](images/remote_kvm.png){.thumbnail}
+Klicken Sie anschließend auf die Schaltfläche `Mit einem Java-Applet (KVM)`{.action} (2).
 
-Klicken Sie anschließend auf die Schaltfläche **Aus einem Java-Applet (KVM)**. Ein JNLP-Programm wird heruntergeladen. Öffnen Sie das Programm, um das IPMI aufzurufen. Melden Sie sich mit gültigen Anmeldeinformationen für den Server an.
+![remote_kvm](images/remote_kvm2021.png){.thumbnail}
 
-Bei Verwendung einer OVH-Vorlage werden die NICs standardmäßig entweder mit *ethX* oder *enoX* gekennzeichnet. Wenn Sie keine OVH-Vorlage verwenden, können Sie die Namen Ihrer Schnittstellen mit dem folgenden Befehl ermitteln:
+Ein JNLP-Programm wird heruntergeladen. Öffnen Sie das Programm, um das IPMI aufzurufen. Melden Sie sich mit gültigen Anmeldeinformationen für den Server an.
+
+Bei Verwendung einer OVHcloud-Vorlage werden die NICs standardmäßig entweder mit *ethX* oder *enoX* gekennzeichnet. Wenn Sie keine OVHcloud-Vorlage verwenden, können Sie die Namen Ihrer Schnittstellen mit dem folgenden Befehl ermitteln:
 
 ```bash
 ip a
@@ -67,7 +74,7 @@ auto bond0
 
 > [!primary]
 >
-> Sie müssen die letzte Zeile nur dann zur Datei hinzufügen, wenn Sie das private Netzwerk über IPv6 konfigurieren möchten. 
+> Sie müssen die letzte Zeile nur dann zur Datei hinzufügen, wenn Sie das private Netzwerk über IPv6 konfigurieren möchten.
 >
 
 Abschließend starten wir den Netzwerk-Daemon mit dem folgenden Befehl neu:
@@ -78,6 +85,12 @@ Systemctl-Netzwerk neu starten
 
 Dieser Neustart kann einige Minuten dauern, da die Bond-Schnittstelle erstellt wird.  Um zu testen, ob unsere Verbindung funktioniert, senden Sie einen Ping-Befehl an einen anderen Server im selben vRack. Wenn es funktioniert, sind Sie bereit. Ist dies nicht der Fall, überprüfen Sie Ihre Einstellungen oder starten Sie den Server neu.
 
-## Fazit
+## Weiterführende Informationen
 
-OVHcloud bietet unseren Kunden die Freiheit und Flexibilität, ihre Hardware so einzusetzen, wie es ihren Bedürfnissen am besten entspricht. Nachdem Sie diesen Artikel gelesen haben, sollten Sie in der Lage sein, OVHcloud Link Aggregation (OLA) in Debian 9 zu konfigurieren, um beide Ihrer NICs als verbundene private Schnittstellen zu verwenden. 
+[So konfigurieren Sie die OVHcloud Link Aggregation im OVHcloud Kundencenter](../ola-manager/)
+
+[So konfigurieren Sie Ihre Netzwerkkarte für die OVHcloud Link Aggregation in CentOS 7](../ola-centos7/)
+
+[So konfigurieren Sie Ihre Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/)
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
