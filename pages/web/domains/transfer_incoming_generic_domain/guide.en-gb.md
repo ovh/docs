@@ -20,14 +20,14 @@ By transferring your domain name, you will change your domain name registrar. Yo
 - a domain name more than 60 days old
 - a domain name that has not been transferred or changed holders within the last 60 days
 - a domain name status is ok, or transferable - domain cannot be expired
-- if a domain name will expiry during transfer process - it will be interrupted
+- a domain name expiry date long enough to finish transfer process - recommended more than 60 days
 - an unlocked domain name with a transfer code, or the ability to receive one
 - the authority to request a transfer for the domain name
-- The domain name holder and/or its administrators must be informed of the transfer request.
+- the domain name holder and/or its administrators must be informed of the transfer request.
 
 ## Instructions
 
-Your domain name is currently filed with a registrar. Are you looking to transfer it to OVH? If so, you can do this by following a transfer procedure.
+Your domain name is currently filed with another registrar. Are you looking to transfer it to OVH? If so, you can do this by following a transfer procedure.
 
 The transfer procedure has several steps. These steps will involve various entities being contacted, including your current domain name registrar, OVH, and other parties. The table below provides a breakdown of who is contacted, and how long each step will take to complete.
 
@@ -97,7 +97,7 @@ If you want your domain to connect with specific DNS servers on this step you wi
 
 Some of the domain names extension might need some additional information regarding owner of the domain to finish transfer process. To add this information you will need to choose an option `Manage contacts/owner`{.action}.
 
-![domain](image/order_summary.png){.thumbnail}
+![domain](images/Order_summary.png){.thumbnail}
 
 Once you receive the purchase order, pay the amount requested for the transfer process to begin. The process will only start when we receive your payment. Once you have done this, you can then track the transfer progress via the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. To track progress, go to the `Domains`{.action} section via the menu bar on the left-hand side, then `Ongoing operations`{.action}.
 
@@ -141,10 +141,14 @@ If a refusal response is sent by the current registrar, please contact them to f
 
 Once the transfer procedure is complete, you can manage your domain from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 
-To do this, click `Domains`{.action} in the services bar on the left-hand side, then click on the domain name concerned.
+To do this, go to `Web Cloud`{.action} click `Domains`{.action} in the services bar on the left-hand side, then click on the domain name concerned.
 
 ## Go further
 
 [Migrating your website and emails to OVH](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}
+
+[Editing an OVHcloud DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}
+
+[Editing the DNS servers for an OVHcloud domain name](https://docs.ovh.com/gb/en/domains/web_hosting_general_information_about_dns_servers/){.external}
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
