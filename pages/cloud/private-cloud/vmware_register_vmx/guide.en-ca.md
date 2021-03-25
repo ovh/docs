@@ -23,31 +23,31 @@ Following an incident, some virtual machines may no longer appear in your vSpher
 
 In your [vSphere interface](../login-vsphere-interface/), go to the `Storage`{.action} view.
 
-![storage view](images/restore-vm-01.png){.thumbnail}
+![storage view](images/register-vmx-01.png){.thumbnail}
 
 Select a datastore from the list.
 
-![select datastore](images/restore-vm-02.png){.thumbnail}
+![select datastore](images/register-vmx-02.png){.thumbnail}
 
 In the folders for this datastore, select the `.vmx` file and click `Register VM`{.action}.
 
-![reregister VM](images/restore-vm-03.png){.thumbnail}
+![reregister VM](images/register-vmx-03.png){.thumbnail}
 
 Fill in the information required, then click `Finish`{.action}.
 
-![enregistrer VM](images/restore-vm-04.png){.thumbnail}
+![enregistrer VM](images/register-vmx-04.png){.thumbnail}
 
 You will need to repeat these same operations for each datastore, and for each VM that needs to be reregistered.
 
 Check the settings of your VMs (name, [portgroup](../creation-vlan-vxlan/), etc...) by right-clicking on each one and then selecting `Edit Settings`{.action}.
 
-![change](images/restore-vm-06.png){.thumbnail}
+![change](images/register-vmx-06.png){.thumbnail}
 
 In the event of a configuration error, an error message will be displayed when you restart the VM. 
 
 You can reactivate a VM by right-clicking on it, then clicking `Power On`{.action}.
 
-![enregistrer VM](images/restore-vm-05.png){.thumbnail}
+![enregistrer VM](images/register-vmx-05.png){.thumbnail}
 
 ### Automation
 
