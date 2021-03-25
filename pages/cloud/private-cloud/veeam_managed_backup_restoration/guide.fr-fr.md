@@ -45,7 +45,7 @@ Cet appel va générer un rapport de sauvegardes. Il sera envoyé par e-mail à 
 - **Dossier de stockage (BackupRepository)**
 - Dernier point de restauration
 
-![email](images/backup-report-email.png){.thumbnail}
+![email](images/backup-report-email2.png){.thumbnail}
 
 Prenez note du dossier de stockage (BackupRepository), celui-ci vous permettra de restaurer les sauvegardes à l'étape suivante.
 
@@ -76,7 +76,7 @@ Une fois la restauration terminée, vous retrouverez, dans votre interface vSphe
 <br>Afin de les identifier, leurs noms contiennent le suffixe *BatchRestore* ainsi qu'un horodatage de la restauration.
 <br>Les VM sont restaurées éteintes. À votre charge de les allumer.
 
-![vSphere](images/vcenter.png){.thumbnail}
+![vSphere](images/vcenter2.png){.thumbnail}
 
 ## Aller plus loin
 
