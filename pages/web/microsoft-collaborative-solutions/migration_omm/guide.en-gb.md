@@ -74,6 +74,21 @@ In the page that opens, you can track the progress of your migration. There will
 |Delete migrated elements|This is used to delete any elements that have already been migrated to the destination account. You can delete elements from a specific synchronisation point onwards.|
 |Synchronisation|This allows new elements that were not migrated during a previous synchronisation to be recovered between the source account and the destination account. This action can be viewed as a migration of the missing elements from the source account to the destination account.|
 
+### Carrying out migration within OVH account
+
+You might also want to upgrade your current mail solution, and migrate it to new mail account with OVH. Depend on which version of mail service you are currently using there are two ways to perform migration.
+
+|MX Plan legacy version|MX Plan new version|
+|---|---|
+|![email](images/mxplan-password-legacy-step1.png){.thumbnail}<br> Find the solution in the "Subscription" box.|![email](images/mxplan-password-new-step1.png){.thumbnail}<br>Locate the "Server model" in the "Summary" box.|
+|Continue to [MX Plan legacy version](./#mx-plan-legacy-version).|Continue to [MX new, Pro and Exchange version](./#MX new, Pro and Exchange version).|
+
+
+#### MX plan legacy version
+
+#### MX new, Pro and Exchange version
+
+
 ### Carrying out a migration by file
 
 Log in to the <https://omm.ovh.net/> tool, move your mouse over the `PST/ICS/VCF`{.action} tab in the menu bar at the top of the page, then depending on which migration you want to carry out, click `New PST migration`{.action}, `New ICS migration`{.action} or `New VCF migration`{.action}.
