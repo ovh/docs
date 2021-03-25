@@ -81,7 +81,7 @@ You might also want to upgrade your current mail solution, and migrate it to new
 |MX Plan legacy version|MX Plan new version|
 |---|---|
 |![email](images/mxplan-password-legacy-step1.png){.thumbnail}<br> Find the solution in the "Subscription" box.|![email](images/mxplan-password-new-step1.png){.thumbnail}<br>Locate the "Server model" in the "Summary" box.|
-|Continue to [MX Plan legacy version](./#mx-plan-legacy-version).|Continue to [MX new, Pro and Exchange version](./#MX new, Pro and Exchange version).|
+|Continue to [MX Plan legacy version](./#mx-plan-legacy-version).|Continue to [MX new, Pro and Exchange version](./#mx-new,-pro-and-exchange-version).|
 
 
 #### MX plan legacy version
