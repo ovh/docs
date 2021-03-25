@@ -1,31 +1,31 @@
 ---
-title: VMs in einem neuen Dedicated Cloud speichern
+title: VMs in einer PCC re-registrieren
 slug: vsphere-register-vm-vmx
-excerpt: Hier erfahren Sie, wie Sie VMs über alte Datastores auf einem neuen Dienst neu speichern.
+excerpt: Erfahren Sie hier, wie Sie VMs betriebsunfähiger Datastores in einem neuen Dienst registrieren
 section: VMware vSphere Funktionen
-order: 06
+order: 6
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Stand 22.03.2021**
+**Letzte Aktualisierung am 22.03.2021**
 
 ## Ziel
 
-Nach einer Störung erscheinen virtuelle Maschinen nicht mehr in Ihrem vSphere Inventar, aber alle Dateien sind noch auf den Datastores vorhanden.
+Nach einem Dienstausfall erscheinen virtuelle Maschinen nicht mehr in Ihrem vSphere Inventar, aber alle Dateien sind noch auf den Datastores vorhanden.
 
-**Hier erfahren Sie, wie Sie VMs eines Datastores in Ihr vSphere Inventar aufnehmen.**
+**Diese Anleitung erklärt, wie Sie VMs eines Datastores in Ihr vSphere Inventar aufnehmen.**
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [vSphere Interface](../den_vsphere_client_installieren/) angemeldet.
+- Sie haben Zugriff auf das [vSphere Interface](../den_vsphere_client_installieren/).
 - Sie verfügen über Datastores, die die Dateien der virtuellen Maschinen enthalten.
 
 ## In der praktischen Anwendung
 
-Gehen Sie [in Ihrem vSphere](../den_vsphere_client_installieren/) Interface in die Ansicht `Storage`{.action}.
+Gehen Sie im [vSphere Interface](../den_vsphere_client_installieren/) in die Ansicht `Storage`{.action}.
 
 ![Storage](images/register-vmx-01.png){.thumbnail}
 
@@ -33,7 +33,7 @@ Wählen Sie einen Datastore in der Liste aus.
 
 ![Datastore auswählen](images/register-vmx-02.png){.thumbnail}
 
-Wählen Sie in den Ordnern dieses Datastores die Datei `.vmx` aus und klicken Sie auf `Register VM`{.action}.
+Wählen Sie in den Ordnern dieses Datastores die `.vmx` Datei aus und klicken Sie auf `Register VM`{.action}.
 
 ![VM speichern](images/register-vmx-03.png){.thumbnail}
 
@@ -43,25 +43,25 @@ Füllen Sie die erforderlichen Informationen aus und klicken Sie auf `Finish`{.a
 
 Diese Operationen sind auf jedem Datastore und für jede neu zu registrierende VM zu wiederholen.
 
-Überprüfen Sie die Einstellungen Ihrer VMs (Name, [Portgroup](../vxlan-erstellung/) etc.), indem Sie mit der rechten Maustaste auf jede Ihrer VMs klicken und `Edit Settings`{.action}.
+Überprüfen Sie die Einstellungen Ihrer VMs (Name, [Portgroup](../vxlan-erstellung/) etc.), indem Sie mit der rechten Maustaste auf jede Ihrer VMs klicken und dann auf `Edit Settings`{.action}.
 
 ![Ändern](images/register-vmx-06.png){.thumbnail}
 
-Bei einem Einstellfehler wird Ihnen eine Fehlermeldung angezeigt, wenn Sie die VM wieder einschalten.
+Bei einem Konfigurationsfehler wird Ihnen eine Fehlermeldung angezeigt, wenn Sie die VM wieder einschalten.
 
-Sie können eine VM wieder einschalten, indem Sie mit der rechten Maustaste auf diese klicken und dann auf `Power on`{.action}
+Sie können eine VM reaktivieren, indem Sie mit der rechten Maustaste auf diese klicken und dann auf `Power on`{.action}.
 
 ![VM speichern](images/register-vmx-05.png){.thumbnail}
 
 ### Automatisierung
 
-Wenn Sie mehrere Dutzend VMs und/oder Datastores haben, können Skripte verwendet werden, um den Weg der Datastores und die Registrierung der darauf befindlichen VMs durchzuführen.
+Wenn Sie mehrere VMs und/oder Datastores verwalten, kann der Prozess automatisiert werden, indem die VMs der Datastores mithilfe von Skripten registriert werden.
 
-#### mit PowerCLI
+#### Mit PowerCLI
 
-VMware liefert PowerCLI für VMware Administratoren mit PowerShell: [Installieren Sie PowerCLI](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html){.external}.
+VMware bietet VMware Administratoren [PowerCLI für PowerShell](https://docs.vmware.com/fr/VMware-vSphere/6.5/com.vmware.vsphere.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html){.external}.
 
-Anschließend können Sie das nachstehende Skript verwenden, das dem von [LucD erstellten Skript entspricht](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/){.external}.
+Nach der Installation können Sie das folgende PS-Skript verwenden (Quelle: [LucD](https://www.lucd.info/2009/12/02/raiders-of-the-lost-vmx/){.external}):
 
 ```powershell
 function register-vmxX {
@@ -173,13 +173,7 @@ function register-vmxX {
     }
 ```
 
-> [!primary]
->
-> Das nachstehende Skript wurde für die VMware-Umgebung von OVHcloud angepasst.
-> Die Laufbahn der NFS Datastores ist standardmäßig aktiviert.
->
-
-Nachdem Sie das Skript in Ihrer Umgebung angegeben haben, können Sie es wie folgt verwenden:
+Nachdem Sie das Skript in Ihre Umgebung geladen haben, können Sie es wie folgt verwenden: 
 
 ```powershell
 register-vmxX -entityName "pcc-192-0-2-1_datacenter1337"
@@ -189,6 +183,13 @@ register-vmxX -entityName "pcc-192-0-2-1_datacenter1337" -ignore "upload-vpn"
 register-vmxX -dsNames "ssd-012345","pcc-012345" -ignore "upload-vpn" -checkNFS:$true
 register-vmxX -entityName "pcc-192-0-2-1_datacenter1337" -whatif:$true
 ```
+
+> [!primary]
+>
+> Die Code-Beispiele sind an OVHcloud VMware Umgebungen angepasst.
+> NFS Datastores sind standardmäßig aktiviert.
+>
+
 
 ## Weiterführende Informationen
 
