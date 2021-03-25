@@ -1,18 +1,18 @@
 ---
-title: Migrer un datastore entre deux PCC
-slug: migration-datastore
-excerpt: Découvrez comment migrer un datastore depuis un PCC vers un autre PCC via les API OVHcloud
+title: Copier un datastore entre deux PCC
+slug: datastore-copy
+excerpt: Découvrez comment accéder à la copie d'un datastore d'un PCC depuis un autre PCC via les API OVHcloud
 section: Fonctionnalités OVHcloud
 hidden: true
 ---
 
-**Dernière mise à jour le 24/03/2021**
+**Dernière mise à jour le 25/03/2021**
 
 ## Objectif
 
 Suite à l'incident survenu sur le datacentre SBG, vous pouvez migrer les datastores d'un PCC concerné par l'incident vers un PCC de destination.
 
-**Découvez comment migrer un datastore d'un PCC vers un autre PCC via les API OVHcloud**
+**Découvrez comment acceder à la copie d'un datastore d'un PCC depuis un autre PCC via les API OVHcloud**
 
 ## Prérequis
 
@@ -21,7 +21,7 @@ Suite à l'incident survenu sur le datacentre SBG, vous pouvez migrer les datast
 
 > [!warning]
 >
-> Si votre PCC source dispose d'une certification [HDS](https://www.ovhcloud.com/fr/enterprise/certification-conformity/hds/) ou [PCI-DSS](https://www.ovhcloud.com/fr/enterprise/certification-conformity/pci-dss/), votre PCC de destination devra disposer de la même certification afin de récupérer le datastore.
+> Si votre PCC source dispose d'une certification [HDS](https://www.ovhcloud.com/fr/enterprise/certification-conformity/hds/) ou [PCI-DSS](https://www.ovhcloud.com/fr/enterprise/certification-conformity/pci-dss/), votre PCC de destination devra disposer de la même certification **active** afin de récupérer le datastore.
 >
 > Pour plus d'informations, consultez notre guide [Activation de la mise en conformité Healthcare (HDS) ou Payment Services (PCI DSS)](../activer-l-option-hds-ou-pci-dss/).
 >
@@ -30,9 +30,9 @@ Suite à l'incident survenu sur le datacentre SBG, vous pouvez migrer les datast
 
 Si vous n'êtes pas habitué au fonctionnement des API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/).
 
-### Etape 1 : récupérer le filer du datastore
+### Etape 1 : récupérer le filerId du datastore
 
-Vous devez d'abord cibler le filerId à migrer.
+Vous devez d'abord cibler le filerId à copier.
 
 Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/) et utilisez l'appel suivant :
 
@@ -42,17 +42,17 @@ Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/) et utilisez l'ap
 
 Renseignez les variables :
 
-- serviceName : le nom du PCC situé à sbg1a.
-- datacenterId : l'ID du datacentre source.
+- serviceName : le nom du PCC d'origine situé à SBG (ex: pcc-192-0-2-15).
+- datacenterId : l'ID du datacentre source (ex: 1337).
 
-### Etape 2 : migrer le datastore
+### Etape 2 : lancer la copie du datastore
 
 > [!warning]
 >
 > Le PCC de destination doit être situé dans une zone différente de sbg1a.
 >
 
-Une fois le filerId identifié, utilisez l'appel suivant pour migrer le datastore vers le PCC de destination :
+Une fois le filerId identifié, utilisez l'appel suivant pour copier le datastore sur le PCC de destination :
 
 > [!api]
 >
@@ -60,22 +60,26 @@ Une fois le filerId identifié, utilisez l'appel suivant pour migrer le datastor
 
 Renseignez les variables :
 
-- serviceName : le nom du PCC de destination.
-- datacenterId: l'ID du datacentre de destination.
-- filerId : le filerId récupéré à l'étape précédente.
+- serviceName : le nom du PCC de destination (ex: pcc-192-0-2-50).
+- datacenterId: l'ID du datacentre de destination (ex: 1515).
+- filerId : le filerId récupéré à l'étape précédente (ex: 001234).
 
-La réplication des données peut durer plusieurs heures. Lorsque celle-ci est terminée, vous recevrez un e-mail confirmant la réussite de la migration.
+La réplication des données peut durer plusieurs heures. Lorsque celle-ci est terminée, vous recevrez un e-mail confirmant la réussite de la copie.
 
-### Etape 3 : accéder au datastore depuis vSphere
+### Etape 3 : accéder à la copie depuis vSphere
 
 Dans votre [interface vSphere](../connexion-interface-vsphere/), placez-vous dans la vue `Stockage`{.action}.
 
-La réplication apparaît alors sur tous les hosts du datacenter de destination, sous le nom `restore-000xxx` (xxx désignant le numéro du datastore source).
+![ds_restore](images/ds-restore.png){.thumbnail}
+
+La copie est présentée au travers d'un datastore sur tous les hosts du datacenter de destination, sous le nom `restore-XXXXXX` (XXXXXX désignant le numéro du datastore source).
 
 > [!warning]
 >
 > Le datastore récupéré est en lecture-seule.
 >
+
+Pour les machines virtuelles, il faut [enregistrer celles-ci dans l'inventaire vSphere](../vsphere-register-vm-vmx) puis les [cloner](../cloner-une-vm) vers un des datastores avant de pouvoir les démarrer.
 
 ## Aller plus loin
 
