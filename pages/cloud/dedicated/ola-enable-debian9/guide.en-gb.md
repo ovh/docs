@@ -16,11 +16,12 @@ OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase 
 
 ## Requirements
 
-[Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](../ola-manager)
+- [Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](../ola-manager)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 > [!warning]
 >
-> You will need to download the ifenslave package on the server before enabling OLA in the OVH Manager or API. To do so, please use the following command:
+> You will need to download the ifenslave package on the server before enabling OLA in the OVHcloud Control Panel or API. To do so, please use the following command:
 >
 > ```
 > apt install ifenslave
@@ -38,7 +39,7 @@ Next, click the `From a Java applet (KVM)`{.action} button (2).
 
  A JNLP program will download. Open the program to enter the IPMI. Log in using valid credentials for the server.
 
-By default, using an OVH template, the NICs will be named either *ethX* or *enoX*. If you are not using an OVH template, you can find the names of your interfaces using the following command:
+By default, using an OVHcloud template, the NICs will be named either *ethX* or *enoX*. If you are not using an OVHcloud template, you can find the names of your interfaces using the following command:
 
 ```bash
 ip a
@@ -73,7 +74,7 @@ auto bond0
 
 > [!primary]
 >
-> You only need to add the last line to this file if you are planning on configuring private networking via IPv6. 
+> You only need to add the last line to this file if you are planning on configuring private networking via IPv6.
 >
 
 Finally, we will restart the networking daemon using the following command:
@@ -84,7 +85,7 @@ systemctl restart networking
 
 This restart may take several minutes since it is building the bond interface.  To test that our bond is working, ping another server on the same vRack. If it works, you are all set. If it does not, double check your configurations or try rebooting the server.
 
-## Aller plus loin
+## Go further
 
 [Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](../ola-manager/).
 
@@ -92,4 +93,4 @@ This restart may take several minutes since it is building the bond interface.  
 
 [How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>
+Join our community of users on <https://community.ovh.com/en/>.

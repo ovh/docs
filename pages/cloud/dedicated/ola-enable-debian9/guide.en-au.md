@@ -3,21 +3,25 @@ title: How to Configure Your NIC for OVHcloud Link Aggregation in Debian 9
 slug: ola-debian9
 excerpt: Enable OVHcloud Link Aggregation in your Debian 9 server
 section: 'Advanced use'
+order: 2
 ---
 
-**Last updated October 24th, 2019**
+**Last updated March 25th, 2021**
 
 ## Objective
 
-OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase your server’s availability, and boost the efficiency of your network connections. In just a few clicks, you can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link. In this article, we will discuss how to bond your NICs to use them for OLA in Debian 9.  
+OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase your server’s availability, and boost the efficiency of your network connections. In just a few clicks, you can aggregate your network cards and make your network links redundant. This means that if one link goes down, traffic is automatically redirected to another available link.
+
+**This guide explains how to bond your NICs to use them for OLA in Debian 9.**  
 
 ## Requirements
 
-[How to Configure Your NIC for OVHcloud Link Aggregation in the OVHcloud Manager](../ola-manager){.external}
+- [Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](../ola-manager)
+- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 > [!warning]
 >
-> You will need to download the ifenslave package on the server before enabling OLA in the OVHcloud Manager or API. To do so, please use the following command:
+> You will need to download the ifenslave package on the server before enabling OLA in the OVHcloud Control Panel or API. To do so, please use the following command:
 >
 > ```
 > apt install ifenslave
@@ -26,11 +30,14 @@ OVHcloud Link Aggregation (OLA) technology is designed by our teams to increase 
 
 ## Instructions
 
-Because we have a private-private configuration for our NICs in OLA, we will be unable to SSH into the server. Thus, we will need to leverage the IPMI tool to access the server. To do so, first log in to the [OVHcloud Manager](https://ca.ovh.com/manager/){.external}.  Then select the server you wish to configure on the left-hand sidebar and click the **IPMI** tab.
+Because you have a private-private configuration for your NICs in OLA, you will be unable to SSH into the server. Thus, you will need to leverage the IPMI tool to access the server.
+<br>To do so, first log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). In the `Bare Metal Cloud`{.action} section, click on `Dedicated Servers`{.action} in the left-hand menu, select your server and click the `IPMI`{.action} tab (1).
 
-![remote kvm](images/remote_kvm_2020.png){.thumbnail}
+Next, click the `From a Java applet (KVM)`{.action} button (2).
 
-Next, click the **From a Java applet (KVM)** button. A JNLP program will download. Open the program to enter the IPMI. Log in using valid credentials for the server.
+![remote kvm](images/remote_kvm2021.png){.thumbnail}
+
+ A JNLP program will download. Open the program to enter the IPMI. Log in using valid credentials for the server.
 
 By default, using an OVHcloud template, the NICs will be named either *ethX* or *enoX*. If you are not using an OVHcloud template, you can find the names of your interfaces using the following command:
 
@@ -67,7 +74,7 @@ auto bond0
 
 > [!primary]
 >
-> You only need to add the last line to this file if you are planning on configuring private networking via IPv6. 
+> You only need to add the last line to this file if you are planning on configuring private networking via IPv6.
 >
 
 Finally, we will restart the networking daemon using the following command:
@@ -78,6 +85,12 @@ systemctl restart networking
 
 This restart may take several minutes since it is building the bond interface.  To test that our bond is working, ping another server on the same vRack. If it works, you are all set. If it does not, double check your configurations or try rebooting the server.
 
-## Conclusion
+## Go further
 
-OVHcloud gives our customers the freedom and flexibility to leverage their hardware in the way that best fits their needs. Now that you have read this article, you should be able to configure OVHcloudcloud Link Aggregation (OLA) in Debian 9 in order to use both of your NICs as bonded private interfaces. 
+[Configuring OVHcloud Link Aggregation in the OVHcloud Control Panel](../ola-manager/).
+
+[How to Configure Your NIC for OVHcloud Link Aggregation in CentOS 7](../ola-centos7/).
+
+[How to Configure Your NIC for OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/).
+
+Join our community of users on <https://community.ovh.com/en/>.
