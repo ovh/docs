@@ -70,6 +70,8 @@ Data replication can take several hours. When the replication is complete, you w
 
 In your [vSphere interface](../login-vsphere-interface/), go to the `Storage`{.action} view.
 
+![ds_restore](images/ds-restore.png){.thumbnail}
+
 Replication will then appear on all hosts in the destination data centre under the name `restore-XXXXXX` (XXXXXX being the source datastore number).
 
 > [!warning]
