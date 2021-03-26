@@ -6,7 +6,7 @@ section: 'Primeros pasos'
 order: 1
 ---
 
-**Última actualización: 01/07/2020**
+**Última actualización: 26/03/2021**
 
 ## Objetivo
 
@@ -171,7 +171,7 @@ En primer lugar, seleccione el modelo que mejor se adapta a sus necesidades. Pod
 
 > [!primary]
 >
-Por motivos de seguridad, los recursos totales de su proyecto de Public Cloud estarán limitados. Puede consultar sus límites y aumentar estos recursos directamente desde el área de cliente de OVHcloud. Para ello, acceda al menú `Quota and Localisation`{.action}, en la sección «Project Management» del menú de la izquierda.
+Por motivos de seguridad, los recursos totales de su proyecto de Public Cloud estarán limitados. Puede consultar sus límites y aumentar estos recursos directamente desde el área de cliente de OVHcloud. Para ello, acceda al menú `Quota and Regions`{.action}, en la sección «Project Management» del menú de la izquierda.
 >
 Tenga en cuenta que es posible mejorar las características de una instancia, pero no pasar a un modelo inferior (excepto si ha seleccionado la opción «Flex» en el paso 4 del proceso de creación). Puede consultar a continuación más información sobre este punto.
 >
