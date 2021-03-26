@@ -42,12 +42,12 @@ Si votre serveur dispose d'un boot **uefi**, il vous faudra impérativement pré
 
 **Méthodes de déploiement**
 
-- [Déploiement via espace client](#viacontrolpanel) : vous permetra de deployer rapidement et facilement votre image directement depuis votre espace client.
-- [Déploiement via API](#viaapi) : vous pouvez utiliser les API pour les intégrer à vos propre scripts afin d'automatiser le deploiement.
+- [Déploiement via espace client](#viacontrolpanel) : vous permettra de deployer rapidement et facilement votre image directement depuis votre espace client.
+- [Déploiement via API](#viaapi) : vous pouvez utiliser les API pour les intégrer à vos propres scripts afin d'automatiser le déploiement.
 
 ### Déployer votre image depuis l'espace client OVHcloud <a name="viacontrolpanel"></a>
 
-Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la section `Bare Metal Cloud`{.action},puis `Dedicated Server`{.action}, selectionnez votre serveur.
+Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la section `Bare Metal Cloud`{.action},puis `Dedicated Server`{.action}, sélectionnez votre serveur.
 
 Dans le cadre `Informations générales`, cliquez sur le bouton `...`{.action} devant `Informations générales`. Cliquez enfin sur `Installer`{.action}.
 
