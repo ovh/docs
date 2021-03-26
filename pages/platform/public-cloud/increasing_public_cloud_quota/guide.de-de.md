@@ -31,7 +31,7 @@ Wählen Sie hierzu zunächst Ihr Projekt aus und gehen dann zum Bereich `Quota a
 
 Klicken Sie hier auf den Button `Quota erhöhen`{.action}.
 
-![raise-pci-quota](images/raisepciquota1.png){.thumbnail}
+![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
 
 Sie werden dann zur Ticket-Erstellung weitergeleitet. Füllen Sie lediglich die erforderlichen Felder aus; Ihr Antrag wird schnellstmöglich bearbeitet.
 

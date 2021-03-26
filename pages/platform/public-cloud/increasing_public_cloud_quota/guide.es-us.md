@@ -30,7 +30,7 @@ Para ello, seleccione su proyecto y, seguidamente, la sección `«Límite y loca
 
 Haga clic en `«Aumentar mis límites»`{.action}.
 
-![raise-pci-quota](images/raisepciquota1.png){.thumbnail}
+![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
 
 El sistema le redirigirá a la página de creación de un tique de asistencia. Tan solo complete los campos necesarios y trataremos su solicitud lo antes posible.
 

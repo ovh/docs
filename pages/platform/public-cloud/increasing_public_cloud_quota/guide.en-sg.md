@@ -30,7 +30,7 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 
 This page provides an overview of regions and available resources. A warning will be displayed next to a resource as soon as 80% of its current quota is reached.
 
-![raise-pci-quota](images/raisepciquota1.png){.thumbnail}
+![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
 
 In order to request a quota increase of any kind, click on the `Increase your quota!`{.action} button.
 

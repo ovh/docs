@@ -29,7 +29,7 @@ Per questo, seleziona il tuo progetto e poi la sezione `Quota and location`{.act
 
 Clicca su `Aumentare le quote.`{.action}.
 
-![raise-pci-quota](images/raisepciquota1.png){.thumbnail}
+![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
 
 Sarai quindi reindirizzato verso la creazione di un ticket di supporto. Completa i campi richiesti: la tua richiesta verrà presa in carico il prima possibile.
 
