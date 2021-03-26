@@ -27,7 +27,7 @@ Wenn Sie mehr Bedarf an Ressourcen haben, muss zunächst die Quota heraufgesetzt
 
 Um eine Erhöhung der Projektbegrenzung und/oder der Quotas eines Projektes zu beantragen, muss ein Antrag an den Support über ein Ticket gestellt werden.
 
-Wählen Sie hierzu zunächst Ihr Projekt aus und gehen dann zum Bereich `Quota and Localisation`{.action}. Die aktuellen Quotas Ihres Projekts werden hier angezeigt.
+Wählen Sie hierzu zunächst Ihr Projekt aus und gehen dann zum Bereich `Quota and Regions`{.action}. Die aktuellen Quotas Ihres Projekts werden hier angezeigt.
 
 Klicken Sie hier auf den Button `Quota erhöhen`{.action}.
 

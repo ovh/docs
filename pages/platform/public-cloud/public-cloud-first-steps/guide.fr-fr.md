@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 0
 ---
 
-**Dernière mise à jour le 06/07/2020**
+**Dernière mise à jour le 26/03/2021**
 
 ## Objectif
 
@@ -171,7 +171,7 @@ Commencez par choisir un modèle de serveur en fonction de vos besoins. L'assist
 
 > [!primary]
 >
-Le total de vos ressources du Cloud public sera initialement limité pour des raisons de sécurité. Vous pouvez vérifier les quotas et demander une augmentation dans votre espace client OVHcloud en cliquant sur `Quota and Localisation`{.action} dans la barre de navigation de gauche sous `Gestion de projets`.
+Le total de vos ressources du Cloud public sera initialement limité pour des raisons de sécurité. Vous pouvez vérifier les quotas et demander une augmentation dans votre espace client OVHcloud en cliquant sur `Quota and Regions`{.action} dans la barre de navigation de gauche sous `Gestion de projets`.
 >
 Notez que vous pouvez mettre à niveau votre instance ultérieurement, mais vous ne pourrez pas passer à un modèle plus petit, à moins que vous ne choisissiez l'option « Instance flexible » à l'étape 4 de la création. Pour plus d'informations à ce sujet, reportez-vous à la section ci-dessous.
 >

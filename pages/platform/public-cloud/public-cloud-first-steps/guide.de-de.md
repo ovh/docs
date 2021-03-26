@@ -6,7 +6,7 @@ section: 'Erste Schritte'
 order: 1
 ---
 
-**Letzte Aktualisierung am 30.09.2020**
+**Letzte Aktualisierung am 26.03.2021**
 
 ## Ziel
 
@@ -171,7 +171,7 @@ Wählen Sie zunächst entsprechend Ihren Anforderungen ein Server-Template aus. 
 
 > [!primary]
 >
-Die Gesamtressourcen Ihres Public Cloud Projekts sind anfangs aus Sicherheitsgründen eingeschränkt. Sie können Quotas überprüfen und eine Erhöhung über Ihr OVHcloud Kundencenter anfordern, indem Sie in der linken Menüleiste unter „Project Management“ auf `Quota and Localisation`{.action} klicken.
+Die Gesamtressourcen Ihres Public Cloud Projekts sind anfangs aus Sicherheitsgründen eingeschränkt. Sie können Quotas überprüfen und eine Erhöhung über Ihr OVHcloud Kundencenter anfordern, indem Sie in der linken Menüleiste unter „Project Management“ auf `Quota and Regions`{.action} klicken.
 >
 Bitte beachten Sie, dass Sie Ihre Instanz im Nachhinein upgraden, jedoch nicht auf ein kleineres Modell wechseln können, sofern Sie nicht in Schritt 4 der Erstellung die „Flex“-Option ausgewählt haben. Mehr Informationen hierzu finden Sie weiter unten in der vorliegenden Anleitung.
 >
