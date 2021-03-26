@@ -33,7 +33,7 @@ La page **Site non installé** s’affiche dans deux situations :
 
 1. L'adresse de votre site n’apparaît pas dans l'onglet [multisite](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-1-acceder-a-la-gestion-multisite) de votre hébergement.
 
-2. Votre nom de domaine est relié, via sa `zone DNS`{.action}, à l’adresse IP d'un autre hébergement OVHcloud. 
+2. Votre nom de domaine n'est pas relié, via sa `zone DNS`{.action}, à l’adresse IP de votre hébergement OVHcloud. 
 
 Les étapes suivantes vous permettront de corriger l’erreur `Site non installé` dans ces deux situations.
 
