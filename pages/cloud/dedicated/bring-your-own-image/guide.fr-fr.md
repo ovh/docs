@@ -21,6 +21,8 @@ Outre les prérequis et limitations citées plus bas, il faut s'assurer que l'im
 
 - Posséder un [serveur dédié OVHcloud](https://www.ovh.com/fr/serveurs_dedies/).
 - Avoir généré les [credentials pour utiliser l'APIv6](https://docs.ovh.com/fr/api/api-premiers-pas/).
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) pour la partie [« Déploiement via espace client »](#viacontrolpanel) de ce guide.
+- Être connecté aux [API OVHcloud](https://api.ovh.com/){.external} pour la partie [« Déploiement via API »](#viaapi) de ce guide.
 
 > [!warning]
 >
@@ -57,7 +59,7 @@ Dans la fenêtre qui apparaît, sélectionnez `Installer à partir d'une image p
 
 ![bring your ownimage](images/byoi-controlpanel02.png){.thumbnail}
 
-Vous serez redirigé vers la page suivante. Assurez-vous d'avoir l'URL de votre image au format approprié. Remplissez le reste des informations pertinentes sur cette page. Lorsque vous avez confirmé que les informations sont correctes, appuyez sur `Installer le système`{.action}.
+Vous serez redirigé vers la page suivante. Assurez-vous d'avoir l'URL de votre image au format approprié. Complétez le reste des informations pertinentes sur cette page. Lorsque vous avez confirmé que les informations sont correctes, cliquez sur `Installer le système`{.action}.
 
 Retrouvez le détail des options dans la partie [« Tableaux des options »](#options) de ce guide. 
 
