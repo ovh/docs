@@ -5,7 +5,7 @@ slug: bringyourownimage
 section: Utilisation avancée
 ---
 
-**Dernière mise à jour le 25/02/2021**
+**Dernière mise à jour le 26/03/2021**
 
 ## Objectif
 
@@ -20,9 +20,9 @@ Outre les prérequis et limitations citées plus bas, il faut s'assurer que l'im
 ## Prérequis
 
 - Posséder un [serveur dédié OVHcloud](https://www.ovh.com/fr/serveurs_dedies/).
-- Avoir généré les [credentials pour utiliser l'APIv6](https://docs.ovh.com/fr/api/api-premiers-pas/).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) pour la partie [« Déploiement via espace client »](#viacontrolpanel) de ce guide.
 - Être connecté aux [API OVHcloud](https://api.ovh.com/){.external} pour la partie [« Déploiement via API »](#viaapi) de ce guide.
+- Avoir généré les [credentials pour utiliser l'APIv6](../../api/api-premiers-pas/) pour la partie [« Déploiement via API »](#viaapi) de ce guide.
 
 > [!warning]
 >
@@ -44,12 +44,12 @@ Si votre serveur dispose d'un boot **uefi**, il vous faudra impérativement pré
 
 **Méthodes de déploiement**
 
-- [Déploiement via espace client](#viacontrolpanel) : vous permettra de deployer rapidement et facilement votre image directement depuis votre espace client.
-- [Déploiement via API](#viaapi) : vous pouvez utiliser les API pour les intégrer à vos propres scripts afin d'automatiser le déploiement.
+- [Déploiement via espace client](#viacontrolpanel) : vous permettra de deployer rapidement et facilement votre image directement depuis votre espace client OVHcloud.
+- [Déploiement via API](#viaapi) : vous pouvez utiliser les API OVHcloud pour les intégrer à vos propres scripts afin d'automatiser le déploiement.
 
 ### Déployer votre image depuis l'espace client OVHcloud <a name="viacontrolpanel"></a>
 
-Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la section `Bare Metal Cloud`{.action},puis `Dedicated Server`{.action}, sélectionnez votre serveur.
+Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la section `Bare Metal Cloud`{.action}, puis `Serveurs Dédiés`{.action}, sélectionnez votre serveur.
 
 Dans le cadre `Informations générales`, cliquez sur le bouton `...`{.action} devant `Informations générales`. Cliquez enfin sur `Installer`{.action}.
 
@@ -59,18 +59,17 @@ Dans la fenêtre qui apparaît, sélectionnez `Installer à partir d'une image p
 
 ![bring your ownimage](images/byoi-controlpanel02.png){.thumbnail}
 
-Vous serez redirigé vers la page suivante. Assurez-vous d'avoir l'URL de votre image au format approprié. Complétez le reste des informations pertinentes sur cette page. Lorsque vous avez confirmé que les informations sont correctes, cliquez sur `Installer le système`{.action}.
+Vous serez redirigé vers la page de configuration. Assurez-vous que l'URL de votre image est au format approprié. Complétez le reste des champs requis sur cette page. Lorsque vous avez confirmé que les informations sont correctes, cliquez sur `Installer le système`{.action}.
 
 Retrouvez le détail des options dans la partie [« Tableaux des options »](#options) de ce guide. 
 
 Concernant l'activation de `ConfigDrive`, retrouver la documentation sur [cette page](https://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html).
 
-
 ![bring your ownimage](images/byoi-controlpanel03.png){.thumbnail}
 
 ### Déployer votre image depuis les API <a name="viaapi"></a>
 
-Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/){.external} puis rendez-vous dans la section `dedicated server`{.action}. Le champ `Filter` vous permettra de rechercher « BringYourOwnImage ».
+Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/){.external} puis rendez-vous dans la section `dedicated/server`{.action}. Le champ `Filter` vous permettra de rechercher « BringYourOwnImage ».
 
 Vous disposez de trois appels API liés à la fonctionnalité BringYourOwnImage.
 
