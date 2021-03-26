@@ -31,37 +31,35 @@ Votre site peut afficher une page **Site non installé**, notamment lors de sa m
 
 La page **Site non installé** s’affiche dans deux situations :
 
-1. L'adresse de votre site n’apparaît pas dans l'onglet [multisite](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-1-acceder-a-la-gestion-multisite) de votre hébergement.
+1. Votre domaine n’est pas présent pas dans le [multisite](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-1-acceder-a-la-gestion-multisite) de votre hébergement.
 
-2. Votre nom de domaine n'est pas relié, via sa `zone DNS`{.action}, à l’adresse IP de votre hébergement OVHcloud. 
+2. Il n'est pas relié, via sa `zone DNS`{.action}, à votre hébergement. 
 
 Les étapes suivantes vous permettront de corriger l’erreur `Site non installé` dans ces deux situations.
 
-### Étape 1 : Vérifier que votre domaine est bien présent dans l'onglet multisite de votre hébergement
+### Étape 1 : Vérifier le multisite de votre hébergement
 
-Dans votre espace client OVHcloud, dirigez-vous dans la section `Web cloud`{.action}, puis sur `Hébergements`{.action} dans la colonne de gauche.
+Dans votre espace client OVHcloud, allez dans `Web cloud`{.action}, puis sur `Hébergements`{.action}.
 
-Sélectionnez l'hébergement concerné dans la liste, puis cliquez sur l’onglet `Multisite`{.action}. Plusieurs sénarios sont possibles : 
+Sélectionnez l'hébergement concerné dans la liste, puis cliquez sur l’onglet `Multisite`{.action}.
 
 |Scénarios|Action à entreprendre|
 |---|---|
-|Le nom de votre site apparaît dans le tableau.|Si vous venez d’ajouter le nom de votre site dans le multisite de votre hébergement, patientez une vingtaine de minutes puis rafraichissez le cache de votre navigateur. Si le message « Site non installé » apparaît toujours, passez à [l'étape 2](../#checkdomainlink)|
-|Le domaine ou le sous-domaine lié à votre site n'apparaît pas dans le tableau.|Vous n'avez pas encore ajouté votre site dans l'onglet `multisite`{.action} de votre hébergement web. Pour effectuer cette manipulation, consultez notre documentation [Partager son hébergement entre plusieurs sites](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine).|
-|Le nom de domaine n’est pas entièrement géré depuis votre compte et a été supprimé sans action de votre part.|Cette situation peut apparaître lorsque le nom de domaine de votre site ou sa zone DNS ne sont pas gérés depuis votre espace client OVHcloud. Pour effectuer l’ajout de votre domaine dans cette situation, consultez notre documentation [Partager son hébergement entre plusieurs sites](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
+|Le nom de votre site apparaît dans le tableau.|Si vous venez d’ajouter le nom de votre site dans le multisite de votre hébergement, patientez une vingtaine de minutes puis rafraîchissez le cache de votre navigateur. Si le message « Site non installé » apparaît toujours, passez à [l'étape 2](../#checkdomainlink)|
+|Le domaine ou le sous-domaine lié à votre site n'apparaît pas dans le tableau.|Ajoutez votre domaine au `multisite`{.action} selon ce [guide](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine).|
+|Le nom de domaine a été supprimé du multisite sans action de votre part.|Votre domaine ou sa zone DNS sont peut-être gérés depuis un autre compte. Ajoutez votre domaine au multisite selon ce [document](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
 
-### Étape 2 : Vérifier que votre nom de domaine est relié à votre hébergement par sa zone DNS <a name="checkdomainlink"></a>
+### Étape 2 : Vérifier la zone DNS <a name="checkdomainlink"></a> de votre domaine
 
-Cette étape vise à vérifier que votre domaine, via sa zone DNS, est bien relié à l’hébergement de votre site.
+Cette étape vise à vérifier que votre domaine, via sa `zone DNS`{.action}, est relié à l’hébergement de votre site.
 
-Pour en savoir plus sur la notion de DNS, consultez ce [document](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/)
-
+Pour en savoir plus sur la notion de DNS, consultez ce [document](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/).
 
 #### Étape 2.1 : Déterminer l’adresse IPV4 de votre hébergement OVHcloud
 
 Pour retrouver cette adresse, cliquez sur `Hébergements` dans la colonne de gauche de votre espace client et sélectionnez l'hébergement concerné.
 
 ![hosting-general-informations](images/hosting-general-informations.png)
-
 
 #### Étape 2.2 : Vérifiez l'adresse IPV4 notée dans la zone DNS de votre domaine
 
