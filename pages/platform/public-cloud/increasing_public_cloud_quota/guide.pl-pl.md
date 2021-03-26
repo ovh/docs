@@ -30,7 +30,7 @@ W tym celu wybierz swój projekt, a następnie wybierz rubrykę `Quota and locat
 
 Kliknij polecenie `Zwiększ limity`{.action}.
 
-![raise-pci-quota](images/raisepciquota1.png){.thumbnail}
+![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
 
 Nastąpi przekierowanie do tworzenia zgłoszenia. Wypełnij wymagane pola. Twoje zgłoszenie zostanie rozpatrzone w najbliższym możliwym terminie.
 

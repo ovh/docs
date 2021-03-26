@@ -29,7 +29,7 @@ Para isso, selecione o seu projeto e, em seguida, a rubrica `Quota and location`
 
 Clique, então, em `Aumentar as minhas quotas`{.action}.
 
-![raise-pci-quota](images/raisepciquota1.png){.thumbnail}
+![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
 
 Será então encaminhado(a) para a criação de um ticket de assistência. Basta preencher os campos necessários. O seu pedido será processado o mais depressa possível.
 

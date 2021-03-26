@@ -6,7 +6,7 @@ section: Per iniziare
 order: 1
 ---
 
-**Ultimo aggiornamento 1° Luglio 2020**
+**Ultimo aggiornamento: 26/03/2021**
 
 ## Obiettivo
 
@@ -171,7 +171,7 @@ Per prima cosa, seleziona un modello di server in base alle tue esigenze. La pro
 
 > [!primary]
 >
-Le risorse totali delle tue istanze Public Cloud saranno inizialmente limitate per motivi di sicurezza. È possibile verificare le quote e richiedere un aumento dallo Spazio Cliente OVHcloud cliccando su `Quota and Localisation`{.action} nella barra di navigazione a sinistra situata sotto alla voce “Project Management”.
+Le risorse totali delle tue istanze Public Cloud saranno inizialmente limitate per motivi di sicurezza. È possibile verificare le quote e richiedere un aumento dallo Spazio Cliente OVHcloud cliccando su `Quota and Regions`{.action} nella barra di navigazione a sinistra situata sotto alla voce “Project Management”.
 >
 È possibile aggiornare l’istanza in un secondo momento, ma non sarà possibile passare a un modello più piccolo (a meno che tu non scelga l’opzione “Flex” allo step 4). Per maggiori dettagli, consulta la sezione qui di seguito.
 >

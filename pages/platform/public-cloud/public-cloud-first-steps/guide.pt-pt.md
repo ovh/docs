@@ -6,7 +6,7 @@ section: 'Primeiros passos'
 order: 1
 ---
 
-**Última atualização: 02/09/2020**
+**Última atualização: 26/03/2021**
 
 ## Sumário
 
