@@ -3,9 +3,14 @@ title: 'Configurare un NIC per il servizio OVHcloud Link Aggregation nello Spazi
 slug: ola-manager
 excerpt: "Attivare l'opzione OVHcloud Link Aggregation dalla tua area Cliente OVHcloud"
 section: 'Utilizzo avanzato'
+order: 1
 ---
 
-**Ultimo aggiornamento: 11/11/2019**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 26/03/2021**
 
 ## Obiettivo
 
@@ -15,43 +20,45 @@ La tecnologia OVHcloud Link Aggregation (OLA) è stata progettata dai team OVHcl
 
 ## Prerequisiti
 
-Assicurarsi di aver ordinato l’opzione OVHcloud Link Aggregation dallo Spazio Cliente
-
-> [!warning]
->
-> Per poter apportare modifiche al servizio OLA, per prima cosa è necessario rimuovere tutti i server dalle vRack a cui risultano associati ed eliminare i relativi IP Failover.
->
+- Disporre di un [server dedicato OVHcloud](https://www.ovhcloud.com/it/bare-metal/)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
-Per iniziare a configurare OLA accedi alla sezione `Bare Metal Cloud`{.action} dello [Spazio Cliente](https://www.ovh.com/manager/){.external}, seleziona il tuo server nel menu a sinistra e clicca sulla scheda `Interfacce di rete`{.action}. Una volta verificato che il server non risulti associato a nessuna vRack, clicca su `Già fatto, passo allo step successivo.`{.action} 
+### Configurare OLA nel tuo Spazio Cliente OVHcloud
 
-![network interfaces](images/network_interfaces.png){.thumbnail}
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona la scheda `Bare Metal Cloud`{.action}. Clicca su `Server dedicati`{.action} nel menu a sinistra e seleziona il tuo server nella lista.
 
-Nello step `Configurazione`, clicca sul pulsante `Configurazione`{.action}.
+![network interfaces](images/network_interfaces2021.png){.thumbnail}
 
-![Configura](images/configure.png){.thumbnail}
+Nella scheda `Interfacce di rete`{.action} (1), clicca sul pulsante `...`{.action} (2) a destra di "Modo" nell'ambito **OLA: OVHcloud Link Aggregation**. Clicca su `Configura l'aggregazione privata`{.action} (2).
 
-Seleziona l'opzione `Aggregazione privata`{.action}, assegna un nome all’interfaccia, verifica la correttezza dei dati inseriti e clicca su `Seguente`{.action}.
+![interfaccia select](images/interface_select2021.png){.thumbnail}
 
-![aggregazione privata](images/private_aggregation.png){.thumbnail}
-
-Nella tab successiva, scegli le interfacce da aggregare su OLA e clicca su `Seguente`{.action}.
-
-![selezione interfaccia](images/interface_select.png){.thumbnail}
-
-Verifica le informazioni riepilogate nella sezione `Anteprima della configurazione`{.action} e. se sono corrette, clicca sul pulsante `Crea`{.action}.
-
-![overview](images/overview.png){.thumbnail}
+Verifica che le tue due interfacce, o gruppi di interfacce, siano selezionate correttamente e assegna un nome all'interfaccia OLA. Clicca su `Conferma`{.action} una volta completata la verifica.
 
 Questa operazione potrebbe richiedere qualche minuto. Lo step successivo consisterà nella configurazione delle interfacce del sistema operativo come NIC bond o NIC team. Per conoscere la procedura da seguire, consulta la nostra documentazione disponibile relativa ai sistemi operativi più diffusi:
 
-[Configurare un NIC per il servizio OVHcloud Link Aggregation in Debian 9](https://docs.ovh.com/it/dedicated/ola-debian9/){.ref}
+[Configurare un NIC per il servizio OVHcloud Link Aggregation in Debian 9](../ola-debian9/)
 
-[Configurare un NIC per il servizio OVHcloud Link Aggregation in CentOS 7](https://docs.ovh.com/it/dedicated/ola-centos7/){.ref}
+[Configurare un NIC per il servizio OVHcloud Link Aggregation in CentOS 7](../ola-centos7/)
 
-[Configurare un NIC per il servizio OVHcloud Link Aggregation in Windows Server 2019](https://docs.ovh.com/it/dedicated/ola-w2k19/){.ref}
+[Configurare un NIC per il servizio OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/)
 
-## Conclusioni
+### Ripristina OLA ai valori predefiniti
 
-In OVHcloud crediamo fermamente in un'innovazione per la libertà. OLA offre ai clienti la libertà di utilizzare i NIC in base alle proprie esigenze. A questo punto dovresti essere in grado di configurare il tuo server con OLA nello Spazio Cliente OVHcloud.
+Per ripristinare OLA ai valori predefiniti, clicca sul pulsante `...`{.action} a destra di "Modo" nell'ambito **OLA: OVHcloud Link Aggregation**. Clicca su `Deconfigurare l'aggregazione privata`{.action}. Clicca su `Conferma`{.action} nel menu contestuale.
+
+![network interfaces](images/default_settings2021.png){.thumbnail}
+
+L'operazione potrebbe richiedere alcuni minuti.
+
+## Per saperne di più
+
+[Configurare un NIC per il servizio OVHcloud Link Aggregation in Debian 9](../ola-debian9/)
+
+[Configurare un NIC per il servizio OVHcloud Link Aggregation in CentOS 7](../ola-centos7/)
+
+[Configurare un NIC per il servizio OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/)
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
