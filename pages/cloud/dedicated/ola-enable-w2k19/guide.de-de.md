@@ -1,7 +1,7 @@
 ---
-title: 'So konfigurieren Sie Ihre Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019'
+title: 'Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019'
 slug: ola-w2k19
-excerpt: 'Die OVHcloud Link Aggregation auf Ihrem „Windows Server 2019“-Server aktivieren'
+excerpt: 'Erfahren Sie hier, wie Sie OLA auf Ihrem Windows Server 2019 Server aktivieren'
 section: 'Fortgeschrittene Nutzung'
 order: 4
 ---
@@ -10,7 +10,7 @@ order: 4
 
 ## Ziel
 
-Die OVHcloud Link Aggregation (OLA)-Technologie wurde von unseren Teams entwickelt, um die Verfügbarkeit Ihres Servers zu erhöhen und die Effizienz Ihrer Netzwerkverbindungen zu steigern. Mit nur wenigen Klicks können Sie Ihre Netzwerkkarten aggregieren und Ihre Netzwerkverbindungen überflüssig machen. Wenn also eine Verbindung ausfällt, wird der Datenverkehr automatisch auf eine andere verfügbare Verbindung umgeleitet.
+Die OVHcloud Link Aggregation (OLA) wurde von unseren Teams entwickelt, um die Verfügbarkeit Ihres Servers zu erhöhen und die Effizienz Ihrer Netzwerkverbindungen zu steigern. Mit nur wenigen Klicks können Sie Ihre Netzwerkkarten aggregieren und Ihre Netzwerkverbindungen redundant machen. Wenn also eine Verbindung ausfällt, wird der Datenverkehr automatisch auf eine andere verfügbare Verbindung umgeleitet.
 
 **Diese Anleitung erklärt, wie Sie Ihre Netzwerkkarten verbinden, um sie für OLA in Windows Server 2019 zu verwenden.**
 
@@ -28,13 +28,13 @@ Klicken Sie anschließend auf die Schaltfläche `Mit einem Java-Applet (KVM)`{.a
 
 ![remote_kvm](images/remote_kvm2021.png){.thumbnail}
 
-Ein JNLP-Programm wird heruntergeladen. Öffnen Sie das Programm, sobald der Vorgang abgeschlossen ist, um das IPMI aufzurufen.  Melden Sie sich mit gültigen Anmeldeinformationen für den Server an.
+Ein JNLP-Applet wird heruntergeladen. Öffnen Sie es, um IPMI aufzurufen. Melden Sie sich mit gültigen Anmeldeinformationen für den Server an.
 
 Sobald Sie auf dem Server sind, öffnen Sie den Server-Manager. Wenn er nicht bereits standardmäßig geöffnet wird, wird er an das Start-Menü angeheftet.
 
 ![Server-Manager](images/local_server.png){.thumbnail}
 
-Klicken Sie nach dem Öffnen des Server-Managers in der linken Seitenleiste auf die Registerkarte **Lokaler Server**. Klicken Sie anschließend neben „NIC-Teaming“ auf die Schaltfläche **Deaktiviert**.
+Klicken Sie nach dem Öffnen des Server-Managers in der linken Seitenleiste auf **Lokaler Server**. Klicken Sie anschließend neben „NIC Teaming“ auf die Schaltfläche **Deaktiviert**.
 
 ![Lokaler Server](images/server_manager.png){.thumbnail}
 
@@ -42,15 +42,15 @@ Klicken Sie im NIC-Teaming-Popup im Dropdown-Menü **AUFGABEN** im Abschnitt „
 
 ![NIC-Teaming](images/nic_teaming.png){.thumbnail}
 
-Geben Sie Ihrem Team einen Namen und überprüfen Sie die NICs, die Sie mit OLA verwenden möchten. Klicken Sie auf den Dropdown-Pfeil neben „Weitere Objekte“ und ändern Sie den „Teaming-Modus“ in LACP. Klicken Sie auf **OK**, sobald Sie die Richtigkeit der Informationen bestätigt haben.
+Geben Sie Ihrem Team einen Namen und überprüfen Sie die NICs, die Sie mit OLA verwenden möchten. Klicken Sie auf den Dropdown-Pfeil neben „Weitere Eigenschaften“ und ändern Sie den „Teaming-Modus“ zu LACP. Klicken Sie auf **OK**, sobald Sie die Richtigkeit der Informationen bestätigt haben.
 
 ![Neues Team](images/new_team.png){.thumbnail}
 
-Es kann einige Minuten dauern, bis das NIC-Team online ist. Sobald Sie fertig sind, klicken Sie auf das Netzwerkverbindungssymbol in der rechten unteren Ecke.  Klicken Sie anschließend auf die Schaltfläche **Netzwerk- und Interneteinstellungen**.  Dann klicken Sie auf die **Ethernet**- Taste auf der linken Seitenleiste des folgenden Popups.
+Es kann einige Minuten dauern, bis das NIC-Team online ist. Sobald es bereit ist, klicken Sie auf das Netzwerkverbindungssymbol in der rechten unteren Ecke.  Klicken Sie anschließend auf die Schaltfläche **Netzwerk- und Interneteinstellungen**. Dann klicken Sie auf **Ethernet** in der linken Seitenleiste des folgenden Popups.
 
 ![Netzwerkschaltfläche](images/network_button.png){.thumbnail}
 
-Klicken Sie auf die Schaltfläche **Adapteroptionen ändern**.
+Klicken Sie auf die Schaltfläche **Adaptereigenschaften ändern**.
 
 ![Ethernet](images/ethernet.png){.thumbnail}
 
@@ -58,22 +58,22 @@ Klicken Sie anschließend mit der rechten Maustaste auf Ihr NIC-Team und wählen
 
 ![Eigenschaften](images/properties.png){.thumbnail}
 
-Doppelklicken Sie im folgenden Popup-Fenster auf die Schaltfläche **Internetprotokoll Version 4 (TCP / IPv4)**.
+Doppelklicken Sie im folgenden Popup-Fenster auf die Schaltfläche **Internetprotokoll Version 4 (TCP/IPv4)**.
 
 ![ipv4](images/ipv4.png){.thumbnail}
 
-Klicken Sie auf die Schaltfläche neben „Die folgende IP-Adresse verwenden“ und fügen Sie Ihre gewählte private IP und das Subnetz hinzu. Klicken Sie auf die Schaltfläche **OK**, sobald Sie die Richtigkeit Ihrer Einstellungen bestätigt haben.
+Klicken Sie auf "Diese IP-Adresse verwenden" und fügen Sie Ihre gewählte private IP und das Subnetz hinzu. Klicken Sie auf die Schaltfläche **OK**, sobald Sie die Richtigkeit Ihrer Einstellungen bestätigt haben.
 
 ![ipv42](images/ipv42.png){.thumbnail}
 
-Um zu testen, ob unser NIC-Team funktioniert, senden Sie einen Ping-Befehl an einen anderen Server im selben vRack.  Wenn es funktioniert, sind Sie bereit. Ist dies nicht der Fall, überprüfen Sie Ihre Einstellungen oder starten Sie den Server neu.
+Um zu testen, ob unser NIC Team funktioniert, senden Sie einen Ping-Befehl an einen anderen Server im selben vRack. Wenn es funktioniert, sind Sie bereit. Ist dies nicht der Fall, überprüfen Sie Ihre Einstellungen oder starten Sie den Server neu.
 
 ## Weiterführende Informationen
 
-[So konfigurieren Sie die OVHcloud Link Aggregation im OVHcloud Kundencenter](../ola-manager/)
+[Konfigurieren der OVHcloud Link Aggregation im OVHcloud Kundencenter](../ola-manager/)
 
-[So konfigurieren Sie Ihre Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9](../ola-debian9/)
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9](../ola-debian9/)
 
-[So konfigurieren Sie Ihre Netzwerkkarte für die OVHcloud Link Aggregation in CentOS 7](../ola-centos7/)
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in CentOS 7](../ola-centos7/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
