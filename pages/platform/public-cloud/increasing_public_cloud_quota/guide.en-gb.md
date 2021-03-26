@@ -13,7 +13,7 @@ order: 5
 
 By default, the Public Cloud projects as well as the resources total (RAM, CPU, disk space, number of instances, etc.) you can use are limited for security reasons.
 
-To be able to create additional resources and instances, their quota needs to be increased. 
+To be able to use additional resources and projects, the quotas need to be increased.
 
 **This guide explains how to request a Public Cloud quota increase in the OVHcloud Control Panel.**
 
@@ -21,14 +21,14 @@ To be able to create additional resources and instances, their quota needs to be
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- a valid payment method registered in your OVHcloud account
+- a [valid payment method](../../billing/manage-payment-methods/) registered in your OVHcloud account
 - you have exhausted the project quota of your OVHcloud account
 
 ## Instructions
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to the `Public Cloud`{.action} section. Click on `Quota and Regions`{.action} in the left-hand sidebar.
 
-This page provides an overview of regions and available resources. A warning will be displayed next to a resource as soon as 80% of its current quota is reached.
+This page provides an overview of regions and their available resources. A warning will be displayed next to a resource as soon as 80% of its current quota is reached.
 
 ![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
 
