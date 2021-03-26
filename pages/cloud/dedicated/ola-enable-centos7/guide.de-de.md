@@ -47,7 +47,7 @@ Sobald wir die Namen unserer beiden Netzwerkkarten ermittelt haben, konfiguriere
 vi / etc / sysconfig / network-scripts / ifcfg-bond0
 ```
 
-Mit diesem Befehl wird eine leere Textdatei geöffnet. Zum Konfigurieren der Verbindungsschnittstelle fügen Sie Folgendes am Ende der Textdatei ein:
+Zum Konfigurieren der Bond-Schnittstelle fügen Sie Folgendes am Ende der Datei ein:
 
 ```bash
 DEVICE=bond0
@@ -66,7 +66,7 @@ BONDING_OPTS="mode=802.3ad miimon=100"
 > Sie können jede private IP-Adresse und jedes Subnetz Ihrer Wahl verwenden.
 >
 
-Speichern und schließen Sie die Datei, sobald Sie die Richtigkeit der Angaben bestätigt haben.  Als nächstes müssen wir beide physischen Schnittstellen konfigurieren. Standardmäßig verfügt auf einem OVHcloud-Server nur *eth0* über eine Konfigurationsdatei. Öffnen Sie sie mit dem folgenden Befehl:
+Speichern und schließen Sie die Datei, sobald Sie die Richtigkeit der Angaben bestätigt haben. Als nächstes müssen wir beide physischen Schnittstellen konfigurieren. Standardmäßig verfügt auf einem OVHcloud-Server nur *eth0* über eine Konfigurationsdatei. Öffnen Sie sie mit dem folgenden Befehl:
 
 ```bash
 vi / etc / sysconfig / network-scripts / ifcfg-eth0
@@ -142,10 +142,10 @@ Um zu testen, ob die Verbindung funktioniert, senden Sie einen Ping-Befehl an ei
 
 ## Weiterführende Informationen
 
-[So konfigurieren Sie die OVHcloud Link Aggregation im OVHcloud Kundencenter](../ola-manager/)
+[Konfigurieren der OVHcloud Link Aggregation im OVHcloud Kundencenter](../ola-manager/)
 
-[So konfigurieren Sie Ihre Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9](../ola-debian9/)
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9](../ola-debian9/)
 
-[So konfigurieren Sie Ihre Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/)
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
