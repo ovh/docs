@@ -2,7 +2,7 @@
 title: Restoring backups via the OVHcloud API
 slug: veeam-backup-restoration
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/veeam-backup-restoration/'
+    canonical: 'https://docs.ovh.com/us/en/private-cloud/veeam-backup-restoration/'
 excerpt: Find out how to restore Veeam Managed Backup backups via the OVHcloud API
 section: OVHcloud services and options
 order: 06
@@ -16,8 +16,8 @@ order: 06
 
 ## Requirements
 
-- Access to the [OVHcloud API](https://api.ovh.com/)
-- [Veeam Managed Backup enabled](../veeam-backup-as-a-service) on your Managed Bare Metal solution
+- Access to the [OVHcloud API](https://ca.api.ovh.com/)
+- [Veeam Managed Backup enabled](../veeam-backup-as-a-service) on your Hosted Private Cloud solution
 
 ## Instructions
 
@@ -27,7 +27,7 @@ If you are not familiar with OVHcloud APIs, please refer to our [Getting started
 
 First, you need to target the backups you want to restore.
 
-Log in to [https://api.ovh.com/](https://api.ovh.com/) and use the following call:
+Log in to [https://ca.api.ovh.com/](https://ca.api.ovh.com/) and use the following call:
 
 > [!api]
 >
@@ -47,7 +47,7 @@ This call will generate a backup report. It will be sent by email to the address
 - **Storage Folder (BackupRepository)**
 - Last restore point
 
-![email](images/backup-report-email.png){.thumbnail}
+![email](images/backup-report-email2.png){.thumbnail}
 
 Take note of the BackupRepository reference, this will allow you to restore backups in the next step.
 
@@ -61,7 +61,7 @@ Take note of the BackupRepository reference, this will allow you to restore back
 
 The API call will restore the last valid restore points for each backup in the storage folder.
 
-Log in to [https://api.ovh.com/](https://api.ovh.com/) and use the following call:
+Log in to [https://ca.api.ovh.com/](https://ca.api.ovh.com/) and use the following call:
 
 > [!api]
 >
@@ -79,7 +79,7 @@ Once the restore is complete, you will find the VMs corresponding to the restore
 <br>To identify them, their names contain the *BatchRestore* suffix and a restore timestamp.
 <br>VMs are restored and switched off. It is up to you to switch them back on.
 
-![vSphere](images/vcenter.png){.thumbnail}
+![vSphere](images/vcenter2.png){.thumbnail}
 
 ## Go further
 

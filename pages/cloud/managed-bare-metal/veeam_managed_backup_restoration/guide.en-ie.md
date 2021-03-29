@@ -2,7 +2,7 @@
 title: Restoring backups via the OVHcloud API
 slug: veeam-backup-restoration
 routes:
-    canonical: 'https://docs.ovh.com/gb/en/private-cloud/veeam-backup-restoration/'
+    canonical: 'https://docs.ovh.com/ie/en/private-cloud/veeam-backup-restoration/'
 excerpt: Find out how to restore Veeam Managed Backup backups via the OVHcloud API
 section: OVHcloud services and options
 order: 06
