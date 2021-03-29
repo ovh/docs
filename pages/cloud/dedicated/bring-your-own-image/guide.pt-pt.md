@@ -19,10 +19,10 @@ Para além dos requisitos e limitações citados abaixo, é necessário assegura
 
 ## Requisitos
 
-- Dispor de um [servidor dedicado da OVHcloud](https://www.ovh.com/fr/serveurs_dedies/).
-- Ter acesso à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) para a secção ["Implementação através da Área de Cliente"](#viacontrolpanel) deste manual.
+- Dispor de um [servidor dedicado da OVHcloud](https://www.ovhcloud.com/pt/bare-metal/).
+- Ter acesso à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para a secção ["Implementação através da Área de Cliente"](#viacontrolpanel) deste manual.
 - Ter acesso às [API OVHcloud](https://api.ovh.com/){.external} para a parte ["Implementação através da API"](#viaapi) deste manual.
-- Ter gerado os [credenciais para utilizar a APIv6](../../api/api-premiers-pas/) para a parte ["Implementação através da API"](#viaapi) deste manual.
+- Ter gerado os [credenciais para utilizar a APIv6](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) para a parte ["Implementação através da API"](#viaapi) deste manual.
 
 > [!warning]
 >

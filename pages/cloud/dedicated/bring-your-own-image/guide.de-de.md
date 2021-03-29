@@ -19,10 +19,10 @@ Zusätzlich zu den unten genannten Voraussetzungen und Einschränkungen muss sic
 
 ## Voraussetzungen
 
-- Sie verfügen über [einen dedizierten OVHcloud Server](https://www.ovh.com/fr/serveurs_dedies/).
+- Sie verfügen über [einen dedizierten OVHcloud Server](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie sind in Ihrem [OVHcloud Kundencenter ](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) eingeloggt und erhalten in dieser Anleitung den Bereich  ["Deployment überKundencenter"](#viacontrolpanel) .
 - Sie sind mit den [OVHcloud APIs](https://api.ovh.com/){.external} für den Teil ["Deployment via API"](#viaapi)dieser Anleitung verbunden.
-- Sie haben die [Credentials generiert, um die APIv](../../api/api-premiers-pas/) für den Teil ["Deployment via API"](#viaapi) dieser Anleitung zu verwenden.
+- Sie haben die [Credentials generiert, um die APIv](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) für den Teil ["Deployment via API"](#viaapi) dieser Anleitung zu verwenden.
 
 > [!warning]
 >

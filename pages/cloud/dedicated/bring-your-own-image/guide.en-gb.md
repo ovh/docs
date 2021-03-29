@@ -25,7 +25,7 @@ You can also make use of this option when reinstalling a server from the OVHclou
 - an OVHcloud [dedicated server](https://www.ovh.com/fr/serveurs_dedies/)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) in the “[Deployment via Control Panel”](#viacontrolpanel) section of this guide
 - access to the [OVHcloud API](https://api.ovh.com/){.external} in the “[Deployment via API”](#viaapi) section of this guide
-- You need to have generated the [credentials to use the APIv6](../../api/api-premiers-pas/) for the “[Deployment via API”](#viaapi) section of this guide.
+- You need to have generated the [credentials to use the APIv6](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/) for the “[Deployment via API”](#viaapi) section of this guide.
 
 
 > [!warning]
