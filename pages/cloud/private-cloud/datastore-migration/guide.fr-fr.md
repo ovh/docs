@@ -6,7 +6,7 @@ section: Fonctionnalités OVHcloud
 hidden: true
 ---
 
-**Dernière mise à jour le 25/03/2021**
+**Dernière mise à jour le 29/03/2021**
 
 ## Objectif
 
@@ -56,7 +56,7 @@ Une fois le filerId identifié, utilisez l'appel suivant pour copier le datastor
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/linkFilerFromSbg
+> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/copyFiler
 
 Renseignez les variables :
 
