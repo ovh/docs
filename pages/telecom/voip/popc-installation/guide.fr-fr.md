@@ -120,7 +120,7 @@ Enfin, dans le dernier volet de configuration, choisissez vos périphériques d�
 
 ![configuration - entrée et sortie audio](images/popc-config-05.png){.thumbnail}
 
-Un message vous confirmera la fin de la configuration, cliquez sur `Suite`{.action}. L'assistant vous proposera d'importer vos contacts Outlook si vous disposez d'un compte Office365.
+Un message vous confirmera la fin de la configuration. L'assistant vous proposera alors d'importer vos contacts Outlook si vous disposez d'un compte Office365.
 
 Le dernier écran vous invite à choisir si vous effectuez un essai de 30 jours du logiciel POPC ou si vous disposez d'une licence.
 
@@ -129,7 +129,7 @@ Le dernier écran vous invite à choisir si vous effectuez un essai de 30 jours 
 
 ![configuration - essai - licence](images/popc-config-06.png){.thumbnail}
 
-Vous quitterez alors l'assistant d'installation. L'interface principale de POPC s'ouvrira et, si votre configuration SIP est correcte, l'icône de statut, en haut à gauche de l'interface, vous indiquera que votre compte est **Prêt**.
+Vous quitterez alors l'assistant d'installation. L'interface principale de POPC s'ouvre alors et, si votre configuration SIP est correcte, l'icône de statut, en haut à gauche de l'interface, doit vous indiquer que votre compte est **Prêt**.
 
 ![configuration - statut du compte](images/popc-config-07.png){.thumbnail}
 
@@ -161,7 +161,7 @@ Aidez-vous du tableau et de l'image ci-dessous pour renseigner les informations 
 
 Une fois que vous avez défini ces informations, cliquez sur `Sauvegarder`{.action}. Le logiciel va redémarrer et appliquer la nouvelle configuration SIP que vous avez définie.
 
-Si votre configuration SIP est correcte, l'icône de statut vous indiquera que votre compte est **Prêt**.
+Si votre configuration SIP est correcte, l'icône de statut vous indique que votre compte est **Prêt**.
 
 ![configuration - statut du compte](images/popc-config-07.png){.thumbnail}
 
