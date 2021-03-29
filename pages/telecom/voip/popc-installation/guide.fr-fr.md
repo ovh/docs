@@ -60,16 +60,6 @@ Comme indiqué sur la page de présentation, il est possible de tester une versi
 
 Pour lancer l'installation du logiciel, sur votre PC, faites un clic droit sur le fichier nommé `VoiceOperatorPanel-OVH-setup.exe` et sélectionnez `Exécuter en tant qu'administrateur`{.action}.
 
-> [!tabs]
-> ![installation - contrats](images/popc-install-01.png){.thumbnail}
->> Lancez l'installation et acceptez les contrats.
-> ![installation - dongle](images/popc-install-02.png){.thumbnail}
->> Installez les pilotes du dongle USB en cochant la case appropriée, celle-ci étant décochée par défaut.
->> Si vous utilisez le logiciel sans avoir souscrit à l’offre POPC, il n'est pas nécessaire de la cocher.
-> ![installation - mode](images/popc-install-03.png){.thumbnail}
->> Choisissez le mode d'installation. Vous pouvez installer le logiciel `en tant qu'administrateur` ou choisir de l'`installer et exécuter avec l'utilisateur en cours`.
-
-
 Lancez l'installation et acceptez les contrats.
 
 ![installation - contrats](images/popc-install-01.png){.thumbnail}
