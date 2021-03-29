@@ -6,7 +6,7 @@ section: OVHcloud features
 hidden: true
 ---
 
-**Last updated 25th March 2021**
+**Last updated 29th March 2021**
 
 ## Objective
 
@@ -56,7 +56,7 @@ Once the `filerId` has been identified, use the following call to copy the datas
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/linkFilerFromSbg
+> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/copyFiler
 
 Enter the variables:
 
