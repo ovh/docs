@@ -51,7 +51,7 @@ As explained in the [How nodes and node pools work](../managing-nodes/) guide, i
 
 Autoscale is configured in a node pool basis, i.e. you don't enable autoscaling on a full cluster, you enable it for one or more of your node pools. Let's see how you can do it.
 
-When you create your cluster, you could bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb) or directly [using the Kubernetes API](../managing-nodes/).
+When you create your cluster, you could bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) or directly [using the Kubernetes API](../managing-nodes/).
 
 To list node pools, you can use:
 
