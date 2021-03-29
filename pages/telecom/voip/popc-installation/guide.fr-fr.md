@@ -34,15 +34,20 @@ Vous devez disposer des trois informations suivantes afin de pouvoir enregistrer
 |Mot de passe SIP|Si vous ne le connaissez pas, vous devez modifier ce mot de passe depuis votre espace client OVHcloud.|
 |Domain / Registrar|Le nom du serveur de téléphonie qui héberge votre ligne.|
 
-#### Login et Domain
+#### Login et domain
 
-Afin de retrouver votre **Login** et votre **Domain**, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr). Dans la partie `Télécom`{.action}, cliquez sur `Téléphonie`{.action} puis sur votre groupe de téléphonie et enfin sur votre ligne SIP. Dans l'onglet `Gestion`, cliquez sur `Informations générales`{.action}.
+Afin de retrouver votre **login** et votre **domain**, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr). Dans la partie `Télécom`{.action}, cliquez sur `Téléphonie`{.action} puis sur votre groupe de téléphonie et enfin sur votre ligne SIP. Dans l'onglet `Gestion`, cliquez sur `Informations générales`{.action}.
 
 ![ligne sip - Login et Domain](images/login-domain1.png){.thumbnail}
 
-Vous retrouvez alors, dans le cadre « Informations SIP », votre **Login** et votre **Domain**.
+Vous retrouvez alors, dans le cadre « Informations SIP », votre **dogin** et votre **domain**.
 
 ![ligne sip - Login et Domain](images/login-domain2.png){.thumbnail}
+
+> [!primary]
+>
+> Dans l'image ci-dessus, le domain renseigné l'est à titre d'exemple. Veillez à bien vérifier quel **domain** est associé à votre ligne SIP.
+>
 
 #### Mot de passe SIP
 
@@ -106,7 +111,7 @@ Veillez par contre à bien renseigner votre mot de passe SIP dans le champ prév
 
 ![configuration - mot de passe SIP](images/popc-config-02.png){.thumbnail}
 
-Laissez le `numéro de téléphone de la messagerie` (6) défini sur **123** car il s'agit bien du numéro pour joindre la messagerie de votre ligne SIP OVHcloud.
+Laissez le `numéro de téléphone de la messagerie` (6) défini sur `123` car il s'agit bien du numéro pour joindre la messagerie de votre ligne SIP OVHcloud.
 
 Laissez le champ `numéro de téléphone de l'opérateur` (7) vide.
 
@@ -129,7 +134,7 @@ Le dernier écran vous invite à choisir si vous effectuez un essai de 30 jours 
 
 ![configuration - essai - licence](images/popc-config-06.png){.thumbnail}
 
-Vous quitterez alors l'assistant d'installation. L'interface principale de POPC s'ouvre alors et, si votre configuration SIP est correcte, l'icône de statut, en haut à gauche de l'interface, doit vous indiquer que votre compte est **Prêt**.
+Vous quitterez alors l'assistant d'installation. L'interface principale de POPC s'ouvre alors et, si votre configuration SIP est correcte, l'icône de statut, en haut à gauche de l'interface, doit vous indiquer que votre compte est « prêt ».
 
 ![configuration - statut du compte](images/popc-config-07.png){.thumbnail}
 
@@ -152,16 +157,16 @@ Aidez-vous du tableau et de l'image ci-dessous pour renseigner les informations 
 |---|---|
 | 1 |Votre **login** au format international (exemple: 0033987654321)|
 | 2 |Votre **login** au format international (exemple: 0033987654321)|
-| 3 |Le numéro **123** de la messagerie OVHcloud|
+| 3 |Le numéro `123` de la messagerie OVHcloud|
 | 4 |Le **domain** de votre ligne|
-| 5 |Le port du serveur SIP doit être **5962** ou **5060**|
-| 6 |Le protocole doit être **UDP**|
+| 5 |Le port du serveur SIP doit être `5962` ou `5060`|
+| 6 |Le protocole doit être `UDP`|
 | 7 |Votre **mot de passe SIP**|
 | 8 |Le délai d'expiration d'enregistrement de la ligne doit être de minimum **1800** secondes|
 
 Une fois que vous avez défini ces informations, cliquez sur `Sauvegarder`{.action}. Le logiciel va redémarrer et appliquer la nouvelle configuration SIP que vous avez définie.
 
-Si votre configuration SIP est correcte, l'icône de statut vous indique que votre compte est **Prêt**.
+Si votre configuration SIP est correcte, l'icône de statut vous indique que votre compte est « prêt ».
 
 ![configuration - statut du compte](images/popc-config-07.png){.thumbnail}
 
