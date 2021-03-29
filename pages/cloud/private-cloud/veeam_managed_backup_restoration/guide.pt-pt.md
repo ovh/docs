@@ -10,7 +10,7 @@ order: 06
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 20/03/2021**
+**Última atualização: 29/03/2021**
 
 ## Objetivo
 
@@ -44,7 +44,7 @@ Esta chamada vai gerar um relatório de backups. Será enviado por e-mail para o
 <br>O e-mail lista os seguintes elementos:
 
 - Nome da VM
-- Backups efetuados
+- Backups efetuados (BackupJobName)
 - Tamanho de cada backup
 - **Pasta de armazenamento (BackupRepository)**
 - Último ponto de restauro
@@ -74,6 +74,7 @@ Introduza as variáveis:
 
 - serviceName: a referência do seu PCC sob a forma `pcc-XX-XX-XX-XX`
 - datacenterId: ID do datacenter no qual é ativada a sua solução Veeam Managed Backup
+- backupJobName (facultativo): o nome de um backup (obtido na etapa 1) sob a forma `pc-XXX-XXX-XXX-XXX_vm-XXX` se apenas pretender restaurar uma VM.
 - backupRepositoryName: o nome do backupRepository obtido na etapa 1
 
 Uma vez terminado o restauro, encontrará na sua interface vSphere as VM correspondentes aos backups restaurados.
