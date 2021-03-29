@@ -1,7 +1,7 @@
 ---
 title: 'Installer le logiciel POPC'
 slug: popc-installation
-excerpt: 'Découvrez comment installer et configurer le logiciel POPC pour l'utiliser avec une ligne SIP OVHcloud'
+excerpt: "Découvrez comment installer et configurer le logiciel POPC pour l'utiliser avec une ligne SIP OVHcloud"
 section: POPC
 order: 1
 hidden: true
@@ -24,7 +24,7 @@ Le logiciel POPC ou "Poste Opérateur pour PC" est un outil pour la gestion de v
 
 ## En pratique
 
-### Étape 1 : Retrouver et définir les identifiants de votre ligne SIP
+### Étape 1 : Retrouver et définir les identifiants de votre ligne SIP <a name="sip-credentials"></a>
 
 Vous devez disposer des trois informations suivantes afin de pouvoir enregistrer votre ligne :
 
@@ -34,7 +34,7 @@ Vous devez disposer des trois informations suivantes afin de pouvoir enregistrer
 |Mot de passe SIP|Si vous ne le connaissez pas, vous devez modifier ce mot de passe depuis votre espace client OVHcloud.|
 |Domain / Registrar|Le nom du serveur de téléphonie qui héberge votre ligne.|
 
-#### Login et Domain <a name="login-domain"></a>
+#### Login et Domain
 
 Afin de retrouver votre **Login** et votre **Domain**, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr). Dans la partie `Télécom`{.action}, cliquez sur `Téléphonie`{.action} puis sur votre groupe de téléphonie et enfin sur votre ligne SIP. Dans l'onglet `Gestion`, cliquez sur `Informations générales`{.action}.
 
@@ -81,12 +81,12 @@ Si vous avez choisi d’installer les pilotes pour le dongle USB, une nouvelle f
 
 ### Étape 4 : configuration de POPC
 
+### Configuration via l'assistant d'installation
+
 > [!primary]
 >
-> Les notions de **login**, **domain** et **mot de passe SIP** sont détaillées dans la [première partie de ce guide](#login-domain).
+> Les notions de **login**, **domain** et **mot de passe SIP** sont détaillées dans la [première partie de ce guide](#sip-credentials).
 >
-
-### Configuration via l'assistant d'installation
 
 Lors de la première installation, un assistant vous permet de paramétrer votre ligne SIP.
 
@@ -112,11 +112,11 @@ Laissez le champ `numéro de téléphone de l'opérateur` (7) vide.
 
 ![configuration - répondeur](images/popc-config-03.png){.thumbnail}
 
-Si vous le souhaitez, vous pouvez configurer une adresse e-mail via le menu suivant (8) pour synchroniser vos contacts. Sinon, laissez ces deux champs vides.
+Si vous le souhaitez, vous pouvez configurer une adresse e-mail via le menu suivant pour synchroniser vos contacts. Sinon, laissez ces deux champs vides.
 
 ![configuration - email](images/popc-config-04.png){.thumbnail}
 
-Enfin, dans le dernier volet de configuration (9), choisissez vos périphériques d’entrée et de sortie audio par défaut ainsi que leurs niveaux.
+Enfin, dans le dernier volet de configuration, choisissez vos périphériques d’entrée et de sortie audio par défaut ainsi que leurs niveaux.
 
 ![configuration - entrée et sortie audio](images/popc-config-05.png){.thumbnail}
 
@@ -129,17 +129,22 @@ Le dernier écran vous invite à choisir si vous effectuez un essai de 30 jours 
 
 ![configuration - essai - licence](images/popc-config-06.png){.thumbnail}
 
-Vous quitterez alors l'assistant d'installation. L'interface principale de POPC s'ouvrira et, si votre configuration SIP est correcte, l'icône de statut vous indiquera que votre compte est **Prêt**.
+Vous quitterez alors l'assistant d'installation. L'interface principale de POPC s'ouvrira et, si votre configuration SIP est correcte, l'icône de statut, en haut à gauche de l'interface, vous indiquera que votre compte est **Prêt**.
 
 ![configuration - statut du compte](images/popc-config-07.png){.thumbnail}
 
 ### Configuration dans le logiciel
 
+> [!primary]
+>
+> Les notions de **login**, **domain** et **mot de passe SIP** sont détaillées dans la [première partie de ce guide](#sip-credentials).
+>
+
 En cas d'erreur de configuration initiale de votre ligne SIP ou si vous êtes amené à modifier votre mot de passe SIP, vous pouvez paramétrer votre ligne SIP depuis l'interface du logiciel POPC.
 
 Une fois le logiciel ouvert, cliquez sur l'onglet `Paramètres`{.action} dans la partie droite de l'interface principale. Ouvrez alors le menu déroulant `Compte`{.action} pour retrouver les champs de configuration.
 
-Aidez-vous du tableau et de l'image ci-dessous pour renseigner les informations de votre ligne SIP.
+Aidez-vous du tableau et de l'image ci-dessous pour renseigner les informations de votre ligne SIP nécessaires à son enregistrement sur POPC.
 
 ![configuration - via interface](images/popc-config-08.png){.thumbnail}
 
@@ -154,7 +159,7 @@ Aidez-vous du tableau et de l'image ci-dessous pour renseigner les informations 
 | 7 |Votre **mot de passe SIP**|
 | 8 |Le délai d'expiration d'enregistrement de la ligne doit être de minimum **1800** secondes|
 
-Une fois que vous avez défini ces informations, cliquez sur `Sauvegarder`{.action}. Cela redémarrera le logiciel et appliquera la nouvelle configuration SIP que vous aurez définie.
+Une fois que vous avez défini ces informations, cliquez sur `Sauvegarder`{.action}. Le logiciel va redémarrer et appliquer la nouvelle configuration SIP que vous avez définie.
 
 Si votre configuration SIP est correcte, l'icône de statut vous indiquera que votre compte est **Prêt**.
 
