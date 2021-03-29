@@ -10,7 +10,7 @@ order: 06
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 20/03/2021**
+**Última actualización: 29/03/2021**
 
 ## Objetivo
 
@@ -44,7 +44,7 @@ Esta llamada va a generar un informe de copias de seguridad. Se enviará por cor
 <br>El mensaje de correo electrónico incluye los siguientes elementos:
 
 - Nombre de la MV
-- Copias de seguridad efectuadas
+- Copias de seguridad efectuadas (BackupJobName)
 - Tamaño de cada backup
 - **Carpeta de almacenamiento (BackupRepository)**
 - Último punto de restauración
@@ -74,6 +74,7 @@ Introduzca las variables:
 
 - serviceName: la referencia de su Dedicated Cloud en forma `pcc-XX-XX-XX-XX`
 - datacenterId: ID del datacenter en el que está activada la solución Veeam Managed Backup
+- backupJobName (opcional): el nombre de una copia de seguridad (obtenida en el paso 1) en forma de `pcc-XXX-XXX-XXX-XXX-XXX_vm-XXX` si solo desea restaurar una MV.
 - backupRepositoryName el nombre del backup repository obtenido en el paso 1.
 
 Una vez completada la restauración, en la interfaz vSphere podrá ver las MV correspondientes a las copias de seguridad restauradas.

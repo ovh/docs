@@ -14,7 +14,7 @@ order: 06
 
 ## Prérequis
 
-- Être connecté aux [API OVHcloud](https://api.ovh.com/)
+- Être connecté aux [API OVHcloud](https://ca.api.ovh.com/)
 - [Veeam Managed Backup activé](../veeam-backup-as-a-service) sur votre offre Hosted Private Cloud
 
 ## En pratique
@@ -25,7 +25,7 @@ Si vous n'êtes pas habitué au fonctionnement des API OVHcloud, consultez notre
 
 Il vous faut dans un premier temps cibler les sauvegardes à restaurer.
 
-Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/) et utilisez l'appel suivant :
+Connectez-vous sur [https://ca.api.ovh.com/](https://ca.api.ovh.com/) et utilisez l'appel suivant :
 
 > [!api]
 >
@@ -59,7 +59,7 @@ Prenez note du dossier de stockage (BackupRepository), celui-ci vous permettra d
 
 L'appel API va restaurer les derniers points de restauration valides de chaque sauvegarde présente sur le dossier de stockage.
 
-Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/) et utilisez l'appel suivant :
+Connectez-vous sur [https://ca.api.ovh.com/](https://ca.api.ovh.com/) et utilisez l'appel suivant :
 
 > [!api]
 >

@@ -6,7 +6,7 @@ section: OVHcloud services and options
 order: 06
 ---
 
-**Last updated 20/03/2021**
+**Last updated 29/03/2021**
 
 ## Objective
 
@@ -70,6 +70,7 @@ Enter the variables:
 
 - serviceName: the reference for your PCC as `pcc-XX-XX-XX-XX`.
 - datacenterId: the ID of the data centre your Veeam Managed Backup solution is activated in.
+- backupJobName (optional): the name of a backup, obtained in step 1, as `pcc-XXX-XXX-XXX-XXX_vm-XXX`, if you want to restore only one VM.
 - backupRepositoryName: the backupRepository name obtained in step 1.
 
 Once the restore is complete, you will find the VMs corresponding to the restored backups in your vSphere interface.
