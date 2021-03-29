@@ -10,7 +10,7 @@ order: 06
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 20.03.2021**
+**Letzte Aktualisierung am 29.03.2021**
 
 ## Ziel
 
@@ -44,7 +44,7 @@ Dieser Aufruf generiert einen Backup-Report. Er wird per E-Mail an den Administr
 <br>Die E-Mail enthält folgende Elemente:
 
 - VM Name
-- Durchgeführte Backups
+- Durchgeführte Backups (BackupJobName)
 - Größe jedes Backups
 - **Storage-Ordner (BackupRepository)**
 - Letzter Wiederherstellungspunkt
@@ -72,6 +72,7 @@ Geben Sie die Variablen an:
 
 - serviceName: die Referenz Ihrer PCC als `pcc-XX-XX-XX-XX`
 - datacenterId: die ID des Rechenzentrums, in dem Ihre Veeam Managed Backup Lösung aktiviert ist
+- backupJobName (optional): den Namen eines Backups (erhalten in Schritt 1) in der Form `pcc-XXX-XXX-XXX-XXX_vm-XXX`, wenn Sie nur eine einzige VM wiederherstellen möchten.
 - backupRepositoryName: Name des in Schritt 1 erhaltenen "BackupRepository"
 
 Sobald die Wiederherstellung abgeschlossen ist, finden Sie in Ihrem vSphere Interface die VMs, die den wiederhergestellten Sicherungen entsprechen.

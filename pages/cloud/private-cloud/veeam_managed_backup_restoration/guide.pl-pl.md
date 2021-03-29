@@ -10,7 +10,7 @@ order: 06
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 20-03-2021**
+**Ostatnia aktualizacja z dnia 29-03-2021**
 
 ## Wprowadzenie
 
@@ -44,7 +44,7 @@ To wywołanie generuje raport z kopii zapasowych. Zostanie on wysłany e-mailem 
 <br>E-mail zawiera następujące informacje:
 
 - Nazwa VM
-- Wykonane kopie zapasowe
+- Wykonane kopie zapasowe (BackupJobName)
 - Rozmiar każdej kopii zapasowej
 - **Katalog przechowywania (BackupRepository)**
 - Ostatni punkt przywracania
@@ -74,6 +74,7 @@ Wpisz zmienne:
 
 - serviceName: numer referencyjny usługi Dedicated Cloud w formie `pcc-XX-XX-XX-XX`
 - datacenterId: ID centrum danych, w którym jest aktywowane Twoje rozwiązanie Veeam Managed Backup
+- backupJobName (opcjonalnie): nazwa kopii zapasowej (uzyskana w etapie 1) w formie `pcc-XXX-XXX-XXX-XXX-XXX_vm-XXX`, jeśli chcesz przywrócić tylko jedną VM.
 - backupRepositoryName: nazwa backupRepository otrzymana w etapie 1
 
 Po zakończeniu przywracania wirtualne maszyny odpowiadające przywróconym kopiom zapasowym znajdziesz w interfejsie vSphere.
