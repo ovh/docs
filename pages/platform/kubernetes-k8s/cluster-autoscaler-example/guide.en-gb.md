@@ -38,7 +38,7 @@ During the day-to-day life of your cluster, you may want to dynamically adjust t
 
 > [!primary]
 >
-> The cluster auto-scaler feature is currently available in beta. We expect it to reach General Availability (including support in OVHcloud control panel) by Summer 2021. 
+> The cluster auto-scaler feature is currently available in beta. We expect it to reach General Availability (including support in OVHcloud Control Panel) by Summer 2021. 
 
 
 ## Before you begin
@@ -52,7 +52,7 @@ It also assumes that you have read the [Using the cluster autoscaler](../using-c
 
 The easiest way to enable the autoscaler is using the Kubernetes API, for example using `kubectl`.
 
-As explained in the [How nodes and node pools work](../managing-nodes/) guides, in your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (group of nodes sharing the same configuration). 
+As explained in the [How nodes and node pools work](../managing-nodes/) guide, in your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (group of nodes sharing the same configuration). 
 
 Autoscale is configured in a node pool basis, i.e. you don't enable autoscaling on a full cluster, you enable it for one or more of your node pools. Let's see how you can do it.
 
@@ -127,11 +127,9 @@ nodepool-b2-7   b2-7     true          [...]   false           1         1      
 
 Now we can begin to deploy a test workload on the cluster.
 
-
-
 ## Deploying a test workload
 
-In order to test the autoscaler, we propose you to install a  *Prime Numbers* Deployment that deploys several  instance of *Prime Numbers* pods. The *Prime Numbers* pod simply calculates prime numbers in the most performance ineffective way: by dividing every positive integer number by all the lower positive integers. It's a CPU intensive operation, but it use a minimal amount of memory.  
+In order to test the autoscaler, we propose you to install a  *Prime Numbers* Deployment that deploys several instances of *Prime Numbers* pods. The *Prime Numbers* pod simply calculates prime numbers in the most performance ineffective way: by dividing every positive integer number by all the lower positive integers. It's a CPU intensive operation, but it uses a minimal amount of memory.  
 
 > [!primary]
 >
@@ -168,7 +166,7 @@ spec:
         - containerPort: 8080        
 ```
 
-As you can see, we will begin by deploying 3 replicas of the pod. Each replica consommes 150m CPU (0.150 CPUs), and we are using B2-7 instances, with 2000m CPU (2 CPU_). In the tutorial we will increase the number of replicas to 12 then to 24, to see how the autoscaler grows up the node pool to 2 then to 3 nodes.
+As you can see, we will begin by deploying 3 replicas of the pod. Each replica consumes 150m CPU (0.150 CPUs), and we are using B2-7 instances, with 2000m CPU (2 CPU_). In the tutorial we will increase the number of replicas to 12 then to 24, to see how the autoscaler grows up the node pool to 2 then to 3 nodes.
 
 Deploy the *Prime Numbers* deployment:
 
@@ -176,7 +174,7 @@ Deploy the *Prime Numbers* deployment:
 kubectl apply -f prime-number.yaml
 ```
 
-In my example cluster, we deploy the simple workload, and we verify that we still have only on node in the cluster.
+In my example cluster, we deploy the simple workload, and we verify that we still have only one node in the cluster.
 
 <pre class="console"><code>$ kubectl apply -f manifests/prime-numbers.yaml
 deployment.apps/prime-numbers created
@@ -201,7 +199,7 @@ nodepool-b2-7   b2-7     true          [...]   false           1         1      
 
 ## Scaling up the workload
 
-Now we can patch the *Prime Numbers* Deployement to augment the replicas to 12, that should be enough to activate the scaling up of the node pool.
+Now we can patch the *Prime Numbers* deployement to augment the replicas to 12, that should be enough to activate the scaling up of the node pool.
 
 ```bash
 kubectl patch deployment prime-numbers --type="merge" --patch='{"spec": {"replicas": 8}}'
@@ -234,7 +232,7 @@ NAME            FLAVOR   AUTO SCALED   [...]   ANTI AFFINITY   DESIRED   CURRENT
 nodepool-b2-7   b2-7     true          [...]   false           2         1         0            1           0     3
 </code></pre>
 
-And in a few moments, the new node is created and active, nd all the pods are running:
+And in a few moments, the new node is created and active, and all the pods are running:
 
 <pre class="console"><code>$ kubectl get nodepools
 $ kubectl get nodepools
@@ -265,7 +263,7 @@ If now we re-patch the deployment to have 24 replicas:
 kubectl patch deployment prime-numbers --type="merge" --patch='{"spec": {"replicas": 24}}'
 ```
 
-The autoscaler will detect nodes in `Pending` and adds a third node:
+The autoscaler will detect nodes in `Pending` and add a third node:
 
 <pre class="console"><code>
 $ kubectl patch deployment prime-numbers --type="merge" --patch='{"spec": {"replicas": 24}}'
@@ -358,7 +356,7 @@ prime-numbers-5ffd8d7b84-8xzqm   1/1     Running   0          8m3s
 prime-numbers-5ffd8d7b84-sn296   1/1     Running   0          8m3s
 </code></pre>
 
-The autoscaler will detect that the nodes are under the value`scale-down-utilization-threshold` parameter (the node utilization level, defined as sum of requested resources divided by capacity, below which a node can be considered for  scale down, [by default 0.5](../configuring-cluster-autoscaler/)), and marks the nodes 2 and 3 as unneeded. 
+The autoscaler will detect that the nodes are under the value `scale-down-utilization-threshold` parameter (the node utilization level, defined as sum of requested resources divided by capacity, below which a node can be considered for  scale down, [by default 0.5](../configuring-cluster-autoscaler/)), and marks the nodes 2 and 3 as unneeded. 
 
 After some minutes according to the value of `scale-down-unneeded-time` (parameter that sets how long a node should be unneeded before it is eligible for scale down, [10 minutes by default](../configuring-cluster-autoscaler/)), the node will be deleted and the cluster will be scaled down.
 
@@ -400,6 +398,6 @@ In this tutorial we have seen how to enable the autoscaler on a node pool on you
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes site](https://www.ovh.com/public-cloud/kubernetes/).
 
-Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our  [tutorials](../) .
+Otherwise to skip it and learn more about using your Kubernetes cluster the practical way, we invite you to look at our [tutorials](../) .
 
 Join our community of users on https://community.ovh.com/en/.
