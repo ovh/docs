@@ -5,7 +5,7 @@ slug: bringyourownimage
 section: Poziom zaawansowany
 ---
 
-**Ostatnia aktualizacja z dnia 26-03-2021**
+**Ostatnia aktualizacja z dnia 29-03-2021**
 
 ## Wprowadzenie
 

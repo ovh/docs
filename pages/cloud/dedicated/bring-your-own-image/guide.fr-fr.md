@@ -5,7 +5,7 @@ slug: bringyourownimage
 section: Utilisation avancée
 ---
 
-**Dernière mise à jour le 26/03/2021**
+**Dernière mise à jour le 29/03/2021**
 
 ## Objectif
 
