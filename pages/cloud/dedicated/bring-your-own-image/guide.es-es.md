@@ -53,7 +53,7 @@ Si su servidor dispone de un boot **uefi**, deberá prever en su imagen una part
 
 ### Desplegar su imagen desde el área de cliente de OVHcloud <a name="viacontrolpanel"></a>
 
-Seleccione el servidor desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), en la sección `Barra Metal Cloud`{.action} y, seguidamente, en los `servidores dedicados`{.action}
+Seleccione el servidor desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), en la sección `Bare Metal Cloud`{.action} y, seguidamente, en los `Servidores dedicados`{.action}
 
 En el recuadro `Información general`, haga clic en el botón `...`{.action} delante de `Información general`. Haga clic en `Instalar`{.action}.
 
