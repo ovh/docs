@@ -5,6 +5,7 @@ excerpt: ''
 section: Tutorials
 order: 8
 ---
+
 <style>
  pre {
      font-size: 14px;
@@ -53,9 +54,9 @@ The easiest way to enable the autoscaler is using the Kubernetes API, for exampl
 
 As explained in the [How nodes and node pools work](../managing-nodes/) guides, in your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (group of nodes sharing the same configuration). 
 
-Autoscale is configured in a node pool basis, i.e. you don't enable autoscaling on a full cluster, you enable it for one or or more of your node pools. Let's see how you can do it.
+Autoscale is configured in a node pool basis, i.e. you don't enable autoscaling on a full cluster, you enable it for one or more of your node pools. Let's see how you can do it.
 
-When you create your cluster, it's created with a default node pool, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/manager/cloud/) or directly [using the Kubernetes API](../managing-nodes/). 
+When you create your cluster, you could bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/manager/cloud/) or directly [using the Kubernetes API](../managing-nodes/). 
 
 
 To list node pools, you can use:
@@ -64,7 +65,7 @@ To list node pools, you can use:
 kubectl get nodepools
 ```
 
-In my case I have one node pool in my cluster, called `my-node-pool`, with 2 B2-7 nodes:
+In my case I have one node pool in my cluster, called `my-node-pool`, with 3 B2-7 nodes:
 
 <pre class="console"><code>$ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   [...]
@@ -98,9 +99,7 @@ spec:
   maxNodes: 100
   minNodes: 0
   monthlyBilled: false
-  scaleDownUnneededTimeSeconds: 600
-  scaleDownUnreadyTimeSeconds: 1200
-  scaleDownUtilizationThreshold: "0.5"
+  [...]
 status:
   availableNodes: 3
   conditions:
@@ -197,7 +196,7 @@ prime-numbers-5ffd8d7b84-wmm7r   1/1     Running   0          92s
 
 $ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   [...]   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX
-nodepool-b2-7   b2-7     true          [...]   false           1         1         0        
+nodepool-b2-7   b2-7     true          [...]   false           1         1         0            1           0     3       
 </code></pre>
 
 ## Scaling up the workload
@@ -379,6 +378,18 @@ $ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
 nodepool-b2-7   b2-7     true          false            false           1         1         1            1
  0     3     64d
+</code></pre>
+
+## Cleaning up
+
+To clean up your cluster, simply delete your `prime-numbers` deployment:
+
+```bash
+kubectl delete -f manifests/prime-numbers.yaml
+```
+
+<pre class="console"><code>$ kubectl delete -f manifests/prime-numbers.yaml
+deployment.apps "prime-numbers" deleted
 </code></pre>
 
 ## Conclusion

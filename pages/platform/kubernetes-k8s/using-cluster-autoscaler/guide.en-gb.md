@@ -101,7 +101,7 @@ Autoscale is configured in a node pool basis, i.e. you don't enable autoscaling 
 If you activate autoscaler on several node pools, each of which could have different type of instance and min and max limits pon node number.
 
 
-When you create your cluster, it's created with a default node pool, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/manager/cloud/) or directly [using the Kubernetes API](../managing-nodes/). 
+When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/manager/cloud/) or directly [using the Kubernetes API](../managing-nodes/). 
 
 
 To list node pools, you can use:
