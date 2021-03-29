@@ -22,8 +22,11 @@ You can also make use of this option when reinstalling a server from the OVHclou
 
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) in your OVHcloud account
-- having your [APIv6 credentials](../../api/first-steps-with-ovh-api/) ready
+- an OVHcloud [dedicated server](https://www.ovh.com/fr/serveurs_dedies/)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) in the “[Deployment via Control Panel”](#viacontrolpanel) section of this guide
+- access to the [OVHcloud API](https://api.ovh.com/){.external} in the “[Deployment via API”](#viaapi) section of this guide
+- You need to have generated the [credentials to use the APIv6](../../api/api-premiers-pas/) for the “[Deployment via API”](#viaapi) section of this guide.
+
 
 > [!warning]
 >
@@ -32,7 +35,7 @@ You can also make use of this option when reinstalling a server from the OVHclou
 
 ## Instructions
 
-### Technical limitations
+**Technical limitations**
 
 There are some technical limitations linked to the use of physical products such as dedicated servers. Here is a non-exhaustive list, to keep in mind during your deployment preparation:
 
@@ -42,7 +45,32 @@ There are some technical limitations linked to the use of physical products such
 
 If your server has a **uefi** boot type, be sure to add an **EFI** partition to your image template.
 
-### Deploying your image
+**Deployment methods**
+
+- [Deployment via the Control Panel](#viacontrolpanel): will allow you to deploy your image quickly and easily, directly via the OVHcloud Control Panel.
+- [Deployment via API](#viaapi): You can use OVHcloud APIs to integrate them into your own scripts to automate deployment.
+
+### Deploy your image via the OVHcloud Control Panel <a name="viacontrolpanel"></a>
+
+In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) , go to the `Bare Metal Cloud`{.action} section, then select `Dedicated servers`{.action} .
+
+In the `General information` box, click the `...`{.action} button in front of `General information`. Then click `Install`{.action}.
+
+![bring your ownimage](images/byoi-controlpanel01.png){.thumbnail}
+
+In the window that appears, select `Install from custom image`{.action}, and then click `Install`{.action}.
+
+![bring your ownimage](images/byoi-controlpanel02.png){.thumbnail}
+
+You will be redirected to the configuration page. Make sure your image URL is in the correct format. Complete the rest of the required fields on this page. Once you have confirmed that the information is correct, click `Install System`{.action}.
+
+You can find more details on the options in the “[Options tables”](#options) section of this guide. 
+
+To enable `ConfigDrive`, please find the documentation on [this page](https://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html).
+
+![bring your ownimage](images/byoi-controlpanel03.png){.thumbnail}
+
+### Deploy your image via the APIs <a name="viaapi"></a>
 
 Log in to [https://api.ovh.com/](https://api.ovh.com/){.external} then go to the `/dedicated/server`{.action} section. You can use the `Filter` field to look for  "BringYourOwnImage".
 

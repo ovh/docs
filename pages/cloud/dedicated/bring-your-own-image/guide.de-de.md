@@ -19,8 +19,10 @@ Zusätzlich zu den unten genannten Voraussetzungen und Einschränkungen muss sic
 
 ## Voraussetzungen
 
-- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal) in Ihrem Kunden-Account.
-- Sie haben die [Credentials generiert, um die APIv6 zu verwenden](https://docs.ovh.com/gb/en/api/first-steps-with-ovh-api/).
+- Sie verfügen über [einen dedizierten OVHcloud Server](https://www.ovh.com/fr/serveurs_dedies/).
+- Sie sind in Ihrem [OVHcloud Kundencenter ](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) eingeloggt und erhalten in dieser Anleitung den Bereich  ["Deployment überKundencenter"](#viacontrolpanel) .
+- Sie sind mit den [OVHcloud APIs](https://api.ovh.com/){.external} für den Teil ["Deployment via API"](#viaapi)dieser Anleitung verbunden.
+- Sie haben die [Credentials generiert, um die APIv](../../api/api-premiers-pas/) für den Teil ["Deployment via API"](#viaapi) dieser Anleitung zu verwenden.
 
 > [!warning]
 >
@@ -29,7 +31,7 @@ Zusätzlich zu den unten genannten Voraussetzungen und Einschränkungen muss sic
 
 ## In der praktischen Anwendung
 
-### Technische Einschränkungen
+**Technische Einschränkungen**
 
 Es gibt noch einige technische Einschränkungen bei der Verwendung physischer Dienste wie Dedicated Server.
 Bitte beachten Sie die unten aufgeführten Anforderungen bei der Vorbereitung Ihres Deployments. Diese Liste ist nicht erschöpfend.
@@ -40,7 +42,32 @@ Bitte beachten Sie die unten aufgeführten Anforderungen bei der Vorbereitung Ih
 
 Wenn Ihr Server über **uefi** Boot verfügt, müssen Sie in Ihrem Image unbedingt eine **EFI**-Partition hinzufügen.
 
-### Image deployen
+**Deployment-Methoden**
+
+- [Inbetriebnahme über das Kundencenter](#viacontrolpanel): ermöglicht es Ihnen, Ihr Image schnell und einfach über Ihr OVHcloud Kundencenter zu deployen.
+- [Deployment via API](#viaapi): Sie können die OVHcloud APIs verwenden, um sie in Ihre eigenen Skripte zu integrieren, um die Inbetriebnahme zu automatisieren.
+
+### Ihr Image über das OVHcloud Kundencenter deployen <a name="viacontrolpanel"></a>
+
+Wählen Sie [in Ihrem OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) Kundencenter im Bereich `Bare Metal Cloud`{.action} und `Dedicated Server`{.action} Ihren Server aus.
+
+Klicken Sie im `Rahmen` Allgemeine Informationen auf `...`{.action} vor `Allgemeine Informationen`. Klicken Sie anschließend auf `Installieren`{.action}.
+
+![Bring Your Ownimage](images/byoi-controlpanel01.png){.thumbnail}
+
+Wählen Sie im angezeigten Fenster `Anhand eines personalisierten Bildes installieren`{.action} und klicken Sie dann auf `Installieren`{.action}.
+
+![Bring Your Ownimage](images/byoi-controlpanel02.png){.thumbnail}
+
+Sie werden auf die Konfigurationsseite weitergeleitet. Vergewissern Sie sich, dass die URL Ihres Images im geeigneten Format vorliegt. Vervollständigen Sie die übrigen erforderlichen Felder auf dieser Seite. Wenn Sie bestätigt haben, dass die Informationen korrekt sind, klicken Sie auf `System installieren`{.action}.
+
+Weitere Informationen zu den Optionen finden Sie [im Abschnitt "Optionstabellen"](#options) dieser Anleitung. 
+
+Weitere Informationen zur Aktivierung von `ConfigDrive` finden Sie auf [dieser Seite](https://cloudinit.readthedocs.io/en/latest/topics/datasources/configdrive.html).
+
+![Bring Your Ownimage](images/byoi-controlpanel03.png){.thumbnail}
+
+### Image über die APIs deployen <a name="viaapi"></a>
 
 Loggen Sie sich auf [https://api.ovh.com/](https://api.ovh.com/) ein und gehen Sie dann in den Bereich `/dedicated/server`{.action}. Mit dem `Filter`-Feld können Sie nach „BringYourOwnImage“ suchen.
 
