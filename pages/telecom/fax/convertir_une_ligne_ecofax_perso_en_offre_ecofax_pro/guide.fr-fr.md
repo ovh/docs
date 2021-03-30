@@ -2,8 +2,8 @@
 title: Convertir une ligne Ecofax Perso en offre Ecofax Pro
 slug: convertir-une-ligne-ecofax-perso-en-offre-ecofax-pro
 legacy_guide_number: '8355850'
-space_key: CRFAX
-space_name: Fax
+section: Premiers pas
+order: 4
 ---
 
 ### Préambule {#préambule}
