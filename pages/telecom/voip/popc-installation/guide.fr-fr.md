@@ -4,7 +4,6 @@ slug: popc-installation
 excerpt: "Découvrez comment installer et configurer le logiciel POPC pour l'utiliser avec une ligne SIP OVHcloud"
 section: POPC
 order: 1
-hidden: true
 ---
 
 **Dernière mise à jour le 26/03/2021**
