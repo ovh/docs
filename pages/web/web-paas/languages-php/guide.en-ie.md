@@ -46,7 +46,7 @@ While it is possible to read the environment directly from your application, it 
 
 ## Alternate start commands
 
-PHP is most commonly run in a CGI mode, using PHP-FPM. That is the default on $partner_full. However, you can also start alternative processes if desired, such as if you're running an Async PHP daemon, a thread-based worker process, etc. To do so, simply specify an alternative start command in `platform.app.yaml`, similar to the following:
+PHP is most commonly run in a CGI mode, using PHP-FPM. That is the default on Web PaaS. However, you can also start alternative processes if desired, such as if you're running an Async PHP daemon, a thread-based worker process, etc. To do so, simply specify an alternative start command in `platform.app.yaml`, similar to the following:
 
 ```yaml
 web:
@@ -112,7 +112,7 @@ That allows you to install a forked version of a global dependency from a custom
 
 ## Opcache preloading
 
-PHP 7.4 introduced a new feature called Opcache Preloading, which allows you to load selected files into shared memory when PHP-FPM starts.  That means functions and classes in those files are always available and do not need to be autoloaded, at the cost of any changes to those files requiring a PHP-FPM restart.  Since PHP-FPM restarts anyway when a new deploy happens this feature is a major win on $partner_full, and we recommend using it aggressively.
+PHP 7.4 introduced a new feature called Opcache Preloading, which allows you to load selected files into shared memory when PHP-FPM starts.  That means functions and classes in those files are always available and do not need to be autoloaded, at the cost of any changes to those files requiring a PHP-FPM restart.  Since PHP-FPM restarts anyway when a new deploy happens this feature is a major win on Web PaaS, and we recommend using it aggressively.
 
 To enable preloading, add a `php.ini` value that specifies a preload script.  Any [`php.ini` mechanism](ini) will work, but using a variable in `.platform.app.yaml` is the recommended approach:
 
@@ -142,7 +142,7 @@ foreach ($regex as $key => $file) {
 
 ## FFI
 
-PHP 7.4 introduced support for Foreign Function Interfaces (FFI), which allows user-space code to bridge to existing C-ABI-compatible libraries.  FFI is fully supported on $partner_full.
+PHP 7.4 introduced support for Foreign Function Interfaces (FFI), which allows user-space code to bridge to existing C-ABI-compatible libraries.  FFI is fully supported on Web PaaS.
 
 Note: FFI is only intended for advanced use cases, and is rarely a net win for routine web requests.  Use with caution.
 
@@ -237,7 +237,7 @@ A number of project templates for major PHP applications are available on GitHub
 
 ### Gatsby with Drupal  
 
-<p>This template builds a two-application project to deploy the Headless CMS pattern using Gatsby as its frontend and Drupal for its backend. The <code>gatsby-source-drupal</code> source plugin is used to pull data from Drupal during the <code>post_deploy</code> hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the $partner_full Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>This template builds a two-application project to deploy the Headless CMS pattern using Gatsby as its frontend and Drupal for its backend. The <code>gatsby-source-drupal</code> source plugin is used to pull data from Drupal during the <code>post_deploy</code> hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Note that after you have completed the Drupal installation and included a few articles, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
 <p>Gatsby is a free and open source framework based on React that helps developers build statically-generated websites and apps, and Drupal is a flexible and extensible PHP-based CMS framework.</p>
   
@@ -256,7 +256,7 @@ A number of project templates for major PHP applications are available on GitHub
 
 ### Gatsby with Wordpress  
 
-<p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and Wordpress for its backend. The `gatsby-source-wordpress` source plugin is used to pull data from Wordpress during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the $partner_full Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and Wordpress for its backend. The `gatsby-source-wordpress` source plugin is used to pull data from Wordpress during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Note that after you have completed the Wordpress installation, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
 <p>Gatsby is a free and open source framework based on React that helps developers build statically-generated websites and apps, and WordPress is a blogging and lightweight CMS written in PHP.</p>
   
@@ -348,7 +348,7 @@ A number of project templates for major PHP applications are available on GitHub
 
 ### Magento 2 Community Edition  
 
-<p>This template builds Magento 2 CE on $partner_full.  It includes additional scripts to customize Magento to run effectively in a build-and-deploy environment.  A MariaDB database and Redis cache server come pre-configured and work out of the box.  The installer has been modified to not ask for database information.  Background workers are run using a worker container rather than via cron.</p>
+<p>This template builds Magento 2 CE on Web PaaS.  It includes additional scripts to customize Magento to run effectively in a build-and-deploy environment.  A MariaDB database and Redis cache server come pre-configured and work out of the box.  The installer has been modified to not ask for database information.  Background workers are run using a worker container rather than via cron.</p>
 <p>Magento is a fully integrated ecommerce system and web store written in PHP.  This is the Open Source version.</p>
   
 #### Features
@@ -378,7 +378,7 @@ A number of project templates for major PHP applications are available on GitHub
 
 ### Pimcore  
 
-<p>This template builds Pimcore 5 on $partner_full.  It comes pre-installed with a MariaDB database connecting through Doctrine and Redis for caching via a custom configuration file.  It will self-install on the first deploy.</p>
+<p>This template builds Pimcore 5 on Web PaaS.  It comes pre-installed with a MariaDB database connecting through Doctrine and Redis for caching via a custom configuration file.  It will self-install on the first deploy.</p>
 <p>Pimcore is a Symfony-based Digital Experience Platform.</p>
   
 #### Features
@@ -392,7 +392,7 @@ A number of project templates for major PHP applications are available on GitHub
 
 ### TYPO3  
 
-<p>This template builds the TYPO3 CMS for $partner_full.  It comes pre-configured with MariaDB for storage and Redis for caching.  A command line installer will automatically initialize the site on first deploy.</p>
+<p>This template builds the TYPO3 CMS for Web PaaS.  It comes pre-configured with MariaDB for storage and Redis for caching.  A command line installer will automatically initialize the site on first deploy.</p>
 <p>TYPO3 is a PHP-based Content Management System</p>
   
 #### Features
@@ -450,7 +450,7 @@ A number of project templates for major PHP applications are available on GitHub
 
 ### Nextcloud  
 
-<p>This template builds Nextcloud on $partner_full.  Nextcloud itself is downloaded on the fly during the build step, and pre-configured for use with MariaDB and Redis.  Add-on applications can be provided in a separate directory and will be merged into Nextcloud automatically during build.  (Self-update through the web interface is not supported.)</p>
+<p>This template builds Nextcloud on Web PaaS.  Nextcloud itself is downloaded on the fly during the build step, and pre-configured for use with MariaDB and Redis.  Add-on applications can be provided in a separate directory and will be merged into Nextcloud automatically during build.  (Self-update through the web interface is not supported.)</p>
 <p>The admin user is created automatically during the first deploy, and its name and password will be available in the deploy log.  Be sure to check for it there so you can log in.</p>
 <p>Nextcloud is a PHP-based groupware server with installable apps, file synchronization, and federated storage.</p>
   
@@ -493,7 +493,7 @@ A number of project templates for major PHP applications are available on GitHub
 
 ### Wordpress (Composer)  
 
-<p>This template builds WordPress on $partner_full using the <a href="https://github.com/johnpbloch/wordpress"><code>johnbolch/wordpress</code></a> "Composer Fork" of WordPress.  Plugins and themes should be managed with Composer exclusively.  A custom configuration file is provided that runs on $partner_full to automatically configure the database, so the installer will not ask you for database credentials.  For local-only configuration you can use a `wp-config-local.php` file that gets excluded from Git.</p>
+<p>This template builds WordPress on Web PaaS using the <a href="https://github.com/johnpbloch/wordpress"><code>johnbolch/wordpress</code></a> "Composer Fork" of WordPress.  Plugins and themes should be managed with Composer exclusively.  A custom configuration file is provided that runs on Web PaaS to automatically configure the database, so the installer will not ask you for database credentials.  For local-only configuration you can use a `wp-config-local.php` file that gets excluded from Git.</p>
 <p>WordPress is a blogging and lightweight CMS written in PHP.</p>
   
 #### Features
@@ -518,7 +518,7 @@ A number of project templates for major PHP applications are available on GitHub
 
 ### Basic PHP  
 
-<p>This template provides the most basic configuration for running a custom PHP project built with Composer.  It includes but doesn't make use of the $partner_full `config-reader` library.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.</p>
+<p>This template provides the most basic configuration for running a custom PHP project built with Composer.  It includes but doesn't make use of the Web PaaS `config-reader` library.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.</p>
 <p>PHP is a high-performance scripting language especially well suited to web development.</p>
   
 #### Features

@@ -12,7 +12,7 @@ order: 3
 
 [YAML](https://en.wikipedia.org/wiki/YAML) ("YAML Ain't Markup Language") is a human-readable data file format, well suited to human-edited configuration files. Nearly all aspects of your project's build and deploy pipeline are controlled via YAML files.
 
-YAML is a whitespace-sensitive format that is especially good at key/value type configuration, such as that used by $partner_full. There are many good YAML tutorials online, and the format is reasonably self-documenting.  We especially recommend:
+YAML is a whitespace-sensitive format that is especially good at key/value type configuration, such as that used by Web PaaS. There are many good YAML tutorials online, and the format is reasonably self-documenting.  We especially recommend:
 
 * [GravCMS's YAML tutorial](https://learn.getgrav.org/advanced/yaml)
 * [Learn YAML in Y Minutes](https://learnxinyminutes.com/docs/yaml/)
@@ -21,7 +21,7 @@ The following is only a cursory look at YAML itself.  The tutorials above will p
 
 ## Basic YAML
 
-A YAML file is a text file that ends in `.yaml`.  (Some systems use an alternative `.yml` extension, but $partner_full uses the four-letter extension.)  It consists primarily of key value pairs, and supports nesting.  For example:
+A YAML file is a text file that ends in `.yaml`.  (Some systems use an alternative `.yml` extension, but Web PaaS uses the four-letter extension.)  It consists primarily of key value pairs, and supports nesting.  For example:
 
 ```yaml
 name: 'app'
@@ -38,7 +38,7 @@ Keys are always strings, and may be quoted or not.  Values may be strings, numbe
 
 For quoted values, both single quotes (`'`) and double quotes (`"`) are valid.  Double quotes, however, will interpolate common escape characters such as `\n` and so forth.  For that reason using single quotes is generally recommended unless you want escape characters to be processed rather than taken literally.
 
-In general the order of keys in a YAML file does not matter.  Neither do blank lines.  Indentation may be with any number of spaces, as long as it is consistent throughout the file.  $partner_full examples by convention use four-space indentation.
+In general the order of keys in a YAML file does not matter.  Neither do blank lines.  Indentation may be with any number of spaces, as long as it is consistent throughout the file.  Web PaaS examples by convention use four-space indentation.
 
 ## Multi-line strings
 
@@ -55,7 +55,7 @@ creates a nested property `hooks.build`, which has the value `set -e\ncp a.txt b
 
 ## Includes
 
-YAML allows for special "tags" on values that change their meaning.  These tags may be customized for individual applications so may vary from one system to another.  The main $partner_full "local tag" is `!include`, which allows for external files to be logically embedded within the YAML file.  The referenced file is always relative to the YAML file's directory.
+YAML allows for special "tags" on values that change their meaning.  These tags may be customized for individual applications so may vary from one system to another.  The main Web PaaS "local tag" is `!include`, which allows for external files to be logically embedded within the YAML file.  The referenced file is always relative to the YAML file's directory.
 
 ### `string`
 
@@ -95,7 +95,7 @@ properties:
         path: favicon.ico
 ```
 
-will reference the `favicon.ico` file, which will be provided to $partner_full's management system.
+will reference the `favicon.ico` file, which will be provided to Web PaaS's management system.
 
 ### `yaml`
 
@@ -165,7 +165,7 @@ mysearch:
         conf_dir: !archive "solr/conf"
 ```
 
-In this case, the `mysearch.configuration.conf_dir` value is not the string "solr/conf", but the contents of the `solr/conf` directory (relative to the `services.yaml` file).  On $partner_full, that is used primarily for service definitions in [`services.yaml`](../configuration-services) to provide a directory of configuration files for the service (such as Solr in this case).  $partner_full will use that directive to copy the entire specified directory into our management system so that it can be deployed with the specified service.
+In this case, the `mysearch.configuration.conf_dir` value is not the string "solr/conf", but the contents of the `solr/conf` directory (relative to the `services.yaml` file).  On Web PaaS, that is used primarily for service definitions in [`services.yaml`](../configuration-services) to provide a directory of configuration files for the service (such as Solr in this case).  Web PaaS will use that directive to copy the entire specified directory into our management system so that it can be deployed with the specified service.
 
 ## Anchors
 

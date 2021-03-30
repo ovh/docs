@@ -99,7 +99,7 @@ You can then use the service in a configuration file of your application with so
 
 ## Solr 4
 
-For Solr 4, $partner_full supports only a single core per server called `collection1`.
+For Solr 4, Web PaaS supports only a single core per server called `collection1`.
 
 You must provide your own Solr configuration via a `core_config` key in your ``.platform/services.yaml``:
 
@@ -123,7 +123,7 @@ searchsolr:
 
 ## Solr 6 and later
 
-For Solr 6 and later $partner_full supports multiple cores via different endpoints.  Cores and endpoints are defined separately, with endpoints referencing cores.  Each core may have its own configuration or share a configuration.  It is best illustrated with an example.
+For Solr 6 and later Web PaaS supports multiple cores via different endpoints.  Cores and endpoints are defined separately, with endpoints referencing cores.  Each core may have its own configuration or share a configuration.  It is best illustrated with an example.
 
 ```yaml
 searchsolr:
@@ -257,7 +257,7 @@ In this example, you can now open `http://localhost:30000/solr/` in a browser to
 
 
 > [!primary]  
-> $partner_full Dedicated users can use `ssh -L 8888:localhost:8983 <user>@<cluster-name>.ent.platform.sh` to open a tunnel instead, after which the Solr server administrative interface will be available at `http://localhost:8888/solr/`.
+> Web PaaS Dedicated users can use `ssh -L 8888:localhost:8983 <user>@<cluster-name>.ent.platform.sh` to open a tunnel instead, after which the Solr server administrative interface will be available at `http://localhost:8888/solr/`.
 > 
 
 
@@ -271,7 +271,7 @@ There are two ways of doing that.
 
 In your `services.yaml` file, change the version of your Solr service *and* its name.  Then update the name in the `.platform.app.yaml` relationships block.
 
-When you push that to $partner_full, the old service will be deleted and a new one with the name name created, with no data.  You can then have your application reindex data as appropriate.
+When you push that to Web PaaS, the old service will be deleted and a new one with the name name created, with no data.  You can then have your application reindex data as appropriate.
 
 This approach is simple but has the downside of temporarily having an empty Solr instance, which your application may or may not handle gracefully, and needing to rebuild your index afterward.  Depending on the size of your data that could take a while.
 

@@ -10,9 +10,9 @@ order: 5
 
 ## Pull code from a private Git repository
 
-Let's say you're building a module (*or theme, library...*) which is stored in a private Git repository that you have access to, and you want to use it on your project. $partner_full allows you to include code dependencies that are stored in external private Git repositories.
+Let's say you're building a module (*or theme, library...*) which is stored in a private Git repository that you have access to, and you want to use it on your project. Web PaaS allows you to include code dependencies that are stored in external private Git repositories.
 
-To grant $partner_full access to your private Git repository, you need to add the project public SSH key to the deploy keys of your Git repository.
+To grant Web PaaS access to your private Git repository, you need to add the project public SSH key to the deploy keys of your Git repository.
 
 You can copy your project's public key by going to the Settings tab on the management console and then clicking the Deploy Key tab on the left hand side.
 

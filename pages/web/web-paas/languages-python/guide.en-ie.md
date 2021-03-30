@@ -10,7 +10,7 @@ order: 4
 
 ## Objective  
 
-$partner_full supports deploying Python applications. Your application can use WSGI-based (Gunicorn / uWSGI) application server, Tornado, Twisted, or Python 3.5+ asyncio server.
+Web PaaS supports deploying Python applications. Your application can use WSGI-based (Gunicorn / uWSGI) application server, Tornado, Twisted, or Python 3.5+ asyncio server.
 
 ## Supported
 
@@ -207,7 +207,7 @@ A number of project templates for Python applications are available on GitHub.  
 
 ### Django 2  
 
-<p>This template deploys the Django 2 application framework on $partner_full, using the gunicorn application runner.  It also includes a PostgreSQL database connection pre-configured.</p>
+<p>This template deploys the Django 2 application framework on Web PaaS, using the gunicorn application runner.  It also includes a PostgreSQL database connection pre-configured.</p>
 <p>New projects should be built using Django 3, but this project is a reference for existing migrating sites.  Version 2 is in legacy support.</p>
   
 #### Features
@@ -234,7 +234,7 @@ A number of project templates for Python applications are available on GitHub.  
 
 ### Wagtail  
 
-<p>This template builds the Wagtail CMS on $partner_full, using the gunicorn application runner.  It includes a PostgreSQL database that is configured automatically, and a basic demonstration app that shows how to use it.  It is intended for you to use as a starting point and modify for your own needs.  You will need to run the command line installation process by logging into the project over SSH after the first deploy.</p>
+<p>This template builds the Wagtail CMS on Web PaaS, using the gunicorn application runner.  It includes a PostgreSQL database that is configured automatically, and a basic demonstration app that shows how to use it.  It is intended for you to use as a starting point and modify for your own needs.  You will need to run the command line installation process by logging into the project over SSH after the first deploy.</p>
 <p>Wagtail is a web CMS built using the Django framework for Python.</p>
   
 #### Features
@@ -247,7 +247,7 @@ A number of project templates for Python applications are available on GitHub.  
 
 ### Flask  
 
-<p>This template demonstrates building the Flask framework for $partner_full.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server for data storage and Redis for caching.  The application starts as a bare Python process with no separate runner.  It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>This template demonstrates building the Flask framework for Web PaaS.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server for data storage and Redis for caching.  The application starts as a bare Python process with no separate runner.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Flask is a lightweight web microframework for Python.</p>
   
 #### Features
@@ -261,7 +261,7 @@ A number of project templates for Python applications are available on GitHub.  
 
 ### Django 3  
 
-<p>This template deploys the Django 3 application framework on $partner_full, using the gunicorn application runner.  It also includes a PostgreSQL database connection pre-configured.</p>
+<p>This template deploys the Django 3 application framework on Web PaaS, using the gunicorn application runner.  It also includes a PostgreSQL database connection pre-configured.</p>
 <p>Django is a Python-based web application framework with a built-in ORM.</p>
   
 #### Features
@@ -288,7 +288,7 @@ A number of project templates for Python applications are available on GitHub.  
 
 ### Pyramid  
 
-<p>This template builds Pyramid on $partner_full.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server for data storage and Redis for caching.  It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>This template builds Pyramid on Web PaaS.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server for data storage and Redis for caching.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Pyramid is a web framework written in Python.</p>
   
 #### Features

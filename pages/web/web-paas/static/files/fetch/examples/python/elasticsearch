@@ -3,7 +3,7 @@ from platformshconfig import Config
 
 def usage_example():
 
-    # Create a new Config object to ease reading the $partner_full environment variables.
+    # Create a new Config object to ease reading the Web PaaS environment variables.
     # You can alternatively use os.environ yourself.
     config = Config()
 
@@ -12,7 +12,7 @@ def usage_example():
 
     try:
         # The Elasticsearch library lets you connect to multiple hosts.
-        # On $partner_full Standard there is only a single host so just register that.
+        # On Web PaaS Standard there is only a single host so just register that.
         hosts = {
             "scheme": credentials['scheme'],
             "host": credentials['host'],

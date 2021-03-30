@@ -10,9 +10,9 @@ section: Php
 
 ## Objective  
 
-[Redis](../../configuration-services/redis) is a popular structured key-value service, supported by $partner_full.  It's frequently used for caching.
+[Redis](../../configuration-services/redis) is a popular structured key-value service, supported by Web PaaS.  It's frequently used for caching.
 
-The [PhpRedis](https://github.com/phpredis/phpredis) extension is available on $partner_full's PHP container images.  However, the extension has been known to break its API between versions when removing deprecated functionality.  The version available on each application image is the latest available at the time that PHP version was built, which if your application is very sensitive to PhpRedis versions may not be ideal.
+The [PhpRedis](https://github.com/phpredis/phpredis) extension is available on Web PaaS's PHP container images.  However, the extension has been known to break its API between versions when removing deprecated functionality.  The version available on each application image is the latest available at the time that PHP version was built, which if your application is very sensitive to PhpRedis versions may not be ideal.
 
 If the version of the PhpRedis extension available for your PHP version is not compatible with your application and upgrading your application is not feasible, you can use the script below as an alternative to download and compile a precise version of the extension on the fly.
 
@@ -73,9 +73,9 @@ compile_source() {
 }
 
 ensure_environment() {
-    # If not running in a $partner_full build environment, do nothing.
+    # If not running in a Web PaaS build environment, do nothing.
     if [ -z "${PLATFORM_CACHE_DIR}" ]; then
-        echo "Not running in a $partner_full build environment.  Aborting Redis installation."
+        echo "Not running in a Web PaaS build environment.  Aborting Redis installation."
         exit 0;
     fi
 }

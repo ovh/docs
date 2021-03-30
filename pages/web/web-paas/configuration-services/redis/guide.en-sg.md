@@ -14,7 +14,7 @@ Redis is a high-performance in-memory object store, well-suited for application 
 
 See the [Redis documentation](https://redis.io/documentation) for more information.
 
-$partner_full supports two different Redis configurations: One persistent (useful for key-value application data) and one ephemeral (in-memory only, useful for application caching).  Aside from that distinction they are identical.
+Web PaaS supports two different Redis configurations: One persistent (useful for key-value application data) and one ephemeral (in-memory only, useful for application caching).  Aside from that distinction they are identical.
 
 ## Supported versions
 
@@ -68,7 +68,7 @@ data:
 ```  
 
 
-The `disk` key is required for redis-persistent to tell $partner_full how much disk space to reserve for Redis' persistent data.
+The `disk` key is required for redis-persistent to tell Web PaaS how much disk space to reserve for Redis' persistent data.
 
 > [!primary]  
 > Switching a service from Persistent to Ephemeral configuration is not supported at this time.  To switch between modes, use a different service with a different name.

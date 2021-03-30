@@ -18,7 +18,7 @@ public class RabbitMQSample implements Supplier<String> {
     public String get() {
         StringBuilder logger = new StringBuilder();
 
-        // Create a new config object to ease reading the $partner_full environment variables.
+        // Create a new config object to ease reading the Web PaaS environment variables.
         // You can alternatively use getenv() yourself.
         Config config = new Config();
         try {
@@ -34,7 +34,7 @@ public class RabbitMQSample implements Supplier<String> {
             MessageConsumer consumer = session.createConsumer(queue);
 
             // Sending a message into the queue.
-            TextMessage textMessage = session.createTextMessage("$partner_full");
+            TextMessage textMessage = session.createTextMessage("Web PaaS");
             textMessage.setJMSReplyTo(queue);
             MessageProducer producer = session.createProducer(queue);
             producer.send(textMessage);

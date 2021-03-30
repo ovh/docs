@@ -6,7 +6,7 @@ use Platformsh\ConfigReader\Config;
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 use PhpAmqpLib\Message\AMQPMessage;
 
-// Create a new config object to ease reading the $partner_full environment variables.
+// Create a new config object to ease reading the Web PaaS environment variables.
 // You can alternatively use getenv() yourself.
 $config = new Config();
 

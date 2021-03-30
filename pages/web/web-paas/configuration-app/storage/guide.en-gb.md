@@ -123,7 +123,7 @@ See the [web locations](../web) documentation for more details.
 
 ## Why can't I mount a hidden folder?
 
-$partner_full ignores YAML keys that start with a dot. This causes a mount like `.myhiddenfolder` to be ignored. If you want to mount a hidden folder, you'll have to prepend it with a `/`:
+Web PaaS ignores YAML keys that start with a dot. This causes a mount like `.myhiddenfolder` to be ignored. If you want to mount a hidden folder, you'll have to prepend it with a `/`:
 
 ```yaml
 mounts:

@@ -10,7 +10,7 @@ order: 4
 
 ## Objective  
 
-$partner_full supports building and deploying applications written in Go using Go modules.  They are compiled during the Build hook phase, and support both committed dependencies and download-on-demand.
+Web PaaS supports building and deploying applications written in Go using Go modules.  They are compiled during the Build hook phase, and support both committed dependencies and download-on-demand.
 
 ## Supported versions
 
@@ -32,7 +32,7 @@ type: 'golang:1.15'
 
 ## Deprecated versions
 
-The following container versions are also available.  However, due to their lack of [Go module](https://golang.org/cmd/go/#hdr-Modules__module_versions__and_more) support and the difficulties in supporting the GOPATH during the $partner_full build they are not recommended.
+The following container versions are also available.  However, due to their lack of [Go module](https://golang.org/cmd/go/#hdr-Modules__module_versions__and_more) support and the difficulties in supporting the GOPATH during the Web PaaS build they are not recommended.
 
 - 1.10  
 - 1.8  
@@ -40,11 +40,11 @@ The following container versions are also available.  However, due to their lack
 
 ## Go modules
 
-The recommended way to handle Go dependencies on $partner_full is using Go module support in Go 1.11 and later.  That allows the build process to use `go build` directly without any extra steps, and you can specify an output executable file of your choice.  (See the examples below.)
+The recommended way to handle Go dependencies on Web PaaS is using Go module support in Go 1.11 and later.  That allows the build process to use `go build` directly without any extra steps, and you can specify an output executable file of your choice.  (See the examples below.)
 
-## $partner_full variables
+## Web PaaS variables
 
-$partner_full exposes relationships and other configuration as [environment variables](../development-variables).  To make them easier to access you should use the provided [Config Reader library](https://github.com/platformsh/config-reader-go).  Most notably, it allows a program to determine at runtime what HTTP port it should listen on and what the credentials are to access [other services](../configuration-services).
+Web PaaS exposes relationships and other configuration as [environment variables](../development-variables).  To make them easier to access you should use the provided [Config Reader library](https://github.com/platformsh/config-reader-go).  Most notably, it allows a program to determine at runtime what HTTP port it should listen on and what the credentials are to access [other services](../configuration-services).
 
 ```go
 package main
@@ -60,7 +60,7 @@ func main() {
 	p, err := psh.NewPlatformInfo()
 
 	if err != nil {
-		panic("Not in a $partner_full Environment.")
+		panic("Not in a Web PaaS Environment.")
 	}
 
 	http.HandleFunc("/bar", func(w http.ResponseWriter, r *http.Request) {
@@ -141,7 +141,7 @@ To access various [services](../configuration-services) with Go, see the followi
 
 ## Project templates
 
-$partner_full offers a project templates for Go applications using the structure described above.  It can be used as a starting point or reference for building your own website or web application.
+Web PaaS offers a project templates for Go applications using the structure described above.  It can be used as a starting point or reference for building your own website or web application.
 
 
 ### Hugo  
@@ -158,7 +158,7 @@ $partner_full offers a project templates for Go applications using the structure
 
 ### Basic Go  
 
-<p>This template provides the most basic configuration for running a custom Go project using Go modules.  It demonstrates the $partner_full `config-reader` library and connecting to a MariaDB instance.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.</p>
+<p>This template provides the most basic configuration for running a custom Go project using Go modules.  It demonstrates the Web PaaS `config-reader` library and connecting to a MariaDB instance.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.</p>
 <p>Go is a statically typed, compiled language with an emphasis on easy concurrency and network services.</p>
   
 #### Features
@@ -171,7 +171,7 @@ $partner_full offers a project templates for Go applications using the structure
 
 ### Beego  
 
-<p>This template demonstrates building the Beego framework for $partner_full using Go modules.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server.  It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>This template demonstrates building the Beego framework for Web PaaS using Go modules.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Beego is a popular web framework written in Go.</p>
   
 #### Features
@@ -184,7 +184,7 @@ $partner_full offers a project templates for Go applications using the structure
 
 ### Echo  
 
-<p>This template demonstrates building the Echo framework for $partner_full using Go modules.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server.  It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>This template demonstrates building the Echo framework for Web PaaS using Go modules.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Echo is a lightweight, minimalist web framework written in Go.</p>
   
 #### Features
@@ -197,7 +197,7 @@ $partner_full offers a project templates for Go applications using the structure
 
 ### Gin  
 
-<p>This template demonstrates building the Gin framework for $partner_full using Go modules.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server for data storage.  It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>This template demonstrates building the Gin framework for Web PaaS using Go modules.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server for data storage.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Gin is a lightweight web framework written in Go that emphasizes performance.</p>
   
 #### Features

@@ -33,7 +33,7 @@ Any number of workers may be defined with their own distinct name, subject to av
 
 ## Accessing the Worker Container
 
-Like with any other application container $partner_full allows you to connect to the worker instance through SSH to inspect logs and interact with it.
+Like with any other application container Web PaaS allows you to connect to the worker instance through SSH to inspect logs and interact with it.
 
 Using the Platform CLI you would use the `--worker` switch, like so:
 
@@ -242,7 +242,7 @@ The `web` instance will start a gunicorn process to serve a web application.
 * It will have an environment variable named `TYPE` with value `web`.
 * It will have a writable mount at `/app/uploads` with a maximum space of 2048 MB.
 * It will have access to both a MySQL database and a RabbitMQ server, both of which are defined in `services.yaml`.
-* $partner_full will automatically allocate resources to it as available on the plan, once all fixed-size containers are allocated.
+* Web PaaS will automatically allocate resources to it as available on the plan, once all fixed-size containers are allocated.
 
 The `queue` instance will be a worker that is not web-accessible.
 

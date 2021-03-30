@@ -21,7 +21,7 @@ public class KafkaSample implements Supplier<String> {
     public String get() {
         StringBuilder logger = new StringBuilder();
 
-        // Create a new config object to ease reading the $partner_full environment variables.
+        // Create a new config object to ease reading the Web PaaS environment variables.
         // You can alternatively use getenv() yourself.
         Config config = new Config();
 

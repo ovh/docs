@@ -5,7 +5,7 @@ declare(strict_types=1);
 use Elasticsearch\ClientBuilder;
 use Platformsh\ConfigReader\Config;
 
-// Create a new config object to ease reading the $partner_full environment variables.
+// Create a new config object to ease reading the Web PaaS environment variables.
 // You can alternatively use getenv() yourself.
 $config = new Config();
 
@@ -14,7 +14,7 @@ $credentials = $config->credentials('elasticsearch');
 
 try {
     // The Elasticsearch library lets you connect to multiple hosts.
-    // On $partner_full Standard there is only a single host so just
+    // On Web PaaS Standard there is only a single host so just
     // register that.
     $hosts = [
         [

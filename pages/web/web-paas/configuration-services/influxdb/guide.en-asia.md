@@ -85,7 +85,7 @@ if (getenv('PLATFORM_RELATIONSHIPS')) {
 
 ## Exporting data
 
-InfluxDB includes its own [export mechanism](https://docs.influxdata.com/influxdb/v1.2/tools/influx_inspect/).  To gain access to the server from your local machine open an SSH tunnel with the $partner_full CLI:
+InfluxDB includes its own [export mechanism](https://docs.influxdata.com/influxdb/v1.2/tools/influx_inspect/).  To gain access to the server from your local machine open an SSH tunnel with the Web PaaS CLI:
 
 ```bash
 webpaas tunnel:open

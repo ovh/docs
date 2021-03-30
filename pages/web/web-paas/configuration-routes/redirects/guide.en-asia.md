@@ -11,7 +11,7 @@ section: Routes
 
 Managing redirection rules is a common requirement for web applications, especially in cases where you do not want to lose incoming links that have changed or been removed over time.
 
-You can manage redirection rules on your $partner_full projects in two different ways, which we describe here. If neither of these options satisfy your redirection needs, you can still implement redirects directly from within your application, which if implemented with the appropriate caching headers would be almost as efficient as using the configuration options provided by $partner_full.
+You can manage redirection rules on your Web PaaS projects in two different ways, which we describe here. If neither of these options satisfy your redirection needs, you can still implement redirects directly from within your application, which if implemented with the appropriate caching headers would be almost as efficient as using the configuration options provided by Web PaaS.
 
 ## Whole-route redirects
 

@@ -5,7 +5,7 @@ from platformshconfig import Config
 
 def usage_example():
 
-    # Create a new Config object to ease reading the $partner_full environment variables.
+    # Create a new Config object to ease reading the Web PaaS environment variables.
     # You can alternatively use os.environ yourself.
     config = Config()
 

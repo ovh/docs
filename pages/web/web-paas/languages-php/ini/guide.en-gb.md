@@ -46,7 +46,7 @@ Environment-specific `php.ini` configuration directives can be provided via envi
 
 ## Disabling functions
 
-A common recommendation for securing a PHP installation is to disable certain built-in functions that are frequently used in remote attacks.  By default, $partner_full does not disable any functions as they all do have some legitimate use in various applications.  However, you may wish to disable them yourself if you know they are not needed.  For example, to disable `pcntl_exec` and `pcntl_fork` (which are not usable in a web request anyway):
+A common recommendation for securing a PHP installation is to disable certain built-in functions that are frequently used in remote attacks.  By default, Web PaaS does not disable any functions as they all do have some legitimate use in various applications.  However, you may wish to disable them yourself if you know they are not needed.  For example, to disable `pcntl_exec` and `pcntl_fork` (which are not usable in a web request anyway):
 
 ```yaml
 variables:
@@ -73,7 +73,7 @@ The default values for some frequently-modified `php.ini` settings are listed be
 * **upload_max_filesize=64M**
 * **display_errors=On**
 
-    This value is on by default to ease setting up a project on $partner_full. We strongly recommend providing a custom error handler in your application or setting this value to Off before you make your site live.
+    This value is on by default to ease setting up a project on Web PaaS. We strongly recommend providing a custom error handler in your application or setting this value to Off before you make your site live.
 * **zend.assertions=-1**
 
     Assertions are optimized out of existence and have no impact at runtime. You should have assertions set to `1` for your local development system.

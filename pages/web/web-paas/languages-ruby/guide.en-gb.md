@@ -10,7 +10,7 @@ order: 4
 
 ## Objective  
 
-$partner_full supports deploying any Ruby application. Your application can use any Ruby application server such as Unicorn or Puma and deploying a Rails or a Sinatra app is very straight forward.
+Web PaaS supports deploying any Ruby application. Your application can use any Ruby application server such as Unicorn or Puma and deploying a Rails or a Sinatra app is very straight forward.
 
 ## Supported versions
 
@@ -205,12 +205,12 @@ Which should give you something like:
 
 A number of project templates for Ruby applications and typical configurations are available on GitHub.  Not all of them are proactively maintained but all can be used as a starting point or reference for building your own website or web application.
 
-$partner_full also provides a [helper library](https://github.com/platformsh/platformsh-ruby-helper) for Ruby applications that simplifies presenting environment information to your application.  It is not required to run Ruby applications on $partner_full but is recommended.
+Web PaaS also provides a [helper library](https://github.com/platformsh/platformsh-ruby-helper) for Ruby applications that simplifies presenting environment information to your application.  It is not required to run Ruby applications on Web PaaS but is recommended.
 
 
 ### Ruby on Rails  
 
-<p>This template builds Ruby on Rails 5 on $partner_full.  It includes a bridge library that will auto-configure most databases and services, and ships with PostgreSQL out of the box.  Otherwise it is the same as the result of running "rails new".</p>
+<p>This template builds Ruby on Rails 5 on Web PaaS.  It includes a bridge library that will auto-configure most databases and services, and ships with PostgreSQL out of the box.  Otherwise it is the same as the result of running "rails new".</p>
 <p>Rails is an opinionated rapid application development framework written in Ruby.</p>
   
 #### Features

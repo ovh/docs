@@ -10,10 +10,10 @@ section: App
 
 ## Objective  
 
-By default, $partner_full will automatically select appropriate resource sizes (CPU and memory) for a container when it's deployed, based on the plan size and the number of other containers in the cluster.  The more containers in a project the fewer resources each one gets, and vice versa, with similar containers getting similar resources.
+By default, Web PaaS will automatically select appropriate resource sizes (CPU and memory) for a container when it's deployed, based on the plan size and the number of other containers in the cluster.  The more containers in a project the fewer resources each one gets, and vice versa, with similar containers getting similar resources.
 
 > [!primary]  
-> These are advanced settings and should only be used by experienced $partner_full users.  99.9% of the time our default container sizes are the correct choice for best performance.
+> These are advanced settings and should only be used by experienced Web PaaS users.  99.9% of the time our default container sizes are the correct choice for best performance.
 > 
 
 Usually that's fine, but sometimes it's undesirable.  You may, for instance, want to have a queue worker container that you know has low memory and CPU needs, so it's helpful to give that one fewer resources and another container more.  Or a given service may be very heavily used in your architecture so it needs all the resources it can take.  In those cases you can provide sizing hints to the system on a per-service basis.

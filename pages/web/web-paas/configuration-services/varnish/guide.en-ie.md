@@ -10,7 +10,7 @@ section: Services
 
 ## Objective  
 
-Varnish is a popular HTTP proxy server, often used for caching.  It is usually not needed on $partner_full, as each project's router provides an HTTP cache already and most more advanced use cases will use a CDN instead, both of which render Varnish redundant.
+Varnish is a popular HTTP proxy server, often used for caching.  It is usually not needed on Web PaaS, as each project's router provides an HTTP cache already and most more advanced use cases will use a CDN instead, both of which render Varnish redundant.
 
 However, it is possible to configure a Varnish instance as part of an application if Varnish-specific functionality is needed.
 
@@ -58,7 +58,7 @@ The configuration block is required, and must reference a VCL file (here `config
 
 The VCL file you provide has three specific requirements over and above the VCL syntax itself.
 
-1\. You MUST NOT define a `vcl_init()` function.  $partner_full will auto-generate that function based on the relationships you define.  In particular, it will define a "backend" for each relationship defined in `services.yaml`, named the same as the relationship.
+1\. You MUST NOT define a `vcl_init()` function.  Web PaaS will auto-generate that function based on the relationships you define.  In particular, it will define a "backend" for each relationship defined in `services.yaml`, named the same as the relationship.
 2\. You MUST NOT include the preamble at the beginning of the file, specifying the VCL version.  That will be auto-generated as well. You CAN add imports, but not `std` and `directors`, as they're imported already.
 3\. You MUST specify the backend to use in `vcl_recv()`.  If you have a single app container/relationship/backend, it's just a single line.  If you want to split requests to different relationships/backends based on some rule then the logic for doing so should be incorporated into the `vcl_recv()` function.
 
@@ -102,7 +102,7 @@ This configuration will direct all requests to a URL beginning with a `/blog/` p
 Besides that, the VCL file, including the `vcl_recv()` function, can be arbitrarily complex to suit the needs of the project.  That includes additional `include` directives if appropriate.  See the [Varnish documentation](https://varnish-cache.org/docs/index.html) for more details on the functionality offered by Varnish.
 
 > [!primary]  
-> A misconfigured VCL file can result in incorrect, often mysterious and confusing behavior.  $partner_full does not provide support for VCL configuration options beyond the basic connection logic documented here.
+> A misconfigured VCL file can result in incorrect, often mysterious and confusing behavior.  Web PaaS does not provide support for VCL configuration options beyond the basic connection logic documented here.
 > 
 > 
 
@@ -126,7 +126,7 @@ That will map all incoming requests to the Varnish service rather than the appli
 
 ## Modules
 
-$partner_full supports a number of optional modules you can include in your VCLs, namely:
+Web PaaS supports a number of optional modules you can include in your VCLs, namely:
 
 * cookie
 * header
@@ -145,7 +145,7 @@ import xkey;
 
 ## Circular relationships
 
-At this time $partner_full does not support circular relationships between services or applications.  That means you cannot add a relationship in your `.platform.app.yaml` that points to the Varnish service.  If you do so then one of the relationships will be skipped and the connection will not work.  This limitation may be lifted in the future.
+At this time Web PaaS does not support circular relationships between services or applications.  That means you cannot add a relationship in your `.platform.app.yaml` that points to the Varnish service.  If you do so then one of the relationships will be skipped and the connection will not work.  This limitation may be lifted in the future.
 
 ## Stats endpoint
 

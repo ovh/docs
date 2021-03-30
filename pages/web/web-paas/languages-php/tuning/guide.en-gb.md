@@ -10,7 +10,7 @@ section: Php
 
 ## Objective  
 
-Once your application is up and running it still needs to be kept fast.  $partner_full offers a wide degree of flexibility in how PHP behaves, but that does mean you may need to take a few steps to ensure your site is running optimally.
+Once your application is up and running it still needs to be kept fast.  Web PaaS offers a wide degree of flexibility in how PHP behaves, but that does mean you may need to take a few steps to ensure your site is running optimally.
 
 The following recommendations are guidelines only.  They're also listed in approximately the order we recommend investigating them, although your mileage may vary.
 
@@ -34,7 +34,7 @@ PHP-FPM reserves a fixed number of simultaneous worker processes to handle incom
 
 ## Enable preloading
 
-PHP 7.4 and later supports preloading code files into shared memory once at server startup, bypassing the need to include or autoload them later.  Depending on your application doing so can result in significant improvements to both CPU and memory usage.  If using PHP 7.4 or later, see the [PHP Preload instructions](../#opcache-preloading) for how to configure it on $partner_full and consult your application's documentation to see if they have any recommendations for an optimal preload configuration.
+PHP 7.4 and later supports preloading code files into shared memory once at server startup, bypassing the need to include or autoload them later.  Depending on your application doing so can result in significant improvements to both CPU and memory usage.  If using PHP 7.4 or later, see the [PHP Preload instructions](../#opcache-preloading) for how to configure it on Web PaaS and consult your application's documentation to see if they have any recommendations for an optimal preload configuration.
 
 If you are not using PHP 7.4, this is a good reason to upgrade.
 
@@ -70,7 +70,7 @@ chmod +x cachetool.phar
 php cachetool.phar opcache:status --fcgi=$SOCKET
 ```
 
-The `--fcgi=$SOCKET` option tells the command how to connect to the PHP-FPM process on the server through the $partner_full-defined socket.  That command will output something similar to the following:
+The `--fcgi=$SOCKET` option tells the command how to connect to the PHP-FPM process on the server through the Web PaaS-defined socket.  That command will output something similar to the following:
 
 ```bash
 +----------------------+---------------------------------+

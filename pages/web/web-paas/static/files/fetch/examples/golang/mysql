@@ -10,7 +10,7 @@ import (
 
 func UsageExampleMySQL() string {
 
-	// Create a NewRuntimeConfig object to ease reading the $partner_full environment variables.
+	// Create a NewRuntimeConfig object to ease reading the Web PaaS environment variables.
 	// You can alternatively use os.Getenv() yourself.
 	config, err := psh.NewRuntimeConfig()
 	checkErr(err)

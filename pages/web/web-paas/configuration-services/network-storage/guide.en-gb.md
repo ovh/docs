@@ -10,7 +10,7 @@ section: Services
 
 ## Objective  
 
-$partner_full supports internal "storage as a service" to provide a file store that can be shared between different application containers.
+Web PaaS supports internal "storage as a service" to provide a file store that can be shared between different application containers.
 
 The network storage service enables a new kind of `mount` that refers to a shared service rather than to a local directory.  Any application can use both `local` and/or `service` mounts, or neither.
 

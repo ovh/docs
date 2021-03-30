@@ -9,11 +9,11 @@ section: Routes
 
 ## Objective  
 
-$partner_full supports HTTP caching at the server level. Caching is enabled by default, but is only applied to `GET` and `HEAD` requests.
+Web PaaS supports HTTP caching at the server level. Caching is enabled by default, but is only applied to `GET` and `HEAD` requests.
 
 The cache can be controlled using the `cache` key in your `.platform/routes.yaml` file.
 
-If a request is cacheable, $partner_full builds a cache key from several request properties and stores the response associated with this key. When a request comes with the same cache key, the cached response is reused.
+If a request is cacheable, Web PaaS builds a cache key from several request properties and stores the response associated with this key. When a request comes with the same cache key, the cached response is reused.
 
 When caching is on...
 
@@ -58,7 +58,7 @@ https://{default}/:
 
 ### The cache key
 
-If a request is cacheable, $partner_full builds a cache key from several request properties and stores the response associated with this key. When a request comes with the same cache key, the cached response is reused.
+If a request is cacheable, Web PaaS builds a cache key from several request properties and stores the response associated with this key. When a request comes with the same cache key, the cached response is reused.
 
 There are two parameters that let you control this key: `headers` and `cookies`.
 
@@ -109,7 +109,7 @@ Turns the cache on or off for a route.
 
 Adds specific header fields to the cache key, enabling caching of separate responses for those headers.
 
-For example, if the `headers` key is the following, $partner_full will cache a different response for each value of the `Accept` HTTP request header only:
+For example, if the `headers` key is the following, Web PaaS will cache a different response for each value of the `Accept` HTTP request header only:
 
 ```yaml
 cache:
@@ -191,7 +191,7 @@ To set a cache lifetime for static resources configure that in your [.platform.a
 
 ## Debugging
 
-$partner_full adds an `X-Platform-Cache` header to each request which show whether your request is a cache HIT, MISS or BYPASS. This can be useful when trying to determine whether it is your application, the HTTP cache, or another proxy or CDN which is not behaving as expected.
+Web PaaS adds an `X-Platform-Cache` header to each request which show whether your request is a cache HIT, MISS or BYPASS. This can be useful when trying to determine whether it is your application, the HTTP cache, or another proxy or CDN which is not behaving as expected.
 
 If in doubt, disable the cache using `cache: false`.
 

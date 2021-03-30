@@ -47,7 +47,7 @@ build:
 
 It is also possible to install additional system-level dependencies as part of the build process.  These can be installed before the `build` hook runs using the native package manager for several web-focused languages.
 
-$partner_full supports pulling any dependencies for the following languages:
+Web PaaS supports pulling any dependencies for the following languages:
 
 * PHP (via [Composer](https://getcomposer.org/))
 * Python 2 and 3 (via [Pip](https://packaging.python.org/tutorials/installing-packages/))
@@ -87,7 +87,7 @@ Note that the package name format for each language is defined by the package ma
 
 ## Hooks
 
-$partner_full supports three "hooks", or points in the deployment of a new version of an application that you can inject a custom script into.  Each runs at a different stage of the process.
+Web PaaS supports three "hooks", or points in the deployment of a new version of an application that you can inject a custom script into.  Each runs at a different stage of the process.
 
 Each hook is executed as a single script, so they will be considered failed only if the final command in them fails. To cause them to fail on the first failed command, add `set -e` to the beginning of the hook.  If a build hook fails for any reason then the build is aborted and the deploy will not happen.
 

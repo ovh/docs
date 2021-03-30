@@ -9,7 +9,7 @@ section: Services
 
 ## Objective  
 
-Headless Chrome is a headless browser that can be configured on projects like any other service on $partner_full.
+Headless Chrome is a headless browser that can be configured on projects like any other service on Web PaaS.
 
 You can interact with the `headless-chrome` service container using Puppeteer, a Node.js library that provides an API to control Chrome over the DevTools Protocol.
 
@@ -43,7 +43,7 @@ The format exposed in the `$PLATFORM_RELATIONSHIPS` [environment variable](../..
 
 Puppeteer requires at least Node.js version 6.4.0, while using the async and await examples below requires Node 7.6.0 or greater.
 
-Using the $partner_full [Config Reader](https://github.com/platformsh/config-reader-nodejs) library requires Node.js 10 or later.
+Using the Web PaaS [Config Reader](https://github.com/platformsh/config-reader-nodejs) library requires Node.js 10 or later.
 
 ### Other languages
 
@@ -112,7 +112,7 @@ exports.takeScreenshot = async function (url) {
 
 Puppeteer allows your application to [create screenshots](https://pptr.dev/#?product=Puppeteer&version=v1.17.0&show=api-pagescreenshotoptions), [emulate a mobile device](https://pptr.dev/#?product=Puppeteer&version=v1.17.0&show=api-pageemulateoptions), [generate PDFs](https://pptr.dev/#?product=Puppeteer&version=v1.17.0&show=api-pagepdfoptions), and much more.
 
-You can find some useful examples of using headless Chrome and Puppeteer on $partner_full on the Community Portal:
+You can find some useful examples of using headless Chrome and Puppeteer on Web PaaS on the Community Portal:
 
 * [How to take screenshots using Puppeteer and Headless Chrome](https://community.platform.sh/t/how-to-take-screenshots-using-puppeteer-and-headless-chrome/305)
 * [How to generate PDFs using Puppeteer and Headless Chrome](https://community.platform.sh/t/how-to-generate-pdfs-using-puppeteer-and-headless-chrome/306)

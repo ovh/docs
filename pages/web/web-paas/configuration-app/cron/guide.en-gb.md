@@ -17,7 +17,7 @@ It has a few subkeys listed below:
 * **spec**: The [cron specification](https://en.wikipedia.org/wiki/Cron#CRON_expression). For example: `*/19 * * * *` to run every 19 minutes.
 * **cmd**: The command that is executed, for example `cd public ; drush core-cron`
 
-On $partner_full Professional projects, cron runs may not trigger more frequently than every five (5) minutes.  If specified for a more frequent time, they will still trigger every 5 minutes.  On Enterprise and Elite plans crons may trigger as often as every one minute.
+On Web PaaS Professional projects, cron runs may not trigger more frequently than every five (5) minutes.  If specified for a more frequent time, they will still trigger every 5 minutes.  On Enterprise and Elite plans crons may trigger as often as every one minute.
 
 Additionally, a random offset is applied to all cron runs in order to minimize cron tasks running simultaneously.  The offset is a random number of seconds up to 5 minutes or the cron frequency, whichever is smaller.  The cron task will still run at the frequency specified, but may be offset.  For example, a cron job set to run every 9 minutes may run at 9, 18, 27, etc. minutes past the hour or up to 14, 23, 32, etc. minutes past the hour.  A nightly cron task for 3:00 am may run anywhere from 3:00 am to 3:05 am.
 

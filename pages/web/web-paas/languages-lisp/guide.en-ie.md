@@ -10,7 +10,7 @@ order: 4
 
 ## Objective  
 
-$partner_full supports building and deploying applications written in Lisp using Common Lisp (the SBCL version) with ASDF and Quick Lisp support.  They are compiled during the Build phase, and support both committed dependencies and download-on-demand.
+Web PaaS supports building and deploying applications written in Lisp using Common Lisp (the SBCL version) with ASDF and Quick Lisp support.  They are compiled during the Build phase, and support both committed dependencies and download-on-demand.
 
 ## Supported versions
 
@@ -28,11 +28,11 @@ type: 'lisp:1.5'
 
 ## Assumptions
 
-$partner_full is making assumptions about your application to provide a more streamlined experience. These assumptions are the following:
+Web PaaS is making assumptions about your application to provide a more streamlined experience. These assumptions are the following:
 
 - Your `.asd` file is named like your system name. E.g. `example.asd` will have `(defsystem example ...)`.
 
-$partner_full will then run `(asdf:make :example)` on your system to build a binary.
+Web PaaS will then run `(asdf:make :example)` on your system to build a binary.
 
 If you don't want these assumptions, you can disable this behavior by specifying in your `.platform.app.yaml`:
 
@@ -43,7 +43,7 @@ build:
 
 ## Dependencies
 
-The recommended way to handle Lisp dependencies on $partner_full is using ASDF. Commit a `.asd` file in your repository and the system will automatically download the dependencies using QuickLisp.
+The recommended way to handle Lisp dependencies on Web PaaS is using ASDF. Commit a `.asd` file in your repository and the system will automatically download the dependencies using QuickLisp.
 
 ## QuickLisp options
 
@@ -68,9 +68,9 @@ runtime:
 ```
 
 
-## $partner_full variables
+## Web PaaS variables
 
-$partner_full exposes relationships and other configuration as [environment variables](../development-variables). Most notably, it allows a program to determine at runtime what HTTP port it should listen on and what the credentials are to access [other services](../configuration-services).
+Web PaaS exposes relationships and other configuration as [environment variables](../development-variables). Most notably, it allows a program to determine at runtime what HTTP port it should listen on and what the credentials are to access [other services](../configuration-services).
 
 To get the `PORT` environment variable (the port on which your web application is supposed to listen) you would:
 
@@ -156,9 +156,9 @@ Then in your program you could access the PostgreSQL instance as follows:
 
 ## Project templates
 
-$partner_full offers a project template for Lisp applications using the structure described above.  It can be used as a starting point or reference for building your own website or web application.
+Web PaaS offers a project template for Lisp applications using the structure described above.  It can be used as a starting point or reference for building your own website or web application.
 
-The following is a simple example of a Hunchentoot based web application (you can find the corresponding `.asd` and $partner_full `.yaml` files in the linked Github repository):
+The following is a simple example of a Hunchentoot based web application (you can find the corresponding `.asd` and Web PaaS `.yaml` files in the linked Github repository):
 
 ```lisp
 (defpackage #:example
@@ -177,13 +177,13 @@ The following is a simple example of a Hunchentoot based web application (you ca
     (start acceptor)
     (sleep most-positive-fixnum)))
 ```
-Notice how we get the `PORT` from the environment, and how we sleep at the end, as `(start acceptor)` will immediately yield and $partner_full requires applications to run in the foreground.
+Notice how we get the `PORT` from the environment, and how we sleep at the end, as `(start acceptor)` will immediately yield and Web PaaS requires applications to run in the foreground.
 
 
 ### Lisp Hunchentoot  
 
-<p>This template provides the most basic configuration for running a Lisp Huchentoot web server for $partner_full.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.  It is meant to be a starting point and can be modified to fit your own needs.</p>
-<p>This template builds a simple Lisp Hunchentoot web server for $partner_full.  It includes a minimalist application  for demonstration, but you are free to alter it as needed.</p>
+<p>This template provides the most basic configuration for running a Lisp Huchentoot web server for Web PaaS.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.  It is meant to be a starting point and can be modified to fit your own needs.</p>
+<p>This template builds a simple Lisp Hunchentoot web server for Web PaaS.  It includes a minimalist application  for demonstration, but you are free to alter it as needed.</p>
 <p>Hunchentoot is a web server written in Common Lisp and at the same time a toolkit for building dynamic websites.</p>
   
 #### Features

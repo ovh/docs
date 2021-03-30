@@ -10,10 +10,10 @@ order: 3
 
 ## Objective  
 
-$partner_full allows you to completely define and configure the topology and services you want to use on your project.
+Web PaaS allows you to completely define and configure the topology and services you want to use on your project.
 
 
-Unlike other PaaS services, $partner_full is **batteries included** which means that you don't need to subscribe to an external service to get a cache or a search engine. And that those services are managed. When you back up your project, all of the services are backed-up. **Services** are configured through the `.platform/services.yaml` file you will need to commit to your Git repository. This section describes specifics you might want to know about for each service."
+Unlike other PaaS services, Web PaaS is **batteries included** which means that you don't need to subscribe to an external service to get a cache or a search engine. And that those services are managed. When you back up your project, all of the services are backed-up. **Services** are configured through the `.platform/services.yaml` file you will need to commit to your Git repository. This section describes specifics you might want to know about for each service."
 
 If you do not need additional services, you can leave the `.platform/services.yaml` file empty. This is the recommended approach for a static website.
 
@@ -84,7 +84,7 @@ For example, the current default storage amount per project is 5GB (meaning 5120
 
 ### Size
 
-By default, $partner_full will allocate CPU and memory resources to each container automatically.  Some services are optimized for high CPU load, some for high memory load.  By default, $partner_full will try to allocate the largest "fair" size possible to all services, given the available resources on the plan.  That is not always optimal, however, and you can customize that behavior on any service or on any application container.  See the [application sizing](../configuration-app/size) page for more details.
+By default, Web PaaS will allocate CPU and memory resources to each container automatically.  Some services are optimized for high CPU load, some for high memory load.  By default, Web PaaS will try to allocate the largest "fair" size possible to all services, given the available resources on the plan.  That is not always optimal, however, and you can customize that behavior on any service or on any application container.  See the [application sizing](../configuration-app/size) page for more details.
 
 ## Service timezones
 
@@ -95,7 +95,7 @@ All services have their system timezone set to UTC by default.  In most cases th
 
 ## Using the services
 
-In order for a service to be available to an application in your project ($partner_full supports not only multiple backends but also multiple applications in each project) you will need to refer to it in the [.platform.app.yaml](../configuration-app) file which configures the *relationships* between applications and services.
+In order for a service to be available to an application in your project (Web PaaS supports not only multiple backends but also multiple applications in each project) you will need to refer to it in the [.platform.app.yaml](../configuration-app) file which configures the *relationships* between applications and services.
 
 ## Endpoints
 
@@ -149,7 +149,7 @@ That indicates that the `database` relationship can be accessed at host `databas
 
 ### Open an SSH tunnel directly
 
-The first option is to open an SSH tunnel for all of your services.  You can do so with the $partner_full CLI, like so:
+The first option is to open an SSH tunnel for all of your services.  You can do so with the Web PaaS CLI, like so:
 
 ```bash
 $ webpaas tunnel:open
@@ -179,7 +179,7 @@ In this example, we would connect to `localhost:30001`, database name `main`, wi
 
 ### Using an application tunnel
 
-Alternatively, many database applications (such as MySQL Workbench and similar tools) support establishing their own SSH tunnel.  Consult the documentation for your application for how to enter SSH credentials, including telling it where your SSH private key is.  ($partner_full does not support password-based SSH authentication.)
+Alternatively, many database applications (such as MySQL Workbench and similar tools) support establishing their own SSH tunnel.  Consult the documentation for your application for how to enter SSH credentials, including telling it where your SSH private key is.  (Web PaaS does not support password-based SSH authentication.)
 
 To get the values to use, the easiest way is to run `webpaas ssh --pipe`.  That will return a command line that can be used to connect over SSH, from which you can pull the appropriate information.  For example:
 

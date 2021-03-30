@@ -10,7 +10,7 @@ order: 4
 
 ## Objective  
 
-Node.js is a popular JavaScript runtime built on Chrome's V8 JavaScript engine.  $partner_full supports deploying Node.js applications quickly and easily. Using our Multi-App support you can build a micro-service oriented system mixing both Javascript and PHP applications.
+Node.js is a popular JavaScript runtime built on Chrome's V8 JavaScript engine.  Web PaaS supports deploying Node.js applications quickly and easily. Using our Multi-App support you can build a micro-service oriented system mixing both Javascript and PHP applications.
 
 
 ## Supported versions
@@ -44,7 +44,7 @@ While it is possible to read the environment directly from your application, it 
 
 ## Configuration
 
-To use $partner_full and Node.js together, configure the `.platform.app.yaml` file with a few key settings, as described here (a complete example is included at the end).
+To use Web PaaS and Node.js together, configure the `.platform.app.yaml` file with a few key settings, as described here (a complete example is included at the end).
 
 1\. Specify the language of your application (available versions are listed above):
 
@@ -72,7 +72,7 @@ web:
     start: "PM2_HOME=/app/run pm2 start index.js --no-daemon"
 ```
 
-   If there is a package.json file present at the root of your repository, $partner_full will automatically install the dependencies. We suggest including the `platformsh-config` helper npm module, which makes it trivial to access the running environment.
+   If there is a package.json file present at the root of your repository, Web PaaS will automatically install the dependencies. We suggest including the `platformsh-config` helper npm module, which makes it trivial to access the running environment.
 
 ```json
 {
@@ -112,7 +112,7 @@ hooks:
   upstream: "app:http"
 ```
 
-7\. (Optional) If $partner_full detects a `package.json` file in your repository, it will automatically include a `default` [`build` flavor](../configuration-app/build#build), that will run `npm prune --userconfig .npmrc && npm install --userconfig .npmrc`. You can modify that process to use an alternative package manager by including the following in your `.platform.app.yaml` file:
+7\. (Optional) If Web PaaS detects a `package.json` file in your repository, it will automatically include a `default` [`build` flavor](../configuration-app/build#build), that will run `npm prune --userconfig .npmrc && npm install --userconfig .npmrc`. You can modify that process to use an alternative package manager by including the following in your `.platform.app.yaml` file:
 
 ```yaml
 build:
@@ -160,7 +160,7 @@ Finally, make sure your Node.js application is configured to listen over the por
 // Load the http module to create an http server.
 const http = require('http');
 
-// Load the $partner_full configuration
+// Load the Web PaaS configuration
 const config = require('platformsh-config').config();
 
 const server = http.createServer(function (request, response) {
@@ -212,7 +212,7 @@ A number of project templates for Node.js applications and typical configuration
 
 ### strapi  
 
-<p>This template builds a Strapi backend for $partner_full, which can be used to quickly create an API that can be served by itself or as a Headless CMS data source for another frontend application in the same project. This repository does not include a frontend application, but you can add one of your choice and access Strapi by defining it in a relationship in your frontend's <code>.platform.app.yaml</code> file.</p>
+<p>This template builds a Strapi backend for Web PaaS, which can be used to quickly create an API that can be served by itself or as a Headless CMS data source for another frontend application in the same project. This repository does not include a frontend application, but you can add one of your choice and access Strapi by defining it in a relationship in your frontend's <code>.platform.app.yaml</code> file.</p>
 <p>Strapi is a Headless CMS framework written in Node.js.</p>
   
 #### Features
@@ -227,7 +227,7 @@ A number of project templates for Node.js applications and typical configuration
 
 ### Gatsby with Strapi  
 
-<p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and Strapi for its backend. The `gatsby-source-strapi` source plugin is used to pull data from Strapi during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the $partner_full Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and Strapi for its backend. The `gatsby-source-strapi` source plugin is used to pull data from Strapi during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Note that there are several setup steps required after the first deploy to create your first content types and access permissions in Strapi. See the included README's post-install section for details.</p>
 <p>Gatsby is a free and open source framework based on React that helps developers build blazing fast websites and apps, and Strapi is a Headless CMS framework written in Node.js.</p>
   
@@ -256,7 +256,7 @@ A number of project templates for Node.js applications and typical configuration
 
 ### Gatsby with Drupal  
 
-<p>This template builds a two-application project to deploy the Headless CMS pattern using Gatsby as its frontend and Drupal for its backend. The <code>gatsby-source-drupal</code> source plugin is used to pull data from Drupal during the <code>post_deploy</code> hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the $partner_full Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>This template builds a two-application project to deploy the Headless CMS pattern using Gatsby as its frontend and Drupal for its backend. The <code>gatsby-source-drupal</code> source plugin is used to pull data from Drupal during the <code>post_deploy</code> hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Note that after you have completed the Drupal installation and included a few articles, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
 <p>Gatsby is a free and open source framework based on React that helps developers build statically-generated websites and apps, and Drupal is a flexible and extensible PHP-based CMS framework.</p>
   
@@ -275,7 +275,7 @@ A number of project templates for Node.js applications and typical configuration
 
 ### Gatsby with Wordpress  
 
-<p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and Wordpress for its backend. The `gatsby-source-wordpress` source plugin is used to pull data from Wordpress during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the $partner_full Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and Wordpress for its backend. The `gatsby-source-wordpress` source plugin is used to pull data from Wordpress during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Note that after you have completed the Wordpress installation, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
 <p>Gatsby is a free and open source framework based on React that helps developers build statically-generated websites and apps, and WordPress is a blogging and lightweight CMS written in PHP.</p>
   
@@ -305,7 +305,7 @@ A number of project templates for Node.js applications and typical configuration
 
 ### Express  
 
-<p>This template demonstrates building the Express framework for $partner_full.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server.  It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>This template demonstrates building the Express framework for Web PaaS.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Express is a minimalist web framework written in Node.js.</p>
   
 #### Features
@@ -330,7 +330,7 @@ A number of project templates for Node.js applications and typical configuration
 
 ### Koa  
 
-<p>This template demonstrates building the Koa framework for $partner_full.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server for data storage.  It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>This template demonstrates building the Koa framework for Web PaaS.  It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server for data storage.  It is intended for you to use as a starting point and modify for your own needs.</p>
 <p>Koa is a lightweight web microframework for Node.js.</p>
   
 #### Features

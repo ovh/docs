@@ -10,7 +10,7 @@ section: Php
 
 ## Objective  
 
-$partner_full uses a heuristic to automatically set the number of workers of the PHP-FPM runtime based on the memory available in the container. This heuristic is based on assumptions about the memory necessary on average to process a request. You can tweak those assumptions if your application will typically use considerably more or less memory.
+Web PaaS uses a heuristic to automatically set the number of workers of the PHP-FPM runtime based on the memory available in the container. This heuristic is based on assumptions about the memory necessary on average to process a request. You can tweak those assumptions if your application will typically use considerably more or less memory.
 
 Note that this value is independent of the `memory_limit` set in `php.ini`, which is the maximum amount of memory a single PHP process can use before it is automatically terminated.  These estimates are used only for determining the number of PHP-FPM workers to start.
 
@@ -90,7 +90,7 @@ This indicates that the majority of requests (4800) used 2048 KB of memory.  In 
 
 A conservative approach would suggest an average request memory of 16 MB should be sufficient.  A more aggressive stance would suggest 10 MB.  The more aggressive approach would potentially allow for more concurrent requests at the risk of some requests needing to use swap memory, thus slowing them down.
 
-The web agency [Pixelant](https://www.pixelant.net/) has also published a [log analyzer tool for $partner_full](https://github.com/pixelant/platformsh-analytics) that offers a better visualization of access logs to determine how much memory requests are using on average.  It also offers additional insights into the operation of your site that can suggest places to further optimize your configuration and provide guidance on when it's time to increase your plan size.  (Please note that this tool is maintained by a 3rd party, not by $partner_full.)
+The web agency [Pixelant](https://www.pixelant.net/) has also published a [log analyzer tool for Web PaaS](https://github.com/pixelant/platformsh-analytics) that offers a better visualization of access logs to determine how much memory requests are using on average.  It also offers additional insights into the operation of your site that can suggest places to further optimize your configuration and provide guidance on when it's time to increase your plan size.  (Please note that this tool is maintained by a 3rd party, not by Web PaaS.)
 
 
 > [!primary]  

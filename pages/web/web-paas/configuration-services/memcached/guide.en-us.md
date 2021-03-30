@@ -14,7 +14,7 @@ Memcached is a simple in-memory object store well-suited for application level c
 
 See the [Memcached](https://memcached.org) for more information.
 
-Both Memcached and Redis can be used for application caching.  As a general rule, Memcached is simpler and thus more widely supported while Redis is more robust.  $partner_full recommends using Redis if possible but Memcached is fully supported if an application favors that cache service."
+Both Memcached and Redis can be used for application caching.  As a general rule, Memcached is simpler and thus more widely supported while Redis is more robust.  Web PaaS recommends using Redis if possible but Memcached is fully supported if an application favors that cache service."
 
 ## Supported versions
 

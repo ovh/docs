@@ -9,11 +9,11 @@ section: Routes
 
 ## Let's Encrypt
 
-All environments on $partner_full support both HTTP and HTTPS automatically.  Production TLS certificates are provided by [Let's Encrypt](https://letsencrypt.org/).  You may alternatively provide your own TLS certificate from a 3rd party issuer of your choice at no charge from us.
+All environments on Web PaaS support both HTTP and HTTPS automatically.  Production TLS certificates are provided by [Let's Encrypt](https://letsencrypt.org/).  You may alternatively provide your own TLS certificate from a 3rd party issuer of your choice at no charge from us.
 
-Let’s Encrypt TLS Certificates are valid for 90 days and $partner_full will automatically renew them 28 days before expiration to avoid HTTPS interruptions.  If a renewal is available and needed, the environment will automatically redeploy to renew the certificate.  As no new build is required the process should take at most a few seconds. The deploy and post-deploy hook will be run during this process.
+Let’s Encrypt TLS Certificates are valid for 90 days and Web PaaS will automatically renew them 28 days before expiration to avoid HTTPS interruptions.  If a renewal is available and needed, the environment will automatically redeploy to renew the certificate.  As no new build is required the process should take at most a few seconds. The deploy and post-deploy hook will be run during this process.
 
-If you are using a custom TLS certificate, seven days before it expires $partner_full will issue a Let's Encrypt certificate and replace the custom certificate with it in order to avoid interruption in service.  If you wish to continue using the custom certificate, replace it with an updated certificate more than seven days before it expires.
+If you are using a custom TLS certificate, seven days before it expires Web PaaS will issue a Let's Encrypt certificate and replace the custom certificate with it in order to avoid interruption in service.  If you wish to continue using the custom certificate, replace it with an updated certificate more than seven days before it expires.
 
 > [!primary]  
 > TLS certificates are often still called SSL certificates.  TLS is a newer encryption system that has replaced SSL, but the name SSL is still widely recognized.  In practice, they mean the same thing today, but TLS is the more correct term.
@@ -21,9 +21,9 @@ If you are using a custom TLS certificate, seven days before it expires $partner
 
 ## Using HTTPS
 
-$partner_full recommends using HTTPS requests for all sites exclusively.  Doing so provides better security, access to certain features that web browsers only permit over HTTPS, and access to HTTP/2 connections on all sites which can greatly improve performance.
+Web PaaS recommends using HTTPS requests for all sites exclusively.  Doing so provides better security, access to certain features that web browsers only permit over HTTPS, and access to HTTP/2 connections on all sites which can greatly improve performance.
 
-How HTTPS redirection is handled depends on the routes you have defined.  $partner_full recommends specifying all HTTPS routes in your `routes.yaml` file.  That will result in all pages being served over TLS, and any requests for an HTTP URL will automatically be redirected to HTTPS.
+How HTTPS redirection is handled depends on the routes you have defined.  Web PaaS recommends specifying all HTTPS routes in your `routes.yaml` file.  That will result in all pages being served over TLS, and any requests for an HTTP URL will automatically be redirected to HTTPS.
 
 ```yaml
 "https://{default}/":
@@ -37,7 +37,7 @@ How HTTPS redirection is handled depends on the routes you have defined.  $partn
 
 Specifying only HTTP routes will result in duplicate HTTPS routes being created automatically, allowing the site to be served from both HTTP and HTTPS without redirects.
 
-Although $partner_full does not recommend it, you can also redirect HTTPS requests to HTTP explicitly to serve the site over HTTP only.  The use cases for this configuration are few.
+Although Web PaaS does not recommend it, you can also redirect HTTPS requests to HTTP explicitly to serve the site over HTTP only.  The use cases for this configuration are few.
 
 ```yaml
 "http://{default}/":
@@ -60,7 +60,7 @@ Although $partner_full does not recommend it, you can also redirect HTTPS reques
 More complex routing logic is also possible if the situation calls for it.
 
 > [!primary]  
-> Let's Encrypt has a limit of 100 TLS certificates per environment.  If you define both a `{default}` and `www.{default}` route for each domain you use, that will give you a limit of 50 domains.  Adding more than that will result in a warning on deploy and some domains will not be issued a TLS certificate.  If you need more than that, we recommend obtaining additional certificates or a wildcard certificate from another TLS provider.  Alternatively, consider splitting your project up into multiple discrete $partner_full projects.
+> Let's Encrypt has a limit of 100 TLS certificates per environment.  If you define both a `{default}` and `www.{default}` route for each domain you use, that will give you a limit of 50 domains.  Adding more than that will result in a warning on deploy and some domains will not be issued a TLS certificate.  If you need more than that, we recommend obtaining additional certificates or a wildcard certificate from another TLS provider.  Alternatively, consider splitting your project up into multiple discrete Web PaaS projects.
 > 
 
 ## TLS configuration
@@ -85,7 +85,7 @@ tls:
 ```
 
 The above configuration will result in requests using older TLS versions to be rejected. Legal values are `TLSv1.2` and `TLSv1.3`.
-TLS versions older than 1.2 are not supported by $partner_full and will be rejected regardless of the setting here.
+TLS versions older than 1.2 are not supported by Web PaaS and will be rejected regardless of the setting here.
 
 Note that if multiple routes for the same domain have different `min_version`s specified, the highest specified will be used for the whole domain.
 
@@ -184,7 +184,7 @@ This ownership verification is achieved through the so called _Challenge_ step, 
 Sometimes, that verification fails which will result in the following error-message:
 `Couldn't complete challenge [HTTP01: pending | DNS01: pending | TLSALPN01: pending]`
 
-For the DNS challenge to work, domains and subdomains should point directly to your $partner_full cluster (unless using a CDN). Otherwise, you will see the following error:
+For the DNS challenge to work, domains and subdomains should point directly to your Web PaaS cluster (unless using a CDN). Otherwise, you will see the following error:
 
 ```text
   E: Error validating domain www.some-example.webpaas.ovh.net: Couldn't complete challenge [HTTP01: pending | DNS01: pending | TLSALPN01: pending]

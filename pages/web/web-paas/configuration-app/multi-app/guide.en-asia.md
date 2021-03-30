@@ -10,7 +10,7 @@ section: App
 
 ## Objective  
 
-$partner_full supports building multiple applications per project (for example RESTful web services with a front-end, or a main website and a blog).  For resource allocation reasons, however, that is not supported on Standard plan.
+Web PaaS supports building multiple applications per project (for example RESTful web services with a front-end, or a main website and a blog).  For resource allocation reasons, however, that is not supported on Standard plan.
 
 > [!primary]  
 > This page only applies to Grid projects.  
@@ -126,7 +126,7 @@ The primary use case for this configuration is defining multiple applications wi
 
 ## Submodules
 
-$partner_full supports Git submodules, so each application can be in a separate repository.  However, there is currently a notable limitation: the `.platform.app.yaml` files must be in the top-level repository. That means the project must be structured like this:
+Web PaaS supports Git submodules, so each application can be in a separate repository.  However, there is currently a notable limitation: the `.platform.app.yaml` files must be in the top-level repository. That means the project must be structured like this:
 
 ```text
 .git/

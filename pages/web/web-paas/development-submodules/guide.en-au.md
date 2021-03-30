@@ -10,7 +10,7 @@ order: 5
 
 ## Clone submodules during deployment
 
-$partner_full allows you to use submodules in your Git repository. They are usually listed in a `.gitmodules` file at the root of your Git repository. When you push via Git, $partner_full will try to clone them automatically.
+Web PaaS allows you to use submodules in your Git repository. They are usually listed in a `.gitmodules` file at the root of your Git repository. When you push via Git, Web PaaS will try to clone them automatically.
 
 Here is an example of a ``.gitmodules`` file:
 
@@ -50,7 +50,7 @@ E: Error validating submodules in tree:
     - git@github.com:orocommerce/orocommerce.git: HangupException: The remote server unexpectedly closed the connection.
 ```
 
-Since the $partner_full Git server cannot connect to Github via SSH without being granted an SSH key to do so, you should not be using an SSH URL: ``git@github.com:...``, but you should use an HTTPS URL instead: ``https://github.com/...``.
+Since the Web PaaS Git server cannot connect to Github via SSH without being granted an SSH key to do so, you should not be using an SSH URL: ``git@github.com:...``, but you should use an HTTPS URL instead: ``https://github.com/...``.
 
 ## Use of private git repositories
 
@@ -80,12 +80,12 @@ To fix this, you need to:
     url=git@bitbucket.org:myusername/mymodule.git
 ```
 
-2\. Add the SSH public key in the $partner_full project settings "Deploy Key" tab in the Web UI as per the [Private Repository](../development-private-repository) documentation page, which will allow our Git service to pull the module from the remote git service. This assumes you have configured the remote git repository to allow this by generating a private/public key pair. For example, see the [Bitbucket documentation](https://confluence.atlassian.com/bitbucket/use-ssh-keys-in-bitbucket-pipelines-847452940.html).
+2\. Add the SSH public key in the Web PaaS project settings "Deploy Key" tab in the Web UI as per the [Private Repository](../development-private-repository) documentation page, which will allow our Git service to pull the module from the remote git service. This assumes you have configured the remote git repository to allow this by generating a private/public key pair. For example, see the [Bitbucket documentation](https://confluence.atlassian.com/bitbucket/use-ssh-keys-in-bitbucket-pipelines-847452940.html).
 
 
 ## Removing submodules
 
-These steps are not specific to $partner_full, but kept as a reference for Git so that submodules are effectively removed prior to entering the build process.
+These steps are not specific to Web PaaS, but kept as a reference for Git so that submodules are effectively removed prior to entering the build process.
 
 1\. Delete information for the submodule you'd like to remove from `.gitmodules`.
 2\. Stage changes to `.gitmodules`: 

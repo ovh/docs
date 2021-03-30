@@ -10,7 +10,7 @@ section: App
 
 ## Objective  
 
-All $partner_full containers default to running in UTC time.  Applications and application runtimes may elect to use a different timezone but the container itself runs in UTC.  That includes the `spec` parameter for cron tasks that are defined by the application.
+All Web PaaS containers default to running in UTC time.  Applications and application runtimes may elect to use a different timezone but the container itself runs in UTC.  That includes the `spec` parameter for cron tasks that are defined by the application.
 
 That is generally fine but sometimes it's necessary to run cron tasks in a different timezone.
 

@@ -10,13 +10,13 @@ section: Php
 
 ## Objective  
 
-[Xdebug](https://xdebug.org/) is a real-time debugger extension for PHP.  While usually used for local development, it can also be helpful for debugging aberrant behavior on the server.  It is available on $partner_full Grid instances running PHP 7.2 and higher.
+[Xdebug](https://xdebug.org/) is a real-time debugger extension for PHP.  While usually used for local development, it can also be helpful for debugging aberrant behavior on the server.  It is available on Web PaaS Grid instances running PHP 7.2 and higher.
 
-As configured on $partner_full, it avoids any runtime overhead for non-debug requests, even in production, and only allows SSH-tunneled connections to avoid any security issues.
+As configured on Web PaaS, it avoids any runtime overhead for non-debug requests, even in production, and only allows SSH-tunneled connections to avoid any security issues.
 
 ## Setting up Xdebug
 
-Xdebug is not enabled the same way as other extensions, as it should not be active on most requests.  Xdebug has a substantial impact on performance and should not be run in a production process.  Instead, $partner_full runs a second PHP-FPM process with Xdebug that is used only for debug requests, leaving the normal process unaffected.
+Xdebug is not enabled the same way as other extensions, as it should not be active on most requests.  Xdebug has a substantial impact on performance and should not be run in a production process.  Instead, Web PaaS runs a second PHP-FPM process with Xdebug that is used only for debug requests, leaving the normal process unaffected.
 
 Enable Xdebug by adding the following configuration to the application's `.platform.app.yaml` file:
 
@@ -28,7 +28,7 @@ runtime:
 
 The `idekey` value can be any arbitrary alphanumeric string, as long as it matches your IDE's configuration.
 
-When that key is defined, $partner_full will start a second PHP-FPM process on the container that is identically configured but also has Xdebug enabled.  Only incoming requests that have an Xdebug cookie or query parameter set will be forwarded to the debug PHP-FPM process.  All other requests will be directed to the normal PHP-FPM process and thus have no performance impact.
+When that key is defined, Web PaaS will start a second PHP-FPM process on the container that is identically configured but also has Xdebug enabled.  Only incoming requests that have an Xdebug cookie or query parameter set will be forwarded to the debug PHP-FPM process.  All other requests will be directed to the normal PHP-FPM process and thus have no performance impact.
 
 Xdebug has numerous other configuration options available.  They are all set as `php.ini` values, and can be configured the same way as any other [`php.ini` setting](../ini).  Consult the [Xdebug documentation](https://xdebug.org/docs/) for a full list of available options, although in most cases the default configuration is sufficient.
 
@@ -58,7 +58,7 @@ While Xdebug can be triggered from the browser by adding a special query paramet
 
 ## Using PHPStorm
 
-The configuration for Xdebug will be slightly different for each IDE.  $partner_full has no preference as to the IDE or editor you use, but we have provided configuration instructions for PHPStorm/IntelliJ due to its popularity in the PHP ecosystem.
+The configuration for Xdebug will be slightly different for each IDE.  Web PaaS has no preference as to the IDE or editor you use, but we have provided configuration instructions for PHPStorm/IntelliJ due to its popularity in the PHP ecosystem.
 
 ### 1. Configure Xdebug
 
@@ -80,7 +80,7 @@ Ensure that the "IDE key" field is set to the same value as the `idekey` in `.pl
 
 In your PHPStorm Settings window, go to `Languages & Frameworks` > `PHP` > `Servers`.
 
-Add a new server for your $partner_full environment.  The "Host" should be the hostname of the environment on $partner_full you will be debugging.  The "Port" should always be 443 and the "Debugger" set to Xdebug.  Ensure that "Use path mappings" is checked, which will make available a tree of your project with a column to configure the remote path that it should map to.
+Add a new server for your Web PaaS environment.  The "Host" should be the hostname of the environment on Web PaaS you will be debugging.  The "Port" should always be 443 and the "Debugger" set to Xdebug.  Ensure that "Use path mappings" is checked, which will make available a tree of your project with a column to configure the remote path that it should map to.
 
 This page lets you define what remote paths on the server correspond to what path on your local machine.  In the majority of cases you can just define the root of your application (either the repository root, or the root of your PHP code base specifically in a multi-app setup) to map to `app`, as in the example below.
 

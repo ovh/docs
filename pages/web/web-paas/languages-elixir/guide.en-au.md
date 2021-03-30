@@ -10,7 +10,7 @@ order: 4
 
 ## Objective  
 
-$partner_full supports building and deploying applications written in Elixir. There is no default flavor for the build phase, but you can define it explicitly in your build hook. $partner_full Elixir images support both committed dependencies and download-on-demand. The underlying Erlang version is 22.0.7.
+Web PaaS supports building and deploying applications written in Elixir. There is no default flavor for the build phase, but you can define it explicitly in your build hook. Web PaaS Elixir images support both committed dependencies and download-on-demand. The underlying Erlang version is 22.0.7.
 
 ## Supported versions
 
@@ -27,9 +27,9 @@ type: 'elixir:1.9'
 ```  
 
 
-## $partner_full variables
+## Web PaaS variables
 
-$partner_full exposes relationships and other configuration as [environment variables](../development-variables). Most notably, it allows a program to determine at runtime what HTTP port it should listen on and what the credentials are to access [other services](../configuration-services).
+Web PaaS exposes relationships and other configuration as [environment variables](../development-variables). Most notably, it allows a program to determine at runtime what HTTP port it should listen on and what the credentials are to access [other services](../configuration-services).
 
 To get the `PORT` environment variable (the port on which your web application is supposed to listen) you would:
 
@@ -45,7 +45,7 @@ Some of the environment variables are in JSON format and are base64 encoded. You
 
 ## Building and running the application
 
-If you are using Hex to manage your dependencies, it will be necessary to specify a set of environment variables in your `.platform.app.yaml` file that define the `MIX_ENV` and `SECRET_KEY_BASE`, which can be set to the $partner_full-provided `PLATFORM_PROJECT_ENTROPY` environment variable:
+If you are using Hex to manage your dependencies, it will be necessary to specify a set of environment variables in your `.platform.app.yaml` file that define the `MIX_ENV` and `SECRET_KEY_BASE`, which can be set to the Web PaaS-provided `PLATFORM_PROJECT_ENTROPY` environment variable:
 
 ```yaml
 variables:
@@ -107,7 +107,7 @@ Note that there will still be an Nginx proxy server sitting in front of your app
 
 ## Dependencies
 
-The recommended way to handle Elixir dependencies on $partner_full is using Hex. You can commit a `mix.exs` file in your repository and the system will download the dependencies in your `deps` section using the build hook above.
+The recommended way to handle Elixir dependencies on Web PaaS is using Hex. You can commit a `mix.exs` file in your repository and the system will download the dependencies in your `deps` section using the build hook above.
 
 ```elixir
   defp deps do
@@ -119,7 +119,7 @@ The recommended way to handle Elixir dependencies on $partner_full is using Hex.
 
 ## Accessing Services
 
-The simplest possible way to go around this is to use the [$partner_full Config Reader](https://hex.pm/packages/platformshconfig) library from hex. The library source is also available [on GitHub](https://github.com/platformsh/config-reader-elixir).
+The simplest possible way to go around this is to use the [Web PaaS Config Reader](https://hex.pm/packages/platformshconfig) library from hex. The library source is also available [on GitHub](https://github.com/platformsh/config-reader-elixir).
 
 If you are building a Phoenix app for example, it would suffice to add a database to `.platform/services.yaml` and a relationship in `.platform.app.yaml`. Put the lib in your `deps` and, assuming you renamed the `prod.secret.exs` to `releases.exs` per the [Phoenix guide](https://hexdocs.pm/phoenix/releases.html), change:
 
@@ -133,7 +133,7 @@ to
 Platformsh.Config.ecto_dsn_formatter("database")
 ```
 
-See [$partner_full Config Reader Documentation](https://hexdocs.pm/platformshconfig/Platformsh.Config.html) for the full API.
+See [Web PaaS Config Reader Documentation](https://hexdocs.pm/platformshconfig/Platformsh.Config.html) for the full API.
 
 ### Accessing Services Manually
 
@@ -180,6 +180,6 @@ deploy: |
 
 ## Project templates
 
-$partner_full offers a number of project templates using the structure described above. It can be used as a starting point or reference for building your own website or web application.
+Web PaaS offers a number of project templates using the structure described above. It can be used as a starting point or reference for building your own website or web application.
 
 

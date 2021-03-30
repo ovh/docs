@@ -10,7 +10,7 @@ section: Services
 
 ## Objective  
 
-$partner_full supports both MariaDB and Oracle MySQL.  While there are some differences at the application level for developers, they function nearly identically from an infrastructure point of view.
+Web PaaS supports both MariaDB and Oracle MySQL.  While there are some differences at the application level for developers, they function nearly identically from an infrastructure point of view.
 
 See the [MariaDB documentation](https://mariadb.org/learn/) or [MySQL documentation](https://dev.mysql.com/doc/refman/8.0/en/) for more information.
 
@@ -272,7 +272,7 @@ Outside the application container, you can use Platform CLI `webpaas sql`.
 
 ## Exporting data
 
-The easiest way to download all data in a MariaDB instance is with the $partner_full CLI.  If you have a single SQL database, the following command will export all data using the `mysqldump` command to a local file:
+The easiest way to download all data in a MariaDB instance is with the Web PaaS CLI.  If you have a single SQL database, the following command will export all data using the `mysqldump` command to a local file:
 
 ```bash
 webpaas db:dump
@@ -304,7 +304,7 @@ The easiest way to load data into a database is to pipe an SQL dump through the 
 webpaas sql < my_database_backup.sql
 ```
 
-That will run the database backup against the SQL database on $partner_full.  That will work for any SQL file, so the usual caveats about importing an SQL dump apply (e.g., it's best to run against an empty database).  As with exporting, you can also specify a specific environment to use and a specific database relationship to use, if there are multiple.
+That will run the database backup against the SQL database on Web PaaS.  That will work for any SQL file, so the usual caveats about importing an SQL dump apply (e.g., it's best to run against an empty database).  As with exporting, you can also specify a specific environment to use and a specific database relationship to use, if there are multiple.
 
 ```bash
 webpaas sql --relationship database -e master < my_database_backup.sql

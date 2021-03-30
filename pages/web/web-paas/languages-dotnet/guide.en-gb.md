@@ -10,7 +10,7 @@ order: 4
 
 ## Objective  
 
-$partner_full supports deploying .NET applications by allowing developers to define a build process and pass its variables to the .NET Core build environment.
+Web PaaS supports deploying .NET applications by allowing developers to define a build process and pass its variables to the .NET Core build environment.
 
 ## Supported versions
 
@@ -42,7 +42,7 @@ hooks:
 
 where `PLATFORM_OUTPUT_DIR` is the output directory for compiled languages available at build time.
 
-Typically .NET Core builds will start a collection of build servers, which are helpful for repeated builds. On $partner_full, however, if this process is not disabled, the build process will not finish until the idle timeout is reached.
+Typically .NET Core builds will start a collection of build servers, which are helpful for repeated builds. On Web PaaS, however, if this process is not disabled, the build process will not finish until the idle timeout is reached.
 
 As a result, it is recommended to include `-p` toggles that disable the Razor compiler for dynamic cshtml pages (`UseRazorBuildServer`) and the .NET msbuild compiler (`UseSharedCompilation`).
 
@@ -92,7 +92,7 @@ web:
 
 ## Project templates
 
-$partner_full offers project templates for .NET Core applications using the structure described above.  They can be used as a starting point or reference for building your own website or web application.
+Web PaaS offers project templates for .NET Core applications using the structure described above.  They can be used as a starting point or reference for building your own website or web application.
 
 
 ### ASP.NET Core  

@@ -18,7 +18,7 @@ failed: Read-only file system (30) in /app/app/cache/dev/classes.php line 420
 that's because Symfony is trying to write into: `/var/lib/php5/` which
 is read-only.
 
-The solution is to mount a sessions folder into $partner_full and write
+The solution is to mount a sessions folder into Web PaaS and write
 sessions in that folder.
 
 Simply edit your `.platform.app.yaml` and add a mounts there:
