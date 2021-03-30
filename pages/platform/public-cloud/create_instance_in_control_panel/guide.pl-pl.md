@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 3
 ---
 
-**Ostatnia aktualizacja: 3 grudnia 2019**
+**Ostatnia aktualizacja: 30/03/2021**
 
 ## Wprowadzenie
 
@@ -32,22 +32,24 @@ Po wybraniu właściwego projektu kliknij przycisk `Instancje`{.action} w sekcji
 
 Następnie kliknij przycisk `Utwórz instancję`{.action}. Zostanie wyświetlone następujące menu, w którym można wybrać instancję do utworzenia.
 
-![create_instance1](images/create_instance1.png){.thumbnail}
+![create_instance1](images/create_instance1-2021.png){.thumbnail}
 
 Poniższa tabela zawiera krótkie wyjaśnienie różnic między typami instancji:
 
-| Typ serwera | Gwarantowane zasoby | Wdrożenie |
-| :---         |     :---:      |          ---: |
-| Ogólne zastosowanie   | ✓     | Serwery programistyczne, aplikacje internetowe i biznesowe    |
-| CPU     | ✓       | Kodowanie wideo lub inne zastosowania wymagające dużej wydajności obliczeniowej      |
+| Typ serwera | Gwarantowane zasoby | Uwagi dotyczące zastosowana |
+| :---         |     :---:      |          :--- |
+| General Purpose   | ✓     | Serwery programistyczne, aplikacje internetowe i biznesowe    |
+| CPU (procesor)     | ✓       | Kodowanie wideo lub inne zastosowania wymagające dużej wydajności obliczeniowej      |
 | RAM   | ✓     | Bazy danych, analiza i obliczenia w pamięci    |
-| Zasoby udostępnione    | -       | Środowiska testowe i deweloperskie      |
+| GPU     | ✓       | Masowe przetwarzanie równoległe na potrzeby aplikacji specjalistycznych (renderowanie, Big Data, zaawansowane uczenie maszynowe itd.)       |
+| Sandbox    | -       | Hostowane we współdzielonych zasobach na potrzeby środowisk testowych i programistycznych      |
+| Discovery    | -       | Hostowane we współdzielonych zasobach na potrzeby środowisk testowych i programistycznych      |
+| IOPS   | ✓     | Zoptymalizowane pod kątem transferu danych na dyskach    |
 
 > [!primary]
 >
 Początkowo obowiązuje ograniczenie do 20 instancji, 20 rdzeni wirtualnych i 40 GB pamięci RAM na każdy projekt. Wniosek o zwiększenie limitu zasobów można złożyć przez [przesłanie zgłoszenia](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external} do naszego zespołu obsługi klienta.
 >
-
 
 W menu wybierz region, w którym ma się znajdować instancja Public Cloud. Trzecia opcja służy do wyboru systemu operacyjnego.
 
@@ -73,7 +75,6 @@ Na koniec należy wybrać model rozliczeniowy — miesięczny lub godzinowy.
 >
 >W przypadku modelu godzinowego opłaty są naliczane przez cały okres istnienia instancji. Nie ma znaczenia, czy instancja jest używana, czy nie.
 >
-
 
 Po potwierdzeniu prawidłowości wszystkich wprowadzonych informacji kliknij przycisk `Utwórz instancję`{.action}, aby ukończyć tworzenie nowej instancji. Udostępnienie instancji może zająć kilka minut.
 

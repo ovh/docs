@@ -6,7 +6,7 @@ section: 'Erste Schritte'
 order: 1
 ---
 
-**Letzte Aktualisierung am 26.03.2021**
+**Letzte Aktualisierung am 30.03.2021**
 
 ## Ziel
 
@@ -155,7 +155,7 @@ Klicken Sie auf den Button `SSH-Schlüssel hinzufügen`{.action}. Geben Sie im n
 
 Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Public Cloud`{.action} und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie auf der „Start“-Seite auf `Instanz erstellen`{.action}. (Sie finden dieselbe Funktion auch auf der „Instanzen“-Seite, indem Sie in der linken Menüzeile unter „Compute“ auf `Instances`{.action} klicken.)
 
-![Instanz auswählen](images/instance-creation-01.png){.thumbnail}
+![Instanz auswählen](images/instance-creation-01-2021.png){.thumbnail}
 
 Wählen Sie zunächst entsprechend Ihren Anforderungen ein Server-Template aus. Der Assistent zeigt Ihnen Beschreibungen zu den verschiedenen Einsatzzwecken sowie die Verfügbarkeit der Servermodelle. Sie können aus den folgenden angepassten Kategorien auswählen:
 
@@ -166,6 +166,7 @@ Wählen Sie zunächst entsprechend Ihren Anforderungen ein Server-Template aus. 
 | RAM   | ✓     | Datenbanken, Analysen und In-Memory-Berechnungen    |
 | GPU     | ✓       | Massiv-Parallel-Processing-Leistung für spezialisierte Anwendungen (Rendering, Big Data, Deep Learning etc.)       |
 | Sandbox    | -       | Auf geteilten Ressourcen gehostet, für Test- und Entwicklungsumgebungen      |
+| Discovery    | -       | Auf geteilten Ressourcen gehostet, für Test- und Entwicklungsumgebungen      |
 | IOPS   | ✓     | Optimiert für Festplattentransaktionen    |
 
 

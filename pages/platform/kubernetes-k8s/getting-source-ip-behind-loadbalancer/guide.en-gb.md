@@ -158,6 +158,10 @@ deployment.apps/ingress-nginx-controller restarted</code></pre>
 
 ### 4. Testing
 
+> [!warning]
+> Due to DNS propagation the actual resolving of your Load Balancer FQDN can take an additional 2-5 minutes to be fully usable. In the meantime, you can use the included IP to access the load balancer.
+>
+
 We can now deploy a simple echo service to verify that everything is working. The service will use the [`mendhak/http-https-echo` image](https://code.mendhak.com/docker-http-https-echo/), a very useful HTTPS echo Docker container for web debugging.
 
 First, copy the next manifest to a `echo.yaml` file:

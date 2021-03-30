@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 3
 ---
 
-**Dernière mise à jour le 3 décembre 2019**
+**Dernière mise à jour le 30/03/2021**
 
 ## Objectif
 
@@ -22,7 +22,7 @@ Le [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external} OVHcloud
 
 ## En pratique
 
-### Déployer une instance Public Cloud.
+### Déployer une instance Public Cloud
 
 Pour déployer une instance public cloud, connectez-vous à [l’espace client d’OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur `Public Cloud`{.action} en haut à gauche. Sur l’écran qui s’affiche, cliquez sur la flèche à côté du nom par défaut de votre projet, en haut à gauche. Sélectionnez le projet dans lequel vous souhaitez créer une nouvelle instance.
 
@@ -34,16 +34,19 @@ Une fois que vous avez choisi votre projet, cliquez sur `Instances`{.action}dans
 
 Cliquez alors sur `Créer une instance`{.action}. Le menu suivant vous permettra de choisir l’instance que vous souhaitez créer.
 
-![create_instance1](images/create_instance1.png){.thumbnail}
+![create_instance1](images/create_instance1-2021.png){.thumbnail}
 
 Le tableau suivant donne un aperçu des caractéristiques de chaque type d’instance:
 
 | Type de serveur | Ressources garanties | Utilisation |
 | :---         |     :---:      |          ---: |
-| General Use   | ✓     | Serveurs de développement, applications web ou commerciales    |
+| General Purpose   | ✓     | Serveurs de développement, applications web ou commerciales    |
 | CPU     | ✓       | Encodage vidéo ou autres calculs haute performance      |
-| RAM   | ✓     | Base de données, analyse et calculs in-memory    |
-| Shared Ressources    | -       | Environnements de test et de développement      |
+| RAM   | ✓     | Base de données, analyse et calculs en mémoire   |
+| GPU     | ✓       | Calcul accéléré pour des applications spécifiques (rendering, transcodage vidéo, bio-informatique, Big Data, deep learning, etc.)      |
+| Sandbox    | -       | Tests, recettes et environnements de développement.     |
+| Discovery    | -       | Tests, recettes et environnements de développement.     |
+| IOPS   | ✓     | Optimisé pour les transactions disque les plus rapides    |
 
 > [!primary]
 >
@@ -79,6 +82,6 @@ Après avoir confirmé que toutes les informatons fournies sont correctes, cliqu
 
 ## Aller plus loin
 
-[Démarrer avec Public Cloud](https://docs.ovh.com/fr/public-cloud/getting_started_with_public_cloud_logging_in_and_creating_a_project/){.external}
+[Création et connexion à une première instance Public Cloud](../premiers-pas-instance-public-cloud/)
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
