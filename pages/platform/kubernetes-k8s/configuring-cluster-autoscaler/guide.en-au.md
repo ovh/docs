@@ -69,8 +69,8 @@ Here you have a description of the parameters used in the autoscaler configurati
 | max-graceful-termination-sec	| Maximum number of seconds the cluster autoscaler waits for pod termination when trying to scale down a node	| 600 seconds |
 | balance-similar-node-groups	| Detects node pools with the same instance type and the same set of labels and balances the number of nodes between them	| false |
 | expander	| Type of node pool expander to be used in scale up. Possible values: most-pods, random, least-waste, priority	| random |
-| skip-nodes-with-local-storage	| If true cluster autoscaler will never delete nodes with pods with local storage, for example, EmptyDir or HostPath	| true |
-| skip-nodes-with-system-pods	| If true cluster autoscaler will never delete nodes with pods from kube-system (except for DaemonSet or mirror pods)	| true |
+| skip-nodes-with-local-storage	| If true cluster autoscaler will never delete nodes with pods with local storage, for example, EmptyDir or HostPath	| false |
+| skip-nodes-with-system-pods	| If true cluster autoscaler will never delete nodes with pods from kube-system (except for DaemonSet or mirror pods)	| false |
 | max-empty-bulk-delete	| Maximum number of empty nodes that can be deleted at the same time	| 10 nodes |
 | new-pod-scale-up-delay	| For scenarios like burst/batch scale where you don't want the cluster autoscaler to act before the kubernetes scheduler could schedule all the pods, you can tell the CA to ignore unscheduled pods before they're a certain age.	| 0 seconds |
 | max-total-unready-percentage	| Maximum percentage of unready nodes in the cluster. After this percentage is exceeded, the CA halts operations	| 45% |
