@@ -47,11 +47,13 @@ It also assumes that you have read the [Using the cluster autoscaler](../using-c
 
 The easiest way to enable the autoscaler is using the Kubernetes API, for example using `kubectl`.
 
-As explained in the [How nodes and node pools work](../managing-nodes/) guide, in your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (group of nodes sharing the same configuration).
+As explained in the [How nodes and node pools work](../managing-nodes/) guide, in your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (groups of nodes sharing the same configuration).
 
-Autoscale is configured in a node pool basis, i.e. you don't enable autoscaling on a full cluster, you enable it for one or more of your node pools. Let's see how you can do it.
+Autoscale is configured on a node pool basis, i.e. you don't enable autoscaling on a full cluster, you enable it for one or more of your node pools.
 
-When you create your cluster, you could bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) or directly [using the Kubernetes API](../managing-nodes/).
+You can activate the autoscaler on several node pools, each of which can have a different type of instance as well as different min and max nodes number limits.
+
+When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) or directly [using the Kubernetes API](../managing-nodes/).
 
 To list node pools, you can use:
 
@@ -59,19 +61,19 @@ To list node pools, you can use:
 kubectl get nodepools
 ```
 
-In my case I have one node pool in my cluster, called `my-node-pool`, with 3 B2-7 nodes:
+In my case I have one node pool in my cluster, called `nodepool-b2-7`, with 3 B2-7 nodes:
 
 <pre class="console"><code>$ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   [...]
-nodepool-b2-7   b2-7     false         false            false           3         3         0            3           [...]
+nodepool-b2-7   b2-7     false         false            false           3         3         3            3           [...]
 </code></pre>
 
-As you can see, the `AUTO SCALED` field is set to `false`.  Let's see why by looking at the node pool description. 
+As you can see, the `AUTO SCALED` field is set to `false`.  Let's see why by looking at the node pool description.
 
 You can then get the description of the node pool in YAML format using:
 
 ```bash
-kubectl get nodepools &lt;your_nodepool_name> -o yaml
+kubectl get nodepools <your_nodepool_name> -o yaml
 ```
 
 For my example cluster:
@@ -100,10 +102,10 @@ status:
     [...]
   currentNodes: 3
   observedGeneration: 2
-  upToDateNodes: 00            3        
+  upToDateNodes: 3
 </code></pre>
 
-And in the `spec` section you can see that the `autoscale` parameter is set to `false`. In order to enable the autoscaler, you need to patch the node pool to set this field to `true`. Set also `desiredNodes` to 1, `minNodes` to 1 and `maxNodes` to 3, to be sure that we begin only with one active node and that we can grow the node pool up to 3 nodes.
+In the `spec` section you can see that the `autoscale` parameter is set to `false`. In order to enable the autoscaler, you need to patch the node pool to set this field to `true`. Set also `desiredNodes` to 1, `minNodes` to 1 and `maxNodes` to 3, to be sure that we begin only with one active node and that we can grow the node pool up to 3 nodes.
 
 ```bash
 kubectl patch nodepool &lt;your_nodepool_name> --type="merge" --patch='{"spec": {"autoscale": true, "desiredNodes": 1, "minNodes": 0, "maxNodes": 3}}'
@@ -116,14 +118,14 @@ nodepool.kube.cloud.ovh.com/nodepool-b2-7 patched
 
 $ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   [...]   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX
-nodepool-b2-7   b2-7     true          [...]   false           1         1         0            1           0     3
+nodepool-b2-7   b2-7     true          [...]   false           1         1         1            1           0     3
 </code></pre>
 
 Now we can begin to deploy a test workload on the cluster.
 
 ## Deploying a test workload
 
-In order to test the autoscaler, we propose you to install a  *Prime Numbers* Deployment that deploys several instances of *Prime Numbers* pods. The *Prime Numbers* pod simply calculates prime numbers in the most performance ineffective way: by dividing every positive integer number by all the lower positive integers. It's a CPU intensive operation, but it uses a minimal amount of memory.  
+In order to test the autoscaler, we propose you to install a *Prime Numbers* Deployment that deploys several instances of *Prime Numbers* pods. The *Prime Numbers* pod simply calculates prime numbers in the most performance ineffective way: by dividing every positive integer number by all the lower positive integers. It's a CPU intensive operation, but it uses a minimal amount of memory.  
 
 > [!primary]
 >
@@ -160,7 +162,7 @@ spec:
         - containerPort: 8080        
 ```
 
-As you can see, we will begin by deploying 3 replicas of the pod. Each replica consumes 150m CPU (0.150 CPUs), and we are using B2-7 instances, with 2000m CPU (2 CPU_). In the tutorial we will increase the number of replicas to 12 then to 24, to see how the autoscaler grows up the node pool to 2 then to 3 nodes.
+As you can see, we will begin by deploying 3 replicas of the pod. Each replica consumes 150m CPU (0.150 CPUs), and we are using B2-7 instances, with 2000m CPU (2 CPU cores). In the tutorial we will increase the number of replicas to 12 then to 24, to see how the autoscaler grows up the node pool to 2 then to 3 nodes.
 
 Deploy the *Prime Numbers* deployment:
 
@@ -188,7 +190,7 @@ prime-numbers-5ffd8d7b84-wmm7r   1/1     Running   0          92s
 
 $ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   [...]   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX
-nodepool-b2-7   b2-7     true          [...]   false           1         1         0            1           0     3       
+nodepool-b2-7   b2-7     true          [...]   false           1         1         1            1           0     3       
 </code></pre>
 
 ## Scaling up the workload
@@ -196,7 +198,7 @@ nodepool-b2-7   b2-7     true          [...]   false           1         1      
 Now we can patch the *Prime Numbers* deployement to augment the replicas to 12, that should be enough to activate the scaling up of the node pool.
 
 ```bash
-kubectl patch deployment prime-numbers --type="merge" --patch='{"spec": {"replicas": 8}}'
+kubectl patch deployment prime-numbers --type="merge" --patch='{"spec": {"replicas": 12}}'
 ```
 
 <pre class="console"><code>$ kubectl patch deployment prime-numbers --type="merge" --patch='{"spec": {"replicas": 12}}'
@@ -220,18 +222,18 @@ prime-numbers-5ffd8d7b84-wj9cf   0/1     Pending   0          22s
 
 As you can see then with `kubectl get nodepools`, the autoscaler detects capacity has been reached and asks for a new node:
 
-<pre class="console"><code>$ kubectl get nodepools
+<pre class="console"><code>
 $ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   [...]   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX
-nodepool-b2-7   b2-7     true          [...]   false           2         1         0            1           0     3
+nodepool-b2-7   b2-7     true          [...]   false           2         1         1            1           0     3
 </code></pre>
 
 And in a few moments, the new node is created and active, and all the pods are running:
 
-<pre class="console"><code>$ kubectl get nodepools
+<pre class="console"><code>
 $ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   [...]   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX
-nodepool-b2-7   b2-7     true          [...]   false           2         2         1            2           0     3
+nodepool-b2-7   b2-7     true          [...]   false           2         2         2            2           0     3
 
 $ kubectl get pods
 NAME                             READY   STATUS    RESTARTS   AGE
@@ -292,13 +294,11 @@ prime-numbers-5ffd8d7b84-z5h49   1/1     Running   0          37s
 
 $ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
-nodepool-b2-7   b2-7     true          false            false           3         2         1            2
- 0     3     64d
+nodepool-b2-7   b2-7     true          false            false           3         2         2            2           0     3     64d
 
  $ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
-nodepool-b2-7   b2-7     true          false            false           3         3         2            3
- 0     3     64d
+nodepool-b2-7   b2-7     true          false            false           3         3         2            3           0     3     64d
 
 $ kubectl get pods
 NAME                             READY   STATUS    RESTARTS   AGE
@@ -358,8 +358,7 @@ After 10 minutes we are back to 2 nodes:
 <pre class="console"><code>
 $ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
-nodepool-b2-7   b2-7     true          false            false           3         2         1            2
- 0     3     64d
+nodepool-b2-7   b2-7     true          false            false           3         2         2            2           0     3     64d
 </code></pre>
 
 And 10 minutes later, we have only one node:
@@ -367,8 +366,7 @@ And 10 minutes later, we have only one node:
 <pre class="console"><code>
 $ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
-nodepool-b2-7   b2-7     true          false            false           1         1         1            1
- 0     3     64d
+nodepool-b2-7   b2-7     true          false            false           1         1         1            1           0     3     64d
 </code></pre>
 
 ## Cleaning up

@@ -53,9 +53,9 @@ This guide follows up the [Using the cluster autoscaler](../using-cluster-autosc
 
 ### Cluster autoscaler configuration
 
-When the autoscaler is enabled in a node pool, is uses a default configuration.
+When the autoscaler is enabled on a node pool, is uses a default configuration.
 
-Here you have a description of the parameters used in the autoscaler configuration, and their default values:
+Here you have a description of the parameters used in the autoscaler configuration, and their default value:
 
 | Setting	| Description |	Default value |
 | ------- | ----------- | ------------- |
@@ -72,11 +72,10 @@ Here you have a description of the parameters used in the autoscaler configurati
 | skip-nodes-with-local-storage	| If true cluster autoscaler will never delete nodes with pods with local storage, for example, EmptyDir or HostPath	| true |
 | skip-nodes-with-system-pods	| If true cluster autoscaler will never delete nodes with pods from kube-system (except for DaemonSet or mirror pods)	| true |
 | max-empty-bulk-delete	| Maximum number of empty nodes that can be deleted at the same time	| 10 nodes |
-| new-pod-scale-up-delay	| For scenarios like burst/batch scale where you don't want cluster autosscaler to act before the kubernetes scheduler could schedule all the pods, you can tell CA to ignore unscheduled pods before they're a certain age.	| 0 seconds |
-| max-total-unready-percentage	| Maximum percentage of unready nodes in the cluster. After this percentage is exceeded, CA halts operations	| 45% |
+| new-pod-scale-up-delay	| For scenarios like burst/batch scale where you don't want the cluster autoscaler to act before the kubernetes scheduler could schedule all the pods, you can tell the CA to ignore unscheduled pods before they're a certain age.	| 0 seconds |
+| max-total-unready-percentage	| Maximum percentage of unready nodes in the cluster. After this percentage is exceeded, the CA halts operations	| 45% |
 | max-node-provision-time	| Maximum time the autoscaler waits for a node to be provisioned	| 15 minutes |
 | ok-total-unready-count	| Number of allowed unready nodes, irrespective of max-total-unready-percentage	| 3 node |
-| | | 
 
 You can get more information on those parameters on the [Kubernetes autoscaler documentation](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md).
 If you consider we should reevaluate the default value and/or prioritize the possible customization of of one of those parameters, we are looking for your feedback concerning this beta feature in the [Gitter community channel around OVHcloud Managed Kubernetes service](https://gitter.im/ovh/kubernetes).
