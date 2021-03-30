@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 26th March 2021**
+**Last updated 30th March 2021**
 
 ## Objective
 
@@ -155,7 +155,7 @@ Click on the `Add an SSH key`{.action} button. In the new window, enter a name f
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. On the "Home" page, click on `Create an instance`{.action}. (You can find the same functionality on the "Instances" page by clicking `Instances`{.action} in the left-hand navigation bar under "Compute".)
 
-![instance select](images/instance-creation-01.png){.thumbnail}
+![instance select](images/instance-creation-01-2021.png){.thumbnail}
 
 First, choose a server template according to your needs. The assistant will provide descriptions about the various use cases and server model availability. You can choose from these customised categories:
 
@@ -166,6 +166,7 @@ First, choose a server template according to your needs. The assistant will prov
 | RAM   | ✓     | Databases, analysis, and in-memory calculations    |
 | GPU     | ✓       | Massively parallel processing power for specialised applications (rendering, big data, deep learning, etc.)       |
 | Sandbox    | -       | Hosted on shared resources for testing and development environments      |
+| Discovery    | -       | Hosted on shared resources for testing and development environments      |
 | IOPS   | ✓     | Optimised for disk data transfer    |
 
 
