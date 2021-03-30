@@ -66,7 +66,20 @@ Enter the variables:
 
 Data replication can take several hours. When the replication is complete, you will receive an email confirming that your copy has been successful.
 
-### Step 3: Accessing the copy from vSphere
+### Step 3: Knowing the status of the copy
+
+In order to follow the datastore copy status, use the following API call:
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/copyFilerStatus
+
+- serviceName: the name of the destination PCC (e.g. pcc-192-0-2-50).
+- datacenterId: the ID of the destination datacentre (e.g. 1515).
+
+If a copy has been asked for, the API will return all the copy operations, waiting, in progress or done (progress percentage, current transfer size, task state, etc.).
+
+### Step 4: Accessing the copy from vSphere
 
 In your [vSphere interface](../login-vsphere-interface/), go to the `Storage`{.action} view.
 

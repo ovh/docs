@@ -66,7 +66,21 @@ Renseignez les variables :
 
 La réplication des données peut durer plusieurs heures. Lorsque celle-ci est terminée, vous recevrez un e-mail confirmant la réussite de la copie.
 
-### Etape 3 : accéder à la copie depuis vSphere
+### Etape 3 : connaître l’état d’avancement de la copie
+
+Pour accéder à l’état d’avancement de la copie des datastores, effectuez l’appel suivant :
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/copyFilerStatus
+
+Renseignez les variables :
+- serviceName : le nom du PCC de destination (ex: pcc-192-0-2-50).
+- datacenterId : l’ID du datacentre de destination (ex : 1515).
+
+Si une copie a été demandée, l’API vous retournera l’ensemble des opérations de copies, en attente, en cours ou terminées (pourcentage de progression, taille des données transférées, état de la tâche, etc.).
+
+### Etape 4 : accéder à la copie depuis vSphere
 
 Dans votre [interface vSphere](../connexion-interface-vsphere/), placez-vous dans la vue `Stockage`{.action}.
 
