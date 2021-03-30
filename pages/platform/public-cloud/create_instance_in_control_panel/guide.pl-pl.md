@@ -6,7 +6,7 @@ section: 'Pierwsze kroki'
 order: 3
 ---
 
-**Ostatnia aktualizacja: 3 grudnia 2019**
+**Ostatnia aktualizacja: 30/03/2021**
 
 ## Wprowadzenie
 
@@ -51,7 +51,6 @@ Poniższa tabela zawiera krótkie wyjaśnienie różnic między typami instancji
 Początkowo obowiązuje ograniczenie do 20 instancji, 20 rdzeni wirtualnych i 40 GB pamięci RAM na każdy projekt. Wniosek o zwiększenie limitu zasobów można złożyć przez [przesłanie zgłoszenia](https://www.ovh.com/manager/dedicated/index.html#/ticket){.external} do naszego zespołu obsługi klienta.
 >
 
-
 W menu wybierz region, w którym ma się znajdować instancja Public Cloud. Trzecia opcja służy do wyboru systemu operacyjnego.
 
 > [!primary]
@@ -76,7 +75,6 @@ Na koniec należy wybrać model rozliczeniowy — miesięczny lub godzinowy.
 >
 >W przypadku modelu godzinowego opłaty są naliczane przez cały okres istnienia instancji. Nie ma znaczenia, czy instancja jest używana, czy nie.
 >
-
 
 Po potwierdzeniu prawidłowości wszystkich wprowadzonych informacji kliknij przycisk `Utwórz instancję`{.action}, aby ukończyć tworzenie nowej instancji. Udostępnienie instancji może zająć kilka minut.
 

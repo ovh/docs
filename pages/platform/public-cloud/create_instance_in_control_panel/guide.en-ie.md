@@ -20,7 +20,7 @@ You can use the OVHcloud [Public Cloud](https://www.ovhcloud.com/en-ie/public-cl
 * a [Public Cloud](https://www.ovhcloud.com/en-ie/public-cloud/){.external} project created in your OVHcloud account
 * an SSH key created in the OVHcloud Control Panel
 
-### Deploy a Public Cloud Instance.
+### Deploy a Public Cloud Instance
 
 In order to deploy a public cloud instance, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Click `Public Cloud`{.action} in the top-left corner of the page. Then, on the following screen, click the arrow button next to your default project name in the top-left corner of the screen. Now select the project on which you would like to create a new instance.
 
