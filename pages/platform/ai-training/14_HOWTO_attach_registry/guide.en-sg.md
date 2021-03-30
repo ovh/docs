@@ -50,7 +50,7 @@ The default shared registry remains available even with a private registry attac
 ## Going Further
 
 -   You can check the official documentation about [how to submit a **job**](../submit-job)
--   You can check out the documentation about the [`ovhai` CLI](../usage-client)
+-   You can check out the documentation about the [`ovhai` CLI](../overview-cli)
 -   You can check out the documentation about [how to setup the `ovhai` CLI](../install-client)
 
 ## Feedback
