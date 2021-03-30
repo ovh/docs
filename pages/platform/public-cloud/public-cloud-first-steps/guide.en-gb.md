@@ -166,6 +166,7 @@ First, choose a server template according to your needs. The assistant will prov
 | RAM   | ✓     | Databases, analysis, and in-memory calculations    |
 | GPU     | ✓       | Massively parallel processing power for specialised applications (rendering, big data, deep learning, etc.)       |
 | Sandbox    | -       | Hosted on shared resources for testing and development environments      |
+| Discovery    | -       | Hosted on shared resources for testing and development environments      |
 | IOPS   | ✓     | Optimised for disk data transfer    |
 
 
