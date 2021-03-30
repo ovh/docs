@@ -6,7 +6,7 @@ section: 'Object Storage'
 legacy_guide_number: g1868
 ---
 
-**Ostatnia aktualizacja dnia 2020-01-08**
+**Ostatnia aktualizacja dnia 2021-03-30**
 
 ## 
 Object Storage to usługa przestrzeni dyskowej zarządzana z poziomu API OpenStack.
@@ -34,19 +34,15 @@ Przewodnik ten wyjaśnia, jak skonfigurować oprogramowanie Cyberduck, aby móc 
 
 
 
-![objectstorage-cyberduck](images/v3.0.png){.thumbnail}
-W formularzu należy podać różne informacje:
+![objectstorage-cyberduck](images/Cyberduck.png){.thumbnail}
 
+W formularzu należy podać następujące informacje:
 - Server: auth.cloud.ovh.net (serwer uwierzytelniania)
-- Tenant ID:Access Key: Jest to ID_Projektu:ID_Utilisateur_Horizon
+- Project:Domain:Username : OS_TENANT_NAME:default:OS_USERNAME
 - Secret Key: hasło użytkownika Horizon
-- More Options / Path: v3.0
-
 
 
 - Zaloguj się.
-
-
 
 ![objectstorage-cyberduck](images/img_2756.jpg){.thumbnail}
 
