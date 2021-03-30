@@ -49,7 +49,7 @@ Enter the variables:
 
 > [!warning]
 >
-> The destination PCC must be located in a zone different from `sbg1a`.
+> The destination PCC must be located in one of the following zones: RBX (Roubaix), LIM (Frankfurt) or ERI (London).
 >
 
 Once the `filerId` has been identified, use the following call to copy the datastore to the destination PCC:
@@ -73,6 +73,8 @@ In order to follow the datastore copy status, use the following API call:
 > [!api]
 >
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/copyFilerStatus
+
+Enter the variables:
 
 - serviceName: the name of the destination PCC (e.g. pcc-192-0-2-50).
 - datacenterId: the ID of the destination datacentre (e.g. 1515).
