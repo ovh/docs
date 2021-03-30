@@ -32,16 +32,19 @@ Po wybraniu właściwego projektu kliknij przycisk `Instancje`{.action} w sekcji
 
 Następnie kliknij przycisk `Utwórz instancję`{.action}. Zostanie wyświetlone następujące menu, w którym można wybrać instancję do utworzenia.
 
-![create_instance1](images/create_instance1.png){.thumbnail}
+![create_instance1](images/create_instance1-2021.png){.thumbnail}
 
 Poniższa tabela zawiera krótkie wyjaśnienie różnic między typami instancji:
 
-| Typ serwera | Gwarantowane zasoby | Wdrożenie |
-| :---         |     :---:      |          ---: |
-| Ogólne zastosowanie   | ✓     | Serwery programistyczne, aplikacje internetowe i biznesowe    |
-| CPU     | ✓       | Kodowanie wideo lub inne zastosowania wymagające dużej wydajności obliczeniowej      |
+| Typ serwera | Gwarantowane zasoby | Uwagi dotyczące zastosowana |
+| :---         |     :---:      |          :--- |
+| General Purpose   | ✓     | Serwery programistyczne, aplikacje internetowe i biznesowe    |
+| CPU (procesor)     | ✓       | Kodowanie wideo lub inne zastosowania wymagające dużej wydajności obliczeniowej      |
 | RAM   | ✓     | Bazy danych, analiza i obliczenia w pamięci    |
-| Zasoby udostępnione    | -       | Środowiska testowe i deweloperskie      |
+| GPU     | ✓       | Masowe przetwarzanie równoległe na potrzeby aplikacji specjalistycznych (renderowanie, Big Data, zaawansowane uczenie maszynowe itd.)       |
+| Sandbox    | -       | Hostowane we współdzielonych zasobach na potrzeby środowisk testowych i programistycznych      |
+| Discovery    | -       | Hostowane we współdzielonych zasobach na potrzeby środowisk testowych i programistycznych      |
+| IOPS   | ✓     | Zoptymalizowane pod kątem transferu danych na dyskach    |
 
 > [!primary]
 >
