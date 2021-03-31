@@ -66,13 +66,13 @@ But the horizontal pod autoscaling has a hard limit, the number of available nod
 
 In order to go further with the scalability, you need to have a cluster autoscaler. The Cluster autoscaler adds or removes nodes in a cluster based on all pods' requested resources, without human intervention.
 
-The horizontal pod autoscaler and the cluster autoscaler work better when deployed together in the cluster, because the horizontal pod autoscaler focus on managing pods to allow them match the demand while the autoscaler manages the number of nodes in the cluster to be sure that the horizontal pod autoscaler can do its role.
+The horizontal pod autoscaler and the cluster autoscaler work better when deployed together in the cluster, because the horizontal pod autoscaler focuses on managing pods to allow them to match the demand while the autoscaler manages the number of nodes in the cluster to be sure that the horizontal pod autoscaler can do its role.
 
 The cluster and horizontal pod autoscalers can work together, and are often both deployed in a cluster. When combined, the horizontal pod autoscaler is focused on running the number of pods required to meet application demand. The cluster autoscaler is focused on running the number of nodes required to support the scheduled pods.
 
 #### Scaling up and down
 
-To scale-up a cluster, the cluster autoscale watches the load on your nodes and detects when your cluster has resource constraints (e.g. it cannot schedule nodes because of lack of resources). When such a situation arise, the cluster autoscaler add nodes to your [node pools](../managing-nodes/) to match the demand. 
+To scale-up a cluster, the cluster autoscale watches the load on your nodes and detects when your cluster has resource constraints (e.g. it cannot schedule nodes because of lack of resources). When such a situation arise, the cluster autoscaler adds nodes to your [node pools](../managing-nodes/) to match the demand. 
 
 The cluster autoscaler also works the other way around, monitoring underutilized nodes and decreasing the number of nodes, helping to reduce your costs.
 
@@ -84,7 +84,7 @@ The cluster autoscaler also works the other way around, monitoring underutilized
 > 
 > For more information on this factors disrupting the scaling down of the cluster, please see the [What types of pods can prevent CA from removing a node?](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md#what-types-of-pods-can-prevent-ca-from-removing-a-node) page.
 
-In order to scale up and down the cluster, the autoscaler uses user-defined parameters for things like limits (*what are the upper and lower number of nodes limits in your cluster?*), nodes resource thresholds (*at what load level we add or remove a node?*) or time intervals (*how often we scale the cluster?*). These parameters are described in the [Configuring the cluster autoscaler](../configuring-cluster-autoscaler/) guide.
+In order to scale up and down the cluster, the autoscaler uses user-defined parameters for things like limits (*what are the upper and lower number of nodes limits in your cluster?*), nodes resource thresholds (*at what load level should it add or remove a node?*) or time intervals (*how often should it scale the cluster?*). These parameters are described in the [Configuring the cluster autoscaler](../configuring-cluster-autoscaler/) guide.
 
 ### Enabling the autoscaler
 
@@ -92,11 +92,11 @@ In order to scale up and down the cluster, the autoscaler uses user-defined para
 
 The easiest way to enable the autoscaler is using the Kubernetes API, for example using `kubectl`.
 
-As explained in the [How nodes and node pools work](../managing-nodes/) guides, in your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (group of nodes sharing the same configuration).
+As explained in the [How nodes and node pools work](../managing-nodes/) guide, in your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (groups of nodes sharing the same configuration).
 
-Autoscale is configured in a node pool basis, i.e. you don't enable autoscaling on a full cluster, you enable it for one or or more of your node pools. Let's see how you can do it.
+Autoscale is configured on a node pool basis, i.e. you don't enable autoscaling on a full cluster, you enable it for one or more of your node pools.
 
-If you activate autoscaler on several node pools, each of which could have different type of instance and min and max limits pon node number.
+You can activate the autoscaler on several node pools, each of which can have a different type of instance as well as different min and max nodes number limits.
 
 When you create your cluster, you can bootstrap a default node pool in it, and you can add others in the Public Cloud section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) or directly [using the Kubernetes API](../managing-nodes/). 
 
@@ -106,11 +106,11 @@ To list node pools, you can use:
 kubectl get nodepools
 ```
 
-In my case I have one node pool in my cluster, called `my-node-pool`, with 2 B2-7 nodes:
+In my case I have one node pool in my cluster, called `nodepool-b2-7`, with 3 B2-7 nodes:
 
 <pre class="console"><code>$ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   [...]
-nodepool-b2-7   b2-7     false         false            false           3         3         0            3           [...]
+nodepool-b2-7   b2-7     false         false            false           3         3         3            3           [...]
 </code></pre>
 
 As you can see, the `AUTO SCALED` field is set to `false`.  Let's see why by looking at the node pool description.
@@ -118,7 +118,7 @@ As you can see, the `AUTO SCALED` field is set to `false`.  Let's see why by loo
 You can then get the description of the node pool in YAML format using:
 
 ```bash
-kubectl get nodepools &lt;your_nodepool_name> -o yaml
+kubectl get nodepools <your_nodepool_name> -o yaml
 ```
 
 For my example cluster:
@@ -149,31 +149,30 @@ status:
     [...]
   currentNodes: 3
   observedGeneration: 2
-  upToDateNodes: 00            3        
+  upToDateNodes: 3
 </code></pre>
 
-And in the `spec` section you can see that the `autoscale` parameter is set to `false`. In order to enable the autoscaler, you need to patch the node pool to set this field to `true`.
+In the `spec` section you can see that the `autoscale` parameter is set to `false`. In order to enable the autoscaler, you need to patch the node pool to set this field to `true`.
 
 ```bash
-kubectl patch nodepool &lt;your_nodepool_name> --type="merge" --patch='{"spec": {"autoscale": true}}'
+kubectl patch nodepool <your_nodepool_name> --type="merge" --patch='{"spec": {"autoscale": true}}'
 ```
 
 As you can see in my example, patching the node pool definition enables the autoscaler:
-
 
 <pre class="console"><code>$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"autoscale": true}}'
 nodepool.kube.cloud.ovh.com/nodepool-b2-7 patched
 
 $ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   [...]
-nodepool-b2-7   b2-7     true          false            false           3         3         0            3           [...]   
+nodepool-b2-7   b2-7     true          false            false           3         3         3            3           [...]   
 </code></pre>
 
 > [!primary]
 >
 > During this beta phase, the configuration options for the cluster autoscaler are immutable, set to sensible by-default values. We plan to progressively allow our users to modify some of these parameters to better tailor them to their specific use cases.
 
-When the autoscaler is enabled in a node pool, is uses a by default configuration. To better understand the by-default configuration and its parameters, see the [Configuring the cluster autoscaler](../configuring-cluster-autoscaler/) guide.
+When the autoscaler is enabled on a node pool, is uses a by default configuration. To better understand the by-default configuration and its parameters, see the [Configuring the cluster autoscaler](../configuring-cluster-autoscaler/) guide.
 
 ## Go further
 
