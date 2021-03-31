@@ -5,7 +5,7 @@ section: Development
 order: 5
 ---
 
-**Last updated 4th March 2021**
+**Last updated 31st March 2021**
 
 
 ## Objective  
@@ -20,11 +20,11 @@ First, assemble your Git repository as appropriate, on your master branch.  Be s
 
 For some applications, such as Drupal you will need to dump configuration to files before proceeding.  You will also need to provide appropriate configuration to read the credentials for your services at runtime and integrate them into your application's configuration.  The details of that integration will vary between systems.  Be sure to see the appropriate project templates for our recommended configuration.
 
-* [Go Templates](/languages/go#project-templates)
-* [Java Templates](../languages-java#project-templates)
+* [Go Templates](../languages-go#project-templates)
+
 * [Node.js Templates](../languages-nodejs#project-templates)
 * [PHP Templates](../languages-php#project-templates)
-* [Python Templates](/languages/python#project-templates)
+* [Python Templates](../languages-python#project-templates)
 
 
 In the management console, click `+ Add project` to create a new Web PaaS project. When asked to select a template pick "Create a blank project".
@@ -44,7 +44,7 @@ When you push, a new environment will be created using your code and the provide
 
 ## Import your database
 
-You will need to have a dump or backup of the database you wish to start from.  The process is essentially the same for each type of persistent data service.  See the [MySQL](../configuration-services/mysql), [PostgreSQL](../configuration-services/postgresql), or [MongoDB](../configuration-services/mongodb) documentation as appropriate.
+You will need to have a dump or backup of the database you wish to start from.  The process is essentially the same for each type of persistent data service.  See the [MySQL](../configuration-services/mysql), [PostgreSQL](../configuration-services/postgresql) documentation as appropriate.
 
 ## Import your files
 

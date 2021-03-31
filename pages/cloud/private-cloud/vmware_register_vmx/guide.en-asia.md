@@ -27,7 +27,7 @@ In your [vSphere interface](../login-vsphere-interface/), go to the `Storage`{.a
 
 Select a datastore from the list.
 
-![select datastore](register-vmx-02.png){.thumbnail}
+![select datastore](images/register-vmx-02.png){.thumbnail}
 
 In the folders for this datastore, select the `.vmx` file and click `Register VM`{.action}.
 
