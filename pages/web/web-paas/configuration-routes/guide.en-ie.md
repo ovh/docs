@@ -5,7 +5,7 @@ section: Configuration
 order: 3
 ---
 
-**Last updated 12th February 2021**
+**Last updated 31st March 2021**
 
 
 ## Objective  
@@ -117,8 +117,8 @@ It's also entirely possible to use an absolute URL in the route. In that case, i
 In this case, there are two application containers `app` and `blog`.  In a production environment, they would be accessible at `www.example.com` and `blog.example.com`, respectively.  On a development branch named `sprint`, however, they would be accessible at URLs something like:
 
 ```bash
-https://www.example.com.sprint-7onpvba-tvh56f275i3um.eu-2.platformsh.site/
-https://blog.example.com.sprint-7onpvba-tvh56f275i3um.eu-2.platformsh.site/
+https://www.example.com.sprint-7onpvba-tvh56f275i3um.eu-2.webpaas.ovh.net/
+https://blog.example.com.sprint-7onpvba-tvh56f275i3um.eu-2.webpaas.ovh.net/
 ```
 
 If your project involves only a single apex domain with one app or multiple apps under subdomains, it's generally best to use the `{default}` placeholder.  If you are running [multiple applications](../configuration-app/multi-app) on different apex domains then you will need to use a static domain for all but one of them.
@@ -148,7 +148,7 @@ This example defines two routes, on two separate subdomains, pointing at two sep
 
 ```json
 {
-    "https://site1.test-t6dnbai-abcdef1234567.us-2.platformsh.site/": {
+    "https://site1.test-t6dnbai-abcdef1234567.us-2.webpaas.ovh.net/": {
         "primary": 1,
         "id": null,
         "type": "upstream",
@@ -156,7 +156,7 @@ This example defines two routes, on two separate subdomains, pointing at two sep
         "original_url": "https://site1.{default}/"
         // ...
     },
-    "https://site2.test-t6dnbai-abcdef1234567.us-2.platformsh.site/": {
+    "https://site2.test-t6dnbai-abcdef1234567.us-2.webpaas.ovh.net/": {
         "primary": null,
         "id": "the-second",
         "type": "upstream",
@@ -164,15 +164,15 @@ This example defines two routes, on two separate subdomains, pointing at two sep
         "original_url": "https://site2.{default}/"
         // ...
     },
-    "http://site1.test-t6dnbai-abcdef1234567.us-2.platformsh.site/": {
-        "to": "https://site1.test-t6dnbai-abcdef1234567.us-2.platformsh.site/",
+    "http://site1.test-t6dnbai-abcdef1234567.us-2.webpaas.ovh.net/": {
+        "to": "https://site1.test-t6dnbai-abcdef1234567.us-2.webpaas.ovh.net/",
         "original_url": "http://site1.{default}/",
         "type": "redirect",
         "primary": null,
         "id": null
     },
-    "http://site2.test-t6dnbai-abcdef1234567.us-2.platformsh.site/": {
-        "to": "https://site2.test-t6dnbai-abcdef1234567.us-2.platformsh.site/",
+    "http://site2.test-t6dnbai-abcdef1234567.us-2.webpaas.ovh.net/": {
+        "to": "https://site2.test-t6dnbai-abcdef1234567.us-2.webpaas.ovh.net/",
         "original_url": "http://site2.{default}/",
         "type": "redirect",
         "primary": null,
@@ -201,7 +201,7 @@ Route attributes are an arbitrary key/value pair attached to a route.  This meta
 Attributes will appear in the routes data like so:
 
 ```json
-"https://site1.test-t6dnbai-abcdef1234567.us-2.platformsh.site/": {
+"https://site1.test-t6dnbai-abcdef1234567.us-2.webpaas.ovh.net/": {
     "primary": 1,
     "id": null,
     "type": "upstream",

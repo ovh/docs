@@ -10,12 +10,13 @@ hidden: true
 
 ## Objective
 
-Following the incident that occurred in the SBG data centre, you can copy the datastores from a PCC concerned by the incident to a destination PCC.
+Following the incident that occurred in the SBG data centre, you can copy the datastores from a PCC in SBG3 to a destination PCC.
 
 **Find out how to access a datastore copy of one PCC from another PCC using the OVHcloud API.**
 
 ## Requirements
 
+- datastores in SBG3
 - access to the [OVHcloud API](https://api.ovh.com/)
 - access to your [vSphere interface](../login-vsphere-interface/)
 
@@ -49,7 +50,7 @@ Enter the variables:
 
 > [!warning]
 >
-> The destination PCC must be located in a zone different from `sbg1a`.
+> The destination PCC must be located in one of the following zones: RBX (Roubaix), LIM (Frankfurt) or ERI (London).
 >
 
 Once the `filerId` has been identified, use the following call to copy the datastore to the destination PCC:
@@ -66,7 +67,22 @@ Enter the variables:
 
 Data replication can take several hours. When the replication is complete, you will receive an email confirming that your copy has been successful.
 
-### Step 3: Accessing the copy from vSphere
+### Step 3: Knowing the status of the copy
+
+In order to follow the datastore copy status, use the following API call:
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/copyFilerStatus
+
+Enter the variables:
+
+- serviceName: the name of the destination PCC (e.g. pcc-192-0-2-50).
+- datacenterId: the ID of the destination datacentre (e.g. 1515).
+
+If a copy has been asked for, the API will return all the copy operations, waiting, in progress or done (progress percentage, current transfer size, task state, etc.).
+
+### Step 4: Accessing the copy from vSphere
 
 In your [vSphere interface](../login-vsphere-interface/), go to the `Storage`{.action} view.
 

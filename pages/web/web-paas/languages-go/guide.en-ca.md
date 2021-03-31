@@ -5,7 +5,7 @@ section: Languages
 order: 4
 ---
 
-**Last updated 26th March 2021**
+**Last updated 31st March 2021**
 
 
 ## Objective  
@@ -100,7 +100,7 @@ web:
         /:
             # Route all requests to the Go app, unconditionally.
             # If you want some files served directly by the web server without hitting Go, see
-            # https://docs.platform.sh/configuration/app/web.html
+            # https://docs.ovh.com/gb/en/web-paas/configuration-app/web/
             allow: false
             passthru: true
 
