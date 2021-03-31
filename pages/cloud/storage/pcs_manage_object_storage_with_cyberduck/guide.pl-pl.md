@@ -31,12 +31,19 @@ Przewodnik ten wyjaśnia, jak skonfigurować oprogramowanie Cyberduck, aby móc 
 
 ![objectstorage-cyberduck](images/Cyberduck.png){.thumbnail}
 
+
 W formularzu należy podać różne informacje:
 
+![objectstorage-cyberduck](images/Cyberduck.png){.thumbnail}
+
+
+W formularzu należy podać następujące informacje:
 - Server: auth.cloud.ovh.net (serwer uwierzytelniania)
 - Project:Domain:Username : OS_TENANT_NAME:default:OS_USERNAME
 - Secret Key: hasło użytkownika Horizon
+
 - More Options / Path: v3.0
+
 
 - Zaloguj się.
 

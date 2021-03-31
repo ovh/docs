@@ -34,7 +34,7 @@ OVHcloud Web PaaS powered by Platform.sh enables web developers to manage, devel
 
 ### Subscribing to the service
 
-Log in to your [OVHcloud Control Panel](OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and switch to `Web Cloud`{.action} in the top navigation bar.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and switch to `Web Cloud`{.action} in the top navigation bar.
 
 Click on `Order`{.action} in the services bar on the left-hand side, then click on `Web PaaS`{.action}.
 
@@ -62,8 +62,7 @@ Give your project a name and choose a region near you in this step.
 
 #### Step 4: Configure your project (restricted for beta)
 
-In this step you can choose options for the project, according to the plan you have selected. Please refer to our [product page](https://www.ovhcloud.com/en-ie/web-paas/) for details about the available
-**Storage**, **Environments** and **User licenses** for each plan. 
+In this step you can choose options for the project, according to the plan you have selected. Please refer to our [product page](https://www.ovhcloud.com/en-ie/web-paas/) for details about the available **Storage**, **Environments** and **User licenses** for each plan. 
 
 ![configure details](images/creation_manager05.png){.thumbnail}
 
@@ -94,7 +93,7 @@ You will be redirected to the `OVERVIEW` tab of the Web PaaS Management Console.
 
 ### Managing the service in the Control Panel (restricted for beta)
 
-Log in to your [OVHcloud Control Panel](OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and switch to `Web Cloud`{.action} in the top navigation bar. Click on `Web PaaS`{.action} in the left-hand sidebar an select your project.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and switch to `Web Cloud`{.action} in the top navigation bar. Click on `Web PaaS`{.action} in the left-hand sidebar an select your project.
 
 The `General information` page displays the basic configuration options of the project. Use the **Management interface** section for the following actions:
 
