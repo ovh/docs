@@ -10,12 +10,13 @@ hidden: true
 
 ## Objectif
 
-Suite à l'incident survenu sur le datacentre SBG, vous pouvez migrer les datastores d'un PCC concerné par l'incident vers un PCC de destination.
+Suite à l'incident survenu sur le datacentre SBG, vous pouvez migrer les datastores d'un PCC situé à SBG3 vers un PCC de destination.
 
 **Découvrez comment acceder à la copie d'un datastore d'un PCC depuis un autre PCC via les API OVHcloud**
 
 ## Prérequis
 
+- Un ou plusieurs datastores à SBG3
 - Être connecté aux [API OVHcloud](https://api.ovh.com/)
 - Être connecté à votre [interface vSphere](../connexion-interface-vsphere/).
 
@@ -49,7 +50,7 @@ Renseignez les variables :
 
 > [!warning]
 >
-> Le PCC de destination doit être situé dans une zone différente de sbg1a.
+> Le PCC de destination doit être situé dans l'une des zones suivantes : RBX (Roubaix), LIM (Francfort) ou ERI (Londres).
 >
 
 Une fois le filerId identifié, utilisez l'appel suivant pour copier le datastore sur le PCC de destination :
@@ -75,6 +76,7 @@ Pour accéder à l’état d’avancement de la copie des datastores, effectuez 
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/copyFilerStatus
 
 Renseignez les variables :
+
 - serviceName : le nom du PCC de destination (ex: pcc-192-0-2-50).
 - datacenterId : l’ID du datacentre de destination (ex : 1515).
 
