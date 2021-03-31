@@ -130,7 +130,7 @@ Jeśli chcesz uzyskać pomoc dotyczącą funkcjonalności Twojej strony, zachęc
 
 |CMS|Oficjalna dokumentacja|
 |---|---|
-|WordPress|[Pierwsze kroki z CMS WordPress](https://codex.wordpress.org/First_Steps_With_WordPress){.external}|
+|WordPress|[Pierwsze kroki z CMS WordPress](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}|
 |PrestaShop|[Jak zacząć z PrestaShop](http://doc.prestashop.com/display/PS17/Getting+Started){.external}|
 |Joomla!|[Jak zaczać z Joomla!](https://www.joomla.org/about-joomla/getting-started.html){.external}|
 |Drupal|[Zrozumieć Drupala](https://www.drupal.org/docs/7/understanding-drupal/overview){.external}|
