@@ -4,7 +4,7 @@ slug: faq
 section: Symfony
 ---
 
-**Last updated 26th March 2021**
+**Last updated 31st March 2021**
 
 
 ## How do I store my session files?

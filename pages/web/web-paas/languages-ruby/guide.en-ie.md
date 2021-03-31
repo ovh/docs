@@ -5,7 +5,7 @@ section: Languages
 order: 4
 ---
 
-**Last updated 26th February 2021**
+**Last updated 31st March 2021**
 
 
 ## Objective  
@@ -33,12 +33,14 @@ Configure the `.platform.app.yaml` file with a few key settings as listed below,
 1\. Specify the language of your application (available versions are listed above):
 
 
+
 ```yaml   
 type: 'ruby:2.7'
 ```  
 
 
 2\. Build your application with the build hook.
+
 
     Assuming you have your  dependencies stored in the `Gemfile` at the root of your application folder to execute build steps:
 
@@ -51,6 +53,7 @@ hooks:
     These are installed as your project dependencies in your environment. You can also use the `dependencies` key to install global dependencies theses can be Ruby, Python, NodeJS or PHP libraries.
 
 3\. Configure the command you use to start serving your application (this must be a foreground-running process) under the `web` section, e.g.:
+
 
 ```yaml
 web:
@@ -79,6 +82,7 @@ run Rails.application
 
 4\. Define the web locations your application is using:
 
+
 ```yaml
 web:
    locations:
@@ -92,6 +96,7 @@ web:
     This configuration asks our web server to handle HTTP requests at "/static" to serve static files stored in `/app/static/` folder while everything else are forwarded to your application server.
 
 5\. Create any Read/Write mounts. The root file system is read only. You must explicitly describe writable mounts.
+
 
 ```yaml
 mounts:
@@ -108,6 +113,7 @@ mounts:
     You can define other read/write mounts (your application code itself being deployed to a read-only file system). Note that the file system is persistent, and when you backup your cluster these mounts get backed-up too.
 
 6\. Then, setup the routes to your application in `.platform/routes.yaml`.
+
 
 ```yaml
 "https://{default}/":
@@ -156,6 +162,7 @@ mounts:
 ## Configuring services
 
 7\. In this example we assue in the `relationships` key that we have a mysql instance. To configure it we need to create a `.platform/services.yaml` with for eample:
+
 
 ```yaml
 database:

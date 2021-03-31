@@ -4,7 +4,7 @@ slug: web
 section: App
 ---
 
-**Last updated 26th March 2021**
+**Last updated 31st March 2021**
 
 
 
@@ -218,7 +218,9 @@ Note that the `headers` directive applies only to static content.  Headers for r
 To allow cross origin requests, the `Access-Control-Allow-Origin` header can be added to responses. However, when this header is configured with the value of `*`, the response headers will be modified in the following ways:
 
 1\. The value of the `Access-Control-Allow-Origin` header will be set to the value of the `Origin` request header.
+
 2\. The `Vary` header will be included, and its value will be set to `Origin`.
+
 
 This concept is explained in more detail in the [CORS section of the Mozilla Developer Network documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS#access-control-allow-origin):
 

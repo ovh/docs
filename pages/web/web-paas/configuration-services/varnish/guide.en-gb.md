@@ -4,7 +4,7 @@ slug: varnish
 section: Services
 ---
 
-**Last updated 26th March 2021**
+**Last updated 31st March 2021**
 
 
 
@@ -59,8 +59,11 @@ The configuration block is required, and must reference a VCL file (here `config
 The VCL file you provide has three specific requirements over and above the VCL syntax itself.
 
 1\. You MUST NOT define a `vcl_init()` function.  Web PaaS will auto-generate that function based on the relationships you define.  In particular, it will define a "backend" for each relationship defined in `services.yaml`, named the same as the relationship.
+
 2\. You MUST NOT include the preamble at the beginning of the file, specifying the VCL version.  That will be auto-generated as well. You CAN add imports, but not `std` and `directors`, as they're imported already.
+
 3\. You MUST specify the backend to use in `vcl_recv()`.  If you have a single app container/relationship/backend, it's just a single line.  If you want to split requests to different relationships/backends based on some rule then the logic for doing so should be incorporated into the `vcl_recv()` function.
+
 
 The absolute bare minimum VCL file is:
 
@@ -169,5 +172,8 @@ Note that because of the circular relationship issue noted above this cannot be 
 
 To access the Varnish endpoint:
 - Connect to your cluster [using ssh](../../development-ssh) or through the CLI `webpaas ssh -p <project id>`,
+
 - Display the [relationships array](../../configuration-app/relationships) with `echo $PLATFORM_RELATIONSHIPS | base64 -d | jq '.'`,
+
 - Query Varnish with `curl varnishstats.internal:8081/stats`, for example, to access the statistics directly. Be sure to update the request according to the name of the relationship.
+

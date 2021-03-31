@@ -4,7 +4,7 @@ slug: redis
 section: Php
 ---
 
-**Last updated 24th March 2021**
+**Last updated 31st March 2021**
 
 
 
@@ -21,6 +21,7 @@ Do *not* use this approach unless you really need to.  Using the provided PhpRed
 ## Using the Redis builder script
 
 1\. Copy the following script into a file named `install-redis.sh` in your application root (as a sibling of your `.platform.app.yaml` file).
+
 
 ```bash
 run() {
@@ -95,6 +96,7 @@ run "$1"
 
 2\. Invoke that script from your build hook, specifying a version.  Any tagged version of the library is acceptable:
 
+
 ```yaml
 hooks:
     build: |
@@ -104,14 +106,20 @@ hooks:
 
 3\. If you ever wish to change the version of PhpRedis you are using, update the build hook and clear the build cache: `webpaas project:clear-build-cache`.  The new version will *not* be used until you clear the build cache.
 
+
 There is no need to declare the extension in the `runtime` block.  That is only for pre-built extensions.
 
 ## What the script does
 
 1\. Downloads the PhpRedis source code.
+
 2\. Checks out the version specified in the build hook.
+
 3\. Compiles the extension.
+
 4\. Copies the resulting `redis.so` file to your application root.
+
 5\. Adds a line to the `php.ini` file in your application root to enable the extension, creating the file if necessary.
+
 
 If the script does not find a `$PLATFORM_CACHE_DIR` directory defined, it exits silently.  That means if you run the build hook locally it will have no effect.

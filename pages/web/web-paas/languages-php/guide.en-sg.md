@@ -5,7 +5,7 @@ section: Languages
 order: 4
 ---
 
-**Last updated 26th March 2021**
+**Last updated 31st March 2021**
 
 
 ## Supported versions
@@ -150,6 +150,7 @@ There are a few steps to leveraging FFI:
 
 1\. Enable the FFI extension in `.platform.app.yaml`:
 
+
 ```yaml
 runtime:
     extensions:
@@ -158,9 +159,12 @@ runtime:
 
 2\. Specify a [preload file](#opcache-preloading) in which you can call `FFI::load()`.  Using `FFI::load()` in preload will be considerably faster than loading the linked library on each request or script run.
 
+
 3\. Ensure the library is available locally, but not in a web-accessible directory.  `.so` files may included in your repository, downloaded i your build hook, or compiled in your build hook.  If compiling C code, `gcc` is available by default.  If compiling Rust code, you can download the [Rust compiler in the build hook](https://doc.rust-lang.org/stable/book/ch01-01-installation.html).
 
+
 4\. For running FFI from the command line, you will need to enable the opcache for command line scripts in addition to the preloader.  The standard pattern for the command would be `php -d opcache.preload="your-preload-script.php" -d opcache.enable_cli=true your-cli-script.php`.
+
 
 A working [FFI example](https://github.com/platformsh-examples/php-ffi) is available online for both C and Rust.
 
