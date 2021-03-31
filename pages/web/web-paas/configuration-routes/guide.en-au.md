@@ -10,10 +10,10 @@ order: 3
 
 ## Objective  
 
-$partner_full allows you to define the routes used in your environments.
+Web PaaS allows you to define the routes used in your environments.
 
 
-A route describes how an incoming HTTP request is going to be processed by $partner_full. The routes are defined using the `.platform/routes.yaml` file in your Git repository.
+A route describes how an incoming HTTP request is going to be processed by Web PaaS. The routes are defined using the `.platform/routes.yaml` file in your Git repository.
 
 If you don't have one, use the commands below to create it:
 
@@ -28,10 +28,10 @@ $ touch .platform/routes.yaml
 
 The YAML file is composed of a list of routes and their configuration. A route can either be an absolute URL or a URL template that looks like: `http://www.{default}/` or `https://{default}/blog` where `{default}` will be substituted by the default fully qualified domain name configured in the project. So if your default domain is `example.com`, these routes will be resolved to `http://www.example.com/` and `https://example.com/blog` in the master environment.
 
-$partner_full will also generate a domain for every active development environment.  It will receive a domain name based on the region, project ID, branch name, and a per-environment random string. The domain name itself is not guaranteed stable, although the pattern is consistent.
+Web PaaS will also generate a domain for every active development environment.  It will receive a domain name based on the region, project ID, branch name, and a per-environment random string. The domain name itself is not guaranteed stable, although the pattern is consistent.
 
 > [!primary]  
-> $partner_full supports running multiple applications per environment. The `.platform/routes.yaml` file defines how to route requests to different applications.
+> Web PaaS supports running multiple applications per environment. The `.platform/routes.yaml` file defines how to route requests to different applications.
 > 
 
 ## Route configuration
@@ -50,7 +50,7 @@ Each route can be configured separately. It has the following properties
 ![Routes files](images/routes-configs.png "0.5")
 
 > [!primary]  
-> For the moment, the value of upstream is always in the form: `<application-name>:http`.  `<application-name>` is the `name` defined in `.platform.app.yaml` file.  `:php` is a deprecated application endpoint; use `:http` instead.  In the future, $partner_full will support multiple endpoints per application.
+> For the moment, the value of upstream is always in the form: `<application-name>:http`.  `<application-name>` is the `name` defined in `.platform.app.yaml` file.  `:php` is a deprecated application endpoint; use `:http` instead.  In the future, Web PaaS will support multiple endpoints per application.
 > 
 
 ## Route limits
@@ -188,7 +188,7 @@ That could be used, for example, for specifically allowing inbound requests.
 
 ## Route attributes
 
-Route attributes are an arbitrary key/value pair attached to a route.  This metadata does not have any impact on $partner_full, but will be available in the route definition structure in `$PLATFORM_ROUTES`.
+Route attributes are an arbitrary key/value pair attached to a route.  This metadata does not have any impact on Web PaaS, but will be available in the route definition structure in `$PLATFORM_ROUTES`.
 
 ```yaml
 "http://{default}/":
