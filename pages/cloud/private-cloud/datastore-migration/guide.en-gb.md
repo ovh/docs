@@ -10,12 +10,13 @@ hidden: true
 
 ## Objective
 
-Following the incident that occurred in the SBG data centre, you can copy the datastores from a PCC concerned by the incident to a destination PCC.
+Following the incident that occurred in the SBG data centre, you can copy the datastores from a PCC in SBG3 to a destination PCC.
 
 **Find out how to access a datastore copy of one PCC from another PCC using the OVHcloud API.**
 
 ## Requirements
 
+- datastores in SBG3
 - access to the [OVHcloud API](https://api.ovh.com/)
 - access to your [vSphere interface](../login-vsphere-interface/)
 
