@@ -31,7 +31,8 @@ Descargue [Cyberduck](https://cyberduck.io/) en su equipo.
 
 Conéctese a una cuenta de tipo «Swift (OpenStack Object Storage)».
 
-![objectstorage-cyberduck](images/v3.0.png){.thumbnail}
+![objectstorage-cyberduck](images/Cyberduck.png){.thumbnail}
+
 Cumplimente el formulario:
 
 - Servidor: El servidor de autenticación auth.cloud.ovh.net
