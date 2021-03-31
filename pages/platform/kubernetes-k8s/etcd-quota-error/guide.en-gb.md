@@ -56,13 +56,7 @@ kubectl scale deployment --replicas 0 cert-manager
 * flush all useless certificate request
 
 ```bash
-kubectl get 
-
-// TODO a fixer
-
-kubectl get certificates --all-namespaces -o json \
-    | jq -r '.items[] | select(.status.phase == "Pending").metadata.namespace' \
-    | parallel kubectl -n '{}' delete po -l 'component=kube-controller-manager'
+kubectl delete certificaterequests --all
 ```
 
 * Update cert-manager
@@ -87,3 +81,5 @@ ingress.networking.k8s.io
 ingress.extensions
 
 If that still  does not cover your case, you can use a tool like [ketall](https://github.com/corneliusweig/ketall) to easily list and count resources in your cluster.
+
+---
