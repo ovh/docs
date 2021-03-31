@@ -4,7 +4,7 @@ slug: cache
 section: Routes
 ---
 
-**Last updated 12th February 2021**
+**Last updated 31st March 2021**
 
 
 ## Objective  
@@ -224,13 +224,18 @@ https://{default}/foo/bar/:
 With this configuration, the following routes are cached:
 
 -   `https://{default}/`
+
 -   `https://{default}/foo/bar/`
+
 -   `https://{default}/foo/bar/baz/`
+
 
 And the following routes are **not** cached:
 
 -   `https://{default}/foo/`
+
 -   `https://{default}/foo/baz/`
+
 
 > [!primary]  
 > Regular expressions in routes are **not** supported.

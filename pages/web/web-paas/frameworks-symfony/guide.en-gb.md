@@ -5,7 +5,7 @@ section: Frameworks
 order: 6
 ---
 
-**Last updated 26th March 2021**
+**Last updated 31st March 2021**
 
 
 ## Prerequisites
@@ -15,6 +15,7 @@ order: 6
 Composer is a tool for dependency management in PHP. It allows you to declare the dependent libraries your project needs and it will install them in your project for you.
 
 - [Install Composer](https://getcomposer.org/download/)
+
 
 ## Configure your app
 

@@ -64,7 +64,9 @@ If you use Linux, you probably already have keys. The private key is usually in 
 
 Searching for a public key file:
 1\. Open up a command prompt.
+
 2\. Run the following commands:
+
 
 ```bash
 $ cd ~/.ssh
@@ -119,11 +121,17 @@ The key fingerprint is:
 ### Add the SSH key to your WebPaaS account
 
 1\.  First off, you'll need to copy your public key to the clipboard.
+
 2\.  Click on the user profile in [webpaas console](https://eu.console.webpaas.ovhcloud.com/) and click on Account.
+
 3\. In the left side-bar, select `SSH keys`.
+
 4\. Click the `Add a public key` button.
+
 5\.  Paste the key that you copied earlier into the 'Key' text box. You can also add a title if you like, otherwise it will be auto-generated.
+
 6\.  Click 'Save'.
+
 
 
 
@@ -176,19 +184,23 @@ Check that your key is properly added to your SSH agent. This is an authenticati
 
 1\.  Check your SSH agent. Run the command `ssh-add -l` in your terminal:
 
+
 ```bash
 $ ssh-add -l
 2048 12:b0:13:83:7f:56:18:9b:78:ca:54:90:a7:ff:12:69 /Users/nick/.ssh/id_rsa (RSA)
 ```
 
 2\.  Check that file name on the right (`.ssh/id_rsa` in the example above). Does it match your private key file?
+
 3\.  If you don't see your private key file, add your private key:
+
 
 ```bash
 $ ssh-add path-to-your-key
 ```
 
 4\.  Try again.
+
 
 ### Still having trouble?
 
@@ -211,6 +223,7 @@ $ git push origin master
 If your private key and public key both look OK but you don't have any luck logging in, print debugging information. These lines often give clues about what is going wrong.
 
 1\.  Run the SSH command with the `-v` option, like this:
+
 
 ```bash
 $ ssh -v [SSH-URL]

@@ -5,7 +5,7 @@ section: Languages
 order: 4
 ---
 
-**Last updated 24th March 2021**
+**Last updated 31st March 2021**
 
 
 ## Objective  
@@ -34,12 +34,14 @@ In this example, we use Gunicorn to run our WSGI application.  Configure the `.p
 1\. Specify the language of your application (available versions are listed above):
 
 
+
 ```yaml   
 type: 'python:3.9'
 ```  
 
 
 2\. Build your application with the build hook. Assuming you have your pip dependencies stored in `requirements.txt` and a `setup.py` at the root of your application folder to execute build steps:
+
 
 ```yaml
 hooks:
@@ -53,6 +55,7 @@ hooks:
 
 3\. Configure the command you use to start serving your application (this must be a foreground-running process) under the `web` section, e.g.:
 
+
 ```yaml
 web:
   commands:
@@ -62,6 +65,7 @@ web:
    This assumes the WSGI file is `project/wsgi.py` and the WSGI application object is named `application` in the WSGI file.
 
 4\. Define the web locations your application is using:
+
 
 ```yaml
 web:
@@ -78,6 +82,7 @@ web:
    This configuration asks our web server to handle HTTP requests at "/static" to serve static files stored in `/app/static/` folder while everything else is forwarded to your application server.
 
 5\. Create any Read/Write mounts. The root file system is read only.  You must explicitly describe writable mounts.
+
 
 ```yaml
 mounts:
@@ -139,7 +144,9 @@ disk: 512
 The above Gunicorn based WSGI example can be modified to use the Python 3.5+ asyncio module.
 
 1\. Change the `type` to `python:3.6`.
+
 2\. Change the start command to use asyncio.
+
 
 ```yaml
 web:
@@ -148,6 +155,7 @@ web:
 ```
 
 3\. Add `aiohttp` as pip dependency in your build hook.
+
 
 ```yaml
 hooks:

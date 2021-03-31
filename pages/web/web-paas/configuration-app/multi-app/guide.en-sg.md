@@ -4,7 +4,7 @@ slug: multi-app
 section: App
 ---
 
-**Last updated 12th February 2021**
+**Last updated 31st March 2021**
 
 
 
@@ -81,6 +81,7 @@ For example, the following `.platform/applications.yaml` file defines three appl
 ```yaml
 # .platform/applications.yaml
 -   name: api
+
     type: golang:1.14
     source:
         root: apiapp
@@ -99,6 +100,7 @@ For example, the following `.platform/applications.yaml` file defines three appl
                 passthru: true
 
 -   name: main
+
     type: "php:7.4"
     source:
         root: mainapp
@@ -109,6 +111,7 @@ For example, the following `.platform/applications.yaml` file defines three appl
                 passthru: "/index.php"
 
 -   name: admin
+
     type: "php:7.4"
     size: S
     source:

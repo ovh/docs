@@ -27,6 +27,8 @@ For the SMTP, you must connect to the TCP port 587.
 
 You'll find examples on the Tipimail Documentation website:     
 - PHP: [https://docs.tipimail.com/en/integrate/smtp/programming-languages/php/](https://docs.tipimail.com/en/integrate/smtp/programming-languages/php/)
+
 - NodeJS: [https://docs.tipimail.com/en/integrate/smtp/programming-languages/nodejs/](https://docs.tipimail.com/en/integrate/smtp/programming-languages/nodejs/)
+
 - Python: [https://docs.tipimail.com/en/integrate/smtp/programming-languages/python/](https://docs.tipimail.com/en/integrate/smtp/programming-languages/python/)
 - Ruby: [https://docs.tipimail.com/en/integrate/smtp/programming-languages/ruby/](https://docs.tipimail.com/en/integrate/smtp/programming-languages/ruby/)
