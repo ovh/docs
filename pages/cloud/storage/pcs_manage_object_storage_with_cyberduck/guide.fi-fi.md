@@ -41,7 +41,7 @@ Tässä ohjeessa kerrotaan kuinka Cyberduck konfiguroidaan, jotta Object Storage
 Kavaakkeseen on täytettävä erilaisia tietoja:
 
 - Palvelin: auth.cloud.ovh.net (Palvelimen tunnistus)
-- Tenant ID:Access Key: Tämä on sama kuin Project_ID:Horizon_User_ID
+- Project:Domain:Username : OS_TENANT_NAME:default:OS_USERNAME
 - Secret Key: Horizon salasanasi
 - More Options / Path : v3.0
 
