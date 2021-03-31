@@ -40,7 +40,7 @@ In dieser Hilfe erfahren Sie alles über die Konfiguration von CyberDuck für di
 In dem Formular müssen verschiedene Angaben gemacht werden:
 
 - Server: auth.cloud.ovh.net (Authentifizierungs-Server)
-- Tenant ID:Access Key: das bedeutet ID_des_Projekts:ID_Horizon_Nutzer
+- Project:Domain:Username : OS_TENANT_NAME:default:OS_USERNAME
 - Secret Key: Passwort des Horizon Nutzers
 - More Options/Path: v3.0
 
