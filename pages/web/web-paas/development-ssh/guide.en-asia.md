@@ -5,7 +5,7 @@ section: Development
 order: 5
 ---
 
-**Last updated 26th February 2021**
+**Last updated 31st March 2021**
 
 
 ## Objective  
@@ -15,7 +15,7 @@ One of the ways Web PaaS keeps things secure is by using SSH behind the scenes. 
 
 Secure Shell Protocol, SSH, supports certificate-based and keypair-based authentication.  Certificate-based authentication is faster to set up and generally easier to use, provided you have a web browser available on your computer.  Alternatively, you may use keypair-based authentication if you are setting up an automation tool, or simply prefer that method.
 
-Automation tools may also use an [API Token](../development-cli/api-tokens).
+
 
 ## Certificate-based authentication
 
@@ -119,7 +119,7 @@ The key fingerprint is:
 ### Add the SSH key to your WebPaaS account
 
 1\.  First off, you'll need to copy your public key to the clipboard.
-2\.  Click on the user profile in [webpaas console](https://ui.ovh.pltfrm.sh) and click on Account.
+2\.  Click on the user profile in [webpaas console](https://eu.console.webpaas.ovhcloud.com/) and click on Account.
 3\. In the left side-bar, select `SSH keys`.
 4\. Click the `Add a public key` button.
 5\.  Paste the key that you copied earlier into the 'Key' text box. You can also add a title if you like, otherwise it will be auto-generated.

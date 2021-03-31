@@ -5,7 +5,7 @@ section: Development
 order: 5
 ---
 
-**Last updated 26th March 2021**
+**Last updated 31st March 2021**
 
 
 ## Objective  
@@ -22,7 +22,7 @@ Behinds the scenes it uses both the Git interface and our REST API. The source c
 You can install the CLI easily using this command:
 
 ```bash
-curl -fsS https://cli.ovh.pltfrm.sh/installer | php
+curl -fsS https://eu.cli.webpaas.ovhcloud.com/installer | php
 ```
 
 You can find the system requirements and more information in the [installation instructions on GitHub](https://github.com/ovh/webpaas-cli/blob/master/README.md#installation).
@@ -140,5 +140,5 @@ Upon starting Bash, you will be asked to choose a username. According to the art
 Once Bash for Windows is installed, you can install the Web PaaS CLI with the same command as above:
 
 ```bash
-curl -fsS https://cli.ovh.pltfrm.sh/installer | php
+curl -fsS https://eu.cli.webpaas.ovhcloud.com/installer | php
 ```
