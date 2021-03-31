@@ -4,7 +4,7 @@ slug: extensions
 section: Php
 ---
 
-**Last updated 12th February 2021**
+**Last updated 31st March 2021**
 
 
 
@@ -187,7 +187,9 @@ It is possible to use an extension not listed here but it takes slightly more wo
 
 1\. Download the .so file for the extension as part of your build hook using `curl` or similar. It can also be added to your Git repository if the file is not publicly downloadable, although committing large binary blobs to Git is generally not recommended.
 
+
 2\. Provide a custom `php.ini` file in the application root (as a sibling of your `.platform.app.yaml` file) that loads the extension using an absolute path. For example, if the extension is named `spiffy.so` and is in the root of your application, you would have a `php.ini` file that reads:
+
 
 ```ini
 extension=/app/spiffy.so

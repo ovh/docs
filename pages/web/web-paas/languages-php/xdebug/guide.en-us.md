@@ -4,7 +4,7 @@ slug: xdebug
 section: Php
 ---
 
-**Last updated 12th February 2021**
+**Last updated 31st March 2021**
 
 
 

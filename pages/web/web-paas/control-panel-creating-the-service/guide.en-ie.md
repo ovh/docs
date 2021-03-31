@@ -16,8 +16,8 @@ OVHcloud Web PaaS powered by Platform.sh enables web developers to manage, devel
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- visiting the [product page](https://www.ovhcloud.com/en-gb/web-paas/) to decide which plan is suitable for your project's requirements
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- visiting the [product page](https://www.ovhcloud.com/en-ie/web-paas/) to decide which plan is suitable for your project's requirements
 
 > [!warning]
 > **Beta restrictions**
@@ -34,7 +34,7 @@ OVHcloud Web PaaS powered by Platform.sh enables web developers to manage, devel
 
 ### Subscribing to the service
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Web Cloud`{.action} in the top navigation bar.
+Log in to your [OVHcloud Control Panel](OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and switch to `Web Cloud`{.action} in the top navigation bar.
 
 Click on `Order`{.action} in the services bar on the left-hand side, then click on `Web PaaS`{.action}.
 
@@ -42,7 +42,7 @@ Click on `Order`{.action} in the services bar on the left-hand side, then click 
 
 #### Step 1: Choose a plan (restricted for beta)
 
-Select a plan that best suits your needs after verifying the details on the [product page](https://www.ovhcloud.com/en-gb/web-paas/). You can upgrade the project later in the Control Panel.
+Select a plan that best suits your needs after verifying the details on the [product page](https://www.ovhcloud.com/en-ie/web-paas/). You can upgrade the project later in the Control Panel.
 
 ![choose plan](images/creation_manager02.png){.thumbnail}
 
@@ -62,7 +62,7 @@ Give your project a name and choose a region near you in this step.
 
 #### Step 4: Configure your project (restricted for beta)
 
-In this step you can choose options for the project, according to the plan you have selected. Please refer to our [product page](https://www.ovhcloud.com/en-gb/web-paas/) for details about the available
+In this step you can choose options for the project, according to the plan you have selected. Please refer to our [product page](https://www.ovhcloud.com/en-ie/web-paas/) for details about the available
 **Storage**, **Environments** and **User licenses** for each plan. 
 
 ![configure details](images/creation_manager05.png){.thumbnail}
@@ -76,7 +76,7 @@ In this step you can choose options for the project, according to the plan you h
 Finally, take note of the payment information and click on `Order`{.action} to confirm. This will start the payment process.
 
 > [!primary]
-> You can order the service from the [product page](https://www.ovhcloud.com/en-gb/web-paas/) as well.
+> You can order the service from the [product page](https://www.ovhcloud.com/en-ie/web-paas/) as well.
 >
 > Each project requires a separate service subscription. In order to add a project, simply repeat the steps above.
 
@@ -94,7 +94,7 @@ You will be redirected to the `OVERVIEW` tab of the Web PaaS Management Console.
 
 ### Managing the service in the Control Panel (restricted for beta)
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Web Cloud`{.action} in the top navigation bar. Click on `Web PaaS`{.action} in the left-hand sidebar an select your project.
+Log in to your [OVHcloud Control Panel](OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and switch to `Web Cloud`{.action} in the top navigation bar. Click on `Web PaaS`{.action} in the left-hand sidebar an select your project.
 
 The `General information` page displays the basic configuration options of the project. Use the **Management interface** section for the following actions:
 

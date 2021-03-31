@@ -5,7 +5,7 @@ section: Languages
 order: 4
 ---
 
-**Last updated 26th March 2021**
+**Last updated 31st March 2021**
 
 
 ## Objective  
@@ -49,12 +49,14 @@ To use Web PaaS and Node.js together, configure the `.platform.app.yaml` file wi
 1\. Specify the language of your application (available versions are listed above):
 
 
+
 ```yaml   
 type: 'nodejs:14'
 ```  
 
 
 2\. Specify your dependencies under the `nodejs` key, like this:
+
 
 ```yaml
 dependencies:
@@ -65,6 +67,7 @@ dependencies:
    These are the global dependencies of your project (the ones you would have installed with `npm install -g`). Here we specify the `pm2` process manager that will allow us to run the node process.
 
 3\. Configure the command you use to start serving your application (this must be a foreground-running process) under the `web` section, e.g.:
+
 
 ```yaml
 web:
@@ -88,6 +91,7 @@ web:
 
 4\. Create any Read/Write mounts. The root file system is read only. You must explicitly describe writable mounts. In (3) we set the home of the process manager to `/app/run` so this needs to be writable.
 
+
 ```yaml
 mounts:
     run:
@@ -96,6 +100,7 @@ mounts:
 ```
 
 5\. Include any relevant commands needed to build and setup your application in the `hooks` section, e.g.:
+
 
 ```yaml
 hooks:
@@ -106,6 +111,7 @@ hooks:
 
 6\. Setup the routes to your Node.js application in `.platform/routes.yaml`.
 
+
 ```yaml
 "https://{default}/":
   type: upstream
@@ -113,6 +119,7 @@ hooks:
 ```
 
 7\. (Optional) If Web PaaS detects a `package.json` file in your repository, it will automatically include a `default` [`build` flavor](../configuration-app/build#build), that will run `npm prune --userconfig .npmrc && npm install --userconfig .npmrc`. You can modify that process to use an alternative package manager by including the following in your `.platform.app.yaml` file:
+
 
 ```yaml
 build:

@@ -5,7 +5,7 @@ section: Development
 order: 5
 ---
 
-**Last updated 26th March 2021**
+**Last updated 31st March 2021**
 
 
 ## Clone submodules during deployment
@@ -64,6 +64,7 @@ To fix this, you need to:
 
 1\. Change your `.gitmodules` file from the HTTPS syntax to the SSH syntax, e.g.
 
+
     from:
 
 ```bash
@@ -83,19 +84,24 @@ To fix this, you need to:
 2\. Add the SSH public key in the Web PaaS project settings "Deploy Key" tab in the Web UI as per the [Private Repository](../development-private-repository) documentation page, which will allow our Git service to pull the module from the remote git service. This assumes you have configured the remote git repository to allow this by generating a private/public key pair. For example, see the [Bitbucket documentation](https://confluence.atlassian.com/bitbucket/use-ssh-keys-in-bitbucket-pipelines-847452940.html).
 
 
+
 ## Removing submodules
 
 These steps are not specific to Web PaaS, but kept as a reference for Git so that submodules are effectively removed prior to entering the build process.
 
 1\. Delete information for the submodule you'd like to remove from `.gitmodules`.
+
 2\. Stage changes to `.gitmodules`: 
+
 
 ```bash
 $ git add .gitmodules
 ```
 
 3\. Remove the submodule's configuration from `.git/config`.
+
 4\. Remove the submodule from the repository (without trailing slash): 
+
 
 ```bash
 $ git rm --cached path_to_submodule
@@ -103,17 +109,20 @@ $ git rm --cached path_to_submodule
 
 5\. Remove the submodule's files in `.git` from the repository  (without trailing slash): 
 
+
 ```bash
 $ rm -rf .git/modules/path_to_submodule
 ```
 
 6\. Commit the changes: 
 
+
 ```bash
 $ git commit -m "Removed submodule."
 ```
 
 7\. Remove the submodule code locally, now untracked: 
+
 
 ```bash
 $ rm -rf path_to_submodule

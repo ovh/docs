@@ -128,8 +128,11 @@ You can install Bash to use the CLI on a Windows 10, 64-bit machine. The Windows
 To install Bash on Windows 10 Anniversary Edition you need to:
 
 1\. Activate the Developer Mode in "Update & Security" in Windows Settings. This will prompt you to restart your computer.
+
 2\. Activate the "Windows Subsystem for Linux (Beta)", under "Turn Windows features on or off" in the Programs and Features section of the Control Panel. Once again, you will need to restart your computer.
+
 3\. In the Start Menu, search for the program "bash.exe", which will prompt you to install it from the Windows Store.
+
 
 Bash is now installed.
 
