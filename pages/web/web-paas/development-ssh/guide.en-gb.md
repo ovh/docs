@@ -5,23 +5,23 @@ section: Development
 order: 5
 ---
 
-**Last updated 26th March 2021**
+**Last updated 31st March 2021**
 
 
 ## Objective  
 
-One of the ways Web PaaS keeps things secure is by using SSH behind the scenes. Users can interact with their environment through a command shell, or push changes to the environment's Git repository, and both of these features rely on SSH.
+One of the ways $partner_full keeps things secure is by using SSH behind the scenes. Users can interact with their environment through a command shell, or push changes to the environment's Git repository, and both of these features rely on SSH.
 
 
 Secure Shell Protocol, SSH, supports certificate-based and keypair-based authentication.  Certificate-based authentication is faster to set up and generally easier to use, provided you have a web browser available on your computer.  Alternatively, you may use keypair-based authentication if you are setting up an automation tool, or simply prefer that method.
 
-Automation tools may also use an [API Token](../development-cli/api-tokens).
+
 
 ## Certificate-based authentication
 
-To connect using certificate-based authentication, install the [Web PaaS CLI](../development-cli).
+To connect using certificate-based authentication, install the [$partner_full CLI](../development-cli).
 
-Once installed, you may run `webpaas login` or any CLI command that would require authentication.  In either case, a browser window will open and ask you to login with your Web PaaS account credentials.  This web page is already encrypted with TLS over HTTP, making it secure.
+Once installed, you may run `webpaas login` or any CLI command that would require authentication.  In either case, a browser window will open and ask you to login with your $partner_full account credentials.  This web page is already encrypted with TLS over HTTP, making it secure.
 
 The login process will issue a certificate that gets stored in your local SSH configuration.  The certificate is automatically cycled every hour for a new certificate as long as your session is active.  If you are inactive for an extended period your certificate will expire, and the system will ask you to login again the next time you use a command that requires authentication.
 
@@ -30,7 +30,7 @@ The login process will issue a certificate that gets stored in your local SSH co
 This process requires two [RSA keys](https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29):
 
 * A **private key** kept secret by the user
-* A **public key** stored within the Web PaaS account
+* A **public key** stored within the $partner_full account
 
 These keys are called the *public-private keypair* and usually look like random lines of characters, like this:
 
@@ -75,7 +75,7 @@ known_hosts
 authorized_keys
 ```
 
-    If you find a file named `id_rsa.pub`, you can use it with Web PaaS. If you don't find an existing key, see the steps to create a new one in the [next section](#create-a-new-public-private-keypair).
+    If you find a file named `id_rsa.pub`, you can use it with $partner_full. If you don't find an existing key, see the steps to create a new one in the [next section](#create-a-new-public-private-keypair).
 
 ### Create a New Public-Private Keypair
 
@@ -119,7 +119,7 @@ The key fingerprint is:
 ### Add the SSH key to your WebPaaS account
 
 1\.  First off, you'll need to copy your public key to the clipboard.
-2\.  Click on the user profile in [webpaas console](https://ui.ovh.pltfrm.sh) and click on Account.
+2\.  Click on the user profile in [webpaas console](https://eu.console.webpaas.ovhcloud.com/) and click on Account.
 3\. In the left side-bar, select `SSH keys`.
 4\. Click the `Add a public key` button.
 5\.  Paste the key that you copied earlier into the 'Key' text box. You can also add a title if you like, otherwise it will be auto-generated.
@@ -127,7 +127,7 @@ The key fingerprint is:
 
 
 
-That's it! You're all set. Now you'll be able to use Git and command shells with any Web PaaS environment that your user account is authorized to work with.
+That's it! You're all set. Now you'll be able to use Git and command shells with any $partner_full environment that your user account is authorized to work with.
 
 ## SSH to your Web Server
 

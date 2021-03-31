@@ -5,15 +5,15 @@ section: Configuration
 order: 3
 ---
 
-**Last updated 12th February 2021**
+**Last updated 31st March 2021**
 
 
 ## Objective  
 
-Web PaaS allows you to define the routes used in your environments.
+$partner_full allows you to define the routes used in your environments.
 
 
-A route describes how an incoming HTTP request is going to be processed by Web PaaS. The routes are defined using the `.platform/routes.yaml` file in your Git repository.
+A route describes how an incoming HTTP request is going to be processed by $partner_full. The routes are defined using the `.platform/routes.yaml` file in your Git repository.
 
 If you don't have one, use the commands below to create it:
 
@@ -28,10 +28,10 @@ $ touch .platform/routes.yaml
 
 The YAML file is composed of a list of routes and their configuration. A route can either be an absolute URL or a URL template that looks like: `http://www.{default}/` or `https://{default}/blog` where `{default}` will be substituted by the default fully qualified domain name configured in the project. So if your default domain is `example.com`, these routes will be resolved to `http://www.example.com/` and `https://example.com/blog` in the master environment.
 
-Web PaaS will also generate a domain for every active development environment.  It will receive a domain name based on the region, project ID, branch name, and a per-environment random string. The domain name itself is not guaranteed stable, although the pattern is consistent.
+$partner_full will also generate a domain for every active development environment.  It will receive a domain name based on the region, project ID, branch name, and a per-environment random string. The domain name itself is not guaranteed stable, although the pattern is consistent.
 
 > [!primary]  
-> Web PaaS supports running multiple applications per environment. The `.platform/routes.yaml` file defines how to route requests to different applications.
+> $partner_full supports running multiple applications per environment. The `.platform/routes.yaml` file defines how to route requests to different applications.
 > 
 
 ## Route configuration
@@ -50,7 +50,7 @@ Each route can be configured separately. It has the following properties
 ![Routes files](images/routes-configs.png "0.5")
 
 > [!primary]  
-> For the moment, the value of upstream is always in the form: `<application-name>:http`.  `<application-name>` is the `name` defined in `.platform.app.yaml` file.  `:php` is a deprecated application endpoint; use `:http` instead.  In the future, Web PaaS will support multiple endpoints per application.
+> For the moment, the value of upstream is always in the form: `<application-name>:http`.  `<application-name>` is the `name` defined in `.platform.app.yaml` file.  `:php` is a deprecated application endpoint; use `:http` instead.  In the future, $partner_full will support multiple endpoints per application.
 > 
 
 ## Route limits
@@ -117,8 +117,8 @@ It's also entirely possible to use an absolute URL in the route. In that case, i
 In this case, there are two application containers `app` and `blog`.  In a production environment, they would be accessible at `www.example.com` and `blog.example.com`, respectively.  On a development branch named `sprint`, however, they would be accessible at URLs something like:
 
 ```bash
-https://www.example.com.sprint-7onpvba-tvh56f275i3um.eu-2.platformsh.site/
-https://blog.example.com.sprint-7onpvba-tvh56f275i3um.eu-2.platformsh.site/
+https://www.example.com.sprint-7onpvba-tvh56f275i3um.eu-2.webpaas.ovh.net/
+https://blog.example.com.sprint-7onpvba-tvh56f275i3um.eu-2.webpaas.ovh.net/
 ```
 
 If your project involves only a single apex domain with one app or multiple apps under subdomains, it's generally best to use the `{default}` placeholder.  If you are running [multiple applications](../configuration-app/multi-app) on different apex domains then you will need to use a static domain for all but one of them.
@@ -148,7 +148,7 @@ This example defines two routes, on two separate subdomains, pointing at two sep
 
 ```json
 {
-    "https://site1.test-t6dnbai-abcdef1234567.us-2.platformsh.site/": {
+    "https://site1.test-t6dnbai-abcdef1234567.us-2.webpaas.ovh.net/": {
         "primary": 1,
         "id": null,
         "type": "upstream",
@@ -156,7 +156,7 @@ This example defines two routes, on two separate subdomains, pointing at two sep
         "original_url": "https://site1.{default}/"
         // ...
     },
-    "https://site2.test-t6dnbai-abcdef1234567.us-2.platformsh.site/": {
+    "https://site2.test-t6dnbai-abcdef1234567.us-2.webpaas.ovh.net/": {
         "primary": null,
         "id": "the-second",
         "type": "upstream",
@@ -164,15 +164,15 @@ This example defines two routes, on two separate subdomains, pointing at two sep
         "original_url": "https://site2.{default}/"
         // ...
     },
-    "http://site1.test-t6dnbai-abcdef1234567.us-2.platformsh.site/": {
-        "to": "https://site1.test-t6dnbai-abcdef1234567.us-2.platformsh.site/",
+    "http://site1.test-t6dnbai-abcdef1234567.us-2.webpaas.ovh.net/": {
+        "to": "https://site1.test-t6dnbai-abcdef1234567.us-2.webpaas.ovh.net/",
         "original_url": "http://site1.{default}/",
         "type": "redirect",
         "primary": null,
         "id": null
     },
-    "http://site2.test-t6dnbai-abcdef1234567.us-2.platformsh.site/": {
-        "to": "https://site2.test-t6dnbai-abcdef1234567.us-2.platformsh.site/",
+    "http://site2.test-t6dnbai-abcdef1234567.us-2.webpaas.ovh.net/": {
+        "to": "https://site2.test-t6dnbai-abcdef1234567.us-2.webpaas.ovh.net/",
         "original_url": "http://site2.{default}/",
         "type": "redirect",
         "primary": null,
@@ -188,7 +188,7 @@ That could be used, for example, for specifically allowing inbound requests.
 
 ## Route attributes
 
-Route attributes are an arbitrary key/value pair attached to a route.  This metadata does not have any impact on Web PaaS, but will be available in the route definition structure in `$PLATFORM_ROUTES`.
+Route attributes are an arbitrary key/value pair attached to a route.  This metadata does not have any impact on $partner_full, but will be available in the route definition structure in `$PLATFORM_ROUTES`.
 
 ```yaml
 "http://{default}/":
@@ -201,7 +201,7 @@ Route attributes are an arbitrary key/value pair attached to a route.  This meta
 Attributes will appear in the routes data like so:
 
 ```json
-"https://site1.test-t6dnbai-abcdef1234567.us-2.platformsh.site/": {
+"https://site1.test-t6dnbai-abcdef1234567.us-2.webpaas.ovh.net/": {
     "primary": 1,
     "id": null,
     "type": "upstream",

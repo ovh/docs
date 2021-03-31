@@ -5,12 +5,12 @@ section: Development
 order: 5
 ---
 
-**Last updated 26th March 2021**
+**Last updated 31st March 2021**
 
 
 ## Objective  
 
-The CLI is the official tool to use and manage your Web PaaS projects directly from your terminal. Anything you can do within the management console can be done with the CLI.
+The CLI is the official tool to use and manage your $partner_full projects directly from your terminal. Anything you can do within the management console can be done with the CLI.
 
 
 Behinds the scenes it uses both the Git interface and our REST API. The source code of the CLI is hosted on [GitHub](https://github.com/ovh/webpaas-cli).
@@ -22,14 +22,14 @@ Behinds the scenes it uses both the Git interface and our REST API. The source c
 You can install the CLI easily using this command:
 
 ```bash
-curl -fsS https://cli.ovh.pltfrm.sh/installer | php
+curl -fsS https://eu.cli.webpaas.ovhcloud.com/installer | php
 ```
 
 You can find the system requirements and more information in the [installation instructions on GitHub](https://github.com/ovh/webpaas-cli/blob/master/README.md#installation).
 
 ## Authentication
 
-The [Web PaaS CLI](https://github.com/ovh/webpaas-cli) will authenticate you with Web PaaS and show your projects. Just type this command to start:
+The [$partner_full CLI](https://github.com/ovh/webpaas-cli) will authenticate you with $partner_full and show your projects. Just type this command to start:
 
 ```bash
 webpaas
@@ -39,7 +39,7 @@ You will be asked to log in via a browser.
 
 When you are logged in, a list of your projects appears, along with some tips for getting started.
 
-**Your command-line tools are now ready to use with Web PaaS.**
+**Your command-line tools are now ready to use with $partner_full.**
 
 > [!primary]  
 > Please consult [the full documentation on CLI Authentication](https://github.com/ovh/webpaas-cli#authentication) on the public CLI Github repository for further details.
@@ -47,9 +47,9 @@ When you are logged in, a list of your projects appears, along with some tips fo
 
 ## Usage
 
-The CLI uses Web PaaS API to trigger commands (*Branch, Merge...*) on your projects.
+The CLI uses $partner_full API to trigger commands (*Branch, Merge...*) on your projects.
 
-It's also very useful when you work locally since it can simulate a local build of your codebase as if you were pushing a change to Web PaaS.
+It's also very useful when you work locally since it can simulate a local build of your codebase as if you were pushing a change to $partner_full.
 
 Once you have the CLI installed, run `webpaas list` to see all of the available commands.
 
@@ -82,7 +82,7 @@ Options:
 
 ## CLI features
 
-Additional settings to control the operation of the Web PaaS CLI can be managed in the configuration file (`.platform/local/project.yaml`) or environment variables. See the [`README` for the CLI for details](https://github.com/ovh/webpaas-cli/blob/master/README.md#usage).
+Additional settings to control the operation of the $partner_full CLI can be managed in the configuration file (`.platform/local/project.yaml`) or environment variables. See the [`README` for the CLI for details](https://github.com/ovh/webpaas-cli/blob/master/README.md#usage).
 
 ## Auto-selecting your project
 
@@ -119,7 +119,7 @@ Once installed, the `webpaas` CLI tool provides tab auto-completion for commands
 
 ## Installing the CLI on Windows 10
 
-There are multiple ways to install the CLI on Windows 10. Web PaaS recommends using Bash for Windows (Windows Subsystem for Linux).
+There are multiple ways to install the CLI on Windows 10. $partner_full recommends using Bash for Windows (Windows Subsystem for Linux).
 
 ### Installing Bash for Windows
 
@@ -137,8 +137,8 @@ You can read more on [WindowsCentral](https://www.windowscentral.com/how-install
 
 Upon starting Bash, you will be asked to choose a username. According to the article, it doesn't have to be the same as your current username. However, if the username don't exist, the Linux system might not be able to create the Linux directory (depending on your permissions level). It is therefore recommended you use the same username for Linux as your Windows machine (provided your Windows user name isn't "Admin", as that will not be allowed).
 
-Once Bash for Windows is installed, you can install the Web PaaS CLI with the same command as above:
+Once Bash for Windows is installed, you can install the $partner_full CLI with the same command as above:
 
 ```bash
-curl -fsS https://cli.ovh.pltfrm.sh/installer | php
+curl -fsS https://eu.cli.webpaas.ovhcloud.com/installer | php
 ```
