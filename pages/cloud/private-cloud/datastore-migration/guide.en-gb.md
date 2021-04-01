@@ -95,7 +95,7 @@ Replication will then appear on all hosts in the destination data centre under t
 > The recovered datastore is read-only.
 >
 
-For virtual machines, you need to [save them in the vSphere inventory](../vsphere-register-vm-vmx/), then [clone](../clone-a-vm/) them to one of the datastores before you can start them.
+For virtual machines, you need to [save them in the vSphere inventory](../vsphere-register-vm-vmx/), then [clone](../clone-a-vm/) them to one of the datastores **before** you can start them.
 
 > [!warning]
 > Do not power on your VM before cloning them, otherwise the following error message appears "Unable to write the VMX file".
