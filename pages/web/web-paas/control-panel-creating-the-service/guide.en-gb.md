@@ -6,7 +6,7 @@ section: Getting started
 order: 1
 ---
 
-**Last updated 29th March 2021**
+**Last updated 1st April 2021**
 
 ## Objective
 
@@ -36,9 +36,9 @@ OVHcloud Web PaaS powered by Platform.sh enables web developers to manage, devel
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Web Cloud`{.action} in the top navigation bar.
 
-Click on `Order`{.action} in the services bar on the left-hand side, then click on `Web PaaS`{.action}.
+Select `Web PaaS`{.action} in the services bar on the left-hand side, then click on the button `New project`{.action}.
 
-![order service](images/creation_manager01.png){.thumbnail}
+![order service](images/creation_manager_beta01.png){.thumbnail}
 
 #### Step 1: Choose a plan (restricted for beta)
 
