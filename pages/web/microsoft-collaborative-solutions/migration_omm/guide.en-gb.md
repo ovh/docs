@@ -86,7 +86,23 @@ You might also want to upgrade your current mail solution, and migrate it to new
 
 #### MX plan legacy version
 
+With legacy version you can perform you migration automatically from OVH Control Panel, all you need to do is to order and choose which solution you would like to use.
+
+First go to `Web Cloud`{.action}, and go to `Emails`{.action} and then go to `Emails`{.action} where you can find your Emails list. Next to the account that you want to migrate choose 3 dots, and then choose option `Migrate account`{.action}. Then you will be able to choose to which Email Pro or Exchange service you would like to transfer your account to. 
+
+If you do not have any account yet - you will see there possibility to order new solution. After order will be completed you will find there option to migrate it. 
+
+![email] {.thumbnail}
+
 #### MX new, Pro and Exchange version
+
+With new MX plan, Email Pro or Hosted Exchange migration needs to be done with [OVH Mail Migrator](https://omm.ovh.net/){.external}. To do that you need to have your account already created in one of this solution to which you want to migrate. Only for migration process this account needs to have different name as email account that you want to migrate, as two accounts with the same name can not be created at the same in OVH. 
+
+For example if you want to migrate account **office@domain.ovh** START HERE NEXT TIME
+
+
+
+as described in [Instructions](./instructions).
 
 
 ### Carrying out a migration by file
