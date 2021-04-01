@@ -99,7 +99,7 @@ Pour les machines virtuelles, il faut [enregistrer celles-ci dans l'inventaire v
 
 > [!warning]
 > 
-> N'allumez vos VM qu'après les avoir clonées. Dans le cas contraire, vous obtiendrez le message d'ereur « Impossible d’écrire le fichier VMX ».
+> N'allumez vos VM qu'après les avoir clonées. Dans le cas contraire, vous obtiendrez le message d'erreur « Impossible d’écrire le fichier VMX ».
 >
 
 
