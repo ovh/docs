@@ -9,7 +9,7 @@ section: FAQ
 ## FAQ OverTheBox
 
 ### Où puis-trouver des documentations techniques à propos d'OverTheBox ?
-Vous pouvez trouver des guides sur [https://docs.ovh.com/fr/overthebox/](https://docs.ovh.com/fr/overthebox/){.external}  
+Vous pouvez trouver des guides sur [https://docs.ovh.com/fr/overthebox/](https://docs.ovh.com/fr/overthebox/){.external}
 
 
 ### Quels sont les opérateurs compatibles avec OverTheBox ?
@@ -21,17 +21,17 @@ L'OverTheBox est un équipement réseau qui se branche sur votre réseau local c
 
 
 ### Dois-je avoir un réseau spécifique pour utiliser OverTheBox ?
-Tous les réseaux informatiques (même les plus basiques) sont compatibles avec le système OverTheBox. Il est donc possible d'utiliser vos propres wifi (suivant votre type d'OverTheBox) ou encore vos boitiers CPL en fonction de la qualité du réseau électrique. Il sera cependant nécessaire de modifier certains paramètres de vos Box comme l'adresse IP ou le DHCP. Ces manipulations sont expliquées dans les guides d'installation suivants  :  
-[Mes 10 premières minutes avec OverTheBox intel](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}  
-[Mes 10 premières minutes avec OverTheBox IT](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}  
-[Mes 10 premières minutes avec OverTheBox PLUS](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-plus/){.external}   
+Tous les réseaux informatiques (même les plus basiques) sont compatibles avec le système OverTheBox. Il est donc possible d'utiliser vos propres wifi (suivant votre type d'OverTheBox) ou encore vos boitiers CPL en fonction de la qualité du réseau électrique. Il sera cependant nécessaire de modifier certains paramètres de vos Box comme l'adresse IP ou le DHCP. Ces manipulations sont expliquées dans les guides d'installation suivants  :
+[Mes 10 premières minutes avec OverTheBox intel](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}
+[Mes 10 premières minutes avec OverTheBox IT](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}
+[Mes 10 premières minutes avec OverTheBox PLUS](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-plus/){.external}
 
 
 ### Quel débit maximum pourrais-je avoir ?
-Le débit total (après addition de vos connexions) dépend du type d'offre à laquelle vous avez souscrit :  
-Service V1 : Le débit ne pourra pas dépasser 250 Mb/s pour le service OTB seul et 130 Mb/s avec le matériel fourni par OVH.  
-Service IT : Le débit ne pourra pas dépasser 100 Mb/s.  
-Service Plus : Le débit ne pourra pas dépasser 400 Mb/s.  
+Le débit total (après addition de vos connexions) dépend du type d'offre à laquelle vous avez souscrit :
+Service v1 : Le débit ne pourra pas dépasser 250 Mb/s pour le service OTB seul et 130 Mb/s avec le matériel fourni par OVH.
+Service IT : Le débit ne pourra pas dépasser 100 Mb/s.
+Service Plus : Le débit ne pourra pas dépasser 400 Mb/s.
 
 
 ### Est-ce que mon IP publique va changer ?
@@ -39,10 +39,9 @@ Votre adresse IP publique va en effet changer pour une IP fournie par OVH qui va
 
 
 ### Est-ce que le Wifi est intégré dans la box OverTheBox ?
-Le Wifi n'est pas inclus dans l'OverTheBox.  
-Pour les OverTheBox Intel et IT vous pouvez sans problème utiliser le Wifi de vos modems ou un point d'accès Wifi dédié.  
-Pour l'OverThebox plus, il faudra forcement passer par un point d'accès WIFI dédié (les modem étant isolés sur leur propre Vlan). Le wifi de vos modems reste utilisable, mais les équipements connectés dessus ne profiterons pas de l'agrégations.
-
+Les boitiers OverTheBox ne supporte pas le WiFi.
+Pour les OverTheBox Intel et IT v1 vous pouvez sans problème utiliser le Wifi de vos modems ou un point d'accès Wifi dédié.
+Pour l'OverThebox Plus ou l'OverTheBox IT v2, les modems sont isolés dans leurs propre VLAN, le WiFi des modems est donc indisponible depuis le réseau LAN de l'OverTheBox. Il est possible de réutiliser le WiFi d'un modem Zyxel fourni avec l'une de nos offres Internet, voir [Comment réutiliser le wifi d'un modem Zyxel avec OverTheBox](https://docs.ovh.com/fr/xdsl/comment-reutiliser-wifi-zyxel-otb){.external}. Dans les autres cas de figure, il faudra utiliser un point d'accès WiFi dédié. Le WiFi de vos modems reste fonctionnel, mais les équipements connectés ne profiterons pas de l'agrégations, ni du tunnel chiffré.
 
 ### Est-il possible de choisir le data-centre hébergeant mon service d’agrégation ?
 Actuellement il n'est pas possible de choisir le data-centre pour votre service OverTheBox. Votre agrégation sera hébergée dans le data-centre de Strasbourg ou de Gravelines.
@@ -76,11 +75,11 @@ Si vous avez commandé le matériel OVH certifié compatible, ce dernier sera ex
 Suivant l'offre souscrite, l'abonnement sera au prix mensuel de 9,99€ jusqu'à 49,99€ HT (offre OverTheBox Serenity). Ce montant est prélevé automatiquement via le moyen de paiement enregistré. Ce service est sans engagement de durée Le matériel OVH certifié compatible est vendu (hors frais de port) à 149,99€ HT (OverTheBox IT) ou 249,99€ HT (OverTheBox Plus).
 
 ### Est-il possible de virtualiser OverTheBox ?
-Oui il est possible de virtualiser OverTheBox, nous ne proposons pas de support pour cet usage. Il vous faudra pour ceci, suivre la même procédure que l'installation sur un materiel personnel, depuis une une machine virtuel compatible linux : [Installer l’image OverTheBox sur votre matériel](https://docs.ovh.com/fr/overthebox/installer-limage-overthebox-sur-votre-materiel//){.external}   
+Oui il est possible de virtualiser OverTheBox, nous ne proposons pas de support pour cet usage. Il vous faudra pour ceci, suivre la même procédure que l'installation sur un materiel personnel, depuis une une machine virtuel compatible linux : [Installer l’image OverTheBox sur votre matériel](https://docs.ovh.com/fr/overthebox/installer-limage-overthebox-sur-votre-materiel//){.external}
 
 
 ### Est-il possible de réinitialiser son OverTheBox ?
-Oui c'est possible via différentes méthodes expliquées dans ces guides :  
-[Rétablir la configuration d’usine OverTheBox Intel](https://docs.ovh.com/fr/overthebox/retablir-la-configuration-dusine-otb-intel/){.external}  
-[Rétablir la configuration d’usine OverTheBox IT](https://docs.ovh.com/fr/overthebox/retablir-la-configuration-dusine/){.external}  
-[Rétablir la configuration d’usine OverTheBox Plus](https://docs.ovh.com/fr/overthebox/retablir-la-configuration-dusine/plus/){.external}  
+Oui c'est possible via différentes méthodes expliquées dans ces guides :
+[Rétablir la configuration d’usine OverTheBox Intel](https://docs.ovh.com/fr/overthebox/retablir-la-configuration-dusine-otb-intel/){.external}
+[Rétablir la configuration d’usine OverTheBox IT](https://docs.ovh.com/fr/overthebox/retablir-la-configuration-dusine/){.external}
+[Rétablir la configuration d’usine OverTheBox Plus](https://docs.ovh.com/fr/overthebox/retablir-la-configuration-dusine/plus/){.external}
