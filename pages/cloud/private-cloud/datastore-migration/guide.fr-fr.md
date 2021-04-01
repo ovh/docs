@@ -95,16 +95,11 @@ La copie est présentée au travers d'un datastore sur tous les hosts du datacen
 > Le datastore récupéré est en lecture-seule.
 >
 
-Pour les machines virtuelles, il faut [enregistrer celles-ci dans l'inventaire vSphere](../vsphere-register-vm-vmx) puis les [cloner](../cloner-une-vm) vers un des datastores avant de pouvoir les démarrer.
+Pour les machines virtuelles, il faut [enregistrer celles-ci dans l'inventaire vSphere](../vsphere-register-vm-vmx) puis les [cloner](../cloner-une-vm) vers un des datastores **avant** de pouvoir les démarrer.
 
 > [!warning]
+> 
 > N'allumez vos VM qu'après les avoir clonées. Dans le cas contraire, vous obtiendrez le message d'ereur « Impossible d’écrire le fichier VMX ».
->
-> Si vous obtenez ce message, suivez ces étapes :
->
-> - copiez la VM sur l’un de vos datastores;
-> - enregistrez la VM;
-> - clonez la VM.
 >
 
 
