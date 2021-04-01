@@ -6,177 +6,195 @@ section: DNS and DNS zone
 order: 5
 ---
 
-**Last updated 01/02/2018**
+**Last updated 25/02/2021**
 
-## Objectives
+## Objective
 
-The SPF (Sender Policy Framework) allows a server that receives an email to check that it was sent by an authorised server. The SPF is added as a record in the DNS zone where the servers or IP addresses authorised to send emails from a particular domain are recorded.
+The SPF (Sender Policy Framework) allows a server that receives an email to check that it was sent by an authorised server.
+<br>It helps prevent potential identity theft via the email addresses using your domain name (spoofing).
+<br>You can also use it to authenticate the emails you send.
+<br>The SPF is added as a record in a DNS zone where the servers or IP addresses authorised to send emails to the domain in question are indicated.
 
-**Learn to add an SPF record to the configuration of your OVH domain.**
+This is made possible by information that is entered in the SPF itself. We can find:
 
-## Requirements
+- **servers or several IP** addresses: this will identify them as legitimate sending sources;
+- **a qualifier**: it will recommend to the server receiving the emails a specific way to react to a message considered illegitimate, i.e. coming from a source presenting a risk.
 
-- You must have the appropriate permissions to manage the domain name from your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
-- You must be logged in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
-- The domain name must use the OVH configuration (i.e. the OVH DNS servers).
-
-> [!warning]
->
-> If your domain name does not use the OVH configuration, you must modify the SPF record via the interface of whichever provider manages its domain name configuration.
->
-> If your domain name is registered with OVH, you can check if it is using the OVH configuration in your [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Select the domain and go to the `DNS servers`{.action} tab.
->
-
-## Instructions
-
-### Step 1: Understand the SPF record
-
-Before adding or modifying an SPF record in your domain configuration, it is important to understand why it is useful. The SPF record helps to prevent identity theft via email addresses fraudulently using your domain name.
-
-This is made possible by information contained in the SPF record itself, specifically:
-
-- **Servers or IP addresses**, which can then be identified as legitimate sending sources
-- **A qualifier**. This tells incoming servers how to react to an email considered as illegitimate, i.e. coming from a potentially risky source
-
-You must therefore make sure that you enter all sending sources for emails from this domain in its SPF record. These might include own server, those of your provider, or one of the OVH email solutions.
+You must therefore make sure that you enter the sending sources for the emails of this domain in the SPF record. These sources can be your own server, that of your provider, or one of OVHcloud’s email solutions.
 
 > [!primary]
 >
 > The SPF record is only an indication provided to servers that receive emails, including yours. It is these servers’ responsibility to apply, or not, what is specified in the SPF record of domains whose messages they receive.
 >
 
-### Step 2: Get to know the OVH configuration
+**Find out how to configure an SPF record for your domain name at OVHcloud.**
 
-The OVH configuration applies to the following solutions:
+## Requirements
 
-- MX Plan (as a standalone, or part of our [OVH Web Hosting solution](https://www.ovh.co.uk/web-hosting/){.external});
+- You must have access to manage the domain name from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
+- The domain name concerned must use the OVHcloud configuration (i.e. the OVHcloud DNS servers).
+
+> [!warning]
+>
+> If your domain name does not use OVHcloud DNS servers, you will need to modify the SPF record using the interface given by the service provider that manages your domain name configuration.
+>
+> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your Control [Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Select the domain, and go to the DNS `Servers`{.action} tab.
+>
+
+## Instructions
+
+### OVHcloud SPF configuration
+
+The OVHcloud configuration applies to the solutions below:
+
+- MX Plan alone or included in an OVHcloud web [hosting plan](https://www.ovh.co.uk/web-hosting/){.external};
 - [Email Pro](https://www.ovh.co.uk/emails/email-pro/){.external};
 - [Hosted Exchange](https://www.ovh.co.uk/emails/hosted-exchange/){.external}.
 
-When you order one of these solutions, we recommend that you use an SPF record with OVH information in your domain configuration. It looks like this:
+When you order one of these solutions, we recommend using an SPF record with OVHcloud information in your domain name’s DNS zone. It looks like this:
 
 ```bash
-mypersonaldomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
+mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
-If your domain uses the OVH configuration, you can check if an SPF record is already configured in this way. To do this, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} and go to the services menu on the left. Select the `Domains`{.action} section. Click on the domain in question, then go to the `DNS Zone`{.action} tab.
+This configuration does not apply to Provider Exchange or [Private Exchange solutions](https://www.ovh.co.uk/emails/hosted-exchange/){.external}.
 
-A table should appear. This will display the configuration of your OVH domain. It is made up of several DNS records, one per row in the table.
+For the Exchange Provider solution, the configuration is as follows:
+
+```bash
+mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw1.ex-mail.biz a:gw2.ex-mail.biz ~all"
+```
+
+> [!primary]
+> For the Private Exchange solution, you need to enter your email server’s IP addresses. To limit the size of the SPF record, you can create an SPF record that contains these IP addresses on a subdomain, and an SPF record that contains the subdomain using the "include" category on the domain.
+
+### Check your current SPF configuration
+
+If your domain uses OVHcloud configuration, you can check if an SPF record is already configured for it. To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. In the `Domains`{.action} section on the left-hand side, select the domain name concerned. Click the `DNS`{.action} Zone tab.
+
+A table should appear. This will display your domain name’s DNS zone at OVHcloud. It is made up of several records, all symbolised by a line in the table.
 
 > [!primary]
 >
-> If your domain is registered with OVH, you can check if it uses the OVH configuration from the `DNS Servers`{.action} tab.
+> If your domain is registered with OVHcloud, you can check if it is using the OVHcloud DNS servers from the `DNS`{.action} servers tab.
 >
 
-You can filter the table to find the row with the OVH SPF record. This can appear in two different places: `TXT`{.action}or `SPF`{.action}. Use the filter to switch between them if necessary (bearing in mind that this might cause the table to look different). You should see one of the following results:
+In the table, to find the row for the OVHcloud SPF record, a display filter can be used. Since the latter can appear in two different places, select it in the `TXT`{.action} or `SPF`{.action} filter record by switching from one to another if necessary. From then on, the table might look different.
 
-- **"v=spf1 include:mx.ovh.com ~all" is displayed in the target column**: your domain already uses the OVH configuration. If you no longer wish to use it, you must modify it in the next step.
+- **An SPF record is displayed** that corresponds to the OVHcloud information for your solution: Your domain already uses OVHcloud configuration. If you no longer wish to use it, you must modify it in the next step.
 
-- **An SPF record that does not correspond to OVH information is displayed in the target column**: your domain already uses a personalised SPF. You can modify it or choose the default OVH configuration in the next step.
+- **An SPF record that does not match OVHcloud information is displayed**: your domain already uses a custom SPF. You can modify it or choose the OVHcloud configuration in the next step. If your configuration is incorrect, you will need to modify it.
 
-- **No SPF record is displayed in the target column**: first, search for the record by filtering for both SPF and TXT. If an SPF record does not appear in any of the filtered results, then your domain does not use it. You can add it in the next step.
+- **An SPF record does not appear in the target** column: first check if the record is not created as SPF or TXT by changing the filtering. If no SPF record is displayed, no matter how you filter it, your domain does not use it. You can add it in the next step.
 
 > [!primary]
 >
-> An SPF record is always in this format: “v=spf1 sources qualifier”. For example, the OVH SPF is: "v=spf1 include:mx.ovh.com ~all".
+> An SPF record always consists of the following form: "v=spf1 `sources` `qualifier`". For example, the OVHcloud SPF is: "v=spf1 include:mx.ovh.com ~all".
 >
 
 ![domain](images/spf_records_check_OVH_configuration.png){.thumbnail}
 
-### Step 3: Modify the SPF
+### Configure SPF record
 
-To modify the SPF record in the OVH configuration of your domain, log in to your [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Select `Domains`{.action} in the services menu on the left-hand side, click on the domain, then go to the `DNS Zone`{.action}.
+To add an SPF record in your domain name’s OVHcloud configuration, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. In the services bar on the left-hand side, go to the `Domains`{.action} section, click on the domain concerned, then go to the `DNS`{.action} zone tab.
 
-The table displays the OVH configuration of your domain. Each row corresponds to a DNS record.
-
-To modify or add an SPF record, you should add a new entry in the OVH configuration (DNS zone) of your domain. To do this, click on `Add an entry`{.action}.
+To add an SPF record, click `Add Entry`{.action}.
 
 ![domain](images/spf_records_add_entry_step1.png){.thumbnail}
 
-In the window that opens, you will be offered several types of DNS record. From here, there are two ways of adding an SPF record:
+In the window that pops up, you are offered several DNS records. There are two ways of adding an SPF record:
 
-- **Manually add the SPF record**. Choose this option if you have already obtained the required information (via your email management provider, or example).
-- **Use our SPF configuration wizard**. Choose this option if you do not have the required information available.
-
-The next steps will be determined by the choice you make here.
+- [Add a TXT](#txtrecord) record: for users who are notified or already have the full record. For example, your email solution provider will send you the value.
+- [Add an SPF](#spfrecord) record: for users who do not have the entire record. For example, you only have an IP address or the host name of the email server.
+- [Add an SPF record ](#spfrecordovhcloud)**and use OVHcloud configuration**: for users who only have OVHcloud email offers on their domain name (excluding [Private Exchange](https://www.ovh.co.uk/emails/hosted-exchange/){.external} and Exchange Provider).
 
 ![domain](images/spf_records_add_entry.png){.thumbnail}
 
-#### Manually add an SPF record
 
-From the record types offered, click on `TXT`{.action}, then enter the requested information. In the `Value`{.action} zone, enter the SPF record that you would like to use.
+#### Add an SPF record <a name="spfrecord"></a>
 
-To complete this action, click on `Next`{.action}. Check that the information you have entered is correct, then click `Confirm`{.action}.
+You have chosen the `SPF`{.action} record.
 
-> [!primary]
->
-> This change can take between 4 and 24 hours to fully propagate.
->
+The configuration wizard enables you to customise your SPF record according to your needs. To do this, you must answer some questions and give the necessary information. Some information requested may be aimed at informed users.
 
-![domain](images/spf_records_add_TXT_entry.png){.thumbnail}
-
-#### Use the OVH SPF configuration wizard
-
-From the record types offered, click on `SPF`{.action}. You will then have two choices:
-
-- Use the SPF record for OVH solutions (MX Plan, Email Pro and Hosted Exchange);
-- Customise the SPF record using our wizard.
-
-##### Use the OVH SPF record
-
-Click on the `Use the SPF for OVH web hosting`{.action}. Information on the OVH SPF record will appear. Click the `Validate`{.action} button to make the change.
-
-> [!primary]
->
-> This change can take between 4 and 24 hours to fully propagate.
->
-
-![domain](images/spf_records_add_entry_step2.png){.thumbnail}
-
-##### Customise the SPF record
-
-The configuration wizard enables you to customise your SPF record according to your needs. This will require you to answer a series of questions and supply certain technical information.
-
-|Details|Description|
-|---|---|
-|Subdomain|Complete if the SPF record must be applied to a subdomain of your domain (if you send emails from a subdomain, for example).|
-|TTL|This is the propagation time that applies when you modify the new DNS record.|
-|Authorise an IP address to send emails.|This might be necessary if your website and email addresses are hosted on a server using the same IP address (a dedicated server, for example).|
-|Authorise the MX servers to send emails.|This might be necessary if the servers that receive your emails can also send them.|
-|Authorise all servers whose name ends with your domain to send emails.|This option is not recommended, as it could allow too many sources to be classified as legitimate in your SPF record.|
+Let’s look at them one by one.
 
 ![domain](images/spf_records_add_entry_personnalize_step1.png){.thumbnail}
 
-Under “**Do other servers send emails for your domain?**”, further information can be added:
+|Details|Description|
+|---|---|
+|Subdomain|Complete if the SPF record must be applied to a subdomain of your domain. This applies if you send emails from a subdomain.|
+|TTL|This is the propagation time that will apply to the configuration of this DNS record.|
+|Authorise an IP address to send emails| Check this box if your website and email addresses are hosted on a server using the same IP address (e.g. on your dedicated server).|
+|Authorise the MX servers to send emails.|Tick if the servers that receive your emails can also send them.|
+|Authorise all servers whose name ends with your domain to send emails.|This option should be used with caution, as it allows a very wide legitimisation of the sending sources using your domain name.|
+
+
+Regarding the question: “**Do other servers send emails for your domain?**”, several elements can be completed:
 
 |Details|Description|
 |---|---|
-|a|Enter the domain names here. This will make it legitimate for the servers hosting these sites to send emails with your addresses.|
-|mx|Enter the servers that receive your emails (MX servers) here if they can also send them. TThey will then be identified as legitimate sending sources.|
-|ptr|Enter the names of hosts for which *reverse DNS* is activated (via a PTR record in the DNS zone). They will then be identified as legitimate sending sources.|
-|ip4|Indicates IP addresses or RIPE blocks (IPv4) authorised to send emails from your domain.|
-|ip6|Indicates IP addresses or RIPE blocks (IPv6) authorised to send emails from your domain.|
-|include|Enter the domain names here. This will enable use of their SPF record for your own domain. For example, OVH uses this method in our SPF configuration: "v=spf1 include:mx.ovh.com ~all". This allows OVH to manage the SPF of mx.ovh.com and to allow our customers to use it.|
+|a|Enter the domain names here. That will make it legitimate for the servers hosting these sites to send emails with your addresses.|
+|mx|Enter the servers that receive your emails (MX servers) here if they can also send them. They will thus be identified as a legitimate sending source.|
+|ptr|Enter the host names for which the *reverse* path works (using a PTR record in the DNS zone). They will thus be identified as a legitimate sending source.|
+|ip4|Indicates IP addresses or RIPE blocks (IPv4) authorised to send emails with your addresses.|
+|ip6|Indicates IP addresses or RIPE blocks (IPv6) authorised to send emails with your addresses.|
+|include|Enter domain names here that include their own SPF rules. This will enable these for your own domain. For example, OVHcloud uses this method in its SPF configuration:  "v=spf1 include:mx.ovh.com ~all", which allows OVHcloud to manage the SPF of mx.ovh.com and allow its customers to use it.|
 
-Finally, under “**Does the information that you have indicated describe all the hosts that send email with your domain?**”, three choices are possible:
+Finally, regarding the question: “**Does the information that you have indicated describe all the hosts that send email with your domain?**”, three choices are possible:
 
 |Details|Description|
 |---|---|
-|Yes, I am sure|This specifies that servers receiving emails from your domain should reject them if they come from illegitimate sources (i.e. ones not present in your SPF record).|
-|Yes, but use safe mode|This specifies that servers receiving emails from your domain should accept them if they come from illegitimate sources, but tag them as potentially illegitimate (as spam, for example).|
-|No|This specifies that servers receiving emails from your domain should accept them if they come from illegitimate sources, without any particular action. However, in such cases, the email header will be increased.|
-
-As a reminder, the SPF record is only an indication provided to servers that receive emails, including yours. It is these servers’ responsibility to apply, or not, what is specified in the SPF record of domains whose messages they receive.
+|Yes, I am sure|Specify that servers receiving emails from your domain should reject them if they come from illegitimate sources (not present in your SPF record).|
+|Yes, but use safe mode|Specify that servers receiving emails from your domain should accept them if they come from illegitimate sources (not present in your SPF record), but tag them as potentially not legitimate (as spam, for example).|
+|No|Specify that servers receiving emails from your domain should accept them if they come from illegitimate sources (not present in your SPF record), without any particular action. The email header will however be increased.|
 
 Once the information is complete, click on `Next`{.action}, ensure that the information that appears is correct, then click `Confirm`{.action}.
 
 > [!primary]
 >
-> This change can take between 4 and 24 hours to fully propagate.
+> The change can take between 4 and 24 hours to propagate fully.
 >
+
+#### Use OVHcloud SPF record <a name="spfrecordovhcloud"></a>
+
+You have chosen the `SPF`{.action} record and would like to apply the OVHcloud configuration.
+
+Click the `Use SPF for shared OVHcloud`{.action} button at the top of the support window. Information about the OVHcloud SPF record will appear. Click on the `Validate`{.action} button to make the change.
+
+![domain](images/spf_records_add_entry_step2.png){.thumbnail}
+
+> [!primary]
+>
+> The change can take between 4 and 24 hours to propagate fully.
+>
+
+#### Add a TXT record <a name="txtrecord"></a>
+
+You have chosen the `SPF`{.action} record.
+
+Among the records offered, click on `TXT`{.action}, then enter the information requested. In the `Value`{.action} zone, enter the SPF record that you would like to use.
+
+To complete this action, click on `Next`{.action}. Check that the information you have entered is correct, then click `Confirm`{.action}.
+
+> [!primary]
+>
+> The change can take between 4 and 24 hours to propagate fully.
+>
+
+![domain](images/spf_records_add_TXT_entry.png){.thumbnail}
+
+### Modify an SPF record
+
+To modify the SPF record in your domain’s OVHcloud configuration, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. In the services bar on the left-hand side, go to the `Domains`{.action} section, click on the domain concerned, then go to the `DNS`{.action} zone tab.
+
+The table displays your domain’s OVHcloud configuration. Each row corresponds to a DNS record. Locate your TXT or SPF record in this table and click the `...`{.action} button to edit the entry.
 
 ## Go further
 
-[General information on DNS servers](https://docs.ovh.com/gb/en/domains/web_hosting_general_information_about_dns_servers/){.external}.
+[Edit an OVHcloud](../web_hosting_how_to_edit_my_dns_zone/){.external} DNS zone.
 
-Join our user community on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+[Editing the DNS servers for an OVHcloud](../web_hosting_general_information_about_dns_servers/){.external} domain name.
+
+Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
