@@ -110,7 +110,7 @@ W oknie, które się wyświetli, pojawi się kilka rekordów DNS. Jeśli chcesz 
 
 - [Dodaj rekord TXT](#txtrecord): dla użytkowników, którzy są ostrzeżeni lub mają już pełny wpis. Na przykład, dostawca rozwiązania poczty elektronicznej przekazuje Ci wartość.
 - [Dodaj rekord SPF](#spfrecord): dla użytkowników, którzy nie posiadają całego rekordu. Na przykład dysponujesz tylko adresem IP lub nazwą hosta serwera e-mail.
-- [Dodaj rekord SPF ](#spfrecordovhcloud)i użyj konfiguracji OVHcloud** **: dla użytkowników posiadających tylko oferty e-mail OVHcloud dla ich domeny (poza [Private Exchange](https://www.ovh.pl/emaile/hosted-exchange/){.external} i Exchange Provider).
+- [Dodaj rekord SPF ](#spfrecordovhcloud)**i użyj konfiguracji OVHcloud**: dla użytkowników posiadających tylko oferty e-mail OVHcloud dla ich domeny (poza [Private Exchange](https://www.ovh.pl/emaile/hosted-exchange/){.external} i Exchange Provider).
 
 ![domena](images/spf_records_add_entry.png){.thumbnail}
 
