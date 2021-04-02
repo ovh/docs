@@ -57,7 +57,7 @@ Sélectionnez maintenant l’instance et cliquez sur `Confirmer`{.action} pour a
 
 Le processus d’attachement du disque à votre instance va alors commencer et peut prendre quelques minutes.
 
-![attacher volume](images/volume04.png){.thumbnail}
+![attacher volume](images/volume05.png){.thumbnail}
 
 > [!warning]
 Vous devez éviter la navigation en dehors de l’onglet en cours pendant l’attachement du disque. Cela peut interrompre le processus.
