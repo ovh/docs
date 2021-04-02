@@ -6,7 +6,7 @@ section: OVHcloud features
 hidden: true
 ---
 
-**Last updated 1st April 2021**
+**Last updated 2nd April 2021**
 
 ## Objective
 
@@ -100,6 +100,13 @@ For virtual machines, you need to [save them in the vSphere inventory](../vspher
 > [!warning]
 > Do not power on your VM before cloning them, otherwise the following error message appears "Unable to write the VMX file".
 >
+
+If you encounter the error message "Unable to write VMX file" or "Error caused by /vmfs/volumes/xxxx/xxx.vmdk file", follow these steps:
+
+- Copy the VM to one of your datastores.
+- Register the VM (if you have not already done so)
+- Clone the VM
+- Power on the VM.
 
 ## Go further
 
