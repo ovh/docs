@@ -31,7 +31,7 @@ L'interface du logiciel est composée de plusieurs zones pouvant être agencées
 
 Si vous avez modifié la disposition des zones et souhaitez revenir à la disposition initiale, cliquez sur la flèche pointant vers le bas, située en haut à droite de chaque zone, puis cliquez sur `Disposition` et `Réinitialiser`.
 
-![réinitialiser zones](images/00-reintialiser-zones.png){.thumbnail}
+![réinitialiser zones](images/00-reinitialiser-zones.png){.thumbnail}
 
 ### Gestion des appels
 
@@ -139,7 +139,7 @@ En bas de cette zone, un bouton vous permet de filtrer le journal par types d'ap
 Vous pouvez voir en temps réel, dans votre annuaire **local**, si des postes supervisés sont soit en communication soit disponibles.
 <br>Ainsi, vous pouvez aisément savoir si vous pouvez ou non transférer un appel à l'un(e) de vos collègues.
 
-Vous pouvez aussi intercepter un appel à destination d'une ligne supervisée, par exemple si l'un(e) de vos collègues est absent(e) et que son téléphone sonne. 
+Vous pouvez aussi intercepter un appel à destination d'une ligne supervisée, par exemple si l'un(e) de vos collègues est absent(e) et que son téléphone sonne.
 
 > [!warning]
 > Pour que la supervision soit fonctionnelle, la ligne supervisée et votre compte SIP doivent se trouver dans le même groupe de facturation OVHcloud.
@@ -160,7 +160,7 @@ Vous pouvez intercepter un appel en vous rendant dans l'annuaire **local**. Fait
 ### Gestion des paramètres
 
 > [!warning]
-> De nombreux paramètres peuvent être modifiés. Si vous rencontrez des difficultés à utiliser le logiciel suite à une personnalisation des réglages, nous vous conseillons de réinitialiser ces derniers en cliquant sur le bouton `Réinitialiser`{.action} situé en bas à droite du volet `Paramètres`.
+> De nombreux paramètres peuvent être modifiés. Si vous rencontrez des difficultés à utiliser le logiciel suite à une personnalisation des paramètres, nous vous conseillons de réinitialiser ces derniers en cliquant sur le bouton `Réinitialiser`{.action} situé en bas à droite du volet `Paramètres`.
 >
 > Vous pourrez alors rétablir les paramètres nécessaires à la configuration de votre ligne SIP OVHcloud en vous aidant
 > de notre guide pour [installer le logiciel POPC](../popc-installation/#configuration-dans-le-logiciel).
