@@ -35,7 +35,19 @@ Si vous n'êtes pas habitué au fonctionnement des API OVHcloud, consultez notre
 
 Vous devez d'abord cibler le filerId à copier.
 
-Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/) et utilisez l'appel suivant :
+Connectez-vous sur [https://api.ovh.com/](https://api.ovh.com/).
+
+Si vous avez déjà récupéré vos accès à l'infrastructure de Strasbourg, utilisez l'appel suivant :
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/filer
+
+Renseignez la variable :
+
+- serviceName : le nom du PCC d'origine situé à SBG (ex: pcc-192-0-2-15).
+
+Si, au contraire, vous n'avez pas encore récupéré vos accès à l'infrastructure de Strasbourg, utilisez l'appel suivant :
 
 > [!api]
 >

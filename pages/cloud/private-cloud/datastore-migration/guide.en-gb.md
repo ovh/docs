@@ -35,7 +35,19 @@ If you are not familiar with using the OVHcloud API, please refer to our [OVHclo
 
 You must first target the `filerId` to migrate.
 
-Log in to [https://api.ovh.com/](https://api.ovh.com/) and use the following call:
+Log in to [https://api.ovh.com/](https://api.ovh.com/).
+
+If you have already retrieved your access to the Strasbourg infrastructure, use the following call:
+
+> [!api]
+>
+> @api {GET} /dedicatedCloud/{serviceName}/filer
+
+Enter the variable:
+
+- serviceName: the name of the source PCC located in SBG (e.g. pcc-192-0-2-15).
+
+If, on the other hand, you have not yet retrieved your access to the Strasbourg infrastructure, use the following call:
 
 > [!api]
 >
