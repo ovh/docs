@@ -22,8 +22,8 @@ Pour chacun des objets listés, quatre situations peuvent se présenter :
 
 ## Prérequis
 
-- [Générer un token Keystone](../../public-cloud/gestion-des-tokens/#etape-2-recuperation-des-variables-token-id-et-endpoint-publicurl).
-- [Préparer l'environment pour utiliser l'API Openstack](../../public-cloud/debuter-avec-lapi-swift/).
+- [Générer un token Keystone](https://docs.ovh.com/fr/public-cloud/gestion-des-tokens/#etape-2-recuperation-des-variables-token-id-et-endpoint-publicurl).
+- [Préparer l'environment pour utiliser l'API Openstack](https://docs.ovh.com/fr/public-cloud/debuter-avec-lapi-swift/).
 
 ## En pratique
 
