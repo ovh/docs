@@ -27,7 +27,7 @@ Pour chacun des objets listés, quatre situations peuvent se présenter :
 
 ## En pratique
 
-### Regénérer un manifeste DLO
+### Régénérer un manifeste DLO
 
 Supposons que le manifeste manquant est situé dans le container nommé `container` et concerne l'objet appelé `large_file`.
 
@@ -55,7 +55,7 @@ $ curl -i -H "X-Auth-Token: $TOKEN" -X PUT -H "Content-Length: 0" -H "x-object-m
 $ swift download container large_file
 ```
 
-### Regénérer un manifeste SLO
+### Régénérer un manifeste SLO
 
 Supposons que le manifeste manquant est situé dans le container nommé `container` et concerne l'objet appelé `large_file`.
 
