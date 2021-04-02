@@ -35,7 +35,7 @@ Esto puede ser útil en los siguientes casos:
 
 ### Crear el disco a partir de un snapshot
 
-Conéctese al área [de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. En la barra de navegación izquierda, haga clic en `Volume Snapshot`{.action} y seleccione `Storage`.
+Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto de Public Cloud correspondiente. En la barra de navegación izquierda, haga clic en `Volume Snapshot`{.action} y seleccione `Storage`.
 
 A la derecha de la copia de seguridad que desee, haga clic en el botón `...`{.action} y, seguidamente, en `Crear un volumen`{.action}.
 
