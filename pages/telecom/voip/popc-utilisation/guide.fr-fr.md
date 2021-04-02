@@ -157,6 +157,8 @@ Des pictogrammes vous permettent de distinguer l'état de la ligne.
 
 Vous pouvez intercepter un appel en vous rendant dans l'annuaire **local**. Faites un clic droit sur la ligne en train de sonner puis cliquez sur `Intercepter`{.action}.
 
+![supervision - intercepter](images/08-supervision-intercepter.png){.thumbnail}
+
 ### Gestion des paramètres
 
 > [!warning]
