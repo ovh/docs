@@ -120,17 +120,17 @@ Des menus similaires vous permettent de supprimer, renommer, exporter un contact
 
 Les différents appels que vous avez reçus et émis sont tous en mémoire dans votre journal d'appels.
 
-![journal](images/07-journal.png){.thumbnail}
-
 Vous pouvez appeler directement l'un de vos correspondants depuis le journal en faisant un double clic sur l'appel ou un clic droit puis `Appeler`{.action}.
-Vous pouvez également ajouter l'un des numéros à un annuaire en faisant un clic droit sur l'appel puis en cliquant sur `Ajouter à`{.action} et en choisissant l'annuaire.
+<br>Vous pouvez également ajouter l'un des numéros à un annuaire en faisant un clic droit sur l'appel puis en cliquant sur `Ajouter à`{.action} et en choisissant l'annuaire.
 
 Les boutons situés en haut du journal vous permettent d'afficher le journal des appels des périodes précédentes.
 
 - Utilisez les boutons `<` et `>` pour passer d'une journée à une autre.
 - Utilisez les boutons `<<` et `>>` pour passer d'une semaine à une autre.
 
-En bas de cette zone, un bouton vous permet de filtrer le journal par types d'appels (entrants, sortants, etc...). Vous y trouverez également un bouton permettant d'afficher une légende des pictogrammes affichés à gauche de chaque appel
+![journal](images/07-journal.png){.thumbnail}
+
+En bas de cette zone, un bouton vous permet de filtrer les entrées du journal par types d'appels (entrants, sortants, etc...). Vous y trouverez également un bouton permettant d'afficher une légende des pictogrammes affichés à gauche de chaque appel
 
 ![journal - filtres et légence](images/07-journal-filtres-legende.png){.thumbnail}
 
