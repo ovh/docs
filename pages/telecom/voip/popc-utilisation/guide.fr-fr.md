@@ -161,12 +161,9 @@ Vous pouvez intercepter un appel en vous rendant dans l'annuaire **local**. Fait
 
 ### Gestion des paramètres
 
-> [!warning]
-> De nombreux paramètres peuvent être modifiés. Si vous rencontrez des difficultés à utiliser le logiciel suite à une personnalisation des paramètres, nous vous conseillons de réinitialiser ces derniers en cliquant sur le bouton `Réinitialiser`{.action} situé en bas à droite du volet `Paramètres`.
->
-> Vous pourrez alors rétablir les paramètres nécessaires à la configuration de votre ligne SIP OVHcloud en vous aidant
-> de notre guide pour [installer le logiciel POPC](../popc-installation/#configuration-dans-le-logiciel).
->
+De nombreux paramètres peuvent être modifiés. Si vous rencontrez des difficultés à utiliser le logiciel suite à une personnalisation des paramètres, nous vous conseillons de réinitialiser ces derniers en cliquant sur le bouton `Réinitialiser`{.action} situé en bas à droite du volet `Paramètres`.
+
+Vous pourrez alors rétablir les paramètres nécessaires à la configuration de votre ligne SIP OVHcloud en vous aidant de notre guide pour [installer le logiciel POPC](../popc-installation/#configuration-dans-le-logiciel).
 
 ## Aller plus loin
 
