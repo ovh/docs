@@ -14,7 +14,7 @@ Following the SBG incident, a very small proportion of the objects contained in 
 For each of the listed objects, there are four situations:
 
 1. The object listed is a simple object: the impact is limited to the object itself.
-2. The object listed is a segment referenced by an SLO manifest: When downloading the Large Object, you will encounter a `409 Conflict` error.
+2. The object listed is a segment referenced by an SLO manifest: When downloading the Large Object, you will encounter a "409 Conflict" error.
 3. The listed object is a segment referenced by a DLO manifest: DLO does not contain a security mechanism, downloading the Large Object will return an incomplete object of the segment in question. The Large Object will be corrupted.
 4. The object listed is a SLO or DLO manifest: if you are able to reconstruct the contents of the manifest, the object will be accessible provided that no segment objects have been destroyed (see points 2 and 3).
 
