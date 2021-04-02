@@ -1,5 +1,5 @@
 ---
-title: "Créer un volume à partir d'un sauvegarde"
+title: "Créer un volume à partir d'une sauvegarde"
 slug: creer-volume-depuis-sauvegarde
 excerpt: "Découvrez comment créer des disques supplémentaires à partir d'une sauvegarde d'un disque supplémentaire"
 section: 'Stockage'

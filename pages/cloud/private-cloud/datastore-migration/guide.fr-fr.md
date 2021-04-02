@@ -6,7 +6,7 @@ section: Fonctionnalités OVHcloud
 hidden: true
 ---
 
-**Dernière mise à jour le 01/04/2021**
+**Dernière mise à jour le 02/04/2021**
 
 ## Objectif
 
@@ -98,10 +98,16 @@ La copie est présentée au travers d'un datastore sur tous les hosts du datacen
 Pour les machines virtuelles, il faut [enregistrer celles-ci dans l'inventaire vSphere](../vsphere-register-vm-vmx) puis les [cloner](../cloner-une-vm) vers un des datastores **avant** de pouvoir les démarrer.
 
 > [!warning]
-> 
+>
 > N'allumez vos VM qu'après les avoir clonées. Dans le cas contraire, vous obtiendrez le message d'erreur « Impossible d’écrire le fichier VMX ».
 >
 
+Si vous rencontrez le message d'erreur « Impossible d’écrire le fichier VMX » ou « Erreur provoquée par le fichier /vmfs/volumes/xxxx/xxx.vmdk », appliquez la procédure suivante :
+
+- copiez la VM vers l'un de vos datastores;
+- enregistrez la VM (si vous ne l'avez pas déjà effectué);
+- clonez la VM;
+- allumez la VM.
 
 ## Aller plus loin
 
