@@ -6,7 +6,7 @@ hidden: true
 ---
 
 **Dernière mise à jour le 02/04/2021**
- 
+
 ## Objectif
 
 Suite à l'incident survenu à SBG, une très petite proportion des objets contenus dans l'Object Storage (PCS) de la région SBG a été irrémédiablement perdue. Les clients dans cette situation ont reçu une communication avec la liste de leurs objects perdus.
@@ -14,7 +14,7 @@ Suite à l'incident survenu à SBG, une très petite proportion des objets conte
 Pour chacun des objets listés, quatre situations peuvent se présenter :
 
 1. L'objet listé est un objet simple : l'impact est circonscrit à l'objet lui-même.
-2. L'objet listé est un segment référencé par un manifeste SLO : lors du téléchargement du « Large Object », vous rencontrerez une erreur de type "`409 Conflict`.
+2. L'objet listé est un segment référencé par un manifeste SLO : lors du téléchargement du « Large Object », vous rencontrerez une erreur de type `409 Conflict`.
 3. L'objet listé est un segment référencé par un manifeste DLO : DLO ne contient pas de mécanisme de sécurité, le téléchargement du « Large Object » retournera un objet incomplet du segment en question. Le « Large Object » sera donc corrompu.
 4. L’objet listé est un manifeste SLO ou DLO : si vous êtes capable de reconstruire le contenu du manifeste, l’objet sera accessible à condition qu’aucun objet segment n’ai été détruit (voir les points 2 et 3).
 
