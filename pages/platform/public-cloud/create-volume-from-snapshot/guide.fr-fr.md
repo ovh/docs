@@ -23,9 +23,9 @@ Cela peut être utile dans les cas suivants :
 ## Prérequis
 
 - Être connecté votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=fr){.external}.
-- Avoir une [Instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external}dans votre compte OVHcloud.
+- Avoir une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/){.external} dans votre compte OVHcloud.
 - Avoir une sauvegarde disque dans la même région OpenStack.
-- Avoir accès à votre instance via SSH en tant qu'administrateur (root)
+- Avoir accès à votre instance via SSH en tant qu'administrateur (root).
 
 ## En pratique
 
@@ -66,5 +66,5 @@ Vous devez éviter la navigation en dehors de l’onglet en cours pendant l’at
 Une fois l'attachement effectué, vous pouvez suivre les étapes suivantes [sous Linux](../creer-et-configurer-un-disque-supplementaire-sur-une-instance/#sous-linux) ou [sous Windows](../creer-et-configurer-un-disque-supplementaire-sur-une-instance/#sous-windows).
 
 ## Aller plus loin
- 
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
