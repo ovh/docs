@@ -22,8 +22,8 @@ For each of the listed objects, there are four situations:
 
 ## Requirements
 
-- [Generating a Keystone token](../../public-cloud/managing_tokens/#step-2-getting-the-token-id-and-endpoint-publicurl-variables).
-- [Preparing the environment to use the OpenStack API](../../public-cloud/getting_started_with_the_swift_api/) 
+- [Generating a Keystone token](../../public-cloud/managing_tokens/#step-2-getting-the-token-id-and-endpoint-publicurl-variables)
+- [Preparing the environment to use the OpenStack API](../../public-cloud/getting_started_with_the_swift_api/)
 
 ## Instructions
 
