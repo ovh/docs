@@ -1,7 +1,7 @@
 ---
-title: 'Transferring a domain name to OVH'
+title: 'Transferring a domain name to OVHcloud'
 slug: transfer-generic-domain
-excerpt: 'Find out how to transfer a generic domain name to OVH'
+excerpt: 'Find out how to transfer a generic domain name to OVHcloud'
 section: Transfer
 order: 1
 ---
@@ -10,9 +10,9 @@ order: 1
 
 ## Objective
 
-By transferring your domain name, you will change your domain name registrar. You can transfer your domain name to OVH, and the process usually takes between 1 and 10 days.
+By transferring your domain name, you will change your domain name registrar. You can transfer your domain name to OVHcloud, and the process usually takes between 1 and 10 days.
 
-**Find out how to transfer a generic domain name to OVH.**
+**Find out how to transfer a generic domain name to OVHcloud.**
 
 ## Requirements
 
@@ -26,15 +26,15 @@ By transferring your domain name, you will change your domain name registrar. Yo
 
 ## Instructions
 
-Your domain name is currently filed with a registrar. Are you looking to transfer it to OVH? If so, you can do this by following a transfer procedure.
+Your domain name is currently filed with a registrar. Are you looking to transfer it to OVHcloud ? If so, you can do this by following a transfer procedure.
 
-The transfer procedure has several steps. These steps will involve various entities being contacted, including your current domain name registrar, OVH, and other parties. The table below provides a breakdown of who is contacted, and how long each step will take to complete.
+The transfer procedure has several steps. These steps will involve various entities being contacted, including your current domain name registrar, OVHcloud, and other parties. The table below provides a breakdown of who is contacted, and how long each step will take to complete.
 
 |Steps|Description|Who is involved?|Where?|Time taken|
 |---|---|---|---|---|
 |1|Checking the information associated with the domain|The domain administrator|With the current registrar|Depends on your actions|
 |2|Unlocking the domain and retrieving the transfer code|The domain administrator, with the holder’s permission|With the current registrar|Depends on your actions|
-|3|Requesting the domain name transfer|Whoever has the transfer code, also with the holder’s permission|With the new registrar (e.g. OVH)|Depends on your actions|
+|3|Requesting the domain name transfer|Whoever has the transfer code, also with the holder’s permission|With the new registrar (e.g. OVHcloud)|Depends on your actions|
 |4|The first transfer validation step|The domain name holder and the admin inform the new domain name registrar|Via email|Five days maximum|
 |5|The second transfer validation step|The current registrar|Via a request from the organisation managing the domain name extension|Five days maximum|
 
@@ -66,16 +66,16 @@ Please note that OVHcloud is not your current domain name registrar. We are, the
 
 > [!warning]
 >
-> Once you have unlocked your domain name, you will have 7 days to begin transferring it to OVH. After this 7-day period, your domain will be locked automatically if you do not submit a request to change your domain name registrar.
+> Once you have unlocked your domain name, you will have 7 days to begin transferring it to OVHcloud. After this 7-day period, your domain will be locked automatically if you do not submit a request to change your domain name registrar.
 >
 
-### Step 3: Request a domain name transfer to OVH.
+### Step 3: Request a domain name transfer to OVHcloud
 
-Now that your domain name is unlocked and you have your transfer code, you can request for your domain name to be transferred to OVH. To do this, you will need to order a domain name transfer on [our website](https://www.ovh.co.uk/){.external}. Enter your domain name, and follow the order process.
+Now that your domain name is unlocked and you have your transfer code, you can request for your domain name to be transferred to OVHcloud. To do this, you will need to order a domain name transfer on [our website](https://www.ovh.co.uk/){.external}. Enter your domain name, and follow the order process.
 
 When you are asked to provide your transfer code, enter it in the box next to your domain name. If you do not have the transfer code, you can tick a box labelled `Enter transfer code at a later stage`{.action}. However, we strongly advise ensuring that you have the code to hand before you continue any further.
 
-You can also complete your order with a [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}, and other OVHcloud solutions. This may be of interest to you, if you are also looking to migrate your services to OVH. Our guide on [Migrating your website and emails to OVH](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external} will provide you with instructions on how to do this.
+You can also complete your order with a [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}, and other OVHcloud solutions. This may be of interest to you, if you are also looking to migrate your services to OVHcloud. Our guide on [Migrating your website and emails to OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external} will provide you with instructions on how to do this.
 
 > [!warning]
 >
@@ -90,14 +90,14 @@ Once you receive the purchase order, pay the amount requested for the transfer p
 
 ### Step 4: Complete the first transfer validation step.
 
-Now that you have launched the transfer procedure, it will need to go through two validation steps. The first step will take a maximum of five days. It begins as soon as the transfer process begins, with two validation requests being sent out. 
+Now that you have launched the transfer procedure, it will need to go through two validation steps. The first step will take a maximum of five days. It begins as soon as the transfer process begins, with two validation requests being sent out.
 
 |Who receives these validation requests?|Where is the validation request sent to?|
 |---|---|
-|The domain name holder|To the holder’s email address, stored in WHOIS (if it is visible). Otherwise, it is sent to the domain name holder’s email address, entered during the order process from OVH.|
-|The administrator listed during the order process from OVH.|To the email address listed under the administrator’s profile at OVH|
+|The domain name holder|To the holder’s email address, stored in WHOIS (if it is visible). Otherwise, it is sent to the domain name holder’s email address, entered during the order process from OVHcloud.|
+|The administrator listed during the order process from OVHcloud.|To the email address listed under the administrator’s profile at OVHcloud|
 
-The two parties provide their validation through an OVHcloud interface. A link to the interface is provided in the emails sent. 
+The two parties provide their validation through an OVHcloud interface. A link to the interface is provided in the emails sent.
 
 ![domain](images/domaintransfer_gTLD_validationv2.png){.thumbnail}
 
@@ -114,7 +114,7 @@ If a transfer is cancelled, please ensure that the various parties are in agreem
 
 ### Step 5: The second transfer validation step.
 
-Once the second step has been initiated, the current domain name registrar (which is still not OVH) will receive a validation request. There are several possible outcomes to this stage, depending on the actions taken.
+Once the second step has been initiated, the current domain name registrar (which is still not OVHcloud) will receive a validation request. There are several possible outcomes to this stage, depending on the actions taken.
 
 |Action|Outcome|
 |---|---|
@@ -124,7 +124,7 @@ Once the second step has been initiated, the current domain name registrar (whic
 
 If a refusal response is sent by the current registrar, please contact them to find out why they refused it. The transfer process can be restarted from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} in the `Domains`{.action} section, then `Ongoing operations`{.action}.
 
-### Step 6: Manage your domain with OVH.
+### Step 6: Manage your domain with OVHcloud.
 
 Once the transfer procedure is complete, you can manage your domain from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 
@@ -132,6 +132,6 @@ To do this, click `Domains`{.action} in the services bar on the left-hand side, 
 
 ## Go further
 
-[Migrating your website and emails to OVH](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}
+[Migrating your website and emails to OVHcloud](https://docs.ovh.com/gb/en/hosting/migrating-website-to-ovh/){.external}
 
 Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

@@ -1,7 +1,7 @@
 ---
-title: 'Transferir o nome de domínio para a OVH'
+title: 'Transferir o nome de domínio para a OVHcloud'
 slug: transferir-o-dominio-generico
-excerpt: 'Saiba como transferir um nome de domínio para a OVH'
+excerpt: 'Saiba como transferir um nome de domínio para a OVHcloud'
 section: Transferência
 order: 1
 ---
@@ -11,9 +11,9 @@ order: 1
 
 ## Sumário
 
-A transferência de um domínio permite alterar o agente registador que o gere. Uma das possibilidades consiste em transferi-lo para a OVH. Esta operação demorará entre um a dez dias.
+A transferência de um domínio permite alterar o agente registador que o gere. Uma das possibilidades consiste em transferi-lo para a OVHcloud. Esta operação demorará entre um a dez dias.
 
-**Saiba como transferir um nome de domínio genérico para a OVH.**
+**Saiba como transferir um nome de domínio genérico para a OVHcloud.**
 
 ## Requisitos
 
@@ -26,18 +26,17 @@ A transferência de um domínio permite alterar o agente registador que o gere. 
 - Dispor do código de transferência ou ter a possibilidade de o obter.
 - Ter informado o proprietário do nome de domínio e/ou os seus administradores do pedido de transferência.
 
-
 ## Instruções
 
-Se tiver um domínio registado com outro fornecedor e pretende mudar de agente registador, pode transferi-lo para a OVH.
+Se tiver um domínio registado com outro fornecedor e pretende mudar de agente registador, pode transferi-lo para a OVHcloud.
 
-A operação de transferência divide-se em várias etapas e engloba várias entidades, incluindo o agente registador atual e a OVH. A tabela abaixo indica as etapas de uma transferência.
+A operação de transferência divide-se em várias etapas e engloba várias entidades, incluindo o agente registador atual e a OVHcloud. A tabela abaixo indica as etapas de uma transferência.
 
 |Etapa|Descrição|Quem está envolvido?|Onde?|Prazo|
 |---|---|---|---|---|
 |1|Verificar a informação relativa ao domínio|O administrador do domínio|O agente registador atual|Depende das suas ações|
 |2|Desbloquear o domínio e obter o código de transferência|O administrador do domínio, com a autorização do proprietário|O agente registador atual|Depende das suas ações|
-|3|Solicitar a transferência do domínio|Qualquer pessoa que disponha do código de transferência, com o consentimento do proprietário|No novo agente registador (a OVH, por exemplo)|Depende das suas ações|
+|3|Solicitar a transferência do domínio|Qualquer pessoa que disponha do código de transferência, com o consentimento do proprietário|No novo agente registador (a OVHcloud, por exemplo)|Depende das suas ações|
 |4|Realizar a primeira etapa de validação da transferência|O proprietário do nome de domínio e o administrador indicam o novo servidor de registo do nome de domínio|Por e-mail|5 dias, no máximo|
 |5|Realizar a segunda etapa de validação da transferência|O agente registador atual|Através de um pedido enviado pela entidade que gere a extensão do domínio|5 dias, no máximo|
 
@@ -69,16 +68,16 @@ Tenha em atenção que a OVHcloud não é o agente registador atual do seu nome 
 
 > [!warning]
 >
-> Assim que desbloquear o seu nome de domínio, dispõe de sete dias para iniciar a sua transferência para a OVH. Depois deste prazo, o domínio será automaticamente bloqueado caso não tenha sido feito um pedido de alteração do agente registador.
+> Assim que desbloquear o seu nome de domínio, dispõe de sete dias para iniciar a sua transferência para a OVHcloud. Depois deste prazo, o domínio será automaticamente bloqueado caso não tenha sido feito um pedido de alteração do agente registador.
 >
 
-### 3 - Solicitar a transferência do domínio para a OVH
+### 3 - Solicitar a transferência do domínio para a OVHcloud
 
-Agora que o seu domínio está desbloqueado e que dispõe do código de transferência, pode solicitar a transferência para a OVH. Para isso, deverá realizar uma encomenda através do [nosso site](https://www.ovh.pt){.external}. Introduza o seu nome de domínio e siga os passos da encomenda.
+Agora que o seu domínio está desbloqueado e que dispõe do código de transferência, pode solicitar a transferência para a OVHcloud. Para isso, deverá realizar uma encomenda através do [nosso site](https://www.ovh.pt){.external}. Introduza o seu nome de domínio e siga os passos da encomenda.
 
 Quando for necessário indicar o código de transferência, introduza-o no campo ao lado do seu nome de domínio. Se não tem o código de transferência consigo, poderá selecionar a opção `Indicar o código de transferência mais tarde`{.action}. No entanto, sugerimos que se certifique de que tem este código à sua disposição antes de continuar.
 
-Poderá concluir a sua encomenda com uma oferta de [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external} ou outra solução da OVH. Isto pode ser interessante se pretender migrar os seus serviços para a OVH. O nosso manual “[Como migrar um site e e-mails para a OVH?](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external}” irá fornecer-lhe as instruções necessárias para realizar os procedimentos.
+Poderá concluir a sua encomenda com uma oferta de [alojamento web](https://www.ovh.pt/alojamento-partilhado/){.external} ou outra solução da OVHcloud. Isto pode ser interessante se pretender migrar os seus serviços para a OVHcloud. O nosso manual “[Como migrar um site e e-mails para a OVHcloud?](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external}” irá fornecer-lhe as instruções necessárias para realizar os procedimentos.
 
 > [!warning]
 >
@@ -89,7 +88,7 @@ Poderá concluir a sua encomenda com uma oferta de [alojamento web](https://www.
 > - **Os servidores DNS do domínio:** se o domínio for utilizado por um website ou um serviço de correio, especifique os servidores DNS configurados para evitar uma interrupção do serviço.
 >
 
-Quando a nota de encomenda aparecer, efetue o pagamento para que a transferência possa ser iniciada.  O procedimento apenas será iniciado após o pagamento. De seguida, poderá acompanhar a transferência a partir da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Basta aceder à secção `Domínios`{.action} na barra lateral à esquerda e, em seguida, clicar em `Operações em curso`{.action}.
+Quando a nota de encomenda aparecer, efetue o pagamento para que a transferência possa ser iniciada.  O procedimento apenas será iniciado após o pagamento. De seguida, poderá acompanhar a transferência a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Basta aceder à secção `Domínios`{.action} na barra lateral à esquerda e, em seguida, clicar em `Operações em curso`{.action}.
 
 ### 4 - Realizar a primeira etapa de validação da transferência
 
@@ -97,10 +96,10 @@ Para efetuar a transferência do domínio, é necessário passar por duas etapas
 
 |Quem recebe o pedido de validação?|Para onde é enviado o pedido de validação?|
 |---|---|
-|O proprietário do domínio|Para o endereço de e-mail do proprietário indicado no Whois (caso esteja visível). Caso contrário, para o endereço de e-mail do proprietário do domínio indicado no processo de encomenda na OVH|
-|O administrador referido durante a encomenda na OVH|Para o endereço de e-mail indicado no perfil de administrador na OVH|
+|O proprietário do domínio|Para o endereço de e-mail do proprietário indicado no Whois (caso esteja visível). Caso contrário, para o endereço de e-mail do proprietário do domínio indicado no processo de encomenda na OVHcloud|
+|O administrador referido durante a encomenda na OVHcloud|Para o endereço de e-mail indicado no perfil de administrador na OVHcloud|
 
-A validação das duas partes é realizada através de uma interface da OVH. Para aceder, utilize a ligação fornecida nos e-mails enviados. 
+A validação das duas partes é realizada através de uma interface da OVHcloud. Para aceder, utilize a ligação fornecida nos e-mails enviados. 
 
 ![](https://docs.ovh.com/cz/cs/domains/prevod-genericke-domeny/images/domaintransfer_gTLD_validation.png)
 
@@ -113,11 +112,11 @@ Dependendo das ações realizadas pelo proprietário do domínio e o administrad
 |Nenhum dos contactos responde ao pedido|A transferência passa para a segunda etapa de validação no prazo de cinco dias|
 |Um dos contactos recusa o pedido|A transferência é cancelada quando existe uma notificação de recusa por parte de um dos contactos|
 
-Em caso de cancelamento da transferência, certifique-se de que as diferentes partes concordam e que os seus endereços de e-mail estão atualizados. O processo poderá ser executado mais tarde na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, através da secção `Domínios`{.action} e, em seguida, em `Operações em curso`{.action}.
+Em caso de cancelamento da transferência, certifique-se de que as diferentes partes concordam e que os seus endereços de e-mail estão atualizados. O processo poderá ser executado mais tarde na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, através da secção `Domínios`{.action} e, em seguida, em `Operações em curso`{.action}.
 
 ### 5 - Realizar a segunda etapa de validação da transferência
 
-Na segunda fase, o agente registador (que ainda não é a OVH) receberá um pedido de validação. Aqui também podem ocorrer várias situações.
+Na segunda fase, o agente registador (que ainda não é a OVHcloud) receberá um pedido de validação. Aqui também podem ocorrer várias situações.
 
 |Cenários|Resultado|
 |---|---|
@@ -125,14 +124,14 @@ Na segunda fase, o agente registador (que ainda não é a OVH) receberá um pedi
 |O agente registador não responde ao pedido|A transferência é realizada no prazo de cinco dias|
 |O agente registador atual recusa o pedido|A transferência é cancelada quando existe uma notificação de recusa|
 
-Caso o agente registador atual recuse a transferência, sugerimos que o contacte para saber o motivo. O processo poderá ser reiniciado na [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, através da secção `Domínios`{.action} e, em seguida, em `Operações em curso`{.action}.
+Caso o agente registador atual recuse a transferência, sugerimos que o contacte para saber o motivo. O processo poderá ser reiniciado na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, através da secção `Domínios`{.action} e, em seguida, em `Operações em curso`{.action}.
 
-### 6 - Gerir o nome de domínio na OVH
+### 6 - Gerir o nome de domínio na OVHcloud
 
-Uma vez concluído o processo de transferência, poderá gerir o domínio através da [Área de Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Para isso, clique em `Domínios`{.action} na barra de serviços à esquerda e, em seguida, selecione o nome de domínio correspondente.
+Uma vez concluído o processo de transferência, poderá gerir o domínio através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Para isso, clique em `Domínios`{.action} na barra de serviços à esquerda e, em seguida, selecione o nome de domínio correspondente.
 
 ## Quer saber mais?
 
-[Como migrar um site e e-mails para a OVH?](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external}
+[Como migrar um site e e-mails para a OVHcloud?](https://docs.ovh.com/pt/hosting/migrar-site-para-ovh/){.external}
 
 Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}

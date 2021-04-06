@@ -71,7 +71,7 @@ Tenga en cuenta que OVHcloud no es el actual agente registrador del dominio, por
 > Una vez desbloqueado el dominio, dispone de 7 días para solicitar su transferencia a OVHcloud. Pasado ese plazo, el dominio volverá a bloquearse si no se ha realizado ninguna solicitud de cambio de agente registrador.
 >
 
-### 3. Solicitar la transferencia del dominio a OVH
+### 3. Solicitar la transferencia del dominio a OVHcloud
 
 Una vez desbloqueado el dominio, y con el código de transferencia en su poder, puede solicitar la transferencia a OVHcloud desde nuestro [sitio web](https://www.ovh.com/){.external}. Para ello, introduzca el dominio en el campo de registro de un dominio y continúe con el pedido.
 

@@ -36,7 +36,7 @@ Für den Domaintransfer sind mehrere Schritte notwendig, für die eine Kontaktau
 |---|---|---|---|---|
 |1|Domaininformationen überprüfen|Administrator der Domain|Beim aktuellen Registrar|Entsprechend Ihrem Vorgehen|
 |2|Domain freigeben und Transfer-Code beantragen|Administrator der Domain, mit Genehmigung des Inhabers|Beim aktuellen Registrar|Entsprechend Ihrem Vorgehen|
-|3|Domaintransfer beantragen|Jeder, der im Besitz des Transfer-Codes ist, stets mit Genehmigung des Inhabers|Beim zukünftigen Registrar (zum Beispiel OVH)|Entsprechend Ihrem Vorgehen|
+|3|Domaintransfer beantragen|Jeder, der im Besitz des Transfer-Codes ist, stets mit Genehmigung des Inhabers|Beim zukünftigen Registrar (zum Beispiel OVHcloud)|Entsprechend Ihrem Vorgehen|
 |4|Erster Schritt der Transferbestätigung|Domaininhaber und Administrator informieren den neuen Registrar der Domain.|Per E-Mail|Maximal fünf Tage|
 |5|Zweiter Schritt der Transferbestätigung|Ihr aktueller Registrar|Via Anfrage der Organisation, die Ihre Domainendung verwaltet|Maximal fünf Tage|
 
@@ -77,7 +77,7 @@ Nun, da Ihre Domain freigegeben ist und Sie über den Transfer-Code verfügen, k
 
 Wenn Sie den Transfer-Code eingeben sollen, tragen Sie ihn in das Feld neben Ihrer Domain ein. Wenn Sie diesen noch nicht erhalten haben, können Sie das Kästchen `Den Authentifizierungscode später angeben`{.action} ankreuzen. Wir empfehlen Ihnen jedoch dringend, vorab sicherzustellen, dass Sie den Transfer-Code erhalten, bevor Sie den Transferprozess fortsetzen.
 
-Sie haben außerdem die Möglichkeit, Ihre Bestellung mit einem [Webhosting Angebot](https://www.ovh.de/hosting/){.external} oder anderen OVHcloud Lösungen zu ergänzen. Das kann nützlich sein, wenn Sie auch Ihre Dienste zu OVHcloud migrieren möchten. Die Anleitung „[Migration Ihrer Website und E-Mails zu OVH](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/){.external}“ bietet Ihnen einen Überblick, wie Sie in diesem Fall vorgehen.
+Sie haben außerdem die Möglichkeit, Ihre Bestellung mit einem [Webhosting Angebot](https://www.ovh.de/hosting/){.external} oder anderen OVHcloud Lösungen zu ergänzen. Das kann nützlich sein, wenn Sie auch Ihre Dienste zu OVHcloud migrieren möchten. Die Anleitung „[Migration Ihrer Website und E-Mails zu OVHcloud](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/){.external}“ bietet Ihnen einen Überblick, wie Sie in diesem Fall vorgehen.
 
 > [!warning]
 >
@@ -116,7 +116,7 @@ Falls der Transfer abgebrochen wird, überprüfen Sie bitte, dass die verschiede
 
 ### Schritt 5: Zweiter Schritt der Transferbestätigung
 
-Sobald der zweite Schritt eingeleitet wird, erhält der aktuelle Registrar (noch nicht OVH) eine Bestätigungsanfrage. Auch hier sind wieder je nach vorgenommener Aktion mehrere Ergebnisse möglich.
+Sobald der zweite Schritt eingeleitet wird, erhält der aktuelle Registrar (noch nicht OVHcloud) eine Bestätigungsanfrage. Auch hier sind wieder je nach vorgenommener Aktion mehrere Ergebnisse möglich.
 
 |Aktion|Ergebnis|
 |---|---|
@@ -132,6 +132,6 @@ Sobald der Transfer abgeschlossen ist, können Sie die Domain über Ihr [OVHclou
 
 ## Weiterführende Informationen
 
-[Migration Ihrer Website und E-Mails zu OVH](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/){.external}
+[Migration Ihrer Website und E-Mails zu OVHcloud](https://docs.ovh.com/de/hosting/migration-ihrer-website-zu-ovh/){.external}
 
 Für den Austausch mit unserer User Community gehen Sie auf [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
