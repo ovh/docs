@@ -142,7 +142,7 @@ Vous pouvez voir en temps réel, dans votre annuaire **local**, si des postes su
 Vous pouvez aussi intercepter un appel à destination d'une ligne supervisée, par exemple si l'un(e) de vos collègues est absent(e) et que son téléphone sonne.
 
 > [!warning]
-> Pour que la supervision soit fonctionnelle, la ligne supervisée et votre compte SIP doivent se trouver dans le même groupe de facturation OVHcloud.
+> Pour que la supervision soit fonctionnelle, la ligne supervisée et votre compte SIP doivent se trouver dans le même groupe de facturation OVHcloud. Retrouvez plus d'informations dans notre guide pour [gérer vos groupes de téléphonie](../gestion-des-groupes-de-telephonie/#regrouper-lignes).
 >
 
 Pour activer la supervision, faites un clic droit sur une ligne à superviser, cliquez sur `Contact`{.action} puis `Présence`{.action} et enfin sur `Activer`{.action}.
