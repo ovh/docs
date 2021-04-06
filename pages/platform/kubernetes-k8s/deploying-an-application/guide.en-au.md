@@ -45,7 +45,7 @@ OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the
 
 The following command will deploy a simple application (nginx image) using a [Kubernetes Deployment](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/) and a [Kubernetes Service](https://kubernetes.io/docs/concepts/services-networking/service/).
 
-Create a `hello.yaml` file for our `ovhplatform/hello` Docker image:
+Create a `hello.yml` file for our `ovhplatform/hello` Docker image:
 
 ```yaml
 apiVersion: v1

@@ -3,9 +3,10 @@ title: 'Configurare un NIC per il servizio OVHcloud Link Aggregation in Windows 
 slug: ola-w2k19
 excerpt: "Attivare l'opzione OVHcloud Link Aggregation sul tuo server Windows Server 2019"
 section: 'Utilizzo avanzato'
+order: 4
 ---
 
-**Ultimo aggiornamento: 11/11/2019**
+**Ultimo aggiornamento: 25/03/2021**
 
 ## Obiettivo
 
@@ -15,15 +16,19 @@ La tecnologia OVHcloud Link Aggregation (OLA) è stata progettata dai team OVHcl
 
 ## Prerequisiti
 
-[Configurare un NIC per il servizio OVHcloud Link Aggregation nello Spazio Cliente](https://docs.ovh.com/it/dedicated/ola-manager){.external}
+- [Configurare un NIC per il servizio OVHcloud Link Aggregation nello Spazio Cliente](../ola-manager)
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
-Il tipo di configurazione disponibile in OLA per i nostri NIC non permette di accedere al server in RDP. Per stabilire la connessione alla macchina è quindi necessario utilizzare IPMI. Per attivare il tool effettua il login allo [Spazio Cliente](https://www.ovh.com/manager/){.external}, seleziona il server nel menu a sinistra e clicca sulla scheda `IPMI`{.action}.
+Il tipo di configurazione disponibile in OLA per i nostri NIC non permette di accedere al server in SSH. Per stabilire la connessione alla macchina è quindi necessario utilizzare IPMI.
+<br>Per attivare il tool accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella sezione `Bare Metal Cloud`{.action}, clicca su `Server dedicati`{.action} nel menu a sinistra, seleziona il tuo server e clicca sulla scheda `IPMI`{.action} (1).
 
-![remote kvm](images/remote_kvm.png){.thumbnail}
+Clicca sul pulsante `Da una applet Java (KVM)`{.action} (2).
 
-Clicca sul pulsante `Da una applet Java (KVM)`{.action}. Verrà scaricato un programma JNLP: aprilo e utilizza le credenziali associate al server per accedere.
+![remote_kvm](images/remote_kvm2021.png){.thumbnail}
+
+Verrà scaricato un programma JNLP: aprilo e utilizza le credenziali associate al server per accedere.
 
 Una volta effettuato il login alla macchina, apri Server Manager (se non si apre di default, è disponibile nel menu **Start**).
 
@@ -45,7 +50,7 @@ Potrebbero essere necessari un paio di minuti prima che il team NIC risulti onli
 
 ![network button](images/network_button.png){.thumbnail}
 
-Clicca su `Change adapter options`{.action}. 
+Clicca su `Change adapter options`{.action}.
 
 ![ethernet](images/ethernet.png){.thumbnail}
 
@@ -57,12 +62,18 @@ Nella nuova finestra, clicca due volte su `Internet Protocol Version 4 (TCP/IPv4
 
 ![ipv4](images/ipv4.png){.thumbnail}
 
-Seleziona `Use the following IP address`{.action} e aggiungi l’IP privato e la sottorete scelta. Una volta verificata la correttezza delle impostazioni, clicca su `OK`{.action}. 
+Seleziona `Use the following IP address`{.action} e aggiungi l’IP privato e la sottorete scelta. Una volta verificata la correttezza delle impostazioni, clicca su `OK`{.action}.
 
 ![ipv42](images/ipv42.png){.thumbnail}
 
 Per testare il corretto funzionamento del nuovo NIC team creato, effettua il ping di un altro server presente nella stessa vRack. Se funziona, la procedura è conclusa. In caso contrario, verifica nuovamente la configurazione o prova a riavviare il server.
 
-## Conclusioni
+## Per saperne di più
 
-OVHcloud offre ai clienti la libertà e la flessibilità di sfruttare il potenziale dell'hardware in modo che si adatti alle proprie esigenze. A questo punto dovresti essere in grado di configurare OVHcloud Link Aggregation (OLA) sul tuo sistema Windows Server 2019 e utilizzare le Network Interface Controller come interfacce private aggregate.
+[Configurare un NIC per il servizio OVHcloud Link Aggregation nello Spazio Cliente](../ola-manager/).
+
+[Configurare un NIC per il servizio OVHcloud Link Aggregation in Debian 9](../ola-debian9/).
+
+[Configurare un NIC per il servizio OVHcloud Link Aggregation in CentOS 7](../ola-centos7/).
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

@@ -3,9 +3,10 @@ title: 'Configurer votre NIC pour la fonctionnalité OVHcloud Link Aggregation s
 slug: ola-w2k19
 excerpt: 'Activer OVHcloud Link Aggregation sur votre serveur « Windows Server 2019 »'
 section: 'Utilisation avancée'
+order: 4
 ---
 
-**Dernière mise à jour le 24 octobre 2019**.
+**Dernière mise à jour le 23/03/2021.**
 
 ## Objectif
 
@@ -15,17 +16,21 @@ La technologie OVHcloud Link Aggregation (OLA) est conçue par nos équipes pour
 
 ## Prérequis
 
-- [Configurer votre NIC pour la fonctionnalité OVHcloud Link Aggregation depuis l’espace client OVHcloud](../ola-manager){.external}
+- [Avoir configuré votre NIC pour la fonctionnalité OVHcloud Link Aggregation depuis l’espace client OVHcloud](../ola-manager)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 ## En pratique
 
-Étant donné que nous avons une configuration privée-privée pour nos NIC sur OLA, il est impossible de se connecter en RDP au serveur. Par conséquent, vous devez utiliser l’outil IPMI pour accéder au serveur. Pour cela, vous devez d'abord vous connecter à [l’espace client d’OVHcloud](https://ca.ovh.com/manager/){.external}.  Sélectionnez ensuite le serveur que vous souhaitez configurer dans la barre latérale gauche et cliquez sur l’onglet `IPMI`{.action}.
+Étant donné que nous avons une configuration privée-privée pour nos NIC sur OLA, il est impossible de se connecter en SSH au serveur. Par conséquent, vous devrez utiliser l’outil IPMI pour accéder au serveur.
+<br>Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et sélectionnez l'onglet `Bare Metal Cloud`{.action}. Cliquez sur `Serveurs dédiés`{.action} dans le menu de gauche et sélectionnez votre serveur dans la liste.
 
-![remote kvm](images/remote_kvm_2020.png){.thumbnail}
+Cliquez ensuite sur l'onglet `IPMI`{.action} (1) puis sur le bouton `Depuis un applet Java (KVM)`{.action} (2).
 
-Cliquez ensuite sur le bouton `Depuis un applet Java (KVM)`{.action}. Un logiciel JNLP sera téléchargé. Lancez ce logiciel pour accéder à l’IPMI. Connectez-vous en utilisant les informations d’identification associées au serveur.
+![remote kvm](images/remote_kvm2021.png){.thumbnail}
 
-Une fois connecté au serveur, ouvrez le « Gestionnaire de serveur ». S’il n’est pas ouvert par défaut, il sera affiché dans le menu « Démarrer ». 
+Un logiciel JNLP sera téléchargé. Lancez le logiciel pour accéder à l’IPMI. Connectez-vous en utilisant les informations d’identification associées au serveur.
+
+Une fois connecté au serveur, ouvrez le « Gestionnaire de serveur ». S’il n’est pas ouvert par défaut, il sera affiché dans le menu « Démarrer ».
 
 ![server manager](images/local_server.png){.thumbnail}
 
@@ -45,7 +50,7 @@ La mise en ligne de l’équipe NIC peut prendre deux minutes. Cliquez ensuite s
 
 ![network button](images/network_button.png){.thumbnail}
 
-Cliquez alors sur le bouton `Changer les options de l’adaptateur`{.action}. 
+Cliquez alors sur le bouton `Changer les options de l’adaptateur`{.action}.
 
 ![ethernet](images/ethernet.png){.thumbnail}
 
@@ -57,12 +62,18 @@ Dans la fenêtre qui s’ouvre, faites un double clic sur `Protocole Internet Ve
 
 ![ipv4](images/ipv4.png){.thumbnail}
 
-Cliquez sur le bouton à côté de « Utiliser l’adresse IP suivante » et ajoutez l’IP et le sous-réseau privés que vous avez choisis. Cliquez sur le bouton `OK`{.action} après avoir vérifié que vos paramètres sont corrects. 
+Cliquez sur le bouton à côté de « Utiliser l’adresse IP suivante » et ajoutez l’IP et le sous-réseau privés que vous avez choisis. Cliquez sur le bouton `OK`{.action} après avoir vérifié que vos paramètres sont corrects.
 
 ![ipv42](images/ipv42.png){.thumbnail}
 
 Pour vérifier que votre équipe NIC fonctionne, effectuez un ping vers un autre serveur sur le même vRack.  Si cela fonctionne, le processus de configuration est terminé. Si ce n’est pas le cas, vérifiez vos configurations ou essayez de redémarrer le serveur.
 
-## Conclusion
+## Aller plus loin
 
-OVHcloud vous offre la liberté et la flexibilité nécessaires pour utiliser votre matériel de la manière la plus adaptée à vos besoins. Maintenant que vous avez lu ce guide, vous devriez pouvoir configurer OLA (OVHcloud Link Aggregation) sur Windows Server 2019 afin d’utiliser vos deux NIC comme interfaces privées agrégées. 
+[Configurer l’agrégation de liens OLA dans votre espace client](../ola-manager/).
+
+[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous CentOS 7](../ola-centos7/).
+
+[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Debian 9](../ola-debian9/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
