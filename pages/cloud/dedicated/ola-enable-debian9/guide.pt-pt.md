@@ -3,17 +3,21 @@ title: 'Como configurar a NIC para o OVHcloud Link Aggregation em Debian 9'
 slug: ola-debian9
 excerpt: 'Ative o OVHcloud Link Aggregation no seu servidor Debian 9'
 section: 'Uso avançado'
+order: 2
 ---
 
-**Última atualização: 04/12/2019**
+**Última atualização: 25/03/2021**
 
 ## Sumário
 
-A tecnologia OVHcloud Link Aggregation (OLA) foi criada pelas nossas equipas para aumentar a disponibilidade do seu servidor e aumentar a eficiência das suas ligações de rede. Em apenas alguns cliques, pode agregar as suas placas de rede e tornar as suas ligações de rede redundantes. Isto significa que se uma ligação for interrompida, o tráfego é automaticamente redirecionado para outra ligação disponível. Neste manual, explicaremos como ligar as suas NIC para as utilizar para o OLA em Debian 9.  
+A tecnologia OVHcloud Link Aggregation (OLA) foi criada pelas nossas equipas para aumentar a disponibilidade do seu servidor e aumentar a eficiência das suas ligações de rede. Em apenas alguns cliques, pode agregar as suas placas de rede e tornar as suas ligações de rede redundantes. Isto significa que se uma ligação for interrompida, o tráfego é automaticamente redirecionado para outra ligação disponível.
+
+**Neste manual, explicaremos como ligar as suas NIC para as utilizar para o OLA em Debian 9.**
 
 ## Requisitos
 
-[Como configurar a sua NIC para o OVHcloud Link Aggregation na Área de Cliente OVHcloud](https://docs.ovh.com/pt/dedicated/ola-manager){.external}
+- [Como configurar a NIC para o OVHcloud Link Aggregation na Área de Cliente OVHcloud](../ola-manager){.external}
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 > [!warning]
 >
@@ -26,11 +30,14 @@ A tecnologia OVHcloud Link Aggregation (OLA) foi criada pelas nossas equipas par
 
 ## Instruções
 
-A configuração private-private disponível no OLA para as nossas NIC não permite aceder ao servidor em SSH. Para aceder ao servidor, é necessário utilizar a ferramenta IPMI. Para o fazer, inicie sessão na [Área de Cliente](https://www.ovh.com/manager/){.external}.  , selecione o servidor que pretende configurar na menu à esquerda e clique no separador **IPMI.**
+A configuração private-private disponível no OLA para as nossas NIC não permite aceder ao servidor em SSH. Para aceder ao servidor, é necessário utilizar a ferramenta IPMI.
+<br>Para o fazer, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)). Na secção `Bare Metal Cloud`{.action}, clique em `Servidores dedicados`{.action} no menu à esquerda, selecione o seu servidor e clique no separador `IPMI`{.action} (1).
 
-![kvm remoto](images/remote_kvm.png){.thumbnail}
+Em seguida, clique no botão `A partir de applet java (KVM)`{.action} (2).
 
-Em seguida, clique no botão **A partir de applet java (KVM)**. Um programa JNLP será descarregado. Abra o programa para entrar no IPMI. Inicie a sua sessão usando credenciais válidas para o servidor.
+![remote_kvm](images/remote_kvm2021.png){.thumbnail}
+
+Um programa JNLP será descarregado. Abra o programa para entrar no IPMI. Inicie a sua sessão usando credenciais válidas para o servidor.
 
 Por predefinição, com um modelo OVHcloud, as NIC são designadas *ethX* e *enoX*. Se não estiver a utilizar um modelo OVHcloud, pode encontrar os nomes das suas interfaces através do seguinte comando:
 
@@ -78,6 +85,12 @@ systemctl restart networking
 
 Este reinício pode levar vários minutos, uma vez que está a construir a interface de ligação.  Para testar se a ligação está a funcionar, faça um teste de ping noutro servidor da mesma rede vRack. Se funcionar, está tudo pronto. Caso contrário, volte a verificar as suas configurações ou tente reiniciar o servidor.
 
-## Conclusão
+## Quer saber mais?
 
-A OVHcloud oferece aos seus clientes a liberdade e a flexibilidade para impulsionar o seu hardware da maneira que melhor se adapta às suas necessidades. Depois de ler este manual, deverá poder configurar o OVHcloud Link Aggregation (OLA) no seu sistema Debian 9 e utilizar as NIC (Network Interface Controller) como interfaces privadas ligadas. 
+[Como configurar a NIC para o OVHcloud Link Aggregation na Área de Cliente OVHcloud](../ola-manager/)
+
+[Como configurar a NIC para o OVHcloud Link Aggregation em CentOS 7](../ola-centos7/)
+
+[Como configurar a NIC para o OVHcloud Link Aggregation em Windows Server 2019](../ola-w2k19/)
+
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -1,55 +1,64 @@
 ---
-title: 'So konfigurieren Sie die OVHcloud Link Aggregation im OVH-Manager'
+title: 'Konfigurieren der OVHcloud Link Aggregation'
 slug: ola-manager
-excerpt: 'Die OVHcloud Link Aggregation im Manager aktivieren'
+excerpt: 'Erfahren Sie hier, wie Sie OLA im OVHcloud Kundencenter aktivieren'
 section: 'Fortgeschrittene Nutzung'
+order: 1
 ---
 
-**Letzte Aktualisierung am 24\. Oktober 2019**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 26.03.2021**
 
 ## Ziel
 
-Die OVHcloud Link Aggregation (OLA)-Technologie wurde von unseren Teams entwickelt, um die Verfügbarkeit Ihres Servers zu erhöhen und die Effizienz Ihrer Netzwerkverbindungen zu steigern. Mit nur wenigen Klicks können Sie Ihre Netzwerkkarten aggregieren und Ihre Netzwerkverbindungen überflüssig machen. Wenn also eine Verbindung ausfällt, wird der Datenverkehr automatisch auf eine andere verfügbare Verbindung umgeleitet. In diesem Artikel wird erläutert, wie Sie OLA im OVH-Manager einrichten.
+Die OVHcloud Link Aggregation (OLA) wurde von unseren Teams entwickelt, um die Verfügbarkeit Ihres Servers zu erhöhen und die Effizienz Ihrer Netzwerkverbindungen zu steigern. Mit nur wenigen Klicks können Sie Ihre Netzwerkkarten aggregieren und Ihre Netzwerkverbindungen redundant machen. Wenn also eine Verbindung ausfällt, wird der Datenverkehr automatisch auf eine andere verfügbare Verbindung umgeleitet.
 
-## Anforderungen
+**Diese Anleitung erklärt, wie Sie OLA im OVHcloud Kundencenter einrichten.**
 
-Stellen Sie sicher, dass Sie OLA über den OVHcloud Manager bestellt haben, bevor Sie die Schritte in diesem Handbuch ausführen.
+## Voraussetzungen
 
-> [!warning]
->
-> Um Änderungen an OLA vorzunehmen, müssen Sie zunächst alle Server, an denen Sie arbeiten, von allen vRacks entfernen, an die sie derzeit angeschlossen sind. Anschließend müssen Sie alle angehängten Failover-IP-Adressen entfernen.
->
+- Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
-## Anleitung
+## In der praktischen Anwendung
 
-Melden Sie sich beim [OVHcloud-Manager](https://www.ovh.com/manager/){.external} an, um mit der Konfiguration von OLA zu beginnen.  Klicken Sie oben auf dem Bildschirm auf die Schaltfläche **Server** und wählen Sie den betreffenden Server aus dem Dropdown-Menü auf der linken Seitenleiste aus. Klicken Sie anschließend auf die Registerkarte **Netzwerkschnittstellen**. Nachdem Sie bestätigt haben, dass der Server nicht an vRacks angeschlossen ist, klicken Sie auf die Schaltfläche **Ich habe den Vorgang ausgeführt. Weiter zum nächsten Schritt**. 
+### OLA in Ihrem OVHcloud Kundencenter konfigurieren
 
-![network interfaces](images/network_interfaces.png){.thumbnail}
+Um OLA zu konfigurieren, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)  ein und wechseln Sie zum Tab `Bare Metal Cloud`{.action}. Klicken Sie im linken Menü auf `Dedicated Server`{.action} und wählen Sie Ihren Server aus der Liste aus.
 
-Klicken Sie im Schritt „Konfiguration“ auf die Schaltfläche **Konfigurieren**.
+![network interfaces](images/network_interfaces2021.png){.thumbnail}
 
-![configure](images/configure.png){.thumbnail}
+Klicken Sie im Tab `Netzwerkinterfaces`{.action} (1) auf den Button `...`{.action} (2) rechts von "Modus" in **OLA: OVHcloud Link Aggregation**. Klicken Sie auf `Private Aggregation konfigurieren`{.action} (2).
 
-Wählen Sie nun die Option „Private Aggregation“ und geben Sie Ihrer Schnittstelle einen Namen. Klicken Sie auf die Schaltfläche **Weiter**, wenn Sie bestätigt haben, dass alles korrekt ist.
+![select Interface](images/interface_select2021.png){.thumbnail}
 
-![Private Aggregation](images/private_aggregation.png){.thumbnail}
+Überprüfen Sie, dass Ihre beiden Interfaces oder Schnittstellengruppen ausgewählt sind, und geben Sie dem OLA Interface einen Namen. Klicken Sie auf `Bestätigen`{.action}, sobald Ihre Überprüfungen abgeschlossen sind.
 
-Überprüfen Sie auf der folgenden Registerkarte alle Schnittstellen, die Sie in OLA zusammenfassen möchten, und klicken Sie dann auf **Weiter**.
+Es kann einige Minuten dauern, bis der Vorgang abgeschlossen ist. Anschließend werden im nächsten Schritt die Schnittstellen in Ihrem Betriebssystem in einem "NIC link" oder einem "NIC team" konfiguriert. In den folgenden Anleitungen finden Sie Informationen zu den beliebtesten Betriebssystemen:
 
-![interface select](images/interface_select.png){.thumbnail}
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9](../ola-debian9/)
 
-Überprüfen Sie nun den Schritt „Konfigurationsübersicht“. Wenn Sie bestätigt haben, dass alle Informationen korrekt sind, klicken Sie auf die Schaltfläche **Erstellen**.
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in CentOS 7](../ola-centos7/)
 
-![ Übersicht ](images/overview.png){.thumbnail}
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/)
 
-Es kann einige Minuten dauern, bis der Vorgang abgeschlossen ist. Sobald der Vorgang abgeschlossen ist, werden im nächsten Schritt die Schnittstellen in Ihrem Betriebssystem zu einer NIC-Anleihe oder einem NIC-Team konfiguriert. In den folgenden Artikeln finden Sie Informationen zu den beliebtesten Betriebssystemen:
+### OLA auf die Standardwerte zurücksetzen
 
-[So konfigurieren Sie Ihre Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9](https://docs.ovh.com/de/dedicated/ola-debian9/){.ref}
+Um OLA auf die Standardwerte wiederherzustellen, klicken Sie auf `...`{.action} rechts neben "Modus" in **OLA: OVHcloud Link Aggregation**. Klicken Sie auf `Private Aggregation dekonfigurieren`{.action}. Klicken Sie im Kontextmenü auf `Bestätigen`{.action}.
 
-[So konfigurieren Sie Ihre Netzwerkkarte für die OVHcloud Link Aggregation in CentOS 7](https://docs.ovh.com/de/dedicated/ola-centos7/){.ref}
+![network interfaces](images/default_settings2021.png){.thumbnail}
 
-[So konfigurieren Sie Ihre Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019](https://docs.ovh.com/de/dedicated/ola-w2k19/){.ref}
+Die Operation kann einige Minuten in Anspruch nehmen.
 
-## Fazit
+## Weiterführende Informationen
 
-Wir bei OVHcloud glauben an Innovation für Freiheit. OLA gibt unseren Kunden die Freiheit, ihre Netzwerkkarten nach ihren Wünschen zu verwenden. Nachdem Sie diesen Artikel gelesen haben, sollten Sie in der Lage sein, Ihren Server im OVH-Manager mit OLA zu konfigurieren. 
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Debian 9](../ola-debian9/)
+
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in CentOS 7](../ola-centos7/)
+
+[Konfigurieren Ihrer Netzwerkkarte für die OVHcloud Link Aggregation in Windows Server 2019](../ola-w2k19/)
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

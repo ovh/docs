@@ -3,27 +3,32 @@ title: 'Comment configurer votre NIC pour l’agrégation de liens OVHcloud dans
 slug: ola-centos7
 excerpt: 'Activer OVHcloud Link Aggregation sur votre serveur CentOS 7'
 section: 'Utilisation avancée'
+order: 3
 ---
 
-**Dernière mise à jour le 24 octobre 2019**
+**Dernière mise à jour le 23/03/2021**
 
 ## Objectif
 
-La technologie OVHcloud Link Aggregation (OLA) est conçue par nos équipes pour augmenter la disponibilité de votre serveur et améliorer l'efficacité de vos connexions réseau. En quelques clics, vous pouvez agréger vos cartes réseau et rendre vos liaisons réseau redondantes. Cela signifie que si une liaison tombe en panne, le trafic est automatiquement redirigé vers une autre liaison disponible. 
+La technologie OVHcloud Link Aggregation (OLA) est conçue par nos équipes pour augmenter la disponibilité de votre serveur et améliorer l'efficacité de vos connexions réseau. En quelques clics, vous pouvez agréger vos cartes réseau et rendre vos liaisons réseau redondantes. Cela signifie que si une liaison tombe en panne, le trafic est automatiquement redirigé vers une autre liaison disponible.
 
 **Découvrez comment regrouper vos NIC (Network Interface Controller) pour les utiliser avec le service OLA sur CentOS 7.**
 
 ## Prérequis
 
-- [Configurer votre NIC pour la fonctionnalité OVHcloud Link Aggregation depuis l’espace client OVHcloud](https://docs.ovh.com/fr/dedicated/ola-manager){.external}
+- [Avoir configuré votre NIC pour la fonctionnalité OVHcloud Link Aggregation depuis l’espace client OVHcloud](../ola-manager)
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## En pratique
 
-Étant donné que nous avons une configuration privée-privée pour nos NIC sur OLA, il est impossible de se connecter en SSH au serveur. Par conséquent, vous devrez utiliser l’outil IPMI pour accéder au serveur. Pour cela, vous devez d'abord vous connecter à [l’espace client OVHcloud](https://www.ovh.com/manager/){.external}.  Sélectionnez ensuite le serveur que vous souhaitez configurer dans la barre latérale gauche et cliquez sur l’onglet `IPMI`{.action}.
+Étant donné que nous avons une configuration privée-privée pour nos NIC sur OLA, il est impossible de se connecter en SSH au serveur. Par conséquent, vous devrez utiliser l’outil IPMI pour accéder au serveur.
+<br>Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez l'onglet `Bare Metal Cloud`{.action}. Cliquez sur `Serveurs dédiés`{.action} dans le menu de gauche et sélectionnez votre serveur dans la liste.
 
-![remote_kvm](images/remote_kvm.png){.thumbnail}
+Cliquez ensuite sur l'onglet `IPMI`{.action} (1) puis sur le bouton `Depuis un applet Java (KVM)`{.action} (2).
 
-Cliquez ensuite sur le bouton `Depuis un applet Java (KVM)`{.action}. Un logiciel JNLP sera téléchargé. Lancez le logiciel pour accéder à l’IPMI. Connectez-vous en utilisant les informations d’identification associées au serveur.
+![remote kvm](images/remote_kvm2021.png){.thumbnail}
+
+Un logiciel JNLP sera téléchargé. Lancez le logiciel pour accéder à l’IPMI. Connectez-vous en utilisant les informations d’identification associées au serveur.
 
 Par défaut, en utilisant un modèle OVHcloud, les NIC seront nommés *eth0* et *eth1*. Si vous n’utilisez pas un modèle OVHcloud, vous pouvez retrouver les noms de vos interfaces en utilisant la commande suivante :
 
@@ -33,10 +38,10 @@ ip a
 
 > [!primary]
 >
-> Cette commande retournera plusieurs «interfaces.» Si vous avez du mal à identifier vos NIC physiques, la première interface aura toujours l’adresse IP publique du serveur assignée par défaut.
+> Cette commande retournera plusieurs « interfaces ». Si vous avez du mal à identifier vos NIC physiques, la première interface aura toujours l’adresse IP publique du serveur assignée par défaut.
 >
 
-Une fois retrouvés les noms de nos deux NIC, nous configurerons le NIC bonding ou agrégation de liens sur le système d’exploitation. La première étape consiste à créer l’interface d’agrégation. Pour ce faire, créez le fichier de configuration suivant sur un éditeur de texte de votre choix:
+Une fois les noms de vos deux NIC identifiés, il faut à présent créer le NIC bonding ou agrégation de lien sur le système d’exploitation. Pour ce faire, créez le fichier d’interfaces sur l'éditeur de texte de votre choix à l’aide de la commande suivante :
 
 ```bash
 vi /etc/sysconfig/network-scripts/ifcfg-bond0
@@ -58,7 +63,7 @@ BONDING_OPTS="mode=802.3ad miimon=100"
 
 > [!primary]
 >
-> Vous pouvez utiliser n’importe quelle adresse IP et de sous-réseau privées souhaitées.
+> Vous pouvez utiliser n’importe quelle adresse IP et de sous-réseau privé souhaitée.
 >
 
 Sauvegardez et quittez le fichier une fois  que vous avez confirmé que l’information est correcte.  Il vous faut à présent configurer les deux interfaces physiques. Par défaut, pour un serveur OVHcloud, seul *eth0* aura un fichier de configuration. Ouvrez le à l’aide de la commande suivante :
@@ -106,7 +111,7 @@ SLAVE=yes
 
 > [!primary]
 >
-> L’adresse matérielle (adresse MAC) du NIC peut être retrouvée à l’aide de la commande *ip a* utilisée précédemment.  Ce sera le numéro à côté de «link/ether» du résultat affiché.
+> L’adresse matérielle (adresse MAC) du NIC peut être retrouvée à l’aide de la commande *ip a* utilisée précédemment. Ce sera le numéro à côté de «link/ether» du résultat affiché.
 >
 
 Le *#* devant une ligne indique que le serveur ignorera cette ligne lors de la lecture du fichier. Cela signifie que ces lignes ne seront pas prises en compte lors de la création du fichier d’interface pour *eth1*. Vous devrez créer le fichier de configuration *eth1* à l’aide de la commande suivante:
@@ -115,7 +120,7 @@ Le *#* devant une ligne indique que le serveur ignorera cette ligne lors de la l
 vi /etc/sysconfig/network-scripts/ifcfg-eth1
 ```
 
-Cette fois-ci, le fichier sera vide. Vous devrez y ajouter le contenu suivant : 
+Cette fois-ci, le fichier sera vide. Vous devrez y ajouter le contenu suivant :
 
 ```bash
 DEVICE=eth1
@@ -135,6 +140,12 @@ systemctl restart network
 
 Pour vérifier que cette agrégation fonctionne, effectuez un ping vers un autre serveur sur le même vRack. Si cela fonctionne, le processus de configuration est terminé. Si ce n’est pas le cas, vérifiez vos configurations ou essayez de redémarrer le serveur.
 
-## Conclusion
+## Aller plus loin
 
-OVHcloud vous offre la liberté et la flexibilité nécessaires pour utiliser votre matériel de la manière la plus adaptée à vos besoins. Maintenant que vous avez lu cet article, vous devriez pouvoir configurer OLA (OVHcloud Link Aggregation) sur CentOS 7 afin d’utiliser vos deux NIC comme interfaces privées agrégées. 
+[Configurer l’agrégation de liens OLA dans votre espace client](../ola-manager/).
+
+[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Debian 9](../ola-debian9/).
+
+[Comment configurer votre NIC pour l'agrégation de liens OVHcloud sous Windows Server 2019](../ola-w2k19/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
