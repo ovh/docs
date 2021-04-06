@@ -50,15 +50,15 @@ Prenez connaissance des contrats et conditions, valides-les puis clquez sur `Com
 
 La création du groupe prend quelques minutes. Il sera alors automatiquement ajouté à la liste de vos groupes dans le menu de gauche. Rafraîchissez votre espace client si vous ne le voyez pas apparaître.
 
-### Déplacer ou regrouper des services dans un groupe de téléphonie
+### Regrouper des services dans un groupe de téléphonie <a name="regrouper-lignes"></a>
 
-Vous pouvez déplacer des lignes téléphones et numéros alias d'un groupe à un autre.
+Vous pouvez déplacer des lignes téléphones et numéros alias d'un groupe à un autre, afin de répondre à plusieurs cas d'usage, telle qu'une facturation distincte entre entités au sein d'une entreprise.
 
-Un cas d'usage fréquent est la supervision, depuis un téléphone ou un logiciel de type POPC, d'un ensemble de lignes.
+Un autre cas d'usage fréquent est la supervision, depuis un téléphone ou un logiciel de type POPC, d'un ensemble de lignes.
 Ainsi, une personne en charge de l'accueil téléphonique d'une entreprise peut connaître en temps réel le statut (libre ou occupé) des lignes de ses collègues et ainsi déterminer si un transfert d'appel est possible.
 Pour qu'une ligne soit supervisée, elle doit être dans le **même groupe de téléphonie** que la ligne qui la supervise.
 
-Afin de déplacer une ligne dans un nouveau groupe, sélectionnez ce groupe dans le menu de gauche puis cliquez sur l'onglet `Administration`{.action} et enfin sur `Regroupement de lignes`{.action}.
+Afin de déplacer une ligne dans un nouveau groupe, sélectionnez celui-ci dans le menu de gauche puis cliquez sur l'onglet `Administration`{.action} et enfin sur `Regroupement de lignes`{.action}.
 
 ![regrouper lignes](images/03-regrouper-01.png){.thumbnail}
 
@@ -70,7 +70,7 @@ Cette action prend quelques minutes pour être prise en compte.
 
 #### Cas particulier des lignes liées à un accès à Internet OVHcloud
 
-Les accès à Internet OVHcloud comprennent souvent des lignes téléphoniques qu'il faut activer dans l'espace client OVHcloud. Ces lignes, une fois activées, génèrent leur propre groupe de téléphonie (un groupe par accès à Internet).
+Les accès à Internet OVHcloud comprennent souvent des lignes téléphoniques qu'il faut activer dans l'espace client OVHcloud, dans la partie `Accès Internet`{.action}. Ces lignes, une fois activées, génèrent leur propre groupe de téléphonie (un groupe pour chaque accès à Internet).
 <br>Ce groupe est nommé *ovhtel-XXXXXXXX-X*, contrairement à un groupe de téléphonie classique dont le nom contient votre identifiant client, par exemple *az123456-ovh-1*.
 
 |Groupe de téléphonie classique|Groupe de téléphonie lié à un accès à Internet OVHcloud| 
