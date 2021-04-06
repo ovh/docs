@@ -1,7 +1,7 @@
 ---
-title: 'Transfer domeny do OVH'
+title: 'Transfer domeny do OVHcloud'
 slug: przewodnik_dotyczacy_transferu_domen_globalnych_com_net_org_info_biz
-excerpt: 'Dowiedz się, jak wykonać transfer domeny funkcjonalnej do OVH'
+excerpt: 'Dowiedz się, jak wykonać transfer domeny funkcjonalnej do OVHcloud'
 section: Transfer
 order: 1
 ---
@@ -11,9 +11,9 @@ order: 1
 
 ## Wprowadzenie
 
-Transfer domeny umożliwia jej przeniesienie do innego operatora. Możesz przenieść Twoją domenę do OVH. Zajmie to od jednego do dziesięciu dni.
+Transfer domeny umożliwia jej przeniesienie do innego operatora. Możesz przenieść Twoją domenę do OVHcloud. Zajmie to od jednego do dziesięciu dni.
 
-**Dowiedz się, jak wykonać transfer domeny funkcjonalnej do OVH.**
+**Dowiedz się, jak wykonać transfer domeny funkcjonalnej do OVHcloud.**
 
 ## Wymagania początkowe
 
@@ -32,13 +32,13 @@ Transfer domeny umożliwia jej przeniesienie do innego operatora. Możesz przeni
 
 Twoja domena jest aktualnie zarejestrowana u innego operatora. Chcesz ją przenieść do OVH? Jest to możliwe dzięki zastosowaniu procedury transferu.
 
-Operacja ta składa się z kilku etapów, w które włączone będą różne podmioty: obecny operator, OVH oraz inne strony. Poniższa tabela wskazuje osoby, z którymi należy się kontaktować oraz szacowany czas trwania każdego etapu.
+Operacja ta składa się z kilku etapów, w które włączone będą różne podmioty: obecny operator, OVHcloud oraz inne strony. Poniższa tabela wskazuje osoby, z którymi należy się kontaktować oraz szacowany czas trwania każdego etapu.
 
 |Etapy|Opis |Kto wykonuje działanie?|Gdzie?/Jak?|Czas realizacji|
 |---|---|---|---|---|
 |1|Weryfikacja informacji związanych z domeną|Administrator domeny|U obecnego operatora domeny|W zależności od podjętych przez Ciebie działań|
 |2|Odblokowanie domeny i pobranie kodu transferu|Administrator domeny, za zgodą właściciela|U obecnego operatora domeny|W zależności od podjętych przez Ciebie działań|
-|3|Wniosek o transfer domeny|Jakakolwiek osoba posiadająca kod transferu, za zgodą właściciela|U nowego operatora (np. OVH)|W zależności od podjętych przez Ciebie działań|
+|3|Wniosek o transfer domeny|Jakakolwiek osoba posiadająca kod transferu, za zgodą właściciela|U nowego operatora (np. OVHcloud)|W zależności od podjętych przez Ciebie działań|
 |4|Realizacja pierwszego etapu potwierdzania transferu|Właściciel domeny, a także osoba wskazana jako administrator u nowego operatora|W otrzymanym e-mailu|Maksymalnie 5 dni|
 |5|Realizacja drugiego etapu potwierdzania transferu|U obecnego operatora domeny|Na prośbę organizacji zarządzającej rozszerzeniem Twojej domeny|Maksymalnie 5 dni|
 
@@ -66,20 +66,20 @@ Po sprawdzeniu informacji dotyczących domeny konieczne jest jej odblokowanie. O
 
 Po odblokowaniu domeny poproś aktualnego operatora o podanie przypisanego do domeny kodu transferu. Używane są różne nazwy kodu: kod transferu, AuthCode, AuthInfo lub kod EPP.
 
-Pamiętaj, że OVH nie jest aktualnym operatorem Twojej domeny. Nie możemy zatem jej odblokować ani dostarczyć Ci kodu transferu.
+Pamiętaj, że OVHcloud nie jest aktualnym operatorem Twojej domeny. Nie możemy zatem jej odblokować ani dostarczyć Ci kodu transferu.
 
 > [!warning]
 >
 > Po odblokowaniu Twojej domeny masz siedem (7) dni, aby rozpocząć jej transfer do nowego operatora. Po upływie tego terminu domena zablokuje się automatycznie, jeśli nie zostanie złożony wniosek o jej przeniesienie.
 >
 
-### Etap 3: wniosek o transfer domeny do OVH
+### Etap 3: wniosek o transfer domeny do OVHcloud
 
-Kiedy domena zostanie odblokowana i uzyskasz kod transferu, możesz złożyć na [stronie OVH](https://www.ovh.pl){.external} dyspozycję transferu. Wprowadź nazwę Twojej domeny, po czym postępuj zgodnie z kolejnymi instrukcjami.
+Kiedy domena zostanie odblokowana i uzyskasz kod transferu, możesz złożyć na [stronie OVHcloud](https://www.ovh.pl){.external} dyspozycję transferu. Wprowadź nazwę Twojej domeny, po czym postępuj zgodnie z kolejnymi instrukcjami.
 
 Wprowadź kod transferu w polu obok nazwy Twojej domeny. Jeśli nie posiadasz kodu transferu, możesz zaznaczyć pole `Podaj kod transferu później`{.action}. Zalecamy jednak, abyś przed kolejnymi krokami upewnił się, że jesteś w stanie ten kod uzyskać.
 
-Będziesz mógł rozszerzyć Twoje zamówienie, dodając [usługę hostingu](https://www.ovh.pl/hosting/){.external} lub inne rozwiązania OVH.  Może to być interesująca opcja, jeśli z transferem domeny wiąże się projekt migracji Twoich usług. Przewodnik [Migracja strony WWW i kont e-mail do OVH](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external} wyjaśnia, jakie działania należy przeprowadzić w takim przypadku.
+Będziesz mógł rozszerzyć Twoje zamówienie, dodając [usługę hostingu](https://www.ovh.pl/hosting/){.external} lub inne rozwiązania OVHcloud.  Może to być interesująca opcja, jeśli z transferem domeny wiąże się projekt migracji Twoich usług. Przewodnik [Migracja strony WWW i kont e-mail do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external} wyjaśnia, jakie działania należy przeprowadzić w takim przypadku.
 
 > [!warning]
 >
@@ -94,14 +94,14 @@ Kiedy zamówienie zostanie wygenerowane, ureguluj należność, aby rozpocząć 
 
 ### Etap 4: realizacja pierwszego etapu zatwierdzania transferu
 
-Po uruchomieniu operacji transferu konieczne są dwa etapy potwierdzenia. Pierwszy trwa maksymalnie pięć dni.  Zaczyna się w momencie rozpoczęcia procedury transferu od przesłania przez OVH dwóch próśb o jego zatwierdzenie. 
+Po uruchomieniu operacji transferu konieczne są dwa etapy potwierdzenia. Pierwszy trwa maksymalnie pięć dni.  Zaczyna się w momencie rozpoczęcia procedury transferu od przesłania przez OVHcloud dwóch próśb o jego zatwierdzenie. 
 
 |Kto otrzymuje prośbę o zatwierdzenie transferu?|Na jaki adres zostaje wysłana prośba o zatwierdzenie transferu?|
 |---|---|
-|Właściciel domeny|Na adres e-mail właściciela wskazanego w bazie Whois, o ile jest on w bazie uwidoczniony. W przeciwnym razie na adres e-mail właściciela wskazanego w zamówieniu złożonym w OVH.|
-|Administrator wskazany w zamówieniu złożonym w OVH|Na adres e-mail wskazany w profilu administratora w OVH.|
+|Właściciel domeny|Na adres e-mail właściciela wskazanego w bazie Whois, o ile jest on w bazie uwidoczniony. W przeciwnym razie na adres e-mail właściciela wskazanego w zamówieniu złożonym w OVHcloud.|
+|Administrator wskazany w zamówieniu złożonym w OVHcloud|Na adres e-mail wskazany w profilu administratora w OVHcloud.|
 
-Obydwa potwierdzenia należy wykonać w interfejsie OVH. Link prowadzący do drugiej części znajdziesz w otrzymanych e-mailach. 
+Obydwa potwierdzenia należy wykonać w interfejsie OVHcloud. Link prowadzący do drugiej części znajdziesz w otrzymanych e-mailach. 
 
 Domeny:
 
@@ -118,7 +118,7 @@ W przypadku anulowania transferu upewnij się, że wszystkie strony są zgodne c
 
 ### Etap 5: realizacja drugiego etapu zatwierdzania transferu
 
-Po uruchomieniu drugiego etapu aktualny operator (którym nie jest jeszcze OVH) otrzymuje prośbę o zatwierdzenie. Możliwych jest kilka scenariuszy w zależności od podjętych działań.
+Po uruchomieniu drugiego etapu aktualny operator (którym nie jest jeszcze OVHcloud) otrzymuje prośbę o zatwierdzenie. Możliwych jest kilka scenariuszy w zależności od podjętych działań.
  
 |Scenariusz|Przebieg wydarzeń|
 |---|---|
@@ -128,13 +128,13 @@ Po uruchomieniu drugiego etapu aktualny operator (którym nie jest jeszcze OVH) 
 
 W przypadku odmowy transferu ze strony aktualnego operatora zachęcamy do kontaktu z nim w celu ustalenia przyczyny. Proces może zostać ponownie uruchomiony w późniejszym czasie w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Domeny`{.action} > `Operacje w toku`{.action}.
 
-### Etap 6: zarządzanie domeną w OVH
+### Etap 6: zarządzanie domeną w OVHcloud
 
 Po zakończeniu operacji transferu możesz zarządzać domeną w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. 
 W tym celu kliknij w [Domeny](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} na pasku usług po lewej stronie w `Panelu klienta`{.action}, następnie w nazwę wybranej domeny.
 
 ## Sprawdź również
 
-[Przeniesienie strony WWW i kont e-mail do OVH](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}
+[Przeniesienie strony WWW i kont e-mail do OVHcloud](https://docs.ovh.com/pl/hosting/przeniesienie-strony-www-do-ovh/){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

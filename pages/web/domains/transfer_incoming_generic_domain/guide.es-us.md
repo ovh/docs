@@ -36,7 +36,7 @@ La operación de transferencia se desarrolla en varias etapas e involucra a vari
 |---|---|---|---|---|
 |1|Comprobar la información relativa al dominio|El administrador del dominio|En el actual agente registrador|-|
 |2|Desbloquear el dominio y obtener el código de transferencia|El administrador del dominio, con el consentimiento del titular|En el actual agente registrador|-|
-|3|Solicitar la transferencia del dominio|Cualquiera que disponga del código de transferencia, con el consentimiento del titular|En el nuevo agente registrador (OVH en este caso)|-|
+|3|Solicitar la transferencia del dominio|Cualquiera que disponga del código de transferencia, con el consentimiento del titular|En el nuevo agente registrador (OVHcloud en este caso)|-|
 |4|Realizar la primera fase de verificación|El propietario del dominio y el administrador que figuran en el nuevo agente registrador|Por correo electrónico|Máximo 5 días|
 |5|Realizar la segunda fase de verificación|El actual agente registrador|A través de una solicitud enviada por la entidad que gestiona la extensión del dominio|Máximo 5 días|
 
@@ -71,7 +71,7 @@ Tenga en cuenta que OVHcloud no es el actual agente registrador del dominio, por
 > Una vez desbloqueado el dominio, dispone de 7 días para solicitar su transferencia a OVHcloud. Pasado ese plazo, el dominio volverá a bloquearse si no se ha realizado ninguna solicitud de cambio de agente registrador.
 >
 
-### 3. Solicitar la transferencia del dominio a OVH
+### 3. Solicitar la transferencia del dominio a OVHcloud
 
 Una vez desbloqueado el dominio, y con el código de transferencia en su poder, puede solicitar la transferencia a OVHcloud desde nuestro [sitio web](https://www.ovh.com/){.external}. Para ello, introduzca el dominio en el campo de registro de un dominio y continúe con el pedido.
 
