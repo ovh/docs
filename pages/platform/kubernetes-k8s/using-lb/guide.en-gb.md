@@ -108,7 +108,7 @@ In our OVHcloud Managed Kubernetes we propose a load balancing service enabling 
 
 ## Deploying a Hello World LoadBalancer service
 
-Create a `hello.yaml` file for our `ovhplatform/hello` Docker image, defining the service type as `LoadBalancer`:
+Create a `hello.yml` file for our `ovhplatform/hello` Docker image, defining the service type as `LoadBalancer`:
 
 ```yaml
 apiVersion: v1
