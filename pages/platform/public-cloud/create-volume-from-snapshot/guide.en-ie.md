@@ -1,16 +1,16 @@
 ---
-title: Create a volume from a backup
+title: Creating a volume from a backup
 slug: create-volume-from-backup
-excerpt: 'Find out how to create additional disks from a backup of an additional disk'
+excerpt: 'Find out how to create additional disks from a snapshot of an additional disk'
 section: Storage
 order: 2
 ---
 
-**Last updated 2nd April 2021**
+**Last updated 6th April 2021**
 
 ## Objective
 
-You can create additional disks for your Public Cloud instances by backing up an additional disk.
+You can attach additional disks to your Public Cloud instances based on previously created volume snapshots.
 
 This may be useful in the following cases:
 
@@ -24,8 +24,8 @@ This may be useful in the following cases:
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 - a [Public Cloud instance](https://www.ovhcloud.com/en-ie/public-cloud/){.external} in your OVHcloud account
-- a disk backup in the same OpenStack region
-- administrative (root) access to your instance via SSH
+- a volume snapshot in the same OpenStack region
+- administrative access (root) to your instance via SSH or RDP
 
 ## Instructions
 
@@ -37,7 +37,7 @@ To the right of the backup you want to create a volume from, click the `...`{.ac
 
 ![create volume](images/volume01.png){.thumbnail}
 
-Then enter the name and capacity of the new disk, and click `Create Volume`{.action}.
+Then enter the name and capacity of the new disk, and click `Create the volume`{.action}.
 
 ![create volume](images/volume02.png){.thumbnail}
 
@@ -60,7 +60,7 @@ The process of attaching the disk to your instance will then begin, and this may
 ![attaching volume](images/volume05.png){.thumbnail}
 
 > [!warning]
-You should avoid browsing outside the current tab while the disk is being attached. This may interrupt the process.
+Make sure to not leave the current page in your OVHcloud Control Panel while the disk is being attached. This may interrupt the process.
 >
 
 Once the attachment is complete, you can follow these steps on how to configure the additional disk [using Linux](../create_and_configure_an_additional_disk_on_an_instance/#using-linux) or [using Windows](../create_and_configure_an_additional_disk_on_an_instance/#using-windows).
