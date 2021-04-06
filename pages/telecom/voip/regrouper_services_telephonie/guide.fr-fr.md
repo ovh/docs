@@ -90,6 +90,12 @@ OVHcloud propose une offre de numéros fixes SDA (Sélection Directe à l'Arriv�
 Vous pouvez déplacer un bloc, dans son ensemble, de numéros fixes SDA commandés chez OVHcloud d'un groupe vers un autre.
 <br> Par contre, il n'est pas possible de déplacer un numéro unitaire appartenant à un tel bloc de numéros.
 
+### Gérer les options d'un groupe de téléphonie
+
+Le menu `Options du groupe`{.action}, dans l'onglet `Administration`{.action}, vous permet d'activer ou désactiver des options d'affichage des appels.
+
+![options du groupe](images/options-groupe.png){.thumbnail}
+
 ### Supprimer un groupe de téléphonie
 
 > [!warning]
