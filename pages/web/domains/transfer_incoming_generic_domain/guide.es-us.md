@@ -36,7 +36,7 @@ La operación de transferencia se desarrolla en varias etapas e involucra a vari
 |---|---|---|---|---|
 |1|Comprobar la información relativa al dominio|El administrador del dominio|En el actual agente registrador|-|
 |2|Desbloquear el dominio y obtener el código de transferencia|El administrador del dominio, con el consentimiento del titular|En el actual agente registrador|-|
-|3|Solicitar la transferencia del dominio|Cualquiera que disponga del código de transferencia, con el consentimiento del titular|En el nuevo agente registrador (OVH en este caso)|-|
+|3|Solicitar la transferencia del dominio|Cualquiera que disponga del código de transferencia, con el consentimiento del titular|En el nuevo agente registrador (OVHcloud en este caso)|-|
 |4|Realizar la primera fase de verificación|El propietario del dominio y el administrador que figuran en el nuevo agente registrador|Por correo electrónico|Máximo 5 días|
 |5|Realizar la segunda fase de verificación|El actual agente registrador|A través de una solicitud enviada por la entidad que gestiona la extensión del dominio|Máximo 5 días|
 

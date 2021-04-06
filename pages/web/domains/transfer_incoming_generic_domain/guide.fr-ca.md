@@ -28,9 +28,9 @@ avoir été déverrouillé.<br>
 
 ## En pratique
 
-Votre nom de domaine est actuellement déposé dans un bureau d’enregistrement et vous souhaitez le confier à OVH ? C'est possible, via une procédure de transfert.
+Votre nom de domaine est actuellement déposé dans un bureau d’enregistrement et vous souhaitez le confier à OVHcloud ? C'est possible, via une procédure de transfert.
 
-Celle-ci comporte plusieurs étapes, impliquant la prise de contact avec plusieurs entités, dont votre registre actuel, OVH et d'autres parties. Le tableau ci-dessous vous indique les personnes contactées et la durée estimée de chaque étape.
+Celle-ci comporte plusieurs étapes, impliquant la prise de contact avec plusieurs entités, dont votre registre actuel, OVHcloud et d'autres parties. Le tableau ci-dessous vous indique les personnes contactées et la durée estimée de chaque étape.
 
 |Étapes|Description|Qui est impliqué ?|Où ?|Temps requis|
 |---|---|---|---|---|
@@ -64,7 +64,7 @@ Après avoir vérifié ces informations, vous devrez déverrouiller votre nom de
 
 Une fois que vous avez déverrouillé votre nom de domaine, votre bureau d'enregistrement doit vous envoyer le code de transfert correspondant. Ce code est parfois référencé sous différents noms, tels que : « code de transfert », « CodeAuth » , « InfosAuth » ou « Code EPP ».
 
-Veuillez noter qu'OVH n'est pas le bureau d'enregistrement de votre nom de domaine actuel. Nous ne pouvons donc pas déverrouiller celui-ci ou vous fournir le code de transfert.
+Veuillez noter qu'OVHcloud n'est pas le bureau d'enregistrement de votre nom de domaine actuel. Nous ne pouvons donc pas déverrouiller celui-ci ou vous fournir le code de transfert.
 
 > [!warning]
 >
@@ -73,7 +73,7 @@ Veuillez noter qu'OVH n'est pas le bureau d'enregistrement de votre nom de domai
 
 ### Étape 3 : demander un transfert de nom de domaine vers OVH
 
-Une fois le déverrouillage de votre nom de domaine effectué et votre code obtenu, vous pouvez commander son transfert vers OVH depuis [notre site](https://www.ovh.com/ca/fr/){.external}. Entrez votre nom de domaine, puis suivez la procédure de commande.
+Une fois le déverrouillage de votre nom de domaine effectué et votre code obtenu, vous pouvez commander son transfert vers OVHcloud depuis [notre site](https://www.ovh.com/ca/fr/){.external}. Entrez votre nom de domaine, puis suivez la procédure de commande.
 
 Lorsque vous êtes invité à fournir votre code de transfert, entrez-le dans la zone en face de votre nom de domaine. Si vous ne disposez pas du code de transfert, vous pouvez cocher la case intitulée `Entrer le code de transfert ultérieurement`{.action}. Toutefois, nous vous conseillons vivement de vous assurer que vous disposez du code à remettre avant de continuer.
 

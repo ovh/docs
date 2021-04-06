@@ -32,7 +32,7 @@ Transfer domeny umożliwia jej przeniesienie do innego operatora. Możesz przeni
 
 Twoja domena jest aktualnie zarejestrowana u innego operatora. Chcesz ją przenieść do OVH? Jest to możliwe dzięki zastosowaniu procedury transferu.
 
-Operacja ta składa się z kilku etapów, w które włączone będą różne podmioty: obecny operator, OVH oraz inne strony. Poniższa tabela wskazuje osoby, z którymi należy się kontaktować oraz szacowany czas trwania każdego etapu.
+Operacja ta składa się z kilku etapów, w które włączone będą różne podmioty: obecny operator, OVHcloud oraz inne strony. Poniższa tabela wskazuje osoby, z którymi należy się kontaktować oraz szacowany czas trwania każdego etapu.
 
 |Etapy|Opis |Kto wykonuje działanie?|Gdzie?/Jak?|Czas realizacji|
 |---|---|---|---|---|
@@ -66,7 +66,7 @@ Po sprawdzeniu informacji dotyczących domeny konieczne jest jej odblokowanie. O
 
 Po odblokowaniu domeny poproś aktualnego operatora o podanie przypisanego do domeny kodu transferu. Używane są różne nazwy kodu: kod transferu, AuthCode, AuthInfo lub kod EPP.
 
-Pamiętaj, że OVH nie jest aktualnym operatorem Twojej domeny. Nie możemy zatem jej odblokować ani dostarczyć Ci kodu transferu.
+Pamiętaj, że OVHcloud nie jest aktualnym operatorem Twojej domeny. Nie możemy zatem jej odblokować ani dostarczyć Ci kodu transferu.
 
 > [!warning]
 >
@@ -94,7 +94,7 @@ Kiedy zamówienie zostanie wygenerowane, ureguluj należność, aby rozpocząć 
 
 ### Etap 4: realizacja pierwszego etapu zatwierdzania transferu
 
-Po uruchomieniu operacji transferu konieczne są dwa etapy potwierdzenia. Pierwszy trwa maksymalnie pięć dni.  Zaczyna się w momencie rozpoczęcia procedury transferu od przesłania przez OVH dwóch próśb o jego zatwierdzenie. 
+Po uruchomieniu operacji transferu konieczne są dwa etapy potwierdzenia. Pierwszy trwa maksymalnie pięć dni.  Zaczyna się w momencie rozpoczęcia procedury transferu od przesłania przez OVHcloud dwóch próśb o jego zatwierdzenie. 
 
 |Kto otrzymuje prośbę o zatwierdzenie transferu?|Na jaki adres zostaje wysłana prośba o zatwierdzenie transferu?|
 |---|---|

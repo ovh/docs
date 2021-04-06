@@ -12,7 +12,7 @@ order: 1
 
 La transferencia de un dominio permite cambiar el agente registrador que lo gestiona. Una de las posibilidades es transferirlo a OVH. Esta operación suele tardar entre uno y diez días.
 
-**Esta guía explica cómo transferir a OVH un dominio genérico.**
+**Esta guía explica cómo transferir a OVHcloud un dominio genérico.**
 
 ## Requisitos
 
@@ -36,7 +36,7 @@ La operación de transferencia se desarrolla en varias etapas e involucra a vari
 |---|---|---|---|---|
 |1|Comprobar la información relativa al dominio|El administrador del dominio|En el actual agente registrador|-|
 |2|Desbloquear el dominio y obtener el código de transferencia|El administrador del dominio, con el consentimiento del titular|En el actual agente registrador|-|
-|3|Solicitar la transferencia del dominio|Cualquiera que disponga del código de transferencia, con el consentimiento del titular|En el nuevo agente registrador (OVH en este caso)|-|
+|3|Solicitar la transferencia del dominio|Cualquiera que disponga del código de transferencia, con el consentimiento del titular|En el nuevo agente registrador (OVHcloud en este caso)|-|
 |4|Realizar la primera fase de verificación|El propietario del dominio y el administrador que figuran en el nuevo agente registrador|Por correo electrónico|Máximo 5 días|
 |5|Realizar la segunda fase de verificación|El actual agente registrador|A través de una solicitud enviada por la entidad que gestiona la extensión del dominio|Máximo 5 días|
 
@@ -64,7 +64,7 @@ Una vez que haya comprobado la información, es necesario desbloquear el dominio
 
 Una vez desbloqueado el dominio, el agente registrador deberá enviarle el código de transferencia correspondiente. Este código puede llamarse de distintas formas: código de transferencia, Auth-Code, Auth-Info, código EPP…
 
-Tenga en cuenta que OVH no es el actual agente registrador del dominio, por lo que no podemos desbloquearlo ni proporcionarle el código de transferencia.
+Tenga en cuenta que OVHcloud no es el actual agente registrador del dominio, por lo que no podemos desbloquearlo ni proporcionarle el código de transferencia.
 
 > [!warning]
 >
@@ -73,7 +73,7 @@ Tenga en cuenta que OVH no es el actual agente registrador del dominio, por lo q
 
 ### 3. Solicitar la transferencia del dominio a OVH
 
-Una vez desbloqueado el dominio, y con el código de transferencia en su poder, puede solicitar la transferencia a OVH desde nuestro [sitio web](https://www.ovh.es/){.external}. Para ello, introduzca el dominio en el campo de registro de un dominio y continúe con el pedido.
+Una vez desbloqueado el dominio, y con el código de transferencia en su poder, puede solicitar la transferencia a OVHcloud desde nuestro [sitio web](https://www.ovh.es/){.external}. Para ello, introduzca el dominio en el campo de registro de un dominio y continúe con el pedido.
 
 Cuando se le pida el código de transferencia, introdúzcalo en el campo situado junto al dominio. Si todavía no tiene el código de transferencia, puede marcar la casilla `Indicar el código de autenticación posteriormente`{.action}. No obstante, le recomendamos que, antes de continuar, se asegure previamente de que podrá obtener el código.
 

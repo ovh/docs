@@ -62,7 +62,7 @@ Once you have checked this information, you will need to unlock your domain name
 
 Once you have unlocked your domain name, your domain name registrar must send you the transfer code for it. This code is sometimes referred to using different names, such as: **transfer code**, **AuthCode**, **AuthInfo** or **EPP code**.
 
-Please note that OVH is not your current domain name registrar. We are, therefore, unable to unlock your domain or provide the transfer code.
+Please note that OVHcloud is not your current domain name registrar. We are, therefore, unable to unlock your domain or provide the transfer code.
 
 > [!warning]
 >
@@ -75,7 +75,7 @@ Now that your domain name is unlocked and you have your transfer code, you can r
 
 When you are asked to provide your transfer code, enter it in the box next to your domain name. If you do not have the transfer code, you can tick a box labelled `Enter transfer code at a later stage`{.action}. However, we strongly advise ensuring that you have the code to hand before you continue any further.
 
-You can also complete your order with a [Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}, and other OVH solutions. This may be of interest to you, if you are also looking to migrate your services to OVH. Our guide on [Migrating your website and emails to OVH](https://docs.ovh.com/ie/en/hosting/migrating-website-to-ovh/){.external} will provide you with instructions on how to do this.
+You can also complete your order with a [Web Hosting plan](https://www.ovh.ie/web-hosting/){.external}, and other OVHcloud solutions. This may be of interest to you, if you are also looking to migrate your services to OVH. Our guide on [Migrating your website and emails to OVH](https://docs.ovh.com/ie/en/hosting/migrating-website-to-ovh/){.external} will provide you with instructions on how to do this.
 
 > [!warning]
 >
@@ -86,7 +86,7 @@ You can also complete your order with a [Web Hosting plan](https://www.ovh.ie/we
 > - **Entering the DNS servers for your domain name.** If you are currently using your domain name to keep a website or email service online, you will need to specify their DNS servers in order to avoid any service interruptions.  
 >
 
-Once you receive the purchase order, pay the amount requested for the transfer process to begin. The process will only start when we receive your payment. Once you have done this, you can then track the transfer progress via the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. To track progress, go to the `Domains`{.action} section via the menu bar on the left-hand side, then `Ongoing operations`{.action}.
+Once you receive the purchase order, pay the amount requested for the transfer process to begin. The process will only start when we receive your payment. Once you have done this, you can then track the transfer progress via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. To track progress, go to the `Domains`{.action} section via the menu bar on the left-hand side, then `Ongoing operations`{.action}.
 
 ### Step 4: Complete the first transfer validation step.
 
@@ -97,7 +97,7 @@ Now that you have launched the transfer procedure, it will need to go through tw
 |The domain name holder|To the holder’s email address, stored in WHOIS (if it is visible). Otherwise, it is sent to the domain name holder’s email address, entered during the order process from OVH.|
 |The administrator listed during the order process from OVH.|To the email address listed under the administrator’s profile at OVH|
 
-The two parties provide their validation through an OVH interface. A link to the interface is provided in the emails sent. 
+The two parties provide their validation through an OVHcloud interface. A link to the interface is provided in the emails sent. 
 
 ![domain](images/domaintransfer_gTLD_validation.png){.thumbnail}
 
@@ -110,7 +110,7 @@ There are several possible outcomes to this stage, depending on the actions take
 |Neither of the contacts respond to the validation requests.|The transfer progresses to the second validation stage after a five-day period.|
 |A refusal is received (from either contact).|The transfer process is cancelled as soon as a refusal is received by either one of the contacts.|
 
-If a transfer is cancelled, please ensure that the various parties are in agreement with this, and that their email addresses are up-to-date. The transfer process can be restarted at a later stage from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} in the `Domains`{.action} section, then `Ongoing operations`{.action}.
+If a transfer is cancelled, please ensure that the various parties are in agreement with this, and that their email addresses are up-to-date. The transfer process can be restarted at a later stage from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} in the `Domains`{.action} section, then `Ongoing operations`{.action}.
 
 ### Step 5: The second transfer validation step.
 
@@ -122,11 +122,11 @@ Once the second step has been initiated, the current domain name registrar (whic
 |No response received from the current registrar.|The transfer is completed after a five-day period.|
 |A refusal is received from the current registrar.|The transfer process is cancelled as soon as a refusal is received.|
 
-If a refusal response is sent by the current registrar, please contact them to find out why they refused it. The transfer process can be restarted from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} in the `Domains`{.action} section, then `Ongoing operations`{.action}.
+If a refusal response is sent by the current registrar, please contact them to find out why they refused it. The transfer process can be restarted from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} in the `Domains`{.action} section, then `Ongoing operations`{.action}.
 
 ### Step 6: Manage your domain with OVH.
 
-Once the transfer procedure is complete, you can manage your domain from the [OVH Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+Once the transfer procedure is complete, you can manage your domain from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
 
 To do this, click `Domains`{.action} in the services bar on the left-hand side, then click on the domain name concerned.
 

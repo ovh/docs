@@ -65,7 +65,7 @@ Depois de verificar as informações, deverá desbloquear o seu nome de domínio
 
 Após desbloquear o nome de domínio, o seu agente registador deverá enviar-lhe o código de transferência associado. Este código pode ter várias designações: código de transferência, CodeAuth, InfosAuth ou código EPP.
 
-Tenha em atenção que a OVH não é o agente registador atual do seu nome de domínio, pelo que não podemos desbloquear nem fornecer o código de transferência.
+Tenha em atenção que a OVHcloud não é o agente registador atual do seu nome de domínio, pelo que não podemos desbloquear nem fornecer o código de transferência.
 
 > [!warning]
 >

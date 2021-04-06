@@ -11,7 +11,7 @@ order: 1
 
 ## Obiettivo
 
-L’operazione di trasferimento consente di spostare un dominio da un Registrar a un altro. Se hai scelto OVH come nuovo provider, le fasi del processo possono richiedere da uno a dieci giorni.
+L’operazione di trasferimento consente di spostare un dominio da un Registrar a un altro. Se hai scelto OVHcloud come nuovo provider, le fasi del processo possono richiedere da uno a dieci giorni.
 
 **Questa guida ti mostra la procedura da seguire per effettuare il trasferimento di un dominio generico in OVH.**
 
@@ -65,7 +65,7 @@ Una volta verificate le informazioni è necessario sbloccare il dominio, operazi
 
 Una volta sbloccato il dominio, il Registrar deve comunicarti il codice di trasferimento associato (chiamato in diversi modi: codice di trasferimento, AuthCode, AuthInfo o codice EPP).
 
-Ti ricordiamo che in questa fase OVH non è ancora il tuo Registrar e che quindi non è in grado di sbloccare il dominio né di recuperare il suo codice di trasferimento.
+Ti ricordiamo che in questa fase OVHcloud non è ancora il tuo Registrar e che quindi non è in grado di sbloccare il dominio né di recuperare il suo codice di trasferimento.
 
 > [!warning]
 >
@@ -74,7 +74,7 @@ Ti ricordiamo che in questa fase OVH non è ancora il tuo Registrar e che quindi
 
 ### Step 3: richiedi il trasferimento del dominio in OVH
 
-Ora che il dominio è sbloccato e che disponi del codice necessario, è possibile richiedere il trasferimento del dominio in OVH tramite il nostro [sito Web](https://www.ovh.it/){.external}. Inserisci il nome del tuo dominio e segui la procedura d’ordine.
+Ora che il dominio è sbloccato e che disponi del codice necessario, è possibile richiedere il trasferimento del dominio in OVHcloud tramite il nostro [sito Web](https://www.ovh.it/){.external}. Inserisci il nome del tuo dominio e segui la procedura d’ordine.
 
 Quando viene richiesto il codice di trasferimento, digitalo nella casella accanto al tuo dominio o, se ancora non ne sei in possesso, seleziona la casella `Indica il codice di autorizzazione successivamente nel tuo Spazio Cliente OVH`{.action}. Prima di proseguire, assicurati di essere in grado di recuperare questo codice.
 
@@ -100,7 +100,7 @@ Adesso che l’operazione è in corso, sono necessarie due fasi affinché vada a
 |Il proprietario del dominio|All’indirizzo email del proprietario inserito nel database Whois se disponibile. In caso contrario, all’indirizzo email del proprietario indicato al momento dell’ordine presso OVH.|
 |L'amministratore indicato durante l’ordine OVH|All'indirizzo email inserito nel profilo dell’amministratore in OVH.|
 
-La conferma da parte dei due contatti viene effettuata da un’interfaccia OVH raggiungibile tramite un link presente nelle email inviate alle due parti. 
+La conferma da parte dei due contatti viene effettuata da un’interfaccia OVHcloud raggiungibile tramite un link presente nelle email inviate alle due parti. 
 
 In base alle azioni effettuate, sono possibili diversi scenari di risposta:
 
