@@ -2,7 +2,6 @@
 title: "Politique de sécurité du système d'information (PSSI)"
 slug: pssi
 section: Politiques de sécurité
-hidden: true
 ---
 
 **Dernière mise à jour le 15/02/2021**
