@@ -13,7 +13,7 @@ Here are the most frequently asked questions about Managed Private Registry (Har
 Private Registry is currently available in Western Europe (GRA region).
 
 ### What version of Harbor is offered?
-All new Private Registry services expose Harbor 2.0. We regularly backport security and performance patches from the latests version and will regularly propose new feature upgrades.
+All new Private Registry services expose Harbor 2.0. We regularly backport security and performance patches from the latest versions and will regularly propose new feature upgrades.
 
 #### Tips and Tricks
 All traffic to and from the registry is completely free.
