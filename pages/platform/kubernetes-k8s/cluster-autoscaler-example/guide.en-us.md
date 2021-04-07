@@ -10,7 +10,7 @@ order: 8
      font-size: 14px;
  }
  pre.console {
-   background-color: #300A24; 
+   background-color: #300A24;
    color: #ccc;
    font-family: monospace;
    padding: 5px;
@@ -108,7 +108,7 @@ status:
 In the `spec` section you can see that the `autoscale` parameter is set to `false`. In order to enable the autoscaler, you need to patch the node pool to set this field to `true`. Set also `desiredNodes` to 1, `minNodes` to 1 and `maxNodes` to 3, to be sure that we begin only with one active node and that we can grow the node pool up to 3 nodes.
 
 ```bash
-kubectl patch nodepool &lt;your_nodepool_name> --type="merge" --patch='{"spec": {"autoscale": true, "desiredNodes": 1, "minNodes": 0, "maxNodes": 3}}'
+kubectl patch nodepool <your_nodepool_name> --type="merge" --patch='{"spec": {"autoscale": true, "desiredNodes": 1, "minNodes": 0, "maxNodes": 3}}'
 ```
 
 As you can see in my example, patching the node pool definition enables the autoscaler:
