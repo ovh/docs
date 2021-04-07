@@ -12,6 +12,9 @@ Here are the most frequently asked questions about Managed Private Registry (Har
 ### In which regions is the Private Registry solution available?
 Private Registry is currently available in Western Europe (GRA region).
 
+### What version of Harbor is offered?
+All new Private Registry services expose Harbor 2.0. We regularly backport security and performance patches from the latests version and will regularly propose new feature upgrades.
+
 #### Tips and Tricks
 All traffic to and from the registry is completely free.
 
@@ -25,7 +28,7 @@ No, because by subscribing to the Private Registry service you will have your ow
 You can migrate to a plan with larger capacity at any time. As soon as you notify us of your wish for evolution, the new limits are taken into account in tens of seconds without any data loss or configuration changes required.
 
 #### Tips and Tricks
-If you create, edit or delete your service during the month, you will be billed only for the hours actually used. Depending on your choice of plan, you can have up to 2 TB of storage capacity. For each of the plans, unlimited traffic is included, regardless of its destination.
+If you create, edit or delete your service during the month, you will be billed only for the hours actually used. Depending on your choice of plan, you can have up to 5 TB of storage capacity. For each of the plans, unlimited traffic is included, regardless of its destination.
 
 ## Go further
 
