@@ -145,7 +145,7 @@ Regarding the question: "**Does the data you have entered describe all hosts tha
 |Yes, but use safe mode|Specify that servers receiving emails from your domain should accept them if they come from illegitimate sources (not present in your SPF record), but tag them as potentially not legitimate (as spam, for example).|
 |No|Specify that servers receiving emails from your domain should accept them if they come from illegitimate sources (not present in your SPF record), without any particular action. The email header will however be increased.|
 
-Once the information is complete, click on `Next`{.action}, ensure that the information that appears is correct, then click `Confirm`{.action}.
+Once finished, click on `Next`{.action} and verify that the values you have entered are correct by clicking `Confirm`{.action}.
 
 > [!primary]
 >
