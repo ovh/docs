@@ -33,7 +33,7 @@ When configuring an SPF, make sure to include all the sending sources for the em
 ## Requirements
 
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) with the necessary permissions to manage the domain's DNS
-- the domain name concerned uses the OVHcloud configuration (i.e. the OVHcloud DNS servers)
+- a domain name using the OVHcloud configuration (i.e. the OVHcloud DNS servers)
 
 > [!warning]
 >
