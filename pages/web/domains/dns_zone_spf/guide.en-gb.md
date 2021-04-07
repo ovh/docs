@@ -120,7 +120,7 @@ The configuration wizard enables you to customise your SPF record according to y
 |---|---|
 |Subdomain|Fill out if the SPF record must be applied to a subdomain of your domain, i.e. if you send emails from a subdomain.|
 |TTL|This is the propagation time that will apply to the configuration of this DNS record.|
-|Authorise an IP address to send emails| Check this box if your website and email addresses are hosted on a server using the same IP address (for example on a dedicated server).|
+|Authorise an IP address to send emails|Check this box if your website and email addresses are hosted on a server using the same IP address (for example on a dedicated server).|
 |Authorise the MX servers to send emails|Tick if the servers that receive your emails can also send them.|
 |Authorise all servers with names ending with your domain to send emails|This option should be used with caution, as it allows a very wide legitimisation of the sending sources using your domain name.|
 
