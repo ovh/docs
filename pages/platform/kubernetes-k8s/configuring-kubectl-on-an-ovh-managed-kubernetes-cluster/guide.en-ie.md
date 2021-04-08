@@ -96,4 +96,4 @@ kubectl cluster-info dump
 
 To deploy your first application on your Kubernetes cluster, we suggest you refer to our guide to [Deploying an application](../deploying-an-application/).
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+Join our [community of users](https://community.ovh.com/en/).

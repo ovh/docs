@@ -209,4 +209,4 @@ No resources found
 
 To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](../).
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+Join our [community of users](https://community.ovh.com/en/).
