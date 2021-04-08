@@ -165,7 +165,7 @@ Choose the `SPF`{.action} type record and then click on the `Use the SPF for OVH
 
 #### Adding a TXT record <a name="txtrecord"></a>
 
-Choose the `TXT`{.action} type record and enter the requested information. In the `Value`{.action} field, enter the full SPF string for your domain.
+Choose the `TXT`{.action} type record and enter the requested information. In the `Value` field, enter the full SPF string for your domain.
 
 Click on `Next`{.action} and verify that the SPF you have entered is correct by clicking `Confirm`{.action}.
 
