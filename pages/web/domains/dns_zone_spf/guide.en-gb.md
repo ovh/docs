@@ -58,9 +58,9 @@ When you order one of these solutions, we recommend using an SPF record with OVH
 mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
-This configuration does not apply to [Private or Dedicated Exchange solutions](https://www.ovh.co.uk/emails/hosted-exchange/){.external}.
+This configuration does not apply to Provider Exchange or [Private Exchange solutions](https://www.ovh.co.uk/emails/hosted-exchange/){.external}.
 
-For a Dedicated Exchange solution, the configuration is as follows:
+For a Provider Exchange solution, the configuration is as follows:
 
 ```bash
 mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw1.ex-mail.biz a:gw2.ex-mail.biz ~all"
