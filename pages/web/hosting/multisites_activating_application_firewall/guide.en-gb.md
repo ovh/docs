@@ -29,10 +29,12 @@ With the Core Rule Set (CRS), your ModSecurity is preconfigured in an optimal wa
 - at least one [domain name](https://www.ovh.co.uk/domains/){.external}
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
+
 ## Instructions
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Web Cloud`{.action}. 
 Click `Hosting Plans`{.action} in the services bar on the left-hand side and select the plan concerned.
+
 
 ### Activating the application firewall in PHP configuration
 
@@ -41,7 +43,9 @@ The current `Global PHP version`{.action} is displayed in the `Configuration`{.a
 Click on the `...`{.action} icon and select the available option `Change configuration`{.action}, 
 select the item `Change the current configuration`{.action} and press the `Next`{.action} button.
 
+
 ![managephpconfig](images/manage-php-config.png){.thumbnail}
+
 
 A new window will appear in which you should make sure that in the `Advanced settings`{.action} section, 
 the `Application firewall`{.action} entry is set to `activated`{.action} mode. 
@@ -50,17 +54,22 @@ To confirm the configuration, press the `Confirm`{.action} button.
 
 ### Activating the application firewall for individual domains in MultiSite.
 
-![managemultisite](images/manage-php-config.png){.thumbnail}
 
 To do this, click on the `Multisite`{.action} tab. 
 Click the `...` {.action} icon, then select the `Modify domain`{.action} option. 
 
-![modifydomain](images/manage-php-config.png){.thumbnail}
+
+![managemultisite](images/firewall-modify-multisite.png){.thumbnail}
+
 
 In the window that will be displayed, check the `Enable the firewall`{.action} option. 
 You can also check automatic sub-domain configuration with www prefix using the check-box.
 To confirm changes to the configuration press the `Next`{.action} button.
 A summary window will be displayed, verify that the entered configuration is correct.
+
+
+![modifydomain](images/firewall-modify-domain.png){.thumbnail}
+
 
 > [! primary]
 >
@@ -69,8 +78,7 @@ A summary window will be displayed, verify that the entered configuration is cor
 
 Configuration can be confirmed by pressing the `Confirm`{.action} button.
 
-The submit configuration task will appear in the `Ongoing jobs`{.action} tab (initial status is `Planned`{.action}) 
-when it disappears from the list, it means the configuration has been deployed.
+The submit configuration task will appear in the `Ongoing jobs`{.action} tab (initial status is `Planned`{.action}) when it disappears from the list, it means the configuration has been deployed.
 
 
 
