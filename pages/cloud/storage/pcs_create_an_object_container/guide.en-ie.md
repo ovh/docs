@@ -14,7 +14,7 @@ This guide explains how to create one from OpenStack Horizon.
 
 ## Prerequisites
 
-- [Configure user access to Horizon]({legacy}1773)
+- [Configure user access to Horizon](../configure_user_access_to_horizon/)
 
 
 
