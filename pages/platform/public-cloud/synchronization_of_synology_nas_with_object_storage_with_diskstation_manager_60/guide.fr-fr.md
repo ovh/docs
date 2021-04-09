@@ -15,8 +15,8 @@ Ce guide vous explique comment configurer DiskStation Manager 6.0 afin de synchr
 
 
 ### Prérequis
-- [Créer un containeur de stockage objet]({legacy}1790){.ref}
-- [Créer un utilisateur OpenStack]({legacy}1773){.ref}
+- [Créer un containeur de stockage objet](../ajouter-des-espaces-de-stockage/){.ref}
+- [Créer un utilisateur OpenStack](../creer-un-acces-a-horizon/)
 
 
 ## Configuration de DiskStation Manager 6.0
@@ -26,7 +26,7 @@ Afin de configurer la synchronisation de votre NAS Synology, vous devez être en
 
 Vous pouvez les récupérer en téléchargeant le fichier OpenRC à l'aide de la première partie du guide suivant :
 
-- [Récupérer les variables d'authentification OpenStack]({legacy}1852){.ref}
+- [Récupérer les variables d'authentification OpenStack](../charger-les-variables-denvironnement-openstack/)
 
 
 ### Configuration du point de synchronisation avec Cloud Sync

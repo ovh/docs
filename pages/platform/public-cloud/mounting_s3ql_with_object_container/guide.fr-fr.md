@@ -15,8 +15,8 @@ Ce guide vous explique comment monter un conteneur d'objet en tant que système 
 
 
 ### Prérequis
-- [Créer un accès à Horizon]({legacy}1773){.ref}
-- [Ajouter des espaces de stockage]({legacy}1790){.ref}
+- [Créer un accès à Horizon](../creer-un-acces-a-horizon/)
+- [Ajouter des espaces de stockage](../ajouter-des-espaces-de-stockage/){.ref}
 
 
 
@@ -52,7 +52,7 @@ fs-passphrase: PASSPHRASE
 
 Les informations telles que  **TENANT_NAME** ,  **USERNAME**  peuvent être récupérées dans votre fichier OpenRC. Vous pouvez suivre le guide ci dessus pour le récupérer :
 
-- [Accès et Sécurité dans Horizon]({legacy}1774){.ref}
+- [Accès et Sécurité dans Horizon](../acces-et-securite-dans-horizon/)
 
 Les arguments  **REGION_NAME**  et  **CT_NAME**  sont à adapter selon le nom et la localisation de votre conteneur d'objet.
 

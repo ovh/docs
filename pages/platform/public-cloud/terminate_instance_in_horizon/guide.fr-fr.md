@@ -22,7 +22,7 @@ Ce tutoriel indique comment terminer une instance dans Horizon.
 
 
 ### Prérequis
-- [Créer un accès à Horizon]({legacy}1773){.ref}
+- [Créer un accès à Horizon](../creer-un-acces-a-horizon/)
 - Une instance
 
 

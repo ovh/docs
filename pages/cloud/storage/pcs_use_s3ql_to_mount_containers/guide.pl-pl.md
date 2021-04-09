@@ -19,7 +19,7 @@ Przewodnik ten wyjaśnia, jak zamontować kontener obiektów jako system plików
 ## Wstępne wymagania
 
 - [Dostęp do interfejsu Horizon]({legacy}1773)
-- [Dodawanie przestrzeni dyskowej]({legacy}1790)
+- [Dodawanie przestrzeni dyskowej](https://docs.ovh.com/pl/public-cloud/dodanie_przestrzeni_dyskowej/)
 
 
 

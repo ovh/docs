@@ -13,7 +13,7 @@ Wir empfehlen Ihnen, den zur Verfügung gestellten Spare-Host zu behalten, bis d
 
 ## Rückgabe des ausgefallenen Hosts
 Im ersten Schritt geben Sie den ausgefallenen Host zurück. 
-Die Vorgehensweise dazu wird im Abschnitt "Einen Host entfernen" der Hilfe [Wie füge ich einen Host hinzu?]({legacy}605) beschrieben.
+Die Vorgehensweise dazu wird im Abschnitt "Einen Host entfernen" der Hilfe [Wie füge ich einen Host hinzu?](../wie_fuge_ich_einen_host_hinzu/) beschrieben.
 
 
 ## Den Support wegen des Austauschs kontaktieren
@@ -21,5 +21,5 @@ Sobald der ausgefallene Host aus Ihrem Inventar entfernt wurde, können Sie beim
 
 
 ## Rückgabe des Spare-Hosts
-Sobald der ausgefallene Host ausgetauscht wurde und sich die Situation auf Ihrer Infrastruktur wieder normalisiert hat, können Sie den Spare-Host zurückgeben. Die Vorgehensweise dazu wird im Abschnitt "Einen Host entfernen" der Hilfe [Wie füge ich einen Host hinzu?]({legacy}605) beschrieben.
+Sobald der ausgefallene Host ausgetauscht wurde und sich die Situation auf Ihrer Infrastruktur wieder normalisiert hat, können Sie den Spare-Host zurückgeben. Die Vorgehensweise dazu wird im Abschnitt "Einen Host entfernen" der Hilfe [Wie füge ich einen Host hinzu?](../wie_fuge_ich_einen_host_hinzu/) beschrieben.
 

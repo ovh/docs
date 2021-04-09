@@ -15,13 +15,13 @@ section: CMS
 
 Pour vous aider, chacune des étapes est détaillée. Pour toute demande précise liée au CMS, nous vous invitons à vous rapprocher de l'éditeur du CMS, ou des communautés en rapport avec celui-ci.
 
-Si vous souhaitez installer d'autres modules/CMS, consultez [ce guide]({legacy}1375){.ref}.
+Si vous souhaitez installer d'autres modules/CMS, consultez [ce guide](../mutualise-installer-manuellement-mon-cms/).
 
 Les CMS sont des [systèmes de gestion de contenu](https://fr.wikipedia.org/wiki/Syst%C3%A8me_de_gestion_de_contenu){.external}, ils ont généralement besoin d'une plateforme d'hébergement comprenant un serveur FTP, une base de données, et un nom de domaine.
 
 Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovh.com/fr/hebergement-web/){.external}.
 
-*Si vous souhaitez installer Joomla de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* []({legacy}1402){.ref}
+*Si vous souhaitez installer Joomla de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* [](../modules-en-1-clic/)
 
 
 ## Joomla!
@@ -61,7 +61,7 @@ Le dossier cible sera intitulé " **Joomla** "
 
 Pour déposer les fichiers de  **Joomla!**  sur votre hébergement, vous devez tout d'abord vous connecter à celui-ci.
 
-*Un guide est disponible concernant la connexion en FTP sur l'offre mutualisée :* []({legacy}1374){.ref}
+*Consultez notre guide pour [se connecter à l’espace de stockage de son hébergement web](../connexion-espace-stockage-ftp-hebergement-web/)*
 
 
 ![hosting](images/3144.png){.thumbnail}
@@ -200,9 +200,10 @@ Pour un aperçu du panel d'administration de Joomla!, cliquez sur l'image ci- co
 
 
 ### Informations utiles
-**Le support d'OVH ne sera pas habilité à vous répondre pour toute demande d'aide concernant la configuration de votre Joomla!.** **Cependant, un guide d'utilisation est à votre disposition** : []({legacy}2053){.ref} **.**
 
-Vous pouvez également consulter les forums dédiés à la solution Joomla!.
+**Le support d'OVH ne sera pas habilité à vous répondre pour toute demande d'aide concernant la configuration de votre Joomla!.**
+
+Nous vous invitons à consulter les forums dédiés à la solution Joomla!.
 
 - Voici un lien vers un [forum d'entraide](http://forum.joomla.fr/){.external} dédié à ce CMS.
 
@@ -225,7 +226,7 @@ Il s'agit ici d'une erreur concernant la version PHP de votre serveur.
 
 La cause est simple : la dernière version du PHP n'a pas été activée.
 
-*Un guide est disponible concernant la modification de la version PHP sur l'offre mutualisée :* []({legacy}1207){.ref}
+*Un guide est disponible concernant la [modification de la version PHP sur l'offre mutualisée](../configurer-le-php-sur-son-hebergement-web-mutu-2014/).*
 
 
 ![hosting](images/3156.png){.thumbnail}
@@ -236,7 +237,7 @@ Magic Quotes doit être à Off et, donc, à 0 dans votre fichier de configuratio
 
 Sur les nouvelles offres 2014, si PHP-FPM est activé, alors la variable Magic Quote est désactivé par défaut. Pour les anciennes offres mutualisées, vous pouvez désactiver cette variable dans le fichier .htaccess.
 
-*Un guide est disponible concernant la modification de variable PHP sur l'offre mutualisée 2014 :* []({legacy}1207){.ref}
+*Un guide est disponible concernant la [modification de la version PHP sur l'offre mutualisée](../configurer-le-php-sur-son-hebergement-web-mutu-2014/).*
 
 *Un guide est disponible concernant la modification de variable PHP sur les anciennes offres :* [Modification de variable PHP sur d'anciennes offres OVH](http://guide.ovh.com/ConfigPhp){.external}
 
