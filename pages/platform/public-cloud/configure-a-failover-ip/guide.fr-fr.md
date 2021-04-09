@@ -114,12 +114,12 @@ iface ens3 inet dhcp
 
 auto ens3:0
 iface ens3:0 inet static
-address your_ip_address 0
+address your_ip_address
 netmask 255.255.255.255
 
 auto ens3:1
 iface ens3:1 inet static
-address your_ip_address 1
+address your_ip_address
 netmask 255.255.255.255
 ```
 
