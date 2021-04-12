@@ -1,6 +1,6 @@
 ---
 deprecated: true
-title: OVH:n SSH-avaimen asennus 
+title: OVHcloud:n SSH-avaimen asennus 
 slug: ovh-ssh-key 
 excerpt: Tässä ohjeessa kerrotaan, kuinka asennetaan administraattoriemme interventiot mahdollistava SSH-avain sekä kuinka se kytketään myöhemmin pois päältä 
 section: SSH ja SSH-avain
@@ -11,7 +11,7 @@ section: SSH ja SSH-avain
 ## Tavoite
 
 
-Tietyissä tapauksissa voi olla tarpeellista, että OVH:n administraattorit tekevät intervention dedikoituun infrastruktuuriisi. 
+Tietyissä tapauksissa voi olla tarpeellista, että OVHcloud:n administraattorit tekevät intervention dedikoituun infrastruktuuriisi. 
 
 **Tässä ohjeessa kerrotaan, kuinka asennetaan administraattoriemme interventiot mahdollistava SSH-avain sekä kuinka se kytketään myöhemmin pois päältä.**
 
