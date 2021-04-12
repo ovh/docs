@@ -175,8 +175,6 @@ Haga clic en el botón `Utilizar el SPF para hosting compartido OVHcloud`{.actio
 
 #### Añadir un registro TXT <a name="txtrecord"></a>
 
-Ha elegido el registro `SPF`{.action}.
-
 Entre los registros propuestos, haga clic en `TXT`{.action} y complete la información solicitada. En el campo `Valor`{.action}, introduzca el SPF que quiera utilizar.
 
 Para finalizar, haga clic en `Siguiente`{.action}. Asegúrese de que la información es correcta y haga clic en `Confirmar`{.action}.

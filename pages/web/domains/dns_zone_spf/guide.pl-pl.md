@@ -175,8 +175,6 @@ Kliknij na przycisk `Użyj SPF na hostingu OVHcloud`{.action} na górze okna inf
 
 #### Dodaj rekord TXT <a name="txtrecord"></a>
 
-Wybrałeś rekord `SPF`{.action}.
-
 Wśród proponowanych rekordów kliknij `TXT`{.action}, po czym uzupełnij wymagane informacje. W polu `Wartość`{.action} wprowadź SPF, którego chcesz użyć.
 
 Aby zakończyć operację, kliknij `Dalej`{.action}. Upewnij się, że wyświetlane informacje są poprawne, następnie kliknij `Zatwierdź`{.action}.

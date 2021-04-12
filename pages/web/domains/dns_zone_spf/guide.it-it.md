@@ -176,8 +176,6 @@ Clicca sul pulsante `Utilizza il record SPF per l'hosting condiviso OVHcloud`{.a
 
 #### Aggiungi un record TXT <a name="txtrecord"></a>
 
-Hai scelto il record `SPF`{.action}.
-
 Tra i record proposti, clicca su `TXT`{.action} e inserisci le informazioni richieste. Nella sezione `Valore`{.action}, inserisci il record SPF che vuoi utilizzare.
 
 Poi clicca su `Seguente`{.action}, assicurati che il riepilogo delle informazioni sia corretto e infine clicca su `Conferma`{.action}.
