@@ -19,7 +19,7 @@ Make sure that you have your customer ID (nic-handle) and password so you can lo
 - Get your FTP ID and password so you can log in to your hosting package. 
 
 - You also need to have your SQL database ID and password so you can log in to the database.
-There is a guide showing you how to get your SQL credentials: []({legacy}1374)
+There is a guide showing you [how to get your SQL credentials](../getting-started-with-private-sql/#create-a-database)
 
 
 
@@ -58,7 +58,7 @@ Log on to the web hosting package via FTP
 
 To upload the Drupal files to your hosting package, you first have to log on. 
 
-Follow this guide on connecting to a hosting package in FTP:[]({legacy}1374)
+Follow this guide on [connecting to a hosting package in FTP](../log-in-to-storage-ftp-web-hosting/).
 Transfer files via FTP
 
 Follow these steps to upload your files using FTP.
@@ -113,7 +113,7 @@ Select your chosen language and then click "Save and continue".
 
 
 ## Step 3 - Log on to the database
-Get your database credentials (there is a guide available here: []({legacy}1374)).
+Get your database credentials (there is a guide available [here](../getting-started-with-private-sql/#create-a-database).
 
 
 Enter the information requested:
@@ -208,7 +208,6 @@ Please have a look at the forums dedicated to the Drupal solution.
 
 
 OVH support is not authorised to answer questions about Drupal configuration.
-However, there is a user guide available: []({legacy}2053).
 
 
 ## Typical errors

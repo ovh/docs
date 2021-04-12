@@ -6,7 +6,7 @@ section: Configuration sur une interface en ligne
 order: 2
 ---
 
-[Cliquez ici]({legacy}1474){.ref} pour retrouver nos différents guides de configuration e-mail.
+[Cliquez ici](../) pour retrouver nos différents guides de configuration e-mail.
 
 
 > [!warning]

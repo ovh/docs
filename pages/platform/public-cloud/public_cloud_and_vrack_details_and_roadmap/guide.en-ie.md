@@ -3,6 +3,7 @@ title: Public Cloud and vRack - details and roadmap
 excerpt: Public Cloud and vRack - details and roadmap
 slug: public_cloud_and_vrack_-_details_and_roadmap
 legacy_guide_number: g2148
+hidden: true
 ---
 
 
@@ -65,5 +66,5 @@ One of the consequences of this is that when you are using lots of VLANS the Pub
 
 
 ## 
-[Configure user access to Horizon]({legacy}1773)
+[Configure user access to Horizon](../configure_user_access_to_horizon/)
 

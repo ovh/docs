@@ -30,7 +30,7 @@ Ce tutoriel indique comment suspendre ou mettre en pause votre instance.
 
 
 ### Prérequis
-- [Créer un accès à Horizon]({legacy}1773){.ref}
+- [Créer un accès à Horizon](../creer-un-acces-a-horizon/)
 - Une instance
 
 

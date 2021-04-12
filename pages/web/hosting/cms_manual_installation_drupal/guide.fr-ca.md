@@ -258,7 +258,7 @@ Il s'agit ici d'une erreur concernant la version PHP de votre serveur.
 
 La cause est simple : la dernière version du PHP n'a pas été activée.
 
-*Un guide est disponible concernant la modification de la version PHP sur l'offre mutualisée :* []({legacy}1207){.ref}
+*Un guide est disponible concernant la [modification de la version PHP sur l'offre mutualisée](../configurer-le-php-sur-son-hebergement-web-mutu-2014/).*
 
 
 ## Aller plus loin

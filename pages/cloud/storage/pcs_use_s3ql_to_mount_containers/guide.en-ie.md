@@ -46,7 +46,7 @@ fs-passphrase: PASSPHRASE
 Information such as TENANT_NAME, USERNAME can be found in your OpenRC file. 
 You can follow this guide below in order to retrieve it:
 
-- [Access and Security in Horizon]({legacy}1774)
+- [Access and Security in Horizon](https://docs.ovh.com/ie/en/public-cloud/access_and_security_in_horizon/)
 
 
 The REGION_NAME and CT_NAME arguments can be adapted according the name and location of your object container. 
