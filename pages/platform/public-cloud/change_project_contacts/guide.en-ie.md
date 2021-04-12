@@ -56,5 +56,5 @@ You just have to insert the code which you have just received by email into the 
 
 
 ## 
-[Go back to the index of Cloud guides]({legacy}1785)
+[Go back to the index of Cloud guides](../)
 

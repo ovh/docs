@@ -172,8 +172,6 @@ Cliquez sur le bouton `Utiliser le SPF pour mutualisé OVHcloud`{.action} en hau
 
 #### Ajouter un enregistrement TXT <a name="txtrecord"></a>
 
-Vous avez choisi l'enregistrement `SPF`{.action}.
-
 Parmi les enregistrements proposés, cliquez sur `TXT`{.action}, puis complétez les informations demandées. Dans la zone `Valeur`{.action}, renseignez le SPF que vous souhaitez utiliser.
 
 Pour finaliser l'action, cliquez sur `Suivant`{.action}. Assurez-vous que les informations affichées sont correctes, puis cliquez sur `Confirmer`{.action}.

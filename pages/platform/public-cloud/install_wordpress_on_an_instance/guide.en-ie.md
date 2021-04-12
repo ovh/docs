@@ -16,7 +16,7 @@ This guide shows you how to install Wordpress on a Public Cloud instance .
 
 ## Prerequisites
 
-- [Launch an instance in your OVH Control Panel]({legacy}1775)
+- [Launch an instance in your OVH Control Panel](../public-cloud-first-steps/)
 
 
 
@@ -235,5 +235,5 @@ Once this is confirmed, you will be able to log in to your website's administati
 
 
 ## 
-[Go back to the index of Cloud guides]({legacy}1785)
+[Go back to the index of Cloud guides](../)
 

@@ -20,7 +20,7 @@ In dieser Hilfe erfahren Sie alles über die Konfiguration von ownCloud mit Obje
 ## Voraussetzungen
 
 - Download der OpenRC-Datei über Ihr OVH Kundencenter oder Horizon
-- [Hinzufügen von Storage-Bereichen]({legacy}1790) zu Owncloud
+- [Hinzufügen von Storage-Bereichen](https://docs.ovh.com/de/public-cloud/hinzufugen_von_storage-bereichen/) zu Owncloud
 
 
 

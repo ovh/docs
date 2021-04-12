@@ -63,7 +63,7 @@ Le dossier cible sera intitulé " **wordpress** "
 
 Pour déposer les fichiers de  **WordPress**  sur votre hébergement, vous devez tout d'abord vous connecter à celui-ci.
 
-*Un guide est disponible concernant la connexion en FTP sur l'offre mutualisée :* []({legacy}1374){.ref}
+*Consultez notre guide pour [se connecter à l’espace de stockage de son hébergement web](../connexion-espace-stockage-ftp-hebergement-web/)*
 
 
 ![hosting](images/3128.png){.thumbnail}

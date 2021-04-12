@@ -16,8 +16,8 @@ Ce guide vous aidera à prendre en main les API OpenStack afin de gérer vos con
 
 
 ### Prérequis
-- [Préparer l'environnement pour utiliser l'API OpenStack]({legacy}1851){.ref} en installant python-swiftclient
-- [Charger les variables d'environnement OpenStack]({legacy}1852){.ref}
+- [Préparer l'environnement pour utiliser l'API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/) en installant python-swiftclient
+- [Charger les variables d'environnement OpenStack](../charger-les-variables-denvironnement-openstack/)
 
 
 ### Documentation Swift
@@ -149,8 +149,7 @@ images/OVHlogo.png
 
 > [!success]
 >
-> Cette URL est simplement formé du point d'accés API de l'Object Storage que vous pouvez récupéré dans le menu []({legacy}1774)
-> ainsi que du nom de votre conteneur et du nom de votre objet (préfixe compris).
+> Cette URL est simplement formée du point d'accés API de l'Object Storage que vous pouvez récupérer dans le menu [Accès et Sécurité dans Horizon](../acces-et-securite-dans-horizon/) ainsi que du nom de votre conteneur et du nom de votre objet (préfixe compris).
 > 
 
 

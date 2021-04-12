@@ -18,7 +18,7 @@ Niveau : Débutant
 
 ### Prérequis {#prérequis}
 
-Pour effectuer la conversion, vous devez avoir réalisé **[la procédure de validation VOIP]({legacy}7536703)** sur votre identifiant client.
+Pour effectuer la conversion, vous devez avoir réalisé **[la procédure de validation VOIP](https://docs.ovh.com/fr/voip/la-procedure-de-validation-voip/)** sur votre identifiant client.
 
 ------------------------------------------------------------------------
 

@@ -1,17 +1,17 @@
 ---
 deprecated: true
-title: OVH:n SSH-avaimen asennus 
+title: OVHcloud:n SSH-avaimen asennus 
 slug: ovh-ssh-key 
 excerpt: Tässä ohjeessa kerrotaan, kuinka asennetaan administraattoriemme interventiot mahdollistava SSH-avain sekä kuinka se kytketään myöhemmin pois päältä 
 section: SSH ja SSH-avain
 ---
 
-**Päivitetty 22.11.2017**
+**Päivitetty 12.04.2021**
 
 ## Tavoite
 
 
-Tietyissä tapauksissa voi olla tarpeellista, että OVH:n administraattorit tekevät intervention dedikoituun infrastruktuuriisi. 
+Tietyissä tapauksissa voi olla tarpeellista, että OVHcloud:n administraattorit tekevät intervention dedikoituun infrastruktuuriisi. 
 
 **Tässä ohjeessa kerrotaan, kuinka asennetaan administraattoriemme interventiot mahdollistava SSH-avain sekä kuinka se kytketään myöhemmin pois päältä.**
 
@@ -29,13 +29,14 @@ Kun olet kirjautunut SSH-yhteydellä, suorita tämä komento:
 - Jos palvelintasi ylläpidetään Euroopassa:
 
 ```sh
-wget ftp://ftp.ovh.net/made-in-ovh/ssh-avain-public/asenna_avain.sh -O asenna_avain.sh ; sh asenna_avain.sh
+echo 'from="178.33.222.162,217.182.145.216,217.182.145.217,217.182.145.218,217.182.145.219,217.182.145.220,217.182.145.221,217.182.145.222,217.182.145.223" ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDRpA0gxYQAL4HnRrFDlKsfjy6nEihOBsg6dgwR+mYee7nhTaCUqKXIlh3aJaRsiZcx4Uapq8f8NiU0g+SGWxCSbv7v4wbHfTX+brSJ+28bSUXp3B08iIcAiZgXIOBS+r++W1yJYUJRuMV934rmAvbyRhkr6rqZLp0Mr73AKnKlxR/UzN0VyA5JCXQPLAoYkm505WbwCjLKZowDobwpjx0968zkctYCpCxvJ3Wr8f0qEVtwMHawsgv1wmJuIF7689LA7U0i2yXaPrtwPdjWZsrc5YSUZL8JQTDW4PnQLiYild+YKcMMHp12bQKNvJgBStHsLlxx0hCRYoiYdMFuN0f951Vc16EmHH+7qgwCIGeeD7npyhdUevwxlY2IAEka3udOBM0t2koQlGIGckBJlAgL/W2flrvz1noSwIii6HX836lLj80djm4W0LhXu8M+nlQvDE7549srqB3+rDJ18po79+btEHirH/vfkB+X9rFd6hyHX27cygs2TpHIt+OmKkt9UB8gQy6tHX/OK2BR5v9ToBprPNAs2d/iH/K2mpJ0jHFI3FrCg9sqkz/lPwAl8bjCPZiUKU5+o+0O81MSNwqbQBl042n0Sqq9LxWP9TzxHT1GyE4LoV9NR4VHppkn+P22JO3o6B12Q5//pUgrw+VtpArwDdonc7SLQ26uR9nabw== support@cache-ng' >> /root/.ssh/authorized_keys2
 ```
 
 - Jos palvelintasi ylläpidetään Kanadassa:
 
 ```sh
-wget ftp://ftp.ovh.net/made-in-ovh/ssh-avain-public/asenna_avainCA.sh -O asenna_avain.sh ; sh asenna_avain.sh
+echo 'from="8.33.137.120,149.56.85.250" ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCeVpuVqIrd2HNadlwPmZ0LkWYVaR7WRQgTWXiv2XMJJE1VRW75KiVpUzBpBDN/yorzG6bhzAdo46aNi0aD5OqFJJnj66ZWULRDIErpxXx5gJpbMJlaGNpiwJgbyahFFSpttu5vleGSkQNcNQ6r7tsdNYA4aSkGKiJ7QeCXF/26rwPTpgEI/Dv6z0sX73r2Yojlm4eX328XieSxzOCoMbPnK4hUbJMffTiVDj48LjLVUHA303tF6cSuVkuzlId67i/Y0KHkevO7vuycTNTvzZHD70IRlmFVo3cV5yTENhGgYwHK8CWavGI/HIOlxeS/HQ0nV+dUoZXqZTJi0MFIEFF3LPQbu9PNLGhjhKddZceGGmDkmendVjIwvq4qGMsWhlqcEbbRUEqDNUG+ZQK9QLuePWRe7P5jV0ubpZ9ndguOpY2hUZqUjORQk9+gdaPkVwBOMGvOE61LaTsRW3FXEaEiRWKqaqM6Xfn4qVi8Y2DVQU3ue8EKDmTT95rOCR1KxhdSPbcDAmvUSRaEoYa1zFKo22rUUn6IVLVfR/22V6r3Dtj/J2ILj0bAPmeeR7jpIZS5CjDl3F0bIUwm8LJNuEPJG/ZRmMT4GEUUG1enpyWiZuAHHrE2Dz0kzIkFPd/WTldjthHvkVWW1iukT2iTuqdnV9H9XDVVfcl6eOiPflYXvw== support@cache-ng-ca' >> /root/.ssh/authorized_keys2
+
 ```
 
 Jos toimenpide onnistui, on tiedosto `authorized_keys2` nyt luotu. Se sisältää tietoja tässä muodossa:

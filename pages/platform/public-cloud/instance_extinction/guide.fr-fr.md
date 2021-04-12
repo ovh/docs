@@ -20,7 +20,7 @@ Il est possible d'éteindre une instance, pour en suspendre l'activité ou pour 
 
 
 ### Prérequis
-- [Créer un accès à Horizon]({legacy}1773){.ref}
+- [Créer un accès à Horizon](../creer-un-acces-a-horizon/)
 - Une instance
 
 

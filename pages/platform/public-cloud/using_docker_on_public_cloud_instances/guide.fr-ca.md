@@ -11,7 +11,7 @@ Docker-machine est un outil permettant le déploiement de nœud docker. Il perme
 
 
 ### Prérequis
-- [Charger les variables d'environnement OpenStack]({legacy}1852){.ref}
+- [Charger les variables d'environnement OpenStack](../charger-les-variables-denvironnement-openstack/)
 
 
 ## Utilisation de nuds docker independants

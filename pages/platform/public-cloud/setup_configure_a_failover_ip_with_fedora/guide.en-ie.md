@@ -21,7 +21,7 @@ This guide explains how to configure your instance's network interface so that a
 
 ## Requirements
 
-- [Mak- [url=GUIDE#1775] Make sure you have launched an instance in your OVH customer account OVH]({legacy}1775)
+- [Make sure you have launched an instance in your OVH customer account](../public-cloud-first-steps/)
 - You must have a failover IP addresse sure you have launched an instance in your OVH customer account OVH[/url]
 - You must have a failover IP address
 
@@ -66,9 +66,9 @@ ifup ethX:Y
 
 
 ## 
-[Go back to the index of Cloud guides]({legacy}1890)
+[Migrating a failover IP](../migrating_a_failover_ip/)
 
 
 ## 
-[Go back to the index of Cloud guides]({legacy}1785)
+[Go back to the index of Cloud guides](../)
 

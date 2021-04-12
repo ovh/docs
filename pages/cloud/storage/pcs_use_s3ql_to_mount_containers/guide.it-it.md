@@ -19,7 +19,7 @@ Questa guida ti mostra come configurare un container di oggetti come file system
 ## Requisiti necessari
 
 - [Crea un utente per accedere a Horizon]({legacy}1773)
-- [Aggiungi storage al tuo Cloud]({legacy}1790)
+- [Aggiungi storage al tuo Cloud](https://docs.ovh.com/it/public-cloud/aggiungi_storage_al_tuo_cloud/)
 
 
 

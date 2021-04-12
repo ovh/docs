@@ -80,7 +80,7 @@ Vous avez également un bouton `IP`{.action} vous permettant de renseigner direc
 
 ![](images/content-docs-cloud-private-cloud-configure_edge_firewall-images-nsx_edge_firewall_8.png){.thumbnail}
 
-La source et la destination d'une même règle ne doivent pas forcément se baser sur les mêmes éléments. Vous pouvez par exemple avoir une source en provenance d'un groupe d'IP et une destination correspondant à un cluster.Vous pouvez créer des [groupes d'objets]({legacy}7766837). Cela vous permet d'indiquer par exemple que toutes les machines virtuelles qui incluent "Web" dans leur nom font partie du groupe. Ce groupe peut alors être renseigné en source ou destination pour appliquer une règle à toutes les machines virtuelles qui incluent "Web", sans avoir à modifier la règle à chaque ajout.
+La source et la destination d'une même règle ne doivent pas forcément se baser sur les mêmes éléments. Vous pouvez par exemple avoir une source en provenance d'un groupe d'IP et une destination correspondant à un cluster.Vous pouvez créer des [groupes d'objets](../configurer-les-groupes-d-objets-nsx/). Cela vous permet d'indiquer par exemple que toutes les machines virtuelles qui incluent "Web" dans leur nom font partie du groupe. Ce groupe peut alors être renseigné en source ou destination pour appliquer une règle à toutes les machines virtuelles qui incluent "Web", sans avoir à modifier la règle à chaque ajout.
 
 ### Service
 

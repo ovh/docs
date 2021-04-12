@@ -20,7 +20,7 @@ In dieser Hilfe erfahren Sie, wie Sie einen Object Container als dateisystem mou
 ## Voraussetzungen
 
 - [Erstellung eines Zugangs zu Horizon]({legacy}1773)
-- [Hinzufügen von Storage-Bereichen]({legacy}1790)
+- [Hinzufügen von Storage-Bereichen](https://docs.ovh.com/de/public-cloud/hinzufugen_von_storage-bereichen/)
 
 
 
