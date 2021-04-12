@@ -65,7 +65,7 @@ Un couple user/password vous est alors demandé :
 
 Une fois connecté à l'interface locale du modem, cliquez sur l'icône de menu en haut à droite, puis sur `Interface Grouping`{.action} dans le menu `Network Setting`.
 
-![reutiliserWiFiOTB](images/reutiliserWiFiOTB-step3-1.png){.thumbnails
+![reutiliserWiFiOTB](images/reutiliserWiFiOTB-step3-1.png){.thumbnail}
 
 Sur cette page, cliquez sur le bouton `+ Add New Interface Group`{.action}.
 
@@ -108,15 +108,17 @@ Branchez la première extrémité du câble dans le port LAN4 du modem Zyxel, la
 
 ### Étape 6 : tester votre nouvelle configuration
 
-A l'aide d'un appareil pouvant se connecter au WiFi, connectez vous au WiFi partagé par votre modem Zyxel/
+A l'aide d'un appareil pouvant se connecter au WiFi, connectez vous au WiFi partagé par votre modem Zyxel
 
 Si vous avez besoin d'aide pour configurer le réseau WiFi de votre modem Zyxel, vous pouvez consulter le [guide utilisateur Zyxel (en anglais)](http://files.isp.ovh.net/zyxel/VMG8823-B50B_V5.13_5.50.pdf){.external}.
 
 Une fois votre appareil connecté au WiFi, vérifiez que votre addresse IP correspond au DHCP de l'OverTheBox. Dans l'image ci-dessous, sur un téléphone Android, l'addresse IP 192.168.100.189 est bien incluse dans la plage d'addresses du DHCP de l'OverTheBox (192.168.100.0/24). L'IP de la passerelle, 192.168.100.1, correspond bien à l'IP du boitier OverTheBox au sein du LAN.
 
+![reutiliserWiFiOTB](images/reutiliserWiFiOTB-step6-1.png){.thumbnail}
+
 Pour vérifier que votre appareil utilise bien le service OverTheBox, vous pouvez faire un test de débit sur notre site [proof.ovh.net](http://proof.ovh.net){.external} et vérifier que le champ IPv4 correspond à l'addresse IP publique de votre service OverTheBox (151.127.x.y dans l'image).
 
-![reutiliserWiFiOTB](images/reutiliserWiFiOTB-step6.png){.thumbnail}
+![reutiliserWiFiOTB](images/reutiliserWiFiOTB-step6-2.png){.thumbnail}
 
 ## Aller plus loin
 
