@@ -38,7 +38,7 @@ Concerning different distribution releases, please note that the proper procedur
 
 **Please take note of the following terminology that will be used in code examples and instructions of the guide sections below:**
 
-|Term|Description|Example|
+|Term|Description|Examples|
 |---|---|---|
 |IP_FAILOVER|A failover IP address assigned to your service|169.254.10.254|
 |NETWORK_INTERFACE|The name of the network interface|*eth0*, *ens3*|
