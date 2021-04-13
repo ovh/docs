@@ -180,15 +180,17 @@ Open the adapter settings in the Windows control panel and then open the `Proper
 
 In the IPv4 Properties window, select `Use the following IPv4 address`{.action}. Enter the IP address which you have retrieved in the first step.
 
-#### Step 3: Add the failover IP in the "Advanced configuration" section
+#### Step 3: Add the failover IP in the "Advanced TCP/IP Settings"
 
 Still in the IPv4 Properties window, click on `Advanced`{.action}.
 
 ![advance configuration section](images/image4-4.png){.thumbnail}
 
-In the new window, click on `Add`{.action}. Enter your failover IP address and the subnet netmask (255.255.255.255)
+In the new window, click on `Add`{.action}. Enter your failover IP address and the subnet mask (255.255.255.255).
 
 ![IP fail over configuration](images/image5-5.png){.thumbnail}
+
+Confirm by clicking on `Add`{.action}.
 
 #### Step 4: Restart the network interface
 
