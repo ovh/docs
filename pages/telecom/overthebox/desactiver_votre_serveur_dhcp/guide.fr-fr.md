@@ -3,7 +3,7 @@ title: 'Désactiver votre serveur DHCP'
 slug: desactiver-votre-serveur-dhcp
 keywords: 'DHCP, Désactiver'
 description: 'Désactiver votre serveur DHCP'
-section: 'Fonctionnalités principales'
+section: "OverTheBox Intel et IT v1"
 ---
 
 ## Préambule

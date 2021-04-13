@@ -1,8 +1,8 @@
 ---
-title: 'Installation manuelle OverTheBox IT'
+title: 'Installation manuelle OverTheBox IT v1'
 slug: installation-manuelle
 excerpt: "Si vous ne passez pas par l'assistant afin d'effectuer l'installation, il est impératif de suivre ce guide afin de réaliser l'enregistrement de votre OverTheBox et l'intégration de vos connexions Internet sur cette dernière."
-section: 'Installation manuelle'
+section: 'OverTheBox Intel et IT v1'
 ---
 
 ## 1. Enregistrement du service

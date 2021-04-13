@@ -4,7 +4,7 @@ keywords: 'Tethering, Partage, Connexion, Iphone, Android'
 description: 'Tethering iPhone &amp; Android'
 slug: tethering-iphone-et-android
 excerpt: "Vous pouvez connecter un téléphone iPhone ou Android en USB afin d'ajouter une nouvelle interface modem"
-section: 'Configurations techniques complexes'
+section: "Configurations techniques avancées"
 ---
 
 ## Préparation de l'OverTheBox

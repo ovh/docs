@@ -1,11 +1,11 @@
 ---
-title: 'Comment fonctionne OverTheBox?'
+title: 'Comment fonctionne OverTheBox Intel ou ITv1?'
 keywords: 'Fonctionnement, Principe'
 legacy_guide_number: 2237
-description: 'Comment fonctionne OverTheBox?'
+description: 'Comment fonctionne OverTheBox Intel ou ITv1?'
 slug: comment-fonctionne-overthebox
 excerpt: 'Le boitier  OverTheBox  ne possède qu’un seul port Ethernet. Pourtant, c’est grâce à ce boitier que vos différentes connexions sont agrégées pour n’en former qu’une.  Comment cela fonctionne-t-il ?'
-section: Fondamentaux
+section: "OverTheBox Intel et IT v1"
 ---
 
 ## Branchements finaux
