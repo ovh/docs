@@ -182,7 +182,7 @@ In the IPv4 Properties window, select `Use the following IP address`{.action}. E
 
 #### Step 3: Add the failover IP in the "Advanced TCP/IP Settings"
 
-In the new window, click on `Add...`{.action} under `IP addresses`. Enter your failover IP address and the subnet mask (255.255.255.255).
+In the new window, click on `Add...`{.action} under "IP addresses". Enter your failover IP address and the subnet mask (255.255.255.255).
 
 ![advance configuration section](images/image4-4.png){.thumbnail}
 
