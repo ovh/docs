@@ -4,7 +4,7 @@ keywords: 'Accès, Distance, Remote'
 description: 'Accès à distance'
 slug: acces-a-distance
 excerpt: "Si vous avez besoin d'accéder ou de modifier la configuration d'OverTheBox à distance, vous pouvez le faire en activant cette fonctionnalité via le manager."
-section: 'Fonctionnalités principales'
+section: "Configurations de l'OverTheBox"
 ---
 
 ## Configuration

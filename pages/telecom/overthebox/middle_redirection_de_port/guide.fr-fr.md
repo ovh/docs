@@ -3,7 +3,7 @@ title: 'Redirection de port'
 keywords: 'redirection, port, forward, nat'
 slug: redirection-de-port
 excerpt: "Sur l'OverTheBox, il est possible de configurer une redirection de port afin de vous permettre d'accéder à une machine de votre réseau local depuis un réseau extérieur."
-section: 'Fonctionnalités principales'
+section: "Configurations de l'OverTheBox"
 ---
 
 ## Prérequis

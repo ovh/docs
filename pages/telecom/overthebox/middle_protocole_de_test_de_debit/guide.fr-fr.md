@@ -3,7 +3,7 @@ title: 'Protocole de test de débit'
 slug: protocole-de-test-de-debit
 keywords: 'test, débit, Bande Passante'
 excerpt: 'Ce guide propose une méthodologie pour tester son débit. Vous pouvez utiliser des tests de débit comme http&#58;//proof.ovh.net/ mais ces tests sont basés sur des bursts qui peuvent ne pas refléter complètement votre débit maximal.'
-section: 'Fonctionnalités principales'
+section: "Diagnostic et dépannage"
 hidden: true
 ---
 

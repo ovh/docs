@@ -4,7 +4,7 @@ keywords: 'DMZ, Routeur'
 description: 'DMZ &#58; couplage OverTheBox avec un autre routeur'
 slug: dmz-couplage-overthebox-avec-un-autre-routeur
 excerpt: 'Si vous souhaitez conserver un routeur comme par exemple un pfSense pour gérer votre  LAN , vos  VPNs , etc, vous pouvez configurer  OverTheBox  en mode transparent en créant une  DMZ'
-section: 'Configurations techniques complexes'
+section: "Configurations techniques avancées"
 ---
 
 ## Prérequis

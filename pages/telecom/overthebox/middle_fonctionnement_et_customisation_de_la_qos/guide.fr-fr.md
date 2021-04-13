@@ -3,7 +3,7 @@ title: 'Fonctionnement et Customisation de la QoS'
 slug: fonctionnement-et-customisation-de-la-qos
 keywords: 'QoS, VoIP, personnaliser, customiser'
 excerpt: "Afin de garantir une stabilité de service et une bonne répartition des différents types de flux au sein de votre réseau  OverTheBox, il est impératif d'activer la  QoS  (Quality Of Service)"
-section: 'Fonctionnalités principales'
+section: "Configurations de l'OverTheBox"
 ---
 
 Il est par exemple nécessaire de prioriser le flux téléphonique par rapport à un téléchargement afin de garantir une communication optimale.
