@@ -1,19 +1,21 @@
 ---
-title: 'Désactiver votre serveur DHCP'
-slug: desactiver-votre-serveur-dhcp
-keywords: 'DHCP, Désactiver'
-description: 'Désactiver votre serveur DHCP'
+title: "Désactiver le serveur DHCP de votre modem"
+slug: "intel-itv1-desactiver-dhcp-modem"
+excerpt: "Découvrer comment désactiver le DHCP sur les modems des principaux fournisseur d'accès"
 section: "OverTheBox Intel et IT v1"
 ---
 
-## Préambule
+> [!warning]
+>
+> Ce guide est déprecié et concerne la configuration d'équipement OverTheBox qui ne sont plus disponible à la vente.
+>
 
 > [!alert]
 >
-> Cette procédure ne s'applique pas à l'Overthebox "PLUS". Seules les OverTheBox "Intel" et "IT" sont concernées.
-> Si vous désactivez le DHCP de vos modems associés à une OverTheBox "PLUS", celle-ci ne fonctionnera pas correctement.
+> Si vous désactiver le DHCP du modem sur les offres actuelles, OverTheBox Plus et OverTheBox IT v2, votre équipement ne fonctionnera pas correctement.
 >
 
+## Préambule
 
 Toutes les Box et routeurs distribués par les fournisseurs d'accès Internet possèdent par défaut un  **serveur DHCP actif** . Ce serveur permet de distribuer intelligemment une adresse IP à chaque appareil réseau, leur permettant ainsi de communiquer sur Internet.
 
@@ -22,12 +24,11 @@ Dans un réseau géré par  **OverTheBox** , plusieurs Box ou routeurs sont dire
 Ce guide montre comment effectuer cette opération sur les différentes Box grand public.
 
 
-
 > [!alert]
 >
 > Si votre Box n'est pas présente ci dessous ou si vous rencontrez une quelconque difficulté, veuillez vous rapprocher de votre administrateur ou de votre fournisseur d'accès afin d'effectuer cette manipulation.
 >
-> La désactivation des serveurs DHCP des Box doit être effectuée à une étape précise de l'installation d'OverTheBox . Il est donc préférable, avant d'effectuer cette manipulation, de suivre la procédure d'installation en vous aidant des documentations « [Mes 10 premières minutes avec OverTheBox Intel](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external} » et « [Mes 10 premières minutes avec OverTheBox IT](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox/){.external} ».
+> La désactivation des serveurs DHCP des Box doit être effectuée à une étape précise de l'installation d'OverTheBox . Il est donc préférable, avant d'effectuer cette manipulation, de suivre la procédure d'installation en vous aidant du guide[Installation OverTheBox Intel ou IT v1](https://docs.ovh.com/fr/overthebox/intel-itv1-installation/){.external}
 >
 
 ## Désactiver le DHCP d'un modem OVH
