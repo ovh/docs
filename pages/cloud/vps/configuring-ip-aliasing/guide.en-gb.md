@@ -272,7 +272,7 @@ Back in the section "IP Addresses", verify that the failover IP address was adde
 
 ### Troubleshooting
 
-First, restart your server from the command line or its GUI. If you are still unable to establish a connection from the public network to your alias IP and suspect a network problem, you need to reboot the server in [rescue mode](../rescue). Then you can set up the failover IP address directly on the server.
+First, restart your server from the command line or its GUI. If you are still unable to establish a connection from the public network to your alias IP and suspect a network problem, you need to reboot the server in [rescue mode](../rescue/). Then you can set up the failover IP address directly on the server.
 
 Once you are connected to your server via SSH, enter the following command:
 
@@ -284,6 +284,6 @@ To test the connection, simply ping your failover IP from the outside. If it res
  
 ## Go further
 
-[Activating Rescue Mode on VPS](../rescue)
+[Activating Rescue Mode on VPS](../rescue/)
 
 Join our community of users on <https://community.ovh.com/en/>.
