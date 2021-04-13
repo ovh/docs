@@ -22,7 +22,7 @@ As part of a migration process, you may find that you need to retrieve data stor
 
 ## Requirements
 
-- a [dedicated server](https://www.ovhcloud.com/en-ca/bare-metal/) with a GNU/Linux distribution installed
+- a [dedicated server](https://www.ovhcloud.com/en-ie/bare-metal/) with a GNU/Linux distribution installed
 - an FTP client that supports SFTP connections (this tutorial uses [FileZilla](https://filezilla-project.org/))
 - administrative access via SSH to your server
 
@@ -30,7 +30,7 @@ As part of a migration process, you may find that you need to retrieve data stor
 
 ### Using FileZilla to retrieve and upload your data
 
-SFTP can be used to transfer files via a secure connection (SSH). There are two possibilities for this scenario: either you have normal access to your server or you connect to it in [rescue mode](../rescue-mode/).
+SFTP can be used to transfer files via a secure connection (SSH). There are two possibilities for this scenario: either you have normal access to your server or you connect to it in [rescue mode](../rescue_mode/).
 
 By default, a server using a GNU/Linux-based operating system will have SSH access via port 22. However, you might have previously changed this port (for example by following [our guide](../securing-a-dedicated-server/)).
 
@@ -53,7 +53,7 @@ The progress of the data transfer will then be displayed at the bottom of the Fi
 
 #### If your server is in rescue mode
 
-In rescue mode, you first need to mount your partition. To do this, you can follow the instructions set out in [this guide](../rescue-mode/).
+In rescue mode, you first need to mount your partition. To do this, you can follow the instructions set out in [this guide](../rescue_mode/).
 
 Once you have mounted your partition, use the FileZilla client in the same way as described above, using port 22 for the connection to your server.
 
@@ -69,7 +69,7 @@ If you have correctly created the mount point, the data will be located in the "
 
 ## Go further
 
-[Rescue Mode](../rescue-mode/)
+[Rescue Mode](../rescue_mode/)
 
 [Securing a dedicated server](../securing-a-dedicated-server/)
 
