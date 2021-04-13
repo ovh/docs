@@ -69,7 +69,7 @@ Une fois connecté à l'interface locale du modem, cliquez sur l'icône de menu 
 
 Sur cette page, cliquez sur le bouton `+ Add New Interface Group`{.action}.
 
-![reutiliserWiFiOTB](images/reutiliserWiFiOTB-step3-2.png){.thumbnail}
+![reutiliserWiFiOTB](images/reutiliserWifiOTB-step3-2.png){.thumbnail}
 
 Donnez un nouveau nom au groupe (`OverTheBox` dans cet exemple). Sélectionnez l'interface WAN utilisée par votre modem. En cas de doute, le type de votre connexion est disponible sur l'espace client OVHcloud (voir image ci-dessous).
 
