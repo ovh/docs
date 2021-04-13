@@ -174,23 +174,21 @@ In order to retrieve the current IP configuration, open the command prompt (cmd)
 
 Now you need to change the IP properties to a static configuration.
 
-Open the adapter settings in the Windows control panel and then open the `Properties`{.action} of `Internet Protocol Version 4 (TCP/IPv6)`{.action}.
+Open the adapter settings in the Windows control panel and then open the `Properties`{.action} of `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![change the ip configuration](images/image2.png){.thumbnail}
 
-In the IPv4 Properties window, select `Use the following IPv4 address`{.action}. Enter the IP address which you have retrieved in the first step.
+In the IPv4 Properties window, select `Use the following IP address`{.action}. Enter the IP address which you have retrieved in the first step, then click on `Advanced`{.action}.
 
 #### Step 3: Add the failover IP in the "Advanced TCP/IP Settings"
 
-Still in the IPv4 Properties window, click on `Advanced`{.action}.
+In the new window, click on `Add...`{.action} under `IP addresses`. Enter your failover IP address and the subnet mask (255.255.255.255).
 
 ![advance configuration section](images/image4-4.png){.thumbnail}
 
-In the new window, click on `Add`{.action}. Enter your failover IP address and the subnet mask (255.255.255.255).
+Confirm by clicking on `Add`{.action}.
 
 ![IP fail over configuration](images/image5-5.png){.thumbnail}
-
-Confirm by clicking on `Add`{.action}.
 
 #### Step 4: Restart the network interface
 
