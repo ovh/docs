@@ -61,7 +61,7 @@ network: {config: disabled}
 ```
 Creating this configuration file will prevent changes to your network configuration from being made automatically.
 
-### Step 2: Edit the network configuration file
+#### Step 2: Edit the network configuration file
 
 You can verify your network interface name with this command:
 
