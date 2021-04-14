@@ -93,7 +93,7 @@ sudo systemctl restart networking
 
 ### Ubuntu 20.04
 
-The configuration file for your failover IP addresses is located in `/etc/netplan/`. In this example it is called "50-cloud-init.yaml", the file name may differ however. Each failover IP address will need its own line within this file. 
+The configuration file for your failover IP addresses is located in `/etc/netplan/`. In this example it is called "50-cloud-init.yaml". Before making changes, verify the actual file name in this folder. Each failover IP address will need its own line within the file.
 
 #### Step 1: Disable automatic network configuration
 
