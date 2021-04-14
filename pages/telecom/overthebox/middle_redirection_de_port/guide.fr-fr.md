@@ -7,16 +7,14 @@ section: "Configurations de l'OverTheBox"
 ---
 
 ## Prérequis
-Afin que la redirection de port fonctionne correctement. Il est impératif que la machine cible de cette redirection possède comme passerelle par défaut l'IP de l' **OverTheBox** .
 
+Afin que la redirection de port fonctionne correctement. Il est impératif que la machine cible de cette redirection possède comme passerelle par défaut l'IP de l' **OverTheBox** .
 
 > [!success]
 >
-> C'est normalement déjà le cas si cette machine est configurée en
-> récupération d'IP automatique et si le DHCP est géré par  OverTheBox
-> Retrouvez la procédure d'installation sur [Mes 10 premières minutes avec OverTheBox](../mes-10-premieres-minutes-avec-overthebox/)
+> C'est normalement déjà le cas si cette machine est configurée en récupération d'IP automatique et si le DHCP est géré par OverTheBox,
+> voir la procédure d'installation : [Installation OverTheBox Plus ou IT v2](../plus_itv2_installation/).
 >
-
 
 ## Redirection de port
 Pour ce faire :
