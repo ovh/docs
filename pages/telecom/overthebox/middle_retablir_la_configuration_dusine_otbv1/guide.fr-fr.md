@@ -2,7 +2,7 @@
 title: "Rétablir la configuration d'usine OverTheBox Intel"
 slug: retablir-la-configuration-dusine-otb-intel
 excerpt: "Afin de repartir sur de bonnes bases ou utiliser OverTheBox dans une nouvelle configuration, vous pouvez réinitialiser OverTheBox.  Ce guide propose plusieurs méthodes, chacune permet d'arriver au même résultat."
-section: "Rétablir la configuration d'usine"
+section: "OverTheBox Intel et IT v1"
 ---
 
 ## Action manuelle

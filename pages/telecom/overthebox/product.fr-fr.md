@@ -2,7 +2,7 @@
 title: OverTheBox
 slug: overthebox
 excerpt: Débuter avec l'OverTheBox
-sections: Guides d'installation, Installation manuelle, Fondamentaux, Fonctionnalités principales, Configurations techniques complexes, Rétablir la configuration d'usine, Intégration avec les offres internet OVHCloud, FAQ
+sections: OverTheBox Plus et IT v2, OverTheBox Intel et IT v1, Configurations de l'OverTheBox, Configurations techniques avancées, Intégration avec les offres internet OVHCloud, Diagnostic et dépannage FAQ
 ---
 
 > [!product-section]
