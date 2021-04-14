@@ -7,8 +7,8 @@ section: "OverTheBox Plus et IT v2"
 
 
 ## Action manuelle
-- Appuyez **rapidement** 5 fois de suite sur le bouton en façade (en moins de 2 secondes)
 
+- Appuyez **rapidement** 5 fois de suite sur le bouton en façade (en moins de 2 secondes)
 
 ![overthebox](images/OTBv2b_face2.png){.thumbnail}
 
@@ -23,21 +23,20 @@ section: "OverTheBox Plus et IT v2"
 ## Action dans l'interface OverTheBox
 
 ### Pour faire une simple suppression de votre configuration (uniquement à partir de la version 0.6.x)
+
 - Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}
 - Cliquez sur **"System"**
 - Cliquez sur **"Backup/Flash Firmware"**
 - Cliquez sur **"Perform Reset"**
 
-
 ![overthebox](images/PerformReset.png){.thumbnail}
 
-
 ### Pour faire une restauration complète du système
+
 - Téléchargez le fichier suivant sur votre ordinateur : [http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz](http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz){.external}
 - Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}
 - Cliquez sur **"System"**
 - Cliquez sur **"Backup/Flash Firmware"**
-
 
 ![overthebox](images/4365.png){.thumbnail}
 
@@ -47,7 +46,6 @@ Ensuite, dans la section  **Flash new firmware image** :
 - Choisissez le fichier image que vous venez de télécharger
 - Décochez la case **"Keep settings"** (afin de faire une véritable réinitialisation)
 - Cliquez sur **"Flash image"**
-
 
 ![overthebox](images/4366.png){.thumbnail}
 
@@ -62,19 +60,18 @@ Ensuite, dans la section  **Flash new firmware image** :
 ## Action en commande (via SSH ou un écran branché sur l'OverTheBox)
 
 ### Pour faire une simple suppression de votre configuration (uniquement à partir de la version 0.6.x)
+
 - Connectez vous en SSH à votre **OverTheBox** (ssh [root@overthebox.ovh](mailto:root@overthebox.ovh){.external}) ou branchez un écran directement sur l' **OverTheBox** en VGA puis un clavier en USB
 - Tapez la commande :
-
 
 ```bash
 firstboot -y
 ```
 
-
 ### Pour faire une restauration complète du système
+
 - Connectez vous en SSH à votre **OverTheBox** (ssh [root@overthebox.ovh](mailto:root@overthebox.ovh){.external}) ou branchez un écran directement sur l' **OverTheBox** en VGA puis un clavier en USB
 - Tapez la commande :
-
 
 ```bash
 otb-action-sysupgrade
@@ -91,6 +88,7 @@ otb-action-sysupgrade
 ## Action via une clef USB
 
 ### Création de la clef bootable sous Windows (logiciel Win32 Disk Imager)
+
 - Téléchargez l'image **"Rescue"** [http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz](http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz){.external}
 
 Cette image permettra à votre clef USB de devenir le "support de boot" de l' **OverTheBox**
@@ -103,7 +101,6 @@ Cette image permettra à votre clef USB de devenir le "support de boot" de l' **
 - Cliquez sur **"write"**
 - Une fois la procédure terminée, cliquez sur **"Exit"**
 
-
 ![overthebox](images/4463.png){.thumbnail}
 
 
@@ -115,6 +112,7 @@ Cette image permettra à votre clef USB de devenir le "support de boot" de l' **
 
 
 ### Création de la clef bootable sous Mac OS
+
 Toute l'opération se fera en ligne de commande, veuillez donc ouvrir le **Terminal**
 
 - Téléchargez l'image **"Rescue"** via la commande suivante
@@ -139,13 +137,11 @@ Vous obtiendrez plusieurs rubriques /dev/disk**X** (ou **X** est remplacé par u
 
 Le dossier correspondant à votre clef doit être le dernier et être désigné comme ceci : /dev/disk **X**  (external, physical). Vous pouvez vous en assurer en vérifiant que le nom de votre clef est bien affiché comme sur l'illustration suivante
 
-
 ![overthebox](images/4492.png){.thumbnail}
 
 Maintenant que vous connaissez l'emplacement de votre clef USB, vous pouvez flasher cette dernière.
 
 - Tapez la commande suivante ( **en remplaçant X par le bon chiffre de votre clef** ):
-
 
 ```bash
 gunzip -c latest.img.gz | dd of=/dev/diskX
@@ -153,19 +149,16 @@ gunzip -c latest.img.gz | dd of=/dev/diskX
 
 Veuillez patienter le temps de l’exécution, **cela peut durer plusieurs minutes**.
 
-
-
 > [!success]
 >
 > La clef USB est maintenant prête à être utilisée pour flasher l'OverTheBox
 >
 
-
 ### Création de la clef bootable sous Linux
+
 Toute l'opération se fera en ligne de commande, veuillez donc ouvrir le **Terminal**
 
 - Téléchargez l'image **"Rescue"** via la commande suivante
-
 
 ```bash
 wget http://downloads.overthebox.net/stable/targets/x86/64/latest.img.gz
@@ -176,7 +169,6 @@ Ce fichier permettra à votre clef USB de devenir le "support de boot" de l'**Ov
 Il est ensuite impératif de connaitre le dossier désignant les partitions de votre clef USB. Pour cela :
 
 - Tapez la commande suivante juste après avoir branché la clef USB :
-
 
 ```bash
 df -h
@@ -190,22 +182,19 @@ Maintenant que vous connaissez l'emplacement de votre clef USB, vous pouvez flas
 
 - Tapez la commande suivante ( **en remplaçant X par la bonne lettre de votre clef** ):
 
-
 ```bash
 gunzip -c latest.img.gz | dd of=/dev/sdX
 ```
 
 Veuillez patienter le temps de l’exécution, **cela peut durer plusieurs minutes**.
 
-
-
 > [!success]
 >
 > La clef USB est maintenant prête à être utilisée pour flasher l'OverTheBox
 >
 
-
 ### Réinitialisation grâce à la clef bootable
+
 - Débranchez l' **OverTheBox** du courant électrique
 - Branchez la clef USB flashée sur un des ports USB de l'**OverTheBox**
 - Rebranchez l' **OverTheBox** sur le courant électrique, le boitier commence déjà sa réinitialisation.

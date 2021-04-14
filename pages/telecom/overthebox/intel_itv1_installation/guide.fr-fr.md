@@ -9,7 +9,7 @@ section: "OverTheBox Intel et IT v1"
 
 > [!warning]
 >
-> Ce guide est déprécié et concerne la configuration d'équipements OverTheBox qui ne sont plus disponible à la vente.
+> Ce guide est déprécié et concerne la configuration d'équipements OverTheBox qui ne sont plus disponibles à la vente.
 > Veuillez vous reporter au guide suivant pour les offres OverTheBox actuelles : [Installation OverTheBox Plus ou IT v2](../plus-itv2-installation)
 >
 

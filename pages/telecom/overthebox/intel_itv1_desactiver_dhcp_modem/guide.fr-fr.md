@@ -9,7 +9,7 @@ section: "OverTheBox Intel et IT v1"
 
 > [!warning]
 >
-> Ce guide est déprécié et concerne la configuration d'équipements OverTheBox qui ne sont plus disponible à la vente.
+> Ce guide est déprécié et concerne la configuration d'équipements OverTheBox qui ne sont plus disponibles à la vente.
 >
 
 > [!alert]
@@ -21,7 +21,7 @@ section: "OverTheBox Intel et IT v1"
 
 Tous les routeurs et Box distribués par les fournisseurs d'accès à Internet possèdent par défaut un  **serveur DHCP actif** . Ce serveur permet de distribuer intelligemment une adresse IP à chaque appareil réseau, leur permettant ainsi de communiquer sur Internet.
 
-Dans un réseau géré par  **OverTheBox** , plusieurs Box ou routeurs sont directement interconnectés, or il ne faut qu' **un seul serveur DHCP**  sur un réseau afin d'éviter les conflits. Il est donc nécessaire de désactiver le serveur DHCP de chaque Box et routeur gérés par  **OverTheBox** .
+Dans un réseau géré par **OverTheBox**, plusieurs Box ou routeurs sont directement interconnectés, or il ne faut qu' **un seul serveur DHCP**  sur un réseau afin d'éviter les conflits. Il est donc nécessaire de désactiver le serveur DHCP de chaque Box et routeur gérés par **OverTheBox** .
 
 Ce guide montre comment effectuer cette opération sur les différentes Box grand public.
 
@@ -29,7 +29,7 @@ Ce guide montre comment effectuer cette opération sur les différentes Box gran
 >
 > Si votre Box n'est pas présente ci dessous ou si vous rencontrez une quelconque difficulté, veuillez vous rapprocher de votre administrateur ou de votre fournisseur d'accès afin d'effectuer cette manipulation.
 >
-> La désactivation des serveurs DHCP des Box doit être effectuée à une étape précise de l'installation d'OverTheBox . Il est donc préférable, avant d'effectuer cette manipulation, de suivre la procédure d'installation en vous aidant du guide[Installation OverTheBox Intel ou IT v1](https://docs.ovh.com/fr/overthebox/intel-itv1-installation/){.external}
+> La désactivation des serveurs DHCP des Box doit être effectuée à une étape précise de l'installation d'OverTheBox . Il est donc préférable, avant d'effectuer cette manipulation, de suivre la procédure d'installation en vous aidant du guide[Installation OverTheBox Intel ou IT v1](../intel-itv1-installation/){.external}
 >
 
 ## En pratique
