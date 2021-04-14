@@ -2,8 +2,8 @@
 title: Envoyer une campagne de fax via le Manager
 slug: envoyer-une-campagne-de-fax-via-le-manager
 legacy_guide_number: '8355856'
-section: Premiers pas
-order: 5
+section: Envoi/Réception de fax
+order: 2
 ---
 
 ### Préambule {#préambule}

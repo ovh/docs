@@ -5,6 +5,7 @@ slug: utilisation_de_loffre_ecofax_pro_plug_and_fax
 legacy_guide_number: g2221
 section: Premiers pas
 order: 3
+hidden: true
 ---
 
 Connectez-vous à votre [espace client](https://www.ovhtelecom.fr/espaceclient/login/), rubrique Telecom. Sélectionnez ensuite Fax dans les menus de gauche.

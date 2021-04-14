@@ -2,8 +2,8 @@
 title: Envoyer des fax et créer des campagnes par e-mail
 slug: envoyer-des-fax-et-creer-des-campagnes-par-e-mail
 legacy_guide_number: '8355851'
-section: Premiers pas
-order: 2
+section: Envoi/Réception de fax
+order: 1
 ---
 
 ### **Préambule** {#préambule}
