@@ -6,11 +6,12 @@ section: POPC
 order: 2
 ---
 
-**Dernière mise à jour le 02/04/2021**
+**Dernière mise à jour le 14/04/2021**
 
 ## Objectif
 
-Le logiciel POPC ou "Poste Opérateur pour PC" est un outil pour la gestion de vos communications, notamment les appels entrants. Il se présente sous la forme d'un logiciel de type softphone, installé sur votre ordinateur, qui prend la place d'un téléphone physique. Ainsi vous appelez, décrochez et gérez vos appels non pas en pianotant sur un combiné physique, mais depuis l'application sur votre PC.
+Le logiciel POPC ou « Poste Opérateur PC » est un logiciel qui virtualise un standard téléphonique, idéalement pour le traitement des appels entrants et des transferts internes/externes.
+Il se présente sous la forme d'un logiciel, installé sur votre ordinateur, qui prend la place d'un téléphone physique. Ainsi vous appelez, décrochez et gérez vos appels non pas en pianotant sur un combiné physique, mais depuis l'application sur votre PC.
 
 **Découvrez comment utiliser les fonctionnalités de base du logiciel POPC**
 
