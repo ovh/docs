@@ -6,7 +6,7 @@ section: 'Gestion de projets'
 order: 9
 ---
 
-**Dernière mise à jour le 22/03/2021**
+**Dernière mise à jour le 14/04/2021**
 
 ## Objectif
 
@@ -17,11 +17,11 @@ Les services OVHcloud Public Cloud sont certifiés HDS pour certaines activités
 |Services Public Cloud|Actvités certifiées HDS|
 |---|---|
 |Compute, Storage (Block, Object, Archive, Snapshot, Instance Backup)|1,2,3,4,6|
-|Managed Kubernetes Service, Cloud Database, Data Processing (Spark), AI Training, ML Serving|1,2,3,4,5,6|
+|Managed Kubernetes Service, ML Serving|1,2,3,4,5,6|
 
 > [!primary]
 >
-> Les services Managed Private Registry et Big Data Cluster (Hadoop) ne sont pas, à date, dans le périmètre de certification HDS.
+> Les services Public Cloud : Managed Private Registry, AI Training, Data Processing (Spark) et Big Data Cluster (Hadoop) ne sont pas, à date, dans le périmètre de certification HDS.
 >
 
 **Découvez comment activer l’option pour l’hébergement des données de santé sur votre projet Public Cloud**
@@ -57,6 +57,6 @@ Prenez connaissance de ces dernières et cochez la case d'acceptation des contra
 
 ## Aller plus loin
 
-[Documentation Public Cloud](./)
+[Documentation Public Cloud](../)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
