@@ -21,11 +21,7 @@ L'OverTheBox est un équipement réseau qui se branche sur votre réseau local c
 
 
 ### Dois-je avoir un réseau spécifique pour utiliser OverTheBox ?
-Tous les réseaux informatiques (même les plus basiques) sont compatibles avec le système OverTheBox. Il est donc possible d'utiliser vos propres wifi (suivant votre type d'OverTheBox) ou encore vos boitiers CPL en fonction de la qualité du réseau électrique. Il sera cependant nécessaire de modifier certains paramètres de vos Box comme l'adresse IP ou le DHCP. Ces manipulations sont expliquées dans les guides d'installation suivants  :
-[Mes 10 premières minutes avec OverTheBox intel](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}
-[Mes 10 premières minutes avec OverTheBox IT](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}
-[Mes 10 premières minutes avec OverTheBox PLUS](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-plus/){.external}
-
+Tous les réseaux informatiques (même les plus basiques) sont compatibles avec le système OverTheBox. Il est donc possible d'utiliser vos propres wifi (suivant votre type d'OverTheBox) ou encore vos boitiers CPL en fonction de la qualité du réseau électrique. Il sera cependant nécessaire de modifier certains paramètres de vos Box comme l'adresse IP ou le DHCP. Ces manipulations sont expliquées dans le guide d'installation suivant : [Installation OverTheBox Plus ou IT v2](../plus_itv2_installation/)
 
 ### Quel débit maximum pourrais-je avoir ?
 Le débit total (après addition de vos connexions) dépend du type d'offre à laquelle vous avez souscrit :

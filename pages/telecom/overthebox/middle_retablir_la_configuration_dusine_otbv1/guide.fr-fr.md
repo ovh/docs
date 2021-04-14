@@ -13,14 +13,11 @@ section: "OverTheBox Intel et IT v1"
 
 - Attendez 15 minutes afin qu' **OverTheBox** soit de nouveau opérationnelle
 
-
-
 > [!success]
 >
-> Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la
-> réinstaller en suivant la procédure du guide : Mes 10 premières minutes avec OverTheBox <docs/telecom/overthebox/mes_10_premieres_minutes_avec_overthebox/otbv1/>
-> 
-
+> Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure du guide :
+> [Installation OverTheBox Intel ou IT v1](../intel_itv1_installation/)
+>
 
 ## Action dans l'interface OverTheBox
 
@@ -55,14 +52,11 @@ Ensuite, dans la section  **Flash new firmware image** :
 
 - Attendez 15 minutes afin qu' **OverTheBox** soit de nouveau opérationnelle
 
-
-
 > [!success]
 >
-> Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la
-> réinstaller en suivant la procédure du guide : Mes 10 premières minutes avec OverTheBox <docs/telecom/overthebox/mes_10_premieres_minutes_avec_overthebox/otbv1/>
-> 
-
+> Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure du guide :
+> [Installation OverTheBox Intel ou IT v1](../intel_itv1_installation/)
+>
 
 ## Action en commande (via SSH ou un écran branché sur l'OverTheBox)
 
@@ -87,14 +81,11 @@ otb-action-sysupgrade
 
 - Attendez 5 minutes afin qu'**OverTheBox** soit de nouveau opérationnelle
 
-
-
 > [!success]
 >
-> Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la
-> réinstaller en suivant la procédure du guide : Mes 10 premières minutes avec OverTheBox <docs/telecom/overthebox/mes_10_premieres_minutes_avec_overthebox/otbv1/>
-> 
-
+> Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure du guide :
+> [Installation OverTheBox Intel ou IT v1](../intel_itv1_installation/)
+>
 
 ## Action via une clef USB
 
@@ -119,7 +110,7 @@ Cette image permettra à votre clef USB de devenir le "support de boot" de l' **
 > [!success]
 >
 > La clef USB est maintenant prête à être utilisée pour flasher l'OverTheBox
-> 
+>
 
 
 ### Création de la clef bootable sous Mac OS
@@ -166,7 +157,7 @@ Veuillez patienter le temps de l’exécution, **cela peut durer plusieurs minut
 > [!success]
 >
 > La clef USB est maintenant prête à être utilisée pour flasher l'OverTheBox
-> 
+>
 
 
 ### Création de la clef bootable sous Linux
@@ -210,7 +201,7 @@ Veuillez patienter le temps de l’exécution, **cela peut durer plusieurs minut
 > [!success]
 >
 > La clef USB est maintenant prête à être utilisée pour flasher l'OverTheBox
-> 
+>
 
 
 ### Réinitialisation grâce à la clef bootable
@@ -224,10 +215,8 @@ Veuillez patienter le temps de l’exécution, **cela peut durer plusieurs minut
 - Attendez jusqu'à ce que le **voyant de façade Power** soit éteint (cela peut prendre quelque minutes)
 - Débranchez la clef USB puis redémarrez votre **OverTheBox** .
 
-
-
 > [!success]
 >
-> Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la
-> réinstaller en suivant la procédure du guide : Mes 10 premières minutes avec OverTheBox <docs/telecom/overthebox/mes_10_premieres_minutes_avec_overthebox/otbv1/>
-> 
+> Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure du guide :
+> [Installation OverTheBox Intel ou IT v1](../intel_itv1_installation/)
+>

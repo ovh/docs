@@ -12,9 +12,8 @@ Afin que la redirection de port fonctionne correctement. Il est impératif que l
 
 > [!success]
 >
-> C'est normalement déjà le cas si cette machine est configurée en
-> récupération d'IP automatique et si le DHCP est géré par  OverTheBox
-> Retrouvez la procédure d'installation sur [Mes 10 premières minutes avec OverTheBox](../mes-10-premieres-minutes-avec-overthebox/)
+> C'est normalement déjà le cas si cette machine est configurée en récupération d'IP automatique et si le DHCP est géré par  OverTheBox,
+> voir la procédure d'installation : [Installation OverTheBox Plus ou IT v2](../plus_itv2_installation/)
 >
 
 
