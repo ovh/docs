@@ -5,11 +5,11 @@ excerpt: Find out how to add failover IP addresses to your VPS configuration
 section: 'Network management'
 ---
 
-**Last updated 13th April 2021**
+**Last updated 14th April 2021**
 
 ## Objective
 
-IP aliasing refers to a special network configuration for certain OVHcloud services. It allows you to associate multiple IP addresses with a single network interface.
+IP aliasing refers to a special network configuration for certain OVHcloud services. Failover IPs allow you to associate multiple IP addresses with a single network interface.
 
 **This guide explains how to add failover IP addresses to your network configuration.**
 
@@ -22,7 +22,7 @@ IP aliasing refers to a special network configuration for certain OVHcloud servi
 ## Requirements
 
 - a [Virtual Private Server](https://www.ovhcloud.com/en-gb/vps/) in your OVHcloud account
-- a failover IP address or a failover IP block (RIPE)
+- a [failover IP address](https://www.ovhcloud.com/en-gb/bare-metal/ip/) or a failover IP block (RIPE)
 - administrative access (root) via SSH or GUI to your server
 - basic networking and administration knowledge
 
@@ -243,7 +243,7 @@ sudo systemctl restart networking
 ```
 
 
-### Plesk Onyx 17.x
+### Plesk
 
 #### Step 1: Access the Plesk IP management section
 
