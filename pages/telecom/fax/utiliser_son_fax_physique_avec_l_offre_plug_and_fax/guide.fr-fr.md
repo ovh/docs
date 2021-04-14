@@ -4,7 +4,7 @@ slug: utiliser-son-fax-physique-avec-l-offre-plug-and-fax
 excerpt: Découvrez comment configurer l’offre Plug & Fax pour utiliser un fax physique
 legacy_guide_number: '8355855'
 section: Premiers pas
-order: 1
+order: 2
 ---
 
 **Dernière mise à jour le 11/03/2021**

@@ -3,7 +3,7 @@ title: Activation du répondeur Fax EcoFax Pro / Plug & Fax
 slug: repondeur-fax
 excerpt: Découvrez comment activer le répondeur fax depuis votre espace client OVHcloud
 section: Premiers pas
-order: 2
+order: 3
 ---
 
 **Dernière mise à jour le 25/02/2021**
