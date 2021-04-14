@@ -2,7 +2,7 @@
 title: Rétablir la configuration d'usine OverTheBox Plus
 slug: retablir-la-configuration-dusine/plus
 excerpt: Afin de repartir sur de bonnes bases ou utiliser OverTheBox dans une nouvelle configuration, vous pouvez réinitialiser OverTheBox. Ce guide propose plusieurs méthodes, chacune permet d'arriver au même résultat.
-section: Rétablir la configuration d'usine
+section: "OverTheBox Plus et IT v2"
 ---
 
 
@@ -14,14 +14,11 @@ section: Rétablir la configuration d'usine
 
 - Attendez 15 minutes afin qu' **OverTheBox** soit de nouveau opérationnelle
 
-
-
 > [!success]
 >
-> Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la
-> réinstaller en suivant la procédure du guide : Mes 10 premières minutes avec OverTheBox <docs/telecom/overthebox/mes_10_premieres_minutes_avec_overthebox/otbv2b/>
-> 
-
+> Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure du guide :
+> [Installation OverTheBox Plus ou IT v2](../plus_itv2_installation/)
+>
 
 ## Action dans l'interface OverTheBox
 
@@ -56,14 +53,11 @@ Ensuite, dans la section  **Flash new firmware image** :
 
 - Attendez 15 minutes afin qu' **OverTheBox** soit de nouveau opérationnelle
 
-
-
 > [!success]
 >
-> Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la
-> réinstaller en suivant la procédure du guide : Mes 10 premières minutes avec OverTheBox <docs/telecom/overthebox/mes_10_premieres_minutes_avec_overthebox/otbv2b/>
-> 
-
+> Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure du guide :
+> [Installation OverTheBox Plus ou IT v2](../plus_itv2_installation/)
+>
 
 ## Action en commande (via SSH ou un écran branché sur l'OverTheBox)
 
@@ -88,14 +82,11 @@ otb-action-sysupgrade
 
 - Attendez 5 minutes afin qu'**OverTheBox** soit de nouveau opérationnelle
 
-
-
 > [!success]
 >
-> Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la
-> réinstaller en suivant la procédure du guide : Mes 10 premières minutes avec OverTheBox <docs/telecom/overthebox/mes_10_premieres_minutes_avec_overthebox/otbv2b/>
-> 
-
+> Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure du guide :
+> [Installation OverTheBox Plus ou IT v2](../plus_itv2_installation/)
+>
 
 ## Action via une clef USB
 
@@ -120,7 +111,7 @@ Cette image permettra à votre clef USB de devenir le "support de boot" de l' **
 > [!success]
 >
 > La clef USB est maintenant prête à être utilisée pour flasher l'OverTheBox
-> 
+>
 
 
 ### Création de la clef bootable sous Mac OS
@@ -167,7 +158,7 @@ Veuillez patienter le temps de l’exécution, **cela peut durer plusieurs minut
 > [!success]
 >
 > La clef USB est maintenant prête à être utilisée pour flasher l'OverTheBox
-> 
+>
 
 
 ### Création de la clef bootable sous Linux
@@ -211,7 +202,7 @@ Veuillez patienter le temps de l’exécution, **cela peut durer plusieurs minut
 > [!success]
 >
 > La clef USB est maintenant prête à être utilisée pour flasher l'OverTheBox
-> 
+>
 
 
 ### Réinitialisation grâce à la clef bootable
@@ -221,11 +212,8 @@ Veuillez patienter le temps de l’exécution, **cela peut durer plusieurs minut
 - Attendez jusqu'à ce que le **voyant de façade Power** s'éteigne puis se rallume automatiquement (cela peut prendre quelque minutes)
 - Débranchez la clef USB
 
-
-
 > [!success]
 >
-> Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la
-> réinstaller en suivant la procédure du guide : Mes 10 premières minutes avec OverTheBox <docs/telecom/overthebox/mes_10_premieres_minutes_avec_overthebox/otbv2b/>
-> 
-
+> Votre  OvertheBox  est maintenant réinitialisée, vous pouvez la réinstaller en suivant la procédure du guide :
+> [Installation OverTheBox Plus ou IT v2](../plus_itv2_installation/)
+>

@@ -8,19 +8,21 @@ excerpt: 'Le boitier  OverTheBox  ne possède qu’un seul port Ethernet. Pourta
 section: "OverTheBox Intel et IT v1"
 ---
 
-## Branchements finaux
+**Dernière mise à jour le 14/04/2021**
 
+> [!warning]
+>
+> Ce guide est déprécié et concerne la configuration d'équipements OverTheBox qui ne sont plus disponible à la vente.
+>
+
+## Branchements finaux
 
 > [!alert]
 >
-> La photo suivante illustre les branchements finaux pour une OverTheBox Intel. Avant d'en arriver là sur
-> votre installation, il est impératif de suivre le  processus d'installation
-> disponible sur les guides suivants (selon votre matériel) :
-> 
-[Mes 10 premières minutes avec OverTheBox Intel](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}  
-[Mes 10 premières minutes avec OverTheBox IT](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-intel/){.external}  
-[Mes 10 premières minutes avec OverTheBox PLUS](https://docs.ovh.com/fr/overthebox/mes-10-premieres-minutes-avec-overthebox-plus/){.external}  
-> 
+> La photo suivante illustre les branchements finaux pour une OverTheBox Intel.
+> Avant d'en arriver là sur votre installation, il est impératif de suivre le  processus d'installation :
+> [Installation OverTheBox Intel ou IT v1](../intel_itv1_installation/)
+>
 
 
 ![overthebox](images/4316.png){.thumbnail}
