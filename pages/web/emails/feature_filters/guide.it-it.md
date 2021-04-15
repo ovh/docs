@@ -75,7 +75,7 @@ Valore:
 
 +:
 
-- Ti permette di definire più condizioni per lo stesso filtro, cioè di impostare [regole multiple](#MULTI))
+- In questo modo puoi aggiungere una o più condizioni per la stessa azione
 
 
 
@@ -129,3 +129,6 @@ Esempio di configurazione di queste due regole:
 
 ![](images/img_3242.jpg){.thumbnail}
 
+## Per saperne di più
+
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

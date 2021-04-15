@@ -76,7 +76,7 @@ Trzeci wybór (Wartość):
 
 Czwarty wybór (+):
 
-- Ta opcja pozwala na zdefiniowanie wielu warunków dla tego samego filtra (sprawdź część [wiele reguł](#MULTI)).
+- Ta opcja pozwala na zdefiniowanie wielu warunków dla tego samego filtra.
 
 ![](images/img_3241.jpg){.thumbnail}
 
@@ -127,3 +127,6 @@ W tym przypadku należy skonfigurować dwie reguły:
 
 ![](images/img_3242.jpg){.thumbnail}
 
+## Sprawdź również
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

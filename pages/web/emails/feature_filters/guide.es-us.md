@@ -75,7 +75,7 @@ Valor
 - Por ejemplo: «Si el asunto del mensaje contiene [SPAM]...»
 
 +
-- Permite establecer varias condiciones para el mismo filtro (ver apartado relativo a la creación de [reglas múltiples](#MULTI)).
+- Permite establecer varias condiciones para el mismo filtro .
 
 
 ![](images/img_3241.jpg){.thumbnail}
@@ -127,3 +127,6 @@ En este caso, habría que configurar dos reglas:
 
 ![](images/img_3242.jpg){.thumbnail}
 
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>.
