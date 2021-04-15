@@ -10,7 +10,7 @@ section: 'Zmiana właściciela'
 
 ## Wprowadzenie
 
-Oprócz [zarządzania kontaktami, zarejestrowanie domeny wymaga podania informacji dotyczących jej właściciela. Właściciel **domeny** w tym kontekście dotyczy osoby lub firmy posiadającej prawa do tej domeny. **Zmiana właściciela** odnosi się do przeniesienia praw własności z jednej osoby lub firmy na inną, informacje **właściciela** mają moc prawną. Na przykład proces ten jest obowiązkowy, jeśli firma zmienia nazwę.
+Oprócz [zarządzania kontaktami](../../customer/zarzadzanie_kontaktami/), zarejestrowanie domeny wymaga podania informacji dotyczących jej właściciela. Właściciel **domeny** w tym kontekście dotyczy osoby lub firmy posiadającej prawa do tej domeny. **Zmiana właściciela** odnosi się do przeniesienia praw własności z jednej osoby lub firmy na inną, informacje **właściciela** mają moc prawną. Na przykład proces ten jest obowiązkowy, jeśli firma zmienia nazwę.
 
 > [!primary]
 >Operacja ta nie przenosi Twojej domeny na inne konto klienta OVHcloud.
@@ -38,12 +38,12 @@ Oprócz [zarządzania kontaktami, zarejestrowanie domeny wymaga podania informac
 >
 > - strona internetowa odpowiedniego rejestru TLD;
 > - Lista [TLD dostępnych na OVHcloud](https://www.ovh.pl/domeny/cennik/);
-> - sekcja `Operacje w trakcie`{.action} w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), aby sprawdzić aktualizacje statusu domeny.
+> - sekcja `Operacje w trakcie`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), aby sprawdzić aktualizacje statusu domeny.
 >
 
 ### Etap 1: wybierz domenę
 
-Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action} w kolumnie z lewej strony, wybierz domenę globalną (gTLD), dla której chcesz zmienić właściciela.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w sekcji `Web Cloud`{.action}. Kliknij `Domeny`{.action} w kolumnie z lewej strony, wybierz domenę globalną (gTLD), dla której chcesz zmienić właściciela.
 
 ![zmiana właściciela](images/SS_2.png){.thumbnail}
 
@@ -98,4 +98,4 @@ W przypadku tej operacji nie musisz potwierdzać modyfikacji za pomocą e-maila.
 
 [Zarządzanie kontaktami swoich usług](../../customer/zarzadzanie_kontaktami/)
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

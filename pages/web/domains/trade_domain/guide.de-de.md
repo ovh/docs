@@ -46,7 +46,7 @@ Neben der [Verwaltung der Kontakte](../../customer/verwaltung-der-kontakte/)erfo
 
 ### Schritt 1: Domain auswählen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), im Bereich `Web Cloud`{.action}. Klicken Sie `in der`{.action} linken Spalte auf Domainnamen und wählen Sie die generische Domain (gTLD) aus, deren Inhaber Sie ändern möchten.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, im Bereich `Web Cloud`{.action}. Klicken Sie `in der`{.action} linken Spalte auf Domainnamen und wählen Sie die generische Domain (gTLD) aus, deren Inhaber Sie ändern möchten.
 
 ![Änderung des Inhabers](images/SS_2.png){.thumbnail}
 
@@ -89,7 +89,7 @@ Wenn die E-Mail-Adresse im Rahmen des Inhaberwechsels nicht geändert wird, werd
 
 ### Aktualisierung der Inhaberinformationen <a name="updateownerinformation"></a>
 
-Wenn Sie bestimmte Sekundärinformationen wie Telefonnummer, Adresse usw. aktualisieren müssen, brauchen Sie kein Vertriebsverfahren einzuleiten. Diese Informationen können direkt im OVHcloud Kundencenter [geändert werden](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+Wenn Sie bestimmte Sekundärinformationen wie Telefonnummer, Adresse usw. aktualisieren müssen, brauchen Sie kein Vertriebsverfahren einzuleiten. Diese Informationen können direkt im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) geändert werden.
 
 Im Bereich **Abonnement** des Tab `Allgemeine Informationen`{.action} klicken Sie auf `...`{.action} vor **Kontakten** und anschließend auf `Inhaberinformationen aktualisieren`{.action}.
 

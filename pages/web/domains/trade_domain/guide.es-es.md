@@ -85,7 +85,7 @@ Si la dirección de correo electrónico no se modifica como parte del cambio de 
 
 ### Actualización de la información del propietario <a name="updateownerinformation"></a>
 
-Si tiene que actualizar algunos datos secundarios como el número de teléfono, la dirección, etc., no necesita iniciar un procedimiento comercial. Estos datos pueden modificarse directamente desde el [área de cliente de OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+Si tiene que actualizar algunos datos secundarios como el número de teléfono, la dirección, etc., no necesita iniciar un procedimiento comercial. Estos datos pueden modificarse directamente desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 En la sección **Suscripción** de la pestaña `Información general`{.action}, haga clic en `...`{.action} delante de **Contactos** y seleccione `Actualizar la información del propietario`{.action}.
 

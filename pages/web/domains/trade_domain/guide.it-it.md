@@ -9,7 +9,7 @@ section: 'Cambio di proprietario'
 
 ## Obiettivo
 
-Per registrare un dominio, oltre alla[gestione dei contatti](../../customer/gestisci_i_tuoi_contatti/), è necessario inserire i dati del proprietario. Il **proprietario** in questo contesto riguarda una persona o una società che detiene i diritti su questo nome di dominio. **Il cambiamento di proprietà** si riferisce al trasferimento dei diritti di proprietà di una persona o di un'impresa verso un'altra, le informazioni del **proprietario** hanno un valore giuridico. Ad esempio, questo processo è obbligatorio se una società cambia nome.
+Per registrare un dominio, oltre alla [gestione dei contatti](../../customer/gestisci_i_tuoi_contatti/), è necessario inserire i dati del proprietario. Il **proprietario** in questo contesto riguarda una persona o una società che detiene i diritti su questo nome di dominio. **Il cambiamento di proprietà** si riferisce al trasferimento dei diritti di proprietà di una persona o di un'impresa verso un'altra, le informazioni del **proprietario** hanno un valore giuridico. Ad esempio, questo processo è obbligatorio se una società cambia nome.
 
 > [!primary]
 >Questa operazione non comporta lo spostamento del dominio verso un altro account cliente OVHcloud.
@@ -95,6 +95,6 @@ Per questa operazione non è necessario confermare le modifiche tramite email.
 
 ## Per saperne di più
 
-[Gestire i contatti dei servizi OVH](../../customer/gestisci_i_tuoi_contatti/)
+[Gestire i contatti dei servizi OVHcloud](../../customer/gestisci_i_tuoi_contatti/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

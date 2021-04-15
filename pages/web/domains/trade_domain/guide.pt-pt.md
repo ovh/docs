@@ -14,7 +14,7 @@ Para além da [gestão dos contactos](../../customer/gestao_dos_contactos/), o r
 > [!primary]
 >Esta operação não transfere o seu domínio para outra conta de cliente OVHcloud.
 >
->Para isso, deve [modificar os contactos](../.../customer/gestao_dos_contactos/) do nome de domínio.
+>Para isso, deve [modificar os contactos](../../customer/gestao_dos_contactos/) do nome de domínio.
 
 **Fique a saber como alterar o titular de um nome de domínio**
 
@@ -37,12 +37,12 @@ Para além da [gestão dos contactos](../../customer/gestao_dos_contactos/), o r
 >
 > - O sítio Web do registo TLD correspondente;
 > - a [lista dos TLD disponíveis na OVHcloud](https://www.ovh.pt/dominios/precos/);
-> - a secção `Operações em curso`{.action} na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para verificar as atualizações do estado do domínio.
+> - a secção `Operações em curso`{.action} na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) para verificar as atualizações do estado do domínio.
 >
 
 ### 1 - selecionar o domínio
 
-Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action}. Clique em `Nomes de Domínio`{.action} na coluna da esquerda, selecione o nome de domínio genérico (gTLD) do qual deseja modificar o proprietário.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action}. Clique em `Nomes de Domínio`{.action} na coluna da esquerda, selecione o nome de domínio genérico (gTLD) do qual deseja modificar o proprietário.
 
 ![alteração do proprietário](images/SS_2.png){.thumbnail}
 
@@ -85,7 +85,7 @@ Se o endereço de e-mail não for alterado devido à mudança de proprietário, 
 
 ### Atualização das informações do proprietário <a name="updateownerinformation"></a>
 
-Se precisar de atualizar algumas informações secundárias como o número de telefone, o endereço, etc., não precisa de iniciar um procedimento comercial. Estas informações podem ser alteradas diretamente na Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+Se precisar de atualizar algumas informações secundárias como o número de telefone, o endereço, etc., não precisa de iniciar um procedimento comercial. Estas informações podem ser alteradas diretamente na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 Na secção **Subscrição** do separador `Informações gerais`{.action}, clique em `...`{.action} em **Contactos** e, a seguir, em `Atualizar as informações do proprietário`{.action}.
 
@@ -95,6 +95,6 @@ Para esta operação, não precisa de confirmar as modificações por e-mail.
 
 ## Saiba mais
 
-[Como gerir os contactos (gestores) dos serviços OVH](../../customer/gestao_dos_contactos/)
+[Como gerir os contactos (gestores) dos serviços OVHcloud](../../customer/gestao_dos_contactos/)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
