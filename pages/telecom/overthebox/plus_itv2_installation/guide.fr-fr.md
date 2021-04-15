@@ -117,6 +117,38 @@ Lors de votre première connexion, un assistant d'installation se lance, **nous 
 > Si malgré cette opération, le site [http://proof.ovh.net/](http://proof.ovh.net/){.external} ne retourne toujours pas les bonnes informations, veuillez recommencer l'intégralité de l'étape 3 point par point.
 >
 
+### Étape 5 : ajouter une connexion supplémentaire sur une OverTheBox Plus
+
+> [!warning]
+>
+> Ces configurations ne sont possible que sur l'OverTheBox Plus
+>
+
+Pour le bon déroulement de la procédure d'installation, il est impératif que le modem de votre nouvelle connexion réponde au même condition que dans l'étape 1 :
+
+- Le serveur DHCP du modem doit être **activé**.
+- Si vous avez plus d'un modem, ils doivent être sur des réseaux locaux différents les uns des autres.
+
+> [!alert]
+>
+> Les opérations qui suivent doivent être effectuées depuis un ordinateur connecté directement sur un des ports LAN de l'OverTheBox
+>
+
+- Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}
+- Cliquez sur **"Network"**
+- Cliquez sur **"Switch"**
+- Cliquez sur le port du switch qui sera utilisé pour brancher le modem (dans notre exemple le **12**), assurez vous bien qu'il est en mode **WAN**
+- Cliquez sur **"Apply the new Configuration"**
+
+![overthebox](images/installationV2-step5.png){.thumbnail}
+
+- Branchez simplement votre modem sur le port concerné (dans notre exemple le **12**) puis patientez quelques minutes.
+
+> [!success]
+>
+> Votre système OverTheBox intégre maintenant la nouvelle connexion dans son agrégation de débit.
+>
+
 ## Aller plus loin
 
 ### Ajouter un décodeur TV
