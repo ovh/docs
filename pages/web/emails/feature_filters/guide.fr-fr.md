@@ -24,12 +24,12 @@ Par exemple : vous souhaitez que tout e-mail contenant "[SPAM]" dans le sujet so
 ## Prérequis
 
 - Avoir une offre e-mail MX Plan ou un [Pack Hébergement Web](https://www.ovh.com/fr/hebergement-web/){.external} .
-- Avoir l'accès à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Avoir l'accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 
 ## En pratique
 
-Dans un premier temps, connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+Dans un premier temps, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 Sélectionnez le nom de domaine concerné dans la section `Emails`{.action}.
 

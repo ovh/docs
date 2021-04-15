@@ -121,7 +121,6 @@ Sie haben die Wahl zwischen:
 |Filtereinstellungen|An|enthält|ML@mailing.com|Auf eine lokale Adresse weiterleiten: recipient@mypersonaldomain.ovh|
 |Was der Filter tun wird|Wenn die Nachricht an die Mailingliste versandt wurde|bezeichnet|ML@mailing.com|Senden Sie die Nachricht an meine andere Adresse: recipient@mypersonaldomain.ovh|
 
-<a name="MULTI"></a>
 
 #### E-Mails mit unerwünschten Angaben außer Absendern löschen 
 

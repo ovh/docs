@@ -1,6 +1,6 @@
 ---
-title: 'Servizio Email: configura i filtri email nel tuo Spazio Cliente OVH'
-excerpt: 'Servizio Email: configura i filtri email nel tuo Spazio Cliente OVH'
+title: 'Servizio Email: configura i filtri email nel tuo Spazio Cliente OVHcloud'
+excerpt: 'Servizio Email: configura i filtri email nel tuo Spazio Cliente OVHcloud'
 slug: servizio_email_configura_i_filtri_email_nel_tuo_spazio_cliente_ovh
 legacy_guide_number: g1973
 ---
@@ -25,14 +25,14 @@ allora,
 
 - Aver attivato un servizio email [MX Plan](https://www.ovh.it/prodotti/mxplan.xml) o un [Pack Hosting Web](https://www.ovh.it/hosting-web/).
 
-- Avere accesso al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- Avere accesso al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
-Se non riesci ad accedere al tuo Spazio Cliente OVH, consulta [questa guida](https://www.ovh.it/g1909.hosting_web_gestisci_le_tue_password#le_password_associate_ai_tuoi_servizi_di_web_hosting_ovh_accesso_al_tuo_spazio_cliente_ovh).
+Se non riesci ad accedere al tuo Spazio Cliente OVHcloud, consulta [questa guida](https://www.ovh.it/g1909.hosting_web_gestisci_le_tue_password#le_password_associate_ai_tuoi_servizi_di_web_hosting_ovh_accesso_al_tuo_spazio_cliente_ovh).
 
 
 ## Dove configurare il filtro email?
 
-Accedi al tuo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 Seleziona il tuo dominio nella sezione Email del menu a sinistra e clicca sul tab Email.
 

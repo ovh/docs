@@ -24,12 +24,12 @@ For example: you want any email containing `[SPAM]` in the subject to be deleted
 ## Requirements
 
 - an MX Plan email solution or a [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external} 
-- access to your  [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+- access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 
 
 ## Instructions
 
-First of all, log in to the [OVHcloud Control Panel](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+First of all, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 
 Select the domain name in the `Emails`{.action} section.
 

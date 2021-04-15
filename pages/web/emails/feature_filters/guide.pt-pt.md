@@ -122,7 +122,6 @@ Pode escolher entre:
 |Parâmetros do filtro|A|contém|ML@mailing.com|Reencaminhar para um endereço local: recipient@mypersonaldomain.ovh|
 |O que o filtro vai fazer|Se a mensagem foi enviada à Mailing-List|chamada|ML@mailing.com|então, enviar a mensagem para o meu outro endereço: recipient@mypersonaldomain.ovh|
 
-<a name="MULTI"></a>
 
 #### Eliminar os e-mails que contenham uma menção indesejável com exceção de um remetente 
 
@@ -133,7 +132,7 @@ Adicionam-se dois filtros:
 |Parâmetros do filtro 1|Assumpto da mensagem|contém|"money"|eliminação|
 |Parâmetros do filtro 2|De|não contém|john@mybank.ovh|eliminação|
 
-Se o assumpto da mensagem contiver a palavra `money` ** **e o remetente da mensagem não for `john@mybank.ovh`, a mensagem será eliminada.
+Se o assumpto da mensagem contiver a palavra `money` **e o** remetente da mensagem não for `john@mybank.ovh`, a mensagem será eliminada.
 
 Neste caso, a configuração será a seguinte:
 
