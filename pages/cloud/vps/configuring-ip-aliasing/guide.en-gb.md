@@ -166,7 +166,13 @@ Repeat this procedure for each failover IP address.
 
 #### Step 1: Verify the network configuration
 
-In order to retrieve the current IP configuration, open the command prompt (cmd) and enter "ipconfig".
+Right-click on the `Start Menu`{.action} button and open `Run`{.action}.
+
+Type `cmd` and click `OK`{.action} to open the command line application.
+
+![cmdprompt](images/vps_win07.png){.thumbnail}
+
+In order to retrieve the current IP configuration, enter `ipconfig` at the command prompt.
 
 ![check main IP configuration](images/image1-1.png){.thumbnail}
 
@@ -202,7 +208,7 @@ To restart it, right-click on it again and then select `Enable`{.action}.
 
 #### Step 5: Check the new network configuration
 
-Open the command prompt (cmd) and enter "ipconfig". The configuration should now include the new failover IP address.
+Open the command prompt (cmd) and enter `ipconfig`. The configuration should now include the new failover IP address.
 
 ![check current network configuration](images/image8-8.png){.thumbnail}
 
