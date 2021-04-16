@@ -1,8 +1,8 @@
 ---
 title: Filter für Ihre E-Mail-Adressen erstellen
-slug: email-hosting-configuring-filters
+slug: email-hosting-filter
 legacy_guide_number: 1973
-excerpt: Erfahren Sie, wie Sie einen Filter für Ihre E-Mail-Adresse erstellen und konfigurieren
+excerpt: Erfahren Sie hier, wie Sie Filterregeln für Ihre E-Mail-Adresse erstellen und konfigurieren
 section: E-Mail Account Funktionen
 order: 5
 ---
@@ -11,89 +11,93 @@ order: 5
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Stand 12.08.2020**
+**Letzte Aktualisierung am 12.08.2020**
 
 ## Ziel
 
 Mit einem Filter können Bedingungen für die von Ihnen erhaltenen E-Mails sowie die sich daraus ergebenden Aktionen konfiguriert werden.
 
-Zum Beispiel: Sie möchten, dass alle E-Mails mit "[SPAM]"im Betreff gelöscht werden.
+Zum Beispiel: Sie können jede E-Mail, die von unserem Spamschutz als Spam markiert wurde, automatisch löschen lassen.
 
-- Bedingung = der Betreff der E-Mail enthält *SPAM*
-- Aktion = E-Mail löschen
+- Bedingung: der Betreff der E-Mail enthält *[SPAM]*
+- Aktion: E-Mail löschen
 
-**Hier erfahren Sie, wie Sie einen Filter für Ihre E-Mail-Adresse erstellen und konfigurieren.**
+**Diese Anleitung erklärt, wie Sie Filter für Ihre E-Mail-Adressen erstellen und konfigurieren.**
 
 
 ## Voraussetzungen
 
-- Sie haben ein MX Plan E-Mail-Angebot oder ein [Webhosting Paket](https://www.ovh.de/hosting/){.external}.
+- Sie verfügen über ein MX Plan E-Mail-Angebot oder ein [Webhosting](https://www.ovh.de/hosting/){.external}.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
 
-Wählen Sie die betreffende Domain im Bereich `E-Mails`{.action} aus.
+Wählen Sie die Domain links aus dem Bereich `E-Mails`{.action} aus und wechseln Sie dann zum Tab `E-Mails`{.action}.
 
-Klicken Sie in der Tabelle, in der Ihre E-Mail-Adressen aufgelistet sind, auf das `Filter`{.action}-Symbol der betreffenden Adresse.
+Klicken Sie in der Tabelle, in der Ihre E-Mail-Adressen aufgelistet sind, auf das `Filter`{.action}-Symbol in der Zeile der zu bearbeitenden Adresse.
 
 ![E-Mails](images/img_3239.jpg){.thumbnail}
 
-Sie finden die Liste Ihrer derzeit für diese E-Mail-Adresse konfigurierten Filter. Um einen hinzuzufügen, klicken Sie rechts auf den Button `Filter hinzufügen`{.action}.
+Ein neues Fenster öffnet sich, das Ihre derzeit für diese E-Mail-Adresse konfigurierten Filter anzeigt. Um einen hinzuzufügen, klicken Sie rechts auf den Button `Filter hinzufügen`{.action}.
 
 ![E-Mails](images/img_3240.jpg){.thumbnail}
 
 
-### Die Konfiguration der E-Mail-Filter verstehen
+### Die Filter-Einstellungen verstehen
 
 ![E-Mails](images/img_3241.jpg){.thumbnail}
 
 
 #### Information
 
-- **Filtername:** So können Sie Ihre Filter im Kundencenter unterscheiden.
-- **Priorität:** Dies legt die Reihenfolge der Ausführung Ihrer Filter auf demselben E-Mail-Postfach fest. Ein Prioritätsfilter 1 wird vor einem Prioritätsfilter 5 durchgeführt.
-- **Filter aktivieren:** Dies legt fest, ob der Filter aktiv ist oder nicht (Sie können zum Beispiel einen Filter erstellen, indem Sie die Option entschlüsseln, wenn Sie sie später aktivieren möchten).
+- **Filtername**: Hiermit können Sie Ihre Filter im Kundencenter unterscheiden.
+- **Priorität**: Dies legt die Reihenfolge der Ausführung Ihrer Filter für alle eingehenden Nachrichten auf dieser Adresse fest. Ein Filter der Priorität 1 wird vor einem der Priorität 5 ausgeführt.
+- **Den Filter aktivieren**: Legt fest, ob der Filter auf den Posteingang angewendet wird (Sie können z.B. einen Filter vorübergehend deaktivieren, ohne ihn zu löschen, indem Sie den Haken bei dieser Option entfernen.)
 
 
 #### Regeln
 
-Hier werden Sie die Bedingungen, die Filterregeln konfigurieren.
+In diesem Bereich können Sie die Filterbedingungen, auch Posteingangsregeln genannt, konfigurieren.
 
-Erste Wahl (Header):
+Erste Auswahl (Header):
 
-- **Von:** Entspricht dem Absender, zum Beispiel: "Wenn der Absender ..."
-- **AN:** Entspricht dem Empfänger, zum Beispiel: "Wenn der Empfänger ..."
-- **Betreff der Nachricht:** Entspricht dem Betreff der Nachricht, zum Beispiel: "Wenn der Betreff der Nachricht ..."
-- **Andere:** Anderer Parameter
+- **Von**: Entspricht dem Absender, zum Beispiel: "Wenn der Absender ...".
+- **An**: Entspricht dem Empfänger, zum Beispiel: "Wenn der Empfänger ...".
+- **Betreff der Nachricht**: Entspricht dem Inhalt des Betreffs, zum Beispiel: "Wenn der Betreff der Nachricht ...".
+- **Sonstige**: Anderer Parameter.
 
-Zweite Wahl (Regel):
+Zweite Auswahl (Regel):
 
-- **spf:** Vom SPF-Feld abhängiger Parameter, Beispiel: "... hat keinen SPF Eintrag ..."
-- **enthält:** z. B. "... enthält ..."
-- **enthält nicht:** z. B. "... enthält nicht ..."
+- **spf**: Vom SPF einer Domain abhängiger Parameter, zum Beispiel: "... hat keinen SPF Eintrag".
+- **enthält**: Positive Bedingung, zum Beispiel "Der Betreff enthält ...".
+- **enthält nicht**: Negative Bedingung, zum Beispiel "... enthält nicht ...".
 
-Dritte Wahl (Wert):
+Dritte Auswahl (Wert):
 
-- Beispiel: [SPAM]
+- Ein konkreter Wert zur Definition dieser Regel, zum Beispiel: `[SPAM]`.
 
-Vierte Wahl (+):
+Vierte Auswahl (+):
 
-- So können Sie eine oder mehrere Bedingungen für dieselbe Aktion hinzufügen 
-**Ergebnis dieser Bedingungen** - Beispiel: "Wenn der Betreff der Nachricht [SPAM] enthält"
+- Damit können Sie weitere Regeln für die Aktion hinzufügen, die weiter unten definiert wird.
+
+**Ergebnis dieser Regeln**
+
+Beispiel: `Wenn der Betreff der Nachricht [SPAM] enthält`
 
 
 #### Aktionen
-Hier werden Sie auswählen, was der Filter tun wird, wenn die Bedingungen oben erfüllt sind.
 
-Sie haben die Wahl zwischen:
+Hier entscheiden Sie, wie der Filter eine E-Mail behandelt, wenn die oben genannten Bedingungen erfüllt sind.
 
-- **Akzeptieren:** E-Mails, die die Bedingungen erfüllen, werden normalerweise empfangen.
-- **Auf eine lokale Adresse weiterleiten:** Leitet E-Mails, die die Bedingungen erfüllen, an eine der E-Mail-Adressen Ihrer Domain weiter.
-- **Löschen:** E-Mails, die die Bedingungen erfüllen, werden gelöscht.
-- **Auf eine entfernte Adresse weiterleiten:** Leitet die E-Mails, die die Bedingungen erfüllen, an die E-Mail Adresse Ihrer Wahl weiter.
+Sie können zwischen diesen Arten von Aktionen wählen:
+
+- **Akzeptieren**: Die E-Mail verbleibt in Ihrem Posteingang.
+- **An eine lokale Adresse weiterleiten**: Leitet die Nachricht an eine Ihrer anderen E-Mail-Adressen auf derselben Domain weiter.
+- **Löschen**: Löscht die E-Mail ohne weitere Benachrichtigung aus Ihrem Posteingang.
+- **Auf eine andere Remote-Adresse weiterleiten**: Leitet die Nachricht an die von Ihnen angegebene E-Mail-Adresse weiter.
 
 
 ### Beispiele
@@ -103,37 +107,38 @@ Sie haben die Wahl zwischen:
 ||Header|Regel|Wert|Aktion|
 |---|---|---|---|---|
 |Filtereinstellungen|Betreff der Nachricht|enthält|[SPAM]|löschen|
-|Was der Filter tun wird|Wenn|enthält|die Suite "[SPAM]"|dann die Nachricht löschen.|
+|Was der Filter bewirkt|Wenn der Betreff|enthält|das Wort `[SPAM]`|dann die Nachricht löschen.|
 
 
-#### E-Mails eines Empfängers weiterleiten
+#### E-Mails eines bestimmten Senders weiterleiten
 
 ||Header|Regel|Wert|Aktion|
 |---|---|---|---|---|
 |Filtereinstellungen|Von|enthält|contact@domaintest.ovh|an eine Remote-Adresse weiterleiten: jean@otherdomain.ovh|
-|Was der Filter tun wird|Hat der|ist|contact@domaintest.ovh|Die E-Mail an jean@otherdomain.ovh weiterleiten|
+|Was der Filter bewirkt|Wenn der Absender|ist|contact@domaintest.ovh|dann die Nachricht an jean@otherdomain.ovh weiterleiten|
 
 
-#### An eine Mailingliste adressierte E-Mails weiterleiten
-
-||Header|Regel|Wert|Aktion|
-|---|---|---|---|---|
-|Filtereinstellungen|An|enthält|ML@mailing.com|Auf eine lokale Adresse weiterleiten: recipient@mypersonaldomain.ovh|
-|Was der Filter tun wird|Wenn die Nachricht an die Mailingliste versandt wurde|bezeichnet|ML@mailing.com|Senden Sie die Nachricht an meine andere Adresse: recipient@mypersonaldomain.ovh|
-
-
-#### E-Mails mit unerwünschten Angaben außer Absendern löschen 
-
-Es sind zwei Filter hinzuzufügen:
+#### An eine Mailingliste adressierte E-Mail weiterleiten
 
 ||Header|Regel|Wert|Aktion|
 |---|---|---|---|---|
-|Filterparameter 1|Betreff der Nachricht|enthält|"money"|löschen|
-|Filterparameter 2|Von|enthält nicht|john@mybank.ovh|löschen|
+|Filtereinstellungen|An|enthält|ML@mailing.com|an eine lokale Adresse weiterleiten: recipient@mypersonaldomain.ovh|
+|Was der Filter bewirkt|Wenn die Nachricht an die Mailingliste versandt wurde|namens|ML@mailing.com|dann die Nachricht an meine andere Adresse weiterleiten: recipient@mypersonaldomain.ovh|
 
-Wenn der Betreff der Nachricht das Wort `money` enthält **und der** Absender der Nachricht nicht `john@mybank.ovh` ist, wird die Nachricht gelöscht.
+<a name="MULTI"></a>
 
-In diesem Fall lautet die Konfiguration:
+#### E-Mails mit unerwünschten Phrasen löschen, unter Ausnahme einer Absenderadresse 
+
+Dieses Filterbeispiel besteht aus zwei Regeln:
+
+||Header|Regel|Wert|Aktion|
+|---|---|---|---|---|
+|Filtereinstellungen 1|Betreff der Nachricht|enthält|money|löschen|
+|Filtereinstellungen 2|Von|enthält nicht|john@mybank.ovh|löschen|
+
+**Was der Filter bewirkt**: Wenn der Betreff der Nachricht das Wort `money` enthält **und** der Absender der Nachricht nicht `john@mybank.ovh` ist, wird die Nachricht gelöscht.
+
+Im Kundencenter sieht diese Konfiguration so aus:
 
 ![E-Mails](images/img_3242.jpg){.thumbnail}
 
