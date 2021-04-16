@@ -11,9 +11,9 @@ order: 5
 
 ## Objective
 
-Mit einem Filter können Sie Bedingungen für eingehende E-Mails in Ihrem E-Mail-Account konfigurieren und darauf basierende Aktionen festlegen.
+With a filter you can configure conditions for incoming emails in your email account and set actions based on them.
 
-For example: you can automatically delete any email tagged as spam by our spam protection to be deleted.
+For example: you can automatically delete emails tagged as spam by our spam protection to be deleted.
 
 - Condition: email subject contains *[SPAM]*
 - Action: delete email
