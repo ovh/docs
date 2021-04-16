@@ -2,135 +2,138 @@
 title: 'Creating filters for your email addresses'
 slug: email-hosting-configuring-filters
 legacy_guide_number: 1973
-excerpt: 'Find out how to create and configure a filter on your email address'
+excerpt: 'Find out how to create and configure filter rules on your email address'
 section: 'Email address features'
 order: 5
 ---
 
-**Last updated 12/08/2020**
+**Last updated 12th August 2020**
 
 ## Objective
 
-A filter allows you to configure conditions on the emails you receive, as well as actions that result from them.
+Mit einem Filter können Sie Bedingungen für eingehende E-Mails in Ihrem E-Mail-Account konfigurieren und darauf basierende Aktionen festlegen.
 
-For example: you want any email containing `[SPAM]` in the subject to be deleted.
+For example: you can automatically delete any email tagged as spam by our spam protection to be deleted.
 
-- Condition = email subject contains *SPAM*
-- Action = delete email
+- Condition: email subject contains *[SPAM]*
+- Action: delete email
 
-**Find out how to create and configure a filter on your email address**
+**This guide explains how to create and configure a filter on your email address.**
 
 
 ## Requirements
 
 - an MX Plan email solution or a [Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external} 
-- access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 
 ## Instructions
 
-First of all, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager) and select `Web Cloud`{.action} in the top navigation bar.
 
-Select the domain name in the `Emails`{.action} section.
+Select the domain name from the `Emails`{.action} section in the services bar on the left-hand side. Switch to the tab `Emails`{.action}.
 
-In the table listing your email addresses, click the `Filter`{.action} icon for the email address concerned.
+In the table listing your email addresses, click on the `Filter`{.action} icon in the row of the email address concerned.
 
 ![emails](images/img_3239.jpg){.thumbnail}
 
-You will access the list of filters currently configured for this email address. To add one, click on the button on the right `Add a Filter`{.action}.
+A new window will open which contains the list of filters currently configured for this email address. To add one, click on the button `Add a Filter`{.action}.
 
 ![emails](images/img_3240.jpg){.thumbnail}
 
-### Understanding email filter configuration
+### Understanding the email filter settings
 
 ![emails](images/img_3241.jpg){.thumbnail}
 
 
 #### Information
 
-- **Filter name:** This is used to differentiate your filters in the Control Panel.
-- **Priority:** This sets the order in which your filters will run in the same mailbox. A Priority 1 filter will run before a Priority 5 filter.
-- **Enable filter:** This determines whether the filter will be effective or not (for example, you can create a filter by unchecking the option if you want to enable it later).
+- **Filter name:** This is used to differentiate your filters inside the Control Panel.
+- **Priority:** This sets the order in which your filters will run for all emails received on this address. A Priority 1 filter will run before a Priority 5 filter.
+- **Enable filter:** This determines whether the filter will be applied to the inbox (for example, you can temporarily disable a filter without deleting it by unchecking this option).
 
 
-#### <u>Rules:</u>
+#### Rules
 
-This is where you will configure the conditions, the filter rules.
+In this section you can configure the filter conditions, also known as inbox rules.
 
 First choice (Header):
 
-- **From:** Corresponds to sender, example: `If the sender ...`
-- **TO:** Corresponds to recipient, example: `If the recipient ...`
-- **Message subject:** Matches the subject of the message, example: `If the subject of the message ...`
-- **Other:** Other parameter
+- **From**: Corresponds to the sender, example: `If the sender ...`.
+- **To**: Corresponds to the recipient, example: `If the recipient ...`.
+- **Message subject**: Matches the subject of the message, example: `If the subject of the message ...`.
+- **Other**: Other parameter.
 
 Second choice (Rule):
 
-- **spf:** Parameter that depends on SPF field, example: `... has no SPF record...`
-- **contains:** example: `... contains...`
-- **does not contain:** example: `... does not contain...`
+- **spf**: Parameter that depends on a domain's SPF, example: `... has no SPF record`.
+- **includes**: Positive condition, example: `the subject contains ...`.
+- **does not include**: Negative condition, example: `... does not contain ...`.
 
-Third choice (value):
+Third choice (Value):
 
-- Example: [SPAM]
+- A concrete value to define this rule, for example: `[SPAM]`.
 
 Fourth choice (+):
 
-- This allows you to add one or more conditions for the same action.
+- This allows you to add more rules for the action defined below.
 
-**Result of these conditions** - Example: `If the message subject contains [SPAM]`
+**Result of these rules**
+
+- Example: `If the message subject contains [SPAM]`
 
 
-#### Actions
-This is where you will choose what will be done by the filter if the above conditions are met.
+#### Action
 
-You can choose between:
+This is where you decide how the filter handles an email if the above conditions are met.
 
-- **Accept:** Eligible emails will be received normally.
-- **Redirect to a local address:** Redirects eligible emails to one of your domain’s email addresses.
-- **Deleting:** The emails that meet the conditions will be deleted.
-- **Redirect to a remote address:** Redirects eligible emails to the email address of your choice.
+You can choose between these types of actions:
+
+- **accept**: the email will stay in your inbox.
+- **redirect to a local address**: redirects the email to one of your other email addresses on the same domain.
+- **deletion**: deletes the email from your inbox without further notice.
+- **redirect to a remote address**: redirects the email to whichever email address you enter.
 
 
 ### Examples
 
-#### Delete spam
+#### Deleting spam emails
 
-||Header|Ruler|Value|Action|
+||Header|Rule|Value|Action|
 |---|---|---|---|---|
 |Filter settings|Message subject|includes|[SPAM]|deletion|
-|What the filter will do|If the subject of the message|includes|the `[SPAM]` suite|then delete the message.|
+|What the filter will do|If the subject of the message|includes|the word `[SPAM]`|then delete the message.|
 
 
-#### Redirect emails from a recipient
+#### Redirecting emails from a certain sender
 
-||Header|Ruler|Value|Action|
+||Header|Rule|Value|Action|
 |---|---|---|---|---|
 |Filter settings|From|includes|contact@domaintest.ovh|redirect to a remote address: jean@otherdomain.ovh|
-|What the filter will do|If the sender|is|contact@domaintest.ovh|then resend the email to jean@otherdomain.ovh|
+|What the filter will do|If the sender|is|contact@domaintest.ovh|then redirect the email to jean@otherdomain.ovh|
 
 
-#### Redirect emails sent to a mailing list
+#### Redirecting emails sent to a mailing list
 
-||Header|Ruler|Value|Action|
+||Header|Rule|Value|Action|
 |---|---|---|---|---|
-|Filter settings|WHETHER YOU'RE ON FOOT|includes|ML@mailing.com|Redirect to a local address: recipient@mypersonaldomain.ovh|
-|What the filter will do|If the message was sent to the mailing list|called|ML@mailing.com|then forward the message to my other address: recipient@mypersonaldomain.ovh|
+|Filter settings|To|includes|ML@mailing.com|redirect to a local address: recipient@mypersonaldomain.ovh|
+|What the filter will do|If the message was sent to the mailing list|called|ML@mailing.com|then redirect the message to my other address: recipient@mypersonaldomain.ovh|
 
 <a name="MULTI"></a>
 
-#### Delete emails containing an unwanted comment except for a sender 
+#### Deleting emails containing an unwanted phrase, excluding one sender 
 
-Two filters should be added:
+This filter example consists of two rules:
 
-||Header|Ruler|Value|Action|
+||Header|Rule|Value|Action|
 |---|---|---|---|---|
-|Filter Settings 1|Message subject|includes|"money"|deletion|
-|Filter Settings 2|From|doesn't include|john@mybank.ovh|deletion|
+|Filter settings 1|Message subject|includes|money|deletion|
+|Filter settings 2|From|does not include|john@mybank.ovh|deletion|
 
-If the subject of the message contains the word `money`, **and that** the sender of the message is not `john@mybank.ovh` then the message will be deleted.
+**What the filter will do**: If the subject of the message contains the word `money` **and** the sender of the message is not `john@mybank.ovh`, then the message will be deleted.
 
-In this case, the configuration will be as follows:
+In the Control Panel, the filter configuration looks like this:
 
 ![emails](images/img_3242.jpg){.thumbnail}
 
