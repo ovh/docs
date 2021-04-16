@@ -20,7 +20,7 @@ Neben der Angabe von [Kontakten](../../customer/verwaltung-der-kontakte/) erford
 >
 >Hierzu müssen Sie die [Kontaktverwaltung](../../customer/verwaltung-der-kontakte/) der Domain anpassen.
 
-**Diese Anleitung erklärt die notwendigen Schritte zum Inhaberwechsel einer Domain.**
+**Diese Anleitung erklärt die notwendigen Schritte zum Inhaberwechsel eines Domainnamens.**
 
 ## Voraussetzungen
 
@@ -67,7 +67,7 @@ Es öffnet sich ein neuer Browser-Tab mit allen in Frage kommenden Domains. Wäh
 
 ![Änderung des Inhabers](images/3657.PNG){.thumbnail}
 
-Achten Sie im Formular für die Angaben des Inhabers darauf, dass alle Pflichtfelder gültige Informationen enthalten. Achten Sie auf Eingabefehler und vermeiden Sie möglichst *[non-ASCII printable](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm)*-Zeichen. Bitte beachten Sie auch, dass falsche oder ungenaue Angaben zu einem technischen Fehler und damit zu einer Verzögerung des gesamten Prozesses führen können. 
+Achten Sie im Formular für die Angaben des Inhabers darauf, dass alle Pflichtfelder gültige Informationen enthalten. Achten Sie auf Eingabefehler und vermeiden Sie möglichst Zeichen außerhalb des *[ASCII printable](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm)*-Bereichs. Bitte beachten Sie auch, dass falsche oder ungenaue Angaben zu einem technischen Fehler und damit zu einer Verzögerung des gesamten Prozesses führen können. 
 
 Sobald Sie Ihre Anfrage für den Austausch bestätigt haben, werden Ihnen zwei E-Mails zur Bestätigung oder Stornierung der Anfrage zugesandt:
 
