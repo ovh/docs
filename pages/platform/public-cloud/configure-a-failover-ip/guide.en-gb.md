@@ -24,7 +24,7 @@ You may need to configure failover IP addresses on your instances, for example i
 
 - a [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
 - a [failover IP address](https://www.ovhcloud.com/en-gb/bare-metal/ip/) or a failover IP block (RIPE)
-- administrative access (root) via SSH or GUI to your server
+- administrative access (root) via SSH or GUI to your instance
 - basic networking and administration knowledge
 
 ## Instructions
