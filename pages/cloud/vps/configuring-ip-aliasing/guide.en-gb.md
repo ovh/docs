@@ -283,7 +283,7 @@ First, restart your server from the command line or its GUI. If you are still un
 Once you are connected to your server via SSH, enter the following command:
 
 ```bash
-ifconfig NETWORK_INTERFACE:ID IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER up
+ifconfig ens3:0 IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER up
 ```
 
 To test the connection, simply ping your failover IP from the outside. If it responds in rescue mode, that probably means that there is a configuration error. If, however, the IP is still not working, please inform our support teams by creating a support request in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) for further investigations.
