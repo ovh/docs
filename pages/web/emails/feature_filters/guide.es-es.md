@@ -26,14 +26,14 @@ entonces,
 Es necesario:
 
 - Tener un servicio de correo [MX Plan](https://www.ovh.es/productos/mxplan.xml) o un [plan de hosting](https://www.ovh.es/hosting/).
-- Tener acceso al [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) de OVH.
+- Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 Si no puede acceder al área de cliente, consulte [esta guía](https://www.ovh.es/g1909.web_hosting_administrar_y_acceder_a_sus_contrasenas).
 
 
 ## ¿Dónde se configuran los filtros de correo?
 
-Para empezar, conéctese al [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+Para empezar, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 Seleccione en la columna izquierda el dominio al que está asociado el servicio de correo.
 
@@ -75,7 +75,7 @@ Valor
 - Por ejemplo: «Si el asunto del mensaje contiene [SPAM]...»
 
 +
-- Permite establecer varias condiciones para el mismo filtro (ver apartado relativo a la creación de [reglas múltiples](#MULTI)).
+- Permite establecer varias condiciones para el mismo filtro .
 
 
 ![](images/img_3241.jpg){.thumbnail}
@@ -127,3 +127,7 @@ En este caso, habría que configurar dos reglas:
 
 ![](images/img_3242.jpg){.thumbnail}
 
+
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

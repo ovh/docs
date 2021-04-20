@@ -23,13 +23,13 @@ to
 
 - Posiadanie oferty e-mail [MX Plan](https://www.ovh.pl/produkty/mxplan.xml) lub [hostingu www](https://www.ovh.pl/hosting/).
 
-- Dostęp do [panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 Jeśli nie masz dostępu do panelu klienta, możesz skorzystać z tego [przewodnika](https://www.ovh.pl/g1909.uslugi_www_zarzadzanie_haslami_i_dostep_do_nich).
 
 ## Gdzie można skonfigurować filtr e-mail?
 
-Zaloguj się do [panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 Po zalogowaniu wybierz nazwę domeny w zakładce E-maile w menu z lewej strony. 
 
@@ -76,7 +76,7 @@ Trzeci wybór (Wartość):
 
 Czwarty wybór (+):
 
-- Ta opcja pozwala na zdefiniowanie wielu warunków dla tego samego filtra (sprawdź część [wiele reguł](#MULTI)).
+- Ta opcja pozwala na zdefiniowanie wielu warunków dla tego samego filtra.
 
 ![](images/img_3241.jpg){.thumbnail}
 
@@ -127,3 +127,6 @@ W tym przypadku należy skonfigurować dwie reguły:
 
 ![](images/img_3242.jpg){.thumbnail}
 
+## Sprawdź również
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
