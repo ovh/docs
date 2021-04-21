@@ -128,49 +128,6 @@ Les règles apparaissent dans une liste.  Vous pouvez les modifier en cliquant s
 
 Une fois vos règles configurées et vos options choisies, cliquez, sur `Appliquer la configuration`{.action}, puis sur `Valider la configuration`{.action} sur la fenêtre suivante.
 
-#### Configurer les options du CDN Security
-
-> [!primary]
->  les options présentées ci-dessous nécessite la souscription au [CDN security](https://www.ovh.com/fr/hebergement-web/cdn.xml) ou [CDN Advance](https://www.ovh.com/fr/hebergement-web/cdn.xml)
-
-- **Cross-Origin Resource Sharing (CORS)** : Indiquez, dans la liste, les noms domaine extérieurs qui seront autorisés à accéder aux ressources de votre site web dans le but de les partager. 
-
-Une fois la fonction activée, cliquez sur `Editer la liste des ressources externes`{.action} pour ajouter les noms de domaine autorisés à partager vos ressources.
-
-![CDN](images/manage_CDNsecurity_01.png){.thumbnail}
-
-Une fois votre liste complétée, cliquez sur `Confirmer`{.action}.
-
-- **HTTPS-redirect** : Protégez la globalité du trafic de votre site web en le redirigeant vers le protocole HTTPS de façon temporaire ou permanente.
-
-Une fois la fonction activée, cliquez sur le menu déroulant pour choisir entre `Redirection permanente (301)` ou `Redirection temporaire (302)`.
-
-![CDN](images/manage_CDNsecurity_02.png){.thumbnail}
-
-- **HTTP Strict Transport Security (HSTS)** : Imposez l’accès à votre site web en HTTPS uniquement. Votre solution web est ainsi sécurisée contre les attaques par rétrogradation ( ou attaque par repli ).
-
-Une fois la fonction activée, déterminez la durée de vie pendant laquelle le navigateur appliquera la fonction HSTS sur votre site web. 
-
-![CDN](images/manage_CDNsecurity_03.png){.thumbnail}
-
-> [!primary]
-> 
-> Lorsque que vous activez la fonction HSTS sur votre site, il forcera le protocol HTPPS sur votre navigateur, jusqu'à la fin de la période dite "âge maximum", même après désactivation de la fonction dans votre espace client. Néanmoins lorsque le cache est vidé sur le navigateur qui a déjà effectué une visite sur votre site, ce dernier appliquera le nouvel état de la fonction HSTS.
-
-- **Mixed content** : Forcez l’intégralité du contenu de vos pages web. Pour qu'elles soient chargées de manière sécurisées, participant ainsi à une expérience utilisateur optimale. Toutes les ressources de votre site, internes comme externes, doivent être disponibles en HTTPS pour éviter une erreur du navigateur.
-
-- **Pare-feu applicatif** : Le **W**eb **A**pplcation **F**irewall (WAF) protège votre site des attaques frauduleuses telles que l’injection de code, les requêtes illégitimes ou le vol de données. Il vous couvre des principales failles connues du web en filtrant les requêtes et paquets transmis (la liste de failles est administrée par OVHcloud et régulièrement mise à jour).  
-
-> [!primary]
->  
-> Le WAF est entièrement administré par OVHcloud, la liste des failles est régulièrement mise à jour.
-
-### Visualiser les statistiques du CDN
-
-Dans l'onglet `Multisites`{.action} de votre hébergement, sous le tableau, vous pouvez visualiser les statistiques de votre CDN, indiquant le nombre de requêtes par minutes mesurées sur celui-ci.
-
-![CDN](images/manage_CDNstat_01.png){.thumbnail}
-
 ### Gérer votre CDN (version historique)
 
 > [!primary]
