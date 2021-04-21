@@ -10,7 +10,7 @@ section: Use cases
 
 ## Objective 
 
-[ElastAlert](https://github.com/Yelp/elastalert){.external} is an alerting framework designed by Yelp, able to detect anomalies, spikes, or other patterns of interest. It is production-ready and is a well known standard of alerting in the Elasticsearch ecosystem. As stated in their documentation : "If you can see it in Kibana, ElastAlert can alert on it." In this document you will learn how to deploy this component on Logs Data Platform thanks to its compability with Elasticsearch through [aliases](../using-kibana-with-logs){.ref} and [indexes](../index-as-a-service){.ref}. Logs Data Platform also allows you to host ElastAlert meta-indices on Logs Data Platform..
+[ElastAlert](https://github.com/jertel/elastalert){.external} is an alerting framework originally designed by Yelp, able to detect anomalies, spikes, or other patterns of interest. It is production-ready and is a well known standard of alerting in the Elasticsearch ecosystem. As stated in their documentation : "If you can see it in Kibana, ElastAlert can alert on it." In this document you will learn how to deploy this component on Logs Data Platform thanks to its compability with Elasticsearch through [aliases](../using-kibana-with-logs){.ref} and [indexes](../index-as-a-service){.ref}. Logs Data Platform also allows you to host ElastAlert meta-indices on Logs Data Platform..
 
 ## Requirements 
 
@@ -49,15 +49,31 @@ ElastAlert configuration consists in three steps:
 ### Installation 
 
 
-Installing ElastAlert can be done in different ways as described in their [documentation.](https://github.com/Yelp/elastalert#running-elastalert){.external}. 
-The easiest way is to use [pip](https://docs.python.org/3.6/installing/index.html){.external} to install it with this command :
+Installing ElastAlert can be done in different ways as described in their [documentation.](https://elastalert2.readthedocs.io/en/latest/elastalert.html#running-elastalert){.external}.
+
+You must clone the Jertel ElastAlert repository for the most recent changes:
+
+```shell-session
+$ git clone https://github.com/jertel/elastalert.git
+```
+
+you may need to manually install the correct version of elasticsearch-py.
+
+For Elasticsearch 6.X:
 
 
 ```shell-session
-$ pip install elastalert
+$ pip install "elasticsearch>=6.0.0,<7.0.0"
 ```
 
-It will install several binaries in a location depending on your distribution. The next step is to configure ElastAlert meta-indices using the tool **elastalert-create-index**. 
+Install the module:
+
+```shell-session
+$ pip install "setuptools>=11.3"
+$ python setup.py install
+```
+
+The next step is to configure ElastAlert meta-indices using the provided tool **elastalert-create-index**.
 ElastAlert needs **5** indices to operate: 
 
 - The **generic** index containing all active alerts
@@ -66,7 +82,7 @@ ElastAlert needs **5** indices to operate:
 - The **silence** index indicating if a reoccuring alert should be triggered or silenced 
 - The **past** index with all the alerts triggered and closed. 
 
-The following command will create the indices on Logs Data Platform diretly from Elasticsearch API. 
+The following command will create the indices on Logs Data Platform diretly from Elasticsearch API.
 
 ```shell-session
 $ elastalert-create-index --host <ldp-cluster>.logs.ovh.com --port 9200 --username <username> --password <password> --ssl --index <username>-i-<suffix>
@@ -105,7 +121,7 @@ alert_time_limit:
   days: 2
 ``` 
 
-You can find all the available options [here](https://elastalert.readthedocs.io/en/latest/running_elastalert.html#downloading-and-configuring){.external}. 
+You can find all the available options [here](https://elastalert2.readthedocs.io/en/latest/running_elastalert.html#downloading-and-configuring){.external}. 
 
 - **rules_folder** is where ElastAlert will load rule configuration files from. It will attempt to load every .yaml file in the folder. Without any valid rules, ElastAlert will not start. In this folder. 
 - **run_every** is how often ElastAlert will query Elasticsearch.
@@ -123,7 +139,7 @@ You can find all the available options [here](https://elastalert.readthedocs.io/
 ### Rules configuration
 
 
-For the exemple, we will create a [frequency.yml](https://elastalert.readthedocs.io/en/latest/ruletypes.html#frequency){.external} rule which will send a email if the field **user** with the value **Oles** appears more than **3** times in less than **4 hours** and send an **email**. If your machine cannot send an email, you can still test the rule (it will just fail at the sending).
+For the exemple, we will create a [frequency.yml](https://elastalert2.readthedocs.io/en/latest/ruletypes.html#frequency){.external} rule which will send a email if the field **user** with the value **Oles** appears more than **3** times in less than **4 hours** and send an **email**. If your machine cannot send an email, you can still test the rule (it will just fail at the sending).
 
 
 ```yaml
@@ -193,7 +209,7 @@ $ curl -H 'Content-Type: application/json' -u '<username>:<password>' -XPOST htt
 
 If you send more than 3 times this event, the elastalert process will try to send an alert at the email address configured. 
 
-ElastAlert has a lot of integrations for alerting including Email, JIRA, OpsGenie, SNS, HipChat, Slack, MS Teams, PagerDuty, Zabbix, custom commands and [many more](https://elastalert.readthedocs.io/en/latest/ruletypes.html#alerts){.external}. 
+ElastAlert has a lot of integrations for alerting including Email, JIRA, OpsGenie, SNS, HipChat, Slack, MS Teams, PagerDuty, Zabbix, custom commands and [many more](https://elastalert2.readthedocs.io/en/latest/ruletypes.html#alerts){.external}. 
 
 
 ## Go further
