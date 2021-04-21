@@ -82,7 +82,9 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 #### Configurer les options du Shared CDN
 
-Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite de l'entrée multisite puis `Modifier le CDN`{.action}.
+Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite de l'entrée multisite puis `Modifier le CDN`{.action}. 
+
+Vous pouvez également cliquez sur l'icone de stylo, à droite d'une entrée Multiste, lorsque l'opton CDN est activée. Cliquez ensuite sur `Éditer votre CDN`{.action}.
 
 > [!warning]
 > 
@@ -114,9 +116,9 @@ Sous la mention **Règles de cache**, cliquez sur le bouton `Ajouter une règle`
 
 - **Nom de règle** : Attribuez un nom à votre règle.
 
-- **URI** : Indiquez le sous-ensemble de ressources de votre site web via son chemin dans le répertoire de ce dernier. Pour l'offre CDN-Basic, il n'est possible que de saisir une extension de fichier.
+- **URI** : Indiquez le sous-ensemble de ressources de votre site web via son chemin dans le répertoire de ce dernier. Pour l'offre CDN-Basic et CDN-Security, il n'est possible que de saisir une extension de fichier.
 
-- **Durée** : indiquez la durée de vie de la règle pour la ressource choisie.
+- **Durée** : indiquez la durée de mise en cache de la ressource choisie.
 
 - **Classement** :  Classez par ordre d'exécution vos règles ( de la plus faible à la plus élevée).
 
@@ -131,7 +133,11 @@ Une fois vos règles configurées et vos options choisies, cliquez, sur `Appliqu
 #### Configurer les options du CDN Security
 
 > [!primary]
->  les options présentées ci-dessous nécessite la souscription au [CDN security](https://www.ovh.com/fr/hebergement-web/cdn.xml) ou [CDN Advance](https://www.ovh.com/fr/hebergement-web/cdn.xml)
+>  les options présentées ci-dessous nécessite la souscription au [CDN security](https://www.ovh.com/fr/hebergement-web/cdn.xml) ou [CDN Advanced](https://www.ovh.com/fr/hebergement-web/cdn.xml)
+
+Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite de l'entrée multisite puis `Modifier le CDN`{.action}. 
+
+Vous pouvez également cliquez sur l'icone de stylo, à droite d'une entrée Multiste, lorsque l'opton CDN est activée. Cliquez ensuite sur `Éditer votre CDN`{.action}.
 
 - **Cross-Origin Resource Sharing (CORS)** : Indiquez, dans la liste, les noms domaine extérieurs qui seront autorisés à accéder aux ressources de votre site web dans le but de les partager. 
 
@@ -140,6 +146,9 @@ Une fois la fonction activée, cliquez sur `Editer la liste des ressources exter
 ![CDN](images/manage_CDNsecurity_01.png){.thumbnail}
 
 Une fois votre liste complétée, cliquez sur `Confirmer`{.action}.
+
+> [!primary]
+> Lorsque vous activez l'option CORS sans préciser de noms de domaine dans la liste, cela siginifie que tout les noms de domaine sont autorisés à utiliser le ressources de votre site web.
 
 - **HTTPS-redirect** : Protégez la globalité du trafic de votre site web en le redirigeant vers le protocole HTTPS de façon temporaire ou permanente.
 
@@ -155,7 +164,7 @@ Une fois la fonction activée, déterminez la durée de vie pendant laquelle le 
 
 > [!primary]
 > 
-> Lorsque que vous activez la fonction HSTS sur votre site, il forcera le protocol HTPPS sur votre navigateur, jusqu'à la fin de la période dite "âge maximum", même après désactivation de la fonction dans votre espace client. Néanmoins lorsque le cache est vidé sur le navigateur qui a déjà effectué une visite sur votre site, ce dernier appliquera le nouvel état de la fonction HSTS.
+> Lorsque que vous activez la fonction HSTS sur votre site, il forcera le protocol HTTPS sur votre navigateur, jusqu'à la fin de la période dite "âge maximum", même après désactivation de la fonction dans votre espace client. Néanmoins lorsque le cache est vidé sur le navigateur qui a déjà effectué une visite sur votre site, ce dernier appliquera le nouvel état de la fonction HSTS.
 
 - **Mixed content** : Forcez l’intégralité du contenu de vos pages web. Pour qu'elles soient chargées de manière sécurisées, participant ainsi à une expérience utilisateur optimale. Toutes les ressources de votre site, internes comme externes, doivent être disponibles en HTTPS pour éviter une erreur du navigateur.
 
