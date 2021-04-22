@@ -2,7 +2,7 @@
 title: 'Configuring IP aliasing'
 slug: network-ipaliasing
 excerpt: 'Find out how to add failover IP addresses to your server configuration'
-section: 'Network Management'
+section: 'Network management'
 ---
 
 **Last updated 19th April 2021**
