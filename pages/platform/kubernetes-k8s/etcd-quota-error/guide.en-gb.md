@@ -17,9 +17,9 @@ When managing your Kubernetes cluster, you may encounter the following error:
 "Error from server: rpc error: code = Unknown desc = ETCD storage quota exceeded"
 ```
 
-Each Kubernetes cluster have a dedicated quota on ETCD storage.
-
-The formula to calculate ETCD quota allowed is: *Total = 10MB + (25MB per node)*
+Each Kubernetes cluster has a dedicated quota on ETCD storage usage,
+calculated through the following formula:
+*Quota = 10MB + (25MB per node)* (capped to 200MB)
 
 For example, a cluster with 3 `b2-7` servers has a quota of 85MB.
 
