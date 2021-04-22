@@ -96,13 +96,13 @@ If you do not have any account yet - you will see there possibility to order new
 
 #### MX new, Pro and Exchange version
 
-With new MX plan, Email Pro or Hosted Exchange migration needs to be done with [OVH Mail Migrator](https://omm.ovh.net/){.external}. To do that you need to have your account already created in one of this solution to which you want to migrate. Only for migration process this account needs to have different name as email account that you want to migrate, as two accounts with the same name can not be created at the same in OVH. 
+With new MX plan, Email Pro or Hosted Exchange migration needs to be done with [OVH Mail Migrator](https://omm.ovh.net/){.external}. 
 
-For example if you want to migrate account **office@domain.ovh** START HERE NEXT TIME
+For example you are running out of space and want to migrate account which is in MX plan offer with name **office@domain.ovh** to another mail solution with bigger capacity. To start a migration first you need to order one of our emails soltutions available here [Email offer](https://www.ovh.co.uk/emails/){.external}. After an order you need to configure this service and create new account with name for example **office_new@domain.ovh**.
 
+You have now two accounts created **office@domain.ovh** with MX plan soltion, and **office_new@domain.ovh** with Email Pro or Exchange solution. Now you can go further and start a migration in the same way as it is described in this guide in section [Carrying out a single migration](./#Carrying-out-a-single-migration). As both account in this case are with OVH you simply needs to choose **Hosted by OVHcloud (Autodetect)** and provide password for those accounts. 
 
-
-as described in [Instructions](./instructions).
+After migration will be finished, old account named **office@domain.ovh** can be deleted, and you can change your email name **office_new@domain.ovh** to correct name. And migration process is finished! Remember to change you Incoming and Outgoing servers if you are using mail program like Outlook or Thunderbird. 
 
 
 ### Carrying out a migration by file
