@@ -1,9 +1,9 @@
 ---
-title: Basic operations via CLI
-slug: usage-client
+title: Overview of ovhai CLI
+slug: overview-cli
 excerpt: Learn how to use the CLI to interact with AI Training
 section: How to (with CLI)
-order: 1
+order: 3
 ---
 *Last updated 29th October, 2020.*
 

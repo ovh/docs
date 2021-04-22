@@ -123,7 +123,7 @@ Le lien d'accès au webmail peut être différent selon l'offre Exchange :
 
 Une fois connecté au webmail, réalisez un test d'envoi et de réception afin de vérifier que depuis celui-ci tout est fonctionnel.
 
-Un guide concernant l'utilisation du [Webmail]({legacy}1918){.ref} est disponible.
+Un guide concernant l'utilisation du [Webmail](../exchange-2016-guide-utilisation-outlook-web-app/) est disponible.
 
 Si le test est fonctionnel, vérifiez la configuration de votre logiciel de messagerie via les  [guides](https://www.ovh.com/fr/emails/hosted-exchange/guides/){.external} mis à votre disposition.
 

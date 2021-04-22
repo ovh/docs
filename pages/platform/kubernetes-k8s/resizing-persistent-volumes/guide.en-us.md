@@ -414,4 +414,4 @@ Now you can expand the Persistent Volumes on your OVHcloud Managed Kubernetes cl
 
 To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes documentation site](../).
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+Join our [community of users](https://community.ovh.com/en/).

@@ -12,7 +12,7 @@ La première étape afin d'utiliser la solution de stockage proposé par le Publ
 
 
 ### Prérequis
-- [Créer un accès à Horizon]({legacy}1773){.ref}
+- [Créer un accès à Horizon](../creer-un-acces-a-horizon/)
 
 
 ## Création du conteneur

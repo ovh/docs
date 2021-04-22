@@ -4,7 +4,7 @@ keywords: 'QoS, VoIP'
 description: 'Activer la QoS'
 slug: activer-la-qos
 excerpt: "Afin de permettre le bon fonctionnement de la téléphonie sur IP, il est important d'activer une  QoS (Quality of Service) . Cela permet de prioriser le flux téléphonie sur d'autres types de flux pour lesquels la stabilité est moins importante. Sur  OverTheBox  la QoS n'est pas activée par défaut. Ce guide vous montre comment le faire."
-section: 'Fonctionnalités principales'
+section: "Configurations de l'OverTheBox"
 ---
 
 ## 1. Préparation

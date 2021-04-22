@@ -1,39 +1,73 @@
 ---
 title: 'Zarządzanie certyfikatem SSL na hostingu'
 slug: certyfikaty-ssl-na-hostingu
-excerpt: 'Dowiedz się, jak zarządzać certyfikatem SSL na Twoim hostingu OVH'
+excerpt: 'Dowiedz się, jak zarządzać certyfikatem SSL na Twoim hostingu OVHcloud'
 section: SSL
 order: 1
 ---
 
-**Ostatnia aktualizacja z dnia 12-07-2019**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 04-03-2021**
 
 ## Wprowadzenie
 
-Hosting umożliwia zarządzanie certyfikatem SSL. Certyfikat możesz uzyskać za pośrednictwem OVH lub we własnym zakresie poprzez import certyfikatu na Twój hosting. Kiedy certyfikat zostanie zainstalowany na hostingu, strona lub strony WWW uzyskają bezpieczne połączenie SSL i zaczną używać protokołu HTTPS. 
+Hosting umożliwia zarządzanie certyfikatem SSL. Certyfikat możesz uzyskać za pośrednictwem OVHcloud lub we własnym zakresie poprzez import certyfikatu na Twój hosting. Kiedy certyfikat zostanie zainstalowany na hostingu, strona lub strony WWW uzyskają bezpieczne połączenie SSL i zaczną używać protokołu HTTPS. 
 
-**Dowiedz się, jak zarządzać certyfikatem SSL na hostingu OVH.**
-
+**Dowiedz się, jak zarządzać certyfikatem SSL na hostingu OVHcloud.**
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external}
+- Posiadanie [hostingu OVHcloud](https://www.ovh.pl/hosting/){.external}
 - Zarejestrowanie co najmniej jednej [domeny](https://www.ovh.pl/domeny/){.external}
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Web Cloud`{.action}
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, sekcja `Web Cloud`{.action}
 
 ## W praktyce
 
-W ramach zarządzania certyfikatem SSL na Twoim hostingu możesz wykonać kilka operacji. Przejdź do opisu operacji, którą chcesz przeprowadzić.
+Na Twoim hostingu OVHcloud można zarządzać certyfikatem SSL. Przejdź do opisu operacji, którą chcesz przeprowadzić.
 
-- [Aktywacja certyfikatu SSL na hostingu](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/#aktywacja-certyfikatu-ssl-na-hostingu){.external}: po skorzystaniu z bezpłatnej lub płatnej oferty od OVH lub imporcie certyfikatu SSL możesz aktywować certyfikat na Twoim hostingu.
+- [Aktywacja certyfikatu SSL na stronie podpiętej w opcji MultiSite](#multisite): jeśli pozwalają na to Twoje rozwiązanie lub certyfikat SSL, możesz podłączyć kilka stron podpiętych w opcji MultiSite do bezpiecznego połączenia SSL.
 
-- [Aktywacja SSL w opcji MultiSite](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/#aktywacja-ssl-w-opcji-multisite){.external}: jeśli wykupiona przez Ciebie usługa lub Twój certyfikat SSL dają taką możliwość, Twoje strony podpięte w opcji MultiSite mogą korzystać z bezpiecznego połączenia SSL.
+- [Aktywacja certyfikatu SSL na Twoim hostingu](#enablessl): pomoże Ci aktywować certyfikat SSL na Twoim hostingu. Może to być bezpłatny lub płatny certyfikat zamówiony przez OVHcloud. Możesz również zaimportować własny certyfikat SSL zamówiony u innego dostawcy.
 
-- [Ponowne wygenerowanie certyfikatu SSL na hostingu](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/#ponowne-wygenerowanie-certyfikatu-ssl-na-hostingu){.external}: umożliwia odnowienie certyfikatu SSL Twojego hostingu, o ile aktywowałeś wcześniej certyfikat na kilku stronach podpiętych w opcji MultiSite. 
+- [Odnowienie certyfikatu SSL na hostingu](#regeneratessl): umożliwia wygenerowanie certyfikatu SSL na Twoim hostingu, gdy aktywujesz certyfikat SSL na jednej lub kilku stronach podpiętych w opcji MultiSite.
 
-- [Usunięcie certyfikatu SSL z hostingu](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/#usuniecie-certyfikatu-ssl-z-hostingu){.external}: umożliwia usunięcie certyfikatu SSL z Twojego hostingu. Operacja ta może być jednak ryzykowna, jeśli posiadasz strony WWW używające tego certyfikatu. 
+- [Usunięcie certyfikatu SSL na hostingu.](#deletessl): pozwala usunąć certyfikat SSL na Twoim hostingu OVHcloud. Pamiętaj, że może to stwarzać ryzyko, jeśli jedna ze stron WWW używa aktualnie certyfikatu, który chcesz usunąć.
 
-### Aktywacja certyfikatu SSL na hostingu 
+### Aktywacja certyfikatu SSL na stronie podpiętej w opcji MultiSite <a name="multisite"></a>
+
+W zależności od [certyfikatu SSL](https://www.ovh.pl/ssl/){.external}, który chcesz zamówić, możesz aktywować bezpieczne połączenie SSL na jednej lub kilku stronach podpiętych w opcji MultiSite. W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiedni hosting. Przejdź następnie do zakładki `MultiSite`{.action}.
+
+Tabela, która się wyświetla zawiera wszystkie nazwy domen dodanych do Twojego hostingu. W kolumnie "SSL" możesz sprawdzić stan aktywacji bezpiecznego połączenia SSL dla Twoich stron podpiętych w opcji MultiSite.
+
+![managessl](images/manage-ssl-step5.png){.thumbnail}
+
+Mogą pojawić się wówczas trzy statusy:
+
+|Statusy|Opis |
+|---|---|
+|Aktywny|Wskazuje, że certyfikat SSL jest już aktywny dla tej strony podpiętej w opcji MultiSite. Jeśli Twoja strona WWW nie używa protokołu HTTPS, skorzystaj z instrukcji zawartych w dokumentacji OVHcloud [Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL](../aktywacja-https-ssl-na-stronie-WWW/){.external}.|
+|Do wygenerowania|Wskazuje, że certyfikat SSL został aktywowany dla danej strony podpiętej w opcji MutiSite, ale nie jest jeszcze aktywny. Odnów certyfikat SSL dla Twojego hostingu, aby uwzględniał nowe domeny.|
+|Wyłączony|Wskazuje, że certyfikat SSL nie jest aktywny dla danej strony podpiętej w opcji MultiSite. Aby go aktywować, postępuj zgodnie z instrukcjami podanymi poniżej.|
+
+Aby aktywować certyfikat SSL na stronie podpiętej w opcji MultiSite, kliknij przycisk `...`{.action} po prawej stronie podpiętej w opcji MultiSite, a następnie `Zmień domenę`{.action}. W oknie, które się wyświetla zaznacz kratkę `SSL`{.action}. Możesz również włączyć opcję, aby zmienić subdomenę www w tym samym czasie co powiązana nazwa domeny. Postępuj zgodnie z instrukcjami, aż do potwierdzenia modyfikacji.
+
+Po zatwierdzeniu, status bezpiecznego połączenia SSL dla strony podpiętej w opcji MultiSite zaktualizuje się w ciągu kilku sekund, po czym zostaje wyświetlony komunikat "Do wygenerowania". Powtórz operację, jeśli chcesz aktywować SSL na innych stronach podpiętych w opcji MultiSite.
+
+> [!primary]
+>
+> Możesz mieć w tym stanie dwie sytuacje:
+>
+> - **Nie masz certyfikatu.**
+> Aby przeczytać ten przewodnik, przejdź do sekcji [Aktywuj certyfikat SSL na Twoim hostingu](#enablessl) i wybierz "Darmowy certyfikat (Let's Encrypt)", który obsługuje strony podpięte w opcji MultiSite.
+>
+> - **Certyfikat SSL jest aktywny, ale dodałeś inne strony podpięte w opcji MultiSite.**
+> Aby ponownie wygenerować certyfikat SSL dla pozostałych stron w opcji MultiSite, zapoznaj się z tym przewodnikiem w sekcji [Odnowienie certyfikatu SSL na hostingu WWW](#regeneratessl).
+>
+
+### Aktywacja certyfikatu SSL na hostingu <a name="enablessl"></a>
 
 Twój hosting umożliwia uruchomienie [certyfikatu SSL w zależności od potrzeb](https://www.ovh.pl/ssl/){.external}:
 
@@ -41,7 +75,15 @@ Twój hosting umożliwia uruchomienie [certyfikatu SSL w zależności od potrzeb
 - płatny certyfikat SSL [w opcji z kompatybilnym hostingiem](https://www.ovh.pl/ssl/){.external};
 - import certyfikatu SSL uzyskanego we własnym zakresie.
 
-Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, po czym wybierz nazwę odpowiedniego hostingu. Następnie przejdź do sekcji `Informacje ogólne`{.action}. W zakładce „Certyfikat SSL” powinna pojawić się informacja „Nie” wskazująca, że na Twoim hostingu nie został zainstalowany żaden certyfikat SSL. Kliknij trzy kropki obok napisu „Certyfikat SSL”, a następnie kliknij `Zamów certyfikat SSL`{.action}.
+Przed rozpoczęciem operacji zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action} na pasku usług po lewej stronie, po czym wybierz nazwę odpowiedniego hostingu. Następnie przejdź do sekcji `Informacje ogólne`{.action}. W zakładce „Certyfikat SSL” powinna pojawić się informacja „Nie” wskazująca, że na Twoim hostingu nie został zainstalowany żaden certyfikat SSL.
+
+> [!primary]
+>
+> Przed przeprowadzeniem tej konfiguracji upewnij się, że poprzedni etap [aktywacji certyfikatu SSL na stronie podpiętej w opcji MultiSite](#multisite) został wykonany poprawnie. Przynajmniej jedna domena musi mieć aktywowaną domenę SSL lub domenę A, aby aktywować certyfikat SSL.<br>
+> Informacje te nie mają zastosowania, jeśli zaznaczysz `Płatny` certyfikat{.action} lub `Importuj certyfikat SSL`{.action}.
+>
+
+Kliknij przycisk `...`{.action} obok napisu „Certyfikat SSL”, a następnie `Zamów certyfikat SSL`{.action}.
 
 Jeśli pojawi się informacja „Tak”, oznacza to, że certyfikat SSL jest już zainstalowany i skonfigurowany na hostingu. Nie będziesz mógł więc zamówić nowego, dopóki na hostingu będzie zainstalowany poprzedni.
 
@@ -59,44 +101,20 @@ W zależności od wybranego rozwiązania mogą pojawić się dodatkowe etapy:
 
 - **jeśli wybrałeś import certyfikatu SSL**: wprowadź informacje w odpowiednich polach, które się wyświetlają. Wykorzystaj w tym celu informacje podane przez dostawcę, który wystawił Ci certyfikat. 
 
-Wdrożenie certyfikatu może zająć od kilku minut do kilku dni, w zależności od typu wybranego certyfikatu. Aby sprawdzić, czy certyfikat SSL jest zainstalowany na Twoim hostingu, przejdź do zakładki `Informacje ogólne`{.action} w Twoim Panelu klienta. Informacja „Tak” powinna pojawić się poniżej sekcji „Certyfikat SSL”. 
+Wdrożenie certyfikatu może zająć od kilku minut do kilku dni, w zależności od typu wybranego certyfikatu. Aby sprawdzić, czy certyfikat SSL jest zainstalowany na Twoim hostingu, przejdź do zakładki `Informacje ogólne`{.action} w Twoim Panelu klienta. Informacja „Tak” powinna pojawić się poniżej sekcji „Certyfikat SSL”.
 
 ![managessl](images/manage-ssl-step4.png){.thumbnail}
 
-Po zainstalowaniu certyfikatu kontynuuj operację [Aktywacja SSL na stronie podpiętej w opcji MultiSite](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/#aktywacja-ssl-w-opcji-multisite){.external}, co pozwoli Ci upewnić się, czy strona lub strony korzystają z aktywnego bezpiecznego połączenia SSL.
-
-### Aktywacja SSL w opcji MultiSite
-
-W zależności od [certyfikatu SSL](https://www.ovh.pl/ssl/){.external}, który zamówiłeś, możesz aktywować bezpieczne połączenie SSL na jednej lub wielu stronach podpiętych w opcji MultiSite. Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, następnie wybierz odpowiedni hosting. Przejdź następnie do zakładki `MultiSite`{.action}.
-
-Tabela, która się wyświetla zawiera wszystkie nazwy domen dodanych do Twojego hostingu. W kolumnie „SSL” możesz sprawdzić stan aktywacji bezpiecznego połączenia SSL dla Twoich stron podpiętych w opcji MultiSite. 
-
-![managessl](images/manage-ssl-step5.png){.thumbnail}
-
-Mogą pojawić się wówczas trzy statusy:
-
-|Statusy|Opis |
-|---|---|
-|Aktywny|Wskazuje, że certyfikat SSL jest już aktywny dla tej strony podpiętej w opcji MultiSite. Jeśli Twoja strona WWW nie używa protokołu HTTPS, skorzystaj z instrukcji zawartych w dokumentacji OVH [Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL](https://docs.ovh.com/pl/hosting/aktywacja-https-ssl-na-stronie-WWW/){.external}.|
-|Do wygenerowania|Wskazuje, że certyfikat SSL został aktywowany dla danej strony podpiętej w opcji MutiSite, ale nie jest jeszcze aktywny. Odnów certyfikat SSL dla Twojego hostingu, aby uwzględniał nowe domeny.|
-|Wyłączony|Wskazuje, że certyfikat SSL nie jest aktywny dla danej strony podpiętej w opcji MultiSite. Aby go aktywować, postępuj zgodnie z instrukcjami podanymi poniżej.|
-
-Aby aktywować certyfikat SSL na stronie podpiętej w opcji MultiSite, kliknij na ikonkę koła zębatego po prawej stronie, po czym kliknij `Modyfikuj`{.action}. W oknie, które się pojawi, zaznacz kratkę `SSL`{.action}, następnie wykonaj kolejne kroki, aż do zatwierdzenia modyfikacji.
-
-Po zatwierdzeniu, status bezpiecznego połączenia SSL dla strony podpiętej w opcji MultiSite zaktualizuje się w ciągu kilku sekund, po czym zostaje wyświetlony komunikat „Do wygenerowania”. Powtórz operację, jeśli chcesz aktywować SSL na innych stronach podpiętych w opcji MultiSite. Możesz kontynuować czynności aż do operacji [Ponowne wygenerowanie certyfikatu SSL na hostingu](https://docs.ovh.com/pl/hosting/certyfikaty-ssl-na-hostingu/#ponowne-wygenerowanie-certyfikatu-ssl-na-hostingu){.external}.
-
-![managessl](images/manage-ssl-step6.png){.thumbnail}
-
-### Ponowne wygenerowanie certyfikatu SSL na hostingu
+### Ponowne wygenerowanie certyfikatu SSL na hostingu <a name="regeneratessl"></a>
 
 > [!primary]
 >
 > Operacja ta dotyczy jedynie certyfikatów umożliwiających aktywację bezpiecznego połączenia SSL na kilku stronach podpiętych w opcji MultiSite.
 >
 
-Po aktywowaniu bezpiecznego połączenia SSL na jednej lub kilku stronach podpiętych w opcji MultiSite status wskazuje: „Do wygenerowania”. Operacja ta konieczna jest, aby dodać do certyfikatu SSL na Twoim hostingu wybraną domenę lub domeny. 
+Po aktywowaniu bezpiecznego połączenia SSL na jednej lub kilku stronach podpiętych w opcji MultiSite status wskazuje: „Do wygenerowania”. Operacja ta konieczna jest, aby dodać do certyfikatu SSL na Twoim hostingu wybraną domenę lub domeny.
 
-Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiedni hosting. Następnie przejdź do sekcji `Informacje ogólne`{.action}. Kliknij trzy kropki obok napisu „Certyfikat SSL”, a następnie kliknij `Wygeneruj ponownie certyfikat SSL`{.action}.
+Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action} na pasku usług po lewej stronie, po czym wybierz odpowiedni hosting. Następnie przejdź do sekcji `Informacje ogólne`{.action}. Kliknij trzy kropki obok napisu „Certyfikat SSL”, a następnie kliknij `Wygeneruj ponownie certyfikat SSL`{.action}.
 
 ![managessl](images/manage-ssl-step7.png){.thumbnail}
 
@@ -106,15 +124,15 @@ Pamiętaj jednak, że Let's Encrypt, organizacja dostarczająca certyfikat SSL z
 
 ![managessl](images/manage-ssl-step8.png){.thumbnail}
 
-### Usunięcie certyfikatu SSL na hostingu
+### Usunięcie certyfikatu SSL na hostingu <a name="deletessl"></a>
 
-Możesz usunąć certyfikat SSL aktualnie zainstalowany na Twoim hostingu. Jednak przed wykonaniem tej operacji **radzimy upewnić się, czy usunięcie certyfikatu nie zakłóci dostępności Twoich stron WWW**. Pamiętaj, że użytkownikom odwiedzającym Twoją stronę będzie wyświetlał się błąd bezpieczeństwa, jeśli będą mieli dostęp do strony WWW poprzez HTTPS, ale nie korzystającej z bezpiecznego połączenia SSL. 
+Możesz usunąć certyfikat SSL aktualnie zainstalowany na Twoim hostingu. Jednak przed wykonaniem tej operacji **radzimy upewnić się, czy usunięcie certyfikatu nie zakłóci dostępności Twoich stron WWW**. Pamiętaj, że użytkownikom odwiedzającym Twoją stronę będzie wyświetlał się błąd bezpieczeństwa, jeśli będą mieli dostęp do strony WWW poprzez HTTPS, ale nie korzystającej z bezpiecznego połączenia SSL.
 
-Ponieważ weryfikacja ta jest ściśle związana z ustawieniami Twojej strony WWW, w przypadku trudności zalecamy skorzystanie z pomocy webmastera. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. 
+Ponieważ weryfikacja ta jest ściśle związana z ustawieniami Twojej strony WWW, w przypadku trudności zalecamy skorzystanie z pomocy webmastera. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie.
 
-Gdy będziesz gotowy do usunięcia certyfikatu SSL zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij `Hosting`{.action} na pasku usług po lewej stronie, po czym wybierz nazwę odpowiedniego hostingu. Następnie przejdź do sekcji`Informacje ogólne`{.action}. Kliknij trzy kropki obok napisu „Certyfikat SSL”, a następnie kliknij `Usuń certyfikat SSL`{.action}.
+Gdy będziesz gotowy do usunięcia certyfikatu SSL zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action} na pasku usług po lewej stronie, po czym wybierz nazwę odpowiedniego hostingu. Następnie przejdź do sekcji`Informacje ogólne`{.action}. Kliknij trzy kropki obok napisu „Certyfikat SSL”, a następnie kliknij `Usuń certyfikat SSL`{.action}.
 
-Na stronie, która się wyświetli, zatwierdź usunięcie certyfikatu. Certyfikat zostanie usunięty maksymalnie w ciągu kilku godzin. 
+Na stronie, która się wyświetli, zatwierdź usunięcie certyfikatu. Certyfikat zostanie usunięty maksymalnie w ciągu kilku godzin.
 
 ![managessl](images/manage-ssl-step9.png){.thumbnail}
 

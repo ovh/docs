@@ -6,7 +6,7 @@ legacy_guide_number: g1775
 section: 'Primeros pasos'
 ---
 
-**Última actualización: 3 de diciembre de 2019**
+**Última actualización: 30/03/2021**
 
 ## Objetivo
 
@@ -32,16 +32,19 @@ Una vez haya seleccionado el proyecto deseado, haga clic en el botón `Instancia
 
 A continuación, haga clic en `Crear una instancia`{.action}. Será redirigido al siguiente menú donde tendrá que seleccionar la instancia que desea crear.
 
-![create_instance1](images/create_instance1.png){.thumbnail}
+![create_instance1](images/create_instance1-2021.png){.thumbnail}
 
 La siguiente tabla muestra un resumen de las características de cada tipo de instancia:
 
-| Tipo de servidor | Recursos garantizados | Modo de utilización |
-| :---         |     :---:      |          ---: |
-| General Use   | ✓     | Servidores de desarrollo, aplicaciones web o comerciales    |
-| CPU     | ✓       | Codificación de vídeo o alta computación.      |
-| RAM   | ✓     | Bases de datos, análisis y cálculos en memoria.    |
-| Shared Resources    | -       | Entornos de prueba y de desarrollo      |
+| Tipo de servidor | Recursos garantizados | Uso |
+| :---         |     :---:      |          :--- |
+| General Purpose   | ✓     | Servidores de desarrollo, aplicaciones web o comerciales    |
+| CPU     | ✓       | Codificación de vídeo o alta computación      |
+| RAM   | ✓     | Bases de datos, análisis y cálculos en memoria    |
+| GPU     | ✓       | Procesamiento de tareas masivamente paralelas para aplicaciones especializadas (renderizado, big data, deep learning, etc.)       |
+| Sandbox    | -       | Alojado en recursos compartidos para entornos de testeo y desarrollo      |
+| Discovery    | -       | Alojado en recursos compartidos para entornos de testeo y desarrollo      |
+| IOPS   | ✓     | Optimizado para transferencia de datos en disco    |
 
 > [!primary]
 >

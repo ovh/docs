@@ -19,7 +19,7 @@ Este guia explica-lhe como montar um container de objetos como um sistema de fic
 ## Pré-requisitos
 
 - [Criar um acesso ao Horizon]({legacy}1773)
-- [Adicionar espaço de armazenamento]({legacy}1790)
+- [Adicionar espaço de armazenamento](https://docs.ovh.com/pt/public-cloud/adicionar_um_espaco_de_armazenamento/)
 
 
 

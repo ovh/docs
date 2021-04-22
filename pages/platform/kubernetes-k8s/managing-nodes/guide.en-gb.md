@@ -22,13 +22,13 @@ In your OVHcloud Managed Kubernetes cluster, nodes are grouped in node pools (gr
 
 When you create your cluster, it's created with a default node pool. Then, you can modify the size of this node pool, or add additional node pools of different sizes and types.
 
-In this guide we explain how to do some basic operations with nodes and node pools using the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/manager/cloud/): adding nodes to an existing node pool, creating a new node pool...
+In this guide we explain how to do some basic operations with nodes and node pools using the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb): adding nodes to an existing node pool, creating a new node pool...
 
 ## Editing nodes to an existing node pool
 
 ### Step 1 - Editing nodes to an existing node pool using the OVH Cloud Manager
 
-Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Platforms and services* menu in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/manager/cloud/)
+Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Platforms and services* menu in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovh.com%2Fmanager%2Fpublic-cloud&ovhSubsidiary=gb)
 
 ![Access to the administration UI](images/managing_nodes-01.png){.thumbnail}
 
@@ -118,8 +118,8 @@ Confirm the choice by typing `DELETE` in the confirmation field, and click on th
 
 ## Go further
 
-To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes site](https://www.ovh.com/public-cloud/kubernetes/).
+To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovh.com/public-cloud/kubernetes/).
 
 Otherwise to skip it and push to deploy your first application on your Kubernetes cluster, we invite you to follow our guide to [configuring default settings for `kubectl`](../configuring-kubectl/) and [deploying an application](../deploying-an-application/) .
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+Join our [community of users](https://community.ovh.com/en/).

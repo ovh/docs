@@ -4,7 +4,7 @@ keywords: 'Exporter, Importer, Backup, Configuration'
 description: 'Exporter et importer une configuration'
 slug: exporter-et-importer-une-configuration
 excerpt: "Ce guide est à destination des utilisateurs avertis souhaitant sauvegarder leur configuration avant de réaliser des modifications ou pour importer des configurations pré-reglées afin d'aller plus vite lors d'un déploiement."
-section: 'Fonctionnalités principales'
+section: "Configurations de l'OverTheBox"
 ---
 
 ## Générer une copie de votre configuration

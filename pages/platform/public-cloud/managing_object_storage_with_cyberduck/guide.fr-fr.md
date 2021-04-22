@@ -16,8 +16,8 @@ Ce guide vous expliquera comment configurer Cyberduck afin de pouvoir gérer vot
 
 
 ### Prérequis
-- [Un utilisateur Horizon configuré]({legacy}1773){.ref}
-- L'identifiant de votre projet et de votre utilisateur, récupérable dans le menu [Accès et Sécurité dans Horizon]({legacy}1774){.ref} en téléchargeant le fichier OpenRC
+- [Un utilisateur Horizon configuré](../creer-un-acces-a-horizon/)
+- L'identifiant de votre projet et de votre utilisateur, récupérable dans le menu [Accès et Sécurité dans Horizon](../acces-et-securite-dans-horizon/) en téléchargeant le fichier OpenRC
 
 
 ## Configuration de Cyberduck

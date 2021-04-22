@@ -347,7 +347,7 @@ root@test-vrack:~$ ip link set eth1 up
 
 ## 
 
-- [Configure user access to Horizon]({legacy}1773)
+- [Configure user access to Horizon](../configure_user_access_to_horizon/)
 
 
 

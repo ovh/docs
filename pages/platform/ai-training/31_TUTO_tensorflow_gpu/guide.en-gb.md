@@ -13,10 +13,10 @@ This tutorial covers the proccess of starting a new Jupyter notebook and experim
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- an **AI Training project** created inside a **Public Cloud** project
-- a [user for AI Training](../create-user)
-- some knowledge about [Tensorflow](https://www.tensorflow.org/) library
+-   access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+-   an **AI Training project** created inside a **Public Cloud** project
+-   a [user for AI Training](../create-user)
+-   some knowledge about [Tensorflow](https://www.tensorflow.org/) library
 
 ## Launch and access Jupyter notebook with Tensorflow library
 

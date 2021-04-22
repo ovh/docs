@@ -77,7 +77,7 @@ Troisième choix (valeur):
 
 Quatrième choix (+) :
 
-- Cela vous permet d'ajouter une ou plusieurs conditions pour la même action (voir partie [règles multiples](#MULTI){.external} )
+- Cela vous permet d'ajouter une ou plusieurs conditions pour la même action.
 
 **Résultat de ces conditions** - Exemple : "Si le sujet du message contient [SPAM]"
 
@@ -118,7 +118,6 @@ Vous avez le choix entre :
 |Paramètres du filtre|À|contient|ML@mailing.com|Rediriger vers une adresse locale : recipient@mypersonaldomain.ovh|
 |Ce que le filtre va faire|Si le message a été envoyé à la Mailing-List|appelée|ML@mailing.com|alors, renvoyer le message vers mon autre adresse : recipient@mypersonaldomain.ovh|
 
-<a name="MULTI"></a>
 
 #### Supprimer les e-mails contenant une mention indésirable à l'exception d'un expéditeur 
 
@@ -134,3 +133,7 @@ Si le sujet du message contient le mot "money", **et que** l'expéditeur du mess
 Dans ce cas, la configuration sera la suivante :
 
 ![emails](images/img_3242.jpg){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

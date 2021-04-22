@@ -1,8 +1,8 @@
 ---
-title: 'Nos précédentes gammes de téléphones'
+title: "Guides d'utilisation de nos précédentes gammes de téléphones"
 slug: nos-precedentes-gammes-de-telephones
 excerpt: 'Retrouvez les guides des précédents téléphones fournis par OVHcloud'
-section: Archives
+section: Nos précédentes gammes de téléphones
 ---
 
 **Dernière mise à jour le 28/04/2020**
@@ -35,10 +35,10 @@ Les guides de **dépannage** listés ci-dessous peuvent ne plus être à jour. P
 ### Cisco SPA112
 
 ![previousphones](images/spa112.jpg){.thumbnail}
- 
- - [Fiche technique de l'adaptateur Cisco SPA112](https://docs.ovh.com/fr/voip/adaptateur-spa112/){.external}
- - [Branchements de l'adaptateur Cisco SPA112](https://docs.ovh.com/fr/voip/branchements-spa112/){.external}
- - [Dépannage de l'adaptateur Cisco SPA112](https://docs.ovh.com/fr/voip/depannage-spa112/){.external}
+
+- [Fiche technique de l'adaptateur Cisco SPA112](https://docs.ovh.com/fr/voip/adaptateur-spa112/){.external}
+- [Branchements de l'adaptateur Cisco SPA112](https://docs.ovh.com/fr/voip/branchements-spa112/){.external}
+- [Dépannage de l'adaptateur Cisco SPA112](https://docs.ovh.com/fr/voip/depannage-spa112/){.external}
 
 ### Cisco SPA504G
 

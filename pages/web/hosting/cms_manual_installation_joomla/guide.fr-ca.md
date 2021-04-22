@@ -23,7 +23,7 @@ Les CMS sont des [systèmes de gestion de contenu](https://fr.wikipedia.org/wiki
 
 Vous pouvez trouver tous ces éléments dans [nos offres](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
 
-*Si vous souhaitez installer Joomla de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* []({legacy}1402){.ref}
+*Si vous souhaitez installer Joomla de manière automatique depuis votre espace client, vous pouvez vous aider du guide suivant :* [](../modules-en-1-clic/)
 
 
 ## Joomla!
@@ -202,9 +202,9 @@ Pour un aperçu du panel d'administration de Joomla!, cliquez sur l'image ci- co
 
 
 ### Informations utiles
-**Le support d'OVHcloud ne sera pas habilité à vous répondre pour toute demande d'aide concernant la configuration de votre Joomla!.** **Cependant, un guide d'utilisation est à votre disposition** : []({legacy}2053){.ref} **.**
+**Le support d'OVHcloud ne sera pas habilité à vous répondre pour toute demande d'aide concernant la configuration de votre Joomla!.**
 
-Vous pouvez également consulter les forums dédiés à la solution Joomla!.
+Nous vous invitons à consulter les forums dédiés à la solution Joomla!.
 
 - Voici un lien vers un [forum d'entraide](https://forum.joomla.org/){.external} dédié à ce CMS.
 

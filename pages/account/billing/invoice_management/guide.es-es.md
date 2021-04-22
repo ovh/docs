@@ -5,7 +5,7 @@ excerpt: 'Cómo gestionar sus facturas y pagos en OVHcloud'
 section: 'Pedidos, facturas y servicios'
 ---
 
-**Última actualización: 18/01/2021**
+**Última actualización: 08/04/2021**
 
 ## Objetivo
 
@@ -47,7 +47,7 @@ A continuación se desglosan los servicios facturados:
 - **Suscripción**: Descripción del servicio y período facturado (para los servicios bajo suscripción periódica).
 - **Consumo**: Descripción del servicio (para los servicios con pago por consumo).
 - **Dominio**: Referencia del servicio facturado.
-- **Cantidad**: Número de unidades del servicio facturado. 
+- **Cantidad**: Número de unidades del servicio facturado.
 - **Precio unitario** y **Precio IVA no incl.**: Precio del servicio facturado.
 
 El precio total del servicio con el IVA incluido se indica al final de la tabla, en el **TOTAL IVA incl**.
@@ -57,12 +57,11 @@ El precio total del servicio con el IVA incluido se indica al final de la tabla,
 > Si, en la esquina superior derecha, aparece «Número de cuenta» como forma de pago, significa que se trata de una renovación automática. En ese caso, se utilizará la forma de pago que haya configurado en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 >
 
-
 ### Sección de facturación
 
 #### Consultar y gestionar las facturas de OVHcloud
 
-Para consultar sus facturas, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `Facturas`{.action}. 
+Para consultar sus facturas, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, haga clic en su nombre en la esquina superior derecha y seleccione `Facturas`{.action}.
 
 ![area de cliente](images/hubinvoices.png){.thumbnail}
 
@@ -79,7 +78,6 @@ Para cada factura, se muestran los siguientes datos:
 - fecha de vencimiento
 - botón `···`{.action} para realizar distintas acciones
 
-
 > [!primary]
 >
 > Si el saldo a pagar aparece en rojo, significa que la factura está pendiente de pago. La fecha de vencimiento de la factura le permitirá saber si debe realizar algún pago de forma inmediata.
@@ -93,7 +91,6 @@ Cuando la factura no corresponde a una renovación automática, el saldo a pagar
 - **Ver la versión PDF**: Se generará un archivo en formato PDF que podrá descargar en su ordenador.
 - **Ver los detalles**: Puede consultar el historial de operaciones realizadas en la factura (en las facturas no relativas a renovaciones automáticas).
 
-
 Para localizar fácilmente una o más facturas, puede utilizar los filtros situados sobre la tabla.
 
 ![Filtros](images/invoice-filter.png){.thumbnail}
@@ -104,7 +101,7 @@ Para descargar un archivo Excel en formato CSV con las facturas seleccionadas, h
 
 ![Exportación como CSV](images/csv-export.png){.thumbnail}
 
-#### Abonar el importe pendiente
+#### Abonar las facturas <a name="abonar-las-facturas"></a>
 
 Existen dos formas de abonar las facturas pendientes de pago: desde el botón `Acciones`{.action} o desde las acciones relativas a una factura concreta.
 
@@ -128,7 +125,6 @@ Al igual que las facturas, puede exportar los justificantes de pago en formato C
 >
 > Las diferencias que puede haber entre un pago y el importe de la factura correspondiente se deben a que el saldo previo de su cuenta se ha deducido previamente del importe total, por lo que la cantidad final abonada es menor.
 >
-
 
 ## Más información
 

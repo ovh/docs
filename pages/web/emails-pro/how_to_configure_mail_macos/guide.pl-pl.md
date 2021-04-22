@@ -102,4 +102,4 @@ OVHcloud oferuje aplikację internetową posiadającą [funkcje do pracy zespoł
 
 [Konfiguracja konta Exchange w aplikacji Mail na macOS](https://docs.ovh.com/pl/microsoft-collaborative-solutions/konfiguracja-mail-macos/){.external}
 
-Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com/en](https://community.ovh.com/en){.external}.
+Przyłącz się do społeczności naszych użytkowników na stronie [https://community.ovh.com/en](https://community.ovh.com/en/){.external}.

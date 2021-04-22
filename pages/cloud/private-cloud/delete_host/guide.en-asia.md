@@ -6,7 +6,7 @@ legacy_guide_number: '1442308'
 section: 'OVHcloud Features'
 ---
 
-**Last updated July 1<sup>st</sup> 2020**
+**Last updated March 19<sup>th</sup> 2021**
 
 ## Objective
 
@@ -21,6 +21,11 @@ There are some situations where it may be useful to remove a host server from yo
 
 
 ## Instructions
+
+> [!warning]
+>
+> Be careful not to turn off the host you want to remove, as this would not have the desired effect. This would result in the delivery of a spare host, and the host that is turned off would not be automatically removed.
+>
 
 There are two steps to removing a host server. First you need to switch the resource to maintenance mode, and then you can remove it.
 

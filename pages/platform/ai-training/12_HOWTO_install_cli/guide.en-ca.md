@@ -57,7 +57,7 @@ Use the credentials of your **AI Training** user to log in.
 
 You can use the command `ovhai --help` to list available actions and `ovhai <action> --help` for more information about a specific action.
 
-The documentation of the CLI is available at [CLI documentation](../usage-client).
+The documentation of the CLI is available at [CLI documentation](../overview-cli).
 
 In addition, when performing any action in the **AI Training** section of the OVHcloud Control Panel you are provided with the equivalent command to get you started with the **ovhai CLI**.
 

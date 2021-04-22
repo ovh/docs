@@ -6,7 +6,7 @@ legacy_guide_number: g1775
 section: 'Per iniziare'
 ---
 
-**Ultimo aggiornamento 03/12/2019**
+**Ultimo aggiornamento 30/03/2021**
 
 ## Obiettivo
 
@@ -20,7 +20,7 @@ Il [Public Cloud OVH](https://www.ovhcloud.com/it/public-cloud/){.external} ti p
 * aver già creato un progetto [Public Cloud](https://www.ovhcloud.com/it/public-cloud/){.external} nel tuo account OVHcloud
 * disporre di una chiave SSH nel tuo Spazio Cliente OVHcloud
 
-### Distribuire un’istanza Public Cloud 
+### Distribuire un’istanza Public Cloud
 
 Per distribuire un’istanza Public Cloud accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} Clicca su`Public Cloud`{.action} in alto a sinistra. Poi, nella nuova pagina, clicca sulla freccia accanto al nome del progetto predefinito in alto a sinistra. Seleziona il progetto su cui vuoi creare una nuova istanza.
 
@@ -32,16 +32,19 @@ Dopo aver selezionato il progetto, clicca su`Istanze`{.action} sotto alla sezion
 
 Clicca sul pulsante `Crea un’istanza`{.action} Sarai reindirizzato al seguente menu dove è possibile selezionare l’istanza da creare.
 
-![create_instance1](images/create_instance1.png){.thumbnail}
+![create_instance1](images/create_instance1-2021.png){.thumbnail}
 
 La tabella seguente illustra brevemente le differenze tra i diversi tipi di istanze:
 
-| Tipo di Server | Risorse garantite | Operazioni da riga di comando |
-| :---         |     :---:      |          ---: |
-| Utilizzo   | ✓     | Server di sviluppo, applicazioni business o web    |
+| Tipo di Server | Risorse garantite | Note di utilizzo |
+| :---         |     :---:      |          :--- |
+| General Purpose   | ✓     | Server di sviluppo, applicazioni business o web    |
 | CPU     | ✓       | Codifica video o altri calcoli intensivi      |
 | RAM   | ✓     | Database, analisi e calcoli in-memory    |
-| Risorse condivise    | -       | Ambienti di test e sviluppo      |
+| GPU     | ✓       | Potenza di elaborazione parallela di massa (rendering, Big Data, deep learning, etc.)       |
+| Sandbox    | -       | Hosting in risorse condivise per ambienti di test e sviluppo      |
+| Discovery    | -       | Hosting in risorse condivise per ambienti di test e sviluppo      |
+| IOPS   | ✓     | Ottimizzato per il trasferimento dei dati su disco    |
 
 > [!primary]
 >

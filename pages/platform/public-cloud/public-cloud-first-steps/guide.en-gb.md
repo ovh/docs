@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 1
 ---
 
-**Last updated 1st July 2020**
+**Last updated 26th March 2021**
 
 ## Objective
 
@@ -166,12 +166,13 @@ First, choose a server template according to your needs. The assistant will prov
 | RAM   | ✓     | Databases, analysis, and in-memory calculations    |
 | GPU     | ✓       | Massively parallel processing power for specialised applications (rendering, big data, deep learning, etc.)       |
 | Sandbox    | -       | Hosted on shared resources for testing and development environments      |
+| Discovery    | -       | Hosted on shared resources for testing and development environments      |
 | IOPS   | ✓     | Optimised for disk data transfer    |
 
 
 > [!primary]
 >
-Your Public Cloud resources total will initially be limited for security reasons. You can verify quotas and request an increase in your OVHcloud Control Panel by clicking `Quota and Localisation`{.action} in the left-hand navigation bar under "Project Management".
+Your Public Cloud resources total will initially be limited for security reasons. You can verify quotas and request an increase in your OVHcloud Control Panel by clicking `Quota and Regions`{.action} in the left-hand navigation bar under "Project Management".
 >
 Note that you can upgrade your instance later but you will not be able to switch to a smaller model, unless you choose the "Flex" option in step 4 of the creation. Please see below for more details on this.
 >

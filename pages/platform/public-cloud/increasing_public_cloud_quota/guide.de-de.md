@@ -1,40 +1,49 @@
 ---
-title: 'Public Cloud Quota erhöhen'
-excerpt: 'Erfahren Sie hier die Vorgehensweise, um Ihre Quota zu erhöhen'
+title: 'Public Cloud Quotas erhöhen'
+excerpt: 'Erfahren Sie hier, wie Sie eine Erhöhung Ihrer Public Cloud Quotas beantragen'
 slug: public-cloud-quota-erhoehen
 legacy_guide_number: 1904
-section: 'Projektverwaltung'
+section: Projektverwaltung
+order: 6
 ---
 
-**Letzte Aktualisierung am 25.09.2020**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 26.03.2021**
 
 ## Ziel
 
-Die Anzahl der Ressourcen (RAM, CPU, Festplattenvolumen, Anzahl der Instanzen etc.) sowie der Projekte, die Sie erstellen können, ist grundsätzlich begrenzt. 
+Standardmäßig ist die Anzahl der Ressourcen (RAM, CPU, Speicherplatz, Anzahl der Instanzen, etc.) und der Projekte, die Sie erstellen können, begrenzt.
 
-Wenn Sie mehr Bedarf an Ressourcen haben, muss zunächst die Quota heraufgesetzt werden. 
+Um zusätzliche Ressourcen und Instanzen nutzen zu können, müssen deren Quotas erhöht werden.
 
-**In dieser Anleitung wird erklärt, wie Sie vorgehen, um die Quota-Erhöhung zu erreichen.**
-
+**Diese Anleitung erklärt, wie Sie über Ihr OVHcloud Kundencenter eine Erhöhung von Public Cloud Quotas anfordern.**
 
 ## Voraussetzungen
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben bereits eine [Zahlungsart hinterlegt](../../billing/zahlungsarten-verwalten/).
-- Die maximale Anzahl der in Ihrem OVHcloud-Kundenaccount erstellten Projekte muss erreicht worden sein.
+- Sie haben eine [gültige Zahlungsart](../../billing/zahlungsarten-verwalten/) in Ihrem OVHcloud Kundencenter hinterlegt.
+- Die maximale Anzahl der Projekte in Ihrem OVHCloud Kunden-Account ist bereits ausgeschöpft.
 
-## In der praktischen Anwendung
+## In der praktischen Anwendung 
 
-Um eine Erhöhung der Projektbegrenzung und/oder der Quotas eines Projektes zu beantragen, muss ein Antrag an den Support über ein Ticket gestellt werden.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wechseln Sie zum Tab `Public Cloud`{.action}. Klicken Sie im linken Menü auf `Quota and Regions`{.action}
 
-Wählen Sie hierzu zunächst Ihr Projekt aus und gehen dann zum Bereich `Quota and Localisation`{.action}. Die aktuellen Quotas Ihres Projekts werden hier angezeigt.
+Auf dieser Seite finden Sie eine Zusammenfassung der aktuellen Quotas Ihres Projekts, aufgeschlüsselt nach Regionen. Eine Warnmeldung erscheint neben einer Ressource, sobald 80% ihrer Quota erreicht sind.
 
-Klicken Sie hier auf den Button `Quota erhöhen`{.action}.
+![pci-quota](images/raisepciquota2021b.png){.thumbnail}
 
-![raise-pci-quota](images/raisepciquota1.png){.thumbnail}
+Um eine Quota-Erhöhung zu beantragen, klicken Sie auf `Quota erhöhen`{.action}.
 
-Sie werden dann zur Ticket-Erstellung weitergeleitet. Füllen Sie lediglich die erforderlichen Felder aus; Ihr Antrag wird schnellstmöglich bearbeitet.
+Verwenden Sie das Textfeld im neuen Fenster, um folgende Angaben zu machen:
+
+- welche Quotas erhöht werden sollen;
+- die spezifischen Gründe für jede Ressourcenaufstockung, d.h. wofür genau die Projekte und Instanzen verwendet werden sollen (als Beispiele können Sie bestehende Anwendungsfälle nennen).
+
+Wenn Sie Ihren Bedarf vollständig aufgeführt haben, klicken Sie auf `Bestätigen`{.action}. Ihre Anfrage wird schnellstmöglich bearbeitet.
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.

@@ -13,7 +13,7 @@ For example, you can configure security groups to filter incoming and outgoing c
 
 ## Prerequisites
 
-- [Configure user access to Horizon]({legacy}1773)
+- [Configure user access to Horizon](../configure_user_access_to_horizon/)
 
 
 

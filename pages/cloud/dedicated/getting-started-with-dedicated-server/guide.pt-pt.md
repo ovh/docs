@@ -118,7 +118,7 @@ ssh root@IPv4_do_servidor
 ssh root@nome_de_referência_do_servidor
 ```
 
-Para saber mais sobre SSH, consulte o nosso guia [Introdução ao SSH](../ssh-introduction/).
+Para saber mais sobre SSH, consulte o nosso guia [Introdução ao SSH](../ssh-introducao/).
 
 #### Windows
 

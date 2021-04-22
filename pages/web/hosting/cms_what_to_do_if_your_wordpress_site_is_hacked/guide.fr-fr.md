@@ -30,7 +30,7 @@ Il y a un certain nombre de mesures pratiques que vous pouvez prendre pour corri
 
 Ci-dessous, nous allons vous aider dans les différentes étapes pour remettre en ligne votre site.
 
-Si OVH a fermé votre site, vous pouvez retrouver un [guide généraliste]({legacy}1392){.ref}  sur les procédures de fermeture pour piratage (hack).
+Si OVH a fermé votre site, vous pouvez retrouver un [guide généraliste](../site-ferme-pour-hack/) sur les procédures de fermeture pour piratage (hack).
 
 
 ### Scannez votre poste
@@ -73,8 +73,7 @@ Nous vous conseillons de demander l'assistance d'un [webmaster](https://partners
 
 > [!alert]
 >
-> En aucun cas le support ne pourra directement vous assister pour ce type de
-> demande.
+> En aucun cas le support ne pourra directement vous assister pour ce type de demande.
 > 
 
 
@@ -97,11 +96,11 @@ Concernant la restauration des fichiers :
 
 Via le manager il est possible de restaurer la totalité de votre espace FTP mais cela peut être compliqué si vous avez des domaines attachés au même hébergement.
 
-Il est préférable de ne restaurer que le répertoire concerné dans le cas où plusieurs sites cohabitent sur le même hébergement : un guide est disponible  [ici]({legacy}1593){.ref}
+Il est préférable de ne restaurer que le répertoire concerné dans le cas où plusieurs sites cohabitent sur le même hébergement : un guide est disponible [ici](../restauration-ftp-filezilla-espace-client/).
 
 
 ### Restauration base de donnees SQL
-Voici 2 guides expliquant comment réaliser un [export]({legacy}1394){.ref} de la base de données et comment réaliser [l'import]({legacy}1393){.ref}.
+Voici 2 guides expliquant comment réaliser un [export](../exportation-bases-donnees/) de la base de données et comment réaliser [l'import](../mutualise-guide-importation-dune-base-de-donnees-mysql/).
 
 Une fois la sauvegarde de la base (dump) réalisée, il sera nécessaire de supprimer l'ensemble des tables depuis [phpMyAdmin](https://phpmyadmin.ovh.net){.external} afin de pouvoir importer votre sauvegarde.
 
@@ -129,7 +128,7 @@ Vous y trouverez généralement un lien vous permettant de télécharger la dern
 
 Le fichier que vous allez récupérer est généralement compressé (zippé), il faudra être en mesure de le décompresser (extraire) sur votre ordinateur. Vous trouverez sur Internet différentes aides à ce sujet.
 
-Une fois décompressé, il faut transférer les fichiers vers votre espace FTP, un guide est disponible [ici]({legacy}1374){.ref}.
+Une fois décompressé, il faut transférer les fichiers vers votre espace FTP, un guide est disponible [ici](../modifier-mot-de-passe-utilisateur-ftp/).
 
 Dans le cas où plusieurs sites cohabitent sur le même hébergement, le transfert des fichiers doit être réalisé dans le répertoire concerné.
 
@@ -137,7 +136,7 @@ Il sera nécessaire de modifier le fichier  **wp-config.php**  afin que le lien 
 
 Il faut pour cela vous munir du mail reçu suite à la création de votre base de données, vous pouvez retrouver les informations depuis votre espace client dans la section assistance > Historique des e-mails sauf le mot de passe que vous seul connaissez.
 
-Si vous ne vous rappelez plus du mot de passe de votre base de données, il est possible de le modifier depuis votre espace client. Cette manipulation est expliquée dans ce [guide]({legacy}1374){.ref}
+Si vous ne vous rappelez plus du mot de passe de votre base de données, il est possible de le modifier depuis votre espace client. Cette manipulation est expliquée dans ce [guide](../modifier-mot-de-passe-utilisateur-ftp/)
 
 
 

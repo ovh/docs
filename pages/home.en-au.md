@@ -1,4 +1,4 @@
 ---
-title: OVHcloud Documentation
-excerpt: Select the product you are interested in and find all the guides written for you by OVHcloud
+title: Documentation and Tutorials 
+excerpt: Access the documentation and tutorials for our Cloud universes to deploy and use our solutions.
 ---

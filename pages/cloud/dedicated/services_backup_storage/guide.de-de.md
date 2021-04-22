@@ -1,6 +1,6 @@
 ---
 title: 'Backup Storage auf einem Dedicated Server verwenden'
-slug: dienste-Backup Storage
+slug: dienste-storage-backup
 excerpt: 'Erfahren Sie hier, wie Sie zusätzlichen Speicherplatz aktivieren und auf diesen zugreifen'
 section: Server Management
 ---
@@ -353,4 +353,4 @@ Ersetzen Sie die Variablen im obenstehenden Beispielbefehl mit Ihren eigenen Wer
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.
+Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.

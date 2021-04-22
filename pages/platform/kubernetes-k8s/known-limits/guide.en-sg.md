@@ -6,7 +6,7 @@ section: Technical resources
 ---
 
 
-**Last updated March 12, 2021.**
+**Last updated March 22, 2021.**
 
 <style>
  pre {
@@ -44,11 +44,14 @@ Delivering a fully managed service, including OS and other component updates, yo
 
 ## LoadBalancer
 
-Based on a new highly-available infrastructure since late May  2020, the external load-balancer included in Managed Kubernetes Service is currently offered free-of-charge until July 1st 2020.
-There is a default quota of 16 external `LoadBalancers` per cluster.  
-This limit can be exceptionally raised upon request though our support team.  
+Creating a Kubernetes service of type LoadBalancer in a Managed Kubernetes cluster triggers the creation of a Public Cloud Load Balancer.
+The lifespan of the external Load Balancer (and thus the associated IP address) is linked to the lifespan of this Kubernetes resource.
+
+There is a default quota of 16 external Load Balancers per Openstack project (also named Openstack tenant).
+This limit can be exceptionally raised upon request through our support team.
+
 There is also a limit of __10 open ports__ on every `LoadBalancer`, and these ports must be in a range between __6 and 65535__.
-(Additonally, node-ports are using default range of 30000 - 32767 , allowing you to expose 2767 services/ports).
+(Additionally, node-ports are using default range of 30000 - 32767 , allowing you to expose 2767 services/ports).
 
 ## OpenStack
 
@@ -88,8 +91,28 @@ In any case, there are some ports that you shouldn't block on your instances if 
 
 ## Private Networks
 
-Private networks (vRack) aren't yet supported in OVHcloud Managed Kubernetes.  
-Please refrain from adding private networks to your working nodes instances.
+The `vRack` feature is currently available and compliant with our Managed Kubernetes Service as a public beta feature.  
+For more information, please refer to the [issue #15 of our public roadmap](https://github.com/ovh/public-cloud-roadmap/issues/15).  
+
+### Some limitations must be taken into account
+
+The `LoadBalancer` service is not yet compliant and fully operational with the `vRack`.
+
+To prevent any conflict, we advise you to use any range within the following IP range in the private networks associated with your vrack-enabled Kubernetes clusters and not to disable the DHCP service which is running in your private network:
+
+```text
+10.2.0.0/16
+```
+
+### Known not compliant IP ranges
+
+The following subnets are not compliant with the `vRack` feature and can generate some incoherent behaviours with our used overlay networks:
+
+```text
+192.168.15.0/24
+192.168.16.0/24
+172.17.0.0/16 (subnet used by the Docker daemon)
+```
 
 ## Cluster health
 

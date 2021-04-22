@@ -24,12 +24,12 @@ Par exemple : vous souhaitez que tout e-mail contenant "[SPAM]" dans le sujet so
 ## Prérequis
 
 - Avoir une offre e-mail MX Plan ou un [Pack Hébergement Web](https://www.ovh.com/fr/hebergement-web/){.external} .
-- Avoir l'accès à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Avoir l'accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 
 ## En pratique
 
-Dans un premier temps, connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+Dans un premier temps, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 Sélectionnez le nom de domaine concerné dans la section `Emails`{.action}.
 
@@ -77,7 +77,7 @@ Troisième choix (valeur):
 
 Quatrième choix (+) :
 
-- Cela vous permet d'ajouter une ou plusieurs conditions pour la même action (voir partie [règles multiples](#MULTI){.external} )
+- Cela vous permet d'ajouter une ou plusieurs conditions pour la même action.
 
 **Résultat de ces conditions** - Exemple : "Si le sujet du message contient [SPAM]"
 
@@ -118,8 +118,6 @@ Vous avez le choix entre :
 |Paramètres du filtre|À|contient|ML@mailing.com|Rediriger vers une adresse locale : recipient@mypersonaldomain.ovh|
 |Ce que le filtre va faire|Si le message a été envoyé à la Mailing-List|appelée|ML@mailing.com|alors, renvoyer le message vers mon autre adresse : recipient@mypersonaldomain.ovh|
 
-<a name="MULTI"></a>
-
 #### Supprimer les e-mails contenant une mention indésirable à l'exception d'un expéditeur 
 
 Deux filtres sont à ajouter :
@@ -134,3 +132,7 @@ Si le sujet du message contient le mot "money", **et que** l'expéditeur du mess
 Dans ce cas, la configuration sera la suivante :
 
 ![emails](images/img_3242.jpg){.thumbnail}
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

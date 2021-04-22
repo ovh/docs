@@ -16,8 +16,8 @@ Ce guide vous aidera à prendre en main les API OpenStack afin de gérer vos ima
 
 
 ### Prérequis
-- [Préparer l'environnement pour utiliser l'API OpenStack]({legacy}1851){.ref} en installant python-glanceclient
-- [Charger les variables d'environnement OpenStack]({legacy}1852){.ref}
+- [Préparer l'environnement pour utiliser l'API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/) en installant python-glanceclient
+- [Charger les variables d'environnement OpenStack](../charger-les-variables-denvironnement-openstack/)
 - Une image ou une sauvegarde (dans notre cas, cela sera une image cloud Gentoo)
 
 

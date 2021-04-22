@@ -12,7 +12,7 @@ Zalecamy zachowania hosta zapasowego, jeśli nim dysponujesz, aż do czasu dosta
 
 ## Zwrócenie uszkodzonego hosta
 Należy rozpocząć od oddania uszkodzonego hosta. 
-Wystarczy postępować zgodnie z procedurą wskazaną w sekcji "Usuwanie hosta" w przewodniku [Jak dodać host?]({legacy}605)
+Wystarczy postępować zgodnie z procedurą wskazaną w sekcji "Usuwanie hosta" w przewodniku [Jak dodać host?](../w_jaki_sposob_dodac_host/)
 
 
 ## Kontakt z pomocą, w celu wymiany hosta
@@ -21,5 +21,5 @@ Należy zlecić wymianę hosta, który usunąłeś. Host ten zostanie usunięty 
 
 
 ## Zwrócenie hosta zapasowego
-Po przywróceniu poprawnego działania infrastruktury i wymianie uszkodzonego hosta, będziesz mógł zwrócić host zapasowy. Wystarczy postępować zgodnie z procedurą opisaną w sekcji "Usuwanie hosta" w przewodniku [Jak dodać host?]({legacy}605).
+Po przywróceniu poprawnego działania infrastruktury i wymianie uszkodzonego hosta, będziesz mógł zwrócić host zapasowy. Wystarczy postępować zgodnie z procedurą opisaną w sekcji "Usuwanie hosta" w przewodniku [Jak dodać host?](../w_jaki_sposob_dodac_host/).
 

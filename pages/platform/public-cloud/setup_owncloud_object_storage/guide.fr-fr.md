@@ -14,7 +14,7 @@ Ce guide vous expliquera donc la procédure à suivre pour configurer votre OwnC
 
 ### Prérequis
 - Télécharger le fichier OpenRC depuis l'Espace client OVH ou Horizon
-- [Ajouter des espaces de stockage]({legacy}1790){.ref} dédiés à Owncloud
+- [Ajouter des espaces de stockage](../ajouter-des-espaces-de-stockage/){.ref} dédiés à Owncloud
 
 
 ## Configuration de Owncloud
