@@ -1,49 +1,50 @@
 ---
 title: 'Comment passer d’un dégroupage partiel à un dégroupage total'
 slug: comment-passer-d-un-degroupage-partiel-a-un-degroupage-total
-legacy_guide_number: '7962660'
+excerpt: Découvrez comment demander le passage de votre accès xDSL en dégroupage total
 section: 'Gestion de mon offre'
 ---
 
-### Préambule {#préambule}
+**Dernière mise à jour le 22/04/2021**
 
-Le passage de dégroupage partiel à total permet d'avoir la ligne gérée complètement par OVH, de faire porter votre numéro et de pouvoir l'utiliser avec votre téléphonie OVH.
+## Objectif
 
-Elle vous permet aussi de simplifier et de réduire votre facture en ne payant plus l'abonnement France Telecom.
+Le passage d'un dégroupage partiel à total permet de confier à OVHcloud la gestion complète de votre ligne, de faire porter votre numéro et de pouvoir l'utiliser avec votre téléphonie OVHcloud.
+<br>Il vous permet aussi de simplifier et de réduire votre facture en vous affranchissant de l'abonnement Orange/France Telecom présent dessus.
 
-**Sommaire :**
+**Découvez comment demander le dégroupage total de votre ligne depuis votre espace client OVHcloud**
 
-Niveau : Débutant
+## Prérequis
 
-------------------------------------------------------------------------
+-   Disposer d'un accès OVHcloud en dégroupage partiel.
+-   Disposer d'une offre éligible.
 
-### Prérequis {#prérequis}
+> [!primary]
+> A savoir :
+>
+> Le passage d'un dégroupage partiel à total est irréversible.
+> <br>Si vous bénéficiez d'une ancienne offre, il est nécessaire de passer à l'une de nos offres Express ou Entreprise. Consultez notre guide « [Changer l'offre d'un accès xDSL](https://docs.ovh.com/fr/xdsl/comment-changer-mon-offre-xdsl/) ».
+> <br>Une interruption de service est probable.
+>
 
-Pour effectuer cette migration, vous devez possédez :
+## En pratique
 
--   Un accès OVH en dégroupage partiel.
--   Une offre éligible.
+### Demander le dégroupage total sur votre accès
 
-<!-- -->
+Connectez-vous à la rubrique `Telecom` de votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr). Cliquez ensuite sur `Accès Internet`{.action} dans le menu de gauche, sélectionnez votre offre puis cliquez sur la référence de ligne support de connexion. 
 
--   Le passage de dégroupage partiel à total est irréversible.
--   Si vous avez une ancienne offre, il faut passer à l'une de nos offres Express ou Entreprise ([Changer l'offre d'un accès xDSL]({originalUrl}/display/CRXDSL/Comment+changer+mon+offre+xDSL)).
--   Une interruption de service est probable.
+Dans l'onglet `Mon accès`{.action}, vous retrouverez, dans les `Informations générales`, la possibilité de migrer votre accès en dégroupage total.
 
-### Passer en dégroupage Total {#passer-en-dégroupage-total}
+![Infos_Générales](images/part_to_total_1.PNG){.thumbnail}
 
-La commande du dégroupage total s'effectue dans l'Espace Client Telecom :
+Pour effectuer la portabilité du numéro support de connexion, vous devrez renseigner son RIO avant de valider l'opération. Contactez les services de Orange/France Télécom pour obtenir le RIO.
 
--   Connectez vous à l'espace client : **<https://www.ovhtelecom.fr/espaceclient/login/>**
--   Cliquez sur "**Gestion des offres**".
--   Cliquez sur "**Dégroupage Total**".
--   Sélectionnez votre accès dans la liste.
--   Cliquez sur "**Suivant**".![](images/2015-06-01-165613_798x448_scrot.png){.thumbnail}
--   Vous devez ensuite valider les "**Conditions Générales de Vente de l'offre**" (lien ici : <https://www.ovhtelecom.fr/support/documents_legaux/>)
--   Cliquez sur "**Oui**".
+![RIO_validation](images/part_to_total_2.PNG){.thumbnail}
 
 Cette demande prend en moyenne 7 jours ouvrés et ne peut pas être anticipée. L'interruption de service est en théorie de 30 minutes.
 
-Votre ligne fixe est résiliée techniquement auprès de votre opérateur ligne fixe.
+Votre ligne fixe sera alors résiliée techniquement auprès de votre précédent opérateur. En fonction de votre offre chez votre opérateur, nous vous invitons à vérifier que l'offre commerciale est également résiliée.
 
+## Aller plus loin
 
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
