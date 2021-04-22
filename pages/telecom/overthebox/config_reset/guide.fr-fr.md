@@ -2,7 +2,7 @@
 title: "Réinitialiser la configuration d'une OverTheBox"
 slug: config-reset
 excerpt: "Découvrez comment réinitialiser votre équipement OverTheBox afin de revenir à la configuration par défaut"
-section: "Configurations de l’OverTheBox"
+section: "Configurations de l'OverTheBox"
 ---
 
 **Dernière mise à jour le 15/04/2021**
@@ -21,21 +21,21 @@ Plusieurs méthodes sont possibles. Le résultat final étant identique, vous po
 
 ### Méthode 1 : réinitialisation physique
 
-- Appuyez de façon répétée, en moins de 2 secondes, 5 fois sur le bouton Power ON/OFF.
+Appuyez de façon répétée, en moins de 2 secondes, 5 fois sur le bouton Power ON/OFF.
 
-    - Dans le cas d'une OverTheBox Intel :
+- Dans le cas d'une OverTheBox Intel :
 
 ![overthebox](images/reset-method1_OTBv1.png){.thumbnail}
 
-    - Dans le cas d'une OverTheBox IT v1 :
+- Dans le cas d'une OverTheBox IT v1 :
 
 ![overthebox](images/reset-method1_OTBv2a.jpg){.thumbnail}
 
-    - Dans le cas d'un OverTheBox Plus :
+- Dans le cas d'un OverTheBox Plus :
 
 ![overthebox](images/reset-method1_OTBv2b.png){.thumbnail}
 
-- Attendez quelques minutes afin qu'**OverTheBox** soit de nouveau opérationnelle.
+Attendez quelques minutes afin qu'**OverTheBox** soit de nouveau opérationnelle.
 
 > [!success]
 >
