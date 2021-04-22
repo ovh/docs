@@ -1,20 +1,20 @@
 ---
-title: Attach a private registry via UI
-slug: attach-private-registry
-excerpt: Learn how to attach your own registry to AI Training via UI
+title: Add a private registry via UI
+slug: add-private-registry
+excerpt: Learn how to add your own registry to AI Training via UI
 section: How to (with UI)
 order: 4
 ---
-*Last updated 7th September, 2020.*
+*Last updated 20th April, 2021.*
 
 ## Objective
 
-This guide covers the process of attaching a private registry to the **AI Training** service.
+This guide covers the process of add a private registry to the **AI Training** service.
 
 ## Requirements
 
 -   a **Public Cloud** project
--   credentials for the Docker registry you wish to attach
+-   credentials for the Docker registry you wish to add
 -   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 ## Instructions
@@ -25,19 +25,19 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 
 ![image](images/00_training_menu.png){.thumbnail}
 
-From the dashboard you can initiate the attachment of your Docker registry by clicking `Update`{.action} > `Attach a Docker registry`{.action} button.
+From the dashboard you can add your Docker registry by clicking `Private Docker Registry`{.action} > `Add`{.action} button.
 
-### Step 2: Attaching the registry
+### Step 2: Adding the registry
 
-To attach a registry you simply need to provide the credentials of your registry along with its URL.
+To add a registry you simply need to provide the credentials of your registry along with its URL.
 
-![attach registry form](images/01_attach_registry_form.png){.thumbnail}
+![add registry form](images/01_add_registry_form.png){.thumbnail}
 
-Once the form is filled out click `Attach`{.action}.
+Once the form is filled out click `Add`{.action}.
 
 ### Step 3: Submitting an image from your registry
 
-Once your registry is attached you can use any images pushed on the registry for your jobs.
+Once your registry is added you can use any images pushed on the registry for your jobs.
 
 From the OVHcloud Control Panel while [submitting a job](../submit-job), you can choose a custom Docker image in Step 7.
 
@@ -45,7 +45,7 @@ From the OVHcloud Control Panel while [submitting a job](../submit-job), you can
 
 With the `ovhai` command line CLI simply provide the image with `ovhai job run <image>`.
 
-The default shared registry remains available even with a private registry attached.
+The default shared registry remains available even with a private registry added.
 
 ## Going Further
 
