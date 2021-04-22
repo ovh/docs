@@ -23,7 +23,7 @@ The formula to calculate ETCD quota allowed is: *Total = 10MB + (25MB per node)*
 
 For example, a cluster with 3 `b2-7` servers has a quota of 85MB.
 
-Don't worry about the decrease, you keep the max quotas allowed forever, to prevent shrink of datas.
+The quota can thus be increased by adding nodes, but will never be decreased (even if all nodes are removed) to prevent data loss.
 
 ## Troubleshoot
 
