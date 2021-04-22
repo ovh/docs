@@ -45,7 +45,7 @@ To detect this situation, you can get the number of `certificaterequest` resourc
 kubectl get certificaterequests -A | wc -l
 ```
 
-If you have a huge number of certificate request (+1000 for example), you have find the root cause !
+If you have a huge number of certificate requests (+1000 for example), you have found the root cause.
 
 To solve that,we propose this way:
 
