@@ -106,7 +106,7 @@ Une fois vos options choisies, cliquez sur `Appliquer la configuration`{.action}
 
 ![CDN](images/manage_sharedCDN_03.png){.thumbnail}
 
-#### Créer une règle de mise en cache
+##### **Créer une règle de mise en cache**
 
 Pour ajouter une règle de cache sur l'un des éléments de votre site, dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite de l'entrée multisite, puis sur `Configurer le CDN`{.action}.
 
