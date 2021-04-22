@@ -61,7 +61,6 @@ Click the `...` {.action} icon, then select the `Modify domain`{.action} option.
 
 ![managemultisite](images/firewall-modify-multisite.png){.thumbnail}
 
-
 In the window that will be displayed, check the `Enable the firewall`{.action} option. 
 You can also check automatic sub-domain configuration with www prefix using the check-box.
 To confirm changes to the configuration press the `Next`{.action} button.
@@ -78,28 +77,23 @@ A summary window will be displayed, verify that the entered configuration is cor
 
 Configuration can be confirmed by pressing the `Confirm`{.action} button.
 
+
+### Status of the jobs starting the Firewall service - Ongoing jobs section.
+
+![managemultisite](images/firewal-ongoing-jobs.png){.thumbnail}
+
+
 The submit configuration task will appear in the `Ongoing jobs`{.action} tab (initial status is `Planned`{.action}) when it disappears from the list, it means the configuration has been deployed.
 
 
+### Verifying which domains have Firewall enabled.
 
-//////////////
-![](images/img_3005.jpg){.thumbnail}
-Select your domain name in the "Hostings" section
 
-![](images/img_3006.jpg){.thumbnail}
-Click on the "Website" tab.
+![managemultisite](images/firewall-enabled-multisite.png){.thumbnail}
 
-![](images/img_3007.jpg){.thumbnail}
-The firewall is Disabled by default. Click on the black pen to access your hosting package options.
 
-![](images/img_3008.jpg){.thumbnail}
-Check "Activate firewall > next.
+Information on which domains have the Firewall option turned on can be checked in the MultiSite section in the `Firewall` {.action} column.
 
-![](images/img_3010.jpg){.thumbnail}
-You will see a summary of changes, and the firewall status should have changed to enabled/activated. Click confirm.
 
-![](images/img_3011.jpg){.thumbnail}
-The firewall is now enabled on your hosting package.
 
-![](images/img_3012.jpg){.thumbnail}
 
