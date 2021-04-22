@@ -5,12 +5,12 @@ excerpt: Découvrez comment demander le passage de votre accès xDSL en dégroup
 section: 'Gestion de mon offre'
 ---
 
-**Dernière mise à jour le 22/02/2021**
+**Dernière mise à jour le 22/04/2021**
 
 ## Objectif
 
 Le passage d'un dégroupage partiel à total permet de confier à OVHcloud la gestion complète de votre ligne, de faire porter votre numéro et de pouvoir l'utiliser avec votre téléphonie OVHcloud.
-<br>Il vous permet aussi de simplifier et de réduire votre facture en vous affranchissant de l'abonnement France Telecom présent dessus.
+<br>Il vous permet aussi de simplifier et de réduire votre facture en vous affranchissant de l'abonnement Orange/France Telecom présent dessus.
 
 **Découvez comment demander le dégroupage total de votre ligne depuis votre espace client OVHcloud**
 
@@ -43,7 +43,7 @@ Pour effectuer la portabilité du numéro support de connexion, vous devrez rens
 
 Cette demande prend en moyenne 7 jours ouvrés et ne peut pas être anticipée. L'interruption de service est en théorie de 30 minutes.
 
-Votre ligne fixe sera alors résiliée techniquement auprès de votre précédent opérateur.
+Votre ligne fixe sera alors résiliée techniquement auprès de votre précédent opérateur. En fonction de votre offre chez votre opérateur, nous vous invitons à vérifier que l'offre commerciale est également résiliée.
 
 ## Aller plus loin
 
