@@ -25,7 +25,10 @@ For example, a cluster with 3 `b2-7` servers has a quota of 85MB.
 
 The quota can thus be increased by adding nodes, but will never be decreased (even if all nodes are removed) to prevent data loss.
 
-## Troubleshoot
+## Resolution
+
+The error mentioned above states that the cluster's ETCD storage usage has exceeded the quota.
+To resolve the situation, resources created in excess need to be deleted.
 
 ### Cert-Manager
 
