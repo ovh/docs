@@ -35,13 +35,13 @@ SFTP can be used to transfer files via a secure connection (SSH). There are two 
 By default, a server using a GNU/Linux-based operating system will have SSH access via port 22. However, you might have previously changed this port (for example by following [our guide](../securing-a-dedicated-server/)).
 
 
-#### If have access to your server
+#### If you have access to your server
 
 In the FileZilla GUI, enter your server's IP address into the `Host` field and your username and password into their respective fields. As for the `Port` field, enter "22" or whichever port your SSH service is listening on if you have modified it.
 
 As soon as the connection is established, you will see a tree-view of your files in the `Remote Site` section.
 
-![remote site sftp](images/sftp_ds_01.png)
+![remote site sftp](images/sftp_ds_01.png){.thumbnail}
 
 In our example, the data to be retrieved is located in the folder "/home/data". You can drag and drop the files you want to download from the right-hand pane (`Remote Site`) to the left-hand one (`Local Site`) to save it on your local device.
 
@@ -49,7 +49,7 @@ To upload files to the server, drag and drop your files from your local folder t
 
 The progress of the data transfer will then be displayed at the bottom of the FileZilla window.
 
-![sftp transfer progress](images/sftp_ds_02.png)
+![sftp transfer progress](images/sftp_ds_02.png){.thumbnail}
 
 #### If your server is in rescue mode
 
@@ -64,7 +64,7 @@ Once you have mounted your partition, use the FileZilla client in the same way a
 
 If you have correctly created the mount point, the data will be located in the "/mnt" directory (i.e. "/mnt/data" in this example).
 
-![remote site sftp rescue mode](images/sftp_ds_03.png)
+![remote site sftp rescue mode](images/sftp_ds_03.png){.thumbnail}
 
 
 ## Go further

@@ -74,7 +74,7 @@ Stellen Sie zunächst über SSH eine Verbindung zu Ihrem VPS her.
 Mit dem folgenden Befehl können Sie den Namen des neu angehängten Volumes überprüfen:
 
 ```
-# lsblk
+$ lsblk
 ```
 
 Hier sehen Sie eine Beispielausgabe dieses Befehls:
@@ -89,14 +89,13 @@ sdb       8:16   0   25G  0 disk
 ├─sdb1    8:17   0 24.9G  0 part 
 ├─sdb14   8:30   0    4M  0 part 
 └─sdb15   8:31   0  106M  0 part /boot/efi
-sdc       8:32   0   50G  0 disk 
 ```
 In diesem Beispiel heißt die Partition, in der Ihr Backup-Dateisystem enthalten ist, „sdb1“.
 Erstellen Sie als Nächstes ein Verzeichnis für diese Partition und definieren Sie es als Mountpunkt:
 
 ```
-# mkdir -p /mnt/restore
-# mount /dev/sdb1 /mnt/restore
+$ mkdir -p /mnt/restore
+$ mount /dev/sdb1 /mnt/restore
 ```
 
 Sie können jetzt zu diesem Ordner wechseln und auf Ihre Backup-Daten zugreifen.

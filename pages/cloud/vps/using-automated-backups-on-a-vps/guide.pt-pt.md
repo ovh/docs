@@ -75,7 +75,7 @@ Primeiro, conecte-se ao seu alojamento VPS via SSH.
 Pode utilizar o seguinte comando para verificar o nome do novo dispositivo adicionado:
 
 ```
-# lsblk
+$ lsblk
 ```
 
 Aqui está um exemplo deste comando:
@@ -90,14 +90,13 @@ sdb       8:16   0   25G  0 disk
 ├─sdb1    8:17   0 24.9G  0 part 
 ├─sdb14   8:30   0    4M  0 part 
 └─sdb15   8:31   0  106M  0 part /boot/efi
-sdc       8:32   0   50G  0 disk 
 ```
 Neste exemplo, a partição que contém o backup do seu “filesystem” designa-se "sdb1".
 Em seguida, crie um diretório para esta partição e defina-o como “mountpoint”:
 
 ```
-# mkdir -p /mnt/restore
-# mount /dev/sdb1 /mnt/restore
+$ mkdir -p /mnt/restore
+$ mount /dev/sdb1 /mnt/restore
 ```
 
 Pode agora passar para esta pasta e aceder aos dados do seu backup.
