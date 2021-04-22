@@ -55,7 +55,7 @@ To resolve the situation, we propose the following way:
 kubectl scale deployment --replicas 0 cert-manager
 ```
 
-* flush all useless certificate request
+* Flush all pending certificaterequests
 
 ```bash
 kubectl delete certificaterequests --all
