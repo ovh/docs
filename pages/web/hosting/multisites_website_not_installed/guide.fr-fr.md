@@ -58,7 +58,7 @@ Vous pouvez à présent vérifier la configuration DNS de votre nom de domaine. 
 
 > [!primary]
 >
-> Si votre nom de domaine est enregistré chez OVH, vous pouvez vérifier si ce dernier utilise notre configuration. Pour cela, toujours dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Domaines`{.action} dans la barre de services à gauche, puis sur le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Serveurs DNS`{.action}.
+> Si votre nom de domaine est enregistré chez OVH, vous pouvez vérifier si ce dernier utilise notre configuration. Pour cela, toujours dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Noms de domaine`{.action} dans la barre de services à gauche, puis sur le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Serveurs DNS`{.action}.
 >
 
 La vérification peut s'effectuer à deux endroits différents selon la configuration utilisée par votre nom de domaine :
