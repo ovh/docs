@@ -33,13 +33,13 @@ Here are the most frequently asked questions about AI Training.
 > > For more information about the failure of a job, start with retrieving the **job** ID with this command: `ovhai job list`
 > >
 > > Once you have your **job** ID, simply retrieve its information with: `ovhai job get <job-id>`
-> > You will see, among others information, the job's state and if the job has run its exit code.
+> > You will see, among other information, the job's state and if the job has run its exit code.
 > > There is also the `stateInfo` in which you can evaluate the error message, i.e. whether a command failed or the Docker image was not found.
 > >
 > > For more information you should consult the **job** logs: `ovhai job logs <job-id>`
 > >
 > My job is in « queued » or « pending » state, what does it mean ?
-> > You job might be in this state for 2 main reasons :
+> > Your job might be in this state for 2 main reasons :
 > >
 > > * You are using an external registry and the image is taking longer to pull. Potential resolution: wait a bit longer for the cluster to pull the external image or recompile the image on an [OVHcloud managed Registry](https://www.ovhcloud.com/asia/public-cloud/managed-private-registry/).
 > > * The cluster is waiting for resources to be available. Potential resolution: try to launch the job with less resources or wait for resources to be available.

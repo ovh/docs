@@ -15,7 +15,7 @@ order: 0
 -   No limitation on number of parallel execution
 
 You can either choose the number of GPU or CPU for a job, not both.
-By default, a job use one GPU.
+By default, a job uses one GPU.
 The memory resource is not customisable.
 
 If you chose the number of GPU:
@@ -33,11 +33,11 @@ ovhai capability
 ```
 
 > [!primary]
-> **Local storage** refer to a drive mounted on the node. It's limited and not the recommended way to handle data, see [OVHcloud documentation on data](../data)
+> **Local storage** refers to a drive mounted on the node. It's limited and not the recommended way to handle data, see [OVHcloud documentation on data](../data)
 
 ### Available ports to public network
 
-Each job has a public URL, by default this URL access the port 8080 of the job. The default port can be configured when you submit a new job.
+Each job has a public URL, by default this URL accesses the port 8080 of the job. The default port can be configured when you submit a new job.
 
 You can also access other ports by appending them to the URL.
 

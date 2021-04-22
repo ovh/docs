@@ -1,5 +1,5 @@
 ---
-title: Add a private registry via UI
+title: Adding a private registry via UI
 slug: add-private-registry
 excerpt: Learn how to add your own registry to AI Training via UI
 section: How to (with UI)
@@ -9,7 +9,7 @@ order: 4
 
 ## Objective
 
-This guide covers the process of add a private registry to the **AI Training** service.
+This guide covers the process of adding a private registry to the **AI Training** service.
 
 ## Requirements
 
