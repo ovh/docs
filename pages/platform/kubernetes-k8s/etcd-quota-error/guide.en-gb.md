@@ -32,13 +32,12 @@ To resolve the situation, resources created in excess need to be deleted.
 
 ### Cert-Manager
 
-The first mostfull usecase is come from with a bad configuration on [cert-manager](https://cert-manager.io/docs/)
+Most users install cert-manager through Helm, and then move on a bit hastily.
 
-Most users install the cert-manager from Helm, and take a quick road to prod it.
+The most common cases of ETCD quota issues come from a bad configuration of [cert-manager](https://cert-manager.io/docs/),
+making it continuously create `certificaterequest` resources.
 
-If cert-manager have a bad configuration, he try to create unlimited number of certificare requets.
-
-The operator cert-manager going to satured all empty allow storage in ETCD.
+This behaviour will fill the ETCD with resources until the quota is reached.
 
 To detect that, you can find the number of certificate-requets:
 
