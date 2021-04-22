@@ -21,7 +21,7 @@ Découvrez comment ajouter une interface modem manuellement depuis l'interface O
 
 ### Méthode 1 : interface avec une IP Statique
 
-> [!alert]
+> [!warning]
 >
 > Les opérations qui suivent doivent être effectuées depuis un ordinateur connecté directement sur un des ports LAN de l'OverTheBox (câble gris sur l’image ci-dessus).
 >
@@ -41,14 +41,14 @@ Découvrez comment ajouter une interface modem manuellement depuis l'interface O
 
 ![overthebox](images/4413.png){.thumbnail}
 
-> [!alert]
+> [!primary]
 >
 > Cette configuration ne sera complètement fonctionnelle qu'une 1 minute environ après son application.
 >
 
 ### Méthode 2 : interface non managée
 
-> [!alert]
+> [!warning]
 >
 > Les opérations qui suivent doivent être effectuées depuis un ordinateur connecté directement sur un des ports LAN de l'OverTheBox (câble gris sur l’image ci-dessus).
 >
@@ -64,7 +64,7 @@ Vous pouvez désactiver l'analyse automatique des serveurs DHCP lorsque vous sou
 
 ![overthebox](images/4449.png){.thumbnail}
 
-> [!alert]
+> [!primary]
 >
 > Cette configuration ne sera complètement fonctionnelle qu'une 1 minute environ après son application.
 >
