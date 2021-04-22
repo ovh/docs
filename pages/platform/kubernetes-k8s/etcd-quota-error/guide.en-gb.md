@@ -5,55 +5,55 @@ slug: etcd-quota-error
 section: FAQ
 ---
 
-**Last updated March 15<sup>th</sup>, 2021.**
-
-Some customers might encounter troubles with the quota on ETCD storage usage.
+**Last updated April 22<sup>nd</sup>, 2021.**
 
 ## Issue
 
-When you want to manage an objects into your Kubernetes cluster, you can reached an error like this:
+When managing your Kubernetes cluster, you may encounter the following error:
 
 ```log
 "Error from server: rpc error: code = Unknown desc = ETCD storage quota exceeded"
 ```
 
-Each Kubernetes cluster have a dedicated quota on ETCD storage.
+Each Kubernetes cluster has a dedicated quota on ETCD storage usage,
+calculated through the following formula:
+*Quota = 10MB + (25MB per node)* (capped to 200MB)
 
-The formula to calculate ETCD quota allowed is: *Total = 10MB + (25MB per node)*
+For example, a cluster with 3 `b2-7` servers has a quota of 85MB.
 
-For a cluster with 3 servers "b2-7" the quota are : 85MB
+The quota can thus be increased by adding nodes, but will never be decreased (even if all nodes are removed) to prevent data loss.
 
-Don't worry about the decrease, you keep the max quotas allowed forever, to prevent shrink of datas.
+## Resolution
 
-## Troubleshoot
+The error mentioned above states that the cluster's ETCD storage usage has exceeded the quota.
+To resolve the situation, resources created in excess need to be deleted.
 
-### Cert-Manager
+### Most common case: misconfigured cert-manager
 
-The first mostfull usecase is come from with a bad configuration on [cert-manager](https://cert-manager.io/docs/)
+Most users install cert-manager through Helm, and then move on a bit hastily.
 
-Most users install the cert-manager from Helm, and take a quick road to prod it.
+The most common cases of ETCD quota issues come from a bad configuration of [cert-manager](https://cert-manager.io/docs/),
+making it continuously create `certificaterequest` resources.
 
-If cert-manager have a bad configuration, he try to create unlimited number of certificare requets.
+This behaviour will fill the ETCD with resources until the quota is reached.
 
-The operator cert-manager going to satured all empty allow storage in ETCD.
-
-To detect that, you can find the number of certificate-requets:
+To verify if you are in this situation, you can get the number of `certificaterequest` resources:
 
 ```bash
 kubectl get certificaterequests -A | wc -l
 ```
 
-If you have a huge number of certificate request (+1000 for example), you have find the root cause !
+If you have a huge number of certificate requests (+1000 for example), you have found the root cause.
 
-To solve that,we propose this way:
+To resolve the situation, we propose the following way:
 
-* Stop the operator cert-manager
+* Stop cert-manager
 
 ```bash
 kubectl scale deployment --replicas 0 cert-manager
 ```
 
-* flush all useless certificate request
+* Flush all certificaterequests resources
 
 ```bash
 kubectl delete certificaterequests --all
@@ -71,15 +71,17 @@ We recommend you to take the following steps to troubleshoot your cert-manager, 
 
 * Start cert-manager
 
-### Other usecase
+### Other cases
 
-If cert-manager is not the root causes, you should turn to the other running operators.
+If cert-manager is not the root cause, you should turn to the other running operators which create kubernetes resources.
 
 We have found that the following resources can sometimes be generated continuously by existing operators:
 > backups.velero.io
 ingress.networking.k8s.io
 ingress.extensions
 
-If that still  does not cover your case, you can use a tool like [ketall](https://github.com/corneliusweig/ketall) to easily list and count resources in your cluster.
+If that still does not cover your case, you can use a tool like [ketall](https://github.com/corneliusweig/ketall) to easily list and count resources in your cluster.
+
+Then you should delete the resources in excess and fix the process responsible for their creation.
 
 ---
