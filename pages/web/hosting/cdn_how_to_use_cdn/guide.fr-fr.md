@@ -6,7 +6,7 @@ excerpt: 'Améliorez votre site en accélérant son chargement sur votre héberg
 section: 'Optimiser son site'
 ---
 
-**Dernière mise à jour le 19/11/2020**
+**Dernière mise à jour le 22/04/2021**
 
 ## Objectif
 
@@ -82,9 +82,9 @@ Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez su
 
 #### Configurer les options du Shared CDN
 
-Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite de l'entrée multisite puis `Modifier le CDN`{.action}. 
+Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite de l'entrée multisite puis sur `Modifier le CDN`{.action}. 
 
-Vous pouvez également cliquez sur l'icone de stylo, à droite d'une entrée Multiste, lorsque l'opton CDN est activée. Cliquez ensuite sur `Éditer votre CDN`{.action}.
+Vous pouvez également cliquer sur l'icône de stylo à droite d'une entrée Multisite, lorsque l'opton CDN est activée. Cliquez ensuite sur `Éditer votre CDN`{.action}.
 
 > [!warning]
 > 
@@ -100,13 +100,13 @@ Vous pouvez également cliquez sur l'icone de stylo, à droite d'une entrée Mul
 
 - **Brotli** :  type de compression permettant une optimisation de la taille de vos fichiers en cache.
 
-- **Règle de cache** : Créez jusqu'à 5 règles. Elles définissent la fréquence de rafraîchissement de mise en cache pour certaines ressources précises sur votre site. ([suivre la prochaine étape](./#creer-une-regle-de-mise-en-cache).
+- **Règle de cache** : Créez jusqu'à 5 règles. Elles définissent la fréquence de rafraîchissement de mise en cache pour certaines ressources précises sur votre site. ([suivre la prochaine étape](./#creer-une-regle-de-mise-en-cache)).
 
-Une fois vos options choisies cliquez sur `Appliquer la configuration`{.action}, puis sur `Valider la configuration`{.action} sur la fenêtre suivante.
+Une fois vos options choisies, cliquez sur `Appliquer la configuration`{.action}, puis sur `Valider la configuration`{.action} dans la fenêtre suivante.
 
 ![CDN](images/manage_sharedCDN_03.png){.thumbnail}
 
-##### Créer une règle de mise en cache
+#### Créer une règle de mise en cache
 
 Pour ajouter une règle de cache sur l'un des éléments de votre site, dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite de l'entrée multisite, puis sur `Configurer le CDN`{.action}.
 
@@ -116,30 +116,30 @@ Sous la mention **Règles de cache**, cliquez sur le bouton `Ajouter une règle`
 
 - **Nom de règle** : Attribuez un nom à votre règle.
 
-- **URI** : Indiquez le sous-ensemble de ressources de votre site web via son chemin dans le répertoire de ce dernier. Pour l'offre CDN-Basic et CDN-Security, il n'est possible que de saisir une extension de fichier.
+- **URI** : Indiquez le sous-ensemble de ressources de votre site web, via son chemin dans le répertoire de ce dernier. Pour les offres CDN-Basic et CDN-Security, il n'est possible de saisir qu'une extension de fichier.
 
 - **Durée** : indiquez la durée de mise en cache de la ressource choisie.
 
-- **Classement** :  Classez par ordre d'exécution vos règles ( de la plus faible à la plus élevée).
+- **Classement** :  Classez par ordre d'exécution vos règles (de la plus faible à la plus élevée).
 
-Une fois vos choix réalisés, cliquez sur le bouton  `créer la règle`{.action}.
+Une fois vos choix réalisés, cliquez sur le bouton `Créer la règle`{.action}.
 
-Les règles apparaissent dans une liste.  Vous pouvez les modifier en cliquant sur `...`{.action} à droite de celle-ci, puis sur `Modifier la règle`{.action} ou la supprimer en cliquant sur `Supprimer la règle`{.action}.
+Les règles apparaissent dans une liste. Vous pouvez modifier une règle en cliquant sur `...`{.action} à droite de celle-ci, puis sur `Modifier la règle`{.action}; ou la supprimer en cliquant sur `Supprimer la règle`{.action}.
 
 ![CDN](images/manage_sharedCDN_05.png){.thumbnail}
 
-Une fois vos règles configurées et vos options choisies, cliquez, sur `Appliquer la configuration`{.action}, puis sur `Valider la configuration`{.action} sur la fenêtre suivante.
+Une fois vos règles configurées et vos options choisies, cliquez sur `Appliquer la configuration`{.action}, puis sur `Valider la configuration`{.action} dans la fenêtre suivante.
 
 #### Configurer les options du CDN Security
 
 > [!primary]
->  les options présentées ci-dessous nécessite la souscription au [CDN security](https://www.ovh.com/fr/hebergement-web/cdn.xml) ou [CDN Advanced](https://www.ovh.com/fr/hebergement-web/cdn.xml)
+>  les options présentées ci-dessous nécessitent la souscription au [CDN security](https://www.ovh.com/fr/hebergement-web/cdn.xml) ou au [CDN Advanced](https://www.ovh.com/fr/hebergement-web/cdn.xml)
 
 Dirigez-vous sur l'onglet `Multisite`{.action} de votre hébergement, cliquez sur `...`{.action} à droite de l'entrée multisite puis `Modifier le CDN`{.action}. 
 
-Vous pouvez également cliquez sur l'icone de stylo, à droite d'une entrée Multiste, lorsque l'opton CDN est activée. Cliquez ensuite sur `Éditer votre CDN`{.action}.
+Vous pouvez également cliquer sur l'icône de stylo à droite d'une entrée Multisite, lorsque l'opton CDN est activée. Cliquez ensuite sur `Éditer votre CDN`{.action}.
 
-- **Cross-Origin Resource Sharing (CORS)** : Indiquez, dans la liste, les noms domaine extérieurs qui seront autorisés à accéder aux ressources de votre site web dans le but de les partager. 
+- **Cross-Origin Resource Sharing (CORS)** : Indiquez, dans la liste, les noms de domaine extérieurs qui seront autorisés à accéder aux ressources de votre site web dans le but de les partager. 
 
 Une fois la fonction activée, cliquez sur `Editer la liste des ressources externes`{.action} pour ajouter les noms de domaine autorisés à partager vos ressources.
 
@@ -148,7 +148,7 @@ Une fois la fonction activée, cliquez sur `Editer la liste des ressources exter
 Une fois votre liste complétée, cliquez sur `Confirmer`{.action}.
 
 > [!primary]
-> Lorsque vous activez l'option CORS sans préciser de noms de domaine dans la liste, cela siginifie que tout les noms de domaine sont autorisés à utiliser le ressources de votre site web.
+> Lorsque vous activez l'option CORS sans préciser de noms de domaine dans la liste, cela siginifie que tous les noms de domaine sont autorisés à utiliser les ressources de votre site web.
 
 - **HTTPS-redirect** : Protégez la globalité du trafic de votre site web en le redirigeant vers le protocole HTTPS de façon temporaire ou permanente.
 
@@ -156,7 +156,7 @@ Une fois la fonction activée, cliquez sur le menu déroulant pour choisir entre
 
 ![CDN](images/manage_CDNsecurity_02.png){.thumbnail}
 
-- **HTTP Strict Transport Security (HSTS)** : Imposez l’accès à votre site web en HTTPS uniquement. Votre solution web est ainsi sécurisée contre les attaques par rétrogradation ( ou attaque par repli ).
+- **HTTP Strict Transport Security (HSTS)** : Imposez l’accès à votre site web en HTTPS uniquement. Votre solution web est ainsi sécurisée contre les attaques par rétrogradation (ou attaques par repli).
 
 Une fois la fonction activée, déterminez la durée de vie pendant laquelle le navigateur appliquera la fonction HSTS sur votre site web. 
 
@@ -164,11 +164,11 @@ Une fois la fonction activée, déterminez la durée de vie pendant laquelle le 
 
 > [!primary]
 > 
-> Lorsque que vous activez la fonction HSTS sur votre site, il forcera le protocol HTTPS sur votre navigateur, jusqu'à la fin de la période dite "âge maximum", même après désactivation de la fonction dans votre espace client. Néanmoins lorsque le cache est vidé sur le navigateur qui a déjà effectué une visite sur votre site, ce dernier appliquera le nouvel état de la fonction HSTS.
+> Lorsque que vous activez la fonction HSTS sur votre site, elle forcera le protocole HTTPS sur votre navigateur, jusqu'à la fin de la période dite "âge maximum", même après désactivation de la fonction dans votre espace client. Néanmoins, lorsque le cache est vidé sur le navigateur qui a déjà effectué une visite sur votre site, ce dernier appliquera le nouvel état de la fonction HSTS.
 
-- **Mixed content** : Forcez l’intégralité du contenu de vos pages web. Pour qu'elles soient chargées de manière sécurisées, participant ainsi à une expérience utilisateur optimale. Toutes les ressources de votre site, internes comme externes, doivent être disponibles en HTTPS pour éviter une erreur du navigateur.
+- **Mixed content** : Forcez l’intégralité du contenu de vos pages web. Elles seront chargées de manière sécurisée, participant ainsi à une expérience utilisateur optimale. Toutes les ressources de votre site, internes comme externes, doivent être disponibles en HTTPS pour éviter une erreur du navigateur.
 
-- **Pare-feu applicatif** : Le **W**eb **A**pplcation **F**irewall (WAF) protège votre site des attaques frauduleuses telles que l’injection de code, les requêtes illégitimes ou le vol de données. Il vous couvre des principales failles connues du web en filtrant les requêtes et paquets transmis (la liste de failles est administrée par OVHcloud et régulièrement mise à jour).  
+- **Pare-feu applicatif** : Le **W**eb **A**pplcation **F**irewall (WAF) protège votre site des attaques frauduleuses telles que l’injection de code, les requêtes illégitimes ou le vol de données. Il vous couvre des principales failles connues du web en filtrant les requêtes et paquets transmis (la liste des failles est administrée par OVHcloud et régulièrement mise à jour).  
 
 > [!primary]
 >  
@@ -224,7 +224,7 @@ Si vous n'utilisez pas de CMS, vous pouvez aussi bénéficier du cache du CDN. P
 
 Cette action permet de désactiver le CDN pour une ou plusieurs de vos entrées multisite, sans supprimer l'option CDN de votre hébergement Web.
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur `...`{.action} à droite de l'entrée multisite puis `Modifier`{.action}.
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur `...`{.action} à droite de l'entrée multisite puis sur `Modifier`{.action}.
 
 Décochez la mention « Activer le CDN », cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
