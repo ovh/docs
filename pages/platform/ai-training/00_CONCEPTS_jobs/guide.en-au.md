@@ -11,7 +11,7 @@ order: 1
 
 A **job** in **AI Training** is the workload unit submitted to the cluster. A **job** runs as a Docker container within OVHcloud infrastructure.
 
-Each job is linked to a **Public Cloud** project and specifies an amount of resources to use to run the training task along with a Docker image either publicly available, in the **AI Training** shared registry scoped to your project or the private registry of your choosing that you attached. For the latter, see the [OVHcloud documentation on how to attach a private registry](../attach-private-registry).
+Each job is linked to a **Public Cloud** project and specifies an amount of resources to use to run the training task along with a Docker image either publicly available, in the **AI Training** shared registry scoped to your project or the private registry of your choosing that you added. For the latter, see the [OVHcloud documentation on how to add a private registry](../add-private-registry).
 
 ## Considerations
 

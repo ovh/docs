@@ -5,7 +5,7 @@ excerpt: Learn how to submit an AI Training job via UI
 section: How to (with UI)
 order: 1
 ---
-*Last updated 10th December, 2020.*
+*Last updated 20th April, 2021.*
 
 ## Objective
 
@@ -14,7 +14,7 @@ This guide covers the initialisation of **AI Training** and the submission of [*
 ## Requirements
 
 -   a **Public cloud** project
--   optionally **data** objects to attach to the **job** at step 8, see our [create **data** object](../data) guide.
+-   optionally **data** objects to attach to the **job** at step 6, see our [create **data** object](../data) guide.
 -   access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 ## Instructions
@@ -73,7 +73,7 @@ OVHcloud provides a set of images from which you can choose to ease the submissi
 
 Preset images cannot cover all your needs so you can specify your own image if necessary. You can use any image that is accessible from **AI Training**.
 
-This includes public images (e.g. Dockerhub), images within the shared registry or images in your attached private registry. For more information, see how to [attach a private registry](../attach-private-registry).
+This includes public images (e.g. Dockerhub), images within the shared registry or images in your added private registry. For more information, see how to [add a private registry](../add-private-registry).
 
 Once your image is chosen, click `Next`{.action}.
 
@@ -87,11 +87,15 @@ To attach a **data** object, just select from the list on the left. Next to each
 
 ![image](images/10_submit_data_selected.png){.thumbnail}
 
+> [!warning]
+>
+> To attach a **data** object you must click on the plus (+) button after filling the fields
+
 Once the data is configured click `Next`{.action}.
 
 ### Step 7 - Overriding the Docker entrypoint (optional)
 
-The Docker image you provided in Step 6 includes an entrypoint for your container. You can override this entrypoint by specifying your own command. Once the entrypoint is set up click `Next`{.action}.
+The Docker image you provided in Step 5 includes an entrypoint for your container. You can override this entrypoint by specifying your own command. Once the entrypoint is set up click `Next`{.action}.
 
 ![image](images/11_submit_entrypoint.png){.thumbnail}
 

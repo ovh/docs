@@ -2,7 +2,7 @@
 title: Moving a failover IP
 excerpt: Find out how to move a failover IP in the Control Panel or via the OVHcloud API
 slug: ip-fo-move
-section: Network management
+section: Network Management
 order: 7
 ---
 

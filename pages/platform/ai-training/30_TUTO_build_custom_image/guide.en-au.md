@@ -136,7 +136,7 @@ Pushing your image to a registry is needed in order for AI Training to pull it.
 
 AI Training provides a default registry called **Shared registry** where users are able to push their custom images. It is linked with every project by default.
 
-If you prefer using your own private docker registry instead of the shared one, feel free to use it. Just don't forget to [attach your registry in your AI Training project](../attach-private-registry) before using it.
+If you prefer using your own private docker registry instead of the shared one, feel free to use it. Just don't forget to [add your registry in your AI Training project](../add-private-registry) before using it.
 
 The basic commands to push a docker image to a registry is :
 
