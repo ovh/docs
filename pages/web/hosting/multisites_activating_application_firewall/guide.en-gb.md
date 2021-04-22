@@ -80,7 +80,7 @@ Configuration can be confirmed by pressing the `Confirm`{.action} button.
 
 ### Status of the jobs starting the Firewall service - Ongoing jobs section.
 
-![managemultisite](images/firewal-ongoing-jobs.png){.thumbnail}
+![manageongoing](images/firewal-ongoing-jobs.png){.thumbnail}
 
 
 The submit configuration task will appear in the `Ongoing jobs`{.action} tab (initial status is `Planned`{.action}) when it disappears from the list, it means the configuration has been deployed.
@@ -89,7 +89,7 @@ The submit configuration task will appear in the `Ongoing jobs`{.action} tab (in
 ### Verifying which domains have Firewall enabled.
 
 
-![managemultisite](images/firewall-enabled-multisite.png){.thumbnail}
+![manageenabled](images/firewall-enabled-multisite.png){.thumbnail}
 
 
 Information on which domains have the Firewall option turned on can be checked in the MultiSite section in the `Firewall` {.action} column.
