@@ -39,7 +39,7 @@ making it continuously create `certificaterequest` resources.
 
 This behaviour will fill the ETCD with resources until the quota is reached.
 
-To detect that, you can find the number of certificate-requets:
+To detect this situation, you can get the number of `certificaterequest` resources:
 
 ```bash
 kubectl get certificaterequests -A | wc -l
