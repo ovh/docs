@@ -117,21 +117,21 @@ Lors de votre première connexion, un assistant d'installation se lance, **nous 
 > Si malgré cette opération, le site [http://proof.ovh.net/](http://proof.ovh.net/){.external} ne retourne toujours pas les bonnes informations, veuillez recommencer l'intégralité de l'étape 3 point par point.
 >
 
-### Étape 5 : ajouter une connexion supplémentaire sur une OverTheBox Plus
+### Étape 5 : ajouter une connexion supplémentaire sur une OverTheBox Plus <a name="ajout-connexion"></a>
 
 > [!warning]
 >
-> Ces configurations ne sont possible que sur l'OverTheBox Plus
+> Ces configurations ne sont possibles que sur l'OverTheBox Plus.
 >
 
-Pour le bon déroulement de la procédure d'installation, il est impératif que le modem de votre nouvelle connexion réponde au même condition que dans l'étape 1 :
+Pour le bon déroulement de la procédure d'installation, il est impératif que le modem de votre nouvelle connexion réponde aux mêmes conditions que dans l'étape 1 :
 
 - Le serveur DHCP du modem doit être **activé**.
 - Si vous avez plus d'un modem, ils doivent être sur des réseaux locaux différents les uns des autres.
 
 > [!alert]
 >
-> Les opérations qui suivent doivent être effectuées depuis un ordinateur connecté directement sur un des ports LAN de l'OverTheBox
+> Les opérations qui suivent doivent être effectuées depuis un ordinateur connecté directement sur un des ports LAN de l'OverTheBox.
 >
 
 - Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}

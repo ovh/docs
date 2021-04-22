@@ -79,9 +79,8 @@ Oui, il est possible de virtualiser OverTheBox. Nous ne proposons pas de support
 
 ### Est-il possible de réinitialiser son OverTheBox ?
 
-Oui c'est possible via différentes méthodes expliquées dans ce guide [Réinitialiser la configuration d'une OverTheBox](../config-reset)
+Oui, c'est possible via différentes méthodes expliquées dans ce guide : [Réinitialiser la configuration d'une OverTheBox](../config-reset)
 
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
-
