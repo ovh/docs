@@ -49,7 +49,7 @@ If you have a huge number of certificate requests (+1000 for example), you have 
 
 To resolve the situation, we propose the following way:
 
-* Stop the operator cert-manager
+* Stop cert-manager
 
 ```bash
 kubectl scale deployment --replicas 0 cert-manager
