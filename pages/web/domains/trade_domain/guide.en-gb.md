@@ -10,7 +10,7 @@ section: Trade
 
 ## Objective
 
-Besides the [three contacts](../../customer/managing-contacts/), you need to provide information on the owner when registering a domain name. "**Owner**" in this context pertains to a person or company holding the rights to this domain name. **Domain trade** refers to a change of ownership by modifying this information in a legally binding way. For example, this process is the mandatory procedure in case of a company changing its name.
+Besides the [three contacts](../../customer/managing-contacts/), you need to provide information on the owner when registering a domain name. "**Owner**" in this context pertains to a person or company holding the usage rights to this domain name (sometimes also referred to as "domain name holder"). **Domain trade** refers to a change of ownership by modifying this information in a legally binding way. For example, this process is the mandatory procedure in case of a company changing its name.
 
 > [!primary]
 >This operation will not move your domain name to another OVHcloud customer account.
