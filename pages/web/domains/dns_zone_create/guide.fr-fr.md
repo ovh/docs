@@ -50,11 +50,11 @@ Une fois votre choix effectué, poursuivez les étapes jusqu'à la création de 
 
 La zone DNS pour votre nom de domaine étant maintenant créée, vous pouvez dès à présent l'éditer. Cette manipulation est facultative, mais elle peut se révéler indispensable si vous souhaitez assurer la continuité de la disponibilité des services liés à ce nom de domaine (comme un site internet et des e-mails).
 
-Si vous souhaitez éditer cette zone DNS, toujours depuis l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Domaines`{.action} dans la barre de services à gauche, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
+Si vous souhaitez éditer cette zone DNS, toujours depuis l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Noms de domaine`{.action} dans la barre de services à gauche, puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
 
 > [!primary]
 >
-> Si vous venez juste de créer la zone DNS et que le nom de domaine n'apparaît pas encore dans la liste des vos services `Domaines`{.action}, patientez quelques instants puis rechargez la page.
+> Si vous venez juste de créer la zone DNS et que le nom de domaine n'apparaît pas encore dans la liste des vos services `Noms de domaine`{.action}, patientez quelques instants puis rechargez la page.
 >
 
 Dès lors, réalisez les manipulations nécessaires. Vous pouvez en apprendre plus sur l'édition d'une zone DNS grâce à notre documentation intitulée « [Éditer une zone DNS OVH](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external} ». Une fois la zone DNS OVH de votre nom de domaine modifiée, un temps de propagation de 4 à 24 heures maximum est nécessaire afin que les modifications soient effectives.
