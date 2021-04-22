@@ -47,7 +47,7 @@ kubectl get certificaterequests -A | wc -l
 
 If you have a huge number of certificate requests (+1000 for example), you have found the root cause.
 
-To solve that,we propose this way:
+To resolve the situation, we propose the following way:
 
 * Stop the operator cert-manager
 
