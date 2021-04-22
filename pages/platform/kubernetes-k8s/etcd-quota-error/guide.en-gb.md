@@ -11,7 +11,7 @@ Some customers might encounter troubles with the quota on ETCD storage usage.
 
 ## Issue
 
-When you want to manage an objects into your Kubernetes cluster, you can reached an error like this:
+When managing your Kubernetes cluster, you may encounter the following error:
 
 ```log
 "Error from server: rpc error: code = Unknown desc = ETCD storage quota exceeded"
