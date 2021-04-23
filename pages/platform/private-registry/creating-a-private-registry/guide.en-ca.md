@@ -33,16 +33,16 @@ order: 1
 
 A Docker Registry is a system that lets you store and distribute your Docker images. The best known Registry is the official [Docker Hub](https://hub.docker.com/){.external}, where you can find official public images such as [Alpine](https://hub.docker.com/_/alpine){.external}, [Golang](https://hub.docker.com/_/golang){.external} or [Debian](https://hub.docker.com/_/debian){.external}.
 
-Today, OVHcloudallows you to spawn your own authenticated Docker Registry where you can privately store your Docker images. This is the best way to use your private images with our OVHcloudManaged Kubernetes Service offer without exposing them to everyone.
+Today, OVHcloud allows you to spawn your own authenticated Docker Registry where you can privately store your Docker images. This is the best way to use your private images with our OVHcloud Managed Kubernetes Service offer without exposing them to everyone.
 
 
 ## Objective
 
-OVHcloudManaged Private Registry service provides you a managed, authenticated Docker registry where you can privately store your Docker images. This guide will explain how to create your Private Registry.
+OVHcloud Managed Private Registry service provides you a managed, authenticated Docker registry where you can privately store your Docker images. This guide will explain how to create your Private Registry.
 
 ## Instructions
 
-1. First, log in to the OVHcloudPublic Cloud Manager.
+1. First, log in to the OVHcloud Public Cloud Manager.
 
 1. In the left menu, in section *Orchestration/Industrialisation*, select *Managed Private Registry*.
 
