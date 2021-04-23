@@ -45,18 +45,15 @@ Ein neues Fenster öffnet sich, das Ihre derzeit für diese E-Mail-Adresse konfi
 
 ![E-Mails](images/img_3240.jpg){.thumbnail}
 
-
 ### Die Filter-Einstellungen verstehen
 
 ![E-Mails](images/img_3241.jpg){.thumbnail}
-
 
 #### Information
 
 - **Filtername**: Hiermit können Sie Ihre Filter im Kundencenter unterscheiden.
 - **Priorität**: Dies legt die Reihenfolge der Ausführung Ihrer Filter für alle eingehenden Nachrichten auf dieser Adresse fest. Ein Filter der Priorität 1 wird vor einem der Priorität 5 ausgeführt.
 - **Den Filter aktivieren**: Legt fest, ob der Filter auf den Posteingang angewendet wird (Sie können z.B. einen Filter vorübergehend deaktivieren, ohne ihn zu löschen, indem Sie den Haken bei dieser Option entfernen.)
-
 
 #### Regeln
 
@@ -87,7 +84,6 @@ Vierte Auswahl (+):
 
 Beispiel: `Wenn der Betreff der Nachricht [SPAM] enthält`
 
-
 #### Aktionen
 
 Hier entscheiden Sie, wie der Filter eine E-Mail behandelt, wenn die oben genannten Bedingungen erfüllt sind.
@@ -99,7 +95,6 @@ Sie können zwischen diesen Arten von Aktionen wählen:
 - **Löschen**: Löscht die E-Mail ohne weitere Benachrichtigung aus Ihrem Posteingang.
 - **Auf eine andere Remote-Adresse weiterleiten**: Leitet die Nachricht an die von Ihnen angegebene E-Mail-Adresse weiter.
 
-
 ### Beispiele
 
 #### Spam löschen
@@ -109,14 +104,12 @@ Sie können zwischen diesen Arten von Aktionen wählen:
 |Filtereinstellungen|Betreff der Nachricht|enthält|[SPAM]|löschen|
 |Was der Filter bewirkt|Wenn der Betreff|enthält|das Wort `[SPAM]`|dann die Nachricht löschen.|
 
-
 #### E-Mails eines bestimmten Senders weiterleiten
 
 ||Header|Regel|Wert|Aktion|
 |---|---|---|---|---|
 |Filtereinstellungen|Von|enthält|contact@domaintest.ovh|an eine Remote-Adresse weiterleiten: jean@otherdomain.ovh|
 |Was der Filter bewirkt|Wenn der Absender|ist|contact@domaintest.ovh|dann die Nachricht an jean@otherdomain.ovh weiterleiten|
-
 
 #### An eine Mailingliste adressierte E-Mail weiterleiten
 
@@ -125,9 +118,7 @@ Sie können zwischen diesen Arten von Aktionen wählen:
 |Filtereinstellungen|An|enthält|ML@mailing.com|an eine lokale Adresse weiterleiten: recipient@mypersonaldomain.ovh|
 |Was der Filter bewirkt|Wenn die Nachricht an die Mailingliste versandt wurde|namens|ML@mailing.com|dann die Nachricht an meine andere Adresse weiterleiten: recipient@mypersonaldomain.ovh|
 
-<a name="MULTI"></a>
-
-#### E-Mails mit unerwünschten Phrasen löschen, unter Ausnahme einer Absenderadresse 
+#### E-Mails mit unerwünschten Phrasen löschen, unter Ausnahme einer Absenderadresse
 
 Dieses Filterbeispiel besteht aus zwei Regeln:
 
