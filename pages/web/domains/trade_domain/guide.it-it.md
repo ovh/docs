@@ -5,6 +5,10 @@ excerpt: 'In questa guida troverai le informazioni necessarie per cambiare il pr
 section: 'Cambio di proprietario'
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
 **Ultimo aggiornamento: 04/03/2021**
 
 ## Obiettivo
@@ -20,7 +24,7 @@ Per registrare un dominio, oltre alla [gestione dei contatti](../../customer/ges
 
 ## Prerequisiti
 
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Disporre di un dominio registrato in OVHcloud
 - Essere il [contatto amministratore](../../customer/gestisci_i_tuoi_contatti/) del dominio.
 - Disporre del consenso del proprietario attuale del dominio per effettuare il cambio di proprietario.
@@ -31,7 +35,7 @@ Per registrare un dominio, oltre alla [gestione dei contatti](../../customer/ges
 >
 > Le istruzioni che seguono descrivono il modo più comune di modificare il proprietario del dominio, valido per la maggior parte dei domini di livello superiore (TLD). Tuttavia, le regole specifiche delle procedure relative ai domini TLD sono definite unicamente dall'autorità di assegnazione appropriata, vale a dire il **registro**. I Registrar come OVHcloud devono rispettare queste regole e non hanno alcuna influenza sulle decisioni di registrazione.
 >
-> La procedura esatta per il cambio di proprietà di un dominio può quindi variare, in particolare nel caso di alcune TLD di codice paese (ccTLD, quali .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, ecc.) e di alcune TLD speciali (.am, .fm, ecc.). Per alcuni di essi, un cambio di proprietà è considerato un'operazione a pagamento. Il cambio di proprietà può essere sospeso anche per diversi motivi, ad esempio per mancato pagamento, abuso o blocco del registro. 
+> La procedura esatta per il cambio di proprietà di un dominio può quindi variare, in particolare nel caso di alcune TLD di codice paese (ccTLD, quali .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, ecc.) e di alcune TLD speciali (.am, .fm, ecc.). Per alcuni di essi, un cambio di proprietà è considerato un'operazione a pagamento. Il cambio di proprietà può essere sospeso anche per diversi motivi, ad esempio per mancato pagamento, abuso o blocco del registro.
 >
 > In caso di dubbi, consulta queste risorse:
 >
@@ -55,15 +59,15 @@ Nella scheda `Informazioni generali`{.action}, clicca sul pulsante **Abbonamento
 > [!warning]
 >
 > Qualsiasi modifica apportata al nome, al nome, all'organizzazione, allo status legale e all'indirizzo email del proprietario è considerata come modifica del proprietario.
-> 
+>
 > Se modifichi solo i dettagli del proprietario, passa alla sezione [Aggiornamento delle informazioni del proprietario](#updateownerinformation) qui sotto.
-> 
+>
 
 Si apre una nuova scheda del tuo browser con tutti i domini che possono essere utilizzati per la modifica del proprietario. Seleziona un dominio dalla lista selezionando la casella a sinistra. Questo step può essere utilizzato anche per avviare un'operazione in blocco: è possibile avviare la modifica del proprietario di diversi domini per volta, ad esempio per cambiare il proprietario di tutti i domini.*ovh*. Una volta effettuate le tue scelte, clicca su `Continua`{.action}.
 
 ![modifica del proprietario](images/3657.PNG){.thumbnail}
 
-Nel form dei dettagli del proprietario, inserisci le informazioni valide in tutti i campi obbligatori. Prestare particolare attenzione agli errori di inserimento e utilizzare [caratteri non ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm) per quanto possibile. Si ricorda che qualsiasi informazione inesatta o falsa può provocare un errore tecnico e quindi un ritardo dell'intero processo di scambio. 
+Nel form dei dettagli del proprietario, inserisci le informazioni valide in tutti i campi obbligatori. Prestare particolare attenzione agli errori di inserimento e utilizzare [caratteri non ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm) per quanto possibile. Si ricorda che qualsiasi informazione inesatta o falsa può provocare un errore tecnico e quindi un ritardo dell'intero processo di scambio.
 
 Una volta confermata la tua richiesta, riceverai due email per confermare o annullare la tua richiesta:
 
@@ -76,12 +80,12 @@ Se l'indirizzo email non viene modificato in seguito alla modifica del proprieta
 > [!primary]
 >
 > La procedura deve essere convalidata da entrambe le parti entro 60 giorni dalla richiesta.
-> 
+>
 > Se la modifica è rifiutata da una delle parti, la domanda è annullata.
 
 > [!warning]
 >
-> Se il proprietario del dominio è stato modificato, il dominio non potrà essere [trasferito verso un altro Registrar](../transferencia_saliente_de_un_dominio_generico_o_geografico/) per un periodo di 60 giorni. 
+> Se il proprietario del dominio è stato modificato, il dominio non potrà essere [trasferito verso un altro Registrar](../transferencia_saliente_de_un_dominio_generico_o_geografico/) per un periodo di 60 giorni.
 
 ### Aggiornamento delle informazioni del proprietario <a name="updateownerinformation"></a>
 

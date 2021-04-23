@@ -5,6 +5,10 @@ excerpt: 'Neste guia, encontrará várias informações sobre a alteração de t
 section: 'Alteração de titular'
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 **Última atualização: 04/03/2021**
 
 ## Objetivo
@@ -31,7 +35,7 @@ Para além da [gestão dos contactos](../../customer/gestao_dos_contactos/), o r
 >
 > As instruções que se seguem descrevem a forma mais comum de modificar o proprietário do nome de domínio, válida para a maioria dos domínios de nível superior (TLD). No entanto, as regras específicas dos processos relativas aos nomes de domínio TLD são definidas apenas pela autoridade de atribuição adequada, ou seja, o **registo**. Os agentes de registo (ou registar), tais como a OVHcloud, devem respeitar estas regras e não têm qualquer influência sobre as decisões de registo.
 >
-> Assim, o procedimento exato para a mudança de proprietário de um nome de domínio pode variar, em especial no caso de certos TLD de código de país (ccTLD, tais como .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) e de alguns TLD especiais (.am, .fm, etc.). Para alguns deles, uma mudança de proprietário é considerada uma operação paga. A mudança de proprietário pode igualmente ser suspensa por diversas razões, por exemplo, por um não pago, por um abuso ou por um bloqueio do registo. 
+> Assim, o procedimento exato para a mudança de proprietário de um nome de domínio pode variar, em especial no caso de certos TLD de código de país (ccTLD, tais como .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, etc.) e de alguns TLD especiais (.am, .fm, etc.). Para alguns deles, uma mudança de proprietário é considerada uma operação paga. A mudança de proprietário pode igualmente ser suspensa por diversas razões, por exemplo, por um não pago, por um abuso ou por um bloqueio do registo.
 >
 > Em caso de dúvida, recomendamos que consulte os seguintes recursos:
 >
@@ -55,15 +59,15 @@ No separador `Informações gerais`{.action}, aceda à secção **Subscrição**
 > [!warning]
 >
 > Qualquer alteração do nome, apelido, organização, estatuto legal e endereço de e-mail do proprietário é considerada como uma mudança de proprietário.
-> 
+>
 > Se alterar apenas os detalhes de titular que não os mencionados anteriormente, consulte a secção [Atualização das informações de proprietário](#updateownerinformation) abaixo.
-> 
+>
 
 Irá surgir uma nova janela do seu browser com todos os domínios elegíveis para a mudança de proprietário. Selecione um domínio na lista selecionando a opção situada à esquerda. Esta etapa pode igualmente ser utilizada para lançar uma operação agrupada: é possível iniciar uma mudança de proprietário para vários nomes de domínio de cada vez, por exemplo para mudar o proprietário de todos os domínios *.ovh*. Depois de fazer as suas escolhas, clique em `Continuar`{.action}.
 
 ![alteração do proprietário](images/3657.PNG){.thumbnail}
 
-No formulário dos detalhes do proprietário, queira introduzir informações válidas em todos os campos obrigatórios. Tenha cuidado com os erros de introdução e, sempre que possível, utilize [caracteres não ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm). Tenha em conta que qualquer informação incorreta ou falsa pode provocar um erro técnico e, por conseguinte, um atraso no conjunto do processo de intercâmbio. 
+No formulário dos detalhes do proprietário, queira introduzir informações válidas em todos os campos obrigatórios. Tenha cuidado com os erros de introdução e, sempre que possível, utilize [caracteres não ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm). Tenha em conta que qualquer informação incorreta ou falsa pode provocar um erro técnico e, por conseguinte, um atraso no conjunto do processo de intercâmbio.
 
 Uma vez confirmado o seu pedido de troca de dados, ser-lhe-ão enviados dois e-mails para confirmar ou anular este pedido:
 
@@ -76,12 +80,12 @@ Se o endereço de e-mail não for alterado devido à mudança de proprietário, 
 > [!primary]
 >
 > O procedimento deve ser validado por ambas as partes no prazo de 60 dias a contar do pedido.
-> 
+>
 > Se uma das partes recusar a alteração, o pedido será anulado.
 
 > [!warning]
 >
-> Se o proprietário do nome de domínio tiver sido modificado, o nome de domínio não poderá ser [transferido para outro agente de registo](../transferencia_de_saida_de_um_nome_de_dominio_generico_ou_geografico/) durante um período de 60 dias. 
+> Se o proprietário do nome de domínio tiver sido modificado, o nome de domínio não poderá ser [transferido para outro agente de registo](../transferencia_de_saida_de_um_nome_de_dominio_generico_ou_geografico/) durante um período de 60 dias.
 
 ### Atualização das informações do proprietário <a name="updateownerinformation"></a>
 
