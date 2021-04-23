@@ -1,88 +1,80 @@
 ---
-title: 'Einrichten von Auto-Antworten'
-excerpt: 'Einrichten von Auto-Antworten'
+title: 'Einrichten von Auto-Antworten für E-Mails'
+excerpt: 'Erfahren Sie, wie Sie einen E-Mail-Beantworter einrichten'
 slug: einrichten_von_auto-antworten
 section: 'E-Mail Account Funktionen'
 order: 2
 legacy_guide_number: g2052
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
+
+**Letzte Aktualisierung am 28.08.2020**
+
+## Ziel
+
+Wenn Sie nicht in Ihrem Büro sind, können Sie einen E-Mail-Beantworter einrichten, der den Gesprächspartnern, die Sie per E-Mail kontaktieren möchten, eine Nachricht überlässt.
+
+**Hier erfahren Sie, wie Sie einen E-Mail-Beantworter einrichten.**
+
 ## Voraussetzungen
 
-- Zugang zum Kundencenter
-- Nutzung eines OVH Angebots, das die Erstellung von E-Mails erlaubt
-- Verwendung der MX* Server von OVH
+- Sie besitzen ein MX Plan Angebot, Diese ist verfügbar über: ein Webhosting-[Angebot](https://www.ovh.de/hosting/){.external}, das [kostenlose Start 10M](https://www.ovh.de/domains/angebot_hosting_start10m.xml){.external} Hosting mit einer Domain (zuvor aktiviert) oder das separat bestellte MX Plan Angebot.
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} angemeldet.
 
+## Praktische Anwendung
 
-*Weitere Informationen zu MX finden Sie in folgender Anleitung: []({legacy}2003)
+> [!primary]
+>
+> Wenn Ihre E-Mail-Adresse auf einem [**Exchange**](https://www.ovh.de/emails/hosted-exchange/), [**Email Pro**](https://www.ovh.de/emails/email-pro/) Angebot steht oder es keine Verwaltungsrubrik für Auto-Antworten in Ihrem MXplan gibt, müssen Sie den Anrufbeantworter über Ihr Webmail erstellen, indem Sie die Anleitung "[Einrichten einer automatischen Antwort in OWA](../../microsoft-collaborative-solutions/exchange_2016_einrichten_einer_automatischen_antwort_in_owa/)" heranziehen.
 
+### Erstellung des Beantworters
 
-## Verbindung zum Kundencenter
+Melden Sie sich in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} an. 
 
-- Loggen Sie sich mit Ihrer Kundenkennung (nic-handle) und dem zugehörigen Passwort in Ihr [Kundencenter](https://www.ovh.com/manager/web) ein.
+Wählen Sie die betreffende Domain im Bereich `E-Mails`{.action} in der Spalte links aus.
 
+Klicken Sie oben auf den `Tab`{.action} E-Mails und dann auf `Verwaltung der Auto-Antworten`{.action}.
 
+Sie werden zum Fenster `Verwaltung der Auto-Antworten` weitergeleitet, das alle E-Mail-Beantworter auf Ihrem E-Mail-Angebot anzeigt.
 
-![](images/img_3592.jpg){.thumbnail}
+Klicken Sie auf `Einen Beantworter hinzufügen`{.action}
 
+![Hosting](images/email_responder01.gif){.thumbnail}
 
-## Auswahl der Domain des Mailing-Angebots
-Wenn Sie eingeloggt sind, klicken Sie im Menü links auf E-Mails und wählen Sie anschließend die gewünschte Domain aus.
+Das Hinzufügungsfenster wird angezeigt. Sie können es wie folgt ergänzen:
 
-![](images/img_3600.jpg){.thumbnail}
+- `Typ der Auto-Antwort`:
 
+"Mit einem E-Mail Account verbunden": zu verwenden, wenn es sich um eine bestehende E-Mail-Adresse auf Ihrem E-Mail-Angebot handelt.
+"Frei": im Fall eines Alias zu verwenden. Sie ist daher nicht an eine bestehende Adresse gebunden.
 
-## Menüpunkt E-Mails
-Um Ihre Auto-Antworten zu verwalten, wählen Sie den Menüpunkt "E-Mails" (1) und klicken Sie anschließend rechts auf "Verwaltung der Auto-Antworten" (2).
+- `Mailbox` oder `Name des Beantworters`: die E-Mail-Adresse oder das Alias, für die die Auto-Antwort bestimmt ist.
 
-![](images/img_3597.jpg){.thumbnail}
+- `Dauer der Auto-Antwort`:
 
+"Temporär": legen Sie ein Anfangs- und Enddatum fest, das für die Funktion Ihres Beantworters zu berücksichtigen ist (nützlich, wenn Sie zum Beispiel in Urlaub fahren).
+"Permanent": Der Anrufbeantworter funktioniert, bis Sie ihn deaktiviert haben.
 
-## Verwaltung der Auto-Antworten
-Dann klicken Sie rechts auf "Eine Auto-Antwort hinzufügen".
+- `Eine Kopie versenden` oder `Nachrichten auf dem Server speichern:` erlaubt es, die während Ihrer Abwesenheit erhaltenen Nachrichten an die Adresse Ihrer Wahl zurückzusenden oder auf der E-Mail-Adresse zu speichern.
 
-![](images/img_3598.jpg){.thumbnail}
+> [!warning]
+> Wenn Sie dieses Feld entfernen, werden die während Ihrer Abwesenheit eingegangenen Nachrichten automatisch gelöscht.
 
+- `Adresse in Kopie` (nur im freien Modus): Wählen Sie im Fall eines Alias die E-Mail-Adresse aus, die die an das Alias gesendeten E-Mails empfangen wird.
 
-## Konfiguration der Auto-Antwort
-Typ der Auto-Antwort (1):
+- `Nachricht`: Dies ist die Nachricht, die Ihre Anrufer erhalten, wenn sie Ihnen eine E-Mail zusenden.
 
-- "An eine Mailbox gebunden" (wenn Sie eine existierende Mailbox verwenden und kein Alias).
-- "Frei" (wenn Sie ein Alias verwenden).
+Klicken Sie anschließend auf `Bestätigen`{.action}, um die Auto-Antwort einzurichten.
 
-Mailbox:
-- die E-Mail-Adresse/das Alias, für die/das Sie die Auto-Antwort einrichten.
+### Änderung oder Löschung des Beantworters
 
-Verwendungszeitraum der Auto-Antwort (2):
-- "Temporär": Geben Sie Anfangs- und Enddatum für Ihre Auto-Antwort an (wenn Sie beispielsweise im Urlaub nicht erreichbar sind).
+Sobald Ihr E-Mail-Beantworter erstellt wurde, erscheint er in der Liste, die im Bereich `Verwaltung der Beantworter`{.action} Ihres E-Mail-Angebots angezeigt wird. Sie können es löschen oder ändern, indem Sie auf `...`{.action}. rechts neben diesem klicken.
 
-- "Permanent": Die Auto-Antwort wird so lange versendet, bis Sie sie deaktivieren.
+![Hosting](images/email_responder02.png){.thumbnail}
 
-Die Nachrichten auf dem Server belassen bzw. Eine Kopie versenden (3):
-- Setzen Sie hier das Häkchen, wenn Sie eine Kopie der Nachricht
+## Weiterführende Informationen
 
-speichern möchten. Wenn Sie eine "freie" Auto-Antwort einrichten, müssen Sie die E-Mail-Adresse angeben, an die eine Kopie der Nachricht verschickt werden soll.
-
-Nachricht (4):
-
-- Ihre Auto-Antwort. Diese Nachricht werden die Personen erhalten, die Ihnen im definierten Zeitraum eine E-Mail schicken.
-
-Bestätigung (5):
-- Klicken Sie anschließend auf "bestätigen", um die Auto-Antwort zu aktivieren.
-
-
-
-![](images/img_3589.jpg){.thumbnail}
-
-- Anschließend wird die Aktivierung der Auto-Antwort bestätigt.
-
-
-
-![](images/img_3590.jpg){.thumbnail}
-
-
-## Anzeige der Auto-Antwort
-Nun erscheint die soeben eingerichtete Auto-Antwort in der Liste der Auto-Antworten. Wenn Sie die Auto-Antwort löschen oder ändern wollen, klicken Sie auf das kleine Zahnrad rechts.
-
-![](images/img_3599.jpg){.thumbnail}
-
+Für den Austausch mit unserer User Community gehen Sie auf https://community.ovh.com/en/
