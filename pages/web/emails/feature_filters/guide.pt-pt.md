@@ -24,12 +24,10 @@ Por exemplo: deseja que todo o e-mail que contenha "[SPAM]" no assumpto seja eli
 
 **Saiba como criar e configurar um filtro no seu endereço de e-mail**
 
-
 ## Requisitos
 
 - Ter uma oferta de e-mail MX Plan ou um [Pack Alojamento Web](https://www.ovh.pt/alojamento-partilhado/){.external}.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
-
 
 ## Instruções
 
@@ -45,18 +43,15 @@ Poderá aceder à lista dos filtros atualmente configurados para este endereço 
 
 ![emails](images/img_3240.jpg){.thumbnail}
 
-
 ### Compreender a configuração dos filtros de e-mails
 
 ![emails](images/img_3241.jpg){.thumbnail}
-
 
 #### Informações
 
 - **Nome do filtro:** Isto serve para diferenciar os seus filtros na Área de Cliente.
 - **Prioridade:** Isto define a ordem de execução dos seus filtros numa mesma caixa de e-mail. Um filtro de prioridade 1 será executado antes de um filtro de prioridade 5.
 - **Ativar o filtro:** Isto determina se o filtro será efetivo ou não (pode criar um filtro desselecionando a opção se deseja ativá-la mais tarde, por exemplo).
-
 
 #### Regras
 
@@ -81,10 +76,9 @@ Terceira escolha (valor):
 
 Quarta escolha (+):
 
-- Isto permite-lhe adicionar uma ou várias condições para a mesma ação (ver várias [regras](#MULTI){.external})
+- Isto permite-lhe adicionar uma ou várias condições para a mesma ação.
 
 **Resultado destas condições** - Exemplo: "Se o assumpto da mensagem contiver [SPAM]"
-
 
 #### Ações
 É aqui que vai escolher o que será feito pelo filtro se as condições acima estiverem reunidas.
@@ -96,7 +90,6 @@ Pode escolher entre:
 - **Eliminação:** Os e-mails que preencham as condições serão eliminados.
 - **Reencaminhar para um endereço distante:** Reencaminhe os e-mails que preencham as condições para o endereço de e-mail à sua escolha.
 
-
 ### Exemplos
 
 #### Eliminar spams
@@ -106,14 +99,12 @@ Pode escolher entre:
 |Parâmetros do filtro|Assumpto da mensagem|contém|[SPAM]|eliminação|
 |O que o filtro vai fazer|Se o assumpto da mensagem|contém|a suite "[SPAM]"|então, eliminar a mensagem.|
 
-
 #### Reencaminhar os e-mails de um destinatário
 
 ||Cabeçalho|Regra|Valor|Cenários|
 |---|---|---|---|---|
-|Parâmetros do filtro|De|contém|contact@domaintest.ovh|reencaminhar para um endereço remoto: jean@otherdomain.ovh|
-|O que o filtro vai fazer|Se o expedidor|é|contact@domaintest.ovh|enviar o e-mail para jean@otherdomain.ovh|
-
+|Parâmetros do filtro|De|contém|contact@domaintest.ovh|reencaminhar para um endereço remoto: john@otherdomain.ovh|
+|O que o filtro vai fazer|Se o expedidor|é|contact@domaintest.ovh|enviar o e-mail para john@otherdomain.ovh|
 
 #### Reencaminhar os e-mails enviados a uma Mailing-List
 
@@ -122,8 +113,7 @@ Pode escolher entre:
 |Parâmetros do filtro|A|contém|ML@mailing.com|Reencaminhar para um endereço local: recipient@mypersonaldomain.ovh|
 |O que o filtro vai fazer|Se a mensagem foi enviada à Mailing-List|chamada|ML@mailing.com|então, enviar a mensagem para o meu outro endereço: recipient@mypersonaldomain.ovh|
 
-
-#### Eliminar os e-mails que contenham uma menção indesejável com exceção de um remetente 
+#### Eliminar os e-mails que contenham uma menção indesejável com exceção de um remetente
 
 Adicionam-se dois filtros:
 
