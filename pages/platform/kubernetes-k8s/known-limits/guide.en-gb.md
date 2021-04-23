@@ -94,10 +94,6 @@ In any case, there are some ports that you shouldn't block on your instances if 
 The `vRack` feature is currently available and compliant with our Managed Kubernetes Service as a public beta feature.  
 For more information, please refer to the [issue #15 of our public roadmap](https://github.com/ovh/public-cloud-roadmap/issues/15).  
 
-### Some limitations must be taken into account
-
-The `LoadBalancer` service is not yet compliant and fully operational with the `vRack`.
-
 To prevent any conflict, we advise you to use any range within the following IP range in the private networks associated with your vrack-enabled Kubernetes clusters and not to disable the DHCP service which is running in your private network:
 
 ```text
