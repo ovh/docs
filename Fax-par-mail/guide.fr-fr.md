@@ -1,28 +1,27 @@
 ---
-title: Envoyer des fax et créer des campagnes par e-mail
-slug: envoyer-des-fax-et-creer-des-campagnes-par-e-mail
-legacy_guide_number: '8355851'
+title: Envoyer des fax et créer des campagnes par mail
+slug: envoyer-des-fax-et-creer-des-campagnes-par-mail
+excerpt: Découvrez comment envoyer des fax par e-mail
 section: Envoi/Réception de fax
 order: 1
 ---
 
-### **Préambule** {#préambule}
+**Dernière mise à jour le 23/04/2021**
 
-Vous pouvez envoyer des fax par plusieurs canaux. Dans ce guide, la méthode présentée vous permettra d'envoyer vos fax et vos campagnes de fax par e-mail. Pour les campagnes, nous vous recommandons néanmoins de privilégier la méthode via le Manager qui vous permet d'assurer un meilleur suivi du déroulement.
+## Objectif
 
-Cette méthode est utilisable avec les offres suivantes :
+Vous pouvez envoyer des fax par plusieurs canaux. Dans ce guide, la méthode présentée vous permettra d'envoyer vos fax et vos campagnes de fax par e-mail.
 
--   Ecofax Perso
--   Ecofax Pro
--   Plug And Fax
+**Découvrez comment envoyer un fax ou une campagne de fax par mail.**
 
-***![](images/information.png){.thumbnail} Pour commander les offres Fax : <https://www.ovhtelecom.fr/fax/>***
+## Prérequis
 
-**Sommaire :**
+- Disposer d’une [ligne Fax OVHcloud](https://www.ovhtelecom.fr/fax/).
+- Être connecté à son adresse mail.
 
-Niveau : Intermédiaire
+## En pratique
 
-------------------------------------------------------------------------
+Connectez-vous à votre adresse mail et ouvrez un envoi de mail, nous vous expliquons comment remplir le mail afin soit d'envoyer un fax ou une campagne de fax.
 
 ### Envoyer un fax par mail {#envoyer-un-fax-par-mail}
 
@@ -35,10 +34,10 @@ Pour envoyer un fax par e-mail, il faut :
 
 L'envoi d'un fax se fait aussi simplement que l'envoi d'un e-mail :
 
--   -   Le **destinataire de l'e- mail** est sous cette forme : **numero\_destinataire@ecofax.fr**Par exemple, pour envoyer un fax au 09 72 10 10 10, l'adresse e-mail destinataire sera : **0972101010@ecofax.fr**
-    -   **L'**objet de l'e-mail** est le numéro de la ligne de **faxémettrice** : dans notre exemple, la ligne Ecofax utilisée est **03 66 72 03 07**, l'objet est donc **0366720307****
-    -   Dans le **corps de l'e-mail**, indiquez le **mot de passe fax** de la ligne Ecofax sous cette forme : **p:le\_mot\_de\_passe\_de\_la\_ligne**(En suivant ce lien vous pourrez récupérer votre mot de pass : [Mot de passe fax](#Envoyerdesfaxetcréerdescampagnespare-mail-MotdepassFax))
-    -   Il faut **attacher** en **piècejointe** de l'e-mail le **fichier** à **envoyer**.
+-   1-   Le **destinataire de l'e- mail** est sous cette forme : **numero\_destinataire@ecofax.fr**Par exemple, pour envoyer un fax au 09 72 10 10 10, l'adresse e-mail destinataire sera : **0972101010@ecofax.fr**
+    2-   **L'**objet de l'e-mail** est le numéro de la ligne de **faxémettrice** : dans notre exemple, la ligne Ecofax utilisée est **03 66 72 03 07**, l'objet est donc **0366720307****
+    3-   Dans le **corps de l'e-mail**, indiquez le **mot de passe fax** de la ligne Ecofax sous cette forme : **p:le\_mot\_de\_passe\_de\_la\_ligne**(En suivant ce lien vous pourrez récupérer votre mot de pass : [Mot de passe fax](#Envoyerdesfaxetcréerdescampagnespare-mail-MotdepassFax))
+    4-   Il faut **attacher** en **piècejointe** de l'e-mail le **fichier** à **envoyer**.
 
     L'e-mail est prêt à être envoyé.
 
