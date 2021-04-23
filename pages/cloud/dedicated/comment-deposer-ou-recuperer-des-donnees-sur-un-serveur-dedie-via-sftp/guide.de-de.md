@@ -24,7 +24,7 @@ Bei einer Migration kann es erforderlich werden, Daten von einem dedizierten Ser
 
 ## Voraussetzungen
 
-- Ein [dedizierter](https://www.ovhcloud.com/de/bare-metal/){.external} Server, auf dem eine GNU/Linux Distribution installiert ist.
+- Ein [Dedizierter Server](https://www.ovhcloud.com/de/bare-metal/){.external}, auf dem eine GNU/Linux Distribution installiert ist.
 - FTP-Client, der die SFTP-Verbindungen unterstützt (diese Anleitung dokumentiert die Verwendung von [FileZilla](https://filezilla-project.org/){.external}).
 - Administrativer Zugang via SSH zu Ihrem Server.
 
@@ -32,7 +32,7 @@ Bei einer Migration kann es erforderlich werden, Daten von einem dedizierten Ser
 
 ### FileZilla für den Abruf und die Speicherung Ihrer Daten verwenden
 
-Das SFTP Protokoll kann verwendet werden, um Dateien über eine gesicherte Verbindung (SSH) zu übertragen. Für dieses Szenario gibt es zwei Möglichkeiten: entweder haben Sie normalen Zugriff auf Ihren Server oder verbinden sich im Rescue-[Modus damit](../ovh-rescue/).
+Das SFTP Protokoll kann verwendet werden, um Dateien über eine gesicherte Verbindung (SSH) zu übertragen. Für dieses Szenario gibt es zwei Möglichkeiten: entweder haben Sie normalen Zugriff auf Ihren Server oder verbinden sich im [Rescue-Modus](../ovh-rescue/) damit.
 
 Standardmäßig erhält ein Server, der ein GNU/Linux-Betriebssystem verwendet, über Port 22 SSH-Zugriff. Möglicherweise haben Sie diesen Port jedoch bereits geändert (zum Beispiel in unserer [Anleitung zur Sicherung eines Dedicated Servers](../dedizierten-server-sichern/)).
 
