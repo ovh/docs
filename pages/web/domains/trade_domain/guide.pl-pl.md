@@ -6,6 +6,10 @@ legacy_guide_number: g1350
 section: 'Zmiana właściciela'
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
 **Ostatnia aktualizacja z dnia 04-03-2021**
 
 ## Wprowadzenie
@@ -32,7 +36,7 @@ Oprócz [zarządzania kontaktami](../../customer/zarzadzanie_kontaktami/), zarej
 >
 > Poniższe instrukcje opisują najpopularniejszy sposób zmiany właściciela domeny, ważny dla większości domen najwyższego poziomu (TLD). Jednak szczegółowe zasady procesu rejestracji domen TLD są określane wyłącznie przez właściwy organ przydziału, tj. **rejestr**. Rejestratorzy (lub rejestratorzy), tacy jak OVHcloud, muszą przestrzegać tych zasad i nie mają wpływu na decyzje dotyczące rejestracji.
 >
-> Dokładna procedura zmiany właściciela domeny może się zatem różnić, w szczególności w przypadku niektórych TLD kodu kraju (np. ccTLD, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, itp.) oraz kilku specjalnych TLD (.am, .fm, itp.). W przypadku niektórych z nich zmiana właściciela jest uznawana za transakcję płatną. Zmiana właściciela może być również zawieszona z różnych powodów, na przykład z powodu nieopłacenia zamówienia, nadużycia lub zablokowania rejestru. 
+> Dokładna procedura zmiany właściciela domeny może się zatem różnić, w szczególności w przypadku niektórych TLD kodu kraju (np. ccTLD, .lu, .hk, .ro, .be, .lt, .dk, .at, .fi, itp.) oraz kilku specjalnych TLD (.am, .fm, itp.). W przypadku niektórych z nich zmiana właściciela jest uznawana za transakcję płatną. Zmiana właściciela może być również zawieszona z różnych powodów, na przykład z powodu nieopłacenia zamówienia, nadużycia lub zablokowania rejestru.
 >
 > W przypadku wątpliwości zalecamy sprawdzenie następujących zasobów:
 >
@@ -56,15 +60,15 @@ W karcie `Informacje ogólne`{.action} przejdź do sekcji **Abonament** w prawym
 > [!warning]
 >
 > Każda zmiana nazwiska, nazwiska, organizacji, statusu prawnego i adresu e-mail właściciela jest uważana za zmianę właściciela.
-> 
+>
 > Jeśli zmienisz tylko dane właściciela inne niż wymienione powyżej, przejdź do sekcji [Aktualizacja danych właściciela](#updateownerinformation) poniżej.
-> 
+>
 
 Otworzy się nowa zakładka przeglądarki z wszystkimi domenami uprawnionymi do zmiany właściciela. Wybierz z listy nazwę domeny, zaznaczając kratkę po lewej stronie. Etap ten może być również wykorzystany do rozpoczęcia operacji zbiorczej: można zainicjować zmianę właściciela dla kilku domen jednocześnie, na przykład w celu zmiany właściciela dla wszystkich domen *.ovh*. Po dokonaniu wyboru kliknij `Dalej`{.action}.
 
 ![zmiana właściciela](images/3657.PNG){.thumbnail}
 
-W formularzu szczegółów właściciela wprowadź poprawne informacje we wszystkich obowiązkowych polach. Uważaj na błędy podczas wprowadzania danych i używaj [znaków nie-ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm), jeśli to możliwe. Należy pamiętać, że wszelkie niedokładne lub błędne informacje mogą powodować błąd techniczny, a tym samym opóźnienie w całym procesie wymiany informacji. 
+W formularzu szczegółów właściciela wprowadź poprawne informacje we wszystkich obowiązkowych polach. Uważaj na błędy podczas wprowadzania danych i używaj [znaków nie-ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm), jeśli to możliwe. Należy pamiętać, że wszelkie niedokładne lub błędne informacje mogą powodować błąd techniczny, a tym samym opóźnienie w całym procesie wymiany informacji.
 
 Po potwierdzeniu zlecenia wymiany otrzymasz dwa e-maile, które pozwolą na potwierdzenie lub anulowanie zlecenia:
 
@@ -82,7 +86,7 @@ Jeśli adres e-mail nie został zmieniony w związku ze zmianą właściciela, r
 
 > [!warning]
 >
-> Jeśli właściciel domeny został zmieniony, domena nie będzie mogła zostać [przeniesiona do innego operatora](../transfer_wychodzacy_domeny_globalnej_lub_geograficznej/) przez 60 dni. 
+> Jeśli właściciel domeny został zmieniony, domena nie będzie mogła zostać [przeniesiona do innego operatora](../transfer_wychodzacy_domeny_globalnej_lub_geograficznej/) przez 60 dni.
 
 ### Aktualizacja danych właściciela <a name="updateownerinformation"></a>
 
