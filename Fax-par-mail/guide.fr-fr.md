@@ -35,17 +35,17 @@ Pour envoyer un fax par e-mail, il faut :
 L'envoi d'un fax se fait aussi simplement que l'envoi d'un e-mail :
 
 -   -   Le **destinataire de l'e- mail** est sous cette forme : **numero\_destinataire@ecofax.fr**Par exemple, pour envoyer un fax au 09 72 10 10 10, l'adresse e-mail destinataire sera : **0972101010@ecofax.fr**
-    -   **L'**objet de l'e-mail** est le numéro de la ligne de **faxémettrice** : dans notre exemple, la ligne Ecofax utilisée est **03 66 72 03 07**, l'objet est donc **0366720307****
+    -   **L'**objet de l'e-mail** est le numéro de la ligne de **faxémettrice** : dans notre exemple, la ligne Ecofax utilisée est **09 72 12 34 56**, l'objet est donc **0972123456****
     -   Dans le **corps de l'e-mail**, indiquez le **mot de passe fax** de la ligne Ecofax sous cette forme : **p:le\_mot\_de\_passe\_de\_la\_ligne**(En suivant ce lien vous pourrez récupérer votre mot de pass : [Mot de passe fax](https://docs.ovh.com/fr/fax/configuration-fax/#mot-de-passe-fax))
     -   Il faut **attacher** en **piècejointe** de l'e-mail le **fichier** à **envoyer**.
 
     L'e-mail est prêt à être envoyé.
-    ![mot de passe fax](images/remplie2.jpg){.thumbnail}
+    ![fax-par-mail](images/remplie2.jpg){.thumbnail}
     
 
 Vous recevrez un mail vous confirmant la bonne prise en compte de votre demande puisun deuxième mail vous confirmant la bonne transmission du Fax.
 
-Dans le cas d'une erreur (e mot de passe fax par exemple), vous recevrez un e-mail pour vous prévenir.
+Dans le cas d'une erreur (le mot de passe fax par exemple), vous recevrez un e-mail pour vous prévenir.
 
 Le sujet de ce mail sera "**Télécopie : erreur de traitement**". Le corps du mail vous expliquera l'erreur rencontrée.
 
@@ -61,7 +61,7 @@ Le service de fax permet d'effectuer une campagne par e-mails (jusqu'à **2000de
 La composition de la campagne se déroule de cette manière :
 
 -   Le **destinataire de l'e-mail** est sous cette forme : **fax@ecofax.fr**.
--   L'**objet de l'e-mail** est le numéro de la ligne de **faxémettrice** : dans notre exemple la ligne Ecofax utilisée est **03 66 72 03 07**, l'objet est donc **0366720307**.
+-   L'**objet de l'e-mail** est le numéro de la ligne de **faxémettrice** : dans notre exemple la ligne Ecofax utilisée est **09 72 12 34 56**, l'objet est donc **0972123456**.
 -   Dans le **corps de l'e-mail**, il faut entrer le **mot de passe fax** de la ligne Ecofax sous cette forme : **p:le\_mot\_de\_passe\_de\_la\_ligne**
 -   Il faut **attacher** en **piècejointe** de l'e-mail le **fichier** à **envoyer**.
 -   Dans le cadre de la campagne, les destinataires sont à joindre dans un fichier appelé **numbers.txt** contenant un numéro de destinataire par ligne.
@@ -107,7 +107,7 @@ Différentes erreurs peuvent êtres rencontrées lors de l'envoi d'un fax par e-
 
 ### **Les formats de fichiers supportés** {#les-formats-de-fichiers-supportés}
 
-Plusieurs formats sont supportés par notre infrastructure. Il est néanmoins recommandé d'utiliser le format PDF.
+Il est recommandé d'utiliser le format PDF, néanmoins plusieurs formats sont supportés par notre infrastructure.
 
 -   Microsoft Word (\*.doc)
 -   OpenDocument Text (\*.odt)
