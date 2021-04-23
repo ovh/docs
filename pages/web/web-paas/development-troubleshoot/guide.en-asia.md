@@ -5,7 +5,7 @@ section: Development
 order: 5
 ---
 
-**Last updated 16th April 2021**
+**Last updated 23rd April 2021**
 
 
 ## Force a redeploy
@@ -182,6 +182,14 @@ SELECT
 
 ## MySQL server has gone away
 
+### Disk space issues
+
+Errors such as "PDO Exception 'MySQL server has gone away'" are usually simply the result of exhausting your existing diskspace. Be sure you have sufficient space allocated to the service in [.platform/services.yaml](../configuration-services).
+
+The current disk usage can be checked using the CLI command `webpaas db:size`. Because of issues with the way InnoDB reports its size, this can out by up to 20%. As table space can grow rapidly, *it is usually advisable to make your database mount size twice the size reported by the `db:size` command*.
+
+
+
 ### Worker timeout
 
 Another possible cause of "MySQL server has gone away" errors is a server timeout.  MySQL has a built-in timeout for idle connections, which defaults to 10 minutes.  Most typical web connections end long before that is ever approached, but it's possible that a long-running worker may idle and not need the database for longer than the timeout.  In that case the same "server has gone away" message may appear.
@@ -207,7 +215,7 @@ This is what gives you all of the benefits of having repeatable deployments, con
 
 In Web PaaS, you cannot just "hack production".  It is a constraint, but it is a good constraint.
 
-
+During the build phase of your application, the main filesystem is writable.  So you can do whatever you want (e.g. compile code or generate anything you need).  But during and after the deploy phase, the main filesystem will be read-only.
 
 ## Failed to connect to the Git repository
 
