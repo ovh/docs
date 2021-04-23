@@ -7,13 +7,13 @@ section: 'Web Hosting configuration'
 legacy_guide_number: g1937
 ---
 
-**Last updated 31st March 2021**
+**Last updated 26th April 2021**
 
 
  ## Objective
 
-This complementary Apache module filters all incoming requests on your web servers. 
-To increase security, it intercepts and checks them before they are processed by the scripts. 
+The application firewall for a Web Hosting is a complementary Apache web server module (*ModSecurity*) which filters all incoming requests to your hosting. It increases security by intercepting and checking requests before they are processed by any scripts.
+
 Enable ModSecurity in one click from your control panel to get enhanced protection.
 With the Core Rule Set (CRS), your ModSecurity is preconfigured in an optimal way straight away, protecting you against the most common attacks: 
 - Trojan
@@ -22,6 +22,8 @@ With the Core Rule Set (CRS), your ModSecurity is preconfigured in an optimal wa
 - File injections on your hosting system
 - SQL or XSS type injections
 - etc.
+
+**This guide explains how to configure the firewall option for your Web Hosting plan in your OVHcloud Control Panel.**
 
 ## Requirements
 
@@ -33,7 +35,7 @@ With the Core Rule Set (CRS), your ModSecurity is preconfigured in an optimal wa
 ## Instructions
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Web Cloud`{.action}. 
-Click `Hosting Plans`{.action} in the services bar on the left-hand side and select the plan concerned.
+Click `Hosting plans`{.action} in the services bar on the left-hand side and select the plan concerned.
 
 
 ### Activating the application firewall in PHP configuration
@@ -66,7 +68,6 @@ You can also check automatic sub-domain configuration with www prefix using the 
 To confirm changes to the configuration press the `Next`{.action} button.
 A summary window will be displayed, verify that the entered configuration is correct.
 
-
 ![modifydomain](images/firewall-modify-domain.png){.thumbnail}
 
 
@@ -95,5 +96,6 @@ The submit configuration task will appear in the `Ongoing jobs`{.action} tab (in
 Information on which domains have the Firewall option turned on can be checked in the MultiSite section in the `Firewall` {.action} column.
 
 
+## Go further
 
-
+Join our community of users on <https://community.ovh.com/en/>.
