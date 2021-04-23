@@ -17,7 +17,7 @@ En cas d'absence à votre bureau, vous pouvez mettre en place un répondeur e-ma
 
 ## Prérequis
 
-- Disposer d'une offre MX Plan. Celle-ci est disponible via une offre d’[hébergement web]([{ovh_www}/hebergement-web/](https://www.ovh.com/ca/fr/hebergement-web/)){.external} ou l'offre MX Plan commandée séparément.
+- Disposer d'une offre MX Plan. Celle-ci est disponible via une offre d’[hébergement web]((https://www.ovh.com/ca/fr/hebergement-web/){.external} ou l'offre MX Plan commandée séparément.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc{.external}.
 
 ## En pratique

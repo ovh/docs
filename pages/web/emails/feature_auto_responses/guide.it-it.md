@@ -1,85 +1,78 @@
 ---
-title: 'Servizio Email: configura una risposta automatica'
-excerpt: 'Servizio Email: configura una risposta automatica'
+title: 'Creare una risposta automatica per il proprio indirizzo email'
+excerpt: 'Come configurare una risposta automatica'
 slug: servizio_email_configura_una_risposta_automatica
 legacy_guide_number: g2052
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
+>
+
+**Ultimo aggiornamento: 28/08/2020**
+
+## Obiettivo
+
+In caso di assenza al tuo ufficio, puoi installare una segreteria email che lascerà un messaggio agli interlocutori che desiderano contattarti via email.
+
+**Questa guida ti mostra come configurare una risposta automatica.**
 
 ## Prerequisiti
 
-- Avere accesso al tuo Spazio Cliente OVH
-- Aver attivato un servizio OVH che permette di creare email
-- Utilizzare i server MX* OVH
+- Disporre di una soluzione MX Plan Puoi effettuare questa operazione tramite: un'offerta di [hosting Web](https://www.ovh.it/hosting-web/){.external}, l'[hosting gratuito Start 10M](https://www.ovh.it/domini/offerta_hosting_start10m.xml){.external} incluso con un dominio (attivato in precedenza) o la soluzione MX Plan ordinata separatamente.
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
+## Procedura
 
-*Per maggiori informazioni sui server MX, consulta la guida []({legacy}2003)
+> [!primary]
+>
+> Se il tuo indirizzo email è su un'offerta [**Exchange**](https://www.ovh.it/emails/hosted-exchange/), [**Email Pro**](https://www.ovh.it/emails/email-pro/) o non hai una sezione `Gestione delle risposte automatiche`{.action} nel tuo MXplan, dovrai creare la risposta automatica dalla tua Webmail utilizzando la documentazione ["Installare una risposta automatica dall'interfaccia OWA"](../../microsoft-collaborative-solutions/exchange_2016_imposta_una_risposta_automatica_con_owa/).
 
+### Crea la risposta automatica
 
-## Accedi al tuo Spazio Cliente OVH
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. 
 
-- Per accedere al tuo [Spazio Cliente OVH](https://www.ovh.com/manager/web), inserisci le tue credenziali e clicca su Login.
+Seleziona il dominio nella sezione `Email`{.action}, dalla colonna a sinistra.
 
+Clicca sulla scheda `Email`{.action} in alto e poi su `Gestisci le risposte automatiche`{.action}.
 
+Verrai reindirizzato alla finestra `Gestione delle risposte` automatiche che visualizzeranno tutte le risposte automatiche attive sulla tua soluzione di posta.
 
-![](images/img_3592.jpg){.thumbnail}
+Clicca su `Aggiungi una risposta automatica`{.action}
 
+![hosting](images/email_responder01.gif){.thumbnail}
 
-## Seleziona il dominio associato al tuo servizio email
-Clicca sulla sezione Email del menu a sinistra e seleziona il tuo dominio.
+Si apre la finestra di aggiunta. completandola con le informazioni indicate qui sotto.
 
-![](images/img_3600.jpg){.thumbnail}
+- `Tipo di segreteria`:
 
+"Associato a una casella email": da utilizzare se questo è un indirizzo email esistente sulla tua soluzione di posta.
+Libero: da utilizzare nel caso di un alias. e non risulta quindi associato a un indirizzo esistente.
 
-## Tab Email
-Per gestire le tue risposte automatiche, clicca prima sul tab Email (1) e poi su Gestisci le risposte automatiche (2).
+- `Casella email` o `Nome della segreteria`: indirizzo email o alias della segreteria.
 
-![](images/img_3597.jpg){.thumbnail}
+- `Durata della risposta automatica`:
 
+"Temporaneo": definisci una data di inizio e di fine da prendere in considerazione per il funzionamento della tua segreteria (utile, ad esempio, in caso di congedo).
+"Permanente": la segreteria funzionerà finché non l'avrai disattivato.
 
-## Menu risposta automatica
-Clicca su Aggiungi una risposta automatica.
+- `Invia una copia` o `Mantieni i messaggi sul server`: permette di reindirizzare i messaggi ricevuti durante la tua assenza verso l'indirizzo di tua scelta o di conservarli sull'indirizzo email.
 
-![](images/img_3598.jpg){.thumbnail}
+> [!warning]
+> Se deselezionate questa casella, i messaggi ricevuti durante la vostra assenza saranno automaticamente eliminati.
 
+- `Indirizzo in copia` (solo in modalità libera): nel caso di un alias, seleziona l'indirizzo email che riceverà le email inviate all'alias.
 
-## Imposta la risposta automatica
-Inserisci queste informazioni:
+- `Messaggio`: È il messaggio che riceverai i tuoi interlocutori quando ti invieranno un'email.
 
-Tipo di risposta automatica (1):
+Clicca su `Conferma`{.action} per impostare la risposta automatica.
 
-- Associata a una casella email (da utilizzare per un account esistente, non un alias).
-- Libera (da utilizzare per un alias).
+### Modifica o eliminazione della risposta automatica
 
-Casella email:
-- l'indirizzo email o l'alias in questione.
+Una volta creata la risposta automatica, comparirà nella lista visibile nella sezione Gestione delle risposte automatiche` `{.action} della tua soluzione di posta. Per eliminarlo o modificarlo, clicca sui tre puntini in corrispondenza del servizio interessato.
 
-Durata della risposta automatica (2):
-- Temporanea: ti permette di definire il periodo in cui è attiva la tua risposta automatica.
-- Permanente: la risposta automatica viene inviata fino a quando non la disattivi.
+![hosting](images/email_responder02.png){.thumbnail}
 
-Salva i messaggi sul server (3):
-- Seleziona questa casella per conservare i messaggi ricevuti. Se hai scelto l'opzione Libera, puoi scegliere l'indirizzo email a cui inviare la copia dei messaggi ricevuti.
+## Per saperne di più
 
-Messaggio (4):
-- Il testo della risposta automatica che riceveranno i contatti che ti invieranno un'email.
-
-Conferma (5):
-- Clicca su Conferma per attivare la tua risposta automatica.
-
-
-
-![](images/img_3589.jpg){.thumbnail}
-
-- Compare un messaggio che ti conferma che l'aggiunta della tua risposta automatica è in corso:
-
-
-
-![](images/img_3590.jpg){.thumbnail}
-
-
-## Visualizza la risposta automatica
-Una volta completata la configurazione, la tua risposta automatica compare nella lista. Per modificarla o eliminarla, clicca sulla ruota dentata a destra e seleziona l'operazione che vuoi effettuare.
-
-![](images/img_3599.jpg){.thumbnail}
-
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
