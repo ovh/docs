@@ -40,7 +40,7 @@ L'envoi d'un fax se fait aussi simplement que l'envoi d'un e-mail :
     -   Il faut **attacher** en **piècejointe** de l'e-mail le **fichier** à **envoyer**.
 
     L'e-mail est prêt à être envoyé.
-    ![mot de passe fax](images/motdepassefax.png){.thumbnail}
+    ![mot de passe fax](images/remplie2.jpg){.thumbnail}
     
 
 Vous recevrez un mail vous confirmant la bonne prise en compte de votre demande puisun deuxième mail vous confirmant la bonne transmission du Fax.
