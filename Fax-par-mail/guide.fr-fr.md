@@ -64,7 +64,7 @@ La composition de la campagne se déroule de cette manière :
 -   L'**objet de l'e-mail** est le numéro de la ligne de **faxémettrice** : dans notre exemple la ligne Ecofax utilisée est **09 72 12 34 56**, l'objet est donc **0972123456**.
 -   Dans le **corps de l'e-mail**, il faut entrer le **mot de passe fax** de la ligne Ecofax sous cette forme : **p:le\_mot\_de\_passe\_de\_la\_ligne**
 -   Il faut **attacher** en **piècejointe** de l'e-mail le **fichier** à **envoyer**.
--   Dans le cadre de la campagne, les destinataires sont à joindre dans un fichier appelé **numbers.txt** contenant un numéro de destinataire par ligne. Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/Barbiersa-fax-par-mail/Fax-par-mail/images/numbers.txt" download>ce lien</a> un modèle de fichier «.txt » à compléter par vos soins.
+-   Dans le cadre de la campagne, les destinataires sont à joindre dans un fichier appelé **numbers.txt** contenant un numéro de destinataire par ligne. Vous trouverez sur <a href="https://raw.githubusercontent.com/ovh/docs/Barbiersa-fax-par-mail/Fax-par-mail/images/numbers.txt" download>ce lien</a> un modèle de fichier «.txt» à compléter par vos soins.
 
 **Exemple de fichier numbers.txt**
 
