@@ -60,11 +60,11 @@ Le service de fax permet d'effectuer une campagne par e-mails (jusqu'à **2000de
 
 La composition de la campagne se déroule de cette manière :
 
--   Le **destinataire de l'e-mail** est sous cette forme : **fax@ecofax.fr**.
--   L'**objet de l'e-mail** est le numéro de la ligne de **faxémettrice** : dans notre exemple la ligne Ecofax utilisée est **09 72 12 34 56**, l'objet est donc **0972123456**.
--   Dans le **corps de l'e-mail**, il faut entrer le **mot de passe fax** de la ligne Ecofax sous cette forme : **p:le\_mot\_de\_passe\_de\_la\_ligne**
--   Il faut **attacher** en **piècejointe** de l'e-mail le **fichier** à **envoyer**.
--   Dans le cadre de la campagne, les destinataires sont à joindre dans un fichier appelé **numbers.txt** contenant un numéro de destinataire par ligne.
+- 1   Le **destinataire de l'e-mail** est sous cette forme : **fax@ecofax.fr**.
+- 2   L'**objet de l'e-mail** est le numéro de la ligne de **faxémettrice** : dans notre exemple la ligne Ecofax utilisée est **09 72 12 34 56**, l'objet est donc **0972123456**.
+- 3   Dans le **corps de l'e-mail**, il faut entrer le **mot de passe fax** de la ligne Ecofax sous cette forme : **p:le\_mot\_de\_passe\_de\_la\_ligne**
+- 4   Il faut **attacher** en **piècejointe** de l'e-mail le **fichier** à **envoyer**.
+- 5   Dans le cadre de la campagne, les destinataires sont à joindre dans un fichier appelé **numbers.txt** contenant un numéro de destinataire par ligne.
 
 **Exemple de fichier numbers.txt**
 
