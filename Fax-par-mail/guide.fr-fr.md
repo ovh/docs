@@ -68,7 +68,9 @@ La composition de la campagne se déroule de cette manière :
 
 **Exemple de fichier numbers.txt**
 
-    0972101010 0972101927 0366720307
+    0972101010
+    0972101927 
+    0366720307
 
 Pour éditer le fichier numbers.txt, il est recommandé d'utiliser un éditeur de fichier texte basique. Sous Windows, **Notepad**, sous Mac OS, **TextEdit**et pour Linux, **VI**.
 
