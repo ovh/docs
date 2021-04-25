@@ -43,7 +43,7 @@ L'envoi d'un fax se fait aussi simplement que l'envoi d'un e-mail :
     ![fax-par-mail](images/remplie2.jpg){.thumbnail}
     
 
-Vous recevrez un mail vous confirmant la bonne prise en compte de votre demande puisun deuxième mail vous confirmant la bonne transmission du Fax.
+Vous recevrez un mail vous confirmant la bonne prise en compte de votre demande puis un deuxième mail vous confirmant la bonne transmission du Fax.
 
 Dans le cas d'une erreur (le mot de passe fax par exemple), vous recevrez un e-mail pour vous prévenir.
 
