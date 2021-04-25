@@ -34,10 +34,10 @@ Pour envoyer un fax par e-mail, il faut :
 
 L'envoi d'un fax se fait aussi simplement que l'envoi d'un e-mail :
 
-- 1.  Le **destinataire de l'e- mail** est sous cette forme : **numero\_destinataire@ecofax.fr**Par exemple, pour envoyer un fax au 09 72 10 10 10, l'adresse e-mail destinataire sera : **0972101010@ecofax.fr**
-- 2.  **L'**objet de l'e-mail** est le numéro de la ligne de **faxémettrice** : dans notre exemple, la ligne Ecofax utilisée est **09 72 12 34 56**, l'objet est donc **0972123456****
-- 3.  Dans le **corps de l'e-mail**, indiquez le **mot de passe fax** de la ligne Ecofax sous cette forme : **p:le\_mot\_de\_passe\_de\_la\_ligne**(En suivant ce lien vous pourrez récupérer votre mot de pass : [Mot de passe fax](https://docs.ovh.com/fr/fax/configuration-fax/#mot-de-passe-fax))
-- 4.  Il faut **attacher** en **piècejointe** de l'e-mail le **fichier** à **envoyer**.
+- 1  Le **destinataire de l'e- mail** est sous cette forme : **numero\_destinataire@ecofax.fr**Par exemple, pour envoyer un fax au 09 72 10 10 10, l'adresse e-mail destinataire sera : **0972101010@ecofax.fr**
+- 2  **L'**objet de l'e-mail** est le numéro de la ligne de **faxémettrice** : dans notre exemple, la ligne Ecofax utilisée est **09 72 12 34 56**, l'objet est donc **0972123456****
+- 3  Dans le **corps de l'e-mail**, indiquez le **mot de passe fax** de la ligne Ecofax sous cette forme : **p:le\_mot\_de\_passe\_de\_la\_ligne**(En suivant ce lien vous pourrez récupérer votre mot de pass : [Mot de passe fax](https://docs.ovh.com/fr/fax/configuration-fax/#mot-de-passe-fax))
+- 4  Il faut **attacher** en **piècejointe** de l'e-mail le **fichier** à **envoyer**.
 
     L'e-mail est prêt à être envoyé.
     ![fax-par-mail](images/remplie2.jpg){.thumbnail}
