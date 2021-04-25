@@ -34,7 +34,7 @@ Pour envoyer un fax par e-mail, il faut :
 
 L'envoi d'un fax se fait aussi simplement que l'envoi d'un e-mail :
 
-- 2.1  Le **destinataire de l'e- mail** est sous cette forme : **numero\_destinataire@ecofax.fr**Par exemple, pour envoyer un fax au 09 72 10 10 10, l'adresse e-mail destinataire sera : **0972101010@ecofax.fr**
+- 1  Le **destinataire de l'e- mail** est sous cette forme : **numero\_destinataire@ecofax.fr**Par exemple, pour envoyer un fax au 09 72 10 10 10, l'adresse e-mail destinataire sera : **0972101010@ecofax.fr**
 
 - 2  **L'**objet de l'e-mail** est le numéro de la ligne de **faxémettrice** : dans notre exemple, la ligne Ecofax utilisée est **09 72 12 34 56**, l'objet est donc **0972123456****
 
