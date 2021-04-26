@@ -6,7 +6,7 @@ legacy_guide_number: g1290
 section: 'Website optimisation'
 ---
 
-**Last updated 19th November 2020**
+**Last updated 26th April 2021**
 
 ## Objective
 
@@ -76,13 +76,15 @@ In terms of SEO (search engine optimisation), the speed at which your website lo
 
 It is sometimes useful to clear the CDN cache, particularly when you modify static files - for example, when launching a new version of your site. You can clear the cache for each of your Multisite entries.
 
-Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.action} to the right of the Multisite entry, then select `Purge CDN`{.action}.
+Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.action} to the right of the Multisite entry, then select `Clear CDN`{.action}.
 
 ![CDN](images/manage_sharedCDN_01.png){.thumbnail}
 
 #### Configuring Shared CDN options
 
-Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.action} to the right of the Multisite entry, then select `Edit CDN`{.action}.
+Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.action} to the right of the multisite entry, then on `Modify the CDN`{.action}. 
+
+You can also click the pen icon to the right of a Multisite entry when the CDN option is enabled. Then click `Edit your CDN`{.action}.
 
 > [!warning]
 > 
@@ -106,27 +108,81 @@ Once you have chosen your options, click `Apply configuration`{.action}, then `C
 
 ##### Creating a cache rule
 
-To add a cache rule on one of your website’s elements, go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.action} to the right of the multisite entry, then `Edit CDN`{.action}.
+To add a cache rule on one of your website’s elements, go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.action} to the right of the multisite entry, then `Modify CDN`{.action}.
 
-Under **Cache** rules, click the `Add a rule`{.action} button.
+Under **Cache rule**, click the `Add a rule`{.action} button.
 
 ![CDN](images/manage_sharedCDN_04.png){.thumbnail}
 
 - **Rule name**: Give your rule a name.
 
-- **URI**: Enter the subset of resources for your website via its path in your website’s directory. For the CDN Basic offer, you can only enter a file extension.
+- **URI**: Enter the subset of resources for your website via its path in your website’s directory. For the CDN Basic and CDN Security offers, you can only enter a file extension.
 
-- **Duration**: Specify the rule's lifetime for the selected resource.
+- **Lifespan**: specify the caching time for the chosen resource.
 
-- **Rating**: Order your rules by execution order (lowest to highest).
+- **Order**: Order your rules by execution order (lowest to highest).
 
-Once you have made your choices, click the `create rule`{.action} button.
+Once you have made your choices, click the `Create the rule`{.action} button.
 
-Rules will appear in the list. You can modify a rule by clicking on `...`{.action}, then on `Modify the rule`{.action} or delete it by clicking `Delete the rule`{.action}.
+Rules will appear in the list. You can modify a rule by clicking on `...`{.action}, then on `Modify rule`{.action} or delete it by clicking `Delete the rule`{.action}.
 
 ![CDN](images/manage_sharedCDN_05.png){.thumbnail}
 
 Once you have configured your rules and chosen your options, click `Apply configuration`{.action}, then click `Confirm configuration`{.action} in the next window.
+
+#### Configuring CDN Security options
+
+> [!primary]
+> The options presented below require a subscription to [CDN Security](https://www.ovh.com.au/web-hosting/cdn.xml) or [CDN Advanced](https://www.ovh.com.au/web-hosting/cdn.xml).
+
+Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.action} to the right of the multisite entry, then `Modify the CDN`{.action}. 
+
+You can also click the pen icon to the right of a Multisite entry when the CDN option is enabled. Then click `Edit your CDN`{.action}.
+
+- **Cross-Origin Resource Sharing (CORS)**: In the list, enter the external domain names that will be authorised to access your website’s resources for the purpose of sharing them. 
+
+Once you have enabled this feature, click `Edit list of external resources`{.action}  to add the domain names that are authorised to share your resources.
+
+![CDN](images/manage_CDNsecurity_01.png){.thumbnail}
+
+Once you have completed your list, click `Confirm`{.action}.
+
+> [!primary]
+> When you enable the CORS option without specifying any domain names in the list, all domain names will be allowed to use your website's resources.
+
+- **HTTPS-Redirect**: Protect all traffic to your website by redirecting it to the HTTPS protocol temporarily or permanently.
+
+Once you have enabled the feature, click the drop-down menu to choose between `Permanent redirection (301)` or `Temporary redirection (302)`.
+
+![CDN](images/manage_CDNsecurity_02.png){.thumbnail}
+
+- **HTTP Strict Transport Security (HSTS)**: Force HTTPS access to your website. This way, your hosting is secure against downgrade (or rollback) attacks.
+
+Once the feature is enabled, determine the lifetime for which the browser will apply HSTS on your website. 
+
+![CDN](images/manage_CDNsecurity_03.png){.thumbnail}
+
+> [!primary]
+> 
+> When you enable the HSTS feature on your website, it will enforce the use of the HTTPS protocol on your browser until the end of the period known as `maximum age`, even after disabling the feature in your Control Panel. However, when the cache is cleared on the browser that has already visited your site, the browser will apply the new HSTS status.
+
+- **Mixed content**: Enforce the integrity of all your web pages's content. Pages will be loaded securely, contributing to an optimal user experience. All of your website’s internal and external resources must be available in HTTPS, to avoid a browser error.
+
+- **Application** firewall: The **W**eb **A**pplication **F**irewall (WAF) protects your website from fraudulent attacks such as code injections, illegitimate requests or data theft. It covers the main known vulnerabilities on the web by filtering requests and packets transmitted (the list of vulnerabilities is managed by OVHcloud and regularly updated).  
+
+> [!warning]
+>  
+> For the installation of an [OVHcloud 1-click module](../web_hosting_web_hosting_modules/), the WAF must be disabled in order to prevent the installation of the module from being blocked.
+
+> [!primary]
+>  
+> WAF is fully managed by OVHcloud, and the list of vulnerabilities is regularly updated.
+
+### View CDN statistics
+
+In the `Multisites`{.action} tab of your hosting, under the table, you can view the statistics of your CDN, indicating the number of requests per minute measured on it.
+
+![CDN](images/manage_CDNstat_01.png){.thumbnail}
 
 ### Managing your CDN (legacy version)
 
