@@ -65,7 +65,7 @@ Haken Sie "CDN aktivieren" an, klicken Sie auf `Weiter`{.action} und dann auf `B
 >
 > Im [Verzeichnis von IP-Adressen für die Webhosting Cluster](../verzeichnis-der-ip-adressen-web-hosting-cluster) finden Sie die spezifische IP-Adresse des CDN Ihres Clusters.
  
-**Warum kann ich mit der CDN-Option nicht von der geolokalisierten IP profitieren?**    
+**Warum kann ich mit der CDN-Option nicht von geolokalisierten IPs profitieren?**    
 
 Das CDN basiert auf dem Prinzip der Anycast-IP. Statische Dateien werden effizienter bereitgestellt, indem nicht derselbe Server je nach Standort angefragt wird. Eine IP-Geolokalisierung ist daher nicht erforderlich.  
 Bezüglich SEO (Suchmaschinenoptimierung) ist die Geschwindigkeit der Anzeige Ihrer Webseite wichtiger als die Geolokalisierung der IP-Adressen Ihres Hostings.
@@ -86,8 +86,7 @@ Gehen Sie zum Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.ac
 
 #### Shared CDN-Optionen konfigurieren
 
-Gehen Sie auf die Registerkarte `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und dann auf `CDN ändern`{.action}. 
-Klicken Sie auch rechts neben einem Multisite-Eintrag auf das Pen-Symbol, wenn das CDN Opton aktiviert ist. Klicken Sie anschließend auf `Ihr CDN bearbeiten`{.action}.
+Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und dann auf `CDN bearbeiten`{.action}. 
 
 > [!warning]
 > 
@@ -95,7 +94,7 @@ Klicken Sie auch rechts neben einem Multisite-Eintrag auf das Pen-Symbol, wenn d
 
 ![CDN](images/manage_sharedCDN_02.png){.thumbnail}
 
-- **Immer online**: Erlaubt die Online-Speicherung der CDN Daten im Fall eines Serverausfalls.
+- **Always online**: Erlaubt die Online-Speicherung der CDN Daten im Fall eines Serverausfalls.
 
 - **HTTP/2**: Protokoll, das die Sicherheit und Latenz Ihrer Webseite verbessert.
 
@@ -117,17 +116,17 @@ Klicken Sie unter **Cache-Regeln** auf den Button `Regel hinzufügen`{.action}.
 
 ![CDN](images/manage_sharedCDN_04.png){.thumbnail}
 
-- **Regelname**: Weisen Sie Ihrer Regel einen Namen zu.
+- **Name der Regel**: Weisen Sie Ihrer Regel einen Namen zu.
 
-- **URI**: Geben Sie die entsprechenden Ressourcen Ihrer Webseite über den Verzeichnispfad an. Für die Angebote CDN-Basic und CDN-Security können nur Dateierweiterungen angegeben werden.
+- **URI**: Geben Sie die entsprechenden Ressourcen Ihrer Webseite über den Verzeichnispfad an. Für die Angebote CDN Basic und CDN Security können nur Dateierweiterungen angegeben werden.
 
-- **Laufzeit**: Geben Sie die Dauer des Caching der ausgewählten Ressource an.
+- **Lebensdauer**: Geben Sie die Dauer des Caching der ausgewählten Ressource an.
 
-- **Einstufung**: Sortieren Sie Ihre Regeln nach Ausführungsordnung (von der niedrigsten zur höchsten).
+- **Rangfolge**: Sortieren Sie Ihre Regeln nach Ausführungsordnung.
 
 Wenn Sie Ihre Auswahl vorgenommen haben, klicken Sie auf den Button `Regel erstellen`{.action}.
 
-Die Regeln erscheinen in der Liste. Sie können sie ändern, indem Sie auf `...`{.action} rechts neben der Regel klicken und dann auf `Regel ändern`{.action} oder eine Regel löschen, indem Sie auf `Regel löschen`{.action} auswählen.
+Die Regeln erscheinen in der Liste. Sie können sie ändern, indem Sie auf `...`{.action} rechts neben der Regel klicken und dann auf `Regel ändern`{.action} oder eine Regel löschen, indem Sie `Regel löschen`{.action} auswählen.
 
 ![CDN](images/manage_sharedCDN_05.png){.thumbnail}
 
@@ -136,32 +135,30 @@ Klicken Sie nach der Konfiguration Ihrer Regeln und Optionen auf `Konfiguration 
 #### CDN Security Optionen konfigurieren
 
 > [!primary]
->  Für die unten aufgeführten Optionen ist das [CDN security](https://www.ovh.de/hosting/cdn.xml) oder [CDN Advanced erforderlich](https://www.ovh.de/hosting/cdn.xml)
+>  Für die unten aufgeführten Optionen ist [CDN Security](https://www.ovh.de/hosting/cdn.xml) oder [CDN Advanced](https://www.ovh.de/hosting/cdn.xml) erforderlich.
 
-Gehen Sie auf die Registerkarte `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und `dann CDN ändern`{.action}. 
+Gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und dann `CDN bearbeiten`{.action}. 
 
-Klicken Sie auch rechts neben einem Multisite-Eintrag auf das Pen-Symbol, wenn das CDN Opton aktiviert ist. Klicken Sie anschließend auf `Ihr CDN bearbeiten`{.action}.
+- **Cross-Origin Resource Sharing (CORS)**: Geben Sie in der Liste die externen Domainnamen an, die auf die Ressourcen Ihrer Website zugreifen dürfen.
 
-- **Cross-Origin Resource Sharing (CORS)**: Geben Sie in der Liste die externen Domainnamen an, die zum Teilen auf die Ressourcen Ihrer Website zugreifen dürfen. 
-
-Wenn die Funktion aktiviert ist, klicken Sie auf `Bearbeiten der Liste der externen Ressourcen`{.action}, um die Domainnamen hinzuzufügen, die Ihre Ressourcen teilen dürfen.
+Wenn die Funktion aktiviert ist, klicken Sie auf `Liste der externen Ressourcen bearbeiten`{.action}, um die Domainnamen hinzuzufügen, die Ihre Ressourcen teilen dürfen.
 
 ![CDN](images/manage_CDNsecurity_01.png){.thumbnail}
 
-Nachdem Sie Ihre Liste ausgefüllt haben, klicken Sie auf `Bestätigen`{.action}.
+Nachdem Sie Ihre Liste fertiggestellt haben, klicken Sie auf `Bestätigen`{.action}.
 
 > [!primary]
 > Wenn Sie die CORS Option aktivieren, ohne in der Liste Domains anzugeben, bedeutet dies, dass alle Domainnamen die Ressourcen Ihrer Website verwenden dürfen.
 
-- **HTTPS-redirect**: Schützen Sie den gesamten Traffic Ihrer Website, indem Sie ihn vorübergehend oder dauerhaft auf das HTTPS-Protokoll umleiten.
+- **HTTPS-Redirect**: Schützen Sie den gesamten Traffic Ihrer Website, indem Sie ihn vorübergehend oder dauerhaft auf das HTTPS-Protokoll umleiten.
 
-Wenn die Funktion aktiviert ist, klicken Sie auf das Dropdown-Menü, um zwischen `Permanente Weiterleitung (301)` oder `Temporäre Weiterleitung (302)` zu wählen.
+Wenn die Funktion aktiviert ist, klicken Sie auf das Dropdown-Menü, um zwischen `Permanente Weiterleitung (301)` und `Temporäre Weiterleitung (302)` zu wählen.
 
 ![CDN](images/manage_CDNsecurity_02.png){.thumbnail}
 
-- **HTTP Streng Transport Security (HSTS)**: Machen Sie Ihre Website nur über HTTPS zugänglich. Ihre Weblösung ist so gegen Downgrade (oder Repli-Angriffe) geschützt.
+- **HTTP Streng Transport Security (HSTS)**: Machen Sie Ihre Website nur über HTTPS zugänglich. Auf diese Weise ist Ihr Hosting sicher vor Downgrade- (oder Rollback-) Angriffen.
 
-Wenn die Funktion aktiviert ist, legen Sie die Lebensdauer fest, während der der Browser die HSTS-Funktion auf Ihrer Website anwenden wird. 
+Wenn die Funktion aktiviert ist, legen Sie den Zeitraum fest, in dem der Browser die HSTS-Funktion auf Ihrer Website anwenden wird. 
 
 ![CDN](images/manage_CDNsecurity_03.png){.thumbnail}
 
@@ -169,20 +166,19 @@ Wenn die Funktion aktiviert ist, legen Sie die Lebensdauer fest, während der de
 > 
 > Wenn Sie die HSTS-Funktion auf Ihrer Website aktivieren, wird das HTTPS-Protokoll in Ihrem Browser für den Zeitraum bis zum Ende der so genannten "Höchstalter"-Periode aktiviert, auch wenn die Funktion in Ihrem Kundencenter deaktiviert wurde. Wenn der Cache jedoch im Browser geleert wird, der Ihre Website bereits besucht hat, wendet dieser den neuen Zustand der HSTS-Funktion an.
 
-- **Mixed content**: Durchbrechen Sie den gesamten Inhalt Ihrer Webseiten. Sie werden sicher geladen und tragen so zu einer optimalen Nutzererfahrung bei. Alle internen und externen Ressourcen Ihrer Website müssen über HTTPS verfügbar sein, um einen Fehler im Browser zu vermeiden.
+- **Mixed content**: Stellen Sie die Integrität aller Inhalte Ihrer Webseiten sicher. Die Seiten werden sicher geladen und tragen zu einem optimalen Benutzererlebnis bei. Alle internen und externen Ressourcen Ihrer Website müssen dabei in HTTPS verfügbar sein, um einen Browserfehler zu vermeiden.
 
-- **Application Firewall**: Die **W**eb **A**pplication **F**irewall (WAF) schützt Ihre Seite vor betrügerischen Angriffen wie Code-Injection, unzulässige Anfragen oder Datendiebstahl. Es deckt die wichtigsten bekannten Lücken im Web ab, indem die übertragenen Anfragen und Pakete gefiltert werden (die Liste der Lücken wird von OVHcloud verwaltet und regelmäßig aktualisiert).  
+- **Application Firewall**: Die **W**eb **A**pplication **F**irewall (WAF) schützt Ihre Seite vor betrügerischen Angriffen wie Code-Injection, unzulässige Anfragen oder Datendiebstahl. Es deckt die wichtigsten bekannten Sicherheitsgefahren im Web ab, indem die übertragenen Anfragen und Pakete gefiltert werden (die Liste der Schwachstellen wird von OVHcloud verwaltet und regelmäßig aktualisiert).  
 
 > [!primary]
 >  
-> Das WAF wird vollständig von OVHcloud verwaltet, die Liste der Sicherheitslücken wird regelmäßig aktualisiert.
+> Das WAF wird vollständig von OVHcloud verwaltet, die Liste der Schwachstellen wird regelmäßig aktualisiert.
 
 ### Die CDN Statistiken anzeigen
 
-Im Tab `Multisites`{.action} Ihres Webhostings können Sie unter der Tabelle die Statistiken Ihres CDN einsehen, die die Anzahl der gemessenen Anfragen pro Minute anzeigen.
+Im Tab `Multisite`{.action} Ihres Webhostings können Sie unter der Tabelle die Statistiken Ihres CDN einsehen, die die Anzahl der registrierten Anfragen pro Minute anzeigen.
 
 ![CDN](images/manage_CDNstat_01.png){.thumbnail}
-
 
 
 ### CDN verwalten (Legacy)
