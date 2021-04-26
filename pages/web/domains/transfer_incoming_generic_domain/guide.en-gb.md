@@ -17,8 +17,8 @@ By transferring your domain name, you will change your domain name registrar. Yo
 ## Requirements
 
 - a domain name registered with another registrar
-- a domain name more than 60 days old
-- a domain name that has not been transferred or changed owners within the last 60 days
+- the domain name is more than 60 days old
+- the domain name has not been transferred or changed owners within the last 60 days
 - the domain name status is "OK" or "Transferable"
 - the domain name is not expired and has an expiry date that allows to finish the transfer process in time - recommended are more than 60 days
 - the domain name is unlocked, with a transfer code received or the ability to receive one
