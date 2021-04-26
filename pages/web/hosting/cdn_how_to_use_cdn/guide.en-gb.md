@@ -6,7 +6,7 @@ legacy_guide_number: g1290
 section: 'Website optimisation'
 ---
 
-**Last updated 19th November 2020**
+**Last updated 22th April 2021**
 
 ## Objective
 
@@ -82,7 +82,9 @@ Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.ac
 
 #### Configuring Shared CDN options
 
-Go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.action} to the right of the Multisite entry, then select `Edit CDN`{.action}.
+Go to the `Multisite`{.action} tab for your web hosting plan, click on `...`{.action} to the right of the multisite entry, then on `Modify the CDN`{.action}. 
+
+You can also click the pen icon to the right of a Multisite entry when the CDN option is enabled. Then click `Edit your CDN`{.action}.
 
 > [!warning]
 > 
@@ -104,7 +106,7 @@ Once you have chosen your options, click `Apply configuration`{.action}, then `C
 
 ![CDN](images/manage_sharedCDN_03.png){.thumbnail}
 
-##### Creating a cache rule
+##### **Creating a cache rule**
 
 To add a cache rule on one of your website’s elements, go to the `Multisite`{.action} tab for your Web Hosting plan, click on `...`{.action} to the right of the multisite entry, then `Edit CDN`{.action}.
 
@@ -114,9 +116,9 @@ Under **Cache** rules, click the `Add a rule`{.action} button.
 
 - **Rule name**: Give your rule a name.
 
-- **URI**: Enter the subset of resources for your website via its path in your website’s directory. For the CDN Basic offer, you can only enter a file extension.
+- **URI**: Enter the subset of resources for your website via its path in your website’s directory. For the CDN Basic and CDN Security offers, you can only enter a file extension.
 
-- **Duration**: Specify the rule's lifetime for the selected resource.
+- **Duration**: specify the caching time for the chosen resource.
 
 - **Rating**: Order your rules by execution order (lowest to highest).
 
@@ -127,6 +129,56 @@ Rules will appear in the list. You can modify a rule by clicking on `...`{.actio
 ![CDN](images/manage_sharedCDN_05.png){.thumbnail}
 
 Once you have configured your rules and chosen your options, click `Apply configuration`{.action}, then click `Confirm configuration`{.action} in the next window.
+
+#### Configure CDN Security options
+
+> [!primary]
+>  the options presented below require subscription to [CDN security](https://www.ovh.com/fr/hebergement-web/cdn.xml) or [CDN Advanced](https://www.ovh.com/fr/hebergement-web/cdn.xml)
+
+Go to the `Multisite`{.action} tab for your web hosting plan, click on `...`{.action} to the right of the multisite entry, then `Modify the CDN`{.action}. 
+
+You can also click the pen icon to the right of a Multisite entry when the CDN option is enabled. Then click `Edit your CDN`{.action}.
+
+- **Cross-Origin Resource Sharing (CORS)**: In the list, enter the external domain names that will be authorised to access your website’s resources for the purpose of sharing them. 
+
+Once you have enabled this feature, click `Edit List of External`{.action} Resources to add the domain names that are authorised to share your resources.
+
+![CDN](images/manage_CDNsecurity_01.png){.thumbnail}
+
+Once you have completed your list, click `Confirm`{.action}.
+
+> [!primary]
+> When you enable the CORS option without specifying any domain names in the list, this means that all domain names are allowed to use your website's resources.
+
+- **HTTPS-redirect**: Protect all traffic to your website by redirecting it to HTTPS protocol temporarily or permanently.
+
+Once you have enabled the feature, click the drop-down menu to choose between `Permanent redirection (301)` or Temporary `redirection (302)`.
+
+![CDN](images/manage_CDNsecurity_02.png){.thumbnail}
+
+- **HTTP Strict Transport Security (HSTS)**: Only require access to your website in HTTPS This way, your web solution is secure against downgrade (or fallback) attacks.
+
+Once the feature is enabled, determine the lifetime for which the browser will apply HSTS on your website. 
+
+![CDN](images/manage_CDNsecurity_03.png){.thumbnail}
+
+> [!primary]
+> 
+> When you enable the HSTS feature on your website, it will force HTTPS protocol on your browser until the end of the period known as \`maximum age\`, even after disabling the feature in your Control Panel. However, when the cache is cleared on the browser that has already visited your site, the browser will apply the new HSTS status.
+
+- **Mixed content**: Force all content from your web pages. They will be loaded securely, contributing to an optimal user experience. All of your website’s internal and external resources must be available in HTTPS, to avoid a browser error.
+
+- **Application** firewall: The **W**eb **A**pplication **F**irewall (WAF) protects your website from fraudulent attacks such as code injections, illegitimate requests or data theft. It covers the main known vulnerabilities on the web by filtering requests and packets transmitted (the list of vulnerabilities is managed by OVHcloud and regularly updated).  
+
+> [!primary]
+>  
+> WAF is fully managed by OVHcloud, and the list of vulnerabilities is regularly updated.
+
+### View CDN statistics
+
+In the `Multisites`{.action} tab of your hosting, under the table, you can view the statistics of your CDN, indicating the number of requests per minute measured on it.
+
+![CDN](images/manage_CDNstat_01.png){.thumbnail}
 
 ### Managing your CDN (legacy version)
 
