@@ -170,6 +170,10 @@ Once the feature is enabled, determine the lifetime for which the browser will a
 
 - **Application** firewall: The **W**eb **A**pplication **F**irewall (WAF) protects your website from fraudulent attacks such as code injections, illegitimate requests or data theft. It covers the main known vulnerabilities on the web by filtering requests and packets transmitted (the list of vulnerabilities is managed by OVHcloud and regularly updated).  
 
+> [!warning]
+>  
+> For the installation of an [OVHcloud 1-click module](../web_hosting_web_hosting_modules/), the WAF must be disabled in order to prevent the installation of the module from being blocked.
+
 > [!primary]
 >  
 > WAF is fully managed by OVHcloud, and the list of vulnerabilities is regularly updated.

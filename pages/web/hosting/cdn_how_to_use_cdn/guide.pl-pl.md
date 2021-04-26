@@ -172,6 +172,10 @@ Po aktywacji funkcji określ okres, w którym przeglądarka zastosuje funkcję H
 
 - **Firewall aplikacyjny**: **W**eb **A**pplication **F**irewall (WAF) chroni Twoją stronę WWW przed oszukańczymi atakami, takimi jak wprowadzanie kodu, nieuprawnione zapytania lub kradzież danych. Zawiera on najważniejsze znane luki w sieci, filtrując wysyłane zapytania i pakiety (lista luk jest zarządzana przez OVHcloud i regularnie aktualizowana).  
 
+> [!warning]
+>
+> W celu zainstalowania [modułu za 1 kliknięciem OVHcloud](../hosting_www_przewodniki_dotyczace_modulow_na_hostingu_www/) należy wyłączyć WAF, aby instalacja modułu nie została zablokowana.
+
 > [!primary]
 >  
 > WAF jest w pełni administrowany przez OVHcloud. Lista luk jest regularnie aktualizowana.

@@ -174,6 +174,10 @@ Uma vez a função ativada, determine o período de vida útil durante o qual o 
 
 - **Firewall da aplicação**: A **W**eb **A**plication **F**irewall (WAF) protege o seu site de ataques fraudulentos, tais como injeção de código, pedidos ilegítimos ou roubo de dados. Cobre falhas conhecidas na web ao filtrar os pedidos e pacotes transmitidos (a lista de falhas é administrada pela OVHcloud e é regularmente atualizada).  
 
+> [!warning]
+>
+> Para a instalação de um [módulo 1 clique da OVHcloud](../partilhado_guias_dos_modulos_dos_alojamentos_partilhados/), o WAF deve ser desativado para evitar que a instalação do módulo seja bloqueada.
+
 > [!primary]
 >  
 > O WAF é inteiramente administrado pela OVHcloud, a lista das falhas é regularmente atualizada.

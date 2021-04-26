@@ -173,6 +173,10 @@ Wenn die Funktion aktiviert ist, legen Sie die Lebensdauer fest, während der de
 
 - **Application Firewall**: Die **W**eb **A**pplication **F**irewall (WAF) schützt Ihre Seite vor betrügerischen Angriffen wie Code-Injection, unzulässige Anfragen oder Datendiebstahl. Es deckt die wichtigsten bekannten Lücken im Web ab, indem die übertragenen Anfragen und Pakete gefiltert werden (die Liste der Lücken wird von OVHcloud verwaltet und regelmäßig aktualisiert).  
 
+> [!warning]
+> 
+> Für die Installation eines [1-Klick-Moduls von OVHcloud](../webhosting_installation_von_webhosting-modulen/) muss das WAF deaktiviert werden, um eine Blockierung der Installation des Moduls zu vermeiden.
+
 > [!primary]
 >  
 > Das WAF wird vollständig von OVHcloud verwaltet, die Liste der Sicherheitslücken wird regelmäßig aktualisiert.

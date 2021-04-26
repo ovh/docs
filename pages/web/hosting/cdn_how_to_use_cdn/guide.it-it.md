@@ -174,6 +174,10 @@ Una volta attivata la funzione, determina la durata di vita durante la quale il 
 
 - **Firewall applicativo**: Il **W**eb **A**pplction **F**irewall (WAF) protegge il tuo sito da attacchi fraudolenti come l'inoltro del codice, le richieste illegittime o il furto di dati. e copre le principali falle note del web filtrando le richieste e i pacchetti trasmessi (la lista delle falle è gestita da OVHcloud e aggiornata regolarmente).  
 
+> [!warning]
+>
+> Per l'installazione di un [modulo in 1 click OVHcloud](../hosting_condiviso_guida_ai_moduli_degli_hosting_condivisi/), il WAF deve essere disattivato per evitare che l'installazione del modulo sia bloccata.
+
 > [!primary]
 >  
 > Il WAF è gestito totalmente da OVHcloud, la lista delle falle viene aggiornata regolarmente.

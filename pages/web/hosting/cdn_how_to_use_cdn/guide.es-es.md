@@ -174,6 +174,10 @@ Una vez activada la función, deberá determinar la duración en la que el naveg
 
 - **Firewall de aplicación**: El **W**eb **A**pplation **F**irewall (WAF) protege su sitio web de ataques fraudulentos, como inyección de código, peticiones ilegítimas o robo de datos. Este solución cubre los principales fallos conocidos de la web filtrando las peticiones y los paquetes transmitidos (la lista de fallos es administrada por OVHcloud y se actualiza regularmente).  
 
+> [!warning]
+> 
+> Para a instalação de um [módulo 1 clique da OVHcloud](../modulos-en-un-clic/), o WAF deve ser desativado para evitar que a instalação do módulo seja bloqueada.
+
 > [!primary]
 >  
 > El WAF está íntegramente administrado por OVHcloud. La lista de fallos se actualiza regularmente.

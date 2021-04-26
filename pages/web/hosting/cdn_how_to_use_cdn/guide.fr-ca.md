@@ -170,6 +170,10 @@ Une fois la fonction activée, déterminez la durée de vie pendant laquelle le 
 
 - **Pare-feu applicatif** : Le **W**eb **A**pplcation **F**irewall (WAF) protège votre site des attaques frauduleuses telles que l’injection de code, les requêtes illégitimes ou le vol de données. Il vous couvre des principales failles connues du web en filtrant les requêtes et paquets transmis (la liste des failles est administrée par OVHcloud et régulièrement mise à jour).  
 
+> [!warning]
+>
+> Pour l'installation d'un [module en 1 clic OVHcloud](../modules-en-1-clic/), le WAF doit être désactivé afin d’éviter que l'installation du module ne soit bloquée.
+
 > [!primary]
 >  
 > Le WAF est entièrement administré par OVHcloud, la liste des failles est régulièrement mise à jour.
