@@ -156,7 +156,7 @@ Wenn die Funktion aktiviert ist, klicken Sie auf das Dropdown-Menü, um zwischen
 
 ![CDN](images/manage_CDNsecurity_02.png){.thumbnail}
 
-- **HTTP Streng Transport Security (HSTS)**: Machen Sie Ihre Website nur über HTTPS zugänglich. Auf diese Weise ist Ihr Hosting sicher vor Downgrade- (oder Rollback-) Angriffen.
+- **HTTP Strict Transport Security (HSTS)**: Machen Sie Ihre Website nur über HTTPS zugänglich. Auf diese Weise ist Ihr Hosting sicher vor Downgrade- (oder Rollback-) Angriffen.
 
 Wenn die Funktion aktiviert ist, legen Sie den Zeitraum fest, in dem der Browser die HSTS-Funktion auf Ihrer Website anwenden wird. 
 
