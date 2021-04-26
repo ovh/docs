@@ -1,6 +1,6 @@
 ---
 title: 'Activating the application firewall'
-excerpt: 'Find out how to activate the application firewall for a Web Hosting'
+excerpt: 'Find out how to activate the application firewall on a Web Hosting plan'
 id: '1937'
 slug: web_hosting_activating_an_application_firewall
 section: 'Web Hosting configuration'
@@ -12,89 +12,70 @@ legacy_guide_number: g1937
 
  ## Objective
 
-The application firewall for a Web Hosting is a complementary Apache web server module (*ModSecurity*) which filters all incoming requests to your hosting. It increases security by intercepting and checking requests before they are processed by any scripts.
+*ModSecurity* is a complementary Apache module that filters all incoming requests on your web server. It increases security against known vulnerabilities by intercepting and filtering requests before they are processed by any scripts. 
 
-Enable ModSecurity in one click from your control panel to get enhanced protection.
-With the Core Rule Set (CRS), your ModSecurity is preconfigured in an optimal way straight away, protecting you against the most common attacks: 
-- Trojan
+The preconfigured Core Rule Set (CRS) of our *ModSecurity* protects your websites against the most common attacks, for example:
+
+- Trojans
 - Email injections
 - Broken PDF files
 - File injections on your hosting system
 - SQL or XSS type injections
-- etc.
 
-**This guide explains how to configure the firewall option for your Web Hosting plan in your OVHcloud Control Panel.**
+
+**This guide explains how to enable your application firewall for enhanced protection in your OVHcloud Control Panel.**
 
 ## Requirements
 
 - an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}
-- at least one [domain name](https://www.ovh.co.uk/domains/){.external}
+- at least one [domain name](https://www.ovh.co.uk/domains/){.external} attached to the hosting
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 
 ## Instructions
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to `Web Cloud`{.action}. 
-Click `Hosting plans`{.action} in the services bar on the left-hand side and select the plan concerned.
+Click on `Hosting Plans`{.action} in the services bar on the left-hand side and select the plan concerned.
 
 
 ### Activating the application firewall in PHP configuration
 
-To do this, click on the `General information`{.action} tab. 
-The current `Global PHP version`{.action} is displayed in the `Configuration`{.action} table. 
-Click on the `...`{.action} icon and select the available option `Change configuration`{.action}, 
-select the item `Change the current configuration`{.action} and press the `Next`{.action} button.
+Click on the `General information`{.action} tab. The current `Global PHP version` is displayed in the **Configuration** box.  Click on the `...`{.action} icon and select `Modify configuration`{.action}. In the popup window, select the item `Modify the current configuration`{.action} and click on the `Next`{.action} button.
 
 
 ![managephpconfig](images/manage-php-config.png){.thumbnail}
 
-
-A new window will appear in which you should make sure that in the `Advanced settings`{.action} section, 
-the `Application firewall`{.action} entry is set to `activated`{.action} mode. 
-To confirm the configuration, press the `Confirm`{.action} button.
+In the new window, make sure that **Application firewall** is set to `activated`{.action}. To confirm the configuration, click on the `Confirm`{.action} button.
 
 
-### Activating the application firewall for individual domains in MultiSite.
+### Activating the application firewall for individual domains in Multisite
 
-
-To do this, click on the `Multisite`{.action} tab. 
-Click the `...` {.action} icon, then select the `Modify domain`{.action} option. 
+Switch to the `Multisite`{.action} tab of your hosting plan. Click on the `...` {.action} button in the row of the respecive domain and select the `Modify domain`{.action} option. 
 
 
 ![managemultisite](images/firewall-modify-multisite.png){.thumbnail}
 
-In the window that will be displayed, check the `Enable the firewall`{.action} option. 
-You can also check automatic sub-domain configuration with www prefix using the check-box.
-To confirm changes to the configuration press the `Next`{.action} button.
-A summary window will be displayed, verify that the entered configuration is correct.
+In the configuration window, check the `Enable the firewall`{.action} box. You can also include the www subdomain in this configuration by checking the box at the top.
+Click on `Next`{.action} and then on `Confirm`{.action} to modify the Multisite settings.
 
 ![modifydomain](images/firewall-modify-domain.png){.thumbnail}
 
 
-> [! primary]
->
-> If necessary, go back to the previous step with the `Back`{.action} button and correct the settings.
-> 
-
-Configuration can be confirmed by pressing the `Confirm`{.action} button.
-
-
-### Status of the jobs starting the Firewall service - Ongoing jobs section.
+### Checking the status of the activation task
 
 ![manageongoing](images/firewal-ongoing-jobs.png){.thumbnail}
 
 
-The submit configuration task will appear in the `Ongoing jobs`{.action} tab (initial status is `Planned`{.action}) when it disappears from the list, it means the configuration has been deployed.
+Tasks to update your Multisite configuration will be listed in the `Ongoing jobs`{.action} tab (initial status is `Planned`). The firewall will be active once its update task no longer appears in the list.
 
 
-### Verifying which domains have Firewall enabled.
+### Verifying which domains have the firewall enabled
 
+The `Multisite`{.action} tab of your hosting plan provides information on which domains have the firewall option turned on.
 
 ![manageenabled](images/firewall-enabled-multisite.png){.thumbnail}
 
-
-Information on which domains have the Firewall option turned on can be checked in the MultiSite section in the `Firewall` {.action} column.
-
+The table displayed contains all of the domain names that have been added to your Web Hosting plan. In the "Firewall" column, you will see the activation status for each domain. 
 
 ## Go further
 
