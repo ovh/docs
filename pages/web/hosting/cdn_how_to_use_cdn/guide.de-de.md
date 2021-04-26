@@ -10,7 +10,7 @@ order: 1
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 19.11.2020**
+**Letzte Aktualisierung am 22.04.2021**
 
 ## Ziel
 
@@ -86,7 +86,8 @@ Gehen Sie zum Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.ac
 
 #### Shared CDN-Optionen konfigurieren
 
-Gehen Sie zum Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und dann auf `CDN bearbeiten`{.action}.
+Gehen Sie auf die Registerkarte `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und dann auf `CDN ändern`{.action}. 
+Klicken Sie auch rechts neben einem Multisite-Eintrag auf das Pen-Symbol, wenn das CDN Opton aktiviert ist. Klicken Sie anschließend auf `Ihr CDN bearbeiten`{.action}.
 
 > [!warning]
 > 
@@ -108,7 +109,7 @@ Wenn Sie Ihre Optionen ausgewählt haben, klicken Sie auf `Konfiguration anwende
 
 ![CDN](images/manage_sharedCDN_03.png){.thumbnail}
 
-##### Eine Cache-Regel erstellen
+##### **Eine Cache-Regel erstellen**
 
 Um eine Cache-Regel zu einem der Elemente Ihrer Seite hinzuzufügen, gehen Sie auf den Tab `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und anschließend auf `CDN konfigurieren`{.action}.
 
@@ -118,9 +119,9 @@ Klicken Sie unter **Cache-Regeln** auf den Button `Regel hinzufügen`{.action}.
 
 - **Regelname**: Weisen Sie Ihrer Regel einen Namen zu.
 
-- **URI**: Geben Sie die entsprechenden Ressourcen Ihrer Webseite über den Verzeichnispfad an. Für das CDN Angebot "Basic" können Sie nur eine Dateierweiterung angeben.
+- **URI**: Geben Sie die entsprechenden Ressourcen Ihrer Webseite über den Verzeichnispfad an. Für die Angebote CDN-Basic und CDN-Security können nur Dateierweiterungen angegeben werden.
 
-- **Laufzeit**: Geben Sie die Lebensdauer der Regel für die gewählte Ressource an.
+- **Laufzeit**: Geben Sie die Dauer des Caching der ausgewählten Ressource an.
 
 - **Einstufung**: Sortieren Sie Ihre Regeln nach Ausführungsordnung (von der niedrigsten zur höchsten).
 
@@ -131,6 +132,58 @@ Die Regeln erscheinen in der Liste. Sie können sie ändern, indem Sie auf `...`
 ![CDN](images/manage_sharedCDN_05.png){.thumbnail}
 
 Klicken Sie nach der Konfiguration Ihrer Regeln und Optionen auf `Konfiguration anwenden`{.action} und dann auf `Bestätigen`{.action}.
+
+#### CDN Security Optionen konfigurieren
+
+> [!primary]
+>  Für die unten aufgeführten Optionen ist das [CDN security](https://www.ovh.de/hosting/cdn.xml) oder [CDN Advanced erforderlich](https://www.ovh.de/hosting/cdn.xml)
+
+Gehen Sie auf die Registerkarte `Multisite`{.action} Ihres Hostings, klicken Sie auf `...`{.action} rechts neben dem Multisite-Eintrag und `dann CDN ändern`{.action}. 
+
+Klicken Sie auch rechts neben einem Multisite-Eintrag auf das Pen-Symbol, wenn das CDN Opton aktiviert ist. Klicken Sie anschließend auf `Ihr CDN bearbeiten`{.action}.
+
+- **Cross-Origin Resource Sharing (CORS)**: Geben Sie in der Liste die externen Domainnamen an, die zum Teilen auf die Ressourcen Ihrer Website zugreifen dürfen. 
+
+Wenn die Funktion aktiviert ist, klicken Sie auf `Bearbeiten der Liste der externen Ressourcen`{.action}, um die Domainnamen hinzuzufügen, die Ihre Ressourcen teilen dürfen.
+
+![CDN](images/manage_CDNsecurity_01.png){.thumbnail}
+
+Nachdem Sie Ihre Liste ausgefüllt haben, klicken Sie auf `Bestätigen`{.action}.
+
+> [!primary]
+> Wenn Sie die CORS Option aktivieren, ohne in der Liste Domains anzugeben, bedeutet dies, dass alle Domainnamen die Ressourcen Ihrer Website verwenden dürfen.
+
+- **HTTPS-redirect**: Schützen Sie den gesamten Traffic Ihrer Website, indem Sie ihn vorübergehend oder dauerhaft auf das HTTPS-Protokoll umleiten.
+
+Wenn die Funktion aktiviert ist, klicken Sie auf das Dropdown-Menü, um zwischen `Permanente Weiterleitung (301)` oder `Temporäre Weiterleitung (302)` zu wählen.
+
+![CDN](images/manage_CDNsecurity_02.png){.thumbnail}
+
+- **HTTP Streng Transport Security (HSTS)**: Machen Sie Ihre Website nur über HTTPS zugänglich. Ihre Weblösung ist so gegen Downgrade (oder Repli-Angriffe) geschützt.
+
+Wenn die Funktion aktiviert ist, legen Sie die Lebensdauer fest, während der der Browser die HSTS-Funktion auf Ihrer Website anwenden wird. 
+
+![CDN](images/manage_CDNsecurity_03.png){.thumbnail}
+
+> [!primary]
+> 
+> Wenn Sie die HSTS-Funktion auf Ihrer Website aktivieren, wird das HTTPS-Protokoll in Ihrem Browser für den Zeitraum bis zum Ende der so genannten "Höchstalter"-Periode aktiviert, auch wenn die Funktion in Ihrem Kundencenter deaktiviert wurde. Wenn der Cache jedoch im Browser geleert wird, der Ihre Website bereits besucht hat, wendet dieser den neuen Zustand der HSTS-Funktion an.
+
+- **Mixed content**: Durchbrechen Sie den gesamten Inhalt Ihrer Webseiten. Sie werden sicher geladen und tragen so zu einer optimalen Nutzererfahrung bei. Alle internen und externen Ressourcen Ihrer Website müssen über HTTPS verfügbar sein, um einen Fehler im Browser zu vermeiden.
+
+- **Application Firewall**: Die **W**eb **A**pplication **F**irewall (WAF) schützt Ihre Seite vor betrügerischen Angriffen wie Code-Injection, unzulässige Anfragen oder Datendiebstahl. Es deckt die wichtigsten bekannten Lücken im Web ab, indem die übertragenen Anfragen und Pakete gefiltert werden (die Liste der Lücken wird von OVHcloud verwaltet und regelmäßig aktualisiert).  
+
+> [!primary]
+>  
+> Das WAF wird vollständig von OVHcloud verwaltet, die Liste der Sicherheitslücken wird regelmäßig aktualisiert.
+
+### Die CDN Statistiken anzeigen
+
+Im Tab `Multisites`{.action} Ihres Webhostings können Sie unter der Tabelle die Statistiken Ihres CDN einsehen, die die Anzahl der gemessenen Anfragen pro Minute anzeigen.
+
+![CDN](images/manage_CDNstat_01.png){.thumbnail}
+
+
 
 ### CDN verwalten (Legacy)
 
