@@ -133,7 +133,7 @@ Once you have configured your rules and chosen your options, click `Apply config
 #### Configure CDN Security options
 
 > [!primary]
->  the options presented below require subscription to [CDN security](https://www.ovh.com/fr/hebergement-web/cdn.xml) or [CDN Advanced](https://www.ovh.com/fr/hebergement-web/cdn.xml)
+>  the options presented below require subscription to [CDN security](https://www.ovh.co.uk/web-hosting/cdn.xml) or [CDN Advanced](https://www.ovh.co.uk/web-hosting/cdn.xml)
 
 Go to the `Multisite`{.action} tab for your web hosting plan, click on `...`{.action} to the right of the multisite entry, then `Modify the CDN`{.action}. 
 
