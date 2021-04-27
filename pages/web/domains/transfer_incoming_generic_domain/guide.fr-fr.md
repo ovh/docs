@@ -109,7 +109,7 @@ La procédure de transfert de nom de domaine implique deux étapes de validation
 |Le propriétaire du nom de domaine|À l'adresse e-mail du propriétaire, présente dans le Whois (si elle est n'est pas masquée). Dans le cas contraire, elle est envoyée à l'adresse e-mail du propriétaire du nom de domaine, saisie au cours du processus de commande.|
 |L'administrateur indiqué lors du processus de commande sur OVHcloud.|À l'adresse e-mail indiquée sous le profil de l'administrateur sur OVHcloud|
 
-Les deux parties valide le transfert via une interface OVHcloud. Un lien vers celle-ci est fourni dans les e-mails envoyés.
+Les deux parties valident le transfert via une interface OVHcloud. Un lien vers celle-ci est fourni dans les e-mails envoyés.
 
 Noms de domaines :
 
