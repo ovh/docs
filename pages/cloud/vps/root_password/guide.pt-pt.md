@@ -5,7 +5,7 @@ excerpt: Aprenda a alterar a palavra-passe root do seu VPS
 section: Diagnóstico e Modo Rescue
 ---
 
-**Última atualização: 10 de novembro de 2020**
+**Última atualização: 27/04/2021**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -29,7 +29,7 @@ Pode ser necessário alterar a palavra-passe root do sistema operativo Linux. Ex
 > [!warning]
 >
 > A utilização e a gestão dos serviços da OVHcloud são da responsabilidade do cliente. A OVH não tem permissões de acesso aos VPS e o cliente é o único responsável pela gestão e pela segurança do serviço. Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção “Quer saber mais?” deste manual.
-> 
+>
 
 ## Instruções
 
@@ -67,43 +67,50 @@ Se pretender autorizar a ligação como utilizador root, siga os passos [indicad
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-#### Etapa 1: Reinicie o VPS em modo rescue.
+#### Etapa 1: Reinicie o VPS em modo rescue
 
 Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e reinicie o VPS em modo rescue. Se precisar de mais instruções sobre a utilização do modo rescue com um VPS, consulte o [guia do modo rescue](../rescue/).
 
 #### Etapa 2: Identificar o ponto de montagem
 
-A montagem é criada automaticamente. Utilize os seguintes comandos para identificar a localização de montagem da sua partição:
+Nas antigas gamas de VPS, as suas partições serão automaticamente montadas em modo de rescue. Pode utilizar os seguintes comandos para identificar o ponto de montagem da sua partição:
 
 ##### **df -h**
 
 ```sh
 df -h
-Filesystem Size Used Avail Use% Mounted on
-udev 5.8G 0 5.8G 0% /dev
-tmpfs 1.2G 17M 1.2G 2% /run
-/dev/sda1 2.4G 1.5G 788M 66% /
-tmpfs 5.8G 0 5.8G 0% /dev/shm
-tmpfs 5.0M 0 5.0M 0% /run/lock
-tmpfs 5.8G 0 5.8G 0% /sys/fs/cgroup
-/dev/sdb1 49G 1.2G 48G 3% /mnt/sdb1
-/dev/sdb15 105M 3.6M 101M 4% /mnt/sdb15
+Filesystem      Size  Used Avail Use% Mounted on
+udev            5.8G     0  5.8G   0% /dev
+tmpfs           1.2G   17M  1.2G   2% /run
+/dev/sda1       2.4G  1.5G  788M  66% /
+tmpfs           5.8G     0  5.8G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
+/dev/sdb1        49G  1.2G   48G   3% /mnt/sdb1
+/dev/sdb15      105M  3.6M  101M   4% /mnt/sdb15
 ```
 
 ##### **lsblk**
 
 ```sh
 lsblk
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-sda 8:0 0 2.5G 0 disk
-└ ─ sda1 8:1 0 2.5G 0 parte /
-sdb 8:16 0 50G 0 disk
-├ ─ sdb1 8:17 0 49.9G 0 parte /mnt/sdb1
-├ ─ sdb14 8:30 0 4M 0 parte
-└ ─ sdb15 8:31 0 106M 0 parte /mnt/sdb15
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda       8:0    0  2.5G  0 disk
+└─sda1    8:1    0  2.5G  0 part /
+sdb       8:16   0   50G  0 disk
+├─sdb1    8:17   0 49.9G  0 part /mnt/sdb1
+├─sdb14   8:30   0    4M  0 part
+└─sdb15   8:31   0  106M  0 part /mnt/sdb15
 ```
 
 O exemplo acima mostra que a partição do sistema está montada em **/mnt/sdb1**.
+
+Se o seu VPS for recente, a coluna `MOUNTPOINT` deve estar vazia. Neste caso, primeiro suba a partição:
+
+```sh
+mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/sdb1
+```
 
 #### Etapa 3: autorizações CHROOT
 

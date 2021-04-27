@@ -103,7 +103,7 @@ sdb       8:16   0   50G  0 disk
 └─sdb15   8:31   0  106M  0 part /mnt/sdb15
 ```
 
-Powyższy przykład pokazuje, że partycja systemowa jest zamontowana na **/mnt/sdb**1\.
+Powyższy przykład pokazuje, że partycja systemowa jest zamontowana na **/mnt/sdb1**.
 
 Jeśli VPS jest nowy, kolumna `MOUNTPOINT` powinna być pusta. W tym przypadku najpierw zamontuj partycję:
 
