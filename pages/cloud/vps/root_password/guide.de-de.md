@@ -106,7 +106,7 @@ sdb       8:16   0   50G  0 disk
 
 Das vorstehende Beispiel zeigt, dass die Systempartition auf **/mnt/sdb1** gemountet ist.
 
-Wenn Ihr VPS neu ist, sollte die Spalte `MOUNTPOINT` leer sein. Erstellen Sie in diesem Fall zuerst die Partition:
+Wenn es sich um einen VPS aus einer aktuellen Produktreihe handelt, sollte die Spalte `MOUNTPOINT` leer sein. Erstellen Sie in diesem Fall zuerst die Partition:
 
 ```sh
 mkdir -p /mnt/sdb1
