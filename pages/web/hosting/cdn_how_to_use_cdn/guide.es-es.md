@@ -6,7 +6,7 @@ legacy_guide_number: g1290
 section: 'Optimización del sitio web'
 ---
 
-**Última actualización: 22/04/2021**
+**Última actualización: 26/04/2021**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
