@@ -15,7 +15,7 @@ Suivez le processus d'installation d'Hyper-V, l'association d'un switch virtuel 
 
 ## Prérequis
 
-- Un serveur dédié (compatible [vRack](https://www.ovh.com/ca/fr/solutions/vrack/)) sur lequel Windows Server est installé.
+- Un serveur dédié (compatible [vRack](https://www.ovh.com/fr/solutions/vrack/)) sur lequel Windows Server est installé.
 - Un image ISO pour le système d'exploitation qui sera installé sur votre machine virtuelle (CentOS 7 sera utilisé comme exemple dans ce guide).
 - Un vRack livré sur votre compte OVHcloud.
 - Un Bloc IP  de 4 adresses IP ou plus.
