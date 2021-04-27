@@ -134,7 +134,7 @@ Une fois la deuxième étape lancée, le bureau d'enregistrement du nom de domai
 |---|---|
 |Validation du bureau d'enregistrement actuel.|Le transfert est effectué dans les 24 heures.|
 |Aucune réponse reçue du bureau d'enregistrement actuel.|Le transfert est terminé après une période de cinq jours.|
-|Un refus émis par bureau d'enregistrement actuel.|Le processus de transfert est annulé dès qu'un refus est émis.|
+|Un refus émis par le bureau d'enregistrement actuel.|Le processus de transfert est annulé dès qu'un refus est émis.|
 
 Si un refus est émis par le bureau d'enregistrement actuel, contactez le pour savoir pourquoi il l'a refusée.
 
