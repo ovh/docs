@@ -64,7 +64,7 @@ Après avoir vérifié ces informations, vous devrez déverrouiller votre nom de
 
 Une fois que vous avez déverrouillé votre nom de domaine, votre bureau d'enregistrement doit vous envoyer le code de transfert correspondant. Ce code est parfois référencé sous différents noms, tels que : « code de transfert », « CodeAuth » , « InfosAuth » ou « Code EPP ».
 
-Veuillez noter qu'OVHcloud n'étant pas le bureau d'enregistrement de votre nom de domaine au moment ou vous initiez la procédure de transfert, nous ne pouvons donc pas déverrouiller celui-ci ou vous fournir le code de transfert.
+Veuillez noter qu'OVHcloud n'étant pas le bureau d'enregistrement de votre nom de domaine au moment où vous initiez la procédure de transfert, nous ne pouvons donc pas déverrouiller celui-ci ou vous fournir le code de transfert.
 
 > [!warning]
 >
