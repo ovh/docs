@@ -6,7 +6,7 @@ legacy_guide_number: g1290
 section: 'Website optimisation'
 ---
 
-**Last updated 19th November 2020**
+**Last updated 26th April 2021**
 
 ## Objective
 
