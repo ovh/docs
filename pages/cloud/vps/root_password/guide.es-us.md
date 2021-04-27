@@ -4,11 +4,11 @@ slug: root-password
 excerpt: Cómo cambiar la contraseña «root» de un VPS
 section: Diagnóstico y modo de rescate
 ---
-**Última actualización: 10 de noviembre de 2020**
+**Última actualización: 27/04/2021**
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
+>
 
 ## Objetivo
 
@@ -28,7 +28,7 @@ Si necesita cambiar la contraseña root en su sistema operativo Linux, Existen d
 > [!warning]
 >
 > La responsabilidad sobre las máquinas que OVHcloud pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted. Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de su servidor, le recomendamos que contacte con un proveedor de servicios especializado. Para más información, consulte el apartado «Más información» de esta guía.
-> 
+>
 
 ## Procedimiento
 
@@ -72,19 +72,19 @@ Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=got
 
 #### Etapa 2: Identificar el punto de montaje
 
-El montaje se crea automáticamente. Utilice los siguientes comandos para identificar la ubicación de montaje de la partición:
+En las antiguas gamas de VPS, las particiones se montarán automáticamente en modo de rescate. Puede utilizar los siguientes comandos para identificar el punto de montaje de la partición:
 
 ##### **df -h**
 
 ```sh
 df -h
-Filesystem Size Used Avail Use% Mounted on
-udev 5.8G 0 5.8G 0% /dev
-tmpfs 1.2G 17M 1.2G 2% /run
+Filesystem      Size  Used Avail Use% Mounted on
+udev            5.8G     0  5.8G   0% /dev
+tmpfs           1.2G   17M  1.2G   2% /run
 /dev/sda1       2.4G  1.5G  788M  66% /
 tmpfs           5.8G     0  5.8G   0% /dev/shm
 tmpfs           5.0M     0  5.0M   0% /run/lock
-tmpfs 5.8G 0 5.8G 0% /sys/fs/cgroup
+tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
 /dev/sdb1        49G  1.2G   48G   3% /mnt/sdb1
 /dev/sdb15      105M  3.6M  101M   4% /mnt/sdb15
 ```
@@ -93,16 +93,23 @@ tmpfs 5.8G 0 5.8G 0% /sys/fs/cgroup
 
 ```sh
 lsblk
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-sda 8:0 0 2.5G 0 disk
-1:1 0 2.5G 0 part /
-sdb 8:16 0 50G 0 disk
-├ sdb1 8:17 0 49.9G 0 part /mnt/sdb1
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda       8:0    0  2.5G  0 disk
+└─sda1    8:1    0  2.5G  0 part /
+sdb       8:16   0   50G  0 disk
+├─sdb1    8:17   0 49.9G  0 part /mnt/sdb1
 ├─sdb14   8:30   0    4M  0 part
-└db15 8:31 0 1060 part /mnt/sdb15
+└─sdb15   8:31   0  106M  0 part /mnt/sdb15
 ```
 
 El ejemplo anterior muestra que la partición del sistema está montada en **/mnt/sdb1**.
+
+Si su VPS es reciente, la columna `MOUNTPOINT` debería estar vacía. En ese caso, monte primero la partición:
+
+```sh
+mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/sdb1
+```
 
 #### Etapa 3: autorizaciones CHROOT
 

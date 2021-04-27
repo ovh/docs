@@ -5,12 +5,11 @@ excerpt: Erfahren Sie hier, wie Sie das Passwort des administrativen Zugangs zu 
 section: Diagnose & Rescue Modus
 ---
 
-**Letzte Aktualisierung am 11.01.2021**
+**Letzte Aktualisierung am 27.04.2021**
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
-
 
 ## Ziel
 
@@ -69,13 +68,13 @@ Wenn Sie den Login als Root-Benutzer erlauben möchten, folgen Sie den Schritten
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ua1qoTMq35g?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-#### Schritt 1: Starten Sie den VPS im Rescue-Modus neu.
+#### Schritt 1: Starten Sie den VPS im Rescue-Modus neu
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und starten Sie den VPS im Rescue-Modus neu. Wenn Sie weitere Anweisungen zur Verwendung des Rescue-Modus mit einem VPS benötigen, lesen Sie die Anleitung zum [Rescue-Modus](../rescue/).
 
 #### Schritt 2: Mountpoint identifizieren
 
-Der Mount erfolgt automatisch. Verwenden Sie folgende Befehle, um den Mountpoint Ihrer Partition zu identifizieren:
+Bei den alten VPS Reihen werden Ihre Partitionen automatisch im Rescue-Modus erstellt. Sie können folgende Befehle verwenden, um den Mountpunkt Ihrer Partition zu identifizieren:
 
 ##### **df -h**
 
@@ -87,7 +86,7 @@ tmpfs           1.2G   17M  1.2G   2% /run
 /dev/sda1       2.4G  1.5G  788M  66% /
 tmpfs           5.8G     0  5.8G   0% /dev/shm
 tmpfs           5.0M     0  5.0M   0% /run/lock
-5.8G 0 5.8G 0% /sys/fs/cgroup
+tmpfs           5.8G     0  5.8G   0% /sys/fs/cgroup
 /dev/sdb1        49G  1.2G   48G   3% /mnt/sdb1
 /dev/sdb15      105M  3.6M  101M   4% /mnt/sdb15
 ```
@@ -96,16 +95,23 @@ tmpfs           5.0M     0  5.0M   0% /run/lock
 
 ```sh
 lsblk
-NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
-sda 8:0 0 2.5G 0 disk
-└─ sda1 8:1 0 2.5G 0 part /
-sdb 8:16 0 50G 0 disk
-├ sdb1 8:17 0 49.9G 0 part /mnt/sdb1
-├ ─ sdb14 8:30 0 4M 0 part
+NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+sda       8:0    0  2.5G  0 disk
+└─sda1    8:1    0  2.5G  0 part /
+sdb       8:16   0   50G  0 disk
+├─sdb1    8:17   0 49.9G  0 part /mnt/sdb1
+├─sdb14   8:30   0    4M  0 part
 └─sdb15   8:31   0  106M  0 part /mnt/sdb15
 ```
 
-Das vorstehende Beispiel zeigt, dass die Systempartition auf **/mnt/sdb** gemountet ist.
+Das vorstehende Beispiel zeigt, dass die Systempartition auf **/mnt/sdb1** gemountet ist.
+
+Wenn es sich um einen VPS aus einer aktuellen Produktreihe handelt, sollte die Spalte `MOUNTPOINT` leer sein. Erstellen Sie in diesem Fall zuerst die Partition:
+
+```sh
+mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/sdb1
+```
 
 #### Schritt 3: CHROOT-Genehmigungen
 
