@@ -22,7 +22,7 @@ L'ensemble préconfiguré de règles de base, le « Core Rule Set » (CRS), de n
 - injection de type SQL ou XSS,
 - etc.
 
-**Ce guide explique comment activer le pare-feu applicatif depuis votre espace client OVHcloud, afin d'obtenir une protection améliorée.**
+**Ce guide vous explique comment activer le pare-feu applicatif depuis votre espace client OVHcloud, afin d'obtenir une protection améliorée.**
 
 ## Prérequis
 
@@ -42,13 +42,13 @@ Cliquez sur l'onglet `Informations générales`{.action}. La `version PHP global
 
 Dans la nouvelle fenêtre, assurez-vous que **Application firewall** est défini sur `Activé`{.action}. Pour confirmer la configuration, cliquez sur le bouton `Confirmer`{.action}.
 
-### Activer le pare-feu applicatif pour des domaines individuels sur un multisite
+### Activer le pare-feu applicatif pour les noms de domaine individuels sur un multisite
 
-Cliquez sur l'onglet `Multisite`{.action} de votre offre d'hébergement. Cliquez sur le bouton `...`{.action} à droite du domaine concerné et sélectionnez l'option `Modifier le domaine`{.action}.
+Cliquez sur l'onglet `Multisite`{.action} de votre offre d'hébergement. Cliquez sur le bouton `...`{.action} à droite du nom de domaine concerné et sélectionnez l'option `Modifier le domaine`{.action}.
 
 ![managemultisite](images/firewall-modify-multisite.png){.thumbnail}
 
-Dans la fenêtre de configuration, cochez la case `Activer le pare-feu`{.action}. Vous pouvez également inclure le sous-domaine www dans cette configuration en cochant la case en haut.
+Dans la fenêtre de configuration, cochez la case `Activer le pare-feu`{.action}. Vous pouvez également inclure le sous-domaine `www` dans cette configuration en cochant la case en haut.
 
 Cliquez sur `Suivant`{.action}, puis sur `Confirmer`{.action} pour modifier les paramètres multisites.
 
@@ -60,13 +60,13 @@ Cliquez sur `Suivant`{.action}, puis sur `Confirmer`{.action} pour modifier les 
 
 Les tâches de mise à jour de votre configuration multisite seront répertoriées dans l'onglet `Opérations en cours`{.action} (le statut initial est « Planifié »). Le pare-feu sera actif dès que sa tâche de mise à jour n'apparaîtra plus dans la liste.
 
-### Vérification des domaines pour lesquels le pare-feu est activé
+### Vérification des noms domaine pour lesquels le pare-feu est activé
 
-L'onglet `Multisite`{.action} de votre offre d'hébergement fournit des informations sur les domaines pour lesquels l'option de pare-feu est activée.
+L'onglet `Multisite`{.action} de votre offre d'hébergement fournit des informations sur les noms domaine pour lesquels l'option de pare-feu est activée.
 
 ![gérageenabled](images/firewall-enabled-multisite.png){.thumbnail}
 
-Le tableau affiché contient tous les noms de domaine qui ont été ajoutés à votre offre d'hébergement Web. Dans la colonne « Pare-feu » s'affiche le statut d'activation de chaque domaine.
+Le tableau affiché contient tous les noms de domaine qui ont été ajoutés à votre offre d'hébergement Web. Dans la colonne « Pare-feu » s'affiche le statut d'activation de chaque nom de domaine.
 
 ## Aller plus loin
 
