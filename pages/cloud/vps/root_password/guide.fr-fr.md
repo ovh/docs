@@ -5,7 +5,7 @@ excerpt: Découvrez ici comment modifier le mot de passe root d’un VPS
 section: Diagnostic et mode Rescue
 ---
 
-**Dernière mise à jour le 10 novembre 2020**
+**Dernière mise à jour le 27/04/2021**
 
 ## Objectif
 
@@ -25,7 +25,7 @@ Il peut être nécessaire de modifier le mot de passe root sur votre système d'
 > [!warning]
 >
 > OVHcloud met à votre disposition des machines dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien. Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
-> 
+>
 
 ## En pratique
 
@@ -69,7 +69,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 #### Étape 2 : Identifier le point de montage
 
-Le montage est créé automatiquement. Utilisez les commandes suivantes pour identifier l'emplacement de montage de votre partition :
+Sur les anciennes gammes de VPS, vos partitions seront automatiquement montées en mode rescue. Vous pouvez utiliser les commandes suivantes pour identifier le point de montage de votre partition :
 
 ##### **df -h**
 
@@ -100,6 +100,13 @@ sdb       8:16   0   50G  0 disk
 ```
 
 L'exemple obtenu ci-dessus montre que la partition système est montée sur **/mnt/sdb1**.
+
+Si votre VPS est récent, la colonne `MOUNTPOINT` devrait être vide. Dans ce cas, montez d'abord la partition :
+
+```sh
+mkdir -p /mnt/sdb1
+mount /dev/sdb1 /mnt/sdb1
+```
 
 #### Étape 3 : autorisations CHROOT
 
