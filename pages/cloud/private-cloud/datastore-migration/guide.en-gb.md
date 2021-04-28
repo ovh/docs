@@ -120,6 +120,10 @@ If you encounter the error message "Unable to write VMX file" or "Error caused b
 - Clone the VM
 - Power on the VM.
 
+### Step 5: Delete the copy
+
+Once the data has been retrieved, you can remove the copy of the filer by following the documentation for [removing a datastore](../remove-data-store/).
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
