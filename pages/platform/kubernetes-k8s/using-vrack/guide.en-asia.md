@@ -23,9 +23,7 @@ A OVHcloud Public Cloud project.
 
 First of all, you will need to set up vRack Private Network for your Public Cloud. To do it, please follow the [Configuring vRack for Public Cloud](../../public-cloud/public-cloud-vrack/) guide. After having created a vRack and added it a Private Network, you can continue. 
 
-The easiest way to integrate a cluster into vRack Private Network is to do it at cluster creating.
-
-At the third step on cluster creation, you can choose a private network for the cluster:
+Integrating a cluster into vRack Private Network must be done at the third step on cluster creation, where you can choose an existing private network for the cluster:
 
 ![Choose a private network for this cluster](images/using-vrack-01.png){.thumbnail}
 
