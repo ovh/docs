@@ -175,7 +175,7 @@ Clique com o botão `Menu Iniciar`{.action} e abra a `Executar`{.action}.
 
 Introduza `cmd` e clique em `OK`{.action} para abrir a aplicação de linha de comando.
 
-![cmdprompt](images/vps_win07.png){.thumbnail}
+![cmdprompt](images/pci_win07.png){.thumbnail}
 
 Para obter a configuração IP atual, insira o `ipconfig` na encomenda.
 
