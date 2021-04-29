@@ -6,7 +6,7 @@ section: Getting started
 order: 0
 ---
 
-**Last updated 29th September 2020**
+**Last updated 29th April 2021**
 
 ## Objective
 
@@ -20,11 +20,11 @@ A OVHcloud Public Cloud project.
 
 Access our administration UI for your OVHcloud Managed Kubernetes clusters by clicking on the *Containers and Orchestration* menu in the Public Cloud section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then go to the *Managed Kubernetes Service* category and click on *Create a cluster* button.
 
-![Create a cluster](images/creating-a-cluster1.png){.thumbnail}
+![Create a cluster](images/creating-a-cluster-01.png){.thumbnail}
 
 Select a location for your new cluster.
 
-![Select a location](images/creating-a-cluster2.png){.thumbnail}
+![Select a location](images/creating-a-cluster-02.png){.thumbnail}
 
 Choose the minor version of Kubernetes. 
 
@@ -32,7 +32,11 @@ Choose the minor version of Kubernetes.
 > We recommend you to use always the last stable version. 
 > Please read our [End of life / end of support](../eos-eol-policies/) to understand our version policy.
 
-![Choose the minor version of Kubernetes](images/creating-a-cluster3.png){.thumbnail}
+![Choose the minor version of Kubernetes](images/creating-a-cluster-03.png){.thumbnail}
+
+You can now choose to integrate your Kubernetes cluster into a private network using OVHcloud vRack. For more information about this option, please look at the [Using the vRack](../using_vrack/).
+
+![Choose a private network for this cluster](images/creating-a-cluster-04.png){.thumbnail}
 
 Now you can configure the default node pool. A node pool is a groups of nodes sharing the same configuration, allowing you a lot of flexibility in your cluster management. 
 
@@ -41,19 +45,22 @@ Now you can configure the default node pool. A node pool is a groups of nodes sh
 
 Then choose the size of the default node pool, and the type of instance.
 
-![Choose the size of the default node pool, and the type of instance](images/creating-a-cluster4.png){.thumbnail}
+![Choose the size of the default node pool, and the type of instance](images/creating-a-cluster-05.png){.thumbnail}
 
-And choose the billing mode (monthly or hourly).
+In the next step you can activate anti-affinity, and choose the billing mode (monthly or hourly).
 
-![Choose the billing mode](images/creating-a-cluster5.png){.thumbnail}
+> [!primary]
+> By enabling anti-affinity, current and future nodes will be launched on different hypervisors (physical servers), guaranteeing higher fault tolerance. Anti-affinity node pools can only include up to 5 nodes.
+
+![Choose the billing mode](images/creating-a-cluster-06.png){.thumbnail}
 
 Finally, name your cluster and click on the *Send* button.
 
-![Name your cluster](images/creating-a-cluster6.png){.thumbnail}
+![Name your cluster](images/creating-a-cluster-07.png){.thumbnail}
 
 Your cluster creation is now in progress, it should be available in a few minutes.
 
-![Name your cluster](images/creating-a-cluster7.png){.thumbnail}
+![Name your cluster](images/creating-a-cluster-08.png){.thumbnail}
 
 ## Go further
 
