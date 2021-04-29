@@ -16,13 +16,13 @@ IP aliasing refers to a special network configuration for certain OVHcloud servi
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on https://community.ovh.com/en/ if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 >
 
 ## Requirements
 
 - a [Virtual Private Server](https://www.ovhcloud.com/en-au/vps/) in your OVHcloud account
-- a [failover IP address](https://www.ovhcloud.com/en-au/bare-metal/ip/) or a failover IP block (RIPE)
+- a [failover IP address](https://www.ovhcloud.com/en-au/bare-metal/ip/) or a failover IP block
 - administrative access (root) via SSH or GUI to your server
 - basic networking and administration knowledge
 

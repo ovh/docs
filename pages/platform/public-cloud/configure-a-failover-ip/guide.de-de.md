@@ -1,8 +1,9 @@
 ---
-title: 'IP-Adresse als Alias konfigurieren'
-slug: ip-aliasing-vps
-excerpt: 'Erfahren Sie hier, wie Sie Failover-IPs in Ihre VPS-Konfiguration einbinden'
-section: 'Netzwerk und IP'
+title: 'Eine Failover-IP konfigurieren'
+slug: failover-ip-konfigurieren-pci
+excerpt: 'Erfahren Sie hier, wie Sie Failover-IPs in Ihre Instanzen einbinden'
+section: Netzwerk und IP
+order: 2
 ---
 
 > [!primary]
@@ -13,26 +14,26 @@ section: 'Netzwerk und IP'
 
 ## Ziel
 
-Bei *IP Aliasing* handelt es sich um eine spezielle Netzwerkkonfiguration für bestimme OVHcloud Dienste, mit der Sie mehrere IP-Adressen über ein einziges Netzwerkinterface verbinden können.
+Es kann nowendig werden, Failover-IPs auf Ihren Instanzen konfigurieren, zum Beispiel, wenn Sie eine große Anzahl an Websites oder internationale Projekte hosten. Mit den Failover-IPs von OVHcloud können Sie mehrere IP-Adressen einem einzigen Netzwerkinterface zuweisen.
 
-**Diese Anleitung erklärt, wie Sie Failover-IPs zu Ihrer Netzwerkkonfiguration hinzufügen.**
+**In dieser Anleitung erfahren Sie, wie Sie Failover-IPs zu Ihrer Netzwerkkonfiguration hinzufügen.**
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Dienste haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
 >
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Sie können sich auch jederzeit an unsere [Community](https://community.ovh.com/en/) wenden, um sich mit anderen Benutzern auszutauschen.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen spezialisierten Dienstleister zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Dienstes haben. Sie können sich auch jederzeit an unsere [Community](https://community.ovh.com/en/) wenden, um sich mit anderen Benutzern auszutauschen.
 >
 
 ## Voraussetzungen
 
-- Sie haben einen [VPS](https://www.ovhcloud.com/de/vps/) in Ihrem OVHcloud Account.
+- Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) in Ihrem OVHcloud Account.
 - Sie verfügen über eine [Failover-IP](https://www.ovhcloud.com/de/bare-metal/ip/)-Adresse oder einen Failover-IP-Block.
-- Sie haben administrativen Zugriff (Root) auf Ihren VPS über SSH oder GUI. 
+- Sie haben administrativen Zugriff (Root) auf Ihre Instanz über SSH oder GUI. 
 - Sie haben Grundkenntnisse in Administration und Netzwerkkonfiguration.
 
 ## In der praktischen Anwendung
 
-Die folgenden Abschnitte enthalten die Konfigurationen für die am häufigsten verwendeten Distributionen/Betriebssysteme. Der erste Schritt ist immer die Anmeldung an Ihrem Server über SSH oder einen GUI-Login (RDP für einen Windows-VPS). Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Berechtigungen (Administrator/sudo) angemeldet sind.
+Die folgenden Abschnitte enthalten die Konfigurationen für die am häufigsten verwendeten Distributionen/Betriebssysteme. Der erste Schritt ist immer die Anmeldung auf Ihrer Instanz über SSH oder einen GUI-Login (RDP für eine Windows-Instanz). Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Berechtigungen (Administrator/sudo) angemeldet sind.
 
 > [!primary]
 >
@@ -45,7 +46,7 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 |---|---|---|
 |IP_FAILOVER|Ihrem Dienst zugewiesene Failover-IP|169.254.10.254|
 |NETWORK_INTERFACE|Name des Netzwerkinterfaces|*eth*, *ens3*|
-|ID|ID der Alias-IP, beginnend mit *0* (abhängig von der Anzahl der zu konfigurierenden zusätzlichen IP-Adressen)|*0*, *1*|
+|ID|ID der Failover-IP, beginnend mit *0* (abhängig von der Anzahl der zu konfigurierenden zusätzlichen IP-Adressen)|*0*, *1*|
 
 ### Debian 10
 
@@ -281,9 +282,9 @@ Geben Sie Ihre Failover-IP in der Form `xxx.xxx.xxx.xxx/32` in das Feld "IP addr
 
 ### Diagnose
 
-Starten Sie zunächst Ihren Server über die Kommandozeile oder dessen Benutzeroberfläche neu. Wenn Sie dann immer noch keine Verbindung zwischen dem öffentlichen Netzwerk und Ihrer Alias-Adresse herstellen können und ein Netzwerkproblem vermuten, ist es notwendig, den Server im [Rescue-Modus neu zu starten](../rescue/). Anschließend können Sie die Failover-IP direkt auf dem Server konfigurieren.
+Starten Sie zunächst Ihre Instanz neu, über das Betriebssystem oder im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Wenn Sie dann immer noch keine Verbindung zwischen dem öffentlichen Netzwerk und Ihrer Failover-IP-Adresse herstellen können und ein Netzwerkproblem vermuten, ist es notwendig, die Instanz im [Rescue-Modus neu zu starten](../umstellung_einer_instanz_auf_den_rescue-modus/). Anschließend können Sie die Failover-IP direkt auf der Instanz konfigurieren.
 
-Wenn Sie über SSH mit Ihrem Server verbunden sind, geben Sie folgenden Befehl ein:
+Wenn Sie über SSH im Rescue-Modus eingeloggt sind, geben Sie folgenden Befehl ein:
 
 ```bash
 ifconfig ens3:0 IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER up
@@ -293,6 +294,8 @@ Um die Verbindung zu testen senden Sie einfach von außerhalb einen Ping an Ihre
 
 ## Weiterführende Informationen
 
-[VPS Rescue-Modus aktivieren](../rescue/)
+[Failover-IP importieren](../import_einer_failover-ip/)
+
+[Wechsel einer Failover-IP](../umzug_einer_failover-ip/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>
