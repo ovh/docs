@@ -121,6 +121,10 @@ Si vous rencontrez le message d'erreur « Impossible d’écrire le fichier VMX 
 - clonez la VM;
 - allumez la VM.
 
+### Etape 5 : Supprimer la copie
+
+Once the data has been retrieved, you can remove the copy of the filer by following the documentation for [removing a datastore](../remove-data-store/).
+
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
