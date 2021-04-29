@@ -169,7 +169,7 @@ sudo netplan apply
 
 Powtórz tę procedurę dla każdego adresu IP Failover.
 
-### Windows Server 2012
+### Windows Server 2016
 
 #### Etap 1: sprawdź konfigurację sieci
 

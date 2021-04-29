@@ -175,7 +175,7 @@ Clicca con il tasto destro sul pulsante `Menu Inizia`{.action} e apri `Esegui`{.
 
 Clicca su `cmd` e clicca su `OK`{.action} per aprire l'applicazione della riga di comando.
 
-![compromesso](images/vps_win07.png){.thumbnail}
+![cmdprompt](images/pci_win07.png){.thumbnail}
 
 Per recuperare la configurazione IP corrente, inserisci `ipconfig` nel prompt dei comandi.
 

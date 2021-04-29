@@ -177,7 +177,7 @@ Haga clic derecho en el botón `Menú Iniciar`{.action} y abra `Ejecutar`{.actio
 
 Pulse `cmd` y haga clic en `Aceptar`{.action} para abrir la aplicación de línea de órdenes.
 
-![cmdprompt](images/vps_win07.png){.thumbnail}
+![cmdprompt](images/pci_win07.png){.thumbnail}
 
 Para obtener la configuración de IP actual, introduzca `ipconfig` en la consola de comandos.
 
