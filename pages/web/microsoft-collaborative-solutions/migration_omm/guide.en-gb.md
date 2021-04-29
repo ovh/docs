@@ -90,7 +90,12 @@ With legacy version you can perform you migration automatically from OVH Control
 
 First go to `Web Cloud`{.action}, and go to `Emails`{.action} and then go to `Emails`{.action} where you can find your Emails list. Next to the account that you want to migrate choose 3 dots, and then choose option `Migrate account`{.action}. Then you will be able to choose to which Email Pro or Exchange service you would like to transfer your account to. 
 
+![omm-automatic](images/autoamtic-migrationn.png){.thumbnail}
+
 If you do not have any account yet - you will see there possibility to order new solution. After order will be completed you will find there option to migrate it. 
+
+![omm-solution](images/choose-solution.PNG){.thumbnail}
+
 
 ![email] {.thumbnail}
 
