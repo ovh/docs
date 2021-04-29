@@ -38,7 +38,7 @@ You can now choose to integrate your Kubernetes cluster into a private network u
 
 ![Choose a private network for this cluster](images/creating-a-cluster-04.png){.thumbnail}
 
-Now you can configure the default node pool. A node pool is a groups of nodes sharing the same configuration, allowing you a lot of flexibility in your cluster management. 
+Now you can configure the default node pool. A node pool is a group of nodes sharing the same configuration, allowing you a lot of flexibility in your cluster management. 
 
 > [!primary]
 > You can go to the [Managing node pools](../managing-nodes/) section to have more information on node pools.
