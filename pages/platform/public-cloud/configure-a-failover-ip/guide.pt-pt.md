@@ -1,8 +1,7 @@
 ---
-title: 'Configurar um endereço de IP alias'
-slug: ip-aliasing-vps
-excerpt: 'Saiba como adicionar endereços IP Failover à sua configuração VPS'
-section: 'Rede e IP'
+title: 'Configurar um IP Failover'
+slug: configurer-une-ip-failover
+excerpt: 'Saiba como adicionar endereços IP Failover à configuração da sua instância'
 ---
 
 > [!primary]
@@ -13,28 +12,26 @@ section: 'Rede e IP'
 
 ## Objetivo
 
-O alias de IP (*IP aliasing* em inglês) é uma configuração especial da rede para os seus servidores OVHcloud, que lhe permite associar vários endereços IP numa única interface de rede.
+Poderá ter de configurar endereços IP Failover nas suas instâncias, por exemplo se aloja um grande número de websites na sua instância ou se aloja projetos internacionais. Os endereços IP Failover OVHcloud permitem-lhe associar vários endereços IP a uma única interface de rede.
 
 **Este guia explica como adicionar endereços IP Failover à sua configuração de rede.**
 
 > [!warning]
+>A OVHcloud fornece-lhe serviços pelos quais é responsável em termos de configuração e gestão. Assim, é responsável pelo seu bom funcionamento.
 >
-> A OVHcloud oferece-lhe serviços que são da sua responsabilidade. Uma vez que não temos acesso a estas máquinas, não podemos administrá-las nem fornecer-lhe assistência. O cliente é o único responsável pela gestão e pela segurança do serviço.
->
-> Este guia fornece as instruções necessárias para realizar as operações mais habituais. Se encontrar alguma dificuldade relacionada com o processo, deverá contactar um serviço especializado. Para mais informações, aceda à secção deste manual intitulada: “Quer saber mais?”.
+>Este guia foi concebido para o ajudar o mais possível nas tarefas mais comuns. No entanto, se encontrar dificuldades ou dúvidas relativamente à administração, utilização ou implementação dos serviços num servidor, recomendamos que contacte um fornecedor especializado.
 >
 
 ## Requisitos
 
-- um [VPS](https://www.ovhcloud.com/pt/vps/) na sua conta OVHcloud
-- um [endereço IP IP Failover](https://www.ovhcloud.com/pt/bare-metal/ip/) ou um bloco IP IP Failover
-- um acesso administrador (root) via SSH ou GUI no seu servidor
+- uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud
+- um [endereço IP Failover](https://www.ovhcloud.com/pt/bare-metal/ip/) ou um bloco IP Failover
+- um acesso administrador (root) através de SSH ou GUI à sua instância
 - conhecimentos básicos sobre as redes e a sua administração
-
 
 ## Instruções
 
-Este guia contém as configurações das distribuições/sistemas operativos mais frequentemente utilizados. A primeira etapa consiste sempre em ligar-se ao seu servidor através de SSH ou através de uma sessão de ligação à interface gráfica de utilizador (RDP para um VPS Windows). Os exemplos abaixo pressupõem que está ligado enquanto utilizador com autorizações elevadas (Administrador/Sudo).
+Este guia contém as configurações das distribuições/sistemas operativos mais frequentemente utilizados. A primeira etapa consiste sempre em ligar-se à sua instância através de SSH ou através de uma sessão de ligação à interface gráfica de utilizador (RDP para uma instância Windows). Os exemplos abaixo pressupõem que está ligado enquanto utilizador com autorizações elevadas (administrador/sudo).
 
 > [!primary]
 >
@@ -45,7 +42,7 @@ No que diz respeito às diferentes versões de distribuições, tenha em conta q
 
 |Termo|Descrição|Exemplos|
 |---|---|---|
-|IP_FAILOVER|Endereço IP de IP Failover atribuído ao seu serviço|169.254.10.254|
+|IP_FAILOVER|Endereço IP Failover atribuído ao seu serviço|169.254.10.254|
 |NETWORK_INTERFACE|Nome da interface de rede|*eth0*, *ens3*|
 |ID|ID do alias IP, começando por *0* (em função do número de endereços IP suplementares a configurar)|*0*, *1*|
 
@@ -100,7 +97,7 @@ sudo systemctl restart networking
 
 ### Ubuntu 20.04
 
-O ficheiro de configuração dos seus endereços IP Failover encontra-se em `/etc/netplan/`. Neste exemplo, chama-se "50-cloud-init.yaml". Antes de efetuar alterações, verifique o nome do ficheiro real nesta pasta. Cada endereço IP IP Failover necessita da sua própria linha no ficheiro.
+O ficheiro de configuração dos seus endereços IP Failover encontra-se em `/etc/netplan/`. Neste exemplo, chama-se "50-cloud-init.yaml". Antes de efetuar alterações, verifique o nome do ficheiro real nesta pasta. Cada endereço IP Failover necessita da sua própria linha no ficheiro.
 
 #### Etapa 1: desativar a configuração automática da rede
 
@@ -196,7 +193,7 @@ Na janela Propriedades IPv4, selecione `Utilizar o seguinte`{.action} endereço 
 
 #### Etapa 3: adicionar o endereço IP Failover nos Parâmetros TCP/IP avançados
 
-Na nova janela, clique em `Adicionar...`{.action} em "Endereços IP". Introduza o seu endereço IP IP Failover e a máscara de sub-rede (255.255.255.255).
+Na nova janela, clique em `Adicionar...`{.action} em "Endereços IP". Introduza o seu endereço IP Failover e a máscara de sub-rede (255.255.255.255).
 
 ![secção de configuração avançada](images/image4-4.png){.thumbnail}
 
@@ -271,7 +268,7 @@ Nesta secção, clique no botão `Add IP Address`{.action}.
 
 ![adicionar informações IP](images/pleskip2-2.png){.thumbnail}
 
-Introduza o seu endereço IP IP Failover sob a forma `xxx.xxx.xxx.xxx/32` no campo "IP address and subnet mask", e clique em `OK`{.action}.
+Introduza o seu endereço IP Failover sob a forma `xxx.xxx.xxx.xxx/32` no campo "IP address and subnet mask", e clique em `OK`{.action}.
 
 ![adicionar informações IP](images/pleskip3-3.png){.thumbnail}
 
@@ -283,18 +280,20 @@ Na secção "Endereços IP", verifique se o endereço IP Failover foi adicionado
 
 ### Diagnóstico
 
-Em primeiro lugar, reinicie o seu servidor através da linha de comando ou da interface de utilizador. Se ainda não consegue estabelecer uma ligação entre a rede pública e o seu endereço IP de alias e suspeitar de um problema de rede, deve reiniciar o servidor em [modo rescue](../rescue/). De seguida, pode configurar o endereço IP Failover diretamente no servidor.
+Em primeiro lugar, reinicie a sua instância com a ajuda do sistema operativo da instância ou da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Se ainda não consegue estabelecer uma ligação entre a rede pública e o seu IP Failover e suspeitar de um problema de rede, deve reiniciar a instância em [modo rescue](../passar_uma_instancia_em_modo_de_rescue/). De seguida, pode configurar o endereço IP Failover diretamente na instância.
 
-Uma vez ligado ao servidor por SSH, insira o seguinte comando:
+Uma vez ligado em modo rescue através de SSH, insira o seguinte comando:
 
 ```bash
 ifconfig ens3:0 IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER up
 ```
 
 Para testar a ligação, basta enviar um ping ao seu endereço IP Failover a partir do exterior. Se ele responder em modo de rescue, isso provavelmente significa que existe um erro de configuração. No entanto, se o IP ainda não funcionar, queira informar as nossas equipas de suporte criando um ticket de assistência a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
- 
+
 ## Quer saber mais?
 
-[Ativar o modo rescue num VPS](../rescue/)
+[Importar um IP Failover](../importar_um_ip_failover/)
+
+[Migrar um IP Failover](../migrar_um_ip_failover/)
 
 Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

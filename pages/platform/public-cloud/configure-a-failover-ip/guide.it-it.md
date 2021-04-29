@@ -1,8 +1,7 @@
 ---
-title: Configurare un indirizzo IP in alias
-slug: ip-aliasing-vps
-excerpt: Come aggiungere indirizzi IP Failover alla tua configurazione VPS
-section: 'Rete e IP'
+title: 'Configura un IP failover'
+slug: configura-un-ip-failover
+excerpt: Come aggiungere indirizzi IP Failover alla configurazione della tua istanza
 ---
 
 > [!primary]
@@ -13,28 +12,26 @@ section: 'Rete e IP'
 
 ## Obiettivo
 
-L'alias IP (*IP aliasing* in inglese) è una configurazione di rete speciale per i tuoi server OVHcloud, che ti permette di associare più indirizzi IP su un'unica interfaccia di rete.
+Potrai configurare indirizzi IP Failover sulle tue istanze, ad esempio se ospiti un gran numero di siti Web sulla tua istanza o se ospiti progetti internazionali. Gli indirizzi IP Failover di OVHcloud permettono di associare più indirizzi IP a un'unica interfaccia di rete.
 
 **Questa guida ti mostra come aggiungere indirizzi IP Failover alla tua configurazione di rete.**
 
 > [!warning]
+>OVHcloud fornisce i servizi di cui sei responsabile per la configurazione e la gestione. Sei quindi responsabile del loro corretto funzionamento.
 >
-> OVHcloud mette a tua disposizione servizi di cui sei responsabile. ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente.
->
-> Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più”.
+>Questa guida ti mostra come eseguire le operazioni necessarie per eseguire l'operazione. Tuttavia, in caso di difficoltà o dubbi relativamente all'amministrazione, all'utilizzo o alla realizzazione dei servizi su un server, ti consigliamo di contattare un fornitore di servizi specializzato.
 >
 
 ## Prerequisiti
 
-- un [VPS](https://www.ovhcloud.com/it/vps/) nel tuo account OVHcloud
+- un'[istanza Public Cloud](https://www.ovhcloud.com/it/public-cloud/) nel tuo account OVHcloud
 - un [indirizzo IP Failover](https://www.ovhcloud.com/it/bare-metal/ip/) o un blocco IP Failover
-- un accesso amministratore (root) via SSH o GUI sul tuo server
+- un accesso amministratore (root) via SSH o GUI alla tua istanza
 - conoscenze di base sulle reti e la loro amministrazione
-
 
 ## Procedura
 
-Questa guida ti mostra le configurazioni delle distribuzioni/dei sistemi operativi più comunemente utilizzati. Il primo step consiste sempre nell'connettersi al tuo server tramite SSH o tramite una sessione di connessione all'interfaccia grafica utente (RDP per un VPS Windows). Gli esempi che seguono presuppongono che tu sia connesso come utente con elevate autorizzazioni (Administratore/Sudo).
+Questa guida ti mostra le configurazioni delle distribuzioni/dei sistemi operativi più comunemente utilizzati. Il primo step consiste sempre nell'accedere alla tua istanza via SSH o tramite una sessione di connessione all'interfaccia grafica utente (RDP per un'istanza Windows). Gli esempi che seguono presuppongono che tu sia connesso come utente con elevate autorizzazioni (amministratore/sudo).
 
 > [!primary]
 >
@@ -45,7 +42,7 @@ Per quanto riguarda le diverse versioni di distribuzione, ti ricordiamo che la p
 
 |Termine|Descrizione|Esempi|
 |---|---|---|
-|IP_FAILOVER|Indirizzo IP di Failover attribuito al tuo servizio|169.254.10.254|
+|IP_FAILOVER|Indirizzo IP Failover attribuito al tuo servizio|169.254.10.254|
 |NETWORK_INTERFACE|Nome dell'interfaccia di rete|*eth0*, *ens3*|
 |ID|ID dell'alias IP, che inizia con *0* (in base al numero di indirizzi IP aggiuntivi da configurare)|*0*, *1*|
 
@@ -283,9 +280,9 @@ Per verificare che l'indirizzo IP Failover sia stato aggiunto correttamente, acc
 
 ### Diagnostica
 
-Per prima cosa, riavvia il server tramite la linea di comando o l'interfaccia utente. Se non riesci ancora a stabilire una connessione tra la rete pubblica e il tuo indirizzo IP dell'alias e sospetti un problema di rete, riavvia il server in [modalità Rescue](../rescue/). A questo punto puoi configurare l'indirizzo IP Failover direttamente sul server.
+Riavvia l'istanza utilizzando il sistema operativo installato nell'istanza o dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Se non riesci ancora a stabilire una connessione tra la rete pubblica e il tuo IP Failover e sospetti un problema di rete, riavvia l'istanza in [modalità Rescue](../riavvia_la_tua_istanza_in_modalita_di_ripristino_rescue_mode/). A questo punto puoi configurare l'indirizzo IP Failover direttamente sull'istanza.
 
-Una volta effettuato l'accesso al server via SSH, esegui questo comando:
+Una volta effettuato l'accesso in Rescue mode via SSH, esegui questo comando:
 
 ```bash
 ifconfig ens3:0 IP_FAILOVER netmask 255.255.255.255 broadcast IP_FAILOVER up
@@ -295,6 +292,8 @@ Per testare la connessione, ti basta inviare un ping al tuo indirizzo IP Failove
 
 ## Per saperne di più
 
-[Attiva la modalità Rescue su un VPS](../rescue/)
+[Importa un IP Failover](../importa_un_ip_failover/)
+
+[Trasferisci un IP FailOver](../trasferisci_il_tuo_ip_failover/)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

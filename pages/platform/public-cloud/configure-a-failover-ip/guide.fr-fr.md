@@ -23,7 +23,7 @@ Vous devrez peut-être configurer des adresses IP fail-over sur vos instances, p
 ## Prérequis
 
 - une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
-- une [adresse IP fail-over](https://www.ovhcloud.com/fr/bare-metal/ip/) ou un bloc IP fail-over (RIPE)
+- une [adresse IP fail-over](https://www.ovhcloud.com/fr/bare-metal/ip/) ou un bloc IP fail-over
 - un accès administrateur (root) via SSH ou GUI à votre instance
 - des connaissances de base sur les réseaux et leur administration
 
