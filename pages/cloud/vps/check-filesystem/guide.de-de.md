@@ -2,7 +2,7 @@
 title: Dateisystem auf einem VPS überprüfen
 excerpt: Erfahren Sie hier, wie Sie ein Dateisystem im Rescue-Modus auf Fehler überprüfen
 slug: check-file-system-vps
-section: Diagnose und Rescue Modus
+section: Diagnose & Rescue Modus
 order: 5
 ---
 
