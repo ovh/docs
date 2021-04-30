@@ -2,30 +2,30 @@
 title: 'Backup einer Instanz von einem Rechenzentrum in ein anderes übertragen'
 slug: instanz-backup-in-anderes-rechenzentrum-uebertragen
 section: 'OpenStack'
-excerpt: 'Hier erfahren Sie, wie Sie das Backup einer Instanz transferieren und dabei Zustand und Status der Instanz beibehalten.'
+excerpt: 'Erfahren Sie hier, wie Sie Backups transferieren und dabei Zustand und Status der Instanz beibehalten'
 ---
 
-**Stand 01.07.2019**
+**Letzte Aktualisierung am 29.03.2019**
 
-## Einleitung
+## Ziel
 
-Es kann vorkommen, dass Sie Ihre Public Cloud Instanz von einem Rechenzentrum in ein anderes übertragen möchten − sei es, weil Sie ein neues Rechenzentrum bevorzugen oder von den OVH Labs zur OVH Public Cloud wechseln wollen.
+Es kann vorkommen, dass Sie Ihre Public Cloud Instanz von einem Rechenzentrum in ein anderes übertragen möchten − sei es, weil Sie ein neues Rechenzentrum bevorzugen oder von OVHcloud Labs zur Public Cloud wechseln wollen.
 
-**In dieser Anleitung erfahren Sie, wie Sie das Backup einer Instanz transferieren und dabei Zustand und Status der Instanz beibehalten.**
+**Diese Anleitung erklärt, wie Sie das Backup einer Instanz transferieren und dabei Zustand und Status der Instanz beibehalten.**
 
 
 ## Voraussetzungen
 
 * Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/){.external} in Ihrem Account erstellt.
 * Sie haben Administrator-Zugriff (Root) zu Ihrem Rechenzentrum via SSH.
-* Sie haben die Anleitung „[Vorbereitung der Umgebung für die Verwendung der OpenStack API](https://docs.ovh.com/de/public-cloud/vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/){.external}“ gelesen (empfohlen).
+* Sie haben die Anleitung „[Vorbereitung der Umgebung für die Verwendung der OpenStack API](../vorbereitung_der_umgebung_fur_die_verwendung_der_openstack_api/)“ gelesen (empfohlen).
 
 > [!primary]
 >
 Die Befehle in dieser Anleitung basieren auf dem OpenStack-CLI, im Gegensatz zu `Nova`\- und `Glance`-APIs.
 >
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Backup erstellen
 
@@ -139,6 +139,6 @@ Verwenden Sie die Backup-ID als Image mit folgendem Befehl:
 
 ## Weiterführende Informationen
 
-[Transfer a volume backup from one datacentre to another](https://docs.ovh.com/gb/en/public-cloud/transfer_volume_backup_from_one_datacentre_to_another/){.external} (Englisch)
+[Transfer a volume backup from one datacentre to another](https://docs.ovh.com/gb/en/public-cloud/transfer_volume_backup_from_one_datacentre_to_another/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -3,6 +3,7 @@ title: Configurar um IP Failover em Windows
 excerpt: Configurar um IP Failover em Windows
 slug: configurar_um_ip_failover_em_windows
 legacy_guide_number: g2046
+hidden: true
 ---
 
 

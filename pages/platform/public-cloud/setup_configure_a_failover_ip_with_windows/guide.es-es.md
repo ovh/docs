@@ -4,6 +4,7 @@ excerpt: Configurar una dirección IP failover en Windows
 slug: configurar_una_direccion_ip_failover_en_windows
 legacy_guide_number: g2046
 section: Red e IP
+hidden: true
 ---
 
 
