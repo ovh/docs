@@ -4,6 +4,7 @@ excerpt: Konfiguration einer Failover-IP in Fedora
 slug: konfiguration_einer_failover-ip_in_fedora
 section: 'Netzwerk und IP'
 legacy_guide_number: g2045
+hidden: true
 ---
 
 

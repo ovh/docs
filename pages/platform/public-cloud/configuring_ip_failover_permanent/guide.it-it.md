@@ -3,6 +3,7 @@ title: Configura un IP Failover permanente
 excerpt: Configura un IP Failover permanente
 slug: configura_un_ip_failover_permanente
 legacy_guide_number: g1885
+hidden: true
 ---
 
 

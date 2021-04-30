@@ -177,7 +177,7 @@ Klicken Sie mit der rechten Maustaste auf das `Startmenü`{.action} und öffnen 
 
 Geben Sie `cmd` ein und klicken Sie auf `OK`{.action}, um die Kommandozeilenanwendung zu öffnen.
 
-![cmdprompt](images/vps_win07.png){.thumbnail}
+![cmdprompt](images/pci_win07.png){.thumbnail}
 
 Um die aktuelle IP-Konfiguration anzuzeigen, geben Sie `ipconfig` in der Eingabeaufforderung ein.
 

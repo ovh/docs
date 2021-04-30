@@ -3,7 +3,7 @@ title: Konfiguracja adresu IP Fail Over w Ubuntu
 excerpt: Konfiguracja adresu IP Fail Over w Ubuntu
 slug: konfiguracja_adresu_ip_fail_over_w_ubuntu
 legacy_guide_number: g2043
-section: Tutoriale
+hidden: true
 ---
 
 

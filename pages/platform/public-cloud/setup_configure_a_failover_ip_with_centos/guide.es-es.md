@@ -4,6 +4,7 @@ excerpt: Configurar una dirección IP failover en CentOS
 slug: configurar_una_direccion_ip_failover_en_centos
 legacy_guide_number: g2044
 section: Red e IP
+hidden: true
 ---
 
 

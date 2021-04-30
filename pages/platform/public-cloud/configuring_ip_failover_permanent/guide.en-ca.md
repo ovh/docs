@@ -3,7 +3,7 @@ title: 'Making a failover IP configuration persistent'
 slug: make-failover-ip-configuration-persistent
 legacy_guide_number: 1885
 section: Networking
-order: 3
+hidden: true
 ---
 
 ## Objective

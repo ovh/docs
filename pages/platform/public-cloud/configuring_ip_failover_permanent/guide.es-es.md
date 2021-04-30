@@ -4,6 +4,7 @@ excerpt: Hacer persistente la configuración de IP Failover
 slug: hacer_persistente_la_configuracion_de_ip_failover
 legacy_guide_number: g1885
 section: Red e IP
+hidden: true
 ---
 
 

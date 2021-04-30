@@ -167,7 +167,7 @@ sudo netplan apply
 
 Powtórz tę procedurę dla każdego adresu IP Failover.
 
-### Windows Server 2012
+### Windows Server 2016
 
 #### Etap 1: sprawdź konfigurację sieci
 
@@ -175,7 +175,7 @@ Kliknij prawym przyciskiem myszy przycisk `Menu Start`{.action} i otwórz `Uruch
 
 Wpisz `cmd` i kliknij `OK`{.action}, aby otworzyć aplikację wiersza poleceń.
 
-![cmdprompt](images/vps_win07.png){.thumbnail}
+![cmdprompt](images/pci_win07.png){.thumbnail}
 
 Aby pobrać aktualną konfigurację IP, wprowadź `ipconfig` w wierszu poleceń.
 
