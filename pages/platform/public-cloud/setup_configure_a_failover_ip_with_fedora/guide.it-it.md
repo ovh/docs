@@ -3,6 +3,7 @@ title: Configura un IP Failover su Fedora
 excerpt: Configura un IP Failover su Fedora
 slug: configura_un_ip_failover_su_fedora
 legacy_guide_number: g2045
+hidden: true
 ---
 
 

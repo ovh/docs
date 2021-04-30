@@ -4,6 +4,7 @@ excerpt: Konfiguration einer Failover-IP in CentOS
 slug: konfiguration_einer_failover-ip_in_centos
 section: 'Netzwerk und IP'
 legacy_guide_number: g2044
+hidden: true
 ---
 
 

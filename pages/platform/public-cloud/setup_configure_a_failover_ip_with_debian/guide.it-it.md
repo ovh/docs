@@ -3,6 +3,7 @@ title: Configura un IP Failover su Debian
 excerpt: Configura un IP Failover su Debian
 slug: configura_un_ip_failover_su_debian
 legacy_guide_number: g2042
+hidden: true
 ---
 
 

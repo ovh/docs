@@ -3,6 +3,7 @@ title: Configure a failover IP with Ubuntu
 excerpt: Configure a failover IP with Ubuntu
 slug: configure_a_failover_ip_with_ubuntu
 legacy_guide_number: g2043
+hidden: true
 ---
 
 

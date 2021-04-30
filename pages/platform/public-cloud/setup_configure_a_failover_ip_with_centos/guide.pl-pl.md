@@ -4,6 +4,7 @@ excerpt: Konfiguracja adresu IP Fail Over w systemie CentOS
 slug: konfiguracja_adresu_ip_fail_over_w_systemie_centos
 legacy_guide_number: g2044
 section: Tutoriale
+hidden: true
 ---
 
 

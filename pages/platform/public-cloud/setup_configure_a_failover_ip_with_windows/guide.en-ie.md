@@ -3,6 +3,7 @@ title: Configure a failover IP with Windows
 excerpt: Configure a failover IP with Windows
 slug: configure_a_failover_ip_with_windows
 legacy_guide_number: g2046
+hidden: true
 ---
 
 
