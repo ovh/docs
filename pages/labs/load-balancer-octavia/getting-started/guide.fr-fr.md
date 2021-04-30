@@ -10,14 +10,14 @@ order: 1
 
 ## Objectif
 
-Vous souhaitez découvrir notre nouvelle offre de Load Balancer intégrée au Public Cloud. Ils sont basé sur le service [Openstack Octavia](https://wiki.openstack.org/wiki/Octavia).
+Vous souhaitez découvrir notre nouvelle offre de Load Balancer intégrés au Public Cloud. Ils sont basés sur le service [Openstack Octavia](https://wiki.openstack.org/wiki/Octavia).
 
 **Découvrez comment débuter avec un Load Balancer sur le Public Cloud.**
 
 ## Prérequis
 
 - Avoir un projet dans le [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/)
-- Avoir activer la région GRA9 sur votre projet
+- Avoir activé la région GRA9 sur votre projet
 - Utiliser l'environement de commande d'Openstack ([Tutoriel](https://docs.ovh.com/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/))
 - Avoir le client Openstack Octavia d'installé
 
@@ -41,7 +41,7 @@ openstack router set --external-gateway Ext-Net my_router
 
 > [!alert]
 >
-> Attention, le réseau doit être déployé au moins à GRA9 et ne doit pas faire parti du sous réseau 10.224.0.0/16 (devrait être fonctionnel lors de la disponibilité générale)
+> Attention, le réseau doit être déployé au moins à GRA9 et ne doit pas faire partie du sous réseau 10.224.0.0/16 (devrait être fonctionnel lors de la disponibilité générale)
 
 Vous pouvez maintenant attacher vos instances à ce nouveau réseau. Nous vous recommendons de suivre cette documentation pour [attacher vos instances au réseau](https://docs.ovh.com/fr/public-cloud/public-cloud-vrack/#gestion-des-interfaces-reseaux-depuis-openstack-horizon). Prenez note des adresses de vos instances dans votre réseau avec la commande suivante.
 

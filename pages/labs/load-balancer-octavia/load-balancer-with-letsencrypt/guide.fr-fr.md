@@ -17,7 +17,7 @@ Vous souhaitez découvrir notre nouvelle offre de Load Balancer intégrée au Pu
 ## Prérequis
 
 - Avoir un projet dans le [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/)
-- Avoir activer la région GRA9 sur votre projet
+- Avoir activé la région GRA9 sur votre projet
 - Utiliser l'environement de commande d'Openstack ([Tutoriel](https://docs.ovh.com/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/))
 - Avoir le client Openstack Octavia et Openstack Barbican d'installés
 - Avoir un Load Balancer sans Listener dans son projet
@@ -96,8 +96,6 @@ openstack loadbalancer member create --subnet-id my_subnet --address <private_ip
 ```
 
 Vous pouvez maintenant accéder sur votre Load Balancer de manière sécurisé avec Let's Encrypt.
-
-
 
 ## Aller plus loin
 
