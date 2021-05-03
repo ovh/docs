@@ -1,7 +1,7 @@
 ---
-title: Résoudre le cas « Site non installé »
+title: Résoudre l'erreur « Site non installé »
 slug: erreur-site-non-installe
-excerpt: Diagnostiquez l'erreur « Site non installé »
+excerpt: Découvrez comment identifier et résoudre la page d'erreur « Site non installé »
 section: "Configuration de l'hébergement"
 order: 2
 ---
@@ -11,11 +11,11 @@ order: 2
 
 ## Objectif
 
-Votre site peut afficher une page **Site non installé**, notamment lors de sa mise en place.
+Il est possible de voir apparaître sur votre navigateur internet la page d'erreur **Site non installé**, notamment lors de la première installation de votre site web.
 
 ![site-not-installed](images/site-not-installed.png)
 
-**Trouvez l'origine de la page « Site non installé »**
+**Découvrez comment identifier et résoudre la page d'erreur « Site non installé »**
 
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
