@@ -7,13 +7,25 @@ section: Diagnostics
 
 **Last updated April 22<sup>nd</sup>, 2021.**
 
-## Issue
+## Objective
 
-When managing your Kubernetes cluster, you may encounter the following error:
+At some point during the life of your Managed Kubernetes cluster, 
+you may encounter the following error which prevents you from altering resources:
 
 ```log
 "Error from server: rpc error: code = Unknown desc = ETCD storage quota exceeded"
 ```
+
+**This guide will show you how to debug and resolve this situation.**
+
+## Requirements
+
+- An OVHcloud Managed Kubernetes cluster
+- The [`kubectl`](https://kubernetes.io/docs/reference/kubectl/overview/){.external} command-line tool installed
+
+## Instructions
+
+### Background
 
 Each Kubernetes cluster has a dedicated quota on ETCD storage usage,
 calculated through the following formula:
@@ -23,10 +35,9 @@ For example, a cluster with 3 `b2-7` servers has a quota of 85MB.
 
 The quota can thus be increased by adding nodes, but will never be decreased (even if all nodes are removed) to prevent data loss.
 
-## Resolution
-
 The error mentioned above states that the cluster's ETCD storage usage has exceeded the quota.
-To resolve the situation, resources created in excess need to be deleted.
+
+**To resolve the situation, resources created in excess need to be deleted.**
 
 ### Most common case: misconfigured cert-manager
 
@@ -84,4 +95,8 @@ If that still does not cover your case, you can use a tool like [ketall](https:/
 
 Then you should delete the resources in excess and fix the process responsible for their creation.
 
----
+## Go further
+
+To learn more about using your Kubernetes cluster the practical way, we invite you to look at our [OVHcloud Managed Kubernetes doc site](../).
+
+Join our [community of users](https://community.ovh.com/en/).
