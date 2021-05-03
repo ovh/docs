@@ -43,7 +43,7 @@ openstack router set --external-gateway Ext-Net my_router
 >
 > Warning, the network must be deployed at least at GRA9 and must not be part of subnet 10.224.0.0/16 (should be functional when generally available)
 
-You can now attach your instances to this new network. We recommend following this guide to [attach your instance to your network](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/). Take note of the addresses of your instances in your network with the following command.
+You can now attach your instances to this new network. We recommend following this guide to [attach your instance to your network](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#step-3-integrating-an-instance-into-vrack_1). Take note of the addresses of your instances in your network with the following command.
 
 ```
 openstack server list
