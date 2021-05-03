@@ -26,8 +26,8 @@ Elles proviennent parfois aussi d'une mise à jour effectuée **automatiquement*
 
 ## Prérequis
 
-- Vous disposez d'une [offre d'hébergement mutualisé](https://www.ovh.com/fr/hebergement-web/)
-- Vous êtes connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Disposer d'une [offre d'hébergement mutualisé](https://www.ovh.com/fr/hebergement-web/)
+- Etre connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 
 ## En pratique
