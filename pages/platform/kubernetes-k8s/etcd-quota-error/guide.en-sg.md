@@ -2,7 +2,7 @@
 title: ETCD Quotas error, troubleshooting
 excerpt: ''
 slug: etcd-quota-error
-section: FAQ
+section: Diagnostics
 ---
 
 **Last updated April 22<sup>nd</sup>, 2021.**
