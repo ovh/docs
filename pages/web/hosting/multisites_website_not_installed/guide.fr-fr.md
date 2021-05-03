@@ -1,94 +1,88 @@
 ---
-title: 'Résoudre le cas « Site non installé »'
+title: Résoudre l'erreur « Site non installé »
 slug: erreur-site-non-installe
-excerpt: 'Découvrez comment résoudre le cas de la page « Site non installé »'
+excerpt: Découvrez comment identifier et résoudre la page d'erreur « Site non installé »
 section: "Configuration de l'hébergement"
 order: 2
 ---
 
-**Dernière mise à jour le 04/06/2018**
+**Dernière mise à jour le 17/02/2021**
+
 
 ## Objectif
 
-La page d'avertissement « Site non installé » vous signale que la configuration DNS de votre nom de domaine n'est pas correcte ou que le nom de domaine utilisé par votre site internet n'a pas été correctement configuré sur votre hébergement web OVH.
+Il est possible de voir apparaître sur votre navigateur internet la page d'erreur **Site non installé**, notamment lors de la première installation de votre site web.
 
-**Découvrez comment résoudre le cas de la page d'avertissement « Site non installé ».**
+![site-not-installed](images/site-not-installed.png)
+
+**Découvrez comment identifier et résoudre la page d'erreur « Site non installé »**
+
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](../erreur-site-non-installe/#aller-plus-loin_1) de ce guide.
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external}.
-- Pouvoir gérer votre [hébergement web OVH](https://www.ovh.com/fr/hebergement-web/){.external} (celui sur lequel est hébergé le site internet concerné).
-- Pouvoir gérer la configuration du nom de domaine concerné (c'est-à-dire sa zone DNS).
-- Être connecté à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Vous disposez d'une [offre d'hébergement mutualisé](https://www.ovh.com/fr/hebergement-web/)
+- Vous êtes connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Vous disposez également de la gestion de la [zone DNS](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/) à laquelle est rattachée votre nom de domaine.
 
 ## En pratique
 
-La page d'avertissement « Site non installé » s'affiche uniquement dans de deux cas précis :
+La page **Site non installé** s’affiche dans deux situations :
 
-- le nom de domaine utilisé par votre site internet n'est pas correctement ajouté en tant que **Multisite** à la configuration de votre hébergement web OVH ;
-- le nom de domaine utilisé par votre site internet n'est pas relié correctement à votre hébergement web OVH car il n'utilise pas la bonne adresse IP dans sa configuration DNS.
+1. Votre domaine n’est pas présent pas dans le [multisite](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-1-acceder-a-la-gestion-multisite) de votre hébergement.
 
-Les deux étapes ci-dessous vous permettent de vérifier les deux configurations afin de résoudre l'affichage de la page « Site non installé ».
+2. Il n'est pas relié, via sa `zone DNS`{.action}, à votre hébergement. 
 
-![sitenotinstalled](images/site-not-installed-webpage.png){.thumbnail}
+Les étapes suivantes vous permettront de corriger l’erreur `Site non installé` dans ces deux situations.
 
-### Étape 1 : vérifier la configuration de l'hébergement web (Multisite)
+### Étape 1 : Vérifier le multisite de votre hébergement
 
-Pour vérifier que le nom de domaine est correctement ajouté en tant que Multisite à votre hébergement web, connectez-vous à votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, puis cliquez sur `Hébergements`{.action} dans la barre de services à gauche. Dans la liste de vos hébergements, cliquez sur celui qui héberge le site internet pour lequel la page « Site non installé » s'affiche. Positionnez-vous enfin sur l'onglet `Multisite`{.action}.
+Dans votre espace client OVHcloud, allez dans `Web cloud`{.action}, puis sur `Hébergements`{.action}.
 
-Le tableau qui s'affiche alors contient tous les noms de domaine qui ont été ajoutés à votre hébergement en tant que Multisite. La barre de recherche peut vous aider à retrouver le nom de domaine concerné.
+Sélectionnez l'hébergement concerné dans la liste, puis cliquez sur l’onglet `Multisite`{.action}.
 
-Dès lors, recherchez le domaine concerné dans le tableau. Plusieurs scénarios sont possibles :
+|Scénarios|Action à entreprendre|
+|---|---|
+|Le nom de votre site apparaît dans le tableau.|Si vous venez d’ajouter le nom de votre site dans le multisite de votre hébergement, patientez une vingtaine de minutes puis rafraîchissez le cache de votre navigateur. Si le message « Site non installé » apparaît toujours, passez à [l'étape 2](../#checkdomainlink)|
+|Le domaine ou le sous-domaine lié à votre site n'apparaît pas dans le tableau.|Ajoutez votre domaine au `multisite`{.action} selon ce [guide](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine).|
+|Le nom de domaine a été supprimé du multisite sans action de votre part.|Votre domaine ou sa zone DNS sont peut-être gérés depuis un autre compte. Ajoutez votre domaine au multisite selon ce [document](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
+
+### Étape 2 : Vérifier la zone DNS <a name="checkdomainlink"></a> de votre domaine
+
+Cette étape vise à vérifier que votre domaine, via sa `zone DNS`{.action}, est relié à l’hébergement de votre site.
+
+Pour en savoir plus sur la notion de DNS, consultez ce [document](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/).
+
+#### Étape 2.1 : Déterminer l’adresse IPV4 de votre hébergement OVHcloud
+
+Pour retrouver cette adresse, cliquez sur `Hébergements` dans la colonne de gauche de votre espace client et sélectionnez l'hébergement concerné.
+
+![hosting-general-informations](images/hosting-general-informations.png)
+
+#### Étape 2.2 : Vérifiez l'adresse IPV4 notée dans la zone DNS de votre domaine
+
+Vous devez maintenant vérifier que l'adresse IP de votre hébergement apparaît dans la zone DNS active de votre domaine.
+
+Pour cela, rendez vous dans la partie `Domaines`{.action}, sélectionnez votre domaine puis allez dans l'onglet `Zone DNS`{.action}.
 
 |Scénarios possibles|Action à entreprendre|
 |---|---|
-|Le nom de domaine apparaît dans le tableau|Ceci indique que ce dernier a bien été ajouté en tant que Multisite à votre hébergement web. Si vous l'avez ajouté il y a moins de 15 minutes, patientez quelques instants pour que la page « Site non installé » disparaisse. Si l'affichage de la page persiste, poursuivez vers l'[étape 2 : « vérifier la configuration DNS du nom de domaine »](https://docs.ovh.com/fr/hosting/erreur-site-non-installe/#etape-2-verifier-la-configuration-dns-du-nom-de-domaine){.external}.|
-|Le domaine n'apparaît plus dans le tableau|Si vous aviez ajouté le nom de domaine et qu'il n'apparaît plus dans le tableau, il se peut que n'ayez pas effectué toutes les étapes pour ajouter celui-ci à votre hébergement web ou que vous l'ayez supprimé par inadvertance. Nous vous invitons donc à suivre les étapes décrites dans notre documentation [« Partager son hébergement entre plusieurs sites »](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external} afin d'ajouter de nouveau le nom de domaine.|
-|Le nom de domaine ne figure pas dans le tableau|Vous n'avez pas encore ajouté ce nom de domaine en tant que Multisite à votre hébergement web OVH. Pour effectuer cette manipulation, nous vous invitons à suivre les étapes décrites dans notre documentation [« Partager son hébergement entre plusieurs sites »](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}.|
+|Dans la zone DNS, votre domaine est relié à l'adresse IP de votre hébergement par une entrée de type A ![zoneDNS_IP2](images/zoneDNS_IP2.png)|Ceci indique que la configuration de votre nom de domaine est correcte. Suite aux dernières modifications dans vos DNS, votre site s'affichera sous 48 heures au maximum. Pensez également à redémarrer vos appareils (PC, smartphone, box, etc.) et à vider le cache de votre navigateur.|
+|Votre zone DNS ne comporte pas d'entrée de type A reliant votre domaine à l'adresse IP de votre hébergement. Ou l'entrée existante pointe sur une autre adresse IP.|Ajoutez un nouvelle entrée de type A ou corrigez l'entrée existante selon ce [document](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/)|
+|Votre domaine n'apparaît pas dans la partie `Domaines`{.action} de votre espace client. Ou l'onglet `Zone DNS`{.action} de votre domaine s'affiche de la façon suivante ![zoneDNS_NDD_pas_sur_lEC2](images/zoneDNS_NDD_pas_sur_lEC2.png)|Cela signifie que votre domaine n'est pas géré depuis votre espace client OVHcloud. Déterminez son registrar via notre outil [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl) et les serveurs DNS auxquels il est lié. Retrouvez et modifiez la zone DNS concernée en conséquence selon ce [guide](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe)|
+|Cet avertissement s'affiche dans l'onglet `Zone DNS`{.action} ![avertissement_zoneDNS_pas_sur_srv_DNS](images/avertissement_zoneDNS_pas_sur_srv_DNS.PNG)|Vous devrez donc modifier les serveurs DNS de votre domaine en conséquence selon ce [document](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/). 
 
-Si la page « Site non installé » apparaît toujours à la place de votre site internet malgré les actions entreprises, poursuivez vers l'étape « vérifier la configuration DNS du nom de domaine » ci-dessous.
 
-### Étape 2 : vérifier la configuration DNS du nom de domaine
+## Aller plus loin
 
-Vous devez d'abord récupérer la configuration OVH à utiliser. Pour cela, toujours sur l'hébergement web concerné, positionnez-vous dans l'onglet `Informations générales`{.action}, puis récupérez les adresses qui apparaissent à côté de **IPv4** et **IPv6**.
+[Partager son hébergement entre plusieurs sites](../multisites-configurer-un-multisite-sur-mon-hebergement-web/)
 
-![sitenotinstalled](images/site-not-installed-know-a-records.png){.thumbnail}
+[Liste des adresses IP des clusters et hebergements web](../liste-des-adresses-ip-des-clusters-et-hebergements-web/)
 
-Vous pouvez à présent vérifier la configuration DNS de votre nom de domaine. Cette vérification doit être réalisée depuis l'interface du prestataire gérant cette configuration.
+[Modifier les serveurs DNS d’un nom de domaine OVHcloud](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/)
 
-> [!primary]
->
-> Si votre nom de domaine est enregistré chez OVH, vous pouvez vérifier si ce dernier utilise notre configuration. Pour cela, toujours dans votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, cliquez sur `Noms de domaine`{.action} dans la barre de services à gauche, puis sur le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Serveurs DNS`{.action}.
->
+[Éditer une zone DNS OVHcloud](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/)
 
-La vérification peut s'effectuer à deux endroits différents selon la configuration utilisée par votre nom de domaine :
-
-- **votre nom de domaine n'utilise pas la configuration d'OVH** : vous devez réaliser la vérification (décrite ci-dessous) depuis l'interface du prestataire gérant la configuration de votre nom de domaine ;
-
-- **votre nom de domaine utilise la configuration d'OVH** : la vérification s'effectue depuis votre [espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Rendez-vous sur l'onglet `Zone DNS`{.action} une fois positionné sur le nom de domaine concerné. La configuration DNS s'affiche dans un tableau, chaque ligne représentant un enregistrement DNS particulier. Vous avez la possibilité de filtrer le contenu par type d’enregistrement ou par nom de domaine.
-
-![sitenotinstalled](images/site-not-installed-edit-ovh-dns-zone.png){.thumbnail}
-
-Depuis l'interface gérant la configuration de votre nom de domaine pour lequel la page « Site non installé » apparaît, assurez-vous que les enregistrements DNS ci-dessous soient correctement configurés.
-
-|Enregistrement|Cible|
-|---|---|
-|A|La cible doit correspondre à l'adresse **IPv4** récupérée précédemment.|
-|AAAA|La cible doit correspondre à l'adresse **IPv6** récupérée précédemment.|
-
-Dès lors, deux scénarios sont possibles :
-
-|Scénarios possibles|Action à entreprendre|
-|---|---|
-|Les cibles sont correctes|Ceci indique que la configuration de votre nom de domaine est correcte. Si vous avez modifié sa configuration DNS il y a moins de 24 heures, laissez passer ce délai afin que le changement soit pleinement effectif.|
-|Les cibles sont incorrectes|La configuration de votre nom de domaine doit être modifiée. S'il utilise la configuration OVH, nous vous invitons à suivre les étapes décrites dans notre documentation [« Éditer une zone DNS OVH »](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external}. Dans le cas contraire, suivez les indications décrites dans l'interface de votre prestataire. Une fois la modification effectuée, un temps de propagation de 24 heures maximum est nécessaire afin que le changement soit effectif.|
-
-Selon les actions réalisées lors de l'étape 1 et 2, et tenant compte des délais indiqués, la page d'avertissement « Site non installé » ne doit plus apparaître.
-
-## Aller plus loin 
-
-[Partager son hébergement entre plusieurs sites](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/){.external}.
-
-[Éditer une zone DNS OVH](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/){.external}.
-
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com){.external}.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
