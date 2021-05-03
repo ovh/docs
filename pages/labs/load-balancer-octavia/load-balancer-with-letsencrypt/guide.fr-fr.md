@@ -1,6 +1,6 @@
 ---
 title: Configurer un Load Balancer sécurisé avec Let's Encrypt
-slug: load-balancer-with-letsencrypt
+slug: load-balancer-avec-letsencrypt
 excerpt: Découvrez comment configurer un Load Balancer sur le Public Cloud sécurisé avec Let's Encrypt
 section: Tutoriels
 order: 1
@@ -22,7 +22,7 @@ Vous souhaitez découvrir notre nouvelle offre de Load Balancer intégrée au Pu
 - Avoir le client Openstack Octavia et Openstack Barbican d'installés
 - Avoir un Load Balancer sans Listener dans son projet
 
-Si vous n'êtes pas encore familier avec la création de Load Balancer, nous vous conseillons de consulter notre guide « [Premiers pas avec un Load Balancer sur le Public Cloud](../../load-balancer-octavia) » avant de poursuivre la lecture de ce guide.
+Si vous n'êtes pas encore familier avec la création de Load Balancer, nous vous conseillons de consulter notre guide « [Premiers pas avec un Load Balancer sur le Public Cloud](../../load-balancer-octavia/premiers-pas-avec-load-balancer-public-cloud/) » avant de poursuivre la lecture de ce guide.
 
 ## En pratique
 

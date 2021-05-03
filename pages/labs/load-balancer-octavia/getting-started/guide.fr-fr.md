@@ -108,7 +108,7 @@ Vous pouvez maintenant accéder à votre Load Balancer via l'adresse IP Flottant
 
 ## Aller plus loin
 
-[Découvrez les autres pages de documentation àpropos des Load Balancer sur le public cloud](./load-balancer-octavia)
+[Découvrez les autres pages de documentation àpropos des Load Balancer sur le public cloud](../../load-balancer-octavia)
 
 [Documentation officiel d'Openstack Octavia](https://docs.openstack.org/octavia/latest/)
 
