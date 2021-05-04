@@ -8,7 +8,7 @@ order: 1
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
+>
 
 **Última actualización: 20/04/2021**
 
@@ -51,7 +51,7 @@ El procedimiento de transferencia se desarrolla en varias etapas e involucra a v
 
 ### 1. Comprobar la información relativa al dominio
 
-**En primer lugar, es importante comprobar que la información relativa al dominio esté actualizada.** Desde la introducción del RGPD, los datos visibles en el ["Whois"](https://www.ovh.com/fr/support/outils/check_whois.pl) se han vuelto muy limitados. Por lo tanto, le recomendamos que consulte la información relativa al dominio en su agente registrador actual.
+**En primer lugar, es importante comprobar que la información relativa al dominio esté actualizada.** Desde la introducción del RGPD, los datos visibles en el ["Whois"](https://www.ovh.es/soporte/herramientas/check_whois.pl) se han vuelto muy limitados. Por lo tanto, le recomendamos que consulte la información relativa al dominio en su agente registrador actual.
 
 - ** Si los datos son correctos: vaya al siguiente paso de esta guía.**
 
@@ -59,7 +59,7 @@ El procedimiento de transferencia se desarrolla en varias etapas e involucra a v
 
 > [!primary]
 >
-> Si no sabe qué agente registrador es responsable del dominio, las líneas Registrar, que aparecerán en el resultado de la búsqueda de la [herramienta Whois](https://www.ovh.com/fr/cgi-bin/whois.pl){.external}, le facilitarán información sobre su identidad.
+> Si no sabe qué agente registrador es responsable del dominio, las líneas Registrar, que aparecerán en el resultado de la búsqueda de la [herramienta Whois](https://www.ovh.es/soporte/herramientas/check_whois.pl){.external}, le facilitarán información sobre su identidad.
 >
 
 ### 2. Desbloquear el dominio y obtener el código de transferencia
@@ -102,7 +102,7 @@ También puede completar el pedido con un [alojamiento web](https://www.ovh.es/h
 
 ![dominio](images/Order_summary.png){.thumbnail}
 
-Una vez validado el pedido, recibirá una orden de pedido. La transferencia no se iniciará hasta que se reciba el pago. Una vez realizada esta operación, puede consultar el progreso de la transferencia desde [el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Para consultar el progreso, haga clic en `Dominios`{.action} en la columna izquierda y seleccione Operaciones en curso` `{.action}.
+Una vez validado el pedido, recibirá una orden de pedido. La transferencia no se iniciará hasta que se reciba el pago. Una vez realizada esta operación, puede consultar el progreso de la transferencia desde [el área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Para consultar el progreso, haga clic en `Dominios`{.action} en la columna izquierda y seleccione `Operaciones en curso`{.action}.
 
 ### 4. realizar la primera fase de verificación
 
@@ -152,4 +152,4 @@ Una vez finalizado el procedimiento de transferencia, podrá administrar su domi
 
 [Migración de un sitio web y el correo a OVHcloud](../../hosting/web_hosting_transferir_un_sitio_web_y_el_correo_sin_cortes_del_servicio/)
 
-Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>
+Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

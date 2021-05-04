@@ -51,7 +51,7 @@ O procedimento de transferência compreende várias etapas, implicando o contact
 
 ### 1 - Verificar a informação relativa ao domínio
 
-**Para começar, é importante verificar se as informações relativas ao nome de domínio estão atualizadas.** Desde a criação do RGPD, os dados visíveis no ["Whois"](https://www.ovh.com/fr/support/outils/check_whois.pl) tornaram-se muito limitados. Assim, recomendamos que verifique as informações relativas ao seu nome de domínio no seu agente registador atual.
+**Para começar, é importante verificar se as informações relativas ao nome de domínio estão atualizadas.** Desde a criação do RGPD, os dados visíveis no ["Whois"](https://www.ovh.pt/suporte/ferramentas/check_whois.pl) tornaram-se muito limitados. Assim, recomendamos que verifique as informações relativas ao seu nome de domínio no seu agente registador atual.
 
 - ** Se as informações estiverem corretas: consulte o passo seguinte deste guia.**
 
@@ -59,7 +59,7 @@ O procedimento de transferência compreende várias etapas, implicando o contact
 
 > [!primary]
 >
-> Se não sabe qual o agente de registo responsável pelo seu domínio, as linhas "Registar", que aparecerão no resultado da pesquisa da ferramenta [Whois](https://www.ovh.com/fr/cgi-bin/whois.pl){.external}, podem fornecer-lhe informações sobre a sua identidade.
+> Se não sabe qual o agente de registo responsável pelo seu domínio, as linhas "Registar", que aparecerão no resultado da pesquisa da ferramenta [Whois](https://www.ovh.pt/suporte/ferramentas/check_whois.pl){.external}, podem fornecer-lhe informações sobre a sua identidade.
 >
 
 ### 2 - Desbloquear o domínio e obter o código de transferência
@@ -102,7 +102,7 @@ Também pode concluir a sua encomenda com um [alojamento web](https://www.ovh.pt
 
 ![domínio](images/Order_summary.png){.thumbnail}
 
-Depois de validar a encomenda, receberá uma nota de encomenda. O processo de transferência só terá início após a receção do pagamento. Depois de realizar esta operação, pode seguir o progresso da transferência através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Para seguir o progresso, clique em `Nomes de domínio`{.action} na barra de serviços situada à esquerda e, a seguir, em Operações em curso` `{.action}.
+Depois de validar a encomenda, receberá uma nota de encomenda. O processo de transferência só terá início após a receção do pagamento. Depois de realizar esta operação, pode seguir o progresso da transferência através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Para seguir o progresso, clique em `Nomes de domínio`{.action} na barra de serviços situada à esquerda e, a seguir, em `Operações em curso`{.action}.
 
 ### Etapa 4: efetuar a primeira etapa de validação da transferência
 
