@@ -7,45 +7,70 @@ legacy_guide_number: g1937
 section: 'Webhosting-Konfiguration'
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
+>
 
-## 
-Dieses Apache-Zusatzmodul filtert alle eingehenden Anfragen an Ihre Webserver. Für noch mehr Sicherheit fängt es die Anfragen ab und überprüft sie, noch bevor sie von den Skripten verarbeitet werden.
+**Letzte Aktualisierung am 26.04.2021**
 
-Wenn Sie von Ihrem Kundencenter aus Mod Security mit einem Klick aktivieren, genießen Sie einen noch besseren Schutz.
+## Ziel
 
-Dank eines vordefinierten Standardregelsatzes (Core Rule Set, CRS) verfügen Sie sofort über eine optimale Vorkonfiguration Ihres Mod Security, sodass Sie vor den häufigsten Angriffen geschützt sind:
+*ModSecurity* ist ein zusätzliches Apache-Modul, das alle auf Ihrem Webserver eingehenden Anfragen filtert. Es erhöht die Sicherheit gegen bekannte Schwachstellen, indem es Anfragen abfängt und filtert, bevor sie von Skripten verbeitet werden.
 
+Das vorkonfigurierte "Core Rule Set" (CRS) unserer *ModSecurity*, schützt Ihre Webseiten vor den häufigsten Angriffen, zum Beispiel:
 
-- Trojaner,
-- E-Mail-Injection,
-- Sicherheitslücken in PDF-Dateien,
-- unerlaubter Upload von Dateien auf Ihr Webhosting,
-- SQL- oder XSS-Injections,
-- etc.
+- Trojaner
+- E-Mail Injection
+- Sicherheitslücken in PDF Dateien
+- File Injections auf Ihrem Hosting
+- SQL oder XSS Injection
 
+**In dieser Anleitung erfahren Sie, wie Sie die Application Firewall zur verbesserten Sicherheit über Ihr OVHcloud Kundencenter aktivieren.**
 
+## Voraussetzungen
 
+- Sie haben ein [Webhosting](https://www.ovh.de/hosting/) in Ihrem OVHcloud Account.
+- Sie verfügen über mindestens einen mit dem Hosting verbundenen [Domainnamen](https://www.ovh.de/domains/){.external}.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
 
-## 
-Loggen Sie sich mit Kennung (nic-handle) und Passwort in Ihr [OVH Kundencenter](https://www.ovh.com/manager/web) ein.
+## In der praktischen Anwendung
 
-![](images/img_3005.jpg){.thumbnail}
-Wählen Sie im Menü links unter "Hosting-Pakete" das gewünschte Hosting aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie links im Menü auf den Bereich `Hosting-Pakete`{.action} und dann auf das betreffende Hosting.
 
-![](images/img_3006.jpg){.thumbnail}
-Klicken Sie auf den Tab "Assoziierte Domains".
+### Die Application Firewall in der PHP Konfiguration aktivieren
 
-![](images/img_3007.jpg){.thumbnail}
-Standardmäßig ist die Firewall deaktiviert. Klicken Sie auf den kleinen Stift rechts daneben, um die Einstellungen zu ändern.
+Klicken Sie auf den Tab `Allgemeine Informationen`{.action}. Die aktuelle `Globale PHP-Version` Version wird im Bereich **Konfiguration** angezeigt. Klicken Sie auf den Button `...`{.action} und wählen Sie `Konfiguration ändern`{.action}. Wählen Sie im neuen Fenster das Element `Aktuelle Konfiguration ändern`{.action} und klicken Sie auf `Weiter`{.action}.
 
-![](images/img_3008.jpg){.thumbnail}
-Setzen Sie nun ein Häkchen bei "Die Firewall aktivieren" und klicken Sie auf Weiter.
+![managephpconfig](images/manage-php-config.png){.thumbnail}
 
-![](images/img_3010.jpg){.thumbnail}
-Nun erscheint eine Zusammenfassung der Änderungen. Die Firewall ist als "aktiviert" markiert. Klicken Sie nun auf Bestätigen, damit die Änderung wirksam wird.
+Stellen Sie im neuen Fenster sicher, dass die **Application Firewall** auf `aktiviert`{.action} eingestellt ist. Um die Konfiguration zu bestätigen, klicken Sie auf den Button `Bestätigen`{.action}.
 
-![](images/img_3011.jpg){.thumbnail}
-Die Firewall auf Ihrem Webhosting ist nun aktiviert.
+### Die Application Firewall für einzelne Multisite-Domainnamen aktivieren
 
-![](images/img_3012.jpg){.thumbnail}
+Wechseln Sie zum Tab `Multisite`{.action} Ihres Webhostings. Klicken Sie auf den Button `...`{.action} rechts neben der betreffenden Domain und wählen Sie die Option `Domain bearbeiten`{.action}.
 
+![Multisite](images/firewall-modify-multisite.png){.thumbnail}
+
+Setzen Sie im Konfigurationsfenster einen Haken bei `Firewall aktivieren`{.action}. Sie können auch die `www`-Subdomain in diese Konfiguration aufnehmen, indem Sie oben die Checkbox anhaken.
+
+Klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}, um die Multisite-Einstellungen zu ändern.
+
+![modifydomain](images/firewall-modify-domain.png){.thumbnail}
+
+### Aktivierungstask überprüfen
+
+![Multisite](images/firewal-ongoing-jobs.png){.thumbnail}
+
+Die Updates Ihrer Multisite-Konfiguration werden im Tab `Aktuelle Tasks`{.action} aufgeführt (der Status ist zunächst "geplant"). Die Firewall wird aktiv, sobald ihr Update-Task nicht mehr in der Liste angezeigt wird.
+
+### Überprüfung des Firewall-Status für Domainnamen
+
+Der Tab `Multisite`{.action} Ihres Webhosting-Angebots zeigt ab, für welche Domainnamen die Firewall-Option aktiviert ist.
+
+![Multisite](images/firewall-enabled-multisite.png){.thumbnail}
+
+Die angezeigte Tabelle enthält alle Domains, die Ihrem Webhosting Angebot hinzugefügt wurden. In der Spalte "Firewall" wird der Aktivierungsstatus für jede Domain angezeigt.
+
+## Weiterführende Informationen
+
+Tauschen Sie sich mit unserer User Community aus <https://community.ovh.com/en/>.
