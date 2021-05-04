@@ -95,10 +95,10 @@ Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP d
 
 ## Aller plus loin
 
-[Tout sur le fichier .htaccess](../hosting/mutualise-tout-sur-le-fichier-htaccess/)
+[Tout sur le fichier .htaccess](../mutualise-tout-sur-le-fichier-htaccess/)
 
-[Comment diagnostiquer une page blanche ?](../hosting/comment-diagnostiquer-page-blanche/)
+[Comment diagnostiquer une page blanche ?](../comment-diagnostiquer-page-blanche/)
 
-[Les codes de reponse d’un serveur HTTP](../hosting/mutualise-les-codes-de-reponse-dun-serveur-http/)
+[Les codes de reponse d’un serveur HTTP](../mutualise-les-codes-de-reponse-dun-serveur-http/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
