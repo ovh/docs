@@ -8,7 +8,7 @@ section: 'Optymalizacja strony WWW'
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
-> 
+>
 
 **Ostatnia aktualizacja z dnia 26-04-2021**
 
@@ -29,7 +29,7 @@ Wstępnie skonfigurowany zbiór podstawowych zasad, takich jak "Core Rule Set" (
 
 ## Wymagania początkowe
 
-- Posiadanie hostingu [OVHcloud](https://www.ovh.pl/hosting/){.external}.
+- Posiadanie [hostingu OVHcloud](https://www.ovh.pl/hosting/){.external}.
 - Posiadanie co najmniej jednej [domeny](https://www.ovh.pl/domeny/){.external} przypisanej do hostingu
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 

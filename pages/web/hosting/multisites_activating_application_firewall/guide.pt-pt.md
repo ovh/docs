@@ -35,7 +35,7 @@ O conjunto pré-configurado de regras de base, o "Core Rule Set" (CRS), do nosso
 
 ## Instruções
 
-Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione `Web Cloud`{.action}. Na barra à esquerda, clique em Alojamentos` `{.action} e, a seguir, no alojamento correspondente.
+Ligue-se à sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione `Web Cloud`{.action}. Na barra à esquerda, clique em `Alojamentos`{.action} e, a seguir, no alojamento correspondente.
 
 ### Ativar a firewall aplicativa na configuração PHP
 
@@ -72,5 +72,5 @@ O separador `Multisite`{.action} da sua oferta de alojamento fornece informaçõ
 A tabela apresentada contém todos os domínios adicionados ao alojamento web. Na coluna "Firewall", apresenta-se o estado de ativação de cada nome de domínio.
 
 ## Quer saber mais?
- 
+
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

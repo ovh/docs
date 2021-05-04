@@ -1,6 +1,5 @@
 ---
 title: Activation du pare-feu applicatif
-legacy_guide_number: 1937
 slug: activation-pare-feu-applicatif
 excerpt: "Découvez comment activer le pare-feu applicatif sur un offre d'hébergement Web."
 section: "Configuration de l'hébergement"
@@ -26,13 +25,13 @@ L'ensemble préconfiguré de règles de base, le « Core Rule Set » (CRS), de n
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovh.com/fr/hebergement-web/){.external}.
-- Disposer d'au moins un [nom de domaine](https://www.ovh.com/fr/domaines/){.external} attaché à l'hébergement.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovh.com/ca/fr/hebergement-web/){.external}.
+- Disposer d'au moins un [nom de domaine](https://www.ovh.com/ca/fr/domaines/){.external} attaché à l'hébergement.
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Web Cloud`{.action}. Dans la barre de services à gauche, cliquez sur la section `Hébergements`{.action} puis sur l'hébergement concerné.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez `Web Cloud`{.action}. Dans la barre de services à gauche, cliquez sur la section `Hébergements`{.action} puis sur l'hébergement concerné.
 
 ### Activer le pare-feu applicatif dans la configuration PHP
 
