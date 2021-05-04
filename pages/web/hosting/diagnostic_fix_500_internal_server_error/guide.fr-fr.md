@@ -13,7 +13,7 @@ section: Diagnostic
 
 Les erreurs 500 « Internal Server Error » peuvent concerner tout ou partie de votre site, être aléatoires ou permanentes. Elles peuvent aussi apparaître sous la forme d'une page blanche.
 
-![error500](images/error-500-2.PNG){.thumbnail}
+![error500](images/error-500-2.png){.thumbnail}
 
 Elles proviennent parfois aussi d'une mise à jour effectuée **automatiquement** par un composant de votre site et donc survenir sans action de votre part.
 
