@@ -34,7 +34,7 @@ The transfer procedure has several steps. These steps will involve various entit
 |1|Checking the information associated with the domain|The domain administrator|With the current registrar|Depends on your actions|
 |2|Unlocking the domain and retrieving the transfer code|The domain administrator, with the owner's permission|With the current registrar|Depends on your actions|
 |3|Requesting the domain name transfer|Whoever has the transfer code and the owner's permission|With the new registrar|Depends on your actions|
-|4|The first transfer validation step|The domain name holder and the admin inform the new domain name registrar|Via email|Five days maximum|
+|4|The first transfer validation step|The domain name owner and the admin inform the new domain name registrar|Via email|Five days maximum|
 |5|The second transfer validation step|The current registrar|Via a request from the organisation managing the domain name extension|Five days maximum|
 
 > [!warning]
@@ -59,9 +59,9 @@ The transfer procedure has several steps. These steps will involve various entit
 
 Once you have checked this information, you will need to unlock your domain name. You can only do this via your current domain name registrar. Please contact them to find out more about their procedure.
 
-Once you have unlocked your domain name, your domain name registrar must send you the transfer code for it. This code is sometimes referred to using different names, such as: **transfer code**, **AuthCode**, **AuthInfo** or **EPP code**.
+Once you have unlocked your domain name, your domain name registrar must provide the AUTH/INFO code for it. This code is sometimes referred to using different names, such as: **transfer key**, **domain password**, **AUTH-CODE** or **EPP-Code**.
 
-Please note that OVHcloud is not your current domain name registrar. We are, therefore, unable to unlock your domain or provide the transfer code.
+Please note that OVHcloud is not your current domain name registrar. We are therefore unable to unlock your domain or provide the AUTH/INFO code.
 
 > [!warning]
 >
@@ -70,11 +70,11 @@ Please note that OVHcloud is not your current domain name registrar. We are, the
 
 ### Step 3: Request a domain name transfer to OVHcloud
 
-Now that your domain name is unlocked and you have your transfer code, you can request for your domain name to be transferred to OVHcloud. Simply order a domain name transfer on [our website](https://www.ovh.co.uk/domains/domain_transfer.xml){.external}. Enter your domain name, and follow the order process.
+Now that your domain name is unlocked and you have your AUTH/INFO, you can request for your domain name to be transferred to OVHcloud. Simply order a domain name transfer on [our website](https://www.ovh.co.uk/domains/domain_transfer.xml){.external}. Enter your domain name, and follow the order process.
 
 ![domain](images/Domain_transfer_order.png){.thumbnail}
 
-When you are asked to provide your transfer code, enter it in the box next to your domain name. If you do not have the transfer code yet, you can tick a box labelled `Enter the authentication code later in the OVHcloud Control Panel`{.action}. However, we advise to have the code ready before you continue. Keep in mind that transfer will not start until a valid code is provided.
+When you are asked to provide your transfer code, enter it into the field. If you do not have the transfer code yet, you can tick a box labelled `Enter the authentication code later in the OVHcloud Control Panel`{.action}. However, we advise to have the code ready before you continue. Keep in mind that transfer will not start until a valid code is provided.
 
 ![domain](images/step_authinfo_add.png){.thumbnail}
 
@@ -84,7 +84,7 @@ Domains can also be ordered in addition to a [Web Hosting plan](https://www.ovh.
 >
 > Throughout the order process, we advise taking special care with regard to the following points:
 >
-> - **Data on the domain name holder.** Especially since GDPR legislation is in effect, please ensure that all information on the domain name owner matches the information stored by your current domain name registrar. Doing this will ensure that you will not be suspected of domain name theft.
+> - **Data on the domain name owner.** Especially since GDPR legislation is in effect, please ensure that all information on the domain name owner matches the information stored by your current domain name registrar. Doing this will ensure that you will not be suspected of domain name theft.
 >
 > - **Entering the DNS servers for your domain name.** If you are currently using your domain name to keep a website or email service online, you will need to specify their DNS servers in order to avoid any service interruptions.  
 >

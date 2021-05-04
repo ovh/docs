@@ -3,6 +3,7 @@ title: Zonecheck für Ihre Domain
 excerpt: In dieser Hilfe erklären wir Ihnen, wie Sie einen Zonecheck für Ihre Domain durchführen
 slug: zonecheck_fur_ihre_domain
 legacy_guide_number: g1980
+section: DNS und DNS-Zone
 ---
 
 

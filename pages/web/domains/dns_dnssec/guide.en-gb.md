@@ -3,7 +3,7 @@ title: 'Securing your domain name with DNSSEC'
 excerpt: 'Protect your domain name from cache poisoning by activating DNSSEC'
 slug: secure_your_domain_with_dnssec
 legacy_guide_number: g609
-section: 'Protection and security'
+section: 'Security'
 order: 1
 ---
 

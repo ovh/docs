@@ -3,6 +3,7 @@ title: 'Webhosting: Anleitung zum Transfer einer .CO.UK Domain'
 excerpt: 'Webhosting: Anleitung zum Transfer einer .CO.UK Domain'
 slug: webhosting_anleitung_zum_transfer_einer_couk_domain
 legacy_guide_number: g2026
+section: Transfer
 ---
 
 

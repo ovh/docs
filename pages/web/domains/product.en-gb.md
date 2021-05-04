@@ -2,5 +2,5 @@
 title: Domains and  DNS
 slug: domains
 excerpt: All you need to know about domains
-sections: General, Security, Transfer, DNS and DNS zone
+sections: General, DNS and DNS zone, Transfer, Trade, Security 
 ---
