@@ -13,15 +13,17 @@ section: Diagnostic
 
 Les erreurs 500 « Internal Server Error » peuvent concerner tout ou partie de votre site, être aléatoires ou permanentes. Elles peuvent aussi apparaître sous la forme d'une page blanche.
 
-![error500](images/error-500-2.PNG)
+![error500](images/error-500-2.PNG){.thumbnail}
 
 Elles proviennent parfois aussi d'une mise à jour effectuée **automatiquement** par un composant de votre site et donc survenir sans action de votre part.
 
 **Découvrez comment diagnostiquer les cas les plus courants d'erreurs 500.**
 
+> [!primary]
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](../erreur-500-internal-server-error/#aller-plus-loin_1) de ce guide.
+>
 
 
 ## Prérequis
