@@ -9,8 +9,7 @@ section: Diagnostics
 
 ## Objective
 
-At some point during the life of your Managed Kubernetes cluster, 
-you may encounter the following error which prevents you from altering resources:
+At some point during the life of your Managed Kubernetes cluster, you may encounter the following error which prevents you from altering resources:
 
 ```log
 "Error from server: rpc error: code = Unknown desc = ETCD storage quota exceeded"
@@ -27,8 +26,7 @@ you may encounter the following error which prevents you from altering resources
 
 ### Background
 
-Each Kubernetes cluster has a dedicated quota on ETCD storage usage,
-calculated through the following formula:
+Each Kubernetes cluster has a dedicated quota on ETCD storage usage, calculated through the following formula:
 *Quota = 10MB + (25MB per node)* (capped to 200MB)
 
 For example, a cluster with 3 `b2-7` servers has a quota of 85MB.
@@ -43,8 +41,7 @@ The error mentioned above states that the cluster's ETCD storage usage has excee
 
 Most users install cert-manager through Helm, and then move on a bit hastily.
 
-The most common cases of ETCD quota issues come from a bad configuration of [cert-manager](https://cert-manager.io/docs/),
-making it continuously create `certificaterequest` resources.
+The most common cases of ETCD quota issues come from a bad configuration of [cert-manager](https://cert-manager.io/docs/), making it continuously create `certificaterequest` resources.
 
 This behaviour will fill the ETCD with resources until the quota is reached.
 
@@ -56,40 +53,40 @@ kubectl get certificaterequests -A | wc -l
 
 If you have a huge number of certificate requests (+1000 for example), you have found the root cause.
 
-To resolve the situation, we propose the following way:
+To resolve the situation, we propose the following method:
 
-* Stop cert-manager
+- Stopping cert-manager
 
 ```bash
 kubectl scale deployment --replicas 0 cert-manager
 ```
 
-* Flush all certificaterequests resources
+- Flushing all certificaterequests resources
 
 ```bash
 kubectl delete certificaterequests --all
 ```
 
-* Update cert-manager
+- Updating cert-manager
 
 There is no generic way to do this, but if you use Helm we recommend you to use it for the update.
 [Cert Manager official documentation](https://cert-manager.io/docs/installation/kubernetes/)
 
-* Fix the issue
+- Fixing the issue
 
 We recommend you to take the following steps to troubleshoot your cert-manager, and to ensure that everything is correctly configured:
 [Acme troubleshoot](https://cert-manager.io/docs/faq/acme/)
 
-* Start cert-manager
+- Starting cert-manager
 
 ### Other cases
 
 If cert-manager is not the root cause, you should turn to the other running operators which create kubernetes resources.
 
 We have found that the following resources can sometimes be generated continuously by existing operators:
-> backups.velero.io
-ingress.networking.k8s.io
-ingress.extensions
+<br>backups.velero.io
+<br>ingress.networking.k8s.io
+<br>ingress.extensions
 
 If that still does not cover your case, you can use a tool like [ketall](https://github.com/corneliusweig/ketall) to easily list and count resources in your cluster.
 
