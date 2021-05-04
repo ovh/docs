@@ -10,7 +10,7 @@ legacy_guide_number: g1937
 **Last updated 26th April 2021**
 
 
- ## Objective
+## Objective
 
 *ModSecurity* is a complementary Apache module that filters all incoming requests on your web server. It increases security against known vulnerabilities by intercepting and filtering requests before they are processed by any scripts. 
 
@@ -50,7 +50,7 @@ In the new window, make sure that **Application firewall** is set to `activated`
 
 ### Activating the application firewall for individual domains in Multisite
 
-Switch to the `Multisite`{.action} tab of your hosting plan. Click on the `...` {.action} button in the row of the respecive domain and select the `Modify domain`{.action} option. 
+Switch to the `Multisite`{.action} tab of your hosting plan. Click on the `...`{.action} button in the row of the respecive domain and select the `Modify domain`{.action} option. 
 
 
 ![managemultisite](images/firewall-modify-multisite.png){.thumbnail}

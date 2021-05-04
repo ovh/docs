@@ -2,8 +2,7 @@
 title: 'Weiterleitung einer von OVH verwalteten Domain'
 slug: domainweiterleitung
 excerpt: 'In dieser Anleitung lernen Sie die verschiedenen Weiterleitungsarten kennen und erfahren, wie Sie diese für von OVH verwaltete Domains einrichten.'
-section: Allgemein
-order: 1
+section: DNS und DNS-Zone
 ---
 
 **Stand 27.11.2018**

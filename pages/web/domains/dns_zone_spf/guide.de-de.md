@@ -2,8 +2,7 @@
 title: Einen SPF-Eintrag zur Konfiguration Ihrer Domain hinzufügen
 excerpt: Erfahren Sie hier, wie Sie einen SPF-Eintrag für Ihre OVHcloud Domain konfigurieren
 slug: webhosting_spf-eintrag
-section: Fortgeschrittene Nutzung
-order: 5
+section: DNS und DNS-Zone
 ---
 
 > [!primary]
