@@ -18,7 +18,7 @@ Our new Load Balancer as a Service (LBaaS) solution is based on [Openstack Octav
 
 - a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
 - You need to have activated the GRA9 region in your project
-- Use the Openstack command line environment ([Tutorial](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/))
+- Using the Openstack command line environment ([Tutorial](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/))
 - You need to have the Openstack client set up
 
 ## Instructions
