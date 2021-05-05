@@ -13,12 +13,12 @@ order: 2
 
 Il est possible de voir apparaître sur votre navigateur internet la page d'erreur **Site non installé**, notamment lors de la première installation de votre site web.
 
-![site-not-installed](images/site-not-installed.png)
+![site-not-installed](images/site-not-installed.png){.thumbnail}
 
 **Découvrez comment identifier et résoudre la page d'erreur « Site non installé »**
 
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
-> 
+>
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](../erreur-site-non-installe/#aller-plus-loin_1) de ce guide.
 
 ## Prérequis
@@ -33,7 +33,7 @@ La page **Site non installé** s’affiche dans deux situations :
 
 1. Votre domaine n’est pas présent pas dans la partie [multisite](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-1-acceder-a-la-gestion-multisite) de votre hébergement.
 
-2. Il n'est pas relié, via sa `zone DNS`{.action}, à votre hébergement. 
+2. Il n'est pas relié, via sa `zone DNS`{.action}, à votre hébergement.
 
 Les étapes suivantes vous permettront de corriger l’erreur `Site non installé` dans ces deux situations.
 
@@ -45,7 +45,7 @@ Sélectionnez l'hébergement concerné dans la liste, puis cliquez sur l’ongle
 
 |Scénarios|Action à entreprendre|
 |---|---|
-|Le nom de votre site apparaît dans le tableau.|Si vous venez d’ajouter le nom de votre site dans la partie multisite de votre hébergement, patientez une vingtaine de minutes puis rafraîchissez le cache de votre navigateur. Si le message « Site non installé » apparaît toujours, passez à [l'étape 2](../#checkdomainlink)|
+|Le nom de votre site apparaît dans le tableau.|Si vous venez d’ajouter le nom de votre site dans la partie multisite de votre hébergement, patientez une vingtaine de minutes puis rafraîchissez le cache de votre navigateur. Si le message « Site non installé » apparaît toujours, passez à [l'étape 2](../#checkdomainlink).|
 |Le domaine ou le sous-domaine lié à votre site n'apparaît pas dans le tableau.|Ajoutez votre domaine au `multisite`{.action} selon ce [guide](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine).|
 |Le nom de domaine a été supprimé du multisite sans action de votre part.|Votre domaine ou sa zone DNS sont peut-être gérés depuis un autre compte. Ajoutez votre domaine au multisite selon ce [document](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
 
@@ -70,7 +70,7 @@ Pour cela, rendez vous dans la partie `Domaines`{.action}, sélectionnez votre d
 |Scénarios possibles|Action à entreprendre|
 |---|---|
 |Dans la zone DNS, votre domaine est relié à l'adresse IP de votre hébergement par une entrée de type A (pour IPv4) ou AAAA ( pour IPv6) ![zoneDNS_IP2](images/zoneDNS_IP2.png)|Ceci indique que la configuration de votre nom de domaine est correcte. Suite aux dernières modifications dans vos DNS, votre site s'affichera sous 48 heures au maximum. Pensez également à redémarrer vos appareils (PC, smartphone, box, etc.) et à vider le cache de votre navigateur.|
-|Votre zone DNS ne comporte pas d'entrée de type A ou AAAA reliant votre domaine à l'adresse IP de votre hébergement. Ou l'entrée existante pointe sur une autre adresse IP.|Ajoutez un nouvelle entrée de type A ou corrigez l'entrée existante selon ce [document](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/)|
+|Votre zone DNS ne comporte pas d'entrée de type A ou AAAA reliant votre domaine à l'adresse IP de votre hébergement. Ou l'entrée existante pointe sur une autre adresse IP.|Ajoutez un nouvelle entrée de type A ou AAAA ou corrigez l'entrée existante selon ce [document](https://docs.ovh.com/fr/domains/generalites-serveurs-dns/)|
 |Votre domaine n'apparaît pas dans la partie `Domaines`{.action} de votre espace client. Ou l'onglet `Zone DNS`{.action} de votre domaine s'affiche de la façon suivante ![zoneDNS_NDD_pas_sur_lEC2](images/zoneDNS_NDD_pas_sur_lEC2.png)|Cela signifie que votre domaine n'est pas géré depuis votre espace client OVHcloud. Déterminez son registrar via notre outil [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl) et les serveurs DNS auxquels il est lié. Retrouvez et modifiez la zone DNS concernée en conséquence selon ce [guide](https://docs.ovh.com/fr/hosting/multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe)|
 |Cet avertissement s'affiche dans l'onglet `Zone DNS`{.action} ![avertissement_zoneDNS_pas_sur_srv_DNS](images/avertissement_zoneDNS_pas_sur_srv_DNS.PNG)|Vous devrez donc modifier les serveurs DNS de votre domaine en conséquence selon ce [document](https://docs.ovh.com/fr/domains/editer-ma-zone-dns/). 
 
