@@ -38,7 +38,7 @@ La page **Site non installé** s’affiche dans deux situations :
 
 Les étapes suivantes vous permettront de corriger l’erreur `Site non installé` dans ces deux situations.
 
-### Étape 1 : Vérifier le multisite de votre hébergement
+### Étape 1 : Vérifier la partie multisite de votre hébergement
 
 Dans votre espace client OVHcloud, allez dans `Web cloud`{.action}, puis sur `Hébergements`{.action}.
 
