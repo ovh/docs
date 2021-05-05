@@ -648,7 +648,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >> >
 >> > **address**
 >> >
->> >> Filtrer les valeurs par adresse IPV4 (IPV4)
+>> >> Filtrer les valeurs par adresse IPv4 (IPv4)
 >> >
 >> > **status**
 >> >
@@ -679,7 +679,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >> >
 >> > **address** *
 >> >
->> >> L'adresse IPV4 de votre serveur (IPV4)
+>> >> L'adresse IPv4 de votre serveur (IPv4)
 >> >
 >> > **backup**
 >> >
@@ -1627,7 +1627,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >> >
 >> > **address**
 >> >
->> >> Filtrer les valeurs par adresse IPV4 (IPV4)
+>> >> Filtrer les valeurs par adresse IPv4 (IPv4)
 >> >
 >> > **status**
 >> >
@@ -1658,7 +1658,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >> >
 >> > **address** *
 >> >
->> >> L'adresse IPV4 de votre serveur (IPV4)
+>> >> L'adresse IPv4 de votre serveur (IPv4)
 >> >
 >> > **backup**
 >> >
@@ -2502,7 +2502,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >> >
 >> > **address**
 >> >
->> >> Filtrer les valeurs par adresse IPV4 (IPV4)
+>> >> Filtrer les valeurs par adresse IPv4 (IPv4)
 >> >
 >> > **status**
 >> >
@@ -2533,7 +2533,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >> >
 >> > **address** *
 >> >
->> >> L'adresse IPV4 de votre serveur (IPV4)
+>> >> L'adresse IPv4 de votre serveur (IPv4)
 >> >
 >> > **displayName**
 >> >

@@ -648,7 +648,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >
 >> > **address**
 >> >
->> >> Filter Values by IPV4 address (IPV4)
+>> >> Filter Values by IPv4 address (IPv4)
 >> >
 >> > **status**
 >> >
@@ -679,7 +679,7 @@ Accessing HTTP protocol related elements (Frontend, Firmware, etc.).
 >> >
 >> > **address** *
 >> >
->> >> The IPV4 address of your server (IPV4)
+>> >> The IPv4 address of your server (IPv4)
 >> >
 >> > **backup**
 >> >
@@ -1627,7 +1627,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >
 >> > **address**
 >> >
->> >> Filter Values by IPV4 address (IPV4)
+>> >> Filter Values by IPv4 address (IPv4)
 >> >
 >> > **status**
 >> >
@@ -1658,7 +1658,7 @@ Access the elements related to the TCP protocol (Frontend, Farm, etc.).
 >> >
 >> > **address** *
 >> >
->> >> The IPV4 address of your server (IPV4)
+>> >> The IPv4 address of your server (IPv4)
 >> >
 >> > **backup**
 >> >
@@ -2502,7 +2502,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >
 >> > **address**
 >> >
->> >> Filter Values by IPV4 address (IPV4)
+>> >> Filter Values by IPv4 address (IPv4)
 >> >
 >> > **status**
 >> >
@@ -2533,7 +2533,7 @@ Access the UDP protocol elements (Frontend, Farm, etc.).
 >> >
 >> > **address** *
 >> >
->> >> The IPV4 address of your server (IPV4)
+>> >> The IPv4 address of your server (IPv4)
 >> >
 >> > **displayName**
 >> >
