@@ -100,7 +100,7 @@ Nel menu `VPN`{.action}, sezione `Tunnel setting`{.action}, clicca sul simbolo `
 
 - Metodo di connessione: Default
 - Protocollo di scambio di chiavi: V2
-- Protocollo Internet: IPV4
+- Protocollo Internet: IPv4
 - Interfaccia: WAN
 
 Tuttavia è obbligatorio inserire l’IP del punto di connessione IPSec di OVHcloud, nel campo `Remote gateway`{.action}.
@@ -146,7 +146,7 @@ Clicca sul simbolo `+`{.action}.
 
 ![zerto vpn](images/image-EN-17.png){.thumbnail}
 
-Verifica che la modalità sia impostata su « Tunnel IPV4 ».
+Verifica che la modalità sia impostata su « Tunnel IPv4 ».
 
 ##### 3.2.2 Phase 2: Rete Locale
 

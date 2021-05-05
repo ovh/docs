@@ -55,7 +55,7 @@ Jeśli korzystasz na przykład z oprogramowania PuTTy, wystarczy, że otworzysz 
 
 ![zastosowanie putty](images/putty1.png){.thumbnail}
 
-Po otworzeniu terminala należy wpisać następujące polecenie, aby połączyć się z Twoim serwerem VPS używając informacji przekazanych e-mailem (nazwa użytkownika i adres IPV4):
+Po otworzeniu terminala należy wpisać następujące polecenie, aby połączyć się z Twoim serwerem VPS używając informacji przekazanych e-mailem (nazwa użytkownika i adres IPv4):
 
 ```sh
 ssh username@IPv4_of_your_VPS
