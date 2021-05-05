@@ -23,7 +23,7 @@ Siga o processo de instalação do Hyper-V, a associação de um switch virtual 
 - Para usar neste manual uma imagem ISO do sistema operativo que será instalado na sua máquina virtual (CentOS 7).
 - Um vRack entregue na sua conta OVHcloud.
 - Um Bloco IP de 4 endereços IP ou mais.
-- Ter acesso à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
