@@ -1,31 +1,31 @@
 ---
-title: Getting started with Load Balancer on Public Cloud
+title: Getting started with Load Balancer on Public Cloud (Beta)
 slug: getting-started-with-load-balancer-public-cloud
-excerpt: Discover how to start a Load Balancer on Public Cloud
+excerpt: Discover how to launch a Load Balancer on Public Cloud
 section: Getting started
 order: 1
 ---
 
-**Last updated 30/04/2021**
+**Last updated 5th May 2021**
 
 ## Objective
 
-You want to discover our new Load Balancer solution, integrated into the Public Cloud. They are based on [Openstack Octavia](https://wiki.openstack.org/wiki/Octavia) service.
+Our new Load Balancer as a Service (LBaaS) solution is based on [Openstack Octavia](https://wiki.openstack.org/wiki/Octavia) and will be fully integrated into the Public Cloud universe.
 
-**Discover how to start a Load Balancer on Public Cloud.**
+**Learn how to configure an OVHcloud Load Balancer with the help of this guide.**
 
 ## Requirements
 
-- A project in [Public Cloud](https://www.ovhcloud.com/en-gb/public-cloud/)
+- a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
 - You need to have activated the GRA9 region in your project
 - Use the Openstack command line environment ([Tutorial](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/))
-- You need to have the Openstack client
+- You need to have the Openstack client set up
 
-## In practice
+## Instructions
 
 ### Configuring your private network
 
-Before you start using a Load Balancer, you will need to create a private network in the region.
+Before creating a Load Balancer, you will need to set up a private network:
 
 ```
 openstack network create my_network
@@ -39,63 +39,63 @@ openstack router add subnet my_router my_subnet
 openstack router set --external-gateway Ext-Net my_router
 ```
 
-> [!alert]
+> [!warning]
 >
-> Warning, the network must be deployed at least at GRA9 and must not be part of subnet 10.224.0.0/16 (should be functional when generally available)
+> Since this guide only concerns the Beta version of the service, the network must be deployed at least at GRA9 and must not be part of the subnet 10.224.0.0/16. (These restrictions will be lifted with general availability.)
 
-You can now attach your instances to this new network. We recommend following this guide to [attach your instance to your network](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#step-3-integrating-an-instance-into-vrack_1). Take note of the addresses of your instances in your network with the following command.
+You can now attach your instances to the new network. We recommend following our guide to [integrate an instance into vRack](https://docs.ovh.com/gb/en/public-cloud/public-cloud-vrack/#step-3-integrating-an-instance-into-vrack_1). List the addresses of your instances in your network with the following command.
 
 ```
 openstack server list
 ```
 
-You now need to configure your instances to have their IP addresses configured on their interfaces.
+In the next step, configure the network interfaces of your instances according to this output.
 
 ### Creating the Load Balancer
 
-You can view a list of the different Load Balancer flavors we offer with this command.
+You can view a list of the different Load Balancer flavors we offer with this command:
 
 ```
 openstack loadbalancer flavor list
 ```
 
-You can now create your Load Balancer with this command. In this example, we will create a Small Load Balancer.
+You can now create your Load Balancer with the following command. In this example, we will create a "Small" Load Balancer.
 
 ```
 openstack loadbalancer create --name my_load_balancer --flavor small --vip-subnet-id my_subnet
 ```
 
-Your Load Balancer will be configured with an IP address in the private network. If you want to have access from the internet, you will need to attach a Floating IP address.
+Your Load Balancer will be configured with an IP address of the private network. If you want to have access from the internet, you will need to attach a Floating IP address.
 
-### Attach a Floating IP address to a Load Balancer
+### Attaching a Floating IP address to a Load Balancer
 
-This is how to attach a Floating IP address to a Load Balancer.
+This is how to attach a Floating IP address to a Load Balancer:
 
 ```
 openstack floating ip create Ext-Net
-
 openstack floating ip set --port <my_load_balancer_vip_port_id> <floating_ip>
 ```
 
 > [!primary]
 >
-> To retrieve the VIP port ID of your Load Balancer, you can do `openstack loadbalancer show my_load_balancer`.
+> To retrieve the VIP port ID of your Load Balancer, use `openstack loadbalancer show my_load_balancer`.
+
 
 ### Configuring your Load Balancer
 
-In this example, we will just make an HTTP Load Balancer. To do this, you first need to create a Listner. You can use it to listen on port 80 of the Load Balancer.
+In this example we will configure a HTTP Load Balancer. In order to listen on port 80 of the Load Balancer, create a Listener with this command:
 
 ```
-openstack loadbalancer listner create --name my_listener_http --protocol HTTP --protocol-port 80 my_loadbalancer
+openstack loadbalancer listener create --name my_listener_http --protocol HTTP --protocol-port 80 my_loadbalancer
 ```
 
-Once the Listener has been created, you need to add the different instances that can respond to customer requests. To do this, you must create an Instance Pool.
+Once the Listener has been created, you need to add each instance that can respond to external requests. To do this, you must create an Instance Pool:
 
 ```
 openstack loadbalancer pool create --name my_pool_http --lb-algorithm ROUND_ROBIN --listener my_listener --protocol HTTP
 ```
 
-And you can now add your instances to the Pool.
+Add your instances to the Instance Pool:
 
 ```
 openstack loadbalancer member create --subnet-id my_subnet --address <private_ip_instance_1> --protocol-port 80 my_pool
@@ -106,12 +106,12 @@ You can now access your Load Balancer via the Floating IP or private IP address 
 
 ## Go further
 
-[Discover other pages about Load Balancer on Public Cloud](../../load-balancer-octavia)
-
 [Official documentation of Openstack Octavia](https://docs.openstack.org/octavia/latest/)
 
 [Cookbook Openstack Octavia](https://docs.openstack.org/octavia/latest/user/guides/basic-cookbook.html)
 
-Join our community of users on <https://community.ovh.com>.
+Discover other pages about [Load Balancer on Public Cloud](../../load-balancer-octavia)
 
-**Join [out Gitter room ](https://gitter.im/ovh/octavia-loadbalancer) to discuss with the OVHcloud team and other users of this lab.**
+Join our community of users on <https://community.ovh.com/en/>.
+
+**Join [our Gitter room](https://gitter.im/ovh/octavia-loadbalancer) to discuss with the OVHcloud team and other users of this lab.**
