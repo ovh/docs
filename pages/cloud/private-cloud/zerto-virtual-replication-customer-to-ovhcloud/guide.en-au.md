@@ -91,7 +91,7 @@ If the default values are correct:
 
 - Connection Method: Default
 - Key Exchange version: V2
-- Internet Protocol: IPV4
+- Internet Protocol: IPv4
 - Interface: WAN
 
 The only required parameter is the OVHcloud IPSec endpoint IP address.
@@ -135,7 +135,7 @@ Click on `+`{.action}.
 
 ##### 3.2.1 Phase 2: General information
 
-Check that the mode is set to  "Tunnel IPV4".
+Check that the mode is set to  "Tunnel IPv4".
 
 ![](images/image-EN-17.png){.thumbnail}
 

@@ -102,7 +102,7 @@ Vous pouvez conserver les valeurs par défaut :
 
 - Methode de connection : Default
 - Protocole d’échange de clés : V2
-- Protocole Internet : IPV4
+- Protocole Internet : IPv4
 - Interface : WAN
 
 Vous devez néanmoins renseigner impérativement l’IP du point de connexion IPSec d’OVHcloud, dans le champ `Remote gateway`{.action}.
@@ -148,7 +148,7 @@ Cliquez sur le bouton `+ `{.action}.
 
 ![zerto vpn](images/image-EN-17.png){.thumbnail}
 
-Vérifiez que le mode est bien positionné sur « Tunnel IPV4 ».
+Vérifiez que le mode est bien positionné sur « Tunnel IPv4 ».
 
 ##### 3.2.2 Phase 2 : Réseau Local
 

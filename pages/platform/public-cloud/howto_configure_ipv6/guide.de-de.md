@@ -1,5 +1,5 @@
 ---
-title: 'IPV6 auf einer Public Cloud Instanz konfigurieren'
+title: 'IPv6 auf einer Public Cloud Instanz konfigurieren'
 slug: ipv6-konfigurieren
 excerpt: 'Anleitung zum Konfigurieren von IPv6 auf einer Public Cloud Instanz'
 section: 'Netzwerk und IP'

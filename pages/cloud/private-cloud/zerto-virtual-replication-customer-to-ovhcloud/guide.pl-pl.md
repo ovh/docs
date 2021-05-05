@@ -100,7 +100,7 @@ Możesz zachować wartości domyślne:
 
 - Metoda połączenia: Default
 - Protokół wymiany kluczy: V2
-- Protokół internetowy: IPV4
+- Protokół internetowy: IPv4
 - Interfejs: WAN
 
 Jednak w polu `Remote gateway`{.action} musisz wpisać adres IP punktu połączenia IPSec OVHCloud.
@@ -146,7 +146,7 @@ Kliknij przycisk `+`{.action}.
 
 ![zerto vpn](images/image-EN-17.png){.thumbnail}
 
-Sprawdź, czy tryb jest ustawiony na „Tunnel IPV4”.
+Sprawdź, czy tryb jest ustawiony na „Tunnel IPv4”.
 
 ##### 3.2.2 Faza 2: sieć lokalna
 
