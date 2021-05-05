@@ -148,4 +148,4 @@ Une fois la procédure de transfert terminée, vous pouvez gérer votre nom de d
 
 [Migration de votre site Web et de vos e-mails vers OVHcloud](../../hosting/migrer-mon-site-chez-ovh/){.external}
 
-Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.
