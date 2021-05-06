@@ -42,14 +42,12 @@ The OS and Docker demon version on your nodes will be regularly updated. Current
 * Docker: 18.06.3
 * Containerd: 1.4.3
 
-
 ## CRI (Container Runtime Interface)
 
 As recommended by Kubernetes, `docker` used as CRI is now deprecated since `1.20`, more information [here](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/).
 
 * If you create a new cluster or a node pool after February 2021, the 19th (in any supported Kubernetes version) or if you upgrade an existing cluster to 1.20, `containerd` is used as the default CRI for each nodes. Docker remains installed in our managed OS to ensure compatibilty for specific use cases.
 * For nodes pools created before that date, existing node pools will still use `docker` as the CRI on all nodes until you update that cluster to `1.20` or above.
-
 
 ## CNI (Cluster Network Interface)
 
@@ -94,5 +92,35 @@ Feature gates:
 
 ## Reserved resources
 
-Each worker node has 1 GB of RAM and 100 mCPU reserved for Kubernetes components.  
+Each worker node has GB of RAM and mCPU reserved for Kubernetes components.  
 This reserved quotas may evolve in the future, the page will be updated when it does
+
+To guarantee the availabilty of customers node, we reserverd resources (CPU and RAM), proportionally on the instance flavor.
+
+* CPU
+
+The calcul used to estimed the reservation is :  (10 % of 1 CPU + 0,5% of all CPU cores)
+The unit is in seconds: 1 CPU = 1 second, 10% of 1 CPU = 100 ms, 50% of 2 CPU = 1 s
+
+For example for a flavor b2-15, with 4 cpu: (10 % of 1 CPU + (0,5 * 4)= 120 ms
+
+* RAM
+
+The calcul used to estimed the reservation is : ( (768M Kubernetes + 5% of total memory) + ( 256M system) )
+
+* Storage
+
+Mathematical "log" function is egal to "ln(10)".
+
+The calcul used to estimed the reservation is : ( ( log(total storage)*2 ) + ( log(total storage)*8 ) + ( 10% of total storage ) )
+for example: `log(100) = 2`.
+
+This array helping you to predict resouces available.
+
+| Flavor | VCore | CPU Reserved ms | RAM Total | RAM Reserved Mb | Storage Total | Storage Reserved Mb |
+|-|-|-|-|-|-|-|
+| b2-7 | 2 | 160 | 7 | 1,85 | 50 | 22 |
+| b2-15 | 4 | 170 | 15 | 2,25 | 100 | 30 |
+| b2-30 | 8 | 190 | 30 | 3 | 200 | 43 |
+| b2-60 | 16 | 230 | 60 | 4,5 | 400 | 66 |
+| b2-120 | 32 | 310 | 120 | 7,5 | 400 | 66 |
