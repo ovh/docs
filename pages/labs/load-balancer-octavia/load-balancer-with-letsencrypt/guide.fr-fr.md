@@ -30,7 +30,7 @@ Si vous n'êtes pas encore familier avec la création du Load Balancer, veuillez
 
 ### Nouveau certificat
 
-#### Création d'une instance pour Let's Encrypt
+#### Créer une instance pour Let's Encrypt
 
 Vous pouvez créer une instance dans votre projet dans la région où votre Load Balancer se situe. Pour plus de détails à ce sujet, consultez notre [guide](https://docs.ovh.com/fr/public-cloud/premiers-pas-instance-public-cloud/). Nous vous recommandons d'utiliser Ubuntu 20.04 comme système d'exploitation. Le format d2-2 sera suffisant pour cette opération.
 
@@ -107,4 +107,4 @@ Découvrez [les autres pages de documentation Load Balancer Public Cloud](../)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 
-**Pour discuter avec les autres utilisateurs du lab et avec l'équipe d'OVHcloud, venez sur [notre room Gitter](https://gitter.im/ovh/octavia-loadbalancer)**
+**Pour discuter avec les autres utilisateurs du lab et avec l'équipe OVHcloud, venez sur [notre room Gitter](https://gitter.im/ovh/octavia-loadbalancer)**
