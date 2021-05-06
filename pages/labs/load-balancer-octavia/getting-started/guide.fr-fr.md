@@ -1,7 +1,7 @@
 ---
-title: Premiers pas avec le service Load Balancer sur le Public Cloud (Beta)
+title: Premiers pas avec le service Load Balancer pour Public Cloud (Beta)
 slug: premiers-pas-avec-load-balancer-public-cloud
-excerpt: Découvrez comment débuter avec un Load Balancer sur le Public Cloud
+excerpt: Découvrez comment débuter avec un Load Balancer Public Cloud
 section: Premiers pas
 order: 1
 ---
@@ -18,7 +18,7 @@ Notre nouvelle solution Load Balancer as a Service (LBaaS) est basée sur le ser
 
 - Un [projet Public Cloud](https://www.ovhcloud.com/fr/public-cloud/)
 - Avoir activé la région GRA9 sur votre projet
-- Utiliser l'environement de commande d'Openstack ([Tutoriel](https://docs.ovh.com/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/))
+- Utiliser l'environnement de commande Openstack ([Tutoriel](https://docs.ovh.com/fr/public-cloud/preparer-lenvironnement-pour-utiliser-lapi-openstack/))
 - Avoir installé le client Openstack Octavia
 
 ## En pratique
