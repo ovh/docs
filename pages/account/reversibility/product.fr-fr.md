@@ -1,7 +1,6 @@
 ---
 title: Reversibilité
 slug: reversibilite
-excerpt: Politiques de réversibilités d'OVHcloud
+excerpt: Retrouvez les politiques de réversibilité des produits OVHcloud
 Sections: Politiques de réversibilité
-hidden: true
 ---
