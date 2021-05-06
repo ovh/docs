@@ -94,22 +94,17 @@ In any case, there are some ports that you shouldn't block on your instances if 
 The `vRack` feature is currently available and compliant with our Managed Kubernetes Service as a public beta feature.  
 For more information, please refer to the [issue #15 of our public roadmap](https://github.com/ovh/public-cloud-roadmap/issues/15).  
 
-To prevent any conflict, we advise you to:
+To prevent any conflict, we advise you to keep `DHCP` service running in your private network.
 
-- keep DHCP service running in your private network.
-- *not* use any range within `10.2.0.0/16`, but the following IP range:
-
-  ```text
-  192.168.0.*/16
-  ```
 ### Known not compliant IP ranges
 
 The following subnets are not compliant with the `vRack` feature and can generate some incoherent behaviours with our used overlay networks:
 
 ```text
+10.2.0.0/16 # Subnet used by pods
 192.168.15.0/24
 192.168.16.0/24
-172.17.0.0/16 (subnet used by the Docker daemon)
+172.17.0.0/16 # Subnet used by the Docker daemon
 ```
 
 ## Cluster health
