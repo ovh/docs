@@ -10,7 +10,7 @@ order: 1
 
 ## Objective
 
-Our new Load Balancer as a Service (LBaaS) solution is based on [Openstack Octavia](https://wiki.openstack.org/wiki/Octavia) and will be fully integrated into the Public Cloud universe. 
+Our new Load Balancer as a Service (LBaaS) solution is based on [OpenStack Octavia](https://wiki.openstack.org/wiki/Octavia) and will be fully integrated into the Public Cloud universe. 
 
 After setting up your Load Balancer, you can configure it with a certificate in order to process HTTPS connections.
 
@@ -20,8 +20,8 @@ After setting up your Load Balancer, you can configure it with a certificate in 
 
 - a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
 - You need to have activated the GRA9 region in your project
-- Using the Openstack command line environment ([Tutorial](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/))
-- You need to have the Openstack client set up
+- Using the OpenStack command line environment ([Tutorial](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/))
+- You need to have the OpenStack client and OpenStack Barbican set up
 - You need to have a Load Balancer running in your project
 
 If you are not yet familiar with creating a Load Balancer, please follow our guide on [Getting started with Load Balancer on Public Cloud](../../load-balancer-octavia/getting-started-with-load-balancer-public-cloud) before you continue with this tutorial.
@@ -73,7 +73,7 @@ Next, create a PKCS#12 package with your certificate in it:
 ubuntu@letsencrypt:~$ sudo openssl pkcs12 -export -inkey domain.tld.pem -in domain.tld.pem -out domain.tld.p12
 ```
 
-You have to download this file directly to your local device in order to send it to Openstack Barbican ("Secret as a Service").
+You have to download this file directly to your local device in order to send it to OpenStack Barbican ("Secret as a Service").
 
 ```
 openstack secret store --name='LetsEncrypt-cert-domain.tld' -t 'application/octet-stream' -e 'base64' --payload="$(base64 < server.p12)"
@@ -101,7 +101,7 @@ You can now securely access your Load Balancer with Let's Encrypt.
 
 [Cookbook OpenStack Octavia](https://docs.openstack.org/octavia/latest/user/guides/basic-cookbook.html)
 
-Discover other pages about [Load Balancer on Public Cloud](../../load-balancer-octavia)
+Discover other pages about [Load Balancer on Public Cloud](../)
 
 Join our community of users on <https://community.ovh.com/en/>.
 
