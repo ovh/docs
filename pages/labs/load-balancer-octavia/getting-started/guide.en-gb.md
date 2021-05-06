@@ -10,7 +10,7 @@ order: 1
 
 ## Objective
 
-Our new Load Balancer as a Service (LBaaS) solution is based on [Openstack Octavia](https://wiki.openstack.org/wiki/Octavia) and will be fully integrated into the Public Cloud universe.
+Our new Load Balancer as a Service (LBaaS) solution is based on [OpenStack Octavia](https://wiki.openstack.org/wiki/Octavia) and will be fully integrated into the Public Cloud universe.
 
 **Learn how to configure an OVHcloud Load Balancer with the help of this guide.**
 
@@ -18,8 +18,8 @@ Our new Load Balancer as a Service (LBaaS) solution is based on [Openstack Octav
 
 - a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
 - You need to have activated the GRA9 region in your project
-- Using the Openstack command line environment ([Tutorial](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/))
-- You need to have the Openstack client set up
+- Using the OpenStack command line environment ([Tutorial](https://docs.ovh.com/gb/en/public-cloud/prepare_the_environment_for_using_the_openstack_api/))
+- You need to have the OpenStack client set up
 
 ## Instructions
 
@@ -106,11 +106,11 @@ You can now access your Load Balancer via the Floating IP or private IP address 
 
 ## Go further
 
-[Official documentation of Openstack Octavia](https://docs.openstack.org/octavia/latest/)
+[Official documentation of OpenStack Octavia](https://docs.openstack.org/octavia/latest/)
 
-[Cookbook Openstack Octavia](https://docs.openstack.org/octavia/latest/user/guides/basic-cookbook.html)
+[Cookbook OpenStack Octavia](https://docs.openstack.org/octavia/latest/user/guides/basic-cookbook.html)
 
-Discover other pages about [Load Balancer on Public Cloud](../../load-balancer-octavia)
+Discover other pages about [Load Balancer on Public Cloud](../)
 
 Join our community of users on <https://community.ovh.com/en/>.
 
