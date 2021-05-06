@@ -1,29 +1,109 @@
 ---
-title: 'Postępowanie w przypadku błędu 500 Internal Server Error'
-excerpt: 'Dowiedz się, jak przeprowadzić diagnopstykę w przypadku błędu 500 Internal Server Error'
-id: '1987'
-slug: hosting_www_postepowanie_w_przypadku_bledu_500_internal_server_error
+title: Co zrobić w przypadku błędu 500 Internal Server Error?
+legacy_guide_number: 1987
+slug: błąd-500-internal-server-error
+excerpt: Zdiagnozuj najczęstsze przypadki błędów 500
 section: Diagnostyka
 ---
 
-## .htaccess
-Jeśli składnia pliku .htaccess jest nieprawidłowa, serwer www wyświetli błąd 500. Należy zmienić nazwę pliku .htaccess na przykład na .htaccess_bak. Jeśli strona zacznie działać, przyczyną błędu jest plik .htaccess.
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
 
-Kliknij tutaj, aby uzyskać więcej informacji: []({legacy}1967)
+**Ostatnia aktualizacja z dnia 06-05-2021**
+
+## Wprowadzenie
+
+Błędy 500 "Internal Server Error" mogą dotyczyć całości lub części Twojej strony, być losowe lub stałe. Mogą również pojawić się w postaci białej strony.
+
+![error500](images/error-500-2.png){.thumbnail}
+
+Zdarza się to również w wyniku aktualizacji przeprowadzonej **automatycznie** przez komponent Twojej strony WWW.
+
+**Dowiedz się, jak zdiagnozować najczęstsze przypadki błędów 500.**
+
+> OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
+>
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź](#gofurther) ten przewodnik.
 
 
-## Uprawnienia
-Musisz przestrzegać kilku reguł bezpieczeństwa na poziomie uprawnień, które nadajesz swoim skryptom:
+## Wymagania początkowe
 
-- Katalog główny Twojej strony musi mieć obowiązkowo uprawnienia 705 (uprawnienia ustawione domyślnie przez OVH). Chodzi o katalog / lub . (kropka) na serwerze FTP. Nie dokonuj tutaj zmian. 
-- Inne katalogi powinny mieć maksymalnie uprawnienia 755.
-- Skrypty php/cgi powinny mieć maksymalnie uprawnienia 755.
+- Posiadanie [hostingu](https://www.ovh.pl/hosting/)
+- Dostęp do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 
+## W praktyce
+
+Zanim przejdziesz dalej, sprawdź swoją stronę na kilku urządzeniach i przeglądarkach. Jeśli błąd 500 nie pojawia się w niektórych przypadkach (na przykład w przeglądarce innej niż Twoja), nie jest on powiązany z Twoimi usługami OVHcloud. Zrestartuj swoje urządzenia i skontaktuj się z technikiem informatycznym znajdującym się w pobliżu Twojego domu.
+
+Strona składa się z **kodu źródłowego** (na przykład pliki .php, widoczne podczas logowania do hostingu w [FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/),  do której często dodaje się **baza danych**.
+<br>Pomimo błędu 500, zaleca się wykonanie lokalnej kopii zapasowej wszystkich danych przed kolejną operacją:
+
+- Zapoznaj się z tym [przewodnikiem](../mutualise-guide-utilisation-filezilla/), aby pobrać kopię Twojego kodu źródłowego. 
+- Jeśli Twoja strona używa bazy danych, zapoznaj się również z tym [dokumentem](../exportation-bases-donnees/), aby pobrać jej kopię.
+
+W przypadku błędu 500 przywrócenie [strony](../erreur-500-internal-server-error/#restaurer-son-site) jest możliwe. Jednak bardziej pożądane jest przeprowadzenie szczegółowej diagnozy w celu określenia dokładnego źródła błędu.
+
+### Sprawdź logi Twojego hostingu
+
+Zapoznaj się najpierw z tym [przewodnikiem](../mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/), aby sprawdzić przyczynę błędu 500 w logach Twojego hostingu.
+
+### Przejdź na tryb programowania
+
+Aby wyświetlić ewentualne błędy PHP, przejdź do trybu `programowania`, korzystając z tych [wskazówek](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#etape-2-modifier-la-configuration-de-lhebergement-web).
+
+### Przetestuj plik .htaccess
+
+Błąd 500 może być związany z nieprawidłowością w pliku `.htaccess`. Plik ten jest zwykle umieszczony na pierwszym poziomie w folderze zawierającym Twoją stronę WWW na FTP. 
+
+Aby to sprawdzić, [zaloguj się przez FTP](../connexion-espace-stockage-ftp-hebergement-web/) do Twojego hostingu.
+
+Zmień nazwę pliku na `.htaccess.old` i przetestuj swoją stronę. 
+
+Jeśli domena jest ponownie dostępna, `.htaccess` jest kwestionowana. W związku z tym konieczne jest wprowadzenie zmian. Jeśli sobie tego życzysz, skontaktuj się z jednym z naszych [partnerów](https://partner.ovhcloud.com/pl/directory/).
+
+### Sprawdź uprawnienia na folderach i plikach
+
+Pliki i foldery tworzące Twoją stronę WWW posiadają określony poziom "uprawnień" w trybie odczytu, zapisu i wykonywania. W celu ochrony przed manipulacją złośliwymi lub błędnymi.
+
+Błąd 500 może być związany z nieprawidłowym poziomem praw dostępu do niektórych katalogów lub plików na Twojej stronie.
+
+Aby uzyskać dostęp do tych plików, zaloguj się przez FTP do Twojego hostingu zgodnie z naszą [dokumentacją](../connexion-espace-stockage-ftp-hebergement-web/).
+
+Przewodnik "[Korzystanie z programu FileZilla na Twoim hostingu](../mutualise-guide-utilisation-filezilla/#droits-des-fichiers-dossiers)" pomoże Ci w weryfikacji następujących elementów: 
+
+-	**Korzeń** hostingu (katalog jest zapisany `/` lub `.` w programie FTP) musi mieć uprawnienia 705 (są to uprawnienia domyślne). Zalecamy, aby nie zmieniać tego poziomu uprawnień.
+-	Dokumentacja musi być w 705 r.
+-	Pliki muszą mieć uprawnienia 604.
+
+### Dostęp do informacji o błędach w skryptach
+
+Ze względów bezpieczeństwa Twoja strona WWW ukrywa ewentualne szczegóły dotyczące źródła błędu 500 dla każdego, kto ją łączy za pomocą przeglądarki internetowej.
+
+Jeśli chcesz uzyskać dostęp do tych danych, możesz, korzystając z formuły hostingu [pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml), połączyć się ze stroną za pomocą [połączenia ssh](../mutualise-le-ssh-sur-les-hebergements-mutualises/).
+
+### Przywróć zawartość strony
+
+> [!warning]
+>
+> Przywrócenie kodu źródłowego Twojej strony będzie dotyczyło wszystkich stron WWW hostingu OVHcloud.
+> 
+> Podczas przywracania zawartość Twojej przestrzeni FTP lub bazy danych zostaje zastąpiona kopią zapasową. Następnie nie będziesz mógł pobrać danych z serwera tuż przed przywróceniem danych.
+
+Aby przywrócić kod źródłowy Twojej strony, zapoznaj się z naszym przewodnikiem "[Przywracanie przestrzeni dyskowej hostingu](../restauration-ftp-filezilla-espace-client/)". 
+
+Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodnikiem "[Przywrócenie kopii zapasowej bazy danych](../mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client)", aby przywrócić ją do poprzedniego stanu.
+
+Jeśli po aktualizacji wersji PHP na Twoim hostingu wystąpił błąd 500, zapoznaj się z naszym przewodnikiem "[Konfiguracja PHP na hostingu](../configurer-le-php-sur-son-hebergement-web-mutu-2014/)" i wróć do poprzedniej konfiguracji.
 
 
-## Błąd skryptu
-Jeśli programujesz na przykład w perlu, błąd działania Twojego skryptu to błąd 500. Ze względów bezpieczeństwa nie uzyskasz więcej informacji. Aby sprawdzić działanie skryptów, możesz skorzystać z połączenia przez ssh (opcja dostępna od oferty Pro).
+## Sprawdź również <a name="gofurther"></a>
 
-Kliknij tutaj, aby uzyskać więcej informacji: []({legacy}1962)
+[Wszystko o pliku .htaccess](../hosting/mutualise-tout-sur-le-fichier-htaccess/)
 
+[Jak zdiagnozować białą stronę?](../hosting/comment-diagnostiquer-page-blanche/)
+
+[Kody odpowiedzi serwera HTTP](../hosting/mutualise-les-codes-de-reponse-dun-serveur-http/)
+
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com>.
