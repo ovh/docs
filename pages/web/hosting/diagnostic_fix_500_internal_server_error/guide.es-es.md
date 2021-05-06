@@ -29,8 +29,8 @@ A veces también se actualizan **automáticamente** en un componente del sitio w
 
 ## Requisitos
 
-- Tener un [plan de hosting.](https://www.ovh.com/fr/hebergement-web/)
-- Estar conectado al [área de cliente de OVHcloud.](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Tener un [plan de hosting](https://www.ovh.es/hosting/).
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 
 ## Procedimiento
@@ -39,7 +39,7 @@ Antes de continuar, compruebe su sitio web en varios dispositivos y navegadores.
 
 Un sitio web está formado por un **código fuente** (los archivos en .php, por ejemplo, visibles durante una conexión a su alojamiento a >pesar del error 500, es altamente recomendable realizar una copia de seguridad local de todos sus datos antes de realizar cualquier otra operación:
 
-- Consulte esta [guía](../mutualise-guide-utilisation-filezilla/) para obtener una copia de su código fuente. 
+- Consulte esta [guía](../mutualise-guide-utilisation-filezilla/) para obtener una copia de su código fuente.
 - Si su sitio web utiliza una base de datos, consulte también este [documento](../exportation-bases-donnees/) para obtener una copia de la misma.
 
 En caso de error 500, es totalmente posible realizar una [restauración](../erreur-500-internal-server-error/#restaurer-son-site) del sitio web. Sin embargo, es preferible realizar un diagnóstico a fondo para determinar el origen exacto del error.
