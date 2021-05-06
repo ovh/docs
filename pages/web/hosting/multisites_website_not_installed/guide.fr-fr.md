@@ -52,9 +52,10 @@ Sélectionnez l'hébergement concerné dans la liste, puis cliquez sur l’ongle
 
 ### Étape 2 : vérifier la zone DNS  de votre domaine <a name="checkdomainlink"></a>
 
-Vérifiez que votre domaine, via sa `zone DNS`{.action}, est relié à l’hébergement de votre site.
-
-Pour en savoir plus sur la notion de DNS, consultez notre guide [Éditer une zone DNS OVHcloud](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns).
+> [!primary]
+>
+> Cette étape vise à vérifier que votre domaine, via sa `zone DNS`{.action}, est relié à l’hébergement de votre site.
+> Pour en savoir plus sur la notion de DNS, consultez notre guide [Éditer une zone DNS OVHcloud](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns).
 
 #### 2.1 Identifier l’adresse IP de votre hébergement OVHcloud
 
