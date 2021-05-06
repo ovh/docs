@@ -64,6 +64,7 @@ STATUS: deployed
 REVISION: 1
 TEST SUITE: None
 NOTES:
+</code></pre>
 
 At the end of the install, as usual with most helm charts, you get the configuration information and some tips to
 test your `nginx-ingress` but the YAML provided is based on old API version ()extensions/v1beta1), the newest version is :
