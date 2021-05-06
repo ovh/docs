@@ -24,7 +24,7 @@ A veces también se actualizan **automáticamente** en un componente del sitio w
 
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 > 
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](../erreur-500-internal-server-error/#aller-plus-loin_1) de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
 
 
 ## Requisitos
@@ -97,7 +97,7 @@ Si su sitio web incluye una base de datos, consulte nuestra guía [Restaurar una
 Por último, si se ha producido un error al actualizar la versión PHP del alojamiento, consulte nuestra guía "[Configurar PHP en el alojamiento](../configurer-le-php-sur-son-hebergement-web-mutu-2014/)" para volver a la configuración anterior.
 
 
-## Más información
+## Más información <a name="gofurther"></a>
 
 [Todo sobre el archivo .htaccess](../hosting/mutualise-tout-sur-le-fichier-htaccess/)
 

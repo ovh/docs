@@ -24,7 +24,7 @@ Sie stammen manchmal auch von einem Update, das **automatisch** von einer Kompon
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Weitere Informationen finden Sie [hier](#Weiterführende).
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen spezialisierten Dienstleister und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Weitere Informationen finden Sie [hier](#gofurther).
 
 
 ## Voraussetzungen
@@ -97,7 +97,7 @@ Wenn Ihre Website eine Datenbank enthält, lesen Sie unsere [Anleitung "[Backup 
 Ist der Fehler 500 nach einem Update der PHP-Version Ihres Hostings aufgetreten, lesen Sie unsere Anleitung "[PHP-Version eines Webhostings ändern](../konfiguration_von_php_fur_ein_ovh_webhosting_2014/)", um zur vorherigen Konfiguration zurückzukehren.
 
 
-## Weiterführende Informationen <a name="Weiterführende"></a>
+## Weiterführende Informationen <a name="gofurther"></a>
 
 [Alles zur .htaccess Datei](../webhosting_alles_uber_die_datei_htaccess/)
 
