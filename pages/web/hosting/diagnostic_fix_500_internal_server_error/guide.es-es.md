@@ -60,7 +60,7 @@ Para comprobarlo, [conéctese por FTP](../conexion-espacio-almacenamiento-ftp-al
 
 Cambie el nombre del archivo a `.htaccess.old` y permanezca en su sitio web.
 
-Si este último vuelve a estar accesible, entonces el `.htaccess` está en cuestión. Por lo tanto, deberá modificarse. Si lo desea, contacte con uno de nuestros [partners](https://marketplace.ovhcloud.com/) al respecto.
+Si este último vuelve a estar accesible, entonces el `.htaccess` está en cuestión. Por lo tanto, deberá modificarse. Si lo desea, contacte con uno de nuestros [partners](https://partner.ovhcloud.com/es-es/directory/) al respecto.
 
 ### Comprobar los permisos de carpetas y archivos
 
@@ -99,4 +99,4 @@ Por último, si se ha producido un error al actualizar la versión PHP del aloja
 
 ## Más información <a name="gofurther"></a>
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

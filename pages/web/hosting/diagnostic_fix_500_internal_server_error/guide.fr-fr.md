@@ -57,7 +57,7 @@ Pour le vérifier, [connectez-vous en FTP](../connexion-espace-stockage-ftp-hebe
 
 Puis renommez ce fichier en `.htaccess.old` et retestez votre site.
 
-Si ce dernier est de nouveau accessible, alors le `.htaccess` est en cause. Il devra donc être modifié. Si vous le souhaitez, contactez l'un de nos [partenaires](https://marketplace.ovhcloud.com/) à ce sujet.
+Si ce dernier est de nouveau accessible, alors le `.htaccess` est en cause. Il devra donc être modifié. Si vous le souhaitez, contactez l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/) à ce sujet.
 
 ### Vérifier les permissions sur les dossiers et les fichiers
 
