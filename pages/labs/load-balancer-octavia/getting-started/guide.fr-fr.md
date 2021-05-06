@@ -23,7 +23,7 @@ Notre nouvelle solution Load Balancer as a Service (LBaaS) est basée sur le ser
 
 ## En pratique
 
-### Configuration de votre réseau privé
+### Configurer votre réseau privé
 
 Avant de commencer à utiliser un Load Balancer, il vous faut créer un réseau privé:
 
@@ -39,7 +39,7 @@ openstack router add subnet my_router my_subnet
 openstack router set --external-gateway Ext-Net my_router
 ```
 
-> [!alert]
+> [!warning]
 >
 > La fonctionnalité LBaaS étant en Beta, le réseau doit être déployé au moins à GRA9 et ne doit pas faire partie du sous réseau 10.224.0.0/16. (Ces restrictions seront retirées lors de la disponibilité générale du service).
 
@@ -51,7 +51,7 @@ openstack server list
 
 Vous devez maintenant configurer vos instances pour qu'elles aient leurs adresses IP configurées sur leur interfaces.
 
-### Création du Load Balancer
+### Créer votre Load Balancer
 
 Vous pouvez consulter la liste des différents types de Load Balancer que nous offrons avec cette commande :
 
@@ -80,7 +80,7 @@ openstack floating ip set --port <my_load_balancer_vip_port_id> <floating_ip>
 >
 > Pour récuprer l'identifiant du port VIP de votre Load Balancer, utilisez `openstack loadbalancer show my_load_balancer`.
 
-### Configuration de votre Load Balancer
+### Configurer votre Load Balancer
 
 Dans cet exemple, nous ferons juste un Load Balancer HTTP. Pour ce faire, il faut tout d'abord créer un Listener qui permettra d'écouter sur le port 80 du Load Balancer, avec cette commande :
 
@@ -113,4 +113,4 @@ Vous pouvez maintenant accéder à votre Load Balancer via l'adresse IP Flottant
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 
-**Pour discuter avec les autres utilisateurs du lab et avec l'équipe d'OVHcloud, venez sur [notre room Gitter](https://gitter.im/ovh/octavia-loadbalancer)**
+**Pour discuter avec les autres utilisateurs du lab et avec l'équipe OVHcloud, venez sur [notre room Gitter](https://gitter.im/ovh/octavia-loadbalancer)**
