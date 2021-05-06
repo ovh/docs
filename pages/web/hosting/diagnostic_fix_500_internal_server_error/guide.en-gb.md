@@ -1,23 +1,23 @@
 ---
 title: 'Fixing the 500 Internal Server Error'
-excerpt: How to fix the 500 Internal Server Error
+excerpt: Find out how to fix some of the most common website errors
 slug: web_hosting_how_to_fix_the_500_internal_server_error
 legacy_guide_number: g1987
 section: 'Diagnostics'
 ---
 
 
-**Last updated 04/05/2021**
+**Last updated 5th May 2021**
 
 ## Objective
 
-The « 500 Internal Server Error » can affect all or only parts of your website. It can be random, permanent or appear as a blank page.
+The "500 Internal Server Error" can affect your entire website or only parts of it. It can be permanent, appear sporadically, or result in a blank page.
 
 ![error500](images/error-500-2.png){.thumbnail}
 
-These errors may also come from updates carried out **automatically** by components of your website, and therefore, would therefore occur without any action on your side.
+These errors may also come from updates carried out **automatically** by components of your website and therefore occur without any action taken on your side.
 
-**Learn how to diagnose the most common cases of 500 errors.**
+**Learn how to diagnose the most common cases of "500" type errors.**
 
 > [!warning]
 >
@@ -28,20 +28,20 @@ These errors may also come from updates carried out **automatically** by compone
 
 ## Requirements
 
-- A [shared web hosting](https://www.ovh.co.uk/web-hosting/)
-- An access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 
 ## Instructions
 
-Before you continue, check your website on different devices and browsers. If the error 500 does not appear in some cases (e.g. on a different browser), your OVHcloud services are working fine. Restart your devices and contact a local IT technician if necessary.
+Before you continue, check your website on different devices and browsers. If the error does not appear in some cases (e.g. on a different browser), your OVHcloud services are working fine. Restart your local devices and contact an IT professional if necessary.
 
-A website is made of a **source code** (most of the time, .php files connected to a database). We strongly advise you to create backups before making any further operation :
+A website consists of a **source code** (most of the time, .php files connected to a database) and additional data. We strongly advise you to create backups of your data before taking any further measures:
 
-- Follow this [guide](../web_hosting_filezilla_user_guide/) to retrieve a copy of all your website's files.
-- If your website uses a database, you can also use this [document](../web_hosting_database_export_guide/) to retrieve a copy of it.
+- Follow [this guide](../web_hosting_filezilla_user_guide/) to retrieve a copy of all your website's files.
+- If your website uses a database, you can additionally refer to [this guide](../web_hosting_database_export_guide/) on how to retrieve a copy of it.
 
-In order to solve a 500 error, you can [restore](#restore) your website. However, we recommend you to look for the causes of this error through the following operations :
+In order to solve a 500 error, you can [restore](#restore) your website. However, we recommend to first investigate the causes of this error through the following steps:
 
 ### Check your hosting logs
 
@@ -49,27 +49,27 @@ First, please check your logs with this [guide](../shared_view_my_websites_logs_
 
 ### Put your website in development mode
 
-To reveal any PHP errors, switch your web hosting to `development` mode with this [document](../modify_your_web_hosting_systems_runtime_environment/#step-2-check-your-web-hosting-plans-configuration).
+To reveal any PHP errors, switch your web hosting to `development` mode with these [instructions](../modify_your_web_hosting_systems_runtime_environment/#step-2-check-your-web-hosting-plans-configuration).
 
 ### Test the .htaccess file
 
-A 500 error can be caused by a defect within the `.htaccess` file of your website, which is usually in the first level of its root folder within your FTP server.
+A 500 error can be caused by a defect of the `.htaccess` file of your website, which is usually located on the first level of its root folder within your hosting's FTP storage space.
 
 To check this, [log in to your hosting plan via FTP](../log-in-to-storage-ftp-web-hosting/).
 
-Then rename this file to `.htaccess.old` and try again.
+Then rename this file to `.htaccess.old` and refresh the page in your browser.
 
-If your website is online again, it means the `.htaccess` file should be corrected. If you need help to make the necessary operations, please contact the OVHcloud [partners](https://www.ovh.com/world/discover-marketplace/).
+If your website is online again, it means the `.htaccess` file should be corrected. If you need help to make the necessary operations, you may consider contacting an OVHcloud [partner](https://partner.ovhcloud.com/en-gb/directory/). 
 
 ### Check folder and file permissions
 
-Each file and each folder of your source code has a certain level of read, write and execute permissions within your webhosting's file-system. This is meant to protect them from any malicious or improper manipulation.
+Each file and each folder of your source code has a certain level of read, write and execute permissions within your web hosting's file system. This is meant to protect them from any malicious or improper manipulation.
 
 An incorrect level of access rights on a folder or a file may create a 500 error.
 
 To access these files, log on your [FTP server](../log-in-to-storage-ftp-web-hosting/).
 
-The [FileZilla user guide](../web_hosting_filezilla_user_guide/#file-and-folder-permissions) will then help you check the following points:
+The [FileZilla guide](../web_hosting_filezilla_user_guide/#file-and-folder-permissions) will then help you check the following points:
 
 - The **root** of your hosting plan (this is the directory marked `/` or `.` on Filezilla) must have 705 access rights (these are the default permissions). Do not change this level of permissions.
 - Folders must have 705 access rights.
@@ -79,26 +79,26 @@ The [FileZilla user guide](../web_hosting_filezilla_user_guide/#file-and-folder-
 
 For security reasons, your website hides all technical details about the error 500.
 
-If you want to have access to those details, use a [ssh connection](../web_hosting_ssh_on_web_hosting_packages/) (It requires to have a [Pro2014](https://www.ovh.co.uk/web-hosting/web-hosting-pro.xml) or [Performance](https://www.ovh.co.uk/web-hosting/performance-web-hosting.xml) offer).
+To verify these details, you can use a [SSH connection](../web_hosting_ssh_on_web_hosting_packages/). (SSH is only available with a hosting plan of the [Business or Developer range](https://www.ovh.co.uk/web-hosting/).)
 
 ### Restore your website to its previous state <a name="restore"></a>
 
+If the 500 error appeared after modifying the PHP configuration of your web hosting, return to the previous one by following our guide [Changing a Web Hosting plan’s PHP version](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
+
+
 > [!warning]
 >
-> During the restore operations, all data contained in your FTP server, or the ones within your database, are replaced by a backup. As a result, you will not be able to recover the data stored in the FTP server or the ones in your database just before the restore operations.
+> Executing database or FTP restore operations replaces all data contained in your FTP server or database by a backup. As a result, you will not be able to recover any changes made or data stored **after** the timestamp of the backup used.
+>
 > Restoring your website’s source code will affect all websites on your OVHcloud web hosting.
 
-To restore your website’s source code, read our guide [Restoring your Web Hosting plan’s storage space](../restoring-ftp-filezilla-control-panel/).
+To restore your website’s source code, read our guide [Restoring your Web Hosting plan’s storage space](../restoring-ftp-filezilla-control-panel/). Keep in mind that this operation alone is not a permanent solution.
 
 If your website uses a database, read our guide [Importing a backup into a Web Hosting plan database](../web_hosting_guide_to_importing_a_mysql_database/#restore-a-backup-from-the-control-panel).
-
-Finally, if the 500 error appeared after modifying the PHP configuration of your web hosting, return to the previous one with [Changing a Web Hosting plan’s PHP version](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
 
 
 ## Go further <a name="gofurther"></a>
 
-[All about the .htaccess file](../all_about_the_htaccess_file/)
-
-Contact OVHcloud Partners on <https://www.ovh.com/world/discover-marketplace/>
+[Contact OVHcloud Partners](https://partner.ovhcloud.com/en-gb/directory/)
 
 Join our community of users on <https://community.ovh.com/en/>
