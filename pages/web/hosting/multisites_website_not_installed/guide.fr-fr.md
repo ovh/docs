@@ -46,7 +46,7 @@ Sélectionnez l'hébergement concerné dans la liste, puis cliquez sur l’ongle
 
 |Scénario|Action à entreprendre|
 |---|---|
-|Le nom de votre site apparaît dans le tableau.|Si vous venez d’ajouter le nom de votre site dans la partie multisite de votre hébergement, patientez une vingtaine de minutes puis rafraîchissez le cache de votre navigateur. Si le message « Site non installé » apparaît toujours, passez à [l'étape 2](../#checkdomainlink).|
+|Le nom de votre site apparaît dans le tableau.|Si vous venez d’ajouter le nom de votre site dans la partie multisite de votre hébergement, patientez une vingtaine de minutes puis rafraîchissez le cache de votre navigateur. Si le message « Site non installé » apparaît toujours, passez à [l'étape 2](#checkdomainlink).|
 |Le domaine ou le sous-domaine lié à votre site n'apparaît pas dans le tableau.|Ajoutez votre domaine au `multisite`{.action} en suivant la rubrique dédiée du guide [Partager son hébergement entre plusieurs sites - ajouter un domaine ou un sous-domaine](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-2-ajouter-un-domaine-ou-un-sous-domaine).|
 |Le nom de domaine a été supprimé du multisite sans action de votre part.|Votre domaine ou sa zone DNS sont peut-être gérés depuis un autre compte. Ajoutez votre domaine au multisite en suivant la rubrique dédiée du guide [Partager son hébergement entre plusieurs sites - ajouter un nom de domaine externe](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
 
