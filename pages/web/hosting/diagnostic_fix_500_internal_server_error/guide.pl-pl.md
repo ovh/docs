@@ -12,6 +12,7 @@ section: Diagnostyka
 
 **Ostatnia aktualizacja z dnia 06-05-2021**
 
+
 ## Wprowadzenie
 
 Błędy 500 "Internal Server Error" mogą dotyczyć całości lub części Twojej strony, być losowe lub stałe. Mogą również pojawić się w postaci białej strony.
@@ -22,9 +23,12 @@ Zdarza się to również w wyniku aktualizacji przeprowadzonej **automatycznie**
 
 **Dowiedz się, jak zdiagnozować najczęstsze przypadki błędów 500.**
 
+> [!warning]
+>
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
 > Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź](#gofurther) ten przewodnik.
+>
 
 
 ## Wymagania początkowe
@@ -40,7 +44,7 @@ Zanim przejdziesz dalej, sprawdź swoją stronę na kilku urządzeniach i przegl
 Strona składa się z **kodu źródłowego** (na przykład pliki .php, widoczne podczas logowania do hostingu w [FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/), do której często dodaje się **baza danych**.
 <br>Pomimo błędu 500, zaleca się wykonanie lokalnej kopii zapasowej wszystkich danych przed kolejną operacją :
 
-- Zapoznaj się z tym [przewodnikiem](../hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/), aby pobrać kopię Twojego kodu źródłowego. 
+- Zapoznaj się z tym [przewodnikiem](../hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/), aby pobrać kopię Twojego kodu źródłowego.
 - Jeśli Twoja strona używa bazy danych, zapoznaj się również z tym [dokumentem](../exportation-bases-donnees/), aby pobrać jej kopię.
 
 W przypadku błędu 500 przywrócenie [strony](#restore) jest możliwe. Jednak bardziej pożądane jest przeprowadzenie szczegółowej diagnozy w celu określenia dokładnego źródła błędu.
@@ -55,11 +59,11 @@ Aby wyświetlić ewentualne błędy PHP, przejdź do trybu `programowania`, korz
 
 ### Przetestuj plik .htaccess
 
-Błąd 500 może być związany z nieprawidłowością w pliku `.htaccess`. Plik ten jest zwykle umieszczony na pierwszym poziomie w folderze zawierającym Twoją stronę WWW na FTP. 
+Błąd 500 może być związany z nieprawidłowością w pliku `.htaccess`. Plik ten jest zwykle umieszczony na pierwszym poziomie w folderze zawierającym Twoją stronę WWW na FTP.
 
 Aby to sprawdzić, [zaloguj się przez FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/) do Twojego hostingu.
 
-Zmień nazwę pliku na `.htaccess.old` i przetestuj swoją stronę. 
+Zmień nazwę pliku na `.htaccess.old` i przetestuj swoją stronę.
 
 Jeśli domena jest ponownie dostępna, `.htaccess` jest kwestionowana. W związku z tym konieczne jest wprowadzenie zmian. Jeśli sobie tego życzysz, skontaktuj się z jednym z naszych [partnerów](https://partner.ovhcloud.com/pl/directory/).
 
@@ -71,7 +75,7 @@ Błąd 500 może być związany z nieprawidłowym poziomem praw dostępu do niek
 
 Aby uzyskać dostęp do tych plików, zaloguj się przez FTP do Twojego hostingu zgodnie z naszą [dokumentacją](../logowanie-przestrzen-dyskowa-ftp-hosting-web/).
 
-Przewodnik "[Przewodnik dotyczący korzystania z programu FileZilla](../hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/#uprawnienia-do-plikow-i-katalogow)" pomoże Ci w weryfikacji następujących elementów: 
+Przewodnik "[Przewodnik dotyczący korzystania z programu FileZilla](../hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/#uprawnienia-do-plikow-i-katalogow)" pomoże Ci w weryfikacji następujących elementów : 
 
 - **Korzeń** hostingu (katalog jest zapisany `/` lub `.` w programie FTP) musi mieć uprawnienia 705 (są to uprawnienia domyślne). Zalecamy, aby nie zmieniać tego poziomu uprawnień.
 - Dokumentacja musi być w 705 r.
@@ -88,10 +92,10 @@ Jeśli chcesz uzyskać dostęp do tych danych, możesz, korzystając z formuły 
 > [!warning]
 >
 > Przywrócenie kodu źródłowego Twojej strony będzie dotyczyło wszystkich stron WWW hostingu OVHcloud.
-> 
+>
 > Podczas przywracania zawartość Twojej przestrzeni FTP lub bazy danych zostaje zastąpiona kopią zapasową. Następnie nie będziesz mógł pobrać danych z serwera tuż przed przywróceniem danych.
 
-Aby przywrócić kod źródłowy Twojej strony, zapoznaj się z naszym przewodnikiem "[Przywracanie plików z kopii zapasowej OVH](../restauration-ftp-filezilla-espace-client/)". 
+Aby przywrócić kod źródłowy Twojej strony, zapoznaj się z naszym przewodnikiem "[Przywracanie plików z kopii zapasowej OVH](../restauration-ftp-filezilla-espace-client/)".
 
 Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodnikiem "[Import kopii zapasowej do bazy danych hostingu](../hosting_www_importowanie_bazy_danych_mysql/#przywracanie-kopii-zapasowej-w-panelu-klienta)", aby przywrócić ją do poprzedniego stanu.
 

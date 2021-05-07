@@ -23,9 +23,13 @@ A volte provengono anche da un aggiornamento effettuato **automaticamente** da u
 
 **Scopri come diagnosticare i casi di errore più comuni 500.**
 
+
+> [!warning]
+>
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
-> 
+>
 > Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
+>
 
 
 ## Prerequisiti
@@ -38,7 +42,7 @@ A volte provengono anche da un aggiornamento effettuato **automaticamente** da u
 
 Prima di proseguire, controlla il tuo sito su diversi apparecchi e browser. Se in alcuni casi l'errore 500 non compare (ad esempio tramite un browser diverso dal tuo), significa che non è associato ai tuoi servizi OVHcloud. Riavvia i tuoi dispositivi e, se necessario, contatta un tecnico informatico vicino al tuo domicilio.
 
-Un sito è costituito da un **codice sorgente** (ad esempio file con .php visibili durante una connessione al tuo hosting in >nonostante l'errore 500, ti consigliamo di effettuare un backup locale di tutti i tuoi dati prima di effettuare qualsiasi altra operazione:
+Un sito è costituito da un **codice sorgente** (ad esempio file con .php visibili durante una connessione al tuo hosting in >nonostante l'errore 500, ti consigliamo di effettuare un backup locale di tutti i tuoi dati prima di effettuare qualsiasi altra operazione :
 
 - Consulta questa [guida](../hosting_condiviso_guida_allutilizzo_di_filezilla/) per recuperare una copia del codice sorgente.
 - Se il tuo sito utilizza un database, consulta anche questo [documento](../web_hosting_come_esportare_un_database/) per recuperarne una copia.
@@ -55,11 +59,11 @@ Per visualizzare eventuali errori PHP, passa il tuo hosting in modalità `svilup
 
 ### Testa il file .htaccess
 
-Un errore 500 può essere associato a un'anomalia in un file `.htaccess`. Questo file si trova generalmente al primo livello nella cartella che contiene il tuo sito sul tuo FTP. 
+Un errore 500 può essere associato a un'anomalia in un file `.htaccess`. Questo file si trova generalmente al primo livello nella cartella che contiene il tuo sito sul tuo FTP.
 
 Per verificarlo, [connettiti in FTP](../accedere-spazio-storage-ftp-hosting-web/) al tuo hosting.
 
-Rinomina questo file in.`htaccess.old` e prova il tuo sito. 
+Rinomina questo file in.`htaccess.old` e prova il tuo sito.
 
 Se il dominio è di nuovo accessibile, è in causa il `.htaccess`. Il progetto dovrà pertanto essere modificato. Per farlo, contatta uno dei nostri [partner](https://partner.ovhcloud.com/it/directory/).
 
@@ -71,9 +75,9 @@ Un errore 500 potrebbe essere associato a un livello di diritti di accesso non c
 
 Per accedere a questi file, accedi in FTP al tuo hosting seguendo la nostra [documentazione](../accedere-spazio-storage-ftp-hosting-web/).
 
-In seguito, nella guida "[Utilizzare FileZilla con il tuo hosting](../hosting_condiviso_guida_allutilizzo_di_filezilla/#diritti-su-file-e-cartelle)", verifica i seguenti elementi: 
+In seguito, nella guida "[Utilizzare FileZilla con il tuo hosting](../hosting_condiviso_guida_allutilizzo_di_filezilla/#diritti-su-file-e-cartelle)", verifica i seguenti elementi :
 
-- La **radice** del tuo hosting (si tratta della directory registrata `/` o `.` nel tuo software FTP) deve essere obbligatorio con diritti 705 (permessi di default). Ti consigliamo di non modificare questo livello di diritti
+- La **radice** del tuo hosting (si tratta della directory registrata `/` o `.` nel tuo software FTP) deve essere obbligatorio con diritti 705 (permessi di default). Ti consigliamo di non modificare questo livello di diritti.
 - I fascicoli devono essere di diritto 705.
 - I file devono essere in diritto 604.
 
@@ -90,8 +94,9 @@ Se vuoi avere accesso a questi dettagli, dal piano di hosting [pro2014](https://
 > Il ripristino del codice sorgente del tuo sito riguarderà tutti i siti del tuo hosting OVHcloud.
 > 
 > Durante un ripristino, il contenuto del tuo spazio FTP o del tuo database viene sostituito da un backup. Non sarà possibile recuperare i dati presenti sul server immediatamente prima del ripristino.
+>
 
-Per ripristinare il codice sorgente del tuo sito, consulta la guida Ripristinare [Ripristinare i dati dello spazio di storage di un hosting Web](../web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/). 
+Per ripristinare il codice sorgente del tuo sito, consulta la guida Ripristinare [Ripristinare i dati dello spazio di storage di un hosting Web](../web_hosting_recupera_un_backup_completo_o_un_file_in_ftp_con_filezilla/).
 
 Se il tuo sito contiene un database, consulta la nostra guida [Importare un backup nel database di un hosting Web](../web_hosting_come_importare_un_database_mysql/#ripristino-dallo-spazio-cliente-ovh) per ripristinarlo in uno stato precedente.
 

@@ -19,6 +19,7 @@ Elles proviennent parfois aussi d'une mise à jour effectuée **automatiquement*
 **Découvrez comment diagnostiquer les cas les plus courants d'erreurs 500.**
 
 > [!warning]
+>
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
@@ -86,6 +87,7 @@ Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous es
 > La restauration du code source de votre site concernera l'ensemble des sites de votre hébergement OVHcloud.
 >
 > Lors d'une restauration, le contenu de votre espace FTP, ou celui de votre base de données, est remplacé par une sauvegarde. Vous ne pourrez donc pas récupérer ensuite les données présentes sur le serveur juste avant la restauration.
+>
 
 Pour restaurer le code source de votre site, consultez notre guide « [Restaurer l’espace de stockage de son hébergement web](../restauration-ftp-filezilla-espace-client/) ».
 

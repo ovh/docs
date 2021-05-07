@@ -22,9 +22,12 @@ A veces también se actualizan **automáticamente** en un componente del sitio w
 
 **Esta guía explica cómo diagnosticar los casos más comunes de errores 500.**
 
+> [!warning]
+>
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
 > Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
+>
 
 
 ## Requisitos
@@ -37,7 +40,7 @@ A veces también se actualizan **automáticamente** en un componente del sitio w
 
 Antes de continuar, compruebe su sitio web en varios dispositivos y navegadores. Si en algunos casos no aparece el error 500 (por ejemplo, a través de un navegador diferente del suyo), es porque no está asociado a sus servicios de OVHcloud. Reinicie sus dispositivos y, si es necesario, contacte con un técnico informático cercano a su domicilio.
 
-Un sitio web está formado por un **código fuente** (los archivos en .php, por ejemplo, visibles durante una conexión a su alojamiento a >pesar del error 500, es altamente recomendable realizar una copia de seguridad local de todos sus datos antes de realizar cualquier otra operación:
+Un sitio web está formado por un **código fuente** (los archivos en .php, por ejemplo, visibles durante una conexión a su alojamiento a >pesar del error 500, es altamente recomendable realizar una copia de seguridad local de todos sus datos antes de realizar cualquier otra operación :
 
 - Consulte esta [guía](../web_hosting_guia_de_uso_de_filezilla/) para obtener una copia de su código fuente.
 - Si su sitio web utiliza una base de datos, consulte también este [documento](../web_hosting_exportacion_de_una_base_de_datos/) para obtener una copia de la misma.
@@ -70,9 +73,9 @@ Un error 500 puede estar relacionado con un nivel de permisos de acceso incorrec
 
 Para acceder a estos archivos, conéctese por FTP al alojamiento siguiendo la [guía](../conexion-espacio-almacenamiento-ftp-alojamiento-web/).
 
-La guía "[Uso de FileZilla con el alojamiento](../web_hosting_guia_de_uso_de_filezilla/#permisos-de-los-archivos-y-carpetas)" le ayudará a comprobar lo siguiente:
+La guía "[Uso de FileZilla con el alojamiento](../web_hosting_guia_de_uso_de_filezilla/#permisos-de-los-archivos-y-carpetas)" le ayudará a comprobar lo siguiente :
 
-- La **raíz** del alojamiento (es el directorio anotado `/` o `).` en su programa FTP) debe estar obligatoriamente en permisos 705 (estos son los permisos por defecto). Le recomendamos que no modifique este nivel de permisos.
+- La **raíz** del alojamiento (es el directorio anotado `/` o `.` en su programa FTP) debe estar obligatoriamente en permisos 705 (estos son los permisos por defecto). Le recomendamos que no modifique este nivel de permisos.
 - Los expedientes deben estar en los derechos 705.
 - Los archivos deben estar habilitados 604.
 
@@ -89,6 +92,7 @@ Si usted o su desarrollador desea tener acceso a estos detalles, puede conectars
 > La restauración del código fuente del sitio web se extenderá a todos los sitios web del alojamiento de OVHcloud.
 > 
 > Al restaurar un sitio web, el contenido del espacio FTP o el de la base de datos se sustituyen por una copia de seguridad. No podrá recuperar los datos del servidor justo antes de la restauración.
+>
 
 Para restaurar el código fuente del sitio web, consulte nuestra guía [Restaurar el espacio de almacenamiento de un alojamiento web](../restaurar-espacio-almacenamiento-alojamiento-web/).
 

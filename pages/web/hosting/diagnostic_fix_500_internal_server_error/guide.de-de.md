@@ -93,6 +93,7 @@ Wenn der "Fehler 500" nach dem Ändern der PHP-Konfiguration Ihres Webhostings a
 > Das Ausführen von Datenbank- oder FTP-Wiederherstellungsvorgängen ersetzt alle in Ihrem FTP-Speicherplatz oder Ihrer Datenbank enthaltenen Daten durch eine Backupversion. Infolgedessen können Sie keine Änderungen oder Dateien wiederherstellen, die **nach** dem Zeitstempel der verwendeten Sicherung gespeichert wurden.
 > 
 > Die Wiederherstellung des Quellcodes Ihrer Website wirkt sich auf alle Websites auf Ihrem OVHcloud Webhosting aus.
+>
 
 Um den Quellcode Ihrer Website wiederherzustellen, lesen Sie unsere Anleitung "[Den Speicherplatz Ihres Webhostings wiederherstellen](../webhosting-speicherplatz-wiederherstellen/)". Beachten Sie, dass diese Operation allein keine dauerhafte Lösung darstellt.
 

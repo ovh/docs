@@ -23,9 +23,13 @@ Por vezes, provêm também de uma atualização efetuada **automaticamente** por
 
 **Saiba como diagnosticar os casos mais comuns de erros 500.**
 
+
+> [!warning]
+>
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
-> 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#gofurther)?
+>
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#gofurther) ?
+>
 
 
 ## Requisitos
@@ -39,9 +43,9 @@ Por vezes, provêm também de uma atualização efetuada **automaticamente** por
 Antes de prosseguir, verifique o seu site em vários dispositivos e browsers. Se o erro 500 não aparece em certos casos (por exemplo, num browser diferente do seu), é porque não está relacionado com os seus serviços OVHcloud. Reinicie os seus dispositivos e contacte um técnico informático próximo da sua casa.
 
 Um site é constituído por um **código fonte** (os ficheiros em .php, por exemplo, visíveis durante uma ligação ao seu alojamento em [FTP](.../aceder-espaco-de-armazenamento-ftp-alojamento-web/), ao qual se junta frequentemente uma **base de dados**.
-<br>Apesar do erro 500, é fortemente aconselhado efetuar um backup local do conjunto dos seus dados antes de qualquer outra manipulação:
+<br>Apesar do erro 500, é fortemente aconselhado efetuar um backup local do conjunto dos seus dados antes de qualquer outra manipulação :
 
-- Siga este [guia](../partilhado_guia_de_utilizacao_do_filezilla/) para obter uma cópia do código fonte. 
+- Siga este [guia](../partilhado_guia_de_utilizacao_do_filezilla/) para obter uma cópia do código fonte.
 - Se o seu site utiliza uma base de dados, consulte também este [documento](../partilhado_guia_de_exportacao_de_uma_base_de_dados_mysql/) para obter uma cópia.
 
 No caso de um erro 500, é perfeitamente possível efetuar um [restauro](#restore) do seu site. No entanto, é preferível efetuar um diagnóstico aprofundado para determinar a origem exata do erro.
@@ -56,11 +60,11 @@ Para que apareçam eventuais erros PHP, passe o seu alojamento em modo de `desen
 
 ### Testar o ficheiro.htaccess
 
-Um erro 500 pode estar associado a uma anomalia num ficheiro `.htaccess`. Este ficheiro está geralmente localizado no primeiro nível da pasta que contém o seu site no seu FTP. 
+Um erro 500 pode estar associado a uma anomalia num ficheiro `.htaccess`. Este ficheiro está geralmente localizado no primeiro nível da pasta que contém o seu site no seu FTP.
 
 Para o verificar, [ligue-se FTP](../aceder-espaco-de-armazenamento-ftp-alojamento-web/) ao seu alojamento.
 
-De seguida, renomeie este ficheiro em `.htaccess.old` e volte a testar o seu site. 
+De seguida, renomeie este ficheiro em `.htaccess.old` e volte a testar o seu site.
 
 Se este último estiver de novo acessível, então o `.htaccess` está em causa. Por conseguinte, deverá ser alterado. Se desejar, contacte um dos nossos [parceiros](https://partner.ovhcloud.com/pt/directory//) a este respeito.
 
@@ -72,11 +76,11 @@ Um erro 500 pode estar associado a um nível de direitos de acesso incorreto em 
 
 Para aceder a estes ficheiros, ligue-se ao seu alojamento através de FTP, seguindo a nossa [documentação](../aceder-espaco-de-armazenamento-ftp-alojamento-web/).
 
-O guia "[Partilhado: Guia de utilização do FileZilla](../partilhado_guia_de_utilizacao_do_filezilla/#permissoes-de-pastas-e-ficheiros)" ajudá-lo-á a verificar os seguintes elementos: 
+O guia "[Partilhado : Guia de utilização do FileZilla](../partilhado_guia_de_utilizacao_do_filezilla/#permissoes-de-pastas-e-ficheiros)" ajudá-lo-á a verificar os seguintes elementos : 
 
--	A **raiz** do seu alojamento (Trata-se do diretório notado `/` ou `.` no seu software FTP) deve ter obrigatoriamente permissões 705 (são permissões padrão). Aconselhamos que não altere este nível de direitos.
--	Os dossiers devem estar em permissões 705.
--	Os ficheiros devem estar em permissões 604.
+- A **raiz** do seu alojamento (Trata-se do diretório notado `/` ou `.` no seu software FTP) deve ter obrigatoriamente permissões 705 (são permissões padrão). Aconselhamos que não altere este nível de direitos.
+- Os dossiers devem estar em permissões 705.
+- Os ficheiros devem estar em permissões 604.
 
 ### Aceder aos detalhes dos erros nos seus scripts
 
@@ -89,10 +93,11 @@ Se pretender ter acesso a estes detalhes, poderá aceder ao seu site através de
 > [!warning]
 >
 > O restauro do código fonte do seu site dirá respeito ao conjunto dos sites do seu alojamento OVHcloud.
-> 
+>
 > Durante o restauro, o conteúdo do seu espaço FTP ou da sua base de dados é substituído por um backup. Assim, não poderá recuperar os dados presentes no servidor imediatamente antes do restauro.
+>
 
-Para restaurar o código fonte do seu site, consulte o nosso manual "[Restaurar o espaço de armazenamento do alojamento web](../restauracao-ftp-filezilla-area-de-cliente/)". 
+Para restaurar o código fonte do seu site, consulte o nosso manual "[Restaurar o espaço de armazenamento do alojamento web](../restauracao-ftp-filezilla-area-de-cliente/)".
 
 Se o seu site tiver uma base de dados, consulte o nosso manual "[Importar um backup para a base de dados de um alojamento web](../partilhado_guia_de_importacao_de_uma_base_de_dados_mysql/#restaurar-um-backup-a-partir-da-area-de-cliente)" para a restaurar para um estado anterior.
 

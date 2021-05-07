@@ -24,7 +24,7 @@ These errors may also come from updates carried out **automatically** by compone
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
 > We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a specialist provider and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the [Go further](#gofurther) section of this guide.
-
+>
 
 ## Requirements
 
@@ -59,7 +59,7 @@ To check this, [log in to your hosting plan via FTP](../log-in-to-storage-ftp-we
 
 Then rename this file to `.htaccess.old` and refresh the page in your browser.
 
-If your website is online again, it means the `.htaccess` file should be corrected. If you need help to make the necessary operations, you may consider contacting an OVHcloud [partner](https://partner.ovhcloud.com/en-gb/directory/). 
+If your website is online again, it means the `.htaccess` file should be corrected. If you need help to make the necessary operations, you may consider contacting an OVHcloud [partner](https://partner.ovhcloud.com/en-gb/directory/).
 
 ### Check folder and file permissions
 
@@ -85,12 +85,12 @@ To verify these details, you can use a [SSH connection](../web_hosting_ssh_on_we
 
 If the 500 error appeared after modifying the PHP configuration of your web hosting, return to the previous one by following our guide [Changing a Web Hosting plan’s PHP version](../how_to_configure_php_on_your_ovh_web_hosting_package_2014/).
 
-
 > [!warning]
 >
 > Executing database or FTP restore operations replaces all data contained in your FTP server or database by a backup. As a result, you will not be able to recover any changes made or data stored **after** the timestamp of the backup used.
 >
 > Restoring your website’s source code will affect all websites on your OVHcloud web hosting.
+>
 
 To restore your website’s source code, read our guide [Restoring your Web Hosting plan’s storage space](../restoring-ftp-filezilla-control-panel/). Keep in mind that this operation alone is not a permanent solution.
 
