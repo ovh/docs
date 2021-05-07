@@ -35,7 +35,7 @@ Por vezes, provêm também de uma atualização efetuada **automaticamente** por
 ## Requisitos
 
 - Dispor de uma [oferta de alojamento partilhado](https://www.ovh.pt/alojamento-partilhado/)
-- Ter acesso à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 
 ## Instruções
@@ -66,7 +66,7 @@ Para o verificar, [ligue-se FTP](../aceder-espaco-de-armazenamento-ftp-alojament
 
 De seguida, renomeie este ficheiro em `.htaccess.old` e volte a testar o seu site.
 
-Se este último estiver de novo acessível, então o `.htaccess` está em causa. Por conseguinte, deverá ser alterado. Se desejar, contacte um dos nossos [parceiros](https://partner.ovhcloud.com/pt/directory//) a este respeito.
+Se este último estiver de novo acessível, então o `.htaccess` está em causa. Por conseguinte, deverá ser alterado. Se desejar, contacte um dos nossos [parceiros](https://partner.ovhcloud.com/pt/directory/) a este respeito.
 
 ### Verificar permissões nas pastas e nos ficheiros
 
@@ -101,7 +101,7 @@ Para restaurar o código fonte do seu site, consulte o nosso manual "[Restaurar 
 
 Se o seu site tiver uma base de dados, consulte o nosso manual "[Importar um backup para a base de dados de um alojamento web](../partilhado_guia_de_importacao_de_uma_base_de_dados_mysql/#restaurar-um-backup-a-partir-da-area-de-cliente)" para a restaurar para um estado anterior.
 
-Por fim, se o erro 500 aparecer após uma atualização da versão PHP do seu alojamento, consulte o nosso guia "[Mudar a versão de PHP do alojamento web](../configurar_o_php_num_alojamento_web_alojamentos_2014_ovh//)" para voltar à configuração anterior.
+Por fim, se o erro 500 aparecer após uma atualização da versão PHP do seu alojamento, consulte o nosso guia "[Mudar a versão de PHP do alojamento web](../configurar_o_php_num_alojamento_web_alojamentos_2014_ovh/)" para voltar à configuração anterior.
 
 
 ## Saiba mais <a name="gofurther"></a>
