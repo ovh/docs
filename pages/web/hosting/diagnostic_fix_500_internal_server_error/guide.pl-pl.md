@@ -37,27 +37,27 @@ Zdarza się to również w wyniku aktualizacji przeprowadzonej **automatycznie**
 
 Zanim przejdziesz dalej, sprawdź swoją stronę na kilku urządzeniach i przeglądarkach. Jeśli błąd 500 nie pojawia się w niektórych przypadkach (na przykład w przeglądarce innej niż Twoja), nie jest on powiązany z Twoimi usługami OVHcloud. Zrestartuj swoje urządzenia i skontaktuj się z technikiem informatycznym znajdującym się w pobliżu Twojego domu.
 
-Strona składa się z **kodu źródłowego** (na przykład pliki .php, widoczne podczas logowania do hostingu w [FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/),  do której często dodaje się **baza danych**.
-<br>Pomimo błędu 500, zaleca się wykonanie lokalnej kopii zapasowej wszystkich danych przed kolejną operacją:
+Strona składa się z **kodu źródłowego** (na przykład pliki .php, widoczne podczas logowania do hostingu w [FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/), do której często dodaje się **baza danych**.
+<br>Pomimo błędu 500, zaleca się wykonanie lokalnej kopii zapasowej wszystkich danych przed kolejną operacją :
 
-- Zapoznaj się z tym [przewodnikiem](../mutualise-guide-utilisation-filezilla/), aby pobrać kopię Twojego kodu źródłowego. 
+- Zapoznaj się z tym [przewodnikiem](../hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/), aby pobrać kopię Twojego kodu źródłowego. 
 - Jeśli Twoja strona używa bazy danych, zapoznaj się również z tym [dokumentem](../exportation-bases-donnees/), aby pobrać jej kopię.
 
-W przypadku błędu 500 przywrócenie [strony](../erreur-500-internal-server-error/#restaurer-son-site) jest możliwe. Jednak bardziej pożądane jest przeprowadzenie szczegółowej diagnozy w celu określenia dokładnego źródła błędu.
+W przypadku błędu 500 przywrócenie [strony](#restore) jest możliwe. Jednak bardziej pożądane jest przeprowadzenie szczegółowej diagnozy w celu określenia dokładnego źródła błędu.
 
 ### Sprawdź logi Twojego hostingu
 
-Zapoznaj się najpierw z tym [przewodnikiem](../mutualise-consulter-les-statistiques-et-les-logs-de-mon-site/), aby sprawdzić przyczynę błędu 500 w logach Twojego hostingu.
+Zapoznaj się najpierw z tym [przewodnikiem](../hosting_statystyki_i_logi_strony/), aby sprawdzić przyczynę błędu 500 w logach Twojego hostingu.
 
 ### Przejdź na tryb programowania
 
-Aby wyświetlić ewentualne błędy PHP, przejdź do trybu `programowania`, korzystając z tych [wskazówek](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#etape-2-modifier-la-configuration-de-lhebergement-web).
+Aby wyświetlić ewentualne błędy PHP, przejdź do trybu `programowania`, korzystając z tych [wskazówek](../zmiana_srodowiska_uruchomieniowego_dla_hostingu_www/#etap-2-zmiana-konfiguracji-hostingu).
 
 ### Przetestuj plik .htaccess
 
 Błąd 500 może być związany z nieprawidłowością w pliku `.htaccess`. Plik ten jest zwykle umieszczony na pierwszym poziomie w folderze zawierającym Twoją stronę WWW na FTP. 
 
-Aby to sprawdzić, [zaloguj się przez FTP](../connexion-espace-stockage-ftp-hebergement-web/) do Twojego hostingu.
+Aby to sprawdzić, [zaloguj się przez FTP](../logowanie-przestrzen-dyskowa-ftp-hosting-web/) do Twojego hostingu.
 
 Zmień nazwę pliku na `.htaccess.old` i przetestuj swoją stronę. 
 
@@ -69,21 +69,21 @@ Pliki i foldery tworzące Twoją stronę WWW posiadają określony poziom "upraw
 
 Błąd 500 może być związany z nieprawidłowym poziomem praw dostępu do niektórych katalogów lub plików na Twojej stronie.
 
-Aby uzyskać dostęp do tych plików, zaloguj się przez FTP do Twojego hostingu zgodnie z naszą [dokumentacją](../connexion-espace-stockage-ftp-hebergement-web/).
+Aby uzyskać dostęp do tych plików, zaloguj się przez FTP do Twojego hostingu zgodnie z naszą [dokumentacją](../logowanie-przestrzen-dyskowa-ftp-hosting-web/).
 
-Przewodnik "[Korzystanie z programu FileZilla na Twoim hostingu](../mutualise-guide-utilisation-filezilla/#droits-des-fichiers-dossiers)" pomoże Ci w weryfikacji następujących elementów: 
+Przewodnik "[Przewodnik dotyczący korzystania z programu FileZilla](../hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/#uprawnienia-do-plikow-i-katalogow)" pomoże Ci w weryfikacji następujących elementów: 
 
--	**Korzeń** hostingu (katalog jest zapisany `/` lub `.` w programie FTP) musi mieć uprawnienia 705 (są to uprawnienia domyślne). Zalecamy, aby nie zmieniać tego poziomu uprawnień.
--	Dokumentacja musi być w 705 r.
--	Pliki muszą mieć uprawnienia 604.
+- **Korzeń** hostingu (katalog jest zapisany `/` lub `.` w programie FTP) musi mieć uprawnienia 705 (są to uprawnienia domyślne). Zalecamy, aby nie zmieniać tego poziomu uprawnień.
+- Dokumentacja musi być w 705 r.
+- Pliki muszą mieć uprawnienia 604.
 
 ### Dostęp do informacji o błędach w skryptach
 
 Ze względów bezpieczeństwa Twoja strona WWW ukrywa ewentualne szczegóły dotyczące źródła błędu 500 dla każdego, kto ją łączy za pomocą przeglądarki internetowej.
 
-Jeśli chcesz uzyskać dostęp do tych danych, możesz, korzystając z formuły hostingu [pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml), połączyć się ze stroną za pomocą [połączenia ssh](../mutualise-le-ssh-sur-les-hebergements-mutualises/).
+Jeśli chcesz uzyskać dostęp do tych danych, możesz, korzystając z formuły hostingu [pro2014](https://www.ovh.pl/hosting/hosting-pro.xml), połączyć się ze stroną za pomocą [połączenia ssh](../hosting_www_ssh_na_hostingu/).
 
-### Przywróć zawartość strony
+### Przywróć zawartość strony <a name="restore"></a>
 
 > [!warning]
 >
@@ -91,19 +91,17 @@ Jeśli chcesz uzyskać dostęp do tych danych, możesz, korzystając z formuły 
 > 
 > Podczas przywracania zawartość Twojej przestrzeni FTP lub bazy danych zostaje zastąpiona kopią zapasową. Następnie nie będziesz mógł pobrać danych z serwera tuż przed przywróceniem danych.
 
-Aby przywrócić kod źródłowy Twojej strony, zapoznaj się z naszym przewodnikiem "[Przywracanie przestrzeni dyskowej hostingu](../restauration-ftp-filezilla-espace-client/)". 
+Aby przywrócić kod źródłowy Twojej strony, zapoznaj się z naszym przewodnikiem "[Przywracanie plików z kopii zapasowej OVH](../restauration-ftp-filezilla-espace-client/)". 
 
-Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodnikiem "[Przywrócenie kopii zapasowej bazy danych](../mutualise-guide-importation-dune-base-de-donnees-mysql/#restaurer-une-sauvegarde-depuis-lespace-client)", aby przywrócić ją do poprzedniego stanu.
+Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodnikiem "[Import kopii zapasowej do bazy danych hostingu](../hosting_www_importowanie_bazy_danych_mysql/#przywracanie-kopii-zapasowej-w-panelu-klienta)", aby przywrócić ją do poprzedniego stanu.
 
-Jeśli po aktualizacji wersji PHP na Twoim hostingu wystąpił błąd 500, zapoznaj się z naszym przewodnikiem "[Konfiguracja PHP na hostingu](../configurer-le-php-sur-son-hebergement-web-mutu-2014/)" i wróć do poprzedniej konfiguracji.
+Jeśli po aktualizacji wersji PHP na Twoim hostingu wystąpił błąd 500, zapoznaj się z naszym przewodnikiem "[Zmiana wersji PHP na hostingu](../konfiguracja_php_na_hostingu_www_ovh_2014/)" i wróć do poprzedniej konfiguracji.
 
 
 ## Sprawdź również <a name="gofurther"></a>
 
-[Wszystko o pliku .htaccess](../hosting/mutualise-tout-sur-le-fichier-htaccess/)
+[Plik .htaccess na hostingu](../hosting_www_plik_htaccess/)
 
-[Jak zdiagnozować białą stronę?](../hosting/comment-diagnostiquer-page-blanche/)
+[Przyczyny wyświetlania się “białej strony”](../hosting_www_jak_sprawdzic_przyczyne_wyswietlania_sie_bialej_strony/)
 
-[Kody odpowiedzi serwera HTTP](../hosting/mutualise-les-codes-de-reponse-dun-serveur-http/)
-
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com>.
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
