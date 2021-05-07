@@ -22,7 +22,7 @@ Il est important de l'utiliser car l'absence de Reverse DNS peut être considér
 -   Un nom de domaine (ou sous-domaine) redirigeant vers l'adresse IP de votre accès xDSL ou fibre.
 -   Un accès xDSL ou fibre OVH.
 
-Il n'est pas possible de configurer les Reverse DNS des blocs IP ([Commander et gérer un bloc IP /29](../comment-commander-et-gerer-un-bloc-ip-29/)) fournis en option sur nos accès.
+Il est également possible de configurer les Reverse DNS des blocs IP ([Commander et gérer un bloc IP /29](../comment-commander-et-gerer-un-bloc-ip-29/)) fournis en option sur nos accès.
 
 ### Vérifier que le nom de domaine soit bien configuré {#vérifier-que-le-nom-de-domaine-soit-bien-configuré}
 
