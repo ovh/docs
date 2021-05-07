@@ -1,5 +1,5 @@
 ---
-title: 'Weiterleitung einer von OVH verwalteten Domain'
+title: 'Weiterleitung einer bei OVHcloud verwalteten Domain'
 slug: domainweiterleitung
 excerpt: 'In dieser Anleitung lernen Sie die verschiedenen Weiterleitungsarten kennen und erfahren, wie Sie diese für von OVH verwaltete Domains einrichten.'
 section: DNS und DNS-Zone
@@ -120,7 +120,7 @@ Weitere Tipps zu .htaccess-Dateien finden Sie in unserer Anleitung [Webhosting: 
 
 > [!primary]
 >
-> **Erstellen Sie vor jeder Änderung unbedingt eine Sicherungskopie Ihrer .htaccess-Datei**. So können Sie bei Bedarf die vorherige Version wiederherstellen.
+> **Erstellen Sie vor jeder Änderung unbedingt eine Sicherungskopie Ihrer .htaccess-Datei.** So können Sie bei Bedarf die vorherige Version wiederherstellen.
 >
 
 - **Redirect permanent**
