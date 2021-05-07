@@ -6,7 +6,6 @@ space_key: CRXDSL
 space_name: XDSL
 section: Diagnostic et dépannage
 ---
-
 **Dernière mise à jour le 07/08/2021**
 ---
 ## Objectif {#préambule}
@@ -30,7 +29,7 @@ Niveau : Débutant
 
 ------------------------------------------------------------------------
 
-### Accéder au menu de gestion des alertes
+#### Accéder au menu de gestion des alertes
 
 Pour pouvoir gérer vos alertes:
 
@@ -46,7 +45,7 @@ Vous arrivez alors sur le formulaire de création de notification.
 ![](images/XDSL%20monitoring.png){.thumbnail}
 ------------------------------------------------------------------------
 
-### Notifications par e-mail {#notifications-par-e-mail}
+#### Notifications par e-mail {#notifications-par-e-mail}
 
 Pour créer une notification par e-mail :
 
@@ -63,7 +62,7 @@ Si vous ajoutez une adresse commune à plusieurs accès, vous recevrez un seul e
 
 ------------------------------------------------------------------------
 
-### Notifications par SMS {#notifications-par-sms}
+#### Notifications par SMS {#notifications-par-sms}
 
 -	Cliquez sur “Ajouter une alerte”. 
 -	Sélectionnez “SMS” dans le menu déroulant correspondant au type de notification.
@@ -80,7 +79,7 @@ Vous recevrez un SMS indiquant la perte de votre accès.
 
 ------------------------------------------------------------------------
 
-### Supprimer les notifications {#supprimer-les-notifications}
+#### Supprimer les notifications {#supprimer-les-notifications}
 
 Vous pouvez, si vous le souhaitez, supprimer une ou la totalité des notifications en place. 
 
