@@ -75,7 +75,7 @@ Si vous ajoutez une adresse commune à plusieurs accès, vous recevrez un seul e
 
 Vous recevrez un SMS indiquant la perte de votre accès.
 
-![](images/XDSL-monitoring-alertesms.png){.thumbnail}
+![](images/XDSL-monitoring-alertes-sms.png){.thumbnail}
 
 -----------------------------------------------------------------------
 
