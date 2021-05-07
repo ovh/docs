@@ -77,7 +77,7 @@ Vous recevrez un SMS indiquant la perte de votre accès.
 
 ![](images/XDSL-monitoring-alertesms.png){.thumbnail}
 
-------------------------------------------------------------------------
+-----------------------------------------------------------------------
 
 ### Supprimer les notifications {#supprimer-les-notifications}
 
