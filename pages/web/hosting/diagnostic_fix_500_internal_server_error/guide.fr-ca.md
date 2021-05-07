@@ -6,7 +6,7 @@ excerpt: Diagnostiquez les cas les plus courants d'erreurs 500
 section: Diagnostic
 ---
 
-**Dernière mise à jour le 06/05/2021**
+**Dernière mise à jour le 07/05/2021**
 
 ## Objectif
 
@@ -22,12 +22,11 @@ Elles proviennent parfois aussi d'une mise à jour effectuée **automatiquement*
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
->
 
 ## Prérequis
 
-- Disposer d'une [offre d'hébergement mutualisé](https://www.ovh.com/fr/hebergement-web/)
-- Etre connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Disposer d'une [offre d'hébergement mutualisé](https://www.ovh.com/ca/fr/hebergement-web/)
+- Etre connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 ## En pratique
 
@@ -47,7 +46,7 @@ Consultez tout d'abord ce [guide](../mutualise-consulter-les-statistiques-et-les
 
 ### Passer votre site en mode développement
 
-Afin de faire apparaître d'éventuelles erreurs PHP, passez ensuite votre hébergement en mode `développement` grâce à ces [indications](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#etape-2-modifier-la-configuration-de-lhebergement-web).
+Afin de faire apparaître d'éventuelles erreurs PHP, passez ensuite votre hébergement en mode `développement` grâce à ces [indications](../modifier-lenvironnement-dexecution-de-mon-hebergement-web/#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client).
 
 ### Tester le fichier .htaccess
 
@@ -57,7 +56,7 @@ Pour le vérifier, [connectez-vous en FTP](../connexion-espace-stockage-ftp-hebe
 
 Puis renommez ce fichier en `.htaccess.old` et retestez votre site.
 
-Si ce dernier est de nouveau accessible, alors le `.htaccess` est en cause. Il devra donc être modifié. Si vous le souhaitez, contactez l'un de nos [partenaires](https://marketplace.ovhcloud.com/) à ce sujet.
+Si ce dernier est de nouveau accessible, alors le `.htaccess` est en cause. Il devra donc être modifié. Si vous le souhaitez, contactez l'un de nos [partenaires](https://partner.ovhcloud.com/fr-ca/directory/) à ce sujet.
 
 ### Vérifier les permissions sur les dossiers et les fichiers
 
@@ -77,12 +76,11 @@ Le guide « [Utilisation du logiciel FileZilla avec votre hébergement](../mutua
 
 Pour des raisons de sécurité, votre site masque les détails éventuels sur l'origine de l'erreur 500 à toute personne s'y connectant par un navigateur web.
 
-Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous est possible, à partir de la formule d’hébergement [pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml), de vous connecter à votre site via une [connexion ssh](../mutualise-le-ssh-sur-les-hebergements-mutualises/).
+Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous est possible, à partir de la formule d’hébergement [pro2014](https://www.ovh.com/ca/fr/hebergement-web/hebergement-web-pro.xml), de vous connecter à votre site via une [connexion ssh](../mutualise-le-ssh-sur-les-hebergements-mutualises/).
 
 ### Restaurer votre site à son état antérieur <a name="restore"></a>
 
 > [!warning]
->
 > La restauration du code source de votre site concernera l'ensemble des sites de votre hébergement OVHcloud.
 >
 > Lors d'une restauration, le contenu de votre espace FTP, ou celui de votre base de données, est remplacé par une sauvegarde. Vous ne pourrez donc pas récupérer ensuite les données présentes sur le serveur juste avant la restauration.
