@@ -82,3 +82,5 @@ Vous pouvez, si vous le souhaitez, supprimer une ou la totalité des notificatio
 •	Cliquez sur la poubelle correspondant à la notification à supprimer.
 •	Cliquez sur “OK” pour confirmer la suppression.
 
+------------------------------------------------------------------------
+
