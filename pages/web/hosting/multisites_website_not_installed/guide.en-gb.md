@@ -1,97 +1,84 @@
 ---
-title: 'Resolving a “Website not installed” error'
-excerpt: 'Find out how to resolve a “Website not installed” error'
-slug: web_hosting_error_-_website_not_installed
-section: 'Web Hosting configuration'
+title: Resolve the “Website not installed” error
+slug: website-not-installed-error
+excerpt: Find out how to identify and resolve the “Website not installed” error page
+section: \`Web hosting plan configuration\`
+order: 2
 ---
 
-
-**Last updated 21st March 2018**
-
+**Last updated 07/05/2021**
 
 ## Objective
 
-The “Website not installed” warning page is designed to flag that your domain name’s DNS zone is incorrectly configured, or that the domain name used by your website has been incorrectly configured on your OVHcloud Web Hosting plan.
+You may see a **Site not installed** error page appear on your web browser, particularly when you first install your website.
 
-**Find out how to resolve a “Website not installed” error.**
+![site-not-installed](images/site-not-installed.png){.thumbnail}
+
+**Find out how to identify and resolve the “Website not installed” error page**
+
+> [!warning]
+> OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a specialist provider and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the [Go further](#gofurther) section of this guide.
 
 ## Requirements
 
-- You must have an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external}.
-- You must have the appropriate rights to manage the [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting/){.external} that your website is hosted on.
-- You must have the appropriate rights to manage the configuration for the domain name concerned (i.e. its DNS zone).
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+- an [OVHcloud Web Hosting plan](https://www.ovh.co.uk/web-hosting)
+- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- access to the [DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/) your domain name is attached to.
 
 ## Instructions
 
-The “Website not installed” page will only appear if:
+The **Website not installed** page appears in two situations:
 
-- Your website’s domain name is incorrectly added as a  **Multisite** in your OVHcloud Web Hosting plan’s configuration.
-- Your website’s domain name has not been linked correctly to your OVHcloud Web Hosting plan, as it doesn’t have the correct IP address added in its DNS zone configuration.
+1. Your domain is not present in the [multisite](../multisites-configuring-multiple-websites/#step-1-access-multisite-management) part of your hosting.
 
-By following the two steps listed below, you can check these two configurations and resolve the “Website not installed” error.
+2. Your domain name is not linked to your hosting plan via its `DNS zone`{.action}.
 
-![sitenotinstalled](images/site-not-installed-webpage.png){.thumbnail}
+The following steps will help you correct the `Website not installed` error in these two situations.
 
-### Step 1: Check your Web Hosting plan’s configuration (Multisite)
+### Step 1: check the multisite section of your hosting plan
 
-To check that the domain name has been correctly added as a multisite in your Web Hosting plan, go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then click `Web hosting`{.action} in the left-hand services bar. In the Web Hosting plan list, click on the one hosting the website for which the “Website not installed” page appears. Go to the `Multisite`{.action} tab.
+In the [OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) Control Panel, click `Web cloud`{.action}, then `Hosting`{.action}.
 
-The table that opens will contain all of the domain names added to your Web Hosting plan as multisites. You can use the search bar to find for the domain name concerned.
+Select the web hosting plan concerned in the list, then click on the `Multisite`{.action} tab.
 
-Once you have followed the instructions above and found the domain name concerned, there may be several outcomes:
-
-|Possible outcomes|What to do|
+|Scenario|What to do|
 |---|---|
-|The domain appears in the table|This shows that the domain name has been correctly added to your Web Hosting plan as a multisite. If you have added it within the last 15 minutes, please wait a few moments for the “Website not installed” page to close. If the page stays open, go to [Step 2: Check the domain name’s DNS configuration](https://docs.ovh.com/gb/en/hosting/web_hosting_error_-_website_not_installed/#step-2-check-your-domain-names-dns-configuration){.external}.|
-|The domain no longer appears in the table|If you added the domain name but it is no longer listed in the table, you may not have completed all the steps required to add it to your Web Hosting plan, or you may have accidentally deleted it. If this is the case, we recommend referring to our guide to [Hosting multiple websites on your web hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}, to ensure that you followed all of the steps when you added your domain name.|
-|The domain does not appear in the table|You have not yet added this domain name as a multisite on your OVHcloud Web Hosting plan. To add it, please follow our guide to [Hosting multiple websites on your web hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}.|
+|Your website name will appears in the table.|If you just added your website name to the multisite section of your hosting plan, wait around twenty minutes then refresh your web browser’s cache. If the message \`Site not installed\` still appears, proceed to [step 2](#checkdomainlink).|
+|The domain or subdomain linked to your website does not appear in the table.|Add your domain to the `multisite`{.action} by following the dedicated section of the guide [Hosting multiple websites on your domain - add a domain or subdomain](../multisites-configuring-multiple-websites/#step-21-adding-an-ovhcloud-registered-domain).|
+|The domain name has been deleted from the multisite without any action on your part.|Your domain or its DNS zone may be managed from another account. Add your domain to the multisite by following the dedicated section of the guide on [Hosting multiple websites on your Web Hosting plan - multisites-configuring-multiple-websites/#step-22-adding-an-external-domain](../multisites-configuring-multiple-websites/#step-22-adding-an-external-domain) domain name.|
 
-If you have completed all of the actions listed above, but the “Website not installed” page still appears, please move on to the step below.
-
-### Step 2: Check your domain name’s DNS configuration
-
-First of all, you will need to check the DNS configuration to use. To do this, stay in the section for the Web Hosting plan concerned, go to the `General information`{.action} tab, then note down the addresses that appear next to **IPv4** and **IPv6**.
-
-![sitenotinstalled](images/site-not-installed-know-a-records.png){.thumbnail}
-
-You can now check your domain name’s DNS configuration. You will need to do this using the interface provided by the registrar that manages its configuration.
+### Step 2: check your domain’s DNS zone <a name="checkdomainlink"></a>
 
 > [!primary]
 >
-> If your domain name is registered with OVHcloud, you can check if it uses our configuration. To do this, stay in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, click `Domains`{.action} in the services bar on the left-hand side, then click on the domain name concerned. Next, go to the `DNS servers`{.action} tab.
->
+> This step involves checking that your domain name via its DNS `zone`{.action} is linked to your website’s hosting plan.
+> To find out more about the concept of DNS, please refer to our guide on [Editing an OVHcloud](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) DNS zone.
 
-There are two areas where you can check this, depending on your domain name’s configuration:
+#### 2.1 Identify the IP address of your OVHcloud web hosting plan
 
-- **If your domain name does not use the OVHcloud configuration:** you will need to check the configuration using the interface provided by the registrar that manages your domain name configuration.
+To find the IP address, click `Hosting` in the left-hand column of the OVHcloud Control [Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), then select the plan concerned.
 
-- **If your domain name uses the OVHcloud configuration:** you will need to check the configuration from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Once you have clicked on the domain name concerned, go to the `DNS zone`{.action} tab. The DNS configuration will open in a table, with each line representing a different DNS record. You can filter the table content by DNS record type, or by domain name.
+![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 
-![sitenotinstalled](images/site-not-installed-edit-ovh-dns-zone.png){.thumbnail}
+#### 2.2 Check the IP address recorded in your domain’s DNS zone
 
-Using the interface that manages your domain name configuration for the website with the “Website not installed” page, ensure that the DNS records below are correctly configured.
+You must now check that your hosting plan’s IP address appears in your domain’s active DNS zone.
 
-|Record|Target|
-|---|---|
-|A|The target must be the **IPv4** address you noted down earlier.|
-|AAAA|The target must be the **IPv6** address you noted down earlier.|
-
-When you check these records, there are two possible outcomes:
+To do this, go to the `Domains`{.action} section, select your domain, then go to the `DNS`{.action} zone tab.
 
 |Possible outcomes|What to do|
 |---|---|
-|The targets are correct|This means your domain name has been correctly configured. If you have modified its DNS configuration, please allow 24 hours for the changes to fully propagate.|
-|The targets are incorrect|Your domain name’s configuration needs to be modified. If it uses the OVHcloud configuration, please follow the steps provided in our guide to [Editing your DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}. If it doesn’t use the OVHcloud configuration, follow the instructions provided in your registrar’s interface. Once you have modified the DNS zone configuration, you will need to allow 24 hours for the changes to fully propagate.|
+|In the DNS zone, your domain is linked to your hosting plan’s IP address by an A record (for IPv4) or an AAAA record (for IPv6) ![DNS_IP2](images/zonedns_ip2.png){.thumbnail}|This means your domain name has been correctly configured.<br><br>Following the latest changes in your DNS, your website will be displayed within a maximum of 48 hours.<br><br>Also remember to restart your devices (PC, smartphone, box, etc.) and clear your browser’s cache.|
+|Your DNS zone does not have an A or AAAA record linking your domain to your hosting plan’s IP address. Or the existing entry points to another IP address.|Add a new A or AAAA record, or correct the existing record by following [this guide](../../domains/editer-ma-zone-dns/).|
+|Your domain does not appear in the `Domains`{.action} section of the OVHcloud Control Panel.<br>Or your domain's DNS `Zone`{.action} tab will appear as follows: ![lec_nd_zonedns2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|This means that your domain is not managed from your OVHcloud Control Panel.<br><br>Determine your registrar using our ><br>You can find and modify the relevant DNS zone accordingly, following this [guide](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
+|This warning appears in the `DNS`{.action} Zone tab: ![dns_srv_not_zonedns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|You will need to modify your domain’s DNS servers accordingly, following [this guide](../../domains/generalites-serveurs-dns/).|
 
-If you have made all the changes required in steps 1 and 2, and taken into account the time required for changes to take effect, the “Website not installed” error page should no longer appear.
+## Go further <a name="gofurther"></a>
 
-## Go further 
+[Hosting multiple websites on your Web Hosting plan](../multisites-configurer-un-multisite-sur-mon-hebergement-web/)
 
-[Hosting multiple websites on your web hosting plan](https://docs.ovh.com/gb/en/hosting/multisites-configuring-multiple-websites/){.external}.
+[List of IP addresses for clusters and Web Hostings ](../liste-des-adresses-ip-des-clusters-et-hebergements-web/)
 
-[Editing an OVHcloud DNS zone](https://docs.ovh.com/gb/en/domains/web_hosting_how_to_edit_my_dns_zone/){.external}.
-
-
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
-
+Join our community of users on <https://community.ovh.com>.
