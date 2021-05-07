@@ -78,7 +78,9 @@ Vous recevrez un SMS indiquant la perte de votre accès.
 
 ### Supprimer les notifications {#supprimer-les-notifications}
 
-Vous pouvez, si vous le souhaitez, supprimer une ou la totalité des notifications en place. Pour ce faire :
+Vous pouvez, si vous le souhaitez, supprimer une ou la totalité des notifications en place. 
+
+Pour ce faire :
 •	Cliquez sur la poubelle correspondant à la notification à supprimer.
 •	Cliquez sur “OK” pour confirmer la suppression.
 
