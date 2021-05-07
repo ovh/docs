@@ -66,6 +66,9 @@ La configuration du Reverse DNS s'effectue dans l'Espace Client Telecom :
 Dans les caractéristiques sur la droite vous verrez apparraitre votre IP publique sous cette forme : 109.190.xxx.xxx ou 151.127.xxx.xxx.
 -   Cliquez sur l'icone engrenage à côté de votre IP.
 -   Cliquez sur le plus afin d'ajouter le reverse DNS.
+
+![](images/XDSL-ReverseDNS.png){.thumbnail}
+
 -   Saisissez votre IP publique et le sous domaine souhaité et validez 
 -   Mettez le nom de domaine ou sous-domaine et cliquez sur suivant. Validez à la page suivante. 
 
