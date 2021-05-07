@@ -19,7 +19,7 @@ Niveau : Débutant
 
 ### Prérequis {#prérequis}
 
--   Disposer d'un accès ADSL / SDSL qui répond aux requête ICMP (OK par défaut sur les modems distribués par OVH).
+-   Disposer d'un accès ADSL / SDSL qui répond aux requêtes ICMP (OK par défaut sur les modems distribués par OVH).
 -   Une adresse e-mail pour recevoir les notifications.
 -   Un compte SMS crédité si vous souhaitez recevoir les SMS de notifications sur votre mobile.
 
