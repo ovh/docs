@@ -6,7 +6,7 @@ excerpt: Diagnostiquez les cas les plus courants d'erreurs 500
 section: Diagnostic
 ---
 
-**Dernière mise à jour le 11/02/2021**
+**Dernière mise à jour le 06/05/2021**
 
 ## Objectif
 
@@ -19,9 +19,10 @@ Elles proviennent parfois aussi d'une mise à jour effectuée **automatiquement*
 **Découvrez comment diagnostiquer les cas les plus courants d'erreurs 500.**
 
 > [!warning]
+>
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](../erreur-500-internal-server-error/#aller-plus-loin_1) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un prestataire spécialisé et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
 >
 
 ## Prérequis
@@ -86,6 +87,7 @@ Si vous ou votre développeur souhaitez avoir accès à ces détails, il vous es
 > La restauration du code source de votre site concernera l'ensemble des sites de votre hébergement OVHcloud.
 >
 > Lors d'une restauration, le contenu de votre espace FTP, ou celui de votre base de données, est remplacé par une sauvegarde. Vous ne pourrez donc pas récupérer ensuite les données présentes sur le serveur juste avant la restauration.
+>
 
 Pour restaurer le code source de votre site, consultez notre guide « [Restaurer l’espace de stockage de son hébergement web](../restauration-ftp-filezilla-espace-client/) ».
 
@@ -93,7 +95,7 @@ Si votre site comporte une base de données, consultez notre guide « [Restaurer
 
 Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP de votre hébergement, consultez notre guide « [Configurer le PHP sur son hébergement](../configurer-le-php-sur-son-hebergement-web-mutu-2014/) » pour revenir à la configuration précédente.
 
-## Aller plus loin
+## Aller plus loin <a name="gofurther"></a>
 
 [Tout sur le fichier .htaccess](../mutualise-tout-sur-le-fichier-htaccess/)
 

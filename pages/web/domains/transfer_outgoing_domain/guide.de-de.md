@@ -1,5 +1,5 @@
 ---
-title: Eine Domain zu einem anderen Registrar transferieren
+title: Einen Domainnamen zu einem anderen Registrar transferieren
 slug: ausgehender-transfer-einer-generischen-oder-geografischen-domain
 excerpt: Erfahren Sie hier, wie Sie Ihre Domain von OVHcloud zu einem Provider Ihrer Wahl transferieren
 section: Transfer

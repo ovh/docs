@@ -1,10 +1,9 @@
 ---
-title: 'OVH DNS-Zone für eine Domain erstellen'
+title: 'OVHcloud DNS-Zone für eine Domain erstellen'
 excerpt: 'Hier erfahren Sie, wie Sie über Ihr Kundencenter eine OVH DNS-Zone für Ihre Domain erstellen.'
 slug: erstellung_einer_dns_zone_fur_eine_externe_domain
 legacy_guide_number: g2229
 section: 'DNS und DNS-Zone'
-order: 2
 ---
 
 **Stand 30.11.2018**
