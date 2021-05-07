@@ -7,7 +7,9 @@ space_name: XDSL
 section: Diagnostic et dépannage
 ---
 
-### Préambule {#préambule}
+**Dernière mise à jour le 07/08/2021**
+---
+## Objectif {#préambule}
 
 Le monitoring permet de vous alerter lorsque votre accès n'est plus joignable selon une fréquence définie. Les notifications seront effectives lorsque votre accès ne répondra plus aux requêtes ICMP (ping).
 Les notifications sont envoyées par e-mail ou par SMS. (Il faut que votre compte SMS soit crédité.)
@@ -71,8 +73,7 @@ Si vous ajoutez une adresse commune à plusieurs accès, vous recevrez un seul e
 ![](images/XDSL%20Monitoring%20alerte.png){.thumbnail}
 
 Vous recevrez un SMS indiquant la perte de votre accès.
-![](images/Screenshot_2015-05-25-08-33-15.png){.thumbnail}
-
+<img src="https://github.com/ovh/docs/blob/TimG/pages/telecom/xdsl/monitoring/images/Screenshot_2015-05-25-08-33-15.png" alt="fault domain informations" width="50%" height="50%">
 
 ------------------------------------------------------------------------
 
