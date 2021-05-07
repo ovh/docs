@@ -40,7 +40,7 @@ Au centre de la page dans les informations générales cliquez sur “Afficher l
 
 Vous arrivez alors sur le formulaire de création de notification.
 
-![](images/XDSL monitoring.png){.thumbnail}
+![](images/XDSL%20monitoring.png){.thumbnail}
 
 -   Dans le champ "**e-mail**", entrez l'adresse à notifier.
 -   Le lien "**Ajouter un e-mail supplémentaire**" vous permet d'ajouter d'autres adresses e-mails à notifier.
@@ -65,7 +65,8 @@ Pour créer une notification par e-mail :
 La partie “fréquence” vous permet de choisir la fréquence des notifications e-mail lors d’une coupure. Si vous sélectionnez une fois vous recevrez un mail à la coupure et un mail au rétablissement de l’accès.
 
 Si vous ajoutez une adresse commune à plusieurs accès, vous recevrez un seul e-mail contenant toutes les notifications de coupure.
-![](XDSL Monitoring alerte.png){.thumbnail}
+
+![](XDSL%20Monitoring%20alerte.png){.thumbnail}
 
 ------------------------------------------------------------------------
 
@@ -78,7 +79,7 @@ Si vous ajoutez une adresse commune à plusieurs accès, vous recevrez un seul e
 -	Dans la partie “Fréquence“, choisissez la fréquence des notifications SMS lors d’une coupure.
 -	Cliquez sur le bouton valider en bout de ligne.
 
-![](images/XDSL Monitoring alerte.png){.thumbnail}
+![](images/XDSL%20Monitoring alerte.png){.thumbnail}
 
 Vous recevrez un SMS indiquant la perte de votre accès.
 
