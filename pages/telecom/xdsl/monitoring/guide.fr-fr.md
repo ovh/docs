@@ -18,6 +18,8 @@ Les notifications sont envoyées par e-mail ou par SMS. (Il faut que votre compt
 
 Niveau : Débutant
 
+## En pratique
+
 ------------------------------------------------------------------------
 
 ### Prérequis {#prérequis}
