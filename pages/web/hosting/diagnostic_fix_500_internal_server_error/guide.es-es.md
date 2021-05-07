@@ -40,7 +40,8 @@ A veces también se actualizan **automáticamente** en un componente del sitio w
 
 Antes de continuar, compruebe su sitio web en varios dispositivos y navegadores. Si en algunos casos no aparece el error 500 (por ejemplo, a través de un navegador diferente del suyo), es porque no está asociado a sus servicios de OVHcloud. Reinicie sus dispositivos y, si es necesario, contacte con un técnico informático cercano a su domicilio.
 
-Un sitio web está formado por un **código fuente** (los archivos en .php, por ejemplo, visibles durante una conexión a su alojamiento a >pesar del error 500, es altamente recomendable realizar una copia de seguridad local de todos sus datos antes de realizar cualquier otra operación :
+Un sitio web está formado por un **código fuente** (los archivos en .php, por ejemplo, visibles durante una conexión a su alojamiento en [FTP](../conexion-espacio-almacenamiento-ftp-alojamiento-web/), al que se añade a menudo una **base de datos**).
+<br>A pesar del error 500, es altamente recomendable realizar una copia de seguridad local de todos sus datos antes de realizar cualquier otra operación :
 
 - Consulte esta [guía](../web_hosting_guia_de_uso_de_filezilla/) para obtener una copia de su código fuente.
 - Si su sitio web utiliza una base de datos, consulte también este [documento](../web_hosting_exportacion_de_una_base_de_datos/) para obtener una copia de la misma.
