@@ -88,3 +88,6 @@ Pour ce faire :
 
 ------------------------------------------------------------------------
 
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
