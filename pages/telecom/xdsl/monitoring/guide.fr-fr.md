@@ -31,7 +31,7 @@ Niveau : Débutant
 
 ### Accéder au menu de gestion des alertes
 
-Pour pouvoir gérer vos alertes:
+Pour pouvoir gérer vos alertes :
 
 -	Connectez-vous à votre Espace Client : https://www.ovhtelecom.fr/manager/
 -	Cliquez sur l’onglet “Accès Internet”.
