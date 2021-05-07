@@ -34,7 +34,7 @@ Zdarza się to również w wyniku aktualizacji przeprowadzonej **automatycznie**
 ## Wymagania początkowe
 
 - Posiadanie [hostingu](https://www.ovh.pl/hosting/)
-- Dostęp do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 
 ## W praktyce
@@ -45,7 +45,7 @@ Strona składa się z **kodu źródłowego** (na przykład pliki .php, widoczne 
 <br>Pomimo błędu 500, zaleca się wykonanie lokalnej kopii zapasowej wszystkich danych przed kolejną operacją :
 
 - Zapoznaj się z tym [przewodnikiem](../hosting_www_przewodnik_dotyczacy_korzystania_z_programu_filezilla/), aby pobrać kopię Twojego kodu źródłowego.
-- Jeśli Twoja strona używa bazy danych, zapoznaj się również z tym [dokumentem](../exportation-bases-donnees/), aby pobrać jej kopię.
+- Jeśli Twoja strona używa bazy danych, zapoznaj się również z tym [dokumentem](../eksport-bazy-danych/), aby pobrać jej kopię.
 
 W przypadku błędu 500 przywrócenie [strony](#restore) jest możliwe. Jednak bardziej pożądane jest przeprowadzenie szczegółowej diagnozy w celu określenia dokładnego źródła błędu.
 
@@ -95,7 +95,7 @@ Jeśli chcesz uzyskać dostęp do tych danych, możesz, korzystając z formuły 
 >
 > Podczas przywracania zawartość Twojej przestrzeni FTP lub bazy danych zostaje zastąpiona kopią zapasową. Następnie nie będziesz mógł pobrać danych z serwera tuż przed przywróceniem danych.
 
-Aby przywrócić kod źródłowy Twojej strony, zapoznaj się z naszym przewodnikiem "[Przywracanie plików z kopii zapasowej OVH](../restauration-ftp-filezilla-espace-client/)".
+Aby przywrócić kod źródłowy Twojej strony, zapoznaj się z naszym przewodnikiem "[Przywracanie plików z kopii zapasowej OVHcloud](../hosting_przywrocenie_kopii_zawartosci_ftp_w_aplikacji_filezilla/)".
 
 Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodnikiem "[Import kopii zapasowej do bazy danych hostingu](../hosting_www_importowanie_bazy_danych_mysql/#przywracanie-kopii-zapasowej-w-panelu-klienta)", aby przywrócić ją do poprzedniego stanu.
 
