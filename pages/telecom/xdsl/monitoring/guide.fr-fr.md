@@ -78,7 +78,7 @@ Si vous ajoutez une adresse commune à plusieurs accès, vous recevrez un seul e
 -	Dans la partie “Fréquence“, choisissez la fréquence des notifications SMS lors d’une coupure.
 -	Cliquez sur le bouton valider en bout de ligne.
 
-![](XDSL Monitoring alerte.png){.thumbnail}
+![](images/XDSL Monitoring alerte.png){.thumbnail}
 
 Vous recevrez un SMS indiquant la perte de votre accès.
 
