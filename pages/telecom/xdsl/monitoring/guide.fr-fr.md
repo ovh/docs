@@ -75,7 +75,7 @@ Si vous ajoutez une adresse commune à plusieurs accès, vous recevrez un seul e
 
 Vous recevrez un SMS indiquant la perte de votre accès.
 
-<img src="https://github.com/ovh/docs/blob/TimG/pages/telecom/xdsl/monitoring/images/Screenshot_2015-05-25-08-33-15.png" alt="fault domain informations" width="50%" height="50%">
+![](images/XDSL-monitoring-alertesms.png){.thumbnail}
 
 ------------------------------------------------------------------------
 
