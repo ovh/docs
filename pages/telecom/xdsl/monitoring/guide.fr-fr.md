@@ -34,6 +34,8 @@ Pour créer une notification par e-mail :
 -	Cliquez sur l’onglet “Accès Internet”.
 -	Cliquez sur votre packadsl sur le menu de gauche (packadsl-xxxxxxx).
 -	Cliquez sur votre accès internet sur la droite (xdsl-xxxxxxx-1)
+
+
 Au centre de la page dans les informations générales cliquez sur “Afficher les alertes“.
 
 Vous arrivez alors sur le formulaire de création de notification.
