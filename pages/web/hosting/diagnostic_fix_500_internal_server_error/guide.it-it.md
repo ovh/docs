@@ -42,7 +42,8 @@ A volte provengono anche da un aggiornamento effettuato **automaticamente** da u
 
 Prima di proseguire, controlla il tuo sito su diversi apparecchi e browser. Se in alcuni casi l'errore 500 non compare (ad esempio tramite un browser diverso dal tuo), significa che non è associato ai tuoi servizi OVHcloud. Riavvia i tuoi dispositivi e, se necessario, contatta un tecnico informatico vicino al tuo domicilio.
 
-Un sito è costituito da un **codice sorgente** (ad esempio file con .php visibili durante una connessione al tuo hosting in >nonostante l'errore 500, ti consigliamo di effettuare un backup locale di tutti i tuoi dati prima di effettuare qualsiasi altra operazione :
+Un sito è costituito da un **codice sorgente** (ad esempio file con .php visibili durante una connessione al tuo hosting in [FTP](.../accedere-spazio-storage-ftp-hosting-web/)), al quale si aggiunge spesso una **database**.
+<br>Nonostante l'errore 500, ti consigliamo di effettuare un backup locale di tutti i tuoi dati prima di effettuare qualsiasi altra operazione :
 
 - Consulta questa [guida](../hosting_condiviso_guida_allutilizzo_di_filezilla/) per recuperare una copia del codice sorgente.
 - Se il tuo sito utilizza un database, consulta anche questo [documento](../web_hosting_come_esportare_un_database/) per recuperarne una copia.
