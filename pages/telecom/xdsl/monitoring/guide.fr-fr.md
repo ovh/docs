@@ -55,7 +55,7 @@ La partie “fréquence” vous permet de choisir la fréquence des notification
 
 Si vous ajoutez une adresse commune à plusieurs accès, vous recevrez un seul e-mail contenant toutes les notifications de coupure.
 
-![](XDSL%20Monitoring%20alerte.png){.thumbnail}
+![](images/XDSL%20Monitoring%20alerte.png){.thumbnail}
 
 ------------------------------------------------------------------------
 
