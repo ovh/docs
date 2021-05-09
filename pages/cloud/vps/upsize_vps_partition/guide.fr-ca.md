@@ -28,11 +28,13 @@ Lors de l’upgrade de votre VPS, il est possible qu’un repartitionnement de v
 
 Suite à un upgrade, la mémoire vive (RAM) et le processeur (CPU) seront automatiquement ajustés. Cela ne sera pas nécessairement le cas pour l’espace de stockage.
 
-### Sauvegarder vos données
+### Linux
+
+#### Sauvegarder vos données
 
 La tentative d’étendre une partition peut entraîner une perte de données. Par conséquent, **nous vous recommandons vivement** de sauvegarder les informations de votre VPS.
 
-### Démonter la partition
+#### Démonter la partition
 
 Une fois connecté à votre VPS en [mode rescue](../mode-rescue-vps/), votre partition sera automatiquement montée. Pour la redimensionner, vous devez la démonter. Si vous connaissez le nom de votre partition, vous pouvez ignorer l'étape suivante. Dans le cas contraire, utilisez cette commande :
 
@@ -56,7 +58,7 @@ Pour démonter votre partition, utilisez la commande suivante :
 umount /dev/sdb1
 ```
 
-### Vérifier le système de fichiers
+#### Vérifier le système de fichiers
 
 Une fois la partition démontée, il convient de vérifier le système de fichiers (`filesystem check`) pour s’assurer de l’absence d’erreurs. La commande est la suivante :
 
@@ -79,7 +81,7 @@ Si vous constatez une erreur, prenez-en connaissance et agissez de la manière l
 - `/dev/vdb1 has unsupported feature(s): metadata_csum` suivi de `e2fsck: Get a newer version of e2fsck!` : mettez à jour e2fsck. Si la dernière version n’est pas disponible via `apt` (ou autre gestionnaire de paquets), vous devrez la compiler depuis les sources.
 
 
-### Ouvrir l’application fdisk
+#### Ouvrir l’application fdisk
 
 Si la vérification du système de fichiers se finalise correctement, ouvrez l’application `fdisk`. Dans les paramètres, vous devez entrer le nom du disque et non celui de la partition. Par exemple, si votre partition est `sdb1` au lieu de `vdb1`, le nom du disque sera « /dev/sdb ».
 
@@ -92,7 +94,7 @@ fdisk -u /dev/sdb
 > Cette application est munie de plusieurs sous-commandes que vous pouvez lister avec la commande `m`.
 >
 
-### Supprimer l’ancienne partition
+#### Supprimer l’ancienne partition
 
 Avant de supprimer l'ancienne partition, il est recommandé de noter le numéro correspondant au premier secteur de la partition. Vous pouvez obtenir cette information avec la commande `p`{.action}. Elle est indiquée sous le champ `Start`. Conservez cette donnée pour plus tard.
 
@@ -124,7 +126,7 @@ Selected partition 1
 
 L’unique partition sera automatiquement effacée.
 
-### Créer une nouvelle partition
+#### Créer une nouvelle partition
 
 Vous devez maintenant créer une nouvelle partition avec la commande `n`{.action}. Nous vous recommandons d'utiliser les valeurs par défaut.
 
@@ -162,7 +164,7 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-### Étendre le système de fichiers sur la partition
+#### Étendre le système de fichiers sur la partition
 
 La partition a été étendue, mais son système de fichiers (<i>filesystem</i>) occupe toujours le même espace qu’auparavant. Afin de l’étendre, veuillez entrer la commande suivante :
 
@@ -174,7 +176,7 @@ Resizing the filesystem on /dev/sdb1 to 5242624 (4k) blocks.
 The filesystem on /dev/sdb1 is now 5242624 blocks long.
 ```
 
-### Vérifier les résultats
+#### Vérifier les résultats
 
 Afin de vérifier si l’opération a fonctionné, vous pouvez monter la partition nouvellement créée et regarder sa taille.
 
@@ -197,7 +199,7 @@ none 100M 0 100M 0% /run/user
 
 La nouvelle taille de la partition est indiquée en dessous de `size`.
 
-### Comment réparer les erreurs <i>bad magic number in superblock </i>?
+#### Comment réparer les erreurs <i>bad magic number in superblock </i>?
 
 Si la commande `e2fsck`{.action} renvoie le message d'erreur `bad magic number in superblock`, vous devez vérifier et réparer le système de fichiers en prenant un superblock de sauvegarde. Afin de voir les superblocks de sauvegarde disponibles, entrez la commande suivante :
 
@@ -226,6 +228,24 @@ Utilisez enfin le premier superblock de sauvegarde, afin de vérifier et répare
 ```sh
 fsck -b 32768 /dev/sdb1
 ```
+### Windows
+
+#### Accédez à 'File and Storage Services'.
+
+Vous pouvez le trouver dans le 'Server Manager' :
+
+![File and Storage Services](images/file-and-storage.png){.thumbnail}
+
+
+#### Redimensionnement du volume
+
+Cliquez avec le bouton droit sur le C : et sélectionnez `Extend Volume...`{.action} 
+
+Vous serez alors invité à choisir votre nouvelle taille de volume :
+
+![Set New Volume Size](images/extend.png){.thumbnail}
+
+Entrez la taille souhaitée et cliquez sur `OK`{.action}. Votre volume va maintenant être étendu.
 
 ## Aller plus loin
 
