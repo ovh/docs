@@ -9,10 +9,10 @@ section: Diagnostic et dépannage
 
 ## Objectif
 
-Le monitoring permet de vous alerter, selon une fréquence définie par vos soins, lorsque votre accès n'est plus joignable. Les notifications seront effectives lorsque votre accès ne répondra plus aux requêtes ICMP (ping).
-Les notifications sont envoyées par e-mail ou par SMS (il est alors nécessaire que votre compte SMS soit crédité).
+Le monitoring permet de vous alerter, selon une fréquence définie par vos soins, lorsque votre accès n'est plus joignable. Les notifications seront envoyées lorsque votre accès ne répondra plus aux requêtes ICMP (ping).
+Les notifications sont envoyées par e-mail ou par SMS (il est alors nécessaire de disposer d'un compte SMS OVHcloud crédité).
 
-**Découvrez comment activer des alertes de monitoring sur un accès à Internet OVHcloud**
+**Découvrez comment activer des alertes de monitoring sur un accès à Internet OVHcloud.**
 
 ### Prérequis
 
@@ -39,9 +39,11 @@ Vous arrivez alors sur le formulaire de création de notifications.
 Pour créer une notification par e-mail, cliquez sur `Ajouter une alerte`{.action}. 
 
 Sélectionnez « E-mail » dans le menu déroulant correspondant au type de notification.
-<br>Renseignez l'adresse e-mail à notifier dans le champ `Contact à notifier en cas d'alertes`.
+
+Renseignez l'adresse e-mail à notifier dans le champ `Contact à notifier en cas d'alertes`.
 <br>Précisez, dans le champ `Fréquence d'envoi`, la fréquence d'envoi des notifications par e-mail lors d'une coupure. Si vous sélectionnez « Une fois », vous recevrez un e-mail lors de la coupure et un e-mail lors du rétablissement de l’accès à Internet concerné.
-<br>Validez enfin l'alerte via le bouton dédié, à droite de la ligne.
+
+Validez l'alerte via le bouton dédié, à droite de la ligne.
 
 Si vous ajoutez une adresse commune à plusieurs accès, vous recevrez un seul e-mail contenant toutes les notifications de coupure.
 
@@ -52,10 +54,12 @@ Si vous ajoutez une adresse commune à plusieurs accès, vous recevrez un seul e
 Pour créer une notification par SMS, cliquez sur `Ajouter une alerte`{.action}.
 
 Sélectionnez « SMS » dans le menu déroulant correspondant au type de notification. 
-<br>Choisissez, dans le champ `Compte SMS à débiter`, le compte SMS à utiliser pour envoyer les notifications. 
+
+Choisissez, dans le champ `Compte SMS à débiter`, le compte SMS à utiliser pour envoyer les notifications. 
 <br>Renseignez, dans le champ `Numéro de téléphone`, le numéro de mobile à notifier, au format international (00336xxxxxxxx).
 <br>Précisez, dans le champ `Fréquence d'envoi`, la fréquence d'envoi des notifications SMS lors d'une coupure.Si vous sélectionnez « Une fois », vous recevrez un SMS lors de la coupure et un SMS lors du rétablissement de l’accès à Internet concerné.
-<br>Validez enfin l'alerte via le bouton dédié, à droite de la ligne.
+
+Validez l'alerte via le bouton dédié, à droite de la ligne.
 
 ![notification SMS](images/XDSL%20Monitoring%20alerte.png){.thumbnail}
 
@@ -65,7 +69,7 @@ Les SMS vous prévenant de l'injoignabilité de votre accès à Internet, ou de 
 
 ### Supprimer une alerte
 
-Pour supprimer une alerte préalablement activée, cliquez sur l'icône prévue à cet effet à droite de l'alerte. Confirmez la suppresson en cliquant sur `OK`{.action}.
+Pour supprimer une alerte préalablement activée, cliquez sur l'icône prévue à cet effet à droite de l'alerte. Confirmez la suppression en cliquant sur `OK`{.action}.
 
 ## Aller plus loin
 
