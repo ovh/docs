@@ -123,7 +123,7 @@ Si vous rencontrez le message d'erreur « Impossible d’écrire le fichier VMX 
 
 ### Etape 5 : Supprimer la copie
 
-Once the data has been retrieved, you can remove the copy of the filer by following the documentation for [removing a datastore](../remove-data-store/).
+Une fois les données récupérées, vous pouvez supprimer la copie du serveur de fichiers en suivant la documentation relative à la [suppression d'un datastore](../suppression-data-store/)
 
 ## Aller plus loin
 

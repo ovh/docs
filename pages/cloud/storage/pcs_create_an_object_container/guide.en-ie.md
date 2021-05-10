@@ -14,7 +14,7 @@ This guide explains how to create one from OpenStack Horizon.
 
 ## Prerequisites
 
-- [Configure user access to Horizon](../configure_user_access_to_horizon/)
+- [Configure user access to Horizon](https://docs.ovh.com/ie/en/public-cloud/configure_user_access_to_horizon/)
 
 
 
