@@ -24,7 +24,7 @@ Les notifications sont envoyées par e-mail ou par SMS (il est alors nécessaire
 ## En pratique
 
 Pour pouvoir gérer vos alertes, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr) dans la partie `Telecom`{.action}. 
-<br>Cliquez sur l’onglet `Accès Internet`{.action}, sélectionnez votre offre puis votre accès à Internet.
+<br>Cliquez sur `Accès Internet`{.action}, sélectionnez votre offre puis votre accès à Internet.
 
 Dans l'onglet `Mon accès`{.action}, cliquez sur `Afficher les alertes`{.action} dans le cadre `Informations générales`.
 
