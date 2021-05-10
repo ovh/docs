@@ -21,7 +21,7 @@ section: "OverTheBox Intel et IT v1"
 >
 > La photo suivante illustre les branchements finaux pour une OverTheBox Intel.
 > Avant d'en arriver là sur votre installation, il est impératif de suivre le  processus d'installation :
-> [Installation OverTheBox Intel ou IT v1](../intel_itv1_installation/)
+> [Installation OverTheBox Intel ou IT v1](../intel-itv1-installation/)
 >
 
 ![overthebox](images/4316.png){.thumbnail}

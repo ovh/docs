@@ -12,7 +12,6 @@ section: Diagnostica
 
 **Ultimo aggiornamento: 06/05/2021**
 
-
 ## Obiettivo
 
 Gli errori 500 "Internal Server Error" possono riguardare la totalità o parte del tuo sito, essere casuali o permanenti. Possono anche apparire sotto forma di una pagina bianca.
@@ -23,7 +22,6 @@ A volte provengono anche da un aggiornamento effettuato **automaticamente** da u
 
 **Scopri come diagnosticare i casi di errore più comuni 500.**
 
-
 > [!warning]
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
@@ -31,18 +29,16 @@ A volte provengono anche da un aggiornamento effettuato **automaticamente** da u
 > Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
 >
 
-
 ## Prerequisiti
 
 - Disporre di un'[offerta di hosting condiviso](https://www.ovh.it/hosting-web/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
-
 ## Procedura
 
 Prima di proseguire, controlla il tuo sito su diversi apparecchi e browser. Se in alcuni casi l'errore 500 non compare (ad esempio tramite un browser diverso dal tuo), significa che non è associato ai tuoi servizi OVHcloud. Riavvia i tuoi dispositivi e, se necessario, contatta un tecnico informatico vicino al tuo domicilio.
 
-Un sito è costituito da un **codice sorgente** (ad esempio file con .php visibili durante una connessione al tuo hosting in [FTP](.../accedere-spazio-storage-ftp-hosting-web/)), al quale si aggiunge spesso una **database**.
+Un sito è costituito da un **codice sorgente** (ad esempio file con .php visibili durante una connessione al tuo hosting in [FTP](../accedere-spazio-storage-ftp-hosting-web/)), al quale si aggiunge spesso una **database**.
 <br>Nonostante l'errore 500, ti consigliamo di effettuare un backup locale di tutti i tuoi dati prima di effettuare qualsiasi altra operazione :
 
 - Consulta questa [guida](../hosting_condiviso_guida_allutilizzo_di_filezilla/) per recuperare una copia del codice sorgente.
@@ -93,7 +89,7 @@ Se vuoi avere accesso a questi dettagli, dal piano di hosting [pro2014](https://
 > [!warning]
 >
 > Il ripristino del codice sorgente del tuo sito riguarderà tutti i siti del tuo hosting OVHcloud.
-> 
+>
 > Durante un ripristino, il contenuto del tuo spazio FTP o del tuo database viene sostituito da un backup. Non sarà possibile recuperare i dati presenti sul server immediatamente prima del ripristino.
 >
 
@@ -102,7 +98,6 @@ Per ripristinare il codice sorgente del tuo sito, consulta la guida Ripristinare
 Se il tuo sito contiene un database, consulta la nostra guida [Importare un backup nel database di un hosting Web](../web_hosting_come_importare_un_database_mysql/#ripristino-dallo-spazio-cliente-ovh) per ripristinarlo in uno stato precedente.
 
 Se l'errore 500 è apparso a seguito di un aggiornamento della versione PHP del tuo hosting, consulta la nostra guida "[Modificare la versione di PHP su un hosting Web](../configura_php_sul_tuo_hosting_web_condiviso_2014_ovh/)" per ritornare alla configurazione precedente.
-
 
 ## Per saperne di più <a name="gofurther"></a>
 

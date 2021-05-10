@@ -93,8 +93,6 @@ Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP d
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Tout sur le fichier .htaccess](../mutualise-tout-sur-le-fichier-htaccess/)
-
 [Comment diagnostiquer une page blanche ?](../comment-diagnostiquer-page-blanche/)
 
 [Les codes de reponse d’un serveur HTTP](../mutualise-les-codes-de-reponse-dun-serveur-http/)
