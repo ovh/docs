@@ -92,30 +92,30 @@ Feature gates:
 
 ## Reserved resources
 
-Each worker node has GB of RAM and mCPU reserved for Kubernetes components.  
+Each worker node has a certain amount of GB of RAM and mCPU reserved for Kubernetes components.  
 This reserved quotas may evolve in the future, the page will be updated when it does
 
-To guarantee the availabilty of customers node, we reserverd resources (CPU and RAM), proportionally on the instance flavor.
+To guarantee the availabilty of customers node, we are reserving resources (CPU and RAM), proportionally on the instance flavor.
 
 * CPU
 
-The calcul used to estimed the reservation is :  (10 % of 1 CPU + 0,5% of all CPU cores)
+The calcul used to estimate the reservation is :  (10 % of 1 CPU + 0,5% of all CPU cores)
 The unit is in seconds: 1 CPU = 1 second, 10% of 1 CPU = 100 ms, 50% of 2 CPU = 1 s
 
 For example for a flavor b2-15, with 4 cpu: (10 % of 1 CPU + (0,5 * 4)= 120 ms
 
 * RAM
 
-The calcul used to estimed the reservation is : ( (768M Kubernetes + 5% of total memory) + ( 256M system) )
+The calcul used to estimate the reservation is : ( (768M Kubernetes + 5% of total memory) + ( 256M system) )
 
 * Storage
 
 Mathematical "log" function is egal to "ln(10)".
 
-The calcul used to estimed the reservation is : ( ( log(total storage)*2 ) + ( log(total storage)*8 ) + ( 10% of total storage ) )
+The calcul used to estimate the reservation is : ( ( log(total storage)*2 ) + ( log(total storage)*8 ) + ( 10% of total storage ) )
 for example: `log(100) = 2`.
 
-This array helping you to predict resouces available.
+This array helps you to predict available resouces.
 
 | Flavor | VCore | CPU Reserved ms | RAM Total | RAM Reserved Mb | Storage Total | Storage Reserved Mb |
 |-|-|-|-|-|-|-|
