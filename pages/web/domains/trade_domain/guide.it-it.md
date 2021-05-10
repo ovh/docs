@@ -18,7 +18,7 @@ Per registrare un dominio, oltre alla [gestione dei contatti](../../customer/ges
 > [!primary]
 >Questa operazione non comporta lo spostamento del dominio verso un altro account cliente OVHcloud.
 >
->Per farlo, devi [modificare i contatti](../.../customer/gestisci_i_tuoi_contatti/) del dominio.
+>Per farlo, devi [modificare i contatti](../../customer/gestisci_i_tuoi_contatti/) del dominio.
 
 **Questa guida ti mostra come cambiare il proprietario di un dominio**
 
@@ -85,7 +85,7 @@ Se l'indirizzo email non viene modificato in seguito alla modifica del proprieta
 
 > [!warning]
 >
-> Se il proprietario del dominio è stato modificato, il dominio non potrà essere [trasferito verso un altro Registrar](../transferencia_saliente_de_un_dominio_generico_o_geografico/) per un periodo di 60 giorni.
+> Se il proprietario del dominio è stato modificato, il dominio non potrà essere [trasferito verso un altro Registrar](../trasferisci_in_uscita_un_dominio_generico_o_geografico) per un periodo di 60 giorni.
 
 ### Aggiornamento delle informazioni del proprietario <a name="updateownerinformation"></a>
 

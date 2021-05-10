@@ -34,7 +34,7 @@ order: 5
 
 ### How to Push data
 
-Prometheus is using the [pull-based approach](https://prometheus.io/docs/introduction/faq/#why-do-you-pull-rather-than-push?){.external} to gather metrics. We developed an open-source tool called `Beamium` in order to scrape metrics in Prometheus format. Please see the [dedicated guide to use Beamium](../source_beamium/guide.en-gb.md){.ref}.
+Prometheus is using the [pull-based approach](https://prometheus.io/docs/introduction/faq/#why-do-you-pull-rather-than-push?){.external} to gather metrics. We developed an open-source tool called `Beamium` in order to scrape metrics in Prometheus format. Please see the [dedicated guide to use Beamium](../source-beamium).
 
 In case you need to push, we also support the [PushGateway](https://prometheus.io/docs/instrumenting/pushing/){.external} with the following URL:
 
