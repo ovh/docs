@@ -6,7 +6,7 @@ section: 'Premiers pas'
 order: 3
 ---
 
-**Dernière mise à jour le 05/12/2018**
+**Dernière mise à jour le 10/05/2021**
 
 ## Objectif
 
@@ -228,24 +228,24 @@ Utilisez enfin le premier superblock de sauvegarde, afin de vérifier et répare
 ```sh
 fsck -b 32768 /dev/sdb1
 ```
+
 ### Windows
 
-#### Accédez à 'File and Storage Services'.
+#### Accéder à File and Storage Services
 
-Vous pouvez le trouver dans le 'Server Manager' :
+Vous pouvez le trouver dans le « Server Manager » :
 
 ![File and Storage Services](images/file-and-storage.png){.thumbnail}
 
+#### Redimensionner le volume
 
-#### Redimensionnement du volume
-
-Cliquez avec le bouton droit sur le C : et sélectionnez `Extend Volume...`{.action} 
+Faites un clic droit sur C: et sélectionnez `Extend Volume...`{.action} 
 
 Vous serez alors invité à choisir votre nouvelle taille de volume :
 
 ![Set New Volume Size](images/extend.png){.thumbnail}
 
-Entrez la taille souhaitée et cliquez sur `OK`{.action}. Votre volume va maintenant être étendu.
+Entrez la taille souhaitée et cliquez sur `OK`{.action}. Votre volume sera alors étendu.
 
 ## Aller plus loin
 
