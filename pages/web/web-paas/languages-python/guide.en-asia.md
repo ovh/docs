@@ -1,11 +1,17 @@
 ---
 title: Python
 slug: languages-python
-section: Languages
-order: 4
+section: Languages-Python
+hidden: true
 ---
 
-**Last updated 31st March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Objective  
@@ -220,9 +226,13 @@ A number of project templates for Python applications are available on GitHub.  
   
 #### Features
 - Python 3.8<br />  
+
 - PostgreSQL 12<br />  
+
 - Automatic TLS certificates<br />  
+
 - Pipfile-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/django2) on GitHub.
 
@@ -233,10 +243,15 @@ A number of project templates for Python applications are available on GitHub.  
   
 #### Features
 - Python 3.8<br />  
+
 - MariaDB 10.4<br />  
+
 - Redis 5.0<br />  
+
 - Automatic TLS certificates<br />  
+
 - Pipfile-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/python3-uwsgi) on GitHub.
 
@@ -247,9 +262,13 @@ A number of project templates for Python applications are available on GitHub.  
   
 #### Features
 - Python 3.8<br />  
+
 - PostgreSQL 12<br />  
+
 - Automatic TLS certificates<br />  
+
 - Pipfile-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/wagtail) on GitHub.
 
@@ -260,10 +279,15 @@ A number of project templates for Python applications are available on GitHub.  
   
 #### Features
 - Python 3.8<br />  
+
 - MariaDB 10.4<br />  
+
 - Redis 5.0<br />  
+
 - Automatic TLS certificates<br />  
+
 - Pipfile-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/flask) on GitHub.
 
@@ -274,9 +298,13 @@ A number of project templates for Python applications are available on GitHub.  
   
 #### Features
 - Python 3.8<br />  
+
 - PostgreSQL 12<br />  
+
 - Automatic TLS certificates<br />  
+
 - Pipfile-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/django3) on GitHub.
 
@@ -287,10 +315,15 @@ A number of project templates for Python applications are available on GitHub.  
   
 #### Features
 - Python 3.8<br />  
+
 - MariaDB 10.4<br />  
+
 - Redis 5.0<br />  
+
 - Automatic TLS certificates<br />  
+
 - Pipfile-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/python3) on GitHub.
 
@@ -301,10 +334,15 @@ A number of project templates for Python applications are available on GitHub.  
   
 #### Features
 - Python 3.8<br />  
+
 - MariaDB 10.4<br />  
+
 - Redis 5.0<br />  
+
 - Automatic TLS certificates<br />  
+
 - Pipfile-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/pyramid) on GitHub.
 
@@ -315,8 +353,11 @@ A number of project templates for Python applications are available on GitHub.  
   
 #### Features
 - Python 3.8<br />  
+
 - Automatic TLS certificates<br />  
+
 - Pipfile-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/pelican) on GitHub.
 

@@ -1,10 +1,16 @@
 ---
 title: Debugging
-slug: debug
-section: Nodejs
+slug: languages-nodejs-debug
+section: Languages-Nodejs
 ---
 
-**Last updated 31st March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 

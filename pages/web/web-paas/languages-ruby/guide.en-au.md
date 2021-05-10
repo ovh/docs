@@ -1,11 +1,17 @@
 ---
 title: Ruby
 slug: languages-ruby
-section: Languages
-order: 4
+section: Languages-Ruby
+hidden: true
 ---
 
-**Last updated 31st March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Objective  
@@ -70,9 +76,9 @@ web:
     group :production do
  gem 'unicorn'
     end
-    ```
+```
 
-    and that you have a rackup file `config.ru` at the root of your repository, for example for a rails application you would put:
+and that you have a rackup file `config.ru` at the root of your repository, for example for a rails application you would put:
 
 ```ruby
 require "rubygems"
@@ -222,9 +228,13 @@ Web PaaS also provides a [helper library](https://github.com/platformsh/platform
   
 #### Features
 - Ruby 2.6<br />  
+
 - PostgreSQL 11<br />  
+
 - Automatic TLS certificates<br />  
+
 - Bundler-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/rails) on GitHub.
 

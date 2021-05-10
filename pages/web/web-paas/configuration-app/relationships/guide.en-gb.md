@@ -1,10 +1,16 @@
 ---
 title: Relationships
-slug: relationships
-section: App
+slug: configuration-app-relationships
+section: Configuration-App
 ---
 
-**Last updated 26th March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 

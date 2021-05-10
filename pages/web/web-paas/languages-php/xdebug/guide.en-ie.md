@@ -1,10 +1,16 @@
 ---
 title: Using Xdebug
-slug: xdebug
-section: Php
+slug: languages-php-xdebug
+section: Languages-Php
 ---
 
-**Last updated 31st March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 

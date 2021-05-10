@@ -1,11 +1,17 @@
 ---
 title: Troubleshooting
 slug: development-troubleshoot
-section: Development
-order: 5
+section: Development-Troubleshoot
+hidden: true
 ---
 
-**Last updated 23rd April 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Force a redeploy
@@ -46,16 +52,13 @@ These errors indicate your application (or application runner, like PHP-FPM) is 
 
 ## Large file upload failing (10MB limit)
 
-When trying to upload a large json file to your api you might see a 400 response code (Malformed request).
+When trying to upload a large JSON file to your API you might see a 400 response code (`Malformed request`).
 
-We have a built-in 10MB limit on sending files through with `application/json`. If you want to send large files through, you will have to send them with `multipart/form-data`
+Web PaaS enforces a 10MB limit on sending files with the `application/json` Content-Type header. If you want to send large files through, you will have to send them with `multipart/form-data` instead:
 
-e.g.
-
+```bash
+$ curl -XPOST 'https://example.com/graphql' --header 'Content-Type: multipart/form-data' -F file=large_file.json
 ```
-curl -XPOST 'https://example.com/graphql' --header 'Content-Type: multipart/form-data' -F file=large_file.json
-```
-
 
 ## Claimed domains
 

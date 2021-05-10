@@ -1,10 +1,16 @@
 ---
 title: Cron timezone
-slug: timezone
-section: App
+slug: configuration-app-timezone
+section: Configuration-App
 ---
 
-**Last updated 24th March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 

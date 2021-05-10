@@ -1,11 +1,17 @@
 ---
 title: Accessing logs
 slug: development-logs
-section: Development
-order: 5
+section: Development-Logs
+hidden: true
 ---
 
-**Last updated 26th February 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Objective  

@@ -1,11 +1,17 @@
 ---
 title: PHP
 slug: languages-php
-section: Languages
-order: 4
+section: Languages-Php
+hidden: true
 ---
 
-**Last updated 31st March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Supported versions
@@ -110,6 +116,22 @@ That would install `platformsh/client` from the alternate repository specified, 
 
 That allows you to install a forked version of a global dependency from a custom repository.
 
+## Build flavor
+
+PHP images use the `composer` build flavor by default, which will run `composer --no-ansi --no-interaction install --no-progress --prefer-dist --optimize-autoloader` if a `composer.json` file is detected.
+
+Note that by default, all PHP containers include the latest Composer 1.x release. If you wish to use Composer 2.x, add it as a `dependency` (see the section below).
+
+```yaml
+dependencies:
+    php:
+        composer/composer: '^2'
+```
+
+You will still see a message in the build output warning you about the availability of a new Composer version; that is the pre-packaged Composer 1 running to download Composer 2.  You can safely ignore it.  As Composer 2 is considerably more performant than Composer 1 we strongly recommend upgrading unless your application has a Composer plugin dependency that has not yet been updated.
+
+`drupal` will run `drush make` automatically in one of a few different ways.  See the [Drupal 7](../frameworks-drupal7) documentation for more details.  There is no reason to use this build mode except for Drupal 7.
+
 ## Opcache preloading
 
 PHP 7.4 introduced a new feature called Opcache Preloading, which allows you to load selected files into shared memory when PHP-FPM starts.  That means functions and classes in those files are always available and do not need to be autoloaded, at the cost of any changes to those files requiring a PHP-FPM restart.  Since PHP-FPM restarts anyway when a new deploy happens this feature is a major win on Web PaaS, and we recommend using it aggressively.
@@ -155,7 +177,7 @@ There are a few steps to leveraging FFI:
 runtime:
     extensions:
         - ffi
-   ```
+```
 
 2\. Specify a [preload file](#opcache-preloading) in which you can call `FFI::load()`.  Using `FFI::load()` in preload will be considerably faster than loading the linked library on each request or script run.
 
@@ -247,14 +269,23 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - Node.js 12<br />  
+
 - PHP 7.4<br/>  
+
 - MariaDB 10.4<br/>  
+
 - Redis 5.0<br/>  
+
 - Automatic TLS certificates<br />  
+
 - npm-based build for Gatsby<br />  
+
 - Composer-based build for Drupal<br />  
+
 - Multi-app configuration<br />  
+
 - Delayed SSG build (post deploy hook)<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/gatsby-drupal) on GitHub.
 
@@ -266,13 +297,21 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - Node.js 14<br />  
+
 - PHP 7.4<br />  
+
 - MariaDB 10.4<br />  
+
 - Automatic TLS certificates<br />  
+
 - npm-based build for Gatsby<br />  
+
 - Composer-based build for Wordpress<br />  
+
 - Multi-app configuration<br />  
+
 - Delayed SSG build (post deploy hook)<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/gatsby-wordpress) on GitHub.
 
@@ -283,11 +322,17 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - PHP 7.4<br />  
+
 - MariaDB 10.4<br />  
+
 - Redis 6<br />  
+
 - Drush included<br />  
+
 - Automatic TLS certificates<br />  
+
 - Composer-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/drupal9) on GitHub.
 
@@ -299,12 +344,19 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - PHP 7.4<br />  
+
 - MariaDB 10.4<br />  
+
 - Redis 6<br />  
+
 - Drush and Drupal Console included<br />  
+
 - Pre-configured for multiple sites<br />  
+
 - Automatic TLS certificates<br />  
+
 - Composer-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/drupal8-multisite) on GitHub.
 
@@ -315,11 +367,17 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - PHP 7.4<br />  
+
 - MariaDB 10.4<br />  
+
 - Redis 6<br />  
+
 - Drush and Drupal Console included<br />  
+
 - Automatic TLS certificates<br />  
+
 - Composer-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/drupal8-govcms8) on GitHub.
 
@@ -330,10 +388,15 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - PHP 7.4<br />  
+
 - MariaDB 10.4<br />  
+
 - Redis 6<br />  
+
 - Automatic TLS certificates<br />  
+
 - Composer-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/drupal8) on GitHub.
 
@@ -344,9 +407,13 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - PHP 7.3<br />  
+
 - MariaDB 10.4<br />  
+
 - Drush included<br />  
+
 - Automatic TLS certificates<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/backdrop) on GitHub.
 
@@ -357,11 +424,17 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - PHP 7.2<br />  
+
 - MariaDB 10.2<br />  
+
 - Redis 3.2<br />  
+
 - Dedicated worker instance for background processing<br />  
+
 - Automatic TLS certificates<br />  
+
 - Composer-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/magento2ce) on GitHub.
 
@@ -374,9 +447,13 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - PHP 7.4<br />  
+
 - MariaDB 10.4<br />  
+
 - Automatic TLS certificates<br />  
+
 - Composer-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/symfony4) on GitHub.
 
@@ -387,10 +464,15 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - PHP 7.4<br />  
+
 - MariaDB 10.4<br />  
+
 - Redis 5<br />  
+
 - Automatic TLS certificates<br />  
+
 - Composer-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/pimcore) on GitHub.
 
@@ -401,10 +483,15 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - PHP 7.4<br />  
+
 - MariaDB 10.4<br />  
+
 - Redis 5.0<br />  
+
 - Automatic TLS certificates<br />  
+
 - Composer-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/typo3) on GitHub.
 
@@ -417,9 +504,13 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - PHP 7.4<br />  
+
 - MariaDB 10.2<br />  
+
 - Automatic TLS certificates<br />  
+
 - Composer-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/symfony3) on GitHub.
 
@@ -431,9 +522,13 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - PHP 7.4<br />  
+
 - MariaDB 10.4<br />  
+
 - Automatic TLS certificates<br />  
+
 - Composer-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/symfony5) on GitHub.
 
@@ -444,11 +539,17 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - PHP 7.3<br />  
+
 - MariaDB 10.4<br />  
+
 - Redis 6<br />  
+
 - Drush and Drupal Console included<br />  
+
 - Automatic TLS certificates<br />  
+
 - Composer-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/drupal8-opigno) on GitHub.
 
@@ -460,10 +561,15 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - PHP 7.4<br />  
+
 - MariaDB 10.4<br />  
+
 - Redis 5.0<br />  
+
 - Automatic TLS certificates<br />  
+
 - Nextcloud downloaded on the fly during build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/nextcloud) on GitHub.
 
@@ -474,10 +580,15 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - PHP 7.2<br />  
+
 - MariaDB 10.4<br />  
+
 - RabbitMQ 3.7<br />  
+
 - Automatic TLS certificates<br />  
+
 - Composer-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/mautic) on GitHub.
 
@@ -488,10 +599,15 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - PHP 7.4<br />  
+
 - MariaDB 10.4<br />  
+
 - Redis 5.0<br />  
+
 - Automatic TLS certificates<br />  
+
 - Composer-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/laravel) on GitHub.
 
@@ -502,9 +618,13 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - PHP 7.4<br />  
+
 - MariaDB 10.4<br />  
+
 - Automatic TLS certificates<br />  
+
 - Composer-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/wordpress-composer) on GitHub.
 
@@ -515,8 +635,11 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - PHP 7.4<br />  
+
 - Automatic TLS certificates<br />  
+
 - Composer-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/sculpin) on GitHub.
 
@@ -527,8 +650,11 @@ A number of project templates for major PHP applications are available on GitHub
   
 #### Features
 - PHP 7.4<br />  
+
 - Automatic TLS certificates<br />  
+
 - Composer-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/php) on GitHub.
 

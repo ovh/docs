@@ -1,11 +1,17 @@
 ---
 title: C#/.NET Core
 slug: languages-dotnet
-section: Languages
-order: 4
+section: Languages-Dotnet
+hidden: true
 ---
 
-**Last updated 26th February 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Objective  
@@ -102,9 +108,13 @@ Web PaaS offers project templates for .NET Core applications using the structure
   
 #### Features
 - .NET 2.2<br />  
+
 - MariaDB 10.4<br />  
+
 - Redis 5.0<br />  
+
 - Automatic TLS certificates<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/aspnet-core) on GitHub.
 

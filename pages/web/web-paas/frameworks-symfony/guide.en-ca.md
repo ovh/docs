@@ -1,11 +1,17 @@
 ---
 title: Symfony
 slug: frameworks-symfony
-section: Frameworks
-order: 6
+section: Frameworks-Symfony
+hidden: true
 ---
 
-**Last updated 31st March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Prerequisites
@@ -15,6 +21,7 @@ order: 6
 Composer is a tool for dependency management in PHP. It allows you to declare the dependent libraries your project needs and it will install them in your project for you.
 
 - [Install Composer](https://getcomposer.org/download/)
+
 
 
 ## Configure your app

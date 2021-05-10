@@ -1,10 +1,16 @@
 ---
 title: Multiple applications
-slug: multi-app
-section: App
+slug: configuration-app-multi-app
+section: Configuration-App
 ---
 
-**Last updated 31st March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 
@@ -82,6 +88,7 @@ For example, the following `.platform/applications.yaml` file defines three appl
 # .platform/applications.yaml
 -   name: api
 
+
     type: golang:1.14
     source:
         root: apiapp
@@ -101,6 +108,7 @@ For example, the following `.platform/applications.yaml` file defines three appl
 
 -   name: main
 
+
     type: "php:7.4"
     source:
         root: mainapp
@@ -111,6 +119,7 @@ For example, the following `.platform/applications.yaml` file defines three appl
                 passthru: "/index.php"
 
 -   name: admin
+
 
     type: "php:7.4"
     size: S

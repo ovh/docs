@@ -1,10 +1,16 @@
 ---
 title: Memcached (Object cache)
-slug: memcached
-section: Services
+slug: configuration-services-memcached
+section: Configuration-Services
 ---
 
-**Last updated 26th March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Objective  

@@ -1,11 +1,17 @@
 ---
 title: Services
 slug: configuration-services
-section: Configuration
-order: 3
+section: Configuration-Services
+hidden: true
 ---
 
-**Last updated 31st March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Objective  

@@ -1,10 +1,16 @@
 ---
 title: Symfony Frequently Asked Questions (FAQ)
-slug: faq
-section: Symfony
+slug: frameworks-symfony-faq
+section: Frameworks-Symfony
 ---
 
-**Last updated 31st March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## How do I store my session files?

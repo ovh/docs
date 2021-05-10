@@ -1,11 +1,17 @@
 ---
 title: Using SSH
 slug: development-ssh
-section: Development
-order: 5
+section: Development-Ssh
+hidden: true
 ---
 
-**Last updated 31st March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Objective  
@@ -118,11 +124,11 @@ The key fingerprint is:
 > Make note of the location of your public key, you're going to need that in the next section.
 > 
 
-### Add the SSH key to your WebPaaS account
+### Add the SSH key to your WebPaas account
 
 1\.  First off, you'll need to copy your public key to the clipboard.
 
-2\.  Click on the user profile in [webpaas console](https://eu.console.webpaas.ovhcloud.com/) and click on Account.
+2\.  Head over to your user account page on [the Web PaaS Accounts page](https://accounts.platform.sh/user) and navigate to the `Account Settings` tab.
 
 3\. In the left side-bar, select `SSH keys`.
 

@@ -1,11 +1,17 @@
 ---
 title: Git submodules
 slug: development-submodules
-section: Development
-order: 5
+section: Development-Submodules
+hidden: true
 ---
 
-**Last updated 31st March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Clone submodules during deployment

@@ -1,11 +1,17 @@
 ---
 title: Private repository
 slug: development-private-repository
-section: Development
-order: 5
+section: Development-Private-Repository
+hidden: true
 ---
 
-**Last updated 26th March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Pull code from a private Git repository

@@ -1,11 +1,17 @@
 ---
 title: Lisp
 slug: languages-lisp
-section: Languages
-order: 4
+section: Languages-Lisp
+hidden: true
 ---
 
-**Last updated 31st March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Objective  
@@ -31,6 +37,7 @@ type: 'lisp:1.5'
 Web PaaS is making assumptions about your application to provide a more streamlined experience. These assumptions are the following:
 
 - Your `.asd` file is named like your system name. E.g. `example.asd` will have `(defsystem example ...)`.
+
 
 
 Web PaaS will then run `(asdf:make :example)` on your system to build a binary.
@@ -169,7 +176,7 @@ The following is a simple example of a Hunchentoot based web application (you ca
 (in-package #:example)
 
 (define-easy-handler (greet :uri "/hello") (name)
-  (../../(with-html-output-to-string (s) (htm (:body (:h1 "hello, " (str name))))))
+  (../../(../(with-html-output-to-string (s) (htm (:body (:h1 "hello, " (str name))))))
 
 (defun main ()
   (let ((acceptor (make-instance
@@ -189,7 +196,9 @@ Notice how we get the `PORT` from the environment, and how we sleep at the end, 
   
 #### Features
 - Lisp 1.5<br />  
+
 - Automatic TLS certificates<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/lisp) on GitHub.
 

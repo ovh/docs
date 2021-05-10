@@ -1,11 +1,17 @@
 ---
 title: YAML
 slug: configuration-yaml
-section: Configuration
-order: 3
+section: Configuration-Yaml
+hidden: true
 ---
 
-**Last updated 31st March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Objective  
@@ -226,6 +232,7 @@ Be aware that aliases have sometimes non-obvious requirements around their white
 
 ```yaml
 - &mylist
+
 
     list: of
     values: here

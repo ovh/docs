@@ -1,10 +1,16 @@
 ---
 title: Varnish
-slug: varnish
-section: Services
+slug: configuration-services-varnish
+section: Configuration-Services
 ---
 
-**Last updated 31st March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 
@@ -173,7 +179,10 @@ Note that because of the circular relationship issue noted above this cannot be 
 To access the Varnish endpoint:
 - Connect to your cluster [using ssh](../../development-ssh) or through the CLI `webpaas ssh -p <project id>`,
 
+
 - Display the [relationships array](../../configuration-app/relationships) with `echo $PLATFORM_RELATIONSHIPS | base64 -d | jq '.'`,
 
+
 - Query Varnish with `curl varnishstats.internal:8081/stats`, for example, to access the statistics directly. Be sure to update the request according to the name of the relationship.
+
 

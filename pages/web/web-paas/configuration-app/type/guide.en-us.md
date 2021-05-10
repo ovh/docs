@@ -1,10 +1,16 @@
 ---
 title: Type
-slug: type
-section: App
+slug: configuration-app-type
+section: Configuration-App
 ---
 
-**Last updated 24th March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 

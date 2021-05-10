@@ -1,11 +1,17 @@
 ---
 title: Variables
 slug: development-variables
-section: Development
-order: 5
+section: Development-Variables
+hidden: true
 ---
 
-**Last updated 26th March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Objective  

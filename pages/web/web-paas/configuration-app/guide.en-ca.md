@@ -1,11 +1,17 @@
 ---
 title: Your application
 slug: configuration-app
-section: Configuration
-order: 3
+section: Configuration-App
+hidden: true
 ---
 
-**Last updated 12th February 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Objective  

@@ -1,10 +1,16 @@
 ---
 title: InfluxDB (Database service)
-slug: influxdb
-section: Services
+slug: configuration-services-influxdb
+section: Configuration-Services
 ---
 
-**Last updated 12th February 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Objective  

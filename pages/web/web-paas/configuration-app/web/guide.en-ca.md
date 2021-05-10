@@ -1,10 +1,16 @@
 ---
 title: Web
-slug: web
-section: App
+slug: configuration-app-web
+section: Configuration-App
 ---
 
-**Last updated 31st March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 

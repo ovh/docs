@@ -1,10 +1,16 @@
 ---
 title: Alternative Node.js install
-slug: nvm
-section: Nodejs
+slug: languages-nodejs-nvm
+section: Languages-Nodejs
 ---
 
-**Last updated 12th February 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## How to use NVM to run different versions of Node.js

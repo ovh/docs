@@ -1,10 +1,16 @@
 ---
 title: Storage
-slug: storage
-section: App
+slug: configuration-app-storage
+section: Configuration-App
 ---
 
-**Last updated 12th February 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 

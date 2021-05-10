@@ -1,11 +1,17 @@
 ---
 title: CLI (Command line interface)
 slug: development-cli
-section: Development
-order: 5
+section: Development-Cli
+hidden: true
 ---
 
-**Last updated 31st March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Objective  

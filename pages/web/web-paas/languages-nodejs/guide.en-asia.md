@@ -1,11 +1,17 @@
 ---
 title: Node.js
 slug: languages-nodejs
-section: Languages
-order: 4
+section: Languages-Nodejs
+hidden: true
 ---
 
-**Last updated 31st March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Objective  
@@ -37,6 +43,10 @@ Some versions with a minor (such as 8.9) are available but are not receiving sec
 |  6.1 |  
 |  6.9 |  
 |  8.2 |  
+
+## Build flavor
+
+Node.js images use the `default` build flavor, which will run `npm prune --userconfig .npmrc && npm install --userconfig .npmrc` if a `package.json` file is detected. Note that this also allows you to provide a custom `.npmrc` file in the root of your application (as a sibling of the `.platform.app.yaml` file.)
 
 ## Support libraries
 
@@ -224,11 +234,17 @@ A number of project templates for Node.js applications and typical configuration
   
 #### Features
 - Node.js 12<br />  
+
 - PostgreSQL 12<br />  
+
 - Automatic TLS certificates<br />  
+
 - npm-based build<br />  
+
 - OpenAPI spec generation<br />  
+
 - Automatic public API documentation<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/strapi) on GitHub.
 
@@ -240,11 +256,17 @@ A number of project templates for Node.js applications and typical configuration
   
 #### Features
 - Node.js 14<br />  
+
 - PostgreSQL 12<br />  
+
 - Automatic TLS certificates<br />  
+
 - yarn-based build<br />  
+
 - Multi-app configuration<br />  
+
 - Delayed SSG build (post deploy hook)<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/gatsby-strapi) on GitHub.
 
@@ -256,8 +278,11 @@ A number of project templates for Node.js applications and typical configuration
   
 #### Features
 - Node.js 12<br />  
+
 - Automatic TLS certificates<br />  
+
 - npm-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/probot) on GitHub.
 
@@ -269,14 +294,23 @@ A number of project templates for Node.js applications and typical configuration
   
 #### Features
 - Node.js 12<br />  
+
 - PHP 7.4<br/>  
+
 - MariaDB 10.4<br/>  
+
 - Redis 5.0<br/>  
+
 - Automatic TLS certificates<br />  
+
 - npm-based build for Gatsby<br />  
+
 - Composer-based build for Drupal<br />  
+
 - Multi-app configuration<br />  
+
 - Delayed SSG build (post deploy hook)<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/gatsby-drupal) on GitHub.
 
@@ -288,13 +322,21 @@ A number of project templates for Node.js applications and typical configuration
   
 #### Features
 - Node.js 14<br />  
+
 - PHP 7.4<br />  
+
 - MariaDB 10.4<br />  
+
 - Automatic TLS certificates<br />  
+
 - npm-based build for Gatsby<br />  
+
 - Composer-based build for Wordpress<br />  
+
 - Multi-app configuration<br />  
+
 - Delayed SSG build (post deploy hook)<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/gatsby-wordpress) on GitHub.
 
@@ -305,8 +347,11 @@ A number of project templates for Node.js applications and typical configuration
   
 #### Features
 - Node.js 14<br />  
+
 - Automatic TLS certificates<br />  
+
 - yarn-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/gatsby) on GitHub.
 
@@ -317,9 +362,13 @@ A number of project templates for Node.js applications and typical configuration
   
 #### Features
 - Node.js 14<br />  
+
 - MariaDB 10.4<br />  
+
 - Automatic TLS certificates<br />  
+
 - npm-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/express) on GitHub.
 
@@ -330,8 +379,11 @@ A number of project templates for Node.js applications and typical configuration
   
 #### Features
 - Node.js 14<br />  
+
 - Automatic TLS certificates<br />  
+
 - yarn-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/nuxtjs) on GitHub.
 
@@ -342,9 +394,13 @@ A number of project templates for Node.js applications and typical configuration
   
 #### Features
 - Node.js 10<br />  
+
 - MariaDB 10.2<br />  
+
 - Automatic TLS certificates<br />  
+
 - npm-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/koa) on GitHub.
 
@@ -355,9 +411,13 @@ A number of project templates for Node.js applications and typical configuration
   
 #### Features
 - Node.js 14<br />  
+
 - MariaDB 10.4<br />  
+
 - Automatic TLS certificates<br />  
+
 - npm-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/nodejs) on GitHub.
 
@@ -368,8 +428,11 @@ A number of project templates for Node.js applications and typical configuration
   
 #### Features
 - Node.js 14<br />  
+
 - Automatic TLS certificates<br />  
+
 - yarn-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/nextjs) on GitHub.
 

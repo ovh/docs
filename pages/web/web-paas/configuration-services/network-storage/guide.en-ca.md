@@ -1,10 +1,16 @@
 ---
 title: Network Storage
-slug: network-storage
-section: Services
+slug: configuration-services-network-storage
+section: Configuration-Services
 ---
 
-**Last updated 12th February 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 

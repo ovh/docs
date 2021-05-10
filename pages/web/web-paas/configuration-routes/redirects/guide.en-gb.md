@@ -1,10 +1,16 @@
 ---
 title: Redirects
-slug: redirects
-section: Routes
+slug: configuration-routes-redirects
+section: Configuration-Routes
 ---
 
-**Last updated 26th March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Objective  

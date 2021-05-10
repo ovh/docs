@@ -1,11 +1,17 @@
 ---
 title: Go
 slug: languages-go
-section: Languages
-order: 4
+section: Languages-Go
+hidden: true
 ---
 
-**Last updated 31st March 2021**
+**Last updated 10th May 2021**
+
+
+
+## Objective  
+
+**Last updated 10th May 2021**
 
 
 ## Objective  
@@ -35,8 +41,11 @@ type: 'golang:1.15'
 The following container versions are also available.  However, due to their lack of [Go module](https://golang.org/cmd/go/#hdr-Modules__module_versions__and_more) support and the difficulties in supporting the GOPATH during the Web PaaS build they are not recommended.
 
 - 1.10  
+
 - 1.8  
+
 - 1.9
+
 
 ## Go modules
 
@@ -151,8 +160,11 @@ Web PaaS offers a project templates for Go applications using the structure desc
   
 #### Features
 - Go 1.15<br />  
+
 - Automatic TLS certificates<br />  
+
 - Hugo downloaded on the fly during build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/hugo) on GitHub.
 
@@ -163,9 +175,13 @@ Web PaaS offers a project templates for Go applications using the structure desc
   
 #### Features
 - Go 1.15<br />  
+
 - MariaDB 10.4<br />  
+
 - Automatic TLS certificates<br />  
+
 - Git module-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/golang) on GitHub.
 
@@ -176,9 +192,13 @@ Web PaaS offers a project templates for Go applications using the structure desc
   
 #### Features
 - Go 1.14<br />  
+
 - MariaDB 10.4<br />  
+
 - Automatic TLS certificates<br />  
+
 - Git module-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/beego) on GitHub.
 
@@ -189,9 +209,13 @@ Web PaaS offers a project templates for Go applications using the structure desc
   
 #### Features
 - Go 1.14<br />  
+
 - MariaDB 10.4<br />  
+
 - Automatic TLS certificates<br />  
+
 - Git module-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/echo) on GitHub.
 
@@ -202,8 +226,11 @@ Web PaaS offers a project templates for Go applications using the structure desc
   
 #### Features
 - Go 1.14<br />  
+
 - MariaDB 10.4<br />  
+
 - Git module-based build<br />  
+
  
 [View the repository](https://github.com/platformsh-templates/gin) on GitHub.
 
