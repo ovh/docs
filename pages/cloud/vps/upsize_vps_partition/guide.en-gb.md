@@ -1,12 +1,12 @@
 ---
 title: 'Repartitioning a VPS after an upgrade'
 slug: repartitioning-vps-after-upgrade
-excerpt: 'This guide explains the steps you need to follow to increase your storage space following an upgrade'
+excerpt: 'Find out how to increase your storage space following an upgrade'
 section: 'Getting started'
 order: 3
 ---
 
-**Last updated 2020/10/13**
+**Last updated 10th May 2021**
 
 ## Objective
 
@@ -19,8 +19,8 @@ When you upgrade your VPS, you might need to repartition your storage space. Her
 
 ## Requirements
 
-- You must have SSH access to the VPS (root access).
-- You need to reboot the server in [rescue mode](../rescue/).
+- administrative access to your VPS (Windows)
+- rebooting the server in [rescue mode](../rescue/) (Linux)
 
 ## Instructions
 
