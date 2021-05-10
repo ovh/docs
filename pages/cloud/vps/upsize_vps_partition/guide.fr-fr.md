@@ -21,8 +21,8 @@ Lors de l’upgrade de votre VPS, il est possible qu’un repartitionnement de v
 
 ## Prérequis
 
-- Avoir accès en SSH au VPS (accès root).
-- Avoir redémarré le serveur en [mode rescue](https://docs.ovh.com/fr/vps/mode-rescue-vps/).
+- Avoir un accès administrateur au VPS (Windows).
+- Avoir redémarré le serveur en [mode rescue](https://docs.ovh.com/fr/vps/mode-rescue-vps/) (Linux).
 
 ## En pratique
 
