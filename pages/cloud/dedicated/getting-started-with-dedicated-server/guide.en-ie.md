@@ -170,6 +170,12 @@ OVHcloud deploys all dedicated servers with an IPMI (Intelligent Platform Manage
 
 For more information, please refer to our guide: [Using the IPMI with dedicated servers](../use-ipmi-dedicated-servers).
 
+### Backup storage
+
+OVHcloud dedicated servers have an access-controlled storage space as a gratuitous service option. It is best used as a complementary backup option in case the server itself suffers data loss.
+
+To activate and use the backup storage, please refer to [this guide](../services-backup-storage/).
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
