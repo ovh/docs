@@ -1,5 +1,5 @@
 ---
-title: Example: Slack
+title: Example- Slack
 slug: slack
 section: Activity
 ---

@@ -1,7 +1,7 @@
 ---
 title: One site or many
 slug: bestpractices-oneormany
-section: Bestpractices
+section: Best practices
 order: 10
 ---
 

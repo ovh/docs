@@ -1,7 +1,7 @@
 ---
 title: HTTP caching
 slug: bestpractices-http-caching
-section: Bestpractices
+section: Best practices
 order: 10
 ---
 

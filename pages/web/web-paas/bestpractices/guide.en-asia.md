@@ -1,7 +1,7 @@
 ---
-title: Bestpractices
+title: Best practices
 slug: bestpractices
-section: Bestpractices
+section: Best practices
 hidden: true
 order: 10
 ---

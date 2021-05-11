@@ -1,7 +1,7 @@
 ---
 title: Environment variables
 slug: bestpractices-environment-build
-section: Bestpractices
+section: Best practices
 order: 10
 ---
 
