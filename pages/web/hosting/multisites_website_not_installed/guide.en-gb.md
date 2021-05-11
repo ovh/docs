@@ -11,7 +11,7 @@ section: 'Web Hosting configuration'
 
 You may see a `Site not installed` error page appear on your web browser, particularly when you first install your website.
 
-![site-not-installed](images/site-not-installed.png){.thumbnail}
+<img src=«https://docs.ovh.com/fr/hosting/erreur-site-non-installe/images/site-not-installed.png» alt="fault domain informations" width="70%" height="70%">
 
 **This guide explains how to resolve a “Website not installed” error.**
 
