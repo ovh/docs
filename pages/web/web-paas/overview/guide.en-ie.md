@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: The big picture
 slug: overview
 section: Overview
 hidden: true

@@ -5,7 +5,7 @@ section: Languages
 order: 4
 ---
 
-**Last updated 31st March 2021**
+**Last updated 11th May 2021**
 
 
 ## Objective  
@@ -37,6 +37,10 @@ Some versions with a minor (such as 8.9) are available but are not receiving sec
 |  6.1 |  
 |  6.9 |  
 |  8.2 |  
+
+## Build flavor
+
+Node.js images use the `default` build flavor, which will run `npm prune --userconfig .npmrc && npm install --userconfig .npmrc` if a `package.json` file is detected. Note that this also allows you to provide a custom `.npmrc` file in the root of your application (as a sibling of the `.platform.app.yaml` file.)
 
 ## Support libraries
 

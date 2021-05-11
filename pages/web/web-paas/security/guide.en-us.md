@@ -1,5 +1,5 @@
 ---
-title: Security
+title: Security and compliance
 slug: security
 section: Security
 hidden: true

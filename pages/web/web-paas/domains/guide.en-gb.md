@@ -1,5 +1,5 @@
 ---
-title: Domains
+title: Custom Domains
 slug: domains
 section: Domains
 hidden: true
