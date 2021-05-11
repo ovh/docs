@@ -54,31 +54,31 @@ Select the web hosting plan concerned in the list, then click on the `Multisite`
 > [!primary]
 >
 > This step involves checking that your domain name via its DNS `zone`{.action} is linked to your website’s hosting plan.
-> To find out more about the concept of DNS, please refer to our guide on [Editing an OVHcloud](../../domains/editer-ma-zone-dns/#comprendre-la-notion-de-dns) DNS zone.
+> To find out more about the concept of DNS, please refer to our guide on [Editing an OVHcloud](../../domains/web_hosting_how_to_edit_my_dns_zone/) DNS zone.
 
 #### 2.1 Identify the IP address of your OVHcloud web hosting plan
 
-To find the IP address, click `Hosting` in the left-hand column of the OVHcloud Control [Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), then select the plan concerned.
+To find the IP address, click `Hosting` in the left-hand column of the OVHcloud Control [Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), then select the plan concerned.
 
 ![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 
 #### 2.2 Check the IP address recorded in your domain’s DNS zone
 
-You must now check that your hosting plan’s IP address appears in your domain’s active DNS zone.
+You must now check that your hosting plan’s IP address appears in your domain name’s active DNS zone.
 
 To do this, go to the `Domains`{.action} section, select your domain, then go to the `DNS`{.action} zone tab.
 
-|Possible outcomes|What to do|
+|Scenario|What to do|
 |---|---|
-|In the DNS zone, your domain is linked to your hosting plan’s IP address by an A record (for IPv4) or an AAAA record (for IPv6) ![DNS_IP2](images/zonedns_ip2.png){.thumbnail}|This means your domain name has been correctly configured.<br><br>Following the latest changes in your DNS, your website will be displayed within a maximum of 48 hours.<br><br>Also remember to restart your devices (PC, smartphone, box, etc.) and clear your browser’s cache.|
-|Your DNS zone does not have an A or AAAA record linking your domain to your hosting plan’s IP address. Or the existing entry points to another IP address.|Add a new A or AAAA record, or correct the existing record by following [this guide](../../domains/editer-ma-zone-dns/).|
-|Your domain does not appear in the `Domains`{.action} section of the OVHcloud Control Panel.<br>Or your domain's DNS `Zone`{.action} tab will appear as follows: ![lec_nd_zonedns2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|This means that your domain is not managed from your OVHcloud Control Panel.<br><br>Determine your registrar using our ><br>You can find and modify the relevant DNS zone accordingly, following this [guide](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
-|This warning appears in the `DNS`{.action} Zone tab: ![dns_srv_not_zonedns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|You will need to modify your domain’s DNS servers accordingly, following [this guide](../../domains/generalites-serveurs-dns/).|
+|In the DNS zone, your domain name is linked to your hosting plan’s IP address by an A record (for IPv4) or an AAAA record (for IPv6) ![DNS_IP2](images/zonedns_ip2.png){.thumbnail}|This means your domain name has been correctly configured.<br><br>Following the latest changes in your DNS, your website will be displayed within a maximum of 48 hours.<br><br>Also remember to restart your devices (PC, smartphone, box, etc.) and clear your browser’s cache.|
+|Your DNS zone does not have an A or AAAA record linking your domain name to your hosting plan’s IP address. Or the actual record points to another IP address.|Add a new A or AAAA or modify the existing record by following [this guide](../../domains/web_hosting_how_to_edit_my_dns_zone/).|
+|Your domain name does not appear in the `Domains`{.action} section of the OVHcloud Control Panel.<br>Or your domain name's DNS `Zone`{.action} tab will appear as follows : ![lec_nd_zonedns2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|This means that your domain not is not managed on your OVHcloud Control Panel.<br><br>Determine its registrar using our [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl) tool and the DNS servers to which it's attached to.<br>You can find and modify the relevant DNS zone accordingly, following this [guide](../multisites-configuring-multiple-websites/#step-22-adding-an-external-domain).|
+|This warning appears in the `DNS`{.action} Zone tab: ![dns_srv_not_zonedns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|You will need to modify your domain’s DNS servers accordingly, following [this guide](../../domains/web_hosting_general_information_about_dns_servers/).|
 
 ## Go further <a name="gofurther"></a>
 
-[Hosting multiple websites on your Web Hosting plan](../multisites-configurer-un-multisite-sur-mon-hebergement-web/)
+[Hosting multiple websites on your Web Hosting plan](../multisites-configuring-multiple-websites/)
 
-[List of IP addresses for clusters and Web Hostings ](../liste-des-adresses-ip-des-clusters-et-hebergements-web/)
+[List of IP addresses for clusters and Web Hostings ](../list-of-ip-addresses-of-web-hosting-clusters/)
 
-Join our community of users on <https://community.ovh.com>.
+Join our community of users on <https://community.ovh.com/en/>.
