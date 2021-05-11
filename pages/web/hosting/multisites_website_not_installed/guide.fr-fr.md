@@ -12,7 +12,7 @@ order: 2
 
 Il est possible de voir apparaître sur votre navigateur Internet la page d'erreur **Site non installé**, notamment lors de la première installation de votre site web.
 
-![site-not-installed](images/site-not-installed.png){.thumbnail}
+![site-not-installed](images/site-not-installed2.png){.thumbnail}
 
 **Découvrez comment identifier et résoudre la page d'erreur « Site non installé »**
 
