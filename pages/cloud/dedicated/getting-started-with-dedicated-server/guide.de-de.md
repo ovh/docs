@@ -174,6 +174,12 @@ OVHcloud stattet alle Dedicated Server mit einer IPMI-Konsole (Intelligent Platf
 
 Weitere Informationen finden Sie in unserer Anleitung zur [Verwendung der IPMI-Konsole](../verwendung-ipmi-dedicated-server/).
 
+### Backup Storage
+
+OVHcloud Dedicated Server verfügen über einen zugriffskontrollierten Speicherplatz als kostenlose Serviceoption. Er eignet sich am besten als ergänzende Backup-Option für den Fall, dass der Server selbst einen Datenverlust erleidet.
+
+Zur Aktivierung und Nutzung des Backup Storage folgen Sie der [zugehörigen Anleitung](../dienste-storage-backup/).
+
 ## Weiterführende Informationen
 
 [Einen Dedicated Server absichern](../dedizierten-server-sichern/)
