@@ -12,9 +12,7 @@ order: 2
 
 Il est possible de voir apparaître sur votre navigateur Internet la page d'erreur **Site non installé**, notamment lors de la première installation de votre site web.
 
-![site-not-installed](images/site-not-installed2.png){.thumbnail}
-
-<img src=« https://docs.ovh.com/fr/hosting/erreur-site-non-installe/images/site-not-installed.png» alt="fault domain informations" width="70%" height="70%">
+<img src="https://docs.ovh.com/fr/hosting/erreur-site-non-installe/images/site-not-installed.png" alt= "website not installed" width="70%" height="70%">
 
 **Découvrez comment identifier et résoudre la page d'erreur « Site non installé »**
 
