@@ -73,7 +73,7 @@ Um die korrekte IP-Adresse herauszufinden, klicken Sie in der linken Spalte Ihre
 
 Gehen Sie hierzu in den Bereich `Domainnamen`{.action}, wählen Sie Ihre Domain aus und gehen Sie dann in den Tab `DNS-Zone`{.action}.
 
-|Mögliches Szenario|Erforderliche Maßnahme|
+|Szenario|Erforderliche Maßnahme|
 |---|---|
 |In der DNS-Zone ist Ihre Domain mit der IP-Adresse Ihres Hostings über einen Eintrag vom Typ A (für IPv4) oder AAAA (für IPv6) verbunden.<br>![zoneDNS_IP2](images/zonedns_ip2.png){.thumbnail}|In diesem Fall ist die Konfiguration Ihrer Domain korrekt.<br><br>Nach den letzten DNS-Änderungen wird Ihre Website innerhalb von maximal 48 Stunden verfügbar sein.<br><br>Zusätzlich können Sie Ihre Geräte (PC, Mobiltelefon, Modem usw.) neu starten und den Cache Ihres Browsers leeren.|
 |Ihre DNS-Zone verfügt nicht über einen A- oder AAAA-Eintrag, der Ihren Domainnamen mit der IP-Adresse Ihres Hostings verbindet, oder einer dieser Einträge zeigt auf eine andere IP-Adresse.|Fügen Sie einen neuen A- oder AAAA-Eintrag hinzu oder ändern Sie den vorhandenen, indem Sie [dieser Anleitung](../../domains/webhosting_bearbeiten_der_dns_zone/) folgen.|
