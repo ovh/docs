@@ -76,7 +76,7 @@ To verify this, go to the `Domain names`{.action} section, select your domain na
 
 ## Go further <a name="gofurther"></a>
 
-[List of IP addresses for clusters and Web Hostings ](../list-of-ip-addresses-of-web-hosting-clusters/)
+[IP address list for Web Hosting clusters](../list-of-ip-addresses-of-web-hosting-clusters/)
 
 [Contact OVHcloud Partners](https://partner.ovhcloud.com/en-gb/directory/)
 
