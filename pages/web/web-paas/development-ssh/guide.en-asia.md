@@ -1,11 +1,11 @@
 ---
-title: Using SSH
+title: SSH
 slug: development-ssh
 section: Development
 order: 5
 ---
 
-**Last updated 31st March 2021**
+**Last updated 11th May 2021**
 
 
 ## Objective  
@@ -118,7 +118,7 @@ The key fingerprint is:
 > Make note of the location of your public key, you're going to need that in the next section.
 > 
 
-### Add the SSH key to your WebPaaS account
+### Add the SSH key to your WebPaas account
 
 1\.  First off, you'll need to copy your public key to the clipboard.
 

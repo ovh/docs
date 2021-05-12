@@ -4,7 +4,7 @@ slug: https
 section: Routes
 ---
 
-**Last updated 31st March 2021**
+**Last updated 11th May 2021**
 
 
 ## Let's Encrypt
@@ -12,6 +12,10 @@ section: Routes
 All environments on Web PaaS support both HTTP and HTTPS automatically.  Production TLS certificates are provided by [Let's Encrypt](https://letsencrypt.org/).  You may alternatively provide your own TLS certificate from a 3rd party issuer of your choice at no charge from us.
 
 Let’s Encrypt TLS Certificates are valid for 90 days and Web PaaS will automatically renew them 28 days before expiration to avoid HTTPS interruptions.  If a renewal is available and needed, the environment will automatically redeploy to renew the certificate.  As no new build is required the process should take at most a few seconds. The deploy and post-deploy hook will be run during this process.
+
+> [!primary]  
+> Web PaaS provides managed service and runtime containers for your projects - security and system upgrades to those containers are applied automatically by us in the background. Whether or not an upgrade needs to be applied is judged during redeploys, but also during this renewal process. That means that most of the time renewals take a few seconds *unless* upgrades are available for your containers. In those cases, containers will be rebooted and the process will take a little longer. 
+> 
 
 If you are using a custom TLS certificate, seven days before it expires Web PaaS will issue a Let's Encrypt certificate and replace the custom certificate with it in order to avoid interruption in service.  If you wish to continue using the custom certificate, replace it with an updated certificate more than seven days before it expires.
 

@@ -4,7 +4,7 @@ slug: workers
 section: App
 ---
 
-**Last updated 12th February 2021**
+**Last updated 11th May 2021**
 
 
 
@@ -35,7 +35,7 @@ Any number of workers may be defined with their own distinct name, subject to av
 
 Like with any other application container Web PaaS allows you to connect to the worker instance through SSH to inspect logs and interact with it.
 
-Using the Platform CLI you would use the `--worker` switch, like so:
+Using the WebPaas CLI you would use the `--worker` switch, like so:
 
 ```bash
 webpaas ssh --worker=queue

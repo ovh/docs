@@ -5,7 +5,7 @@ section: Languages
 order: 4
 ---
 
-**Last updated 31st March 2021**
+**Last updated 11th May 2021**
 
 
 ## Supported versions
@@ -109,6 +109,22 @@ That would install `platformsh/client` from the alternate repository specified, 
 ```
 
 That allows you to install a forked version of a global dependency from a custom repository.
+
+## Build flavor
+
+PHP images use the `composer` build flavor by default, which will run `composer --no-ansi --no-interaction install --no-progress --prefer-dist --optimize-autoloader` if a `composer.json` file is detected.
+
+Note that by default, all PHP containers include the latest Composer 1.x release. If you wish to use Composer 2.x, add it as a `dependency` (see the section below).
+
+```yaml
+dependencies:
+    php:
+        composer/composer: '^2'
+```
+
+You will still see a message in the build output warning you about the availability of a new Composer version; that is the pre-packaged Composer 1 running to download Composer 2.  You can safely ignore it.  As Composer 2 is considerably more performant than Composer 1 we strongly recommend upgrading unless your application has a Composer plugin dependency that has not yet been updated.
+
+`drupal` will run `drush make` automatically in one of a few different ways.  See the [Drupal 7](../frameworks-drupal7) documentation for more details.  There is no reason to use this build mode except for Drupal 7.
 
 ## Opcache preloading
 
