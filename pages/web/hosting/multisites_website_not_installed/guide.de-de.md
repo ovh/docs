@@ -17,7 +17,7 @@ section: 'Webhosting-Konfiguration'
 
 Die Fehlermeldung `Seite nicht installiert` bedeutet entweder, dass die DNS-Zone Ihrer Domain nicht die korrekten Werte enthält oder dass die Konfiguration des Webhostings noch angepasst werden muss.
 
-<img src="https://docs.ovh.com/fr/hosting/erreur-site-non-installe/images/site-not-installed.png" alt= "website not installed" width="50%" height="50%">
+![website not installed](images/site-not-installed2021.png){.thumbnail}
 
 **Diese Anleitung erklärt, wie Sie die Ursachen dieses Fehlers ermitteln und beheben.**
 
