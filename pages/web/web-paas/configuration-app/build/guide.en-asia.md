@@ -4,7 +4,7 @@ slug: build
 section: App
 ---
 
-**Last updated 12th February 2021**
+**Last updated 11th May 2021**
 
 
 
@@ -16,25 +16,11 @@ The `.platform.app.yaml` file provides a number of ways to control how an applic
 
 The `build` defines what happens when building the application.  Its only property is `flavor`, which specifies a default set of build tasks to run. Flavors are language-specific.
 
-### PHP (`composer` by default)
+See what the build flavor is for your language:
+- [Node.js](/languages/nodejs#build-flavor)
 
-`composer` will run `composer --no-ansi --no-interaction install --no-progress --prefer-dist --optimize-autoloader` if a `composer.json` file is detected.
+- [PHP](/languages/php#build-flavor)
 
-Note that by default, all PHP containers include the latest Composer 1.x release.  If you wish to use Composer 2.x, add it as a `dependency` (see the section below).
-
-```yaml
-dependencies:
-    php:
-        composer/composer: '^2'
-```
-
-You will still see a message in the build output warning you about the availability of a new Composer version; that is the pre-packaged Composer 1 running to download Composer 2.  You can safely ignore it.  As Composer 2 is considerably more performant than Composer 1 we strongly recommend upgrading unless your application has a Composer plugin dependency that has not yet been updated.
-
-
-
-### Node.js (`default` by default)
-
-`default` will run `npm prune --userconfig .npmrc && npm install --userconfig .npmrc` if a `package.json` file is detected. Note that this also allows you to provide a custom `.npmrc` file in the root of your application (as a sibling of the `.platform.app.yaml` file.)
 
 In all languages, you can also specify a flavor of `none` (which is the default for any language other than PHP and Node.js); as the name suggests it will take no action at all. That is useful when you want complete control over your build steps, such as to run a custom Composer command or use an alternate Node.js package manager.
 
@@ -132,7 +118,7 @@ After a Git push, in addition to the log shown in the activity log, you can see 
 ```bash
 [2014-07-03 10:03:51.100476] Launching hook 'cd public ; drush -y updatedb'.
 
-My_custom_profile  7001  Update 7001: Enable the Platform module.
+My_custom_profile  7001  Update 7001: Enable the WebPaas module.
 Do you wish to run all pending updates? (y/n): y
 Performed update: my_custom_profile_update_7001
 'all' cache was cleared.

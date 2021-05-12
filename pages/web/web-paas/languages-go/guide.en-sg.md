@@ -5,7 +5,7 @@ section: Languages
 order: 4
 ---
 
-**Last updated 31st March 2021**
+**Last updated 11th May 2021**
 
 
 ## Objective  
@@ -108,36 +108,6 @@ disk: 1024
 ```
 
 Note that there will still be an Nginx proxy server sitting in front of your application.  If desired, certain paths may be served directly by Nginx without hitting your application (for static files, primarily) or you may route all requests to the Go application unconditionally, as in the example above.
-
-## Accessing services
-
-To access various [services](../configuration-services) with Go, see the following examples. The individual service pages have more information on configuring each service.
-
-> [!tabs]      
-> Memcached     
->> ``` go     
->> {!> web/web-paas/static/files/fetch/examples/golang/memcached !}  
->> ```     
-> MongoDB     
->> ``` golang     
->> {!> web/web-paas/static/files/fetch/examples/golang/mongodb !}  
->> ```     
-> MySQL     
->> ``` golang     
->> {!> web/web-paas/static/files/fetch/examples/golang/mysql !}  
->> ```     
-> PostgreSQL     
->> ``` golang     
->> {!> web/web-paas/static/files/fetch/examples/golang/postgresql !}  
->> ```     
-> RabbitMQ     
->> ``` golang     
->> {!> web/web-paas/static/files/fetch/examples/golang/rabbitmq !}  
->> ```     
-> Solr     
->> ``` golang     
->> {!> web/web-paas/static/files/fetch/examples/golang/solr !}  
->> ```     
 
 ## Project templates
 

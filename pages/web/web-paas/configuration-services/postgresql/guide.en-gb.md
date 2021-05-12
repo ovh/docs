@@ -4,7 +4,7 @@ slug: postgresql
 section: Services
 ---
 
-**Last updated 26th March 2021**
+**Last updated 11th May 2021**
 
 
 
@@ -115,7 +115,7 @@ You can then use the service in a configuration file of your application with so
 
 ## Exporting data
 
-The easiest way to download all data in a PostgreSQL instance is with the WebPaaS CLI.  If you have a single SQL database, the following command will export all data using the `pg_dump` command to a local file:
+The easiest way to download all data in a PostgreSQL instance is with the WebPaas CLI.  If you have a single SQL database, the following command will export all data using the `pg_dump` command to a local file:
 
 ```bash
 webpaas db:dump

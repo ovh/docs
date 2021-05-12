@@ -4,7 +4,7 @@ slug: extensions
 section: Php
 ---
 
-**Last updated 31st March 2021**
+**Last updated 11th May 2021**
 
 
 
@@ -94,7 +94,7 @@ This is the complete list of extensions that can be enabled:
 | geoip            | *   | *   | *   | *   | *   | *   | *   | *   | *   |
 | gettext          |     |     |     | *   | *   | *   | *   | *   | *   |
 | gmp              | *   | *   | *   | *   | *   | *   | *   | *   | *   |
-| http             | *   | *   |     |     |     |     |     | *   | *   |
+| http             | *   | *   |     |     |     |     | *   | *   | *   |
 | iconv            |     |     |     | *   | *   | *   | *   | *   | *   |
 | igbinary         |     |     |     | *   | *   | *   | *   | *   | *   |
 | imagick          | *   | *   | *   | *   | *   | *   | *   | *   |     |
@@ -129,7 +129,6 @@ This is the complete list of extensions that can be enabled:
 | pdo_pgsql        | *   | *   | *   | *   | *   | *   | *   | *   | *   |
 | pdo_sqlite       | *   | *   | *   | *   | *   | *   | *   | *   | *   |
 | pdo_sqlsrv       |     |     |     | *   | *   | *   | *   | *   |     |
-| http             |     |     | *   |     |     |     |     | *   |     |
 | pgsql            | *   | *   | *   | *   | *   | *   | *   | *   | *   |
 | phar             |     |     |     | *   | *   | *   | *   | *   | *   |
 | pinba            | *   | *   | *   |     |     |     |     |     |     |
