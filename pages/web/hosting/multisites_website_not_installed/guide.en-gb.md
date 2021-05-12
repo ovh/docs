@@ -5,7 +5,7 @@ slug: web_hosting_error_-_website_not_installed
 section: 'Web Hosting configuration'
 ---
 
-**Last updated 7th May 2021**
+**Last updated 12th May 2021**
 
 ## Objective
 
