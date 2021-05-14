@@ -1,6 +1,6 @@
 ---
 title: Resolver el error "Sitio no instalado"
-slug: error-sitio-no-instalado
+slug: web_hosting_error_sitio_no_instalado
 excerpt: Cómo identificar y resolver la página de error "Sitio no instalado"
 section: "Configuración del alojamiento"
 order: 2
@@ -50,8 +50,8 @@ Seleccione el alojamiento correspondiente en la lista y abra la pestaña `Multis
 |Escenario|Medidas que deberá adoptar|
 |---|---|
 |El nombre del sitio web aparecerá en la tabla.|Si acaba de añadir el nombre de su sitio web a la sección multisitio del alojamiento, espere unos 20 minutos y vuelva a refrescar la caché de su navegador. Si el mensaje "Sitio no instalado" sigue apareciendo, vaya al [paso 2](#checkdomainlink).|
-|El dominio o subdominio asociados a su sitio web no aparecen en la tabla.|Añada su dominio al `multisitio`{.action} siguiendo la sección dedicada de la guía [Alojar varios sitios web en un mismo hosting: añadir un dominio o un subdominio](../configurar-un-multisitio-en-un-alojamiento-web/#2-anadir-un-dominio-o-subdominio).|
-|El nombre de dominio se ha eliminado del multisitio sin que usted haga nada al respecto.|Es posible que su dominio o su zona DNS estén gestionados desde otra cuenta. Añada su dominio al multisitio siguiendo la sección dedicada de la guía [Alojar varios sitios en un mismo hosting: añadir un dominio externo](../configurar-un-multisitio-en-un-alojamiento-web/#22-anadir-un-dominio-externo).|
+|El dominio o subdominio asociados a su sitio web no aparecen en la tabla.|Añada su dominio al `multisitio`{.action} siguiendo la sección dedicada de la guía [Alojar varios sitios web en un mismo hosting - añadir un dominio o subdominio](../configurar-un-multisitio-en-un-alojamiento-web/#2-anadir-un-dominio-o-subdominio).|
+|El nombre de dominio se ha eliminado del multisitio sin que usted haga nada al respecto.|Es posible que su dominio o su zona DNS estén gestionados desde otra cuenta. Añada su dominio al multisitio siguiendo la sección dedicada de la guía [Alojar varios sitios web en un mismo hosting - añadir un dominio externo](../configurar-un-multisitio-en-un-alojamiento-web/#22-anadir-un-dominio-externo).|
 
 ### Etapa 2 : comprobar la zona DNS del dominio <a name="checkdomainlink"></a>
 
@@ -76,7 +76,7 @@ Para ello, acceda a la sección `Dominios`{.action}, seleccione su dominio y abr
 |---|---|
 |En la zona DNS, su dominio está asociado a la dirección IP de su alojamiento mediante un registro de tipo A (para IPv4) o AAAA (para IPv6) :<br><br>![zonaDNS_IP2](images/zonedns_ip2.png){.thumbnail}|Eso significa que la configuración del dominio es correcta.<br><br>Después de las últimas modificaciones en sus DNS, su sitio web se mostrará en un plazo máximo de 48 horas.<br><br>También puede reiniciar los dispositivos (PC, smartphone, Internet box, etc.) y vaciar la caché de su navegador.|
 |Su zona DNS no tiene ningún registro de tipo A o AAAA que asocie su dominio a la dirección IP de su alojamiento. O la entrada existente apunta a otra dirección IP.|Añada un nuevo registro de tipo A o AAAA o corrija la entrada existente siguiendo [esta guía](../../domains/web_hosting_como_editar_mi_zona_dns/).|
-|El dominio no aparece en el apartado `Dominios`{.action} del área de cliente.<br><br>La pestaña `Zona DNS`{.action} del dominio se muestra de la siguiente forma :<br><br>![zonedns_ndd_pas_en_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Esto significa que el dominio no está gestionado desde el área de cliente de OVHcloud.<br><br>Determine su registrador a través de nuestra herramienta ><br><br>Encuentre y modifique la zona DNS en cuestión siguiendo esta [guía](../configurar-un-multisitio-en-un-alojamiento-web/#22-anadir-un-dominio-externo).|
+|El dominio no aparece en el apartado `Dominios`{.action} del área de cliente.<br><br>La pestaña `Zona DNS`{.action} del dominio se muestra de la siguiente forma :<br><br>![zonedns_ndd_pas_en_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Esto significa que el dominio no está gestionado desde el área de cliente de OVHcloud.<br><br>Determine su agente registrador a través de nuestra herramienta [WHOIS](https://www.ovh.es/soporte/herramientas/check_whois.pl) y los servidores DNS a los que está asociado.<br><br>Encuentre y modifique la zona DNS en cuestión siguiendo esta [guía](../configurar-un-multisitio-en-un-alojamiento-web/#22-anadir-un-dominio-externo).|
 |Este aviso se muestra en la pestaña `Zona DNS`{.action} :<br><br>![aviso_zonedns_pas_en_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Por lo tanto, deberá modificar los servidores DNS de su dominio en consecuencia siguiendo [esta guía](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/).|
 
 ## Más información <a name="allerplusloin"></a>
