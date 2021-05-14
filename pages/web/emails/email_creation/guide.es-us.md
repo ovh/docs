@@ -4,6 +4,7 @@ slug: correo_guia_de_creacion_de_una_direccion_de_correo_electronico
 excerpt: 'Cómo crear una dirección de correo electrónico en un alojamiento web'
 section: 'Primeros pasos'
 order: 2
+hidden: true
 ---
 
 **Última actualización: 05/05/2020**
