@@ -46,14 +46,14 @@ Select the concerned hosting plan in the list, then click on the `Multisite`{.ac
 |Scenario|What to do|
 |---|---|
 |Your website name appears in the table.|If you just added your website name to the Multisite section of your hosting plan, wait for about twenty minutes and then empty your web browser’s cache.<br><br>If the message `Site not installed` still appears, proceed to [step 2](#checkdomainlink).|
-|The domain or subdomain linked to your website does not appear in the table.|Add your domain to the `Multisite`{.action} by following the dedicated section of the guide [Hosting multiple websites on your Web Hosting plan](../multisites-configuring-multiple-websites/#step-21-adding-an-ovhcloud-registered-domain).|
+|The domain or subdomain linked to your website does not appear in the table.|Add your domain to the `Multisite`{.action} by following the dedicated section of the guide [Hosting multiple websites on your Web Hosting plan](../multisites-configuring-multiple-websites/#step-2-add-a-domain-or-subdomain).|
 |The domain name has been deleted from the Multisite without any action on your part.|Your domain or its DNS zone may be managed from another account.<br><br>Add your domain to the Multisite by following the dedicated section of the guide [Hosting multiple websites on your Web Hosting plan](../multisites-configuring-multiple-websites/#step-22-adding-an-external-domain).|
 
 ### Step 2: Check your domain’s DNS zone <a name="checkdomainlink"></a>
 
 > [!primary]
 > This step involves checking that your domain name is linked to your website’s hosting plan via a record in its `DNS zone`{.action}.
-> To find out more about the concept of `DNS`, please refer to our guide on [Editing an OVHcloud DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/).
+> To find out more about the concept of `DNS`, please refer to our guide on [Editing an OVHcloud DNS zone](../../domains/web_hosting_how_to_edit_my_dns_zone/#understanding-dns).
 
 #### 2\.1 Identify the IP address of your OVHcloud web hosting plan
 
