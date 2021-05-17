@@ -49,7 +49,7 @@ First, please check your logs with this [guide](../shared_view_my_websites_logs_
 
 ### Put your website in development mode
 
-To reveal any PHP errors, switch your web hosting to `development` mode with these [instructions](../hosting/modify_your_web_hosting_systems_runtime_environment/#step-2-check-your-web-hosting-plans-configuration).
+To reveal any PHP errors, switch your web hosting to `development` mode with these [instructions](../modify_your_web_hosting_systems_runtime_environment/#step-2-check-your-web-hosting-plans-configuration).
 
 ### Test the .htaccess file
 
