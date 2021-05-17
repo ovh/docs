@@ -1,6 +1,6 @@
 ---
 title: How to use Data Processing through the OVHcloud api
-slug: submit-cli
+slug: use-api
 excerpt: Find out how to run your Apache Spark jobs with the OVHcloud API
 section: How to
 order: 8
