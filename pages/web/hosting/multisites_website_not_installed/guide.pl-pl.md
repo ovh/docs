@@ -76,13 +76,13 @@ W tym celu przejdź do sekcji `Domeny`{.action}, wybierz domenę i przejdź do z
 |---|---|
 |W strefie DNS Twoja domena jest powiązana z adresem IP hostingu za pomocą wpisu typu A (dla IPv4) lub AAAA (dla IPv6) :<br><br>![strefy DNS_IP2](images/zonedns_ip2.png){.thumbnail}|Oznacza to, że konfiguracja Twojej domeny jest poprawna.<br><br>W związku z ostatnimi zmianami w serwerach DNS Twoja strona będzie wyświetlana w ciągu maksymalnie 48 godzin.<br><br>Pamiętaj, aby zrestartować urządzenia (komputer, smartfon, etc.) i usunąć cache przeglądarki.|
 |W strefie DNS nie ma wpisów typu A lub AAAA łączących domenę z adresem IP Twojego hostingu. Lub istniejący wpis wskazuje na inny adres IP.|Dodaj nowy wpis A lub AAAA lub poprawij istniejący wpis zgodnie z tym [przewodnikiem](../../domains/hosting_www_jak_edytowac_strefe_dns/).|
-|Twoja domena nie wyświetla się w części `Domeny`{.action} w Panelu klienta.<br><br>Lub zakładka `Strefa DNS`{.action} Twojej domeny wyświetla się w następujący sposób :<br><br>![zonedns_ndd_pas_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Oznacza to, że Twoja domena nie jest zarządzana w Panelu klienta OVHcloud.<br><br>Określ operatora za pomocą narzędzia ><br><br>W tym [przewodniku](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe) znajdziesz i zmodyfikuj odpowiednią strefę DNS.|
-|Ostrzeżenie to wyświetla się w zakładce `Strefa DNS`{.action}: ![ostrzeżenie_zonedns_na_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Należy zatem odpowiednio zmienić serwery DNS Twojej domeny zgodnie z [tym przewodnikiem](../../domains/generalites-serveurs-dns/).|
+|Twoja domena nie wyświetla się w części `Domeny`{.action} w Panelu klienta.<br><br>Lub zakładka `Strefa DNS`{.action} Twojej domeny wyświetla się w następujący sposób :<br><br>![zonedns_ndd_pas_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Oznacza to, że Twoja domena nie jest zarządzana w Panelu klienta OVHcloud.<br><br>Określ operatora za pomocą narzędzia [WHOIS](https://www.ovh.pl/pomoc/narzedzia/check_whois.pl) i serwerów DNS.<br><br>W tym [przewodniku](../konfiguracja-multisite-na-hostingu/#etap-22-dodaj-domene-zewnetrzna) znajdziesz i zmodyfikuj odpowiednią strefę DNS.|
+|Ostrzeżenie to wyświetla się w zakładce `Strefa DNS`{.action} :<br><br>![ostrzeżenie_zonedns_na_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Należy zatem odpowiednio zmienić serwery DNS Twojej domeny zgodnie z tym [przewodnikiem](../../domains/hosting_www_informacje_na_temat_serwerow_dns/).|
 
 ## Sprawdź <a name="allerplusloin"></a>
 
-[Instalacja kilku stron WWW na jednym hostingu](../multisites-configurer-un-multisite-sur-mon-hebergement-web/)
+[Instalacja kilku stron WWW na jednym hostingu](../konfiguracja-multisite-na-hostingu/)
 
-[Lista adresów IP klastrów i hostingów](../liste-des-adresses-ip-des-clusters-et-hebergements-web/)
+[Lista adresów IP klastrów i hostingów](../lista-adresow-ip-klastrow-i-hostingow-www/)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>.
