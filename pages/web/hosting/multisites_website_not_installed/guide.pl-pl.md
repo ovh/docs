@@ -1,8 +1,8 @@
 ---
 title: Usunięcie błędu "Strona nie została zainstalowana"
+excerpt: Dowiedz się, jak usunąć błąd "Strona nie została zainstalowana"
 slug: hosting_www_blad_dotyczacy_nie_zainstalowanej_strony
-excerpt: Dowiedz się, jak zidentyfikować i usunąć błąd "Strona nie została zainstalowana"
-section: "Konfiguracja hostingu"
+section: Diagnostyka
 order: 2
 ---
 
@@ -10,7 +10,7 @@ order: 2
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 14-05-2021**
+**Ostatnia aktualizacja z dnia 14/05/2021**
 
 ## Wprowadzenie
 
