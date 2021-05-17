@@ -58,7 +58,7 @@ Once your job is `In progress`, in the job description panel you should see the 
 
 ### Step 5 - Login as an AI Training user
 
-If your are not authenticated as a AI Training user you should a see a screen asking your username and password.
+If your are not authenticated as a AI Training user you should see a screen asking your username and password.
 
 > [!primary]
 > If you have never created a user for AI Training yet you can follow the instruction [here](../create-user)
