@@ -5,21 +5,21 @@ excerpt: Learn the resources provided by AI Training jobs
 section: Concepts
 order: 3
 ---
-*Last updated 14th April, 2021.*
+*Last updated 3rd May, 2021.*
 
 ## Description
 
-**AI-Training** provides users access to several types of resources. Resource usage can be fetched through a dedicated UI on Grafana.
+**AI-Training** provides to the user access to several types of resources. Resource usage can be viewed through a dedicated UI on grafana.
 
 ## Requirements
 
-- a running job on **AI-Training**
+-   a running job on **AI-Training**
 
 ## UI Access
 
-The URL to access the monitoring is built like this: *https://monitoring.`<REGION>`{=html}.training.ai.cloud.ovh.net/d/gpu?var-job=`<JOB-ID>`{=html}*
+The URL to access the monitoring is build like this : *https://monitoring.`<REGION>`{=html}.training.ai.cloud.ovh.net/d/gpu?var-job=`<JOB-ID>`{=html}*
 
-It can be fetched in the CLI using this command: 
+It can be fetched with the CLI in the **Monitoring Url** field
 
 ``` {.console}
 ovhai job get <JOB-ID>
@@ -66,47 +66,44 @@ Status:
     RUNNING       2021-04-14 09:30:09.327003 UTC
 ```
 
-It is displayed in the line **Monitoring Url**.
-
-You can also retrieve it using the UI by clicking on the **Resource usage** link in the job details.
+Or from the UI by clicking on the **Resource usage** link in the job details
 
 ![image](images/00_job_details.png){.thumbnail}
 
 ## Panel Details
 
 We will now go through each panel to give a short description.
-
 ![image](images/01_resource_dashboard.png){.thumbnail}
 
 ### GPU Usage
 
 > [!warning]
-> This panel will only be present on GPU jobs.
+> * This panel will only be present on GPU jobs
 
-This panel displays the usage of each GPU allocated to your job using the DCGM_FI_DEV_GPU_UTIL NVidia metrics.
+This panel display the usage of each GPU allocated to your Job using the DCGM_FI_DEV_GPU_UTIL NVidia metrics.
 
 ### GPU Memory
 
 > [!warning]
-> This panel will only be present on GPU jobs.
+> * This panel will only be present on GPU jobs
 
-This panel displays the usage and memory limit for each GPU allocated to your job.
+This panel display the usage and limit of memory for each GPU allocated to your Job
 
 ### CPU Usage
 
-This panel displays the overall CPU usage of your job.
+This panel display the overall CPU usage of your job.
 
 ### Memory Usage
 
-This panel displays the usage and RAM limit allocated to your job.
+This panel display usage and limit of RAM allocated to your job.
 
 ### Network Usage
 
-This panel displays input and output traffic on your job.
+This panel display input and output traffic on your job.
 
 ### Ephemeral storage usage
 
-This panel shows the usage and limit of ephemeral storage allocated to your job. Jobs can use ephemeral storage for data not within a synchronised container.
+This panel show the usage and limit of ephemeral storage allocated to your job. Each job got ephemeral storage used for data not in synchronized folders within the container.
 
 > [!warning]
 > If your usage go beyond the limit of the ephemeral storage, your job will be evicted.

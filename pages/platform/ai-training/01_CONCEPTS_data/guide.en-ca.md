@@ -5,13 +5,13 @@ excerpt: Learn the concept behind AI Training data
 section: Concepts
 order: 1
 ---
-*Last updated 29th October, 2020.*
+*Last updated 18th May, 2021.*
 
 ## Definition
 
 -   **Data** relates to any type of files (binary, text, etc.) that you want to use inside **AI Training jobs**.
 -   **Object Storage** is a scalable, resilient and secure storage place accessible from anywhere through HTTPS APIs. It is a perfect place to store static files on the long term.
--   **Volumes** are filesystems storage units mounted and used inside **AI Training jobs**.
+-   **Volume** is a filesystem storage mounted and used inside **AI Training jobs**.
 
 ## Best practices
 
@@ -20,7 +20,7 @@ order: 1
 There are two ways to manage your data:
 
 -   You can upload and download data from your local environment using the CLI, see [how to install `ovhai` CLI](../install-client)
--   You can use the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), see [create data](../create-data)
+-   You can use the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), see [create data container](https://docs.ovh.com/gb/en/storage/pcs/create-container/)
 
 ## How it works
 
@@ -60,7 +60,7 @@ User can enable a `cache` feature that allow jobs to re-use available volumes in
 
 ## Going further
 
--   You can check the [OVHcloud documentation on how to create data](../create-data).
+-   You can check the [OVHcloud documentation on how to create a data container](https://docs.ovh.com/gb/en/storage/pcs/create-container/).
 
 ## Feedback
 

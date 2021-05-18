@@ -41,11 +41,11 @@ Here is the list of base images without notebooks that we use :
 
 Here is the list of base images including notebooks (jupyterlab + Visual Studio Code) that we use :
 
--   [ovhcom/ai-training-pytorch:1.6.0](https://hub.docker.com/r/ovhcom/ai-training-pytorch)
--   [ovhcom/ai-training-tensorflow:2.3.0](https://hub.docker.com/r/ovhcom/ai-training-tensorflow)
--   [ovhcom/ai-training-transformers:3.1.0](https://hub.docker.com/r/ovhcom/ai-training-transformers)
--   [ovhcom/ai-training-mxnet:1.5.0](https://hub.docker.com/r/ovhcom/ai-training-mxnet)
--   [ovhcom/ai-training-fastai:2.0.9](https://hub.docker.com/r/ovhcom/aai-training-fastai)
+-   [ovhcom/ai-training-pytorch:1.8.1](https://hub.docker.com/r/ovhcom/ai-training-pytorch/tags)
+-   [ovhcom/ai-training-tensorflow:2.4.1](https://hub.docker.com/r/ovhcom/ai-training-tensorflow/tags)
+-   [ovhcom/ai-training-transformers:4.5.0](https://hub.docker.com/r/ovhcom/ai-training-transformers/tags)
+-   [ovhcom/ai-training-mxnet:1.5.0](https://hub.docker.com/r/ovhcom/ai-training-mxnet/tags)
+-   [ovhcom/ai-training-fastai:2.2.5](https://hub.docker.com/r/ovhcom/ai-training-fastai/tags)
 
 Header of your Dockerfile should look like this :
 

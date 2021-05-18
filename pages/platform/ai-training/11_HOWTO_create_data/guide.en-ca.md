@@ -1,15 +1,15 @@
 ---
 title: Create Data via UI
-slug: create-data
-excerpt: Learn how to create Data object on AI Training via UI
+slug: create-container
+excerpt: Learn how to create an Object Storage container
 section: How to (with UI)
 order: 3
 ---
-*Last updated 20th April, 2021.*
+*Last updated 18th May, 2021.*
 
 ## Objective
 
-This guide covers the creation of [**data**](../data) objects in **AI Training** through the OVHcloud Control Panel and their association with Object Storage containers.
+This guide covers the creation of Object Storage containers to later use with your **AI Training** jobs or notebooks.
 
 ## Requirements
 
