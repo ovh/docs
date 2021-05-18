@@ -3,14 +3,13 @@ title: 'Resolver o erro “Site não instalado”'
 excerpt: 'Saiba como resolver o erro da página “Site não instalado”'
 slug: alojamento_web_erro_de_site_nao_instalado
 section: "Diagnóstico"
-order: 2
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 17/05/2021**
+**Última atualização: 18/05/2021**
 
 ## Objetivo
 
@@ -75,14 +74,14 @@ Para isso, aceda à secção `Nomes de domínio`{.action}, selecione o seu domí
 |Situações possíveis|Medidas a adotar|
 |---|---|
 |Na zona DNS, o seu domínio está ligado ao endereço IP do seu alojamento com uma entrada do tipo A (para IPv4) ou AAAA (para IPv6) :<br><br>![zonaDNS_IP2](images/zonedns_ip2.png){.thumbnail}|Isto indica que a configuração do seu domínio está correta.<br><br>Após as últimas modificações nos seus DNS, o seu site será apresentado num prazo máximo de 48 horas.<br><br>Também pode reiniciar os seus dispositivos (PC, smartphone, Internet box, etc.) e esvaziar a cache do seu browser.|
-|A zona DNS não inclui nenhuma entrada de tipo A ou AAAA que associe o seu domínio ao endereço IP do seu alojamento. Ou a entrada existente aponta para outro endereço IP.|Adicione uma nova entrada de tipo A ou AAAA ou corrija a entrada existente seguindo este [guia](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).|
-|O seu domínio não aparece na secção `Nomes de domínio`{.action} da sua Área de Cliente.<br><br>Ou o separador `Zona DNS`{.action} do seu domínio apresenta-se da seguinte forma :<br><br>![zonedns_ndd_pas_sobre_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Isto significa que o seu domínio não é gerido a partir da Área de Cliente OVHcloud.<br><br>Determine o seu registar através da nossa ferramenta [WHOIS](https://www.ovh.pt/suporte/ferramentas/check_whois.pl) e os servidores DNS aos quais está associado.<br><br>Encontre e modifique a zona DNS em causa em conformidade, de acordo com este [guia](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
-|Este aviso aparece no separador Zona `DNS`{.action} :<br><br>![aviso_zonedns_pas_sur_srv_Dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Assim, deverá alterar os servidores DNS do seu domínio de acordo com este [guia](../../domains/partilhado_generalidades_sobre_os_servidores_dns/).|
+|A zona DNS não inclui nenhuma entrada de tipo A ou AAAA que associe o seu domínio ao endereço IP do seu alojamento. Ou a entrada existente aponta para outro endereço IP.|Adicione uma nova entrada de tipo A ou AAAA ou corrija a entrada existente seguindo [este guia](../../domains/alojamento_partilhado_como_editar_a_minha_zona_dns/).|
+|O seu domínio não aparece na secção `Nomes de domínio`{.action} da sua Área de Cliente.<br><br>Ou o separador `Zona DNS`{.action} do seu domínio apresenta-se da seguinte forma :<br><br>![zonedns_ndd_pas_sobre_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Isto significa que o seu domínio não é gerido a partir da Área de Cliente OVHcloud.<br><br>Determine o seu registar através da nossa ferramenta [WHOIS](https://www.ovh.pt/suporte/ferramentas/check_whois.pl) e os servidores DNS aos quais está associado.<br><br>Encontre e modifique a zona DNS em causa em conformidade, de acordo com [este guia](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
+|Este aviso aparece no separador Zona `DNS`{.action} :<br><br>![aviso_zonedns_pas_sur_srv_Dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Assim, deverá alterar os servidores DNS do seu domínio de acordo com [este guia](../../domains/partilhado_generalidades_sobre_os_servidores_dns/).|
 
 ## Quer saber mais? <a name="allerplusloin"></a>
 
-[Partilhar o alojamento entre vários sites](../multisites-configurar-um-multisite-no-meu-alojamento-web/)
-
 [Lista dos endereços IP dos clusters e alojamentos web](../lista-dos-enderecos-ip-dos-clusters-e-alojamentos-web/)
+
+Para obter ajuda na utilização e configuração das suas soluções OVHcloud, consulte as nossas [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
