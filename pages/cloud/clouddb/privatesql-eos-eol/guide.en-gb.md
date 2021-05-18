@@ -15,7 +15,6 @@ The products covered by those End Of Sale (EOS) and End Of Life (EOL) announceme
 |MariaDB 10.4|To be defined|To be defined|To be defined|
 |MariaDB 10.5|To be defined|To be defined|To be defined|
 |MongoDB 4|2019-07-29|2019-02-25|To be defined|
-|MySQL 5.5|2019-07-29|2018-08-02|2020-01-28|
 |MySQL 5.6|2019-07-29|2020-08-02|2021-02-01|
 |MySQL 5.7|To be defined|To be defined|To be defined|
 |MySQL 8.0|To be defined|To be defined|To be defined|
