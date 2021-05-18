@@ -92,7 +92,7 @@ If the 500 error appeared after modifying the PHP configuration of your web host
 > Restoring your website’s source code will affect all websites on your OVHcloud web hosting.
 >
 
-To restore your website’s source code, read our guide [Restoring your Web Hosting plan’s storage space](../hosting/restoring-ftp-filezilla-control-panel/). Keep in mind that this operation alone is not a permanent solution.
+To restore your website’s source code, read our guide [Restoring your Web Hosting plan’s storage space](../restoring-ftp-filezilla-control-panel/). Keep in mind that this operation alone is not a permanent solution.
 
 If your website uses a database, read our guide [Importing a backup into a Web Hosting plan database](../web_hosting_guide_to_importing_a_mysql_database/#restore-a-backup-from-the-control-panel).
 
