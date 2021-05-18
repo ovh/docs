@@ -84,6 +84,6 @@ Gehen Sie hierzu in den Bereich `Domainnamen`{.action}, wählen Sie Ihre Domain 
 
 [Verzeichnis von IP-Adressen für die Webhosting Cluster](../verzeichnis-der-ip-adressen-web-hosting-cluster/)
 
-[OVHcloud Partner kontaktieren](https://partner.ovhcloud.com/de/directory/)
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, können Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/) einsehen.
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
