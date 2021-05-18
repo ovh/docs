@@ -1,8 +1,8 @@
 ---
-title: "Risolvi l’errore "Sito non installato" "
+title: 'Risolvere l’errore «Sito non installato»'
 slug: errore-sito-non-installato
-excerpt: Come identificare e risolvere la pagina di errore "Sito non installato"
-section: "Diagnostica"
+excerpt: Come identificare e risolvere la pagina di errore «Sito non installato»
+section: Diagnostica
 ---
 
 > [!primary]
