@@ -2,7 +2,7 @@
 title: Resolving a “Website not installed” error
 excerpt: Find out how to resolve a “Website not installed” error
 slug: web_hosting_error_-_website_not_installed
-section: 'Diagnostics'
+section: Diagnostics
 ---
 
 **Last updated 18th May 2021**
@@ -70,9 +70,9 @@ To verify this, go to the `Domain names`{.action} section, select your domain na
 |Scenario|What to do|
 |---|---|
 |In the DNS zone, your domain name is linked to your hosting plan’s IP address by an A record (for IPv4) or an AAAA record (for IPv6) :<br><br>![DNS_IP2](images/zonedns_ip2.png){.thumbnail}|This means your domain name has been correctly configured.<br><br>After changes to your DNS configuration, your website will be displayed within a maximum of 48 hours.<br><br>Additionally, you can restart your devices (PC, mobile phone, Internet box, etc.) and clear your browser’s cache.|
-|Your DNS zone does not have an A or AAAA record linking your domain name to your hosting plan’s IP address or one of these records points to a different IP address.|Add a new A or AAAA record or modify the existing record by following this [guide](../../domains/web_hosting_how_to_edit_my_dns_zone/).|
-|Your domain name is not listed in the `Domain names`{.action} section of the OVHcloud Control Panel or your domain name's `DNS zone`{.action} tab looks like in this screenshot :<br><br>![lec_nd_zonedns2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|This means that your domain not is not managed in your OVHcloud Control Panel.<br><br>Determine its registrar and the DNS servers it is currently using with our [WHOIS tool](https://www.ovh.co.uk/support/tools/check_whois.pl).<br><br>You can find and modify the relevant DNS zone by following this [guide](../multisites-configuring-multiple-websites/#step-22-adding-an-external-domain).|
-|The following warning message about DNS servers appears in the `DNS zone`{.action} tab:<br><br>![dns_srv_not_zonedns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|You will need to modify your domain’s DNS servers accordingly by following this [guide](../../domains/web_hosting_general_information_about_dns_servers/).|
+|Your DNS zone does not have an A or AAAA record linking your domain name to your hosting plan’s IP address or one of these records points to a different IP address.|Add a new A or AAAA record or modify the existing record by following [this guide](../../domains/web_hosting_how_to_edit_my_dns_zone/).|
+|Your domain name is not listed in the `Domain names`{.action} section of the OVHcloud Control Panel or your domain name's `DNS zone`{.action} tab looks like in this screenshot :<br><br>![lec_nd_zonedns2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|This means that your domain not is not managed in your OVHcloud Control Panel.<br><br>Determine its registrar and the DNS servers it is currently using with our [WHOIS tool](https://www.ovh.co.uk/support/tools/check_whois.pl).<br><br>You can find and modify the relevant DNS zone by following [this guide](../multisites-configuring-multiple-websites/#step-22-adding-an-external-domain).|
+|The following warning message about DNS servers appears in the `DNS zone`{.action} tab:<br><br>![dns_srv_not_zonedns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|You will need to modify your domain’s DNS servers accordingly by following [this guide](../../domains/web_hosting_general_information_about_dns_servers/).|
 
 ## Go further <a name="gofurther"></a>
 

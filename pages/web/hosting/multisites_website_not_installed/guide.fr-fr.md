@@ -1,8 +1,8 @@
 ---
-title: Résoudre l'erreur « Site non installé »
+title: "Résoudre l'erreur « Site non installé »"
 slug: erreur-site-non-installe
 excerpt: Découvrez comment identifier et résoudre la page d'erreur « Site non installé »
-section: "Diagnostic"
+section: Diagnostic
 ---
 
 **Dernière mise à jour le 18/05/2021**
@@ -11,7 +11,7 @@ section: "Diagnostic"
 
 Il est possible de voir apparaître sur votre navigateur Internet la page d'erreur **Site non installé**, notamment lors de la première installation de votre site web.
 
-![site-not-installed](images/site-not-installed.png){.thumbnail}
+![site-not-installed](images/site-not-installed2021.png){.thumbnail}
 
 **Découvrez comment identifier et résoudre la page d'erreur « Site non installé »**
 
