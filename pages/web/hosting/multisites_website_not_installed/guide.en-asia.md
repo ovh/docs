@@ -5,7 +5,7 @@ slug: web_hosting_error_-_website_not_installed
 section: Diagnostic
 ---
 
-**Last updated 17th May 2021**
+**Last updated 18th May 2021**
 
 ## Objective
 
@@ -18,7 +18,7 @@ You may see a `Site not installed` error page appear on your web browser, partic
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a specialist service provider and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
 >
 
 ## Requirements

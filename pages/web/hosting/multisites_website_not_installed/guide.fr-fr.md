@@ -38,7 +38,7 @@ Les étapes suivantes vous permettront de corriger l’erreur `Site non install�
 
 ### Étape 1 : vérifier la partie multisite de votre hébergement
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web cloud`{.action}, puis `Hébergements`{.action}.
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis `Hébergements`{.action}.
 
 Sélectionnez l'hébergement concerné dans la liste, puis cliquez sur l’onglet `Multisite`{.action}.
 

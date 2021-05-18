@@ -1,8 +1,8 @@
 ---
-title: Résoudre l'erreur « Site non installé »
+title: "Résoudre l'erreur « Site non installé »"
 slug: erreur-site-non-installe
 excerpt: Découvrez comment identifier et résoudre la page d'erreur « Site non installé »
-section: "Diagnostic"
+section: Diagnostic
 ---
 
 **Dernière mise à jour le 18/05/2021**

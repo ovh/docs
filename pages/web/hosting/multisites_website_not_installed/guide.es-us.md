@@ -26,15 +26,15 @@ Es posible ver aparecer en su navegador Internet la página de error **Sitio no 
 
 ## Requisitos
 
-- Tener un [plan de hosting.](https://www.ovh.es/hosting/).
-- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Disponer también de la gestión de la [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/) a la que está asociado el dominio.
+- Tener un [plan de hosting.](https://www.ovh.com/world/es/hosting/).
+- Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
+- Disponer también de la gestión de la [Zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/) a la que está asociado el dominio.
 
 ## Procedimiento
 
 La página **Sitio no instalado** se muestra en dos situaciones:
 
-1. Su dominio no está presente en la parte [multisitio](../configurar-un-multisitio-en-un-alojamiento-web/#1-acceder-a-la-gestion-del-multisitio) del alojamiento.
+1. Su dominio no está presente en la parte [Multisitio](../configurar-un-multisitio-en-un-alojamiento-web/#1-acceder-a-la-gestion-del-multisitio) del alojamiento.
 
 2. Su dominio no está conectado a su alojamiento a través de su `Zona DNS`{.action}.
 
@@ -42,7 +42,7 @@ Los siguientes pasos le permitirán corregir el error `Sitio no instalado` en es
 
 ### Etapa 1 : comprobar la parte multisitio del alojamiento
 
-En el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}.
+En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en `Web Cloud`{.action} y seleccione `Alojamientos`{.action}.
 
 Seleccione el alojamiento correspondiente en la lista y abra la pestaña `Multisitio`{.action}.
 
@@ -61,7 +61,7 @@ Seleccione el alojamiento correspondiente en la lista y abra la pestaña `Multis
 
 #### 2\.1 Identificar la dirección IP de un alojamiento de OVHcloud
 
-Para acceder a la dirección IP, haga clic en `Alojamientos` en la columna izquierda del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione el alojamiento correspondiente.
+Para acceder a la dirección IP, haga clic en `Alojamientos` en la columna izquierda del [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y seleccione el alojamiento correspondiente.
 
 ![hosting-general-informacion](images/hosting-general-informations.png){.thumbnail}
 
@@ -82,6 +82,6 @@ Para ello, acceda a la sección `Dominios`{.action}, seleccione su dominio y abr
 
 [Lista de direcciones IP de los clusters y alojamientos web](../lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web/)
 
-Si necesita ayuda sobre el uso y la configuración de sus soluciones de OVHcloud, consulte nuestras [soluciones de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+Si necesita ayuda sobre el uso y la configuración de sus soluciones de OVHcloud, consulte nuestras [soluciones de soporte](https://www.ovhcloud.com/es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
