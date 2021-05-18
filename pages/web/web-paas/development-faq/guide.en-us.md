@@ -5,7 +5,7 @@ section: Development
 order: 5
 ---
 
-**Last updated 11th May 2021**
+**Last updated 18th May 2021**
 
 
 ## What is the difference between a Platform, a Project and an Environment?
@@ -78,7 +78,7 @@ Please validate the syntax of your YAML file. Don't use tabs. If all fails, cont
 
 ## Which geographic zones does Web PaaS cover?
 
-Web PaaS works with multiple cloud infrastructure providers, including Amazon Web Services, Microsoft Azure, Google Cloud, and Orange.  We offer public Grid regions in several parts of the world: USA (East Coast), USA (West Coast), Canada (East Coast), Europe (Dublin), Europe (Germany), United Kingdom (London), and Australia (Sydney).
+Web PaaS is currently available in France: Gravelines (GRA7).
 
 
 
