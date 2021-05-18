@@ -1,5 +1,5 @@
 ---
-title: "Risolvi l'errore "Sito non installato""
+title: "Risolvi l'errore "Sito non installato" "
 slug: errore-sito-non-installato
 excerpt: Come identificare e risolvere la pagina di errore "Sito non installato"
 section: "Diagnostica"
@@ -16,7 +16,7 @@ section: "Diagnostica"
 
 È possibile vedere apparire sul browser la pagina di errore `Sito non installato`, in particolare al momento della prima installazione del tuo sito Web.
 
-![site-not-installed](images/site-not-installed.png){.thumbnail}
+![site-not-installed](images/site-not-installed2021.png){.thumbnail}
 
 **Come identificare e risolvere la pagina di errore "Sito non installato"**
 

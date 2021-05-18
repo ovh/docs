@@ -15,7 +15,7 @@ section: "Diagnóstico"
 
 É possível que apareça no seu browser a página de erro **Site não instalado**, nomeadamente aquando da primeira instalação do seu website.
 
-![site-not-installed](images/site-not-installed.png){.thumbnail}
+![site-not-installed](images/site-not-installed2021.png){.thumbnail}
 
 **Saiba como identificar e resolver a página de erro "Site não instalado"**
 
