@@ -49,7 +49,7 @@ Seleziona l'hosting interessato dalla lista e clicca sulla scheda `Multisito`{.a
 
 |Scenario|Azione da eseguire|
 |---|---|
-|Il nome del tuo sito appare nella tabella.|Se hai appena aggiunto il nome del tuo sito nella sezione `Multisito` del tuo hosting, attendi una ventina di minuti e poi aggiorna la cache del tuo browser. Se il messaggio "Sito non installato" compare ancora, passa allo Step [2](#checkdomainlink).|
+|Il nome del tuo sito appare nella tabella.|Se hai appena aggiunto il nome del tuo sito nella sezione `Multisito` del tuo hosting, attendi una ventina di minuti e poi aggiorna la cache del tuo browser. Se il messaggio "Sito non installato" compare ancora, passa allo [Step 2](#checkdomainlink).|
 |Il dominio o sottodominio associato al tuo sito non compare nella tabella.|Aggiungi il tuo dominio al `Multisito`{.action} seguendo la sezione dedicata della guida [Condividere il tuo hosting tra più siti - aggiungere un dominio o un sottodominio](../mconfigurare-un-multisito-su-un-hosting-web/#step-2-aggiungi-un-dominio-o-un-sottodominio).|
 |Il dominio è stato eliminato dal multisito senza azione da parte tua.|Il dominio o la zona DNS possono essere gestiti da un altro account. Aggiungi il tuo dominio al multisito seguendo la sezione dedicata della guida [Condividere il tuo hosting tra più siti - aggiungere un dominio esterno](../configurare-un-multisito-su-un-hosting-web/#step-22-aggiungere-un-dominio-esterno).|
 
