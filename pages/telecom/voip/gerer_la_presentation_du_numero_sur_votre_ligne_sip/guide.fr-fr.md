@@ -128,22 +128,15 @@ Sous quelques minutes, le numéro renseigné recevra un appel. Décrochez et ind
 > - le numéro pour lequel vous souhaitez modifier la présentation dispose bien d'une redirection avec présentation. Si besoin, reportez-vous aux instructions décrites dans notre documentation [Créer une redirection avec présentation](../creer-redirection-avec-presentation/).
 >
 
-Vous devez dans un premier temps désactiver la présentation du numéro depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Pour cela, connectez-vous à ce dernier, partie `Télécom`. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne Trunk concernée.
+Le mode anonyme doit être désactivé sur la ligne Trunk depuis l'espace client, sinon il sera prioritaire sur la présentation de votre IPBX.
 
-Positionnez-vous sur l'onglet `Gestion des appels`{.action} et cliquez sur `Présentation du numéro`{.action}.
 
-![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-step1.png){.thumbnail}
-
-La page qui s'affiche vous indique la configuration actuelle de la présentation du numéro. Cochez la case `Rester anonyme`{.action}, puis cliquez sur le bouton `Appliquer les modifications`{.action}. Vous avez aussi la possibilité de cliquer sur `Appliquer à plusieurs lignes`{.action} pour dupliquer ce paramètre sur d’autres lignes OVHcloud.
-
-![configurer-presentation-numero-trunk](images/display-incoming-call-trunk-anonymous-step1.png){.thumbnail}
-
-Vous pouvez à présent configurer la présentation du numéro sur votre équipement IPBX. 
+Vous pouvez à présent configurer la présentation du numéro sur votre équipement IPBX.
 
 > [!warning]
 > 
-> Des connaissances avancées sur l'équipement que vous utilisez sont nécessaires pour pouvoir le configurer. Nous vous recommandons de faire appel à un prestataire spécialisé ou de vous rapprocher du constructeur de l'équipement si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos. 
->  
+> - Des connaissances avancées sur l'équipement que vous utilisez sont nécessaires pour pouvoir le configurer. Nous vous recommandons de faire appel à un prestataire spécialisé ou de vous rapprocher du constructeur de l'équipement si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos. 
+> - Il ne sera pas possible de présenter à la volée un alias depuis deux lignes Trunk différentes, l'alias devant être paramétré en redirection vers le trunk pour pouvoir le présenter à la volée.
 
 ## Aller plus loin
 
