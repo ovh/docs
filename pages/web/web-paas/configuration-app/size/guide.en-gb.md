@@ -4,7 +4,7 @@ slug: size
 section: App
 ---
 
-**Last updated 11th May 2021**
+**Last updated 18th May 2021**
 
 
 
@@ -20,7 +20,7 @@ Usually that's fine, but sometimes it's undesirable.  You may, for instance, wan
 
 Every application container as well as every service in `.platform/services.yaml` supports a `size` key, which instructs the system how many resources to allocate to it.  The exact CPU and memory allocated will depend on the application or service type, and we may adjust these values over time to better optimize resource usage.
 
-Legal values for the `size` key are `AUTO` (the default), `S`, `M`, `L`, `XL`, `2XL`, `4XL`.
+
 
 If the total resources requested by all apps and services is larger than what the plan size allows then a production deployment will fail with an error.
 
