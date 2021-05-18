@@ -60,13 +60,13 @@ Seleziona l'hosting interessato dalla lista e clicca sulla scheda `Multisito`{.a
 > Questo step ha lo scopo di verificare che il tuo dominio, attraverso la sua `Zona DNS`{.action}, sia collegato all'hosting del tuo sito.
 > Per maggiori informazioni sulla nozione di DNS, consulta la nostra guida [Modificare una zona DNS OVHcloud](../../domains/web_hosting_modifica_la_tua_zona_dns/#obiettivo).
 
-#### 2.1 Identifica l'indirizzo IP del tuo hosting OVHcloud
+#### 2\.1 Identifica l'indirizzo IP del tuo hosting OVHcloud
 
 Per recuperare l'indirizzo IP, clicca su `Hosting` nella colonna di sinistra del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona l'hosting interessato.
 
 ![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 
-#### 2.2\. Verifica l'indirizzo IP indicato nella zona DNS del tuo dominio
+#### 2\.2 Verifica l'indirizzo IP indicato nella zona DNS del tuo dominio
 
 Verifica che l'indirizzo IP del tuo hosting compaia nella zona DNS attiva del tuo dominio.
 

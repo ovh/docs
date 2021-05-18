@@ -59,13 +59,13 @@ Seleccione el alojamiento correspondiente en la lista y abra la pestaña `Multis
 > Esta operación tiene como objetivo comprobar que el dominio, a través de su `Zona DNS`{.action}, esté asociado al alojamiento de su sitio web.
 > Para más información sobre el concepto de DNS, consulte nuestra guía [Editar una zona DNS de OVHcloud](../../domains/web_hosting_como_editar_mi_zona_dns/#entender-el-concepto-de-dns).
 
-#### 2.1 Identificar la dirección IP de un alojamiento de OVHcloud
+#### 2\.1 Identificar la dirección IP de un alojamiento de OVHcloud
 
 Para acceder a la dirección IP, haga clic en `Alojamientos` en la columna izquierda del [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione el alojamiento correspondiente.
 
 ![hosting-general-informacion](images/hosting-general-informations.png){.thumbnail}
 
-#### 2.2 Comprobar la dirección IP indicada en la zona DNS del dominio
+#### 2\.2 Comprobar la dirección IP indicada en la zona DNS del dominio
 
 Compruebe que la dirección IP del alojamiento aparece en la zona DNS activa del dominio.
 
