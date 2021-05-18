@@ -25,11 +25,11 @@ Follow the same steps as a classic job submission described [here](../submit-job
 
 ### Step 2 - Select the notebook corresponding to your needs
 
-A `job` is basically a container that is run within the OVHcloud infrastructure.
+A `job` is basically a Docker container that is run within the OVHcloud infrastructure.
 
-Notebooks are `daemon jobs`, meaning that they will run indefinitely until the user requests an interuption.
+Notebooks are `daemon jobs`, meaning that they will run indefinitely until the user request an interuption.
 
-AI Training offers several notebook images with different configurations. You can choose the configuration that best matches your needs among them.
+AI Training offers several notebooks images with different configurations. You can choose the configuration that best suits your needs among them.
 
 Currently the following configurations are available :
 
@@ -48,7 +48,7 @@ Once your image is chosen, click `Next`{.action}.
 Continue to follow the same steps as a classic job submission described [here](../submit-job) until you reach the [Step 10 - Consulting your job](../submit-job/#step-10-consulting-your-job).
 
 > [!warning]
-> If you want to be able to save your notebook files on your object storage we strongly advise to plug a **writable** volume on your job before submitting. That volume will be synchronized with your object storage at the end of the job.
+> If you want to be able to save your notebook files on your object storage we strongly advise to plug a **read** and **write** volume on your job before submitting. That volume will be synchronized with your object storage at the end of the job.
 
 ### Step 4 - Access notebook URL
 
@@ -58,7 +58,7 @@ Once your job is `In progress`, in the job description panel you should see the 
 
 ### Step 5 - Login as an AI Training user
 
-If your are not authenticated as a AI Training user you should a see a screen asking your username and password.
+If your are not authenticated as a AI Training user you should see a screen asking your username and password.
 
 > [!primary]
 > If you have never created a user for AI Training yet you can follow the instruction [here](../create-user)

@@ -11,7 +11,7 @@ order: 1
 
 -   **Data** relates to any type of files (binary, text, etc.) that you want to use inside **AI Training jobs**.
 -   **Object Storage** is a scalable, resilient and secure storage place accessible from anywhere through HTTPS APIs. It is a perfect place to store static files on the long term.
--   **Volume** is a filesystem storage mounted and used inside **AI Training jobs**.
+-   **Volumes** are filesystems storage units mounted and used inside **AI Training jobs**.
 
 ## Best practices
 

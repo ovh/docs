@@ -29,7 +29,7 @@ ovhai job run ubuntu --gpu 1 -- echo "Hello from my first job"
 
 > [!primary]
 > * Add the flag `--help` to get more information about a command.
-> * You can increase the number of GPUs with the flag `--gpu <x>` or choose to use CPUs with the flag `--cpu <x>`
+> * You can increase the number of GPUs with the flag `--gpu <x>` or choose to use CPUs with the flag `--cpu <x>`.
 
 You can then list your current and old jobs with:
 
