@@ -51,7 +51,7 @@ You can find a documentation to learn how to use the OVHcloud API [here](../../.
 Several wrappers (for Python, java, c#, PHP, golang, etc...) are available on the [OVHcloud github](https://github.com/ovh?q=&type=&language=&sort=){.external}.
 All the information needed to use them are in their respective README.md files.
 
-### Step 3: Take a look to the OVHcloud API endpoints
+### Step 3: Take a look at the OVHcloud API endpoints
 In order to know which endpoints are available through the OVHcloud API, you can have a look at this [web page](https://api.ovh.com/){.external} and click on the explore the API button.
 
 To use this UI, you have to be logged in with your OVHcloud account.
