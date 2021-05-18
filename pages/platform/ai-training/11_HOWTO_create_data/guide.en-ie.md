@@ -1,5 +1,5 @@
 ---
-title: Create Data via UI
+title: Create Object Storage container via UI
 slug: create-container
 excerpt: Learn how to create an Object Storage container
 section: How to (with UI)
