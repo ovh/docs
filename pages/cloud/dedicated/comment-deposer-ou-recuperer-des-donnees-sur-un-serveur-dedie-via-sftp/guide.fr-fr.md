@@ -5,7 +5,7 @@ excerpt: 'Découvrez comment transférer facilement des données depuis et vers 
 section: Tutoriel
 ---
 
-**Dernière mise à jour le 22/04/2021**
+**Dernière mise à jour le 18/05/2021**
 
 ## Objectif
 
@@ -38,7 +38,7 @@ Dans l'interface graphique de FileZilla, entrez l'adresse IP de votre serveur da
 
 Dès que la connexion est établie, une arborescence de vos fichiers s'affiche dans la partie `Site distant`.
 
-![site distant sftp](images/sftp_ds_01.png){.thumbnail}
+![site distant sftp](images/sftp_sd_01.png){.thumbnail}
 
 Dans notre exemple, les données à récupérer se trouvent dans le dossier « /home/data ». Vous pouvez faire un glisser-déposer des fichiers à télécharger depuis le volet de droite (`Site distant`) vers le volet de gauche (`Site local`) pour les enregistrer sur votre périphérique local.
 
@@ -46,7 +46,7 @@ Pour déposer des fichiers sur le serveur, faites un glisser-déposer de vos fic
 
 La progression du transfert de données s'affiche alors en bas de l'interface de FileZilla.
 
-![progression du transfert sftp](images/sftp_ds_02.png){.thumbnail}
+![progression du transfert sftp](images/sftp_sd_02.png){.thumbnail}
 
 #### Si votre serveur est en mode rescue
 
@@ -59,9 +59,9 @@ Une fois la partition montée, utilisez le client FileZilla de la même manière
 > Les informations d'identification que vous devez utiliser vous sont envoyées par e-mail lorsque vous activez le mode rescue sur votre serveur.
 >
 
-Si vous avez correctement créé le point de montage, les données se trouvent dans le répertoire « /mnt » (« /mnt/data » dans cet exemple).
+Si vous avez correctement créé le point de montage, les données se trouvent dans le répertoire « /mnt » (« /mnt/home/data » dans cet exemple).
 
-![mode rescue - sftp du site distant](images/sftp_ds_03.png){.thumbnail}
+![mode rescue - sftp du site distant](images/sftp_sd_03.png){.thumbnail}
 
 ## Aller plus loin
 

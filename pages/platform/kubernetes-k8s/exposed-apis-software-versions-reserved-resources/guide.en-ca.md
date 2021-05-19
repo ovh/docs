@@ -9,13 +9,13 @@ section: Technical resources
 
 We list here some details on the APIs we expose, the software versions we use and the resources we reserve on each node.
 
-## OVH APIs
+## OVHcloud API
 
-We have added a [Kubernetes section](https://ca.api.ovh.com/console/#/cloud/project/{serviceName}/kube) to the [OVH API](https://ca.api.ovh.com/console/).  
-Using it you will be able to add and remove nodes, update and reset your clusters or getting `kubectl` configuration.
+We have added a [Kubernetes section](https://ca.api.ovh.com/console/#/cloud/project/{serviceName}/kube) to the [OVHcloud API](https://ca.api.ovh.com/console/).  
+Using it allows you to add and remove nodes, update and reset your clusters or getting `kubectl` configuration.
 
 > [!primary]
-> If you have never used the OVH API, you can see the basis on [First steps with the OVH API](https://docs.ovh.com/gb/en/customer/first-steps-with-ovh-api/).
+> If you have never used the OVHcloud API, you can learn the basics in [First steps with the OVHcloud API](../../api/first-steps-with-ovh-api/).
 
 ## Kubernetes versions
 
@@ -46,8 +46,8 @@ The OS and Docker demon version on your nodes will be regularly updated. Current
 
 As recommended by Kubernetes, `docker` used as CRI is now deprecated since `1.20`, more information [here](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/).
 
-* If you create a new cluster or a node pool after February 2021, the 19th (in any supported Kubernetes version) or if you upgrade an existing cluster to 1.20, `containerd` is used as the default CRI for each nodes. Docker remains installed in our managed OS to ensure compatibilty for specific use cases.
-* For nodes pools created before that date, existing node pools will still use `docker` as the CRI on all nodes until you update that cluster to `1.20` or above.
+* If you create a new cluster or a node pool after 19 February 2021 (in any supported Kubernetes version) or if you upgrade an existing cluster to 1.20, `containerd` is used as the default CRI for each nodes. Docker remains installed in our managed OS to ensure compatibilty for specific use cases.
+* For node pools created before that date, existing node pools will still use `docker` as the CRI on all nodes until you update that cluster to `1.20` or above.
 
 ## CNI (Cluster Network Interface)
 
@@ -79,8 +79,8 @@ Admission plugins (defaults are not listed here):
 
 Authorization modes:
 
-* [Node](https://kubernetes.io/docs/reference/access-authn-authz/node/){.external}: Authorize API requests made by kubelets.
-* [RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/){.external}: Role-based access control is a method of regulating access to computer or network resources based on the roles of individual users within an organization.
+* [Node](https://kubernetes.io/docs/reference/access-authn-authz/node/){.external}: Authorise API requests made by kubelets.
+* [RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/){.external}: Role-based access control is a method of regulating access to computer or network resources based on the roles of individual users within an organisation.
 
 Feature gates:
 
@@ -93,26 +93,26 @@ Feature gates:
 ## Reserved resources
 
 Each worker node has a certain amount of GB of RAM and mCPU reserved for Kubernetes components.  
-This reserved quotas may evolve in the future, the page will be updated when it does
+These reserved quotas may evolve in the future; the page will be updated accordingly.
 
-To guarantee the availabilty of customers node, we are reserving resources (CPU and RAM), proportionally on the instance flavor.
+To guarantee the availabilty of a customer's node, we are reserving resources (CPU and RAM), proportionally on the instance flavor.
 
 * CPU
 
-The calcul used to estimate the reservation is :  (10 % of 1 CPU + 0,5% of all CPU cores)
+The calculation used to estimate the reservation is: (10 % of 1 CPU + 0,5% of all CPU cores)
 The unit is in seconds: 1 CPU = 1 second, 10% of 1 CPU = 100 ms, 50% of 2 CPU = 1 s
 
-For example for a flavor b2-15, with 4 cpu: (10 % of 1 CPU + (0,5 * 4)= 120 ms
+For example, the result for the flavour b2-15 with 4 CPU cores: (10 % of 1 CPU + (0,5 * 4)= 120 ms
 
 * RAM
 
-The calcul used to estimate the reservation is : ( (768M Kubernetes + 5% of total memory) + ( 256M system) )
+The calculation used to estimate the reservation is: ( (768M Kubernetes + 5% of total memory) + ( 256M system) )
 
 * Storage
 
-Mathematical "log" function is egal to "ln(10)".
+The mathematical "log" function is egal to "ln(10)".
 
-The calcul used to estimate the reservation is : ( ( log(total storage)*2 ) + ( log(total storage)*8 ) + ( 10% of total storage ) )
+The calculation used to estimate the reservation is: ( ( log(total storage)*2 ) + ( log(total storage)*8 ) + ( 10% of total storage ) )
 for example: `log(100) = 2`.
 
 This array helps you to predict available resouces.

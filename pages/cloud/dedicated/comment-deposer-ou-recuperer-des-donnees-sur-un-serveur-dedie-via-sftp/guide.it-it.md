@@ -9,7 +9,7 @@ section: Tutorial
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Modifica" di questa pagina.
 >
 
-**Ultimo aggiornamento: 22/04/2021**
+**Ultimo aggiornamento: 18/05/2021**
 
 ## Obiettivo
 
@@ -43,7 +43,7 @@ Nell'interfaccia grafica di FileZilla, inserisci l'indirizzo IP del tuo server n
 
 Una volta stabilita la connessione, visualizzi una gerarchia dei tuoi file nella sezione `Sito remoto`.
 
-![sito remoto sftp](images/sftp_ds_01.png){.thumbnail}
+![sito remoto sftp](images/sftp_sd_01.png){.thumbnail}
 
 Nel nostro esempio, i dati da recuperare sono nella cartella "/home/data". È possibile trasferire i file da scaricare dal lato destro (`Sito remoto`) al lato sinistro (`Sito locale`) per poterli salvare sul dispositivo locale.
 
@@ -51,7 +51,7 @@ Per depositare file sul server, trascina i tuoi file dalla cartella locale verso
 
 Lo stato di avanzamento del trasferimento dei dati viene mostrato in fondo all'interfaccia di FileZilla.
 
-![stato di avanzamento del trasferimento sftp](images/sftp_ds_02.png){.thumbnail}
+![stato di avanzamento del trasferimento sftp](images/sftp_sd_02.png){.thumbnail}
 
 #### Se il tuo server è in modalità Rescue
 
@@ -64,9 +64,9 @@ Una volta salita la partizione, utilizza il client FileZilla come descritto sopr
 > Quando attivi la modalità Rescue sul tuo server, riceverai via email le credenziali da utilizzare.
 >
 
-Se hai creato correttamente il punto di mount, i dati si trovano nella directory "/mnt" ("/mnt/data" in questo esempio).
+Se hai creato correttamente il punto di mount, i dati si trovano nella directory "/mnt" ("/mnt/home/data" in questo esempio).
 
-![modalità rescue - sftp del sito remoto](images/sftp_ds_03.png){.thumbnail}
+![modalità rescue - sftp del sito remoto](images/sftp_sd_03.png){.thumbnail}
 
 ## Per saperne di più
 

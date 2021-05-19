@@ -6,7 +6,7 @@ section: 'Getting started'
 order: 3
 ---
 
-**Last updated 10th May 2021**
+**Last updated 18th May 2021**
 
 ## Objective
 
@@ -24,7 +24,7 @@ When you upgrade your VPS, you might need to repartition your storage space. Her
 
 ## Instructions
 
-Following an upgrade, the RAM and processor (CPU) will automatically be adjusted. This won’t systematically be the case for the storage space.
+Unlike RAM and processor (CPU) of your VPS, the storage space cannot automatically be adjusted after an upgrade.
 
 **This guide explains the steps you need to follow to increase your storage space.**
 
@@ -36,13 +36,15 @@ Attempting to extend a partition can lead to a loss of data. It is therefore **s
 
 #### Unmount the partition
 
-After logging in to your VPS in [rescue mode](../rescue/){.external}, your partition will automatically be mounted. In order to resize it, you will need to unmount it. If you know the name of your partition, you can skip the following step. If you don’t know the name of your partition, use the following command:
+On older VPS ranges, your partitions will be automatically mounted in rescue mode. You can use the following command to identify where your partition is mounted:
 
 ```sh
 lsblk
 ```
 
-The partition corresponding to rescue mode will be the one mounted in the / directory, which is actually the system root. In contrast, the partition of your VPS will probably be placed in the directory associated with /mnt, or not mounted at all.
+The partition corresponding to rescue mode will be the one mounted in the directory `/`, which is actually the system root. In contrast, the partition of your VPS will probably be placed in the directory associated with /mnt.
+
+If your VPS is of the current ranges however, the partition will not be automatically mounted. If the MOUNTPOINT column of your output confirms this, you can skip the unmounting step.
 
 ```sh
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
@@ -52,7 +54,7 @@ sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part /mnt/sdb1
 ```
 
-To unmount your partition, use the following command:
+In order to resize the partition, you will need to unmount it. To unmount your partition, use the following command:
 
 ```sh
 umount /dev/sdb1
@@ -112,11 +114,6 @@ Device Boot Start End Blocks Id System
 /dev/sdb1 * *2048* 41941745 20969849 83 Linux
 ```
 
-> [!warning]
->
-> If you haven’t backed up your data, this is the point of no return.
->
-
 Then delete the partition with the command `d`{.action}.
 
 ```sh
@@ -143,7 +140,7 @@ Last sector, +sectors or +size{K,M,G} (2048-41943039, default 41943039): 4194303
 
 On the `First sector` line, check that the default value is the same as the one you have previously written down. If it is different, use the value you have written down.
 
-#### Making the partition bootable
+#### Make the partition bootable
 
 You now need to ensure that the partition is bootable. You can do this using the command `a`{.action}.
 
@@ -164,7 +161,7 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-#### Extending the filesystem on the partition
+#### Extend the filesystem on the partition
 
 The partition has been extended, but the filesystem still occupies the same space as before. To extend it, simply enter the following command:
 
@@ -231,13 +228,13 @@ fsck -b 32768 /dev/sdb1
 
 ### Windows
 
-#### Go to File and Storage Services.
+#### Access File and Storage Services
 
 You can find this in the Server Manager:
 
 ![File and Storage Services](images/file-and-storage.png){.thumbnail}
 
-#### Resizing the Volume
+#### Resize the volume
 
 Right click on the C: volume and select "Extend Volume..."
 

@@ -9,7 +9,7 @@ section: Tutoriale
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 22-04-2021**
+**Ostatnia aktualizacja z dnia 18-05-2021**
 
 ## Wprowadzenie
 
@@ -41,7 +41,7 @@ W graficznym interfejsie FileZilla wprowadź adres IP Twojego serwera w polu `Ho
 
 Po nawiązaniu połączenia pojawi się drzewo plików w odległej części `Strony`.
 
-![site distant sftp](images/sftp_ds_01.png){.thumbnail}
+![site distant sftp](images/sftp_sd_01.png){.thumbnail}
 
 W poniższym przykładzie dane do pobrania znajdują się w katalogu "/home/data". Możesz przeciągnąć i upuścić pliki do pobrania z prawej strony (zdalna `strona`) do lewego okienka (`strona lokalna`), aby je zapisać na lokalnym urządzeniu.
 
@@ -49,7 +49,7 @@ Aby umieszczać pliki na serwerze, przeciągnij i upuść pliki z lokalnego fold
 
 Postępy transferu danych wyświetlają się wówczas na dole interfejsu FileZilla.
 
-![postęp transferu sftp](images/sftp_ds_02.png){.thumbnail}
+![postęp transferu sftp](images/sftp_sd_02.png){.thumbnail}
 
 #### Jeśli Twój serwer znajduje się w trybie Rescue
 
@@ -62,9 +62,9 @@ Po zamontowaniu partycji kliknij klienta FileZilla w sposób opisany powyżej, k
 > Dane do logowania, których używasz są wysyłane e-mailem po włączeniu trybu Rescue na Twoim serwerze.
 >
 
-Jeśli poprawnie utworzyłeś punkt montowania, dane znajdują się w katalogu "/mnt" ("/mnt/data" w tym przykładzie).
+Jeśli poprawnie utworzyłeś punkt montowania, dane znajdują się w katalogu "/mnt" ("/mnt/home/data" w tym przykładzie).
 
-![tryb rescue - sftp na zdalnej stronie](images/sftp_ds_03.png){.thumbnail}
+![tryb rescue - sftp na zdalnej stronie](images/sftp_sd_03.png){.thumbnail}
 
 ## Sprawdź również
 
