@@ -22,7 +22,7 @@ W przeglądarce internetowej możesz wyświetlić nie zainstalowaną stronę **b
 > [!warning]
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź](#allerplusloin) ten przewodnik.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź](#gofurther) ten przewodnik.
 
 ## Wymagania początkowe
 
@@ -78,7 +78,7 @@ W tym celu przejdź do sekcji `Domeny`{.action}, wybierz domenę i przejdź do z
 |Twoja domena nie wyświetla się w części `Domeny`{.action} w Panelu klienta.<br><br>Lub zakładka `Strefa DNS`{.action} Twojej domeny wyświetla się w następujący sposób :<br><br>![zonedns_ndd_pas_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Oznacza to, że Twoja domena nie jest zarządzana w Panelu klienta OVHcloud.<br><br>Określ operatora za pomocą narzędzia [WHOIS](https://www.ovh.pl/pomoc/narzedzia/check_whois.pl) i serwerów DNS.<br><br>W [tym przewodniku](../konfiguracja-multisite-na-hostingu/#etap-22-dodaj-domene-zewnetrzna) znajdziesz i zmodyfikuj odpowiednią strefę DNS.|
 |Ostrzeżenie to wyświetla się w zakładce `Strefa DNS`{.action} :<br><br>![ostrzeżenie_zonedns_na_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Należy zatem odpowiednio zmienić serwery DNS Twojej domeny zgodnie z [tym przewodnikiem](../../domains/hosting_www_informacje_na_temat_serwerow_dns/).|
 
-## Sprawdź <a name="allerplusloin"></a>
+## Sprawdź <a name="gofurther"></a>
 
 [Lista adresów IP klastrów i hostingów](../lista-adresow-ip-klastrow-i-hostingow-www/)
 
