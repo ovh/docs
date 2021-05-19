@@ -1,28 +1,30 @@
 ---
-title: Débuter avec la gestion des Volumes dans l’API Openstack
-slug: debuter-avec-volumes-lapi-openstack
+title: "Débuter avec la gestion des volumes dans l’API Openstack"
+slug: debuter-avec-volumes-api-openstack
 legacy_guide_number: 2071
 section: Gestion via OpenStack
 order: 6
 ---
 
+**Dernière mise à jour le 19/05/2021**
 
-## Préambule
-Afin d'automatiser vos opérations sur le Public Cloud, il est possible d'utiliser les API d'OpenStack afin de générer différents scripts.
+## Objectif
 
-Vous pourrez par exemple créer un nouveau volume de type "haute performance" pour l'attacher à une instance Public Cloud.
+Afin d'automatiser vos opérations sur le Public Cloud, il est possible d'utiliser les API OpenStack afin de générer différents scripts.
+<br>Vous pourrez par exemple créer un nouveau volume de type « haute performance » pour l'attacher à une instance Public Cloud.
+<br>Ce guide vous aidera à prendre en main les API OpenStack afin de gérer vos volumes à l'aide du client Python Openstack.
 
-Ce guide vous aidera à prendre en main les API OpenStack afin de gérer vos volumes à l'aide du client Python Openstack.
 
+## Prérequis
 
-### Prérequis
 - [Préparer l'environnement pour utiliser l'API OpenStack](../preparer-lenvironnement-pour-utiliser-lapi-openstack/) en installant python-cinderclient et python-novaclient
 - [Charger les variables d'environnement OpenStack](../charger-les-variables-denvironnement-openstack/)
 
+## En pratique
 
 ### Documentation Cinder
-Il est possible d'obtenir la liste des commandes possibles en lisant la documentation du client :
 
+Il est possible d'obtenir la liste des commandes possibles en lisant la documentation du client :
 
 ```bash
 admin@serveur-1:~$ openstack help
@@ -30,14 +32,14 @@ admin@serveur-1:~$ openstack help
 
 Voici la liste des commandes principales :
 
-
-|volume create|Créé un nouveau volume|
+|Commande|Description|
+|---|---|
+|volume create|Crée un nouveau volume|
 |volume delete|Supprime un volume|
 |volume list|Liste les volumes|
-|volume snapshot create|Créé un instantané d'un volume|
+|volume snapshot create|Crée un snaspshot d'un volume|
 
-Il est aussi possible d'avoir des informations concernant une commande en ajoutant "help" devant celle ci :
-
+Il est aussi possible d'obtenir des informations concernant une commande en ajoutant `help` devant celle ci :
 
 ```bash
 admin@serveur-1:~$ openstack help volume snapshot create
@@ -58,18 +60,15 @@ optional arguments:
   --force               Create a snapshot attached to an instance. Default is False
 ```
 
-
-
-> [!success]
+> [!primary]
 >
-> Il est aussi possible d'avoir la documentation du client Openstack directement sur
-> le site OpenStack
+> Il est aussi possible de consulter la documentation du client Openstack directement sur [le site OpenStack](https://docs.openstack.org/python-openstackclient/latest/){.external}.
 > 
 
+### Operations basiques
 
-## Operations basiques
+#### Créer un volume haute performance
 
-### Creation d'un volume haute performance
 - Lister les types de volumes : 
 
 ```
@@ -80,10 +79,11 @@ admin@serveur-1:~$ openstack volume type list
 | e9551830-6362-4bf8-92e5-391829456b03 | classic    | True      |
 | 6fc8e512-3cac-4f39-b9a8-af098d710506 | high-speed | True      |
 +--------------------------------------+------------+-----------+
+```
 
 - Créer le volume de type high-speed de 10GB nommé volume1 :
 
-```bash
+``` bash
 admin@serveur-1:~$ openstack volume create --type high-speed --size 10 volume1
 
 +---------------------+--------------------------------------+
@@ -111,9 +111,7 @@ admin@serveur-1:~$ openstack volume create --type high-speed --size 10 volume1
 +---------------------+--------------------------------------+
 ```
 
-
-Il est possible d'installer une image sur un volume à l'aide de l'argument --image :
-
+Il est possible d'installer une image sur un volume à l'aide de l'argument `--image` :
 
 ```bash
 admin@serveur-1:~$ openstack volume create --type high-speed --image be66762f-b849-43e1-b57c-005d9fe28088 --size 20 volume_debian
@@ -144,8 +142,8 @@ admin@serveur-1:~$ openstack volume create --type high-speed --image be66762f-b8
 
 Où  **be66762f-b849-43e1-b57c-005d9fe28088**  correspond à l'ID de l'image Debian 10.
 
+#### Attacher un volume sur une instance
 
-### Attachement d'un volume sur une instance
 - Lister les volumes additionnels :
 
 ```bash
@@ -159,10 +157,9 @@ admin@serveur-1:~$ openstack volume list
 ```
 
 
-> [!success]
+> [!primary]
 >
-> La majorité des commandes suivantes nécessiteront de renseigner l'ID du volume
-> plutôt que son nom.
+> La majorité des commandes suivantes nécessiteront de renseigner l'ID du volume plutôt que son nom.
 > 
 
 - Monter le volume sur une instance avec le client Openstack :
@@ -183,9 +180,9 @@ admin@serveur-1:~$ openstack volume list
 +--------------------------------------+---------------+-----------+------+-----------------------------------------+
 ```
 
+#### Suppression d'un volume
 
-### Suppression d'un volume
-- Détacher le volume de l'instance
+- Détacher le volume de l'instance :
 
 ```bash
 admin@serveur-1:~$ openstack server remove volume 46aec29f-fe50-4562-b3f9-2e6665a7270d f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8
@@ -196,3 +193,7 @@ admin@serveur-1:~$ openstack server remove volume 46aec29f-fe50-4562-b3f9-2e6665
 ```bash
 admin@serveur-1:~$ opesntack volume delete f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8
 ```
+
+## Allez plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
