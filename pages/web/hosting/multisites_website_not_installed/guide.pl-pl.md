@@ -2,92 +2,86 @@
 title: Usunięcie błędu "Strona nie została zainstalowana"
 excerpt: Dowiedz się, jak usunąć błąd "Strona nie została zainstalowana"
 slug: hosting_www_blad_dotyczacy_nie_zainstalowanej_strony
-section: Konfiguracja hostingu
-order: 2
+section: Diagnostyka
 ---
-**Ostatnia aktualizacja dnia 2018-03-26**
+
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
+>
+
+**Ostatnia aktualizacja z dnia 18/05/2021**
 
 ## Wprowadzenie
 
-Strona z komunikatem *Strona nie została zainstalowana* informuje, że konfiguracja DNS Twojej domeny nie jest prawidłowa lub, że domena używana przez Twoją stronę WWW nie została poprawnie dodana do hostingu OVH w opcji MultiSite.
+W przeglądarce internetowej możesz wyświetlić nie zainstalowaną stronę **błędu**, zwłaszcza podczas pierwszej instalacji strony.
 
-**Dowiedz się, jak usunąć błąd *Strona nie została zainstalowana*.**
+![site-not-installed](images/site-not-installed2021.png){.thumbnail}
+
+**Dowiedz się, jak zidentyfikować i usunąć błąd "Strona nie została zainstalowana"**
+
+> [!warning]
+> OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
+>
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVH nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź](#gofurther) ten przewodnik.
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVH](https://www.ovh.pl/hosting/){.external}
-- Możliwość zarządzania [hostingiem](https://www.ovh.pl/hosting/){.external} (na którym zainstalowana jest strona WWW)
-- Możliwość modyfikacji konfiguracji domeny (jej strefy DNS) 
-- Dostęp do [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
+- Posiadanie [Oferta Hostingu](https://www.ovh.pl/hosting/)
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Posiadanie również [Strefa DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/), do której przypisana jest Twoja domena
 
 ## W praktyce
 
-Strona z komunikatem *Strona nie została zainstalowana* wyświetla się tylko w dwóch konkretnych przypadkach:
+Niezainstalowana strona **Strona nie została zainstalowana** wyświetla się w dwóch sytuacjach :
 
-- domena używana przez Twoją stronę WWW nie została poprawnie dodana jako **MultiSite** na etapie konfiguracji hostingu;
-- domena używana przez Twoją stronę WWW nie została prawidłowo powiązana z hostingiem, ponieważ w konfiguracji DNS nie występuje właściwy adres IP.
+1. Twoja domena nie występuje w części [MultiSite](../hosting/konfiguracja-multisite-na-hostingu/) hostingu.
 
-Przedstawione poniżej etapy opisują, w jaki sposób sprawdzić obydwie konfiguracje i usunąć błąd *Strona nie została zainstalowana*.
+2. Twoja domena nie jest powiązana z Twoim hostingiem za pośrednictwem `Strefa DNS`{.action}.
 
-![sitenotinstalled](images/site-not-installed-webpage.png){.thumbnail}
+Kolejne kroki pozwolą Ci na poprawienie błędu `Strona nie została zainstalowana` w obu sytuacjach.
 
-### Etap 1: weryfikacja konfiguracji MultiSite
+### Etap 1: sprawdź część MultiSite hostingu
 
-Aby sprawdzić, czy domena została poprawnie dodana do hostingu jako MultiSite, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, następnie kliknij `Hosting`{.action} na pasku usług po lewej stronie. Z listy wybierz hosting, z którego ma korzystać domena, pod którą wyświetla się komunikat *Strona nie została zainstalowana*. Przejdź następnie do zakładki `MultiSite`{.action}.
+W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) kliknij pozycję `Web Cloud`{.action}, a następnie `Hosting`{.action}.
 
-Tabela, która się wyświetla zawiera wszystkie domeny dodane do Twojego hostingu. W celu odnalezienia właściwej domeny możesz skorzystać z paska wyszukiwania. 
-
-Wyszukaj odpowiednią domenę w tabeli. Istnieje kilka możliwych przyczyn.
+Wybierz odpowiedni hosting z listy, następnie kliknij zakładkę `MultiSite`{.action}.
 
 |Scenariusz|Co należy zrobić?|
 |---|---|
-|Nazwa domeny wyświetla się w tabeli|Oznacza to, że domena została dodana do Twojego hostingu jako MultiSite. Jeśli nie upłynęło jeszcze 15 minut od jej dodania, odczekaj chwilę, zanim strona z komunikatem *Strona nie została zainstalowana* zniknie. Jeśli strona z komunikatem nadal się wyświetla, przejdź do [etapu 2: weryfikacja konfiguracji DNS domeny](https://docs.ovh.com/pl/hosting/hosting_www_blad_dotyczacy_nie_zainstalowanej_strony/#etap-2-weryfikacja-konfiguracji-dns-domeny){.external}.|
-|Domena nie wyświetla się jeszcze w tabeli|Jeśli dodałeś domenę, a jej nazwa nie wyświetla się w tabeli, możliwe jest, że nie wykonałeś czynności z wszystkich etapów koniecznych do zakończenia dodania domeny do hostingu lub że usunąłeś domenę przez przypadek. W tej sytuacji postępuj zgodnie z instrukcjami podanymi w przewodniku [Instalacja kilku stron WWW na jednym hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu){.external}, aby przeprowadzić proces dodania domeny od nowa.|
-|Nazwa domeny nie jest widoczna w tabeli|Nie dodałeś jeszcze tej domeny jako MultiSite do Twojego hostingu. Aby dodać domenę, wykonaj kolejne kroki opisane w przewodniku [Instalacja kilku stron WWW na jednym hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu){.external}.|
+|Nazwa Twojej strony wyświetla się w tabeli.|Jeśli właśnie dodałeś Twoją stronę WWW do hostingu, odczekaj około dwudziestu minut, a następnie odśwież cache przeglądarki. Jeśli komunikat `Strona nie została zainstalowana` nadal się pojawi, przejdź [do etapu drugiego](#checkdomainlink).|
+|Domena lub subdomena przypisana do Twojej strony WWW nie wyświetla się w tabeli.|Dodaj Twoją domenę do `strony podpiętej`{.action} w opcji MultiSite, postępując zgodnie z sekcją poświęconą przewodnikowi [Instalacja kilku stron WWW na jednym hostingu - dodanie domeny lub subdomeny](../konfiguracja-multisite-na-hostingu/#etap-2-dodanie-domeny-lub-subdomeny).|
+|Domena została usunięta z strony podpiętej w opcji MultiSite bez konieczności wykonywania przez Ciebie żadnych czynności.|Twoja domena lub strefa DNS mogą być zarządzane z innego konta. Dodaj Twoją domenę do strony podpiętej w opcji MultiSite, postępując zgodnie z instrukcjami w przewodniku [Instalacja kilku stron WWW na jednym hostingu - dodaj domenę zewnętrzną](../konfiguracja-multisite-na-hostingu/#etap-22-dodaj-domene-zewnetrzna).|
 
-Jeśli mimo podjętych działań, zamiast Twojej strony WWW wciąż pojawia się strona z komunikatem *Strona nie została zainstalowana*, wykonaj kroki z etapu 2: weryfikacja konfiguracji DNS domen. 
-
-### Etap 2: weryfikacja konfiguracji DNS domeny
-
-Na wstępie sprawdź, jaką konfigurację powinieneś zastosować. W tym celu przejdź do zakładki `Informacje ogólne`{.action}, następnie zapisz adresy, które pojawiają się przy **IPv4** i **IPv6**.
-
-![sitenotinstalled](images/site-not-installed-know-a-records.png){.thumbnail}
-
-Teraz możesz sprawdzić konfigurację DNS Twojej domeny. Weryfikację należy przeprowadzić w interfejsie dostawcy zarządzającego tą konfiguracją.
+### Etap 2 : sprawdzić strefę DNS domeny <a name="checkdomainlink"></a>
 
 > [!primary]
 >
-> Jeśli domena jest zarejestrowana w OVH, możesz sprawdzić, czy korzysta z konfiguracji OVH. Kliknij w [Domeny](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} na pasku usług po lewej stronie w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, następnie w nazwę wybranej domeny. Teraz przejdź do zakładki `Serwery DNS`{.action}.
->
+> Ten etap ma na celu sprawdzenie, czy Twoja domena poprzez `Strefa DNS`{.action} jest powiązana z hostingiem Twojej strony WWW.
+> Więcej informacji na temat koncepcji DNS znajdziesz w przewodniku [Modyfikacja strefy DNS](../../domains/hosting_www_jak_edytowac_strefe_dns/#zrozumienie-pojecia-dns).
 
-W zależności od konfiguracji domeny, należy sprawdzić ustawienia w jednym z dwóch miejsc:
+#### 2.1 Identyfikacja adresu IP hostingu OVHcloud
 
-- **Twoja domena nie używa konfiguracji OVH**: sprawdź (opisaną poniżej) w interfejsie dostawcy zarządzającego ustawieniami Twojej domeny; 
+Aby odnaleźć adres IP, kliknij `Hosting` w kolumnie po lewej stronie [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz odpowiedni hosting.
 
-- **Twoja domena używa konfiguracji OVH**: sprawdź w [Panelu klienta OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz domenę i przejdź do zakładki `Strefa DNS`{.action}. Konfiguracja DNS wyświetla się w tabeli, każdy wiersz odpowiada jednemu rekordowi DNS. Możesz sortować zawartość tabeli według typu rekordu lub nazwy domeny.
+![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 
-![sitenotinstalled](images/site-not-installed-edit-ovh-dns-zone.png){.thumbnail}
+#### 2.2 Sprawdź adres IP zarejestrowany w strefie DNS Twojej domeny
 
-Upewnij się, czy poniższe rekordy DNS są poprawnie skonfigurowane. W tym celu użyj interfejsu dostawcy zarządzającego ustawieniami Twojej domeny, w odniesieniu do której wyświetla się komunikat: *Strona nie została zainstalowana*.
+Teraz sprawdź, czy adres IP Twojego hostingu wyświetla się w aktywnej strefie DNS Twojej domeny.
 
-|Rekord|Adres docelowy|
-|---|---|
-|A|Adres docelowy musi odpowiadać adresowi **IPv4**, który wcześniej zapisałeś.|
-|AAAA|Adres docelowy musi odpowiadać adresowi **IPv6**, który wcześniej zapisałeś.|
-
-Możliwe są dwa scenariusze:
+W tym celu przejdź do sekcji `Domeny`{.action}, wybierz domenę i przejdź do zakładki `Strefa DNS`{.action}.
 
 |Scenariusz|Co należy zrobić?|
 |---|---|
-|Adresy docelowe są prawidłowe.|Oznacza to, że konfiguracja Twojej domeny jest poprawna. Od momentu modyfikacji konfiguracji DNS muszą upłynąć 24 godziny, aby modyfikacja ta stała się efektywna.|
-|Adresy docelowe są nieprawidłowe.|Konfiguracja Twojej domeny musi zostać zmieniona. Jeśli domena używa konfiguracji OVH, przejdź do instrukcji opisanych w przewodniku [Modyfikacja strefy DNS](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}. Jeśli domena używa konfiguracji dostawcy zewnętrznego, postępuj zgodnie z instrukcjami podanymi w dostarczonym przez niego interfejsie. Od momentu zmiany konfiguracji DNS muszą upłynąć 24 godziny, aby modyfikacja ta stała się efektywna.|
+|W strefie DNS Twoja domena jest powiązana z adresem IP hostingu za pomocą wpisu typu A (dla IPv4) lub AAAA (dla IPv6) :<br><br>![strefy DNS_IP2](images/zonedns_ip2.png){.thumbnail}|Oznacza to, że konfiguracja Twojej domeny jest poprawna.<br><br>W związku z ostatnimi zmianami w serwerach DNS Twoja strona będzie wyświetlana w ciągu maksymalnie 48 godzin.<br><br>Pamiętaj, aby zrestartować urządzenia (komputer, smartfon, etc.) i usunąć cache przeglądarki.|
+|W strefie DNS nie ma wpisów typu A lub AAAA łączących domenę z adresem IP Twojego hostingu. Lub istniejący wpis wskazuje na inny adres IP.|Dodaj nowy wpis A lub AAAA lub poprawij istniejący wpis zgodnie z [tym przewodnikiem](../../domains/hosting_www_jak_edytowac_strefe_dns/).|
+|Twoja domena nie wyświetla się w części `Domeny`{.action} w Panelu klienta.<br><br>Lub zakładka `Strefa DNS`{.action} Twojej domeny wyświetla się w następujący sposób :<br><br>![zonedns_ndd_pas_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Oznacza to, że Twoja domena nie jest zarządzana w Panelu klienta OVHcloud.<br><br>Określ operatora za pomocą narzędzia [WHOIS](https://www.ovh.pl/pomoc/narzedzia/check_whois.pl) i serwerów DNS.<br><br>W [tym przewodniku](../konfiguracja-multisite-na-hostingu/#etap-22-dodaj-domene-zewnetrzna) znajdziesz i zmodyfikuj odpowiednią strefę DNS.|
+|Ostrzeżenie to wyświetla się w zakładce `Strefa DNS`{.action} :<br><br>![ostrzeżenie_zonedns_na_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Należy zatem odpowiednio zmienić serwery DNS Twojej domeny zgodnie z [tym przewodnikiem](../../domains/hosting_www_informacje_na_temat_serwerow_dns/).|
 
-Po wdrożeniu kroków z etapu 1 i 2, oraz po upływie 24 godzin niezbędnych dla propagacji zmian, strona z komunikatem *Strona nie została zainstalowana* nie powinna się już pojawiać.
+## Sprawdź <a name="gofurther"></a>
 
-## Sprawdź również 
+[Lista adresów IP klastrów i hostingów](../lista-adresow-ip-klastrow-i-hostingow-www/)
 
-[Instalacja kilku stron WWW na jednym hostingu](https://docs.ovh.com/pl/hosting/konfiguracja-multisite-na-hostingu){.external}
+Jeśli chcesz uzyskać pomoc w zakresie korzystania z i konfiguracji Twoich rozwiązań OVHcloud, sprawdź nasze [oferty pomocy](https://www.ovhcloud.com/pl/support-levels/).
 
-[Modyfikacja strefy DNS OVH](https://docs.ovh.com/pl/domains/hosting_www_jak_edytowac_strefe_dns/){.external}
-
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en>.
