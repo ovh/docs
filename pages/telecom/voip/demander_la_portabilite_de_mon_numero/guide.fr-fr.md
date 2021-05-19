@@ -66,7 +66,7 @@ Assurez-vous maintenant que le groupe de facturation qui apparaît est bien celu
 
 Vous pouvez également configurer une redirection, effective une fois le numéro porté, des appels réceptionnés sur ce numéro vers une de vos lignes. Utilisez le bouton `Choisir une ligne`{.action} pour la définir.
 
-Si vous souhaitez utiliser un autre type de configuration pour ce numéro (comme une file d'appels par exemple), sachez que vous pourrez l'appliquer depuis votre espace client OVHcloud 48 heures avant la date effective de sa portabilité.
+Si vous souhaitez utiliser un autre type de configuration pour ce numéro (comme une file d'appels par exemple), sachez que vous pourrez l'appliquer depuis votre espace client OVHcloud 24 à 48 heures avant la date effective de sa portabilité.
 
 Vos choix faits, cliquez sur `Suivant`{.action}.
 
@@ -106,7 +106,11 @@ Vos choix faits, cliquez sur `Suivant`{.action}.
 
 La dernière étape vérifie l'exactitude des informations que vous avez renseignées. Si celles-ci sont valides, il ne vous reste plus qu'à finaliser votre demande de portabilité en cliquant sur `Commander`{.action} puis en validant le bon de commande qui vous sera présenté. 
 
-Dès lors, vous recevrez un mandat de portabilité autorisant OVHcloud à porter les numéros souhaités. Complétez puis retournez-nous ce mandat **depuis votre espace client**, au format PDF. 
+Verifiez bien que l'adresse et le nom du titulaire correspond car en cas d'erreur vous avez le bouton "modification d'information" prévu à cet effet et vous ne pourrez pas attacher le mandat car le bouton ne sera pas disponible. 
+
+Ensuite l'étape "attacher mon mandat" est disponible afin d'y attacher le mandat daté et signé de moins de 3 mois. 
+
+Dès lors, vous recevrez un mandat de portabilité autorisant OVHcloud à porter les numéros souhaités. Complétez puis retournez-nous ce mandat daté et signé de moins de 3 mois. **depuis votre espace client**, au format PDF. 
 
 Pour cela, sélectionnez votre groupe de téléphonie dans la barre de services à gauche puis cliquez sur `Consulter mes portabilités en cours`{.action}. Cliquez alors sur `Attacher mon mandat de portabilité signé`{.action}, sous la demande de portabilité concernée, pour importer le mandat au format PDF.
 
@@ -128,7 +132,7 @@ Dans la page qui apparaît, vous trouverez l'état de vos demandes de portabilit
 
 ![numberport](images/porting-number-step9.png){.thumbnail}
 
-Si, durant le processus, vous souhaitez annuler votre demande de portabilité, vous pouvez le faire grâce au bouton `Annuler la portabilité ?`{.action}.
+Si, durant le processus, vous souhaitez annuler votre demande de portabilité, vous pouvez le faire jusqu'à 72H avant la date de portabilité au plus tard grâce au bouton `Annuler la portabilité ?`{.action}.
 
 Nous vous recommandons également de consulter régulièrement votre adresse e-mail. Des notifications peuvent en effet vous y être envoyées si une action de votre part est requise. 
 
@@ -153,7 +157,8 @@ Vous trouverez ci-dessous un récapitulatif des différentes étapes du **proces
 |Accusé de l'opérateur reçu|L'opérateur cédant valide la réception de la demande|2 jours|
 |Rapport intermédiaire de l'opérateur reçu|L'opérateur cédant vérifie l'ensemble de la tranche de numéros SDA|5 jours ouvrés|
 |Numéro activé|48 heures avant la finalisation de la portabilité, le numéro est disponible dans votre espace client pour être configuré. Afin de vous aider, reportez-vous aux informations décrites dans l'étape 4 « [Préparer la configuration des numéros portés](https://docs.ovh.com/fr/voip/demander-la-portabilite-de-mon-numero/#etape-4-preparer-la-configuration-des-numeros-portes){.external} »| - |
-|Rapport final de l'opérateur cédant|L'opérateur cédant confirme la portabilité. OVHcloud configure les numéros sur son réseau (déclaration *APNF* et routage). La portabilité est terminée et les numéros opérationnels|3 jours ouvrés|
+|Rapport final de l'opérateur cédant|L'opérateur cédant confirme la portabilité. OVHcloud configure les numéros sur son réseau (déclaration *APNF* et routage). Il faut en moyenne 24H pour le déploiement APNF aprés la portabilité du numéro, pendant ces 24H les opérateurs doivent mettre à jour leur table de routage afin que les appels arrivent bien chez OVH.La portabilité est terminée et les numéros opérationnels|3 jours ouvrés|
+
 
 ### Étape 4 : préparer la configuration des numéros portés
 
