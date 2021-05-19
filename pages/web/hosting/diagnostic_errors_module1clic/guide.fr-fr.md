@@ -8,6 +8,8 @@ section: Diagnostic
 **Dernière mise à jour le 19/05/21**
  
 ## Objectif
+
+La création d'un [Module en 1 clic](../modules-en-1-clic/) en mode simple ou avancée peut occasionner différentes anomalies et erreurs.
  
 **Découvez comment diagnostiquer les cas les plus courants d'erreurs liées aux modules en 1 clic**
 
@@ -26,7 +28,7 @@ section: Diagnostic
  
 ## En pratique
 
-### Message "You need at least one free database"
+### "Vous n'avez pas de bases de données disponibles"
 
 (screenshot)
 
@@ -42,7 +44,7 @@ Vous devrez donc choisir entre :
 
 - Installer votre module en [mode avancé](#mode_avance) sur une base déjà utilisée (Si vous retrouvez les identifiants de votre base de données, consultez notre [FAQ](https://www.ovh.com/fr/hebergement-web/faq/))
 
-### Message "Le répertoire d'installation n'est pas vide"
+### "Le répertoire d'installation n'est pas vide"
 
 (screenshot)
 
@@ -50,7 +52,7 @@ Après avoir lancé l'installation de votre module, vous avez reçu un mail indi
 
 Ce message signifie que le `Dossier racine` auquel est lié votre domaine dans le `Multisite` de votre hébergement n'est pas vide. Connectez-vous à votre hébergement en [FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/), sauvegarder puis supprimer ou déplacer le contenu du dossier concerné. Vous pouvez également modifier le `Dossier racine` lié à votre domaine dans le `Multisite` : Cliquez sur le bouton (screenshot) lié à votre domaine, sur `Modifier le domaine`{.action} et indiquez un nouveau Dossier (Ceci le créera automatiquement sur votre hébergement).
 
-### Message "Erreur de connexion à la base de données"
+### "Erreur de connexion à la base de données"
 
 (screenshot)
 
@@ -90,11 +92,11 @@ Vous rencontrez une anomalie qui n'est pas répertoriée ici. Consultez notre [F
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Tout sur le fichier .htaccess](../mutualise-tout-sur-le-fichier-htaccess/)
-
 [Comment diagnostiquer une page blanche ?](../comment-diagnostiquer-page-blanche/)
 
 [Les codes de reponse d’un serveur HTTP](../mutualise-les-codes-de-reponse-dun-serveur-http/)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/)
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
