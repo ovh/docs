@@ -3,6 +3,7 @@ title: Todo sobre el SQL Privado
 excerpt: Todo sobre el SQL Privado
 slug: todo_sobre_el_sql_privado
 section: SQL Privado
+hidden: true
 ---
 
 
