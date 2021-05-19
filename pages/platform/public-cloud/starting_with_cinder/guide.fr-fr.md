@@ -12,8 +12,8 @@ order: 6
 
 Afin d'automatiser vos opérations sur le Public Cloud, il est possible d'utiliser les API OpenStack afin de générer différents scripts.
 <br>Vous pourrez par exemple créer un nouveau volume de type « haute performance » pour l'attacher à une instance Public Cloud.
-<br>Ce guide vous aidera à prendre en main les API OpenStack afin de gérer vos volumes à l'aide du client Python Openstack.
 
+**Ce guide vous aidera à prendre en main les API OpenStack afin de gérer vos volumes à l'aide du client Python OpenStack.**
 
 ## Prérequis
 
@@ -24,7 +24,7 @@ Afin d'automatiser vos opérations sur le Public Cloud, il est possible d'utilis
 
 ### Documentation Cinder
 
-Il est possible d'obtenir la liste des commandes possibles en lisant la documentation du client :
+Vous pouvez obtenir la liste des commandes possibles en lisant la documentation du client OpenStack :
 
 ```bash
 admin@serveur-1:~$ openstack help
@@ -39,7 +39,7 @@ Voici la liste des commandes principales :
 |volume list|Liste les volumes|
 |volume snapshot create|Crée un snaspshot d'un volume|
 
-Il est aussi possible d'obtenir des informations concernant une commande en ajoutant `help` devant celle ci :
+Vous pouvez également obtenir des informations concernant une commande spécifique en ajoutant `help` devant celle ci :
 
 ```bash
 admin@serveur-1:~$ openstack help volume snapshot create
@@ -110,8 +110,7 @@ admin@serveur-1:~$ openstack volume create --type high-speed --size 10 volume1
 | user_id             | ...                                  |
 +---------------------+--------------------------------------+
 ```
-
-Il est possible d'installer une image sur un volume à l'aide de l'argument `--image` :
+Vous pouvez installer une image sur un volume à l'aide de l'argument `--image` :
 
 ```bash
 admin@serveur-1:~$ openstack volume create --type high-speed --image be66762f-b849-43e1-b57c-005d9fe28088 --size 20 volume_debian
@@ -140,7 +139,7 @@ admin@serveur-1:~$ openstack volume create --type high-speed --image be66762f-b8
 +---------------------+--------------------------------------+
 ```
 
-Où  **be66762f-b849-43e1-b57c-005d9fe28088**  correspond à l'ID de l'image Debian 10.
+Où **be66762f-b849-43e1-b57c-005d9fe28088**  correspond à l'ID de l'image Debian 10.
 
 #### Attacher un volume sur une instance
 
@@ -168,7 +167,7 @@ admin@serveur-1:~$ openstack volume list
 admin@serveur-1:~$ openstack server add volume 46aec29f-fe50-4562-b3f9-2e6665a7270d f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8
 ```
 
-- Vérifier le bon attachement du volume à l'instance avec le client Openstack :
+- Vérifier le bon attachement du volume à l'instance avec le client OpenStack :
 
 ```bash
 admin@serveur-1:~$ openstack volume list
@@ -194,6 +193,6 @@ admin@serveur-1:~$ openstack server remove volume 46aec29f-fe50-4562-b3f9-2e6665
 admin@serveur-1:~$ opesntack volume delete f75d60b3-4179-4ca9-8bc7-8e5f7a1682f8
 ```
 
-## Allez plus loin
+## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
