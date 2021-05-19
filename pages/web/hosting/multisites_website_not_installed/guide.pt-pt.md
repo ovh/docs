@@ -22,7 +22,7 @@ section: Diagnóstico
 > [!warning]
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#allerplusloin)?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um prestador de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#gofurther)?
 
 ## Requisitos
 
@@ -78,7 +78,7 @@ Para isso, aceda à secção `Nomes de domínio`{.action}, selecione o seu domí
 |O seu domínio não aparece na secção `Nomes de domínio`{.action} da sua Área de Cliente.<br><br>Ou o separador `Zona DNS`{.action} do seu domínio apresenta-se da seguinte forma :<br><br>![zonedns_ndd_pas_sobre_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Isto significa que o seu domínio não é gerido a partir da Área de Cliente OVHcloud.<br><br>Determine o seu registar através da nossa ferramenta [WHOIS](https://www.ovh.pt/suporte/ferramentas/check_whois.pl) e os servidores DNS aos quais está associado.<br><br>Encontre e modifique a zona DNS em causa em conformidade, de acordo com [este guia](../multisites-configurer-un-multisite-sur-mon-hebergement-web/#etape-22-ajouter-un-nom-de-domaine-externe).|
 |Este aviso aparece no separador Zona `DNS`{.action} :<br><br>![aviso_zonedns_pas_sur_srv_Dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Assim, deverá alterar os servidores DNS do seu domínio de acordo com [este guia](../../domains/partilhado_generalidades_sobre_os_servidores_dns/).|
 
-## Quer saber mais? <a name="allerplusloin"></a>
+## Quer saber mais? <a name="gofurther"></a>
 
 [Lista dos endereços IP dos clusters e alojamentos web](../lista-dos-enderecos-ip-dos-clusters-e-alojamentos-web/)
 
