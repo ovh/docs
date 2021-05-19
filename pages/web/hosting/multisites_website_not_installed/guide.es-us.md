@@ -22,11 +22,11 @@ Es posible ver aparecer en su navegador Internet la página de error **Sitio no 
 > [!warning]
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#allerplusloin) de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
 
 ## Requisitos
 
-- Tener un [plan de hosting.](https://www.ovh.com/world/es/hosting/).
+- Tener un [plan de hosting](https://www.ovh.com/world/es/hosting/).
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 - Disponer también de la gestión de la [Zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/) a la que está asociado el dominio.
 
@@ -78,7 +78,7 @@ Para ello, acceda a la sección `Dominios`{.action}, seleccione su dominio y abr
 |El dominio no aparece en el apartado `Dominios`{.action} del área de cliente.<br><br>La pestaña `Zona DNS`{.action} del dominio se muestra de la siguiente forma :<br><br>![zonedns_ndd_pas_en_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Esto significa que el dominio no está gestionado desde el área de cliente de OVHcloud.<br><br>Determine su agente registrador a través de nuestra herramienta [WHOIS](https://www.ovh.es/soporte/herramientas/check_whois.pl) y los servidores DNS a los que está asociado.<br><br>Encuentre y modifique la zona DNS en cuestión siguiendo [esta guía](../configurar-un-multisitio-en-un-alojamiento-web/#22-anadir-un-dominio-externo).|
 |Este aviso se muestra en la pestaña `Zona DNS`{.action} :<br><br>![aviso_zonedns_pas_en_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Por lo tanto, deberá modificar los servidores DNS de su dominio en consecuencia siguiendo [esta guía](../../domains/web_hosting_informacion_general_sobre_los_servidores_dns/).|
 
-## Más información <a name="allerplusloin"></a>
+## Más información <a name="gofurther"></a>
 
 [Lista de direcciones IP de los clusters y alojamientos web](../lista-de-direcciones-ip-de-los-clusters-y-alojamientos-web/)
 
