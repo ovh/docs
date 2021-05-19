@@ -5,7 +5,7 @@ excerpt: Learn the concept behind AI Training jobs
 section: Concepts
 order: 1
 ---
-*Last updated 29th October, 2020.*
+*Last updated 18th May, 2021.*
 
 ## Definition
 
@@ -31,6 +31,10 @@ Each job is linked to a **Public Cloud** project and specifies an amount of reso
 
 During its lifetime the job will transition between the following statuses:
 
+> [!primary]
+> * Only jobs that reach the `RUNNING` status are billed. Billing starts with the `INITIALIZING` step and ends when the `FINALIZING` step starts.
+> * Only jobs in states `QUEUED`, `INITIALIZING`, `PENDING` and `RUNNING` are included in the quota computation.
+
 -   `QUEUED` the job run request is about to be processed
 -   `INITIALIZING` the job instance is created and the data is synchronised from the Object Storage. To know more about the data synchronisation check out the [Data How it works](../data/#how-it-works) section.
 -   `PENDING` job is being started
@@ -45,13 +49,9 @@ During its lifetime the job will transition between the following statuses:
 
 ![image](images/status-diagram.svg){.thumbnail}
 
-> [!primary]
-> * Only jobs that reach the `RUNNING` status are billed. Billing starts with the `INITIALIZING` step and ends when the `FINALIZING` step starts.
-> * Only jobs in states `QUEUED`, `INITIALIZING`, `PENDING` and `RUNNING` are included in the quota computation.
-
 ## Going further
 
--   You can check the [OVHcloud documentation on how to create a data](../create-data).
+-   You can check the [OVHcloud documentation on how to create a data container](https://docs.ovh.com/gb/en/storage/pcs/create-container/).
 -   You can check the [OVHcloud documentation on how to submit a job](../submit-job)
 
 ## Feedback

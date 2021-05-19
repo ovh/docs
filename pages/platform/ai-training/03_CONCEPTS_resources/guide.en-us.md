@@ -5,21 +5,21 @@ excerpt: Learn the resources provided by AI Training jobs
 section: Concepts
 order: 3
 ---
-*Last updated 14th April, 2021.*
+*Last updated 3rd May, 2021.*
 
 ## Description
 
-**AI-Training** provides users access to several types of resources. Resource usage can be fetched through a dedicated UI on Grafana.
+**AI-Training** provides users with access to several types of resources. Resource usage can be fetched through a dedicated UI on Grafana.
 
 ## Requirements
 
-- a running job on **AI-Training**
+-   a running job on **AI-Training**
 
 ## UI Access
 
-The URL to access the monitoring is built like this: *https://monitoring.`<REGION>`{=html}.training.ai.cloud.ovh.net/d/gpu?var-job=`<JOB-ID>`{=html}*
+The URL to access the monitoring is built like this : *https://monitoring.`<REGION>`{=html}.training.ai.cloud.ovh.net/d/gpu?var-job=`<JOB-ID>`{=html}*
 
-It can be fetched in the CLI using this command: 
+It can be fetched in the CLI using this command:
 
 ``` {.console}
 ovhai job get <JOB-ID>
@@ -75,22 +75,21 @@ You can also retrieve it using the UI by clicking on the **Resource usage** link
 ## Panel Details
 
 We will now go through each panel to give a short description.
-
 ![image](images/01_resource_dashboard.png){.thumbnail}
 
 ### GPU Usage
 
 > [!warning]
-> This panel will only be present on GPU jobs.
+> * This panel will only be present on GPU jobs.
 
-This panel displays the usage of each GPU allocated to your job using the DCGM_FI_DEV_GPU_UTIL NVidia metrics.
+This panel displays the usage of each GPU allocated to your job.
 
 ### GPU Memory
 
 > [!warning]
-> This panel will only be present on GPU jobs.
+> * This panel will only be present on GPU jobs.
 
-This panel displays the usage and memory limit for each GPU allocated to your job.
+This panel displays the usage and limit of memory for each GPU allocated to your Job
 
 ### CPU Usage
 
@@ -98,7 +97,7 @@ This panel displays the overall CPU usage of your job.
 
 ### Memory Usage
 
-This panel displays the usage and RAM limit allocated to your job.
+This panel displays the usage and limit of Memory allocated to your job.
 
 ### Network Usage
 

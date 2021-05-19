@@ -5,7 +5,7 @@ excerpt: Learn how to start and use notebooks over AI training
 section: How to (with UI)
 order: 5
 ---
-*Last updated 8th December, 2020.*
+*Last updated 3rd May, 2021.*
 
 ## Objective
 
@@ -38,8 +38,8 @@ Currently the following configurations are available :
 -   **Hugging Face Transformers** : An OVHcloud preset image containing JupyterLab notebook, Visual Studio Code IDEand `hugging face` libraries
 -   **MXNet** : An OVHcloud preset image containing JupyterLab notebook, Visual Studio Code IDE and `mxnet` libraries
 -   **Fast.ai** : An OVHcloud preset image containing JupyterLab notebook, Visual Studio Code IDE and `fast.ai` libraries
-
-![image](images/01_submit_image.png){.thumbnail}
+-   **autogluon** : An OVHcloud preset image containing JupyterLab notebook, Visual Studio Code IDE and `AutoGluon` + `mxnet` libraries
+    ![image](images/01_submit_image.png){.thumbnail}
 
 Once your image is chosen, click `Next`{.action}.
 

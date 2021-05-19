@@ -5,7 +5,7 @@ excerpt: Learn how to create AI training users that will interract with jobs
 section: How to (with UI)
 order: 2
 ---
-*Last updated 10th December, 2020.*
+*Last updated 3rd May, 2021.*
 
 ## Objective
 
