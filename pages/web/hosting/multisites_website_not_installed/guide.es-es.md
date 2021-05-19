@@ -26,7 +26,7 @@ Es posible ver aparecer en su navegador Internet la página de error **Sitio no 
 
 ## Requisitos
 
-- Tener un [plan de hosting.](https://www.ovh.es/hosting/).
+- Tener un [plan de hosting](https://www.ovh.es/hosting/).
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 - Disponer también de la gestión de la [zona DNS](../../domains/web_hosting_como_editar_mi_zona_dns/) a la que está asociado el dominio.
 
