@@ -4,6 +4,7 @@ slug: creation-dune-adresse-e-mail
 excerpt: "Apprenez à créer une adresse e-mail avec votre offre d'hébergement Web"
 section: 'Premiers pas'
 order: 2
+hidden: true
 ---
 
 **Dernière mise à jour le 05/05/2020**

@@ -172,10 +172,16 @@ OVHcloud despliega todos los servidores dedicados con una consola IPMI (Intellig
 
 Para más información, consulte nuestra guía [Uso de IPMI con servidores dedicados](../utilizar-ipmi-servidor-dedicado/).
 
+### Backup Storage
+
+Los servidores dedicados de OVHcloud incluyen un espacio de almacenamiento con control de acceso, que se proporciona como opción gratuita. Es preferible utilizarlo como opción de backup adicional si el propio servidor sufre una pérdida de datos.
+
+Para activar y utilizar la opción Backup Storage, consulte [esta guía](../servicio-backup-storage/).
+
 ## Más información
 
 [Proteger un servidor dedicado](../seguridad-de-un-servidor-dedicado/)
 
 [Activar y utilizar el modo de rescate](../modo_de_rescate/)
 
-Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
