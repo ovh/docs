@@ -23,7 +23,7 @@ section: Diagnostica
 > [!warning]
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#allerplusloin) su questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
 
 ## Prerequisiti
 
@@ -79,7 +79,7 @@ accedi alla sezione `Domini`{.action}, seleziona il tuo dominio e clicca sulla s
 |Il tuo dominio non compare nella sezione `Domini`{.action} dello Spazio Cliente.<br><br>o visualizzi la scheda `Zona DNS`{.action} del tuo dominio nel modo seguente :<br><br>![zonedns_ndd_pas_su_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Ciò significa che il tuo dominio non è gestito dallo Spazio Cliente OVHcloud.<br><br>Determina il suo registrar tramite il nostro tool [WHOIS](https://www.ovh.it/supporto/strumenti/check_whois.pl) e i server DNS ai quali è collegato.<br><br>Per visualizzare e modificare la zona DNS in questione, consulta [questa guida](../configurare-un-multisito-su-un-hosting-web/#step-22-aggiungere-un-dominio-esterno).|
 |Nella scheda `Zona DNS`{.action} è possibile visualizzare questa avvertenza :<br><br>![avviso_zonedns_pas_su_srv_Dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Per modificare di conseguenza i server DNS del tuo dominio, consulta [questa guida](../../domains/web_hosting_gestisci_il_tuo_server_dns/).|
 
-## Per saperne di più <a name="allerplusloin"></a>
+## Per saperne di più <a name="gofurther"></a>
 
 [Elenco degli indirizzi IP di cluster e hosting Web](../lista-indirizzi-ip-di-cluster-e-hosting-web/)
 
