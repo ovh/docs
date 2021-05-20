@@ -13,9 +13,9 @@ section: 'Changement de propriétaire'
 En dehors de la [gestion des contacts](../../customer/gestion-des-contacts/), l’enregistrement d’un nom de domaine nécessite de renseigner les informations relatives au propriétaire de celui-ci. Le **propriétaire** dans ce contexte concerne une personne ou une société détenant les droits sur ce nom de domaine. **Le changement de propriétaire** fait référence au transfert de droits de propriété d'une personne ou entreprise vers une autre, les informations du **propriétaire** ont une valeur juridique. Par exemple, ce processus est obligatoire si une société change de nom.
 
 > [!primary]
->Cette opération ne déplace pas votre nom de domaine vers un autre compte client OVHcloud.
+> Cette opération ne déplace pas votre nom de domaine vers un autre compte client OVHcloud.
 >
->Pour ce faire, vous devez [modifier les contacts] (../../customer/gestion-des-contacts/) du nom de domaine.
+> Pour ce faire, vous devez [modifier les contacts](../../customer/gestion-des-contacts/) du nom de domaine.
 
 **Découvrez comment changer le propriétaire d'un nom de domaine**
 
