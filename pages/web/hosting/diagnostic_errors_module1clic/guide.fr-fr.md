@@ -76,6 +76,8 @@ Cliquez sur l’onglet `Multisite`{.action}, puis effectuez les vérifications s
 
 ### Votre module s'affiche sur une adresse web de type "xxxxx.cluster0xx.hosting.ovh.net"
 
+(screenshot)
+
 Supprimez votre module, ainsi que sa base de données (après avoir réalisé toutes les sauvegardes nécessaires). Puis relancez son installation sur le nom de domaine souhaité, sans recréer préalablement de base de données.
 
 ### C'est toujours votre ancien site qui s'affiche
