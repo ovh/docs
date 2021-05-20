@@ -65,7 +65,7 @@ Dans cette situation :
 
 ### Votre nom de domaine n'est pas proposé lors de la création du module
 
-(screenshot)
+![domainenotproposed](images/domainenotproposed.png){.thumbnail}
 
 Cliquez sur l’onglet `Multisite`{.action}, puis effectuez les vérifications suivantes :
 
@@ -76,7 +76,7 @@ Cliquez sur l’onglet `Multisite`{.action}, puis effectuez les vérifications s
 
 ### Votre module s'affiche sur une adresse web de type "xxxxx.cluster0xx.hosting.ovh.net"
 
-(screenshot)
+![url-cluster](images/url-cluster.png){.thumbnail}
 
 Supprimez votre module, ainsi que sa base de données (après avoir réalisé toutes les sauvegardes nécessaires). Puis relancez son installation sur le nom de domaine souhaité, sans recréer préalablement de base de données.
 
