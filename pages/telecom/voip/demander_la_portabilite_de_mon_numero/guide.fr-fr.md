@@ -104,15 +104,20 @@ Vos choix faits, cliquez sur `Suivant`{.action}.
 
 ![numberport](images/porting-number-step7.png){.thumbnail}
 
-La dernière étape vérifie l'exactitude des informations que vous avez renseignées. Si celles-ci sont valides, il ne vous reste plus qu'à finaliser votre demande de portabilité en cliquant sur `Commander`{.action} puis en validant le bon de commande qui vous sera présenté. 
+La dernière étape vérifie l'exactitude des informations que vous avez renseignées.
 
-Verifiez bien que l'adresse et le nom du titulaire correspond car en cas d'erreur vous avez le bouton "modification d'information" prévu à cet effet et vous ne pourrez pas attacher le mandat car le bouton ne sera pas disponible. 
+Verifiez bien que l'adresse et le nom du titulaire correspondent. En cas d'erreur, utilisez le bouton `Modification d'informations`{.action} prévu à cet effet.
 
-Ensuite l'étape "attacher mon mandat" est disponible afin d'y attacher le mandat daté et signé de moins de 3 mois. 
+Si les informations sont valides, finalisez votre demande de portabilité en cliquant sur `Commander`{.action} puis en validant le bon de commande qui vous sera présenté. 
 
-Dès lors, vous recevrez un mandat de portabilité autorisant OVHcloud à porter les numéros souhaités. Complétez puis retournez-nous ce mandat daté et signé de moins de 3 mois. **depuis votre espace client**, au format PDF. 
+Dès lors, vous recevrez un mandat de portabilité autorisant OVHcloud à porter les numéros souhaités. Complétez puis retournez-nous ce mandat daté et signé de moins de 3 mois, **depuis votre espace client**, au format PDF. 
 
 Pour cela, sélectionnez votre groupe de téléphonie dans la barre de services à gauche puis cliquez sur `Consulter mes portabilités en cours`{.action}. Cliquez alors sur `Attacher mon mandat de portabilité signé`{.action}, sous la demande de portabilité concernée, pour importer le mandat au format PDF.
+
+> [!primary]
+>
+> Si le bouton `Attacher mon mandat de portabilité signé`{.action} n'est pas disponible ou que vous n'avez pas reçu de mandat de portabilité, vérifiez que les informations concernant le titulaire de la ligne sont bien exactes. Le cas échéant, utilisez le bouton `Modification d'informations`{.action} pour les corriger.
+>
 
 Avant la validation manuelle du mandat par nos services techniques, vous pouvez, en cas d'erreur, supprimer le mandat actuel pour en attacher un autre. Pour cela, cliquez sur `Liste des documents envoyés`{.action} puis sur le bouton `...`{.action} à droite du mandat actuel et enfin sur `Supprimer`{.action}. 
 
@@ -132,7 +137,7 @@ Dans la page qui apparaît, vous trouverez l'état de vos demandes de portabilit
 
 ![numberport](images/porting-number-step9.png){.thumbnail}
 
-Si, durant le processus, vous souhaitez annuler votre demande de portabilité, vous pouvez le faire jusqu'à 72H avant la date de portabilité au plus tard grâce au bouton `Annuler la portabilité ?`{.action}.
+Si, durant le processus, vous souhaitez annuler votre demande de portabilité, vous pouvez le faire, au plus tard jusqu'à 72 heures avant la date de portabilité, grâce au bouton `Annuler la portabilité ?`{.action}.
 
 Nous vous recommandons également de consulter régulièrement votre adresse e-mail. Des notifications peuvent en effet vous y être envoyées si une action de votre part est requise. 
 
@@ -157,7 +162,7 @@ Vous trouverez ci-dessous un récapitulatif des différentes étapes du **proces
 |Accusé de l'opérateur reçu|L'opérateur cédant valide la réception de la demande|2 jours|
 |Rapport intermédiaire de l'opérateur reçu|L'opérateur cédant vérifie l'ensemble de la tranche de numéros SDA|5 jours ouvrés|
 |Numéro activé|48 heures avant la finalisation de la portabilité, le numéro est disponible dans votre espace client pour être configuré. Afin de vous aider, reportez-vous aux informations décrites dans l'étape 4 « [Préparer la configuration des numéros portés](https://docs.ovh.com/fr/voip/demander-la-portabilite-de-mon-numero/#etape-4-preparer-la-configuration-des-numeros-portes){.external} »| - |
-|Rapport final de l'opérateur cédant|L'opérateur cédant confirme la portabilité. OVHcloud configure les numéros sur son réseau (déclaration *APNF* et routage). Il faut en moyenne 24H pour le déploiement APNF aprés la portabilité du numéro, pendant ces 24H les opérateurs doivent mettre à jour leur table de routage afin que les appels arrivent bien chez OVH.La portabilité est terminée et les numéros opérationnels|3 jours ouvrés|
+|Rapport final de l'opérateur cédant|L'opérateur cédant confirme la portabilité. OVHcloud configure les numéros sur son réseau (déclaration *APNF* et routage). Il faut en moyenne 24h pour le déploiement APNF aprés la portabilité du numéro. Pendant ces 24h, les opérateurs doivent mettre à jour leur table de routage afin que les appels arrivent bien chez OVHcloud. La portabilité est terminée et les numéros opérationnels|3 jours ouvrés|
 
 
 ### Étape 4 : préparer la configuration des numéros portés
