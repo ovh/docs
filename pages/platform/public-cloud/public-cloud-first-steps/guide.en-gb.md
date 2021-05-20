@@ -155,7 +155,7 @@ Click on the `Add an SSH key`{.action} button. In the new window, enter a name f
 
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. On the "Home" page, click on `Create an instance`{.action}. (You can find the same functionality on the "Instances" page by clicking `Instances`{.action} in the left-hand navigation bar under "Compute".)
 
-![instance select](images/instance-creation-01.png){.thumbnail}
+![instance select](images/instance-creation-01-2021.png){.thumbnail}
 
 First, choose a server template according to your needs. The assistant will provide descriptions about the various use cases and server model availability. You can choose from these customised categories:
 
