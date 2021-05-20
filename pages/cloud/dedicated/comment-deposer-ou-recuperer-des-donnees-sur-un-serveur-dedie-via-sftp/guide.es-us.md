@@ -9,7 +9,7 @@ section: Tutoriales
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 22/04/2021**
+**Última actualización: 18/05/2021**
 
 ## Objetivo
 
@@ -42,7 +42,7 @@ En la interfaz gráfica de FileZilla, introduzca la dirección IP del servidor e
 
 Una vez establecida la conexión, se mostrará un árbol de archivos en el apartado `Sitio remoto`.
 
-![Sitio remoto SFTP](images/sftp_ds_01.png){.thumbnail}
+![Sitio remoto SFTP](images/sftp_sd_01.png){.thumbnail}
 
 En nuestro ejemplo, los datos que debe recuperarse se encuentran en la carpeta "/home/data". Puede arrastrar y soltar archivos desde el panel derecho (`Sitio remoto`) al panel izquierdo (`Sitio local`) para guardarlos en su dispositivo local.
 
@@ -50,7 +50,7 @@ Para subir archivos al servidor, arrastre sus archivos desde su carpeta local a 
 
 El progreso de la transferencia de datos se muestra en la parte inferior de la interfaz de FileZilla.
 
-![Progreso de la transferencia SFTP](images/sftp_ds_02.png){.thumbnail}
+![Progreso de la transferencia SFTP](images/sftp_sd_02.png){.thumbnail}
 
 #### Si el servidor está en modo de rescate
 
@@ -63,9 +63,9 @@ Una vez montada la partición, utilice el cliente FileZilla como se explica más
 > Las claves de acceso que debe utilizar se envían por correo electrónico al activar el modo de rescate en el servidor.
 >
 
-Si ha creado correctamente el punto de montaje, los datos se encuentran en el directorio "/mnt" ("/mnt/data" en este ejemplo).
+Si ha creado correctamente el punto de montaje, los datos se encuentran en el directorio "/mnt" ("/mnt/home/data" en este ejemplo).
 
-![modo rescue - sftp del sitio remoto](images/sftp_ds_03.png){.thumbnail}
+![modo rescue - sftp del sitio remoto](images/sftp_sd_03.png){.thumbnail}
 
 ## Más información
 

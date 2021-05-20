@@ -9,7 +9,7 @@ section: Tutorial
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button «Mitmachen» auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 23.04.2021**
+**Letzte Aktualisierung am 18.05.2021**
 
 ## Ziel
 
@@ -42,7 +42,7 @@ Tragen Sie im FileZilla-Interface die IP-Adresse Ihres Servers ins `Host`-Feld s
 
 Sobald die Verbindung hergestellt ist, wird im Bereich `Remote Site` eine Ordnerstruktur Ihrer Dateien angezeigt.
 
-![SFTP Remote-Verzeichnis](images/sftp_ds_01.png){.thumbnail}
+![SFTP Remote-Verzeichnis](images/sftp_sd_01.png){.thumbnail}
 
 In diesem Beispiel befinden sich die Daten im Ordner "/home/data". Sie können die Dateien, die Sie herunterladen möchten, per Drag-and-Drop aus dem rechten Fensterbereich (`Remote`) in den linken Fensterbereich (`Local`) ziehen, um sie auf Ihrem lokalen Gerät zu speichern.
 
@@ -50,7 +50,7 @@ Um Dateien auf dem Server abzulegen, ziehen Sie diese von Ihrem lokalen Ordner z
 
 Der Fortschritt der Datenübertragung wird dann unten im FileZilla-Interface angezeigt.
 
-![Fortschritt des SFTP Transfers](images/sftp_ds_02.png){.thumbnail}
+![Fortschritt des SFTP Transfers](images/sftp_sd_02.png){.thumbnail}
 
 #### Wenn Ihr Server im Rescue-Modus ist
 
@@ -63,9 +63,9 @@ Wenn die Partition gemountet ist, verwenden Sie den FileZilla-Client wie oben be
 > Die in diesem Fall zu verwendenden Login-Daten werden Ihnen per E-Mail zugesandt, sobald Sie den Rescue-Modus auf Ihrem Server aktivieren.
 >
 
-Wenn Sie den Mount korrekt erstellt haben, befinden sich die Daten im Verzeichnis "/mnt" ("/mnt/data" in diesem Beispiel).
+Wenn Sie den Mount korrekt erstellt haben, befinden sich die Daten im Verzeichnis "/mnt" ("/mnt/home/data" in diesem Beispiel).
 
-![Rescue-Modus - SFTP des Remote-Standorts](images/sftp_ds_03.png){.thumbnail}
+![Rescue-Modus - SFTP des Remote-Standorts](images/sftp_sd_03.png){.thumbnail}
 
 ## Weiterführende Informationen
 

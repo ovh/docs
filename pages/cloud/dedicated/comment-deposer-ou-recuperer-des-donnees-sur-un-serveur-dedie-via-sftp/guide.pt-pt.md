@@ -9,7 +9,7 @@ section: Tutoriais
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 22/04/2021**
+**Última atualização: 18/05/2021**
 
 ## Objetivo
 
@@ -42,7 +42,7 @@ Na interface gráfica do FileZilla, introduza o endereço IP do seu servidor no 
 
 Uma vez estabelecida a ligação, aparecerá uma arborescência dos seus ficheiros na parte `Site remota`.
 
-![Remote site sftp](images/sftp_ds_01.png){.thumbnail}
+![Remote site sftp](images/sftp_sd_01.png){.thumbnail}
 
 No nosso exemplo, os dados a recuperar encontram-se na pasta "/home/data". Pode arrastar e largar ficheiros para a esquerda (`Local` Site) a partir da parte direita (`Remote` Site) para os registar no seu dispositivo local.
 
@@ -50,7 +50,7 @@ Para colocar ficheiros no servidor, deslize-largue dos seus ficheiros a partir d
 
 O progresso da transferência de dados aparece na parte inferior da interface do FileZilla.
 
-![progresso da transferência sftp](images/sftp_ds_02.png){.thumbnail}
+![progresso da transferência sftp](images/sftp_sd_02.png){.thumbnail}
 
 #### Se o servidor estiver em modo rescue
 
@@ -63,9 +63,9 @@ Depois de montar a partição, utilize o cliente FileZilla da forma descrita aci
 > As informações de identificação que deve utilizar são enviadas por e-mail quando ativar o modo rescue no seu servidor.
 >
 
-Se criou corretamente o ponto de montagem, os dados encontram-se no diretório "/mnt" ("/mnt/data" neste exemplo).
+Se criou corretamente o ponto de montagem, os dados encontram-se no diretório "/mnt" ("/mnt/home/data" neste exemplo).
 
-![modo rescue - sftp do site remoto](images/sftp_ds_03.png){.thumbnail}
+![modo rescue - sftp do site remoto](images/sftp_sd_03.png){.thumbnail}
 
 ## Saiba mais
 
