@@ -42,7 +42,7 @@ Vous devrez donc choisir entre :
 
 - Changer votre offre d'hébergement : Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action}, sur le bouton (screenshot) dans la partie `Abonnement`-`Offre` et `Changer d'offre`. Les offres [Pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) et [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml) vous permettront de créer jusqu'à 3 modules 1 clic supplémentaires en mode simple. Les offres [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml) vous permettront d'activer gratuitement une offre [SQL privé](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/), afin de pouvoir créer un grand nombre de modules en `mode avancé`.
 
-- Installer votre module en [mode avancé](#mode_avance) sur une base déjà utilisée (Si vous retrouvez les identifiants de votre base de données, consultez notre [FAQ](https://www.ovh.com/fr/hebergement-web/faq/)).
+- Installer votre module en [mode avancé](#mode_avance) sur une base déjà utilisée (Pour retrouver les identifiants de votre base de données, consultez notre [FAQ](https://www.ovh.com/fr/hebergement-web/faq/)).
 
 ### "Le répertoire d'installation n'est pas vide"
 
@@ -52,16 +52,16 @@ Après avoir lancé l'installation de votre module, vous avez reçu un mail indi
 
 Ce message signifie que le `Dossier racine` auquel est lié votre domaine dans le `Multisite` de votre hébergement n'est pas vide. Connectez-vous à votre hébergement en [FTP](https://docs.ovh.com/fr/hosting/connexion-espace-stockage-ftp-hebergement-web/), sauvegarder puis supprimer ou déplacer le contenu du dossier concerné. Vous pouvez également modifier le `Dossier racine` lié à votre domaine dans le `Multisite` : Cliquez sur le bouton (screenshot) lié à votre domaine, sur `Modifier le domaine`{.action} et indiquez un nouveau Dossier (Ceci le créera automatiquement sur votre hébergement).
 
-### "Erreur de connexion à la base de données"
+### "Impossible de se connecter à la base de données"
 
-(screenshot)
+![wrong_id_database](images/wrong_id_database.png){.thumbnail}
 
-Cette erreur apparaît suite à l'installation de votre module en mode avancé. Elle indique que les identifiants de la base de données que vous avez fournis lors de l'installation sont erronés.
+Après avoir lancé l'installation de votre module en mode avancé, vous avez reçu un mail indiquant que le module ne peut pas se connecter à la base de données créée précédemment. Elle indique que les identifiants de la base de données que vous avez fournis lors de l'installation sont erronés.
 
 Dans cette situation : 
 
 - Retrouvez les identifiants de votre base de données en consultant notre [FAQ](https://www.ovh.com/fr/hebergement-web/faq/).
-- Supprimez puis recréez votre module 1 clic ou modifier le fichier de configuration de votre module.
+- Supprimez puis recréez votre module 1 clic ou modifiez le fichier de configuration de votre module.
 
 ### Votre nom de domaine n'est pas proposé lors de la création du module
 
