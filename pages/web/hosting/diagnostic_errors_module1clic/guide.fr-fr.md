@@ -46,7 +46,7 @@ Vous devrez donc choisir entre :
 
 ### "Le répertoire d'installation n'est pas vide"
 
-(screenshot)
+![folder_not_empty](images/folder_not_empty.png){.thumbnail}
 
 Après avoir lancé l'installation de votre module, vous avez reçu un mail indiquant que le répertoire d'installation de votre module n'est pas vide.
 
