@@ -138,7 +138,7 @@ Vous pouvez à présent configurer la présentation du numéro sur votre équipe
 > 
 > - Des connaissances avancées sur l'équipement que vous utilisez sont nécessaires pour pouvoir le configurer. Nous vous recommandons de faire appel à un prestataire spécialisé ou de vous rapprocher du constructeur de l'équipement si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance à ce propos.
 > 
-> - il ne sera pas possible de présenter à la volée un alias depuis deux lignes Trunk différentes, l'alias devant être paramétré en redirection vers le trunk pour pouvoir le présenter à la volée.
+> - Il ne sera pas possible de présenter à la volée un alias depuis deux lignes Trunk différentes, l'alias devant être paramétré en redirection vers le trunk pour pouvoir le présenter à la volée.
 >
 
 ## Aller plus loin
