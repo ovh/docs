@@ -5,7 +5,7 @@ excerpt: Diagnostiquez les cas les plus courants d'erreurs liées aux modules en
 section: Diagnostic
 ---
 
-**Dernière mise à jour le 19/05/21**
+**Dernière mise à jour le 20/05/21**
  
 ## Objectif
 
@@ -25,18 +25,18 @@ La création d'un [Module en 1 clic](../modules-en-1-clic/) en mode simple ou av
 - Disposer d'une offre d'[hébergement web](https://www.ovh.com/fr/hebergement-web/) compatible.
 - Être connecté à l'[espace client OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir utilisé la fonctionnalité [Module en 1 clic](../modules-en-1-clic/), afin de créer un nouveau site.
- 
+
 ## En pratique
 
 ### "Vous n'avez pas de bases de données disponibles"
 
-(screenshot)
+![1freeDB](images/1freeDB.png){.thumbnail}
 
 Ce message apparaît dès que vous lancez l'installation de votre module. Il signifie que votre module ne peut pas créer la base de données dont il a besoin.
 
-Vous devrez donc choisir entre : 
+Vous devrez donc choisir entre :
 
-- Supprimer l'une de vos bases de données (ATTENTION : l'opération de suppression de la base de données est définitive et en supprime également toutes les sauvegardes. Si vous n'êtes pas certain des manipulations à effectuer, contactez l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/)) : Pour supprimer une base de données, dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action}, `Bases de données`{.action}, 
+- Supprimer une base de données non utilisée (ATTENTION : l'opération de suppression d'une base de données est définitive et en supprime également toutes les sauvegardes. Si vous n'êtes pas certain des manipulations à effectuer, contactez l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/)) : Pour supprimer une base de données, dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action}, `Bases de données`{.action}.
 
 - Commander de nouvelles bases de données : Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action}, `Bases de données`{.action}, sur `Actions`{.action} et, enfin, `Commander une base Start SQL`{.action} ou `Commander une base SQL privée`{.action}. (Nos [offres de bases de données](https://www.ovh.com/fr/hebergement-web/options-sql.xml))
 
