@@ -42,7 +42,7 @@ Vous devrez donc choisir entre :
 
 - Changer votre offre d'hébergement : Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action}, sur le bouton (screenshot) dans la partie `Abonnement`-`Offre` et `Changer d'offre`. Les offres [Pro2014](https://www.ovh.com/fr/hebergement-web/hebergement-pro.xml) et [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml) vous permettront de créer jusqu'à 3 modules 1 clic supplémentaires en mode simple. Les offres [Performance](https://www.ovh.com/fr/hebergement-web/hebergement-performance.xml) vous permettront d'activer gratuitement une offre [SQL privé](https://docs.ovh.com/fr/hosting/premiers-pas-avec-sql-prive/), afin de pouvoir créer un grand nombre de modules en `mode avancé`.
 
-- Installer votre module en [mode avancé](#mode_avance) sur une base déjà utilisée (Si vous retrouvez les identifiants de votre base de données, consultez notre [FAQ](https://www.ovh.com/fr/hebergement-web/faq/))
+- Installer votre module en [mode avancé](#mode_avance) sur une base déjà utilisée (Si vous retrouvez les identifiants de votre base de données, consultez notre [FAQ](https://www.ovh.com/fr/hebergement-web/faq/)).
 
 ### "Le répertoire d'installation n'est pas vide"
 
