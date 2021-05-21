@@ -14,7 +14,7 @@ Cette documentation a pour objectif de vous permettre d'obtenir vos identifiants
 
 ## Prérequis
 
-- Disposer d'un abonnement xDSL ou FTTH actif.
+- Disposer d'un abonnement xDSL ou FTTH OVHCloud actif.
 - Être sur la page web des [API OVHcloud](https://api.ovh.com/){.external}.
 - Consulter le guide [Premiers pas avec les API OVHcloud](../../api/api-premiers-pas/) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
