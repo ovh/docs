@@ -5,13 +5,15 @@ excerpt: 'Come gestire i tuoi metodi di pagamento nello Spazio Cliente OVHcloud'
 section: Fatturazione
 ---
 
-**Ultimo aggiornamento: 06/01/2021**
+**Ultimo aggiornamento: 21/05/2021**
 
 ## Obiettivo
+
 Nello Spazio Cliente OVHcloud puoi salvare e gestire diversi metodi di pagamento.
 
 ## Prerequisiti
-- Avere accesso allo [Spazio Cliente OVH](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
+
+- Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 - Disporre di un metodo di pagamento valido
 
 ## Procedura
@@ -20,7 +22,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 ![manage-payment-methods](images/hubpayment.png){.thumbnail}
 
-Nella nuova pagina visualizzi una tabella con tutti i metodi di pagamento salvati nel tuo Spazio Cliente, in particolare quelli utilizzati per i tuoi ordini. Da questa pagina è possibile: 
+Nella nuova pagina visualizzi una tabella con tutti i metodi di pagamento salvati nel tuo Spazio Cliente, in particolare quelli utilizzati per i tuoi ordini. Da questa pagina è possibile:
 
 - Aggiungere un metodo di pagamento
 - Modificare il metodo di pagamento predefinito
@@ -44,7 +46,6 @@ Per farlo, clicca su`Aggiungi un metodo di pagamento`{.action}.
 ![manage-payment-methods](images/managepaymentmethods2.png){.thumbnail}
 
 Segui gli step successivi per il salvataggio del metodo di pagamento. Al primo step, ti viene chiesto di indicare questo nuovo metodo di pagamento come predefinito per gli acquisti futuri o per i prelevamenti automatici.
-
 
 ### Modificare il metodo di pagamento predefinito
 
@@ -78,7 +79,7 @@ L’eliminazione di un metodo di pagamento può essere effettuato tramite le API
 
 > [!api]
 >
-> @api {GET} /me/payment/method 
+> @api {GET} /me/payment/method
 >
 
 - rimuovi il metodo di pagamento utilizzando l’ID ottenuto precedentemente:
@@ -88,6 +89,18 @@ L’eliminazione di un metodo di pagamento può essere effettuato tramite le API
 > @api {DELETE} /me/payment/method/{paymentMethodId}
 >
 
+### Attiva il pagamento frazionato
+
+Se la società o l'organizzazione è [autorizzata al pagamento frazionato](https://www1.finanze.gov.it/finanze3/split_payment/public/#/#testata){.external}, è possibile attivarlo dallo Spazio Cliente OVHcloud.
+
+Nella sezione `Metodi di pagamento`{.action}, clicca su `Attiva il pagamento frazionato`{.action} e conferma l'attivazione nella finestra che appare.
+
+La tua idoneità al pagamento frazionato verrà verificata dai nostri team per la convalida nel più breve tempo possibile.
+
+### Disattiva il pagamento frazionato
+
+Per disattivare il pagamento frazionato sul tuo account OVHcloud, accedi alla sezione `Metodi di pagamento`{.action}. Clicca su `Disattiva il pagamento frazionato`{.action} e conferma la disattivazione nella nuova finestra.
+
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com>
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>
